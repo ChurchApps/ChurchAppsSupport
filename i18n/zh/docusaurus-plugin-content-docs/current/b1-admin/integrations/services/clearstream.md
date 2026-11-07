@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "通过 Zapier 将 Clearstream SMS 连接到 B1 Admin：在新奉献或表单提交时发送短信，并将收到的回复作为人员记录导回。"
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Clearstream 的 Zapier 操作：*向号码发送文本*、*向列表发送文本
 
 ## 另请参阅
 
-- [Text In Church](./text-in-church) — 替代短信平台，相似连接形状
-- [Mobile Message](./mobile-message) — 用于美国外的教会
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧
+- [Text In Church](./text-in-church.md) — 替代短信平台，相似连接形状
+- [Mobile Message](./mobile-message.md) — 用于美国外的教会
+- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
 - [Clearstream API 文档](https://api-docs.clearstream.io/) — 用于超出 Zapier 应用的自定义集成

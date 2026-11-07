@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "B1 Admin を Make に接続してワークフローを自動化します。API キーの作成、B1.church のトリガーとアクションの設定、よくあるエラーのトラブルシューティングを説明します。"
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make アプリはオープンソースで、JSON の定義は `B1Integ
 
 ## 関連項目
 
-- [Zapier](./zapier) — 同じ仕組みを、よりシンプルな UI と大規模なアプリカタログで利用できます
-- [Slack & Discord](./slack-discord) — Make を使わずに、組み込みのチャット通知を利用できます
+- [Zapier](./zapier.md) — 同じ仕組みを、よりシンプルな UI と大規模なアプリカタログで利用できます
+- [Slack & Discord](./slack-discord.md) — Make を使わずに、組み込みのチャット通知を利用できます
 - [Webhook（開発者向けリファレンス）](/docs/developer/api/webhooks)

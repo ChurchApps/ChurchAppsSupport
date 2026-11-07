@@ -1,5 +1,6 @@
 ---
 title: "Caddy-proxy for egendefinerte domener"
+description: "Bygg og kjør Caddy-revers-proxyen som serverer menighetens egne domener for B1.church-nettsteder, med TLS-sertifikater, vertsmapping og kjente fallgruver."
 ---
 
 # Caddy-proxy for egendefinerte domener
@@ -10,7 +11,7 @@ Egendefinerte kirkedomener (`minkirke.org` → kirkens B1-nettsted) avsluttes p�
 
 </div>
 
-For hvordan en forespørsel løses til en kirke/et nettsted når den har nådd B1App, se [Nettstedsruting og flere nettsteder](../architecture/websites).
+For hvordan en forespørsel løses til en kirke/et nettsted når den har nådd B1App, se [Nettstedsruting og flere nettsteder](../architecture/websites.md).
 
 ## Komponenter
 
@@ -88,5 +89,5 @@ Admin-API-et binder bare til `localhost:2019`. Den eldre kjøretidsmodusen ekspo
 
 ## Relaterte sider
 
-- [Nettstedsruting og flere nettsteder](../architecture/websites) — hvordan den proxede forespørselen løses til en kirke/et nettsted i B1App
-- [API-distribusjon](./apis) — distribusjon av Membership-API-et som betjener `authorize`/`hostmap`
+- [Nettstedsruting og flere nettsteder](../architecture/websites.md) — hvordan den proxede forespørselen løses til en kirke/et nettsted i B1App
+- [API-distribusjon](./apis.md) — distribusjon av Membership-API-et som betjener `authorize`/`hostmap`

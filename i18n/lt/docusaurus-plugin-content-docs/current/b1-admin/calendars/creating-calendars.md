@@ -1,5 +1,6 @@
 ---
 title: "Kalendorių kūrimas"
+description: "Sukurkite kalendorių B1 Admin, prijunkite grupes ar importuokite .ics failus ir tvarkykite jo renginius, registracijas bei pastabas vienoje vietoje."
 ---
 
 # Kalendorių kūrimas
@@ -61,7 +62,7 @@ Grupių susiejimas su kalendoriumi yra veiksmingas būdas automatiškai surinkti
 :::
 
 :::info
-Jei norite sukurti vieną kalendorių, kuris surinktų renginius iš daugelio bažnyčios grupių, žr. [Atrinktas kalendorius](curated-calendar) -- ten aprašytas paprastesnis būdas.
+Jei norite sukurti vieną kalendorių, kuris surinktų renginius iš daugelio bažnyčios grupių, žr. [Atrinktas kalendorius](./curated-calendar.md) -- ten aprašytas paprastesnis būdas.
 :::
 
 ## Renginių pridėjimas ir redagavimas {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Norėdami pridėti renginį, spustelėkite **Naujas renginys** kalendoriaus išs
 - **Pradžia** ir **Pabaiga**, **Kartojimas** ir **Matomumas** (**Viešas** arba **Privatus**).
 - **Žymos** -- kableliais atskirtos etiketės, pavyzdžiui, `jaunimas, studentai`. Calendar elementą jūsų svetainėje galima nustatyti taip, kad rodytų tik renginius su tam tikra žyma. Tai tas pats laukas **Žymos**, kuris rodomas renginio registracijos nustatymuose.
 - **Kas gali peržiūrėti pastabas** ir **Kas gali skelbti pastabas** -- kas gali skaityti ir pridėti pastabų prie renginio (žr. [Renginio pastabos](#event-notes)). Pasirinkite **Tik darbuotojams** (numatytoji reikšmė), **Grupių vadovams** (renginio grupės vadovams) arba **Grupių nariams** (visiems renginio grupės nariams, įskaitant vadovus).
-- **Patalpos** ir **Ištekliai** -- rezervuokite erdvę ir įrangą renginiui. Žr. [Patalpos, ištekliai ir planavimas](rooms-resources).
+- **Patalpos** ir **Ištekliai** -- rezervuokite erdvę ir įrangą renginiui. Žr. [Patalpos, ištekliai ir planavimas](./rooms-resources.md).
 
 Spustelėkite **Išsaugoti**. Jei renginys kartojasi, B1 paprašys patvirtinimo, nes išsaugojus bus atnaujinti visi serijos pasikartojimai.
 
@@ -101,12 +102,12 @@ Galite įjungti registraciją bet kuriam kalendoriaus renginiui, kad nariai gal�
    - **Registracija užsidaro** -- data ir laikas, kada registracija baigiasi.
    - **Žymos** -- kableliais atskirtos etiketės (pvz., „jaunimas, stovykla, VBS“), padedančios kategorizuoti renginius, į kuriuos galima registruotis.
    - **Registracijos klausimai** -- pasirinktinai pridėkite [formą](../forms/creating-forms.md), kad registruojantys asmenys atsakytų į papildomus klausimus (mitybos apribojimai, marškinėlių dydis, kontaktas avarijos atveju ir pan.) registracijos metu. Pasirinkite **Nėra**, jei klausimų nereikia.
-   - **Įjungti laukiamųjų sąrašą** -- kai renginys užsipildo, leiskite papildomiems registruojantiems asmenims prisijungti prie laukiamųjų sąrašo vietoj to, kad jiems būtų atsisakyta. Žr. [Mokamos registracijos](paid-registrations#waitlist).
+   - **Įjungti laukiamųjų sąrašą** -- kai renginys užsipildo, leiskite papildomiems registruojantiems asmenims prisijungti prie laukiamųjų sąrašo vietoj to, kad jiems būtų atsisakyta. Žr. [Mokamos registracijos](./paid-registrations.md#waitlist).
 4. Išsaugokite renginį.
 
-Mokamiems renginiams tame pačiame nustatymų puslapyje galite apibrėžti kainuojamus **Dalyvių tipus**, pasirinktinius **Pasirinkimus** (papildomas paslaugas) ir **Nuolaidų kodus**. Mokėjimai surenkami per jūsų bažnyčios aukojimų teikėją. Išsamų aprašymą rasite [Mokamose registracijose](paid-registrations).
+Mokamiems renginiams tame pačiame nustatymų puslapyje galite apibrėžti kainuojamus **Dalyvių tipus**, pasirinktinius **Pasirinkimus** (papildomas paslaugas) ir **Nuolaidų kodus**. Mokėjimai surenkami per jūsų bažnyčios aukojimų teikėją. Išsamų aprašymą rasite [Mokamose registracijose](./paid-registrations.md).
 
-Kai registracija įjungta, nariams, peržiūrintiems renginį [B1 svetainėje](../../b1-church/events/registering) arba [B1 mobiliojoje programėlėje](../../b1-mobile/events/registering), bus rodomas mygtukas **Registruotis į šį renginį**. Jei pridėjote formą, registruojantys asmenys registracijos metu matys žingsnį **Klausimai**, o jų atsakymai bus išsaugoti kartu su registracija.
+Kai registracija įjungta, nariams, peržiūrintiems renginį [B1 svetainėje](../../b1-church/events/registering.md) arba [B1 mobiliojoje programėlėje](../../b1-mobile/events/registering.md), bus rodomas mygtukas **Registruotis į šį renginį**. Jei pridėjote formą, registruojantys asmenys registracijos metu matys žingsnį **Klausimai**, o jų atsakymai bus išsaugoti kartu su registracija.
 
 :::info
 Registracijos klausimai veikia tik su formomis, **nepažymėtomis** kaip Apribota. Apribota forma registracijos metu praleidžiama automatiškai, o ne rodoma, todėl pridedant klausimus prie renginio naudokite neapribotą formą.
@@ -126,7 +127,7 @@ Norėdami peržiūrėti ir tvarkyti savo renginių registracijas:
    - **Perkelti** laukiamųjų sąrašo registracijas, kai atsiranda laisva vieta.
    - **Eksportuoti CSV** -- atsisiųsti visas registracijas, įskaitant dalyvių tipus, pasirinkimus, mokėjimų sumas ir klausimų atsakymus.
 
-Jei prie renginio pridėti registracijos klausimai, išsamiame puslapyje taip pat rodomas filtras **Tik neatsakyti klausimai**, padedantis greitai rasti registruotus asmenis, kurie dar nepateikė atsakymų, ir mygtukas **Peržiūrėti atsakymus** prie kiekvienos atsakytos registracijos, kad galėtumėte pamatyti jų atsakymus. Mokamuose renginiuose pridedamas stulpelis **Tipas**, stulpelis **Sumokėta / Iš viso**, skaičiai pagal tipą ir mokėjimų išsamaus rodinio dialogo langas. Žr. [Mokamos registracijos](paid-registrations#the-registration-roster).
+Jei prie renginio pridėti registracijos klausimai, išsamiame puslapyje taip pat rodomas filtras **Tik neatsakyti klausimai**, padedantis greitai rasti registruotus asmenis, kurie dar nepateikė atsakymų, ir mygtukas **Peržiūrėti atsakymus** prie kiekvienos atsakytos registracijos, kad galėtumėte pamatyti jų atsakymus. Mokamuose renginiuose pridedamas stulpelis **Tipas**, stulpelis **Sumokėta / Iš viso**, skaičiai pagal tipą ir mokėjimų išsamaus rodinio dialogo langas. Žr. [Mokamos registracijos](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Naudokite talpos progreso juostą, kad stebėtumėte, kaip greitai renginiai užsipildo. Juosta tampa raudona, kai renginys pasiekia arba viršija talpą.
@@ -134,7 +135,7 @@ Naudokite talpos progreso juostą, kad stebėtumėte, kaip greitai renginiai už
 
 ## Kiti žingsniai
 
-- [Atrinktas kalendorius](curated-calendar) -- sukurkite kalendorių, kuris surenka renginius iš kelių grupių
-- [Mokamos registracijos](paid-registrations) -- dalyvių tipai, papildomi pasirinkimai, nuolaidų kodai, mokėjimai ir laukiamieji sąrašai
-- [Renginio registracijos vadovas](../guides/event-registration) -- žingsnis po žingsnio vadovas, kaip nustatyti renginio registraciją
-- [Kalendorių apžvalga](./) -- grįžti į kalendorių apžvalgą
+- [Atrinktas kalendorius](./curated-calendar.md) -- sukurkite kalendorių, kuris surenka renginius iš kelių grupių
+- [Mokamos registracijos](./paid-registrations.md) -- dalyvių tipai, papildomi pasirinkimai, nuolaidų kodai, mokėjimai ir laukiamieji sąrašai
+- [Renginio registracijos vadovas](../guides/event-registration.md) -- žingsnis po žingsnio vadovas, kaip nustatyti renginio registraciją
+- [Kalendorių apžvalga](./index.md) -- grįžti į kalendorių apžvalgą

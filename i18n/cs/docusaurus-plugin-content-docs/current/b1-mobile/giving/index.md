@@ -1,5 +1,7 @@
 ---
-title: "Dary"
+title: "Dary v aplikaci B1 Mobile"
+sidebar_label: "Dary"
+description: "Darujte v aplikaci B1 Mobile, kontrolujte své dary od začátku roku a spravujte uložené platební metody. Popisuje karty Přehled, Dar, Správa a Historie."
 ---
 
 # Dary
@@ -24,7 +26,7 @@ Sekce darování je rozdělena do čtyř karet:
 Všechny dary provedené prostřednictvím aplikace B1 Mobile jsou bezpečně zpracovávány službou **Stripe**. Vaše platební údaje zpracovává bezpečná infrastruktura společnosti Stripe a nikdy nejsou ukládány na servery ChurchApps. Můžete darovat s jistotou, že jsou vaše finanční údaje chráněny.
 
 :::info
-Správce vašeho sboru nastavuje dostupné fondy a zpracování plateb prostřednictvím [B1 Admin](../../b1-admin/). Pokud v aplikaci nevidíte možnost darování, váš sbor pravděpodobně tuto funkci ještě nenastavil.
+Správce vašeho sboru nastavuje dostupné fondy a zpracování plateb prostřednictvím [B1 Admin](../../b1-admin/index.md). Pokud v aplikaci nevidíte možnost darování, váš sbor pravděpodobně tuto funkci ještě nenastavil.
 :::
 
 ## Co můžete dělat
@@ -38,6 +40,6 @@ Zde je přehled toho, co můžete v sekci darování dělat:
 
 ## Další kroky
 
-- [Provedení daru](./making-donations) -- Naučte se, jak dar provést v aplikaci
-- [Správa platebních metod](./managing-payments) -- Přidání nebo odebrání uložených platebních metod
-- [Historie darů](./donation-history) -- Zobrazení přehledu darování a minulých darů
+- [Provedení daru](./making-donations.md) -- Naučte se, jak dar provést v aplikaci
+- [Správa platebních metod](./managing-payments.md) -- Přidání nebo odebrání uložených platebních metod
+- [Historie darů](./donation-history.md) -- Zobrazení přehledu darování a minulých darů

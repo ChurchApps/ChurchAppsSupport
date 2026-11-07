@@ -1,5 +1,6 @@
 ---
 title: "Monitoraggio delle presenze"
+description: "Consulta l'andamento delle presenze, filtra i report per sede, culto o gruppo ed esporta le presenze dei gruppi dalla pagina Presenze in B1 Admin."
 ---
 
 # Monitoraggio delle presenze

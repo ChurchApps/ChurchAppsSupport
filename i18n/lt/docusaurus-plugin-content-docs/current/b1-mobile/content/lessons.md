@@ -1,5 +1,7 @@
 ---
-title: "Lekcijos (nebenaudojama)"
+title: "Pamokų ekranas B1 Mobile (nebenaudojamas)"
+sidebar_label: "Lekcijos (nebenaudojama)"
+description: "Pamokų puslapis (nebenaudojamas): kodėl B1 Mobile pamokų ekranas atsisakytas ir kur dabar rasti mokymo medžiagą (FreePlay arba Lessons.church)."
 ---
 
 # Lekcijos (nebenaudojama)
@@ -19,7 +21,7 @@ Ekranas Lekcijos suteikdavo prieigą prie jūsų bažnyčios mokymo programos ir
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiegti B1 Mobile](../getting-started/installing) ir [prisijungti](../getting-started/logging-in) prie savo paskyros
+- [Įdiegti B1 Mobile](../getting-started/installing.md) ir [prisijungti](../getting-started/logging-in.md) prie savo paskyros
 - Jūsų bažnyčioje per Lessons.church turi būti sukonfigūruota mokymo programa
 
 </div>
@@ -54,5 +56,5 @@ Ekranas Lekcijos rodomas, kai jūsų bažnyčia per Lessons.church yra sukonfig�
 
 - [FreePlay apžvalga](/docs/freeplay/) – pakaitinė televizijos programėlė lekcijoms klasėje rodyti
 - [Lessons.church](/docs/lessons-church/) – tiesiogiai naršykite ir tvarkykite mokymo programos turinį
-- [Biblija](./bible) – skaitykite Šventąjį Raštą kartu su lekcijomis
-- [Pamokslai](./sermons) – žiūrėkite pamokslus, papildančius jūsų studijas
+- [Biblija](./bible.md) – skaitykite Šventąjį Raštą kartu su lekcijomis
+- [Pamokslai](./sermons.md) – žiūrėkite pamokslus, papildančius jūsų studijas

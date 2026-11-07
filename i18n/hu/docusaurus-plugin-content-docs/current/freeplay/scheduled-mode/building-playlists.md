@@ -1,5 +1,6 @@
 ---
 title: "Szolgáltatók csatlakoztatása és lejátszólisták készítése"
+description: "Csatlakoztatott tartalomszolgáltatók beállítása a FreePlay Adminban, majd lejátszólisták építése, rendezése és előnézete ütemezett TV-képernyőkhöz."
 ---
 
 # Szolgáltatók csatlakoztatása és lejátszólisták készítése
@@ -107,6 +108,6 @@ A **Lejátszás** gombra kattintva a lejátszólista teljes képernyőn fut a b�
 
 ## Kapcsolódó cikkek
 
-- **[A naptár ütemezése](./scheduling-the-calendar)** - A lejátszólista felvétele a képernyőcsoport naptárába
-- **[Képernyők és csoportok kezelése](./managing-screens)** - Lejátszólista beállítása csoport alapértelmezett ismétléseként
-- **[Tartalomszolgáltatók](../content-providers/)** - Azok a szolgáltatók, amelyeket magán a TV-n is csatlakoztathatsz
+- **[A naptár ütemezése](./scheduling-the-calendar.md)** - A lejátszólista felvétele a képernyőcsoport naptárába
+- **[Képernyők és csoportok kezelése](./managing-screens.md)** - Lejátszólista beállítása csoport alapértelmezett ismétléseként
+- **[Tartalomszolgáltatók](../content-providers/index.md)** - Azok a szolgáltatók, amelyeket magán a TV-n is csatlakoztathatsz

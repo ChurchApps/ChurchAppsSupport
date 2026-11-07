@@ -1,5 +1,7 @@
 ---
-title: "Začetek dela"
+title: "Začetek z ChurchApps: prvih 15 minut"
+sidebar_label: "Začetek dela"
+description: "Nastavi nov račun ChurchApps v nekaj korakih: dodaj podatke o cerkvi, uvozi osebe v B1 Admin, povabi ekipo in izberi prvi projekt."
 ---
 
 # Začetek dela

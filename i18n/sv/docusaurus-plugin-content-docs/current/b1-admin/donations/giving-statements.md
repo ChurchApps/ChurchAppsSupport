@@ -1,5 +1,6 @@
 ---
 title: "Givningsbesked"
+description: "Skapa årsbesked för alla givare i B1 Admin och ladda ner dem som CSV-filer eller skriv ut dem för utskick med avdragsgilla summor."
 ---
 
 # Givningsbesked

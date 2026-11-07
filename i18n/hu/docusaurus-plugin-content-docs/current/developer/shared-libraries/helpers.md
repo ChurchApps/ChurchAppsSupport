@@ -1,5 +1,6 @@
 ---
 title: "Segédfüggvények"
+description: "A @churchapps/helpers csomag fejlesztőknek: funkciói, a használó alkalmazások, helyi build a Packages munkaterületen és changesets-alapú közzététel."
 ---
 
 # Segédfüggvények
@@ -13,14 +14,14 @@ A `@churchapps/helpers` csomag alapvető segédfüggvényeket biztosít, amelyek
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **Node.js**-t és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites)
+- Telepítse a **Node.js**-t és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites.md)
 - Ismerkedjen meg a [Packages munkaterület](./index.md) beállításával és a kiadási folyamattal
 
 </div>
 
 ## Kik használják
 
-Minden ChurchApps API (a főbb Api, az AskApi és a LessonsApi), valamint minden webes frontend (B1Admin, B1App, B1Transfer, LessonsApp) közvetlenül függ ettől a csomagtól. A frontendek számos exportját (`ApiHelper`, `DateHelper`, `UserHelper` és más interfészek) a [`@churchapps/apphelper`](./app-helper) csomagon keresztül is megkapják újra exportálva. A többi megosztott csomag peer-függőségként deklarálja, így minden alkalmazás pontosan egy példányt használ belőle.
+Minden ChurchApps API (a főbb Api, az AskApi és a LessonsApi), valamint minden webes frontend (B1Admin, B1App, B1Transfer, LessonsApp) közvetlenül függ ettől a csomagtól. A frontendek számos exportját (`ApiHelper`, `DateHelper`, `UserHelper` és más interfészek) a [`@churchapps/apphelper`](./app-helper.md) csomagon keresztül is megkapják újra exportálva. A többi megosztott csomag peer-függőségként deklarálja, így minden alkalmazás pontosan egy példányt használ belőle.
 
 ## Helyi fejlesztési beállítás
 
@@ -55,7 +56,7 @@ A kiadások manuális verziószám-növelés helyett changesetekön keresztül t
 1. Futtassa a `yarn changeset` parancsot a munkaterület gyökerében, válassza ki a `@churchapps/helpers` csomagot a megfelelő verziónövelési típussal, majd commitolja a generált changeset fájlt a módosítással együtt.
 2. Amikor készen áll a kiadásra, futtassa a `yarn publish-all` parancsot a gyökérben -- ez növeli a verziókat, megírja a CHANGELOG fájlokat, függőségi sorrendben felépíti a csomagokat, és közzéteszi őket az npm-en.
 
-Az új megosztott interfészek a `helpers/src/interfaces/` mappába kerülnek, és a csomag barrel fájlján keresztül exportálódnak újra. A weboldal-készítő elemtípus-katalógusa (`ElementTypes.ts` -- 35 típus a válaszsémáikkal) is itt található; ez az a szerződés, amelyet az apphelper megjelenítői, a B1Admin szerkesztő űrlapjai és az AI-generáló promptok osztanak meg (lásd: [Weboldal-készítő architektúra](../architecture/website-builder)).
+Az új megosztott interfészek a `helpers/src/interfaces/` mappába kerülnek, és a csomag barrel fájlján keresztül exportálódnak újra. A weboldal-készítő elemtípus-katalógusa (`ElementTypes.ts` -- 35 típus a válaszsémáikkal) is itt található; ez az a szerződés, amelyet az apphelper megjelenítői, a B1Admin szerkesztő űrlapjai és az AI-generáló promptok osztanak meg (lásd: [Weboldal-készítő architektúra](../architecture/website-builder.md)).
 
 :::warning
 Mivel ezt a csomagot minden ChurchApps projekt használja, az itt végzett változtatásoknak széles körű hatása van. A `helpers` kiadása automatikusan megemeli az `apihelper` és az `apphelper` verzióit, hogy a függőségi tartományaik naprakészek maradjanak. Közzététel előtt legalább egy felhasználó API-ban és egy felhasználó webes alkalmazásban teszteljen Yarn portállal.
@@ -63,6 +64,6 @@ Mivel ezt a csomagot minden ChurchApps projekt használja, az itt végzett vált
 
 ## Kapcsolódó cikkek
 
-- **[ApiHelper](./api-helper)** -- Szerveroldali segédeszközök, amelyek ettől a csomagtól függnek
-- **[AppHelper](./app-helper)** -- React komponensek, amelyek ettől a csomagtól függnek
+- **[ApiHelper](./api-helper.md)** -- Szerveroldali segédeszközök, amelyek ettől a csomagtól függnek
+- **[AppHelper](./app-helper.md)** -- React komponensek, amelyek ettől a csomagtól függnek
 - **[Megosztott könyvtárak áttekintése](./index.md)** -- Munkaterület beállítása, kiadási folyamat és helyi linkelési munkafolyamat

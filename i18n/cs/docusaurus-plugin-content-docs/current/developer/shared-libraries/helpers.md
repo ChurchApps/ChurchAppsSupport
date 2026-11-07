@@ -1,5 +1,6 @@
 ---
 title: "Pomocné nástroje"
+description: "Popis balíčku @churchapps/helpers: co nabízí, které aplikace ho používají, lokální build v pracovním prostoru Packages a publikování přes changesets."
 ---
 
 # Pomocné nástroje
@@ -13,14 +14,14 @@ Balíček `@churchapps/helpers` poskytuje základní nástroje, které používa
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte si **Node.js** a **Git** -- viz [Předpoklady](../setup/prerequisites)
+- Nainstalujte si **Node.js** a **Git** -- viz [Předpoklady](../setup/prerequisites.md)
 - Seznamte se s nastavením pracovního prostoru [Packages](./index.md) a postupem vydávání
 
 </div>
 
 ## Kdo to používá
 
-Každé API ChurchApps (hlavní Api, AskApi a LessonsApi) i každý webový frontend (B1Admin, B1App, B1Transfer, LessonsApp) na tomto balíčku přímo závisí. Frontendy navíc získávají mnoho jeho exportů (`ApiHelper`, `DateHelper`, `UserHelper` a další rozhraní) znovu exportovaných přes [`@churchapps/apphelper`](./app-helper). Ostatní sdílené balíčky ho deklarují jako peer dependency, aby každá aplikace používala přesně jednu kopii.
+Každé API ChurchApps (hlavní Api, AskApi a LessonsApi) i každý webový frontend (B1Admin, B1App, B1Transfer, LessonsApp) na tomto balíčku přímo závisí. Frontendy navíc získávají mnoho jeho exportů (`ApiHelper`, `DateHelper`, `UserHelper` a další rozhraní) znovu exportovaných přes [`@churchapps/apphelper`](./app-helper.md). Ostatní sdílené balíčky ho deklarují jako peer dependency, aby každá aplikace používala přesně jednu kopii.
 
 ## Nastavení pro lokální vývoj
 
@@ -55,7 +56,7 @@ Vydání probíhají přes changesety, nikoli ruční zvyšování verzí:
 1. V kořenovém adresáři pracovního prostoru spusťte `yarn changeset`, vyberte `@churchapps/helpers` s odpovídajícím typem zvýšení verze a vygenerovaný soubor changesetu commitněte spolu se svou změnou.
 2. Až budete připraveni vydat, spusťte v kořenovém adresáři `yarn publish-all` -- zvýší verze, zapíše CHANGELOGy, sestaví balíčky v pořadí podle závislostí a publikuje je na npm.
 
-Nová sdílená rozhraní patří do `helpers/src/interfaces/` a jsou znovu exportována přes hlavní soubor balíčku (barrel). Katalog typů prvků tvorby webových stránek (`ElementTypes.ts` — 35 typů se schématy jejich odpovědí) je také zde; je to kontrakt sdílený renderery apphelper, formuláři editoru B1Admin a prompty pro generování pomocí AI (viz [Architektura tvorby webových stránek](../architecture/website-builder)).
+Nová sdílená rozhraní patří do `helpers/src/interfaces/` a jsou znovu exportována přes hlavní soubor balíčku (barrel). Katalog typů prvků tvorby webových stránek (`ElementTypes.ts` — 35 typů se schématy jejich odpovědí) je také zde; je to kontrakt sdílený renderery apphelper, formuláři editoru B1Admin a prompty pro generování pomocí AI (viz [Architektura tvorby webových stránek](../architecture/website-builder.md)).
 
 :::warning
 Protože tento balíček používá každý projekt ChurchApps, mají změny zde velký dopad. Vydání `helpers` automaticky zvýší verze `apihelper` a `apphelper`, aby jejich rozsahy závislostí zůstaly aktuální. Před publikováním otestujte změny přes Yarn portál alespoň v jednom využívajícím API a jedné využívající webové aplikaci.
@@ -63,6 +64,6 @@ Protože tento balíček používá každý projekt ChurchApps, mají změny zde
 
 ## Související články
 
-- **[ApiHelper](./api-helper)** -- Serverové nástroje, které závisí na tomto balíčku
-- **[AppHelper](./app-helper)** -- React komponenty, které závisí na tomto balíčku
+- **[ApiHelper](./api-helper.md)** -- Serverové nástroje, které závisí na tomto balíčku
+- **[AppHelper](./app-helper.md)** -- React komponenty, které závisí na tomto balíčku
 - **[Přehled sdílených knihoven](./index.md)** -- Nastavení pracovního prostoru, postup vydávání a práce s lokálními odkazy

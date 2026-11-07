@@ -1,5 +1,6 @@
 ---
 title: "Configurazione presenze"
+description: "Imposta sedi, culti, orari e assegnazioni ai gruppi in B1 Admin, così il monitoraggio delle presenze e gli orari di check-in funzionano in tutta la chiesa."
 ---
 
 # Configurazione presenze

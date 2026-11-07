@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Configure webhooks em tempo real no B1 Admin: registre endpoints, escolha eventos, verifique assinaturas HMAC, trate retentativas e reenvie falhas."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Acesse **Configurações → Desenvolvedor → Webhooks → Novo Webhook**. Info
 
 ### Via API
 
-Todos os endpoints ficam sob o caminho base do módulo Membership `/membership/webhooks` e exigem um JWT de um administrador da igreja com a permissão `Settings / Edit`, **ou uma [chave de API](./api-keys) gerada com o escopo `settings:write`**. As mesmas rotas aceitam ambos. É isso que permite ao Zapier e ao Make registrar webhooks em nome da igreja quando um Zap ou cenário é ativado.
+Todos os endpoints ficam sob o caminho base do módulo Membership `/membership/webhooks` e exigem um JWT de um administrador da igreja com a permissão `Settings / Edit`, **ou uma [chave de API](./api-keys.md) gerada com o escopo `settings:write`**. As mesmas rotas aceitam ambos. É isso que permite ao Zapier e ao Make registrar webhooks em nome da igreja quando um Zap ou cenário é ativado.
 
 ```http
 POST /membership/webhooks

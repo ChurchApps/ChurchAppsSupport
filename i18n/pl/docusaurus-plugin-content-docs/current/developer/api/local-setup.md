@@ -1,5 +1,6 @@
 ---
 title: "Konfiguracja lokalnego API"
+description: "Uruchom API ChurchApps lokalnie: sklonuj repozytorium, skonfiguruj sześć baz MySQL modułów, zainicjuj schemat i uruchom serwer dev z przeładowaniem."
 ---
 
 # Konfiguracja lokalnego API
@@ -13,9 +14,9 @@ Ten przewodnik przeprowadzi Cię przez konfigurację API ChurchApps do lokalnego
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj **Node.js 24+**, **Git** i **MySQL 8.0+** -- zobacz [Wymagania wstępne](../setup/prerequisites)
+- Zainstaluj **Node.js 24+**, **Git** i **MySQL 8.0+** -- zobacz [Wymagania wstępne](../setup/prerequisites.md)
 - Utwórz użytkownika MySQL z uprawnieniami do tworzenia baz danych
-- Zapoznaj się z dokumentacją [Zmienne środowiskowe](../setup/environment-variables) dotyczącą konfiguracji API
+- Zapoznaj się z dokumentacją [Zmienne środowiskowe](../setup/environment-variables.md) dotyczącą konfiguracji API
 
 </div>
 
@@ -82,7 +83,7 @@ API uruchamia się z automatycznym przeładowaniem pod adresem [http://localhost
 
 ## Wdrażanie
 
-Środowisko staging zostało wycofane. API wdraża się do środowiska demonstracyjnego przy każdym wypchnięciu zmian do `main`, a na produkcję poprzez ręczny workflow **Deploy Prod**, który dodatkowo stosuje oczekujące migracje bazy danych. Szczegóły znajdziesz w artykule [Wdrażanie API](../deployment/apis).
+Środowisko staging zostało wycofane. API wdraża się do środowiska demonstracyjnego przy każdym wypchnięciu zmian do `main`, a na produkcję poprzez ręczny workflow **Deploy Prod**, który dodatkowo stosuje oczekujące migracje bazy danych. Szczegóły znajdziesz w artykule [Wdrażanie API](../deployment/apis.md).
 
 ## Lokalny rozwój bibliotek
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Dzięki temu możesz testować zmiany w bibliotece w połączeniu z API bez publikowania ich w npm. Szczegóły znajdziesz w artykule [Biblioteki współdzielone](../shared-libraries/#local-development-against-a-consuming-app) -- i nigdy nie commituj rozwiązania portalu zapisanego w `package.json` przez polecenie link.
+Dzięki temu możesz testować zmiany w bibliotece w połączeniu z API bez publikowania ich w npm. Szczegóły znajdziesz w artykule [Biblioteki współdzielone](../shared-libraries/index.md#local-development-against-a-consuming-app) -- i nigdy nie commituj rozwiązania portalu zapisanego w `package.json` przez polecenie link.
 
 ## Powiązane artykuły
 
-- **[Baza danych](./database)** -- Zrozumienie architektury z bazą danych dla każdego modułu
-- **[Struktura modułu](./module-structure)** -- Jak zorganizowane są kontrolery, repozytoria i modele
-- **[Biblioteki współdzielone](../shared-libraries/)** -- Praca z `@churchapps/helpers` i `@churchapps/apihelper`
+- **[Baza danych](./database.md)** -- Zrozumienie architektury z bazą danych dla każdego modułu
+- **[Struktura modułu](./module-structure.md)** -- Jak zorganizowane są kontrolery, repozytoria i modele
+- **[Biblioteki współdzielone](../shared-libraries/index.md)** -- Praca z `@churchapps/helpers` i `@churchapps/apihelper`

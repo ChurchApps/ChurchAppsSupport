@@ -1,5 +1,6 @@
 ---
 title: "管理屏幕与群组"
+description: "在 FreePlay Admin 中查看哪些 FreePlay 电视已联机，并确认其已为周日做好准备；还可编辑屏幕设置，以及设置共用同一日历的屏幕组。"
 ---
 
 # 管理屏幕与群组
@@ -14,7 +15,7 @@ FreePlay Admin 中的**屏幕**页面会列出与您教会配对的每台电视�
 <h4>开始之前</h4>
 
 - 登录 FreePlay Admin：[admin.freeplay.church](https://admin.freeplay.church)
-- [至少配对一台屏幕](./pairing-a-screen)
+- [至少配对一台屏幕](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ FreePlay Admin 中的**屏幕**页面会列出与您教会配对的每台电视�
 
 点击屏幕名称即可打开其页面。页面左侧有以下选项：
 
-- **在浏览器中演示** -- 在浏览器中全屏播放该屏幕的日历，效果与电视上的显示一致。请参阅[从浏览器演示](./scheduled-playback#presenting-from-a-browser)
+- **在浏览器中演示** -- 在浏览器中全屏播放该屏幕的日历，效果与电视上的显示一致。请参阅[从浏览器演示](./scheduled-playback.md#presenting-from-a-browser)
 - **编辑** -- 更改名称、群组或模式
 - **更多** > **取消配对** -- 断开电视连接，电视将重新显示配对码
 
@@ -93,6 +94,6 @@ FreePlay Admin 中的**屏幕**页面会列出与您教会配对的每台电视�
 
 ## 相关文章
 
-- **[配对屏幕](./pairing-a-screen)** -- 添加新电视
-- **[安排日历](./scheduling-the-calendar)** -- 设置每个群组播放的内容及其默认循环
-- **[电视上的定时播放](./scheduled-playback)** -- "就绪至"日期在电视上的具体含义
+- **[配对屏幕](./pairing-a-screen.md)** -- 添加新电视
+- **[安排日历](./scheduling-the-calendar.md)** -- 设置每个群组播放的内容及其默认循环
+- **[电视上的定时播放](./scheduled-playback.md)** -- "就绪至"日期在电视上的具体含义

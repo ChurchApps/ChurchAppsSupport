@@ -1,5 +1,6 @@
 ---
 title: "Nettsted"
+description: "Få en oversikt over nettstedbyggeren i B1 Admin: sider, blogg, blokker, utseende, filer og kalendere, med lenker til oppsett- og redigeringsveiledninger."
 ---
 
 # Nettsted
@@ -22,7 +23,7 @@ Navigasjonslenkene dine vises i en trestruktur. Du kan sortere lenker ved hjelp 
 
 ### Blogg {#blog}
 
-Publiser nyheter, oppdateringer og andakter som blogginnlegg på `/blog` på nettstedet ditt, med en RSS-feed. Se veiledningen [Blogg](blog).
+Publiser nyheter, oppdateringer og andakter som blogginnlegg på `/blog` på nettstedet ditt, med en RSS-feed. Se veiledningen [Blogg](./blog.md).
 
 ### Blokker
 
@@ -30,24 +31,24 @@ Bygg gjenbrukbare innholdskomponenter som du kan plassere på flere sider. Blokk
 
 ### Utseende
 
-Tilpass nettsideens tema, farger, skrifter, logo og mellomrom. Du kan bruke forhåndsoppbygde stilmaler for en rask start eller finjustere alle detaljer med fargepalettediagrammet, typografiinnstillinger og egendefinert CSS. Se [Utseende](appearance)-guiden for full detaljer.
+Tilpass nettsideens tema, farger, skrifter, logo og mellomrom. Du kan bruke forhåndsoppbygde stilmaler for en rask start eller finjustere alle detaljer med fargepalettediagrammet, typografiinnstillinger og egendefinert CSS. Se [Utseende](./appearance.md)-guiden for full detaljer.
 
 ### Filer
 
-Last opp og administrer alle mediaobjektene dine -- bilder, dokumenter og andre filer -- på ett sentralt sted, og kopier fillenker for bruk hvor som helst på nettstedet ditt. Se [Filer](files) for mer informasjon.
+Last opp og administrer alle mediaobjektene dine -- bilder, dokumenter og andre filer -- på ett sentralt sted, og kopier fillenker for bruk hvor som helst på nettstedet ditt. Se [Filer](./files.md) for mer informasjon.
 
 ### Kalendre
 
 Publiser hendelseskalendere på nettstedet ditt slik at besøkende kan se hva som skjer i kirken din. Opprett kuraterte kalendere som trekker hendelser fra flere grupper inn i en enkelt visning. Kalendere har et eget **Kalendere**-punkt i B1 Admin-menyen, atskilt fra **Nettsted**.
 
 :::tip
-Start med [Startoppsett](initial-setup) hvis du konfigurerer nettstedet for første gang. Det gjennomgår domeneoppsett, oppretter din første side og konfigurerer nettsideens utseende.
+Start med [Startoppsett](./initial-setup.md) hvis du konfigurerer nettstedet for første gang. Det gjennomgår domeneoppsett, oppretter din første side og konfigurerer nettsideens utseende.
 :::
 
 ## Neste trinn
 
-- [Startoppsett](initial-setup) -- Få nettstedet ditt opp og kjørende for første gang
-- [Administrer sider](managing-pages) -- Lær hvordan du oppretter og organiserer sidene dine
-- [Bruk sideeditor](page-editor) -- Bygg og still din sideinnhold med det visuelle editoren
-- [Utseende](appearance) -- Tilpass utseendet på nettstedet ditt
-- [Filer](files) -- Last opp og administrer mediefiler
+- [Startoppsett](./initial-setup.md) -- Få nettstedet ditt opp og kjørende for første gang
+- [Administrer sider](./managing-pages.md) -- Lær hvordan du oppretter og organiserer sidene dine
+- [Bruk sideeditor](./page-editor.md) -- Bygg og still din sideinnhold med det visuelle editoren
+- [Utseende](./appearance.md) -- Tilpass utseendet på nettstedet ditt
+- [Filer](./files.md) -- Last opp og administrer mediefiler

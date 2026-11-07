@@ -1,5 +1,6 @@
 ---
 title: "캘린더 예약하기"
+description: "FreePlay Admin 캘린더에서 주간 또는 일회성 일정을 설정하여 화면 그룹에 재생목록, 서비스 플랜, 제공자 폴더를 재생하고, 기본 반복을 대체 재생으로 지정합니다."
 ---
 
 # 캘린더 예약하기
@@ -13,8 +14,8 @@ FreePlay Admin의 **Calendar** 페이지에서 각 화면 그룹이 무엇을 �
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 화면 그룹을 최소 하나 만드세요. [화면 및 그룹 관리하기](./managing-screens#screen-groups)를 참고하세요
-- [재생 목록을 만들거나](./building-playlists), B1 Admin에 계획 유형이 설정되어 있어야 합니다
+- 화면 그룹을 최소 하나 만드세요. [화면 및 그룹 관리하기](./managing-screens.md#screen-groups)를 참고하세요
+- [재생 목록을 만들거나](./building-playlists.md), B1 Admin에 계획 유형이 설정되어 있어야 합니다
 
 </div>
 
@@ -82,10 +83,10 @@ FreePlay Admin의 **Calendar** 페이지에서 각 화면 그룹이 무엇을 �
 
 ## 화면이 변경 사항을 가져오는 방식
 
-페어링된 화면은 앞으로 7일 동안 예약된 모든 내용을 내려받고, 스스로 변경 사항이 있는지 확인합니다. 캘린더를 수정한 뒤 TV를 직접 만질 필요는 없습니다. 화면이 필요한 내용을 모두 받았는지 확인하려면 [화면 페이지](./managing-screens)의 **Ready through**를 보세요.
+페어링된 화면은 앞으로 7일 동안 예약된 모든 내용을 내려받고, 스스로 변경 사항이 있는지 확인합니다. 캘린더를 수정한 뒤 TV를 직접 만질 필요는 없습니다. 화면이 필요한 내용을 모두 받았는지 확인하려면 [화면 페이지](./managing-screens.md)의 **Ready through**를 보세요.
 
 ## 관련 문서
 
-- **[재생 목록 만들기](./building-playlists)** - 예약할 재생 목록을 만듭니다
-- **[TV에서 예약 재생](./scheduled-playback)** - 교사 진행 수업과 리모컨이 TV에서 어떻게 작동하는지 설명합니다
-- **[화면 및 그룹 관리하기](./managing-screens)** - 그룹을 추가하고 화면별 다운로드를 확인합니다
+- **[재생 목록 만들기](./building-playlists.md)** - 예약할 재생 목록을 만듭니다
+- **[TV에서 예약 재생](./scheduled-playback.md)** - 교사 진행 수업과 리모컨이 TV에서 어떻게 작동하는지 설명합니다
+- **[화면 및 그룹 관리하기](./managing-screens.md)** - 그룹을 추가하고 화면별 다운로드를 확인합니다

@@ -1,5 +1,6 @@
 ---
 title: "Planvalidierung & Benachrichtigungen"
+description: "Gottesdienstpläne in B1 Admin auf unbesetzte Positionen, Terminkonflikte und gesperrte Helfer prüfen; danach Team per Push-Nachricht informieren."
 ---
 
 # Planvalidierung & Benachrichtigungen für Ehrenamtliche

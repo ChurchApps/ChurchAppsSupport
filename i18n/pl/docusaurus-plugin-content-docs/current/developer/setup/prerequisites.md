@@ -1,5 +1,6 @@
 ---
 title: "Wymagania wstępne"
+description: "Konfiguracja Node.js, npm, Git i narzędzi platformy przed pracą nad projektami ChurchApps, np. B1 Admin, Lessons.church, FreePlay czy lokalnym API."
 ---
 
 # Wymagania wstępne
@@ -13,7 +14,7 @@ Potrzebne narzędzia zależą od tego, nad którymi projektami planujesz pracowa
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zapoznaj się z [Przeglądem projektów](./project-overview), aby ustalić, nad którymi projektami chcesz pracować
+- Zapoznaj się z [Przeglądem projektów](./project-overview.md), aby ustalić, nad którymi projektami chcesz pracować
 - Na komputerze deweloperskim potrzebujesz uprawnień administratora do instalacji oprogramowania
 
 </div>
@@ -40,7 +41,7 @@ Jeśli planujesz uruchamiać API lokalnie (zamiast korzystać z demonstracyjnych
 |------|---------|-------|
 | **MySQL** | 8.0+ | Każdy moduł API korzysta z własnej bazy danych |
 
-Do działania podstawowego API potrzebujesz sześciu baz danych: `membership`, `attendance`, `content`, `giving`, `messaging` i `doing`. API zawiera skrypty inicjalizujące schemat – zobacz przewodnik [Lokalna konfiguracja API](../api/local-setup).
+Do działania podstawowego API potrzebujesz sześciu baz danych: `membership`, `attendance`, `content`, `giving`, `messaging` i `doing`. API zawiera skrypty inicjalizujące schemat – zobacz przewodnik [Lokalna konfiguracja API](../api/local-setup.md).
 
 ## Rozwój aplikacji mobilnych
 
@@ -110,5 +111,5 @@ mysql --version   # Potrzebne tylko do lokalnego rozwoju API
 
 ## Kolejne kroki
 
-- **[Przegląd projektów](./project-overview)** -- Zobacz wszystkie projekty i ich zastosowanie
-- **[Zmienne środowiskowe](./environment-variables)** -- Skonfiguruj pliki `.env`
+- **[Przegląd projektów](./project-overview.md)** -- Zobacz wszystkie projekty i ich zastosowanie
+- **[Zmienne środowiskowe](./environment-variables.md)** -- Skonfiguruj pliki `.env`

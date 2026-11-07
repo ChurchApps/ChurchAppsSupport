@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Posting acara B1 Admin seperti orang baru, donasi, dan pengiriman formulir ke kanal Slack atau Discord dengan webhook masuk, tanpa perlu Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Jika ada yang gagal (badge merah `failed` atau `exhausted`), dialog akan menampi
 
 - **Tidak ada pesan yang muncul dan status pengiriman `400`**: biasanya Connector Type diatur ke **Standard** padahal URL-nya adalah URL Slack/Discord. Slack/Discord menolak envelope mentah. Ubah dropdown ke **Slack** atau **Discord**, lalu kirim ulang uji coba.
 - **Webhook nonaktif otomatis**: setelah 3 pengiriman gagal berturut-turut, B1 mematikan webhook. Perbaiki URL (atau putar ulang di Slack/Discord), lalu aktifkan kembali **Active**.
-- **Pesan tiba tetapi kehilangan detail**: setiap platform chat membatasi ukuran pesan. Pesan B1 sengaja dibuat satu baris. Untuk notifikasi yang lebih kaya, gunakan [Zapier](./zapier) atau [Make](./make) untuk menyusun pesan Slack yang lebih lengkap melalui aksi Slack mereka.
+- **Pesan tiba tetapi kehilangan detail**: setiap platform chat membatasi ukuran pesan. Pesan B1 sengaja dibuat satu baris. Untuk notifikasi yang lebih kaya, gunakan [Zapier](./zapier.md) atau [Make](./make.md) untuk menyusun pesan Slack yang lebih lengkap melalui aksi Slack mereka.
 
 ## Mengganti Connector Type Nanti
 
@@ -122,6 +123,6 @@ Anda dapat mengubah Connector Type pada webhook yang sudah ada. Perubahan berlak
 
 ## Lihat Juga
 
-- [Zapier](./zapier): untuk alur kerja multi-langkah yang dipicu oleh event B1
-- [Make](./make): pembuat skenario visual
+- [Zapier](./zapier.md): untuk alur kerja multi-langkah yang dipicu oleh event B1
+- [Make](./make.md): pembuat skenario visual
 - [Webhook (referensi pengembang)](/docs/developer/api/webhooks): format payload dan tanda tangan lengkap jika suatu saat Anda mengarahkan webhook ke server Anda sendiri

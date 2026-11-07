@@ -1,5 +1,7 @@
 ---
-title: "Dienst"
+title: "Ehrenamt und Anmeldung in B1.church"
+sidebar_label: "Dienst"
+description: "Suchen Sie auf B1.church nach offenen Ehrenamtsstellen, melden Sie sich an, sehen Sie Ihre Einsätze und sagen Sie Anmeldungen vor Fristende wieder ab."
 ---
 
 # Dienst
@@ -14,8 +16,8 @@ Im Bereich Dienst auf B1.church können Sie ehrenamtliche Möglichkeiten durchse
 
 - **Ehrenamtliche Möglichkeiten durchsehen** -- Sehen Sie kommende Dienstpläne mit offenen Positionen, die Freiwillige benötigen.
 - **Sich für Positionen eintragen** -- Wählen Sie eine Position und tragen Sie sich mit einem Klick selbst ein.
-- **Ihre Pläne ansehen** -- Sehen Sie Ihre kommenden und vergangenen [Dienstzuweisungen](../plans/viewing-plans).
-- **Auf Zuweisungen antworten** -- Nehmen Sie Positionen, für die Sie eingeplant sind, an oder lehnen Sie sie ab, und zwar auf der Seite Pläne oder im Abschnitt **Sie dienen** auf der Startseite. Ändern sich Ihre Pläne, nachdem Sie zugesagt haben, können Sie eine [angenommene Zuweisung zurückgeben](../plans/viewing-plans#declining-an-accepted-assignment), bis der Gottesdienst vorbei ist.
+- **Ihre Pläne ansehen** -- Sehen Sie Ihre kommenden und vergangenen [Dienstzuweisungen](../plans/viewing-plans.md).
+- **Auf Zuweisungen antworten** -- Nehmen Sie Positionen, für die Sie eingeplant sind, an oder lehnen Sie sie ab, und zwar auf der Seite Pläne oder im Abschnitt **Sie dienen** auf der Startseite. Ändern sich Ihre Pläne, nachdem Sie zugesagt haben, können Sie eine [angenommene Zuweisung zurückgeben](../plans/viewing-plans.md#declining-an-accepted-assignment), bis der Gottesdienst vorbei ist.
 - **Eigene Eintragungen entfernen** -- Nehmen Sie eine Selbsteintragung zurück, wenn sich Ihre Pläne ändern (vor Ablauf der Frist).
 
 ## So funktioniert es
@@ -28,5 +30,5 @@ Auf der Freiwilligen-Seite erscheinen nur Positionen, die Ihre Gemeindeverwaltun
 
 ## Mehr erfahren
 
-- [Freiwilligen-Anmeldung](./volunteer-signup) -- Schritt-für-Schritt-Anleitung zum Durchsehen und Eintragen für ehrenamtliche Positionen
-- [Pläne anzeigen](../plans/viewing-plans) -- Ihre zugewiesenen Dienstpläne und Gottesdienstabläufe ansehen
+- [Freiwilligen-Anmeldung](./volunteer-signup.md) -- Schritt-für-Schritt-Anleitung zum Durchsehen und Eintragen für ehrenamtliche Positionen
+- [Pläne anzeigen](../plans/viewing-plans.md) -- Ihre zugewiesenen Dienstpläne und Gottesdienstabläufe ansehen

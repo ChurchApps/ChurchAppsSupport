@@ -1,5 +1,7 @@
 ---
-title: "Prédications"
+title: "Regarder les sermons dans B1 Mobile"
+sidebar_label: "Prédications"
+description: "Parcourez, recherchez et regardez les sermons enregistrés et séries dans B1 Mobile, y compris comment suivre le compte à rebours d’une diffusion en direct."
 ---
 
 # Prédications
@@ -13,7 +15,7 @@ L'écran Prédications vous permet de parcourir et de regarder les prédications
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 - Votre église doit avoir configuré du contenu de prédications dans son portail d'administration
 
 </div>
@@ -29,7 +31,7 @@ En haut de l'écran, la prédication la plus récente est affichée sous forme d
 
 ## Compte à rebours de la diffusion en direct
 
-Lorsqu'une [diffusion en direct](./live-streaming) est prévue dans les prochaines 24 heures, un compte à rebours apparaît sur l'écran Prédications. Cela vous permet de savoir quand le prochain culte sera diffusé afin que vous puissiez prévoir de regarder en direct.
+Lorsqu'une [diffusion en direct](./live-streaming.md) est prévue dans les prochaines 24 heures, un compte à rebours apparaît sur l'écran Prédications. Cela vous permet de savoir quand le prochain culte sera diffusé afin que vous puissiez prévoir de regarder en direct.
 
 ## Regarder une prédication
 
@@ -51,7 +53,7 @@ Chaque entrée de prédication peut afficher :
 - **Miniature** -- Une image d'aperçu de la prédication
 
 :::tip
-Si vous voyez un compte à rebours sur l'écran Prédications, appuyez dessus pour accéder directement à la [diffusion en direct](./live-streaming) lorsqu'elle commence.
+Si vous voyez un compte à rebours sur l'écran Prédications, appuyez dessus pour accéder directement à la [diffusion en direct](./live-streaming.md) lorsqu'elle commence.
 :::
 
 ## Disponibilité

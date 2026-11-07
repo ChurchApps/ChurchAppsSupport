@@ -1,5 +1,6 @@
 ---
 title: "Referință endpoint-uri"
+description: "Găsiți fiecare endpoint al API-ului ChurchApps după modul, vedeți metoda HTTP, calea, autentificarea și permisiunea pentru fiecare rută și aflați convențiile de salvare în lot și de erori înainte de a apela API-ul."
 ---
 
 # Referință endpoint-uri
@@ -89,10 +90,10 @@ Parametrii raportului se transmit ca valori din șirul de interogare (de exemplu
 
 | Modul | Cale de bază | Descriere |
 |-------|--------------|-----------|
-| [Autentificare](./authentication) | `/membership/users`, `/membership/oauth` | Autentificare, înregistrare, tokenuri JWT, OAuth, permisiuni |
-| [Apartenență](./membership) | `/membership/*` | Persoane, biserici, grupuri, gospodării, roluri, formulare, setări |
-| [Prezență](./attendance) | `/attendance/*` | Campusuri, servicii, sesiuni, vizite, înregistrări de check-in |
-| [Conținut](./content) | `/content/*` | Pagini, predici, evenimente, fișiere, galerii, Biblie, streaming |
-| [Donații](./giving) | `/giving/*` | Donații, fonduri, gateway-uri de plată, abonamente |
-| [Mesagerie](./messaging) | `/messaging/*` | Conversații, notificări, dispozitive, SMS |
-| [Activități](./doing) | `/doing/*` | Planuri, sarcini, atribuiri, automatizări, programare |
+| [Autentificare](./authentication.md) | `/membership/users`, `/membership/oauth` | Autentificare, înregistrare, tokenuri JWT, OAuth, permisiuni |
+| [Apartenență](./membership.md) | `/membership/*` | Persoane, biserici, grupuri, gospodării, roluri, formulare, setări |
+| [Prezență](./attendance.md) | `/attendance/*` | Campusuri, servicii, sesiuni, vizite, înregistrări de check-in |
+| [Conținut](./content.md) | `/content/*` | Pagini, predici, evenimente, fișiere, galerii, Biblie, streaming |
+| [Donații](./giving.md) | `/giving/*` | Donații, fonduri, gateway-uri de plată, abonamente |
+| [Mesagerie](./messaging.md) | `/messaging/*` | Conversații, notificări, dispozitive, SMS |
+| [Activități](./doing.md) | `/doing/*` | Planuri, sarcini, atribuiri, automatizări, programare |

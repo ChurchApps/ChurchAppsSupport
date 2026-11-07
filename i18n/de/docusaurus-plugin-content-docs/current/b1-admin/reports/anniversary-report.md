@@ -1,5 +1,6 @@
 ---
 title: "Jubiläumsliste"
+description: "Alle Personen mit Hochzeitstag in einem gewählten Monat in B1 Admin auflisten, mit Datum, und als Tabelle für Gemeindebrief oder Karten exportieren."
 ---
 
 # Jubiläumsliste

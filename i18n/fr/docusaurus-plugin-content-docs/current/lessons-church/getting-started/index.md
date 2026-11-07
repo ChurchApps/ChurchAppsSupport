@@ -1,5 +1,7 @@
 ---
-title: "Premiers pas"
+title: "Premiers pas avec Lessons.church"
+sidebar_label: "Premiers pas"
+description: "Créez votre compte Lessons.church gratuit, reliez votre église, configurez les classes et planifiez vos premières leçons. Sans abonnement ni essai."
 ---
 
 # Premiers pas

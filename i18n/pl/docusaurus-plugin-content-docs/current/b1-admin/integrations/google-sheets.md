@@ -1,5 +1,6 @@
 ---
 title: "Arkusze Google"
+description: "Połącz B1 Admin z Google Sheets dzięki dodatkowi B1 Export, aby na żądanie pobierać osoby, darowizny, grupy i frekwencję do zakładek arkusza."
 ---
 
 # Arkusze Google
@@ -100,7 +101,7 @@ Eksport działa w tle na Twoim koncie Google. Jeśli klucz API zostanie zmienion
 - **"B1 rejected the API key (401)"**: klucz został unieważniony lub jest błędny. Utwórz nowy klucz i wklej go ponownie.
 - **"This API key lacks permission for /giving/donations (403)"**: klucz nie ma uprawnienia `donations:read`. Zaktualizuj zakresy klucza w B1Admin.
 - **Arkusz się nie odświeża** po uruchomieniu: upewnij się, że patrzysz na *właściwą* nazwę karty (np. `B1 People`). Eksport tworzy kartę, jeśli jeszcze nie istnieje.
-- **"Quota exceeded"**: Apps Script narzuca dzienne limity wywołań `UrlFetchApp` na użytkownika (zazwyczaj kilka tysięcy dziennie). Duży kościół z wieloma rekordami może potrzebować rozłożyć eksporty na kilka dni lub użyć [Make](./make) albo własnej integracji do synchronizacji o dużej objętości.
+- **"Quota exceeded"**: Apps Script narzuca dzienne limity wywołań `UrlFetchApp` na użytkownika (zazwyczaj kilka tysięcy dziennie). Duży kościół z wieloma rekordami może potrzebować rozłożyć eksporty na kilka dni lub użyć [Make](./make.md) albo własnej integracji do synchronizacji o dużej objętości.
 
 ## Dostosowywanie dodatku
 
@@ -108,6 +109,6 @@ Dodatek jest open source. Projekt Apps Script znajduje się w repozytorium `B1In
 
 ## Zobacz także
 
-- [Zapier](./zapier): synchronizacja w czasie rzeczywistym zamiast eksportu na żądanie
-- [Make](./make): synchronizacja z bardziej złożonymi przekształceniami
+- [Zapier](./zapier.md): synchronizacja w czasie rzeczywistym zamiast eksportu na żądanie
+- [Make](./make.md): synchronizacja z bardziej złożonymi przekształceniami
 - [Klucze API (dokumentacja dla deweloperów)](/docs/developer/api/api-keys)

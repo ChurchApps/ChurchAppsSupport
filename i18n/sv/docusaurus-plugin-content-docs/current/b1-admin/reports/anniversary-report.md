@@ -1,5 +1,6 @@
 ---
 title: "Lista över bröllopsdagar"
+description: "Hämta en lista över alla med bröllopsdag i vald månad i B1 Admin, med datum i resultatet och export till kalkylblad för bulletiner eller kort."
 ---
 
 # Lista över bröllopsdagar

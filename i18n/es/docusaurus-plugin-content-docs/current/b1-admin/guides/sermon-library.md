@@ -1,5 +1,6 @@
 ---
 title: "Guía: Crea tu biblioteca de sermones y transmisión en vivo"
+description: "Importa tus sermones de YouTube o Vimeo, organízalos en listas y configura transmisiones en vivo recurrentes con chat en B1 Admin para tu web."
 ---
 
 # Crea tu biblioteca de sermones y transmisión en vivo

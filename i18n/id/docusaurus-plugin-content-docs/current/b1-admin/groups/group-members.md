@@ -1,5 +1,6 @@
 ---
 title: "Anggota Grup"
+description: "Tambah, hapus, dan tetapkan pemimpin untuk anggota grup di B1 Admin, lalu kirim email, SMS, cetak, atau ekspor daftar anggota dari halaman grup."
 ---
 
 # Anggota Grup

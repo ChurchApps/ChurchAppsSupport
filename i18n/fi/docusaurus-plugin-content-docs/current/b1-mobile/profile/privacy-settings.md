@@ -1,5 +1,6 @@
 ---
 title: "Profiilin asetukset"
+description: "Määritä, mitkä profiilitiedot, kuten puhelin, sähköposti ja osoite, muut jäsenet näkevät B1 Mobile -hakemistossa, ja tarkista odottavat muutokset."
 ---
 
 # Profiilin asetukset
@@ -13,7 +14,7 @@ Profiilisivusi **Näkyvyys**-välilehdellä voit hallita, mitä muut seurakunnan
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 
 </div>
 
@@ -52,8 +53,8 @@ Jos tekemäsi muutos ei ole vielä tullut voimaan, tarkista **Odottavat**-välil
 
 | Välilehti | Tarkoitus |
 |---|---|
-| **Profiili** | [Muokkaa henkilötietojasi](./editing-profile) ja kuvaasi |
-| **Kotitalous** | [Katso perheenjäsenesi](./household) |
+| **Profiili** | [Muokkaa henkilötietojasi](./editing-profile.md) ja kuvaasi |
+| **Kotitalous** | [Katso perheenjäsenesi](./household.md) |
 | **Näkyvyys** | Hallitse, mitä muut näkevät hakemistossa |
 | **Odottavat** | Tarkista hyväksyntää odottavat profiilimuutokset |
 | **Tili** | Hallitse tietoturva-asetuksia |
@@ -62,6 +63,6 @@ Nämä välilehdet toimivat yhdessä ja antavat sinulle täyden hallinnan henkil
 
 ## Liittyvät artikkelit
 
-- [Profiilisi muokkaaminen](./editing-profile) -- Päivitä henkilötietosi
-- [Kotitalous](./household) -- Katso ja hallitse perheenjäseniesi tietoja
+- [Profiilisi muokkaaminen](./editing-profile.md) -- Päivitä henkilötietosi
+- [Kotitalous](./household.md) -- Katso ja hallitse perheenjäseniesi tietoja
 - [Jäsenhakemisto](../community/member-directory.md) -- Katso, miltä profiilisi näyttää muille

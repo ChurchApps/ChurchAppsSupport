@@ -386,13 +386,13 @@
     "message": "B1 - الهاتف المحمول"
   },
   "homepage.products.b1mobile.description": {
-    "message": "تطبيق الهاتف المحمول لأعضاء الكنيسة على iOS و Android."
+    "message": "تطبيق الأعضاء القديم لنظامي iOS وAndroid، وقد حل محله الآن تطبيق B1.church على الويب."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 - تسجيل الوصول"
   },
   "homepage.products.b1checkin.description": {
-    "message": "تطبيق الخدمة الذاتية للتحقق من الكشك لأجهزة لوحية بنظام Android."
+    "message": "تطبيق كشك تسجيل الوصول الذاتي لأجهزة iPad وأجهزة Android اللوحية."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "مصممة خصيصاً لسير عمل الكنيسة - وليس أداة عامة تم تكييفها للخدمة."
   },
   "homepage.title": {
-    "message": "الصفحة الرئيسية"
+    "message": "المساعدة لـ B1.church وLessons.church وFreePlay"
   },
   "homepage.description": {
-    "message": "وثائق دعم ChurchApps - أدوات مجانية ومفتوحة المصدر لإدارة الكنيسة."
+    "message": "أدلة وتوثيق لبرامج ChurchApps الكنسية المجانية مفتوحة المصدر: إدارة الكنيسة وتسجيل الوصول والتبرعات ومواقع B1.church، ومنهج Lessons.church، وFreePlay."
   },
   "homepage.products.heading": {
     "message": "اختر منتجك"

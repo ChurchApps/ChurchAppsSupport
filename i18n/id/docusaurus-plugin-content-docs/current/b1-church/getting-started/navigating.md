@@ -1,5 +1,6 @@
 ---
 title: "Menavigasi B1App"
+description: "Temukan jalan Anda di portal anggota B1.church di ponsel atau komputer: dasbor Beranda, bilah tab bawah, halaman Lainnya, dan halaman Me."
 ---
 
 # Menavigasi B1App
@@ -92,7 +93,7 @@ Halaman detail, seperti kelompok, rencana, halaman Me Anda, serta layar Rencana 
 
 ## Halaman Me
 
-**Me** (`/mobile/me`) adalah pusat pribadi Anda. Halaman ini menampilkan nama dan foto Anda dengan tombol **Edit Profil** dan **Pengaturan** ([preferensi notifikasi](./notification-preferences.md)). Setelah itu ditampilkan hal-hal yang akan datang untuk Anda, yaitu tugas pelayanan, pendaftaran acara, dan acara kelompok. Berikutnya adalah rumah tangga Anda, kelompok Anda, [pemberian](../giving/) Anda tahun ini, formulir yang telah Anda kirim, riwayat kehadiran Anda, [pendaftaran](../events/my-registrations.md) Anda, serta notifikasi dan pesan terbaru Anda. Lihat [Halaman Me](./me-page) untuk detailnya.
+**Me** (`/mobile/me`) adalah pusat pribadi Anda. Halaman ini menampilkan nama dan foto Anda dengan tombol **Edit Profil** dan **Pengaturan** ([preferensi notifikasi](./notification-preferences.md)). Setelah itu ditampilkan hal-hal yang akan datang untuk Anda, yaitu tugas pelayanan, pendaftaran acara, dan acara kelompok. Berikutnya adalah rumah tangga Anda, kelompok Anda, [pemberian](../giving/index.md) Anda tahun ini, formulir yang telah Anda kirim, riwayat kehadiran Anda, [pendaftaran](../events/my-registrations.md) Anda, serta notifikasi dan pesan terbaru Anda. Lihat [Halaman Me](./me-page.md) untuk detailnya.
 
 Jika Anda belum masuk, halaman Me menampilkan tombol **Masuk** sebagai gantinya.
 

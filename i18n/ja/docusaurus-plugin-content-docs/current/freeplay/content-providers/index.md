@@ -1,5 +1,6 @@
 ---
 title: "コンテンツプロバイダー"
+description: "FreePlay TV アプリで、Lessons.church、Dropbox、OneDrive などのプロバイダーからレッスン教材、動画、画像を閲覧してダウンロードします。"
 ---
 
 # コンテンツプロバイダー
@@ -14,7 +15,7 @@ title: "コンテンツプロバイダー"
 
 FreePlayには現在、以下のプロバイダーが含まれています。
 
-- **[Lessons.church](../../lessons-church/)** - 無料で利用できるオープンソースの子ども向けカリキュラム
+- **[Lessons.church](../../lessons-church/index.md)** - 無料で利用できるオープンソースの子ども向けカリキュラム
 - **Bible Project** - 聖書を掘り下げる動画とリソース
 - **SignPresenter** - 教会向けのプレゼンテーションとサイネージのコンテンツ
 - **B1.church** - ご自身のB1教会設定から提供されるコンテンツ
@@ -24,7 +25,7 @@ FreePlayには現在、以下のプロバイダーが含まれています。
 - **OneDrive** - ご自身のMicrosoft OneDriveにある画像、動画、音声を閲覧して再生
 
 :::note
-Google DriveとFreeShowは、FreePlayのTVアプリにはもう表示されません。Google Driveのコンテンツをテレビで使うには、[FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers)でGoogle Driveを接続し、ファイルをプレイリストに追加して、そのプレイリストをスケジュールしてください。
+Google DriveとFreeShowは、FreePlayのTVアプリにはもう表示されません。Google Driveのコンテンツをテレビで使うには、[FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers)でGoogle Driveを接続し、ファイルをプレイリストに追加して、そのプレイリストをスケジュールしてください。
 :::
 
 :::info
@@ -37,14 +38,14 @@ Google DriveとFreeShowは、FreePlayのTVアプリにはもう表示されま�
 
 接続されたプロバイダーは、画面左側のサイドバーの **Browse** の見出しの下に表示されます。サイドバーでプロバイダーを選択すると切り替えられるので、設定中にコンテンツのソースをすばやく行き来できます。
 
-接続済みのプロバイダーからフォルダーを選び、テレビで[お知らせ](./announcements)としてループ再生することもできます。
+接続済みのプロバイダーからフォルダーを選び、テレビで[お知らせ](./announcements.md)としてループ再生することもできます。
 
 :::tip
-テレビで接続したプロバイダーは、そのテレビでのみ使用されます。[スケジュールモード](../scheduled-mode/)を使用する場合は、代わりにFreePlay Adminで一度だけプロバイダーを接続してください。そうすると、スケジュールされたすべての画面からそのプロバイダーのコンテンツを再生できます。
+テレビで接続したプロバイダーは、そのテレビでのみ使用されます。[スケジュールモード](../scheduled-mode/index.md)を使用する場合は、代わりにFreePlay Adminで一度だけプロバイダーを接続してください。そうすると、スケジュールされたすべての画面からそのプロバイダーのコンテンツを再生できます。
 :::
 
 ## このセクションの内容
 
-- **[プロバイダーへの接続](./connecting-providers)** - 認証して接続する方法
-- **[コンテンツの閲覧とダウンロード](./browsing-content)** - フォルダーの移動、ファイルのダウンロード、コンテンツの再生
-- **[お知らせ](./announcements)** - プロバイダーのスライドのフォルダーをループ再生する
+- **[プロバイダーへの接続](./connecting-providers.md)** - 認証して接続する方法
+- **[コンテンツの閲覧とダウンロード](./browsing-content.md)** - フォルダーの移動、ファイルのダウンロード、コンテンツの再生
+- **[お知らせ](./announcements.md)** - プロバイダーのスライドのフォルダーをループ再生する

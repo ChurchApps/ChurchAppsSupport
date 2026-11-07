@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "B1 Admin'i Make'e bağlayarak iş akışlarını otomatikleştirin: API anahtarı oluşturun, B1.church tetikleyicisini ve eylemlerini kurun, yaygın hataları giderin."
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make uygulaması açık kaynaklıdır. JSON tanımları `B1Integration
 
 ## Ayrıca Bakınız
 
-- [Zapier](./zapier): Aynı model, daha basit bir arayüz ve daha geniş bir uygulama kataloğu
-- [Slack & Discord](./slack-discord): Make kullanmadan yerleşik sohbet bildirimleri
+- [Zapier](./zapier.md): Aynı model, daha basit bir arayüz ve daha geniş bir uygulama kataloğu
+- [Slack & Discord](./slack-discord.md): Make kullanmadan yerleşik sohbet bildirimleri
 - [Webhook'lar (geliştirici başvurusu)](/docs/developer/api/webhooks)

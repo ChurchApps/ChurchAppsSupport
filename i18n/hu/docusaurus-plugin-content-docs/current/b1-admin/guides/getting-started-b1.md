@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Egyházad elindítása a B1-gyel"
+description: "Új gyülekezet beállítása a B1 Admin-ban: fiók létrehozása, beállítások, szerepkörök, tagok importálása és az alapfunkciók elindítása."
 ---
 
 # Egyházad elindítása a B1-gyel

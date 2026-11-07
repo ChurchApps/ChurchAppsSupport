@@ -1,5 +1,7 @@
 ---
-title: "İncil"
+title: "B1.church'te İncil Okuma"
+sidebar_label: "İncil"
+description: "B1.church İncil okuyucusunda Kutsal Yazıları okuyun; kitap, bölüm ve çeviri denetimleri ile günlük okuma için İncil sayfasını kullanın."
 ---
 
 # İncil

@@ -1,5 +1,6 @@
 ---
 title: "Duomenų importavimas"
+description: "Perkelkite esamus asmenis, grupes, lankomumą ir aukų įrašus į B1 Admin su B1 Transfer įrankiu arba bet kada eksportuokite duomenų atsarginę kopiją."
 ---
 
 # Duomenų importavimas

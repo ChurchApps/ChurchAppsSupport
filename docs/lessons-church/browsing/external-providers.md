@@ -1,5 +1,6 @@
 ---
 title: "External Providers"
+description: "Learn how third-party curriculum providers add their content to Lessons.church using the Open Lesson Format, and how to connect one from the portal."
 ---
 
 # External Providers

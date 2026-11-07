@@ -1,5 +1,6 @@
 ---
 title: "Stripe Import"
+description: "Hent Stripe-donationer ind i B1 Admin med en forhåndsvisning, der markerer hver betaling som ny, allerede importeret eller sprunget over, før du bekræfter."
 ---
 
 # Stripe Import

@@ -1,5 +1,6 @@
 ---
 title: "Vytváranie kalendárov"
+description: "Vytvorte kalendár v B1 Admin, prepojte skupiny alebo importujte súbory .ics a spravujte jeho udalosti, registrácie a poznámky na jednom mieste."
 ---
 
 # Vytváranie kalendárov
@@ -61,7 +62,7 @@ Prepojenie skupín s kalendárom je účinný spôsob, ako automaticky zhromaž�
 :::
 
 :::info
-Ak chcete vytvoriť jeden kalendár, ktorý zbiera udalosti z mnohých skupín v rámci vašej cirkvi, pozrite si [Kurátorský kalendár](curated-calendar), kde nájdete jednoduchší postup.
+Ak chcete vytvoriť jeden kalendár, ktorý zbiera udalosti z mnohých skupín v rámci vašej cirkvi, pozrite si [Kurátorský kalendár](./curated-calendar.md), kde nájdete jednoduchší postup.
 :::
 
 ## Pridávanie a úprava udalostí {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Na stránke s detailom kalendára kliknite na **Nová udalosť**, ak chcete prid
 - **Začiatok** a **Koniec**, **Opakovanie** a **Viditeľnosť** (**Verejná** alebo **Súkromná**).
 - **Značky** -- Štítky oddelené čiarkami, napríklad `mládež, študenti`. Prvok Kalendár na vašom webe možno nastaviť tak, aby zobrazoval len udalosti s určitou značkou. Ide o rovnaké pole **Značky**, aké je v nastaveniach registrácie udalosti.
 - **Kto môže zobraziť poznámky** a **Kto môže pridávať poznámky** -- Kto môže čítať a pridávať poznámky k udalosti (pozrite si [Poznámky k udalosti](#event-notes)). Vyberte **Iba zamestnanci** (predvolené nastavenie), **Vedúci skupiny** (vedúci skupiny udalosti) alebo **Členovia skupiny** (všetci v skupine udalosti vrátane jej vedúcich).
-- **Miestnosti** a **Zdroje** -- Rezervujte priestor a vybavenie pre udalosť. Pozrite si [Miestnosti, zdroje a plánovanie](rooms-resources).
+- **Miestnosti** a **Zdroje** -- Rezervujte priestor a vybavenie pre udalosť. Pozrite si [Miestnosti, zdroje a plánovanie](./rooms-resources.md).
 
 Kliknite na **Uložiť**. Ak sa udalosť opakuje, B1 vás požiada o potvrdenie, pretože uloženie aktualizuje každý výskyt v sérii.
 
@@ -101,12 +102,12 @@ Registráciu môžete zapnúť pre ľubovoľnú udalosť v kalendári, aby sa č
    - **Uzavretie registrácie** -- Dátum a čas, kedy sa registrácia uzavrie.
    - **Značky** -- Štítky oddelené čiarkami (napríklad „mládež, retreat, VBS“), ktoré pomáhajú kategorizovať udalosti, na ktoré sa možno registrovať.
    - **Otázky k registrácii** -- Voliteľne pripojte [formulár](../forms/creating-forms.md), aby registrovaní odpovedali na dodatočné otázky (stravovacie obmedzenia, veľkosť tričky, núdzový kontakt a podobne) ako súčasť prihlasovania. Ak chcete otázky preskočiť, vyberte **Žiadne**.
-   - **Zapnúť čakaciu listinu** -- Keď sa udalosť zaplní, ďalší záujemcovia sa môžu zapísať na čakaciu listinu namiesto toho, aby boli odmietnutí. Pozrite si [Platené registrácie](paid-registrations#waitlist).
+   - **Zapnúť čakaciu listinu** -- Keď sa udalosť zaplní, ďalší záujemcovia sa môžu zapísať na čakaciu listinu namiesto toho, aby boli odmietnutí. Pozrite si [Platené registrácie](./paid-registrations.md#waitlist).
 4. Uložte udalosť.
 
-Pri platených udalostiach môžete na tej istej stránke nastavení definovať spoplatnené **Typy účastníkov**, voliteľné **Výbery** (doplnkové služby) a **Zľavové kódy**, pričom platby sa prijímajú cez poskytovateľa darov vašej cirkvi. Úplný postup nájdete v [Platené registrácie](paid-registrations).
+Pri platených udalostiach môžete na tej istej stránke nastavení definovať spoplatnené **Typy účastníkov**, voliteľné **Výbery** (doplnkové služby) a **Zľavové kódy**, pričom platby sa prijímajú cez poskytovateľa darov vašej cirkvi. Úplný postup nájdete v [Platené registrácie](./paid-registrations.md).
 
-Keď je registrácia zapnutá, členovia uvidia tlačidlo **Registrovať sa na túto udalosť**, keď si udalosť zobrazia na [webe B1](../../b1-church/events/registering) alebo v [mobilnej aplikácii B1](../../b1-mobile/events/registering). Ak ste pripojili formulár, registrovaní uvidia počas registrácie krok **Otázky** a ich odpovede sa uložia spolu s ich registráciou.
+Keď je registrácia zapnutá, členovia uvidia tlačidlo **Registrovať sa na túto udalosť**, keď si udalosť zobrazia na [webe B1](../../b1-church/events/registering.md) alebo v [mobilnej aplikácii B1](../../b1-mobile/events/registering.md). Ak ste pripojili formulár, registrovaní uvidia počas registrácie krok **Otázky** a ich odpovede sa uložia spolu s ich registráciou.
 
 :::info
 Otázky k registrácii fungujú len s formulármi, ktoré **nie sú** označené ako Obmedzené. Obmedzený formulár sa pri registrácii automaticky preskočí a nezobrazí sa, preto pri pripájaní otázok k udalosti používajte neobmedzený formulár.
@@ -126,7 +127,7 @@ Ak chcete zobraziť a spravovať registrácie na vaše udalosti:
    - **Presunúť** registrácie z čakacej listiny, keď sa uvoľní miesto
    - **Exportovať CSV** -- Stiahnuť všetky registrácie vrátane typov účastníkov, výberov, súm platieb a odpovedí na otázky
 
-Ak má udalosť pripojené otázky k registrácii, stránka s detailom tiež zobrazuje filter **Len nezodpovedané otázky**, ktorým rýchlo nájdete registrovaných, ktorí ešte neodoslali odpovede, a tlačidlo **Zobraziť odpovede** pri každej zodpovedanej registrácii, aby ste videli ich odpovede. Platené udalosti pridávajú stĺpec **Typ**, stĺpec **Zaplatené / Spolu**, počty podľa typu a dialógové okno s podrobnosťami o platbách -- pozrite si [Platené registrácie](paid-registrations#the-registration-roster).
+Ak má udalosť pripojené otázky k registrácii, stránka s detailom tiež zobrazuje filter **Len nezodpovedané otázky**, ktorým rýchlo nájdete registrovaných, ktorí ešte neodoslali odpovede, a tlačidlo **Zobraziť odpovede** pri každej zodpovedanej registrácii, aby ste videli ich odpovede. Platené udalosti pridávajú stĺpec **Typ**, stĺpec **Zaplatené / Spolu**, počty podľa typu a dialógové okno s podrobnosťami o platbách -- pozrite si [Platené registrácie](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Pomocou ukazovateľa kapacity sledujte, ako rýchlo sa udalosti zapĺňajú. Ukazovateľ sa zmení na červený, keď je udalosť na kapacite alebo ju prekračuje.
@@ -134,7 +135,7 @@ Pomocou ukazovateľa kapacity sledujte, ako rýchlo sa udalosti zapĺňajú. Uka
 
 ## Ďalšie kroky
 
-- [Kurátorský kalendár](curated-calendar) -- Vytvorte kalendár, ktorý zbiera udalosti z viacerých skupín
-- [Platené registrácie](paid-registrations) -- Typy účastníkov, doplnkové výbery, zľavové kódy, platby a čakacie listiny
-- [Sprievodca registráciou na udalosti](../guides/event-registration) -- Postup krok za krokom pri nastavovaní registrácie na udalosti
-- [Prehľad kalendárov](./) -- Návrat na prehľad kalendárov
+- [Kurátorský kalendár](./curated-calendar.md) -- Vytvorte kalendár, ktorý zbiera udalosti z viacerých skupín
+- [Platené registrácie](./paid-registrations.md) -- Typy účastníkov, doplnkové výbery, zľavové kódy, platby a čakacie listiny
+- [Sprievodca registráciou na udalosti](../guides/event-registration.md) -- Postup krok za krokom pri nastavovaní registrácie na udalosti
+- [Prehľad kalendárov](./index.md) -- Návrat na prehľad kalendárov

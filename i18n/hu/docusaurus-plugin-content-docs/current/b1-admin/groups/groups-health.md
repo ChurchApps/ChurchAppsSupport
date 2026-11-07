@@ -1,5 +1,6 @@
 ---
 title: "Csoportok állapota"
+description: "Csoportok állapotának ellenőrzése a B1 Admin-ban: 90 napos táblázat tagokról, csatlakozásokról, távozásokról, lemorzsolódásról és átlagos részvételről."
 ---
 
 # Csoportok állapota
@@ -13,8 +14,8 @@ A Csoportok állapota irányítópult átfogó képet ad arról, hogyan teljesí
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Érdemi adatok megjelenítéséhez legalább néhány olyan csoportra van szüksége, amelynek vannak tagjai. Lásd: [Csoportok létrehozása](creating-groups).
-- A látogatottsági adatok a rögzített alkalmakból származnak. Lásd: a [Látogatás](../attendance/) szakaszt.
+- Érdemi adatok megjelenítéséhez legalább néhány olyan csoportra van szüksége, amelynek vannak tagjai. Lásd: [Csoportok létrehozása](./creating-groups.md).
+- A látogatottsági adatok a rögzített alkalmakból származnak. Lásd: a [Látogatás](../attendance/index.md) szakaszt.
 
 </div>
 
@@ -48,6 +49,6 @@ A csoport nevére kattintva közvetlenül a csoport részletes oldalára jut, ah
 
 ## Kapcsolódó cikkek
 
-- [Csoportok létrehozása](creating-groups) — csoportok beállítása
-- [Csoporttagok](group-members) — a csoporttagság kezelése
-- [Látogatás rögzítése](../attendance/tracking-attendance) — azok a látogatási alkalmak, amelyek ezt az irányítópultot táplálják
+- [Csoportok létrehozása](./creating-groups.md) — csoportok beállítása
+- [Csoporttagok](./group-members.md) — a csoporttagság kezelése
+- [Látogatás rögzítése](../attendance/tracking-attendance.md) — azok a látogatási alkalmak, amelyek ezt az irányítópultot táplálják

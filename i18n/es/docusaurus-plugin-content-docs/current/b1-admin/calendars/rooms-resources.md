@@ -1,5 +1,6 @@
 ---
 title: "Salas, Recursos y Programación"
+description: "Configura salas, equipos, bloqueos y plantillas de eventos en B1 Admin para que los grupos soliciten reservas y las apruebes sin dobles reservas."
 ---
 
 # Salas, Recursos y Programación
@@ -14,7 +15,7 @@ Las Salas y Recursos te permiten rastrear los espacios y equipos reservables de 
 <h4>Antes de Comenzar</h4>
 
 - Necesitas acceso administrativo a la sección de Calendarios en B1 Admin
-- Configura [grupos](../groups/creating-groups) cuyos miembros enviarán solicitudes de reserva
+- Configura [grupos](../groups/creating-groups.md) cuyos miembros enviarán solicitudes de reserva
 
 </div>
 
@@ -76,7 +77,7 @@ Cuando se crea un nuevo evento, el personal puede elegir una plantilla existente
 
 ## Artículos Relacionados
 
-- [Calendario de Disponibilidad](availability) -- ver todas las reservas de un vistazo y reservar salas o recursos directamente
-- [Aprobaciones de Calendario](approvals) -- aprobar o rechazar solicitudes de reserva de salas y recursos
-- [Creación de Calendarios](creating-calendars) -- configura calendarios de eventos
-- [Creación de Grupos](../groups/creating-groups) -- configura grupos que pueden reservar salas y recursos
+- [Calendario de Disponibilidad](./availability.md) -- ver todas las reservas de un vistazo y reservar salas o recursos directamente
+- [Aprobaciones de Calendario](./approvals.md) -- aprobar o rechazar solicitudes de reserva de salas y recursos
+- [Creación de Calendarios](./creating-calendars.md) -- configura calendarios de eventos
+- [Creación de Grupos](../groups/creating-groups.md) -- configura grupos que pueden reservar salas y recursos

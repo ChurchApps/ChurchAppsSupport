@@ -1,5 +1,6 @@
 ---
 title: "Requesting to Join a Group"
+description: "Ask to join a group that requires approval in B1.church, add an optional note for the leader, and track or cancel your pending request."
 ---
 
 # Requesting to Join a Group

@@ -1,5 +1,6 @@
 ---
 title: "アカウント削除リクエストの確認"
+description: "B1 Admin で会員のアカウント削除リクエストを承認または却下します。Directory Approval Group を経由して処理し、30日間の GDPR の期限を守ります。"
 ---
 
 # アカウント削除リクエストの確認

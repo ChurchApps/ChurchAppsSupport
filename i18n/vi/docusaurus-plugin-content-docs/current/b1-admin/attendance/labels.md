@@ -1,5 +1,6 @@
 ---
 title: "Thiết kế nhãn Check-In"
+description: "Tùy chỉnh mẫu thẻ tên và phiếu nhận con in khi check-in trong B1 Admin, gồm các trường, vị trí và điều kiện sinh nhật hoặc ghi chú."
 ---
 
 # Thiết kế nhãn Check-In
@@ -13,8 +14,8 @@ Trình thiết kế nhãn cho phép bạn tạo và tùy chỉnh mẫu thẻ tê
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập [Điểm danh](setup) và cấu hình ít nhất một giờ lễ/sinh hoạt có bật check-in
-- Thiết lập [Check-In](check-in) để nhãn có thể in được
+- Thiết lập [Điểm danh](./setup.md) và cấu hình ít nhất một giờ lễ/sinh hoạt có bật check-in
+- Thiết lập [Check-In](./check-in.md) để nhãn có thể in được
 - Bạn cần có quyền quản trị trong mục Điểm danh
 
 </div>
@@ -85,6 +86,6 @@ Hãy in thử sau khi chỉnh sửa mẫu để xác nhận bố cục đúng tr
 
 ## Bài viết liên quan
 
-- [Thiết lập Check-In](setup) — cấu hình các buổi lễ và nhóm cho check-in
-- [Hoàn tất Check-In](check-in) — quy trình check-in dành cho gia đình
-- [Bắt đầu với B1 Checkin](../../b1-checkin/getting-started/) — ứng dụng kiosk Checkin
+- [Thiết lập Check-In](./setup.md) — cấu hình các buổi lễ và nhóm cho check-in
+- [Hoàn tất Check-In](./check-in.md) — quy trình check-in dành cho gia đình
+- [Bắt đầu với B1 Checkin](../../b1-checkin/getting-started/index.md) — ứng dụng kiosk Checkin

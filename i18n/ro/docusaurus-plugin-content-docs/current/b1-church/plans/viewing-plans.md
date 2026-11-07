@@ -1,5 +1,7 @@
 ---
-title: "Vizualizarea planurilor"
+title: "Planurile dvs. de slujire în portalul membrilor B1.church"
+sidebar_label: "Vizualizarea planurilor"
+description: "Verificați alocările dvs. de slujire în B1.church, acceptați sau refuzați solicitările, stabiliți datele de indisponibilitate și consultați istoricul slujirilor."
 ---
 
 # Vizualizarea planurilor

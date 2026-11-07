@@ -1,5 +1,6 @@
 ---
 title: "Správa ročních plánů"
+description: "Vytvořte roční plán týdenních lekcí v Lessons.church, ukotvěte týdny k Velikonocům nebo Vánocům a zveřejněte jej, aby ho církve mohly použít v B1 Admin."
 ---
 
 # Správa ročních plánů

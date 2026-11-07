@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "B1 Admin의 사람과 그룹 또는 저장된 목록 구성원을 태그로 Mailchimp 대상자에 동기화합니다. 설정, 초기 가져오기, 문제 해결 단계를 안내합니다."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Mailchimp 대상자를 B1과 자동으로 동기화 유지하세요: 사람은 �
 
 ## 기타 레시피(Zapier / Make)
 
-대상자 동기화를 넘어 — `donation.created`에 기부자 태깅, Mailchimp → B1 역방향 또는 완전히 다른 이메일 플랫폼(Constant Contact, Brevo 등)으로의 동기화 — 은 [Zapier](../zapier) 또는 [Make](../make)를 통해 여전히 사용 가능합니다. 동일한 webhook 이벤트를 트리거합니다:
+대상자 동기화를 넘어 — `donation.created`에 기부자 태깅, Mailchimp → B1 역방향 또는 완전히 다른 이메일 플랫폼(Constant Contact, Brevo 등)으로의 동기화 — 은 [Zapier](../zapier.md) 또는 [Make](../make.md)를 통해 여전히 사용 가능합니다. 동일한 webhook 이벤트를 트리거합니다:
 
 - **태그 기부자:** B1 *새 기부* → B1 *사람 찾기* → Mailchimp *구독자를 태그에 추가*(`기부-2026`)
 - **양방향:** Mailchimp *새 구독자* → B1 *사람 만들기*
@@ -83,4 +84,4 @@ Mailchimp 대상자를 B1과 자동으로 동기화 유지하세요: 사람은 �
 
 - [Webhooks(개발자 참고)](/docs/developer/api/webhooks) — 기본, 이벤트 카탈로그, 배송/재시도 의미론
 - [저장된 목록](/docs/b1-admin/people/lists) — Mailchimp 태그에 자연스럽게 매핑되는 규칙 기반 대상자
-- [Zapier(개요)](../zapier) — 대상자 동기화를 넘어 레시피의 경우
+- [Zapier(개요)](../zapier.md) — 대상자 동기화를 넘어 레시피의 경우

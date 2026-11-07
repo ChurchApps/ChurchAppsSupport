@@ -1,5 +1,6 @@
 ---
 title: "Planes de servicio"
+description: "Configura la programación de voluntarios en B1 Admin: crea planes de servicio por fecha, copia desde semanas anteriores, asigna miembros del equipo a posiciones y administra las fechas límite de inscripción y los recordatorios."
 ---
 
 # Planes de servicio

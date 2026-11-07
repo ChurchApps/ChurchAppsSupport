@@ -1,5 +1,7 @@
 ---
-title: "Fremmøde"
+title: "Check-in i B1.church medlemsportalen"
+sidebar_label: "Fremmøde"
+description: "Check dig selv og din husstand ind til en kirkegudstjeneste fra B1.church-medlemsportalen, uden kiosk, og tildel grupper."
 ---
 
 # Fremmøde

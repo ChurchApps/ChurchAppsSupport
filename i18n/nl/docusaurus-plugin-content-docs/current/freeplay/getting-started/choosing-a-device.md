@@ -1,5 +1,6 @@
 ---
 title: "Een apparaat kiezen"
+description: "Kies het juiste apparaat voor FreePlay-tv's in klaslokalen: van Fire TV Stick en Onn-box tot Apple TV, en welke je beter kunt overslaan."
 ---
 
 # Een apparaat kiezen voor FreePlay

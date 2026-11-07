@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Getting Started with B1 Checkin"
+sidebar_label: "Getting Started"
+description: "Set up the B1 Checkin kiosk app on an Android tablet: install it, log in, pick your church, and optionally connect a label printer."
 ---
 
 # Getting Started with B1 Church Checkin
@@ -27,9 +29,9 @@ Setting up B1 Church Checkin takes just a few minutes. This section walks you th
 
 When you launch the app for the first time, you will go through three steps:
 
-1. **[Log in](./logging-in)** -- Enter your email and password to authenticate.
-2. **[Select your church](./logging-in)** -- If your account is linked to multiple churches, choose which one this kiosk should serve.
-3. **[Set up a printer](./printer-setup)** -- Configure a network printer for label printing, or skip this step if you do not need labels.
+1. **[Log in](./logging-in.md)** -- Enter your email and password to authenticate.
+2. **[Select your church](./logging-in.md)** -- If your account is linked to multiple churches, choose which one this kiosk should serve.
+3. **[Set up a printer](./printer-setup.md)** -- Configure a network printer for label printing, or skip this step if you do not need labels.
 
 After the first login, the app saves your credentials and church selection. On future launches, it will skip straight to the services screen automatically.
 
@@ -43,6 +45,6 @@ Make sure your church administrator has configured services, service times, and 
 
 ## Next Steps
 
-- [Logging In](./logging-in) -- Detailed login and church selection instructions.
-- [Printer Setup](./printer-setup) -- How to discover, select, and test your label printer.
-- [Check-In Workflow](../check-in/) -- Learn the full check-in flow once your kiosk is set up.
+- [Logging In](./logging-in.md) -- Detailed login and church selection instructions.
+- [Printer Setup](./printer-setup.md) -- How to discover, select, and test your label printer.
+- [Check-In Workflow](../check-in/index.md) -- Learn the full check-in flow once your kiosk is set up.

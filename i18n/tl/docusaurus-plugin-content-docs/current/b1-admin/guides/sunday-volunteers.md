@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Pamahalaan ang Mga Boluntaryo sa Linggo"
+description: "I-set up ang volunteer team, lingguhang plano ng serbisyo, at mga task tuwing Linggo sa B1 Admin para makita at tumugon ang volunteer sa B1.church at mobile app."
 ---
 
 # Pamahalaan ang Mga Boluntaryo sa Linggo
@@ -95,7 +96,7 @@ Hayaang magpatala ang mga boluntaryo sa mga posisyon nang sila mismo sa halip na
 3. Para sa bawat posisyon, lagyan ng check ang kahon na **Allow Self-Signup** para maging available ito para sa self-service.
 4. Magdagdag ng **Description** sa bawat posisyon para malaman ng mga boluntaryo kung ano ang kinasasangkutan ng tungkulin.
 
-Kapag nagawa na ang mga self-signup na posisyon, awtomatiko silang lilitaw sa mga volunteer signup page sa [B1.church](../../b1-church/serving/volunteer-signup) at sa [B1 Mobile app](../../b1-mobile/serving/volunteer-signup). Maaaring tingnan ng mga miyembro ang mga bukas na posisyon, makita kung ilan pang puwesto ang natitira, at magpatala gamit ang isang click.
+Kapag nagawa na ang mga self-signup na posisyon, awtomatiko silang lilitaw sa mga volunteer signup page sa [B1.church](../../b1-church/serving/volunteer-signup.md) at sa [B1 Mobile app](../../b1-mobile/serving/volunteer-signup.md). Maaaring tingnan ng mga miyembro ang mga bukas na posisyon, makita kung ilan pang puwesto ang natitira, at magpatala gamit ang isang click.
 
 :::tip
 Paghaluin ang mga posisyong itinatalaga ng admin at ang mga self-signup sa iisang plan. Halimbawa, italaga nang direkta ang iyong worship leader pero hayaang pumili ng sarili ang mga greeter at coffee server.
@@ -109,7 +110,7 @@ Awtomatikong nakikita ng mga itinalagang boluntaryo ang kanilang mga plan at mak
 2. Maaari nilang tanggapin o tanggihan ang mga takdang-gawain nang direkta mula sa alinmang platform
 3. Maaari silang magtakda ng blockout date para sa mga linggong hindi sila available
 4. Maaaring i-print ang mga plan para sa rehearsal o i-post sa backstage
-5. Maaaring tingnan at magpatala ang mga boluntaryo sa mga bukas na posisyon sa pamamagitan ng [volunteer signup page](../../b1-church/serving/volunteer-signup)
+5. Maaaring tingnan at magpatala ang mga boluntaryo sa mga bukas na posisyon sa pamamagitan ng [volunteer signup page](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Nagbibigay ng push notification sa mobile app na nagpapaalam sa mga boluntaryo kapag may bago silang takdang-gawain o nagbago ang mga plan.
@@ -130,5 +131,5 @@ Naka-set up na ang iyong sistema ng pamamahala ng boluntaryo. Kada linggo, gumaw
 - [Workflows](../serving/workflows.md) -- ilipat ang mga tao sa mga paulit-ulit na proseso gamit ang mga trigger at awtomatikong hakbang
 - [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) -- paano nakikita ng mga boluntaryo ang mga plan online
 - [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) -- paano nakikita ng mga boluntaryo ang mga plan sa mobile
-- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup) -- paano pinipili ng mga miyembro ang sarili nilang posisyon ng boluntaryo
-- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup) -- self-signup ng boluntaryo sa mobile
+- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup.md) -- paano pinipili ng mga miyembro ang sarili nilang posisyon ng boluntaryo
+- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup.md) -- self-signup ng boluntaryo sa mobile

@@ -1,5 +1,6 @@
 ---
 title: "Képernyő párosítása"
+description: "FreePlay TV párosítása képernyőcsoport-naptárhoz a FreePlay Adminban a TV-n látható négybetűs kóddal, hogy önállóan játssza az ütemezett tartalmat."
 ---
 
 # Képernyő párosítása
@@ -13,9 +14,9 @@ Ha szeretnéd, hogy a TV egy naptárt kövessen, párosítsd a **FreePlay Admin*
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- Telepítsd és indítsd el a FreePlay alkalmazást a TV-n. Lásd: [Első lépések](../getting-started/)
+- Telepítsd és indítsd el a FreePlay alkalmazást a TV-n. Lásd: [Első lépések](../getting-started/index.md)
 - Legyen meg a gyülekezeted ChurchApps-bejelentkezése, hogy be tudj jelentkezni a FreePlay Adminba
-- Opcionálisan, [készíts lejátszási listát](./building-playlists) és [ütemezd be](./scheduling-the-calendar), hogy a TV azonnal tudjon mit lejátszani
+- Opcionálisan, [készíts lejátszási listát](./building-playlists.md) és [ütemezd be](./scheduling-the-calendar.md), hogy a TV azonnal tudjon mit lejátszani
 
 </div>
 
@@ -38,7 +39,7 @@ A kód 15 percig érvényes, alatta egy visszaszámláló mutatja, mennyi idő v
 5. A **Mód** alatt hagyd kiválasztva az **Ütemezett** lehetőséget. A TV önállóan, a csoport naptára szerint fog lejátszani.
 6. Kattints a **Párosítás** gombra.
 
-A TV megjeleníti a **Sikeres csatlakozás!** üzenetet, majd a **Ütemezés betöltése...** feliratot. Letölti az ütemezett tartalmat, és elindítja a lejátszást. Lásd: [Ütemezett lejátszás a TV-n](./scheduled-playback).
+A TV megjeleníti a **Sikeres csatlakozás!** üzenetet, majd a **Ütemezés betöltése...** feliratot. Letölti az ütemezett tartalmat, és elindítja a lejátszást. Lásd: [Ütemezett lejátszás a TV-n](./scheduled-playback.md).
 
 :::info
 Ha a FreePlay Admin azt jelzi, hogy **Ez a kód nem egyezik egy TV-vel**, ellenőrizd a képernyőn látható kódot. Ha lejárt, használd azt az új kódot, amelyet a TV most mutat.
@@ -51,11 +52,11 @@ A **Mód** beállításnak két lehetősége van:
 - **Ütemezett** - A csoport naptára szerint, önállóan játszik le. Senkinek nem kell megnyomnia a Indítás gombot.
 - **Kézi** - Valaki a távirányítóval választ tartalmat. A kézi képernyő továbbra is megjelenik a **Képernyők** listádban, de nem követ naptárat, ezért a **Csoport** mező ki van kapcsolva.
 
-A képernyő módját később is megváltoztathatod a [Képernyők oldalon](./managing-screens) található **Szerkesztés** gombbal.
+A képernyő módját később is megváltoztathatod a [Képernyők oldalon](./managing-screens.md) található **Szerkesztés** gombbal.
 
 ## Párosítás szolgálati tervhez
 
-A **Képernyő párosítása** oldalon megjelenő kód a B1 Adminban is működik. Ha ide írod be, és a **Tervek megjelenítése** alatt tervtípust választasz, a TV az adott tervtípust fogja követni a naptár helyett, a [Tervmód](../plan-mode/) szerint. Lásd: [Eszköz párosítása](../plan-mode/device-pairing).
+A **Képernyő párosítása** oldalon megjelenő kód a B1 Adminban is működik. Ha ide írod be, és a **Tervek megjelenítése** alatt tervtípust választasz, a TV az adott tervtípust fogja követni a naptár helyett, a [Tervmód](../plan-mode/index.md) szerint. Lásd: [Eszköz párosítása](../plan-mode/device-pairing.md).
 
 ## Módosítás vagy párosítás megszüntetése a TV-n
 
@@ -79,6 +80,6 @@ A TV visszatér a párosítókód megjelenítéséhez. Ha újra szeretnéd haszn
 
 ## Kapcsolódó cikkek
 
-- **[Képernyők és csoportok kezelése](./managing-screens)** - Képernyő átnevezése, áthelyezése másik csoportba vagy letöltések ellenőrzése
-- **[A naptár ütemezése](./scheduling-the-calendar)** - Annak eldöntése, mit játszanak le a csoport képernyői
-- **[Párosítási mód kiválasztása](../getting-started/pairing-modes)** - Az Ütemezett mód és a Tervmód összehasonlítása, valamint a szolgáltatók saját böngészése
+- **[Képernyők és csoportok kezelése](./managing-screens.md)** - Képernyő átnevezése, áthelyezése másik csoportba vagy letöltések ellenőrzése
+- **[A naptár ütemezése](./scheduling-the-calendar.md)** - Annak eldöntése, mit játszanak le a csoport képernyői
+- **[Párosítási mód kiválasztása](../getting-started/pairing-modes.md)** - Az Ütemezett mód és a Tervmód összehasonlítása, valamint a szolgáltatók saját böngészése

@@ -1,5 +1,6 @@
 ---
 title: "Pläne"
+description: "Prüfen Sie Ihre Zuteilungen zu Dienstplänen in B1.church, sehen Positionen und Termine und nehmen Einsätze im Mitgliederportal an oder lehnen sie ab."
 ---
 
 # Pläne

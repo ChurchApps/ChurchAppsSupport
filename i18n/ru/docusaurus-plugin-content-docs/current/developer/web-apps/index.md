@@ -1,5 +1,6 @@
 ---
 title: "Веб-приложения"
+description: "Обзор трёх веб-приложений ChurchApps (B1 Admin, B1.church, Lessons.church): общий стек React и MUI, пакеты apphelper и инструменты сборки."
 ---
 
 # Веб-приложения
@@ -41,7 +42,7 @@ ChurchApps включает три веб-приложения, каждое и�
 | `@churchapps/apphelper-website` | Компоненты сайта/CMS |
 
 :::tip
-Подробности о локальной разработке этих общих пакетов см. в документации [AppHelper](../shared-libraries/app-helper).
+Подробности о локальной разработке этих общих пакетов см. в документации [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Скрипт postinstall

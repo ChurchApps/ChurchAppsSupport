@@ -1,5 +1,6 @@
 ---
 title: "Setup locale dell'API"
+description: "Configura l'API ChurchApps in locale: clona il repo, configura sei database MySQL, inizializza lo schema e avvia il server di sviluppo hot-reload."
 ---
 
 # Setup locale dell'API
@@ -13,9 +14,9 @@ Questa guida ti accompagna nel setup dell'API di ChurchApps per lo sviluppo loca
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa **Node.js 24+**, **Git** e **MySQL 8.0+** -- vedi [Prerequisiti](../setup/prerequisites)
+- Installa **Node.js 24+**, **Git** e **MySQL 8.0+** -- vedi [Prerequisiti](../setup/prerequisites.md)
 - Crea un utente MySQL con i privilegi per creare database
-- Consulta il riferimento delle [variabili d'ambiente](../setup/environment-variables) per la configurazione dell'API
+- Consulta il riferimento delle [variabili d'ambiente](../setup/environment-variables.md) per la configurazione dell'API
 
 </div>
 
@@ -82,7 +83,7 @@ L'API si avvia con hot reload su [http://localhost:8084](http://localhost:8084).
 
 ## Deployment
 
-L'ambiente di staging è stato dismesso. L'Api viene distribuita sull'ambiente demo a ogni push su `main`, e in produzione tramite il workflow manuale **Deploy Prod**, che applica anche le migrazioni del database in sospeso. Vedi [Deployment dell'API](../deployment/apis) per i dettagli.
+L'ambiente di staging è stato dismesso. L'Api viene distribuita sull'ambiente demo a ogni push su `main`, e in produzione tramite il workflow manuale **Deploy Prod**, che applica anche le migrazioni del database in sospeso. Vedi [Deployment dell'API](../deployment/apis.md) per i dettagli.
 
 ## Sviluppo locale delle librerie
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Questo ti permette di testare le modifiche alle librerie con l'API senza pubblicarle su npm. Vedi [Librerie condivise](../shared-libraries/#local-development-against-a-consuming-app) per i dettagli -- e non committare mai la risoluzione del portal che il link scrive in `package.json`.
+Questo ti permette di testare le modifiche alle librerie con l'API senza pubblicarle su npm. Vedi [Librerie condivise](../shared-libraries/index.md#local-development-against-a-consuming-app) per i dettagli -- e non committare mai la risoluzione del portal che il link scrive in `package.json`.
 
 ## Articoli correlati
 
-- **[Database](./database)** -- Come funziona l'architettura con un database per modulo
-- **[Struttura del modulo](./module-structure)** -- Come sono organizzati controller, repository e modelli
-- **[Librerie condivise](../shared-libraries/)** -- Lavorare con `@churchapps/helpers` e `@churchapps/apihelper`
+- **[Database](./database.md)** -- Come funziona l'architettura con un database per modulo
+- **[Struttura del modulo](./module-structure.md)** -- Come sono organizzati controller, repository e modelli
+- **[Librerie condivise](../shared-libraries/index.md)** -- Lavorare con `@churchapps/helpers` e `@churchapps/apihelper`

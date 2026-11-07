@@ -1,5 +1,7 @@
 ---
-title: "Vykonanie daru"
+title: "Odosielanie darov na portáli členov B1.church"
+sidebar_label: "Vykonanie daru"
+description: "Dajte jednorazový alebo pravidelný dar svojej cirkvi cez B1.church, s účtom alebo bez neho, a neskôr si pozrite históriu darov."
 ---
 
 # Vykonanie daru

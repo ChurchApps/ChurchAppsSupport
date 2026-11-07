@@ -1,5 +1,6 @@
 ---
 title: "Koble til leverandører og bygge spillelister"
+description: "Sett opp tilkoblede innholdsleverandører i FreePlay Admin, og bygg, ordne og forhåndsvis spillelister for planlagte TV-skjermer."
 ---
 
 # Koble til leverandører og bygge spillelister
@@ -107,6 +108,6 @@ Klikk på **Presenter** for å spille av spillelisten på full skjerm i nettlese
 
 ## Relaterte artikler
 
-- **[Planlegge kalenderen](./scheduling-the-calendar)**: Legg spillelisten din i kalenderen til en skjermgruppe
-- **[Administrere skjermer og grupper](./managing-screens)**: Sett en spilleliste som gruppens standardløkke
-- **[Innholdsleverandører](../content-providers/)**: Leverandører du kan koble til direkte på TV-en
+- **[Planlegge kalenderen](./scheduling-the-calendar.md)**: Legg spillelisten din i kalenderen til en skjermgruppe
+- **[Administrere skjermer og grupper](./managing-screens.md)**: Sett en spilleliste som gruppens standardløkke
+- **[Innholdsleverandører](../content-providers/index.md)**: Leverandører du kan koble til direkte på TV-en

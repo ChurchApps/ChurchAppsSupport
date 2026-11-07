@@ -1,5 +1,6 @@
 ---
 title: "API-sleutels"
+description: "Maak, begrens en trek B1 API-sleutels in B1 Admin in voor serverscripts en Zapier-, Make- of Google Sheets-connectors, zonder volledige OAuth-flow."
 ---
 
 # API-sleutels
@@ -104,7 +105,7 @@ Een ingetrokken sleutel is meteen ongeldig. Er is geen overgangsperiode.
 
 ## Het verschil met OAuth
 
-API-sleutels passen wanneer **jouw kerk de enige is die de integratie gebruikt**. Voor een connector die toegang nodig heeft tot veel kerken, waarbij elke kerk er expliciet toestemming voor geeft (zoals een SaaS-app die binnen de B1-gemeenschap wordt gedeeld), gebruik je liever [OAuth en Verbonden apps](./connected-apps).
+API-sleutels passen wanneer **jouw kerk de enige is die de integratie gebruikt**. Voor een connector die toegang nodig heeft tot veel kerken, waarbij elke kerk er expliciet toestemming voor geeft (zoals een SaaS-app die binnen de B1-gemeenschap wordt gedeeld), gebruik je liever [OAuth en Verbonden apps](./connected-apps.md).
 
 | | API-sleutel | OAuth |
 |---|---|---|

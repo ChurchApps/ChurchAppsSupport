@@ -1,5 +1,6 @@
 ---
 title: "Pag-set Up ng mga Silid-aralan"
+description: "Gumawa, palitan ang pangalan, at alisin ang classroom sa Lessons.church portal para handa ang bawat kuwarto o age group sa lingguhang iskedyul."
 ---
 
 # Pag-set Up ng mga Silid-aralan

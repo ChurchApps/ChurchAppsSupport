@@ -1,5 +1,6 @@
 ---
 title: "Přizpůsobení lekcí"
+description: "Odstraňte, skryjte nebo přeřaďte sekce a role v lekci Lessons.church a vyberte, zda se změny použijí pro jednu třídu, nebo pro všechny."
 ---
 
 # Přizpůsobení lekcí

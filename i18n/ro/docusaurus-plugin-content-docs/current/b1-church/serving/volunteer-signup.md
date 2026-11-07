@@ -1,5 +1,7 @@
 ---
-title: "Înscrierea voluntarilor"
+title: "Înscrierea voluntarilor în portalul membrilor B1.church"
+sidebar_label: "Înscrierea voluntarilor"
+description: "Explorați pozițiile de voluntariat libere pe categorii și înscrieți-vă la slujbele viitoare sau eliminați înscrierea pe B1.church înainte de termen."
 ---
 
 # Înscrierea voluntarilor
@@ -74,4 +76,4 @@ Verifică pagina de voluntari regulat, mai ales la începutul săptămânii. Pos
 ## Articole conexe
 
 - [Prezentarea generală a serviciilor](./index.md) -- Prezentare generală a funcțiilor de servire de pe B1.church
-- [Vizualizarea planurilor](../plans/viewing-plans) -- Vezi planurile tale atribuite și ordinele de serviciu
+- [Vizualizarea planurilor](../plans/viewing-plans.md) -- Vezi planurile tale atribuite și ordinele de serviciu

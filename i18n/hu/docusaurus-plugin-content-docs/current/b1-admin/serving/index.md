@@ -1,5 +1,7 @@
 ---
-title: "Szolgálat"
+title: "Szolgálat áttekintése a B1 Adminban"
+sidebar_label: "Szolgálat"
+description: "Önkéntesek koordinálása és istentiszteletek tervezése a B1 Admin Szolgálat részében: csapatok, szolgálati tervek, dalok és feladatok."
 ---
 
 # Szolgálat

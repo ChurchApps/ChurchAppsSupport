@@ -1,5 +1,6 @@
 ---
 title: "Điều hướng B1App"
+description: "Tìm đường trong cổng thành viên B1.church trên điện thoại hoặc máy tính: bảng Trang chủ, thanh tab dưới cùng, trang Thêm và trang Tôi."
 ---
 
 # Điều hướng B1App
@@ -92,7 +93,7 @@ Các trang chi tiết -- trang một nhóm, một kế hoạch, trang Tôi, màn
 
 ## Trang Tôi
 
-**Tôi** (`/mobile/me`) là trung tâm cá nhân của bạn. Trang hiển thị tên và ảnh của bạn, với các nút **Chỉnh sửa hồ sơ** và **Cài đặt** ([tùy chọn thông báo](./notification-preferences.md)). Tiếp theo là những việc sắp tới của bạn -- phân công phục vụ, đăng ký sự kiện và sự kiện nhóm -- rồi đến hộ gia đình, các nhóm, [quyên góp](../giving/) trong năm nay, các biểu mẫu bạn đã gửi, lịch sử tham dự, [đăng ký](../events/my-registrations.md) của bạn, và các thông báo và tin nhắn gần đây. Xem [Trang Tôi](./me-page) để biết chi tiết.
+**Tôi** (`/mobile/me`) là trung tâm cá nhân của bạn. Trang hiển thị tên và ảnh của bạn, với các nút **Chỉnh sửa hồ sơ** và **Cài đặt** ([tùy chọn thông báo](./notification-preferences.md)). Tiếp theo là những việc sắp tới của bạn -- phân công phục vụ, đăng ký sự kiện và sự kiện nhóm -- rồi đến hộ gia đình, các nhóm, [quyên góp](../giving/index.md) trong năm nay, các biểu mẫu bạn đã gửi, lịch sử tham dự, [đăng ký](../events/my-registrations.md) của bạn, và các thông báo và tin nhắn gần đây. Xem [Trang Tôi](./me-page.md) để biết chi tiết.
 
 Nếu bạn chưa đăng nhập, trang Tôi sẽ hiển thị nút **Đăng nhập** thay thế.
 

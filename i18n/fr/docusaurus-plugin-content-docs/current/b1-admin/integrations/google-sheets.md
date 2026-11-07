@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Reliez B1 Admin à Google Sheets avec le complément B1 Export pour importer les personnes, dons, groupes et présences dans des onglets de feuille de calcul à la demande."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ L'export s'exécute en arrière-plan dans votre compte Google. Si la clé API es
 - **« B1 a rejeté la clé API (401) »** — la clé a été révoquée ou est incorrecte. Créez-en une nouvelle et re-collez-la.
 - **« Cette clé API manque la permission pour /giving/donations (403) »** — la clé n'a pas `donations:read`. Mettez à jour les scopes de la clé dans B1Admin.
 - **Le tableur ne s'actualise pas** après exécution — assurez-vous que vous regardez le *bon* nom d'onglet (`B1 People` etc.). L'export crée l'onglet s'il n'existait pas.
-- **« Quota dépassé »** — Apps Script impose des quotas quotidiens par utilisateur sur `UrlFetchApp` (généralement des milliers d'appels par jour). Une grande église avec beaucoup de dossiers peut avoir besoin de diviser les exportations sur plusieurs jours ou d'utiliser [Make](./make) / une intégration personnalisée pour la synchronisation à haut volume.
+- **« Quota dépassé »** — Apps Script impose des quotas quotidiens par utilisateur sur `UrlFetchApp` (généralement des milliers d'appels par jour). Une grande église avec beaucoup de dossiers peut avoir besoin de diviser les exportations sur plusieurs jours ou d'utiliser [Make](./make.md) / une intégration personnalisée pour la synchronisation à haut volume.
 
 ## Personnaliser le module complémentaire
 
@@ -108,6 +109,6 @@ Le module complémentaire est open source — le projet Apps Script vit dans le 
 
 ## Voir aussi
 
-- [Zapier](./zapier) — pour la synchronisation en temps réel plutôt que l'export à la demande
-- [Make](./make) — pour synchroniser avec des transformations plus complexes
+- [Zapier](./zapier.md) — pour la synchronisation en temps réel plutôt que l'export à la demande
+- [Make](./make.md) — pour synchroniser avec des transformations plus complexes
 - [Clés API (référence développeur)](/docs/developer/api/api-keys)

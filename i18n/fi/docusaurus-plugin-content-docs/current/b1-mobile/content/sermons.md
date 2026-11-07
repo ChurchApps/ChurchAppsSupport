@@ -1,5 +1,7 @@
 ---
-title: "Saarnat"
+title: "Saarnojen katsominen B1 Mobilessa"
+sidebar_label: "Saarnat"
+description: "Selaa, hae ja katso tallennettuja saarnoja ja sarjoja B1 Mobile -sovelluksessa, mukaan lukien kuinka seurata suoran lähetyksen laskuria."
 ---
 
 # Saarnat
@@ -13,7 +15,7 @@ Saarnat-näkymässä voit selata ja katsoa kirkkosi tallennettuja saarnoja. Se o
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Kirkkosi on määritettävä saarnasisältö hallintaportaalissaan
 
 </div>
@@ -29,7 +31,7 @@ Näytön yläosassa uusin saarna näkyy esiteltynä korttina, jotta pääset nop
 
 ## Suoran lähetyksen laskuri
 
-Kun [suora lähetys](./live-streaming) alkaa seuraavan 24 tunnin sisällä, Saarnat-näkymään ilmestyy laskuri. Se kertoo, milloin seuraava jumalanpalvelus lähetetään, jotta voit suunnitella katsovasi sen suorana.
+Kun [suora lähetys](./live-streaming.md) alkaa seuraavan 24 tunnin sisällä, Saarnat-näkymään ilmestyy laskuri. Se kertoo, milloin seuraava jumalanpalvelus lähetetään, jotta voit suunnitella katsovasi sen suorana.
 
 ## Saarnan katseleminen
 
@@ -51,7 +53,7 @@ Jokaisessa saarnamerkinnässä voi näkyä:
 - **Pienoiskuva** -- Saarnan esikatselukuva
 
 :::tip
-Jos näet Saarnat-näkymässä laskurin, napauta sitä siirtyäksesi suoraan [suoraan lähetykseen](./live-streaming), kun se alkaa.
+Jos näet Saarnat-näkymässä laskurin, napauta sitä siirtyäksesi suoraan [suoraan lähetykseen](./live-streaming.md), kun se alkaa.
 :::
 
 ## Saatavuus

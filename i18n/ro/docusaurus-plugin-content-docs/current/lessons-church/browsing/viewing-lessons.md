@@ -1,5 +1,6 @@
 ---
 title: "Перегляд уроків"
+description: "Deschideți o lecție pe Lessons.church, citiți secțiunile și acțiunile pe roluri, găsiți descărcările și comutați locațiile pe grupe de vârstă înainte de oră."
 ---
 
 Це сказано не про українську мову. Просимо вибачення — далі наведено переклад тексту на румунську мову.

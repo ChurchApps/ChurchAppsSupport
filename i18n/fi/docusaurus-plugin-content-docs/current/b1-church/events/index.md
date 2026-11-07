@@ -1,5 +1,7 @@
 ---
-title: "Tapahtumat"
+title: "Seurakunnan tapahtumat B1.churchissa: selaa ja ilmoittaudu"
+sidebar_label: "Tapahtumat"
+description: "Selaa tulevia seurakuntatapahtumia B1.churchissa, tarkista ilmoittautumisen tila ja ilmoittaudu tai lisää tapahtumat kalenteriisi."
 ---
 
 # Tapahtumat
@@ -43,7 +45,7 @@ Jos tapahtuma on täynnä, voit silti päästä **odotuslistalle**, kun seurakun
 
 ## Lue lisää
 
-- [Ilmoittautuminen tapahtumiin](./registering) -- Vaiheittainen ohje tapahtumaan ilmoittautumiseen
-- [Omat ilmoittautumiset](./my-registrations) -- Katso ilmoittautumisesi, maksa saldot, muokkaa tai peru ne
-- [Tapahtumien ja tilojen pyytäminen](./requesting-events) -- Pyydä tapahtumaa tarvittavilla tiloilla ja resursseilla
-- [Itsesisäänkirjautuminen](../checkin/self-checkin) -- Kirjaudu sisään saapuessasi tapahtumaan
+- [Ilmoittautuminen tapahtumiin](./registering.md) -- Vaiheittainen ohje tapahtumaan ilmoittautumiseen
+- [Omat ilmoittautumiset](./my-registrations.md) -- Katso ilmoittautumisesi, maksa saldot, muokkaa tai peru ne
+- [Tapahtumien ja tilojen pyytäminen](./requesting-events.md) -- Pyydä tapahtumaa tarvittavilla tiloilla ja resursseilla
+- [Itsesisäänkirjautuminen](../checkin/self-checkin.md) -- Kirjaudu sisään saapuessasi tapahtumaan

@@ -1,5 +1,6 @@
 ---
 title: "API Dağıtımı"
+description: "ChurchApps API'sini Serverless ile AWS Lambda'ya dağıtın: derlemeler, demo ve prod iş akışları, veritabanı geçişleri ve SSM yapılandırması."
 ---
 
 # API Dağıtımı
@@ -13,7 +14,7 @@ ChurchApps API'leri, Serverless Framework kullanılarak AWS Lambda fonksiyonlar�
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- API'yi yerel olarak kurun -- bkz. [Yerel API Kurulumu](../api/local-setup)
+- API'yi yerel olarak kurun -- bkz. [Yerel API Kurulumu](../api/local-setup.md)
 - Makinenizde AWS kimlik bilgilerini yapılandırın
 - Hedef AWS hesabına erişiminizin olduğundan emin olun
 
@@ -47,7 +48,7 @@ Pratikte API, GitHub Actions tarafından dağıtılır: **Deploy Demo**, `main` 
 
 ## Veritabanı Geçişleri
 
-**Deploy Prod**, dağıtım sırasında bekleyen veritabanı geçişlerini uygular. Üretim veritabanları yalnızca VPC içinden gelen bağlantıları kabul eder; bu nedenle `serverless deploy` komutundan hemen sonra iş akışı, `migrate` Lambda fonksiyonunu (`api-Prod-migrate`) çağırır. Bu fonksiyon, her modülün bekleyen geçişlerini çalıştırır ve `{ ok, environment, modules }` döndürür. Herhangi bir modül başarısız olur veya reddedilirse (örneğin geçiş geçmişi olmayan bir veritabanı), iş başarısız olur; böylece şema hiçbir zaman kodun gerisinde kalmaz. **Rollback Prod**, yalnızca Lambda kodunu geri alır; geçişler uygulanmış halde kalır, bu yüzden geçişleri eklemeli (additive) tutun. Durumu kontrol etmek veya geçişleri elle çalıştırmak için bkz. [Sunucu Yönetimi -- Veritabanı Geçişleri](../server-admin#database-migrations).
+**Deploy Prod**, dağıtım sırasında bekleyen veritabanı geçişlerini uygular. Üretim veritabanları yalnızca VPC içinden gelen bağlantıları kabul eder; bu nedenle `serverless deploy` komutundan hemen sonra iş akışı, `migrate` Lambda fonksiyonunu (`api-Prod-migrate`) çağırır. Bu fonksiyon, her modülün bekleyen geçişlerini çalıştırır ve `{ ok, environment, modules }` döndürür. Herhangi bir modül başarısız olur veya reddedilirse (örneğin geçiş geçmişi olmayan bir veritabanı), iş başarısız olur; böylece şema hiçbir zaman kodun gerisinde kalmaz. **Rollback Prod**, yalnızca Lambda kodunu geri alır; geçişler uygulanmış halde kalır, bu yüzden geçişleri eklemeli (additive) tutun. Durumu kontrol etmek veya geçişleri elle çalıştırmak için bkz. [Sunucu Yönetimi -- Veritabanı Geçişleri](../server-admin.md#database-migrations).
 
 ## Oluşturulan Kaynaklar
 
@@ -75,6 +76,6 @@ Dağıtılmış ortamlarda yapılandırma, `.env` dosyaları yerine **AWS SSM Pa
 
 ## İlgili Makaleler
 
-- **[Yerel API Kurulumu](../api/local-setup)** -- Geliştirme için API'nin kurulumu
-- **[Modül Yapısı](../api/module-structure)** -- Lambda fonksiyon mimarisini anlama
-- **[Web Uygulaması Dağıtımı](./web-apps)** -- Ön yüz uygulamalarının dağıtımı
+- **[Yerel API Kurulumu](../api/local-setup.md)** -- Geliştirme için API'nin kurulumu
+- **[Modül Yapısı](../api/module-structure.md)** -- Lambda fonksiyon mimarisini anlama
+- **[Web Uygulaması Dağıtımı](./web-apps.md)** -- Ön yüz uygulamalarının dağıtımı

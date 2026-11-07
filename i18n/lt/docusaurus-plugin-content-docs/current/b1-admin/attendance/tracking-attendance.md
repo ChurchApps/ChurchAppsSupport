@@ -1,5 +1,6 @@
 ---
 title: "Lankomumo sekimas"
+description: "Peržiūrėkite lankomumo tendencijas, filtruokite ataskaitas pagal filialą, pamaldas ar grupę ir eksportuokite grupės lankomumą iš B1 Admin lankomumo puslapio."
 ---
 
 # Lankomumo sekimas

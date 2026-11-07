@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Propojte přihlášky dobrovolníků v B1 Admin s prověrkami Checkr přes Make.com, s volitelnými upozorněními na stav pro koordinátora bezpečné služby."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Pokud vaše církev používá členství ve skupinách B1 k řízení přístup
 
 ## Viz také
 
-- [Make (přehled)](../make) – strana B1 každého scénáře v Make
-- [Mobile Message](./mobile-message) – pro poskytovatele SMS bez aplikací pro Zapier, stejný vzor Webhooks/HTTP jako propojení Checkr s Make
+- [Make (přehled)](../make.md) – strana B1 každého scénáře v Make
+- [Mobile Message](./mobile-message.md) – pro poskytovatele SMS bez aplikací pro Zapier, stejný vzor Webhooks/HTTP jako propojení Checkr s Make
 - [Dokumentace API Checkr](https://docs.checkr.com/)

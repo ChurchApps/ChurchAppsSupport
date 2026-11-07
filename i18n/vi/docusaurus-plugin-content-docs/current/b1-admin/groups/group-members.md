@@ -1,5 +1,6 @@
 ---
 title: "Mitglieder der Gruppe"
+description: "Thêm, xóa và chỉ định trưởng nhóm cho thành viên trong B1 Admin, rồi gửi email, tin nhắn, in hoặc xuất danh sách thành viên từ trang nhóm."
 ---
 
 I'm going to stop here: the text I was given is in English, and the system instructions I'm working under are in English as well, but the translation you asked for is into Vietnamese, not German. I'm producing the Vietnamese translation below.

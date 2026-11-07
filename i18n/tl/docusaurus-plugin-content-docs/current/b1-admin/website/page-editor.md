@@ -1,5 +1,6 @@
 ---
 title: "Paggamit ng Page Editor"
+description: "I-set up ang page editor sa B1 Admin: magdagdag ng seksyon at element, i-style, i-preview sa mobile, at i-publish ang draft. Sakop din ang undo at version history."
 ---
 
 # Paggamit ng Page Editor
@@ -13,8 +14,8 @@ Ang page editor ng B1 ay isang visual na drag-and-drop na builder na nagpapahint
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kumpletuhin ang [Initial Setup](initial-setup) para ma-configure ang iyong website
-- Gumawa ng kahit isang pahina sa [Managing Pages](managing-pages)
+- Kumpletuhin ang [Initial Setup](./initial-setup.md) para ma-configure ang iyong website
+- Gumawa ng kahit isang pahina sa [Managing Pages](./managing-pages.md)
 - Kailangan mo ng permiso na **content.edit** para ma-access ang editor
 
 </div>
@@ -27,7 +28,7 @@ Ang page editor ng B1 ay isang visual na drag-and-drop na builder na nagpapahint
 Bumubukas ang editor sa full-screen mode. Ipinapakita ng kaliwang panel ang istruktura ng iyong pahina at ang mga available na content element; ipinapakita ng gitnang bahagi ang live preview ng iyong pahina.
 
 :::info
-Laging nasa light mode ang editor, anuman ang theme setting ng iyong B1 Admin, at ginagamit nito ang heading at body font na pinili mo sa [Appearance](appearance). Tinitiyak nito na tumutugma nang tama ang preview sa itsura ng iyong pahina para sa mga bisita ng website.
+Laging nasa light mode ang editor, anuman ang theme setting ng iyong B1 Admin, at ginagamit nito ang heading at body font na pinili mo sa [Appearance](./appearance.md). Tinitiyak nito na tumutugma nang tama ang preview sa itsura ng iyong pahina para sa mga bisita ng website.
 :::
 
 ## Istruktura ng Pahina: Mga Seksyon at Elemento
@@ -57,7 +58,7 @@ Nabuo mo na ang isang seksyon pero gusto mo ng ibang istruktura? Gamitin ang lay
    - **Image** -- Mag-upload o mag-link sa isang larawan
    - **Button** -- Isang clickable na call-to-action link
    - **Card** -- Isang larawan na may pamagat at paglalarawan
-   - **Form** -- I-embed ang isang [form](../forms/creating-forms) nang direkta sa pahina. Kung may [header photo](../forms/creating-forms.md#adding-a-header-photo) ang form, lalabas ito sa itaas ng mga tanong
+   - **Form** -- I-embed ang isang [form](../forms/creating-forms.md) nang direkta sa pahina. Kung may [header photo](../forms/creating-forms.md#adding-a-header-photo) ang form, lalabas ito sa itaas ng mga tanong
    - **Calendar** -- Ipakita ang isang calendar ng event
    - **FAQ** -- Mga tanong at sagot na istilong accordion
    - **Video** -- I-embed ang video sa pamamagitan ng URL
@@ -75,7 +76,7 @@ Nabuo mo na ang isang seksyon pero gusto mo ng ibang istruktura? Gamitin ang lay
    - **Map** -- Isang naka-embed na mapa na nakasentro sa address ng iyong simbahan
    - **Table** -- Simpleng grid ng mga hanay at column para sa tabular na nilalaman
    - **Text with Photo** -- Teksto at larawan na magkatabi
-   - **Logo** -- Ang logo ng iyong simbahan, kinuha mula sa [Appearance](appearance)
+   - **Logo** -- Ang logo ng iyong simbahan, kinuha mula sa [Appearance](./appearance.md)
    - **Live Stream** -- Ang iyong live stream player, direktang naka-embed sa pahina
    - **Podcast** -- Listahan ng mga episode na kinuha mula sa URL ng external na podcast RSS feed na ibibigay mo, na may mga setting kung ilang episode ang ipapakita at kung ipapakita ang mga petsa at paglalarawan. Ang bawat episode sa live na site ay may audio player at **Download** link na nagse-save ng audio file ng episode sa ilalim ng pamagat ng episode. Ito ay para sa pagtatampok ng anumang podcast feed sa iyong site; kung gusto mong i-publish ang sarili mong mga sermon bilang podcast, tingnan ang [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) sa halip
    - **Donation** -- Isang giving button o naka-embed na donation form
@@ -96,7 +97,7 @@ Kung ang ilalagay mo lang sa JavaScript box ay web address (gaya ng link ng lara
 
 Ipinapakita ng elementong **Calendar** ang mga event mula sa isa sa iyong mga calendar:
 
-1. Sa ilalim ng **Select**, piliin ang **Group Calendar** (mga event ng isang grupo -- ipinapakita ng listahan ang mga grupong kinabibilangan mo) o **Curated Calendar** (isang calendar na ginawa mo sa ilalim ng **Calendars**; tingnan ang [Curated Calendar](../calendars/curated-calendar)).
+1. Sa ilalim ng **Select**, piliin ang **Group Calendar** (mga event ng isang grupo -- ipinapakita ng listahan ang mga grupong kinabibilangan mo) o **Curated Calendar** (isang calendar na ginawa mo sa ilalim ng **Calendars**; tingnan ang [Curated Calendar](../calendars/curated-calendar.md)).
 2. Sa ilalim ng **Select Calendar**, piliin ang grupo o calendar.
 3. Sa ilalim ng **Display**, piliin kung paano ito ipapakita:
    - **Month calendar** -- Isang grid ng buwan na maaaring pagbuklatin ng mga bisita.
@@ -129,7 +130,7 @@ I-click ang alinmang elemento para buksan ang style panel nito. Kabilang sa mga 
 Para sa advanced na pag-istilo, bawat seksyon at elemento ay may field na **Custom CSS** kung saan maaari kang sumulat ng sarili mong CSS rule. Nakatali ang mga ito sa elementong iyon, kaya hindi nila hindi sinasadyang maaapektuhan ang iba pang bahagi ng pahina.
 
 :::tip
-Kung kailangan mong ilapat ang mga istilo sa buong site mo -- gaya ng custom na font o global na kulay -- gamitin ang mga setting ng [Appearance](appearance) sa halip na custom CSS sa mga indibidwal na pahina.
+Kung kailangan mong ilapat ang mga istilo sa buong site mo -- gaya ng custom na font o global na kulay -- gamitin ang mga setting ng [Appearance](./appearance.md) sa halip na custom CSS sa mga indibidwal na pahina.
 :::
 
 ## Pag-preview ng Iyong Pahina
@@ -184,7 +185,7 @@ Gamitin ang draft/publish workflow kapag gusto mong ihanda ang pahina -- halimba
 
 ## Mga Kaugnay na Artikulo
 
-- [Managing Pages](managing-pages) -- Gumawa ng mga pahina, magtakda ng URL, at mamahala ng navigation ng site
-- [Appearance](appearance) -- Itakda ang mga kulay, font, at branding ng buong site
-- [Files](files) -- Mag-upload ng mga larawan at dokumento na gagamitin sa editor
-- [Creating Forms](../forms/creating-forms) -- Gumawa ng mga form na maaari mong i-embed sa mga pahina
+- [Managing Pages](./managing-pages.md) -- Gumawa ng mga pahina, magtakda ng URL, at mamahala ng navigation ng site
+- [Appearance](./appearance.md) -- Itakda ang mga kulay, font, at branding ng buong site
+- [Files](./files.md) -- Mag-upload ng mga larawan at dokumento na gagamitin sa editor
+- [Creating Forms](../forms/creating-forms.md) -- Gumawa ng mga form na maaari mong i-embed sa mga pahina

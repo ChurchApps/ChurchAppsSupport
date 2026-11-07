@@ -1,5 +1,7 @@
 ---
-title: "Počáteční nastavení"
+title: "Úvodní nastavení církve v B1 Admin"
+sidebar_label: "Počáteční nastavení"
+description: "Projděte první konfigurací nové církve v B1 Admin: údaje o církvi, branding, role a doporučené pořadí nastavení lidí, skupin, docházky a darů."
 ---
 
 # Počáteční nastavení

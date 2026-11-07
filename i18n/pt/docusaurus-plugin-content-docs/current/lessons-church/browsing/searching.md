@@ -1,5 +1,6 @@
 ---
 title: "Pesquisando"
+description: "Encontre programas, estudos e lições no Lessons.church por palavra-chave ou história bíblica, e veja como os resultados são ordenados e rotulados."
 ---
 
 # Pesquisando

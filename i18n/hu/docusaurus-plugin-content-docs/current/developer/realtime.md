@@ -1,5 +1,6 @@
 ---
 title: "Valós idejű architektúra"
+description: "A ChurchApps WebSocket-rétege élő csevegést, jelenlétet és értesítéseket továbbít: kézfogás, szobákra való feliratkozás és kliensoldali primitívek fejlesztőknek."
 ---
 
 # Valós idejű architektúra
@@ -226,8 +227,8 @@ A `B1App/src/helpers/StreamChatManager.ts` mindkét szobát az egységes alapele
 
 ## Kapcsolódó oldalak
 
-- [Értesítési architektúra](./architecture/notifications) -- Az in-app/push/e-mail értesítési csatorna, amelybe ez az átvitel betáplál
-- [Üzenetküldési végpontok](./api/endpoints/messaging) -- Az üzenetek, beszélgetések, kapcsolatok és eszközök teljes REST-felülete
-- [Web Push értesítések](./web-push) -- Böngészős push-értesítések, a lapon belüli socketes kézbesítéstől elkülönítve
-- [AppHelper](./shared-libraries/app-helper) -- Az npm-csomag, amely a kliensoldali alapelemeket tartalmazza
-- [Modulszerkezet](./api/module-structure) -- Az üzenetküldési modul szerveroldali felépítése
+- [Értesítési architektúra](./architecture/notifications.md) -- Az in-app/push/e-mail értesítési csatorna, amelybe ez az átvitel betáplál
+- [Üzenetküldési végpontok](./api/endpoints/messaging.md) -- Az üzenetek, beszélgetések, kapcsolatok és eszközök teljes REST-felülete
+- [Web Push értesítések](./web-push.md) -- Böngészős push-értesítések, a lapon belüli socketes kézbesítéstől elkülönítve
+- [AppHelper](./shared-libraries/app-helper.md) -- Az npm-csomag, amely a kliensoldali alapelemeket tartalmazza
+- [Modulszerkezet](./api/module-structure.md) -- Az üzenetküldési modul szerveroldali felépítése

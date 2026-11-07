@@ -1,5 +1,6 @@
 ---
 title: "Anwesenheits-Einrichtung"
+description: "Richten Sie in B1 Admin Gemeinden, Gottesdienste, Gottesdienstzeiten und Gruppenzuordnungen ein, damit Anwesenheitserfassung und Check-in-Zeitpläne in Ihrer Gemeinde funktionieren."
 ---
 
 # Anwesenheits-Einrichtung

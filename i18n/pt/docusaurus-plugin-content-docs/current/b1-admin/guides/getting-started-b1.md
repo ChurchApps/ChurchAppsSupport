@@ -1,5 +1,6 @@
 ---
 title: "Guia: Comece com o B1 para Sua Igreja"
+description: "Passo a passo para configurar uma nova igreja no B1 Admin: crie a conta, ajuste as configurações, adicione funções, importe membros e ative recursos principais."
 ---
 
 # Comece com o B1 para Sua Igreja

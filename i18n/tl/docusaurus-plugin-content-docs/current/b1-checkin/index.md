@@ -1,5 +1,6 @@
 ---
 title: "Pangkalahatang-tanaw ng B1 Church Checkin"
+description: "I-set up ang B1 Church Checkin kiosk app sa iPad o Android tablet para makapag-self check-in ang pamilya, at makapag-print ng label at pickup slip."
 ---
 
 # Pangkalahatang-tanaw ng B1 Church Checkin
@@ -24,7 +25,7 @@ Maglagay ng iPad o Android tablet sa iyong lobby o welcome area. Lalapit ang mga
 - **Pagrepaso ng household** -- Makita ang lahat ng miyembro ng pamilya na may mga larawan at kasalukuyang takda sa grupo sa isang tingin.
 - **Pagtatalaga ng grupo** -- Italaga ang bawat miyembro ng pamilya sa tamang klase o grupo para sa napiling oras ng serbisyo.
 - **Guest check-in** -- Magdagdag ng bisita sa iyong household agad gamit ang unang at apelyido.
-- **QR guest registration** -- Magpakita ng QR code na maaaring i-scan ng mga bisita para [magparehistro sa sarili nilang telepono](../b1-church/checkin/guest-registration) bago mag-check in, o hayaang i-tap nila ang **Register here** para punan ang parehong form sa kiosk.
+- **QR guest registration** -- Magpakita ng QR code na maaaring i-scan ng mga bisita para [magparehistro sa sarili nilang telepono](../b1-church/checkin/guest-registration.md) bago mag-check in, o hayaang i-tap nila ang **Register here** para punan ang parehong form sa kiosk.
 - **Pag-print ng label** -- Mag-print ng name label para sa mga bata at parent pickup slip na may natatanging security code.
 - **Suporta sa network printer** -- Hanapin at i-configure ang mga network printer nang direkta mula sa app.
 - **Auto-login** -- Pagkatapos ng unang pag-log in, naaalala ng app ang iyong mga kredensyal at dumidiretso sa services screen sa mga susunod na pagbukas.
@@ -33,8 +34,8 @@ Maglagay ng iPad o Android tablet sa iyong lobby o welcome area. Lalapit ang mga
 
 ## Mga Seksyon ng Dokumentasyon
 
-- **[Getting Started](./getting-started/)** -- Pag-install ng app, pag-log in, at pag-set up ng iyong printer.
-- **[Check-In Workflow](./check-in/)** -- Ang buong daloy ng check-in mula sa pagpili ng serbisyo hanggang sa pag-print ng mga label.
+- **[Getting Started](./getting-started/index.md)** -- Pag-install ng app, pag-log in, at pag-set up ng iyong printer.
+- **[Check-In Workflow](./check-in/index.md)** -- Ang buong daloy ng check-in mula sa pagpili ng serbisyo hanggang sa pag-print ng mga label.
 
 :::tip
 Pinakamahusay gumagana ang B1 Church Checkin sa 10-pulgadang tablet (iPad o Android) na nakakabit nang landscape kung saan madaling maabot ng mga pamilya. Kunin ang app mula sa [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), o [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

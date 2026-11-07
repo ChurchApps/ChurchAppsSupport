@@ -65,7 +65,7 @@ Wenn Sie den Erstimport über den Importer von Mailchimp durchführen, behalten 
 
 ## Weitere Rezepte (Zapier / Make)
 
-Alles, was über die Publikumssynchronisierung hinausgeht – etwa Spender mit `donation.created` taggen, eine Synchronisierung von Mailchimp zurück nach B1 oder die Anbindung an eine andere E-Mail-Plattform (Constant Contact, Brevo usw.) – ist weiterhin über [Zapier](../zapier) oder [Make](../make) möglich. Beide reagieren auf dieselben Webhook-Ereignisse:
+Alles, was über die Publikumssynchronisierung hinausgeht – etwa Spender mit `donation.created` taggen, eine Synchronisierung von Mailchimp zurück nach B1 oder die Anbindung an eine andere E-Mail-Plattform (Constant Contact, Brevo usw.) – ist weiterhin über [Zapier](../zapier.md) oder [Make](../make.md) möglich. Beide reagieren auf dieselben Webhook-Ereignisse:
 
 - **Spender taggen:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Zweiseitig:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +83,4 @@ Falls Sie die Synchronisierung von Personen und Gruppen bisher über Zapier eing
 
 - [Webhooks (Entwicklerreferenz)](/docs/developer/api/webhooks) – die zugrunde liegende Technik, Ereigniskatalog, Semantik von Zustellung und Wiederholung
 - [Gespeicherte Listen](/docs/b1-admin/people/lists) – regelbasierte Publikumslisten, die sich ideal auf Mailchimp-Tags abbilden lassen
-- [Zapier (Übersicht)](../zapier) – für Rezepte, die über die Publikumssynchronisierung hinausgehen
+- [Zapier (Übersicht)](../zapier.md) – für Rezepte, die über die Publikumssynchronisierung hinausgehen

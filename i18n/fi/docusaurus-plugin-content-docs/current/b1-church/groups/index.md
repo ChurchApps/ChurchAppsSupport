@@ -1,5 +1,7 @@
 ---
-title: "Ryhmät"
+title: "Seurakuntaryhmät B1.church-jäsenportaalissa"
+sidebar_label: "Ryhmät"
+description: "Selaa ja liity seurakuntasi ryhmiin B1.church-sivustolla, tarkista ryhmäsivuilta kokoontumiset, tapahtumat, jäsenet ja materiaalit sekä keskustele ryhmäsi kanssa."
 ---
 
 # Ryhmät

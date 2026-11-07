@@ -1,5 +1,6 @@
 ---
 title: "Trò chuyện nhóm"
+description: "Tìm hiểu cách đăng, sửa, bày tỏ cảm xúc và quản lý tin nhắn trong trò chuyện nhóm B1.church, bao gồm thông báo và công cụ kiểm duyệt của trưởng nhóm."
 ---
 
 # Trò chuyện nhóm

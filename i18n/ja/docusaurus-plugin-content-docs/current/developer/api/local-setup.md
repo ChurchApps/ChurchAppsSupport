@@ -1,5 +1,6 @@
 ---
 title: "ローカル API セットアップ"
+description: "ChurchApps API をローカルでセットアップします。リポジトリのクローン、6 つの MySQL モジュールデータベースの設定、スキーマの初期化、ホットリロード開発サーバーの起動までを扱います。"
 ---
 
 # ローカル API セットアップ
@@ -13,9 +14,9 @@ title: "ローカル API セットアップ"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js 24+**、**Git**、**MySQL 8.0+** をインストールしてください。詳しくは [前提条件](../setup/prerequisites) を参照してください
+- **Node.js 24+**、**Git**、**MySQL 8.0+** をインストールしてください。詳しくは [前提条件](../setup/prerequisites.md) を参照してください
 - データベースを作成できる権限を持つ MySQL ユーザーを作成してください
-- API の設定については [環境変数](../setup/environment-variables) のリファレンスを確認してください
+- API の設定については [環境変数](../setup/environment-variables.md) のリファレンスを確認してください
 
 </div>
 
@@ -82,7 +83,7 @@ API はホットリロード付きで起動し、[http://localhost:8084](http://
 
 ## デプロイ
 
-ステージング環境は廃止されました。API は `main` へのプッシュのたびにデモ環境へデプロイされます。本番環境へのデプロイは、手動実行の **Deploy Prod** ワークフローで行われ、保留中のデータベースマイグレーションも適用されます。詳しくは [API のデプロイ](../deployment/apis) を参照してください。
+ステージング環境は廃止されました。API は `main` へのプッシュのたびにデモ環境へデプロイされます。本番環境へのデプロイは、手動実行の **Deploy Prod** ワークフローで行われ、保留中のデータベースマイグレーションも適用されます。詳しくは [API のデプロイ](../deployment/apis.md) を参照してください。
 
 ## ローカルライブラリの開発
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-この方法により、npm に公開することなく、ライブラリの変更を API に対してテストできます。詳しくは [共有ライブラリ](../shared-libraries/#local-development-against-a-consuming-app) を参照してください。ただし、link によって `package.json` に書き込まれる portal の解決設定は、絶対にコミットしないでください。
+この方法により、npm に公開することなく、ライブラリの変更を API に対してテストできます。詳しくは [共有ライブラリ](../shared-libraries/index.md#local-development-against-a-consuming-app) を参照してください。ただし、link によって `package.json` に書き込まれる portal の解決設定は、絶対にコミットしないでください。
 
 ## 関連記事
 
-- **[データベース](./database)** -- モジュールごとにデータベースを分ける構成について
-- **[モジュール構造](./module-structure)** -- コントローラー、リポジトリ、モデルの構成について
-- **[共有ライブラリ](../shared-libraries/)** -- `@churchapps/helpers` と `@churchapps/apihelper` の使い方
+- **[データベース](./database.md)** -- モジュールごとにデータベースを分ける構成について
+- **[モジュール構造](./module-structure.md)** -- コントローラー、リポジトリ、モデルの構成について
+- **[共有ライブラリ](../shared-libraries/index.md)** -- `@churchapps/helpers` と `@churchapps/apihelper` の使い方

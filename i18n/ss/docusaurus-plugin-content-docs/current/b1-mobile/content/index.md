@@ -1,5 +1,7 @@
 ---
-title: "Kucuketfwe"
+title: "Tinsita Tekuqukwa Ku-App ye-B1 Mobile"
+sidebar_label: "Kucuketfwe"
+description: "Thola tinkhulumo, kusakaza lokuphilako, kufunda libhayibheli, neLivesi Lelilanga ku-app ye-B1 Mobile, bese ubona tinsita letisebentako ngelicawe lakho."
 ---
 
 # Kucuketfwe
@@ -30,20 +32,20 @@ Buka sitfombe seliBhayibheli lesihlelwe kahle lesishintja mihla yonkhe. Sitfombe
 
 ### Tifundvo (Kwesula)
 
-Sikrini se-Tifundvo lesasingekhatsi kwe-app sesitsatselwe indzawo ngu-**[FreePlay](/docs/freeplay/)** kwekudlala ekilasini, kanye nekuvakashela [Lessons.church](https://lessons.church) ngco kwekucwaninga. Bona [likhasi lelihlobene neTifundvo](./lessons) kute utfole imininingwane.
+Sikrini se-Tifundvo lesasingekhatsi kwe-app sesitsatselwe indzawo ngu-**[FreePlay](/docs/freeplay/)** kwekudlala ekilasini, kanye nekuvakashela [Lessons.church](https://lessons.church) ngco kwekucwaninga. Bona [likhasi lelihlobene neTifundvo](./lessons.md) kute utfole imininingwane.
 
 ## Kufumana Kucuketfwe
 
 Ticini tekucuketfwe titfolakala ngendzawo yekuhamba-hamba ye-app. Mphatsi welibandla lakho unquma kutsi tici tiphi tekucuketfwe letivuliwe, ngako-ke kungenteka ungatiboni tonkhe tikhetso letibalwe ngenhla. Uma sisici lesitsite singekho, kungenteka libandla lakho lisengakasilungiseleli.
 
 :::info
-Ticini tekucuketfwe tilungiselelwa ngumphatsi welibandla lakho nge-[B1 Admin](../../b1-admin/). Uma ungasiboni sisici losilindzele, tsindzana nelihhovisi lelibandla lakho.
+Ticini tekucuketfwe tilungiselelwa ngumphatsi welibandla lakho nge-[B1 Admin](../../b1-admin/index.md). Uma ungasiboni sisici losilindzele, tsindzana nelihhovisi lelibandla lakho.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Tintshumayelo](./sermons) -- Buka futsi ubukele tintshumayelo letibhaliwe
-- [Kusakata Bukhoma](./live-streaming) -- Bukela kusakateka bukhoma
-- [LiBhayibheli](./bible) -- Fundza imiBhalo emfundzini lowakhelwe ngekhatsi
-- [Vesi Lwelilanga](./verse-of-the-day) -- Buka vesi lwanamuhla
+- [Tintshumayelo](./sermons.md) -- Buka futsi ubukele tintshumayelo letibhaliwe
+- [Kusakata Bukhoma](./live-streaming.md) -- Bukela kusakateka bukhoma
+- [LiBhayibheli](./bible.md) -- Fundza imiBhalo emfundzini lowakhelwe ngekhatsi
+- [Vesi Lwelilanga](./verse-of-the-day.md) -- Buka vesi lwanamuhla
 - [FreePlay](/docs/freeplay/) -- Dlala tifundvo emabhokisini eligagasi ekilasini (kutsatsela indzawo yesikrini se-Tifundvo lesesingasasetjentiswa ngekhatsi kwe-app)

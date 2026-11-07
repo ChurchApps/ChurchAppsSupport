@@ -1,5 +1,6 @@
 ---
 title: "Przypisywanie grup"
+description: "Wybierz w B1 Checkin grupę lub klasę dla każdego członka rodziny na każdą porę nabożeństwa, korzystając z kategorii, wskazówek wiekowych i opcji Brak."
 ---
 
 # Przypisywanie grup
@@ -13,7 +14,7 @@ Po dotknięciu przycisku godziny nabożeństwa na ekranie przeglądu gospodarstw
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Przejrzyj swoje gospodarstwo domowe](./household-review) na ekranie przeglądu gospodarstwa domowego
+- [Przejrzyj swoje gospodarstwo domowe](./household-review.md) na ekranie przeglądu gospodarstwa domowego
 - Rozwiń członka, którego chcesz przypisać, i dotknij przycisku godziny nabożeństwa
 - Upewnij się, że administrator kościoła [utworzył grupy](../../b1-admin/groups/creating-groups.md) i powiązał je z godzinami nabożeństw w B1 Admin
 
@@ -34,7 +35,7 @@ Dotknij karty kategorii, aby ją rozwinąć i zobaczyć poszczególne grupy w ś
 2. Przejrzyj listę grup w tej kategorii. Każda grupa pokazuje swoją nazwę oraz ikonę wyboru po prawej stronie.
 3. Dotknij **nazwy grupy**, którą chcesz przypisać.
 
-Aplikacja zapisuje wybór i wraca do [ekranu przeglądu gospodarstwa domowego](./household-review). Przycisk godziny nabożeństwa dla tego członka będzie teraz pokazywać nazwę wybranej grupy.
+Aplikacja zapisuje wybór i wraca do [ekranu przeglądu gospodarstwa domowego](./household-review.md). Przycisk godziny nabożeństwa dla tego członka będzie teraz pokazywać nazwę wybranej grupy.
 
 ## Wskazówki dotyczące wieku i klasy
 
@@ -52,7 +53,7 @@ Opcji **Brak** użyj dla dorosłych, którzy uczestniczą w głównym nabożeńs
 
 Aby zmienić przypisanie grupy, które zostało już dokonane:
 
-1. Wróć do [ekranu przeglądu gospodarstwa domowego](./household-review).
+1. Wróć do [ekranu przeglądu gospodarstwa domowego](./household-review.md).
 2. Rozwiń członka, którego grupę chcesz zmienić.
 3. Dotknij przycisku godziny nabożeństwa (który teraz pokazuje nazwę przypisanej grupy).
 4. Wybierz inną grupę lub dotknij **Brak**.
@@ -63,8 +64,8 @@ Grupy i kategorie są konfigurowane przez administratora kościoła w B1 Admin. 
 
 ## Następne kroki
 
-Po przypisaniu grup wróć do [ekranu przeglądu gospodarstwa domowego](./household-review), aby:
+Po przypisaniu grup wróć do [ekranu przeglądu gospodarstwa domowego](./household-review.md), aby:
 
 - przypisać grupy kolejnym członkom rodziny
-- [dodać gościa](./adding-guests), jeśli ktoś przyjechał z Twoją rodziną
-- [zakończyć meldowanie](./completing-checkin), gdy wszystkie przypisania są gotowe
+- [dodać gościa](./adding-guests.md), jeśli ktoś przyjechał z Twoją rodziną
+- [zakończyć meldowanie](./completing-checkin.md), gdy wszystkie przypisania są gotowe

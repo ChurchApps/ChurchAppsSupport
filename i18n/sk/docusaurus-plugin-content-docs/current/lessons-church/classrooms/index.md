@@ -1,5 +1,6 @@
 ---
 title: "Učebne"
+description: "Nastavenie a správa tried, ktoré organizujú učebný plán cirkvi v Lessons.church, od miestností a vekových skupín po zobrazenia pre dobrovoľníkov."
 ---
 
 # Učebne

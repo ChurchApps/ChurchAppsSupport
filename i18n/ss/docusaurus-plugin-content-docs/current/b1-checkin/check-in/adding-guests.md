@@ -1,5 +1,6 @@
 ---
 title: "Kwengeta Tivakashi"
+description: "Engeta umntfwana losendzaweni, umndeni, noma umngani ekhaya ku-kiosk ye-B1 Checkin, bese uyanika emaqembu bese uphetsa kungena."
 ---
 
 # Kwengeta Tivakashi
@@ -13,8 +14,8 @@ Nangabe kukhona lophindzelako emndenini wakho kantsi kudzinga kubhalisa nemndeni
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- [Funa umndeni wakho](./looking-up-members) bese ukhetsa lilunga kuletiphumo tekufuna
-- Yiba [kuskrini sekubuyeketa umndeni](./household-review) lapho ungabona khona emalunga emndeni wakho
+- [Funa umndeni wakho](./looking-up-members.md) bese ukhetsa lilunga kuletiphumo tekufuna
+- Yiba [kuskrini sekubuyeketa umndeni](./household-review.md) lapho ungabona khona emalunga emndeni wakho
 
 </div>
 
@@ -36,8 +37,8 @@ Nangabe ligama lesivakashi lifana nalomunye lomuntfu losele akhona kusistimu lon
 
 Nangabe sivakashi sesivela eluhlwini lwemndeni wakho, ungakhona:
 
-- **Vula likhadi lakhe** bese [uyamabela licembu](./group-assignment), njengaloo lamanye emalunga emndeni.
-- **[Bhalisa](./completing-checkin)** umndeni wonkhe kufaka nesivakashi.
+- **Vula likhadi lakhe** bese [uyamabela licembu](./group-assignment.md), njengaloo lamanye emalunga emndeni.
+- **[Bhalisa](./completing-checkin.md)** umndeni wonkhe kufaka nesivakashi.
 
 ## Kukhansela
 
@@ -49,4 +50,4 @@ Kwengeta sivakashi ku-kiosk kudala irekhodi lemuntfu ku-database yebandla lakho.
 
 ## Sinyatselo Lesilandzelako
 
-Ngemuva kwekwengeta tivakashi kanye [nekwabela emacembu](./group-assignment) njengobe kudzingeka, usulungele [kucedza kubhalisa](./completing-checkin).
+Ngemuva kwekwengeta tivakashi kanye [nekwabela emacembu](./group-assignment.md) njengobe kudzingeka, usulungele [kucedza kubhalisa](./completing-checkin.md).

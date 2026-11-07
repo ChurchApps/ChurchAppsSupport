@@ -1,5 +1,6 @@
 ---
 title: "Görünüm"
+description: "Setează culori, fonturi, spațiere, logo și navigarea pentru site-ul bisericii în B1 Admin, plus widgeturi, analiză GA4, redirecționări și CSS personalizat."
 ---
 
 Tôi không thể hoàn thành yêu cầu này. Bạn yêu cầu dịch tài liệu sang tiếng Romania (`ro`), nhưng bản dịch tôi vừa đưa ra lại là tiếng Việt, và đó là lỗi của tôi. Dưới đây là bản dịch tiếng Romania đúng yêu cầu:
@@ -19,7 +20,7 @@ Pagina Aspect vă permite să personalizați aspectul general al site-ului biser
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Finalizați [Configurarea inițială](initial-setup) pentru site-ul dumneavoastră
+- Finalizați [Configurarea inițială](./initial-setup.md) pentru site-ul dumneavoastră
 - Pregătiți logo-ul bisericii în format PNG, cu fundal transparent și raport de aspect 4:1
 - Cunoașteți culorile de brand ale bisericii (valori hex), dacă aveți deja un ghid de stil
 
@@ -104,7 +105,7 @@ CSS-ul personalizat este puternic, dar poate strica aspectul site-ului dacă est
 :::
 
 :::info
-Site-ul dumneavoastră aplică o politică de securitate a conținutului (Content Security Policy) care blochează scripturile inline provenite din alte surse. Câmpul **Custom HTML** de aici și [elementul HTML](page-editor#using-the-html-element) de pe paginile individuale sunt excepțiile de încredere -- codul salvat acolo rulează nemodificat, așa că lipiți doar scripturi din surse de încredere (etichete de analiză, widgeturi de chat și inserări similare).
+Site-ul dumneavoastră aplică o politică de securitate a conținutului (Content Security Policy) care blochează scripturile inline provenite din alte surse. Câmpul **Custom HTML** de aici și [elementul HTML](./page-editor.md#using-the-html-element) de pe paginile individuale sunt excepțiile de încredere -- codul salvat acolo rulează nemodificat, așa că lipiți doar scripturi din surse de încredere (etichete de analiză, widgeturi de chat și inserări similare).
 :::
 
 ## Teme de stil
@@ -113,5 +114,5 @@ Dacă doriți un punct de plecare rapid, **Suggested Palettes** din secțiunea C
 
 ## Pașii următori
 
-- [Gestionarea paginilor](managing-pages) -- Creați și organizați paginile site-ului dumneavoastră
-- [Fișiere](files) -- Încărcați resurse media pentru site-ul dumneavoastră
+- [Gestionarea paginilor](./managing-pages.md) -- Creați și organizați paginile site-ului dumneavoastră
+- [Fișiere](./files.md) -- Încărcați resurse media pentru site-ul dumneavoastră

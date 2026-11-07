@@ -1,5 +1,6 @@
 ---
 title: "Naptárak létrehozása"
+description: "Naptár létrehozása a B1 Admin-ban, csoportok csatlakoztatása vagy .ics fájlok importálása, az események, regisztrációk és jegyzetek kezelése egy helyen."
 ---
 
 # Naptárak létrehozása
@@ -61,7 +62,7 @@ A csoportok naptárhoz kapcsolása hatékony módja az események automatikus ö
 :::
 
 :::info
-Ha egy olyan naptárat szeretne létrehozni, amely a gyülekezet számos csoportjának eseményeit gyűjti össze, nézze meg a [Kurált naptár](curated-calendar) leírását, amely egyszerűbb megoldást kínál.
+Ha egy olyan naptárat szeretne létrehozni, amely a gyülekezet számos csoportjának eseményeit gyűjti össze, nézze meg a [Kurált naptár](./curated-calendar.md) leírását, amely egyszerűbb megoldást kínál.
 :::
 
 ## Események hozzáadása és szerkesztése {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Esemény hozzáadásához kattintson az **Új esemény** gombra a naptár részl
 - **Kezdés** és **Vége**, **Ismétlődés** és **Láthatóság** (**Nyilvános** vagy **Privát**).
 - **Címkék** -- Vesszővel elválasztott címkék, például `youth, students`. A weboldalán lévő Naptár elem beállítható úgy, hogy csak bizonyos címkéjű eseményeket jelenítsen meg. Ez ugyanaz a **Címkék** mező, amely az esemény regisztrációs beállításainál is látható.
 - **Ki tekintheti meg a jegyzeteket** és **Ki írhat jegyzetet** -- Megadja, ki olvashatja és bővítheti az esemény jegyzeteit (lásd: [Eseményjegyzetek](#event-notes)). Válassza a **Csak munkatársak** (alapértelmezett), a **Csoportvezetők** (az esemény csoportjának vezetői) vagy a **Csoporttagok** (az esemény csoportjának minden tagja, a vezetőkkel együtt) lehetőséget.
-- **Termek** és **Erőforrások** -- Helyet és felszerelést foglalhat le az eseményhez. Lásd: [Termek, erőforrások és ütemezés](rooms-resources).
+- **Termek** és **Erőforrások** -- Helyet és felszerelést foglalhat le az eseményhez. Lásd: [Termek, erőforrások és ütemezés](./rooms-resources.md).
 
 Kattintson a **Mentés** gombra. Ha az esemény ismétlődik, a B1 kérni fogja a megerősítést, mert a mentés a sorozat minden előfordulását frissíti.
 
@@ -101,12 +102,12 @@ Bármelyik naptáresemény esetén engedélyezheti a regisztrációt, hogy a tag
    - **Regisztráció zárása** -- Az a dátum és időpont, amikor a regisztráció lezárul.
    - **Címkék** -- Vesszővel elválasztott címkék (például „fiatalok, táborozás, gyermekbibliaiskola”), amelyek segítenek a regisztrálható események kategorizálásában.
    - **Regisztrációs kérdések** -- Opcionálisan csatolhat egy [űrlapot](../forms/creating-forms.md), hogy a regisztrálók a jelentkezés részeként további kérdésekre is válaszoljanak (étkezési korlátozások, pólóméret, vészhelyzeti kapcsolattartó stb.). A **Nincs** lehetőséggel kihagyhatja a kérdéseket.
-   - **Várólista engedélyezése** -- Ha az esemény betelik, a további regisztrálók várólistára kerülhetnek ahelyett, hogy elutasítanák őket. Lásd: [Fizetős regisztrációk](paid-registrations#waitlist).
+   - **Várólista engedélyezése** -- Ha az esemény betelik, a további regisztrálók várólistára kerülhetnek ahelyett, hogy elutasítanák őket. Lásd: [Fizetős regisztrációk](./paid-registrations.md#waitlist).
 4. Mentse az eseményt.
 
-Fizetős eseményeknél ugyanezen a beállítási oldalon megadhat árazott **résztvevőtípusokat**, opcionális **kiegészítőket** (Selections) és **kedvezménykódokat**. A fizetés a gyülekezete adományozási szolgáltatóján keresztül történik. A teljes útmutatóért lásd: [Fizetős regisztrációk](paid-registrations).
+Fizetős eseményeknél ugyanezen a beállítási oldalon megadhat árazott **résztvevőtípusokat**, opcionális **kiegészítőket** (Selections) és **kedvezménykódokat**. A fizetés a gyülekezete adományozási szolgáltatóján keresztül történik. A teljes útmutatóért lásd: [Fizetős regisztrációk](./paid-registrations.md).
 
-Ha a regisztráció engedélyezve van, a tagok a **Regisztráció erre az eseményre** gombot fogják látni, amikor megtekintik az eseményt a [B1 weboldalon](../../b1-church/events/registering) vagy a [B1 mobilalkalmazásban](../../b1-mobile/events/registering). Ha csatolt egy űrlapot, a regisztrálók a regisztráció során egy **Kérdések** lépést látnak, és válaszaik a regisztrációjukkal együtt mentésre kerülnek.
+Ha a regisztráció engedélyezve van, a tagok a **Regisztráció erre az eseményre** gombot fogják látni, amikor megtekintik az eseményt a [B1 weboldalon](../../b1-church/events/registering.md) vagy a [B1 mobilalkalmazásban](../../b1-mobile/events/registering.md). Ha csatolt egy űrlapot, a regisztrálók a regisztráció során egy **Kérdések** lépést látnak, és válaszaik a regisztrációjukkal együtt mentésre kerülnek.
 
 :::info
 A regisztrációs kérdések csak olyan űrlapokkal működnek, amelyek **nincsenek** korlátozottként megjelölve. A korlátozott űrlap regisztráció közben automatikusan kimarad, nem jelenik meg, ezért eseményhez kérdések csatolásakor nem korlátozott űrlapot használjon.
@@ -126,7 +127,7 @@ Az eseményeihez tartozó regisztrációk megtekintéséhez és kezeléséhez:
    - **Előléptetés** -- Várólistás regisztráció előléptetése, amikor felszabadul egy hely
    - **CSV exportálása** -- Az összes regisztráció letöltése, beleértve a résztvevőtípusokat, a kiegészítőket, a fizetett összegeket és a kérdésekre adott válaszokat
 
-Ha az eseményhez regisztrációs kérdések vannak csatolva, a részletező oldalon megjelenik a **Csak a megválaszolatlan kérdések** szűrő, amellyel gyorsan megtalálhatja azokat a regisztrálókat, akik még nem küldtek választ. Minden megválaszolt regisztrációnál megjelenik továbbá a **Válaszok megtekintése** gomb, amellyel megnézheti a válaszaikat. Fizetős eseményeknél egy **Típus** oszlop, egy **Fizetett / Összes** oszlop, típusonkénti darabszámok és egy fizetési részleteket mutató párbeszédpanel is elérhető. Lásd: [Fizetős regisztrációk](paid-registrations#the-registration-roster).
+Ha az eseményhez regisztrációs kérdések vannak csatolva, a részletező oldalon megjelenik a **Csak a megválaszolatlan kérdések** szűrő, amellyel gyorsan megtalálhatja azokat a regisztrálókat, akik még nem küldtek választ. Minden megválaszolt regisztrációnál megjelenik továbbá a **Válaszok megtekintése** gomb, amellyel megnézheti a válaszaikat. Fizetős eseményeknél egy **Típus** oszlop, egy **Fizetett / Összes** oszlop, típusonkénti darabszámok és egy fizetési részleteket mutató párbeszédpanel is elérhető. Lásd: [Fizetős regisztrációk](./paid-registrations.md#the-registration-roster).
 
 :::tip
 A kapacitássáv segítségével nyomon követheti, milyen gyorsan telnek meg az események. A sáv pirosra vált, ha az esemény eléri vagy túllépi a kapacitását.
@@ -134,7 +135,7 @@ A kapacitássáv segítségével nyomon követheti, milyen gyorsan telnek meg az
 
 ## Következő lépések
 
-- [Kurált naptár](curated-calendar) -- Több csoportból gyűjtő naptár létrehozása
-- [Fizetős regisztrációk](paid-registrations) -- Résztvevőtípusok, kiegészítő választások, kedvezménykódok, fizetések és várólisták
-- [Eseményregisztrációs útmutató](../guides/event-registration) -- Lépésenkénti útmutató az eseményregisztráció beállításához
-- [Naptárak áttekintése](./) -- Vissza a naptárak áttekintő oldalára
+- [Kurált naptár](./curated-calendar.md) -- Több csoportból gyűjtő naptár létrehozása
+- [Fizetős regisztrációk](./paid-registrations.md) -- Résztvevőtípusok, kiegészítő választások, kedvezménykódok, fizetések és várólisták
+- [Eseményregisztrációs útmutató](../guides/event-registration.md) -- Lépésenkénti útmutató az eseményregisztráció beállításához
+- [Naptárak áttekintése](./index.md) -- Vissza a naptárak áttekintő oldalára

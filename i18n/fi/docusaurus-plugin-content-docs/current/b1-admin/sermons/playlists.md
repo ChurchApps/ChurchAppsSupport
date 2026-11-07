@@ -1,5 +1,6 @@
 ---
 title: "Soittolistat"
+description: "Ryhmittele saarnat sarjoiksi B1 Adminissa, jotta B1.church-sivuston kävijät voivat selata ja seurata saarnasarjoja järjestyksessä."
 ---
 
 # Soittolistat
@@ -39,10 +40,10 @@ Luo soittolistat ennen saarnojen lisäämistä. Näin voit liittää jokaisen sa
 
 ## Saarnojen lisääminen soittolistaan
 
-Kun [lisäät tai muokkaat saarnaa](managing-sermons), liität sen soittolistaan **Playlist**-pudotusvalikon avulla. Kaikki samaan soittolistaan liitetyt saarnat ryhmitellään yhteen ja näytetään järjestyksessä verkkosivustollasi.
+Kun [lisäät tai muokkaat saarnaa](./managing-sermons.md), liität sen soittolistaan **Playlist**-pudotusvalikon avulla. Kaikki samaan soittolistaan liitetyt saarnat ryhmitellään yhteen ja näytetään järjestyksessä verkkosivustollasi.
 
 :::info
-Voit liittää saarnoja soittolistoihin myös [massatuonnin](bulk-import) yhteydessä. Kun tuot saarnoja YouTubesta tai Vimeosta, valitse soittolista **Import Into Playlist** -pudotusvalikosta ennen kuin napsautat **Import**-painiketta.
+Voit liittää saarnoja soittolistoihin myös [massatuonnin](./bulk-import.md) yhteydessä. Kun tuot saarnoja YouTubesta tai Vimeosta, valitse soittolista **Import Into Playlist** -pudotusvalikosta ennen kuin napsautat **Import**-painiketta.
 :::
 
 ## Miten soittolistat näkyvät verkkosivustollasi
@@ -55,5 +56,5 @@ Soittolistat näkyvät B1.church-verkkosivustollasi selattavina kokoelmina. Käv
 
 ## Seuraavat vaiheet
 
-- [Saarnojen hallinta](managing-sermons) -- Lisää yksittäisiä saarnoja soittolistoihin
-- [Massatuonti](bulk-import) -- Tuo useita saarnoja ja liitä ne soittolistoihin
+- [Saarnojen hallinta](./managing-sermons.md) -- Lisää yksittäisiä saarnoja soittolistoihin
+- [Massatuonti](./bulk-import.md) -- Tuo useita saarnoja ja liitä ne soittolistoihin

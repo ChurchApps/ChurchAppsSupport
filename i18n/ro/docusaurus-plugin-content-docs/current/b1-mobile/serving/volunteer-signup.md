@@ -1,5 +1,7 @@
 ---
-title: "Înscrierea voluntarilor"
+title: "Înscrierea voluntarilor în aplicația B1 Mobile"
+sidebar_label: "Înscrierea voluntarilor"
+description: "Găsiți pozițiile de voluntariat libere pentru slujbele viitoare, înscrieți-vă sau eliminați o înscriere în aplicația B1 Mobile. Acoperă termenele și modul în care funcționează limitele de locuri."
 ---
 
 # Înscrierea voluntarilor
@@ -13,7 +15,7 @@ Consultați pozițiile de voluntariat disponibile și înscrieți-vă direct din
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](../getting-started/installing) și [autentificați-vă](../getting-started/logging-in) în contul dumneavoastră
+- [Instalați B1 Mobile](../getting-started/installing.md) și [autentificați-vă](../getting-started/logging-in.md) în contul dumneavoastră
 - Administratorul bisericii trebuie să fi activat auto-înscrierea pentru cel puțin o poziție
 
 </div>
@@ -60,5 +62,5 @@ Activați [notificările push](../community/notifications.md) pentru a fi inform
 
 ## Articole conexe
 
-- [Vizualizarea planurilor](./viewing-plans) -- Consultați planurile și ordinele de serviciu care vi s-au atribuit
+- [Vizualizarea planurilor](./viewing-plans.md) -- Consultați planurile și ordinele de serviciu care vi s-au atribuit
 - [Notificări](../community/notifications.md) -- Rămâneți la curent cu asignările de slujire

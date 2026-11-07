@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Explora, programa y presenta lecciones gratuitas por edad de más de 12 proveedores en Lessons.church, con aulas, lugares e integraciones con FreePlay o B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church funciona con otras herramientas de ChurchApps para ayudarte a ent
 
 ## Secciones de Documentación
 
-- [Iniciando](./getting-started/) -- Crea tu cuenta y aprende lo básico
-- [Explorando Contenido](./browsing/) -- Encuentra programas, estudios y lecciones
-- [Aulas](./classrooms/) -- Configura aulas y programa lecciones
-- [Personalización](./customization/) -- Personaliza lecciones para tu iglesia
-- [Presentación](./presenting/) -- Entrega lecciones en clase usando modo de presentador
-- [Administración](./admin/) -- Gestiona programas, estudios y lecciones como administrador
+- [Iniciando](./getting-started/index.md) -- Crea tu cuenta y aprende lo básico
+- [Explorando Contenido](./browsing/index.md) -- Encuentra programas, estudios y lecciones
+- [Aulas](./classrooms/index.md) -- Configura aulas y programa lecciones
+- [Personalización](./customization/index.md) -- Personaliza lecciones para tu iglesia
+- [Presentación](./presenting/index.md) -- Entrega lecciones en clase usando modo de presentador
+- [Administración](./admin/index.md) -- Gestiona programas, estudios y lecciones como administrador
 - [Declaración de Fe](./statement-of-faith.md) -- Creencias centrales y directrices del currículo
 
 Para soporte, correo electrónico [support@churchapps.org](mailto:support@churchapps.org).

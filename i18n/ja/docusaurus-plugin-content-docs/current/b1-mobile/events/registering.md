@@ -1,5 +1,7 @@
 ---
-title: "イベントへの登録"
+title: "B1 Mobile でのイベント登録"
+sidebar_label: "イベントへの登録"
+description: "B1 Mobile アプリから教会のイベントに自分と家族を登録し、残りの定員を確認して、3 つの手順で申し込みを確定させます。"
 ---
 
 # イベントへの登録
@@ -13,7 +15,7 @@ title: "イベントへの登録"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobileをインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobileをインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
 - イベントで登録が有効になっており、登録期間内である必要があります
 
 </div>
@@ -50,4 +52,4 @@ title: "イベントへの登録"
 ## 関連記事
 
 - [イベントの概要](./index.md) -- モバイルで登録可能なイベントを確認する
-- [プランの表示](../serving/viewing-plans) -- 奉仕のスケジュールを確認する
+- [プランの表示](../serving/viewing-plans.md) -- 奉仕のスケジュールを確認する

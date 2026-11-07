@@ -1,5 +1,7 @@
 ---
-title: "Primeiros Passos"
+title: "Primeiros Passos com o Portal de Membros B1.church"
+sidebar_label: "Primeiros Passos"
+description: "Encontre o site B1.church da sua igreja, crie sua conta de membro e veja o que o portal oferece, de grupos e doações a check-in e planos."
 ---
 
 # Primeiros Passos com o B1.church

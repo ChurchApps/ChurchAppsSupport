@@ -1,5 +1,6 @@
 ---
 title: "Check-In-Workflow"
+description: "Eiga B1 Church Checkin terminale: nuo pamaldų pasirinkimo iki išregistravimo. Pirmiausia B1 Admin nustatykite pamaldas, grupes ir asmenis."
 ---
 
 # Check-In-Workflow
@@ -26,13 +27,13 @@ Registracijos procesas B1 Church Checkin programoje vyksta pagal paprastą, žin
 
 ## Registracijos eiga trumpai
 
-1. **[Pasirinkite pamaldas](./selecting-service)** -- Pasirinkite, kurias pamaldas lankote (pvz., sekmadienio rytą, sekmadienio popietę, vidursavaitę).
-2. **[Ieškokite savo šeimos](./looking-up-members)** -- Ieškokite pagal telefono numerį arba pavardę, kad rastumėte save sistemoje.
-3. **[Peržiūrėkite savo namų ūkį](./household-review)** -- Peržiūrėkite visus šeimos narius ir jų dabartinius grupių priskyrimus.
-4. **[Priskirkite grupes](./group-assignment)** -- Pasirinkite, kurią klasę ar grupę kiekvienas šeimos narys turėtų lankyti kiekvienu pamaldų laiku.
-5. **[Pridėkite svečius](./adding-guests)** (neprivaloma) -- Pridėkite lankytoją į savo namų ūkį, jei jis prisijungia prie jūsų.
-6. **[Užbaikite registraciją](./completing-checkin)** -- Paspauskite registracijos mygtuką, kad pateiktumėte lankomumą ir atspausdintumėte etiketes.
-7. **[Išregistruokite](./checking-out)** (darbuotojų punktuose) -- Atvykimo metu patikrinkite saugumo kodą ir asmenį, kuris atvyksta vaiko, naudodami patikimų asmenų sąrašus, tėvų iškvietimą ir etikečių perspausdinimą.
+1. **[Pasirinkite pamaldas](./selecting-service.md)** -- Pasirinkite, kurias pamaldas lankote (pvz., sekmadienio rytą, sekmadienio popietę, vidursavaitę).
+2. **[Ieškokite savo šeimos](./looking-up-members.md)** -- Ieškokite pagal telefono numerį arba pavardę, kad rastumėte save sistemoje.
+3. **[Peržiūrėkite savo namų ūkį](./household-review.md)** -- Peržiūrėkite visus šeimos narius ir jų dabartinius grupių priskyrimus.
+4. **[Priskirkite grupes](./group-assignment.md)** -- Pasirinkite, kurią klasę ar grupę kiekvienas šeimos narys turėtų lankyti kiekvienu pamaldų laiku.
+5. **[Pridėkite svečius](./adding-guests.md)** (neprivaloma) -- Pridėkite lankytoją į savo namų ūkį, jei jis prisijungia prie jūsų.
+6. **[Užbaikite registraciją](./completing-checkin.md)** -- Paspauskite registracijos mygtuką, kad pateiktumėte lankomumą ir atspausdintumėte etiketes.
+7. **[Išregistruokite](./checking-out.md)** (darbuotojų punktuose) -- Atvykimo metu patikrinkite saugumo kodą ir asmenį, kuris atvyksta vaiko, naudodami patikimų asmenų sąrašus, tėvų iškvietimą ir etikečių perspausdinimą.
 
 Užbaigus registraciją, programa rodo sėkmės ekraną ir automatiškai grįžta į paieškos ekraną, paruoštą kitai šeimai.
 
@@ -50,5 +51,5 @@ Prieš naudodamiesi registracijos kioskeliu, įsitikinkite, kad B1 Admin program
 - **Asmenys** pridėti į sistemą su namų ūkio susiejimais. Žr. [asmenų pridėjimą](../../b1-admin/people/adding-people.md).
 
 :::info
-Jei dar nesate nustatę paties kioskelio, žr. [Pradžia](../getting-started/) dėl įdiegimo, prisijungimo ir spausdintuvo konfigūravimo instrukcijų.
+Jei dar nesate nustatę paties kioskelio, žr. [Pradžia](../getting-started/index.md) dėl įdiegimo, prisijungimo ir spausdintuvo konfigūravimo instrukcijų.
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Checking Out & Child Safety"
+description: "Check children out on a manned B1 Checkin station with security codes, verified pickup people, parent paging, label reprints, and emergency broadcasts."
 ---
 
 # Checking Out & Child Safety
@@ -14,7 +15,7 @@ Check-out closes the loop on child check-in: a parent presents the security code
 <h4>Before You Begin</h4>
 
 - Check-out is available on stations set to **manned** mode in the kiosk admin settings
-- Children must have been [checked in](./completing-checkin) with a printed pickup label carrying the security code
+- Children must have been [checked in](./completing-checkin.md) with a printed pickup label carrying the security code
 - Paging and emergency broadcasts require your church to have a texting provider connected in B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ If a typed name matches someone marked **Not Authorized** for that household, th
 Once the picker is confirmed, tap check out. The pickup person's name is stored with the attendance record.
 
 :::info
-Trusted and not-authorized pickup people are managed by church staff on each person's page in B1 Admin — see [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Trusted and not-authorized pickup people are managed by church staff on each person's page in B1 Admin — see [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Paging a Parent
@@ -65,6 +66,6 @@ The broadcast goes to every checked-in household for the selected service. Use i
 
 ## Related Articles
 
-- [Completing Check-In](./completing-checkin) — where security codes and pickup labels come from
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — configuring capacities, ratios, pickup people, and the texting provider requirement
-- [Printer Setup](../getting-started/printer-setup) — label printer configuration
+- [Completing Check-In](./completing-checkin.md) — where security codes and pickup labels come from
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) — configuring capacities, ratios, pickup people, and the texting provider requirement
+- [Printer Setup](../getting-started/printer-setup.md) — label printer configuration

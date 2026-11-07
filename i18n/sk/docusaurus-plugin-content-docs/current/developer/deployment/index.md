@@ -1,5 +1,6 @@
 ---
 title: "Nasadenie"
+description: "Zistite, kam sa nasadzuje každý projekt ChurchApps, od API v AWS Lambda a webových aplikácií S3 po mobilné zostavenia Expo a self-hosted B1 Admin na Railway alebo Dockeri."
 ---
 
 # Nasadenie
@@ -14,12 +15,12 @@ ChurchApps používa rôzne stratégie nasadenia v závislosti od typu projektu.
 
 | Typ projektu | Cieľ nasadenia | Nástroje |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
-| [Webové aplikácie](./web-apps) | S3 + CloudFront | Statické zostavenie, synchronizácia S3, invalidácia CloudFront |
-| [Mobilné aplikácie](./mobile) | Obchody s aplikáciami | Expo EAS Build + OTA aktualizácie |
-| [Vlastné hostovanie (Railway)](./railway-template) | Railway | Jednokliková šablóna: MySQL + Api + B1Admin + B1App |
-| [Vlastné hostovanie (Docker)](./docker) | Akýkoľvek hostiteľ Docker | Jednoriadkový inštalátor; predpripravené obrazy GHCR + Caddy, `./deploy/b1` aktualizácia/záloha/vrátenie |
-| [Caddy proxy pre vlastnú doménu](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Statický Caddyfile + služba WinSW + plánovaná synchronizácia máp |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
+| [Webové aplikácie](./web-apps.md) | S3 + CloudFront | Statické zostavenie, synchronizácia S3, invalidácia CloudFront |
+| [Mobilné aplikácie](./mobile.md) | Obchody s aplikáciami | Expo EAS Build + OTA aktualizácie |
+| [Vlastné hostovanie (Railway)](./railway-template.md) | Railway | Jednokliková šablóna: MySQL + Api + B1Admin + B1App |
+| [Vlastné hostovanie (Docker)](./docker.md) | Akýkoľvek hostiteľ Docker | Jednoriadkový inštalátor; predpripravené obrazy GHCR + Caddy, `./deploy/b1` aktualizácia/záloha/vrátenie |
+| [Caddy proxy pre vlastnú doménu](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Statický Caddyfile + služba WinSW + plánovaná synchronizácia máp |
 | FreeShow | Priame stiahnutie | Electron Builder (binárne súbory pre viaceré platformy) |
 
 ## Prostredia

@@ -1,21 +1,22 @@
 ---
 title: "Event Reminders"
+description: "Set up event reminders in B1 Admin for push, email, and text, choosing timing, recipients, and a custom message so people get notified on time."
 ---
 
 # Event Reminders
 
 <div class="article-intro">
 
-Event reminders automatically notify the right people before an event happens -- for example, "Don't miss it! The healthcare workshop starts tomorrow at 9:00 AM." You configure a reminder once on the event, and B1 sends it out on schedule through push notifications, email, and, if your church has texting set up, text messages. Members can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Event reminders automatically notify the right people before an event happens -- for example, "Don't miss it! The healthcare workshop starts tomorrow at 9:00 AM." You configure a reminder once on the event, and B1 sends it out on schedule through push notifications, email, and, if your church has texting set up, text messages. Members can control which reminders they receive from their own [Notification Preferences](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Create the event you want to remind people about (see [Creating Calendars](creating-calendars))
-- To reach registered attendees, [enable registration](creating-calendars) on the event
-- To reach a whole group, make sure the event belongs to a [group](../groups/creating-groups) with members
+- Create the event you want to remind people about (see [Creating Calendars](./creating-calendars.md))
+- To reach registered attendees, [enable registration](./creating-calendars.md) on the event
+- To reach a whole group, make sure the event belongs to a [group](../groups/creating-groups.md) with members
 
 </div>
 
@@ -57,21 +58,21 @@ Guests added by name only (without a linked person record) can't receive a remin
 - Recurring events are handled automatically: each upcoming occurrence gets its own reminder.
 
 :::tip
-Reminders are sent **push first, with email as a fallback**. If a member has push notifications enabled, they'll get a push; if not, they'll get an email instead. Members choose which channels they want per notification type in their [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Reminders are sent **push first, with email as a fallback**. If a member has push notifications enabled, they'll get a push; if not, they'll get an email instead. Members choose which channels they want per notification type in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Text Reminders
 
 The **Text** channel only appears when your church has a texting provider connected. Texts go out through your church's texting provider, and each text may cost your church. They are sent in addition to any push or email reminder, and only to people who:
 
-- Turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences), and
+- Turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), and
 - Have a mobile number on their profile.
 
 Each text starts with your church's name, is kept to a single text message, and ends with "Reply STOP to opt out." Anyone who replies STOP stops receiving texts from your church. For STOP replies to reach B1, paste the **Inbound (STOP) webhook URL** from your [texting settings](../settings/church-settings.md#texting) into your provider's inbound message webhook.
 
 ## What Members Can Control
 
-Reminders always respect each member's [Notification Preferences](../../b1-church/getting-started/notification-preferences). A member can:
+Reminders always respect each member's [Notification Preferences](../../b1-church/getting-started/notification-preferences.md). A member can:
 
 - Turn **Event Reminders** off for push, email, or text while keeping other notifications on.
 - Turn text reminders on or off with **Text messages**.
@@ -81,10 +82,10 @@ You can't override a member's choice to opt out of event reminders -- this keeps
 
 ## Serving Reminders
 
-Volunteers scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan type rather than on a calendar event, and can also go out by text -- see [Volunteer Reminders](../serving/plans#volunteer-reminders) and [Sunday Volunteers](../guides/sunday-volunteers) for how volunteer scheduling and reminders work.
+Volunteers scheduled on a plan receive a separate **serving reminder** with the plan details and, when they haven't responded yet, **Accept / Decline** buttons right in the email. Those reminders are configured on the plan type rather than on a calendar event, and can also go out by text -- see [Volunteer Reminders](../serving/plans.md#volunteer-reminders) and [Sunday Volunteers](../guides/sunday-volunteers.md) for how volunteer scheduling and reminders work.
 
 ## Next Steps
 
-- [Notification Preferences](../../b1-church/getting-started/notification-preferences) -- What members can control
-- [Event Registration Guide](../guides/event-registration) -- Set up registration so reminders can reach attendees
-- [Creating Calendars](creating-calendars) -- Return to calendar setup
+- [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) -- What members can control
+- [Event Registration Guide](../guides/event-registration.md) -- Set up registration so reminders can reach attendees
+- [Creating Calendars](./creating-calendars.md) -- Return to calendar setup

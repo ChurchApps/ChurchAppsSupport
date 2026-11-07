@@ -1,5 +1,6 @@
 ---
 title: "Tilpasning af lektioner"
+description: "Fjern, skjul eller omarrangér sektioner og roller i en Lessons.church-lektion, og vælg om ændringerne gælder for ét klasseværelse eller for alle."
 ---
 
 # Tilpasning af lektioner

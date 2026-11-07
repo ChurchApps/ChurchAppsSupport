@@ -1,5 +1,6 @@
 ---
 title: "Third-Party Providers"
+description: "Add an external curriculum feed to Lessons.church from the Third-Party admin page, then view, update, or remove provider connections as needed."
 ---
 
 # Third-Party Providers

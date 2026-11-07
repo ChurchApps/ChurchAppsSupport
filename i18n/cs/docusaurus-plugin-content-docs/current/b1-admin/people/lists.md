@@ -1,5 +1,6 @@
 ---
 title: "Uložené seznamy"
+description: "Uložte hledání lidí v B1 Admin jako pojmenovaný seznam a načtěte ho jedním kliknutím. Seznamy jsou živé a nové odpovídající členy přidají automaticky."
 ---
 
 # Uložené seznamy

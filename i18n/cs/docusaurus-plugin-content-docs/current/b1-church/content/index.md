@@ -1,5 +1,7 @@
 ---
-title: "Obsah"
+title: "Obsah v členském portálu B1.church"
+sidebar_label: "Obsah"
+description: "Zjistěte, jaký obsah vaše církev v členském portálu B1.church zapíná, a procházejte kázání, živé přenosy, čtení Bible a lekce."
 ---
 
 # Obsah

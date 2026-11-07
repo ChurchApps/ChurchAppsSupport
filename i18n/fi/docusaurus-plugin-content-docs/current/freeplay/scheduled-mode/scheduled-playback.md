@@ -1,5 +1,6 @@
 ---
 title: "Ajastettu toisto televisiossa"
+description: "Yhdistetty FreePlay-TV lataa tulevan viikon ja toistaa kellon mukaan, myös offline. Kattaa tietopaneelin, kaukosäätimen painikkeet ja soittolistan kiinnittämisen."
 ---
 
 # Ajastettu toisto televisiossa
@@ -13,8 +14,8 @@ Kun televisio on yhdistetty kalenteriin, FreePlay käynnistää toiston puolesta
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Yhdistä televisio kalenteriin](./pairing-a-screen)
-- [Lisää sisältöä kalenteriin](./scheduling-the-calendar) tai aseta ruudun ryhmälle oletussilmukka
+- [Yhdistä televisio kalenteriin](./pairing-a-screen.md)
+- [Lisää sisältöä kalenteriin](./scheduling-the-calendar.md) tai aseta ruudun ryhmälle oletussilmukka
 
 </div>
 
@@ -40,7 +41,7 @@ Paneelissa on myös kolme painiketta:
 
 - **Kiinnitä tämä soittolista** - Pidä nykyinen sisältö silmukassa ja jätä kalenteri huomiotta. Palataksesi aikatauluun valitse **Poista soittolistan kiinnitys**
 - **Selaa sisältöä** - Poistu ajastetusta soittimesta ja selaa yhdistettyjä palveluntarjoajia
-- **Asetukset** - Avaa FreePlayn asetukset, joissa voit [irrottaa television kalenterista tai yhdistää sen toiseen kalenteriin](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Asetukset** - Avaa FreePlayn asetukset, joissa voit [irrottaa television kalenterista tai yhdistää sen toiseen kalenteriin](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Palataksesi aikatauluun selaamisen jälkeen paina kaukosäätimen **Takaisin**-painiketta **Sisältöpalvelut**-näkymässä tai avaa **Asetukset**, valitse **Yhdistä kalenteriin** ja valitse **Takaisin aikatauluun**. Yhdistetty televisio palaa myös ajastettuun soittimeen aina, kun FreePlay tulee takaisin etualalle, ja se avautuu aina ajastettuun soittimeen.
@@ -77,6 +78,6 @@ Voit myös toistaa ruudun kalenterin verkkoselaimessa. Avaa FreePlay Adminissa r
 
 ## Liittyvät artikkelit
 
-- **[Kalenterin määrittäminen](./scheduling-the-calendar)** - Määritä, mitä toistetaan ja mitä tapahtuu, kun sisältö päättyy aikaisin
-- **[Ruutujen ja ryhmien hallinta](./managing-screens)** - Tarkista kunkin ruudun lataukset FreePlay Administa
-- **[Sisällön toistaminen](../content-providers/playing-content)** - Soittimen ohjaimet, kun toistat sisältöä itse
+- **[Kalenterin määrittäminen](./scheduling-the-calendar.md)** - Määritä, mitä toistetaan ja mitä tapahtuu, kun sisältö päättyy aikaisin
+- **[Ruutujen ja ryhmien hallinta](./managing-screens.md)** - Tarkista kunkin ruudun lataukset FreePlay Administa
+- **[Sisällön toistaminen](../content-providers/playing-content.md)** - Soittimen ohjaimet, kun toistat sisältöä itse

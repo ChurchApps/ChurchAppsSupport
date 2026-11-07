@@ -1,5 +1,6 @@
 ---
 title: "Rozmowy grupowe"
+description: "Dowiedz się, jak publikować, edytować i reagować na wiadomości w czacie grupy B1.church oraz zarządzać nimi, w tym ogłoszeniami i narzędziami moderacji."
 ---
 
 # Rozmowy grupowe

@@ -1,5 +1,6 @@
 ---
 title: "安排日历"
+description: "在 FreePlay Admin 的“日历”中设置每周或一次性计划，将播放列表、服务计划或提供方文件夹安排到屏幕组上播放，并可设置默认循环作为备用内容。"
 ---
 
 # 安排日历
@@ -13,8 +14,8 @@ FreePlay Admin 中的 **Calendar** 页面用于控制每个屏幕组播放什么
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 至少创建一个屏幕组。参见[管理屏幕和组](./managing-screens#screen-groups)
-- [制作播放列表](./building-playlists)，或在 B1 Admin 中已设置好服务计划类型
+- 至少创建一个屏幕组。参见[管理屏幕和组](./managing-screens.md#screen-groups)
+- [制作播放列表](./building-playlists.md)，或在 B1 Admin 中已设置好服务计划类型
 
 </div>
 
@@ -82,10 +83,10 @@ FreePlay Admin 中的 **Calendar** 页面用于控制每个屏幕组播放什么
 
 ## 屏幕如何获取更改
 
-已配对的屏幕会下载未来 7 天内排定的所有内容，并会自行检查更改。编辑日历后，你无需再去操作电视。要查看屏幕是否已具备所需的全部内容，请查看 [Screens 页面](./managing-screens)上的 **Ready through**。
+已配对的屏幕会下载未来 7 天内排定的所有内容，并会自行检查更改。编辑日历后，你无需再去操作电视。要查看屏幕是否已具备所需的全部内容，请查看 [Screens 页面](./managing-screens.md)上的 **Ready through**。
 
 ## 相关文章
 
-- **[制作播放列表](./building-playlists)**——创建你要排程的播放列表
-- **[电视上的定时播放](./scheduled-playback)**——老师控制节奏的课程以及遥控器在电视上的工作方式
-- **[管理屏幕和组](./managing-screens)**——添加组并检查每个屏幕的下载情况
+- **[制作播放列表](./building-playlists.md)**——创建你要排程的播放列表
+- **[电视上的定时播放](./scheduled-playback.md)**——老师控制节奏的课程以及遥控器在电视上的工作方式
+- **[管理屏幕和组](./managing-screens.md)**——添加组并检查每个屏幕的下载情况

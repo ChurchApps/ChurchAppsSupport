@@ -1,5 +1,6 @@
 ---
 title: "Lomakevastausten hallinta"
+description: "Tarkastele, tulosta ja uudelleenohjaa lomakevastauksia B1 Adminissa, siirrä vastaukset oikealle henkilölle ja seuraa vierailijakortteja ja rukouspyyntöjä."
 ---
 
 # Lomakevastausten hallinta

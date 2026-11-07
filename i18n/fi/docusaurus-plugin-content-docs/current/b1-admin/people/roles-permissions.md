@@ -1,5 +1,6 @@
 ---
 title: "Roolien määrittäminen"
+description: "Määritä B1 Adminissa roolit, jotta henkilökunta ja vapaaehtoiset näkevät vain tarvitsemansa henkilö-, lahjoitus-, läsnäolo- ja ryhmäalueet."
 ---
 
 # Roolien määrittäminen

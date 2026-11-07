@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Hubungkan B1 Admin ke Make untuk mengotomatiskan alur kerja: buat kunci API, atur pemicu dan aksi B1.church, lalu atasi kesalahan umum."
 ---
 
 # Make
@@ -110,6 +111,6 @@ Aplikasi Make B1.church bersifat open source. Definisi JSON-nya berada di reposi
 
 ## Lihat Juga
 
-- [Zapier](./zapier): pola yang sama dengan UI yang lebih sederhana dan katalog aplikasi yang lebih besar
-- [Slack & Discord](./slack-discord): notifikasi obrolan bawaan tanpa Make
+- [Zapier](./zapier.md): pola yang sama dengan UI yang lebih sederhana dan katalog aplikasi yang lebih besar
+- [Slack & Discord](./slack-discord.md): notifikasi obrolan bawaan tanpa Make
 - [Webhooks (referensi pengembang)](/docs/developer/api/webhooks)

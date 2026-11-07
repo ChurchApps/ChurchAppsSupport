@@ -1,5 +1,7 @@
 ---
-title: "Lessen plannen van Lessons.church"
+title: "Lessen plannen vanuit Lessons.church in B1 Admin"
+sidebar_label: "Lessen plannen van Lessons.church"
+description: "Koppel Lessons.church aan B1 Admin en plan lessen, plan een hele serie in bulk of pas een jaarplan toe op de dienstplannen van een ministerie."
 ---
 
 # Lessen plannen van Lessons.church

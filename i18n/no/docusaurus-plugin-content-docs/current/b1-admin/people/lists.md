@@ -1,5 +1,6 @@
 ---
 title: "Lagrede lister"
+description: "Lagre et personsøk i B1 Admin som en navngitt liste og last den inn med ett klikk. Listene oppdateres, så nye treff dukker opp automatisk."
 ---
 
 # Lagrede lister

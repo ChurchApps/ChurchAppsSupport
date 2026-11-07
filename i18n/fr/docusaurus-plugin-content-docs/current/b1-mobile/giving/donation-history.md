@@ -1,5 +1,7 @@
 ---
-title: "Historique des dons"
+title: "Consulter l’historique des dons dans B1 Mobile"
+sidebar_label: "Historique des dons"
+description: "Consultez vos dons de l’année, votre dernier don et l’historique complet dans B1 Mobile, et répétez un don passé d’un seul geste depuis l’onglet Aperçu."
 ---
 
 # Historique des dons
@@ -13,8 +15,8 @@ B1 Mobile vous donne une vision claire de vos dons à travers deux onglets : **A
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
-- [Effectuez au moins un don](./making-donations) pour voir votre historique
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
+- [Effectuez au moins un don](./making-donations.md) pour voir votre historique
 
 </div>
 
@@ -45,5 +47,5 @@ Consultez régulièrement l'onglet **Aperçu** pour rester au courant de vos obj
 
 ## Articles connexes
 
-- [Effectuer un don](./making-donations) -- Faites un nouveau don depuis l'application
-- [Gérer les moyens de paiement](./managing-payments) -- Ajoutez ou supprimez des moyens de paiement enregistrés
+- [Effectuer un don](./making-donations.md) -- Faites un nouveau don depuis l'application
+- [Gérer les moyens de paiement](./managing-payments.md) -- Ajoutez ou supprimez des moyens de paiement enregistrés

@@ -1,5 +1,6 @@
 ---
 title: "Layanan Terhubung"
+description: "Hubungkan B1 Admin ke Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, dan alat lain menggunakan resep Zapier atau Make, dengan panduan pengaturan untuk masing-masing."
 ---
 
 # Layanan Terhubung
@@ -14,14 +15,14 @@ Cara tercepat untuk menghubungkan B1 ke alat teknologi gereja lain biasanya adal
 
 | Layanan | Kategori | Jembatan | Yang Bisa Anda Hubungkan |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Email | Zapier atau Make | Sinkronkan orang dan pemberi baru dari B1 ke audiens Mailchimp |
-| [Donorbox](./donorbox) | Donasi | Zapier | Kirim donasi dan donatur Donorbox kembali ke B1 |
-| [Subsplash](./subsplash) | Aplikasi / Donasi | Zapier | Tarik data pemberian dan orang dari Subsplash ke B1 |
-| [VOMO](./vomo) | Relawan | Zapier | Sinkronkan pendaftaran relawan antara grup B1 dan proyek VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Picu pesan teks Clearstream dari peristiwa B1; terima balasan sebagai data B1 |
-| [Text In Church](./text-in-church) | SMS / Alur Kerja | Zapier | Picu alur kerja Text In Church dari B1; terima data Connect Card |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier atau Make | Kirim SMS dari peristiwa B1 mana pun |
-| [Checkr](./checkr) | Pemeriksaan latar belakang | Make | Mulai pemeriksaan latar belakang saat seseorang bergabung dengan tim pelayanan |
+| [Mailchimp](./mailchimp.md) | Email | Zapier atau Make | Sinkronkan orang dan pemberi baru dari B1 ke audiens Mailchimp |
+| [Donorbox](./donorbox.md) | Donasi | Zapier | Kirim donasi dan donatur Donorbox kembali ke B1 |
+| [Subsplash](./subsplash.md) | Aplikasi / Donasi | Zapier | Tarik data pemberian dan orang dari Subsplash ke B1 |
+| [VOMO](./vomo.md) | Relawan | Zapier | Sinkronkan pendaftaran relawan antara grup B1 dan proyek VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Picu pesan teks Clearstream dari peristiwa B1; terima balasan sebagai data B1 |
+| [Text In Church](./text-in-church.md) | SMS / Alur Kerja | Zapier | Picu alur kerja Text In Church dari B1; terima data Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier atau Make | Kirim SMS dari peristiwa B1 mana pun |
+| [Checkr](./checkr.md) | Pemeriksaan latar belakang | Make | Mulai pemeriksaan latar belakang saat seseorang bergabung dengan tim pelayanan |
 
 ## Persamaan Semua Layanan Ini
 
@@ -45,8 +46,8 @@ Kami juga sengaja tidak menyertakan alat khusus Planning Center Services (musik,
 
 ## Lihat Juga
 
-- [Zapier (ikhtisar)](../zapier): sisi B1 dari setiap resep Zapier sama, dan dokumen ini membahasnya sekali saja
-- [Make (ikhtisar)](../make): sama untuk skenario Make
-- [Slack & Discord](../slack-discord): notifikasi obrolan tanpa jembatan apa pun
-- [Google Sheets](../google-sheets): ekspor sesuai permintaan
+- [Zapier (ikhtisar)](../zapier.md): sisi B1 dari setiap resep Zapier sama, dan dokumen ini membahasnya sekali saja
+- [Make (ikhtisar)](../make.md): sama untuk skenario Make
+- [Slack & Discord](../slack-discord.md): notifikasi obrolan tanpa jembatan apa pun
+- [Google Sheets](../google-sheets.md): ekspor sesuai permintaan
 - [Webhook (referensi pengembang)](/docs/developer/api/webhooks): katalog peristiwa yang menjadi dasar setiap resep

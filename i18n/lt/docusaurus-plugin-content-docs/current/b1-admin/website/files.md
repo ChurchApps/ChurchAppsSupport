@@ -1,5 +1,6 @@
 ---
 title: "Failai"
+description: "Įkelkite, naršykite ir tvarkykite bažnyčios svetainės paveikslėlius ir dokumentus B1 Admin, įskaitant išorinės saugyklos prijungimą papildomai vietai."
 ---
 
 # Failai
@@ -13,7 +14,7 @@ Puslapis Failai yra pagrindinė visų medijos failų ir dokumentų saugykla, nau
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Atlikite [pradinį nustatymą](initial-setup) savo svetainei
+- Atlikite [pradinį nustatymą](./initial-setup.md) savo svetainei
 - Prieš įkeldami optimizuokite vaizdus, kad puslapiai greičiau užsikrautų
 - Paruoškite failus įprastais žiniatinklio formatais (PNG, JPG, PDF ir kt.)
 
@@ -42,7 +43,7 @@ Failų lentelėje pateikiami visi įkelti failai su jų **Name** ir **Size** stu
 3. Čia įkelti failai pasiekiami visuose jūsų svetainės puslapiuose ir turinio blokuose.
 
 :::info
-Kurdami puslapius skiltyje [Puslapių valdymas](managing-pages), galite nurodyti bet kurį čia įkeltą failą pagal jo URL. Taip visa jūsų medija išlieka sutvarkyta vienoje centrinėje vietoje.
+Kurdami puslapius skiltyje [Puslapių valdymas](./managing-pages.md), galite nurodyti bet kurį čia įkeltą failą pagal jo URL. Taip visa jūsų medija išlieka sutvarkyta vienoje centrinėje vietoje.
 :::
 
 ## Failų šalinimas
@@ -57,5 +58,5 @@ Ištrintų failų atkurti nebeįmanoma. Prieš šalindami dar kartą patikrinkit
 
 ## Kiti žingsniai
 
-- [Puslapių valdymas](managing-pages) -- pridėkite įkeltus failus į svetainės puslapius
-- [Išvaizda](appearance) -- pritaikykite svetainės vizualinę temą
+- [Puslapių valdymas](./managing-pages.md) -- pridėkite įkeltus failus į svetainės puslapius
+- [Išvaizda](./appearance.md) -- pritaikykite svetainės vizualinę temą

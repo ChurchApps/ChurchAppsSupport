@@ -1,5 +1,6 @@
 ---
 title: "Caddyカスタムドメイン・プロキシ"
+description: "B1.church サイトのカスタム教会ドメインを提供する Caddy リバースプロキシをビルドして実行します。TLS 証明書、ホストのマッピング、既知の注意点を扱います。"
 ---
 
 # Caddyカスタムドメイン・プロキシ
@@ -10,7 +11,7 @@ title: "Caddyカスタムドメイン・プロキシ"
 
 </div>
 
-リクエストがB1Appに届いた後、どの教会／サイトに解決されるかについては、[ウェブサイトのルーティングとマルチサイト](../architecture/websites)を参照してください。
+リクエストがB1Appに届いた後、どの教会／サイトに解決されるかについては、[ウェブサイトのルーティングとマルチサイト](../architecture/websites.md)を参照してください。
 
 ## コンポーネント
 
@@ -90,5 +91,5 @@ APIの `CaddyHelper`（および `/membership/domains/caddy` と `/caddy/init` �
 
 ## 関連ページ
 
-- [ウェブサイトのルーティングとマルチサイト](../architecture/websites)：プロキシされたリクエストがB1App内でどの教会／サイトに解決されるか
-- [APIのデプロイ](./apis)：`authorize`/`hostmap` を提供するMembership APIのデプロイ
+- [ウェブサイトのルーティングとマルチサイト](../architecture/websites.md)：プロキシされたリクエストがB1App内でどの教会／サイトに解決されるか
+- [APIのデプロイ](./apis.md)：`authorize`/`hostmap` を提供するMembership APIのデプロイ

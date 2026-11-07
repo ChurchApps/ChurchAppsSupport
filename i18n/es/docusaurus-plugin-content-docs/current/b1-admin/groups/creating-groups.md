@@ -1,5 +1,6 @@
 ---
 title: "Creación de grupos"
+description: "Crea un grupo nuevo en B1 Admin, desde elegir una categoría y un nombre hasta configurar la política de acceso, etiquetas, mensajes y asistencia."
 ---
 
 # Creación de grupos

@@ -1,5 +1,6 @@
 ---
 title: "Cronologie"
+description: "Fila Timeline din portalul B1.church a fost retrasă. Vezi conversațiile, evenimentele, sarcinile și alertele pe pagina Me, la clopoțel sau în grupe."
 ---
 
 # Cronologie
@@ -16,13 +17,13 @@ Fila independentă **Cronologie** a fost retrasă. Portalul pentru membri se des
 | --- | --- |
 | Conversațiile și anunțurile din grupuri | Chat-ul din fiecare [grup](../groups/conversations.md) (**Deschide chatul**) |
 | Evenimentele viitoare pentru dumneavoastră și grupurile dumneavoastră | Pagina **Eu** (`/mobile/me`) și secțiunea **Următorul eveniment** din fiecare grup |
-| Sarcini și atribuiri de servire | Pagina **Eu** și [Planuri](../plans/) |
+| Sarcini și atribuiri de servire | Pagina **Eu** și [Planuri](../plans/index.md) |
 | Predici noi | Secțiunea **Ultima predică** de pe Acasă și fila [Predici](../content/sermons.md) |
 | Orice vă solicita atenția | Pictograma **clopoțel** din bara de sus a aplicației sau `/mobile/notifications` |
 
 ## Pagina Eu
 
-[Pagina Eu](../getting-started/me-page) este cel mai apropiat înlocuitor al fostului flux. Aceasta listează ce urmează pentru dumneavoastră -- atribuiri de servire, înscrieri la evenimente și evenimente de grup -- împreună cu formularele trimise, istoricul prezențelor și cele mai recente notificări și oferă linkuri directe către profilul dumneavoastră, preferințele de notificare, mesaje, donații și înscrieri.
+[Pagina Eu](../getting-started/me-page.md) este cel mai apropiat înlocuitor al fostului flux. Aceasta listează ce urmează pentru dumneavoastră -- atribuiri de servire, înscrieri la evenimente și evenimente de grup -- împreună cu formularele trimise, istoricul prezențelor și cele mai recente notificări și oferă linkuri directe către profilul dumneavoastră, preferințele de notificare, mesaje, donații și înscrieri.
 
 ## Notificări
 

@@ -1,5 +1,7 @@
 ---
-title: "Registracija atvykus"
+title: "Savitarnos registracija: B1 Checkin ir B1 Admin"
+sidebar_label: "Registracija atvykus"
+description: "Nustatykite savitarnos registraciją su B1 Checkin programėle B1 Admin: įrenginiai, kioskų paskyros, tvarkaraščiai, prekės ženklas ir QR svečių registracija."
 ---
 
 # Registracija atvykus
@@ -99,7 +101,7 @@ Kai terminalas nenaudojamas, laukimo ekrane rodykite skelbimus, artėjančius re
 
 Registracijos terminale gali būti rodomas QR kodas, kurį lankytojai nuskaito, kad patys savo telefonu užsiregistruotų ir įregistruotų savo šeimą. Tai pagreitina registraciją pirmą kartą atvykstantiems svečiams.
 
-Nuskaitę QR kodą, svečiai patenka į [svečių registracijos puslapį](../../b1-church/checkin/guest-registration), kur įveda savo šeimos narių vardus ir kitą informaciją, kurios pageidaujate. Tuomet savanoris gali juos rasti terminale ir užregistruoti.
+Nuskaitę QR kodą, svečiai patenka į [svečių registracijos puslapį](../../b1-church/checkin/guest-registration.md), kur įveda savo šeimos narių vardus ir kitą informaciją, kurios pageidaujate. Tuomet savanoris gali juos rasti terminale ir užregistruoti.
 
 ### QR kodo svečių registracijos įjungimas
 

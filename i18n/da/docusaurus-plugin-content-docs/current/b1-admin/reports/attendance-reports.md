@@ -1,5 +1,6 @@
 ---
 title: "tilstedeværelsesrapporter"
+description: "Se B1 Admins tre fremmøderapporter (Fremmødetrend, Gruppefremmøde, Daglig gruppefremmøde), hvad hver viser, og hvordan de køres og eksporteres."
 ---
 
 # tilstedeværelsesrapporter

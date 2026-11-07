@@ -1,5 +1,7 @@
 ---
-title: "Consulter les plannings"
+title: "Vos plans de service dans le portail des membres B1.church"
+sidebar_label: "Consulter les plannings"
+description: "Consultez vos affectations dans B1.church, acceptez ou refusez les demandes, définissez vos dates d’indisponibilité et revoyez votre historique."
 ---
 
 # Consulter les plannings

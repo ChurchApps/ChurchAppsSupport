@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Sett opp hendelsesregistrering"
+description: "Sett opp et påmeldingsskjema i B1 Admin for å samle inn deltakerdetaljer og eventuelle betalinger, legg det inn på nettsiden, og følg påmeldingene."
 ---
 
 # Sett opp hendelsesregistrering
@@ -11,7 +12,7 @@ Opprett et registreringsskjema for hendelser, samle informasjon om deltakere og 
 </div>
 
 :::info
-**To måter å håndtere hendelsesregistrering:** Denne veiledningen dekker **skjemabasert registrering**, som gir deg full kontroll over egendefinerte felt og betalingsinnsamling. For enklere hendelser der du bare må spore hvem som kommer, bruk **innebygd hendelsesregistrering** som er innebygd i kalenderen -- se [Opprettelse av kalendere](../calendars/creating-calendars.md#enabling-event-registration) for oppsettsanvisninger. Innebygd registrering lar medlemmer melde seg på direkte fra [B1-nettstedet](../../b1-church/events/registering) og [mobilappen](../../b1-mobile/events/registering) med kapasitetssporing, datovinduet og e-postbekreftelser.
+**To måter å håndtere hendelsesregistrering:** Denne veiledningen dekker **skjemabasert registrering**, som gir deg full kontroll over egendefinerte felt og betalingsinnsamling. For enklere hendelser der du bare må spore hvem som kommer, bruk **innebygd hendelsesregistrering** som er innebygd i kalenderen -- se [Opprettelse av kalendere](../calendars/creating-calendars.md#enabling-event-registration) for oppsettsanvisninger. Innebygd registrering lar medlemmer melde seg på direkte fra [B1-nettstedet](../../b1-church/events/registering.md) og [mobilappen](../../b1-mobile/events/registering.md) med kapasitetssporing, datovinduet og e-postbekreftelser.
 :::
 
 <div class="prereqs">

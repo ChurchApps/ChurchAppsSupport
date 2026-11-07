@@ -1,5 +1,6 @@
 ---
 title: "Vincular una pantalla"
+description: "Vincula un TV FreePlay a un calendario de grupo en FreePlay Admin con el código de cuatro letras del TV para que reproduzca contenido programado."
 ---
 
 # Vincular una pantalla
@@ -13,9 +14,9 @@ Para poner un televisor en un calendario, vincúlelo con **FreePlay Admin**. El 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instale e inicie FreePlay en el televisor. Consulte [Primeros pasos](../getting-started/)
+- Instale e inicie FreePlay en el televisor. Consulte [Primeros pasos](../getting-started/index.md)
 - Tenga un inicio de sesión de ChurchApps para su iglesia para poder entrar en FreePlay Admin
-- Opcionalmente, [cree una lista de reproducción](./building-playlists) y [programela](./scheduling-the-calendar) primero, para que el televisor tenga algo que reproducir de inmediato
+- Opcionalmente, [cree una lista de reproducción](./building-playlists.md) y [programela](./scheduling-the-calendar.md) primero, para que el televisor tenga algo que reproducir de inmediato
 
 </div>
 
@@ -38,7 +39,7 @@ El código dura 15 minutos, y debajo de él un contador muestra cuánto tiempo q
 5. En **Modo**, deje seleccionado **Programado**. El televisor reproducirá según el calendario del grupo por sí solo.
 6. Haga clic en **Vincular**.
 
-El televisor muestra **¡Conectado!** y luego **Cargando su programación...**. Descarga lo programado y empieza a reproducirlo. Consulte [Reproducción programada en el televisor](./scheduled-playback).
+El televisor muestra **¡Conectado!** y luego **Cargando su programación...**. Descarga lo programado y empieza a reproducirlo. Consulte [Reproducción programada en el televisor](./scheduled-playback.md).
 
 :::info
 Si FreePlay Admin dice **Ese código no coincide con ningún televisor**, revise el código en la pantalla. Si venció, use el nuevo código que muestra el televisor en ese momento.
@@ -51,11 +52,11 @@ La configuración de **Modo** tiene dos opciones:
 - **Programado**: reproduce según el calendario del grupo por sí solo. Nadie tiene que presionar Iniciar.
 - **Manual**: alguien elige el contenido con el control remoto. Una pantalla manual sigue apareciendo en su lista de **Pantallas**, pero no sigue un calendario, así que el campo **Grupo** queda desactivado.
 
-Más adelante puede cambiar el modo de una pantalla desde **Editar** en la [página de Pantallas](./managing-screens).
+Más adelante puede cambiar el modo de una pantalla desde **Editar** en la [página de Pantallas](./managing-screens.md).
 
 ## Vincular a un plan de servicio
 
-El código de la pantalla **Vincular esta pantalla** también funciona en B1 Admin. Si lo ingresa allí y elige un tipo de plan en **Mostrar planes de**, el televisor sigue ese tipo de plan en el [Modo de plan](../plan-mode/) en lugar de un calendario. Consulte [Vincular su dispositivo](../plan-mode/device-pairing).
+El código de la pantalla **Vincular esta pantalla** también funciona en B1 Admin. Si lo ingresa allí y elige un tipo de plan en **Mostrar planes de**, el televisor sigue ese tipo de plan en el [Modo de plan](../plan-mode/index.md) en lugar de un calendario. Consulte [Vincular su dispositivo](../plan-mode/device-pairing.md).
 
 ## Cambiar o desvincular desde el televisor {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ El televisor vuelve a mostrar un código de vinculación. Vincúlelo de nuevo cu
 
 ## Artículos relacionados
 
-- **[Administrar pantallas y grupos](./managing-screens)**: cambie el nombre de una pantalla, muévala a otro grupo o revise sus descargas
-- **[Programar el calendario](./scheduling-the-calendar)**: decida lo que reproducen las pantallas del grupo
-- **[Elegir un modo de vinculación](../getting-started/pairing-modes)**: compare el Modo programado con el Modo de plan y con explorar proveedores usted mismo
+- **[Administrar pantallas y grupos](./managing-screens.md)**: cambie el nombre de una pantalla, muévala a otro grupo o revise sus descargas
+- **[Programar el calendario](./scheduling-the-calendar.md)**: decida lo que reproducen las pantallas del grupo
+- **[Elegir un modo de vinculación](../getting-started/pairing-modes.md)**: compare el Modo programado con el Modo de plan y con explorar proveedores usted mismo

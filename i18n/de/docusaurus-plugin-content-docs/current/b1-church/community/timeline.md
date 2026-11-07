@@ -1,5 +1,6 @@
 ---
 title: "Zeitleiste"
+description: "Der Timeline-Reiter im Mitgliederportal von B1.church wurde eingestellt. Chats, Termine, Aufgaben und Hinweise finden Sie unter Me, der Glocke und in Gruppen."
 ---
 
 # Zeitleiste
@@ -16,13 +17,13 @@ Der eigenständige Reiter **Zeitleiste** wurde eingestellt. Der Mitgliederbereic
 | --- | --- |
 | Gruppenunterhaltungen und Ankündigungen | Der Chat innerhalb jeder [Gruppe](../groups/conversations.md) (**Chat öffnen**) |
 | Kommende Termine für Sie und Ihre Gruppen | Die Seite **Me** (`/mobile/me`) und der Abschnitt **Nächster Termin** jeder Gruppe |
-| Aufgaben und Dienstzuweisungen | Die Seite **Me** und [Pläne](../plans/) |
+| Aufgaben und Dienstzuweisungen | Die Seite **Me** und [Pläne](../plans/index.md) |
 | Neue Predigten | Der Abschnitt **Neueste Predigt** auf der Startseite und das Register [Predigten](../content/sermons.md) |
 | Alles, was Sie benachrichtigt hat | Das **Glockensymbol** in der App-Leiste oder `/mobile/notifications` |
 
 ## Die Me-Seite
 
-[Die Me-Seite](../getting-started/me-page) ist der nächstliegende Ersatz für den früheren Feed. Sie listet auf, was für Sie ansteht – Dienstzuweisungen, Terminanmeldungen und Gruppentermine –, zusammen mit den Formularen, die Sie eingereicht haben, Ihrem Anwesenheitsverlauf und Ihren neuesten Benachrichtigungen. Außerdem führt sie direkt zu Ihrem Profil, den Benachrichtigungseinstellungen, Nachrichten, Spenden und Anmeldungen.
+[Die Me-Seite](../getting-started/me-page.md) ist der nächstliegende Ersatz für den früheren Feed. Sie listet auf, was für Sie ansteht – Dienstzuweisungen, Terminanmeldungen und Gruppentermine –, zusammen mit den Formularen, die Sie eingereicht haben, Ihrem Anwesenheitsverlauf und Ihren neuesten Benachrichtigungen. Außerdem führt sie direkt zu Ihrem Profil, den Benachrichtigungseinstellungen, Nachrichten, Spenden und Anmeldungen.
 
 ## Benachrichtigungen
 

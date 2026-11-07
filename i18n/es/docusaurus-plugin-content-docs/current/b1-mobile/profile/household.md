@@ -1,5 +1,6 @@
 ---
 title: "Hogar"
+description: "Vea quién está en su hogar y cómo se relacionan los miembros en la pestaña Perfil de B1 Mobile, de la que dependen el registro de asistencia y otras funciones."
 ---
 
 # Hogar
@@ -13,7 +14,7 @@ La pestaña **Hogar** en tu pantalla de Perfil muestra a tus miembros familiares
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 
 </div>
 
@@ -33,7 +34,7 @@ La información de tu hogar es utilizada por varias funciones en B1 Mobile y en 
 
 - **Registro de asistencia** -- Cuando [registras tu asistencia](../checkin/self-checkin.md) para un servicio o evento, puedes registrar a todo tu hogar a la vez en lugar de registrar a cada persona individualmente.
 - **Registros de la iglesia** -- Tu iglesia utiliza los datos del hogar para mantener los registros familiares organizados y comunicarse con tu familia como unidad.
-- **Directorio** -- Otros miembros pueden ver la información de tu hogar en el [directorio de la iglesia](../community/member-directory.md), dependiendo de tu [configuración de privacidad](./privacy-settings).
+- **Directorio** -- Otros miembros pueden ver la información de tu hogar en el [directorio de la iglesia](../community/member-directory.md), dependiendo de tu [configuración de privacidad](./privacy-settings.md).
 
 ## Ver tu Hogar
 
@@ -47,10 +48,10 @@ La membresía del hogar es típicamente administrada por el administrador de tu 
 
 ## Mantener la Información Actualizada
 
-Si los datos de un miembro de la familia necesitan actualizarse, ellos pueden [editar su propio perfil](./editing-profile), o puedes comunicarte con el administrador de tu iglesia para hacer los cambios. Mantener la información del hogar precisa asegura que funciones como el [registro de asistencia](../checkin/) funcionen correctamente para toda tu familia.
+Si los datos de un miembro de la familia necesitan actualizarse, ellos pueden [editar su propio perfil](./editing-profile.md), o puedes comunicarte con el administrador de tu iglesia para hacer los cambios. Mantener la información del hogar precisa asegura que funciones como el [registro de asistencia](../checkin/index.md) funcionen correctamente para toda tu familia.
 
 ## Artículos Relacionados
 
 - [Registro Personal](../checkin/self-checkin.md) -- Registra la asistencia de los miembros de tu hogar para los servicios
-- [Editar tu Perfil](./editing-profile) -- Actualiza tu propia información personal
-- [Configuración de Privacidad](./privacy-settings) -- Controla lo que otros pueden ver sobre tu hogar
+- [Editar tu Perfil](./editing-profile.md) -- Actualiza tu propia información personal
+- [Configuración de Privacidad](./privacy-settings.md) -- Controla lo que otros pueden ver sobre tu hogar

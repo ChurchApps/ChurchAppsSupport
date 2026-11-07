@@ -1,5 +1,6 @@
 ---
 title: "Donatisamenvattingrapport"
+description: "Draai het Donatieoverzicht in B1 Admin om totale giften, het aantal unieke donateurs en bedragen per fonds te zien voor elke gewenste periode."
 ---
 
 # Donatisamenvattingrapport

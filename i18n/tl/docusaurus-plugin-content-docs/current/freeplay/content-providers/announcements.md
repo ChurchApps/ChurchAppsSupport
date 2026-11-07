@@ -1,5 +1,6 @@
 ---
 title: "Mga Anunsyo"
+description: "I-loop ang folder ng slides sa FreePlay TV para sa lobby o pre-class na anunsyo: pumili ng provider folder, panatilihing naka-sync, at patayin pagkatapos."
 ---
 
 # Mga Anunsyo
@@ -13,7 +14,7 @@ Maaaring i-loop ng FreePlay ang isang folder ng slide ng anunsyo sa TV mo -- hal
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Kumonekta sa content provider](./connecting-providers) na naglalaman ng mga slide ng anunsyo mo, gaya ng Dropbox o OneDrive
+- [Kumonekta sa content provider](./connecting-providers.md) na naglalaman ng mga slide ng anunsyo mo, gaya ng Dropbox o OneDrive
 - Ilagay ang mga larawan o video na gusto mong i-loop sa iisang folder sa provider na iyon
 
 </div>
@@ -37,7 +38,7 @@ Kapag na-download na ang mga slide, lumilitaw ang item na **Announcements** mala
 - Pagkatapos ng huling slide, magsisimula muli ang loop sa una
 - Kung iisang video lang ang folder, paulit-ulit itong mag-p-play sa parehong lugar
 
-Nagpe-play ang loop mula sa mga file na naka-save sa device, kaya tuloy-tuloy itong tumatakbo kahit walang internet connection. Maaari mong gamitin ang parehong remote control gaya ng ibang content -- tingnan ang [Playing Content](./playing-content).
+Nagpe-play ang loop mula sa mga file na naka-save sa device, kaya tuloy-tuloy itong tumatakbo kahit walang internet connection. Maaari mong gamitin ang parehong remote control gaya ng ibang content -- tingnan ang [Playing Content](./playing-content.md).
 
 ## Pag-update ng mga Slide
 
@@ -61,6 +62,6 @@ Ang pag-disconnect sa provider ay nag-o-off din ng mga anunsyong galing dito.
 
 ## Mga Kaugnay na Artikulo
 
-- **[Connecting to Providers](./connecting-providers)** - Kumonekta sa provider na naglalaman ng mga slide mo
-- **[Browsing and Downloading Content](./browsing-content)** - Mag-browse ng mga folder ng provider at mag-play ng content kapag hiniling
-- **[Playing Content](./playing-content)** - Mga kontrol ng player gamit ang TV remote mo
+- **[Connecting to Providers](./connecting-providers.md)** - Kumonekta sa provider na naglalaman ng mga slide mo
+- **[Browsing and Downloading Content](./browsing-content.md)** - Mag-browse ng mga folder ng provider at mag-play ng content kapag hiniling
+- **[Playing Content](./playing-content.md)** - Mga kontrol ng player gamit ang TV remote mo

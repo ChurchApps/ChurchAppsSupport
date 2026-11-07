@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Start kirchens nettsted"
+description: "Sett opp en menighetsnettside i B1 Admin: bygg startsiden, tilpass farger og logo, legg til sentrale sider, koble til eget domene og legg til givingskjemaer."
 ---
 
 # Start kirchens nettsted

@@ -1,5 +1,6 @@
 ---
 title: "Configurarea API-ului local"
+description: "Configurați local API-ul ChurchApps: clonați depozitul, configurați șase baze de date MySQL pentru module, inițializați schema și porniți serverul de dezvoltare cu reîncărcare la cald."
 ---
 
 # Configurarea API-ului local
@@ -13,9 +14,9 @@ Acest ghid te ghidează prin configurarea API-ului ChurchApps pentru dezvoltare 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalează **Node.js 24+**, **Git** și **MySQL 8.0+** — vezi [Cerințe preliminare](../setup/prerequisites)
+- Instalează **Node.js 24+**, **Git** și **MySQL 8.0+** — vezi [Cerințe preliminare](../setup/prerequisites.md)
 - Creează un utilizator MySQL cu privilegii de creare a bazelor de date
-- Consultă documentația [Variabile de mediu](../setup/environment-variables) pentru configurarea API-ului
+- Consultă documentația [Variabile de mediu](../setup/environment-variables.md) pentru configurarea API-ului
 
 </div>
 
@@ -82,7 +83,7 @@ API-ul pornește cu reîncărcare automată la modificări la adresa [http://loc
 
 ## Implementare
 
-Mediul de staging a fost retras. API-ul se implementează în mediul demo la fiecare push în `main` și în producție prin fluxul de lucru manual **Deploy Prod**, care aplică și migrările de bază de date în așteptare. Vezi [Implementarea API-ului](../deployment/apis) pentru detalii.
+Mediul de staging a fost retras. API-ul se implementează în mediul demo la fiecare push în `main` și în producție prin fluxul de lucru manual **Deploy Prod**, care aplică și migrările de bază de date în așteptare. Vezi [Implementarea API-ului](../deployment/apis.md) pentru detalii.
 
 ## Dezvoltare locală a bibliotecilor
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Acest lucru îți permite să testezi modificările bibliotecii cu API-ul fără a le publica pe npm. Vezi [Biblioteci partajate](../shared-libraries/#local-development-against-a-consuming-app) pentru detalii — și nu include niciodată în commit rezoluția de portal pe care o scrie comanda link în `package.json`.
+Acest lucru îți permite să testezi modificările bibliotecii cu API-ul fără a le publica pe npm. Vezi [Biblioteci partajate](../shared-libraries/index.md#local-development-against-a-consuming-app) pentru detalii — și nu include niciodată în commit rezoluția de portal pe care o scrie comanda link în `package.json`.
 
 ## Articole conexe
 
-- **[Baza de date](./database)** — Înțelegerea arhitecturii cu o bază de date per modul
-- **[Structura modulelor](./module-structure)** — Cum sunt organizate controlerele, clasele de acces la date (repository) și modelele
-- **[Biblioteci partajate](../shared-libraries/)** — Lucrul cu `@churchapps/helpers` și `@churchapps/apihelper`
+- **[Baza de date](./database.md)** — Înțelegerea arhitecturii cu o bază de date per modul
+- **[Structura modulelor](./module-structure.md)** — Cum sunt organizate controlerele, clasele de acces la date (repository) și modelele
+- **[Biblioteci partajate](../shared-libraries/index.md)** — Lucrul cu `@churchapps/helpers` și `@churchapps/apihelper`

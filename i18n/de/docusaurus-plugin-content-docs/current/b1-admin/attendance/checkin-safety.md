@@ -1,5 +1,6 @@
 ---
 title: "Anmeldungssicherheit"
+description: "Konfigurieren Sie Kindersicherheit in B1 Admin: Raumkapazität, Betreuungsschlüssel, Listen vertrauenswürdiger Abholpersonen und Eltern-Benachrichtigungen per SMS."
 ---
 
 # Anmeldungssicherheit
@@ -15,7 +16,7 @@ B1 enthält eine Reihe von Kindsicherheitsmaßnahmen für die Anmeldung: Raumkap
 
 - Richten Sie Ihre [Anwesenheitsstruktur](setup.md) und [Anmeldekioske](check-in.md) ein
 - Räume sind [Gruppen](../groups/creating-groups.md), die mit Gottesdienstzeiten verknüpft sind – die Sicherheitseinstellungen unten befinden sich in der Gruppe
-- Page-a-Parent und Notfall-Broadcast erfordern einen verbundenen SMS-Anbieter ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) oder Mutual Ministry)
+- Page-a-Parent und Notfall-Broadcast erfordern einen verbundenen SMS-Anbieter ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) oder Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Beide Funktionen senden Textnachrichten über den verbundenen SMS-Anbieter Ihrer
 
 Personen, die sich von Texten abgemeldet haben, oder die keine Mobilnummer gespeichert haben, werden automatisch übersprungen – der Kiosk meldet, wie viele Nachrichten gesendet wurden und wie viele übersprungen wurden.
 
-Siehe die Kiosk-seitige Anleitung unter [Auschecken & Kindsicherheit](../../b1-checkin/check-in/checking-out).
+Siehe die Kiosk-seitige Anleitung unter [Auschecken & Kindsicherheit](../../b1-checkin/check-in/checking-out.md).
 
 ## Verwandte Artikel
 
 - [Anmeldung](check-in.md) – Kiosk-Setup und Hardware
-- [Auschecken & Kindsicherheit](../../b1-checkin/check-in/checking-out) – der Kiosk-Auschecken, Abholüberprüfung und Anrufen-Abläufe
+- [Auschecken & Kindsicherheit](../../b1-checkin/check-in/checking-out.md) – der Kiosk-Auschecken, Abholüberprüfung und Anrufen-Abläufe
 - [Gruppen erstellen](../groups/creating-groups.md) – wo Raumeinstellungen gespeichert sind
 - [Anwesenheitseinrichtung](setup.md) – Gottesdienste, Gottesdienstzeiten und Raumzuweisungen
 - [Mindestalter für private Nachrichten](../settings/mobile-app.md#member-directory--messaging-settings) – blockiert neue private Nachrichtenkonversationen mit Kindern, während sie weiterhin im Verzeichnis angezeigt werden

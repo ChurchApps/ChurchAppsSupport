@@ -1,5 +1,6 @@
 ---
 title: "sange"
+description: "Administrér dit sangbibliotek i B1 Admin: søg og tilføj sange, redigér detaljer, vedhæft ChordPro-tekster og arrangementer, og upload øvelsesaudio."
 ---
 
 # sange

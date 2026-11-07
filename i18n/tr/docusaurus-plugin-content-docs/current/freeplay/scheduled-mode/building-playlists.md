@@ -1,5 +1,6 @@
 ---
 title: "Sağlayıcıları Bağlama ve Oynatma Listeleri Oluşturma"
+description: "FreePlay Admin'de bağlı içerik sağlayıcılarını kurun, ardından zamanlanmış TV ekranları için oynatma listeleri oluşturun, düzenleyin ve önizleyin."
 ---
 
 # Sağlayıcıları Bağlama ve Oynatma Listeleri Oluşturma
@@ -107,6 +108,6 @@ Oynatma listesini tarayıcınızda tam ekran oynatmak için **Sun** düğmesine 
 
 ## İlgili Makaleler
 
-- **[Takvimi Zamanlama](./scheduling-the-calendar)** - Oynatma listenizi bir ekran grubunun takvimine ekleyin
-- **[Ekranları ve Grupları Yönetme](./managing-screens)** - Bir oynatma listesini grubun varsayılan döngüsü olarak ayarlayın
-- **[İçerik Sağlayıcıları](../content-providers/)** - TV'nin kendisinde bağlayabileceğiniz sağlayıcılar
+- **[Takvimi Zamanlama](./scheduling-the-calendar.md)** - Oynatma listenizi bir ekran grubunun takvimine ekleyin
+- **[Ekranları ve Grupları Yönetme](./managing-screens.md)** - Bir oynatma listesini grubun varsayılan döngüsü olarak ayarlayın
+- **[İçerik Sağlayıcıları](../content-providers/index.md)** - TV'nin kendisinde bağlayabileceğiniz sağlayıcılar

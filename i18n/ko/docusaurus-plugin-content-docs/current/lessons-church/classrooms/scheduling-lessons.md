@@ -1,5 +1,7 @@
 ---
-title: "수업 일정 잡기"
+title: "포털에서 교실 수업 일정 잡기"
+sidebar_label: "수업 일정 잡기"
+description: "B1 Admin 포털에서 날짜마다 프로그램, 연구, 레슨, 연령별 장소를 선택하여 Lessons.church 레슨을 교실 캘린더에 예약합니다."
 ---
 # 수업 일정 잡기
 <div class="article-intro">

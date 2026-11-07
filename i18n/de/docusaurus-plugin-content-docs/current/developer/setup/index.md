@@ -1,5 +1,6 @@
 ---
 title: "Einrichtung"
+description: "Lokalen Entwicklungsweg wählen: Frontend gegen die gemeinsamen Demo-APIs oder den vollständigen Stack lokal mit MySQL für Backend-Änderungen."
 ---
 
 # Einrichtung
@@ -40,15 +41,15 @@ Mit diesem Weg können Sie innerhalb weniger Minuten mit Frontend-Änderungen be
 
 ### 2. Alles lokal ausführen
 
-Wenn Sie API-Code ändern oder offline arbeiten müssen, können Sie den gesamten Stack lokal ausführen. Dafür benötigen Sie MySQL 8.0 oder neuer und zusätzliche Konfiguration. Ausführliche Anleitungen finden Sie im Leitfaden zur [lokalen API-Einrichtung](../api/local-setup).
+Wenn Sie API-Code ändern oder offline arbeiten müssen, können Sie den gesamten Stack lokal ausführen. Dafür benötigen Sie MySQL 8.0 oder neuer und zusätzliche Konfiguration. Ausführliche Anleitungen finden Sie im Leitfaden zur [lokalen API-Einrichtung](../api/local-setup.md).
 
 ## Erste Schritte
 
 Folgen Sie diesen Seiten in dieser Reihenfolge:
 
-1. **[Voraussetzungen](prerequisites)** – Installieren Sie die benötigten Werkzeuge (Node.js, Git, MySQL usw.)
-2. **[Projektübersicht](project-overview)** – Verstehen Sie, welche Projekte es gibt und was sie tun
-3. **[Umgebungsvariablen](environment-variables)** – Konfigurieren Sie Ihre `.env`-Dateien, um alles miteinander zu verbinden
+1. **[Voraussetzungen](./prerequisites.md)** – Installieren Sie die benötigten Werkzeuge (Node.js, Git, MySQL usw.)
+2. **[Projektübersicht](./project-overview.md)** – Verstehen Sie, welche Projekte es gibt und was sie tun
+3. **[Umgebungsvariablen](./environment-variables.md)** – Konfigurieren Sie Ihre `.env`-Dateien, um alles miteinander zu verbinden
 
 :::info
 Jedes ChurchApps-Projekt ist ein eigenständiges Git-Repository. Sie müssen nur die Projekte klonen, an denen Sie arbeiten möchten.

@@ -1,5 +1,6 @@
 ---
 title: "Integraatio- ja laajennuspinta"
+description: "Kartta kaikista tavoista yhdistää ChurchApps B1:een: REST-API, API-avaimet, OAuth, webhookit, MCP ja sisältöpalveluntarjoajat linkkeineen jokaiseen viiteaineistoon."
 ---
 
 # Integraatio- ja laajennuspinta
@@ -14,12 +15,12 @@ Kaikki, mihin kolmannen osapuolen sovellus voi liittyä, kulkee yhden API:n ja y
 
 Sisään- ja ulospääsyjä on kuusi, ja kaikki jakavat saman todennuskerroksen:
 
-- **[REST API](../api/api-keys)** — koko tuotepinta, johon voi kutsua bearer-tokenilla mistä tahansa kielestä.
-- **[API-avaimet](../api/api-keys)** — yksinkertaisin tunnistetieto: `cak_…`-token, joka on sidottu yhteen henkilöön yhdessä seurakunnassa.
-- **[OAuth 2.0 & Yhdistetyt sovellukset](../api/connected-apps)** — seurakunnittainen suostumus monivuokralaissovelluksille. Se myöntää saman JWT:n, jonka käyttäjä saa.
-- **[Webhookit](../api/webhooks)** — allekirjoitetut ja kestävästi toimitetut lähtevät tapahtumat.
-- **[MCP-palvelin](../api/mcp)** — tekoälylle suunnattu kääre REST API:n päällä polussa `/mcp`.
-- **[Sisältöpalveluntarjoajat](../freeplay-content-provider)** — sisääntulevan sisällön polku ulkoisilta mediakirjastoilta FreePlayhin ja B1-sovelluksiin.
+- **[REST API](../api/api-keys.md)** — koko tuotepinta, johon voi kutsua bearer-tokenilla mistä tahansa kielestä.
+- **[API-avaimet](../api/api-keys.md)** — yksinkertaisin tunnistetieto: `cak_…`-token, joka on sidottu yhteen henkilöön yhdessä seurakunnassa.
+- **[OAuth 2.0 & Yhdistetyt sovellukset](../api/connected-apps.md)** — seurakunnittainen suostumus monivuokralaissovelluksille. Se myöntää saman JWT:n, jonka käyttäjä saa.
+- **[Webhookit](../api/webhooks.md)** — allekirjoitetut ja kestävästi toimitetut lähtevät tapahtumat.
+- **[MCP-palvelin](../api/mcp.md)** — tekoälylle suunnattu kääre REST API:n päällä polussa `/mcp`.
+- **[Sisältöpalveluntarjoajat](../freeplay-content-provider.md)** — sisääntulevan sisällön polku ulkoisilta mediakirjastoilta FreePlayhin ja B1-sovelluksiin.
 
 Kaikkea paitsi sisältöpalveluntarjoajia palvelee yksi monoliittinen API ([Api](https://github.com/ChurchApps/Api)-repositorio). Sen moduulit liitetään vakaisiin perusreitteihin: `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` ja `/mcp`.
 
@@ -80,7 +81,7 @@ Kontrollerit rajaavat toimintoja kutsulla `au.checkAccess(contentType, action)` 
 - Laajuus voi vain *poistaa* oikeuksia. Rajattu tunnistetieto ei siis voi kohota palvelin- tai alueylläpitäjän oikeuksiin, sillä ne oikeudet on tarkoituksella jätetty ilman laajuusvastaavuutta.
 - API-avaimissa on `cak_`-etuliite. `CustomAuthProvider.getUser()` tunnistaa etuliitteen, tiivistää salaisuuden ja ratkaisee omistajahenkilön elävän RBAC-tilan joka kutsulla.
 
-Täydellinen laajuuskatalogi on kohdassa [API-avaimet → Scopes](../api/api-keys#scopes).
+Täydellinen laajuuskatalogi on kohdassa [API-avaimet → Scopes](../api/api-keys.md#scopes).
 
 ## Pintaviite
 
@@ -90,7 +91,7 @@ Täydellinen tuotepinta. Mikä tahansa todennettu päätepiste hyväksyy joko JW
 
 ### API-avaimet
 
-`cak_<prefix>.<secret>`-henkilökohtainen käyttöoikeustunnus, joka luodaan kohdassa **B1Admin → Settings → Developer → API Keys**. Tallennetaan vain SHA-256-tiiviste, ja raaka avain näytetään kerran. Hallinta osoitteessa `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Sopii parhaiten yhden seurakunnan omiin skripteihin ja liittimiin, kuten Zapier, Make ja Google Sheets. → **[API-avaimet](../api/api-keys)**
+`cak_<prefix>.<secret>`-henkilökohtainen käyttöoikeustunnus, joka luodaan kohdassa **B1Admin → Settings → Developer → API Keys**. Tallennetaan vain SHA-256-tiiviste, ja raaka avain näytetään kerran. Hallinta osoitteessa `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Sopii parhaiten yhden seurakunnan omiin skripteihin ja liittimiin, kuten Zapier, Make ja Google Sheets. → **[API-avaimet](../api/api-keys.md)**
 
 ### OAuth 2.0 & Yhdistetyt sovellukset
 
@@ -102,19 +103,19 @@ Monivuokralaissovelluksiin, joissa jokaisen seurakunnan on annettava suostumus. 
 
 Julkiset asiakkaat voivat myös rekisteröityä itse kutsulla `POST /oauth/register` (RFC 7591 dynaaminen asiakasrekisteröinti). Ne saavat `client_id`:n ilman salaisuutta, ja niiden uudelleenohjaus-URI:n on oltava `https` tai loopback-osoite.
 
-**Yhdistetty sovellus** on seurakunnan ylläpitäjän näkymä myönnettyyn tokeniin. Sen voi listata ja peruuttaa osoitteessa `/membership/oauth/connections`. Kontrolleri isännöi myös OAuthin **relay-istuntosiltaa** (`/oauth/relay/*`), jonka avulla selaimeton laite voi kirjautua *ulkoisen* palveluntarjoajan kautta. → **[Yhdistetyt sovellukset ja OAuth](../api/connected-apps)**
+**Yhdistetty sovellus** on seurakunnan ylläpitäjän näkymä myönnettyyn tokeniin. Sen voi listata ja peruuttaa osoitteessa `/membership/oauth/connections`. Kontrolleri isännöi myös OAuthin **relay-istuntosiltaa** (`/oauth/relay/*`), jonka avulla selaimeton laite voi kirjautua *ulkoisen* palveluntarjoajan kautta. → **[Yhdistetyt sovellukset ja OAuth](../api/connected-apps.md)**
 
 ### Webhookit
 
-Ainoa lähtevä pinta. Seurakunta tilaa julkisen HTTPS-päätepisteen tapahtumiin. Kun vastaava muutos tapahtuu, `WebhookDispatcher.emit(churchId, event, payload)` rikastaa pelkät tunnukset sisältävät hyötykuormat näyttönimillä (`personName`, `groupName`, `formName`). Haut tehdään vain, kun tilaus täsmää. Järjestelmä kirjaa toimituksen, ja taustatyö lähettää allekirjoitetun JSON-kuoren uudelleenyrityksillä ja viiveellä. Moottori on hakemistossa `Api/src/shared/webhooks/`, ja seurakuntakohtainen CRUD on polun `/membership/webhooks` alla (`WebhookController.ts`). Kenttä `connectorType` muokkaa rungon Slackille ja Discordille sopivaksi. `mailchimp`-liitin menee pidemmälle ja hoitaa koko HTTP-vaihdon itse: menetelmän, URL-osoitteen ja todennuksen tapahtumakohtaisesti Mailchimpin API:a vastaan. Tunnistetiedot on salattu sarakkeeseen `webhooks.connectorConfig`. → **[Webhookit](../api/webhooks)**
+Ainoa lähtevä pinta. Seurakunta tilaa julkisen HTTPS-päätepisteen tapahtumiin. Kun vastaava muutos tapahtuu, `WebhookDispatcher.emit(churchId, event, payload)` rikastaa pelkät tunnukset sisältävät hyötykuormat näyttönimillä (`personName`, `groupName`, `formName`). Haut tehdään vain, kun tilaus täsmää. Järjestelmä kirjaa toimituksen, ja taustatyö lähettää allekirjoitetun JSON-kuoren uudelleenyrityksillä ja viiveellä. Moottori on hakemistossa `Api/src/shared/webhooks/`, ja seurakuntakohtainen CRUD on polun `/membership/webhooks` alla (`WebhookController.ts`). Kenttä `connectorType` muokkaa rungon Slackille ja Discordille sopivaksi. `mailchimp`-liitin menee pidemmälle ja hoitaa koko HTTP-vaihdon itse: menetelmän, URL-osoitteen ja todennuksen tapahtumakohtaisesti Mailchimpin API:a vastaan. Tunnistetiedot on salattu sarakkeeseen `webhooks.connectorConfig`. → **[Webhookit](../api/webhooks.md)**
 
 ### MCP-palvelin
 
-Tekoälylle suunnattu kääre polussa `/mcp` (`Api/src/modules/mcp/`). Kolme yleistä työkalua, `list_endpoints`, `describe_endpoint` ja `api_call`, paljastavat koko REST-pinnan dynaamisesti mille tahansa MCP-asiakkaalle. Todennus on sama bearer-token kuin muualla. Asiakkaille, jotka kirjautuvat OAuthilla (claude.ai:n mukautetut liittimet), `/mcp` palauttaa 401-vastauksen mukana otsakkeen `WWW-Authenticate`, joka osoittaa polkuun `/.well-known/oauth-protected-resource`. Polku `/.well-known/oauth-authorization-server` kertoo `/membership/oauth`-päätepisteet, dynaamisen rekisteröinnin, PKCE:n ja B1Adminin `/oauth`-suostumussivun (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` palaa Express-pinoon prosessin sisällä, joten jokainen oikeus- ja seurakuntarajaussääntö pätee edelleen. → **[MCP-palvelin](../api/mcp)**
+Tekoälylle suunnattu kääre polussa `/mcp` (`Api/src/modules/mcp/`). Kolme yleistä työkalua, `list_endpoints`, `describe_endpoint` ja `api_call`, paljastavat koko REST-pinnan dynaamisesti mille tahansa MCP-asiakkaalle. Todennus on sama bearer-token kuin muualla. Asiakkaille, jotka kirjautuvat OAuthilla (claude.ai:n mukautetut liittimet), `/mcp` palauttaa 401-vastauksen mukana otsakkeen `WWW-Authenticate`, joka osoittaa polkuun `/.well-known/oauth-protected-resource`. Polku `/.well-known/oauth-authorization-server` kertoo `/membership/oauth`-päätepisteet, dynaamisen rekisteröinnin, PKCE:n ja B1Adminin `/oauth`-suostumussivun (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` palaa Express-pinoon prosessin sisällä, joten jokainen oikeus- ja seurakuntarajaussääntö pätee edelleen. → **[MCP-palvelin](../api/mcp.md)**
 
 ### Sisältöpalveluntarjoajat
 
-Sisääntulevan sisällön polku erillisessä paketissa `Packages/content-providers` (`@churchapps/content-providers`), ei API:ssa. Jokainen palveluntarjoaja toteuttaa `IProvider`-rajapinnan (`src/interfaces.ts`): `browse`, `getPlaylist`, `getInstructions` ja todennuskoukut. Se rekisteröityy itse `Map`-rekisteriin (`src/providers/registry.ts`). Tässä **B1 on OAuth-asiakas**. Palveluntarjoaja ilmoittaa `AuthType`-tyypin: `none`, `oauth_pkce`, `device_flow` tai `form_login`. Jaetut apuohjelmat (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) suorittavat asiakaspuolen PKCE- tai laitevirran ulkoista lähdettä vastaan. Yhdeksän palveluntarjoajaa on tällä hetkellä käytössä, mukaan lukien Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church ja B1.church. Ne syöttävät FreePlayta ja B1-sovelluksia. → **[FreePlay-sisältöpalveluntarjoaja](../freeplay-content-provider)**
+Sisääntulevan sisällön polku erillisessä paketissa `Packages/content-providers` (`@churchapps/content-providers`), ei API:ssa. Jokainen palveluntarjoaja toteuttaa `IProvider`-rajapinnan (`src/interfaces.ts`): `browse`, `getPlaylist`, `getInstructions` ja todennuskoukut. Se rekisteröityy itse `Map`-rekisteriin (`src/providers/registry.ts`). Tässä **B1 on OAuth-asiakas**. Palveluntarjoaja ilmoittaa `AuthType`-tyypin: `none`, `oauth_pkce`, `device_flow` tai `form_login`. Jaetut apuohjelmat (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) suorittavat asiakaspuolen PKCE- tai laitevirran ulkoista lähdettä vastaan. Yhdeksän palveluntarjoajaa on tällä hetkellä käytössä, mukaan lukien Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church ja B1.church. Ne syöttävät FreePlayta ja B1-sovelluksia. → **[FreePlay-sisältöpalveluntarjoaja](../freeplay-content-provider.md)**
 
 **Vuosisuunnitelmat** kulkevat tätä polkua. Opetussuunnitelman julkaisija (jolla on `lessons.edit`) ylläpitää järjestettyjä viikko 1/2/3 -sarjoja Lessons.church-hallinnassa. Ne ovat `LessonsApi`-taulukoissa `yearPlans` ja `yearPlanWeeks`, ja niissä voi olla valinnainen `startMonth` sekä viikkokohtainen `anchor`-arvo `easter` tai `christmas`. `GET /yearPlans/public` LessonsApi:ssa palvelee aktiiviset suunnitelmat anonyymisti ja täydentää kunkin viikon ohjelman, tutkimuksen ja paikan oppituntipuusta. B1Adminin **Serving → Plans → Schedule Lesson → Apply Year Plan** käyttää tätä päätepistettä ja kirjoittaa yhden DoingApi-suunnitelman jokaiselle mukana olevalle viikolle (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Suunnitelmat, joilla on `startMonth`, ratkaisevat ankkuroidut viikot valitun vuoden mukaan (pääsiäinen Gregoriuksen laskentatavalla, joulu sunnuntaina joulukuun 25. päivää edeltävältä ajalta tai sitä ennen) ja täyttävät niiden väliset jaksot. Suunnitelmat ilman `startMonth`-arvoa kuvaavat edelleen viikon N päivämääräksi `startDate + (N−1)×7` päivää. Ulkoisten OLF-palveluntarjoajien viikot tai viikot, joiden polku on vajaa, ohitetaan sovellettaessa. Seurakunnat muokkaavat syntyneitä suunnitelmia kuten mitä tahansa muuta, ja FreePlay toistaa sen, mikä suunnitelmassa on.
 
@@ -122,12 +123,12 @@ Sisääntulevan sisällön polku erillisessä paketissa `Packages/content-provid
 
 | Pinta | Todennusmekanismi | Suunta | Toteutuspaikka | Viite |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT tai `cak_…`-avain | Sisääntulo | `Api/src/modules/*` | [API-avaimet](../api/api-keys) |
-| API-avaimet | SHA-256-tiivistetty `cak_`-token | Tunnistetieto | `Api/.../membership/controllers/ApiKeyController.ts` | [API-avaimet](../api/api-keys) |
-| OAuth 2.0 / Yhdistetyt sovellukset | Auth code (PKCE) · device · refresh → JWT; dynaaminen asiakasrekisteröinti | Sisääntulo | `Api/.../membership/controllers/OAuthController.ts` | [Yhdistetyt sovellukset](../api/connected-apps) |
-| Webhookit | Hookkohtainen salaisuus, HMAC-SHA256-allekirjoitus | Ulosmeno | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhookit](../api/webhooks) |
-| MCP-palvelin | `Bearer` JWT, OAuth JWT (löydetään polun `/.well-known` kautta) tai `cak_…`-avain | Sisääntulo (tekoäly) | `Api/src/modules/mcp/` | [MCP-palvelin](../api/mcp) |
-| Sisältöpalveluntarjoajat | Palveluntarjoajakohtainen: ei mitään / OAuth PKCE / laite / lomake | Sisääntuleva sisältö | `Packages/content-providers/` | [Sisältöpalveluntarjoaja](../freeplay-content-provider) |
+| REST API | `Bearer` JWT tai `cak_…`-avain | Sisääntulo | `Api/src/modules/*` | [API-avaimet](../api/api-keys.md) |
+| API-avaimet | SHA-256-tiivistetty `cak_`-token | Tunnistetieto | `Api/.../membership/controllers/ApiKeyController.ts` | [API-avaimet](../api/api-keys.md) |
+| OAuth 2.0 / Yhdistetyt sovellukset | Auth code (PKCE) · device · refresh → JWT; dynaaminen asiakasrekisteröinti | Sisääntulo | `Api/.../membership/controllers/OAuthController.ts` | [Yhdistetyt sovellukset](../api/connected-apps.md) |
+| Webhookit | Hookkohtainen salaisuus, HMAC-SHA256-allekirjoitus | Ulosmeno | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhookit](../api/webhooks.md) |
+| MCP-palvelin | `Bearer` JWT, OAuth JWT (löydetään polun `/.well-known` kautta) tai `cak_…`-avain | Sisääntulo (tekoäly) | `Api/src/modules/mcp/` | [MCP-palvelin](../api/mcp.md) |
+| Sisältöpalveluntarjoajat | Palveluntarjoajakohtainen: ei mitään / OAuth PKCE / laite / lomake | Sisääntuleva sisältö | `Packages/content-providers/` | [Sisältöpalveluntarjoaja](../freeplay-content-provider.md) |
 
 ## Valmiit liittimet
 
@@ -143,9 +144,9 @@ Omaa koodia varten **[`@churchapps/integration-sdk`](https://www.npmjs.com/packa
 
 ## Liittyvät sivut
 
-- [API-avaimet](../api/api-keys): yksinkertaisin tunnistetieto ja laajuuskatalogi
-- [Yhdistetyt sovellukset ja OAuth](../api/connected-apps): monivuokralaisten suostumusvirrat
-- [Webhookit](../api/webhooks): lähtevä tapahtumajärjestelmä
-- [MCP-palvelin](../api/mcp): tekoälyintegraation kääre
-- [FreePlay-sisältöpalveluntarjoaja](../freeplay-content-provider): sisääntulevan sisällön lähteeksi ryhtyminen
+- [API-avaimet](../api/api-keys.md): yksinkertaisin tunnistetieto ja laajuuskatalogi
+- [Yhdistetyt sovellukset ja OAuth](../api/connected-apps.md): monivuokralaisten suostumusvirrat
+- [Webhookit](../api/webhooks.md): lähtevä tapahtumajärjestelmä
+- [MCP-palvelin](../api/mcp.md): tekoälyintegraation kääre
+- [FreePlay-sisältöpalveluntarjoaja](../freeplay-content-provider.md): sisääntulevan sisällön lähteeksi ryhtyminen
 - [Integraatiot (loppukäyttäjä)](/docs/b1-admin/integrations/): valmiiden liittimien asennusoppaat

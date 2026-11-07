@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Giving"
+description: "Referensi endpoint Giving API ChurchApps: donasi, batch, gateway, langganan, dan metode pembayaran, dengan aturan autentikasi dan izin untuk integrasi B1 Admin."
 ---
 
 # Endpoint Giving
@@ -284,6 +285,6 @@ Memperluas `GenericCrudController` dengan rute CRUD: `getById`, `getAll`, `post`
 
 ## Halaman Terkait
 
-- [Endpoint Keanggotaan](./membership): Orang, gereja, grup, peran, dan permission
-- [Autentikasi & Permission](./authentication): Alur login, JWT, OAuth, model permission
-- [Struktur Modul](../module-structure): Pola organisasi kode
+- [Endpoint Keanggotaan](./membership.md): Orang, gereja, grup, peran, dan permission
+- [Autentikasi & Permission](./authentication.md): Alur login, JWT, OAuth, model permission
+- [Struktur Modul](../module-structure.md): Pola organisasi kode

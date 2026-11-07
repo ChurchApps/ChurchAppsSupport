@@ -1,5 +1,6 @@
 ---
 title: "Suunnitelmat"
+description: "Selvitä, mihin palvelusuunnitelmiin sinut on määrätty B1.churchissa, tarkista tehtäväsi ja päivämäärät sekä hyväksy tai hylkää tehtävät jäsenportaalistasi."
 ---
 
 # Suunnitelmat

@@ -1,5 +1,6 @@
 ---
 title: "Ön Koşullar"
+description: "B1 Admin, Lessons.church, FreePlay veya API gibi ChurchApps projelerinde çalışmadan önce Node.js, npm, Git ve platform araç zincirlerini kurun."
 ---
 
 # Ön Koşullar
@@ -13,7 +14,7 @@ Ihtiyacınız olan araçlar hangi projeler üzerinde çalışmayı planladığı
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Hangi projeler üzerinde çalışmak istediğinizi belirlemek için [Proje Genel Bakışı](./project-overview) sayfasını inceleyin
+- Hangi projeler üzerinde çalışmak istediğinizi belirlemek için [Proje Genel Bakışı](./project-overview.md) sayfasını inceleyin
 - Yazılım kurulumu için geliştirme makinenizde yönetici erişiminiz olduğundan emin olun
 
 </div>
@@ -40,7 +41,7 @@ API'yi yerel olarak çalıştırmayı planlıyorsanız (demo API'lerine yönlend
 |------|-------|--------|
 | **MySQL** | 8.0+ | Her API modülü kendi veritabanını kullanır |
 
-Temel API için altı veritabanına ihtiyacınız olacak: `membership`, `attendance`, `content`, `giving`, `messaging` ve `doing`. API, şemayı başlatmak için betikler içerir -- bkz. [API yerel kurulum](../api/local-setup) kılavuzu.
+Temel API için altı veritabanına ihtiyacınız olacak: `membership`, `attendance`, `content`, `giving`, `messaging` ve `doing`. API, şemayı başlatmak için betikler içerir -- bkz. [API yerel kurulum](../api/local-setup.md) kılavuzu.
 
 ## Mobil Uygulama Geliştirme
 
@@ -110,5 +111,5 @@ mysql --version   # Yalnızca yerel API geliştirmesi için gereklidir
 
 ## Sonraki Adımlar
 
-- **[Proje Genel Bakışı](./project-overview)** -- Tüm projeleri ve ne işe yaradıklarını görün
-- **[Ortam Değişkenleri](./environment-variables)** -- `.env` dosyalarınızı yapılandırın
+- **[Proje Genel Bakışı](./project-overview.md)** -- Tüm projeleri ve ne işe yaradıklarını görün
+- **[Ortam Değişkenleri](./environment-variables.md)** -- `.env` dosyalarınızı yapılandırın

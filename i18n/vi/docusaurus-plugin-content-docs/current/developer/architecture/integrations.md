@@ -1,5 +1,6 @@
 ---
 title: "Bề mặt tích hợp & mở rộng"
+description: "Bản đồ mọi cách kết nối với B1 của ChurchApps: REST API, khóa API, OAuth, webhook, MCP và nhà cung cấp nội dung, kèm liên kết tới từng tài liệu."
 ---
 
 # Bề mặt tích hợp & mở rộng
@@ -14,12 +15,12 @@ Mọi thứ mà bên thứ ba có thể kết nối đều đi qua một API và
 
 Có sáu cách để đi vào hoặc đi ra, và tất cả đều dùng chung một lớp xác thực:
 
-- **[REST API](../api/api-keys)** — toàn bộ bề mặt sản phẩm, có thể gọi bằng bearer token từ bất kỳ ngôn ngữ nào.
-- **[API keys](../api/api-keys)** — thông tin xác thực đơn giản nhất: một token `cak_…` gắn với một người trong một nhà thờ.
-- **[OAuth 2.0 & Connected Apps](../api/connected-apps)** — sự đồng ý theo từng nhà thờ cho các ứng dụng đa thuê; cấp cùng loại JWT mà người dùng nhận được.
-- **[Webhooks](../api/webhooks)** — sự kiện đi ra có chữ ký, được gửi bền vững.
-- **[MCP server](../api/mcp)** — lớp bọc hướng AI trên REST API tại `/mcp`.
-- **[Content providers](../freeplay-content-provider)** — đường nội dung đi vào để đưa thư viện media bên ngoài vào FreePlay và các ứng dụng B1.
+- **[REST API](../api/api-keys.md)** — toàn bộ bề mặt sản phẩm, có thể gọi bằng bearer token từ bất kỳ ngôn ngữ nào.
+- **[API keys](../api/api-keys.md)** — thông tin xác thực đơn giản nhất: một token `cak_…` gắn với một người trong một nhà thờ.
+- **[OAuth 2.0 & Connected Apps](../api/connected-apps.md)** — sự đồng ý theo từng nhà thờ cho các ứng dụng đa thuê; cấp cùng loại JWT mà người dùng nhận được.
+- **[Webhooks](../api/webhooks.md)** — sự kiện đi ra có chữ ký, được gửi bền vững.
+- **[MCP server](../api/mcp.md)** — lớp bọc hướng AI trên REST API tại `/mcp`.
+- **[Content providers](../freeplay-content-provider.md)** — đường nội dung đi vào để đưa thư viện media bên ngoài vào FreePlay và các ứng dụng B1.
 
 Mọi thứ ngoại trừ content providers đều được phục vụ bởi một API nguyên khối duy nhất (repository [Api](https://github.com/ChurchApps/Api)), trong đó các module được gắn dưới các base path ổn định — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` và `/mcp`.
 
@@ -80,7 +81,7 @@ Controller chặn hành động bằng `au.checkAccess(contentType, action)`, đ
 - Một scope chỉ có thể *loại bỏ* quyền, nên thông tin xác thực có phạm vi không bao giờ có thể nâng lên quyền quản trị máy chủ hoặc miền (những quyền này được cố ý không ánh xạ tới scope nào).
 - API key mang tiền tố `cak_`; `CustomAuthProvider.getUser()` phân nhánh theo tiền tố đó, băm secret, và phân giải lại RBAC trực tiếp của người sở hữu ở mỗi lần gọi.
 
-Xem [API Keys → Scopes](../api/api-keys#scopes) để có danh mục đầy đủ.
+Xem [API Keys → Scopes](../api/api-keys.md#scopes) để có danh mục đầy đủ.
 
 ## Tài liệu tham khảo các bề mặt
 
@@ -90,7 +91,7 @@ Bề mặt sản phẩm đầy đủ. Mọi endpoint đã xác thực đều ch�
 
 ### API keys
 
-Một personal access token dạng `cak_<prefix>.<secret>`, được tạo trong **B1Admin → Settings → Developer → API Keys**. Chỉ lưu hash SHA-256; khóa gốc chỉ hiển thị một lần. Được quản lý tại `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Phù hợp nhất cho script riêng của một nhà thờ và các connector như Zapier, Make và Google Sheets. → **[API Keys](../api/api-keys)**
+Một personal access token dạng `cak_<prefix>.<secret>`, được tạo trong **B1Admin → Settings → Developer → API Keys**. Chỉ lưu hash SHA-256; khóa gốc chỉ hiển thị một lần. Được quản lý tại `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Phù hợp nhất cho script riêng của một nhà thờ và các connector như Zapier, Make và Google Sheets. → **[API Keys](../api/api-keys.md)**
 
 ### OAuth 2.0 & Connected Apps
 
@@ -102,19 +103,19 @@ Dành cho các ứng dụng đa thuê cần sự đồng ý của từng nhà th
 
 Client công khai cũng có thể tự đăng ký qua `POST /oauth/register` (đăng ký client động theo RFC 7591); họ nhận được `client_id` và không có secret, và redirect URI của họ phải là `https` hoặc loopback.
 
-**Connected App** là góc nhìn của quản trị viên nhà thờ đối với token đã được cấp, được liệt kê và có thể thu hồi tại `/membership/oauth/connections`. Controller cũng lưu trữ một cầu nối OAuth **relay-session** (`/oauth/relay/*`), cho phép thiết bị không có trình duyệt hoàn tất đăng nhập với một nhà cung cấp *bên ngoài*. → **[Connected Apps & OAuth](../api/connected-apps)**
+**Connected App** là góc nhìn của quản trị viên nhà thờ đối với token đã được cấp, được liệt kê và có thể thu hồi tại `/membership/oauth/connections`. Controller cũng lưu trữ một cầu nối OAuth **relay-session** (`/oauth/relay/*`), cho phép thiết bị không có trình duyệt hoàn tất đăng nhập với một nhà cung cấp *bên ngoài*. → **[Connected Apps & OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-Bề mặt đi ra duy nhất. Một nhà thờ đăng ký một endpoint HTTPS công khai cho các sự kiện; khi có thay đổi khớp, `WebhookDispatcher.emit(churchId, event, payload)` bổ sung tên hiển thị (`personName`, `groupName`, `formName` — các tra cứu chỉ chạy khi có đăng ký khớp) vào payload chỉ có id, ghi nhận một lần gửi, và một worker nền POST một envelope JSON đã ký, có retry/backoff và gửi lại. Engine nằm tại `Api/src/shared/webhooks/`, CRUD theo nhà thờ nằm dưới `/membership/webhooks` (`WebhookController.ts`). Trường `connectorType` định hình lại body cho Slack và Discord; connector `mailchimp` đi xa hơn và tự quản lý toàn bộ trao đổi HTTP (method, URL và xác thực theo từng sự kiện với API của Mailchimp; thông tin xác thực được mã hóa trong `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+Bề mặt đi ra duy nhất. Một nhà thờ đăng ký một endpoint HTTPS công khai cho các sự kiện; khi có thay đổi khớp, `WebhookDispatcher.emit(churchId, event, payload)` bổ sung tên hiển thị (`personName`, `groupName`, `formName` — các tra cứu chỉ chạy khi có đăng ký khớp) vào payload chỉ có id, ghi nhận một lần gửi, và một worker nền POST một envelope JSON đã ký, có retry/backoff và gửi lại. Engine nằm tại `Api/src/shared/webhooks/`, CRUD theo nhà thờ nằm dưới `/membership/webhooks` (`WebhookController.ts`). Trường `connectorType` định hình lại body cho Slack và Discord; connector `mailchimp` đi xa hơn và tự quản lý toàn bộ trao đổi HTTP (method, URL và xác thực theo từng sự kiện với API của Mailchimp; thông tin xác thực được mã hóa trong `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### MCP server
 
-Một lớp bọc hướng AI tại `/mcp` (`Api/src/modules/mcp/`). Ba công cụ chung — `list_endpoints`, `describe_endpoint` và `api_call` — cung cấp toàn bộ bề mặt REST một cách động cho bất kỳ client MCP nào. Xác thực dùng cùng bearer token như mọi thứ khác. Với các client đăng nhập bằng OAuth (custom connector của claude.ai), phản hồi 401 từ `/mcp` mang header `WWW-Authenticate` trỏ đến `/.well-known/oauth-protected-resource`, và `/.well-known/oauth-authorization-server` quảng bá các endpoint `/membership/oauth`, đăng ký động, PKCE, cùng trang đồng ý `/oauth` của B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` đi lại vào stack Express trong cùng tiến trình, nên mọi quy tắc phân quyền và phạm vi nhà thờ vẫn được áp dụng. → **[MCP Server](../api/mcp)**
+Một lớp bọc hướng AI tại `/mcp` (`Api/src/modules/mcp/`). Ba công cụ chung — `list_endpoints`, `describe_endpoint` và `api_call` — cung cấp toàn bộ bề mặt REST một cách động cho bất kỳ client MCP nào. Xác thực dùng cùng bearer token như mọi thứ khác. Với các client đăng nhập bằng OAuth (custom connector của claude.ai), phản hồi 401 từ `/mcp` mang header `WWW-Authenticate` trỏ đến `/.well-known/oauth-protected-resource`, và `/.well-known/oauth-authorization-server` quảng bá các endpoint `/membership/oauth`, đăng ký động, PKCE, cùng trang đồng ý `/oauth` của B1Admin (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` đi lại vào stack Express trong cùng tiến trình, nên mọi quy tắc phân quyền và phạm vi nhà thờ vẫn được áp dụng. → **[MCP Server](../api/mcp.md)**
 
 ### Content providers
 
-Đường nội dung đi vào, nằm trong package riêng `Packages/content-providers` (`@churchapps/content-providers`) thay vì trong API. Mỗi provider triển khai interface `IProvider` (`src/interfaces.ts`) — gồm `browse`, `getPlaylist`, `getInstructions` và các hook xác thực — và tự đăng ký vào registry kiểu `Map` (`src/providers/registry.ts`). Ở đây **B1 là OAuth client**: một provider khai báo `AuthType` là `none`, `oauth_pkce`, `device_flow` hoặc `form_login`, và các helper dùng chung (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) thực hiện luồng PKCE hoặc device phía client với nguồn bên ngoài. Hiện có mười một provider — bao gồm Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church và B1.church — cung cấp nội dung cho FreePlay và các ứng dụng B1. → **[FreePlay Content Provider](../freeplay-content-provider)**
+Đường nội dung đi vào, nằm trong package riêng `Packages/content-providers` (`@churchapps/content-providers`) thay vì trong API. Mỗi provider triển khai interface `IProvider` (`src/interfaces.ts`) — gồm `browse`, `getPlaylist`, `getInstructions` và các hook xác thực — và tự đăng ký vào registry kiểu `Map` (`src/providers/registry.ts`). Ở đây **B1 là OAuth client**: một provider khai báo `AuthType` là `none`, `oauth_pkce`, `device_flow` hoặc `form_login`, và các helper dùng chung (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) thực hiện luồng PKCE hoặc device phía client với nguồn bên ngoài. Hiện có mười một provider — bao gồm Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church và B1.church — cung cấp nội dung cho FreePlay và các ứng dụng B1. → **[FreePlay Content Provider](../freeplay-content-provider.md)**
 
 **Year plans** chạy trên đường này. Một nhà xuất bản giáo trình (có quyền `lessons.edit`) duy trì các chuỗi tuần 1/2/3 có thứ tự trong trang quản trị Lessons.church (các bảng `yearPlans` / `yearPlanWeeks` của `LessonsApi`, với `startMonth` tùy chọn và `anchor` theo từng tuần là `easter` hoặc `christmas`). `GET /yearPlans/public` trên LessonsApi phục vụ các plan đang hoạt động một cách ẩn danh, và điền chương trình, nghiên cứu, địa điểm của mỗi tuần từ cây bài học. **B1Admin → Serving → Plans → Schedule Lesson → Apply Year Plan** dùng endpoint đó và ghi một plan DoingApi cho mỗi tuần được bao gồm (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Các plan có `startMonth` sẽ xác định các tuần neo theo năm đã chọn (Phục Sinh theo thuật toán computus Gregorian, Giáng Sinh là Chủ nhật trước hoặc đúng ngày 25 tháng 12) và điền các chuỗi tuần nằm giữa chúng; các plan không có `startMonth` vẫn ánh xạ tuần N tới `startDate + (N−1)×7` ngày. Các tuần từ provider OLF bên ngoài hoặc có đường dẫn chưa đầy đủ sẽ bị bỏ qua khi áp dụng; nhà thờ chỉnh sửa các plan được tạo ra như bất kỳ plan nào khác, và FreePlay phát bất cứ nội dung nào có trong plan.
 
@@ -122,12 +123,12 @@ Một lớp bọc hướng AI tại `/mcp` (`Api/src/modules/mcp/`). Ba công c�
 
 | Bề mặt | Cơ chế xác thực | Hướng | Nơi triển khai | Tài liệu tham khảo |
 |---|---|---|---|---|
-| REST API | JWT `Bearer` hoặc key `cak_…` | Đi vào | `Api/src/modules/*` | [API Keys](../api/api-keys) |
-| API keys | Token `cak_` đã băm SHA-256 | Thông tin xác thực | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; đăng ký client động | Đi vào | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
-| Webhooks | Secret theo từng hook, chữ ký HMAC-SHA256 | Đi ra | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | JWT `Bearer`, OAuth JWT (khám phá qua `/.well-known`), hoặc key `cak_…` | Đi vào (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
-| Content providers | Theo từng provider: none / OAuth PKCE / device / form | Nội dung đi vào | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
+| REST API | JWT `Bearer` hoặc key `cak_…` | Đi vào | `Api/src/modules/*` | [API Keys](../api/api-keys.md) |
+| API keys | Token `cak_` đã băm SHA-256 | Thông tin xác thực | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys.md) |
+| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; đăng ký client động | Đi vào | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps.md) |
+| Webhooks | Secret theo từng hook, chữ ký HMAC-SHA256 | Đi ra | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP server | JWT `Bearer`, OAuth JWT (khám phá qua `/.well-known`), hoặc key `cak_…` | Đi vào (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp.md) |
+| Content providers | Theo từng provider: none / OAuth PKCE / device / form | Nội dung đi vào | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider.md) |
 
 ## Các connector dựng sẵn
 
@@ -143,9 +144,9 @@ Với mã của riêng bạn, **[`@churchapps/integration-sdk`](https://www.npmj
 
 ## Các trang liên quan
 
-- [API Keys](../api/api-keys) — thông tin xác thực đơn giản nhất và danh mục scope
-- [Connected Apps & OAuth](../api/connected-apps) — các luồng đồng ý đa thuê
-- [Webhooks](../api/webhooks) — hệ thống sự kiện đi ra
-- [MCP Server](../api/mcp) — lớp tích hợp AI
-- [FreePlay Content Provider](../freeplay-content-provider) — trở thành nguồn nội dung đi vào
+- [API Keys](../api/api-keys.md) — thông tin xác thực đơn giản nhất và danh mục scope
+- [Connected Apps & OAuth](../api/connected-apps.md) — các luồng đồng ý đa thuê
+- [Webhooks](../api/webhooks.md) — hệ thống sự kiện đi ra
+- [MCP Server](../api/mcp.md) — lớp tích hợp AI
+- [FreePlay Content Provider](../freeplay-content-provider.md) — trở thành nguồn nội dung đi vào
 - [Integrations (end-user)](/docs/b1-admin/integrations/) — hướng dẫn thiết lập các connector dựng sẵn

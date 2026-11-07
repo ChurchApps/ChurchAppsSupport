@@ -1,5 +1,6 @@
 ---
 title: "FreePlay-indholdsudbyder"
+description: "Hvad en indholdsudbyder skal levere for at forbinde et lektionsbibliotek til FreePlay: logo, login-model, katalog- og playlist-endepunkter samt medieformater."
 ---
 
 # FreePlay-indholdsudbyder

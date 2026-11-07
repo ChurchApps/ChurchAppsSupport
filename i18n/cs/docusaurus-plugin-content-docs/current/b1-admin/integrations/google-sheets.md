@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Připojte B1 Admin ke Google Sheets pomocí doplňku B1 Export a na vyžádání načítejte lidi, dary, skupiny a docházku do listů tabulky."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Export běží na pozadí pod vaším Google účtem. Pokud je klíč API změn�
 - **„B1 rejected the API key (401)“** (B1 odmítl klíč API) – klíč byl odvolán nebo je chybný. Vytvořte nový a vložte ho.
 - **„This API key lacks permission for /giving/donations (403)“** (Tento klíč API nemá oprávnění pro /giving/donations) – klíč nemá `donations:read`. Upravte oprávnění klíče v B1Admin.
 - **List se po spuštění neobnoví** – ujistěte se, že se díváte na *správný* název listu (`B1 People` atd.). Export list vytvoří, pokud ještě neexistoval.
-- **„Quota exceeded“** (Překročen limit) – Apps Script omezuje denní kvóty pro `UrlFetchApp` na uživatele (obvykle tisíce volání denně). Velká církev s mnoha záznamy může potřebovat rozdělit exporty do více dnů, nebo pro synchronizaci s velkým objemem použít [Make](./make) nebo vlastní integraci.
+- **„Quota exceeded“** (Překročen limit) – Apps Script omezuje denní kvóty pro `UrlFetchApp` na uživatele (obvykle tisíce volání denně). Velká církev s mnoha záznamy může potřebovat rozdělit exporty do více dnů, nebo pro synchronizaci s velkým objemem použít [Make](./make.md) nebo vlastní integraci.
 
 ## Úprava doplňku
 
@@ -108,6 +109,6 @@ Doplněk je open source. Projekt Apps Script je v repozitáři `B1Integrations/G
 
 ## Viz také
 
-- [Zapier](./zapier) – pro synchronizaci v reálném čase místo exportu na vyžádání
-- [Make](./make) – pro synchronizaci se složitějšími transformacemi
+- [Zapier](./zapier.md) – pro synchronizaci v reálném čase místo exportu na vyžádání
+- [Make](./make.md) – pro synchronizaci se složitějšími transformacemi
 - [Klíče API (referenční příručka pro vývojáře)](/docs/developer/api/api-keys)

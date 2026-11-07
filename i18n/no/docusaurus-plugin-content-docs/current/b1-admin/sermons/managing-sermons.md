@@ -1,5 +1,6 @@
 ---
 title: "Administrere prekener"
+description: "Administrer prekenbiblioteket i B1 Admin: legg til prekener fra YouTube, Vimeo eller Facebook, rediger detaljer og få en podcast-feed for menigheten."
 ---
 
 # Administrere prekener
@@ -14,7 +15,7 @@ Prekensiden viser hele prekenbiblioteket ditt. Her kan du legge til nye prekener
 <h4>Før du begynner</h4>
 
 - Du trenger tillatelsen **contentApi.streamingServices.edit**. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
-- Opprett minst én [spilleliste](playlists) å organisere prekenene dine i
+- Opprett minst én [spilleliste](./playlists.md) å organisere prekenene dine i
 - Ha video-ID-ene eller URL-ene fra YouTube, Vimeo eller Facebook klare
 
 </div>
@@ -35,7 +36,7 @@ Prekensiden viser hele prekenbiblioteket ditt. Her kan du legge til nye prekener
 6. Gjør eventuelle endringer du ønsker, og klikk på **Lagre**.
 
 :::tip
-Du kan også legge til en permanent direktestrøm-URL ved å velge **Legg til permanent direkte-URL** fra nedtrekksmenyen **Legg til preken**. Da opprettes en fast tilkobling til direktestrømmen på YouTube-kanalen din ved hjelp av kanal-ID-en. Se [Direktesending](live-streaming) for mer informasjon.
+Du kan også legge til en permanent direktestrøm-URL ved å velge **Legg til permanent direkte-URL** fra nedtrekksmenyen **Legg til preken**. Da opprettes en fast tilkobling til direktestrømmen på YouTube-kanalen din ved hjelp av kanal-ID-en. Se [Direktesending](./live-streaming.md) for mer informasjon.
 :::
 
 ## Redigere en preken
@@ -73,11 +74,11 @@ Etter at du har lagt til en preken, kan du planlegge den for sending på direkte
 3. Prekenen spilles av på det planlagte tidspunktet for gudstjenesten.
 
 :::info
-Hvis du vil importere flere prekener på én gang i stedet for å legge dem til én etter én, kan du bruke verktøyet [Masseimport](bulk-import) til å hente videoer direkte fra YouTube- eller Vimeo-kontoen din.
+Hvis du vil importere flere prekener på én gang i stedet for å legge dem til én etter én, kan du bruke verktøyet [Masseimport](./bulk-import.md) til å hente videoer direkte fra YouTube- eller Vimeo-kontoen din.
 :::
 
 ## Neste steg
 
-- [Spillelister](playlists) -- Organiser prekener i serier
-- [Direktesending](live-streaming) -- Sett opp sendeplanen din
-- [Masseimport](bulk-import) -- Importer flere prekener på én gang
+- [Spillelister](./playlists.md) -- Organiser prekener i serier
+- [Direktesending](./live-streaming.md) -- Sett opp sendeplanen din
+- [Masseimport](./bulk-import.md) -- Importer flere prekener på én gang

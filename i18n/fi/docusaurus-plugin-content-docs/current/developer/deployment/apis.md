@@ -1,5 +1,6 @@
 ---
 title: "API-käyttöönotto"
+description: "Ota ChurchApps-API käyttöön AWS Lambdassa Serverlessin avulla: rakennukset, demo- ja tuotantotyönkulut, tietokantamigraatiot ja SSM-asetukset."
 ---
 
 # API-käyttöönotto
@@ -13,7 +14,7 @@ ChurchApps-rajapinnat otetaan käyttöön AWS Lambda -funktioina Serverless Fram
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Ota API käyttöön paikallisesti -- katso [API:n paikallinen käyttöönotto](../api/local-setup)
+- Ota API käyttöön paikallisesti -- katso [API:n paikallinen käyttöönotto](../api/local-setup.md)
 - Määritä AWS-tunnistetiedot koneellesi
 - Varmista, että sinulla on pääsy kohdeympäristön AWS-tiliin
 
@@ -47,7 +48,7 @@ Käytännössä API:n käyttöönoton hoitaa GitHub Actions: **Deploy Demo** suo
 
 ## Tietokantamigraatiot
 
-**Deploy Prod** ajaa odottavat tietokantamigraatiot osana käyttöönottoa. Tuotantotietokannat hyväksyvät yhteyksiä vain VPC:n sisältä, joten heti `serverless deploy` -komennon jälkeen työnkulku kutsuu `migrate`-Lambda-funktiota (`api-Prod-migrate`). Se suorittaa jokaisen moduulin odottavat migraatiot ja palauttaa `{ ok, environment, modules }`. Jos jokin moduuli epäonnistuu tai sen migraatio hylätään (esimerkiksi tietokannalla, jolla ei ole migraatiohistoriaa), työ epäonnistuu, jotta skeema ei koskaan jää koodin jälkeen. **Rollback Prod** palauttaa vain Lambda-koodin; migraatiot pysyvät voimassa, joten pidä ne lisäävinä. Katso tilan tarkistamisesta tai migraatioiden käsin ajamisesta kohta [Palvelimen ylläpito -- Tietokantamigraatiot](../server-admin#database-migrations).
+**Deploy Prod** ajaa odottavat tietokantamigraatiot osana käyttöönottoa. Tuotantotietokannat hyväksyvät yhteyksiä vain VPC:n sisältä, joten heti `serverless deploy` -komennon jälkeen työnkulku kutsuu `migrate`-Lambda-funktiota (`api-Prod-migrate`). Se suorittaa jokaisen moduulin odottavat migraatiot ja palauttaa `{ ok, environment, modules }`. Jos jokin moduuli epäonnistuu tai sen migraatio hylätään (esimerkiksi tietokannalla, jolla ei ole migraatiohistoriaa), työ epäonnistuu, jotta skeema ei koskaan jää koodin jälkeen. **Rollback Prod** palauttaa vain Lambda-koodin; migraatiot pysyvät voimassa, joten pidä ne lisäävinä. Katso tilan tarkistamisesta tai migraatioiden käsin ajamisesta kohta [Palvelimen ylläpito -- Tietokantamigraatiot](../server-admin.md#database-migrations).
 
 ## Mitä luodaan
 
@@ -75,6 +76,6 @@ Jokainen `main`-haaraan tehty yhdistäminen otetaan ensin käyttöön demo-ympä
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[API:n paikallinen käyttöönotto](../api/local-setup)** -- API:n käyttöönotto kehitystä varten
-- **[Moduulirakenne](../api/module-structure)** -- Lambda-funktioiden arkkitehtuurin ymmärtäminen
-- **[Verkkosovellusten käyttöönotto](./web-apps)** -- Frontend-sovellusten käyttöönotto
+- **[API:n paikallinen käyttöönotto](../api/local-setup.md)** -- API:n käyttöönotto kehitystä varten
+- **[Moduulirakenne](../api/module-structure.md)** -- Lambda-funktioiden arkkitehtuurin ymmärtäminen
+- **[Verkkosovellusten käyttöönotto](./web-apps.md)** -- Frontend-sovellusten käyttöönotto

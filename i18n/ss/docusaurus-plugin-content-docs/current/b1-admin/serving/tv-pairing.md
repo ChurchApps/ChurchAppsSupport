@@ -1,5 +1,6 @@
 ---
 title: "Kuhlanganisa i-FreePlay ku-B1 Admin"
+description: "Xhuma i-TV yasekilasini esebentisa FreePlay kumafundziso akho ahlelwe ku-B1 Admin, kutsi ticulisi tikwazi kuwadlala esikrinini phakatsi kwesifundvo."
 ---
 
 # Kuhlanganisa i-TV Yekilasi Netifundvo Takho Te-B1 Admin

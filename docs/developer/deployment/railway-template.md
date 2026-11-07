@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting on Railway"
+description: "Deploy a private ChurchApps instance on Railway in about 15 minutes, then configure email, custom domains, multi-church routing, giving, and file storage for B1 Admin and B1App."
 ---
 
 # Self-Hosting on Railway
@@ -195,7 +196,7 @@ These unlock specific features and can all be added later via the Railway dashbo
 | `VIMEO_TOKEN` | Vimeo sermon support |
 | `API_BIBLE_KEY` | Bible verse lookups in lessons and content |
 | `YOUVERSION_API_KEY` | YouVersion Bible integration |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notifications ([generate a VAPID keypair](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notifications ([generate a VAPID keypair](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Optional CRM sync for new registrations |
 
 ## Updating
@@ -234,9 +235,9 @@ If you hit something not on this list, open an issue at [github.com/ChurchApps/A
 
 ## Related Articles
 
-- **[Self-Hosting with Docker](./docker)** — Same stack on your own hardware or VPS
-- **[Initial Setup](../../getting-started/initial-setup)** — First steps after your church is created
-- **[Website Initial Setup](../../b1-admin/website/initial-setup)** — Configure your church's public site
-- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** — Wire up Stripe or PayPal
-- **[Local API Setup](../api/local-setup)** — Running the stack locally for development
-- **[API Deployment (AWS)](./apis)** — How the official ChurchApps SaaS is deployed
+- **[Self-Hosting with Docker](./docker.md)** — Same stack on your own hardware or VPS
+- **[Initial Setup](../../getting-started/initial-setup.md)** — First steps after your church is created
+- **[Website Initial Setup](../../b1-admin/website/initial-setup.md)** — Configure your church's public site
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup.md)** — Wire up Stripe or PayPal
+- **[Local API Setup](../api/local-setup.md)** — Running the stack locally for development
+- **[API Deployment (AWS)](./apis.md)** — How the official ChurchApps SaaS is deployed

@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Atur webhook real-time dari B1 Admin: daftarkan endpoint, pilih peristiwa, verifikasi tanda tangan HMAC, atur percobaan ulang, dan kirim ulang muatan gagal."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Buka **Settings → Developer → Webhooks → New Webhook**. Masukkan nama, URL
 
 ### Melalui API
 
-Semua endpoint berada di bawah path dasar modul Membership `/membership/webhooks` dan memerlukan JWT dari admin gereja dengan izin `Settings / Edit`, **atau [API key](./api-keys) yang dibuat dengan scope `settings:write`**. Rute yang sama menerima keduanya. Hal ini memungkinkan Zapier dan Make mendaftarkan webhook atas nama gereja ketika Zap atau scenario diaktifkan.
+Semua endpoint berada di bawah path dasar modul Membership `/membership/webhooks` dan memerlukan JWT dari admin gereja dengan izin `Settings / Edit`, **atau [API key](./api-keys.md) yang dibuat dengan scope `settings:write`**. Rute yang sama menerima keduanya. Hal ini memungkinkan Zapier dan Make mendaftarkan webhook atas nama gereja ketika Zap atau scenario diaktifkan.
 
 ```http
 POST /membership/webhooks

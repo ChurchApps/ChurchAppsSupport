@@ -1,5 +1,7 @@
 ---
-title: "Tjeneste"
+title: "Serving-oversikt i B1 Admin"
+sidebar_label: "Tjeneste"
+description: "Koordiner frivillige og planlegg gudstjenester i Serving-området i B1 Admin, fra fanene for tjenesteområder og team til planer, sanger og oppgaver."
 ---
 
 # Tjeneste

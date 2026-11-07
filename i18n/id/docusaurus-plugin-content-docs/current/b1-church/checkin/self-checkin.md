@@ -1,5 +1,7 @@
 ---
-title: "Check-In Mandiri"
+title: "Self Check-In di Portal Anggota B1.church"
+sidebar_label: "Check-In Mandiri"
+description: "Check-in diri dan rumah tangga Anda ke ibadah dari portal anggota B1.church, memilih waktu dan grup dalam beberapa langkah cepat."
 ---
 
 # Check-In Mandiri
@@ -45,7 +47,7 @@ Setelah memilih kelompok untuk semua orang yang hadir, ketuk tombol di bagian ba
 
 Anda akan melihat konfirmasi bahwa check-in Anda telah selesai dan kehadiran Anda telah disimpan. Setelah beberapa saat, halaman akan kembali ke daftar layanan, siap untuk check-in berikutnya.
 
-Jika gereja Anda mencetak label nama di stasiun check-in, Anda akan melihat **Anda sudah check-in!** beserta kode QR dan kode keamanan. Tunjukkan kode di stasiun check-in untuk mencetak label nama Anda, lalu ketuk **Selesai**. Di kiosk B1 Checkin, ketuk **Pindai kode** dan arahkan kode QR ke kamera -- lihat [Mencetak Label untuk Check-In dengan Ponsel](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Jika gereja Anda mencetak label nama di stasiun check-in, Anda akan melihat **Anda sudah check-in!** beserta kode QR dan kode keamanan. Tunjukkan kode di stasiun check-in untuk mencetak label nama Anda, lalu ketuk **Selesai**. Di kiosk B1 Checkin, ketuk **Pindai kode** dan arahkan kode QR ke kamera -- lihat [Mencetak Label untuk Check-In dengan Ponsel](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Jika rumah tangga Anda sudah di-check-in untuk layanan yang Anda pilih, tautan **Tampilkan kode check-in** akan muncul di samping heading **Siapa yang hadir**. Ketuk tautan itu untuk menampilkan kembali kode QR dan kode keamanan -- misalnya, jika Anda menutup halaman sebelum mencapai stasiun check-in.
 

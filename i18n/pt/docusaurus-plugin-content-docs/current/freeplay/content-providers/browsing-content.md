@@ -1,5 +1,6 @@
 ---
 title: "Navegando e baixando conteúdo"
+description: "Navegue pela biblioteca de um provedor conectado com o controle remoto da TV no FreePlay e depois baixe ou transmita lições e vídeos para reprodução."
 ---
 
 # Navegando e baixando conteúdo
@@ -13,7 +14,7 @@ Depois de se conectar a um provedor de conteúdo, você pode navegar pela biblio
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Conecte-se a pelo menos um provedor de conteúdo -- veja [Conectando-se aos provedores](./connecting-providers)
+- Conecte-se a pelo menos um provedor de conteúdo -- veja [Conectando-se aos provedores](./connecting-providers.md)
 - Tenha o controle remoto da TV pronto para navegar
 
 </div>
@@ -38,7 +39,7 @@ Você pode navegar tão fundo quanto a estrutura de conteúdo do provedor permit
 
 ## Navegando pelo Lessons.church
 
-A biblioteca do [Lessons.church](../../lessons-church/) é organizada da mesma forma que o site. No nível superior, você verá duas pastas:
+A biblioteca do [Lessons.church](../../lessons-church/index.md) é organizada da mesma forma que o site. No nível superior, você verá duas pastas:
 
 - **Lessons** - Entre por **programa**, depois por **estudo** e depois por **lição**. Cada lição lista então os seus **locais**, que são versões da lição para uma faixa etária ou contexto específico, como Berçário ou Infantil. Selecione um local para abrir a tela de download daquela versão da lição
 - **Complementos** - Vídeos e recursos extras, agrupados por categoria
@@ -78,7 +79,7 @@ Use estes controles durante a reprodução:
 Ao sair do player, você retorna ao navegador de conteúdo no nível raiz do provedor atual.
 
 :::info
-Para uma referência completa de todos os controles do player, veja [Reproduzindo conteúdo](./playing-content).
+Para uma referência completa de todos os controles do player, veja [Reproduzindo conteúdo](./playing-content.md).
 :::
 
 ## Alternando entre provedores

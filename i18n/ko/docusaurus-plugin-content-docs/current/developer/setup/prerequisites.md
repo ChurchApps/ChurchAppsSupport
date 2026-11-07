@@ -1,5 +1,6 @@
 ---
 title: "사전 요구 사항"
+description: "B1 Admin, Lessons.church, FreePlay 또는 API 등 ChurchApps 프로젝트를 로컬에서 작업하기 전에 Node.js, npm, Git 및 플랫폼별 도구 체인을 설정합니다."
 ---
 
 # 사전 요구 사항
@@ -13,7 +14,7 @@ title: "사전 요구 사항"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [프로젝트 개요](./project-overview)를 읽고 어떤 프로젝트에서 작업할지 정하세요.
+- [프로젝트 개요](./project-overview.md)를 읽고 어떤 프로젝트에서 작업할지 정하세요.
 - 소프트웨어를 설치하려면 개발 컴퓨터의 관리자 권한이 필요합니다.
 
 </div>
@@ -40,7 +41,7 @@ API를 데모 API에 연결하지 않고 로컬에서 실행하려는 경우:
 |------|---------|-------|
 | **MySQL** | 8.0+ | 각 API 모듈은 자체 데이터베이스를 사용함 |
 
-핵심 API에는 여섯 개의 데이터베이스가 필요합니다: `membership`, `attendance`, `content`, `giving`, `messaging`, `doing`. API에는 스키마를 초기화하는 스크립트가 포함되어 있습니다. [API 로컬 설정](../api/local-setup) 가이드를 참고하세요.
+핵심 API에는 여섯 개의 데이터베이스가 필요합니다: `membership`, `attendance`, `content`, `giving`, `messaging`, `doing`. API에는 스키마를 초기화하는 스크립트가 포함되어 있습니다. [API 로컬 설정](../api/local-setup.md) 가이드를 참고하세요.
 
 ## 모바일 앱 개발
 
@@ -110,5 +111,5 @@ mysql --version   # 로컬 API 개발에만 필요
 
 ## 다음 단계
 
-- **[프로젝트 개요](./project-overview)** -- 모든 프로젝트와 각각의 역할 살펴보기
-- **[환경 변수](./environment-variables)** -- `.env` 파일 구성하기
+- **[프로젝트 개요](./project-overview.md)** -- 모든 프로젝트와 각각의 역할 살펴보기
+- **[환경 변수](./environment-variables.md)** -- `.env` 파일 구성하기

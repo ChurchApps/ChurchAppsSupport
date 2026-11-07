@@ -1,5 +1,6 @@
 ---
 title: "Mode Presenter"
+description: "Jalankan pelajaran layar penuh di proyektor atau TV kelas dengan Presenter Mode di Lessons.church, dan lalui setiap bagian selama kelas."
 ---
 
 # Mode Presenter

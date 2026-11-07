@@ -1,5 +1,6 @@
 ---
 title: "Évfordulós lista"
+description: "Listázza ki a B1 Adminban a kiválasztott hónapban házassági évfordulót tartó személyeket, a dátumokkal együtt, táblázatba exportálhatóan."
 ---
 
 # Évfordulós lista

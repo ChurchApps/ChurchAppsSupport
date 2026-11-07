@@ -1,5 +1,6 @@
 ---
 title: "Végpontok referenciája"
+description: "Keress minden ChurchApps API-végpontot modulonként, nézd meg minden útvonal HTTP-metódusát, elérési útját, hitelesítését és jogosultságát, és ismerd meg a kötegelt mentési és hibakezelési konvenciókat a hívás előtt."
 ---
 
 # Végpontok referenciája
@@ -89,10 +90,10 @@ A jelentés paramétereit lekérdezési karakterlánc értékeiként adja át (p
 
 | Modul | Alap elérési út | Leírás |
 |--------|-----------|-------------|
-| [Hitelesítés](./authentication) | `/membership/users`, `/membership/oauth` | Bejelentkezés, regisztráció, JWT-tokenek, OAuth, jogosultságok |
-| [Tagság](./membership) | `/membership/*` | Személyek, egyházak, csoportok, háztartások, szerepkörök, űrlapok, beállítások |
-| [Részvétel](./attendance) | `/attendance/*` | Telephelyek, istentiszteletek, alkalmak, látogatások, bejelentkezési rekordok |
-| [Tartalom](./content) | `/content/*` | Oldalak, prédikációk, események, fájlok, galériák, Biblia, streaming |
-| [Adakozás](./giving) | `/giving/*` | Adományok, alapok, fizetési átjárók, előfizetések |
-| [Üzenetküldés](./messaging) | `/messaging/*` | Beszélgetések, értesítések, eszközök, SMS |
-| [Teendők](./doing) | `/doing/*` | Tervek, feladatok, kiosztások, automatizálások, ütemezés |
+| [Hitelesítés](./authentication.md) | `/membership/users`, `/membership/oauth` | Bejelentkezés, regisztráció, JWT-tokenek, OAuth, jogosultságok |
+| [Tagság](./membership.md) | `/membership/*` | Személyek, egyházak, csoportok, háztartások, szerepkörök, űrlapok, beállítások |
+| [Részvétel](./attendance.md) | `/attendance/*` | Telephelyek, istentiszteletek, alkalmak, látogatások, bejelentkezési rekordok |
+| [Tartalom](./content.md) | `/content/*` | Oldalak, prédikációk, események, fájlok, galériák, Biblia, streaming |
+| [Adakozás](./giving.md) | `/giving/*` | Adományok, alapok, fizetési átjárók, előfizetések |
+| [Üzenetküldés](./messaging.md) | `/messaging/*` | Beszélgetések, értesítések, eszközök, SMS |
+| [Teendők](./doing.md) | `/doing/*` | Tervek, feladatok, kiosztások, automatizálások, ütemezés |

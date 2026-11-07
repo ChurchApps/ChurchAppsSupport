@@ -1,5 +1,7 @@
 ---
-title: "Začetek dela"
+title: "Začetek dela s portalom članov B1.church"
+sidebar_label: "Začetek dela"
+description: "Poiščite spletno stran B1.church svoje cerkve, ustvarite račun člana in spoznajte, kaj portal ponuja, od skupin in darovanja do prijave in načrtov."
 ---
 
 # Začetek dela z B1.church

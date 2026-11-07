@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheid"
+description: "Bekijk wekelijkse aanwezigheid, ruimtes en gasten in B1 Admin en stel vanaf de pagina Attendance campussen, dienstijden, aantallen en kioskcheck-in in."
 ---
 
 # Aanwezigheid

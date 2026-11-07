@@ -1,5 +1,6 @@
 ---
 title: "Nhập sĩ số & xu hướng"
+description: "Nhập tổng sĩ số cho một buổi hoặc nhóm trong B1 Admin mà không cần danh sách từng người, rồi theo dõi các con số theo tuần trong báo cáo Xu hướng sĩ số."
 ---
 
 # Nhập sĩ số & xu hướng

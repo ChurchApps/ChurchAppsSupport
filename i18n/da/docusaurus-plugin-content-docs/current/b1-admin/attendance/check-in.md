@@ -1,5 +1,7 @@
 ---
-title: "Ind- og udchecking"
+title: "Selvbetjent check-in med B1 Checkin og B1 Admin"
+sidebar_label: "Ind- og udchecking"
+description: "Opsæt selvbetjent check-in til gudstjenester med B1 Checkin i B1 Admin: enheder, kioskkonti, tidsplaner, branding og QR-gæstetilmelding."
 ---
 
 # Ind- og udchecking
@@ -99,7 +101,7 @@ Brug den inaktive skærm til at vise meddelelser, kommende begivenheder eller ve
 
 Ind- og udchecking-kioskken kan vise en QR-kode, som besøgende scanner for at registrere sig selv og deres familie på deres egen telefon. Dette fremskynder ind- og udchecking-processen for førstegangsgæster.
 
-Når en gæst scanner QR-koden, bliver de taget til en [gæsteregistreringsside](../../b1-church/checkin/guest-registration), hvor de angiver deres navn, email og familiemedlemmer. En frivillig kan derefter slå dem op på kioskken og checke dem ind.
+Når en gæst scanner QR-koden, bliver de taget til en [gæsteregistreringsside](../../b1-church/checkin/guest-registration.md), hvor de angiver deres navn, email og familiemedlemmer. En frivillig kan derefter slå dem op på kioskken og checke dem ind.
 
 ### Aktivering af QR-gæsteregistrering
 

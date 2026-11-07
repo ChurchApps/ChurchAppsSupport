@@ -1,5 +1,7 @@
 ---
-title: "奉献"
+title: "B1.church 中的在线奉献与捐款"
+sidebar_label: "奉献"
+description: "无需账户即可在 B1.church 上在线奉献，或登录以管理定期奉献、付款方式和奉献对账单。"
 ---
 
 # 奉献

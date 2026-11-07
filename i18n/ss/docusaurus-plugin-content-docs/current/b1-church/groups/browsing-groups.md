@@ -1,5 +1,6 @@
 ---
 title: "Kubukela Emacembu"
+description: "Hlola emaqembu lasetulu etikhatsi lelicawe lakho ku-B1.church ngetigaba, bese ubuka tikhatsi tekuhlangana, tindzawo, nemahlaliso kulikhadi ngalinye."
 ---
 
 # Kubukela Emacembu

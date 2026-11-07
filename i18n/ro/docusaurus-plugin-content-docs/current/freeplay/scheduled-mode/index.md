@@ -1,5 +1,6 @@
 ---
 title: "Mod programat"
+description: "Configurați TV-urile FreePlay să redea playlisturi după calendar din FreePlay Admin: pornesc și se opresc singure și continuă și la căderi de Wi-Fi."
 ---
 
 # Mod programat
@@ -18,16 +19,16 @@ FreePlay Admin folosește contul dvs. ChurchApps, același pe care îl folosiți
 
 FreePlay Admin are patru pagini principale, enumerate în partea de sus a site-ului:
 
-- **[Ecrane](./managing-screens)** - Televizoarele asociate, starea lor și **grupurile de ecrane** din care fac parte. Ecranele dintr-un grup au un calendar comun și o buclă implicită comună
-- **[Liste de redare](./building-playlists)** - Bucle de imagini și videoclipuri pe care le alegeți de la furnizorii de conținut
-- **[Calendar](./scheduling-the-calendar)** - Ce redă fiecare grup de ecrane și când
-- **[Furnizori](./building-playlists#connecting-providers)** - Sursele de conținut din care își extrag listele de redare. Conectați fiecare sursă o singură dată, pentru întreaga biserică
+- **[Ecrane](./managing-screens.md)** - Televizoarele asociate, starea lor și **grupurile de ecrane** din care fac parte. Ecranele dintr-un grup au un calendar comun și o buclă implicită comună
+- **[Liste de redare](./building-playlists.md)** - Bucle de imagini și videoclipuri pe care le alegeți de la furnizorii de conținut
+- **[Calendar](./scheduling-the-calendar.md)** - Ce redă fiecare grup de ecrane și când
+- **[Furnizori](./building-playlists.md#connecting-providers)** - Sursele de conținut din care își extrag listele de redare. Conectați fiecare sursă o singură dată, pentru întreaga biserică
 
 Când nu este programat nimic, ecranele unui grup redau **bucla implicită** a acestuia. Dacă grupul nu are o buclă implicită, ecranele rămân negre.
 
 ## Cum diferă de modul Plan
 
-- **[Modul Plan](../plan-mode/)** urmărește un singur tip de plan de slujbă din B1 Admin. Cineva apasă **Pornește planul** pe televizor, iar lecția se redă atunci când apasă
+- **[Modul Plan](../plan-mode/index.md)** urmărește un singur tip de plan de slujbă din B1 Admin. Cineva apasă **Pornește planul** pe televizor, iar lecția se redă atunci când apasă
 - **Modul programat** urmărește un calendar. Conținutul pornește și se oprește la orele stabilite de dvs., astfel că este potrivit pentru panourile din hol, buclele cu anunțuri și sălile de clasă în care lecția trebuie să fie afișată înainte ca cineva să intre
 
 O intrare din calendar poate totuși reda un plan de slujbă. Alegeți tipul de plan sub **Planuri de slujbă** atunci când adăugați un program, iar ecranul va reda planul care este activ în B1 Admin în acea săptămână. Aceasta include lecțiile Go Curriculum, chiar și cele pe care le-ați personalizat în plan. Ecranul folosește contul Go Curriculum asociat cu tipul de plan din B1 Admin sau conexiunea Go Curriculum a bisericii, dacă ministerul nu are una proprie.
@@ -49,8 +50,8 @@ Apăsați **Ctrl+K** (**⌘K** pe Mac) sau faceți clic pe câmpul de căutare d
 
 ## În această secțiune
 
-- **[Asocierea unui ecran](./pairing-a-screen)** - Afișați codul pe televizor și asociați-l în FreePlay Admin
-- **[Gestionarea ecranelor și a grupurilor](./managing-screens)** - Verificați starea și descărcările și organizați ecranele în grupuri
-- **[Conectarea furnizorilor și crearea listelor de redare](./building-playlists)** - Conectați surse de conținut și creați bucle de imagini și videoclipuri
-- **[Programarea calendarului](./scheduling-the-calendar)** - Decideți ce se redă și când și ce se întâmplă când se termină mai devreme
-- **[Redarea programată pe televizor](./scheduled-playback)** - Ce face televizorul singur și cum folosiți telecomanda în timpul redării
+- **[Asocierea unui ecran](./pairing-a-screen.md)** - Afișați codul pe televizor și asociați-l în FreePlay Admin
+- **[Gestionarea ecranelor și a grupurilor](./managing-screens.md)** - Verificați starea și descărcările și organizați ecranele în grupuri
+- **[Conectarea furnizorilor și crearea listelor de redare](./building-playlists.md)** - Conectați surse de conținut și creați bucle de imagini și videoclipuri
+- **[Programarea calendarului](./scheduling-the-calendar.md)** - Decideți ce se redă și când și ce se întâmplă când se termină mai devreme
+- **[Redarea programată pe televizor](./scheduled-playback.md)** - Ce face televizorul singur și cum folosiți telecomanda în timpul redării

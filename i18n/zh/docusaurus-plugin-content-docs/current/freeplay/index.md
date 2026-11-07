@@ -1,5 +1,6 @@
 ---
 title: "FreePlay 概览"
+description: "FreePlay 概览。它是一款教室电视应用，可在 Android TV、Fire TV 和 Apple TV 上离线播放课程，并附有设置指南链接。"
 ---
 
 # FreePlay 概览
@@ -22,10 +23,10 @@ FreePlay 是一款面向教会的电视应用，可在教室电视上显示课�
 
 - **离线播放** - 提前下载视频和图片幻灯片，使您在礼拜期间无需依赖 Wi-Fi
 - **下载管理** - 通过**设置** > **下载**查看和管理所有已下载的内容
-- **定时模式** - 在 [admin.freeplay.church](https://admin.freeplay.church) 构建播放列表并将其安排到日历中，已配对的电视会在正确的时间自动播放，无需任何人按下开始 -- 参见[定时模式](./scheduled-mode/)
+- **定时模式** - 在 [admin.freeplay.church](https://admin.freeplay.church) 构建播放列表并将其安排到日历中，已配对的电视会在正确的时间自动播放，无需任何人按下开始 -- 参见[定时模式](./scheduled-mode/index.md)
 - **计划配对** - 将您的设备关联到教会的服务计划，以便在各个房间协调播放内容
 - **内容提供方** - 从外部来源浏览和下载内容，例如 [Lessons.church](/docs/lessons-church/)、Bible Project、Dropbox 和 OneDrive
-- **公告** - 循环播放已连接提供方中某个文件夹里的幻灯片 -- 参见[公告](./content-providers/announcements)
+- **公告** - 循环播放已连接提供方中某个文件夹里的幻灯片 -- 参见[公告](./content-providers/announcements.md)
 - **适用电视遥控器** - 使用方向键和确认键，即可用标准电视遥控器操作整个应用
 - **可折叠侧边栏** - 纤细的侧边栏让导航随时可用，同时不会占用过多屏幕空间
 
@@ -35,10 +36,10 @@ FreePlay 是一款面向教会的电视应用，可在教室电视上显示课�
 
 ## 章节
 
-- **[入门](./getting-started/)** - 安装应用、启动应用并选择连接方式
-- **[定时模式](./scheduled-mode/)** - 将电视与日历配对，并在 FreePlay Admin 中进行管理
-- **[计划模式](./plan-mode/)** - 与教会的服务计划配对
-- **[内容提供方](./content-providers/)** - 连接外部内容来源
+- **[入门](./getting-started/index.md)** - 安装应用、启动应用并选择连接方式
+- **[定时模式](./scheduled-mode/index.md)** - 将电视与日历配对，并在 FreePlay Admin 中进行管理
+- **[计划模式](./plan-mode/index.md)** - 与教会的服务计划配对
+- **[内容提供方](./content-providers/index.md)** - 连接外部内容来源
 
 :::info
 FreePlay 是 [ChurchApps](https://churchapps.org) 面向教会的免费开源工具套件的一部分。

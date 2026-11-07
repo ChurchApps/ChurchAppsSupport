@@ -1,5 +1,7 @@
 ---
-title: "Nội dung"
+title: "Tính năng nội dung trong cổng thành viên B1.church"
+sidebar_label: "Nội dung"
+description: "Xem nội dung nào hội thánh bạn bật trong cổng thành viên B1.church, rồi duyệt bài giảng, phát trực tiếp, đọc Kinh Thánh và bài học."
 ---
 
 # Nội dung

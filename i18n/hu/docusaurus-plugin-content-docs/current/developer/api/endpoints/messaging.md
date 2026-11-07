@@ -1,5 +1,6 @@
 ---
 title: "Üzenetküldési végpontok"
+description: "Referencia a ChurchApps üzenetküldő API-végpontjaihoz: beszélgetések, jegyzetek hozzáférési szabályai, SMS, e-mail-sablonok, értesítések és eszközök."
 ---
 
 # Üzenetküldési végpontok
@@ -190,7 +191,7 @@ Alapútvonal: `/messaging/notificationpreferences`
 
 Alapútvonal: `/messaging/connections`
 
-A WebSocket- és valós idejű kapcsolatokat kezeli csevegéshez, csoportbeszélgetésekhez, privát üzenetekhez és élő közvetítéshez. A teljes protokollért lásd: [Valós idejű architektúra](../../realtime).
+A WebSocket- és valós idejű kapcsolatokat kezeli csevegéshez, csoportbeszélgetésekhez, privát üzenetekhez és élő közvetítéshez. A teljes protokollért lásd: [Valós idejű architektúra](../../realtime.md).
 
 | Metódus | Útvonal | Hitelesítés | Jogosultság | Leírás |
 |--------|------|------|------|-------------|
@@ -367,9 +368,9 @@ Az elküldött üzenetek (SMS, push-értesítések, e-mail) kézbesítési álla
 
 ## Kapcsolódó oldalak
 
-- [Valós idejű architektúra](../../realtime) – WebSocket-protokoll, szobafeliratkozások és az egységes kézbesítési keretrendszer
-- [Webes push-értesítések](../../web-push) – Böngésző-push regisztráció és kézbesítés
-- [Tagsági végpontok](./membership) – Személyek, csoportok, szerepkörök és alapvető identitás
-- [Részvételi végpontok](./attendance) – Istentiszteletek és látogatások követése
-- [Hitelesítés és jogosultságok](./authentication) – Bejelentkezési folyamat, JWT, OAuth és jogosultsági modell
-- [Modulstruktúra](../module-structure) – Kódszervezési minták
+- [Valós idejű architektúra](../../realtime.md) – WebSocket-protokoll, szobafeliratkozások és az egységes kézbesítési keretrendszer
+- [Webes push-értesítések](../../web-push.md) – Böngésző-push regisztráció és kézbesítés
+- [Tagsági végpontok](./membership.md) – Személyek, csoportok, szerepkörök és alapvető identitás
+- [Részvételi végpontok](./attendance.md) – Istentiszteletek és látogatások követése
+- [Hitelesítés és jogosultságok](./authentication.md) – Bejelentkezési folyamat, JWT, OAuth és jogosultsági modell
+- [Modulstruktúra](../module-structure.md) – Kódszervezési minták

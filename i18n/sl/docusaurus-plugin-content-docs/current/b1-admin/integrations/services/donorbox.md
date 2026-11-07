@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Povežite Donorbox z B1 Admin prek Zapier, da spletna darila samodejno ustvarijo zapise o darovih in profile darovalcev brez ročnega izvoza."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Sprožilec *New or Updated Donation* v Donorboxu se sproži tudi ob urejanju. Z 
 
 ## Glejte tudi
 
-- [Zapier (pregled)](../zapier): stran B1 pri vsakem receptu za Zapier
-- [Subsplash](./subsplash): druga platforma za darila z aplikacijo za Zapier
-- [Mailchimp](./mailchimp): povežite »novo darilo« z oznako v e-pošti
+- [Zapier (pregled)](../zapier.md): stran B1 pri vsakem receptu za Zapier
+- [Subsplash](./subsplash.md): druga platforma za darila z aplikacijo za Zapier
+- [Mailchimp](./mailchimp.md): povežite »novo darilo« z oznako v e-pošti

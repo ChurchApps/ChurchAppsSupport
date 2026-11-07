@@ -1,5 +1,6 @@
 ---
 title: "Provedor de Conteúdo FreePlay"
+description: "Requisitos para conectar uma biblioteca de lições ao FreePlay: logo, modelo de login, endpoints de catálogo e playlists e formatos de mídia."
 ---
 
 # Provedor de Conteúdo FreePlay

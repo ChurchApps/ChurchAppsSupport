@@ -1,5 +1,6 @@
 ---
 title: "Reports"
+description: "Find and run the built-in reports in B1 Admin for birthdays, attendance trends, donation totals, and the audit log, depending on which section you're in."
 ---
 
 # Reports
@@ -17,16 +18,16 @@ B1 Admin gives you several ways to pull data about your congregation, attendance
 ## Where to Find Reports
 
 ### People
-- **[Birthday & Anniversary Lists](./birthday-report)** -- Filter by Birth Month or Anniversary Month in **People → Advanced Search** to get a list of upcoming birthdays or anniversaries.
+- **[Birthday & Anniversary Lists](./birthday-report.md)** -- Filter by Birth Month or Anniversary Month in **People → Advanced Search** to get a list of upcoming birthdays or anniversaries.
 
 ### Attendance
-- **[Attendance Reports](./attendance-reports)** -- Attendance trends and group attendance data are found in the **Attendance** section.
+- **[Attendance Reports](./attendance-reports.md)** -- Attendance trends and group attendance data are found in the **Attendance** section.
 
 ### Donations
-- **[Donation Summary](./donation-summary)** -- Giving totals and fund breakdowns are found in the **Donations** section.
+- **[Donation Summary](./donation-summary.md)** -- Giving totals and fund breakdowns are found in the **Donations** section.
 
 ### Settings
-- **[Audit Log](./audit-log)** -- Track all changes and actions across your church management system (found under **Settings → Audit Log**).
+- **[Audit Log](./audit-log.md)** -- Track all changes and actions across your church management system (found under **Settings → Audit Log**).
 
 :::info
 Report data depends on consistent data entry. Make sure your team is [tracking attendance](../attendance/tracking-attendance.md), [recording donations](../donations/recording-donations.md), and keeping [people records](../people/adding-people.md) up to date for the most accurate results.

@@ -1,5 +1,6 @@
 ---
 title: "Server MCP"
+description: "Atur akses MCP ke API B1 agar klien AI seperti Claude Code, Cursor, atau Claude Desktop dapat memanggil endpoint data gereja dengan kunci API atau masuk OAuth."
 ---
 
 # Server MCP
@@ -13,7 +14,7 @@ API B1 menyediakan server [MCP (Model Context Protocol)](https://modelcontextpro
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Kunci API B1](./api-keys) (`cak_…`) dengan scope yang dibutuhkan klien, atau klien MCP yang dapat masuk dengan OAuth (lihat [Penemuan OAuth](#oauth-discovery))
+- [Kunci API B1](./api-keys.md) (`cak_…`) dengan scope yang dibutuhkan klien, atau klien MCP yang dapat masuk dengan OAuth (lihat [Penemuan OAuth](#oauth-discovery))
 - Host API B1 yang dapat dijangkau, yaitu `https://api.churchapps.org` untuk gereja yang di-host, atau deployment Anda sendiri
 - Klien MCP. Lihat [Claude](/docs/b1-admin/integrations/claude) dan [ChatGPT](/docs/b1-admin/integrations/chatgpt) untuk panduan pengaturan pengguna akhir
 
@@ -119,7 +120,7 @@ Hasil alat ditandai `isError: true` untuk setiap respons dengan status ≥ 400.
 
 ### `describe_page_builder`
 
-Satu-satunya alat non-generik: panduan statis yang berdiri sendiri untuk membangun halaman situs web melalui endpoint `/content/*`. Isinya mencakup model data Page → Section → Element, alur pembuatan, setiap `elementType` beserta bentuk `answersJSON`-nya, pengaturan tingkat section seperti pembagi bentuk `dividerTop`/`dividerBottom`, dan contoh lengkap dari awal hingga akhir. Alat ini tidak menerima input dan mencerminkan katalog elemen yang dikelola di editor B1Admin (lihat [Arsitektur Website Builder](../architecture/website-builder)). Agen diharapkan memanggilnya sekali sebelum membuat atau mengedit konten halaman, lalu bertindak melalui `api_call`.
+Satu-satunya alat non-generik: panduan statis yang berdiri sendiri untuk membangun halaman situs web melalui endpoint `/content/*`. Isinya mencakup model data Page → Section → Element, alur pembuatan, setiap `elementType` beserta bentuk `answersJSON`-nya, pengaturan tingkat section seperti pembagi bentuk `dividerTop`/`dividerBottom`, dan contoh lengkap dari awal hingga akhir. Alat ini tidak menerima input dan mencerminkan katalog elemen yang dikelola di editor B1Admin (lihat [Arsitektur Website Builder](../architecture/website-builder.md)). Agen diharapkan memanggilnya sekali sebelum membuat atau mengedit konten halaman, lalu bertindak melalui `api_call`.
 
 ## Model Autentikasi
 
@@ -153,11 +154,11 @@ Tidak ada pembatasan laju di tingkat aplikasi pada `/mcp`. Pengendalian lalu lin
 
 ## Penemuan OAuth
 
-Server MCP menyiarkan metadata OAuth 2.1 agar klien yang hanya terhubung ke server yang ditemukan melalui OAuth, terutama UI "Add custom connector" di Claude.ai, dapat memasukkan pengguna tanpa kunci yang ditempel. `/mcp` adalah protected resource, [penyedia OAuth](./connected-apps) yang ada di bawah `/membership/oauth` adalah authorization server-nya, dan halaman `/oauth` di B1Admin adalah layar persetujuannya.
+Server MCP menyiarkan metadata OAuth 2.1 agar klien yang hanya terhubung ke server yang ditemukan melalui OAuth, terutama UI "Add custom connector" di Claude.ai, dapat memasukkan pengguna tanpa kunci yang ditempel. `/mcp` adalah protected resource, [penyedia OAuth](./connected-apps.md) yang ada di bawah `/membership/oauth` adalah authorization server-nya, dan halaman `/oauth` di B1Admin adalah layar persetujuannya.
 
 | Endpoint | Tujuan |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (juga `/.well-known/oauth-protected-resource/mcp`) | Metadata protected resource (RFC 9728): `resource` berisi `<api>/mcp`, `authorization_servers` berisi root API, `scopes_supported` mencantumkan setiap [scope kunci API](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (juga `/.well-known/oauth-protected-resource/mcp`) | Metadata protected resource (RFC 9728): `resource` berisi `<api>/mcp`, `authorization_servers` berisi root API, `scopes_supported` mencantumkan setiap [scope kunci API](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metadata authorization server (RFC 8414): `authorization_endpoint` adalah `/oauth` di B1Admin, `token_endpoint` adalah `/membership/oauth/token`, `registration_endpoint` adalah `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Registrasi klien dinamis (RFC 7591) |
 
@@ -209,8 +210,8 @@ Server MCP berada di `src/modules/mcp/` pada repositori Api. Berkas-berkas penti
 
 ## Terkait
 
-- [Kunci API](./api-keys)
-- [Webhook](./webhooks)
-- [Aplikasi Terhubung (OAuth)](./connected-apps)
+- [Kunci API](./api-keys.md)
+- [Webhook](./webhooks.md)
+- [Aplikasi Terhubung (OAuth)](./connected-apps.md)
 - [Claude: panduan pengaturan pengguna akhir](/docs/b1-admin/integrations/claude)
 - [ChatGPT: panduan pengaturan pengguna akhir](/docs/b1-admin/integrations/chatgpt)

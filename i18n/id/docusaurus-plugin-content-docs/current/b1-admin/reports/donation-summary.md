@@ -1,5 +1,6 @@
 ---
 title: "Ringkasan Donasi"
+description: "Jalankan laporan Ringkasan Donasi di B1 Admin untuk melihat total pemberian, jumlah donatur unik, dan jumlah per dana untuk rentang tanggal yang Anda pilih."
 ---
 
 # Ringkasan Donasi

@@ -1,5 +1,6 @@
 ---
 title: "Simo Sekwetfula"
+description: "Sebentisa lifundziso esikrinini esigcwele ku-projector yekilasi noma ku-TV nge-Presenter Mode ku-Lessons.church, bese uhamba ngayo tonkhe tingcenye ngesikhatsi sekilasi."
 ---
 
 # Simo Sekwetfula

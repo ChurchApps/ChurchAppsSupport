@@ -1,5 +1,7 @@
 ---
-title: "Inscribirse a eventos"
+title: "Inscripción a eventos en B1.church"
+sidebar_label: "Inscribirse a eventos"
+description: "Inscríbete en un evento de la iglesia en B1.church: ingresa tus datos, agrega miembros de la familia, elige opciones, aplica códigos de descuento y paga o únete a la lista de espera."
 ---
 
 # Inscribirse a eventos
@@ -79,14 +81,14 @@ Aparece un mensaje de confirmación con los detalles del evento y una lista de t
 
 ## Unirse a una lista de espera {#joining-a-waitlist}
 
-Si el evento está lleno y su iglesia habilitó la lista de espera, el primer paso muestra: *"Este evento está lleno. Puede unirse a la lista de espera y le avisaremos si se libera un lugar."* Complete la inscripción como de costumbre; el pago se omite mientras esté en lista de espera. Cuando se libere un lugar, recibirá un correo; si hay un pago pendiente, incluirá un enlace para completarlo. También puede consultar su estado y pagar desde [Mis inscripciones](./my-registrations).
+Si el evento está lleno y su iglesia habilitó la lista de espera, el primer paso muestra: *"Este evento está lleno. Puede unirse a la lista de espera y le avisaremos si se libera un lugar."* Complete la inscripción como de costumbre; el pago se omite mientras esté en lista de espera. Cuando se libere un lugar, recibirá un correo; si hay un pago pendiente, incluirá un enlace para completarlo. También puede consultar su estado y pagar desde [Mis inscripciones](./my-registrations.md).
 
 ## Cambiar o cancelar una inscripción
 
-Si ha iniciado sesión, puede editar o cancelar su inscripción usted mismo desde la página de **Inscripciones** en el portal de miembros; consulte [Mis inscripciones](./my-registrations). Los invitados deben comunicarse con la oficina de la iglesia, y el personal puede hacer el cambio desde la página de inscripciones de B1 Admin.
+Si ha iniciado sesión, puede editar o cancelar su inscripción usted mismo desde la página de **Inscripciones** en el portal de miembros; consulte [Mis inscripciones](./my-registrations.md). Los invitados deben comunicarse con la oficina de la iglesia, y el personal puede hacer el cambio desde la página de inscripciones de B1 Admin.
 
 ## Artículos relacionados
 
 - [Resumen de eventos](./index.md): explore los próximos eventos con inscripción
-- [Mis inscripciones](./my-registrations): vea, edite, pague saldos y cancele sus inscripciones
-- [Hacer donaciones](../giving/making-donations): haga una donación junto con su participación en un evento
+- [Mis inscripciones](./my-registrations.md): vea, edite, pague saldos y cancele sus inscripciones
+- [Hacer donaciones](../giving/making-donations.md): haga una donación junto con su participación en un evento

@@ -1,5 +1,6 @@
 ---
 title: "Fondų valdymas"
+description: "Kurkite ir tvarkykite aukų fondus B1 Admin, nustatykite mokesčių lengvatos statusą ir aukotojų matomumą, peržiūrėkite fondų sumas ir dovanų istoriją."
 ---
 
 # Fondų valdymas

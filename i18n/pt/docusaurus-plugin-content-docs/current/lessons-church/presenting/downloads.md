@@ -1,5 +1,6 @@
 ---
 title: "Downloads e Materiais"
+description: "Encontre e baixe fichas de atividades, guias do líder e PDFs imprimíveis anexados às lições, estudos ou programas do Lessons.church para sua turma."
 ---
 
 # Downloads e Materiais

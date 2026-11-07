@@ -1,5 +1,7 @@
 ---
-title: "Alkitab"
+title: "Membaca Alkitab di B1 Mobile"
+sidebar_label: "Alkitab"
+description: "Buka Alkitab lewat pembaca bawaan di B1 Mobile dari menu laci, navigasi kitab, pasal, dan ayat, serta temukan opsi Alkitab gereja Anda."
 ---
 
 # Alkitab
@@ -13,7 +15,7 @@ B1 Mobile menyediakan pembaca Alkitab bawaan sehingga Anda dapat membaca Firman 
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Instal B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Instal B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Gereja Anda harus mengaktifkan fitur Alkitab
 
 </div>
@@ -37,7 +39,7 @@ Pembaca tertanam menyediakan kontrol untuk bergerak melalui Firman Tuhan. Anda d
 Pembaca memenuhi layar, sehingga memberi Anda ruang yang cukup untuk membaca dengan nyaman di perangkat Anda.
 
 :::tip
-Jadikan layar Alkitab bagian dari rutinitas harian Anda -- ini adalah cara cepat untuk membaca Firman Tuhan di mana pun Anda berada. Padukan dengan [Ayat Harian](./verse-of-the-day) untuk inspirasi setiap hari.
+Jadikan layar Alkitab bagian dari rutinitas harian Anda -- ini adalah cara cepat untuk membaca Firman Tuhan di mana pun Anda berada. Padukan dengan [Ayat Harian](./verse-of-the-day.md) untuk inspirasi setiap hari.
 :::
 
 ## Ketersediaan
@@ -46,6 +48,6 @@ Layar Alkitab tersedia ketika gereja Anda telah mengaktifkan fitur ini. Jika And
 
 ## Artikel Terkait
 
-- [Ayat Harian](./verse-of-the-day) -- Lihat ayat Alkitab harian
-- [Khotbah](./sermons) -- Tonton khotbah yang melengkapi pembacaan Alkitab Anda
+- [Ayat Harian](./verse-of-the-day.md) -- Lihat ayat Alkitab harian
+- [Khotbah](./sermons.md) -- Tonton khotbah yang melengkapi pembacaan Alkitab Anda
 - [FreePlay](/docs/freeplay/) -- Mainkan kurikulum terstruktur di TV kelas (menggantikan layar Lessons dalam aplikasi yang sudah tidak digunakan lagi)

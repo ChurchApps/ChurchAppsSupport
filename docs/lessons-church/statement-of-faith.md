@@ -1,5 +1,6 @@
 ---
 title: Statement of Faith
+description: "What ChurchApps believes about God, Jesus, the Holy Spirit, Scripture, salvation, and the church, the standard for reviewing Lessons.church curriculum."
 ---
 
 # Statement of Faith

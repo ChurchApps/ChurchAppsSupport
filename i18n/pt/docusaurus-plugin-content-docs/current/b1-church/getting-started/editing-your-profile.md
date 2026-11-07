@@ -1,5 +1,7 @@
 ---
-title: "Editando seu perfil"
+title: "Editando Seu Perfil no Portal de Membros B1.church"
+sidebar_label: "Editando seu perfil"
+description: "Atualize seus dados de contato, membros da família, e-mail e senha de login e configurações de privacidade no portal de membros do B1.church."
 ---
 
 # Editando seu perfil

@@ -1,5 +1,7 @@
 ---
-title: "Úprava vašeho profilu"
+title: "Úprava profilu v aplikaci B1 Mobile"
+sidebar_label: "Úprava vašeho profilu"
+description: "Aktualizujte jméno, e-mail, telefon, adresu a profilovou fotku v aplikaci B1 Mobile, aby záznamy církve a adresář zůstaly aktuální."
 ---
 
 # Úprava vašeho profilu
@@ -13,7 +15,7 @@ Na kartě **Profil** můžete aktualizovat své osobní údaje, aby měl váš s
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 
 </div>
 
@@ -34,7 +36,7 @@ Váš profil obsahuje tyto osobní údaje:
 3. Klepněte na pole, které chcete upravit, a proveďte změny.
 4. Až budete hotovi, uložte změny.
 
-Vaše aktualizované údaje se synchronizují automaticky. Kdokoli, kdo si zobrazí váš profil (v závislosti na vašem [nastavení soukromí](./privacy-settings)), uvidí nové údaje ihned.
+Vaše aktualizované údaje se synchronizují automaticky. Kdokoli, kdo si zobrazí váš profil (v závislosti na vašem [nastavení soukromí](./privacy-settings.md)), uvidí nové údaje ihned.
 
 :::tip
 Udržujte svou e-mailovou adresu a telefonní číslo aktuální. Váš sbor tyto údaje používá k zasílání důležitých aktualizací a připomenutí.
@@ -46,7 +48,7 @@ Profilovou fotografii můžete přidat nebo změnit na kartě **Profil**. Vaše 
 
 ## Změny napříč ChurchApps
 
-Protože všechny služby ChurchApps sdílejí stejný systém účtů, změna provedená v aplikaci B1 Mobile se okamžitě projeví na [B1.church](../../b1-church/), v administrativních nástrojích vašeho sboru i v dalších propojených službách. Své údaje nemusíte aktualizovat zvlášť na každém místě.
+Protože všechny služby ChurchApps sdílejí stejný systém účtů, změna provedená v aplikaci B1 Mobile se okamžitě projeví na [B1.church](../../b1-church/index.md), v administrativních nástrojích vašeho sboru i v dalších propojených službách. Své údaje nemusíte aktualizovat zvlášť na každém místě.
 
 :::info
 Některé sbory vyžadují schválení správcem u určitých změn profilu. Pokud se vaše aktualizace neobjeví okamžitě, zkontrolujte stav na kartě **Čekající** na obrazovce svého profilu.
@@ -54,5 +56,5 @@ Některé sbory vyžadují schválení správcem u určitých změn profilu. Pok
 
 ## Související články
 
-- [Domácnost](./household) -- Zobrazení a správa členů vaší rodiny
-- [Nastavení soukromí](./privacy-settings) -- Určete, co ostatní o vás mohou vidět
+- [Domácnost](./household.md) -- Zobrazení a správa členů vaší rodiny
+- [Nastavení soukromí](./privacy-settings.md) -- Určete, co ostatní o vás mohou vidět

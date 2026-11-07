@@ -1,5 +1,7 @@
 ---
-title: "Dersler (Kullanımdan Kaldırıldı)"
+title: "B1.church'te Kullanımdan Kaldırılan Dersler Sekmesi"
+sidebar_label: "Dersler (Kullanımdan Kaldırıldı)"
+description: "B1.church'teki Dersler sekmesi kullanımdan kaldırılmıştır. Ders müfredatının artık nerede olduğunu bulun: Lessons.church'te göz atın ve FreePlay ile sınıf televizyonlarında oynatın."
 ---
 
 # Dersler (Kullanımdan Kaldırıldı)
@@ -9,7 +11,7 @@ B1.church üzerindeki gömülü **Dersler** sekmesi kullanımdan kaldırıldı. 
 
 Müfredata doğrudan göz atmak, planlamak veya düzenlemek için tarayıcınızda [Lessons.church](https://lessons.church) adresine giriş yapın. Dersleri bir sınıf televizyonunda oynatmak için TV cihazınıza [FreePlay](/docs/freeplay/getting-started/) uygulamasını yükleyin.
 
-B1Admin'de bir ders planı türüyle ilişkilendirilmiş grupların ebeveynleri, bu haftanın dersini [grup ayrıntıları](/docs/b1-church/groups/group-details.md) sayfasında görür. Bu, kullanımdan kaldırılmış sekmede gösterilmez.
+B1Admin'de bir ders planı türüyle ilişkilendirilmiş grupların ebeveynleri, bu haftanın dersini [grup ayrıntıları](../groups/group-details.md) sayfasında görür. Bu, kullanımdan kaldırılmış sekmede gösterilmez.
 :::
 
 <div class="article-intro">

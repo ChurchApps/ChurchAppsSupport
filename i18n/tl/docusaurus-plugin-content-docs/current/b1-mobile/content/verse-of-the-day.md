@@ -1,5 +1,7 @@
 ---
-title: "Bersikulo ng Araw"
+title: "Verse of the Day sa B1 Mobile"
+sidebar_label: "Bersikulo ng Araw"
+description: "Buksan ang Verse of the Day sa B1 Mobile para makita ang talata ng araw bilang larawan na akma sa telepono o tablet, na araw-araw na ina-update."
 ---
 
 # Bersikulo ng Araw
@@ -13,7 +15,7 @@ Ang Verse of the Day screen ay nagpapakita ng pang-araw-araw na bersikulo sa Bib
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Kailangang naka-enable ang feature na Verse of the Day sa iyong simbahan
 
 </div>
@@ -46,5 +48,5 @@ Ang Verse of the Day ay isang built-in na feature ng nilalaman ng B1 Mobile. Kun
 
 ## Mga Kaugnay na Artikulo
 
-- [Bibliya](./bible) -- Basahin ang buong mga talata ng Banal na Kasulatan sa built-in na reader
-- [Mga Sermon](./sermons) -- Manood ng mga naka-record na sermon mula sa iyong simbahan
+- [Bibliya](./bible.md) -- Basahin ang buong mga talata ng Banal na Kasulatan sa built-in na reader
+- [Mga Sermon](./sermons.md) -- Manood ng mga naka-record na sermon mula sa iyong simbahan

@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Pisanie postów na blogu na stronie w B1 Admin"
+sidebar_label: "Blog"
+description: "Twórz, planuj i publikuj wpisy na blogu kościoła w B1 Admin, w tym zajawki, kategorie, tagi, zdjęcia nagłówków i osadzone komentarze."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Na stronie Blog możesz publikować wiadomości, aktualizacje i rozważania na s
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Wykonaj [wstępną konfigurację](initial-setup) swojej strony internetowej
-- Jeśli chcesz, aby odwiedzający znajdowali Twój blog w menu, dodaj link nawigacyjny do `/blog` w [Zarządzaniu stronami](managing-pages)
+- Wykonaj [wstępną konfigurację](./initial-setup.md) swojej strony internetowej
+- Jeśli chcesz, aby odwiedzający znajdowali Twój blog w menu, dodaj link nawigacyjny do `/blog` w [Zarządzaniu stronami](./managing-pages.md)
 
 </div>
 
@@ -31,7 +33,7 @@ Na stronie Blog możesz publikować wiadomości, aktualizacje i rozważania na s
 3. Dodaj **Excerpt** -- krótkie streszczenie wyświetlane na liście wpisów, w metaopisach i w kanale RSS. Jeśli pozostawisz to pole puste, zostanie ono automatycznie wygenerowane na podstawie początku treści wpisu.
 4. Napisz treść wpisu w edytorze **Content**, używając Markdown. Kliknij **Preview**, aby zobaczyć, jak będzie wyglądał sformatowany wpis.
 5. Wybierz **Category** (istniejącą lub wpisz nową) oraz opcjonalnie **Tags** oddzielone przecinkami.
-6. Kliknij **Select Image**, aby wybrać zdjęcie z galerii [Files](files), lub prześlij nowe. Przesłane zdjęcia otwierają się we wbudowanym narzędziu do kadrowania, zablokowanym na proporcje 16:9, dzięki czemu możesz tak wykadrować dowolne zdjęcie, aby pasowało do nagłówka wpisu i kart na liście.
+6. Kliknij **Select Image**, aby wybrać zdjęcie z galerii [Files](./files.md), lub prześlij nowe. Przesłane zdjęcia otwierają się we wbudowanym narzędziu do kadrowania, zablokowanym na proporcje 16:9, dzięki czemu możesz tak wykadrować dowolne zdjęcie, aby pasowało do nagłówka wpisu i kart na liście.
 7. Ustaw **Author** -- domyślnie jesteś nim Ty, ale możesz wyszukać i wybrać dowolną osobę z bazy danych.
 8. Włącz **Published** i ustaw **Publish Date**, gdy wpis ma być publiczny. Pozostaw wyłączone, aby zapisać wpis jako szkic.
 
@@ -58,7 +60,7 @@ Każdy wpis na liście pokazuje jeden z trzech stanów:
 Opublikowane wpisy pojawiają się pod adresem `{yoursite}/blog`, po 10 na stronę, z linkami **Older**/**Newer** do przeglądania archiwum, a także z filtrem kategorii oraz autorem i zdjęciem każdego wpisu. Tagi są również wyświetlane jako klikalne znaczniki, dzięki czemu odwiedzający mogą filtrować listę według tagów w ten sam sposób. Pojedyncze wpisy znajdują się pod adresem `{yoursite}/blog/{slug}` i zawierają powiązane wpisy z tej samej kategorii. Strona bloga udostępnia również kanał RSS, który jest automatycznie wykrywany przez czytniki kanałów i narzędzia automatyzacji, takie jak Zapier.
 
 :::info
-Wpisy na blogu to osobny typ treści niż zwykłe strony internetowe -- nie są tworzone w [edytorze stron](page-editor) i nie pojawiają się na liście Pages. Dzięki temu tworzenie wpisów na blogu jest szybkie i skupia się na pisaniu.
+Wpisy na blogu to osobny typ treści niż zwykłe strony internetowe -- nie są tworzone w [edytorze stron](./page-editor.md) i nie pojawiają się na liście Pages. Dzięki temu tworzenie wpisów na blogu jest szybkie i skupia się na pisaniu.
 :::
 
 ## Dodawanie komentarzy pod wpisami
@@ -77,6 +79,6 @@ Wyczyść pole i kliknij **Save**, aby usunąć kod ze wszystkich wpisów. To po
 
 ## Następne kroki
 
-- [Zarządzanie stronami](managing-pages) -- dodaj link nawigacyjny do swojego bloga
-- [Files](files) -- prześlij zdjęcia do użycia we wpisach
+- [Zarządzanie stronami](./managing-pages.md) -- dodaj link nawigacyjny do swojego bloga
+- [Files](./files.md) -- prześlij zdjęcia do użycia we wpisach
 - [Integracja z Zapier](../integrations/zapier.md) -- uruchamiaj automatyzacje po opublikowaniu nowych wpisów

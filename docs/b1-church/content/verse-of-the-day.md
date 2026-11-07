@@ -1,5 +1,7 @@
 ---
-title: "Verse of the Day"
+title: "Verse of the Day on the B1.church Website and Portal"
+sidebar_label: "Verse of the Day"
+description: "Browse each day's Bible verse picture and past verses, then share or download them from your B1.church website or member portal on any screen size."
 ---
 
 # Verse of the Day

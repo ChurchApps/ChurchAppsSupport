@@ -1,5 +1,6 @@
 ---
 title: "Tìm kiếm AI"
+description: "Tìm trong danh bạ người của B1 Admin bằng câu hỏi tự nhiên, ví dụ ai chưa tham dự trong ba tháng, thay vì phải tạo bộ lọc."
 ---
 
 # Tìm kiếm AI

@@ -1,5 +1,6 @@
 ---
 title: "Scheduled na Pagpapatugtog sa TV"
+description: "Nagda-download ang naka-pair na FreePlay TV ng susunod na linggo at nagpe-play ayon sa oras, kahit offline. Kasama ang info panel, remote, at pag-pin ng playlist."
 ---
 
 # Scheduled na Pagpapatugtog sa TV
@@ -13,8 +14,8 @@ Kapag nakapares na ang TV sa isang calendar, pinapatakbo ito ng FreePlay para sa
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Ipares ang TV sa isang calendar](./pairing-a-screen)
-- [Maglagay ng nilalaman sa calendar](./scheduling-the-calendar), o magtakda ng default na loop para sa grupo ng screen
+- [Ipares ang TV sa isang calendar](./pairing-a-screen.md)
+- [Maglagay ng nilalaman sa calendar](./scheduling-the-calendar.md), o magtakda ng default na loop para sa grupo ng screen
 
 </div>
 
@@ -40,7 +41,7 @@ May tatlong butones din ang panel:
 
 - **Pin This Playlist** - Panatilihing umiikot ang kasalukuyang nilalaman at huwag pansinin ang calendar. Piliin ang **Unpin Playlist** para bumalik sa iskedyul
 - **Browse Content** - Lumabas sa scheduled player para mag-browse sa mga nakakonektang provider
-- **Settings** - Buksan ang settings ng FreePlay, kung saan maaari mong [i-unpair o ipares sa ibang calendar](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Settings** - Buksan ang settings ng FreePlay, kung saan maaari mong [i-unpair o ipares sa ibang calendar](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Para bumalik sa iskedyul pagkatapos mag-browse, pindutin ang **Back** sa remote mula sa screen na **Content Providers**, o buksan ang **Settings**, piliin ang **Pair to a calendar**, at piliin ang **Back to schedule**. Bumabalik din sa scheduled player ang nakapares na TV tuwing babalik ang FreePlay sa foreground, at palagi itong bumubukas sa scheduled player.
@@ -77,6 +78,6 @@ Maaari mo ring patugtugin ang calendar ng screen sa web browser. Sa FreePlay Adm
 
 ## Mga Kaugnay na Artikulo
 
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Itakda kung ano ang ipapatugtog at kung ano ang mangyayari kapag natapos nang maaga
-- **[Managing Screens and Groups](./managing-screens)** - Tingnan ang mga download ng bawat screen mula sa FreePlay Admin
-- **[Playing Content](../content-providers/playing-content)** - Mga kontrol ng player kapag ikaw mismo ang nagpapatugtog ng nilalaman
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Itakda kung ano ang ipapatugtog at kung ano ang mangyayari kapag natapos nang maaga
+- **[Managing Screens and Groups](./managing-screens.md)** - Tingnan ang mga download ng bawat screen mula sa FreePlay Admin
+- **[Playing Content](../content-providers/playing-content.md)** - Mga kontrol ng player kapag ikaw mismo ang nagpapatugtog ng nilalaman

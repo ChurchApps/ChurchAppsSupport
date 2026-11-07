@@ -1,5 +1,6 @@
 ---
 title: "Iskanje oseb"
+description: "Iščite v imeniku oseb B1 Admin po imenu, razvrščajte in izbirajte stolpce v tabeli, sestavljajte filtre z naprednim iskanjem ter izvozite zadetke v CSV."
 ---
 
 # Iskanje oseb

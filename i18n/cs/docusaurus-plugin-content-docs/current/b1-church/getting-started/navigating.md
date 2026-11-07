@@ -1,5 +1,6 @@
 ---
 title: "Orientace v B1App"
+description: "Orientujte se v členském portálu B1.church na telefonu nebo počítači: domovský přehled, spodní lišta záložek, stránka More a stránka Me."
 ---
 
 # Orientace v B1App
@@ -92,7 +93,7 @@ Detailní stránky -- skupina, plán, vaše stránka Já, obrazovky Plány a Dar
 
 ## Stránka Já
 
-**Já** (`/mobile/me`) je vaše osobní centrum. Zobrazuje vaše jméno a fotku s tlačítky **Upravit profil** a **Nastavení** ([předvolby oznámení](./notification-preferences.md)). Dále ukazuje, co je pro vás nachystáno -- služební úkoly, registrace na události a události skupin -- a poté vaši domácnost, vaše skupiny, vaše [dary](../giving/) za letošní rok, formuláře, které jste odeslali, historii docházky, vaše [registrace](../events/my-registrations.md) a nedávná oznámení a zprávy. Podrobnosti najdete na [stránce Já](./me-page).
+**Já** (`/mobile/me`) je vaše osobní centrum. Zobrazuje vaše jméno a fotku s tlačítky **Upravit profil** a **Nastavení** ([předvolby oznámení](./notification-preferences.md)). Dále ukazuje, co je pro vás nachystáno -- služební úkoly, registrace na události a události skupin -- a poté vaši domácnost, vaše skupiny, vaše [dary](../giving/index.md) za letošní rok, formuláře, které jste odeslali, historii docházky, vaše [registrace](../events/my-registrations.md) a nedávná oznámení a zprávy. Podrobnosti najdete na [stránce Já](./me-page.md).
 
 Pokud nejste přihlášeni, místo toho stránka Já zobrazuje tlačítko **Přihlásit se**.
 

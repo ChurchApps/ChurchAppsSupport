@@ -1,5 +1,6 @@
 ---
 title: "Slack och Discord"
+description: "Publicera B1 Admin-händelser som nya personer, gåvor och formulärinlämningar i en Slack- eller Discord-kanal via en inkommande webhook, utan Zapier."
 ---
 
 # Slack och Discord
@@ -114,7 +115,7 @@ Om något misslyckades (en röd `failed`- eller `exhausted`-etikett) visar dialo
 
 - **Inget meddelande visas och leveransstatus är `400`**: Oftast är **Connector Type** satt till **Standard** men URL:en är en Slack- eller Discord-URL. Slack och Discord avvisar den råa strukturen. Byt till **Slack** eller **Discord** i listrutan och skicka testet igen.
 - **Webhooken stängs av automatiskt**: Efter 3 misslyckade leveranser i rad stänger B1 av webhooken. Rätta URL:en (eller rotera den i Slack eller Discord) och slå på **Active** igen.
-- **Meddelandet kom fram men saknar detaljer**: Alla chattplattformar begränsar meddelandens storlek. B1:s meddelanden är korta med avsikt. För rikare notiser kan du använda [Zapier](./zapier) eller [Make](./make) för att skriva ett mer fullständigt Slack-meddelande med deras Slack-åtgärder.
+- **Meddelandet kom fram men saknar detaljer**: Alla chattplattformar begränsar meddelandens storlek. B1:s meddelanden är korta med avsikt. För rikare notiser kan du använda [Zapier](./zapier.md) eller [Make](./make.md) för att skriva ett mer fullständigt Slack-meddelande med deras Slack-åtgärder.
 
 ## Byta anslutningstyp senare
 
@@ -122,6 +123,6 @@ Du kan ändra Connector Type på en befintlig webhook. Ändringen gäller från 
 
 ## Se även
 
-- [Zapier](./zapier) för flerstegsflöden som startas av B1-händelser
-- [Make](./make) för en visuell scenariobyggare
+- [Zapier](./zapier.md) för flerstegsflöden som startas av B1-händelser
+- [Make](./make.md) för en visuell scenariobyggare
 - [Webhooks (utvecklarreferens)](/docs/developer/api/webhooks) för hela payload- och signaturformatet om du någon gång vill peka en webhook mot din egen server

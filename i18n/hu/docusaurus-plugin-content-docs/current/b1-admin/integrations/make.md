@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "B1 Admin csatlakoztatása a Make-hez: API-kulcs létrehozása, B1.church-trigger és műveletek beállítása, gyakori hibák elhárítása."
 ---
 
 # Make
@@ -110,6 +111,6 @@ A B1.church Make alkalmazás nyílt forráskódú. A JSON-definíciók a `B1Inte
 
 ## Lásd még
 
-- [Zapier](./zapier) — ugyanez a minta egyszerűbb felülettel és nagyobb alkalmazáskatalógussal
-- [Slack és Discord](./slack-discord) — beépített csevegési értesítések Make nélkül
+- [Zapier](./zapier.md) — ugyanez a minta egyszerűbb felülettel és nagyobb alkalmazáskatalógussal
+- [Slack és Discord](./slack-discord.md) — beépített csevegési értesítések Make nélkül
 - [Webhookok (fejlesztői referencia)](/docs/developer/api/webhooks)

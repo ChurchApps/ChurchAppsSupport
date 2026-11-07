@@ -1,5 +1,7 @@
 ---
-title: "Umlandvo Wemnikelo"
+title: "Kubuka Umlandvo Wetipho Ku-B1 Mobile"
+sidebar_label: "Umlandvo Wemnikelo"
+description: "Hlola tipho takho tegugu lamanje, sipho sakho sakamuva, nelirekhodi lonkhe letipho, bese uphindza sipho sangaphambili ngekutfintsela kanye kuthebhu ye-Overview."
 ---
 
 # Umlandvo Wemnikelo
@@ -13,8 +15,8 @@ I-B1 Mobile ikunika sitfombe lesicacile sekunikela kwakho ngeethebhu letimbili: 
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawundi yakho
-- [Wenta umnikelo munye](./making-donations) kute ubone umlandvo wakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawundi yakho
+- [Wenta umnikelo munye](./making-donations.md) kute ubone umlandvo wakho
 
 </div>
 
@@ -45,5 +47,5 @@ Hlola ithebhu ye-**Simo Lesijikelele** njalonjalo kute uhlale usemgomeni wetinjo
 
 ## Emahloka Lahlobene
 
-- [Kwenta Umnikelo](./making-donations) -- Wenta umnikelo lomusha kusuka ku-app
-- [Kuphatsa Tindlela Tekukhokha](./managing-payments) -- Engeta nome ususe tindlela tekukhokha letigciniwe
+- [Kwenta Umnikelo](./making-donations.md) -- Wenta umnikelo lomusha kusuka ku-app
+- [Kuphatsa Tindlela Tekukhokha](./managing-payments.md) -- Engeta nome ususe tindlela tekukhokha letigciniwe

@@ -1,5 +1,6 @@
 ---
 title: "Domain Kustom"
+description: "Arahkan domain Anda sendiri, misalnya www.gerejaanda.org, ke situs B1 Anda di B1 Admin dengan mengatur rekaman DNS dan menambahkan domain di Pengaturan."
 ---
 
 # Domain Kustom

@@ -6,7 +6,7 @@ description: "教会自有 Twilio 设置草稿，包括公开注册指引、营�
 # 教会自有 Twilio 入驻草稿
 
 :::caution 拟议集成的草稿
-这是一个拟议中的工作流程。B1 现在在 **Settings > Texting** 下提供了基础的 **Twilio** 选项（Account SID、Auth Token、From Number 以及入站 STOP webhook）——参见[教会设置：短信](../../b1-admin/settings/church-settings.md#texting)。下文中额外的 B1 设置控件、同意映射和验证步骤，是未来版本的需求，并非指引你去查找现有设置。请阅读[技术提案](./twilio-byok-proposal)了解范围和依赖关系。Twilio 的资料于 2026 年 10 月 22 日核对；在提交营销活动之前，请核实当前要求。
+这是一个拟议中的工作流程。B1 现在在 **Settings > Texting** 下提供了基础的 **Twilio** 选项（Account SID、Auth Token、From Number 以及入站 STOP webhook）——参见[教会设置：短信](../../b1-admin/settings/church-settings.md#texting)。下文中额外的 B1 设置控件、同意映射和验证步骤，是未来版本的需求，并非指引你去查找现有设置。请阅读[技术提案](./twilio-byok-proposal.md)了解范围和依赖关系。Twilio 的资料于 2026 年 10 月 22 日核对；在提交营销活动之前，请核实当前要求。
 :::
 
 ## 推荐的安排
@@ -34,7 +34,7 @@ description: "教会自有 Twilio 设置草稿，包括公开注册指引、营�
 | 现有自动化 | 不要将每位表单提交者或小组成员都加入短信工作流。只有经过验证的拟议同意映射才能授权该项目。 |
 | 感谢短信 | 确认表单已收到，但在复选框被拒绝或确认/审核仍待处理时，不要声称已完成短信注册。 |
 
-现有的复选框问题可以用来说明表单，但 B1 仍需要同意记录和发送门控。当前的共享渲染器会将说明显示为纯文本；仅在其中输入 Markdown 或 URL，并不足以保证政策链接可以点击。实现时必须提供一个带有实际链接的无障碍同意控件。参见[创建 B1 表单](../../b1-admin/forms/creating-forms)和[技术提案](./twilio-byok-proposal#consent-and-suppression-are-required-release-work)。
+现有的复选框问题可以用来说明表单，但 B1 仍需要同意记录和发送门控。当前的共享渲染器会将说明显示为纯文本；仅在其中输入 Markdown 或 URL，并不足以保证政策链接可以点击。实现时必须提供一个带有实际链接的无障碍同意控件。参见[创建 B1 表单](../../b1-admin/forms/creating-forms.md)和[技术提案](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work)。
 
 Twilio 要求自愿且可验证的同意（opt-in）。不要将短信与必需的会员条款、电子邮件/电话许可、捐赠同意或活动报名捆绑在一起。访客卡上的手机号本身并不构成短信同意。请参阅 Twilio 的[自愿同意要求](https://www.twilio.com/docs/api/errors/30923)和[营销活动建议](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations)。
 

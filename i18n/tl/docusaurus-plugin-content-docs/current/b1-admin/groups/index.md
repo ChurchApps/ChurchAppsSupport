@@ -1,5 +1,7 @@
 ---
-title: "Mga Grupo"
+title: "Mga Grupo sa B1 Admin"
+sidebar_label: "Mga Grupo"
+description: "Mag-set up at ayusin ang mga grupo sa B1 Admin, kasama ang kategorya, miyembro, calendar, at join request, at gabay sa paghahanap ng pahina ng Groups."
 ---
 
 # Mga Grupo

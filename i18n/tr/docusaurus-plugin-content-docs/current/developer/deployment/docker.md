@@ -1,12 +1,13 @@
 ---
 title: "Docker ile Kendi Sunucunuzda Barındırma"
+description: "Kendi makinenizde Docker ile özel bir B1 Admin, üye portalı, API ve MySQL yığını kurun; ardından b1 komutuyla yükseltin ve yedekleyin."
 ---
 
 # Docker ile Kendi Sunucunuzda Barındırma
 
 <div class="article-intro">
 
-Docker kurulu herhangi bir makinede — ev sunucusu, küçük bir VPS ya da yerel bir kutu — B1 Admin, B1 üye portalı ve web sitesi, API ve bir MySQL veritabanından oluşan kendi özel örneğinizi çalıştırın. Kurulum tek bir komutla yapılır, güncelleme tek bir komutla yapılır ve her güncellemeden önce yedek alınır. Hiç sunucu yönetmek istemiyorsanız, yönetilen alternatif için [Railway ile Kendi Sunucunuzda Barındırma](./railway-template) bölümüne bakın.
+Docker kurulu herhangi bir makinede — ev sunucusu, küçük bir VPS ya da yerel bir kutu — B1 Admin, B1 üye portalı ve web sitesi, API ve bir MySQL veritabanından oluşan kendi özel örneğinizi çalıştırın. Kurulum tek bir komutla yapılır, güncelleme tek bir komutla yapılır ve her güncellemeden önce yedek alınır. Hiç sunucu yönetmek istemiyorsanız, yönetilen alternatif için [Railway ile Kendi Sunucunuzda Barındırma](./railway-template.md) bölümüne bakın.
 
 </div>
 
@@ -94,10 +95,10 @@ Siteyi `localhost` üzerine kurduysanız ve daha sonra herkese açık hale getir
 
 Bunların hepsi Railway'deki gibi çalışır — aynı ortam değişkenleri, Railway panelinde değil `.env` dosyasında ayarlanır:
 
-- **[E-posta / SMTP](./railway-template#1-email-highly-recommended)** — Resend, Brevo ve Gmail için sağlayıcı adım adım kılavuzları
-- **[Çoklu site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — örnek başına sınırsız kilise. `/` adresi, slug'ı `DEFAULT_CHURCH_SLUG` olan kiliseyi sunar (ilk kilisenin slug'ı `church`'tür); ek alan adlarını makineye yönlendirin ve B1Admin içinde **Ayarlar → Alan Adları** altında eşleştirin
-- **[Çevrimiçi bağış](./railway-template#4-online-giving-stripe--paypal)** — her kilise için yönetim arayüzünde yapılandırılır
-- **[İsteğe bağlı entegrasyonlar](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-posta / SMTP](./railway-template.md#1-email-highly-recommended)** — Resend, Brevo ve Gmail için sağlayıcı adım adım kılavuzları
+- **[Çoklu site](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — örnek başına sınırsız kilise. `/` adresi, slug'ı `DEFAULT_CHURCH_SLUG` olan kiliseyi sunar (ilk kilisenin slug'ı `church`'tür); ek alan adlarını makineye yönlendirin ve B1Admin içinde **Ayarlar → Alan Adları** altında eşleştirin
+- **[Çevrimiçi bağış](./railway-template.md#4-online-giving-stripe--paypal)** — her kilise için yönetim arayüzünde yapılandırılır
+- **[İsteğe bağlı entegrasyonlar](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Anlık bildirimler](#push-notifications)** — `WEB_PUSH_*`; kurucu bunları boş bırakır, bu nedenle siz ekleyene kadar anlık bildirimler kapalıdır
 
 Kilise tarafından gönderilen davetiyeler ve diğer e-postalar, kendi barındırdığınız örnekte otomatik olarak etkinleştirilir (barındırılan hizmet ise gönderen itibarını korumak için bunları manuel incelemeye tabi tutar).
@@ -148,7 +149,7 @@ Tüm veriler üç adlandırılmış Docker biriminde (volume) tutulur:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Büyük medya kitaplıkları için dosya depolamayı S3'e geçirebilirsiniz — [Railway kılavuzunun Dosya Depolama bölümünde](./railway-template#5-file-storage) açıklanan `FILE_STORE=S3` ve `AWS_*` değişkenlerini ayarlayın. Veritabanı yedekleri S3 nesnelerini içermez; bu nedenle bucket için sürümlemeyi etkinleştirin.
+Büyük medya kitaplıkları için dosya depolamayı S3'e geçirebilirsiniz — [Railway kılavuzunun Dosya Depolama bölümünde](./railway-template.md#5-file-storage) açıklanan `FILE_STORE=S3` ve `AWS_*` değişkenlerini ayarlayın. Veritabanı yedekleri S3 nesnelerini içermez; bu nedenle bucket için sürümlemeyi etkinleştirin.
 
 ## Güncelleme
 
@@ -187,6 +188,6 @@ Hâlâ takılı kaldınız mı? `./deploy/b1 logs` çıktısını ekleyerek [git
 
 ## İlgili Makaleler
 
-- **[Railway ile Kendi Sunucunuzda Barındırma](./railway-template)** — yönetilen barındırma alternatifi ve ortak dağıtım sonrası yapılandırma kılavuzları
-- **[İlk Kurulum](../../getting-started/initial-setup)** — kilisenizi oluşturduktan sonra ilk adımlar
-- **[Yerel API Kurulumu](../api/local-setup)** — geliştirme için yığını doğrudan çalıştırma
+- **[Railway ile Kendi Sunucunuzda Barındırma](./railway-template.md)** — yönetilen barındırma alternatifi ve ortak dağıtım sonrası yapılandırma kılavuzları
+- **[İlk Kurulum](../../getting-started/initial-setup.md)** — kilisenizi oluşturduktan sonra ilk adımlar
+- **[Yerel API Kurulumu](../api/local-setup.md)** — geliştirme için yığını doğrudan çalıştırma

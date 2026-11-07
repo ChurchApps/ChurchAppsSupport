@@ -1,5 +1,6 @@
 ---
 title: "Mga Template ng Plan"
+description: "I-save ang order of service at posisyon ng plano bilang reusable template sa B1 Admin, saka ito ilapat sa mga susunod na plano sa isang click."
 ---
 
 # Mga Template ng Plan

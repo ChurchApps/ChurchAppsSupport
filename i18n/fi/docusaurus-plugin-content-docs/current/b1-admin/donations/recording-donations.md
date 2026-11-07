@@ -1,5 +1,6 @@
 ---
 title: "Lahjoitusten kirjaaminen"
+description: "Kirjaa lahjoituksia B1 Adminissa: luo erä, syötä lahjat yksitellen, tuo CSV-tiedosto tai kirjaa yksi lahja lahjoittajan profiilista."
 ---
 
 # Lahjoitusten kirjaaminen

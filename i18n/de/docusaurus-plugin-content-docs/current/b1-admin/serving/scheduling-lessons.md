@@ -1,5 +1,7 @@
 ---
-title: "Lektionen planen"
+title: "Lektionen aus Lessons.church in B1 Admin planen"
+sidebar_label: "Lektionen planen"
+description: "Lessons.church mit B1 Admin verbinden und Lektionen einzeln oder als ganze Reihe planen oder einen Jahresplan auf Gottesdienstpläne anwenden."
 ---
 
 # Lektionen von Lessons.church planen

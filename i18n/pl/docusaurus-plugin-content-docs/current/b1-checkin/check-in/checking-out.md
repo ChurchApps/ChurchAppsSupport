@@ -1,5 +1,6 @@
 ---
 title: "Odjava i bezpieczeństwo dzieci"
+description: "Wymeldowuj dzieci na obsługiwanym stanowisku B1 Checkin: kody bezpieczeństwa, sprawdzone osoby odbierające, wywoływanie rodziców i ponowny druk etykiet."
 ---
 
 # Odjava i bezpieczeństwo dzieci
@@ -14,7 +15,7 @@ Odjazd kończy proces zameldowania dzieci: rodzic okazuje kod bezpieczeństwa z 
 <h4>Zanim zaczniesz</h4>
 
 - Odjazd jest dostępny na stanowiskach ustawionych w tryb **obsługiwany przez personel** w ustawieniach administratora kiosku
-- Dzieci muszą być wcześniej [zameldowane](./completing-checkin) z wydrukowaną etykietą odbioru zawierającą kod bezpieczeństwa
+- Dzieci muszą być wcześniej [zameldowane](./completing-checkin.md) z wydrukowaną etykietą odbioru zawierającą kod bezpieczeństwa
 - Wywoływanie rodziców i alarmy wymagają podłączenia dostawcy usług SMS w B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Jeśli wpisane imię odpowiada osobie oznaczonej jako **Brak zgody** dla danej r
 Po potwierdzeniu osoby odbierającej dotknij przycisku odjazdu. Imię osoby odbierającej zostaje zapisane w rekordzie obecności.
 
 :::info
-Zaufane osoby odbierające i osoby z zakazem odbioru są zarządzane przez personel kościoła na stronie każdej osoby w B1 Admin — zobacz [Bezpieczeństwo meldowania](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Zaufane osoby odbierające i osoby z zakazem odbioru są zarządzane przez personel kościoła na stronie każdej osoby w B1 Admin — zobacz [Bezpieczeństwo meldowania](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Wywoływanie rodzica
@@ -65,6 +66,6 @@ Komunikat trafia do każdej zameldowanej rodziny na wybrane nabożeństwo. Używ
 
 ## Powiązane artykuły
 
-- [Kończenie meldowania](./completing-checkin) — skąd pochodzą kody bezpieczeństwa i etykiety odbioru
-- [Bezpieczeństwo meldowania](../../b1-admin/attendance/checkin-safety) — konfiguracja pojemności, proporcji, osób odbierających i wymagań dostawcy usług SMS
-- [Konfiguracja drukarki](../getting-started/printer-setup) — konfiguracja drukarki etykiet
+- [Kończenie meldowania](./completing-checkin.md) — skąd pochodzą kody bezpieczeństwa i etykiety odbioru
+- [Bezpieczeństwo meldowania](../../b1-admin/attendance/checkin-safety.md) — konfiguracja pojemności, proporcji, osób odbierających i wymagań dostawcy usług SMS
+- [Konfiguracja drukarki](../getting-started/printer-setup.md) — konfiguracja drukarki etykiet

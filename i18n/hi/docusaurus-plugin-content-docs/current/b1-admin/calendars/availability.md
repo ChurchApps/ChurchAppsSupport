@@ -1,5 +1,6 @@
 ---
 title: "उपलब्धता कैलेंडर"
+description: "B1 Admin में बुकिंग योग्य कमरे और उपकरण सेट करें, फिर कैलेंडर पर बुकिंग करें, सेटअप/समापन बफ़र जोड़ें, और दोहराने वाली या अनुमोदन-आवश्यक बुकिंग संभालें।"
 ---
 
 # उपलब्धता कैलेंडर
@@ -13,7 +14,7 @@ Availability Calendar आपको अपने पूरे चर्च मे
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- Rooms & Resources section में कम से कम एक [room या resource](rooms-resources) को सेट अप करें
+- Rooms & Resources section में कम से कम एक [room या resource](./rooms-resources.md) को सेट अप करें
 - B1 Admin में Calendars section तक edit access की आवश्यकता है
 
 </div>
@@ -58,7 +59,7 @@ Calendar को एक single room या resource तक narrow करने �
 6. Booking को submit करने के लिए **Save** पर क्लिक करें।
 
 :::info
-यदि room या resource के पास एक **Approval Group** configured है, तो booking उस group के एक leader द्वारा approve किए जाने तक **Pending** के रूप में दिखाई देगा। [Calendar Approvals](approvals) को approval workflow के लिए देखें।
+यदि room या resource के पास एक **Approval Group** configured है, तो booking उस group के एक leader द्वारा approve किए जाने तक **Pending** के रूप में दिखाई देगा। [Calendar Approvals](./approvals.md) को approval workflow के लिए देखें।
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Calendar save करने से पहले कोई conflicts को highli
 
 ## संबंधित आलेख
 
-- [Rooms, Resources & Scheduling](rooms-resources) — bookable spaces और equipment को सेट अप करें
-- [Calendar Approvals](approvals) — booking requests को approve या deny करें
-- [Creating Calendars](creating-calendars) — event calendars को manage करें
+- [Rooms, Resources & Scheduling](./rooms-resources.md) — bookable spaces और equipment को सेट अप करें
+- [Calendar Approvals](./approvals.md) — booking requests को approve या deny करें
+- [Creating Calendars](./creating-calendars.md) — event calendars को manage करें

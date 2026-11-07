@@ -1,5 +1,7 @@
 ---
-title: "Adománytörténet"
+title: "Adományelőzmények és kimutatások a B1.church-ben"
+sidebar_label: "Adománytörténet"
+description: "Korábbi adományai megtekintése, szűrés év szerint, és adóügyi adománykimutatások nyomtatása a B1.church tagi portál Adakozás oldaláról."
 ---
 
 # Adománytörténet

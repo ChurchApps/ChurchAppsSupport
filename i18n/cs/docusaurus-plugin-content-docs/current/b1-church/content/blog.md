@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Procházení blogu B1.church a kanály RSS"
+sidebar_label: "Blog"
+description: "Procházejte a filtrujte blog B1.church vaší církve podle kategorie nebo štítku, listujte staršími příspěvky nebo sledujte nové přes kanály RSS."
 ---
 
 # Blog

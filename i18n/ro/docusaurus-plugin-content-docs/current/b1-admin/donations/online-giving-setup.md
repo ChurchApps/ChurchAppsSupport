@@ -1,5 +1,6 @@
 ---
 title: "Configurarea donațiilor online"
+description: "Conectați Stripe, PayPal, Kingdom Funding sau Paystack la B1 Admin, ca membrii să doneze online prin site-ul B1.church, iar darurile să se sincronizeze."
 ---
 
 # Configurarea donațiilor online

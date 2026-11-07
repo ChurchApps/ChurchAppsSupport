@@ -1,5 +1,6 @@
 ---
 title: "AI søgning"
+description: "Søg i din B1 Admin-personoversigt med spørgsmål i almindeligt sprog, fx hvilke medlemmer der ikke har deltaget i tre måneder, i stedet for at bygge filtre."
 ---
 
 # AI søgning

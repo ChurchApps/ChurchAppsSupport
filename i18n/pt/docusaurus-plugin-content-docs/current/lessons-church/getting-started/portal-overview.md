@@ -1,5 +1,6 @@
 ---
 title: "Visão Geral do Portal"
+description: "Conheça o portal do Lessons.church: salas, lições agendadas, links de feed e as áreas de Provedores Externos e Admin."
 ---
 
 # Visão Geral do Portal

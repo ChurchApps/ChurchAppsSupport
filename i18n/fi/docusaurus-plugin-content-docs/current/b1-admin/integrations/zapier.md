@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Yhdistä B1 Admin Zapieriin: automatisoi uusien henkilöiden, lahjoitusten ja ryhmäjäsenten käsittely ilman koodausta."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Valitse trigger ja lisää yksi tai useampi toimintovaihe. Esimerkkejä on alla.
 ### Lähetä lahjoitukset Slack-kanavalle rikkaammalla kortilla kuin sisäänrakennettu liitin
 
 - **Trigger**: B1: Uusi lahjoitus
-- **Toiminto**: Slack: Send Channel Message. Muodosta mikä tahansa asettelu, kuten painikkeet, liitteet jne., jota [Slack-liitin](./slack-discord) ei pysty tekemään.
+- **Toiminto**: Slack: Send Channel Message. Muodosta mikä tahansa asettelu, kuten painikkeet, liitteet jne., jota [Slack-liitin](./slack-discord.md) ei pysty tekemään.
 
 ### Lisää uudet ryhmän jäsenet Google-ryhmään
 
@@ -106,6 +107,6 @@ Tämä tarkoittaa, että trigger käynnistyy vain tapahtumista, jotka tapahtuvat
 
 ## Katso myös
 
-- [Make](./make): sama malli, eri alusta
-- [Slack & Discord](./slack-discord): yksinkertaisemmat chat-ilmoitukset ilman Zapieriä
+- [Make](./make.md): sama malli, eri alusta
+- [Slack & Discord](./slack-discord.md): yksinkertaisemmat chat-ilmoitukset ilman Zapieriä
 - [Webhookit (kehittäjän viitemateriaali)](/docs/developer/api/webhooks)

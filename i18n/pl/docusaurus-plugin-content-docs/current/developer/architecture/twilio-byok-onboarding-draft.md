@@ -6,7 +6,7 @@ description: "Wersja robocza konfiguracji Twilio należącej do kościoła w B1,
 # Wersja robocza wdrożenia Twilio należącego do kościoła
 
 :::caution Wersja robocza proponowanej integracji
-To jest proponowany proces pracy. B1 ma już podstawowy wybór **Twilio** w sekcji **Ustawienia > SMS** (Account SID, Auth Token, numer nadawcy oraz webhook dla wiadomości STOP przychodzących) -- zobacz [Ustawienia kościoła: SMS](../../b1-admin/settings/church-settings.md#texting). Dodatkowe elementy konfiguracji B1, mapowanie zgód i kroki walidacji opisane poniżej są wymaganiami na przyszłe wydanie, a nie instrukcjami dotyczącymi istniejących ustawień. Zakres i zależności znajdziesz w [propozycji technicznej](./twilio-byok-proposal). Źródła Twilio sprawdzono 22 października 2026 r.; przed złożeniem kampanii zweryfikuj aktualne wymagania.
+To jest proponowany proces pracy. B1 ma już podstawowy wybór **Twilio** w sekcji **Ustawienia > SMS** (Account SID, Auth Token, numer nadawcy oraz webhook dla wiadomości STOP przychodzących) -- zobacz [Ustawienia kościoła: SMS](../../b1-admin/settings/church-settings.md#texting). Dodatkowe elementy konfiguracji B1, mapowanie zgód i kroki walidacji opisane poniżej są wymaganiami na przyszłe wydanie, a nie instrukcjami dotyczącymi istniejących ustawień. Zakres i zależności znajdziesz w [propozycji technicznej](./twilio-byok-proposal.md). Źródła Twilio sprawdzono 22 października 2026 r.; przed złożeniem kampanii zweryfikuj aktualne wymagania.
 :::
 
 ## Zalecany model
@@ -34,7 +34,7 @@ Dla proponowanego formularza zapisu SMS:
 | Istniejące automatyzacje | Nie zapisuj każdego autora zgłoszenia ani członka grupy do przepływu wiadomości tekstowych. Tylko proponowane, zweryfikowane mapowanie zgody może upoważnić ten program. |
 | Wiadomość z podziękowaniem | Potwierdź, że formularz został otrzymany, bez twierdzenia, że osoba zapisała się do SMS, gdy pole zostało odrzucone lub potwierdzenie albo weryfikacja są jeszcze w toku. |
 
-Istniejące pole wyboru może zilustrować formularz, ale B1 nadal potrzebuje rejestru zgód i bramek wysyłki. Obecny wspólny renderer wyświetla opisy jako zwykły tekst; wpisanie w nim Markdown lub adresu URL nie gwarantuje, że linki do polityk będą klikalne. Implementacja musi zapewnić dostępną kontrolkę zgody z rzeczywistymi linkami. Zobacz [tworzenie formularzy w B1](../../b1-admin/forms/creating-forms) oraz [propozycję techniczną](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Istniejące pole wyboru może zilustrować formularz, ale B1 nadal potrzebuje rejestru zgód i bramek wysyłki. Obecny wspólny renderer wyświetla opisy jako zwykły tekst; wpisanie w nim Markdown lub adresu URL nie gwarantuje, że linki do polityk będą klikalne. Implementacja musi zapewnić dostępną kontrolkę zgody z rzeczywistymi linkami. Zobacz [tworzenie formularzy w B1](../../b1-admin/forms/creating-forms.md) oraz [propozycję techniczną](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio wymaga dobrowolnej, weryfikowalnej zgody (opt-in). Nie łącz zgody na SMS z obowiązkowymi warunkami członkostwa, zgodami na e-mail lub telefon, zgodą na darowiznę ani rejestracją na wydarzenie. Numer komórkowy na karcie odwiedzającego nie jest sam w sobie zgodą na SMS. Zobacz [wymagania Twilio dotyczące dobrowolnej zgody](https://www.twilio.com/docs/api/errors/30923) oraz [zalecenia dotyczące kampanii](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

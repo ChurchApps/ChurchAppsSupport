@@ -1,5 +1,6 @@
 ---
 title: "Przeglądanie i pobieranie treści"
+description: "Przeglądanie biblioteki podłączonego dostawcy pilotem telewizora w FreePlay, a następnie pobieranie lub strumieniowanie lekcji i filmów do odtworzenia."
 ---
 
 # Przeglądanie i pobieranie treści
@@ -13,7 +14,7 @@ Po połączeniu z dostawcą treści możesz przeglądać jego bibliotekę, pobie
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Połącz się z co najmniej jednym dostawcą treści -- zobacz [Łączenie z dostawcami](./connecting-providers)
+- Połącz się z co najmniej jednym dostawcą treści -- zobacz [Łączenie z dostawcami](./connecting-providers.md)
 - Przygotuj pilota telewizora do nawigacji
 
 </div>
@@ -38,7 +39,7 @@ Możesz schodzić tak głęboko, jak pozwala struktura treści dostawcy. Przegl�
 
 ## Przeglądanie Lessons.church
 
-Biblioteka [Lessons.church](../../lessons-church/) jest zorganizowana tak samo jak jej strona internetowa. Na najwyższym poziomie zobaczysz dwa foldery:
+Biblioteka [Lessons.church](../../lessons-church/index.md) jest zorganizowana tak samo jak jej strona internetowa. Na najwyższym poziomie zobaczysz dwa foldery:
 
 - **Lessons** - Wejdź najpierw do **programu**, potem do **opracowania**, a następnie do **lekcji**. Każda lekcja wyświetla listę jej **wersji**, czyli wariantów lekcji dla określonej grupy wiekowej lub kontekstu, na przykład Przedszkole lub Szkoła podstawowa. Wybierz wersję, aby otworzyć ekran pobierania tej wersji lekcji.
 - **Add-Ons** - Dodatkowe filmy i materiały, pogrupowane według kategorii
@@ -78,7 +79,7 @@ Podczas odtwarzania używaj tych przycisków:
 Po zamknięciu odtwarzacza wracasz do przeglądarki treści na poziomie głównym bieżącego dostawcy.
 
 :::info
-Pełne zestawienie wszystkich sterowań odtwarzacza znajdziesz w artykule [Odtwarzanie treści](./playing-content).
+Pełne zestawienie wszystkich sterowań odtwarzacza znajdziesz w artykule [Odtwarzanie treści](./playing-content.md).
 :::
 
 ## Przełączanie między dostawcami

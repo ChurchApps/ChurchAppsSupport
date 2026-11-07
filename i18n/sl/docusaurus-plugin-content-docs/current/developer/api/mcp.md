@@ -1,5 +1,6 @@
 ---
 title: "Strežnik MCP"
+description: "Nastavite dostop MCP do API-ja B1, da AI odjemalci (Claude Code, Cursor, Claude Desktop) lahko kličejo podatke cerkve z API ključi ali prijavo OAuth."
 ---
 
 # Strežnik MCP
@@ -13,7 +14,7 @@ B1 API vključuje strežnik [MCP (Model Context Protocol)](https://modelcontextp
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Ključ B1 API](./api-keys) (`cak_…`) z dovoljenji (scopes), ki jih mora imeti odjemalec, ali odjemalec MCP, ki se lahko prijavi z OAuth (glejte [Odkrivanje OAuth](#oauth-discovery))
+- [Ključ B1 API](./api-keys.md) (`cak_…`) z dovoljenji (scopes), ki jih mora imeti odjemalec, ali odjemalec MCP, ki se lahko prijavi z OAuth (glejte [Odkrivanje OAuth](#oauth-discovery))
 - Dosegljiv gostitelj B1 API: `https://api.churchapps.org` za gostujoče cerkve ali vaša lastna namestitev
 - Odjemalec MCP. Za nastavitev za končne uporabnike glejte [Claude](/docs/b1-admin/integrations/claude) in [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Rezultat orodja je označen z `isError: true` za vsak odziv s statusom ≥ 400.
 
 ### `describe_page_builder`
 
-Edino orodje, ki ni splošno: statičen, samostojen vodnik za gradnjo spletnih strani prek krajnjih točk `/content/*`. Vsebuje podatkovni model Stran → Razdelek → Element, delovni tok ustvarjanja, vsak `elementType` s svojo obliko `answersJSON`, nastavitve na ravni razdelka, kot sta obliki delilnikov `dividerTop` in `dividerBottom`, ter celoten primer od začetka do konca. Ne sprejme vhoda in zrcali katalog elementov, ki ga vzdržuje urejevalnik B1Admin (glejte [Arhitektura graditelja spletnih strani](../architecture/website-builder)). Agenti naj ga pokličejo enkrat, preden ustvarjajo ali urejajo vsebino strani, nato pa ukrepajo prek `api_call`.
+Edino orodje, ki ni splošno: statičen, samostojen vodnik za gradnjo spletnih strani prek krajnjih točk `/content/*`. Vsebuje podatkovni model Stran → Razdelek → Element, delovni tok ustvarjanja, vsak `elementType` s svojo obliko `answersJSON`, nastavitve na ravni razdelka, kot sta obliki delilnikov `dividerTop` in `dividerBottom`, ter celoten primer od začetka do konca. Ne sprejme vhoda in zrcali katalog elementov, ki ga vzdržuje urejevalnik B1Admin (glejte [Arhitektura graditelja spletnih strani](../architecture/website-builder.md)). Agenti naj ga pokličejo enkrat, preden ustvarjajo ali urejajo vsebino strani, nato pa ukrepajo prek `api_call`.
 
 ## Model avtentikacije
 
@@ -153,11 +154,11 @@ Na `/mcp` ni omejitve hitrosti na ravni aplikacije. V produkciji se omejevanje p
 
 ## Odkrivanje OAuth
 
-Strežnik MCP oglašuje metapodatke OAuth 2.1, da lahko odjemalci, ki se povežejo samo s strežniki, odkritimi prek OAuth (zlasti vmesnik »Add custom connector« v Claude.ai), prijavijo uporabnika brez prilepljenega ključa. `/mcp` je zaščiteni vir, [ponudnik OAuth](./connected-apps) pod `/membership/oauth` je strežnik za avtorizacijo, stran `/oauth` v B1Admin pa je zaslon za soglasje.
+Strežnik MCP oglašuje metapodatke OAuth 2.1, da lahko odjemalci, ki se povežejo samo s strežniki, odkritimi prek OAuth (zlasti vmesnik »Add custom connector« v Claude.ai), prijavijo uporabnika brez prilepljenega ključa. `/mcp` je zaščiteni vir, [ponudnik OAuth](./connected-apps.md) pod `/membership/oauth` je strežnik za avtorizacijo, stran `/oauth` v B1Admin pa je zaslon za soglasje.
 
 | Krajnja točka | Namen |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (tudi `/.well-known/oauth-protected-resource/mcp`) | Metapodatki zaščitenega vira (RFC 9728): `resource` je `<api>/mcp`, `authorization_servers` je korenski naslov API-ja, `scopes_supported` pa našteva vsako [dovoljenje API ključa](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (tudi `/.well-known/oauth-protected-resource/mcp`) | Metapodatki zaščitenega vira (RFC 9728): `resource` je `<api>/mcp`, `authorization_servers` je korenski naslov API-ja, `scopes_supported` pa našteva vsako [dovoljenje API ključa](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metapodatki strežnika za avtorizacijo (RFC 8414): `authorization_endpoint` je B1Admin `/oauth`, `token_endpoint` je `/membership/oauth/token`, `registration_endpoint` je `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Dinamična registracija odjemalca (RFC 7591) |
 
@@ -209,8 +210,8 @@ Strežnik MCP je v `src/modules/mcp/` v repozitoriju Api. Pomembne datoteke:
 
 ## Povezano
 
-- [Ključi API](./api-keys)
-- [Webhooki](./webhooks)
-- [Povezane aplikacije (OAuth)](./connected-apps)
+- [Ključi API](./api-keys.md)
+- [Webhooki](./webhooks.md)
+- [Povezane aplikacije (OAuth)](./connected-apps.md)
 - [Claude: nastavitev za končne uporabnike](/docs/b1-admin/integrations/claude)
 - [ChatGPT: nastavitev za končne uporabnike](/docs/b1-admin/integrations/chatgpt)

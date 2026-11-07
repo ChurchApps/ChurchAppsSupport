@@ -1,5 +1,6 @@
 ---
 title: "Punkty końcowe frekwencji"
+description: "Dokumentacja API obecności w B1 Admin i B1 Checkin: kampusy, nabożeństwa, godziny, sesje, wizyty, reguły zameldowania i punkty końcowe eksportu."
 ---
 
 # Punkty końcowe frekwencji
@@ -270,6 +271,6 @@ Authorization: Bearer <token>
 
 ## Powiązane strony
 
-- [Punkty końcowe członkostwa](./membership) — osoby, grupy, role i zarządzanie kościołem
-- [Uwierzytelnianie i uprawnienia](./authentication) — proces logowania, JWT, model uprawnień
-- [Struktura modułów](../module-structure) — wzorce organizacji kodu
+- [Punkty końcowe członkostwa](./membership.md) — osoby, grupy, role i zarządzanie kościołem
+- [Uwierzytelnianie i uprawnienia](./authentication.md) — proces logowania, JWT, model uprawnień
+- [Struktura modułów](../module-structure.md) — wzorce organizacji kodu

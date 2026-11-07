@@ -1,5 +1,6 @@
 ---
 title: "A naptár ütemezése"
+description: "Heti vagy egyszeri ütemezés a FreePlay Admin Naptárában: lejátszólisták, tervek vagy szolgáltatómappák képernyőcsoportokra, alapértelmezett ciklusokkal."
 ---
 
 # A naptár ütemezése
@@ -13,8 +14,8 @@ A FreePlay Adminban található **Naptár** oldal szabályozza, hogy az egyes k�
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Hozzon létre legalább egy képernyőcsoportot. Lásd: [Képernyők és csoportok kezelése](./managing-screens#screen-groups)
-- [Készítsen egy lejátszási listát](./building-playlists), vagy legyen beállítva egy tervtípus a B1 Adminban
+- Hozzon létre legalább egy képernyőcsoportot. Lásd: [Képernyők és csoportok kezelése](./managing-screens.md#screen-groups)
+- [Készítsen egy lejátszási listát](./building-playlists.md), vagy legyen beállítva egy tervtípus a B1 Adminban
 
 </div>
 
@@ -82,11 +83,11 @@ Ha két ütemezés átfedi egymást, az űrlap figyelmeztetést jelenít meg: **
 
 ## Hogyan veszik át a képernyők a változásokat
 
-A párosított képernyők letöltik a következő 7 napra ütemezett összes tartalmat, és maguktól ellenőrzik a változásokat. A naptár szerkesztése után nem kell a TV-hez nyúlnia. Hogy lássa, mikor van egy képernyőnek minden szükséges tartalma, ellenőrizze a **Készen eddig** oszlopot a [Képernyők oldalon](./managing-screens).
+A párosított képernyők letöltik a következő 7 napra ütemezett összes tartalmat, és maguktól ellenőrzik a változásokat. A naptár szerkesztése után nem kell a TV-hez nyúlnia. Hogy lássa, mikor van egy képernyőnek minden szükséges tartalma, ellenőrizze a **Készen eddig** oszlopot a [Képernyők oldalon](./managing-screens.md).
 
 ## Kapcsolódó cikkek
 
-- **[Lejátszási listák készítése](./building-playlists)** - Az ütemezett lejátszási listák létrehozása
-- **[Ütemezett lejátszás a TV-n](./scheduled-playback)** - Hogyan működik a tanár üteme szerinti lejátszás és a távirányító a TV-n
-- **[Képernyők és csoportok kezelése](./managing-screens)** - Csoportok hozzáadása és az egyes képernyők letöltéseinek ellenőrzése
+- **[Lejátszási listák készítése](./building-playlists.md)** - Az ütemezett lejátszási listák létrehozása
+- **[Ütemezett lejátszás a TV-n](./scheduled-playback.md)** - Hogyan működik a tanár üteme szerinti lejátszás és a távirányító a TV-n
+- **[Képernyők és csoportok kezelése](./managing-screens.md)** - Csoportok hozzáadása és az egyes képernyők letöltéseinek ellenőrzése
 - **[Minden lecke egy részének megtartása](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Egy tervtípus minden ütemezett leckéjét csökkentheti azokra a részekre, amelyeket a terme lejátszik

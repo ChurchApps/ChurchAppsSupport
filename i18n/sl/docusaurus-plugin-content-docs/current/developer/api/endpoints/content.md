@@ -1,5 +1,6 @@
 ---
 title: "Končne točke vsebine"
+description: "Referenca končnih točk API-ja za vsebine ChurchApps: spletne strani, bloge, preusmeritve, pridige, dogodke, datoteke, Sveto pismo in pesmi v B1 Admin."
 ---
 
 # Končne točke vsebine
@@ -133,7 +134,7 @@ Osnovna pot: `/content/pageHistory`
 
 Osnovna pot: `/content/posts`
 
-Blog objave so samostojne vrstice: `title`, `slug` (edinstven za cerkev), `excerpt`, `content` (telo v Markdownu), `authorId`, `photoUrl`, `publishDate`, `category` in `tags`. Objava je objavljena, ko je nastavljen `publishDate` in je v preteklosti. Bralne končne točke vsaki objavi dodajo `authorName`, razrešen iz `authorId`. Glej [Arhitektura gradnika spletnega mesta](../../architecture/website-builder#blog).
+Blog objave so samostojne vrstice: `title`, `slug` (edinstven za cerkev), `excerpt`, `content` (telo v Markdownu), `authorId`, `photoUrl`, `publishDate`, `category` in `tags`. Objava je objavljena, ko je nastavljen `publishDate` in je v preteklosti. Bralne končne točke vsaki objavi dodajo `authorName`, razrešen iz `authorId`. Glej [Arhitektura gradnika spletnega mesta](../../architecture/website-builder.md#blog).
 
 | Metoda | Pot | Avtentikacija | Dovoljenje | Opis |
 |--------|------|------|------|------|
@@ -458,8 +459,8 @@ Osnovna pot: `/content/support`
 
 ## Sorodne strani
 
-- [Arhitektura gradnika spletnega mesta](../../architecture/website-builder) -- Kako se strani, odseki, elementi, objave in preusmeritve povezujejo med aplikacijami
-- [Končne točke članstva](./membership) -- Osebe, cerkve, skupine, vloge, dovoljenja
-- [Končne točke obiskov](./attendance) -- Sledenje storitvam in obiskom
-- [Avtentikacija in dovoljenja](./authentication) -- Potek prijave, JWT, model dovoljenj
-- [Struktura modula](../module-structure) -- Vzorci organizacije kode
+- [Arhitektura gradnika spletnega mesta](../../architecture/website-builder.md) -- Kako se strani, odseki, elementi, objave in preusmeritve povezujejo med aplikacijami
+- [Končne točke članstva](./membership.md) -- Osebe, cerkve, skupine, vloge, dovoljenja
+- [Končne točke obiskov](./attendance.md) -- Sledenje storitvam in obiskom
+- [Avtentikacija in dovoljenja](./authentication.md) -- Potek prijave, JWT, model dovoljenj
+- [Struktura modula](../module-structure.md) -- Vzorci organizacije kode

@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje strani"
+description: "V pogledu Strani spletne strani v B1 Admin ustvarjajte, urejajte in razvrščajte strani ter krmarjenje, vključno z nastavitvami strani, preusmeritvami in predlogami."
 ---
 
 # Upravljanje strani
@@ -13,13 +14,13 @@ Pogled Strani spletnega mesta je vaše osrednje mesto za ustvarjanje, urejanje i
 <div class="prereqs">
 <h4>Pred začetkom</h4>
 
-- Dokončajte [Začetno nastavitev](initial-setup), da nastavite svojo domeno in osnovne nastavitve spletnega mesta
-- Pripravite vsebino in slike. Najprej naložite medijske datoteke z upraviteljem [Datoteke](files).
+- Dokončajte [Začetno nastavitev](./initial-setup.md), da nastavite svojo domeno in osnovne nastavitve spletnega mesta
+- Pripravite vsebino in slike. Najprej naložite medijske datoteke z upraviteljem [Datoteke](./files.md).
 
 </div>
 
 :::info
-Če ima vaša cerkev več kot eno spletno mesto (na primer ločena mesta za posamezne podružnice), uporabite preklopnik spletnih mest na vrhu pogleda Strani spletnega mesta, da preskočite med njimi. Vsako mesto ima svoje strani, navigacijo in nastavitve [videza](appearance).
+Če ima vaša cerkev več kot eno spletno mesto (na primer ločena mesta za posamezne podružnice), uporabite preklopnik spletnih mest na vrhu pogleda Strani spletnega mesta, da preskočite med njimi. Vsako mesto ima svoje strani, navigacijo in nastavitve [videza](./appearance.md).
 :::
 
 ## Razumevanje vrst strani
@@ -35,7 +36,7 @@ Katero koli samodejno ustvarjeno stran lahko pretvorite v stran po meri, če že
 
 1. Kliknite gumb **Dodaj stran** v zgornjem desnem kotu pogleda Strani spletnega mesta.
 2. Izberite vrsto strani (prazno ali predlogo) in ji dajte ime.
-3. Kliknite **Uredi vsebino** poleg katere koli strani, da odprete [urejevalnik strani](page-editor), kjer lahko dodajate odseke, besedilo, slike in druge elemente.
+3. Kliknite **Uredi vsebino** poleg katere koli strani, da odprete [urejevalnik strani](./page-editor.md), kjer lahko dodajate odseke, besedilo, slike in druge elemente.
 4. Kliknite **Nastavitve strani** poleg strani, da posodobite naslov strani, pot URL in druge metapodatke.
 5. Kliknite pot strani v stolpcu **Pot**, da odprete živo stran v novem zavihku in si ogledate, kako bo videti obiskovalcem.
 
@@ -112,10 +113,10 @@ Na svoje strani lahko dodate [obrazce](../forms/creating-forms.md), da zberete p
 3. Ko najdete tisto, ki vam je všeč, kliknite **Uporabi predlogo**.
 4. Strani, ki še ne obstajajo, se ustvarijo in dodajo v vašo navigacijo. Obstoječe strani ostanejo nespremenjene.
 
-Po uporabi predloge odprite vsako stran v [urejevalniku strani](page-editor) in zamenjajte označevalno besedilo in slike z dejansko vsebino vaše cerkve.
+Po uporabi predloge odprite vsako stran v [urejevalniku strani](./page-editor.md) in zamenjajte označevalno besedilo in slike z dejansko vsebino vaše cerkve.
 
 :::info
-Predloge spletnih mest ustvarijo strukturo strani in navigacijo. Ne prepišejo barvne sheme ali pisav vašega spletnega mesta -- te upravlja [Videz](appearance).
+Predloge spletnih mest ustvarijo strukturo strani in navigacijo. Ne prepišejo barvne sheme ali pisav vašega spletnega mesta -- te upravlja [Videz](./appearance.md).
 :::
 
 ## Povečava slik
@@ -124,7 +125,7 @@ Ko obiskovalci kliknejo sliko na vašem spletnem mestu, se ta odpre v celozaslon
 
 ## Naslednji koraki
 
-- [Začetna nastavitev](initial-setup) -- Navodila za nastavitev ob prvi uporabi
-- [Uporaba urejevalnika strani](page-editor) -- Naučite se ustvarjati in oblikovati vsebino strani
-- [Videz](appearance) -- Prilagodite vizualno temo vašega spletnega mesta
-- [Datoteke](files) -- Naložite in upravljajte medijske datoteke za svoje strani
+- [Začetna nastavitev](./initial-setup.md) -- Navodila za nastavitev ob prvi uporabi
+- [Uporaba urejevalnika strani](./page-editor.md) -- Naučite se ustvarjati in oblikovati vsebino strani
+- [Videz](./appearance.md) -- Prilagodite vizualno temo vašega spletnega mesta
+- [Datoteke](./files.md) -- Naložite in upravljajte medijske datoteke za svoje strani

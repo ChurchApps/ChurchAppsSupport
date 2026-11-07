@@ -1,5 +1,6 @@
 ---
 title: "Lớp học"
+description: "Thiết lập và quản lý các lớp học tổ chức lịch giảng dạy của nhà thờ trong Lessons.church, từ phòng học và nhóm tuổi đến màn hình dành cho tình nguyện viên."
 ---
 
 # Lớp học

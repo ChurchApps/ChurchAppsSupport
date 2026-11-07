@@ -1,5 +1,6 @@
 ---
 title: "Luhlu Lwekuhlola & Emacembu Langabuyiswa"
+description: "Chaza umlandvo wekuhlola we-Api lorekhodia kushintja konkhe kumodyuli, nekutsi imabhetshi yekungenisa ingabuyiswa umugca ngemugca ku-B1 Admin."
 ---
 
 # Luhlu Lwekuhlola & Emacembu Langabuyiswa
@@ -155,6 +156,6 @@ Bubanti bombili be-admin ba**sesikhatsini sekusebenta**; injongo:
 
 ## Emakhasi Lahlobene
 
-- [Sakhiwo Semodyuli](../api/module-structure) — kutsi controller lengasiyo ye-membership ifinyelela njani kuma-repository we-membership nge-`RepoManager`
-- [Kunikela](./giving) — tindlela tekubhala tekunikela letihlolwako njenge-`sensitive` ngisho nanome kungaziwa
-- [Ema-Endpoint E-Membership](../api/endpoints/membership) — bubanti be-REST lobuthwala `X-Batch-Id` futsi bukhombisa `/auditlogs` kanye ne-`/batches`
+- [Sakhiwo Semodyuli](../api/module-structure.md) — kutsi controller lengasiyo ye-membership ifinyelela njani kuma-repository we-membership nge-`RepoManager`
+- [Kunikela](./giving.md) — tindlela tekubhala tekunikela letihlolwako njenge-`sensitive` ngisho nanome kungaziwa
+- [Ema-Endpoint E-Membership](../api/endpoints/membership.md) — bubanti be-REST lobuthwala `X-Batch-Id` futsi bukhombisa `/auditlogs` kanye ne-`/batches`

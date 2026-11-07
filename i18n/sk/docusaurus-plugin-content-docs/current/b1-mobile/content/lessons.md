@@ -1,5 +1,7 @@
 ---
-title: "Lekcie (zastarané)"
+title: "Obrazovka Lekcie v B1 Mobile (vyradená)"
+sidebar_label: "Lekcie (zastarané)"
+description: "Stránka Lekcie (zastaraná): prečo bola obrazovka Lekcie v B1 Mobile vyradená a kde nájdete učebné osnovy teraz (FreePlay alebo Lessons.church)."
 ---
 
 # Lekcie (zastarané)
@@ -19,7 +21,7 @@ Obrazovka Lekcie vám poskytovala prístup k učebným osnovám a vzdelávacím 
 <div class="prereqs">
 <h4>Pred začiatkom</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 - Vaša cirkev musí mať učebné osnovy nakonfigurované cez Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Obrazovka Lekcie sa zobrazí, keď vaša cirkev nakonfiguruje učebné osnovy ce
 
 - [Prehľad FreePlay](/docs/freeplay/) -- Náhradná TV aplikácia na prehrávanie lekcií v triede
 - [Lessons.church](/docs/lessons-church/) -- Priame prehliadanie a správa učebných osnov
-- [Biblia](./bible) -- Čítajte Písmo spolu so svojimi lekciami
-- [Kázne](./sermons) -- Pozrite si kázne, ktoré dopĺňajú vaše štúdium
+- [Biblia](./bible.md) -- Čítajte Písmo spolu so svojimi lekciami
+- [Kázne](./sermons.md) -- Pozrite si kázne, ktoré dopĺňajú vaše štúdium

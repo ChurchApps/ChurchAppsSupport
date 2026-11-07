@@ -1,5 +1,7 @@
 ---
-title: "Inicio de sesión"
+title: "Inicio de sesión en B1.church y el portal de miembros"
+sidebar_label: "Inicio de sesión"
+description: "Inicia sesión en tu portal de miembros de B1.church, usa códigos de dos factores o inicio de sesión único, restablece una contraseña olvidada y cierra sesión desde el menú de tu cuenta."
 ---
 
 # Inicio de sesión
@@ -13,7 +15,7 @@ Iniciar sesión en B1.church le da acceso al portal de miembros, donde puede ver
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesita una cuenta de ChurchApps. Consulte [Primeros pasos](../getting-started/) para crearla.
+- Necesita una cuenta de ChurchApps. Consulte [Primeros pasos](./index.md) para crearla.
 - Necesita la URL de B1.church de su iglesia (por ejemplo, `https://sunombredeiglesia.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Permanece con la sesión iniciada en el mismo navegador o aplicación instalada 
 
 ## Acceder al portal de miembros
 
-Una vez que inicie sesión, puede acceder al portal de miembros haciendo clic en su **nombre** en la esquina superior derecha de la página y seleccionando **Portal de miembros** en el menú. El portal de miembros es donde viven todas sus herramientas personales de la iglesia, incluidos su [panel de inicio](./navigating.md), su [página Yo](./me-page.md), los [grupos](../groups/), las [donaciones](../giving/) y mucho más.
+Una vez que inicie sesión, puede acceder al portal de miembros haciendo clic en su **nombre** en la esquina superior derecha de la página y seleccionando **Portal de miembros** en el menú. El portal de miembros es donde viven todas sus herramientas personales de la iglesia, incluidos su [panel de inicio](./navigating.md), su [página Yo](./me-page.md), los [grupos](../groups/index.md), las [donaciones](../giving/index.md) y mucho más.
 
 ## Su menú de usuario
 

@@ -1,5 +1,6 @@
 ---
 title: "Geräte verwalten"
+description: "Koppeln, benennen und entfernen Sie in B1 Admin ChurchAppsPlayer- und FreePlay-Bildschirme, die mit Ihrem Konto verbunden sind, damit Gemeindeanzeigen aktuell und sicher bleiben."
 ---
 
 # Geräte verwalten

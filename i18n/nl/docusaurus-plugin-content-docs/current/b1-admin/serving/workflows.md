@@ -1,5 +1,6 @@
 ---
 title: "Workflows"
+description: "Bouw Kanban-borden in B1 Admin om mensen door opvolgstappen te leiden, met automatische e-mails, sms'jes en triggers die mensen zelf toevoegen."
 ---
 
 # Workflows
@@ -201,7 +202,7 @@ Gebruik deze om knelpunten op te sporen -- bijvoorbeeld een stap waar kaarten zi
 ## Gerelateerde artikelen
 
 - [Taken](./tasks.md) -- de individuele actiepunten waarop workflowkaarten zijn gebouwd
-- [Automatiseringen](./automations.md) -- maak terugkerende taken op een schema
+- [Automatiseringen](./workflows.md) -- maak terugkerende taken op een schema
 - [Formulieren](../forms/index.md) -- bouw de formulieren die workflows kunnen activeren
 - [Groepen](../groups/index.md) -- de groepen waarin een "Aan groep toevoegen"-actie mensen kan plaatsen
 - [Rollen & Rechten](../settings/roles-permissions.md) -- bepaal wie workflows kan bekijken, bewerken en beheren

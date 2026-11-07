@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Điểm danh trong cổng thành viên B1.church"
+sidebar_label: "Check-In"
+description: "Điểm danh bản thân và thành viên gia đình vào buổi thờ phượng từ cổng thành viên B1.church, bỏ qua kiosk và chọn nhóm."
 ---
 
 # Check-In

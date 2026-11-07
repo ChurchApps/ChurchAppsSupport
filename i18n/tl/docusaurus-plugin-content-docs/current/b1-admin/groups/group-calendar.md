@@ -1,5 +1,6 @@
 ---
 title: "Kalendaryo ng Group"
+description: "Magplano ng pulong at paulit-ulit na event sa group calendar sa B1 Admin at B1.church, kasama ang bulk scheduling, RSVP, at calendar subscription."
 ---
 
 # Kalendaryo ng Group

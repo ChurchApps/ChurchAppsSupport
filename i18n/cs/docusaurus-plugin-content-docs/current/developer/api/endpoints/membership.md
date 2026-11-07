@@ -1,5 +1,6 @@
 ---
 title: "Koncové body modulu Membership"
+description: "Referenční přehled endpointů Membership API ChurchApps: osoby, domácnosti, skupiny, role, formuláře a nastavení, s pravidly autentizace a oprávnění."
 ---
 
 # Koncové body modulu Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Základní cesta: `/membership/users`
 
-Informace o přihlášení, registraci a správě hesel najdete v části [Autentizace a oprávnění](./authentication).
+Informace o přihlášení, registraci a správě hesel najdete v části [Autentizace a oprávnění](./authentication.md).
 
 | Metoda | Cesta | Autentizace | Oprávnění | Popis |
 |--------|------|------|------|------|
@@ -342,6 +343,6 @@ Základní cesta: `/membership/clientErrors`
 
 ## Související stránky
 
-- [Autentizace a oprávnění](./authentication) — Přihlašovací postup, JWT, OAuth, model oprávnění
-- [Koncové body docházky](./attendance) — Sledování bohoslužeb a návštěv
-- [Struktura modulu](../module-structure) — Vzory organizace kódu
+- [Autentizace a oprávnění](./authentication.md) — Přihlašovací postup, JWT, OAuth, model oprávnění
+- [Koncové body docházky](./attendance.md) — Sledování bohoslužeb a návštěv
+- [Struktura modulu](../module-structure.md) — Vzory organizace kódu

@@ -1,5 +1,6 @@
 ---
 title: "Tinhlu"
+description: "Hlela tinkhulumo tibe ti-series ku-B1 Admin kuze labavakashi ku-webhusayithi yakho ye-B1.church bakwazi kuphephisa nekulandela ngalinye ngalokulandzelanako."
 ---
 
 # Tinhlu
@@ -39,10 +40,10 @@ Yakha tinhlu takho kucala ngembi kwekwengeta tintshumayelo. Ngaleyo ndlela ungak
 
 ## Kwengeta Tintshumayelo Kuluhlu
 
-Nawu-[engeta nome uhlela intshumayelo](managing-sermons), uyinikeza luhlu ngekusebentisa iluhlu lolwehlako le-**Luhlu**. Tonkhe tintshumayelo letinikezwe luhlu lolufananako tihlanganiswa ndzawonye futsi tikhonjiswa ngendlela lelungile eliwebusayithini lakho.
+Nawu-[engeta nome uhlela intshumayelo](./managing-sermons.md), uyinikeza luhlu ngekusebentisa iluhlu lolwehlako le-**Luhlu**. Tonkhe tintshumayelo letinikezwe luhlu lolufananako tihlanganiswa ndzawonye futsi tikhonjiswa ngendlela lelungile eliwebusayithini lakho.
 
 :::info
-Ungakwati futsi kunikeza tintshumayelo tinhlu ngesikhatsi se-[Kungeniswa Ngebuningi](bulk-import). Nawungenisa kusuka ku-YouTube nome Vimeo, khetsa luhlu eluhlwini lolwehlako lwe-**Ngenisa Kuluhlu** ngembi kwekutsi uchofote **Ngenisa**.
+Ungakwati futsi kunikeza tintshumayelo tinhlu ngesikhatsi se-[Kungeniswa Ngebuningi](./bulk-import.md). Nawungenisa kusuka ku-YouTube nome Vimeo, khetsa luhlu eluhlwini lolwehlako lwe-**Ngenisa Kuluhlu** ngembi kwekutsi uchofote **Ngenisa**.
 :::
 
 ## Indlela Tinhlu Letivela Ngayo Eliwebusayithini Lakho
@@ -55,5 +56,5 @@ Tinhlu tikhonjiswa eliwebusayithini lakho le-B1.church njengemitsamo lengaphequl
 
 ## Tinyatselo Letilandzelako
 
-- [Kuphatsa Tintshumayelo](managing-sermons) -- Engeta tintshumayelo nga ngayinye etinhlwini takho
-- [Kungeniswa Ngebuningi](bulk-import) -- Ngenisa tintshumayelo letinyenti bese uzinikeza tinhlu
+- [Kuphatsa Tintshumayelo](./managing-sermons.md) -- Engeta tintshumayelo nga ngayinye etinhlwini takho
+- [Kungeniswa Ngebuningi](./bulk-import.md) -- Ngenisa tintshumayelo letinyenti bese uzinikeza tinhlu

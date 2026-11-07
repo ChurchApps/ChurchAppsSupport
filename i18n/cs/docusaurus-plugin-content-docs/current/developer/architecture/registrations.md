@@ -1,12 +1,13 @@
 ---
 title: "Registrace na akce"
+description: "Jak fungují registrace na akce v B1 Admin a B1App: typy účastníků, placené doplňky, slevové kódy, platby přes bránu darů a povýšení z čekací listiny."
 ---
 
 # Registrace na akce
 
 <div class="article-intro">
 
-Nativní registrace na akce je součástí modulu obsahu a od vlny placených registrací má plný obchodní model: typy účastníků s cenou, volitelné doplňky s cenou, slevové kódy, platby přes stávající platební bránu církve a waitlist řízený stavy. Platební část záměrně znovu používá zásobník darování. Kontroler registrace účtuje přes stejnou abstrakci `GatewayService` / `IGatewayProvider`, která je popsána na stránce [Darování](./giving), takže modul obsahu neobsahuje žádná data platebních karet ani znalost SDK brány. Tato stránka mapuje datový model, pravidla pro ceny a kapacitu a toky registrace, platby a waitlistu.
+Nativní registrace na akce je součástí modulu obsahu a od vlny placených registrací má plný obchodní model: typy účastníků s cenou, volitelné doplňky s cenou, slevové kódy, platby přes stávající platební bránu církve a waitlist řízený stavy. Platební část záměrně znovu používá zásobník darování. Kontroler registrace účtuje přes stejnou abstrakci `GatewayService` / `IGatewayProvider`, která je popsána na stránce [Darování](./giving.md), takže modul obsahu neobsahuje žádná data platebních karet ani znalost SDK brány. Tato stránka mapuje datový model, pravidla pro ceny a kapacitu a toky registrace, platby a waitlistu.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenizace probíhá v prohlížeči stejně jako u darů (viz [Darování](./giving)). Průvodce používá registr poskytovatelů plateb z apphelperu, takže přihlášení členové mohou platit uloženými kartami a hosté tokenizují novou kartu. Kontroler zrcadlí specifika poskytovatelů z `DonateController` (ID způsobů platby `pm-{id}` u Kingdom Funding, odpovědi Stripe SCA `requires_action` vrácené klientovi bez zápisu platby). Úspěšné účtování zapíše řádek do `registrationPayments`, zvýší `amountPaid` a potvrdí registraci. **Vrácení peněz není implementováno.** Zrušená placená registrace si ponechá řádky plateb a jakékoli vrácení se řeší mimo systém v administraci platební brány.
+Tokenizace probíhá v prohlížeči stejně jako u darů (viz [Darování](./giving.md)). Průvodce používá registr poskytovatelů plateb z apphelperu, takže přihlášení členové mohou platit uloženými kartami a hosté tokenizují novou kartu. Kontroler zrcadlí specifika poskytovatelů z `DonateController` (ID způsobů platby `pm-{id}` u Kingdom Funding, odpovědi Stripe SCA `requires_action` vrácené klientovi bez zápisu platby). Úspěšné účtování zapíše řádek do `registrationPayments`, zvýší `amountPaid` a potvrdí registraci. **Vrácení peněz není implementováno.** Zrušená placená registrace si ponechá řádky plateb a jakékoli vrácení se řeší mimo systém v administraci platební brány.
 
 Obě vstupní místa procházejí stejnou cestou kódu: `register` (platba při registraci) a `pay` (doplacení zůstatku / dokončení čekací listiny).
 
@@ -147,7 +148,7 @@ Vyhledávání napříč moduly (vyhledání nebo vytvoření osoby hosta, načt
 
 ## Související stránky
 
-- [Darování](./giving) — abstrakce brány, registr poskytovatelů a model tokenizace, které tato funkce znovu používá
-- [Koncové body obsahu](../api/endpoints/content) — REST rozhraní modulu obsahu
-- [Webhooky](../api/webhooks) — událost `registration.created`
-- [Struktura modulů](../api/module-structure) — jak je modul obsahu uspořádán na straně serveru
+- [Darování](./giving.md) — abstrakce brány, registr poskytovatelů a model tokenizace, které tato funkce znovu používá
+- [Koncové body obsahu](../api/endpoints/content.md) — REST rozhraní modulu obsahu
+- [Webhooky](../api/webhooks.md) — událost `registration.created`
+- [Struktura modulů](../api/module-structure.md) — jak je modul obsahu uspořádán na straně serveru

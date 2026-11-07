@@ -1,5 +1,6 @@
 ---
 title: "Statisztikák"
+description: "Letöltések száma tanulmányonként, az egyházak és elhelyezkedésük a Lessons.church statisztikáiban, dátumtartomány szerinti szűréssel."
 ---
 
 # Statisztikák

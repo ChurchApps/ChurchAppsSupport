@@ -1,5 +1,6 @@
 ---
 title: "Mina anmälningar"
+description: "Kontrollera anmälningsstatus, betala ett utestående belopp, redigera deltagare eller tillägg eller avboka en evenemangsanmälan i B1 Churchs medlemsportal."
 ---
 
 # Mina anmälningar
@@ -14,7 +15,7 @@ Sidan **Anmälningar** i medlemsportalen är din utgångspunkt för alla evenema
 <h4>Innan du börjar</h4>
 
 - Du måste vara [inloggad](../getting-started/logging-in.md). Gästanmälningar visas inte här.
-- Du behöver minst en evenemangsanmälan. Se [Anmäla sig till evenemang](./registering).
+- Du behöver minst en evenemangsanmälan. Se [Anmäla sig till evenemang](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Din plats frigörs omedelbart. Om evenemanget har en väntelista flyttas nästa 
 
 ## Relaterade artiklar
 
-- [Anmäla sig till evenemang](./registering) -- Anmälningsprocessen, inklusive betalning och väntelistor
+- [Anmäla sig till evenemang](./registering.md) -- Anmälningsprocessen, inklusive betalning och väntelistor
 - [Översikt över evenemang](./index.md) -- Bläddra bland kommande evenemang

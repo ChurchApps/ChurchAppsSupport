@@ -1,5 +1,6 @@
 ---
 title: Panimula sa B1.church
+description: "Gagabayan ka sa pag-sign in sa B1 Admin, sa paghahanap sa Dashboard at Jump menu, at sa pag-set up ng impormasyon ng simbahan bago tuklasin ang iba pang tool."
 ---
 
 # Maligayang pagdating sa B1.church Admin!
@@ -30,7 +31,7 @@ Para sa karagdagang suporta, mag-email sa [support@churchapps.org](mailto:suppor
 10. Maaari ka na ngayong pumasok sa B1.church sa pamamagitan ng **member portal** o **admin portal**. Ipinapakita ng member portal kung paano nakikita ng mga miyembro mo ang B1.church, nakikita ang mga group mo, at napamamahalaan ang sarili nilang donasyon.
 
 :::tip
-Simulan sa pahinang [Settings](./settings/) para i-configure ang pangalan ng simbahan, branding, at mga pahintulot ng team. Tinitiyak nito na tama ang pagpapakita ng lahat ng iba pang iyong isasaayos.
+Simulan sa pahinang [Settings](./settings/index.md) para i-configure ang pangalan ng simbahan, branding, at mga pahintulot ng team. Tinitiyak nito na tama ang pagpapakita ng lahat ng iba pang iyong isasaayos.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ Madalas na pinakamabilis na paraan ang paghahanap para marating ang isang pahina
 
 Pagkatapos panoorin ang panimulang ito, tuklasin ang mga pangunahing feature na ito:
 
-- [Pagdaragdag ng Tao](./people/adding-people) -- Alamin kung paano magdagdag ng mga miyembro sa iyong database
-- [Groups](./groups/) -- I-set up at pamahalaan ang mga group ng simbahan
-- [Serving Plans](./serving/plans) -- Ayusin ang iyong ministeryo sa paglilingkod
-- [Attendance](./attendance/) -- Subaybayan ang pagdalo at check-in
-- [Website](./website/) -- Bumuo at i-customize ang website ng iyong simbahan
-- [Settings](./settings/) -- I-configure ang impormasyon ng iyong simbahan at mga pahintulot
+- [Pagdaragdag ng Tao](./people/adding-people.md) -- Alamin kung paano magdagdag ng mga miyembro sa iyong database
+- [Groups](./groups/index.md) -- I-set up at pamahalaan ang mga group ng simbahan
+- [Serving Plans](./serving/plans.md) -- Ayusin ang iyong ministeryo sa paglilingkod
+- [Attendance](./attendance/index.md) -- Subaybayan ang pagdalo at check-in
+- [Website](./website/index.md) -- Bumuo at i-customize ang website ng iyong simbahan
+- [Settings](./settings/index.md) -- I-configure ang impormasyon ng iyong simbahan at mga pahintulot

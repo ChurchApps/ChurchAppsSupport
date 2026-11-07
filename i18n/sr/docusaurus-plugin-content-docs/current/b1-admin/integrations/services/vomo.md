@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Повежите пријаве волонтера и самопријаве VOMO киоска са особама и групама у B1 Admin преко Zapier-а, укључујући опсеге API кључа и кораке подешавања."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO радње су ограничене на **креирање нацрта �
 
 ### Пошаљите SMS поруку „хвала на пријави”
 
-Повежите VOMO Participation → Clearstream Send Text или Text In Church Send Message у истом Zap-у. Обе имају засебне Zapier радње. Погледајте [Clearstream](./clearstream) и [Text In Church](./text-in-church).
+Повежите VOMO Participation → Clearstream Send Text или Text In Church Send Message у истом Zap-у. Обе имају засебне Zapier радње. Погледајте [Clearstream](./clearstream.md) и [Text In Church](./text-in-church.md).
 
 ### Откријте напуштање
 
@@ -91,6 +92,6 @@ VOMO радње су ограничене на **креирање нацрта �
 
 ## Погледајте такође
 
-- [Zapier (преглед)](../zapier): B1 страна сваког Zapier рецепта
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): упарите пријаве волонтера са SMS потврдама
+- [Zapier (преглед)](../zapier.md): B1 страна сваког Zapier рецепта
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): упарите пријаве волонтера са SMS потврдама
 - [Webhooks (референца за програмере)](/docs/developer/api/webhooks): догађаји на које VOMO може да реагује

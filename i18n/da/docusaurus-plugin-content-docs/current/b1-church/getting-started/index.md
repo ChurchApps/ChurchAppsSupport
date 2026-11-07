@@ -1,5 +1,7 @@
 ---
-title: "Kom i gang"
+title: "Kom godt i gang med B1.church medlemsportalen"
+sidebar_label: "Kom i gang"
+description: "Find din kirkes B1.church-side, opret din medlemskonto, og se hvad portalen tilbyder, fra grupper og giving til check-in og planer."
 ---
 
 # Kom i gang med B1.church

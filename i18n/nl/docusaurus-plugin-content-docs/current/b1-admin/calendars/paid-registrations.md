@@ -1,5 +1,6 @@
 ---
 title: "Betaalde inschrijvingen"
+description: "Stel betaalde evenementinschrijvingen in B1 Admin in: geprijsde deelnemerstypen, extra's, kortingscodes, wachtlijsten en betaling via je giftenprovider."
 ---
 
 # Betaalde inschrijvingen
@@ -13,7 +14,7 @@ Evenementregistratie kan verder gaan dan een eenvoudige koptelling. U kunt gepri
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Schakel eerst registratie in voor het evenement — zie [Agenda's aanmaken](creating-calendars#enabling-event-registration)
+- Schakel eerst registratie in voor het evenement — zie [Agenda's aanmaken](./creating-calendars.md#enabling-event-registration)
 - Om betalingen te innen heeft uw kerk [online geven geconfigureerd](../donations/online-giving-setup.md) nodig (Stripe, PayPal of Kingdom Funding). Gratis evenementen hebben geen geefinstellingen nodig.
 
 </div>
@@ -87,7 +88,7 @@ Betalingen lopen via dezelfde geefgateway die uw kerk al gebruikt voor donaties 
 
 ## Gerelateerde artikelen
 
-- [Agenda's aanmaken](creating-calendars#enabling-event-registration) — registratie inschakelen en de basisinstellingen
+- [Agenda's aanmaken](./creating-calendars.md#enabling-event-registration) — registratie inschakelen en de basisinstellingen
 - [Online geven instellen](../donations/online-giving-setup.md) — configureer de betaalgateway die bij het afrekenen wordt gebruikt
-- [Inschrijven voor evenementen](../../b1-church/events/registering) — wat leden zien wanneer ze zich inschrijven
-- [Mijn registraties](../../b1-church/events/my-registrations) — hoe leden saldi betalen en registraties bewerken
+- [Inschrijven voor evenementen](../../b1-church/events/registering.md) — wat leden zien wanneer ze zich inschrijven
+- [Mijn registraties](../../b1-church/events/my-registrations.md) — hoe leden saldi betalen en registraties bewerken

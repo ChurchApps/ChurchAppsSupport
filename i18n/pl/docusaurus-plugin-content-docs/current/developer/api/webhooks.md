@@ -1,5 +1,6 @@
 ---
 title: "Webhooki"
+description: "Skonfiguruj webhooki w czasie rzeczywistym z B1 Admin: rejestruj adresy, wybieraj zdarzenia, weryfikuj podpisy HMAC, obsługuj ponowne próby i ponawiaj dostawy."
 ---
 
 # Webhooki
@@ -33,7 +34,7 @@ Przejdź do **Ustawienia → Dla deweloperów → Webhooki → Nowy webhook**. W
 
 ### Przez API
 
-Wszystkie endpointy znajdują się pod ścieżką bazową modułu Membership `/membership/webhooks` i wymagają tokenu JWT administratora kościoła z uprawnieniem `Settings / Edit` **lub [klucza API](./api-keys) utworzonego z zakresem `settings:write`**. Te same trasy akceptują oba sposoby. Dzięki temu Zapier i Make mogą rejestrować webhooki w imieniu kościoła po włączeniu Zapa lub scenariusza.
+Wszystkie endpointy znajdują się pod ścieżką bazową modułu Membership `/membership/webhooks` i wymagają tokenu JWT administratora kościoła z uprawnieniem `Settings / Edit` **lub [klucza API](./api-keys.md) utworzonego z zakresem `settings:write`**. Te same trasy akceptują oba sposoby. Dzięki temu Zapier i Make mogą rejestrować webhooki w imieniu kościoła po włączeniu Zapa lub scenariusza.
 
 ```http
 POST /membership/webhooks

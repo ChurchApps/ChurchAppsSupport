@@ -1,5 +1,7 @@
 ---
-title: "Bài giảng"
+title: "Xem bài giảng trong B1 Mobile"
+sidebar_label: "Bài giảng"
+description: "Duyệt, tìm và xem các bài giảng và loạt bài đã ghi trong ứng dụng B1 Mobile, gồm cách theo dõi bộ đếm ngược phát trực tiếp."
 ---
 
 # Bài giảng
@@ -13,7 +15,7 @@ Màn hình Bài giảng cho phép bạn xem và nghe lại các bài giảng đ�
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Hội thánh của bạn phải đã cấu hình nội dung bài giảng trong cổng quản trị
 
 </div>
@@ -29,7 +31,7 @@ Màn hình Bài giảng được tổ chức thành chế độ xem có thẻ ta
 
 ## Đếm Ngược Phát Trực Tiếp
 
-Khi một [buổi phát trực tiếp](./live-streaming) sắp diễn ra trong vòng 24 giờ tới, một bộ đếm thời gian sẽ xuất hiện trên màn hình Bài giảng. Điều này giúp bạn biết khi nào buổi nhóm họp tiếp theo sẽ được phát sóng để có thể lên kế hoạch xem trực tiếp.
+Khi một [buổi phát trực tiếp](./live-streaming.md) sắp diễn ra trong vòng 24 giờ tới, một bộ đếm thời gian sẽ xuất hiện trên màn hình Bài giảng. Điều này giúp bạn biết khi nào buổi nhóm họp tiếp theo sẽ được phát sóng để có thể lên kế hoạch xem trực tiếp.
 
 ## Xem Một Bài Giảng
 
@@ -51,7 +53,7 @@ Mỗi mục bài giảng có thể hiển thị:
 - **Ảnh thu nhỏ** -- Ảnh xem trước của bài giảng
 
 :::tip
-Nếu bạn thấy bộ đếm ngược trên màn hình Bài giảng, hãy nhấn vào đó để chuyển thẳng đến [buổi phát trực tiếp](./live-streaming) khi nó bắt đầu.
+Nếu bạn thấy bộ đếm ngược trên màn hình Bài giảng, hãy nhấn vào đó để chuyển thẳng đến [buổi phát trực tiếp](./live-streaming.md) khi nó bắt đầu.
 :::
 
 ## Tính Khả Dụng

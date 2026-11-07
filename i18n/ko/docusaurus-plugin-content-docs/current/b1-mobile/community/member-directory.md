@@ -1,5 +1,7 @@
 ---
-title: "교인 명부"
+title: "B1 Mobile 앱의 회원 디렉터리"
+sidebar_label: "교인 명부"
+description: "B1 Mobile 회원 디렉터리에서 교회 사람들을 찾아보세요. 이름순으로 둘러보거나 이름으로 검색하고, 프로필과 가족 연결을 열 수 있습니다."
 ---
 
 # 교인 명부
@@ -13,7 +15,7 @@ B1 모바일의 교인 명부를 사용하면 교회의 교인을 탐색하고 �
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 
 </div>
 
@@ -51,5 +53,5 @@ B1 모바일의 교인 명부를 사용하면 교회의 교인을 탐색하고 �
 
 ## 관련 문서
 
-- [메시지](./messaging) -- 명부에서 찾은 분에게 개인 메시지 보내기
+- [메시지](./messaging.md) -- 명부에서 찾은 분에게 개인 메시지 보내기
 - [개인정보 설정](../profile/privacy-settings.md) -- 명부에서 다른 사람이 볼 수 있는 정보 제어하기

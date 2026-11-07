@@ -1,5 +1,6 @@
 ---
 title: "Mga Endpoint ng Attendance"
+description: "Sanggunian para sa attendance API sa B1 Admin at B1 Checkin: campus, serbisyo, oras ng serbisyo, session, bisita, check-in rule, at export endpoint."
 ---
 
 # Mga Endpoint ng Attendance
@@ -270,6 +271,6 @@ Sinusubaybayan ang mga streak ng attendance ng mga indibidwal -- magkakasunod na
 
 ## Mga Kaugnay na Pahina
 
-- [Membership Endpoints](./membership) — Mga tao, grupo, tungkulin, at pamamahala ng simbahan
-- [Authentication & Permissions](./authentication) — Daloy ng pag-login, JWT, modelo ng pahintulot
-- [Module Structure](../module-structure) — Mga pattern ng organisasyon ng code
+- [Membership Endpoints](./membership.md) — Mga tao, grupo, tungkulin, at pamamahala ng simbahan
+- [Authentication & Permissions](./authentication.md) — Daloy ng pag-login, JWT, modelo ng pahintulot
+- [Module Structure](../module-structure.md) — Mga pattern ng organisasyon ng code

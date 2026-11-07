@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Časy živých přenosů a nastavení v B1 Admin"
+sidebar_label: "Live Streaming"
+description: "Naplánujte týdenní i jednorázové živé přenosy, nastavte čas chatu a videa, propojte kanál YouTube a řešte vkládání v B1 Admin."
 ---
 
 # Živé vysílání
@@ -19,7 +21,7 @@ Stránka Časy živého vysílání vám umožňuje nastavit harmonogram streamo
 
 - Potřebujete oprávnění **contentApi.streamingServices.edit**. Pokud k němu nemáte přístup, podívejte se na [Role a oprávnění](../settings/roles-permissions.md).
 - Pokud plánujete automatické živé vysílání, připravte si ID vašeho kanálu YouTube
-- Přidejte alespoň jedno [kázání](managing-sermons) nebo trvalou adresu URL živého vysílání jako zdroj streamu
+- Přidejte alespoň jedno [kázání](./managing-sermons.md) nebo trvalou adresu URL živého vysílání jako zdroj streamu
 
 </div>
 
@@ -80,13 +82,13 @@ ID kanálu YouTube najdete v pokročilém nastavení svého kanálu na YouTube �
 
 ## Přizpůsobení barev a loga
 
-Vaše stránka živého vysílání používá nastavení [Vzhled](../website/appearance) vašich webových stránek:
+Vaše stránka živého vysílání používá nastavení [Vzhled](../website/appearance.md) vašich webových stránek:
 
 - Pro záhlaví se používá **světlá zvýrazňující barva** s tmavým textem.
 - Pro postranní panel se používá **tmavá zvýrazňující barva** se světlým textem.
 - Vaše **logo pro světlé pozadí** se zobrazí na streamovací stránce. Použijte obrázek s průhledným pozadím a poměrem stran 4:1.
 
-Chcete-li tato nastavení změnit, přejděte na **Web** a poté na **Vzhled** a upravte nastavení [Barevné schéma](../website/appearance#color-palette) a [Logo](../website/appearance#logo-and-branding).
+Chcete-li tato nastavení změnit, přejděte na **Web** a poté na **Vzhled** a upravte nastavení [Barevné schéma](../website/appearance.md#color-palette) a [Logo](../website/appearance.md#logo-and-branding).
 
 ## Přidání hostitelů streamu
 
@@ -133,5 +135,5 @@ Automatické vložení živého vysílání kanálu na YouTube může být zablo
 
 ## Další kroky
 
-- [Správa kázání](managing-sermons) – přidávejte kázání do své knihovny
-- [Playlisty](playlists) – uspořádejte kázání do sérií
+- [Správa kázání](./managing-sermons.md) – přidávejte kázání do své knihovny
+- [Playlisty](./playlists.md) – uspořádejte kázání do sérií

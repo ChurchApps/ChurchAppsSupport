@@ -1,5 +1,6 @@
 ---
 title: "Chaves de API"
+description: "Crie, defina escopos e revogue chaves de API do B1 no B1 Admin para scripts e conectores Zapier, Make ou Google Sheets, sem OAuth completo."
 ---
 
 # Chaves de API
@@ -104,7 +105,7 @@ Uma chave revogada deixa de funcionar imediatamente -- não há período de car�
 
 ## Como ela difere do OAuth
 
-As chaves de API são adequadas quando **a sua igreja é a única que usa a integração**. Para um conector que precisa acessar muitas igrejas, cada uma com consentimento explícito -- como um aplicativo SaaS compartilhado pela comunidade do B1 --, use [OAuth e aplicativos conectados](./connected-apps) em vez disso.
+As chaves de API são adequadas quando **a sua igreja é a única que usa a integração**. Para um conector que precisa acessar muitas igrejas, cada uma com consentimento explícito -- como um aplicativo SaaS compartilhado pela comunidade do B1 --, use [OAuth e aplicativos conectados](./connected-apps.md) em vez disso.
 
 | | Chave de API | OAuth |
 |---|---|---|

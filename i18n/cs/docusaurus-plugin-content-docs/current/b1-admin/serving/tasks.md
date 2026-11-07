@@ -1,5 +1,6 @@
 ---
 title: "Úkoly"
+description: "Vytvářejte, přiřazujte a uzavírejte úkoly v B1 Admin, najdete je v Serving > My Work, a nastavte připomínky termínů, aby nic nezapadlo."
 ---
 
 # Úkoly

@@ -1,5 +1,6 @@
 ---
 title: "Modulstruktur"
+description: "Aufbau der API-Module erklärt: Controller, Repositorys, Gateways, Berechtigungsprüfungen und die sechs Lambda-Funktionen in B1-Umgebungen."
 ---
 
 # Modulstruktur
@@ -13,8 +14,8 @@ Jedes API-Modul folgt einer konsistenten internen Struktur mit Controllern, Repo
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie die API lokal ein -- siehe [Lokale API-Einrichtung](./local-setup)
-- Lesen Sie die Architektur [Datenbank](./database), um die Datenzugriffsschicht zu verstehen
+- Richten Sie die API lokal ein -- siehe [Lokale API-Einrichtung](./local-setup.md)
+- Lesen Sie die Architektur [Datenbank](./database.md), um die Datenzugriffsschicht zu verstehen
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Modulübergreifende Kommunikation
 
-Jedes Modul besitzt seine eigene Datenbank (siehe [Datenbank](./database)), und ein Modul fragt niemals direkt die Tabellen eines anderen Moduls ab. Wenn ein Modul Daten benötigt, die einem anderen gehören -- zum Beispiel wenn das Doing-Modul Personen aus Membership auflöst -- geschieht dies über das **Gateway** des besitzenden Moduls in `src/shared/modules/`:
+Jedes Modul besitzt seine eigene Datenbank (siehe [Datenbank](./database.md)), und ein Modul fragt niemals direkt die Tabellen eines anderen Moduls ab. Wenn ein Modul Daten benötigt, die einem anderen gehören -- zum Beispiel wenn das Doing-Modul Personen aus Membership auflöst -- geschieht dies über das **Gateway** des besitzenden Moduls in `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Lokal läuft die Funktion `web` auf Port 8084 und die Funktion `socket` auf Port
 
 ## Verwandte Artikel
 
-- **[Datenbank](./database)** -- Verbindungszeichenfolgen, Schema-Skripte und Datenzugriffsmuster
-- **[Lokale API-Einrichtung](./local-setup)** -- Vollständige schrittweise Einrichtungsanleitung
-- **[ApiHelper](../shared-libraries/api-helper)** -- Die gemeinsam genutzte Bibliothek, die `CustomBaseController` und Auth-Middleware bereitstellt
+- **[Datenbank](./database.md)** -- Verbindungszeichenfolgen, Schema-Skripte und Datenzugriffsmuster
+- **[Lokale API-Einrichtung](./local-setup.md)** -- Vollständige schrittweise Einrichtungsanleitung
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Die gemeinsam genutzte Bibliothek, die `CustomBaseController` und Auth-Middleware bereitstellt

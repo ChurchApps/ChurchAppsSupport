@@ -1,12 +1,13 @@
 ---
 title: "Eseménynyilvántartások"
+description: "Hogyan működnek az eseményregisztrációk a B1 Adminban és a B1App-ban: résztvevőtípusok, fizetős kiegészítők, kedvezménykódok, fizetés az adakozási átjárón keresztül és várólista-előléptetés."
 ---
 
 # Eseménynyilvántartások
 
 <div class="article-intro">
 
-Az eseményekre történő natív regisztráció a tartalommodulban él, és a fizetős regisztrációk bevezetése óta teljes kereskedelmi modellt kínál: árazott résztvevőtípusokat, árazott kiegészítő választásokat, kedvezménykódokat, fizetést a gyülekezet meglévő adományozási átjárón keresztül, valamint állapotvezérelt várólistát. A fizetési útvonal szándékosan újrahasználja az adományozási rendszert: a regisztrációs vezérlő ugyanazon `GatewayService` / `IGatewayProvider` absztrakción keresztül terheli a számlát, amelyet az [Adományozás](./giving) oldal ismertet, így a tartalommodulban sem kártyaadat, sem átjáró SDK-ismeret nincs. Ez az oldal a adatmodellt, az árazási és kapacitási szabályokat, valamint a regisztrációs, fizetési és várólistás folyamatokat írja le.
+Az eseményekre történő natív regisztráció a tartalommodulban él, és a fizetős regisztrációk bevezetése óta teljes kereskedelmi modellt kínál: árazott résztvevőtípusokat, árazott kiegészítő választásokat, kedvezménykódokat, fizetést a gyülekezet meglévő adományozási átjárón keresztül, valamint állapotvezérelt várólistát. A fizetési útvonal szándékosan újrahasználja az adományozási rendszert: a regisztrációs vezérlő ugyanazon `GatewayService` / `IGatewayProvider` absztrakción keresztül terheli a számlát, amelyet az [Adományozás](./giving.md) oldal ismertet, így a tartalommodulban sem kártyaadat, sem átjáró SDK-ismeret nincs. Ez az oldal a adatmodellt, az árazási és kapacitási szabályokat, valamint a regisztrációs, fizetési és várólistás folyamatokat írja le.
 
 </div>
 
@@ -111,7 +112,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-A tokenizálás a böngészőben történik pontosan úgy, mint az adományoknál (lásd [Adományozás](./giving)) – a varázsló újrahasználja az apphelper szolgáltató-nyilvántartását, így a bejelentkezett tagok mentett kártyákkal fizethetnek, a vendégek pedig új kártyát tokenizálhatnak. A vezérlő követi a `DonateController` szolgáltatóspecifikus sajátosságait (a Kingdom Funding `pm-{id}` fizetési mód-azonosítói, valamint a Stripe SCA `requires_action` válaszai, amelyeket fizetés rögzítése nélkül küld vissza az ügyfélnek). Egy sikeres terhelés egy `registrationPayments` sort ír, növeli az `amountPaid` értéket, és megerősíti a regisztrációt. **A visszatérítés nincs megvalósítva** – egy lemondott, fizetett regisztráció megtartja fizetési soreit, a visszatérítést pedig a fizetési átjáró irányítópultján kívül kell kezelni.
+A tokenizálás a böngészőben történik pontosan úgy, mint az adományoknál (lásd [Adományozás](./giving.md)) – a varázsló újrahasználja az apphelper szolgáltató-nyilvántartását, így a bejelentkezett tagok mentett kártyákkal fizethetnek, a vendégek pedig új kártyát tokenizálhatnak. A vezérlő követi a `DonateController` szolgáltatóspecifikus sajátosságait (a Kingdom Funding `pm-{id}` fizetési mód-azonosítói, valamint a Stripe SCA `requires_action` válaszai, amelyeket fizetés rögzítése nélkül küld vissza az ügyfélnek). Egy sikeres terhelés egy `registrationPayments` sort ír, növeli az `amountPaid` értéket, és megerősíti a regisztrációt. **A visszatérítés nincs megvalósítva** – egy lemondott, fizetett regisztráció megtartja fizetési soreit, a visszatérítést pedig a fizetési átjáró irányítópultján kívül kell kezelni.
 
 Mindkét belépési pont ugyanazon a kódúton halad át: a `register` (fizetés a regisztrációkor) és a `pay` (egyenleg-fizetés / várólistáról történő befejezés).
 
@@ -148,7 +149,7 @@ A modulok közötti keresések (a vendég személy feloldása vagy létrehozása
 
 ## Kapcsolódó oldalak
 
-- [Adományozás](./giving) – az átjáró-absztrakció, a szolgáltató-nyilvántartás és a tokenizálási modell, amelyet ez a funkció újrahasznosít
-- [Tartalom végpontok](../api/endpoints/content) – a tartalommodul REST-felülete
-- [Webhookok](../api/webhooks) – a `registration.created` esemény
-- [Modulok szerkezete](../api/module-structure) – a tartalommodul szerveroldali felépítése
+- [Adományozás](./giving.md) – az átjáró-absztrakció, a szolgáltató-nyilvántartás és a tokenizálási modell, amelyet ez a funkció újrahasznosít
+- [Tartalom végpontok](../api/endpoints/content.md) – a tartalommodul REST-felülete
+- [Webhookok](../api/webhooks.md) – a `registration.created` esemény
+- [Modulok szerkezete](../api/module-structure.md) – a tartalommodul szerveroldali felépítése

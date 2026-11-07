@@ -1,5 +1,6 @@
 ---
 title: "Sınıflar"
+description: "Kilisenizin öğretim programını düzenleyen sınıfları kurun ve yönetin: odalar ve yaş grupları ile gönüllülere yönelik görünümler, Lessons.church'te."
 ---
 
 # Sınıflar

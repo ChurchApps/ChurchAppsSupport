@@ -1,5 +1,7 @@
 ---
-title: "Planları Görüntüleme"
+title: "B1 Mobile'da Hizmet Planlarını Görüntüleme"
+sidebar_label: "Planları Görüntüleme"
+description: "B1 Mobile'da yaklaşan ve geçmiş hizmet takvimlerinizi kontrol edin, plan ayrıntılarını ve ibadet sırasını okuyun; prova veya sahne arkası için planları yazdırın."
 ---
 
 # Planları Görüntüleme
@@ -13,7 +15,7 @@ B1 Mobile'daki planlar ekranı, hizmet programınızın tam bir görünümünü 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kilise yöneticiniz tarafından en az bir hizmet planına atanmış olun
 
 </div>
@@ -61,4 +63,4 @@ Yeni bir plana atandığınızda veya atama durumunuz değiştiğinde [anlık bi
 
 ## İlgili Makaleler
 
-- [Gönüllü Kaydı](./volunteer-signup) -- Açık gönüllü pozisyonlarına göz atın ve kaydolun
+- [Gönüllü Kaydı](./volunteer-signup.md) -- Açık gönüllü pozisyonlarına göz atın ve kaydolun

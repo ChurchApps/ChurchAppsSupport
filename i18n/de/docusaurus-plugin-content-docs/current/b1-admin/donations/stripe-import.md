@@ -1,5 +1,6 @@
 ---
 title: "Stripe-Import"
+description: "Importieren Sie Stripe-Spenden in B1 Admin mit einer vorschaubasierten Übernahme, die jede Zahlung als neu, bereits importiert oder übersprungen markiert, bevor Sie sie bestätigen."
 ---
 
 # Stripe-Import

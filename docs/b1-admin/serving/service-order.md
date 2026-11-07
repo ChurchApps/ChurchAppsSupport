@@ -1,5 +1,7 @@
 ---
-title: "Service Order"
+title: "Service Order in B1 Admin"
+sidebar_label: "Service Order"
+description: "Set up a B1 Admin service order for a worship plan: add songs, lessons, and custom items, arrange them into sections, and print the run sheet."
 ---
 
 # Service Order

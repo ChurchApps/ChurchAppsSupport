@@ -1,5 +1,6 @@
 ---
 title: "Demografie"
+description: "Zobrazte věkové složení, pohlaví, členství, rodinný stav a pobočky sboru v interaktivních grafech B1 Admin a proklikněte se do libovolné skupiny."
 ---
 
 # Demografie

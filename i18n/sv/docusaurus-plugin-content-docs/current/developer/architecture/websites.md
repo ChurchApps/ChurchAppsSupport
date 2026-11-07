@@ -1,12 +1,13 @@
 ---
 title: "Routing av webbplatser & flera webbplatser"
+description: "Hur B1.church kopplar subdomäner och egna domäner till rätt församling eller sekundära webbplats, samt Caddy-kanten som hanterar TLS för egna domäner."
 ---
 
 # Routing av webbplatser & flera webbplatser
 
 <div class="article-intro">
 
-En enskild kyrka kan nu ha fler än en webbplats, och var och en kan finnas på en `*.b1.church`-underdomän eller på en helt anpassad domän som kyrkan äger. Den här sidan beskriver routinglagret *under* byggaren: hur en inkommande förfrågan matchas mot en kyrka **och** mot en specifik webbplats, datamodellen för flera webbplatser (`siteId`-sentinelvärdet som gör att alla befintliga webbplatser fortsätter att renderas oförändrade) och kanten för anpassade domäner, en egenhanterad Caddy-proxy på EC2 som avslutar TLS och skriver om varje kyrkodomän till dess `*.b1.church`-upstream. För vad som faktiskt renderas när en förfrågan har matchats, det vill säga sid-, sektions- och elementträdet, se [Webbplatsbyggaren](./website-builder).
+En enskild kyrka kan nu ha fler än en webbplats, och var och en kan finnas på en `*.b1.church`-underdomän eller på en helt anpassad domän som kyrkan äger. Den här sidan beskriver routinglagret *under* byggaren: hur en inkommande förfrågan matchas mot en kyrka **och** mot en specifik webbplats, datamodellen för flera webbplatser (`siteId`-sentinelvärdet som gör att alla befintliga webbplatser fortsätter att renderas oförändrade) och kanten för anpassade domäner, en egenhanterad Caddy-proxy på EC2 som avslutar TLS och skriver om varje kyrkodomän till dess `*.b1.church`-upstream. För vad som faktiskt renderas när en förfrågan har matchats, det vill säga sid-, sektions- och elementträdet, se [Webbplatsbyggaren](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ Två driftsdetaljer för middleware:
 
 - **Cache.** Varje värds resultat (en träff *eller* en bekräftad miss, aldrig ett nätverksfel) cachas i **10 minuter** i en `Map` i minnet, per serverlös isolat.
 - **Matcher.** Matchern inkluderar medvetet igen `/sitemap.xml`, `/robots.txt` och `/manifest.webmanifest`. Dess första mönster exkluderar punktade sökvägar, vilket annars skulle filtrera bort dessa filer. De läggs tillbaka så att en anpassad domäns SEO- och PWA-filer för varje kyrka också får `x-site`-headern.
-- **Kanonisk header.** För kyrksidor lägger middleware till en svarsheader `Link: <{proto}://{host}{path}>; rel="canonical"` som anger värdnamnet sidan faktiskt serverades från, antingen underdomänen eller den anpassade domänen (`helpers/canonicalLink.ts`). När en anpassad domän når B1App genom [Caddy-proxyn](../deployment/caddy-proxy) är förfrågans värdnamn `{sub}.b1.church`-underdomänen, så middleware använder i stället besökarens domän från `X-Church-Host`. Det sker dock först efter att `/domains/public/lookup/{host}` har bekräftat att domänen mappar till samma underdomän (`ownsSubdomain()`). Den kanoniska länken, `robots.txt` och `sitemap.xml` anger då den anpassade domänen i stället för `b1.church`-underdomänen. Den hoppas över på icke-kyrkliga värdar (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) och på `/mobile`, `/login`, `/logout` samt de genererade robots-, sitemap- och manifest-filerna.
+- **Kanonisk header.** För kyrksidor lägger middleware till en svarsheader `Link: <{proto}://{host}{path}>; rel="canonical"` som anger värdnamnet sidan faktiskt serverades från, antingen underdomänen eller den anpassade domänen (`helpers/canonicalLink.ts`). När en anpassad domän når B1App genom [Caddy-proxyn](../deployment/caddy-proxy.md) är förfrågans värdnamn `{sub}.b1.church`-underdomänen, så middleware använder i stället besökarens domän från `X-Church-Host`. Det sker dock först efter att `/domains/public/lookup/{host}` har bekräftat att domänen mappar till samma underdomän (`ownsSubdomain()`). Den kanoniska länken, `robots.txt` och `sitemap.xml` anger då den anpassade domänen i stället för `b1.church`-underdomänen. Den hoppas över på icke-kyrkliga värdar (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) och på `/mobile`, `/login`, `/logout` samt de genererade robots-, sitemap- och manifest-filerna.
 
 ### Inaktiverad publik webbplats
 
@@ -201,7 +202,7 @@ Rader med `www.*` utesluts ur mappningen. Caddy betjänar i stället `www.{host}
 
 ### Nuvarande läge: statisk konfiguration, inget körtidstillstånd
 
-Maskinen (en Windows-EC2 bakom den permanenta Elastic IP:n) kör Caddy med en **statisk Caddyfile**. Den har on-demand-TLS med `ask` som pekar på `/membership/domains/authorize`, samt en fil för värd→upstream-mappning som uppdateras var 5:e minut från `/membership/domains/hostmap` av en schemalagd uppgift som avslutas med en mjuk `caddy reload`. Konfigurationen överlever omstarter utan något körtidstillstånd, och det finns ingen omprimningsprocedur. En okänd SNI **avvisas i TLS** (inget certifikat utfärdas för en värd som `authorize` avvisar), medan en auktoriserad men ännu inte mappad värd (en helt ny domän inom synkfönstret) får ett rent 404. Nya domäner blir routbara inom cirka 5 minuter efter en sparning. Deras certifikat utfärdas vid första träffen. Bygg- och installationsinstruktioner, drift och fältprövade fallgropar finns i [Caddy anpassad domänproxy](../deployment/caddy-proxy).
+Maskinen (en Windows-EC2 bakom den permanenta Elastic IP:n) kör Caddy med en **statisk Caddyfile**. Den har on-demand-TLS med `ask` som pekar på `/membership/domains/authorize`, samt en fil för värd→upstream-mappning som uppdateras var 5:e minut från `/membership/domains/hostmap` av en schemalagd uppgift som avslutas med en mjuk `caddy reload`. Konfigurationen överlever omstarter utan något körtidstillstånd, och det finns ingen omprimningsprocedur. En okänd SNI **avvisas i TLS** (inget certifikat utfärdas för en värd som `authorize` avvisar), medan en auktoriserad men ännu inte mappad värd (en helt ny domän inom synkfönstret) får ett rent 404. Nya domäner blir routbara inom cirka 5 minuter efter en sparning. Deras certifikat utfärdas vid första träffen. Bygg- och installationsinstruktioner, drift och fältprövade fallgropar finns i [Caddy anpassad domänproxy](../deployment/caddy-proxy.md).
 
 ### Körtidspush i äldre läge: reservväg, väntar på borttagning
 
@@ -209,8 +210,8 @@ Maskinen (en Windows-EC2 bakom den permanenta Elastic IP:n) kör Caddy med en **
 
 ## Relaterade sidor
 
-- [Caddy anpassad domänproxy](../deployment/caddy-proxy): själva kantmaskinen. Installation från grunden, WinSW-tjänsten, synkroniseringsuppgiften för mappningen och driftsfallgropar
-- [Webbplatsbyggaren](./website-builder): sid-, sektions- och elementträdet, renderare, blogg, SEO och AI-generering (det som renderas när en förfrågan har matchats mot en kyrka och webbplats)
-- [Innehållsendpoints](../api/endpoints/content): REST-ytan för sidor, block, länkar och globala stilar, som alla nu är medvetna om `?siteId=`
-- [B1App](../web-apps/b1-app): Next.js-appen som innehåller middleware och `[sdSlug]`-routingen
-- [Driftsättning av webbappar](../deployment/web-apps): hur B1App driftsätts på Vercel
+- [Caddy anpassad domänproxy](../deployment/caddy-proxy.md): själva kantmaskinen. Installation från grunden, WinSW-tjänsten, synkroniseringsuppgiften för mappningen och driftsfallgropar
+- [Webbplatsbyggaren](./website-builder.md): sid-, sektions- och elementträdet, renderare, blogg, SEO och AI-generering (det som renderas när en förfrågan har matchats mot en kyrka och webbplats)
+- [Innehållsendpoints](../api/endpoints/content.md): REST-ytan för sidor, block, länkar och globala stilar, som alla nu är medvetna om `?siteId=`
+- [B1App](../web-apps/b1-app.md): Next.js-appen som innehåller middleware och `[sdSlug]`-routingen
+- [Driftsättning av webbappar](../deployment/web-apps.md): hur B1App driftsätts på Vercel

@@ -1,5 +1,6 @@
 ---
 title: "Sisällön päätepisteet"
+description: "Päätepisteiden viiteopas ChurchApps Content API:lle: verkkosivut, blogikirjoitukset, uudelleenohjaukset, saarnat, tapahtumat, tiedostot, Raamattu-haut ja laulut B1 Adminissa."
 ---
 
 # Sisällön päätepisteet
@@ -133,7 +134,7 @@ Perusreitti: `/content/pageHistory`
 
 Perusreitti: `/content/posts`
 
-Blogijulkaisut ovat itsenäisiä rivejä: `title`, `slug` (uniikki seurakunnittain), `excerpt`, `content` (markdown-runko), `authorId`, `photoUrl`, `publishDate`, `category` ja `tags`. Julkaisu julkaistaan, kun `publishDate` on asetettu ja menneisyydessä. Lukupäätepisteet rikastavat jokaisen julkaisun `authorName`-kentällä, joka määritetään `authorId`:n perusteella. Katso [Verkkosivurakentajan arkkitehtuuri](../../architecture/website-builder#blog).
+Blogijulkaisut ovat itsenäisiä rivejä: `title`, `slug` (uniikki seurakunnittain), `excerpt`, `content` (markdown-runko), `authorId`, `photoUrl`, `publishDate`, `category` ja `tags`. Julkaisu julkaistaan, kun `publishDate` on asetettu ja menneisyydessä. Lukupäätepisteet rikastavat jokaisen julkaisun `authorName`-kentällä, joka määritetään `authorId`:n perusteella. Katso [Verkkosivurakentajan arkkitehtuuri](../../architecture/website-builder.md#blog).
 
 | Menetelmä | Polku | Todennus | Oikeus | Kuvaus |
 |--------|------|------|------|------|
@@ -458,8 +459,8 @@ Perusreitti: `/content/support`
 
 ## Aiheeseen liittyvät sivut
 
-- [Verkkosivurakentajan arkkitehtuuri](../../architecture/website-builder) -- Miten sivut, osiot, elementit, julkaisut ja uudelleenohjaukset liittyvät toisiinsa sovelluksissa
-- [Jäsenyyden päätepisteet](./membership) -- Henkilöt, seurakunnat, ryhmät, roolit, oikeudet
-- [Läsnäolon päätepisteet](./attendance) -- Palvelu- ja vierailuseuranta
-- [Todennus ja oikeudet](./authentication) -- Kirjautumisvirta, JWT, oikeusmalli
-- [Moduulin rakenne](../module-structure) -- Koodin järjestämisen mallit
+- [Verkkosivurakentajan arkkitehtuuri](../../architecture/website-builder.md) -- Miten sivut, osiot, elementit, julkaisut ja uudelleenohjaukset liittyvät toisiinsa sovelluksissa
+- [Jäsenyyden päätepisteet](./membership.md) -- Henkilöt, seurakunnat, ryhmät, roolit, oikeudet
+- [Läsnäolon päätepisteet](./attendance.md) -- Palvelu- ja vierailuseuranta
+- [Todennus ja oikeudet](./authentication.md) -- Kirjautumisvirta, JWT, oikeusmalli
+- [Moduulin rakenne](../module-structure.md) -- Koodin järjestämisen mallit

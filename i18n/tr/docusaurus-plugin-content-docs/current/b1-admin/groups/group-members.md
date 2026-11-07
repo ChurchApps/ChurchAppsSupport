@@ -1,5 +1,6 @@
 ---
 title: "Grupo Üyeleri"
+description: "B1 Admin'de grup üyelerini ekleyin, çıkarın ve lider atayın; üye listesini grup sayfasından e-posta, SMS, yazdırma veya dışa aktarma ile paylaşın."
 ---
 
 # Grup Üyeleri

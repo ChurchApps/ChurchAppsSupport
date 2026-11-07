@@ -41,7 +41,7 @@ Brezplačna stopnja ChurchApps ostaja nespremenjena (enake omejitve kot prej; br
 
 Opomba o obsegu: izbira ponudnika zajema potek **datotek/virov** vsebine (kjer so shranjeni obsežni mediji). Naložitve galerije, logotipov in fotografij ostanejo pri privzetem ponudniku. Iz shrambe naštevajo ključe in URL-je gradijo na strani odjemalca, zato usmerjanje po cerkvah še ne velja.
 
-Isti vmesnik poganja tudi [Shrambo z lastnimi ponudniki (Bring-Your-Own Storage)](./byos-storage): cerkve lahko namesto paketa MinistryStuff povežejo Google Drive, Dropbox, OneDrive ali lastno shrambeno vedro, združljivo s S3.
+Isti vmesnik poganja tudi [Shrambo z lastnimi ponudniki (Bring-Your-Own Storage)](./byos-storage.md): cerkve lahko namesto paketa MinistryStuff povežejo Google Drive, Dropbox, OneDrive ali lastno shrambeno vedro, združljivo s S3.
 
 ## Obračunavanje
 

@@ -1,5 +1,6 @@
 ---
 title: "Notes"
+description: "Consultez les notes de soins pastoraux, les suivis et la planification relatifs aux personnes, groupes, événements et cartes de travail dans une seule liste de B1 Admin, des plus récentes aux plus anciennes."
 ---
 
 # Notes

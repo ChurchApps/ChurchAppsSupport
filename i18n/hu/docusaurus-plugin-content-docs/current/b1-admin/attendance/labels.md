@@ -1,5 +1,6 @@
 ---
 title: "Check-In címkeszerkesztő"
+description: "A bejelentkezéskor nyomtatott névcímke- és átvételi szelvény-sablonok testreszabása a B1 Admin-ban: mezők, elhelyezés, születésnap- és megjegyzés-feltételek."
 ---
 
 # Check-In címkeszerkesztő
@@ -13,8 +14,8 @@ A címkeszerkesztővel létrehozhatja és testreszabhatja azokat a névkártya- 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítsa be a [Jelenlétet](setup), és konfiguráljon legalább egy istentiszteleti időpontot, amelyhez engedélyezve van a bejelentkezés
-- Állítsa be a [Bejelentkezést](check-in), hogy a címkék nyomtatódjanak
+- Állítsa be a [Jelenlétet](./setup.md), és konfiguráljon legalább egy istentiszteleti időpontot, amelyhez engedélyezve van a bejelentkezés
+- Állítsa be a [Bejelentkezést](./check-in.md), hogy a címkék nyomtatódjanak
 - Szüksége van adminisztrátori hozzáférésre a Jelenlét részhez
 
 </div>
@@ -85,6 +86,6 @@ Egy sablon szerkesztése után készítsen próbanyomtatást, hogy a következő
 
 ## Kapcsolódó cikkek
 
-- [Check-In beállítása](setup) — istentiszteletek és csoportok beállítása a bejelentkezéshez
-- [A bejelentkezés befejezése](check-in) — a családok bejelentkezési folyamata
-- [B1 Checkin első lépések](../../b1-checkin/getting-started/) — a Checkin kioszk alkalmazás
+- [Check-In beállítása](./setup.md) — istentiszteletek és csoportok beállítása a bejelentkezéshez
+- [A bejelentkezés befejezése](./check-in.md) — a családok bejelentkezési folyamata
+- [B1 Checkin első lépések](../../b1-checkin/getting-started/index.md) — a Checkin kioszk alkalmazás

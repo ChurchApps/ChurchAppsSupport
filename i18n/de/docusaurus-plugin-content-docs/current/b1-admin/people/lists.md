@@ -1,5 +1,6 @@
 ---
 title: "Gespeicherte Listen"
+description: "Speichern Sie eine Personensuche in B1 Admin als benannte Liste und laden Sie sie mit einem Klick erneut. Listen bleiben aktuell, sodass neue passende Mitglieder automatisch erscheinen."
 ---
 
 # Gespeicherte Listen

@@ -1,5 +1,7 @@
 ---
-title: "Volunteer Signup"
+title: "B1 Mobile ऐप में स्वयंसेवा साइनअप"
+sidebar_label: "Volunteer Signup"
+description: "B1 Mobile ऐप में आगामी सेवाओं के लिए खुले स्वयंसेवा पद खोजें, साइन अप करें, या साइनअप हटाएँ। समय सीमा और स्थान सीमा कैसे काम करती है, यह भी शामिल है।"
 ---
 
 # Volunteer Signup
@@ -13,7 +15,7 @@ B1 Mobile से सीधे उपलब्ध volunteer positions ब्र�
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- [B1 Mobile install करें](../getting-started/installing) और अपने account में [log in](../getting-started/logging-in) करें
+- [B1 Mobile install करें](../getting-started/installing.md) और अपने account में [log in](../getting-started/logging-in.md) करें
 - आपके church administrator ने कम से कम एक position पर self-signup सक्षम किया होना चाहिए
 
 </div>
@@ -60,5 +62,5 @@ positions के लिए sign up करने हेतु आपका logged
 
 ## संबंधित लेख
 
-- [Viewing Plans](./viewing-plans) -- अपनी सौंपी गई plans और service orders देखें
+- [Viewing Plans](./viewing-plans.md) -- अपनी सौंपी गई plans और service orders देखें
 - [Notifications](../community/notifications.md) -- serving assignments के बारे में अपडेट रहें

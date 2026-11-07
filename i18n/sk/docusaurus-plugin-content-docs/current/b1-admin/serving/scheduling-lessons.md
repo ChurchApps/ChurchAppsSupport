@@ -1,5 +1,7 @@
 ---
-title: "Planovanie lekcií"
+title: "Plánovanie lekcií z Lessons.church v B1 Admin"
+sidebar_label: "Planovanie lekcií"
+description: "Prepojte Lessons.church s B1 Admin a potom naplánujte lekcie, hromadne naplánujte sériu alebo použite ročný plán na plány služieb ministerstva."
 ---
 
 # Planovanie lekcií z Lessons.church

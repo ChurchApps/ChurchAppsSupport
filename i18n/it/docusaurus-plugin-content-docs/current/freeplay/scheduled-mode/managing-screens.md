@@ -1,5 +1,6 @@
 ---
 title: "Gestire schermi e gruppi"
+description: "Verificare quali TV FreePlay sono online e pronte per la domenica, modificare le impostazioni e creare gruppi con un calendario condiviso in FreePlay Admin."
 ---
 
 # Gestire schermi e gruppi
@@ -14,7 +15,7 @@ La pagina **Schermi** di FreePlay Admin elenca ogni TV abbinata alla vostra chie
 <h4>Prima di iniziare</h4>
 
 - Accedete a FreePlay Admin all'indirizzo [admin.freeplay.church](https://admin.freeplay.church)
-- [Abbinate almeno uno schermo](./pairing-a-screen)
+- [Abbinate almeno uno schermo](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Usate **Presenta** per riprodurre il calendario dello schermo nel vostro browser
 
 Fate clic sull'etichetta di uno schermo per aprire la sua pagina. Sulla sinistra:
 
-- **Presenta nel browser** -- Riproduce a schermo intero il calendario di questo schermo nel browser, come apparirebbe sulla TV. Vedere [Presentare da un browser](./scheduled-playback#presenting-from-a-browser)
+- **Presenta nel browser** -- Riproduce a schermo intero il calendario di questo schermo nel browser, come apparirebbe sulla TV. Vedere [Presentare da un browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Modifica** -- Cambia l'etichetta, il gruppo o la modalità
 - **Altro** > **Rimuovi abbinamento** -- Disconnette la TV, che torna a mostrare un codice di abbinamento
 
@@ -93,6 +94,6 @@ Eliminare un gruppo elimina anche la sua programmazione. Gli schermi di quel gru
 
 ## Articoli correlati
 
-- **[Abbinare uno schermo](./pairing-a-screen)** -- Aggiungere una nuova TV
-- **[Programmare il calendario](./scheduling-the-calendar)** -- Stabilire cosa riproduce ogni gruppo e la sua playlist predefinita
-- **[Riproduzione programmata sulla TV](./scheduled-playback)** -- Cosa significa la data "Pronto fino a" sulla TV stessa
+- **[Abbinare uno schermo](./pairing-a-screen.md)** -- Aggiungere una nuova TV
+- **[Programmare il calendario](./scheduling-the-calendar.md)** -- Stabilire cosa riproduce ogni gruppo e la sua playlist predefinita
+- **[Riproduzione programmata sulla TV](./scheduled-playback.md)** -- Cosa significa la data "Pronto fino a" sulla TV stessa

@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Upravljanje nedeljskih prostovoljcev"
+description: "Nastavite skupine prostovoljcev, tedenske načrte bogoslužij in nedeljske naloge v B1 Admin, da prostovoljci vidijo dodelitve na B1.church in v mobilni aplikaciji."
 ---
 
 # Upravljanje nedeljskih prostovoljcev
@@ -95,7 +96,7 @@ Omogočite prostovoljcem, da se sami prijavijo na položaje, namesto da čakajo 
 3. Pri vsakem položaju označite potrditveno polje **Allow Self-Signup**, da bo položaj na voljo za samostojno prijavo.
 4. Pri vsakem položaju dodajte **Description**, da prostovoljci vedo, kaj vloga vključuje.
 
-Ko so položaji za samostojno prijavo ustvarjeni, se samodejno prikažejo na straneh za prijavo prostovoljcev na [B1.church](../../b1-church/serving/volunteer-signup) in v [aplikaciji B1 Mobile](../../b1-mobile/serving/volunteer-signup). Člani lahko pregledajo prosta mesta, vidijo, koliko mest je še na voljo, in se prijavijo z enim klikom.
+Ko so položaji za samostojno prijavo ustvarjeni, se samodejno prikažejo na straneh za prijavo prostovoljcev na [B1.church](../../b1-church/serving/volunteer-signup.md) in v [aplikaciji B1 Mobile](../../b1-mobile/serving/volunteer-signup.md). Člani lahko pregledajo prosta mesta, vidijo, koliko mest je še na voljo, in se prijavijo z enim klikom.
 
 :::tip
 V istem načrtu kombinirajte položaje z dodelitvijo s strani skrbnika in položaje za samostojno prijavo. Na primer, vodjo bogoslužja dodelite neposredno, pozdravljalcem in strežnikom kave pa omogočite, da se sami prijavijo.
@@ -109,7 +110,7 @@ Dodeljeni prostovoljci samodejno vidijo svoje načrte in lahko odgovorijo.
 2. Dodelitve lahko neposredno sprejmejo ali zavrnejo na kateri koli od teh platform
 3. Za tedne, ko niso na voljo, lahko nastavijo datume nedostopnosti
 4. Načrte lahko natisnete za vaje ali jih objavite za odrom
-5. Prostovoljci lahko pregledujejo in se prijavljajo na proste položaje prek [strani za prijavo prostovoljcev](../../b1-church/serving/volunteer-signup)
+5. Prostovoljci lahko pregledujejo in se prijavljajo na proste položaje prek [strani za prijavo prostovoljcev](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Potisna obvestila v mobilni aplikaciji opozorijo prostovoljce, ko prejmejo nove dodelitve ali ko se njihovi načrti spremenijo.
@@ -130,5 +131,5 @@ Vaš sistem za upravljanje prostovoljcev je nastavljen. Vsak teden ustvarite nov
 - [Delovni tokovi](../serving/workflows.md) — vodenje ljudi skozi ponavljajoče se postopke s sprožilci in samodejnimi koraki
 - [Ogled načrtov (splet)](../../b1-church/plans/viewing-plans.md) — kako prostovoljci spremljajo načrte na spletu
 - [Ogled načrtov (mobilna naprava)](../../b1-mobile/serving/viewing-plans.md) — kako prostovoljci spremljajo načrte v mobilni aplikaciji
-- [Prijava prostovoljcev (splet)](../../b1-church/serving/volunteer-signup) — kako se člani sami prijavijo na položaje prostovoljcev
-- [Prijava prostovoljcev (mobilna naprava)](../../b1-mobile/serving/volunteer-signup) — samostojna prijava prostovoljcev v mobilni aplikaciji
+- [Prijava prostovoljcev (splet)](../../b1-church/serving/volunteer-signup.md) — kako se člani sami prijavijo na položaje prostovoljcev
+- [Prijava prostovoljcev (mobilna naprava)](../../b1-mobile/serving/volunteer-signup.md) — samostojna prijava prostovoljcev v mobilni aplikaciji

@@ -1,5 +1,7 @@
 ---
-title: "Câu Kinh Thánh Trong Ngày"
+title: "Câu Kinh Thánh trong ngày trong B1 Mobile"
+sidebar_label: "Câu Kinh Thánh Trong Ngày"
+description: "Mở màn hình Câu Kinh Thánh trong ngày trong B1 Mobile để xem câu Kinh Thánh hôm nay dưới dạng hình ảnh theo hướng điện thoại hoặc máy tính bảng, cập nhật mỗi ngày."
 ---
 
 # Câu Kinh Thánh Trong Ngày
@@ -13,7 +15,7 @@ Màn hình Câu Kinh Thánh Trong Ngày hiển thị một câu Kinh Thánh mỗ
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Hội thánh của bạn phải bật tính năng Câu Kinh Thánh Trong Ngày
 
 </div>
@@ -46,5 +48,5 @@ Câu Kinh Thánh Trong Ngày là một tính năng nội dung có sẵn trong B1
 
 ## Bài Viết Liên Quan
 
-- [Kinh Thánh](./bible) -- Đọc toàn bộ các đoạn Kinh Thánh trong trình đọc có sẵn
-- [Bài Giảng](./sermons) -- Xem các bài giảng đã ghi hình từ hội thánh của bạn
+- [Kinh Thánh](./bible.md) -- Đọc toàn bộ các đoạn Kinh Thánh trong trình đọc có sẵn
+- [Bài Giảng](./sermons.md) -- Xem các bài giảng đã ghi hình từ hội thánh của bạn

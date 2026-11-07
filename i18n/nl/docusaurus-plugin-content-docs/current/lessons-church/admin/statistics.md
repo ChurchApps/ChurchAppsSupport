@@ -1,5 +1,6 @@
 ---
 title: "Statistics"
+description: "Bekijk downloads per studie, welke kerken je bronnen gebruiken en waar ze gevestigd zijn, met datumfilter in de statistieken van Lessons.church."
 ---
 
 # Statistics

@@ -1,5 +1,6 @@
 ---
 title: "Bezpečnosť údajov"
+description: "Pozrite si, ako ChurchApps chráni údaje vášho zboru v B1 Admin, od hašovaných hesiel a HTTPS po oddelené databázy a nástroje GDPR."
 ---
 
 # Bezpečnosť údajov

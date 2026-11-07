@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referencia k balíku @churchapps/apihelper používanému Express API v workspace Packages: lokálne zostavenie, testovanie cez Yarn portal a publikovanie cez changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Balík `@churchapps/apihelper` poskytuje serverové pomocné nástroje pre všet
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nainštalujte **Node.js** a **Git** -- pozri [Požiadavky](../setup/prerequisites)
+- Nainštalujte **Node.js** a **Git** -- pozri [Požiadavky](../setup/prerequisites.md)
 - Oboznámte sa s nastavením a postupom vydávania v [pracovnom priestore Packages](./index.md)
-- Tento balík závisí od [`@churchapps/helpers`](./helpers) (ako peer závislosť) a znovu ho exportuje
+- Tento balík závisí od [`@churchapps/helpers`](./helpers.md) (ako peer závislosť) a znovu ho exportuje
 
 </div>
 
@@ -65,6 +66,6 @@ Tento balík je závislosťou každého API ChurchApps -- hlavného Api, AskApi 
 
 ## Súvisiace články
 
-- **[Helpers](./helpers)** -- Základný balík pomocných nástrojov, na ktorom tento balík závisí
-- **[Štruktúra modulov](../api/module-structure)** -- Ako sa kontroléry a autentifikačný middleware používajú v moduloch API
-- **[Lokálne nastavenie API](../api/local-setup)** -- Nastavenie API pre lokálny vývoj
+- **[Helpers](./helpers.md)** -- Základný balík pomocných nástrojov, na ktorom tento balík závisí
+- **[Štruktúra modulov](../api/module-structure.md)** -- Ako sa kontroléry a autentifikačný middleware používajú v moduloch API
+- **[Lokálne nastavenie API](../api/local-setup.md)** -- Nastavenie API pre lokálny vývoj

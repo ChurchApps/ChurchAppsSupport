@@ -1,5 +1,6 @@
 ---
 title: "Präsentationsmodus"
+description: "Lektion bildschirmfüllend per Beamer oder TV im Klassenzimmer zeigen, mit dem Präsentationsmodus von Lessons.church, Abschnitt für Abschnitt."
 ---
 
 # Präsentationsmodus

@@ -1,5 +1,6 @@
 ---
 title: "Navigation i B1App"
+description: "Find rundt i B1.church medlemsportalen på telefon eller computer: Hjem-oversigten, nederste fanelinje, Mere-siden og Mig-siden."
 ---
 
 # Navigation i B1App
@@ -22,12 +23,12 @@ Medlemsportalen i B1.church bruger en sidepanelnavigation, der gør det nemt at 
 Når du åbner medlemsportalen, vil du se en lodret sidemenu på venstre side af skærmen. Denne sidemenu indeholder faner for hvert afsnit af portalen:
 
 - **Tidslinje** -- Dit personaliserede feed med opdateringer og samtaler fra dine grupper og kirke. Dette er standardfanen, der indlæses, når du åbner medlemsportalen.
-- **Grupper** -- Se og interager med [grupperne](../groups/), du tilhører.
+- **Grupper** -- Se og interager med [grupperne](../groups/index.md), du tilhører.
 - **Fællesskab** -- Gennemse kirkens [medlemsmappe](../community/member-directory.md).
-- **Planer** -- Se kommende [serviceplaner](../plans/) og dine tildelte frivillige positioner.
-- **Tjek ind** -- [Tjek ind](../checkin/) dig selv og din husstand til gudstjenester og arrangementer.
+- **Planer** -- Se kommende [serviceplaner](../plans/index.md) og dine tildelte frivillige positioner.
+- **Tjek ind** -- [Tjek ind](../checkin/index.md) dig selv og din husstand til gudstjenester og arrangementer.
 - **Lektioner** -- Få adgang til [lektioner](../content/lessons.md) og læreplan for Bibelstudier.
-- **Donationer** -- Foretag online [donationer](../giving/) og se din givelhistorik.
+- **Donationer** -- Foretag online [donationer](../giving/index.md) og se din givelhistorik.
 
 Klik på en fane for at skifte til det pågældende afsnit. Den aktive fane er fremhævet, så du altid ved, hvor du er.
 

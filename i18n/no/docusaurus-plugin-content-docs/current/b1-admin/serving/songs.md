@@ -1,5 +1,6 @@
 ---
 title: "Sanger"
+description: "Administrer sangbiblioteket i B1 Admin: søk og legg til sanger, rediger detaljer, legg ved ChordPro-tekster og arrangement, og last opp øvingslyd."
 ---
 
 # Sanger

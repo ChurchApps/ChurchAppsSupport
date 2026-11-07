@@ -1,5 +1,6 @@
 ---
 title: "Oppsett for oppmøte"
+description: "Sett opp campuser, gudstjenester, gudstjenestetider og gruppetilknytninger i B1 Admin, slik at oppmøtesporing og innsjekkplaner fungerer i hele menigheten."
 ---
 
 # Oppsett for oppmøte

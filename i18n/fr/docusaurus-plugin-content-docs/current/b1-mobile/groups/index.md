@@ -1,5 +1,7 @@
 ---
-title: "Groupes"
+title: "Écran Groupes dans B1 Mobile"
+sidebar_label: "Groupes"
+description: "Trouvez vos groupes dans l’écran Groupes de B1 Mobile : le groupe que vous consultez le plus est en tête, suivi des autres groupes de votre église."
 ---
 
 # Groupes sur B1 Mobile

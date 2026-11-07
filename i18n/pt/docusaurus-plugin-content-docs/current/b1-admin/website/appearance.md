@@ -1,5 +1,6 @@
 ---
 title: "Aparência"
+description: "Defina cores, fontes, espaçamento, logotipo e navegação do site da igreja no B1 Admin, além de widgets, GA4, redirecionamentos e CSS personalizado."
 ---
 
 # Aparência
@@ -13,7 +14,7 @@ A página Aparência permite personalizar a aparência geral do site da sua igre
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Conclua a [Configuração inicial](initial-setup) do seu site
+- Conclua a [Configuração inicial](./initial-setup.md) do seu site
 - Tenha o logotipo da sua igreja em formato PNG, com fundo transparente e proporção de 4:1
 - Saiba as cores da marca da sua igreja (valores hexadecimais), caso tenha um guia de estilo existente
 
@@ -98,7 +99,7 @@ O CSS personalizado é poderoso, mas pode quebrar o layout do seu site se usado 
 :::
 
 :::info
-Seu site aplica uma Política de Segurança de Conteúdo que bloqueia scripts embutidos de qualquer outra origem. O campo **HTML personalizado** aqui, e o [elemento HTML](page-editor#using-the-html-element) em páginas individuais, são as exceções confiáveis: o código salvo ali é executado exatamente como está, então cole apenas scripts de fontes confiáveis (tags de análise, widgets de chat e incorporações semelhantes).
+Seu site aplica uma Política de Segurança de Conteúdo que bloqueia scripts embutidos de qualquer outra origem. O campo **HTML personalizado** aqui, e o [elemento HTML](./page-editor.md#using-the-html-element) em páginas individuais, são as exceções confiáveis: o código salvo ali é executado exatamente como está, então cole apenas scripts de fontes confiáveis (tags de análise, widgets de chat e incorporações semelhantes).
 :::
 
 ## Temas de estilo
@@ -107,5 +108,5 @@ Se você quer um ponto de partida rápido, as **Paletas sugeridas** na seção P
 
 ## Próximos passos
 
-- [Gerenciando páginas](managing-pages): crie e organize as páginas do seu site
-- [Arquivos](files): envie recursos de mídia para o seu site
+- [Gerenciando páginas](./managing-pages.md): crie e organize as páginas do seu site
+- [Arquivos](./files.md): envie recursos de mídia para o seu site

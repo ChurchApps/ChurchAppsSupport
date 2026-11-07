@@ -1,5 +1,7 @@
 ---
-title: "Yhteisö"
+title: "Seurakunnan jäsenluettelo B1.churchissa"
+sidebar_label: "Yhteisö"
+description: "Hae B1.churchin jäsenluettelosta nimen tai ryhmän perusteella, katso profiileja ja löydä eläkkeelle jääneen Timelinen päivitykset nykyisestä paikasta."
 ---
 
 # Yhteisö
@@ -26,5 +28,5 @@ Luettelossa sinulle näkyvät jäsenet ja tiedot riippuvat seurakuntasi yksityis
 :::
 
 :::tip
-Käytä yhteisöominaisuuksia yhdessä [Ryhmien](../groups/) kanssa, jotta pysyt osallisena seurakunnassasi läpi viikon.
+Käytä yhteisöominaisuuksia yhdessä [Ryhmien](../groups/index.md) kanssa, jotta pysyt osallisena seurakunnassasi läpi viikon.
 :::

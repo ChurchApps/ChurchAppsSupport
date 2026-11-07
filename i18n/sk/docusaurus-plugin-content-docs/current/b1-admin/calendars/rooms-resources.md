@@ -1,5 +1,6 @@
 ---
 title: "Miestnosti, zdroje a plánovanie"
+description: "Nastavte miestnosti, vybavenie, blokovania a šablóny udalostí v B1 Admin, aby skupiny mohli žiadať rezervácie a vy ste predišli dvojitým rezerváciám."
 ---
 
 # Miestnosti, zdroje a plánovanie
@@ -14,7 +15,7 @@ Miestnosti a zdroje vám umožňujú sledovať rezervovateľné priestory a vyba
 <h4>Pred začatím</h4>
 
 - Potrebujete správcovský prístup k sekcii Kalendáre v B1 Admin
-- Nastavte [skupiny](../groups/creating-groups), ktorých členovia budú odosielať žiadosti o rezerváciu
+- Nastavte [skupiny](../groups/creating-groups.md), ktorých členovia budú odosielať žiadosti o rezerváciu
 
 </div>
 
@@ -76,7 +77,7 @@ Pri vytváraní novej udalosti si zamestnanci môžu vybrať existujúcu šabló
 
 ## Súvisiace články
 
-- [Kalendár dostupnosti](availability) — zobrazte si všetky rezervácie na jednom mieste a rezervujte miestnosti alebo zdroje priamo
-- [Schvaľovanie kalendára](approvals) — schvaľujte alebo zamietajte žiadosti o rezerváciu miestností a zdrojov
-- [Vytváranie kalendárov](creating-calendars) — nastavte kalendáre udalostí
-- [Vytváranie skupín](../groups/creating-groups) — nastavte skupiny, ktoré môžu rezervovať miestnosti a zdroje
+- [Kalendár dostupnosti](./availability.md) — zobrazte si všetky rezervácie na jednom mieste a rezervujte miestnosti alebo zdroje priamo
+- [Schvaľovanie kalendára](./approvals.md) — schvaľujte alebo zamietajte žiadosti o rezerváciu miestností a zdrojov
+- [Vytváranie kalendárov](./creating-calendars.md) — nastavte kalendáre udalostí
+- [Vytváranie skupín](../groups/creating-groups.md) — nastavte skupiny, ktoré môžu rezervovať miestnosti a zdroje

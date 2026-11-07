@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sincronize pessoas e participação em grupos ou listas do B1 Admin com um público do Mailchimp como tags, com configuração e solução de problemas."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Fazer a carga inicial pelo importador do Mailchimp mantém o controle sobre a qu
 
 ## Outras Receitas (Zapier / Make)
 
-Qualquer coisa além da sincronização de audiência — marcar doadores em `donation.created`, o sentido inverso do Mailchimp → B1, ou sincronizar com outra plataforma de e-mail (Constant Contact, Brevo etc.) — ainda está disponível pelo [Zapier](../zapier) ou pelo [Make](../make), que disparam com os mesmos eventos de webhook:
+Qualquer coisa além da sincronização de audiência — marcar doadores em `donation.created`, o sentido inverso do Mailchimp → B1, ou sincronizar com outra plataforma de e-mail (Constant Contact, Brevo etc.) — ainda está disponível pelo [Zapier](../zapier.md) ou pelo [Make](../make.md), que disparam com os mesmos eventos de webhook:
 
 - **Marcar doadores:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Duas vias:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Se você já tinha configurado a sincronização de pessoas/grupos pelo Zapier, 
 
 - [Webhooks (referência do desenvolvedor)](/docs/developer/api/webhooks) — o motor por trás disso, o catálogo de eventos e a semântica de entrega/repetição
 - [Listas Salvas](/docs/b1-admin/people/lists) — audiências baseadas em regras que se encaixam naturalmente nas tags do Mailchimp
-- [Zapier (visão geral)](../zapier) — para receitas além da sincronização de audiência
+- [Zapier (visão geral)](../zapier.md) — para receitas além da sincronização de audiência

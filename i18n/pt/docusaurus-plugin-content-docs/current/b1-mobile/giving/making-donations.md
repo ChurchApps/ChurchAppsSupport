@@ -1,5 +1,7 @@
 ---
-title: "Fazendo uma Doação"
+title: "Como Fazer uma Doação no B1 Mobile"
+sidebar_label: "Fazendo uma Doação"
+description: "Doe para sua igreja pela aba Doar do B1 Mobile: escolha um fundo, informe o valor, pague com Stripe e repita doações anteriores rapidamente."
 ---
 
 # Fazendo uma Doação
@@ -13,8 +15,8 @@ Contribuir pelo B1 Mobile é rápido e simples. A aba **Donate** na seção de o
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
-- Tenha um cartão de crédito ou débito em mãos, ou [salve um método de pagamento](./managing-payments) com antecedência
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
+- Tenha um cartão de crédito ou débito em mãos, ou [salve um método de pagamento](./managing-payments.md) com antecedência
 
 </div>
 
@@ -42,10 +44,10 @@ Confira o valor e o fundo da doação antes de enviar. As doações são process
 Se você quiser doar o mesmo valor da sua última doação, não precisa passar por todo o fluxo de doação. A aba **Overview** mostra sua contribuição mais recente junto com um botão **Repeat**. Toque nele para enviar rapidamente a mesma doação novamente.
 
 :::tip
-Se você planeja contribuir regularmente, salve seu método de pagamento na aba **Manage** para poder doar ainda mais rápido na próxima vez. Consulte [Gerenciando Métodos de Pagamento](./managing-payments) para mais detalhes.
+Se você planeja contribuir regularmente, salve seu método de pagamento na aba **Manage** para poder doar ainda mais rápido na próxima vez. Consulte [Gerenciando Métodos de Pagamento](./managing-payments.md) para mais detalhes.
 :::
 
 ## Artigos Relacionados
 
-- [Gerenciando Métodos de Pagamento](./managing-payments) -- Salve um cartão para contribuições futuras mais rápidas
-- [Histórico de Doações](./donation-history) -- Veja o resumo das suas contribuições e doações anteriores
+- [Gerenciando Métodos de Pagamento](./managing-payments.md) -- Salve um cartão para contribuições futuras mais rápidas
+- [Histórico de Doações](./donation-history.md) -- Veja o resumo das suas contribuições e doações anteriores

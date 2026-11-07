@@ -1,5 +1,6 @@
 ---
 title: "Súbory na stiahnutie a materiály"
+description: "Nájdite a stiahnite si tlačiteľné aktivity, sprievodcov pre vedúcich a PDF súbory pripojené k lekciám, štúdiám alebo programom v Lessons.church pre vašu triedu."
 ---
 
 # Súbory na stiahnutie a materiály

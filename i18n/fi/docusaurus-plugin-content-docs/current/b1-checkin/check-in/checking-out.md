@@ -1,5 +1,6 @@
 ---
 title: "Uloskirjaus ja lasten turvallisuus"
+description: "Kirjaa lapset ulos miehitetyllä B1 Checkin -asemalla turvakoodeilla, vahvistetuilla noutajilla, vanhempien kutsulla, tarratulostuksella ja hätäilmoituksilla."
 ---
 
 # Uloskirjaus ja lasten turvallisuus
@@ -14,7 +15,7 @@ Uloskirjaus sulkee lasten sisäänkirjauksen kierron: vanhempi näyttää noutot
 <h4>Ennen aloittamista</h4>
 
 - Uloskirjaus on käytettävissä asemilla, jotka on asetettu **miehitetyksi** infopisteen hallinta-asetuksissa
-- Lasten on täytynyt olla [kirjattuna sisään](./completing-checkin) ja heillä on oltava tulostettu noutotarra, jossa on turvakoodi
+- Lasten on täytynyt olla [kirjattuna sisään](./completing-checkin.md) ja heillä on oltava tulostettu noutotarra, jossa on turvakoodi
 - Vanhempien kutsuminen ja hätälähetykset edellyttävät, että seurakunnalla on B1 Adminissa liitetty tekstiviestipalveluntarjoaja
 
 </div>
@@ -39,7 +40,7 @@ Jos kirjoitettu nimi vastaa henkilöä, joka on merkitty kotitaloudelle **Ei val
 Kun noutaja on vahvistettu, napauta uloskirjausta. Noutajan nimi tallennetaan läsnäolotietoihin.
 
 :::info
-Luotettavat ja ei valtuutetut noutajat hallinnoi seurakunnan henkilökunta kunkin henkilön sivulla B1 Adminissa. Katso [Sisäänkirjauksen turvallisuus](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Luotettavat ja ei valtuutetut noutajat hallinnoi seurakunnan henkilökunta kunkin henkilön sivulla B1 Adminissa. Katso [Sisäänkirjauksen turvallisuus](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Vanhemman kutsuminen
@@ -65,6 +66,6 @@ Lähetys menee jokaiselle sisään kirjatulle kotitaloudelle valitussa jumalanpa
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Sisäänkirjauksen viimeistely](./completing-checkin): mistä turvakoodit ja noutotarrat tulevat
-- [Sisäänkirjauksen turvallisuus](../../b1-admin/attendance/checkin-safety): kapasiteettien, suhdelukujen, noutajien ja tekstiviestipalveluntarjoajan vaatimuksen määrittäminen
-- [Tulostimen asetukset](../getting-started/printer-setup): tarratulostimen määrittäminen
+- [Sisäänkirjauksen viimeistely](./completing-checkin.md): mistä turvakoodit ja noutotarrat tulevat
+- [Sisäänkirjauksen turvallisuus](../../b1-admin/attendance/checkin-safety.md): kapasiteettien, suhdelukujen, noutajien ja tekstiviestipalveluntarjoajan vaatimuksen määrittäminen
+- [Tulostimen asetukset](../getting-started/printer-setup.md): tarratulostimen määrittäminen

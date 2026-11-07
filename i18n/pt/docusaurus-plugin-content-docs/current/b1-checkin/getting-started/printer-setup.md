@@ -1,5 +1,6 @@
 ---
 title: "Configuração da Impressora"
+description: "Configure uma impressora de etiquetas de rede para os quiosques B1 Checkin: encontre-a no Wi-Fi, escolha-a, faça um teste de impressão e salve a seleção."
 ---
 
 # Configuração da Impressora
@@ -13,7 +14,7 @@ O B1 Church Checkin pode imprimir etiquetas com nomes e comprovantes de retirada
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Faça login](./logging-in) no aplicativo B1 Church Checkin e selecione sua igreja
+- [Faça login](./logging-in.md) no aplicativo B1 Church Checkin e selecione sua igreja
 - Conecte uma impressora de etiquetas de rede compatível à mesma rede Wi-Fi do tablet
 
 </div>
@@ -87,4 +88,4 @@ Se você mover o quiosque para outro local ou alterar sua configuração de rede
 
 ## Próximos Passos
 
-Com sua impressora configurada, você está pronto para começar o check-in. Veja o [fluxo de check-in](../check-in/) para entender como todo o processo funciona, começando por [selecionar um culto](../check-in/selecting-service).
+Com sua impressora configurada, você está pronto para começar o check-in. Veja o [fluxo de check-in](../check-in/index.md) para entender como todo o processo funciona, começando por [selecionar um culto](../check-in/selecting-service.md).

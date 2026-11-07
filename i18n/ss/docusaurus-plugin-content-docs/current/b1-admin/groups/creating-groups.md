@@ -1,5 +1,6 @@
 ---
 title: "Kudala Emaqembu"
+description: "Setfula liqembu lilisha ku-B1 Admin, ukhetse sigaba, uyitiphe, bese ulungisa indlela yekujoyina, emalebula nemilayezo nekuhambela."
 ---
 
 # Kudala Emaqembu

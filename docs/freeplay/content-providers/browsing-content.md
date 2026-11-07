@@ -1,5 +1,6 @@
 ---
 title: "Browsing and Downloading Content"
+description: "Navigate the library of a connected provider with your TV remote in FreePlay, then download or stream lessons and videos for playback."
 ---
 
 # Browsing and Downloading Content
@@ -13,7 +14,7 @@ Once you have connected to a content provider, you can browse its library, downl
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Connect to at least one content provider -- see [Connecting to Providers](./connecting-providers)
+- Connect to at least one content provider -- see [Connecting to Providers](./connecting-providers.md)
 - Have your TV remote ready for navigation
 
 </div>
@@ -38,7 +39,7 @@ You can drill as deep as the provider's content structure allows. The browser ke
 
 ## Browsing Lessons.church
 
-The [Lessons.church](../../lessons-church/) library is organized the same way as its website. At the top level you'll see two folders:
+The [Lessons.church](../../lessons-church/index.md) library is organized the same way as its website. At the top level you'll see two folders:
 
 - **Lessons** - Drill in by **program**, then **study**, then **lesson**. Each lesson then lists its **venues**, which are versions of the lesson for a particular age group or setting, such as Preschool or Elementary. Select a venue to open the download screen for that version of the lesson
 - **Add-Ons** - Extra videos and resources, grouped by category
@@ -78,7 +79,7 @@ Use these controls during playback:
 When you exit the player, you return to the content browser at the root level of the current provider.
 
 :::info
-For a complete reference of all player controls, see [Playing Content](./playing-content).
+For a complete reference of all player controls, see [Playing Content](./playing-content.md).
 :::
 
 ## Switching Between Providers

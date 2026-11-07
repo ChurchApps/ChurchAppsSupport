@@ -1,5 +1,6 @@
 ---
 title: "Pagdaragdag ng Tao"
+description: "Magdagdag ng tao sa database ng simbahan sa B1 Admin, punan ang detalye, at i-link ang miyembro ng pamilya sa household para sa check-in at report."
 ---
 
 # Pagdaragdag ng Tao

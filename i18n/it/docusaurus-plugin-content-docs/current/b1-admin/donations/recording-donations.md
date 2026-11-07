@@ -1,5 +1,6 @@
 ---
 title: "Registrare le donazioni"
+description: "Registra le donazioni in B1 Admin: crea un lotto e inserisci le offerte una per una, importa un CSV o aggiungi un dono dal profilo del donatore."
 ---
 
 # Registrare le donazioni

@@ -1,5 +1,6 @@
 ---
 title: "Kokonaismäärän kirjaus ja trendi"
+description: "Syötä B1 Adminissa palvelun tai ryhmän kokonaismäärä ilman nimettyä osallistujalistaa ja seuraa määriä viikoittain Headcount Trend -raportista."
 ---
 
 # Kokonaismäärän kirjaus ja trendi

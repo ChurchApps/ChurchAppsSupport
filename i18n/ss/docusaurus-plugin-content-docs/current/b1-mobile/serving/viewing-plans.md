@@ -1,5 +1,7 @@
 ---
-title: "Kubuka Tinhlelo"
+title: "Kubuka Tinhlelo Tekusebenta Ku-B1 Mobile"
+sidebar_label: "Kubuka Tinhlelo"
+description: "Hlola luhlelo lwakho lwekusebenta lwamanje nelwangaphambili ku-B1 Mobile, funda imininingwane yetinhlelo nekulandzelana kwelunkhonzo, bese ushicilela tinhlelo ngekulungiselela kuhlolwa noma siteji."
 ---
 
 # Kubuka Tinhlelo
@@ -13,7 +15,7 @@ Sikrini setinhlelo ku-B1 Mobile sikunika simo lesiphelele seluhlelo lwakho lweku
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 - Ube unikwe okungenani luhlelo lolulodwa lwekukhonta ngumphatsi welibandla lakho
 
 </div>
@@ -61,4 +63,4 @@ Utawutfola [titfunyiselwa letihlwatjelwako](../community/notifications.md) nawun
 
 ## Timibhalo Lehambelanako
 
-- [Kubhalisela Kutivolontiya](./volunteer-signup) -- Hlola futsi ubhalisele tikhundla letivulekile tekutivolontiya
+- [Kubhalisela Kutivolontiya](./volunteer-signup.md) -- Hlola futsi ubhalisele tikhundla letivulekile tekutivolontiya

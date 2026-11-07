@@ -1,5 +1,6 @@
 ---
 title: "Web 推送通知"
+description: "设置 VAPID 密钥、WebPushHelper 客户端和 Service Worker 处理逻辑，使 B1.church 和 B1 Admin 能够向会员发送浏览器推送通知。"
 ---
 
 # Web 推送通知
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## 相关页面
 
-- [通知架构](./architecture/notifications) —— 完整的应用内/推送/电子邮件升级流程，以及提醒引擎
-- [实时架构](./realtime) —— WebSocket 投递；现在推送与套接字投递在同一轮中从同一应用内流程触发，而不仅仅在套接字投递未成功时作为备用
-- [消息端点](./api/endpoints/messaging) —— 通知、设备以及消息模块的其余接口
-- [AppHelper](./shared-libraries/app-helper) —— 提供 `WebPushHelper` 的 npm 包
+- [通知架构](./architecture/notifications.md) —— 完整的应用内/推送/电子邮件升级流程，以及提醒引擎
+- [实时架构](./realtime.md) —— WebSocket 投递；现在推送与套接字投递在同一轮中从同一应用内流程触发，而不仅仅在套接字投递未成功时作为备用
+- [消息端点](./api/endpoints/messaging.md) —— 通知、设备以及消息模块的其余接口
+- [AppHelper](./shared-libraries/app-helper.md) —— 提供 `WebPushHelper` 的 npm 包

@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Incwadzi yesisetfo ye-@churchapps/apphelper kuPackages workspace: tindzawo tayo tekungena, ema-app asebentisa ngalokunye ngakunye, nemasitepisi ekuhlola endzaweni nekushicilela."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Liphakheji le-`@churchapps/apphelper` linikeza tincumo te-React kanye netisetjen
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka i-**Node.js** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites)
+- Faka i-**Node.js** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites.md)
 - Tijwayeze ne-[indzawo yekusebenta ye-Packages](./index.md) kanye nendlela yekukhishwa
 
 </div>
@@ -92,6 +93,6 @@ Ungasuki nome uphindze ubize kabusha loko lokukhishiwe ngaphambi kwekutsi lokuts
 
 ## Bomake Lohlobene
 
-- **[Helpers](./helpers)** -- Liphakheji lesisekelo lesisetjentiswa ndzawonye ne-AppHelper
-- **[Tinhlelo TeWebhu](../web-apps/)** -- Tinhlelo tewebhu letisebentisa leliphakheji
+- **[Helpers](./helpers.md)** -- Liphakheji lesisekelo lesisetjentiswa ndzawonye ne-AppHelper
+- **[Tinhlelo TeWebhu](../web-apps/index.md)** -- Tinhlelo tewebhu letisebentisa leliphakheji
 - **[Sibonakaliso Sesikhashana Setincwadzi Letihlanganyelwe](./index.md)** -- Kuhlela kwendzawo yekusebenta, indlela yekukhishwa, kanye nendlela yekuhlanganiswa kwasekhaya

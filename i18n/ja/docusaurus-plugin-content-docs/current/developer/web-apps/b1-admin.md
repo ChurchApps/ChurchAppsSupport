@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "B1 Admin をローカルで設定します。React/Vite のダッシュボードをクローンし、.env で API エンドポイントを設定して、教会管理の作業用に開発サーバーを起動します。"
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin は教会の管理ダッシュボードです。Vite と Material-UI で
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js 22+** と **Git** をインストールしてください -- [前提条件](../setup/prerequisites) を参照
-- API の接続先(デモまたはローカル)を設定してください -- [環境変数](../setup/environment-variables) を参照
+- **Node.js 22+** と **Git** をインストールしてください -- [前提条件](../setup/prerequisites.md) を参照
+- API の接続先(デモまたはローカル)を設定してください -- [環境変数](../setup/environment-variables.md) を参照
 
 </div>
 
@@ -87,5 +88,5 @@ Vite の開発サーバーが起動します。ホットモジュールリプレ
 3. CloudFront のキャッシュ無効化を実行し、新しいバージョンを配信する
 
 :::tip
-詳しいデプロイ手順については、[Web アプリのデプロイ](../deployment/web-apps) のガイドを参照してください。
+詳しいデプロイ手順については、[Web アプリのデプロイ](../deployment/web-apps.md) のガイドを参照してください。
 :::

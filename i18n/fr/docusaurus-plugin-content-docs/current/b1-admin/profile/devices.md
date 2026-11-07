@@ -1,5 +1,6 @@
 ---
 title: "Gestion des appareils"
+description: "Associez, étiquetez et retirez les écrans ChurchAppsPlayer et FreePlay reliés à votre compte dans B1 Admin, afin que les affichages de l'église restent à jour et sécurisés."
 ---
 
 # Gestion des appareils

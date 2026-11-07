@@ -1,5 +1,6 @@
 ---
 title: "Kwetfula"
+description: "Khombisa tifundziso ku-projector nge-Presenter Mode ku-Lessons.church, yabelana ngemahhovisi emasebenti etindzima kubavolontiya, bese ushicilela tincwadzi ngaphambi kwekilasi."
 ---
 
 # Kwetfula

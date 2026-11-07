@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Packages çalışma alanındaki @churchapps/apphelper paylaşılan paketinin başvurusu: alt yol giriş noktaları, her dışa aktarımı hangi uygulamaların kullandığı ve yerel geliştirme ile yayımlama adımları."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ title: "AppHelper"
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js** ve **Git** kurun -- bkz. [Ön Koşullar](../setup/prerequisites)
+- **Node.js** ve **Git** kurun -- bkz. [Ön Koşullar](../setup/prerequisites.md)
 - [Packages çalışma alanı](./index.md) kurulumunu ve sürüm yayımlama akışını inceleyin
 
 </div>
@@ -92,6 +93,6 @@ Yerine geçen sürüm yayımlanıp her tüketici taşınana kadar bir dışa akt
 
 ## İlgili Makaleler
 
-- **[Helpers](./helpers)** -- AppHelper ile birlikte kullanılan temel yardımcı paket
-- **[Web Uygulamaları](../web-apps/)** -- Bu paketi kullanan web uygulamaları
+- **[Helpers](./helpers.md)** -- AppHelper ile birlikte kullanılan temel yardımcı paket
+- **[Web Uygulamaları](../web-apps/index.md)** -- Bu paketi kullanan web uygulamaları
 - **[Ortak Kitaplıklara Genel Bakış](./index.md)** -- Çalışma alanı kurulumu, sürüm akışı ve yerel bağlantı iş akışı

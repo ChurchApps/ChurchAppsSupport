@@ -1,5 +1,6 @@
 ---
 title: "Browsing Groups"
+description: "Browse your church's public groups on B1.church by category, then scan meeting times, locations, and descriptions on each card to find a good fit."
 ---
 
 # Browsing Groups

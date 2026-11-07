@@ -1,5 +1,6 @@
 ---
 title: "Štruktúra modulov"
+description: "Vysvetľuje rozloženie modulov API s kontrolérmi, repozitármi, bránami, kontrolami autorizácie a šiestimi funkciami Lambda, ktoré spúšťajú kód vo vývojárskych prostrediach B1."
 ---
 
 # Štruktúra modulov
@@ -13,8 +14,8 @@ Každý modul API má jednotnú vnútornú štruktúru s kontrolérmi, repozitá
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- Nastavte API lokálne – pozri [Lokálne nastavenie API](./local-setup)
-- Prečítajte si architektúru [Databázy](./database), aby ste pochopili vrstvu prístupu k dátam
+- Nastavte API lokálne – pozri [Lokálne nastavenie API](./local-setup.md)
+- Prečítajte si architektúru [Databázy](./database.md), aby ste pochopili vrstvu prístupu k dátam
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Komunikácia medzi modulmi
 
-Každý modul vlastní vlastnú databázu (pozri [Databázu](./database)) a modul nikdy neposiela dotazy priamo do tabuliek iného modulu. Ak jeden modul potrebuje dáta, ktoré vlastní iný – napríklad modul doing potrebuje načítať osoby z modulu membership – obráti sa na **bránu** vlastniaceho modulu v `src/shared/modules/`:
+Každý modul vlastní vlastnú databázu (pozri [Databázu](./database.md)) a modul nikdy neposiela dotazy priamo do tabuliek iného modulu. Ak jeden modul potrebuje dáta, ktoré vlastní iný – napríklad modul doing potrebuje načítať osoby z modulu membership – obráti sa na **bránu** vlastniaceho modulu v `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Lokálne funkcia `web` beží na porte 8084 a funkcia `socket` na porte 8087. Fu
 
 ## Súvisiace články
 
-- **[Databáza](./database)** – Reťazce pripojenia, skripty schémy a vzory prístupu k dátam
-- **[Lokálne nastavenie API](./local-setup)** – Kompletný podrobný návod na nastavenie
-- **[ApiHelper](../shared-libraries/api-helper)** – Zdieľaná knižnica, ktorá poskytuje `CustomBaseController` a autentifikačný middleware
+- **[Databáza](./database.md)** – Reťazce pripojenia, skripty schémy a vzory prístupu k dátam
+- **[Lokálne nastavenie API](./local-setup.md)** – Kompletný podrobný návod na nastavenie
+- **[ApiHelper](../shared-libraries/api-helper.md)** – Zdieľaná knižnica, ktorá poskytuje `CustomBaseController` a autentifikačný middleware

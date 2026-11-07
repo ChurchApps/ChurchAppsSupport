@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Xhuma tisicelo tetitsandvo ku-B1 Admin kukuhlola kwemlandvo kwe-Checkr nge-Make.com, nemilayezo yesimo semibiko yemphathi wekuvikela."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Nangabe libandla lakho lisebentisa bulunga belicembu le-B1 kuvimba kufika (sib. 
 
 ## Buka Nalokunye
 
-- [Make (kubuka konkhe)](../make) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Make
-- [Mobile Message](./mobile-message) — yebaniki be-SMS labangenayo i-app ye-Zapier, sifanelo lesifananako se-Webhooks/HTTP njengekuchumaniswa kwe-Checkr Make
+- [Make (kubuka konkhe)](../make.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Make
+- [Mobile Message](./mobile-message.md) — yebaniki be-SMS labangenayo i-app ye-Zapier, sifanelo lesifananako se-Webhooks/HTTP njengekuchumaniswa kwe-Checkr Make
 - [Emaphepha e-API e-Checkr](https://docs.checkr.com/)

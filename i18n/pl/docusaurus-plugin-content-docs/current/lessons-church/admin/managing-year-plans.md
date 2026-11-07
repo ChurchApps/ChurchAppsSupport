@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie planami rocznymi"
+description: "Plan roczny lekcji tygodniowych w Lessons.church: kotwiczenie tygodni do Wielkanocy lub Bożego Narodzenia i publikacja do użycia w B1 Admin."
 ---
 
 # Zarządzanie planami rocznymi

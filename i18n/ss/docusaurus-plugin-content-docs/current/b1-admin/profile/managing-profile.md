@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Iphrofayela Yakho"
+description: "Buyekeza i-akhawunti yakho ye-ChurchApps ku-B1 Admin: hlela ligama, imeyili nemushwana, vula kuqinisekisa kabili, khetsa sitayela, noma usule i-akhawunti."
 ---
 
 # Kuphatsa Iphrofayela Yakho

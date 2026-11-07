@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Pamahalaan ang mga Small Group"
+description: "I-set up ang maliliit na grupo, Bible study, at ministry team sa B1 Admin, saka i-publish ang calendar at grupo para sa buong simbahan sa B1 website."
 ---
 
 # Pamahalaan ang mga Small Group
@@ -78,7 +79,7 @@ Maaaring tumuklas, sumali, at lumahok ang mga miyembro sa mga grupo mula sa kani
 
 1. Nagba-browse at sumasali ang mga miyembro sa mga grupo sa [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Maaaring tingnan ng mga miyembro ng grupo ang mga detalye, kalendaryo, at mag-post sa [mga pag-uusap](../../b1-church/groups/conversations.md)
-3. Lahat ng feature ng grupo ay available din sa [B1 Mobile app](../../b1-mobile/groups/)
+3. Lahat ng feature ng grupo ay available din sa [B1 Mobile app](../../b1-mobile/groups/index.md)
 
 :::info
 Nakikita ng mga miyembro ang kanilang mga grupo, paparating na mga kaganapan, at mga pag-uusap ng grupo sa parehong web at mobile — lahat ay naka-sync.
@@ -97,4 +98,4 @@ Na-set up na at nakakonekta na ang inyong mga small group. Maaaring tumuklas ng 
 - [Curated na Kalendaryo](../calendars/curated-calendar.md) — buuin ang isang pinag-isang kalendaryo ng simbahan
 - [Pagba-browse ng mga Grupo (Web)](../../b1-church/groups/browsing-groups.md) — paano naghahanap ng mga grupo ang mga miyembro
 - [Mga Pag-uusap ng Grupo (Web)](../../b1-church/groups/conversations.md) — mga talakayan ng grupo
-- [Mga Grupo (Mobile)](../../b1-mobile/groups/) — mga grupo sa mobile app
+- [Mga Grupo (Mobile)](../../b1-mobile/groups/index.md) — mga grupo sa mobile app

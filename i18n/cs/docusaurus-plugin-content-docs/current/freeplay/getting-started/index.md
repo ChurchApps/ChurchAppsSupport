@@ -1,5 +1,7 @@
 ---
-title: "Začínáme"
+title: "Začínáme s aplikací FreePlay TV"
+sidebar_label: "Začínáme"
+description: "Nastavte FreePlay na Android TV, Fire TV nebo Apple TV: nainstalujte aplikaci, otevřete ji poprvé a seznamte se s ovladači a postranním panelem."
 ---
 
 # Začínáme s FreePlay
@@ -42,7 +44,7 @@ FreePlay běží na Fire TV (včetně novějších sticků s Vega OS), na Androi
 
 Když FreePlay poprvé otevřete, uvidíte animovanou úvodní obrazovku s logem FreePlay. Aplikace zkontroluje, zda nejsou připojeni nějací poskytovatelé obsahu. Pokud už jste nějakého poskytovatele připojili, přenese vás přímo do jeho prohlížeče obsahu. Jinak se otevře obrazovka **Poskytovatelé obsahu**, kde můžete připojit první zdroj obsahu.
 
-Pokud je televize spárována s kalendářem v [Režimu plánování](../scheduled-mode/), FreePlay toto vše přeskočí a otevře se rovnou přehrávač podle plánu.
+Pokud je televize spárována s kalendářem v [Režimu plánování](../scheduled-mode/index.md), FreePlay toto vše přeskočí a otevře se rovnou přehrávač podle plánu.
 
 ## Ovládání pomocí dálkového ovladače televize
 
@@ -62,13 +64,13 @@ Když procházíte obsah, postranní panel se sbalí do úzkého pruhu ikon. Sti
 
 Postranní panel obsahuje shora dolů:
 
-- **Dnešní plán** – Zobrazí se, když je televize spárována s plánem. Viz [Režim plánu](../plan-mode/)
-- **Oznámení** – Zobrazí se po výběru složky s oznámeními. Viz [Oznámení](../content-providers/announcements)
-- **Procházet** – Každý připojený poskytovatel obsahu, který můžete procházet. Viz [Procházení a stahování obsahu](../content-providers/browsing-content)
-- **Nastavení** – Na dně postranního panelu. Otevře **Spárovat s kalendářem** (spárování této televize s kalendářem nebo plánem – viz [Výběr režimu párování](./pairing-modes)), **Stahování** (přehrávání nebo mazání obsahu uloženého na tomto zařízení) a **Poskytovatelé** (připojení poskytovatelů obsahu a výběr složky s oznámeními)
+- **Dnešní plán** – Zobrazí se, když je televize spárována s plánem. Viz [Režim plánu](../plan-mode/index.md)
+- **Oznámení** – Zobrazí se po výběru složky s oznámeními. Viz [Oznámení](../content-providers/announcements.md)
+- **Procházet** – Každý připojený poskytovatel obsahu, který můžete procházet. Viz [Procházení a stahování obsahu](../content-providers/browsing-content.md)
+- **Nastavení** – Na dně postranního panelu. Otevře **Spárovat s kalendářem** (spárování této televize s kalendářem nebo plánem – viz [Výběr režimu párování](./pairing-modes.md)), **Stahování** (přehrávání nebo mazání obsahu uloženého na tomto zařízení) a **Poskytovatelé** (připojení poskytovatelů obsahu a výběr složky s oznámeními)
 
 ## Co dál
 
-- **[Výběr režimu párování](./pairing-modes)** – Seznamte se s různými způsoby připojení televize
-- **[Režim plánování](../scheduled-mode/)** – Přidejte své televize do kalendáře pomocí FreePlay Admin
-- **[Poskytovatelé obsahu](../content-providers/)** – Připojte se k Lessons.church, Bible Project a dalším
+- **[Výběr režimu párování](./pairing-modes.md)** – Seznamte se s různými způsoby připojení televize
+- **[Režim plánování](../scheduled-mode/index.md)** – Přidejte své televize do kalendáře pomocí FreePlay Admin
+- **[Poskytovatelé obsahu](../content-providers/index.md)** – Připojte se k Lessons.church, Bible Project a dalším

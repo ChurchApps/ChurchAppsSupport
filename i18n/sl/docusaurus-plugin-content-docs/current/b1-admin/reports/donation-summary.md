@@ -1,5 +1,6 @@
 ---
 title: "Povzetek darov"
+description: "Zaženite poročilo Povzetek darov v B1 Admin in za poljubno obdobje preverite skupni znesek darov, število edinstvenih darovalcev ter zneske po skladih."
 ---
 
 # Povzetek darov

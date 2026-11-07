@@ -29,7 +29,7 @@ Der Provider-Zeile einer Kirche (`content.storageProviders`, verwaltet in B1Admi
 
 Umfang Hinweis: Provider-Auswahl bedeckt den Inhalts **Dateien/Ressourcen** Arbeitsablauf (wo Massen-Medien lebt). Galerie/Logo/Foto-Uploads bleiben auf den Standard-Anbieter -- sie listen Schlüssel aus Speicher auf und bauen URLs Client-seitig, daher Pro-Kirche Rooting nicht zutreffen noch.
 
-Die gleiche Naht macht auch Kraft [Bring-Your-Own Speicher](./byos-storage): Kirchen können Google Drive, Dropbox, OneDrive oder ihren eigenen S3-kompatibel Bucket verlinken statt einer MinistryStuff Plan.
+Die gleiche Naht macht auch Kraft [Bring-Your-Own Speicher](./byos-storage.md): Kirchen können Google Drive, Dropbox, OneDrive oder ihren eigenen S3-kompatibel Bucket verlinken statt einer MinistryStuff Plan.
 
 ## Abrechnung
 

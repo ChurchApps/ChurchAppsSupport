@@ -1,5 +1,6 @@
 ---
 title: "Çoklu Para Birimi Desteği"
+description: "B1 Admin'de farklı para birimlerindeki bağışları kaydedin ve raporlayın; manuel giriş, Stripe çevrimiçi bağış ve birleşik toplamların nasıl dönüştürüldüğünü içerir."
 ---
 
 # Çoklu Para Birimi Desteği

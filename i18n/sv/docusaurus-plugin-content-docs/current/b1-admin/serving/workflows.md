@@ -1,5 +1,6 @@
 ---
 title: "Arbetsflöden"
+description: "Bygg Kanban-liknande tavlor i B1 Admin för att föra människor genom uppföljningssteg med automatiska e-post, sms och utlösare som lägger till personer automatiskt."
 ---
 
 # Arbetsflöden

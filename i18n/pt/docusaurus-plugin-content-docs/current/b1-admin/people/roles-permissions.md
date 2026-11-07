@@ -1,5 +1,6 @@
 ---
 title: "Atribuindo funções"
+description: "Atribua funções no B1 Admin para dar à equipe e aos voluntários acesso apenas às áreas de pessoas, doações, presença e grupos de que precisam."
 ---
 
 # Atribuindo funções

@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Collega B1 Admin e Text In Church con Zapier: genera una chiave API, crea uno Zap dalla scheda di contatto a B1 e sincronizza l'appartenenza ai gruppi."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Attiva lo Zap. La prossima scheda di contatto inviata tramite TIC entra in **B1A
 
 ## Vedi anche
 
-- [Clearstream](./clearstream) — piattaforma SMS alternativa con forma Zapier simile
-- [Zapier (panoramica)](../zapier) — lato B1 di ogni ricetta Zapier
+- [Clearstream](./clearstream.md) — piattaforma SMS alternativa con forma Zapier simile
+- [Zapier (panoramica)](../zapier.md) — lato B1 di ogni ricetta Zapier
 - [Guida Zapier di Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (documentazione di TIC)

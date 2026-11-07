@@ -1,5 +1,6 @@
 ---
 title: "Tải xuống và tài liệu"
+description: "Tìm và tải bảng hoạt động, hướng dẫn cho giáo viên và PDF đính kèm bài học, khóa học hoặc chương trình Lessons.church để in cho lớp."
 ---
 
 # Tải xuống và tài liệu

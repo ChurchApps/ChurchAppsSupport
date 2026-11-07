@@ -1,5 +1,6 @@
 ---
 title: "Potek prijave"
+description: "Korak za korakom spoznajte potek na kiosku B1 Church Checkin, od izbire bogoslužja do odjave, in pred tem v B1 Admin najprej nastavite bogoslužja, skupine in osebe."
 ---
 
 # Potek prijave
@@ -12,13 +13,13 @@ Postopek prijave v B1 Church Checkin poteka po preprostih korakih. Član cerkve 
 
 ## Potek prijave na prvi pogled
 
-1. **[Izberite bogoslužje](./selecting-service)** -- Izberite, katero bogoslužje obiskujete (npr. nedeljsko dopoldne, nedeljsko popoldne, sredina tedna).
-2. **[Poiščite svojo družino](./looking-up-members)** -- Iščite po telefonski številki ali priimku, da se najdete v sistemu.
-3. **[Preglejte svoje gospodinjstvo](./household-review)** -- Oglejte si vse družinske člane in njihove trenutne skupinske dodelitve.
-4. **[Dodelite skupine](./group-assignment)** -- Izberite, kateri razred ali skupina naj obiskuje vsak družinski član za vsak čas bogoslužja.
-5. **[Dodajte goste](./adding-guests)** (neobvezno) -- Dodajte obiskovalca v svoje gospodinjstvo, če se vam pridruži.
-6. **[Dokončajte prijavo](./completing-checkin)** -- Tapnite gumb za prijavo, da oddate udeležbo in natisnete nalepke.
-7. **[Odjava](./checking-out)** (postaje z osebjem) -- Ob času prevzema preverite varnostno kodo in osebo, ki prevzema otroka, s seznami zaupanja vrednih oseb, obveščanjem staršev in ponovnim tiskom nalepk.
+1. **[Izberite bogoslužje](./selecting-service.md)** -- Izberite, katero bogoslužje obiskujete (npr. nedeljsko dopoldne, nedeljsko popoldne, sredina tedna).
+2. **[Poiščite svojo družino](./looking-up-members.md)** -- Iščite po telefonski številki ali priimku, da se najdete v sistemu.
+3. **[Preglejte svoje gospodinjstvo](./household-review.md)** -- Oglejte si vse družinske člane in njihove trenutne skupinske dodelitve.
+4. **[Dodelite skupine](./group-assignment.md)** -- Izberite, kateri razred ali skupina naj obiskuje vsak družinski član za vsak čas bogoslužja.
+5. **[Dodajte goste](./adding-guests.md)** (neobvezno) -- Dodajte obiskovalca v svoje gospodinjstvo, če se vam pridruži.
+6. **[Dokončajte prijavo](./completing-checkin.md)** -- Tapnite gumb za prijavo, da oddate udeležbo in natisnete nalepke.
+7. **[Odjava](./checking-out.md)** (postaje z osebjem) -- Ob času prevzema preverite varnostno kodo in osebo, ki prevzema otroka, s seznami zaupanja vrednih oseb, obveščanjem staršev in ponovnim tiskom nalepk.
 
 Ko je prijava končana, aplikacija prikaže zaslon z uspehom in se samodejno vrne na zaslon za iskanje, pripravljen za naslednjo družino.
 
@@ -36,5 +37,5 @@ Pred uporabo kioska za prijavo se v B1 Admin prepričajte, da so naslednje nasta
 - **Osebe** so dodane v sistem s povezavami na gospodinjstva. Glejte [dodajanje oseb](../../b1-admin/people/adding-people.md).
 
 :::info
-Če kioska še niste nastavili, glejte [Začetek dela](../getting-started/) za navodila za namestitev, prijavo in konfiguracijo tiskalnika.
+Če kioska še niste nastavili, glejte [Začetek dela](../getting-started/index.md) za navodila za namestitev, prijavo in konfiguracijo tiskalnika.
 :::

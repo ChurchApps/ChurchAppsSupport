@@ -1,5 +1,7 @@
 ---
-title: "Päivän jae"
+title: "Päivän jae B1 Mobilessa"
+sidebar_label: "Päivän jae"
+description: "Avaa Päivän jae -näkymä B1 Mobilessa nähdäksesi päivän Raamatun jakeen kuvana, joka on sovitettu puhelimesi tai tabletin asentoon ja päivittyy päivittäin."
 ---
 
 # Päivän jae
@@ -13,7 +15,7 @@ Päivän jae -näkymässä näytetään päivittäinen Raamatun jae kauniisti mu
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Seurakuntasi on otettava Päivän jae -ominaisuus käyttöön
 
 </div>
@@ -46,5 +48,5 @@ Päivän jae on B1 Mobilen sisäänrakennettu sisältöominaisuus. Jos et näe s
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Raamattu](./bible) – Lue kokonaisia Raamatun kohtia sisäänrakennetussa lukijassa
-- [Saarnat](./sermons) – Katso seurakuntasi tallennettuja saarnoja
+- [Raamattu](./bible.md) – Lue kokonaisia Raamatun kohtia sisäänrakennetussa lukijassa
+- [Saarnat](./sermons.md) – Katso seurakuntasi tallennettuja saarnoja

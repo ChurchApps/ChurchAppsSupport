@@ -1,5 +1,6 @@
 ---
 title: "Web Uygulamaları"
+description: "Üç ChurchApps web uygulamasına genel bakış (B1 Admin, B1.church, Lessons.church): ortak React ve MUI yığını, apphelper paketleri ve derleme araçları."
 ---
 
 # Web Uygulamaları
@@ -41,7 +42,7 @@ Uygulamalar, UI bileşenlerini ve yardımcı araçları `@churchapps/apphelper*`
 | `@churchapps/apphelper-website` | Web sitesi/CMS bileşenleri |
 
 :::tip
-Bu paketleri yerel olarak geliştirme hakkında ayrıntılar için [AppHelper](../shared-libraries/app-helper) belgelerine bakın.
+Bu paketleri yerel olarak geliştirme hakkında ayrıntılar için [AppHelper](../shared-libraries/app-helper.md) belgelerine bakın.
 :::
 
 ## Postinstall Betiği

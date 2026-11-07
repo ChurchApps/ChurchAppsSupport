@@ -1,5 +1,6 @@
 ---
 title: "Menelusuri Grup"
+description: "Jelajahi grup publik gereja di B1.church berdasarkan kategori, lalu lihat jadwal, lokasi, dan deskripsi tiap kartu untuk menemukan yang cocok."
 ---
 
 # Menelusuri Grup

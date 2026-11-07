@@ -1,5 +1,6 @@
 ---
 title: "Tredjepartsudgivere"
+description: "Tilføj en ekstern curriculum-feed til Lessons.church fra siden for tredjepartsudbydere, og vis, opdater eller fjern udbyderforbindelser efter behov."
 ---
 
 # Tredjepartsudgivere

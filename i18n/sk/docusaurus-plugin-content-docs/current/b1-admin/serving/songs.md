@@ -1,5 +1,6 @@
 ---
 title: "Piesne"
+description: "Spravujte knižnicu chválových piesní v B1 Admin: hľadajte a pridávajte piesne, upravujte údaje, priložte texty ChordPro a nahrajte nácvikové audio."
 ---
 
 # Piesne

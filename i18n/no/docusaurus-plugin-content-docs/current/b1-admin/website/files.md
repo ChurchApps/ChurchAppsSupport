@@ -1,5 +1,6 @@
 ---
 title: "Filer"
+description: "Last opp, bla gjennom og administrer bilder og dokumenter for menighetens nettsted i B1 Admin, inkludert kobling til ekstern lagring for mer plass."
 ---
 
 # Filer
@@ -13,7 +14,7 @@ Siden Filer er det sentrale arkivet for alle medier og dokumenter som brukes på
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [førstegangsoppsettet](initial-setup) for nettstedet ditt
+- Fullfør [førstegangsoppsettet](./initial-setup.md) for nettstedet ditt
 - Optimaliser bilder før opplasting, så sidene lastes raskere
 - Gjør filene klare i vanlige nettformater (PNG, JPG, PDF osv.)
 
@@ -42,7 +43,7 @@ Filtabellen viser alle opplastede filer med **Navn** og **Størrelse**. Klikk p�
 3. Filer du laster opp her, kan brukes på alle nettsidene og innholdsblokkene dine.
 
 :::info
-Når du bygger sider under [Administrere sider](managing-pages), kan du henvise til enhver fil som er lastet opp her, med URL-en. Da har du alle mediene organisert på ett sted.
+Når du bygger sider under [Administrere sider](./managing-pages.md), kan du henvise til enhver fil som er lastet opp her, med URL-en. Da har du alle mediene organisert på ett sted.
 :::
 
 ## Slette filer
@@ -57,5 +58,5 @@ Slettede filer kan ikke gjenopprettes. Dobbeltsjekk at filen ikke lenger er i br
 
 ## Neste steg
 
-- [Administrere sider](managing-pages) -- Legg de opplastede filene til nettsidene
-- [Utseende](appearance) -- Tilpass nettstedets visuelle tema
+- [Administrere sider](./managing-pages.md) -- Legg de opplastede filene til nettsidene
+- [Utseende](./appearance.md) -- Tilpass nettstedets visuelle tema

@@ -1,5 +1,7 @@
 ---
-title: "Logging In"
+title: "Logging In to B1 Mobile"
+sidebar_label: "Logging In"
+description: "Sign in to the B1 Mobile app with your ChurchApps account, register a new account, or recover a forgotten password with a 6-digit code."
 ---
 
 # Logging In
@@ -13,7 +15,7 @@ B1 Mobile uses the same ChurchApps account you use on B1.church and other Church
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](./installing) on your iOS or Android device
+- [Install B1 Mobile](./installing.md) on your iOS or Android device
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile uses the same ChurchApps account you use on B1.church and other Church
 3. Enter your **email address** and **password**.
 4. Tap **Sign In**.
 
-After signing in, you will be taken to the [dashboard](../dashboard/). If you have not selected a church yet, you will be prompted to search for and select one.
+After signing in, you will be taken to the [dashboard](../dashboard/index.md). If you have not selected a church yet, you will be prompted to search for and select one.
 
 ## Creating a New Account
 

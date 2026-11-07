@@ -1,5 +1,6 @@
 ---
 title: "Medlemskabsendpoints"
+description: "Endpoint-reference for ChurchApps Membership API: personer, husstande, grupper, roller, formularer og indstillinger, med autorisations- og tilladelsesregler."
 ---
 
 # Medlemskabsendpoints
@@ -71,7 +72,7 @@ Authorization: Bearer <token>
 
 Basesti: `/membership/users`
 
-Se [Godkendelse og tilladelser](./authentication) for login-, registrerings- og adgangskodeenheder.
+Se [Godkendelse og tilladelser](./authentication.md) for login-, registrerings- og adgangskodeenheder.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -331,6 +332,6 @@ Basesti: `/membership/clientErrors`
 
 ## Relaterede sider
 
-- [Godkendelse og tilladelser](./authentication) — Login flow, JWT, OAuth, tilladelsesmodel
-- [Deltagelsesendpoints](./attendance) — Service- og besøgssporing
-- [Modulstruktur](../module-structure) — Kodeorganiseringsmønstre
+- [Godkendelse og tilladelser](./authentication.md) — Login flow, JWT, OAuth, tilladelsesmodel
+- [Deltagelsesendpoints](./attendance.md) — Service- og besøgssporing
+- [Modulstruktur](../module-structure.md) — Kodeorganiseringsmønstre

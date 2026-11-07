@@ -1,5 +1,6 @@
 ---
 title: "Webhooki"
+description: "Nastavite webhooke v B1 Admin: registrirajte končne točke, izberite dogodke, preverjajte podpise HMAC, ravnajte s ponovitvami in ponovno pošljite napake."
 ---
 
 # Webhooki
@@ -33,7 +34,7 @@ Pojdite na **Nastavitve → Razvijalec → Webhooki → Nov webhook**. Vnesite i
 
 ### Prek API-ja
 
-Vse končne točke so pod osnovno potjo modula Membership, `/membership/webhooks`, in zahtevajo bodisi JWT skrbnika cerkve s pravico `Settings / Edit` bodisi [API ključ](./api-keys), ustvarjen z obsegom `settings:write`. Iste poti sprejemajo oboje. To omogoča, da Zapier in Make registrirata webhooke v imenu cerkve, ko se Zap ali scenarij vklopi.
+Vse končne točke so pod osnovno potjo modula Membership, `/membership/webhooks`, in zahtevajo bodisi JWT skrbnika cerkve s pravico `Settings / Edit` bodisi [API ključ](./api-keys.md), ustvarjen z obsegom `settings:write`. Iste poti sprejemajo oboje. To omogoča, da Zapier in Make registrirata webhooke v imenu cerkve, ko se Zap ali scenarij vklopi.
 
 ```http
 POST /membership/webhooks

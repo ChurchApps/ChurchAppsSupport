@@ -1,5 +1,6 @@
 ---
 title: "Gedeelde bibliotheken"
+description: "Dokumentacja pakietów npm @churchapps współdzielonych przez B1 Admin, B1.church i API, oraz konfiguracja workspace Packages i wydawanie przez changesets."
 ---
 
 # Gedeelde bibliotheken
@@ -14,9 +15,9 @@ Gedeelde code van ChurchApps wordt gepubliceerd op npm onder de scope `@churchap
 
 | Pakket | Beschrijving | Gebruikt door |
 |--------|--------------|---------------|
-| [`@churchapps/helpers`](./helpers) | Basislaag: framework-onafhankelijke hulpfuncties en de gedeelde TypeScript-interfaces die het gegevenscontract tussen apps vormen | Alle projecten |
-| [`@churchapps/apihelper`](./api-helper) | Server-side Express-hulpprogramma's: authenticatie, basiscontrollers, databasetoegang, AWS- en e-mailintegraties | Alle API's |
-| [`@churchapps/apphelper`](./app-helper) | Gedeelde React-componenten en functiemodules (inloggen, donaties, formulieren, markdown, website) | Alle webapps |
+| [`@churchapps/helpers`](./helpers.md) | Basislaag: framework-onafhankelijke hulpfuncties en de gedeelde TypeScript-interfaces die het gegevenscontract tussen apps vormen | Alle projecten |
+| [`@churchapps/apihelper`](./api-helper.md) | Server-side Express-hulpprogramma's: authenticatie, basiscontrollers, databasetoegang, AWS- en e-mailintegraties | Alle API's |
+| [`@churchapps/apphelper`](./app-helper.md) | Gedeelde React-componenten en functiemodules (inloggen, donaties, formulieren, markdown, website) | Alle webapps |
 | `@churchapps/content-providers` | Abstractielaag over externe contentproviders (Lessons.church, Planning Center, Dropbox en andere) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Toolkit voor het bouwen van B1.church-integraties: webhookverificatie, getypeerde REST-client, OAuth-hulpfuncties | Externe integratieontwikkelaars |
 | `@churchapps/texting` | Abstractielaag voor sms-providers (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

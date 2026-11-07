@@ -1,5 +1,6 @@
 ---
 title: "Chỉnh sửa hàng loạt người"
+description: "Cập nhật hàng loạt trạng thái thành viên, tình trạng hôn nhân, giới tính, từ chối nhận tin, trường Có/Không tùy chỉnh hoặc thành viên nhóm trong B1 Admin."
 ---
 
 # Chỉnh sửa hàng loạt người

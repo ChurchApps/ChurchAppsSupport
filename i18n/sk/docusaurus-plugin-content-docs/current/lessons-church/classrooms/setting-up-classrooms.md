@@ -1,5 +1,6 @@
 ---
 title: "Nastavenie tried"
+description: "Vytváranie, premenovanie a odstraňovanie tried v portáli Lessons.church, aby bola každá miestnosť alebo vekové skupina pripravená na týždenné plánovanie lekcií."
 ---
 
 # Nastavenie tried

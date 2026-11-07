@@ -1,5 +1,6 @@
 ---
 title: "Potisna obvestila na spletu"
+description: "Nastavitev ključev VAPID, odjemalca WebPushHelper in service workerja, da B1.church in B1 Admin članom dostavljata potisna obvestila v brskalniku."
 ---
 
 # Potisna obvestila na spletu
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Povezane strani
 
-- [Arhitektura obvestil](./architecture/notifications) -- Celotni lijak eskalacije (v aplikaciji, potisno, e-pošta) in motor opomnikov
-- [Arhitektura v realnem času](./realtime) -- Dostava prek WebSocketa. Potisna obvestila se zdaj sprožijo iz istega lijaka v aplikaciji poleg dostave prek socketa v istem prehodu, ne le kot rezerva, ko dostava prek socketa ne uspe
-- [Končne točke za sporočila](./api/endpoints/messaging) -- Obvestila, naprave in preostala površina sporočil
-- [AppHelper](./shared-libraries/app-helper) -- Paket npm, ki vsebuje `WebPushHelper`
+- [Arhitektura obvestil](./architecture/notifications.md) -- Celotni lijak eskalacije (v aplikaciji, potisno, e-pošta) in motor opomnikov
+- [Arhitektura v realnem času](./realtime.md) -- Dostava prek WebSocketa. Potisna obvestila se zdaj sprožijo iz istega lijaka v aplikaciji poleg dostave prek socketa v istem prehodu, ne le kot rezerva, ko dostava prek socketa ne uspe
+- [Končne točke za sporočila](./api/endpoints/messaging.md) -- Obvestila, naprave in preostala površina sporočil
+- [AppHelper](./shared-libraries/app-helper.md) -- Paket npm, ki vsebuje `WebPushHelper`

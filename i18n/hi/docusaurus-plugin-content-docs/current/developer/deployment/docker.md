@@ -1,12 +1,13 @@
 ---
 title: "Docker के साथ स्व-होस्टिंग"
+description: "Docker से अपनी मशीन पर निजी B1 Admin, मेंबर पोर्टल, API और MySQL स्टैक इंस्टॉल करें, फिर b1 कमांड से अपग्रेड और बैकअप करें।"
 ---
 
 # Docker के साथ स्व-होस्टिंग
 
 <div class="article-intro">
 
-Docker वाली किसी भी मशीन पर -- एक होम सर्वर, एक छोटा VPS, या ऑन-प्रिमाइसेस बॉक्स -- B1 Admin, B1 सदस्य पोर्टल और वेबसाइट, API, और एक MySQL डेटाबेस का अपना निजी इंस्टेंस चलाएँ। एक कमांड इसे इंस्टॉल करता है, एक कमांड इसे अपग्रेड करता है, और हर अपग्रेड पहले बैकअप लेता है। यदि आप सर्वर बिल्कुल प्रबंधित नहीं करना चाहते, तो प्रबंधित विकल्प के लिए [Railway पर स्व-होस्टिंग](./railway-template) देखें।
+Docker वाली किसी भी मशीन पर -- एक होम सर्वर, एक छोटा VPS, या ऑन-प्रिमाइसेस बॉक्स -- B1 Admin, B1 सदस्य पोर्टल और वेबसाइट, API, और एक MySQL डेटाबेस का अपना निजी इंस्टेंस चलाएँ। एक कमांड इसे इंस्टॉल करता है, एक कमांड इसे अपग्रेड करता है, और हर अपग्रेड पहले बैकअप लेता है। यदि आप सर्वर बिल्कुल प्रबंधित नहीं करना चाहते, तो प्रबंधित विकल्प के लिए [Railway पर स्व-होस्टिंग](./railway-template.md) देखें।
 
 </div>
 
@@ -94,10 +95,10 @@ SUPPORT_EMAIL=noreply@church.example.org
 
 ये बिल्कुल Railway की तरह काम करते हैं -- वही पर्यावरण चर, Railway डैशबोर्ड के बजाय `.env` में सेट:
 
-- **[ईमेल / SMTP](./railway-template#1-email-highly-recommended)** -- Resend, Brevo, और Gmail के लिए प्रदाता वॉकथ्रू
-- **[मल्टी-साइट](./railway-template#3-multi-site-multiple-churches-on-one-instance)** -- प्रति इंस्टेंस असीमित चर्च। `/` वह चर्च परोसता है जिसका slug `DEFAULT_CHURCH_SLUG` है (पहला चर्च `church` है); अतिरिक्त डोमेन को बॉक्स की ओर इंगित करें और B1Admin में **Settings → Domains** के अंतर्गत उन्हें मैप करें
-- **[ऑनलाइन giving](./railway-template#4-online-giving-stripe--paypal)** -- हर चर्च के लिए एडमिन UI में कॉन्फ़िगर
-- **[वैकल्पिक एकीकरण](./railway-template#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[ईमेल / SMTP](./railway-template.md#1-email-highly-recommended)** -- Resend, Brevo, और Gmail के लिए प्रदाता वॉकथ्रू
+- **[मल्टी-साइट](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** -- प्रति इंस्टेंस असीमित चर्च। `/` वह चर्च परोसता है जिसका slug `DEFAULT_CHURCH_SLUG` है (पहला चर्च `church` है); अतिरिक्त डोमेन को बॉक्स की ओर इंगित करें और B1Admin में **Settings → Domains** के अंतर्गत उन्हें मैप करें
+- **[ऑनलाइन giving](./railway-template.md#4-online-giving-stripe--paypal)** -- हर चर्च के लिए एडमिन UI में कॉन्फ़िगर
+- **[वैकल्पिक एकीकरण](./railway-template.md#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push notifications](#push-notifications)** -- `WEB_PUSH_*`; इंस्टॉलर इन्हें खाली छोड़ता है, इसलिए आप इन्हें जोड़ने तक push बंद रहता है
 
 स्व-होस्टेड इंस्टेंस पर निमंत्रण और अन्य चर्च द्वारा भेजे गए ईमेल अपने आप सक्षम होते हैं (होस्टेड सेवा अपनी प्रेषक प्रतिष्ठा की रक्षा के लिए इन्हें मैन्युअल समीक्षा के पीछे रखती है)।
@@ -148,7 +149,7 @@ SUPPORT_EMAIL=noreply@church.example.org
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-बड़ी मीडिया लाइब्रेरी के लिए आप फ़ाइल स्टोरेज को S3 पर बदल सकते हैं -- `FILE_STORE=S3` और [Railway गाइड के File Storage अनुभाग](./railway-template#5-file-storage) में वर्णित `AWS_*` चर सेट करें। डेटाबेस बैकअप में S3 objects शामिल नहीं होते; वहाँ bucket versioning चालू करें।
+बड़ी मीडिया लाइब्रेरी के लिए आप फ़ाइल स्टोरेज को S3 पर बदल सकते हैं -- `FILE_STORE=S3` और [Railway गाइड के File Storage अनुभाग](./railway-template.md#5-file-storage) में वर्णित `AWS_*` चर सेट करें। डेटाबेस बैकअप में S3 objects शामिल नहीं होते; वहाँ bucket versioning चालू करें।
 
 ## अपडेट करना
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## संबंधित लेख
 
-- **[Railway पर स्व-होस्टिंग](./railway-template)** -- प्रबंधित होस्टिंग विकल्प, साथ में साझा पोस्ट-डिप्लॉय कॉन्फ़िगरेशन गाइड
-- **[प्रारंभिक सेटअप](../../getting-started/initial-setup)** -- आपका चर्च बनने के बाद पहले कदम
-- **[Local API Setup](../api/local-setup)** -- विकास के लिए स्टैक को सीधे चलाना
+- **[Railway पर स्व-होस्टिंग](./railway-template.md)** -- प्रबंधित होस्टिंग विकल्प, साथ में साझा पोस्ट-डिप्लॉय कॉन्फ़िगरेशन गाइड
+- **[प्रारंभिक सेटअप](../../getting-started/initial-setup.md)** -- आपका चर्च बनने के बाद पहले कदम
+- **[Local API Setup](../api/local-setup.md)** -- विकास के लिए स्टैक को सीधे चलाना

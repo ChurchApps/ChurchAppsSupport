@@ -1,5 +1,6 @@
 ---
 title: "Dogodki RSVP"
+description: "Odpowiadaj „Będę”, „Może” lub „Nie będę” na wydarzenia grupy w portalu B1.church i sprawdź, ile osób przyjdzie. Liderzy mogą przeglądać odpowiedzi."
 ---
 
 # Dogodki RSVP
@@ -30,14 +31,14 @@ Vaš odgovor velja za ta konkreten termin – pri tedenskem srečanju odgovorite
 ## Za vodje skupin
 
 - **Ogled odgovorov** -- Vodje pri vsakem dogodku v koledarju skupine (**Vsi dogodki**) vidijo povezavo **Ogled odgovorov**. Odpre se list **Odgovori**, ki našteje vse člane po odgovoru – Udeležim se, Morda in Ne morem. Če še nihče ni odgovoril, se prikaže »Še ni odgovorov«.
-- **Vklop ali izklop RSVP** -- Pri ustvarjanju ali urejanju dogodka uporabite stikalo **Dovoli RSVP**. Dogodki z izklopljenim RSVP-jem ne prikazujejo gumbov za odgovor. Osebje, ki dogodke ustvarja zbirno v aplikaciji B1 Admin, ima enako možnost – glejte [Koledar skupine](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Vklop ali izklop RSVP** -- Pri ustvarjanju ali urejanju dogodka uporabite stikalo **Dovoli RSVP**. Dogodki z izklopljenim RSVP-jem ne prikazujejo gumbov za odgovor. Osebje, ki dogodke ustvarja zbirno v aplikaciji B1 Admin, ima enako možnost – glejte [Koledar skupine](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-RSVP je preprost način za štetje udeležencev. Če vaš dogodek zahteva podatke ob prijavi, upravljanje kapacitete ali plačilo, namesto tega uporabite [prijavo na dogodek](../events/registering).
+RSVP je preprost način za štetje udeležencev. Če vaš dogodek zahteva podatke ob prijavi, upravljanje kapacitete ali plačilo, namesto tega uporabite [prijavo na dogodek](../events/registering.md).
 :::
 
 ## Sorodni članki
 
 - [Podrobnosti skupine](./group-details.md) -- Vse na strani s podrobnostmi skupine
-- [Koledar skupine (B1 Admin)](../../b1-admin/groups/group-calendar) -- Kako osebje in vodje upravljajo dogodke skupine in RSVP
-- [Prijava na dogodke](../events/registering) -- Celotna prijava na dogodek s kapaciteto in plačili
+- [Koledar skupine (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Kako osebje in vodje upravljajo dogodke skupine in RSVP
+- [Prijava na dogodke](../events/registering.md) -- Celotna prijava na dogodek s kapaciteto in plačili

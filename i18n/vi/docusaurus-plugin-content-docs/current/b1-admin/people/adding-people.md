@@ -1,5 +1,6 @@
 ---
 title: "Thêm người"
+description: "Thêm người vào cơ sở dữ liệu hội thánh trong B1 Admin, điền thông tin chi tiết và liên kết thành viên gia đình thành hộ gia đình để check-in và báo cáo."
 ---
 
 # Thêm người

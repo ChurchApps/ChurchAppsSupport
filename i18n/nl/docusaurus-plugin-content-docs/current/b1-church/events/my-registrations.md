@@ -1,5 +1,6 @@
 ---
 title: "Mijn registraties"
+description: "Controleer je inschrijfstatus, betaal een openstaand saldo, wijzig deelnemers of extra's, of annuleer een aanmelding in het ledenportaal van B1 Church."
 ---
 
 # Mijn registraties
@@ -14,7 +15,7 @@ De pagina **Registraties** in het ledenportaal is je thuisbasis voor elk eveneme
 <h4>Voordat je begint</h4>
 
 - Je moet [ingelogd](../getting-started/logging-in.md) zijn — gastregistraties verschijnen hier niet
-- Je hebt ten minste één evenementregistratie nodig. Zie [Registreren voor evenementen](./registering).
+- Je hebt ten minste één evenementregistratie nodig. Zie [Registreren voor evenementen](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Je plek komt onmiddellijk vrij. Als het evenement een wachtlijst heeft, wordt de
 
 ## Gerelateerde artikelen
 
-- [Registreren voor evenementen](./registering) -- Het aanmeldingsproces, inclusief betaling en wachtlijsten
+- [Registreren voor evenementen](./registering.md) -- Het aanmeldingsproces, inclusief betaling en wachtlijsten
 - [Overzicht evenementen](./index.md) -- Blader door aankomende evenementen

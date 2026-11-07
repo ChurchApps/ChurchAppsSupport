@@ -1,5 +1,6 @@
 ---
 title: "Seznamy narozenin a výročí"
+description: "Sestavte seznam všech, kdo mají v daném měsíci narozeniny nebo výročí, pomocí filtrů vyhledávání osob v B1 Admin. Data pak zobrazte nebo exportujte."
 ---
 
 # Seznamy narozenin a výročí

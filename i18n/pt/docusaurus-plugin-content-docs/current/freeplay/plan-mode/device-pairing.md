@@ -1,5 +1,6 @@
 ---
 title: "Pareando seu dispositivo"
+description: "Pareie uma TV FreePlay a um tipo de plano no B1 Admin com o código de quatro letras da tela e baixe a mídia do plano para reprodução no Plan Mode."
 ---
 
 # Pareando seu dispositivo
@@ -13,7 +14,7 @@ Para usar o Modo de plano, você pareia sua TV com um tipo de plano no B1 Admin.
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale e abra o FreePlay. Consulte [Primeiros Passos](../getting-started/)
+- Instale e abra o FreePlay. Consulte [Primeiros Passos](../getting-started/index.md)
 - Tenha acesso ao **B1 Admin** em um computador ou celular para concluir o pareamento
 
 </div>
@@ -25,7 +26,7 @@ Para usar o Modo de plano, você pareia sua TV com um tipo de plano no B1 Admin.
 3. O FreePlay mostra um código de pareamento de quatro letras, em letras grandes, ao lado de um código QR.
 4. Abaixo do código, um indicador pulsante **Aguardando confirmação** mostra que o FreePlay está esperando você concluir o pareamento.
 
-O mesmo código funciona para o [Modo programado](../scheduled-mode/) no FreePlay Admin e para o Modo de plano no B1 Admin. O código QR e o endereço **freeplay.church/pair** exibidos na tela levam ao FreePlay Admin. Para o Modo de plano, ignore-os e informe o código no B1 Admin, conforme descrito abaixo.
+O mesmo código funciona para o [Modo programado](../scheduled-mode/index.md) no FreePlay Admin e para o Modo de plano no B1 Admin. O código QR e o endereço **freeplay.church/pair** exibidos na tela levam ao FreePlay Admin. Para o Modo de plano, ignore-os e informe o código no B1 Admin, conforme descrito abaixo.
 
 ## Informando o código no B1 Admin
 
@@ -61,5 +62,5 @@ Os códigos de pareamento expiram após 15 minutos. O FreePlay mostra um novo c�
 ## Artigos relacionados
 
 - **[Visão geral do Modo de plano](./index.md)** - Como o Modo de plano difere do Modo programado
-- **[Parear uma tela](../scheduled-mode/pairing-a-screen)** - Pareie a mesma TV com um calendário no FreePlay Admin
-- **[Reproduzindo conteúdo](../content-providers/playing-content)** - Controles do player para a reprodução de planos
+- **[Parear uma tela](../scheduled-mode/pairing-a-screen.md)** - Pareie a mesma TV com um calendário no FreePlay Admin
+- **[Reproduzindo conteúdo](../content-providers/playing-content.md)** - Controles do player para a reprodução de planos

@@ -1,5 +1,6 @@
 ---
 title: "Implantação de Aplicações Web"
+description: "Como implantar os apps web da ChurchApps (ex.: B1 Admin) no Amazon S3 e CloudFront, com deploy automático pelo GitHub Actions ou por comandos manuais."
 ---
 
 # Implantação de Aplicações Web
@@ -13,7 +14,7 @@ As aplicações web do ChurchApps são implantadas como sites estáticos no **Am
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure a aplicação web localmente e verifique se ela compila -- veja [Aplicações Web](../web-apps/)
+- Configure a aplicação web localmente e verifique se ela compila -- veja [Aplicações Web](../web-apps/index.md)
 - Configure credenciais AWS com acesso ao S3 e CloudFront
 - Saiba o nome do bucket S3 de destino e o ID de distribuição do CloudFront
 
@@ -53,6 +54,6 @@ Se você precisar verificar um build localmente antes de implantar, execute `npm
 
 ## Artigos Relacionados
 
-- **[Aplicações Web](../web-apps/)** -- Guias de configuração para B1Admin, B1App e LessonsApp
-- **[Implantação de APIs](./apis)** -- Implantando as APIs do backend
-- **[Implantação Móvel](./mobile)** -- Implantando aplicações móveis nas lojas de aplicativos
+- **[Aplicações Web](../web-apps/index.md)** -- Guias de configuração para B1Admin, B1App e LessonsApp
+- **[Implantação de APIs](./apis.md)** -- Implantando as APIs do backend
+- **[Implantação Móvel](./mobile.md)** -- Implantando aplicações móveis nas lojas de aplicativos

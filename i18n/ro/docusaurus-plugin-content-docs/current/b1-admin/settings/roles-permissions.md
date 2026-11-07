@@ -1,5 +1,6 @@
 ---
 title: "Roluri și permisiuni"
+description: "Configurează roluri în B1 Admin pentru a controla ce pot vedea și modifica personalul și voluntarii, de la donații și prezență la persoane și grupe."
 ---
 
 # Roluri și permisiuni

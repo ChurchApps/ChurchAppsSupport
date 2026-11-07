@@ -1,5 +1,7 @@
 ---
-title: "Bağış Geçmişi"
+title: "B1 Mobile'da Bağış Geçmişini Görüntüleme"
+sidebar_label: "Bağış Geçmişi"
+description: "B1 Mobile'da yıl başından bugüne bağışlarınızı, son bağışınızı ve tüm bağış kaydınızı kontrol edin; Genel Bakış sekmesinden geçmiş bir bağışı tek dokunuşla tekrarlayın."
 ---
 
 # Bağış Geçmişi
@@ -13,8 +15,8 @@ B1 Mobile, bağışlarınızın net bir görünümünü iki sekmeyle sunar: hız
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
-- Geçmişinizi görmek için [en az bir bağış yapın](./making-donations)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
+- Geçmişinizi görmek için [en az bir bağış yapın](./making-donations.md)
 
 </div>
 
@@ -45,5 +47,5 @@ Bağış hedeflerinizi takip etmek için **Genel Bakış** sekmesini düzenli ol
 
 ## İlgili Makaleler
 
-- [Bağış Yapma](./making-donations) -- Uygulamadan yeni bir bağış yapın
-- [Ödeme Yöntemlerini Yönetme](./managing-payments) -- Kayıtlı ödeme yöntemleri ekleyin veya kaldırın
+- [Bağış Yapma](./making-donations.md) -- Uygulamadan yeni bir bağış yapın
+- [Ödeme Yöntemlerini Yönetme](./managing-payments.md) -- Kayıtlı ödeme yöntemleri ekleyin veya kaldırın

@@ -1,5 +1,6 @@
 ---
 title: "Dijital Tabela"
+description: "B1 Admin'de her zaman güncel planı gösteren bir dijital tabela adresiyle ders içeriğini lobi veya koridor televizyonuna gönderin ya da FreePlay TV'leri kullanın."
 ---
 
 # Dijital Tabela
@@ -14,7 +15,7 @@ Ders içeriğinizi bir dijital tabela beslemesi kullanarak bir lobi veya koridor
 <h4>Başlamadan Önce</h4>
 
 - [Lessons.church](../../b1-church/content/lessons.md) veya başka bir ders içeriğiyle birlikte bir [plan türü](./plans.md) oluşturun ve içerik zamanlanmış olsun
-- Bir [SignPresenter](https://www.signpresenter.com) hesabınız ve bunu görüntülemek için ayarlanmış bir cihazınız olsun ya da [FreePlay](../../freeplay/) çalıştıran bir TV'niz olsun
+- Bir [SignPresenter](https://www.signpresenter.com) hesabınız ve bunu görüntülemek için ayarlanmış bir cihazınız olsun ya da [FreePlay](../../freeplay/index.md) çalıştıran bir TV'niz olsun
 
 </div>
 
@@ -36,14 +37,14 @@ SignPresenter içindeki adım adım kurulum için [SignPresenter'ın Lessons.chu
 
 ## Bunun Yerine FreePlay TV'leri Kullanma
 
-Ekranlarınız [FreePlay](../../freeplay/) çalıştırıyorsa besleme URL'sine ihtiyacınız yoktur. **Digital Signage Feed** iletişim kutusu, **admin.freeplay.church/calendar** adresine bağlantı verir. Bu adreste plan türünü FreePlay TV'lerinizde zamanlayabilirsiniz:
+Ekranlarınız [FreePlay](../../freeplay/index.md) çalıştırıyorsa besleme URL'sine ihtiyacınız yoktur. **Digital Signage Feed** iletişim kutusu, **admin.freeplay.church/calendar** adresine bağlantı verir. Bu adreste plan türünü FreePlay TV'lerinizde zamanlayabilirsiniz:
 
 1. İletişim kutusundaki **admin.freeplay.church/calendar** bağlantısına tıklayın. FreePlay Admin, B1 Admin ile aynı girişi kullanır.
 2. TV'leriniz için ekran grubunu seçin ve **Add schedule** düğmesine tıklayın.
 3. **Play** altında, **Service plans** listesinden plan türünüzü seçin. Yanında **(current plan)** ifadesi bulunur.
 4. Günleri ve saatleri ayarlayın, ardından **Save** düğmesine tıklayın.
 
-TV'ler, belirlediğiniz saatlerde, her hafta o plan türü için geçerli olan planı oynatır. Bu, özelleştirdiğiniz planlar dahil Go Curriculum derslerinde de çalışır. FreePlay, **Content Providers** altında hizmet grubuna bağlı Go Curriculum hesabıyla giriş yapar (bkz. [Ders Zamanlama](./scheduling-lessons.md)). Hizmet grubunda hesap yoksa kilisenin Go Curriculum bağlantısı kullanılır. Tüm seçenekler için [Takvim Zamanlama](../../freeplay/scheduled-mode/scheduling-the-calendar) sayfasına, bir TV eklemek için ise [Ekran Eşleştirme](../../freeplay/scheduled-mode/pairing-a-screen) sayfasına bakın.
+TV'ler, belirlediğiniz saatlerde, her hafta o plan türü için geçerli olan planı oynatır. Bu, özelleştirdiğiniz planlar dahil Go Curriculum derslerinde de çalışır. FreePlay, **Content Providers** altında hizmet grubuna bağlı Go Curriculum hesabıyla giriş yapar (bkz. [Ders Zamanlama](./scheduling-lessons.md)). Hizmet grubunda hesap yoksa kilisenin Go Curriculum bağlantısı kullanılır. Tüm seçenekler için [Takvim Zamanlama](../../freeplay/scheduled-mode/scheduling-the-calendar.md) sayfasına, bir TV eklemek için ise [Ekran Eşleştirme](../../freeplay/scheduled-mode/pairing-a-screen.md) sayfasına bakın.
 
 :::note
 Besleme URL'si Go Curriculum medyasını içermez, çünkü bu içerik kilisenizin Go Curriculum girişini gerektirir. Bir lobi veya sınıf TV'sinde Go Curriculum dersi göstermek için FreePlay kullanın.
@@ -53,4 +54,4 @@ Besleme URL'si Go Curriculum medyasını içermez, çünkü bu içerik kiliseniz
 
 - Bu dijital tabelayı besleyen planları [Planlar](./plans.md) sayfasında yönetin
 - [Lessons.church](./scheduling-lessons.md) ile içerik zamanlayın
-- [Zamanlanmış Mod](../../freeplay/scheduled-mode/) ile FreePlay TV'lerini bir takvime bağlayın
+- [Zamanlanmış Mod](../../freeplay/scheduled-mode/index.md) ile FreePlay TV'lerini bir takvime bağlayın

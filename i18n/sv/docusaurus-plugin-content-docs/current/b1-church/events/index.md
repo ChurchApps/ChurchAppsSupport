@@ -1,5 +1,7 @@
 ---
-title: "Händelser"
+title: "Kyrkans evenemang på B1.church: bläddra och anmäl dig"
+sidebar_label: "Händelser"
+description: "Bläddra bland kommande kyrkliga evenemang på B1.church, kontrollera anmälningsstatus och registrera dig eller lägg till evenemang i din kalender."
 ---
 
 # Händelser
@@ -43,7 +45,7 @@ Om en händelse är fullbokad kan du fortfarande kunna ställa dig på **väntel
 
 ## Läs mer
 
-- [Anmäla dig till händelser](./registering) -- Steg-för-steg-guide för att anmäla dig till en händelse
-- [Mina anmälningar](./my-registrations) -- Visa dina anmälningar, betala saldon, redigera eller avboka
-- [Begära händelser och lokaler](./requesting-events) -- Begär en händelse med de lokaler och resurser den behöver
-- [Självincheckning](../checkin/self-checkin) -- Checka in när du kommer till händelsen
+- [Anmäla dig till händelser](./registering.md) -- Steg-för-steg-guide för att anmäla dig till en händelse
+- [Mina anmälningar](./my-registrations.md) -- Visa dina anmälningar, betala saldon, redigera eller avboka
+- [Begära händelser och lokaler](./requesting-events.md) -- Begär en händelse med de lokaler och resurser den behöver
+- [Självincheckning](../checkin/self-checkin.md) -- Checka in när du kommer till händelsen

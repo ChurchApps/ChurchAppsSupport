@@ -1,5 +1,6 @@
 ---
 title: "Arkitektur för webbplatsbyggaren"
+description: "Utvecklarkarta över B1:s webbplatsbyggare: innehållsträd, delad elementkatalog, renderingspipeline och AI-genererad sidskapande i B1 Admin och B1.church."
 ---
 
 # Arkitektur för webbplatsbyggaren
@@ -82,7 +83,7 @@ Renderarna finns i `Packages/apphelper/src/website/components/elementTypes/`, en
 
 ### Redigeringsformulär (B1Admin)
 
-Redigerarens inställningsformulär för varje typ finns i `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` skickar vidare till en dedikerad komponent (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` och så vidare) eller till en inline-fältbyggare per typ. AI-motsvarigheten till den här katalogen är API:ets MCP-verktyg `describe_page_builder` (se [MCP-server](../api/mcp)).
+Redigerarens inställningsformulär för varje typ finns i `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` skickar vidare till en dedikerad komponent (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` och så vidare) eller till en inline-fältbyggare per typ. AI-motsvarigheten till den här katalogen är API:ets MCP-verktyg `describe_page_builder` (se [MCP-server](../api/mcp.md)).
 
 Redigerarens förhandsvisning monterar samma `Theme` som den publika webbplatsen, vilket sätter CSS-variablerna `--headingFont` och `--bodyFont` från kyrkans globala stilar. B1App tillämpar de variablerna via `pages.css`, som B1Admin inte kan importera. Därför injicerar `ContentEditor.tsx` `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) för att tillämpa dem på brödtexten i `.page` och på `h1`–`h6`. Utan den visade förhandsvisningen rubriker i adminteckensnittet.
 
@@ -151,7 +152,7 @@ Allt detta är rendering på B1App-sidan över ContentApi-data. API:et lagrar, a
 |--------|-----------------|
 | Metabeskrivningar | `pages.metaDescription` (≤300 tecken) går via `MetaHelper.getMetaData()` till Next.js `Metadata` (description + Open Graph) på varje rutt som byggaren renderar. Sidinställningarna i B1Admin har en AI-knapp **Generera** (se nedan) |
 | Omdirigeringar | Rader i `redirects` per kyrka hanteras på `/content/redirects` (`content.edit`, gräns på 200 rader, normaliserade sökvägar). Vid en väntad 404 slår B1Apps sidrutt upp sökvägen mot `GET /content/redirects/public/:churchId` och skickar en HTTP 308 via Next:s `permanentRedirect`. Omatchade sökvägar faller igenom till `notFound()` |
-| Varumärkt 404 | `not-found.tsx` renderar `BrandedNotFound` med kyrkans logotyp, namn och tema i stället för ett generiskt fel. Okända sökvägar `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` och `/volunteer/[planId]` ger en riktig 404, liksom okända subdomäner och felaktiga sidslugar (se [Webbplatsrouting och flera webbplatser](./websites)) |
+| Varumärkt 404 | `not-found.tsx` renderar `BrandedNotFound` med kyrkans logotyp, namn och tema i stället för ett generiskt fel. Okända sökvägar `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` och `/volunteer/[planId]` ger en riktig 404, liksom okända subdomäner och felaktiga sidslugar (se [Webbplatsrouting och flera webbplatser](./websites.md)) |
 | Strukturerad data | `BlogPosting`-JSON-LD på blogginlägg. `VideoObject` på varje sidas predikosida (`/{sdSlug}/sermons/[sermonId]`) och på sidor som innehåller ett element `sermons`. `Event` från kalender- och händelseelement på byggarens sidor och på varje sida `/{sdSlug}/events/[eventId]` (nästa förekomst, med händelsens foto som `image`). schema.org-`Event` från elementet `serviceTimes` |
 | Predikosidor | Varje publik predikan får en sökbar sida på `/sermons/[sermonId]` med fullständiga metadata. Predikningar är inte längre inlåsta i det klientsidiga webbläsarelementet |
 | Analys | Den publika inställningsnyckeln `ga4MeasurementId` (hanteras bredvid omdirigeringar i B1Admin) injicerar en gtag för GA4 per kyrka via `next/script`. B1-appen (`/{sdSlug}/mobile`) skickar också sina sidvisningar till det ID:t, tillsammans med ChurchApps egen tagg, när det är ett giltigt `G-`-ID (GTM-containerns ID:n gäller bara webbplatsen). Varje `gtag('config')` bär ett `display_mode` med värdet `installed` eller `browser`, baserat på `navigator.standalone` eller mediafrågan `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ Knappen för omskrivning i `SectionToolbar` och knappen **Generera webbplats** i
 | `POST /website/generateAltText` | Visionsanrop över upp till 20 bild-URL:er. Returnerar kort alternativtext (≤125 tecken), med prefixet "photo of" borttaget |
 | `POST /website/generateMetaDescription` | En SEO-metabeskrivning (≤155 tecken) utifrån sidans textinnehåll. Kopplad till knappen Generera i B1Admins sidinställningar |
 
-Prompterna för dessa endpoints är markdown-filer under `AskApi/config/instructions/`, inklusive elementkatalogen som modellen genererar utifrån. Två designbeslut håller katalogen ärlig. Klienten skickar `availableElementTypes` i varje begäran (prompten får bara använda typer från den listan, och servern hårdkodar aldrig hela uppsättningen). Dessutom bär API:ets MCP-verktyg `describe_page_builder` samma guide för AI-agenter som arbetar via [MCP](../api/mcp). Modellerna är Anthropic Claude via OpenRouter: 3.5 Haiku för sektionsinnehåll (låg latens), 3.5 Sonnet för dispositioner, webbplatsplaner och vision. Det finns en OpenAI-reserv när ingen OpenRouter-nyckel är konfigurerad.
+Prompterna för dessa endpoints är markdown-filer under `AskApi/config/instructions/`, inklusive elementkatalogen som modellen genererar utifrån. Två designbeslut håller katalogen ärlig. Klienten skickar `availableElementTypes` i varje begäran (prompten får bara använda typer från den listan, och servern hårdkodar aldrig hela uppsättningen). Dessutom bär API:ets MCP-verktyg `describe_page_builder` samma guide för AI-agenter som arbetar via [MCP](../api/mcp.md). Modellerna är Anthropic Claude via OpenRouter: 3.5 Haiku för sektionsinnehåll (låg latens), 3.5 Sonnet för dispositioner, webbplatsplaner och vision. Det finns en OpenAI-reserv när ingen OpenRouter-nyckel är konfigurerad.
 
 ## Konversationsformulär
 
@@ -224,8 +225,8 @@ Kontrollerna som gör bump: sidor (spara, ta bort, duplicera, publicera, kasta, 
 
 ## Relaterade sidor
 
-- [Webbplatsrouting och flera webbplatser](./websites): hur en begäran löses till en kyrka/webbplats och hur egna domäner routas
-- [Endpoints för innehåll](../api/endpoints/content): hela REST-ytan för sidor, sektioner, element, block, inlägg, omdirigeringar och inställningar
-- [AppHelper](../shared-libraries/app-helper): npm-paketet som levererar renderarna, registret, delarna och widgets
-- [MCP-server](../api/mcp): inklusive verktyget guide `describe_page_builder`
+- [Webbplatsrouting och flera webbplatser](./websites.md): hur en begäran löses till en kyrka/webbplats och hur egna domäner routas
+- [Endpoints för innehåll](../api/endpoints/content.md): hela REST-ytan för sidor, sektioner, element, block, inlägg, omdirigeringar och inställningar
+- [AppHelper](../shared-libraries/app-helper.md): npm-paketet som levererar renderarna, registret, delarna och widgets
+- [MCP-server](../api/mcp.md): inklusive verktyget guide `describe_page_builder`
 - [Sidredigeraren (för slutanvändare)](/docs/b1-admin/website/page-editor): dokumentationen för personalens redigerare

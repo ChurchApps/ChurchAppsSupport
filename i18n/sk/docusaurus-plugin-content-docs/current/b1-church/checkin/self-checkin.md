@@ -1,5 +1,7 @@
 ---
-title: "Samoprihlásenie"
+title: "Samoprihlásenie v členskom portáli B1.church"
+sidebar_label: "Samoprihlásenie"
+description: "Prihláste seba a svoju domácnosť na bohoslužbu z členského portálu B1.church. Vyberte časy bohoslužieb a skupiny v niekoľkých rýchlych krokoch."
 ---
 
 # Samoprihlásenie
@@ -45,7 +47,7 @@ Keď vyberiete skupiny pre všetkých, ktorí sa zúčastňujú, ťuknite na tla
 
 Zobrazí sa potvrdenie, že prihlásenie je dokončené a vaša účasť bola uložená. Po chvíli sa stránka vráti na zoznam bohoslužieb a je pripravená na ďalšie prihlásenie.
 
-Ak vaša cirkev tlačí menovky na prihlasovacej stanici, namiesto toho uvidíte **Ste prihlásení!** spolu s QR kódom a bezpečnostným kódom. Ukážte kód na prihlasovacej stanici, aby sa vytlačili vaše menovky, a potom ťuknite na **Hotovo**. Na kiosku B1 Checkin ťuknite na **Skenovať kód** a podržte QR kód pred kamerou -- pozrite si [Tlač štítkov pri prihlásení cez telefón](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Ak vaša cirkev tlačí menovky na prihlasovacej stanici, namiesto toho uvidíte **Ste prihlásení!** spolu s QR kódom a bezpečnostným kódom. Ukážte kód na prihlasovacej stanici, aby sa vytlačili vaše menovky, a potom ťuknite na **Hotovo**. Na kiosku B1 Checkin ťuknite na **Skenovať kód** a podržte QR kód pred kamerou -- pozrite si [Tlač štítkov pri prihlásení cez telefón](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Ak je vaša domácnosť už prihlásená na bohoslužbu, ktorú ste vybrali, vedľa nadpisu **Kto je tu** sa zobrazí odkaz **Zobraziť kód na prihlásenie**. Ťuknutím na neho znovu zobrazíte QR kód a bezpečnostný kód -- napríklad ak ste stránku zatvorili skôr, než ste došli k prihlasovacej stanici.
 

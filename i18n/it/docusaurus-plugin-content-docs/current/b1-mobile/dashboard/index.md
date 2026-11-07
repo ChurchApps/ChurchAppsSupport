@@ -1,5 +1,6 @@
 ---
 title: "Dashboard"
+description: "Orientati nella schermata iniziale di B1 Mobile, dove le funzioni più usate sono mostrate come schede grandi e le altre si trovano in Azioni rapide."
 ---
 
 # Dashboard
@@ -28,7 +29,7 @@ Sotto la scheda principale, vedrai fino a due **schede in evidenza** affiancate.
 
 ## Azioni rapide
 
-Le altre funzioni compaiono in una griglia **Azioni rapide** sotto le schede in evidenza. Ogni elemento mostra un'icona e un'etichetta. Sono tutti gli altri link di navigazione configurati dalla tua chiesa, che ti danno accesso a tutto, dai [gruppi](../groups/) e le [donazioni](../giving/) al [check-in](../checkin/), i [sermoni](../content/sermons.md) e altro ancora.
+Le altre funzioni compaiono in una griglia **Azioni rapide** sotto le schede in evidenza. Ogni elemento mostra un'icona e un'etichetta. Sono tutti gli altri link di navigazione configurati dalla tua chiesa, che ti danno accesso a tutto, dai [gruppi](../groups/index.md) e le [donazioni](../giving/index.md) al [check-in](../checkin/index.md), i [sermoni](../content/sermons.md) e altro ancora.
 
 ## Come si adatta il layout
 
@@ -41,7 +42,7 @@ Il layout della dashboard è personalizzato in base alle tue abitudini di utiliz
 Se non hai ancora usato l'app, le funzioni compaiono nell'ordine predefinito configurato dalla tua chiesa. Col tempo, la dashboard si riorganizza in base alle tue abitudini.
 
 :::info
-Le funzioni disponibili nella tua dashboard sono configurate dall'amministratore della tua chiesa tramite [B1 Admin](../../b1-admin/). Se non vedi una funzione che ti aspetti, contatta l'ufficio della tua chiesa.
+Le funzioni disponibili nella tua dashboard sono configurate dall'amministratore della tua chiesa tramite [B1 Admin](../../b1-admin/index.md). Se non vedi una funzione che ti aspetti, contatta l'ufficio della tua chiesa.
 :::
 
 ## Aggiornare la dashboard

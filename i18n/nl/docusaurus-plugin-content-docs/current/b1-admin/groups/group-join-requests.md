@@ -1,5 +1,6 @@
 ---
 title: "Verzoeken om groepslidmaatschap"
+description: "Bekijk, keur goed of wijs groepsaanvragen af in B1 Admin, vind openstaande aanvragen als leider of beheerder en voeg bij afwijzing een reden toe."
 ---
 
 # Verzoeken om groepslidmaatschap

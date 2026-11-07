@@ -1,5 +1,6 @@
 ---
 title: "Presentasi"
+description: "Tampilkan pelajaran di proyektor dengan Presenter Mode di Lessons.church, bagikan panduan relawan berbasis peran, dan cetak materi sebelum kelas."
 ---
 
 # Presentasi

@@ -1,5 +1,7 @@
 ---
-title: "Inicio de sesión"
+title: "Inicio de sesión en B1 Church Checkin"
+sidebar_label: "Inicio de sesión"
+description: "Inicia sesión en la app del quiosco de B1 Church Checkin, elige tu iglesia y comprende el inicio de sesión automático, la configuración de administrador y el cierre de sesión en la tableta de registro."
 ---
 
 # Inicio de sesión
@@ -63,7 +65,7 @@ La configuración de administrador está oculta a propósito, para que los miemb
 2. Si hay un PIN de quiosco configurado, ingréselo cuando se le solicite.
 3. Se abrirá la pantalla de **Configuración de administrador** con las siguientes opciones:
    - **Cambiar servicio**: cambiar el horario de servicio seleccionado
-   - **Cambiar impresora**: abrir la [configuración de impresora](./printer-setup) para buscar y seleccionar una impresora
+   - **Cambiar impresora**: abrir la [configuración de impresora](./printer-setup.md) para buscar y seleccionar una impresora
    - **Establecer/Cambiar PIN**: establecer o actualizar el PIN del quiosco que protege el acceso de administrador
    - **Cerrar sesión**: cerrar la sesión y regresar a la pantalla de inicio de sesión
 
@@ -73,4 +75,4 @@ Cerrar sesión borra todas las credenciales guardadas y la selección de iglesia
 
 ## Próximos pasos
 
-Una vez iniciada la sesión, puede [configurar una impresora](./printer-setup) o ir directamente al [flujo de registro de entrada](../check-in/).
+Una vez iniciada la sesión, puede [configurar una impresora](./printer-setup.md) o ir directamente al [flujo de registro de entrada](../check-in/index.md).

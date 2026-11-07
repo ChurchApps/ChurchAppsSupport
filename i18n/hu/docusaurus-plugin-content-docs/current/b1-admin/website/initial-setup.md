@@ -1,5 +1,7 @@
 ---
-title: "Kezdeti beállítás"
+title: "Első lépések a B1 Admin weboldalával"
+sidebar_label: "Kezdeti beállítás"
+description: "B1 Admin egyházi weboldalának beállítása: aldomain vagy saját domain, főoldal, márkaszínek és logó, navigáció kialakítása."
 ---
 
 # Kezdeti beállítás
@@ -45,7 +47,7 @@ Ha nem látja a Beállítások lehetőséget, kérje meg azt a személyt, aki a 
 6. Miután hozzáadott egy szakaszt, kattintson ismét a **Tartalom hozzáadása** gombra, és húzza a szövegeket, képeket, videókat, kártyákat, űrlapokat és egyéb elemeket a szakaszba.
 
 :::info
-Az oldalakkal és a navigációval kapcsolatos részletes útmutatóért lásd: [Oldalak kezelése](managing-pages). A vizuális szerkesztő teljes útmutatójáért lásd: [Az oldalszerkesztő használata](page-editor).
+Az oldalakkal és a navigációval kapcsolatos részletes útmutatóért lásd: [Oldalak kezelése](./managing-pages.md). A vizuális szerkesztő teljes útmutatójáért lásd: [Az oldalszerkesztő használata](./page-editor.md).
 :::
 
 ## A webhely megjelenésének beállítása
@@ -57,7 +59,7 @@ Az oldalakkal és a navigációval kapcsolatos részletes útmutatóért lásd: 
 5. Állítsa be az **Oldallábléc** részt a templom elérhetőségeivel és linkjeivel.
 
 :::info
-A Megjelenésben végzett módosítások a teljes weboldalra érvényesek. Az egyes beállításokkal kapcsolatos részletes útmutatóért lásd: a [Megjelenés](appearance) oldalt.
+A Megjelenésben végzett módosítások a teljes weboldalra érvényesek. Az egyes beállításokkal kapcsolatos részletes útmutatóért lásd: a [Megjelenés](./appearance.md) oldalt.
 :::
 
 ## A navigáció beállítása
@@ -70,6 +72,6 @@ A navigációs linkek a Weboldal > Oldalak nézetben jelennek meg. Ezek rendezé
 
 ## Következő lépések
 
-- [Oldalak kezelése](managing-pages) -- Részletesen megtudhatja, hogyan dolgozhat az oldalakkal és a navigációval
-- [Megjelenés](appearance) -- Finomhangolhatja a weboldal színeit, betűtípusait és elrendezését
-- [Fájlok](files) -- Képeket és dokumentumokat tölthet fel a weboldalához
+- [Oldalak kezelése](./managing-pages.md) -- Részletesen megtudhatja, hogyan dolgozhat az oldalakkal és a navigációval
+- [Megjelenés](./appearance.md) -- Finomhangolhatja a weboldal színeit, betűtípusait és elrendezését
+- [Fájlok](./files.md) -- Képeket és dokumentumokat tölthet fel a weboldalához

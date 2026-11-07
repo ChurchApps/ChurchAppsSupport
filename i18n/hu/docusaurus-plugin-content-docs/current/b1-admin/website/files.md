@@ -1,5 +1,6 @@
 ---
 title: "Fájlok"
+description: "Képek és dokumentumok feltöltése, böngészése és kezelése egyházi weboldalához a B1 Adminban, beleértve külső tárhely csatlakoztatását nagyobb helyért."
 ---
 
 # Fájlok
@@ -13,7 +14,7 @@ A Fájlok oldal az összes médiafájl és dokumentum központi tárolója, amel
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Végezze el a weboldal [kezdeti beállítását](initial-setup)
+- Végezze el a weboldal [kezdeti beállítását](./initial-setup.md)
 - Gyorsabb oldalbetöltési idő érdekében optimalizálja a képeket a feltöltés előtt
 - Készítse elő a fájlokat általános webes formátumokban (PNG, JPG, PDF stb.)
 
@@ -42,7 +43,7 @@ A fájlok táblázata minden feltöltött fájlt felsorol a **Név** és a **Mé
 3. Az itt feltöltött fájlok a weboldal összes oldalán és tartalmi blokkjában felhasználhatók.
 
 :::info
-Az [Oldalak kezelése](managing-pages) részben történő oldalszerkesztés során bármely itt feltöltött fájlra hivatkozhat annak URL-jével. Így minden médiatartalma egy központi helyen marad rendezett.
+Az [Oldalak kezelése](./managing-pages.md) részben történő oldalszerkesztés során bármely itt feltöltött fájlra hivatkozhat annak URL-jével. Így minden médiatartalma egy központi helyen marad rendezett.
 :::
 
 ## Fájlok törlése
@@ -57,5 +58,5 @@ A törölt fájlok nem állíthatók vissza. Mielőtt eltávolít egy fájlt, el
 
 ## Következő lépések
 
-- [Oldalak kezelése](managing-pages) – Feltöltött fájlok hozzáadása a weboldal oldalaihoz
-- [Megjelenés](appearance) – A webhely vizuális témájának testreszabása
+- [Oldalak kezelése](./managing-pages.md) – Feltöltött fájlok hozzáadása a weboldal oldalaihoz
+- [Megjelenés](./appearance.md) – A webhely vizuális témájának testreszabása

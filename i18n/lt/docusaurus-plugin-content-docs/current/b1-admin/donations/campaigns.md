@@ -1,5 +1,6 @@
 ---
 title: "Kampanijos ir įžadai"
+description: "Kurkite lėšų rinkimo kampanijas B1 Admin, registruokite narių pažadus ir sekite pažangą link tikslo pagal faktines kiekvieno fondo aukas."
 ---
 
 # Kampanijos ir įžadai
@@ -13,7 +14,7 @@ Kampanijos leidžia vykdyti lėšų rinkimo akciją konkretiam tikslui – pasta
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Nustatykite savo [aukų fondus](funds) – kiekviena kampanija susieta su fondu
+- Nustatykite savo [aukų fondus](./funds.md) – kiekviena kampanija susieta su fondu
 - Jums reikia prieigos prie B1 Admin skyriaus Aukos
 
 </div>
@@ -66,6 +67,6 @@ Spustelėkite **Redaguoti** bet kurios kampanijos eilutėje (arba **Redaguoti ka
 
 ## Susiję straipsniai
 
-- [Aukų įrašymas](recording-donations) – įrašykite faktines dovanas, kurios įvykdo įžadus
-- [Fondai](funds) – nustatykite fondą, su kuriuo susieti kampaniją
-- [Aukų ataskaitos](donation-reports) – ataskaitos apie aukas pagal fondą
+- [Aukų įrašymas](./recording-donations.md) – įrašykite faktines dovanas, kurios įvykdo įžadus
+- [Fondai](./funds.md) – nustatykite fondą, su kuriuo susieti kampaniją
+- [Aukų ataskaitos](./donation-reports.md) – ataskaitos apie aukas pagal fondą

@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Estudos"
+description: "Crie, edite e categorize estudos dentro de um programa na área admin do Lessons.church, e anexe visões gerais de séries ou modelos de boletim a cada um."
 ---
 
 # Gerenciando Estudos

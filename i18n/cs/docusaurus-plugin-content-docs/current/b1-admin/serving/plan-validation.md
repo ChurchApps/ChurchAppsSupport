@@ -1,5 +1,6 @@
 ---
 title: "Ověřování plánů a oznámení"
+description: "Kontrolujte plány v B1 Admin na neobsazené pozice, kolize termínů a blokované dobrovolníky a jedním kliknutím upozorněte celý tým."
 ---
 
 # Ověřování plánů a oznámení dobrovolníkům

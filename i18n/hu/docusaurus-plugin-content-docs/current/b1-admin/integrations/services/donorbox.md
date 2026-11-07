@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Donorbox csatlakoztatása a B1 Admin-hoz Zapier-rel: az online adományokból automatikusan adományrekord és adakozói profil lesz, kézi export nélkül."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ A Donorbox *New or Updated Donation* triggere a szerkesztéseknél is aktiváló
 
 ## Lásd még
 
-- [Zapier (áttekintés)](../zapier) – a B1 oldala minden Zapier-receptnek
-- [Subsplash](./subsplash) – egy másik adományozási platform, Zapier-alkalmazással
-- [Mailchimp](./mailchimp) – az „új adomány” események összekapcsolása e-mail címkével
+- [Zapier (áttekintés)](../zapier.md) – a B1 oldala minden Zapier-receptnek
+- [Subsplash](./subsplash.md) – egy másik adományozási platform, Zapier-alkalmazással
+- [Mailchimp](./mailchimp.md) – az „új adomány” események összekapcsolása e-mail címkével

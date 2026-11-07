@@ -1,5 +1,6 @@
 ---
 title: "Stripe-import"
+description: "Hämta Stripe-gåvor till B1 Admin med en import där du först förhandsgranskar och ser om varje betalning är ny, redan importerad eller överhoppad innan du bekräftar."
 ---
 
 # Stripe-import

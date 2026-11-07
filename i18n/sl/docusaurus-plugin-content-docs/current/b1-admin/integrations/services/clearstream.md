@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Povežite Clearstream SMS z B1 Admin prek Zapier: pošiljajte sporočila ob novih darovih ali oddanih obrazcih ter vnosite prejete odgovore kot osebe."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Vklopite Zap. B1 ob aktivaciji registrira webhook za darila; v **Settings → De
 
 ## Glej tudi
 
-- [Text In Church](./text-in-church) — alternativna SMS platforma s podobno zasnovo povezave
-- [Mobile Message](./mobile-message) — za cerkve zunaj ZDA
-- [Zapier (pregled)](../zapier) — stran B1 za vse recepte z Zapierjem
+- [Text In Church](./text-in-church.md) — alternativna SMS platforma s podobno zasnovo povezave
+- [Mobile Message](./mobile-message.md) — za cerkve zunaj ZDA
+- [Zapier (pregled)](../zapier.md) — stran B1 za vse recepte z Zapierjem
 - [Clearstream API docs](https://api-docs.clearstream.io/) — za lastne integracije onkraj aplikacije Zapier

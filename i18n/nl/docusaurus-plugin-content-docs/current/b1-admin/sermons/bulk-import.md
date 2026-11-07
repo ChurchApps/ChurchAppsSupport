@@ -1,5 +1,6 @@
 ---
 title: "Bulkimport"
+description: "Importeer preekvideo's in bulk van een YouTube-kanaal of Vimeo-account naar B1 Admin en sorteer ze daarna in een afspeellijst."
 ---
 
 # Bulkimport
@@ -14,7 +15,7 @@ Op de pagina Bulkimport kunt u snel uw prekenbibliotheek vullen door video's van
 <h4>Voordat u begint</h4>
 
 - U hebt de machtiging **contentApi.streamingServices.edit** nodig. Zie [Rollen & Machtigingen](../settings/roles-permissions.md) als u geen toegang hebt.
-- Maak minstens één [afspeellijst](playlists) om uw preken in in te voeren
+- Maak minstens één [afspeellijst](./playlists.md) om uw preken in in te voeren
 - Zorg dat u uw YouTube Channel ID of Vimeo-accountgegevens gereed hebt
 
 </div>
@@ -39,7 +40,7 @@ Voordat u video's importeert, hebt u minstens één afspeellijst nodig om ze in 
 2. Klik op **Eerste afspeellijst maken** en vul de naam, beschrijving, publicatiedatum en miniatuurtje in.
 3. Klik op **Opslaan** en ga vervolgens terug naar het tabblad **Bulkimport**.
 
-Zie [Afspeellijsten](playlists) voor gedetailleerde instructies voor het maken en beheren van afspeellijsten.
+Zie [Afspeellijsten](./playlists.md) voor gedetailleerde instructies voor het maken en beheren van afspeellijsten.
 
 ## Video's importeren
 
@@ -54,11 +55,11 @@ Zie [Afspeellijsten](playlists) voor gedetailleerde instructies voor het maken e
 Uw video's worden ingevoerd met alle details, inclusief titels, beschrijvingen, datums en miniatuurtjes.
 
 :::info
-Bulkimport is ideaal om aan de slag te gaan wanneer u van een ander platform migreert. Voor het toevoegen van afzonderlijke preken in het vervolg, gebruikt u in plaats daarvan de pagina [Preken beheren](managing-sermons).
+Bulkimport is ideaal om aan de slag te gaan wanneer u van een ander platform migreert. Voor het toevoegen van afzonderlijke preken in het vervolg, gebruikt u in plaats daarvan de pagina [Preken beheren](./managing-sermons.md).
 :::
 
 ## Volgende stappen
 
-- [Preken beheren](managing-sermons) -- Bewerk geïmporteerde prekendetails
-- [Afspeellijsten](playlists) -- Maak en beheer preekseries
-- [Live streaming](live-streaming) -- Stel live streaming voor uw services in
+- [Preken beheren](./managing-sermons.md) -- Bewerk geïmporteerde prekendetails
+- [Afspeellijsten](./playlists.md) -- Maak en beheer preekseries
+- [Live streaming](./live-streaming.md) -- Stel live streaming voor uw services in

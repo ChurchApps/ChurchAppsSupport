@@ -1,5 +1,6 @@
 ---
 title: "Események és termek kérése"
+description: "Teremfoglalást vagy eszközbérlést kérhet eseményhez a B1.church tagi portálon, követheti állapotát a My Requests menüben, és függőben lévő kérését lemondhatja."
 ---
 
 # Események és termek kérése
@@ -42,11 +43,11 @@ Nyissa meg a **My Requests** menüpontot a Me oldalról. Minden kérelemnél lá
 Amíg a kérelem függőben van, a **Cancel request** gombbal visszavonhatja (a rendszer megerősítést kér – a visszavonás nem vonható vissza).
 
 :::info
-A kérelmeket a gyülekezet munkatársai a B1 Adminban, a [Jóváhagyások oldalon](../../b1-admin/calendars/approvals) bírálják el. Hogy mely termekhez és erőforrásokhoz szükséges jóváhagyás, azt a gyülekezet határozza meg – lásd: [Termek és erőforrások](../../b1-admin/calendars/rooms-resources).
+A kérelmeket a gyülekezet munkatársai a B1 Adminban, a [Jóváhagyások oldalon](../../b1-admin/calendars/approvals.md) bírálják el. Hogy mely termekhez és erőforrásokhoz szükséges jóváhagyás, azt a gyülekezet határozza meg – lásd: [Termek és erőforrások](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Kapcsolódó cikkek
 
-- [A Me oldal](../getting-started/me-page) -- Itt találhatók a kérési hivatkozások
-- [Naptár-jóváhagyások (B1 Admin)](../../b1-admin/calendars/approvals) -- Hogyan bírálják el a munkatársak a kérelmeket
-- [Termek és erőforrások (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Hogyan állítják be a gyülekezetek a foglalható tereket
+- [A Me oldal](../getting-started/me-page.md) -- Itt találhatók a kérési hivatkozások
+- [Naptár-jóváhagyások (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Hogyan bírálják el a munkatársak a kérelmeket
+- [Termek és erőforrások (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Hogyan állítják be a gyülekezetek a foglalható tereket

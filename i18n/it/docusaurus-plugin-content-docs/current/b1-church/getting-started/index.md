@@ -1,5 +1,7 @@
 ---
-title: "Per iniziare"
+title: "Iniziare con il portale membri B1.church"
+sidebar_label: "Per iniziare"
+description: "Trova il sito B1.church della tua chiesa, crea il tuo account membro e scopri cosa offre il portale, dai gruppi alle donazioni, dal check-in ai piani."
 ---
 
 # Per iniziare con B1.church

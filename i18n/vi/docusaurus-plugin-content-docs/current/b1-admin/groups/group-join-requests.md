@@ -1,5 +1,6 @@
 ---
 title: "Yêu cầu tham gia nhóm"
+description: "Xem, duyệt hoặc từ chối yêu cầu tham gia nhóm trong B1 Admin, tìm yêu cầu đang chờ với vai trò trưởng nhóm hoặc quản trị, và ghi lý do khi từ chối."
 ---
 
 # Yêu cầu tham gia nhóm

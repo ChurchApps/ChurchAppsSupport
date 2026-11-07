@@ -1,5 +1,6 @@
 ---
 title: "Журнал аудиту"
+description: "Перегляньте журнал аудиту B1 Admin: хто входив, редагував записи людей або змінював дозволи, і експортуйте відфільтровані записи у CSV."
 ---
 
 # Журнал аудиту
@@ -78,6 +79,6 @@ title: "Журнал аудиту"
 
 ## Пов'язані статті
 
-- [Roles & Permissions](../settings/roles-permissions) -- Керування тим, хто має доступ до чого
-- [Data Security](../settings/data-security) -- Як захищаються ваші дані
+- [Roles & Permissions](../settings/roles-permissions.md) -- Керування тим, хто має доступ до чого
+- [Data Security](../settings/data-security.md) -- Як захищаються ваші дані
 - [Reports Overview](./index.md) -- Огляд усіх доступних звітів

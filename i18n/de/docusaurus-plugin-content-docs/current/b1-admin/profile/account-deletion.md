@@ -1,5 +1,6 @@
 ---
 title: "Überprüfung von Kontolöschanfragen"
+description: "Genehmigen oder lehnen Sie in B1 Admin Anträge zur Kontolöschung von Mitgliedern ab, leiten Sie sie über die Gruppe Verzeichnisfreigabe und beachten Sie die DSGVO-Frist von 30 Tagen."
 ---
 
 # Überprüfung von Kontolöschanfragen

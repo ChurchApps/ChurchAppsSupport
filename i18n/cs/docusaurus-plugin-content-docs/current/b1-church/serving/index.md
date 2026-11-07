@@ -1,5 +1,7 @@
 ---
-title: "Služby"
+title: "Dobrovolná služba a přihlášky na B1.church"
+sidebar_label: "Služby"
+description: "Procházejte dobrovolnické příležitosti na B1.church, přihlaste se na volná místa, zobrazte své přiřazení služby a zrušte přihlášku před termínem."
 ---
 
 # Služby
@@ -14,8 +16,8 @@ Sekce Služby na B1.church vám umožňuje procházet dobrovolnické příležit
 
 - **Procházet dobrovolnické příležitosti** -- Zobrazte si nadcházející plány služeb s volnými pozicemi, na které hledáme dobrovolníky.
 - **Přihlásit se na pozice** -- Vyberte pozici a přihlaste se jedním kliknutím.
-- **Zobrazit své plány** -- Podívejte se na své nadcházející i minulé [služební úkoly](../plans/viewing-plans).
-- **Reagovat na přiřazení** -- Přijměte nebo odmítněte pozice, na které jste naplánováni, a to ze stránky Plány nebo z sekce **Slouží** na domovské stránce. Pokud se vaše plány po přijetí změní, můžete [odmítnout přijaté přiřazení](../plans/viewing-plans#declining-an-accepted-assignment) až do skončení služby.
+- **Zobrazit své plány** -- Podívejte se na své nadcházející i minulé [služební úkoly](../plans/viewing-plans.md).
+- **Reagovat na přiřazení** -- Přijměte nebo odmítněte pozice, na které jste naplánováni, a to ze stránky Plány nebo z sekce **Slouží** na domovské stránce. Pokud se vaše plány po přijetí změní, můžete [odmítnout přijaté přiřazení](../plans/viewing-plans.md#declining-an-accepted-assignment) až do skončení služby.
 - **Odstranit vlastní přihlášení** -- Zrušte své přihlášení, pokud se vaše plány změní (před uzávěrkou).
 
 ## Jak to funguje
@@ -28,5 +30,5 @@ Na stránce dobrovolníků se zobrazují pouze pozice, které správce vašeho s
 
 ## Další informace
 
-- [Přihlášení dobrovolníka](./volunteer-signup) -- Podrobný návod, jak procházet a přihlašovat se na dobrovolnické pozice
-- [Zobrazení plánů](../plans/viewing-plans) -- Podívejte se na přiřazené plány služeb a bohoslužebné pořádky
+- [Přihlášení dobrovolníka](./volunteer-signup.md) -- Podrobný návod, jak procházet a přihlašovat se na dobrovolnické pozice
+- [Zobrazení plánů](../plans/viewing-plans.md) -- Podívejte se na přiřazené plány služeb a bohoslužebné pořádky

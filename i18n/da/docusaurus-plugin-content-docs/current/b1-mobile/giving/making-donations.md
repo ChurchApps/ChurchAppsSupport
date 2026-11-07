@@ -1,5 +1,7 @@
 ---
-title: "Foretage en donation"
+title: "Sådan giver du en gave i B1 Mobile"
+sidebar_label: "Foretage en donation"
+description: "Giv til din kirke fra fanen Doner i B1 Mobile: vælg en fond, indtast et beløb, betal med Stripe, og gentag tidligere gaver hurtigt."
 ---
 
 # Foretage en donation
@@ -13,8 +15,8 @@ At give gennem B1 Mobile er hurtigt og ligetil. Fanen **Donér** i giveldes afsn
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
-- Hav et kredit- eller debetkort klar, eller [gem en betalingsmetode](./managing-payments) på forhånd
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
+- Hav et kredit- eller debetkort klar, eller [gem en betalingsmetode](./managing-payments.md) på forhånd
 
 </div>
 
@@ -42,10 +44,10 @@ Dobbelttjek donationbeløb og fond før indsendelse. Donationer behandles øjebl
 Hvis du vil give det samme beløb som din sidste donation, behøver du ikke at gå gennem hele donationsforløbet. Fanen **Oversigt** viser din seneste gave sammen med en **Gentag** knap. Tryk på den for hurtigt at indsende den samme donation igen.
 
 :::tip
-Hvis du planlægger at give regelmæssigt, gem din betalingsmetode i fanen **Administrer**, så du kan donere endnu hurtigere næste gang. Se [Administration af betalingsmetoder](./managing-payments) for detaljer.
+Hvis du planlægger at give regelmæssigt, gem din betalingsmetode i fanen **Administrer**, så du kan donere endnu hurtigere næste gang. Se [Administration af betalingsmetoder](./managing-payments.md) for detaljer.
 :::
 
 ## Relaterede artikler
 
-- [Administration af betalingsmetoder](./managing-payments) -- Gem et kort til hurtigere fremtidig giver
-- [Donationshistorik](./donation-history) -- Se din giveldes opsummering og tidligere donationer
+- [Administration af betalingsmetoder](./managing-payments.md) -- Gem et kort til hurtigere fremtidig giver
+- [Donationshistorik](./donation-history.md) -- Se din giveldes opsummering og tidligere donationer

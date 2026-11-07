@@ -1,5 +1,6 @@
 ---
 title: "Managing Year Plans"
+description: "Gumawa ng year plan ng lingguhang aralin sa Lessons.church, i-angkla ang mga linggo sa Easter o Pasko, at i-publish para magamit ng simbahan sa B1 Admin."
 ---
 
 # Managing Year Plans

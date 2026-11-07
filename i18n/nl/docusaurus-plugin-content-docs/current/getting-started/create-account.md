@@ -1,5 +1,6 @@
 ---
 title: "Uw account aanmaken"
+description: "Registreer een ChurchApps-account bij B1.church, bevestig je e-mail en maak of word lid van een kerk, zodat je met de setup van B1 Admin kunt beginnen."
 ---
 
 # Uw account aanmaken

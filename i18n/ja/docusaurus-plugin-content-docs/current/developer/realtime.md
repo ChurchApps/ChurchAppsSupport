@@ -1,5 +1,6 @@
 ---
 title: "リアルタイムアーキテクチャ"
+description: "ChurchApps の WebSocket レイヤーがライブチャット、プレゼンス、通知をどのように届けるか。ソケットのハンドシェイク、ルームの購読、開発者向けのクライアントプリミティブを説明します。"
 ---
 
 # リアルタイムアーキテクチャ
@@ -226,8 +227,8 @@ await NotificationService.getInstance().initialize(userContext);
 
 ## 関連ページ
 
-- [通知アーキテクチャ](./architecture/notifications) -- このトランスポートが接続される、アプリ内・プッシュ・メールの通知のエスカレーションの仕組み
-- [メッセージングのエンドポイント](./api/endpoints/messaging) -- メッセージ、会話、接続、デバイスに関する REST API の全体像
-- [Web プッシュ通知](./web-push) -- ブラウザのプッシュ通知。ページ内のソケット配信とは別のものです
-- [AppHelper](./shared-libraries/app-helper) -- クライアント側の基本機能を提供する npm パッケージ
-- [モジュール構成](./api/module-structure) -- サーバー側でメッセージングモジュールがどのように構成されているか
+- [通知アーキテクチャ](./architecture/notifications.md) -- このトランスポートが接続される、アプリ内・プッシュ・メールの通知のエスカレーションの仕組み
+- [メッセージングのエンドポイント](./api/endpoints/messaging.md) -- メッセージ、会話、接続、デバイスに関する REST API の全体像
+- [Web プッシュ通知](./web-push.md) -- ブラウザのプッシュ通知。ページ内のソケット配信とは別のものです
+- [AppHelper](./shared-libraries/app-helper.md) -- クライアント側の基本機能を提供する npm パッケージ
+- [モジュール構成](./api/module-structure.md) -- サーバー側でメッセージングモジュールがどのように構成されているか

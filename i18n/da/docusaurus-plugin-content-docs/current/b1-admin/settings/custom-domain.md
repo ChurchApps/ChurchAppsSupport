@@ -1,5 +1,6 @@
 ---
 title: "Eget domæne"
+description: "Peg dit eget domæne, f.eks. www.dinkirke.dk, mod din B1-hjemmeside i B1 Admin ved at opsætte DNS-poster og tilføje domænet under Indstillinger."
 ---
 
 # Eget domæne

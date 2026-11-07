@@ -1,5 +1,7 @@
 ---
-title: "Prijava na dogodke"
+title: "Prijava na dogodek v B1.church"
+sidebar_label: "Prijava na dogodke"
+description: "Prijavite se na cerkveni dogodek v B1.church: vnesite svoje podatke, dodajte družinske člane, izberite možnosti, uporabite kode popustov ter plačajte ali se pridružite čakalni listi."
 ---
 
 # Prijava na dogodke
@@ -79,14 +81,14 @@ Prikaže se potrditveno sporočilo s podrobnostmi dogodka in seznamom vseh, ki s
 
 ## Pridružitev seznamu čakajočih
 
-Če je dogodek poln in je vaša cerkev omogočila seznam čakajočih, prvi korak prikaže sporočilo: *„Ta dogodek je poln. Lahko se pridružite seznamu čakajočih in vas bomo obvestili, če se sprosti mesto.“* Prijavo dokončajte kot običajno – plačilo se med čakanjem preskoči. Ko se mesto sprosti, prejmete e-poštno sporočilo; če je treba plačati, vsebuje povezavo za plačilo. Svoje stanje lahko preverite in plačate tudi na strani [Moje prijave](./my-registrations).
+Če je dogodek poln in je vaša cerkev omogočila seznam čakajočih, prvi korak prikaže sporočilo: *„Ta dogodek je poln. Lahko se pridružite seznamu čakajočih in vas bomo obvestili, če se sprosti mesto.“* Prijavo dokončajte kot običajno – plačilo se med čakanjem preskoči. Ko se mesto sprosti, prejmete e-poštno sporočilo; če je treba plačati, vsebuje povezavo za plačilo. Svoje stanje lahko preverite in plačate tudi na strani [Moje prijave](./my-registrations.md).
 
 ## Spreminjanje ali preklic prijave
 
-Če ste prijavljeni, lahko svojo prijavo uredite ali prekličete sami na strani **Prijave** v portalu za člane – glejte [Moje prijave](./my-registrations). Gostje naj se obrnejo na cerkveno pisarno, osebje pa lahko spremembo opravi na strani prijav v B1 Admin.
+Če ste prijavljeni, lahko svojo prijavo uredite ali prekličete sami na strani **Prijave** v portalu za člane – glejte [Moje prijave](./my-registrations.md). Gostje naj se obrnejo na cerkveno pisarno, osebje pa lahko spremembo opravi na strani prijav v B1 Admin.
 
 ## Sorodni članki
 
 - [Pregled dogodkov](./index.md) – brskajte po prihajajočih dogodkih s prijavo
-- [Moje prijave](./my-registrations) – oglejte si, uredite, plačajte stanja in prekličite svoje prijave
-- [Dajanje darov](../giving/making-donations) – dajte dar ob udeležbi na dogodku
+- [Moje prijave](./my-registrations.md) – oglejte si, uredite, plačajte stanja in prekličite svoje prijave
+- [Dajanje darov](../giving/making-donations.md) – dajte dar ob udeležbi na dogodku

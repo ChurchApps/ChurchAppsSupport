@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Configurați B1 Admin local: clonați dashboard-ul React/Vite, setați endpoint-urile API în .env și porniți serverul de dezvoltare."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin este panoul de administrare al bisericii -- o aplicație single-page Rea
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **Node.js 22+** și **Git** -- consultați [Cerințe preliminare](../setup/prerequisites)
-- Configurați ținta API (demo sau locală) -- consultați [Variabile de mediu](../setup/environment-variables)
+- Instalați **Node.js 22+** și **Git** -- consultați [Cerințe preliminare](../setup/prerequisites.md)
+- Configurați ținta API (demo sau locală) -- consultați [Variabile de mediu](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Build-urile de producție sunt implementate pe **S3 + CloudFront**:
 3. Se declanșează invalidarea CloudFront, pentru ca noua versiune să fie servită
 
 :::tip
-Pentru instrucțiuni detaliate de implementare, consultați ghidul [Implementarea aplicațiilor web](../deployment/web-apps).
+Pentru instrucțiuni detaliate de implementare, consultați ghidul [Implementarea aplicațiilor web](../deployment/web-apps.md).
 :::

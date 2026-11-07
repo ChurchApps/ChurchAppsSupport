@@ -1,5 +1,7 @@
 ---
-title: "Registracija savanorystei"
+title: "Savanorių registracija B1 Mobile programėlėje"
+sidebar_label: "Registracija savanorystei"
+description: "Raskite laisvas savanorių pozicijas artėjančioms pamaldoms, užsirašykite arba pašalinkite registraciją B1 Mobile programėlėje. Aprašomi terminai ir vietų ribos."
 ---
 
 # Registracija savanorystei
@@ -13,7 +15,7 @@ Peržiūrėkite laisvas savanorių pozicijas ir registruokitės į artimiausias 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiegkite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiegkite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Jūsų bažnyčios administratorius turi būti įjungęs savarankišką registraciją bent vienai pozicijai
 
 </div>
@@ -60,5 +62,5 @@ Norint registruotis į pozicijas, turite būti prisijungę. Jei reikia, programa
 
 ## Susiję straipsniai
 
-- [Planų peržiūra](./viewing-plans) – Peržiūrėkite jums priskirtus planus ir tarnystės tvarkas
+- [Planų peržiūra](./viewing-plans.md) – Peržiūrėkite jums priskirtus planus ir tarnystės tvarkas
 - [Pranešimai](../community/notifications.md) – Sekite naujausią informaciją apie savanorystės paskyrimus

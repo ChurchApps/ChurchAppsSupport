@@ -1,5 +1,6 @@
 ---
 title: "Referensi Endpoint"
+description: "Temukan semua endpoint API ChurchApps per modul, lihat metode HTTP, jalur, autentikasi, dan izin tiap rute, serta konvensi batch-save dan error."
 ---
 
 # Referensi Endpoint
@@ -89,10 +90,10 @@ Parameter laporan diteruskan sebagai nilai query string (misalnya `?startDate=20
 
 | Modul | Base Path | Keterangan |
 |--------|-----------|-------------|
-| [Autentikasi](./authentication) | `/membership/users`, `/membership/oauth` | Login, pendaftaran, token JWT, OAuth, izin |
-| [Keanggotaan](./membership) | `/membership/*` | Orang, gereja, grup, rumah tangga, peran, formulir, pengaturan |
-| [Kehadiran](./attendance) | `/attendance/*` | Kampus, layanan, sesi, kunjungan, catatan check-in |
-| [Konten](./content) | `/content/*` | Halaman, khotbah, acara, berkas, galeri, Alkitab, streaming |
-| [Persembahan](./giving) | `/giving/*` | Donasi, dana, gerbang pembayaran, langganan |
-| [Pesan](./messaging) | `/messaging/*` | Percakapan, notifikasi, perangkat, SMS |
-| [Doing](./doing) | `/doing/*` | Rencana, tugas, penugasan, otomasi, penjadwalan |
+| [Autentikasi](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, pendaftaran, token JWT, OAuth, izin |
+| [Keanggotaan](./membership.md) | `/membership/*` | Orang, gereja, grup, rumah tangga, peran, formulir, pengaturan |
+| [Kehadiran](./attendance.md) | `/attendance/*` | Kampus, layanan, sesi, kunjungan, catatan check-in |
+| [Konten](./content.md) | `/content/*` | Halaman, khotbah, acara, berkas, galeri, Alkitab, streaming |
+| [Persembahan](./giving.md) | `/giving/*` | Donasi, dana, gerbang pembayaran, langganan |
+| [Pesan](./messaging.md) | `/messaging/*` | Percakapan, notifikasi, perangkat, SMS |
+| [Doing](./doing.md) | `/doing/*` | Rencana, tugas, penugasan, otomasi, penjadwalan |

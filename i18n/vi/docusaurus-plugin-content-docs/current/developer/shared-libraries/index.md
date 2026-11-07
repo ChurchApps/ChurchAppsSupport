@@ -1,5 +1,6 @@
 ---
 title: "Thư viện dùng chung"
+description: "Tài liệu các gói npm @churchapps dùng chung cho B1 Admin, B1.church và API, cùng cách thiết lập workspace Packages và phát hành bằng changesets."
 ---
 
 # Thư viện dùng chung
@@ -14,9 +15,9 @@ Mã nguồn dùng chung của ChurchApps được xuất bản lên npm dưới 
 
 | Gói | Mô tả | Được dùng bởi |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Lớp nền tảng: các hàm trợ giúp không phụ thuộc framework và các interface TypeScript dùng chung, tạo thành hợp đồng dữ liệu xuyên suốt giữa các ứng dụng | Tất cả dự án |
-| [`@churchapps/apihelper`](./api-helper) | Tiện ích phía máy chủ cho Express: xác thực, controller cơ sở, truy cập cơ sở dữ liệu, tích hợp AWS và email | Tất cả API |
-| [`@churchapps/apphelper`](./app-helper) | Các thành phần React và mô-đun tính năng dùng chung (đăng nhập, quyên góp, biểu mẫu, markdown, trang web) | Tất cả ứng dụng web |
+| [`@churchapps/helpers`](./helpers.md) | Lớp nền tảng: các hàm trợ giúp không phụ thuộc framework và các interface TypeScript dùng chung, tạo thành hợp đồng dữ liệu xuyên suốt giữa các ứng dụng | Tất cả dự án |
+| [`@churchapps/apihelper`](./api-helper.md) | Tiện ích phía máy chủ cho Express: xác thực, controller cơ sở, truy cập cơ sở dữ liệu, tích hợp AWS và email | Tất cả API |
+| [`@churchapps/apphelper`](./app-helper.md) | Các thành phần React và mô-đun tính năng dùng chung (đăng nhập, quyên góp, biểu mẫu, markdown, trang web) | Tất cả ứng dụng web |
 | `@churchapps/content-providers` | Lớp trừu tượng cho các nhà cung cấp nội dung bên thứ ba (Lessons.church, Planning Center, Dropbox và các dịch vụ khác) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Bộ công cụ để xây dựng tích hợp cho B1.church: xác minh webhook, máy khách REST có kiểu dữ liệu, trợ giúp OAuth | Nhà phát triển tích hợp bên ngoài |
 | `@churchapps/texting` | Lớp trừu tượng cho nhà cung cấp SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

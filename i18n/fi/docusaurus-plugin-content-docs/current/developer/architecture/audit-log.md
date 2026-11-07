@@ -1,5 +1,6 @@
 ---
 title: "Tapahtumaloki ja peruttavat erät"
+description: "Kattaa API:n tarkistuslokin, joka tallentaa jokaisen käyttäjän muutoksen moduuleissa, ja sen, miten tuontierät voidaan kumota rivi kerrallaan B1 Adminissa."
 ---
 
 # Tapahtumaloki ja peruttavat erät
@@ -155,6 +156,6 @@ Molemmat ylläpitonäkymät ovat **kehitteillä**. Tavoite on seuraava:
 
 ## Liittyvät sivut
 
-- [Moduulirakenne](../api/module-structure): miten jäsenyyden ulkopuolinen controller saavuttaa jäsenyyden repositoriot `RepoManager`-luokan kautta
-- [Lahjoitukset](./giving): lahjoitusten kirjoituspolut, jotka kirjataan `sensitive`-merkittyinä myös anonyymeina
-- [Jäsenyyden päätepisteet](../api/endpoints/membership): REST-rajapinta, joka kuljettaa `X-Batch-Id`-otsaketta ja tarjoaa `/auditlogs`- ja `/batches`-polut
+- [Moduulirakenne](../api/module-structure.md): miten jäsenyyden ulkopuolinen controller saavuttaa jäsenyyden repositoriot `RepoManager`-luokan kautta
+- [Lahjoitukset](./giving.md): lahjoitusten kirjoituspolut, jotka kirjataan `sensitive`-merkittyinä myös anonyymeina
+- [Jäsenyyden päätepisteet](../api/endpoints/membership.md): REST-rajapinta, joka kuljettaa `X-Batch-Id`-otsaketta ja tarjoaa `/auditlogs`- ja `/batches`-polut

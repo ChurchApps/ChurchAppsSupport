@@ -1,5 +1,6 @@
 ---
 title: "Mano registracijos"
+description: "Tikrinkite registracijos būseną, apmokėkite likutį, redaguokite dalyvius ar priedus arba atšaukite renginio registraciją B1 Church narių portale."
 ---
 
 # Mano registracijos
@@ -14,7 +15,7 @@ title: "Mano registracijos"
 <h4>Prieš pradedant</h4>
 
 - Turite būti [prisijungę](../getting-started/logging-in.md) — svečių registracijos čia nerodomos
-- Jums reikia bent vienos renginio registracijos. Žr. [Registracija į renginius](./registering).
+- Jums reikia bent vienos renginio registracijos. Žr. [Registracija į renginius](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Jūsų vieta iš karto atlaisvinama. Jei renginys turi laukiamųjų sąrašą, p
 
 ## Susiję straipsniai
 
-- [Registracija į renginius](./registering) -- Registracijos procesas, įskaitant mokėjimą ir laukiamųjų sąrašus
+- [Registracija į renginius](./registering.md) -- Registracijos procesas, įskaitant mokėjimą ir laukiamųjų sąrašus
 - [Renginių apžvalga](./index.md) -- Naršykite artėjančius renginius

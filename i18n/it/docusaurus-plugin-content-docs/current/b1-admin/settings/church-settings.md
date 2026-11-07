@@ -1,5 +1,6 @@
 ---
 title: "Impostazioni della chiesa"
+description: "Imposta nome, indirizzo, sottodominio, fuso orario, formato data, provider SMS e archiviazione file nella pagina Impostazioni chiesa di B1 Admin."
 ---
 
 # Impostazioni della chiesa

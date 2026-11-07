@@ -1,5 +1,6 @@
 ---
 title: "Modo de Plano"
+description: "Conecte uma TV no FreePlay ao plano de culto da igreja no B1 Admin para exibir, em ordem, as lições, apresentações e mídias da semana atual."
 ---
 
 # Modo de Plano
@@ -12,13 +13,13 @@ O Modo de Plano conecta sua TV a um plano de culto da igreja. Em vez de exibir c
 
 ## Como Ele Difere dos Outros Modos
 
-- **[Modo Agendado](../scheduled-mode/)** reproduz listas de reprodução de um calendário no FreePlay Admin nos horários que você definir, sem que ninguém precise pressionar Iniciar
+- **[Modo Agendado](../scheduled-mode/index.md)** reproduz listas de reprodução de um calendário no FreePlay Admin nos horários que você definir, sem que ninguém precise pressionar Iniciar
 - **Modo de Plano** busca o conteúdo vinculado a um tipo de plano, que pode incluir lições, apresentações de provedores, complementos e outras mídias organizadas em uma ordem personalizada
 
 O Modo de Plano é especialmente útil quando o seu plano de culto inclui uma mistura de conteúdos de diferentes fontes, todos organizados em uma única sequência.
 
 :::tip
-Quer que o plano atual seja reproduzido sozinho em um horário definido? No FreePlay Admin, adicione uma entrada ao calendário e escolha o tipo de plano em **Planos de culto**. Veja [Agendando o Calendário](../scheduled-mode/scheduling-the-calendar).
+Quer que o plano atual seja reproduzido sozinho em um horário definido? No FreePlay Admin, adicione uma entrada ao calendário e escolha o tipo de plano em **Planos de culto**. Veja [Agendando o Calendário](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Como Funciona
@@ -32,4 +33,4 @@ A TV permanece pareada ao tipo de plano. A cada semana, ela pega automaticamente
 
 ## Nesta Seção
 
-- **[Pareando Seu Dispositivo](./device-pairing)** - Como gerar e inserir o código de pareamento
+- **[Pareando Seu Dispositivo](./device-pairing.md)** - Como gerar e inserir o código de pareamento

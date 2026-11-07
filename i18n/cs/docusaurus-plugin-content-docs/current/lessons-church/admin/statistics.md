@@ -1,5 +1,6 @@
 ---
 title: "Statistika"
+description: "Počty stažení podle studia, přehled církví, které vaše zdroje používají, a jejich poloha ve statistikách Lessons.church s filtrem podle data."
 ---
 
 # Statistika

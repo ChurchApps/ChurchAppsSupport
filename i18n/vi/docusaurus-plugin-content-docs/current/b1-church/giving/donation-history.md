@@ -1,5 +1,7 @@
 ---
-title: "Lịch sử quyên góp"
+title: "Lịch sử dâng hiến và sao kê trong B1.church"
+sidebar_label: "Lịch sử quyên góp"
+description: "Xem các khoản dâng hiến trước đây, lọc theo năm và in sao kê dâng hiến để khai thuế từ trang Dâng hiến trong cổng thành viên B1.church."
 ---
 
 # Lịch sử quyên góp

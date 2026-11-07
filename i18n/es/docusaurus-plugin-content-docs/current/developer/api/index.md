@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Explica el diseño de monolito modular de la API de ChurchApps, sus seis módulos de datos, la pila tecnológica, los puertos y las funciones Lambda, con enlaces a la documentación de configuración, base de datos, autenticación y endpoints para desarrolladores."
 ---
 
 # API
@@ -52,8 +53,8 @@ Cuando se despliega en AWS, la API se ejecuta como seis funciones Lambda:
 
 La API depende de dos paquetes compartidos de ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)**: utilidades base (DateHelper, ApiHelper, etc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)**: utilidades del servidor Express, incluidas la autenticación, los auxiliares de base de datos y las integraciones con AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)**: utilidades base (DateHelper, ApiHelper, etc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)**: utilidades del servidor Express, incluidas la autenticación, los auxiliares de base de datos y las integraciones con AWS
 
 :::info
 La API usa módulos ES (`"type": "module"` en `package.json`). Asegúrese de que sus importaciones usen la sintaxis de módulos ES.
@@ -61,11 +62,11 @@ La API usa módulos ES (`"type": "module"` en `package.json`). Asegúrese de que
 
 ## En esta sección
 
-- **[Configuración local](./local-setup)**: clone, configure y ejecute la API localmente
-- **[Base de datos](./database)**: arquitectura de una base de datos por módulo, scripts de esquema y patrones de acceso a datos
-- **[Estructura de módulos](./module-structure)**: controladores, repositorios, modelos y autenticación
-- **[Claves de API](./api-keys)**: tokens de acceso personales para scripts y conectores
-- **[Aplicaciones conectadas (OAuth)](./connected-apps)**: flujo OAuth multiinquilino para aplicaciones de terceros
-- **[Webhooks](./webhooks)**: envíe notificaciones de eventos a sistemas externos
-- **[Servidor MCP](./mcp)**: endpoint del Protocolo de contexto de modelos que expone la API a asistentes de IA
-- **[Referencia de endpoints](./endpoints/)**: documentación REST completa de la API para todos los módulos
+- **[Configuración local](./local-setup.md)**: clone, configure y ejecute la API localmente
+- **[Base de datos](./database.md)**: arquitectura de una base de datos por módulo, scripts de esquema y patrones de acceso a datos
+- **[Estructura de módulos](./module-structure.md)**: controladores, repositorios, modelos y autenticación
+- **[Claves de API](./api-keys.md)**: tokens de acceso personales para scripts y conectores
+- **[Aplicaciones conectadas (OAuth)](./connected-apps.md)**: flujo OAuth multiinquilino para aplicaciones de terceros
+- **[Webhooks](./webhooks.md)**: envíe notificaciones de eventos a sistemas externos
+- **[Servidor MCP](./mcp.md)**: endpoint del Protocolo de contexto de modelos que expone la API a asistentes de IA
+- **[Referencia de endpoints](./endpoints/index.md)**: documentación REST completa de la API para todos los módulos

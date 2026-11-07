@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Une B1 Admin y Text In Church con Zapier: genera una clave API, crea un Zap de tarjeta de conexión a B1 y refleja la pertenencia a grupos."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Activa el Zap. La siguiente tarjeta de conexión enviada a través de TIC llega 
 
 ## Ver También
 
-- [Clearstream](./clearstream) — plataforma SMS alternativa con forma de Zapier similar
-- [Zapier (descripción general)](../zapier) — lado B1 de cada receta de Zapier
+- [Clearstream](./clearstream.md) — plataforma SMS alternativa con forma de Zapier similar
+- [Zapier (descripción general)](../zapier.md) — lado B1 de cada receta de Zapier
 - [Guía de Zapier de Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (documentos de TIC)

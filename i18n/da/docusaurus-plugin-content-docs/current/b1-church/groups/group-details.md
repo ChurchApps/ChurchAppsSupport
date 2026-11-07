@@ -1,5 +1,7 @@
 ---
-title: "Gruppedetaljer"
+title: "Gruppedetaljer i B1.church-medlemsportalen"
+sidebar_label: "Gruppedetaljer"
+description: "Se en gruppes detaljeside i B1 Admins medlemsvisning på B1.church: begivenheder, møder, formularer og medlemmer, og tilmeld dig eller anmod om adgang."
 ---
 
 # Gruppedetaljer

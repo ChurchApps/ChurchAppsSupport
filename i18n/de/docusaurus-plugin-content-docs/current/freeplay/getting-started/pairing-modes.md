@@ -1,5 +1,6 @@
 ---
 title: "Einen Kopplungsmodus wählen"
+description: "Die richtige Kopplungsart für einen FreePlay-TV wählen: Kalender aus FreePlay Admin, Gottesdienstplan aus B1 Admin oder keine Kopplung."
 ---
 
 # Einen Kopplungsmodus wählen
@@ -32,7 +33,7 @@ Geben Sie den Code in **FreePlay Admin** auf [admin.freeplay.church](https://adm
 
 **Ideal für:** Beschilderung in Foyer und Gängen, Ankündigungsschleifen und Klassenräume, in denen die Lektion schon laufen soll, wenn die Leute hereinkommen.
 
-Die vollständige Anleitung finden Sie unter **[Geplanter Modus](../scheduled-mode/)**.
+Die vollständige Anleitung finden Sie unter **[Geplanter Modus](../scheduled-mode/index.md)**.
 
 ## Planmodus (B1 Admin)
 
@@ -42,7 +43,7 @@ Geben Sie den Code in **B1 Admin** ein, wenn der Fernseher einem Gottesdienstpla
 
 **Ideal für:** Fernseher, die Inhalte zu Ihrem wöchentlichen Gottesdienstplan zeigen, wenn jemand die Wiedergabe startet, sobald es so weit ist.
 
-Die vollständige Anleitung finden Sie unter **[Planmodus](../plan-mode/)**.
+Die vollständige Anleitung finden Sie unter **[Planmodus](../plan-mode/index.md)**.
 
 :::tip
 Sie können den aktuellen Gottesdienstplan auch nach Zeitplan abspielen. Fügen Sie in FreePlay Admin einen Kalendereintrag hinzu und wählen Sie unter **Gottesdienstpläne** den Planungstyp.
@@ -50,7 +51,7 @@ Sie können den aktuellen Gottesdienstplan auch nach Zeitplan abspielen. Fügen 
 
 ## Inhaltsanbieter (ohne Kopplung)
 
-Wenn Sie den Fernseher überhaupt nicht koppeln müssen, können Sie Inhaltsanbieter direkt durchsuchen. Anbieter wie [Lessons.church](../../lessons-church/) und Bible Project bieten Inhalte, die Sie herunterladen und jederzeit abspielen können.
+Wenn Sie den Fernseher überhaupt nicht koppeln müssen, können Sie Inhaltsanbieter direkt durchsuchen. Anbieter wie [Lessons.church](../../lessons-church/index.md) und Bible Project bieten Inhalte, die Sie herunterladen und jederzeit abspielen können.
 
 **Ideal für:** Fernseher, bei denen Ehrenamtliche jede Woche auswählen, was gezeigt wird, oder wenn Sie herausfinden möchten, was verfügbar ist.
 
@@ -60,6 +61,6 @@ Sie können die Seite **Anbieter** jederzeit über **Einstellungen** unten in de
 
 ## Verwandte Artikel
 
-- **[Geplanter Modus](../scheduled-mode/)** - Fernseher mit FreePlay Admin nach Kalender laufen lassen
-- **[Planmodus](../plan-mode/)** - Vollständige Anleitung zur Kopplung mit einem Gottesdienstplan
-- **[Inhaltsanbieter](../content-providers/)** - Inhalte aus externen Quellen durchsuchen und herunterladen
+- **[Geplanter Modus](../scheduled-mode/index.md)** - Fernseher mit FreePlay Admin nach Kalender laufen lassen
+- **[Planmodus](../plan-mode/index.md)** - Vollständige Anleitung zur Kopplung mit einem Gottesdienstplan
+- **[Inhaltsanbieter](../content-providers/index.md)** - Inhalte aus externen Quellen durchsuchen und herunterladen

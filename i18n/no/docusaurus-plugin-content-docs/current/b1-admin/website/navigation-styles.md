@@ -1,5 +1,6 @@
 ---
 title: "Navigasjonsstiler"
+description: "Tilpass farger for faste og transparente navigasjonslinjer på nettstedet i B1 Admin, inkludert tilstander for lenker, hover og aktiv side."
 ---
 
 # Navigasjonsstiler

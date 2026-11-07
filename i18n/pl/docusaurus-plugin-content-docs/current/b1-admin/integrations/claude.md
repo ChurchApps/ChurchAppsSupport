@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Połącz B1 Admin z Claude, aby pytać zwykłym językiem o frekwencję, darowizny i grupy, z opcją logowania i kluczem API z ograniczonymi uprawnieniami."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ To ten sam zestaw ścieżek, `/membership/people`, `/giving/donations`, `/attend
 
 - [Klucze API](/docs/developer/api/api-keys) — pełna lista zakresów
 - [Serwer MCP (dokumentacja dla deweloperów)](/docs/developer/api/mcp) — szczegóły protokołu i schematy narzędzi
-- [ChatGPT](./chatgpt) — to samo podejście, ale dla modeli OpenAI
+- [ChatGPT](./chatgpt.md) — to samo podejście, ale dla modeli OpenAI

@@ -1,5 +1,6 @@
 ---
 title: "Henkilöiden haku"
+description: "Hae henkilöitä B1 Adminissa nimellä, lajittele taulukkonäkymää, rakenna suodattimia Laajennetulla haulla ja vie osumat CSV:nä."
 ---
 
 # Henkilöiden haku

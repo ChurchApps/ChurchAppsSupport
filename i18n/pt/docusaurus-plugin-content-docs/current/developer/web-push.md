@@ -1,5 +1,6 @@
 ---
 title: "Notificações push da web"
+description: "Configure chaves VAPID, o cliente WebPushHelper e o service worker para que B1.church e B1 Admin enviem notificações push do navegador aos membros."
 ---
 
 # Notificações push da web
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Páginas relacionadas
 
-- [Arquitetura de notificações](./architecture/notifications) -- O funil completo de escalonamento no aplicativo/push/e-mail e o motor de lembretes
-- [Tempo real](./realtime) -- Entrega por WebSocket; o push agora é disparado a partir do mesmo funil no aplicativo, junto com a entrega por socket na mesma passagem, e não apenas como alternativa quando uma entrega por socket não chega
-- [Endpoints de Messaging](./api/endpoints/messaging) -- Notificações, dispositivos e o restante da superfície de mensagens
-- [AppHelper](./shared-libraries/app-helper) -- O pacote npm que traz o `WebPushHelper`
+- [Arquitetura de notificações](./architecture/notifications.md) -- O funil completo de escalonamento no aplicativo/push/e-mail e o motor de lembretes
+- [Tempo real](./realtime.md) -- Entrega por WebSocket; o push agora é disparado a partir do mesmo funil no aplicativo, junto com a entrega por socket na mesma passagem, e não apenas como alternativa quando uma entrega por socket não chega
+- [Endpoints de Messaging](./api/endpoints/messaging.md) -- Notificações, dispositivos e o restante da superfície de mensagens
+- [AppHelper](./shared-libraries/app-helper.md) -- O pacote npm que traz o `WebPushHelper`

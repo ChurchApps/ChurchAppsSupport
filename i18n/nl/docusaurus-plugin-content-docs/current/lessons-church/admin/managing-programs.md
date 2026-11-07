@@ -1,5 +1,6 @@
 ---
 title: "Managing Programs"
+description: "Maak en bewerk curriculumprogramma's in Lessons.church, stel slugs en miniaturen in, groepeer studies in categorieën en koppel programmabronnen."
 ---
 
 # Managing Programs

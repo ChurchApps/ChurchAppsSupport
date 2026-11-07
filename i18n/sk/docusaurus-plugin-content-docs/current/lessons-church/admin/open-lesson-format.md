@@ -1,5 +1,6 @@
 ---
 title: "Formát otvorenej lekcie"
+description: "Špecifikácia formátu pre externých poskytovateľov kurikula v Lessons.church: štruktúra poskytovateľa a JSON polia kanála miest, akcie a mediálne súbory."
 ---
 
 # Formát otvorenej lekcie

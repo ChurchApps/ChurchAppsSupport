@@ -1,5 +1,7 @@
 ---
-title: "Memulai"
+title: "Memulai B1 Mobile (Tidak Digunakan Lagi)"
+sidebar_label: "Memulai"
+description: "Siapkan B1 Mobile: temukan aplikasinya, masuk dengan akun ChurchApps, dan pilih gereja Anda. B1 Mobile tidak digunakan lagi; gunakan PWA sebagai gantinya."
 ---
 
 # Memulai
@@ -25,10 +27,10 @@ Selesai. Setelah Anda memilih gereja, aplikasi akan memuat identitas visual, tau
 
 ## Dalam Bagian Ini
 
-- [Memasang Aplikasi](./installing) — Tempat mengunduh B1 Mobile dan persyaratan perangkat.
-- [Masuk](./logging-in) — Cara masuk atau membuat akun baru.
-- [Berpindah Gereja](./switching-churches) — Cara berpindah antargereja jika Anda terdaftar di lebih dari satu gereja.
+- [Memasang Aplikasi](./installing.md) — Tempat mengunduh B1 Mobile dan persyaratan perangkat.
+- [Masuk](./logging-in.md) — Cara masuk atau membuat akun baru.
+- [Berpindah Gereja](./switching-churches.md) — Cara berpindah antargereja jika Anda terdaftar di lebih dari satu gereja.
 
 :::tip
-B1 Mobile menggunakan akun ChurchApps yang sama dengan semua produk ChurchApps lainnya. Jika Anda sudah memiliki akun dari [B1.church](../../b1-church/), B1 Admin, atau Lessons.church, Anda dapat menggunakan kredensial yang sama untuk masuk.
+B1 Mobile menggunakan akun ChurchApps yang sama dengan semua produk ChurchApps lainnya. Jika Anda sudah memiliki akun dari [B1.church](../../b1-church/index.md), B1 Admin, atau Lessons.church, Anda dapat menggunakan kredensial yang sama untuk masuk.
 :::

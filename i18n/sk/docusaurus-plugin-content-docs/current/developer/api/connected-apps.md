@@ -1,12 +1,13 @@
 ---
 title: "Pripojené aplikácie a OAuth"
+description: "Pripájajte aplikácie tretích strán k údajom B1 cirkvi pomocou súhlasu OAuth 2.0, bez zdieľaných hesiel alebo kľúčov API, a kedykoľvek odvolajte prístup v nastaveniach B1 Admin."
 ---
 
 # Pripojené aplikácie a OAuth
 
 <div class="article-intro">
 
-B1 API podporuje OAuth 2.0, takže tretia strana môže požiadať každého správcu cirkvi o povolenie na prístup k jeho údajom bez toho, aby cirkev niekedy zdieľala heslo alebo API kľúč. **Pripojená aplikácia** je OAuth token, ktorý správca cirkvi schválil. Jeho odvolaním sa prístup tretej aplikácie preruší jedným kliknutím. Túto cestu použite pre konektory SaaS s viacerými nájomcami. Pre integráciu jednej cirkvi radšej použite [API kľúče](./api-keys).
+B1 API podporuje OAuth 2.0, takže tretia strana môže požiadať každého správcu cirkvi o povolenie na prístup k jeho údajom bez toho, aby cirkev niekedy zdieľala heslo alebo API kľúč. **Pripojená aplikácia** je OAuth token, ktorý správca cirkvi schválil. Jeho odvolaním sa prístup tretej aplikácie preruší jedným kliknutím. Túto cestu použite pre konektory SaaS s viacerými nájomcami. Pre integráciu jednej cirkvi radšej použite [API kľúče](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API podporuje OAuth 2.0, takže tretia strana môže požiadať každého spr
 | **Pripojená aplikácia** | Konkrétny pár `(klient, správca cirkvi)`, pri ktorom správca udelil klientovi prístup. Každá pripojená aplikácia je podložená obnovovacím tokenom OAuth. |
 | **Prístupový token** | Krátkodobý JWT (≈ 7 dní), ktorý klient používa na volania API. Má rovnaký tvar ako JWT používateľa: `Authorization: Bearer <jwt>`. |
 | **Obnovovací token** | Dlhodobý nepriehľadný reťazec (≈ 90 dní), ktorým klient vytvára nové prístupové tokeny. |
-| **Rozsah (scope)** | Obmedzuje, čo môže prístupový token robiť. Pozrite si [katalóg rozsahov](./api-keys#scopes). |
+| **Rozsah (scope)** | Obmedzuje, čo môže prístupový token robiť. Pozrite si [katalóg rozsahov](./api-keys.md#scopes). |
 
 ## Postupy udelenia prístupu
 
@@ -162,7 +163,7 @@ Zoznam automaticky vynecháva vypršané tokeny.
 
 ## Rozsahy a súhlas
 
-Reťazce rozsahov sú rovnaký katalóg ako pri [API kľúčoch](./api-keys#scopes). Osvedčené postupy pre klientov:
+Reťazce rozsahov sú rovnaký katalóg ako pri [API kľúčoch](./api-keys.md#scopes). Osvedčené postupy pre klientov:
 
 - **Žiadajte najužšie rozsahy, ktoré stačia.** Cirkvi si všimnú, ak si vypýtate `donations:write`, keď potrebujete iba čítať údaje o ľuďoch.
 - **Používajte obnovovací token a krátkodobé prístupové tokeny.** Dlhodobé prístupové tokeny sa ťažšie rýchlo odvolávajú.
@@ -183,7 +184,7 @@ Registrované presmerovacie URI musia presne zodpovedať `redirect_uri` v žiado
 
 ### Dynamická registrácia klienta
 
-`POST /membership/oauth/register` (verejný, RFC 7591) umožňuje klientovi, napríklad konektoru MCP v claude.ai, zaregistrovať sa samostatne. Je inzerovaný v dokumente `/.well-known/oauth-authorization-server` API. Pozrite [Server MCP → OAuth discovery](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (verejný, RFC 7591) umožňuje klientovi, napríklad konektoru MCP v claude.ai, zaregistrovať sa samostatne. Je inzerovaný v dokumente `/.well-known/oauth-authorization-server` API. Pozrite [Server MCP → OAuth discovery](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Na stránke súhlasu B1Admin dostane samostatne zaregistrovaný klient upozornen
 
 ## Podpora SDK
 
-Balík `@churchapps/integration-sdk` obaľuje každý postup OAuth typovanými pomocnými funkciami: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` a `.awaitDeviceToken()`. Pozrite README balíka a [Webhooky](./webhooks#sdk-support), kde je celý príklad od začiatku do konca.
+Balík `@churchapps/integration-sdk` obaľuje každý postup OAuth typovanými pomocnými funkciami: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` a `.awaitDeviceToken()`. Pozrite README balíka a [Webhooky](./webhooks.md#sdk-support), kde je celý príklad od začiatku do konca.

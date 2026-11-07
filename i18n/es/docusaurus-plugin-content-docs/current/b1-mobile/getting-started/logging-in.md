@@ -1,5 +1,7 @@
 ---
-title: "Iniciar Sesión"
+title: "Inicio de sesión en B1 Mobile"
+sidebar_label: "Iniciar Sesión"
+description: "Inicie sesión en la aplicación B1 Mobile con su cuenta de ChurchApps, registre una cuenta nueva o recupere una contraseña olvidada con un código de 6 dígitos."
 ---
 
 # Iniciar Sesión
@@ -13,7 +15,7 @@ B1 Mobile usa la misma cuenta de ChurchApps que usas en B1.church y otros produc
 <div class="prereqs">
 <h4>Antes de Empezar</h4>
 
-- [Instala B1 Mobile](./installing) en tu dispositivo iOS o Android
+- [Instala B1 Mobile](./installing.md) en tu dispositivo iOS o Android
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile usa la misma cuenta de ChurchApps que usas en B1.church y otros produc
 3. Ingresa tu **dirección de correo electrónico** y **contraseña**.
 4. Toca **Sign In**.
 
-Después de iniciar sesión, serás llevado al [dashboard](../dashboard/). Si aún no has seleccionado una iglesia, se te pedirá que busques y selecciones una.
+Después de iniciar sesión, serás llevado al [dashboard](../dashboard/index.md). Si aún no has seleccionado una iglesia, se te pedirá que busques y selecciones una.
 
 ## Crear una Nueva Cuenta
 

@@ -1,5 +1,6 @@
 ---
 title: "Gästregistrering"
+description: "Registrera dig och din familj som förstagångsgäster med QR-formuläret i B1 Checkin så att volontärer kan checka in dig när du kommer."
 ---
 
 # Gästregistrering
@@ -22,7 +23,7 @@ Om du besöker en kyrka för första gången kan du registrera dig själv och di
 
 Gästregistrering är avsedd för besökare som ännu inte har ett konto. På kyrkans incheckningsterminal trycker du på **Registrera som gäst** för att visa en QR-kod som länkar till registreringssidan. Du kan också få länken från en volontär eller värd, eller hitta den på ett flygblad eller kyrkans webbplats.
 
-Har du ingen telefon till hands? I samma QR-kodfönster på terminalen trycker du på **Registrera här** för att fylla i formuläret direkt på terminalen. Se [Registrera som gäst](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) för hur detta fungerar på terminalen.
+Har du ingen telefon till hands? I samma QR-kodfönster på terminalen trycker du på **Registrera här** för att fylla i formuläret direkt på terminalen. Se [Registrera som gäst](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) för hur detta fungerar på terminalen.
 
 Sidan öppnas med rubriken **Gästregistrering**. Om kyrkan har lagt till en rubrikbild visas den överst på sidan; annars ser du en liten ikon.
 
@@ -51,7 +52,7 @@ Din registrering skapar poster i kyrkans databas:
 - **Personposter** skapas för varje familjemedlem med medlemsstatusen "Besökare".
 - Eventuella kommentarer du angav sparas som en anteckning på den primära kontaktens post, så att kyrkans personal kan läsa dem.
 - Om kyrkan har valt en grupp för nya gäster läggs din familj till i den. Kyrkan kan också registrera din närvaro automatiskt om du registrerar dig under en av gruppens schemalagda gudstjänster.
-- En volontär eller administratör i kyrkan kan sedan checka in din familj via [B1 Checkin](../../b1-checkin/check-in/looking-up-members)-terminalen.
+- En volontär eller administratör i kyrkan kan sedan checka in din familj via [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md)-terminalen.
 
 :::info
 Om du registrerar dig igen med samma förnamn och samma e-postadress eller telefonnummer känner kyrkans register igen dig och använder din befintliga profil i stället för att skapa en dubblett. Andra personer läggs till som nya. Om du redan har registrerat dig kan du också bara söka på ditt namn eller telefonnummer på terminalen.
@@ -63,6 +64,6 @@ Om formuläret frågar efter din e-postadress hjälper det kyrkan att följa upp
 
 ## Relaterade artiklar
 
-- [Självincheckning](./self-checkin) -- Checka in dig själv efter registreringen
-- [Lägga till gäster (terminal)](../../b1-checkin/check-in/adding-guests) -- Så lägger volontärer till gäster på terminalen
-- [Incheckning](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Så ställer kyrkans administratörer in QR-gästregistrering
+- [Självincheckning](./self-checkin.md) -- Checka in dig själv efter registreringen
+- [Lägga till gäster (terminal)](../../b1-checkin/check-in/adding-guests.md) -- Så lägger volontärer till gäster på terminalen
+- [Incheckning](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Så ställer kyrkans administratörer in QR-gästregistrering

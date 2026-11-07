@@ -1,5 +1,7 @@
 ---
-title: "Bijbel"
+title: "De Bijbel lezen op B1.church"
+sidebar_label: "Bijbel"
+description: "Lees de Schrift in de Bijbellezer van B1.church, met bediening voor boek, hoofdstuk en vertaling, en een Bijbelpagina voor dagelijks lezen."
 ---
 
 # Bijbel

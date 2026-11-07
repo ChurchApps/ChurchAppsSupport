@@ -1,5 +1,7 @@
 ---
-title: "Gruplar"
+title: "B1 Mobile Uygulamasında Gruplar Ekranı"
+sidebar_label: "Gruplar"
+description: "B1 Mobile Gruplar ekranında üyesi olduğunuz grupları bulun; en çok ziyaret ettiğiniz grup en üstte, kilisenizin diğer grupları altta yer alır."
 ---
 
 # Gruplar
@@ -30,10 +32,10 @@ Gruplar ekranından yapabilecekleriniz şunlardır:
 - **Bağlantıda kalın** -- Grup üyelerinizin paylaştıklarını görün, sohbetleri takip edin ve grup içeriğiyle etkileşime geçin.
 
 :::tip
-Gruplar ekranı, tıpkı [gösterge paneli](../dashboard/) gibi kullanımınıza uyum sağlar. En sık ziyaret ettiğiniz gruplar, hızlı erişim için en üste taşınır.
+Gruplar ekranı, tıpkı [gösterge paneli](../dashboard/index.md) gibi kullanımınıza uyum sağlar. En sık ziyaret ettiğiniz gruplar, hızlı erişim için en üste taşınır.
 :::
 
 ## Sonraki Adımlar
 
-- [Grup Ayrıntıları](./group-details) -- Bir grubun ayrıntı sayfasında neler olduğunu görün
-- [Grup Zaman Akışı](./group-timeline) -- Gruplarınız genelindeki birleşik etkinlik akışı hakkında bilgi edinin
+- [Grup Ayrıntıları](./group-details.md) -- Bir grubun ayrıntı sayfasında neler olduğunu görün
+- [Grup Zaman Akışı](./group-timeline.md) -- Gruplarınız genelindeki birleşik etkinlik akışı hakkında bilgi edinin

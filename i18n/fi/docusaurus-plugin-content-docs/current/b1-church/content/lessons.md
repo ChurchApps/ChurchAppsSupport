@@ -1,5 +1,7 @@
 ---
-title: "Lessons (poistettu käytöstä)"
+title: "Poistettu Lessons-välilehti B1.churchissa"
+sidebar_label: "Lessons (poistettu käytöstä)"
+description: "B1.churchin Lessons-välilehti on poistettu. Selaa oppitunteja Lessons.churchissa ja toista niitä luokkahuoneen TV:illä FreePlayn avulla."
 ---
 
 # Lessons (poistettu käytöstä)
@@ -9,7 +11,7 @@ Upotettu **Lessons**-välilehti B1.churchissa on poistettu käytöstä. Opetussu
 
 Selataksesi, ajoittaaksesi tai muokataksesi opetussuunnitelmaa suoraan, kirjaudu selaimellasi sisään [Lessons.church](https://lessons.church)-sivustolle. Toistaaksesi oppitunteja luokkahuoneen televisiossa, asenna [FreePlay](/docs/freeplay/getting-started/) televisiolaitteeseesi.
 
-B1Adminissa oppituntityyppiin liitettyjen ryhmien vanhemmat näkevät **tämän viikon oppitunnin** [ryhmän tiedot](/docs/b1-church/groups/group-details.md) -sivulla, eivät tässä poistetussa välilehdessä.
+B1Adminissa oppituntityyppiin liitettyjen ryhmien vanhemmat näkevät **tämän viikon oppitunnin** [ryhmän tiedot](../groups/group-details.md) -sivulla, eivät tässä poistetussa välilehdessä.
 :::
 
 <div class="article-intro">

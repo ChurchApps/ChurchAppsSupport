@@ -1,5 +1,6 @@
 ---
 title: "방, 리소스 및 일정"
+description: "B1 Admin에서 공간, 장비, 차단 일정, 행사 템플릿을 설정해 그룹이 예약을 요청하고 승인자가 이중 예약을 막을 수 있도록 합니다."
 ---
 
 # 방, 리소스 및 일정
@@ -14,7 +15,7 @@ title: "방, 리소스 및 일정"
 <h4>시작하기 전에</h4>
 
 - B1 Admin의 달력 섹션에 대한 관리자 권한이 필요합니다
-- 예약 요청을 제출할 회원이 있는 [그룹](../groups/creating-groups)을 설정하세요
+- 예약 요청을 제출할 회원이 있는 [그룹](../groups/creating-groups.md)을 설정하세요
 
 </div>
 
@@ -76,7 +77,7 @@ B1 Admin에서 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-men
 
 ## 관련 항목
 
-- [가용성 달력](availability) -- 모든 예약을 한 눈에 보기 및 방이나 리소스 직접 예약
-- [달력 승인](approvals) -- 방 및 리소스 예약 요청 승인 또는 거부
-- [달력 생성](creating-calendars) -- 이벤트 달력 설정
-- [그룹 생성](../groups/creating-groups) -- 방과 리소스를 예약할 수 있는 그룹 설정
+- [가용성 달력](./availability.md) -- 모든 예약을 한 눈에 보기 및 방이나 리소스 직접 예약
+- [달력 승인](./approvals.md) -- 방 및 리소스 예약 요청 승인 또는 거부
+- [달력 생성](./creating-calendars.md) -- 이벤트 달력 설정
+- [그룹 생성](../groups/creating-groups.md) -- 방과 리소스를 예약할 수 있는 그룹 설정

@@ -1,5 +1,7 @@
 ---
-title: "Profil szerkesztése"
+title: "Profil szerkesztése a B1.church tagi portálon"
+sidebar_label: "Profil szerkesztése"
+description: "Frissítse elérhetőségeit, háztartási tagjait, bejelentkezési e-mail-címét és jelszavát, valamint adatvédelmi beállításait a B1.church tagi portálon."
 ---
 
 # Profil szerkesztése

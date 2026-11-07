@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Configurați local aplicația web pentru membri B1App cu Next.js 22+, setați endpoint-urile API în .env și rulați serverul de dezvoltare pe portul 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App este aplicația publică pentru membrii bisericii, construită cu Next.js.
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **Node.js 22+** și **Git** -- vezi [Cerințe preliminare](../setup/prerequisites)
-- Configurați ținta API (demo sau locală) -- vezi [Variabile de mediu](../setup/environment-variables)
+- Instalați **Node.js 22+** și **Git** -- vezi [Cerințe preliminare](../setup/prerequisites.md)
+- Configurați ținta API (demo sau locală) -- vezi [Variabile de mediu](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Build-urile de producție sunt implementate pe **S3 + CloudFront**:
 3. Se declanșează invalidarea CloudFront pentru a servi noua versiune
 
 :::tip
-Pentru instrucțiuni detaliate de implementare, vezi ghidul [Implementarea aplicațiilor web](../deployment/web-apps).
+Pentru instrucțiuni detaliate de implementare, vezi ghidul [Implementarea aplicațiilor web](../deployment/web-apps.md).
 :::

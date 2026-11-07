@@ -1,5 +1,6 @@
 ---
 title: "Urmărirea prezenței"
+description: "Revizuiți tendințele prezenței, filtrați rapoartele după campus, serviciu sau grup și exportați prezența grupurilor din pagina Attendance în B1 Admin."
 ---
 
 # Urmărirea prezenței

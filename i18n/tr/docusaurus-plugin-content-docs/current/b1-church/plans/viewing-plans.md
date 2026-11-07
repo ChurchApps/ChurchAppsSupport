@@ -1,5 +1,7 @@
 ---
-title: "Planları Görüntüleme"
+title: "B1.church Üye Portalında Hizmet Planlarınız"
+sidebar_label: "Planları Görüntüleme"
+description: "B1.church'te hizmet planı atamalarınızı görün, istekleri kabul edin veya reddedin, müsait olmadığınız tarihleri belirleyin ve geçmiş hizmetlerinizi inceleyin."
 ---
 
 # Planları Görüntüleme

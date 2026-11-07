@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje naprav"
+description: "Seznanite, označite in odstranite zaslone ChurchAppsPlayer in FreePlay, povezane z vašim računom v B1 Admin, da so cerkveni zasloni aktualni in varni."
 ---
 
 # Upravljanje naprav

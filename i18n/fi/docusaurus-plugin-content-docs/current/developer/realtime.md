@@ -1,5 +1,6 @@
 ---
 title: "Reaaliaikainen arkkitehtuuri"
+description: "Miten ChurchAppsin WebSocket-kerros välittää reaaliaikaisen chatin, läsnäolon ja ilmoitukset: yhteyden muodostus, huonetilaukset ja asiakaspuolen rakennuspalikat."
 ---
 
 # Reaaliaikainen arkkitehtuuri
@@ -226,8 +227,8 @@ Live-striimi on suurin anonyymi kuluttaja tälle järjestelmälle. Se käyttää
 
 ## Liittyvät sivut
 
-- [Ilmoitusarkkitehtuuri](./architecture/notifications) -- In-app-, push- ja sähköpostiilmoitusten eskalointiputki, johon tämä kuljetus syöttää
-- [Viestinnän päätepisteet](./api/endpoints/messaging) -- Täydellinen REST-rajapinta viesteille, keskusteluille, yhteyksille ja laitteille
-- [Web Push -ilmoitukset](./web-push) -- Selainpush, erillään sivun sisäisestä socket-toimituksesta
-- [AppHelper](./shared-libraries/app-helper) -- npm-paketti, joka toimittaa asiakaspuolen perusrakenteet
-- [Moduulirakenne](./api/module-structure) -- Viestintämoduulin järjestely palvelinpuolella
+- [Ilmoitusarkkitehtuuri](./architecture/notifications.md) -- In-app-, push- ja sähköpostiilmoitusten eskalointiputki, johon tämä kuljetus syöttää
+- [Viestinnän päätepisteet](./api/endpoints/messaging.md) -- Täydellinen REST-rajapinta viesteille, keskusteluille, yhteyksille ja laitteille
+- [Web Push -ilmoitukset](./web-push.md) -- Selainpush, erillään sivun sisäisestä socket-toimituksesta
+- [AppHelper](./shared-libraries/app-helper.md) -- npm-paketti, joka toimittaa asiakaspuolen perusrakenteet
+- [Moduulirakenne](./api/module-structure.md) -- Viestintämoduulin järjestely palvelinpuolella

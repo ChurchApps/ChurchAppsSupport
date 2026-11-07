@@ -1,5 +1,6 @@
 ---
 title: "Prezentare generală FreePlay"
+description: "Prezentare a FreePlay, aplicația TV pentru clase cu redare offline a lecțiilor pe Android TV, Fire TV și Apple TV, cu linkuri către ghidurile de configurare."
 ---
 
 # Prezentare generală FreePlay
@@ -22,10 +23,10 @@ Urmăriți **<a href="/guides/freeplay-quickstart" target="_blank">videoclipul d
 
 - **Redare offline** - Descărcați din timp videoclipurile și diapozitivele cu imagini, pentru a nu depinde niciodată de Wi-Fi în timpul serviciilor
 - **Gestionarea descărcărilor** - Vizualizați și gestionați tot conținutul descărcat din **Setări** > **Descărcări**
-- **Mod programat** - Creați liste de redare și programați-le în calendar la adresa [admin.freeplay.church](https://admin.freeplay.church). Televizoarele asociate le redau la orele potrivite, fără ca cineva să apese Start -- consultați [Mod programat](./scheduled-mode/)
+- **Mod programat** - Creați liste de redare și programați-le în calendar la adresa [admin.freeplay.church](https://admin.freeplay.church). Televizoarele asociate le redau la orele potrivite, fără ca cineva să apese Start -- consultați [Mod programat](./scheduled-mode/index.md)
 - **Asocierea planului** - Conectați dispozitivul la un plan de serviciu al bisericii, pentru conținut coordonat între săli
 - **Furnizori de conținut** - Răsfoiți și descărcați conținut din surse externe precum [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox și OneDrive
-- **Anunțuri** - Redați în buclă un dosar cu diapozitive dintr-un furnizor conectat -- consultați [Anunțuri](./content-providers/announcements)
+- **Anunțuri** - Redați în buclă un dosar cu diapozitive dintr-un furnizor conectat -- consultați [Anunțuri](./content-providers/announcements.md)
 - **Ușor de utilizat cu telecomanda TV** - Navigați în toată aplicația cu o telecomandă TV standard, folosind butoanele direcționale și selectarea
 - **Bară laterală ascunsă** - O bară laterală îngustă păstrează navigarea accesibilă, fără a aglomera ecranul
 
@@ -35,10 +36,10 @@ Când lansați FreePlay, aplicația se conectează la furnizorii de conținut ș
 
 ## Secțiuni
 
-- **[Noțiuni de bază](./getting-started/)** - Instalați aplicația, lansați-o și alegeți modul de conectare
-- **[Mod programat](./scheduled-mode/)** - Asociați televizoarele cu un calendar și gestionați-le în FreePlay Admin
-- **[Mod plan](./plan-mode/)** - Asociați-vă cu un plan de serviciu al bisericii
-- **[Furnizori de conținut](./content-providers/)** - Conectați-vă la surse externe de conținut
+- **[Noțiuni de bază](./getting-started/index.md)** - Instalați aplicația, lansați-o și alegeți modul de conectare
+- **[Mod programat](./scheduled-mode/index.md)** - Asociați televizoarele cu un calendar și gestionați-le în FreePlay Admin
+- **[Mod plan](./plan-mode/index.md)** - Asociați-vă cu un plan de serviciu al bisericii
+- **[Furnizori de conținut](./content-providers/index.md)** - Conectați-vă la surse externe de conținut
 
 :::info
 FreePlay face parte din suita [ChurchApps](https://churchapps.org) de instrumente gratuite și open-source pentru biserici.

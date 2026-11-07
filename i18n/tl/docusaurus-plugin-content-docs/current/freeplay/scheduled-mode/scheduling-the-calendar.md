@@ -1,5 +1,6 @@
 ---
 title: "Pag-iiskedyul ng Kalendaryo"
+description: "Mag-iskedyul sa FreePlay Admin Calendar ng playlist, service plan, o provider folder sa screen group, lingguhan o minsanan, na may default loop bilang fallback."
 ---
 
 # Pag-iiskedyul ng Kalendaryo
@@ -13,8 +14,8 @@ Kinokontrol ng pahinang **Calendar** sa FreePlay Admin kung ano ang tutugtog ng 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Gumawa ng kahit isang screen group. Tingnan ang [Pamamahala ng mga Screen at Grupo](./managing-screens#screen-groups)
-- [Gumawa ng playlist](./building-playlists), o magkaroon ng plan type na nakaayos sa B1 Admin
+- Gumawa ng kahit isang screen group. Tingnan ang [Pamamahala ng mga Screen at Grupo](./managing-screens.md#screen-groups)
+- [Gumawa ng playlist](./building-playlists.md), o magkaroon ng plan type na nakaayos sa B1 Admin
 
 </div>
 
@@ -82,10 +83,10 @@ Kapag nagkapatong ang dalawang schedule, magpapakita ang form ng babala: **Overl
 
 ## Paano Kinukuha ng mga Screen ang mga Pagbabago
 
-Dina-download ng mga nakapares na screen ang lahat ng nakaiskedyul sa susunod na 7 araw, at sila mismo ang nagsusuri ng mga pagbabago. Hindi mo kailangang hawakan ang TV pagkatapos mong i-edit ang kalendaryo. Para makita kung kumpleto na ang kailangan ng isang screen, tingnan ang **Ready through** sa [pahina ng Screens](./managing-screens).
+Dina-download ng mga nakapares na screen ang lahat ng nakaiskedyul sa susunod na 7 araw, at sila mismo ang nagsusuri ng mga pagbabago. Hindi mo kailangang hawakan ang TV pagkatapos mong i-edit ang kalendaryo. Para makita kung kumpleto na ang kailangan ng isang screen, tingnan ang **Ready through** sa [pahina ng Screens](./managing-screens.md).
 
 ## Mga Kaugnay na Artikulo
 
-- **[Pagbuo ng mga Playlist](./building-playlists)** - Gumawa ng mga playlist na iniskedyul mo
-- **[Scheduled Playback sa TV](./scheduled-playback)** - Paano gumagana ang teacher paced na mga lesson at ang remote sa TV
-- **[Pamamahala ng mga Screen at Grupo](./managing-screens)** - Magdagdag ng mga grupo at tingnan ang mga download ng bawat screen
+- **[Pagbuo ng mga Playlist](./building-playlists.md)** - Gumawa ng mga playlist na iniskedyul mo
+- **[Scheduled Playback sa TV](./scheduled-playback.md)** - Paano gumagana ang teacher paced na mga lesson at ang remote sa TV
+- **[Pamamahala ng mga Screen at Grupo](./managing-screens.md)** - Magdagdag ng mga grupo at tingnan ang mga download ng bawat screen

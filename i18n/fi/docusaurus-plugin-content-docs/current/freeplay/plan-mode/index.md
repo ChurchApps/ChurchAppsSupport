@@ -1,5 +1,6 @@
 ---
 title: "Suunnitelmatila"
+description: "Yhdistä FreePlay TV seurakunnan palvelusuunnitelmaan B1 Administa, jotta se näyttää viikon opetusmateriaalit, esitykset ja median järjestyksessä."
 ---
 
 # Suunnitelmatila
@@ -12,13 +13,13 @@ Suunnitelmatila yhdistää television kirkon jumalanpalveluksen suunnitelmaan. S
 
 ## Miten se eroaa muista tiloista
 
-- **[Aikataulutettu tila](../scheduled-mode/)** toistaa FreePlay Adminissa kalenterista asetettuina aikoina soittolistoja ilman, että kukaan painaa Käynnistä-painiketta
+- **[Aikataulutettu tila](../scheduled-mode/index.md)** toistaa FreePlay Adminissa kalenterista asetettuina aikoina soittolistoja ilman, että kukaan painaa Käynnistä-painiketta
 - **Suunnitelmatila** hakee suunnitelmatyyppiin liittyvän sisällön. Sisältöön voi kuulua oppitunteja, palveluntarjoajien esityksiä, lisäosia ja muuta mediaa mukautetussa järjestyksessä
 
 Suunnitelmatila on erityisen hyödyllinen, kun jumalanpalveluksen suunnitelmaan kuuluu sekaisin eri lähteistä peräisin olevaa sisältöä, joka on järjestetty yhdeksi kokonaisuudeksi.
 
 :::tip
-Haluatko, että nykyinen suunnitelma toistuu itsestään tiettyyn aikaan? Lisää FreePlay Adminissa kalenterimerkintä ja valitse suunnitelmatyyppi kohdassa **Jumalanpalveluksen suunnitelmat**. Katso [Kalenterin aikatauluttaminen](../scheduled-mode/scheduling-the-calendar).
+Haluatko, että nykyinen suunnitelma toistuu itsestään tiettyyn aikaan? Lisää FreePlay Adminissa kalenterimerkintä ja valitse suunnitelmatyyppi kohdassa **Jumalanpalveluksen suunnitelmat**. Katso [Kalenterin aikatauluttaminen](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Miten se toimii
@@ -32,4 +33,4 @@ Televisio pysyy yhdistettynä suunnitelmatyyppiin. Joka viikko se noutaa automaa
 
 ## Tässä osiossa
 
-- **[Laitteen yhdistäminen](./device-pairing)** - Miten parituskoodi luodaan ja syötetään
+- **[Laitteen yhdistäminen](./device-pairing.md)** - Miten parituskoodi luodaan ja syötetään

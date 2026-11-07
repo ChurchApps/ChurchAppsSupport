@@ -1,5 +1,6 @@
 ---
 title: "Mga Web App"
+description: "Pangkalahatang-tanaw ng tatlong ChurchApps web app (B1 Admin, B1.church, Lessons.church), shared na React at MUI stack, apphelper packages, at build tools."
 ---
 
 # Mga Web App
@@ -41,7 +42,7 @@ Nagbabahagi ang mga app ng mga UI component at utility sa pamamagitan ng pamilya
 | `@churchapps/apphelper-website` | Mga component ng Website/CMS |
 
 :::tip
-Para sa mga detalye sa pag-develop ng mga shared package na ito nang lokal, tingnan ang dokumentasyon ng [AppHelper](../shared-libraries/app-helper).
+Para sa mga detalye sa pag-develop ng mga shared package na ito nang lokal, tingnan ang dokumentasyon ng [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Postinstall Script

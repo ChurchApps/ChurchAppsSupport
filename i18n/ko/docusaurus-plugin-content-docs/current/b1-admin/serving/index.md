@@ -1,5 +1,7 @@
 ---
-title: "섬김"
+title: "B1 Admin의 Serving 개요"
+sidebar_label: "섬김"
+description: "B1 Admin의 Serving 영역에서 사역 탭과 팀부터 예배 계획, 찬양, 작업까지 자원봉사자를 조율하고 예배를 계획하세요."
 ---
 
 # 섬김

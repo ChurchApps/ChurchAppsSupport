@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Grupių ekranas B1 Mobile programėlėje"
+sidebar_label: "Grupper"
+description: "Raskite savo grupes B1 Mobile Grupių ekrane: joje rodoma dažniausiai lankoma grupė viršuje, o likusios bažnyčios grupės – žemiau."
 ---
 
 # Grupper
@@ -30,10 +32,10 @@ Dette kan du gjøre fra Grupper-skjermen:
 - **Hold kontakten** -- Se hva gruppemedlemmene deler, følg med på samtaler og engasjer deg i gruppeinnhold.
 
 :::tip
-Grupper-skjermen tilpasser seg hvordan du bruker appen, akkurat som [oversikten](../dashboard/). Gruppene du besøker oftest, flyttes til toppen for rask tilgang.
+Grupper-skjermen tilpasser seg hvordan du bruker appen, akkurat som [oversikten](../dashboard/index.md). Gruppene du besøker oftest, flyttes til toppen for rask tilgang.
 :::
 
 ## Neste steg
 
-- [Gruppedetaljer](./group-details) -- Se hva som finnes på en grupps detaljside
-- [Gruppetidslinje](./group-timeline) -- Lær om den samlede aktivitetsstrømmen på tvers av gruppene dine
+- [Gruppedetaljer](./group-details.md) -- Se hva som finnes på en grupps detaljside
+- [Gruppetidslinje](./group-timeline.md) -- Lær om den samlede aktivitetsstrømmen på tvers av gruppene dine

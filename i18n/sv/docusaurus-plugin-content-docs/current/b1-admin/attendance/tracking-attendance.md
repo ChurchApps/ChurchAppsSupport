@@ -1,5 +1,6 @@
 ---
 title: "Spåra närvaro"
+description: "Granska närvarotrender, filtrera rapporter efter campus, gudstjänst eller grupp och exportera gruppnärvaro från sidan Närvaro i B1 Admin."
 ---
 
 # Spåra närvaro

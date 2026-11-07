@@ -1,5 +1,6 @@
 ---
 title: "Headcount Entry & Trend"
+description: "Enter a total headcount for a service or group in B1 Admin without a named roster, then watch those totals week by week in the Headcount Trend report."
 ---
 
 # Headcount Entry & Trend

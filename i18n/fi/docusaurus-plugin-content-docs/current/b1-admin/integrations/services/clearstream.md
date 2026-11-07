@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Yhdistä Clearstream SMS B1 Adminiin Zapierilla: lähetä viestejä uusista lahjoituksista ja lomakkeista sekä tuo vastaukset takaisin henkilöiksi."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Ota Zap käyttöön. B1 rekisteröi lahjoitus-webhookin aktivoinnin yhteydessä,
 
 ## Katso myös
 
-- [Text In Church](./text-in-church): vaihtoehtoinen SMS-alusta, samankaltainen kytkentärakenne
-- [Mobile Message](./mobile-message): kirkoille Yhdysvaltojen ulkopuolella
-- [Zapier (yleiskatsaus)](../zapier): B1:n puoli kaikista Zapier-resepteistä
+- [Text In Church](./text-in-church.md): vaihtoehtoinen SMS-alusta, samankaltainen kytkentärakenne
+- [Mobile Message](./mobile-message.md): kirkoille Yhdysvaltojen ulkopuolella
+- [Zapier (yleiskatsaus)](../zapier.md): B1:n puoli kaikista Zapier-resepteistä
 - [Clearstream API -dokumentaatio](https://api-docs.clearstream.io/): mukautettuihin integraatioihin Zapier-sovelluksen ulkopuolella

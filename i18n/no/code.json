@@ -251,7 +251,7 @@
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "\u2190 Tilbake til hovedmenyen",
+    "message": "← Tilbake til hovedmenyen",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
@@ -386,13 +386,13 @@
     "message": "B1 Mobil"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobilapp for kirkemedlemmer pa iOS og Android."
+    "message": "Eldre medlemsapp for iOS og Android, nå erstattet av B1.church-nettappen."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Innsjekking"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Selvbetjent kiosk-innsjekkingsapp for Android-nettbrett."
+    "message": "Selvbetjent innsjekkingsterminal-app for iPad- og Android-nettbrett."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Spesielt designet for kirkelige arbeidsflyter — ikke et generisk verktoy tilpasset for tjeneste."
   },
   "homepage.title": {
-    "message": "Hjemmeside"
+    "message": "Hjelp for B1.church, Lessons.church og FreePlay"
   },
   "homepage.description": {
-    "message": "Stottedokumentasjon for ChurchApps — gratis apen kildekode-verktoy for kirkeforvaltning."
+    "message": "Veiledninger og dokumentasjon for ChurchApps' gratis programvare med åpen kildekode for menigheter: B1.church menighetsadministrasjon, innsjekking, giving og nettsider, Lessons.church-læreplaner og FreePlay."
   },
   "homepage.products.heading": {
     "message": "Velg ditt produkt"

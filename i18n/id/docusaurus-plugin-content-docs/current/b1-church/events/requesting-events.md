@@ -1,5 +1,6 @@
 ---
 title: "Mengajukan Acara & Ruangan"
+description: "Ajukan pemesanan ruangan atau peralatan untuk acara dari portal anggota B1.church, lacak statusnya di My Requests, dan batalkan selama masih menunggu."
 ---
 
 # Mengajukan Acara & Ruangan
@@ -42,11 +43,11 @@ Buka **Permintaan Saya** dari halaman Saya. Setiap permintaan menampilkan acara,
 Selama permintaan masih menunggu, Anda dapat menariknya dengan **Batalkan permintaan** (Anda akan diminta konfirmasi, dan pembatalan tidak dapat dibatalkan kembali).
 
 :::info
-Permintaan ditinjau oleh staf gereja di [halaman Persetujuan](../../b1-admin/calendars/approvals) pada B1 Admin. Ruangan dan sumber daya mana yang memerlukan persetujuan ditentukan oleh gereja Anda. Lihat [Ruangan & Sumber Daya](../../b1-admin/calendars/rooms-resources).
+Permintaan ditinjau oleh staf gereja di [halaman Persetujuan](../../b1-admin/calendars/approvals.md) pada B1 Admin. Ruangan dan sumber daya mana yang memerlukan persetujuan ditentukan oleh gereja Anda. Lihat [Ruangan & Sumber Daya](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Artikel Terkait
 
-- [Halaman Saya](../getting-started/me-page) -- Tempat tautan permintaan berada
-- [Persetujuan Kalender (B1 Admin)](../../b1-admin/calendars/approvals) -- Cara staf meninjau permintaan
-- [Ruangan & Sumber Daya (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Cara gereja mengatur ruang yang dapat dipesan
+- [Halaman Saya](../getting-started/me-page.md) -- Tempat tautan permintaan berada
+- [Persetujuan Kalender (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Cara staf meninjau permintaan
+- [Ruangan & Sumber Daya (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Cara gereja mengatur ruang yang dapat dipesan

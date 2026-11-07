@@ -1,5 +1,7 @@
 ---
-title: "Visa scheman"
+title: "Visa tjänsteplaner i B1 Mobile"
+sidebar_label: "Visa scheman"
+description: "Kontrollera ditt kommande och tidigare tjänstschema i B1 Mobile, läs planens detaljer och gudstjänstordning, och skriv ut planer för genomgångar eller bakom scenen."
 ---
 
 # Visa scheman
@@ -13,7 +15,7 @@ Schemavyn i B1 Mobile ger dig en komplett överblick över dina tjänstgöringss
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Bli tilldelad minst ett tjänstgöringsschema av din kyrkoadministratör
 
 </div>
@@ -61,4 +63,4 @@ Du får [pushnotiser](../community/notifications.md) när du tilldelas ett nytt 
 
 ## Relaterade artiklar
 
-- [Volontärregistrering](./volunteer-signup) -- Bläddra bland och anmäl dig till lediga volontärpositioner
+- [Volontärregistrering](./volunteer-signup.md) -- Bläddra bland och anmäl dig till lediga volontärpositioner

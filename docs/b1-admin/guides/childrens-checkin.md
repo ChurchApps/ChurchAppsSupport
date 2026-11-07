@@ -1,5 +1,6 @@
 ---
 title: "Guide: Set Up Children's Ministry Check-In"
+description: "Set up children's check-in in B1 Admin: link families, create age-based groups, configure services, and print name tags for the B1 Checkin kiosk."
 ---
 
 # Set Up Children's Ministry Check-In

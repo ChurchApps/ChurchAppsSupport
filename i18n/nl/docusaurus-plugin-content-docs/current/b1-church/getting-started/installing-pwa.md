@@ -1,5 +1,6 @@
 ---
 title: "Installeren als App (PWA)"
+description: "Installeer B1.church als app op iPhone of Android vanuit het ledenportaal en voeg het pictogram toe aan je startscherm via Safari of Chrome."
 ---
 
 # Installeren als App (PWA)

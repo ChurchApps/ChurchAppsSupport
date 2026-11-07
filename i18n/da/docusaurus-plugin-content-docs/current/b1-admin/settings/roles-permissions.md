@@ -1,5 +1,6 @@
 ---
 title: "roller og tilladelser"
+description: "Opsæt roller i B1 Admin for at styre, hvad personale og frivillige kan se og ændre, fra donationer og fremmøde til personer og grupper."
 ---
 
 # roller og tilladelser

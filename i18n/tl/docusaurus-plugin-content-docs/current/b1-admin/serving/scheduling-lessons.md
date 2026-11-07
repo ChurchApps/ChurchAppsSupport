@@ -1,5 +1,7 @@
 ---
-title: "Scheduling Lessons"
+title: "Pag-iskedyul ng Lesson mula sa Lessons.church sa B1 Admin"
+sidebar_label: "Scheduling Lessons"
+description: "I-link ang Lessons.church sa B1 Admin, saka mag-iskedyul ng lesson, maramihang mag-iskedyul ng series, o ilapat ang year plan sa service plan ng ministry."
 ---
 
 # Pag-iskedyul ng Lessons mula sa Lessons.church

@@ -1,5 +1,6 @@
 ---
 title: "Párování zařízení"
+description: "Spárujte FreePlay TV s typem plánu v B1 Admin čtyřmístným kódem na obrazovce a poté stáhněte média plánu pro přehrávání v režimu Plan Mode."
 ---
 
 # Párování zařízení
@@ -13,7 +14,7 @@ Chcete-li používat Plánovací režim, spárujte svou TV s typem plánu v B1 A
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte a spusťte FreePlay. Viz [Začínáme](../getting-started/)
+- Nainstalujte a spusťte FreePlay. Viz [Začínáme](../getting-started/index.md)
 - Mějte přístup k **B1 Admin** v počítači nebo telefonu pro dokončení párování
 
 </div>
@@ -25,7 +26,7 @@ Chcete-li používat Plánovací režim, spárujte svou TV s typem plánu v B1 A
 3. FreePlay zobrazí čtyřpísmenný párovací kód velkými písmeny vedle QR kódu.
 4. Pod kódem se zobrazí pulzující indikátor **Čekání na potvrzení**, který znamená, že FreePlay čeká, až dokončíte párování.
 
-Stejný kód funguje pro [Plánovaný režim](../scheduled-mode/) ve FreePlay Admin i pro Plánovací režim v B1 Admin. QR kód a adresa **freeplay.church/pair** zobrazené na obrazovce otevřou FreePlay Admin. Pro Plánovací režim je ignorujte a zadejte kód v B1 Admin podle níže uvedeného postupu.
+Stejný kód funguje pro [Plánovaný režim](../scheduled-mode/index.md) ve FreePlay Admin i pro Plánovací režim v B1 Admin. QR kód a adresa **freeplay.church/pair** zobrazené na obrazovce otevřou FreePlay Admin. Pro Plánovací režim je ignorujte a zadejte kód v B1 Admin podle níže uvedeného postupu.
 
 ## Zadání kódu v B1 Admin
 
@@ -61,5 +62,5 @@ Platnost párovacích kódů vyprší po 15 minutách. Když starý kód vyprš�
 ## Související články
 
 - **[Přehled Plánovacího režimu](./index.md)** - Jak se Plánovací režim liší od Plánovaného režimu
-- **[Párování obrazovky](../scheduled-mode/pairing-a-screen)** - Místo toho spárujte stejnou TV s kalendářem ve FreePlay Admin
-- **[Přehrávání obsahu](../content-providers/playing-content)** - Ovládací prvky přehrávače pro přehrávání plánu
+- **[Párování obrazovky](../scheduled-mode/pairing-a-screen.md)** - Místo toho spárujte stejnou TV s kalendářem ve FreePlay Admin
+- **[Přehrávání obsahu](../content-providers/playing-content.md)** - Ovládací prvky přehrávače pro přehrávání plánu

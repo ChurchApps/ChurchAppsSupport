@@ -1,5 +1,6 @@
 ---
 title: "Zdieľané knižnice"
+description: "Dokumentácia npm balíkov @churchapps zdieľaných aplikáciami B1 Admin, B1.church a API, nastavenie workspace Packages a vydávanie verzií cez changesets."
 ---
 
 # Zdieľané knižnice
@@ -14,9 +15,9 @@ Zdieľaný kód ChurchApps sa publikuje na npm v rozsahu `@churchapps/*`. Všetk
 
 | Balík | Popis | Používa |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Základná vrstva: pomocné funkcie nezávislé od frameworku a zdieľané rozhrania TypeScript, ktoré tvoria spoločný dátový kontrakt medzi aplikáciami | Všetky projekty |
-| [`@churchapps/apihelper`](./api-helper) | Serverové pomocné nástroje pre Express: autentifikácia, základné kontroléry, prístup k databáze, integrácie s AWS a e-mailom | Všetky API |
-| [`@churchapps/apphelper`](./app-helper) | Zdieľané komponenty React a funkčné moduly (prihlásenie, dary, formuláre, markdown, webová stránka) | Všetky webové aplikácie |
+| [`@churchapps/helpers`](./helpers.md) | Základná vrstva: pomocné funkcie nezávislé od frameworku a zdieľané rozhrania TypeScript, ktoré tvoria spoločný dátový kontrakt medzi aplikáciami | Všetky projekty |
+| [`@churchapps/apihelper`](./api-helper.md) | Serverové pomocné nástroje pre Express: autentifikácia, základné kontroléry, prístup k databáze, integrácie s AWS a e-mailom | Všetky API |
+| [`@churchapps/apphelper`](./app-helper.md) | Zdieľané komponenty React a funkčné moduly (prihlásenie, dary, formuláre, markdown, webová stránka) | Všetky webové aplikácie |
 | `@churchapps/content-providers` | Abstrakcia nad poskytovateľmi obsahu tretích strán (Lessons.church, Planning Center, Dropbox a ďalší) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Nástroje na vytváranie integrácií pre B1.church: overovanie webhookov, typovaný REST klient, pomocné funkcie pre OAuth | Externí vývojári integrácií |
 | `@churchapps/texting` | Abstrakcia poskytovateľov SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

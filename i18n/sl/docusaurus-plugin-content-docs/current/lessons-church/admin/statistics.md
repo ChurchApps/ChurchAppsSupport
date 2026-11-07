@@ -1,5 +1,6 @@
 ---
 title: "Statistika"
+description: "Poišči število prenosov po študiji, preglej, katere cerkve prenašajo vaše vire, in njihove lokacije v statistiki Lessons.church z izbiro obdobja."
 ---
 
 # Statistika

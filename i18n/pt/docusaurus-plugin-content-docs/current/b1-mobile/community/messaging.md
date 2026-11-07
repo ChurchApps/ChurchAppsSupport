@@ -1,5 +1,6 @@
 ---
 title: "Mensagens"
+description: "Inicie, leia, edite e apague conversas privadas individuais com membros da igreja no B1 Mobile e encontre pessoas pelo Diretório de Membros."
 ---
 
 # Mensagens
@@ -13,7 +14,7 @@ B1 Mobile inclui mensagens privadas para que você possa ter conversas individua
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) em sua conta
+- [Instale B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) em sua conta
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile inclui mensagens privadas para que você possa ter conversas individua
 ## Iniciando uma Nova Conversa
 
 1. Na tela de mensagens, toque na opção para iniciar uma nova conversa.
-2. Use o campo de pesquisa para encontrar o membro que deseja mensagear. Você também pode encontrar membros através do [Diretório de Membros](./member-directory).
+2. Use o campo de pesquisa para encontrar o membro que deseja mensagear. Você também pode encontrar membros através do [Diretório de Membros](./member-directory.md).
 3. Selecione o membro nos resultados da pesquisa.
 4. Digite sua mensagem e toque em **Send**.
 
@@ -52,11 +53,11 @@ Use mensagens para coordenar com colegas voluntários, fazer acompanhamento com 
 :::
 
 :::info
-Ative [notificações push](./notifications) para ser alertado quando alguém enviar uma nova mensagem, mesmo quando o aplicativo não está aberto.
+Ative [notificações push](./notifications.md) para ser alertado quando alguém enviar uma nova mensagem, mesmo quando o aplicativo não está aberto.
 :::
 
 ## Artigos Relacionados
 
-- [Member Directory](./member-directory) -- Encontre membros para mensagear
-- [Notifications](./notifications) -- Receba notificações sobre novas mensagens
-- [Groups](../groups/) -- Participe de conversas em grupo
+- [Member Directory](./member-directory.md) -- Encontre membros para mensagear
+- [Notifications](./notifications.md) -- Receba notificações sobre novas mensagens
+- [Groups](../groups/index.md) -- Participe de conversas em grupo

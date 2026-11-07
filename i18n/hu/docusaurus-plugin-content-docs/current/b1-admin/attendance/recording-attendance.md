@@ -1,5 +1,6 @@
 ---
 title: "Jelenlét rögzítése"
+description: "Részvétel rögzítése csoportalkalmanként a B1 Admin-ban: alkalom létrehozása, jelenlét jelölése, jegyzetek mentése, jelenléti ív nyomtatása vagy táblázat-export."
 ---
 
 # Jelenlét rögzítése

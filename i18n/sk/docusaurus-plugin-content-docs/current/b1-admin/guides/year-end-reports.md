@@ -1,5 +1,6 @@
 ---
 title: "Návod: Generovanie výročných prehľadov darov"
+description: "V B1 Admin dokončite záznamy darov za rok, skontrolujte daňové nastavenia fondov a vygenerujte daňovo odpočítateľné výpisy darov pre každého darcu."
 ---
 
 # Generovanie výročných prehľadov darov

@@ -1,5 +1,6 @@
 ---
 title: "Anbieter verbinden und Playlists erstellen"
+description: "Verbundene Inhaltsanbieter in FreePlay Admin einrichten, dann Playlists für geplante TV-Bildschirme erstellen, anordnen und in der Vorschau prüfen."
 ---
 
 # Anbieter verbinden und Playlists erstellen
@@ -107,6 +108,6 @@ Klicken Sie auf **Präsentieren**, um die Playlist im Browser im Vollbild abzusp
 
 ## Verwandte Artikel
 
-- **[Den Kalender planen](./scheduling-the-calendar)** – Ihre Playlist im Kalender einer Bildschirmgruppe einplanen
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** – Eine Playlist als Standardschleife einer Gruppe festlegen
-- **[Inhaltsanbieter](../content-providers/)** – Anbieter, die Sie direkt am Fernseher verbinden können
+- **[Den Kalender planen](./scheduling-the-calendar.md)** – Ihre Playlist im Kalender einer Bildschirmgruppe einplanen
+- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** – Eine Playlist als Standardschleife einer Gruppe festlegen
+- **[Inhaltsanbieter](../content-providers/index.md)** – Anbieter, die Sie direkt am Fernseher verbinden können

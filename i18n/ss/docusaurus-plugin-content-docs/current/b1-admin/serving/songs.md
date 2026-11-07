@@ -1,5 +1,6 @@
 ---
 title: "Tingoma"
+description: "Phatsa umtfombo wetingoma ku-B1 Admin: sesha futsi engeta tingoma, hlela imininingwane, nakha ChordPro nemalinganiselo, bese ulayisha tinhlanganiso."
 ---
 
 # Tingoma

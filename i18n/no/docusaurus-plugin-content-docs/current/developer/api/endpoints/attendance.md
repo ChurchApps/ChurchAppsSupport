@@ -1,5 +1,6 @@
 ---
 title: "Oppmøte-endepunkter"
+description: "Referanse for oppmøte-API-et i B1 Admin og B1 Checkin: campus, gudstjenester, tider, økter, besøk, innsjekkingsregler og eksportendepunkter."
 ---
 
 # Oppmøte-endepunkter
@@ -270,6 +271,6 @@ Sporer oppmøterekker for enkeltpersoner -- sammenhengende uker en person har de
 
 ## Relaterte sider
 
-- [Medlemskap-endepunkter](./membership) — Personer, grupper, roller og kirkeadministrasjon
-- [Autentisering og tillatelser](./authentication) — Innloggingsflyt, JWT, tillatelsesmodell
-- [Modulstruktur](../module-structure) — Kodeorganiseringsmønstre
+- [Medlemskap-endepunkter](./membership.md) — Personer, grupper, roller og kirkeadministrasjon
+- [Autentisering og tillatelser](./authentication.md) — Innloggingsflyt, JWT, tillatelsesmodell
+- [Modulstruktur](../module-structure.md) — Kodeorganiseringsmønstre

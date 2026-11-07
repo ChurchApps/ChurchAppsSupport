@@ -1,5 +1,7 @@
 ---
-title: "Bắt đầu"
+title: "Bắt đầu với cổng thành viên B1.church"
+sidebar_label: "Bắt đầu"
+description: "Tìm trang B1.church của hội thánh bạn, tạo tài khoản thành viên và xem những gì cổng cung cấp, từ nhóm và dâng hiến đến điểm danh và kế hoạch."
 ---
 
 # Bắt đầu với B1.church

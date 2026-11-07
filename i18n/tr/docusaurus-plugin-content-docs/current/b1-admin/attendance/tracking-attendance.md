@@ -1,5 +1,6 @@
 ---
 title: "Devam Takibi"
+description: "B1 Admin'deki Attendance sayfasında katılım eğilimlerini inceleyin, raporları kampüse, hizmete veya gruba göre filtreleyin ve grup katılımını dışa aktarın."
 ---
 
 # Devam Takibi

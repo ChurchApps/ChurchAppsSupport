@@ -1,5 +1,7 @@
 ---
-title: "Arrangement"
+title: "Arrangementer og påmelding i B1 Mobile"
+sidebar_label: "Arrangement"
+description: "Bla gjennom kommende kirkelige arrangementer i B1 Mobile, og meld deg og familiemedlemmer på de der påmeldingen er åpen."
 ---
 
 # Arrangement
@@ -23,10 +25,10 @@ Arrangement kan vise ulike statuser:
 
 ## Hva du trenger
 
-- [B1 Mobile installert](../getting-started/installing) og [logget inn](../getting-started/logging-in)
+- [B1 Mobile installert](../getting-started/installing.md) og [logget inn](../getting-started/logging-in.md)
 - Kirken din må ha arrangementregistrering aktivert for arrangementet
 
 ## Lær mer
 
-- [Registrering for arrangement](./registering) -- Trinn-for-trinn guide for å registrere deg for et arrangement på mobil
-- [Selvsjekk](../checkin/self-checkin) -- Sjekk inn når du ankommer arrangementet
+- [Registrering for arrangement](./registering.md) -- Trinn-for-trinn guide for å registrere deg for et arrangement på mobil
+- [Selvsjekk](../checkin/self-checkin.md) -- Sjekk inn når du ankommer arrangementet

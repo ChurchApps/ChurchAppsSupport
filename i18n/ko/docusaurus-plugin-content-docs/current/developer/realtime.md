@@ -1,5 +1,6 @@
 ---
 title: "실시간 아키텍처"
+description: "ChurchApps의 WebSocket 계층이 실시간 채팅, 접속 상태, 알림을 전달하는 방식: 소켓 핸드셰이크, 룸 구독, 개발자용 클라이언트 기본 기능."
 ---
 
 # 실시간 아키텍처
@@ -226,8 +227,8 @@ await NotificationService.getInstance().initialize(userContext);
 
 ## 관련 페이지
 
-- [알림 아키텍처](./architecture/notifications) -- 이 전송 계층이 공급하는 인앱/푸시/이메일 에스컬레이션 깔때기
-- [메시징 엔드포인트](./api/endpoints/messaging) -- 메시지, 대화, 연결, 디바이스에 대한 전체 REST 표면
-- [웹 푸시 알림](./web-push) -- 브라우저 푸시, 페이지 내 소켓 전달과는 별개
-- [AppHelper](./shared-libraries/app-helper) -- 클라이언트 프리미티브를 제공하는 npm 패키지
-- [모듈 구조](./api/module-structure) -- 서버 측에서 메시징 모듈이 어떻게 구성되어 있는지
+- [알림 아키텍처](./architecture/notifications.md) -- 이 전송 계층이 공급하는 인앱/푸시/이메일 에스컬레이션 깔때기
+- [메시징 엔드포인트](./api/endpoints/messaging.md) -- 메시지, 대화, 연결, 디바이스에 대한 전체 REST 표면
+- [웹 푸시 알림](./web-push.md) -- 브라우저 푸시, 페이지 내 소켓 전달과는 별개
+- [AppHelper](./shared-libraries/app-helper.md) -- 클라이언트 프리미티브를 제공하는 npm 패키지
+- [모듈 구조](./api/module-structure.md) -- 서버 측에서 메시징 모듈이 어떻게 구성되어 있는지

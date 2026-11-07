@@ -1,5 +1,6 @@
 ---
 title: "FreePlay aansluiten op B1 Admin"
+description: "Koppel een klaslokaal-tv met FreePlay aan je geplande lessen in B1 Admin, zodat leraren ze tijdens de les op het scherm kunnen afspelen."
 ---
 
 # Een klaslokaal-TV aansluiten op uw B1 Admin-lessen

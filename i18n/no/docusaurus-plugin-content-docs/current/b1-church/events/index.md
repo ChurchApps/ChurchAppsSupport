@@ -1,5 +1,7 @@
 ---
-title: "Arrangementer"
+title: "Menighetsarrangementer på B1.church: bla og meld deg på"
+sidebar_label: "Arrangementer"
+description: "Bla i kommende arrangementer på B1.church, sjekk påmeldingsstatus, og meld deg på eller legg arrangementer til i kalenderen din."
 ---
 
 # Arrangementer
@@ -43,7 +45,7 @@ Hvis et arrangement er fullt, kan du fortsatt kunne bli med på **venteliste** n
 
 ## Lær mer
 
-- [Melde deg på arrangementer](./registering) -- Trinn-for-trinn-veiledning for påmelding til et arrangement
-- [Mine påmeldinger](./my-registrations) -- Se dine påmeldinger, betal restbeløp, rediger eller avbestill
-- [Be om arrangementer og rom](./requesting-events) -- Be om et arrangement med rommene og ressursene det trenger
-- [Selvinnsjekk](../checkin/self-checkin) -- Sjekk inn når du ankommer arrangementet
+- [Melde deg på arrangementer](./registering.md) -- Trinn-for-trinn-veiledning for påmelding til et arrangement
+- [Mine påmeldinger](./my-registrations.md) -- Se dine påmeldinger, betal restbeløp, rediger eller avbestill
+- [Be om arrangementer og rom](./requesting-events.md) -- Be om et arrangement med rommene og ressursene det trenger
+- [Selvinnsjekk](../checkin/self-checkin.md) -- Sjekk inn når du ankommer arrangementet

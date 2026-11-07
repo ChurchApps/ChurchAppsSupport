@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Tudd meg, mit kínál gyülekezeted B1.church oldala a tagoknak: a tagi portáltól és csoportoktól az adakozáson, eseményeken, szolgálaton és bejelentkezésen át."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Amikor a tagok meglátogatják a B1.church oldalatokat, a gyülekezet nyilvános
 
 ## Tudj meg többet
 
-- [Első lépések](./getting-started/) -- Hozd létre a fiókodat, jelentkezz be, és ismerkedj meg a B1.church használatával.
-- [Csoportok](./groups/) -- Csatlakozz a gyülekezeted csoportjaihoz, és vegyél részt bennük.
-- [Adakozás](./giving/) -- Adakozz, és kezeld az adományaidat.
-- [Események](./events/) -- Böngészd a közelgő gyülekezeti eseményeket, és jelentkezz rájuk.
-- [Szolgálat](./serving/) -- Tekintsd meg a terveket, és jelentkezz önkéntes szerepekre.
-- [Tervek](./plans/) -- Tekintsd meg a szolgálati terveket és az önkéntes szerepeidet.
-- [Bejelentkezés (Check-In)](./checkin/) -- Jelentkezz be istentiszteletekre, eseményekre, és regisztrálj vendégként.
-- [Közösségi címtár](./community/) -- Keresd meg és lépj kapcsolatba más tagokkal.
-- [Tartalom](./content/) -- Igehirdetések, Biblia, napi ige és élő közvetítés. (A leckék lejátszása átkerült a [FreePlay](/docs/freeplay/) alá.)
+- [Első lépések](./getting-started/index.md) -- Hozd létre a fiókodat, jelentkezz be, és ismerkedj meg a B1.church használatával.
+- [Csoportok](./groups/index.md) -- Csatlakozz a gyülekezeted csoportjaihoz, és vegyél részt bennük.
+- [Adakozás](./giving/index.md) -- Adakozz, és kezeld az adományaidat.
+- [Események](./events/index.md) -- Böngészd a közelgő gyülekezeti eseményeket, és jelentkezz rájuk.
+- [Szolgálat](./serving/index.md) -- Tekintsd meg a terveket, és jelentkezz önkéntes szerepekre.
+- [Tervek](./plans/index.md) -- Tekintsd meg a szolgálati terveket és az önkéntes szerepeidet.
+- [Bejelentkezés (Check-In)](./checkin/index.md) -- Jelentkezz be istentiszteletekre, eseményekre, és regisztrálj vendégként.
+- [Közösségi címtár](./community/index.md) -- Keresd meg és lépj kapcsolatba más tagokkal.
+- [Tartalom](./content/index.md) -- Igehirdetések, Biblia, napi ige és élő közvetítés. (A leckék lejátszása átkerült a [FreePlay](/docs/freeplay/) alá.)
 
 :::info
 A B1.church teljesen ingyenes a gyülekezetek és a tagok számára. A gyülekezeti adminisztrátor a B1 Adminon keresztül állítja be és testreszabja az oldalt. Tagként egyszerűen meglátogatod a gyülekezeted B1.church URL-jét, és máris kezdheted.

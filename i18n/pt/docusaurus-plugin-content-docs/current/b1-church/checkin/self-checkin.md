@@ -1,5 +1,7 @@
 ---
-title: "Check-in próprio"
+title: "Auto Check-In no Portal de Membros B1.church"
+sidebar_label: "Check-in próprio"
+description: "Faça check-in de você e da sua família em um culto pelo portal de membros do B1.church, escolhendo horários e grupos em poucos passos."
 ---
 
 # Check-in próprio
@@ -45,7 +47,7 @@ Depois de selecionar grupos para todos que estão participando, toque no botão 
 
 Você verá uma confirmação de que o seu check-in foi concluído e a sua presença foi salva. Depois de um momento, a página volta à lista de serviços, pronta para o próximo check-in.
 
-Se a sua igreja imprime crachás em um posto de check-in, você verá **Check-in realizado!** com um QR code e um código de segurança. Mostre o código em um posto de check-in para imprimir seus crachás e depois toque em **Concluir**. Em um quiosque do B1 Checkin, toque em **Escanear código** e aponte o QR code para a câmera. Consulte [Imprimindo etiquetas para um check-in pelo celular](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Se a sua igreja imprime crachás em um posto de check-in, você verá **Check-in realizado!** com um QR code e um código de segurança. Mostre o código em um posto de check-in para imprimir seus crachás e depois toque em **Concluir**. Em um quiosque do B1 Checkin, toque em **Escanear código** e aponte o QR code para a câmera. Consulte [Imprimindo etiquetas para um check-in pelo celular](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Se a sua família já tiver feito check-in no serviço que você selecionou, aparece um link **Mostrar código de check-in** ao lado do título **Quem está aqui**. Toque nele para exibir novamente o QR code e o código de segurança, por exemplo se você fechou a página antes de chegar a um posto de check-in.
 

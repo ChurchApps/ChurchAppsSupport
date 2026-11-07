@@ -1,5 +1,6 @@
 ---
 title: "A página Eu"
+description: "Veja o que a página Me do portal B1App reúne em uma tela: próximos serviços, eventos e inscrições, família, grupos, doações e caixa de entrada."
 ---
 
 # A página Eu
@@ -31,7 +32,7 @@ Se você estiver desconectado, verá "Entre para ver sua semana" e um botão **E
 A seção **Próximos** lista seus próximos três itens em ordem de data, cada um com um selo de tipo. Se houver mais, toque em **Todos os próximos** para ver a lista completa e em **Voltar para Eu** para retornar.
 
 - **Voluntariado** -- Suas funções de voluntário em planos de culto futuros, com a data e o horário de início do culto em que você vai servir (o horário em que sua equipe é necessária quando o plano tem vários horários, ou apenas a data se o plano não tiver horários). Toque em um item para abrir o plano.
-- **Inscrição** -- Eventos nos quais você se [inscreveu](../events/registering). Toque para acessar suas [inscrições](../events/my-registrations).
+- **Inscrição** -- Eventos nos quais você se [inscreveu](../events/registering.md). Toque para acessar suas [inscrições](../events/my-registrations.md).
 - **Evento** -- Eventos futuros dos grupos aos quais você pertence. Toque em um item para abrir os eventos do grupo.
 
 Se um evento ou inscrição tiver uma foto, uma pequena miniatura dela aparece no início da linha.
@@ -66,7 +67,7 @@ A seção **Pedidos e inscrições** mostra quantas inscrições em eventos voc�
 
 Se sua igreja tiver salas ou recursos reserváveis, mais dois links aparecem:
 
-- **Solicitar um evento** -- Peça para reservar um evento com as salas e equipamentos de que você precisa. Veja [Solicitando eventos e salas](../events/requesting-events).
+- **Solicitar um evento** -- Peça para reservar um evento com as salas e equipamentos de que você precisa. Veja [Solicitando eventos e salas](../events/requesting-events.md).
 - **Meus pedidos** -- Acompanhe o status dos seus pedidos e cancele os pendentes.
 
 Se sua igreja não tiver configurado salas ou recursos, esses links ficam ocultos.
@@ -77,8 +78,8 @@ A seção **Caixa de entrada** mostra suas duas notificações mais recentes, pa
 
 ## Artigos relacionados
 
-- [Navegando pelo B1App](./navigating) -- O layout do portal de membros
-- [Solicitando eventos e salas](../events/requesting-events) -- Envie e acompanhe pedidos de salas e recursos
-- [Minhas inscrições](../events/my-registrations) -- Gerencie suas inscrições em eventos
-- [Inscrição de voluntários](../serving/volunteer-signup) -- Como funcionam as funções de voluntariado
-- [Check-in próprio](../checkin/self-checkin) -- Como sua presença é registrada
+- [Navegando pelo B1App](./navigating.md) -- O layout do portal de membros
+- [Solicitando eventos e salas](../events/requesting-events.md) -- Envie e acompanhe pedidos de salas e recursos
+- [Minhas inscrições](../events/my-registrations.md) -- Gerencie suas inscrições em eventos
+- [Inscrição de voluntários](../serving/volunteer-signup.md) -- Como funcionam as funções de voluntariado
+- [Check-in próprio](../checkin/self-checkin.md) -- Como sua presença é registrada

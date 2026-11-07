@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Post B1 Admin events such as new people, donations, and form submissions to a Slack or Discord channel with an incoming webhook, no Zapier needed."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ If something failed (red `failed` or `exhausted` badge), the dialog shows the HT
 
 - **No message appears + delivery status `400`** — usually the Connector Type is set to **Standard** but the URL is a Slack/Discord one. Slack/Discord reject the raw envelope. Switch the dropdown to **Slack** or **Discord** and resend the test.
 - **Webhook auto-disabled** — after 3 consecutive failed deliveries B1 turns the webhook off. Fix the URL (or rotate it on Slack/Discord) and toggle **Active** back on.
-- **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier) or [Make](./make) to compose a fuller Slack message via their Slack actions.
+- **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier.md) or [Make](./make.md) to compose a fuller Slack message via their Slack actions.
 
 ## Switching Connector Types Later
 
@@ -122,6 +123,6 @@ You can change the Connector Type on an existing webhook — it takes effect on 
 
 ## See Also
 
-- [Zapier](./zapier) — for multi-step workflows triggered by B1 events
-- [Make](./make) — visual scenario builder
+- [Zapier](./zapier.md) — for multi-step workflows triggered by B1 events
+- [Make](./make.md) — visual scenario builder
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — the full payload + signature format if you ever point a webhook at your own server

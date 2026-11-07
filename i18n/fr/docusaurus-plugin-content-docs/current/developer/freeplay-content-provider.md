@@ -1,5 +1,6 @@
 ---
 title: "Fournisseur de contenu FreePlay"
+description: "Ce que doit fournir un fournisseur de contenu pour relier une bibliothèque de leçons à FreePlay : logo, connexion, catalogue, listes de lecture et formats."
 ---
 
 # Fournisseur de contenu FreePlay

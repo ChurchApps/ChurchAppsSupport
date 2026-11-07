@@ -1,5 +1,6 @@
 ---
 title: İnanç Bildirgesi
+description: "ChurchApps'in Tanrı, İsa, Kutsal Ruh, Kutsal Yazılar, kurtuluş ve kilise hakkındaki inançları; Lessons.church müfredatını incelemek için standart."
 ---
 
 # İnanç Bildirgesi

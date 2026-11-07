@@ -1,5 +1,7 @@
 ---
-title: "Pag-iskedyul ng mga Aralin"
+title: "Pag-iiskedyul ng Aralin sa Classroom sa Portal"
+sidebar_label: "Pag-iskedyul ng mga Aralin"
+description: "Mag-iskedyul ng aralin sa classroom calendar sa B1 Admin portal: piliin ang program, study, lesson, at age-specific venue para sa bawat petsa."
 ---
 
 # Pag-iskedyul ng mga Aralin

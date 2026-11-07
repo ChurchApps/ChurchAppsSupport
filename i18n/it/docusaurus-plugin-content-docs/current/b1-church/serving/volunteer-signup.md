@@ -1,5 +1,7 @@
 ---
-title: "Iscrizione come volontario"
+title: "Iscrizione al volontariato nel portale B1.church"
+sidebar_label: "Iscrizione come volontario"
+description: "Sfoglia le posizioni di volontariato aperte per categoria e iscriviti ai prossimi servizi o rimuovi la tua iscrizione su B1.church prima della scadenza."
 ---
 
 # Iscrizione come volontario
@@ -74,4 +76,4 @@ Controlla regolarmente la pagina dei volontari, soprattutto all'inizio della set
 ## Articoli correlati
 
 - [Panoramica del servizio](./index.md) -- Panoramica delle funzioni di servizio su B1.church
-- [Consultare i piani](../plans/viewing-plans) -- Consulta i piani a cui sei assegnato e gli ordini del servizio
+- [Consultare i piani](../plans/viewing-plans.md) -- Consulta i piani a cui sei assegnato e gli ordini del servizio

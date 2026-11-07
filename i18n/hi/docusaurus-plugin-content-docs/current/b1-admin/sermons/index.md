@@ -1,5 +1,7 @@
 ---
-title: "प्रवचन"
+title: "B1 Admin में सेरमन"
+sidebar_label: "प्रवचन"
+description: "B1 Admin में अपनी सेरमन लाइब्रेरी, प्लेलिस्ट, लाइव स्ट्रीम शेड्यूल और YouTube या Vimeo से बल्क आयात सेट करें और प्रबंधित करें।"
 ---
 
 # प्रवचन
@@ -20,27 +22,27 @@ Sermons अनुभाग चार मुख्य क्षेत्रों
 
 ### Sermons
 
-अपनी लाइब्रेरी में अलग-अलग प्रवचन की entries जोड़ें और manage करें। हर प्रवचन में title, speaker, date, description, thumbnail, और video या audio content के links शामिल हो सकते हैं। आप प्रवचनों को YouTube, Vimeo, Facebook, या custom video URLs से link कर सकते हैं। पूरी जानकारी के लिए [प्रवचन प्रबंधित करना](managing-sermons) देखें।
+अपनी लाइब्रेरी में अलग-अलग प्रवचन की entries जोड़ें और manage करें। हर प्रवचन में title, speaker, date, description, thumbnail, और video या audio content के links शामिल हो सकते हैं। आप प्रवचनों को YouTube, Vimeo, Facebook, या custom video URLs से link कर सकते हैं। पूरी जानकारी के लिए [प्रवचन प्रबंधित करना](./managing-sermons.md) देखें।
 
 ### Playlists
 
-अपने प्रवचनों को series या collections में व्यवस्थित करें। Playlists से आपकी congregation के लिए किसी प्रवचन series को क्रम से browse करना आसान हो जाता है। हर playlist का अपना name, description, और thumbnail होता है। अधिक जानकारी के लिए [Playlists](playlists) देखें।
+अपने प्रवचनों को series या collections में व्यवस्थित करें। Playlists से आपकी congregation के लिए किसी प्रवचन series को क्रम से browse करना आसान हो जाता है। हर playlist का अपना name, description, और thumbnail होता है। अधिक जानकारी के लिए [Playlists](./playlists.md) देखें।
 
 ### Live Stream Times
 
-अपने चर्च का live streaming schedule configure करें। Recurring weekly services या one-time events सेट करें, chat और video settings manage करें, और नियंत्रित करें कि आपका stream कब live जाता है। Visitors आपके streaming page पर अगली scheduled service time देखेंगे। **Sermons** के अंतर्गत एक अलग **Settings** page उन tabs (chat, prayer, और custom links) को नियंत्रित करता है जो आपके live stream के साथ दिखाई देते हैं। Setup निर्देशों के लिए [Live Streaming](live-streaming) देखें।
+अपने चर्च का live streaming schedule configure करें। Recurring weekly services या one-time events सेट करें, chat और video settings manage करें, और नियंत्रित करें कि आपका stream कब live जाता है। Visitors आपके streaming page पर अगली scheduled service time देखेंगे। **Sermons** के अंतर्गत एक अलग **Settings** page उन tabs (chat, prayer, और custom links) को नियंत्रित करता है जो आपके live stream के साथ दिखाई देते हैं। Setup निर्देशों के लिए [Live Streaming](./live-streaming.md) देखें।
 
 ### Bulk Import
 
-YouTube या Vimeo से वीडियो को bulk में import करके अपनी प्रवचन लाइब्रेरी को जल्दी से भरें। अपनी मौजूदा प्रवचन सामग्री को B1 में लाने का यह सबसे तेज़ तरीका है। शुरू करने के लिए [Bulk Import](bulk-import) देखें।
+YouTube या Vimeo से वीडियो को bulk में import करके अपनी प्रवचन लाइब्रेरी को जल्दी से भरें। अपनी मौजूदा प्रवचन सामग्री को B1 में लाने का यह सबसे तेज़ तरीका है। शुरू करने के लिए [Bulk Import](./bulk-import.md) देखें।
 
 :::tip
-यदि आप पहली बार प्रवचन सेट कर रहे हैं, तो एक [playlist](playlists) बनाकर शुरू करें, फिर या तो [प्रवचनों को अलग-अलग जोड़ें](managing-sermons) या YouTube या Vimeo से [उन्हें bulk में import करें](bulk-import)।
+यदि आप पहली बार प्रवचन सेट कर रहे हैं, तो एक [playlist](./playlists.md) बनाकर शुरू करें, फिर या तो [प्रवचनों को अलग-अलग जोड़ें](./managing-sermons.md) या YouTube या Vimeo से [उन्हें bulk में import करें](./bulk-import.md)।
 :::
 
 ## अगले कदम
 
-- [प्रवचन प्रबंधित करना](managing-sermons) -- अलग-अलग प्रवचन जोड़ें और संपादित करें
-- [Playlists](playlists) -- प्रवचनों को series में व्यवस्थित करें
-- [Live Streaming](live-streaming) -- अपना live stream schedule और settings सेट करें
-- [Bulk Import](bulk-import) -- YouTube या Vimeo से प्रवचन import करें
+- [प्रवचन प्रबंधित करना](./managing-sermons.md) -- अलग-अलग प्रवचन जोड़ें और संपादित करें
+- [Playlists](./playlists.md) -- प्रवचनों को series में व्यवस्थित करें
+- [Live Streaming](./live-streaming.md) -- अपना live stream schedule और settings सेट करें
+- [Bulk Import](./bulk-import.md) -- YouTube या Vimeo से प्रवचन import करें

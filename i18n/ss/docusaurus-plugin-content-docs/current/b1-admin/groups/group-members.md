@@ -1,5 +1,6 @@
 ---
 title: "Emalunga Eliqembu"
+description: "Engeta, susa, uchaze tiholi temalungu eliqembu ku-B1 Admin, bese utfumela imeyili, umlayeto, uphrinte noma udlulise luhlu lwemalungu ekhasini leliqembu."
 ---
 
 # Emalunga Eliqembu

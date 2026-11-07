@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheid Eindpunten"
+description: "Referentie voor de aanwezigheids-API in B1 Admin en B1 Checkin: campussen, diensten, dienstijden, sessies, bezoeken, inchecregels en exporteindpunten."
 ---
 
 # Aanwezigheid Eindpunten
@@ -265,6 +266,6 @@ Volgt aanwezigheidstreaks voor individuen -- opeenvolgende weken dat een persoon
 
 ## Gerelateerde pagina's
 
-- [Lidmaatschap Eindpunten](./membership) — Mensen, groepen, rollen en kerkbeheer
-- [Verificatie & Toestemmingen](./authentication) — Inlogflow, JWT, toestemmingsmodel
-- [Modulestructuur](../module-structure) — Codeorganisatiepatronen
+- [Lidmaatschap Eindpunten](./membership.md) — Mensen, groepen, rollen en kerkbeheer
+- [Verificatie & Toestemmingen](./authentication.md) — Inlogflow, JWT, toestemmingsmodel
+- [Modulestructuur](../module-structure.md) — Codeorganisatiepatronen

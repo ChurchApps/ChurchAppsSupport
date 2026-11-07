@@ -1,5 +1,6 @@
 ---
 title: "Mga External na Provider"
+description: "Alamin kung paano nagdadagdag ng content ang third-party providers sa Lessons.church gamit ang Open Lesson Format, at kung paano sila ikonekta sa portal."
 ---
 
 # Mga External na Provider

@@ -1,5 +1,6 @@
 ---
 title: "B1Appin käyttö"
+description: "Löydä tiesi B1.church-jäsenportaalissa puhelimella tai tietokoneella: Koti-kojelauta, alavälilehtipalkki, Lisää-sivu ja Me-sivu."
 ---
 
 # B1Appin käyttö
@@ -92,7 +93,7 @@ Yksityiskohtasivut, eli ryhmä, suunnitelma, Minä-sivu sekä Suunnitelmat- ja L
 
 ## Minä-sivu
 
-**Minä** (`/mobile/me`) on henkilökohtainen keskuksesi. Siinä näkyvät nimesi ja kuvasi painikkeineen **Muokkaa profiilia** ja **Asetukset** ([ilmoitusasetukset](./notification-preferences.md)). Sen jälkeen tulevat sinua odottavat asiat: palvelutehtävät, tapahtumailmoittautumiset ja ryhmätapahtumat. Seuraavaksi ovat taloutesi, ryhmäsi, tämän vuoden [lahjoituksesi](../giving/), lähettämäsi lomakkeet, osallistumishistoriasi, [ilmoittautumisesi](../events/my-registrations.md) sekä viimeisimmät ilmoituksesi ja viestisi. Katso lisätietoja kohdasta [Minä-sivu](./me-page).
+**Minä** (`/mobile/me`) on henkilökohtainen keskuksesi. Siinä näkyvät nimesi ja kuvasi painikkeineen **Muokkaa profiilia** ja **Asetukset** ([ilmoitusasetukset](./notification-preferences.md)). Sen jälkeen tulevat sinua odottavat asiat: palvelutehtävät, tapahtumailmoittautumiset ja ryhmätapahtumat. Seuraavaksi ovat taloutesi, ryhmäsi, tämän vuoden [lahjoituksesi](../giving/index.md), lähettämäsi lomakkeet, osallistumishistoriasi, [ilmoittautumisesi](../events/my-registrations.md) sekä viimeisimmät ilmoituksesi ja viestisi. Katso lisätietoja kohdasta [Minä-sivu](./me-page.md).
 
 Jos et ole kirjautunut sisään, Minä-sivulla näkyy sen sijaan **Kirjaudu sisään** -painike.
 

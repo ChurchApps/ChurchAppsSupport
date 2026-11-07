@@ -1,5 +1,6 @@
 ---
 title: "Kaligtasan sa Check-In"
+description: "I-configure sa B1 Admin ang kaligtasan ng bata: kapasidad ng kuwarto, ratio ng volunteer, listahan ng sumusundo, at text sa magulang sa check-in."
 ---
 
 # Kaligtasan sa Check-In
@@ -15,7 +16,7 @@ May kasamang mga kontrol sa kaligtasan ng mga bata ang B1 para sa check-in: limi
 
 - I-set up ang inyong [attendance structure](setup.md) at [mga check-in kiosk](check-in.md)
 - Ang mga silid ay [mga grupo](../groups/creating-groups.md) na naka-link sa mga oras ng serbisyo — nasa grupo ang mga setting pangkaligtasan sa ibaba
-- Ang page-a-parent at emergency broadcast ay nangangailangan ng nakakonektang texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), o Mutual Ministry)
+- Ang page-a-parent at emergency broadcast ay nangangailangan ng nakakonektang texting provider ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), o Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Parehong nagpapadala ng text message ang dalawang tampok sa pamamagitan ng nakak
 
 Awtomatikong nilalaktawan ang mga taong nag-opt out sa mga text, o walang mobile number na nakatala — iuulat ng kiosk kung ilang mensahe ang naipadala at ilan ang nalaktawan.
 
-Tingnan ang gabay sa panig ng kiosk sa [Check-Out at Kaligtasan ng Bata](../../b1-checkin/check-in/checking-out).
+Tingnan ang gabay sa panig ng kiosk sa [Check-Out at Kaligtasan ng Bata](../../b1-checkin/check-in/checking-out.md).
 
 ## Mga Kaugnay na Artikulo
 
 - [Check-In](check-in.md) — setup ng kiosk at hardware
-- [Check-Out at Kaligtasan ng Bata](../../b1-checkin/check-in/checking-out) — ang check-out sa kiosk, pag-verify ng sumusundo, at mga paraan ng paging
+- [Check-Out at Kaligtasan ng Bata](../../b1-checkin/check-in/checking-out.md) — ang check-out sa kiosk, pag-verify ng sumusundo, at mga paraan ng paging
 - [Paglikha ng mga Grupo](../groups/creating-groups.md) — kung nasaan ang mga setting ng silid
 - [Attendance Setup](setup.md) — mga serbisyo, oras ng serbisyo, at pagtatalaga ng silid
 - [Minimum na Edad para sa Private Message](../settings/mobile-app.md#member-directory--messaging-settings) — hinaharangan ang bagong private-message na usapan sa mga bata habang nananatili sila sa directory

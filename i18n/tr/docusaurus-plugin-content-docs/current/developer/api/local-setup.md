@@ -1,5 +1,6 @@
 ---
 title: "Yerel API Kurulumu"
+description: "ChurchApps API'yi yerel kurun: depoyu klonlayın, altı MySQL veritabanını yapılandırın, şemayı başlatın ve sıcak yeniden yüklemeli sunucuyu çalıştırın."
 ---
 
 # Yerel API Kurulumu
@@ -13,9 +14,9 @@ Bu kılavuz, ChurchApps API'sini yerel geliştirme için kurma sürecinde size r
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js 24+**, **Git** ve **MySQL 8.0+** yazılımlarını kurun -- bkz. [Ön Koşullar](../setup/prerequisites)
+- **Node.js 24+**, **Git** ve **MySQL 8.0+** yazılımlarını kurun -- bkz. [Ön Koşullar](../setup/prerequisites.md)
 - Veritabanı oluşturma yetkisine sahip bir MySQL kullanıcısı oluşturun
-- API yapılandırması için [Ortam Değişkenleri](../setup/environment-variables) başvuru sayfasını inceleyin
+- API yapılandırması için [Ortam Değişkenleri](../setup/environment-variables.md) başvuru sayfasını inceleyin
 
 </div>
 
@@ -82,7 +83,7 @@ API, sıcak yeniden yükleme özelliğiyle [http://localhost:8084](http://localh
 
 ## Dağıtım
 
-Staging ortamı kaldırılmıştır. API, `main` dalına yapılan her push işleminde demo ortamına dağıtılır. Üretim ortamına dağıtım ise, bekleyen veritabanı geçişlerini de uygulayan manuel **Deploy Prod** iş akışıyla yapılır. Ayrıntılar için [API Dağıtımı](../deployment/apis) sayfasına bakın.
+Staging ortamı kaldırılmıştır. API, `main` dalına yapılan her push işleminde demo ortamına dağıtılır. Üretim ortamına dağıtım ise, bekleyen veritabanı geçişlerini de uygulayan manuel **Deploy Prod** iş akışıyla yapılır. Ayrıntılar için [API Dağıtımı](../deployment/apis.md) sayfasına bakın.
 
 ## Yerel Kitaplık Geliştirme
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Bu yöntem, kitaplık değişikliklerini npm'e yayımlamadan API üzerinde test etmenizi sağlar. Ayrıntılar için [Paylaşılan Kitaplıklar](../shared-libraries/#local-development-against-a-consuming-app) sayfasına bakın. Ayrıca, link komutunun `package.json` dosyasına yazdığı portal çözümlemesini asla commit etmeyin.
+Bu yöntem, kitaplık değişikliklerini npm'e yayımlamadan API üzerinde test etmenizi sağlar. Ayrıntılar için [Paylaşılan Kitaplıklar](../shared-libraries/index.md#local-development-against-a-consuming-app) sayfasına bakın. Ayrıca, link komutunun `package.json` dosyasına yazdığı portal çözümlemesini asla commit etmeyin.
 
 ## İlgili Makaleler
 
-- **[Veritabanı](./database)** -- Modül başına veritabanı mimarisini anlama
-- **[Modül Yapısı](./module-structure)** -- Controller, repository ve model yapılarının nasıl düzenlendiği
-- **[Paylaşılan Kitaplıklar](../shared-libraries/)** -- `@churchapps/helpers` ve `@churchapps/apihelper` ile çalışma
+- **[Veritabanı](./database.md)** -- Modül başına veritabanı mimarisini anlama
+- **[Modül Yapısı](./module-structure.md)** -- Controller, repository ve model yapılarının nasıl düzenlendiği
+- **[Paylaşılan Kitaplıklar](../shared-libraries/index.md)** -- `@churchapps/helpers` ve `@churchapps/apihelper` ile çalışma

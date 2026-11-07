@@ -1,5 +1,6 @@
 ---
 title: "Bring-Your-Own Storage"
+description: "Connect your own Google Drive, Dropbox, OneDrive, or S3-compatible bucket in B1 Admin so church file uploads skip the 100MB platform limit."
 ---
 
 # Bring-Your-Own Storage (BYOS)
@@ -8,7 +9,7 @@ Churches get ~100MB of free hosted file storage (the `/content/files` surfaces: 
 
 ## The provider seam
 
-BYOS reuses the storage seam built for [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`) resolved per church by `StorageResolver` from the `content.storageProviders` table. Unlike the singleton `churchapps`/`ministrystuff` providers, BYOS providers hold per-church credentials, so `StorageResolver.forChurch` constructs an instance per request from the church's row. Implementations live beside the resolver in `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (OAuth token exchange + single-flight refresh — Dropbox rotates refresh tokens, so refreshes are de-duplicated the same way `ProviderProxyController` does).
+BYOS reuses the storage seam built for [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`) resolved per church by `StorageResolver` from the `content.storageProviders` table. Unlike the singleton `churchapps`/`ministrystuff` providers, BYOS providers hold per-church credentials, so `StorageResolver.forChurch` constructs an instance per request from the church's row. Implementations live beside the resolver in `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (OAuth token exchange + single-flight refresh — Dropbox rotates refresh tokens, so refreshes are de-duplicated the same way `ProviderProxyController` does).
 
 `storageProviders` carries the credentials: `accessToken`/`refreshToken`/`tokenExpiresAt` (encrypted, OAuth trio) or `apiKey`/`apiSecret` + `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3). Tokens never reach the client — `GET /content/storage/providers` masks secrets and returns a `connected` boolean.
 

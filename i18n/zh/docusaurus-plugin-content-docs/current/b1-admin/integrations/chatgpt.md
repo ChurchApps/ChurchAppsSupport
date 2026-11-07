@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "使用 API 密钥将 ChatGPT 连接到教会的 B1 数据，让您可以在 B1 Admin 中以日常语言询问有关人员、奉献和考勤的问题。"
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ title: "ChatGPT"
 </div>
 
 :::tip 推荐：先试用 Claude——它是免费的
-[Claude](./claude) 可以在其**免费套餐**中连接到 B1，设置只需不到 3 分钟——只需将 B1 添加为连接器，并使用您的 B1 账户登录即可。无需密钥。这是您的教会在为任何服务付费之前，尝试将 AI 与 B1 结合使用的最简单方式。
+[Claude](./claude.md) 可以在其**免费套餐**中连接到 B1，设置只需不到 3 分钟——只需将 B1 添加为连接器，并使用您的 B1 账户登录即可。无需密钥。这是您的教会在为任何服务付费之前，尝试将 AI 与 B1 结合使用的最简单方式。
 :::
 
 ## 设置步骤
@@ -254,5 +255,5 @@ B1 连接是免费的——它是 ChurchApps 的一部分。ChatGPT 需要付费
 
 - [API Keys（API 密钥）](/docs/developer/api/api-keys)——完整的权限范围参考
 - [MCP 服务器（开发者参考）](/docs/developer/api/mcp)——协议细节和工具架构
-- [Claude](./claude)——同样的思路，适用于 Anthropic 的模型
+- [Claude](./claude.md)——同样的思路，适用于 Anthropic 的模型
 - [REST API 参考](/docs/developer/api/endpoints)——自定义 GPT 操作可以调用的每个接口

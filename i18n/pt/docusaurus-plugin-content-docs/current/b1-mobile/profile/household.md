@@ -1,5 +1,6 @@
 ---
 title: "Domicílio"
+description: "Veja quem está na sua família e como os membros se relacionam na aba Perfil do B1 Mobile, da qual dependem o check-in e outros recursos."
 ---
 
 # Domicílio
@@ -13,7 +14,7 @@ A aba **Domicílio** na sua tela de Perfil mostra os membros da sua família. É
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 
 </div>
 
@@ -33,7 +34,7 @@ As informações do seu domicílio são usadas por vários recursos do B1 Mobile
 
 - **Check-in** -- Ao [fazer check-in](../checkin/self-checkin.md) em um culto ou evento, você pode fazer check-in de todo o seu domicílio de uma só vez, em vez de fazer check-in de cada pessoa individualmente.
 - **Registros da igreja** -- Sua igreja usa os dados do domicílio para manter os registros familiares organizados e para se comunicar com sua família como um todo.
-- **Diretório** -- Outros membros podem ver as informações do seu domicílio no [diretório da igreja](../community/member-directory.md), dependendo das suas [configurações de privacidade](./privacy-settings).
+- **Diretório** -- Outros membros podem ver as informações do seu domicílio no [diretório da igreja](../community/member-directory.md), dependendo das suas [configurações de privacidade](./privacy-settings.md).
 
 ## Como Visualizar Seu Domicílio
 
@@ -47,10 +48,10 @@ A participação no domicílio normalmente é gerenciada pelo administrador da s
 
 ## Mantendo as Informações Atualizadas
 
-Se os dados de algum membro da família precisarem de atualização, ele pode [editar o próprio perfil](./editing-profile), ou você pode entrar em contato com o administrador da igreja para fazer as alterações. Manter as informações do domicílio precisas garante que recursos como o [check-in](../checkin/) funcionem bem para toda a sua família.
+Se os dados de algum membro da família precisarem de atualização, ele pode [editar o próprio perfil](./editing-profile.md), ou você pode entrar em contato com o administrador da igreja para fazer as alterações. Manter as informações do domicílio precisas garante que recursos como o [check-in](../checkin/index.md) funcionem bem para toda a sua família.
 
 ## Artigos Relacionados
 
 - [Check-in Próprio](../checkin/self-checkin.md) -- Faça check-in dos membros do seu domicílio para os cultos
-- [Editando Seu Perfil](./editing-profile) -- Atualize suas informações pessoais
-- [Configurações de Privacidade](./privacy-settings) -- Controle o que outras pessoas podem ver sobre o seu domicílio
+- [Editando Seu Perfil](./editing-profile.md) -- Atualize suas informações pessoais
+- [Configurações de Privacidade](./privacy-settings.md) -- Controle o que outras pessoas podem ver sobre o seu domicílio

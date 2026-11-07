@@ -1,5 +1,6 @@
 ---
 title: "Részvételi jelentések"
+description: "A B1 Admin három részvételi jelentése (Attendance Trend, Group Attendance, Daily Group Attendance), mindegyik tartalma, futtatási és exportálási lépésekkel."
 ---
 
 # Részvételi jelentések

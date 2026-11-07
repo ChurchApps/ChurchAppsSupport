@@ -1,5 +1,6 @@
 ---
 title: "Curated Calendar"
+description: "Set up a church-wide curated calendar in B1 Admin that pulls events from multiple groups, then share it on your website, via ICS subscription, or as a download."
 ---
 
 # Curated Calendar
@@ -15,7 +16,7 @@ A curated calendar aggregates events from multiple groups into one unified calen
 
 - Set up the [groups](../groups/creating-groups.md) whose events you want to include
 - Ensure group leaders have added events to their respective groups
-- Familiarize yourself with the basics of [Creating Calendars](creating-calendars)
+- Familiarize yourself with the basics of [Creating Calendars](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Only **public** events appear on the curated calendar on your website and in its
 
 ## Next Steps
 
-- [Creating Calendars](creating-calendars) -- Learn the basics of calendar creation
-- [Calendars Overview](./) -- Return to the calendars overview
+- [Creating Calendars](./creating-calendars.md) -- Learn the basics of calendar creation
+- [Calendars Overview](./index.md) -- Return to the calendars overview

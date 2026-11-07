@@ -1,12 +1,13 @@
 ---
 title: "Kubhalisela Imicimbi"
+description: "Indlela tubhalisa temicimbi ngayo ku-B1 Admin ne-B1App: tinhlobo tebahambeli, tengeziwo letikhokhwako, tikhodi tesaka, tikhokhelo, nalabalindzile."
 ---
 
 # Kubhalisela Imicimbi
 
 <div class="article-intro">
 
-Kubhalisela imicimbi lokwakhelwe ngekwemvelo kuhlala emodyulini yekucuketfwa futsi, kusukela ekufikeni kwe-kubhalisela lokukhokhelwako, kuphetse imodeli legcwele yekuhweba: tinhlobo tebahambeli letinentengo, kukhetsa kwetintfo letengetiwe letinentengo, emakhodi ekunciphisa intengo, kukhokha ngetihlangu tekunikela tesekhona telibandla, kanye neluhlu lwekulinda lolucondziswa sistatus. Indlela yemali ngekucabanga isebentisa kabusha loyo mshini wekunikela, njengobe umlawuli wekubhalisela ukhokha nge-abstraction lefanako ye-`GatewayService` / `IGatewayProvider` lechaziwe ku-[Kunikela](./giving), ngako akukho lwati lwemininingwane yekhadi nome i-gateway SDK loluhlala emodyulini wekucuketfwa. Lelikhasi limephu imodeli yemininingwane, imitsetfo yentengo nesikhala, kanye netindlela tekubhalisa, kukhokha, nekulinda.
+Kubhalisela imicimbi lokwakhelwe ngekwemvelo kuhlala emodyulini yekucuketfwa futsi, kusukela ekufikeni kwe-kubhalisela lokukhokhelwako, kuphetse imodeli legcwele yekuhweba: tinhlobo tebahambeli letinentengo, kukhetsa kwetintfo letengetiwe letinentengo, emakhodi ekunciphisa intengo, kukhokha ngetihlangu tekunikela tesekhona telibandla, kanye neluhlu lwekulinda lolucondziswa sistatus. Indlela yemali ngekucabanga isebentisa kabusha loyo mshini wekunikela, njengobe umlawuli wekubhalisela ukhokha nge-abstraction lefanako ye-`GatewayService` / `IGatewayProvider` lechaziwe ku-[Kunikela](./giving.md), ngako akukho lwati lwemininingwane yekhadi nome i-gateway SDK loluhlala emodyulini wekucuketfwa. Lelikhasi limephu imodeli yemininingwane, imitsetfo yentengo nesikhala, kanye netindlela tekubhalisa, kukhokha, nekulinda.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Kufakwa kwetokheni kwenteka ku-browser njengalokwenteka ekunikeleni (bona [Kunikela](./giving)) — ilikhasi lekubhalisela lisebentisa kabusha luhlu lwabahlinzeki bekukhokha lwe-apphelper, ngako emalunga lasengenile angakhokha ngemakhadi lasagciniwe kantsi tihambi tifaka khadi lelisha. Umlawuli ufanana netindlela tekwenta te-`DonateController` (ema-id ekukhokha e-`pm-{id}` e-Kingdom Funding, imiphendvulo ye-Stripe SCA `requires_action` letibuyiselwa ku-client ngephandle kwekugcina kukhokha). Kukhokha lokuphumelele kubhala umugca we-`registrationPayments`, kunyusa `amountPaid`, futsi kuciniseka kubhalisa. **Kubuyisela imali akukagcinwa** — kubhalisa lokukhanselwe lokukhokhelwe kugcina imigca yayo yekukhokha futsi nome ngukuphi kubuyisela imali kuphatfwa ngephandle (out-of-band) ku-dashboard yeliso wekunikela.
+Kufakwa kwetokheni kwenteka ku-browser njengalokwenteka ekunikeleni (bona [Kunikela](./giving.md)) — ilikhasi lekubhalisela lisebentisa kabusha luhlu lwabahlinzeki bekukhokha lwe-apphelper, ngako emalunga lasengenile angakhokha ngemakhadi lasagciniwe kantsi tihambi tifaka khadi lelisha. Umlawuli ufanana netindlela tekwenta te-`DonateController` (ema-id ekukhokha e-`pm-{id}` e-Kingdom Funding, imiphendvulo ye-Stripe SCA `requires_action` letibuyiselwa ku-client ngephandle kwekugcina kukhokha). Kukhokha lokuphumelele kubhala umugca we-`registrationPayments`, kunyusa `amountPaid`, futsi kuciniseka kubhalisa. **Kubuyisela imali akukagcinwa** — kubhalisa lokukhanselwe lokukhokhelwe kugcina imigca yayo yekukhokha futsi nome ngukuphi kubuyisela imali kuphatfwa ngephandle (out-of-band) ku-dashboard yeliso wekunikela.
 
 Tindzawo tombili tekungena tihamba ngendlela lefanako yekhodi: `register` (khokha nasengabhalisela) kanye ne-`pay` (kukhokha lisele / kuphelelisa kulinda).
 
@@ -140,7 +141,7 @@ Kubuka lokwelula-modyuli (kucaciswa nome kwakhwa kwesihambi, kulayisha libandla 
 
 ## Emakhasi Lahlobene
 
-- [Kunikela](./giving) — abstraction yeliso, luhlu lwabahlinzeki, kanye nemodeli yetokheni lokusetjentiswa kabusha kulesikhono
-- [Ema-Endpoint Ekucuketfwa](../api/endpoints/content) — bubanti be-REST bemodyuli wekucuketfwa
-- [Ema-Webhook](../api/webhooks) — umcimbi we-`registration.created`
-- [Sakhiwo Semodyuli](../api/module-structure) — kutsi umodyuli wekucuketfwa uhlelwe njani ku-server-side
+- [Kunikela](./giving.md) — abstraction yeliso, luhlu lwabahlinzeki, kanye nemodeli yetokheni lokusetjentiswa kabusha kulesikhono
+- [Ema-Endpoint Ekucuketfwa](../api/endpoints/content.md) — bubanti be-REST bemodyuli wekucuketfwa
+- [Ema-Webhook](../api/webhooks.md) — umcimbi we-`registration.created`
+- [Sakhiwo Semodyuli](../api/module-structure.md) — kutsi umodyuli wekucuketfwa uhlelwe njani ku-server-side

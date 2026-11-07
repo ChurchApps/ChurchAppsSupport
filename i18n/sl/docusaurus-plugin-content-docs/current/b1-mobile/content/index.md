@@ -1,5 +1,7 @@
 ---
-title: "Sadržaj"
+title: "Vsebinske funkcije v aplikaciji B1 Mobile"
+sidebar_label: "Sadržaj"
+description: "Poiščite pridige, prenose v živo, branje Svetega pisma in verz dneva v aplikaciji B1 Mobile ter preverite, katere vsebinske funkcije ima cerkev vklopljene."
 ---
 
 # Sadržaj
@@ -30,20 +32,20 @@ Pregledajte lijepo oblikovanu sliku biblijskog stiha koja se mijenja svakog dana
 
 ### Lekcije (zastarjelo)
 
-Ugrađeni zaslon Lekcija zamijenjen je za **[FreePlay](/docs/freeplay/)** za reprodukciju u učionici te za posjet stranici [Lessons.church](https://lessons.church) radi pregledavanja. Pojedinosti potražite na stranici [Referenca o lekcijama](./lessons).
+Ugrađeni zaslon Lekcija zamijenjen je za **[FreePlay](/docs/freeplay/)** za reprodukciju u učionici te za posjet stranici [Lessons.church](https://lessons.church) radi pregledavanja. Pojedinosti potražite na stranici [Referenca o lekcijama](./lessons.md).
 
 ## Pronalaženje sadržaja
 
 Značajke sadržaja dostupne su putem izbornika s bočne ploče u aplikaciji. Vaš crkveni administrator odlučuje koje su značajke sadržaja omogućene, pa možda nećete vidjeti sve gore navedene opcije. Ako određena značajka nedostaje, vaša crkva je možda još nije konfigurirala.
 
 :::info
-Značajke sadržaja konfigurira vaš crkveni administrator putem [B1 Admin](../../b1-admin/). Ako ne vidite značajku koju očekujete, obratite se uredu vaše crkve.
+Značajke sadržaja konfigurira vaš crkveni administrator putem [B1 Admin](../../b1-admin/index.md). Ako ne vidite značajku koju očekujete, obratite se uredu vaše crkve.
 :::
 
 ## Sljedeći koraci
 
-- [Propovijedi](./sermons) -- Pregledajte i gledajte snimljene propovijedi
-- [Prijenos uživo](./live-streaming) -- Gledajte prijenose uživo
-- [Biblija](./bible) -- Čitajte Sveto pismo u ugrađenom čitaču
-- [Stih dana](./verse-of-the-day) -- Pogledajte dnevni stih
+- [Propovijedi](./sermons.md) -- Pregledajte i gledajte snimljene propovijedi
+- [Prijenos uživo](./live-streaming.md) -- Gledajte prijenose uživo
+- [Biblija](./bible.md) -- Čitajte Sveto pismo u ugrađenom čitaču
+- [Stih dana](./verse-of-the-day.md) -- Pogledajte dnevni stih
 - [FreePlay](/docs/freeplay/) -- Reproducirajte lekcije na televizorima u učionici (zamjenjuje zastarjeli zaslon Lekcija u aplikaciji)

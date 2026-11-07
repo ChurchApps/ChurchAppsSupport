@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Deprecato)"
+description: "Spiega che l'app nativa B1 Mobile è obsoleta: membri e amministratori dovrebbero usare la PWA di B1.church. Le pagine legacy restano come riferimento."
 ---
 
 # B1 Mobile (Deprecato)
@@ -40,16 +41,16 @@ B1 Mobile ha supportato le notifiche push in modo da non perdere un importante a
 
 ## Ulteriori informazioni
 
-- [Getting Started](./getting-started/) -- Installa l'app, crea un account e seleziona la tua chiesa.
-- [Dashboard](./dashboard/) -- Comprendi la tua home screen personalizzata.
-- [Groups](./groups/) -- Rimani connesso con i tuoi gruppi di chiesa.
-- [Giving](./giving/) -- Fai donazioni dal tuo telefono.
-- [Events](./events/) -- Sfoglia e registrati agli eventi della chiesa imminenti.
-- [Check-In](./checkin/) -- Fatti controllare per i servizi e gli eventi.
-- [Serving](./serving/) -- Visualizza i tuoi piani di servizio, incarichi e opportunità di volontariato.
-- [Community](./community/) -- Sfoglia la directory dei membri e invia messaggi.
-- [Content](./content/) -- Sermoni, Bibbia, versetto del giorno e lezioni (schermata lezioni deprecata — vedi [FreePlay](/docs/freeplay/)).
-- [Profile](./profile/) -- Gestisci il tuo profilo e le impostazioni dell'account.
+- [Getting Started](./getting-started/index.md) -- Installa l'app, crea un account e seleziona la tua chiesa.
+- [Dashboard](./dashboard/index.md) -- Comprendi la tua home screen personalizzata.
+- [Groups](./groups/index.md) -- Rimani connesso con i tuoi gruppi di chiesa.
+- [Giving](./giving/index.md) -- Fai donazioni dal tuo telefono.
+- [Events](./events/index.md) -- Sfoglia e registrati agli eventi della chiesa imminenti.
+- [Check-In](./checkin/index.md) -- Fatti controllare per i servizi e gli eventi.
+- [Serving](./serving/index.md) -- Visualizza i tuoi piani di servizio, incarichi e opportunità di volontariato.
+- [Community](./community/index.md) -- Sfoglia la directory dei membri e invia messaggi.
+- [Content](./content/index.md) -- Sermoni, Bibbia, versetto del giorno e lezioni (schermata lezioni deprecata — vedi [FreePlay](/docs/freeplay/)).
+- [Profile](./profile/index.md) -- Gestisci il tuo profilo e le impostazioni dell'account.
 
 :::info
 B1 Mobile è stato sostituito dal [B1.church PWA](../b1-church/getting-started/installing-pwa.md). I nuovi distribuzioni dovrebbero usare il PWA — l'app nativa non è più aggiornata.

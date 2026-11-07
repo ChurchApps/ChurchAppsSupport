@@ -1,5 +1,6 @@
 ---
 title: "Chants"
+description: "Gérez la bibliothèque de chants dans B1 Admin : recherchez et ajoutez des chants, joignez paroles ChordPro, arrangements et audio de répétition."
 ---
 
 # Chants

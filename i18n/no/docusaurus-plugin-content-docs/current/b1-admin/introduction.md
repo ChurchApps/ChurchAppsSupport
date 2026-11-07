@@ -1,5 +1,6 @@
 ---
 title: Introduksjon til B1.church
+description: "Veiledning i innlogging til B1 Admin, orientering i dashbordet og hurtigmenyen, og oppsett av menighetsinformasjon før du utforsker andre verktøy."
 ---
 
 # Velkommen til B1.church Admin!
@@ -30,7 +31,7 @@ For videre hjelp, send en e-post til [support@churchapps.org](mailto:support@chu
 10. Nå kan du gå inn i B1.church gjennom **medlemsportalen** eller **admin-portalen**. Medlemsportalen lar deg se hvordan B1.church ser ut for medlemmene dine, se gruppene dine og administrere dine egne gaver.
 
 :::tip
-Start med [Settings](./settings/)-siden for å sette opp menighetens navn, profilering og teamtillatelser. Dette sikrer at alt annet du setter opp vises riktig.
+Start med [Settings](./settings/index.md)-siden for å sette opp menighetens navn, profilering og teamtillatelser. Dette sikrer at alt annet du setter opp vises riktig.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ Søk er ofte den raskeste måten å komme til en side på — skriv en del av si
 
 Etter at du har sett denne introduksjonen, bør du utforske disse sentrale funksjonene:
 
-- [Legge til personer](./people/adding-people) -- Lær hvordan du legger medlemmer inn i databasen din
-- [Grupper](./groups/) -- Sett opp og administrer menighetens grupper
-- [Tjenesteplaner](./serving/plans) -- Organiser tjenesteområdet ditt
-- [Oppmøte](./attendance/) -- Før oversikt over oppmøte og innsjekking
-- [Nettsted](./website/) -- Bygg og tilpass menighetens nettsted
-- [Settings](./settings/) -- Konfigurer menighetens informasjon og tillatelser
+- [Legge til personer](./people/adding-people.md) -- Lær hvordan du legger medlemmer inn i databasen din
+- [Grupper](./groups/index.md) -- Sett opp og administrer menighetens grupper
+- [Tjenesteplaner](./serving/plans.md) -- Organiser tjenesteområdet ditt
+- [Oppmøte](./attendance/index.md) -- Før oversikt over oppmøte og innsjekking
+- [Nettsted](./website/index.md) -- Bygg og tilpass menighetens nettsted
+- [Settings](./settings/index.md) -- Konfigurer menighetens informasjon og tillatelser

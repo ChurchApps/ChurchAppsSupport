@@ -1,5 +1,6 @@
 ---
 title: "Presenting"
+description: "Show lessons on a projector with Presenter Mode in Lessons.church, share role-based volunteer guides, and print materials ahead of class."
 ---
 
 # Presenting

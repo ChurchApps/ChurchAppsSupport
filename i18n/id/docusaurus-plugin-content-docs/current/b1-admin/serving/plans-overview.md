@@ -1,5 +1,6 @@
 ---
 title: "Ikhtisar Rencana"
+description: "Lihat gambaran menyeluruh penugasan relawan di banyak tanggal ibadah di B1 Admin, temukan posisi kosong, dan isi atau kirim email ke tim dari satu tabel."
 ---
 
 # Ikhtisar Rencana

@@ -1,5 +1,6 @@
 ---
 title: "Výpisy o daroch"
+description: "Vytvorte ročné výpisy darov pre každého darcu v B1 Admin a stiahnite ich ako CSV alebo vytlačte na rozoslanie s daňovo odpočítateľnými sumami."
 ---
 
 # Výpisy o daroch

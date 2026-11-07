@@ -1,5 +1,6 @@
 ---
 title: "Verileri Dışa Aktarma"
+description: "B1 Admin'den kişileri CSV'ye, grup üye listelerini ya da tam B1 veritabanı yedeğini dışa aktarın ve B1 Export Zip'in içeriğini görün."
 ---
 
 # Verileri Dışa Aktarma

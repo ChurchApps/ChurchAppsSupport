@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Configurarea donațiilor online"
+description: "Configurați donațiile online în B1 Admin: creați fonduri, conectați Stripe și adăugați o pagină Donate pe site-ul B1.church pentru membri."
 ---
 
 # Configurarea donațiilor online
@@ -70,7 +71,7 @@ Folosiți mai întâi modul de test al Stripe dacă doriți să verificați făr
 Vestiți membrii, astfel încât aceștia să știe că pot dona online.
 
 1. Distribuiți adresa URL pentru donații prin site-ul web, buletinele informative prin e-mail, buletinele parohiale și rețelele sociale
-2. Membrii pot dona și prin [aplicația B1 Mobile](../../b1-mobile/giving/) — funcția de donații este integrată
+2. Membrii pot dona și prin [aplicația B1 Mobile](../../b1-mobile/giving/index.md) — funcția de donații este integrată
 
 :::info
 Membrii autentificați pot salva metode de plată, pot configura donații recurente și pot consulta istoricul donațiilor. Donațiile anonime sunt și ele posibile — nu este necesară autentificarea.

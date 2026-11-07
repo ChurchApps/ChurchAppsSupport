@@ -1,5 +1,6 @@
 ---
 title: "Mga Listahan ng Kaarawan at Anibersaryo"
+description: "Gumawa ng listahan ng lahat ng may kaarawan o anibersaryo sa isang buwan gamit ang People search filter sa B1 Admin, saka tingnan o i-export ang mga petsa."
 ---
 
 # Mga Listahan ng Kaarawan at Anibersaryo

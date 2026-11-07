@@ -1,5 +1,6 @@
 ---
 title: "Funções e permissões"
+description: "Configure funções no B1 Admin para controlar o que equipe e voluntários podem ver e alterar, de doações e presença a pessoas e grupos."
 ---
 
 # Funções e permissões

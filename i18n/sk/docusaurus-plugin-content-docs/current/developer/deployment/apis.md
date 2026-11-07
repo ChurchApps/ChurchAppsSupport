@@ -1,5 +1,6 @@
 ---
 title: "Nasadenie API"
+description: "Nasadenie API ChurchApps do AWS Lambda pomocou Serverless vrátane zostavení, pracovných postupov demo a produkcie, migrácií databázy a konfigurácie SSM."
 ---
 
 # Nasadenie API
@@ -13,7 +14,7 @@ API ChurchApps sa nasadzujú ako funkcie AWS Lambda pomocou Serverless Framework
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nastavte API lokálne -- pozri [Lokálne nastavenie API](../api/local-setup)
+- Nastavte API lokálne -- pozri [Lokálne nastavenie API](../api/local-setup.md)
 - Na svojom počítači nakonfigurujte prihlasovacie údaje AWS
 - Uistite sa, že máte prístup k cieľovému účtu AWS
 
@@ -47,7 +48,7 @@ V praxi API nasadzujú GitHub Actions: workflow **Deploy Demo** sa spúšťa pri
 
 ## Migrácie databázy
 
-**Deploy Prod** počas nasadenia aplikuje čakajúce migrácie databázy. Produkčné databázy prijímajú pripojenia iba zvnútra VPC, preto workflow hneď po `serverless deploy` zavolá Lambda funkciu `migrate` (`api-Prod-migrate`), ktorá spustí čakajúce migrácie každého modulu a vráti `{ ok, environment, modules }`. Ak niektorý modul zlyhá alebo je odmietnutý (napríklad databáza bez histórie migrácií), úloha zlyhá, aby schéma nikdy nezaostala za kódom. **Rollback Prod** vracia iba kód Lambda funkcií; migrácie zostávajú aplikované, preto ich píšte ako aditívne. Informácie o kontrole stavu alebo o ručnom spúšťaní migrácií nájdete v časti [Správa servera -- Migrácie databázy](../server-admin#database-migrations).
+**Deploy Prod** počas nasadenia aplikuje čakajúce migrácie databázy. Produkčné databázy prijímajú pripojenia iba zvnútra VPC, preto workflow hneď po `serverless deploy` zavolá Lambda funkciu `migrate` (`api-Prod-migrate`), ktorá spustí čakajúce migrácie každého modulu a vráti `{ ok, environment, modules }`. Ak niektorý modul zlyhá alebo je odmietnutý (napríklad databáza bez histórie migrácií), úloha zlyhá, aby schéma nikdy nezaostala za kódom. **Rollback Prod** vracia iba kód Lambda funkcií; migrácie zostávajú aplikované, preto ich píšte ako aditívne. Informácie o kontrole stavu alebo o ručnom spúšťaní migrácií nájdete v časti [Správa servera -- Migrácie databázy](../server-admin.md#database-migrations).
 
 ## Čo sa vytvára
 
@@ -75,6 +76,6 @@ Každé zlúčenie do vetvy `main` najskôr nasadí zmeny do demo prostredia. Pr
 
 ## Súvisiace články
 
-- **[Lokálne nastavenie API](../api/local-setup)** -- Nastavenie API na vývoj
-- **[Štruktúra modulov](../api/module-structure)** -- Pochopenie architektúry funkcií Lambda
-- **[Nasadenie webových aplikácií](./web-apps)** -- Nasadenie frontendových aplikácií
+- **[Lokálne nastavenie API](../api/local-setup.md)** -- Nastavenie API na vývoj
+- **[Štruktúra modulov](../api/module-structure.md)** -- Pochopenie architektúry funkcií Lambda
+- **[Nasadenie webových aplikácií](./web-apps.md)** -- Nasadenie frontendových aplikácií

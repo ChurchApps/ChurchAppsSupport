@@ -1,5 +1,6 @@
 ---
 title: "Formatul Open Lesson"
+description: "Specificația formatului pentru furnizorii terți de curriculum: arborele furnizorului, câmpurile JSON ale feed-ului de locații, acțiunile și fișierele media."
 ---
 
 # Formatul Open Lesson

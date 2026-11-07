@@ -1,5 +1,6 @@
 ---
 title: "Flux de travail"
+description: "Créez des tableaux de type Kanban dans B1 Admin pour suivre les personnes à travers les étapes de suivi, avec e-mails, SMS et déclencheurs automatiques."
 ---
 
 # Flux de travail

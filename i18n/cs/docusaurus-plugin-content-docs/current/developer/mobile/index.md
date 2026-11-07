@@ -1,5 +1,6 @@
 ---
 title: "Mobilní aplikace"
+description: "Přehled mobilních aplikací ChurchApps založených na Expo a React Native: B1 Mobile, B1 Checkin a LessonsScreen, s odkazy na návod ke sdílenému nástroji."
 ---
 
 # Mobilní aplikace
@@ -14,13 +15,13 @@ Mobilní aplikace ChurchApps jsou postaveny na **React Native** a **Expo** a nab
 
 | Aplikace | Účel | Platforma |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Hlavní aplikace pro členy církve | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Hlavní aplikace pro členy církve | Android, iOS |
 | B1 Checkin | Kioskova aplikace pro přihlašovací stanice | Android, iOS |
 | LessonsScreen | Aplikace pro Android TV pro zobrazování lekcí ve třídách | Android TV |
 
 ### B1 Mobile
 
-Hlavní aplikace pro členy církve. Členové mohou prohlížet adresáře, přistupovat k darování, zaznamenávat docházku, přijímat oznámení a komunikovat se svou církevní komunitou. Podrobnosti najdete v [průvodci nastavením B1 Mobile](./b1-mobile).
+Hlavní aplikace pro členy církve. Členové mohou prohlížet adresáře, přistupovat k darování, zaznamenávat docházku, přijímat oznámení a komunikovat se svou církevní komunitou. Podrobnosti najdete v [průvodci nastavením B1 Mobile](./b1-mobile.md).
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Kioskova aplikace určená speciálně pro přihlašovací stanice v církvích.
 Aplikace pro Android TV, která zobrazuje obsah lekcí ve třídách. Učitelé mohou odesílat snímky lekcí, videa a aktivity na obrazovku televizoru, což usnadňuje prezentaci učebních materiálů během hodin.
 
 :::info
-Všechny mobilní aplikace sdílejí stejný nástrojový řetězec založený na Expo a řídí se podobnými postupy nastavení. Průvodce [B1 Mobile](./b1-mobile) slouží jako referenční příručka pro obecný postup nastavení ve všech mobilních projektech.
+Všechny mobilní aplikace sdílejí stejný nástrojový řetězec založený na Expo a řídí se podobnými postupy nastavení. Průvodce [B1 Mobile](./b1-mobile.md) slouží jako referenční příručka pro obecný postup nastavení ve všech mobilních projektech.
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Oprettelse af grupper"
+description: "Opret en ny gruppe i B1 Admin, fra valg af kategori og navn til opsætning af tilmeldingsregler, etiketter, beskeder og fremmødeindstillinger."
 ---
 
 # Oprettelse af grupper

@@ -1,5 +1,6 @@
 ---
 title: "Navegando por Grupos"
+description: "Navegue pelos grupos públicos da sua igreja no B1.church por categoria e confira horários, locais e descrições em cada cartão para achar o ideal."
 ---
 
 # Navegando por Grupos

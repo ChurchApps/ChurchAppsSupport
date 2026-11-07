@@ -1,5 +1,6 @@
 ---
 title: "Огляд порталу"
+description: "Огляд порталу Lessons.church: класи, заплановані уроки, посилання на стрічки, розділи External Providers та Admin."
 ---
 
 # Огляд порталу

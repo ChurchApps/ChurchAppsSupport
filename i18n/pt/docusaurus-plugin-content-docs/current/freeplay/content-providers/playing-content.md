@@ -1,5 +1,6 @@
 ---
 title: "Reproduzindo Conteúdo"
+description: "Controle o FreePlay com o controle remoto: pause, pule slides e vídeos, vá a qualquer mensagem e saia do player pelo provedor, plano ou conteúdo baixado."
 ---
 
 # Reproduzindo Conteúdo
@@ -13,13 +14,13 @@ O player do FreePlay ocupa toda a tela e foi feito para controles remotos de TV.
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Escolha algo para reproduzir. Veja [Navegando e Baixando Conteúdo](./browsing-content), [Modo de Plano](../plan-mode/) ou [Anúncios](./announcements)
+- Escolha algo para reproduzir. Veja [Navegando e Baixando Conteúdo](./browsing-content.md), [Modo de Plano](../plan-mode/index.md) ou [Anúncios](./announcements.md)
 - Pressione **Iniciar** para abrir o player
 
 </div>
 
 :::info
-Telas pareadas a um calendário usam um player agendado separado, com controles um pouco diferentes. Veja [Reprodução Agendada na TV](../scheduled-mode/scheduled-playback).
+Telas pareadas a um calendário usam um player agendado separado, com controles um pouco diferentes. Veja [Reprodução Agendada na TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Controles do Player
@@ -57,7 +58,7 @@ Pressione **Para cima** durante a reprodução para abrir **Selecionar uma Mensa
 Pressione **Para baixo** ou **Voltar** no controle remoto para sair do player. Onde você vai parar depende do que estava sendo reproduzido:
 
 - **Conteúdo de provedor** - Volta ao navegador de conteúdo
-- **Um plano** - Volta à tela de download do plano. Veja [Modo de Plano](../plan-mode/)
+- **Um plano** - Volta à tela de download do plano. Veja [Modo de Plano](../plan-mode/index.md)
 - **Um download** - Volta à tela de **Downloads**
 
 :::info
@@ -66,5 +67,5 @@ A tela permanece ativa enquanto o player estiver aberto, para que a TV não entr
 
 ## Artigos Relacionados
 
-- **[Navegando e Baixando Conteúdo](./browsing-content)** - Encontre conteúdo e baixe-o para reprodução offline
-- **[Reprodução Agendada na TV](../scheduled-mode/scheduled-playback)** - Controles remotos para telas que seguem um calendário
+- **[Navegando e Baixando Conteúdo](./browsing-content.md)** - Encontre conteúdo e baixe-o para reprodução offline
+- **[Reprodução Agendada na TV](../scheduled-mode/scheduled-playback.md)** - Controles remotos para telas que seguem um calendário

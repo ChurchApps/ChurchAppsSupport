@@ -1,5 +1,6 @@
 ---
 title: "Űrlapok létrehozása"
+description: "Egyedi űrlapok készítése a B1 Admin-ban eseményregisztrációhoz, felmérésekhez és látogatói kártyákhoz, majd megosztás linken, QR-kódon vagy nyomtatásban."
 ---
 
 # Űrlapok létrehozása

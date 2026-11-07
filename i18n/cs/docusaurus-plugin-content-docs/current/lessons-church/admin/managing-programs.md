@@ -1,5 +1,6 @@
 ---
 title: "Správa programů"
+description: "Vytvářejte a upravujte kurikulární programy v Lessons.church, nastavte URL slugy a náhledy, seskupujte studia do kategorií a připojte zdroje na úrovni programu."
 ---
 
 # Správa programů

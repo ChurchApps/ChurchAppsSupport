@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-in in chiesa con l'app B1 Mobile"
+sidebar_label: "Check-In"
+description: "Registra te stesso e la tua famiglia al check-in dei culti dal telefono con l'app B1 Mobile, scegliendo servizi e gruppi prima di arrivare."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Il processo di check-in è un flusso rapido a più passaggi che ti guida nella s
 
 ## Per Iniziare
 
-Per accedere al check-in, apri la sezione **Check-In** in B1 Mobile. Devi essere connesso per usare questa funzionalità. Se non hai effettuato l'accesso, ti verrà chiesto di [accedere](../getting-started/logging-in) prima.
+Per accedere al check-in, apri la sezione **Check-In** in B1 Mobile. Devi essere connesso per usare questa funzionalità. Se non hai effettuato l'accesso, ti verrà chiesto di [accedere](../getting-started/logging-in.md) prima.
 
 :::info
 La funzionalità di check-in richiede che la tua chiesa abbia configurato servizi e gruppi di presenza nelle impostazioni di amministrazione. Se non appaiono servizi quando apri la schermata di check-in, la tua chiesa potrebbe non aver ancora configurato questa funzionalità. Contatta l'amministratore della tua chiesa per assistenza.
@@ -30,4 +32,4 @@ La funzionalità di check-in richiede che la tua chiesa abbia configurato serviz
 
 ## Prossimi Passi
 
-- [Check-In Autonomo](./self-checkin) -- Guida passo passo per registrare la presenza dal tuo telefono
+- [Check-In Autonomo](./self-checkin.md) -- Guida passo passo per registrare la presenza dal tuo telefono

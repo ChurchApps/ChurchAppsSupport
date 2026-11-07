@@ -1,5 +1,6 @@
 ---
 title: "Registrere gaver"
+description: "Før kirkegaver i B1 Admin: opprett en bunt og registrer gaver enkeltvis, importer en CSV-fil, eller før én gave fra en giverprofil."
 ---
 
 # Registrere gaver

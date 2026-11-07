@@ -1,5 +1,7 @@
 ---
-title: "Donaciones"
+title: "Donaciones en línea en B1.church"
+sidebar_label: "Donaciones"
+description: "Dona en línea a tu iglesia desde B1.church sin necesidad de una cuenta, o inicia sesión para administrar donaciones recurrentes, métodos de pago y certificados de donación."
 ---
 
 # Donaciones

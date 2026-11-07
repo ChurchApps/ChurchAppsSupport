@@ -1,5 +1,6 @@
 ---
 title: "Kalenterit"
+description: "Määritä kalenterit B1 Adminissa, hallitse niillä näkyviä tapahtumia ja julkaise ne B1.church-sivustolle, jotta seurakuntalaiset näkevät tulevat tapahtumat."
 ---
 
 # Kalenterit
@@ -18,20 +19,20 @@ Kalenteriosiossa B1 Admin -sovelluksessa voit luoda seurakuntasi kalentereita, j
 
 ## Mitä voit tehdä
 
-- **Lisää uusi kalenteri** -- Napsauta sivun yläosassa **Lisää kalenteri** -painiketta luodaksesi kalenterin tiettyyn palvelutehtävään, tapahtumatyyppiin tai tarkoitukseen. Katso vaiheittaiset ohjeet kohdasta [Kalenterien luominen](creating-calendars).
+- **Lisää uusi kalenteri** -- Napsauta sivun yläosassa **Lisää kalenteri** -painiketta luodaksesi kalenterin tiettyyn palvelutehtävään, tapahtumatyyppiin tai tarkoitukseen. Katso vaiheittaiset ohjeet kohdasta [Kalenterien luominen](./creating-calendars.md).
 - **Muokkaa kalenteria** -- Napsauta mitä tahansa kalenteria **Hallinnoi tapahtumia** -painikkeella avataksesi sen ja hallitaksesi siihen sisältyviä ryhmiä.
 - **Julkaise kalenterit** -- Kalentereita voidaan näyttää B1.church-sivustollasi, jotta kävijät näkevät seurakunnassasi tulevat tapahtumat.
-- **Luo koottuja kalentereita** -- Yhdistä tapahtumat useista ryhmistä yhteen kalenterinäkymään, jotta näet kaiken seurakunnassasi tapahtuvan kokonaisuutena. Lisätietoja kohdassa [Koottu kalenteri](curated-calendar).
-- **Hallinnoi huoneita ja resursseja** -- Seuraa varattavia tiloja ja laitteita sekä käsittele hyväksyntäpyynnöt. Lisätietoja kohdassa [Huoneet ja resurssit](rooms-resources).
-- **Tarkastele saatavuutta** -- Näe kaikki huone- ja resurssivaraukset yhdessä kalenterissa ja varaa tiloja tuleviin tapahtumiin. Lisätietoja kohdassa [Saatavuuskalenteri](availability).
+- **Luo koottuja kalentereita** -- Yhdistä tapahtumat useista ryhmistä yhteen kalenterinäkymään, jotta näet kaiken seurakunnassasi tapahtuvan kokonaisuutena. Lisätietoja kohdassa [Koottu kalenteri](./curated-calendar.md).
+- **Hallinnoi huoneita ja resursseja** -- Seuraa varattavia tiloja ja laitteita sekä käsittele hyväksyntäpyynnöt. Lisätietoja kohdassa [Huoneet ja resurssit](./rooms-resources.md).
+- **Tarkastele saatavuutta** -- Näe kaikki huone- ja resurssivaraukset yhdessä kalenterissa ja varaa tiloja tuleviin tapahtumiin. Lisätietoja kohdassa [Saatavuuskalenteri](./availability.md).
 
 :::info
-Kalenterit toimivat läheisessä yhteydessä [Ryhmien](../groups/creating-groups.md) kanssa. Kun ryhmillä on ajoitettuja tapahtumia, ne voidaan tuoda kalentereihisi. Katso sivu [Kalenterien luominen](creating-calendars), jolta opit yhdistämään ryhmät kalentereihin.
+Kalenterit toimivat läheisessä yhteydessä [Ryhmien](../groups/creating-groups.md) kanssa. Kun ryhmillä on ajoitettuja tapahtumia, ne voidaan tuoda kalentereihisi. Katso sivu [Kalenterien luominen](./creating-calendars.md), jolta opit yhdistämään ryhmät kalentereihin.
 :::
 
 ## Seuraavat vaiheet
 
-- [Kalenterien luominen](creating-calendars) -- Luo uusi kalenteri ja yhdistä ryhmät
-- [Koottu kalenteri](curated-calendar) -- Yhdistä useiden ryhmien tapahtumat yhdeksi näkymäksi
-- [Huoneet ja resurssit](rooms-resources) -- Hallinnoi varattavia tiloja ja laitteita
-- [Saatavuuskalenteri](availability) -- Tarkastele ja hallinnoi huone- ja resurssivarauksia
+- [Kalenterien luominen](./creating-calendars.md) -- Luo uusi kalenteri ja yhdistä ryhmät
+- [Koottu kalenteri](./curated-calendar.md) -- Yhdistä useiden ryhmien tapahtumat yhdeksi näkymäksi
+- [Huoneet ja resurssit](./rooms-resources.md) -- Hallinnoi varattavia tiloja ja laitteita
+- [Saatavuuskalenteri](./availability.md) -- Tarkastele ja hallinnoi huone- ja resurssivarauksia

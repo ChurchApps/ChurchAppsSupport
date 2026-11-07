@@ -1,5 +1,6 @@
 ---
 title: "Gjesteregistrering"
+description: "Registrer deg selv og familien som førstegangsgjester med QR-skjemaet i B1 Checkin, slik at frivillige kan sjekke deg inn når du kommer."
 ---
 
 # Gjesteregistrering
@@ -22,7 +23,7 @@ Hvis du besøker en kirke for første gang, kan du registrere deg selv og famili
 
 Gjesteregistrering er laget for besøkende som ikke har en konto ennå. På kirkens innsjekkingskiosk trykker du **Registrer som gjest** for å vise en QR-kode som lenker til registreringssiden. Du kan også få lenken fra en frivillig eller en vertinne, eller finne den på et flygeblad eller kirkens nettsted.
 
-Har du ikke telefonen for hånden? I samme QR-kodevindu på kiosken trykker du **Registrer her** for å fylle ut skjemaet på selve kiosken. Se [Registrere deg som gjest](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) for hvordan dette fungerer på kiosken.
+Har du ikke telefonen for hånden? I samme QR-kodevindu på kiosken trykker du **Registrer her** for å fylle ut skjemaet på selve kiosken. Se [Registrere deg som gjest](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) for hvordan dette fungerer på kiosken.
 
 Siden åpnes med tittelen **Gjesteregistrering**. Hvis kirken har lagt til et overskriftsbilde, vises det øverst på siden; ellers ser du et lite ikon.
 
@@ -51,7 +52,7 @@ Registreringen din oppretter poster i kirkens database:
 - **Personposter** opprettes for hvert familiemedlem med medlemsstatusen «Besøkende».
 - Eventuelle kommentarer du skrev inn lagres som et notat på hovedkontaktens post, slik at kirkens medarbeidere kan lese dem.
 - Hvis kirken har valgt en gruppe for nye gjester, legges familien din til i den. Kirken kan også få oppmøtet ditt registrert automatisk hvis du registrerer deg under en av den gruppens planlagte gudstjenestetider.
-- En frivillig eller administrator kan deretter sjekke familien din inn ved hjelp av [B1 Checkin](../../b1-checkin/check-in/looking-up-members)-kiosken.
+- En frivillig eller administrator kan deretter sjekke familien din inn ved hjelp av [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md)-kiosken.
 
 :::info
 Hvis du registrerer deg igjen med samme fornavn og samme e-post eller telefonnummer, gjenkjenner kirkens poster deg og gjenbruker den eksisterende profilen din i stedet for å legge til et duplikat. Alle andre legges til som nye. Hvis du allerede har registrert deg, kan du også bare søke etter navnet eller telefonnummeret ditt på kiosken.
@@ -63,6 +64,6 @@ Hvis skjemaet ber om e-postadressen din, hjelper det kirken å følge opp med de
 
 ## Relaterte artikler
 
-- [Selvinnsjekking](./self-checkin) -- Sjekk deg selv inn etter registrering
-- [Legge til gjester (kiosk)](../../b1-checkin/check-in/adding-guests) -- Hvordan frivillige legger til gjester på kiosken
-- [Innsjekking](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Hvordan kirkeadministratorer setter opp QR-gjesteregistrering
+- [Selvinnsjekking](./self-checkin.md) -- Sjekk deg selv inn etter registrering
+- [Legge til gjester (kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Hvordan frivillige legger til gjester på kiosken
+- [Innsjekking](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Hvordan kirkeadministratorer setter opp QR-gjesteregistrering

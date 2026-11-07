@@ -1,5 +1,6 @@
 ---
 title: "Çıkış Yapma ve Çocuk Güvenliği"
+description: "Yönetilen bir B1 Checkin istasyonunda çocukları güvenlik kodları, doğrulanmış teslim alma kişileri, ebeveyn çağırma, etiket yeniden yazdırma ve acil durum duyurularıyla çıkışa alın."
 ---
 
 # Çıkış Yapma ve Çocuk Güvenliği
@@ -14,7 +15,7 @@ title: "Çıkış Yapma ve Çocuk Güvenliği"
 <h4>Başlamadan Önce</h4>
 
 - Çıkış yapma, kiosk yönetici ayarlarında **görevli** modu seçilmiş istasyonlarda kullanılabilir
-- Çocukların, güvenlik kodunu içeren yazdırılmış bir teslim alma etiketiyle [giriş yapmış](./completing-checkin) olması gerekir
+- Çocukların, güvenlik kodunu içeren yazdırılmış bir teslim alma etiketiyle [giriş yapmış](./completing-checkin.md) olması gerekir
 - Sayfa mesajları ve acil durum yayınları için kilisenizin B1 Admin içinde bağlı bir SMS sağlayıcısına sahip olması gerekir
 
 </div>
@@ -39,7 +40,7 @@ Yazdığınız ad, o haneye **Yetkisiz** olarak işaretlenmiş bir kişiyle eşl
 Teslim alan kişi onaylandıktan sonra çıkış düğmesine dokunun. Teslim alan kişinin adı yoklama kaydına kaydedilir.
 
 :::info
-Güvenilir ve yetkisiz teslim alma kişileri, kilise görevlileri tarafından B1 Admin içinde her kişinin sayfasından yönetilir. Bkz. [Giriş Güvenliği](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Güvenilir ve yetkisiz teslim alma kişileri, kilise görevlileri tarafından B1 Admin içinde her kişinin sayfasından yönetilir. Bkz. [Giriş Güvenliği](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Ebeveyne Sayfa Mesajı Gönderme
@@ -65,6 +66,6 @@ Yayın, seçilen ayin için giriş yapmış her haneye gönderilir. Yalnızca ge
 
 ## İlgili Makaleler
 
-- [Girişi Tamamlama](./completing-checkin): Güvenlik kodlarının ve teslim alma etiketlerinin nereden geldiği
-- [Giriş Güvenliği](../../b1-admin/attendance/checkin-safety): Kapasite, oranlar, teslim alma kişileri ve SMS sağlayıcısı gereksinimini yapılandırma
-- [Yazıcı Kurulumu](../getting-started/printer-setup): Etiket yazıcısı yapılandırması
+- [Girişi Tamamlama](./completing-checkin.md): Güvenlik kodlarının ve teslim alma etiketlerinin nereden geldiği
+- [Giriş Güvenliği](../../b1-admin/attendance/checkin-safety.md): Kapasite, oranlar, teslim alma kişileri ve SMS sağlayıcısı gereksinimini yapılandırma
+- [Yazıcı Kurulumu](../getting-started/printer-setup.md): Etiket yazıcısı yapılandırması

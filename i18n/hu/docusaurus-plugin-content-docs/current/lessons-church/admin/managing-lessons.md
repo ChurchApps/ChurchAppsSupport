@@ -1,5 +1,6 @@
 ---
 title: "Leckék kezelése"
+description: "Lecke felépítése a Lessons.church adminban: helyszínek, szakaszok, szerepkör-alapú műveletek (Say, Do, Note, Play), szülői másolat és források."
 ---
 
 # Leckék kezelése

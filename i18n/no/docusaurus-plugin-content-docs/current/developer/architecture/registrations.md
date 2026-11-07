@@ -1,12 +1,13 @@
 ---
 title: "Påmeldinger til arrangementer"
+description: "Hvordan arrangementspåmeldinger fungerer i B1 Admin og B1App: deltakertyper, betalte tillegg, rabattkoder, betalinger og opprykk fra venteliste."
 ---
 
 # Påmeldinger til arrangementer
 
 <div class="article-intro">
 
-Innebygd påmelding til arrangementer ligger i content-modulen og har siden bølgen med betalte påmeldinger en fullstendig handelsmodell: prissatte deltakertyper, prissatte tilleggsvalg, rabattkoder, betalinger gjennom kirkens eksisterende giveløsning, og en ventelisteløsning styrt av status. Pengestien gjenbruker bevisst giving-stacken — påmeldingskontrolleren belaster gjennom samme `GatewayService` / `IGatewayProvider`-abstraksjon som er dokumentert i [Giving](./giving), slik at ingen kortdata eller kunnskap om gateway-SDK-er ligger i content-modulen. Denne siden kartlegger datamodellen, pris- og kapasitetsreglene, og flytene for påmelding, betaling og venteliste.
+Innebygd påmelding til arrangementer ligger i content-modulen og har siden bølgen med betalte påmeldinger en fullstendig handelsmodell: prissatte deltakertyper, prissatte tilleggsvalg, rabattkoder, betalinger gjennom kirkens eksisterende giveløsning, og en ventelisteløsning styrt av status. Pengestien gjenbruker bevisst giving-stacken — påmeldingskontrolleren belaster gjennom samme `GatewayService` / `IGatewayProvider`-abstraksjon som er dokumentert i [Giving](./giving.md), slik at ingen kortdata eller kunnskap om gateway-SDK-er ligger i content-modulen. Denne siden kartlegger datamodellen, pris- og kapasitetsreglene, og flytene for påmelding, betaling og venteliste.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisering skjer i nettleseren nøyaktig som for gaver (se [Giving](./giving)) — veiviseren gjenbruker apphelpers leverandørregister for betalinger, så innloggede medlemmer kan betale med lagrede kort, og gjester tokeniserer et nytt kort. Kontrolleren speiler `DonateController`s leverandørspesialiteter (Kingdom Funding `pm-{id}`-betalingsmetode-ID-er, Stripe SCA-svar `requires_action` returnert til klienten uten å registrere en betaling). En vellykket belastning skriver en `registrationPayments`-rad, øker `amountPaid`, og bekrefter påmeldingen. **Refusjoner er ikke implementert** — en avbestilt betalt påmelding beholder sine betalingsrader, og eventuell refusjon håndteres utenfor systemet i gatewayens dashbord.
+Tokenisering skjer i nettleseren nøyaktig som for gaver (se [Giving](./giving.md)) — veiviseren gjenbruker apphelpers leverandørregister for betalinger, så innloggede medlemmer kan betale med lagrede kort, og gjester tokeniserer et nytt kort. Kontrolleren speiler `DonateController`s leverandørspesialiteter (Kingdom Funding `pm-{id}`-betalingsmetode-ID-er, Stripe SCA-svar `requires_action` returnert til klienten uten å registrere en betaling). En vellykket belastning skriver en `registrationPayments`-rad, øker `amountPaid`, og bekrefter påmeldingen. **Refusjoner er ikke implementert** — en avbestilt betalt påmelding beholder sine betalingsrader, og eventuell refusjon håndteres utenfor systemet i gatewayens dashbord.
 
 Begge inngangspunktene går gjennom samme kodesti: `register` (betaling ved påmelding) og `pay` (restbetaling / fullføring av venteliste).
 
@@ -147,7 +148,7 @@ Kryssmodulsøk (å finne eller opprette gjestepersonen, laste kirken for e-poste
 
 ## Relaterte sider
 
-- [Giving](./giving) — gateway-abstraksjonen, leverandørregisteret og tokeniseringsmodellen denne funksjonen gjenbruker
-- [Content-endepunkter](../api/endpoints/content) — REST-flaten til content-modulen
-- [Webhooks](../api/webhooks) — hendelsen `registration.created`
-- [Modulstruktur](../api/module-structure) — hvordan content-modulen er organisert på serversiden
+- [Giving](./giving.md) — gateway-abstraksjonen, leverandørregisteret og tokeniseringsmodellen denne funksjonen gjenbruker
+- [Content-endepunkter](../api/endpoints/content.md) — REST-flaten til content-modulen
+- [Webhooks](../api/webhooks.md) — hendelsen `registration.created`
+- [Modulstruktur](../api/module-structure.md) — hvordan content-modulen er organisert på serversiden

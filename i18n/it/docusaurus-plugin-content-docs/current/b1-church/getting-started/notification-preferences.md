@@ -1,5 +1,6 @@
 ---
 title: "Preferenze di notifica"
+description: "Imposta canali di notifica, frequenza email, ore silenziose e disattivazione SMS per ogni tipo di notifica in B1 Admin e nell'app B1, da un'unica schermata."
 ---
 
 # Preferenze di notifica
@@ -60,6 +61,6 @@ Le notifiche urgenti -- come un avviso di sicurezza o un messaggio di sicurezza 
 
 ## Correlati
 
-- [Iscrizione dei volontari](../serving/volunteer-signup) -- Promemoria per i servizi e risposte alle richieste di programma
-- [Iscriversi agli eventi](../events/registering) -- Iscriviti agli eventi che inviano promemoria
-- [Installare l'app](installing-pwa) -- Aggiungi B1 al tuo dispositivo per ricevere notifiche push
+- [Iscrizione dei volontari](../serving/volunteer-signup.md) -- Promemoria per i servizi e risposte alle richieste di programma
+- [Iscriversi agli eventi](../events/registering.md) -- Iscriviti agli eventi che inviano promemoria
+- [Installare l'app](./installing-pwa.md) -- Aggiungi B1 al tuo dispositivo per ricevere notifiche push

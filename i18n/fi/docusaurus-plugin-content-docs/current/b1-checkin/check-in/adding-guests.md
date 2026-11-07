@@ -1,5 +1,6 @@
 ---
 title: "Lisääminen vieraita"
+description: "Lisää vierailija, sukulainen tai ystävä perheeseen B1 Checkin -kioskilla, valitse ryhmät ja viimeistele sisäänkirjautuminen."
 ---
 
 # Vieraiden lisääminen
@@ -13,8 +14,8 @@ Jos joku vierailee perheesi luona ja haluaa kirjautua sisään perheesi kanssa, 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Hae perheesi](./looking-up-members) ja valitse jäsen hakutuloksista
-- Ole [kotitalouden tarkistusnäytöllä](./household-review), jossa näet perheesi jäsenet
+- [Hae perheesi](./looking-up-members.md) ja valitse jäsen hakutuloksista
+- Ole [kotitalouden tarkistusnäytöllä](./household-review.md), jossa näet perheesi jäsenet
 
 </div>
 
@@ -36,8 +37,8 @@ Jos vieraan nimi vastaa jo järjestelmässä olevaa henkilöä, joka ei ole jäs
 
 Kun vieras näkyy kotitalousluettelossasi, voit:
 
-- **Laajentaa hänen korttinsa** ja [määrittää hänet ryhmään](./group-assignment) aivan kuten minkä tahansa muun perheenjäsenen.
-- **[Kirjautua sisään](./completing-checkin)** koko kotitaloudella, vieras mukaan lukien.
+- **Laajentaa hänen korttinsa** ja [määrittää hänet ryhmään](./group-assignment.md) aivan kuten minkä tahansa muun perheenjäsenen.
+- **[Kirjautua sisään](./completing-checkin.md)** koko kotitaloudella, vieras mukaan lukien.
 
 ## Peruuttaminen
 
@@ -49,4 +50,4 @@ Vieraan lisääminen kioskilla luo henkilötietueen kirkkosi tietokantaan. Kirko
 
 ## Seuraava vaihe
 
-Kun olet lisännyt vieraat ja [määrittänyt ryhmät](./group-assignment) tarpeen mukaan, voit [suorittaa sisäänkirjautumisen](./completing-checkin).
+Kun olet lisännyt vieraat ja [määrittänyt ryhmät](./group-assignment.md) tarpeen mukaan, voit [suorittaa sisäänkirjautumisen](./completing-checkin.md).

@@ -1,5 +1,6 @@
 ---
 title: "웹 앱"
+description: "ChurchApps의 세 웹 앱(B1 Admin, B1.church, Lessons.church) 개요, 공유 React 및 MUI 스택, apphelper 패키지, 빌드 도구."
 ---
 
 # 웹 앱
@@ -41,7 +42,7 @@ ChurchApps는 각각 다른 고객과 목적을 제공하는 3개의 웹 애플�
 | `@churchapps/apphelper-website` | 웹사이트/CMS 컴포넌트 |
 
 :::tip
-이 공유 패키지를 로컬에서 개발하는 것에 대한 자세한 내용은 [AppHelper](../shared-libraries/app-helper) 문서를 참조하세요.
+이 공유 패키지를 로컬에서 개발하는 것에 대한 자세한 내용은 [AppHelper](../shared-libraries/app-helper.md) 문서를 참조하세요.
 :::
 
 ## Postinstall 스크립트

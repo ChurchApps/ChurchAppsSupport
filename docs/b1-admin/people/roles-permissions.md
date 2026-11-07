@@ -1,5 +1,6 @@
 ---
 title: "Assigning Roles"
+description: "Assign roles in B1 Admin to give staff and volunteers access to only the people, donation, attendance, and group areas they need."
 ---
 
 # Assigning Roles

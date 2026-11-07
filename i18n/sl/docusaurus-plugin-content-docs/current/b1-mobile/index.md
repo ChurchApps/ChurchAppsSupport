@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (zastarelo)"
+description: "Pojasnjuje, da je aplikacija B1 Mobile opuščena in da naj člani ter skrbniki uporabljajo PWA B1.church. Stare strani so ohranjene kot referenca."
 ---
 
 # B1 Mobile (zastarelo)
@@ -40,16 +41,16 @@ B1 Mobile je podpiral potisna obvestila, da ne bi zamudili pomembne novice vaše
 
 ## Več informacij
 
-- [Začetek](./getting-started/) -- Namestite aplikacijo, ustvarite račun in izberite svojo cerkev.
-- [Nadzorna plošča](./dashboard/) -- Spoznajte svoj osebni domači zaslon.
-- [Skupine](./groups/) -- Ostanite povezani s skupinami svoje cerkve.
-- [Darovanje](./giving/) -- Darujte s telefona.
-- [Dogodki](./events/) -- Brskajte in se prijavite na prihajajoče cerkvene dogodke.
-- [Check-In](./checkin/) -- Prijavite se na bogoslužja in dogodke.
-- [Služenje](./serving/) -- Oglejte si svoje načrte služenja, dodelitve in priložnosti za prostovoljstvo.
-- [Skupnost](./community/) -- Brskajte po imeniku članov in pošiljajte sporočila.
-- [Vsebina](./content/) -- Pridige, Biblija, vsakodnevni verz in lekcije (zaslon lekcij je zastarel — glejte [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Upravljajte svoj profil in nastavitve računa.
+- [Začetek](./getting-started/index.md) -- Namestite aplikacijo, ustvarite račun in izberite svojo cerkev.
+- [Nadzorna plošča](./dashboard/index.md) -- Spoznajte svoj osebni domači zaslon.
+- [Skupine](./groups/index.md) -- Ostanite povezani s skupinami svoje cerkve.
+- [Darovanje](./giving/index.md) -- Darujte s telefona.
+- [Dogodki](./events/index.md) -- Brskajte in se prijavite na prihajajoče cerkvene dogodke.
+- [Check-In](./checkin/index.md) -- Prijavite se na bogoslužja in dogodke.
+- [Služenje](./serving/index.md) -- Oglejte si svoje načrte služenja, dodelitve in priložnosti za prostovoljstvo.
+- [Skupnost](./community/index.md) -- Brskajte po imeniku članov in pošiljajte sporočila.
+- [Vsebina](./content/index.md) -- Pridige, Biblija, vsakodnevni verz in lekcije (zaslon lekcij je zastarel — glejte [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Upravljajte svoj profil in nastavitve računa.
 
 :::info
 B1 Mobile je bil nadomeščen z [PWA B1.church](../b1-church/getting-started/installing-pwa.md). Nove namestitve naj uporabljajo PWA, saj se lastna aplikacija ne posodablja več.

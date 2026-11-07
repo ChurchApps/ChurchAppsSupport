@@ -1,5 +1,6 @@
 ---
 title: "Connexion aux fournisseurs"
+description: "Connecter FreePlay à un fournisseur de contenu par QR code, e-mail ou accès en un clic, et gérer ou déconnecter la liaison dans Paramètres."
 ---
 
 # Connexion aux fournisseurs
@@ -13,7 +14,7 @@ Avant de pouvoir parcourir le contenu d'un fournisseur, vous devez vous y connec
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez et lancez FreePlay -- voir [Premiers pas](../getting-started/)
+- Installez et lancez FreePlay -- voir [Premiers pas](../getting-started/index.md)
 - Ayez votre télécommande de télévision à portée de main pour la navigation
 - Pour les fournisseurs qui exigent une connexion, ayez vos identifiants de compte à disposition
 
@@ -80,7 +81,7 @@ Sélectionner une carte de fournisseur affichant le badge **Connecté** ouvre so
 
 - **Parcourir la bibliothèque** -- Afficher ou masquer la bibliothèque de contenu de ce fournisseur dans la barre latérale
 - **Téléchargement automatique de la leçon du jour** -- Utiliser ce fournisseur comme source de la leçon du jour et précharger ses fichiers (affiché uniquement pour les fournisseurs proposant une leçon en cours)
-- **Utiliser pour les annonces** -- Choisir un dossier de ce fournisseur à faire défiler depuis l'élément **Annonces** de la barre latérale. Voir [Annonces](./announcements)
+- **Utiliser pour les annonces** -- Choisir un dossier de ce fournisseur à faire défiler depuis l'élément **Annonces** de la barre latérale. Voir [Annonces](./announcements.md)
 - **Rechercher les mises à jour des annonces** -- Affiché une fois qu'un dossier d'annonces est choisi ; télécharge les nouvelles diapositives et supprime celles qui ont été retirées
 - **Déconnecter** -- Supprimer la connexion
 
@@ -100,6 +101,6 @@ La déconnexion supprime l'authentification enregistrée sur votre appareil. Vou
 
 ## Articles connexes
 
-- **[Parcourir et télécharger du contenu](./browsing-content)** - Naviguer dans les dossiers et lire le contenu après la connexion
-- **[Annonces](./announcements)** - Faire défiler un dossier de diapositives d'un fournisseur connecté
+- **[Parcourir et télécharger du contenu](./browsing-content.md)** - Naviguer dans les dossiers et lire le contenu après la connexion
+- **[Annonces](./announcements.md)** - Faire défiler un dossier de diapositives d'un fournisseur connecté
 - **[Vue d'ensemble des fournisseurs de contenu](./index.md)** - Voir tous les fournisseurs disponibles

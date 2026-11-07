@@ -1,5 +1,6 @@
 ---
 title: "Parcourir le contenu"
+description: "Parcourir la bibliothèque gratuite de Lessons.church sans compte : page d'accueil, navigation par programme, recherche et fournisseurs externes."
 ---
 
 # Parcourir le contenu

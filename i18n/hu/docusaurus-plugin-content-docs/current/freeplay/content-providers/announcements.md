@@ -1,5 +1,6 @@
 ---
 title: "Hirdetések"
+description: "Diák mappájának ciklikus lejátszása a FreePlay TV-n előcsarnoki vagy órai hirdetésekhez: mappa kiválasztása, szinkron tartása, befejezés után kikapcsolás."
 ---
 
 # Hirdetések
@@ -13,7 +14,7 @@ A FreePlay képes körbeforgatni egy hirdetési diákat tartalmazó mappát a TV
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Csatlakozzon egy tartalomszolgáltatóhoz](./connecting-providers), amely tartalmazza a hirdetési diákat, például a Dropboxot vagy a OneDrive-ot
+- [Csatlakozzon egy tartalomszolgáltatóhoz](./connecting-providers.md), amely tartalmazza a hirdetési diákat, például a Dropboxot vagy a OneDrive-ot
 - Helyezze a körbeforgatni kívánt képeket vagy videókat egy mappába abban a szolgáltatóban
 
 </div>
@@ -37,7 +38,7 @@ Amint a diák letöltésre kerültek, a **Hirdetések** elem megjelenik az oldal
 - Az utolsó dia után a körbeforgatás elölről kezdődik
 - Ha a mappában csak egyetlen videó van, az a helyén ismétlődik
 
-A körbeforgatás az eszközön mentett fájlokból játszódik le, így internetkapcsolat nélkül is működik. Ugyanazokat a távvezérlő-funkciókat használhatja, mint bármely más tartalomnál -- lásd: [Tartalom lejátszása](./playing-content).
+A körbeforgatás az eszközön mentett fájlokból játszódik le, így internetkapcsolat nélkül is működik. Ugyanazokat a távvezérlő-funkciókat használhatja, mint bármely más tartalomnál -- lásd: [Tartalom lejátszása](./playing-content.md).
 
 ## A diák frissítése
 
@@ -61,6 +62,6 @@ A szolgáltató leválasztása szintén kikapcsolja az onnan származó hirdeté
 
 ## Kapcsolódó cikkek
 
-- **[Csatlakozás szolgáltatókhoz](./connecting-providers)** - Csatlakoztassa a szolgáltatót, amely a diákat tartalmazza
-- **[Tartalmak böngészése és letöltése](./browsing-content)** - Böngésszen a szolgáltató mappái között, és játsszon le tartalmat igény szerint
-- **[Tartalom lejátszása](./playing-content)** - A lejátszó vezérlői a TV távvezérlőjéhez
+- **[Csatlakozás szolgáltatókhoz](./connecting-providers.md)** - Csatlakoztassa a szolgáltatót, amely a diákat tartalmazza
+- **[Tartalmak böngészése és letöltése](./browsing-content.md)** - Böngésszen a szolgáltató mappái között, és játsszon le tartalmat igény szerint
+- **[Tartalom lejátszása](./playing-content.md)** - A lejátszó vezérlői a TV távvezérlőjéhez

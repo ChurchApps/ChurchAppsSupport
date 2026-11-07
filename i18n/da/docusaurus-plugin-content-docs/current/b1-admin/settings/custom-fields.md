@@ -1,5 +1,6 @@
 ---
 title: "Brugerdefinerede felter"
+description: "Definér egne felter i B1 Admin til ekstra personoplysninger, som udløbsdato for baggrundstjek eller T-shirtstørrelse, og søg og filtrér på dem."
 ---
 
 # Brugerdefinerede felter

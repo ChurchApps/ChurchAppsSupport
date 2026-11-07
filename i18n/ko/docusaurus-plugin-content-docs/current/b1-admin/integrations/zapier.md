@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "B1 Admin을 Zapier에 연결해 새 사람, 헌금, 그룹 구성원을 기준으로 자동화를 시작하고, 코딩 없이 B1에 기록을 다시 씁니다."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ B1.church 앱은 만들어졌고 작동하지만, 아직 Zapier의 검토를 기
 ### 내장 커넥터보다 풍부한 카드로 헌금을 Slack 채널에 게시하기
 
 - **트리거** -- B1: New Donation
-- **작업** -- Slack: Send Channel Message. 내장 [Slack 커넥터](./slack-discord)로는 할 수 없는 버튼, 첨부 등 원하는 모든 레이아웃을 구성하세요.
+- **작업** -- Slack: Send Channel Message. 내장 [Slack 커넥터](./slack-discord.md)로는 할 수 없는 버튼, 첨부 등 원하는 모든 레이아웃을 구성하세요.
 
 ### 새 그룹 구성원을 Google 그룹에 추가하기
 
@@ -106,6 +107,6 @@ B1.church 앱은 만들어졌고 작동하지만, 아직 Zapier의 검토를 기
 
 ## 함께 보기
 
-- [Make](./make) -- 같은 방식이지만 다른 플랫폼
-- [Slack & Discord](./slack-discord) -- Zapier 없이 더 간단한 채팅 알림
+- [Make](./make.md) -- 같은 방식이지만 다른 플랫폼
+- [Slack & Discord](./slack-discord.md) -- Zapier 없이 더 간단한 채팅 알림
 - [웹훅(개발자 참고)](/docs/developer/api/webhooks)

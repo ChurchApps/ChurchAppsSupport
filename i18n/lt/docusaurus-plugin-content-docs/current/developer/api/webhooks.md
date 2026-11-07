@@ -1,5 +1,6 @@
 ---
 title: "Webhook'ai"
+description: "Nustatykite B1 Admin webhook'us: registruokite galinius taškus, pasirinkite įvykius, tikrinkite HMAC parašus ir iš naujo siųskite nepavykusius pranešimus."
 ---
 
 # Webhook'ai
@@ -33,7 +34,7 @@ Eikite į **Nustatymai → Kūrėjui → Webhook'ai → Naujas webhook'as**. Įv
 
 ### Per API
 
-Visi galiniai taškai yra po Membership modulio bazinio kelio `/membership/webhooks` ir reikalauja arba JWT iš bažnyčios administratoriaus, turinčio leidimą `Settings / Edit`, **arba [API rakto](./api-keys), sukurto su `settings:write` apimtimi**. Tie patys maršrutai priima abu. Tai leidžia Zapier ir Make registruoti webhook'us bažnyčios vardu, kai įjungiamas Zap ar scenarijus.
+Visi galiniai taškai yra po Membership modulio bazinio kelio `/membership/webhooks` ir reikalauja arba JWT iš bažnyčios administratoriaus, turinčio leidimą `Settings / Edit`, **arba [API rakto](./api-keys.md), sukurto su `settings:write` apimtimi**. Tie patys maršrutai priima abu. Tai leidžia Zapier ir Make registruoti webhook'us bažnyčios vardu, kai įjungiamas Zap ar scenarijus.
 
 ```http
 POST /membership/webhooks

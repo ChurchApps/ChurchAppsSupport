@@ -1,5 +1,6 @@
 ---
 title: "Documentación para desarrolladores"
+description: "Guía de la documentación para desarrolladores de ChurchApps: configuración local, API, apps web, bibliotecas compartidas, compilación móvil y despliegue."
 ---
 
 # Documentación para desarrolladores
@@ -24,16 +25,16 @@ Características clave:
 
 ## Lo que cubre esta sección
 
-- **[Configuración](setup/)**: entorno de desarrollo local, requisitos previos y configuración
-  - [Requisitos previos](setup/prerequisites): herramientas y software necesarios
-  - [Descripción general del proyecto](setup/project-overview): todos los proyectos de un vistazo
-  - [Variables de entorno](setup/environment-variables): configuración de los archivos `.env`
-- **[API](api/)**: configuración local de la API principal, inicialización de la base de datos y estructura de módulos
-- **[Aplicaciones web](web-apps/)**: ejecución local de B1Admin, B1App y LessonsApp
-- **[Aplicaciones móviles](mobile/)**: compilación de B1Mobile y otras aplicaciones de Expo
-- **[Bibliotecas compartidas](shared-libraries/)**: trabajo con Helpers, ApiHelper y AppHelper
-- **[Despliegue](deployment/)**: despliegue de APIs, aplicaciones web y aplicaciones móviles
-- **[Proveedor de contenido de FreePlay](freeplay-content-provider)**: integración de su biblioteca de lecciones con FreePlay
+- **[Configuración](./setup/index.md)**: entorno de desarrollo local, requisitos previos y configuración
+  - [Requisitos previos](./setup/prerequisites.md): herramientas y software necesarios
+  - [Descripción general del proyecto](./setup/project-overview.md): todos los proyectos de un vistazo
+  - [Variables de entorno](./setup/environment-variables.md): configuración de los archivos `.env`
+- **[API](./api/index.md)**: configuración local de la API principal, inicialización de la base de datos y estructura de módulos
+- **[Aplicaciones web](./web-apps/index.md)**: ejecución local de B1Admin, B1App y LessonsApp
+- **[Aplicaciones móviles](./mobile/index.md)**: compilación de B1Mobile y otras aplicaciones de Expo
+- **[Bibliotecas compartidas](./shared-libraries/index.md)**: trabajo con Helpers, ApiHelper y AppHelper
+- **[Despliegue](./deployment/index.md)**: despliegue de APIs, aplicaciones web y aplicaciones móviles
+- **[Proveedor de contenido de FreePlay](./freeplay-content-provider.md)**: integración de su biblioteca de lecciones con FreePlay
 
 ## Comunidad y recursos
 

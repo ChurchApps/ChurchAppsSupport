@@ -1,5 +1,7 @@
 ---
-title: "Registrando em Eventos"
+title: "Inscrição em Eventos no B1 Mobile"
+sidebar_label: "Registrando em Eventos"
+description: "Inscreva você e sua família em eventos da igreja pelo app B1 Mobile, confira as vagas restantes e confirme sua inscrição em três passos."
 ---
 
 # Registrando em Eventos
@@ -13,7 +15,7 @@ Registre-se em eventos da igreja diretamente do B1 Mobile usando um processo sim
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [conecte-se](../getting-started/logging-in) à sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [conecte-se](../getting-started/logging-in.md) à sua conta
 - O evento deve ter o registro habilitado e a janela de registro deve estar aberta
 
 </div>
@@ -50,4 +52,4 @@ Se você precisar cancelar, entre em contato com o administrador da sua igreja. 
 ## Artigos Relacionados
 
 - [Visão Geral de Eventos](./index.md) -- Navegue por eventos com registro no mobile
-- [Visualizando Planos](../serving/viewing-plans) -- Veja seu calendário de serviços
+- [Visualizando Planos](../serving/viewing-plans.md) -- Veja seu calendário de serviços

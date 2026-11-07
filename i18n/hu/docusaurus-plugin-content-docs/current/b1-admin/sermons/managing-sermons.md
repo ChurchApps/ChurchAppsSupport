@@ -1,5 +1,6 @@
 ---
 title: "Igehirdetések kezelése"
+description: "Igehirdetési könyvtár kezelése a B1 Adminban: YouTube, Vimeo vagy Facebook igehirdetések hozzáadása, részletek szerkesztése és podcast-hírcsatorna."
 ---
 
 # Igehirdetések kezelése
@@ -14,7 +15,7 @@ Az Igehirdetések oldalon jelenik meg a teljes igehirdetés-gyűjteményed. Itt 
 <h4>Mielőtt elkezdenéd</h4>
 
 - Szükséged van a **contentApi.streamingServices.edit** jogosultságra. Ha nincs hozzáférésed, nézd meg a [Szerepkörök és jogosultságok](../settings/roles-permissions.md) oldalt.
-- Hozz létre legalább egy [lejátszási listát](playlists), amelybe az igehirdetéseket rendezheted
+- Hozz létre legalább egy [lejátszási listát](./playlists.md), amelybe az igehirdetéseket rendezheted
 - Készítsd elő a videóazonosítóidat vagy URL-címeidet a YouTube-ról, a Vimeóról vagy a Facebookról
 
 </div>
@@ -35,7 +36,7 @@ Az Igehirdetések oldalon jelenik meg a teljes igehirdetés-gyűjteményed. Itt 
 6. Végezd el a kívánt módosításokat, majd kattints a **Save** gombra.
 
 :::tip
-Állandó élő közvetítési URL-t is megadhatsz, ha az **Add Sermon** legördülő menüben az **Add Permanent Live URL** lehetőséget választod. Ez a YouTube-csatornád élő közvetítéséhez állandó kapcsolatot hoz létre a csatornaazonosítód segítségével. További részletekért lásd: [Élő közvetítés](live-streaming).
+Állandó élő közvetítési URL-t is megadhatsz, ha az **Add Sermon** legördülő menüben az **Add Permanent Live URL** lehetőséget választod. Ez a YouTube-csatornád élő közvetítéséhez állandó kapcsolatot hoz létre a csatornaazonosítód segítségével. További részletekért lásd: [Élő közvetítés](./live-streaming.md).
 :::
 
 ## Igehirdetés szerkesztése
@@ -73,11 +74,11 @@ Az igehirdetés hozzáadása után ütemezheted a közvetítésre az élő közv
 3. Az igehirdetés az ütemezett istentiszteleti időpontban fog lejátszódni.
 
 :::info
-Ha egyszerre több igehirdetést szeretnél importálni, ahelyett hogy egyenként adnád hozzá őket, használd a [Tömeges importálás](bulk-import) eszközt, amellyel a videókat közvetlenül a YouTube- vagy Vimeo-fiókodból húzhatod be.
+Ha egyszerre több igehirdetést szeretnél importálni, ahelyett hogy egyenként adnád hozzá őket, használd a [Tömeges importálás](./bulk-import.md) eszközt, amellyel a videókat közvetlenül a YouTube- vagy Vimeo-fiókodból húzhatod be.
 :::
 
 ## Következő lépések
 
-- [Lejátszási listák](playlists) – Igehirdetések rendezése sorozatokba
-- [Élő közvetítés](live-streaming) – A közvetítési menetrended beállítása
-- [Tömeges importálás](bulk-import) – Több igehirdetés importálása egyszerre
+- [Lejátszási listák](./playlists.md) – Igehirdetések rendezése sorozatokba
+- [Élő közvetítés](./live-streaming.md) – A közvetítési menetrended beállítása
+- [Tömeges importálás](./bulk-import.md) – Több igehirdetés importálása egyszerre

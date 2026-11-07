@@ -1,5 +1,6 @@
 ---
 title: "Csoportidővonal"
+description: "Tekintsd meg, hogyan egyesíti a B1 Mobile csoportidővonal az összes csoportod bejegyzéseit, beszélgetéseit és frissítéseit egyetlen hírfolyamba, és mit tehetsz, amíg szünetel."
 ---
 
 # Csoportidővonal
@@ -17,7 +18,7 @@ A csoportidővonal funkció átmenetileg nem érhető el, amíg fejlesztések fo
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 - Legyél tagja legalább egy csoportnak a gyülekezetedben
 
 </div>
@@ -41,7 +42,7 @@ Az idővonal minden eleme megjeleníti, melyik csoportból származik, így mind
 Az idővonal remek módja annak, hogy egy pillantással kapcsolatban maradj gyülekezeted közösségével. Íme néhány tipp, hogy a legtöbbet hozd ki belőle:
 
 - **Rendszeres ellenőrzés** -- Nyisd meg a Csoportok képernyőjét, és görgess végig az idővonalon, hogy utolérd a legutóbbi tevékenységeket.
-- **Bővebb információ** -- Ha egy bejegyzés felkelti a figyelmedet, koppints rá, vagy koppints a csoport nevére, hogy megnyisd a teljes [csoportadatlapot](./group-details), és több részletet találj.
+- **Bővebb információ** -- Ha egy bejegyzés felkelti a figyelmedet, koppints rá, vagy koppints a csoport nevére, hogy megnyisd a teljes [csoportadatlapot](./group-details.md), és több részletet találj.
 - **Minden egy helyen** -- Nem kell minden csoportodat külön meglátogatnod. Az idővonal az összes tevékenységet eléd hozza.
 
 :::info
@@ -54,5 +55,5 @@ Engedélyezd a [push-értesítéseket](../community/notifications.md), hogy ért
 
 ## Kapcsolódó cikkek
 
-- [Csoportadatlap](./group-details) -- Egy csoport teljes profiljának és bejegyzéseinek megtekintése
+- [Csoportadatlap](./group-details.md) -- Egy csoport teljes profiljának és bejegyzéseinek megtekintése
 - [Értesítések](../community/notifications.md) -- Értesítések a csoportok tevékenységéről

@@ -1,5 +1,6 @@
 ---
 title: "Iscrizioni a pagamento"
+description: "Configura in B1 Admin le iscrizioni a pagamento: prezzi per tipo di partecipante, extra, codici sconto, lista d'attesa e incasso tramite il provider di donazioni."
 ---
 
 # Iscrizioni a pagamento
@@ -13,7 +14,7 @@ Le iscrizioni agli eventi possono andare oltre un semplice conteggio dei parteci
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Attiva prima l'iscrizione sull'evento -- vedi [Creare calendari](creating-calendars#enabling-event-registration)
+- Attiva prima l'iscrizione sull'evento -- vedi [Creare calendari](./creating-calendars.md#enabling-event-registration)
 - Per riscuotere pagamenti online, la tua chiesa deve avere [le donazioni online configurate](../donations/online-giving-setup.md) (Stripe, PayPal o Kingdom Funding). Gli eventi gratuiti non richiedono alcuna configurazione delle donazioni. Senza donazioni online, le iscrizioni a pagamento funzionano comunque, ma le persone pagano direttamente la chiesa -- vedi [Chiese senza donazioni online](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Ogni codice mostra un conteggio **Utilizzi**, così puoi vedere quante volte è 
 Attiva **Attiva lista d'attesa** nella scheda Impostazioni di iscrizione. Quando l'evento raggiunge la capienza:
 
 - Chi si iscrive riceve un posto in lista d'attesa invece di essere respinto. Completano la stessa registrazione (il pagamento viene saltato finché sono in lista d'attesa).
-- Quando qualcuno annulla, l'iscrizione in lista d'attesa più vecchia viene **promossa automaticamente** e riceve un'email che informa che si è liberato un posto. Se deve un saldo, l'email lo collega a [Le mie iscrizioni](../../b1-church/events/my-registrations) sul sito B1 della tua chiesa, dove può completare il pagamento.
+- Quando qualcuno annulla, l'iscrizione in lista d'attesa più vecchia viene **promossa automaticamente** e riceve un'email che informa che si è liberato un posto. Se deve un saldo, l'email lo collega a [Le mie iscrizioni](../../b1-church/events/my-registrations.md) sul sito B1 della tua chiesa, dove può completare il pagamento.
 - Puoi promuovere qualcuno manualmente in qualsiasi momento con l'azione **Promuovi** su una riga in lista d'attesa -- utile dopo aver aumentato la capienza dell'evento.
 
 :::info
@@ -75,7 +76,7 @@ Apri un evento dalla pagina Iscrizioni per vedere ogni iscrizione. Il titolo del
 
 - Clicca sull'icona dei dettagli di una riga per aprire la finestra **Dettagli iscrizione** -- membri, selezioni, pagato/saldo e una tabella **Pagamenti** che elenca ogni addebito (importo, metodo, data).
 - **Esporta CSV** scarica l'elenco completo con colonne per membri, tipi di partecipante, selezioni, totale/pagato/saldo, stato e una colonna per ogni domanda di iscrizione.
-- **Aggiungi partecipante** registra un'iscrizione offline o telefonica per qualsiasi persona della tua chiesa. Scegli la persona e, per un evento a pagamento, il suo tipo di partecipante. Non viene addebitato nulla: un'iscrizione a pagamento viene salvata come **in attesa** con l'intero importo come saldo dovuto. Se la tua chiesa ha le donazioni online, la persona può pagare da [Le mie iscrizioni](../../b1-church/events/my-registrations); altrimenti riscuoti di persona. Per aggiungere partecipanti ti serve il permesso Modifica iscrizioni.
+- **Aggiungi partecipante** registra un'iscrizione offline o telefonica per qualsiasi persona della tua chiesa. Scegli la persona e, per un evento a pagamento, il suo tipo di partecipante. Non viene addebitato nulla: un'iscrizione a pagamento viene salvata come **in attesa** con l'intero importo come saldo dovuto. Se la tua chiesa ha le donazioni online, la persona può pagare da [Le mie iscrizioni](../../b1-church/events/my-registrations.md); altrimenti riscuoti di persona. Per aggiungere partecipanti ti serve il permesso Modifica iscrizioni.
 
 :::info
 I rimborsi non vengono elaborati all'interno di B1. Se devi rimborsare un'iscrizione a pagamento annullata, emetti il rimborso dalla dashboard del tuo fornitore di pagamenti (ad esempio Stripe).
@@ -90,12 +91,12 @@ I pagamenti passano attraverso lo stesso gateway di donazioni che la tua chiesa 
 Se la tua chiesa non ha configurato alcun fornitore di donazioni, gli eventi a pagamento possono comunque ricevere iscrizioni. Il passaggio di pagamento informa chi si iscrive che il pagamento online non è disponibile e che può pagare direttamente la chiesa, e un pulsante **Iscriviti e paga in seguito** salva l'iscrizione. Viene salvata come **in attesa** con l'intero importo come saldo dovuto, e compare nell'elenco con un avviso di saldo. Riscuoti il denaro nel modo in cui la tua chiesa normalmente fa.
 
 :::info
-B1 non ha modo di segnare un pagamento offline come ricevuto. Il saldo dovuto resta nell'elenco e nella scheda [Le mie iscrizioni](../../b1-church/events/my-registrations) di chi si è iscritto anche dopo che hai riscosso il denaro, quindi tieni una tua registrazione di chi ha pagato.
+B1 non ha modo di segnare un pagamento offline come ricevuto. Il saldo dovuto resta nell'elenco e nella scheda [Le mie iscrizioni](../../b1-church/events/my-registrations.md) di chi si è iscritto anche dopo che hai riscosso il denaro, quindi tieni una tua registrazione di chi ha pagato.
 :::
 
 ## Articoli correlati
 
-- [Creare calendari](creating-calendars#enabling-event-registration) -- attivare l'iscrizione e le impostazioni di base
+- [Creare calendari](./creating-calendars.md#enabling-event-registration) -- attivare l'iscrizione e le impostazioni di base
 - [Configurazione delle donazioni online](../donations/online-giving-setup.md) -- configurare il gateway di pagamento usato al checkout
-- [Iscriversi agli eventi](../../b1-church/events/registering) -- cosa vedono i membri quando si iscrivono
-- [Le mie iscrizioni](../../b1-church/events/my-registrations) -- come i membri pagano i saldi e modificano le iscrizioni
+- [Iscriversi agli eventi](../../b1-church/events/registering.md) -- cosa vedono i membri quando si iscrivono
+- [Le mie iscrizioni](../../b1-church/events/my-registrations.md) -- come i membri pagano i saldi e modificano le iscrizioni

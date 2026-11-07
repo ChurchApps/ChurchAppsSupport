@@ -1,5 +1,6 @@
 ---
 title: "Module Structure"
+description: "Uitleg van de opbouw van de API-modules: controllers, repositories, gateways, authcontroles en de zes Lambda-functies in B1-ontwikkelomgevingen."
 ---
 
 # Module Structure
@@ -13,8 +14,8 @@ Elke API-module volgt een consistente interne structuur met controllers, reposit
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Stel de API lokaal in -- zie [Local API Setup](./local-setup)
-- Lees de [Database](./database)-architectuur om de gegevenstoegangslaag te begrijpen
+- Stel de API lokaal in -- zie [Local API Setup](./local-setup.md)
+- Lees de [Database](./database.md)-architectuur om de gegevenstoegangslaag te begrijpen
 
 </div>
 
@@ -170,6 +171,6 @@ Lokaal draait de `web`-functie op poort 8084 en de `socket`-functie op poort 808
 
 ## Gerelateerde Artikelen
 
-- **[Database](./database)** -- Verbindingsreeksen, schemaschriften en gegevenstoegangspatronen
-- **[Local API Setup](./local-setup)** -- Volledige stapsgewijze setupgids
-- **[ApiHelper](../shared-libraries/api-helper)** -- De gedeelde bibliotheek die `CustomBaseController` en authenticatiemiddleware biedt
+- **[Database](./database.md)** -- Verbindingsreeksen, schemaschriften en gegevenstoegangspatronen
+- **[Local API Setup](./local-setup.md)** -- Volledige stapsgewijze setupgids
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- De gedeelde bibliotheek die `CustomBaseController` en authenticatiemiddleware biedt

@@ -1,5 +1,6 @@
 ---
 title: "Triển khai API"
+description: "Triển khai API ChurchApps lên AWS Lambda bằng Serverless, gồm build, quy trình demo và prod, di chuyển cơ sở dữ liệu và cấu hình SSM."
 ---
 
 # Triển khai API
@@ -13,7 +14,7 @@ API của ChurchApps được triển khai dưới dạng hàm AWS Lambda bằng
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập API trên máy cục bộ -- xem [Thiết lập API cục bộ](../api/local-setup)
+- Thiết lập API trên máy cục bộ -- xem [Thiết lập API cục bộ](../api/local-setup.md)
 - Cấu hình thông tin xác thực AWS trên máy của bạn
 - Đảm bảo bạn có quyền truy cập vào tài khoản AWS đích
 
@@ -47,7 +48,7 @@ Trên thực tế, API được deploy bằng GitHub Actions: **Deploy Demo** ch
 
 ## Di chuyển cơ sở dữ liệu
 
-**Deploy Prod** áp dụng các migration cơ sở dữ liệu đang chờ xử lý như một phần của quá trình deploy. Cơ sở dữ liệu production chỉ chấp nhận kết nối từ bên trong VPC, vì vậy ngay sau `serverless deploy`, workflow sẽ gọi Lambda `migrate` (`api-Prod-migrate`). Lambda này chạy các migration đang chờ của mọi module và trả về `{ ok, environment, modules }`. Nếu có module nào thất bại hoặc bị từ chối (ví dụ cơ sở dữ liệu chưa có lịch sử migration), job sẽ dừng lại để đảm bảo schema không bao giờ bị lạc hậu so với mã nguồn. **Rollback Prod** chỉ hoàn tác mã Lambda; các migration vẫn được giữ nguyên, vì vậy hãy viết migration theo hướng chỉ thêm mới (additive). Xem [Quản trị máy chủ -- Di chuyển cơ sở dữ liệu](../server-admin#database-migrations) để kiểm tra trạng thái hoặc chạy migration thủ công.
+**Deploy Prod** áp dụng các migration cơ sở dữ liệu đang chờ xử lý như một phần của quá trình deploy. Cơ sở dữ liệu production chỉ chấp nhận kết nối từ bên trong VPC, vì vậy ngay sau `serverless deploy`, workflow sẽ gọi Lambda `migrate` (`api-Prod-migrate`). Lambda này chạy các migration đang chờ của mọi module và trả về `{ ok, environment, modules }`. Nếu có module nào thất bại hoặc bị từ chối (ví dụ cơ sở dữ liệu chưa có lịch sử migration), job sẽ dừng lại để đảm bảo schema không bao giờ bị lạc hậu so với mã nguồn. **Rollback Prod** chỉ hoàn tác mã Lambda; các migration vẫn được giữ nguyên, vì vậy hãy viết migration theo hướng chỉ thêm mới (additive). Xem [Quản trị máy chủ -- Di chuyển cơ sở dữ liệu](../server-admin.md#database-migrations) để kiểm tra trạng thái hoặc chạy migration thủ công.
 
 ## Các tài nguyên được tạo
 
@@ -75,6 +76,6 @@ Mỗi lần merge vào `main` đều triển khai lên môi trường demo trư�
 
 ## Bài viết liên quan
 
-- **[Thiết lập API cục bộ](../api/local-setup)** -- Thiết lập API để phát triển
-- **[Cấu trúc module](../api/module-structure)** -- Tìm hiểu kiến trúc hàm Lambda
-- **[Triển khai ứng dụng web](./web-apps)** -- Triển khai các ứng dụng frontend
+- **[Thiết lập API cục bộ](../api/local-setup.md)** -- Thiết lập API để phát triển
+- **[Cấu trúc module](../api/module-structure.md)** -- Tìm hiểu kiến trúc hàm Lambda
+- **[Triển khai ứng dụng web](./web-apps.md)** -- Triển khai các ứng dụng frontend

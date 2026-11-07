@@ -1,5 +1,7 @@
 ---
-title: "İlk Kurulum"
+title: "B1 Admin'de İlk Kilise Kurulumu"
+sidebar_label: "İlk Kurulum"
+description: "B1 Admin'de yeni bir kilisenin ilk yapılandırmasını adım adım gözden geçirin: kilise bilgileri, marka kimliği, roller ve kişiler, gruplar, yoklama ve bağışlar için önerilen kurulum sırası."
 ---
 
 # İlk Kurulum

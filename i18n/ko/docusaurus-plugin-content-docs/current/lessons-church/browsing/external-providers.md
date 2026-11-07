@@ -1,5 +1,6 @@
 ---
 title: "외부 공급자"
+description: "제3자 교육과정 제공자가 Open Lesson Format으로 Lessons.church에 콘텐츠를 추가하는 방법과, 포털에서 제공자를 연결하는 방법을 알아봅니다."
 ---
 
 # 외부 공급자

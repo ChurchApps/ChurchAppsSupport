@@ -1,5 +1,6 @@
 ---
 title: "Proxy Caddy pour domaines personnalisés"
+description: "Construisez et lancez le proxy inverse Caddy pour les domaines personnalisés B1.church : certificats TLS, correspondance d’hôtes, pièges connus."
 ---
 
 # Proxy Caddy pour domaines personnalisés
@@ -10,7 +11,7 @@ Les domaines personnalisés des églises (`mon-eglise.org` → le site web B1 de
 
 </div>
 
-Pour savoir comment une requête est associée à une église et à un site une fois arrivée dans B1App, voir [Routage du site web et multi-sites](../architecture/websites).
+Pour savoir comment une requête est associée à une église et à un site une fois arrivée dans B1App, voir [Routage du site web et multi-sites](../architecture/websites.md).
 
 ## Composants
 
@@ -88,5 +89,5 @@ L'API d'administration n'écoute que sur `localhost:2019`. Le mode d'exécution 
 
 ## Pages connexes
 
-- [Routage du site web et multi-sites](../architecture/websites) — comment la requête proxifiée est associée à une église ou à un site dans B1App
-- [Déploiement de l'API](./apis) — déploiement de l'API Membership qui sert `authorize`/`hostmap`
+- [Routage du site web et multi-sites](../architecture/websites.md) — comment la requête proxifiée est associée à une église ou à un site dans B1App
+- [Déploiement de l'API](./apis.md) — déploiement de l'API Membership qui sert `authorize`/`hostmap`

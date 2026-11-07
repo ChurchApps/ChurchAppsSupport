@@ -1,5 +1,6 @@
 ---
 title: "デバイスのペアリング"
+description: "画面に表示される 4 文字のコードを使って、FreePlay TV を B1 Admin のプランの種類とペアリングし、そのプランのメディアをダウンロードして Plan Mode で再生します。"
 ---
 
 # デバイスのペアリング
@@ -13,7 +14,7 @@ title: "デバイスのペアリング"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- FreePlay をインストールして起動します。[はじめに](../getting-started/)を参照してください
+- FreePlay をインストールして起動します。[はじめに](../getting-started/index.md)を参照してください
 - ペアリングを完了するために、コンピューターまたはスマートフォンで **B1 Admin** を使える状態にしておきます
 
 </div>
@@ -25,7 +26,7 @@ title: "デバイスのペアリング"
 3. FreePlay に、QR コードの横に大きな文字で 4 文字のペアリングコードが表示されます。
 4. コードの下には、点滅する **確認を待っています** のインジケーターが表示されます。これは、ペアリングの完了操作を待っていることを示しています。
 
-同じコードは、FreePlay Admin の [スケジュールモード](../scheduled-mode/) と、B1 Admin のプランモードの両方で使えます。画面に表示される QR コードと **freeplay.church/pair** のアドレスは、FreePlay Admin を開きます。プランモードでは、それらは無視して、以下の手順どおりに B1 Admin でコードを入力してください。
+同じコードは、FreePlay Admin の [スケジュールモード](../scheduled-mode/index.md) と、B1 Admin のプランモードの両方で使えます。画面に表示される QR コードと **freeplay.church/pair** のアドレスは、FreePlay Admin を開きます。プランモードでは、それらは無視して、以下の手順どおりに B1 Admin でコードを入力してください。
 
 ## B1 Admin でコードを入力する
 
@@ -61,5 +62,5 @@ FreePlay がペアリングコードを生成できない場合（たとえば�
 ## 関連記事
 
 - **[プランモードの概要](./index.md)** - プランモードがスケジュールモードとどう違うか
-- **[画面のペアリング](../scheduled-mode/pairing-a-screen)** - 同じテレビを、代わりに FreePlay Admin でカレンダーとペアリングする方法
-- **[コンテンツの再生](../content-providers/playing-content)** - プランの再生に使うプレーヤーの操作方法
+- **[画面のペアリング](../scheduled-mode/pairing-a-screen.md)** - 同じテレビを、代わりに FreePlay Admin でカレンダーとペアリングする方法
+- **[コンテンツの再生](../content-providers/playing-content.md)** - プランの再生に使うプレーヤーの操作方法

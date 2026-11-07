@@ -1,5 +1,7 @@
 ---
-title: "Ayinler"
+title: "B1 Mobile'da Vaazları İzleme"
+sidebar_label: "Ayinler"
+description: "B1 Mobile uygulamasında kayıtlı vaazları ve serileri tarayın, arayın ve izleyin; canlı yayın geri sayımına nasıl yetişeceğinizi de öğrenin."
 ---
 
 # Ayinler
@@ -13,7 +15,7 @@ Ayinler ekranı, kilisenizin kaydedilmiş vaazlarına göz atmanızı ve bunlar�
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kiliseniz, yönetici portalında ayın içeriklerini yapılandırmış olmalıdır
 
 </div>
@@ -29,7 +31,7 @@ Ekranın üst kısmında, en son vaaz öne çıkan bir kart olarak görüntülen
 
 ## Canlı Yayın Geri Sayımı
 
-Bir [canlı yayın](./live-streaming) önümüzdeki 24 saat içinde başlayacaksa, Ayinler ekranında bir geri sayım sayacı belirir. Bu sayede bir sonraki ayinin ne zaman yayınlanacağını öğrenir ve canlı izlemek için plan yapabilirsiniz.
+Bir [canlı yayın](./live-streaming.md) önümüzdeki 24 saat içinde başlayacaksa, Ayinler ekranında bir geri sayım sayacı belirir. Bu sayede bir sonraki ayinin ne zaman yayınlanacağını öğrenir ve canlı izlemek için plan yapabilirsiniz.
 
 ## Bir Vaazı İzlemek
 
@@ -51,7 +53,7 @@ Her vaaz kaydı şunları gösterebilir:
 - **Küçük resim** -- Vaaz için bir önizleme görseli
 
 :::tip
-Ayinler ekranında bir geri sayım görürseniz, yayın başladığında doğrudan [canlı yayına](./live-streaming) geçmek için üzerine dokunun.
+Ayinler ekranında bir geri sayım görürseniz, yayın başladığında doğrudan [canlı yayına](./live-streaming.md) geçmek için üzerine dokunun.
 :::
 
 ## Kullanılabilirlik

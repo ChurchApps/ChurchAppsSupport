@@ -1,5 +1,6 @@
 ---
 title: "Das richtige Gerät auswählen"
+description: "Das richtige Gerät für FreePlay-Klassenraum-TVs wählen, von Fire-TV-Sticks und Onn-Boxen bis Apple TV, und welche Geräte Sie besser meiden."
 ---
 
 # Das richtige Gerät für FreePlay auswählen

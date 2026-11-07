@@ -1,5 +1,6 @@
 ---
 title: "MCP Sunucusu"
+description: "Claude Code, Cursor ya da Claude Desktop gibi istemcilerin API anahtarı veya OAuth ile kilise verilerine erişmesi için B1 API'ye MCP erişimini kurun."
 ---
 
 # MCP Sunucusu
@@ -13,7 +14,7 @@ B1 API, `/mcp` adresinde bir [MCP (Model Context Protocol)](https://modelcontext
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- İstemcinin sahip olması gereken kapsamlara sahip bir [B1 API anahtarı](./api-keys) (`cak_…`) veya OAuth ile oturum açabilen bir MCP istemcisi (bkz. [OAuth Keşfi](#oauth-discovery))
+- İstemcinin sahip olması gereken kapsamlara sahip bir [B1 API anahtarı](./api-keys.md) (`cak_…`) veya OAuth ile oturum açabilen bir MCP istemcisi (bkz. [OAuth Keşfi](#oauth-discovery))
 - Erişilebilir bir B1 API sunucusu: barındırılan kiliseler için `https://api.churchapps.org` ya da kendi dağıtımınız
 - Bir MCP istemcisi. Son kullanıcı kurulumu için [Claude](/docs/b1-admin/integrations/claude) ve [ChatGPT](/docs/b1-admin/integrations/chatgpt) sayfalarına bakın
 
@@ -119,7 +120,7 @@ Durum kodu 400 veya üzeri olan her yanıt için araç sonucu `isError: true` ol
 
 ### `describe_page_builder`
 
-Genel amaçlı olmayan tek araç budur. `/content/*` uç noktaları üzerinden web sitesi sayfaları oluşturmak için kendi kendine yeterli, statik bir kılavuzdur. Sayfa → Bölüm → Öğe veri modelini, oluşturma iş akışını, her `elementType` öğesini ve `answersJSON` yapısını, `dividerTop`/`dividerBottom` şekil ayırıcıları gibi bölüm düzeyindeki ayarları ve uçtan uca çalışan bir örneği açıklar. Girdi almaz ve B1Admin düzenleyicisinde tutulan öğe kataloğunu yansıtır (bkz. [Web Sitesi Oluşturucu Mimarisi](../architecture/website-builder)). Ajanların sayfa içeriği oluşturmadan veya düzenlemeden önce bu aracı bir kez çağırması, ardından `api_call` ile işlem yapması beklenir.
+Genel amaçlı olmayan tek araç budur. `/content/*` uç noktaları üzerinden web sitesi sayfaları oluşturmak için kendi kendine yeterli, statik bir kılavuzdur. Sayfa → Bölüm → Öğe veri modelini, oluşturma iş akışını, her `elementType` öğesini ve `answersJSON` yapısını, `dividerTop`/`dividerBottom` şekil ayırıcıları gibi bölüm düzeyindeki ayarları ve uçtan uca çalışan bir örneği açıklar. Girdi almaz ve B1Admin düzenleyicisinde tutulan öğe kataloğunu yansıtır (bkz. [Web Sitesi Oluşturucu Mimarisi](../architecture/website-builder.md)). Ajanların sayfa içeriği oluşturmadan veya düzenlemeden önce bu aracı bir kez çağırması, ardından `api_call` ile işlem yapması beklenir.
 
 ## Kimlik Doğrulama Modeli
 
@@ -153,11 +154,11 @@ Her `api_call` yanıt gövdesi, yakalanan çıktının en fazla **64 KB**'ı ile
 
 ## OAuth Keşfi
 
-MCP sunucusu OAuth 2.1 meta verilerini yayınlar. Böylece yalnızca OAuth ile keşfedilen sunuculara bağlanan istemciler (özellikle Claude.ai'daki "Özel bağlayıcı ekle" arayüzü) kullanıcıyı yapıştırılmış bir anahtar olmadan oturum açtırabilir. `/mcp` korunan kaynaktır, `/membership/oauth` altındaki mevcut [OAuth sağlayıcısı](./connected-apps) yetkilendirme sunucusudur ve B1Admin `/oauth` sayfası onay ekranıdır.
+MCP sunucusu OAuth 2.1 meta verilerini yayınlar. Böylece yalnızca OAuth ile keşfedilen sunuculara bağlanan istemciler (özellikle Claude.ai'daki "Özel bağlayıcı ekle" arayüzü) kullanıcıyı yapıştırılmış bir anahtar olmadan oturum açtırabilir. `/mcp` korunan kaynaktır, `/membership/oauth` altındaki mevcut [OAuth sağlayıcısı](./connected-apps.md) yetkilendirme sunucusudur ve B1Admin `/oauth` sayfası onay ekranıdır.
 
 | Uç nokta | Amaç |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (ayrıca `/.well-known/oauth-protected-resource/mcp`) | Korunan kaynak meta verileri (RFC 9728): `resource` değeri `<api>/mcp`, `authorization_servers` değeri API kökü, `scopes_supported` ise her [API anahtarı kapsamını](./api-keys#scopes) listeler |
+| `GET /.well-known/oauth-protected-resource` (ayrıca `/.well-known/oauth-protected-resource/mcp`) | Korunan kaynak meta verileri (RFC 9728): `resource` değeri `<api>/mcp`, `authorization_servers` değeri API kökü, `scopes_supported` ise her [API anahtarı kapsamını](./api-keys.md#scopes) listeler |
 | `GET /.well-known/oauth-authorization-server` | Yetkilendirme sunucusu meta verileri (RFC 8414): `authorization_endpoint` B1Admin `/oauth` adresidir, `token_endpoint` `/membership/oauth/token` adresidir, `registration_endpoint` ise `/membership/oauth/register` adresidir |
 | `POST /membership/oauth/register` | Dinamik istemci kaydı (RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP sunucusu Api deposunda `src/modules/mcp/` dizinindedir. Önemli dosyalar:
 
 ## İlgili Sayfalar
 
-- [API Anahtarları](./api-keys)
-- [Webhook'lar](./webhooks)
-- [Bağlı Uygulamalar (OAuth)](./connected-apps)
+- [API Anahtarları](./api-keys.md)
+- [Webhook'lar](./webhooks.md)
+- [Bağlı Uygulamalar (OAuth)](./connected-apps.md)
 - [Claude — son kullanıcı kurulumu](/docs/b1-admin/integrations/claude)
 - [ChatGPT — son kullanıcı kurulumu](/docs/b1-admin/integrations/chatgpt)

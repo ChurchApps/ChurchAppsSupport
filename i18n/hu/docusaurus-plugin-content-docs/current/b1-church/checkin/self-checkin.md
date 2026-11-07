@@ -1,5 +1,7 @@
 ---
-title: "Önbejelentkezés"
+title: "Önbejelentkezés a B1.church tagi portálon"
+sidebar_label: "Önbejelentkezés"
+description: "Jelentkezzen be magát és háztartását szolgálatra a B1.church tagi portálon, néhány gyors lépésben kiválasztva az időpontokat és csoportokat."
 ---
 
 # Önbejelentkezés
@@ -45,7 +47,7 @@ Miután kiválasztott csoportot mindenkinek, aki részt vesz, koppintson az olda
 
 Megjelenik a visszaigazolás, hogy a bejelentkezés befejeződött és a részvétel rögzítésre került. Rövid idő múlva az oldal visszatér az istentiszteletek listájához, készen a következő bejelentkezésre.
 
-Ha a gyülekezet egy bejelentkezési állomáson nyomtat névcímkéket, ehelyett a **Be vagy jelentkezve!** üzenetet látja QR-kóddal és biztonsági kóddal. Mutassa meg a kódot a bejelentkezési állomáson a névcímkék nyomtatásához, majd koppintson a **Kész** gombra. A B1 Checkin kioszknál koppintson a **Kód beolvasása** gombra, és tartsa a QR-kódot a kamera elé – lásd [Címkék nyomtatása telefonos bejelentkezéshez](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Ha a gyülekezet egy bejelentkezési állomáson nyomtat névcímkéket, ehelyett a **Be vagy jelentkezve!** üzenetet látja QR-kóddal és biztonsági kóddal. Mutassa meg a kódot a bejelentkezési állomáson a névcímkék nyomtatásához, majd koppintson a **Kész** gombra. A B1 Checkin kioszknál koppintson a **Kód beolvasása** gombra, és tartsa a QR-kódot a kamera elé – lásd [Címkék nyomtatása telefonos bejelentkezéshez](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Ha háztartása már be van jelentkezve a kiválasztott istentiszteletre, a **Kik vannak itt** címsor mellett megjelenik a **Bejelentkezési kód megjelenítése** hivatkozás. Koppintson rá, hogy újra megjelenjen a QR-kód és a biztonsági kód – például ha bezárta az oldalt, mielőtt elért volna egy bejelentkezési állomáshoz.
 

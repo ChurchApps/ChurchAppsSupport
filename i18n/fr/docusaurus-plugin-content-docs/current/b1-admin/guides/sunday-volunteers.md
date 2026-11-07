@@ -1,5 +1,6 @@
 ---
 title: "Guide : gérer les bénévoles du dimanche"
+description: "Configurez les équipes de bénévoles, les plans de service hebdomadaires, l'ordre des services et les tâches du dimanche dans B1 Admin, afin que les bénévoles voient et confirment leurs affectations sur B1.church et l'application mobile."
 ---
 
 # Gérer les bénévoles du dimanche
@@ -95,7 +96,7 @@ Permettez aux bénévoles de s'inscrire eux-mêmes à des postes au lieu d'atten
 3. Pour chaque poste, cochez la case **Autoriser l'inscription en libre-service** pour le rendre disponible en libre-service.
 4. Ajoutez une **description** à chaque poste afin que les bénévoles sachent en quoi consiste le rôle.
 
-Une fois les postes en libre-service créés, ils apparaissent automatiquement sur les pages d'inscription des bénévoles sur [B1.church](../../b1-church/serving/volunteer-signup) et dans l'[application mobile B1](../../b1-mobile/serving/volunteer-signup). Les membres peuvent parcourir les postes ouverts, voir combien de places restent et s'inscrire en un seul clic.
+Une fois les postes en libre-service créés, ils apparaissent automatiquement sur les pages d'inscription des bénévoles sur [B1.church](../../b1-church/serving/volunteer-signup.md) et dans l'[application mobile B1](../../b1-mobile/serving/volunteer-signup.md). Les membres peuvent parcourir les postes ouverts, voir combien de places restent et s'inscrire en un seul clic.
 
 :::tip
 Combinez des postes attribués par l'administration et des postes en libre-service dans un même plan. Par exemple, assignez directement votre responsable de louange, mais laissez les accueillants et les serveurs de café choisir eux-mêmes.
@@ -109,7 +110,7 @@ Les bénévoles assignés voient automatiquement leurs plans et peuvent répondr
 2. Ils peuvent accepter ou refuser leurs affectations directement depuis l'une ou l'autre plateforme
 3. Ils peuvent indiquer des dates d'indisponibilité pour les semaines où ils ne sont pas disponibles
 4. Les plans peuvent être imprimés pour les répétitions ou affichés en coulisses
-5. Les bénévoles peuvent parcourir et s'inscrire aux postes ouverts via la [page d'inscription des bénévoles](../../b1-church/serving/volunteer-signup)
+5. Les bénévoles peuvent parcourir et s'inscrire aux postes ouverts via la [page d'inscription des bénévoles](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Les notifications push de l'application mobile alertent les bénévoles lorsqu'ils reçoivent de nouvelles affectations ou lorsque les plans changent.
@@ -130,5 +131,5 @@ Votre système de gestion des bénévoles est en place. Chaque semaine, créez u
 - [Flux de travail](../serving/workflows.md) — faire progresser des personnes dans des processus répétables grâce à des déclencheurs et des étapes automatisées
 - [Consulter les plans (Web)](../../b1-church/plans/viewing-plans.md) — comment les bénévoles voient les plans en ligne
 - [Consulter les plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — comment les bénévoles voient les plans sur mobile
-- [Inscription des bénévoles (Web)](../../b1-church/serving/volunteer-signup) — comment les membres choisissent eux-mêmes un poste de bénévole
-- [Inscription des bénévoles (Mobile)](../../b1-mobile/serving/volunteer-signup) — inscription en libre-service des bénévoles sur mobile
+- [Inscription des bénévoles (Web)](../../b1-church/serving/volunteer-signup.md) — comment les membres choisissent eux-mêmes un poste de bénévole
+- [Inscription des bénévoles (Mobile)](../../b1-mobile/serving/volunteer-signup.md) — inscription en libre-service des bénévoles sur mobile

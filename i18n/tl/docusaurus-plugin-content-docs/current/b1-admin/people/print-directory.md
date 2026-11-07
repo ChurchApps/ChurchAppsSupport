@@ -1,5 +1,6 @@
 ---
 title: "Print Directory"
+description: "Gumawa ng naka-print na member directory mula sa B1 Admin, nakapangkat ayon sa household, may larawan, contact info, at kaarawan, para sa letter paper."
 ---
 
 # Print Directory

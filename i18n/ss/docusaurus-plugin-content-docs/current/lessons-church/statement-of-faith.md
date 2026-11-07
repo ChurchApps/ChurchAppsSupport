@@ -1,5 +1,6 @@
 ---
 title: Sitatimende Selukholo
+description: "Lokukholelwa yiChurchApps ngaNkulunkulu, Jesu, Umoya Lo Ngcwele, Lilizwi, kusindzisa, nelibandla, lelikhomba lelinga lekubuketwa kwemakharikhulamu e-Lessons.church."
 ---
 
 # Sitatimende Selukholo

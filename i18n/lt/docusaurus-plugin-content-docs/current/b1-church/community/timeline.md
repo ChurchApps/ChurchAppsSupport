@@ -1,5 +1,6 @@
 ---
 title: "Laiko juosta"
+description: "Skirtukas Timeline B1.church narių portale nebenaudojamas. Pokalbius, renginius, užduotis ir pranešimus rasite puslapyje Me, varpelyje ir grupėse."
 ---
 
 # Laiko juosta
@@ -16,13 +17,13 @@ Atskirasis skirtukas **Laiko juosta** nebenaudojamas. Nario portalas dabar atsid
 | --- | --- |
 | Grupių pokalbiai ir skelbimai | Pokalbis kiekvienoje [grupėje](../groups/conversations.md) (**Atidaryti pokalbį**) |
 | Artėjantys renginiai jums ir jūsų grupėms | Puslapis **Me** (`/mobile/me`) ir kiekvienos grupės skyrius **Artimiausias renginys** |
-| Užduotys ir tarnystės pavedimai | Puslapis **Me** ir [Planai](../plans/) |
+| Užduotys ir tarnystės pavedimai | Puslapis **Me** ir [Planai](../plans/index.md) |
 | Nauji pamokslai | Skyrius **Naujausias pamokslas** pagrindiniame puslapyje ir skirtukas [Pamokslai](../content/sermons.md) |
 | Viskas, kas jus pasiekė | **Varpelio** piktograma programos viršutinėje juostoje arba `/mobile/notifications` |
 
 ## Puslapis Me
 
-[Puslapis Me](../getting-started/me-page) yra artimiausias senojo srauto atitikmuo. Jame rodama, kas jūsų laukia: tarnystės pavedimai, renginių registracijos ir grupių renginiai. Taip pat matomos jūsų pateiktos formos, lankomumo istorija ir naujausi pranešimai, o tiesioginės nuorodos veda į jūsų profilį, pranešimų nustatymus, žinutes, aukas ir registracijas.
+[Puslapis Me](../getting-started/me-page.md) yra artimiausias senojo srauto atitikmuo. Jame rodama, kas jūsų laukia: tarnystės pavedimai, renginių registracijos ir grupių renginiai. Taip pat matomos jūsų pateiktos formos, lankomumo istorija ir naujausi pranešimai, o tiesioginės nuorodos veda į jūsų profilį, pranešimų nustatymus, žinutes, aukas ir registracijas.
 
 ## Pranešimai
 

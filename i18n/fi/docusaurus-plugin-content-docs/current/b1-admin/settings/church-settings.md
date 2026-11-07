@@ -1,5 +1,6 @@
 ---
 title: "Kirkon asetukset"
+description: "Aseta seurakuntasi nimi, osoite, alidomain, aikavyöhyke, aluemuoto, tekstiviestipalveluntarjoaja ja tiedostotallennus B1 Adminin Church Settings -sivulla."
 ---
 
 # Kirkon asetukset

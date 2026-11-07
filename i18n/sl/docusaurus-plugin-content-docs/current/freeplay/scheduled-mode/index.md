@@ -1,5 +1,6 @@
 ---
 title: "Načrtovani način"
+description: "Nastavi FreePlay TV-je za predvajanje seznamov po koledarju v FreePlay Admin: zasloni se sami zaženejo in ustavijo ter ob izpadu Wi-Fi predvajajo naprej."
 ---
 
 # Načrtovani način
@@ -18,16 +19,16 @@ FreePlay Admin uporablja vašo prijavo v ChurchApps, to je isto, ki jo uporablja
 
 FreePlay Admin ima štiri glavne strani, navedene na vrhu spletnega mesta:
 
-- **[Zasloni](./managing-screens)** - TV-ji, ki ste jih seznanili, njihovo stanje in **skupine zaslonov**, ki jim pripadajo. Zasloni v skupini si delijo en koledar in eno privzeto zanko
-- **[Seznami predvajanja](./building-playlists)** - Zanke slik in videoposnetkov, ki jih izberete pri svojih ponudnikih vsebin
-- **[Koledar](./scheduling-the-calendar)** - Kaj in kdaj predvaja posamezna skupina zaslonov
-- **[Ponudniki](./building-playlists#connecting-providers)** - Viri vsebin, iz katerih vaši seznami predvajanja črpajo. Vsakega povežete enkrat za celotno cerkev
+- **[Zasloni](./managing-screens.md)** - TV-ji, ki ste jih seznanili, njihovo stanje in **skupine zaslonov**, ki jim pripadajo. Zasloni v skupini si delijo en koledar in eno privzeto zanko
+- **[Seznami predvajanja](./building-playlists.md)** - Zanke slik in videoposnetkov, ki jih izberete pri svojih ponudnikih vsebin
+- **[Koledar](./scheduling-the-calendar.md)** - Kaj in kdaj predvaja posamezna skupina zaslonov
+- **[Ponudniki](./building-playlists.md#connecting-providers)** - Viri vsebin, iz katerih vaši seznami predvajanja črpajo. Vsakega povežete enkrat za celotno cerkev
 
 Kadar ni nič načrtovano, zasloni v skupini predvajajo njeno **privzeto zanko**. Če skupina nima privzete zanke, zasloni ostanejo temni.
 
 ## Kako se razlikuje od načina načrta
 
-- **[Način načrta](../plan-mode/)** sledi enemu tipu bogoslužnega načrta iz B1 Admin. Nekdo pritisne **Start Plan** na TV-ju in lekcija se predvaja, ko to stori
+- **[Način načrta](../plan-mode/index.md)** sledi enemu tipu bogoslužnega načrta iz B1 Admin. Nekdo pritisne **Start Plan** na TV-ju in lekcija se predvaja, ko to stori
 - **Načrtovani način** sledi koledarju. Vsebina se začne in ustavi ob časih, ki jih nastavite, zato dobro deluje za oglasne zanke v avli, obvestila in učilnice, kjer mora biti lekcija prikazana, preden kdo vstopi
 
 Vnos v koledarju lahko še vedno predvaja bogoslužni načrt. Ko dodajate razpored, pod **Service plans** izberite tip načrta, zaslon pa bo tisti teden predvajal trenutni načrt iz B1 Admin. To velja tudi za lekcije Go Curriculum, tudi če ste jih v načrtu prilagodili. Zaslon uporabi prijavo v Go Curriculum, povezano s tipom načrta v B1 Admin, oziroma povezavo cerkve z Go Curriculum, če služba nima svoje.
@@ -49,8 +50,8 @@ Pritisnite **Ctrl+K** (**⌘K** na Macu) ali kliknite iskalno polje v glavi, da 
 
 ## V tem razdelku
 
-- **[Seznanjanje zaslona](./pairing-a-screen)** - Prikažite kodo na TV-ju in jo seznanite v FreePlay Admin
-- **[Upravljanje zaslonov in skupin](./managing-screens)** - Preverite stanje in prenose ter razporedite zaslone v skupine
-- **[Povezovanje ponudnikov in ustvarjanje seznamov predvajanja](./building-playlists)** - Povežite vire vsebin in ustvarite zanke slik in videoposnetkov
-- **[Načrtovanje koledarja](./scheduling-the-calendar)** - Določite, kaj se predvaja kdaj in kaj se zgodi, ko se konča prej
-- **[Predvajanje po urniku na TV-ju](./scheduled-playback)** - Kaj TV naredi sam od sebe in kako med predvajanjem uporabljati daljinec
+- **[Seznanjanje zaslona](./pairing-a-screen.md)** - Prikažite kodo na TV-ju in jo seznanite v FreePlay Admin
+- **[Upravljanje zaslonov in skupin](./managing-screens.md)** - Preverite stanje in prenose ter razporedite zaslone v skupine
+- **[Povezovanje ponudnikov in ustvarjanje seznamov predvajanja](./building-playlists.md)** - Povežite vire vsebin in ustvarite zanke slik in videoposnetkov
+- **[Načrtovanje koledarja](./scheduling-the-calendar.md)** - Določite, kaj se predvaja kdaj in kaj se zgodi, ko se konča prej
+- **[Predvajanje po urniku na TV-ju](./scheduled-playback.md)** - Kaj TV naredi sam od sebe in kako med predvajanjem uporabljati daljinec

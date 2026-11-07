@@ -1,5 +1,7 @@
 ---
-title: "Ryhmän tiedot"
+title: "Ryhmän tiedot B1 Mobile -sovelluksessa"
+sidebar_label: "Ryhmän tiedot"
+description: "Katso, mitä B1 Mobilen ryhmän tietosivu näyttää, mukaan lukien ryhmän tiedot, julkaisut ja jäsenet, sekä miten sivun voi avata Ryhmät-näkymästä."
 ---
 
 # Ryhmän tiedot
@@ -13,7 +15,7 @@ Kun napautat ryhmää Ryhmät-näkymässä, avautuu ryhmän tietosivu. Täältä
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Avaa [Ryhmät](./index.md)-näkymä
 
 </div>
@@ -46,5 +48,5 @@ Eniten käyttämäsi ryhmä näkyy Ryhmät-näkymän yläosassa pääkorttina, j
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Ryhmän aikajana](./group-timeline) -- Tutustu kaikkien ryhmiesi yhteiseen toimintasyötteeseen
+- [Ryhmän aikajana](./group-timeline.md) -- Tutustu kaikkien ryhmiesi yhteiseen toimintasyötteeseen
 - [Viestit](../community/messaging.md) -- Lähetä yksityisviestejä ryhmän jäsenille

@@ -1,5 +1,7 @@
 ---
-title: "Komunita"
+title: "Adresář členů v B1.church"
+sidebar_label: "Komunita"
+description: "Vyhledávejte členy církve v adresáři B1.church podle jména nebo skupiny, prohlížejte profily a zjistěte, kde nyní najdete aktualizace z Timeline."
 ---
 
 # Komunita
@@ -26,5 +28,5 @@ Portál pro členy se otevírá na [domovské stránce](../getting-started/navig
 :::
 
 :::tip
-Abyste byli po celý týden v kontaktu se svou církví, využívejte funkce komunity spolu se [skupinami](../groups/).
+Abyste byli po celý týden v kontaktu se svou církví, využívejte funkce komunity spolu se [skupinami](../groups/index.md).
 :::

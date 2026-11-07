@@ -1,5 +1,7 @@
 ---
-title: "Bağış Yapma"
+title: "B1.church Üye Portalında Bağış Yapma"
+sidebar_label: "Bağış Yapma"
+description: "B1.church üzerinden hesap açmadan veya hesapla, kiliseniz için tek seferlik ya da yinelenen bağış yapın ve ardından bağış geçmişinizi inceleyin."
 ---
 
 # Bağış Yapma

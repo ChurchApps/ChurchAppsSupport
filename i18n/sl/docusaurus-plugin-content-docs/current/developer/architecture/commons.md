@@ -1,5 +1,6 @@
 ---
 title: "Skupna vsebina"
+description: "Kako uporabniško oddane pesmi, lekcije in predloge potujejo skozi skupno čakalno vrsto moderiranja v Server Admin B1 Admin, od oddaje do objave."
 ---
 
 # Skupna vsebina — knjižnica skupnih virov in moderiranje

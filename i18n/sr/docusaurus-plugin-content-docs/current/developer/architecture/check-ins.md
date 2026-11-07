@@ -1,5 +1,6 @@
 ---
 title: "Пријаве"
+description: "Како функционише пријава у B1Checkin-у, B1App-у и B1 Admin-у: подаци о присуству, групе као просторије, ограничења капацитета и безбедност преузимања."
 ---
 
 # Пријаве
@@ -216,7 +217,7 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
 
 ## Повезане странице
 
-- [Крајње тачке присуства](../api/endpoints/attendance) -- Пун REST интерфејс за кампусе, службе, сесије, посете и сесије посета
-- [Крајње тачке чланства](../api/endpoints/membership) -- Особе, домаћинства и групе
-- [Webhook-ови](../api/webhooks) -- Догађаји `session.created`, `attendance.recorded` и `attendance.checkout`
-- [Структура модула](../api/module-structure) -- Како је модул присуства организован на серверу
+- [Крајње тачке присуства](../api/endpoints/attendance.md) -- Пун REST интерфејс за кампусе, службе, сесије, посете и сесије посета
+- [Крајње тачке чланства](../api/endpoints/membership.md) -- Особе, домаћинства и групе
+- [Webhook-ови](../api/webhooks.md) -- Догађаји `session.created`, `attendance.recorded` и `attendance.checkout`
+- [Структура модула](../api/module-structure.md) -- Како је модул присуства организован на серверу

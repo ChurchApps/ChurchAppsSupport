@@ -1,5 +1,7 @@
 ---
-title: "Redigera din profil"
+title: "Redigera din profil i B1 Mobile-appen"
+sidebar_label: "Redigera din profil"
+description: "Uppdatera ditt namn, din e-postadress, ditt telefonnummer, din adress och profilbild i B1 Mobile-appen så att din församlings register och katalog hålls aktuella."
 ---
 
 # Redigera din profil
@@ -13,7 +15,7 @@ Under fliken **Profil** kan du uppdatera dina personuppgifter så att din kyrka 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 
 </div>
 
@@ -34,7 +36,7 @@ Din profil innehåller följande personuppgifter:
 3. Tryck på fältet du vill uppdatera och gör dina ändringar.
 4. Spara dina ändringar när du är klar.
 
-Dina uppdaterade uppgifter synkroniseras automatiskt. Den som tittar på din profil (beroende på dina [integritetsinställningar](./privacy-settings)) ser de nya uppgifterna direkt.
+Dina uppdaterade uppgifter synkroniseras automatiskt. Den som tittar på din profil (beroende på dina [integritetsinställningar](./privacy-settings.md)) ser de nya uppgifterna direkt.
 
 :::tip
 Håll din e-postadress och ditt telefonnummer aktuella. Din kyrka använder den här informationen för att skicka dig viktiga uppdateringar och påminnelser.
@@ -46,7 +48,7 @@ Du kan lägga till eller byta din profilbild under fliken **Profil**. Din bild v
 
 ## Ändringar över ChurchApps
 
-Eftersom alla ChurchApps-tjänster delar samma kontosystem blir en ändring du gör i B1 Mobile direkt synlig i [B1.church](../../b1-church/), i din kyrkas adminverktyg och i alla andra anslutna tjänster. Du behöver inte uppdatera dina uppgifter separat på varje ställe.
+Eftersom alla ChurchApps-tjänster delar samma kontosystem blir en ändring du gör i B1 Mobile direkt synlig i [B1.church](../../b1-church/index.md), i din kyrkas adminverktyg och i alla andra anslutna tjänster. Du behöver inte uppdatera dina uppgifter separat på varje ställe.
 
 :::info
 Vissa kyrkor kräver administratörens godkännande för vissa profiländringar. Om din uppdatering inte visas direkt kan du kontrollera status under fliken **Väntande** på din profilskärm.
@@ -54,5 +56,5 @@ Vissa kyrkor kräver administratörens godkännande för vissa profiländringar.
 
 ## Relaterade artiklar
 
-- [Hushåll](./household) -- Visa och hantera dina familjemedlemmar
-- [Integritetsinställningar](./privacy-settings) -- Styr vad andra kan se om dig
+- [Hushåll](./household.md) -- Visa och hantera dina familjemedlemmar
+- [Integritetsinställningar](./privacy-settings.md) -- Styr vad andra kan se om dig

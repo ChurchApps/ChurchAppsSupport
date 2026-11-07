@@ -1,5 +1,6 @@
 ---
 title: "Audit-Protokoll"
+description: "Das Audit-Protokoll in B1 Admin prüfen: Anmeldungen, Änderungen an Personendaten und Rechteänderungen nachvollziehen und Einträge als CSV exportieren."
 ---
 
 # Audit-Protokoll
@@ -78,6 +79,6 @@ Audit-Protokolleinträge werden automatisch ein Jahr lang beibehalten. Einträge
 
 ## Verwandte Artikel
 
-- [Rollen & Berechtigungen](../settings/roles-permissions) -- Verwaltung des Zugriffs
-- [Datensicherheit](../settings/data-security) -- Verstehen Sie, wie Ihre Daten geschützt sind
+- [Rollen & Berechtigungen](../settings/roles-permissions.md) -- Verwaltung des Zugriffs
+- [Datensicherheit](../settings/data-security.md) -- Verstehen Sie, wie Ihre Daten geschützt sind
 - [Berichtübersicht](./index.md) -- Siehe alle verfügbaren Berichte

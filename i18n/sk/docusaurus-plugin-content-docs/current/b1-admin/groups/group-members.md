@@ -1,5 +1,6 @@
 ---
 title: "Členovia skupiny"
+description: "Pridávajte, odstraňujte a určujte vedúcich členov skupín v B1 Admin, potom posielajte e-mail, text, tlačte alebo exportujte zoznam zo stránky skupiny."
 ---
 
 # Členovia skupiny

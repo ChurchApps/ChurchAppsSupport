@@ -1,5 +1,6 @@
 ---
 title: "Sakhiwo Tetaziso Netikhumbuto"
+description: "Indlela i-B1 Admin API lehambisa ngayo tisaziso, tisumbulelo letihleleliwe, imikhawulo ye-imeyili yelicawe, netinketfo tekuphuma kwetemiyalezo."
 ---
 
 # Sakhiwo Tetaziso Netikhumbuto
@@ -155,6 +156,6 @@ Endzaweni, umsebenti lofanako ungavuswa ngesikhatsi lesifisako nge-`npm run time
 
 ## Emakhasi Lahlobene
 
-- [Sakhiwo Se-Realtime](../realtime) — umtsetfo we-WebSocket kanye netinsimbi te-client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) leveleveli ye-in-app delivery ihamba ngato
-- [Tisaziso te-Web Push](../web-push) — kuhleleka kwe-VAPID kanye nendlela ye-browser Push API lesetjentiswa levelini yekunyuswa kwe-push
-- [Ema-Endpoint Emlayeto](../api/endpoints/messaging) — bonkhe bubanti be-REST betimilayeto, tinkulumo, tixhumano, kanye nemigwaco yesaziso/sikhumbuto
+- [Sakhiwo Se-Realtime](../realtime.md) — umtsetfo we-WebSocket kanye netinsimbi te-client (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) leveleveli ye-in-app delivery ihamba ngato
+- [Tisaziso te-Web Push](../web-push.md) — kuhleleka kwe-VAPID kanye nendlela ye-browser Push API lesetjentiswa levelini yekunyuswa kwe-push
+- [Ema-Endpoint Emlayeto](../api/endpoints/messaging.md) — bonkhe bubanti be-REST betimilayeto, tinkulumo, tixhumano, kanye nemigwaco yesaziso/sikhumbuto

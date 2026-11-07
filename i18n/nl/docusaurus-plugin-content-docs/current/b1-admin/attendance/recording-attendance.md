@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheid registreren"
+description: "Registreer aanwezigheid per groepsbijeenkomst in B1 Admin: maak een sessie, markeer de aanwezigen, sla notities op en print of exporteer de lijst."
 ---
 
 # Aanwezigheid registreren

@@ -1,5 +1,6 @@
 ---
 title: "Melacak Kehadiran"
+description: "Tinjau tren kehadiran, saring laporan berdasarkan kampus, layanan, atau grup, dan ekspor kehadiran grup dari halaman Kehadiran di B1 Admin."
 ---
 
 # Melacak Kehadiran

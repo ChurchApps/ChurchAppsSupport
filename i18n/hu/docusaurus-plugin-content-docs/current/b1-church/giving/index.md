@@ -1,5 +1,7 @@
 ---
-title: "Adományozás"
+title: "Online adakozás és adományok a B1.church-en"
+sidebar_label: "Adományozás"
+description: "Adakozzon egyházának online a B1.church-en fiók nélkül, vagy jelentkezzen be ismétlődő adományok, fizetési módok és adománykimutatások kezeléséhez."
 ---
 
 # Adományozás

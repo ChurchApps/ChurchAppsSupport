@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Se livestreams på B1.church"
+sidebar_label: "Live Streaming"
+description: "Se din kirkes live-gudstjenester på B1.churchs Stream-side og deltag i chatten sammen med udsendelsen, uden login."
 ---
 
 # Live Streaming

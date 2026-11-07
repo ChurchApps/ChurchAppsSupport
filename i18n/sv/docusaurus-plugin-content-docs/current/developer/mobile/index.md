@@ -1,5 +1,6 @@
 ---
 title: "Mobilappar"
+description: "Översikt över ChurchApps Expo- och React Native-appar (B1 Mobile, B1 Checkin, LessonsScreen) med länkar till installationsguiden för det gemensamma verktygspaketet."
 ---
 
 # Mobilappar
@@ -14,13 +15,13 @@ ChurchApps mobilappar är byggda med **React Native** och **Expo** och ger nativ
 
 | App | Syfte | Plattform |
 |-----|-------|-----------|
-| [B1 Mobile](./b1-mobile) | Huvudsaklig app för kyrkomedlemmar | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Huvudsaklig app för kyrkomedlemmar | Android, iOS |
 | B1 Checkin | Kioskapp för incheckningsstationer | Android, iOS |
 | LessonsScreen | Android TV-app för att visa lektioner i klassrum | Android TV |
 
 ### B1 Mobile
 
-Kyrkans huvudapp för medlemmar. Medlemmar kan visa kataloger, komma åt gåvoinformation, registrera närvaro, ta emot aviseringar och delta i sin kyrkogemenskap. Se [installationsguiden för B1 Mobile](./b1-mobile) för mer information.
+Kyrkans huvudapp för medlemmar. Medlemmar kan visa kataloger, komma åt gåvoinformation, registrera närvaro, ta emot aviseringar och delta i sin kyrkogemenskap. Se [installationsguiden för B1 Mobile](./b1-mobile.md) för mer information.
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ En särskilt utformad kioskapp för incheckningsstationer i kyrkor. Den erbjuder
 En Android TV-app som visar lektionsinnehåll i klassrum. Lärare kan skicka lektionsbilder, videor och aktiviteter till en TV-skärm, vilket gör det enkelt att presentera läroplansmaterial under lektionerna.
 
 :::info
-Alla mobilappar använder samma Expo-baserade verktygskedja och följer liknande installationsmönster. [B1 Mobile](./b1-mobile)-guiden fungerar som referens för den allmänna installationsprocessen för alla mobilprojekt.
+Alla mobilappar använder samma Expo-baserade verktygskedja och följer liknande installationsmönster. [B1 Mobile](./b1-mobile.md)-guiden fungerar som referens för den allmänna installationsprocessen för alla mobilprojekt.
 :::

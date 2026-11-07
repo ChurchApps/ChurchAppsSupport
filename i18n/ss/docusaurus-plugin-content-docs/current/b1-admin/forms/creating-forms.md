@@ -1,5 +1,6 @@
 ---
 title: "Kudala Emafomu"
+description: "Dala tifomu letisetfwako ku-B1 Admin tekubhalisa temcimbi, tematsamo nemakhadi etivakashi, bese ubelana ngato ngelinki, ikhodi ye-QR noma ngekuphrinta."
 ---
 
 # Kudala Emafomu

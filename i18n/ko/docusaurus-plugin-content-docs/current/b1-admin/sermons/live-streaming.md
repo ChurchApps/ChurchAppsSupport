@@ -1,5 +1,7 @@
 ---
-title: "생방송"
+title: "B1 Admin의 라이브 스트림 시간 및 설정"
+sidebar_label: "생방송"
+description: "주간 또는 일회성 라이브 스트림 예배를 예약하고, 채팅 및 영상 조기 시작 시간을 설정하며, YouTube 채널을 연결하고, B1 Admin에서 임베드 문제를 해결하세요."
 ---
 
 # 생방송
@@ -15,7 +17,7 @@ Live Stream Times 페이지에서 교회의 송출 일정을 설정하고, 예�
 
 - **contentApi.streamingServices.edit** 권한이 필요합니다. 접근 권한이 없다면 [역할 및 권한](../settings/roles-permissions.md)을 참고하세요.
 - 자동 생방송을 쓰려면 YouTube 채널 ID를 준비하세요.
-- 송출 원본으로 쓸 [설교](managing-sermons) 또는 고정 생방송 URL을 최소한 하나 추가하세요.
+- 송출 원본으로 쓸 [설교](./managing-sermons.md) 또는 고정 생방송 URL을 최소한 하나 추가하세요.
 
 </div>
 
@@ -76,13 +78,13 @@ YouTube Channel ID를 찾으려면 YouTube 채널의 고급 설정으로 가서 
 
 ## 색상과 로고 꾸미기
 
-생방송 페이지는 웹사이트의 [외관](../website/appearance) 설정을 사용합니다.
+생방송 페이지는 웹사이트의 [외관](../website/appearance.md) 설정을 사용합니다.
 
 - 머리글에는 **밝은 강조 색**과 어두운 글자가 쓰입니다.
 - 사이드바에는 **어두운 강조 색**과 밝은 글자가 쓰입니다.
 - 생방송 페이지에 **Light Background Logo**가 나타납니다. 배경이 투명하고 가로세로 비율이 4:1인 이미지를 사용하세요.
 
-이것들을 바꾸려면 **Website**, 그다음 **Appearance**로 가서 [색상 팔레트](../website/appearance#color-palette)와 [로고](../website/appearance#logo-and-branding) 설정을 업데이트하세요.
+이것들을 바꾸려면 **Website**, 그다음 **Appearance**로 가서 [색상 팔레트](../website/appearance.md#color-palette)와 [로고](../website/appearance.md#logo-and-branding) 설정을 업데이트하세요.
 
 ## 생방송 진행자 추가하기
 
@@ -129,5 +131,5 @@ YouTube 채널에서 오래되었거나 예정된 생방송이 있는지 확인�
 
 ## 다음 단계
 
-- [설교 관리하기](managing-sermons) -- 설교 자료실에 설교 추가하기
-- [재생 목록](playlists) -- 설교를 시리즈로 정리하기
+- [설교 관리하기](./managing-sermons.md) -- 설교 자료실에 설교 추가하기
+- [재생 목록](./playlists.md) -- 설교를 시리즈로 정리하기

@@ -1,5 +1,6 @@
 ---
 title: "Phê duyệt lịch"
+description: "Xem các yêu cầu đặt phòng và tài nguyên đang chờ trong B1 Admin, kiểm tra xung đột, rồi duyệt hoặc từ chối, có thể đăng sự kiện kèm theo."
 ---
 
 # Phê duyệt lịch
@@ -13,7 +14,7 @@ Trang Phê duyệt là nơi quản trị viên xem xét và xử lý các yêu c
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cấu hình phòng hoặc tài nguyên với một **Nhóm phê duyệt** trong [Phòng & Tài nguyên](rooms-resources)
+- Cấu hình phòng hoặc tài nguyên với một **Nhóm phê duyệt** trong [Phòng & Tài nguyên](./rooms-resources.md)
 - Bạn cần quyền **Quản trị lịch** hoặc quyền **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Nhấp **Phê duyệt** hoặc **Từ chối** trên bất kỳ yêu cầu đặ
 Khi bạn nhấp **Phê duyệt**, hộp thoại **Phê duyệt đặt phòng** sẽ mở ra để bạn có thể đồng thời công bố sự kiện trong cùng một bước:
 
 1. Chọn **Công bố lên lịch công khai** để sự kiện hiển thị công khai trên lịch của nhóm. Bỏ chọn nếu bạn chỉ muốn phê duyệt lịch đặt mà không thay đổi chế độ hiển thị của sự kiện.
-2. Khi đã chọn **Công bố lên lịch công khai**, bạn có thể tùy chọn chọn một lịch được tuyển chọn trong **Cũng thêm vào lịch** để thêm sự kiện vào một trong các [lịch được tuyển chọn](curated-calendar) của bạn. Giữ nguyên **Không có** nếu bạn muốn bỏ qua bước này. (Tùy chọn này chỉ xuất hiện nếu bạn có quyền **content.edit**.)
+2. Khi đã chọn **Công bố lên lịch công khai**, bạn có thể tùy chọn chọn một lịch được tuyển chọn trong **Cũng thêm vào lịch** để thêm sự kiện vào một trong các [lịch được tuyển chọn](./curated-calendar.md) của bạn. Giữ nguyên **Không có** nếu bạn muốn bỏ qua bước này. (Tùy chọn này chỉ xuất hiện nếu bạn có quyền **content.edit**.)
 3. Nhấp **Phê duyệt**.
 
 ## Sự kiện đang chờ
@@ -49,10 +50,10 @@ Khi bạn nhấp **Phê duyệt**, hộp thoại **Phê duyệt đặt phòng** 
 Nếu quy trình lịch của bạn yêu cầu phê duyệt sự kiện trước khi sự kiện hiển thị với công chúng, các sự kiện đang chờ sẽ xuất hiện trong mục **Yêu cầu sự kiện**. Nhấp **Phê duyệt** để công bố sự kiện lên lịch, hoặc **Từ chối** để thông báo cho người gửi rằng cần chỉnh sửa.
 
 :::tip
-Thiết lập Nhóm phê duyệt cho một phòng trong [Phòng & Tài nguyên](rooms-resources) để yêu cầu phê duyệt đối với phòng đó. Khi đó, các nhóm có quyền truy cập có thể yêu cầu phòng khi tạo sự kiện, và các yêu cầu này sẽ chuyển về trang này.
+Thiết lập Nhóm phê duyệt cho một phòng trong [Phòng & Tài nguyên](./rooms-resources.md) để yêu cầu phê duyệt đối với phòng đó. Khi đó, các nhóm có quyền truy cập có thể yêu cầu phòng khi tạo sự kiện, và các yêu cầu này sẽ chuyển về trang này.
 :::
 
 ## Bài viết liên quan
 
-- [Phòng, Tài nguyên & Lập lịch](rooms-resources) — cấu hình các phòng và tài nguyên có thể đặt
-- [Tạo lịch](creating-calendars) — quản lý lịch và sự kiện
+- [Phòng, Tài nguyên & Lập lịch](./rooms-resources.md) — cấu hình các phòng và tài nguyên có thể đặt
+- [Tạo lịch](./creating-calendars.md) — quản lý lịch và sự kiện

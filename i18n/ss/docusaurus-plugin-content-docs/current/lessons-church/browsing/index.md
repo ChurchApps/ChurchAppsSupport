@@ -1,5 +1,6 @@
 ---
 title: "Kuphequlula Kontenti"
+description: "Thola kutsi ungaphenya kanjani i-laybhurari yemakharikhulamu lemahhala ye-Lessons.church ngaphandle kwe-akhawunti, kubandakanya kwakheka kwekhasi lekuqala, kuphenya ngalinhlelo, kufuna, nebahlinzeki bangaphandle."
 ---
 
 # Kuphequlula Kontenti

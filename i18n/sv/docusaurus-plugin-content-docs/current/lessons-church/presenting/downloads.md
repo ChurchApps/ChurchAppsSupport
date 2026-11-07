@@ -1,5 +1,6 @@
 ---
 title: "Nedladdningar och material"
+description: "Hitta och ladda ner utskrivbara aktivitetsblad, ledarguider och PDF-filer kopplade till Lessons.church-lektioner, studier eller program för din klass."
 ---
 
 # Nedladdningar och material

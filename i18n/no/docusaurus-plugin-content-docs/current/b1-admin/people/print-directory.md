@@ -1,5 +1,6 @@
 ---
 title: "Skriv ut katalog"
+description: "Lag en utskrivbar medlemskatalog gruppert etter husstand fra B1 Admin, med bilder, kontaktinfo og bursdager, tilpasset A4-papir."
 ---
 
 # Skriv ut katalog

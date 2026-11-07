@@ -1,5 +1,7 @@
 ---
-title: "수업 예약하기"
+title: "B1 Admin에서 Lessons.church 레슨 예약하기"
+sidebar_label: "수업 예약하기"
+description: "Lessons.church를 B1 Admin에 연결한 뒤 레슨을 예약하거나, 시리즈를 일괄 예약하거나, 연간 계획을 사역의 예배 계획에 적용하세요."
 ---
 
 # Lessons.church에서 수업 예약하기

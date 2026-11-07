@@ -1,5 +1,7 @@
 ---
-title: "Ordem do Culto"
+title: "Detalhes da Ordem do Culto no App B1.church"
+sidebar_label: "Ordem do Culto"
+description: "Veja a ordem do culto no app B1.church, com tempo acumulado, letras das músicas, transposição de tom e prévias de lições para sua equipe."
 ---
 
 # Ordem do Culto

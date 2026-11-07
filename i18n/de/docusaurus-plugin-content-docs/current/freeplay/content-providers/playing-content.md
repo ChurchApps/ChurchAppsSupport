@@ -1,5 +1,6 @@
 ---
 title: "Inhalte abspielen"
+description: "FreePlay per TV-Fernbedienung steuern: pausieren, Folien und Videos überspringen, zu jeder Einheit springen und den Player verlassen."
 ---
 
 # Inhalte abspielen
@@ -13,13 +14,13 @@ Der FreePlay-Player füllt den Bildschirm und ist für TV-Fernbedienungen gemach
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Wählen Sie etwas zum Abspielen aus. Siehe [Inhalte durchsuchen und herunterladen](./browsing-content), [Plan-Modus](../plan-mode/) oder [Ankündigungen](./announcements)
+- Wählen Sie etwas zum Abspielen aus. Siehe [Inhalte durchsuchen und herunterladen](./browsing-content.md), [Plan-Modus](../plan-mode/index.md) oder [Ankündigungen](./announcements.md)
 - Drücken Sie **Start**, um den Player zu öffnen
 
 </div>
 
 :::info
-Bildschirme, die mit einem Kalender verbunden sind, nutzen einen eigenen geplanten Player mit leicht abweichenden Bedienelementen. Siehe [Geplante Wiedergabe auf dem Fernseher](../scheduled-mode/scheduled-playback).
+Bildschirme, die mit einem Kalender verbunden sind, nutzen einen eigenen geplanten Player mit leicht abweichenden Bedienelementen. Siehe [Geplante Wiedergabe auf dem Fernseher](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Bedienelemente des Players
@@ -57,7 +58,7 @@ Drücken Sie während der Wiedergabe **Pfeil oben**, um **Nachricht auswählen**
 Drücken Sie auf der Fernbedienung **Pfeil unten** oder **Zurück**, um den Player zu verlassen. Wohin Sie gelangen, hängt davon ab, was Sie abgespielt haben:
 
 - **Inhalte eines Anbieters** — zurück zur Inhaltsübersicht
-- **Ein Plan** — zurück zum Bildschirm für den Plan-Download. Siehe [Plan-Modus](../plan-mode/)
+- **Ein Plan** — zurück zum Bildschirm für den Plan-Download. Siehe [Plan-Modus](../plan-mode/index.md)
 - **Ein Download** — zurück zum Bildschirm **Downloads**
 
 :::info
@@ -66,5 +67,5 @@ Der Bildschirm bleibt wach, solange der Player geöffnet ist, sodass sich der Fe
 
 ## Verwandte Artikel
 
-- **[Inhalte durchsuchen und herunterladen](./browsing-content)** - Inhalte finden und für die Offline-Wiedergabe herunterladen
-- **[Geplante Wiedergabe auf dem Fernseher](../scheduled-mode/scheduled-playback)** - Fernbedienung für Bildschirme, die einem Kalender folgen
+- **[Inhalte durchsuchen und herunterladen](./browsing-content.md)** - Inhalte finden und für die Offline-Wiedergabe herunterladen
+- **[Geplante Wiedergabe auf dem Fernseher](../scheduled-mode/scheduled-playback.md)** - Fernbedienung für Bildschirme, die einem Kalender folgen

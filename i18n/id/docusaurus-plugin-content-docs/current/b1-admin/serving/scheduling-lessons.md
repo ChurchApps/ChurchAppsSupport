@@ -1,5 +1,7 @@
 ---
-title: "Menjadwalkan Pelajaran"
+title: "Menjadwalkan Pelajaran dari Lessons.church di B1 Admin"
+sidebar_label: "Menjadwalkan Pelajaran"
+description: "Hubungkan Lessons.church ke B1 Admin, lalu jadwalkan pelajaran, jadwalkan satu seri sekaligus, atau terapkan rencana tahunan ke rencana ibadah pelayanan."
 ---
 
 # Menjadwalkan Pelajaran dari Lessons.church

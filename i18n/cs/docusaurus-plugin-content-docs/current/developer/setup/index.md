@@ -1,5 +1,6 @@
 ---
 title: "Nastavení"
+description: "Výběr lokálního vývojového postupu pro projekty ChurchApps: práce na frontendu přes sdílená demo API, nebo celý stack lokálně s MySQL pro změny backendu."
 ---
 
 # Nastavení
@@ -40,15 +41,15 @@ Tento přístup vám umožní začít provádět změny ve frontendu během něk
 
 ### 2. Spuštění všeho lokálně
 
-Pokud potřebujete upravovat kód API nebo pracovat offline, můžete spustit celý systém lokálně. To vyžaduje MySQL 8.0+ a další konfiguraci. Podrobné pokyny najdete v průvodci [místní nastavení API](../api/local-setup).
+Pokud potřebujete upravovat kód API nebo pracovat offline, můžete spustit celý systém lokálně. To vyžaduje MySQL 8.0+ a další konfiguraci. Podrobné pokyny najdete v průvodci [místní nastavení API](../api/local-setup.md).
 
 ## Začínáme
 
 Postupujte podle těchto stránek v uvedeném pořadí:
 
-1. **[Předpoklady](prerequisites)** -- Instalace potřebných nástrojů (Node.js, Git, MySQL atd.)
-2. **[Přehled projektů](project-overview)** -- Seznámení s tím, které projekty existují a co dělají
-3. **[Proměnné prostředí](environment-variables)** -- Nastavení souborů `.env`, které propojí všechny části dohromady
+1. **[Předpoklady](./prerequisites.md)** -- Instalace potřebných nástrojů (Node.js, Git, MySQL atd.)
+2. **[Přehled projektů](./project-overview.md)** -- Seznámení s tím, které projekty existují a co dělají
+3. **[Proměnné prostředí](./environment-variables.md)** -- Nastavení souborů `.env`, které propojí všechny části dohromady
 
 :::info
 Každý projekt ChurchApps je samostatný Git repozitář. Stačí naklonovat pouze konkrétní projekt nebo projekty, na kterých chcete pracovat.

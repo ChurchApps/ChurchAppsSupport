@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Lokalna konfiguracja edytora lekcji LessonsApp (Next.js) na Node.js 22+, połączenie z lokalnym LessonsApi oraz wdrażanie na S3/CloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp to aplikacja do zarządzania treścią lekcji dla [Lessons.church](ht
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj **Node.js 22+** oraz **Git** -- zobacz [Wymagania wstępne](../setup/prerequisites)
-- Skonfiguruj docelowe API (lokalne LessonsApi) -- zobacz [Zmienne środowiskowe](../setup/environment-variables)
+- Zainstaluj **Node.js 22+** oraz **Git** -- zobacz [Wymagania wstępne](../setup/prerequisites.md)
+- Skonfiguruj docelowe API (lokalne LessonsApi) -- zobacz [Zmienne środowiskowe](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Kompilacje produkcyjne są wdrażane w **S3 + CloudFront**:
 3. Uruchamiane jest unieważnienie w CloudFront, aby udostępnić nową wersję
 
 :::tip
-Szczegółowe instrukcje wdrażania znajdziesz w przewodniku [Wdrażanie aplikacji webowych](../deployment/web-apps).
+Szczegółowe instrukcje wdrażania znajdziesz w przewodniku [Wdrażanie aplikacji webowych](../deployment/web-apps.md).
 :::

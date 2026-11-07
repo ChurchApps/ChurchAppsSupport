@@ -1,5 +1,7 @@
 ---
-title: "Skupiny"
+title: "Církevní skupiny v členském portálu B1.church"
+sidebar_label: "Skupiny"
+description: "Procházejte a připojujte se ke skupinám na webu B1.church. Na stránkách skupin zkontrolujete schůzky, události, členy a materiály a můžete chatovat."
 ---
 
 # Skupiny

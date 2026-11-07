@@ -1,5 +1,7 @@
 ---
-title: "Päivän jae"
+title: "Päivän jae B1.church-sivustolla ja portaalissa"
+sidebar_label: "Päivän jae"
+description: "Selaa päivän Raamatun jakeen kuvaa ja aiempia jakeita ja jaa tai lataa ne B1.church-sivustolta tai jäsenportaalista millä tahansa näytöllä."
 ---
 
 # Päivän jae

@@ -1,5 +1,6 @@
 ---
 title: "Nhiệm vụ"
+description: "Tạo, giao và đóng công việc trong B1 Admin, tìm chúng trong Phục vụ > Công việc của tôi, và đặt nhắc nhở ngày đến hạn để các việc theo dõi không bị bỏ sót."
 ---
 
 # Nhiệm vụ

@@ -1,5 +1,6 @@
 ---
 title: "Kuxhumana Nebaniketi"
+description: "Xhuma i-FreePlay kumhlinzeki wemaphepha ngekusebentisa i-QR code, ilogini ye-imeyili, noma kufinyelela ngincindvo kanye, bese uphatsa noma uhlukanisa lokuxhumana kuSettings."
 ---
 
 # Kuxhumana Nebaniketi
@@ -13,7 +14,7 @@ Ngaphambi kwekutsi uhlole kucuketfwe kusuka kumniketi, udzinga kuxhumana naye. L
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka bese ucalisa i-FreePlay -- buka [Kucala](../getting-started/)
+- Faka bese ucalisa i-FreePlay -- buka [Kucala](../getting-started/index.md)
 - Yiba ne-remote yakho ye-TV lulungele kuhamba
 - Kubaniketi labadzinga kungena, yiba nemininingwane yakho yeakhawundi itfolakala
 
@@ -80,5 +81,5 @@ Kuxhumana ngaphandle kususa sicinisekiso lesigciniwe kulidivayisi lakho. Utawudz
 
 ## Timibhalo Lehlobene
 
-- **[Kuhlola Nekulayisha Kucuketfwe](./browsing-content)** - Hamba emafolda futsi udlale kucuketfwe ngemuva kwekuxhumana
+- **[Kuhlola Nekulayisha Kucuketfwe](./browsing-content.md)** - Hamba emafolda futsi udlale kucuketfwe ngemuva kwekuxhumana
 - **[Sifinyeto Sebaniketi Bekucuketfwe](./index.md)** - Bona bonkhe baniketi labatfolakalako

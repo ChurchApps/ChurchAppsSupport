@@ -1,5 +1,6 @@
 ---
 title: "Přidávání hostů"
+description: "Přidejte návštěvní dítě, příbuzného nebo přítele do domácnosti na kiosku B1 Checkin, pak přiřaďte skupiny a dokončete check-in."
 ---
 
 # Přidávání hostů
@@ -13,8 +14,8 @@ Pokud někdo navštěvuje vaši rodinu a potřebuje se přihlásit spolu s vaš�
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Vyhledejte svou rodinu](./looking-up-members) a vyberte člena z výsledků hledání
-- Přejděte na [obrazovku kontroly domácnosti](./household-review), kde vidíte členy své rodiny
+- [Vyhledejte svou rodinu](./looking-up-members.md) a vyberte člena z výsledků hledání
+- Přejděte na [obrazovku kontroly domácnosti](./household-review.md), kde vidíte členy své rodiny
 
 </div>
 
@@ -36,8 +37,8 @@ Pokud jméno hosta odpovídá někomu, kdo je již v systému evidován a není 
 
 Jakmile se host zobrazí v seznamu vaší domácnosti, můžete:
 
-- **Rozbalit jeho kartu** a [přiřadit ho ke skupině](./group-assignment), stejně jako každého jiného člena rodiny.
-- **[Přihlásit](./completing-checkin)** celou domácnost včetně hosta.
+- **Rozbalit jeho kartu** a [přiřadit ho ke skupině](./group-assignment.md), stejně jako každého jiného člena rodiny.
+- **[Přihlásit](./completing-checkin.md)** celou domácnost včetně hosta.
 
 ## Zrušení
 
@@ -49,4 +50,4 @@ Přidání hosta na kiosku vytvoří záznam osoby v církevní databázi. Sprá
 
 ## Další krok
 
-Po přidání hostů a [přiřazení ke skupinám](./group-assignment), pokud je potřeba, jste připraveni [dokončit přihlášení](./completing-checkin).
+Po přidání hostů a [přiřazení ke skupinám](./group-assignment.md), pokud je potřeba, jste připraveni [dokončit přihlášení](./completing-checkin.md).

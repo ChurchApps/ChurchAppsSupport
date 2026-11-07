@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Verbinden Sie Donorbox über Zapier mit B1 Admin, damit Online-Spenden automatisch Spendendatensätze und Spenderprofile erstellen, ganz ohne manuellen Export."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorboxs *Neue oder aktualisierte Spende* wird auch bei Bearbeitungen ausgelös
 
 ## Siehe auch
 
-- [Zapier (Übersicht)](../zapier) – die B1-Seite jedes Zapier-Rezepts
-- [Subsplash](./subsplash) – eine weitere Spendenplattform mit einer Zapier-App
-- [Mailchimp](./mailchimp) – Kettenverkettung „neue Gabe" in ein E-Mail-Tag
+- [Zapier (Übersicht)](../zapier.md) – die B1-Seite jedes Zapier-Rezepts
+- [Subsplash](./subsplash.md) – eine weitere Spendenplattform mit einer Zapier-App
+- [Mailchimp](./mailchimp.md) – Kettenverkettung „neue Gabe" in ein E-Mail-Tag

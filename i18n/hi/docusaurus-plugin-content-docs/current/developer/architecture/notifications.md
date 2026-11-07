@@ -1,5 +1,6 @@
 ---
 title: "सूचनाएँ और रिमाइंडर आर्किटेक्चर"
+description: "B1 Admin API सूचनाएँ, निर्धारित अनुस्मारक, चर्च ईमेल सीमाएँ और टेक्स्ट ऑप्ट-आउट को एक वितरण मार्ग और प्राथमिकता गेट से कैसे रूट करता है।"
 ---
 
 # सूचनाएँ और रिमाइंडर आर्किटेक्चर
@@ -185,6 +186,6 @@ Shadow rows notifications bell से अदृश्य रहती हैं:
 
 ## संबंधित पृष्ठ
 
-- [Real-time Architecture](../realtime) -- WebSocket प्रोटोकॉल और क्लाइंट प्रिमिटिव (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) जिन पर in-app डिलीवरी स्तर चलता है
-- [Web Push Notifications](../web-push) -- VAPID सेटअप और ब्राउज़र Push API पथ जो push एस्केलेशन स्तर उपयोग करता है
-- [Messaging Endpoints](../api/endpoints/messaging) -- संदेश, बातचीत, कनेक्शन, और सूचना/रिमाइंडर रूट्स के लिए पूरी REST सतह
+- [Real-time Architecture](../realtime.md) -- WebSocket प्रोटोकॉल और क्लाइंट प्रिमिटिव (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) जिन पर in-app डिलीवरी स्तर चलता है
+- [Web Push Notifications](../web-push.md) -- VAPID सेटअप और ब्राउज़र Push API पथ जो push एस्केलेशन स्तर उपयोग करता है
+- [Messaging Endpoints](../api/endpoints/messaging.md) -- संदेश, बातचीत, कनेक्शन, और सूचना/रिमाइंडर रूट्स के लिए पूरी REST सतह

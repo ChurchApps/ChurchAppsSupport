@@ -1,5 +1,7 @@
 ---
-title: "Lahjoituksen tekeminen"
+title: "Lahjoittaminen B1 Mobilessa"
+sidebar_label: "Lahjoituksen tekeminen"
+description: "Lahjoita seurakunnallesi Lahjoita-välilehdeltä B1 Mobilessa: valitse rahasto, syötä summa, maksa Stripe-palvelulla ja toista aiemmat lahjoitukset nopeasti."
 ---
 
 # Lahjoituksen tekeminen
@@ -13,8 +15,8 @@ Lahjoittaminen B1 Mobilen kautta on nopeaa ja helppoa. Lahjoitusosion **Lahjoita
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
-- Valmistele luotto- tai debit-kortti, tai [tallenna maksutapa](./managing-payments) etukäteen
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
+- Valmistele luotto- tai debit-kortti, tai [tallenna maksutapa](./managing-payments.md) etukäteen
 
 </div>
 
@@ -42,10 +44,10 @@ Tarkista lahjoituksen summa ja rahasto kahteen kertaan ennen lähettämistä. La
 Jos haluat lahjoittaa saman summan kuin edellisellä kerralla, sinun ei tarvitse käydä läpi koko lahjoitusprosessia. **Yleiskatsaus**-välilehdellä näkyy viimeisin lahjoituksesi sekä **Toista**-painike. Napauta sitä lähettääksesi saman lahjoituksen uudelleen nopeasti.
 
 :::tip
-Jos aiot lahjoittaa säännöllisesti, tallenna maksutapasi **Hallinta**-välilehdellä, jotta voit lahjoittaa seuraavalla kerralla vielä nopeammin. Katso lisätietoja: [Maksutapojen hallinta](./managing-payments).
+Jos aiot lahjoittaa säännöllisesti, tallenna maksutapasi **Hallinta**-välilehdellä, jotta voit lahjoittaa seuraavalla kerralla vielä nopeammin. Katso lisätietoja: [Maksutapojen hallinta](./managing-payments.md).
 :::
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Maksutapojen hallinta](./managing-payments) -- Tallenna kortti nopeampaa lahjoittamista varten
-- [Lahjoitushistoria](./donation-history) -- Katso lahjoitusyhteenvetosi ja aiemmat lahjoituksesi
+- [Maksutapojen hallinta](./managing-payments.md) -- Tallenna kortti nopeampaa lahjoittamista varten
+- [Lahjoitushistoria](./donation-history.md) -- Katso lahjoitusyhteenvetosi ja aiemmat lahjoituksesi

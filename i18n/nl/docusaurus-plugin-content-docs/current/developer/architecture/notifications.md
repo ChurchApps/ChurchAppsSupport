@@ -1,5 +1,6 @@
 ---
 title: "Architectuur van meldingen en herinneringen"
+description: "Hoe de B1 Admin API meldingen, geplande herinneringen, e-maillimieten van kerken en sms-afmeldingen via één bezorgtrechter en voorkeurscontrole routeert."
 ---
 
 # Architectuur van meldingen en herinneringen
@@ -185,6 +186,6 @@ Lokaal kan dezelfde logica op verzoek worden gestart met `npm run timer:30min` e
 
 ## Gerelateerde pagina's
 
-- [Realtime-architectuur](../realtime): het WebSocket-protocol en de clientprimitieven (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) waarop het in-app-leveringsniveau steunt
-- [Web Push-meldingen](../web-push): VAPID-instelling en het pad van de browser-Push-API dat het push-escalatieniveau gebruikt
-- [Messaging-eindpunten](../api/endpoints/messaging): het volledige REST-oppervlak voor berichten, gesprekken, verbindingen en routes voor meldingen en herinneringen
+- [Realtime-architectuur](../realtime.md): het WebSocket-protocol en de clientprimitieven (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) waarop het in-app-leveringsniveau steunt
+- [Web Push-meldingen](../web-push.md): VAPID-instelling en het pad van de browser-Push-API dat het push-escalatieniveau gebruikt
+- [Messaging-eindpunten](../api/endpoints/messaging.md): het volledige REST-oppervlak voor berichten, gesprekken, verbindingen en routes voor meldingen en herinneringen

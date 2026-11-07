@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Configurez des webhooks temps réel dans B1 Admin : points d’arrivée, choix des événements, vérification des signatures HMAC, relances et renvois."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Allez à **Paramètres → Développeur → Webhooks → Nouveau Webhook**. Entr
 
 ### Via l'API
 
-Tous les points de terminaison se trouvent sous le chemin de base du module Membership `/membership/webhooks` et nécessitent soit un JWT d'un administrateur d'église avec la permission `Settings / Edit`, **soit une [clé API](./api-keys) frappée avec la portée `settings:write`**. Les mêmes routes acceptent les deux. C'est ce qui permet à Zapier et Make d'enregistrer les webhooks au nom de l'église lorsqu'un Zap ou un scénario est activé.
+Tous les points de terminaison se trouvent sous le chemin de base du module Membership `/membership/webhooks` et nécessitent soit un JWT d'un administrateur d'église avec la permission `Settings / Edit`, **soit une [clé API](./api-keys.md) frappée avec la portée `settings:write`**. Les mêmes routes acceptent les deux. C'est ce qui permet à Zapier et Make d'enregistrer les webhooks au nom de l'église lorsqu'un Zap ou un scénario est activé.
 
 ```http
 POST /membership/webhooks

@@ -1,5 +1,6 @@
 ---
 title: "Site web"
+description: "Vue d'ensemble du créateur de site B1 Admin : pages, blog, blocs, apparence, fichiers et calendriers, avec liens vers les guides."
 ---
 
 # Site web
@@ -22,7 +23,7 @@ Vos liens de navigation sont affichés dans une structure arborescente. Vous pou
 
 ### Blog {#blog}
 
-Publiez des actualités, des mises à jour et des méditations sous forme d'articles de blog à l'adresse `/blog` de votre site, avec un flux RSS. Voir le guide [Blog](blog).
+Publiez des actualités, des mises à jour et des méditations sous forme d'articles de blog à l'adresse `/blog` de votre site, avec un flux RSS. Voir le guide [Blog](./blog.md).
 
 ### Blocs
 
@@ -30,24 +31,24 @@ Construisez des composants de contenu réutilisables que vous pouvez placer sur 
 
 ### Apparence
 
-Personnalisez le thème, les couleurs, les polices, le logo et l'espacement de votre site web. Vous pouvez appliquer des thèmes de style prédéfinis pour un démarrage rapide ou affiner chaque détail avec l'éditeur de palette de couleurs, les paramètres de typographie et les CSS personnalisés. Voir le guide d'[Apparence](appearance) pour plus de détails.
+Personnalisez le thème, les couleurs, les polices, le logo et l'espacement de votre site web. Vous pouvez appliquer des thèmes de style prédéfinis pour un démarrage rapide ou affiner chaque détail avec l'éditeur de palette de couleurs, les paramètres de typographie et les CSS personnalisés. Voir le guide d'[Apparence](./appearance.md) pour plus de détails.
 
 ### Fichiers
 
-Téléchargez et gérez toutes vos ressources multimédias -- images, documents et autres fichiers -- dans un seul emplacement central, et copiez les liens des fichiers pour les utiliser n'importe où sur votre site. Voir [Fichiers](files) pour plus d'informations.
+Téléchargez et gérez toutes vos ressources multimédias -- images, documents et autres fichiers -- dans un seul emplacement central, et copiez les liens des fichiers pour les utiliser n'importe où sur votre site. Voir [Fichiers](./files.md) pour plus d'informations.
 
 ### Calendriers
 
 Publiez des calendriers d'événements sur votre site web pour que les visiteurs puissent voir ce qui se passe à votre église. Créez des calendriers sélectionnés qui tirent les événements de plusieurs groupes dans une seule vue. Les calendriers ont leur propre élément **Calendriers** dans le menu B1 Admin, distinct de **Site web**.
 
 :::tip
-Commencez par [Configuration initiale](initial-setup) si vous configurez votre site web pour la première fois. Cela vous guide dans la configuration du domaine, la création de votre première page et la configuration de l'apparence de votre site.
+Commencez par [Configuration initiale](./initial-setup.md) si vous configurez votre site web pour la première fois. Cela vous guide dans la configuration du domaine, la création de votre première page et la configuration de l'apparence de votre site.
 :::
 
 ## Prochaines étapes
 
-- [Configuration initiale](initial-setup) -- Mettez votre site web en ligne pour la première fois
-- [Gestion des pages](managing-pages) -- Apprenez à créer et organiser vos pages
-- [Utilisation de l'éditeur de page](page-editor) -- Construisez et stylez le contenu de votre page avec l'éditeur visuel
-- [Apparence](appearance) -- Personnalisez l'apparence et la convivialité de votre site
-- [Fichiers](files) -- Téléchargez et gérez les fichiers multimédias
+- [Configuration initiale](./initial-setup.md) -- Mettez votre site web en ligne pour la première fois
+- [Gestion des pages](./managing-pages.md) -- Apprenez à créer et organiser vos pages
+- [Utilisation de l'éditeur de page](./page-editor.md) -- Construisez et stylez le contenu de votre page avec l'éditeur visuel
+- [Apparence](./appearance.md) -- Personnalisez l'apparence et la convivialité de votre site
+- [Fichiers](./files.md) -- Téléchargez et gérez les fichiers multimédias

@@ -1,5 +1,7 @@
 ---
-title: "Cronologia Donazioni"
+title: "Visualizzare lo storico donazioni in B1 Mobile"
+sidebar_label: "Cronologia Donazioni"
+description: "Controlla le offerte dell'anno, l'ultima donazione e lo storico completo in B1 Mobile, e ripeti un'offerta passata con un tocco dalla scheda Panoramica."
 ---
 
 # Cronologia Donazioni
@@ -13,8 +15,8 @@ B1 Mobile ti offre un quadro chiaro delle tue offerte attraverso due schede: **P
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
-- [Effettua almeno una donazione](./making-donations) per vedere la cronologia
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
+- [Effettua almeno una donazione](./making-donations.md) per vedere la cronologia
 
 </div>
 
@@ -45,5 +47,5 @@ Controlla regolarmente la scheda **Panoramica** per restare al passo con i tuoi 
 
 ## Articoli Correlati
 
-- [Effettuare una Donazione](./making-donations) -- Fai una nuova offerta dall'app
-- [Gestione dei Metodi di Pagamento](./managing-payments) -- Aggiungi o rimuovi metodi di pagamento salvati
+- [Effettuare una Donazione](./making-donations.md) -- Fai una nuova offerta dall'app
+- [Gestione dei Metodi di Pagamento](./managing-payments.md) -- Aggiungi o rimuovi metodi di pagamento salvati

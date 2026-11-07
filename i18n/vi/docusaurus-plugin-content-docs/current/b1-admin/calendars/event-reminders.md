@@ -1,21 +1,22 @@
 ---
 title: "Nhắc nhở sự kiện"
+description: "Thiết lập nhắc nhở sự kiện trong B1 Admin qua thông báo đẩy, email và SMS: chọn thời điểm, người nhận và nội dung riêng để mọi người được nhắc kịp thời."
 ---
 
 # Nhắc nhở sự kiện
 
 <div class="article-intro">
 
-Nhắc nhở sự kiện tự động thông báo cho đúng người trước khi sự kiện diễn ra -- ví dụ: "Đừng bỏ lỡ! Buổi hội thảo về chăm sóc sức khỏe sẽ bắt đầu vào ngày mai lúc 9:00 sáng." Bạn chỉ cần thiết lập nhắc nhở một lần trên sự kiện, và B1 sẽ gửi đi đúng lịch qua thông báo đẩy, email, và nếu nhà thờ của bạn đã thiết lập nhắn tin, qua tin nhắn văn bản. Thành viên có thể kiểm soát những nhắc nhở nào họ nhận được trong [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences) của riêng mình.
+Nhắc nhở sự kiện tự động thông báo cho đúng người trước khi sự kiện diễn ra -- ví dụ: "Đừng bỏ lỡ! Buổi hội thảo về chăm sóc sức khỏe sẽ bắt đầu vào ngày mai lúc 9:00 sáng." Bạn chỉ cần thiết lập nhắc nhở một lần trên sự kiện, và B1 sẽ gửi đi đúng lịch qua thông báo đẩy, email, và nếu nhà thờ của bạn đã thiết lập nhắn tin, qua tin nhắn văn bản. Thành viên có thể kiểm soát những nhắc nhở nào họ nhận được trong [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences.md) của riêng mình.
 
 </div>
 
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Tạo sự kiện mà bạn muốn nhắc nhở mọi người (xem [Tạo lịch](creating-calendars))
-- Để tiếp cận những người đã đăng ký tham dự, hãy [bật đăng ký](creating-calendars) cho sự kiện
-- Để tiếp cận cả một nhóm, hãy đảm bảo sự kiện thuộc về một [nhóm](../groups/creating-groups) có thành viên
+- Tạo sự kiện mà bạn muốn nhắc nhở mọi người (xem [Tạo lịch](./creating-calendars.md))
+- Để tiếp cận những người đã đăng ký tham dự, hãy [bật đăng ký](./creating-calendars.md) cho sự kiện
+- Để tiếp cận cả một nhóm, hãy đảm bảo sự kiện thuộc về một [nhóm](../groups/creating-groups.md) có thành viên
 
 </div>
 
@@ -57,21 +58,21 @@ Khách chỉ được thêm bằng tên (không liên kết với hồ sơ cá n
 - Sự kiện định kỳ được xử lý tự động: mỗi buổi sắp tới sẽ có nhắc nhở riêng.
 
 :::tip
-Nhắc nhở được gửi **qua thông báo đẩy trước, email là phương án dự phòng**. Nếu thành viên đã bật thông báo đẩy, họ sẽ nhận thông báo đẩy; nếu không, họ sẽ nhận email. Thành viên chọn kênh nào họ muốn cho từng loại thông báo trong [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences) của mình.
+Nhắc nhở được gửi **qua thông báo đẩy trước, email là phương án dự phòng**. Nếu thành viên đã bật thông báo đẩy, họ sẽ nhận thông báo đẩy; nếu không, họ sẽ nhận email. Thành viên chọn kênh nào họ muốn cho từng loại thông báo trong [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences.md) của mình.
 :::
 
 ## Nhắc nhở qua tin nhắn văn bản
 
 Kênh **Tin nhắn văn bản** chỉ xuất hiện khi nhà thờ của bạn đã kết nối nhà cung cấp nhắn tin. Tin nhắn được gửi qua nhà cung cấp nhắn tin của nhà thờ bạn, và mỗi tin nhắn có thể phát sinh chi phí cho nhà thờ. Chúng được gửi thêm vào bất kỳ nhắc nhở thông báo đẩy hoặc email nào, và chỉ gửi đến những người:
 
-- Đã bật **Tin nhắn văn bản** trong [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences) của họ, và
+- Đã bật **Tin nhắn văn bản** trong [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences.md) của họ, và
 - Có số điện thoại di động trong hồ sơ cá nhân.
 
 Mỗi tin nhắn bắt đầu bằng tên nhà thờ của bạn, được giữ gọn trong một tin nhắn văn bản duy nhất, và kết thúc bằng "Trả lời STOP để hủy đăng ký." Bất kỳ ai trả lời STOP sẽ không nhận thêm tin nhắn từ nhà thờ bạn nữa. Để các phản hồi STOP đến được B1, hãy dán **URL webhook nhận tin nhắn đến (STOP)** từ [cài đặt nhắn tin](../settings/church-settings.md#texting) của bạn vào webhook nhận tin nhắn đến của nhà cung cấp.
 
 ## Thành viên có thể kiểm soát những gì
 
-Nhắc nhở luôn tôn trọng [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences) của từng thành viên. Một thành viên có thể:
+Nhắc nhở luôn tôn trọng [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences.md) của từng thành viên. Một thành viên có thể:
 
 - Tắt **Nhắc nhở sự kiện** cho thông báo đẩy, email, hoặc tin nhắn văn bản trong khi vẫn giữ các thông báo khác.
 - Bật hoặc tắt nhắc nhở qua tin nhắn văn bản bằng **Tin nhắn văn bản**.
@@ -81,10 +82,10 @@ Bạn không thể ghi đè lựa chọn hủy nhận nhắc nhở sự kiện c
 
 ## Nhắc nhở cho tình nguyện viên phục vụ
 
-Tình nguyện viên được phân công trong một kế hoạch sẽ nhận một **nhắc nhở phục vụ** riêng, kèm chi tiết kế hoạch và, nếu họ chưa phản hồi, các nút **Chấp nhận / Từ chối** ngay trong email. Những nhắc nhở này được cấu hình trên loại kế hoạch chứ không phải trên sự kiện lịch, và cũng có thể được gửi qua tin nhắn văn bản -- xem [Nhắc nhở tình nguyện viên](../serving/plans#volunteer-reminders) và [Tình nguyện viên Chủ nhật](../guides/sunday-volunteers) để biết cách hoạt động của việc phân công và nhắc nhở tình nguyện viên.
+Tình nguyện viên được phân công trong một kế hoạch sẽ nhận một **nhắc nhở phục vụ** riêng, kèm chi tiết kế hoạch và, nếu họ chưa phản hồi, các nút **Chấp nhận / Từ chối** ngay trong email. Những nhắc nhở này được cấu hình trên loại kế hoạch chứ không phải trên sự kiện lịch, và cũng có thể được gửi qua tin nhắn văn bản -- xem [Nhắc nhở tình nguyện viên](../serving/plans.md#volunteer-reminders) và [Tình nguyện viên Chủ nhật](../guides/sunday-volunteers.md) để biết cách hoạt động của việc phân công và nhắc nhở tình nguyện viên.
 
 ## Các bước tiếp theo
 
-- [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences) -- Những gì thành viên có thể kiểm soát
-- [Hướng dẫn đăng ký sự kiện](../guides/event-registration) -- Thiết lập đăng ký để nhắc nhở có thể tiếp cận người tham dự
-- [Tạo lịch](creating-calendars) -- Quay lại thiết lập lịch
+- [Tùy chọn thông báo](../../b1-church/getting-started/notification-preferences.md) -- Những gì thành viên có thể kiểm soát
+- [Hướng dẫn đăng ký sự kiện](../guides/event-registration.md) -- Thiết lập đăng ký để nhắc nhở có thể tiếp cận người tham dự
+- [Tạo lịch](./creating-calendars.md) -- Quay lại thiết lập lịch

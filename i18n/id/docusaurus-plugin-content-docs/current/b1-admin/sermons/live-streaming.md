@@ -1,5 +1,7 @@
 ---
-title: "Siaran Langsung"
+title: "Waktu dan Pengaturan Siaran Langsung di B1 Admin"
+sidebar_label: "Siaran Langsung"
+description: "Jadwalkan layanan siaran langsung mingguan atau sekali, atur waktu obrolan dan video awal, hubungkan kanal YouTube, dan atasi masalah embed di B1 Admin."
 ---
 
 # Siaran Langsung
@@ -19,7 +21,7 @@ Halaman Waktu Siaran Langsung memungkinkan Anda mengonfigurasi jadwal streaming 
 
 - Anda memerlukan izin **contentApi.streamingServices.edit**. Lihat [Peran & Izin](../settings/roles-permissions.md) jika Anda tidak memiliki akses.
 - Siapkan YouTube Channel ID Anda jika Anda berencana menggunakan siaran langsung otomatis
-- Tambahkan setidaknya satu [khotbah](managing-sermons) atau URL live permanen sebagai sumber siaran Anda
+- Tambahkan setidaknya satu [khotbah](./managing-sermons.md) atau URL live permanen sebagai sumber siaran Anda
 
 </div>
 
@@ -80,13 +82,13 @@ Untuk menemukan YouTube Channel ID Anda, buka pengaturan lanjutan kanal YouTube 
 
 ## Menyesuaikan Warna dan Logo
 
-Halaman siaran langsung Anda menggunakan pengaturan [Tampilan](../website/appearance) situs web Anda:
+Halaman siaran langsung Anda menggunakan pengaturan [Tampilan](../website/appearance.md) situs web Anda:
 
 - **Warna aksen terang** dengan teks gelap digunakan untuk header.
 - **Warna aksen gelap** dengan teks terang digunakan untuk sidebar.
 - **Logo Latar Belakang Terang** Anda muncul di halaman streaming. Gunakan gambar dengan latar belakang transparan dan rasio 4:1.
 
-Untuk mengubah ini, buka **Website** lalu **Tampilan** dan perbarui pengaturan [Palet Warna](../website/appearance#color-palette) dan [Logo](../website/appearance#logo-and-branding) Anda.
+Untuk mengubah ini, buka **Website** lalu **Tampilan** dan perbarui pengaturan [Palet Warna](../website/appearance.md#color-palette) dan [Logo](../website/appearance.md#logo-and-branding) Anda.
 
 ## Menambahkan Host Streaming
 
@@ -133,5 +135,5 @@ Embed siaran langsung kanal otomatis YouTube dapat diblokir ketika ada beberapa 
 
 ## Langkah Selanjutnya
 
-- [Mengelola Khotbah](managing-sermons) -- Tambahkan khotbah ke pustaka Anda
-- [Daftar Putar](playlists) -- Atur khotbah ke dalam seri
+- [Mengelola Khotbah](./managing-sermons.md) -- Tambahkan khotbah ke pustaka Anda
+- [Daftar Putar](./playlists.md) -- Atur khotbah ke dalam seri

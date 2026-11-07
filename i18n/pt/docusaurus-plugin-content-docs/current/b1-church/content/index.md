@@ -1,5 +1,7 @@
 ---
-title: "Conteúdo"
+title: "Recursos de Conteúdo no Portal de Membros B1.church"
+sidebar_label: "Conteúdo"
+description: "Veja quais conteúdos sua igreja ativa no portal de membros do B1.church e navegue por sermões, transmissões ao vivo, leitura bíblica e lições."
 ---
 
 # Conteúdo

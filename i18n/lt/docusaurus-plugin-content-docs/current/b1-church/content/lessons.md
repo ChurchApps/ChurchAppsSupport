@@ -1,5 +1,7 @@
 ---
-title: "Lessons (nebepalaikoma)"
+title: "Nebenaudojamas pamokų skirtukas B1.church"
+sidebar_label: "Lessons (nebepalaikoma)"
+description: "Skirtukas Lessons B1.church nebenaudojamas. Pamokų programą rasite Lessons.church svetainėje ir rodykite klasės televizoriuose su FreePlay."
 ---
 
 # Lessons (nebepalaikoma)
@@ -9,7 +11,7 @@ title: "Lessons (nebepalaikoma)"
 
 Norėdami naršyti, planuoti ar redaguoti mokymo medžiagą tiesiogiai, naršyklėje prisijunkite prie [Lessons.church](https://lessons.church). Norėdami leisti pamokas klasės televizoriuje, įdiekite [FreePlay](/docs/freeplay/getting-started/) savo TV įrenginyje.
 
-Grupių, susietų su pamokų plano tipu B1Admin, tėvai **šios savaitės pamoką** mato [grupės informacijos](/docs/b1-church/groups/group-details.md) puslapyje – ne šiame nebepalaikomame skirtuke.
+Grupių, susietų su pamokų plano tipu B1Admin, tėvai **šios savaitės pamoką** mato [grupės informacijos](../groups/group-details.md) puslapyje – ne šiame nebepalaikomame skirtuke.
 :::
 
 <div class="article-intro">

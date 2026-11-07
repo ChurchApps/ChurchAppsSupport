@@ -1,5 +1,6 @@
 ---
 title: "Arsitektur Website Builder"
+description: "Peta pengembang pembuat situs B1: pohon konten, katalog elemen bersama, pipeline render, dan pembuatan halaman berbasis AI di B1 Admin dan B1.church."
 ---
 
 # Arsitektur Website Builder
@@ -82,7 +83,7 @@ Renderer berada di `Packages/apphelper/src/website/components/elementTypes/`, sa
 
 ### Formulir editor (B1Admin)
 
-Formulir pengaturan per tipe di editor berada di `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` meneruskan ke komponen khusus (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) atau ke pembangun field inline per tipe. Cermin katalog ini untuk AI adalah alat MCP `describe_page_builder` di API (lihat [Server MCP](../api/mcp)).
+Formulir pengaturan per tipe di editor berada di `B1Admin/src/site/admin/elements/`. `ElementEdit.tsx` meneruskan ke komponen khusus (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) atau ke pembangun field inline per tipe. Cermin katalog ini untuk AI adalah alat MCP `describe_page_builder` di API (lihat [Server MCP](../api/mcp.md)).
 
 Pratinjau editor memasang `Theme` yang sama dengan situs langsung, yang mengatur variabel CSS `--headingFont` / `--bodyFont` dari gaya global gereja. B1App menerapkan variabel tersebut melalui `pages.css`, yang tidak dapat di-import oleh B1Admin, sehingga `ContentEditor.tsx` menyisipkan `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) untuk menerapkannya pada teks body `.page` dan `h1`–`h6`. Tanpa itu, pratinjau menampilkan heading dengan font admin.
 
@@ -157,7 +158,7 @@ Semua ini adalah rendering di sisi B1App di atas data ContentApi. API menyimpan,
 |---------|--------------|
 | Meta descriptions | `pages.metaDescription` (≤300 karakter) mengalir melalui `MetaHelper.getMetaData()` ke `Metadata` Next.js (description + Open Graph) pada setiap rute yang dirender builder. Pengaturan halaman di B1Admin menyertakan tombol AI "Generate" (lihat di bawah) |
 | Redirects | Baris `redirects` per gereja dikelola di `/content/redirects` (`content.edit`, batas 200 baris, path yang dinormalisasi). Saat akan terjadi 404, rute halaman B1App menyelesaikan path terhadap `GET /content/redirects/public/:churchId` dan mengeluarkan HTTP 308 melalui `permanentRedirect` Next. Path yang tidak cocok diteruskan ke `notFound()` |
-| Branded 404 | `not-found.tsx` merender `BrandedNotFound` dengan logo, nama, dan tema gereja, alih-alih error generik. Path `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, dan `/volunteer/[planId]` yang tidak dikenal mengembalikan 404 sungguhan, begitu pula subdomain yang tidak dikenal dan slug halaman yang salah bentuk (lihat [Routing Website & Multi-Site](./websites)) |
+| Branded 404 | `not-found.tsx` merender `BrandedNotFound` dengan logo, nama, dan tema gereja, alih-alih error generik. Path `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, dan `/volunteer/[planId]` yang tidak dikenal mengembalikan 404 sungguhan, begitu pula subdomain yang tidak dikenal dan slug halaman yang salah bentuk (lihat [Routing Website & Multi-Site](./websites.md)) |
 | Structured data | `BlogPosting` JSON-LD pada postingan blog. `VideoObject` pada halaman khotbah per sermon (`/{sdSlug}/sermons/[sermonId]`) dan pada halaman yang berisi elemen `sermons`. `Event` dari elemen kalender/acara pada halaman builder dan pada setiap halaman `/{sdSlug}/events/[eventId]` (kemunculan berikutnya, dengan foto acara sebagai `image`). `Event` schema.org dari elemen `serviceTimes` |
 | Sermon pages | Setiap khotbah publik mendapat halaman yang dapat di-crawl di `/sermons/[sermonId]` dengan metadata lengkap. Khotbah tidak lagi terkunci di dalam elemen penjelajah sisi klien |
 | Analytics | Kunci pengaturan publik `ga4MeasurementId` (dikelola di samping redirects di B1Admin) menyuntikkan gtag GA4 per gereja melalui `next/script`. Aplikasi B1 (`/{sdSlug}/mobile`) juga mengirim tampilan halamannya ke ID tersebut, di samping tag milik ChurchApps, jika ID-nya adalah `G-` yang valid. ID kontainer GTM tetap hanya untuk website. Setiap `gtag('config')` membawa `display_mode` bernilai `installed` atau `browser`, berdasarkan `navigator.standalone` atau media query `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -205,7 +206,7 @@ Tombol rewrite `SectionToolbar` dan tombol "Generate Site" pada daftar halaman d
 | `POST /website/generateAltText` | Panggilan vision atas hingga 20 URL gambar. Mengembalikan alt text ringkas (≤125 karakter, awalan "photo of" dihapus) |
 | `POST /website/generateMetaDescription` | Satu meta description SEO (≤155 karakter) dari konten teks halaman. Terhubung ke tombol Generate di pengaturan halaman B1Admin |
 
-Prompt untuk endpoint ini adalah file markdown di bawah `AskApi/config/instructions/`, termasuk katalog elemen yang digunakan model untuk menghasilkan konten. Dua poin desain menjaga katalog tetap akurat. Pertama, klien mengirim `availableElementTypes` pada setiap permintaan, sehingga prompt hanya boleh memakai tipe dari daftar itu; server tidak pernah menuliskan set lengkapnya secara hardcode. Kedua, alat MCP `describe_page_builder` di API membawa panduan yang sama untuk agen AI yang bekerja melalui [MCP](../api/mcp). Model adalah Anthropic Claude melalui OpenRouter: 3.5 Haiku untuk konten section (demi latensi), dan 3.5 Sonnet untuk kerangka, rencana situs, serta vision. Fallback ke OpenAI digunakan saat tidak ada kunci OpenRouter yang dikonfigurasi.
+Prompt untuk endpoint ini adalah file markdown di bawah `AskApi/config/instructions/`, termasuk katalog elemen yang digunakan model untuk menghasilkan konten. Dua poin desain menjaga katalog tetap akurat. Pertama, klien mengirim `availableElementTypes` pada setiap permintaan, sehingga prompt hanya boleh memakai tipe dari daftar itu; server tidak pernah menuliskan set lengkapnya secara hardcode. Kedua, alat MCP `describe_page_builder` di API membawa panduan yang sama untuk agen AI yang bekerja melalui [MCP](../api/mcp.md). Model adalah Anthropic Claude melalui OpenRouter: 3.5 Haiku untuk konten section (demi latensi), dan 3.5 Sonnet untuk kerangka, rencana situs, serta vision. Fallback ke OpenAI digunakan saat tidak ada kunci OpenRouter yang dikonfigurasi.
 
 ## Formulir percakapan
 
@@ -230,8 +231,8 @@ Controller yang melakukan bump: pages (save, delete, duplicate, publish, discard
 
 ## Halaman terkait
 
-- [Routing Website & Multi-Site](./websites): bagaimana permintaan diselesaikan ke gereja/situs dan bagaimana domain kustom diarahkan
-- [Endpoint Konten](../api/endpoints/content): seluruh REST surface untuk halaman, section, elemen, blok, postingan, redirect, dan pengaturan
-- [AppHelper](../shared-libraries/app-helper): paket npm yang berisi renderer, registri, divider, dan widget
-- [Server MCP](../api/mcp), termasuk alat panduan `describe_page_builder`
+- [Routing Website & Multi-Site](./websites.md): bagaimana permintaan diselesaikan ke gereja/situs dan bagaimana domain kustom diarahkan
+- [Endpoint Konten](../api/endpoints/content.md): seluruh REST surface untuk halaman, section, elemen, blok, postingan, redirect, dan pengaturan
+- [AppHelper](../shared-libraries/app-helper.md): paket npm yang berisi renderer, registri, divider, dan widget
+- [Server MCP](../api/mcp.md), termasuk alat panduan `describe_page_builder`
 - [Page Editor (pengguna akhir)](/docs/b1-admin/website/page-editor): dokumentasi editor untuk staf

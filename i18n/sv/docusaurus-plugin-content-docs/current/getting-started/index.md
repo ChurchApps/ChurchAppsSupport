@@ -1,5 +1,7 @@
 ---
-title: "Kom igång"
+title: "Komma igång med ChurchApps: de första 15 minuterna"
+sidebar_label: "Kom igång"
+description: "Skapa ett nytt ChurchApps-konto i några steg: lägg till kyrkans uppgifter, importera personer till B1 Admin, bjud in ditt team och välj ett första projekt."
 ---
 
 # Kom igång

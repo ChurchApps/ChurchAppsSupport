@@ -1,5 +1,6 @@
 ---
 title: "Pagkonekta ng Provider at Pagbuo ng Playlist"
+description: "I-set up ang konektadong content provider sa FreePlay Admin, pagkatapos gumawa, mag-ayos, at mag-preview ng playlist para sa naka-iskedyul na TV screen."
 ---
 
 # Pagkonekta ng Provider at Pagbuo ng Playlist
@@ -107,6 +108,6 @@ I-click ang **Present** para i-play ang playlist nang full screen sa iyong brows
 
 ## Mga Kaugnay na Artikulo
 
-- **[Pag-iiskedyul ng Kalendaryo](./scheduling-the-calendar)** - Ilagay ang iyong playlist sa kalendaryo ng isang screen group
-- **[Pamamahala ng Screen at Grupo](./managing-screens)** - Itakda ang isang playlist bilang default loop ng grupo
-- **[Content Providers](../content-providers/)** - Mga provider na maaari mong ikonekta mismo sa TV
+- **[Pag-iiskedyul ng Kalendaryo](./scheduling-the-calendar.md)** - Ilagay ang iyong playlist sa kalendaryo ng isang screen group
+- **[Pamamahala ng Screen at Grupo](./managing-screens.md)** - Itakda ang isang playlist bilang default loop ng grupo
+- **[Content Providers](../content-providers/index.md)** - Mga provider na maaari mong ikonekta mismo sa TV

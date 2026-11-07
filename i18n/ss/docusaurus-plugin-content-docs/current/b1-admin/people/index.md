@@ -1,5 +1,6 @@
 ---
 title: "Bantfu"
+description: "Sesha, engeta, uhlele emalungu ekucimbeni kwe-B1 Admin, kuhlanganise nekulandzela emakhaya, kuvuselela ngebhaqa, nekuphrinta nekukhipha luhlu."
 ---
 
 # Bantfu

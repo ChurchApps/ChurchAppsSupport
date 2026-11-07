@@ -1,5 +1,7 @@
 ---
-title: "课程"
+title: "B1 Mobile 中的课程页面（已停用）"
+sidebar_label: "课程"
+description: "课程（已弃用）页面：说明 B1 Mobile 应用内的课程页面为何被停用，以及现在可在哪里找到教材（FreePlay 或 Lessons.church）。"
 ---
 
 # 课程
@@ -13,7 +15,7 @@ title: "课程"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 您的教会必须通过 Lessons.church 配置了课程内容
 
 </div>
@@ -46,5 +48,5 @@ Lessons.church 是一个独立的 ChurchApps 平台，与 B1 Mobile 集成。您
 
 ## 相关文章
 
-- [圣经](./bible) -- 配合课程阅读经文
-- [讲道](./sermons) -- 观看与您学习相辅的讲道
+- [圣经](./bible.md) -- 配合课程阅读经文
+- [讲道](./sermons.md) -- 观看与您学习相辅的讲道

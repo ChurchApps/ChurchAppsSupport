@@ -1,5 +1,6 @@
 ---
 title: "Spausdintuvo sąranka"
+description: "Nustatykite tinklo etikečių spausdintuvą B1 Checkin terminalams: raskite jį Wi-Fi tinkle, pasirinkite, atlikite bandomąjį spausdinimą ir išsaugokite pasirinkimą."
 ---
 
 # Spausdintuvo sąranka
@@ -13,7 +14,7 @@ B1 Church Checkin gali spausdinti vardų etiketes ir tėvų atsiėmimo lapelius 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Prisijunkite](./logging-in) prie B1 Church Checkin programėlės ir pasirinkite savo bažnyčią
+- [Prisijunkite](./logging-in.md) prie B1 Church Checkin programėlės ir pasirinkite savo bažnyčią
 - Prijunkite suderinamą tinklo etikečių spausdintuvą prie to paties Wi-Fi tinklo, prie kurio prijungtas planšetinis kompiuteris
 
 </div>
@@ -87,4 +88,4 @@ Jei perkeliate kioską į kitą vietą arba keičiate tinklo nustatymus, grįžk
 
 ## Kiti žingsniai
 
-Sukonfigūravę spausdintuvą, galite pradėti registruoti atvykimą. Kaip vyksta visas procesas, sužinosite [registravimo eiga](../check-in/), pradedant [paslaugos pasirinkimu](../check-in/selecting-service).
+Sukonfigūravę spausdintuvą, galite pradėti registruoti atvykimą. Kaip vyksta visas procesas, sužinosite [registravimo eiga](../check-in/index.md), pradedant [paslaugos pasirinkimu](../check-in/selecting-service.md).

@@ -1,5 +1,6 @@
 ---
 title: "Groepstijdlijn"
+description: "Zie hoe de groepstijdlijn in B1 Mobile berichten, gesprekken en updates van al je groepen in één feed samenvoegt, en wat te doen bij een pauze."
 ---
 
 # Groepstijdlijn
@@ -17,7 +18,7 @@ De groepstijdlijnfunctie is momenteel niet beschikbaar terwijl verbeteringen wor
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 - Ben lid van minstens één groep in je kerk
 
 </div>
@@ -41,7 +42,7 @@ Elk item in de tijdlijn toont uit welke groep het afkomstig is, dus je weet alti
 De tijdlijn is een geweldige manier om in één oogopslag met je kerkgemeenschap verbonden te blijven. Hier zijn enkele tips om het meeste uit te halen:
 
 - **Controleer regelmatig** -- Open het scherm Groepen en scroll door de tijdlijn om recente activiteiten bij te houden.
-- **Tik voor meer** -- Als een bericht je oog trekt, tik erop of tik op de groepsnaam om naar de volledige [groepsdetailpagina](./group-details) voor meer context te gaan.
+- **Tik voor meer** -- Als een bericht je oog trekt, tik erop of tik op de groepsnaam om naar de volledige [groepsdetailpagina](./group-details.md) voor meer context te gaan.
 - **Alles op één plaats** -- Je hoeft niet elke groep afzonderlijk te bezoeken. De tijdlijn brengt alle activiteit naar je.
 
 :::info
@@ -54,5 +55,5 @@ Zet [pushberichten](../community/notifications.md) aan om meldingen te ontvangen
 
 ## Gerelateerde artikelen
 
-- [Groepsdetails](./group-details) -- Bekijk het volledige profiel en berichten van één groep
+- [Groepsdetails](./group-details.md) -- Bekijk het volledige profiel en berichten van één groep
 - [Berichten](../community/notifications.md) -- Ontvang meldingen over groepsactiviteit

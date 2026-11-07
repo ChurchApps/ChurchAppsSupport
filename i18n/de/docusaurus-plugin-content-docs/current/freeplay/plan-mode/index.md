@@ -1,5 +1,6 @@
 ---
 title: "Plan-Modus"
+description: "FreePlay-TV mit dem Gottesdienstplan aus B1 Admin verbinden, damit die Lektionen, Präsentationen und Medien der Woche in Reihenfolge angezeigt werden."
 ---
 
 # Plan-Modus
@@ -12,13 +13,13 @@ Der Plan-Modus verbindet Ihren Fernseher mit einem Gottesdienstplan der Kirche. 
 
 ## Unterschiede zu anderen Modi
 
-- **[Geplanter Modus](../scheduled-mode/)** spielt Playlists aus einem Kalender in FreePlay Admin zu den von Ihnen festgelegten Zeiten ab, ohne dass jemand Start drückt
+- **[Geplanter Modus](../scheduled-mode/index.md)** spielt Playlists aus einem Kalender in FreePlay Admin zu den von Ihnen festgelegten Zeiten ab, ohne dass jemand Start drückt
 - **Plan-Modus** ruft die Inhalte ab, die mit einem Plantyp verknüpft sind; dazu können Lektionen, Präsentationen von Anbietern, Zusatzinhalte und andere Medien gehören, die in einer eigenen Reihenfolge angeordnet sind
 
 Der Plan-Modus ist besonders nützlich, wenn Ihr Gottesdienstplan eine Mischung aus Inhalten verschiedener Quellen enthält, die alle in einer einzigen Abfolge organisiert sind.
 
 :::tip
-Soll der aktuelle Plan zu einer festen Zeit automatisch abgespielt werden? Fügen Sie in FreePlay Admin einen Kalendereintrag hinzu und wählen Sie unter **Gottesdienstpläne** den Plantyp. Siehe [Den Kalender planen](../scheduled-mode/scheduling-the-calendar).
+Soll der aktuelle Plan zu einer festen Zeit automatisch abgespielt werden? Fügen Sie in FreePlay Admin einen Kalendereintrag hinzu und wählen Sie unter **Gottesdienstpläne** den Plantyp. Siehe [Den Kalender planen](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## So funktioniert es
@@ -32,4 +33,4 @@ Der Fernseher bleibt mit dem Plantyp gekoppelt. Jede Woche übernimmt er automat
 
 ## In diesem Abschnitt
 
-- **[Ihr Gerät koppeln](./device-pairing)** - Wie Sie den Kopplungscode erzeugen und eingeben
+- **[Ihr Gerät koppeln](./device-pairing.md)** - Wie Sie den Kopplungscode erzeugen und eingeben

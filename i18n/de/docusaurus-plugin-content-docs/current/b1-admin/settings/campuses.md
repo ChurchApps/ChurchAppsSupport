@@ -1,5 +1,6 @@
 ---
 title: "Standorte"
+description: "Standorte in B1 Admin einrichten, um Personen und Gruppen zuzuordnen und Personen, Anwesenheit und Statistiken nach Standort zu filtern."
 ---
 
 # Standorte

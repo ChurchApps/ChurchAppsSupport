@@ -1,5 +1,7 @@
 ---
-title: "安排课程"
+title: "在 B1 Admin 中从 Lessons.church 安排课程"
+sidebar_label: "安排课程"
+description: "将 Lessons.church 连接到 B1 Admin，然后安排课程、批量安排一个系列，或将年度计划应用于某个事工的崇拜计划。"
 ---
 
 # 从 Lessons.church 安排课程

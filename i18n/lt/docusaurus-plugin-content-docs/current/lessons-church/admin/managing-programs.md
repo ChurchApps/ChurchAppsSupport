@@ -1,5 +1,6 @@
 ---
 title: "Programų valdymas"
+description: "Kurkite ir redaguokite Lessons.church programas, nustatykite slug ir miniatiūras, grupuokite mokymus kategorijomis ir pridėkite išteklius."
 ---
 
 # Programų valdymas

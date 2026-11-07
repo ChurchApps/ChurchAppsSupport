@@ -1,5 +1,6 @@
 ---
 title: "Playlist"
+description: "Sugrupuokite pamokslus į serijas B1 Admin, kad lankytojai B1.church svetainėje galėtų naršyti ir sekti kiekvieną pamokslų seriją tvarka."
 ---
 
 # Playlist
@@ -53,10 +54,10 @@ Pirmiausia sukurkite grojaraščius, o tik tada pridėkite pamokslus. Taip galė
 
 ## Pamokslų pridėjimas į grojaraštį
 
-Kai [pridedate arba redaguojate pamokslą](managing-sermons), jį priskiriate grojaraščiui naudodami išskleidžiamąjį sąrašą **Playlist**. Visi tam pačiam grojaraščiui priskirti pamokslai sugrupuojami ir svetainėje rodomi tinkama tvarka.
+Kai [pridedate arba redaguojate pamokslą](./managing-sermons.md), jį priskiriate grojaraščiui naudodami išskleidžiamąjį sąrašą **Playlist**. Visi tam pačiam grojaraščiui priskirti pamokslai sugrupuojami ir svetainėje rodomi tinkama tvarka.
 
 :::info
-Pamokslus grojaraščiams taip pat galite priskirti per [Masinį importavimą](bulk-import). Importuodami iš YouTube ar Vimeo, prieš spustelėdami **Import**, išskleidžiamajame sąraše **Import Into Playlist** pasirinkite grojaraštį.
+Pamokslus grojaraščiams taip pat galite priskirti per [Masinį importavimą](./bulk-import.md). Importuodami iš YouTube ar Vimeo, prieš spustelėdami **Import**, išskleidžiamajame sąraše **Import Into Playlist** pasirinkite grojaraštį.
 :::
 
 ## Kaip grojaraščiai rodomi jūsų svetainėje
@@ -69,5 +70,5 @@ Grojaraščiai rodomi jūsų svetainėje B1.church kaip naršomos kolekcijos. La
 
 ## Kiti žingsniai
 
-- [Pamokslų valdymas](managing-sermons) – pridėkite atskirus pamokslus į savo grojaraščius
-- [Masinis importavimas](bulk-import) – importuokite kelis pamokslus ir priskirkite juos grojaraščiams
+- [Pamokslų valdymas](./managing-sermons.md) – pridėkite atskirus pamokslus į savo grojaraščius
+- [Masinis importavimas](./bulk-import.md) – importuokite kelis pamokslus ir priskirkite juos grojaraščiams

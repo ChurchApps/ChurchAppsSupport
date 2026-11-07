@@ -1,5 +1,7 @@
 ---
-title: "Registratie voor evenementen"
+title: "Inschrijven voor evenementen in B1 Mobile"
+sidebar_label: "Registratie voor evenementen"
+description: "Schrijf jezelf en je gezin in voor kerkevenementen via de B1 Mobile-app, controleer de resterende capaciteit en bevestig je aanmelding in drie stappen."
 ---
 
 # Registratie voor evenementen
@@ -13,7 +15,7 @@ Meld u rechtstreeks vanuit B1 Mobile aan voor kerkgebeurtenissen met behulp van 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld u aan](../getting-started/logging-in) op uw account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld u aan](../getting-started/logging-in.md) op uw account
 - Het evenement moet registratie ingeschakeld hebben en het registratievenster moet open zijn
 
 </div>
@@ -50,4 +52,4 @@ Als u moet annuleren, neem contact op met uw kerkbeheerder. Ze kunnen uw registr
 ## Gerelateerde artikelen
 
 - [Overzicht van evenementen](./index.md) -- Blader evenementen met registratie op mobiel
-- [Plannen bekijken](../serving/viewing-plans) -- Zie uw serviceschema
+- [Plannen bekijken](../serving/viewing-plans.md) -- Zie uw serviceschema

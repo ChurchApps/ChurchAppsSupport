@@ -1,5 +1,6 @@
 ---
 title: "Úlohy"
+description: "Vytvárajte, priraďujte a uzatvárajte úlohy v B1 Admin, nájdite ich v Služby > Moja práca a nastavte pripomienky termínov, aby žiadna úloha nezapadla."
 ---
 
 # Úlohy

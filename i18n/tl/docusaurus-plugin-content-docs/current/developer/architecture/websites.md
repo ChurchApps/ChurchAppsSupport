@@ -1,12 +1,13 @@
 ---
 title: "Website Routing at Multi-Site"
+description: "Paano minamapa ng B1.church ang subdomain at custom domain sa tamang simbahan o secondary site, at ang Caddy edge na humahawak ng TLS."
 ---
 
 # Website Routing at Multi-Site
 
 <div class="article-intro">
 
-Kaya nang maghain ng higit sa isang natatanging website ang iisang simbahan, at maaaring nasa subdomain na `*.b1.church` o sa ganap na custom, pag-aari ng simbahan na domain ang bawat isa. Inilalarawan ng pahinang ito ang routing layer na nasa *ilalim* ng builder: kung paano nireresolba ng papasok na request ang isang simbahan **at** isang partikular na site, ang multi-site data model (ang sentinel na `siteId` na nagpapanatiling gumagana ang bawat umiiral nang site nang walang pagbabago), at ang custom-domain edge -- isang self-managed na Caddy proxy sa EC2 na nagtatapos ng TLS at nagre-rewrite ng bawat domain ng simbahan papunta sa upstream nitong `*.b1.church`. Para sa kung ano ang aktwal na nire-render kapag nareresolba na ang request -- ang page/section/element tree -- tingnan ang [Website Builder](./website-builder).
+Kaya nang maghain ng higit sa isang natatanging website ang iisang simbahan, at maaaring nasa subdomain na `*.b1.church` o sa ganap na custom, pag-aari ng simbahan na domain ang bawat isa. Inilalarawan ng pahinang ito ang routing layer na nasa *ilalim* ng builder: kung paano nireresolba ng papasok na request ang isang simbahan **at** isang partikular na site, ang multi-site data model (ang sentinel na `siteId` na nagpapanatiling gumagana ang bawat umiiral nang site nang walang pagbabago), at ang custom-domain edge -- isang self-managed na Caddy proxy sa EC2 na nagtatapos ng TLS at nagre-rewrite ng bawat domain ng simbahan papunta sa upstream nitong `*.b1.church`. Para sa kung ano ang aktwal na nire-render kapag nareresolba na ang request -- ang page/section/element tree -- tingnan ang [Website Builder](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ Dalawang detalye sa pagpapatakbo ng middleware:
 
 - **Cache.** Ang resulta ng bawat host (hit *o* kumpirmadong miss -- hindi kailanman network error) ay nakakache nang **10 minuto** sa isang in-memory na `Map`, kada serverless isolate.
 - **Matcher.** Sadyang muling isinasama ng matcher ang `/sitemap.xml`, `/robots.txt`, at `/manifest.webmanifest`. Inaalis ng unang pattern nito ang mga dotted na path, na kung hindi ay maglalaglag sa mga file na iyon; ibinabalik ang mga ito para makatanggap din ng header na `x-site` ang per-church na SEO/PWA file ng custom domain.
-- **Canonical na header.** Para sa mga pahina ng simbahan, nagdadagdag ang middleware ng response header na `Link: <{proto}://{host}{path}>; rel="canonical"` na nagpapangalan sa host kung saan aktwal na inihain ang pahina -- subdomain o custom domain (`helpers/canonicalLink.ts`). Kapag umabot ang custom domain sa B1App sa pamamagitan ng [Caddy proxy](../deployment/caddy-proxy), ang request host ay ang subdomain na `{sub}.b1.church`, kaya ginagamit ng middleware ang domain ng bisita mula sa `X-Church-Host` -- pero pagkatapos lang kumpirmahin ng `/domains/public/lookup/{host}` na ang domain na iyon ay tumutugma sa parehong subdomain (`ownsSubdomain()`). Pagkatapos, ang canonical link, `robots.txt`, at `sitemap.xml` ay nagpapangalan sa custom domain sa halip na sa subdomain na `b1.church`. Nilalaktawan ito sa mga non-church na host (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) at sa `/mobile`, `/login`, `/logout`, at sa mga generated na robots/sitemap/manifest file.
+- **Canonical na header.** Para sa mga pahina ng simbahan, nagdadagdag ang middleware ng response header na `Link: <{proto}://{host}{path}>; rel="canonical"` na nagpapangalan sa host kung saan aktwal na inihain ang pahina -- subdomain o custom domain (`helpers/canonicalLink.ts`). Kapag umabot ang custom domain sa B1App sa pamamagitan ng [Caddy proxy](../deployment/caddy-proxy.md), ang request host ay ang subdomain na `{sub}.b1.church`, kaya ginagamit ng middleware ang domain ng bisita mula sa `X-Church-Host` -- pero pagkatapos lang kumpirmahin ng `/domains/public/lookup/{host}` na ang domain na iyon ay tumutugma sa parehong subdomain (`ownsSubdomain()`). Pagkatapos, ang canonical link, `robots.txt`, at `sitemap.xml` ay nagpapangalan sa custom domain sa halip na sa subdomain na `b1.church`. Nilalaktawan ito sa mga non-church na host (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) at sa `/mobile`, `/login`, `/logout`, at sa mga generated na robots/sitemap/manifest file.
 
 ### Nakadisable na pampublikong website
 
@@ -201,7 +202,7 @@ Sinusulat ng `DomainController.save` ang mga row ng `domains` at pagkatapos ay g
 
 ### Kasalukuyang estado -- static config, walang runtime state
 
-Pinapatakbo ng box (Windows EC2 sa likod ng permanenteng Elastic IP) ang Caddy mula sa isang **static na Caddyfile**: on-demand TLS na ang `ask` ay tumuturo sa `/membership/domains/authorize`, kasama ang host→upstream map file na nire-refresh kada 5 minuto mula sa `/membership/domains/hostmap` ng isang scheduled task na nagtatapos sa isang graceful na `caddy reload`. Nabubuhay ang config sa mga restart nang walang runtime state -- walang sayaw ng re-priming -- at ang hindi kilalang SNI ay **tinatanggihan ng TLS** (walang cert na minimint para sa host na tinanggihan ng `authorize`), habang ang host na pinahintulutan ngunit hindi pa namamapa (isang bagong domain sa loob ng sync window) ay nakakakuha ng malinis na 404. Nagiging routable ang mga bagong domain sa loob ng ~5 minuto mula sa save; ang mga certificate ay minimint sa unang hit. Build/setup, operasyon, at mga bitag na nasubukan na sa field: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy).
+Pinapatakbo ng box (Windows EC2 sa likod ng permanenteng Elastic IP) ang Caddy mula sa isang **static na Caddyfile**: on-demand TLS na ang `ask` ay tumuturo sa `/membership/domains/authorize`, kasama ang host→upstream map file na nire-refresh kada 5 minuto mula sa `/membership/domains/hostmap` ng isang scheduled task na nagtatapos sa isang graceful na `caddy reload`. Nabubuhay ang config sa mga restart nang walang runtime state -- walang sayaw ng re-priming -- at ang hindi kilalang SNI ay **tinatanggihan ng TLS** (walang cert na minimint para sa host na tinanggihan ng `authorize`), habang ang host na pinahintulutan ngunit hindi pa namamapa (isang bagong domain sa loob ng sync window) ay nakakakuha ng malinis na 404. Nagiging routable ang mga bagong domain sa loob ng ~5 minuto mula sa save; ang mga certificate ay minimint sa unang hit. Build/setup, operasyon, at mga bitag na nasubukan na sa field: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md).
 
 ### Legacy na runtime push -- rollback path, nakabinbing burahin
 
@@ -209,8 +210,8 @@ Maaari pa ring patakbuhin ng `CaddyHelper` (membership module) ang Caddy sa pama
 
 ## Mga Kaugnay na Pahina
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) -- ang mismong edge box: fresh-box setup, WinSW service, map sync task, at mga operasyonal na bitag
-- [Website Builder](./website-builder) -- ang page/section/element tree, mga renderer, blog, SEO, at AI generation (ang nire-render kapag nareresolba na ang request sa isang simbahan/site)
-- [Content Endpoints](../api/endpoints/content) -- ang REST surface para sa mga pahina, block, link, at global styles, lahat ay may `?siteId=` na ngayon
-- [B1App](../web-apps/b1-app) -- ang Next.js app na nagho-host ng middleware at ng routing na `[sdSlug]`
-- [Web App Deployment](../deployment/web-apps) -- kung paano dine-deploy ang B1App sa Vercel
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md) -- ang mismong edge box: fresh-box setup, WinSW service, map sync task, at mga operasyonal na bitag
+- [Website Builder](./website-builder.md) -- ang page/section/element tree, mga renderer, blog, SEO, at AI generation (ang nire-render kapag nareresolba na ang request sa isang simbahan/site)
+- [Content Endpoints](../api/endpoints/content.md) -- ang REST surface para sa mga pahina, block, link, at global styles, lahat ay may `?siteId=` na ngayon
+- [B1App](../web-apps/b1-app.md) -- ang Next.js app na nagho-host ng middleware at ng routing na `[sdSlug]`
+- [Web App Deployment](../deployment/web-apps.md) -- kung paano dine-deploy ang B1App sa Vercel

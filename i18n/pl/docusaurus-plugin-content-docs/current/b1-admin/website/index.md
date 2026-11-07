@@ -1,5 +1,6 @@
 ---
 title: "Strona internetowa"
+description: "Przegląd kreatora stron B1 Admin: strony, blog, bloki, wygląd, pliki i kalendarze, z linkami do przewodników konfiguracji i edycji."
 ---
 
 # Strona internetowa
@@ -22,7 +23,7 @@ Linki nawigacyjne są wyświetlane w strukturze drzewa. Możesz zmieniać ich ko
 
 ### Blog
 
-Publikuj wiadomości, aktualizacje i rozważania duchowe jako wpisy na blogu pod adresem `/blog` w Twojej witrynie, wraz z kanałem RSS. Zobacz przewodnik [Blog](blog).
+Publikuj wiadomości, aktualizacje i rozważania duchowe jako wpisy na blogu pod adresem `/blog` w Twojej witrynie, wraz z kanałem RSS. Zobacz przewodnik [Blog](./blog.md).
 
 ### Bloki
 
@@ -30,24 +31,24 @@ Twórz wielokrotnego użytku komponenty treści, które możesz umieszczać na w
 
 ### Wygląd
 
-Dostosuj motyw, kolory, czcionki, logo i odstępy swojej witryny. Możesz zastosować gotowe motywy stylów, aby szybko zacząć, lub dopracować każdy szczegół za pomocą edytora palety kolorów, ustawień typografii i własnego CSS. Pełne informacje znajdziesz w przewodniku [Wygląd](appearance).
+Dostosuj motyw, kolory, czcionki, logo i odstępy swojej witryny. Możesz zastosować gotowe motywy stylów, aby szybko zacząć, lub dopracować każdy szczegół za pomocą edytora palety kolorów, ustawień typografii i własnego CSS. Pełne informacje znajdziesz w przewodniku [Wygląd](./appearance.md).
 
 ### Pliki
 
-Przesyłaj i zarządzaj wszystkimi swoimi zasobami multimedialnymi — obrazami, dokumentami i innymi plikami — w jednym centralnym miejscu, a linki do plików kopiuj, by używać ich w dowolnym miejscu witryny. Więcej informacji znajdziesz w sekcji [Pliki](files).
+Przesyłaj i zarządzaj wszystkimi swoimi zasobami multimedialnymi — obrazami, dokumentami i innymi plikami — w jednym centralnym miejscu, a linki do plików kopiuj, by używać ich w dowolnym miejscu witryny. Więcej informacji znajdziesz w sekcji [Pliki](./files.md).
 
 ### Kalendarze
 
 Publikuj kalendarze wydarzeń na swojej stronie, aby odwiedzający mogli zobaczyć, co dzieje się w Twoim kościele. Twórz wyselekcjonowane kalendarze, które zbierają wydarzenia z wielu grup w jednym widoku. Kalendarze mają własną pozycję **Kalendarze** w menu B1 Admin, oddzielną od **Strony internetowej**.
 
 :::tip
-Zacznij od [Wstępnej konfiguracji](initial-setup), jeśli konfigurujesz swoją witrynę po raz pierwszy. Przeprowadzi Cię ona przez konfigurację domeny, utworzenie pierwszej strony i ustawienie wyglądu witryny.
+Zacznij od [Wstępnej konfiguracji](./initial-setup.md), jeśli konfigurujesz swoją witrynę po raz pierwszy. Przeprowadzi Cię ona przez konfigurację domeny, utworzenie pierwszej strony i ustawienie wyglądu witryny.
 :::
 
 ## Następne kroki
 
-- [Wstępna konfiguracja](initial-setup) — uruchom swoją witrynę po raz pierwszy
-- [Zarządzanie stronami](managing-pages) — dowiedz się, jak tworzyć i organizować strony
-- [Korzystanie z edytora stron](page-editor) — twórz i stylizuj treść strony w edytorze wizualnym
-- [Wygląd](appearance) — dostosuj wygląd i styl swojej witryny
-- [Pliki](files) — przesyłaj i zarządzaj plikami multimedialnymi
+- [Wstępna konfiguracja](./initial-setup.md) — uruchom swoją witrynę po raz pierwszy
+- [Zarządzanie stronami](./managing-pages.md) — dowiedz się, jak tworzyć i organizować strony
+- [Korzystanie z edytora stron](./page-editor.md) — twórz i stylizuj treść strony w edytorze wizualnym
+- [Wygląd](./appearance.md) — dostosuj wygląd i styl swojej witryny
+- [Pliki](./files.md) — przesyłaj i zarządzaj plikami multimedialnymi

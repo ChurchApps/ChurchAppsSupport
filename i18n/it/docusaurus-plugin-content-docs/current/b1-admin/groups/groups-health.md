@@ -1,5 +1,6 @@
 ---
 title: "Salute dei gruppi"
+description: "Verifica in B1 Admin la salute dei gruppi con una tabella di 90 giorni: membri, adesioni, uscite, abbandoni e presenze medie per individuare chi seguire."
 ---
 
 # Salute dei gruppi
@@ -13,8 +14,8 @@ La dashboard Salute dei gruppi ti offre una visione d'insieme su come stanno and
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Ti servono almeno alcuni gruppi con membri per vedere dati significativi. Vedi [Creare gruppi](creating-groups).
-- I dati sulla presenza provengono dalle sessioni registrate. Vedi la sezione [Presenze](../attendance/).
+- Ti servono almeno alcuni gruppi con membri per vedere dati significativi. Vedi [Creare gruppi](./creating-groups.md).
+- I dati sulla presenza provengono dalle sessioni registrate. Vedi la sezione [Presenze](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Cliccando sul nome di un gruppo si accede direttamente alla pagina di dettaglio 
 
 ## Articoli correlati
 
-- [Creare gruppi](creating-groups) — configura i gruppi
-- [Membri del gruppo](group-members) — gestisci l'appartenenza al gruppo
-- [Registrare le presenze](../attendance/tracking-attendance) — registra le sessioni di presenza che alimentano questa dashboard
+- [Creare gruppi](./creating-groups.md) — configura i gruppi
+- [Membri del gruppo](./group-members.md) — gestisci l'appartenenza al gruppo
+- [Registrare le presenze](../attendance/tracking-attendance.md) — registra le sessioni di presenza che alimentano questa dashboard

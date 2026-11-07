@@ -1,5 +1,6 @@
 ---
 title: "Webapp-installation"
+description: "Sådan udruller du ChurchApps-webapps som B1 Admin til Amazon S3 og CloudFront, med automatiske GitHub Actions-udrulninger ved merge eller manuelle kommandoer."
 ---
 
 # Webapp-installation
@@ -13,7 +14,7 @@ ChurchApps-webapplikationer implementeres som statiske websteder til **Amazon S3
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opsætning af webapp lokalt og bekræft, at den bygger -- se [Webapps](../web-apps/)
+- Opsætning af webapp lokalt og bekræft, at den bygger -- se [Webapps](../web-apps/index.md)
 - Konfigurér AWS-legitimationsoplysninger med S3- og CloudFront-adgang
 - Kend S3-bucketnavnet og CloudFront-distribuerings-ID'et for målet
 
@@ -53,6 +54,6 @@ Hvis du har brug for at bekræfte en build lokalt før installation, skal du kø
 
 ## Relaterede artikler
 
-- **[Webapps](../web-apps/)** -- Opsætningsvejledninger til B1Admin, B1App og LessonsApp
-- **[API-installation](./apis)** -- Installation af backend-API'erne
-- **[Mobilinstallation](./mobile)** -- Installation af mobilapps til app-butikkerne
+- **[Webapps](../web-apps/index.md)** -- Opsætningsvejledninger til B1Admin, B1App og LessonsApp
+- **[API-installation](./apis.md)** -- Installation af backend-API'erne
+- **[Mobilinstallation](./mobile.md)** -- Installation af mobilapps til app-butikkerne

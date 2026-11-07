@@ -1,5 +1,7 @@
 ---
-title: "Versículo do Dia"
+title: "Versículo do Dia no Site e Portal B1.church"
+sidebar_label: "Versículo do Dia"
+description: "Veja a imagem do versículo do dia e os anteriores, depois compartilhe ou baixe-os pelo site ou portal B1.church em qualquer tamanho de tela."
 ---
 
 # Versículo do Dia

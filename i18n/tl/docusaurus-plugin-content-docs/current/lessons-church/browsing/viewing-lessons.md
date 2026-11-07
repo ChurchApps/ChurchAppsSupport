@@ -1,5 +1,6 @@
 ---
 title: "Pagtingin ng mga Aralin"
+description: "Gabay sa pagbubukas ng aralin sa Lessons.church: pagbasa ng sections at role actions, paghanap ng downloads, at paglipat ng age-group venues bago ang klase."
 ---
 
 # Pagtingin ng mga Aralin

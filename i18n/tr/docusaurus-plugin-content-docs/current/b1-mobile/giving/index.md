@@ -1,5 +1,7 @@
 ---
-title: "Bağış"
+title: "B1 Mobile Uygulamasında Bağışlar"
+sidebar_label: "Bağış"
+description: "B1 Mobile uygulamasında bağış yapın, yıl başından bugüne bağışlarınızı kontrol edin ve kayıtlı ödeme yöntemlerini yönetin. Genel Bakış, Bağış Yap, Yönet ve Geçmiş sekmelerini kapsar."
 ---
 
 # Bağış
@@ -24,7 +26,7 @@ Bağış bölümü dört sekmeye ayrılmıştır:
 B1 Mobile üzerinden yapılan tüm bağışlar **Stripe** aracılığıyla güvenli bir şekilde işlenir. Ödeme bilgileriniz Stripe'ın güvenli altyapısı tarafından işlenir ve hiçbir zaman ChurchApps sunucularında saklanmaz. Finansal bilgilerinizin korunduğunu bilerek güvenle bağış yapabilirsiniz.
 
 :::info
-Kullanılabilir fonları ve ödeme işlemini, kilise yöneticiniz [B1 Admin](../../b1-admin/) üzerinden ayarlar. Uygulamada bir bağış seçeneği görmüyorsanız, kilisenizde bu özellik henüz yapılandırılmamış olabilir.
+Kullanılabilir fonları ve ödeme işlemini, kilise yöneticiniz [B1 Admin](../../b1-admin/index.md) üzerinden ayarlar. Uygulamada bir bağış seçeneği görmüyorsanız, kilisenizde bu özellik henüz yapılandırılmamış olabilir.
 :::
 
 ## Neler Yapabilirsiniz
@@ -38,6 +40,6 @@ Bağış bölümünden yapabilecekleriniz şunlardır:
 
 ## Sonraki Adımlar
 
-- [Bağış Yapma](./making-donations) -- Uygulamadan nasıl bağış yapacağınızı öğrenin
-- [Ödeme Yöntemlerini Yönetme](./managing-payments) -- Kayıtlı ödeme yöntemlerini ekleyin veya kaldırın
-- [Bağış Geçmişi](./donation-history) -- Bağış özetinizi ve geçmiş bağışlarınızı görüntüleyin
+- [Bağış Yapma](./making-donations.md) -- Uygulamadan nasıl bağış yapacağınızı öğrenin
+- [Ödeme Yöntemlerini Yönetme](./managing-payments.md) -- Kayıtlı ödeme yöntemlerini ekleyin veya kaldırın
+- [Bağış Geçmişi](./donation-history.md) -- Bağış özetinizi ve geçmiş bağışlarınızı görüntüleyin

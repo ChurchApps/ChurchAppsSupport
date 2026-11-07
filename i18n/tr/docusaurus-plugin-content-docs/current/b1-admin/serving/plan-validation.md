@@ -1,5 +1,6 @@
 ---
 title: "Plan Doğrulama ve Bildirimler"
+description: "B1 Admin'deki hizmet planlarını doldurulmamış pozisyonlar, zamanlama çakışmaları ve müsait olmayan gönüllüler açısından kontrol edin, ardından ekibinize tek tıkla anlık bildirim gönderin."
 ---
 
 # Plan Doğrulama ve Gönüllü Bildirimleri

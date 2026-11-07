@@ -1,5 +1,7 @@
 ---
-title: "Lidmapenboek"
+title: "Ledenlijst in het ledenportaal van B1.church"
+sidebar_label: "Lidmapenboek"
+description: "Zoek en blader door kerkleden in de B1.church-ledenlijst, bekijk profielen en gezinsleden, en zie wie toegang heeft tot de ledenlijst."
 ---
 
 # Lidmapenboek

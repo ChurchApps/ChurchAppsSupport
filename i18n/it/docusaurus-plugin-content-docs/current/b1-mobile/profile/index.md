@@ -1,5 +1,7 @@
 ---
-title: "Profilo"
+title: "Profilo e schede assegnate in B1 Mobile"
+sidebar_label: "Profilo"
+description: "Gestisci nome, contatti, nucleo familiare e visibilità della privacy nel profilo di B1 Mobile, e gestisci le schede di flusso di lavoro e le attività assegnate."
 ---
 
 # Profilo
@@ -20,7 +22,7 @@ La scheda **Profilo** ti permette di visualizzare e modificare le tue informazio
 
 ### Famiglia
 
-La scheda **Famiglia** mostra i membri della tua famiglia e i loro ruoli all'interno del nucleo familiare. Queste informazioni vengono utilizzate per funzionalità come il [check-in](../checkin/), dove puoi registrare la presenza di tutta la famiglia contemporaneamente.
+La scheda **Famiglia** mostra i membri della tua famiglia e i loro ruoli all'interno del nucleo familiare. Queste informazioni vengono utilizzate per funzionalità come il [check-in](../checkin/index.md), dove puoi registrare la presenza di tutta la famiglia contemporaneamente.
 
 ### Visibilità
 
@@ -42,6 +44,6 @@ La scheda **Account** fornisce accesso alle impostazioni di sicurezza.
 
 ## Prossimi Passi
 
-- [Modifica del Profilo](./editing-profile) -- Aggiorna nome, dati di contatto e foto
-- [Famiglia](./household) -- Visualizza e gestisci i membri della tua famiglia
-- [Impostazioni Privacy](./privacy-settings) -- Controlla ciò che gli altri possono vedere di te
+- [Modifica del Profilo](./editing-profile.md) -- Aggiorna nome, dati di contatto e foto
+- [Famiglia](./household.md) -- Visualizza e gestisci i membri della tua famiglia
+- [Impostazioni Privacy](./privacy-settings.md) -- Controlla ciò che gli altri possono vedere di te

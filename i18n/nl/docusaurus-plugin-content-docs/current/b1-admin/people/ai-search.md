@@ -1,5 +1,6 @@
 ---
 title: "AI-zoeking"
+description: "Doorzoek je B1 Admin-ledenlijst met vragen in gewone taal, zoals welke leden drie maanden niet zijn geweest, in plaats van zelf filters te bouwen."
 ---
 
 # AI-zoeking

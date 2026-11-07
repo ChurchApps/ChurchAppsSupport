@@ -1,5 +1,7 @@
 ---
-title: "봉사자 신청"
+title: "B1 Mobile 앱에서 봉사 신청하기"
+sidebar_label: "봉사자 신청"
+description: "B1 Mobile 앱에서 다가오는 예배의 모집 중인 봉사직을 찾고, 신청하거나 신청을 취소하세요. 마감일과 인원 제한 방식도 안내합니다."
 ---
 
 # 봉사자 신청
@@ -13,7 +15,7 @@ B1 Mobile에서 바로 이용 가능한 봉사 포지션을 둘러보고 다가�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 Mobile을 설치](../getting-started/installing)하고 계정에 [로그인](../getting-started/logging-in)하세요.
+- [B1 Mobile을 설치](../getting-started/installing.md)하고 계정에 [로그인](../getting-started/logging-in.md)하세요.
 - 교회 관리자가 최소 한 개의 포지션에 자체 신청을 활성화해 두어야 합니다.
 
 </div>
@@ -60,5 +62,5 @@ B1 Mobile에서 바로 이용 가능한 봉사 포지션을 둘러보고 다가�
 
 ## 관련 문서
 
-- [계획 보기](./viewing-plans) -- 배정된 계획과 예배 순서를 봅니다.
+- [계획 보기](./viewing-plans.md) -- 배정된 계획과 예배 순서를 봅니다.
 - [알림](../community/notifications.md) -- 봉사 배정에 대한 소식을 계속 확인합니다.

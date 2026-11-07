@@ -1,5 +1,6 @@
 ---
 title: "Lots de dons"
+description: "Regroupez les offrandes en lots de dons dans B1 Admin, puis clôturez, imprimez ou exportez chaque lot pour que les totaux correspondent à vos dépôts bancaires."
 ---
 
 # Lots de dons

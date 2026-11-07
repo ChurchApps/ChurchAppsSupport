@@ -1,5 +1,6 @@
 ---
 title: "Opas: Seurakunnan läsnäolon seuranta"
+description: "Seuraa seurakunnan läsnäoloa B1 Adminissa: määritä seurakunnat ja palveluajat, kirjaa läsnäolo käsin tai itsepalvelusisäänkirjautumisella ja lue raportit."
 ---
 
 # Seurakunnan läsnäolon seuranta

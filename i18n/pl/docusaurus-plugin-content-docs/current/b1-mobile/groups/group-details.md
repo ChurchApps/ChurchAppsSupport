@@ -1,5 +1,7 @@
 ---
-title: "Szczegóły grupy"
+title: "Szczegóły grupy w aplikacji B1 Mobile"
+sidebar_label: "Szczegóły grupy"
+description: "Zobacz, co pokazuje strona szczegółów grupy w B1 Mobile: informacje o grupie, posty i członków oraz jak ją otworzyć z ekranu Grupy."
 ---
 
 # Szczegóły grupy
@@ -13,7 +15,7 @@ Po dotknięciu grupy na ekranie Grupy zostaniesz przeniesiony na stronę szczeg�
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Otwórz ekran [Grupy](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Twoja najczęściej odwiedzana grupa pojawia się jako główna karta u góry ek
 
 ## Powiązane artykuły
 
-- [Oś czasu grupy](./group-timeline) -- Dowiedz się więcej o wspólnym kanale aktywności wszystkich Twoich grup
+- [Oś czasu grupy](./group-timeline.md) -- Dowiedz się więcej o wspólnym kanale aktywności wszystkich Twoich grup
 - [Wiadomości](../community/messaging.md) -- Wysyłaj prywatne wiadomości do członków grupy

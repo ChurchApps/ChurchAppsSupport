@@ -1,5 +1,6 @@
 ---
 title: "Vyhledávání pomocí AI"
+description: "Prohledávejte adresář lidí v B1 Admin otázkami běžným jazykem, například které členy jsme tři měsíce neviděli, místo sestavování filtrů."
 ---
 
 # Vyhledávání pomocí AI

@@ -1,5 +1,6 @@
 ---
 title: "Koble til en skjerm"
+description: "Koble en FreePlay-TV til en skjermgruppekalender i FreePlay Admin med firebokstavskoden på TV-en, slik at den spiller planlagt innhold av seg selv."
 ---
 
 # Koble til en skjerm
@@ -13,9 +14,9 @@ For å sette en TV på en kalender kobler du den til **FreePlay Admin**. TV-en v
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer og start FreePlay på TV-en. Se [Komme i gang](../getting-started/)
+- Installer og start FreePlay på TV-en. Se [Komme i gang](../getting-started/index.md)
 - Ha en ChurchApps-innlogging for kirken din slik at du kan logge inn på FreePlay Admin
-- Valgfritt: [bygg en spilleliste](./building-playlists) og [planlegg den](./scheduling-the-calendar) først, slik at TV-en har noe å spille med en gang
+- Valgfritt: [bygg en spilleliste](./building-playlists.md) og [planlegg den](./scheduling-the-calendar.md) først, slik at TV-en har noe å spille med en gang
 
 </div>
 
@@ -38,7 +39,7 @@ Koden varer i 15 minutter, og en nedtelling under den viser hvor mye tid som er 
 5. Under **Modus** lar du **Scheduled** være valgt. TV-en vil spille etter gruppens kalender av seg selv.
 6. Klikk **Pair**.
 
-TV-en viser **Connected!** og deretter **Loading your schedule...**. Den laster ned det som er planlagt og begynner å spille. Se [Planlagt avspilling på TV-en](./scheduled-playback).
+TV-en viser **Connected!** og deretter **Loading your schedule...**. Den laster ned det som er planlagt og begynner å spille. Se [Planlagt avspilling på TV-en](./scheduled-playback.md).
 
 :::info
 Hvis FreePlay Admin sier **That code didn't match a TV**, sjekk koden på skjermen. Hvis den har utløpt, bruk den nye koden TV-en viser nå.
@@ -51,11 +52,11 @@ Innstillingen **Modus** har to alternativer:
 - **Scheduled** - Spiller etter gruppens kalender av seg selv. Ingen må trykke Start.
 - **Manual** - Noen velger innhold med fjernkontrollen. En manuell skjerm vises fortsatt i listen din over **Screens**, men den følger ikke en kalender, så feltet **Group** er slått av.
 
-Du kan bytte en skjerms modus senere fra **Edit** på [siden Screens](./managing-screens).
+Du kan bytte en skjerms modus senere fra **Edit** på [siden Screens](./managing-screens.md).
 
 ## Koble til en tjenesteplan i stedet
 
-Koden på skjermen **Koble til denne skjermen** fungerer også i B1 Admin. Hvis du skriver den inn der og velger en plantype under **Show Plans For**, følger TV-en den plantypen i [Planmodus](../plan-mode/) i stedet for en kalender. Se [Koble til enheten din](../plan-mode/device-pairing).
+Koden på skjermen **Koble til denne skjermen** fungerer også i B1 Admin. Hvis du skriver den inn der og velger en plantype under **Show Plans For**, følger TV-en den plantypen i [Planmodus](../plan-mode/index.md) i stedet for en kalender. Se [Koble til enheten din](../plan-mode/device-pairing.md).
 
 ## Endre eller koble fra på TV-en {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ TV-en går tilbake til å vise en paringskode. Koble den til igjen når du vil h
 
 ## Relaterte artikler
 
-- **[Administrere skjermer og grupper](./managing-screens)** - Gi nytt navn til en skjerm, flytt den til en annen gruppe, eller sjekk nedlastingene
-- **[Planlegge kalenderen](./scheduling-the-calendar)** - Bestem hva gruppens skjermer spiller
-- **[Velge en paringsmodus](../getting-started/pairing-modes)** - Sammenlign planlagt modus med planmodus og bla i leverandører selv
+- **[Administrere skjermer og grupper](./managing-screens.md)** - Gi nytt navn til en skjerm, flytt den til en annen gruppe, eller sjekk nedlastingene
+- **[Planlegge kalenderen](./scheduling-the-calendar.md)** - Bestem hva gruppens skjermer spiller
+- **[Velge en paringsmodus](../getting-started/pairing-modes.md)** - Sammenlign planlagt modus med planmodus og bla i leverandører selv

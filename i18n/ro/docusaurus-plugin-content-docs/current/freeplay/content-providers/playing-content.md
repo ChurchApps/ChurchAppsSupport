@@ -1,5 +1,6 @@
 ---
 title: "Redarea conținutului"
+description: "Controlați FreePlay cu telecomanda: pauză, treceți peste slide-uri și videoclipuri, mergeți la orice mesaj și ieșiți din player din orice conținut."
 ---
 
 # Redarea conținutului
@@ -13,13 +14,13 @@ Playerul FreePlay ocupă întregul ecran și este conceput pentru telecomenzile 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Alege ceva de redat. Consultă [Răsfoirea și descărcarea conținutului](./browsing-content), [Modul plan](../plan-mode/) sau [Anunțuri](./announcements)
+- Alege ceva de redat. Consultă [Răsfoirea și descărcarea conținutului](./browsing-content.md), [Modul plan](../plan-mode/index.md) sau [Anunțuri](./announcements.md)
 - Apasă **Start** pentru a deschide playerul
 
 </div>
 
 :::info
-Ecranele asociate unui calendar folosesc un player programat separat, cu comenzi ușor diferite. Consultă [Redarea programată la TV](../scheduled-mode/scheduled-playback).
+Ecranele asociate unui calendar folosesc un player programat separat, cu comenzi ușor diferite. Consultă [Redarea programată la TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Comenzile playerului
@@ -57,7 +58,7 @@ Apasă **Sus** în timpul redării pentru a deschide **Selectează un mesaj**. A
 Apasă **Jos** sau **Înapoi** pe telecomandă pentru a părăsi playerul. Locul în care ajungi depinde de ce redai:
 
 - **Conținut dintr-o sursă externă** - Înapoi la navigatorul de conținut
-- **Un plan** - Înapoi la ecranul de descărcare a planului. Consultă [Modul plan](../plan-mode/)
+- **Un plan** - Înapoi la ecranul de descărcare a planului. Consultă [Modul plan](../plan-mode/index.md)
 - **O descărcare** - Înapoi la ecranul **Descărcări**
 
 :::info
@@ -66,5 +67,5 @@ Ecranul rămâne activ cât timp playerul este deschis, astfel încât televizor
 
 ## Articole conexe
 
-- **[Răsfoirea și descărcarea conținutului](./browsing-content)** - Găsește conținutul și descarc-l pentru redare offline
-- **[Redarea programată la TV](../scheduled-mode/scheduled-playback)** - Comenzile telecomenzii pentru ecranele care urmează un calendar
+- **[Răsfoirea și descărcarea conținutului](./browsing-content.md)** - Găsește conținutul și descarc-l pentru redare offline
+- **[Redarea programată la TV](../scheduled-mode/scheduled-playback.md)** - Comenzile telecomenzii pentru ecranele care urmează un calendar

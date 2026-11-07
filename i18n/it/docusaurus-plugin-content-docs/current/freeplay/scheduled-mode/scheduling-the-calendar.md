@@ -1,5 +1,6 @@
 ---
 title: "Programmare il calendario"
+description: "Pianificare nel Calendario di FreePlay Admin playlist, piani o cartelle provider sui gruppi di schermi, settimanalmente o una tantum, con loop di riserva."
 ---
 
 # Programmare il calendario
@@ -13,8 +14,8 @@ La pagina **Calendario** in FreePlay Admin controlla cosa riproduce ciascun grup
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Crea almeno un gruppo di schermi. Vedi [Gestire schermi e gruppi](./managing-screens#screen-groups)
-- [Crea una playlist](./building-playlists), oppure avere un tipo di piano configurato in B1 Admin
+- Crea almeno un gruppo di schermi. Vedi [Gestire schermi e gruppi](./managing-screens.md#screen-groups)
+- [Crea una playlist](./building-playlists.md), oppure avere un tipo di piano configurato in B1 Admin
 
 </div>
 
@@ -82,10 +83,10 @@ Se due programmazioni si sovrappongono, il modulo mostra un avviso: **Si sovrapp
 
 ## Come gli schermi recepiscono le modifiche
 
-Gli schermi abbinati scaricano tutto ciò che è programmato per i successivi 7 giorni e controllano da soli se ci sono modifiche. Non devi toccare la TV dopo aver modificato il calendario. Per vedere quando uno schermo ha tutto ciò di cui ha bisogno, controlla **Pronto fino a** nella [pagina Schermi](./managing-screens).
+Gli schermi abbinati scaricano tutto ciò che è programmato per i successivi 7 giorni e controllano da soli se ci sono modifiche. Non devi toccare la TV dopo aver modificato il calendario. Per vedere quando uno schermo ha tutto ciò di cui ha bisogno, controlla **Pronto fino a** nella [pagina Schermi](./managing-screens.md).
 
 ## Articoli correlati
 
-- **[Creare playlist](./building-playlists)** - Crea le playlist che programmi
-- **[Riproduzione pianificata sulla TV](./scheduled-playback)** - Come funzionano sulla TV le lezioni a ritmo dell'insegnante e il telecomando
-- **[Gestire schermi e gruppi](./managing-screens)** - Aggiungi gruppi e controlla i download di ciascuno schermo
+- **[Creare playlist](./building-playlists.md)** - Crea le playlist che programmi
+- **[Riproduzione pianificata sulla TV](./scheduled-playback.md)** - Come funzionano sulla TV le lezioni a ritmo dell'insegnante e il telecomando
+- **[Gestire schermi e gruppi](./managing-screens.md)** - Aggiungi gruppi e controlla i download di ciascuno schermo

@@ -1,5 +1,6 @@
 ---
 title: "Téléchargements et documents"
+description: "Trouver et télécharger fiches d'activités imprimables, guides de l'animateur et PDF joints aux leçons, études ou programmes Lessons.church pour votre classe."
 ---
 
 # Téléchargements et documents

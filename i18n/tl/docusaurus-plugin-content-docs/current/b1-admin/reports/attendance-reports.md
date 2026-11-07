@@ -1,5 +1,6 @@
 ---
 title: "Mga Ulat ng Attendance"
+description: "Alamin ang tatlong attendance report ng B1 Admin: Attendance Trend, Group Attendance, at Daily Group Attendance, kasama ang mga hakbang sa pagpapatakbo at pag-export."
 ---
 
 # Mga Ulat ng Attendance

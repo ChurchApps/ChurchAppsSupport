@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referință pentru @churchapps/apphelper (Packages): punctele de intrare, aplicațiile care folosesc fiecare export și pașii de dezvoltare locală și publicare."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Pachetul `@churchapps/apphelper` oferă componente React și utilitare comune pe
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **Node.js** și **Git** -- consultați [Cerințe preliminare](../setup/prerequisites)
+- Instalați **Node.js** și **Git** -- consultați [Cerințe preliminare](../setup/prerequisites.md)
 - Familiarizați-vă cu configurarea [spațiului de lucru Packages](./index.md) și cu fluxul de lansare
 
 </div>
@@ -92,6 +93,6 @@ Nu eliminați și nu redenumiți niciodată un export până când înlocuitorul
 
 ## Articole înrudite
 
-- **[Helpers](./helpers)** -- Pachetul de bază de funcții utilitare folosit alături de AppHelper
-- **[Aplicații web](../web-apps/)** -- Aplicațiile web care folosesc acest pachet
+- **[Helpers](./helpers.md)** -- Pachetul de bază de funcții utilitare folosit alături de AppHelper
+- **[Aplicații web](../web-apps/index.md)** -- Aplicațiile web care folosesc acest pachet
 - **[Prezentarea generală a bibliotecilor comune](./index.md)** -- Configurarea spațiului de lucru, fluxul de lansare și fluxul de legare locală

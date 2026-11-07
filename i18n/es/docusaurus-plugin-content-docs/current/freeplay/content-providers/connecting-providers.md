@@ -1,5 +1,6 @@
 ---
 title: "Conectar con proveedores"
+description: "Conecta FreePlay a un proveedor con código QR, inicio de sesión por correo o acceso de un clic, y administra o desconecta la conexión en Configuración."
 ---
 
 # Conectar con proveedores
@@ -13,7 +14,7 @@ Antes de explorar el contenido de un proveedor, necesita conectarse a él. Algun
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Instale e inicie FreePlay; consulte [Primeros pasos](../getting-started/)
+- Instale e inicie FreePlay; consulte [Primeros pasos](../getting-started/index.md)
 - Tenga a mano el control remoto del televisor para navegar
 - En los proveedores que requieren inicio de sesión, tenga a mano sus credenciales de cuenta
 
@@ -80,7 +81,7 @@ Al seleccionar una tarjeta de proveedor que muestra la insignia **Conectado**, s
 
 - **Explorar biblioteca**: mostrar u ocultar la biblioteca de contenido de este proveedor en la barra lateral
 - **Descargar automáticamente la lección de hoy**: usar este proveedor como fuente de la lección de hoy y descargar previamente sus archivos (solo aparece en los proveedores que ofrecen una lección actual)
-- **Usar para anuncios**: elija una carpeta de este proveedor para reproducirla en bucle desde el elemento **Anuncios** de la barra lateral. Véase [Anuncios](./announcements)
+- **Usar para anuncios**: elija una carpeta de este proveedor para reproducirla en bucle desde el elemento **Anuncios** de la barra lateral. Véase [Anuncios](./announcements.md)
 - **Buscar actualizaciones de anuncios**: aparece una vez que se ha elegido una carpeta de anuncios; descarga las diapositivas nuevas y elimina las borradas
 - **Desconectar**: elimina la conexión
 
@@ -100,6 +101,6 @@ Al desconectar se elimina la autenticación guardada en su dispositivo. Tendrá 
 
 ## Artículos relacionados
 
-- **[Explorar y descargar contenido](./browsing-content)**: navegue por las carpetas y reproduzca contenido después de conectarse
-- **[Anuncios](./announcements)**: reproduzca en bucle una carpeta de diapositivas de un proveedor conectado
+- **[Explorar y descargar contenido](./browsing-content.md)**: navegue por las carpetas y reproduzca contenido después de conectarse
+- **[Anuncios](./announcements.md)**: reproduzca en bucle una carpeta de diapositivas de un proveedor conectado
 - **[Descripción general de los proveedores de contenido](./index.md)**: consulte todos los proveedores disponibles

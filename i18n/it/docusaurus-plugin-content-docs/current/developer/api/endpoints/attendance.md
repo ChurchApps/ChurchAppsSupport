@@ -1,5 +1,6 @@
 ---
 title: "Endpoint di Presenze"
+description: "Riferimento per l'API delle presenze in B1 Admin e B1 Checkin: campus, servizi, orari, sessioni, visite, regole di check-in ed endpoint di esportazione."
 ---
 
 # Endpoint di Presenze
@@ -270,6 +271,6 @@ Tiene traccia delle serie di presenze delle singole persone, ovvero le settimane
 
 ## Pagine correlate
 
-- [Endpoint di Membership](./membership) — Persone, gruppi, ruoli e gestione della chiesa
-- [Autenticazione e permessi](./authentication) — Flusso di accesso, JWT, modello dei permessi
-- [Struttura del modulo](../module-structure) — Schemi di organizzazione del codice
+- [Endpoint di Membership](./membership.md) — Persone, gruppi, ruoli e gestione della chiesa
+- [Autenticazione e permessi](./authentication.md) — Flusso di accesso, JWT, modello dei permessi
+- [Struttura del modulo](../module-structure.md) — Schemi di organizzazione del codice

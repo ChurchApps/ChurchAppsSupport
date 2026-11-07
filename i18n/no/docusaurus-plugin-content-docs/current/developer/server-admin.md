@@ -1,5 +1,6 @@
 ---
 title: "Serveradministrasjon"
+description: "Kun for Server.Admin-brukere: tilbakestill tofaktorinnlogging, utgi deg for å være en konto, moderer Commons og godkjenn kirkens e-post i B1 Admin."
 ---
 
 # Serveradministrasjon

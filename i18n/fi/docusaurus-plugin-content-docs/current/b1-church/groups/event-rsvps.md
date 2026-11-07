@@ -1,5 +1,6 @@
 ---
 title: "Tapahtumien vastaukset"
+description: "Vastaa ryhmätapahtumiin Tulen, Ehkä tai En pääse B1.church-jäsenportaalissa ja näe, kuinka monta muuta osallistuu. Johtajat voivat tarkastella vastauksia myös."
 ---
 
 # Tapahtumien vastaukset
@@ -30,14 +31,14 @@ Vastauksesi koskee tiettyä tapahtumaa – esimerkiksi viikoittaisessa kokoukses
 ## Ryhmäjohtajille
 
 - **Vastausten tarkastelu** -- Johtajat näkevät **Näytä vastaukset** -linkin jokaisessa tapahtumassa ryhmän kalenterissa (**Kaikki tapahtumat**). Se avaa **Vastaukset**-paneelin, joka listaa kaikki vastausten mukaan: Tulossa, Ehkä ja Ei pääse. Jos kukaan ei ole vielä vastannut, näytetään teksti "Ei vastauksia vielä."
-- **Vastausten käyttöönotto tai poisto** -- Kun luot tai muokkaat tapahtumaa, käytä **Salli vastaukset** -kytkintä. Tapahtumat, joissa vastaukset on poistettu käytöstä, eivät näytä vastauspainikkeita. B1 Adminissa massana tapahtumia luoville henkilökunnan jäsenille on sama asetus – katso [Ryhmäkalenteri](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Vastausten käyttöönotto tai poisto** -- Kun luot tai muokkaat tapahtumaa, käytä **Salli vastaukset** -kytkintä. Tapahtumat, joissa vastaukset on poistettu käytöstä, eivät näytä vastauspainikkeita. B1 Adminissa massana tapahtumia luoville henkilökunnan jäsenille on sama asetus – katso [Ryhmäkalenteri](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Vastaukset ovat kevyt osallistujamäärän arvio. Jos tapahtumasi tarvitsee ilmoittautumistietoja, kapasiteetin hallintaa tai maksua, käytä sen sijaan [tapahtumailmoittautumista](../events/registering).
+Vastaukset ovat kevyt osallistujamäärän arvio. Jos tapahtumasi tarvitsee ilmoittautumistietoja, kapasiteetin hallintaa tai maksua, käytä sen sijaan [tapahtumailmoittautumista](../events/registering.md).
 :::
 
 ## Aiheeseen liittyvät artikkelit
 
 - [Ryhmän tiedot](./group-details.md) -- Kaikki ryhmän tietosivulla
-- [Ryhmäkalenteri (B1 Admin)](../../b1-admin/groups/group-calendar) -- Miten henkilökunta ja johtajat hallitsevat ryhmien tapahtumia ja vastauksia
-- [Tapahtumiin ilmoittautuminen](../events/registering) -- Täydellinen tapahtumailmoittautuminen kapasiteetilla ja maksuilla
+- [Ryhmäkalenteri (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Miten henkilökunta ja johtajat hallitsevat ryhmien tapahtumia ja vastauksia
+- [Tapahtumiin ilmoittautuminen](../events/registering.md) -- Täydellinen tapahtumailmoittautuminen kapasiteetilla ja maksuilla

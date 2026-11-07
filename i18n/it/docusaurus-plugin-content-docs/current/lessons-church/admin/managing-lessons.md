@@ -1,5 +1,6 @@
 ---
 title: "Gestire le lezioni"
+description: "Costruire una lezione in Lessons.church: sedi, sezioni e azioni Say, Do, Note o Play per ruolo, più testo per i genitori e risorse."
 ---
 
 # Gestire le lezioni

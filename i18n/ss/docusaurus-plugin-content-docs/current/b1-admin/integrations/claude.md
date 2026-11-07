@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Xhuma i-B1 Admin ku-Claude kuze ubuze ngekutfola, timinikelo nemaqembu ngelulwimi lolucacile, nekungena noma ngekhiyi lenelilungelo lelincane."
 ---
 
 # Claude
@@ -193,4 +194,4 @@ Loku kufana ne-`/membership/people`, `/giving/donations`, `/attendance/visits` n
 
 - [API Keys](/docs/developer/api/api-keys) — luhlu loluphelele lwemkhawulo
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — imininingwane yeprothokholi kanye netinhlaka temathulusi
-- [ChatGPT](./chatgpt) — umbono lofanako, wemamodeli e-OpenAI
+- [ChatGPT](./chatgpt.md) — umbono lofanako, wemamodeli e-OpenAI

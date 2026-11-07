@@ -1,5 +1,6 @@
 ---
 title: Einführung in B1.church
+description: "Führt Sie durch die Anmeldung bei B1 Admin, zeigt Ihnen Dashboard und Sprungmenü und hilft beim Einrichten der Gemeindeinformationen, bevor Sie weitere Werkzeuge erkunden."
 ---
 
 # Willkommen bei B1.church Admin!
@@ -30,7 +31,7 @@ Für weitere Unterstützung schreiben Sie bitte an [support@churchapps.org](mail
 10. Sie können B1.church nun über den **Mitgliederbereich** oder den **Admin-Bereich** öffnen. Der Mitgliederbereich zeigt Ihnen, wie B1.church für Ihre Mitglieder aussieht, lässt Sie Ihre Gruppen ansehen und Ihre persönlichen Spenden verwalten.
 
 :::tip
-Beginnen Sie mit der Seite [Einstellungen](./settings/), um Ihren Kirchennamen, das Erscheinungsbild und die Berechtigungen des Teams festzulegen. So wird alles, was Sie danach einrichten, korrekt angezeigt.
+Beginnen Sie mit der Seite [Einstellungen](./settings/index.md), um Ihren Kirchennamen, das Erscheinungsbild und die Berechtigungen des Teams festzulegen. So wird alles, was Sie danach einrichten, korrekt angezeigt.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -77,9 +78,9 @@ Die Suche ist oft der schnellste Weg zu einer Seite -- geben Sie einen Teil des 
 
 Nach dieser Einführung lohnt es sich, diese zentralen Funktionen zu erkunden:
 
-- [Personen hinzufügen](./people/adding-people) -- Erfahren Sie, wie Sie Mitglieder in Ihre Datenbank aufnehmen
-- [Gruppen](./groups/) -- Gruppen der Kirche einrichten und verwalten
-- [Dienstpläne](./serving/plans) -- Ihren Dienst organisieren
-- [Anwesenheit](./attendance/) -- Anwesenheit erfassen und Check-in nutzen
-- [Website](./website/) -- Die Website Ihrer Kirche gestalten und anpassen
-- [Einstellungen](./settings/) -- Angaben zur Kirche und Berechtigungen konfigurieren
+- [Personen hinzufügen](./people/adding-people.md) -- Erfahren Sie, wie Sie Mitglieder in Ihre Datenbank aufnehmen
+- [Gruppen](./groups/index.md) -- Gruppen der Kirche einrichten und verwalten
+- [Dienstpläne](./serving/plans.md) -- Ihren Dienst organisieren
+- [Anwesenheit](./attendance/index.md) -- Anwesenheit erfassen und Check-in nutzen
+- [Website](./website/index.md) -- Die Website Ihrer Kirche gestalten und anpassen
+- [Einstellungen](./settings/index.md) -- Angaben zur Kirche und Berechtigungen konfigurieren

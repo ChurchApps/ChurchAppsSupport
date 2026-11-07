@@ -1,5 +1,7 @@
 ---
-title: "Kusakaza Bukhoma"
+title: "Sikhatsi Sekusakaza Ngqo nekusetwa ku-B1 Admin"
+sidebar_label: "Kusakaza Bukhoma"
+description: "Hlela tinkhonzo letisakazwa ngqo ngesonto noma nje kanye, setela sikhatsi sekuxoxisana nemavidiyo, xhuma ichaneli ye-YouTube, uhlole ama-embed ku-B1 Admin."
 ---
 
 # Kusakaza Bukhoma
@@ -15,7 +17,7 @@ Likhasi le-Tikhatsi Tekusakaza Bukhoma likuvumela kulungisa shedyuli yekusakaza 
 
 - Udzinga imvumo **contentApi.streamingServices.edit**. Buka [Tikhundla Netimvumo](../settings/roles-permissions.md) uma ungenawo umfanelo.
 - Yiba ne-ID Yeshanela yakho YeYouTube lelungele, uma ucata kusebentisa kusakaza bukhoma lokuyingeniso yesekwe.
-- Engeta [intshumayelo](managing-sermons) lulodvwa okungenani nome i-URL yekusakaza bukhoma lehlala njalo, kute usebentise njengemtfombo wemsakazo wakho
+- Engeta [intshumayelo](./managing-sermons.md) lulodvwa okungenani nome i-URL yekusakaza bukhoma lehlala njalo, kute usebentise njengemtfombo wemsakazo wakho
 
 </div>
 
@@ -76,7 +78,7 @@ Kute utfole i-ID Yeshanela yakho YeYouTube, hamba etilungiselelweni letiphakeme 
 
 ## Kulungisa Imibala Kanye Nelogo
 
-Likhasi lakho lekusakaza bukhoma lisebentisa tilungiselelo te-[Kubukeka](../website/appearance) teliwebusayithi lakho:
+Likhasi lakho lekusakaza bukhoma lisebentisa tilungiselelo te-[Kubukeka](../website/appearance.md) teliwebusayithi lakho:
 
 - **Umbala wekucacisa lokhanyako** unembhalo lomnyama usetjentiswa etulu.
 - **Umbala wekucacisa lomnyama** unembhalo lokhanyako usetjentiswa lucaleni.
@@ -129,5 +131,5 @@ Umfaki wemsakazo wangekutentekwako weshanela ye-YouTube ungavinjelwa uma kunetin
 
 ## Tinyatselo Letilandzelako
 
-- [Kuphatsa Tintshumayelo](managing-sermons) -- Engeta tintshumayelo emtsamweni wakho
-- [Tinhlu](playlists) -- Hlela tintshumayelo tibe tichungechunge
+- [Kuphatsa Tintshumayelo](./managing-sermons.md) -- Engeta tintshumayelo emtsamweni wakho
+- [Tinhlu](./playlists.md) -- Hlela tintshumayelo tibe tichungechunge

@@ -1,5 +1,6 @@
 ---
 title: "Koncové body modulu správ"
+description: "Referencia koncových bodov messaging API ChurchApps: konverzácie, pravidlá prístupu k poznámkam, textové správy, šablóny e-mailov, upozornenia a zariadenia."
 ---
 
 # Koncové body modulu správ
@@ -190,7 +191,7 @@ Základná cesta: `/messaging/notificationpreferences`
 
 Základná cesta: `/messaging/connections`
 
-Spravuje pripojenia WebSocket/v reálnom čase pre chat, skupinové konverzácie, súkromné správy a živé prenosy. Protokol od začiatku do konca nájdete v [Architektúra v reálnom čase](../../realtime).
+Spravuje pripojenia WebSocket/v reálnom čase pre chat, skupinové konverzácie, súkromné správy a živé prenosy. Protokol od začiatku do konca nájdete v [Architektúra v reálnom čase](../../realtime.md).
 
 | Metóda | Cesta | Autentifikácia | Oprávnenie | Popis |
 |--------|-------|----------------|------------|-------|
@@ -367,9 +368,9 @@ Sleduje stav doručenia odoslaných správ (SMS, push oznámenia, e-mail).
 
 ## Súvisiace stránky
 
-- [Architektúra v reálnom čase](../../realtime) -- protokol WebSocket, odbery miestností a jednotný rámec doručovania
-- [Push oznámenia pre web](../../web-push) -- registrácia a doručovanie push oznámení v prehliadači
-- [Koncové body členstva](./membership) -- osoby, skupiny, roly a základná identita
-- [Koncové body účasti](./attendance) -- sledovanie služieb a návštev
-- [Autentifikácia a oprávnenia](./authentication) -- prihlasovací tok, JWT, OAuth, model oprávnení
-- [Štruktúra modulu](../module-structure) -- vzory organizácie kódu
+- [Architektúra v reálnom čase](../../realtime.md) -- protokol WebSocket, odbery miestností a jednotný rámec doručovania
+- [Push oznámenia pre web](../../web-push.md) -- registrácia a doručovanie push oznámení v prehliadači
+- [Koncové body členstva](./membership.md) -- osoby, skupiny, roly a základná identita
+- [Koncové body účasti](./attendance.md) -- sledovanie služieb a návštev
+- [Autentifikácia a oprávnenia](./authentication.md) -- prihlasovací tok, JWT, OAuth, model oprávnení
+- [Štruktúra modulu](../module-structure.md) -- vzory organizácie kódu

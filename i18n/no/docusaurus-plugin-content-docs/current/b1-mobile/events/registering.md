@@ -1,5 +1,7 @@
 ---
-title: "Registrering for arrangement"
+title: "Melde seg på arrangementer i B1 Mobile"
+sidebar_label: "Registrering for arrangement"
+description: "Meld deg og familiemedlemmer på menighetsarrangementer fra B1 Mobile-appen, se gjenværende kapasitet, og bekreft påmeldingen i tre trinn."
 ---
 
 # Registrering for arrangement
@@ -13,7 +15,7 @@ Registrer deg for kirkearrangement direkte fra B1 Mobile ved hjelp av en enkel t
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Arrangementet må ha registrering aktivert og registreringsvinduet må være åpent
 
 </div>
@@ -50,4 +52,4 @@ Hvis du trenger å avbryte, kontakt kirkeadministratoren. De kan avbryte registr
 ## Relaterte artikler
 
 - [Arrangementoversikt](./index.md) -- Bla gjennom arrangement med registrering på mobil
-- [Visning av planer](../serving/viewing-plans) -- Se tjenesteplanen din
+- [Visning av planer](../serving/viewing-plans.md) -- Se tjenesteplanen din

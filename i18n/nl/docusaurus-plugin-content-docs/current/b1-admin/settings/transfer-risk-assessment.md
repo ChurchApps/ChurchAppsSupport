@@ -1,5 +1,6 @@
 ---
 title: "Overdracht risicobeoordeling"
+description: "Nalevingsoverzicht van ChurchApps voor overdracht van kerkgegevens uit de EU/EER en het VK naar de VS in B1 Admin: waarborgen, subverwerkers en toegang."
 ---
 
 # Overdracht risicobeoordeling

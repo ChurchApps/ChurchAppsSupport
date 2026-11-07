@@ -1,5 +1,6 @@
 ---
 title: "Korzystanie z edytora stron"
+description: "Skonfiguruj edytor stron w B1 Admin: dodawaj sekcje i elementy, stylizuj je, sprawdzaj podgląd na telefonie i publikuj wersje robocze. Obejmuje też cofanie zmian i historię wersji."
 ---
 
 # Korzystanie z edytora stron
@@ -17,8 +18,8 @@ Edytor stron B1 to wizualny kreator typu przeciągnij i upuść, który pozwala 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Wykonaj [Wstępną konfigurację](initial-setup), aby skonfigurować swoją witrynę
-- Utwórz co najmniej jedną stronę w sekcji [Zarządzanie stronami](managing-pages)
+- Wykonaj [Wstępną konfigurację](./initial-setup.md), aby skonfigurować swoją witrynę
+- Utwórz co najmniej jedną stronę w sekcji [Zarządzanie stronami](./managing-pages.md)
 - Aby otworzyć edytor, potrzebujesz uprawnienia **content.edit**
 
 </div>
@@ -31,7 +32,7 @@ Edytor stron B1 to wizualny kreator typu przeciągnij i upuść, który pozwala 
 Edytor otworzy się w trybie pełnoekranowym. Lewy panel pokazuje strukturę strony i dostępne elementy treści, a środkowy obszar -- podgląd strony na żywo.
 
 :::info
-Edytor zawsze wyświetla się w jasnym motywie, niezależnie od ustawienia motywu w B1 Admin, i używa czcionek nagłówków oraz tekstu, które wybrano w sekcji [Wygląd](appearance). Dzięki temu podgląd dokładnie odpowiada temu, jak strona będzie wyglądać dla odwiedzających witrynę.
+Edytor zawsze wyświetla się w jasnym motywie, niezależnie od ustawienia motywu w B1 Admin, i używa czcionek nagłówków oraz tekstu, które wybrano w sekcji [Wygląd](./appearance.md). Dzięki temu podgląd dokładnie odpowiada temu, jak strona będzie wyglądać dla odwiedzających witrynę.
 :::
 
 ## Struktura strony: sekcje i elementy
@@ -61,7 +62,7 @@ Masz już gotową sekcję, ale chcesz inną strukturę? Użyj przełącznika uk�
    - **Obraz** -- Prześlij zdjęcie lub podaj do niego link
    - **Przycisk** -- Klikalny link wzywający do działania
    - **Karta** -- Obraz z tytułem i opisem
-   - **Formularz** -- Osadź [formularz](../forms/creating-forms) bezpośrednio na stronie. Jeśli formularz ma [zdjęcie nagłówkowe](../forms/creating-forms.md#adding-a-header-photo), wyświetli się ono nad pytaniami
+   - **Formularz** -- Osadź [formularz](../forms/creating-forms.md) bezpośrednio na stronie. Jeśli formularz ma [zdjęcie nagłówkowe](../forms/creating-forms.md#adding-a-header-photo), wyświetli się ono nad pytaniami
    - **Kalendarz** -- Wyświetl kalendarz wydarzeń
    - **FAQ** -- Bloki pytań i odpowiedzi w formie akordeonu
    - **Wideo** -- Osadź wideo na podstawie adresu URL
@@ -79,7 +80,7 @@ Masz już gotową sekcję, ale chcesz inną strukturę? Użyj przełącznika uk�
    - **Mapa** -- Osadzona mapa wyśrodkowana na adresie kościoła
    - **Tabela** -- Prosta siatka wierszy i kolumn do danych tabelarycznych
    - **Tekst ze zdjęciem** -- Tekst i obraz obok siebie
-   - **Logo** -- Logo kościoła, pobierane z sekcji [Wygląd](appearance)
+   - **Logo** -- Logo kościoła, pobierane z sekcji [Wygląd](./appearance.md)
    - **Transmisja na żywo** -- Odtwarzacz transmisji na żywo, osadzony bezpośrednio na stronie
    - **Podcast** -- Lista odcinków pobrana z zewnętrznego kanału RSS podcastu, którego adres podajesz, z ustawieniami liczby wyświetlanych odcinków oraz tego, czy pokazywać daty i opisy. Każdy odcinek na działającej witrynie ma odtwarzacz audio oraz link **Pobierz**, który zapisuje plik audio odcinka pod tytułem odcinka. Ten element służy do prezentowania dowolnego kanału podcastu na Twojej witrynie; aby opublikować własne kazania jako podcast, zobacz [Zarządzanie kazaniami](../sermons/managing-sermons.md#your-podcast-feed)
    - **Darowizna** -- Przycisk darowizny lub osadzony formularz darowizn
@@ -100,7 +101,7 @@ Jeśli wkleisz do pola JavaScript sam adres internetowy (na przykład link do ob
 
 Element **Kalendarz** pokazuje wydarzenia z jednego z Twoich kalendarzy:
 
-1. W sekcji **Wybierz** wybierz **Kalendarz grupy** (wydarzenia jednej grupy -- lista pokazuje grupy, do których należysz) lub **Wyselekcjonowany kalendarz** (kalendarz, który utworzyłeś w sekcji **Kalendarze**; zobacz [Wyselekcjonowany kalendarz](../calendars/curated-calendar)).
+1. W sekcji **Wybierz** wybierz **Kalendarz grupy** (wydarzenia jednej grupy -- lista pokazuje grupy, do których należysz) lub **Wyselekcjonowany kalendarz** (kalendarz, który utworzyłeś w sekcji **Kalendarze**; zobacz [Wyselekcjonowany kalendarz](../calendars/curated-calendar.md)).
 2. W sekcji **Wybierz kalendarz** wskaż grupę lub kalendarz.
 3. W sekcji **Wyświetlanie** wybierz sposób prezentacji:
    - **Kalendarz miesięczny** -- Siatka miesiąca, po której odwiedzający mogą się przełączać.
@@ -133,7 +134,7 @@ Kliknij dowolny element, aby otworzyć jego panel stylów. Typowe opcje to rozmi
 Do zaawansowanego stylowania każda sekcja i każdy element ma pole **Własny CSS**, w którym możesz napisać własne reguły CSS. Działają one tylko w zakresie danego elementu, więc nie wpłyną przypadkowo na resztę strony.
 
 :::tip
-Jeśli chcesz zastosować style w całej witrynie -- na przykład własną czcionkę lub globalny kolor -- użyj ustawień [Wygląd](appearance) zamiast własnego CSS na poszczególnych stronach.
+Jeśli chcesz zastosować style w całej witrynie -- na przykład własną czcionkę lub globalny kolor -- użyj ustawień [Wygląd](./appearance.md) zamiast własnego CSS na poszczególnych stronach.
 :::
 
 ## Podgląd strony
@@ -188,7 +189,7 @@ Korzystaj z przepływu roboczego i publikacji, gdy chcesz przygotować stronę -
 
 ## Powiązane artykuły
 
-- [Zarządzanie stronami](managing-pages) -- Tworzenie stron, ustawianie adresów URL i zarządzanie nawigacją witryny
-- [Wygląd](appearance) -- Ustawianie kolorów, czcionek i wizerunku marki dla całej witryny
-- [Pliki](files) -- Przesyłanie obrazów i dokumentów do użycia w edytorze
-- [Tworzenie formularzy](../forms/creating-forms) -- Budowanie formularzy, które możesz osadzać na stronach
+- [Zarządzanie stronami](./managing-pages.md) -- Tworzenie stron, ustawianie adresów URL i zarządzanie nawigacją witryny
+- [Wygląd](./appearance.md) -- Ustawianie kolorów, czcionek i wizerunku marki dla całej witryny
+- [Pliki](./files.md) -- Przesyłanie obrazów i dokumentów do użycia w edytorze
+- [Tworzenie formularzy](../forms/creating-forms.md) -- Budowanie formularzy, które możesz osadzać na stronach

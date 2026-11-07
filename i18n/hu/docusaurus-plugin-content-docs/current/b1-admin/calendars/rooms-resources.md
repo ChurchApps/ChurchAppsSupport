@@ -1,5 +1,6 @@
 ---
 title: "Szobák, erőforrások és ütemezés"
+description: "Termek, eszközök, blokkolások és eseménysablonok beállítása a B1 Admin-ban: csoportok foglalási kérelmei, jóváhagyás a dupla foglalás elkerüléséhez."
 ---
 
 # Szobák, erőforrások és ütemezés
@@ -14,7 +15,7 @@ A szobák és erőforrások segítségével nyilván tarthatod a gyülekezeted l
 <h4>Előkészületek</h4>
 
 - Szükséged van adminisztrátori hozzáférésre a B1 Admin Naptárak részéhez
-- Hozz létre [csoportokat](../groups/creating-groups), amelyek tagjai foglalási kérelmeket küldhetnek
+- Hozz létre [csoportokat](../groups/creating-groups.md), amelyek tagjai foglalási kérelmeket küldhetnek
 
 </div>
 
@@ -76,7 +77,7 @@ A sablonokkal elmenthetsz egy újrahasználható eseménybeállítást: címet, 
 
 ## Kapcsolódó cikkek
 
-- [Elérhetőségi naptár](availability) — az összes foglalás áttekintése, valamint szobák vagy erőforrások közvetlen lefoglalása
-- [Naptári jóváhagyások](approvals) — szoba- és erőforrás-foglalási kérelmek jóváhagyása vagy elutasítása
-- [Naptárak létrehozása](creating-calendars) — eseménynaptárak beállítása
-- [Csoportok létrehozása](../groups/creating-groups) — olyan csoportok beállítása, amelyek szobákat és erőforrásokat foglalhatnak
+- [Elérhetőségi naptár](./availability.md) — az összes foglalás áttekintése, valamint szobák vagy erőforrások közvetlen lefoglalása
+- [Naptári jóváhagyások](./approvals.md) — szoba- és erőforrás-foglalási kérelmek jóváhagyása vagy elutasítása
+- [Naptárak létrehozása](./creating-calendars.md) — eseménynaptárak beállítása
+- [Csoportok létrehozása](../groups/creating-groups.md) — olyan csoportok beállítása, amelyek szobákat és erőforrásokat foglalhatnak

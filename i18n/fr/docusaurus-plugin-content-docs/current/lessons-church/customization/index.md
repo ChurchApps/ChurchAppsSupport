@@ -1,5 +1,6 @@
 ---
 title: "Personnalisation"
+description: "Masquer des sections, rôles ou actions d'une leçon Lessons.church et réordonner le contenu, pour une classe ou toutes les classes."
 ---
 
 # Personnalisation

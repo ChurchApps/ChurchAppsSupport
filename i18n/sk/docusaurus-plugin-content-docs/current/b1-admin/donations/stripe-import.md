@@ -1,5 +1,6 @@
 ---
 title: "Stripe import"
+description: "Importujte dary zo Stripe do B1 Admin s náhľadom pred importom, ktorý označí každú platbu ako novú, už importovanú alebo preskočenú, ešte pred potvrdením."
 ---
 
 # Stripe import

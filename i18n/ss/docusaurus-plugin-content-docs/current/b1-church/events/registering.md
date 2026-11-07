@@ -1,5 +1,7 @@
 ---
-title: "Kubhalisela Imicimbi"
+title: "Kubhalisa Emcimbini ku-B1.church"
+sidebar_label: "Kubhalisela Imicimbi"
+description: "Bhalisa emcimbini wesonto ku-B1.church: faka imininingwane yakho, engeta emalungu emndeni, khetsa tinketho, sebentisa likhodi lesaphulo, bese ukhokha noma ujoyine uhlu lolindzako."
 ---
 
 # Kubhalisela Imicimbi
@@ -77,14 +79,14 @@ Umlayeto wekucinisekisa uyavela nemininingwane yemcimbi kanye neluhlu lwabo bonk
 
 ## Kungena Eluhlwini Lwekulindza
 
-Nangabe umcimbi sewugcwele futsi lelibandla lakini livumele luhlu lwekulindza, sinyatselo sekucala sikhombisa: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Cedzela kubhalisa njengalokujwayelekile — inkhokhelo iyawelwa ngesikhatsi ulindzile eluhlwini. Nasekuvula lisikhala, utawutfola i-imeyili; nangabe kunenkhokhelo ledzingekako, ifaka sixhumanisi sekucedzela yona. Ungahlola nesimo sakho futsi ukhokhe kusuka [Kubhaliswa Kwami](./my-registrations).
+Nangabe umcimbi sewugcwele futsi lelibandla lakini livumele luhlu lwekulindza, sinyatselo sekucala sikhombisa: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Cedzela kubhalisa njengalokujwayelekile — inkhokhelo iyawelwa ngesikhatsi ulindzile eluhlwini. Nasekuvula lisikhala, utawutfola i-imeyili; nangabe kunenkhokhelo ledzingekako, ifaka sixhumanisi sekucedzela yona. Ungahlola nesimo sakho futsi ukhokhe kusuka [Kubhaliswa Kwami](./my-registrations.md).
 
 ## Kushintja nome Kukhansela Kubhaliswa
 
-Nangabe ungenile, ungahlela nome ukhansele kubhaliswa kwakho wena ngekwakho kusuka ekhasini le-**Registrations** eliphothalini yemalungu — bona [Kubhaliswa Kwami](./my-registrations). Tivakashi kufanele titsintsane nehhovisi lelibandla, futsi bebasebenti bangenta lutjintjo kusuka ekhasini lekubhaliswa le-B1 Admin.
+Nangabe ungenile, ungahlela nome ukhansele kubhaliswa kwakho wena ngekwakho kusuka ekhasini le-**Registrations** eliphothalini yemalungu — bona [Kubhaliswa Kwami](./my-registrations.md). Tivakashi kufanele titsintsane nehhovisi lelibandla, futsi bebasebenti bangenta lutjintjo kusuka ekhasini lekubhaliswa le-B1 Admin.
 
 ## Imibhalo Lehlobene
 
 - [Simo Sonkhe Semicimbi](./index.md) -- Cwaninga imicimbi letako lenekubhaliswa
-- [Kubhaliswa Kwami](./my-registrations) -- Bona, hlela, khokha imali losele wonelwe yona, futsi ukhansele kubhaliswa kwakho
-- [Kwenta Imnikelo](../giving/making-donations) -- Yenta umnikelo kanye nekubamba incenye emcimbini
+- [Kubhaliswa Kwami](./my-registrations.md) -- Bona, hlela, khokha imali losele wonelwe yona, futsi ukhansele kubhaliswa kwakho
+- [Kwenta Imnikelo](../giving/making-donations.md) -- Yenta umnikelo kanye nekubamba incenye emcimbini

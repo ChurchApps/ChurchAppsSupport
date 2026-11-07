@@ -1,5 +1,6 @@
 ---
 title: "API Helper"
+description: "Sanggunian sa @churchapps/apihelper package ng mga Express API sa Packages workspace: lokal na build, pagsubok gamit ang Yarn portal, at changeset publishing."
 ---
 
 # API Helper

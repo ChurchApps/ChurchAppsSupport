@@ -1,5 +1,6 @@
 ---
 title: "Ylläpito"
+description: "Yleiskatsaus Lessons.churchin ylläpitoalueeseen: ohjelmien, opintojen, oppituntien, resurssien, tilastojen ja ulkoisten opetussuunnitelmatarjoajien hallinta."
 ---
 
 # Ylläpito

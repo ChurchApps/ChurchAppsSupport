@@ -1,5 +1,7 @@
 ---
-title: "Redigere profilen din"
+title: "Redigere profilen din i B1 Mobile-appen"
+sidebar_label: "Redigere profilen din"
+description: "Oppdater navn, e-post, telefon, adresse og profilbilde i B1 Mobile-appen, slik at menighetens registre og katalog holdes oppdatert."
 ---
 
 # Redigere profilen din
@@ -13,7 +15,7 @@ Fanen **Profil** lar deg oppdatere dine personlige opplysninger, slik at menighe
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 
 </div>
 
@@ -34,7 +36,7 @@ Profilen din inneholder følgende personlige opplysninger:
 3. Trykk på feltet du vil oppdatere, og gjør endringene dine.
 4. Lagre endringene når du er ferdig.
 
-Oppdaterte opplysninger synkroniseres automatisk. Alle som ser profilen din (avhengig av dine [personverninnstillinger](./privacy-settings)) vil se de nye opplysningene med en gang.
+Oppdaterte opplysninger synkroniseres automatisk. Alle som ser profilen din (avhengig av dine [personverninnstillinger](./privacy-settings.md)) vil se de nye opplysningene med en gang.
 
 :::tip
 Hold e-postadressen og telefonnummeret ditt oppdatert. Menigheten bruker disse opplysningene til å sende deg viktige oppdateringer og påminnelser.
@@ -46,7 +48,7 @@ Du kan legge til eller endre profilbildet ditt fra fanen **Profil**. Bildet ditt
 
 ## Endringer på tvers av ChurchApps
 
-Fordi alle ChurchApps-tjenester bruker samme kontosystem, vises en endring du gjør i B1 Mobile umiddelbart i [B1.church](../../b1-church/), menighetens administrasjonsverktøy og alle andre tilkoblede tjenester. Du trenger ikke oppdatere opplysningene dine separat på hvert sted.
+Fordi alle ChurchApps-tjenester bruker samme kontosystem, vises en endring du gjør i B1 Mobile umiddelbart i [B1.church](../../b1-church/index.md), menighetens administrasjonsverktøy og alle andre tilkoblede tjenester. Du trenger ikke oppdatere opplysningene dine separat på hvert sted.
 
 :::info
 Noen menigheter krever godkjenning fra administrator for visse endringer i profilen. Hvis oppdateringen din ikke vises med en gang, sjekk fanen **Venter** på profilskjermen for status.
@@ -54,5 +56,5 @@ Noen menigheter krever godkjenning fra administrator for visse endringer i profi
 
 ## Relaterte artikler
 
-- [Husstand](./household) -- Se og administrer familiemedlemmene dine
-- [Personverninnstillinger](./privacy-settings) -- Kontroller hva andre kan se om deg
+- [Husstand](./household.md) -- Se og administrer familiemedlemmene dine
+- [Personverninnstillinger](./privacy-settings.md) -- Kontroller hva andre kan se om deg

@@ -1,5 +1,6 @@
 ---
 title: "Elérhetőségi naptár"
+description: "Foglalható termek és eszközök beállítása a B1 Admin-ban: foglalás a naptárban, puffer-idők, ismétlődő és jóváhagyást igénylő foglalások kezelése."
 ---
 
 # Elérhetőségi naptár
@@ -13,7 +14,7 @@ Az Elérhetőségi naptár átfogó képet ad az egyházad összes terem- és er
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- Legalább egy [termet vagy erőforrást](rooms-resources) kell beállítanod a Termek és erőforrások szakaszban
+- Legalább egy [termet vagy erőforrást](./rooms-resources.md) kell beállítanod a Termek és erőforrások szakaszban
 - Szerkesztési jogosultságra van szükséged a B1 Admin naptárak szakaszában
 
 </div>
@@ -58,7 +59,7 @@ A bal felső sarokban lévő **Terem / erőforrás** legördülő menüvel lesz�
 6. A foglalás elküldéséhez kattints a **Mentés** gombra.
 
 :::info
-Ha a teremhez vagy erőforráshoz **Jóváhagyó csoport** van beállítva, a foglalás **Függőben** állapotban jelenik meg, amíg a csoport egyik vezetője jóvá nem hagyja. A jóváhagyási folyamatról lásd: [Naptári jóváhagyások](approvals).
+Ha a teremhez vagy erőforráshoz **Jóváhagyó csoport** van beállítva, a foglalás **Függőben** állapotban jelenik meg, amíg a csoport egyik vezetője jóvá nem hagyja. A jóváhagyási folyamatról lásd: [Naptári jóváhagyások](./approvals.md).
 :::
 
 :::tip
@@ -67,6 +68,6 @@ A naptár mentés előtt kiemeli az esetleges ütközéseket. Ha ütközésre fi
 
 ## Kapcsolódó cikkek
 
-- [Termek, erőforrások és ütemezés](rooms-resources) — foglalható helyek és felszerelések beállítása
-- [Naptári jóváhagyások](approvals) — foglalási kérelmek jóváhagyása vagy elutasítása
-- [Naptárak létrehozása](creating-calendars) — eseménynaptárak kezelése
+- [Termek, erőforrások és ütemezés](./rooms-resources.md) — foglalható helyek és felszerelések beállítása
+- [Naptári jóváhagyások](./approvals.md) — foglalási kérelmek jóváhagyása vagy elutasítása
+- [Naptárak létrehozása](./creating-calendars.md) — eseménynaptárak kezelése

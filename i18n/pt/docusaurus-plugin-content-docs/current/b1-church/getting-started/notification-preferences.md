@@ -1,5 +1,6 @@
 ---
 title: "Preferências de Notificação"
+description: "Defina canais de notificação, frequência de e-mails, horário de silêncio e opt-out de SMS para cada tipo de notificação no B1 Admin e no app B1, em uma só tela."
 ---
 
 # Preferências de Notificação
@@ -60,6 +61,6 @@ Notificações sensíveis ao tempo -- como um alerta de segurança ou uma mensag
 
 ## Relacionados
 
-- [Inscrição de Voluntários](../serving/volunteer-signup) -- Lembretes de escalas e resposta a solicitações de agenda
-- [Inscrição em Eventos](../events/registering) -- Inscreva-se em eventos que enviam lembretes
-- [Instalando o Aplicativo](installing-pwa) -- Adicione o B1 ao seu dispositivo para receber notificações push
+- [Inscrição de Voluntários](../serving/volunteer-signup.md) -- Lembretes de escalas e resposta a solicitações de agenda
+- [Inscrição em Eventos](../events/registering.md) -- Inscreva-se em eventos que enviam lembretes
+- [Instalando o Aplicativo](./installing-pwa.md) -- Adicione o B1 ao seu dispositivo para receber notificações push

@@ -1,5 +1,6 @@
 ---
 title: "Presentator modus"
+description: "Draai een les op volledig scherm op een klaslokaal-beamer of tv met Presenter Mode in Lessons.church, en doorloop elk onderdeel tijdens de les."
 ---
 
 # Presentator modus

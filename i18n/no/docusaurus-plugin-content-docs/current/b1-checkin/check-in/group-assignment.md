@@ -1,5 +1,6 @@
 ---
 title: "Tildele grupper"
+description: "Velg gruppe eller klasse for hvert familiemedlem og tidspunkt i B1 Checkin, med kategorier, veiledning etter alder og klassetrinn, og alternativet None."
 ---
 
 # Tildele grupper
@@ -13,7 +14,7 @@ Når du trykker på en gudstjenestetidspunkt-knapp på husstandsgjennomgangsskje
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Gjennomgå husstanden din](./household-review) på husstandsgjennomgangsskjermen
+- [Gjennomgå husstanden din](./household-review.md) på husstandsgjennomgangsskjermen
 - Utvid medlemmet du vil tildele, og trykk på en gudstjenestetidspunkt-knapp
 - Sørg for at kirkeadministratoren din har [opprettet grupper](../../b1-admin/groups/creating-groups.md) og koblet dem til gudstjenestetidspunkter i B1 Admin
 
@@ -34,7 +35,7 @@ Trykk på et kategorikort for å utvide det og se de enkelte gruppene inni. Tryk
 2. Se gjennom listen over grupper i den kategorien. Hver gruppe viser navnet sitt med et valgikon til høyre.
 3. Trykk på **gruppenavnet** du vil tildele.
 
-Appen lagrer valget ditt og fører deg tilbake til [husstandsgjennomgangsskjermen](./household-review). Gudstjenestetidspunkt-knappen for det medlemmet vil nå vise navnet på gruppen du valgte.
+Appen lagrer valget ditt og fører deg tilbake til [husstandsgjennomgangsskjermen](./household-review.md). Gudstjenestetidspunkt-knappen for det medlemmet vil nå vise navnet på gruppen du valgte.
 
 ## Veiledning for alder og klassetrinn
 
@@ -52,7 +53,7 @@ Bruk **Ingen**-alternativet for voksne som deltar på hovedgudstjenesten og ikke
 
 For å endre en gruppetildeling som allerede er gjort:
 
-1. Gå tilbake til [husstandsgjennomgangsskjermen](./household-review).
+1. Gå tilbake til [husstandsgjennomgangsskjermen](./household-review.md).
 2. Utvid medlemmet hvis gruppe du vil endre.
 3. Trykk på gudstjenestetidspunkt-knappen (som nå viser navnet på den for øyeblikket tildelte gruppen).
 4. Velg en annen gruppe, eller trykk på **Ingen**.
@@ -63,8 +64,8 @@ Grupper og kategorier konfigureres av kirkeadministratoren din i B1 Admin. Hvis 
 
 ## Neste steg
 
-Etter at du har tildelt grupper, går du tilbake til [husstandsgjennomgangsskjermen](./household-review) for å:
+Etter at du har tildelt grupper, går du tilbake til [husstandsgjennomgangsskjermen](./household-review.md) for å:
 
 - Tildele grupper til flere familiemedlemmer
-- [Legge til en gjest](./adding-guests) hvis noen er på besøk med familien din
-- [Fullføre innsjekking](./completing-checkin) når alle tildelinger er klare
+- [Legge til en gjest](./adding-guests.md) hvis noen er på besøk med familien din
+- [Fullføre innsjekking](./completing-checkin.md) når alle tildelinger er klare

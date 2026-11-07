@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Koppla B1 Admin-anmälningar av volontärer till Checkr-bakgrundskontroller via Make.com, med valfria statusaviseringar till din koordinator för trygg verksamhet."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Om din kyrka använder B1-gruppmedlemskap för att styra åtkomst (t.ex. att bar
 
 ## Se även
 
-- [Make (översikt)](../make): B1-sidan av alla Make-scenarier
-- [Mobilt meddelande](./mobile-message): för SMS-leverantörer utan Zapier-appar, med samma mönster för Webhooks/HTTP som Checkr-kopplingen i Make
+- [Make (översikt)](../make.md): B1-sidan av alla Make-scenarier
+- [Mobilt meddelande](./mobile-message.md): för SMS-leverantörer utan Zapier-appar, med samma mönster för Webhooks/HTTP som Checkr-kopplingen i Make
 - [Checkr API-dokumentation](https://docs.checkr.com/)

@@ -1,5 +1,7 @@
 ---
-title: "Director de membri"
+title: "Directorul de membri în portalul B1.church"
+sidebar_label: "Director de membri"
+description: "Caută și răsfoiește membrii bisericii în directorul B1.church, vezi profilurile și membrii gospodăriei și află cine are acces la director."
 ---
 
 # Director de membri

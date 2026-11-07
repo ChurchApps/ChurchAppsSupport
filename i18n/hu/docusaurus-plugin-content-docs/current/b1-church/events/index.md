@@ -1,5 +1,7 @@
 ---
-title: "Események"
+title: "Egyházi események a B1.church-en: böngészés és regisztráció"
+sidebar_label: "Események"
+description: "Böngésszen közelgő egyházi események között a B1.church-en, nézze meg a regisztráció állapotát, és jelentkezzen, vagy adja hozzá az eseményt naptárához."
 ---
 
 # Események
@@ -43,7 +45,7 @@ Ha egy esemény betelt, előfordulhat, hogy a gyülekezet engedélyezése eseté
 
 ## Továbbiak
 
-- [Regisztráció eseményekre](./registering) -- Lépésenkénti útmutató az eseményre való jelentkezéshez
-- [Regisztrációim](./my-registrations) -- Regisztrációid megtekintése, egyenlegek fizetése, szerkesztése vagy lemondása
-- [Események és termek igénylése](./requesting-events) -- Esemény igénylése a szükséges termekkel és erőforrásokkal
-- [Önálló bejelentkezés](../checkin/self-checkin) -- Bejelentkezés az esemény helyszínén, amikor megérkezel
+- [Regisztráció eseményekre](./registering.md) -- Lépésenkénti útmutató az eseményre való jelentkezéshez
+- [Regisztrációim](./my-registrations.md) -- Regisztrációid megtekintése, egyenlegek fizetése, szerkesztése vagy lemondása
+- [Események és termek igénylése](./requesting-events.md) -- Esemény igénylése a szükséges termekkel és erőforrásokkal
+- [Önálló bejelentkezés](../checkin/self-checkin.md) -- Bejelentkezés az esemény helyszínén, amikor megérkezel

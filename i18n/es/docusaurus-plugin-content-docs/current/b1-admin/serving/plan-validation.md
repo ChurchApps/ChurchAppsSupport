@@ -1,5 +1,6 @@
 ---
 title: "Validación de planes y notificaciones"
+description: "Revisa los planes de servicio en B1 Admin para detectar posiciones sin cubrir, conflictos de programación y voluntarios no disponibles, y luego envía una notificación a todo tu equipo con un clic."
 ---
 
 # Validación de planes y notificaciones a voluntarios

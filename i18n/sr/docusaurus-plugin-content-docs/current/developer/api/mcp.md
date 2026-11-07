@@ -1,5 +1,6 @@
 ---
 title: "MCP сервер"
+description: "Подесите MCP приступ B1 API-ју да AI клијенти попут Claude Code, Cursor-а или Claude Desktop-а позивају податке цркве помоћу API кључева или OAuth-а."
 ---
 
 # MCP сервер
@@ -13,7 +14,7 @@ B1 API укључује [MCP (Model Context Protocol)](https://modelcontextproto
 <div class="prereqs">
 <h4>Пре почетка</h4>
 
-- [B1 API кључ](./api-keys) (`cak_…`) са дозволама (scopes) које клијент треба да има, или MCP клијент који може да се пријави путем OAuth-а (видети [OAuth откривање](#oauth-discovery))
+- [B1 API кључ](./api-keys.md) (`cak_…`) са дозволама (scopes) које клијент треба да има, или MCP клијент који може да се пријави путем OAuth-а (видети [OAuth откривање](#oauth-discovery))
 - Доступан B1 API хост — `https://api.churchapps.org` за хостоване цркве или ваша сопствена инсталација
 - MCP клијент. За подешавање за крајње кориснике видети [Claude](/docs/b1-admin/integrations/claude) и [ChatGPT](/docs/b1-admin/integrations/chatgpt)
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-Једини неопшти алат: статички, самосталан водич за прављење страница сајта кроз `/content/*` крајње тачке — модел података Page → Section → Element, ток креирања, сваки `elementType` са обликом његовог `answersJSON`, подешавања на нивоу секције као што су облици подели `dividerTop`/`dividerBottom`, и примерак од почетка до краја. Не узима улаз и одражава каталог елемената који се одржава у B1Admin уређивачу (видети [Архитектура градитеља сајтова](../architecture/website-builder)). Очекује се да агенти позову овај алат једном пре креирања или измене садржаја странице, а затим делују преко `api_call`.
+Једини неопшти алат: статички, самосталан водич за прављење страница сајта кроз `/content/*` крајње тачке — модел података Page → Section → Element, ток креирања, сваки `elementType` са обликом његовог `answersJSON`, подешавања на нивоу секције као што су облици подели `dividerTop`/`dividerBottom`, и примерак од почетка до краја. Не узима улаз и одражава каталог елемената који се одржава у B1Admin уређивачу (видети [Архитектура градитеља сајтова](../architecture/website-builder.md)). Очекује се да агенти позову овај алат једном пре креирања или измене садржаја странице, а затим делују преко `api_call`.
 
 ## Модел аутентификације
 
@@ -153,11 +154,11 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ## OAuth откривање
 
-MCP сервер објављује OAuth 2.1 метаподатке, тако да клијенти који се повезују само на OAuth-откривене сервере — посебно UI „Add custom connector” на Claude.ai — могу да пријаве корисника без налепљеног кључа. `/mcp` је заштићени ресурс, постојећи [OAuth провајдер](./connected-apps) под `/membership/oauth` је сервер за ауторизацију, а страница `/oauth` у B1Admin-у је екран за сагласност.
+MCP сервер објављује OAuth 2.1 метаподатке, тако да клијенти који се повезују само на OAuth-откривене сервере — посебно UI „Add custom connector” на Claude.ai — могу да пријаве корисника без налепљеног кључа. `/mcp` је заштићени ресурс, постојећи [OAuth провајдер](./connected-apps.md) под `/membership/oauth` је сервер за ауторизацију, а страница `/oauth` у B1Admin-у је екран за сагласност.
 
 | Крајња тачка | Сврха |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (такође `/.well-known/oauth-protected-resource/mcp`) | Метаподаци заштићеног ресурса (RFC 9728): `resource` је `<api>/mcp`, `authorization_servers` је корен API-ја, `scopes_supported` наводи сваку [дозволу API кључа](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (такође `/.well-known/oauth-protected-resource/mcp`) | Метаподаци заштићеног ресурса (RFC 9728): `resource` је `<api>/mcp`, `authorization_servers` је корен API-ја, `scopes_supported` наводи сваку [дозволу API кључа](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Метаподаци сервера за ауторизацију (RFC 8414): `authorization_endpoint` је B1Admin `/oauth`, `token_endpoint` је `/membership/oauth/token`, `registration_endpoint` је `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Динамичка регистрација клијента (RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP сервер се налази у `src/modules/mcp/` у Api репозито
 
 ## Повезано
 
-- [API кључеви](./api-keys)
-- [Webhook-ови](./webhooks)
-- [Повезане апликације (OAuth)](./connected-apps)
+- [API кључеви](./api-keys.md)
+- [Webhook-ови](./webhooks.md)
+- [Повезане апликације (OAuth)](./connected-apps.md)
 - [Claude — подешавање за крајње кориснике](/docs/b1-admin/integrations/claude)
 - [ChatGPT — подешавање за крајње кориснике](/docs/b1-admin/integrations/chatgpt)

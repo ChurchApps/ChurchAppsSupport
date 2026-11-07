@@ -1,5 +1,6 @@
 ---
 title: "Endpoint-Referenz"
+description: "Alle ChurchApps-API-Endpunkte nach Modul finden, mit HTTP-Methode, Pfad, Auth und Berechtigung je Route sowie Batch-Speicherung und Fehlerkonventionen."
 ---
 
 # Endpoint-Referenz
@@ -89,10 +90,10 @@ Berichtsparameter werden als Query-String-Werte übergeben (z.B. `?startDate=202
 
 | Modul | Basispfad | Beschreibung |
 |--------|-----------|-------------|
-| [Authentifizierung](./authentication) | `/membership/users`, `/membership/oauth` | Login, Registrierung, JWT-Tokens, OAuth, Berechtigungen |
-| [Membership](./membership) | `/membership/*` | Personen, Kirchen, Gruppen, Haushalte, Rollen, Formulare, Einstellungen |
-| [Attendance](./attendance) | `/attendance/*` | Campus, Services, Sessions, Besuche, Check-in-Datensätze |
-| [Content](./content) | `/content/*` | Seiten, Predigten, Veranstaltungen, Dateien, Galerien, Bibel, Streaming |
-| [Giving](./giving) | `/giving/*` | Spenden, Fonds, Payment-Gateways, Abos |
-| [Messaging](./messaging) | `/messaging/*` | Unterhaltungen, Benachrichtigungen, Geräte, SMS |
-| [Doing](./doing) | `/doing/*` | Pläne, Aufgaben, Zuweisungen, Automatisierungen, Planung |
+| [Authentifizierung](./authentication.md) | `/membership/users`, `/membership/oauth` | Login, Registrierung, JWT-Tokens, OAuth, Berechtigungen |
+| [Membership](./membership.md) | `/membership/*` | Personen, Kirchen, Gruppen, Haushalte, Rollen, Formulare, Einstellungen |
+| [Attendance](./attendance.md) | `/attendance/*` | Campus, Services, Sessions, Besuche, Check-in-Datensätze |
+| [Content](./content.md) | `/content/*` | Seiten, Predigten, Veranstaltungen, Dateien, Galerien, Bibel, Streaming |
+| [Giving](./giving.md) | `/giving/*` | Spenden, Fonds, Payment-Gateways, Abos |
+| [Messaging](./messaging.md) | `/messaging/*` | Unterhaltungen, Benachrichtigungen, Geräte, SMS |
+| [Doing](./doing.md) | `/doing/*` | Pläne, Aufgaben, Zuweisungen, Automatisierungen, Planung |

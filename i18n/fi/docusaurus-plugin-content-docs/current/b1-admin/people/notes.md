@@ -1,5 +1,6 @@
 ---
 title: "Muistiinpanot"
+description: "Tarkastele paimennuksen muistiinpanoja ja seurantoja henkilöistä, ryhmistä ja tapahtumista yhdessä B1 Adminin listassa, uusin ensin."
 ---
 
 # Muistiinpanot

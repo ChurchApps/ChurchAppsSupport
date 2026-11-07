@@ -1,5 +1,6 @@
 ---
 title: "Kufakwa"
+description: "Thola kutsi iprojekthi ngayinye ye-ChurchApps itfumelwa kuphi, kusukela ku-AWS Lambda kuya kuma-S3 web, ku-Expo mobile, ne-Railway noma Docker."
 ---
 
 # Kufakwa
@@ -14,12 +15,12 @@ I-ChurchApps isebentisa emaqhinga (strategies) ekufaka lahlukene kuya ngelusito 
 
 | Luhlobo Lweliphrojekthi | Legi Lekufakwa | Tinsimbi |
 |-------------|-------------------|---------|
-| [Ema-API](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
-| [Tinhlelo Te-Web](./web-apps) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
-| [Tinhlelo Teselula](./mobile) | Titolo Tetinhlelo | Expo EAS Build + OTA Updates |
-| [Kutingenisela (Railway)](./railway-template) | Railway | Ithempuleti yekucindzetela kanyekanye: MySQL + Api + B1Admin + B1App |
-| [Kutingenisela (Docker)](./docker) | Nome yimuphi umsingathi (host) we-Docker | `docker compose up` kusuka ku-repository ye-B1Admin |
-| [I-Caddy Custom-Domain Proxy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + kuhlanganiswa kwemephu lokuhlelekile |
+| [Ema-API](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 22.x runtime) |
+| [Tinhlelo Te-Web](./web-apps.md) | S3 + CloudFront | Static build, S3 sync, CloudFront invalidation |
+| [Tinhlelo Teselula](./mobile.md) | Titolo Tetinhlelo | Expo EAS Build + OTA Updates |
+| [Kutingenisela (Railway)](./railway-template.md) | Railway | Ithempuleti yekucindzetela kanyekanye: MySQL + Api + B1Admin + B1App |
+| [Kutingenisela (Docker)](./docker.md) | Nome yimuphi umsingathi (host) we-Docker | `docker compose up` kusuka ku-repository ye-B1Admin |
+| [I-Caddy Custom-Domain Proxy](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Static Caddyfile + WinSW service + kuhlanganiswa kwemephu lokuhlelekile |
 | FreeShow | Kulanda Ngco (direct download) | Electron Builder (ema-binary la-cross-platform) |
 
 ## Tindzawo Tekusebenta (Environments)

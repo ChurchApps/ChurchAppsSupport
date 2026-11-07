@@ -1,5 +1,6 @@
 ---
 title: "Tatiso Te-Push Te-Web"
+description: "Setfa tikhiye ze-VAPID, umsiti we-WebPushHelper, nekuphatfwa kwe-service worker kuze i-B1.church ne-B1 Admin ikwazi kuletsa tesaziso tekuvele ebasebentisi bebahlali."
 ---
 
 # Tatiso Te-Push Te-Web
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Emakhasi Lahambelanako
 
-- [Sakhiwo Setatiso](./architecture/notifications) -- Lifonile lephelele yekukhulisa kwe-in-app/push/imeyili kanye nenjini yetikhumbuto
-- [Sakhiwo Sesikhatsi Lesiphetsimile](./realtime) -- Kuletsiwa nge-WebSocket; i-push nyalo idubula kusuka kulifonile lelifanako le-in-app kanye nekuletsiwa nge-socket kuludzingo lolufanako, hhayi kuphela njenge-fallback nangabe kuletsiwa nge-socket kungafiki
-- [Messaging Endpoints](./api/endpoints/messaging) -- Tatiso, emadivayisi, kanye nalokunye lokusele kwesibonelo semilayeto
-- [AppHelper](./shared-libraries/app-helper) -- Liphakheji le-npm lelitfumela i-WebPushHelper
+- [Sakhiwo Setatiso](./architecture/notifications.md) -- Lifonile lephelele yekukhulisa kwe-in-app/push/imeyili kanye nenjini yetikhumbuto
+- [Sakhiwo Sesikhatsi Lesiphetsimile](./realtime.md) -- Kuletsiwa nge-WebSocket; i-push nyalo idubula kusuka kulifonile lelifanako le-in-app kanye nekuletsiwa nge-socket kuludzingo lolufanako, hhayi kuphela njenge-fallback nangabe kuletsiwa nge-socket kungafiki
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- Tatiso, emadivayisi, kanye nalokunye lokusele kwesibonelo semilayeto
+- [AppHelper](./shared-libraries/app-helper.md) -- Liphakheji le-npm lelitfumela i-WebPushHelper

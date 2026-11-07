@@ -1,5 +1,6 @@
 ---
 title: "Playing Content"
+description: "Control FreePlay on a TV remote: pause, skip slides and videos, jump to any message, and exit the player from provider, plan, or download content."
 ---
 
 # Playing Content
@@ -13,13 +14,13 @@ The FreePlay player fills the screen and is built for TV remotes. It plays video
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Pick something to play. See [Browsing and Downloading Content](./browsing-content), [Plan Mode](../plan-mode/), or [Announcements](./announcements)
+- Pick something to play. See [Browsing and Downloading Content](./browsing-content.md), [Plan Mode](../plan-mode/index.md), or [Announcements](./announcements.md)
 - Press **Start** to open the player
 
 </div>
 
 :::info
-Screens paired to a calendar use a separate scheduled player with slightly different controls. See [Scheduled Playback on the TV](../scheduled-mode/scheduled-playback).
+Screens paired to a calendar use a separate scheduled player with slightly different controls. See [Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Player Controls
@@ -57,7 +58,7 @@ Press **Up** during playback to open **Select a Message**. It shows every item w
 Press **Down** or **Back** on your remote to leave the player. Where you end up depends on what you were playing:
 
 - **Provider content** - Back to the content browser
-- **A plan** - Back to the plan download screen. See [Plan Mode](../plan-mode/)
+- **A plan** - Back to the plan download screen. See [Plan Mode](../plan-mode/index.md)
 - **A download** - Back to the **Downloads** screen
 
 :::info
@@ -66,5 +67,5 @@ The screen stays awake while the player is open, so the TV won't go to sleep in 
 
 ## Related Articles
 
-- **[Browsing and Downloading Content](./browsing-content)** - Find content and download it for offline play
-- **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback)** - Remote controls for screens that follow a calendar
+- **[Browsing and Downloading Content](./browsing-content.md)** - Find content and download it for offline play
+- **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md)** - Remote controls for screens that follow a calendar

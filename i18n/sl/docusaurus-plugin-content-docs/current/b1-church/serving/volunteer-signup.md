@@ -1,5 +1,7 @@
 ---
-title: "Prijava za prostovoljce"
+title: "Prijava za prostovoljstvo v portalu za člane B1.church"
+sidebar_label: "Prijava za prostovoljce"
+description: "Brskajte po prostih prostovoljskih položajih po kategorijah in se prijavite na prihajajoča bogoslužja ali odstranite prijavo na B1.church pred rokom."
 ---
 
 # Prijava za prostovoljce
@@ -74,4 +76,4 @@ Redno preverjajte stran za prostovoljce, zlasti zgodaj v tednu. Priljubljene poz
 ## Sorodni članki
 
 - [Pregled služenja](./index.md) -- Pregled funkcij služenja na B1.church
-- [Ogled načrtov](../plans/viewing-plans) -- Oglejte si svoje dodeljene načrte in rede bogoslužja
+- [Ogled načrtov](../plans/viewing-plans.md) -- Oglejte si svoje dodeljene načrte in rede bogoslužja

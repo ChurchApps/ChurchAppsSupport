@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "웹훅으로 B1 Admin의 새 사람, 헌금, 양식 제출 같은 이벤트를 Slack 또는 Discord 채널에 게시합니다. Zapier는 필요 없습니다."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Discord URL의 끝에 `/slack`을 추가할 필요가 없습니다 — B1은 Sla
 
 - **메시지가 나타나지 않음 + 배달 상태 `400`** — 보통 커넥터 유형이 **표준**이지만 URL은 Slack/Discord의 것입니다. Slack/Discord는 원본 봉투를 거부합니다. **Slack** 또는 **Discord**로 드롭다운을 전환하고 테스트를 다시 보냅니다.
 - **웹훅 자동 비활성화** — 3회 연속 배달 실패 후 B1이 웹훅을 끕니다. URL을 수정합니다(또는 Slack/Discord에서 회전) 그리고 **활성**을 다시 켭니다.
-- **메시지가 도착했지만 상세가 누락됨** — 모든 채팅 플랫폼이 메시지 크기를 제한합니다. B1의 메시지는 설계상 한 줄입니다. 더 풍부한 알림은 [Zapier](./zapier) 또는 [Make](./make)를 사용하여 Slack 작업을 통해 더 전체 Slack 메시지를 구성합니다.
+- **메시지가 도착했지만 상세가 누락됨** — 모든 채팅 플랫폼이 메시지 크기를 제한합니다. B1의 메시지는 설계상 한 줄입니다. 더 풍부한 알림은 [Zapier](./zapier.md) 또는 [Make](./make.md)를 사용하여 Slack 작업을 통해 더 전체 Slack 메시지를 구성합니다.
 
 ## 나중에 커넥터 유형 전환
 
@@ -122,6 +123,6 @@ Discord URL의 끝에 `/slack`을 추가할 필요가 없습니다 — B1은 Sla
 
 ## 참고도 보기
 
-- [Zapier](./zapier) — B1 이벤트로 트리거된 다단계 워크플로우
-- [Make](./make) — 시각적 시나리오 빌더
+- [Zapier](./zapier.md) — B1 이벤트로 트리거된 다단계 워크플로우
+- [Make](./make.md) — 시각적 시나리오 빌더
 - [웹훅(개발자 참조)](/docs/developer/api/webhooks) — 웹훅을 자신의 서버로 가리킬 때 전체 페이로드 + 서명 형식

@@ -29,7 +29,7 @@ Seurakunnan palveluntarjoajarivi (`content.storageProviders`, hallitaan B1Admini
 
 Rajauksen huomautus: palveluntarjoajan valinta koskee sisällön **tiedostoja ja resursseja** (missä suuret mediatiedostot ovat). Galleria-, logo- ja valokuvalataukset pysyvät oletuspalveluntarjoajalla, koska ne listaavat avaimet tallennuksesta ja rakentavat URL-osoitteet asiakaspuolella. Seurakuntakohtaista juurta ei siksi vielä sovelleta niihin.
 
-Sama liityntäpinta tukee myös [Omat tallennustilat (Bring-Your-Own Storage)](./byos-storage) -toimintoa: seurakunnat voivat yhdistää Google Driven, Dropboxin, OneDriven tai oman S3-yhteensopivan säilönsä MinistryStuff-tilauksen sijaan.
+Sama liityntäpinta tukee myös [Omat tallennustilat (Bring-Your-Own Storage)](./byos-storage.md) -toimintoa: seurakunnat voivat yhdistää Google Driven, Dropboxin, OneDriven tai oman S3-yhteensopivan säilönsä MinistryStuff-tilauksen sijaan.
 
 ## Laskutus
 

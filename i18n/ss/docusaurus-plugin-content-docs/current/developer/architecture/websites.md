@@ -1,12 +1,13 @@
 ---
 title: "Kuchubeka Kwewebusayithi & Emasayithi Lamaningi"
+description: "Indlela i-B1.church evumelanisa ngayo ama-subdomain nemadomeyini ngelicawe noma ngesayithi lelisekelako, kuhlanganisa ne-Caddy lephatsa i-TLS."
 ---
 
 # Kuchubeka Kwewebusayithi & Emasayithi Lamaningi
 
 <div class="article-intro">
 
-Libandla linye lingasetjentisa manje emawebusayithi langetiwe langeyodwa, futsi ngalinye langahlala ku-subdomain ye-`*.b1.church` nome kulidomeni leliciniso lelimi lodvwa lelinelibandla. Lelikhasi limephu levele yekuchubeka lehleti *ngephasi* kwalomakhi: kutsi sicelo lesingenako sicabanga njani libandla **kanye** nesayithi lelitsite, imodeli yemininingwane yemasayithi lamaningi (i-sentinel ye-`siteId` legcina onkhe emasayithi lasekhona atokwakha kungashintji lutfo), kanye netihlangu telidomeni leliciniso — i-proxy ye-Caddy letilawulwa ngekwayo ku-EC2 legcina i-TLS futsi ishintje lidomeni lelibandla ngalinye laye ku-upstream yayo ye-`*.b1.church`. Kwentela loko lokugcina kuvela nasesicelo sesicabanga khona — lugcwenga lwelikhasi/sigaba/intfo — bona [Umakhi Wewebusayithi](./website-builder).
+Libandla linye lingasetjentisa manje emawebusayithi langetiwe langeyodwa, futsi ngalinye langahlala ku-subdomain ye-`*.b1.church` nome kulidomeni leliciniso lelimi lodvwa lelinelibandla. Lelikhasi limephu levele yekuchubeka lehleti *ngephasi* kwalomakhi: kutsi sicelo lesingenako sicabanga njani libandla **kanye** nesayithi lelitsite, imodeli yemininingwane yemasayithi lamaningi (i-sentinel ye-`siteId` legcina onkhe emasayithi lasekhona atokwakha kungashintji lutfo), kanye netihlangu telidomeni leliciniso — i-proxy ye-Caddy letilawulwa ngekwayo ku-EC2 legcina i-TLS futsi ishintje lidomeni lelibandla ngalinye laye ku-upstream yayo ye-`*.b1.church`. Kwentela loko lokugcina kuvela nasesicelo sesicabanga khona — lugcwenga lwelikhasi/sigaba/intfo — bona [Umakhi Wewebusayithi](./website-builder.md).
 
 </div>
 
@@ -189,7 +190,7 @@ I-`DomainController.save` ibhala imigca ye-`domains` bese yenta kubitwa **kunye 
 
 ### Simo samanje — kuhleleka lokumile, kungekho simo se-runtime
 
-Ibhokisi (i-Windows EC2 ngemuva kwe-Elastic IP lemile) isebentisa i-Caddy kusuka ku-**Caddyfile lemile**: TLS ye-on-demand lapho i-`ask` yayo ikhomba ku-`/membership/domains/authorize`, kanye nefayela lekufaniswa host→upstream levuselelwa matimu angu-5 onkhe kusuka ku-`/membership/domains/hostmap` ngumsebenti lohleliwe loguca nge-`caddy reload` lonesizotha. Kuhleleka kusinda kutekucala kabusha ngenkhulumo yesimo se-runtime lengelutfo — akukho sinyandvo sekwakha kabusha — futsi i-SNI lengaziwa **iyalwe nge-TLS** (akukho sitifiketi lesikhicitwako kwentela i-host leyalwe yi-authorize), kantsi i-host levunyelwe kodvwa lengakafanaswa (idomeni lensha ngekhatsi kwesikhala sekufaniswa) itfola `404` lecocile. Emadomeni lamasha aba ngalatfolakala ngekhatsi kwemaminithi lacishe abe-5 ngemuva kwekugcinwa; tisitifiketi tato tikhicitwa ku-hit yekucala. Kwakha/kuhlela, kusebenta, kanye netindlela letihloliwe: [I-Proxy ye-Caddy Yedomeni Leliciniso](../deployment/caddy-proxy).
+Ibhokisi (i-Windows EC2 ngemuva kwe-Elastic IP lemile) isebentisa i-Caddy kusuka ku-**Caddyfile lemile**: TLS ye-on-demand lapho i-`ask` yayo ikhomba ku-`/membership/domains/authorize`, kanye nefayela lekufaniswa host→upstream levuselelwa matimu angu-5 onkhe kusuka ku-`/membership/domains/hostmap` ngumsebenti lohleliwe loguca nge-`caddy reload` lonesizotha. Kuhleleka kusinda kutekucala kabusha ngenkhulumo yesimo se-runtime lengelutfo — akukho sinyandvo sekwakha kabusha — futsi i-SNI lengaziwa **iyalwe nge-TLS** (akukho sitifiketi lesikhicitwako kwentela i-host leyalwe yi-authorize), kantsi i-host levunyelwe kodvwa lengakafanaswa (idomeni lensha ngekhatsi kwesikhala sekufaniswa) itfola `404` lecocile. Emadomeni lamasha aba ngalatfolakala ngekhatsi kwemaminithi lacishe abe-5 ngemuva kwekugcinwa; tisitifiketi tato tikhicitwa ku-hit yekucala. Kwakha/kuhlela, kusebenta, kanye netindlela letihloliwe: [I-Proxy ye-Caddy Yedomeni Leliciniso](../deployment/caddy-proxy.md).
 
 ### Kutfunyelwa kwakadze kwe-runtime — indlela yekubuyela emuva, kulindzele kususwa
 
@@ -197,8 +198,8 @@ I-`CaddyHelper` (umodyuli we-membership) usangakwati kucondzisa i-Caddy nge-admi
 
 ## Emakhasi Lahlobene
 
-- [I-Proxy ye-Caddy Yedomeni Leliciniso](../deployment/caddy-proxy) — sihlangu ngasosonkhe: kuhlela ibhokisi lensha, sevisi ye-WinSW, umsebenti wekuvumelanisa kufaniswa, kanye nendlela yekusebenta
-- [Umakhi Wewebusayithi](./website-builder) — gcwenga lelikhasi/sigaba/intfo, ema-renderer, i-blog, i-SEO, kanye nekukhicitwa nge-AI (loko lokugcina kuvela nasesicelo sesicabanga selibandla/sayithi)
-- [Ema-Endpoint Ekucuketfwa](../api/endpoints/content) — bubanti be-REST bemakhasi, tigaba, tixhumanisi, kanye netinsitayela tejikelezo, konkhe manje kuyati i-`?siteId=`
-- [B1App](../web-apps/b1-app) — luhlelo lwe-Next.js loluhloba i-middleware kanye ne-`[sdSlug]` routing
-- [Kutfunyelwa Kwetinhlelo Tewebu](../deployment/web-apps) — kutsi i-B1App itfunyelwa njani ku-Vercel
+- [I-Proxy ye-Caddy Yedomeni Leliciniso](../deployment/caddy-proxy.md) — sihlangu ngasosonkhe: kuhlela ibhokisi lensha, sevisi ye-WinSW, umsebenti wekuvumelanisa kufaniswa, kanye nendlela yekusebenta
+- [Umakhi Wewebusayithi](./website-builder.md) — gcwenga lelikhasi/sigaba/intfo, ema-renderer, i-blog, i-SEO, kanye nekukhicitwa nge-AI (loko lokugcina kuvela nasesicelo sesicabanga selibandla/sayithi)
+- [Ema-Endpoint Ekucuketfwa](../api/endpoints/content.md) — bubanti be-REST bemakhasi, tigaba, tixhumanisi, kanye netinsitayela tejikelezo, konkhe manje kuyati i-`?siteId=`
+- [B1App](../web-apps/b1-app.md) — luhlelo lwe-Next.js loluhloba i-middleware kanye ne-`[sdSlug]` routing
+- [Kutfunyelwa Kwetinhlelo Tewebu](../deployment/web-apps.md) — kutsi i-B1App itfunyelwa njani ku-Vercel

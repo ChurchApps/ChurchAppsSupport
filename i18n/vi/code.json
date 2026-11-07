@@ -386,13 +386,13 @@
     "message": "B1 Di động"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Ứng dụng di động cho các thành viên nhà thờ trên iOS và Android."
+    "message": "Ứng dụng thành viên cũ cho iOS và Android, nay đã được thay thế bằng ứng dụng web B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Đăng ký"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Ứng dụng đăng ký kiosk tự phục vụ cho máy tính bảng Android."
+    "message": "Ứng dụng kiosk điểm danh tự phục vụ cho máy tính bảng iPad và Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Được thiết kế đặc biệt cho quy trình làm việc của nhà thờ - không phải là một công cụ chung được điều chỉnh cho bộ phận."
   },
   "homepage.title": {
-    "message": "Trang chủ"
+    "message": "Trợ giúp cho B1.church, Lessons.church & FreePlay"
   },
   "homepage.description": {
-    "message": "Tài liệu hỗ trợ ChurchApps - các công cụ miễn phí và mã nguồn mở để quản lý nhà thờ."
+    "message": "Hướng dẫn và tài liệu cho phần mềm mục vụ miễn phí, mã nguồn mở của ChurchApps: quản lý nhà thờ B1.church, điểm danh, quyên góp và trang web, chương trình học Lessons.church, và FreePlay."
   },
   "homepage.products.heading": {
     "message": "Chọn sản phẩm của bạn"

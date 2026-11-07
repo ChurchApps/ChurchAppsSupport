@@ -1,5 +1,7 @@
 ---
-title: "Ehrenamt-Anmeldung"
+title: "Anmeldung zum Ehrenamt in B1.church"
+sidebar_label: "Ehrenamt-Anmeldung"
+description: "Offene Ehrenamtsstellen nach Kategorie finden, für kommende Gottesdienste anmelden oder die Anmeldung vor Fristende auf B1.church wieder entfernen."
 ---
 
 # Ehrenamt-Anmeldung
@@ -74,4 +76,4 @@ Schauen Sie regelmäßig auf der Ehrenamtsseite nach, besonders zu Beginn der Wo
 ## Verwandte Artikel
 
 - [Übersicht Dienst](./index.md) – Überblick über die Dienstfunktionen auf B1.church
-- [Pläne anzeigen](../plans/viewing-plans) – Ihre zugewiesenen Pläne und Gottesdienstabläufe ansehen
+- [Pläne anzeigen](../plans/viewing-plans.md) – Ihre zugewiesenen Pläne und Gottesdienstabläufe ansehen

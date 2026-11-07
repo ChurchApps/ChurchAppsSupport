@@ -1,5 +1,6 @@
 ---
 title: "Skjemaer"
+description: "Finn, filtrer, rediger, arkiver og gjenopprett egendefinerte skjema i B1 Admin, og se hvor du angir skjemamedlemmer og gjennomgår innsendinger."
 ---
 
 # Skjemaer

@@ -1,5 +1,6 @@
 ---
 title: "Sakhiwo Sesakhi Sewebhusayithi"
+description: "Imephu yesakhi sewebhusayithi se-B1: umuthi wemakhasi, katalogi yezakhi, umugca wekurendela, nekwakhiwa kwemakhasi nge-AI ku-B1 Admin ne-B1.church."
 ---
 
 # Sakhiwo Sesakhi Sewebhusayithi
@@ -80,7 +81,7 @@ Tibonakalisi tihlala ku-`Packages/apphelper/src/website/components/elementTypes/
 
 ### Emafomu Esilungisi (B1Admin)
 
-Emafomu etilungiselelo taluhlobo ngaluhlobo esilungisi ahlala ku-`B1Admin/src/site/admin/elements/` -- `ElementEdit.tsx` idlulisela kuncenye lehlukanisiwe (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) nome sakhi sensimu sangekhatsi ngaluhlobo. Sibonakaliso se-AI selolu luhlu yithulusi le-MCP ye-API le-`describe_page_builder` (bona [Server ye-MCP](../api/mcp)).
+Emafomu etilungiselelo taluhlobo ngaluhlobo esilungisi ahlala ku-`B1Admin/src/site/admin/elements/` -- `ElementEdit.tsx` idlulisela kuncenye lehlukanisiwe (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) nome sakhi sensimu sangekhatsi ngaluhlobo. Sibonakaliso se-AI selolu luhlu yithulusi le-MCP ye-API le-`describe_page_builder` (bona [Server ye-MCP](../api/mcp.md)).
 
 ### Tihlukanisi Tesigaba Tesimo
 
@@ -159,7 +160,7 @@ Kusukela nga-2026-07-03, tindzawo tekungena te-B1Admin kulomshini -- template ye
 | `POST /website/generateAltText` | Sicelo se-vision phezu kwema-URL emafotfo langadlula ku-20; ibuyisa mbhalo lomfishane wa-alt (≤125 tinhlamvu, "photo of" ikhishwa ekucaleni) |
 | `POST /website/generateMetaDescription` | Sichasiso sinye se-SEO meta (≤155 tinhlamvu) kusuka embhalweni welikhasi -- kuhlanganiswe nenkinobho ye-Generate etilungiselelweni temakhasi te-B1Admin |
 
-Ema-prompt yimafayela e-markdown ngaphasi kwe-`AskApi/config/instructions/`, kufaka luhlu lwetincenye lesetjentiswa nguemodeli kwakha kuko. Tici letimbili tekwakha tigcina luhlu lutsembekile: i-client itfumela `availableElementTypes` kuso sonkhe sicelo (i-prompt ingasebentisa kuphela tinhlobo letisebenta kulolu luhlu -- i-server ayikaze ibhale luhlu lolugcwele ngekwayo), kanye nethulusi le-MCP ye-API `describe_page_builder` liphatsa luchazelo lolufanako lwema-AI agent lasebenta ngendlela ye-[MCP](../api/mcp). Emamodeli ngu-Anthropic Claude ngendlela ye-OpenRouter -- 3.5 Haiku yelwati lwesigaba (kusheshisa), 3.5 Sonnet yetishwatelo, tinhlelo tesayithi, ne-vision -- nge-OpenAI njengekusekela nangabe kute khiya le-OpenRouter lelungiselelwe.
+Ema-prompt yimafayela e-markdown ngaphasi kwe-`AskApi/config/instructions/`, kufaka luhlu lwetincenye lesetjentiswa nguemodeli kwakha kuko. Tici letimbili tekwakha tigcina luhlu lutsembekile: i-client itfumela `availableElementTypes` kuso sonkhe sicelo (i-prompt ingasebentisa kuphela tinhlobo letisebenta kulolu luhlu -- i-server ayikaze ibhale luhlu lolugcwele ngekwayo), kanye nethulusi le-MCP ye-API `describe_page_builder` liphatsa luchazelo lolufanako lwema-AI agent lasebenta ngendlela ye-[MCP](../api/mcp.md). Emamodeli ngu-Anthropic Claude ngendlela ye-OpenRouter -- 3.5 Haiku yelwati lwesigaba (kusheshisa), 3.5 Sonnet yetishwatelo, tinhlelo tesayithi, ne-vision -- nge-OpenAI njengekusekela nangabe kute khiya le-OpenRouter lelungiselelwe.
 
 ## Emafomu Enkulumo-Mphendvulwano
 
@@ -173,8 +174,8 @@ Letinsimu letine tihlonyulwa nge-API nyalo; silungisi sefomu se-B1Admin asikativ
 
 ## Emakhasi Lahambelanako
 
-- [Kucondzisa Kwewebhusayithi Ne-Multi-Site](./websites) -- indlela sicelo lesifika kubandla/sayithi kucondziswa ngayo kanye nendlela ema-domain langakini acondzisa ngayo
-- [Ema-Endpoint E-Content](../api/endpoints/content) -- indzawo yonkhe ye-REST yemakhasi, tigaba, tincenye, ema-block, imibhalo, kucondzisa kabusha, kanye netilungiselelo
-- [AppHelper](../shared-libraries/app-helper) -- iphakheji ye-npm lehlinzeka ngetibonakalisi, i-registry, tihlukanisi, kanye netintfo letisebentako
-- [Server ye-MCP](../api/mcp) -- kufaka ekhatsi lithulusi le-`describe_page_builder`
+- [Kucondzisa Kwewebhusayithi Ne-Multi-Site](./websites.md) -- indlela sicelo lesifika kubandla/sayithi kucondziswa ngayo kanye nendlela ema-domain langakini acondzisa ngayo
+- [Ema-Endpoint E-Content](../api/endpoints/content.md) -- indzawo yonkhe ye-REST yemakhasi, tigaba, tincenye, ema-block, imibhalo, kucondzisa kabusha, kanye netilungiselelo
+- [AppHelper](../shared-libraries/app-helper.md) -- iphakheji ye-npm lehlinzeka ngetibonakalisi, i-registry, tihlukanisi, kanye netintfo letisebentako
+- [Server ye-MCP](../api/mcp.md) -- kufaka ekhatsi lithulusi le-`describe_page_builder`
 - [Silungisi Selikhasi (umsebentisi wekugcina)](/docs/b1-admin/website/page-editor) -- imibhalo yesilungisi lebhekene netisebenti

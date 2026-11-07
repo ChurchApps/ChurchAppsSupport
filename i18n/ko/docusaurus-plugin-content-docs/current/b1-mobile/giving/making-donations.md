@@ -1,5 +1,7 @@
 ---
-title: "헌금하기"
+title: "B1 Mobile에서 헌금하기"
+sidebar_label: "헌금하기"
+description: "B1 Mobile의 헌금 탭에서 기금을 고르고 금액을 입력한 뒤 Stripe로 결제하고, 과거 헌금을 빠르게 반복하세요."
 ---
 
 # 헌금하기
@@ -13,8 +15,8 @@ B1 모바일을 통한 헌금은 빠르고 간단합니다. 헌금 섹션의 **�
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
-- 신용카드 또는 직불카드를 준비하거나, 미리 [결제 수단을 저장](./managing-payments)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
+- 신용카드 또는 직불카드를 준비하거나, 미리 [결제 수단을 저장](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ B1 모바일을 통한 헌금은 빠르고 간단합니다. 헌금 섹션의 **�
 마지막 헌금과 동일한 금액을 헌금하려면 전체 헌금 절차를 거칠 필요가 없습니다. **개요** 탭에 가장 최근 헌금과 함께 **반복** 버튼이 표시됩니다. 탭하면 동일한 헌금을 빠르게 다시 제출할 수 있습니다.
 
 :::tip
-정기적으로 헌금할 계획이라면 **관리** 탭에서 결제 수단을 저장하여 다음번에 더 빠르게 헌금할 수 있습니다. 자세한 내용은 [결제 수단 관리](./managing-payments)를 참조하십시오.
+정기적으로 헌금할 계획이라면 **관리** 탭에서 결제 수단을 저장하여 다음번에 더 빠르게 헌금할 수 있습니다. 자세한 내용은 [결제 수단 관리](./managing-payments.md)를 참조하십시오.
 :::
 
 ## 관련 문서
 
-- [결제 수단 관리](./managing-payments) -- 더 빠른 헌금을 위해 카드 저장
-- [헌금 내역](./donation-history) -- 헌금 요약과 과거 헌금 확인
+- [결제 수단 관리](./managing-payments.md) -- 더 빠른 헌금을 위해 카드 저장
+- [헌금 내역](./donation-history.md) -- 헌금 요약과 과거 헌금 확인

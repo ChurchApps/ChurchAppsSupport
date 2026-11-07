@@ -1,5 +1,7 @@
 ---
-title: "오늘의 말씀"
+title: "B1 Mobile의 오늘의 말씀"
+sidebar_label: "오늘의 말씀"
+description: "B1 Mobile에서 오늘의 말씀 화면을 열면 휴대폰이나 태블릿 방향에 맞춘 이미지로 오늘의 성경 구절을 매일 갱신하여 볼 수 있습니다."
 ---
 
 # 오늘의 말씀
@@ -13,7 +15,7 @@ title: "오늘의 말씀"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 - 교회에서 오늘의 말씀 기능이 활성화되어 있어야 합니다
 
 </div>
@@ -46,5 +48,5 @@ title: "오늘의 말씀"
 
 ## 관련 문서
 
-- [성경](./bible) -- 내장 리더에서 전체 말씀 구절 읽기
-- [설교](./sermons) -- 교회의 녹화된 설교 시청
+- [성경](./bible.md) -- 내장 리더에서 전체 말씀 구절 읽기
+- [설교](./sermons.md) -- 교회의 녹화된 설교 시청

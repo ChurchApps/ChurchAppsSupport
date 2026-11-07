@@ -1,5 +1,7 @@
 ---
-title: "Donatie Geschiedenis"
+title: "Giftengeschiedenis en overzichten in B1.church"
+sidebar_label: "Donatie Geschiedenis"
+description: "Bekijk je eerdere giften, filter op jaar en print giftenoverzichten voor de belasting via de Geven-pagina van het B1.church-ledenportaal."
 ---
 
 # Donatie Geschiedenis

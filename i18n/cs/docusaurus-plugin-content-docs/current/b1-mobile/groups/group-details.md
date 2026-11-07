@@ -1,5 +1,7 @@
 ---
-title: "Podrobnosti o skupině"
+title: "Detail skupiny v aplikaci B1 Mobile"
+sidebar_label: "Podrobnosti o skupině"
+description: "Zjistěte, co zobrazuje detail skupiny v B1 Mobile: informace o skupině, příspěvky a členy, a jak ho otevřít z obrazovky Skupiny."
 ---
 
 # Podrobnosti o skupině
@@ -13,7 +15,7 @@ Když v obrazovce Skupiny klepnete na skupinu, otevře se stránka s jejími pod
 <div class="prereqs">
 <h4>Před začátkem</h4>
 
-- [Nainstalujte B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 - Otevřete obrazovku [Skupiny](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Vaše nejčastěji navštěvovaná skupina se zobrazuje jako hlavní karta v hor
 
 ## Související články
 
-- [Časová osa skupiny](./group-timeline) -- Seznámíte se s jednotným přehledem aktivit ve všech vašich skupinách
+- [Časová osa skupiny](./group-timeline.md) -- Seznámíte se s jednotným přehledem aktivit ve všech vašich skupinách
 - [Zprávy](../community/messaging.md) -- Posílejte soukromé zprávy členům skupiny

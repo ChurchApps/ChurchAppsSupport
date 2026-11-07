@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Emadivayisi"
+description: "Bhanga, nika ligama, bese ususe ama-ChurchAppsPlayer ne-FreePlay lahlanganiswe nakhawunti yakho ku-B1 Admin, kuze tiskrini tibe tintsha futsi tivikelekile."
 ---
 
 # Kuphatsa Emadivayisi

@@ -1,5 +1,6 @@
 ---
 title: "Šablony plánů"
+description: "Uložte pořadí bohoslužby a obsazení pozic jako opakovatelnou šablonu v B1 Admin a jedním kliknutím ji použijte u dalších plánů."
 ---
 
 # Šablony plánů

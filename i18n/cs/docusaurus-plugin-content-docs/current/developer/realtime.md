@@ -1,5 +1,6 @@
 ---
 title: "Architektura reálného času"
+description: "Jak vrstva WebSocket v ChurchApps doručuje živý chat, přítomnost a oznámení: handshake soketu, odběr místností a klientské primitivy pro vývojáře."
 ---
 
 # Architektura reálného času
@@ -226,8 +227,8 @@ Anonymní scénáře (typickým příkladem je chat živého streamu) přeskakuj
 
 ## Související stránky
 
-- [Architektura notifikací](./architecture/notifications) -- Eskalační cesta v aplikaci, push a e-mailu, do které tento přenos přivádí data
-- [Koncové body zpráv](./api/endpoints/messaging) -- Kompletní REST rozhraní pro zprávy, konverzace, připojení a zařízení
-- [Web Push notifikace](./web-push) -- Push notifikace prohlížeče, oddělené od doručování socketů na stránce
-- [AppHelper](./shared-libraries/app-helper) -- Balíček npm, který obsahuje klientské primitivy
-- [Struktura modulů](./api/module-structure) -- Jak je modul zpráv organizován na straně serveru
+- [Architektura notifikací](./architecture/notifications.md) -- Eskalační cesta v aplikaci, push a e-mailu, do které tento přenos přivádí data
+- [Koncové body zpráv](./api/endpoints/messaging.md) -- Kompletní REST rozhraní pro zprávy, konverzace, připojení a zařízení
+- [Web Push notifikace](./web-push.md) -- Push notifikace prohlížeče, oddělené od doručování socketů na stránce
+- [AppHelper](./shared-libraries/app-helper.md) -- Balíček npm, který obsahuje klientské primitivy
+- [Struktura modulů](./api/module-structure.md) -- Jak je modul zpráv organizován na straně serveru

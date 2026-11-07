@@ -1,5 +1,6 @@
 ---
 title: "MCP सर्वर"
+description: "B1 API तक MCP पहुँच सेट करें, ताकि Claude Code, Cursor या Claude Desktop जैसे AI क्लाइंट API कुंजियों या OAuth साइन-इन से चर्च डेटा एंडपॉइंट कॉल कर सकें।"
 ---
 
 # MCP सर्वर
@@ -13,7 +14,7 @@ B1 API `/mcp` पर एक [MCP (Model Context Protocol)](https://modelcontextp
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- एक [B1 API कुंजी](./api-keys) (`cak_…`) जिसमें क्लाइंट के पास होने वाले स्कोप हों, या एक MCP क्लाइंट जो OAuth से साइन इन कर सके (देखें [OAuth डिस्कवरी](#oauth-discovery))
+- एक [B1 API कुंजी](./api-keys.md) (`cak_…`) जिसमें क्लाइंट के पास होने वाले स्कोप हों, या एक MCP क्लाइंट जो OAuth से साइन इन कर सके (देखें [OAuth डिस्कवरी](#oauth-discovery))
 - एक पहुँच योग्य B1 API होस्ट — होस्टेड चर्चों के लिए `https://api.churchapps.org`, या आपकी अपनी डिप्लॉयमेंट
 - एक MCP क्लाइंट। अंतिम-उपयोगकर्ता सेटअप के लिए [Claude](/docs/b1-admin/integrations/claude) और [ChatGPT](/docs/b1-admin/integrations/chatgpt) देखें
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-एकमात्र गैर-सामान्य टूल: `/content/*` एंडपॉइंट्स के माध्यम से वेबसाइट पेज बनाने के लिए एक स्थिर, स्व-निहित गाइड — Page → Section → Element डेटा मॉडल, बनाने का वर्कफ़्लो, हर `elementType` और उसका `answersJSON` आकार, `dividerTop`/`dividerBottom` शेप डिवाइडर जैसी सेक्शन-स्तर सेटिंग्स, और एक कार्यरत अंत-से-अंत उदाहरण। यह B1Admin एडिटर में बनाए रखी गई एलिमेंट सूची को दर्शाता है (देखें [Website Builder Architecture](../architecture/website-builder))। एजेंट्स से अपेक्षा है कि पेज कंटेंट बनाने या संपादित करने से पहले इसे एक बार कॉल करें, फिर `api_call` के माध्यम से कार्य करें।
+एकमात्र गैर-सामान्य टूल: `/content/*` एंडपॉइंट्स के माध्यम से वेबसाइट पेज बनाने के लिए एक स्थिर, स्व-निहित गाइड — Page → Section → Element डेटा मॉडल, बनाने का वर्कफ़्लो, हर `elementType` और उसका `answersJSON` आकार, `dividerTop`/`dividerBottom` शेप डिवाइडर जैसी सेक्शन-स्तर सेटिंग्स, और एक कार्यरत अंत-से-अंत उदाहरण। यह B1Admin एडिटर में बनाए रखी गई एलिमेंट सूची को दर्शाता है (देखें [Website Builder Architecture](../architecture/website-builder.md))। एजेंट्स से अपेक्षा है कि पेज कंटेंट बनाने या संपादित करने से पहले इसे एक बार कॉल करें, फिर `api_call` के माध्यम से कार्य करें।
 
 ## प्रमाणीकरण मॉडल
 
@@ -153,11 +154,11 @@ MCP अनुरोध स्वयं `CustomAuthProvider.getUser()` से ग
 
 ## OAuth डिस्कवरी {#oauth-discovery}
 
-MCP सर्वर OAuth 2.1 मेटाडेटा विज्ञापित करता है, ताकि केवल OAuth-discovered सर्वरों से जुड़ने वाले क्लाइंट — विशेष रूप से Claude.ai का "Add custom connector" UI — बिना चिपकाई गई कुंजी के उपयोगकर्ता को साइन इन करा सकें। `/mcp` संरक्षित संसाधन है, [OAuth provider](./connected-apps) जो `/membership/oauth` के अंतर्गत है उसका प्राधिकरण सर्वर है, और B1Admin का `/oauth` पेज सहमति स्क्रीन है।
+MCP सर्वर OAuth 2.1 मेटाडेटा विज्ञापित करता है, ताकि केवल OAuth-discovered सर्वरों से जुड़ने वाले क्लाइंट — विशेष रूप से Claude.ai का "Add custom connector" UI — बिना चिपकाई गई कुंजी के उपयोगकर्ता को साइन इन करा सकें। `/mcp` संरक्षित संसाधन है, [OAuth provider](./connected-apps.md) जो `/membership/oauth` के अंतर्गत है उसका प्राधिकरण सर्वर है, और B1Admin का `/oauth` पेज सहमति स्क्रीन है।
 
 | एंडपॉइंट | उद्देश्य |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (साथ ही `/.well-known/oauth-protected-resource/mcp`) | संरक्षित संसाधन मेटाडेटा (RFC 9728): `resource` `<api>/mcp` है, `authorization_servers` API रूट है, `scopes_supported` हर [API key scope](./api-keys#scopes) की सूची देता है |
+| `GET /.well-known/oauth-protected-resource` (साथ ही `/.well-known/oauth-protected-resource/mcp`) | संरक्षित संसाधन मेटाडेटा (RFC 9728): `resource` `<api>/mcp` है, `authorization_servers` API रूट है, `scopes_supported` हर [API key scope](./api-keys.md#scopes) की सूची देता है |
 | `GET /.well-known/oauth-authorization-server` | प्राधिकरण सर्वर मेटाडेटा (RFC 8414): `authorization_endpoint` B1Admin `/oauth` है, `token_endpoint` `/membership/oauth/token` है, `registration_endpoint` `/membership/oauth/register` है |
 | `POST /membership/oauth/register` | डायनेमिक क्लाइंट पंजीकरण (RFC 7591) |
 
@@ -209,8 +210,8 @@ MCP सर्वर Api रिपो में `src/modules/mcp/` पर स्�
 
 ## संबंधित
 
-- [API Keys](./api-keys)
-- [Webhooks](./webhooks)
-- [Connected Apps (OAuth)](./connected-apps)
+- [API Keys](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [Connected Apps (OAuth)](./connected-apps.md)
 - [Claude — अंतिम-उपयोगकर्ता सेटअप](/docs/b1-admin/integrations/claude)
 - [ChatGPT — अंतिम-उपयोगकर्ता सेटअप](/docs/b1-admin/integrations/chatgpt)

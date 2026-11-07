@@ -1,5 +1,6 @@
 ---
 title: "Preferencias de notificación"
+description: "Configura los canales de notificación, la frecuencia de correo, las horas de silencio y las cancelaciones de mensajes de texto para cada tipo de notificación en B1 Admin y en la app B1, desde una sola pantalla."
 ---
 
 # Preferencias de notificación
@@ -60,6 +61,6 @@ Las notificaciones urgentes, como una alerta de seguridad o un mensaje de seguri
 
 ## Relacionado
 
-- [Inscripción de voluntarios](../serving/volunteer-signup): recordatorios de servicio y cómo responder a las solicitudes de horario
-- [Inscribirse a eventos](../events/registering): regístrate en eventos que envían recordatorios
-- [Instalar la app](installing-pwa): agrega B1 a tu dispositivo para recibir notificaciones push
+- [Inscripción de voluntarios](../serving/volunteer-signup.md): recordatorios de servicio y cómo responder a las solicitudes de horario
+- [Inscribirse a eventos](../events/registering.md): regístrate en eventos que envían recordatorios
+- [Instalar la app](./installing-pwa.md): agrega B1 a tu dispositivo para recibir notificaciones push

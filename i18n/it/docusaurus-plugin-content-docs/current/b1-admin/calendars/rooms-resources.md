@@ -1,5 +1,6 @@
 ---
 title: "Stanze, Risorse e Pianificazione"
+description: "Configura sale, attrezzature, blocchi ed eventi modello in B1 Admin: i gruppi chiedono prenotazioni e tu le approvi per evitare sovrapposizioni."
 ---
 
 # Stanze, Risorse e Pianificazione
@@ -14,7 +15,7 @@ Le Stanze e le Risorse ti permettono di tracciare gli spazi e le attrezzature pr
 <h4>Prima di iniziare</h4>
 
 - Hai bisogno dell'accesso amministrativo alla sezione Calendari in B1 Admin
-- Configura i [gruppi](../groups/creating-groups) i cui membri presenteranno richieste di prenotazione
+- Configura i [gruppi](../groups/creating-groups.md) i cui membri presenteranno richieste di prenotazione
 
 </div>
 
@@ -76,7 +77,7 @@ Quando si crea un nuovo evento, il personale può scegliere un modello esistente
 
 ## Articoli Correlati
 
-- [Calendario di Disponibilità](availability) — visualizza tutte le prenotazioni a colpo d'occhio e prenota stanze o risorse direttamente
-- [Approvazioni Calendario](approvals) — approva o rifiuta le richieste di prenotazione di stanze e risorse
-- [Creazione di Calendari](creating-calendars) — configura i calendari degli eventi
-- [Creazione di Gruppi](../groups/creating-groups) — configura i gruppi che possono prenotare stanze e risorse
+- [Calendario di Disponibilità](./availability.md) — visualizza tutte le prenotazioni a colpo d'occhio e prenota stanze o risorse direttamente
+- [Approvazioni Calendario](./approvals.md) — approva o rifiuta le richieste di prenotazione di stanze e risorse
+- [Creazione di Calendari](./creating-calendars.md) — configura i calendari degli eventi
+- [Creazione di Gruppi](../groups/creating-groups.md) — configura i gruppi che possono prenotare stanze e risorse

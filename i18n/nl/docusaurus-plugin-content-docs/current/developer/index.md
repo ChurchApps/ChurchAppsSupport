@@ -1,5 +1,6 @@
 ---
 title: "Documentatie voor ontwikkelaars"
+description: "Wegwijs in de ChurchApps-developerdocs: lokale setup, gidsen voor API en webapps, gedeelde bibliotheken, mobiele builds en deployment."
 ---
 
 # Documentatie voor ontwikkelaars
@@ -24,15 +25,15 @@ Belangrijke kenmerken:
 
 ## Wat dit gedeelte behandelt
 
-- **[Instellen](setup/)** -- Lokale ontwikkelingsomgeving, vereisten en configuratie
-  - [Vereisten](setup/prerequisites) -- Vereiste tools en software
-  - [Projectoverzicht](setup/project-overview) -- Alle projecten in een oogopslag
-  - [Omgevingsvariabelen](setup/environment-variables) -- Configuratie van `.env` bestanden
-- **[API](api/)** -- Lokale API-instellingen, databaseinitialisatie en modulearchitectuur
-- **[Webtoepassingen](web-apps/)** -- B1Admin, B1App en LessonsApp lokaal uitvoeren
-- **[Mobiele apps](mobile/)** -- Expo-apps als B1Mobile bouwen
-- **[Gedeelde bibliotheken](shared-libraries/)** -- Werken met Helpers, ApiHelper en AppHelper
-- **[Implementatie](deployment/)** -- API's, webtoepassingen en mobiele apps implementeren
+- **[Instellen](./setup/index.md)** -- Lokale ontwikkelingsomgeving, vereisten en configuratie
+  - [Vereisten](./setup/prerequisites.md) -- Vereiste tools en software
+  - [Projectoverzicht](./setup/project-overview.md) -- Alle projecten in een oogopslag
+  - [Omgevingsvariabelen](./setup/environment-variables.md) -- Configuratie van `.env` bestanden
+- **[API](./api/index.md)** -- Lokale API-instellingen, databaseinitialisatie en modulearchitectuur
+- **[Webtoepassingen](./web-apps/index.md)** -- B1Admin, B1App en LessonsApp lokaal uitvoeren
+- **[Mobiele apps](./mobile/index.md)** -- Expo-apps als B1Mobile bouwen
+- **[Gedeelde bibliotheken](./shared-libraries/index.md)** -- Werken met Helpers, ApiHelper en AppHelper
+- **[Implementatie](./deployment/index.md)** -- API's, webtoepassingen en mobiele apps implementeren
 
 ## Gemeenschap en hulpbronnen
 

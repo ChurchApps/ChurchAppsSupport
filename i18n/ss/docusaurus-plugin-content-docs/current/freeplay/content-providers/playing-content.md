@@ -1,5 +1,6 @@
 ---
 title: "Kudlala Lokuqukethwe"
+description: "Lawula i-FreePlay nge-TV remote: misa, dlulisa tisilayidi netividiyo, uye kunoma yimuphi umlayeto, uphume ku-player kusuka kumhlinzeki, sikhatsi, noma kulandwa."
 ---
 
 # Kudlala Lokuqukethwe
@@ -13,13 +14,13 @@ Umdlali weFreePlay ugcwalisa sikrini futsi wakhelwe tilawuli tetelevishini. Udla
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- Khetsa lokutawudlala. Bona [Ukusesha Nokulanda Lokuqukethwe](./browsing-content), [Imodi Yelukhetfo](../plan-mode/), noma [Tibhengezo](./announcements)
+- Khetsa lokutawudlala. Bona [Ukusesha Nokulanda Lokuqukethwe](./browsing-content.md), [Imodi Yelukhetfo](../plan-mode/index.md), noma [Tibhengezo](./announcements.md)
 - Cinezela **Qala** ukuvula umdlali
 
 </div>
 
 :::info
-Tiskrini letibotshelwe ikhalenda sisebentisa umdlali lohlelelwe lonetilawuli letehlukile kancane. Bona [Kudlala Lohlelelwe Ku-TV](../scheduled-mode/scheduled-playback).
+Tiskrini letibotshelwe ikhalenda sisebentisa umdlali lohlelelwe lonetilawuli letehlukile kancane. Bona [Kudlala Lohlelelwe Ku-TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Tilawuli Tomdlali
@@ -57,7 +58,7 @@ Cinezela **Phezulu** ngesikhatsi kudlala ukuze uvule **Khetsa Umlayeto**. Ikhomb
 Cinezela **Phansi** noma **Emuva** kwiremothi yakho ukuze uphume kumdlali. Lapho uphela khona kuncike kutsi bewudlala ini:
 
 - **Lokuqukethwe kemhlinzeki** - Buyela kumsingathi wekuqukethwe
-- **Lukhetfo** - Buyela kusikrini sekulanda lukhetfo. Bona [Imodi Yelukhetfo](../plan-mode/)
+- **Lukhetfo** - Buyela kusikrini sekulanda lukhetfo. Bona [Imodi Yelukhetfo](../plan-mode/index.md)
 - **Kulandziwe** - Buyela kusikrini se **Tilandziwe**
 
 :::info
@@ -66,5 +67,5 @@ Sikrini sihlala sivulekile ngesikhatsi umdlali uvulekile, kotsi i-TV ingalali ph
 
 ## Tihloko Letihlobene
 
-- **[Ukusesha Nokulanda Lokuqukethwe](./browsing-content)** - Tfola lokuqukethwe ululande kuze udlale ngaphandle kwe-inthanethi
-- **[Kudlala Lohlelelwe Ku-TV](../scheduled-mode/scheduled-playback)** - Tilawuli temasikrini lalandzela ikhalenda
+- **[Ukusesha Nokulanda Lokuqukethwe](./browsing-content.md)** - Tfola lokuqukethwe ululande kuze udlale ngaphandle kwe-inthanethi
+- **[Kudlala Lohlelelwe Ku-TV](../scheduled-mode/scheduled-playback.md)** - Tilawuli temasikrini lalandzela ikhalenda

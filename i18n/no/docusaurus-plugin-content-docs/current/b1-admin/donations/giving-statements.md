@@ -1,5 +1,6 @@
 ---
 title: "Givertjenester"
+description: "Lag årlige giverbekreftelser for alle givere i B1 Admin, og last dem ned som CSV-filer eller skriv dem ut for utsending med skattefradragsberettigede beløp."
 ---
 
 # Givertjenester

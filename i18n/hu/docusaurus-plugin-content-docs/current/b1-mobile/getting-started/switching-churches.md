@@ -1,5 +1,6 @@
 ---
 title: "Gyülekezetváltás"
+description: "Válts gyülekezetek között a B1 Mobile alkalmazásban úgy, hogy egy nemrég használt gyülekezetet választasz vagy névre keresel, mindezt egyetlen ChurchApps-bejelentkezéssel."
 ---
 
 # Gyülekezetváltás
@@ -13,7 +14,7 @@ Ha több gyülekezet tagja vagy, a B1 Mobile megkönnyíti a közöttük való v
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile-t](./installing) és [jelentkezz be](./logging-in) a fiókodba
+- [Telepítsd a B1 Mobile-t](./installing.md) és [jelentkezz be](./logging-in.md) a fiókodba
 
 </div>
 
@@ -24,7 +25,7 @@ Ha több gyülekezet tagja vagy, a B1 Mobile megkönnyíti a közöttük való v
 3. Megjelenik a **Gyülekezetkeresés** képernyő. A legutóbb meglátogatott gyülekezeteid a tetején láthatók a gyors eléréshez.
 4. Koppints egy legutóbbi gyülekezetre a váltáshoz, vagy írj a keresőmezőbe egy másik gyülekezet megkereséséhez.
 
-Amikor gyülekezetet váltasz, az alkalmazás újratöltődik az adott gyülekezet arculatával, navigációs linkjeivel és tartalmával. A [műszerfal](../dashboard/), a [csoportok](../groups/) és egyéb adataid az újonnan kiválasztott gyülekezetet fogják tükrözni.
+Amikor gyülekezetet váltasz, az alkalmazás újratöltődik az adott gyülekezet arculatával, navigációs linkjeivel és tartalmával. A [műszerfal](../dashboard/index.md), a [csoportok](../groups/index.md) és egyéb adataid az újonnan kiválasztott gyülekezetet fogják tükrözni.
 
 ## Gyülekezet keresése
 

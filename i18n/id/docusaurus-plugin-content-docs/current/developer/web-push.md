@@ -1,5 +1,6 @@
 ---
 title: "Notifikasi Push Web"
+description: "Siapkan kunci VAPID, klien WebPushHelper, dan penanganan service worker agar B1.church dan B1 Admin bisa mengirim notifikasi push browser ke anggota."
 ---
 
 # Notifikasi Push Web
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Halaman terkait
 
-- [Arsitektur Notifikasi](./architecture/notifications) -- Alur lengkap eskalasi dalam aplikasi/push/email dan mesin pengingat
-- [Arsitektur Real-time](./realtime) -- Pengiriman WebSocket. Push kini dipicu dari alur dalam aplikasi yang sama bersamaan dengan pengiriman socket, bukan hanya sebagai cadangan ketika pengiriman socket tidak berhasil
-- [Endpoint Messaging](./api/endpoints/messaging) -- Notifikasi, perangkat, dan seluruh permukaan messaging lainnya
-- [AppHelper](./shared-libraries/app-helper) -- Paket npm yang menyertakan `WebPushHelper`
+- [Arsitektur Notifikasi](./architecture/notifications.md) -- Alur lengkap eskalasi dalam aplikasi/push/email dan mesin pengingat
+- [Arsitektur Real-time](./realtime.md) -- Pengiriman WebSocket. Push kini dipicu dari alur dalam aplikasi yang sama bersamaan dengan pengiriman socket, bukan hanya sebagai cadangan ketika pengiriman socket tidak berhasil
+- [Endpoint Messaging](./api/endpoints/messaging.md) -- Notifikasi, perangkat, dan seluruh permukaan messaging lainnya
+- [AppHelper](./shared-libraries/app-helper.md) -- Paket npm yang menyertakan `WebPushHelper`

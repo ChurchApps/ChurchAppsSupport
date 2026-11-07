@@ -1,5 +1,7 @@
 ---
-title: "Ayat Hari Ini"
+title: "Ayat Harian di Situs dan Portal B1.church"
+sidebar_label: "Ayat Hari Ini"
+description: "Telusuri gambar ayat harian dan ayat-ayat sebelumnya, lalu bagikan atau unduh dari situs B1.church atau portal anggota di layar ukuran apa pun."
 ---
 
 # Ayat Hari Ini

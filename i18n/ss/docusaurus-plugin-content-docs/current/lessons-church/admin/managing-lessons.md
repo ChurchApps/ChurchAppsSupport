@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tifundzo"
+description: "Akha sakhiwo selifundziso kuLessons.church admin: engeza tindzawo, tingcenye, nemisebenti ye-Say, Do, Note, noma Play ngetindzima, kanye nemagama wabazali nemincenye."
 ---
 
 # Kuphatsa Tifundzo

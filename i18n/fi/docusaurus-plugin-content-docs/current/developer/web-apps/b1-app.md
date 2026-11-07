@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Asenna B1App-jäsenverkkosovellus paikallisesti Next.js 22+:lla, määritä API-päätepisteet .env-tiedostoon ja käynnistä kehityspalvelin portissa 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App on seurakunnan jäsenille suunnattu julkinen sovellus, joka on rakennettu 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js 22+** ja **Git** – katso [Esivaatimukset](../setup/prerequisites)
-- Määritä API-kohde (demo tai paikallinen) – katso [Ympäristömuuttujat](../setup/environment-variables)
+- Asenna **Node.js 22+** ja **Git** – katso [Esivaatimukset](../setup/prerequisites.md)
+- Määritä API-kohde (demo tai paikallinen) – katso [Ympäristömuuttujat](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Tuotantoversiot julkaistaan **S3 + CloudFront** -palveluun:
 3. CloudFront-välimuistin mitätöinti käynnistetään, jotta palvelu alkaa tarjota uuden version
 
 :::tip
-Yksityiskohtaiset julkaisuohjeet löydät oppaasta [Web-sovellusten julkaisu](../deployment/web-apps).
+Yksityiskohtaiset julkaisuohjeet löydät oppaasta [Web-sovellusten julkaisu](../deployment/web-apps.md).
 :::

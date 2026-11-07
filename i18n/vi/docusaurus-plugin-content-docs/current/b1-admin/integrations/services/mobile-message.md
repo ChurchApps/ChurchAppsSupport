@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Kết nối sự kiện B1 Admin với Mobile Message, API SMS của Úc, qua webhook Zapier hoặc Make để gửi tin nhắn chào mừng, dâng hiến và nhắc nhở."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Endpoint `/v1/messages` của Mobile Message chấp nhận tối đa 10.000 tin 
 
 ### Thay thế bằng Make
 
-Nếu bạn thích Make, hãy thêm module **HTTP — Make a request** sau trigger B1 Watch Events, rồi cấu hình tương tự (POST, Basic Auth, nội dung JSON). Xem [tổng quan về Make](../make) để biết phần cấu hình phía B1.
+Nếu bạn thích Make, hãy thêm module **HTTP — Make a request** sau trigger B1 Watch Events, rồi cấu hình tương tự (POST, Basic Auth, nội dung JSON). Xem [tổng quan về Make](../make.md) để biết phần cấu hình phía B1.
 
 ## Giới hạn và lưu ý
 
@@ -102,6 +103,6 @@ Nếu bạn thích Make, hãy thêm module **HTTP — Make a request** sau trigg
 
 ## Xem thêm
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — các nhà cung cấp SMS khác có ứng dụng Zapier riêng (không cần bước Webhooks by Zapier)
-- [Zapier (tổng quan)](../zapier) — phần cấu hình phía B1 cho mọi công thức Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — các nhà cung cấp SMS khác có ứng dụng Zapier riêng (không cần bước Webhooks by Zapier)
+- [Zapier (tổng quan)](../zapier.md) — phần cấu hình phía B1 cho mọi công thức Zapier
 - [Tài liệu API của Mobile Message](https://mobilemessage.com.au/api-documentation)

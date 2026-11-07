@@ -1,5 +1,6 @@
 ---
 title: "Kalendoriaus planavimas"
+description: "Nustatykite savaitinį ar vienkartinį tvarkaraštį FreePlay Admin kalendoriuje: grojaraščiai, planai ar aplankai ekranų grupėms, numatytieji ciklai – atsarga."
 ---
 
 # Kalendoriaus planavimas
@@ -13,8 +14,8 @@ Puslapis **Calendar** FreePlay Admin valdo, ką kiekviena ekranų grupė rodo ir
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Sukurkite bent vieną ekranų grupę. Žr. [Ekranų ir grupių valdymas](./managing-screens#screen-groups)
-- [Sukurkite grojaraštį](./building-playlists) arba įsitikinkite, kad B1 Admin yra nustatytas pamaldų plano tipas
+- Sukurkite bent vieną ekranų grupę. Žr. [Ekranų ir grupių valdymas](./managing-screens.md#screen-groups)
+- [Sukurkite grojaraštį](./building-playlists.md) arba įsitikinkite, kad B1 Admin yra nustatytas pamaldų plano tipas
 
 </div>
 
@@ -82,11 +83,11 @@ Jei du tvarkaraščiai persidengia, forma rodo įspėjimą: **Overlaps another s
 
 ## Kaip ekranai pritaiko pakeitimus
 
-Susieti ekranai atsisiunčia visa, kas suplanuota kitoms 7 dienoms, ir patys tikrina, ar yra pakeitimų. Pakeitus kalendorių, televizoriaus liesti nereikia. Norėdami sužinoti, ar ekranas turi viską, ko reikia, patikrinkite lauką **Ready through** [Screens puslapyje](./managing-screens).
+Susieti ekranai atsisiunčia visa, kas suplanuota kitoms 7 dienoms, ir patys tikrina, ar yra pakeitimų. Pakeitus kalendorių, televizoriaus liesti nereikia. Norėdami sužinoti, ar ekranas turi viską, ko reikia, patikrinkite lauką **Ready through** [Screens puslapyje](./managing-screens.md).
 
 ## Susiję straipsniai
 
-- **[Grojaraščių kūrimas](./building-playlists)** - Sukurkite grojaraščius, kuriuos planuojate
-- **[Planuotas atkūrimas televizoriuje](./scheduled-playback)** - Kaip mokytojo nustatytos pamokos ir nuotolinis valdymo pultas veikia televizoriuje
-- **[Ekranų ir grupių valdymas](./managing-screens)** - Pridėkite grupes ir patikrinkite kiekvieno ekrano atsisiuntimus
+- **[Grojaraščių kūrimas](./building-playlists.md)** - Sukurkite grojaraščius, kuriuos planuojate
+- **[Planuotas atkūrimas televizoriuje](./scheduled-playback.md)** - Kaip mokytojo nustatytos pamokos ir nuotolinis valdymo pultas veikia televizoriuje
+- **[Ekranų ir grupių valdymas](./managing-screens.md)** - Pridėkite grupes ir patikrinkite kiekvieno ekrano atsisiuntimus
 - **[Tik dalies kiekvienos pamokos išlaikymas](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Sumažinkite visas planuojamas pamokas pagal plano tipą iki dalių, kurias rodo jūsų kambarys

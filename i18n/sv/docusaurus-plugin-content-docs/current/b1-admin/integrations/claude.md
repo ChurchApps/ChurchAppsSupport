@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Koppla B1 Admin till Claude så att du kan fråga om närvaro, givande och grupper på vanlig svenska, med inloggning eller en API-nyckel med begränsade behörigheter."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Det här är samma yta för `/membership/people`, `/giving/donations`, `/attenda
 
 - [API-nycklar](/docs/developer/api/api-keys): fullständig referens för omfattningar
 - [MCP-server (utvecklarreferens)](/docs/developer/api/mcp): protokolldetaljer och verktygsscheman
-- [ChatGPT](./chatgpt): samma idé, för OpenAI:s modeller
+- [ChatGPT](./chatgpt.md): samma idé, för OpenAI:s modeller

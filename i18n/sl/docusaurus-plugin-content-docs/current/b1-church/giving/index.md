@@ -1,5 +1,7 @@
 ---
-title: "Darovanja"
+title: "Spletno darovanje na B1.church"
+sidebar_label: "Darovanja"
+description: "Na B1.church lahko cerkvi spletno darujete brez računa, ali se prijavite, da upravljate ponavljajoča darila, načine plačila in izpiske darov."
 ---
 
 # Darovanja

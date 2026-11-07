@@ -1,5 +1,6 @@
 ---
 title: "Connecter les fournisseurs et créer des listes de lecture"
+description: "Configurer les fournisseurs connectés dans FreePlay Admin, puis créer, ordonner et prévisualiser les listes de lecture des écrans programmés."
 ---
 
 # Connecter les fournisseurs et créer des listes de lecture
@@ -107,6 +108,6 @@ Cliquez sur **Présenter** pour lire la liste de lecture en plein écran dans vo
 
 ## Articles connexes
 
-- **[Planifier le calendrier](./scheduling-the-calendar)** -- Placer votre liste de lecture dans le calendrier d'un groupe d'écrans
-- **[Gérer les écrans et les groupes](./managing-screens)** -- Définir une liste de lecture comme boucle par défaut d'un groupe
-- **[Fournisseurs de contenu](../content-providers/)** -- Fournisseurs que vous pouvez connecter directement sur la télévision
+- **[Planifier le calendrier](./scheduling-the-calendar.md)** -- Placer votre liste de lecture dans le calendrier d'un groupe d'écrans
+- **[Gérer les écrans et les groupes](./managing-screens.md)** -- Définir une liste de lecture comme boucle par défaut d'un groupe
+- **[Fournisseurs de contenu](../content-providers/index.md)** -- Fournisseurs que vous pouvez connecter directement sur la télévision

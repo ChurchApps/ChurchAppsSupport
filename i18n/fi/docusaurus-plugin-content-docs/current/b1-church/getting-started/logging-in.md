@@ -1,5 +1,7 @@
 ---
-title: "Kirjautuminen"
+title: "Kirjautuminen B1.churchiin ja jäsenportaaliin"
+sidebar_label: "Kirjautuminen"
+description: "Kirjaudu B1.church-jäsenportaaliin, käytä kaksivaiheisia koodeja tai kertakirjautumista, palauta unohtunut salasana ja kirjaudu ulos tilivalikosta."
 ---
 
 # Kirjautuminen
@@ -17,7 +19,7 @@ Kirjautuminen B1.church-palveluun antaa sinulle pääsyn jäsenportaaliin, jossa
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Tarvitset ChurchApps-tilin. Luo se artikkelissa [Aloitus](../getting-started/).
+- Tarvitset ChurchApps-tilin. Luo se artikkelissa [Aloitus](./index.md).
 - Tarvitset seurakuntasi B1.church-osoitteen (esimerkiksi `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Pysyt kirjautuneena samassa selaimessa tai asennetussa sovelluksessa, kunnes kir
 
 ## Jäsenportaaliin siirtyminen
 
-Kun olet kirjautunut sisään, pääset jäsenportaaliin napsauttamalla **nimeäsi** sivun yläoikealla ja valitsemalla valikosta **Jäsenportaali**. Jäsenportaalissa ovat kaikki henkilökohtaiset seurakuntatyökalusi, kuten [Etusivun kojelauta](./navigating.md), [Minä-sivu](./me-page.md), [ryhmät](../groups/), [lahjoitukset](../giving/) ja muut.
+Kun olet kirjautunut sisään, pääset jäsenportaaliin napsauttamalla **nimeäsi** sivun yläoikealla ja valitsemalla valikosta **Jäsenportaali**. Jäsenportaalissa ovat kaikki henkilökohtaiset seurakuntatyökalusi, kuten [Etusivun kojelauta](./navigating.md), [Minä-sivu](./me-page.md), [ryhmät](../groups/index.md), [lahjoitukset](../giving/index.md) ja muut.
 
 ## Käyttäjävalikkosi
 

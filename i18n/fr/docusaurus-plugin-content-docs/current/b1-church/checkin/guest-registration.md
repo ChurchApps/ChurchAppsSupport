@@ -1,5 +1,6 @@
 ---
 title: "Inscription des visiteurs"
+description: "Inscrivez-vous, vous et votre famille, comme premiers visiteurs avec le formulaire QR de B1 Checkin pour que les bénévoles vous enregistrent à l'arrivée."
 ---
 
 # Inscription des visiteurs
@@ -22,7 +23,7 @@ Si vous visitez une église pour la première fois, vous pouvez vous inscrire, a
 
 L'inscription des visiteurs est conçue pour les personnes qui n'ont pas encore de compte. Sur la borne de pointage de l'église, appuyez sur **S'inscrire comme visiteur** pour afficher un code QR qui mène à la page d'inscription. Vous pouvez aussi recevoir le lien d'un bénévole ou d'un accueillant, ou le trouver sur un dépliant ou sur le site web de l'église.
 
-Vous n'avez pas votre téléphone sous la main ? Dans la même fenêtre de code QR sur la borne, appuyez sur **S'inscrire ici** pour remplir le formulaire directement sur la borne. Consultez [S'inscrire comme visiteur](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) pour savoir comment cela fonctionne sur la borne.
+Vous n'avez pas votre téléphone sous la main ? Dans la même fenêtre de code QR sur la borne, appuyez sur **S'inscrire ici** pour remplir le formulaire directement sur la borne. Consultez [S'inscrire comme visiteur](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) pour savoir comment cela fonctionne sur la borne.
 
 La page s'ouvre avec le titre **Inscription des visiteurs**. Si l'église a ajouté une photo d'en-tête, elle apparaît en haut de la page ; sinon, vous verrez une petite icône.
 
@@ -51,7 +52,7 @@ Votre inscription crée des fiches dans la base de données de l'église :
 - Des **fiches de personnes** sont créées pour chaque membre de la famille, avec le statut de membre « Visiteur ».
 - Les commentaires que vous avez saisis sont enregistrés comme note sur la fiche du contact principal, afin que le personnel de l'église puisse les lire.
 - Si l'église a choisi un groupe pour les nouveaux visiteurs, votre famille y est ajoutée. L'église peut aussi enregistrer automatiquement votre présence si vous vous inscrivez pendant un des horaires de service planifiés de ce groupe.
-- Un bénévole ou un administrateur de l'église peut ensuite pointer votre famille à l'aide de la borne [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Un bénévole ou un administrateur de l'église peut ensuite pointer votre famille à l'aide de la borne [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Si vous vous inscrivez de nouveau avec le même prénom et le même courriel ou numéro de téléphone, les dossiers de l'église vous reconnaissent et réutilisent votre profil existant au lieu d'en ajouter un doublon. Toute autre personne est ajoutée comme nouvelle. Si vous vous êtes déjà inscrit, vous pouvez aussi simplement rechercher votre nom ou votre numéro de téléphone sur la borne.
@@ -63,6 +64,6 @@ Si le formulaire demande votre adresse courriel, la fournir aide l'église à fa
 
 ## Articles connexes
 
-- [Pointage autonome](./self-checkin) -- Pointez-vous vous-même après votre inscription
-- [Ajouter des visiteurs (borne)](../../b1-checkin/check-in/adding-guests) -- Comment les bénévoles ajoutent des visiteurs à la borne
-- [Pointage](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Comment les administrateurs de l'église configurent l'inscription des visiteurs par code QR
+- [Pointage autonome](./self-checkin.md) -- Pointez-vous vous-même après votre inscription
+- [Ajouter des visiteurs (borne)](../../b1-checkin/check-in/adding-guests.md) -- Comment les bénévoles ajoutent des visiteurs à la borne
+- [Pointage](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Comment les administrateurs de l'église configurent l'inscription des visiteurs par code QR

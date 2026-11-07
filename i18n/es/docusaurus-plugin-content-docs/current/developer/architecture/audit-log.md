@@ -1,5 +1,6 @@
 ---
 title: "Registro de Auditoría y Lotes Reversibles"
+description: "Explica el registro de auditoría de la API que documenta cada cambio de usuario en todos los módulos, y cómo se pueden deshacer fila por fila las importaciones por lotes en B1 Admin."
 ---
 
 # Registro de Auditoría y Lotes Reversibles
@@ -155,6 +156,6 @@ Ambas superficies de administración son **en progreso**; la intención:
 
 ## Páginas Relacionadas
 
-- [Estructura del Módulo](../api/module-structure) — cómo un controlador que no es de membresía alcanza los repositorios de membresía a través de `RepoManager`
-- [Donaciones](./giving) — los caminos de escritura de donación que se auditan como `sensitive` incluso cuando son anónimos
-- [Extremos de Membresía](../api/endpoints/membership) — la superficie REST que lleva `X-Batch-Id` y expone `/auditlogs` y `/batches`
+- [Estructura del Módulo](../api/module-structure.md) — cómo un controlador que no es de membresía alcanza los repositorios de membresía a través de `RepoManager`
+- [Donaciones](./giving.md) — los caminos de escritura de donación que se auditan como `sensitive` incluso cuando son anónimos
+- [Extremos de Membresía](../api/endpoints/membership.md) — la superficie REST que lleva `X-Batch-Id` y expone `/auditlogs` y `/batches`

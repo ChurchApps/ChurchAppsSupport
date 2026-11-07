@@ -1,5 +1,6 @@
 ---
 title: "Richiedere di Unirti a un Gruppo"
+description: "Chiedi di entrare in un gruppo che richiede approvazione su B1.church, aggiungi una nota facoltativa per il leader e gestisci la richiesta in sospeso."
 ---
 
 # Richiedere di Unirti a un Gruppo

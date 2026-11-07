@@ -9,19 +9,19 @@ const SS = '/img/guides/ark/';
 type Step = { text: string; img?: string };
 
 const steps: Step[] = [
-  { text: 'On your Fire TV, Apple TV, or Android TV, open the app store and search for FreePlay.', img: SS + '1.png' },
-  { text: 'Select FreePlay and tap Download — it\'s completely free, no subscription or trial.', img: SS + '2.png' },
-  { text: 'FreePlay opens to the Content Providers screen. Select Lessons.church.', img: SS + '3.png' },
-  { text: 'You\'ll see two options — Lessons and Add-Ons. Add-Ons are open source videos you can use alongside your lessons. For now, select Lessons.', img: SS + '4.png' },
-  { text: 'Lessons.church offers free curriculum from multiple providers. Select Ark Kids Elementary or Junior to find Ark Curriculum.', img: SS + '6.png' },
-  { text: 'Ark Kids Junior — featuring Conductor Carl — is designed for preschool.', img: SS + '6.png' },
-  { text: 'Ark Kids Elementary — Herman and Rusty — is for Kindergarten through 5th grade. Both cover the same Bible lesson each week, filmed completely differently for their age group. Select the one that fits your classroom.', img: SS + '7.png' },
-  { text: 'Inside you\'ll find every series available. Select the one your church is currently teaching.', img: SS + '8.png' },
-  { text: 'Select your series and you\'ll see every weekly lesson inside.', img: SS + '9.png' },
-  { text: 'Each lesson has multiple format options — Large Group Full Program, Midweek/Classroom, and Large Group Abbreviated. Pick the one that fits your class.', img: SS + '10.png' },
-  { text: 'Select Download to save it to your device — it\'ll play perfectly on Sunday morning even if your Wi-Fi is slow. Stream is also available if you have a reliable connection.', img: SS + '11.png' },
-  { text: 'FreePlay downloads everything to your device — sit back while it saves.', img: SS + '12.png' },
-  { text: 'When the download finishes, the Start button appears. Press Select on your remote and you\'re playing.', img: SS + '13.png' },
+  { text: 'On your Fire TV, Apple TV, or Android TV, open the app store and search for FreePlay.', img: SS + '1.webp' },
+  { text: 'Select FreePlay and tap Download — it\'s completely free, no subscription or trial.', img: SS + '2.webp' },
+  { text: 'FreePlay opens to the Content Providers screen. Select Lessons.church.', img: SS + '3.webp' },
+  { text: 'You\'ll see two options — Lessons and Add-Ons. Add-Ons are open source videos you can use alongside your lessons. For now, select Lessons.', img: SS + '4.webp' },
+  { text: 'Lessons.church offers free curriculum from multiple providers. Select Ark Kids Elementary or Junior to find Ark Curriculum.', img: SS + '6.webp' },
+  { text: 'Ark Kids Junior — featuring Conductor Carl — is designed for preschool.', img: SS + '6.webp' },
+  { text: 'Ark Kids Elementary — Herman and Rusty — is for Kindergarten through 5th grade. Both cover the same Bible lesson each week, filmed completely differently for their age group. Select the one that fits your classroom.', img: SS + '7.webp' },
+  { text: 'Inside you\'ll find every series available. Select the one your church is currently teaching.', img: SS + '8.webp' },
+  { text: 'Select your series and you\'ll see every weekly lesson inside.', img: SS + '9.webp' },
+  { text: 'Each lesson has multiple format options — Large Group Full Program, Midweek/Classroom, and Large Group Abbreviated. Pick the one that fits your class.', img: SS + '10.webp' },
+  { text: 'Select Download to save it to your device — it\'ll play perfectly on Sunday morning even if your Wi-Fi is slow. Stream is also available if you have a reliable connection.', img: SS + '11.webp' },
+  { text: 'FreePlay downloads everything to your device — sit back while it saves.', img: SS + '12.webp' },
+  { text: 'When the download finishes, the Start button appears. Press Select on your remote and you\'re playing.', img: SS + '13.webp' },
 ];
 
 function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {

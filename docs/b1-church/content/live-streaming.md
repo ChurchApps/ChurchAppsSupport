@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Watching Live Streams on B1.church"
+sidebar_label: "Live Streaming"
+description: "Watch your church's live services on the B1.church Stream page and join the chat alongside the broadcast, no login needed."
 ---
 
 # Live Streaming

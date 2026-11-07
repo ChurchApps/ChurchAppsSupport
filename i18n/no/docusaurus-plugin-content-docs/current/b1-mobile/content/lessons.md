@@ -1,5 +1,7 @@
 ---
-title: "Lessons (utfaset)"
+title: "Lessons-skjermen i B1 Mobile (avviklet)"
+sidebar_label: "Lessons (utfaset)"
+description: "Lessons-side (utgått): hvorfor Lessons-skjermen i B1 Mobile ble avviklet, og hvor du finner læreplaner nå (FreePlay eller Lessons.church)."
 ---
 
 # Lessons (utfaset)
@@ -19,7 +21,7 @@ Lessons-skjermen ga deg tilgang til menighetens læreplaner og læringsmateriell
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
 - Menigheten din må ha satt opp læreplaner i Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Lessons-skjermen vises når menigheten din har satt opp læreplaner i Lessons.ch
 
 - [FreePlay-oversikt](/docs/freeplay/) -- TV-appen som erstatter avspilling av leksjoner i klasserom
 - [Lessons.church](/docs/lessons-church/) -- Bla gjennom og administrer læreplaninnhold direkte
-- [Bibelen](./bible) -- Les Skriften sammen med leksjonene dine
-- [Preken](./sermons) -- Se taler som utfyller studiene dine
+- [Bibelen](./bible.md) -- Les Skriften sammen med leksjonene dine
+- [Preken](./sermons.md) -- Se taler som utfyller studiene dine

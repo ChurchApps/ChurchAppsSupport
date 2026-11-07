@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: vaikų registracijos nustatymas"
+description: "Nustatykite vaikų registraciją B1 Admin: susiekite šeimas, kurkite amžiaus grupes, konfigūruokite pamaldas ir spausdinkite ženkliukus B1 Checkin kioskui."
 ---
 
 # Vaikų registracijos nustatymas

@@ -1,5 +1,6 @@
 ---
 title: "Opas: Verkkolahjoitusten käyttöönotto"
+description: "Määritä verkkolahjoitukset B1 Adminissa: luo lahjoitusrahastot, yhdistä Stripe ja lisää Lahjoita-sivu B1.church-sivustolle jäseniä varten."
 ---
 
 # Verkkolahjoitusten käyttöönotto
@@ -70,7 +71,7 @@ Käytä ensin Stripen testitilaa, jos haluat tarkistaa prosessin ilman oikeita v
 Kerro asiasta, jotta jäsenet tietävät voivat antaa lahjoituksia verkossa.
 
 1. Jaa lahjoitusosoite verkkosivuston, sähköposti-uutiskirjeiden, kirkkotiedotteiden ja sosiaalisen median kautta
-2. Jäsenet voivat antaa lahjoituksia myös [B1 Mobile -sovelluksen](../../b1-mobile/giving/) kautta – lahjoitusominaisuus on sovelluksessa valmiina
+2. Jäsenet voivat antaa lahjoituksia myös [B1 Mobile -sovelluksen](../../b1-mobile/giving/index.md) kautta – lahjoitusominaisuus on sovelluksessa valmiina
 
 :::info
 Kirjautuneet jäsenet voivat tallentaa maksutapoja, asettaa toistuvia lahjoituksia ja tarkastella lahjoitushistoriaansa. Myös anonyymi lahjoittaminen onnistuu – kirjautuminen ei ole pakollista.

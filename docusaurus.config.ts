@@ -15,6 +15,9 @@ const config: Config = {
 
   url: 'https://support.churchapps.org',
   baseUrl: '/',
+  // GitHub Pages serves every page as a directory and 301s /foo to /foo/, so
+  // canonicals, hreflang and sitemap URLs must use the trailing slash form.
+  trailingSlash: true,
 
   staticDirectories: ['static'],
 
@@ -128,6 +131,41 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            '@id': 'https://churchapps.org/#organization',
+            name: 'ChurchApps',
+            legalName: 'Live Church Solutions',
+            nonprofitStatus: 'Nonprofit501c3',
+            url: 'https://churchapps.org/',
+            logo: 'https://support.churchapps.org/img/logo.png',
+            email: 'support@churchapps.org',
+            sameAs: [
+              'https://github.com/ChurchApps',
+              'https://b1.church/',
+              'https://lessons.church/',
+              'https://freeplay.church/',
+            ],
+          },
+          {
+            '@type': 'WebSite',
+            '@id': 'https://support.churchapps.org/#website',
+            name: 'ChurchApps Support',
+            url: 'https://support.churchapps.org/',
+            publisher: {'@id': 'https://churchapps.org/#organization'},
+          },
+        ],
+      }),
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -140,6 +178,12 @@ const config: Config = {
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: null,
+          priority: null,
+          ignorePatterns: ['/search/**', '/*/search/**'],
         },
         // GA4: reports into the ChurchApps.org property (363427908); filter by hostName = support.churchapps.org.
         gtag: {

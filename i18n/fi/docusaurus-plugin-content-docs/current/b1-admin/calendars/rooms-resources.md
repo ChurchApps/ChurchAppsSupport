@@ -1,5 +1,6 @@
 ---
 title: "Huoneet, resurssit ja ajoitus"
+description: "Määritä B1 Adminissa huoneet, laitteet, estot ja tapahtumapohjat, jotta ryhmät voivat pyytää varauksia ja hyväksyt ne päällekkäisten varausten välttämiseksi."
 ---
 
 # Huoneet, resurssit ja ajoitus
@@ -14,7 +15,7 @@ Huoneiden ja resurssien avulla voit seurata seurakuntasi varattavia tiloja ja la
 <h4>Ennen aloittamista</h4>
 
 - Tarvitset ylläpitäjän käyttöoikeudet B1 Adminin Kalenterit-osioon
-- Luo [ryhmät](../groups/creating-groups), joiden jäsenet lähettävät varauspyyntöjä
+- Luo [ryhmät](../groups/creating-groups.md), joiden jäsenet lähettävät varauspyyntöjä
 
 </div>
 
@@ -76,7 +77,7 @@ Kun luot uuden tapahtuman, henkilökunta voi valita olemassa olevan mallipohjan,
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Saatavuuskalenteri](availability) – näe kaikki varaukset yhdellä silmäyksellä ja varaa huoneita tai resursseja suoraan
-- [Kalenterin hyväksynnät](approvals) – hyväksy tai hylkää huoneiden ja resurssien varauspyynnöt
-- [Kalenterien luominen](creating-calendars) – luo tapahtumakalentereita
-- [Ryhmien luominen](../groups/creating-groups) – luo ryhmiä, jotka voivat varata huoneita ja resursseja
+- [Saatavuuskalenteri](./availability.md) – näe kaikki varaukset yhdellä silmäyksellä ja varaa huoneita tai resursseja suoraan
+- [Kalenterin hyväksynnät](./approvals.md) – hyväksy tai hylkää huoneiden ja resurssien varauspyynnöt
+- [Kalenterien luominen](./creating-calendars.md) – luo tapahtumakalentereita
+- [Ryhmien luominen](../groups/creating-groups.md) – luo ryhmiä, jotka voivat varata huoneita ja resursseja

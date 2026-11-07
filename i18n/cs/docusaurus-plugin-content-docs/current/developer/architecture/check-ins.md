@@ -1,5 +1,6 @@
 ---
 title: "Check-Ins"
+description: "Jak funguje check-in napříč B1Checkin, B1App a B1 Admin: datový model docházky, skupiny jako místnosti, limity kapacity a pravidla bezpečného vyzvednutí."
 ---
 
 # Check-Ins
@@ -216,7 +217,7 @@ Soubor `src/components/checkin/GuestRegister.tsx` v B1App načte kontrolní sezn
 
 ## Související stránky
 
-- [Endpointy docházky](../api/endpoints/attendance) -- Úplné REST rozhraní pro pobočky, služby, relace, návštěvy a visitSessions
-- [Endpointy členství](../api/endpoints/membership) -- Osoby, domácnosti a skupiny
-- [Webhooky](../api/webhooks) -- Události `session.created`, `attendance.recorded` a `attendance.checkout`
-- [Struktura modulů](../api/module-structure) -- Jak je modul docházky organizován na straně serveru
+- [Endpointy docházky](../api/endpoints/attendance.md) -- Úplné REST rozhraní pro pobočky, služby, relace, návštěvy a visitSessions
+- [Endpointy členství](../api/endpoints/membership.md) -- Osoby, domácnosti a skupiny
+- [Webhooky](../api/webhooks.md) -- Události `session.created`, `attendance.recorded` a `attendance.checkout`
+- [Struktura modulů](../api/module-structure.md) -- Jak je modul docházky organizován na straně serveru

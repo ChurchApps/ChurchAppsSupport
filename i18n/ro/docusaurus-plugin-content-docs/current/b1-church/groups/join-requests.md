@@ -1,5 +1,6 @@
 ---
 title: "Solicitarea de a te alătura unui grup"
+description: "Solicitați aderarea la un grup care necesită aprobare în B1.church, adăugați o notă opțională pentru lider și urmăriți sau anulați cererea în așteptare."
 ---
 
 # Solicitarea de a te alătura unui grup

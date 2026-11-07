@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Configure e rode o app B1 Mobile (React Native/Expo) localmente, defina os endpoints da API e gere builds para Android ou iOS. O B1 Mobile está descontinuado."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ O B1 Mobile é o principal app móvel dos ChurchApps voltado para membros, criad
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Instale o **Node.js** e o **Expo CLI** — consulte [Pré-requisitos](../setup/prerequisites)
+- Instale o **Node.js** e o **Expo CLI** — consulte [Pré-requisitos](../setup/prerequisites.md)
 - Instale o **Android Studio** (para o emulador Android) ou o **Xcode** (para o simulador iOS)
-- Configure o alvo da sua API (demonstração ou local) — consulte [Variáveis de Ambiente](../setup/environment-variables)
+- Configure o alvo da sua API (demonstração ou local) — consulte [Variáveis de Ambiente](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ As atualizações OTA são ideais para alterações apenas em JavaScript. Se voc
 
 ## Artigos Relacionados
 
-- **[Deploy Mobile](../deployment/mobile)** — Guia completo para criar, enviar e publicar apps móveis
-- **[Variáveis de Ambiente](../setup/environment-variables)** — Referência completa da configuração de ambiente mobile
+- **[Deploy Mobile](../deployment/mobile.md)** — Guia completo para criar, enviar e publicar apps móveis
+- **[Variáveis de Ambiente](../setup/environment-variables.md)** — Referência completa da configuração de ambiente mobile

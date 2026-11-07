@@ -1,5 +1,6 @@
 ---
 title: "Tredjepartsleverantörer"
+description: "Lägg till ett externt läroplansflöde i Lessons.church från sidan för tredjepartsleverantörer och visa, uppdatera eller ta bort anslutningar vid behov."
 ---
 
 # Tredjepartsleverantörer

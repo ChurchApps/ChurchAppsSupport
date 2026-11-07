@@ -1,5 +1,6 @@
 ---
 title: "Xác thực kế hoạch & Thông báo"
+description: "Kiểm tra kế hoạch phục vụ trong B1 Admin xem có vị trí chưa được điền, xung đột lịch hoặc tình nguyện viên đã đăng ký nghỉ, rồi gửi thông báo đẩy cho cả nhóm chỉ với một cú nhấp."
 ---
 
 # Xác thực kế hoạch & Thông báo cho tình nguyện viên

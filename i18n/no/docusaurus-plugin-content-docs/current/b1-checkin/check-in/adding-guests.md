@@ -1,5 +1,6 @@
 ---
 title: "Legge til Gjester"
+description: "Legg til et besøkende barn, slektning eller venn i en husstand i B1 Checkin-kiosken, tildel grupper og fullfør innsjekkingen."
 ---
 
 # Legge til Gjester
@@ -13,8 +14,8 @@ Hvis noen besøker familien din og trenger å sjekke inn med husstanden din, kan
 <div class="prereqs">
 <h4>Før Du Begynner</h4>
 
-- [Søk opp familien din](./looking-up-members) og velg et medlem fra søkeresultatene
-- Vær på [husstandsgjennomgangsskjermen](./household-review) der du kan se familiemedlemmene dine
+- [Søk opp familien din](./looking-up-members.md) og velg et medlem fra søkeresultatene
+- Vær på [husstandsgjennomgangsskjermen](./household-review.md) der du kan se familiemedlemmene dine
 
 </div>
 
@@ -36,8 +37,8 @@ Hvis gjestens navn samsvarer med noen som allerede er i systemet og ikke er et m
 
 Når gjesten vises i husstandslisten din, kan du:
 
-- **Utvide kortet deres** og [tildele dem til en gruppe](./group-assignment), akkurat som ethvert annet familiemedlem.
-- **[Sjekke inn](./completing-checkin)** hele husstanden inkludert gjesten.
+- **Utvide kortet deres** og [tildele dem til en gruppe](./group-assignment.md), akkurat som ethvert annet familiemedlem.
+- **[Sjekke inn](./completing-checkin.md)** hele husstanden inkludert gjesten.
 
 ## Avbryte
 
@@ -49,4 +50,4 @@ Hvis du ombestemmer deg, trykk på **Cancel**-knappen nederst i skjemaet for å 
 
 ## Neste Trinn
 
-Etter å ha lagt til gjester og [tildelt grupper](./group-assignment) etter behov, er du klar til å [fullføre innsjekkingen](./completing-checkin).
+Etter å ha lagt til gjester og [tildelt grupper](./group-assignment.md) etter behov, er du klar til å [fullføre innsjekkingen](./completing-checkin.md).

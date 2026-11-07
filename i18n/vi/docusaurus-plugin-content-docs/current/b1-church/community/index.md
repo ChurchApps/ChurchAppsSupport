@@ -1,5 +1,7 @@
 ---
-title: "Cộng đồng"
+title: "Danh bạ thành viên cộng đồng trong B1.church"
+sidebar_label: "Cộng đồng"
+description: "Tìm kiếm danh bạ thành viên hội thánh trong B1.church theo tên hoặc nhóm, xem hồ sơ và tìm nơi các cập nhật từ Dòng thời gian đã ngừng hiện nằm."
 ---
 
 # Cộng đồng
@@ -26,5 +28,5 @@ Các thành viên và thông tin bạn thấy trong danh bạ phụ thuộc vào
 :::
 
 :::tip
-Hãy sử dụng các tính năng cộng đồng cùng với [Nhóm](../groups/) để luôn gắn bó với hội thánh suốt cả tuần.
+Hãy sử dụng các tính năng cộng đồng cùng với [Nhóm](../groups/index.md) để luôn gắn bó với hội thánh suốt cả tuần.
 :::

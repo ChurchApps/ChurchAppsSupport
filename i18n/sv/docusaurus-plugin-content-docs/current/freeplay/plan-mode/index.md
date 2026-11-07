@@ -1,5 +1,6 @@
 ---
 title: "Planläge"
+description: "Anslut en FreePlay-TV till en kyrkans gudstjänstplan från B1 Admin så att den visar veckans lektioner, presentationer och media i rätt ordning."
 ---
 
 # Planläge
@@ -12,13 +13,13 @@ Planläget kopplar din TV till en gudstjänstplan. I stället för att hämta in
 
 ## Hur det skiljer sig från andra lägen
 
-- **[Schemalagt läge](../scheduled-mode/)** spelar upp spellistor från en kalender i FreePlay Admin vid de tider du anger, utan att någon trycker på Start
+- **[Schemalagt läge](../scheduled-mode/index.md)** spelar upp spellistor från en kalender i FreePlay Admin vid de tider du anger, utan att någon trycker på Start
 - **Planläge** hämtar innehåll kopplat till en planstyp, vilket kan omfatta lektioner, presentationer från leverantörer, tillägg och annat media, arrangerat i en egen ordning
 
 Planläget är särskilt användbart när din gudstjänstplan innehåller en blandning av innehåll från olika källor, allt organiserat i en enda sekvens.
 
 :::tip
-Vill du att den aktuella planen ska spelas upp av sig själv vid en viss tidpunkt? Lägg till en kalenderpost i FreePlay Admin och välj planstypen under **Gudstjänstplaner**. Se [Schemalägga kalendern](../scheduled-mode/scheduling-the-calendar).
+Vill du att den aktuella planen ska spelas upp av sig själv vid en viss tidpunkt? Lägg till en kalenderpost i FreePlay Admin och välj planstypen under **Gudstjänstplaner**. Se [Schemalägga kalendern](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Så fungerar det
@@ -32,4 +33,4 @@ TV:n förblir kopplad till planstypen. Varje vecka hämtar den automatiskt den s
 
 ## I den här avdelningen
 
-- **[Koppla din enhet](./device-pairing)** - Så genererar och anger du kopplingskoden
+- **[Koppla din enhet](./device-pairing.md)** - Så genererar och anger du kopplingskoden

@@ -1,5 +1,6 @@
 ---
 title: "Integration & Extension Surface"
+description: "Map of every way to connect to ChurchApps B1: REST API, API keys, OAuth, webhooks, MCP, and content providers, with links to each reference."
 ---
 
 # Integration & Extension Surface
@@ -14,12 +15,12 @@ Everything a third party can plug into runs through one API and one authorizatio
 
 There are six ways in or out, and they all share the same auth layer:
 
-- **[REST API](../api/api-keys)** — the whole product surface, callable with a bearer token from any language.
-- **[API keys](../api/api-keys)** — the simplest credential: a `cak_…` token bound to one person in one church.
-- **[OAuth 2.0 & Connected Apps](../api/connected-apps)** — per-church consent for multi-tenant apps; issues the same JWT a user gets.
-- **[Webhooks](../api/webhooks)** — signed, durably-delivered outbound events.
-- **[MCP server](../api/mcp)** — an AI-facing wrapper over the REST API at `/mcp`.
-- **[Content providers](../freeplay-content-provider)** — the inbound path for external media libraries into FreePlay and the B1 apps.
+- **[REST API](../api/api-keys.md)** — the whole product surface, callable with a bearer token from any language.
+- **[API keys](../api/api-keys.md)** — the simplest credential: a `cak_…` token bound to one person in one church.
+- **[OAuth 2.0 & Connected Apps](../api/connected-apps.md)** — per-church consent for multi-tenant apps; issues the same JWT a user gets.
+- **[Webhooks](../api/webhooks.md)** — signed, durably-delivered outbound events.
+- **[MCP server](../api/mcp.md)** — an AI-facing wrapper over the REST API at `/mcp`.
+- **[Content providers](../freeplay-content-provider.md)** — the inbound path for external media libraries into FreePlay and the B1 apps.
 
 Everything except content providers is served by a single monolithic API (the [Api](https://github.com/ChurchApps/Api) repository) whose modules mount under stable base paths — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, and `/mcp`.
 
@@ -80,7 +81,7 @@ Controllers gate actions with `au.checkAccess(contentType, action)` against the 
 - A scope can only ever *remove* permissions, so a scoped credential can never elevate to server / domain administration (those permissions are deliberately unmapped to any scope).
 - API keys carry a `cak_` prefix; `CustomAuthProvider.getUser()` branches on it, hashes the secret, and re-resolves the owning person's live RBAC on each call.
 
-See [API Keys → Scopes](../api/api-keys#scopes) for the full catalog.
+See [API Keys → Scopes](../api/api-keys.md#scopes) for the full catalog.
 
 ## Surface Reference
 
@@ -90,7 +91,7 @@ The complete product surface. Any authenticated endpoint accepts either a JWT or
 
 ### API keys
 
-A `cak_<prefix>.<secret>` personal access token, created in **B1Admin → Settings → Developer → API Keys**. Only a SHA-256 hash is stored; the raw key is shown once. Managed at `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best for a single church's own scripts and for connectors like Zapier, Make, and Google Sheets. → **[API Keys](../api/api-keys)**
+A `cak_<prefix>.<secret>` personal access token, created in **B1Admin → Settings → Developer → API Keys**. Only a SHA-256 hash is stored; the raw key is shown once. Managed at `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best for a single church's own scripts and for connectors like Zapier, Make, and Google Sheets. → **[API Keys](../api/api-keys.md)**
 
 ### OAuth 2.0 & Connected Apps
 
@@ -102,19 +103,19 @@ For multi-tenant apps that need each church to consent. Implemented in `Api/src/
 
 Public clients can also register themselves with `POST /oauth/register` (RFC 7591 dynamic client registration); they get a `client_id` and no secret, and their redirect URIs must be `https` or loopback.
 
-A **Connected App** is the church-admin-facing view of a granted token, listed and revocable at `/membership/oauth/connections`. The controller also hosts an OAuth **relay-session** bridge (`/oauth/relay/*`) that lets a browserless device complete a sign-in against an *external* provider. → **[Connected Apps & OAuth](../api/connected-apps)**
+A **Connected App** is the church-admin-facing view of a granted token, listed and revocable at `/membership/oauth/connections`. The controller also hosts an OAuth **relay-session** bridge (`/oauth/relay/*`) that lets a browserless device complete a sign-in against an *external* provider. → **[Connected Apps & OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-The only outbound surface. A church subscribes a public HTTPS endpoint to events; when a matching change occurs, `WebhookDispatcher.emit(churchId, event, payload)` enriches id-only payloads with display names (`personName`, `groupName`, `formName` — lookups run only once a subscription matches), records a delivery, and a background worker POSTs a signed JSON envelope with retry/backoff and redelivery. Engine at `Api/src/shared/webhooks/`, per-church CRUD under `/membership/webhooks` (`WebhookController.ts`). A `connectorType` field reshapes the body for Slack / Discord; the `mailchimp` connector goes further and owns the whole HTTP exchange (per-event method/URL/auth against Mailchimp's API, credentials encrypted in `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks)**
+The only outbound surface. A church subscribes a public HTTPS endpoint to events; when a matching change occurs, `WebhookDispatcher.emit(churchId, event, payload)` enriches id-only payloads with display names (`personName`, `groupName`, `formName` — lookups run only once a subscription matches), records a delivery, and a background worker POSTs a signed JSON envelope with retry/backoff and redelivery. Engine at `Api/src/shared/webhooks/`, per-church CRUD under `/membership/webhooks` (`WebhookController.ts`). A `connectorType` field reshapes the body for Slack / Discord; the `mailchimp` connector goes further and owns the whole HTTP exchange (per-event method/URL/auth against Mailchimp's API, credentials encrypted in `webhooks.connectorConfig`). → **[Webhooks](../api/webhooks.md)**
 
 ### MCP server
 
-An AI-facing wrapper at `/mcp` (`Api/src/modules/mcp/`). Three generic tools — `list_endpoints`, `describe_endpoint`, `api_call` — expose the whole REST surface dynamically to any MCP client. Auth is the same bearer token as everything else. For clients that sign in with OAuth (claude.ai custom connectors), a 401 from `/mcp` carries a `WWW-Authenticate` header pointing at `/.well-known/oauth-protected-resource`, and `/.well-known/oauth-authorization-server` advertises the `/membership/oauth` endpoints, dynamic registration, PKCE, and the B1Admin `/oauth` consent page (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` re-enters the Express stack in-process so every permission and church-scoping rule still applies. → **[MCP Server](../api/mcp)**
+An AI-facing wrapper at `/mcp` (`Api/src/modules/mcp/`). Three generic tools — `list_endpoints`, `describe_endpoint`, `api_call` — expose the whole REST surface dynamically to any MCP client. Auth is the same bearer token as everything else. For clients that sign in with OAuth (claude.ai custom connectors), a 401 from `/mcp` carries a `WWW-Authenticate` header pointing at `/.well-known/oauth-protected-resource`, and `/.well-known/oauth-authorization-server` advertises the `/membership/oauth` endpoints, dynamic registration, PKCE, and the B1Admin `/oauth` consent page (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` re-enters the Express stack in-process so every permission and church-scoping rule still applies. → **[MCP Server](../api/mcp.md)**
 
 ### Content providers
 
-The inbound-content path, in the separate package `Packages/content-providers` (`@churchapps/content-providers`) rather than the API. Each provider implements the `IProvider` interface (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, plus auth hooks — and self-registers into a `Map` registry (`src/providers/registry.ts`). Here **B1 is the OAuth client**: a provider declares an `AuthType` of `none`, `oauth_pkce`, `device_flow`, or `form_login`, and the shared helpers (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) run the client-side PKCE / device flow against the external source. Eleven providers ship today — including Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, and B1.church — feeding FreePlay and the B1 apps. → **[FreePlay Content Provider](../freeplay-content-provider)**
+The inbound-content path, in the separate package `Packages/content-providers` (`@churchapps/content-providers`) rather than the API. Each provider implements the `IProvider` interface (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, plus auth hooks — and self-registers into a `Map` registry (`src/providers/registry.ts`). Here **B1 is the OAuth client**: a provider declares an `AuthType` of `none`, `oauth_pkce`, `device_flow`, or `form_login`, and the shared helpers (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) run the client-side PKCE / device flow against the external source. Eleven providers ship today — including Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, and B1.church — feeding FreePlay and the B1 apps. → **[FreePlay Content Provider](../freeplay-content-provider.md)**
 
 **Year plans** ride on this path. A curriculum publisher (with `lessons.edit`) maintains ordered week-1/2/3 sequences in the Lessons.church admin (`LessonsApi` tables `yearPlans` / `yearPlanWeeks`, with optional `startMonth` and per-week `anchor` of `easter` / `christmas`); `GET /yearPlans/public` on LessonsApi serves live plans anonymously, hydrating each week's program/study/venue from the lesson tree. B1Admin's **Serving → Plans → Schedule Lesson → Apply Year Plan** consumes that endpoint and writes one DoingApi plan per included week (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Plans with `startMonth` resolve anchored weeks against the chosen year (Easter via Gregorian computus, Christmas as the Sunday on-or-before Dec 25) and fill the runs between them; plans without `startMonth` still map week N to `startDate + (N−1)×7` days. Weeks from external OLF providers or with an incomplete path are skipped at apply time; churches edit the resulting plans like any other, and FreePlay plays whatever is on the plan.
 
@@ -122,12 +123,12 @@ The inbound-content path, in the separate package `Packages/content-providers` (
 
 | Surface | Auth mechanism | Direction | Where implemented | Reference |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT or `cak_…` key | Inbound | `Api/src/modules/*` | [API Keys](../api/api-keys) |
-| API keys | SHA-256-hashed `cak_` token | Credential | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Inbound | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
-| Webhooks | Per-hook secret, HMAC-SHA256 signature | Outbound | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | `Bearer` JWT, OAuth JWT (discovered via `/.well-known`), or `cak_…` key | Inbound (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
-| Content providers | Per-provider: none / OAuth PKCE / device / form | Inbound content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
+| REST API | `Bearer` JWT or `cak_…` key | Inbound | `Api/src/modules/*` | [API Keys](../api/api-keys.md) |
+| API keys | SHA-256-hashed `cak_` token | Credential | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys.md) |
+| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | Inbound | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps.md) |
+| Webhooks | Per-hook secret, HMAC-SHA256 signature | Outbound | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP server | `Bearer` JWT, OAuth JWT (discovered via `/.well-known`), or `cak_…` key | Inbound (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp.md) |
+| Content providers | Per-provider: none / OAuth PKCE / device / form | Inbound content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider.md) |
 
 ## Prebuilt Connectors
 
@@ -143,9 +144,9 @@ For your own code, **[`@churchapps/integration-sdk`](https://www.npmjs.com/packa
 
 ## Related Pages
 
-- [API Keys](../api/api-keys) — the simplest credential and the scope catalog
-- [Connected Apps & OAuth](../api/connected-apps) — multi-tenant consent flows
-- [Webhooks](../api/webhooks) — the outbound event system
-- [MCP Server](../api/mcp) — the AI integration wrapper
-- [FreePlay Content Provider](../freeplay-content-provider) — becoming an inbound content source
+- [API Keys](../api/api-keys.md) — the simplest credential and the scope catalog
+- [Connected Apps & OAuth](../api/connected-apps.md) — multi-tenant consent flows
+- [Webhooks](../api/webhooks.md) — the outbound event system
+- [MCP Server](../api/mcp.md) — the AI integration wrapper
+- [FreePlay Content Provider](../freeplay-content-provider.md) — becoming an inbound content source
 - [Integrations (end-user)](/docs/b1-admin/integrations/) — prebuilt connector setup guides

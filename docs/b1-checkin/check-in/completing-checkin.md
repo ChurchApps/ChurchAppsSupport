@@ -1,5 +1,6 @@
 ---
 title: "Completing Check-In"
+description: "Finish a family's kiosk check-in in B1 Checkin, covering room limits, label printing, pickup security codes, and what the app does next."
 ---
 
 # Completing Check-In
@@ -13,9 +14,9 @@ Once you have reviewed your household and made any needed group assignments, you
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Review your household](./household-review) on the household review screen
-- [Assign groups](./group-assignment) to any family members who need to check into a specific class or program
-- Optionally [add any guests](./adding-guests) who are visiting with your family
+- [Review your household](./household-review.md) on the household review screen
+- [Assign groups](./group-assignment.md) to any family members who need to check into a specific class or program
+- Optionally [add any guests](./adding-guests.md) who are visiting with your family
 
 </div>
 
@@ -28,10 +29,10 @@ That is all it takes. Your family's attendance has been recorded.
 
 ## Full Rooms and Volunteer Ratios
 
-If your church has configured [safety limits](../../b1-admin/attendance/checkin-safety) on its rooms, the server checks them before saving:
+If your church has configured [safety limits](../../b1-admin/attendance/checkin-safety.md) on its rooms, the server checks them before saving:
 
 - If a selected room is **full or closed**, check-in does not go through and the app names the room so you can pick a different one.
-- If the service time has a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) and its check-in window isn't open right now, check-in into that service time's rooms is also refused. The **Can't check in yet** screen lists the room with the reason "check-in isn't open right now"; tap **Change Rooms** to pick a different service time or group. (Service times that are already closed are shown as **Closed** on the [household screen](./household-review) and can't be picked, so you'll usually only see this if a window closes partway through a check-in.)
+- If the service time has a [check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) and its check-in window isn't open right now, check-in into that service time's rooms is also refused. The **Can't check in yet** screen lists the room with the reason "check-in isn't open right now"; tap **Change Rooms** to pick a different service time or group. (Service times that are already closed are shown as **Closed** on the [household screen](./household-review.md) and can't be picked, so you'll usually only see this if a window closes partway through a check-in.)
 - A household that checked in for an earlier service time can come back later and add an open service time, even after the earlier window has closed. Their existing check-ins are kept and don't cause the new check-in to be refused.
 - If a children's room is **short on volunteers** for its ratio, the app either shows a warning that a staff member can confirm to proceed, or blocks the check-in entirely — depending on how your church configured ratio enforcement.
 
@@ -49,7 +50,7 @@ The same security code appears on both the child's name label and the parent's p
 The security code is generated fresh for each check-in and uses only consonants and digits (vowels are excluded to avoid forming inappropriate words).
 
 :::warning
-If labels do not print, open the Admin Settings by tapping the **church logo** seven times, then tap **Change Printer** to verify the printer connection. See [Printer Setup](../getting-started/printer-setup) for troubleshooting steps.
+If labels do not print, open the Admin Settings by tapping the **church logo** seven times, then tap **Change Printer** to verify the printer connection. See [Printer Setup](../getting-started/printer-setup.md) for troubleshooting steps.
 :::
 
 ## What Happens After Check-In

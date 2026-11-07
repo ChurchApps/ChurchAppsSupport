@@ -1,5 +1,6 @@
 ---
 title: "Rum, resurser och schemaläggning"
+description: "Ställ in lokaler, utrustning, spärrade tider och händelsemallar i B1 Admin så att grupper kan begära bokningar och du kan godkänna dem och undvika dubbelbokningar."
 ---
 
 # Rum, resurser och schemaläggning
@@ -14,7 +15,7 @@ Med rum och resurser kan du hålla reda på kyrkans bokningsbara utrymmen och ut
 <h4>Innan du börjar</h4>
 
 - Du behöver administratörsbehörighet till avsnittet Kalendrar i B1 Admin
-- Skapa [grupper](../groups/creating-groups) vars medlemmar ska skicka bokningsförfrågningar
+- Skapa [grupper](../groups/creating-groups.md) vars medlemmar ska skicka bokningsförfrågningar
 
 </div>
 
@@ -76,7 +77,7 @@ När personal skapar en ny händelse kan de välja en befintlig mall för att fy
 
 ## Relaterade artiklar
 
-- [Tillgänglighetskalender](availability) – se alla bokningar på en gång och boka rum eller resurser direkt
-- [Kalendergodkännanden](approvals) – godkänn eller avslå förfrågningar om bokning av rum och resurser
-- [Skapa kalendrar](creating-calendars) – skapa kalendrar för händelser
-- [Skapa grupper](../groups/creating-groups) – skapa grupper som kan boka rum och resurser
+- [Tillgänglighetskalender](./availability.md) – se alla bokningar på en gång och boka rum eller resurser direkt
+- [Kalendergodkännanden](./approvals.md) – godkänn eller avslå förfrågningar om bokning av rum och resurser
+- [Skapa kalendrar](./creating-calendars.md) – skapa kalendrar för händelser
+- [Skapa grupper](../groups/creating-groups.md) – skapa grupper som kan boka rum och resurser

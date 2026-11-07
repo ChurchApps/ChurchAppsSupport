@@ -1,5 +1,6 @@
 ---
 title: "Tích hợp"
+description: "Kết nối B1 Admin với Slack, Discord, Zapier, Make, Google Sheets và trợ lý AI như Claude, kèm các bước thiết lập và phạm vi khóa API cần thiết."
 ---
 
 # Tích hợp
@@ -14,21 +15,21 @@ B1 kết nối với các công cụ mà nhóm của bạn đang dùng. Kết n�
 
 | Tích hợp | Chức năng | Hướng | Công sức thiết lập |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Đăng thông báo dễ đọc (người mới, quyên góp, đăng ký, …) lên kênh Slack | B1 → Slack | 2 phút |
-| **[Discord](./slack-discord)** | Tương tự, trên kênh Discord | B1 → Discord | 2 phút |
-| **[Zapier](./zapier)** | Dùng sự kiện B1 làm trình kích hoạt và hành động B1 trong hơn 7.000 ứng dụng của Zapier | Cả hai | 5–10 phút mỗi Zap |
-| **[Make](./make)** | Ý tưởng tương tự Zapier, trong trình xây dựng kịch bản trực quan của Make | Cả hai | 5–10 phút mỗi kịch bản |
-| **[Google Sheets](./google-sheets)** | Xuất Người / Quyên góp / Nhóm / Điểm danh sang bảng tính theo yêu cầu | B1 → Bảng tính | 5 phút |
-| **[Claude](./claude)** | Đặt câu hỏi cho Claude của Anthropic về dữ liệu hội thánh, giới hạn theo quyền của bạn. Dùng thử miễn phí và được khuyến nghị | Cả hai | Dưới 3 phút |
-| **[ChatGPT](./chatgpt)** | Ý tưởng tương tự với ChatGPT của OpenAI (cần gói ChatGPT trả phí) | Cả hai | 10 phút |
-| **[Dịch vụ đã kết nối](./services/)** | Hướng dẫn được tuyển chọn cho Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Tùy dịch vụ | 5–10 phút mỗi dịch vụ |
+| **[Slack](./slack-discord.md)** | Đăng thông báo dễ đọc (người mới, quyên góp, đăng ký, …) lên kênh Slack | B1 → Slack | 2 phút |
+| **[Discord](./slack-discord.md)** | Tương tự, trên kênh Discord | B1 → Discord | 2 phút |
+| **[Zapier](./zapier.md)** | Dùng sự kiện B1 làm trình kích hoạt và hành động B1 trong hơn 7.000 ứng dụng của Zapier | Cả hai | 5–10 phút mỗi Zap |
+| **[Make](./make.md)** | Ý tưởng tương tự Zapier, trong trình xây dựng kịch bản trực quan của Make | Cả hai | 5–10 phút mỗi kịch bản |
+| **[Google Sheets](./google-sheets.md)** | Xuất Người / Quyên góp / Nhóm / Điểm danh sang bảng tính theo yêu cầu | B1 → Bảng tính | 5 phút |
+| **[Claude](./claude.md)** | Đặt câu hỏi cho Claude của Anthropic về dữ liệu hội thánh, giới hạn theo quyền của bạn. Dùng thử miễn phí và được khuyến nghị | Cả hai | Dưới 3 phút |
+| **[ChatGPT](./chatgpt.md)** | Ý tưởng tương tự với ChatGPT của OpenAI (cần gói ChatGPT trả phí) | Cả hai | 10 phút |
+| **[Dịch vụ đã kết nối](./services/index.md)** | Hướng dẫn được tuyển chọn cho Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Tùy dịch vụ | 5–10 phút mỗi dịch vụ |
 
 ## Cách chọn
 
 - **Chỉ muốn nhận thông báo trong ứng dụng chat?** Dùng **Slack** hoặc **Discord**. Không cần tài khoản bên thứ ba, không cần Zap phải bảo trì. Cấu hình hoàn toàn trong B1Admin.
 - **Muốn tự động hóa việc gì đó giữa nhiều ứng dụng** (ví dụ: "khi ai đó quyên góp, thêm họ vào danh sách Mailchimp và kênh Slack #donations")? Dùng **Zapier** hoặc **Make**. Zapier thân thiện hơn; Make rẻ hơn khi quy mô lớn và có logic linh hoạt hơn.
 - **Cần lấy dữ liệu một lần hoặc báo cáo định kỳ?** Dùng **Google Sheets**. Dán khóa API vào thanh bên của tiện ích bổ sung rồi nhấn **Export**.
-- **Muốn đặt câu hỏi bằng ngôn ngữ tự nhiên** ("có bao nhiêu khách lần đầu vào Chủ nhật trước?", "tóm tắt quyên góp tháng này")? Bắt đầu với **[Claude](./claude)**. Dùng thử miễn phí và thiết lập trong chưa đến 3 phút. **[ChatGPT](./chatgpt)** cũng hoạt động với gói trả phí. Claude kết nối bằng cách đăng nhập với tài khoản B1 của bạn; ChatGPT dùng khóa API của B1.
+- **Muốn đặt câu hỏi bằng ngôn ngữ tự nhiên** ("có bao nhiêu khách lần đầu vào Chủ nhật trước?", "tóm tắt quyên góp tháng này")? Bắt đầu với **[Claude](./claude.md)**. Dùng thử miễn phí và thiết lập trong chưa đến 3 phút. **[ChatGPT](./chatgpt.md)** cũng hoạt động với gói trả phí. Claude kết nối bằng cách đăng nhập với tài khoản B1 của bạn; ChatGPT dùng khóa API của B1.
 - **Xây dựng tích hợp tùy chỉnh riêng?** Không có gì ở trên phù hợp. Hãy trao đổi trực tiếp với [REST API](/docs/developer/api) bằng [khóa API](/docs/developer/api/api-keys), hoặc đăng ký một máy chủ bạn kiểm soát vào [webhook](/docs/developer/api/webhooks).
 
 ## Điểm chung
@@ -59,10 +60,10 @@ Nếu không có gì ở trên phù hợp, mọi bề mặt của B1 đều mở
 
 ## Bước tiếp theo
 
-- [Slack & Discord](./slack-discord): đăng thông báo chat
-- [Zapier](./zapier): kết nối với hơn 7.000 ứng dụng
-- [Make](./make): tự động hóa quy trình trực quan
-- [Google Sheets](./google-sheets): xuất sang bảng tính
-- [Claude](./claude): hỏi Claude của Anthropic về dữ liệu hội thánh
-- [ChatGPT](./chatgpt): hỏi ChatGPT của OpenAI về dữ liệu hội thánh
-- [Dịch vụ đã kết nối](./services/): hướng dẫn theo từng dịch vụ (Mailchimp, Donorbox, Clearstream, …)
+- [Slack & Discord](./slack-discord.md): đăng thông báo chat
+- [Zapier](./zapier.md): kết nối với hơn 7.000 ứng dụng
+- [Make](./make.md): tự động hóa quy trình trực quan
+- [Google Sheets](./google-sheets.md): xuất sang bảng tính
+- [Claude](./claude.md): hỏi Claude của Anthropic về dữ liệu hội thánh
+- [ChatGPT](./chatgpt.md): hỏi ChatGPT của OpenAI về dữ liệu hội thánh
+- [Dịch vụ đã kết nối](./services/index.md): hướng dẫn theo từng dịch vụ (Mailchimp, Donorbox, Clearstream, …)

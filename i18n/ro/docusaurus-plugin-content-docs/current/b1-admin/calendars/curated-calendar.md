@@ -1,5 +1,6 @@
 ---
 title: "Calendar selecționat"
+description: "Configurați în B1 Admin un calendar comun pentru toată biserica, cu evenimente din mai multe grupuri, și publicați-l pe site, ca abonament ICS sau descărcare."
 ---
 
 # Calendar selecționat
@@ -15,7 +16,7 @@ Un calendar selecționat agregă evenimentele din mai multe grupuri într-o sing
 
 - Configurați [grupurile](../groups/creating-groups.md) ale căror evenimente doriți să le includeți
 - Asigurați-vă că liderii de grupuri au adăugat evenimente în grupurile lor
-- Familiarizați-vă cu noțiunile de bază din [Crearea calendarelor](creating-calendars)
+- Familiarizați-vă cu noțiunile de bază din [Crearea calendarelor](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Pe calendarul selecționat de pe site-ul dumneavoastră și în abonamentul său
 
 ## Pașii următori
 
-- [Crearea calendarelor](creating-calendars) -- Aflați noțiunile de bază ale creării unui calendar
-- [Prezentarea generală a calendarelor](./) -- Reveniți la prezentarea generală a calendarelor
+- [Crearea calendarelor](./creating-calendars.md) -- Aflați noțiunile de bază ale creării unui calendar
+- [Prezentarea generală a calendarelor](./index.md) -- Reveniți la prezentarea generală a calendarelor

@@ -1,5 +1,6 @@
 ---
 title: "Oldalak kezelése"
+description: "Oldalak és navigáció létrehozása, szerkesztése és rendezése a B1 Admin Weboldal-oldalak nézetében: oldalbeállítások, átirányítások és webhelysablonok."
 ---
 
 # Oldalak kezelése
@@ -13,13 +14,13 @@ A Weboldal oldalai nézet az egyik központi felület, ahol létrehozhatja, szer
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Végezze el a [Kezdeti beállítás](initial-setup) lépéseit a domain és az alapvető webhelybeállítások megadásához
-- Készítse elő a tartalmát és a képeit. Először a [Fájlok](files) kezelőben töltse fel a médiafájlokat.
+- Végezze el a [Kezdeti beállítás](./initial-setup.md) lépéseit a domain és az alapvető webhelybeállítások megadásához
+- Készítse elő a tartalmát és a képeit. Először a [Fájlok](./files.md) kezelőben töltse fel a médiafájlokat.
 
 </div>
 
 :::info
-Ha a gyülekezetének több weboldala van (például gyülekezeti helyszínenként külön webhely), a Weboldal oldalai nézet tetején lévő webhelyváltóval válthat közöttük. Minden webhelynek saját oldalai, navigációja és [megjelenési](appearance) beállításai vannak.
+Ha a gyülekezetének több weboldala van (például gyülekezeti helyszínenként külön webhely), a Weboldal oldalai nézet tetején lévő webhelyváltóval válthat közöttük. Minden webhelynek saját oldalai, navigációja és [megjelenési](./appearance.md) beállításai vannak.
 :::
 
 ## Az oldaltípusok megismerése
@@ -35,7 +36,7 @@ Bármelyik automatikusan létrehozott oldalt egyéni oldallá alakíthatja, ha t
 
 1. Kattintson a Weboldal oldalai nézet jobb felső sarkában lévő **Oldal hozzáadása** gombra.
 2. Válasszon oldaltípust (üres vagy sablon), és adjon neki nevet.
-3. Kattintson bármelyik oldal melletti **Tartalom szerkesztése** gombra, hogy megnyissa az [oldalszerkesztőt](page-editor), ahol szakaszokat, szöveget, képeket és más elemeket adhat hozzá.
+3. Kattintson bármelyik oldal melletti **Tartalom szerkesztése** gombra, hogy megnyissa az [oldalszerkesztőt](./page-editor.md), ahol szakaszokat, szöveget, képeket és más elemeket adhat hozzá.
 4. Kattintson az oldal melletti **Oldalbeállítások** gombra az oldal címének, URL-útvonalának és egyéb metaadatainak módosításához.
 5. Kattintson az oldal útvonalára az **Útvonal** oszlopban, hogy az élő oldal új lapon nyíljon meg, és pontosan láthassa, hogyan fog megjelenni a látogatók számára.
 
@@ -112,10 +113,10 @@ Ha a webhelyét az alapoktól építi, oldalanként létrehozni helyett használ
 3. Ha talált egyet, amely tetszik, kattintson a **Sablon alkalmazása** gombra.
 4. A még nem létező oldalak létrejönnek, és hozzáadódnak a navigációhoz. A meglévő oldalak változatlanok maradnak.
 
-A sablon alkalmazása után nyissa meg az egyes oldalakat az [oldalszerkesztőben](page-editor), és cserélje le a helyőrző szöveget és képeket a gyülekezete valódi tartalmára.
+A sablon alkalmazása után nyissa meg az egyes oldalakat az [oldalszerkesztőben](./page-editor.md), és cserélje le a helyőrző szöveget és képeket a gyülekezete valódi tartalmára.
 
 :::info
-A webhelysablonok oldalszerkezetet és navigációt hoznak létre. Nem írják felül a webhely színsémáját vagy betűtípusait -- ezeket a [Megjelenés](appearance) szabályozza.
+A webhelysablonok oldalszerkezetet és navigációt hoznak létre. Nem írják felül a webhely színsémáját vagy betűtípusait -- ezeket a [Megjelenés](./appearance.md) szabályozza.
 :::
 
 ## Képnézegető (lightbox)
@@ -124,7 +125,7 @@ Amikor a látogatók a weboldalon egy képre kattintanak, az a teljes képernyő
 
 ## Következő lépések
 
-- [Kezdeti beállítás](initial-setup) -- Az első beállítás lépései
-- [Az oldalszerkesztő használata](page-editor) -- Oldaltartalmak összeállítása és formázása
-- [Megjelenés](appearance) -- A webhely vizuális témájának testreszabása
-- [Fájlok](files) -- Médiafájlok feltöltése és kezelése az oldalakhoz
+- [Kezdeti beállítás](./initial-setup.md) -- Az első beállítás lépései
+- [Az oldalszerkesztő használata](./page-editor.md) -- Oldaltartalmak összeállítása és formázása
+- [Megjelenés](./appearance.md) -- A webhely vizuális témájának testreszabása
+- [Fájlok](./files.md) -- Médiafájlok feltöltése és kezelése az oldalakhoz

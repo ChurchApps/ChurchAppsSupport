@@ -1,5 +1,6 @@
 ---
 title: "Dodeljevanje vlog"
+description: "Dodelite vloge v B1 Admin, da osebju in prostovoljcem omogočite dostop le do oseb, darov, prisotnosti in skupin, ki jih potrebujejo."
 ---
 
 # Dodeljevanje vlog

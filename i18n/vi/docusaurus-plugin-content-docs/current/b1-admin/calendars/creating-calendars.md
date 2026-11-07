@@ -1,5 +1,6 @@
 ---
 title: "Tạo lịch"
+description: "Tạo lịch trong B1 Admin, kết nối nhóm hoặc nhập tệp .ics, rồi quản lý sự kiện, đăng ký và ghi chú ngay tại một nơi."
 ---
 
 # Tạo lịch
@@ -61,7 +62,7 @@ Kết nối nhóm với lịch của bạn là cách hiệu quả để tự đ�
 :::
 
 :::info
-Nếu bạn muốn tạo một lịch duy nhất lấy sự kiện từ nhiều nhóm trong hội thánh, hãy xem [Lịch được chọn lọc](curated-calendar) để có cách làm gọn gàng hơn.
+Nếu bạn muốn tạo một lịch duy nhất lấy sự kiện từ nhiều nhóm trong hội thánh, hãy xem [Lịch được chọn lọc](./curated-calendar.md) để có cách làm gọn gàng hơn.
 :::
 
 ## Thêm và chỉnh sửa sự kiện {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Nhấp **Sự kiện mới** trên trang chi tiết lịch để thêm sự ki�
 - **Bắt đầu** và **Kết thúc**, **Lặp lại**, và **Hiển thị** (**Công khai** hoặc **Riêng tư**).
 - **Thẻ** -- Nhãn phân cách bằng dấu phẩy, chẳng hạn như `youth, students`. Phần tử Lịch trên website của bạn có thể được đặt để chỉ hiển thị các sự kiện có một thẻ nhất định. Đây là cùng trường **Thẻ** xuất hiện trong cài đặt đăng ký của sự kiện.
 - **Ai có thể xem ghi chú** và **Ai có thể đăng ghi chú** -- Ai có thể đọc và thêm vào ghi chú của sự kiện (xem [Ghi chú sự kiện](#event-notes)). Chọn **Chỉ nhân viên** (mặc định), **Trưởng nhóm** (các trưởng nhóm của nhóm sự kiện) hoặc **Thành viên nhóm** (tất cả thành viên trong nhóm sự kiện, bao gồm cả trưởng nhóm).
-- **Phòng** và **Tài nguyên** -- Đặt trước không gian và thiết bị cho sự kiện. Xem [Phòng, tài nguyên và lên lịch](rooms-resources).
+- **Phòng** và **Tài nguyên** -- Đặt trước không gian và thiết bị cho sự kiện. Xem [Phòng, tài nguyên và lên lịch](./rooms-resources.md).
 
 Nhấp **Lưu**. Nếu sự kiện lặp lại, B1 sẽ yêu cầu bạn xác nhận, vì việc lưu sẽ cập nhật mọi lần diễn ra trong chuỗi.
 
@@ -101,12 +102,12 @@ Bạn có thể bật đăng ký cho bất kỳ sự kiện nào trong lịch đ
    - **Đóng đăng ký** -- Ngày và giờ đăng ký kết thúc.
    - **Thẻ** -- Nhãn phân cách bằng dấu phẩy (ví dụ: "youth, retreat, vbs") để giúp phân loại các sự kiện có thể đăng ký.
    - **Câu hỏi đăng ký** -- Tùy chọn đính kèm một [biểu mẫu](../forms/creating-forms.md) để người đăng ký trả lời thêm câu hỏi (hạn chế về chế độ ăn, cỡ áo thun, liên hệ khẩn cấp, v.v.) như một phần của quá trình đăng ký. Chọn **Không có** để bỏ qua câu hỏi.
-   - **Bật danh sách chờ** -- Khi sự kiện đã đầy, cho phép người đăng ký bổ sung tham gia danh sách chờ thay vì bị từ chối. Xem [Đăng ký có phí](paid-registrations#waitlist).
+   - **Bật danh sách chờ** -- Khi sự kiện đã đầy, cho phép người đăng ký bổ sung tham gia danh sách chờ thay vì bị từ chối. Xem [Đăng ký có phí](./paid-registrations.md#waitlist).
 4. Lưu sự kiện.
 
-Với sự kiện có phí, cùng trang cài đặt này cho phép bạn xác định các **Loại người tham dự** có giá, **Lựa chọn** tùy chọn (dịch vụ bổ sung), và **Mã giảm giá**, với việc thanh toán được thu qua nhà cung cấp dịch vụ quyên góp của hội thánh bạn. Xem [Đăng ký có phí](paid-registrations) để biết hướng dẫn đầy đủ.
+Với sự kiện có phí, cùng trang cài đặt này cho phép bạn xác định các **Loại người tham dự** có giá, **Lựa chọn** tùy chọn (dịch vụ bổ sung), và **Mã giảm giá**, với việc thanh toán được thu qua nhà cung cấp dịch vụ quyên góp của hội thánh bạn. Xem [Đăng ký có phí](./paid-registrations.md) để biết hướng dẫn đầy đủ.
 
-Khi đã bật đăng ký, thành viên sẽ thấy nút **Đăng ký tham gia sự kiện này** khi xem sự kiện trên [website B1](../../b1-church/events/registering) hoặc [ứng dụng di động B1](../../b1-mobile/events/registering). Nếu bạn đã đính kèm biểu mẫu, người đăng ký sẽ thấy bước **Câu hỏi** trong quá trình đăng ký và câu trả lời của họ sẽ được lưu cùng với đăng ký.
+Khi đã bật đăng ký, thành viên sẽ thấy nút **Đăng ký tham gia sự kiện này** khi xem sự kiện trên [website B1](../../b1-church/events/registering.md) hoặc [ứng dụng di động B1](../../b1-mobile/events/registering.md). Nếu bạn đã đính kèm biểu mẫu, người đăng ký sẽ thấy bước **Câu hỏi** trong quá trình đăng ký và câu trả lời của họ sẽ được lưu cùng với đăng ký.
 
 :::info
 Câu hỏi đăng ký chỉ hoạt động với các biểu mẫu **không** được đánh dấu Hạn chế. Biểu mẫu hạn chế sẽ được tự động bỏ qua trong quá trình đăng ký thay vì hiển thị, vì vậy hãy dùng biểu mẫu không hạn chế khi đính kèm câu hỏi cho sự kiện.
@@ -126,7 +127,7 @@ Câu hỏi đăng ký chỉ hoạt động với các biểu mẫu **không** đ
    - **Chuyển** đăng ký trong danh sách chờ khi có chỗ trống
    - **Xuất CSV** -- Tải xuống tất cả đăng ký, bao gồm loại người tham dự, lựa chọn, số tiền thanh toán và câu trả lời cho câu hỏi
 
-Nếu sự kiện có câu hỏi đăng ký được đính kèm, trang chi tiết cũng hiển thị bộ lọc **Chỉ các câu hỏi chưa trả lời** để nhanh chóng tìm những người đăng ký chưa gửi câu trả lời, và nút **Xem câu trả lời** ở mỗi đăng ký đã trả lời để xem phản hồi của họ. Sự kiện có phí thêm cột **Loại**, cột **Đã trả / Tổng**, số lượng theo từng loại, và hộp thoại chi tiết thanh toán -- xem [Đăng ký có phí](paid-registrations#the-registration-roster).
+Nếu sự kiện có câu hỏi đăng ký được đính kèm, trang chi tiết cũng hiển thị bộ lọc **Chỉ các câu hỏi chưa trả lời** để nhanh chóng tìm những người đăng ký chưa gửi câu trả lời, và nút **Xem câu trả lời** ở mỗi đăng ký đã trả lời để xem phản hồi của họ. Sự kiện có phí thêm cột **Loại**, cột **Đã trả / Tổng**, số lượng theo từng loại, và hộp thoại chi tiết thanh toán -- xem [Đăng ký có phí](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Sử dụng thanh tiến trình sức chứa để theo dõi tốc độ lấp đầy của các sự kiện. Thanh chuyển sang màu đỏ khi sự kiện đạt hoặc vượt sức chứa.
@@ -134,7 +135,7 @@ Sử dụng thanh tiến trình sức chứa để theo dõi tốc độ lấp �
 
 ## Bước tiếp theo
 
-- [Lịch được chọn lọc](curated-calendar) -- Tạo lịch lấy sự kiện từ nhiều nhóm
-- [Đăng ký có phí](paid-registrations) -- Loại người tham dự, lựa chọn bổ sung, mã giảm giá, thanh toán và danh sách chờ
-- [Hướng dẫn đăng ký sự kiện](../guides/event-registration) -- Hướng dẫn từng bước để thiết lập đăng ký sự kiện
-- [Tổng quan về lịch](./) -- Quay lại tổng quan về lịch
+- [Lịch được chọn lọc](./curated-calendar.md) -- Tạo lịch lấy sự kiện từ nhiều nhóm
+- [Đăng ký có phí](./paid-registrations.md) -- Loại người tham dự, lựa chọn bổ sung, mã giảm giá, thanh toán và danh sách chờ
+- [Hướng dẫn đăng ký sự kiện](../guides/event-registration.md) -- Hướng dẫn từng bước để thiết lập đăng ký sự kiện
+- [Tổng quan về lịch](./index.md) -- Quay lại tổng quan về lịch

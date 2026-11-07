@@ -1,5 +1,6 @@
 ---
 title: "Prehliadanie skupín"
+description: "Prezerajte verejné skupiny vašej cirkvi na B1.church podľa kategórie a na každej karte si pozrite časy stretnutí, miesta a popisy, aby ste našli vhodnú skupinu."
 ---
 
 # Prehliadanie skupín

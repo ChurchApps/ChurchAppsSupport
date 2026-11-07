@@ -1,5 +1,7 @@
 ---
-title: "Autentificare"
+title: "Autentificarea în B1 Mobile"
+sidebar_label: "Autentificare"
+description: "Autentificați-vă în aplicația B1 Mobile cu contul ChurchApps, creați un cont nou sau recuperați o parolă uitată cu un cod de 6 cifre."
 ---
 
 # Autentificare
@@ -13,7 +15,7 @@ B1 Mobile folosește același cont ChurchApps pe care îl folosești pe B1.churc
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](./installing) pe dispozitivul tău iOS sau Android
+- [Instalează B1 Mobile](./installing.md) pe dispozitivul tău iOS sau Android
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile folosește același cont ChurchApps pe care îl folosești pe B1.churc
 3. Introdu **adresa de e-mail** și **parola**.
 4. Atinge **Conectare**.
 
-După autentificare, vei fi dus către [panoul de control](../dashboard/). Dacă nu ai selectat încă o biserică, vei fi invitat să cauți și să selectezi una.
+După autentificare, vei fi dus către [panoul de control](../dashboard/index.md). Dacă nu ai selectat încă o biserică, vei fi invitat să cauți și să selectezi una.
 
 ## Crearea unui cont nou
 

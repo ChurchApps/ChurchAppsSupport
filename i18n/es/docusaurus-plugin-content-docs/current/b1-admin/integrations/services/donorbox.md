@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Conecta Donorbox con B1 Admin mediante Zapier para que las donaciones en línea creen registros y perfiles de donantes automáticamente, sin exportar nada."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ El *Donación nueva o actualizada* de Donorbox se activa en ediciones también. 
 
 ## Ver También
 
-- [Zapier (descripción general)](../zapier) — el lado B1 de cada receta de Zapier
-- [Subsplash](./subsplash) — otra plataforma de donación con una aplicación de Zapier
-- [Mailchimp](./mailchimp) — encadena "nuevo regalo" en una etiqueta de correo
+- [Zapier (descripción general)](../zapier.md) — el lado B1 de cada receta de Zapier
+- [Subsplash](./subsplash.md) — otra plataforma de donación con una aplicación de Zapier
+- [Mailchimp](./mailchimp.md) — encadena "nuevo regalo" en una etiqueta de correo

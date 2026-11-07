@@ -1,5 +1,6 @@
 ---
 title: "Printerinstelling"
+description: "Stel een netwerklabelprinter in voor B1 Checkin-kiosken: vind hem op je wifi, kies hem, druk een proefafdruk af en sla de keuze op."
 ---
 
 # Printerinstelling
@@ -13,7 +14,7 @@ B1 Church Checkin kan naamsetiketten en ophaalslips voor ouders afdrukken naar e
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Meld u aan](./logging-in) bij de B1 Church Checkin-app en selecteer uw kerk
+- [Meld u aan](./logging-in.md) bij de B1 Church Checkin-app en selecteer uw kerk
 - Verbind een compatibele netwerkprinter met hetzelfde Wi-Fi-netwerk als de tablet
 
 </div>
@@ -77,4 +78,4 @@ Als u de kiosk naar een ander locatie verplaatst of uw netwerkinstelling wijzigt
 
 ## Volgende stappen
 
-Met uw printer geconfigureerd, bent u klaar om te beginnen met aanmelden. Zie de [aanmeldingsworkflow](../check-in/) om te leren hoe het volledige proces werkt, beginnend met [het selecteren van een dienst](../check-in/selecting-service).
+Met uw printer geconfigureerd, bent u klaar om te beginnen met aanmelden. Zie de [aanmeldingsworkflow](../check-in/index.md) om te leren hoe het volledige proces werkt, beginnend met [het selecteren van een dienst](../check-in/selecting-service.md).

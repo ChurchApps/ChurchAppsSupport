@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "B1 Admin को Zapier से जोड़कर नए लोगों, दान और समूह सदस्यों पर स्वचालन शुरू करें, और बिना कोडिंग के B1 में रिकॉर्ड वापस लिखें।"
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ B1.church ऐप बन चुका है और काम कर रहा �
 ### दान को Slack चैनल पर एक समृद्ध कार्ड के साथ पोस्ट करें
 
 - **Trigger** — B1: New Donation
-- **Action** — Slack: Send Channel Message। कोई भी लेआउट बनाएँ -- बटन, अटैचमेंट, आदि -- जो [Slack कनेक्टर](./slack-discord) नहीं बना सकता।
+- **Action** — Slack: Send Channel Message। कोई भी लेआउट बनाएँ -- बटन, अटैचमेंट, आदि -- जो [Slack कनेक्टर](./slack-discord.md) नहीं बना सकता।
 
 ### नए समूह सदस्यों को Google Group में जोड़ें
 
@@ -106,6 +107,6 @@ B1.church ऐप बन चुका है और काम कर रहा �
 
 ## यह भी देखें
 
-- [Make](./make) -- वही पैटर्न, अलग प्लेटफ़ॉर्म
-- [Slack & Discord](./slack-discord) -- Zapier के बिना सरल चैट सूचनाएँ
+- [Make](./make.md) -- वही पैटर्न, अलग प्लेटफ़ॉर्म
+- [Slack & Discord](./slack-discord.md) -- Zapier के बिना सरल चैट सूचनाएँ
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

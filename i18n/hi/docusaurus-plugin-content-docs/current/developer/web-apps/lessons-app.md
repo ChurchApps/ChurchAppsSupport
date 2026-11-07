@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Node.js 22+ पर LessonsApp Next.js पाठ संपादक को लोकल रूप से सेट करें, इसे लोकल LessonsApi से जोड़ें, और इसके बिल्ड व S3/CloudFront डिप्लॉयमेंट को समझें।"
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp, [Lessons.church](https://lessons.church) के लिए lesson con
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js 22+** और **Git** इंस्टॉल करें -- [Prerequisites](../setup/prerequisites) देखें
-- अपना API target कॉन्फ़िगर करें (local LessonsApi) -- [Environment Variables](../setup/environment-variables) देखें
+- **Node.js 22+** और **Git** इंस्टॉल करें -- [Prerequisites](../setup/prerequisites.md) देखें
+- अपना API target कॉन्फ़िगर करें (local LessonsApi) -- [Environment Variables](../setup/environment-variables.md) देखें
 
 </div>
 
@@ -81,5 +82,5 @@ Production builds **S3 + CloudFront** पर deploy होते हैं:
 3. नया संस्करण serve करने के लिए CloudFront invalidation शुरू होता है
 
 :::tip
-विस्तृत deployment निर्देशों के लिए [Web App Deployment](../deployment/web-apps) guide देखें।
+विस्तृत deployment निर्देशों के लिए [Web App Deployment](../deployment/web-apps.md) guide देखें।
 :::

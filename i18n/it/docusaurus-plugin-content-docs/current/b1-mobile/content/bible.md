@@ -1,5 +1,7 @@
 ---
-title: "Bibbia"
+title: "Leggere la Bibbia in B1 Mobile"
+sidebar_label: "Bibbia"
+description: "Usa il lettore biblico integrato in B1 Mobile per aprire le Scritture dal menu, navigare tra libri, capitoli e versetti e trovare l'opzione Bibbia della chiesa."
 ---
 
 # Bibbia
@@ -13,7 +15,7 @@ B1 Mobile include un lettore biblico integrato per leggere le Scritture direttam
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 - La tua chiesa deve avere la funzionalità Bibbia abilitata
 
 </div>
@@ -37,7 +39,7 @@ Il lettore integrato fornisce controlli per muoversi attraverso le Scritture. Pu
 Il lettore riempie lo schermo, offrendoti ampio spazio per leggere comodamente sul tuo dispositivo.
 
 :::tip
-Rendi la schermata Bibbia parte della tua routine quotidiana -- è un modo rapido per leggere le Scritture ovunque tu sia. Abbinala al [Versetto del Giorno](./verse-of-the-day) per un'ispirazione quotidiana.
+Rendi la schermata Bibbia parte della tua routine quotidiana -- è un modo rapido per leggere le Scritture ovunque tu sia. Abbinala al [Versetto del Giorno](./verse-of-the-day.md) per un'ispirazione quotidiana.
 :::
 
 ## Disponibilità
@@ -46,6 +48,6 @@ La schermata Bibbia è disponibile quando la tua chiesa ha abilitato questa funz
 
 ## Articoli Correlati
 
-- [Versetto del Giorno](./verse-of-the-day) -- Vedi un versetto biblico quotidiano
-- [Sermoni](./sermons) -- Guarda i sermoni che completano la tua lettura biblica
-- [Lezioni](./lessons) -- Accedi a curriculum e materiali di studio strutturati
+- [Versetto del Giorno](./verse-of-the-day.md) -- Vedi un versetto biblico quotidiano
+- [Sermoni](./sermons.md) -- Guarda i sermoni che completano la tua lettura biblica
+- [Lezioni](./lessons.md) -- Accedi a curriculum e materiali di studio strutturati

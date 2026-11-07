@@ -1,5 +1,6 @@
 ---
 title: "Gennemsyn af grupper"
+description: "Gennemse kirkens offentlige grupper på B1.church efter kategori, og find en god passer ved at se mødetider, lokation og beskrivelse på hvert kort."
 ---
 
 # Gennemsyn af grupper

@@ -1,5 +1,6 @@
 ---
 title: "Helpers"
+description: "Dokumentation af @churchapps/helpers-pakken til udviklere: hvad den indeholder, hvilke apps der bruger den, lokal build-opsætning i Packages-workspacet og changesets-udgivelsesflowet."
 ---
 
 # Helpers
@@ -13,7 +14,7 @@ title: "Helpers"
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer **Node.js** og **Git** -- se [Forudsætninger](../setup/prerequisites)
+- Installer **Node.js** og **Git** -- se [Forudsætninger](../setup/prerequisites.md)
 - Gør dig bekendt med [npm link workflow](./index.md) til lokal udvikling
 
 </div>
@@ -67,6 +68,6 @@ Da denne pakke bruges af alle ChurchApps-projekter, har ændringer her en bred p
 
 ## Relaterede artikler
 
-- **[ApiHelper](./api-helper)** -- Serversidesværktøjer, der afhænger af denne pakke
-- **[AppHelper](./app-helper)** -- React-komponenter, der afhænger af denne pakke
+- **[ApiHelper](./api-helper.md)** -- Serversidesværktøjer, der afhænger af denne pakke
+- **[AppHelper](./app-helper.md)** -- React-komponenter, der afhænger af denne pakke
 - **[Oversigt over delte biblioteker](./index.md)** -- `npm link` workflow og pakke oversigt

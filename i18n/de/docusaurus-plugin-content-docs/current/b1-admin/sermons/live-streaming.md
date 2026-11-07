@@ -1,5 +1,7 @@
 ---
-title: "Livestreaming"
+title: "Live-Stream-Zeiten und Einrichtung in B1 Admin"
+sidebar_label: "Livestreaming"
+description: "Wöchentliche oder einmalige Live-Streams planen, Chat- und Videovorlauf festlegen, YouTube-Kanal verbinden und Einbettungen in B1 Admin prüfen."
 ---
 
 # Livestreaming
@@ -15,7 +17,7 @@ Die Seite Livestream-Zeiten ermöglicht es Ihnen, den Streaming-Plan Ihrer Kirch
 
 - Sie benötigen die Berechtigung **contentApi.streamingServices.edit**. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md), falls Sie keinen Zugriff haben.
 - Halten Sie Ihre YouTube-Kanal-ID bereit, wenn Sie automatisches Livestreaming nutzen möchten
-- Fügen Sie mindestens eine [Predigt](managing-sermons) oder eine dauerhafte Live-URL als Streamquelle hinzu
+- Fügen Sie mindestens eine [Predigt](./managing-sermons.md) oder eine dauerhafte Live-URL als Streamquelle hinzu
 
 </div>
 
@@ -76,13 +78,13 @@ Ihre YouTube-Kanal-ID finden Sie in den erweiterten Einstellungen Ihres YouTube-
 
 ## Farben und Logo anpassen
 
-Ihre Livestream-Seite verwendet die [Erscheinungsbild](../website/appearance)-Einstellungen Ihrer Website:
+Ihre Livestream-Seite verwendet die [Erscheinungsbild](../website/appearance.md)-Einstellungen Ihrer Website:
 
 - Die **helle Akzentfarbe** mit dunklem Text wird für die Kopfzeile verwendet.
 - Die **dunkle Akzentfarbe** mit hellem Text wird für die Seitenleiste verwendet.
 - Ihr **Logo für helle Hintergründe** erscheint auf der Streaming-Seite. Verwenden Sie ein Bild mit transparentem Hintergrund und einem Seitenverhältnis von 4:1.
 
-Um diese zu ändern, gehen Sie zu **Website** und dann zu **Erscheinungsbild** und aktualisieren Sie Ihre Einstellungen für [Farbpalette](../website/appearance#color-palette) und [Logo](../website/appearance#logo-and-branding).
+Um diese zu ändern, gehen Sie zu **Website** und dann zu **Erscheinungsbild** und aktualisieren Sie Ihre Einstellungen für [Farbpalette](../website/appearance.md#color-palette) und [Logo](../website/appearance.md#logo-and-branding).
 
 ## Streaming-Hosts hinzufügen
 
@@ -129,5 +131,5 @@ Die automatische Kanal-Einbettung von YouTube kann blockiert sein, wenn in Ihrem
 
 ## Nächste Schritte
 
-- [Predigten verwalten](managing-sermons) – Predigten zu Ihrer Bibliothek hinzufügen
-- [Playlists](playlists) – Predigten zu Reihen ordnen
+- [Predigten verwalten](./managing-sermons.md) – Predigten zu Ihrer Bibliothek hinzufügen
+- [Playlists](./playlists.md) – Predigten zu Reihen ordnen

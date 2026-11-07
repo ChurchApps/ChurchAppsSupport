@@ -1,5 +1,6 @@
 ---
 title: "Mga Awit"
+description: "Pamahalaan ang worship song library sa B1 Admin: maghanap at magdagdag ng kanta, i-edit ang detalye, maglakip ng ChordPro lyrics, at mag-upload ng rehearsal audio."
 ---
 
 # Mga Awit

@@ -1,5 +1,6 @@
 ---
 title: "Datoteke"
+description: "V B1 Admin nalagajte, brskajte in upravljajte slike ter dokumente za spletno stran cerkve, tudi z zunanjo shrambo za več prostora."
 ---
 
 # Datoteke
@@ -13,7 +14,7 @@ Stran Datoteke je osrednje skladišče za vse medijske datoteke in dokumente, ki
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Dokončajte [začetno nastavitev](initial-setup) za vaše spletno mesto
+- Dokončajte [začetno nastavitev](./initial-setup.md) za vaše spletno mesto
 - Pred nalaganjem optimizirajte slike za hitrejše nalaganje strani
 - Pripravite datoteke v običajnih spletnih formatih (PNG, JPG, PDF itd.)
 
@@ -42,7 +43,7 @@ Tabela datotek prikazuje vsako naloženo datoteko z njenim **Name** in **Size**.
 3. Datoteke, ki jih naložite tukaj, so na voljo za uporabo na vseh straneh vašega spletnega mesta in v vseh blokih vsebine.
 
 :::info
-Pri gradnji strani v [upravljanju strani](managing-pages) lahko sklicujete na katerokoli datoteko, naloženo tukaj, z njenim URL-jem. S tem ostane ves vaš medijski material organiziran na enem središčnem mestu.
+Pri gradnji strani v [upravljanju strani](./managing-pages.md) lahko sklicujete na katerokoli datoteko, naloženo tukaj, z njenim URL-jem. S tem ostane ves vaš medijski material organiziran na enem središčnem mestu.
 :::
 
 ## Brisanje datotek
@@ -57,5 +58,5 @@ Izbrisanih datotek ni mogoče obnoviti. Pred odstranitvijo dvakrat preverite, al
 
 ## Naslednji koraki
 
-- [Upravljanje strani](managing-pages) -- Dodajte naložene datoteke na strani spletnega mesta
-- [Videz](appearance) -- Prilagodite vizualno temo vašega spletnega mesta
+- [Upravljanje strani](./managing-pages.md) -- Dodajte naložene datoteke na strani spletnega mesta
+- [Videz](./appearance.md) -- Prilagodite vizualno temo vašega spletnega mesta

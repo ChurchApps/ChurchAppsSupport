@@ -1,5 +1,6 @@
 ---
 title: "Berichten"
+description: "Start, lees, bewerk en verwijder privégesprekken één-op-één met kerkleden in B1 Mobile, en vind mensen via de ledengids."
 ---
 
 # Berichten
@@ -13,7 +14,7 @@ B1 Mobile omvat privéberichten zodat je een-op-een gesprekken met andere kerkle
 <div class="prereqs">
 <h4>Voorbepaling</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld je aan](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld je aan](../getting-started/logging-in.md) op je account
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile omvat privéberichten zodat je een-op-een gesprekken met andere kerkle
 ## Een Nieuw Gesprek Starten
 
 1. Tik vanuit het berichten scherm op de optie om een nieuw gesprek te starten.
-2. Gebruik het zoekveld om het lid op te zoeken die je wilt bereiken. Je kunt ook leden vinden via het [Lidmapenboek](./member-directory).
+2. Gebruik het zoekveld om het lid op te zoeken die je wilt bereiken. Je kunt ook leden vinden via het [Lidmapenboek](./member-directory.md).
 3. Selecteer het lid uit de zoekresultaten.
 4. Typ je bericht en tik op **Verzenden**.
 
@@ -48,11 +49,11 @@ Gebruik berichten om met medevrijwilligers samen te werken, vervolgmedewerking m
 :::
 
 :::info
-Zet [push-meldingen](./notifications) aan zodat je wordt gewaarschuwd wanneer iemand je een nieuw bericht stuurt, zelfs wanneer de app niet open is.
+Zet [push-meldingen](./notifications.md) aan zodat je wordt gewaarschuwd wanneer iemand je een nieuw bericht stuurt, zelfs wanneer de app niet open is.
 :::
 
 ## Gerelateerde Artikelen
 
-- [Lidmapenboek](./member-directory) -- Vind leden om te bereiken
-- [Meldingen](./notifications) -- Ontvang meldingen over nieuwe berichten
-- [Groepen](../groups/) -- Deelneem aan groepsgesprekken
+- [Lidmapenboek](./member-directory.md) -- Vind leden om te bereiken
+- [Meldingen](./notifications.md) -- Ontvang meldingen over nieuwe berichten
+- [Groepen](../groups/index.md) -- Deelneem aan groepsgesprekken

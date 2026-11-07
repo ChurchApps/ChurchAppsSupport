@@ -1,5 +1,6 @@
 ---
 title: "Aanmelden voltooien"
+description: "Rond het inchecken bij de kiosk af in B1 Checkin: capaciteitslimieten, labels printen, ophaal-beveiligingscodes en wat de app daarna doet."
 ---
 
 # Aanmelden voltooien
@@ -13,9 +14,9 @@ Zodra u uw huishouden hebt beoordeeld en de nodige groepstoewijzingen hebt aange
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Bekijk uw huishouden](./household-review) op het scherm voor huishoudhoofddeling
-- [Wijs groepen toe](./group-assignment) aan gezinsleden die zich moeten aanmelden voor een specifieke klas of programma
-- Voeg optioneel [gasten toe](./adding-guests) die uw familie bezoeken
+- [Bekijk uw huishouden](./household-review.md) op het scherm voor huishoudhoofddeling
+- [Wijs groepen toe](./group-assignment.md) aan gezinsleden die zich moeten aanmelden voor een specifieke klas of programma
+- Voeg optioneel [gasten toe](./adding-guests.md) die uw familie bezoeken
 
 </div>
 
@@ -40,7 +41,7 @@ Dezelfde veiligheidscode verschijnt op zowel het naamsetiket van het kind als de
 De veiligheidscode wordt vers gegenereerd voor elke aanmelding en gebruikt alleen medeklinkers en cijfers (klinkers worden uitgesloten om het vormen van ongepaste woorden te voorkomen).
 
 :::warning
-Als etiketten niet afdrukken, opent u de instellingen van Admin door zeven keer op het **kerklogo** te tikken en vervolgens op **Printer wijzigen** te tikken om de printerverbinding te controleren. Zie [Printerinstellingen](../getting-started/printer-setup) voor stappen voor probleemoplossing.
+Als etiketten niet afdrukken, opent u de instellingen van Admin door zeven keer op het **kerklogo** te tikken en vervolgens op **Printer wijzigen** te tikken om de printerverbinding te controleren. Zie [Printerinstellingen](../getting-started/printer-setup.md) voor stappen voor probleemoplossing.
 :::
 
 ## Wat gebeurt er na aanmelding

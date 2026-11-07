@@ -1,5 +1,7 @@
 ---
-title: "시작하기"
+title: "Lessons.church 시작하기"
+sidebar_label: "시작하기"
+description: "무료 Lessons.church 계정을 만들고, 교회를 연결하고, 교실을 설정하고, 첫 레슨을 예약하세요. 구독이나 체험판은 필요 없습니다."
 ---
 
 # 시작하기

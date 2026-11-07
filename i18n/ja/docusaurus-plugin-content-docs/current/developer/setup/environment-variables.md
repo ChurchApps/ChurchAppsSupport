@@ -1,5 +1,6 @@
 ---
 title: "環境変数"
+description: "ChurchApps プロジェクト用の .env ファイルを設定します。共有デモ API とローカル API のどちらを使うかを選び、B1 Admin、B1.church、B1 Mobile、Lessons.church などの変数を入力する方法を説明します。"
 ---
 
 # 環境変数
@@ -13,9 +14,9 @@ title: "環境変数"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- プロジェクトの[前提条件](./prerequisites)をインストールする
+- プロジェクトの[前提条件](./prerequisites.md)をインストールする
 - 作業したいプロジェクトのリポジトリをクローンする
-- [プロジェクト概要](./project-overview)を確認して、プロジェクトに必要な API モジュールを把握する
+- [プロジェクト概要](./project-overview.md)を確認して、プロジェクトに必要な API モジュールを把握する
 
 </div>
 
@@ -64,7 +65,7 @@ https://api.demo.churchapps.org/doing
 
 ### オプション 2：ローカル API
 
-Api プロジェクトを自分のマシンで実行します。MySQL 8.0 以降が必要で、各モジュール用のデータベースを作成しておく必要があります。詳しくは [APIのローカルセットアップ](../api/local-setup) のガイドを参照してください。
+Api プロジェクトを自分のマシンで実行します。MySQL 8.0 以降が必要で、各モジュール用のデータベースを作成しておく必要があります。詳しくは [APIのローカルセットアップ](../api/local-setup.md) のガイドを参照してください。
 
 ```bash
 # ベース URL のパターン

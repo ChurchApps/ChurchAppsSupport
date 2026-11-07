@@ -1,5 +1,6 @@
 ---
 title: "Prezentare generală a portalului"
+description: "Parcurgeți portalul Lessons.church: clase, lecții programate, linkuri de feed, furnizori externi și instrumentele de administrare."
 ---
 
 # Prezentare generală a portalului

@@ -1,5 +1,6 @@
 ---
 title: "Kampagnen & Zusagen"
+description: "Erstellen Sie in B1 Admin Spendenkampagnen, erfassen Sie Zusagen der Mitglieder und verfolgen Sie den Fortschritt zu einem Ziel im Abgleich mit den tatsächlichen Spenden für jeden Fonds."
 ---
 
 # Kampagnen & Zusagen
@@ -13,7 +14,7 @@ Mit Kampagnen führen Sie eine Spendenaktion auf ein bestimmtes Ziel hin durch �
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie Ihre [Spendenfonds](funds) ein — jede Kampagne ist einem Fonds zugeordnet
+- Richten Sie Ihre [Spendenfonds](./funds.md) ein — jede Kampagne ist einem Fonds zugeordnet
 - Sie benötigen Zugriff auf den Bereich Spenden in B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Klicken Sie in einer Kampagnenzeile auf **Bearbeiten** (oder auf **Kampagne bear
 
 ## Verwandte Artikel
 
-- [Spenden erfassen](recording-donations) — die tatsächlichen Gaben erfassen, die Zusagen einlösen
-- [Fonds](funds) — den Fonds einrichten, der einer Kampagne zugeordnet wird
-- [Spendenberichte](donation-reports) — Berichte über Spenden nach Fonds
+- [Spenden erfassen](./recording-donations.md) — die tatsächlichen Gaben erfassen, die Zusagen einlösen
+- [Fonds](./funds.md) — den Fonds einrichten, der einer Kampagne zugeordnet wird
+- [Spendenberichte](./donation-reports.md) — Berichte über Spenden nach Fonds

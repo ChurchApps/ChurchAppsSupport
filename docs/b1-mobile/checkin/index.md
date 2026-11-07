@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Church Check-In Using the B1 Mobile App"
+sidebar_label: "Check-In"
+description: "Check yourself and your household into church services from your phone in B1 Mobile, choosing services and groups before you arrive."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ The check-in process is a quick, multi-step flow that guides you through selecti
 
 ## Getting Started
 
-To access check-in, open the **Check-In** section in B1 Mobile. You must be logged in to use this feature. If you are not signed in, you will be prompted to [log in](../getting-started/logging-in) first.
+To access check-in, open the **Check-In** section in B1 Mobile. You must be logged in to use this feature. If you are not signed in, you will be prompted to [log in](../getting-started/logging-in.md) first.
 
 :::info
 The check-in feature requires that your church has set up services and attendance groups in their administration settings. If no services appear when you open the check-in screen, your church may not have this feature configured yet. Contact your church administrator for help.
@@ -30,4 +32,4 @@ The check-in feature requires that your church has set up services and attendanc
 
 ## Next Steps
 
-- [Self Check-In](./self-checkin) -- Step-by-step guide to checking in from your phone
+- [Self Check-In](./self-checkin.md) -- Step-by-step guide to checking in from your phone

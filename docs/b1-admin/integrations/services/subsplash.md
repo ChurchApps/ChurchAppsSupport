@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Connect Subsplash donations, new people, and form responses to B1 with Zapier, so gifts and profiles land in B1 Admin automatically."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Turn the Zap on. Future Subsplash donations flow into **B1Admin → Donations** 
 
 ## See Also
 
-- [Donorbox](./donorbox) — same recipe shape, different donation platform
-- [Zapier (overview)](../zapier) — B1 side of every Zapier recipe
+- [Donorbox](./donorbox.md) — same recipe shape, different donation platform
+- [Zapier (overview)](../zapier.md) — B1 side of every Zapier recipe
 - [Subsplash Zapier integration guide](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplash's docs)

@@ -1,5 +1,7 @@
 ---
-title: "Givarhistorik"
+title: "Gåvohistorik och kvitton i B1.church"
+sidebar_label: "Givarhistorik"
+description: "Visa dina tidigare gåvor, filtrera efter år och skriv ut gåvokvitton för skattedeklarationen från sidan Giving i B1.church medlemsportal."
 ---
 
 # Givarhistorik

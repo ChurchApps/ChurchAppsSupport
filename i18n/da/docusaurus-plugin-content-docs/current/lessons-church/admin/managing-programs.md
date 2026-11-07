@@ -1,5 +1,6 @@
 ---
 title: "Administrering af programmer"
+description: "Opret og rediger curriculum-programmer i Lessons.church, opsæt slugs og miniaturebilleder, grupper studier i kategorier og knyt ressourcer på programniveau til."
 ---
 
 # Administrering af programmer

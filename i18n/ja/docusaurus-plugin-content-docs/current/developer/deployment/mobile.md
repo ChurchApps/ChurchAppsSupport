@@ -1,5 +1,6 @@
 ---
 title: "モバイルのデプロイ"
+description: "Expo EAS で B1 Mobile アプリの Android 版と iOS 版をビルドし、ストアに提出して、OTA アップデートを配信する手順を説明します。"
 ---
 
 # モバイルのデプロイ
@@ -13,7 +14,7 @@ ChurchApps のモバイルアプリは **Expo EAS Build** を使ってビルド�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- ローカルでモバイルアプリをセットアップする -- [B1 Mobile](../mobile/b1-mobile) を参照
+- ローカルでモバイルアプリをセットアップする -- [B1 Mobile](../mobile/b1-mobile.md) を参照
 - [EAS CLI](https://docs.expo.dev/eas/) をインストールして設定する
 - Google Play Console（Android）および／または Apple App Store Connect（iOS）にアクセスできること
 
@@ -77,6 +78,6 @@ OTA アップデートはストアへのビルドより大幅に速く、変更�
 
 ## 関連記事
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- ローカルでのセットアップと開発ガイド
-- **[API のデプロイ](./apis)** -- バックエンド API のデプロイ
-- **[Web アプリのデプロイ](./web-apps)** -- フロントエンドの Web アプリケーションのデプロイ
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- ローカルでのセットアップと開発ガイド
+- **[API のデプロイ](./apis.md)** -- バックエンド API のデプロイ
+- **[Web アプリのデプロイ](./web-apps.md)** -- フロントエンドの Web アプリケーションのデプロイ

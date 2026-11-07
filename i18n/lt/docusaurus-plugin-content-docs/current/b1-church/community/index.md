@@ -1,5 +1,7 @@
 ---
-title: "Bendruomenė"
+title: "Bendruomenės narių katalogas B1.church"
+sidebar_label: "Bendruomenė"
+description: "Ieškokite narių kataloge B1.church pagal vardą ar grupę, peržiūrėkite profilius ir sužinokite, kur dabar rasti buvusio skirtuko Timeline turinį."
 ---
 
 # Bendruomenė
@@ -26,5 +28,5 @@ Kataloge matomi nariai ir jų informacija priklauso nuo jūsų bažnyčios priva
 :::
 
 :::tip
-Naudokite bendruomenės funkcijas kartu su [Grupėmis](../groups/), kad visą savaitę išliktumėte susiję su savo bažnyčia.
+Naudokite bendruomenės funkcijas kartu su [Grupėmis](../groups/index.md), kad visą savaitę išliktumėte susiję su savo bažnyčia.
 :::

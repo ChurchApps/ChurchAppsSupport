@@ -1,5 +1,7 @@
 ---
-title: "Perfil"
+title: "Perfil e Cartões Atribuídos no B1 Mobile"
+sidebar_label: "Perfil"
+description: "Gerencie seu nome, contatos, família e visibilidade de privacidade no perfil do B1 Mobile, além de cartões de fluxo de trabalho e tarefas atribuídas a você."
 ---
 
 # Perfil
@@ -20,7 +22,7 @@ A aba **Perfil** permite visualizar e editar suas informações pessoais, inclui
 
 ### Família
 
-A aba **Família** mostra os membros da sua família e seus papéis dentro do seu núcleo familiar. Essas informações são usadas em recursos como o [check-in](../checkin/), no qual você pode fazer o check-in de toda a sua família de uma só vez.
+A aba **Família** mostra os membros da sua família e seus papéis dentro do seu núcleo familiar. Essas informações são usadas em recursos como o [check-in](../checkin/index.md), no qual você pode fazer o check-in de toda a sua família de uma só vez.
 
 ### Visibilidade
 
@@ -55,6 +57,6 @@ Toque em uma tarefa simples para ver quem a criou, a quem ela se refere e suas n
 
 ## Próximos passos
 
-- [Editando seu perfil](./editing-profile) -- Atualize seu nome, dados de contato e foto
-- [Família](./household) -- Visualize e gerencie os membros da sua família
-- [Configurações de privacidade](./privacy-settings) -- Controle o que outras pessoas podem ver sobre você
+- [Editando seu perfil](./editing-profile.md) -- Atualize seu nome, dados de contato e foto
+- [Família](./household.md) -- Visualize e gerencie os membros da sua família
+- [Configurações de privacidade](./privacy-settings.md) -- Controle o que outras pessoas podem ver sobre você

@@ -29,7 +29,7 @@ La fila de proveedor de una iglesia (`content.storageProviders`, administrada en
 
 Nota de alcance: la selección de proveedor cubre el flujo de **archivos/recursos** de contenido (donde vive el medio masivo). Las cargas de galería/logotipo/foto permanecen en el proveedor predeterminado — enumera claves del almacenamiento y construye URLs del lado del cliente, así el enraizamiento por iglesia no se aplica aún.
 
-La misma costura también potencia [Llevar Su Propio Almacenamiento](./byos-storage): las iglesias pueden vincular Google Drive, Dropbox, OneDrive o su propio cubo compatible con S3 en lugar de un plan de MinistryStuff.
+La misma costura también potencia [Llevar Su Propio Almacenamiento](./byos-storage.md): las iglesias pueden vincular Google Drive, Dropbox, OneDrive o su propio cubo compatible con S3 en lugar de un plan de MinistryStuff.
 
 ## Facturación
 

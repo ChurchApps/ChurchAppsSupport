@@ -1,5 +1,6 @@
 ---
 title: "Webアプリ"
+description: "ChurchApps の 3 つの Web アプリ（B1 Admin、B1.church、Lessons.church）の概要。共通の React と MUI のスタック、apphelper パッケージ、ビルドツールを説明します。"
 ---
 
 # Webアプリ
@@ -41,7 +42,7 @@ ChurchAppsには、それぞれ異なる利用者と目的を持つ3つのWebア
 | `@churchapps/apphelper-website` | Webサイト/CMSコンポーネント |
 
 :::tip
-これらの共有パッケージをローカルで開発する方法の詳細は、[AppHelper](../shared-libraries/app-helper)のドキュメントをご覧ください。
+これらの共有パッケージをローカルで開発する方法の詳細は、[AppHelper](../shared-libraries/app-helper.md)のドキュメントをご覧ください。
 :::
 
 ## postinstallスクリプト

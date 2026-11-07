@@ -1,5 +1,6 @@
 ---
 title: "Mga Kuwarto, Resources at Pag-iiskedyul"
+description: "I-set up ang kuwarto, kagamitan, blockout, at event template sa B1 Admin para makahiling ng booking ang mga grupo at maiwasan ang double-booking."
 ---
 
 # Mga Kuwarto, Resources at Pag-iiskedyul
@@ -14,7 +15,7 @@ Pinapahintulutan ka ng Rooms at Resources na subaybayan ang mga espasyo at kagam
 <h4>Bago Magsimula</h4>
 
 - Kailangan mo ng administratibong access sa seksyong Calendars sa B1 Admin
-- I-set up ang mga [grupo](../groups/creating-groups) na ang mga miyembro ay magsusumite ng mga kahilingan sa booking
+- I-set up ang mga [grupo](../groups/creating-groups.md) na ang mga miyembro ay magsusumite ng mga kahilingan sa booking
 
 </div>
 
@@ -76,7 +77,7 @@ Kapag gumagawa ng bagong event, maaaring pumili ang staff ng umiiral na template
 
 ## Mga Kaugnay na Artikulo
 
-- [Availability Calendar](availability) — tingnan ang lahat ng booking sa isang sulyap at direktang mag-book ng mga kuwarto o resource
-- [Calendar Approvals](approvals) — aprubahan o tanggihan ang mga kahilingan sa booking ng kuwarto at resource
-- [Creating Calendars](creating-calendars) — mag-set up ng mga kalendaryo ng event
-- [Creating Groups](../groups/creating-groups) — mag-set up ng mga grupong maaaring mag-book ng mga kuwarto at resource
+- [Availability Calendar](./availability.md) — tingnan ang lahat ng booking sa isang sulyap at direktang mag-book ng mga kuwarto o resource
+- [Calendar Approvals](./approvals.md) — aprubahan o tanggihan ang mga kahilingan sa booking ng kuwarto at resource
+- [Creating Calendars](./creating-calendars.md) — mag-set up ng mga kalendaryo ng event
+- [Creating Groups](../groups/creating-groups.md) — mag-set up ng mga grupong maaaring mag-book ng mga kuwarto at resource

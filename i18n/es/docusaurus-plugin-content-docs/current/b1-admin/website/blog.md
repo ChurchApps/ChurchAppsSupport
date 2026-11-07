@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Cómo escribir entradas de blog para tu sitio web en B1 Admin"
+sidebar_label: "Blog"
+description: "Crea, programa y publica entradas de blog en el sitio web de tu iglesia en B1 Admin, incluyendo extractos, categorías, etiquetas, fotos de encabezado e incrustaciones de comentarios."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ La página de Blog le permite publicar noticias, novedades y devocionales en el 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Complete la [configuración inicial](initial-setup) de su sitio web
-- Agregue un enlace de navegación a `/blog` desde [Administrar páginas](managing-pages) si quiere que los visitantes encuentren su blog desde el menú
+- Complete la [configuración inicial](./initial-setup.md) de su sitio web
+- Agregue un enlace de navegación a `/blog` desde [Administrar páginas](./managing-pages.md) si quiere que los visitantes encuentren su blog desde el menú
 
 </div>
 
@@ -31,7 +33,7 @@ La página de Blog le permite publicar noticias, novedades y devocionales en el 
 3. Agregue un **Extracto**: un resumen breve que se muestra en el listado de entradas, en las meta descripciones y en la fuente RSS. Si lo deja en blanco, se genera uno automáticamente a partir del inicio del contenido de la entrada.
 4. Escriba el cuerpo de la entrada en el editor de **Contenido** usando Markdown. Haga clic en **Vista previa** para ver cómo se verá la entrada con formato.
 5. Elija una **Categoría** (seleccione una existente o escriba una nueva) y, opcionalmente, **Etiquetas** separadas por comas.
-6. Haga clic en **Seleccionar imagen** para elegir una foto de su galería de [Archivos](files), o suba una nueva. Las fotos subidas se abren en una herramienta de recorte integrada fijada a una proporción de 16:9, para que pueda encuadrar cualquier foto y que se ajuste al encabezado de la entrada y a las tarjetas del listado.
+6. Haga clic en **Seleccionar imagen** para elegir una foto de su galería de [Archivos](./files.md), o suba una nueva. Las fotos subidas se abren en una herramienta de recorte integrada fijada a una proporción de 16:9, para que pueda encuadrar cualquier foto y que se ajuste al encabezado de la entrada y a las tarjetas del listado.
 7. Establezca el **Autor**: por defecto es usted, pero puede buscar y seleccionar a cualquier persona de su base de datos.
 8. Active **Publicada** y establezca una **Fecha de publicación** cuando esté listo para hacer pública la entrada. Déjelo desactivado para guardar la entrada como borrador.
 
@@ -58,7 +60,7 @@ Cada entrada de la lista muestra uno de tres estados:
 Las entradas publicadas aparecen en `{sudominio}/blog`, 10 por página, con enlaces de **Anteriores**/**Siguientes** para recorrer su archivo, junto con un filtro por categoría y el autor y la foto de cada entrada. Las etiquetas también se muestran como fichas en las que se puede hacer clic, para que los visitantes filtren la lista por etiqueta de la misma forma. Cada entrada individual vive en `{sudominio}/blog/{slug}` e incluye entradas relacionadas de la misma categoría. La página del blog también publica una fuente RSS, que los lectores de feeds y las herramientas de automatización como Zapier pueden descubrir automáticamente.
 
 :::info
-Las entradas del blog son un tipo de contenido distinto de las páginas regulares del sitio web: no se crean en el [editor de páginas](page-editor) y no aparecen en la lista de Páginas. Esto mantiene la redacción del blog rápida y enfocada en escribir.
+Las entradas del blog son un tipo de contenido distinto de las páginas regulares del sitio web: no se crean en el [editor de páginas](./page-editor.md) y no aparecen en la lista de Páginas. Esto mantiene la redacción del blog rápida y enfocada en escribir.
 :::
 
 ## Agregar comentarios debajo de las entradas
@@ -77,6 +79,6 @@ Borre el cuadro y haga clic en **Guardar** para quitar el código de todas las e
 
 ## Próximos pasos
 
-- [Administrar páginas](managing-pages): agregue un enlace de navegación a su blog
-- [Archivos](files): suba fotos para usarlas en sus entradas
+- [Administrar páginas](./managing-pages.md): agregue un enlace de navegación a su blog
+- [Archivos](./files.md): suba fotos para usarlas en sus entradas
 - [Integración con Zapier](../integrations/zapier.md): active automatizaciones cuando se publiquen nuevas entradas

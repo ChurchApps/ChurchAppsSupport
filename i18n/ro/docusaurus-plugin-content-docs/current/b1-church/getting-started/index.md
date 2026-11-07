@@ -1,5 +1,7 @@
 ---
-title: "Ce să faci mai întâi"
+title: "Primii pași cu portalul de membri B1.church"
+sidebar_label: "Ce să faci mai întâi"
+description: "Găsește site-ul B1.church al bisericii tale, creează-ți contul de membru și vezi ce oferă portalul, de la grupuri și donații la check-in și planuri."
 ---
 
 # Primii pași cu B1.church

@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tinhlelo"
+description: "Dala futsi uhlele tinhlelo temakharikhulamu kuLessons.church, setfa ama-slug netimfanekiso letincane, uhlele tifundvo ebudzalweni, uphinde unamatanise tincenye tenhlelo."
 ---
 
 # Kuphatsa Tinhlelo

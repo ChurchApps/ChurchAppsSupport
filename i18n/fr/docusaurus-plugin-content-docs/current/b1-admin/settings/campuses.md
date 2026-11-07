@@ -1,5 +1,6 @@
 ---
 title: "Campus"
+description: "Configurez les sites dans B1 Admin pour rattacher chaque personne et groupe à son lieu, puis filtrez personnes, présence et démographie par site."
 ---
 
 # Campus

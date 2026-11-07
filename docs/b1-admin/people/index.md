@@ -1,5 +1,6 @@
 ---
 title: "People"
+description: "Search, add, and edit church members in the B1 Admin People section, including household tracking, bulk updates, and directory printing and export."
 ---
 
 # People

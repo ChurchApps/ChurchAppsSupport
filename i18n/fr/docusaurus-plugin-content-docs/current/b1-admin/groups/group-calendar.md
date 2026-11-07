@@ -1,5 +1,6 @@
 ---
 title: "Calendrier du groupe"
+description: "Planifiez les réunions et événements récurrents sur le calendrier d'un groupe dans B1 Admin et B1.church, avec planification en lot, réponses (RSVP) et abonnements aux calendriers."
 ---
 
 # Calendrier du groupe

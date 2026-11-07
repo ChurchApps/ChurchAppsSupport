@@ -1,5 +1,6 @@
 ---
 title: "चेक-इन"
+description: "B1Checkin, B1App और B1 Admin में चेक-इन कैसे काम करता है: उपस्थिति डेटा मॉडल, कक्षों के रूप में समूह, क्षमता सीमाएँ और पिकअप सुरक्षा नियम।"
 ---
 
 # चेक-इन
@@ -216,7 +217,7 @@ B1App का `src/components/checkin/GuestRegister.tsx` गुमनाम `GET 
 
 ## संबंधित पृष्ठ
 
-- [Attendance Endpoints](../api/endpoints/attendance) -- परिसर, सेवाओं, सत्रों, विज़िटों और विज़िट सत्रों के लिए पूर्ण REST सतह
-- [Membership Endpoints](../api/endpoints/membership) -- लोग, परिवार और समूह
-- [Webhooks](../api/webhooks) -- `session.created`, `attendance.recorded`, और `attendance.checkout` इवेंट
-- [Module Structure](../api/module-structure) -- attendance मॉड्यूल सर्वर-साइड पर कैसे व्यवस्थित है
+- [Attendance Endpoints](../api/endpoints/attendance.md) -- परिसर, सेवाओं, सत्रों, विज़िटों और विज़िट सत्रों के लिए पूर्ण REST सतह
+- [Membership Endpoints](../api/endpoints/membership.md) -- लोग, परिवार और समूह
+- [Webhooks](../api/webhooks.md) -- `session.created`, `attendance.recorded`, और `attendance.checkout` इवेंट
+- [Module Structure](../api/module-structure.md) -- attendance मॉड्यूल सर्वर-साइड पर कैसे व्यवस्थित है

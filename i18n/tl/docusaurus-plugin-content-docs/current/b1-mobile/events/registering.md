@@ -1,5 +1,7 @@
 ---
-title: "Pagrehistro para sa Mga Kaganapan"
+title: "Pagpapatala sa mga Event sa B1 Mobile"
+sidebar_label: "Pagrehistro para sa Mga Kaganapan"
+description: "Magpatala ng iyong sarili at pamilya sa event ng simbahan mula sa B1 Mobile app, tingnan ang natitirang kapasidad, at kumpirmahin sa tatlong hakbang."
 ---
 
 # Pagrehistro para sa Mga Kaganapan
@@ -13,7 +15,7 @@ Magrehistro para sa mga kaganapan ng simbahan direkta mula sa B1 Mobile gamit an
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Ang kaganapan ay dapat may enabled na pagrehistro at ang panahon ng pagrehistro ay dapat bukas
 
 </div>
@@ -50,4 +52,4 @@ Kung kailangan mong kanselahin, makipag-ugnayan sa iyong administrator ng simbah
 ## Mga Kaugnay na Artikulo
 
 - [Pangkalahatang Kaganapan](./index.md) -- Tuklasin ang mga kaganapan na may pagrehistro sa mobile
-- [Pagtingin sa Mga Plano](../serving/viewing-plans) -- Makita ang iyong iskedyul ng pagseserbisyo
+- [Pagtingin sa Mga Plano](../serving/viewing-plans.md) -- Makita ang iyong iskedyul ng pagseserbisyo

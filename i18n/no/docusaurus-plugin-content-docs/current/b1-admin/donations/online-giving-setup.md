@@ -1,5 +1,6 @@
 ---
 title: "Oppsett for nettbasert giving"
+description: "Koble Stripe, PayPal, Kingdom Funding eller Paystack til B1 Admin, så medlemmer kan gi på nett via B1.church-nettstedet og gavene synkroniseres."
 ---
 
 # Oppsett for nettbasert giving

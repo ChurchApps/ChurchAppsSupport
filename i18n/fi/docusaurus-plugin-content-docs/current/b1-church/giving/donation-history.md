@@ -1,5 +1,7 @@
 ---
-title: "Lahjoitushistoria"
+title: "Lahjoitushistoria ja todistukset B1.churchissa"
+sidebar_label: "Lahjoitushistoria"
+description: "Katso aiemmat lahjoituksesi, suodata vuoden mukaan ja tulosta lahjoitustodistukset verotusta varten B1.church-jäsenportaalin Lahjoitukset-sivulta."
 ---
 
 # Lahjoitushistoria

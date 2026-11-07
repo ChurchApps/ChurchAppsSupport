@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: B1 ile Kilisenizi Başlatın"
+description: "B1 Admin'de yeni bir kilise kurulumu: hesap oluşturma, ayarları yapılandırma, rol ekleme, üye içe aktarma ve temel özellikleri başlatma adımları."
 ---
 
 # B1 ile Kilisenizi Başlatın

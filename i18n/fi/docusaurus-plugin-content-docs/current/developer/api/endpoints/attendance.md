@@ -1,5 +1,6 @@
 ---
 title: "Attendance-päätepisteet"
+description: "Viiteopas B1 Adminin ja B1 Checkinin läsnäolo-API:lle: kampukset, palvelut, palveluajat, istunnot, käynnit, sisäänkirjautumissäännöt ja vientirajapinnat."
 ---
 
 # Attendance-päätepisteet
@@ -270,6 +271,6 @@ Seuraa yksittäisten henkilöiden osallistumisputkia eli peräkkäisiä viikkoja
 
 ## Liittyvät sivut
 
-- [Membership-päätepisteet](./membership) — Henkilöt, ryhmät, roolit ja seurakunnan hallinta
-- [Todennus ja oikeudet](./authentication) — Kirjautumisprosessi, JWT, oikeusmalli
-- [Moduulirakenne](../module-structure) — Koodin järjestelyn mallit
+- [Membership-päätepisteet](./membership.md) — Henkilöt, ryhmät, roolit ja seurakunnan hallinta
+- [Todennus ja oikeudet](./authentication.md) — Kirjautumisprosessi, JWT, oikeusmalli
+- [Moduulirakenne](../module-structure.md) — Koodin järjestelyn mallit

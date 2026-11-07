@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea programelor"
+description: "Creați și editați programe de curriculum în Lessons.church, setați slug-uri și miniaturi, grupați studiile pe categorii și atașați resurse de program."
 ---
 
 # Gestionarea programelor

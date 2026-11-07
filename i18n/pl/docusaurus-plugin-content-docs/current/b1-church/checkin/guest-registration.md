@@ -1,5 +1,6 @@
 ---
 title: "Registracja gości"
+description: "Zarejestruj siebie i rodzinę jako gości po raz pierwszy przez formularz QR w B1 Checkin, aby wolontariusze mogli Cię zameldować po przyjściu."
 ---
 
 # Registracja gości
@@ -22,7 +23,7 @@ Jeśli odwiedzasz kościół po raz pierwszy, możesz zarejestrować siebie i sw
 
 Rejestracja gości jest przeznaczona dla odwiedzających, którzy nie mają jeszcze konta. Na kiosku zameldowania w kościele dotknij **Zarejestruj się jako gość**, aby wyświetlić kod QR prowadzący do strony rejestracji. Link możesz też otrzymać od wolontariusza lub osoby witającej gości, albo znaleźć go na ulotce lub na stronie internetowej kościoła.
 
-Nie masz pod ręką telefonu? W tym samym oknie kodu QR na kiosku dotknij **Zarejestruj się tutaj**, aby wypełnić formularz bezpośrednio na kiosku. Informacje o tym, jak to działa na kiosku, znajdziesz w sekcji [Rejestracja jako gość](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Nie masz pod ręką telefonu? W tym samym oknie kodu QR na kiosku dotknij **Zarejestruj się tutaj**, aby wypełnić formularz bezpośrednio na kiosku. Informacje o tym, jak to działa na kiosku, znajdziesz w sekcji [Rejestracja jako gość](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Strona otwiera się z tytułem **Rejestracja gości**. Jeśli kościół dodał zdjęcie nagłówka, pojawi się ono na górze strony; w przeciwnym razie zobaczysz mała ikonę.
 
@@ -51,7 +52,7 @@ Twoja rejestracja tworzy wpisy w bazie danych kościoła:
 - Dla każdego członka rodziny tworzone są **karty osób** ze statusem członkostwa „Odwiedzający”.
 - Wszelkie uwagi, które wpisałeś, są zapisywane jako notatka w karcie osoby kontaktowej, aby pracownicy kościoła mogli ją przeczytać.
 - Jeśli kościół wybrał grupę dla nowych gości, Twoja rodzina zostanie do niej dodana. Kościół może też automatycznie zapisać Twoją obecność, jeśli zarejestrujesz się w jednej z zaplanowanych godzin nabożeństw tej grupy.
-- Wolontariusz lub administrator kościoła może następnie zameldować Twoją rodzinę za pomocą kiosku [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Wolontariusz lub administrator kościoła może następnie zameldować Twoją rodzinę za pomocą kiosku [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Jeśli zarejestrujesz się ponownie z tym samym imieniem oraz tym samym adresem e-mail lub numerem telefonu, system kościoła rozpozna Cię i użyje istniejącego profilu zamiast tworzyć duplikat. Pozostałe osoby zostaną dodane jako nowe. Jeśli już się zarejestrowałeś, możesz też po prostu wyszukać swoje imię lub numer telefonu na kiosku.
@@ -63,6 +64,6 @@ Jeśli formularz prosi o adres e-mail, jego podanie pomoże kościołowi skontak
 
 ## Powiązane artykuły
 
-- [Samodzielne zameldowanie](./self-checkin) -- Zamelduj się samodzielnie po rejestracji
-- [Dodawanie gości (kiosk)](../../b1-checkin/check-in/adding-guests) -- Jak wolontariusze dodają gości na kiosku
-- [Zameldowanie](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Jak administratorzy kościoła konfigurują rejestrację gości za pomocą kodu QR
+- [Samodzielne zameldowanie](./self-checkin.md) -- Zamelduj się samodzielnie po rejestracji
+- [Dodawanie gości (kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Jak wolontariusze dodają gości na kiosku
+- [Zameldowanie](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Jak administratorzy kościoła konfigurują rejestrację gości za pomocą kodu QR

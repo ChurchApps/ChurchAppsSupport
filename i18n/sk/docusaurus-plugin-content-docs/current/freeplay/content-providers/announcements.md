@@ -1,5 +1,6 @@
 ---
 title: "Oznámenia"
+description: "Slučka priečinka snímok na FreePlay TV pre oznamy v predsálí alebo pred hodinou: vyberte priečinok poskytovateľa, nechajte ho synchronizovať a po skončení vypnite."
 ---
 
 # Oznámenia
@@ -13,7 +14,7 @@ FreePlay dokáže v slučke prehrávať priečinok so snímkami oznámení na va
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Pripojte sa k poskytovateľovi obsahu](./connecting-providers), ktorý obsahuje vaše snímky oznámení, napríklad Dropbox alebo OneDrive
+- [Pripojte sa k poskytovateľovi obsahu](./connecting-providers.md), ktorý obsahuje vaše snímky oznámení, napríklad Dropbox alebo OneDrive
 - Uložte obrázky alebo videá, ktoré chcete prehrávať v slučke, do jedného priečinka u tohto poskytovateľa
 
 </div>
@@ -37,7 +38,7 @@ Keď sa snímky stiahnu, v hornej časti bočného panela sa objaví položka **
 - Po poslednej snímke sa slučka začne znova od prvej snímky
 - Ak priečinok obsahuje jedno video, opakuje sa na mieste
 
-Slučka sa prehráva zo súborov uložených v zariadení, takže beží aj bez pripojenia na internet. Na ovládanie môžete použiť rovnaké diaľkové ovládanie ako pri ostatnom obsahu – pozrite si [Prehrávanie obsahu](./playing-content).
+Slučka sa prehráva zo súborov uložených v zariadení, takže beží aj bez pripojenia na internet. Na ovládanie môžete použiť rovnaké diaľkové ovládanie ako pri ostatnom obsahu – pozrite si [Prehrávanie obsahu](./playing-content.md).
 
 ## Aktualizácia snímok
 
@@ -61,6 +62,6 @@ Odpojenie poskytovateľa tiež vypne oznámenia, ktoré z neho pochádzajú.
 
 ## Súvisiace články
 
-- **[Pripojenie k poskytovateľom](./connecting-providers)** – Pripojte poskytovateľa, ktorý obsahuje vaše snímky
-- **[Prehliadanie a sťahovanie obsahu](./browsing-content)** – Prehliadajte priečinky poskytovateľa a prehrávajte obsah na požiadanie
-- **[Prehrávanie obsahu](./playing-content)** – Ovládacie prvky prehrávača pre diaľkové ovládanie vášho TV
+- **[Pripojenie k poskytovateľom](./connecting-providers.md)** – Pripojte poskytovateľa, ktorý obsahuje vaše snímky
+- **[Prehliadanie a sťahovanie obsahu](./browsing-content.md)** – Prehliadajte priečinky poskytovateľa a prehrávajte obsah na požiadanie
+- **[Prehrávanie obsahu](./playing-content.md)** – Ovládacie prvky prehrávača pre diaľkové ovládanie vášho TV

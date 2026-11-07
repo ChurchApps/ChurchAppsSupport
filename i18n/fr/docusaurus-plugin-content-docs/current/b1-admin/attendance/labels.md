@@ -1,5 +1,6 @@
 ---
 title: "Concepteur d'Étiquettes de Pointage"
+description: "Personnalisez les modèles d'étiquettes de nom et de fiches de récupération imprimés à l'enregistrement dans B1 Admin, y compris les champs, le positionnement et les conditions d'anniversaire ou de notes."
 ---
 
 # Concepteur d'Étiquettes de Pointage
@@ -13,8 +14,8 @@ Le Concepteur d'Étiquettes vous permet de créer et de personnaliser les modèl
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez la [Participation](setup) et configurez au moins un créneau horaire de service avec le pointage activé
-- Configurez le [Pointage](check-in) pour que les étiquettes s'impriment
+- Configurez la [Participation](./setup.md) et configurez au moins un créneau horaire de service avec le pointage activé
+- Configurez le [Pointage](./check-in.md) pour que les étiquettes s'impriment
 - Vous avez besoin d'un accès administratif à la section Participation
 
 </div>
@@ -85,6 +86,6 @@ Faites un test d'impression après avoir modifié un modèle pour confirmer que 
 
 ## Articles Connexes
 
-- [Configuration du Pointage](setup) — configurer les services et les groupes pour le pointage
-- [Effectuer le Pointage](check-in) — le flux de pointage pour les familles
-- [Bien Démarrer avec B1 Checkin](../../b1-checkin/getting-started/) — l'application borne Checkin
+- [Configuration du Pointage](./setup.md) — configurer les services et les groupes pour le pointage
+- [Effectuer le Pointage](./check-in.md) — le flux de pointage pour les familles
+- [Bien Démarrer avec B1 Checkin](../../b1-checkin/getting-started/index.md) — l'application borne Checkin

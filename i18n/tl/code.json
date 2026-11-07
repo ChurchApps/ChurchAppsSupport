@@ -251,7 +251,7 @@
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "\u2190 Bumalik sa pangunahing menu",
+    "message": "← Bumalik sa pangunahing menu",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
@@ -318,7 +318,7 @@
     "description": "The title of the page for a blog tag"
   },
   "theme.blog.author.pageTitle": {
-    "message": "{authorName} \u2013 {nPosts}",
+    "message": "{authorName} – {nPosts}",
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
@@ -386,13 +386,13 @@
     "message": "B1 Mobile"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobile app para sa mga miyembro ng simbahan sa iOS at Android."
+    "message": "Lumang member app para sa iOS at Android, na pinalitan na ng B1.church web app."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Self-service na kiosk check-in app para sa mga Android tablet."
+    "message": "Self-service na check-in kiosk app para sa iPad at Android tablet."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -422,13 +422,13 @@
     "message": "Ginawa para sa mga Simbahan"
   },
   "homepage.values.builtForChurches.description": {
-    "message": "Espesyal na dinisenyo para sa mga workflow ng simbahan \u2014 hindi isang generic na kasangkapan na ginawang angkop para sa ministeryo."
+    "message": "Espesyal na dinisenyo para sa mga workflow ng simbahan — hindi isang generic na kasangkapan na ginawang angkop para sa ministeryo."
   },
   "homepage.title": {
-    "message": "Home"
+    "message": "Tulong para sa B1.church, Lessons.church at FreePlay"
   },
   "homepage.description": {
-    "message": "Dokumentasyon ng suporta para sa ChurchApps \u2014 mga libreng open-source na kasangkapan para sa pamamahala ng simbahan."
+    "message": "Mga gabay at dokumentasyon para sa libre at open-source na software ng simbahan ng ChurchApps: pamamahala ng simbahan, check-in, giving at website ng B1.church, kurikulum ng Lessons.church, at FreePlay."
   },
   "homepage.products.heading": {
     "message": "Piliin ang iyong produkto"

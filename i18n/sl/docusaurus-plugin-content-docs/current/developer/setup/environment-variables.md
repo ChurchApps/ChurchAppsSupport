@@ -1,5 +1,6 @@
 ---
 title: "Proměnné prostředí"
+description: "Nastavi .env za projekte ChurchApps: izberi skupni demo API ali lokalni API in vnesi spremenljivke za B1 Admin, B1.church, B1 Mobile, Lessons.church in druge."
 ---
 
 Oops, I should not have started that. The file is a Slovenian translation task, so the output should be in Slovenian, not Czech. Here is the corrected, complete translated file:
@@ -19,9 +20,9 @@ Vsak projekt ChurchApps uporablja datoteko `.env` za lokalno konfiguracijo. Vsak
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite [predpogoje](./prerequisites) za vaš projekt
+- Namestite [predpogoje](./prerequisites.md) za vaš projekt
 - Klonirajte repozitorij projekta, na katerem želite delati
-- Preglejte [Pregled projekta](./project-overview), da ugotovite, katere module API-ja vaš projekt potrebuje
+- Preglejte [Pregled projekta](./project-overview.md), da ugotovite, katere module API-ja vaš projekt potrebuje
 
 </div>
 
@@ -70,7 +71,7 @@ Okolje za testiranje (`api.staging.churchapps.org`, `api.staging.lessons.church`
 
 ### Možnost 2: Lokalni API
 
-Zaženite projekt Api na svojem računalniku. Potrebujete MySQL 8.0+ z ustvarjenimi podatkovnimi bazami za vsak modul. Oglejte si vodnik [lokalna nastavitev API-ja](../api/local-setup).
+Zaženite projekt Api na svojem računalniku. Potrebujete MySQL 8.0+ z ustvarjenimi podatkovnimi bazami za vsak modul. Oglejte si vodnik [lokalna nastavitev API-ja](../api/local-setup.md).
 
 ```bash
 # Vzorec osnovnega naslova URL

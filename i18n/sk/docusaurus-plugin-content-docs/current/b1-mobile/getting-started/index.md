@@ -1,5 +1,7 @@
 ---
-title: "Začíname"
+title: "Začíname s B1 Mobile (zastaraný)"
+sidebar_label: "Začíname"
+description: "Nastavte B1 Mobile na telefóne: nájdite aplikáciu, prihláste sa svojím účtom ChurchApps a vyberte si cirkev. Upozorňujeme, že B1 Mobile je zastaraný v prospech PWA."
 ---
 
 # Začíname
@@ -25,10 +27,10 @@ To je všetko. Keď vyberiete svoju cirkev, aplikácia načíta jej branding, na
 
 ## V tejto sekcii
 
-- [Inštalácia aplikácie](./installing) -- Kde stiahnuť B1 Mobile a požiadavky na zariadenie.
-- [Prihlásenie](./logging-in) -- Ako sa prihlásiť alebo vytvoriť nový účet.
-- [Prepínanie cirkví](./switching-churches) -- Ako prepínať medzi cirkvami, ak patríte do viacerých.
+- [Inštalácia aplikácie](./installing.md) -- Kde stiahnuť B1 Mobile a požiadavky na zariadenie.
+- [Prihlásenie](./logging-in.md) -- Ako sa prihlásiť alebo vytvoriť nový účet.
+- [Prepínanie cirkví](./switching-churches.md) -- Ako prepínať medzi cirkvami, ak patríte do viacerých.
 
 :::tip
-B1 Mobile používa rovnaký účet ChurchApps ako všetky ostatné produkty ChurchApps. Ak už máte účet z [B1.church](../../b1-church/), B1 Admin alebo Lessons.church, môžete sa prihlásiť pomocou rovnakých prihlasovacích údajov.
+B1 Mobile používa rovnaký účet ChurchApps ako všetky ostatné produkty ChurchApps. Ak už máte účet z [B1.church](../../b1-church/index.md), B1 Admin alebo Lessons.church, môžete sa prihlásiť pomocou rovnakých prihlasovacích údajov.
 :::

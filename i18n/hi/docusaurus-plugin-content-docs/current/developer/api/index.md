@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "ChurchApps API का मॉड्यूलर मोनोलिथ डिज़ाइन, इसके छह डेटा मॉड्यूल, तकनीकी स्टैक, पोर्ट और Lambda फ़ंक्शन समझाता है, साथ ही डेवलपर्स के लिए सेटअप, डेटाबेस, प्रमाणीकरण और एंडपॉइंट दस्तावेज़ों के लिंक।"
 ---
 
 # API
@@ -52,8 +53,8 @@ ChurchApps API एक **मॉड्यूलर मोनोलिथ** है 
 
 API दो साझा ChurchApps पैकेजों पर निर्भर है:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- बुनियादी utilities (DateHelper, ApiHelper, आदि)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express सर्वर utilities, जिनमें auth, database helpers, और AWS एकीकरण शामिल हैं
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- बुनियादी utilities (DateHelper, ApiHelper, आदि)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express सर्वर utilities, जिनमें auth, database helpers, और AWS एकीकरण शामिल हैं
 
 :::info
 API ES modules (`package.json` में `"type": "module"`) का उपयोग करता है। सुनिश्चित करें कि आपके imports ES module सिंटैक्स का उपयोग करते हैं।
@@ -61,11 +62,11 @@ API ES modules (`package.json` में `"type": "module"`) का उपयो
 
 ## इस अनुभाग में
 
-- **[Local Setup](./local-setup)** -- API को स्थानीय रूप से क्लोन, कॉन्फ़िगर और चलाएँ
-- **[Database](./database)** -- मॉड्यूल-प्रति-डेटाबेस आर्किटेक्चर, schema scripts, और डेटा access पैटर्न
-- **[Module Structure](./module-structure)** -- कंट्रोलर, रिपॉज़िटरी, मॉडल, और प्रमाणीकरण
-- **[API Keys](./api-keys)** -- स्क्रिप्ट और कनेक्टरों के लिए personal access tokens
-- **[Connected Apps (OAuth)](./connected-apps)** -- तृतीय-पक्ष ऐप्स के लिए मल्टी-टेनेंट OAuth प्रवाह
-- **[Webhooks](./webhooks)** -- बाहरी सिस्टमों को push इवेंट सूचनाएँ
-- **[MCP Server](./mcp)** -- Model Context Protocol endpoint जो API को AI सहायकों के लिए उपलब्ध कराता है
-- **[Endpoint Reference](./endpoints/)** -- सभी मॉड्यूलों के लिए पूर्ण REST API दस्तावेज़ीकरण
+- **[Local Setup](./local-setup.md)** -- API को स्थानीय रूप से क्लोन, कॉन्फ़िगर और चलाएँ
+- **[Database](./database.md)** -- मॉड्यूल-प्रति-डेटाबेस आर्किटेक्चर, schema scripts, और डेटा access पैटर्न
+- **[Module Structure](./module-structure.md)** -- कंट्रोलर, रिपॉज़िटरी, मॉडल, और प्रमाणीकरण
+- **[API Keys](./api-keys.md)** -- स्क्रिप्ट और कनेक्टरों के लिए personal access tokens
+- **[Connected Apps (OAuth)](./connected-apps.md)** -- तृतीय-पक्ष ऐप्स के लिए मल्टी-टेनेंट OAuth प्रवाह
+- **[Webhooks](./webhooks.md)** -- बाहरी सिस्टमों को push इवेंट सूचनाएँ
+- **[MCP Server](./mcp.md)** -- Model Context Protocol endpoint जो API को AI सहायकों के लिए उपलब्ध कराता है
+- **[Endpoint Reference](./endpoints/index.md)** -- सभी मॉड्यूलों के लिए पूर्ण REST API दस्तावेज़ीकरण

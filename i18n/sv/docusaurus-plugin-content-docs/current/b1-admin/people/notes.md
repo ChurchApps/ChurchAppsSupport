@@ -1,5 +1,6 @@
 ---
 title: "Anteckningar"
+description: "Granska själavårdsanteckningar, uppföljningar och planering från personer, grupper, händelser och arbetskort i en lista i B1 Admin, nyast först."
 ---
 
 # Anteckningar

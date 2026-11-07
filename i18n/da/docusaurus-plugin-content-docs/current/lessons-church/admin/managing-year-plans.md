@@ -1,5 +1,6 @@
 ---
 title: "Administrer årsplaner"
+description: "Opret en årsplan med ugentlige lektioner i Lessons.church, forankr ugerne til påske eller jul, og publicér den, så kirker kan anvende den i B1 Admin."
 ---
 
 # Administrer årsplaner

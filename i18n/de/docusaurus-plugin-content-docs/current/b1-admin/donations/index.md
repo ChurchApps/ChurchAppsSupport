@@ -1,5 +1,6 @@
 ---
 title: "Spenden"
+description: "Erfassen, ordnen und berichten Sie in B1 Admin über Kirchenspenden, von Stapeln und Fonds bis zu Jahresbescheinigungen und Online-Spenden über Stripe oder PayPal."
 ---
 
 # Spenden

@@ -1,5 +1,6 @@
 ---
 title: "Bağış Uç Noktaları"
+description: "ChurchApps Giving API: bağışlar, toplu işlemler, ağ geçitleri, abonelikler ve ödeme yöntemleri için uç noktalar ile kimlik doğrulama ve izin kuralları."
 ---
 
 # Bağış Uç Noktaları
@@ -284,6 +285,6 @@ Temel yol: `/giving/eventLog`
 
 ## İlgili Sayfalar
 
-- [Üyelik Uç Noktaları](./membership) — Kişiler, kiliseler, gruplar, roller ve izinler
-- [Kimlik Doğrulama ve İzinler](./authentication) — Oturum açma akışı, JWT, OAuth, izin modeli
-- [Modül Yapısı](../module-structure) — Kod organizasyon kalıpları
+- [Üyelik Uç Noktaları](./membership.md) — Kişiler, kiliseler, gruplar, roller ve izinler
+- [Kimlik Doğrulama ve İzinler](./authentication.md) — Oturum açma akışı, JWT, OAuth, izin modeli
+- [Modül Yapısı](../module-structure.md) — Kod organizasyon kalıpları

@@ -1,5 +1,6 @@
 ---
 title: "Drittanbieter-Anbieter"
+description: "Externen Lehrplan-Feed über die Drittanbieter-Seite in Lessons.church hinzufügen, Verbindungen ansehen, aktualisieren oder entfernen."
 ---
 
 # Drittanbieter-Anbieter

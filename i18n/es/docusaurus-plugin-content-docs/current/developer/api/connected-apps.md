@@ -1,12 +1,13 @@
 ---
 title: "Aplicaciones conectadas y OAuth"
+description: "Conecte aplicaciones de terceros a los datos B1 de una iglesia mediante el consentimiento OAuth 2.0, sin contraseñas compartidas ni claves de API, y revoque el acceso en cualquier momento desde la configuración de B1 Admin."
 ---
 
 # Aplicaciones conectadas y OAuth
 
 <div class="article-intro">
 
-La API de B1 admite OAuth 2.0 para que una aplicación de terceros pida a cada administrador de iglesia permiso para acceder a sus datos, sin que la iglesia comparta nunca una contraseña ni una clave de API. Una **aplicación conectada** es un token OAuth que un administrador de iglesia ha aprobado; revocarlo corta el acceso de la aplicación de terceros con un solo clic. Usa esta vía para conectores SaaS multiinquilino. Para una integración de una sola iglesia, es preferible usar [Claves de API](./api-keys).
+La API de B1 admite OAuth 2.0 para que una aplicación de terceros pida a cada administrador de iglesia permiso para acceder a sus datos, sin que la iglesia comparta nunca una contraseña ni una clave de API. Una **aplicación conectada** es un token OAuth que un administrador de iglesia ha aprobado; revocarlo corta el acceso de la aplicación de terceros con un solo clic. Usa esta vía para conectores SaaS multiinquilino. Para una integración de una sola iglesia, es preferible usar [Claves de API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ La API de B1 admite OAuth 2.0 para que una aplicación de terceros pida a cada a
 | **Aplicación conectada** | Un par `(cliente, administrador de iglesia)` específico donde el administrador ha concedido acceso al cliente. Cada aplicación conectada respaldada por un token de actualización OAuth. |
 | **Token de acceso** | Un JWT de vida corta (≈ 7 días) que el cliente usa para las llamadas a la API. Tiene la misma forma que un JWT de usuario: `Authorization: Bearer <jwt>`. |
 | **Token de actualización** | Una cadena opaca de larga duración (≈ 90 días) que el cliente usa para generar nuevos tokens de acceso. |
-| **Permiso (scope)** | Restringe lo que puede hacer el token de acceso; consulta el [catálogo de permisos](./api-keys#scopes). |
+| **Permiso (scope)** | Restringe lo que puede hacer el token de acceso; consulta el [catálogo de permisos](./api-keys.md#scopes). |
 
 ## Flujos de concesión
 
@@ -162,7 +163,7 @@ La lista excluye automáticamente los tokens vencidos.
 
 ## Permisos y consentimiento
 
-Las cadenas de permisos son el mismo catálogo que [claves de API](./api-keys#scopes). Buenas prácticas para los clientes:
+Las cadenas de permisos son el mismo catálogo que [claves de API](./api-keys.md#scopes). Buenas prácticas para los clientes:
 
 - **Solicita los permisos más restringidos que funcionen.** Las iglesias lo notan si pides `donations:write` cuando solo necesitas leer personas.
 - **Usa un token de actualización junto con tokens de acceso de vida corta.** Los tokens de acceso de larga duración son más difíciles de revocar rápidamente.
@@ -183,7 +184,7 @@ Los URI de redirección registrados deben coincidir exactamente con el `redirect
 
 ### Registro dinámico de clientes
 
-`POST /membership/oauth/register` (público, RFC 7591) permite que un cliente como el conector MCP de claude.ai se registre por sí mismo. Se anuncia en el documento `/.well-known/oauth-authorization-server` de la API; consulta [Servidor MCP → Descubrimiento OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (público, RFC 7591) permite que un cliente como el conector MCP de claude.ai se registre por sí mismo. Se anuncia en el documento `/.well-known/oauth-authorization-server` de la API; consulta [Servidor MCP → Descubrimiento OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ En la página de consentimiento de B1Admin, un cliente que se registró por sí 
 
 ## Compatibilidad con SDK
 
-El paquete `@churchapps/integration-sdk` envuelve cada flujo OAuth con funciones auxiliares tipadas: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` y `.awaitDeviceToken()`. Consulta el README del paquete y [Webhooks](./webhooks#sdk-support) para un ejemplo completo de extremo a extremo.
+El paquete `@churchapps/integration-sdk` envuelve cada flujo OAuth con funciones auxiliares tipadas: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` y `.awaitDeviceToken()`. Consulta el README del paquete y [Webhooks](./webhooks.md#sdk-support) para un ejemplo completo de extremo a extremo.

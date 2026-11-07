@@ -1,5 +1,6 @@
 ---
 title: "Realaus laiko architektūra"
+description: "Kaip ChurchApps WebSocket sluoksnis perduoda tiesioginius pokalbius, buvimą ir pranešimus: ryšio užmezgimas, kambarių prenumeratos ir kliento elementai."
 ---
 
 # Realaus laiko architektūra
@@ -226,8 +227,8 @@ Tiesioginė transliacija yra didžiausias anoniminis sistemos vartotojas. Kambar
 
 ## Susiję puslapiai
 
-- [Pranešimų architektūra](./architecture/notifications) -- Programos, push ir el. pašto pranešimų eskalavimo grandinė, į kurią patenka šis perdavimo kanalas
-- [Pranešimų pagalbinės funkcijos](./api/endpoints/messaging) -- Visa REST sąsaja žinutėms, pokalbiams, ryšiams ir įrenginiams
-- [Naršyklės push pranešimai](./web-push) -- Naršyklės push pranešimai, atskiri nuo puslapio ryšio perdavimo
-- [AppHelper](./shared-libraries/app-helper) -- npm paketas, kuriame pateikiami kliento pagrindiniai elementai
-- [Modulio struktūra](./api/module-structure) -- Kaip serverio pusėje organizuotas pranešimų modulis
+- [Pranešimų architektūra](./architecture/notifications.md) -- Programos, push ir el. pašto pranešimų eskalavimo grandinė, į kurią patenka šis perdavimo kanalas
+- [Pranešimų pagalbinės funkcijos](./api/endpoints/messaging.md) -- Visa REST sąsaja žinutėms, pokalbiams, ryšiams ir įrenginiams
+- [Naršyklės push pranešimai](./web-push.md) -- Naršyklės push pranešimai, atskiri nuo puslapio ryšio perdavimo
+- [AppHelper](./shared-libraries/app-helper.md) -- npm paketas, kuriame pateikiami kliento pagrindiniai elementai
+- [Modulio struktūra](./api/module-structure.md) -- Kaip serverio pusėje organizuotas pranešimų modulis

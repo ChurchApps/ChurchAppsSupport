@@ -1,5 +1,6 @@
 ---
 title: "Tình trạng nhóm"
+description: "Kiểm tra sức khỏe nhóm trong B1 Admin qua bảng 90 ngày: thành viên, người mới, người rời, tỷ lệ rời bỏ và điểm danh trung bình để tìm nhóm cần theo dõi."
 ---
 
 # Tình trạng nhóm
@@ -13,8 +14,8 @@ Bảng điều khiển Tình trạng nhóm cho bạn cái nhìn tổng quan về
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Bạn cần có ít nhất vài nhóm có thành viên để xem dữ liệu có ý nghĩa. Xem [Tạo nhóm](creating-groups).
-- Dữ liệu tham dự được lấy từ các buổi đã ghi nhận. Xem phần [Tham dự](../attendance/).
+- Bạn cần có ít nhất vài nhóm có thành viên để xem dữ liệu có ý nghĩa. Xem [Tạo nhóm](./creating-groups.md).
+- Dữ liệu tham dự được lấy từ các buổi đã ghi nhận. Xem phần [Tham dự](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Nhấp vào tên nhóm sẽ đưa bạn trực tiếp đến trang chi tiết nh
 
 ## Bài viết liên quan
 
-- [Tạo nhóm](creating-groups) — thiết lập nhóm
-- [Thành viên nhóm](group-members) — quản lý thành viên nhóm
-- [Theo dõi tham dự](../attendance/tracking-attendance) — ghi nhận các buổi điểm danh cung cấp dữ liệu cho bảng điều khiển này
+- [Tạo nhóm](./creating-groups.md) — thiết lập nhóm
+- [Thành viên nhóm](./group-members.md) — quản lý thành viên nhóm
+- [Theo dõi tham dự](../attendance/tracking-attendance.md) — ghi nhận các buổi điểm danh cung cấp dữ liệu cho bảng điều khiển này

@@ -1,5 +1,7 @@
 ---
-title: "Ibhulogi"
+title: "Kubhala Tibhulogi Tewebhusayithi Yakho ku-B1 Admin"
+sidebar_label: "Ibhulogi"
+description: "Dala, hlela, futsi ushicilele tibhulogi ku-webhusayithi yesonto lakho ku-B1 Admin, kufaka phakatsi emagama lamafuphi, tigaba, tithegi, tithombe letikhanyako nemabhuku ekukhomba."
 ---
 
 # Ibhulogi
@@ -13,8 +15,8 @@ Likhasi le-Blog livumela kushicilela tindzaba, tibuyekezo, nemahlaba kuwebhusayi
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- Qedzela [Kusetfwa Kwekucala](initial-setup) kuwebhusayithi yakho
-- Engeta sixhumanisi se-`/blog` kusuka ku-[Kuphatsa Emakhasi](managing-pages) uma ufuna kutsi bavakashi batfole ibhulogi yakho kusuka kumenyu
+- Qedzela [Kusetfwa Kwekucala](./initial-setup.md) kuwebhusayithi yakho
+- Engeta sixhumanisi se-`/blog` kusuka ku-[Kuphatsa Emakhasi](./managing-pages.md) uma ufuna kutsi bavakashi batfole ibhulogi yakho kusuka kumenyu
 
 </div>
 
@@ -31,7 +33,7 @@ Likhasi le-Blog livumela kushicilela tindzaba, tibuyekezo, nemahlaba kuwebhusayi
 3. Engeta **Excerpt** -- sifinyezo lesibonakala ohlwini lwetipositi, kumetadata yencazelo, nakuRSS feed. Uma uyishiya ingetulwa, ekhiwa ngekuzenzekelako kusuka ekuqaleni kwelivi lakho.
 4. Bhala umtfombo weposti kumhleli we-**Content** usebenzisa Markdown. Chofoza **Preview** ukubona kutsi iposti lelifomethiwe lizobukeka kanjani.
 5. Khetsa **Category** (khetsa lesikhona noma bhala lesisha) kanye ne-**Tags** lencono lehlukaniswe ngekhwebhu.
-6. Chofoza **Select Image** ukukhetsa sithombe kugalari yakho ye-[Files](files), noma ulayishe lesisha. Tithombe letilayishiwe livula ithuluzi lekucekela lelakhelwe lelikhiyelwe ku-16:9, kuze ukwazi kwakha sithombe ngasinye ukuze sifanele inhloko yeposti nemakhadi ohlwini.
+6. Chofoza **Select Image** ukukhetsa sithombe kugalari yakho ye-[Files](./files.md), noma ulayishe lesisha. Tithombe letilayishiwe livula ithuluzi lekucekela lelakhelwe lelikhiyelwe ku-16:9, kuze ukwazi kwakha sithombe ngasinye ukuze sifanele inhloko yeposti nemakhadi ohlwini.
 7. Setsa **Author** -- ikhona njengemvelisi yalelitsatsa, kodvwa ungafuna umuntu lotsite kusisekelo sakho sebantfu.
 8. Vula **Published** bese usetsa **Publish Date** uma usulungele kwenta iposti libonakale kuwo wonkhe umuntu. Lisale livaliwe uma ufuna kugcina iposti njengemsebenti longakapheleli.
 
@@ -58,7 +60,7 @@ Ngulamunye weposti ohlwini ubonisa imo yayo ngenye kwetintfo letintsatfu:
 Tiposti letishicilelwe tibonakala ku `{yoursite}/blog`, tilishumi ngekhasi ngalinye, netixhumanisi te-**Older**/**Newer** tekuhamba ngemarekhodi ekugcineni. Kuphindze kube nesihlungi se-category kanye nemphilo nesithombe salowo lobhale ngasinye. Ma-tag nawo abonakala njengemasiginali lachofozekako, kuvumela bavakashi kutsi bahlunge uhlu ngama-tag ngendlela efanako. Tiposti ngatinye ihlala ku `{yoursite}/blog/{slug}` futsi ifaka tiposti letihlobene lelisuka ku-category lefanako. Likhasi le-blog futsi lishicilela i-RSS feed, leyatfolakala ngekuzenzekelako kumafundzi e-feed nakumathuluzi wekuzenzekela afana ne-Zapier.
 
 :::info
-Tiposti tibhulogi tiyinhlobo yencwadzi lehlukile kutsi emakhasi wewebhusayithi wetulo -- akakhiwa ku-[page editor](page-editor) futsi awabonakali ohlwini lwe-Pages. Lokhu kwenta kutsi kubhalwa kwebhulogi kube semandleni futsi kugxile ekubhaleni.
+Tiposti tibhulogi tiyinhlobo yencwadzi lehlukile kutsi emakhasi wewebhusayithi wetulo -- akakhiwa ku-[page editor](./page-editor.md) futsi awabonakali ohlwini lwe-Pages. Lokhu kwenta kutsi kubhalwa kwebhulogi kube semandleni futsi kugxile ekubhaleni.
 :::
 
 ## Kungeta Tikhomente Ngaphansi Kwetiposti
@@ -77,6 +79,6 @@ Susa umbhalo esibhokisini bese uchofoza **Save** ukususa ikhodi kuwo wonkhe emap
 
 ## Tinyatelo Letilandzelako
 
-- [Kuphatsa Emakhasi](managing-pages) -- Engeta sixhumanisi sekuhamba ku-blog yakho
-- [Files](files) -- Layisha tithombe tekusebentisa kutiposti takho
+- [Kuphatsa Emakhasi](./managing-pages.md) -- Engeta sixhumanisi sekuhamba ku-blog yakho
+- [Files](./files.md) -- Layisha tithombe tekusebentisa kutiposti takho
 - [Kuhlanganiswa ne-Zapier](../integrations/zapier.md) -- Vusa tencenye lekuzenzekelako lapho tiposti letintsha tishicilelwa

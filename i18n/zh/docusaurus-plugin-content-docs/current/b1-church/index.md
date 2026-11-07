@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "了解您教会的 B1.church 网站为会员提供哪些服务，包括会员门户、小组、奉献、活动、服事和签到。"
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ B1.church 是面向教会成员的门户网站。会众可以在这里保持联�
 
 ## 了解更多
 
-- [入门指南](./getting-started/) —— 创建账号、登录，并了解如何使用 B1.church。
-- [小组](./groups/) —— 加入并参与教会的小组。
-- [奉献](./giving/) —— 进行奉献并管理你的奉献记录。
-- [活动](./events/) —— 浏览并报名即将举行的教会活动。
-- [服事](./serving/) —— 查看计划并报名志愿者岗位。
-- [计划](./plans/) —— 查看服事计划和你的志愿者岗位。
-- [签到](./checkin/) —— 为礼拜和活动签到，以及访客登记。
-- [社群通讯录](./community/) —— 查找其他成员并与之建立联系。
-- [内容](./content/) —— 讲道、圣经、每日经文和直播。（课程播放已迁移至 [FreePlay](/docs/freeplay/)。）
+- [入门指南](./getting-started/index.md) —— 创建账号、登录，并了解如何使用 B1.church。
+- [小组](./groups/index.md) —— 加入并参与教会的小组。
+- [奉献](./giving/index.md) —— 进行奉献并管理你的奉献记录。
+- [活动](./events/index.md) —— 浏览并报名即将举行的教会活动。
+- [服事](./serving/index.md) —— 查看计划并报名志愿者岗位。
+- [计划](./plans/index.md) —— 查看服事计划和你的志愿者岗位。
+- [签到](./checkin/index.md) —— 为礼拜和活动签到，以及访客登记。
+- [社群通讯录](./community/index.md) —— 查找其他成员并与之建立联系。
+- [内容](./content/index.md) —— 讲道、圣经、每日经文和直播。（课程播放已迁移至 [FreePlay](/docs/freeplay/)。）
 
 :::info
 B1.church 对教会和成员完全免费。你的教会管理员通过 B1 Admin 设置和自定义网站。作为成员，你只需访问教会的 B1.church 网址即可开始使用。

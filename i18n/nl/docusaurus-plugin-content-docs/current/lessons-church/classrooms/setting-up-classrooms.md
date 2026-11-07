@@ -1,5 +1,6 @@
 ---
 title: "Setting Up Classrooms"
+description: "Maak, hernoem en verwijder klaslokalen in het Lessons.church-portaal, zodat elke ruimte of leeftijdsgroep klaar is voor wekelijkse lesplanning."
 ---
 
 # Setting Up Classrooms

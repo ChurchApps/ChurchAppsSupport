@@ -1,5 +1,6 @@
 ---
 title: "Peran & Izin"
+description: "Atur peran di B1 Admin untuk mengontrol apa yang dapat dilihat dan diubah staf serta relawan, dari donasi dan kehadiran hingga orang dan grup."
 ---
 
 # Peran & Izin

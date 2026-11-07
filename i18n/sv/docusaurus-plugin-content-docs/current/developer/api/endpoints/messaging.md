@@ -1,5 +1,6 @@
 ---
 title: "Meddelandeslutpunkter"
+description: "Referens för ChurchApps meddelande-API-endpoints: konversationer, åtkomstregler för anteckningar, sms, e-postmallar, aviseringar och enheter."
 ---
 
 # Meddelandeslutpunkter
@@ -190,7 +191,7 @@ Bassökväg: `/messaging/notificationpreferences`
 
 Bassökväg: `/messaging/connections`
 
-Hanterar WebSocket- och realtidsanslutningar för chatt, gruppkonversationer, privata meddelanden och livesändningar. Se [Realtidsarkitektur](../../realtime) för det fullständiga protokollet.
+Hanterar WebSocket- och realtidsanslutningar för chatt, gruppkonversationer, privata meddelanden och livesändningar. Se [Realtidsarkitektur](../../realtime.md) för det fullständiga protokollet.
 
 | Metod | Sökväg | Autentisering | Behörighet | Beskrivning |
 |--------|------|------|------|------|
@@ -367,9 +368,9 @@ Spårar leveransstatus för skickade meddelanden (sms, pushnotiser och e-post).
 
 ## Relaterade sidor
 
-- [Realtidsarkitektur](../../realtime) -- WebSocket-protokoll, rumsprenumerationer och det enhetliga leveransramverket
-- [Webbpushnotiser](../../web-push) -- Registrering och leverans av webbläsarpush
-- [Medlemsslutpunkter](./membership) -- Personer, grupper, roller och kärnidentitet
-- [Närvaroslutpunkter](./attendance) -- Spårning av gudstjänster och besök
-- [Autentisering och behörigheter](./authentication) -- Inloggningsflöde, JWT, OAuth och behörighetsmodell
-- [Modulstruktur](../module-structure) -- Mönster för kodorganisation
+- [Realtidsarkitektur](../../realtime.md) -- WebSocket-protokoll, rumsprenumerationer och det enhetliga leveransramverket
+- [Webbpushnotiser](../../web-push.md) -- Registrering och leverans av webbläsarpush
+- [Medlemsslutpunkter](./membership.md) -- Personer, grupper, roller och kärnidentitet
+- [Närvaroslutpunkter](./attendance.md) -- Spårning av gudstjänster och besök
+- [Autentisering och behörigheter](./authentication.md) -- Inloggningsflöde, JWT, OAuth och behörighetsmodell
+- [Modulstruktur](../module-structure.md) -- Mönster för kodorganisation

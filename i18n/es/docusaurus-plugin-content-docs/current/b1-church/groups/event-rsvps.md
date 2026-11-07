@@ -1,5 +1,6 @@
 ---
 title: "Confirmaciones de asistencia a eventos (RSVP)"
+description: "Responda Asistiré, Quizás o No podré asistir a los eventos del grupo en el portal de miembros de B1.church, y vea cuántas personas más asistirán. Los líderes también pueden revisar las respuestas."
 ---
 
 # Confirmaciones de asistencia a eventos (RSVP)
@@ -30,14 +31,14 @@ Tu RSVP se aplica a esa ocurrencia específica: en una reunión semanal, respond
 ## Para líderes de grupo
 
 - **Ver las respuestas**: los líderes ven un enlace **View responses** en cada evento del calendario del grupo (**All events**). Abre la hoja **Responses**, que enumera a todos según su respuesta: Going, Maybe y Can't go. Si nadie ha respondido todavía, muestra "No responses yet."
-- **Activar o desactivar los RSVP**: al crear o editar un evento, usa el interruptor **Allow RSVPs**. Los eventos con RSVP desactivados no muestran botones de respuesta. El personal que crea eventos en lote desde B1 Admin tiene la misma opción; consulta [Calendario del grupo](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Activar o desactivar los RSVP**: al crear o editar un evento, usa el interruptor **Allow RSVPs**. Los eventos con RSVP desactivados no muestran botones de respuesta. El personal que crea eventos en lote desde B1 Admin tiene la misma opción; consulta [Calendario del grupo](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Los RSVP son un conteo rápido de asistentes. Si tu evento necesita datos de inscripción, control de cupo o pagos, usa mejor el [registro a eventos](../events/registering).
+Los RSVP son un conteo rápido de asistentes. Si tu evento necesita datos de inscripción, control de cupo o pagos, usa mejor el [registro a eventos](../events/registering.md).
 :::
 
 ## Artículos relacionados
 
 - [Detalles del grupo](./group-details.md): todo lo que aparece en la página de detalles del grupo
-- [Calendario del grupo (B1 Admin)](../../b1-admin/groups/group-calendar): cómo el personal y los líderes administran los eventos y los RSVP del grupo
-- [Inscribirse a eventos](../events/registering): registro completo a eventos con cupo y pagos
+- [Calendario del grupo (B1 Admin)](../../b1-admin/groups/group-calendar.md): cómo el personal y los líderes administran los eventos y los RSVP del grupo
+- [Inscribirse a eventos](../events/registering.md): registro completo a eventos con cupo y pagos

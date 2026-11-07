@@ -1,5 +1,6 @@
 ---
 title: "Pag-apruba ng mga Pagbabago sa Profile"
+description: "Suriin at aprubahan ang kahilingang baguhin ang profile ng miyembro sa B1 Admin, at i-set up ang Directory Approval Group na tumatanggap nito."
 ---
 
 # Pag-apruba ng mga Pagbabago sa Profile

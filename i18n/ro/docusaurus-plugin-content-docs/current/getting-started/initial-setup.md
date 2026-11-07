@@ -1,5 +1,7 @@
 ---
-title: "Configurarea inițială"
+title: "Configurarea inițială a bisericii în B1 Admin"
+sidebar_label: "Configurarea inițială"
+description: "Configurarea inițială a unei biserici noi în B1 Admin: date, branding, roluri și ordinea recomandată pentru persoane, grupuri, prezență și donații."
 ---
 
 # Configurarea inițială

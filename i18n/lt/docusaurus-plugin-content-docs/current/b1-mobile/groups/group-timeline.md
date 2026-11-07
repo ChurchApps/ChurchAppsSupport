@@ -1,5 +1,6 @@
 ---
 title: "Grupų laiko juosta"
+description: "Sužinokite, kaip B1 Mobile grupių laiko juosta sujungia visų jūsų grupių įrašus, pokalbius ir naujienas į vieną srautą bei ką daryti, jei ji pristabdyta."
 ---
 
 # Grupų laiko juosta
@@ -17,7 +18,7 @@ Grupių laiko juostos funkcija laikinai nepasiekiama, kol vyksta tobulinimai. Tu
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Būkite bent vienos grupės, esančios jūsų bažnyčioje, narys
 
 </div>
@@ -41,7 +42,7 @@ Kiekvienas laiko juostos elementas rodo, iš kurios grupės jis kilo, todėl vis
 Laiko juosta – puikus būdas vienu žvilgsniu palaikyti ryšį su savo bažnyčios bendruomene. Štai keli patarimai, kaip ja naudotis geriausiai:
 
 - **Reguliariai tikrinkite** -- Atidarykite ekraną „Groups“ ir slinkite laiko juosta, kad susipažintumėte su naujausia veikla.
-- **Spauskite daugiau** -- Jei įrašas patraukia dėmesį, palieskite jį arba grupės pavadinimą, kad atsidarytumėte visą [grupės informacijos puslapį](./group-details) ir sužinotumėte daugiau.
+- **Spauskite daugiau** -- Jei įrašas patraukia dėmesį, palieskite jį arba grupės pavadinimą, kad atsidarytumėte visą [grupės informacijos puslapį](./group-details.md) ir sužinotumėte daugiau.
 - **Viskas vienoje vietoje** -- Nereikia lankytis kiekvienoje grupėje atskirai. Laiko juosta pateikia visą veiklą jums.
 
 :::info
@@ -54,5 +55,5 @@ Laiko juostoje rodoma tik veikla iš grupių, priskirtų jūsų bažnyčiai. Jei
 
 ## Susiję straipsniai
 
-- [Grupės informacija](./group-details) -- Peržiūrėkite vienos grupės visą profilį ir įrašus
+- [Grupės informacija](./group-details.md) -- Peržiūrėkite vienos grupės visą profilį ir įrašus
 - [Pranešimai](../community/notifications.md) -- Gaukite pranešimus apie grupių veiklą

@@ -1,5 +1,6 @@
 ---
 title: "Vytvoření účtu"
+description: "Zaregistrujte si účet ChurchApps na Lessons.church a poté jej propojte s novým nebo stávajícím profilem církve, abyste mohli spravovat třídy a rozvrhy."
 ---
 
 # Vytvoření účtu

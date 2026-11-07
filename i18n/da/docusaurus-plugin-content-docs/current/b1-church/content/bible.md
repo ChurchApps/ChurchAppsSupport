@@ -1,5 +1,7 @@
 ---
-title: "bibel"
+title: "Læs Bibelen på B1.church"
+sidebar_label: "bibel"
+description: "Læs Skriften i B1.churchs bibellæser med kontroller for bog, kapitel og oversættelse samt en bibelside til daglig læsning."
 ---
 
 # bibel

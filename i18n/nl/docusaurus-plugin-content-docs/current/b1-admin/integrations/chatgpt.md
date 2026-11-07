@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Koppel ChatGPT met een API-sleutel aan je B1-kerkdata, zodat je in gewone taal vragen kunt stellen over mensen, giften en aanwezigheid in B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Verbind ChatGPT met de B1-gegevens van je kerk en stel vragen in gewone taal. He
 </div>
 
 :::tip Aanbevolen: probeer eerst Claude, het is gratis
-[Claude](./claude) werkt met B1 op het **gratis abonnement** en is in minder dan 3 minuten ingesteld. Voeg B1 gewoon toe als connector en log in met je B1-account. Er is geen sleutel nodig. Het is de eenvoudigste manier voor je kerk om AI met B1 uit te proberen voordat je ergens voor betaalt.
+[Claude](./claude.md) werkt met B1 op het **gratis abonnement** en is in minder dan 3 minuten ingesteld. Voeg B1 gewoon toe als connector en log in met je B1-account. Er is geen sleutel nodig. Het is de eenvoudigste manier voor je kerk om AI met B1 uit te proberen voordat je ergens voor betaalt.
 :::
 
 ## Instellen
@@ -254,5 +255,5 @@ Iedereen met de link kan vragen in gewone taal stellen. De scopes van de sleutel
 
 - [API Keys](/docs/developer/api/api-keys): volledig overzicht van scopes
 - [MCP Server (referentie voor ontwikkelaars)](/docs/developer/api/mcp): protocoldetails en toolschema's
-- [Claude](./claude): hetzelfde idee, voor de modellen van Anthropic
+- [Claude](./claude.md): hetzelfde idee, voor de modellen van Anthropic
 - [REST API-referentie](/docs/developer/api/endpoints): alle endpoints die een actie van een aangepaste GPT kan aanroepen

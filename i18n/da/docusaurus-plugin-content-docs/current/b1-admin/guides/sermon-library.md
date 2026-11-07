@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Byg dit prædikenbibliothek og live stream"
+description: "Importér dine YouTube- eller Vimeo-prædikener, organisér dem i playlister, og opsæt tilbagevendende livestreams med chat i B1 Admin til dit website."
 ---
 
 # Byg dit prædikenbibliothek og live stream

@@ -1,5 +1,7 @@
 ---
-title: "Erste Schritte"
+title: "Erste Schritte mit B1 Mobile (veraltet)"
+sidebar_label: "Erste Schritte"
+description: "Richten Sie B1 Mobile ein: App finden, mit Ihrem ChurchApps-Konto anmelden und Gemeinde wählen. Hinweis: B1 Mobile ist zugunsten der PWA veraltet."
 ---
 
 # Erste Schritte
@@ -25,10 +27,10 @@ Das ist alles. Nachdem Sie Ihre Kirche ausgewählt haben, lädt die App das Bran
 
 ## In Diesem Abschnitt
 
-- [App Installieren](./installing) – Wo Sie B1 Mobile herunterladen und Geräteanforderungen.
-- [Anmeldung](./logging-in) – Wie Sie sich anmelden oder ein neues Konto erstellen.
-- [Kirchen Wechseln](./switching-churches) – Wie Sie zwischen Kirchen wechseln, wenn Sie zu mehr als einer gehören.
+- [App Installieren](./installing.md) – Wo Sie B1 Mobile herunterladen und Geräteanforderungen.
+- [Anmeldung](./logging-in.md) – Wie Sie sich anmelden oder ein neues Konto erstellen.
+- [Kirchen Wechseln](./switching-churches.md) – Wie Sie zwischen Kirchen wechseln, wenn Sie zu mehr als einer gehören.
 
 :::tip
-B1 Mobile verwendet das gleiche ChurchApps-Konto wie alle anderen ChurchApps-Produkte. Wenn Sie bereits ein Konto von [B1.church](../../b1-church/), B1 Admin oder Lessons.church haben, können Sie diese gleichen Anmeldedaten verwenden.
+B1 Mobile verwendet das gleiche ChurchApps-Konto wie alle anderen ChurchApps-Produkte. Wenn Sie bereits ein Konto von [B1.church](../../b1-church/index.md), B1 Admin oder Lessons.church haben, können Sie diese gleichen Anmeldedaten verwenden.
 :::

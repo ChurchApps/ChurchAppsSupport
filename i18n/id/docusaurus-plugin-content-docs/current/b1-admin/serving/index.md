@@ -1,5 +1,7 @@
 ---
-title: "Pelayanan"
+title: "Ikhtisar Serving di B1 Admin"
+sidebar_label: "Pelayanan"
+description: "Koordinasikan relawan dan rencanakan ibadah di area Serving B1 Admin, dari tab pelayanan dan tim hingga rencana ibadah, lagu, dan tugas."
 ---
 
 # Pelayanan

@@ -1,5 +1,6 @@
 ---
 title: "Navigációs stílusok"
+description: "Tömör és áttetsző weboldal-navigációs sávok színeinek testreszabása a B1 Adminban, beleértve a link-, hover- és aktív állapotokat egyházi weboldalához."
 ---
 
 # Navigációs stílusok

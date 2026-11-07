@@ -1,5 +1,6 @@
 ---
 title: "B1App'te Gezinme"
+description: "Telefon veya bilgisayarda B1.church üye portalında yolunuzu bulun: Ana Sayfa paneli, alttaki sekme çubuğu, Daha Fazla sayfası ve Ben sayfası."
 ---
 
 # B1App'te Gezinme
@@ -92,7 +93,7 @@ Ayrıntı sayfaları -- bir grup, bir plan, Ben sayfanız, Planlar ve Bağış e
 
 ## Ben Sayfası
 
-**Ben** (`/mobile/me`) kişisel merkezinizdir. Adınızı ve fotoğrafınızı, **Profili Düzenle** ve **Ayarlar** ([bildirim tercihleri](./notification-preferences.md)) düğmeleriyle gösterir. Ardından sizin için yaklaşan şeyleri gösterir -- hizmet görevleri, etkinlik kayıtları ve grup etkinlikleri. Bunların ardından hane halkınız, gruplarınız, bu yılki [bağışlarınız](../giving/), gönderdiğiniz formlar, katılım geçmişiniz, [kayıtlarınız](../events/my-registrations.md) ve son bildirimleriniz ile mesajlarınız gelir. Ayrıntılar için bkz. [Ben Sayfası](./me-page).
+**Ben** (`/mobile/me`) kişisel merkezinizdir. Adınızı ve fotoğrafınızı, **Profili Düzenle** ve **Ayarlar** ([bildirim tercihleri](./notification-preferences.md)) düğmeleriyle gösterir. Ardından sizin için yaklaşan şeyleri gösterir -- hizmet görevleri, etkinlik kayıtları ve grup etkinlikleri. Bunların ardından hane halkınız, gruplarınız, bu yılki [bağışlarınız](../giving/index.md), gönderdiğiniz formlar, katılım geçmişiniz, [kayıtlarınız](../events/my-registrations.md) ve son bildirimleriniz ile mesajlarınız gelir. Ayrıntılar için bkz. [Ben Sayfası](./me-page.md).
 
 Oturum açmadıysanız Ben sayfası bunun yerine bir **Giriş Yap** düğmesi gösterir.
 

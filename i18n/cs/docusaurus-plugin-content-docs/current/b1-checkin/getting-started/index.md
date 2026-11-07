@@ -1,5 +1,7 @@
 ---
-title: "Začínáme"
+title: "Začínáme s B1 Checkin"
+sidebar_label: "Začínáme"
+description: "Nastavte kiosk B1 Checkin na tabletu Android: nainstalujte aplikaci, přihlaste se, vyberte církev a volitelně připojte tiskárnu štítků."
 ---
 
 # Začínáme s B1 Church Checkin
@@ -27,9 +29,9 @@ Nastavení B1 Church Checkin zabere jen pár minut. Tato sekce vás provede inst
 
 Při prvním spuštění aplikace projdete třemi kroky:
 
-1. **[Přihlášení](./logging-in)** -- Zadejte svůj e-mail a heslo a ověřte se.
-2. **[Výběr sboru](./logging-in)** -- Pokud je váš účet propojen s více sbory, vyberte ten, který tento kiosek bude obsluhovat.
-3. **[Nastavení tiskárny](./printer-setup)** -- Nakonfigurujte síťovou tiskárnu pro tisk štítků, nebo tento krok přeskočte, pokud štítky nepotřebujete.
+1. **[Přihlášení](./logging-in.md)** -- Zadejte svůj e-mail a heslo a ověřte se.
+2. **[Výběr sboru](./logging-in.md)** -- Pokud je váš účet propojen s více sbory, vyberte ten, který tento kiosek bude obsluhovat.
+3. **[Nastavení tiskárny](./printer-setup.md)** -- Nakonfigurujte síťovou tiskárnu pro tisk štítků, nebo tento krok přeskočte, pokud štítky nepotřebujete.
 
 Po prvním přihlášení si aplikace uloží vaše přihlašovací údaje a výběr sboru. Při dalších spuštěních přejde rovnou na obrazovku bohoslužeb.
 
@@ -43,6 +45,6 @@ Před nastavením kiosku se ujistěte, že správce vašeho sboru v B1 Admin nas
 
 ## Další kroky
 
-- [Přihlášení](./logging-in) -- Podrobné pokyny k přihlášení a výběru sboru.
-- [Nastavení tiskárny](./printer-setup) -- Jak najít, vybrat a otestovat štítkovou tiskárnu.
-- [Postup odbavení](../check-in/) -- Seznamte se s celým postupem odbavení, jakmile bude kiosek nastaven.
+- [Přihlášení](./logging-in.md) -- Podrobné pokyny k přihlášení a výběru sboru.
+- [Nastavení tiskárny](./printer-setup.md) -- Jak najít, vybrat a otestovat štítkovou tiskárnu.
+- [Postup odbavení](../check-in/index.md) -- Seznamte se s celým postupem odbavení, jakmile bude kiosek nastaven.

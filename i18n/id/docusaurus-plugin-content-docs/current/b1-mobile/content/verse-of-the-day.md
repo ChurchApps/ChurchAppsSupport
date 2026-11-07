@@ -1,5 +1,7 @@
 ---
-title: "Ayat Hari Ini"
+title: "Ayat Hari Ini di B1 Mobile"
+sidebar_label: "Ayat Hari Ini"
+description: "Buka layar Ayat Hari Ini di B1 Mobile untuk melihat ayat Alkitab hari ini sebagai gambar sesuai orientasi ponsel atau tablet, diperbarui setiap hari."
 ---
 
 # Ayat Hari Ini
@@ -13,7 +15,7 @@ Layar Ayat Hari Ini menampilkan satu ayat Alkitab setiap hari dalam bentuk gamba
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Gereja Anda harus mengaktifkan fitur Ayat Hari Ini
 
 </div>
@@ -46,5 +48,5 @@ Ayat Hari Ini adalah fitur konten bawaan dari B1 Mobile. Jika Anda tidak melihat
 
 ## Artikel Terkait
 
-- [Alkitab](./bible) -- Baca bagian Alkitab lengkap di pembaca bawaan
-- [Khotbah](./sermons) -- Tonton khotbah yang direkam dari gereja Anda
+- [Alkitab](./bible.md) -- Baca bagian Alkitab lengkap di pembaca bawaan
+- [Khotbah](./sermons.md) -- Tonton khotbah yang direkam dari gereja Anda

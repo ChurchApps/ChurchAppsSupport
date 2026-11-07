@@ -1,5 +1,7 @@
 ---
-title: "Hizmet"
+title: "B1.church'te Gönüllü Hizmet ve Kayıt"
+sidebar_label: "Hizmet"
+description: "B1.church'te gönüllü fırsatlarına göz atın, açık pozisyonlara kaydolun, hizmet atamalarınızı görün ve son tarihten önce kaydınızı iptal edin."
 ---
 
 # Hizmet
@@ -14,8 +16,8 @@ B1.church'teki Hizmet bölümü, gönüllü fırsatlarına göz atmanızı ve ki
 
 - **Gönüllü fırsatlarına göz atın** -- Gönüllü ihtiyacı olan açık görevleri bulunan yaklaşan hizmet planlarını görün.
 - **Görevlere kayıt olun** -- Bir görev seçin ve tek tıklamayla kendinizi kaydedin.
-- **Planlarınızı görüntüleyin** -- Yaklaşan ve geçmiş [hizmet atamalarınızı](../plans/viewing-plans) görün.
-- **Atamalara yanıt verin** -- Size atanmış görevleri Planlar sayfasından veya Ana sayfadaki **Hizmet ediyorsunuz** bölümünden kabul edin ya da reddedin. Planlarınız kabul ettikten sonra değişirse, hizmet sona erene kadar [kabul edilmiş bir atamayı reddedebilirsiniz](../plans/viewing-plans#declining-an-accepted-assignment).
+- **Planlarınızı görüntüleyin** -- Yaklaşan ve geçmiş [hizmet atamalarınızı](../plans/viewing-plans.md) görün.
+- **Atamalara yanıt verin** -- Size atanmış görevleri Planlar sayfasından veya Ana sayfadaki **Hizmet ediyorsunuz** bölümünden kabul edin ya da reddedin. Planlarınız kabul ettikten sonra değişirse, hizmet sona erene kadar [kabul edilmiş bir atamayı reddedebilirsiniz](../plans/viewing-plans.md#declining-an-accepted-assignment).
 - **Kayıtları kaldırın** -- Planlarınız değişirse, son tarihten önce kendi kaydınızı iptal edin.
 
 ## Nasıl Çalışır
@@ -28,5 +30,5 @@ Yalnızca kilise yöneticinizin kendi kendine kayıt için etkinleştirdiği gö
 
 ## Daha Fazla Bilgi
 
-- [Gönüllü Kaydı](./volunteer-signup) -- Gönüllü görevlerine göz atma ve kayıt olma konusunda adım adım rehber
-- [Planları Görüntüleme](../plans/viewing-plans) -- Atanmış hizmet planlarınızı ve ibadet programlarınızı görün
+- [Gönüllü Kaydı](./volunteer-signup.md) -- Gönüllü görevlerine göz atma ve kayıt olma konusunda adım adım rehber
+- [Planları Görüntüleme](../plans/viewing-plans.md) -- Atanmış hizmet planlarınızı ve ibadet programlarınızı görün

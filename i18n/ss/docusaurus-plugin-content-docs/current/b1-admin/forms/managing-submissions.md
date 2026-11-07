@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Lokutfunyelweko"
+description: "Bheka, phrinta futsi udlulisele tibhalo letitfunyelwe ku-B1 Admin kumuntfu lofanele, ulandzele emakhadini etivakashi netincumo tekuthandaza."
 ---
 
 # Kuphatsa Lokutfunyelweko

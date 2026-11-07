@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Asenna B1 Admin paikallisesti: kloonaa React/Vite-hallintanäkymä, määritä API-päätepisteet .env-tiedostoon ja käynnistä kehityspalvelin."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin on kirkkojen hallintanäkymä, React-pohjainen yhden sivun sovellus, jok
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js 22+** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites)
-- Määritä API-kohde (demo tai paikallinen) -- katso [Ympäristömuuttujat](../setup/environment-variables)
+- Asenna **Node.js 22+** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites.md)
+- Määritä API-kohde (demo tai paikallinen) -- katso [Ympäristömuuttujat](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Tuotantoversiot julkaistaan **S3 + CloudFront** -palveluun:
 3. CloudFront-välimuistin mitätöinti käynnistetään, jotta uusi versio tarjoillaan
 
 :::tip
-Yksityiskohtaiset julkaisuohjeet löydät [Web-sovellusten julkaisu](../deployment/web-apps) -oppaasta.
+Yksityiskohtaiset julkaisuohjeet löydät [Web-sovellusten julkaisu](../deployment/web-apps.md) -oppaasta.
 :::

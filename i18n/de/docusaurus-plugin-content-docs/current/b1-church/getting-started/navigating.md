@@ -1,5 +1,6 @@
 ---
 title: "Navigation in B1App"
+description: "Sich im B1.church-Mitgliederportal auf Handy oder Computer zurechtfinden: Startseite, untere Tab-Leiste, Seite Mehr und Seite Me."
 ---
 
 # Navigation in B1App
@@ -92,7 +93,7 @@ Detailseiten – eine Gruppe, ein Plan, Ihre Me-Seite sowie die Bildschirme Plä
 
 ## Die Me-Seite
 
-**Me** (`/mobile/me`) ist Ihr persönlicher Mittelpunkt. Sie zeigt Ihren Namen und Ihr Foto mit den Schaltflächen **Profil bearbeiten** und **Einstellungen** ([Benachrichtigungseinstellungen](./notification-preferences.md)), danach, was für Sie ansteht – Dienstaufgaben, Veranstaltungsanmeldungen und Gruppenveranstaltungen –, gefolgt von Ihrem Haushalt, Ihren Gruppen, Ihren [Spenden](../giving/) in diesem Jahr, den von Ihnen eingereichten Formularen, Ihrer Anwesenheitshistorie, Ihren [Anmeldungen](../events/my-registrations.md) sowie Ihren aktuellen Benachrichtigungen und Nachrichten. Details finden Sie unter [Die Me-Seite](./me-page).
+**Me** (`/mobile/me`) ist Ihr persönlicher Mittelpunkt. Sie zeigt Ihren Namen und Ihr Foto mit den Schaltflächen **Profil bearbeiten** und **Einstellungen** ([Benachrichtigungseinstellungen](./notification-preferences.md)), danach, was für Sie ansteht – Dienstaufgaben, Veranstaltungsanmeldungen und Gruppenveranstaltungen –, gefolgt von Ihrem Haushalt, Ihren Gruppen, Ihren [Spenden](../giving/index.md) in diesem Jahr, den von Ihnen eingereichten Formularen, Ihrer Anwesenheitshistorie, Ihren [Anmeldungen](../events/my-registrations.md) sowie Ihren aktuellen Benachrichtigungen und Nachrichten. Details finden Sie unter [Die Me-Seite](./me-page.md).
 
 Wenn Sie abgemeldet sind, zeigt die Me-Seite stattdessen eine Schaltfläche **Anmelden**.
 

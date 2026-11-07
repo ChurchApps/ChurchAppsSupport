@@ -1,5 +1,6 @@
 ---
 title: "Membership 엔드포인트"
+description: "ChurchApps Membership API 엔드포인트 참조: 사람, 가구, 그룹, 역할, 양식, 설정을 다루며, 인증 및 권한 규칙을 설명합니다."
 ---
 
 # Membership 엔드포인트
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 기본 경로: `/membership/users`
 
-로그인, 등록, 비밀번호 관리 엔드포인트는 [인증 및 권한](./authentication)을 참고하세요.
+로그인, 등록, 비밀번호 관리 엔드포인트는 [인증 및 권한](./authentication.md)을 참고하세요.
 
 | 메서드 | 경로 | 인증 | 권한 | 설명 |
 |--------|------|------|------|------|
@@ -342,6 +343,6 @@ Authorization: Bearer <token>
 
 ## 관련 문서
 
-- [인증 및 권한](./authentication) — 로그인 흐름, JWT, OAuth, 권한 모델
-- [출석 엔드포인트](./attendance) — 예배 및 방문 기록
-- [모듈 구조](../module-structure) — 코드 구성 패턴
+- [인증 및 권한](./authentication.md) — 로그인 흐름, JWT, OAuth, 권한 모델
+- [출석 엔드포인트](./attendance.md) — 예배 및 방문 기록
+- [모듈 구조](../module-structure.md) — 코드 구성 패턴

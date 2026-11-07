@@ -1,5 +1,6 @@
 ---
 title: "Struttura dei Moduli"
+description: "Spiega l'organizzazione dei moduli dell'API: controller, repository, gateway, controlli di accesso e le sei funzioni Lambda negli ambienti di sviluppo B1."
 ---
 
 # Struttura dei Moduli
@@ -13,8 +14,8 @@ Ogni modulo dell'API segue una struttura interna coerente con controller, reposi
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura l'API in locale -- vedi [Configurazione Locale dell'API](./local-setup)
-- Rivedi l'architettura del [Database](./database) per comprendere il livello di accesso ai dati
+- Configura l'API in locale -- vedi [Configurazione Locale dell'API](./local-setup.md)
+- Rivedi l'architettura del [Database](./database.md) per comprendere il livello di accesso ai dati
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Comunicazione Cross-Modulo
 
-Ogni modulo possiede il proprio database (vedi [Database](./database)), e un modulo non interroga mai direttamente le tabelle di un altro modulo. Quando un modulo ha bisogno di dati posseduti da un altro -- ad esempio, il modulo doing che risolve le persone da membership -- passa attraverso il **gateway** del modulo proprietario in `src/shared/modules/`:
+Ogni modulo possiede il proprio database (vedi [Database](./database.md)), e un modulo non interroga mai direttamente le tabelle di un altro modulo. Quando un modulo ha bisogno di dati posseduti da un altro -- ad esempio, il modulo doing che risolve le persone da membership -- passa attraverso il **gateway** del modulo proprietario in `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Localmente, la funzione `web` viene eseguita sulla porta 8084 e la funzione `soc
 
 ## Articoli Correlati
 
-- **[Database](./database)** -- Stringhe di connessione, script di schema e pattern di accesso ai dati
-- **[Configurazione Locale dell'API](./local-setup)** -- Guida completa passo per passo
-- **[ApiHelper](../shared-libraries/api-helper)** -- La libreria condivisa che fornisce `CustomBaseController` e il middleware di autenticazione
+- **[Database](./database.md)** -- Stringhe di connessione, script di schema e pattern di accesso ai dati
+- **[Configurazione Locale dell'API](./local-setup.md)** -- Guida completa passo per passo
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- La libreria condivisa che fornisce `CustomBaseController` e il middleware di autenticazione

@@ -1,5 +1,6 @@
 ---
 title: "Pomocnicy – przewodniki"
+description: "Przewodniki dla ról w Lessons.church: każdy wolontariusz widzi tylko swoje kroki; drukuj lub udostępniaj je przed zajęciami."
 ---
 
 # Przewodniki dla wolontariuszy

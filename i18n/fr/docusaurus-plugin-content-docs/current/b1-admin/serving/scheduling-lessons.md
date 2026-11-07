@@ -1,5 +1,7 @@
 ---
-title: "Programmer des leçons"
+title: "Planifier des leçons de Lessons.church dans B1 Admin"
+sidebar_label: "Programmer des leçons"
+description: "Liez Lessons.church à B1 Admin, puis planifiez des leçons, programmez une série en lot ou appliquez un plan annuel aux plans de service d'un ministère."
 ---
 
 # Programmer des leçons depuis Lessons.church

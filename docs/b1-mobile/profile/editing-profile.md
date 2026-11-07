@@ -1,5 +1,7 @@
 ---
-title: "Editing Your Profile"
+title: "Editing Your Profile in the B1 Mobile App"
+sidebar_label: "Editing Your Profile"
+description: "Update your name, email, phone, address, and profile photo in the B1 Mobile app so your church's records and directory stay current."
 ---
 
 # Editing Your Profile
@@ -13,7 +15,7 @@ The **Profile** tab lets you update your personal information so your church alw
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 
 </div>
 
@@ -34,7 +36,7 @@ Your profile includes the following personal details:
 3. Tap on the field you want to update and make your changes.
 4. Save your changes when you are done.
 
-Your updated information is synced automatically. Anyone who views your profile (subject to your [privacy settings](./privacy-settings)) will see the new details right away.
+Your updated information is synced automatically. Anyone who views your profile (subject to your [privacy settings](./privacy-settings.md)) will see the new details right away.
 
 :::tip
 Keep your email address and phone number current. Your church uses this information to send you important updates and reminders.
@@ -46,7 +48,7 @@ You can add or change your profile photo from the **Profile** tab. Your photo ap
 
 ## Changes Across ChurchApps
 
-Because all ChurchApps services share the same account system, a change you make in B1 Mobile is immediately visible in [B1.church](../../b1-church/), your church's admin tools, and any other connected services. You do not need to update your information separately in each place.
+Because all ChurchApps services share the same account system, a change you make in B1 Mobile is immediately visible in [B1.church](../../b1-church/index.md), your church's admin tools, and any other connected services. You do not need to update your information separately in each place.
 
 :::info
 Some churches require administrator approval for certain profile changes. If your update does not appear immediately, check the **Pending** tab on your profile screen for its status.
@@ -54,5 +56,5 @@ Some churches require administrator approval for certain profile changes. If you
 
 ## Related Articles
 
-- [Household](./household) -- View and manage your family members
-- [Privacy Settings](./privacy-settings) -- Control what others can see about you
+- [Household](./household.md) -- View and manage your family members
+- [Privacy Settings](./privacy-settings.md) -- Control what others can see about you

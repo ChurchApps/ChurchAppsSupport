@@ -1,5 +1,6 @@
 ---
 title: "Revisjon logg & omgjørbare partier"
+description: "Dekker API-ets revisjonslogg, som registrerer alle brukerendringer på tvers av moduler, og hvordan importbatcher kan angres rad for rad i B1 Admin."
 ---
 
 # Revisjon logg & omgjørbare partier

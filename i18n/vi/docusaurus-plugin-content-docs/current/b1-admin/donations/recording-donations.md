@@ -1,5 +1,6 @@
 ---
 title: "Ghi nhận tiền quyên góp"
+description: "Ghi nhận dâng hiến trong B1 Admin bằng cách tạo đợt, nhập từng khoản, nhập tệp CSV hoặc ghi một khoản từ hồ sơ người dâng."
 ---
 
 # Ghi nhận tiền quyên góp

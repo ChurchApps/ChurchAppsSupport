@@ -1,5 +1,6 @@
 ---
 title: "Pendaftaran Berbayar"
+description: "Atur pendaftaran acara berbayar di B1 Admin: jenis peserta berharga, tambahan, kode diskon, daftar tunggu, dan pembayaran lewat penyedia pemberian Anda."
 ---
 
 # Pendaftaran Berbayar
@@ -17,7 +18,7 @@ Pendaftaran acara dapat lebih dari sekadar menghitung jumlah peserta. Anda dapat
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Aktifkan pendaftaran untuk acara terlebih dahulu — lihat [Membuat Kalender](creating-calendars#enabling-event-registration)
+- Aktifkan pendaftaran untuk acara terlebih dahulu — lihat [Membuat Kalender](./creating-calendars.md#enabling-event-registration)
 - Untuk menerima pembayaran online, gereja Anda perlu [mengonfigurasi pemberian online](../donations/online-giving-setup.md) (Stripe, PayPal, atau Kingdom Funding). Acara gratis tidak memerlukan pengaturan pemberian. Tanpa pemberian online, pendaftaran berbayar tetap dapat digunakan, tetapi orang membayar langsung ke gereja — lihat [Gereja Tanpa Pemberian Online](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Setiap kode menampilkan jumlah **Uses** sehingga Anda dapat melihat seberapa ser
 Aktifkan **Enable Waitlist** di kartu Registration Settings. Ketika acara mencapai kapasitas:
 
 - Pendaftar baru akan ditawari tempat di daftar tunggu alih-alih ditolak. Mereka menyelesaikan proses pendaftaran yang sama (pembayaran dilewati selama masih dalam daftar tunggu).
-- Ketika seseorang membatalkan, pendaftaran daftar tunggu yang paling lama akan **dipindahkan secara otomatis** dan menerima email bahwa ada tempat yang tersedia. Jika mereka masih memiliki tagihan, email tersebut akan menautkan mereka ke [My Registrations](../../b1-church/events/my-registrations) di situs B1 gereja Anda, tempat mereka dapat menyelesaikan pembayaran.
+- Ketika seseorang membatalkan, pendaftaran daftar tunggu yang paling lama akan **dipindahkan secara otomatis** dan menerima email bahwa ada tempat yang tersedia. Jika mereka masih memiliki tagihan, email tersebut akan menautkan mereka ke [My Registrations](../../b1-church/events/my-registrations.md) di situs B1 gereja Anda, tempat mereka dapat menyelesaikan pembayaran.
 - Anda dapat memindahkan seseorang secara manual kapan saja dengan tindakan **Promote** pada baris daftar tunggu — berguna setelah menaikkan kapasitas acara.
 
 :::info
@@ -79,7 +80,7 @@ Buka acara dari halaman Registrations untuk melihat semua pendaftaran. Judul kar
 
 - Klik ikon detail pada baris untuk membuka dialog **Registration Details** — anggota, pilihan tambahan, sudah dibayar/saldo, dan tabel **Payments** yang mencantumkan setiap pembayaran (jumlah, metode, tanggal).
 - **Export CSV** mengunduh seluruh daftar dengan kolom untuk anggota, jenis peserta, pilihan tambahan, total dibayar/total/saldo, status, dan satu kolom untuk setiap pertanyaan pendaftaran.
-- **Add Attendee** mencatat pendaftaran offline atau melalui telepon untuk siapa pun di gereja Anda. Pilih orangnya dan, pada acara berbayar, jenis pesertanya. Kartu mereka tidak akan ditagih: pendaftaran berbayar disimpan sebagai **pending** dengan seluruh jumlah sebagai saldo yang harus dibayar. Jika gereja Anda memiliki pemberian online, orang tersebut dapat membayarnya dari [My Registrations](../../b1-church/events/my-registrations); jika tidak, kumpulkan pembayarannya secara langsung. Anda memerlukan izin Registrations Edit untuk menambahkan peserta.
+- **Add Attendee** mencatat pendaftaran offline atau melalui telepon untuk siapa pun di gereja Anda. Pilih orangnya dan, pada acara berbayar, jenis pesertanya. Kartu mereka tidak akan ditagih: pendaftaran berbayar disimpan sebagai **pending** dengan seluruh jumlah sebagai saldo yang harus dibayar. Jika gereja Anda memiliki pemberian online, orang tersebut dapat membayarnya dari [My Registrations](../../b1-church/events/my-registrations.md); jika tidak, kumpulkan pembayarannya secara langsung. Anda memerlukan izin Registrations Edit untuk menambahkan peserta.
 
 :::info
 Pengembalian dana tidak diproses di dalam B1. Jika Anda perlu mengembalikan dana untuk pendaftaran berbayar yang dibatalkan, lakukan pengembalian dana dari dasbor penyedia pemberian Anda (misalnya Stripe).
@@ -94,12 +95,12 @@ Pembayaran diproses melalui gateway pemberian yang sama dengan yang sudah diguna
 Jika gereja Anda belum mengatur penyedia pemberian, acara berbayar tetap dapat menerima pendaftaran. Langkah pembayaran akan memberi tahu pendaftar bahwa pembayaran online tidak tersedia dan mereka dapat membayar langsung ke gereja, serta tombol **Register and Pay Later** akan menyimpan pendaftaran. Pendaftaran disimpan sebagai **pending** dengan seluruh jumlah sebagai saldo yang harus dibayar, dan muncul di daftar dengan peringatan saldo. Kumpulkan uangnya dengan cara yang biasa dilakukan gereja Anda.
 
 :::info
-B1 tidak memiliki cara untuk menandai pembayaran offline sebagai sudah diterima. Saldo yang harus dibayar tetap ada di daftar dan di kartu [My Registrations](../../b1-church/events/my-registrations) pendaftar setelah Anda menerima pembayaran, jadi simpan catatan Anda sendiri tentang siapa saja yang sudah membayar.
+B1 tidak memiliki cara untuk menandai pembayaran offline sebagai sudah diterima. Saldo yang harus dibayar tetap ada di daftar dan di kartu [My Registrations](../../b1-church/events/my-registrations.md) pendaftar setelah Anda menerima pembayaran, jadi simpan catatan Anda sendiri tentang siapa saja yang sudah membayar.
 :::
 
 ## Artikel Terkait
 
-- [Membuat Kalender](creating-calendars#enabling-event-registration) — mengaktifkan pendaftaran dan pengaturan dasar
+- [Membuat Kalender](./creating-calendars.md#enabling-event-registration) — mengaktifkan pendaftaran dan pengaturan dasar
 - [Pengaturan Pemberian Online](../donations/online-giving-setup.md) — mengonfigurasi gateway pembayaran yang digunakan saat checkout
-- [Mendaftar untuk Acara](../../b1-church/events/registering) — apa yang dilihat anggota saat mendaftar
-- [My Registrations](../../b1-church/events/my-registrations) — cara anggota membayar saldo dan mengedit pendaftaran
+- [Mendaftar untuk Acara](../../b1-church/events/registering.md) — apa yang dilihat anggota saat mendaftar
+- [My Registrations](../../b1-church/events/my-registrations.md) — cara anggota membayar saldo dan mengedit pendaftaran

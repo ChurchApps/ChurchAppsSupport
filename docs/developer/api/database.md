@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Learn how the ChurchApps API splits data across six MySQL databases, one per module, and how to configure connections and initialize them."
 ---
 
 # Database
@@ -13,8 +14,8 @@ The ChurchApps API uses a **database-per-module** architecture. Each of the six 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites)
-- Configure database connection strings in your `.env` file -- see [Environment Variables](../setup/environment-variables)
+- Install **MySQL 8.0+** -- see [Prerequisites](../setup/prerequisites.md)
+- Configure database connection strings in your `.env` file -- see [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Key Design Decisions
 
 - **One database per module** -- Each module maintains its own MySQL database with a dedicated connection pool (managed by `KyselyPool`). This keeps modules decoupled and allows independent schema evolution.
-- **Exclusive ownership** -- A module's tables are read and written only by that module's own code. When another module needs the data, it calls the owning module's gateway rather than querying the tables itself -- see [Cross-Module Communication](./module-structure#cross-module-communication).
+- **Exclusive ownership** -- A module's tables are read and written only by that module's own code. When another module needs the data, it calls the owning module's gateway rather than querying the tables itself -- see [Cross-Module Communication](./module-structure.md#cross-module-communication).
 - **Repository pattern without an ORM** -- All data access goes through repository classes that build typed SQL with the Kysely query builder against the module's schema. This gives full control over query performance and behavior.
 - **Multi-tenant by design** -- Every query is scoped by `churchId`. All tables include a `churchId` column, and the repository layer enforces tenant isolation automatically.
 
@@ -129,5 +130,5 @@ This constraint is what makes the module boundaries real: each schema can evolve
 
 ## Related Articles
 
-- **[Module Structure](./module-structure)** -- How controllers and repositories are organized within each module
-- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide
+- **[Module Structure](./module-structure.md)** -- How controllers and repositories are organized within each module
+- **[Local API Setup](./local-setup.md)** -- Full step-by-step setup guide

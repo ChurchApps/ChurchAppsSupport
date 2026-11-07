@@ -1,5 +1,6 @@
 ---
 title: "Guide: Vytvořte si knihovnu kázání a živý přenos"
+description: "Importujte kázání z YouTube nebo Vimeo do B1 Admin, uspořádejte je do playlistů a nastavte opakované živé přenosy s chatem pro web sboru."
 ---
 
 # Vytvořte si knihovnu kázání a živý přenos

@@ -1,5 +1,6 @@
 ---
 title: "계정 만들기"
+description: "Lessons.church에서 ChurchApps 계정을 등록한 다음, 새 교회 프로필이나 기존 프로필에 연결하여 교실과 일정을 관리합니다."
 ---
 
 # 계정 만들기

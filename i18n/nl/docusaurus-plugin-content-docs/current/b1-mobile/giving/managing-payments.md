@@ -1,5 +1,6 @@
 ---
 title: "Betalingsmethoden beheren"
+description: "Voeg opgeslagen kaarten toe, bekijk en verwijder ze in het tabblad Beheren van B1 Mobile, zodat herhaalde donaties sneller gaan."
 ---
 
 # Betalingsmethoden beheren
@@ -13,7 +14,7 @@ Het tabblad **Beheren** in de geefpagina laat je je opgeslagen betalingsmethoden
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [log in](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [log in](../getting-started/logging-in.md) op je account
 
 </div>
 
@@ -31,7 +32,7 @@ Om een nieuwe kaart toe te voegen:
 4. Voer je kaartgegevens in. De informatie wordt veilig naar **Stripe** voor verwerking verzonden.
 5. Nadat het is opgeslagen, verschijnt de nieuwe kaart in je lijst met betalingsmethoden.
 
-Je opgeslagen kaart is dan beschikbaar als betalingsoptie de volgende keer dat je [een donatie doet](./making-donations) vanuit het tabblad **Doneren**.
+Je opgeslagen kaart is dan beschikbaar als betalingsoptie de volgende keer dat je [een donatie doet](./making-donations.md) vanuit het tabblad **Doneren**.
 
 ## Een betalingsmethode verwijderen
 
@@ -44,7 +45,7 @@ Als je een kaart niet meer op bestand wilt, kun je deze uit het tabblad **Behere
 De kaart verschijnt niet langer als betalingsoptie wanneer je een donatie doet.
 
 :::info
-Het verwijderen van een betalingsmethode beïnvloedt geen eerdere donaties. Je [donatiegeschiedenis](./donation-history) blijft ongewijzigd.
+Het verwijderen van een betalingsmethode beïnvloedt geen eerdere donaties. Je [donatiegeschiedenis](./donation-history.md) blijft ongewijzigd.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Houd minstens één betalingsmethode opgeslagen voor snel geven. Op deze manier 
 
 ## Gerelateerde artikelen
 
-- [Een donatie doen](./making-donations) -- Leer hoe je een gift doet met een opgeslagen betalingsmethode
-- [Donatiegeschiedenis](./donation-history) -- Bekijk je donatiesamenvatting en vorige donaties
+- [Een donatie doen](./making-donations.md) -- Leer hoe je een gift doet met een opgeslagen betalingsmethode
+- [Donatiegeschiedenis](./donation-history.md) -- Bekijk je donatiesamenvatting en vorige donaties

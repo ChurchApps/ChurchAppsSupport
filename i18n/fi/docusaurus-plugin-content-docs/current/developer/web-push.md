@@ -1,5 +1,6 @@
 ---
 title: "Web Push -ilmoitukset"
+description: "VAPID-avaimet, WebPushHelper-asiakas ja service worker -käsittely, jotta B1.church ja B1 Admin voivat lähettää jäsenille selainpush-ilmoituksia."
 ---
 
 # Web Push -ilmoitukset
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Aiheeseen liittyvät sivut
 
-- [Ilmoitusten arkkitehtuuri](./architecture/notifications) -- Koko sovelluksen sisäisten, push- ja sähköposti-ilmoitusten porrastus sekä muistutusmoottori
-- [Reaaliaikainen arkkitehtuuri](./realtime) -- WebSocket-toimitus. Push-ilmoitus lähtee nyt samasta sovelluksen sisäisestä kanavasta socket-toimituksen rinnalla samalla kierroksella, eikä vain varavaihtoehtona, kun socket-toimitus ei onnistu
-- [Viestintärajapinnan päätepisteet](./api/endpoints/messaging) -- Ilmoitukset, laitteet ja muu viestintärajapinta
-- [AppHelper](./shared-libraries/app-helper) -- npm-paketti, joka toimittaa `WebPushHelper`-luokan
+- [Ilmoitusten arkkitehtuuri](./architecture/notifications.md) -- Koko sovelluksen sisäisten, push- ja sähköposti-ilmoitusten porrastus sekä muistutusmoottori
+- [Reaaliaikainen arkkitehtuuri](./realtime.md) -- WebSocket-toimitus. Push-ilmoitus lähtee nyt samasta sovelluksen sisäisestä kanavasta socket-toimituksen rinnalla samalla kierroksella, eikä vain varavaihtoehtona, kun socket-toimitus ei onnistu
+- [Viestintärajapinnan päätepisteet](./api/endpoints/messaging.md) -- Ilmoitukset, laitteet ja muu viestintärajapinta
+- [AppHelper](./shared-libraries/app-helper.md) -- npm-paketti, joka toimittaa `WebPushHelper`-luokan

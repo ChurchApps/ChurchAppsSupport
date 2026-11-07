@@ -1,5 +1,6 @@
 ---
 title: "Prostori, viri in načrtovanje"
+description: "Nastavite sobe, opremo, blokade in predloge dogodkov v B1 Admin, da skupine lahko zahtevajo rezervacije, vi pa jih odobrite brez podvojevanja."
 ---
 
 # Prostori, viri in načrtovanje
@@ -14,7 +15,7 @@ Prostori in viri vam omogočajo, da spremljate prostore in opremo vaše cerkve, 
 <h4>Preden začnete</h4>
 
 - Potrebujete skrbniški dostop do razdelka Koledarji v B1 Admin
-- Nastavite [skupine](../groups/creating-groups), katerih člani bodo oddajali zahteve za rezervacije
+- Nastavite [skupine](../groups/creating-groups.md), katerih člani bodo oddajali zahteve za rezervacije
 
 </div>
 
@@ -76,7 +77,7 @@ Ko ustvarjate nov dogodek, lahko osebje izbere obstoječo predlogo, da vnaprej i
 
 ## Sorodni članki
 
-- [Koledar razpoložljivosti](availability): oglejte si vse rezervacije na prvi pogled ter neposredno rezervirajte prostore ali vire
-- [Odobritve koledarja](approvals): odobrite ali zavrnite zahteve za rezervacijo prostorov in virov
-- [Ustvarjanje koledarjev](creating-calendars): nastavite koledarje dogodkov
-- [Ustvarjanje skupin](../groups/creating-groups): nastavite skupine, ki lahko rezervirajo prostore in vire
+- [Koledar razpoložljivosti](./availability.md): oglejte si vse rezervacije na prvi pogled ter neposredno rezervirajte prostore ali vire
+- [Odobritve koledarja](./approvals.md): odobrite ali zavrnite zahteve za rezervacijo prostorov in virov
+- [Ustvarjanje koledarjev](./creating-calendars.md): nastavite koledarje dogodkov
+- [Ustvarjanje skupin](../groups/creating-groups.md): nastavite skupine, ki lahko rezervirajo prostore in vire

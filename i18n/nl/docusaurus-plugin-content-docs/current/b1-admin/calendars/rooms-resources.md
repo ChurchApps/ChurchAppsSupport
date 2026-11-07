@@ -1,5 +1,6 @@
 ---
 title: "Ruimten, middelen en planning"
+description: "Stel in B1 Admin ruimtes, apparatuur, blokkades en sjablonen in, zodat groepen boekingen kunnen aanvragen en jij dubbele boekingen voorkomt."
 ---
 
 # Ruimten, middelen en planning
@@ -14,7 +15,7 @@ Met ruimten en middelen houd je bij welke ruimtes en apparatuur van je kerk gere
 <h4>Voordat je begint</h4>
 
 - Je hebt beheerdersrechten nodig voor de sectie Agenda's in B1 Admin
-- Stel [groepen](../groups/creating-groups) in waarvan de leden boekingsaanvragen indienen
+- Stel [groepen](../groups/creating-groups.md) in waarvan de leden boekingsaanvragen indienen
 
 </div>
 
@@ -76,7 +77,7 @@ Wanneer medewerkers een nieuw evenement aanmaken, kunnen ze een bestaand sjabloo
 
 ## Gerelateerde artikelen
 
-- [Beschikbaarheidskalender](availability): bekijk alle boekingen in één overzicht en boek ruimten of middelen rechtstreeks
-- [Agenda-goedkeuringen](approvals): keur boekingsaanvragen voor ruimten en middelen goed of wijs ze af
-- [Agenda's aanmaken](creating-calendars): stel evenementagenda's in
-- [Groepen aanmaken](../groups/creating-groups): stel groepen in die ruimten en middelen kunnen boeken
+- [Beschikbaarheidskalender](./availability.md): bekijk alle boekingen in één overzicht en boek ruimten of middelen rechtstreeks
+- [Agenda-goedkeuringen](./approvals.md): keur boekingsaanvragen voor ruimten en middelen goed of wijs ze af
+- [Agenda's aanmaken](./creating-calendars.md): stel evenementagenda's in
+- [Groepen aanmaken](../groups/creating-groups.md): stel groepen in die ruimten en middelen kunnen boeken

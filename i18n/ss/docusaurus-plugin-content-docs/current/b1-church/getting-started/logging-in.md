@@ -1,5 +1,7 @@
 ---
-title: "Kungena"
+title: "Kungena ku-B1.church ne-Portal Yelilungu"
+sidebar_label: "Kungena"
+description: "Ngena ku-portal yelilungu le-B1.church, sebentisa emakhodi wekuvikela avesi lesibili noma single sign-on, setsa kabusha iphasiwedi lebungakhunjwa, bese uphuma kumenyu ye-akhawunti."
 ---
 
 # Kungena
@@ -13,7 +15,7 @@ Kungena ku-B1.church kukunika kufinyelela ephothalini yemalungu lapho ungabona k
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Udzinga i-akhawunti ye-ChurchApps. Bona [Kucala](../getting-started/) kutsi udale leyakho.
+- Udzinga i-akhawunti ye-ChurchApps. Bona [Kucala](./index.md) kutsi udale leyakho.
 - Udzinga likheli le-B1.church lelibandla lakini (sibonelo, `https://yourchurchname.b1.church`).
 
 </div>
@@ -29,7 +31,7 @@ Ngemuva kwekungena, utawubuyiselwa ekhasini lobukulo ngaphambi kwekutsi uchofoze
 
 ## Kufinyelela Iphothali Yemalungu
 
-Nawusengenile, ungafinyelela iphothali yemalungu ngekuchofoza **libito** lakho lesekoneni lesekudla etulu ekhasini bese ukhetsa **Iphothali Yemalungu** ku-imenyu. Iphothali yemalungu yindzawo lapho tonkhe tinsiza takho tebandla tekwakho tikhona, kufaka [i-timeline](../community/timeline.md), [emacembu](../groups/), [kunikela](../giving/), kanye nalokunye.
+Nawusengenile, ungafinyelela iphothali yemalungu ngekuchofoza **libito** lakho lesekoneni lesekudla etulu ekhasini bese ukhetsa **Iphothali Yemalungu** ku-imenyu. Iphothali yemalungu yindzawo lapho tonkhe tinsiza takho tebandla tekwakho tikhona, kufaka [i-timeline](../community/timeline.md), [emacembu](../groups/index.md), [kunikela](../giving/index.md), kanye nalokunye.
 
 ## Imenyu Yakho Yemsebentisi
 

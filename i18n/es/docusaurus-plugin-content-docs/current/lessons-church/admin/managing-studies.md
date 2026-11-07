@@ -1,5 +1,6 @@
 ---
 title: "Gestionar estudios"
+description: "Crea, edita y categoriza estudios dentro de un programa en Lessons.church, y adjunta a cada uno resúmenes de serie o plantillas de boletín."
 ---
 
 # Gestionar estudios

@@ -1,5 +1,6 @@
 ---
 title: "Журнал аудиту та пакети з можливістю скасування"
+description: "Журнал аудиту Api фіксує кожну зміну користувача в усіх модулях, а пакети імпорту можна відкотити рядок за рядком у B1 Admin."
 ---
 
 # Журнал аудиту та пакети з можливістю скасування
@@ -155,6 +156,6 @@ BaseController.actionWrapper ──▶ derive {module, entityType, category, act
 
 ## Пов'язані сторінки
 
-- [Структура модуля](../api/module-structure): як контролер модуля, що не є membership, отримує доступ до репозиторіїв membership через `RepoManager`
-- [Пожертви](./giving): шляхи запису пожертв, які аудитуються як `sensitive`, навіть коли вони анонімні
-- [Ендпоінти membership](../api/endpoints/membership): REST-інтерфейс, який передає `X-Batch-Id` і надає `/auditlogs` та `/batches`
+- [Структура модуля](../api/module-structure.md): як контролер модуля, що не є membership, отримує доступ до репозиторіїв membership через `RepoManager`
+- [Пожертви](./giving.md): шляхи запису пожертв, які аудитуються як `sensitive`, навіть коли вони анонімні
+- [Ендпоінти membership](../api/endpoints/membership.md): REST-інтерфейс, який передає `X-Batch-Id` і надає `/auditlogs` та `/batches`

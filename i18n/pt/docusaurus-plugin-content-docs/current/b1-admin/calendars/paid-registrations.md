@@ -1,5 +1,6 @@
 ---
 title: "Inscrições pagas"
+description: "Configure inscrições pagas no B1 Admin: tipos de participante com preço, adicionais, cupons, lista de espera e cobrança pelo seu provedor de doações."
 ---
 
 # Inscrições pagas
@@ -13,7 +14,7 @@ A inscrição em eventos pode ir além de uma simples contagem de pessoas. Você
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Ative a inscrição no evento primeiro — veja [Criando calendários](creating-calendars#enabling-event-registration)
+- Ative a inscrição no evento primeiro — veja [Criando calendários](./creating-calendars.md#enabling-event-registration)
 - Para cobrar pagamentos online, a sua igreja precisa ter [doações online configuradas](../donations/online-giving-setup.md) (Stripe, PayPal ou Kingdom Funding). Eventos gratuitos não precisam de configuração de doações. Sem doações online, as inscrições pagas ainda funcionam, mas as pessoas pagam diretamente à igreja — veja [Igrejas sem doações online](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Cada código mostra uma contagem de **Usos**, para que você veja com que frequ�
 Ative **Ativar lista de espera** no cartão Configurações de inscrição. Quando o evento atinge a capacidade:
 
 - Novos inscritos recebem uma vaga na lista de espera em vez de serem recusados. Eles completam a mesma inscrição (o pagamento é pulado enquanto estiverem na lista de espera).
-- Quando alguém cancela, a inscrição mais antiga da lista de espera é **promovida automaticamente** e recebe um e-mail avisando que surgiu uma vaga. Se tiverem saldo em aberto, o e-mail leva a [Minhas inscrições](../../b1-church/events/my-registrations) no site B1 da sua igreja, onde podem concluir o pagamento.
+- Quando alguém cancela, a inscrição mais antiga da lista de espera é **promovida automaticamente** e recebe um e-mail avisando que surgiu uma vaga. Se tiverem saldo em aberto, o e-mail leva a [Minhas inscrições](../../b1-church/events/my-registrations.md) no site B1 da sua igreja, onde podem concluir o pagamento.
 - Você pode promover alguém manualmente a qualquer momento com a ação **Promover** em uma linha da lista de espera — útil depois de aumentar a capacidade do evento.
 
 :::info
@@ -75,7 +76,7 @@ Abra um evento na página de Inscrições para ver todas as inscrições. O tít
 
 - Clique no ícone de detalhes de uma linha para abrir a janela **Detalhes da inscrição** — membros, opções, pago/saldo e uma tabela de **Pagamentos** listando cada cobrança (valor, forma, data).
 - **Exportar CSV** baixa a lista completa com colunas para membros, tipos de participante, opções, pago/total/saldo, situação e uma coluna por pergunta de inscrição.
-- **Adicionar participante** registra uma inscrição feita presencialmente ou por telefone para qualquer pessoa da sua igreja. Escolha a pessoa e, em um evento pago, o tipo de participante. O cartão dela não é cobrado: uma inscrição paga é salva como **pendente**, com o valor total como saldo devedor. Se a sua igreja tiver doações online, a pessoa pode pagar em [Minhas inscrições](../../b1-church/events/my-registrations); caso contrário, cobre pessoalmente. Você precisa da permissão Editar inscrições para adicionar participantes.
+- **Adicionar participante** registra uma inscrição feita presencialmente ou por telefone para qualquer pessoa da sua igreja. Escolha a pessoa e, em um evento pago, o tipo de participante. O cartão dela não é cobrado: uma inscrição paga é salva como **pendente**, com o valor total como saldo devedor. Se a sua igreja tiver doações online, a pessoa pode pagar em [Minhas inscrições](../../b1-church/events/my-registrations.md); caso contrário, cobre pessoalmente. Você precisa da permissão Editar inscrições para adicionar participantes.
 
 :::info
 Reembolsos não são processados dentro do B1. Se precisar reembolsar uma inscrição paga cancelada, emita o reembolso pelo painel do seu provedor de doações (por exemplo, Stripe).
@@ -90,12 +91,12 @@ Os pagamentos passam pelo mesmo gateway de doações que a sua igreja já usa �
 Se a sua igreja não tiver um provedor de doações configurado, os eventos pagos ainda podem receber inscrições. A etapa de pagamento informa aos inscritos que o pagamento online não está disponível e que eles podem pagar diretamente à igreja, e um botão **Inscrever e pagar depois** salva a inscrição. Ela é salva como **pendente**, com o valor total como saldo devedor, e aparece na lista com um aviso de saldo. Cobre o valor da forma que a sua igreja normalmente faz.
 
 :::info
-O B1 não tem como marcar um pagamento offline como recebido. O saldo devedor permanece na lista e no cartão de [Minhas inscrições](../../b1-church/events/my-registrations) do inscrito depois que você cobrar, então mantenha seu próprio registro de quem pagou.
+O B1 não tem como marcar um pagamento offline como recebido. O saldo devedor permanece na lista e no cartão de [Minhas inscrições](../../b1-church/events/my-registrations.md) do inscrito depois que você cobrar, então mantenha seu próprio registro de quem pagou.
 :::
 
 ## Artigos relacionados
 
-- [Criando calendários](creating-calendars#enabling-event-registration) — ative as inscrições e as configurações básicas
+- [Criando calendários](./creating-calendars.md#enabling-event-registration) — ative as inscrições e as configurações básicas
 - [Configuração de doações online](../donations/online-giving-setup.md) — configure o gateway de pagamento usado no checkout
-- [Inscrevendo-se em eventos](../../b1-church/events/registering) — o que os membros veem ao se inscrever
-- [Minhas inscrições](../../b1-church/events/my-registrations) — como os membros pagam saldos e editam inscrições
+- [Inscrevendo-se em eventos](../../b1-church/events/registering.md) — o que os membros veem ao se inscrever
+- [Minhas inscrições](../../b1-church/events/my-registrations.md) — como os membros pagam saldos e editam inscrições

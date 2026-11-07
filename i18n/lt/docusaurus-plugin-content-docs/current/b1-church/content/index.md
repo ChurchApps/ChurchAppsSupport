@@ -1,5 +1,7 @@
 ---
-title: "Turinys"
+title: "Turinio funkcijos B1.church narių portale"
+sidebar_label: "Turinys"
+description: "Sužinokite, kokį turinį bažnyčia įjungia B1.church narių portale, ir naršykite pamokslus, tiesiogines transliacijas, Biblijos skaitymą bei pamokas."
 ---
 
 # Turinys

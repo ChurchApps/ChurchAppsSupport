@@ -1,5 +1,6 @@
 ---
 title: "Deployment"
+description: "Temukan tempat tiap proyek ChurchApps di-deploy: API AWS Lambda, aplikasi web S3, build Expo seluler, dan B1 Admin self-hosted di Railway atau Docker."
 ---
 
 # Deployment
@@ -14,12 +15,12 @@ ChurchApps menggunakan strategi deployment yang berbeda-beda tergantung jenis pr
 
 | Jenis Proyek | Target Deployment | Perangkat Pendukung |
 |-------------|-------------------|---------------------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
-| [Aplikasi Web](./web-apps) | S3 + CloudFront | Build statis, sinkronisasi S3, invalidasi CloudFront |
-| [Aplikasi Seluler](./mobile) | Toko Aplikasi | Expo EAS Build + OTA Updates |
-| [Self-Hosting (Railway)](./railway-template) | Railway | Template satu klik: MySQL + Api + B1Admin + B1App |
-| [Self-Hosting (Docker)](./docker) | Host Docker mana pun | Installer satu baris; image GHCR yang sudah dibangun + Caddy, `./deploy/b1` untuk upgrade/backup/rollback |
-| [Proxy Domain Kustom Caddy](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Caddyfile statis + layanan WinSW + sinkronisasi peta terjadwal |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
+| [Aplikasi Web](./web-apps.md) | S3 + CloudFront | Build statis, sinkronisasi S3, invalidasi CloudFront |
+| [Aplikasi Seluler](./mobile.md) | Toko Aplikasi | Expo EAS Build + OTA Updates |
+| [Self-Hosting (Railway)](./railway-template.md) | Railway | Template satu klik: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker.md) | Host Docker mana pun | Installer satu baris; image GHCR yang sudah dibangun + Caddy, `./deploy/b1` untuk upgrade/backup/rollback |
+| [Proxy Domain Kustom Caddy](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Caddyfile statis + layanan WinSW + sinkronisasi peta terjadwal |
 | FreeShow | Unduhan langsung | Electron Builder (binary lintas platform) |
 
 ## Lingkungan

@@ -1,5 +1,6 @@
 ---
 title: "Formlar"
+description: "B1 Admin'de özel formları bulun, filtreleyin, düzenleyin, arşivleyin ve geri yükleyin; form üyelerini ve gönderimleri nerede inceleyeceğinizi görün."
 ---
 
 # Formlar

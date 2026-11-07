@@ -1,5 +1,7 @@
 ---
-title: "Cronologia delle donazioni"
+title: "Storico donazioni e ricevute su B1.church"
+sidebar_label: "Cronologia delle donazioni"
+description: "Visualizza le donazioni passate, filtra per anno e stampa le ricevute per le tasse dalla pagina Donazioni del portale membri B1.church."
 ---
 
 # Cronologia delle donazioni

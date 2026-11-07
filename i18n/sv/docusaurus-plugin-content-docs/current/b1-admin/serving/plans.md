@@ -1,5 +1,6 @@
 ---
 title: "Tjänsteplaner"
+description: "Ställ in volontärschemaläggning i B1 Admin: skapa gudstjänstplaner per datum, kopiera från tidigare veckor, tilldela teammedlemmar till positioner och hantera anmälningsfrister och påminnelser."
 ---
 
 # Tjänsteplaner

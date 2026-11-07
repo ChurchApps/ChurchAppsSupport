@@ -1,5 +1,6 @@
 ---
 title: "Tildeling af grupper"
+description: "Vælg hvilken gruppe eller klasse et familiemedlem går i ved hvert gudstjenestetidspunkt i B1 Checkin, med kategorier, alders-vejledning og valget Ingen."
 ---
 
 # Tildeling af grupper
@@ -13,7 +14,7 @@ Når du trykker på en servin tid knap på husstands oversigten, åbner appen gr
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Gennemgå din husstand](./household-review) på husstands oversigten
+- [Gennemgå din husstand](./household-review.md) på husstands oversigten
 - Udvid medlemmet du ønsker at tildele og tryk på en servin tid knap
 - Sørg for, at din kirke administrator har [oprettet grupper](../../b1-admin/groups/creating-groups.md) og linket dem til servin tider i B1 Admin
 
@@ -34,7 +35,7 @@ Tryk på et kategori kort for at udvide det og se de individuelle grupper inden 
 2. Gennemgå listen af grupper i denne kategori. Hver gruppe viser sit navn med et valg ikon på højre side.
 3. Tryk på **gruppe navnet**, som du ønsker at tildele.
 
-Appen gemmer dit valg og returnerer dig til [husstands oversigten](./household-review). Servin tid knappen for dette medlem vil nu vise navnet på den gruppe, du valgte.
+Appen gemmer dit valg og returnerer dig til [husstands oversigten](./household-review.md). Servin tid knappen for dette medlem vil nu vise navnet på den gruppe, du valgte.
 
 ## Valg af "Ingen"
 
@@ -48,7 +49,7 @@ Brug **Ingen** muligheden for voksne, som deltager i hovedgudstenesten og ikke b
 
 For at ændre en gruppe tildeling, som allerede er foretaget:
 
-1. Gå tilbage til [husstands oversigten](./household-review).
+1. Gå tilbage til [husstands oversigten](./household-review.md).
 2. Udvid medlemmet, hvis gruppe du ønsker at ændre.
 3. Tryk på servin tid knappen (som nu viser det aktuelt tildelte gruppe navn).
 4. Vælg en anden gruppe eller tryk **Ingen**.
@@ -59,8 +60,8 @@ Grupper og kategorier er konfigureret af din kirke administrator i B1 Admin. Hvi
 
 ## Næste trin
 
-Efter tildeling af grupper, returneres til [husstands oversigten](./household-review) for at:
+Efter tildeling af grupper, returneres til [husstands oversigten](./household-review.md) for at:
 
 - Tildel grupper til yderligere familiemedlemmer
-- [Tilføj en gæst](./adding-guests), hvis nogen besøger med din familie
-- [Fuldføre checkin](./completing-checkin) når alle tildelinger er klar
+- [Tilføj en gæst](./adding-guests.md), hvis nogen besøger med din familie
+- [Fuldføre checkin](./completing-checkin.md) når alle tildelinger er klar

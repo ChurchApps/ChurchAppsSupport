@@ -1,5 +1,6 @@
 ---
 title: "İş Akışları"
+description: "B1 Admin'de Kanban tarzı panolar oluşturun; kişileri otomatik e-postalar, kısa mesajlar ve kişileri otomatik ekleyen tetikleyicilerle takip adımlarından geçirin."
 ---
 
 # İş Akışları

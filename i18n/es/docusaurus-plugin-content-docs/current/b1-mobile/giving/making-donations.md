@@ -1,5 +1,7 @@
 ---
-title: "Realizar una Donación"
+title: "Cómo hacer un donativo en B1 Mobile"
+sidebar_label: "Realizar una Donación"
+description: "Done a su iglesia desde la pestaña Donar en B1 Mobile: elija un fondo, ingrese un monto, pague con Stripe y repita donativos anteriores rápidamente."
 ---
 
 # Realizar una Donación
@@ -13,8 +15,8 @@ Dar a través de B1 Mobile es rápido y sencillo. La pestaña **Donar** en la se
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
-- Ten una tarjeta de crédito o débito lista, o [guarda un método de pago](./managing-payments) con anticipación
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
+- Ten una tarjeta de crédito o débito lista, o [guarda un método de pago](./managing-payments.md) con anticipación
 
 </div>
 
@@ -42,10 +44,10 @@ Verifica el monto de la donación y el fondo antes de enviar. Las donaciones se 
 Si deseas dar la misma cantidad que tu última donación, no necesitas pasar por todo el proceso de donación. La pestaña **Resumen** muestra tu ofrenda más reciente junto con un botón de **Repetir**. Tócalo para enviar rápidamente la misma donación nuevamente.
 
 :::tip
-Si planeas dar regularmente, guarda tu método de pago en la pestaña **Administrar** para poder donar aún más rápido la próxima vez. Consulta [Administrar Métodos de Pago](./managing-payments) para más detalles.
+Si planeas dar regularmente, guarda tu método de pago en la pestaña **Administrar** para poder donar aún más rápido la próxima vez. Consulta [Administrar Métodos de Pago](./managing-payments.md) para más detalles.
 :::
 
 ## Artículos Relacionados
 
-- [Administrar Métodos de Pago](./managing-payments) -- Guarda una tarjeta para dar más rápido en el futuro
-- [Historial de Donaciones](./donation-history) -- Consulta tu resumen de ofrendas y donaciones anteriores
+- [Administrar Métodos de Pago](./managing-payments.md) -- Guarda una tarjeta para dar más rápido en el futuro
+- [Historial de Donaciones](./donation-history.md) -- Consulta tu resumen de ofrendas y donaciones anteriores

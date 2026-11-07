@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa"
+description: "Kubukwa kwendzawo yekulawula ye-Lessons.church kuChurchApps, kuhlanganisa kulawula tinhlelo, tifundvo, tifundziso, tincenye, tinsita, nemahlinzeki emakharikhulamu angaphandle."
 ---
 
 # Kuphatsa

@@ -1,5 +1,6 @@
 ---
 title: "Modo de Presentador"
+description: "Ejecuta una lección a pantalla completa en un proyector o TV del aula con el Modo Presentador de Lessons.church y avanza por cada sección durante la clase."
 ---
 
 # Modo de Presentador

@@ -1,5 +1,6 @@
 ---
 title: "Kukhetsa Simo Sekuhlanganiswa"
+description: "Khetha indlela lefanele yekuhlanganisa i-FreePlay TV: ikhalenda kusuka ku-FreePlay Admin, umhlahlandlela wesevisi kusuka ku-B1 Admin, noma kungabi nekuhlanganiswa."
 ---
 
 # Kukhetsa Simo Sekuhlanganiswa
@@ -40,7 +41,7 @@ Khetsa **Pair to Plan** nawufuna kulandzela icebo lenkonzo yebandla. Lesi simo s
 
 ## Baniketi Bekucuketfwe
 
-Uma ungadzingi kuhlanganiswa nelikilasi nome nelicebo, ungakwati kuhlola baniketi bekucuketfwe ngco. Baniketi labafana ne-[Lessons.church](../../lessons-church/) ne-Bible Project baniketa kucuketfwe longakulayisha bese uwudlala nome nini.
+Uma ungadzingi kuhlanganiswa nelikilasi nome nelicebo, ungakwati kuhlola baniketi bekucuketfwe ngco. Baniketi labafana ne-[Lessons.church](../../lessons-church/index.md) ne-Bible Project baniketa kucuketfwe longakulayisha bese uwudlala nome nini.
 
 **Ikahle kakhulu ye:** Ema-TV lapho bantfu labativele bakhetsa ngesandla yini letawudlalwa liviki ngalinye, nome nawufuna kuhlola kucuketfwe lokutfolakalako.
 
@@ -50,6 +51,6 @@ Ungafinyelela esikrinini se-**Providers** nome ngasiphi sikhatsi kusuka encenyen
 
 ## Timibhalo Lehlobene
 
-- **[Simo Selikilasi](../scheduled-mode/)** - Umhlahlandlela lophelele wekuhlanganiswa nelikilasi
-- **[Simo Selicebo](../plan-mode/)** - Umhlahlandlela lophelele wekuhlanganiswa nelicebo lenkonzo
-- **[Baniketi Bekucuketfwe](../content-providers/)** - Hlola futsi ulayishe kucuketfwe kusuka etindzaweni tangephandle
+- **[Simo Selikilasi](../scheduled-mode/index.md)** - Umhlahlandlela lophelele wekuhlanganiswa nelikilasi
+- **[Simo Selicebo](../plan-mode/index.md)** - Umhlahlandlela lophelele wekuhlanganiswa nelicebo lenkonzo
+- **[Baniketi Bekucuketfwe](../content-providers/index.md)** - Hlola futsi ulayishe kucuketfwe kusuka etindzaweni tangephandle

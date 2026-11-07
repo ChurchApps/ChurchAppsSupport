@@ -1,5 +1,7 @@
 ---
-title: "Grupuri"
+title: "Grupuri în B1 Admin"
+sidebar_label: "Grupuri"
+description: "Configurați și organizați grupurile în B1 Admin, inclusiv categorii, membri, calendare și cereri de înscriere, cu ghid pentru găsirea paginii Groups."
 ---
 
 # Grupuri

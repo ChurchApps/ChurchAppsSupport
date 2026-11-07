@@ -1,5 +1,6 @@
 ---
 title: "Agenda's maken"
+description: "Maak een agenda aan in B1 Admin, koppel groepen of importeer .ics-bestanden en beheer evenementen, aanmeldingen en notities vanuit één plek."
 ---
 
 # Agenda's maken
@@ -53,7 +54,7 @@ Het verbinden van groepen aan uw agenda is een krachtige manier om events automa
 :::
 
 :::info
-Als u een enkele agenda wilt maken die events van veel groepen in uw kerk samenbrengt, zie [Curated Calendar](curated-calendar) voor een gestroomlijnde aanpak.
+Als u een enkele agenda wilt maken die events van veel groepen in uw kerk samenbrengt, zie [Curated Calendar](./curated-calendar.md) voor een gestroomlijnde aanpak.
 :::
 
 ## Event-registratie inschakelen
@@ -69,7 +70,7 @@ U kunt registratie inschakelen voor elk agenda-event zodat leden zich via de B1-
    - **Tags** -- Met komma's gescheiden labels (bijv. "jongeren, retreat, vbs") om registreerbare events in categorieën in te delen.
 4. Sla het event op.
 
-Zodra registratie is ingeschakeld, zien leden een knop **Registreer voor dit event** wanneer zij het event op de [B1-website](../../b1-church/events/registering) of [B1 Mobiele app](../../b1-mobile/events/registering) bekijken.
+Zodra registratie is ingeschakeld, zien leden een knop **Registreer voor dit event** wanneer zij het event op de [B1-website](../../b1-church/events/registering.md) of [B1 Mobiele app](../../b1-mobile/events/registering.md) bekijken.
 
 ### Registraties beheren
 
@@ -89,6 +90,6 @@ Gebruik de voortgangsbalk voor capaciteit om bij te houden hoe snel events vollo
 
 ## Volgende stappen
 
-- [Curated Calendar](curated-calendar) -- Een agenda maken die van meerdere groepen ophaalt
-- [Event Registratie Gids](../guides/event-registration) -- Stapsgewijze gids voor het instellen van event-registratie
-- [Agenda's overzicht](./) -- Terug naar het overzicht van agenda's
+- [Curated Calendar](./curated-calendar.md) -- Een agenda maken die van meerdere groepen ophaalt
+- [Event Registratie Gids](../guides/event-registration.md) -- Stapsgewijze gids voor het instellen van event-registratie
+- [Agenda's overzicht](./index.md) -- Terug naar het overzicht van agenda's

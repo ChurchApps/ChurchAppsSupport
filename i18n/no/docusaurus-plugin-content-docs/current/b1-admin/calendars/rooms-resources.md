@@ -1,5 +1,6 @@
 ---
 title: "Rom, ressurser og planlegging"
+description: "Sett opp rom, utstyr, blokkeringer og arrangementsmaler i B1 Admin, slik at grupper kan be om booking og du kan godkjenne uten dobbeltbooking."
 ---
 
 # Rom, ressurser og planlegging
@@ -14,7 +15,7 @@ Med rom og ressurser kan du holde oversikt over menighetens lokaler og utstyr so
 <h4>Før du begynner</h4>
 
 - Du trenger administratortilgang til Kalendere-delen i B1 Admin
-- Sett opp [grupper](../groups/creating-groups) hvis medlemmer skal sende inn bookingforespørsler
+- Sett opp [grupper](../groups/creating-groups.md) hvis medlemmer skal sende inn bookingforespørsler
 
 </div>
 
@@ -76,7 +77,7 @@ Når de oppretter et nytt arrangement, kan de ansatte velge en eksisterende mal 
 
 ## Relaterte artikler
 
-- [Tilgjengelighetskalender](availability) — se alle bookinger på et blikk og book rom eller ressurser direkte
-- [Kalendergodkjenninger](approvals) — godkjenn eller avslå bookingforespørsler for rom og ressurser
-- [Opprette kalendere](creating-calendars) — sett opp arrangementskalendere
-- [Opprette grupper](../groups/creating-groups) — sett opp grupper som kan booke rom og ressurser
+- [Tilgjengelighetskalender](./availability.md) — se alle bookinger på et blikk og book rom eller ressurser direkte
+- [Kalendergodkjenninger](./approvals.md) — godkjenn eller avslå bookingforespørsler for rom og ressurser
+- [Opprette kalendere](./creating-calendars.md) — sett opp arrangementskalendere
+- [Opprette grupper](../groups/creating-groups.md) — sett opp grupper som kan booke rom og ressurser

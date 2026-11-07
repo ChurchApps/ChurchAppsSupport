@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Gennemse B1.church-bloggen og RSS-feeds"
+sidebar_label: "Blog"
+description: "Gennemse og filtrér din kirkes B1.church-blog efter kategori eller tag, bladre gennem ældre indlæg, eller følg nye via RSS-feeds."
 ---
 
 # Blog

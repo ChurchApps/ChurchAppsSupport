@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Подключите Clearstream SMS к B1 Admin через Zapier: отправляйте сообщения о новых пожертвованиях или заполненных формах и возвращайте входящие ответы как людей."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ title: "Clearstream"
 
 ## См. также
 
-- [Text In Church](./text-in-church) — альтернативная платформа SMS, похожая форма подключения
-- [Mobile Message](./mobile-message) — для церквей вне США
-- [Zapier (обзор)](../zapier) — B1 сторона каждого рецепта Zapier
+- [Text In Church](./text-in-church.md) — альтернативная платформа SMS, похожая форма подключения
+- [Mobile Message](./mobile-message.md) — для церквей вне США
+- [Zapier (обзор)](../zapier.md) — B1 сторона каждого рецепта Zapier
 - [Clearstream API документы](https://api-docs.clearstream.io/) — для пользовательских интеграций выше приложения Zapier

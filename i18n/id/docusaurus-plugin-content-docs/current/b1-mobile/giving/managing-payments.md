@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Metode Pembayaran"
+description: "Tambah, tinjau, dan hapus kartu tersimpan di tab Kelola pada bagian pemberian B1 Mobile, sehingga donasi berulang lebih cepat tanpa mengisi ulang data kartu."
 ---
 
 # Mengelola Metode Pembayaran
@@ -13,7 +14,7 @@ Tab **Kelola** di bagian persembahan memungkinkan Anda melihat dan mengelola met
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 
 </div>
 
@@ -31,7 +32,7 @@ Untuk menambahkan kartu baru:
 4. Masukkan data kartu Anda. Informasi tersebut dikirim dengan aman ke **Stripe** untuk diproses.
 5. Setelah disimpan, kartu baru akan muncul dalam daftar metode pembayaran Anda.
 
-Kartu yang tersimpan kemudian akan tersedia sebagai opsi pembayaran saat Anda [berdonasi](./making-donations) berikutnya dari tab **Donasi**.
+Kartu yang tersimpan kemudian akan tersedia sebagai opsi pembayaran saat Anda [berdonasi](./making-donations.md) berikutnya dari tab **Donasi**.
 
 ## Menghapus Metode Pembayaran
 
@@ -44,7 +45,7 @@ Jika Anda tidak lagi ingin menyimpan kartu tertentu, Anda dapat menghapusnya dar
 Kartu tersebut tidak akan lagi muncul sebagai opsi pembayaran saat Anda berdonasi.
 
 :::info
-Menghapus metode pembayaran tidak memengaruhi donasi yang sudah dilakukan. [Riwayat donasi](./donation-history) Anda tetap tidak berubah.
+Menghapus metode pembayaran tidak memengaruhi donasi yang sudah dilakukan. [Riwayat donasi](./donation-history.md) Anda tetap tidak berubah.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Simpan setidaknya satu metode pembayaran untuk memudahkan persembahan. Dengan be
 
 ## Artikel Terkait
 
-- [Membuat Donasi](./making-donations) -- Pelajari cara memberi menggunakan metode pembayaran yang tersimpan
-- [Riwayat Donasi](./donation-history) -- Lihat ringkasan persembahan dan donasi Anda sebelumnya
+- [Membuat Donasi](./making-donations.md) -- Pelajari cara memberi menggunakan metode pembayaran yang tersimpan
+- [Riwayat Donasi](./donation-history.md) -- Lihat ringkasan persembahan dan donasi Anda sebelumnya

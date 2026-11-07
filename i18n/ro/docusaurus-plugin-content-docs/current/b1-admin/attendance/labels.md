@@ -1,5 +1,6 @@
 ---
 title: "Designer de etichete pentru check-in"
+description: "Personalizați în B1 Admin șabloanele de etichete și bilete de ridicare tipărite la check-in: câmpuri, poziționare și condiții (zi de naștere, note)."
 ---
 
 # Designer de etichete pentru check-in
@@ -13,8 +14,8 @@ Designerul de etichete vă permite să creați și să personalizați șabloanel
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați [Prezența](setup) și setați cel puțin o oră de serviciu cu check-in activat
-- Configurați [Check-In](check-in) astfel încât etichetele să fie tipărite
+- Configurați [Prezența](./setup.md) și setați cel puțin o oră de serviciu cu check-in activat
+- Configurați [Check-In](./check-in.md) astfel încât etichetele să fie tipărite
 - Aveți nevoie de acces administrativ la secțiunea Prezență
 
 </div>
@@ -85,6 +86,6 @@ Tipăriți o etichetă de test după ce editați un șablon, pentru a verifica d
 
 ## Articole conexe
 
-- [Configurarea check-in-ului](setup) — configurați serviciile și grupurile pentru check-in
-- [Finalizarea check-in-ului](check-in) — fluxul de check-in pentru familii
-- [Primii pași cu B1 Checkin](../../b1-checkin/getting-started/) — aplicația de chioșc Checkin
+- [Configurarea check-in-ului](./setup.md) — configurați serviciile și grupurile pentru check-in
+- [Finalizarea check-in-ului](./check-in.md) — fluxul de check-in pentru familii
+- [Primii pași cu B1 Checkin](../../b1-checkin/getting-started/index.md) — aplicația de chioșc Checkin

@@ -1,5 +1,7 @@
 ---
-title: "Lessen"
+title: "Uitgefaseerd tabblad Lessen in B1.church"
+sidebar_label: "Lessen"
+description: "Het tabblad Lessen in B1.church is verouderd. Vind waar lescurriculum nu staat: blader op Lessons.church en speel het af op klas-tv's met FreePlay."
 ---
 
 # Lessen

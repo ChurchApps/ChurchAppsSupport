@@ -1,5 +1,7 @@
 ---
-title: "Samoobslužné přihlášení"
+title: "Samoobslužný check-in v aplikaci B1 Mobile"
+sidebar_label: "Samoobslužné přihlášení"
+description: "Přihlaste sebe a domácnost na bohoslužbu v aplikaci B1 Mobile, včetně výběru času bohoslužby a přiřazení skupiny každé osobě."
 ---
 
 # Samoobslužné přihlášení
@@ -13,7 +15,7 @@ Přihlášení z aplikace B1 Mobile je jednoduchý postup v několika krocích. 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 - Ujistěte se, že jsou [členové vaší domácnosti](../profile/household.md) nastaveni ve vašem profilu
 
 </div>

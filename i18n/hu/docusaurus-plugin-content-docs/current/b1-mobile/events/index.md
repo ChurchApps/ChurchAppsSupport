@@ -1,5 +1,7 @@
 ---
-title: "Események"
+title: "Gyülekezeti események és regisztráció a B1 Mobile alkalmazásban"
+sidebar_label: "Események"
+description: "Böngészd a közelgő gyülekezeti eseményeket a B1 Mobile alkalmazásban, és jelentkezz magadat és családtagjaidat azokra, amelyekre már nyitott a regisztráció."
 ---
 
 # Események
@@ -23,10 +25,10 @@ Az események különböző állapotokat mutathatnak:
 
 ## Mire van szükséged
 
-- A [B1 Mobile telepítve](../getting-started/installing) és [bejelentkezve](../getting-started/logging-in)
+- A [B1 Mobile telepítve](../getting-started/installing.md) és [bejelentkezve](../getting-started/logging-in.md)
 - Egyházadnál engedélyezve kell lennie az eseményregisztrációnak az adott eseményhez
 
 ## További információk
 
-- [Regisztráció eseményekre](./registering) -- Lépésenkénti útmutató az eseményre való jelentkezéshez mobilon
-- [Önellenőrzés](../checkin/self-checkin) -- Bejelentkezés az esemény helyszínén, amikor megérkezel
+- [Regisztráció eseményekre](./registering.md) -- Lépésenkénti útmutató az eseményre való jelentkezéshez mobilon
+- [Önellenőrzés](../checkin/self-checkin.md) -- Bejelentkezés az esemény helyszínén, amikor megérkezel

@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn cho tình nguyện viên"
+description: "Thiết lập hướng dẫn riêng theo vai trò trong Lessons.church để mỗi tình nguyện viên chỉ thấy các bước của mình, rồi in hoặc chia sẻ trước giờ học."
 ---
 
 # Hướng dẫn cho tình nguyện viên

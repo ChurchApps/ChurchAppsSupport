@@ -1,5 +1,6 @@
 ---
 title: "Vista insegnante per le lezioni"
+description: "Apri una lezione a schermo intero in Vista insegnante da un piano su B1.church, passa tra le sezioni, riproduci i media e scarica le risorse."
 ---
 
 # Vista insegnante per le lezioni

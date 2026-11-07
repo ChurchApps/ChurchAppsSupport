@@ -1,5 +1,6 @@
 ---
 title: "Configuración"
+description: "Encuentra tu camino por la Configuración de B1 Admin: información de la iglesia, identidad visual, campus, campos personalizados, roles de usuario y la navegación de la app de B1.church."
 ---
 
 # Configuración

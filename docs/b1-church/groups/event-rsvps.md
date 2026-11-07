@@ -1,5 +1,6 @@
 ---
 title: "Event RSVPs"
+description: "Answer Going, Maybe, or Can't go to group events in the B1.church member portal, and see how many others are coming. Leaders can review responses too."
 ---
 
 # Event RSVPs
@@ -30,14 +31,14 @@ Your RSVP applies to that specific occurrence — for a weekly meeting, you answ
 ## For Group Leaders
 
 - **Viewing responses** -- Leaders see a **View responses** link on each event in the group's calendar (**All events**). It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
-- **Turning RSVPs on or off** -- When creating or editing an event, use the **Allow RSVPs** switch. Events with RSVPs turned off show no response buttons. Staff creating events in bulk from B1 Admin have the same option — see [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Turning RSVPs on or off** -- When creating or editing an event, use the **Allow RSVPs** switch. Events with RSVPs turned off show no response buttons. Staff creating events in bulk from B1 Admin have the same option — see [Group Calendar](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-RSVPs are a lightweight head count. If your event needs signup details, capacity management, or payment, use [event registration](../events/registering) instead.
+RSVPs are a lightweight head count. If your event needs signup details, capacity management, or payment, use [event registration](../events/registering.md) instead.
 :::
 
 ## Related Articles
 
 - [Group Details](./group-details.md) -- Everything on the group detail page
-- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- How staff and leaders manage group events and RSVPs
-- [Registering for Events](../events/registering) -- Full event registration with capacity and payments
+- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- How staff and leaders manage group events and RSVPs
+- [Registering for Events](../events/registering.md) -- Full event registration with capacity and payments

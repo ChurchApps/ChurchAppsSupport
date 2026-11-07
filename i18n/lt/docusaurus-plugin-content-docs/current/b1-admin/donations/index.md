@@ -1,5 +1,6 @@
 ---
 title: "Donacijos"
+description: "Registruokite, tvarkykite ir ataskaitikite bažnyčios aukas B1 Admin: nuo partijų ir fondų iki metinių pažymų bei Stripe ar PayPal internetinių aukų."
 ---
 
 # Donacijos

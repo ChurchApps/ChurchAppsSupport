@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Forbind B1 Admin til Make og automatisér arbejdsgange: opret en API-nøgle, opsæt B1.church-triggeren og handlingerne, og løs almindelige fejl."
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make-appen er open source — JSON-definitionerne ligger i repoet `B1I
 
 ## Se også
 
-- [Zapier](./zapier) — samme mønster med en enklere brugerflade og et større appkatalog
-- [Slack & Discord](./slack-discord) — indbyggede chatnotifikationer uden Make
+- [Zapier](./zapier.md) — samme mønster med en enklere brugerflade og et større appkatalog
+- [Slack & Discord](./slack-discord.md) — indbyggede chatnotifikationer uden Make
 - [Webhooks (udviklerreference)](/docs/developer/api/webhooks)

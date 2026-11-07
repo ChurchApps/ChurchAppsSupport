@@ -1,5 +1,6 @@
 ---
 title: "Check-In"
+description: "B1Checkin, B1App ve B1 Admin'de check-in'in nasıl çalıştığı: yoklama veri modeli, oda olarak gruplar, kapasite kapıları ve teslim alma güvenlik kuralları."
 ---
 
 # Check-In
@@ -216,7 +217,7 @@ B1App's `src/components/checkin/GuestRegister.tsx` fetches the checklist from th
 
 ## Related Pages
 
-- [Attendance Endpoints](../api/endpoints/attendance) -- Full REST surface for campuses, services, sessions, visits, and visit sessions
-- [Membership Endpoints](../api/endpoints/membership) -- People, households, and groups
-- [Webhooks](../api/webhooks) -- The `session.created`, `attendance.recorded`, and `attendance.checkout` events
-- [Module Structure](../api/module-structure) -- How the attendance module is organized server-side
+- [Attendance Endpoints](../api/endpoints/attendance.md) -- Full REST surface for campuses, services, sessions, visits, and visit sessions
+- [Membership Endpoints](../api/endpoints/membership.md) -- People, households, and groups
+- [Webhooks](../api/webhooks.md) -- The `session.created`, `attendance.recorded`, and `attendance.checkout` events
+- [Module Structure](../api/module-structure.md) -- How the attendance module is organized server-side

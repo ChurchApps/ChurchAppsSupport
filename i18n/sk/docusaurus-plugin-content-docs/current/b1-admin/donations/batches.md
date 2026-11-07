@@ -1,5 +1,6 @@
 ---
 title: "Dávky darov"
+description: "Zoskupte dary do dávok v B1 Admin, potom každú uzavrite, vytlačte alebo exportujte, aby súčty sedeli s vašimi bankovými vkladmi."
 ---
 
 # Dávky darov

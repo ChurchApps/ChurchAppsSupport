@@ -1,5 +1,6 @@
 ---
 title: "Guide : Démarrer avec B1 pour votre église"
+description: "Suivez les étapes de configuration d'une nouvelle église dans B1 Admin : créez votre compte, configurez les paramètres, ajoutez des rôles, importez les membres et lancez les fonctions essentielles."
 ---
 
 # Démarrer avec B1 pour votre église

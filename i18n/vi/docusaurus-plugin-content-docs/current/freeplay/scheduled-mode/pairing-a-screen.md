@@ -1,5 +1,6 @@
 ---
 title: "Ghép nối màn hình"
+description: "Ghép nối TV FreePlay với lịch của nhóm màn hình trong FreePlay Admin bằng mã bốn chữ cái trên TV, để tự phát nội dung đã lên lịch."
 ---
 
 # Ghép nối màn hình
@@ -13,9 +14,9 @@ title: "Ghép nối màn hình"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt và mở FreePlay trên TV. Xem [Bắt đầu sử dụng](../getting-started/)
+- Cài đặt và mở FreePlay trên TV. Xem [Bắt đầu sử dụng](../getting-started/index.md)
 - Có tài khoản ChurchApps dành cho nhà thờ của bạn để đăng nhập vào FreePlay Admin
-- Tùy chọn: [tạo danh sách phát](./building-playlists) và [lên lịch](./scheduling-the-calendar) trước để TV có nội dung phát ngay
+- Tùy chọn: [tạo danh sách phát](./building-playlists.md) và [lên lịch](./scheduling-the-calendar.md) trước để TV có nội dung phát ngay
 
 </div>
 
@@ -38,7 +39,7 @@ Mã có hiệu lực trong 15 phút, và đồng hồ đếm ngược bên dư�
 5. Trong mục **Mode**, giữ nguyên lựa chọn **Scheduled**. TV sẽ tự phát theo lịch của nhóm.
 6. Nhấp **Pair**.
 
-TV sẽ hiển thị **Connected!** rồi **Loading your schedule...**. Sau đó nó tải nội dung đã lên lịch và bắt đầu phát. Xem [Phát theo lịch trên TV](./scheduled-playback).
+TV sẽ hiển thị **Connected!** rồi **Loading your schedule...**. Sau đó nó tải nội dung đã lên lịch và bắt đầu phát. Xem [Phát theo lịch trên TV](./scheduled-playback.md).
 
 :::info
 Nếu FreePlay Admin báo **That code didn't match a TV**, hãy kiểm tra lại mã trên màn hình. Nếu mã đã hết hạn, hãy dùng mã mới mà TV đang hiển thị.
@@ -51,11 +52,11 @@ Cài đặt **Mode** có hai lựa chọn:
 - **Scheduled** - Phát theo lịch của nhóm một cách tự động. Không cần ai nhấn Start.
 - **Manual** - Người dùng chọn nội dung bằng điều khiển từ xa. Màn hình thủ công vẫn xuất hiện trong danh sách **Screens** của bạn, nhưng nó không theo lịch nào, nên trường **Group** bị tắt.
 
-Bạn có thể đổi chế độ của màn hình sau này bằng **Edit** trên [trang Screens](./managing-screens).
+Bạn có thể đổi chế độ của màn hình sau này bằng **Edit** trên [trang Screens](./managing-screens.md).
 
 ## Ghép nối với kế hoạch phục vụ thay thế
 
-Mã trên màn hình **Pair this screen** cũng hoạt động trong B1 Admin. Nếu bạn nhập mã ở đó và chọn loại kế hoạch trong mục **Show Plans For**, TV sẽ theo loại kế hoạch đó trong [Chế độ kế hoạch](../plan-mode/) thay vì theo lịch. Xem [Ghép nối thiết bị của bạn](../plan-mode/device-pairing).
+Mã trên màn hình **Pair this screen** cũng hoạt động trong B1 Admin. Nếu bạn nhập mã ở đó và chọn loại kế hoạch trong mục **Show Plans For**, TV sẽ theo loại kế hoạch đó trong [Chế độ kế hoạch](../plan-mode/index.md) thay vì theo lịch. Xem [Ghép nối thiết bị của bạn](../plan-mode/device-pairing.md).
 
 ## Thay đổi hoặc hủy ghép nối từ TV
 
@@ -79,6 +80,6 @@ TV sẽ quay lại hiển thị mã ghép nối. Bạn có thể ghép nối l�
 
 ## Bài viết liên quan
 
-- **[Quản lý màn hình và nhóm](./managing-screens)** - Đổi tên màn hình, chuyển sang nhóm khác, hoặc kiểm tra các tệp đã tải xuống
-- **[Lên lịch chiếu](./scheduling-the-calendar)** - Quyết định nội dung mà các màn hình trong nhóm sẽ phát
-- **[Chọn chế độ ghép nối](../getting-started/pairing-modes)** - So sánh Chế độ theo lịch với Chế độ kế hoạch và tự duyệt các nhà cung cấp nội dung
+- **[Quản lý màn hình và nhóm](./managing-screens.md)** - Đổi tên màn hình, chuyển sang nhóm khác, hoặc kiểm tra các tệp đã tải xuống
+- **[Lên lịch chiếu](./scheduling-the-calendar.md)** - Quyết định nội dung mà các màn hình trong nhóm sẽ phát
+- **[Chọn chế độ ghép nối](../getting-started/pairing-modes.md)** - So sánh Chế độ theo lịch với Chế độ kế hoạch và tự duyệt các nhà cung cấp nội dung

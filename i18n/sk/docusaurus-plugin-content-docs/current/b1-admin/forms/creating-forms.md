@@ -1,5 +1,6 @@
 ---
 title: "Vytváranie formulárov"
+description: "Vytvárajte vlastné formuláre v B1 Admin pre registrácie na udalosti, prieskumy a návštevnícke karty a zdieľajte ich odkazom, QR kódom alebo tlačou."
 ---
 
 # Vytváranie formulárov

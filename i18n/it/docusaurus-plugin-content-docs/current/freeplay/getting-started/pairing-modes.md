@@ -1,5 +1,6 @@
 ---
 title: "Scegliere una modalità di associazione"
+description: "Scegliere il modo giusto per associare una TV FreePlay: un calendario da FreePlay Admin, un piano di culto da B1 Admin o nessun abbinamento."
 ---
 
 # Scegliere una modalità di associazione
@@ -32,7 +33,7 @@ Inserisci il codice in **FreePlay Admin** all'indirizzo [admin.freeplay.church](
 
 **Ideale per:** segnaletica di atrii e corridoi, loop di annunci e aule in cui la lezione deve già essere in riproduzione quando le persone entrano.
 
-Consulta **[Modalità programmata](../scheduled-mode/)** per la guida completa.
+Consulta **[Modalità programmata](../scheduled-mode/index.md)** per la guida completa.
 
 ## Modalità piano (B1 Admin)
 
@@ -42,7 +43,7 @@ Inserisci il codice in **B1 Admin** quando vuoi che la TV segua un tipo di piano
 
 **Ideale per:** TV che mostrano contenuti legati al piano di culto settimanale, dove qualcuno avvia la riproduzione al momento giusto.
 
-Consulta **[Modalità piano](../plan-mode/)** per la guida completa.
+Consulta **[Modalità piano](../plan-mode/index.md)** per la guida completa.
 
 :::tip
 Puoi anche riprodurre il piano di culto attuale in base a una programmazione. In FreePlay Admin, aggiungi una voce al calendario e scegli il tipo di piano in **Piani di culto**.
@@ -50,7 +51,7 @@ Puoi anche riprodurre il piano di culto attuale in base a una programmazione. In
 
 ## Fornitori di contenuti (senza associazione)
 
-Se non devi associare affatto la TV, puoi sfogliare direttamente i fornitori di contenuti. Fornitori come [Lessons.church](../../lessons-church/) e Bible Project hanno contenuti che puoi scaricare e riprodurre quando vuoi.
+Se non devi associare affatto la TV, puoi sfogliare direttamente i fornitori di contenuti. Fornitori come [Lessons.church](../../lessons-church/index.md) e Bible Project hanno contenuti che puoi scaricare e riprodurre quando vuoi.
 
 **Ideale per:** TV in cui i volontari scelgono cosa riprodurre ogni settimana, o quando vuoi esplorare cosa è disponibile.
 
@@ -60,6 +61,6 @@ Puoi aprire la schermata **Fornitori** in qualsiasi momento da **Impostazioni** 
 
 ## Articoli correlati
 
-- **[Modalità programmata](../scheduled-mode/)** - Metti le TV in calendario con FreePlay Admin
-- **[Modalità piano](../plan-mode/)** - Guida completa all'associazione con un piano di culto
-- **[Fornitori di contenuti](../content-providers/)** - Sfoglia e scarica contenuti da fonti esterne
+- **[Modalità programmata](../scheduled-mode/index.md)** - Metti le TV in calendario con FreePlay Admin
+- **[Modalità piano](../plan-mode/index.md)** - Guida completa all'associazione con un piano di culto
+- **[Fornitori di contenuti](../content-providers/index.md)** - Sfoglia e scarica contenuti da fonti esterne

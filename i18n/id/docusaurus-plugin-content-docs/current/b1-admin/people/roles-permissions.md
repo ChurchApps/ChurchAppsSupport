@@ -1,5 +1,6 @@
 ---
 title: "Menetapkan Peran"
+description: "Tetapkan peran di B1 Admin agar staf dan relawan hanya mengakses area orang, donasi, kehadiran, dan grup yang mereka butuhkan."
 ---
 
 # Menetapkan Peran

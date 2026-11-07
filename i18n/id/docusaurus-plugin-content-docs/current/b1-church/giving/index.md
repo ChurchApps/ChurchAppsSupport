@@ -1,5 +1,7 @@
 ---
-title: "Persembahan"
+title: "Pemberian Daring dan Donasi di B1.church"
+sidebar_label: "Persembahan"
+description: "Berikan donasi ke gereja Anda secara daring di B1.church tanpa akun, atau masuk untuk mengelola pemberian berulang, metode pembayaran, dan laporan pemberian."
 ---
 
 # Persembahan

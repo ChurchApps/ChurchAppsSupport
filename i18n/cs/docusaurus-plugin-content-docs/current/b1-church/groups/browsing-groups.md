@@ -1,5 +1,6 @@
 ---
 title: "Procházení skupin"
+description: "Procházejte veřejné skupiny církve na B1.church podle kategorií. Na kartách najdete časy setkání, místa a popisy, které vám pomohou vybrat tu pravou."
 ---
 
 # Procházení skupin

@@ -1,5 +1,6 @@
 ---
 title: "Installation af appen"
+description: "Installer B1 Mobile-appen fra App Store eller Google Play, men bemærk at den er udfaset, og at B1.church PWA nu anbefales i stedet."
 ---
 
 # Installation af appen
@@ -19,7 +20,7 @@ Du kan også søge efter "B1 Mobile", hvis det første søgning ikke returnerer 
 
 ## Efter installation
 
-Når appen er installeret, åbner du den fra din startskærm. Du vil se kirkesøgskærmen, hvor du kan finde og vælge din kirke. Hvis du allerede har en ChurchApps-konto, kan du [logge ind](./logging-in) med det samme. Hvis ikke, kan du oprette en konto fra login-skærmen.
+Når appen er installeret, åbner du den fra din startskærm. Du vil se kirkesøgskærmen, hvor du kan finde og vælge din kirke. Hvis du allerede har en ChurchApps-konto, kan du [logge ind](./logging-in.md) med det samme. Hvis ikke, kan du oprette en konto fra login-skærmen.
 
 Appen vil spørge om tilladelse til at sende push-meddelelser. Vi anbefaler at tillade meddelelser, så du kan modtage opdateringer fra din kirke og grupper.
 

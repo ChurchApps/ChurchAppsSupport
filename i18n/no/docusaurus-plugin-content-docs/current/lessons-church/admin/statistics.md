@@ -1,5 +1,6 @@
 ---
 title: "Statistikk"
+description: "Finn nedlastingstall per studie, se hvilke kirker som henter ressursene dine, og kart over deres plassering i statistikken for Lessons.church-administrasjon, med filtrering på datoperiode."
 ---
 
 # Statistikk

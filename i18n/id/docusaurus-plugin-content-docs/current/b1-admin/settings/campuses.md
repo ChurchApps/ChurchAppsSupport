@@ -1,5 +1,6 @@
 ---
 title: "Kampus"
+description: "Atur kampus di B1 Admin untuk melacak lokasi tiap orang dan grup, lalu saring orang, kehadiran, dan demografi berdasarkan lokasi."
 ---
 
 # Kampus

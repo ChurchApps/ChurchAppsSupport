@@ -1,5 +1,6 @@
 ---
 title: "Sayfaları Yönetme"
+description: "B1 Admin'in Web Sitesi Sayfaları görünümünde sayfaları ve gezinmeyi oluşturun, düzenleyin ve düzenli hâle getirin; sayfa ayarları, yönlendirmeler ve site şablonları dahil."
 ---
 
 # Sayfaları Yönetme
@@ -13,13 +14,13 @@ Web Sitesi Sayfaları görünümü, kilise web sitenizdeki tüm sayfaları oluş
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Alan adınızı ve temel site ayarlarınızı yapılandırmak için [İlk Kurulum](initial-setup) adımlarını tamamlayın
-- İçeriğinizi ve görsellerinizi hazır bulundurun. Önce medya dosyalarınızı yüklemek için [Dosyalar](files) yöneticisini kullanın.
+- Alan adınızı ve temel site ayarlarınızı yapılandırmak için [İlk Kurulum](./initial-setup.md) adımlarını tamamlayın
+- İçeriğinizi ve görsellerinizi hazır bulundurun. Önce medya dosyalarınızı yüklemek için [Dosyalar](./files.md) yöneticisini kullanın.
 
 </div>
 
 :::info
-Kilisenizin birden fazla web sitesi varsa (örneğin kampüs başına ayrı siteler), Web Sitesi Sayfaları görünümünün üst kısmındaki site değiştiriciyi kullanarak siteler arasında geçiş yapabilirsiniz. Her sitenin kendi sayfaları, gezinme yapısı ve [görünüm](appearance) ayarları vardır.
+Kilisenizin birden fazla web sitesi varsa (örneğin kampüs başına ayrı siteler), Web Sitesi Sayfaları görünümünün üst kısmındaki site değiştiriciyi kullanarak siteler arasında geçiş yapabilirsiniz. Her sitenin kendi sayfaları, gezinme yapısı ve [görünüm](./appearance.md) ayarları vardır.
 :::
 
 ## Sayfa Türlerini Anlama
@@ -35,7 +36,7 @@ Kilisenizin birden fazla web sitesi varsa (örneğin kampüs başına ayrı site
 
 1. Web Sitesi Sayfaları görünümünün sağ üst köşesindeki **Sayfa Ekle** düğmesine tıklayın.
 2. Bir sayfa türü (boş veya bir şablon) seçin ve sayfaya bir ad verin.
-3. Herhangi bir sayfanın yanındaki **İçeriği Düzenle**'ye tıklayarak [sayfa düzenleyiciyi](page-editor) açın; burada bölümler, metin, görseller ve diğer öğeler ekleyebilirsiniz.
+3. Herhangi bir sayfanın yanındaki **İçeriği Düzenle**'ye tıklayarak [sayfa düzenleyiciyi](./page-editor.md) açın; burada bölümler, metin, görseller ve diğer öğeler ekleyebilirsiniz.
 4. Sayfa başlığını, URL yolunu ve diğer meta verileri güncellemek için bir sayfanın yanındaki **Sayfa Ayarları**'na tıklayın.
 5. Ziyaretçilerin sayfayı tam olarak nasıl göreceğini görmek için **Yol** sütunundaki sayfa yoluna tıklayarak canlı sayfayı yeni bir sekmede açın.
 
@@ -112,10 +113,10 @@ Sitenizi sıfırdan oluşturuyorsanız, sayfaları tek tek oluşturmak yerine bi
 3. Beğendiğiniz bir şablonu bulduğunuzda **Şablonu Uygula**'ya tıklayın.
 4. Henüz var olmayan sayfalar oluşturulur ve gezinmenize eklenir. Var olan sayfalar olduğu gibi bırakılır.
 
-Bir şablonu uyguladıktan sonra, yer tutucu metni ve görselleri kilisenizin gerçek içeriğiyle değiştirmek için her sayfayı [sayfa düzenleyicide](page-editor) açın.
+Bir şablonu uyguladıktan sonra, yer tutucu metni ve görselleri kilisenizin gerçek içeriğiyle değiştirmek için her sayfayı [sayfa düzenleyicide](./page-editor.md) açın.
 
 :::info
-Site şablonları sayfa yapısını ve gezinmeyi oluşturur. Sitenizin renk düzenini veya yazı tiplerini geçersiz kılmazlar; bunlar [Görünüm](appearance) tarafından kontrol edilir.
+Site şablonları sayfa yapısını ve gezinmeyi oluşturur. Sitenizin renk düzenini veya yazı tiplerini geçersiz kılmazlar; bunlar [Görünüm](./appearance.md) tarafından kontrol edilir.
 :::
 
 ## Görsel Büyütme
@@ -124,7 +125,7 @@ Ziyaretçiler web sitenizdeki bir görsele tıkladığında, görsel tam ekran b
 
 ## Sonraki Adımlar
 
-- [İlk Kurulum](initial-setup) -- İlk kez kurulum talimatları
-- [Sayfa Düzenleyiciyi Kullanma](page-editor) -- Sayfa içeriği oluşturmayı ve biçimlendirmeyi öğrenin
-- [Görünüm](appearance) -- Sitenizin görsel temasını özelleştirin
-- [Dosyalar](files) -- Sayfalarınız için medya dosyalarını yükleyin ve yönetin
+- [İlk Kurulum](./initial-setup.md) -- İlk kez kurulum talimatları
+- [Sayfa Düzenleyiciyi Kullanma](./page-editor.md) -- Sayfa içeriği oluşturmayı ve biçimlendirmeyi öğrenin
+- [Görünüm](./appearance.md) -- Sitenizin görsel temasını özelleştirin
+- [Dosyalar](./files.md) -- Sayfalarınız için medya dosyalarını yükleyin ve yönetin

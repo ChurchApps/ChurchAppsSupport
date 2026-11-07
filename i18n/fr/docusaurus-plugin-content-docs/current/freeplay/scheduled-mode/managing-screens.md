@@ -1,5 +1,6 @@
 ---
 title: "Gérer les écrans et les groupes"
+description: "Vérifier les TV FreePlay en ligne et prêtes pour dimanche, modifier leurs réglages et créer des groupes partageant un calendrier dans FreePlay Admin."
 ---
 
 # Gérer les écrans et les groupes
@@ -14,7 +15,7 @@ La page **Screens** (Écrans) de FreePlay Admin répertorie chaque téléviseur 
 <h4>Avant de commencer</h4>
 
 - Connectez-vous à FreePlay Admin sur [admin.freeplay.church](https://admin.freeplay.church)
-- [Associez au moins un écran](./pairing-a-screen)
+- [Associez au moins un écran](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Utilisez **Present** (Présenter) pour lire le calendrier de l'écran dans votre
 
 Cliquez sur le libellé d'un écran pour ouvrir sa page. À gauche :
 
-- **Present in browser** (Présenter dans le navigateur) — Lit le calendrier de cet écran en plein écran dans votre navigateur, comme il apparaîtrait sur le téléviseur. Voir [Présenter depuis un navigateur](./scheduled-playback#presenting-from-a-browser)
+- **Present in browser** (Présenter dans le navigateur) — Lit le calendrier de cet écran en plein écran dans votre navigateur, comme il apparaîtrait sur le téléviseur. Voir [Présenter depuis un navigateur](./scheduled-playback.md#presenting-from-a-browser)
 - **Edit** (Modifier) — Change le libellé, le groupe ou le mode
 - **More** (Plus) > **Unpair** (Dissocier) — Déconnecte le téléviseur. Il revient alors à l'affichage d'un code d'association
 
@@ -93,6 +94,6 @@ Supprimer un groupe supprime aussi son calendrier. Les écrans de ce groupe s'é
 
 ## Articles associés
 
-- **[Associer un écran](./pairing-a-screen)** - Ajouter un nouveau téléviseur
-- **[Programmer le calendrier](./scheduling-the-calendar)** - Définir ce que diffuse chaque groupe et sa boucle par défaut
-- **[Lecture programmée sur le téléviseur](./scheduled-playback)** - Ce que signifie la date « Ready through » sur le téléviseur lui-même
+- **[Associer un écran](./pairing-a-screen.md)** - Ajouter un nouveau téléviseur
+- **[Programmer le calendrier](./scheduling-the-calendar.md)** - Définir ce que diffuse chaque groupe et sa boucle par défaut
+- **[Lecture programmée sur le téléviseur](./scheduled-playback.md)** - Ce que signifie la date « Ready through » sur le téléviseur lui-même

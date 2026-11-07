@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Povežite B1 Admin z Google Preglednicami prek dodatka B1 Export in po potrebi uvozite osebe, darove, skupine in prisotnost v zavihke preglednice."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Izvoz se izvaja v ozadju pod vašim Google računom. Če se API ključ zamenja a
 - **»B1 rejected the API key (401)«** — ključ je bil preklican ali je napačen. Ustvarite novega in ga ponovno prilepite.
 - **»This API key lacks permission for /giving/donations (403)«** — ključ nima dovoljenja `donations:read`. Posodobite dovoljenja ključa v B1Admin.
 - **Preglednica se po zagonu ne osveži** — preverite, ali gledate *pravilen* zavihek (`B1 People` itd.). Izvoz ustvari zavihek, če ta ni obstajal.
-- **»Quota exceeded«** — Apps Script omejuje dnevne kvote za `UrlFetchApp` na uporabnika (običajno nekaj tisoč klicev na dan). Večja cerkev z veliko zapisi bo morda morala izvoze razdeliti na več dni ali za sinhronizacijo z velikim obsegom uporabiti [Make](./make) ali integracijo po meri.
+- **»Quota exceeded«** — Apps Script omejuje dnevne kvote za `UrlFetchApp` na uporabnika (običajno nekaj tisoč klicev na dan). Večja cerkev z veliko zapisi bo morda morala izvoze razdeliti na več dni ali za sinhronizacijo z velikim obsegom uporabiti [Make](./make.md) ali integracijo po meri.
 
 ## Prilagajanje dodatka
 
@@ -108,6 +109,6 @@ Dodatek je odprtokoden — projekt Apps Script je v repozitoriju `B1Integrations
 
 ## Glej tudi
 
-- [Zapier](./zapier) — za sinhronizacijo v realnem času namesto izvoza na zahtevo
-- [Make](./make) — za sinhronizacijo z bolj zapletenimi transformacijami
+- [Zapier](./zapier.md) — za sinhronizacijo v realnem času namesto izvoza na zahtevo
+- [Make](./make.md) — za sinhronizacijo z bolj zapletenimi transformacijami
 - [API ključi (referenca za razvijalce)](/docs/developer/api/api-keys)

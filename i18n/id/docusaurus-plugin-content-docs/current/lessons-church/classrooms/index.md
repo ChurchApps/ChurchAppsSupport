@@ -1,5 +1,6 @@
 ---
 title: "Ruang Kelas"
+description: "Atur dan kelola ruang kelas yang menyusun jadwal pengajaran gereja di Lessons.church, dari ruangan dan kelompok usia hingga tampilan untuk relawan."
 ---
 
 # Ruang Kelas

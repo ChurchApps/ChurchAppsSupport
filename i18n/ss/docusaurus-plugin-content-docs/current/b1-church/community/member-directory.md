@@ -1,5 +1,7 @@
 ---
-title: "Luhlu Lwemalungu"
+title: "Ulwati Lwamalungu ku-Portal Yelilungu le-B1.church"
+sidebar_label: "Luhlu Lwemalungu"
+description: "Sesha futsi ubone emalungu esonto ku-ulwati lwe-B1.church, bona emaphrofayili nemalungu emndeni, futsi ubone kutsi ngubani longakwazi kufinyelela ku-ulwati."
 ---
 
 # Luhlu Lwemalungu

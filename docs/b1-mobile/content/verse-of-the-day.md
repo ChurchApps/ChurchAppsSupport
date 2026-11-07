@@ -1,5 +1,7 @@
 ---
-title: "Verse of the Day"
+title: "Verse of the Day in B1 Mobile"
+sidebar_label: "Verse of the Day"
+description: "Open the Verse of the Day screen in B1 Mobile to see the Bible verse for today as an image sized for your phone or tablet orientation, updated daily."
 ---
 
 # Verse of the Day
@@ -13,7 +15,7 @@ The Verse of the Day screen displays a daily Bible verse as a beautifully format
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Your church must have the Verse of the Day feature enabled
 
 </div>
@@ -46,5 +48,5 @@ The Verse of the Day is a built-in content feature of B1 Mobile. If you do not s
 
 ## Related Articles
 
-- [Bible](./bible) -- Read full passages of Scripture in the built-in reader
-- [Sermons](./sermons) -- Watch recorded sermons from your church
+- [Bible](./bible.md) -- Read full passages of Scripture in the built-in reader
+- [Sermons](./sermons.md) -- Watch recorded sermons from your church

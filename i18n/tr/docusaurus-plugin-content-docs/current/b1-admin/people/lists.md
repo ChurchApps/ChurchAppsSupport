@@ -1,5 +1,6 @@
 ---
 title: "Kayıtlı Listeler"
+description: "B1 Admin'de bir Kişi aramasını adlandırılmış liste olarak kaydedin, tek tıkla yeniden yükleyin. Listeler canlıdır; yeni eşleşen üyeler otomatik görünür."
 ---
 
 # Kayıtlı Listeler

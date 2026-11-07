@@ -1,5 +1,6 @@
 ---
 title: "Banikeli Bangaphandle"
+description: "Engeza ifidi yemakharikhulamu langaphandle ku-Lessons.church kusuka ku-Third-Party admin page, bese ubuka, uvuselele, noma ususe kuxhumana nemahlinzeki njengoba kudingeka."
 ---
 
 # Banikeli Bangaphandle

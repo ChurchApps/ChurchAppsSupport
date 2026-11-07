@@ -1,5 +1,6 @@
 ---
 title: "Ponudnik vsebine FreePlay"
+description: "Kaj ponudnik vsebine mora zagotoviti za povezavo knjižnice ur s FreePlay: logotip, prijavni model, končne točke kataloga in seznamov ter formate medijev."
 ---
 
 # Ponudnik vsebine FreePlay

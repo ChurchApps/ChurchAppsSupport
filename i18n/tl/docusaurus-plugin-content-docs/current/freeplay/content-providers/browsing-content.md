@@ -1,5 +1,6 @@
 ---
 title: "Pag-browse at Pag-download ng Content"
+description: "I-navigate ang library ng konektadong provider gamit ang TV remote sa FreePlay, pagkatapos i-download o i-stream ang mga aralin at video para sa playback."
 ---
 
 # Pag-browse at Pag-download ng Content
@@ -13,7 +14,7 @@ Kapag nakakonekta ka na sa isang content provider, maaari mong i-browse ang libr
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Kumonekta sa kahit isang content provider -- tingnan ang [Connecting to Providers](./connecting-providers)
+- Kumonekta sa kahit isang content provider -- tingnan ang [Connecting to Providers](./connecting-providers.md)
 - Ihanda ang remote ng iyong TV para sa pag-navigate
 
 </div>
@@ -38,7 +39,7 @@ Maaari kang bumaba hangga't pinapayagan ng istruktura ng content ng provider. Si
 
 ## Pag-browse sa Lessons.church
 
-Ang library ng [Lessons.church](../../lessons-church/) ay nakaayos sa parehong paraan ng website nito. Sa pinakataas na antas, makikita mo ang dalawang folder:
+Ang library ng [Lessons.church](../../lessons-church/index.md) ay nakaayos sa parehong paraan ng website nito. Sa pinakataas na antas, makikita mo ang dalawang folder:
 
 - **Lessons** -- Pumasok sa pamamagitan ng **program**, pagkatapos ay **study**, pagkatapos ay **lesson**. Ang bawat lesson ay naglilista ng mga **venue** nito, na mga bersyon ng lesson para sa isang partikular na pangkat ng edad o setting, tulad ng Preschool o Elementary. Piliin ang isang venue para buksan ang download screen ng bersyon ng lesson na iyon
 - **Add-Ons** -- Mga dagdag na video at resource, nakapangkat ayon sa kategorya
@@ -78,7 +79,7 @@ Gamitin ang mga kontrol na ito habang nagpe-playback:
 Kapag lumabas ka sa player, babalik ka sa content browser sa root level ng kasalukuyang provider.
 
 :::info
-Para sa kumpletong sanggunian ng lahat ng player control, tingnan ang [Playing Content](./playing-content).
+Para sa kumpletong sanggunian ng lahat ng player control, tingnan ang [Playing Content](./playing-content.md).
 :::
 
 ## Paglipat sa Pagitan ng mga Provider

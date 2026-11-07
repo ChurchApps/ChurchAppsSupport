@@ -1,5 +1,6 @@
 ---
 title: "Hantera skärmar och grupper"
+description: "Kontrollera vilka FreePlay-TV:ar som är online och redo för söndagen, redigera skärminställningar och skapa grupper som delar en kalender i FreePlay Admin."
 ---
 
 # Hantera skärmar och grupper
@@ -14,7 +15,7 @@ Sidan **Skärmar** i FreePlay Admin visar alla TV-apparater som är kopplade til
 <h4>Innan du börjar</h4>
 
 - Logga in på FreePlay Admin på [admin.freeplay.church](https://admin.freeplay.church)
-- [Koppla minst en skärm](./pairing-a-screen)
+- [Koppla minst en skärm](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Använd **Presentera** för att spela upp skärmens kalender i din webbläsare, 
 
 Klicka på en skärms etikett för att öppna dess sida. Till vänster finns:
 
-- **Presentera i webbläsare** - Spela upp skärmens kalender i helskärm i din webbläsare, så som den skulle se ut på TV:n. Se [Presentera från en webbläsare](./scheduled-playback#presenting-from-a-browser)
+- **Presentera i webbläsare** - Spela upp skärmens kalender i helskärm i din webbläsare, så som den skulle se ut på TV:n. Se [Presentera från en webbläsare](./scheduled-playback.md#presenting-from-a-browser)
 - **Redigera** - Ändra etikett, grupp eller läge
 - **Mer** > **Koppla bort** - Koppla bort TV:n. Den visar då en kopplingskod igen
 
@@ -93,6 +94,6 @@ Om du tar bort en grupp tas även dess schema bort. Skärmar i gruppen blir svar
 
 ## Relaterade artiklar
 
-- **[Koppla en skärm](./pairing-a-screen)** - Lägg till en ny TV
-- **[Schemalägga kalendern](./scheduling-the-calendar)** - Ange vad varje grupp spelar och dess standardslinga
-- **[Schemalagd uppspelning på TV:n](./scheduled-playback)** - Vad datumet "Redo till och med" betyder på själva TV:n
+- **[Koppla en skärm](./pairing-a-screen.md)** - Lägg till en ny TV
+- **[Schemalägga kalendern](./scheduling-the-calendar.md)** - Ange vad varje grupp spelar och dess standardslinga
+- **[Schemalagd uppspelning på TV:n](./scheduled-playback.md)** - Vad datumet "Redo till och med" betyder på själva TV:n

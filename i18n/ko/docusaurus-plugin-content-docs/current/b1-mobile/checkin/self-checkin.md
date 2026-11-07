@@ -1,5 +1,7 @@
 ---
-title: "셀프 체크인"
+title: "B1 Mobile 앱에서 직접 체크인하기"
+sidebar_label: "셀프 체크인"
+description: "B1 Mobile 앱에서 나와 가족을 예배에 체크인하세요. 예배 시간을 고르고 각 사람의 그룹을 지정하는 방법을 포함합니다."
 ---
 
 # 셀프 체크인
@@ -13,7 +15,7 @@ B1 모바일에서 체크인하는 것은 간단한 다단계 과정입니다. �
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 - 프로필에 [가족 구성원](../profile/household.md) 설정 확인
 
 </div>

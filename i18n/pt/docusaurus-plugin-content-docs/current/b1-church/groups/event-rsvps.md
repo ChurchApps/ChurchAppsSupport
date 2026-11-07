@@ -1,5 +1,6 @@
 ---
 title: "Confirmações de Presença em Eventos"
+description: "Responda Vou, Talvez ou Não vou aos eventos do grupo no B1.church e veja quantas pessoas confirmaram. Líderes também podem ver as respostas."
 ---
 
 # Confirmações de Presença em Eventos
@@ -30,14 +31,14 @@ Sua confirmação se aplica àquela ocorrência específica -- em um encontro se
 ## Para Líderes de Grupo
 
 - **Ver as respostas** -- Os líderes veem um link **Ver respostas** em cada evento no calendário do grupo (**Todos os eventos**). Ele abre a folha **Respostas**, com todos listados por resposta -- Vou, Talvez e Não vou. Se ninguém tiver respondido ainda, aparece "Nenhuma resposta ainda."
-- **Ativar ou desativar confirmações de presença** -- Ao criar ou editar um evento, use a chave **Permitir confirmações de presença**. Eventos com confirmações desativadas não mostram os botões de resposta. A equipe que cria eventos em lote pelo B1 Admin tem a mesma opção -- consulte [Calendário do Grupo](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Ativar ou desativar confirmações de presença** -- Ao criar ou editar um evento, use a chave **Permitir confirmações de presença**. Eventos com confirmações desativadas não mostram os botões de resposta. A equipe que cria eventos em lote pelo B1 Admin tem a mesma opção -- consulte [Calendário do Grupo](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-As confirmações de presença são uma contagem simples de pessoas. Se o seu evento exigir dados de inscrição, controle de vagas ou pagamento, use a [inscrição em eventos](../events/registering).
+As confirmações de presença são uma contagem simples de pessoas. Se o seu evento exigir dados de inscrição, controle de vagas ou pagamento, use a [inscrição em eventos](../events/registering.md).
 :::
 
 ## Artigos Relacionados
 
 - [Detalhes do Grupo](./group-details.md) -- Tudo o que há na página de detalhes do grupo
-- [Calendário do Grupo (B1 Admin)](../../b1-admin/groups/group-calendar) -- Como a equipe e os líderes gerenciam eventos e confirmações de presença
-- [Inscrição em Eventos](../events/registering) -- Inscrição completa em eventos, com vagas e pagamentos
+- [Calendário do Grupo (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Como a equipe e os líderes gerenciam eventos e confirmações de presença
+- [Inscrição em Eventos](../events/registering.md) -- Inscrição completa em eventos, com vagas e pagamentos

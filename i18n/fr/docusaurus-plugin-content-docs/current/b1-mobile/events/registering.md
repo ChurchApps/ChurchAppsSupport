@@ -1,5 +1,7 @@
 ---
-title: "S'inscrire aux événements"
+title: "S’inscrire à un événement dans B1 Mobile"
+sidebar_label: "S'inscrire aux événements"
+description: "Inscrivez-vous, vous et votre famille, aux événements de l’église depuis B1 Mobile, vérifiez les places restantes et confirmez en trois étapes."
 ---
 
 # S'inscrire aux événements
@@ -13,7 +15,7 @@ Inscrivez-vous aux événements de l'église directement depuis B1 Mobile en uti
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 - L'événement doit avoir l'inscription activée et la période d'inscription doit être ouverte
 
 </div>
@@ -50,4 +52,4 @@ Si vous devez annuler, contactez votre administrateur d'église. Il peut annuler
 ## Articles connexes
 
 - [Aperçu des événements](./index.md) -- Consultez les événements avec inscription sur mobile
-- [Affichage des horaires](../serving/viewing-plans) -- Consultez votre horaire de service
+- [Affichage des horaires](../serving/viewing-plans.md) -- Consultez votre horaire de service

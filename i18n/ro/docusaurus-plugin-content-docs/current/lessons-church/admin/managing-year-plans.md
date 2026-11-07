@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea planurilor anuale"
+description: "Creați un plan anual de lecții săptămânale în Lessons.church, ancorați săptămânile de Paște sau Crăciun și publicați-l pentru aplicare în B1 Admin."
 ---
 
 # Gestionarea planurilor anuale

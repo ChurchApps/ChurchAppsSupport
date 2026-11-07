@@ -1,5 +1,6 @@
 ---
 title: "Programos ir studijos"
+description: "Kaip Lessons.church programos, mokymai, pamokos ir vietos susijusios tarpusavyje, kad rastumėte tinkamą mokymo medžiagą ir pereitumėte prie susijusių pamokų."
 ---
 
 # Programos ir studijos

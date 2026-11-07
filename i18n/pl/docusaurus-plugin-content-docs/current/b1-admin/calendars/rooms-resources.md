@@ -1,5 +1,6 @@
 ---
 title: "Sale, zasoby i planowanie"
+description: "Skonfiguruj sale, sprzęt, blokady i szablony wydarzeń w B1 Admin, aby grupy składały wnioski o rezerwację, które zatwierdzasz bez podwójnych rezerwacji."
 ---
 
 # Sale, zasoby i planowanie
@@ -14,7 +15,7 @@ Sale i zasoby pozwalają śledzić miejsca oraz sprzęt w Twoim kościele, któr
 <h4>Zanim zaczniesz</h4>
 
 - Potrzebujesz uprawnień administratora do sekcji Kalendarze w B1 Admin
-- Skonfiguruj [grupy](../groups/creating-groups), których członkowie będą składać wnioski o rezerwację
+- Skonfiguruj [grupy](../groups/creating-groups.md), których członkowie będą składać wnioski o rezerwację
 
 </div>
 
@@ -76,7 +77,7 @@ Przy tworzeniu nowego wydarzenia personel może wybrać istniejący szablon, aby
 
 ## Powiązane artykuły
 
-- [Kalendarz dostępności](availability): przeglądaj wszystkie rezerwacje w jednym miejscu i rezerwuj sale lub zasoby bezpośrednio
-- [Zatwierdzanie w kalendarzu](approvals): zatwierdzaj lub odrzucaj wnioski o rezerwację sal i zasobów
-- [Tworzenie kalendarzy](creating-calendars): skonfiguruj kalendarze wydarzeń
-- [Tworzenie grup](../groups/creating-groups): skonfiguruj grupy, które mogą rezerwować sale i zasoby
+- [Kalendarz dostępności](./availability.md): przeglądaj wszystkie rezerwacje w jednym miejscu i rezerwuj sale lub zasoby bezpośrednio
+- [Zatwierdzanie w kalendarzu](./approvals.md): zatwierdzaj lub odrzucaj wnioski o rezerwację sal i zasobów
+- [Tworzenie kalendarzy](./creating-calendars.md): skonfiguruj kalendarze wydarzeń
+- [Tworzenie grup](../groups/creating-groups.md): skonfiguruj grupy, które mogą rezerwować sale i zasoby

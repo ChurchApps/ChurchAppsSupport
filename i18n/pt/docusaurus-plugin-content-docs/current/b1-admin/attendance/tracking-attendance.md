@@ -1,5 +1,6 @@
 ---
 title: "Rastreando Presença"
+description: "Analise tendências de presença, filtre relatórios por campus, culto ou grupo e exporte a presença dos grupos pela página de Presença no B1 Admin."
 ---
 
 # Rastreando Presença

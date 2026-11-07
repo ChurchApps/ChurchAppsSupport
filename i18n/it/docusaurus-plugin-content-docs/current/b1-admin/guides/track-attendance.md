@@ -1,5 +1,6 @@
 ---
 title: "Guida: Tracciare la Frequenza della Chiesa"
+description: "Monitora le presenze in B1 Admin impostando sedi e orari dei culti, registrandole a mano o con il self check-in, e leggendo i report."
 ---
 
 # Tracciare la Frequenza della Chiesa

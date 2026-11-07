@@ -1,5 +1,6 @@
 ---
 title: "Egendefinerte felt"
+description: "Definer egendefinerte felt i B1 Admin for ekstra personopplysninger, som utløpsdato for politiattest eller t-skjortestørrelse, og søk og filtrer på dem."
 ---
 
 # Egendefinerte felt

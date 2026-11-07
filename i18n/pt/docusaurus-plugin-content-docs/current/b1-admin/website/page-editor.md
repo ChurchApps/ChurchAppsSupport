@@ -1,5 +1,6 @@
 ---
 title: "Usando o editor de páginas"
+description: "Configure o editor de páginas do B1 Admin: adicione seções e elementos, estilize-os, visualize no celular e publique rascunhos, com desfazer e histórico."
 ---
 
 # Usando o editor de páginas
@@ -13,8 +14,8 @@ O editor de páginas do B1 é um criador visual de arrastar e soltar que permite
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Conclua a [Configuração inicial](initial-setup) para configurar o seu site
-- Crie pelo menos uma página em [Gerenciando páginas](managing-pages)
+- Conclua a [Configuração inicial](./initial-setup.md) para configurar o seu site
+- Crie pelo menos uma página em [Gerenciando páginas](./managing-pages.md)
 - Você precisa da permissão **content.edit** para acessar o editor
 
 </div>
@@ -27,7 +28,7 @@ O editor de páginas do B1 é um criador visual de arrastar e soltar que permite
 O editor abre em tela cheia. O painel da esquerda mostra a estrutura da página e os elementos de conteúdo disponíveis; a área central mostra uma prévia ao vivo da sua página.
 
 :::info
-O editor sempre é exibido no modo claro, independentemente da configuração de tema do B1 Admin, e usa as fontes de títulos e de texto que você escolheu em [Aparência](appearance). Isso garante que a prévia corresponda exatamente à forma como a página vai aparecer para os visitantes do site.
+O editor sempre é exibido no modo claro, independentemente da configuração de tema do B1 Admin, e usa as fontes de títulos e de texto que você escolheu em [Aparência](./appearance.md). Isso garante que a prévia corresponda exatamente à forma como a página vai aparecer para os visitantes do site.
 :::
 
 ## Estrutura da página: seções e elementos
@@ -57,7 +58,7 @@ Já montou uma seção, mas quer uma estrutura diferente? Use o seletor de layou
    - **Imagem** -- Envie ou aponte para uma foto
    - **Botão** -- Um link clicável de chamada para ação
    - **Cartão** -- Uma imagem com título e descrição
-   - **Formulário** -- Incorpore um [formulário](../forms/creating-forms) diretamente na página. Se o formulário tiver uma [foto de cabeçalho](../forms/creating-forms.md#adding-a-header-photo), ela aparece acima das perguntas
+   - **Formulário** -- Incorpore um [formulário](../forms/creating-forms.md) diretamente na página. Se o formulário tiver uma [foto de cabeçalho](../forms/creating-forms.md#adding-a-header-photo), ela aparece acima das perguntas
    - **Calendário** -- Exibe um calendário de eventos
    - **FAQ** -- Blocos de perguntas e respostas no estilo sanfona
    - **Vídeo** -- Incorpora um vídeo pelo endereço
@@ -75,7 +76,7 @@ Já montou uma seção, mas quer uma estrutura diferente? Use o seletor de layou
    - **Mapa** -- Um mapa incorporado centralizado no endereço da sua igreja
    - **Tabela** -- Uma grade simples de linhas e colunas para conteúdo tabular
    - **Texto com foto** -- Texto e imagem lado a lado
-   - **Logotipo** -- O logotipo da sua igreja, puxado de [Aparência](appearance)
+   - **Logotipo** -- O logotipo da sua igreja, puxado de [Aparência](./appearance.md)
    - **Transmissão ao vivo** -- O player da sua transmissão ao vivo, incorporado diretamente na página
    - **Podcast** -- Uma lista de episódios puxada de um endereço RSS de podcast externo que você informa, com opções de quantos episódios mostrar e se devem exibir datas e descrições. Cada episódio no site publicado tem um player de áudio e um link **Baixar** que salva o arquivo de áudio do episódio com o título do episódio. Serve para destacar qualquer feed de podcast no seu site; para publicar os seus próprios sermões como podcast, veja [Gerenciando sermões](../sermons/managing-sermons.md#your-podcast-feed)
    - **Doação** -- Um botão de ofertas ou um formulário de doação incorporado
@@ -96,7 +97,7 @@ Se você colar somente um endereço web (como um link de imagem) na caixa de Jav
 
 O elemento **Calendário** mostra eventos de um dos seus calendários:
 
-1. Em **Selecionar**, escolha **Calendário de grupo** (os eventos de um grupo — a lista mostra os grupos de que você participa) ou **Calendário selecionado** (um calendário que você criou em **Calendários**; veja [Calendário selecionado](../calendars/curated-calendar)).
+1. Em **Selecionar**, escolha **Calendário de grupo** (os eventos de um grupo — a lista mostra os grupos de que você participa) ou **Calendário selecionado** (um calendário que você criou em **Calendários**; veja [Calendário selecionado](../calendars/curated-calendar.md)).
 2. Em **Selecionar calendário**, escolha o grupo ou o calendário.
 3. Em **Exibição**, escolha como mostrá-lo:
    - **Calendário mensal** -- Uma grade do mês que os visitantes podem percorrer.
@@ -129,7 +130,7 @@ Clique em qualquer elemento para abrir o painel de estilos dele. As opções com
 Para estilização avançada, cada seção e elemento tem um campo **CSS personalizado** onde você pode escrever suas próprias regras de CSS. Elas são limitadas a esse elemento, então não afetam involuntariamente o restante da página.
 
 :::tip
-Se você precisar aplicar estilos em todo o site — como uma fonte personalizada ou uma cor global —, use as configurações de [Aparência](appearance) em vez de CSS personalizado em páginas individuais.
+Se você precisar aplicar estilos em todo o site — como uma fonte personalizada ou uma cor global —, use as configurações de [Aparência](./appearance.md) em vez de CSS personalizado em páginas individuais.
 :::
 
 ## Visualizando a sua página
@@ -184,7 +185,7 @@ Use o fluxo de rascunho/publicação quando quiser preparar uma página — por 
 
 ## Artigos relacionados
 
-- [Gerenciando páginas](managing-pages) -- Crie páginas, defina URLs e gerencie a navegação do site
-- [Aparência](appearance) -- Defina cores, fontes e identidade visual de todo o site
-- [Arquivos](files) -- Envie imagens e documentos para usar no editor
-- [Criando formulários](../forms/creating-forms) -- Crie formulários que você pode incorporar nas páginas
+- [Gerenciando páginas](./managing-pages.md) -- Crie páginas, defina URLs e gerencie a navegação do site
+- [Aparência](./appearance.md) -- Defina cores, fontes e identidade visual de todo o site
+- [Arquivos](./files.md) -- Envie imagens e documentos para usar no editor
+- [Criando formulários](../forms/creating-forms.md) -- Crie formulários que você pode incorporar nas páginas

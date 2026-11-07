@@ -1,5 +1,7 @@
 ---
-title: "Prisijungimas"
+title: "Prisijungimas prie B1.church ir narių portalo"
+sidebar_label: "Prisijungimas"
+description: "Prisijunkite prie B1.church narių portalo, naudokite dviejų veiksnių kodus ar vienkartinį prisijungimą, atkurkite slaptažodį ir atsijunkite."
 ---
 
 # Prisijungimas
@@ -17,7 +19,7 @@ Prisijungus prie B1.church, gausite prieigą prie narių portalo, kuriame galite
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Jums reikia ChurchApps paskyros. Kaip ją sukurti, žr. [Pradžia](../getting-started/).
+- Jums reikia ChurchApps paskyros. Kaip ją sukurti, žr. [Pradžia](./index.md).
 - Jums reikia savo bažnyčios B1.church adreso (pavyzdžiui, `https://jusubaznyciospavadinimas.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Liksite prisijungę tame pačiame naršyklėje ar įdiegtoje programėlėje, kol
 
 ## Narių portalo atidarymas
 
-Prisijungę galite atidaryti narių portalą spustelėdami savo **vardą** viršutiniame dešiniajame puslapio kampe ir meniu pasirinkdami **Narių portalas**. Narių portale yra visi jūsų asmeniniai bažnyčios įrankiai, įskaitant [pradinį skydelį](./navigating.md), [Mano puslapį](./me-page.md), [grupes](../groups/), [aukojimą](../giving/) ir kt.
+Prisijungę galite atidaryti narių portalą spustelėdami savo **vardą** viršutiniame dešiniajame puslapio kampe ir meniu pasirinkdami **Narių portalas**. Narių portale yra visi jūsų asmeniniai bažnyčios įrankiai, įskaitant [pradinį skydelį](./navigating.md), [Mano puslapį](./me-page.md), [grupes](../groups/index.md), [aukojimą](../giving/index.md) ir kt.
 
 ## Jūsų vartotojo meniu
 

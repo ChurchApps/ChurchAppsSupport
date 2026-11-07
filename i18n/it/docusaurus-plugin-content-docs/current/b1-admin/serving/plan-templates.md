@@ -1,5 +1,6 @@
 ---
 title: "Modelli di piano"
+description: "Salva ordine del culto e posizioni di un piano come modello riutilizzabile in B1 Admin, poi applicalo ai piani futuri con un solo clic."
 ---
 
 # Modelli di piano

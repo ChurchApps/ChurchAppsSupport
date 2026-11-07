@@ -1,5 +1,6 @@
 ---
 title: "Pagtatala ng mga Donasyon"
+description: "Itala ang handog sa B1 Admin: gumawa ng batch, maglagay ng handog isa-isa, mag-import ng CSV, o magtala ng isang regalo mula sa profile ng donor."
 ---
 
 # Pagtatala ng mga Donasyon

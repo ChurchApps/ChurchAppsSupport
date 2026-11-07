@@ -1,5 +1,7 @@
 ---
-title: "Doações"
+title: "Doações Online no B1.church"
+sidebar_label: "Doações"
+description: "Doe online para sua igreja pelo B1.church sem criar conta, ou entre para gerenciar doações recorrentes, formas de pagamento e extratos."
 ---
 
 # Doações

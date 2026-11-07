@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Oras at Setup ng Live Stream sa B1 Admin"
+sidebar_label: "Live Streaming"
+description: "Mag-iskedyul ng lingguhan o minsanang live stream, itakda ang oras ng chat at maagang video, ikonekta ang YouTube channel, at ayusin ang embed sa B1 Admin."
 ---
 
 # Live Streaming
@@ -15,7 +17,7 @@ Hinahayaan ka ng pahinang Live Stream Times na i-configure ang iskedyul ng strea
 
 - Kailangan mo ng permiso na **contentApi.streamingServices.edit**. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) kung wala kang access.
 - Ihanda ang iyong YouTube Channel ID kung plano mong gumamit ng awtomatikong live streaming
-- Magdagdag ng kahit isang [sermon](managing-sermons) o permanenteng live URL para gamiting pinagmumulan ng iyong stream
+- Magdagdag ng kahit isang [sermon](./managing-sermons.md) o permanenteng live URL para gamiting pinagmumulan ng iyong stream
 
 </div>
 
@@ -76,13 +78,13 @@ Para mahanap ang iyong YouTube Channel ID, pumunta sa advanced settings ng iyong
 
 ## Pag-customize ng Kulay at Logo
 
-Ginagamit ng iyong live stream page ang mga setting ng [Appearance](../website/appearance) ng iyong website:
+Ginagamit ng iyong live stream page ang mga setting ng [Appearance](../website/appearance.md) ng iyong website:
 
 - Ang **light accent color** na may madilim na teksto ang ginagamit para sa header.
 - Ang **dark accent color** na may maliwanag na teksto ang ginagamit para sa sidebar.
 - Lumalabas ang iyong **Light Background Logo** sa streaming page. Gumamit ng larawang may transparent na background at 4:1 na aspect ratio.
 
-Para baguhin ang mga ito, pumunta sa **Website** at pagkatapos **Appearance**, at i-update ang iyong mga setting ng [Color Palette](../website/appearance#color-palette) at [Logo](../website/appearance#logo-and-branding).
+Para baguhin ang mga ito, pumunta sa **Website** at pagkatapos **Appearance**, at i-update ang iyong mga setting ng [Color Palette](../website/appearance.md#color-palette) at [Logo](../website/appearance.md#logo-and-branding).
 
 ## Pagdaragdag ng Mga Streaming Host
 
@@ -129,5 +131,5 @@ Maaaring ma-block ang awtomatikong embed ng live stream ng channel ng YouTube ka
 
 ## Mga Susunod na Hakbang
 
-- [Managing Sermons](managing-sermons) -- Magdagdag ng mga sermon sa iyong library
-- [Playlists](playlists) -- Ayusin ang mga sermon sa mga serye
+- [Managing Sermons](./managing-sermons.md) -- Magdagdag ng mga sermon sa iyong library
+- [Playlists](./playlists.md) -- Ayusin ang mga sermon sa mga serye

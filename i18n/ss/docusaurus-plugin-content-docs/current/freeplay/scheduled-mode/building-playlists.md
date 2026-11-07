@@ -1,5 +1,6 @@
 ---
 title: "Kuxhumana Nebahlinzeki Nekwakha Tinhlu Tekudlala"
+description: "Setfa tinkhomba temhlinzeki wemaphepha ku-FreePlay Admin, bese wakha, uhlele, futsi ubuke tinhlelo tekudlala tetiskrini letihleliwe."
 ---
 
 # Kuxhumana Nebahlinzeki Nekwakha Tinhlu Tekudlala
@@ -107,6 +108,6 @@ Cindzetela **Present** kutsi udlale inhlu yekudlala ngesikrini esigcwele ku-bhra
 
 ## Tihloko Letihlobene
 
-- **[Kuhlela Khalenda](./scheduling-the-calendar)** - Beka inhlu yakho yekudlala ekhalendeni leliqoqo letiskrini
-- **[Kuphatsa Tiskrini Netiqoqo](./managing-screens)** - Beka inhlu yekudlala njenge-loop yeliqoqo lelizenzekelako
-- **[Bahlinzeki Bekuqukethwe](../content-providers/)** - Bahlinzeki longakuxhuma ku-TV ngako yonkhe
+- **[Kuhlela Khalenda](./scheduling-the-calendar.md)** - Beka inhlu yakho yekudlala ekhalendeni leliqoqo letiskrini
+- **[Kuphatsa Tiskrini Netiqoqo](./managing-screens.md)** - Beka inhlu yekudlala njenge-loop yeliqoqo lelizenzekelako
+- **[Bahlinzeki Bekuqukethwe](../content-providers/index.md)** - Bahlinzeki longakuxhuma ku-TV ngako yonkhe

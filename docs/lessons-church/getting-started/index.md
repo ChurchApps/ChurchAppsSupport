@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Getting Started with Lessons.church"
+sidebar_label: "Getting Started"
+description: "Create your free Lessons.church account, connect your church, set up classrooms, and schedule your first lessons. No subscription or trial required."
 ---
 
 # Getting Started

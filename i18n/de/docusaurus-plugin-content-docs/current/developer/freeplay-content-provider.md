@@ -1,5 +1,6 @@
 ---
 title: "FreePlay Content Provider"
+description: "Was Inhaltsanbieter für die Anbindung an FreePlay benötigen: Logo, Anmeldemodell, Katalog- und Playlist-Endpunkte sowie Medienformate."
 ---
 
 # FreePlay Content Provider

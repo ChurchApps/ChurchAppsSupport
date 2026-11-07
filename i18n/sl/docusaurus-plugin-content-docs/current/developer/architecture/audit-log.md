@@ -1,5 +1,6 @@
 ---
 title: "Dnevnik sprememb in razveljavljivi paketi"
+description: "Opisuje dnevnik revizij API-ja, ki beleži vsako spremembo uporabnikov v vseh modulih, ter kako je mogoče uvoze razveljaviti vrstico za vrstico v B1 Admin."
 ---
 
 # Dnevnik sprememb in razveljavljivi paketi
@@ -155,6 +156,6 @@ Oba skrbniška vmesnika sta **v razvoju**. Namen:
 
 ## Sorodne strani
 
-- [Struktura modulov](../api/module-structure): kako krmilnik, ki ni del članstva, doseže repozitorije članstva prek `RepoManager`
-- [Darovanja](./giving): poti pisanja darovanj, ki se beležijo kot `sensitive`, tudi kadar so anonimne
-- [Končne točke članstva](../api/endpoints/membership): REST vmesnik, ki prenaša `X-Batch-Id` in izpostavlja `/auditlogs` ter `/batches`
+- [Struktura modulov](../api/module-structure.md): kako krmilnik, ki ni del članstva, doseže repozitorije članstva prek `RepoManager`
+- [Darovanja](./giving.md): poti pisanja darovanj, ki se beležijo kot `sensitive`, tudi kadar so anonimne
+- [Končne točke članstva](../api/endpoints/membership.md): REST vmesnik, ki prenaša `X-Batch-Id` in izpostavlja `/auditlogs` ter `/batches`

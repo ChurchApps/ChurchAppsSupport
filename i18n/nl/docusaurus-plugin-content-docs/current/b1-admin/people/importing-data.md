@@ -1,5 +1,6 @@
 ---
 title: "Gegevens importeren"
+description: "Breng bestaande personen, groepen, aanwezigheid en giftengegevens naar B1 Admin met de B1 Transfer-tool, of exporteer op elk moment een backup."
 ---
 
 # Gegevens importeren

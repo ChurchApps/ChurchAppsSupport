@@ -1,5 +1,6 @@
 ---
 title: "Przegląd portalu"
+description: "Przegląd portalu Lessons.church: sale, zaplanowane lekcje, linki do kanałów, a także zewnętrzni dostawcy i narzędzia administracyjne."
 ---
 
 # Przegląd portalu

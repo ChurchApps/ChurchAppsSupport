@@ -1,5 +1,6 @@
 ---
 title: "Klasy"
+description: "Konfiguracja i zarządzanie salami, które organizują harmonogram nauczania kościoła w Lessons.church: od sal i grup wiekowych po widoki dla wolontariuszy."
 ---
 
 # Klasy

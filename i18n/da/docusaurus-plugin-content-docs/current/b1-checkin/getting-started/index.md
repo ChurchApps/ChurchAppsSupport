@@ -1,5 +1,7 @@
 ---
-title: "Kom godt i gang"
+title: "Kom godt i gang med B1 Checkin"
+sidebar_label: "Kom godt i gang"
+description: "Opsæt B1 Checkin-kioskappen på en Android-tablet: installér den, log ind, vælg din kirke og tilslut evt. en labelprinter."
 ---
 
 # Kom godt i gang med B1 Church Checkin
@@ -27,9 +29,9 @@ Opsætning af B1 Church Checkin tager blot et par minutter. Dette afsnit guider 
 
 Når du starter appen for første gang, går du gennem tre trin:
 
-1. **[Log ind](./logging-in)** -- Skriv din e-mail og adgangskode for at godkende.
-2. **[Vælg din kirke](./logging-in)** -- Hvis din konto er linket til flere kirker, vælg hvilken denne kiosk skal betjene.
-3. **[Set en printer op](./printer-setup)** -- Konfigurer en netværks printer til label udskrivning, eller skip dette trin hvis du ikke har brug for labels.
+1. **[Log ind](./logging-in.md)** -- Skriv din e-mail og adgangskode for at godkende.
+2. **[Vælg din kirke](./logging-in.md)** -- Hvis din konto er linket til flere kirker, vælg hvilken denne kiosk skal betjene.
+3. **[Set en printer op](./printer-setup.md)** -- Konfigurer en netværks printer til label udskrivning, eller skip dette trin hvis du ikke har brug for labels.
 
 Efter det første login gemmer appen dine legitimationsoplysninger og kirke valg. Ved fremtidigt start springer den lige til servin skærmen automatisk.
 
@@ -43,6 +45,6 @@ Sørg for, at din kirke administrator har konfigureret serviner, servin tider og
 
 ## Næste trin
 
-- [Login](./logging-in) -- Detaljerede login og kirke vælgelse instruktioner.
-- [Printer opsætning](./printer-setup) -- Sådan opdager, vælger og tester du din label printer.
-- [Check-in arbejdsgang](../check-in/) -- Lær hele check-in flowet når din kiosk er sat op.
+- [Login](./logging-in.md) -- Detaljerede login og kirke vælgelse instruktioner.
+- [Printer opsætning](./printer-setup.md) -- Sådan opdager, vælger og tester du din label printer.
+- [Check-in arbejdsgang](../check-in/index.md) -- Lær hele check-in flowet når din kiosk er sat op.

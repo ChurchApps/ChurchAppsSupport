@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Mag-browse, mag-iskedyul, at magpresenta ng libreng age-graded na aralin mula sa 12+ providers, may classrooms, venues, at FreePlay o B1 integrations."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Ang Lessons.church ay gumagana sa ibang mga ChurchApps tools upang tulungan kang
 
 ## Documentation Sections
 
-- [Pagsisimula](./getting-started/) -- Lumikha ng iyong account at matuto ng mga pangunahing
-- [Pag-browse ng Content](./browsing/) -- Maghanap ng mga programa, pag-aaral, at mga leksyon
-- [Classrooms](./classrooms/) -- I-setup ang mga classroom at i-schedule ang mga leksyon
-- [Customization](./customization/) -- I-customize ang mga leksyon sa iyong simbahan
-- [Pagpresenta](./presenting/) -- Maghatid ng mga leksyon sa klase gamit ang presenter mode
-- [Administration](./admin/) -- Pamahalaan ang mga programa, pag-aaral, at mga leksyon bilang isang admin
+- [Pagsisimula](./getting-started/index.md) -- Lumikha ng iyong account at matuto ng mga pangunahing
+- [Pag-browse ng Content](./browsing/index.md) -- Maghanap ng mga programa, pag-aaral, at mga leksyon
+- [Classrooms](./classrooms/index.md) -- I-setup ang mga classroom at i-schedule ang mga leksyon
+- [Customization](./customization/index.md) -- I-customize ang mga leksyon sa iyong simbahan
+- [Pagpresenta](./presenting/index.md) -- Maghatid ng mga leksyon sa klase gamit ang presenter mode
+- [Administration](./admin/index.md) -- Pamahalaan ang mga programa, pag-aaral, at mga leksyon bilang isang admin
 - [Statement of Faith](./statement-of-faith.md) -- Mga pangunahing paniniwala at curriculum guidelines
 
 Para sa suporta, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).

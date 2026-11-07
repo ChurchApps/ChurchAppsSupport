@@ -1,5 +1,7 @@
 ---
-title: "Ayin Sırası"
+title: "B1 Admin'de Hizmet Sırası"
+sidebar_label: "Ayin Sırası"
+description: "Bir ibadet planı için B1 Admin'de hizmet sırası oluşturun: şarkılar, dersler ve özel öğeler ekleyin, bunları bölümlere ayırın ve çalışma programını yazdırın."
 ---
 
 # Ayin Sırası

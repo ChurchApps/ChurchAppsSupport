@@ -1,5 +1,6 @@
 ---
 title: "Poskytovatelé obsahu"
+description: "Procházejte a stahujte materiály k lekcím, videa a obrázky z Lessons.church, Dropboxu, OneDrive a dalších poskytovatelů v aplikaci FreePlay TV."
 ---
 
 # Poskytovatelé obsahu
@@ -14,7 +15,7 @@ Poskytovatelé obsahu jsou externí služby, které dodávají materiály k lekc
 
 FreePlay aktuálně zahrnuje tyto poskytovatele:
 
-- **[Lessons.church](../../lessons-church/)** - Bezplatný, open-source kurikulum pro dětskou službu
+- **[Lessons.church](../../lessons-church/index.md)** - Bezplatný, open-source kurikulum pro dětskou službu
 - **Bible Project** - Videa a materiály, které objevují Bibli
 - **SignPresenter** - Prezentační a informační obsah pro sbory
 - **B1.church** - Obsah z vaší vlastní instalace B1
@@ -24,7 +25,7 @@ FreePlay aktuálně zahrnuje tyto poskytovatele:
 - **OneDrive** - Procházení a přehrávání obrázků, videí a zvukových nahrávek z vašeho vlastního Microsoft OneDrive
 
 :::note
-Google Drive a FreeShow se již v aplikaci FreePlay pro TV nezobrazují. Chcete-li používat obsah z Google Drive na svých televizorech, připojte jej v [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), přidejte soubory do playlistu a naplánujte tento playlist.
+Google Drive a FreeShow se již v aplikaci FreePlay pro TV nezobrazují. Chcete-li používat obsah z Google Drive na svých televizorech, připojte jej v [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), přidejte soubory do playlistu a naplánujte tento playlist.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Každý poskytovatel má vlastní knihovnu obsahu uspořádanou do složek a sou
 
 Připojení poskytovatelé se zobrazují v postranním panelu na levé straně obrazovky, pod nadpisem **Browse**. Mezi poskytovateli můžete přepínat jejich výběrem v postranním panelu, což usnadňuje přecházení mezi zdroji obsahu během nastavování.
 
-Také můžete z libovolného připojeného poskytovatele vybrat složku a smyčkově ji přehrávat na svém TV jako [oznámení](./announcements).
+Také můžete z libovolného připojeného poskytovatele vybrat složku a smyčkově ji přehrávat na svém TV jako [oznámení](./announcements.md).
 
 :::tip
-Poskytovatelé, které připojíte v TV, platí pouze pro tuto televizi. Pokud používáte [Plánovaný režim](../scheduled-mode/), připojte poskytovatele jednou v FreePlay Admin a každá naplánovaná obrazovka pak může přehrávat obsah z nich.
+Poskytovatelé, které připojíte v TV, platí pouze pro tuto televizi. Pokud používáte [Plánovaný režim](../scheduled-mode/index.md), připojte poskytovatele jednou v FreePlay Admin a každá naplánovaná obrazovka pak může přehrávat obsah z nich.
 :::
 
 ## V této sekci
 
-- **[Připojení k poskytovatelům](./connecting-providers)** - Jak se ověřit a připojit
-- **[Procházení a stahování obsahu](./browsing-content)** - Procházení složek, stahování souborů a přehrávání obsahu
-- **[Oznámení](./announcements)** - Smyčkově přehrávat složku snímků od poskytovatele
+- **[Připojení k poskytovatelům](./connecting-providers.md)** - Jak se ověřit a připojit
+- **[Procházení a stahování obsahu](./browsing-content.md)** - Procházení složek, stahování souborů a přehrávání obsahu
+- **[Oznámení](./announcements.md)** - Smyčkově přehrávat složku snímků od poskytovatele

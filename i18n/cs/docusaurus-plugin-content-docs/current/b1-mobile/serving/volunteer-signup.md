@@ -1,5 +1,7 @@
 ---
-title: "Registrace dobrovolníků"
+title: "Přihlášení dobrovolníků v aplikaci B1 Mobile"
+sidebar_label: "Registrace dobrovolníků"
+description: "Najděte volná dobrovolnická místa na nadcházející bohoslužby, přihlaste se nebo zrušte přihlášku v aplikaci B1 Mobile. Popisuje termíny a limity míst."
 ---
 
 # Registrace dobrovolníků
@@ -13,7 +15,7 @@ Procházejte volná místa dobrovolníků a přihlašte se k nadcházejícím bo
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 - Váš správce sboru musí u alespoň jedné pozice povolit samostatnou registraci
 
 </div>
@@ -60,5 +62,5 @@ Zapněte [oznámení v aplikaci](../community/notifications.md), abyste byli inf
 
 ## Související články
 
-- [Zobrazení plánů](./viewing-plans) – Zobrazte si své přiřazené plány a programy bohoslužeb
+- [Zobrazení plánů](./viewing-plans.md) – Zobrazte si své přiřazené plány a programy bohoslužeb
 - [Oznámení](../community/notifications.md) – Zůstaňte informováni o přiřazených službách

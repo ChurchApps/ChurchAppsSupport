@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Czytanie Pisma Świętego na B1.church"
+sidebar_label: "Biblia"
+description: "Czytaj Pismo Święte w czytniku Biblii B1.church, korzystając z opcji księgi, rozdziału i tłumaczenia oraz strony Biblii do codziennego czytania."
 ---
 
 # Biblia

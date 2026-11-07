@@ -1,5 +1,6 @@
 ---
 title: "Saatavuuskalenteri"
+description: "Määritä B1 Adminissa varattavat tilat ja laitteet, lisää valmistelu- ja purkuajat ja hallitse toistuvat tai hyväksyntää vaativat varaukset kalenterissa."
 ---
 
 # Saatavuuskalenteri
@@ -13,7 +14,7 @@ Saatavuuskalenterin avulla näet kaikkien seurakuntasi huone- ja resurssivaraust
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Luo vähintään yksi [huone tai resurssi](rooms-resources) Huoneet ja resurssit -osiossa
+- Luo vähintään yksi [huone tai resurssi](./rooms-resources.md) Huoneet ja resurssit -osiossa
 - Tarvitset muokkausoikeuden B1 Adminin Kalenterit-osioon
 
 </div>
@@ -58,7 +59,7 @@ Käytä vasemmassa yläkulmassa olevaa **Huone / Resurssi** -pudotusvalikkoa raj
 6. Lähetä varaus napsauttamalla **Tallenna**.
 
 :::info
-Jos huoneelle tai resurssille on määritetty **Hyväksyntäryhmä**, varaus näkyy **Odottaa**-tilassa, kunnes kyseisen ryhmän johtaja hyväksyy sen. Katso hyväksyntäprosessi artikkelista [Kalenterin hyväksynnät](approvals).
+Jos huoneelle tai resurssille on määritetty **Hyväksyntäryhmä**, varaus näkyy **Odottaa**-tilassa, kunnes kyseisen ryhmän johtaja hyväksyy sen. Katso hyväksyntäprosessi artikkelista [Kalenterin hyväksynnät](./approvals.md).
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalenteri korostaa mahdolliset päällekkäisyydet ennen tallentamista. Jos näe
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Huoneet, resurssit ja ajoitus](rooms-resources) — varattavien tilojen ja laitteiden määrittäminen
-- [Kalenterin hyväksynnät](approvals) — varauspyyntöjen hyväksyminen tai hylkääminen
-- [Kalenterien luominen](creating-calendars) — tapahtumakalenterien hallinta
+- [Huoneet, resurssit ja ajoitus](./rooms-resources.md) — varattavien tilojen ja laitteiden määrittäminen
+- [Kalenterin hyväksynnät](./approvals.md) — varauspyyntöjen hyväksyminen tai hylkääminen
+- [Kalenterien luominen](./creating-calendars.md) — tapahtumakalenterien hallinta

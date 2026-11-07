@@ -1,5 +1,6 @@
 ---
 title: "Planuri de slujire"
+description: "Configurează programarea voluntarilor în B1 Admin: creează planuri pe date, copiază din săptămâni anterioare, alocă echipa și gestionează termene și reamintiri."
 ---
 
 # Planuri de slujire

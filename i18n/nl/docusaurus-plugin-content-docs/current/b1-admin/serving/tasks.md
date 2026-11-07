@@ -1,5 +1,6 @@
 ---
 title: "Taken"
+description: "Maak, wijs toe en sluit taken in B1 Admin, vind ze onder Serving > Mijn werk en stel herinneringen voor deadlines in, zodat opvolging niet wegvalt."
 ---
 
 # Taken
@@ -54,10 +55,10 @@ Klik op een taak om de detailpagina ervan te openen. Vanaf hier kunt u:
 4. Gesloten taken worden uit de standaardweergave verwijderd, maar kunnen nog steeds worden geopend door **Gesloten weergeven** in te schakelen.
 
 :::info
-U kunt terugkerende taken automatiseren zodat deze op een schema worden gemaakt. Zie [Automations](./automations.md) voor details over het instellen hiervan.
+U kunt terugkerende taken automatiseren zodat deze op een schema worden gemaakt. Zie [Automations](./workflows.md) voor details over het instellen hiervan.
 :::
 
 ## Volgende stappen
 
-- Stel [Automations](./automations.md) in om terugkerende taken automatisch te creëren
+- Stel [Automations](./workflows.md) in om terugkerende taken automatisch te creëren
 - Gebruik taken naast [Service Plans](./plans.md) om servicevoorbereiding actiepunten bij te houden

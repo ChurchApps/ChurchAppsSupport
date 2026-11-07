@@ -1,5 +1,6 @@
 ---
 title: "Connexion d'un téléviseur de salle de classe à vos leçons B1 Admin"
+description: "Reliez une TV de classe avec FreePlay à vos leçons planifiées dans B1 Admin pour que les enseignants les diffusent à l'écran pendant le cours."
 ---
 
 # Connexion d'un téléviseur de salle de classe à vos leçons B1 Admin

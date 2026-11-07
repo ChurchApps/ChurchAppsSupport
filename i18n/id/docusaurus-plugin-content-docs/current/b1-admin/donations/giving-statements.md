@@ -1,5 +1,6 @@
 ---
 title: "Laporan Pemberian"
+description: "Buat laporan pemberian akhir tahun untuk setiap donatur di B1 Admin, lalu unduh sebagai CSV atau cetak untuk dikirim dengan total yang dapat dikurangkan pajak."
 ---
 
 # Laporan Pemberian

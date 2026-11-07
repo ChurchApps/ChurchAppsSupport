@@ -1,5 +1,7 @@
 ---
-title: "Verset du jour"
+title: "Verset du jour sur le site et le portail B1.church"
+sidebar_label: "Verset du jour"
+description: "Parcourez l'image du verset du jour et les versets passés, puis partagez-les ou téléchargez-les depuis votre site ou portail B1.church, sur tout écran."
 ---
 
 # Verset du jour

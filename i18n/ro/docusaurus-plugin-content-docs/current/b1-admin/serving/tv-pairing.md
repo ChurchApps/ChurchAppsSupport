@@ -1,5 +1,6 @@
 ---
 title: "Conectarea FreePlay la B1 Admin"
+description: "Conectează un televizor de clasă cu FreePlay la lecțiile programate în B1 Admin, ca profesorii să le poată reda pe ecran în timpul orei."
 ---
 
 # Conectarea unui televizor din clasă la lecțiile tale din B1 Admin

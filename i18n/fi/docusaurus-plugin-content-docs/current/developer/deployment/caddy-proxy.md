@@ -1,5 +1,6 @@
 ---
 title: "Caddy-mukautetun domainin välityspalvelin"
+description: "Rakenna ja aja Caddy-käänteinen välityspalvelin, joka palvelee B1.church-sivustojen mukautettuja seurakuntadomaineja, sisältäen TLS-varmenteet, isäntäkartoituksen ja tunnetut sudenkuopat."
 ---
 
 # Caddy-mukautetun domainin välityspalvelin
@@ -10,7 +11,7 @@ Mukautetut seurakuntien domainit (`mychurch.org` → seurakunnan B1-verkkosivust
 
 </div>
 
-Siitä, miten pyyntö selvitetään seurakunnaksi ja sivustoksi, kun se saavuttaa B1Appin, katso [Verkkosivujen reititys ja monisivustoisuus](../architecture/websites).
+Siitä, miten pyyntö selvitetään seurakunnaksi ja sivustoksi, kun se saavuttaa B1Appin, katso [Verkkosivujen reititys ja monisivustoisuus](../architecture/websites.md).
 
 ## Komponentit
 
@@ -88,5 +89,5 @@ API:n `CaddyHelper` (sekä `/membership/domains/caddy`- ja `/caddy/init`-pääte
 
 ## Aiheeseen liittyvät sivut
 
-- [Verkkosivujen reititys ja monisivustoisuus](../architecture/websites): miten välitetty pyyntö selvitetään seurakunnaksi ja sivustoksi B1Appissa
-- [API-käyttöönotto](./apis): Membership API:n käyttöönotto, joka tarjoaa `authorize`- ja `hostmap`-päätepisteet
+- [Verkkosivujen reititys ja monisivustoisuus](../architecture/websites.md): miten välitetty pyyntö selvitetään seurakunnaksi ja sivustoksi B1Appissa
+- [API-käyttöönotto](./apis.md): Membership API:n käyttöönotto, joka tarjoaa `authorize`- ja `hostmap`-päätepisteet

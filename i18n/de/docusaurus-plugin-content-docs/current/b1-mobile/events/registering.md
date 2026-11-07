@@ -1,5 +1,7 @@
 ---
-title: "Registrierung für Veranstaltungen"
+title: "Anmeldung zu Veranstaltungen in B1 Mobile"
+sidebar_label: "Registrierung für Veranstaltungen"
+description: "Melden Sie sich und Familienangehörige in der B1 Mobile App zu Gemeindeveranstaltungen an. Prüfen Sie die freien Plätze und bestätigen Sie in drei Schritten."
 ---
 
 # Registrierung für Veranstaltungen
@@ -13,7 +15,7 @@ Melden Sie sich direkt von B1 Mobile aus für Kirchenveranstaltungen an – mit 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Installieren Sie B1 Mobile](../getting-started/installing) und [melden Sie sich](../getting-started/logging-in) in Ihrem Konto an
+- [Installieren Sie B1 Mobile](../getting-started/installing.md) und [melden Sie sich](../getting-started/logging-in.md) in Ihrem Konto an
 - Die Veranstaltung muss die Registrierung aktiviert haben und das Registrierungsfenster muss offen sein
 
 </div>
@@ -50,4 +52,4 @@ Wenden Sie sich an Ihren Kirchenadministrator, wenn Sie stornieren müssen. Sie 
 ## Zugehörige Artikel
 
 - [Veranstaltungsübersicht](./index.md) -- Durchsuchen Sie Veranstaltungen mit Registrierung auf mobilen Geräten
-- [Pläne ansehen](../serving/viewing-plans) -- Sehen Sie Ihren Servierplan
+- [Pläne ansehen](../serving/viewing-plans.md) -- Sehen Sie Ihren Servierplan

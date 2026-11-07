@@ -1,5 +1,6 @@
 ---
 title: "Støtte for flere valutaer"
+description: "Før og rapporter gaver i ulike valutaer i B1 Admin, inkludert manuell registrering, Stripe-gaver på nett og hvordan samlede summer konverteres."
 ---
 
 # Støtte for flere valutaer

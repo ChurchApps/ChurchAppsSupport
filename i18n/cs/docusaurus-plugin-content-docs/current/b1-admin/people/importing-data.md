@@ -1,5 +1,6 @@
 ---
 title: "Import dat"
+description: "Přeneste stávající lidi, skupiny, docházku a záznamy darů do B1 Admin nástrojem B1 Transfer nebo kdykoli exportujte zálohu dat."
 ---
 
 # Import dat

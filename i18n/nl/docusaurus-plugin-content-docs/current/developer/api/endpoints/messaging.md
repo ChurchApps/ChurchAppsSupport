@@ -1,5 +1,6 @@
 ---
 title: "Messaging Endpoints"
+description: "Referentie voor de berichten-API-eindpunten van ChurchApps: gesprekken, toegangsregels voor notities, sms, e-mailsjablonen, meldingen en apparaten."
 ---
 
 # Messaging Endpoints
@@ -334,7 +335,7 @@ Volgt bezorgingsstatus voor verzonden berichten (SMS, push-meldingen, e-mail) bi
 
 ## Gerelateerde Pagina's
 
-- [Membership Endpoints](./membership) -- Personen, groepen, rollen en kernidentiteit
-- [Attendance Endpoints](./attendance) -- Service- en bezoektracking
-- [Authentication & Permissions](./authentication) -- Loginflow, JWT, OAuth, machtigingsmodel
-- [Module Structure](../module-structure) -- Codeorganisatiepatronen
+- [Membership Endpoints](./membership.md) -- Personen, groepen, rollen en kernidentiteit
+- [Attendance Endpoints](./attendance.md) -- Service- en bezoektracking
+- [Authentication & Permissions](./authentication.md) -- Loginflow, JWT, OAuth, machtigingsmodel
+- [Module Structure](../module-structure.md) -- Codeorganisatiepatronen

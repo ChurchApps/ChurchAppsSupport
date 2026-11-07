@@ -1,5 +1,6 @@
 ---
 title: "Személyek hozzáadása"
+description: "Személy hozzáadása a B1 Admin adatbázisához, adatok kitöltése, családtagok háztartásba kötése a bejelentkezéshez és jelentésekhez."
 ---
 
 # Személyek hozzáadása

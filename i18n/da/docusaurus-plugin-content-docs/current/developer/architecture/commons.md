@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Hvordan brugerindsendte sange, lektioner og skabeloner bevæger sig gennem den delte modereringskø i B1 Admins Server Admin, fra indsendelse til udgivelse."
 ---
 
 # Content Commons — Delt aktivbibliotek og moderation

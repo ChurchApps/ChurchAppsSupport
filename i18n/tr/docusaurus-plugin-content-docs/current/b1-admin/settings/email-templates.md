@@ -1,5 +1,6 @@
 ---
 title: "E-posta Şablonları"
+description: "B1 Admin'de birleştirme alanları, kısa mesaj seçenekleri ve toplu iletişim için önizlemelerle e-posta ve kısa mesaj şablonları ayarlayın."
 ---
 
 # E-posta Şablonları

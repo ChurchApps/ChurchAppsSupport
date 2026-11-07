@@ -1,5 +1,6 @@
 ---
 title: "Mga Setting ng Simbahan"
+description: "Itakda ang pangalan, address, subdomain, time zone, format ng rehiyon, texting provider, at file storage ng simbahan sa pahina ng Church Settings sa B1 Admin."
 ---
 
 # Mga Setting ng Simbahan

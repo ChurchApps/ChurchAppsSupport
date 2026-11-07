@@ -1,5 +1,6 @@
 ---
 title: "Caddy Özel Alan Adı Proxy'si"
+description: "B1.church siteleri için özel alan adlarına hizmet eden Caddy ters vekilini derleyin ve çalıştırın: TLS sertifikaları, ana bilgisayar eşlemesi ve bilinen tuzaklar."
 ---
 
 # Caddy Özel Alan Adı Proxy'si
@@ -10,7 +11,7 @@ title: "Caddy Özel Alan Adı Proxy'si"
 
 </div>
 
-Bir isteğin B1App'e ulaştıktan sonra hangi kilise ve siteye nasıl çözüldüğü için bkz. [Web Sitesi Yönlendirmesi ve Çoklu Site](../architecture/websites).
+Bir isteğin B1App'e ulaştıktan sonra hangi kilise ve siteye nasıl çözüldüğü için bkz. [Web Sitesi Yönlendirmesi ve Çoklu Site](../architecture/websites.md).
 
 ## Bileşenler
 
@@ -87,5 +88,5 @@ API'deki `CaddyHelper` (ve `/membership/domains/caddy` + `/caddy/init` uç nokta
 
 ## İlgili Sayfalar
 
-- [Web Sitesi Yönlendirmesi ve Çoklu Site](../architecture/websites): proxy'lenen bir isteğin B1App'te bir kilise ve siteye nasıl çözüldüğü
-- [API Dağıtımı](./apis): `authorize` ve `hostmap` uç noktalarını sunan Membership API'nin dağıtımı
+- [Web Sitesi Yönlendirmesi ve Çoklu Site](../architecture/websites.md): proxy'lenen bir isteğin B1App'te bir kilise ve siteye nasıl çözüldüğü
+- [API Dağıtımı](./apis.md): `authorize` ve `hostmap` uç noktalarını sunan Membership API'nin dağıtımı

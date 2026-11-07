@@ -1,5 +1,6 @@
 ---
 title: "Fejlesztői dokumentáció"
+description: "Eligazodás a ChurchApps fejlesztői dokumentációban: helyi beállítás, API- és webalkalmazás-útmutatók, megosztott könyvtárak, mobilalkalmazások buildelése és telepítés."
 ---
 
 # Fejlesztői dokumentáció
@@ -24,16 +25,16 @@ Főbb jellemzők:
 
 ## Mit fed le ez a rész
 
-- **[Beállítás](setup/)** -- Helyi fejlesztői környezet, előfeltételek és konfiguráció
-  - [Előfeltételek](setup/prerequisites) -- Szükséges eszközök és szoftverek
-  - [Projektáttekintés](setup/project-overview) -- Az összes projekt egy helyen
-  - [Környezeti változók](setup/environment-variables) -- A `.env` fájlok beállítása
-- **[API](api/)** -- Az alap API helyi beállítása, az adatbázis inicializálása és a modulszerkezet
-- **[Webalkalmazások](web-apps/)** -- A B1Admin, a B1App és a LessonsApp helyi futtatása
-- **[Mobilalkalmazások](mobile/)** -- A B1Mobile és más Expo-alkalmazások építése
-- **[Megosztott könyvtárak](shared-libraries/)** -- Munka a Helpers, az ApiHelper és az AppHelper könyvtárakkal
-- **[Telepítés](deployment/)** -- API-k, webalkalmazások és mobilalkalmazások telepítése
-- **[FreePlay tartalomszolgáltató](freeplay-content-provider)** -- A leckekönyvtárad integrálása a FreePlay-be
+- **[Beállítás](./setup/index.md)** -- Helyi fejlesztői környezet, előfeltételek és konfiguráció
+  - [Előfeltételek](./setup/prerequisites.md) -- Szükséges eszközök és szoftverek
+  - [Projektáttekintés](./setup/project-overview.md) -- Az összes projekt egy helyen
+  - [Környezeti változók](./setup/environment-variables.md) -- A `.env` fájlok beállítása
+- **[API](./api/index.md)** -- Az alap API helyi beállítása, az adatbázis inicializálása és a modulszerkezet
+- **[Webalkalmazások](./web-apps/index.md)** -- A B1Admin, a B1App és a LessonsApp helyi futtatása
+- **[Mobilalkalmazások](./mobile/index.md)** -- A B1Mobile és más Expo-alkalmazások építése
+- **[Megosztott könyvtárak](./shared-libraries/index.md)** -- Munka a Helpers, az ApiHelper és az AppHelper könyvtárakkal
+- **[Telepítés](./deployment/index.md)** -- API-k, webalkalmazások és mobilalkalmazások telepítése
+- **[FreePlay tartalomszolgáltató](./freeplay-content-provider.md)** -- A leckekönyvtárad integrálása a FreePlay-be
 
 ## Közösség és források
 

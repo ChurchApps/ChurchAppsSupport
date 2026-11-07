@@ -1,5 +1,6 @@
 ---
 title: "Saúde dos Grupos"
+description: "Verifique a saúde dos grupos no B1 Admin com uma tabela de 90 dias de membros, entradas, saídas, rotatividade e presença média."
 ---
 
 # Saúde dos Grupos
@@ -13,8 +14,8 @@ O painel Saúde dos Grupos oferece uma visão geral de como todos os seus grupos
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você precisa de pelo menos alguns grupos com membros para ver dados significativos. Consulte [Criando Grupos](creating-groups).
-- Os dados de presença são retirados de sessões registradas. Consulte a seção [Presença](../attendance/).
+- Você precisa de pelo menos alguns grupos com membros para ver dados significativos. Consulte [Criando Grupos](./creating-groups.md).
+- Os dados de presença são retirados de sessões registradas. Consulte a seção [Presença](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Clicar em um nome de grupo leva você diretamente à página de detalhes do grup
 
 ## Artigos Relacionados
 
-- [Criando Grupos](creating-groups) -- configurar grupos
-- [Membros do Grupo](group-members) -- gerenciar associação do grupo
-- [Rastreando Presença](../attendance/tracking-attendance) -- registrar sessões de presença que alimentam este painel
+- [Criando Grupos](./creating-groups.md) -- configurar grupos
+- [Membros do Grupo](./group-members.md) -- gerenciar associação do grupo
+- [Rastreando Presença](../attendance/tracking-attendance.md) -- registrar sessões de presença que alimentam este painel

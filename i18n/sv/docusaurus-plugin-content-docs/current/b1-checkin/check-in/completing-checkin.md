@@ -1,5 +1,6 @@
 ---
 title: "Slutför incheckning"
+description: "Slutför en familjs incheckning i B1 Checkin-kiosken, inklusive rumsgränser, utskrift av etiketter, hämtningskoder och vad appen gör härnäst."
 ---
 
 # Slutför incheckning
@@ -13,9 +14,9 @@ När du har granskat din familj och eventuellt gjort gruppindelningar är du red
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Granska din familj](./household-review) på skärmen för familjegranskning
-- [Tilldela grupper](./group-assignment) till familjemedlemmar som behöver checka in i en specifik klass eller ett specifikt program
-- Lägg eventuellt till [gäster](./adding-guests) som besöker kyrkan tillsammans med din familj
+- [Granska din familj](./household-review.md) på skärmen för familjegranskning
+- [Tilldela grupper](./group-assignment.md) till familjemedlemmar som behöver checka in i en specifik klass eller ett specifikt program
+- Lägg eventuellt till [gäster](./adding-guests.md) som besöker kyrkan tillsammans med din familj
 
 </div>
 
@@ -28,10 +29,10 @@ Det är allt som krävs. Din familjs närvaro har registrerats.
 
 ## Fulla rum och bemanningsnivåer
 
-Om din kyrka har ställt in [säkerhetsgränser](../../b1-admin/attendance/checkin-safety) för sina rum kontrollerar servern dem innan incheckningen sparas:
+Om din kyrka har ställt in [säkerhetsgränser](../../b1-admin/attendance/checkin-safety.md) för sina rum kontrollerar servern dem innan incheckningen sparas:
 
 - Om ett valt rum är **fullt eller stängt** går inte incheckningen igenom, och appen anger rummet så att du kan välja ett annat.
-- Om gudstjänsttiden har ett [incheckningsschema](../../b1-admin/attendance/setup#setting-a-check-in-schedule) och dess incheckningsfönster inte är öppet just nu, nekas även incheckning i den gudstjänsttidens rum. Skärmen **Kan inte checka in ännu** visar rummet med orsaken "incheckning är inte öppen just nu". Tryck på **Ändra rum** för att välja en annan gudstjänsttid eller grupp. (Gudstjänsttider som redan har stängt visas som **Stängd** på [hushållsskärmen](./household-review) och kan inte väljas. Du ser därför vanligtvis bara detta om ett fönster stängs mitt under en incheckning.)
+- Om gudstjänsttiden har ett [incheckningsschema](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) och dess incheckningsfönster inte är öppet just nu, nekas även incheckning i den gudstjänsttidens rum. Skärmen **Kan inte checka in ännu** visar rummet med orsaken "incheckning är inte öppen just nu". Tryck på **Ändra rum** för att välja en annan gudstjänsttid eller grupp. (Gudstjänsttider som redan har stängt visas som **Stängd** på [hushållsskärmen](./household-review.md) och kan inte väljas. Du ser därför vanligtvis bara detta om ett fönster stängs mitt under en incheckning.)
 - En familj som checkat in för en tidigare gudstjänsttid kan komma tillbaka senare och lägga till en öppen gudstjänsttid, även efter att det tidigare fönstret har stängt. Deras befintliga incheckningar behålls och gör inte att den nya incheckningen nekas.
 - Om ett barnrum har **brist på volontärer** i förhållande till sin bemanningsnivå visar appen antingen en varning som en medarbetare kan bekräfta för att fortsätta, eller blockerar incheckningen helt. Det beror på hur din kyrka har konfigurerat tillämpningen av bemanningsnivåer.
 
@@ -49,7 +50,7 @@ Samma säkerhetskod visas både på barnets namnetikett och på förälderns hä
 Säkerhetskoden genereras på nytt för varje incheckning och använder endast konsonanter och siffror (vokaler utesluts för att undvika att de bildar olämpliga ord).
 
 :::warning
-Om etiketter inte skrivs ut, öppna admininställningarna genom att trycka på **kyrkans logotyp** sju gånger och tryck sedan på **Byt skrivare** för att kontrollera anslutningen till skrivaren. Se [Installation av skrivare](../getting-started/printer-setup) för felsökningssteg.
+Om etiketter inte skrivs ut, öppna admininställningarna genom att trycka på **kyrkans logotyp** sju gånger och tryck sedan på **Byt skrivare** för att kontrollera anslutningen till skrivaren. Se [Installation av skrivare](../getting-started/printer-setup.md) för felsökningssteg.
 :::
 
 ## Vad som händer efter incheckningen

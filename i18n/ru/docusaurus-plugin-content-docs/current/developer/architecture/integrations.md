@@ -1,5 +1,6 @@
 ---
 title: "Интеграции и система расширений"
+description: "Карта всех способов подключиться к ChurchApps B1: REST API, API-ключи, OAuth, вебхуки, MCP и провайдеры контента, со ссылками на каждый справочник."
 ---
 
 # Интеграции и система расширений
@@ -14,12 +15,12 @@ title: "Интеграции и система расширений"
 
 Есть шесть способов войти или выйти, и все они используют один и тот же слой авторизации:
 
-- **[REST API](../api/api-keys)** — вся продуктовая поверхность, доступная с bearer-токеном из любого языка.
-- **[API-ключи](../api/api-keys)** — самый простой учётные данные: токен `cak_…`, привязанный к одному человеку в одной церкви.
-- **[OAuth 2.0 и подключённые приложения](../api/connected-apps)** — согласие каждой церкви для многоарендных приложений; выдаёт тот же JWT, что получает пользователь.
-- **[Webhook-и](../api/webhooks)** — подписанные исходящие события с надёжной доставкой.
-- **[Сервер MCP](../api/mcp)** — обёртка над REST API для ИИ по адресу `/mcp`.
-- **[Провайдеры контента](../freeplay-content-provider)** — входящий путь для внешних медиатек в FreePlay и приложения B1.
+- **[REST API](../api/api-keys.md)** — вся продуктовая поверхность, доступная с bearer-токеном из любого языка.
+- **[API-ключи](../api/api-keys.md)** — самый простой учётные данные: токен `cak_…`, привязанный к одному человеку в одной церкви.
+- **[OAuth 2.0 и подключённые приложения](../api/connected-apps.md)** — согласие каждой церкви для многоарендных приложений; выдаёт тот же JWT, что получает пользователь.
+- **[Webhook-и](../api/webhooks.md)** — подписанные исходящие события с надёжной доставкой.
+- **[Сервер MCP](../api/mcp.md)** — обёртка над REST API для ИИ по адресу `/mcp`.
+- **[Провайдеры контента](../freeplay-content-provider.md)** — входящий путь для внешних медиатек в FreePlay и приложения B1.
 
 Всё, кроме провайдеров контента, обслуживается единым монолитным API (репозиторий [Api](https://github.com/ChurchApps/Api)), модули которого подключаются по стабильным базовым путям — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` и `/mcp`.
 
@@ -80,7 +81,7 @@ title: "Интеграции и система расширений"
 - Область может только *убрать* права, поэтому ограниченные учётные данные никогда не могут получить права администратора сервера или домена (эти права намеренно не сопоставлены ни с одной областью).
 - У API-ключей префикс `cak_`; `CustomAuthProvider.getUser()` распознаёт его, хеширует секрет и заново получает живые права RBAC владельца при каждом вызове.
 
-Полный каталог см. в [API-ключи → Области](../api/api-keys#scopes).
+Полный каталог см. в [API-ключи → Области](../api/api-keys.md#scopes).
 
 ## Справка по поверхностям
 
@@ -90,7 +91,7 @@ title: "Интеграции и система расширений"
 
 ### API-ключи
 
-Персональный токен доступа вида `cak_<prefix>.<secret>`, который создаётся в **B1Admin → Settings → Developer → API Keys**. Хранится только SHA-256-хеш; сам ключ показывается один раз. Управляется по адресу `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Лучше всего подходит для собственных скриптов одной церкви и для коннекторов вроде Zapier, Make и Google Sheets. → **[API-ключи](../api/api-keys)**
+Персональный токен доступа вида `cak_<prefix>.<secret>`, который создаётся в **B1Admin → Settings → Developer → API Keys**. Хранится только SHA-256-хеш; сам ключ показывается один раз. Управляется по адресу `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Лучше всего подходит для собственных скриптов одной церкви и для коннекторов вроде Zapier, Make и Google Sheets. → **[API-ключи](../api/api-keys.md)**
 
 ### OAuth 2.0 и подключённые приложения
 
@@ -102,19 +103,19 @@ title: "Интеграции и система расширений"
 
 Публичные клиенты могут самостоятельно регистрироваться через `POST /oauth/register` (динамическая регистрация клиентов RFC 7591); они получают `client_id` без секрета, а их URI перенаправления должны быть `https` или loopback.
 
-**Подключённое приложение** — это представление предоставленного токена для администратора церкви; оно показывается и отзывается по адресу `/membership/oauth/connections`. Контроллер также содержит мост **relay-сессий** OAuth (`/oauth/relay/*`), который позволяет устройству без браузера завершить вход во *внешнем* провайдере. → **[Подключённые приложения и OAuth](../api/connected-apps)**
+**Подключённое приложение** — это представление предоставленного токена для администратора церкви; оно показывается и отзывается по адресу `/membership/oauth/connections`. Контроллер также содержит мост **relay-сессий** OAuth (`/oauth/relay/*`), который позволяет устройству без браузера завершить вход во *внешнем* провайдере. → **[Подключённые приложения и OAuth](../api/connected-apps.md)**
 
 ### Webhook-и
 
-Единственная исходящая поверхность. Церковь подписывает публичный HTTPS-эндпоинт на события; когда происходит подходящее изменение, `WebhookDispatcher.emit(churchId, event, payload)` дополняет payload, содержащий только идентификаторы, отображаемыми именами (`personName`, `groupName`, `formName` — поиск выполняется только тогда, когда есть подходящая подписка), записывает факт доставки, а фоновый воркер отправляет POST с подписанным JSON-конвертом с повторными попытками, экспоненциальной задержкой и повторной доставкой. Движок находится в `Api/src/shared/webhooks/`, CRUD для каждой церкви — по адресу `/membership/webhooks` (`WebhookController.ts`). Поле `connectorType` меняет тело для Slack и Discord; коннектор `mailchimp` идёт дальше и сам ведёт весь HTTP-обмен (метод/URL/авторизация для каждого события по API Mailchimp, учётные данные зашифрованы в `webhooks.connectorConfig`). → **[Webhook-и](../api/webhooks)**
+Единственная исходящая поверхность. Церковь подписывает публичный HTTPS-эндпоинт на события; когда происходит подходящее изменение, `WebhookDispatcher.emit(churchId, event, payload)` дополняет payload, содержащий только идентификаторы, отображаемыми именами (`personName`, `groupName`, `formName` — поиск выполняется только тогда, когда есть подходящая подписка), записывает факт доставки, а фоновый воркер отправляет POST с подписанным JSON-конвертом с повторными попытками, экспоненциальной задержкой и повторной доставкой. Движок находится в `Api/src/shared/webhooks/`, CRUD для каждой церкви — по адресу `/membership/webhooks` (`WebhookController.ts`). Поле `connectorType` меняет тело для Slack и Discord; коннектор `mailchimp` идёт дальше и сам ведёт весь HTTP-обмен (метод/URL/авторизация для каждого события по API Mailchimp, учётные данные зашифрованы в `webhooks.connectorConfig`). → **[Webhook-и](../api/webhooks.md)**
 
 ### Сервер MCP
 
-ИИ-обёртка по адресу `/mcp` (`Api/src/modules/mcp/`). Три универсальных инструмента — `list_endpoints`, `describe_endpoint`, `api_call` — динамически открывают всю REST-поверхность любому клиенту MCP. Авторизация — тот же bearer-токен, что и везде. Для клиентов, которые входят через OAuth (пользовательские коннекторы claude.ai), ответ 401 от `/mcp` содержит заголовок `WWW-Authenticate`, указывающий на `/.well-known/oauth-protected-resource`, а `/.well-known/oauth-authorization-server` объявляет эндпоинты `/membership/oauth`, динамическую регистрацию, PKCE и страницу согласия B1Admin `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` повторно входит в стек Express внутри процесса, поэтому все правила доступа и ограничения по церкви продолжают действовать. → **[Сервер MCP](../api/mcp)**
+ИИ-обёртка по адресу `/mcp` (`Api/src/modules/mcp/`). Три универсальных инструмента — `list_endpoints`, `describe_endpoint`, `api_call` — динамически открывают всю REST-поверхность любому клиенту MCP. Авторизация — тот же bearer-токен, что и везде. Для клиентов, которые входят через OAuth (пользовательские коннекторы claude.ai), ответ 401 от `/mcp` содержит заголовок `WWW-Authenticate`, указывающий на `/.well-known/oauth-protected-resource`, а `/.well-known/oauth-authorization-server` объявляет эндпоинты `/membership/oauth`, динамическую регистрацию, PKCE и страницу согласия B1Admin `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` повторно входит в стек Express внутри процесса, поэтому все правила доступа и ограничения по церкви продолжают действовать. → **[Сервер MCP](../api/mcp.md)**
 
 ### Провайдеры контента
 
-Входящий путь контента находится в отдельном пакете `Packages/content-providers` (`@churchapps/content-providers`), а не в API. Каждый провайдер реализует интерфейс `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` и хуки авторизации — и сам регистрируется в реестре `Map` (`src/providers/registry.ts`). Здесь **B1 выступает клиентом OAuth**: провайдер объявляет `AuthType` со значением `none`, `oauth_pkce`, `device_flow` или `form_login`, а общие помощники (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) выполняют на стороне клиента PKCE или device flow с внешним источником. Сегодня поставляются одиннадцать провайдеров — в том числе Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church и B1.church — и они передают контент в FreePlay и приложения B1. → **[Провайдер контента FreePlay](../freeplay-content-provider)**
+Входящий путь контента находится в отдельном пакете `Packages/content-providers` (`@churchapps/content-providers`), а не в API. Каждый провайдер реализует интерфейс `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` и хуки авторизации — и сам регистрируется в реестре `Map` (`src/providers/registry.ts`). Здесь **B1 выступает клиентом OAuth**: провайдер объявляет `AuthType` со значением `none`, `oauth_pkce`, `device_flow` или `form_login`, а общие помощники (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) выполняют на стороне клиента PKCE или device flow с внешним источником. Сегодня поставляются одиннадцать провайдеров — в том числе Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church и B1.church — и они передают контент в FreePlay и приложения B1. → **[Провайдер контента FreePlay](../freeplay-content-provider.md)**
 
 **Планы на год** работают по этому пути. Издатель учебных материалов (с правом `lessons.edit`) ведёт упорядоченные последовательности «неделя 1/2/3» в админке Lessons.church (таблицы `yearPlans` / `yearPlanWeeks` в LessonsApi, с необязательным `startMonth` и для каждой недели — `anchor` со значением `easter` или `christmas`); `GET /yearPlans/public` в LessonsApi отдаёт действующие планы анонимно, наполняя программу, учебный материал и место каждой недели из дерева уроков. В B1Admin раздел **Serving → Plans → Schedule Lesson → Apply Year Plan** использует этот эндпоинт и записывает по одному плану DoingApi на каждую включённую неделю (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Планы с `startMonth` привязывают недели с якорем к выбранному году (Пасха по григорианскому вычислению, Рождество — ближайшее воскресенье не позже 25 декабря) и заполняют промежутки между ними; планы без `startMonth` по-прежнему сопоставляют неделю N с датой `startDate + (N−1)×7` дней. Недели из внешних провайдеров OLF или с неполным путём пропускаются при применении; церкви редактируют получившиеся планы как обычные, а FreePlay воспроизводит всё, что стоит в плане.
 
@@ -122,12 +123,12 @@ title: "Интеграции и система расширений"
 
 | Поверхность | Механизм авторизации | Направление | Где реализовано | Справка |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT или ключ `cak_…` | Входящее | `Api/src/modules/*` | [API-ключи](../api/api-keys) |
-| API-ключи | Токен `cak_` с хешем SHA-256 | Учётные данные | `Api/.../membership/controllers/ApiKeyController.ts` | [API-ключи](../api/api-keys) |
-| OAuth 2.0 / подключённые приложения | Код авторизации (PKCE) · device · refresh → JWT; динамическая регистрация клиентов | Входящее | `Api/.../membership/controllers/OAuthController.ts` | [Подключённые приложения](../api/connected-apps) |
-| Webhook-и | Секрет для каждого хука, подпись HMAC-SHA256 | Исходящее | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook-и](../api/webhooks) |
-| Сервер MCP | `Bearer` JWT, JWT OAuth (обнаруживается через `/.well-known`) или ключ `cak_…` | Входящее (ИИ) | `Api/src/modules/mcp/` | [Сервер MCP](../api/mcp) |
-| Провайдеры контента | Для каждого провайдера: нет / OAuth PKCE / device / форма | Входящий контент | `Packages/content-providers/` | [Провайдер контента](../freeplay-content-provider) |
+| REST API | `Bearer` JWT или ключ `cak_…` | Входящее | `Api/src/modules/*` | [API-ключи](../api/api-keys.md) |
+| API-ключи | Токен `cak_` с хешем SHA-256 | Учётные данные | `Api/.../membership/controllers/ApiKeyController.ts` | [API-ключи](../api/api-keys.md) |
+| OAuth 2.0 / подключённые приложения | Код авторизации (PKCE) · device · refresh → JWT; динамическая регистрация клиентов | Входящее | `Api/.../membership/controllers/OAuthController.ts` | [Подключённые приложения](../api/connected-apps.md) |
+| Webhook-и | Секрет для каждого хука, подпись HMAC-SHA256 | Исходящее | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook-и](../api/webhooks.md) |
+| Сервер MCP | `Bearer` JWT, JWT OAuth (обнаруживается через `/.well-known`) или ключ `cak_…` | Входящее (ИИ) | `Api/src/modules/mcp/` | [Сервер MCP](../api/mcp.md) |
+| Провайдеры контента | Для каждого провайдера: нет / OAuth PKCE / device / форма | Входящий контент | `Packages/content-providers/` | [Провайдер контента](../freeplay-content-provider.md) |
 
 ## Готовые коннекторы
 
@@ -143,9 +144,9 @@ title: "Интеграции и система расширений"
 
 ## Связанные страницы
 
-- [API-ключи](../api/api-keys) — самый простой вид учётных данных и каталог областей
-- [Подключённые приложения и OAuth](../api/connected-apps) — потоки согласия многоарендных приложений
-- [Webhook-и](../api/webhooks) — система исходящих событий
-- [Сервер MCP](../api/mcp) — ИИ-обёртка для интеграций
-- [Провайдер контента FreePlay](../freeplay-content-provider) — как стать источником входящего контента
+- [API-ключи](../api/api-keys.md) — самый простой вид учётных данных и каталог областей
+- [Подключённые приложения и OAuth](../api/connected-apps.md) — потоки согласия многоарендных приложений
+- [Webhook-и](../api/webhooks.md) — система исходящих событий
+- [Сервер MCP](../api/mcp.md) — ИИ-обёртка для интеграций
+- [Провайдер контента FreePlay](../freeplay-content-provider.md) — как стать источником входящего контента
 - [Интеграции (для конечных пользователей)](/docs/b1-admin/integrations/) — руководства по настройке готовых коннекторов

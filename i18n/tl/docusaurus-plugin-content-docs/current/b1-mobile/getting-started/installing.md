@@ -1,5 +1,6 @@
 ---
 title: "Pag-install ng App"
+description: "I-install ang B1 Mobile app mula sa App Store o Google Play, pero tandaan na deprecated na ito at inirerekomenda na ang B1.church PWA."
 ---
 
 # Pag-install ng App
@@ -25,7 +26,7 @@ Maaari mo ring maghanap ng "B1 Mobile" kung ang unang paghahanap ay hindi nagbab
 
 ## Pagkatapos Mag-install
 
-Kapag naka-install na ang app, buksan ito mula sa iyong home screen. Makikita mo ang church search screen kung saan maaari kang mahanap at pumili ng iyong simbahan. Kung mayroon ka na ng ChurchApps account, maaari kang [mag-log in](./logging-in) kaagad. Kung hindi, maaari kang lumikha ng account mula sa login screen.
+Kapag naka-install na ang app, buksan ito mula sa iyong home screen. Makikita mo ang church search screen kung saan maaari kang mahanap at pumili ng iyong simbahan. Kung mayroon ka na ng ChurchApps account, maaari kang [mag-log in](./logging-in.md) kaagad. Kung hindi, maaari kang lumikha ng account mula sa login screen.
 
 Ang app ay magsasangot ng pahintulot upang magpadala ng mga push notifications. Inirekomenda namin ang pagpayag ng mga notipikasyon upang makatanggap ka ng mga update mula sa iyong simbahan at mga grupo.
 

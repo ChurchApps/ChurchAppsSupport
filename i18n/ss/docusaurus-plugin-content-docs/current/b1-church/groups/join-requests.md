@@ -1,5 +1,6 @@
 ---
 title: "Kucela Kungenela Licembu"
+description: "Cela kujoyina liqembu lelidzinga kuvunywa ku-B1.church, engeze inkhumbulo lengakakhetfwa yemholi, bese ulandzela noma ucishe sicelo sakho lesilindzile."
 ---
 
 # Kucela Kungenela Licembu

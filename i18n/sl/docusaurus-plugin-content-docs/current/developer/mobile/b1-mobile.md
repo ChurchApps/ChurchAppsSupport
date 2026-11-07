@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Lokalno nastavi in zaženi aplikacijo B1 Mobile (React Native/Expo), nastavi končne točke API-ja ter zgradi za Android ali iOS. B1 Mobile je zastarel."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile je glavna mobilna aplikacija ChurchApps za člane skupnosti, zgrajena 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **Node.js** in **Expo CLI** -- glejte [Predpogoji](../setup/prerequisites)
+- Namestite **Node.js** in **Expo CLI** -- glejte [Predpogoji](../setup/prerequisites.md)
 - Namestite **Android Studio** (za Android emulator) ali **Xcode** (za iOS simulator)
-- Nastavite svoj API cilj (demo ali lokalni) -- glejte [Okoljske spremenljivke](../setup/environment-variables)
+- Nastavite svoj API cilj (demo ali lokalni) -- glejte [Okoljske spremenljivke](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA posodobitve so idealne za spremembe samo v JavaScriptu. Če spremenite nativ
 
 ## Sorodni članki
 
-- **[Objava mobilnih aplikacij](../deployment/mobile)** -- Celoten vodnik za gradnjo, oddajo in objavo mobilnih aplikacij
-- **[Okoljske spremenljivke](../setup/environment-variables)** -- Popolna referenca za konfiguracijo okolja mobilne aplikacije
+- **[Objava mobilnih aplikacij](../deployment/mobile.md)** -- Celoten vodnik za gradnjo, oddajo in objavo mobilnih aplikacij
+- **[Okoljske spremenljivke](../setup/environment-variables.md)** -- Popolna referenca za konfiguracijo okolja mobilne aplikacije

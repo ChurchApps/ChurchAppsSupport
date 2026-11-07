@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng Iyong Profile"
+description: "I-update ang iyong ChurchApps account sa B1 Admin: baguhin ang pangalan, email, at password, i-on ang two-factor sign-in, pumili ng theme, o burahin ang account."
 ---
 
 # Pamamahala ng Iyong Profile

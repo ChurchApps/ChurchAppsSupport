@@ -1,5 +1,6 @@
 ---
 title: "Tệp"
+description: "Tải lên, duyệt và quản lý hình ảnh và tài liệu cho trang web hội thánh trong B1 Admin, bao gồm liên kết bộ nhớ bên ngoài để có thêm dung lượng."
 ---
 
 # Tệp
@@ -13,7 +14,7 @@ Trang Tệp là kho lưu trữ trung tâm cho tất cả các tệp phương ti�
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- Hoàn tất [Thiết Lập Ban Đầu](initial-setup) cho trang web của bạn
+- Hoàn tất [Thiết Lập Ban Đầu](./initial-setup.md) cho trang web của bạn
 - Tối ưu hóa hình ảnh trước khi tải lên để trang tải nhanh hơn
 - Chuẩn bị tệp ở các định dạng web phổ biến (PNG, JPG, PDF, v.v.)
 
@@ -42,7 +43,7 @@ Bảng tệp liệt kê mọi tệp đã tải lên cùng với **Name** và **S
 3. Các tệp bạn tải lên đây có thể được sử dụng trên tất cả các trang và khối nội dung của trang web.
 
 :::info
-Khi xây dựng trang trong [Quản Lý Trang](managing-pages), bạn có thể tham chiếu bất kỳ tệp nào đã tải lên đây thông qua URL của nó. Điều này giúp mọi phương tiện của bạn được sắp xếp tập trung ở một nơi.
+Khi xây dựng trang trong [Quản Lý Trang](./managing-pages.md), bạn có thể tham chiếu bất kỳ tệp nào đã tải lên đây thông qua URL của nó. Điều này giúp mọi phương tiện của bạn được sắp xếp tập trung ở một nơi.
 :::
 
 ## Xóa Tệp
@@ -57,5 +58,5 @@ Tệp đã xóa không thể khôi phục. Hãy kiểm tra kỹ rằng tệp kh�
 
 ## Các Bước Tiếp Theo
 
-- [Quản Lý Trang](managing-pages) -- Thêm các tệp đã tải lên vào trang web
-- [Giao Diện](appearance) -- Tùy chỉnh chủ đề hình ảnh của trang web
+- [Quản Lý Trang](./managing-pages.md) -- Thêm các tệp đã tải lên vào trang web
+- [Giao Diện](./appearance.md) -- Tùy chỉnh chủ đề hình ảnh của trang web

@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Ustawienia profilu i urządzenia w B1 Admin"
+sidebar_label: "Profil"
+description: "Zaktualizuj imię, e-mail, hasło, logowanie dwuskładnikowe, motyw i połączone urządzenia w profilu B1 Admin oraz zatwierdzaj zmiany profili członków."
 ---
 
 # Profil

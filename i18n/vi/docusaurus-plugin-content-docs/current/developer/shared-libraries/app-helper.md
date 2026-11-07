@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Tham chiếu gói @churchapps/apphelper trong workspace Packages: các điểm vào subpath, ứng dụng nào dùng từng export, cùng bước phát triển và phát hành cục bộ."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Gói `@churchapps/apphelper` cung cấp các thành phần React và tiện ích
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js** và **Git** — xem [Yêu cầu hệ thống](../setup/prerequisites)
+- Cài đặt **Node.js** và **Git** — xem [Yêu cầu hệ thống](../setup/prerequisites.md)
 - Làm quen với thiết lập [không gian làm việc Packages](./index.md) và quy trình phát hành
 
 </div>
@@ -92,6 +93,6 @@ Không bao giờ xóa hoặc đổi tên một export cho đến khi phiên bả
 
 ## Bài viết liên quan
 
-- **[Helpers](./helpers)** -- Gói tiện ích nền tảng được dùng cùng AppHelper
-- **[Ứng dụng web](../web-apps/)** -- Các ứng dụng web sử dụng gói này
+- **[Helpers](./helpers.md)** -- Gói tiện ích nền tảng được dùng cùng AppHelper
+- **[Ứng dụng web](../web-apps/index.md)** -- Các ứng dụng web sử dụng gói này
 - **[Tổng quan thư viện dùng chung](./index.md)** -- Thiết lập không gian làm việc, quy trình phát hành và quy trình liên kết cục bộ

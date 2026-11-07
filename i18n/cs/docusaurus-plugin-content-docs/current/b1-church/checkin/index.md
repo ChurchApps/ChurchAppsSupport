@@ -1,5 +1,7 @@
 ---
-title: "Příchod"
+title: "Check-in v členském portálu B1.church"
+sidebar_label: "Příchod"
+description: "Odbavte se a členy domácnosti na bohoslužbu z členského portálu B1.church bez kiosku a přiřaďte skupiny."
 ---
 
 # Příchod

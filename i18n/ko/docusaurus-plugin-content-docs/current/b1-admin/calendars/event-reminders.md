@@ -1,21 +1,22 @@
 ---
 title: "행사 알림"
+description: "B1 Admin에서 푸시, 이메일, 문자 행사 알림을 설정합니다. 발송 시점, 수신자, 맞춤 메시지를 선택해 사람들이 제때 알림을 받도록 합니다."
 ---
 
 # 행사 알림
 
 <div class="article-intro">
 
-행사 알림은 행사가 열리기 전에 적절한 사람들에게 자동으로 알려 줍니다. 예를 들어 "놓치지 마세요! 건강 세미나가 내일 오전 9시에 시작합니다."와 같은 메시지입니다. 행사에 알림을 한 번만 설정하면 B1이 정해진 시각에 푸시 알림, 이메일, 그리고 교회에 문자 메시지 서비스가 설정되어 있다면 문자 메시지로 보냅니다. 교인들은 자신의 [알림 설정](../../b1-church/getting-started/notification-preferences)에서 받을 알림을 직접 고를 수 있습니다.
+행사 알림은 행사가 열리기 전에 적절한 사람들에게 자동으로 알려 줍니다. 예를 들어 "놓치지 마세요! 건강 세미나가 내일 오전 9시에 시작합니다."와 같은 메시지입니다. 행사에 알림을 한 번만 설정하면 B1이 정해진 시각에 푸시 알림, 이메일, 그리고 교회에 문자 메시지 서비스가 설정되어 있다면 문자 메시지로 보냅니다. 교인들은 자신의 [알림 설정](../../b1-church/getting-started/notification-preferences.md)에서 받을 알림을 직접 고를 수 있습니다.
 
 </div>
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 알림을 보낼 행사를 먼저 만드세요([캘린더 만들기](creating-calendars) 참고).
-- 등록된 참석자에게 알림을 보내려면 행사에서 [등록을 활성화](creating-calendars)해야 합니다.
-- 그룹 전체에 알림을 보내려면 행사가 구성원이 있는 [그룹](../groups/creating-groups)에 속해 있어야 합니다.
+- 알림을 보낼 행사를 먼저 만드세요([캘린더 만들기](./creating-calendars.md) 참고).
+- 등록된 참석자에게 알림을 보내려면 행사에서 [등록을 활성화](./creating-calendars.md)해야 합니다.
+- 그룹 전체에 알림을 보내려면 행사가 구성원이 있는 [그룹](../groups/creating-groups.md)에 속해 있어야 합니다.
 
 </div>
 
@@ -57,21 +58,21 @@ title: "행사 알림"
 - 반복 행사도 자동으로 처리됩니다. 다가오는 회차마다 각각 알림이 발송됩니다.
 
 :::tip
-알림은 **푸시를 먼저 보내고, 푸시를 받지 못하면 이메일로 대신 보냅니다**. 교인이 푸시 알림을 켜 두었다면 푸시를 받고, 그렇지 않으면 이메일을 받습니다. 교인은 알림 종류별로 받을 채널을 [알림 설정](../../b1-church/getting-started/notification-preferences)에서 고를 수 있습니다.
+알림은 **푸시를 먼저 보내고, 푸시를 받지 못하면 이메일로 대신 보냅니다**. 교인이 푸시 알림을 켜 두었다면 푸시를 받고, 그렇지 않으면 이메일을 받습니다. 교인은 알림 종류별로 받을 채널을 [알림 설정](../../b1-church/getting-started/notification-preferences.md)에서 고를 수 있습니다.
 :::
 
 ## 문자 알림
 
 **Text**(문자) 채널은 교회가 문자 서비스 제공업체를 연결해 둔 경우에만 나타납니다. 문자는 교회의 문자 서비스 제공업체를 통해 발송되며, 문자 한 통마다 교회에 비용이 발생할 수 있습니다. 문자는 푸시나 이메일 알림에 더해 발송되며, 다음 조건을 모두 만족하는 사람에게만 보냅니다.
 
-- [알림 설정](../../b1-church/getting-started/notification-preferences)에서 **Text messages**를 켠 사람
+- [알림 설정](../../b1-church/getting-started/notification-preferences.md)에서 **Text messages**를 켠 사람
 - 프로필에 휴대폰 번호가 있는 사람
 
 각 문자는 교회 이름으로 시작하고, 문자 메시지 한 통 안에 들어가도록 작성되며, "Reply STOP to opt out."(수신 거부는 STOP으로 답장하세요)로 끝납니다. STOP으로 답장한 사람은 교회로부터 더 이상 문자를 받지 않습니다. STOP 응답이 B1에 전달되도록 하려면 [문자 설정](../settings/church-settings.md#texting)의 **Inbound (STOP) webhook URL**을 문자 서비스 제공업체의 인바운드 메시지 웹훅에 붙여 넣으세요.
 
 ## 교인이 제어할 수 있는 것
 
-알림은 항상 교인의 [알림 설정](../../b1-church/getting-started/notification-preferences)을 따릅니다. 교인은 다음을 할 수 있습니다.
+알림은 항상 교인의 [알림 설정](../../b1-church/getting-started/notification-preferences.md)을 따릅니다. 교인은 다음을 할 수 있습니다.
 
 - 다른 알림은 유지하면서 **행사 알림(Event Reminders)**을 푸시, 이메일, 문자별로 끌 수 있습니다.
 - **Text messages**로 문자 알림을 켜거나 끌 수 있습니다.
@@ -81,10 +82,10 @@ title: "행사 알림"
 
 ## 봉사 알림
 
-계획에 배정된 봉사자는 계획 세부 정보가 담긴 별도의 **봉사 알림(serving reminder)**을 받습니다. 아직 응답하지 않은 경우에는 이메일 안에 바로 **Accept / Decline**(수락 / 거절) 버튼이 있습니다. 이 알림은 캘린더 행사가 아니라 계획 유형에서 설정하며, 문자로도 보낼 수 있습니다. 봉사 일정과 알림이 어떻게 작동하는지는 [봉사자 알림](../serving/plans#volunteer-reminders)과 [주일 봉사자](../guides/sunday-volunteers)를 참고하세요.
+계획에 배정된 봉사자는 계획 세부 정보가 담긴 별도의 **봉사 알림(serving reminder)**을 받습니다. 아직 응답하지 않은 경우에는 이메일 안에 바로 **Accept / Decline**(수락 / 거절) 버튼이 있습니다. 이 알림은 캘린더 행사가 아니라 계획 유형에서 설정하며, 문자로도 보낼 수 있습니다. 봉사 일정과 알림이 어떻게 작동하는지는 [봉사자 알림](../serving/plans.md#volunteer-reminders)과 [주일 봉사자](../guides/sunday-volunteers.md)를 참고하세요.
 
 ## 다음 단계
 
-- [알림 설정](../../b1-church/getting-started/notification-preferences) -- 교인이 제어할 수 있는 항목
-- [행사 등록 가이드](../guides/event-registration) -- 알림이 참석자에게 도달하도록 등록을 설정합니다
-- [캘린더 만들기](creating-calendars) -- 캘린더 설정으로 돌아가기
+- [알림 설정](../../b1-church/getting-started/notification-preferences.md) -- 교인이 제어할 수 있는 항목
+- [행사 등록 가이드](../guides/event-registration.md) -- 알림이 참석자에게 도달하도록 등록을 설정합니다
+- [캘린더 만들기](./creating-calendars.md) -- 캘린더 설정으로 돌아가기

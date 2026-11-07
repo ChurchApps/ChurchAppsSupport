@@ -1,5 +1,6 @@
 ---
 title: "FreePlay tartalomszolgáltató"
+description: "Mit kell biztosítania egy tartalomszolgáltatónak a FreePlay-hez: logó, bejelentkezési mód, katalógus- és lejátszólista-végpontok, valamint médiaformátumok."
 ---
 
 # FreePlay tartalomszolgáltató

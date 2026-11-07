@@ -1,5 +1,6 @@
 ---
 title: "指南：运营小组"
+description: "在 B1 Admin 中设置小组、查经班和事工团队，然后在您的 B1 网站上发布全教会日历和小组板块。"
 ---
 
 # 运营小组
@@ -78,7 +79,7 @@ title: "指南：运营小组"
 
 1. 会众可以在 [B1.church](../../b1-church/groups/browsing-groups.md) 上浏览和加入小组
 2. 小组成员可以查看详情、日历，并在[对话](../../b1-church/groups/conversations.md)中发帖
-3. 所有小组功能也可在 [B1 Mobile 应用](../../b1-mobile/groups/)上使用
+3. 所有小组功能也可在 [B1 Mobile 应用](../../b1-mobile/groups/index.md)上使用
 
 :::info
 会众可以在网页端和移动端查看他们的小组、即将到来的活动和小组对话——一切保持同步。
@@ -97,4 +98,4 @@ title: "指南：运营小组"
 - [精选日历](../calendars/curated-calendar.md)——创建统一的教会日历
 - [浏览小组（网页端）](../../b1-church/groups/browsing-groups.md)——会众如何查找小组
 - [小组对话（网页端）](../../b1-church/groups/conversations.md)——小组讨论
-- [小组（移动端）](../../b1-mobile/groups/)——移动应用上的小组
+- [小组（移动端）](../../b1-mobile/groups/index.md)——移动应用上的小组

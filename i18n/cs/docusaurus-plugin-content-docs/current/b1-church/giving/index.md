@@ -1,5 +1,7 @@
 ---
-title: "Darování"
+title: "Online dary a příspěvky v B1.church"
+sidebar_label: "Darování"
+description: "Darujte církvi online v B1.church bez účtu, nebo se přihlaste a spravujte opakované dary, platební metody a výpisy darů."
 ---
 
 # Darování

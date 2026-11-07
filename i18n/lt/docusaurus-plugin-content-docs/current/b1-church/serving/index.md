@@ -1,5 +1,7 @@
 ---
-title: "Služba"
+title: "Savanorystė ir registracija B1.church"
+sidebar_label: "Služba"
+description: "Naršykite savanorių galimybes B1.church, užsirašykite į laisvas pozicijas, peržiūrėkite savo tarnystės paskyrimus ir atšaukite registraciją iki termino."
 ---
 
 # Služba
@@ -14,8 +16,8 @@ Sekcija Služba na B1.church vam omogućuje pregled volonterskih prilika i prija
 
 - **Pregledati volonterske prilike** -- Pogledajte nadolazeće planove službi s otvorenim pozicijama za koje su potrebni volonteri.
 - **Prijaviti se na pozicije** -- Odaberite poziciju i prijavite se jednim klikom.
-- **Pregledati svoje planove** -- Pogledajte svoje nadolazeće i prošle [dodjele za službu](../plans/viewing-plans).
-- **Odgovoriti na dodjele** -- Prihvatite ili odbijte pozicije na koje ste raspoređeni, sa stranice Planovi ili iz odjeljka **Služite** na početnoj stranici. Ako se vaši planovi promijene nakon što ste prihvatili, možete [odbiti prihvaćenu dodjelu](../plans/viewing-plans#declining-an-accepted-assignment) dok služba ne završi.
+- **Pregledati svoje planove** -- Pogledajte svoje nadolazeće i prošle [dodjele za službu](../plans/viewing-plans.md).
+- **Odgovoriti na dodjele** -- Prihvatite ili odbijte pozicije na koje ste raspoređeni, sa stranice Planovi ili iz odjeljka **Služite** na početnoj stranici. Ako se vaši planovi promijene nakon što ste prihvatili, možete [odbiti prihvaćenu dodjelu](../plans/viewing-plans.md#declining-an-accepted-assignment) dok služba ne završi.
 - **Ukloniti prijave** -- Otkažite samostalnu prijavu ako se vaši planovi promijene (prije roka).
 
 ## Kako to funkcionira
@@ -28,5 +30,5 @@ Na stranici volontera pojavljuju se samo pozicije koje je administrator vaše cr
 
 ## Saznajte više
 
-- [Prijava volontera](./volunteer-signup) -- Korak po korak vodič za pregled i prijavu na volonterske pozicije
-- [Pregled planova](../plans/viewing-plans) -- Pogledajte svoje dodijeljene planove službi i redoslijed službi
+- [Prijava volontera](./volunteer-signup.md) -- Korak po korak vodič za pregled i prijavu na volonterske pozicije
+- [Pregled planova](../plans/viewing-plans.md) -- Pogledajte svoje dodijeljene planove službi i redoslijed službi

@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tinhlelo Temnyaka"
+description: "Dala luhlelo lwemnyaka lwetifundziso temasonto kuLessons.church, bopha emasonto ePhasika noma iKhisimusi, bese ulupapatisa kutsi tibandla tilusebentise ku-B1 Admin."
 ---
 
 # Kuphatsa Tinhlelo Temnyaka

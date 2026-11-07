@@ -1,5 +1,6 @@
 ---
 title: "Mga Giving Statement"
+description: "Gumawa ng taunang giving statement ng bawat donor sa B1 Admin, saka i-download bilang CSV o i-print para ipadala, kasama ang tax-deductible na kabuuan."
 ---
 
 # Mga Giving Statement

@@ -26,7 +26,7 @@ Conecta ChatGPT a los datos de B1 de tu iglesia y hazle preguntas en lenguaje se
 </div>
 
 :::tip Recomendado: prueba primero Claude, es gratis
-[Claude](./claude) se conecta a B1 con su **plan gratuito** y se configura en menos de 3 minutos: solo agrega B1 como conector e inicia sesión con tu cuenta de B1. No necesitas clave. Es la forma más sencilla para que tu iglesia pruebe la IA con B1 antes de pagar por algo.
+[Claude](./claude.md) se conecta a B1 con su **plan gratuito** y se configura en menos de 3 minutos: solo agrega B1 como conector e inicia sesión con tu cuenta de B1. No necesitas clave. Es la forma más sencilla para que tu iglesia pruebe la IA con B1 antes de pagar por algo.
 :::
 
 ## Configuración
@@ -254,5 +254,5 @@ Cualquiera que tenga el enlace puede hacer preguntas en lenguaje natural. Los pe
 
 - [Claves de API](/docs/developer/api/api-keys): referencia completa de permisos
 - [Servidor MCP (referencia para desarrolladores)](/docs/developer/api/mcp): detalles del protocolo y esquemas de herramientas
-- [Claude](./claude): la misma idea, para los modelos de Anthropic
+- [Claude](./claude.md): la misma idea, para los modelos de Anthropic
 - [Referencia de la API REST](/docs/developer/api/endpoints): todos los endpoints que puede llamar una acción de GPT personalizado

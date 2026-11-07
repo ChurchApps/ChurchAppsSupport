@@ -1,5 +1,6 @@
 ---
 title: "Administration du serveur"
+description: "Réservé à Server.Admin : réinitialiser la double authentification, usurper un compte, modérer Commons et valider l'e-mail d'une église dans B1 Admin."
 ---
 
 # Administration du serveur

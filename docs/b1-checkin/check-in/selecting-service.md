@@ -1,5 +1,6 @@
 ---
 title: "Selecting a Service"
+description: "Pick the service you are attending in B1 Checkin's services screen, which sets the service times and groups shown for the rest of the check-in flow."
 ---
 
 # Selecting a Service
@@ -13,7 +14,7 @@ The first step of every check-in is choosing which service you are attending. Th
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Log in](../getting-started/logging-in) to the B1 Church Checkin app and select your church
+- [Log in](../getting-started/logging-in.md) to the B1 Church Checkin app and select your church
 - Ensure your church administrator has [configured services and service times](../../b1-admin/attendance/setup.md) in B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ The first step of every check-in is choosing which service you are attending. Th
 2. You will see a list of all services that have been configured for your church. Each service appears as a card showing the service name (for example, "Sunday Morning" or "Wednesday Evening").
 3. Tap the service you are attending.
 
-The app loads the service times and groups associated with that service, then takes you to the [member lookup screen](./looking-up-members).
+The app loads the service times and groups associated with that service, then takes you to the [member lookup screen](./looking-up-members.md).
 
 ## When Check-In Isn't Open
 
-If your administrator gave a service time a [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule), the app only lets families pick that service time while its check-in window is open. Service times whose window is closed right now still appear on the [household screen](./household-review), but they are marked **Closed** (for example, **Closed · opens Sun 9:30 AM**) instead of offering a group button.
+If your administrator gave a service time a [check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), the app only lets families pick that service time while its check-in window is open. Service times whose window is closed right now still appear on the [household screen](./household-review.md), but they are marked **Closed** (for example, **Closed · opens Sun 9:30 AM**) instead of offering a group button.
 
 If every service time for the service you tapped is closed, the app tells you when check-in opens -- for example, **"Check-in for this service opens Sun 9:30 AM."** (If no opening time can be shown, it says **"Check-in isn't open for this service right now."**) Tap **Back** to return to the services list and choose a different service, or wait until the window opens and try again.
 
@@ -56,4 +57,4 @@ If your church has only one service configured, you still need to tap it to proc
 
 ## Next Step
 
-After selecting a service, you will [look up your family](./looking-up-members) by phone number or name.
+After selecting a service, you will [look up your family](./looking-up-members.md) by phone number or name.

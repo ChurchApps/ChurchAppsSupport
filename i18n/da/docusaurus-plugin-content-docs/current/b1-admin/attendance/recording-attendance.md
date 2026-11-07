@@ -1,5 +1,6 @@
 ---
 title: "Registrering af fremmøde"
+description: "Registrér fremmøde til hvert gruppemøde i B1 Admin: opret en session, markér deltagere, gem noter og udskriv fremmødelister eller eksportér til regneark."
 ---
 
 # Registrering af fremmøde

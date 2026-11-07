@@ -1,5 +1,6 @@
 ---
 title: "Se leksjoner"
+description: "Gå gjennom hvordan du åpner en leksjon på Lessons.church, leser seksjonene og rollehandlingene, finner nedlastinger og bytter aldersgruppesteder før timen."
 ---
 
 # Se leksjoner

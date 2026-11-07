@@ -1,5 +1,6 @@
 ---
 title: "Programme und Studienreihen"
+description: "Zusammenhang von Programmen, Studien, Lektionen und Stationen in Lessons.church, um den passenden Lehrplan zu finden und zwischen Lektionen zu wechseln."
 ---
 
 # Programme und Studienreihen

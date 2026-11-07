@@ -1,5 +1,6 @@
 ---
 title: "Notifikationsindstillinger"
+description: "Angiv notifikationskanaler, e-mailhyppighed, stille timer og sms-fravalg for hver notifikationstype i B1 Admin og B1-appen, fra ét skærmbillede."
 ---
 
 # Notifikationsindstillinger
@@ -60,6 +61,6 @@ Tidskritiske notifikationer -- som en sikkerhedsadvarsel eller en sikkerhedsbesk
 
 ## Relateret
 
-- [Tilmelding som frivillig](../serving/volunteer-signup) -- Påmindelser om tjeneste og svar på anmodninger om plan
-- [Tilmelding til begivenheder](../events/registering) -- Tilmeld dig begivenheder, der sender påmindelser
-- [Installation af appen](installing-pwa) -- Føj B1 til din enhed, så du kan modtage push-notifikationer
+- [Tilmelding som frivillig](../serving/volunteer-signup.md) -- Påmindelser om tjeneste og svar på anmodninger om plan
+- [Tilmelding til begivenheder](../events/registering.md) -- Tilmeld dig begivenheder, der sender påmindelser
+- [Installation af appen](./installing-pwa.md) -- Føj B1 til din enhed, så du kan modtage push-notifikationer

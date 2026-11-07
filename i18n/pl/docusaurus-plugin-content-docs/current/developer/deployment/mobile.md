@@ -1,5 +1,6 @@
 ---
 title: "Nasazení mobilní aplikace"
+description: "Krok po kroku: budowanie wydań Android i iOS aplikacji B1 Mobile w Expo EAS, wysyłka do sklepów z aplikacjami i publikacja aktualizacji OTA."
 ---
 
 # Nasazení mobilní aplikace
@@ -13,7 +14,7 @@ Mobilní aplikace ChurchApps se sestavují a nasazují pomocí **Expo EAS Build*
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte mobilní aplikaci lokálně – viz [B1 Mobile](../mobile/b1-mobile)
+- Nastavte mobilní aplikaci lokálně – viz [B1 Mobile](../mobile/b1-mobile.md)
 - Nainstalujte a nakonfigurujte [EAS CLI](https://docs.expo.dev/eas/)
 - Mějte přístup ke Google Play Console (Android) a/nebo Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Pokud nezaktualizujete čísla verzí ve všech souborech, sestavení selže neb
 
 ## Související články
 
-- **[B1 Mobile](../mobile/b1-mobile)** – Průvodce lokálním nastavením a vývojem
-- **[Nasazení API](./apis)** – Nasazení backendových API
-- **[Nasazení webových aplikací](./web-apps)** – Nasazení frontendových webových aplikací
+- **[B1 Mobile](../mobile/b1-mobile.md)** – Průvodce lokálním nastavením a vývojem
+- **[Nasazení API](./apis.md)** – Nasazení backendových API
+- **[Nasazení webových aplikací](./web-apps.md)** – Nasazení frontendových webových aplikací

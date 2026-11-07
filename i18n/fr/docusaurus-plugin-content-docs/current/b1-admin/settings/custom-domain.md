@@ -1,5 +1,6 @@
 ---
 title: "Domaine personnalisé"
+description: "Pointez votre domaine, comme www.votreeglise.org, vers votre site B1 en configurant les enregistrements DNS puis en l'ajoutant dans B1 Admin."
 ---
 
 # Domaine personnalisé

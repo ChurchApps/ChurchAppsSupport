@@ -1,5 +1,6 @@
 ---
 title: "Gestione dei piani annuali"
+description: "Creare un piano annuale di lezioni settimanali in Lessons.church, ancorarlo a Pasqua o Natale e pubblicarlo per l'uso in B1 Admin."
 ---
 
 # Gestione dei piani annuali

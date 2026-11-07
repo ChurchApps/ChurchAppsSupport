@@ -1,5 +1,7 @@
 ---
-title: "Prisijungimas"
+title: "Prisijungimas prie B1 Mobile"
+sidebar_label: "Prisijungimas"
+description: "Prisijunkite prie B1 Mobile programėlės su ChurchApps paskyra, sukurkite naują paskyrą arba atkurkite pamirštą slaptažodį 6 skaitmenų kodu."
 ---
 
 # Prisijungimas
@@ -13,7 +15,7 @@ B1 Mobile naudoja tą pačią ChurchApps paskyrą, kurią naudojate B1.church ir
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiegti B1 Mobile](./installing) savo iOS ar Android įrenginyje
+- [Įdiegti B1 Mobile](./installing.md) savo iOS ar Android įrenginyje
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile naudoja tą pačią ChurchApps paskyrą, kurią naudojate B1.church ir
 3. Įveskite savo **el. pašto adresą** ir **slaptažodį**.
 4. Palieskite **Prisijungti**.
 
-Prisijungę būsite nukreipti į [pagrindinį skydelį](../dashboard/). Jei dar nepasirinkote bažnyčios, būsite paraginti ją ieškoti ir pasirinkti.
+Prisijungę būsite nukreipti į [pagrindinį skydelį](../dashboard/index.md). Jei dar nepasirinkote bažnyčios, būsite paraginti ją ieškoti ir pasirinkti.
 
 ## Naujos paskyros kūrimas
 

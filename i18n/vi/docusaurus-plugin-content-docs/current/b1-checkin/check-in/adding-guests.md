@@ -1,5 +1,6 @@
 ---
 title: "Thêm Khách"
+description: "Thêm trẻ em đến thăm, người thân hoặc bạn bè vào một hộ gia đình tại kiosk B1 Checkin, rồi gán nhóm và hoàn tất điểm danh."
 ---
 
 # Thêm Khách
@@ -13,8 +14,8 @@ Nếu có người đến thăm gia đình bạn và cần làm thủ tục chec
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Tra cứu gia đình của bạn](./looking-up-members) và chọn một thành viên từ kết quả tìm kiếm
-- Đến [màn hình xem lại hộ gia đình](./household-review), nơi bạn có thể thấy các thành viên trong gia đình
+- [Tra cứu gia đình của bạn](./looking-up-members.md) và chọn một thành viên từ kết quả tìm kiếm
+- Đến [màn hình xem lại hộ gia đình](./household-review.md), nơi bạn có thể thấy các thành viên trong gia đình
 
 </div>
 
@@ -36,8 +37,8 @@ Nếu tên của khách trùng với một người đã có trong hệ thống 
 
 Khi khách xuất hiện trong danh sách hộ gia đình, bạn có thể:
 
-- **Mở rộng thẻ của họ** và [phân công vào nhóm](./group-assignment), giống như bất kỳ thành viên gia đình nào khác.
-- Làm thủ tục [check-in](./completing-checkin) cho toàn bộ hộ gia đình, bao gồm cả khách.
+- **Mở rộng thẻ của họ** và [phân công vào nhóm](./group-assignment.md), giống như bất kỳ thành viên gia đình nào khác.
+- Làm thủ tục [check-in](./completing-checkin.md) cho toàn bộ hộ gia đình, bao gồm cả khách.
 
 ## Hủy
 
@@ -49,4 +50,4 @@ Thêm khách tại kiosk sẽ tạo một hồ sơ người trong cơ sở dữ 
 
 ## Bước Tiếp Theo
 
-Sau khi thêm khách và [phân công nhóm](./group-assignment) nếu cần, bạn đã sẵn sàng để [hoàn tất check-in](./completing-checkin).
+Sau khi thêm khách và [phân công nhóm](./group-assignment.md) nếu cần, bạn đã sẵn sàng để [hoàn tất check-in](./completing-checkin.md).

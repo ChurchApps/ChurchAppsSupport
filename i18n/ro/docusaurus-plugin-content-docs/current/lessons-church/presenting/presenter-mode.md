@@ -1,5 +1,6 @@
 ---
 title: "Modul prezentare"
+description: "Rulați o lecție pe tot ecranul unui proiector sau TV de clasă cu Presenter Mode în Lessons.church și parcurgeți fiecare secțiune în timpul orei."
 ---
 
 # Modul prezentare

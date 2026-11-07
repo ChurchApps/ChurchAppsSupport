@@ -1,5 +1,6 @@
 ---
 title: "Arama"
+description: "Lessons.church kütüphanesinde programları, çalışmaları ve dersleri anahtar kelime veya İncil hikâyesiyle bulun; arama sonuçlarının nasıl sıralandığını ve etiketlendiğini öğrenin."
 ---
 
 # Arama

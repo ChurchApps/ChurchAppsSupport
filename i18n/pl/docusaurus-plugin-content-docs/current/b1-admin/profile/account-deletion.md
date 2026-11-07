@@ -1,5 +1,6 @@
 ---
 title: "Rozpatrywanie próśb o usunięcie konta"
+description: "Zatwierdzaj lub odrzucaj wnioski członków o usunięcie konta w B1 Admin, kieruj je do Directory Approval Group i dotrzymuj 30-dniowego terminu RODO."
 ---
 
 # Rozpatrywanie próśb o usunięcie konta

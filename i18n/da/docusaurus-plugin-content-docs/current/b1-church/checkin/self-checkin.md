@@ -1,5 +1,7 @@
 ---
-title: "Selvbetjenings-fremmøde"
+title: "Selv-check-in i B1.church medlemsportalen"
+sidebar_label: "Selvbetjenings-fremmøde"
+description: "Check dig selv og din husstand ind til en gudstjeneste fra B1.church-medlemsportalen med få hurtige trin, hvor du vælger tider og grupper."
 ---
 
 # Selvbetjenings-fremmøde

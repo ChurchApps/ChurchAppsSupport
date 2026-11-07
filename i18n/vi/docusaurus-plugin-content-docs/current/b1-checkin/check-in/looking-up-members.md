@@ -1,5 +1,6 @@
 ---
 title: "Tra cứu thành viên"
+description: "Tìm gia đình bạn trên kiosk B1 Checkin bằng cách tìm theo các chữ số điện thoại hoặc tên, và đăng ký là khách nếu bạn lần đầu đến thăm."
 ---
 
 # Tra cứu thành viên
@@ -13,7 +14,7 @@ Sau khi chọn buổi nhóm, bạn sẽ đến màn hình tra cứu thành viên
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Chọn buổi nhóm](./selecting-service) từ màn hình danh sách buổi nhóm
+- [Chọn buổi nhóm](./selecting-service.md) từ màn hình danh sách buổi nhóm
 - Đảm bảo hộ gia đình của bạn đã được quản trị viên hội thánh [thêm vào hệ thống](../../b1-admin/people/adding-people.md)
 
 </div>
@@ -45,7 +46,7 @@ Màn hình tra cứu có hai chế độ tìm kiếm. Bạn có thể chuyển �
 
 Kết quả tìm kiếm hiển thị dưới dạng thẻ bên dưới ô tìm kiếm. Mỗi thẻ hiển thị **tên** và **ảnh** (nếu có trong hồ sơ) của người đó.
 
-Nhấn vào thẻ của một người để chọn họ. Ứng dụng sẽ tải tất cả thành viên trong hộ gia đình của người đó và đưa bạn đến [màn hình xem lại hộ gia đình](./household-review).
+Nhấn vào thẻ của một người để chọn họ. Ứng dụng sẽ tải tất cả thành viên trong hộ gia đình của người đó và đưa bạn đến [màn hình xem lại hộ gia đình](./household-review.md).
 
 :::tip
 Tìm kiếm bằng 4 chữ số cuối của số điện thoại là cách nhanh nhất để tra cứu gia đình bạn. Hãy khuyến khích các thành viên sử dụng phương pháp này để trải nghiệm check-in nhanh hơn.
@@ -60,7 +61,7 @@ Nếu không tìm thấy kết quả nào, ứng dụng sẽ hiển thị thông
 Nếu hội thánh của bạn đã bật đăng ký khách bằng mã QR, liên kết **Đăng ký làm khách** sẽ xuất hiện bên dưới ô tìm kiếm trên màn hình tra cứu. Khách đến lần đầu có thể dùng liên kết này để thêm gia đình mình vào hệ thống của hội thánh trước khi check-in.
 
 1. Nhấn **Đăng ký làm khách**. Một cửa sổ sẽ mở ra với mã QR và dòng chữ "Quét để đăng ký làm khách."
-2. Chọn cách điền [biểu mẫu đăng ký khách](../../b1-church/checkin/guest-registration):
+2. Chọn cách điền [biểu mẫu đăng ký khách](../../b1-church/checkin/guest-registration.md):
    - **Trên điện thoại của bạn** -- Quét mã QR, điền biểu mẫu trên điện thoại, rồi nhấn **OK** để đóng cửa sổ.
    - **Trên kiosk** -- Nhấn **Đăng ký tại đây** để mở cùng biểu mẫu ngay trên máy tính bảng. Điền thông tin rồi nhấn **Đăng ký**, sau đó nhấn **Xong** (hoặc mũi tên quay lại) để trở về màn hình tra cứu.
 3. Sau khi đăng ký, hãy tìm gia đình bạn theo tên hoặc số điện thoại để check-in.
@@ -71,7 +72,7 @@ Biểu mẫu mở bằng **Đăng ký tại đây** sẽ ở lại trang đăng 
 
 ## In nhãn khi check-in bằng điện thoại
 
-Các gia đình đã check-in trên điện thoại qua [tự check-in B1 Church](../../b1-church/checkin/self-checkin) có thể in thẻ tên tại kiosk mà không cần tự tra cứu.
+Các gia đình đã check-in trên điện thoại qua [tự check-in B1 Church](../../b1-church/checkin/self-checkin.md) có thể in thẻ tên tại kiosk mà không cần tự tra cứu.
 
 1. Trên màn hình tra cứu, nhấn nút **Quét mã** (biểu tượng mã QR).
 2. Đưa mã QR trên điện thoại của bạn lên trước camera. Nếu ứng dụng yêu cầu quyền truy cập camera, nhấn **Cho phép camera**. Mặc định dùng camera trước; nhấn nút lật để chuyển camera.
@@ -81,4 +82,4 @@ Việc quét chỉ in nhãn -- điểm danh đã được ghi nhận khi gia đ�
 
 ## Bước tiếp theo
 
-Sau khi chọn một người, bạn sẽ [xem lại hộ gia đình](./household-review) và quản lý việc phân nhóm.
+Sau khi chọn một người, bạn sẽ [xem lại hộ gia đình](./household-review.md) và quản lý việc phân nhóm.

@@ -1,5 +1,6 @@
 ---
 title: "Importowanie danych"
+description: "Przenieś istniejące dane osób, grup, frekwencji i darowizn do B1 Admin narzędziem B1 Transfer lub wyeksportuj kopię zapasową w dowolnym momencie."
 ---
 
 # Importowanie danych

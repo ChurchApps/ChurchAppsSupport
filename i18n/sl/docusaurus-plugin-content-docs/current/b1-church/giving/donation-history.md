@@ -1,5 +1,7 @@
 ---
-title: "Zgodovina darovanj"
+title: "Zgodovina darovanj in izpiski na B1.church"
+sidebar_label: "Zgodovina darovanj"
+description: "Na strani Darovanje v portalu članov B1.church si oglejte pretekla darila, filtrirajte jih po letu in natisnite izpiske za davčne namene."
 ---
 
 # Zgodovina darovanj

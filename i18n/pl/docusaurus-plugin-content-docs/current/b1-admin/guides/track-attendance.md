@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: Śledzenie frekwencji w kościele"
+description: "Śledź frekwencję w B1 Admin: skonfiguruj kampusy i godziny nabożeństw, zapisuj ją ręcznie lub przez samodzielne meldowanie i czytaj raporty."
 ---
 
 # Śledzenie frekwencji w kościele

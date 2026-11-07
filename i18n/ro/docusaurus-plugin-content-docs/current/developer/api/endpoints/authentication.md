@@ -1,5 +1,6 @@
 ---
 title: "Autentificare și permisiuni"
+description: "Referință pentru autentificarea JWT, autentificarea în doi pași, fluxurile OAuth 2.0 și modelul de permisiuni al API-ului ChurchApps, pentru dezvoltatorii care construiesc integrări."
 ---
 
 # Autentificare și permisiuni
@@ -244,7 +245,7 @@ Pentru dispozitive fără browser (aplicații TV, chioșcuri):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Obține clientul după ID-ul clientului (secretul este ascuns) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Creează sau actualizează un client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Șterge un client |
-| POST | `/membership/oauth/register` | Publică | — | Înregistrare dinamică a clientului (RFC 7591) pentru clienții publici, cum ar fi conectorii MCP. Vezi [Aplicații conectate](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Publică | — | Înregistrare dinamică a clientului (RFC 7591) pentru clienții publici, cum ar fi conectorii MCP. Vezi [Aplicații conectate](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpoint-uri de aprobare a dispozitivelor
 
@@ -265,5 +266,5 @@ API-ul folosește două funcții wrapper care determină cerințele de autentifi
 
 ## Pagini conexe
 
-- [Structura modulelor](../module-structure) — Cum sunt organizate controlerele, depozitele și modelele
-- [Configurarea locală](../local-setup) — Rularea API-ului local pentru dezvoltare
+- [Structura modulelor](../module-structure.md) — Cum sunt organizate controlerele, depozitele și modelele
+- [Configurarea locală](../local-setup.md) — Rularea API-ului local pentru dezvoltare

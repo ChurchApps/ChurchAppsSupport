@@ -1,5 +1,6 @@
 ---
 title: "Kişileri Toplu Düzenleme"
+description: "B1 Admin'de birçok kişinin üyelik durumunu, medeni durumunu, cinsiyetini, opt-out bilgisini, özel Evet/Hayır alanlarını ya da grup üyeliğini tek seferde güncelleyin."
 ---
 
 # Kişileri Toplu Düzenleme

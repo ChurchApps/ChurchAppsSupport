@@ -1,5 +1,6 @@
 ---
 title: "Lessons-sisällön katseleminen"
+description: "Avaa Lessons.churchin oppitunti: lue osiot ja roolitoiminnot, löydä lataukset ja vaihda ikäryhmäpaikkaa ennen tuntia."
 ---
 
 # Lessons-sisällön katseleminen

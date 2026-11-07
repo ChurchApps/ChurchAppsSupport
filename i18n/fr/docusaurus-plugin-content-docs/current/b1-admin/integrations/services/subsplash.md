@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Reliez les dons, nouvelles personnes et réponses de formulaires de Subsplash à B1 avec Zapier, afin que les dons et profils arrivent automatiquement dans B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Activez le Zap. Les futurs dons Subsplash apparaîtront dans **B1Admin → Dons*
 
 ## Voir aussi
 
-- [Donorbox](./donorbox) : même principe de recette, avec une autre plateforme de dons
-- [Zapier (présentation)](../zapier) : le côté B1 de chaque recette Zapier
+- [Donorbox](./donorbox.md) : même principe de recette, avec une autre plateforme de dons
+- [Zapier (présentation)](../zapier.md) : le côté B1 de chaque recette Zapier
 - [Guide d'intégration Zapier de Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (documentation de Subsplash)

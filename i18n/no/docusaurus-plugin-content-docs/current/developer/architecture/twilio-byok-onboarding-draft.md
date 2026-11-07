@@ -6,7 +6,7 @@ description: "Utkast til B1-oppsett av Twilio eid av kirken, offentlig veilednin
 # Kirkeeid Twilio-onboarding – utkast
 
 :::caution Utkast for den foreslåtte integrasjonen
-Dette er en foreslått arbeidsflyt. B1 har nå et grunnleggende **Twilio**-valg under **Innstillinger > Tekstmeldinger** (Account SID, Auth Token, From Number og den innkommende STOP-webhooken) – se [Kirkeinnstillinger: Tekstmeldinger](../../b1-admin/settings/church-settings.md#texting). De ekstra oppsettskontrollene i B1, samtykkekartleggingen og valideringstrinnene nedenfor er krav for en fremtidig utgivelse, ikke instruksjoner om å finne eksisterende innstillinger. Les den [tekniske forslaget](./twilio-byok-proposal) for omfang og avhengigheter. Twilio-kildene ble sjekket 22. oktober 2026; verifiser gjeldende krav før du sender inn en kampanje.
+Dette er en foreslått arbeidsflyt. B1 har nå et grunnleggende **Twilio**-valg under **Innstillinger > Tekstmeldinger** (Account SID, Auth Token, From Number og den innkommende STOP-webhooken) – se [Kirkeinnstillinger: Tekstmeldinger](../../b1-admin/settings/church-settings.md#texting). De ekstra oppsettskontrollene i B1, samtykkekartleggingen og valideringstrinnene nedenfor er krav for en fremtidig utgivelse, ikke instruksjoner om å finne eksisterende innstillinger. Les den [tekniske forslaget](./twilio-byok-proposal.md) for omfang og avhengigheter. Twilio-kildene ble sjekket 22. oktober 2026; verifiser gjeldende krav før du sender inn en kampanje.
 :::
 
 ## Den anbefalte ordningen
@@ -34,7 +34,7 @@ For det foreslåtte SMS-påmeldingsskjemaet:
 | Eksisterende automatiseringer | Meld ikke alle skjemainnsendere eller gruppemedlemmer inn i en tekstarbeidsflyt. Bare den foreslåtte verifiserte samtykkekartleggingen kan autorisere det programmet. |
 | Takketekst | Bekreft at skjemaet er mottatt, uten å hevde SMS-påmelding når boksen ble avslått eller bekreftelse/gjennomgang fortsatt står igjen. |
 
-Et eksisterende avkrysningsboks-spørsmål kan illustrere skjemaet, men B1 trenger fortsatt samtykkeloggen og sendingsportene. Den nåværende delte rendereren viser beskrivelser som ren tekst; å skrive Markdown eller en URL der er ikke tilstrekkelig sikkerhet for at policy-lenker er klikkbare. Implementeringen må levere en tilgjengelig samtykkekontroll med faktiske lenker. Se [opprette B1-skjemaer](../../b1-admin/forms/creating-forms) og den [tekniske forslaget](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Et eksisterende avkrysningsboks-spørsmål kan illustrere skjemaet, men B1 trenger fortsatt samtykkeloggen og sendingsportene. Den nåværende delte rendereren viser beskrivelser som ren tekst; å skrive Markdown eller en URL der er ikke tilstrekkelig sikkerhet for at policy-lenker er klikkbare. Implementeringen må levere en tilgjengelig samtykkekontroll med faktiske lenker. Se [opprette B1-skjemaer](../../b1-admin/forms/creating-forms.md) og den [tekniske forslaget](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio krever et frivillig, verifiserbart opt-in. Ikke bunt SMS med påkrevde medlemsvilkår, e-post- og telefontillatelser, gavesamtykke eller arrangementspåmelding. Et mobilnummer på et besøkskort er i seg selv ikke SMS-samtykke. Se Twilios [krav til frivillig samtykke](https://www.twilio.com/docs/api/errors/30923) og [kampanjeanbefalinger](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

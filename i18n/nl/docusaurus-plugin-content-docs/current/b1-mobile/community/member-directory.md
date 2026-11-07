@@ -1,5 +1,7 @@
 ---
-title: "Lidmapenboek"
+title: "Ledengids in de B1 Mobile-app"
+sidebar_label: "Lidmapenboek"
+description: "Vind mensen in je kerk met de ledengids van B1 Mobile: blader alfabetisch, zoek op naam en open profielen en gezinskoppelingen."
 ---
 
 # Lidmapenboek
@@ -13,7 +15,7 @@ Het lidmapenboek in B1 Mobile laat je personen in je kerk zoeken en doorbladeren
 <div class="prereqs">
 <h4>Voorbepaling</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld je aan](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld je aan](../getting-started/logging-in.md) op je account
 
 </div>
 
@@ -51,5 +53,5 @@ De informatie zichtbaar in elk profiel hangt af van je kerk privacyinstellingen 
 
 ## Gerelateerde Artikelen
 
-- [Berichten](./messaging) -- Stuur een privébericht naar iemand die je in het gids hebt gevonden
+- [Berichten](./messaging.md) -- Stuur een privébericht naar iemand die je in het gids hebt gevonden
 - [Privacy Instellingen](../profile/privacy-settings.md) -- Controleer wat anderen over jou kunnen zien in het gids

@@ -1,5 +1,6 @@
 ---
 title: "Eigene Domain"
+description: "Eigene Domain wie www.ihre-gemeinde.org in B1 Admin über DNS-Einträge und das Hinzufügen unter Einstellungen mit Ihrer B1-Website verbinden."
 ---
 
 # Eigene Domain

@@ -1,5 +1,7 @@
 ---
-title: "Erste Schritte"
+title: "Erste Schritte mit ChurchApps: Die ersten 15 Minuten"
+sidebar_label: "Erste Schritte"
+description: "Neues ChurchApps-Konto in wenigen Schritten einrichten: Gemeindedaten eintragen, Personen in B1 Admin importieren, Team einladen, erstes Projekt wählen."
 ---
 
 # Erste Schritte

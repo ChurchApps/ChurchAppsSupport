@@ -1,5 +1,6 @@
 ---
 title: "Web Sitesi Oluşturucu Mimarisi"
+description: "B1 web sitesi oluşturucu haritası: içerik ağacı, ortak öğe kataloğu, işleme hattı ve B1 Admin ile B1.church'te yapay zekâ ile sayfa üretimi."
 ---
 
 # Web Sitesi Oluşturucu Mimarisi
@@ -82,7 +83,7 @@ Tek bir URL'nin tüm ağacı tek bir anonim çağrıyla geri döner: `GET /conte
 
 ### Düzenleyici formları (B1Admin)
 
-Düzenleyicinin tür başına ayar formları `B1Admin/src/site/admin/elements/` içinde bulunur. `ElementEdit.tsx`, özel bir bileşene (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` gibi) veya her tür için satır içi bir alan oluşturucuya yönlendirir. Bu kataloğun yapay zekaya dönük yansıması, API'nin MCP `describe_page_builder` aracıdır (bkz. [MCP Sunucusu](../api/mcp)).
+Düzenleyicinin tür başına ayar formları `B1Admin/src/site/admin/elements/` içinde bulunur. `ElementEdit.tsx`, özel bir bileşene (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` gibi) veya her tür için satır içi bir alan oluşturucuya yönlendirir. Bu kataloğun yapay zekaya dönük yansıması, API'nin MCP `describe_page_builder` aracıdır (bkz. [MCP Sunucusu](../api/mcp.md)).
 
 Düzenleyici önizlemesi, canlı sitenin `Theme` bileşenini bağlar. Bu bileşen, kilisenin genel stillerinden `--headingFont` ve `--bodyFont` CSS değişkenlerini ayarlar. B1App bu değişkenleri `pages.css` aracılığıyla uygular, B1Admin ise bunu içe aktaramaz. Bu yüzden `ContentEditor.tsx`, bunları `.page` gövde metnine ve `h1`–`h6` başlıklarına uygulamak için `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) değerini enjekte eder. Bu olmadan önizleme, başlıkları yönetici yazı tipiyle gösteriyordu.
 
@@ -157,7 +158,7 @@ Bunların tümü ContentApi verisi üzerinde B1App tarafında yapılan işlemedi
 |------|---------------|
 | Meta açıklamaları | `pages.metaDescription` (≤300 karakter), `MetaHelper.getMetaData()` aracılığıyla oluşturucuyla işlenen her rotada Next.js `Metadata` (description ve Open Graph) içine akar. B1Admin'in sayfa ayarları, aşağıda açıklanan bir yapay zeka "Oluştur" düğmesi içerir |
 | Yönlendirmeler | `/content/redirects` adresinde yönetilen kilise başına `redirects` satırları (`content.edit`, 200 satır sınırı, normalleştirilmiş yollar). Olası bir 404'te B1App'in sayfa rotası yolu `GET /content/redirects/public/:churchId` ile çözer ve Next'in `permanentRedirect` fonksiyonu üzerinden HTTP 308 üretir. Eşleşmeyen yollar `notFound()` fonksiyonuna düşer |
-| Markalı 404 | `not-found.tsx`, genel bir hata yerine kilisenin logosu, adı ve temasıyla `BrandedNotFound` bileşenini işler. Bilinmeyen `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` ve `/volunteer/[planId]` yolları gerçek bir 404 döndürür. Bilinmeyen alt alan adları ve hatalı sayfa slug'ları da öyledir (bkz. [Web Sitesi Yönlendirme ve Çoklu Site](./websites)) |
+| Markalı 404 | `not-found.tsx`, genel bir hata yerine kilisenin logosu, adı ve temasıyla `BrandedNotFound` bileşenini işler. Bilinmeyen `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` ve `/volunteer/[planId]` yolları gerçek bir 404 döndürür. Bilinmeyen alt alan adları ve hatalı sayfa slug'ları da öyledir (bkz. [Web Sitesi Yönlendirme ve Çoklu Site](./websites.md)) |
 | Yapılandırılmış veri | Blog yazılarında `BlogPosting` JSON-LD. Her vaaz sayfasında (`/{sdSlug}/sermons/[sermonId]`) ve bir `sermons` öğesi içeren sayfalarda `VideoObject`. Oluşturucu sayfalarındaki takvim/etkinlik öğelerinden ve her `/{sdSlug}/events/[eventId]` sayfasında `Event` (bir sonraki oluşum, `image` olarak etkinlik fotoğrafı ile). `serviceTimes` öğesinden schema.org `Event` |
 | Vaaz sayfaları | Her herkese açık vaaz, tam meta verisiyle taranabilir bir sayfa alır: `/sermons/[sermonId]`. Vaazlar artık istemci tarafındaki tarayıcı öğesinin içinde kilitli değildir |
 | Analitik | `ga4MeasurementId` herkese açık ayar anahtarı (B1Admin'de yönlendirmelerin yanında yönetilir), `next/script` aracılığıyla kilise başına bir GA4 gtag enjekte eder. B1 uygulaması (`/{sdSlug}/mobile`), geçerli bir `G-` kimliği olduğunda sayfa görüntülemelerini ChurchApps'in kendi etiketinin yanında bu kimliğe de gönderir. GTM kapsayıcı kimlikleri yalnızca web sitesinde kalır. Her `gtag('config')`, `navigator.standalone` veya `(display-mode: standalone)` medya sorgusuna göre `installed` ya da `browser` değerinde bir `display_mode` taşır (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -205,7 +206,7 @@ B1Admin'deki `SectionToolbar` yeniden yazma düğmesi ve sayfa listesindeki "Sit
 | `POST /website/generateAltText` | En fazla 20 görsel URL'si üzerinde görüntü çağrısı yapar. Kısa alt metin döndürür (≤125 karakter, "photo of" önekleri kaldırılmış) |
 | `POST /website/generateMetaDescription` | Sayfanın metin içeriğinden tek bir SEO meta açıklaması (≤155 karakter) üretir. B1Admin'in sayfa ayarlarındaki Oluştur düğmesine bağlıdır |
 
-Bu uç noktaların istemleri, `AskApi/config/instructions/` altında markdown dosyalarıdır. Modelin üretildiği öğe kataloğu da bu dosyalara dahildir. İki tasarım noktası kataloğu dürüst tutar. Birincisi, istemci her istekte `availableElementTypes` gönderir. İstem yalnızca bu listedeki türleri kullanabilir. Sunucu tam kümeyi asla sabit kodlamaz. İkincisi, API'nin MCP `describe_page_builder` aracı, [MCP](../api/mcp) üzerinden çalışan yapay zeka ajanları için aynı rehberi taşır. Modeller OpenRouter üzerinden Anthropic Claude'dur: bölüm içeriği için 3.5 Haiku (gecikme nedeniyle), ana hatlar, site planları ve görüntü için 3.5 Sonnet. OpenRouter anahtarı yapılandırılmadığında bir OpenAI yedeği kullanılır.
+Bu uç noktaların istemleri, `AskApi/config/instructions/` altında markdown dosyalarıdır. Modelin üretildiği öğe kataloğu da bu dosyalara dahildir. İki tasarım noktası kataloğu dürüst tutar. Birincisi, istemci her istekte `availableElementTypes` gönderir. İstem yalnızca bu listedeki türleri kullanabilir. Sunucu tam kümeyi asla sabit kodlamaz. İkincisi, API'nin MCP `describe_page_builder` aracı, [MCP](../api/mcp.md) üzerinden çalışan yapay zeka ajanları için aynı rehberi taşır. Modeller OpenRouter üzerinden Anthropic Claude'dur: bölüm içeriği için 3.5 Haiku (gecikme nedeniyle), ana hatlar, site planları ve görüntü için 3.5 Sonnet. OpenRouter anahtarı yapılandırılmadığında bir OpenAI yedeği kullanılır.
 
 ## Konuşmalı formlar
 
@@ -230,8 +231,8 @@ B1App'in herkese açık işleme yolu, kilise etiketli getirmeleri önbelleğe al
 
 ## İlgili sayfalar
 
-- [Web Sitesi Yönlendirme ve Çoklu Site](./websites): Bir isteğin bir kilise veya siteye nasıl çözüldüğü ve özel alan adlarının nasıl yönlendirildiği
-- [İçerik Uç Noktaları](../api/endpoints/content): Sayfalar, bölümler, öğeler, bloklar, yazılar, yönlendirmeler ve ayarlar için tam REST yüzeyi
-- [AppHelper](../shared-libraries/app-helper): Işleyicileri, kayıt defterini, ayırıcıları ve widget'ları içeren npm paketi
-- [MCP Sunucusu](../api/mcp): `describe_page_builder` rehber aracı dahil
+- [Web Sitesi Yönlendirme ve Çoklu Site](./websites.md): Bir isteğin bir kilise veya siteye nasıl çözüldüğü ve özel alan adlarının nasıl yönlendirildiği
+- [İçerik Uç Noktaları](../api/endpoints/content.md): Sayfalar, bölümler, öğeler, bloklar, yazılar, yönlendirmeler ve ayarlar için tam REST yüzeyi
+- [AppHelper](../shared-libraries/app-helper.md): Işleyicileri, kayıt defterini, ayırıcıları ve widget'ları içeren npm paketi
+- [MCP Sunucusu](../api/mcp.md): `describe_page_builder` rehber aracı dahil
 - [Sayfa Düzenleyici (son kullanıcı)](/docs/b1-admin/website/page-editor): Personele yönelik düzenleyici belgeleri

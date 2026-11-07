@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "B1 Mobile'da Profil ve Atanan Kartlar"
+sidebar_label: "Profil"
+description: "B1 Mobile profilinizde adınızı, iletişim bilgilerinizi, hanenizi ve gizlilik görünürlüğünü yönetin; size atanan iş akışı kartlarını ve görevleri de işleyin."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Profil ekranı birkaç sekmeye ayrılmıştır:
 
 ### Hane Halkı
 
-**Hane Halkı** sekmesi, aile üyelerinizi ve hane halkınızdaki rollerini gösterir. Bu bilgiler, tüm ailenizi aynı anda [check-in](../checkin/) yapabileceğiniz gibi özellikler için kullanılır.
+**Hane Halkı** sekmesi, aile üyelerinizi ve hane halkınızdaki rollerini gösterir. Bu bilgiler, tüm ailenizi aynı anda [check-in](../checkin/index.md) yapabileceğiniz gibi özellikler için kullanılır.
 
 ### Görünürlük
 
@@ -55,6 +57,6 @@ Basit bir görevin kimden geldiğini, kimi ilgilendirdiğini ve notlarını gör
 
 ## Sonraki Adımlar
 
-- [Profilinizi Düzenleme](./editing-profile) -- Adınızı, iletişim bilgilerinizi ve fotoğrafınızı güncelleyin
-- [Hane Halkı](./household) -- Aile üyelerinizi görüntüleyin ve yönetin
-- [Gizlilik Ayarları](./privacy-settings) -- Diğerlerinin sizin hakkınızda neleri görebileceğini kontrol edin
+- [Profilinizi Düzenleme](./editing-profile.md) -- Adınızı, iletişim bilgilerinizi ve fotoğrafınızı güncelleyin
+- [Hane Halkı](./household.md) -- Aile üyelerinizi görüntüleyin ve yönetin
+- [Gizlilik Ayarları](./privacy-settings.md) -- Diğerlerinin sizin hakkınızda neleri görebileceğini kontrol edin

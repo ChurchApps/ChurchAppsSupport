@@ -1,5 +1,7 @@
 ---
-title: "Canlı Yayın"
+title: "B1.church'te Canlı Yayınları İzleme"
+sidebar_label: "Canlı Yayın"
+description: "Kilisenizin canlı ibadetlerini B1.church Yayın sayfasında izleyin ve yayınla birlikte sohbete katılın; oturum açmanız gerekmez."
 ---
 
 # Canlı Yayın

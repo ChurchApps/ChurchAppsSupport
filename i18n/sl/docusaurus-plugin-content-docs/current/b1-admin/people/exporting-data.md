@@ -1,5 +1,6 @@
 ---
 title: "Izvoz podatkov"
+description: "Izvozite osebe v CSV, sezname članov skupin ali celotno varnostno kopijo baze B1 iz B1 Admin ter poglejte, kaj vsebuje arhiv B1 Export Zip."
 ---
 
 # Izvoz podatkov

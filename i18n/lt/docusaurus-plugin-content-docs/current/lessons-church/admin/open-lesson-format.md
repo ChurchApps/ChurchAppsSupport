@@ -1,5 +1,6 @@
 ---
 title: "Atvirojo pamokos formatas"
+description: "Trečiųjų šalių mokymo programų teikėjams skirta Lessons.church formato specifikacija: teikėjo medžio ir vietų srauto JSON laukai, veiksmai ir medijos failai."
 ---
 
 # Atvirojo pamokos formatas

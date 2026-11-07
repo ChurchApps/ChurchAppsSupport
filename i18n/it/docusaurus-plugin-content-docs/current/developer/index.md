@@ -1,5 +1,6 @@
 ---
 title: "Documentazione per sviluppatori"
+description: "Orientarsi nella documentazione per sviluppatori di ChurchApps: setup locale, guide per API e web app, librerie condivise, build mobile e deployment."
 ---
 
 # Documentazione per sviluppatori
@@ -24,16 +25,16 @@ Caratteristiche principali:
 
 ## Cosa copre questa sezione
 
-- **[Configurazione](setup/)**: ambiente di sviluppo locale, prerequisiti e configurazione
-  - [Prerequisiti](setup/prerequisites): strumenti e software richiesti
-  - [Panoramica dei progetti](setup/project-overview): tutti i progetti in sintesi
-  - [Variabili d'ambiente](setup/environment-variables): configurazione dei file `.env`
-- **[API](api/)**: configurazione locale dell'API principale, inizializzazione del database e struttura dei moduli
-- **[App web](web-apps/)**: avvio locale di B1Admin, B1App e LessonsApp
-- **[App mobili](mobile/)**: creazione di B1Mobile e delle altre app Expo
-- **[Librerie condivise](shared-libraries/)**: lavorare con Helpers, ApiHelper e AppHelper
-- **[Distribuzione](deployment/)**: distribuzione di API, app web e app mobili
-- **[Provider di contenuti FreePlay](freeplay-content-provider)**: integra la tua libreria di lezioni con FreePlay
+- **[Configurazione](./setup/index.md)**: ambiente di sviluppo locale, prerequisiti e configurazione
+  - [Prerequisiti](./setup/prerequisites.md): strumenti e software richiesti
+  - [Panoramica dei progetti](./setup/project-overview.md): tutti i progetti in sintesi
+  - [Variabili d'ambiente](./setup/environment-variables.md): configurazione dei file `.env`
+- **[API](./api/index.md)**: configurazione locale dell'API principale, inizializzazione del database e struttura dei moduli
+- **[App web](./web-apps/index.md)**: avvio locale di B1Admin, B1App e LessonsApp
+- **[App mobili](./mobile/index.md)**: creazione di B1Mobile e delle altre app Expo
+- **[Librerie condivise](./shared-libraries/index.md)**: lavorare con Helpers, ApiHelper e AppHelper
+- **[Distribuzione](./deployment/index.md)**: distribuzione di API, app web e app mobili
+- **[Provider di contenuti FreePlay](./freeplay-content-provider.md)**: integra la tua libreria di lezioni con FreePlay
 
 ## Comunità e risorse
 

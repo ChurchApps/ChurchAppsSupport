@@ -1,5 +1,6 @@
 ---
 title: "Webhookit"
+description: "Ota käyttöön reaaliaikaiset webhookit B1 Administa: rekisteröi päätepisteet, valitse tapahtumat, vahvista HMAC-allekirjoitukset, käsittele uudelleenyritykset ja lähetä epäonnistuneet tiedot uudelleen."
 ---
 
 # Webhookit
@@ -33,7 +34,7 @@ Siirry kohtaan **Asetukset → Kehittäjä → Webhookit → Uusi webhook**. Ann
 
 ### API:n kautta
 
-Kaikki päätepisteet sijaitsevat Membership-moduulin perusreitin `/membership/webhooks` alla. Ne vaativat joko JWT-tunnisteen seurakunnan ylläpitäjältä, jolla on oikeus `Settings / Edit`, **tai [API-avaimen](./api-keys), joka on luotu `settings:write`-laajuudella**. Samat reitit hyväksyvät molemmat. Tämän ansiosta Zapier ja Make voivat rekisteröidä webhookit seurakunnan puolesta, kun Zap tai scenario otetaan käyttöön.
+Kaikki päätepisteet sijaitsevat Membership-moduulin perusreitin `/membership/webhooks` alla. Ne vaativat joko JWT-tunnisteen seurakunnan ylläpitäjältä, jolla on oikeus `Settings / Edit`, **tai [API-avaimen](./api-keys.md), joka on luotu `settings:write`-laajuudella**. Samat reitit hyväksyvät molemmat. Tämän ansiosta Zapier ja Make voivat rekisteröidä webhookit seurakunnan puolesta, kun Zap tai scenario otetaan käyttöön.
 
 ```http
 POST /membership/webhooks

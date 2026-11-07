@@ -1,5 +1,6 @@
 ---
 title: "Giving-Architektur"
+description: "Entwicklerleitfaden zu ChurchApps-Giving: wie B1 Admin und B1.church Spenden über die Gateways Stripe, PayPal, Kingdom Funding oder Paystack senden."
 ---
 
 # Giving-Architektur
@@ -175,6 +176,6 @@ Der Belastungs- und der Webhook-Pfad schreiben dieselben Zeilen `donations` / `f
 
 ## Verwandte Seiten
 
-- [Giving-Endpunkte](../api/endpoints/giving) — vollständige REST-Schnittstelle für Spenden, Fonds, Stapel, Gateways, Abonnements, Zahlungsmethoden und Webhooks
-- [AppHelper](../shared-libraries/app-helper) — das npm-Paket, das die Registry der Zahlungsanbieter und die Spendenkomponenten enthält
-- [Modulstruktur](../api/module-structure) — wie das GivingApi-Modul serverseitig organisiert ist
+- [Giving-Endpunkte](../api/endpoints/giving.md) — vollständige REST-Schnittstelle für Spenden, Fonds, Stapel, Gateways, Abonnements, Zahlungsmethoden und Webhooks
+- [AppHelper](../shared-libraries/app-helper.md) — das npm-Paket, das die Registry der Zahlungsanbieter und die Spendenkomponenten enthält
+- [Modulstruktur](../api/module-structure.md) — wie das GivingApi-Modul serverseitig organisiert ist

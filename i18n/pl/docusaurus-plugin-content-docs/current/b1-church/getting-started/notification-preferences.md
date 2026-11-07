@@ -1,5 +1,6 @@
 ---
 title: "Ustawienia powiadomień"
+description: "Ustaw kanały powiadomień, częstotliwość e-maili, ciche godziny i rezygnację z SMS-ów dla każdego typu powiadomień w B1 Admin i aplikacji B1 z jednego ekranu."
 ---
 
 # Ustawienia powiadomień
@@ -60,6 +61,6 @@ Powiadomienia pilne -- na przykład alert bezpieczeństwa lub wiadomość o bezp
 
 ## Powiązane
 
-- [Zapisy na wolontariat](../serving/volunteer-signup) -- Przypomnienia o służbie i odpowiedzi na prośby dotyczące grafiku
-- [Zapisy na wydarzenia](../events/registering) -- Zapisz się na wydarzenia, które wysyłają przypomnienia
-- [Instalacja aplikacji](installing-pwa) -- Dodaj B1 do swojego urządzenia, aby otrzymywać powiadomienia push
+- [Zapisy na wolontariat](../serving/volunteer-signup.md) -- Przypomnienia o służbie i odpowiedzi na prośby dotyczące grafiku
+- [Zapisy na wydarzenia](../events/registering.md) -- Zapisz się na wydarzenia, które wysyłają przypomnienia
+- [Instalacja aplikacji](./installing-pwa.md) -- Dodaj B1 do swojego urządzenia, aby otrzymywać powiadomienia push

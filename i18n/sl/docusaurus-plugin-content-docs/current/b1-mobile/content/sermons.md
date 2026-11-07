@@ -1,5 +1,7 @@
 ---
-title: "Pridige"
+title: "Ogled pridig v B1 Mobile"
+sidebar_label: "Pridige"
+description: "Brskajte, iščite in gledajte posnete pridige ter serije v aplikaciji B1 Mobile, vključno z načinom, kako ujeti odštevanje do živega prenosa."
 ---
 
 # Pridige
@@ -13,7 +15,7 @@ Zaslon Pridige vam omogoča brskanje in gledanje posnetih pridig iz vaše cerkve
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 - Vaša cerkev mora v svojem skrbniškem portalu imeti nastavljeno vsebino pridig
 
 </div>
@@ -29,7 +31,7 @@ Na vrhu zaslona je najnovejša pridiga prikazana kot izpostavljena kartica, kar 
 
 ## Odštevanje do prenosa v živo
 
-Ko je [prenos v živo](./live-streaming) predviden v naslednjih 24 urah, se na zaslonu Pridige prikaže časovnik za odštevanje. Tako veste, kdaj se bo začela naslednja bogoslužje, in lahko načrtujete ogled v živo.
+Ko je [prenos v živo](./live-streaming.md) predviden v naslednjih 24 urah, se na zaslonu Pridige prikaže časovnik za odštevanje. Tako veste, kdaj se bo začela naslednja bogoslužje, in lahko načrtujete ogled v živo.
 
 ## Ogled pridige
 
@@ -51,7 +53,7 @@ Vsak vnos pridige lahko prikazuje:
 - **Sličica** -- Predogled slike za pridigo
 
 :::tip
-Če na zaslonu Pridige vidite odštevanje, ga tapnite, da neposredno preskočite na [prenos v živo](./live-streaming), ko se začne.
+Če na zaslonu Pridige vidite odštevanje, ga tapnite, da neposredno preskočite na [prenos v živo](./live-streaming.md), ko se začne.
 :::
 
 ## Razpoložljivost

@@ -1,5 +1,7 @@
 ---
-title: "Ihr Profil bearbeiten"
+title: "Profil im B1.church-Mitgliederportal bearbeiten"
+sidebar_label: "Ihr Profil bearbeiten"
+description: "Kontaktdaten, Haushaltsmitglieder, Anmelde-E-Mail und Passwort sowie Datenschutzeinstellungen im B1.church-Mitgliederportal aktualisieren."
 ---
 
 # Ihr Profil bearbeiten

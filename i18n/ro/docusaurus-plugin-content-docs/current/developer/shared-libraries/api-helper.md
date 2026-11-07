@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referință pentru pachetul @churchapps/apihelper din spațiul Packages: build local, testare cu portalul Yarn și publicare prin changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Pachetul `@churchapps/apihelper` oferă utilitare pentru server destinate tuturo
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **Node.js** și **Git** -- vezi [Cerințe preliminare](../setup/prerequisites)
+- Instalați **Node.js** și **Git** -- vezi [Cerințe preliminare](../setup/prerequisites.md)
 - Familiarizați-vă cu configurarea și fluxul de lansare al spațiului de lucru [Packages](./index.md)
-- Acest pachet depinde de [`@churchapps/helpers`](./helpers) (ca dependență de tip peer) și îl reexportă
+- Acest pachet depinde de [`@churchapps/helpers`](./helpers.md) (ca dependență de tip peer) și îl reexportă
 
 </div>
 
@@ -65,6 +66,6 @@ Acest pachet este o dependență a fiecărei API-uri ChurchApps -- Api-ul princi
 
 ## Articole conexe
 
-- **[Helpers](./helpers)** -- Pachetul de utilitare de bază de care depinde acest pachet
-- **[Structura modulelor](../api/module-structure)** -- Cum sunt folosite controlerele și middleware-ul de autentificare în modulele API
-- **[Configurarea locală a API-ului](../api/local-setup)** -- Configurarea API-ului pentru dezvoltare locală
+- **[Helpers](./helpers.md)** -- Pachetul de utilitare de bază de care depinde acest pachet
+- **[Structura modulelor](../api/module-structure.md)** -- Cum sunt folosite controlerele și middleware-ul de autentificare în modulele API
+- **[Configurarea locală a API-ului](../api/local-setup.md)** -- Configurarea API-ului pentru dezvoltare locală

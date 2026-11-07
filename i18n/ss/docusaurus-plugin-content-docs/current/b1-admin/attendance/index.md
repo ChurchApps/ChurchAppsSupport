@@ -1,5 +1,6 @@
 ---
 title: "Kubakhona"
+description: "Bheka kutfola kwebantfu ngesonto, emakamelo netivakashi ku-B1 Admin, bese usetfula emabandla, tikhatsi, tinani tebantfu nekuzibhalisa ekhiyosikini."
 ---
 
 # Kubakhona

@@ -1,5 +1,6 @@
 ---
 title: "Lastna domena"
+description: "V B1 Admin usmerite lastno domeno, na primer www.vasacerkev.org, na vašo spletno stran B1 tako, da nastavite zapise DNS in domeno dodate v Nastavitvah."
 ---
 
 # Lastna domena

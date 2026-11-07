@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Installera webbappen B1App för medlemmar lokalt med Next.js 22+, ställ in API-slutpunkter i .env och kör utvecklingsservern på port 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App är den publika medlemsappen för kyrkor, byggd med Next.js. Den erbjuder 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera **Node.js 22+** och **Git** -- se [Förutsättningar](../setup/prerequisites)
-- Konfigurera ditt API-mål (demo eller lokalt) -- se [Miljövariabler](../setup/environment-variables)
+- Installera **Node.js 22+** och **Git** -- se [Förutsättningar](../setup/prerequisites.md)
+- Konfigurera ditt API-mål (demo eller lokalt) -- se [Miljövariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Produktionsbyggen driftsätts till **S3 + CloudFront**:
 3. En CloudFront-invalidering utlöses för att servera den nya versionen
 
 :::tip
-För detaljerade driftsättningsinstruktioner, se guiden [Driftsättning av webbappar](../deployment/web-apps).
+För detaljerade driftsättningsinstruktioner, se guiden [Driftsättning av webbappar](../deployment/web-apps.md).
 :::

@@ -1,5 +1,7 @@
 ---
-title: "Self Check-In"
+title: "Self Check-In sa B1.church Member Portal"
+sidebar_label: "Self Check-In"
+description: "Mag-check in ang sarili at household sa serbisyo mula sa B1.church member portal, pumili ng oras ng serbisyo at grupo sa ilang mabilis na hakbang."
 ---
 
 # Self Check-In
@@ -45,7 +47,7 @@ Kapag napili mo na ang mga grupo para sa lahat ng dumadalo, pindutin ang button 
 
 Makikita mo ang kumpirmasyon na tapos na ang iyong check-in at naitala na ang iyong attendance. Pagkaraan ng sandali, babalik ang pahina sa listahan ng serbisyo, handa para sa susunod na check-in.
 
-Kung nag-iimprenta ng name tag ang iyong simbahan sa isang check-in station, makikita mo sa halip ang **You're checked in!** kasama ang QR code at security code. Ipakita ang code sa check-in station para ma-print ang iyong name tag, pagkatapos ay pindutin ang **Done**. Sa B1 Checkin kiosk, pindutin ang **Scan code** at ilapit ang QR code sa camera -- tingnan ang [Printing Labels for a Phone Check-In](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Kung nag-iimprenta ng name tag ang iyong simbahan sa isang check-in station, makikita mo sa halip ang **You're checked in!** kasama ang QR code at security code. Ipakita ang code sa check-in station para ma-print ang iyong name tag, pagkatapos ay pindutin ang **Done**. Sa B1 Checkin kiosk, pindutin ang **Scan code** at ilapit ang QR code sa camera -- tingnan ang [Printing Labels for a Phone Check-In](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Kung na-check in na ang iyong household para sa serbisyong pipiliin mo, may lalabas na link na **Show check-in code** sa tabi ng heading na **Who's here**. I-tap ito para maibalik ang QR code at security code -- halimbawa, kung naisara mo ang pahina bago ka nakarating sa check-in station.
 

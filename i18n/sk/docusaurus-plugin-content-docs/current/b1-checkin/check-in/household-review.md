@@ -1,5 +1,6 @@
 ---
 title: "Pregled vašeg domaćinstva"
+description: "Skontrolujte domácnosť v B1 Checkin po výbere osoby, priraďte skupiny pre každý čas bohoslužby a pred prihlásením označte hostí alebo dobrovoľníkov."
 ---
 
 # Pregled vašeg domaćinstva
@@ -13,8 +14,8 @@ Nakon što izaberete osobu iz rezultata pretrage, aplikacija učitava cijelo va�
 <div class="prereqs">
 <h4>Prije nego počnete</h4>
 
-- [Odaberite uslugu](./selecting-service) na ekranu usluga
-- [Potražite člana](./looking-up-members) i odaberite ga iz rezultata pretrage
+- [Odaberite uslugu](./selecting-service.md) na ekranu usluga
+- [Potražite člana](./looking-up-members.md) i odaberite ga iz rezultata pretrage
 
 </div>
 
@@ -35,9 +36,9 @@ Dodirnite karticu člana da je proširite. Kada je proširena, vidjet ćete reda
 - **Grupe koje se nude** u tom terminu usluge, navedene ispod naziva (na primjer, "Jaslice, Predškolska grupa, Biblijski razred za odrasle"), kako biste prije odabira mogli vidjeti koji su razredi dostupni
 - **Gumb** koji prikazuje trenutno dodijeljenu grupu ili "Odaberi grupu" ako grupa još nije dodijeljena
 
-Ako termin usluge ima [raspored prijave](../../b1-admin/attendance/setup#setting-a-check-in-schedule) i njegov je prozor trenutno zatvoren, redak umjesto gumba prikazuje **Zatvoreno** -- uz sljedeće vrijeme otvaranja kada ono postoji, na primjer **Zatvoreno · otvara se ned 9:30**. Ako je osoba već prijavljena u taj termin usluge, redak umjesto toga prikazuje njezinu grupu s kvačicom (na primjer, **Soba za djecu 1 · Prijavljen**), tako da možete vidjeti gdje se nalazi, iako je prozor zatvoren.
+Ako termin usluge ima [raspored prijave](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) i njegov je prozor trenutno zatvoren, redak umjesto gumba prikazuje **Zatvoreno** -- uz sljedeće vrijeme otvaranja kada ono postoji, na primjer **Zatvoreno · otvara se ned 9:30**. Ako je osoba već prijavljena u taj termin usluge, redak umjesto toga prikazuje njezinu grupu s kvačicom (na primjer, **Soba za djecu 1 · Prijavljen**), tako da možete vidjeti gdje se nalazi, iako je prozor zatvoren.
 
-Dodirnite gumb grupe da biste otišli na [ekran za odabir grupe](./group-assignment) gdje možete odabrati ili promijeniti grupu za tu osobu i termin usluge.
+Dodirnite gumb grupe da biste otišli na [ekran za odabir grupe](./group-assignment.md) gdje možete odabrati ili promijeniti grupu za tu osobu i termin usluge.
 
 Prošireni karticu prikazuje i oznake **Član**, **Gost** i **Volonter**. Dodirnite jednu da odredite kako se ova osoba prijavljuje -- Član je zadana opcija. Vrsta je važna za dječje sobe: volonteri se ubrajaju u omjer volontera i djece u sobi, a gosti se ubrajaju u svaki kapacitet za goste koji je vaša crkva postavila.
 
@@ -51,9 +52,9 @@ Nije potrebno dodijeliti svakog člana obitelji grupi. Odrasli koji sudjeluju na
 
 S ekrana za pregled domaćinstva imate tri mogućnosti:
 
-- **Proširite člana** i dodirnite gumb terminа usluge da biste [dodijelili ili promijenili grupu](./group-assignment).
-- **Dodirnite gumb Dodaj gosta** ispod popisa članova da [dodate gosta](./adding-guests) u svoje domaćinstvo.
-- **Dodirnite gumb Prijava** na dnu ekrana da [dovršite prijavu](./completing-checkin) za sve članove domaćinstva.
+- **Proširite člana** i dodirnite gumb terminа usluge da biste [dodijelili ili promijenili grupu](./group-assignment.md).
+- **Dodirnite gumb Dodaj gosta** ispod popisa članova da [dodate gosta](./adding-guests.md) u svoje domaćinstvo.
+- **Dodirnite gumb Prijava** na dnu ekrana da [dovršite prijavu](./completing-checkin.md) za sve članove domaćinstva.
 
 :::info
 Sve dodjele grupa iz prethodne prijave na istu uslugu automatski se unaprijed učitavaju. Ako vaša djeca svaki tjedan pohađaju iste grupe, možda ne morate ništa mijenjati -- samo pregledajte i prijavite.
@@ -61,6 +62,6 @@ Sve dodjele grupa iz prethodne prijave na istu uslugu automatski se unaprijed u�
 
 ## Sljedeći koraci
 
-- [Dodijelite grupe](./group-assignment) članovima obitelji koji se trebaju prijaviti u određeni razred ili program.
-- [Dodajte gosta](./adding-guests) ako netko dolazi s vašom obitelji.
-- [Dovršite prijavu](./completing-checkin) kada dodjele za sve izgledaju ispravno.
+- [Dodijelite grupe](./group-assignment.md) članovima obitelji koji se trebaju prijaviti u određeni razred ili program.
+- [Dodajte gosta](./adding-guests.md) ako netko dolazi s vašom obitelji.
+- [Dovršite prijavu](./completing-checkin.md) kada dodjele za sve izgledaju ispravno.

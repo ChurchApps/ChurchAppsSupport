@@ -1,5 +1,6 @@
 ---
 title: "Obavestila"
+description: "Nastavite potisna opozorila za aplikacijo B1 Mobile, nato pa si oglejte, odprite in počistite obvestila svoje cerkve za sporočila, skupine in služenje."
 ---
 
 # Obavestila
@@ -13,7 +14,7 @@ B1 Mobile uporablja potisna obvestila, da vas obveščamo o dogajanju v vaši ce
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 - V nastavitvah naprave dovolite obvestila za B1 Mobile
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile uporablja potisna obvestila, da vas obveščamo o dogajanju v vaši ce
 
 Obvestila lahko zajemajo različne dejavnosti, med drugim:
 
-- **Sporočila** -- Ko vam nekdo pošlje [zasebno sporočilo](./messaging).
-- **Dejavnost skupin** -- Posodobitve, objave in pogovori v [skupinah](../groups/), katerih član ste.
+- **Sporočila** -- Ko vam nekdo pošlje [zasebno sporočilo](./messaging.md).
+- **Dejavnost skupin** -- Posodobitve, objave in pogovori v [skupinah](../groups/index.md), katerih član ste.
 - **Dodelitve za služenje** -- Ko ste dodeljeni [načrtu](../serving/viewing-plans.md) ali se spremeni stanje vaše dodelitve.
 - **Druge posodobitve** -- Splošne objave in dejavnosti, ki so pomembne za vas.
 

@@ -1,5 +1,6 @@
 ---
 title: "Import în masă"
+description: "Importă în masă videoclipuri cu predici de pe un canal YouTube sau un cont Vimeo în B1 Admin, apoi sortează-le într-o listă de redare."
 ---
 
 # Import în masă
@@ -14,7 +15,7 @@ Pagina Import în masă vă permite să populați rapid biblioteca de predici im
 <h4>Înainte de a începe</h4>
 
 - Aveți nevoie de permisiunea **contentApi.streamingServices.edit**. Consultați [Roluri și permisiuni](../settings/roles-permissions.md) dacă nu aveți acces.
-- Creați cel puțin o [listă de redare](playlists) în care să importați predicile
+- Creați cel puțin o [listă de redare](./playlists.md) în care să importați predicile
 - Pregătiți ID-ul canalului dvs. YouTube sau informațiile contului Vimeo
 
 </div>
@@ -39,7 +40,7 @@ Puteți reveni și puteți schimba sursa oricând, dacă aveți videoclipuri pe 
 2. Faceți clic pe **Create First Playlist** și completați numele, descrierea, data publicării și miniatura.
 3. Faceți clic pe **Save`**, apoi reveniți la Import în masă făcând clic pe **Add Sermon** și alegând **Bulk Import**.
 
-Consultați [Liste de redare](playlists) pentru instrucțiuni detaliate despre crearea și gestionarea listelor de redare.
+Consultați [Liste de redare](./playlists.md) pentru instrucțiuni detaliate despre crearea și gestionarea listelor de redare.
 
 ## Importarea videoclipurilor
 
@@ -54,11 +55,11 @@ Consultați [Liste de redare](playlists) pentru instrucțiuni detaliate despre c
 Videoclipurile dvs. vor fi importate împreună cu toate detaliile lor, inclusiv titluri, descrieri, date și miniaturi. Caracterele speciale din titlurile și descrierile YouTube, cum ar fi `&`, apostrofurile și ghilimelele, sunt păstrate așa cum au fost scrise, nu sub forma unor coduri precum `&amp;`.
 
 :::info
-Importul în masă este ideal pentru început, atunci când migrați de pe altă platformă. Pentru adăugarea ulterioară a predicilor individuale, utilizați pagina [Gestionarea predicilor](managing-sermons).
+Importul în masă este ideal pentru început, atunci când migrați de pe altă platformă. Pentru adăugarea ulterioară a predicilor individuale, utilizați pagina [Gestionarea predicilor](./managing-sermons.md).
 :::
 
 ## Pașii următori
 
-- [Gestionarea predicilor](managing-sermons) -- Editați detaliile predicilor importate
-- [Liste de redare](playlists) -- Creați și gestionați serii de predici
-- [Transmisiuni live](live-streaming) -- Configurați transmisiunea live pentru serviciile dvs.
+- [Gestionarea predicilor](./managing-sermons.md) -- Editați detaliile predicilor importate
+- [Liste de redare](./playlists.md) -- Creați și gestionați serii de predici
+- [Transmisiuni live](./live-streaming.md) -- Configurați transmisiunea live pentru serviciile dvs.

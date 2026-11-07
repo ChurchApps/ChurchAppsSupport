@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Obsoleto)"
+description: "Explica que la aplicación nativa B1 Mobile está obsoleta y que los miembros y administradores deben usar la PWA de B1.church, con páginas heredadas conservadas como referencia."
 ---
 
 # B1 Mobile (Obsoleto)
@@ -40,16 +41,16 @@ B1 Mobile admitía notificaciones push para que no te perdieras una actualizaci�
 
 ## Aprende Más
 
-- [Getting Started](./getting-started/) -- Instala la aplicación, crea una cuenta y selecciona tu iglesia.
-- [Dashboard](./dashboard/) -- Comprende tu pantalla de inicio personalizada.
-- [Groups](./groups/) -- Mantente conectado con los grupos de tu iglesia.
-- [Giving](./giving/) -- Haz donaciones desde tu teléfono.
-- [Events](./events/) -- Examina y regístrate para los próximos eventos de la iglesia.
-- [Check-In](./checkin/) -- Regístrate para servicios y eventos.
-- [Serving](./serving/) -- Ve tus planes de servicio, asignaciones y oportunidades de voluntariado.
-- [Community](./community/) -- Examina el directorio de miembros y envía mensajes.
-- [Content](./content/) -- Sermones, Biblia, versículo del día y lecciones (pantalla de lecciones obsoleta; consulta [FreePlay](/docs/freeplay/)).
-- [Profile](./profile/) -- Administra tu perfil y configuración de cuenta.
+- [Getting Started](./getting-started/index.md) -- Instala la aplicación, crea una cuenta y selecciona tu iglesia.
+- [Dashboard](./dashboard/index.md) -- Comprende tu pantalla de inicio personalizada.
+- [Groups](./groups/index.md) -- Mantente conectado con los grupos de tu iglesia.
+- [Giving](./giving/index.md) -- Haz donaciones desde tu teléfono.
+- [Events](./events/index.md) -- Examina y regístrate para los próximos eventos de la iglesia.
+- [Check-In](./checkin/index.md) -- Regístrate para servicios y eventos.
+- [Serving](./serving/index.md) -- Ve tus planes de servicio, asignaciones y oportunidades de voluntariado.
+- [Community](./community/index.md) -- Examina el directorio de miembros y envía mensajes.
+- [Content](./content/index.md) -- Sermones, Biblia, versículo del día y lecciones (pantalla de lecciones obsoleta; consulta [FreePlay](/docs/freeplay/)).
+- [Profile](./profile/index.md) -- Administra tu perfil y configuración de cuenta.
 
 :::info
 B1 Mobile ha sido reemplazado por la [PWA de B1.church](../b1-church/getting-started/installing-pwa.md). Las nuevas implementaciones deben usar la PWA; la aplicación nativa ya no se está actualizando.

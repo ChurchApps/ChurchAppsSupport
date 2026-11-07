@@ -1,5 +1,6 @@
 ---
 title: "Digital Signage"
+description: "Send lesson content to a lobby or hallway TV in B1 Admin with a digital signage feed URL that always shows the current plan, or use FreePlay TVs."
 ---
 
 # Digital Signage
@@ -14,7 +15,7 @@ Send your lesson content to a lobby or hallway TV using a digital signage feed. 
 <h4>Before You Begin</h4>
 
 - Set up a [plan type](./plans.md) with [Lessons.church](../../b1-church/content/lessons.md) or other lesson content scheduled
-- Have a [SignPresenter](https://www.signpresenter.com) account and a device set up to display it, or a TV running [FreePlay](../../freeplay/)
+- Have a [SignPresenter](https://www.signpresenter.com) account and a device set up to display it, or a TV running [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ For step-by-step setup inside SignPresenter, see [SignPresenter's Lessons.church
 
 ## Using FreePlay TVs Instead
 
-If your screens run [FreePlay](../../freeplay/), you don't need the feed URL. The **Digital Signage Feed** dialog links to **admin.freeplay.church/calendar**, where you can schedule this plan type on your FreePlay TVs:
+If your screens run [FreePlay](../../freeplay/index.md), you don't need the feed URL. The **Digital Signage Feed** dialog links to **admin.freeplay.church/calendar**, where you can schedule this plan type on your FreePlay TVs:
 
 1. Click the **admin.freeplay.church/calendar** link in the dialog. FreePlay Admin uses the same login as B1 Admin.
 2. Pick the screen group for your TVs and click **Add schedule**.
 3. Under **Play**, choose your plan type from **Service plans**. It's marked **(current plan)**.
 4. Set the days and times, then click **Save**.
 
-The TVs play whatever plan is current for that plan type each week, at the times you set. This works with Go Curriculum lessons too, including plans you've customized. FreePlay signs in with the Go Curriculum account linked to the ministry under **Content Providers** (see [Scheduling Lessons](./scheduling-lessons.md)), or the church's Go Curriculum connection if the ministry has none. See [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar) for all the options, and [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen) to add a TV.
+The TVs play whatever plan is current for that plan type each week, at the times you set. This works with Go Curriculum lessons too, including plans you've customized. FreePlay signs in with the Go Curriculum account linked to the ministry under **Content Providers** (see [Scheduling Lessons](./scheduling-lessons.md)), or the church's Go Curriculum connection if the ministry has none. See [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) for all the options, and [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) to add a TV.
 
 :::note
 The feed URL doesn't include Go Curriculum media, because that content needs your church's Go Curriculum login. To show a Go Curriculum lesson on a lobby or classroom TV, use FreePlay.
@@ -53,4 +54,4 @@ The feed URL doesn't include Go Curriculum media, because that content needs you
 
 - Manage the plans that feed this signage display on the [Plans](./plans.md) page
 - Schedule content with [Lessons.church](./scheduling-lessons.md)
-- Put FreePlay TVs on a calendar with [Scheduled Mode](../../freeplay/scheduled-mode/)
+- Put FreePlay TVs on a calendar with [Scheduled Mode](../../freeplay/scheduled-mode/index.md)

@@ -1,5 +1,7 @@
 ---
-title: "체크인"
+title: "B1.church 교인 포털의 체크인"
+sidebar_label: "체크인"
+description: "B1.church 교인 포털에서 키오스크를 거치지 않고 예배에 본인과 가족을 체크인하며 그룹을 배정하세요."
 ---
 
 # 체크인

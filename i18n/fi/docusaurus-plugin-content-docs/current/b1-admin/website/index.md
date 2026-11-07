@@ -1,5 +1,6 @@
 ---
 title: "Verkkosivusto"
+description: "Yleiskatsaus B1 Adminin verkkosivurakentajaan: sivut, blogi, lohkot, ulkoasu, tiedostot ja kalenterit sekä linkit asennus- ja muokkausohjeisiin."
 ---
 
 # Verkkosivusto
@@ -22,7 +23,7 @@ Navigaatiolinkkisi näytetään puurakenteessa. Voit järjestellä linkit uudell
 
 ### Blogi
 
-Julkaise uutisia, päivityksiä ja hartauksia blogikirjoituksina sivustosi osoitteessa `/blog`. Blogiin on myös RSS-syöte. Katso opas: [Blogi](blog).
+Julkaise uutisia, päivityksiä ja hartauksia blogikirjoituksina sivustosi osoitteessa `/blog`. Blogiin on myös RSS-syöte. Katso opas: [Blogi](./blog.md).
 
 ### Lohkot
 
@@ -30,24 +31,24 @@ Rakenna uudelleen käytettäviä sisältökomponentteja, joita voit sijoittaa us
 
 ### Ulkoasu
 
-Mukauta verkkosivustosi teemaa, värejä, fontteja, logoa ja välistyksiä. Voit ottaa käyttöön valmiita tyyliteemoja nopeaa aloitusta varten tai hienosäätää jokaista yksityiskohtaa väripaletin muokkaimella, typografia-asetuksilla ja mukautetulla CSS:llä. Katso täydelliset tiedot oppaasta: [Ulkoasu](appearance).
+Mukauta verkkosivustosi teemaa, värejä, fontteja, logoa ja välistyksiä. Voit ottaa käyttöön valmiita tyyliteemoja nopeaa aloitusta varten tai hienosäätää jokaista yksityiskohtaa väripaletin muokkaimella, typografia-asetuksilla ja mukautetulla CSS:llä. Katso täydelliset tiedot oppaasta: [Ulkoasu](./appearance.md).
 
 ### Tiedostot
 
-Lataa ja hallitse kaikkia mediatiedostojasi, kuten kuvia, asiakirjoja ja muita tiedostoja, yhdestä keskitetystä paikasta. Voit kopioida tiedostolinkkejä ja käyttää niitä missä tahansa sivustollasi. Lisätietoja: [Tiedostot](files).
+Lataa ja hallitse kaikkia mediatiedostojasi, kuten kuvia, asiakirjoja ja muita tiedostoja, yhdestä keskitetystä paikasta. Voit kopioida tiedostolinkkejä ja käyttää niitä missä tahansa sivustollasi. Lisätietoja: [Tiedostot](./files.md).
 
 ### Kalenterit
 
 Julkaise tapahtumakalentereita verkkosivustollasi, jotta kävijät näkevät, mitä seurakunnassasi tapahtuu. Luo koottuja kalentereita, jotka keräävät tapahtumat useilta ryhmiltä yhteen näkymään. Kalentereilla on oma **Kalenterit**-kohtansa B1 Adminin valikossa, erillään kohdasta **Verkkosivusto**.
 
 :::tip
-Aloita [Alustava määritys](initial-setup), jos määrität verkkosivustoasi ensimmäistä kertaa. Se opastaa sinut verkkotunnuksen asetuksiin, ensimmäisen sivun luomiseen ja sivustosi ulkoasun määrittämiseen.
+Aloita [Alustava määritys](./initial-setup.md), jos määrität verkkosivustoasi ensimmäistä kertaa. Se opastaa sinut verkkotunnuksen asetuksiin, ensimmäisen sivun luomiseen ja sivustosi ulkoasun määrittämiseen.
 :::
 
 ## Seuraavat vaiheet
 
-- [Alustava määritys](initial-setup) -- Saata verkkosivustosi käyntiin ensimmäistä kertaa
-- [Sivujen hallinta](managing-pages) -- Opi luomaan ja järjestämään sivujasi
-- [Sivueditorin käyttö](page-editor) -- Rakenna ja muotoile sivusi sisältö visuaalisella editorilla
-- [Ulkoasu](appearance) -- Mukauta sivustosi ulkoasua
-- [Tiedostot](files) -- Lataa ja hallitse mediatiedostoja
+- [Alustava määritys](./initial-setup.md) -- Saata verkkosivustosi käyntiin ensimmäistä kertaa
+- [Sivujen hallinta](./managing-pages.md) -- Opi luomaan ja järjestämään sivujasi
+- [Sivueditorin käyttö](./page-editor.md) -- Rakenna ja muotoile sivusi sisältö visuaalisella editorilla
+- [Ulkoasu](./appearance.md) -- Mukauta sivustosi ulkoasua
+- [Tiedostot](./files.md) -- Lataa ja hallitse mediatiedostoja

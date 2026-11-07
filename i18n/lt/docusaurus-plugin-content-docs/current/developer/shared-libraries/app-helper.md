@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "@churchapps/apphelper paketo nuoroda: pošakių įėjimo taškai, kurios programos naudoja kiekvieną eksportą, vietinis kūrimas ir publikavimo žingsniai."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Paketas `@churchapps/apphelper` teikia bendrus React komponentus ir pagalbines f
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiegite **Node.js** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites)
+- Įdiegite **Node.js** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites.md)
 - Susipažinkite su [Paketų darbo sritimi](./index.md) ir leidimo eiga
 
 </div>
@@ -92,6 +93,6 @@ Niekada nepašalinkite ir nepervadinkite eksporto, kol pakaitalas nepublikuotas 
 
 ## Susiję straipsniai
 
-- **[Pagalbinės funkcijos](./helpers)** -- Bazinis pagalbinių funkcijų paketas, naudojamas kartu su AppHelper
-- **[Žiniatinklio programos](../web-apps/)** -- Žiniatinklio programos, kurios naudoja šį paketą
+- **[Pagalbinės funkcijos](./helpers.md)** -- Bazinis pagalbinių funkcijų paketas, naudojamas kartu su AppHelper
+- **[Žiniatinklio programos](../web-apps/index.md)** -- Žiniatinklio programos, kurios naudoja šį paketą
 - **[Bendrųjų bibliotekų apžvalga](./index.md)** -- Darbo srities sąranka, leidimo eiga ir vietinio susiejimo darbo eiga

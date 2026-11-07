@@ -1,5 +1,6 @@
 ---
 title: "Paramètres de l'application mobile"
+description: "Configurez onglets, tuiles d'accueil, invite de connexion et confidentialité de l'annuaire pour l'app membre B1.church dans B1 Admin."
 ---
 
 # Paramètres de l'application mobile

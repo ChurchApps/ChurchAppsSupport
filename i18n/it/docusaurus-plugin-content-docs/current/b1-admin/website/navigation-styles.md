@@ -1,5 +1,6 @@
 ---
 title: "Stili Navigazione"
+description: "Personalizza i colori delle barre di navigazione trasparenti e solide del sito in B1 Admin, inclusi gli stati di link, passaggio del mouse e attivo."
 ---
 
 # Stili Navigazione

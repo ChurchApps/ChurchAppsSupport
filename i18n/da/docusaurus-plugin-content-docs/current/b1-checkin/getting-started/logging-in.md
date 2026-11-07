@@ -1,5 +1,7 @@
 ---
-title: "Login"
+title: "Log ind på B1 Church Checkin"
+sidebar_label: "Login"
+description: "Log ind i B1 Church Checkin-kioskappen, vælg din kirke, og forstå automatisk login, adminindstillinger og log ud på check-in-tabletten."
 ---
 
 # Login
@@ -60,7 +62,7 @@ Admin indstillinger er bevidst skjulte, så kirkepedlemmer, der bruger kiosken, 
 2. Hvis en kiosk PIN er sat, skal du skrive PIN'en når du bliver spurgt.
 3. **Admin indstillinger** skærmen vil åbne med følgende muligheder:
    - **Skift servin** — skift den valgte servin tid
-   - **Skift printer** — åbn [printer indstillinger](./printer-setup) for at scanne og vælge en printer
+   - **Skift printer** — åbn [printer indstillinger](./printer-setup.md) for at scanne og vælge en printer
    - **Set/Skift PIN** — set eller opdater kiosk PIN'en, som beskytter admin adgang
    - **Logout** — log ud og returnere til login skærmen
 
@@ -70,4 +72,4 @@ Log ud rydder alle gemte legitimationsoplysninger og kirke valg. Du skal angive 
 
 ## Næste trin
 
-Når du er logget ind, kan du [set en printer op](./printer-setup) eller gå direkte til [check-in arbejdsgangen](../check-in/).
+Når du er logget ind, kan du [set en printer op](./printer-setup.md) eller gå direkte til [check-in arbejdsgangen](../check-in/index.md).

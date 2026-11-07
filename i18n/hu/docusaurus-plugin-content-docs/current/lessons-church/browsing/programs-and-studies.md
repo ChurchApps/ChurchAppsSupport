@@ -1,5 +1,6 @@
 ---
 title: "Programok és tanulmányok"
+description: "Lessons.church programok, tanulmányok, leckék és helyszínek kapcsolata: a megfelelő tananyag megtalálása és a kapcsolódó leckék közötti váltás."
 ---
 
 # Programok és tanulmányok

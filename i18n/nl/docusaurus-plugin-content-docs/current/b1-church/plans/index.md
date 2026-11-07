@@ -1,5 +1,6 @@
 ---
 title: "Plannen"
+description: "Ontdek op welke dienstplannen je staat in B1.church, controleer je posities en data, en accepteer of weiger opdrachten via je ledenportaal."
 ---
 
 # Plannen

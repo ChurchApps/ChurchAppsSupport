@@ -1,5 +1,6 @@
 ---
 title: "Ryhmäkeskustelut"
+description: "Opi kirjoittamaan, muokkaamaan ja reagoimaan viesteihin B1.churchin ryhmäkeskustelussa sekä hallitsemaan viestejä ilmoitusten ja johtajien moderointityökalujen avulla."
 ---
 
 # Ryhmäkeskustelut

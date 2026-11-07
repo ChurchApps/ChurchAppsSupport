@@ -1,5 +1,6 @@
 ---
 title: "Megosztott könyvtárak"
+description: "A B1 Admin, B1.church és API-k által használt @churchapps npm-csomagok dokumentációja, a Packages munkaterület beállítása és kiadás changesetekkel."
 ---
 
 # Megosztott könyvtárak
@@ -14,9 +15,9 @@ A ChurchApps megosztott kódja npm-en érhető el a `@churchapps/*` névtér ala
 
 | Csomag | Leírás | Használja |
 |--------|--------|-----------|
-| [`@churchapps/helpers`](./helpers) | Alapréteg: keretrendszertől független segédfüggvények és azok a megosztott TypeScript interfészek, amelyek az alkalmazások közötti adatszerződést alkotják | Minden projekt |
-| [`@churchapps/apihelper`](./api-helper) | Szerveroldali Express segédeszközök: hitelesítés, alapvezérlők, adatbázis-hozzáférés, AWS- és e-mail-integrációk | Minden API |
-| [`@churchapps/apphelper`](./app-helper) | Megosztott React-komponensek és funkciómodulok (bejelentkezés, adományok, űrlapok, markdown, weboldal) | Minden webalkalmazás |
+| [`@churchapps/helpers`](./helpers.md) | Alapréteg: keretrendszertől független segédfüggvények és azok a megosztott TypeScript interfészek, amelyek az alkalmazások közötti adatszerződést alkotják | Minden projekt |
+| [`@churchapps/apihelper`](./api-helper.md) | Szerveroldali Express segédeszközök: hitelesítés, alapvezérlők, adatbázis-hozzáférés, AWS- és e-mail-integrációk | Minden API |
+| [`@churchapps/apphelper`](./app-helper.md) | Megosztott React-komponensek és funkciómodulok (bejelentkezés, adományok, űrlapok, markdown, weboldal) | Minden webalkalmazás |
 | `@churchapps/content-providers` | Absztrakció harmadik fél tartalomszolgáltatói felett (Lessons.church, Planning Center, Dropbox és mások) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Eszközkészlet B1.church integrációk építéséhez: webhook-ellenőrzés, típusos REST-kliens, OAuth-segédek | Külső integrációfejlesztők |
 | `@churchapps/texting` | SMS-szolgáltatók absztrakciója (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

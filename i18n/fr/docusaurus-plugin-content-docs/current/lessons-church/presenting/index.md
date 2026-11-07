@@ -1,5 +1,6 @@
 ---
 title: "Présentation"
+description: "Projeter les leçons avec le mode Presenter dans Lessons.church, partager des guides par rôle aux bénévoles et imprimer les supports avant le cours."
 ---
 
 # Présentation

@@ -1,5 +1,6 @@
 ---
 title: "Giving Endpoints"
+description: "Reference for the Giving API endpoints in ChurchApps: donations, batches, gateways, subscriptions, and payment methods, with auth and permission rules for developers integrating with B1 Admin."
 ---
 
 # Giving Endpoints
@@ -284,6 +285,6 @@ Extends `GenericCrudController` with CRUD routes: `getById`, `getAll`, `post`, `
 
 ## Related Pages
 
-- [Membership Endpoints](./membership) — People, churches, groups, roles, and permissions
-- [Authentication & Permissions](./authentication) — Login flow, JWT, OAuth, permission model
-- [Module Structure](../module-structure) — Code organization patterns
+- [Membership Endpoints](./membership.md) — People, churches, groups, roles, and permissions
+- [Authentication & Permissions](./authentication.md) — Login flow, JWT, OAuth, permission model
+- [Module Structure](../module-structure.md) — Code organization patterns

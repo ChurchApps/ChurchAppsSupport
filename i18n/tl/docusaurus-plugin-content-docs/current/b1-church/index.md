@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Alamin ang iniaalok ng B1.church site ng simbahan sa mga miyembro: member portal, grupo, pagbibigay, event, paglilingkod, at check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Kapag bumisita ang mga miyembro sa iyong B1.church site, makikita nila ang pampu
 
 ## Alamin Pa
 
-- [Getting Started](./getting-started/) -- Gumawa ng iyong account, mag-log in, at matutunan kung paano mag-navigate sa B1.church.
-- [Groups](./groups/) -- Sumali at makibahagi sa mga grupo ng iyong simbahan.
-- [Giving](./giving/) -- Magbigay ng donasyon at pamahalaan ang iyong pagbibigay.
-- [Events](./events/) -- Mag-browse at magpatala para sa paparating na event ng simbahan.
-- [Serving](./serving/) -- Tingnan ang mga plan at magpatala sa mga posisyon ng boluntaryo.
-- [Plans](./plans/) -- Tingnan ang mga service plan at ang iyong mga posisyon ng boluntaryo.
-- [Check-In](./checkin/) -- Mag-check in para sa mga serbisyo, event, at guest registration.
-- [Community Directory](./community/) -- Hanapin at makipag-ugnayan sa iba pang miyembro.
-- [Content](./content/) -- Mga sermon, Bibliya, pang-araw-araw na talata, at live streaming. (Lumipat na sa [FreePlay](/docs/freeplay/) ang playback ng mga aralin.)
+- [Getting Started](./getting-started/index.md) -- Gumawa ng iyong account, mag-log in, at matutunan kung paano mag-navigate sa B1.church.
+- [Groups](./groups/index.md) -- Sumali at makibahagi sa mga grupo ng iyong simbahan.
+- [Giving](./giving/index.md) -- Magbigay ng donasyon at pamahalaan ang iyong pagbibigay.
+- [Events](./events/index.md) -- Mag-browse at magpatala para sa paparating na event ng simbahan.
+- [Serving](./serving/index.md) -- Tingnan ang mga plan at magpatala sa mga posisyon ng boluntaryo.
+- [Plans](./plans/index.md) -- Tingnan ang mga service plan at ang iyong mga posisyon ng boluntaryo.
+- [Check-In](./checkin/index.md) -- Mag-check in para sa mga serbisyo, event, at guest registration.
+- [Community Directory](./community/index.md) -- Hanapin at makipag-ugnayan sa iba pang miyembro.
+- [Content](./content/index.md) -- Mga sermon, Bibliya, pang-araw-araw na talata, at live streaming. (Lumipat na sa [FreePlay](/docs/freeplay/) ang playback ng mga aralin.)
 
 :::info
 Ganap na libre ang B1.church para sa mga simbahan at miyembro. Ang administrator ng iyong simbahan ang nag-s-set up at nag-a-customize ng site sa pamamagitan ng B1 Admin. Bilang miyembro, bisitahin mo lang ang B1.church URL ng iyong simbahan para magsimula.

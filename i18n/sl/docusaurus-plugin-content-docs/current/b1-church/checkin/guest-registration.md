@@ -1,5 +1,6 @@
 ---
 title: "Registracija gosta"
+description: "Z obrazcem QR v B1 Checkin se kot prvi obiskovalci registrirajte sami in svojo družino, da vas prostovoljci ob prihodu lahko prijavijo."
 ---
 
 # Registracija gosta
@@ -22,7 +23,7 @@ title: "Registracija gosta"
 
 Registracija gostov je namenjena obiskovalcem, ki še nimajo računa. Na kiosku za prijavo v cerkvi tapnite **Registriraj se kot gost**, da se prikaže QR koda, ki vodi na stran za registracijo. Povezavo lahko prejmete tudi od prostovoljca ali sprejemnika gostov, najdete pa jo lahko tudi na letaku ali na spletni strani cerkve.
 
-Nimate telefona pri roki? V istem oknu s QR kodo na kiosku tapnite **Registriraj se tukaj**, da obrazec izpolnite kar na samem kiosku. Glejte [Registracija kot gost](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest), kako to deluje na kiosku.
+Nimate telefona pri roki? V istem oknu s QR kodo na kiosku tapnite **Registriraj se tukaj**, da obrazec izpolnite kar na samem kiosku. Glejte [Registracija kot gost](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest), kako to deluje na kiosku.
 
 Stran se odpre z naslovom **Registracija gosta**. Če je cerkev dodala glavno fotografijo, se ta prikaže na vrhu strani; sicer boste videli majhno ikono.
 
@@ -51,7 +52,7 @@ Vaša registracija ustvari zapise v bazi podatkov cerkve:
 - Za vsakega družinskega člana se ustvarijo **zapisi oseb** s statusom članstva „Obiskovalec“.
 - Vsi komentarji, ki ste jih vnesli, se shranijo kot opomba v zapis glavnega kontakta, da jo lahko prebere osebje cerkve.
 - Če je cerkev izbrala skupino za nove goste, bo vaša družina dodana v to skupino. Cerkev lahko vašo udeležbo tudi samodejno evidentira, če se registrirate v času enega od urnikov srečanj te skupine.
-- Prostovoljec ali administrator cerkve lahko nato vašo družino prijavi prek kioska [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Prostovoljec ali administrator cerkve lahko nato vašo družino prijavi prek kioska [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Če se ponovno registrirate z istim imenom ter enako e-pošto ali telefonsko številko, zapisi cerkve vas prepoznajo in ponovno uporabijo vaš obstoječi profil, namesto da bi ustvarili podvojen zapis. Vsi drugi se dodajo kot novi. Če ste se že registrirali, lahko na kiosku preprosto poiščete svoje ime ali telefonsko številko.
@@ -63,6 +64,6 @@ Vaša registracija ustvari zapise v bazi podatkov cerkve:
 
 ## Sorodni članki
 
-- [Samoprijava](./self-checkin) -- Po registraciji se sami prijavite
-- [Dodajanje gostov (kiosk)](../../b1-checkin/check-in/adding-guests) -- Kako prostovoljci na kiosku dodajajo goste
-- [Prijava](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Kako cerkveni administratorji nastavijo registracijo gostov prek QR kode
+- [Samoprijava](./self-checkin.md) -- Po registraciji se sami prijavite
+- [Dodajanje gostov (kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Kako prostovoljci na kiosku dodajajo goste
+- [Prijava](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Kako cerkveni administratorji nastavijo registracijo gostov prek QR kode

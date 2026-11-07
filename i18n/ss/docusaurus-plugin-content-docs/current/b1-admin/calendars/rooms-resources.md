@@ -1,5 +1,6 @@
 ---
 title: "Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi"
+description: "Setfula emakamelo, tinsita, tikhatsi letivinjiwe nemifanekiso yetemcimbi ku-B1 Admin, emaqembu acele kubhukha, uyavuma kuze kugwenywe kubhukhwa kabili."
 ---
 
 # Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi
@@ -14,7 +15,7 @@ Emakamelo Netinsita akuvumela kutsi ulandzelele tindzawo tebandla lakho letingab
 <h4>Ngembikwe Kucala</h4>
 
 - Udzinga kufinyelela kwebuphatsi ku-Calendars ku-B1 Admin
-- Hlela [emacembu](../groups/creating-groups) lalunga lawo latawufaka tetisandzo tekubhukha
+- Hlela [emacembu](../groups/creating-groups.md) lalunga lawo latawufaka tetisandzo tekubhukha
 
 </div>
 
@@ -76,7 +77,7 @@ Nakudalwa umcimbi lomusha, basebenti bangakhetsa sifanekiso lesikhona kuze bagcw
 
 ## Tihloko Letihlobene
 
-- [Ikhalenda Lekutfolakala](availability) — buka konkhe kubhukha ngekukhangela kanye kubhukha emakamelo nome tinsita ngalokutfuma
-- [Kuvunywa Kwemakhalenda](approvals) — vumela nome unqabe tetisandzo tekubhukha emakamelo netinsita
-- [Dala Emakhalenda](creating-calendars) — hlela emakhalenda emicimbi
-- [Kudala Emacembu](../groups/creating-groups) — hlela emacembu langabhukha emakamelo netinsita
+- [Ikhalenda Lekutfolakala](./availability.md) — buka konkhe kubhukha ngekukhangela kanye kubhukha emakamelo nome tinsita ngalokutfuma
+- [Kuvunywa Kwemakhalenda](./approvals.md) — vumela nome unqabe tetisandzo tekubhukha emakamelo netinsita
+- [Dala Emakhalenda](./creating-calendars.md) — hlela emakhalenda emicimbi
+- [Kudala Emacembu](../groups/creating-groups.md) — hlela emacembu langabhukha emakamelo netinsita

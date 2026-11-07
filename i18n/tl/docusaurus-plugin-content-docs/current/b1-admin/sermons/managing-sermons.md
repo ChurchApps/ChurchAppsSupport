@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Sermon"
+description: "Pamahalaan ang sermon library sa B1 Admin: magdagdag ng sermon mula YouTube, Vimeo, o Facebook, i-edit ang detalye, at kumuha ng podcast feed ng simbahan."
 ---
 
 # Pamamahala ng mga Sermon
@@ -14,7 +15,7 @@ Ipinapakita ng pahina ng Sermons ang buong library ng inyong mga sermon. Dito ma
 <h4>Bago Magsimula</h4>
 
 - Kailangan ninyo ang pahintulot na **contentApi.streamingServices.edit**. Tingnan ang [Mga Role at Pahintulot](../settings/roles-permissions.md) kung wala kayong access.
-- Gumawa ng kahit isang [playlist](playlists) na paglalagyan ng inyong mga sermon
+- Gumawa ng kahit isang [playlist](./playlists.md) na paglalagyan ng inyong mga sermon
 - Ihanda ang inyong mga video ID o URL mula sa YouTube, Vimeo, o Facebook
 
 </div>
@@ -35,7 +36,7 @@ Ipinapakita ng pahina ng Sermons ang buong library ng inyong mga sermon. Dito ma
 6. Gawin ang anumang pagbabagong nais ninyo at i-click ang **Save**.
 
 :::tip
-Maaari rin kayong magdagdag ng permanenteng URL ng live stream sa pamamagitan ng pagpili sa **Add Permanent Live URL** mula sa dropdown na **Add Sermon**. Gumagawa ito ng tuloy-tuloy na koneksyon sa live stream ng inyong YouTube channel gamit ang inyong Channel ID. Tingnan ang [Live Streaming](live-streaming) para sa karagdagang detalye.
+Maaari rin kayong magdagdag ng permanenteng URL ng live stream sa pamamagitan ng pagpili sa **Add Permanent Live URL** mula sa dropdown na **Add Sermon**. Gumagawa ito ng tuloy-tuloy na koneksyon sa live stream ng inyong YouTube channel gamit ang inyong Channel ID. Tingnan ang [Live Streaming](./live-streaming.md) para sa karagdagang detalye.
 :::
 
 ## Pag-edit ng Sermon
@@ -73,11 +74,11 @@ Pagkatapos magdagdag ng sermon, maaari ninyo itong i-iskedyul para i-broadcast s
 3. Ipapalabas ang sermon sa itinakdang oras ng service.
 
 :::info
-Para mag-import ng maraming sermon nang sabay-sabay sa halip na isa-isang idagdag, gamitin ang tool na [Bulk Import](bulk-import) para direktang kunin ang mga video mula sa inyong YouTube o Vimeo account.
+Para mag-import ng maraming sermon nang sabay-sabay sa halip na isa-isang idagdag, gamitin ang tool na [Bulk Import](./bulk-import.md) para direktang kunin ang mga video mula sa inyong YouTube o Vimeo account.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Mga Playlist](playlists) -- Ayusin ang mga sermon sa mga serye
-- [Live Streaming](live-streaming) -- I-configure ang inyong iskedyul ng streaming
-- [Bulk Import](bulk-import) -- Mag-import ng maraming sermon nang sabay-sabay
+- [Mga Playlist](./playlists.md) -- Ayusin ang mga sermon sa mga serye
+- [Live Streaming](./live-streaming.md) -- I-configure ang inyong iskedyul ng streaming
+- [Bulk Import](./bulk-import.md) -- Mag-import ng maraming sermon nang sabay-sabay

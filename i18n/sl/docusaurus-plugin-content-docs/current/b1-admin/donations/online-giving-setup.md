@@ -1,5 +1,6 @@
 ---
 title: "Nastavitev spletnega darovanja"
+description: "Povežite Stripe, PayPal, Kingdom Funding ali Paystack z B1 Admin, da člani lahko darujejo na spletu prek mesta B1.church, darila pa se samodejno vodijo."
 ---
 
 # Nastavitev spletnega darovanja

@@ -1,5 +1,6 @@
 ---
 title: "Ryhmien selaaminen"
+description: "Selaa seurakuntasi julkisia ryhmiä B1.churchissa kategorioittain ja tutki kokoontumisajat, paikat ja kuvaukset kortilla löytääksesi sopivan ryhmän."
 ---
 
 # Ryhmien selaaminen

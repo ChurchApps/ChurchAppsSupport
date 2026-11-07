@@ -1,5 +1,6 @@
 ---
 title: "Cereri de înscriere în grupuri"
+description: "Revizuiți și aprobați sau refuzați cererile de înscriere în grupuri în B1 Admin, găsiți cererile în așteptare și adăugați un motiv la refuz."
 ---
 
 # Cereri de înscriere în grupuri

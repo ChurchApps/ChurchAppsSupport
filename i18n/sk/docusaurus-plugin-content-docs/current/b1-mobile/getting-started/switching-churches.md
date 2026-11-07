@@ -1,5 +1,6 @@
 ---
 title: "Prepínanie cirkví"
+description: "Prepínajte medzi cirkvami v aplikácii B1 Mobile výberom nedávnej cirkvi alebo vyhľadaním podľa názvu, všetko s jedným prihlásením ChurchApps."
 ---
 
 # Prepínanie cirkví
@@ -13,7 +14,7 @@ Ak ste členom viacerých cirkví, B1 Mobile vám umožňuje jednoducho medzi ni
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](./installing) a [sa prihláste](./logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](./installing.md) a [sa prihláste](./logging-in.md) do svojho účtu
 
 </div>
 
@@ -24,7 +25,7 @@ Ak ste členom viacerých cirkví, B1 Mobile vám umožňuje jednoducho medzi ni
 3. Zobrazí sa obrazovka **Vyhľadávanie cirkví**. Cirkvi, ktoré ste nedávno navštívili, sú uvedené v hornej časti pre rýchly prístup.
 4. Klepnutím na nedávno navštívenú cirkev na ňu prepnete, alebo zadajte text do vyhľadávacieho poľa a nájdite inú cirkev.
 
-Keď prepnete cirkev, aplikácia sa znovu načíta s grafickou úpravou, navigačnými odkazmi a obsahom danej cirkvi. Vaš [prehľad](../dashboard/), [skupiny](../groups/) a ďalšie údaje sa budú zobrazovať pre novovybranú cirkev.
+Keď prepnete cirkev, aplikácia sa znovu načíta s grafickou úpravou, navigačnými odkazmi a obsahom danej cirkvi. Vaš [prehľad](../dashboard/index.md), [skupiny](../groups/index.md) a ďalšie údaje sa budú zobrazovať pre novovybranú cirkev.
 
 ## Vyhľadávanie cirkvi
 

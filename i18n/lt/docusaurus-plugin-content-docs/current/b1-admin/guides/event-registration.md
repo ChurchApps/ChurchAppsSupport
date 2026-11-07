@@ -1,5 +1,6 @@
 ---
 title: "Vodič: Podešavanje registracije na događaj"
+description: "Nustatykite renginio registracijos formą B1 Admin dalyvių duomenims ir pasirinktinai mokėjimams rinkti, įdėkite ją į bažnyčios svetainę ir sekite registracijas."
 ---
 
 # Podešavanje registracije na događaj
@@ -11,7 +12,7 @@ Kreirajte obrazac za registraciju na događaj, prikupljajte podatke o učesnicim
 </div>
 
 :::info
-**Dva načina za registraciju na događaje:** Ovaj vodič obrađuje **registraciju putem obrazaca**, koja vam daje punu kontrolu nad prilagođenim poljima i prikupljanjem uplata. Za jednostavnije događaje na kojima samo treba da pratite ko dolazi, koristite **izvornu registraciju na događaje** ugrađenu u kalendar -- uputstva za podešavanje potražite u odeljku [Kreiranje kalendara](../calendars/creating-calendars.md#enabling-event-registration). Izvorna registracija omogućava članovima da se prijave direktno preko [B1 veb-sajta](../../b1-church/events/registering) i [mobilne aplikacije](../../b1-mobile/events/registering), uz praćenje kapaciteta, vremenske periode za prijavu i potvrde putem e-pošte.
+**Dva načina za registraciju na događaje:** Ovaj vodič obrađuje **registraciju putem obrazaca**, koja vam daje punu kontrolu nad prilagođenim poljima i prikupljanjem uplata. Za jednostavnije događaje na kojima samo treba da pratite ko dolazi, koristite **izvornu registraciju na događaje** ugrađenu u kalendar -- uputstva za podešavanje potražite u odeljku [Kreiranje kalendara](../calendars/creating-calendars.md#enabling-event-registration). Izvorna registracija omogućava članovima da se prijave direktno preko [B1 veb-sajta](../../b1-church/events/registering.md) i [mobilne aplikacije](../../b1-mobile/events/registering.md), uz praćenje kapaciteta, vremenske periode za prijavu i potvrde putem e-pošte.
 :::
 
 <div class="prereqs">

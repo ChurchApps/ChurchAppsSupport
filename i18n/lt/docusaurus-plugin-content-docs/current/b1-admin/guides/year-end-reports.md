@@ -1,5 +1,6 @@
 ---
 title: "Guide: Generate Year-End Giving Reports"
+description: "Baikite metų aukų įrašus B1 Admin, patikrinkite fondų mokesčių nustatymus ir sukurkite mokestinėms lengvatoms tinkančias pažymas visiems aukotojams."
 ---
 
 # Generate Year-End Giving Reports

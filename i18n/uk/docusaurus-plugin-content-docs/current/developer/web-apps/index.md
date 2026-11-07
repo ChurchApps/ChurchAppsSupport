@@ -1,5 +1,6 @@
 ---
 title: "Веб-застосунки"
+description: "Огляд трьох веб-застосунків ChurchApps (B1 Admin, B1.church, Lessons.church): спільний стек React і MUI, пакети apphelper та інструменти збірки."
 ---
 
 # Веб-застосунки
@@ -41,7 +42,7 @@ ChurchApps включає три веб-застосунки, кожна з як
 | `@churchapps/apphelper-website` | Компоненти веб-сайту та CMS |
 
 :::tip
-Щоб дізнатися більше про локальну розробку цих спільних пакетів, див. документацію [AppHelper](../shared-libraries/app-helper).
+Щоб дізнатися більше про локальну розробку цих спільних пакетів, див. документацію [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Скрипт postinstall

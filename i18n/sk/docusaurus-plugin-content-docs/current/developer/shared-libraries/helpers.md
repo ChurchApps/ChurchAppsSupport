@@ -1,5 +1,6 @@
 ---
 title: "Pomôcky"
+description: "Balík @churchapps/helpers: čo poskytuje, ktoré aplikácie ho využívajú, lokálne zostavenie vo workspace Packages a publikovanie cez changesets."
 ---
 
 # Pomôcky
@@ -13,14 +14,14 @@ Balík `@churchapps/helpers` poskytuje základné nástroje, ktoré používajú
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nainštalujte si **Node.js** a **Git** -- pozri [Požiadavky](../setup/prerequisites)
+- Nainštalujte si **Node.js** a **Git** -- pozri [Požiadavky](../setup/prerequisites.md)
 - Oboznámte sa s nastavením [pracovného priestoru Packages](./index.md) a postupom vydávania
 
 </div>
 
 ## Kto ju používa
 
-Každé API ChurchApps (hlavné Api, AskApi a LessonsApi) a každý webový frontend (B1Admin, B1App, B1Transfer, LessonsApp) priamo závisí na tomto balíku. Frontendy navyše získavajú mnohé jeho exporty (`ApiHelper`, `DateHelper`, `UserHelper` a ďalšie rozhrania) znovu exportované cez [`@churchapps/apphelper`](./app-helper). Ostatné zdieľané balíky ho deklarujú ako peer závislosť, aby každá aplikácia používala presne jednu kópiu.
+Každé API ChurchApps (hlavné Api, AskApi a LessonsApi) a každý webový frontend (B1Admin, B1App, B1Transfer, LessonsApp) priamo závisí na tomto balíku. Frontendy navyše získavajú mnohé jeho exporty (`ApiHelper`, `DateHelper`, `UserHelper` a ďalšie rozhrania) znovu exportované cez [`@churchapps/apphelper`](./app-helper.md). Ostatné zdieľané balíky ho deklarujú ako peer závislosť, aby každá aplikácia používala presne jednu kópiu.
 
 ## Nastavenie pre lokálny vývoj
 
@@ -55,7 +56,7 @@ Vydania prebiehajú cez changesety, nie cez ručné zvyšovanie verzií:
 1. V koreňovom adresári pracovného priestoru spustite `yarn changeset`, vyberte `@churchapps/helpers` a zodpovedajúci typ zvýšenia verzie; vygenerovaný súbor changesetu potvrďte spolu so svojou zmenou.
 2. Keď budete pripravení na vydanie, spustite v koreni `yarn publish-all` -- zvýši verzie, zapíše CHANGELOGy, zostaví balíky v poradí podľa závislostí a publikuje ich na npm.
 
-Nové zdieľané rozhrania patria do `helpers/src/interfaces/` a sú znovu exportované cez hlavný súbor balíka. Katalóg typov prvkov stavebnice webov (`ElementTypes.ts` -- 35 typov so schémami ich odpovedí) sa tiež nachádza tu; je to kontrakt zdieľaný renderermi apphelper, formulármi editora B1Admin a promptami pre generovanie pomocou AI (pozri [Architektúra stavebnice webov](../architecture/website-builder)).
+Nové zdieľané rozhrania patria do `helpers/src/interfaces/` a sú znovu exportované cez hlavný súbor balíka. Katalóg typov prvkov stavebnice webov (`ElementTypes.ts` -- 35 typov so schémami ich odpovedí) sa tiež nachádza tu; je to kontrakt zdieľaný renderermi apphelper, formulármi editora B1Admin a promptami pre generovanie pomocou AI (pozri [Architektúra stavebnice webov](../architecture/website-builder.md)).
 
 :::warning
 Keďže tento balík používa každý projekt ChurchApps, zmeny tu majú široký dosah. Vydanie `helpers` automaticky zvýši verzie `apihelper` a `apphelper`, aby ich rozsahy závislostí zostali aktuálne. Pred publikovaním otestujte balík pomocou Yarn portalu aspoň v jednom závislom API a jednej závislej webovej aplikácii.
@@ -63,6 +64,6 @@ Keďže tento balík používa každý projekt ChurchApps, zmeny tu majú širok
 
 ## Súvisiace články
 
-- **[ApiHelper](./api-helper)** -- Serverové pomocné funkcie, ktoré závisia na tomto balíku
-- **[AppHelper](./app-helper)** -- React komponenty, ktoré závisia na tomto balíku
+- **[ApiHelper](./api-helper.md)** -- Serverové pomocné funkcie, ktoré závisia na tomto balíku
+- **[AppHelper](./app-helper.md)** -- React komponenty, ktoré závisia na tomto balíku
 - **[Prehľad zdieľaných knižníc](./index.md)** -- Nastavenie pracovného priestoru, postup vydávania a workflow lokálneho prepojenia

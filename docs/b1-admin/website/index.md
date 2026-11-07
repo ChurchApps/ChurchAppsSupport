@@ -1,5 +1,6 @@
 ---
 title: "Website"
+description: "Get an overview of the B1 Admin Website builder: pages, blog, blocks, appearance, files, and calendars, with links to setup and editing guides."
 ---
 
 # Website
@@ -22,7 +23,7 @@ Your navigation links are displayed in a tree structure. You can reorder links u
 
 ### Blog
 
-Publish news, updates, and devotionals as blog posts at `/blog` on your site, with an RSS feed. See the [Blog](blog) guide.
+Publish news, updates, and devotionals as blog posts at `/blog` on your site, with an RSS feed. See the [Blog](./blog.md) guide.
 
 ### Blocks
 
@@ -30,24 +31,24 @@ Build reusable content components that you can place on multiple pages. Blocks s
 
 ### Appearance
 
-Customize your website's theme, colors, fonts, logo, and spacing. You can apply pre-built style themes for a quick start or fine-tune every detail with the color palette editor, typography settings, and custom CSS. See the [Appearance](appearance) guide for full details.
+Customize your website's theme, colors, fonts, logo, and spacing. You can apply pre-built style themes for a quick start or fine-tune every detail with the color palette editor, typography settings, and custom CSS. See the [Appearance](./appearance.md) guide for full details.
 
 ### Files
 
-Upload and manage all your media assets -- images, documents, and other files -- in one central location, and copy file links for use anywhere on your site. See [Files](files) for more information.
+Upload and manage all your media assets -- images, documents, and other files -- in one central location, and copy file links for use anywhere on your site. See [Files](./files.md) for more information.
 
 ### Calendars
 
 Publish event calendars on your website so visitors can see what is happening at your church. Create curated calendars that pull events from multiple groups into a single view. Calendars have their own **Calendars** item in the B1 Admin menu, separate from **Website**.
 
 :::tip
-Start with [Initial Setup](initial-setup) if you are configuring your website for the first time. It walks you through domain setup, creating your first page, and configuring your site's appearance.
+Start with [Initial Setup](./initial-setup.md) if you are configuring your website for the first time. It walks you through domain setup, creating your first page, and configuring your site's appearance.
 :::
 
 ## Next Steps
 
-- [Initial Setup](initial-setup) -- Get your website up and running for the first time
-- [Managing Pages](managing-pages) -- Learn how to create and organize your pages
-- [Using the Page Editor](page-editor) -- Build and style your page content with the visual editor
-- [Appearance](appearance) -- Customize your site's look and feel
-- [Files](files) -- Upload and manage media files
+- [Initial Setup](./initial-setup.md) -- Get your website up and running for the first time
+- [Managing Pages](./managing-pages.md) -- Learn how to create and organize your pages
+- [Using the Page Editor](./page-editor.md) -- Build and style your page content with the visual editor
+- [Appearance](./appearance.md) -- Customize your site's look and feel
+- [Files](./files.md) -- Upload and manage media files

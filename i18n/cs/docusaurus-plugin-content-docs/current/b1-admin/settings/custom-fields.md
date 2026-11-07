@@ -1,5 +1,6 @@
 ---
 title: "Vlastní pole"
+description: "Definujte v B1 Admin vlastní pole pro údaje o osobách, například platnost výpisu z rejstříku trestů nebo velikost trička, a filtrujte podle nich."
 ---
 
 # Vlastní pole

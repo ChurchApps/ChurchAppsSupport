@@ -1,5 +1,6 @@
 ---
 title: "Dochádzka"
+description: "Prehliadajte týždennú účasť, miestnosti a hostí v B1 Admin, potom na stránke Attendance nastavte kampusy, časy bohoslužieb, počty a kiosk check-in."
 ---
 
 # Dochádzka

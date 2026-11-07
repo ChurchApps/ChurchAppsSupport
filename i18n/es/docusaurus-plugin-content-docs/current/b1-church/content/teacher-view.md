@@ -1,5 +1,6 @@
 ---
 title: "Vista del maestro para lecciones"
+description: "Abre una lección en la Vista del maestro a pantalla completa desde un plan en B1.church, luego salta entre secciones, reproduce medios y descarga recursos de clase."
 ---
 
 # Vista del maestro para lecciones

@@ -1,5 +1,7 @@
 ---
-title: "الدروس (مُهمَلة)"
+title: "شاشة الدروس في B1 Mobile (مُلغاة)"
+sidebar_label: "الدروس (مُهمَلة)"
+description: "صفحة الدروس (مهجورة): سبب إيقاف شاشة الدروس داخل تطبيق B1 Mobile، وأين تجد المناهج الآن (FreePlay أو Lessons.church)."
 ---
 
 # الدروس (مُهمَلة)
@@ -19,7 +21,7 @@ title: "الدروس (مُهمَلة)"
 <div class="prereqs">
 <h4>قبل البدء</h4>
 
-- [ثبّت B1 Mobile](../getting-started/installing) و[سجّل الدخول](../getting-started/logging-in) إلى حسابك
+- [ثبّت B1 Mobile](../getting-started/installing.md) و[سجّل الدخول](../getting-started/logging-in.md) إلى حسابك
 - يجب أن تكون كنيستك قد أعدّت المنهج عبر Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Lessons.church منصة مستقلة من ChurchApps تتكامل مع B1 Mobile
 
 - [نظرة عامة على FreePlay](/docs/freeplay/) -- تطبيق التلفزيون البديل لتشغيل دروس الفصول الدراسية
 - [Lessons.church](/docs/lessons-church/) -- تصفح المحتوى التعليمي وإدارته مباشرةً
-- [الكتاب المقدس](./bible) -- اقرأ الكتاب المقدس إلى جانب دروسك
-- [العظات](./sermons) -- شاهد العظات التي تكمّل دراستك
+- [الكتاب المقدس](./bible.md) -- اقرأ الكتاب المقدس إلى جانب دروسك
+- [العظات](./sermons.md) -- شاهد العظات التي تكمّل دراستك

@@ -1,5 +1,6 @@
 ---
 title: "Wybór trybu parowania"
+description: "Wybór sposobu parowania telewizora FreePlay: kalendarz z FreePlay Admin, plan nabożeństwa z B1 Admin lub brak parowania."
 ---
 
 # Wybór trybu parowania
@@ -32,7 +33,7 @@ Wpisz kod w **FreePlay Admin** pod adresem [admin.freeplay.church](https://admin
 
 **Najlepsze zastosowanie:** Oznakowanie w holu i na korytarzach, pętle ogłoszeń oraz sale lekcyjne, w których lekcja ma już być odtwarzana, gdy ludzie wchodzą.
 
-Pełny przewodnik znajdziesz w artykule **[Tryb zaplanowany](../scheduled-mode/)**.
+Pełny przewodnik znajdziesz w artykule **[Tryb zaplanowany](../scheduled-mode/index.md)**.
 
 ## Tryb planu (B1 Admin)
 
@@ -42,7 +43,7 @@ Wpisz kod w **B1 Admin**, jeśli chcesz, aby telewizor śledził typ planu nabo�
 
 **Najlepsze zastosowanie:** Telewizory wyświetlające treści związane z cotygodniowym planem nabożeństwa, gdy ktoś rozpoczyna odtwarzanie w odpowiednim momencie.
 
-Pełny przewodnik znajdziesz w artykule **[Tryb planu](../plan-mode/)**.
+Pełny przewodnik znajdziesz w artykule **[Tryb planu](../plan-mode/index.md)**.
 
 :::tip
 Możesz też odtwarzać bieżący plan nabożeństwa według harmonogramu. W FreePlay Admin dodaj wpis do kalendarza i wybierz typ planu w polu **Plany nabożeństw**.
@@ -50,7 +51,7 @@ Możesz też odtwarzać bieżący plan nabożeństwa według harmonogramu. W Fre
 
 ## Dostawcy treści (bez parowania)
 
-Jeśli nie musisz w ogóle parować telewizora, możesz przeglądać dostawców treści bezpośrednio. Dostawcy, tacy jak [Lessons.church](../../lessons-church/) oraz Bible Project, udostępniają treści, które możesz pobrać i odtworzyć w dowolnym momencie.
+Jeśli nie musisz w ogóle parować telewizora, możesz przeglądać dostawców treści bezpośrednio. Dostawcy, tacy jak [Lessons.church](../../lessons-church/index.md) oraz Bible Project, udostępniają treści, które możesz pobrać i odtworzyć w dowolnym momencie.
 
 **Najlepsze zastosowanie:** Telewizory, na których wolontariusze wybierają, co odtwarzać każdego tygodnia, lub gdy chcesz sprawdzić, co jest dostępne.
 
@@ -60,6 +61,6 @@ Ekran **Dostawcy** możesz otworzyć w dowolnym momencie z **Ustawień** na dole
 
 ## Powiązane artykuły
 
-- **[Tryb zaplanowany](../scheduled-mode/)** - Ustawianie telewizorów według kalendarza w FreePlay Admin
-- **[Tryb planu](../plan-mode/)** - Pełny przewodnik parowania z planem nabożeństwa
-- **[Dostawcy treści](../content-providers/)** - Przeglądanie i pobieranie treści ze źródeł zewnętrznych
+- **[Tryb zaplanowany](../scheduled-mode/index.md)** - Ustawianie telewizorów według kalendarza w FreePlay Admin
+- **[Tryb planu](../plan-mode/index.md)** - Pełny przewodnik parowania z planem nabożeństwa
+- **[Dostawcy treści](../content-providers/index.md)** - Przeglądanie i pobieranie treści ze źródeł zewnętrznych

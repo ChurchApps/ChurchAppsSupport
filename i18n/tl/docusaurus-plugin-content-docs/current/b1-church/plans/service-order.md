@@ -1,5 +1,7 @@
 ---
-title: "Service Order"
+title: "Mga Detalye ng Service Order sa B1.church App"
+sidebar_label: "Service Order"
+description: "Tingnan ang service order sa B1.church app, kasama ang pinagsama-samang oras, lyrics ng kanta, pagpalit ng key, at preview ng aralin para sa team."
 ---
 
 # Service Order

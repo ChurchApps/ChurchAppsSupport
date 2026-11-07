@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Plaats B1 Admin-gebeurtenissen zoals nieuwe personen, giften en formulierinzendingen in een Slack- of Discord-kanaal via een webhook, zonder Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Als er iets is mislukt (een rood label `failed` of `exhausted`), toont het venst
 
 - **Er verschijnt geen bericht en de leveringsstatus is `400`** — meestal staat het Connectortype op **Standaard**, terwijl de URL een Slack- of Discord-URL is. Slack en Discord weigeren de ruwe envelop. Zet de keuzelijst op **Slack** of **Discord** en verstuur de testmelding opnieuw.
 - **Webhook is automatisch uitgeschakeld** — na 3 opeenvolgende mislukte leveringen schakelt B1 de webhook uit. Corrigeer de URL (of genereer een nieuwe in Slack of Discord) en zet **Actief** weer aan.
-- **Bericht is aangekomen, maar mist details** — elke chatdienst beperkt de berichtgrootte. De berichten van B1 zijn bewust kort. Voor uitgebreidere meldingen gebruik je [Zapier](./zapier) of [Make](./make), die via hun Slack-acties een vollediger Slack-bericht samenstellen.
+- **Bericht is aangekomen, maar mist details** — elke chatdienst beperkt de berichtgrootte. De berichten van B1 zijn bewust kort. Voor uitgebreidere meldingen gebruik je [Zapier](./zapier.md) of [Make](./make.md), die via hun Slack-acties een vollediger Slack-bericht samenstellen.
 
 ## Later van Connectortype wisselen
 
@@ -122,6 +123,6 @@ Je kunt het Connectortype van een bestaande webhook wijzigen. Dit werkt vanaf de
 
 ## Zie ook
 
-- [Zapier](./zapier) — voor werkstromen met meerdere stappen die door B1-gebeurtenissen worden gestart
-- [Make](./make) — visuele scenario-builder
+- [Zapier](./zapier.md) — voor werkstromen met meerdere stappen die door B1-gebeurtenissen worden gestart
+- [Make](./make.md) — visuele scenario-builder
 - [Webhooks (ontwikkelaarsreferentie)](/docs/developer/api/webhooks) — het volledige formaat voor payloads en handtekeningen, als je een webhook ooit naar je eigen server wilt laten wijzen

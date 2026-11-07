@@ -1,5 +1,6 @@
 ---
 title: "Sınıfları Ayarlama"
+description: "Lessons.church portalında sınıfları oluşturun, yeniden adlandırın ve kaldırın; böylece her oda veya yaş grubu haftalık ders planlamasına hazır olur."
 ---
 
 # Sınıfları Ayarlama

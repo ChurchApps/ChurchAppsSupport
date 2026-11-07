@@ -1,5 +1,6 @@
 ---
 title: "Koledar skupine"
+description: "Načrtujte srečanja na koledarju skupine v B1 Admin in B1.church z množičnim načrtovanjem, odzivi RSVP in naročninami na koledar."
 ---
 
 # Koledar skupine

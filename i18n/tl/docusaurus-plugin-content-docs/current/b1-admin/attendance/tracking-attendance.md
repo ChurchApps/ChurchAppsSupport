@@ -1,5 +1,6 @@
 ---
 title: "Pagsubaybay sa Attendance"
+description: "Suriin ang trend ng attendance, i-filter ang report ayon sa campus, serbisyo, o grupo, at i-export ang attendance ng grupo sa Attendance page ng B1 Admin."
 ---
 
 # Pagsubaybay sa Attendance

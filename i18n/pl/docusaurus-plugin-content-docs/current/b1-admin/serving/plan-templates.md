@@ -1,5 +1,6 @@
 ---
 title: "Szablony planów"
+description: "Zapisz porządek nabożeństwa i obsadę stanowisk jako szablon w B1 Admin, a następnie zastosuj go do przyszłych planów jednym kliknięciem."
 ---
 
 # Szablony planów

@@ -1,5 +1,6 @@
 ---
 title: "コンテンツエンドポイント"
+description: "ChurchApps Content API のエンドポイントリファレンスです。ウェブサイトのページ、ブログ記事、リダイレクト、説教、イベント、ファイル、聖書検索、B1 Admin の賛美歌を扱います。"
 ---
 
 # コンテンツエンドポイント
@@ -133,7 +134,7 @@ GET /content/pages/abc-church-id/tree?url=/about
 
 ベースパス: `/content/posts`
 
-ブログ投稿は独立した行として保存され、`title`、`slug`（教会内で一意）、`excerpt`、`content`（Markdown 本文）、`authorId`、`photoUrl`、`publishDate`、`category`、`tags` を持ちます。投稿は `publishDate` が設定され、かつ過去の日時になると公開されます。読み取り系のエンドポイントは、各投稿に `authorId` から解決した `authorName` を追加します。詳細は [ウェブサイトビルダーのアーキテクチャ](../../architecture/website-builder#blog) を参照してください。
+ブログ投稿は独立した行として保存され、`title`、`slug`（教会内で一意）、`excerpt`、`content`（Markdown 本文）、`authorId`、`photoUrl`、`publishDate`、`category`、`tags` を持ちます。投稿は `publishDate` が設定され、かつ過去の日時になると公開されます。読み取り系のエンドポイントは、各投稿に `authorId` から解決した `authorName` を追加します。詳細は [ウェブサイトビルダーのアーキテクチャ](../../architecture/website-builder.md#blog) を参照してください。
 
 | メソッド | パス | 認証 | 権限 | 説明 |
 |--------|------|------|------|------|
@@ -458,8 +459,8 @@ GET /content/bibles/de4e12af7f28f599-02/verses/GEN.1.1-GEN.1.3
 
 ## 関連ページ
 
-- [ウェブサイトビルダーのアーキテクチャ](../../architecture/website-builder) -- ページ、セクション、エレメント、投稿、リダイレクトが各アプリでどのように組み合わさるか
-- [メンバーシップエンドポイント](./membership) -- 人物、教会、グループ、役割、権限
-- [出席エンドポイント](./attendance) -- 礼拝と訪問の記録
-- [認証と権限](./authentication) -- ログインの流れ、JWT、権限モデル
-- [モジュール構成](../module-structure) -- コードの構成パターン
+- [ウェブサイトビルダーのアーキテクチャ](../../architecture/website-builder.md) -- ページ、セクション、エレメント、投稿、リダイレクトが各アプリでどのように組み合わさるか
+- [メンバーシップエンドポイント](./membership.md) -- 人物、教会、グループ、役割、権限
+- [出席エンドポイント](./attendance.md) -- 礼拝と訪問の記録
+- [認証と権限](./authentication.md) -- ログインの流れ、JWT、権限モデル
+- [モジュール構成](../module-structure.md) -- コードの構成パターン

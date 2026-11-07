@@ -1,5 +1,7 @@
 ---
-title: "Modifica del Profilo"
+title: "Modificare il profilo nell'app B1 Mobile"
+sidebar_label: "Modifica del Profilo"
+description: "Aggiorna nome, email, telefono, indirizzo e foto del profilo nell'app B1 Mobile, così i dati della chiesa e la rubrica restano aggiornati."
 ---
 
 # Modifica del Profilo
@@ -13,7 +15,7 @@ La scheda **Profilo** ti permette di aggiornare le tue informazioni personali af
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 
 </div>
 
@@ -34,7 +36,7 @@ Il tuo profilo include i seguenti dettagli personali:
 3. Tocca il campo che vuoi aggiornare e apporta le modifiche.
 4. Salva le modifiche quando hai finito.
 
-Le informazioni aggiornate vengono sincronizzate automaticamente. Chiunque visualizzi il tuo profilo (in base alle tue [impostazioni sulla privacy](./privacy-settings)) vedrà subito i nuovi dettagli.
+Le informazioni aggiornate vengono sincronizzate automaticamente. Chiunque visualizzi il tuo profilo (in base alle tue [impostazioni sulla privacy](./privacy-settings.md)) vedrà subito i nuovi dettagli.
 
 :::tip
 Mantieni aggiornati il tuo indirizzo email e il numero di telefono. La tua chiesa utilizza queste informazioni per inviarti aggiornamenti e promemoria importanti.
@@ -46,7 +48,7 @@ Puoi aggiungere o cambiare la foto profilo dalla scheda **Profilo**. La tua foto
 
 ## Modifiche in Tutti i Servizi ChurchApps
 
-Poiché tutti i servizi ChurchApps condividono lo stesso sistema di account, una modifica fatta in B1 Mobile è immediatamente visibile su [B1.church](../../b1-church/), gli strumenti di amministrazione della tua chiesa e qualsiasi altro servizio connesso. Non è necessario aggiornare le informazioni separatamente in ogni luogo.
+Poiché tutti i servizi ChurchApps condividono lo stesso sistema di account, una modifica fatta in B1 Mobile è immediatamente visibile su [B1.church](../../b1-church/index.md), gli strumenti di amministrazione della tua chiesa e qualsiasi altro servizio connesso. Non è necessario aggiornare le informazioni separatamente in ogni luogo.
 
 :::info
 Alcune chiese richiedono l'approvazione dell'amministratore per determinate modifiche al profilo. Se l'aggiornamento non appare immediatamente, controlla la scheda **In Attesa** nella schermata del profilo per lo stato.
@@ -54,5 +56,5 @@ Alcune chiese richiedono l'approvazione dell'amministratore per determinate modi
 
 ## Articoli Correlati
 
-- [Famiglia](./household) -- Visualizza e gestisci i membri della tua famiglia
-- [Impostazioni Privacy](./privacy-settings) -- Controlla ciò che gli altri possono vedere di te
+- [Famiglia](./household.md) -- Visualizza e gestisci i membri della tua famiglia
+- [Impostazioni Privacy](./privacy-settings.md) -- Controlla ciò che gli altri possono vedere di te

@@ -1,5 +1,6 @@
 ---
 title: "Lưu trữ tự mang"
+description: "Kết nối Google Drive, Dropbox, OneDrive hoặc bucket tương thích S3 của riêng bạn trong B1 Admin để tệp của nhà thờ không bị giới hạn 100MB của nền tảng."
 ---
 
 # Lưu trữ tự mang (BYOS)
@@ -8,7 +9,7 @@ Các hội thánh được cấp khoảng 100MB lưu trữ tệp miễn phí tr�
 
 ## Điểm nối nhà cung cấp
 
-BYOS tái sử dụng lớp lưu trữ đã được xây dựng cho [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`) được `StorageResolver` xác định theo từng hội thánh dựa trên bảng `content.storageProviders`. Khác với các nhà cung cấp singleton `churchapps`/`ministrystuff`, nhà cung cấp BYOS giữ thông tin xác thực riêng cho từng hội thánh, nên `StorageResolver.forChurch` tạo một thể hiện mới cho mỗi yêu cầu từ dòng dữ liệu của hội thánh đó. Các triển khai nằm cạnh resolver trong `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, cùng `ByosAuth` (đổi mã OAuth lấy token và làm mới token theo cơ chế single-flight — Dropbox xoay vòng refresh token, nên các yêu cầu làm mới được loại trùng theo cách tương tự `ProviderProxyController`).
+BYOS tái sử dụng lớp lưu trữ đã được xây dựng cho [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`) được `StorageResolver` xác định theo từng hội thánh dựa trên bảng `content.storageProviders`. Khác với các nhà cung cấp singleton `churchapps`/`ministrystuff`, nhà cung cấp BYOS giữ thông tin xác thực riêng cho từng hội thánh, nên `StorageResolver.forChurch` tạo một thể hiện mới cho mỗi yêu cầu từ dòng dữ liệu của hội thánh đó. Các triển khai nằm cạnh resolver trong `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, cùng `ByosAuth` (đổi mã OAuth lấy token và làm mới token theo cơ chế single-flight — Dropbox xoay vòng refresh token, nên các yêu cầu làm mới được loại trùng theo cách tương tự `ProviderProxyController`).
 
 `storageProviders` lưu thông tin xác thực: `accessToken`/`refreshToken`/`tokenExpiresAt` (được mã hóa, bộ ba OAuth) hoặc `apiKey`/`apiSecret` + JSON `settings` (`{endpoint, region, bucket, publicBase}`, cho S3). Token không bao giờ được gửi về client — `GET /content/storage/providers` che các thông tin bí mật và trả về giá trị boolean `connected`.
 

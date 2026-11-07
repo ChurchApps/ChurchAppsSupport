@@ -1,5 +1,7 @@
 ---
-title: "Quyên góp"
+title: "Quyên góp trong Cổng thành viên B1.church"
+sidebar_label: "Quyên góp"
+description: "Quyên góp một lần hoặc định kỳ cho nhà thờ qua B1.church, có hoặc không cần tài khoản, và xem lại lịch sử quyên góp sau đó."
 ---
 
 # Quyên góp

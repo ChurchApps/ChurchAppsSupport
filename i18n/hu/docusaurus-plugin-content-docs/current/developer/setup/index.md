@@ -1,5 +1,6 @@
 ---
 title: "Beállítás"
+description: "Helyi fejlesztési mód a ChurchApps-projektekhez: frontendhez a közös demó API-k, backendhez a teljes stack helyi futtatása MySQL-lel."
 ---
 
 # Beállítás
@@ -40,15 +41,15 @@ Ezzel a megközelítéssel már percek alatt elkezdhetsz frontend-módosítások
 
 ### 2. Minden helyi futtatása
 
-Ha az API kódját szeretnéd módosítani, vagy offline szeretnél dolgozni, a teljes rendszert helyben futtathatod. Ehhez MySQL 8.0+ és további beállítások szükségesek. A részletes lépésekért lásd az [API helyi beállítása](../api/local-setup) útmutatót.
+Ha az API kódját szeretnéd módosítani, vagy offline szeretnél dolgozni, a teljes rendszert helyben futtathatod. Ehhez MySQL 8.0+ és további beállítások szükségesek. A részletes lépésekért lásd az [API helyi beállítása](../api/local-setup.md) útmutatót.
 
 ## Első lépések
 
 Kövesd ezeket az oldalakat a megadott sorrendben:
 
-1. **[Előfeltételek](prerequisites)** -- A szükséges eszközök telepítése (Node.js, Git, MySQL stb.)
-2. **[Projektáttekintés](project-overview)** -- Ismerd meg, milyen projektek léteznek és mire valók
-3. **[Környezeti változók](environment-variables)** -- A `.env` fájlok beállítása, hogy mindent összekapcsolj
+1. **[Előfeltételek](./prerequisites.md)** -- A szükséges eszközök telepítése (Node.js, Git, MySQL stb.)
+2. **[Projektáttekintés](./project-overview.md)** -- Ismerd meg, milyen projektek léteznek és mire valók
+3. **[Környezeti változók](./environment-variables.md)** -- A `.env` fájlok beállítása, hogy mindent összekapcsolj
 
 :::info
 Minden ChurchApps-projekt önálló Git-tárolóként működik. Csak azokat a projekteket kell klónoznod, amelyeken dolgozni szeretnél.

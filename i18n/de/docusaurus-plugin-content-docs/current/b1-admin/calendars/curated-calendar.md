@@ -1,5 +1,6 @@
 ---
 title: "Kuratierter Kalender"
+description: "Richten Sie in B1 Admin einen gemeindeweiten kuratierten Kalender ein, der Termine aus mehreren Gruppen zusammenführt, und teilen Sie ihn auf Ihrer Website, per ICS-Abo oder als Download."
 ---
 
 # Kuratierter Kalender
@@ -15,7 +16,7 @@ Ein kuratierter Kalender fasst Veranstaltungen mehrerer Gruppen in einer gemeins
 
 - Richten Sie die [Gruppen](../groups/creating-groups.md) ein, deren Veranstaltungen Sie aufnehmen möchten.
 - Stellen Sie sicher, dass die Gruppenleitenden Veranstaltungen zu ihren jeweiligen Gruppen hinzugefügt haben.
-- Machen Sie sich mit den Grundlagen von [Kalender erstellen](creating-calendars) vertraut.
+- Machen Sie sich mit den Grundlagen von [Kalender erstellen](./creating-calendars.md) vertraut.
 
 </div>
 
@@ -61,5 +62,5 @@ Auf dem kuratierten Kalender auf Ihrer Website und in seinem ICS-Abo erscheinen 
 
 ## Nächste Schritte
 
-- [Kalender erstellen](creating-calendars) -- Die Grundlagen der Kalendererstellung kennenlernen
-- [Überblick über Kalender](./) -- Zurück zur Übersicht der Kalender
+- [Kalender erstellen](./creating-calendars.md) -- Die Grundlagen der Kalendererstellung kennenlernen
+- [Überblick über Kalender](./index.md) -- Zurück zur Übersicht der Kalender

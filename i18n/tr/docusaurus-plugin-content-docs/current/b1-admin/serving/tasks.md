@@ -1,5 +1,6 @@
 ---
 title: "Görevler"
+description: "B1 Admin'de görev oluşturun, atayın ve kapatın; bunları Hizmet > Görevlerim altında bulun ve takip işlerinin unutulmaması için son tarih hatırlatmaları ayarlayın."
 ---
 
 # Görevler

@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Személyek és csoport- vagy mentett listatagság szinkronizálása a B1 Admin-ból Mailchimp-közönséghez címkékként, beállítással és hibaelhárítással."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ A kezdeti betöltést a Mailchimp importálójával végezve Ön megtartja az ir
 
 ## További receptek (Zapier / Make)
 
-A közönségszinkronizáláson túli feladatok, például adakozók címkézése a `donation.created` eseményre, fordított irányú szinkronizálás Mailchimpből a B1-be, vagy teljesen más e-mail-platformra (Constant Contact, Brevo stb.) történő szinkronizálás továbbra is elérhetők a [Zapier](../zapier) vagy a [Make](../make) segítségével. Ezek ugyanazokra a webhook-eseményekre indulnak:
+A közönségszinkronizáláson túli feladatok, például adakozók címkézése a `donation.created` eseményre, fordított irányú szinkronizálás Mailchimpből a B1-be, vagy teljesen más e-mail-platformra (Constant Contact, Brevo stb.) történő szinkronizálás továbbra is elérhetők a [Zapier](../zapier.md) vagy a [Make](../make.md) segítségével. Ezek ugyanazokra a webhook-eseményekre indulnak:
 
 - **Adakozók címkézése:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Kétirányú:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Ha korábban a személy- és csoportszinkronizálást Zapier-en keresztül áll�
 
 - [Webhooks (fejlesztői referencia)](/docs/developer/api/webhooks) — a háttérben működő motor, az eseménykatalógus, a kézbesítés és az újrapróbálkozás működése
 - [Mentett listák](/docs/b1-admin/people/lists) — szabályalapú közönségek, amelyek természetesen illeszkednek a Mailchimp-címkékhez
-- [Zapier (áttekintés)](../zapier) — a közönségszinkronizáláson túli receptekhez
+- [Zapier (áttekintés)](../zapier.md) — a közönségszinkronizáláson túli receptekhez

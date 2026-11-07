@@ -1,5 +1,6 @@
 ---
 title: "Doing-endpoints"
+description: "Endpoint-referens för Doing API bakom tjänsteplaner, volontäruppdrag, uppgifter och automatiseringar i B1 Admin, med sökvägar, autentisering och behörigheter."
 ---
 
 # Doing-endpoints
@@ -278,6 +279,6 @@ Vidarebefordrar förfrågningar till externa innehållsleverantörer (till exemp
 
 ## Relaterade sidor
 
-- [Endpoints för medlemskap](./membership) — Personer, grupper, roller och behörigheter
-- [Endpoints för närvaro](./attendance) — Spårning av gudstjänster och besök
-- [Modulstruktur](../module-structure) — Mönster för kodorganisation
+- [Endpoints för medlemskap](./membership.md) — Personer, grupper, roller och behörigheter
+- [Endpoints för närvaro](./attendance.md) — Spårning av gudstjänster och besök
+- [Modulstruktur](../module-structure.md) — Mönster för kodorganisation

@@ -1,5 +1,7 @@
 ---
-title: "Lektioner (utfasad)"
+title: "Avvecklad fliken Lessons i B1.church"
+sidebar_label: "Lektioner (utfasad)"
+description: "Fliken Lessons i B1.church är avvecklad. Hitta var lektionsmaterialet nu finns: bläddra på Lessons.church och spela upp det på klassrums-TV:ar med FreePlay."
 ---
 
 # Lektioner (utfasad)
@@ -9,7 +11,7 @@ Den inbäddade fliken **Lektioner** på B1.church har utfasats. Uppspelning av l
 
 Om du vill bläddra bland, schemalägga eller redigera läroplansmaterial direkt loggar du in på [Lessons.church](https://lessons.church) i din webbläsare. Om du vill spela upp lektioner på en TV i klassrummet installerar du [FreePlay](/docs/freeplay/getting-started/) på din TV-enhet.
 
-Föräldrar till grupper som är kopplade till en lektionsplanstyp i B1Admin ser **veckans lektion** på sidan [gruppdetaljer](/docs/b1-church/groups/group-details.md), inte på den här utfasade fliken.
+Föräldrar till grupper som är kopplade till en lektionsplanstyp i B1Admin ser **veckans lektion** på sidan [gruppdetaljer](../groups/group-details.md), inte på den här utfasade fliken.
 :::
 
 <div class="article-intro">

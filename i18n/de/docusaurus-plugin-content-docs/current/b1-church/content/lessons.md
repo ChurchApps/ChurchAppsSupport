@@ -1,5 +1,7 @@
 ---
-title: "Lektionen (Veraltet)"
+title: "Veralteter Reiter Lektionen in B1.church"
+sidebar_label: "Lektionen (Veraltet)"
+description: "Der Reiter Lektionen in B1.church ist veraltet. Lektionen finden Sie jetzt auf Lessons.church und können sie mit FreePlay auf Klassenraum-TVs abspielen."
 ---
 
 # Lektionen (Veraltet)
@@ -9,7 +11,7 @@ Die eingebettete Registerkarte **Lektionen** auf B1.church ist veraltet. Die Wie
 
 Um Lehrplan direkt zu durchsuchen, zu planen oder zu bearbeiten, melden Sie sich in Ihrem Browser bei [Lessons.church](https://lessons.church) an. Um Lektionen auf einem Klassenzimmer-Fernseher abzuspielen, installieren Sie [FreePlay](/docs/freeplay/getting-started/) auf Ihrem Fernseh-Gerät.
 
-Eltern von Gruppen, die einem Lehrplanktyp in B1Admin zugeordnet sind, sehen **diese Woche's Lektion** auf der Seite [Gruppendetails](/docs/b1-church/groups/group-details.md) – nicht auf dieser veralteten Registerkarte.
+Eltern von Gruppen, die einem Lehrplanktyp in B1Admin zugeordnet sind, sehen **diese Woche's Lektion** auf der Seite [Gruppendetails](../groups/group-details.md) – nicht auf dieser veralteten Registerkarte.
 :::
 
 <div class="article-intro">

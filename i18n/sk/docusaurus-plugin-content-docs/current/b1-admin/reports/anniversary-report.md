@@ -1,5 +1,6 @@
 ---
 title: "Zoznam výročí"
+description: "Zostavte v B1 Admin zoznam všetkých, ktorí majú v zvolenom mesiaci výročie svadby. Dátumy sa zobrazia vo výsledkoch a dajú sa exportovať do tabuľky."
 ---
 
 # Zoznam výročí

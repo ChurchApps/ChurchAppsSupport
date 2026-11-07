@@ -1,5 +1,6 @@
 ---
 title: "Seznam obletnic"
+description: "Poiščite vse, ki imajo v izbranem mesecu poročni jubilej, v B1 Admin. Datumi so prikazani v rezultatih, seznam pa lahko izvozite v preglednico za biltene ali kartice."
 ---
 
 # Seznam obletnic

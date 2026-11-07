@@ -1,5 +1,7 @@
 ---
-title: "Přihlášení"
+title: "Přihlášení do B1 Mobile"
+sidebar_label: "Přihlášení"
+description: "Přihlaste se do aplikace B1 Mobile účtem ChurchApps, zaregistrujte nový účet nebo obnovte zapomenuté heslo pomocí 6místného kódu."
 ---
 
 # Přihlášení
@@ -13,7 +15,7 @@ B1 Mobile používá stejný účet ChurchApps, jaký máte na B1.church a dalš
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte B1 Mobile](./installing) na své zařízení iOS nebo Android
+- [Nainstalujte B1 Mobile](./installing.md) na své zařízení iOS nebo Android
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile používá stejný účet ChurchApps, jaký máte na B1.church a dalš
 3. Zadejte svou **e-mailovou adresu** a **heslo**.
 4. Klepněte na **Přihlásit se**.
 
-Po přihlášení se dostanete na [přehled](../dashboard/). Pokud jste ještě nevybrali sbor, budete vyzváni k jeho vyhledání a výběru.
+Po přihlášení se dostanete na [přehled](../dashboard/index.md). Pokud jste ještě nevybrali sbor, budete vyzváni k jeho vyhledání a výběru.
 
 ## Vytvoření nového účtu
 

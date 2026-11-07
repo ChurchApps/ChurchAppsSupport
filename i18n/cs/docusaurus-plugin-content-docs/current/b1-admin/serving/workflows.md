@@ -1,5 +1,6 @@
 ---
 title: "Pracovní postupy"
+description: "Vytvářejte nástěnky v B1 Admin ve stylu Kanban pro následné kroky s automatickými e-maily, SMS a spouštěči, které lidi přidají samy."
 ---
 
 # Pracovní postupy

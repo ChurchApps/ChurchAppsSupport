@@ -1,5 +1,6 @@
 ---
 title: "Pag-Bulk Edit ng mga Tao"
+description: "I-update nang sabay-sabay ang membership status, marital status, kasarian, opt-out, custom na Yes/No field, o membership sa grupo ng maraming tao sa B1 Admin."
 ---
 
 # Pag-Bulk Edit ng mga Tao

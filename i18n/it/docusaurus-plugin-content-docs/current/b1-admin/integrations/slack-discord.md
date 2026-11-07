@@ -1,5 +1,6 @@
 ---
 title: "Slack e Discord"
+description: "Pubblica in un canale Slack o Discord gli eventi di B1 Admin, come nuove persone, donazioni e moduli, con un webhook in ingresso, senza Zapier."
 ---
 
 # Slack e Discord
@@ -114,7 +115,7 @@ Se qualcosa non è riuscito (badge rosso `failed` o `exhausted`), la finestra di
 
 - **Nessun messaggio appare + stato di consegna `400`** — di solito il tipo di connettore è impostato su **Standard** ma l'URL è uno di Slack/Discord. Slack/Discord rifiutano l'envelope grezzo. Cambia il dropdown su **Slack** o **Discord** e rimanda il test.
 - **Webhook disabilitato automaticamente** — dopo 3 consegne consecutive non riuscite B1 disattiva il webhook. Correggi l'URL (o ruotalo su Slack/Discord) e attiva **Attivo** di nuovo.
-- **Il messaggio è arrivato ma manca dettagli** — ogni piattaforma di chat limita la dimensione del messaggio. I messaggi di B1 sono one-liner per progettazione; per notifiche più ricche usa [Zapier](./zapier) o [Make](./make) per comporre un messaggio Slack più completo tramite le loro azioni Slack.
+- **Il messaggio è arrivato ma manca dettagli** — ogni piattaforma di chat limita la dimensione del messaggio. I messaggi di B1 sono one-liner per progettazione; per notifiche più ricche usa [Zapier](./zapier.md) o [Make](./make.md) per comporre un messaggio Slack più completo tramite le loro azioni Slack.
 
 ## Cambio dei tipi di connettore in seguito
 
@@ -122,6 +123,6 @@ Puoi cambiare il tipo di connettore su un webhook esistente — ha effetto alla 
 
 ## Vedi anche
 
-- [Zapier](./zapier) — per flussi di lavoro multi-step attivati da eventi B1
-- [Make](./make) — builder di scenari visivi
+- [Zapier](./zapier.md) — per flussi di lavoro multi-step attivati da eventi B1
+- [Make](./make.md) — builder di scenari visivi
 - [Webhook (riferimento per sviluppatori)](/docs/developer/api/webhooks) — il formato completo del payload + firma se mai punti un webhook al tuo server

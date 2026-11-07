@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Sett opp nettbasert giving"
+description: "Sett opp gaver på nett i B1 Admin: opprett gavefond, koble til Stripe og legg til en Donate-side på B1.church-nettstedet for medlemmer."
 ---
 
 # Sett opp nettbasert giving
@@ -70,7 +71,7 @@ Bruk Stripes testmodus først hvis du vil verifisere uten ekte trekk, og bytt de
 Spre budskapet slik at medlemmene vet at de kan gi på nett.
 
 1. Del giving-adressen via nettstedet ditt, e-postnyhetsbrev, menighetsblad og sosiale medier
-2. Medlemmer kan også gi via [B1 Mobile-appen](../../b1-mobile/giving/), gitfunksjonen er innebygd
+2. Medlemmer kan også gi via [B1 Mobile-appen](../../b1-mobile/giving/index.md), gitfunksjonen er innebygd
 
 :::info
 Medlemmer som logger inn, kan lagre betalingsmetoder, sette opp faste gaver og se gavehistorikken sin. Anonym giving fungerer også, uten innlogging.

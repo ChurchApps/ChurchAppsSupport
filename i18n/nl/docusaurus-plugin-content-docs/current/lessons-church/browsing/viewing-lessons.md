@@ -1,5 +1,6 @@
 ---
 title: "Viewing Lessons"
+description: "Doorloop het openen van een les in Lessons.church, lees de onderdelen en rolacties, vind downloads en schakel vóór de les naar een andere leeftijdsgroep-locatie."
 ---
 
 # Viewing Lessons

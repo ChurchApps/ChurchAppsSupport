@@ -33,7 +33,7 @@ Kvóta = bajty plánu, počítané z `storageObjects` (`stored` + rezervácie `p
 
 Poznámka k rozsahu: výber poskytovateľa pokrýva tok **súborov a zdrojov** obsahu, teda miesto, kde sa ukladajú hromadné médiá. Nahrávania galérie, log a fotografií zostávajú u predvoleného poskytovateľa. Vypisujú kľúče zo úložiska a URL zostavujú na strane klienta, takže zakorenenie podľa cirkvi sa na ne zatiaľ nevzťahuje.
 
-Rovnaký mechanizmus umožňuje aj [Vlastné úložisko (Bring-Your-Own Storage)](./byos-storage): cirkvi môžu namiesto plánu MinistryStuff prepojiť Disk Google, Dropbox, OneDrive alebo vlastný bucket kompatibilný s S3.
+Rovnaký mechanizmus umožňuje aj [Vlastné úložisko (Bring-Your-Own Storage)](./byos-storage.md): cirkvi môžu namiesto plánu MinistryStuff prepojiť Disk Google, Dropbox, OneDrive alebo vlastný bucket kompatibilný s S3.
 
 ## Fakturácia
 

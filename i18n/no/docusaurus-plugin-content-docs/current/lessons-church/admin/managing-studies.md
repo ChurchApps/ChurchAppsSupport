@@ -1,5 +1,6 @@
 ---
 title: "Administrere studier"
+description: "Opprett, rediger og kategoriser studier i et program i Lessons.church-administrasjonen, og legg til seriesammendrag eller nyhetsbrevmaler for hvert av dem."
 ---
 
 # Administrere studier

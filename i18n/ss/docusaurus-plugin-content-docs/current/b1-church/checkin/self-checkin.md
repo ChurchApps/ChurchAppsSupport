@@ -1,5 +1,7 @@
 ---
-title: "Kungena Wedvwa"
+title: "Kuzingena Yodvwa ku-Portal Yelilungu le-B1.church"
+sidebar_label: "Kungena Wedvwa"
+description: "Zingena wena nemndeni wakho ekusebenteni kusuka ku-portal yelilungu le-B1.church, ukhetse sikhatsi sesevisi namaqembu ngetinyatselo letimbalwa letisheshako."
 ---
 
 # Kungena Wedvwa

@@ -1,5 +1,7 @@
 ---
-title: "Lecciones"
+title: "Pantalla de Lecciones en B1 Mobile (retirada)"
+sidebar_label: "Lecciones"
+description: "Página de Lecciones (obsoleta): por qué se retiró la pantalla de Lecciones dentro de la aplicación B1 Mobile y dónde encontrar el currículo ahora (FreePlay o Lessons.church)."
 ---
 
 # Lecciones
@@ -13,7 +15,7 @@ La pantalla de Lecciones te da acceso al currículo y materiales de aprendizaje 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Tu iglesia debe tener currículo configurado a través de Lessons.church
 
 </div>
@@ -46,5 +48,5 @@ La pantalla de Lecciones aparece cuando tu iglesia ha configurado currículo a t
 
 ## Artículos Relacionados
 
-- [Biblia](./bible) -- Lee las Escrituras junto con tus lecciones
-- [Sermones](./sermons) -- Mira sermones que complementen tus estudios
+- [Biblia](./bible.md) -- Lee las Escrituras junto con tus lecciones
+- [Sermones](./sermons.md) -- Mira sermones que complementen tus estudios

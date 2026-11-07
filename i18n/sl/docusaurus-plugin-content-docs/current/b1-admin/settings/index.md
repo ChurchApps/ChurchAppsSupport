@@ -1,5 +1,6 @@
 ---
 title: "Nastavitve"
+description: "Spoznajte nastavitve v B1 Admin: podatke o cerkvi,blagovno znamko, lokacije, polja po meri, uporabniške vloge in krmarjenje po aplikaciji B1.church."
 ---
 
 # Nastavitve

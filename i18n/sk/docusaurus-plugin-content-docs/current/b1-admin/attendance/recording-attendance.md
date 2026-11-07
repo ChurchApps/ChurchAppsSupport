@@ -1,5 +1,6 @@
 ---
 title: "Zaznamenávanie účasti"
+description: "Zaznamenajte účasť na stretnutí skupiny v B1 Admin: vytvorte reláciu, označte prítomných, uložte poznámky a vytlačte prezenčku alebo exportujte do tabuľky."
 ---
 
 # Zaznamenávanie účasti

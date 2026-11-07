@@ -1,5 +1,7 @@
 ---
-title: "Wyświetlanie planów"
+title: "Przeglądanie planów służby w B1 Mobile"
+sidebar_label: "Wyświetlanie planów"
+description: "Sprawdź nadchodzący i miniony harmonogram służby w B1 Mobile, czytaj szczegóły planu i porządek nabożeństwa oraz drukuj plany na próby lub zaplecze."
 ---
 
 # Wyświetlanie planów
@@ -13,7 +15,7 @@ Ekran planów w B1 Mobile daje pełny obraz harmonogramu Twojej służby. Podzie
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 - Administrator Twojego kościoła musi przypisać Cię przynajmniej do jednego planu służby
 
 </div>
@@ -61,4 +63,4 @@ Otrzymasz [powiadomienia push](../community/notifications.md), gdy zostaniesz pr
 
 ## Powiązane artykuły
 
-- [Zapis na wolontariat](./volunteer-signup) -- Przeglądaj i zapisuj się na wolne miejsca wolontariuszy
+- [Zapis na wolontariat](./volunteer-signup.md) -- Przeglądaj i zapisuj się na wolne miejsca wolontariuszy

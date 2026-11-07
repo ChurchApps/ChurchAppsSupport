@@ -1,5 +1,6 @@
 ---
 title: "Gruppen-Gesundheit"
+description: "Prüfen Sie in B1 Admin den Gruppenzustand mit einer 90-Tage-Tabelle zu Mitgliedern, Beitritten, Austritten, Fluktuation und durchschnittlicher Anwesenheit, um Gruppen mit Betreuungsbedarf zu erkennen."
 ---
 
 # Gruppen-Gesundheit
@@ -13,8 +14,8 @@ Das Dashboard "Groups Health" (Gruppen-Gesundheit) gibt Ihnen einen Überblick d
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen mindestens ein paar Gruppen mit Mitgliedern, um aussagekräftige Daten zu sehen. Siehe [Creating Groups](creating-groups).
-- Anwesenheitsdaten werden aus aufgezeichneten Sitzungen gezogen. Siehe den Bereich [Attendance](../attendance/).
+- Sie benötigen mindestens ein paar Gruppen mit Mitgliedern, um aussagekräftige Daten zu sehen. Siehe [Creating Groups](./creating-groups.md).
+- Anwesenheitsdaten werden aus aufgezeichneten Sitzungen gezogen. Siehe den Bereich [Attendance](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Wenn Sie auf einen Gruppennamen klicken, werden Sie direkt zur Gruppendetailseit
 
 ## Verwandte Artikel
 
-- [Creating Groups](creating-groups) (Gruppen erstellen) – Gruppen einrichten
-- [Group Members](group-members) (Gruppenmitglieder) – Gruppenmitgliedschaft verwalten
-- [Tracking Attendance](../attendance/tracking-attendance) (Anwesenheit verfolgen) – Aufzeichnungsanwesenheitssitzungen, die dieses Dashboard versorgen
+- [Creating Groups](./creating-groups.md) (Gruppen erstellen) – Gruppen einrichten
+- [Group Members](./group-members.md) (Gruppenmitglieder) – Gruppenmitgliedschaft verwalten
+- [Tracking Attendance](../attendance/tracking-attendance.md) (Anwesenheit verfolgen) – Aufzeichnungsanwesenheitssitzungen, die dieses Dashboard versorgen

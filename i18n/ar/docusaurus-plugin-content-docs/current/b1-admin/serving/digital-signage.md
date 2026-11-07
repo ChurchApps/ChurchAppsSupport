@@ -1,5 +1,6 @@
 ---
 title: "الشاشات الرقمية"
+description: "أرسل محتوى الدروس إلى تلفاز في الردهة أو الممر عبر رابط تغذية للوحات الإعلانية الرقمية في B1 Admin يعرض الخطة الحالية دائمًا، أو استخدم أجهزة FreePlay TV."
 ---
 
 # الشاشات الرقمية
@@ -14,7 +15,7 @@ title: "الشاشات الرقمية"
 <h4>قبل أن تبدأ</h4>
 
 - أنشئ [نوع خطة](./plans.md) مع [Lessons.church](../../b1-church/content/lessons.md) أو أي محتوى دروس آخر مجدول
-- احصل على حساب [SignPresenter](https://www.signpresenter.com) وجهاز مُعدّ لعرضه، أو تلفازًا يعمل ببرنامج [FreePlay](../../freeplay/)
+- احصل على حساب [SignPresenter](https://www.signpresenter.com) وجهاز مُعدّ لعرضه، أو تلفازًا يعمل ببرنامج [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ title: "الشاشات الرقمية"
 
 ## استخدام أجهزة FreePlay بدلًا من ذلك
 
-إذا كانت شاشاتك تعمل ببرنامج [FreePlay](../../freeplay/)، فلن تحتاج إلى رابط الخلاصة. تحتوي نافذة **Digital Signage Feed** على رابط إلى **admin.freeplay.church/calendar**، حيث يمكنك جدولة نوع الخطة هذا على أجهزة FreePlay التلفازية:
+إذا كانت شاشاتك تعمل ببرنامج [FreePlay](../../freeplay/index.md)، فلن تحتاج إلى رابط الخلاصة. تحتوي نافذة **Digital Signage Feed** على رابط إلى **admin.freeplay.church/calendar**، حيث يمكنك جدولة نوع الخطة هذا على أجهزة FreePlay التلفازية:
 
 1. انقر على رابط **admin.freeplay.church/calendar** في النافذة. يستخدم FreePlay Admin تسجيل الدخول نفسه المستخدم في B1 Admin.
 2. اختر مجموعة الشاشات الخاصة بأجهزة التلفاز لديك، ثم انقر على **Add schedule**.
 3. ضمن **Play**، اختر نوع الخطة من **Service plans**. ستجده مُعلَّمًا بعبارة **(current plan)**.
 4. حدد الأيام والأوقات، ثم انقر على **Save**.
 
-تعرض أجهزة التلفاز الخطة الحالية لنوع الخطة كل أسبوع، في الأوقات التي تحددها. يعمل هذا أيضًا مع دروس Go Curriculum، بما في ذلك الخطط التي خصصتها. يسجّل FreePlay الدخول باستخدام حساب Go Curriculum المرتبط بالخدمة ضمن **Content Providers** (راجع [جدولة الدروس](./scheduling-lessons.md))، أو باستخدام اتصال Go Curriculum الخاص بالكنيسة إذا لم تكن للخدمة حساب مرتبط. راجع [جدولة التقويم](../../freeplay/scheduled-mode/scheduling-the-calendar) لمعرفة جميع الخيارات، و[إقران شاشة](../../freeplay/scheduled-mode/pairing-a-screen) لإضافة تلفاز.
+تعرض أجهزة التلفاز الخطة الحالية لنوع الخطة كل أسبوع، في الأوقات التي تحددها. يعمل هذا أيضًا مع دروس Go Curriculum، بما في ذلك الخطط التي خصصتها. يسجّل FreePlay الدخول باستخدام حساب Go Curriculum المرتبط بالخدمة ضمن **Content Providers** (راجع [جدولة الدروس](./scheduling-lessons.md))، أو باستخدام اتصال Go Curriculum الخاص بالكنيسة إذا لم تكن للخدمة حساب مرتبط. راجع [جدولة التقويم](../../freeplay/scheduled-mode/scheduling-the-calendar.md) لمعرفة جميع الخيارات، و[إقران شاشة](../../freeplay/scheduled-mode/pairing-a-screen.md) لإضافة تلفاز.
 
 :::note
 لا يتضمن رابط الخلاصة وسائط Go Curriculum، لأن هذا المحتوى يتطلب تسجيل دخول كنيستك إلى Go Curriculum. لعرض درس Go Curriculum على تلفاز في الردهة أو الفصل، استخدم FreePlay.
@@ -53,4 +54,4 @@ title: "الشاشات الرقمية"
 
 - إدارة الخطط التي تغذي شاشة العرض هذه من صفحة [الخطط](./plans.md)
 - جدولة المحتوى باستخدام [Lessons.church](./scheduling-lessons.md)
-- وضع أجهزة FreePlay التلفازية على تقويم باستخدام [الوضع المجدول](../../freeplay/scheduled-mode/)
+- وضع أجهزة FreePlay التلفازية على تقويم باستخدام [الوضع المجدول](../../freeplay/scheduled-mode/index.md)

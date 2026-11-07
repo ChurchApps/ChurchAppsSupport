@@ -1,5 +1,7 @@
 ---
-title: "Detalles del Grupo"
+title: "Detalles del grupo en la aplicación B1 Mobile"
+sidebar_label: "Detalles del Grupo"
+description: "Vea lo que muestra la página de detalles de un grupo en B1 Mobile, incluida la información del grupo, publicaciones y miembros, y cómo abrirla desde la pantalla de Grupos."
 ---
 
 # Detalles del Grupo
@@ -13,7 +15,7 @@ Cuando tocas un grupo desde la pantalla de Grupos, serás llevado a la página d
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Abre la pantalla de [Grupos](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Tu grupo más visitado aparece como la tarjeta principal en la parte superior de
 
 ## Artículos Relacionados
 
-- [Línea de Tiempo del Grupo](./group-timeline) -- Conoce el feed unificado de actividad de todos tus grupos
+- [Línea de Tiempo del Grupo](./group-timeline.md) -- Conoce el feed unificado de actividad de todos tus grupos
 - [Mensajería](../community/messaging.md) -- Envía mensajes privados a los miembros del grupo

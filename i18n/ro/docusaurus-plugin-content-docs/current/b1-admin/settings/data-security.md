@@ -1,5 +1,6 @@
 ---
 title: "Securitatea datelor"
+description: "Vezi cum protejează ChurchApps datele bisericii tale în B1 Admin: de la parole criptate și HTTPS la baze de date separate și instrumente GDPR."
 ---
 
 # Securitatea datelor

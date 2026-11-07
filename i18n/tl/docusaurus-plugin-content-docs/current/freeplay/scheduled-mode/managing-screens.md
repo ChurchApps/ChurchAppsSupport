@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng mga Screen at Group"
+description: "Tingnan kung online at handa para sa Linggo ang FreePlay TV, i-edit ang screen settings, at mag-set up ng grupong may iisang kalendaryo sa FreePlay Admin."
 ---
 
 # Pamamahala ng mga Screen at Group
@@ -14,7 +15,7 @@ Ipinapakita ng pahinang **Mga Screen** sa FreePlay Admin ang bawat TV na naka-pa
 <h4>Bago Ka Magsimula</h4>
 
 - Mag-sign in sa FreePlay Admin sa [admin.freeplay.church](https://admin.freeplay.church)
-- [I-pair ang kahit isang screen](./pairing-a-screen)
+- [I-pair ang kahit isang screen](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Gamitin ang **I-present** para i-play ang kalendaryo ng screen sa browser mo, o 
 
 I-click ang label ng screen para buksan ang pahina nito. Sa kaliwa:
 
-- **I-present sa browser** -- I-play ang kalendaryo ng screen na ito nang full screen sa browser mo, gaya ng itsura nito sa TV. Tingnan ang [Presenting from a Browser](./scheduled-playback#presenting-from-a-browser)
+- **I-present sa browser** -- I-play ang kalendaryo ng screen na ito nang full screen sa browser mo, gaya ng itsura nito sa TV. Tingnan ang [Presenting from a Browser](./scheduled-playback.md#presenting-from-a-browser)
 - **I-edit** -- Baguhin ang label, group, o mode
 - **Higit pa** > **I-unpair** -- Idiskonekta ang TV. Babalik ito sa pagpapakita ng pairing code
 
@@ -93,6 +94,6 @@ Kapag binura ang isang group, mabubura rin ang schedule nito. Mamamatay ang mga 
 
 ## Mga Kaugnay na Artikulo
 
-- **[Pairing a Screen](./pairing-a-screen)** -- Magdagdag ng bagong TV
-- **[Scheduling the Calendar](./scheduling-the-calendar)** -- Itakda kung ano ang pinapatugtog ng bawat group at ang default loop nito
-- **[Scheduled Playback on the TV](./scheduled-playback)** -- Ano ang ibig sabihin ng petsang "Ready through" sa mismong TV
+- **[Pairing a Screen](./pairing-a-screen.md)** -- Magdagdag ng bagong TV
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** -- Itakda kung ano ang pinapatugtog ng bawat group at ang default loop nito
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** -- Ano ang ibig sabihin ng petsang "Ready through" sa mismong TV

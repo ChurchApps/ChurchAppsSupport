@@ -1,5 +1,6 @@
 ---
 title: "Customization"
+description: "Learn how to hide sections, roles, or actions in a Lessons.church lesson and reorder content, either for one classroom or for all classrooms in your church."
 ---
 
 # Customization

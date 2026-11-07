@@ -1,5 +1,6 @@
 ---
 title: "Validarea planurilor și notificările"
+description: "Verifică planurile din B1 Admin pentru poziții neocupate, conflicte de program și voluntari indisponibili, apoi notifică întreaga echipă dintr-un clic."
 ---
 
 # Validarea planurilor și notificarea voluntarilor

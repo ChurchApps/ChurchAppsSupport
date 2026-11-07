@@ -1,5 +1,6 @@
 ---
 title: "Guide: Generate Year-End Giving Reports"
+description: "In B1 Admin, finish the year's donation records, check fund tax settings, and generate tax-deductible giving statements for every donor."
 ---
 
 # Generate Year-End Giving Reports

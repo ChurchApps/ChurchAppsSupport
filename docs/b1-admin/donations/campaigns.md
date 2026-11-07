@@ -1,5 +1,6 @@
 ---
 title: "Campaigns & Pledges"
+description: "Create fundraising campaigns in B1 Admin, record member pledges, and track progress toward a goal against actual donations to each fund."
 ---
 
 # Campaigns & Pledges
@@ -13,7 +14,7 @@ Campaigns let you run a fundraising drive toward a specific goal — a building 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up your [donation funds](funds) — each campaign is tied to a fund
+- Set up your [donation funds](./funds.md) — each campaign is tied to a fund
 - You need access to the Donations section of B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Click **Edit** on any campaign row (or **Edit Campaign** at the top of the campa
 
 ## Related Articles
 
-- [Recording Donations](recording-donations) — record the actual gifts that fulfill pledges
-- [Funds](funds) — set up the fund to associate with a campaign
-- [Donation Reports](donation-reports) — reporting on donations by fund
+- [Recording Donations](./recording-donations.md) — record the actual gifts that fulfill pledges
+- [Funds](./funds.md) — set up the fund to associate with a campaign
+- [Donation Reports](./donation-reports.md) — reporting on donations by fund

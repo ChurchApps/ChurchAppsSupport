@@ -1,5 +1,6 @@
 ---
 title: "Dienstpläne"
+description: "Ehrenamtseinteilung in B1 Admin: Gottesdienstpläne nach Datum anlegen, aus früheren Wochen kopieren, Positionen zuweisen, Fristen und Erinnerungen setzen."
 ---
 
 # Dienstpläne

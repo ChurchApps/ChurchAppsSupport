@@ -1,5 +1,6 @@
 ---
 title: "Tietoturva"
+description: "Katso, miten ChurchApps suojaa seurakuntasi tietoja B1 Adminissa: salasanojen tiivistys, HTTPS, erilliset tietokannat ja GDPR-työkalut."
 ---
 
 # Tietoturva

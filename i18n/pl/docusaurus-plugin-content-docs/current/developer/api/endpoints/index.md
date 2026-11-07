@@ -1,5 +1,6 @@
 ---
 title: "Referenca API krajnjih tačaka"
+description: "Znajdź każdy punkt końcowy API ChurchApps według modułu, sprawdź metodę HTTP, ścieżkę, autoryzację i uprawnienia oraz zasady zbiorczego zapisu i błędów."
 ---
 
 # Referenca API krajnjih tačaka
@@ -89,10 +90,10 @@ Parametri izvještaja prosljeđuju se kao vrijednosti u query stringu (npr. `?st
 
 | Modul | Osnovna putanja | Opis |
 |-------|-----------------|------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Prijava, registracija, JWT tokeni, OAuth, dozvole |
-| [Membership](./membership) | `/membership/*` | Osobe, crkve, grupe, domaćinstva, uloge, obrasci, postavke |
-| [Attendance](./attendance) | `/attendance/*` | Kampusi, službe, sesije, posjete, zapisi prijava |
-| [Content](./content) | `/content/*` | Stranice, propovijedi, događaji, datoteke, galerije, Biblija, streaming |
-| [Giving](./giving) | `/giving/*` | Donacije, fondovi, platni gateway-i, pretplate |
-| [Messaging](./messaging) | `/messaging/*` | Razgovori, obavještenja, uređaji, SMS |
-| [Doing](./doing) | `/doing/*` | Planovi, zadaci, zaduženja, automatizacije, raspoređivanje |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Prijava, registracija, JWT tokeni, OAuth, dozvole |
+| [Membership](./membership.md) | `/membership/*` | Osobe, crkve, grupe, domaćinstva, uloge, obrasci, postavke |
+| [Attendance](./attendance.md) | `/attendance/*` | Kampusi, službe, sesije, posjete, zapisi prijava |
+| [Content](./content.md) | `/content/*` | Stranice, propovijedi, događaji, datoteke, galerije, Biblija, streaming |
+| [Giving](./giving.md) | `/giving/*` | Donacije, fondovi, platni gateway-i, pretplate |
+| [Messaging](./messaging.md) | `/messaging/*` | Razgovori, obavještenja, uređaji, SMS |
+| [Doing](./doing.md) | `/doing/*` | Planovi, zadaci, zaduženja, automatizacije, raspoređivanje |

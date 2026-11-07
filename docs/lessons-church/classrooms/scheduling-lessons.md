@@ -1,5 +1,7 @@
 ---
-title: "Scheduling Lessons"
+title: "Scheduling Classroom Lessons in the Portal"
+sidebar_label: "Scheduling Lessons"
+description: "Schedule Lessons.church lessons on a classroom calendar in the B1 Admin portal by picking a program, study, lesson, and age-specific venue for each date."
 ---
 
 # Scheduling Lessons

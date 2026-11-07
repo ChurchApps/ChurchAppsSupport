@@ -1,5 +1,7 @@
 ---
-title: "Introdução"
+title: "Primeiros Passos com o B1 Mobile (Descontinuado)"
+sidebar_label: "Introdução"
+description: "Configure o B1 Mobile no seu celular: encontre o app, entre com sua conta ChurchApps e escolha sua igreja. O B1 Mobile está descontinuado em favor do PWA."
 ---
 
 # Introdução
@@ -25,10 +27,10 @@ Isso é tudo. Uma vez que você tenha selecionado sua igreja, o aplicativo carre
 
 ## Nesta Seção
 
-- [Instalando o Aplicativo](./installing) -- Onde baixar B1 Mobile e requisitos de dispositivo.
-- [Fazendo Login](./logging-in) -- Como fazer login ou criar uma nova conta.
-- [Mudando de Igreja](./switching-churches) -- Como mudar entre igrejas se você pertencer a mais de uma.
+- [Instalando o Aplicativo](./installing.md) -- Onde baixar B1 Mobile e requisitos de dispositivo.
+- [Fazendo Login](./logging-in.md) -- Como fazer login ou criar uma nova conta.
+- [Mudando de Igreja](./switching-churches.md) -- Como mudar entre igrejas se você pertencer a mais de uma.
 
 :::tip
-B1 Mobile usa a mesma conta ChurchApps que todos os outros produtos ChurchApps. Se você já tem uma conta de [B1.church](../../b1-church/), B1 Admin, ou Lessons.church, você pode usar as mesmas credenciais para fazer login.
+B1 Mobile usa a mesma conta ChurchApps que todos os outros produtos ChurchApps. Se você já tem uma conta de [B1.church](../../b1-church/index.md), B1 Admin, ou Lessons.church, você pode usar as mesmas credenciais para fazer login.
 :::

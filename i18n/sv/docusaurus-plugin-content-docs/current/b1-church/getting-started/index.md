@@ -1,5 +1,7 @@
 ---
-title: "Kom igång"
+title: "Komma igång med B1.church medlemsportal"
+sidebar_label: "Kom igång"
+description: "Hitta din kyrkas B1.church-webbplats, skapa ditt medlemskonto och se vad portalen erbjuder, från grupper och gåvor till incheckning och planer."
 ---
 
 # Kom igång med B1.church

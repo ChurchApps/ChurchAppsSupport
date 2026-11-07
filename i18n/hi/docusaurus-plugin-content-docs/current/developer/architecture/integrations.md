@@ -1,5 +1,6 @@
 ---
 title: "इंटीग्रेशन और एक्सटेंशन सतह"
+description: "ChurchApps B1 से जुड़ने के हर तरीके का मानचित्र: REST API, API कुंजियाँ, OAuth, वेबहुक, MCP और सामग्री प्रदाता, हर एक के संदर्भ के लिंक सहित।"
 ---
 
 # इंटीग्रेशन और एक्सटेंशन सतह
@@ -14,12 +15,12 @@ title: "इंटीग्रेशन और एक्सटेंशन सत
 
 अंदर या बाहर जाने के छह तरीके हैं, और वे सभी एक ही auth परत साझा करते हैं:
 
-- **[REST API](../api/api-keys)** — पूरी उत्पाद सतह, किसी भी भाषा से bearer token के साथ कॉल योग्य।
-- **[API keys](../api/api-keys)** — सबसे सरल क्रेडेंशियल: एक `cak_…` token जो एक चर्च में एक व्यक्ति से बंधा होता है।
-- **[OAuth 2.0 & Connected Apps](../api/connected-apps)** — मल्टी-टेनेंट ऐप्स के लिए प्रति-चर्च सहमति; वही JWT जारी करता है जो एक उपयोगकर्ता पाता है।
-- **[Webhooks](../api/webhooks)** — हस्ताक्षरित, टिकाऊ रूप से डिलीवर होने वाले बाहरी इवेंट।
-- **[MCP server](../api/mcp)** — `/mcp` पर REST API के ऊपर AI-उन्मुख रैपर।
-- **[Content providers](../freeplay-content-provider)** — FreePlay और B1 ऐप्स में बाहरी मीडिया लाइब्रेरी के लिए इनबाउंड पथ।
+- **[REST API](../api/api-keys.md)** — पूरी उत्पाद सतह, किसी भी भाषा से bearer token के साथ कॉल योग्य।
+- **[API keys](../api/api-keys.md)** — सबसे सरल क्रेडेंशियल: एक `cak_…` token जो एक चर्च में एक व्यक्ति से बंधा होता है।
+- **[OAuth 2.0 & Connected Apps](../api/connected-apps.md)** — मल्टी-टेनेंट ऐप्स के लिए प्रति-चर्च सहमति; वही JWT जारी करता है जो एक उपयोगकर्ता पाता है।
+- **[Webhooks](../api/webhooks.md)** — हस्ताक्षरित, टिकाऊ रूप से डिलीवर होने वाले बाहरी इवेंट।
+- **[MCP server](../api/mcp.md)** — `/mcp` पर REST API के ऊपर AI-उन्मुख रैपर।
+- **[Content providers](../freeplay-content-provider.md)** — FreePlay और B1 ऐप्स में बाहरी मीडिया लाइब्रेरी के लिए इनबाउंड पथ।
 
 content providers के अलावा हर चीज़ एक ही मोनोलिथिक API (यानी [Api](https://github.com/ChurchApps/Api) रिपॉज़िटरी) से दी जाती है, जिसके मॉड्यूल स्थिर बेस पथों के तहत माउंट होते हैं — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, और `/mcp`।
 
@@ -80,7 +81,7 @@ OAuth access token लॉगिन JWT से बिल्कुल एक ह�
 - कोई स्कोप केवल अनुमतियों को *हटा* सकता है, इसलिए एक स्कोप्ड क्रेडेंशियल कभी सर्वर / डोमेन प्रशासन तक नहीं पहुँच सकता (वे अनुमतियाँ जानबूझकर किसी स्कोप से मैप नहीं हैं)।
 - API keys का `cak_` प्रीफ़िक्स होता है; `CustomAuthProvider.getUser()` उस पर शाखा बनाता है, secret को hash करता है, और हर कॉल पर स्वामी व्यक्ति के लाइव RBAC को फिर से हल करता है।
 
-पूरी स्कोप सूची के लिए देखें [API Keys → Scopes](../api/api-keys#scopes)।
+पूरी स्कोप सूची के लिए देखें [API Keys → Scopes](../api/api-keys.md#scopes)।
 
 ## सतह संदर्भ
 
@@ -90,7 +91,7 @@ OAuth access token लॉगिन JWT से बिल्कुल एक ह�
 
 ### API keys
 
-एक `cak_<prefix>.<secret>` personal access token, जो **B1Admin → Settings → Developer → API Keys** में बनता है। केवल SHA-256 hash संग्रहीत होता है; कच्ची key एक बार दिखाई जाती है। `/membership/apiKeys` पर प्रबंधित (`Api/src/modules/membership/controllers/ApiKeyController.ts`)। किसी एक चर्च की अपनी स्क्रिप्ट्स और Zapier, Make, और Google Sheets जैसे कनेक्टरों के लिए सबसे अच्छा। → **[API Keys](../api/api-keys)**
+एक `cak_<prefix>.<secret>` personal access token, जो **B1Admin → Settings → Developer → API Keys** में बनता है। केवल SHA-256 hash संग्रहीत होता है; कच्ची key एक बार दिखाई जाती है। `/membership/apiKeys` पर प्रबंधित (`Api/src/modules/membership/controllers/ApiKeyController.ts`)। किसी एक चर्च की अपनी स्क्रिप्ट्स और Zapier, Make, और Google Sheets जैसे कनेक्टरों के लिए सबसे अच्छा। → **[API Keys](../api/api-keys.md)**
 
 ### OAuth 2.0 & Connected Apps
 
@@ -102,19 +103,19 @@ OAuth access token लॉगिन JWT से बिल्कुल एक ह�
 
 सार्वजनिक क्लाइंट्स `POST /oauth/register` (RFC 7591 dynamic client registration) से खुद को भी पंजीकृत कर सकते हैं; उन्हें `client_id` मिलता है और कोई secret नहीं, और उनके redirect URIs `https` या loopback होने चाहिए।
 
-**Connected App** किसी दी गई token का चर्च-प्रशासक-उन्मुख दृश्य है, जो `/membership/oauth/connections` पर सूचीबद्ध और रद्द करने योग्य है। कंट्रोलर एक OAuth **relay-session** ब्रिज (`/oauth/relay/*`) भी होस्ट करता है जो एक ब्राउज़र-रहित डिवाइस को *बाहरी* प्रदाता के विरुद्ध साइन-इन पूरा करने देता है। → **[Connected Apps & OAuth](../api/connected-apps)**
+**Connected App** किसी दी गई token का चर्च-प्रशासक-उन्मुख दृश्य है, जो `/membership/oauth/connections` पर सूचीबद्ध और रद्द करने योग्य है। कंट्रोलर एक OAuth **relay-session** ब्रिज (`/oauth/relay/*`) भी होस्ट करता है जो एक ब्राउज़र-रहित डिवाइस को *बाहरी* प्रदाता के विरुद्ध साइन-इन पूरा करने देता है। → **[Connected Apps & OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-केवल बाहर जाने वाली सतह। एक चर्च इवेंट्स के लिए एक सार्वजनिक HTTPS एंडपॉइंट सब्सक्राइब करता है; जब कोई मेल खाने वाला परिवर्तन होता है, तो `WebhookDispatcher.emit(churchId, event, payload)` केवल-id payloads को प्रदर्शन नामों (`personName`, `groupName`, `formName`) से समृद्ध करता है — ये लुकअप तभी चलते हैं जब कोई सब्सक्रिप्शन मेल खाए — एक डिलीवरी रिकॉर्ड करता है, और एक बैकग्राउंड वर्कर retry/backoff और पुनः-डिलीवरी के साथ एक हस्ताक्षरित JSON envelope POST करता है। इंजन `Api/src/shared/webhooks/` में है, प्रति-चर्च CRUD `/membership/webhooks` के तहत (`WebhookController.ts`)। एक `connectorType` फ़ील्ड Slack / Discord के लिए बॉडी का आकार बदलता है; `mailchimp` कनेक्टर इससे आगे जाता है और पूरी HTTP बातचीत स्वयं संभालता है (Mailchimp API के विरुद्ध प्रति-इवेंट method/URL/auth, `webhooks.connectorConfig` में एन्क्रिप्टेड क्रेडेंशियल)। → **[Webhooks](../api/webhooks)**
+केवल बाहर जाने वाली सतह। एक चर्च इवेंट्स के लिए एक सार्वजनिक HTTPS एंडपॉइंट सब्सक्राइब करता है; जब कोई मेल खाने वाला परिवर्तन होता है, तो `WebhookDispatcher.emit(churchId, event, payload)` केवल-id payloads को प्रदर्शन नामों (`personName`, `groupName`, `formName`) से समृद्ध करता है — ये लुकअप तभी चलते हैं जब कोई सब्सक्रिप्शन मेल खाए — एक डिलीवरी रिकॉर्ड करता है, और एक बैकग्राउंड वर्कर retry/backoff और पुनः-डिलीवरी के साथ एक हस्ताक्षरित JSON envelope POST करता है। इंजन `Api/src/shared/webhooks/` में है, प्रति-चर्च CRUD `/membership/webhooks` के तहत (`WebhookController.ts`)। एक `connectorType` फ़ील्ड Slack / Discord के लिए बॉडी का आकार बदलता है; `mailchimp` कनेक्टर इससे आगे जाता है और पूरी HTTP बातचीत स्वयं संभालता है (Mailchimp API के विरुद्ध प्रति-इवेंट method/URL/auth, `webhooks.connectorConfig` में एन्क्रिप्टेड क्रेडेंशियल)। → **[Webhooks](../api/webhooks.md)**
 
 ### MCP server
 
-`/mcp` पर AI-उन्मुख रैपर (`Api/src/modules/mcp/`)। तीन सामान्य टूल — `list_endpoints`, `describe_endpoint`, `api_call` — किसी भी MCP क्लाइंट को पूरी REST सतह गतिशील रूप से दिखाते हैं। Auth वही bearer token है जो बाकी सब पर लागू होता है। OAuth से साइन इन करने वाले क्लाइंट्स (claude.ai कस्टम कनेक्टर्स) के लिए, `/mcp` से 401 एक `WWW-Authenticate` हेडर के साथ आता है जो `/.well-known/oauth-protected-resource` की ओर इशारा करता है, और `/.well-known/oauth-authorization-server` `/membership/oauth` एंडपॉइंट्स, dynamic registration, PKCE, और B1Admin `/oauth` सहमति पृष्ठ का विज्ञापन करता है (`WellKnownController.ts`, `OAuthMetadata.ts`)। `api_call` इन-प्रोसेस Express स्टैक में फिर से प्रवेश करता है, ताकि हर अनुमति और चर्च-स्कोपिंग नियम अब भी लागू रहें। → **[MCP Server](../api/mcp)**
+`/mcp` पर AI-उन्मुख रैपर (`Api/src/modules/mcp/`)। तीन सामान्य टूल — `list_endpoints`, `describe_endpoint`, `api_call` — किसी भी MCP क्लाइंट को पूरी REST सतह गतिशील रूप से दिखाते हैं। Auth वही bearer token है जो बाकी सब पर लागू होता है। OAuth से साइन इन करने वाले क्लाइंट्स (claude.ai कस्टम कनेक्टर्स) के लिए, `/mcp` से 401 एक `WWW-Authenticate` हेडर के साथ आता है जो `/.well-known/oauth-protected-resource` की ओर इशारा करता है, और `/.well-known/oauth-authorization-server` `/membership/oauth` एंडपॉइंट्स, dynamic registration, PKCE, और B1Admin `/oauth` सहमति पृष्ठ का विज्ञापन करता है (`WellKnownController.ts`, `OAuthMetadata.ts`)। `api_call` इन-प्रोसेस Express स्टैक में फिर से प्रवेश करता है, ताकि हर अनुमति और चर्च-स्कोपिंग नियम अब भी लागू रहें। → **[MCP Server](../api/mcp.md)**
 
 ### Content providers
 
-इनबाउंड-सामग्री पथ, API के बजाय अलग पैकेज `Packages/content-providers` (`@churchapps/content-providers`) में। हर प्रदाता `IProvider` इंटरफ़ेस (`src/interfaces.ts`) लागू करता है — `browse`, `getPlaylist`, `getInstructions`, plus auth hooks — और `Map` रजिस्ट्री (`src/providers/registry.ts`) में स्वयं-पंजीकृत होता है। यहाँ **B1 OAuth client है**: एक प्रदाता `none`, `oauth_pkce`, `device_flow`, या `form_login` का `AuthType` घोषित करता है, और साझा हेल्पर (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) बाहरी स्रोत के विरुद्ध क्लाइंट-साइड PKCE / device flow चलाते हैं। आज ग्यारह प्रदाता शिप होते हैं — जिनमें Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, और B1.church शामिल हैं — जो FreePlay और B1 ऐप्स को सामग्री देते हैं। → **[FreePlay Content Provider](../freeplay-content-provider)**
+इनबाउंड-सामग्री पथ, API के बजाय अलग पैकेज `Packages/content-providers` (`@churchapps/content-providers`) में। हर प्रदाता `IProvider` इंटरफ़ेस (`src/interfaces.ts`) लागू करता है — `browse`, `getPlaylist`, `getInstructions`, plus auth hooks — और `Map` रजिस्ट्री (`src/providers/registry.ts`) में स्वयं-पंजीकृत होता है। यहाँ **B1 OAuth client है**: एक प्रदाता `none`, `oauth_pkce`, `device_flow`, या `form_login` का `AuthType` घोषित करता है, और साझा हेल्पर (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) बाहरी स्रोत के विरुद्ध क्लाइंट-साइड PKCE / device flow चलाते हैं। आज ग्यारह प्रदाता शिप होते हैं — जिनमें Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, और B1.church शामिल हैं — जो FreePlay और B1 ऐप्स को सामग्री देते हैं। → **[FreePlay Content Provider](../freeplay-content-provider.md)**
 
 **Year plans** इसी पथ पर चलते हैं। एक पाठ्यक्रम प्रकाशक (`lessons.edit` के साथ) Lessons.church एडमिन में क्रमबद्ध सप्ताह-1/2/3 अनुक्रम बनाए रखता है (`LessonsApi` टेबल `yearPlans` / `yearPlanWeeks`, वैकल्पिक `startMonth` और प्रति-सप्ताह `anchor` `easter` / `christmas` के साथ); LessonsApi पर `GET /yearPlans/public` लाइव योजनाएँ अनाम रूप से देता है, हर सप्ताह के program/study/venue को lesson tree से भरते हुए। B1Admin की **Serving → Plans → Schedule Lesson → Apply Year Plan** इस एंडपॉइंट का उपभोग करती है और शामिल हर सप्ताह के लिए एक DoingApi योजना लिखती है (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`)। `startMonth` वाली योजनाएँ चुने गए वर्ष के विरुद्ध anchored सप्ताह हल करती हैं (Easter Gregorian computus से, Christmas 25 दिसंबर को या उससे पहले का रविवार) और उनके बीच की श्रृंखलाएँ भरती हैं; `startMonth` के बिना योजनाएँ भी सप्ताह N को `startDate + (N−1)×7` दिनों पर मैप करती हैं। बाहरी OLF प्रदाताओं के सप्ताह या अधूरे पथ वाले सप्ताह apply के समय छोड़ दिए जाते हैं; चर्च परिणामी योजनाओं को किसी भी अन्य योजना की तरह संपादित करते हैं, और FreePlay वही चलाता है जो योजना पर हो।
 
@@ -122,12 +123,12 @@ OAuth access token लॉगिन JWT से बिल्कुल एक ह�
 
 | सतह | प्रमाणीकरण तंत्र | दिशा | कहाँ लागू | संदर्भ |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT या `cak_…` key | इनबाउंड | `Api/src/modules/*` | [API Keys](../api/api-keys) |
-| API keys | SHA-256-hashed `cak_` token | क्रेडेंशियल | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys) |
-| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | इनबाउंड | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps) |
-| Webhooks | प्रति-hook secret, HMAC-SHA256 signature | आउटबाउंड | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP server | `Bearer` JWT, OAuth JWT (`/.well-known` से खोजा गया), या `cak_…` key | इनबाउंड (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp) |
-| Content providers | प्रति-प्रदाता: none / OAuth PKCE / device / form | इनबाउंड सामग्री | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider) |
+| REST API | `Bearer` JWT या `cak_…` key | इनबाउंड | `Api/src/modules/*` | [API Keys](../api/api-keys.md) |
+| API keys | SHA-256-hashed `cak_` token | क्रेडेंशियल | `Api/.../membership/controllers/ApiKeyController.ts` | [API Keys](../api/api-keys.md) |
+| OAuth 2.0 / Connected Apps | Auth code (PKCE) · device · refresh → JWT; dynamic client registration | इनबाउंड | `Api/.../membership/controllers/OAuthController.ts` | [Connected Apps](../api/connected-apps.md) |
+| Webhooks | प्रति-hook secret, HMAC-SHA256 signature | आउटबाउंड | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP server | `Bearer` JWT, OAuth JWT (`/.well-known` से खोजा गया), या `cak_…` key | इनबाउंड (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp.md) |
+| Content providers | प्रति-प्रदाता: none / OAuth PKCE / device / form | इनबाउंड सामग्री | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider.md) |
 
 ## प्रीबिल्ट कनेक्टर
 
@@ -143,9 +144,9 @@ OAuth access token लॉगिन JWT से बिल्कुल एक ह�
 
 ## संबंधित पृष्ठ
 
-- [API Keys](../api/api-keys) — सबसे सरल क्रेडेंशियल और स्कोप सूची
-- [Connected Apps & OAuth](../api/connected-apps) — मल्टी-टेनेंट सहमति प्रवाह
-- [Webhooks](../api/webhooks) — बाहर जाने वाली इवेंट प्रणाली
-- [MCP Server](../api/mcp) — AI इंटीग्रेशन रैपर
-- [FreePlay Content Provider](../freeplay-content-provider) — इनबाउंड सामग्री स्रोत बनना
+- [API Keys](../api/api-keys.md) — सबसे सरल क्रेडेंशियल और स्कोप सूची
+- [Connected Apps & OAuth](../api/connected-apps.md) — मल्टी-टेनेंट सहमति प्रवाह
+- [Webhooks](../api/webhooks.md) — बाहर जाने वाली इवेंट प्रणाली
+- [MCP Server](../api/mcp.md) — AI इंटीग्रेशन रैपर
+- [FreePlay Content Provider](../freeplay-content-provider.md) — इनबाउंड सामग्री स्रोत बनना
 - [Integrations (end-user)](/docs/b1-admin/integrations/) — प्रीबिल्ट कनेक्टर सेटअप गाइड

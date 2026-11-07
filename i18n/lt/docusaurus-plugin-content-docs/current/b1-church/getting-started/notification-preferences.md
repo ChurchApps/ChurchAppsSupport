@@ -1,5 +1,6 @@
 ---
 title: "Pagrindinių nustatymų"
+description: "Nustatykite pranešimų kanalus, el. laiškų dažnumą, tylias valandas ir SMS atsisakymą kiekvienam tipui B1 Admin ir B1 programėlėje."
 ---
 
 Hmm, I need to correct that, since the title is wrong. Here is the complete translated file.
@@ -66,6 +67,6 @@ Skubūs pranešimai – pavyzdžiui, saugumo įspėjimas ar vaiko registracijos 
 
 ## Susiję
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) – tarnystės priminimai ir atsakymai į tvarkaraščio užklausas
-- [Registering for Events](../events/registering) – registracija į renginius, kurie siunčia priminimus
-- [Installing the App](installing-pwa) – pridėkite B1 prie savo įrenginio, kad galėtumėte gauti stumiamuosius pranešimus
+- [Volunteer Sign-Up](../serving/volunteer-signup.md) – tarnystės priminimai ir atsakymai į tvarkaraščio užklausas
+- [Registering for Events](../events/registering.md) – registracija į renginius, kurie siunčia priminimus
+- [Installing the App](./installing-pwa.md) – pridėkite B1 prie savo įrenginio, kad galėtumėte gauti stumiamuosius pranešimus

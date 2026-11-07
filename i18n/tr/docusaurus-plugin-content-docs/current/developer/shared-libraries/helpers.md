@@ -1,5 +1,6 @@
 ---
 title: "Yardımcılar"
+description: "@churchapps/helpers paketinin geliştiriciler için kapsamı: neler sunduğu, hangi uygulamaların kullandığı, Packages çalışma alanında yerel derleme kurulumu ve changesets tabanlı yayımlama akışı."
 ---
 
 # Yardımcılar
@@ -13,14 +14,14 @@ title: "Yardımcılar"
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js** ve **Git** yükleyin -- bkz. [Ön Koşullar](../setup/prerequisites)
+- **Node.js** ve **Git** yükleyin -- bkz. [Ön Koşullar](../setup/prerequisites.md)
 - [Paketler çalışma alanı](./index.md) kurulumunu ve sürüm akışını inceleyin
 
 </div>
 
 ## Bunu Kimler Kullanır
 
-Her ChurchApps API'si (çekirdek Api, AskApi ve LessonsApi) ile her web ön yüzü (B1Admin, B1App, B1Transfer, LessonsApp) bu paketi doğrudan kullanır. Ön yüzler ayrıca birçok dışa aktarımını (`ApiHelper`, `DateHelper`, `UserHelper` ve diğer arayüzler) [`@churchapps/apphelper`](./app-helper) üzerinden yeniden dışa aktarılmış olarak alır. Diğer ortak paketler bu paketi eş bağımlılık (peer dependency) olarak tanımlar, böylece her uygulama tam olarak tek bir kopya kullanır.
+Her ChurchApps API'si (çekirdek Api, AskApi ve LessonsApi) ile her web ön yüzü (B1Admin, B1App, B1Transfer, LessonsApp) bu paketi doğrudan kullanır. Ön yüzler ayrıca birçok dışa aktarımını (`ApiHelper`, `DateHelper`, `UserHelper` ve diğer arayüzler) [`@churchapps/apphelper`](./app-helper.md) üzerinden yeniden dışa aktarılmış olarak alır. Diğer ortak paketler bu paketi eş bağımlılık (peer dependency) olarak tanımlar, böylece her uygulama tam olarak tek bir kopya kullanır.
 
 ## Yerel Geliştirme Kurulumu
 
@@ -55,7 +56,7 @@ Sürümler elle sürüm artırma yerine changesets üzerinden yapılır:
 1. Çalışma alanının kökünde `yarn changeset` komutunu çalıştırın, `@churchapps/helpers` paketini ve uygun artış türünü seçin; oluşan changeset dosyasını değişikliğinizle birlikte commit edin.
 2. Yayımlamaya hazır olduğunuzda kökte `yarn publish-all` komutunu çalıştırın -- bu komut sürümleri artırır, CHANGELOG dosyalarını yazar, bağımlılık sırasına göre derler ve npm'e yayımlar.
 
-Yeni ortak arayüzler `helpers/src/interfaces/` klasörüne eklenir ve paket barrel dosyası üzerinden yeniden dışa aktarılır. Web sitesi oluşturucunun öğe türü kataloğu (`ElementTypes.ts` -- yanıt şemalarıyla birlikte 35 tür) da burada bulunur; apphelper oluşturucuları, B1Admin düzenleyici formları ve yapay zekâ üretim istemleri tarafından paylaşılan sözleşmedir (bkz. [Web Sitesi Oluşturucu Mimarisi](../architecture/website-builder)).
+Yeni ortak arayüzler `helpers/src/interfaces/` klasörüne eklenir ve paket barrel dosyası üzerinden yeniden dışa aktarılır. Web sitesi oluşturucunun öğe türü kataloğu (`ElementTypes.ts` -- yanıt şemalarıyla birlikte 35 tür) da burada bulunur; apphelper oluşturucuları, B1Admin düzenleyici formları ve yapay zekâ üretim istemleri tarafından paylaşılan sözleşmedir (bkz. [Web Sitesi Oluşturucu Mimarisi](../architecture/website-builder.md)).
 
 :::warning
 Bu paket her ChurchApps projesi tarafından kullanıldığından, buradaki değişikliklerin etkisi geniştir. `helpers` sürümü yayımlandığında, `apihelper` ve `apphelper` paketleri de bağımlılık aralıklarının güncel kalması için otomatik olarak artırılır. Yayımlamadan önce, en az bir kullanan API'de ve bir kullanan web uygulamasında Yarn portalı ile test edin.
@@ -63,6 +64,6 @@ Bu paket her ChurchApps projesi tarafından kullanıldığından, buradaki deği
 
 ## İlgili Makaleler
 
-- **[ApiHelper](./api-helper)** -- Bu pakete bağlı sunucu tarafı yardımcı araçları
-- **[AppHelper](./app-helper)** -- Bu pakete bağlı React bileşenleri
+- **[ApiHelper](./api-helper.md)** -- Bu pakete bağlı sunucu tarafı yardımcı araçları
+- **[AppHelper](./app-helper.md)** -- Bu pakete bağlı React bileşenleri
 - **[Ortak Kütüphanelere Genel Bakış](./index.md)** -- Çalışma alanı kurulumu, sürüm akışı ve yerel bağlantı iş akışı

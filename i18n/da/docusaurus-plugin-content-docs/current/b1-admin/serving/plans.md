@@ -1,5 +1,6 @@
 ---
 title: "tjenesteplaner"
+description: "Planlæg frivillige i B1 Admin: opret gudstjenesteplaner pr. dato, kopiér fra tidligere uger, tildel teammedlemmer og styr frister og påmindelser."
 ---
 
 # tjenesteplaner

@@ -1,5 +1,6 @@
 ---
 title: "Attribuer des rôles"
+description: "Attribuez des rôles dans B1 Admin pour donner au personnel et aux bénévoles l'accès uniquement aux sections Personnes, Dons, Présence et Groupes dont ils ont besoin."
 ---
 
 # Attribuer des rôles

@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Verbinden Sie B1 Admin mit Zapier, um Automatisierungen bei neuen Personen, Spenden und Gruppenmitgliedern zu starten und Datensätze ohne Programmierung zurück in B1 zu schreiben."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Wählen Sie einen Trigger und fügen Sie dann einen oder mehrere Aktionsschritte
 ### Spenden mit einer umfangreicheren Karte in einen Slack-Kanal posten als mit dem eingebauten Connector
 
 - **Trigger** — B1: Neue Spende
-- **Aktion** — Slack: Kanalnachricht senden. Gestalten Sie ein beliebiges Layout — Schaltflächen, Anhänge usw. — das der eingebaute [Slack-Connector](./slack-discord) nicht kann.
+- **Aktion** — Slack: Kanalnachricht senden. Gestalten Sie ein beliebiges Layout — Schaltflächen, Anhänge usw. — das der eingebaute [Slack-Connector](./slack-discord.md) nicht kann.
 
 ### Neue Gruppenmitglieder zu einer Google-Gruppe hinzufügen
 
@@ -106,6 +107,6 @@ Das bedeutet, dass der Trigger nur für Ereignisse auslöst, die **nach** dem Ei
 
 ## Siehe auch
 
-- [Make](./make) — dasselbe Muster, andere Plattform
-- [Slack & Discord](./slack-discord) — einfachere Chat-Benachrichtigungen ohne Zapier
+- [Make](./make.md) — dasselbe Muster, andere Plattform
+- [Slack & Discord](./slack-discord.md) — einfachere Chat-Benachrichtigungen ohne Zapier
 - [Webhooks (Entwicklerreferenz)](/docs/developer/api/webhooks)

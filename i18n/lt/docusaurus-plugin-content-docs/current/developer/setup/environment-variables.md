@@ -1,5 +1,6 @@
 ---
 title: "Aplinkos kintamieji"
+description: "ChurchApps .env failo sąranka: pasirinkite bendrą demo API ar vietinį API ir užpildykite kintamuosius B1 Admin, B1.church, B1 Mobile, Lessons.church ir kitoms."
 ---
 
 # Aplinkos kintamieji
@@ -13,9 +14,9 @@ Kiekvienas ChurchApps projektas vietinei konfigūracijai naudoja `.env` failą. 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite savo projektui reikalingus [reikalavimus](./prerequisites)
+- Įdiekite savo projektui reikalingus [reikalavimus](./prerequisites.md)
 - Klonuokite projekto saugyklą, su kuria norite dirbti
-- Peržiūrėkite [Projekto apžvalgą](./project-overview), kad suprastumėte, kokių API modulių jūsų projektui reikia
+- Peržiūrėkite [Projekto apžvalgą](./project-overview.md), kad suprastumėte, kokių API modulių jūsų projektui reikia
 
 </div>
 
@@ -64,7 +65,7 @@ Pakopinė aplinka (`api.staging.churchapps.org`, `api.staging.lessons.church` ir
 
 ### 2 variantas: vietinis API
 
-Paleiskite Api projektą savo kompiuteryje. Reikia MySQL 8.0+ su duomenų bazėmis, sukurtomis kiekvienam moduliui. Žr. [vietinio API sąrankos](../api/local-setup) vadovą.
+Paleiskite Api projektą savo kompiuteryje. Reikia MySQL 8.0+ su duomenų bazėmis, sukurtomis kiekvienam moduliui. Žr. [vietinio API sąrankos](../api/local-setup.md) vadovą.
 
 ```bash
 # Bazinio URL šablonas

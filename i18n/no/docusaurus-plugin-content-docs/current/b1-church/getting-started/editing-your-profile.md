@@ -1,5 +1,7 @@
 ---
-title: "Rediger profilen din"
+title: "Redigere profilen din i B1.church-medlemsportalen"
+sidebar_label: "Rediger profilen din"
+description: "Oppdater kontaktopplysninger, husstandsmedlemmer, innloggings-e-post og passord, og personverninnstillinger i B1.church-medlemsportalen."
 ---
 
 # Rediger profilen din

@@ -1,5 +1,6 @@
 ---
 title: "Maksutapojen hallinta"
+description: "Lisää, tarkista ja poista tallennettuja kortteja B1 Mobile -lahjoitusosion Hallinta-välilehdellä, jotta toistuvat lahjoitukset sujuvat ilman korttitietojen uudelleensyöttöä."
 ---
 
 # Maksutapojen hallinta
@@ -13,7 +14,7 @@ Lahjoitusosion **Hallinta**-välilehdellä voit tarkastella ja hallita tallennet
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu](../getting-started/logging-in) tiliisi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu](../getting-started/logging-in.md) tiliisi
 
 </div>
 
@@ -31,7 +32,7 @@ Uuden kortin lisäämiseksi:
 4. Syötä korttisi tiedot. Tiedot lähetetään turvallisesti **Stripe**-palveluun käsiteltäväksi.
 5. Tallennuksen jälkeen uusi kortti näkyy maksutapaluettelossasi.
 
-Tallennettu korttisi on seuraavalla kerralla käytettävissä maksutapana, kun [teet lahjoituksen](./making-donations) **Lahjoita**-välilehdeltä.
+Tallennettu korttisi on seuraavalla kerralla käytettävissä maksutapana, kun [teet lahjoituksen](./making-donations.md) **Lahjoita**-välilehdeltä.
 
 ## Maksutavan poistaminen
 
@@ -44,7 +45,7 @@ Jos et enää halua, että kortti on tallennettuna, voit poistaa sen **Hallinta*
 Kortti ei enää näy maksutapana, kun teet lahjoituksen.
 
 :::info
-Maksutavan poistaminen ei vaikuta aiempiin lahjoituksiin. [Lahjoitushistoriasi](./donation-history) pysyy ennallaan.
+Maksutavan poistaminen ei vaikuta aiempiin lahjoituksiin. [Lahjoitushistoriasi](./donation-history.md) pysyy ennallaan.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Pidä vähintään yksi maksutapa tallennettuna nopeaa lahjoittamista varten. Si
 
 ## Liittyvät artikkelit
 
-- [Lahjoituksen tekeminen](./making-donations) -- Opi antamaan lahjoitus tallennetulla maksutavalla
-- [Lahjoitushistoria](./donation-history) -- Tarkastele lahjoitusyhteenvetoasi ja aiempia lahjoituksiasi
+- [Lahjoituksen tekeminen](./making-donations.md) -- Opi antamaan lahjoitus tallennetulla maksutavalla
+- [Lahjoitushistoria](./donation-history.md) -- Tarkastele lahjoitusyhteenvetoasi ja aiempia lahjoituksiasi

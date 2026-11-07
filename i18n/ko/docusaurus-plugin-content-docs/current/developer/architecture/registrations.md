@@ -1,12 +1,13 @@
 ---
 title: "행사 등록"
+description: "B1 Admin과 B1App에서 행사 등록이 작동하는 방식: 참가자 유형, 유료 추가 옵션, 할인 코드, 헌금 게이트웨이를 통한 결제, 대기자 승격."
 ---
 
 # 행사 등록
 
 <div class="article-intro">
 
-기본 행사 등록은 content 모듈에 있으며, 유료 등록 작업 이후로는 완전한 상거래 모델을 갖추고 있습니다. 가격이 매겨진 참가자 유형, 가격이 매겨진 추가 선택 항목, 할인 코드, 교회의 기존 헌금 게이트웨이를 통한 결제, 상태 기반 대기자 명단이 포함됩니다. 결제 경로는 의도적으로 헌금 스택을 재사용합니다. 등록 컨트롤러는 [헌금](./giving)에 문서화된 것과 같은 `GatewayService` / `IGatewayProvider` 추상화를 통해 결제하므로, content 모듈에는 카드 데이터나 게이트웨이 SDK 지식이 없습니다. 이 페이지는 데이터 모델, 가격 및 정원 규칙, 등록, 결제, 대기자 명단 흐름을 정리합니다.
+기본 행사 등록은 content 모듈에 있으며, 유료 등록 작업 이후로는 완전한 상거래 모델을 갖추고 있습니다. 가격이 매겨진 참가자 유형, 가격이 매겨진 추가 선택 항목, 할인 코드, 교회의 기존 헌금 게이트웨이를 통한 결제, 상태 기반 대기자 명단이 포함됩니다. 결제 경로는 의도적으로 헌금 스택을 재사용합니다. 등록 컨트롤러는 [헌금](./giving.md)에 문서화된 것과 같은 `GatewayService` / `IGatewayProvider` 추상화를 통해 결제하므로, content 모듈에는 카드 데이터나 게이트웨이 SDK 지식이 없습니다. 이 페이지는 데이터 모델, 가격 및 정원 규칙, 등록, 결제, 대기자 명단 흐름을 정리합니다.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-토큰화는 헌금과 정확히 같이 브라우저에서 일어납니다([헌금](./giving) 참고). 마법사는 apphelper 결제 제공자 레지스트리를 재사용하므로, 로그인한 교인은 저장된 카드로 결제할 수 있고 손님은 새 카드를 토큰화합니다. 컨트롤러는 `DonateController`의 제공자별 특이 사항(Kingdom Funding의 `pm-{id}` 결제 수단 ID, Stripe SCA의 `requires_action` 응답을 결제 기록 없이 클라이언트에 반환하는 처리)을 그대로 따릅니다. 결제가 성공하면 `registrationPayments` 행이 기록되고, `amountPaid`가 증가하며, 등록이 확정됩니다. **환불은 구현되어 있지 않습니다.** 취소된 유료 등록은 결제 행을 그대로 유지하며, 환불은 게이트웨이 대시보드에서 별도로 처리합니다.
+토큰화는 헌금과 정확히 같이 브라우저에서 일어납니다([헌금](./giving.md) 참고). 마법사는 apphelper 결제 제공자 레지스트리를 재사용하므로, 로그인한 교인은 저장된 카드로 결제할 수 있고 손님은 새 카드를 토큰화합니다. 컨트롤러는 `DonateController`의 제공자별 특이 사항(Kingdom Funding의 `pm-{id}` 결제 수단 ID, Stripe SCA의 `requires_action` 응답을 결제 기록 없이 클라이언트에 반환하는 처리)을 그대로 따릅니다. 결제가 성공하면 `registrationPayments` 행이 기록되고, `amountPaid`가 증가하며, 등록이 확정됩니다. **환불은 구현되어 있지 않습니다.** 취소된 유료 등록은 결제 행을 그대로 유지하며, 환불은 게이트웨이 대시보드에서 별도로 처리합니다.
 
 두 진입점 모두 같은 코드 경로를 사용합니다. `register`(가입 시 결제)와 `pay`(잔액 결제 또는 대기자 명단 완료)입니다.
 
@@ -147,7 +148,7 @@ UPDATE registrations SET status='pending', waitlistNotifiedDate=NOW()
 
 ## 관련 문서
 
-- [헌금](./giving) -- 이 기능이 재사용하는 게이트웨이 추상화, 제공자 레지스트리, 토큰화 모델
-- [Content 엔드포인트](../api/endpoints/content) -- content 모듈의 REST 인터페이스
-- [웹훅](../api/webhooks) -- `registration.created` 이벤트
-- [모듈 구조](../api/module-structure) -- content 모듈이 서버 측에서 구성되는 방식
+- [헌금](./giving.md) -- 이 기능이 재사용하는 게이트웨이 추상화, 제공자 레지스트리, 토큰화 모델
+- [Content 엔드포인트](../api/endpoints/content.md) -- content 모듈의 REST 인터페이스
+- [웹훅](../api/webhooks.md) -- `registration.created` 이벤트
+- [모듈 구조](../api/module-structure.md) -- content 모듈이 서버 측에서 구성되는 방식

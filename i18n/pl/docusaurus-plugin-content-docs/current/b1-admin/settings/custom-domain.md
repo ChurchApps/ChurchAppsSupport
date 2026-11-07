@@ -1,5 +1,6 @@
 ---
 title: "Vlastní doména"
+description: "Wskaż własną domenę, np. www.twojkosciol.org, na swoją stronę B1 w B1 Admin, konfigurując rekordy DNS i dodając domenę w Ustawieniach."
 ---
 
 # Vlastní doména

@@ -1,5 +1,6 @@
 ---
 title: "Miljövariabler"
+description: "Ställ in .env-filen för ChurchApps-projekt, välj delat demo-API eller lokalt API och fyll i variabler för B1 Admin, B1.church, B1 Mobile och Lessons.church."
 ---
 
 # Miljövariabler
@@ -13,9 +14,9 @@ Varje ChurchApps-projekt använder en `.env`-fil för lokal konfiguration. Varje
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera [förutsättningarna](./prerequisites) för ditt projekt
+- Installera [förutsättningarna](./prerequisites.md) för ditt projekt
 - Klona projektets repository som du vill arbeta med
-- Läs [Projektöversikt](./project-overview) för att förstå vilka API-moduler ditt projekt behöver
+- Läs [Projektöversikt](./project-overview.md) för att förstå vilka API-moduler ditt projekt behöver
 
 </div>
 
@@ -64,7 +65,7 @@ Stagingmiljön (`api.staging.churchapps.org`, `api.staging.lessons.church` och r
 
 ### Alternativ 2: Lokalt API
 
-Kör Api-projektet på din dator. Kräver MySQL 8.0+ med databaser skapade för varje modul. Se guiden [lokal installation av API](../api/local-setup).
+Kör Api-projektet på din dator. Kräver MySQL 8.0+ med databaser skapade för varje modul. Se guiden [lokal installation av API](../api/local-setup.md).
 
 ```bash
 # Mönster för bas-URL

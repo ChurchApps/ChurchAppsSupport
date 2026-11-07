@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Kleingruppen betreiben"
+description: "Richten Sie in B1 Admin Kleingruppen, Bibelkreise und Dienstteams ein und veröffentlichen Sie danach einen gemeindeweiten Kalender und einen Gruppenbereich auf Ihrer B1-Website."
 ---
 
 # Kleingruppen betreiben
@@ -78,7 +79,7 @@ Mitglieder können Gruppen von ihrem Telefon oder Computer aus entdecken, beitre
 
 1. Mitglieder durchstöbern und treten Gruppen auf [B1.church](../../b1-church/groups/browsing-groups.md) bei
 2. Gruppenmitglieder können Details, Kalender einsehen und an [Gesprächen](../../b1-church/groups/conversations.md) teilnehmen
-3. Alle Gruppenfunktionen sind auch in der [B1 Mobile-App](../../b1-mobile/groups/) verfügbar
+3. Alle Gruppenfunktionen sind auch in der [B1 Mobile-App](../../b1-mobile/groups/index.md) verfügbar
 
 :::info
 Mitglieder sehen ihre Gruppen, bevorstehende Veranstaltungen und Gruppengespräche sowohl im Web als auch mobil -- alles bleibt synchron.
@@ -97,4 +98,4 @@ Ihre Kleingruppen sind eingerichtet und verbunden. Mitglieder können Gruppen en
 - [Kuratierter Kalender](../calendars/curated-calendar.md) — Einheitlichen Gemeindekalender erstellen
 - [Gruppen durchstöbern (Web)](../../b1-church/groups/browsing-groups.md) — Wie Mitglieder Gruppen finden
 - [Gruppengespräche (Web)](../../b1-church/groups/conversations.md) — Gruppendiskussionen
-- [Gruppen (Mobil)](../../b1-mobile/groups/) — Gruppen in der mobilen App
+- [Gruppen (Mobil)](../../b1-mobile/groups/index.md) — Gruppen in der mobilen App

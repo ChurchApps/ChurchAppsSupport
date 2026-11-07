@@ -1,5 +1,6 @@
 ---
 title: "تطبيقات الويب"
+description: "نظرة عامة على تطبيقات ويب ChurchApps الثلاثة: B1 Admin وB1.church وLessons.church، وحزمة React وMUI المشتركة، وحزم apphelper، وأدوات البناء."
 ---
 
 # تطبيقات الويب
@@ -41,7 +42,7 @@ title: "تطبيقات الويب"
 | `@churchapps/apphelper-website` | مكونات الموقع وإدارة المحتوى |
 
 :::tip
-للحصول على تفاصيل حول تطوير هذه الحزم المشتركة محليًا، راجع وثائق [AppHelper](../shared-libraries/app-helper).
+للحصول على تفاصيل حول تطوير هذه الحزم المشتركة محليًا، راجع وثائق [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## سكربت ما بعد التثبيت

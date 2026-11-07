@@ -1,5 +1,7 @@
 ---
-title: "Logging In"
+title: "Logging In to B1 Church Checkin"
+sidebar_label: "Logging In"
+description: "Sign in to the B1 Church Checkin kiosk app, pick your church, and understand auto-login, admin settings, and logout on the check-in tablet."
 ---
 
 # Logging In
@@ -63,7 +65,7 @@ Admin settings are intentionally hidden so that church members using the kiosk c
 2. If a kiosk PIN is set, enter the PIN when prompted.
 3. The **Admin Settings** screen will open with the following options:
    - **Change Service** — switch the selected service time
-   - **Change Printer** — open [printer settings](./printer-setup) to scan for and select a printer
+   - **Change Printer** — open [printer settings](./printer-setup.md) to scan for and select a printer
    - **Set/Change PIN** — set or update the kiosk PIN that protects admin access
    - **Logout** — sign out and return to the login screen
 
@@ -73,4 +75,4 @@ Logging out clears all saved credentials and church selection. You will need to 
 
 ## Next Steps
 
-Once logged in, you can [set up a printer](./printer-setup) or go directly to the [check-in workflow](../check-in/).
+Once logged in, you can [set up a printer](./printer-setup.md) or go directly to the [check-in workflow](../check-in/index.md).

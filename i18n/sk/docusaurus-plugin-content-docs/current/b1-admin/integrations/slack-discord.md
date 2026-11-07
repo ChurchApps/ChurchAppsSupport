@@ -1,5 +1,6 @@
 ---
 title: "Slack a Discord"
+description: "Posielajte udalosti B1 Admin, ako nových ľudí, dary a odpovede formulárov, do kanála Slack alebo Discord cez prichádzajúci webhook, bez Zapier."
 ---
 
 # Slack a Discord
@@ -114,7 +115,7 @@ Ak niečo zlyhalo (červený odznak `failed` alebo `exhausted`), dialóg zobraz�
 
 - **Správa sa neobjaví + stav doručenia `400`** — zvyčajne je Connector Type nastavený na **Standard**, ale URL je zo Slacku alebo Discordu. Slack a Discord surovú obálku odmietnu. Prepnite rozbaľovací zoznam na **Slack** alebo **Discord** a znova odošlite testovaciu udalosť.
 - **Webhook sa automaticky vypol** — po 3 po sebe idúcich neúspešných doručeniach B1 webhook vypne. Opravte URL (alebo ju v Slacku/Discorde vygenerujte znova) a znova zapnite **Active**.
-- **Správa dorazila, ale chýbajú v nej podrobnosti** — každá chatová platforma obmedzuje veľkosť správy. Správy B1 sú zámerne jednoriadkové; pre bohatšie upozornenia použite [Zapier](./zapier) alebo [Make](./make), ktorý zloží väčšiu správu pre Slack pomocou ich Slack akcií.
+- **Správa dorazila, ale chýbajú v nej podrobnosti** — každá chatová platforma obmedzuje veľkosť správy. Správy B1 sú zámerne jednoriadkové; pre bohatšie upozornenia použite [Zapier](./zapier.md) alebo [Make](./make.md), ktorý zloží väčšiu správu pre Slack pomocou ich Slack akcií.
 
 ## Neskoršia zmena typu konektora
 
@@ -122,6 +123,6 @@ Typ konektora môžete zmeniť aj na existujúcom webhooku — prejaví sa pri �
 
 ## Pozri tiež
 
-- [Zapier](./zapier) — pre viackrokové pracovné postupy spúšťané udalosťami B1
-- [Make](./make) — vizuálny zostavovač scenárov
+- [Zapier](./zapier.md) — pre viackrokové pracovné postupy spúšťané udalosťami B1
+- [Make](./make.md) — vizuálny zostavovač scenárov
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — úplný formát payloadu a podpisu, ak niekedy nasmerujete webhook na svoj server

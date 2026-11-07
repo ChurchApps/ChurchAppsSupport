@@ -1,5 +1,6 @@
 ---
 title: "Uso del editor de páginas"
+description: "Configura el editor de páginas en B1 Admin agregando secciones y elementos, dándoles estilo, previsualizando en móvil y publicando borradores. También explica deshacer y el historial de versiones."
 ---
 
 # Uso del editor de páginas
@@ -13,8 +14,8 @@ El editor de páginas de B1 es un creador visual de arrastrar y soltar que le pe
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Complete la [configuración inicial](initial-setup) para tener su sitio web configurado
-- Cree al menos una página en [Administrar páginas](managing-pages)
+- Complete la [configuración inicial](./initial-setup.md) para tener su sitio web configurado
+- Cree al menos una página en [Administrar páginas](./managing-pages.md)
 - Necesita el permiso **content.edit** para acceder al editor
 
 </div>
@@ -27,7 +28,7 @@ El editor de páginas de B1 es un creador visual de arrastrar y soltar que le pe
 El editor se abre en pantalla completa. El panel izquierdo muestra la estructura de su página y los elementos de contenido disponibles; el área central muestra una vista previa en vivo de su página.
 
 :::info
-El editor siempre se muestra en modo claro, sin importar la configuración de tema de B1 Admin, y usa las fuentes de encabezado y de texto que eligió en [Apariencia](appearance). Así, la vista previa coincide exactamente con cómo se verá la página para los visitantes del sitio web.
+El editor siempre se muestra en modo claro, sin importar la configuración de tema de B1 Admin, y usa las fuentes de encabezado y de texto que eligió en [Apariencia](./appearance.md). Así, la vista previa coincide exactamente con cómo se verá la página para los visitantes del sitio web.
 :::
 
 ## Estructura de la página: secciones y elementos
@@ -57,7 +58,7 @@ Cada página se construye con dos niveles:
    - **Imagen**: suba o enlace una foto
    - **Botón**: un enlace de llamada a la acción en el que se puede hacer clic
    - **Tarjeta**: una imagen con título y descripción
-   - **Formulario**: inserte un [formulario](../forms/creating-forms) directamente en la página. Si el formulario tiene una [foto de encabezado](../forms/creating-forms.md#adding-a-header-photo), se muestra encima de las preguntas
+   - **Formulario**: inserte un [formulario](../forms/creating-forms.md) directamente en la página. Si el formulario tiene una [foto de encabezado](../forms/creating-forms.md#adding-a-header-photo), se muestra encima de las preguntas
    - **Calendario**: muestra un calendario de eventos
    - **Preguntas frecuentes**: bloques de pregunta y respuesta estilo acordeón
    - **Video**: inserte un video mediante su URL
@@ -75,7 +76,7 @@ Cada página se construye con dos niveles:
    - **Mapa**: un mapa incrustado centrado en la dirección de su iglesia
    - **Tabla**: una cuadrícula simple de filas y columnas para contenido tabular
    - **Texto con foto**: texto e imagen lado a lado
-   - **Logotipo**: el logotipo de su iglesia, tomado de [Apariencia](appearance)
+   - **Logotipo**: el logotipo de su iglesia, tomado de [Apariencia](./appearance.md)
    - **Transmisión en vivo**: el reproductor de su transmisión en vivo, incrustado directamente en la página
    - **Podcast**: una lista de episodios tomada de una URL de fuente RSS de podcast externa que usted proporciona, con configuración para elegir cuántos episodios mostrar y si mostrar fechas y descripciones. Cada episodio en el sitio en vivo tiene un reproductor de audio y un enlace de **Descargar** que guarda el archivo de audio del episodio con el título del episodio. Esto sirve para destacar cualquier fuente de podcast en su sitio; para publicar sus propios sermones como podcast, consulte [Administrar sermones](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donación**: un botón de donación o un formulario de donación incrustado
@@ -96,7 +97,7 @@ Si pega solo una dirección web (como un enlace a una imagen) en el cuadro de Ja
 
 El elemento **Calendario** muestra eventos de uno de sus calendarios:
 
-1. En **Seleccionar**, elija **Calendario de grupo** (los eventos de un grupo; la lista muestra los grupos a los que pertenece) o **Calendario seleccionado** (un calendario que armó en **Calendarios**; consulte [Calendario seleccionado](../calendars/curated-calendar)).
+1. En **Seleccionar**, elija **Calendario de grupo** (los eventos de un grupo; la lista muestra los grupos a los que pertenece) o **Calendario seleccionado** (un calendario que armó en **Calendarios**; consulte [Calendario seleccionado](../calendars/curated-calendar.md)).
 2. En **Seleccionar calendario**, elija el grupo o calendario.
 3. En **Mostrar**, elija cómo mostrarlo:
    - **Calendario mensual**: una cuadrícula mensual que los visitantes pueden recorrer.
@@ -129,7 +130,7 @@ Haga clic en cualquier elemento para abrir su panel de estilos. Las opciones com
 Para un estilo avanzado, cada sección y cada elemento tiene un campo de **CSS personalizado** donde puede escribir sus propias reglas de CSS. Estas reglas se limitan a ese elemento, así que no afectarán por accidente al resto de la página.
 
 :::tip
-Si necesita aplicar estilos a todo su sitio, como una fuente personalizada o un color global, use la configuración de [Apariencia](appearance) en lugar del CSS personalizado de páginas individuales.
+Si necesita aplicar estilos a todo su sitio, como una fuente personalizada o un color global, use la configuración de [Apariencia](./appearance.md) en lugar del CSS personalizado de páginas individuales.
 :::
 
 ## Previsualizar su página
@@ -184,7 +185,7 @@ Use el flujo de borrador y publicación cuando quiera preparar una página, por 
 
 ## Artículos relacionados
 
-- [Administrar páginas](managing-pages): cree páginas, configure URLs y administre la navegación del sitio
-- [Apariencia](appearance): configure colores, fuentes e identidad visual de todo el sitio
-- [Archivos](files): suba imágenes y documentos para usarlos en el editor
-- [Crear formularios](../forms/creating-forms): cree formularios que puede incrustar en las páginas
+- [Administrar páginas](./managing-pages.md): cree páginas, configure URLs y administre la navegación del sitio
+- [Apariencia](./appearance.md): configure colores, fuentes e identidad visual de todo el sitio
+- [Archivos](./files.md): suba imágenes y documentos para usarlos en el editor
+- [Crear formularios](../forms/creating-forms.md): cree formularios que puede incrustar en las páginas

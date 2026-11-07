@@ -1,5 +1,6 @@
 ---
 title: "Content Providers"
+description: "Blader door en download lesmateriaal, video's en afbeeldingen van Lessons.church, Dropbox, OneDrive en andere providers in de FreePlay TV-app."
 ---
 
 # Content Providers
@@ -14,7 +15,7 @@ Content providers zijn externe services die lesmateriaal, video's en afbeeldinge
 
 FreePlay bevat momenteel de volgende providers:
 
-- **[Lessons.church](../../lessons-church/)** - Gratis, open-source curriculum voor kinderministerie
+- **[Lessons.church](../../lessons-church/index.md)** - Gratis, open-source curriculum voor kinderministerie
 - **Bible Project** - Video's en resources over de Bijbel
 - **SignPresenter** - Presentatie- en signaleringsinhoud voor kerken
 - **B1.church** - Inhoud van uw eigen B1-kerkconfiguratie
@@ -31,5 +32,5 @@ Verbonden providers verschijnen in de zijbalk aan de linkerkant van het scherm. 
 
 ## In Dit Gedeelte
 
-- **[Connecting to Providers](./connecting-providers)** - Hoe u verificatie doet en verbinding maakt
-- **[Browsing and Downloading Content](./browsing-content)** - Navigeer mappen, download bestanden en speel inhoud af
+- **[Connecting to Providers](./connecting-providers.md)** - Hoe u verificatie doet en verbinding maakt
+- **[Browsing and Downloading Content](./browsing-content.md)** - Navigeer mappen, download bestanden en speel inhoud af

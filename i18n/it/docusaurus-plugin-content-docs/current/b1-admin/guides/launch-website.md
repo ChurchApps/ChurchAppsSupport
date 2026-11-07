@@ -1,5 +1,6 @@
 ---
 title: "Guida: Lancia il Sito Web della Tua Chiesa"
+description: "Imposta il sito della chiesa in B1 Admin: crea la home, adatta colori e logo, aggiungi le pagine principali, collega un dominio e inserisci i moduli di offerta."
 ---
 
 # Lancia il Sito Web della Tua Chiesa

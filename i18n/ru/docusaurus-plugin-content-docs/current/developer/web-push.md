@@ -1,5 +1,6 @@
 ---
 title: "Push-уведомления в браузере"
+description: "Настройка ключей VAPID, клиента WebPushHelper и service worker, чтобы B1.church и B1 Admin могли отправлять участникам push-уведомления в браузер."
 ---
 
 # Push-уведомления в браузере
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Связанные страницы
 
-- [Архитектура уведомлений](./architecture/notifications) — полная воронка эскалации in-app / push / email и механизм напоминаний
-- [Архитектура реального времени](./realtime) — доставка через WebSocket; push теперь срабатывает из той же воронки внутри приложения наряду с доставкой через сокет в том же проходе, а не только как запасной вариант, когда доставка через сокет не прошла
-- [Эндпоинты Messaging](./api/endpoints/messaging) — уведомления, устройства и остальная поверхность messaging
-- [AppHelper](./shared-libraries/app-helper) — npm-пакет, который поставляет `WebPushHelper`
+- [Архитектура уведомлений](./architecture/notifications.md) — полная воронка эскалации in-app / push / email и механизм напоминаний
+- [Архитектура реального времени](./realtime.md) — доставка через WebSocket; push теперь срабатывает из той же воронки внутри приложения наряду с доставкой через сокет в том же проходе, а не только как запасной вариант, когда доставка через сокет не прошла
+- [Эндпоинты Messaging](./api/endpoints/messaging.md) — уведомления, устройства и остальная поверхность messaging
+- [AppHelper](./shared-libraries/app-helper.md) — npm-пакет, который поставляет `WebPushHelper`

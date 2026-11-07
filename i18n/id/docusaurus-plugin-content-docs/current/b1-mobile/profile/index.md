@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil dan Kartu Tugas di B1 Mobile"
+sidebar_label: "Profil"
+description: "Kelola nama, detail kontak, rumah tangga, dan visibilitas privasi di profil B1 Mobile, serta tangani kartu alur kerja dan tugas yang ditetapkan kepada Anda."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Tab **Profil** memungkinkan Anda melihat dan mengedit informasi pribadi Anda, te
 
 ### Rumah Tangga
 
-Tab **Rumah Tangga** menampilkan anggota keluarga Anda dan peran mereka dalam rumah tangga Anda. Informasi ini digunakan untuk fitur seperti [check-in](../checkin/), di mana Anda dapat melakukan check-in untuk seluruh keluarga sekaligus.
+Tab **Rumah Tangga** menampilkan anggota keluarga Anda dan peran mereka dalam rumah tangga Anda. Informasi ini digunakan untuk fitur seperti [check-in](../checkin/index.md), di mana Anda dapat melakukan check-in untuk seluruh keluarga sekaligus.
 
 ### Visibilitas
 
@@ -55,6 +57,6 @@ Ketuk tugas biasa untuk melihat siapa yang memberikannya, siapa yang terkait, da
 
 ## Langkah Selanjutnya
 
-- [Mengedit Profil Anda](./editing-profile) -- Perbarui nama, detail kontak, dan foto Anda
-- [Rumah Tangga](./household) -- Lihat dan kelola anggota keluarga Anda
-- [Pengaturan Privasi](./privacy-settings) -- Kontrol apa yang dapat dilihat orang lain tentang Anda
+- [Mengedit Profil Anda](./editing-profile.md) -- Perbarui nama, detail kontak, dan foto Anda
+- [Rumah Tangga](./household.md) -- Lihat dan kelola anggota keluarga Anda
+- [Pengaturan Privasi](./privacy-settings.md) -- Kontrol apa yang dapat dilihat orang lain tentang Anda

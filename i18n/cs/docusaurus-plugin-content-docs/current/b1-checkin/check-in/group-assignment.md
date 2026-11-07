@@ -1,5 +1,6 @@
 ---
 title: "Přiřazování skupin"
+description: "Vyberte, kterou skupinu nebo třídu člen rodiny navštíví v každém čase bohoslužby v B1 Checkin, pomocí kategorií, věkových a ročníkových rad a volby „None“."
 ---
 
 # Přiřazování skupin
@@ -13,7 +14,7 @@ Když na obrazovce kontroly domácnosti klepnete na tlačítko časů bohosluže
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Zkontrolujte svou domácnost](./household-review) na obrazovce kontroly domácnosti
+- [Zkontrolujte svou domácnost](./household-review.md) na obrazovce kontroly domácnosti
 - Rozbalte člena, kterého chcete přiřadit, a klepněte na tlačítko časů bohoslužeb
 - Ujistěte se, že váš církevní správce [vytvořil skupiny](../../b1-admin/groups/creating-groups.md) a propojil je s časy bohoslužeb v B1 Admin
 
@@ -34,7 +35,7 @@ Klepnutím na kartu kategorie ji rozbalíte a uvidíte jednotlivé skupiny uvnit
 2. Projděte si seznam skupin v dané kategorii. Vedle názvu každé skupiny je vpravo ikona výběru.
 3. Klepněte na **název skupiny**, kterou chcete přiřadit.
 
-Aplikace váš výběr uloží a vrátí vás na [obrazovku kontroly domácnosti](./household-review). Tlačítko časů bohoslužeb u daného člena nyní zobrazí název vybrané skupiny.
+Aplikace váš výběr uloží a vrátí vás na [obrazovku kontroly domácnosti](./household-review.md). Tlačítko časů bohoslužeb u daného člena nyní zobrazí název vybrané skupiny.
 
 ## Pokyny k věku a ročníku
 
@@ -52,7 +53,7 @@ Možnost **Žádná** použijte u dospělých, kteří navštěvují hlavní boh
 
 Chcete-li změnit již provedené přiřazení skupiny:
 
-1. Vraťte se na [obrazovku kontroly domácnosti](./household-review).
+1. Vraťte se na [obrazovku kontroly domácnosti](./household-review.md).
 2. Rozbalte člena, jehož skupinu chcete změnit.
 3. Klepněte na tlačítko časů bohoslužeb (které nyní zobrazuje název aktuálně přiřazené skupiny).
 4. Vyberte jinou skupinu nebo klepněte na **Žádná**.
@@ -63,8 +64,8 @@ Skupiny a kategorie nastavuje váš církevní správce v B1 Admin. Pokud skupin
 
 ## Další kroky
 
-Po přiřazení skupin se vraťte na [obrazovku kontroly domácnosti](./household-review), kde můžete:
+Po přiřazení skupin se vraťte na [obrazovku kontroly domácnosti](./household-review.md), kde můžete:
 
 - Přiřadit skupiny dalším členům rodiny
-- [Přidat hosta](./adding-guests), pokud je s vaší rodinou na návštěvě někdo další
-- [Dokončit přihlášení](./completing-checkin), až budou všechna přiřazení připravena
+- [Přidat hosta](./adding-guests.md), pokud je s vaší rodinou na návštěvě někdo další
+- [Dokončit přihlášení](./completing-checkin.md), až budou všechna přiřazení připravena

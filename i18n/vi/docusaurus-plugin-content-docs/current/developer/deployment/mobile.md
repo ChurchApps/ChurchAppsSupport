@@ -1,5 +1,6 @@
 ---
 title: "Triển khai ứng dụng di động"
+description: "Hướng dẫn xây dựng bản phát hành Android và iOS của B1 Mobile bằng Expo EAS, gửi lên cửa hàng ứng dụng và đẩy cập nhật OTA."
 ---
 
 # Triển khai ứng dụng di động
@@ -13,7 +14,7 @@ title: "Triển khai ứng dụng di động"
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập ứng dụng di động trên máy cục bộ -- xem [B1 Mobile](../mobile/b1-mobile)
+- Thiết lập ứng dụng di động trên máy cục bộ -- xem [B1 Mobile](../mobile/b1-mobile.md)
 - Cài đặt và cấu hình [EAS CLI](https://docs.expo.dev/eas/)
 - Có quyền truy cập Google Play Console (Android) và/hoặc Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Quên cập nhật số phiên bản trong tất cả các tệp sẽ gây lỗi
 
 ## Bài viết liên quan
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Hướng dẫn thiết lập và phát triển cục bộ
-- **[Triển khai API](./apis)** -- Triển khai các API phía máy chủ
-- **[Triển khai ứng dụng web](./web-apps)** -- Triển khai các ứng dụng web phía giao diện
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Hướng dẫn thiết lập và phát triển cục bộ
+- **[Triển khai API](./apis.md)** -- Triển khai các API phía máy chủ
+- **[Triển khai ứng dụng web](./web-apps.md)** -- Triển khai các ứng dụng web phía giao diện

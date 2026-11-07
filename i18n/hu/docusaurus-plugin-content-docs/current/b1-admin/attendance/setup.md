@@ -1,5 +1,6 @@
 ---
 title: "Jelenlét beállítása"
+description: "Campusok, szolgálatok, szolgálati idők és csoportbeosztások beállítása a B1 Admin-ban a gyülekezet egészére kiterjedő részvételkövetéshez."
 ---
 
 # Jelenlét beállítása

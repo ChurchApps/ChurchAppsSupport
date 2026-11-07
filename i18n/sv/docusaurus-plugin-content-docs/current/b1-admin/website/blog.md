@@ -1,5 +1,7 @@
 ---
-title: "Blogg"
+title: "Skriva blogginlägg för din webbplats i B1 Admin"
+sidebar_label: "Blogg"
+description: "Skapa, schemalägg och publicera blogginlägg på din kyrkowebbplats i B1 Admin, inklusive ingresser, kategorier, taggar, rubrikbilder och kommentarsinbäddningar."
 ---
 
 # Blogg
@@ -13,8 +15,8 @@ Sidan Blogg låter dig publicera nyheter, uppdateringar och andaktstexter på di
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Slutför [Grundinställningar](initial-setup) för din webbplats
-- Lägg till en navigeringslänk till `/blog` från [Hantera sidor](managing-pages) om du vill att besökare ska hitta din blogg via menyn
+- Slutför [Grundinställningar](./initial-setup.md) för din webbplats
+- Lägg till en navigeringslänk till `/blog` från [Hantera sidor](./managing-pages.md) om du vill att besökare ska hitta din blogg via menyn
 
 </div>
 
@@ -31,7 +33,7 @@ Sidan Blogg låter dig publicera nyheter, uppdateringar och andaktstexter på di
 3. Lägg till en **Ingress** -- en kort sammanfattning som visas i inläggslistan, i metabeskrivningar och i RSS-flödet. Lämnas fältet tomt genereras en automatiskt från början av inläggets innehåll.
 4. Skriv inläggets text i redigeraren **Innehåll** med Markdown. Klicka på **Förhandsgranska** för att se hur det formaterade inlägget kommer att se ut.
 5. Välj en **Kategori** (välj en befintlig eller skriv en ny) och valfria **Taggar**, separerade med kommatecken.
-6. Klicka på **Välj bild** för att välja ett foto från ditt bildarkiv under [Filer](files), eller ladda upp en ny. Uppladdade foton öppnas i ett inbyggt beskärningsverktyg som är låst till 16:9, så att du kan rama in valfritt foto så att det passar inläggets rubrikbild och listkort.
+6. Klicka på **Välj bild** för att välja ett foto från ditt bildarkiv under [Filer](./files.md), eller ladda upp en ny. Uppladdade foton öppnas i ett inbyggt beskärningsverktyg som är låst till 16:9, så att du kan rama in valfritt foto så att det passar inläggets rubrikbild och listkort.
 7. Ange **Författare** -- som standard är det du, men du kan söka efter och välja vilken person som helst i din databas.
 8. Aktivera **Publicerad** och ange ett **Publiceringsdatum** när du är redo att göra inlägget offentligt. Stäng av den för att spara inlägget som utkast.
 
@@ -58,7 +60,7 @@ Varje inlägg i listan visar en av tre statusar:
 Publicerade inlägg visas på `{yoursite}/blog`, 10 per sida, med länkarna **Äldre** och **Nyare** för att bläddra i arkivet. Där finns också ett kategorifilter, och varje inläggs författarrad och foto visas. Taggar visas även som klickbara etiketter, så att besökare kan filtrera listan efter tagg på samma sätt. Enskilda inlägg finns på `{yoursite}/blog/{slug}` och inkluderar relaterade inlägg från samma kategori. Bloggsidan publicerar också ett RSS-flöde som automatiskt kan hittas av flödesläsare och automationsverktyg som Zapier.
 
 :::info
-Blogginlägg är en egen innehållstyp, skild från vanliga webbsidor -- de skapas inte i [sidredigeraren](page-editor) och visas inte i listan över sidor. Detta gör att skrivandet i bloggen går snabbt och fokuserat på själva texten.
+Blogginlägg är en egen innehållstyp, skild från vanliga webbsidor -- de skapas inte i [sidredigeraren](./page-editor.md) och visas inte i listan över sidor. Detta gör att skrivandet i bloggen går snabbt och fokuserat på själva texten.
 :::
 
 ## Lägga till kommentarer under inlägg
@@ -77,6 +79,6 @@ Töm rutan och klicka på **Spara** för att ta bort koden från alla inlägg. D
 
 ## Nästa steg
 
-- [Hantera sidor](managing-pages) -- Lägg till en navigeringslänk till din blogg
-- [Filer](files) -- Ladda upp foton att använda i dina inlägg
+- [Hantera sidor](./managing-pages.md) -- Lägg till en navigeringslänk till din blogg
+- [Filer](./files.md) -- Ladda upp foton att använda i dina inlägg
 - [Zapier-integration](../integrations/zapier.md) -- Utlös automationer när nya inlägg publiceras

@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "B1 Admin'i Zapier'a bağlayarak yeni kişiler, bağışlar ve grup üyeleri için otomasyonları başlatın; kod yazmadan kayıtları B1'e geri yazın."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Bir tetikleyici seçin, ardından bir veya daha fazla eylem adımı ekleyin. Aş
 ### Bağışları, yerleşik bağlayıcının yapamadığı daha zengin bir kartla Slack kanalına gönderin
 
 - **Tetikleyici** — B1: Yeni Bağış
-- **Eylem** — Slack: Kanala Mesaj Gönder. Düğmeler, ekler vb. istediğiniz düzeni oluşturun. Bunları [Slack bağlayıcısı](./slack-discord) yapamaz.
+- **Eylem** — Slack: Kanala Mesaj Gönder. Düğmeler, ekler vb. istediğiniz düzeni oluşturun. Bunları [Slack bağlayıcısı](./slack-discord.md) yapamaz.
 
 ### Yeni grup üyelerini bir Google Grubu'na ekleyin
 
@@ -106,6 +107,6 @@ Bu, tetikleyicinin yalnızca Zap açıldıktan **sonra** gerçekleşen olaylarda
 
 ## Ayrıca Bakınız
 
-- [Make](./make) — aynı desen, farklı platform
-- [Slack & Discord](./slack-discord) — Zapier olmadan daha basit sohbet bildirimleri
+- [Make](./make.md) — aynı desen, farklı platform
+- [Slack & Discord](./slack-discord.md) — Zapier olmadan daha basit sohbet bildirimleri
 - [Webhook'lar (geliştirici başvuru kılavuzu)](/docs/developer/api/webhooks)

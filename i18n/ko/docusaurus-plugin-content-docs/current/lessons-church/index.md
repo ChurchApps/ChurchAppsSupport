@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "12개 이상 제공자의 무료 연령별 레슨을 Lessons.church에서 찾아보고, 일정을 잡고, 발표할 수 있습니다. 교실, 장소, FreePlay 및 B1 연동을 지원합니다."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church는 콘텐츠 전달을 도우려면 다른 ChurchApps 도구와 �
 
 ## 문서 섹션
 
-- [시작하기](./getting-started/) - 계정을 만들고 기본 사항 학습
-- [콘텐츠 탐색](./browsing/) - 프로그램, 연구 및 수업 찾기
-- [교실](./classrooms/) - 교실 설정 및 수업 일정 지정
-- [사용자 정의](./customization/) - 교회에 맞게 수업 조정
-- [발표](./presenting/) - 발표자 모드를 사용하여 반에서 수업 제공
-- [관리](./admin/) - 프로그램, 연구 및 수업 관리
+- [시작하기](./getting-started/index.md) - 계정을 만들고 기본 사항 학습
+- [콘텐츠 탐색](./browsing/index.md) - 프로그램, 연구 및 수업 찾기
+- [교실](./classrooms/index.md) - 교실 설정 및 수업 일정 지정
+- [사용자 정의](./customization/index.md) - 교회에 맞게 수업 조정
+- [발표](./presenting/index.md) - 발표자 모드를 사용하여 반에서 수업 제공
+- [관리](./admin/index.md) - 프로그램, 연구 및 수업 관리
 - [신앙 선언](./statement-of-faith.md) - 핵심 신념 및 교과 과정 지침
 
 지원을 원하시면 [support@churchapps.org](mailto:support@churchapps.org)으로 이메일을 보냅니다.

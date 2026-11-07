@@ -1,5 +1,6 @@
 ---
 title: "Tilaisuuksien ja tilojen pyytäminen"
+description: "Pyydä tilaa tai välineitä tapahtumaan B1.church-jäsenportaalista, seuraa tilaa My Requests -näkymässä ja peru se, kun se on vireillä."
 ---
 
 # Tilaisuuksien ja tilojen pyytäminen
@@ -42,11 +43,11 @@ Avaa **Pyyntöni** Minä-sivulta. Jokaisessa pyynnössä näkyy tilaisuus, millo
 Kun pyyntö on vielä odottamassa, voit peruuttaa sen painikkeella **Peruuta pyyntö** (sinulta kysytään vahvistus – peruutusta ei voi kumota).
 
 :::info
-Seurakunnan henkilöstö käsittelee pyynnöt B1 Adminin [Hyväksynnät-sivulla](../../b1-admin/calendars/approvals). Se, mitkä tilat ja resurssit vaativat hyväksynnän, on seurakuntasi päätettävissä – katso [Tilat ja resurssit](../../b1-admin/calendars/rooms-resources).
+Seurakunnan henkilöstö käsittelee pyynnöt B1 Adminin [Hyväksynnät-sivulla](../../b1-admin/calendars/approvals.md). Se, mitkä tilat ja resurssit vaativat hyväksynnän, on seurakuntasi päätettävissä – katso [Tilat ja resurssit](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Minä-sivu](../getting-started/me-page) -- Missä pyyntölinkit sijaitsevat
-- [Kalenterin hyväksynnät (B1 Admin)](../../b1-admin/calendars/approvals) -- Kuinka henkilöstö käsittelee pyynnöt
-- [Tilat ja resurssit (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Kuinka seurakunnat määrittävät varattavat tilat
+- [Minä-sivu](../getting-started/me-page.md) -- Missä pyyntölinkit sijaitsevat
+- [Kalenterin hyväksynnät (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Kuinka henkilöstö käsittelee pyynnöt
+- [Tilat ja resurssit (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Kuinka seurakunnat määrittävät varattavat tilat

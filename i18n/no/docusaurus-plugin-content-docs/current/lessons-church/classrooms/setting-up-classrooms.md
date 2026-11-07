@@ -1,5 +1,6 @@
 ---
 title: "Sette opp klasserom"
+description: "Opprett, gi nytt navn til og fjern klasserom i Lessons.church-portalen, slik at hvert rom eller aldersgruppe er klart for ukentlig leksjonsplanlegging."
 ---
 
 # Sette opp klasserom

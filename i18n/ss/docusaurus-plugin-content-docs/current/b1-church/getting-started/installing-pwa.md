@@ -1,5 +1,6 @@
 ---
 title: "Kufaka Njenge-App (PWA)"
+description: "Faka i-B1.church njenge-app ku-iPhone noma ku-Android kusuka ku-portal yelilungu, ungeze sithonjana sayo esikrinini sakho sekuqala nge-Safari noma i-Chrome."
 ---
 
 # Kufaka Njenge-App (PWA)

@@ -1,5 +1,6 @@
 ---
 title: "Pobočky"
+description: "Nastavte kampusy v B1 Admin, sledujte, ke které lokalitě patří každá osoba a skupina, a filtrujte osoby, docházku a demografii podle místa."
 ---
 
 # Pobočky

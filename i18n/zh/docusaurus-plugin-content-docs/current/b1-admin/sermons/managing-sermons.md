@@ -1,5 +1,6 @@
 ---
 title: "管理讲道"
+description: "在 B1 Admin 中管理讲道库：从 YouTube、Vimeo 或 Facebook 添加讲道，编辑详细信息，并为您的教会获取播客订阅源。"
 ---
 
 # 管理讲道
@@ -14,7 +15,7 @@ title: "管理讲道"
 <h4>开始之前</h4>
 
 - 您需要**contentApi.streamingServices.edit**权限。如果您没有访问权限，请参阅[角色和权限](../settings/roles-permissions.md)。
-- 至少创建一个[播放列表](playlists)来组织您的讲道
+- 至少创建一个[播放列表](./playlists.md)来组织您的讲道
 - 从YouTube、Vimeo或Facebook准备好您的视频ID或URL
 
 </div>
@@ -35,7 +36,7 @@ title: "管理讲道"
 6. 进行任何您想要的更改，然后点击**保存**。
 
 :::tip
-您还可以通过从**添加讲道**下拉菜单中选择**添加永久直播URL**来添加永久直播URL。这会使用您的频道ID创建与您的YouTube频道直播流的持久连接。有关更多详细信息，请参阅[直播](live-streaming)。
+您还可以通过从**添加讲道**下拉菜单中选择**添加永久直播URL**来添加永久直播URL。这会使用您的频道ID创建与您的YouTube频道直播流的持久连接。有关更多详细信息，请参阅[直播](./live-streaming.md)。
 :::
 
 ## 编辑讲道
@@ -73,11 +74,11 @@ title: "管理讲道"
 3. 讲道将在计划的服务时间播放。
 
 :::info
-要一次导入多个讲道而不是逐个添加，请使用[批量导入](bulk-import)工具直接从您的YouTube或Vimeo账户拉取视频。
+要一次导入多个讲道而不是逐个添加，请使用[批量导入](./bulk-import.md)工具直接从您的YouTube或Vimeo账户拉取视频。
 :::
 
 ## 后续步骤
 
-- [播放列表](playlists) -- 将讲道组织成系列
-- [直播](live-streaming) -- 配置您的流媒体时间表
-- [批量导入](bulk-import) -- 一次导入多个讲道
+- [播放列表](./playlists.md) -- 将讲道组织成系列
+- [直播](./live-streaming.md) -- 配置您的流媒体时间表
+- [批量导入](./bulk-import.md) -- 一次导入多个讲道

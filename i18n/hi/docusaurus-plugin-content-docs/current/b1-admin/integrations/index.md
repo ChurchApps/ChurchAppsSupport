@@ -1,5 +1,6 @@
 ---
 title: "Integrations"
+description: "B1 Admin को Slack, Discord, Zapier, Make, Google Sheets और Claude जैसे AI सहायकों से जोड़ें, साथ में सेटअप चरण और हर एक के लिए आवश्यक API कुंजी स्कोप।"
 ---
 
 # इंटीग्रेशन
@@ -14,21 +15,21 @@ B1 उन टूल्स से जुड़ता है जिन्हें
 
 | Integration | यह क्या करता है | दिशा | सेट करने में लगने वाला समय |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Slack channel में पढ़ने योग्य सूचनाएँ पोस्ट करता है (नए लोग, donations, sign-ups, …) | B1 → Slack | 2 मिनट |
-| **[Discord](./slack-discord)** | वही, Discord channel में | B1 → Discord | 2 मिनट |
-| **[Zapier](./zapier)** | B1 के events को triggers और B1 actions को Zapier के 7,000+ apps में उपयोग करें | दोनों | प्रति Zap 5–10 मिनट |
-| **[Make](./make)** | Zapier जैसा ही विचार, Make के visual scenario builder में | दोनों | प्रति scenario 5–10 मिनट |
-| **[Google Sheets](./google-sheets)** | People / Donations / Groups / Attendance को मांग पर spreadsheet में एक्सपोर्ट करें | B1 → Sheet | 5 मिनट |
-| **[Claude](./claude)** | Anthropic के Claude से अपने चर्च के डेटा के बारे में सवाल पूछें, जो आपकी अनुमतियों तक सीमित हैं — आज़माना मुफ़्त है, सुझाया गया | दोनों | 3 मिनट से कम |
-| **[ChatGPT](./chatgpt)** | OpenAI के ChatGPT के साथ वही विचार (पेड ChatGPT प्लान चाहिए) | दोनों | 10 मिनट |
-| **[Connected services](./services/)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr के लिए चुनी हुई रेसिपी | अलग-अलग | प्रत्येक के लिए 5–10 मिनट |
+| **[Slack](./slack-discord.md)** | Slack channel में पढ़ने योग्य सूचनाएँ पोस्ट करता है (नए लोग, donations, sign-ups, …) | B1 → Slack | 2 मिनट |
+| **[Discord](./slack-discord.md)** | वही, Discord channel में | B1 → Discord | 2 मिनट |
+| **[Zapier](./zapier.md)** | B1 के events को triggers और B1 actions को Zapier के 7,000+ apps में उपयोग करें | दोनों | प्रति Zap 5–10 मिनट |
+| **[Make](./make.md)** | Zapier जैसा ही विचार, Make के visual scenario builder में | दोनों | प्रति scenario 5–10 मिनट |
+| **[Google Sheets](./google-sheets.md)** | People / Donations / Groups / Attendance को मांग पर spreadsheet में एक्सपोर्ट करें | B1 → Sheet | 5 मिनट |
+| **[Claude](./claude.md)** | Anthropic के Claude से अपने चर्च के डेटा के बारे में सवाल पूछें, जो आपकी अनुमतियों तक सीमित हैं — आज़माना मुफ़्त है, सुझाया गया | दोनों | 3 मिनट से कम |
+| **[ChatGPT](./chatgpt.md)** | OpenAI के ChatGPT के साथ वही विचार (पेड ChatGPT प्लान चाहिए) | दोनों | 10 मिनट |
+| **[Connected services](./services/index.md)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr के लिए चुनी हुई रेसिपी | अलग-अलग | प्रत्येक के लिए 5–10 मिनट |
 
 ## कौन सा चुनें
 
 - **बस चैट में एक सूचना चाहिए?** **Slack** या **Discord** का उपयोग करें — किसी तीसरे पक्ष का खाता नहीं, कोई Zap संभालना नहीं। यह पूरी तरह B1Admin के भीतर कॉन्फ़िगर होता है।
 - **कई ऐप्स में कुछ स्वचालित करना चाहते हैं** (जैसे "जब कोई giving करे, तो उसे मेरी Mailchimp सूची और Slack #donations में जोड़ें")? **Zapier** या **Make** का उपयोग करें। Zapier इस्तेमाल में आसान है; Make बड़े पैमाने पर सस्ता है और उसका लॉजिक अधिक लचीला है।
 - **एक बार का डेटा निकालना या नियमित रिपोर्ट चाहिए?** **Google Sheets** का उपयोग करें — add-on के sidebar में API key डालें और Export पर क्लिक करें।
-- **सामान्य भाषा में सवाल पूछना चाहते हैं** ("पिछले रविवार को कितने पहली बार आने वाले मेहमान थे?", "इस महीने की giving का सारांश दो")? **[Claude](./claude)** से शुरू करें — यह आज़माने के लिए मुफ़्त है और 3 मिनट से कम में सेट हो जाता है। **[ChatGPT](./chatgpt)** भी पेड प्लान के साथ काम करता है। Claude आपके B1 खाते से साइन इन करके जुड़ता है; ChatGPT B1 API key का उपयोग करता है।
+- **सामान्य भाषा में सवाल पूछना चाहते हैं** ("पिछले रविवार को कितने पहली बार आने वाले मेहमान थे?", "इस महीने की giving का सारांश दो")? **[Claude](./claude.md)** से शुरू करें — यह आज़माने के लिए मुफ़्त है और 3 मिनट से कम में सेट हो जाता है। **[ChatGPT](./chatgpt.md)** भी पेड प्लान के साथ काम करता है। Claude आपके B1 खाते से साइन इन करके जुड़ता है; ChatGPT B1 API key का उपयोग करता है।
 - **अपना खुद का कस्टम integration बना रहे हैं?** ऊपर में से कोई नहीं — [API key](/docs/developer/api/api-keys) के साथ सीधे [REST API](/docs/developer/api) से बात करें, या अपने नियंत्रण वाले सर्वर को [webhooks](/docs/developer/api/webhooks) की सदस्यता दें।
 
 ## इन सबमें समानता
@@ -59,10 +60,10 @@ ChurchApps मुफ़्त और open-source है। Slack/Discord, [`@chu
 
 ## अगले चरण
 
-- [Slack और Discord](./slack-discord) — चैट सूचनाएँ पोस्ट करें
-- [Zapier](./zapier) — 7,000+ ऐप्स से जुड़ें
-- [Make](./make) — visual workflow automation
-- [Google Sheets](./google-sheets) — spreadsheets में एक्सपोर्ट करें
-- [Claude](./claude) — Anthropic के Claude से अपने चर्च के डेटा के बारे में पूछें
-- [ChatGPT](./chatgpt) — OpenAI के ChatGPT से अपने चर्च के डेटा के बारे में पूछें
-- [Connected services](./services/) — प्रति-सेवा रेसिपी (Mailchimp, Donorbox, Clearstream, …)
+- [Slack और Discord](./slack-discord.md) — चैट सूचनाएँ पोस्ट करें
+- [Zapier](./zapier.md) — 7,000+ ऐप्स से जुड़ें
+- [Make](./make.md) — visual workflow automation
+- [Google Sheets](./google-sheets.md) — spreadsheets में एक्सपोर्ट करें
+- [Claude](./claude.md) — Anthropic के Claude से अपने चर्च के डेटा के बारे में पूछें
+- [ChatGPT](./chatgpt.md) — OpenAI के ChatGPT से अपने चर्च के डेटा के बारे में पूछें
+- [Connected services](./services/index.md) — प्रति-सेवा रेसिपी (Mailchimp, Donorbox, Clearstream, …)

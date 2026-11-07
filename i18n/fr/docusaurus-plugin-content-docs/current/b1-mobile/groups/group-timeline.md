@@ -1,5 +1,6 @@
 ---
 title: "Chronologie du groupe"
+description: "Découvrez comment la chronologie des groupes de B1 Mobile réunit publications, discussions et mises à jour de tous vos groupes, et que faire en cas de pause."
 ---
 
 # Chronologie du groupe

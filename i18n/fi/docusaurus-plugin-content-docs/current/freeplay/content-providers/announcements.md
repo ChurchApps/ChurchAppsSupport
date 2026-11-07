@@ -1,5 +1,6 @@
 ---
 title: "Ilmoitukset"
+description: "Toista kansio dioja FreePlay TV:llä aula- tai ennen tuntia -ilmoituksiin: valitse tarjoajan kansio, pidä se synkronoituna ja sammuta, kun olet valmis."
 ---
 
 # Ilmoitukset
@@ -13,7 +14,7 @@ FreePlay voi toistaa kansion ilmoitusdioja TV:llesi silmukassa -- esimerkiksi au
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Yhdistä sisältöpalveluun](./connecting-providers), jossa ilmoitusdiasi ovat, kuten Dropbox tai OneDrive
+- [Yhdistä sisältöpalveluun](./connecting-providers.md), jossa ilmoitusdiasi ovat, kuten Dropbox tai OneDrive
 - Kokoa toistettavat kuvat tai videot yhteen kansioon tuossa palvelussa
 
 </div>
@@ -37,7 +38,7 @@ Kun diat on ladattu, sivupalkin yläosaan ilmestyy **Ilmoitukset**-kohta (**Täm
 - Viimeisen dian jälkeen silmukka alkaa alusta ensimmäisestä diasta
 - Jos kansiossa on vain yksi video, se toistetaan uudelleen samassa kohdassa
 
-Silmukka toistaa laitteeseen tallennetut tiedostot, joten se jatkuu ilman internet-yhteyttä. Voit käyttää samoja kaukosäätimen painikkeita kuin muussa sisällössä -- katso [Sisällön toistaminen](./playing-content).
+Silmukka toistaa laitteeseen tallennetut tiedostot, joten se jatkuu ilman internet-yhteyttä. Voit käyttää samoja kaukosäätimen painikkeita kuin muussa sisällössä -- katso [Sisällön toistaminen](./playing-content.md).
 
 ## Diojen päivittäminen
 
@@ -61,6 +62,6 @@ Palveluntarjoajan yhteyden katkaiseminen sammuttaa myös sieltä tulevat ilmoitu
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Yhdistäminen palveluntarjoajiin](./connecting-providers)** - Yhdistä palveluntarjoaja, jossa diasi ovat
-- **[Sisällön selaaminen ja lataaminen](./browsing-content)** - Selaa palveluntarjoajan kansioita ja toista sisältöä tarvittaessa
-- **[Sisällön toistaminen](./playing-content)** - Toiston ohjaimet TV:n kaukosäätimellä
+- **[Yhdistäminen palveluntarjoajiin](./connecting-providers.md)** - Yhdistä palveluntarjoaja, jossa diasi ovat
+- **[Sisällön selaaminen ja lataaminen](./browsing-content.md)** - Selaa palveluntarjoajan kansioita ja toista sisältöä tarvittaessa
+- **[Sisällön toistaminen](./playing-content.md)** - Toiston ohjaimet TV:n kaukosäätimellä

@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Sužinokite, ką jūsų bažnyčios B1.church svetainė siūlo nariams: nario portalą ir grupes, aukojimus, renginius, tarnystę ir registraciją į pamaldas."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Kai nariai apsilanko jūsų B1.church svetainėje, jie mato jūsų bažnyčios v
 
 ## Sužinokite daugiau
 
-- [Pradžia](./getting-started/) -- Sukurkite paskyrą, prisijunkite ir sužinokite, kaip naršyti B1.church.
-- [Grupės](./groups/) -- Prisijunkite prie bažnyčios grupių ir dalyvaukite jų veikloje.
-- [Aukojimai](./giving/) -- Aukokite ir valdykite savo aukojimus.
-- [Renginiai](./events/) -- Naršykite artėjančius bažnyčios renginius ir registruokitės į juos.
-- [Tarnystė](./serving/) -- Peržiūrėkite planus ir registruokitės savanoriškoms pareigoms.
-- [Planai](./plans/) -- Peržiūrėkite tarnystės planus ir savo savanoriškas pareigas.
-- [Registracija](./checkin/) -- Registruokitės į pamaldas, renginius ir svečių registraciją.
-- [Bendruomenės katalogas](./community/) -- Raskite kitus narius ir užmegzkite ryšį.
-- [Turinys](./content/) -- Pamokslai, Biblija, dienos eilutė ir tiesioginės transliacijos. (Mokymo programų atkūrimas perkeltas į [FreePlay](/docs/freeplay/).)
+- [Pradžia](./getting-started/index.md) -- Sukurkite paskyrą, prisijunkite ir sužinokite, kaip naršyti B1.church.
+- [Grupės](./groups/index.md) -- Prisijunkite prie bažnyčios grupių ir dalyvaukite jų veikloje.
+- [Aukojimai](./giving/index.md) -- Aukokite ir valdykite savo aukojimus.
+- [Renginiai](./events/index.md) -- Naršykite artėjančius bažnyčios renginius ir registruokitės į juos.
+- [Tarnystė](./serving/index.md) -- Peržiūrėkite planus ir registruokitės savanoriškoms pareigoms.
+- [Planai](./plans/index.md) -- Peržiūrėkite tarnystės planus ir savo savanoriškas pareigas.
+- [Registracija](./checkin/index.md) -- Registruokitės į pamaldas, renginius ir svečių registraciją.
+- [Bendruomenės katalogas](./community/index.md) -- Raskite kitus narius ir užmegzkite ryšį.
+- [Turinys](./content/index.md) -- Pamokslai, Biblija, dienos eilutė ir tiesioginės transliacijos. (Mokymo programų atkūrimas perkeltas į [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church visiškai nemokama bažnyčioms ir nariams. Jūsų bažnyčios administratorius svetainę sukuria ir pritaiko per B1 Admin. Kaip narys, tiesiog apsilankykite savo bažnyčios B1.church adresu, kad pradėtumėte.

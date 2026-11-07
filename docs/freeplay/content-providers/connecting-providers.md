@@ -1,5 +1,6 @@
 ---
 title: "Connecting to Providers"
+description: "Connect FreePlay to a content provider using a QR code, email login, or one-click access, and manage or disconnect the connection from Settings."
 ---
 
 # Connecting to Providers
@@ -13,7 +14,7 @@ Before you can browse content from a provider, you need to connect to it. Some p
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install and launch FreePlay -- see [Getting Started](../getting-started/)
+- Install and launch FreePlay -- see [Getting Started](../getting-started/index.md)
 - Have your TV remote ready for navigation
 - For providers requiring login, have your account credentials available
 
@@ -80,7 +81,7 @@ Selecting a provider card that shows the **Connected** badge opens its **Provide
 
 - **Browse Library** -- Show or hide this provider's content library in the sidebar
 - **Auto-Download Today's Lesson** -- Use this provider as the source of today's lesson and pre-download its files (only shown for providers that offer a current lesson)
-- **Use for Announcements** -- Pick a folder from this provider to loop from the **Announcements** item in the sidebar. See [Announcements](./announcements)
+- **Use for Announcements** -- Pick a folder from this provider to loop from the **Announcements** item in the sidebar. See [Announcements](./announcements.md)
 - **Check for Announcement Updates** -- Shown once an announcements folder is chosen; downloads new slides and removes deleted ones
 - **Disconnect** -- Remove the connection
 
@@ -100,6 +101,6 @@ Disconnecting removes the saved authentication from your device. You will need t
 
 ## Related Articles
 
-- **[Browsing and Downloading Content](./browsing-content)** - Navigate folders and play content after connecting
-- **[Announcements](./announcements)** - Loop a folder of slides from a connected provider
+- **[Browsing and Downloading Content](./browsing-content.md)** - Navigate folders and play content after connecting
+- **[Announcements](./announcements.md)** - Loop a folder of slides from a connected provider
 - **[Content Providers Overview](./index.md)** - See all available providers

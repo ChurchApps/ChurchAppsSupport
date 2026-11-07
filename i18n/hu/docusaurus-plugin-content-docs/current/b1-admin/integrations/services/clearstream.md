@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Clearstream SMS csatlakoztatása a B1 Admin-hoz Zapier-rel: SMS új adományra vagy űrlapbeküldésre, a bejövő válaszok személyként való visszaírása."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Kapcsolja be a Zap-ot. A B1 aktiváláskor regisztrálja az adomány-webhookot; 
 
 ## Lásd még
 
-- [Text In Church](./text-in-church) – alternatív SMS-platform, hasonló felépítéssel
-- [Mobile Message](./mobile-message) – az USA-n kívüli gyülekezeteknek
-- [Zapier (áttekintés)](../zapier) – a Zapier-receptek B1 oldala
+- [Text In Church](./text-in-church.md) – alternatív SMS-platform, hasonló felépítéssel
+- [Mobile Message](./mobile-message.md) – az USA-n kívüli gyülekezeteknek
+- [Zapier (áttekintés)](../zapier.md) – a Zapier-receptek B1 oldala
 - [Clearstream API docs](https://api-docs.clearstream.io/) – a Zapier-alkalmazáson túlmutató egyedi integrációkhoz

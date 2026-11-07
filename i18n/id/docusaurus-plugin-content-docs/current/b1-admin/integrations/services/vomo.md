@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Hubungkan pendaftaran relawan dan check-in kios VOMO ke orang dan grup di B1 Admin dengan Zapier, termasuk cakupan kunci API dan langkah pengaturan."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Ketika proyek VOMO berakhir, kosongkan grup B1 secara manual (atau gabungkan den
 
 ### Kirim SMS "terima kasih sudah mendaftar"
 
-Hubungkan VOMO Participation → Clearstream Send Text atau Text In Church Send Message dalam Zap yang sama. Keduanya memiliki action Zapier bawaan. Lihat [Clearstream](./clearstream) dan [Text In Church](./text-in-church).
+Hubungkan VOMO Participation → Clearstream Send Text atau Text In Church Send Message dalam Zap yang sama. Keduanya memiliki action Zapier bawaan. Lihat [Clearstream](./clearstream.md) dan [Text In Church](./text-in-church.md).
 
 ### Mendeteksi relawan yang tidak aktif
 
@@ -91,6 +92,6 @@ Jalankan trigger *Schedule* Zapier setiap hari yang memanggil Find Organizer di 
 
 ## Lihat Juga
 
-- [Zapier (ikhtisar)](../zapier): sisi B1 dari setiap resep Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): menggabungkan pendaftaran relawan dengan konfirmasi SMS
+- [Zapier (ikhtisar)](../zapier.md): sisi B1 dari setiap resep Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): menggabungkan pendaftaran relawan dengan konfirmasi SMS
 - [Webhooks (referensi pengembang)](/docs/developer/api/webhooks): event yang dapat memicu VOMO

@@ -1,12 +1,13 @@
 ---
 title: "Tapahtumailmoittautumiset"
+description: "Miten tapahtumailmoittautumiset toimivat B1 Adminissa ja B1Appissa: osallistujatyypit, maksulliset lisäpalvelut, alennuskoodit, maksut lahjoitusyhdyskäytävän kautta ja jonotuslistan siirrot."
 ---
 
 # Tapahtumailmoittautumiset
 
 <div class="article-intro">
 
-Sisäinen tapahtumailmoittautuminen sijaitsee sisältömoduulissa, ja maksullisten ilmoittautumisten käyttöönoton jälkeen siinä on täysi kaupallinen malli: hinnoitellut osallistujatyypit, hinnoitellut lisävalinnat, alennuskoodit, maksut seurakunnan olemassa olevan lahjoitysyhdyskäytävän kautta sekä tilapohjainen odotuslista. Maksupolku käyttää tarkoituksella uudelleen lahjoitusjärjestelmää. Ilmoittautumisohjain veloittaa saman `GatewayService` / `IGatewayProvider` -abstraktion kautta, joka on kuvattu sivulla [Lahjoitukset](./giving), joten korttitietoja tai maksupalvelun SDK:ta ei ole sisältömoduulissa. Tämä sivu kuvaa tietomallin, hinnoittelu- ja kapasiteettisäännöt sekä ilmoittautumis-, maksu- ja odotuslistavirrat.
+Sisäinen tapahtumailmoittautuminen sijaitsee sisältömoduulissa, ja maksullisten ilmoittautumisten käyttöönoton jälkeen siinä on täysi kaupallinen malli: hinnoitellut osallistujatyypit, hinnoitellut lisävalinnat, alennuskoodit, maksut seurakunnan olemassa olevan lahjoitysyhdyskäytävän kautta sekä tilapohjainen odotuslista. Maksupolku käyttää tarkoituksella uudelleen lahjoitusjärjestelmää. Ilmoittautumisohjain veloittaa saman `GatewayService` / `IGatewayProvider` -abstraktion kautta, joka on kuvattu sivulla [Lahjoitukset](./giving.md), joten korttitietoja tai maksupalvelun SDK:ta ei ole sisältömoduulissa. Tämä sivu kuvaa tietomallin, hinnoittelu- ja kapasiteettisäännöt sekä ilmoittautumis-, maksu- ja odotuslistavirrat.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisointi tapahtuu selaimessa täsmälleen samalla tavalla kuin lahjoituksissa (ks. [Lahjoitukset](./giving)). Ohjattu lomake käyttää uudelleen apphelper-maksunkäsittelijöiden rekisteriä, joten kirjautuneet jäsenet voivat maksaa tallennetuilla korteilla ja vieraat tokenisoivat uuden kortin. Ohjain peilaa `DonateController`in palveluntarjoajakohtaiset erikoisuudet: Kingdom Funding `pm-{id}` -maksutapatunnukset ja Stripe SCA -vastaukset `requires_action`, jotka palautetaan asiakkaalle kirjaamatta maksua. Onnistunut veloitus kirjoittaa `registrationPayments`-rivin, kasvattaa `amountPaid`-arvoa ja vahvistaa ilmoittautumisen. **Hyvityksiä ei ole toteutettu.** Maksullisen ilmoittautumisen peruminen säilyttää maksurivit, ja mahdolliset hyvitykset hoidetaan erikseen maksupalvelun hallintanäkymässä.
+Tokenisointi tapahtuu selaimessa täsmälleen samalla tavalla kuin lahjoituksissa (ks. [Lahjoitukset](./giving.md)). Ohjattu lomake käyttää uudelleen apphelper-maksunkäsittelijöiden rekisteriä, joten kirjautuneet jäsenet voivat maksaa tallennetuilla korteilla ja vieraat tokenisoivat uuden kortin. Ohjain peilaa `DonateController`in palveluntarjoajakohtaiset erikoisuudet: Kingdom Funding `pm-{id}` -maksutapatunnukset ja Stripe SCA -vastaukset `requires_action`, jotka palautetaan asiakkaalle kirjaamatta maksua. Onnistunut veloitus kirjoittaa `registrationPayments`-rivin, kasvattaa `amountPaid`-arvoa ja vahvistaa ilmoittautumisen. **Hyvityksiä ei ole toteutettu.** Maksullisen ilmoittautumisen peruminen säilyttää maksurivit, ja mahdolliset hyvitykset hoidetaan erikseen maksupalvelun hallintanäkymässä.
 
 Molemmat sisäänkäyntipisteet kulkevat saman koodipolun kautta: `register` (maksu rekisteröitymisen yhteydessä) ja `pay` (saldon maksu tai odotuslistan viimeistely).
 
@@ -147,7 +148,7 @@ Tietojen haku moduulien välillä (vieraan henkilön ratkaiseminen tai luominen,
 
 ## Aiheeseen liittyvät sivut
 
-- [Lahjoitukset](./giving): yhdyskäytävän abstraktio, palveluntarjoajarekisteri ja tokenisointimalli, joita tämä ominaisuus käyttää uudelleen
-- [Sisältöpäätepisteet](../api/endpoints/content): sisältömoduulin REST-rajapinta
-- [Webhookit](../api/webhooks): `registration.created`-tapahtuma
-- [Moduulirakenne](../api/module-structure): sisältömoduulin järjestäytyminen palvelinpuolella
+- [Lahjoitukset](./giving.md): yhdyskäytävän abstraktio, palveluntarjoajarekisteri ja tokenisointimalli, joita tämä ominaisuus käyttää uudelleen
+- [Sisältöpäätepisteet](../api/endpoints/content.md): sisältömoduulin REST-rajapinta
+- [Webhookit](../api/webhooks.md): `registration.created`-tapahtuma
+- [Moduulirakenne](../api/module-structure.md): sisältömoduulin järjestäytyminen palvelinpuolella

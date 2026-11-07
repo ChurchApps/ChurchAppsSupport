@@ -1,5 +1,6 @@
 ---
 title: "カスタムドメイン"
+description: "B1 Admin で DNS レコードを設定し、設定でドメインを追加することで、www.yourchurch.org のような独自ドメインを B1 のサイトに向けます。"
 ---
 
 # カスタムドメイン

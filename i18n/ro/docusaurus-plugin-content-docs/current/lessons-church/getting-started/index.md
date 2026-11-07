@@ -1,5 +1,7 @@
 ---
-title: "Ghid de pornire"
+title: "Primii pași cu Lessons.church"
+sidebar_label: "Ghid de pornire"
+description: "Creați contul gratuit Lessons.church, conectați biserica, configurați clasele și programați primele lecții. Fără abonament sau perioadă de probă."
 ---
 
 # Ghid de pornire

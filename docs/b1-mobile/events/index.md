@@ -1,5 +1,7 @@
 ---
-title: "Events"
+title: "Church Events and Registration in B1 Mobile"
+sidebar_label: "Events"
+description: "Browse upcoming church events in B1 Mobile and register yourself and family members for ones that have sign-up open."
 ---
 
 # Events
@@ -23,10 +25,10 @@ Events may show different statuses:
 
 ## What You Need
 
-- [B1 Mobile installed](../getting-started/installing) and [logged in](../getting-started/logging-in)
+- [B1 Mobile installed](../getting-started/installing.md) and [logged in](../getting-started/logging-in.md)
 - Your church must have event registration enabled for the event
 
 ## Learn More
 
-- [Registering for Events](./registering) -- Step-by-step guide to signing up for an event on mobile
-- [Self Check-In](../checkin/self-checkin) -- Check in when you arrive at the event
+- [Registering for Events](./registering.md) -- Step-by-step guide to signing up for an event on mobile
+- [Self Check-In](../checkin/self-checkin.md) -- Check in when you arrive at the event

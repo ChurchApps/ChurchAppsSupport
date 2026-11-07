@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Configurazione Self Check-In con B1 Checkin e B1 Admin"
+sidebar_label: "Check-In"
+description: "Imposta il self check-in per i culti con l'app B1 Checkin in B1 Admin: dispositivi, account kiosk, orari, branding e registrazione ospiti tramite QR."
 ---
 
 # Check-In
@@ -99,7 +101,7 @@ Usa la schermata di inattività per mostrare annunci, eventi in programma o mess
 
 Il chiosco di check-in può mostrare un codice QR che i visitatori scansionano per registrare autonomamente se stessi e la propria famiglia sul proprio telefono. Questo velocizza il check-in per gli ospiti che vengono per la prima volta.
 
-Quando un ospite scansiona il codice QR, viene indirizzato a una [pagina di registrazione ospiti](../../b1-church/checkin/guest-registration) dove inserisce i nomi della propria famiglia e gli altri dati che hai scelto di richiedere. Un volontario può poi cercarlo sul chiosco ed effettuare il check-in.
+Quando un ospite scansiona il codice QR, viene indirizzato a una [pagina di registrazione ospiti](../../b1-church/checkin/guest-registration.md) dove inserisce i nomi della propria famiglia e gli altri dati che hai scelto di richiedere. Un volontario può poi cercarlo sul chiosco ed effettuare il check-in.
 
 ### Attivare la registrazione ospiti tramite QR
 

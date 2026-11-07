@@ -1,5 +1,6 @@
 ---
 title: "Trả trẻ & An toàn cho trẻ em"
+description: "Cho trẻ em check-out tại trạm B1 Checkin có nhân viên với mã bảo mật, người đón đã xác minh, gọi phụ huynh, in lại nhãn và phát thông báo khẩn cấp."
 ---
 
 # Trả trẻ & An toàn cho trẻ em
@@ -14,7 +15,7 @@ Trả trẻ là bước cuối cùng của quy trình đăng ký nhận trẻ: p
 <h4>Trước khi bắt đầu</h4>
 
 - Tính năng trả trẻ chỉ khả dụng trên các trạm được đặt ở chế độ **có nhân viên** trong cài đặt quản trị kiosk
-- Trẻ phải đã được [đăng ký nhận](./completing-checkin) với nhãn nhận trẻ in sẵn mã bảo mật
+- Trẻ phải đã được [đăng ký nhận](./completing-checkin.md) với nhãn nhận trẻ in sẵn mã bảo mật
 - Chức năng gọi phụ huynh và phát thông báo khẩn cấp yêu cầu nhà thờ của bạn đã kết nối nhà cung cấp dịch vụ nhắn tin trong B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Nếu tên nhập vào trùng với người được đánh dấu **Không đư
 Sau khi xác nhận người nhận, chạm trả trẻ. Tên người nhận sẽ được lưu cùng hồ sơ điểm danh.
 
 :::info
-Người nhận đáng tin cậy và người không được phép nhận trẻ do nhân viên nhà thờ quản lý trên trang của từng người trong B1 Admin. Xem [An toàn khi đăng ký nhận trẻ](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Người nhận đáng tin cậy và người không được phép nhận trẻ do nhân viên nhà thờ quản lý trên trang của từng người trong B1 Admin. Xem [An toàn khi đăng ký nhận trẻ](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Gọi phụ huynh
@@ -65,6 +66,6 @@ Thông báo được gửi đến mọi hộ gia đình có trẻ đã đăng k�
 
 ## Bài viết liên quan
 
-- [Hoàn tất đăng ký nhận trẻ](./completing-checkin) — mã bảo mật và nhãn nhận trẻ được tạo ra từ đâu
-- [An toàn khi đăng ký nhận trẻ](../../b1-admin/attendance/checkin-safety) — cấu hình sức chứa, tỷ lệ, người nhận trẻ và yêu cầu về nhà cung cấp nhắn tin
-- [Thiết lập máy in](../getting-started/printer-setup) — cấu hình máy in nhãn
+- [Hoàn tất đăng ký nhận trẻ](./completing-checkin.md) — mã bảo mật và nhãn nhận trẻ được tạo ra từ đâu
+- [An toàn khi đăng ký nhận trẻ](../../b1-admin/attendance/checkin-safety.md) — cấu hình sức chứa, tỷ lệ, người nhận trẻ và yêu cầu về nhà cung cấp nhắn tin
+- [Thiết lập máy in](../getting-started/printer-setup.md) — cấu hình máy in nhãn

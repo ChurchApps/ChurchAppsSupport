@@ -1,5 +1,6 @@
 ---
 title: "Guide: Hantera söndagsvolontärer"
+description: "Ställ in volontärteam, veckoplaner, gudstjänstordningar och söndagsuppgifter i B1 Admin, så volontärer ser och svarar på uppdrag i B1.church och mobilappen."
 ---
 
 # Hantera söndagsvolontärer
@@ -95,7 +96,7 @@ Låt volontärer anmäla sig till positioner själva i stället för att vänta 
 3. För varje position, markera kryssrutan **Tillåt självanmälan** för att göra den tillgänglig för självbetjäning.
 4. Lägg till en **Beskrivning** till varje position så att volontärerna vet vad rollen innebär.
 
-När positionerna för självanmälan har skapats visas de automatiskt på volontärernas anmälningssidor på [B1.church](../../b1-church/serving/volunteer-signup) och i [B1 Mobile-appen](../../b1-mobile/serving/volunteer-signup). Medlemmar kan bläddra bland lediga positioner, se hur många platser som återstår och anmäla sig med ett enda klick.
+När positionerna för självanmälan har skapats visas de automatiskt på volontärernas anmälningssidor på [B1.church](../../b1-church/serving/volunteer-signup.md) och i [B1 Mobile-appen](../../b1-mobile/serving/volunteer-signup.md). Medlemmar kan bläddra bland lediga positioner, se hur många platser som återstår och anmäla sig med ett enda klick.
 
 :::tip
 Blanda positioner som tilldelas av administratören och positioner för självanmälan i samma plan. Tilldela till exempel din lovsångsledare direkt, men låt välkomstteamet och kaffeservering välja själva.
@@ -109,7 +110,7 @@ Tilldelade volontärer ser automatiskt sina planer och kan svara.
 2. De kan acceptera eller tacka nej till uppdrag direkt från någon av plattformarna
 3. De kan ange spärrdatum för veckor då de inte är tillgängliga
 4. Planer kan skrivas ut för genomgångar eller sättas upp bakom scenen
-5. Volontärer kan bläddra bland och anmäla sig till lediga positioner via [anmälningssidan för volontärer](../../b1-church/serving/volunteer-signup)
+5. Volontärer kan bläddra bland och anmäla sig till lediga positioner via [anmälningssidan för volontärer](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Pushnotiser i mobilappen informerar volontärer när de får nya uppdrag eller när planer ändras.
@@ -130,5 +131,5 @@ Ditt system för volontärhantering är konfigurerat. Skapa en ny plan varje vec
 - [Arbetsflöden](../serving/workflows.md) — för människor genom återkommande processer med utlösare och automatiska steg
 - [Visa planer (webb)](../../b1-church/plans/viewing-plans.md) — hur volontärer ser planer online
 - [Visa planer (mobil)](../../b1-mobile/serving/viewing-plans.md) — hur volontärer ser planer i mobilen
-- [Volontäranmälan (webb)](../../b1-church/serving/volunteer-signup) — hur medlemmar väljer volontärpositioner själva
-- [Volontäranmälan (mobil)](../../b1-mobile/serving/volunteer-signup) — volontärers självanmälan i mobilen
+- [Volontäranmälan (webb)](../../b1-church/serving/volunteer-signup.md) — hur medlemmar väljer volontärpositioner själva
+- [Volontäranmälan (mobil)](../../b1-mobile/serving/volunteer-signup.md) — volontärers självanmälan i mobilen

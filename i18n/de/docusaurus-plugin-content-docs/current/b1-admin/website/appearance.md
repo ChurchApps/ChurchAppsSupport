@@ -1,5 +1,6 @@
 ---
 title: "Erscheinungsbild"
+description: "Farben, Schriften, Abstände, Logo und Navigation Ihrer Gemeindewebsite in B1 Admin festlegen, dazu Widgets, GA4-Analyse, Weiterleitungen und eigenes CSS."
 ---
 
 # Erscheinungsbild
@@ -13,7 +14,7 @@ Die Seite Erscheinungsbild ermöglicht es Ihnen, das gesamte Erscheinungsbild Ih
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Schließen Sie die [Ersteinrichtung](initial-setup) für Ihre Website ab.
+- Schließen Sie die [Ersteinrichtung](./initial-setup.md) für Ihre Website ab.
 - Halten Sie das Logo Ihrer Gemeinde im PNG-Format mit transparentem Hintergrund und einem Seitenverhältnis von 4:1 bereit.
 - Kennen Sie die Markenfarben Ihrer Gemeinde (Hexadezimalwerte), falls Sie einen bestehenden Styleguide haben.
 
@@ -98,7 +99,7 @@ Benutzerdefiniertes CSS ist mächtig, kann bei falscher Verwendung aber das Layo
 :::
 
 :::info
-Ihre Website setzt eine Content Security Policy durch, die Inline-Skripte aus anderen Quellen blockiert. Das Feld **Benutzerdefiniertes HTML** hier sowie das [HTML-Element](page-editor#using-the-html-element) auf einzelnen Seiten sind die vertrauenswürdigen Ausnahmen. Code, den Sie dort speichern, wird unverändert ausgeführt. Fügen Sie daher nur Skripte aus vertrauenswürdigen Quellen ein, etwa Analyse-Tags, Chat-Widgets und ähnliche Einbettungen.
+Ihre Website setzt eine Content Security Policy durch, die Inline-Skripte aus anderen Quellen blockiert. Das Feld **Benutzerdefiniertes HTML** hier sowie das [HTML-Element](./page-editor.md#using-the-html-element) auf einzelnen Seiten sind die vertrauenswürdigen Ausnahmen. Code, den Sie dort speichern, wird unverändert ausgeführt. Fügen Sie daher nur Skripte aus vertrauenswürdigen Quellen ein, etwa Analyse-Tags, Chat-Widgets und ähnliche Einbettungen.
 :::
 
 ## Design-Vorlagen
@@ -107,5 +108,5 @@ Wenn Sie einen schnellen Ausgangspunkt suchen, bieten die **Vorgeschlagenen Pale
 
 ## Nächste Schritte
 
-- [Seiten verwalten](managing-pages) – Ihre Website-Seiten erstellen und organisieren
-- [Dateien](files) – Medienelemente für Ihre Website hochladen
+- [Seiten verwalten](./managing-pages.md) – Ihre Website-Seiten erstellen und organisieren
+- [Dateien](./files.md) – Medienelemente für Ihre Website hochladen

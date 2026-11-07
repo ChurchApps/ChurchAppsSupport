@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Paramètres de profil et appareils dans B1 Admin"
+sidebar_label: "Profil"
+description: "Mettez à jour votre nom, courriel, mot de passe, connexion à deux facteurs, thème et appareils connectés dans votre profil B1 Admin, et approuvez les modifications de profil des membres."
 ---
 
 # Profil

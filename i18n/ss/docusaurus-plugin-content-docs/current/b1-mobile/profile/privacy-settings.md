@@ -1,5 +1,6 @@
 ---
 title: "Tilungiselelo Tekubukwa"
+description: "Lawula tinhlobo temininingwane yeprofayili lefana nemucingo, i-imeyili, nelikheli emalungu langabona kuLigcini Lemalungu le-B1 Mobile, bese ubuka tishintjo letilindzile."
 ---
 
 # Tilungiselelo Tekubukwa
@@ -13,7 +14,7 @@ Ithebhu ye-**Kubukwa** esikrinini sakho seliphrofayela ikuvumela kulawula loko l
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 
 </div>
 
@@ -52,8 +53,8 @@ Ithebhu ye-**I-Akhawunti** iniketa kufinyelela etilungiselelweni takho tekupheph
 
 | Ithebhu | Injongo |
 |---|---|
-| **Iphrofayela** | [Hlela imininingwane yakho yebumunye](./editing-profile) nesitfombe |
-| **Umndeni** | [Buka emalunga emndeni wakho](./household) |
+| **Iphrofayela** | [Hlela imininingwane yakho yebumunye](./editing-profile.md) nesitfombe |
+| **Umndeni** | [Buka emalunga emndeni wakho](./household.md) |
 | **Kubukwa** | Lawula loko labanye labakubona eluhlwini lwemalunga |
 | **Kulindzelwe** | Buyekeza tinguquko teliphrofayela letilindzele kuvunywa |
 | **I-Akhawunti** | Phatsa tilungiselelo tekuphepha |
@@ -62,6 +63,6 @@ Lamathebhu asebenta ndzawonye kute akunike kulawula lokuphelele kwemininingwane 
 
 ## Timibhalo Lehambelanako
 
-- [Kuhlela Iphrofayela Yakho](./editing-profile) -- Buyeketa imininingwane yakho yebumunye
-- [Umndeni](./household) -- Buka futsi uphatse emalunga emndeni wakho
+- [Kuhlela Iphrofayela Yakho](./editing-profile.md) -- Buyeketa imininingwane yakho yebumunye
+- [Umndeni](./household.md) -- Buka futsi uphatse emalunga emndeni wakho
 - [Luhlu Lwemalunga](../community/member-directory.md) -- Bona kutsi iphrofayela yakho ibonakala njani kulabanye

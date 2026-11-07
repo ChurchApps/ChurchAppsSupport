@@ -1,5 +1,6 @@
 ---
 title: "Collegare i fornitori e creare le playlist"
+description: "Configurare i content provider collegati in FreePlay Admin, poi creare, ordinare e visualizzare in anteprima le playlist per gli schermi programmati."
 ---
 
 # Collegare i fornitori e creare le playlist
@@ -107,6 +108,6 @@ Clicca su **Present** per riprodurre la playlist a schermo intero nel browser. Ã
 
 ## Articoli correlati
 
-- **[Programmare il calendario](./scheduling-the-calendar)** - Inserisci la tua playlist nel calendario di un gruppo di schermi
-- **[Gestire schermi e gruppi](./managing-screens)** - Imposta una playlist come loop predefinito di un gruppo
-- **[Fornitori di contenuti](../content-providers/)** - Fornitori che puoi collegare direttamente sulla TV
+- **[Programmare il calendario](./scheduling-the-calendar.md)** - Inserisci la tua playlist nel calendario di un gruppo di schermi
+- **[Gestire schermi e gruppi](./managing-screens.md)** - Imposta una playlist come loop predefinito di un gruppo
+- **[Fornitori di contenuti](../content-providers/index.md)** - Fornitori che puoi collegare direttamente sulla TV

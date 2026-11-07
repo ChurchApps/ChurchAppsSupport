@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin'e Genel Bakış"
+description: "Aileler kendi kendine check-in yapabilsin, çocukları gruplara atayabilsin ve etiket ile teslim alma fişleri yazdırabilsin diye iPad veya Android tabletlerde B1 Church Checkin kiosk uygulamasını kurun."
 ---
 
 # B1 Church Checkin'e Genel Bakış
@@ -24,7 +25,7 @@ Kiliseniz girişine veya karşılama alanına bir iPad ya da Android tablet yerl
 - **Hane incelemesi** -- Tüm aile üyelerini fotoğrafları ve mevcut grup atamalarıyla tek bakışta görün.
 - **Grup ataması** -- Her aile üyesini seçilen ayin saati için doğru sınıfa veya gruba atayın.
 - **Misafir check-in'i** -- Ad ve soyadla bir misafiri anında hanenize ekleyin.
-- **QR misafir kaydı** -- Ziyaretçilerin check-in yapmadan önce kendi telefonlarında [kendilerini kaydetmek](../b1-church/checkin/guest-registration) için tarayabileceği bir QR kodu gösterin ya da kiosk üzerinde aynı formu doldurmaları için **Buraya kaydolun** düğmesine dokunmalarına izin verin.
+- **QR misafir kaydı** -- Ziyaretçilerin check-in yapmadan önce kendi telefonlarında [kendilerini kaydetmek](../b1-church/checkin/guest-registration.md) için tarayabileceği bir QR kodu gösterin ya da kiosk üzerinde aynı formu doldurmaları için **Buraya kaydolun** düğmesine dokunmalarına izin verin.
 - **Etiket yazdırma** -- Çocuklar için isim etiketleri ve benzersiz güvenlik kodlu ebeveyn teslim fişleri yazdırın.
 - **Ağ yazıcısı desteği** -- Ağ yazıcılarını doğrudan uygulamadan keşfedin ve yapılandırın.
 - **Otomatik giriş** -- İlk girişten sonra uygulama kimlik bilgilerinizi hatırlar ve sonraki açılışlarda doğrudan ayinler ekranına gider.
@@ -33,8 +34,8 @@ Kiliseniz girişine veya karşılama alanına bir iPad ya da Android tablet yerl
 
 ## Dokümantasyon Bölümleri
 
-- **[Başlarken](./getting-started/)** -- Uygulamayı kurma, giriş yapma ve yazıcınızı ayarlama.
-- **[Check-In İş Akışı](./check-in/)** -- Ayin seçiminden etiket yazdırmaya kadar tam check-in akışı.
+- **[Başlarken](./getting-started/index.md)** -- Uygulamayı kurma, giriş yapma ve yazıcınızı ayarlama.
+- **[Check-In İş Akışı](./check-in/index.md)** -- Ayin seçiminden etiket yazdırmaya kadar tam check-in akışı.
 
 :::tip
 B1 Church Checkin, ailelerin kolayca ulaşabileceği şekilde yatay yönde monte edilmiş 10 inçlik bir tablette (iPad veya Android) en iyi şekilde çalışır. Uygulamayı [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) veya [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/) üzerinden indirebilirsiniz.

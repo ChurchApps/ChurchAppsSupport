@@ -1,5 +1,6 @@
 ---
 title: "Przepływ zameldowania"
+description: "Przejdź krok po kroku przez kiosk B1 Church Checkin, od wyboru nabożeństwa po wymeldowanie. Najpierw skonfiguruj nabożeństwa, grupy i osoby w B1 Admin."
 ---
 
 # Przepływ zameldowania
@@ -12,13 +13,13 @@ Proces zameldowania w B1 Church Checkin przebiega według prostego, krok po krok
 
 ## Przepływ zameldowania w skrócie
 
-1. **[Wybierz nabożeństwo](./selecting-service)** – Wybierz nabożeństwo, w którym uczestniczysz (np. niedziela rano, niedziela po południu, w środku tygodnia).
-2. **[Wyszukaj swoją rodzinę](./looking-up-members)** – Wyszukaj po numerze telefonu lub nazwisku, aby odnaleźć siebie w systemie.
-3. **[Sprawdź swoje gospodarstwo domowe](./household-review)** – Zobacz wszystkich członków rodziny i ich obecne przydziały do grup.
-4. **[Przypisz grupy](./group-assignment)** – Wybierz zajęcia lub grupę, do której każdy członek rodziny ma uczęszczać na każdym z terminów nabożeństwa.
-5. **[Dodaj gości](./adding-guests)** (opcjonalnie) – Dodaj do swojego gospodarstwa domowego odwiedzającego, jeśli dołączy do Ciebie.
-6. **[Zakończ zameldowanie](./completing-checkin)** – Naciśnij przycisk zameldowania, aby zatwierdzić obecność i wydrukować etykiety.
-7. **[Wymelduj się](./checking-out)** (stanowiska obsługiwane przez personel) – W czasie odbioru sprawdź kod bezpieczeństwa i osobę odbierającą, korzystając z list zaufanych osób odbierających, powiadomienia rodzica oraz ponownych wydruków etykiet.
+1. **[Wybierz nabożeństwo](./selecting-service.md)** – Wybierz nabożeństwo, w którym uczestniczysz (np. niedziela rano, niedziela po południu, w środku tygodnia).
+2. **[Wyszukaj swoją rodzinę](./looking-up-members.md)** – Wyszukaj po numerze telefonu lub nazwisku, aby odnaleźć siebie w systemie.
+3. **[Sprawdź swoje gospodarstwo domowe](./household-review.md)** – Zobacz wszystkich członków rodziny i ich obecne przydziały do grup.
+4. **[Przypisz grupy](./group-assignment.md)** – Wybierz zajęcia lub grupę, do której każdy członek rodziny ma uczęszczać na każdym z terminów nabożeństwa.
+5. **[Dodaj gości](./adding-guests.md)** (opcjonalnie) – Dodaj do swojego gospodarstwa domowego odwiedzającego, jeśli dołączy do Ciebie.
+6. **[Zakończ zameldowanie](./completing-checkin.md)** – Naciśnij przycisk zameldowania, aby zatwierdzić obecność i wydrukować etykiety.
+7. **[Wymelduj się](./checking-out.md)** (stanowiska obsługiwane przez personel) – W czasie odbioru sprawdź kod bezpieczeństwa i osobę odbierającą, korzystając z list zaufanych osób odbierających, powiadomienia rodzica oraz ponownych wydruków etykiet.
 
 Po zakończeniu zameldowania aplikacja wyświetla ekran potwierdzenia i automatycznie wraca do ekranu wyszukiwania, gotowa na kolejną rodzinę.
 
@@ -36,5 +37,5 @@ Przed użyciem kiosku zameldowania upewnij się, że w B1 Admin skonfigurowano n
 - **Osoby** są dodane do systemu z przypisaniem do gospodarstw domowych. Zobacz [dodawanie osób](../../b1-admin/people/adding-people.md).
 
 :::info
-Jeśli nie skonfigurowano jeszcze samego kiosku, zapoznaj się z [Pierwszymi krokami](../getting-started/), gdzie znajdziesz instrukcje instalacji, logowania i konfiguracji drukarki.
+Jeśli nie skonfigurowano jeszcze samego kiosku, zapoznaj się z [Pierwszymi krokami](../getting-started/index.md), gdzie znajdziesz instrukcje instalacji, logowania i konfiguracji drukarki.
 :::

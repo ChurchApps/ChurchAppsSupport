@@ -1,5 +1,6 @@
 ---
 title: "Référence des points de terminaison"
+description: "Trouvez les points d’accès de l’API ChurchApps par module, avec méthode, chemin, authentification et permission, et les conventions d’erreurs."
 ---
 
 # Référence des points de terminaison
@@ -89,10 +90,10 @@ Les paramètres du rapport sont passés en tant que valeurs de chaîne de requê
 
 | Module | Chemin de base | Description |
 |--------|-----------|-------------|
-| [Authentification](./authentication) | `/membership/users`, `/membership/oauth` | Connexion, enregistrement, jetons JWT, OAuth, permissions |
-| [Membership](./membership) | `/membership/*` | Personnes, églises, groupes, ménages, rôles, formulaires, paramètres |
-| [Attendance](./attendance) | `/attendance/*` | Campus, services, sessions, visites, enregistrements de check-in |
-| [Content](./content) | `/content/*` | Pages, sermons, événements, fichiers, galeries, Bible, streaming |
-| [Giving](./giving) | `/giving/*` | Donations, fonds, passerelles de paiement, abonnements |
-| [Messaging](./messaging) | `/messaging/*` | Conversations, notifications, appareils, SMS |
-| [Doing](./doing) | `/doing/*` | Plans, tâches, assignments, automations, planification |
+| [Authentification](./authentication.md) | `/membership/users`, `/membership/oauth` | Connexion, enregistrement, jetons JWT, OAuth, permissions |
+| [Membership](./membership.md) | `/membership/*` | Personnes, églises, groupes, ménages, rôles, formulaires, paramètres |
+| [Attendance](./attendance.md) | `/attendance/*` | Campus, services, sessions, visites, enregistrements de check-in |
+| [Content](./content.md) | `/content/*` | Pages, sermons, événements, fichiers, galeries, Bible, streaming |
+| [Giving](./giving.md) | `/giving/*` | Donations, fonds, passerelles de paiement, abonnements |
+| [Messaging](./messaging.md) | `/messaging/*` | Conversations, notifications, appareils, SMS |
+| [Doing](./doing.md) | `/doing/*` | Plans, tâches, assignments, automations, planification |

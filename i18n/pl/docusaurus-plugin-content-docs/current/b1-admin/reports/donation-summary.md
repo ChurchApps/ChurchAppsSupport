@@ -1,5 +1,6 @@
 ---
 title: "Podsumowanie darowizn"
+description: "Raport Podsumowanie darowizn w B1 Admin pokazuje sumę darowizn, liczbę unikalnych darczyńców i kwoty w podziale na fundusze za wybrany okres."
 ---
 
 # Podsumowanie darowizn

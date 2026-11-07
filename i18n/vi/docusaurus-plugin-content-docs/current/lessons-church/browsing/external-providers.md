@@ -1,5 +1,6 @@
 ---
 title: "Nhà cung cấp bên ngoài"
+description: "Tìm hiểu cách nhà cung cấp giáo trình bên thứ ba đưa nội dung lên Lessons.church bằng Định dạng Bài học Mở, và cách kết nối từ cổng thông tin."
 ---
 
 # Nhà cung cấp bên ngoài

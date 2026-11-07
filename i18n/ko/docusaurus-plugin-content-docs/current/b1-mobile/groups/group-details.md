@@ -1,5 +1,7 @@
 ---
-title: "그룹 상세"
+title: "B1 Mobile 앱의 그룹 상세 정보"
+sidebar_label: "그룹 상세"
+description: "B1 Mobile의 그룹 상세 페이지에서 그룹 정보, 게시물, 구성원을 확인하고, 그룹 화면에서 여는 방법을 알아보세요."
 ---
 
 # 그룹 상세
@@ -13,7 +15,7 @@ title: "그룹 상세"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 - [그룹](./index.md) 화면 열기
 
 </div>
@@ -46,5 +48,5 @@ title: "그룹 상세"
 
 ## 관련 문서
 
-- [그룹 타임라인](./group-timeline) -- 모든 그룹의 통합 활동 피드에 대해 알아보기
+- [그룹 타임라인](./group-timeline.md) -- 모든 그룹의 통합 활동 피드에 대해 알아보기
 - [메시지](../community/messaging.md) -- 그룹 구성원에게 개인 메시지 보내기

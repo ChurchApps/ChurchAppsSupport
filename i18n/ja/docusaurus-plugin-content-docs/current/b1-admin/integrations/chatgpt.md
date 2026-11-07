@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "API キーを使って ChatGPT を教会の B1 データに接続し、B1 Admin の人、献金、出席について平易な言葉で質問できるようにします。"
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ ChatGPT を教会の B1 データに接続し、ふつうの言葉で質問で�
 </div>
 
 :::tip 推奨：まずは Claude を試してください。無料です
-[Claude](./claude) は**無料プラン**で B1 に接続でき、3 分以内に設定できます。B1 のコネクターとして追加し、B1 のアカウントでサインインするだけです。キーは不要です。料金を払う前に、教会で B1 と AI を試す最も簡単な方法です。
+[Claude](./claude.md) は**無料プラン**で B1 に接続でき、3 分以内に設定できます。B1 のコネクターとして追加し、B1 のアカウントでサインインするだけです。キーは不要です。料金を払う前に、教会で B1 と AI を試す最も簡単な方法です。
 :::
 
 ## セットアップ
@@ -254,5 +255,5 @@ B1 との接続は無料です。ChatGPT と接続するには有料プラン（
 
 - [API Keys](/docs/developer/api/api-keys) — スコープの完全なリファレンス
 - [MCP Server（開発者向けリファレンス）](/docs/developer/api/mcp) — プロトコルの詳細とツールのスキーマ
-- [Claude](./claude) — 同じ考え方で、Anthropic のモデルを使う場合
+- [Claude](./claude.md) — 同じ考え方で、Anthropic のモデルを使う場合
 - [REST API リファレンス](/docs/developer/api/endpoints) — カスタム GPT のアクションが呼び出せるすべてのエンドポイント

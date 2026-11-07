@@ -1,5 +1,6 @@
 ---
 title: "Närvarorapporter"
+description: "Lär dig om B1 Admins tre närvarorapporter (Attendance Trend, Group Attendance, Daily Group Attendance), vad de visar och hur du kör och exporterar dem."
 ---
 
 # Närvarorapporter

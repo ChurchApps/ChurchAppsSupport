@@ -1,5 +1,6 @@
 ---
 title: "Notificaciones"
+description: "Configure las alertas push de la aplicación B1 Mobile, luego vea, abra y borre las notificaciones de su iglesia sobre mensajes, grupos y servicio."
 ---
 
 # Notificaciones
@@ -13,7 +14,7 @@ B1 Mobile usa notificaciones push para mantenerte informado sobre lo que está s
 <div class="prereqs">
 <h4>Antes de Empezar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Permite notificaciones para B1 Mobile en la configuración de tu dispositivo
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile usa notificaciones push para mantenerte informado sobre lo que está s
 
 Las notificaciones pueden cubrir una variedad de actividades, incluyendo:
 
-- **Mensajes** -- Cuando alguien te envía un [mensaje privado](./messaging).
-- **Actividad de grupo** -- Actualizaciones, publicaciones y conversaciones de [grupos](../groups/) a los que perteneces.
+- **Mensajes** -- Cuando alguien te envía un [mensaje privado](./messaging.md).
+- **Actividad de grupo** -- Actualizaciones, publicaciones y conversaciones de [grupos](../groups/index.md) a los que perteneces.
 - **Asignaciones de servicio** -- Cuando se te asigna a un [plan](../serving/viewing-plans.md) o cuando tu estado de asignación cambia.
 - **Otras actualizaciones** -- Anuncios generales y actividad relevante para ti.
 

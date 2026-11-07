@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "B1 Admin eseményeinek csatlakoztatása a Mobile Message ausztrál SMS API-hoz Zapier vagy Make webhookokkal üdvözlő, adomány- és emlékeztető SMS-ek küldéséhez."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ A Mobile Message `/v1/messages` végpontja egy híváskor legfeljebb 10 000 üze
 
 ### Make alternatíva
 
-Ha a Make-et részesíti előnyben, a **HTTP — Make a request** modult tegye a B1 Watch Events eseményindító után. Konfigurálja ugyanúgy (POST, Basic Auth, JSON törzs). A B1 oldalról lásd a [Make áttekintést](../make).
+Ha a Make-et részesíti előnyben, a **HTTP — Make a request** modult tegye a B1 Watch Events eseményindító után. Konfigurálja ugyanúgy (POST, Basic Auth, JSON törzs). A B1 oldalról lásd a [Make áttekintést](../make.md).
 
 ## Korlátok és megjegyzések
 
@@ -102,6 +103,6 @@ Ha a Make-et részesíti előnyben, a **HTTP — Make a request** modult tegye a
 
 ## Lásd még
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — alternatív SMS-szolgáltatók natív Zapier alkalmazásokkal (nincs szükség Webhooks by Zapier lépésre)
-- [Zapier (áttekintés)](../zapier) — a B1 oldala minden Zapier recepthez
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternatív SMS-szolgáltatók natív Zapier alkalmazásokkal (nincs szükség Webhooks by Zapier lépésre)
+- [Zapier (áttekintés)](../zapier.md) — a B1 oldala minden Zapier recepthez
 - [Mobile Message API dokumentáció](https://mobilemessage.com.au/api-documentation)

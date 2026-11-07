@@ -1,5 +1,6 @@
 ---
 title: "Portalo apžvalga"
+description: "Apžvalga Lessons.church portale: klasės, suplanuotos pamokos, srauto nuorodos, išoriniai teikėjai ir administravimo įrankiai."
 ---
 
 # Portalo apžvalga

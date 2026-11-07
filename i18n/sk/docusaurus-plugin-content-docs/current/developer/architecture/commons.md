@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Ako sa používateľom odoslané piesne, lekcie a šablóny pohybujú cez spoločný moderačný front v Server Admin v B1 Admin, od odoslania až po zverejnenie."
 ---
 
 # Content Commons — zdieľaná knižnica obsahu a moderovanie

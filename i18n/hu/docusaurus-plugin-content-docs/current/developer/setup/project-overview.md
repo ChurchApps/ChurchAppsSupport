@@ -1,5 +1,6 @@
 ---
 title: "Projektáttekintés"
+description: "A ChurchApps-tárolók áttekintése kategóriánként: keretrendszerek, fejlesztői portok, adatbázisok és a @churchapps-csomagok kapcsolata."
 ---
 
 # Projektáttekintés
@@ -13,7 +14,7 @@ A ChurchApps körülbelül 20 önálló tárolóból áll, amelyek mindegyike a 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a [előfeltételeket](./prerequisites) annak a projektkategóriának, amellyel dolgozni szeretne
+- Telepítse a [előfeltételeket](./prerequisites.md) annak a projektkategóriának, amellyel dolgozni szeretne
 
 </div>
 
@@ -72,7 +73,7 @@ A megosztott kód npm-en a `@churchapps` névtér alatt jelenik meg, és a fenti
 | `@churchapps/integration-sdk` | B1.church integrációs eszközkészlet: webhookok, REST-kliens, OAuth | Külső integrációs fejlesztők |
 | `@churchapps/texting` | SMS-szolgáltatók absztrakciós rétege | Api |
 
-A munkaterület beállításáról és a kiadási folyamatról lásd: [Megosztott könyvtárak](../shared-libraries/).
+A munkaterület beállításáról és a kiadási folyamatról lásd: [Megosztott könyvtárak](../shared-libraries/index.md).
 
 ## Projektek közötti kapcsolatok
 
@@ -90,5 +91,5 @@ Minden frontend-alkalmazás függ a @churchapps/helpers csomagtól. A webalkalma
 
 ## További lépések
 
-- **[Környezeti változók](./environment-variables)** – Állítsa be a `.env` fájlokat az API-khoz való csatlakozáshoz
-- **[API helyi beállítása](../api/local-setup)** – Állítsa be a backend API-t helyben
+- **[Környezeti változók](./environment-variables.md)** – Állítsa be a `.env` fájlokat az API-khoz való csatlakozáshoz
+- **[API helyi beállítása](../api/local-setup.md)** – Állítsa be a backend API-t helyben

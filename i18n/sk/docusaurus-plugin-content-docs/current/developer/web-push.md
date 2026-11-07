@@ -1,5 +1,6 @@
 ---
 title: "Webové push notifikácie"
+description: "Nastavenie kľúčov VAPID, klienta WebPushHelper a obsluhy service workera, aby B1.church a B1 Admin mohli doručovať členom webové push upozornenia."
 ---
 
 # Webové push notifikácie
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Súvisiace stránky
 
-- [Architektúra notifikácií](./architecture/notifications) -- Úplný lievik eskalácie v aplikácii, push a e-mail a engine pripomienok
-- [Architektúra v reálnom čase](./realtime) -- doručovanie cez WebSocket. Push sa teraz spúšťa z rovnakého lievika v aplikácii spolu s doručením cez socket v tom istom prechode, nielen ako záložné riešenie, keď doručenie cez socket neprebehne
-- [Endpointy správ](./api/endpoints/messaging) -- Notifikácie, zariadenia a zvyšok rozhrania správ
-- [AppHelper](./shared-libraries/app-helper) -- npm balík, ktorý obsahuje `WebPushHelper`
+- [Architektúra notifikácií](./architecture/notifications.md) -- Úplný lievik eskalácie v aplikácii, push a e-mail a engine pripomienok
+- [Architektúra v reálnom čase](./realtime.md) -- doručovanie cez WebSocket. Push sa teraz spúšťa z rovnakého lievika v aplikácii spolu s doručením cez socket v tom istom prechode, nielen ako záložné riešenie, keď doručenie cez socket neprebehne
+- [Endpointy správ](./api/endpoints/messaging.md) -- Notifikácie, zariadenia a zvyšok rozhrania správ
+- [AppHelper](./shared-libraries/app-helper.md) -- npm balík, ktorý obsahuje `WebPushHelper`

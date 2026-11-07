@@ -1,5 +1,6 @@
 ---
 title: "Sporočila"
+description: "Začnite, berite, urejajte in brišite zasebne pogovore z drugimi člani cerkve v aplikaciji B1 Mobile ter najdite ljudi prek imenika članov."
 ---
 
 # Sporočila
@@ -13,7 +14,7 @@ B1 Mobile vključuje zasebno sporočanje, s katerim lahko neposredno iz aplikaci
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in se [prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in se [prijavite](../getting-started/logging-in.md) v svoj račun
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile vključuje zasebno sporočanje, s katerim lahko neposredno iz aplikaci
 ## Začetek novega pogovora
 
 1. Na zaslonu s sporočili tapnite možnost za začetek novega pogovora.
-2. Z iskalnim poljem poiščite člana, ki mu želite poslati sporočilo. Člane lahko najdete tudi prek [imenika članov](./member-directory).
+2. Z iskalnim poljem poiščite člana, ki mu želite poslati sporočilo. Člane lahko najdete tudi prek [imenika članov](./member-directory.md).
 3. Izberite člana iz rezultatov iskanja.
 4. Vnesite svoje sporočilo in tapnite **Pošlji**.
 
@@ -52,11 +53,11 @@ Sporočila uporabite za usklajevanje s sodelavci med prostovoljci, za nadaljnje 
 :::
 
 :::info
-Omogočite [potisna obvestila](./notifications), da boste obveščeni, ko vam nekdo pošlje novo sporočilo, tudi kadar aplikacija ni odprta.
+Omogočite [potisna obvestila](./notifications.md), da boste obveščeni, ko vam nekdo pošlje novo sporočilo, tudi kadar aplikacija ni odprta.
 :::
 
 ## Sorodni članki
 
-- [Imenik članov](./member-directory) -- Poiščite člane, ki jim lahko pišete
-- [Obvestila](./notifications) -- Prejemajte obvestila o novih sporočilih
-- [Skupine](../groups/) -- Sodelujte v pogovorih skupin
+- [Imenik članov](./member-directory.md) -- Poiščite člane, ki jim lahko pišete
+- [Obvestila](./notifications.md) -- Prejemajte obvestila o novih sporočilih
+- [Skupine](../groups/index.md) -- Sodelujte v pogovorih skupin

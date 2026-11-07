@@ -1,5 +1,6 @@
 ---
 title: "Nhập từ Stripe"
+description: "Kéo các khoản dâng từ Stripe vào B1 Admin bằng bước xem trước, đánh dấu từng giao dịch là mới, đã nhập hoặc bỏ qua trước khi xác nhận."
 ---
 
 # Nhập từ Stripe

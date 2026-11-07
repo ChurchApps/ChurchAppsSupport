@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Lectura de la Biblia en B1 Mobile"
+sidebar_label: "Biblia"
+description: "Use el lector de Biblia integrado en la aplicación B1 Mobile para abrir las Escrituras desde el menú lateral, navegar por libros, capítulos y versículos, y encontrar la opción de Biblia de su iglesia."
 ---
 
 # Biblia
@@ -13,7 +15,7 @@ B1 Mobile incluye un lector de Biblia integrado para que puedas leer las Escritu
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - Tu iglesia debe tener la función de Biblia habilitada
 
 </div>
@@ -37,7 +39,7 @@ El lector integrado proporciona controles para moverte a través de las Escritur
 El lector ocupa toda la pantalla, dándote suficiente espacio para leer cómodamente en tu dispositivo.
 
 :::tip
-Haz de la pantalla de Biblia parte de tu rutina diaria: es una forma rápida de leer las Escrituras donde sea que estés. Combínala con el [Versículo del Día](./verse-of-the-day) para inspiración diaria.
+Haz de la pantalla de Biblia parte de tu rutina diaria: es una forma rápida de leer las Escrituras donde sea que estés. Combínala con el [Versículo del Día](./verse-of-the-day.md) para inspiración diaria.
 :::
 
 ## Disponibilidad
@@ -46,6 +48,6 @@ La pantalla de Biblia está disponible cuando tu iglesia ha habilitado esta func
 
 ## Artículos Relacionados
 
-- [Versículo del Día](./verse-of-the-day) -- Ve un versículo bíblico diario
-- [Sermones](./sermons) -- Mira sermones que complementen tu lectura bíblica
-- [Lecciones](./lessons) -- Accede a currículo estructurado y materiales de estudio
+- [Versículo del Día](./verse-of-the-day.md) -- Ve un versículo bíblico diario
+- [Sermones](./sermons.md) -- Mira sermones que complementen tu lectura bíblica
+- [Lecciones](./lessons.md) -- Accede a currículo estructurado y materiales de estudio

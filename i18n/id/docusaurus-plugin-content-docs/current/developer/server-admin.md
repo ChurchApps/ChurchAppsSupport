@@ -1,5 +1,6 @@
 ---
 title: "Administrasi Server"
+description: "Khusus pengguna Server.Admin: atur ulang verifikasi dua langkah, impersonasi akun, moderasi Commons, dan setujui email gereja di B1 Admin."
 ---
 
 # Administrasi Server

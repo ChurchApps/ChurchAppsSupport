@@ -1,5 +1,7 @@
 ---
-title: "Self Check-In"
+title: "B1.church Üye Portalında Kendi Kendine Check-In"
+sidebar_label: "Self Check-In"
+description: "B1.church üye portalından kendinizi ve ailenizi birkaç hızlı adımda, ibadet saatlerini ve grupları seçerek bir hizmete check-in yapın."
 ---
 
 # Kendi Kendine Yoklama
@@ -45,7 +47,7 @@ Katılan herkes için grupları seçtikten sonra, sayfanın altındaki düğmeye
 
 Yoklamanızın tamamlandığını ve katılımınızın kaydedildiğini gösteren bir onay göreceksiniz. Kısa bir süre sonra sayfa ibadet listesine döner ve bir sonraki yoklama için hazır olur.
 
-Kiliseniz bir yoklama istasyonunda isim etiketleri yazdırıyorsa, bunun yerine bir QR kodu ve bir güvenlik kodu ile birlikte **Yoklamanız yapıldı!** mesajını görürsünüz. İsim etiketlerinizi yazdırmak için kodu bir yoklama istasyonunda gösterin, ardından **Bitti**'ye dokunun. Bir B1 Checkin kioskunda **Kodu tara**'ya dokunun ve QR kodunu kameraya tutun. Bkz. [Telefonla Yoklama için Etiket Yazdırma](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Kiliseniz bir yoklama istasyonunda isim etiketleri yazdırıyorsa, bunun yerine bir QR kodu ve bir güvenlik kodu ile birlikte **Yoklamanız yapıldı!** mesajını görürsünüz. İsim etiketlerinizi yazdırmak için kodu bir yoklama istasyonunda gösterin, ardından **Bitti**'ye dokunun. Bir B1 Checkin kioskunda **Kodu tara**'ya dokunun ve QR kodunu kameraya tutun. Bkz. [Telefonla Yoklama için Etiket Yazdırma](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Seçtiğiniz ibadet için hane halkınız zaten yoklanmışsa, **Burada olanlar** başlığının yanında bir **Yoklama kodunu göster** bağlantısı görünür. Bu bağlantıya dokunarak QR kodunu ve güvenlik kodunu tekrar görüntüleyebilirsiniz. Örneğin, bir yoklama istasyonuna ulaşmadan sayfayı kapattıysanız bu işe yarar.
 

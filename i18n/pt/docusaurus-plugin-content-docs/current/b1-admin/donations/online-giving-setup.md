@@ -1,5 +1,6 @@
 ---
 title: "Configuração de doações online"
+description: "Conecte Stripe, PayPal, Kingdom Funding ou Paystack ao B1 Admin para que os membros contribuam online pelo site B1.church, com sincronização automática."
 ---
 
 # Configuração de doações online

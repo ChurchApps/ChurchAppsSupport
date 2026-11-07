@@ -1,5 +1,6 @@
 ---
 title: "Duyệt các nhóm"
+description: "Duyệt các nhóm công khai của nhà thờ trên B1.church theo danh mục, rồi xem thời gian họp, địa điểm và mô tả trên từng thẻ để chọn nhóm phù hợp."
 ---
 
 # Duyệt các nhóm

@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tindlela Tekukhokha"
+description: "Engeta, buyekeza, bese ususa tikhadi letigciniwe kuthebhu ye-Manage yesigaba sekunikela ku-B1 Mobile, kuze tipho letiphindzwako titfole ngekushesha ngaphandle kwekufaka kabusha tinkhulumo tetikhadi."
 ---
 
 # Kuphatsa Tindlela Tekukhokha
@@ -13,7 +14,7 @@ Ithebhu ye-**Phatsa** esigabeni sekunikela ikuvumela kubuka nekuphatsa tindlela 
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 
 </div>
 
@@ -31,7 +32,7 @@ Kute wengete likhadi lelisha:
 4. Faka imininingwane yelikhadi lakho. Imininingwane itfunyelwa ngendlela lephephile ku-**Stripe** kute icutjwe.
 5. Nasekugciniwe, likhadi lelisha lilotawuvela eluhlwini lwakho lwetindlela tekukhokha.
 
-Likhadi lakho lelisagciniwe litawube seliyatfola njengendlela yekukhokha ngesikhatsi lesilandzelako [wenta umnikelo](./making-donations) kusuka ethebhini ye-**Nikela**.
+Likhadi lakho lelisagciniwe litawube seliyatfola njengendlela yekukhokha ngesikhatsi lesilandzelako [wenta umnikelo](./making-donations.md) kusuka ethebhini ye-**Nikela**.
 
 ## Kususa Indlela Yekukhokha
 
@@ -44,7 +45,7 @@ Nangabe ungasafuni likhadi legciniwe, ungalisusa ethebhini ye-**Phatsa**:
 Likhadi angeke lisavela njengendlela yekukhokha nawenta umnikelo.
 
 :::info
-Kususa indlela yekukhokha akutfintani neminikelo lengasadzale. [Umlando wemnikelo](./donation-history) wakho uhlala ungashintjwa.
+Kususa indlela yekukhokha akutfintani neminikelo lengasadzale. [Umlando wemnikelo](./donation-history.md) wakho uhlala ungashintjwa.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Gcina tenkhe indlela yinye yekukhokha legciniwe kute unikele ngekushesha. Ngendl
 
 ## Timibhalo Lehambelanako
 
-- [Kwenta Umnikelo](./making-donations) -- Funda kutsi wenta njani sipho usebentisa indlela yekukhokha legciniwe
-- [Umlando Wemnikelo](./donation-history) -- Buka sifingqo sekunikela kwakho kanye neminikelo yangaphambili
+- [Kwenta Umnikelo](./making-donations.md) -- Funda kutsi wenta njani sipho usebentisa indlela yekukhokha legciniwe
+- [Umlando Wemnikelo](./donation-history.md) -- Buka sifingqo sekunikela kwakho kanye neminikelo yangaphambili

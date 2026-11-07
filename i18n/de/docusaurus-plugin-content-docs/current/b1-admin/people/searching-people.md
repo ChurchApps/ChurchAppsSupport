@@ -1,5 +1,6 @@
 ---
 title: "Personen suchen"
+description: "Durchsuchen Sie das Personenverzeichnis in B1 Admin nach Namen, sortieren und wählen Sie Spalten in der Tabellenansicht, erstellen Sie Filter mit der erweiterten Suche und exportieren Sie Treffer als CSV."
 ---
 
 # Personen suchen

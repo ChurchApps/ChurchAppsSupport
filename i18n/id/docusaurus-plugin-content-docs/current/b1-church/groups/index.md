@@ -1,5 +1,7 @@
 ---
-title: "Grup"
+title: "Grup Gereja di Portal Anggota B1.church"
+sidebar_label: "Grup"
+description: "Jelajahi dan gabung grup gereja di situs B1.church, lalu gunakan halaman grup untuk memeriksa pertemuan, acara, anggota, sumber daya, dan obrolan grup."
 ---
 
 # Grup

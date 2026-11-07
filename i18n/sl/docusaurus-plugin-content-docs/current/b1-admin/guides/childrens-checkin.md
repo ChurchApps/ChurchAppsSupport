@@ -1,5 +1,6 @@
 ---
 title: "Vodnik: Nastavitev prijave otrok v otroški službi"
+description: "Nastavite prijavo otrok v B1 Admin: povežite družine, ustvarite skupine po starosti, nastavite bogoslužja in natisnite značke za kiosk B1 Checkin."
 ---
 
 # Nastavitev prijave otrok v otroški službi

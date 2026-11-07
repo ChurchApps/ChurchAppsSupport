@@ -1,5 +1,6 @@
 ---
 title: "Gestione degli studi"
+description: "Creare, modificare e categorizzare studi in un programma di Lessons.church, allegando a ciascuno panoramiche di serie o modelli di newsletter."
 ---
 
 # Gestione degli studi

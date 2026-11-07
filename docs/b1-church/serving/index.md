@@ -1,5 +1,7 @@
 ---
-title: "Serving"
+title: "Volunteer Serving and Signup in B1.church"
+sidebar_label: "Serving"
+description: "Browse volunteer opportunities on B1.church, sign up for open positions, view your serving assignments, and cancel signups before the deadline."
 ---
 
 # Serving
@@ -14,8 +16,8 @@ The Serving section on B1.church lets you browse volunteer opportunities and sig
 
 - **Browse volunteer opportunities** -- See upcoming service plans with open positions that need volunteers.
 - **Sign up for positions** -- Choose a position and sign yourself up with one click.
-- **View your plans** -- See your upcoming and past [serving assignments](../plans/viewing-plans).
-- **Respond to assignments** -- Accept or decline positions you have been scheduled for, from the Plans page or the **You're serving** section on Home. If your plans change after you accept, you can [decline an accepted assignment](../plans/viewing-plans#declining-an-accepted-assignment) until the service is over.
+- **View your plans** -- See your upcoming and past [serving assignments](../plans/viewing-plans.md).
+- **Respond to assignments** -- Accept or decline positions you have been scheduled for, from the Plans page or the **You're serving** section on Home. If your plans change after you accept, you can [decline an accepted assignment](../plans/viewing-plans.md#declining-an-accepted-assignment) until the service is over.
 - **Remove signups** -- Cancel a self-signup if your plans change (before the deadline).
 
 ## How It Works
@@ -28,5 +30,5 @@ Only positions that your church administrator has enabled for self-signup appear
 
 ## Learn More
 
-- [Volunteer Signup](./volunteer-signup) -- Step-by-step guide to browsing and signing up for volunteer positions
-- [Viewing Plans](../plans/viewing-plans) -- See your assigned service plans and service orders
+- [Volunteer Signup](./volunteer-signup.md) -- Step-by-step guide to browsing and signing up for volunteer positions
+- [Viewing Plans](../plans/viewing-plans.md) -- See your assigned service plans and service orders

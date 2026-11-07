@@ -1,5 +1,6 @@
 ---
 title: "Online adományozás beállítása"
+description: "Stripe, PayPal, Kingdom Funding vagy Paystack csatlakoztatása a B1 Admin-hoz, hogy a tagok online adakozhassanak a B1.church oldalon át."
 ---
 
 # Online adományozás beállítása

@@ -1,5 +1,6 @@
 ---
 title: "Opprette skjemaer"
+description: "Lag egne skjema i B1 Admin for arrangementspåmelding, undersøkelser og besøkskort, og del dem via lenke, QR-kode eller utskrift."
 ---
 
 # Opprette skjemaer

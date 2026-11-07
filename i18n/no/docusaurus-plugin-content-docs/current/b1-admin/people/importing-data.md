@@ -1,5 +1,6 @@
 ---
 title: "Importere data"
+description: "Før eksisterende personer, grupper, oppmøte og gaver inn i B1 Admin med B1 Transfer-verktøyet, eller eksporter en sikkerhetskopi av dataene når som helst."
 ---
 
 # Importere data

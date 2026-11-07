@@ -1,5 +1,6 @@
 ---
 title: "Betalési módok kezelése"
+description: "Adj hozzá, tekints át és távolíts el mentett kártyákat a B1 Mobile adakozási szakasz Kezelés fülén, hogy az ismétlődő adományozás kártyaadatok újbóli megadása nélkül is gyorsabb legyen."
 ---
 
 # Betalési módok kezelése
@@ -13,7 +14,7 @@ A adakozás szekcióban található **Kezelés** fül segítségével megtekinth
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), majd [jelentkezzen be](../getting-started/logging-in) a fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), majd [jelentkezzen be](../getting-started/logging-in.md) a fiókjába
 
 </div>
 
@@ -31,7 +32,7 @@ A **Kezelés** fül megnyitásakor megjelenik az összes mentett fizetési módj
 4. Adja meg a kártyaadatait. Az adatok biztonságosan a **Stripe** feldolgozó rendszerébe kerülnek.
 5. A mentés után az új kártya megjelenik a fizetési módok listájában.
 
-A mentett kártya ezután fizetési lehetőségként lesz elérhető, amikor legközelebb [adományt tesz](./making-donations) az **Adakozás** fülön.
+A mentett kártya ezután fizetési lehetőségként lesz elérhető, amikor legközelebb [adományt tesz](./making-donations.md) az **Adakozás** fülön.
 
 ## Fizetési mód eltávolítása
 
@@ -44,7 +45,7 @@ Ha már nem szeretné, hogy kártya legyen mentve, a **Kezelés** fülön eltáv
 Az adott kártya többé nem jelenik meg fizetési lehetőségként, amikor adományt tesz.
 
 :::info
-A fizetési mód eltávolítása nem érinti a korábbi adományokat. Az [adománytörténete](./donation-history) változatlan marad.
+A fizetési mód eltávolítása nem érinti a korábbi adományokat. Az [adománytörténete](./donation-history.md) változatlan marad.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ A fizetési mód eltávolítása nem érinti a korábbi adományokat. Az [adomá
 
 ## Kapcsolódó cikkek
 
-- [Adakozás](./making-donations) -- Megtudhatja, hogyan adhat adományt egy mentett fizetési móddal
-- [Adománytörténet](./donation-history) -- Adományainak összesítése és korábbi adományai megtekintése
+- [Adakozás](./making-donations.md) -- Megtudhatja, hogyan adhat adományt egy mentett fizetési móddal
+- [Adománytörténet](./donation-history.md) -- Adományainak összesítése és korábbi adományai megtekintése

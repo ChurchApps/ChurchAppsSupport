@@ -1,5 +1,6 @@
 ---
 title: "Implementavimas"
+description: "Kur diegiamas kiekvienas ChurchApps projektas: AWS Lambda API, S3 žiniatinklio programos, Expo mobiliosios versijos ir B1 Admin Railway ar Docker."
 ---
 
 # Implementavimas
@@ -14,12 +15,12 @@ ChurchApps taiko skirtingas diegimo strategijas, priklausomai nuo projekto tipo.
 
 | Projekto tipas | Diegimo tikslas | Įrankiai |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (Node.js 24.x vykdymo aplinka) |
-| [Žiniatinklio programos](./web-apps) | S3 + CloudFront | Statinis sukūrimas, S3 sinchronizavimas, CloudFront talpyklos išvalymas |
-| [Mobiliosios programos](./mobile) | Programėlių parduotuvės | Expo EAS Build + OTA atnaujinimai |
-| [Savarankiškas talpinimas (Railway)](./railway-template) | Railway | Vieno paspaudimo šablonas: MySQL + Api + B1Admin + B1App |
-| [Savarankiškas talpinimas (Docker)](./docker) | Bet koks Docker serveris | Vienos eilutės diegimo programa; iš anksto sukurti GHCR vaizdai + Caddy, `./deploy/b1` atnaujinimas/atsarginė kopija/atkūrimas |
-| [Caddy pasirinktinio domeno tarpinis serveris](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Statinis Caddyfile + WinSW paslauga + suplanuotas žemėlapio sinchronizavimas |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (Node.js 24.x vykdymo aplinka) |
+| [Žiniatinklio programos](./web-apps.md) | S3 + CloudFront | Statinis sukūrimas, S3 sinchronizavimas, CloudFront talpyklos išvalymas |
+| [Mobiliosios programos](./mobile.md) | Programėlių parduotuvės | Expo EAS Build + OTA atnaujinimai |
+| [Savarankiškas talpinimas (Railway)](./railway-template.md) | Railway | Vieno paspaudimo šablonas: MySQL + Api + B1Admin + B1App |
+| [Savarankiškas talpinimas (Docker)](./docker.md) | Bet koks Docker serveris | Vienos eilutės diegimo programa; iš anksto sukurti GHCR vaizdai + Caddy, `./deploy/b1` atnaujinimas/atsarginė kopija/atkūrimas |
+| [Caddy pasirinktinio domeno tarpinis serveris](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Statinis Caddyfile + WinSW paslauga + suplanuotas žemėlapio sinchronizavimas |
 | FreeShow | Tiesioginis atsisiuntimas | Electron Builder (įvairių platformų dvejetainiai failai) |
 
 ## Aplinkos

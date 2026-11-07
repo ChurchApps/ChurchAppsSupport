@@ -1,5 +1,7 @@
 ---
-title: "Önkéntes jelentkezés"
+title: "Önkéntes jelentkezés a B1 Mobile alkalmazásban"
+sidebar_label: "Önkéntes jelentkezés"
+description: "Keress nyitott önkéntes pozíciókat a közelgő istentiszteletekre, jelentkezz rájuk, vagy töröld jelentkezésedet a B1 Mobile alkalmazásban. Ismerteti a határidőket és a létszámkorlátok működését."
 ---
 
 # Önkéntes jelentkezés
@@ -13,7 +15,7 @@ Böngésszen a szabad önkéntes pozíciók között, és jelentkezzen a közelg
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing) és [jelentkezzen be](../getting-started/logging-in) fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md) és [jelentkezzen be](../getting-started/logging-in.md) fiókjába
 - Az egyházi adminisztrátornak legalább egy pozícióban engedélyeznie kell az önjelentkezést
 
 </div>
@@ -60,5 +62,5 @@ Engedélyezze a [push-értesítéseket](../community/notifications.md), hogy ér
 
 ## Kapcsolódó cikkek
 
-- [Tervek megtekintése](./viewing-plans) -- Tekintse meg hozzárendelt terveit és istentiszteleti rendjét
+- [Tervek megtekintése](./viewing-plans.md) -- Tekintse meg hozzárendelt terveit és istentiszteleti rendjét
 - [Értesítések](../community/notifications.md) -- Maradjon naprakész a szolgálati feladatokkal kapcsolatban

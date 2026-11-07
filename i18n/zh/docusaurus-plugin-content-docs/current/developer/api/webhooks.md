@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "设置 B1 Admin 的实时 Webhook：注册端点、选择事件、验证 HMAC 签名、处理重试，并重新投递失败的负载。"
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Webhooks 是**仅出站**：B1 调用您的端点，您不调用 B1。每个 web
 
 ### 通过 API
 
-所有端点都在成员模块基本路径 `/membership/webhooks` 下，并需要具有 `Settings / Edit` 权限的教会管理员的 JWT，**或使用 `settings:write` 作用域的 [API 密钥](./api-keys)****。相同的路由接受两者。这就是当 Zap 或场景打开时 Zapier 和 Make 代表教会注册 webhooks 的方式。
+所有端点都在成员模块基本路径 `/membership/webhooks` 下，并需要具有 `Settings / Edit` 权限的教会管理员的 JWT，**或使用 `settings:write` 作用域的 [API 密钥](./api-keys.md)****。相同的路由接受两者。这就是当 Zap 或场景打开时 Zapier 和 Make 代表教会注册 webhooks 的方式。
 
 ```http
 POST /membership/webhooks

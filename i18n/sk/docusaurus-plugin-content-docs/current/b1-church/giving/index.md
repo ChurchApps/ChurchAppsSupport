@@ -1,5 +1,7 @@
 ---
-title: "Dary"
+title: "Online dary a príspevky v B1.church"
+sidebar_label: "Dary"
+description: "Darujte svojmu zboru online na B1.church bez účtu alebo sa prihláste a spravujte pravidelné dary, spôsoby platby a výpisy darov."
 ---
 
 # Dary

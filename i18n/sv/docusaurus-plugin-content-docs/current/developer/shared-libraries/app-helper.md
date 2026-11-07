@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referens för @churchapps/apphelper: undermodulernas ingångspunkter, vilka appar som använder varje export och steg för lokal utveckling och publicering."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Paketet `@churchapps/apphelper` innehåller delade React-komponenter och verktyg
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera **Node.js** och **Git** -- se [Förutsättningar](../setup/prerequisites)
+- Installera **Node.js** och **Git** -- se [Förutsättningar](../setup/prerequisites.md)
 - Bekanta dig med [Packages-arbetsytan](./index.md) och släppflödet
 
 </div>
@@ -92,6 +93,6 @@ Ta aldrig bort eller byt namn på en export förrän ersättningen har publicera
 
 ## Relaterade artiklar
 
-- **[Helpers](./helpers)** -- Basverktygspaketet som används tillsammans med AppHelper
-- **[Webbappar](../web-apps/)** -- Webbapplikationerna som använder paketet
+- **[Helpers](./helpers.md)** -- Basverktygspaketet som används tillsammans med AppHelper
+- **[Webbappar](../web-apps/index.md)** -- Webbapplikationerna som använder paketet
 - **[Översikt över delade bibliotek](./index.md)** -- Arbetsytans installation, släppflöde och arbetsflöde för lokala länkar

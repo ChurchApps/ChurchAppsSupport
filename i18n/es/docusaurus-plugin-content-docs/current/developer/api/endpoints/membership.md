@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Membership"
+description: "Referencia de endpoints de la API de Membership de ChurchApps: personas, hogares, grupos, roles, formularios y configuración, con reglas de autenticación y permisos."
 ---
 
 # Endpoints de Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Ruta base: `/membership/users`
 
-Consulte [Autenticación y permisos](./authentication) para los endpoints de inicio de sesión, registro y administración de contraseñas.
+Consulte [Autenticación y permisos](./authentication.md) para los endpoints de inicio de sesión, registro y administración de contraseñas.
 
 | Método | Ruta | Autenticación | Permiso | Descripción |
 |--------|------|---------------|---------|-------------|
@@ -342,6 +343,6 @@ Ruta base: `/membership/clientErrors`
 
 ## Páginas relacionadas
 
-- [Autenticación y permisos](./authentication): flujo de inicio de sesión, JWT, OAuth y modelo de permisos
-- [Endpoints de Attendance](./attendance): seguimiento de servicios y visitas
-- [Estructura de módulos](../module-structure): patrones de organización del código
+- [Autenticación y permisos](./authentication.md): flujo de inicio de sesión, JWT, OAuth y modelo de permisos
+- [Endpoints de Attendance](./attendance.md): seguimiento de servicios y visitas
+- [Estructura de módulos](../module-structure.md): patrones de organización del código

@@ -1,5 +1,7 @@
 ---
-title: "Samoprijava"
+title: "Samoprijava v portalu članov B1.church"
+sidebar_label: "Samoprijava"
+description: "Prijavite sebe in svoje gospodinjstvo na bogoslužje prek portala članov B1.church, z nekaj hitrimi koraki izberite čase bogoslužja in skupine."
 ---
 
 # Samoprijava
@@ -45,7 +47,7 @@ Ko izberete skupine za vse prisotne, tapnite gumb na dnu strani. Prikaže števi
 
 Prikazano bo potrdilo, da je prijava končana in da je vaša udeležba shranjena. Čez trenutek se stran vrne na seznam bogoslužij, pripravljena za naslednjo prijavo.
 
-Če vaša cerkev na prijavni postaji tiska značke z imeni, namesto tega vidite **Prijavljeni ste!** s kodo QR in varnostno kodo. Pokažite kodo na prijavni postaji, da natisnete značke z imeni, nato tapnite **Končano**. Na kiosku B1 Checkin tapnite **Skeniraj kodo** in držite kodo QR pred kamero – glejte [Tiskanje nalepk za prijavo s telefonom](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Če vaša cerkev na prijavni postaji tiska značke z imeni, namesto tega vidite **Prijavljeni ste!** s kodo QR in varnostno kodo. Pokažite kodo na prijavni postaji, da natisnete značke z imeni, nato tapnite **Končano**. Na kiosku B1 Checkin tapnite **Skeniraj kodo** in držite kodo QR pred kamero – glejte [Tiskanje nalepk za prijavo s telefonom](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Če je vaše gospodinjstvo za izbrano bogoslužje že prijavljeno, se ob naslovu **Kdo je tukaj** prikaže povezava **Pokaži kodo za prijavo**. Tapnite jo, da znova prikažete kodo QR in varnostno kodo – na primer, če ste zaprli stran, preden ste prišli do prijavne postaje.
 

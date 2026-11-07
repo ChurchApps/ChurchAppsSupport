@@ -1,5 +1,6 @@
 ---
 title: "Masinis žmonių redagavimas"
+description: "Atnaujinkite narystės statusą, šeimyninį statusą, lytį, atsisakymą, tinkintus Taip/Ne laukus ar grupių narystes daugeliui asmenų vienu metu B1 Admin."
 ---
 
 # Masinis žmonių redagavimas

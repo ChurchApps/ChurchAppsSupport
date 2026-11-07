@@ -1,5 +1,7 @@
 ---
-title: "Initiale Einrichtung"
+title: "Erste Schritte mit Ihrer Website in B1 Admin"
+sidebar_label: "Initiale Einrichtung"
+description: "Gemeindewebsite in B1 Admin einrichten: Subdomain oder eigene Domain verbinden, Startseite anlegen, Farben und Logo wählen, Navigation aufbauen."
 ---
 
 # Initiale Einrichtung
@@ -45,7 +47,7 @@ Wenn Sie die Settings-Option nicht sehen, bitten Sie die Person, die Ihr Kirchen
 6. Nachdem Sie einen Abschnitt hinzugefügt haben, klicken Sie erneut auf **Add Content**, um Text, Bilder, Videos, Karten, Formulare und mehr hinzuzufügen, indem Sie sie in Ihren Abschnitt ziehen.
 
 :::info
-Ausführliche Anweisungen zum Arbeiten mit Seiten und Navigation finden Sie unter [Managing Pages](managing-pages). Eine vollständige Anleitung zum visuellen Editor finden Sie unter [Using the Page Editor](page-editor).
+Ausführliche Anweisungen zum Arbeiten mit Seiten und Navigation finden Sie unter [Managing Pages](./managing-pages.md). Eine vollständige Anleitung zum visuellen Editor finden Sie unter [Using the Page Editor](./page-editor.md).
 :::
 
 ## Konfigurieren des Website-Designs
@@ -57,7 +59,7 @@ Ausführliche Anweisungen zum Arbeiten mit Seiten und Navigation finden Sie unte
 5. Konfigurieren Sie Ihren **Site Footer** mit den Kontaktinformationen und Links Ihrer Kirche.
 
 :::info
-Änderungen, die Sie in Appearance vornehmen, gelten für Ihre gesamte Website. Siehe die [Appearance](appearance)-Seite für ausführliche Anweisungen zu jeder Einstellung.
+Änderungen, die Sie in Appearance vornehmen, gelten für Ihre gesamte Website. Siehe die [Appearance](./appearance.md)-Seite für ausführliche Anweisungen zu jeder Einstellung.
 :::
 
 ## Einrichtung der Navigation
@@ -70,6 +72,6 @@ Ihre Navigations-Links werden in der Website Pages-Ansicht angezeigt. Um sie zu 
 
 ## Nächste Schritte
 
-- [Managing Pages](managing-pages) -- Erfahren Sie, wie Sie im Detail mit Seiten und Navigation arbeiten
-- [Appearance](appearance) -- Optimieren Sie die Farben, Schriftarten und das Layout Ihrer Website
-- [Files](files) -- Laden Sie Bilder und Dokumente für Ihre Website hoch
+- [Managing Pages](./managing-pages.md) -- Erfahren Sie, wie Sie im Detail mit Seiten und Navigation arbeiten
+- [Appearance](./appearance.md) -- Optimieren Sie die Farben, Schriftarten und das Layout Ihrer Website
+- [Files](./files.md) -- Laden Sie Bilder und Dokumente für Ihre Website hoch

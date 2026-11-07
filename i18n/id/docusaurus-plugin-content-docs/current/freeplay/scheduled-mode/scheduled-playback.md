@@ -1,5 +1,6 @@
 ---
 title: "Pemutaran Terjadwal di TV"
+description: "TV FreePlay yang terpasang mengunduh minggu ke depan dan memutar sesuai jam, bahkan offline. Mencakup panel info, tombol remote, dan menyematkan playlist."
 ---
 
 # Pemutaran Terjadwal di TV
@@ -13,8 +14,8 @@ Setelah TV dipasangkan ke kalender, FreePlay akan menjalankannya untuk Anda. Apl
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasangkan TV ke kalender](./pairing-a-screen)
-- [Isi kalender dengan konten](./scheduling-the-calendar), atau atur loop default untuk grup layar
+- [Pasangkan TV ke kalender](./pairing-a-screen.md)
+- [Isi kalender dengan konten](./scheduling-the-calendar.md), atau atur loop default untuk grup layar
 
 </div>
 
@@ -40,7 +41,7 @@ Panel ini juga memiliki tiga tombol:
 
 - **Pin This Playlist** - Terus memutar konten saat ini secara berulang dan abaikan kalender. Pilih **Unpin Playlist** untuk kembali ke jadwal
 - **Browse Content** - Keluar dari pemutar terjadwal untuk menelusuri penyedia konten yang terhubung
-- **Settings** - Buka pengaturan FreePlay, tempat Anda dapat [melepas pasangan atau memasangkan ke kalender lain](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Settings** - Buka pengaturan FreePlay, tempat Anda dapat [melepas pasangan atau memasangkan ke kalender lain](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Untuk kembali ke jadwal setelah menelusuri, tekan **Back** pada remote dari layar **Content Providers**, atau buka **Settings**, pilih **Pair to a calendar**, lalu pilih **Back to schedule**. TV yang sudah dipasangkan juga akan kembali ke pemutar terjadwal setiap kali FreePlay kembali ke latar depan, dan selalu membuka pemutar terjadwal saat dinyalakan.
@@ -77,6 +78,6 @@ Anda juga dapat memutar kalender layar di browser web. Di FreePlay Admin, buka l
 
 ## Artikel Terkait
 
-- **[Menjadwalkan Kalender](./scheduling-the-calendar)** - Atur apa yang diputar dan apa yang terjadi saat konten selesai lebih awal
-- **[Mengelola Layar dan Grup](./managing-screens)** - Periksa unduhan setiap layar dari FreePlay Admin
-- **[Memutar Konten](../content-providers/playing-content)** - Kontrol pemutar saat Anda memutar konten sendiri
+- **[Menjadwalkan Kalender](./scheduling-the-calendar.md)** - Atur apa yang diputar dan apa yang terjadi saat konten selesai lebih awal
+- **[Mengelola Layar dan Grup](./managing-screens.md)** - Periksa unduhan setiap layar dari FreePlay Admin
+- **[Memutar Konten](../content-providers/playing-content.md)** - Kontrol pemutar saat Anda memutar konten sendiri

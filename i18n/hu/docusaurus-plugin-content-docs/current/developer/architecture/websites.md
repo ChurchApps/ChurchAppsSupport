@@ -1,12 +1,13 @@
 ---
 title: "Webhely-útvonalkezelés és több webhely"
+description: "Hogyan képezi le a B1.church az aldomaineket és egyedi domaineket a megfelelő gyülekezetre vagy másodlagos oldalra, valamint az egyedi domainek TLS-ét kezelő Caddy edge-réteget."
 ---
 
 # Webhely-útvonalkezelés és több webhely
 
 <div class="article-intro">
 
-Egy gyülekezet mostantól több, egymástól független webhelyet is üzemeltethet. Mindegyik elérhető egy `*.b1.church` aldomainen vagy egy teljesen egyedi, a gyülekezet tulajdonában lévő domainen. Ez az oldal a builder *alatt* működő útvonalkezelő réteget mutatja be: hogyan lesz egy beérkező kérésből gyülekezet **és** egy konkrét webhely, hogyan működik a több webhelyes adatmodell (a `siteId` őrszeme, amely minden korábbi webhelyet változatlanul megjelenítve tart), valamint az egyedi domainek peremrétegét: egy EC2-n futó, saját kezelésű Caddy proxyt, amely lezárja a TLS-t, és minden gyülekezeti domaint a hozzá tartozó `*.b1.church` upstreamre írja át. Arról, hogy mi jelenik meg, miután a kérés feloldódott — az oldal-, szakasz- és elemfáról — lásd: [Webhelyszerkesztő](./website-builder).
+Egy gyülekezet mostantól több, egymástól független webhelyet is üzemeltethet. Mindegyik elérhető egy `*.b1.church` aldomainen vagy egy teljesen egyedi, a gyülekezet tulajdonában lévő domainen. Ez az oldal a builder *alatt* működő útvonalkezelő réteget mutatja be: hogyan lesz egy beérkező kérésből gyülekezet **és** egy konkrét webhely, hogyan működik a több webhelyes adatmodell (a `siteId` őrszeme, amely minden korábbi webhelyet változatlanul megjelenítve tart), valamint az egyedi domainek peremrétegét: egy EC2-n futó, saját kezelésű Caddy proxyt, amely lezárja a TLS-t, és minden gyülekezeti domaint a hozzá tartozó `*.b1.church` upstreamre írja át. Arról, hogy mi jelenik meg, miután a kérés feloldódott — az oldal-, szakasz- és elemfáról — lásd: [Webhelyszerkesztő](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ A `DomainController.save` írja a `domains` sorokat, majd egyetlen, **legjobb ig
 
 ### Jelenlegi állapot — statikus konfiguráció, nincs futásidejű állapot
 
-A gép (egy Windows EC2 példány, állandó Elastic IP-vel) egy **statikus Caddyfile**-ból futtatja a Caddy-t: on-demand TLS, amelynek `ask` végpontja a `/membership/domains/authorize` útvonalra mutat, plusz egy host→upstream térképfájl, amelyet 5 percenként frissít a `/membership/domains/hostmap` végpontból egy ütemezett feladat, amely egy szabályos `caddy reload` paranccsal zárul. A konfiguráció újraindítások után is megmarad, futásidejű állapot nélkül — nincs szükség az újraindítás utáni „újrafeltöltési” procedúrára —, és egy ismeretlen SNI **TLS-elutasítást** kap (olyan hostra nem jön létre tanúsítvány, amelyet az `authorize` elutasít), míg egy engedélyezett, de még nem leképezett host (egy frissen hozzáadott domain a szinkronizációs ablakon belül) tiszta 404-et kap. Az új domainek körülbelül 5 percen belül válnak elérhetővé a mentés után; tanúsítványuk az első látogatáskor készül el. A telepítés, üzemeltetés és a terepen tapasztalt buktatók leírása: [Caddy egyedi domain proxy](../deployment/caddy-proxy).
+A gép (egy Windows EC2 példány, állandó Elastic IP-vel) egy **statikus Caddyfile**-ból futtatja a Caddy-t: on-demand TLS, amelynek `ask` végpontja a `/membership/domains/authorize` útvonalra mutat, plusz egy host→upstream térképfájl, amelyet 5 percenként frissít a `/membership/domains/hostmap` végpontból egy ütemezett feladat, amely egy szabályos `caddy reload` paranccsal zárul. A konfiguráció újraindítások után is megmarad, futásidejű állapot nélkül — nincs szükség az újraindítás utáni „újrafeltöltési” procedúrára —, és egy ismeretlen SNI **TLS-elutasítást** kap (olyan hostra nem jön létre tanúsítvány, amelyet az `authorize` elutasít), míg egy engedélyezett, de még nem leképezett host (egy frissen hozzáadott domain a szinkronizációs ablakon belül) tiszta 404-et kap. Az új domainek körülbelül 5 percen belül válnak elérhetővé a mentés után; tanúsítványuk az első látogatáskor készül el. A telepítés, üzemeltetés és a terepen tapasztalt buktatók leírása: [Caddy egyedi domain proxy](../deployment/caddy-proxy.md).
 
 ### Örökölt futásidejű push — visszaállási útvonal, törlésre vár
 
@@ -209,8 +210,8 @@ A `CaddyHelper` (membership modul) még mindig képes a Caddy vezérlésére ann
 
 ## Kapcsolódó oldalak
 
-- [Caddy egyedi domain proxy](../deployment/caddy-proxy) — maga a peremgép: friss gép beállítása, WinSW szolgáltatás, a térképszinkronizáló feladat és az üzemeltetési buktatók
-- [Webhelyszerkesztő](./website-builder) — az oldal-/szakasz-/elemfa, a megjelenítők, a blog, a SEO és az AI-generálás (ami akkor jelenik meg, amikor egy kérés már gyülekezetre/webhelyre oldódott fel)
-- [Tartalom végpontok](../api/endpoints/content) — az oldalak, blokkok, hivatkozások és globális stílusok REST felülete, amely mind `?siteId=`-kompatibilis
-- [B1App](../web-apps/b1-app) — a Next.js alkalmazás, amely a middleware-t és a `[sdSlug]` útvonalkezelést futtatja
-- [Webalkalmazás telepítése](../deployment/web-apps) — a B1App Vercelre történő telepítésének módja
+- [Caddy egyedi domain proxy](../deployment/caddy-proxy.md) — maga a peremgép: friss gép beállítása, WinSW szolgáltatás, a térképszinkronizáló feladat és az üzemeltetési buktatók
+- [Webhelyszerkesztő](./website-builder.md) — az oldal-/szakasz-/elemfa, a megjelenítők, a blog, a SEO és az AI-generálás (ami akkor jelenik meg, amikor egy kérés már gyülekezetre/webhelyre oldódott fel)
+- [Tartalom végpontok](../api/endpoints/content.md) — az oldalak, blokkok, hivatkozások és globális stílusok REST felülete, amely mind `?siteId=`-kompatibilis
+- [B1App](../web-apps/b1-app.md) — a Next.js alkalmazás, amely a middleware-t és a `[sdSlug]` útvonalkezelést futtatja
+- [Webalkalmazás telepítése](../deployment/web-apps.md) — a B1App Vercelre történő telepítésének módja

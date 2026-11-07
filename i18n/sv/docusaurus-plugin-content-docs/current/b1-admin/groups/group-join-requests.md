@@ -1,5 +1,6 @@
 ---
 title: "Gruppförfrågningar om anslutning"
+description: "Granska, godkänn eller avslå förfrågningar om att gå med i grupper i B1 Admin, hitta väntande förfrågningar som ledare eller admin och ange orsak vid avslag."
 ---
 
 # Gruppförfrågningar om anslutning

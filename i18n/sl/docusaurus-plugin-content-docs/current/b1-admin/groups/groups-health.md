@@ -1,5 +1,6 @@
 ---
 title: "Stanje skupin"
+description: "Preverite stanje skupin v B1 Admin: 90-dnevna tabela članov, pridružitev, odhodov, odtoka in povprečne prisotnosti pokaže, kje je potrebna podpora."
 ---
 
 # Stanje skupin
@@ -13,8 +14,8 @@ Nadzorna plošča za stanje skupin vam ponuja pregled nad tem, kako napredujejo 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Potrebujete vsaj nekaj skupin z udeleženci, da boste videli smiselne podatke. Glejte [Ustvarjanje skupin](creating-groups).
-- Podatki o udeležbi se pridobivajo iz zabeleženih srečanj. Glejte razdelek [Udeležba](../attendance/).
+- Potrebujete vsaj nekaj skupin z udeleženci, da boste videli smiselne podatke. Glejte [Ustvarjanje skupin](./creating-groups.md).
+- Podatki o udeležbi se pridobivajo iz zabeleženih srečanj. Glejte razdelek [Udeležba](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ S klikom na ime skupine neposredno odprete podrobno stran skupine, kjer lahko pr
 
 ## Sorodni članki
 
-- [Ustvarjanje skupin](creating-groups) – nastavitev skupin
-- [Člani skupine](group-members) – upravljanje članstva v skupini
-- [Beleženje udeležbe](../attendance/tracking-attendance) – beleženje srečanj, ki napajajo to nadzorno ploščo
+- [Ustvarjanje skupin](./creating-groups.md) – nastavitev skupin
+- [Člani skupine](./group-members.md) – upravljanje članstva v skupini
+- [Beleženje udeležbe](../attendance/tracking-attendance.md) – beleženje srečanj, ki napajajo to nadzorno ploščo

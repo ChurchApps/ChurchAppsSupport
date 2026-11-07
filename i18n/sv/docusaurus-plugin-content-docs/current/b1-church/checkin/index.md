@@ -1,5 +1,7 @@
 ---
-title: "Incheckning"
+title: "Incheckning i B1.church medlemsportal"
+sidebar_label: "Incheckning"
+description: "Checka in dig själv och hushållsmedlemmar till en kyrkogudstjänst från B1.church medlemsportalen, hoppa över kiosken och tilldela grupper."
 ---
 
 # Incheckning

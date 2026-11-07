@@ -1,5 +1,6 @@
 ---
 title: "Delte biblioteker"
+description: "Dokumentation af de @churchapps npm-pakker, der deles af B1 Admin, B1.church og API'er, samt opsætning af Packages-workspacet og udgivelse med changesets."
 ---
 
 # Delte biblioteker
@@ -14,9 +15,9 @@ ChurchApps delt kode udgives til npm under `@churchapps/*` scope. Disse pakker g
 
 | Package | Beskrivelse | Brugt af |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Grundlæggende værktøjer (DateHelper, ApiHelper osv.) | Alle projekter |
-| [`@churchapps/apihelper`](./api-helper) | Serversidesværktøjer til Express.js | Alle API'er |
-| [`@churchapps/apphelper`](./app-helper) | Delte React-komponenter og værktøjer | Alle webapps |
+| [`@churchapps/helpers`](./helpers.md) | Grundlæggende værktøjer (DateHelper, ApiHelper osv.) | Alle projekter |
+| [`@churchapps/apihelper`](./api-helper.md) | Serversidesværktøjer til Express.js | Alle API'er |
+| [`@churchapps/apphelper`](./app-helper.md) | Delte React-komponenter og værktøjer | Alle webapps |
 
 ## Lokal udvikling med `npm link`
 

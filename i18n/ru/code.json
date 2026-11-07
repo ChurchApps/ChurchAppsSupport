@@ -1,117 +1,117 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "\u042d\u0442\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0434\u0430\u043b\u0430 \u0441\u0431\u043e\u0439.",
+    "message": "Эта страница дала сбой.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "\u0412\u0435\u0440\u043d\u0443\u0442\u044c\u0441\u044f \u043d\u0430\u0432\u0435\u0440\u0445",
+    "message": "Вернуться наверх",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "\u0410\u0440\u0445\u0438\u0432",
+    "message": "Архив",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "\u0410\u0440\u0445\u0438\u0432",
+    "message": "Архив",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043f\u043e \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u043c \u0431\u043b\u043e\u0433\u0430",
+    "message": "Навигация по страницам блога",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "\u0411\u043e\u043b\u0435\u0435 \u043d\u043e\u0432\u044b\u0435 \u0437\u0430\u043f\u0438\u0441\u0438",
+    "message": "Более новые записи",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "\u0411\u043e\u043b\u0435\u0435 \u0441\u0442\u0430\u0440\u044b\u0435 \u0437\u0430\u043f\u0438\u0441\u0438",
+    "message": "Более старые записи",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043f\u043e \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u044f\u043c \u0431\u043b\u043e\u0433\u0430",
+    "message": "Навигация по публикациям блога",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "\u0411\u043e\u043b\u0435\u0435 \u043d\u043e\u0432\u0430\u044f \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u044f",
+    "message": "Более новая публикация",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "\u0411\u043e\u043b\u0435\u0435 \u0441\u0442\u0430\u0440\u0430\u044f \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u044f",
+    "message": "Более старая публикация",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.tags.tagsPageLink": {
-    "message": "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432\u0441\u0435 \u0442\u0435\u0433\u0438",
+    "message": "Посмотреть все теги",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "\u0421\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0439 \u0440\u0435\u0436\u0438\u043c",
+    "message": "Системный режим",
     "description": "The name for the system color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "\u0421\u0432\u0435\u0442\u043b\u044b\u0439 \u0440\u0435\u0436\u0438\u043c",
+    "message": "Светлый режим",
     "description": "The name for the light color mode"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "\u0422\u0451\u043c\u043d\u044b\u0439 \u0440\u0435\u0436\u0438\u043c",
+    "message": "Тёмный режим",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "\u041f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u043c\u0435\u0436\u0434\u0443 \u0442\u0451\u043c\u043d\u044b\u043c \u0438 \u0441\u0432\u0435\u0442\u043b\u044b\u043c \u0440\u0435\u0436\u0438\u043c\u043e\u043c (\u0441\u0435\u0439\u0447\u0430\u0441 {mode})",
+    "message": "Переключить между тёмным и светлым режимом (сейчас {mode})",
     "description": "The ARIA label for the color mode toggle"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043f\u043e \u0445\u043b\u0435\u0431\u043d\u044b\u043c \u043a\u0440\u043e\u0448\u043a\u0430\u043c",
+    "message": "Навигация по хлебным крошкам",
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} \u044d\u043b\u0435\u043c\u0435\u043d\u0442|{count} \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430|{count} \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432",
+    "message": "{count} элемент|{count} элемента|{count} элементов",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438",
+    "message": "Страница документации",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "\u041d\u0430\u0437\u0430\u0434",
+    "message": "Назад",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "\u0414\u0430\u043b\u0435\u0435",
+    "message": "Далее",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442 \u043e\u0442\u043c\u0435\u0447\u0435\u043d|{count} \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430 \u043e\u0442\u043c\u0435\u0447\u0435\u043d\u043e|{count} \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u043e\u0432 \u043e\u0442\u043c\u0435\u0447\u0435\u043d\u043e",
+    "message": "{count} документ отмечен|{count} документа отмечено|{count} документов отмечено",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} \u0442\u0435\u0433\u043e\u043c \u00ab{tagName}\u00bb",
+    "message": "{nDocsTagged} тегом «{tagName}»",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "\u042d\u0442\u043e \u043d\u0435\u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f {siteTitle}, \u0432\u0435\u0440\u0441\u0438\u044f {versionLabel}.",
+    "message": "Это неопубликованная документация {siteTitle}, версия {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "\u042d\u0442\u043e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f {siteTitle} {versionLabel}, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044f.",
+    "message": "Это документация {siteTitle} {versionLabel}, которая больше не поддерживается.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "\u0410\u043a\u0442\u0443\u0430\u043b\u044c\u043d\u0443\u044e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044e \u0441\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u043d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 {latestVersionLink} ({versionLabel}).",
+    "message": "Актуальную документацию смотрите на странице {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "\u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u0435\u0440\u0441\u0438\u044f",
+    "message": "последняя версия",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.docs.versionBadge.label": {
-    "message": "\u0412\u0435\u0440\u0441\u0438\u044f: {versionLabel}"
+    "message": "Версия: {versionLabel}"
   },
   "theme.common.editThisPage": {
-    "message": "\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u044d\u0442\u0443 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443",
+    "message": "Редактировать эту страницу",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "\u041f\u0440\u044f\u043c\u0430\u044f \u0441\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 {heading}",
+    "message": "Прямая ссылка на {heading}",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
@@ -119,321 +119,321 @@
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u043c {user}",
+    "message": " пользователем {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435{atDate}{byUser}",
+    "message": "Последнее обновление{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.NotFound.title": {
-    "message": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u0430",
+    "message": "Страница не найдена",
     "description": "The title of the 404 page"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "\u0412\u0435\u0440\u0441\u0438\u0438",
+    "message": "Версии",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "\u0422\u0435\u0433\u0438:",
+    "message": "Теги:",
     "description": "The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c",
+    "message": "Закрыть",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "\u041e\u0441\u0442\u043e\u0440\u043e\u0436\u043d\u043e",
+    "message": "Осторожно",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "\u041e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c",
+    "message": "Опасность",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f",
+    "message": "Информация",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435",
+    "message": "Примечание",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "\u0421\u043e\u0432\u0435\u0442",
+    "message": "Совет",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "\u041f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u0435",
+    "message": "Предупреждение",
     "description": "The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "\u041d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f \u043f\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u043c \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u044f\u043c \u0431\u043b\u043e\u0433\u0430",
+    "message": "Навигация по последним публикациям блога",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044e \u0431\u043e\u043a\u043e\u0432\u043e\u0439 \u043f\u0430\u043d\u0435\u043b\u0438 '{label}'",
+    "message": "Развернуть категорию боковой панели '{label}'",
     "description": "The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u043a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044e \u0431\u043e\u043a\u043e\u0432\u043e\u0439 \u043f\u0430\u043d\u0435\u043b\u0438 '{label}'",
+    "message": "Свернуть категорию боковой панели '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
   "theme.IconExternalLink.ariaLabel": {
-    "message": "(\u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0432 \u043d\u043e\u0432\u043e\u0439 \u0432\u043a\u043b\u0430\u0434\u043a\u0435)",
+    "message": "(открывается в новой вкладке)",
     "description": "The ARIA label for the external link icon"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u043d\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u044f",
+    "message": "Главная навигация",
     "description": "The ARIA label for the main navigation"
   },
   "theme.NotFound.p1": {
-    "message": "\u041c\u044b \u043d\u0435 \u0441\u043c\u043e\u0433\u043b\u0438 \u043d\u0430\u0439\u0442\u0438 \u0442\u043e, \u0447\u0442\u043e \u0432\u044b \u0438\u0441\u043a\u0430\u043b\u0438.",
+    "message": "Мы не смогли найти то, что вы искали.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u0432\u044f\u0436\u0438\u0442\u0435\u0441\u044c \u0441 \u0432\u043b\u0430\u0434\u0435\u043b\u044c\u0446\u0435\u043c \u0441\u0430\u0439\u0442\u0430, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u0438\u043b \u0432\u0430\u043c \u0438\u0441\u0445\u043e\u0434\u043d\u0443\u044e \u0441\u0441\u044b\u043b\u043a\u0443, \u0438 \u0441\u043e\u043e\u0431\u0449\u0438\u0442\u0435, \u0447\u0442\u043e \u0441\u0441\u044b\u043b\u043a\u0430 \u043d\u0435 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442.",
+    "message": "Пожалуйста, свяжитесь с владельцем сайта, который предоставил вам исходную ссылку, и сообщите, что ссылка не работает.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "\u042f\u0437\u044b\u043a\u0438",
+    "message": "Языки",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "\u041d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435",
+    "message": "На этой странице",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
-    "message": "\u0427\u0438\u0442\u0430\u0442\u044c \u0434\u0430\u043b\u0435\u0435",
+    "message": "Читать далее",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "\u0427\u0438\u0442\u0430\u0442\u044c \u0434\u0430\u043b\u0435\u0435 \u043e {title}",
+    "message": "Читать далее о {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} \u043c\u0438\u043d. \u0447\u0442\u0435\u043d\u0438\u044f|{readingTime} \u043c\u0438\u043d. \u0447\u0442\u0435\u043d\u0438\u044f|{readingTime} \u043c\u0438\u043d. \u0447\u0442\u0435\u043d\u0438\u044f",
+    "message": "{readingTime} мин. чтения|{readingTime} мин. чтения|{readingTime} мин. чтения",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f",
+    "message": "Главная",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.CodeBlock.copy": {
-    "message": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c",
+    "message": "Копировать",
     "description": "The copy button label on code blocks"
   },
   "theme.CodeBlock.copied": {
-    "message": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e",
+    "message": "Скопировано",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043a\u043e\u0434",
+    "message": "Копировать код",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "message": "Свернуть боковую панель",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "message": "Свернуть боковую панель",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "\u0411\u043e\u043a\u043e\u0432\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438",
+    "message": "Боковая панель документации",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "\u041f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u043f\u0435\u0440\u0435\u043d\u043e\u0441 \u0441\u0442\u0440\u043e\u043a",
+    "message": "Переключить перенос строк",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "\u0417\u0430\u043a\u0440\u044b\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "message": "Закрыть боковую панель",
     "description": "The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "\u2190 \u041d\u0430\u0437\u0430\u0434 \u0432 \u0433\u043b\u0430\u0432\u043d\u043e\u0435 \u043c\u0435\u043d\u044e",
+    "message": "← Назад в главное меню",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "\u041f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "message": "Переключить боковую панель",
     "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0432\u044b\u043f\u0430\u0434\u0430\u044e\u0449\u0435\u0435 \u043c\u0435\u043d\u044e",
+    "message": "Развернуть выпадающее меню",
     "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0432\u044b\u043f\u0430\u0434\u0430\u044e\u0449\u0435\u0435 \u043c\u0435\u043d\u044e",
+    "message": "Свернуть выпадающее меню",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "message": "Развернуть боковую панель",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "message": "Развернуть боковую панель",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.SearchBar.noResultsText": {
-    "message": "\u041d\u0435\u0442 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u0432"
+    "message": "Нет результатов"
   },
   "theme.SearchBar.seeAllOutsideContext": {
-    "message": "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0441\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u0437\u0430 \u043f\u0440\u0435\u0434\u0435\u043b\u0430\u043c\u0438 \u00ab{context}\u00bb"
+    "message": "Показать все результаты за пределами «{context}»"
   },
   "theme.SearchBar.searchInContext": {
-    "message": "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0441\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u0432 \u00ab{context}\u00bb"
+    "message": "Показать все результаты в «{context}»"
   },
   "theme.SearchBar.seeAll": {
-    "message": "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0441\u0435 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b"
+    "message": "Показать все результаты"
   },
   "theme.SearchBar.label": {
-    "message": "\u041f\u043e\u0438\u0441\u043a",
+    "message": "Поиск",
     "description": "The ARIA label and placeholder for search button"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "\u0420\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u043e \u0437\u0430\u043f\u0440\u043e\u0441\u0443 \u00ab{query}\u00bb",
+    "message": "Результаты поиска по запросу «{query}»",
     "description": "The search page title for non-empty query"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "\u041f\u043e\u0438\u0441\u043a \u0432 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438",
+    "message": "Поиск в документации",
     "description": "The search page title for empty query"
   },
   "theme.SearchPage.searchContext.everywhere": {
-    "message": "\u0412\u0435\u0437\u0434\u0435"
+    "message": "Везде"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "{count} \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442 \u043d\u0430\u0439\u0434\u0435\u043d|{count} \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430 \u043d\u0430\u0439\u0434\u0435\u043d\u043e|{count} \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u043e\u0432 \u043d\u0430\u0439\u0434\u0435\u043d\u043e",
+    "message": "{count} документ найден|{count} документа найдено|{count} документов найдено",
     "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b",
+    "message": "Документы не найдены",
     "description": "The paragraph for empty search result"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u044f|{count} \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u0438|{count} \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u0439",
+    "message": "{count} публикация|{count} публикации|{count} публикаций",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} \u0441 \u0442\u0435\u0433\u043e\u043c \u00ab{tagName}\u00bb",
+    "message": "{nPosts} с тегом «{tagName}»",
     "description": "The title of the page for a blog tag"
   },
   "theme.blog.author.pageTitle": {
-    "message": "{authorName} \u2013 {nPosts}",
+    "message": "{authorName} – {nPosts}",
     "description": "The title of the page for a blog author"
   },
   "theme.blog.authorsList.pageTitle": {
-    "message": "\u0410\u0432\u0442\u043e\u0440\u044b",
+    "message": "Авторы",
     "description": "The title of the authors page"
   },
   "theme.blog.authorsList.viewAll": {
-    "message": "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432\u0441\u0435\u0445 \u0430\u0432\u0442\u043e\u0440\u043e\u0432",
+    "message": "Посмотреть всех авторов",
     "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.author.noPosts": {
-    "message": "\u042d\u0442\u043e\u0442 \u0430\u0432\u0442\u043e\u0440 \u0435\u0449\u0451 \u043d\u0435 \u043d\u0430\u043f\u0438\u0441\u0430\u043b \u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0446\u0438\u0438.",
+    "message": "Этот автор ещё не написал ни одной публикации.",
     "description": "The text for authors with 0 blog post"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "\u041d\u0435\u0438\u043d\u0434\u0435\u043a\u0441\u0438\u0440\u0443\u0435\u043c\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430",
+    "message": "Неиндексируемая страница",
     "description": "The unlisted content banner title"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "\u042d\u0442\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043d\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0430 \u0432 \u0441\u043f\u0438\u0441\u043e\u043a. \u041f\u043e\u0438\u0441\u043a\u043e\u0432\u044b\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u043d\u0435 \u0431\u0443\u0434\u0443\u0442 \u0435\u0451 \u0438\u043d\u0434\u0435\u043a\u0441\u0438\u0440\u043e\u0432\u0430\u0442\u044c, \u0438 \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438 \u0441 \u043f\u0440\u044f\u043c\u043e\u0439 \u0441\u0441\u044b\u043b\u043a\u043e\u0439 \u043c\u043e\u0433\u0443\u0442 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043a \u043d\u0435\u0439 \u0434\u043e\u0441\u0442\u0443\u043f.",
+    "message": "Эта страница не включена в список. Поисковые системы не будут её индексировать, и только пользователи с прямой ссылкой могут получить к ней доступ.",
     "description": "The unlisted content banner message"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "\u0427\u0435\u0440\u043d\u043e\u0432\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430",
+    "message": "Черновая страница",
     "description": "The draft content banner title"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "\u042d\u0442\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a\u043e\u043c. \u041e\u043d\u0430 \u0432\u0438\u0434\u043d\u0430 \u0442\u043e\u043b\u044c\u043a\u043e \u0432 \u0440\u0435\u0436\u0438\u043c\u0435 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0438 \u0438 \u0431\u0443\u0434\u0435\u0442 \u0438\u0441\u043a\u043b\u044e\u0447\u0435\u043d\u0430 \u0438\u0437 \u043f\u0440\u043e\u0434\u0430\u043a\u0448\u043d-\u0441\u0431\u043e\u0440\u043a\u0438.",
+    "message": "Эта страница является черновиком. Она видна только в режиме разработки и будет исключена из продакшн-сборки.",
     "description": "The draft content banner message"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "\u041f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u0441\u043d\u043e\u0432\u0430",
+    "message": "Попробовать снова",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "\u041f\u0435\u0440\u0435\u0439\u0442\u0438 \u043a \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u043c\u0443 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u043c\u043e\u043c\u0443",
+    "message": "Перейти к основному содержимому",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "\u0422\u0435\u0433\u0438",
+    "message": "Теги",
     "description": "The title of the tag list page"
   },
   "homepage.hero.subtitle": {
-    "message": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b \u0441 \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u043c \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u043c \u043a\u043e\u0434\u043e\u043c, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043f\u043e\u043c\u043e\u0433\u0443\u0442 \u0432\u0430\u0448\u0435\u0439 \u0446\u0435\u0440\u043a\u0432\u0438 \u0440\u0430\u0441\u0442\u0438. \u041d\u0430\u0439\u0434\u0438\u0442\u0435 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u0430, \u0443\u0447\u0435\u0431\u043d\u044b\u0435 \u043f\u043e\u0441\u043e\u0431\u0438\u044f \u0438 \u0441\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0443\u044e \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044e \u0434\u043b\u044f \u043a\u0430\u0436\u0434\u043e\u0433\u043e \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430 ChurchApps."
+    "message": "Бесплатные инструменты с открытым исходным кодом, которые помогут вашей церкви расти. Найдите руководства, учебные пособия и справочную документацию для каждого продукта ChurchApps."
   },
   "homepage.hero.getStarted": {
-    "message": "\u041d\u0430\u0447\u0430\u0442\u044c"
+    "message": "Начать"
   },
   "homepage.hero.b1AdminDocs": {
-    "message": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f B1 Admin"
+    "message": "Документация B1 Admin"
   },
   "homepage.products.b1admin.title": {
     "message": "B1 Admin"
   },
   "homepage.products.b1admin.description": {
-    "message": "\u041f\u0430\u043d\u0435\u043b\u044c \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0446\u0435\u0440\u043a\u043e\u0432\u044c\u044e \u0434\u043b\u044f \u0443\u0447\u0451\u0442\u0430 \u043b\u044e\u0434\u0435\u0439, \u0433\u0440\u0443\u043f\u043f, \u043f\u043e\u0441\u0435\u0449\u0430\u0435\u043c\u043e\u0441\u0442\u0438, \u043f\u043e\u0436\u0435\u0440\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u0439 \u0438 \u043c\u043d\u043e\u0433\u043e\u0433\u043e \u0434\u0440\u0443\u0433\u043e\u0433\u043e."
+    "message": "Панель управления церковью для учёта людей, групп, посещаемости, пожертвований и многого другого."
   },
   "homepage.products.b1website.title": {
     "message": "B1 Website"
   },
   "homepage.products.b1website.description": {
-    "message": "\u041f\u0443\u0431\u043b\u0438\u0447\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \u0446\u0435\u0440\u043a\u0432\u0438 \u0438 \u043f\u043e\u0440\u0442\u0430\u043b \u0434\u043b\u044f \u043f\u0440\u0438\u0445\u043e\u0436\u0430\u043d."
+    "message": "Публичный сайт церкви и портал для прихожан."
   },
   "homepage.products.b1mobile.title": {
     "message": "B1 Mobile"
   },
   "homepage.products.b1mobile.description": {
-    "message": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u043f\u0440\u0438\u0445\u043e\u0436\u0430\u043d \u043d\u0430 iOS \u0438 Android."
+    "message": "Устаревшее приложение для участников на iOS и Android, которое теперь заменено веб-приложением B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"
   },
   "homepage.products.b1checkin.description": {
-    "message": "\u041f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0441\u0442\u043e\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0439 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043d\u0430 \u043a\u0438\u043e\u0441\u043a\u0435 \u0434\u043b\u044f \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u043e\u0432 Android."
+    "message": "Приложение для самообслуживания при регистрации на киоске для планшетов iPad и Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
   },
   "homepage.products.lessons.description": {
-    "message": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u0443\u0447\u0435\u0431\u043d\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b \u0434\u043b\u044f \u0446\u0435\u0440\u043a\u0432\u0435\u0439 \u0438 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0443\u0440\u043e\u043a\u0430\u043c\u0438."
+    "message": "Бесплатные учебные материалы для церквей и управление уроками."
   },
   "homepage.products.freeplay.title": {
     "message": "FreePlay"
   },
   "homepage.products.freeplay.description": {
-    "message": "\u0422\u0412-\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0443\u0447\u0435\u0431\u043d\u044b\u0445 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u043e\u0432 \u043d\u0430 \u044d\u043a\u0440\u0430\u043d\u0430\u0445 \u0432 \u043a\u043b\u0430\u0441\u0441\u0430\u0445."
+    "message": "ТВ-приложение для отображения учебных материалов на экранах в классах."
   },
   "homepage.values.free.title": {
-    "message": "100% \u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e"
+    "message": "100% Бесплатно"
   },
   "homepage.values.free.description": {
-    "message": "\u041d\u0438\u043a\u0430\u043a\u0438\u0445 \u043f\u043e\u0434\u043f\u0438\u0441\u043e\u043a, \u043f\u0440\u0435\u043c\u0438\u0443\u043c-\u043f\u043b\u0430\u043d\u043e\u0432 \u0438\u043b\u0438 \u0441\u043a\u0440\u044b\u0442\u044b\u0445 \u0440\u0430\u0441\u0445\u043e\u0434\u043e\u0432. \u0412\u0441\u0435 \u0444\u0443\u043d\u043a\u0446\u0438\u0438 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b \u0434\u043b\u044f \u043b\u044e\u0431\u043e\u0439 \u0446\u0435\u0440\u043a\u0432\u0438."
+    "message": "Никаких подписок, премиум-планов или скрытых расходов. Все функции бесплатны для любой церкви."
   },
   "homepage.values.openSource.title": {
-    "message": "\u041e\u0442\u043a\u0440\u044b\u0442\u044b\u0439 \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434"
+    "message": "Открытый исходный код"
   },
   "homepage.values.openSource.description": {
-    "message": "\u0412\u0435\u0441\u044c \u043a\u043e\u0434 \u0438\u043c\u0435\u0435\u0442 \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u0439 \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434 \u043d\u0430 GitHub. \u0412\u0430\u0448\u0438 \u0434\u0430\u043d\u043d\u044b\u0435 \u043f\u0440\u0438\u043d\u0430\u0434\u043b\u0435\u0436\u0430\u0442 \u0432\u0430\u043c, \u0438 \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0440\u0430\u0437\u043c\u0435\u0441\u0442\u0438\u0442\u044c \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u043d\u043e\u0435 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u043d\u0430 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u043c \u0441\u0435\u0440\u0432\u0435\u0440\u0435, \u0435\u0441\u043b\u0438 \u0445\u043e\u0442\u0438\u0442\u0435."
+    "message": "Весь код имеет открытый исходный код на GitHub. Ваши данные принадлежат вам, и вы можете разместить программное обеспечение на собственном сервере, если хотите."
   },
   "homepage.values.builtForChurches.title": {
-    "message": "\u0421\u043e\u0437\u0434\u0430\u043d\u043e \u0434\u043b\u044f \u0446\u0435\u0440\u043a\u0432\u0435\u0439"
+    "message": "Создано для церквей"
   },
   "homepage.values.builtForChurches.description": {
-    "message": "\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043e \u0434\u043b\u044f \u0446\u0435\u0440\u043a\u043e\u0432\u043d\u044b\u0445 \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0432 \u2014 \u044d\u0442\u043e \u043d\u0435 \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442, \u0430\u0434\u0430\u043f\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0434\u043b\u044f \u0441\u043b\u0443\u0436\u0435\u043d\u0438\u044f."
+    "message": "Специально разработано для церковных процессов — это не универсальный инструмент, адаптированный для служения."
   },
   "homepage.title": {
-    "message": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f"
+    "message": "Справка по B1.church, Lessons.church и FreePlay"
   },
   "homepage.description": {
-    "message": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438 ChurchApps \u2014 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b \u0441 \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u043c \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u043c \u043a\u043e\u0434\u043e\u043c \u0434\u043b\u044f \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0446\u0435\u0440\u043a\u043e\u0432\u044c\u044e."
+    "message": "Руководства и документация по бесплатному программному обеспечению с открытым исходным кодом от ChurchApps: управление церковью B1.church, регистрация, пожертвования и сайты, учебная программа Lessons.church и FreePlay."
   },
   "homepage.products.heading": {
-    "message": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u043e\u0434\u0443\u043a\u0442"
+    "message": "Выберите продукт"
   },
   "homepage.products.subtitle": {
-    "message": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u043e\u0434\u0443\u043a\u0442, \u0447\u0442\u043e\u0431\u044b \u043d\u0430\u0439\u0442\u0438 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u0430 \u043f\u043e \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0435, \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044e \u043f\u043e \u0444\u0443\u043d\u043a\u0446\u0438\u044f\u043c \u0438 \u043e\u0431\u044a\u044f\u0441\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0441\u0442\u0430\u0442\u044c\u0438."
+    "message": "Выберите продукт, чтобы найти руководства по настройке, документацию по функциям и объяснительные статьи."
   }
 }

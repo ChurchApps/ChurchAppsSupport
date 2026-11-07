@@ -1,5 +1,6 @@
 ---
 title: "Betalte tilmeldinger"
+description: "Opsæt betalte begivenhedstilmeldinger i B1 Admin: prissatte deltagertyper, tillæg, rabatkoder, venteliste og betaling via din giveudbyder."
 ---
 
 # Betalte tilmeldinger
@@ -13,7 +14,7 @@ Begivenhedstilmelding kan være mere end en simpel optælling. Du kan definere p
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Aktivér først tilmelding på begivenheden — se [Opret kalendere](creating-calendars#enabling-event-registration)
+- Aktivér først tilmelding på begivenheden — se [Opret kalendere](./creating-calendars.md#enabling-event-registration)
 - For at opkræve betalinger skal din kirke have [onlinedonationer konfigureret](../donations/online-giving-setup.md) (Stripe, PayPal eller Kingdom Funding). Gratis begivenheder kræver ingen donationsopsætning.
 
 </div>
@@ -87,7 +88,7 @@ Betalinger kører gennem den samme donations-gateway, som din kirke allerede bru
 
 ## Relaterede artikler
 
-- [Opret kalendere](creating-calendars#enabling-event-registration) — aktivér tilmelding og de grundlæggende indstillinger
+- [Opret kalendere](./creating-calendars.md#enabling-event-registration) — aktivér tilmelding og de grundlæggende indstillinger
 - [Opsætning af onlinedonationer](../donations/online-giving-setup.md) — konfigurer betalings-gatewayen, der bruges ved betaling
-- [Tilmelding til begivenheder](../../b1-church/events/registering) — hvad medlemmer ser, når de tilmelder sig
-- [Mine tilmeldinger](../../b1-church/events/my-registrations) — hvordan medlemmer betaler saldi og redigerer tilmeldinger
+- [Tilmelding til begivenheder](../../b1-church/events/registering.md) — hvad medlemmer ser, når de tilmelder sig
+- [Mine tilmeldinger](../../b1-church/events/my-registrations.md) — hvordan medlemmer betaler saldi og redigerer tilmeldinger

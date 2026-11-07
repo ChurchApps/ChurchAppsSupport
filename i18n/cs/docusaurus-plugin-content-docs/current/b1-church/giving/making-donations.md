@@ -1,5 +1,7 @@
 ---
-title: "Provedení daru"
+title: "Darování v členském portálu B1.church"
+sidebar_label: "Provedení daru"
+description: "Darujte jednorázově nebo pravidelně své církvi přes B1.church, s účtem i bez něj, a poté si prohlédněte historii svých darů."
 ---
 
 # Provedení daru

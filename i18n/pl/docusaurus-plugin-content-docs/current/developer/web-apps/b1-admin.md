@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Lokalna konfiguracja B1 Admin: klonowanie panelu React/Vite, endpointy API w .env i uruchomienie serwera deweloperskiego do zarządzania kościołem."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin to panel administracyjny kościoła, aplikacja jednostronicowa (SPA) w R
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj **Node.js 22+** i **Git** -- zobacz [Wymagania wstępne](../setup/prerequisites)
-- Skonfiguruj docelowy adres API (demo lub lokalny) -- zobacz [Zmienne środowiskowe](../setup/environment-variables)
+- Zainstaluj **Node.js 22+** i **Git** -- zobacz [Wymagania wstępne](../setup/prerequisites.md)
+- Skonfiguruj docelowy adres API (demo lub lokalny) -- zobacz [Zmienne środowiskowe](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Kompilacje produkcyjne są wdrażane na **S3 + CloudFront**:
 3. Uruchamiana jest unieważnienie w CloudFront, aby serwować nową wersję
 
 :::tip
-Szczegółowe instrukcje wdrażania znajdziesz w przewodniku [Wdrażanie aplikacji webowych](../deployment/web-apps).
+Szczegółowe instrukcje wdrażania znajdziesz w przewodniku [Wdrażanie aplikacji webowych](../deployment/web-apps.md).
 :::

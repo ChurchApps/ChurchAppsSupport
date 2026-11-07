@@ -1,5 +1,7 @@
 ---
-title: "Paggawa ng Donasyon"
+title: "Pagbibigay ng Donasyon sa B1.church Member Portal"
+sidebar_label: "Paggawa ng Donasyon"
+description: "Magbigay ng isang beses o paulit-ulit na handog sa simbahan sa B1.church, may account man o wala, at tingnan ang iyong kasaysayan ng pagbibigay."
 ---
 
 # Paggawa ng Donasyon

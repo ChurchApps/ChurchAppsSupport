@@ -1,5 +1,6 @@
 ---
 title: "Klassenzimmer einrichten"
+description: "Klassenzimmer im Lessons.church-Portal anlegen, umbenennen und entfernen, damit jeder Raum und jede Altersgruppe für die wöchentliche Planung bereit ist."
 ---
 
 # Klassenzimmer einrichten

@@ -1,5 +1,6 @@
 ---
 title: "Kubuka Konkhe Liphothali"
+description: "Hamba ngeportal ye-Lessons.church ufumane emakilasi, ubuke tifundziso letihleliwe, usete tixhumanisi tefidi, bese ufinyelela ku-External Providers netimfanelo te-Admin."
 ---
 
 # Kubuka Konkhe Liphothali

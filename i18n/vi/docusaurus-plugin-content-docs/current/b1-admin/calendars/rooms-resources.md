@@ -1,5 +1,6 @@
 ---
 title: "Phòng, Tài nguyên & Lịch đặt"
+description: "Thiết lập phòng, thiết bị, lịch chặn và mẫu sự kiện trong B1 Admin để các nhóm có thể yêu cầu đặt phòng và bạn duyệt nhằm tránh trùng lịch."
 ---
 
 # Phòng, Tài nguyên & Lịch đặt
@@ -14,7 +15,7 @@ Phòng và Tài nguyên giúp bạn theo dõi các không gian và thiết bị 
 <h4>Trước khi bắt đầu</h4>
 
 - Bạn cần có quyền quản trị đối với mục Lịch trong B1 Admin
-- Thiết lập [nhóm](../groups/creating-groups) mà các thành viên sẽ gửi yêu cầu đặt
+- Thiết lập [nhóm](../groups/creating-groups.md) mà các thành viên sẽ gửi yêu cầu đặt
 
 </div>
 
@@ -76,7 +77,7 @@ Khi tạo sự kiện mới, nhân viên có thể chọn một mẫu có sẵn 
 
 ## Bài viết liên quan
 
-- [Lịch khả dụng](availability): xem tất cả lịch đặt trong một cái nhìn và đặt phòng hoặc tài nguyên trực tiếp
-- [Phê duyệt lịch](approvals): chấp thuận hoặc từ chối yêu cầu đặt phòng và tài nguyên
-- [Tạo lịch](creating-calendars): thiết lập lịch sự kiện
-- [Tạo nhóm](../groups/creating-groups): thiết lập các nhóm có thể đặt phòng và tài nguyên
+- [Lịch khả dụng](./availability.md): xem tất cả lịch đặt trong một cái nhìn và đặt phòng hoặc tài nguyên trực tiếp
+- [Phê duyệt lịch](./approvals.md): chấp thuận hoặc từ chối yêu cầu đặt phòng và tài nguyên
+- [Tạo lịch](./creating-calendars.md): thiết lập lịch sự kiện
+- [Tạo nhóm](../groups/creating-groups.md): thiết lập các nhóm có thể đặt phòng và tài nguyên

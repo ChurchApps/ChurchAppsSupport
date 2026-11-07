@@ -1,5 +1,6 @@
 ---
 title: "Resumo de Doações"
+description: "Execute o relatório Resumo de Doações no B1 Admin para ver o total doado, o número de doadores únicos e os valores por fundo, em qualquer período."
 ---
 
 # Resumo de Doações

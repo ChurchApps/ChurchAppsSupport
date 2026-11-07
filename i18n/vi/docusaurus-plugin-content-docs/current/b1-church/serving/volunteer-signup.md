@@ -1,5 +1,7 @@
 ---
-title: "Đăng ký tình nguyện"
+title: "Đăng ký tình nguyện trong Cổng thành viên B1.church"
+sidebar_label: "Đăng ký tình nguyện"
+description: "Duyệt các vị trí tình nguyện còn trống theo danh mục và đăng ký cho các buổi lễ sắp tới, hoặc gỡ đăng ký trên B1.church trước thời hạn."
 ---
 
 # Đăng ký tình nguyện
@@ -74,4 +76,4 @@ Hãy thường xuyên kiểm tra trang tình nguyện, đặc biệt là vào đ
 ## Bài viết liên quan
 
 - [Tổng quan phục vụ](./index.md) -- Tổng quan về các tính năng phục vụ trên B1.church
-- [Xem kế hoạch](../plans/viewing-plans) -- Xem các kế hoạch được phân công và thứ tự buổi phục vụ của bạn
+- [Xem kế hoạch](../plans/viewing-plans.md) -- Xem các kế hoạch được phân công và thứ tự buổi phục vụ của bạn

@@ -1,5 +1,7 @@
 ---
-title: "Affichage des plans"
+title: "Consulter les plans de service dans B1 Mobile"
+sidebar_label: "Affichage des plans"
+description: "Consultez votre planning passé et à venir dans B1 Mobile, lisez les détails et l’ordre de service, et imprimez-les pour répétitions ou coulisses."
 ---
 
 # Affichage des plans
@@ -42,4 +44,4 @@ Consultez vos plans de service assignés sur B1 Mobile pour voir vos positions, 
 ## Articles connexes
 
 - [Aperçu du service](./index.md) — Vue d'ensemble de la section Service
-- [Inscription des bénévoles](./volunteer-signup) — Vous inscrire aux positions ouvertes
+- [Inscription des bénévoles](./volunteer-signup.md) — Vous inscrire aux positions ouvertes

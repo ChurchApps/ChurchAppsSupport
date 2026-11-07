@@ -1,5 +1,7 @@
 ---
-title: "Groupes"
+title: "Groupes dans B1 Admin"
+sidebar_label: "Groupes"
+description: "Configurez et organisez les groupes dans B1 Admin, y compris les catégories, les membres, les calendriers et les demandes d'adhésion, avec un guide pour trouver la page Groupes."
 ---
 
 # Groupes

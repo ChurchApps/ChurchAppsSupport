@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Pengaturan Check-In Mandiri dengan B1 Checkin dan B1 Admin"
+sidebar_label: "Check-In"
+description: "Atur check-in mandiri untuk ibadah dengan aplikasi B1 Checkin di B1 Admin: perangkat, akun kios, jadwal, branding, dan pendaftaran tamu via QR."
 ---
 
 # Check-In
@@ -99,7 +101,7 @@ Gunakan layar diam untuk menampilkan pengumuman, acara yang akan datang, atau pe
 
 Kiosk check-in dapat menampilkan kode QR yang dipindai pengunjung untuk mendaftarkan diri dan keluarga mereka melalui ponsel mereka sendiri. Hal ini mempercepat proses check-in bagi tamu yang baru pertama kali datang.
 
-Ketika tamu memindai kode QR, mereka akan diarahkan ke [halaman pendaftaran tamu](../../b1-church/checkin/guest-registration) tempat mereka mengisi nama keluarga dan detail lain yang Anda pilih untuk ditanyakan. Relawan kemudian dapat mencari mereka di kiosk dan melakukan check-in.
+Ketika tamu memindai kode QR, mereka akan diarahkan ke [halaman pendaftaran tamu](../../b1-church/checkin/guest-registration.md) tempat mereka mengisi nama keluarga dan detail lain yang Anda pilih untuk ditanyakan. Relawan kemudian dapat mencari mereka di kiosk dan melakukan check-in.
 
 ### Mengaktifkan Pendaftaran Tamu QR
 

@@ -1,5 +1,6 @@
 ---
 title: "Cronología"
+description: "La pestaña Línea de tiempo del portal de miembros de B1.church ha sido retirada. Encuentra los chats de grupo, eventos, tareas y alertas en la página Yo, el ícono de campana y cada grupo."
 ---
 
 # Cronología
@@ -16,13 +17,13 @@ La pestaña independiente **Cronología** se retiró. El portal de miembros ahor
 | --- | --- |
 | Conversaciones y anuncios de grupos | El chat dentro de cada [grupo](../groups/conversations.md) (**Abrir chat**) |
 | Próximos eventos para usted y sus grupos | La página **Yo** (`/mobile/me`) y la sección **Próximo evento** de cada grupo |
-| Tareas y asignaciones de servicio | La página **Yo** y [Planes](../plans/) |
+| Tareas y asignaciones de servicio | La página **Yo** y [Planes](../plans/index.md) |
 | Sermones nuevos | La sección **Último sermón** en Inicio y la pestaña [Sermones](../content/sermons.md) |
 | Cualquier cosa que le haya enviado un aviso | El ícono de **campana** en la barra de la aplicación, o `/mobile/notifications` |
 
 ## La página Yo
 
-[La página Yo](../getting-started/me-page) es el reemplazo más cercano del antiguo feed. Enumera lo que se avecina para usted (asignaciones de servicio, inscripciones a eventos y eventos de grupo), junto con los formularios que ha enviado, su historial de asistencia y sus notificaciones más recientes, y enlaza directamente con su perfil, sus preferencias de notificación, sus mensajes, sus donaciones y sus inscripciones.
+[La página Yo](../getting-started/me-page.md) es el reemplazo más cercano del antiguo feed. Enumera lo que se avecina para usted (asignaciones de servicio, inscripciones a eventos y eventos de grupo), junto con los formularios que ha enviado, su historial de asistencia y sus notificaciones más recientes, y enlaza directamente con su perfil, sus preferencias de notificación, sus mensajes, sus donaciones y sus inscripciones.
 
 ## Notificaciones
 

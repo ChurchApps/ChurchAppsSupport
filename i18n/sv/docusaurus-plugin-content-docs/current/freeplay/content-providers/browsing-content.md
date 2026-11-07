@@ -1,5 +1,6 @@
 ---
 title: "Bläddra i och ladda ner innehåll"
+description: "Navigera i biblioteket hos en ansluten leverantör med TV-fjärrkontrollen i FreePlay och ladda ner eller streama lektioner och videor för uppspelning."
 ---
 
 # Bläddra i och ladda ner innehåll
@@ -13,7 +14,7 @@ När du har anslutit till en innehållsleverantör kan du bläddra i dess biblio
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Anslut till minst en innehållsleverantör -- se [Ansluta till leverantörer](./connecting-providers)
+- Anslut till minst en innehållsleverantör -- se [Ansluta till leverantörer](./connecting-providers.md)
 - Ha din TV-fjärrkontroll redo för navigering
 
 </div>
@@ -38,7 +39,7 @@ Du kan gå så djupt som leverantörens innehållsstruktur tillåter. Bläddrare
 
 ## Bläddra i Lessons.church
 
-[Lessons.church](../../lessons-church/)-biblioteket är organiserat på samma sätt som dess webbplats. På översta nivån ser du två mappar:
+[Lessons.church](../../lessons-church/index.md)-biblioteket är organiserat på samma sätt som dess webbplats. På översta nivån ser du två mappar:
 
 - **Lessons** - Gå in efter **program**, sedan **studie** och sedan **lektion**. Varje lektion listar sedan sina **varianter**, som är versioner av lektionen för en viss åldersgrupp eller miljö, till exempel Förskola eller Lågstadiet. Välj en variant för att öppna nedladdningsskärmen för den versionen av lektionen.
 - **Add-Ons** - Extra videor och resurser, grupperade efter kategori
@@ -78,7 +79,7 @@ Använd dessa kontroller under uppspelning:
 När du avslutar spelaren återgår du till innehållsbläddraren på rotnivån för den aktuella leverantören.
 
 :::info
-För en fullständig referens över alla spelarkontroller, se [Spela upp innehåll](./playing-content).
+För en fullständig referens över alla spelarkontroller, se [Spela upp innehåll](./playing-content.md).
 :::
 
 ## Byta mellan leverantörer

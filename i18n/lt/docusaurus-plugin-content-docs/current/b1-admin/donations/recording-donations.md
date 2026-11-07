@@ -1,5 +1,6 @@
 ---
 title: "Aukų įrašymas"
+description: "Registruokite aukas B1 Admin: sukurkite partiją, įveskite dovanas po vieną, importuokite CSV failą arba įrašykite vieną auką iš aukotojo profilio."
 ---
 
 # Aukų įrašymas

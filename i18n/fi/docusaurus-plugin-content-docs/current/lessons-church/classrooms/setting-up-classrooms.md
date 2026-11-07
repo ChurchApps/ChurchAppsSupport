@@ -1,5 +1,6 @@
 ---
 title: "Luokkahuoneiden määrittäminen"
+description: "Luo, nimeä uudelleen ja poista luokkahuoneita Lessons.churchin portaalissa, jotta jokainen huone tai ikäryhmä on valmis viikkoaikatauluun."
 ---
 
 # Luokkahuoneiden määrittäminen

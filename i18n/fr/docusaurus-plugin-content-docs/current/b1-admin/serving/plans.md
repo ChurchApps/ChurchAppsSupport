@@ -1,5 +1,6 @@
 ---
 title: "Plans de service"
+description: "Mettez en place le planning des bénévoles dans B1 Admin : créez des plans par date, copiez-les, affectez les postes et gérez échéances et rappels."
 ---
 
 # Plans de service

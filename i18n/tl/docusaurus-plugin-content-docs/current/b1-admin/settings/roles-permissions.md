@@ -1,5 +1,6 @@
 ---
 title: "Mga Role at Permiso"
+description: "I-set up ang role sa B1 Admin para kontrolin kung ano ang makikita at mababago ng staff at boluntaryo, mula donasyon at attendance hanggang tao at grupo."
 ---
 
 # Mga Role at Permiso

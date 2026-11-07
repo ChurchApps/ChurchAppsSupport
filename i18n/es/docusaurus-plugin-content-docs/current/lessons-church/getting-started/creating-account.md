@@ -1,5 +1,6 @@
 ---
 title: "Crear una cuenta"
+description: "Regístrate en Lessons.church con una cuenta de ChurchApps y conéctala a un perfil de iglesia nuevo o existente para gestionar aulas y horarios."
 ---
 
 # Crear una cuenta

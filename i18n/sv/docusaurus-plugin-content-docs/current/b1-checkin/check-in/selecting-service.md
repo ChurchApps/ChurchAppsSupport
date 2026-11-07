@@ -1,5 +1,6 @@
 ---
 title: "Välj en gudstjänst"
+description: "Välj den gudstjänst du deltar i på B1 Checkins tjänstsida. Det styr gudstjänsttiderna och grupperna som visas i resten av incheckningen."
 ---
 
 # Välj en gudstjänst
@@ -13,7 +14,7 @@ Det första steget vid varje incheckning är att välja vilken gudstjänst du de
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Logga in](../getting-started/logging-in) i appen B1 Church Checkin och välj din kyrka
+- [Logga in](../getting-started/logging-in.md) i appen B1 Church Checkin och välj din kyrka
 - Kontrollera att kyrkans administratör har [konfigurerat gudstjänster och gudstjänsttider](../../b1-admin/attendance/setup.md) i B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Det första steget vid varje incheckning är att välja vilken gudstjänst du de
 2. Du ser en lista över alla gudstjänster som har konfigurerats för din kyrka. Varje gudstjänst visas som ett kort med gudstjänstens namn (till exempel "Söndagsmorgon" eller "Onsdagskväll").
 3. Tryck på den gudstjänst du deltar i.
 
-Appen laddar de gudstjänsttider och grupper som hör till gudstjänsten och tar dig sedan vidare till [skärmen för sökning av medlemmar](./looking-up-members).
+Appen laddar de gudstjänsttider och grupper som hör till gudstjänsten och tar dig sedan vidare till [skärmen för sökning av medlemmar](./looking-up-members.md).
 
 ## När incheckningen inte är öppen
 
-Om din administratör har gett en gudstjänsttid ett [incheckningsschema](../../b1-admin/attendance/setup#setting-a-check-in-schedule), låter appen familjer välja den gudstjänsttiden endast medan incheckningsfönstret är öppet. Gudstjänsttider vars fönster är stängt just nu visas fortfarande på [hushållsskärmen](./household-review), men de är markerade **Stängd** (till exempel **Stängd · öppnar sön 9:30**) i stället för att erbjuda en gruppknapp.
+Om din administratör har gett en gudstjänsttid ett [incheckningsschema](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), låter appen familjer välja den gudstjänsttiden endast medan incheckningsfönstret är öppet. Gudstjänsttider vars fönster är stängt just nu visas fortfarande på [hushållsskärmen](./household-review.md), men de är markerade **Stängd** (till exempel **Stängd · öppnar sön 9:30**) i stället för att erbjuda en gruppknapp.
 
 Om alla gudstjänsttider för den gudstjänst du tryckte på är stängda berättar appen när incheckningen öppnar, till exempel **"Incheckningen för denna gudstjänst öppnar sön 9:30."** (Om ingen öppningstid kan visas står det **"Incheckningen är inte öppen för denna gudstjänst just nu."**) Tryck på **Tillbaka** för att återgå till listan över gudstjänster och välja en annan, eller vänta tills fönstret öppnar och försök igen.
 
@@ -56,4 +57,4 @@ Om din kyrka bara har en gudstjänst konfigurerad måste du ändå trycka på de
 
 ## Nästa steg
 
-När du har valt en gudstjänst kommer du att [slå upp din familj](./looking-up-members) med telefonnummer eller namn.
+När du har valt en gudstjänst kommer du att [slå upp din familj](./looking-up-members.md) med telefonnummer eller namn.

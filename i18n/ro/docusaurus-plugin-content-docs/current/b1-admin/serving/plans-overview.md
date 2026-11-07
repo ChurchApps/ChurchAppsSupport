@@ -1,5 +1,6 @@
 ---
 title: "Prezentarea generală a planurilor"
+description: "Vezi alocările voluntarilor pe mai multe date din B1 Admin, identifică pozițiile neocupate și completează sau trimite email echipei dintr-un singur tabel."
 ---
 
 # Prezentarea generală a planurilor

@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Deprecated)"
+description: "Explains the native B1 Mobile app is deprecated and that members and admins should use the B1.church PWA instead, with legacy pages kept for reference."
 ---
 
 # B1 Mobile (Deprecated)
@@ -40,16 +41,16 @@ B1 Mobile supported push notifications so you would not miss an important update
 
 ## Learn More
 
-- [Getting Started](./getting-started/) -- Install the app, create an account, and select your church.
-- [Dashboard](./dashboard/) -- Understand your personalized home screen.
-- [Groups](./groups/) -- Stay connected with your church groups.
-- [Giving](./giving/) -- Make donations from your phone.
-- [Events](./events/) -- Browse and register for upcoming church events.
-- [Check-In](./checkin/) -- Check in for services and events.
-- [Serving](./serving/) -- View your serving plans, assignments, and volunteer opportunities.
-- [Community](./community/) -- Browse the member directory and send messages.
-- [Content](./content/) -- Sermons, Bible, verse of the day, and lessons (lessons screen deprecated — see [FreePlay](/docs/freeplay/)).
-- [Profile](./profile/) -- Manage your profile and account settings.
+- [Getting Started](./getting-started/index.md) -- Install the app, create an account, and select your church.
+- [Dashboard](./dashboard/index.md) -- Understand your personalized home screen.
+- [Groups](./groups/index.md) -- Stay connected with your church groups.
+- [Giving](./giving/index.md) -- Make donations from your phone.
+- [Events](./events/index.md) -- Browse and register for upcoming church events.
+- [Check-In](./checkin/index.md) -- Check in for services and events.
+- [Serving](./serving/index.md) -- View your serving plans, assignments, and volunteer opportunities.
+- [Community](./community/index.md) -- Browse the member directory and send messages.
+- [Content](./content/index.md) -- Sermons, Bible, verse of the day, and lessons (lessons screen deprecated — see [FreePlay](/docs/freeplay/)).
+- [Profile](./profile/index.md) -- Manage your profile and account settings.
 
 :::info
 B1 Mobile has been replaced by the [B1.church PWA](../b1-church/getting-started/installing-pwa.md). New deployments should use the PWA — the native app is no longer being updated.

@@ -1,5 +1,6 @@
 ---
 title: "Pairing Your Device"
+description: "Pair a FreePlay TV to a plan type in B1 Admin using a four-letter code shown on screen, then download the plan's media for Plan Mode playback."
 ---
 
 # Pairing Your Device
@@ -13,7 +14,7 @@ To use Plan Mode, you pair your TV with a plan type in B1 Admin. FreePlay shows 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install and launch FreePlay. See [Getting Started](../getting-started/)
+- Install and launch FreePlay. See [Getting Started](../getting-started/index.md)
 - Have access to **B1 Admin** on a computer or phone to complete the pairing
 
 </div>
@@ -25,7 +26,7 @@ To use Plan Mode, you pair your TV with a plan type in B1 Admin. FreePlay shows 
 3. FreePlay shows a four-letter pairing code in large letters, next to a QR code.
 4. Below the code, a pulsing **Waiting for confirmation** indicator shows that FreePlay is waiting for you to finish pairing.
 
-The same code works for [Scheduled Mode](../scheduled-mode/) in FreePlay Admin and for Plan Mode in B1 Admin. The QR code and the **freeplay.church/pair** address on the screen open FreePlay Admin. For Plan Mode, ignore them and enter the code in B1 Admin as described below.
+The same code works for [Scheduled Mode](../scheduled-mode/index.md) in FreePlay Admin and for Plan Mode in B1 Admin. The QR code and the **freeplay.church/pair** address on the screen open FreePlay Admin. For Plan Mode, ignore them and enter the code in B1 Admin as described below.
 
 ## Entering the Code in B1 Admin
 
@@ -61,5 +62,5 @@ Pairing codes expire after 15 minutes. FreePlay shows a new code on its own when
 ## Related Articles
 
 - **[Plan Mode Overview](./index.md)** - How Plan Mode differs from Scheduled Mode
-- **[Pairing a Screen](../scheduled-mode/pairing-a-screen)** - Pair the same TV to a calendar in FreePlay Admin instead
-- **[Playing Content](../content-providers/playing-content)** - Player controls for plan playback
+- **[Pairing a Screen](../scheduled-mode/pairing-a-screen.md)** - Pair the same TV to a calendar in FreePlay Admin instead
+- **[Playing Content](../content-providers/playing-content.md)** - Player controls for plan playback

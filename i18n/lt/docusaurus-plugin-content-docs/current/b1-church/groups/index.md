@@ -1,5 +1,7 @@
 ---
-title: "Grupės"
+title: "Bažnyčios grupės B1.church narių portale"
+sidebar_label: "Grupės"
+description: "Naršykite ir prisijunkite prie bažnyčios grupių B1.church. Grupių puslapiuose tikrinkite susitikimus, renginius, narius ir išteklius ir bendraukite su grupe."
 ---
 
 # Grupės

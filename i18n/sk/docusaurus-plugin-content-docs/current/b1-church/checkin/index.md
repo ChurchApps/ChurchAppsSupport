@@ -1,5 +1,7 @@
 ---
-title: "Prijímanie návštevníkov"
+title: "Prihlásenie v členskom portáli B1.church"
+sidebar_label: "Prijímanie návštevníkov"
+description: "Prihláste seba a členov domácnosti na bohoslužbu z členského portálu B1.church, bez kiosku, a priraďte skupiny."
 ---
 
 # Prijímanie návštevníkov

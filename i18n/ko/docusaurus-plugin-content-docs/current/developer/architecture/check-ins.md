@@ -1,5 +1,6 @@
 ---
 title: "체크인"
+description: "B1Checkin, B1App, B1 Admin에서 체크인이 작동하는 방식: 출석 데이터 모델, 방으로서의 그룹, 정원 제한, 픽업 안전 규칙을 설명합니다."
 ---
 
 # 체크인
@@ -216,7 +217,7 @@ B1App의 `src/components/checkin/GuestRegister.tsx`는 익명 `GET /membership/p
 
 ## 관련 문서
 
-- [출석 엔드포인트](../api/endpoints/attendance) -- 캠퍼스, 예배, 세션, 방문, 방문 세션의 전체 REST 인터페이스
-- [Membership 엔드포인트](../api/endpoints/membership) -- 교인, 가구, 그룹
-- [웹훅](../api/webhooks) -- `session.created`, `attendance.recorded`, `attendance.checkout` 이벤트
-- [모듈 구조](../api/module-structure) -- 출석 모듈이 서버 측에서 구성되는 방식
+- [출석 엔드포인트](../api/endpoints/attendance.md) -- 캠퍼스, 예배, 세션, 방문, 방문 세션의 전체 REST 인터페이스
+- [Membership 엔드포인트](../api/endpoints/membership.md) -- 교인, 가구, 그룹
+- [웹훅](../api/webhooks.md) -- `session.created`, `attendance.recorded`, `attendance.checkout` 이벤트
+- [모듈 구조](../api/module-structure.md) -- 출석 모듈이 서버 측에서 구성되는 방식

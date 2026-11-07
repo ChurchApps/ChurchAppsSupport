@@ -1,5 +1,7 @@
 ---
-title: "Erstes Setup"
+title: "Ersteinrichtung der Gemeinde in B1 Admin"
+sidebar_label: "Erstes Setup"
+description: "Erstkonfiguration einer neuen Gemeinde in B1 Admin: Daten, Branding, Rollen und die empfohlene Reihenfolge für Personen, Gruppen, Anwesenheit und Spenden."
 ---
 
 # Erstes Setup

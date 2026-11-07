@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Opsæt realtids-webhooks fra B1 Admin: registrer endpoints, vælg hændelser, verificer HMAC-signaturer, håndter gentagelsesforsøg og send fejlede payloads igen."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Gå til **Indstillinger → Udvikler → Webhooks → Ny webhook**. Angiv et nav
 
 ### Via API'et
 
-Alle endepunkter ligger under modulets basissti `/membership/webhooks` og kræver enten en JWT fra en kirkeadministrator med tilladelsen `Settings / Edit`, **eller en [API-nøgle](./api-keys) oprettet med scopet `settings:write`**. De samme ruter accepterer begge. Det er det, der gør det muligt for Zapier og Make at registrere webhooks på kirkens vegne, når et Zap eller et scenarie aktiveres.
+Alle endepunkter ligger under modulets basissti `/membership/webhooks` og kræver enten en JWT fra en kirkeadministrator med tilladelsen `Settings / Edit`, **eller en [API-nøgle](./api-keys.md) oprettet med scopet `settings:write`**. De samme ruter accepterer begge. Det er det, der gør det muligt for Zapier og Make at registrere webhooks på kirkens vegne, når et Zap eller et scenarie aktiveres.
 
 ```http
 POST /membership/webhooks

@@ -1,5 +1,6 @@
 ---
 title: "Préférences de notification"
+description: "Réglez canaux, fréquence des e-mails, heures silencieuses et refus de SMS pour chaque type de notification, dans B1 Admin et l'app B1."
 ---
 
 # Préférences de notification
@@ -60,6 +61,6 @@ Les notifications urgentes -- comme une alerte de sécurité ou un message de s�
 
 ## Liens connexes
 
-- [Inscription comme bénévole](../serving/volunteer-signup) -- Rappels de service et réponses aux demandes de planning
-- [Inscription aux événements](../events/registering) -- Inscrivez-vous aux événements qui envoient des rappels
-- [Installer l'application](installing-pwa) -- Ajoutez B1 à votre appareil pour recevoir des notifications push
+- [Inscription comme bénévole](../serving/volunteer-signup.md) -- Rappels de service et réponses aux demandes de planning
+- [Inscription aux événements](../events/registering.md) -- Inscrivez-vous aux événements qui envoient des rappels
+- [Installer l'application](./installing-pwa.md) -- Ajoutez B1 à votre appareil pour recevoir des notifications push

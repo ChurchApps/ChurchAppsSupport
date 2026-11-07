@@ -1,5 +1,7 @@
 ---
-title: "Khotbah"
+title: "Menonton Khotbah di B1 Mobile"
+sidebar_label: "Khotbah"
+description: "Jelajahi, cari, dan tonton khotbah dan seri yang direkam di aplikasi B1 Mobile, termasuk cara mengikuti hitung mundur siaran langsung."
 ---
 
 # Khotbah
@@ -13,7 +15,7 @@ Layar Khotbah memungkinkan Anda menelusuri dan menonton khotbah yang direkam dar
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Gereja Anda harus sudah mengatur konten khotbah di portal admin mereka
 
 </div>
@@ -29,7 +31,7 @@ Di bagian atas layar, khotbah terbaru ditampilkan sebagai kartu unggulan, member
 
 ## Hitung Mundur Siaran Langsung
 
-Ketika [siaran langsung](./live-streaming) akan dimulai dalam 24 jam ke depan, penghitung waktu mundur muncul di layar Khotbah. Ini memberi tahu Anda kapan ibadah berikutnya akan disiarkan sehingga Anda dapat merencanakan untuk menontonnya secara langsung.
+Ketika [siaran langsung](./live-streaming.md) akan dimulai dalam 24 jam ke depan, penghitung waktu mundur muncul di layar Khotbah. Ini memberi tahu Anda kapan ibadah berikutnya akan disiarkan sehingga Anda dapat merencanakan untuk menontonnya secara langsung.
 
 ## Menonton Khotbah
 
@@ -51,7 +53,7 @@ Setiap entri khotbah dapat menampilkan:
 - **Thumbnail** -- Gambar pratinjau untuk khotbah
 
 :::tip
-Jika Anda melihat hitung mundur di layar Khotbah, ketuk untuk langsung menuju ke [siaran langsung](./live-streaming) saat dimulai.
+Jika Anda melihat hitung mundur di layar Khotbah, ketuk untuk langsung menuju ke [siaran langsung](./live-streaming.md) saat dimulai.
 :::
 
 ## Ketersediaan

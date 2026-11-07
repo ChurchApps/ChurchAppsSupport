@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "12'den fazla sağlayıcıdan ücretsiz, yaşa göre düzenlenmiş dersleri Lessons.church'te göz atın, planlayın ve sunun; sınıflar, mekânlar ve FreePlay veya B1 entegrasyonlarıyla."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church, içeriği iletmenize yardımcı olmak için diğer ChurchApps ar
 
 ## Dokümantasyon Bölümleri
 
-- [Başlarken](./getting-started/) -- Hesabınızı oluşturun ve temelleri öğrenin
-- [İçeriğe Göz Atma](./browsing/) -- Programları, çalışmaları ve dersleri bulun
-- [Sınıflar](./classrooms/) -- Sınıfları ayarlayın ve dersleri planlayın
-- [Özelleştirme](./customization/) -- Dersleri kilisenize göre uyarlayın
-- [Sunum](./presenting/) -- Sunum modunu kullanarak dersleri sınıfta sunun
-- [Yönetim](./admin/) -- Programları, çalışmaları ve dersleri yönetici olarak yönetin
+- [Başlarken](./getting-started/index.md) -- Hesabınızı oluşturun ve temelleri öğrenin
+- [İçeriğe Göz Atma](./browsing/index.md) -- Programları, çalışmaları ve dersleri bulun
+- [Sınıflar](./classrooms/index.md) -- Sınıfları ayarlayın ve dersleri planlayın
+- [Özelleştirme](./customization/index.md) -- Dersleri kilisenize göre uyarlayın
+- [Sunum](./presenting/index.md) -- Sunum modunu kullanarak dersleri sınıfta sunun
+- [Yönetim](./admin/index.md) -- Programları, çalışmaları ve dersleri yönetici olarak yönetin
 - [İnanç Bildirgesi](./statement-of-faith.md) -- Temel inançlar ve müfredat yönergeleri
 
 Destek için [support@churchapps.org](mailto:support@churchapps.org) adresine e-posta gönderebilirsiniz.

@@ -1,5 +1,6 @@
 ---
 title: "Arkitektur for varsler og påminnelser"
+description: "Hvordan B1 Admin-API-et ruter varsler, planlagte påminnelser, e-postgrenser og tekstavmeldinger gjennom én leveringskanal og preferansekontroll."
 ---
 
 # Arkitektur for varsler og påminnelser
@@ -185,6 +186,6 @@ Lokalt kan den samme logikken utløses på forespørsel med `npm run timer:30min
 
 ## Relaterte sider
 
-- [Sanntidsarkitektur](../realtime) – WebSocket-protokollen og klientprimitivene (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) som nivået for leveringen i appen bygger på
-- [Web Push-varsler](../web-push) – VAPID-oppsett og nettleserens Push API-sti som brukes av push-eskaleringsnivået
-- [Endepunkter for meldinger](../api/endpoints/messaging) – fullstendig REST-grensesnitt for meldinger, samtaler, forbindelser og ruter for varsler og påminnelser
+- [Sanntidsarkitektur](../realtime.md) – WebSocket-protokollen og klientprimitivene (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) som nivået for leveringen i appen bygger på
+- [Web Push-varsler](../web-push.md) – VAPID-oppsett og nettleserens Push API-sti som brukes av push-eskaleringsnivået
+- [Endepunkter for meldinger](../api/endpoints/messaging.md) – fullstendig REST-grensesnitt for meldinger, samtaler, forbindelser og ruter for varsler og påminnelser

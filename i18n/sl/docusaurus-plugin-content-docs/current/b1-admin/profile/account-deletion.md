@@ -1,5 +1,6 @@
 ---
 title: "Pregled zahtevkov za brisanje računa"
+description: "Odobrite ali zavrnite zahteve članov za brisanje računa v B1 Admin, jih usmerite prek skupine za odobritve imenika in upoštevajte 30-dnevni rok GDPR."
 ---
 
 # Pregled zahtevkov za brisanje računa

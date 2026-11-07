@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Hubungkan B1 Admin dan Text In Church dengan Zapier: buat kunci API, bangun Zap dari kartu koneksi ke B1, dan cerminkan keanggotaan grup."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Aktifkan Zap. Kartu koneksi berikutnya yang dikirim melalui TIC akan langsung mu
 
 ## Lihat Juga
 
-- [Clearstream](./clearstream): platform SMS alternatif dengan pola Zapier yang serupa
-- [Zapier (ikhtisar)](../zapier): sisi B1 dari setiap resep Zapier
+- [Clearstream](./clearstream.md): platform SMS alternatif dengan pola Zapier yang serupa
+- [Zapier (ikhtisar)](../zapier.md): sisi B1 dari setiap resep Zapier
 - [Panduan Zapier Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (dokumentasi TIC)

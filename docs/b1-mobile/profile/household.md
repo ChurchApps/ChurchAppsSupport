@@ -1,5 +1,6 @@
 ---
 title: "Household"
+description: "See who is in your household and how members are connected in the B1 Mobile Profile tab, which check-in and other features rely on."
 ---
 
 # Household
@@ -13,7 +14,7 @@ The **Household** tab on your Profile screen shows your family members. This is 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 
 </div>
 
@@ -33,7 +34,7 @@ Your household information is used by several features in B1 Mobile and across C
 
 - **Check-in** -- When you [check in](../checkin/self-checkin.md) for a service or event, you can check in your entire household at once instead of checking in each person individually.
 - **Church records** -- Your church uses household data to keep family records organized and to communicate with your family as a unit.
-- **Directory** -- Other members may see your household information in the [church directory](../community/member-directory.md), depending on your [privacy settings](./privacy-settings).
+- **Directory** -- Other members may see your household information in the [church directory](../community/member-directory.md), depending on your [privacy settings](./privacy-settings.md).
 
 ## Viewing Your Household
 
@@ -47,10 +48,10 @@ Household membership is typically managed by your church administrator. If you n
 
 ## Keeping Information Current
 
-If a family member's details need updating, they can [edit their own profile](./editing-profile), or you can reach out to your church administrator to make changes. Keeping household information accurate ensures features like [check-in](../checkin/) work smoothly for your whole family.
+If a family member's details need updating, they can [edit their own profile](./editing-profile.md), or you can reach out to your church administrator to make changes. Keeping household information accurate ensures features like [check-in](../checkin/index.md) work smoothly for your whole family.
 
 ## Related Articles
 
 - [Self Check-In](../checkin/self-checkin.md) -- Check in your household members for services
-- [Editing Your Profile](./editing-profile) -- Update your own personal information
-- [Privacy Settings](./privacy-settings) -- Control what others can see about your household
+- [Editing Your Profile](./editing-profile.md) -- Update your own personal information
+- [Privacy Settings](./privacy-settings.md) -- Control what others can see about your household

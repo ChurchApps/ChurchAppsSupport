@@ -1,5 +1,7 @@
 ---
-title: "Historial de donaciones"
+title: "Historia darowizn i zestawienia w B1.church"
+sidebar_label: "Historial de donaciones"
+description: "Przeglądaj swoje dawne darowizny, filtruj według roku i drukuj zestawienia do rozliczenia podatkowego na stronie Darowizny w portalu B1.church."
 ---
 
 # Historial de donaciones

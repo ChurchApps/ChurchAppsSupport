@@ -1,5 +1,6 @@
 ---
 title: "خادم MCP"
+description: "اضبط الوصول عبر MCP إلى واجهة B1 البرمجية، لتتمكن عملاء الذكاء الاصطناعي مثل Claude Code وCursor وClaude Desktop من استدعاء نقاط بيانات الكنيسة بمفاتيح API أو تسجيل دخول OAuth."
 ---
 
 # خادم MCP
@@ -13,7 +14,7 @@ title: "خادم MCP"
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- [مفتاح API من B1](./api-keys) (`cak_…`) مع النطاقات التي ينبغي أن يملكها العميل، أو عميل MCP قادر على تسجيل الدخول عبر OAuth (راجع [اكتشاف OAuth](#oauth-discovery))
+- [مفتاح API من B1](./api-keys.md) (`cak_…`) مع النطاقات التي ينبغي أن يملكها العميل، أو عميل MCP قادر على تسجيل الدخول عبر OAuth (راجع [اكتشاف OAuth](#oauth-discovery))
 - مضيف واجهة برمجة B1 قابل للوصول — `https://api.churchapps.org` للكنائس المستضافة، أو نشرك الخاص
 - عميل MCP. راجع [Claude](/docs/b1-admin/integrations/claude) و[ChatGPT](/docs/b1-admin/integrations/chatgpt) لإعداد المستخدم النهائي
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-الأداة الوحيدة غير العامة: دليل ثابت ومستقل لبناء صفحات الموقع عبر نقاط النهاية `/content/*` — نموذج البيانات صفحة ← قسم ← عنصر، وسير عمل الإنشاء، وكل `elementType` مع شكل `answersJSON` الخاص به، وإعدادات مستوى القسم مثل فواصل الأشكال `dividerTop`/`dividerBottom`، ومثال تطبيقي كامل من البداية إلى النهاية. لا يأخذ أي مدخلات، ويعكس كتالوج العناصر المحفوظ في محرر B1Admin (راجع [بنية منشئ الموقع](../architecture/website-builder)). يُتوقع من الوكلاء استدعاؤها مرة واحدة قبل إنشاء محتوى الصفحات أو تحريره، ثم التصرف عبر `api_call`.
+الأداة الوحيدة غير العامة: دليل ثابت ومستقل لبناء صفحات الموقع عبر نقاط النهاية `/content/*` — نموذج البيانات صفحة ← قسم ← عنصر، وسير عمل الإنشاء، وكل `elementType` مع شكل `answersJSON` الخاص به، وإعدادات مستوى القسم مثل فواصل الأشكال `dividerTop`/`dividerBottom`، ومثال تطبيقي كامل من البداية إلى النهاية. لا يأخذ أي مدخلات، ويعكس كتالوج العناصر المحفوظ في محرر B1Admin (راجع [بنية منشئ الموقع](../architecture/website-builder.md)). يُتوقع من الوكلاء استدعاؤها مرة واحدة قبل إنشاء محتوى الصفحات أو تحريره، ثم التصرف عبر `api_call`.
 
 ## نموذج المصادقة
 
@@ -153,11 +154,11 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ## اكتشاف OAuth
 
-يعلن خادم MCP عن بيانات تعريف OAuth 2.1 حتى تتمكن العملاء التي تتصل فقط بالخوادم المكتشفة عبر OAuth — وبالأخص واجهة "Add custom connector" في Claude.ai — من تسجيل دخول المستخدم دون مفتاح ملصوق. يُعد `/mcp` المورد المحمي، و[مزوّد OAuth](./connected-apps) الموجود تحت `/membership/oauth` هو خادم التفويض الخاص به، وصفحة `/oauth` في B1Admin هي شاشة الموافقة.
+يعلن خادم MCP عن بيانات تعريف OAuth 2.1 حتى تتمكن العملاء التي تتصل فقط بالخوادم المكتشفة عبر OAuth — وبالأخص واجهة "Add custom connector" في Claude.ai — من تسجيل دخول المستخدم دون مفتاح ملصوق. يُعد `/mcp` المورد المحمي، و[مزوّد OAuth](./connected-apps.md) الموجود تحت `/membership/oauth` هو خادم التفويض الخاص به، وصفحة `/oauth` في B1Admin هي شاشة الموافقة.
 
 | نقطة النهاية | الغرض |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (وأيضًا `/.well-known/oauth-protected-resource/mcp`) | بيانات المورد المحمي (RFC 9728): `resource` هو `<api>/mcp`، و`authorization_servers` هو جذر واجهة البرمجة، و`scopes_supported` يسرد كل [نطاق من نطاقات مفتاح API](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (وأيضًا `/.well-known/oauth-protected-resource/mcp`) | بيانات المورد المحمي (RFC 9728): `resource` هو `<api>/mcp`، و`authorization_servers` هو جذر واجهة البرمجة، و`scopes_supported` يسرد كل [نطاق من نطاقات مفتاح API](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | بيانات خادم التفويض (RFC 8414): `authorization_endpoint` هو `/oauth` في B1Admin، و`token_endpoint` هو `/membership/oauth/token`، و`registration_endpoint` هو `/membership/oauth/register` |
 | `POST /membership/oauth/register` | التسجيل الديناميكي للعميل (RFC 7591) |
 
@@ -209,8 +210,8 @@ npx @modelcontextprotocol/inspector
 
 ## ذو صلة
 
-- [مفاتيح API](./api-keys)
-- [Webhooks](./webhooks)
-- [التطبيقات المتصلة (OAuth)](./connected-apps)
+- [مفاتيح API](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [التطبيقات المتصلة (OAuth)](./connected-apps.md)
 - [Claude — إعداد المستخدم النهائي](/docs/b1-admin/integrations/claude)
 - [ChatGPT — إعداد المستخدم النهائي](/docs/b1-admin/integrations/chatgpt)

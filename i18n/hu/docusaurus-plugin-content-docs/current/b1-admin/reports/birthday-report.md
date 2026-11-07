@@ -1,5 +1,6 @@
 ---
 title: "Születésnapi és évfordulós listák"
+description: "Készítsen listát a B1 Adminban egy adott hónap születésnapjairól és évfordulóiról a Személyek keresés szűrőivel, majd nézze meg vagy exportálja a dátumokat."
 ---
 
 # Születésnapi és évfordulós listák

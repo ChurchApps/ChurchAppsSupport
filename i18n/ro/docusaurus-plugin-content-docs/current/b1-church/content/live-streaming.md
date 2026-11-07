@@ -1,5 +1,7 @@
 ---
-title: "Transmisiuni live"
+title: "Urmărirea transmisiunilor live pe B1.church"
+sidebar_label: "Transmisiuni live"
+description: "Urmărește slujbele live ale bisericii pe pagina Stream din B1.church și alătură-te chatului alături de transmisiune, fără autentificare."
 ---
 
 # Transmisiuni live

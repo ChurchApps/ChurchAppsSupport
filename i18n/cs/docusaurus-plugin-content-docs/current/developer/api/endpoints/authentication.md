@@ -1,5 +1,6 @@
 ---
 title: "Ověřování a oprávnění"
+description: "Referenční příručka k přihlášení JWT, dvoufázovému přihlášení, tokům OAuth 2.0 a modelu oprávnění API ChurchApps pro vývojáře integrací."
 ---
 
 # Ověřování a oprávnění
@@ -244,7 +245,7 @@ Pro zařízení bez prohlížeče (aplikace pro TV, kiosky):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Získá klienta podle ID klienta (tajný klíč je skrytý) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Vytvoří nebo aktualizuje klienta |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Smaže klienta |
-| POST | `/membership/oauth/register` | Public | — | Dynamická registrace klienta (RFC 7591) pro veřejné klienty, například konektory MCP. Viz [Připojené aplikace](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | Dynamická registrace klienta (RFC 7591) pro veřejné klienty, například konektory MCP. Viz [Připojené aplikace](../connected-apps.md#dynamic-client-registration) |
 
 ### Koncové body pro schvalování zařízení
 
@@ -265,5 +266,5 @@ V tabulkách koncových bodů v této dokumentaci jsou tyto typy v sloupci Auth 
 
 ## Související stránky
 
-- [Struktura modulu](../module-structure) — Jak jsou uspořádány controllery, repozitáře a modely
-- [Lokální nastavení](../local-setup) — Spuštění API lokálně pro vývoj
+- [Struktura modulu](../module-structure.md) — Jak jsou uspořádány controllery, repozitáře a modely
+- [Lokální nastavení](../local-setup.md) — Spuštění API lokálně pro vývoj

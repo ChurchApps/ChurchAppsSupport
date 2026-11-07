@@ -1,5 +1,7 @@
 ---
-title: "Fare una donazione"
+title: "Effettuare donazioni nel portale membri di B1.church"
+sidebar_label: "Fare una donazione"
+description: "Effettua un'offerta una tantum o ricorrente alla tua chiesa tramite B1.church, con o senza account, e consulta poi la cronologia delle tue donazioni."
 ---
 
 # Fare una donazione

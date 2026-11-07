@@ -1,5 +1,6 @@
 ---
 title: "Gestione dei dispositivi"
+description: "Abbina, rinomina e rimuovi in B1 Admin gli schermi ChurchAppsPlayer e FreePlay collegati al tuo account, per display aggiornati e sicuri."
 ---
 
 # Gestione dei dispositivi

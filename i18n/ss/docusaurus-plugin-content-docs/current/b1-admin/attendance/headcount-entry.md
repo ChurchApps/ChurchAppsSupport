@@ -1,5 +1,6 @@
 ---
 title: "Kufakwa Kwenani Lebantfu & Kutfutfuka"
+description: "Faka inani lebantfu lenkonzo noma liqembu ku-B1 Admin ngaphandle kohlu lemagama, bese ulandzela tinani ngesonto nesonto kuMbiko Wemkhuba."
 ---
 
 # Kufakwa Kwenani Lebantfu & Kutfutfuka

@@ -1,5 +1,7 @@
 ---
-title: "Obsah"
+title: "Obsahové funkcie v aplikácii B1 Mobile"
+sidebar_label: "Obsah"
+description: "Nájdite kázne, živé prenosy, čítanie Biblie a Verš dňa v aplikácii B1 Mobile a zistite, ktoré obsahové funkcie vaša cirkev zapla."
 ---
 
 # Obsah
@@ -30,20 +32,20 @@ Zobrazte pekne naformátovaný obrázok biblického verša, ktorý sa mení kaž
 
 ### Lekcie (zastarané)
 
-Vstavaná obrazovka Lekcií bola nahradená aplikáciou **[FreePlay](/docs/freeplay/)** na prehrávanie v triede a priamym navštívením [Lessons.church](https://lessons.church) na prehliadanie. Podrobnosti nájdete na stránke [referencia Lekcií](./lessons).
+Vstavaná obrazovka Lekcií bola nahradená aplikáciou **[FreePlay](/docs/freeplay/)** na prehrávanie v triede a priamym navštívením [Lessons.church](https://lessons.church) na prehliadanie. Podrobnosti nájdete na stránke [referencia Lekcií](./lessons.md).
 
 ## Hľadanie obsahu
 
 Funkcie obsahu sú dostupné v bočnom menu aplikácie. Váš cirkevný administrátor rozhoduje, ktoré funkcie obsahu sú povolené, takže možno neuvidíte všetky vyššie uvedené možnosti. Ak chýba niektorá konkrétna funkcia, vaša cirkev ju pravdepodobne ešte nemá nakonfigurovanú.
 
 :::info
-Funkcie obsahu konfiguruje váš cirkevný administrátor prostredníctvom [B1 Admin](../../b1-admin/). Ak nevidíte funkciu, ktorú očakávate, kontaktujte cirkevnú kanceláriu.
+Funkcie obsahu konfiguruje váš cirkevný administrátor prostredníctvom [B1 Admin](../../b1-admin/index.md). Ak nevidíte funkciu, ktorú očakávate, kontaktujte cirkevnú kanceláriu.
 :::
 
 ## Ďalšie kroky
 
-- [Kázne](./sermons) -- Prehliadajte a sledujte nahrané kázne
-- [Živé streamovanie](./live-streaming) -- Sledujte živé prenosy
-- [Biblia](./bible) -- Čítajte Sväté písmo vo vstavanom čitateľovi
-- [Verš dňa](./verse-of-the-day) -- Pozrite si dnešný denný verš
+- [Kázne](./sermons.md) -- Prehliadajte a sledujte nahrané kázne
+- [Živé streamovanie](./live-streaming.md) -- Sledujte živé prenosy
+- [Biblia](./bible.md) -- Čítajte Sväté písmo vo vstavanom čitateľovi
+- [Verš dňa](./verse-of-the-day.md) -- Pozrite si dnešný denný verš
 - [FreePlay](/docs/freeplay/) -- Prehrávajte lekcie na televízoroch v triede (nahrádza zastaranú obrazovku Lekcií v aplikácii)

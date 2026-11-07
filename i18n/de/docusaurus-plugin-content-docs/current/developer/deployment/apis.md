@@ -1,5 +1,6 @@
 ---
 title: "API-Deployment"
+description: "Stellen Sie die ChurchApps-API mit Serverless auf AWS Lambda bereit: Builds, Demo- und Prod-Workflows, Datenbankmigrationen und SSM-Konfiguration."
 ---
 
 # API-Deployment
@@ -13,7 +14,7 @@ ChurchApps-APIs werden als AWS-Lambda-Funktionen mit dem Serverless Framework be
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie die API lokal ein – siehe [Lokale API-Einrichtung](../api/local-setup)
+- Richten Sie die API lokal ein – siehe [Lokale API-Einrichtung](../api/local-setup.md)
 - Konfigurieren Sie AWS-Zugangsdaten auf Ihrem Rechner
 - Stellen Sie sicher, dass Sie Zugriff auf das Ziel-AWS-Konto haben
 
@@ -47,7 +48,7 @@ In der Praxis wird die API über GitHub Actions bereitgestellt: **Deploy Demo** 
 
 ## Datenbankmigrationen
 
-**Deploy Prod** wendet ausstehende Datenbankmigrationen als Teil des Deployments an. Die Produktionsdatenbanken akzeptieren Verbindungen nur aus dem Inneren der VPC. Deshalb ruft der Workflow direkt nach `serverless deploy` die Lambda-Funktion `migrate` (`api-Prod-migrate`) auf. Diese führt alle ausstehenden Migrationen jedes Moduls aus und liefert `{ ok, environment, modules }` zurück. Schlägt ein Modul fehl oder wird es abgelehnt (etwa bei einer Datenbank ohne Migrationsverlauf), schlägt der Job fehl, damit das Schema nie hinter dem Code zurückbleibt. **Rollback Prod** setzt nur den Lambda-Code zurück; Migrationen bleiben angewendet. Halten Sie Migrationen daher additiv. Wie Sie den Status prüfen oder Migrationen manuell ausführen, finden Sie unter [Serververwaltung – Datenbankmigrationen](../server-admin#database-migrations).
+**Deploy Prod** wendet ausstehende Datenbankmigrationen als Teil des Deployments an. Die Produktionsdatenbanken akzeptieren Verbindungen nur aus dem Inneren der VPC. Deshalb ruft der Workflow direkt nach `serverless deploy` die Lambda-Funktion `migrate` (`api-Prod-migrate`) auf. Diese führt alle ausstehenden Migrationen jedes Moduls aus und liefert `{ ok, environment, modules }` zurück. Schlägt ein Modul fehl oder wird es abgelehnt (etwa bei einer Datenbank ohne Migrationsverlauf), schlägt der Job fehl, damit das Schema nie hinter dem Code zurückbleibt. **Rollback Prod** setzt nur den Lambda-Code zurück; Migrationen bleiben angewendet. Halten Sie Migrationen daher additiv. Wie Sie den Status prüfen oder Migrationen manuell ausführen, finden Sie unter [Serververwaltung – Datenbankmigrationen](../server-admin.md#database-migrations).
 
 ## Was erstellt wird
 
@@ -75,6 +76,6 @@ Jeder Merge in `main` wird zuerst in die Demo-Umgebung deployt. Prüfen Sie Ihre
 
 ## Verwandte Artikel
 
-- **[Lokale API-Einrichtung](../api/local-setup)** – Einrichtung der API für die Entwicklung
-- **[Modulstruktur](../api/module-structure)** – Verständnis der Architektur der Lambda-Funktionen
-- **[Deployment der Web-Apps](./web-apps)** – Bereitstellung der Frontend-Anwendungen
+- **[Lokale API-Einrichtung](../api/local-setup.md)** – Einrichtung der API für die Entwicklung
+- **[Modulstruktur](../api/module-structure.md)** – Verständnis der Architektur der Lambda-Funktionen
+- **[Deployment der Web-Apps](./web-apps.md)** – Bereitstellung der Frontend-Anwendungen

@@ -1,12 +1,13 @@
 ---
 title: "Připojené aplikace a OAuth"
+description: "Připojte aplikace třetích stran k datům církve v B1 přes OAuth 2.0 bez sdílení hesel a API klíčů. Přístup kdykoli odvoláte v nastavení B1 Admin."
 ---
 
 # Připojené aplikace a OAuth
 
 <div class="article-intro">
 
-B1 API podporuje OAuth 2.0, takže aplikace třetí strany může každého správce církve požádat o oprávnění k přístupu k jejím datům, a církev přitom nikdy nesdílí heslo ani API klíč. **Připojená aplikace** je OAuth token, který správce církve schválil; jeho zrušením se přístup aplikace třetí strany odebere jedním kliknutím. Tuto cestu používejte pro konektory SaaS s více nájemci. Pro integraci pro jedinou církev dávejte přednost [API klíčům](./api-keys).
+B1 API podporuje OAuth 2.0, takže aplikace třetí strany může každého správce církve požádat o oprávnění k přístupu k jejím datům, a církev přitom nikdy nesdílí heslo ani API klíč. **Připojená aplikace** je OAuth token, který správce církve schválil; jeho zrušením se přístup aplikace třetí strany odebere jedním kliknutím. Tuto cestu používejte pro konektory SaaS s více nájemci. Pro integraci pro jedinou církev dávejte přednost [API klíčům](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API podporuje OAuth 2.0, takže aplikace třetí strany může každého spr�
 | **Connected App** | Konkrétní dvojice `(klient, správce církve)`, u které správce klientovi udělil přístup. Každá připojená aplikace je podložena obnovovacím tokenem OAuth. |
 | **Access token** | Krátkodobý JWT (≈ 7 dní), který klient používá pro volání API. Má stejnou podobu jako JWT uživatele: `Authorization: Bearer <jwt>`. |
 | **Refresh token** | Dlouhodobý neprůhledný řetězec (≈ 90 dní), který klient používá k vystavení nových přístupových tokenů. |
-| **Scope** | Omezuje, co může přístupový token dělat. Viz [katalog rozsahů](./api-keys#scopes). |
+| **Scope** | Omezuje, co může přístupový token dělat. Viz [katalog rozsahů](./api-keys.md#scopes). |
 
 ## Autorizační toky
 
@@ -162,7 +163,7 @@ Seznam automaticky vynechává vypršelé tokeny.
 
 ## Rozsahy a souhlas
 
-Řetězce rozsahů jsou stejný katalog jako u [API klíčů](./api-keys#scopes). Doporučené postupy pro klienty:
+Řetězce rozsahů jsou stejný katalog jako u [API klíčů](./api-keys.md#scopes). Doporučené postupy pro klienty:
 
 - **Žádejte nejužší rozsahy, které stačí.** Církve si všimnou, pokud požádáte o `donations:write`, když potřebujete jen číst údaje o lidech.
 - **Používejte obnovovací token spolu s krátkodobými přístupovými tokeny.** Dlouhodobé přístupové tokeny se hůř rychle odvolávají.
@@ -183,7 +184,7 @@ Zaregistrované přesměrovací URI musí přesně odpovídat `redirect_uri` v p
 
 ### Dynamická registrace klienta
 
-`POST /membership/oauth/register` (veřejný, RFC 7591) umožňuje klientovi, jako je konektor MCP služby claude.ai, zaregistrovat se samostatně. Je zveřejněn v dokumentu API `/.well-known/oauth-authorization-server`. Viz [Server MCP → Zjišťování OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (veřejný, RFC 7591) umožňuje klientovi, jako je konektor MCP služby claude.ai, zaregistrovat se samostatně. Je zveřejněn v dokumentu API `/.well-known/oauth-authorization-server`. Viz [Server MCP → Zjišťování OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Na stránce souhlasu v B1Admin dostane samostatně zaregistrovaný klient upozor
 
 ## Podpora SDK
 
-Balíček `@churchapps/integration-sdk` obaluje každý tok OAuth typovanými pomocnými funkcemi: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Příklad od začátku do konce najdete v README balíčku a v části [Webhooky](./webhooks#sdk-support).
+Balíček `@churchapps/integration-sdk` obaluje každý tok OAuth typovanými pomocnými funkcemi: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Příklad od začátku do konce najdete v README balíčku a v části [Webhooky](./webhooks.md#sdk-support).

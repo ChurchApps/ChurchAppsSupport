@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "B1 Admin ile Text In Church'ü Zapier ile birbirine bağlayın: API anahtarı oluşturun, bağlantı kartından B1'e bir Zap kurun ve grup üyeliğini yansıtın."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Zap'i açın. TIC üzerinden gönderilen bir sonraki bağlantı kartı otomatik 
 
 ## Ayrıca Bakınız
 
-- [Clearstream](./clearstream): benzer Zapier yapısına sahip alternatif bir SMS platformu
-- [Zapier (genel bakış)](../zapier): her Zapier tarifinin B1 tarafı
+- [Clearstream](./clearstream.md): benzer Zapier yapısına sahip alternatif bir SMS platformu
+- [Zapier (genel bakış)](../zapier.md): her Zapier tarifinin B1 tarafı
 - [Text In Church Zapier kılavuzu](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TIC belgeleri)

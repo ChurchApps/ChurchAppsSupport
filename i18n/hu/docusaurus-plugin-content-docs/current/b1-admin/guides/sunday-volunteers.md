@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Vasárnapi önkéntesek kezelése"
+description: "Önkéntes csapatok, heti szolgálati tervek és vasárnapi feladatok beállítása a B1 Admin-ban; az önkéntesek a B1.church-ön és mobilappon látják és visszaigazolják."
 ---
 
 # Vasárnapi önkéntesek kezelése
@@ -95,7 +96,7 @@ Engedje, hogy az önkéntesek maguk jelentkezzenek pozíciókra, ahelyett, hogy 
 3. Minden pozíciónál pipálja be az **Önkiszolgáló jelentkezés engedélyezése** jelölőnégyzetet, hogy az önkiszolgálóan is elérhető legyen.
 4. Adjon meg egy **Leírást** minden pozícióhoz, hogy az önkéntesek tudják, mit foglal magában a szerep.
 
-Miután létrehozta az önkiszolgáló pozíciókat, azok automatikusan megjelennek a önkéntes-jelentkezési oldalakon a [B1.church](../../b1-church/serving/volunteer-signup) oldalon és a [B1 Mobile alkalmazásban](../../b1-mobile/serving/volunteer-signup). A tagok böngészhetik a nyitott pozíciókat, láthatják, hány hely maradt, és egy kattintással jelentkezhetnek.
+Miután létrehozta az önkiszolgáló pozíciókat, azok automatikusan megjelennek a önkéntes-jelentkezési oldalakon a [B1.church](../../b1-church/serving/volunteer-signup.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-mobile/serving/volunteer-signup.md). A tagok böngészhetik a nyitott pozíciókat, láthatják, hány hely maradt, és egy kattintással jelentkezhetnek.
 
 :::tip
 Keverje a adminisztrátor által kiosztott és az önkiszolgáló pozíciókat ugyanabban a tervben. Például a dicsőítésvezetőt közvetlenül rendelje be, de hagyja, hogy az üdvözlők és a kávéfelszolgálók maguk válasszanak.
@@ -109,7 +110,7 @@ A kiosztott önkéntesek automatikusan látják terveiket, és válaszolhatnak r
 2. Beosztásaikat bármelyik platformon közvetlenül elfogadhatják vagy elutasíthatják
 3. Beállíthatnak tiltott dátumokat azokra a hetekre, amikor nem érnek rá
 4. A terveket kinyomtathatja próbákhoz, vagy kiteheti a színfalak mögé
-5. Az önkéntesek a [önkéntes-jelentkezési oldalon](../../b1-church/serving/volunteer-signup) böngészhetnek a nyitott pozíciók között, és jelentkezhetnek rájuk
+5. Az önkéntesek a [önkéntes-jelentkezési oldalon](../../b1-church/serving/volunteer-signup.md) böngészhetnek a nyitott pozíciók között, és jelentkezhetnek rájuk
 
 :::tip
 A mobilalkalmazás push-értesítései figyelmeztetik az önkénteseket, ha új beosztást kapnak vagy ha a terv változik.
@@ -130,5 +131,5 @@ Az önkéntesmenedzsment rendszere be van állítva. Minden héten hozzon létre
 - [Munkafolyamatok](../serving/workflows.md) — emberek vezetése ismétlődő folyamatokon indítóeseményekkel és automatizált lépésekkel
 - [Tervek megtekintése (webes)](../../b1-church/plans/viewing-plans.md) — hogyan látják az önkéntesek a terveket online
 - [Tervek megtekintése (mobil)](../../b1-mobile/serving/viewing-plans.md) — hogyan látják az önkéntesek a terveket mobilon
-- [Önkéntes-jelentkezés (webes)](../../b1-church/serving/volunteer-signup) — hogyan választhatnak pozíciót a tagok
-- [Önkéntes-jelentkezés (mobil)](../../b1-mobile/serving/volunteer-signup) — önkiszolgáló jelentkezés mobilon
+- [Önkéntes-jelentkezés (webes)](../../b1-church/serving/volunteer-signup.md) — hogyan választhatnak pozíciót a tagok
+- [Önkéntes-jelentkezés (mobil)](../../b1-mobile/serving/volunteer-signup.md) — önkiszolgáló jelentkezés mobilon

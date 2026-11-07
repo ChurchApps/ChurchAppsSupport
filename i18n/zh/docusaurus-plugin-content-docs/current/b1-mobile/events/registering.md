@@ -1,5 +1,7 @@
 ---
-title: "活动注册"
+title: "在 B1 Mobile 中报名活动"
+sidebar_label: "活动注册"
+description: "通过 B1 Mobile 应用为自己和家人报名教会活动，查看剩余名额，并通过三个步骤确认报名。"
 ---
 
 # 活动注册
@@ -13,7 +15,7 @@ title: "活动注册"
 <div class="prereqs">
 <h4>开始前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in) 到您的帐户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md) 到您的帐户
 - 活动必须启用注册且注册窗口必须是开放的
 
 </div>
@@ -50,4 +52,4 @@ title: "活动注册"
 ## 相关文章
 
 - [活动概览](./index.md) -- 在移动设备上浏览有注册的活动
-- [查看计划](../serving/viewing-plans) -- 查看您的服侍日程
+- [查看计划](../serving/viewing-plans.md) -- 查看您的服侍日程

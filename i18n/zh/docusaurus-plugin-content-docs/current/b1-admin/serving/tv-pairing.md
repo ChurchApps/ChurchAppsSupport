@@ -1,5 +1,6 @@
 ---
 title: "将 FreePlay 连接到 B1 Admin"
+description: "将运行 FreePlay 的教室电视连接到 B1 Admin 中已安排的课程，使教师可以在课堂上于屏幕上播放。"
 ---
 
 # 将教室电视连接到 B1 Admin 课程

@@ -1,5 +1,6 @@
 ---
 title: "Mobilios programėlės nustatymai"
+description: "Konfigūruokite B1.church narių programėlės skirtukus, pagrindinio ekrano plyteles, prisijungimo raginimą ir katalogo privatumą B1 Admin."
 ---
 
 # Mobilios programėlės nustatymai

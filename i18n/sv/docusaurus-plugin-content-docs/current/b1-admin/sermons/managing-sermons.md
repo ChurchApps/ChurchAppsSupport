@@ -1,5 +1,6 @@
 ---
 title: "Hantera predikningar"
+description: "Hantera ditt predikningsbibliotek i B1 Admin: lägg till predikningar från YouTube, Vimeo eller Facebook, redigera uppgifter och skaffa ett podcastflöde för din kyrka."
 ---
 
 # Hantera predikningar
@@ -14,7 +15,7 @@ Sidan Predikningar visar hela ditt predikningsbibliotek. Härifrån kan du lägg
 <h4>Innan du börjar</h4>
 
 - Du behöver behörigheten **contentApi.streamingServices.edit**. Se [Roller och behörigheter](../settings/roles-permissions.md) om du inte har åtkomst.
-- Skapa minst en [spellista](playlists) att organisera dina predikningar i
+- Skapa minst en [spellista](./playlists.md) att organisera dina predikningar i
 - Ha dina video-ID:n eller URL:er redo från YouTube, Vimeo eller Facebook
 
 </div>
@@ -35,7 +36,7 @@ Sidan Predikningar visar hela ditt predikningsbibliotek. Härifrån kan du lägg
 6. Gör de ändringar du vill och klicka på **Spara**.
 
 :::tip
-Du kan också lägga till en permanent livesändnings-URL genom att välja **Lägg till permanent livesändnings-URL** i rullgardinsmenyn **Lägg till predikan**. Detta skapar en permanent koppling till din YouTube-kanals livesändning med hjälp av ditt kanal-ID. Se [Livesändning](live-streaming) för mer information.
+Du kan också lägga till en permanent livesändnings-URL genom att välja **Lägg till permanent livesändnings-URL** i rullgardinsmenyn **Lägg till predikan**. Detta skapar en permanent koppling till din YouTube-kanals livesändning med hjälp av ditt kanal-ID. Se [Livesändning](./live-streaming.md) för mer information.
 :::
 
 ## Redigera en predikan
@@ -73,11 +74,11 @@ När du har lagt till en predikan kan du schemalägga den för sändning på din
 3. Predikan spelas upp vid den schemalagda gudstjänsttiden.
 
 :::info
-För att importera flera predikningar samtidigt i stället för en i taget, använd verktyget [Massimport](bulk-import) för att hämta videor direkt från ditt YouTube- eller Vimeo-konto.
+För att importera flera predikningar samtidigt i stället för en i taget, använd verktyget [Massimport](./bulk-import.md) för att hämta videor direkt från ditt YouTube- eller Vimeo-konto.
 :::
 
 ## Nästa steg
 
-- [Spellistor](playlists) -- Organisera predikningar i serier
-- [Livesändning](live-streaming) -- Konfigurera ditt sändningsschema
-- [Massimport](bulk-import) -- Importera flera predikningar samtidigt
+- [Spellistor](./playlists.md) -- Organisera predikningar i serier
+- [Livesändning](./live-streaming.md) -- Konfigurera ditt sändningsschema
+- [Massimport](./bulk-import.md) -- Importera flera predikningar samtidigt

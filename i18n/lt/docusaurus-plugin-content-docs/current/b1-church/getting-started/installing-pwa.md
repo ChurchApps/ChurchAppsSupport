@@ -1,5 +1,6 @@
 ---
 title: "Instalacija kaip programėlė (PWA)"
+description: "Įdiekite B1.church kaip programėlę iPhone ar Android telefone iš narių portalo, pridėdami jos piktogramą prie pagrindinio ekrano per Safari ar Chrome."
 ---
 
 # Instalacija kaip programėlė (PWA)

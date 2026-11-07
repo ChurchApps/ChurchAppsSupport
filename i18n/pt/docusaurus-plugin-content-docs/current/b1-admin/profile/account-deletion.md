@@ -1,5 +1,6 @@
 ---
 title: "Revisando Solicitações de Exclusão de Conta"
+description: "Aprove ou recuse pedidos de exclusão de conta de membros no B1 Admin, encaminhe-os ao Grupo de Aprovação do Diretório e cumpra o prazo de 30 dias do GDPR."
 ---
 
 # Revisando Solicitações de Exclusão de Conta

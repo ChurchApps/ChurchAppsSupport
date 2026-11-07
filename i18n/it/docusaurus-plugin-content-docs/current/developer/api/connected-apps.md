@@ -1,12 +1,13 @@
 ---
 title: "App connesse e OAuth"
+description: "Collega app di terze parti ai dati B1 con il consenso OAuth 2.0, senza password o chiavi condivise, e revoca l'accesso in qualsiasi momento in B1 Admin."
 ---
 
 # App connesse e OAuth
 
 <div class="article-intro">
 
-L'API B1 supporta OAuth 2.0, così un'applicazione di terze parti può chiedere a ciascun amministratore di chiesa il permesso di accedere ai suoi dati — senza che la chiesa condivida mai una password o una chiave API. Un'**App connessa** è un token OAuth approvato da un amministratore di chiesa; revocarlo interrompe l'accesso dell'app di terze parti con un solo clic. Usa questo percorso per connettori SaaS multi-tenant. Per un'integrazione con una sola chiesa, preferisci le [Chiavi API](./api-keys).
+L'API B1 supporta OAuth 2.0, così un'applicazione di terze parti può chiedere a ciascun amministratore di chiesa il permesso di accedere ai suoi dati — senza che la chiesa condivida mai una password o una chiave API. Un'**App connessa** è un token OAuth approvato da un amministratore di chiesa; revocarlo interrompe l'accesso dell'app di terze parti con un solo clic. Usa questo percorso per connettori SaaS multi-tenant. Per un'integrazione con una sola chiesa, preferisci le [Chiavi API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ L'API B1 supporta OAuth 2.0, così un'applicazione di terze parti può chiedere 
 | **App connessa** | Una specifica coppia `(client, amministratore di chiesa)` in cui l'amministratore ha concesso l'accesso al client. Ogni App connessa è supportata da un refresh token OAuth. |
 | **Token di accesso** | Un JWT di breve durata (≈ 7 giorni) che il client usa per le chiamate API. Stessa forma di un JWT utente — `Authorization: Bearer <jwt>`. |
 | **Refresh token** | Una stringa opaca di lunga durata (≈ 90 giorni) che il client usa per generare nuovi token di accesso. |
-| **Scope** | Limita ciò che il token di accesso può fare — vedi il [catalogo degli scope](./api-keys#scopes). |
+| **Scope** | Limita ciò che il token di accesso può fare — vedi il [catalogo degli scope](./api-keys.md#scopes). |
 
 ## Flussi di autorizzazione
 
@@ -162,7 +163,7 @@ L'elenco esclude automaticamente i token scaduti.
 
 ## Scope e consenso
 
-Le stringhe di scope sono lo stesso catalogo delle [chiavi API](./api-keys#scopes). Le buone pratiche per i client:
+Le stringhe di scope sono lo stesso catalogo delle [chiavi API](./api-keys.md#scopes). Le buone pratiche per i client:
 
 - **Richiedi gli scope più ristretti che funzionano.** Le chiese se ne accorgono se chiedi `donations:write` quando ti serve solo leggere le persone.
 - **Usa un refresh token insieme a token di accesso di breve durata.** I token di accesso di lunga durata sono più difficili da revocare rapidamente.
@@ -183,7 +184,7 @@ Gli URI di reindirizzamento registrati devono corrispondere esattamente al `redi
 
 ### Registrazione dinamica del client
 
-`POST /membership/oauth/register` (pubblico, RFC 7591) permette a un client come il connettore MCP di claude.ai di registrarsi da solo. È pubblicizzato dal documento `/.well-known/oauth-authorization-server` dell'API — vedi [Server MCP → Scoperta OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (pubblico, RFC 7591) permette a un client come il connettore MCP di claude.ai di registrarsi da solo. È pubblicizzato dal documento `/.well-known/oauth-authorization-server` dell'API — vedi [Server MCP → Scoperta OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Nella pagina di consenso di B1Admin, un client registrato da sé riceve un avvis
 
 ## Supporto SDK
 
-Il pacchetto `@churchapps/integration-sdk` incapsula ogni flusso OAuth con funzioni di supporto tipizzate — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Vedi il README del pacchetto e [Webhook](./webhooks#sdk-support) per un esempio completo.
+Il pacchetto `@churchapps/integration-sdk` incapsula ogni flusso OAuth con funzioni di supporto tipizzate — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Vedi il README del pacchetto e [Webhook](./webhooks.md#sdk-support) per un esempio completo.

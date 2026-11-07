@@ -1,5 +1,6 @@
 ---
 title: "Plan Templates"
+description: "Save a service plan's order of service and positions as a reusable template in B1 Admin, then apply it to future plans in one click."
 ---
 
 # Plan Templates

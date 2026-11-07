@@ -1,5 +1,6 @@
 ---
 title: "Online Giving Setup"
+description: "Stripe, PayPal, Kingdom Funding veya Paystack'i B1 Admin'e bağlayın; üyeler B1.church sitenizden çevrimiçi bağış yapsın ve bağışlar kayıtlarınıza senkronize olsun."
 ---
 
 # Online Giving Setup

@@ -1,5 +1,6 @@
 ---
 title: "Končne točke sporočanja"
+description: "Referenca končnih točk API-ja za sporočila ChurchApps: pogovori, pravila za dostop do zapiskov, SMS, predloge e-pošte, obvestila in naprave."
 ---
 
 # Končne točke sporočanja
@@ -190,7 +191,7 @@ Osnovna pot: `/messaging/notificationpreferences`
 
 Osnovna pot: `/messaging/connections`
 
-Upravlja povezave WebSocket/v realnem času za klepet, skupinske pogovore, zasebna sporočila in prenose v živo. Za celoten protokol glejte [Arhitektura v realnem času](../../realtime).
+Upravlja povezave WebSocket/v realnem času za klepet, skupinske pogovore, zasebna sporočila in prenose v živo. Za celoten protokol glejte [Arhitektura v realnem času](../../realtime.md).
 
 | Metoda | Pot | Avtentikacija | Dovoljenje | Opis |
 |--------|------|------|------|------|
@@ -367,9 +368,9 @@ Spremlja stanje dostave poslanih sporočil (SMS, potisna obvestila, e-pošta).
 
 ## Sorodne strani
 
-- [Arhitektura v realnem času](../../realtime) -- protokol WebSocket, naročanje na sobe in enotno ogrodje dostave
-- [Spletna potisna obvestila](../../web-push) -- vpis in dostava potisnih obvestil v brskalniku
-- [Končne točke članstva](./membership) -- osebe, skupine, vloge in osnovna identiteta
-- [Končne točke udeležbe](./attendance) -- sledenje storitvam in obiskom
-- [Avtentikacija in dovoljenja](./authentication) -- potek prijave, JWT, OAuth, model dovoljenj
-- [Struktura modula](../module-structure) -- vzorci organizacije kode
+- [Arhitektura v realnem času](../../realtime.md) -- protokol WebSocket, naročanje na sobe in enotno ogrodje dostave
+- [Spletna potisna obvestila](../../web-push.md) -- vpis in dostava potisnih obvestil v brskalniku
+- [Končne točke članstva](./membership.md) -- osebe, skupine, vloge in osnovna identiteta
+- [Končne točke udeležbe](./attendance.md) -- sledenje storitvam in obiskom
+- [Avtentikacija in dovoljenja](./authentication.md) -- potek prijave, JWT, OAuth, model dovoljenj
+- [Struktura modula](../module-structure.md) -- vzorci organizacije kode

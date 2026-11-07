@@ -1,5 +1,6 @@
 ---
 title: "Setup"
+description: "Pumili ng lokal na dev path para sa ChurchApps: frontend gamit ang shared demo API, o buong stack nang lokal na may MySQL para sa backend na pagbabago."
 ---
 
 # Setup
@@ -40,15 +41,15 @@ Sa paraang ito, makakapagsimula ka sa mga pagbabago sa frontend sa loob ng ilang
 
 ### 2. Patakbuhin Nang Lokal ang Lahat
 
-Kung kailangan mong baguhin ang API code o magtrabaho nang offline, maaari mong patakbuhin nang lokal ang buong stack. Nangangailangan ito ng MySQL 8.0+ at karagdagang configuration. Tingnan ang gabay na [API local setup](../api/local-setup) para sa detalyadong mga tagubilin.
+Kung kailangan mong baguhin ang API code o magtrabaho nang offline, maaari mong patakbuhin nang lokal ang buong stack. Nangangailangan ito ng MySQL 8.0+ at karagdagang configuration. Tingnan ang gabay na [API local setup](../api/local-setup.md) para sa detalyadong mga tagubilin.
 
 ## Pagsisimula
 
 Sundin ang mga pahinang ito nang sunud-sunod:
 
-1. **[Prerequisites](prerequisites)** -- I-install ang mga kinakailangang tool (Node.js, Git, MySQL, atbp.)
-2. **[Project Overview](project-overview)** -- Unawain kung aling mga proyekto ang umiiral at kung ano ang ginagawa ng bawat isa
-3. **[Environment Variables](environment-variables)** -- I-configure ang iyong mga `.env` file para mag-ugnayan ang lahat
+1. **[Prerequisites](./prerequisites.md)** -- I-install ang mga kinakailangang tool (Node.js, Git, MySQL, atbp.)
+2. **[Project Overview](./project-overview.md)** -- Unawain kung aling mga proyekto ang umiiral at kung ano ang ginagawa ng bawat isa
+3. **[Environment Variables](./environment-variables.md)** -- I-configure ang iyong mga `.env` file para mag-ugnayan ang lahat
 
 :::info
 Ang bawat proyekto ng ChurchApps ay isang independent na Git repository. Kailangan mo lamang i-clone ang mga partikular na proyektong gusto mong pagtrabahuhan.

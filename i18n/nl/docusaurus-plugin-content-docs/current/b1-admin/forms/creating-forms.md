@@ -1,5 +1,6 @@
 ---
 title: "Formulieren maken"
+description: "Bouw aangepaste formulieren in B1 Admin voor evenementinschrijvingen, enquêtes en bezoekerskaarten en deel ze via link, QR-code of print."
 ---
 
 # Formulieren maken

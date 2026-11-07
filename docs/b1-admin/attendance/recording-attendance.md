@@ -1,5 +1,6 @@
 ---
 title: "Recording Attendance"
+description: "Record attendance for each group meeting in B1 Admin: create a session, mark who attended, save notes, and print roll sheets or export to a spreadsheet."
 ---
 
 # Recording Attendance

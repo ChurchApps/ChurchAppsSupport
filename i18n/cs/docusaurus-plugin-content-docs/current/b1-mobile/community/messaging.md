@@ -1,5 +1,6 @@
 ---
 title: "Zprávy"
+description: "Zahajte, čtěte, upravujte a mažte soukromé konverzace jeden na jednoho s členy církve v B1 Mobile a hledejte lidi v adresáři členů."
 ---
 
 # Zprávy
@@ -13,7 +14,7 @@ Aplikace B1 Mobile obsahuje soukromé zprávy, takže můžete přímo z aplikac
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 
 </div>
 
@@ -25,7 +26,7 @@ Aplikace B1 Mobile obsahuje soukromé zprávy, takže můžete přímo z aplikac
 ## Zahájení nové konverzace
 
 1. Na obrazovce zpráv klepněte na možnost zahájit novou konverzaci.
-2. Pomocí vyhledávacího pole najděte člena, kterému chcete napsat. Členy můžete najít také v [adresáři členů](./member-directory).
+2. Pomocí vyhledávacího pole najděte člena, kterému chcete napsat. Členy můžete najít také v [adresáři členů](./member-directory.md).
 3. Vyberte člena z výsledků hledání.
 4. Napište zprávu a klepněte na **Odeslat**.
 
@@ -52,11 +53,11 @@ Zprávy využijte ke koordinaci s dalšími dobrovolníky, k navázání kontakt
 :::
 
 :::info
-Zapněte [oznámení](./notifications), abyste dostali upozornění na novou zprávu, i když aplikace není otevřená.
+Zapněte [oznámení](./notifications.md), abyste dostali upozornění na novou zprávu, i když aplikace není otevřená.
 :::
 
 ## Související články
 
-- [Adresář členů](./member-directory) -- Najděte členy, kterým můžete napsat
-- [Oznámení](./notifications) -- Dostávejte upozornění na nové zprávy
-- [Skupiny](../groups/) -- Účastněte se konverzací ve skupinách
+- [Adresář členů](./member-directory.md) -- Najděte členy, kterým můžete napsat
+- [Oznámení](./notifications.md) -- Dostávejte upozornění na nové zprávy
+- [Skupiny](../groups/index.md) -- Účastněte se konverzací ve skupinách

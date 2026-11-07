@@ -1,5 +1,6 @@
 ---
 title: "Umklami Welebula Yekungena"
+description: "Lungisa tifanekiso tematikhethi lacondziswa ekufikeni ku-B1 Admin, kuhlanganise tinkhundla, kubekwa, nemimo yeliholide lekuzalwa nemanothi."
 ---
 
 # Umklami Welebula Yekungena
@@ -13,8 +14,8 @@ Umklami Welebula ukuvumela kutsi udale futsi uhlele emathempuleti elebula legama
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Hlela [Kubakhona](setup) bese uhlela kungenani sikhatsi senkhonzo lesinye lesinekungena kuvuliwe
-- Hlela [Kungena](check-in) kuze emalebula aphrinte
+- Hlela [Kubakhona](./setup.md) bese uhlela kungenani sikhatsi senkhonzo lesinye lesinekungena kuvuliwe
+- Hlela [Kungena](./check-in.md) kuze emalebula aphrinte
 - Udzinga kufinyelela kwekuphatsa esigabeni sekubakhona
 
 </div>
@@ -84,6 +85,6 @@ Yenta luphrinto lwekuhlola ngemuva kwekuhlela ithempuleti kute ucinisekise kutsi
 
 ## Timiba Letihambelanako
 
-- [Kuhlelwa Kwekungena](setup) — hlela tinkhonzo netiqembu tekungena
-- [Kucedzela Kungena](check-in) — indlela yekungena yemindeni
-- [Kucala Kwe-B1 Checkin](../../b1-checkin/getting-started/) — i-app ye-kiosk ye-Checkin
+- [Kuhlelwa Kwekungena](./setup.md) — hlela tinkhonzo netiqembu tekungena
+- [Kucedzela Kungena](./check-in.md) — indlela yekungena yemindeni
+- [Kucala Kwe-B1 Checkin](../../b1-checkin/getting-started/index.md) — i-app ye-kiosk ye-Checkin

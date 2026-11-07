@@ -1,5 +1,6 @@
 ---
 title: "Vlastné polia"
+description: "Definujte vlastné polia v B1 Admin pre ďalšie údaje o osobách, napríklad platnosť výpisu z registra trestov alebo veľkosť tričiek, a podľa nich filtrujte."
 ---
 
 # Vlastné polia

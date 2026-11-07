@@ -1,5 +1,7 @@
 ---
-title: "Palvelujärjestys"
+title: "Palvelujärjestyksen tiedot B1.church-sovelluksessa"
+sidebar_label: "Palvelujärjestys"
+description: "Katso palvelusuunnitelman järjestys B1.church-sovelluksessa kumulatiivisine aikoineen, laulujen sanoineen, sävellajinvaihtoineen ja oppituntien esikatseluineen tiimillesi."
 ---
 
 # Palvelujärjestys

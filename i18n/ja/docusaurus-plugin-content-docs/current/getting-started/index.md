@@ -1,5 +1,7 @@
 ---
-title: "はじめに"
+title: "ChurchApps の始め方：最初の15分"
+sidebar_label: "はじめに"
+description: "数ステップで新しい ChurchApps アカウントを設定します。教会の情報を追加し、B1 Admin に人を取り込み、チームを招待して、最初のプロジェクトを選びます。"
 ---
 
 # はじめに

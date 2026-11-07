@@ -1,5 +1,6 @@
 ---
 title: "Gabay: I-set Up ang Pagpaparehistro sa Kaganapan"
+description: "I-set up ang event registration form sa B1 Admin para mangolekta ng detalye ng dadalo at opsyonal na bayad, i-embed sa website, at subaybayan ang signup."
 ---
 
 # I-set Up ang Pagpaparehistro sa Kaganapan

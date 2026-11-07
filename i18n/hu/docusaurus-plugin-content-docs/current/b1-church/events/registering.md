@@ -1,5 +1,7 @@
 ---
-title: "Eseményekre való regisztráció"
+title: "Eseményregisztráció a B1.church-en"
+sidebar_label: "Eseményekre való regisztráció"
+description: "Eseményregisztráció a B1.church-en: adatok megadása, családtagok felvétele, lehetőségek kiválasztása, kedvezménykódok, fizetés vagy várólista."
 ---
 
 # Eseményekre való regisztráció
@@ -79,14 +81,14 @@ Megjelenik egy megerősítő üzenet az esemény adataival és azoknak a listáj
 
 ## Csatlakozás a várólistához
 
-Ha az esemény betelt, és a gyülekezete engedélyezte a várólistát, az első lépésben ez jelenik meg: *„Az esemény betelt. Csatlakozhat a várólistához, és értesítjük, ha felszabadul egy hely.”* A jelentkezést a szokásos módon fejezze be – a várólistán lévők fizetési lépése kimarad. Amikor felszabadul egy hely, e-mailt kap; ha fizetés esedékes, az e-mail tartalmaz egy linket a fizetés befejezéséhez. A státuszát és a fizetést a [Regisztrációim](./my-registrations) oldalon is ellenőrizheti.
+Ha az esemény betelt, és a gyülekezete engedélyezte a várólistát, az első lépésben ez jelenik meg: *„Az esemény betelt. Csatlakozhat a várólistához, és értesítjük, ha felszabadul egy hely.”* A jelentkezést a szokásos módon fejezze be – a várólistán lévők fizetési lépése kimarad. Amikor felszabadul egy hely, e-mailt kap; ha fizetés esedékes, az e-mail tartalmaz egy linket a fizetés befejezéséhez. A státuszát és a fizetést a [Regisztrációim](./my-registrations.md) oldalon is ellenőrizheti.
 
 ## Regisztráció módosítása vagy lemondása
 
-Ha be van jelentkezve, a tagi felületen a **Regisztrációk** oldalon saját maga módosíthatja vagy lemondhatja a regisztrációját – lásd: [Regisztrációim](./my-registrations). A vendégeknek a gyülekezeti irodával kell kapcsolatba lépniük, a munkatársak pedig a B1 Admin regisztrációs oldalán végezhetik el a módosítást.
+Ha be van jelentkezve, a tagi felületen a **Regisztrációk** oldalon saját maga módosíthatja vagy lemondhatja a regisztrációját – lásd: [Regisztrációim](./my-registrations.md). A vendégeknek a gyülekezeti irodával kell kapcsolatba lépniük, a munkatársak pedig a B1 Admin regisztrációs oldalán végezhetik el a módosítást.
 
 ## Kapcsolódó cikkek
 
 - [Események áttekintése](./index.md) – Regisztrációval elérhető közelgő események böngészése
-- [Regisztrációim](./my-registrations) – Regisztrációinak megtekintése, módosítása, egyenlegek kifizetése és lemondása
-- [Adományozás](../giving/making-donations) – Adomány küldése az eseményen való részvétel mellett
+- [Regisztrációim](./my-registrations.md) – Regisztrációinak megtekintése, módosítása, egyenlegek kifizetése és lemondása
+- [Adományozás](../giving/making-donations.md) – Adomány küldése az eseményen való részvétel mellett

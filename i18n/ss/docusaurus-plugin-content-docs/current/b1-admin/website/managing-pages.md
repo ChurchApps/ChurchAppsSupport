@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Emakhasi"
+description: "Dala, hlela, futsi uhlele emakhasi nekuhamba ku-Website Pages ye-B1 Admin, kufaka phakatsi tilungiselelo tekhasi, kuhlanganiswa kwetikhombo, nematemplates esayithi."
 ---
 
 # Kuphatsa Emakhasi
@@ -13,8 +14,8 @@ Embukisi we-Website Pages sisikhungo sakho lesisekelo sekudala, kuhlela, nekuhle
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Cedza [Initial Setup](initial-setup) kute ulungise i-domain yakho kanye netilungiselelo letisisekelo telisayithi
-- Yenta kutsi kucuketfwa kwakho netitfombe kulungile. Sebentisa umphatsi we- [Files](files) kucala kute ulayishe tintfo temidiya.
+- Cedza [Initial Setup](./initial-setup.md) kute ulungise i-domain yakho kanye netilungiselelo letisisekelo telisayithi
+- Yenta kutsi kucuketfwa kwakho netitfombe kulungile. Sebentisa umphatsi we- [Files](./files.md) kucala kute ulayishe tintfo temidiya.
 
 </div>
 
@@ -31,7 +32,7 @@ Ungaguqula noma ngeliphi likhasi leladalwe ngekutentekela libe likhasi lelikhets
 
 1. Chofota inkinobho le- **Add Page** engoshweni lesekudla lengetulu kwelitafula le-Pages.
 2. Khetsa luhlobo lwekhasi (lelingenalutfo nome i-template) bese ulinika ligama.
-3. Chofota **Edit** eceleni kwanoma ngeliphi likhasi kute uvule [umhleli wekhasi](page-editor), lapho ungangeta khona tigaba, mbhalo, titfombe, naletinye ticenye.
+3. Chofota **Edit** eceleni kwanoma ngeliphi likhasi kute uvule [umhleli wekhasi](./page-editor.md), lapho ungangeta khona tigaba, mbhalo, titfombe, naletinye ticenye.
 4. Chofota **Page Settings** kute ubuyeketa sihloko sekhasi, indlela ye-URL, kanye naletinye tintfo temininingwane.
 5. Sebentisa inkinobho ye- **Preview** kute uvule likhasi lakho kuwindi lensha bese ubona kabanti indlela leliyakubukeka ngayo kutivakashi.
 
@@ -72,10 +73,10 @@ Uma wakha lisayithi lakho kusuka ekucaleni, ungasicala ngekusebentisa **Site Tem
 3. Nawutfola leyoyitsandzako, chofota **Apply Template**.
 4. Emakhasi langakabikho kudalwa futsi angetwe ku-navigation yakho. Emakhasi lasekhona asalwa njengobe enjalo.
 
-Ngemuva kwekusebentisa template, vula likhasi ngalinye ku- [umhleli wekhasi](page-editor) kute ushintje umbhalo netitfombe letisayindlala nge kucuketfwa langempela kwelibandla lakho.
+Ngemuva kwekusebentisa template, vula likhasi ngalinye ku- [umhleli wekhasi](./page-editor.md) kute ushintje umbhalo netitfombe letisayindlala nge kucuketfwa langempela kwelibandla lakho.
 
 :::info
-Ema-Site templates adala sakhiwo semakhasi kanye ne-navigation. Awabuyeketi luhlu lwemibala lwelisayithi lakho nome imibhalo -- loko kulawulwa yi- [Appearance](appearance).
+Ema-Site templates adala sakhiwo semakhasi kanye ne-navigation. Awabuyeketi luhlu lwemibala lwelisayithi lakho nome imibhalo -- loko kulawulwa yi- [Appearance](./appearance.md).
 :::
 
 ## I-Image Lightbox
@@ -84,7 +85,7 @@ Nakuchofota tivakashi sitfombe kuliwebhusayithi lakho, sivuleka ku-lightbox over
 
 ## Tinyatselo Letilandzelako
 
-- [Initial Setup](initial-setup) -- Imiyalo yekulungisa kwekucala
-- [Using the Page Editor](page-editor) -- Fundza kutsi wakha futsi uhlela njani kucuketfwa kwekhasi
-- [Appearance](appearance) -- Lungisa sihloko lesibonakalako selisayithi lakho
-- [Files](files) -- Layisha futsi uphatse tintfo temidiya yemakhasi akho
+- [Initial Setup](./initial-setup.md) -- Imiyalo yekulungisa kwekucala
+- [Using the Page Editor](./page-editor.md) -- Fundza kutsi wakha futsi uhlela njani kucuketfwa kwekhasi
+- [Appearance](./appearance.md) -- Lungisa sihloko lesibonakalako selisayithi lakho
+- [Files](./files.md) -- Layisha futsi uphatse tintfo temidiya yemakhasi akho

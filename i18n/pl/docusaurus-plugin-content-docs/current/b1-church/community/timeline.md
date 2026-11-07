@@ -1,5 +1,6 @@
 ---
 title: "Oś czasu"
+description: "Zakładka Oś czasu w portalu B1.church została wycofana. Czaty grup, wydarzenia, zadania i alerty znajdziesz na stronie Ja, pod ikoną dzwonka i w każdej grupie."
 ---
 
 # Oś czasu
@@ -16,13 +17,13 @@ Osobna zakładka **Oś czasu** została wycofana. Portal członka otwiera się t
 | --- | --- |
 | Rozmowy i ogłoszenia grupowe | Czat w każdej [grupie](../groups/conversations.md) (**Otwórz czat**) |
 | Nadchodzące wydarzenia dla Ciebie i Twoich grup | Strona **Ja** (`/mobile/me`) oraz sekcja **Następne wydarzenie** w każdej grupie |
-| Zadania i przydziały do posługi | Strona **Ja** oraz [Plany](../plans/) |
+| Zadania i przydziały do posługi | Strona **Ja** oraz [Plany](../plans/index.md) |
 | Nowe kazania | Sekcja **Ostatnie kazanie** na stronie Strona główna oraz zakładka [Kazania](../content/sermons.md) |
 | Wszystko, co wymagało Twojej uwagi | Ikona **dzwonka** na pasku aplikacji lub `/mobile/notifications` |
 
 ## Strona Ja
 
-[Strona Ja](../getting-started/me-page) jest najbliższym zamiennikiem dawnego kanału. Wyświetla to, co czeka na Ciebie -- przydziały do posługi, rejestracje na wydarzenia i wydarzenia grupowe -- a także przesłane formularze, historię obecności i najnowsze powiadomienia. Zawiera też bezpośrednie linki do Twojego profilu, ustawień powiadomień, wiadomości, darowizn i rejestracji.
+[Strona Ja](../getting-started/me-page.md) jest najbliższym zamiennikiem dawnego kanału. Wyświetla to, co czeka na Ciebie -- przydziały do posługi, rejestracje na wydarzenia i wydarzenia grupowe -- a także przesłane formularze, historię obecności i najnowsze powiadomienia. Zawiera też bezpośrednie linki do Twojego profilu, ustawień powiadomień, wiadomości, darowizn i rejestracji.
 
 ## Powiadomienia
 

@@ -1,5 +1,6 @@
 ---
 title: "Bruke sideditoren"
+description: "Bruk sideredigereren i B1 Admin: legg til seksjoner og elementer, style dem, forhåndsvis på mobil og publiser utkast. Også angre og versjonshistorikk."
 ---
 
 # Bruke sideditoren
@@ -13,8 +14,8 @@ Sideditoren i B1 er en visuell byggeverktøy med dra-og-slipp som lar deg design
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [førstegangsoppsettet](initial-setup) for å sette opp nettstedet ditt
-- Opprett minst én side i [Administrere sider](managing-pages)
+- Fullfør [førstegangsoppsettet](./initial-setup.md) for å sette opp nettstedet ditt
+- Opprett minst én side i [Administrere sider](./managing-pages.md)
 - Du trenger tillatelsen **content.edit** for å åpne editoren
 
 </div>
@@ -27,7 +28,7 @@ Sideditoren i B1 er en visuell byggeverktøy med dra-og-slipp som lar deg design
 Editoren åpnes i fullskjermmodus. Venstre panel viser sidestrukturen og tilgjengelige innholdselementer; midtområdet viser en direkte forhåndsvisning av siden din.
 
 :::info
-Editoren vises alltid i lys modus, uavhengig av temainnstillingen i B1 Admin, og bruker overskrifts- og brødteksttypografien du valgte i [Utseende](appearance). Dette sikrer at forhåndsvisningen stemmer nøyaktig med hvordan siden din vil se ut for besøkende på nettstedet.
+Editoren vises alltid i lys modus, uavhengig av temainnstillingen i B1 Admin, og bruker overskrifts- og brødteksttypografien du valgte i [Utseende](./appearance.md). Dette sikrer at forhåndsvisningen stemmer nøyaktig med hvordan siden din vil se ut for besøkende på nettstedet.
 :::
 
 ## Sidestruktur: seksjoner og elementer
@@ -57,7 +58,7 @@ Har du allerede bygget ut en seksjon, men vil ha en annen struktur? Bruk oppsett
    - **Bilde** -- Last opp eller lenk til et bilde
    - **Knapp** -- En klikkbar lenke med oppfordring til handling
    - **Kort** -- Et bilde med tittel og beskrivelse
-   - **Skjema** -- Legg inn et [skjema](../forms/creating-forms) direkte på siden. Hvis skjemaet har et [overskriftsbilde](../forms/creating-forms.md#adding-a-header-photo), vises det over spørsmålene
+   - **Skjema** -- Legg inn et [skjema](../forms/creating-forms.md) direkte på siden. Hvis skjemaet har et [overskriftsbilde](../forms/creating-forms.md#adding-a-header-photo), vises det over spørsmålene
    - **Kalender** -- Vis en arrangementskalender
    - **Vanlige spørsmål** -- Spørsmål og svar i form av trekkspill
    - **Video** -- Legg inn en video med URL
@@ -75,7 +76,7 @@ Har du allerede bygget ut en seksjon, men vil ha en annen struktur? Bruk oppsett
    - **Kart** -- Et innebygd kart sentrert på kirkens adresse
    - **Tabell** -- Et enkelt rutenett med rader og kolonner for tabelldata
    - **Tekst med bilde** -- Tekst og et bilde side om side
-   - **Logo** -- Kirkens logo, hentet fra [Utseende](appearance)
+   - **Logo** -- Kirkens logo, hentet fra [Utseende](./appearance.md)
    - **Direktesending** -- Spilleren for direktesending, innebygd direkte på siden
    - **Podcast** -- En liste over episoder hentet fra en ekstern podcast-RSS-feed-URL du oppgir, med innstillinger for hvor mange episoder som vises og om datoer og beskrivelser skal vises. Hver episode på den live siden har en lydspiller og en lenke **Last ned** som lagrer episodens lydfil under episodetittelen. Dette er for å fremheve en hvilken som helst podcast-feed på nettstedet ditt; for å publisere dine egne prekener som en podcast, se [Administrere prekener](../sermons/managing-sermons.md#your-podcast-feed) i stedet
    - **Gave** -- En gaveknapp eller et innebygd gaveskjema
@@ -96,7 +97,7 @@ Hvis du limer inn bare en nettadresse (for eksempel en bildelenke) i JavaScript-
 
 Elementet **Kalender** viser arrangementer fra en av kalenderne dine:
 
-1. Under **Velg** velger du **Gruppekalender** (arrangementene til én gruppe -- listen viser grupper du er medlem av) eller **Utvalgt kalender** (en kalender du har laget under **Kalendere**; se [Utvalgt kalender](../calendars/curated-calendar)).
+1. Under **Velg** velger du **Gruppekalender** (arrangementene til én gruppe -- listen viser grupper du er medlem av) eller **Utvalgt kalender** (en kalender du har laget under **Kalendere**; se [Utvalgt kalender](../calendars/curated-calendar.md)).
 2. Under **Velg kalender** velger du gruppen eller kalenderen.
 3. Under **Vis** velger du hvordan den skal vises:
    - **Månedskalender** -- Et månedsrutenett som besøkende kan bla gjennom.
@@ -129,7 +130,7 @@ Klikk på et element for å åpne stilpanelet. Vanlige alternativer inkluderer s
 For avansert styling har hver seksjon og hvert element et felt for **Egendefinert CSS** der du kan skrive dine egne CSS-regler. Disse er avgrenset til det elementet, så de påvirker ikke resten av siden utilsiktet.
 
 :::tip
-Hvis du trenger å bruke stiler på hele nettstedet -- for eksempel en egendefinert skrifttype eller en global farge -- bruk innstillingene for [Utseende](appearance) i stedet for egendefinert CSS på enkeltsider.
+Hvis du trenger å bruke stiler på hele nettstedet -- for eksempel en egendefinert skrifttype eller en global farge -- bruk innstillingene for [Utseende](./appearance.md) i stedet for egendefinert CSS på enkeltsider.
 :::
 
 ## Forhåndsvise siden din
@@ -184,7 +185,7 @@ Bruk arbeidsflyten for utkast og publisering når du vil forberede en side -- fo
 
 ## Relaterte artikler
 
-- [Administrere sider](managing-pages) -- Opprett sider, angi nettadresser og administrer navigasjonen på nettstedet
-- [Utseende](appearance) -- Angi farger, skrifttyper og profil for hele nettstedet
-- [Filer](files) -- Last opp bilder og dokumenter du kan bruke i editoren
-- [Opprette skjemaer](../forms/creating-forms) -- Bygg skjemaer du kan legge inn på sider
+- [Administrere sider](./managing-pages.md) -- Opprett sider, angi nettadresser og administrer navigasjonen på nettstedet
+- [Utseende](./appearance.md) -- Angi farger, skrifttyper og profil for hele nettstedet
+- [Filer](./files.md) -- Last opp bilder og dokumenter du kan bruke i editoren
+- [Opprette skjemaer](../forms/creating-forms.md) -- Bygg skjemaer du kan legge inn på sider

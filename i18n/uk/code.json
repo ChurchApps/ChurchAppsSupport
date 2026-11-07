@@ -386,13 +386,13 @@
     "message": "B1 Мобільна"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Мобільний додаток для членів церкви на iOS та Android."
+    "message": "Застарілий застосунок для учасників на iOS і Android, який тепер замінено вебзастосунком B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Реєстрація"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Додаток реєстрації кіоску самообслуговування для Android планшетів."
+    "message": "Застосунок для самообслуговування на кіоску реєстрації для планшетів iPad і Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Спеціально розроблено для церковних робочих процесів - це не універсальний інструмент, адаптований для служіння."
   },
   "homepage.title": {
-    "message": "Домашня сторінка"
+    "message": "Довідка для B1.church, Lessons.church і FreePlay"
   },
   "homepage.description": {
-    "message": "Документація підтримки ChurchApps - безплатні засоби з відкритим вихідним кодом для керування церквою."
+    "message": "Посібники та документація до безкоштовного програмного забезпечення з відкритим кодом від ChurchApps: управління церквою B1.church, реєстрація, пожертви та вебсайти, навчальна програма Lessons.church і FreePlay."
   },
   "homepage.products.heading": {
     "message": "Виберіть свій продукт"

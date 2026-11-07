@@ -1,5 +1,7 @@
 ---
-title: "入门"
+title: "B1 Mobile 入门（已弃用）"
+sidebar_label: "入门"
+description: "在手机上设置 B1 Mobile：找到应用，使用您的 ChurchApps 账户登录，并选择您的教会。注意：B1 Mobile 已弃用，建议改用 PWA。"
 ---
 
 # 入门
@@ -25,10 +27,10 @@ B1 Mobile 入门只需几分钟。下载应用，使用您的 ChurchApps 账户�
 
 ## 本节中
 
-- [安装应用](./installing)——下载 B1 Mobile 的地点和设备要求。
-- [登录](./logging-in)——如何登录或创建新账户。
-- [切换教会](./switching-churches)——如果您属于多个教会，如何在教会之间切换。
+- [安装应用](./installing.md)——下载 B1 Mobile 的地点和设备要求。
+- [登录](./logging-in.md)——如何登录或创建新账户。
+- [切换教会](./switching-churches.md)——如果您属于多个教会，如何在教会之间切换。
 
 :::tip
-B1 Mobile 使用与所有其他 ChurchApps 产品相同的 ChurchApps 账户。如果您已经从 [B1.church](../../b1-church/)、B1 Admin 或 Lessons.church 拥有账户，您可以使用相同的凭证来登录。
+B1 Mobile 使用与所有其他 ChurchApps 产品相同的 ChurchApps 账户。如果您已经从 [B1.church](../../b1-church/index.md)、B1 Admin 或 Lessons.church 拥有账户，您可以使用相同的凭证来登录。
 :::

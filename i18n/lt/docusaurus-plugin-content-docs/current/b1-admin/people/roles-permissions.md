@@ -1,5 +1,6 @@
 ---
 title: "Rolių priskyrimas"
+description: "Priskirkite vaidmenis B1 Admin, kad darbuotojai ir savanoriai turėtų prieigą tik prie asmenų, aukų, lankomumo ir grupių sričių, kurių jiems reikia."
 ---
 
 # Rolių priskyrimas

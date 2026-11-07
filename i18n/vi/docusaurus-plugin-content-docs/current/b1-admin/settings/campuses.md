@@ -1,5 +1,6 @@
 ---
 title: "Cơ sở"
+description: "Thiết lập cơ sở trong B1 Admin để theo dõi mỗi người và nhóm thuộc địa điểm nào, rồi lọc người, điểm danh và nhân khẩu học theo vị trí."
 ---
 
 # Cơ sở

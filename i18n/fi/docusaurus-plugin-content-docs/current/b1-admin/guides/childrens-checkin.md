@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Lasten­hoidon lähtö­tarkistuksen asennus"
+description: "Määritä lasten sisäänkirjautuminen B1 Adminissa: yhdistä perheet, luo ikäryhmät, määritä palvelut ja tulosta nimilaput B1 Checkin -kioskille."
 ---
 
 # Lasten­hoidon lähtö­tarkistuksen asennus

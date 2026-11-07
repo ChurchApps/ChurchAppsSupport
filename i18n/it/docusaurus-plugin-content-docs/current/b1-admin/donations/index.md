@@ -1,5 +1,6 @@
 ---
 title: "Donazioni"
+description: "Registra, organizza e rendiconta le offerte in B1 Admin, dai lotti e fondi agli attestati annuali e alle donazioni online tramite Stripe o PayPal."
 ---
 
 # Donazioni

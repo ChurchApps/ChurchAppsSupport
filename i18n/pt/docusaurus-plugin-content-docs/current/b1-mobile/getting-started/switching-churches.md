@@ -1,5 +1,6 @@
 ---
 title: "Trocar de Igreja"
+description: "Troque de igreja no app B1 Mobile escolhendo uma igreja recente ou pesquisando pelo nome, tudo com um único login ChurchApps."
 ---
 
 # Trocar de Igreja
@@ -13,7 +14,7 @@ Se você é membro de mais de uma igreja, o B1 Mobile facilita a troca entre ela
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](./installing) e [faça login](./logging-in) na sua conta
+- [Instale o B1 Mobile](./installing.md) e [faça login](./logging-in.md) na sua conta
 
 </div>
 
@@ -24,7 +25,7 @@ Se você é membro de mais de uma igreja, o B1 Mobile facilita a troca entre ela
 3. A tela **Buscar Igreja** é exibida. As igrejas visitadas recentemente aparecem no topo para acesso rápido.
 4. Toque em uma igreja recente para trocar para ela, ou digite no campo de busca para encontrar outra igreja.
 
-Ao trocar de igreja, o aplicativo é recarregado com a identidade visual, os links de navegação e o conteúdo daquela igreja. Seu [painel](../dashboard/), seus [grupos](../groups/) e outros dados passarão a refletir a igreja recém-selecionada.
+Ao trocar de igreja, o aplicativo é recarregado com a identidade visual, os links de navegação e o conteúdo daquela igreja. Seu [painel](../dashboard/index.md), seus [grupos](../groups/index.md) e outros dados passarão a refletir a igreja recém-selecionada.
 
 ## Buscando uma Igreja
 

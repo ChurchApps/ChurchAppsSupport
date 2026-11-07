@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Gennemse, planlæg og præsentér gratis aldersinddelte lektioner fra over 12 udbydere i Lessons.church, med klasseværelser, lokaler og FreePlay- eller B1-integrationer."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church fungerer sammen med andre ChurchApps værktøjer til at hjælpe d
 
 ## Dokumentations afsnit
 
-- [Kom i gang](./getting-started/) -- Opret din konto og lær det grundlæggende
-- [Gennemfletning af indhold](./browsing/) -- Find programmer, studier og lektioner
-- [Klasseværelser](./classrooms/) -- Opsætning af klasseværelser og planlægning af lektioner
-- [Tilpasning](./customization/) -- Skredningsmaling af lektioner til din kirke
-- [Præsentation](./presenting/) -- Levering af lektioner i klassen ved hjælp af præsentator tilstand
-- [Administration](./admin/) -- Administrering af programmer, studier og lektioner som admin
+- [Kom i gang](./getting-started/index.md) -- Opret din konto og lær det grundlæggende
+- [Gennemfletning af indhold](./browsing/index.md) -- Find programmer, studier og lektioner
+- [Klasseværelser](./classrooms/index.md) -- Opsætning af klasseværelser og planlægning af lektioner
+- [Tilpasning](./customization/index.md) -- Skredningsmaling af lektioner til din kirke
+- [Præsentation](./presenting/index.md) -- Levering af lektioner i klassen ved hjælp af præsentator tilstand
+- [Administration](./admin/index.md) -- Administrering af programmer, studier og lektioner som admin
 - [Tros erklæring](./statement-of-faith.md) -- Kerneloved og læreplan retningslinjer
 
 For support, e-mail [support@churchapps.org](mailto:support@churchapps.org).

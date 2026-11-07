@@ -1,5 +1,6 @@
 ---
 title: "Granska ditt hushåll"
+description: "Granska ditt hushåll i B1 Checkin efter att du valt en person, tilldela sedan grupper för varje gudstjänsttid och markera gäster eller volontärer innan du checkar in."
 ---
 
 # Granska ditt hushåll
@@ -13,8 +14,8 @@ När du har valt en person i sökresultaten laddar appen hela ditt hushåll och 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Välj en tjänst](./selecting-service) på skärmen med tjänster
-- [Slå upp en medlem](./looking-up-members) och välj den i sökresultaten
+- [Välj en tjänst](./selecting-service.md) på skärmen med tjänster
+- [Slå upp en medlem](./looking-up-members.md) och välj den i sökresultaten
 
 </div>
 
@@ -35,9 +36,9 @@ Tryck på en medlems kort för att expandera det. När det är expanderat ser du
 - **Grupperna som erbjuds** vid den tjänstetiden, listade under namnet (till exempel "Nursery, Preschool, Adult Bible Class"), så att du kan se vilka klasser som finns tillgängliga innan du väljer
 - En **knapp** som visar den grupp som är tilldelad just nu, eller "Välj grupp" om ingen grupp har tilldelats ännu
 
-Om en tjänstetid har ett [incheckningsschema](../../b1-admin/attendance/setup#setting-a-check-in-schedule) och dess fönster är stängt just nu, visar raden **Stängd** i stället för en knapp, tillsammans med nästa öppningstid när en sådan finns, till exempel **Stängd · öppnar sön 9:30 AM**. Om personen redan är incheckad på den tjänstetiden visar raden i stället deras grupp med en bockmarkering (till exempel **Barnrum 1 · Incheckad**), så att du kan se var de befinner sig även om fönstret har stängt.
+Om en tjänstetid har ett [incheckningsschema](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) och dess fönster är stängt just nu, visar raden **Stängd** i stället för en knapp, tillsammans med nästa öppningstid när en sådan finns, till exempel **Stängd · öppnar sön 9:30 AM**. Om personen redan är incheckad på den tjänstetiden visar raden i stället deras grupp med en bockmarkering (till exempel **Barnrum 1 · Incheckad**), så att du kan se var de befinner sig även om fönstret har stängt.
 
-Tryck på gruppknappen för att gå till [skärmen för gruppval](./group-assignment), där du kan välja eller ändra grupp för personen och tjänstetiden.
+Tryck på gruppknappen för att gå till [skärmen för gruppval](./group-assignment.md), där du kan välja eller ändra grupp för personen och tjänstetiden.
 
 Det expanderade kortet visar också etiketterna **Medlem**, **Gäst** och **Volontär**. Tryck på en av dem för att ange hur personen checkar in. Medlem är standard. Typen spelar roll för barnrum: volontärer räknas mot rummets förhållande mellan volontärer och barn, och gäster räknas mot eventuell gästkapacitet som din kyrka har angett.
 
@@ -51,9 +52,9 @@ Du behöver inte tilldela varje familjemedlem till en grupp. Vuxna som deltar i 
 
 Från skärmen för granskning av hushållet har du tre alternativ:
 
-- **Expandera en medlem** och tryck på en tjänstetidsknapp för att [tilldela eller ändra en grupp](./group-assignment).
-- **Tryck på knappen Lägg till gäst** under medlemslistan för att [lägga till en gäst](./adding-guests) i ditt hushåll.
-- **Tryck på knappen Incheckning** längst ner på skärmen för att [slutföra incheckningen](./completing-checkin) för alla i hushållet.
+- **Expandera en medlem** och tryck på en tjänstetidsknapp för att [tilldela eller ändra en grupp](./group-assignment.md).
+- **Tryck på knappen Lägg till gäst** under medlemslistan för att [lägga till en gäst](./adding-guests.md) i ditt hushåll.
+- **Tryck på knappen Incheckning** längst ner på skärmen för att [slutföra incheckningen](./completing-checkin.md) för alla i hushållet.
 
 :::info
 Grupptilldelningar från en tidigare incheckning till samma tjänst läses in automatiskt. Om dina barn går i samma grupper varje vecka behöver du kanske inte ändra något. Granska bara och checka in.
@@ -61,6 +62,6 @@ Grupptilldelningar från en tidigare incheckning till samma tjänst läses in au
 
 ## Nästa steg
 
-- [Tilldela grupper](./group-assignment) till familjemedlemmar som ska checkas in till en specifik klass eller ett specifikt program.
-- [Lägg till en gäst](./adding-guests) om någon besöker kyrkan tillsammans med din familj.
-- [Slutför incheckningen](./completing-checkin) när alla tilldelningar ser korrekta ut.
+- [Tilldela grupper](./group-assignment.md) till familjemedlemmar som ska checkas in till en specifik klass eller ett specifikt program.
+- [Lägg till en gäst](./adding-guests.md) om någon besöker kyrkan tillsammans med din familj.
+- [Slutför incheckningen](./completing-checkin.md) när alla tilldelningar ser korrekta ut.

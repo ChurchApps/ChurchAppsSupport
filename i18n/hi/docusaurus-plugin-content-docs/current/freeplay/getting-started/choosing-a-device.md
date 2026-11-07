@@ -1,5 +1,6 @@
 ---
 title: "डिवाइस चुनना"
+description: "ChurchApps सपोर्ट डॉक्स में FreePlay क्लासरूम टीवी के लिए सही डिवाइस चुनें: Fire TV Stick और Onn बॉक्स से लेकर Apple TV तक, और किन्हें छोड़ें।"
 ---
 
 # FreePlay के लिए डिवाइस चुनना

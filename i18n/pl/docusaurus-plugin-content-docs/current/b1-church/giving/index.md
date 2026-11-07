@@ -1,5 +1,7 @@
 ---
-title: "Dary"
+title: "Internetowe darowizny w B1.church"
+sidebar_label: "Dary"
+description: "Wspieraj kościół online w B1.church bez konta lub zaloguj się, aby zarządzać cyklicznymi darowiznami, metodami płatności i zestawieniami darowizn."
 ---
 
 # Dary

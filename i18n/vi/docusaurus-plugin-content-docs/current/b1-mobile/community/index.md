@@ -1,5 +1,7 @@
 ---
-title: "Cộng đồng"
+title: "Tính năng cộng đồng trong ứng dụng B1 Mobile"
+sidebar_label: "Cộng đồng"
+description: "Dùng ứng dụng B1 Mobile để tìm trong danh bạ thành viên, gửi tin nhắn riêng cho các thành viên khác và xem thông báo đẩy từ nhà thờ."
 ---
 
 # Cộng đồng
@@ -12,13 +14,13 @@ Các tính năng **Cộng đồng** trong B1 Mobile giúp bạn luôn kết nố
 
 ## Bạn Sẽ Tìm Thấy Gì
 
-- **[Danh bạ thành viên](./member-directory)** -- Duyệt và tìm kiếm danh bạ thành viên của hội thánh. Tra cứu người theo tên và chạm vào một thành viên để xem hồ sơ với thông tin liên hệ và các mối quan hệ gia đình.
-- **[Nhắn tin](./messaging)** -- Gửi và nhận tin nhắn riêng với các thành viên khác trong hội thánh. Bắt đầu cuộc trò chuyện mới hoặc tiếp tục những cuộc trò chuyện đang có.
-- **[Thông báo](./notifications)** -- Luôn cập nhật với thông báo đẩy về hoạt động nhóm, tin nhắn, phân công phục vụ và các cập nhật quan trọng khác từ hội thánh.
+- **[Danh bạ thành viên](./member-directory.md)** -- Duyệt và tìm kiếm danh bạ thành viên của hội thánh. Tra cứu người theo tên và chạm vào một thành viên để xem hồ sơ với thông tin liên hệ và các mối quan hệ gia đình.
+- **[Nhắn tin](./messaging.md)** -- Gửi và nhận tin nhắn riêng với các thành viên khác trong hội thánh. Bắt đầu cuộc trò chuyện mới hoặc tiếp tục những cuộc trò chuyện đang có.
+- **[Thông báo](./notifications.md)** -- Luôn cập nhật với thông báo đẩy về hoạt động nhóm, tin nhắn, phân công phục vụ và các cập nhật quan trọng khác từ hội thánh.
 
 ## Bắt Đầu
 
-Bạn phải đăng nhập để truy cập các tính năng cộng đồng. Nếu chưa đăng nhập, bạn sẽ được nhắc [đăng nhập](../getting-started/logging-in) khi cố gắng sử dụng bất kỳ mục nào trong số này.
+Bạn phải đăng nhập để truy cập các tính năng cộng đồng. Nếu chưa đăng nhập, bạn sẽ được nhắc [đăng nhập](../getting-started/logging-in.md) khi cố gắng sử dụng bất kỳ mục nào trong số này.
 
 Danh bạ thành viên, nhắn tin và thông báo đều có thể truy cập từ thanh điều hướng của ứng dụng. Cùng nhau, chúng giúp bạn dễ dàng tìm người, liên lạc riêng tư và nắm bắt những gì đang diễn ra tại hội thánh.
 

@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Zapier を通じて Clearstream SMS を B1 Admin に接続します。新しい献金やフォーム送信時にテキストを送り、届いた返信を人物情報として取り込みます。"
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Zapをオンにします。B1はオンにした時点で献金のWebhookを登�
 
 ## 関連項目
 
-- [Text In Church](./text-in-church)：別のSMSプラットフォーム。構成は似ています
-- [Mobile Message](./mobile-message)：米国以外の教会向け
-- [Zapier（概要）](../zapier)：すべての Zapier レシピに共通する B1 側の説明
+- [Text In Church](./text-in-church.md)：別のSMSプラットフォーム。構成は似ています
+- [Mobile Message](./mobile-message.md)：米国以外の教会向け
+- [Zapier（概要）](../zapier.md)：すべての Zapier レシピに共通する B1 側の説明
 - [Clearstream API docs](https://api-docs.clearstream.io/)：Zapier アプリの範囲を超えるカスタム連携向け

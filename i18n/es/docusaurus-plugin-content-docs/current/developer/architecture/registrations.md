@@ -1,12 +1,13 @@
 ---
 title: "Inscripciones a eventos"
+description: "Cómo funcionan las inscripciones a eventos en B1 Admin y B1App: tipos de asistentes, complementos de pago, códigos de descuento, pagos a través de la pasarela de donativos y promoción desde lista de espera."
 ---
 
 # Inscripciones a eventos
 
 <div class="article-intro">
 
-La inscripción nativa a eventos vive en el módulo de contenido y, desde la ola de inscripciones pagadas, incluye un modelo comercial completo: tipos de asistente con precio, selecciones complementarias con precio, códigos de descuento, pagos a través de la pasarela de donaciones existente de la iglesia y una lista de espera controlada por estados. La ruta del dinero reutiliza deliberadamente la pila de donaciones: el controlador de inscripciones cobra a través de la misma abstracción `GatewayService` / `IGatewayProvider` documentada en [Donaciones](./giving), de modo que ningún dato de tarjeta ni conocimiento del SDK de la pasarela vive en el módulo de contenido. Esta página describe el modelo de datos, las reglas de precio y capacidad, y los flujos de inscripción, pago y lista de espera.
+La inscripción nativa a eventos vive en el módulo de contenido y, desde la ola de inscripciones pagadas, incluye un modelo comercial completo: tipos de asistente con precio, selecciones complementarias con precio, códigos de descuento, pagos a través de la pasarela de donaciones existente de la iglesia y una lista de espera controlada por estados. La ruta del dinero reutiliza deliberadamente la pila de donaciones: el controlador de inscripciones cobra a través de la misma abstracción `GatewayService` / `IGatewayProvider` documentada en [Donaciones](./giving.md), de modo que ningún dato de tarjeta ni conocimiento del SDK de la pasarela vive en el módulo de contenido. Esta página describe el modelo de datos, las reglas de precio y capacidad, y los flujos de inscripción, pago y lista de espera.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-La tokenización ocurre en el navegador exactamente como en las donaciones (vea [Donaciones](./giving)): el asistente reutiliza el registro de proveedores de pago de apphelper, de modo que los miembros con sesión iniciada pueden pagar con tarjetas guardadas, y los invitados tokenizan una tarjeta nueva. El controlador replica las particularidades de proveedor de `DonateController` (identificadores de método de pago `pm-{id}` de Kingdom Funding, y las respuestas `requires_action` de SCA de Stripe que se devuelven al cliente sin registrar un pago). Un cargo exitoso escribe una fila en `registrationPayments`, incrementa `amountPaid` y confirma la inscripción. **Los reembolsos no están implementados**: una inscripción pagada y cancelada conserva sus filas de pago, y cualquier reembolso se gestiona fuera de la aplicación, en el panel de la pasarela.
+La tokenización ocurre en el navegador exactamente como en las donaciones (vea [Donaciones](./giving.md)): el asistente reutiliza el registro de proveedores de pago de apphelper, de modo que los miembros con sesión iniciada pueden pagar con tarjetas guardadas, y los invitados tokenizan una tarjeta nueva. El controlador replica las particularidades de proveedor de `DonateController` (identificadores de método de pago `pm-{id}` de Kingdom Funding, y las respuestas `requires_action` de SCA de Stripe que se devuelven al cliente sin registrar un pago). Un cargo exitoso escribe una fila en `registrationPayments`, incrementa `amountPaid` y confirma la inscripción. **Los reembolsos no están implementados**: una inscripción pagada y cancelada conserva sus filas de pago, y cualquier reembolso se gestiona fuera de la aplicación, en el panel de la pasarela.
 
 Ambos puntos de entrada pasan por la misma ruta de código: `register` (pagar al inscribirse) y `pay` (pago del saldo / completar la lista de espera).
 
@@ -147,7 +148,7 @@ Las búsquedas entre módulos (resolver o crear a la persona invitada, cargar la
 
 ## Páginas relacionadas
 
-- [Donaciones](./giving): la abstracción de pasarela, el registro de proveedores y el modelo de tokenización que reutiliza esta función
-- [Endpoints de Content](../api/endpoints/content): la superficie REST del módulo de contenido
-- [Webhooks](../api/webhooks): el evento `registration.created`
-- [Estructura de módulos](../api/module-structure): cómo se organiza del lado del servidor el módulo de contenido
+- [Donaciones](./giving.md): la abstracción de pasarela, el registro de proveedores y el modelo de tokenización que reutiliza esta función
+- [Endpoints de Content](../api/endpoints/content.md): la superficie REST del módulo de contenido
+- [Webhooks](../api/webhooks.md): el evento `registration.created`
+- [Estructura de módulos](../api/module-structure.md): cómo se organiza del lado del servidor el módulo de contenido

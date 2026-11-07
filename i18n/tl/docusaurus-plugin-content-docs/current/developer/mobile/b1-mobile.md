@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "I-set up at patakbuhin ang B1 Mobile na React Native/Expo app nang lokal, i-configure ang API endpoints, at mag-build para sa Android o iOS. Deprecated na ito."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ Ang B1 Mobile ang pangunahing mobile app para sa mga miyembro ng ChurchApps, na 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang **Node.js** at **Expo CLI** -- tingnan ang [Prerequisites](../setup/prerequisites)
+- I-install ang **Node.js** at **Expo CLI** -- tingnan ang [Prerequisites](../setup/prerequisites.md)
 - I-install ang **Android Studio** (para sa Android emulator) o **Xcode** (para sa iOS simulator)
-- I-configure ang iyong API target (demo o local) -- tingnan ang [Environment Variables](../setup/environment-variables)
+- I-configure ang iyong API target (demo o local) -- tingnan ang [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Ang mga OTA update ay mainam para sa mga pagbabago lamang sa JavaScript. Kung ba
 
 ## Mga Kaugnay na Artikulo
 
-- **[Mobile Deployment](../deployment/mobile)** -- Buong gabay sa pag-build, pagsusumite, at pag-deploy ng mga mobile app
-- **[Environment Variables](../setup/environment-variables)** -- Kumpletong reference para sa configuration ng mobile environment
+- **[Mobile Deployment](../deployment/mobile.md)** -- Buong gabay sa pag-build, pagsusumite, at pag-deploy ng mga mobile app
+- **[Environment Variables](../setup/environment-variables.md)** -- Kumpletong reference para sa configuration ng mobile environment

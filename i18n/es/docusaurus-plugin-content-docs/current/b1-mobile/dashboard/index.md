@@ -1,5 +1,6 @@
 ---
 title: "Panel principal"
+description: "Conozca la pantalla de inicio de B1 Mobile, donde las funciones más usadas aparecen como tarjetas grandes y el resto están en Acciones rápidas."
 ---
 
 # Panel principal
@@ -28,7 +29,7 @@ Debajo de la tarjeta destacada verás hasta dos **tarjetas destacadas** una al l
 
 ## Acciones rápidas
 
-Las funciones restantes aparecen en una cuadrícula de **Acciones rápidas** debajo de las tarjetas destacadas. Cada elemento muestra un icono y una etiqueta. Son todos los demás enlaces de navegación que tu iglesia configuró, para que accedas a todo, desde [grupos](../groups/) y [donaciones](../giving/) hasta [registro de entrada](../checkin/), [sermones](../content/sermons.md) y más.
+Las funciones restantes aparecen en una cuadrícula de **Acciones rápidas** debajo de las tarjetas destacadas. Cada elemento muestra un icono y una etiqueta. Son todos los demás enlaces de navegación que tu iglesia configuró, para que accedas a todo, desde [grupos](../groups/index.md) y [donaciones](../giving/index.md) hasta [registro de entrada](../checkin/index.md), [sermones](../content/sermons.md) y más.
 
 ## Cómo se adapta la distribución
 
@@ -41,7 +42,7 @@ La distribución del panel se personaliza según tus patrones de uso. Cada vez q
 Si todavía no has usado la aplicación, las funciones aparecen en el orden predeterminado que tu iglesia configuró. Con el tiempo, el panel se reordena para reflejar tus hábitos.
 
 :::info
-Las funciones disponibles en tu panel las configura el administrador de tu iglesia a través de [B1 Admin](../../b1-admin/). Si no ves una función que esperas, comunícate con la oficina de tu iglesia.
+Las funciones disponibles en tu panel las configura el administrador de tu iglesia a través de [B1 Admin](../../b1-admin/index.md). Si no ves una función que esperas, comunícate con la oficina de tu iglesia.
 :::
 
 ## Actualizar el panel

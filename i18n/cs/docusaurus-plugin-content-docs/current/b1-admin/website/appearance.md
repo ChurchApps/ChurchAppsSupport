@@ -1,5 +1,6 @@
 ---
 title: "Vzhled"
+description: "Nastavte barvy, písma, rozestupy, logo a navigaci webu vaší církve v B1 Admin, včetně widgetů, analytiky GA4, přesměrování a vlastního CSS."
 ---
 
 # Vzhled
@@ -13,7 +14,7 @@ Stránka Vzhled vám umožňuje přizpůsobit celkový vzhled webu vašeho sboru
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Dokončete [počáteční nastavení](initial-setup) svého webu
+- Dokončete [počáteční nastavení](./initial-setup.md) svého webu
 - Připravte si logo sboru ve formátu PNG s průhledným pozadím a poměrem stran 4:1
 - Pokud máte existující manuál stylu, zjistěte barvy značky sboru (hexadecimální hodnoty)
 
@@ -98,7 +99,7 @@ Vlastní CSS je silný nástroj, ale při nesprávném použití může rozbít 
 :::
 
 :::info
-Váš web vynucuje zásadu zabezpečení obsahu (Content Security Policy), která blokuje vložené skripty z jakéhokoli jiného zdroje. Pole **Vlastní HTML** zde a [prvek HTML](page-editor#using-the-html-element) na jednotlivých stránkách jsou důvěryhodné výjimky: kód, který zde uložíte, se spustí tak, jak je, proto vkládejte pouze skripty z důvěryhodných zdrojů (značky analytiky, chatovací widgety a podobné vložené prvky).
+Váš web vynucuje zásadu zabezpečení obsahu (Content Security Policy), která blokuje vložené skripty z jakéhokoli jiného zdroje. Pole **Vlastní HTML** zde a [prvek HTML](./page-editor.md#using-the-html-element) na jednotlivých stránkách jsou důvěryhodné výjimky: kód, který zde uložíte, se spustí tak, jak je, proto vkládejte pouze skripty z důvěryhodných zdrojů (značky analytiky, chatovací widgety a podobné vložené prvky).
 :::
 
 ## Motivy stylů
@@ -107,5 +108,5 @@ Pokud hledáte rychlý výchozí bod, nabízejí **Navrhované palety** v sekci 
 
 ## Další kroky
 
-- [Správa stránek](managing-pages) -- Vytváření a organizace stránek webu
-- [Soubory](files) -- Nahrávání mediálních souborů pro váš web
+- [Správa stránek](./managing-pages.md) -- Vytváření a organizace stránek webu
+- [Soubory](./files.md) -- Nahrávání mediálních souborů pro váš web

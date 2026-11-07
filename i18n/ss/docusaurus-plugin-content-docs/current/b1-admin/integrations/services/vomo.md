@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Xhuma tisicelo te-VOMO netingena ekhiyosikini kubantfu nemaqembu e-B1 Admin nge-Zapier, kubandzakanya netinkinobho tekhiyi ye-API netinyatselo tekusetfula."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Nayipheliswa phrojekthi ye-VOMO, coca licembu le-B1 ngesandla (nobe uhlanganise 
 
 ### Tfumela umlayeto "siyabonga ngekubhalisa" nge-SMS
 
-Hlanganisa VOMO Participation → Clearstream Send Text nobe Text In Church Send Message ku Zap lefanako. Kokubili banento te-Zapier tavelele — buka [Clearstream](./clearstream) ne-[Text In Church](./text-in-church).
+Hlanganisa VOMO Participation → Clearstream Send Text nobe Text In Church Send Message ku Zap lefanako. Kokubili banento te-Zapier tavelele — buka [Clearstream](./clearstream.md) ne-[Text In Church](./text-in-church.md).
 
 ### Bona kuwa kwebantfu
 
@@ -91,6 +92,6 @@ Sebentisa sicalisi se-Zapier se-*Schedule* lesihamba onkhe malanga lesibita Tfol
 
 ## Buka Nalokunye
 
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — hlanganisa kubhaliswa kwebavolontiya nekucinisekiswa nge-SMS
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — hlanganisa kubhaliswa kwebavolontiya nekucinisekiswa nge-SMS
 - [Webhooks (inkomba yentfutfuki)](/docs/developer/api/webhooks) — imicimbi VOMO yengachaliswa

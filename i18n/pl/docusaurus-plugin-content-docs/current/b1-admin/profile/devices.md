@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje uređajima"
+description: "Paruj, nazywaj i usuwaj ekrany ChurchAppsPlayer i FreePlay połączone z kontem w B1 Admin, aby wyświetlacze kościelne były aktualne i bezpieczne."
 ---
 
 # Upravljanje uređajima

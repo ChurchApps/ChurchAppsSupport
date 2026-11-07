@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Livesändningstider och inställningar i B1 Admin"
+sidebar_label: "Live Streaming"
+description: "Schemalägg veckovisa eller engångsvisa livesändningar, ställ in chatt- och tidig videotid, anslut en YouTube-kanal och felsök inbäddningar i B1 Admin."
 ---
 
 # Live Streaming
@@ -19,7 +21,7 @@ Sidan Live Stream Times låter dig konfigurera din kyrkas streamingschema, hante
 
 - Du behöver behörigheten **contentApi.streamingServices.edit**. Se [Roller och behörigheter](../settings/roles-permissions.md) om du saknar åtkomst.
 - Ha ditt YouTube-kanal-ID redo om du planerar att använda automatisk livestreaming
-- Lägg till minst en [predikan](managing-sermons) eller en permanent live-URL som källa för din stream
+- Lägg till minst en [predikan](./managing-sermons.md) eller en permanent live-URL som källa för din stream
 
 </div>
 
@@ -80,13 +82,13 @@ För att hitta ditt YouTube-kanal-ID går du till din YouTube-kanals avancerade 
 
 ## Anpassa färger och logotyp
 
-Din livestreamsida använder inställningarna för [Appearance](../website/appearance) på din webbplats:
+Din livestreamsida använder inställningarna för [Appearance](../website/appearance.md) på din webbplats:
 
 - Den **ljusa accentfärgen** med mörk text används för sidhuvudet.
 - Den **mörka accentfärgen** med ljus text används för sidofältet.
 - Din **Light Background Logo** visas på streamingsidan. Använd en bild med transparent bakgrund och bildförhållandet 4:1.
 
-För att ändra dessa går du till **Website** och sedan **Appearance** och uppdaterar dina inställningar för [Color Palette](../website/appearance#color-palette) och [Logo](../website/appearance#logo-and-branding).
+För att ändra dessa går du till **Website** och sedan **Appearance** och uppdaterar dina inställningar för [Color Palette](../website/appearance.md#color-palette) och [Logo](../website/appearance.md#logo-and-branding).
 
 ## Lägga till streamingvärdar
 
@@ -133,5 +135,5 @@ YouTubes automatiska inbäddning av kanalens livestream kan blockeras när det f
 
 ## Nästa steg
 
-- [Hantera predikningar](managing-sermons) -- Lägg till predikningar i ditt bibliotek
-- [Spellistor](playlists) -- Organisera predikningar i serier
+- [Hantera predikningar](./managing-sermons.md) -- Lägg till predikningar i ditt bibliotek
+- [Spellistor](./playlists.md) -- Organisera predikningar i serier

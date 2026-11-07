@@ -1,5 +1,6 @@
 ---
 title: "Mengedit Banyak Orang Sekaligus"
+description: "Perbarui status keanggotaan, status pernikahan, jenis kelamin, opt-out, kolom Ya/Tidak kustom, atau keanggotaan grup untuk banyak orang sekaligus di B1 Admin."
 ---
 
 # Mengedit Banyak Orang Sekaligus

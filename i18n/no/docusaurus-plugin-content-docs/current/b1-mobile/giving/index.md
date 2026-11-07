@@ -1,5 +1,7 @@
 ---
-title: "Gaver"
+title: "Giving i B1 Mobile-appen"
+sidebar_label: "Gaver"
+description: "Gi i B1 Mobile-appen, se gaver i år, og administrer lagrede betalingsmetoder. Dekker fanene Oversikt, Gi, Administrer og Historikk."
 ---
 
 # Gaver
@@ -24,7 +26,7 @@ Givingsdelen er delt inn i fire faner:
 Alle gaver som gis via B1 Mobile behandles trygt gjennom **Stripe**. Betalingsinformasjonen din håndteres av Stripes sikre infrastruktur og lagres aldri på ChurchApps-servere. Du kan gi med trygghet, vel vitende om at dine økonomiske opplysninger er beskyttet.
 
 :::info
-Menighetsadministratoren din setter opp de tilgjengelige fondene og betalingsbehandlingen gjennom [B1 Admin](../../b1-admin/). Hvis du ikke ser et givingsalternativ i appen, er det mulig at menigheten din ikke har konfigurert denne funksjonen ennå.
+Menighetsadministratoren din setter opp de tilgjengelige fondene og betalingsbehandlingen gjennom [B1 Admin](../../b1-admin/index.md). Hvis du ikke ser et givingsalternativ i appen, er det mulig at menigheten din ikke har konfigurert denne funksjonen ennå.
 :::
 
 ## Hva du kan gjøre
@@ -38,6 +40,6 @@ Her er hva du kan gjøre fra givingsdelen:
 
 ## Neste steg
 
-- [Gi en gave](./making-donations) -- Lær hvordan du gir en gave fra appen
-- [Administrere betalingsmetoder](./managing-payments) -- Legg til eller fjern lagrede betalingsmetoder
-- [Givingshistorikk](./donation-history) -- Se din givingsoversikt og tidligere gaver
+- [Gi en gave](./making-donations.md) -- Lær hvordan du gir en gave fra appen
+- [Administrere betalingsmetoder](./managing-payments.md) -- Legg til eller fjern lagrede betalingsmetoder
+- [Givingshistorikk](./donation-history.md) -- Se din givingsoversikt og tidligere gaver

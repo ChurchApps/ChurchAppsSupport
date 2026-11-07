@@ -1,5 +1,6 @@
 ---
 title: "Oktatások testreszabása"
+description: "Szakaszok és szerepkörök eltávolítása, elrejtése vagy átrendezése egy Lessons.church-leckében; a változás egy vagy minden osztályteremre vonatkozik."
 ---
 
 # Oktatások testreszabása

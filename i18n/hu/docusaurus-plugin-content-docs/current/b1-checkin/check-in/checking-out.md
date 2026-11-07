@@ -1,5 +1,6 @@
 ---
 title: "Kijelentkezés és gyermekbiztonság"
+description: "Gyermekek kijelentkeztetése kezelt B1 Checkin állomáson: biztonsági kódok, ellenőrzött átvevők, szülői hívás, címkenyomtatás és vészüzenetek."
 ---
 
 # Kijelentkezés és gyermekbiztonság
@@ -14,7 +15,7 @@ A kijelentkezés zárja le a gyermekek bejelentkezését: a szülő bemutatja az
 <h4>Mielőtt elkezdi</h4>
 
 - A kijelentkezés azokon az állomásokon érhető el, amelyek a kioszk-adminisztrációs beállításokban **személyzettel működtetett** módra vannak állítva
-- A gyermekeket a biztonsági kódot tartalmazó, nyomtatott átvételi címkével kell [bejelentkeztetni](./completing-checkin)
+- A gyermekeket a biztonsági kódot tartalmazó, nyomtatott átvételi címkével kell [bejelentkeztetni](./completing-checkin.md)
 - Az üzenetküldéshez és a vészhelyzeti közleményekhez a gyülekezetnek össze kell kötnie egy SMS-szolgáltatót a B1 Adminban
 
 </div>
@@ -39,7 +40,7 @@ Ha a beírt név egy olyan személyével egyezik, akit az adott háztartásnál 
 Miután az átvevőt megerősítette, koppintson a kijelentkezésre. Az átvevő neve a részvételi bejegyzéshez kerül mentésre.
 
 :::info
-A megbízható és a nem jogosult átvevőket az egyházi munkatársak kezelik az egyes személyek oldalán a B1 Adminban. Lásd: [Bejelentkezési biztonság](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+A megbízható és a nem jogosult átvevőket az egyházi munkatársak kezelik az egyes személyek oldalán a B1 Adminban. Lásd: [Bejelentkezési biztonság](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Szülő értesítése
@@ -65,6 +66,6 @@ A közlemény a kiválasztott istentiszteleten bejelentkeztetett minden háztart
 
 ## Kapcsolódó cikkek
 
-- [Bejelentkezés befejezése](./completing-checkin): honnan származnak a biztonsági kódok és az átvételi címkék
-- [Bejelentkezési biztonság](../../b1-admin/attendance/checkin-safety): kapacitások, arányok, átvevők és az SMS-szolgáltatóra vonatkozó követelmény beállítása
-- [Nyomtató beállítása](../getting-started/printer-setup): címkenyomtató konfigurálása
+- [Bejelentkezés befejezése](./completing-checkin.md): honnan származnak a biztonsági kódok és az átvételi címkék
+- [Bejelentkezési biztonság](../../b1-admin/attendance/checkin-safety.md): kapacitások, arányok, átvevők és az SMS-szolgáltatóra vonatkozó követelmény beállítása
+- [Nyomtató beállítása](../getting-started/printer-setup.md): címkenyomtató konfigurálása

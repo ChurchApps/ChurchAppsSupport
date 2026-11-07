@@ -1,5 +1,6 @@
 ---
 title: "Trang Cá nhân"
+description: "Trang Tôi trong cổng B1App hiển thị trên một màn hình: lịch phục vụ, sự kiện và đăng ký sắp tới, cùng hộ gia đình, nhóm, dâng hiến, biểu mẫu, điểm danh và hộp thư."
 ---
 
 # Trang Cá nhân
@@ -31,7 +32,7 @@ Nếu bạn đã đăng xuất, bạn sẽ thấy dòng "Đăng nhập để xem
 Mục **Sắp tới** liệt kê ba mục tiếp theo của bạn theo thứ tự ngày, mỗi mục có một nhãn loại. Nếu có nhiều hơn, chạm vào **Tất cả mục sắp tới** để xem danh sách đầy đủ, và **Quay lại Cá nhân** để trở về.
 
 - **Phục vụ** -- Các vị trí tình nguyện của bạn trong kế hoạch phục vụ sắp tới, kèm ngày và giờ bắt đầu của buổi thờ phượng bạn sẽ phục vụ (giờ đội của bạn cần có mặt khi kế hoạch có nhiều giờ thờ phượng, hoặc chỉ hiển thị ngày nếu kế hoạch không có giờ). Chạm vào một mục để mở kế hoạch.
-- **Đăng ký** -- Các sự kiện bạn đã [đăng ký tham gia](../events/registering). Chạm để xem [đăng ký của bạn](../events/my-registrations).
+- **Đăng ký** -- Các sự kiện bạn đã [đăng ký tham gia](../events/registering.md). Chạm để xem [đăng ký của bạn](../events/my-registrations.md).
 - **Sự kiện** -- Các sự kiện sắp tới từ những nhóm bạn tham gia. Chạm vào một mục để mở danh sách sự kiện của nhóm.
 
 Nếu một sự kiện hoặc đăng ký có ảnh, một ảnh thu nhỏ sẽ xuất hiện ở đầu hàng.
@@ -66,7 +67,7 @@ Mục **Yêu cầu và đăng ký** cho biết bạn có bao nhiêu đăng ký s
 
 Nếu nhà thờ của bạn có phòng hoặc tài nguyên có thể đặt trước, sẽ có thêm hai liên kết:
 
-- **Yêu cầu sự kiện** -- Đề nghị tổ chức sự kiện với các phòng và thiết bị bạn cần. Xem [Yêu cầu sự kiện và phòng](../events/requesting-events).
+- **Yêu cầu sự kiện** -- Đề nghị tổ chức sự kiện với các phòng và thiết bị bạn cần. Xem [Yêu cầu sự kiện và phòng](../events/requesting-events.md).
 - **Yêu cầu của tôi** -- Theo dõi trạng thái các yêu cầu của bạn và hủy những yêu cầu đang chờ duyệt.
 
 Nếu nhà thờ của bạn chưa thiết lập phòng hoặc tài nguyên, các liên kết này sẽ bị ẩn.
@@ -77,8 +78,8 @@ Mục **Hộp thư** hiển thị hai thông báo gần đây nhất của bạn
 
 ## Bài viết liên quan
 
-- [Điều hướng B1App](./navigating) -- Bố cục cổng thành viên
-- [Yêu cầu sự kiện và phòng](../events/requesting-events) -- Gửi và theo dõi yêu cầu phòng/tài nguyên
-- [Đăng ký của tôi](../events/my-registrations) -- Quản lý đăng ký sự kiện của bạn
-- [Đăng ký tình nguyện](../serving/volunteer-signup) -- Cách hoạt động của các phân công phục vụ
-- [Tự điểm danh](../checkin/self-checkin) -- Cách việc điểm danh của bạn được ghi nhận
+- [Điều hướng B1App](./navigating.md) -- Bố cục cổng thành viên
+- [Yêu cầu sự kiện và phòng](../events/requesting-events.md) -- Gửi và theo dõi yêu cầu phòng/tài nguyên
+- [Đăng ký của tôi](../events/my-registrations.md) -- Quản lý đăng ký sự kiện của bạn
+- [Đăng ký tình nguyện](../serving/volunteer-signup.md) -- Cách hoạt động của các phân công phục vụ
+- [Tự điểm danh](../checkin/self-checkin.md) -- Cách việc điểm danh của bạn được ghi nhận

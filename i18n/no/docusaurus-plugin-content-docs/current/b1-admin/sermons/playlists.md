@@ -1,5 +1,6 @@
 ---
 title: "Spillelister"
+description: "Grupper prekenene dine i serier i B1 Admin, slik at besøkende på B1.church-nettstedet kan bla i og følge hver prekenserie i rekkefølge."
 ---
 
 # Spillelister
@@ -39,10 +40,10 @@ Opprett spillelistene først, før du legger til prekener. Da kan du tilordne hv
 
 ## Legge til prekener i en spilleliste
 
-Når du [legger til eller redigerer en preken](managing-sermons), tilordner du den til en spilleliste i nedtrekksmenyen **Spilleliste**. Alle prekener som er tilordnet samme spilleliste, grupperes og vises i rekkefølge på nettstedet ditt.
+Når du [legger til eller redigerer en preken](./managing-sermons.md), tilordner du den til en spilleliste i nedtrekksmenyen **Spilleliste**. Alle prekener som er tilordnet samme spilleliste, grupperes og vises i rekkefølge på nettstedet ditt.
 
 :::info
-Du kan også tilordne prekener til spillelister under [Masseimport](bulk-import). Når du importerer fra YouTube eller Vimeo, velger du en spilleliste fra nedtrekksmenyen **Importer til spilleliste** før du klikker på **Importer**.
+Du kan også tilordne prekener til spillelister under [Masseimport](./bulk-import.md). Når du importerer fra YouTube eller Vimeo, velger du en spilleliste fra nedtrekksmenyen **Importer til spilleliste** før du klikker på **Importer**.
 :::
 
 ## Slik vises spillelister på nettstedet ditt
@@ -55,5 +56,5 @@ Spillelister vises på B1.church-nettstedet ditt som samlinger man kan bla i. Be
 
 ## Neste steg
 
-- [Administrere prekener](managing-sermons) -- Legg til enkeltprekener i spillelistene dine
-- [Masseimport](bulk-import) -- Importer flere prekener og tilordne dem til spillelister
+- [Administrere prekener](./managing-sermons.md) -- Legg til enkeltprekener i spillelistene dine
+- [Masseimport](./bulk-import.md) -- Importer flere prekener og tilordne dem til spillelister

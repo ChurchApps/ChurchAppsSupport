@@ -1,5 +1,7 @@
 ---
-title: "행사 등록하기"
+title: "B1 Mobile에서 행사 등록하기"
+sidebar_label: "행사 등록하기"
+description: "B1 Mobile 앱에서 교회 행사에 나와 가족을 등록하고, 남은 정원을 확인하며, 세 단계로 신청을 확정하세요."
 ---
 
 # 행사 등록하기
@@ -13,7 +15,7 @@ B1 Mobile에서 간단한 3단계 프로세스를 사용하여 교회 행사에 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 Mobile 설치](../getting-started/installing) 및 계정에 [로그인](../getting-started/logging-in)
+- [B1 Mobile 설치](../getting-started/installing.md) 및 계정에 [로그인](../getting-started/logging-in.md)
 - 행사에 등록이 활성화되어 있고 등록 기간이 열려있어야 합니다
 
 </div>
@@ -50,4 +52,4 @@ B1 Mobile에서 간단한 3단계 프로세스를 사용하여 교회 행사에 
 ## 관련 문서
 
 - [행사 개요](./index.md) -- 모바일에서 등록이 있는 행사 둘러보기
-- [계획 보기](../serving/viewing-plans) -- 자신의 봉사 일정 확인
+- [계획 보기](../serving/viewing-plans.md) -- 자신의 봉사 일정 확인

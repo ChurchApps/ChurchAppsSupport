@@ -1,5 +1,7 @@
 ---
-title: "Podrobnosti skupine"
+title: "Podrobnosti skupine v portalu za člane B1.church"
+sidebar_label: "Podrobnosti skupine"
+description: "Odprite podrobno stran skupine v pogledu za člane v B1 Admin (B1.church): dogodki, srečanja, obrazci, člani ter pridružitev ali prošnja za članstvo."
 ---
 
 # Podrobnosti skupine

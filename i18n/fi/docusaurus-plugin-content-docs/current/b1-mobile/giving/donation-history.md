@@ -1,5 +1,7 @@
 ---
-title: "Lahjoitushistoria"
+title: "Lahjoitushistorian tarkastelu B1 Mobilessa"
+sidebar_label: "Lahjoitushistoria"
+description: "Tarkista vuoden alusta kertynyt lahjoituksesi, viimeisin lahjoitus ja koko lahjoitushistoria B1 Mobilessa sekä toista aiempi lahjoitus yhdellä napautuksella Yleiskatsaus-välilehdeltä."
 ---
 
 # Lahjoitushistoria
@@ -13,8 +15,8 @@ B1 Mobile antaa sinulle selkeän kuvan lahjoituksistasi kahden välilehden kautt
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
-- [Tee vähintään yksi lahjoitus](./making-donations), jotta näet historiasi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
+- [Tee vähintään yksi lahjoitus](./making-donations.md), jotta näet historiasi
 
 </div>
 
@@ -45,5 +47,5 @@ Tarkista **Yleiskatsaus**-välilehti säännöllisesti pysyäksesi perillä lahj
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Lahjoituksen tekeminen](./making-donations) -- Tee uusi lahjoitus sovelluksesta
-- [Maksutapojen hallinta](./managing-payments) -- Lisää tai poista tallennettuja maksutapoja
+- [Lahjoituksen tekeminen](./making-donations.md) -- Tee uusi lahjoitus sovelluksesta
+- [Maksutapojen hallinta](./managing-payments.md) -- Lisää tai poista tallennettuja maksutapoja

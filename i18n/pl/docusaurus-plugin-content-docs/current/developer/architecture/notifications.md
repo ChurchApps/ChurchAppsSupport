@@ -1,5 +1,6 @@
 ---
 title: "Architektura powiadomień i przypomnień"
+description: "Jak API B1 Admin kieruje powiadomienia, zaplanowane przypomnienia, limity e-maili i rezygnację z SMS przez jeden lejek dostawy i bramkę preferencji."
 ---
 
 # Architektura powiadomień i przypomnień
@@ -185,6 +186,6 @@ Lokalnie tę samą logikę można uruchomić na żądanie poleceniami `npm run t
 
 ## Powiązane strony
 
-- [Architektura czasu rzeczywistego](../realtime): protokół WebSocket i prymitywy po stronie klienta (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na których opiera się dostarczanie w aplikacji
-- [Powiadomienia Web Push](../web-push): konfiguracja VAPID i ścieżka przeglądarkowego Push API używana na poziomie eskalacji push
-- [Endpointy messaging](../api/endpoints/messaging): pełna powierzchnia REST dla wiadomości, konwersacji, połączeń oraz tras powiadomień i przypomnień
+- [Architektura czasu rzeczywistego](../realtime.md): protokół WebSocket i prymitywy po stronie klienta (`SocketHelper`, `SubscriptionManager`, `ConversationStore`), na których opiera się dostarczanie w aplikacji
+- [Powiadomienia Web Push](../web-push.md): konfiguracja VAPID i ścieżka przeglądarkowego Push API używana na poziomie eskalacji push
+- [Endpointy messaging](../api/endpoints/messaging.md): pełna powierzchnia REST dla wiadomości, konwersacji, połączeń oraz tras powiadomień i przypomnień

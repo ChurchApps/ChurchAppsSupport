@@ -1,5 +1,6 @@
 ---
 title: "Stiluri de navigare"
+description: "Personalizează culorile barelor de navigare pline sau transparente din B1 Admin, cu stările pentru link, la trecerea cursorului și activ."
 ---
 
 # Stiluri de navigare

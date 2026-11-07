@@ -1,5 +1,6 @@
 ---
 title: "Eksterne udgivere"
+description: "Lær hvordan tredjepartsudbydere af curriculum tilføjer deres indhold til Lessons.church med Open Lesson Format, og hvordan du forbinder en udbyder fra portalen."
 ---
 
 # Eksterne udgivere

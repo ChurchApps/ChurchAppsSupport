@@ -1,5 +1,6 @@
 ---
 title: "Pagmemensahe"
+description: "Magsimula, magbasa, mag-edit, at magtanggal ng pribadong usapan sa mga miyembro ng simbahan sa B1 Mobile, at maghanap ng tao sa Member Directory."
 ---
 
 # Pagmemensahe
@@ -13,7 +14,7 @@ Ang B1 Mobile ay may kasamang private messaging upang maaari kang makipag-usap n
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Mag-install ng B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [Mag-install ng B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 
 </div>
 
@@ -25,7 +26,7 @@ Ang B1 Mobile ay may kasamang private messaging upang maaari kang makipag-usap n
 ## Pagsisimula ng Bagong Pag-uusap
 
 1. Mula sa messaging screen, i-tap ang opsyon upang magsimula ng bagong pag-uusap.
-2. Gamitin ang search field upang hanapin ang miyembro na nais mong i-message. Maaari mo ring mahanap ang mga miyembro sa pamamagitan ng [Member Directory](./member-directory).
+2. Gamitin ang search field upang hanapin ang miyembro na nais mong i-message. Maaari mo ring mahanap ang mga miyembro sa pamamagitan ng [Member Directory](./member-directory.md).
 3. Pumili ng miyembro mula sa mga resulta ng paghahanap.
 4. I-type ang iyong mensahe at i-tap ang **Send**.
 
@@ -52,11 +53,11 @@ Gamitin ang messaging upang mag-coordinate sa mga kasama mong volunteer, sumunod
 :::
 
 :::info
-I-enable ang [push notifications](./notifications) upang mabigyan ng alert kapag nagpadala sa iyo ng bagong mensahe ang isang tao, kahit ang app ay hindi bukas.
+I-enable ang [push notifications](./notifications.md) upang mabigyan ng alert kapag nagpadala sa iyo ng bagong mensahe ang isang tao, kahit ang app ay hindi bukas.
 :::
 
 ## Kaugnay na Mga Artikulo
 
-- [Member Directory](./member-directory) -- Maghanap ng mga miyembro upang i-message
-- [Notifications](./notifications) -- Maging alam tungkol sa mga bagong mensahe
-- [Groups](../groups/) -- Makipagtulungan sa mga pag-uusap ng grupo
+- [Member Directory](./member-directory.md) -- Maghanap ng mga miyembro upang i-message
+- [Notifications](./notifications.md) -- Maging alam tungkol sa mga bagong mensahe
+- [Groups](../groups/index.md) -- Makipagtulungan sa mga pag-uusap ng grupo

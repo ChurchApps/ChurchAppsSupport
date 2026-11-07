@@ -1,5 +1,7 @@
 ---
-title: "Đăng ký tham gia sự kiện"
+title: "Đăng ký sự kiện trong B1.church"
+sidebar_label: "Đăng ký tham gia sự kiện"
+description: "Đăng ký sự kiện hội thánh trên B1.church: nhập thông tin, thêm thành viên gia đình, chọn tùy chọn, áp dụng mã giảm giá, rồi thanh toán hoặc tham gia danh sách chờ."
 ---
 
 # Đăng ký tham gia sự kiện
@@ -79,14 +81,14 @@ Một thông báo xác nhận sẽ xuất hiện, kèm thông tin sự kiện v�
 
 ## Tham gia danh sách chờ
 
-Nếu sự kiện đã đầy và hội thánh của bạn bật danh sách chờ, bước đầu tiên sẽ hiển thị: *"Sự kiện này đã đầy. Bạn có thể tham gia danh sách chờ và chúng tôi sẽ thông báo cho bạn nếu có chỗ trống."* Hoàn tất đăng ký như bình thường — bước thanh toán sẽ được bỏ qua trong lúc bạn ở trên danh sách chờ. Khi có chỗ trống, bạn sẽ nhận được email; nếu còn khoản thanh toán, email sẽ có liên kết để bạn hoàn tất. Bạn cũng có thể kiểm tra trạng thái và thanh toán từ [Đăng ký của tôi](./my-registrations).
+Nếu sự kiện đã đầy và hội thánh của bạn bật danh sách chờ, bước đầu tiên sẽ hiển thị: *"Sự kiện này đã đầy. Bạn có thể tham gia danh sách chờ và chúng tôi sẽ thông báo cho bạn nếu có chỗ trống."* Hoàn tất đăng ký như bình thường — bước thanh toán sẽ được bỏ qua trong lúc bạn ở trên danh sách chờ. Khi có chỗ trống, bạn sẽ nhận được email; nếu còn khoản thanh toán, email sẽ có liên kết để bạn hoàn tất. Bạn cũng có thể kiểm tra trạng thái và thanh toán từ [Đăng ký của tôi](./my-registrations.md).
 
 ## Thay đổi hoặc hủy đăng ký
 
-Nếu đã đăng nhập, bạn có thể tự chỉnh sửa hoặc hủy đăng ký từ trang **Đăng ký** trong cổng thành viên — xem [Đăng ký của tôi](./my-registrations). Khách nên liên hệ văn phòng hội thánh, còn nhân viên có thể thực hiện thay đổi từ trang đăng ký của B1 Admin.
+Nếu đã đăng nhập, bạn có thể tự chỉnh sửa hoặc hủy đăng ký từ trang **Đăng ký** trong cổng thành viên — xem [Đăng ký của tôi](./my-registrations.md). Khách nên liên hệ văn phòng hội thánh, còn nhân viên có thể thực hiện thay đổi từ trang đăng ký của B1 Admin.
 
 ## Bài viết liên quan
 
 - [Tổng quan sự kiện](./index.md) -- Xem các sự kiện sắp diễn ra có mở đăng ký
-- [Đăng ký của tôi](./my-registrations) -- Xem, chỉnh sửa, thanh toán số dư và hủy đăng ký của bạn
-- [Quyên góp](../giving/making-donations) -- Quyên góp khi tham gia sự kiện
+- [Đăng ký của tôi](./my-registrations.md) -- Xem, chỉnh sửa, thanh toán số dư và hủy đăng ký của bạn
+- [Quyên góp](../giving/making-donations.md) -- Quyên góp khi tham gia sự kiện

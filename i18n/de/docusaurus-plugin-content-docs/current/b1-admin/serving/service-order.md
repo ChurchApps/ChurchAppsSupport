@@ -1,5 +1,7 @@
 ---
-title: "Gottesdienstablauf"
+title: "Gottesdienstablauf in B1 Admin"
+sidebar_label: "Gottesdienstablauf"
+description: "Gottesdienstablauf in B1 Admin einrichten: Lieder, Lektionen und eigene Punkte hinzufügen, in Abschnitte gliedern und den Ablaufplan drucken."
 ---
 
 # Gottesdienstablauf

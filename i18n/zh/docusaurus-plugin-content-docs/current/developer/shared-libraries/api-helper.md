@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "@churchapps/apihelper 包的参考文档。Packages 工作区中所有 ChurchApps Express API 都使用该包，内容涵盖本地构建、通过 Yarn portal 测试以及 changeset 发布。"
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **Node.js** 和 **Git** ——请参阅 [前提条件](../setup/prerequisites)
+- 安装 **Node.js** 和 **Git** ——请参阅 [前提条件](../setup/prerequisites.md)
 - 熟悉 [Packages 工作区](./index.md) 的设置和发布流程
-- 此包依赖于 [`@churchapps/helpers`](./helpers)（作为对等依赖）并重新导出它
+- 此包依赖于 [`@churchapps/helpers`](./helpers.md)（作为对等依赖）并重新导出它
 
 </div>
 
@@ -65,6 +66,6 @@ title: "ApiHelper"
 
 ## 相关文章
 
-- **[Helpers](./helpers)** ——此包依赖的基础工具包
-- **[模块结构](../api/module-structure)** ——控制器和认证中间件在 API 模块中的使用方式
-- **[本地 API 设置](../api/local-setup)** ——为本地开发设置 API
+- **[Helpers](./helpers.md)** ——此包依赖的基础工具包
+- **[模块结构](../api/module-structure.md)** ——控制器和认证中间件在 API 模块中的使用方式
+- **[本地 API 设置](../api/local-setup.md)** ——为本地开发设置 API

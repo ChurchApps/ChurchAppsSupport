@@ -1,5 +1,6 @@
 ---
 title: "Servidor MCP"
+description: "Configure o acesso MCP à API do B1 para clientes de IA como Claude Code, Cursor ou Claude Desktop, usando chaves de API ou login OAuth."
 ---
 
 # Servidor MCP
@@ -13,7 +14,7 @@ A API do B1 disponibiliza um servidor [MCP (Model Context Protocol)](https://mod
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Uma [chave de API do B1](./api-keys) (`cak_…`) com os escopos que o cliente deve ter, ou um cliente MCP que consiga fazer login com OAuth (consulte [Descoberta OAuth](#oauth-discovery))
+- Uma [chave de API do B1](./api-keys.md) (`cak_…`) com os escopos que o cliente deve ter, ou um cliente MCP que consiga fazer login com OAuth (consulte [Descoberta OAuth](#oauth-discovery))
 - Um host da API do B1 acessível -- `https://api.churchapps.org` para igrejas hospedadas, ou a sua própria implantação
 - Um cliente MCP. Consulte [Claude](/docs/b1-admin/integrations/claude) e [ChatGPT](/docs/b1-admin/integrations/chatgpt) para a configuração do usuário final
 
@@ -119,7 +120,7 @@ O resultado da ferramenta é marcado com `isError: true` para qualquer resposta 
 
 ### `describe_page_builder`
 
-A única ferramenta não genérica: um guia estático e autocontido para criar páginas de sites pelos endpoints `/content/*` -- o modelo de dados Página → Seção → Elemento, o fluxo de criação, cada `elementType` com o formato de `answersJSON`, configurações no nível da seção, como os divisores de forma `dividerTop`/`dividerBottom`, e um exemplo completo e trabalhado. Não recebe entrada e espelha o catálogo de elementos mantido no editor do B1Admin (consulte [Arquitetura do construtor de sites](../architecture/website-builder)). Espera-se que os agentes a chamem uma vez antes de criar ou editar conteúdo de página e, depois, atuem por meio de `api_call`.
+A única ferramenta não genérica: um guia estático e autocontido para criar páginas de sites pelos endpoints `/content/*` -- o modelo de dados Página → Seção → Elemento, o fluxo de criação, cada `elementType` com o formato de `answersJSON`, configurações no nível da seção, como os divisores de forma `dividerTop`/`dividerBottom`, e um exemplo completo e trabalhado. Não recebe entrada e espelha o catálogo de elementos mantido no editor do B1Admin (consulte [Arquitetura do construtor de sites](../architecture/website-builder.md)). Espera-se que os agentes a chamem uma vez antes de criar ou editar conteúdo de página e, depois, atuem por meio de `api_call`.
 
 ## Modelo de autenticação
 
@@ -153,11 +154,11 @@ Não há limite de taxa no nível da aplicação em `/mcp`. A limitação fica a
 
 ## Descoberta OAuth {#oauth-discovery}
 
-O servidor MCP anuncia metadados OAuth 2.1, para que clientes que se conectam apenas a servidores descobertos via OAuth -- em especial a interface "Add custom connector" do Claude.ai -- possam autenticar um usuário sem uma chave colada manualmente. `/mcp` é o recurso protegido, o [provedor OAuth](./connected-apps) em `/membership/oauth` é o servidor de autorização, e a página `/oauth` do B1Admin é a tela de consentimento.
+O servidor MCP anuncia metadados OAuth 2.1, para que clientes que se conectam apenas a servidores descobertos via OAuth -- em especial a interface "Add custom connector" do Claude.ai -- possam autenticar um usuário sem uma chave colada manualmente. `/mcp` é o recurso protegido, o [provedor OAuth](./connected-apps.md) em `/membership/oauth` é o servidor de autorização, e a página `/oauth` do B1Admin é a tela de consentimento.
 
 | Endpoint | Finalidade |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (também `/.well-known/oauth-protected-resource/mcp`) | Metadados do recurso protegido (RFC 9728): `resource` é `<api>/mcp`, `authorization_servers` é a raiz da API, `scopes_supported` lista todos os [escopos de chave de API](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (também `/.well-known/oauth-protected-resource/mcp`) | Metadados do recurso protegido (RFC 9728): `resource` é `<api>/mcp`, `authorization_servers` é a raiz da API, `scopes_supported` lista todos os [escopos de chave de API](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metadados do servidor de autorização (RFC 8414): `authorization_endpoint` é a página `/oauth` do B1Admin, `token_endpoint` é `/membership/oauth/token` e `registration_endpoint` é `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Registro dinâmico de clientes (RFC 7591) |
 
@@ -209,8 +210,8 @@ O servidor MCP fica em `src/modules/mcp/` no repositório Api. Arquivos relevant
 
 ## Relacionados
 
-- [Chaves de API](./api-keys)
-- [Webhooks](./webhooks)
-- [Aplicativos conectados (OAuth)](./connected-apps)
+- [Chaves de API](./api-keys.md)
+- [Webhooks](./webhooks.md)
+- [Aplicativos conectados (OAuth)](./connected-apps.md)
 - [Claude — configuração para o usuário final](/docs/b1-admin/integrations/claude)
 - [ChatGPT — configuração para o usuário final](/docs/b1-admin/integrations/chatgpt)

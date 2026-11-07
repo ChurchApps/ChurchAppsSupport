@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting on Railway"
+description: "Implementați o instanță privată ChurchApps pe Railway în aproximativ 15 minute, apoi configurați e-mailul, domeniile personalizate, rutarea multi-biserică, donațiile și stocarea fișierelor pentru B1 Admin și B1App."
 ---
 
 # Self-Hosting on Railway
@@ -195,7 +196,7 @@ Acestea activează funcționalități specifice și pot fi adăugate oricând ma
 | `VIMEO_TOKEN` | Suport pentru predici de pe Vimeo |
 | `API_BIBLE_KEY` | Căutări de versete biblice în lecții și conținut |
 | `YOUVERSION_API_KEY` | Integrare cu YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notificări push în browser ([generează o pereche de chei VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notificări push în browser ([generează o pereche de chei VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Sincronizare opțională cu CRM pentru înregistrările noi |
 
 ## Actualizare
@@ -234,9 +235,9 @@ Dacă întâmpini ceva ce nu este în această listă, deschide o problemă la [
 
 ## Articole similare
 
-- **[Self-Hosting with Docker](./docker)** — Aceeași stivă pe propriul hardware sau VPS
-- **[Initial Setup](../../getting-started/initial-setup)** — Primii pași după ce biserica ta este creată
-- **[Website Initial Setup](../../b1-admin/website/initial-setup)** — Configurează site-ul public al bisericii tale
-- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** — Conectează Stripe sau PayPal
-- **[Local API Setup](../api/local-setup)** — Rularea stivei local, pentru dezvoltare
-- **[API Deployment (AWS)](./apis)** — Cum este implementat SaaS-ul oficial ChurchApps
+- **[Self-Hosting with Docker](./docker.md)** — Aceeași stivă pe propriul hardware sau VPS
+- **[Initial Setup](../../getting-started/initial-setup.md)** — Primii pași după ce biserica ta este creată
+- **[Website Initial Setup](../../b1-admin/website/initial-setup.md)** — Configurează site-ul public al bisericii tale
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup.md)** — Conectează Stripe sau PayPal
+- **[Local API Setup](../api/local-setup.md)** — Rularea stivei local, pentru dezvoltare
+- **[API Deployment (AWS)](./apis.md)** — Cum este implementat SaaS-ul oficial ChurchApps

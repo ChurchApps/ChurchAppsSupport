@@ -1,5 +1,6 @@
 ---
 title: "planer oversigt"
+description: "Få overblik over frivilliges opgaver på tværs af mange gudstjenestedatoer i B1 Admin, find ubesatte positioner, og udfyld eller mail dit team fra ét gitter."
 ---
 
 # planer oversigt

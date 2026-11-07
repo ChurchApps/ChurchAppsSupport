@@ -1,5 +1,6 @@
 ---
 title: "Štýly navigácie"
+description: "Prispôsobte farby pevných a priehľadných navigačných líšt webu v B1 Admin vrátane stavov odkazov, prechodu myšou a aktívneho stavu pre váš zborový web."
 ---
 
 # Štýly navigácie

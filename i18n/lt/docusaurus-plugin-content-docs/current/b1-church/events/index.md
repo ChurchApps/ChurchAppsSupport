@@ -1,5 +1,7 @@
 ---
-title: "Događaji"
+title: "Bažnyčios renginiai B1.church: naršymas ir registracija"
+sidebar_label: "Događaji"
+description: "Naršykite artėjančius bažnyčios renginius B1.church, tikrinkite registracijos būseną ir užsiregistruokite ar pridėkite renginius prie kalendoriaus."
 ---
 
 # Događaji
@@ -43,7 +45,7 @@ Ako je događaj popunjen, i dalje se možda možete pridružiti **listi čekanja
 
 ## Saznajte više
 
-- [Prijava na događaje](./registering) -- Vodič korak po korak za prijavu na događaj
-- [Moje prijave](./my-registrations) -- Pregled vaših prijava, plaćanje dugovanja, uređivanje ili otkazivanje
-- [Traženje događaja i prostorija](./requesting-events) -- Zatražite događaj s prostorijama i resursima koji su mu potrebni
-- [Samoprijava](../checkin/self-checkin) -- Prijavite se po dolasku na događaj
+- [Prijava na događaje](./registering.md) -- Vodič korak po korak za prijavu na događaj
+- [Moje prijave](./my-registrations.md) -- Pregled vaših prijava, plaćanje dugovanja, uređivanje ili otkazivanje
+- [Traženje događaja i prostorija](./requesting-events.md) -- Zatražite događaj s prostorijama i resursima koji su mu potrebni
+- [Samoprijava](../checkin/self-checkin.md) -- Prijavite se po dolasku na događaj

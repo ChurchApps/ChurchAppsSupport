@@ -1,5 +1,6 @@
 ---
 title: "Indholds slutpunkter"
+description: "Endpoint-reference for ChurchApps Content API: websidesider, blogindlæg, omdirigeringer, prædikener, begivenheder, filer, bibeloppslag og sange i B1 Admin."
 ---
 
 # Indholds slutpunkter
@@ -28,6 +29,6 @@ Basesti: `/content/pages`
 
 ## Relaterede sider
 
-- [Medlemskab slutpunkter](./membership) -- Mennesker, kirker, grupper, roller og tilladelser
-- [Godkendelse & Tilladelser](./authentication) -- Login flow, JWT, tilladels model
-- [Modul struktur](../module-structure) -- Kode organiserings mønstre
+- [Medlemskab slutpunkter](./membership.md) -- Mennesker, kirker, grupper, roller og tilladelser
+- [Godkendelse & Tilladelser](./authentication.md) -- Login flow, JWT, tilladels model
+- [Modul struktur](../module-structure.md) -- Kode organiserings mønstre

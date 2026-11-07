@@ -1,5 +1,6 @@
 ---
 title: "Ricevute di donazione"
+description: "Crea in B1 Admin gli attestati annuali di donazione per ogni donatore, poi scaricali in CSV o stampali per l'invio con gli importi deducibili."
 ---
 
 # Ricevute di donazione

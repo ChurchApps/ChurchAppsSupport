@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Aan de slag met de FreePlay TV-app"
+sidebar_label: "Getting Started"
+description: "Stel FreePlay in op Android TV, Fire TV of Apple TV: installeer de app, open hem voor het eerst en leer de afstandsbediening en de zijbalk kennen."
 ---
 
 # Getting Started with FreePlay
@@ -52,5 +54,5 @@ De zijbalk wordt ingesteld op een smalle strip pictogrammen wanneer u inhoud bla
 
 ## Wat Volgt
 
-- **[Choosing a Pairing Mode](./pairing-modes)** - Leer over de verschillende manieren om uw TV aan te sluiten
-- **[Content Providers](../content-providers/)** - Verbind met Lessons.church, Bible Project en meer
+- **[Choosing a Pairing Mode](./pairing-modes.md)** - Leer over de verschillende manieren om uw TV aan te sluiten
+- **[Content Providers](../content-providers/index.md)** - Verbind met Lessons.church, Bible Project en meer

@@ -1,5 +1,6 @@
 ---
 title: "ऑडिट लॉग और पूर्ववत करने योग्य बैच"
+description: "API ऑडिट लॉग का विवरण, जो सभी मॉड्यूलों में हर उपयोगकर्ता परिवर्तन दर्ज करता है, और B1 Admin में आयात बैच पंक्ति-दर-पंक्ति कैसे पूर्ववत किए जा सकते हैं।"
 ---
 
 # ऑडिट लॉग और पूर्ववत करने योग्य बैच
@@ -155,6 +156,6 @@ Result payload है `{ restored, skippedConflicts: [...], failed: [...], statu
 
 ## संबंधित पृष्ठ
 
-- [मॉड्यूल संरचना](../api/module-structure): एक गैर-membership नियंत्रक `RepoManager` के माध्यम से membership repos तक कैसे पहुँचता है
-- [Giving (दान)](./giving): donation लेखन पथ, जो गुमनाम होने पर भी `sensitive` के रूप में ऑडिट होते हैं
-- [Membership एंडपॉइंट](../api/endpoints/membership): REST सतह जो `X-Batch-Id` ले जाती है और `/auditlogs` तथा `/batches` उजागर करती है
+- [मॉड्यूल संरचना](../api/module-structure.md): एक गैर-membership नियंत्रक `RepoManager` के माध्यम से membership repos तक कैसे पहुँचता है
+- [Giving (दान)](./giving.md): donation लेखन पथ, जो गुमनाम होने पर भी `sensitive` के रूप में ऑडिट होते हैं
+- [Membership एंडपॉइंट](../api/endpoints/membership.md): REST सतह जो `X-Batch-Id` ले जाती है और `/auditlogs` तथा `/batches` उजागर करती है

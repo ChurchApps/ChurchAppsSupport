@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea fondurilor"
+description: "Creați și organizați fonduri în B1 Admin, setați deductibilitatea fiscală și vizibilitatea pentru donatori, și revizuiți totalurile și istoricul donațiilor."
 ---
 
 # Gestionarea fondurilor

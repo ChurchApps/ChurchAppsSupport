@@ -1,5 +1,7 @@
 ---
-title: "पाठ (बंद किया गया)"
+title: "B1 Mobile में पाठ स्क्रीन (हटाई गई)"
+sidebar_label: "पाठ (बंद किया गया)"
+description: "पाठ (बंद) पृष्ठ: B1 Mobile में ऐप के भीतर पाठ स्क्रीन क्यों हटाई गई, और पाठ्यक्रम अब कहाँ मिलेगा (FreePlay या Lessons.church)।"
 ---
 
 # पाठ (बंद किया गया)
@@ -19,7 +21,7 @@ title: "पाठ (बंद किया गया)"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- [B1 Mobile इंस्टॉल करें](../getting-started/installing) और अपने खाते में [लॉग इन करें](../getting-started/logging-in)
+- [B1 Mobile इंस्टॉल करें](../getting-started/installing.md) और अपने खाते में [लॉग इन करें](../getting-started/logging-in.md)
 - आपके चर्च के लिए Lessons.church के माध्यम से पाठ्यक्रम सेट किया गया होना चाहिए
 
 </div>
@@ -54,5 +56,5 @@ Lessons.church एक अलग ChurchApps प्लेटफ़ॉर्म ह
 
 - [FreePlay अवलोकन](/docs/freeplay/) -- पाठ चलाने के लिए बदला गया टीवी ऐप
 - [Lessons.church](/docs/lessons-church/) -- पाठ्यक्रम सामग्री को सीधे ब्राउज़ और प्रबंधित करें
-- [बाइबल](./bible) -- अपने पाठों के साथ पवित्र शास्त्र पढ़ें
-- [प्रवचन](./sermons) -- अपने अध्ययन से जुड़े प्रवचन देखें
+- [बाइबल](./bible.md) -- अपने पाठों के साथ पवित्र शास्त्र पढ़ें
+- [प्रवचन](./sermons.md) -- अपने अध्ययन से जुड़े प्रवचन देखें

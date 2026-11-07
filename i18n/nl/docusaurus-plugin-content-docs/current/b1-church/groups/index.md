@@ -1,5 +1,7 @@
 ---
-title: "Groepen"
+title: "Kerkgroepen in het ledenportaal van B1.church"
+sidebar_label: "Groepen"
+description: "Blader door en word lid van kerkgroepen op B1.church. Bekijk vergaderingen, evenementen, leden en materialen en chat met je groep."
 ---
 
 # Groepen

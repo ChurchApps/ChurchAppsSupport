@@ -1,5 +1,6 @@
 ---
 title: "Instalarea aplicației"
+description: "Instalați aplicația B1 Mobile din App Store sau Google Play, dar rețineți că este depreciată, iar PWA B1.church este acum recomandată."
 ---
 
 # Instalarea aplicației
@@ -25,7 +26,7 @@ Puteți căuta și „B1 Mobile” dacă prima căutare nu returnează rezultate
 
 ## După instalare
 
-Odată ce aplicația este instalată, deschideți-o de pe ecranul principal. Veți vedea ecranul de căutare a bisericilor, unde puteți găsi și selecta biserica dumneavoastră. Dacă aveți deja un cont ChurchApps, puteți [să vă autentificați](./logging-in) imediat. Dacă nu, puteți crea un cont din ecranul de autentificare.
+Odată ce aplicația este instalată, deschideți-o de pe ecranul principal. Veți vedea ecranul de căutare a bisericilor, unde puteți găsi și selecta biserica dumneavoastră. Dacă aveți deja un cont ChurchApps, puteți [să vă autentificați](./logging-in.md) imediat. Dacă nu, puteți crea un cont din ecranul de autentificare.
 
 Aplicația va cere permisiunea de a trimite notificări push. Vă recomandăm să permiteți notificările, pentru a primi actualizări de la biserica și grupurile dumneavoastră.
 

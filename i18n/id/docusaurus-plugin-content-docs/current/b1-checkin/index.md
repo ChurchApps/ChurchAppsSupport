@@ -1,5 +1,6 @@
 ---
 title: "Ikhtisar B1 Church Checkin"
+description: "Atur aplikasi kiosk B1 Church Checkin di iPad atau tablet Android agar keluarga bisa check-in mandiri, menugaskan anak ke grup, dan mencetak label."
 ---
 
 # Ikhtisar B1 Church Checkin
@@ -24,7 +25,7 @@ Letakkan iPad atau tablet Android di lobi atau area sambutan. Anggota jemaat men
 - **Tinjauan keluarga** -- Lihat semua anggota keluarga beserta foto dan penugasan kelompok saat ini sekilas.
 - **Penugasan kelompok** -- Tugaskan setiap anggota keluarga ke kelas atau kelompok yang tepat untuk waktu layanan yang dipilih.
 - **Check-in tamu** -- Tambahkan tamu ke keluarga Anda di tempat dengan nama depan dan nama belakang.
-- **Pendaftaran tamu melalui QR** -- Tampilkan kode QR yang dapat dipindai pengunjung untuk [mendaftarkan diri mereka sendiri](../b1-church/checkin/guest-registration) di ponsel mereka sebelum check-in, atau biarkan mereka mengetuk **Daftar di sini** untuk mengisi formulir yang sama di kiosk.
+- **Pendaftaran tamu melalui QR** -- Tampilkan kode QR yang dapat dipindai pengunjung untuk [mendaftarkan diri mereka sendiri](../b1-church/checkin/guest-registration.md) di ponsel mereka sebelum check-in, atau biarkan mereka mengetuk **Daftar di sini** untuk mengisi formulir yang sama di kiosk.
 - **Pencetakan label** -- Cetak label nama untuk anak-anak dan slip penjemputan orang tua dengan kode keamanan unik.
 - **Dukungan printer jaringan** -- Temukan dan konfigurasikan printer jaringan langsung dari aplikasi.
 - **Masuk otomatis** -- Setelah login pertama, aplikasi mengingat kredensial Anda dan langsung menuju layar layanan pada setiap peluncuran berikutnya.
@@ -33,8 +34,8 @@ Letakkan iPad atau tablet Android di lobi atau area sambutan. Anggota jemaat men
 
 ## Bagian Dokumentasi
 
-- **[Memulai](./getting-started/)** -- Memasang aplikasi, masuk, dan menyiapkan printer Anda.
-- **[Alur Check-In](./check-in/)** -- Alur check-in lengkap dari memilih layanan hingga mencetak label.
+- **[Memulai](./getting-started/index.md)** -- Memasang aplikasi, masuk, dan menyiapkan printer Anda.
+- **[Alur Check-In](./check-in/index.md)** -- Alur check-in lengkap dari memilih layanan hingga mencetak label.
 
 :::tip
 B1 Church Checkin paling baik digunakan pada tablet 10 inci (iPad atau Android) yang dipasang dalam orientasi lanskap di tempat keluarga dapat dengan mudah menjangkaunya. Dapatkan aplikasinya dari [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), atau [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

@@ -1,5 +1,7 @@
 ---
-title: "Gemeenschap"
+title: "Gemeenschapsfuncties in de B1 Mobile-app"
+sidebar_label: "Gemeenschap"
+description: "Gebruik de B1 Mobile-app om de ledengids te doorzoeken, privéberichten te sturen naar andere leden en pushmeldingen van je kerk te bekijken."
 ---
 
 # Gemeenschap
@@ -12,13 +14,13 @@ De **Gemeenschap** functies in B1 Mobile helpen je verbonden te blijven met je k
 
 ## Wat je zult vinden
 
-- **[Lidmapenboek](./member-directory)** -- Blader en zoek je kerk lidmapenboek. Zoek personen op naam en tik op een lid om hun profiel met contactgegevens en gezinsverbindingen te bekijken.
-- **[Messaging](./messaging)** -- Stuur en ontvang privéberichten met andere kerkleden. Start nieuwe gesprekken of pickk op waar je was gebleven met bestaande.
-- **[Meldingen](./notifications)** -- Blijf op de hoogte met push-meldingen over groepsactiviteit, berichten, dienststoewijzingen en andere belangrijke updates van je kerk.
+- **[Lidmapenboek](./member-directory.md)** -- Blader en zoek je kerk lidmapenboek. Zoek personen op naam en tik op een lid om hun profiel met contactgegevens en gezinsverbindingen te bekijken.
+- **[Messaging](./messaging.md)** -- Stuur en ontvang privéberichten met andere kerkleden. Start nieuwe gesprekken of pickk op waar je was gebleven met bestaande.
+- **[Meldingen](./notifications.md)** -- Blijf op de hoogte met push-meldingen over groepsactiviteit, berichten, dienststoewijzingen en andere belangrijke updates van je kerk.
 
 ## Aan de Slag
 
-Je moet zijn ingelogd om gemeenschapsfuncties te openen. Als je niet bent aangemeld, word je gevraagd [in te loggen](../getting-started/logging-in) wanneer je probeert een van deze gedeelten te gebruiken.
+Je moet zijn ingelogd om gemeenschapsfuncties te openen. Als je niet bent aangemeld, word je gevraagd [in te loggen](../getting-started/logging-in.md) wanneer je probeert een van deze gedeelten te gebruiken.
 
 Het lidmapenboek, berichten en meldingen zijn elk toegankelijk vanuit de navigatie van de app. Samen bieden ze je een eenvoudige manier om personen te vinden, privé te communiceren en op de hoogte te blijven met wat er in je kerk gebeurt.
 

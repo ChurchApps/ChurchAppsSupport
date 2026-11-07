@@ -1,5 +1,6 @@
 ---
 title: "forbinde FreePlay til B1 Admin"
+description: "Forbind en klasseværelses-TV med FreePlay til dine planlagte lektioner i B1 Admin, så lærere kan afspille dem på skærmen under timen."
 ---
 
 # forbinde et klasseværelse TV til dine B1 Admin lektioner

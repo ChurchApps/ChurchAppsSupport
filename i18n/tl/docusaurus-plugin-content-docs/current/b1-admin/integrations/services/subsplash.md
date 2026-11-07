@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Ikonekta ang donasyon, bagong tao, at form response ng Subsplash sa B1 gamit ang Zapier para awtomatikong mapunta sa B1 Admin ang handog at profile."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ I-on ang Zap. Ang mga susunod na donasyon sa Subsplash ay papasok sa **B1Admin �
 
 ## Tingnan Din
 
-- [Donorbox](./donorbox) — parehong hugis ng recipe, iba't ibang donation platform
-- [Zapier (overview)](../zapier) — panig ng B1 ng bawat recipe ng Zapier
+- [Donorbox](./donorbox.md) — parehong hugis ng recipe, iba't ibang donation platform
+- [Zapier (overview)](../zapier.md) — panig ng B1 ng bawat recipe ng Zapier
 - [Gabay sa Zapier integration ng Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (mga docs ng Subsplash)

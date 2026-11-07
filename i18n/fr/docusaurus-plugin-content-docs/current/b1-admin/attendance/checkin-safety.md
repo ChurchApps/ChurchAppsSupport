@@ -1,5 +1,6 @@
 ---
 title: "Sécurité du Pointage"
+description: "Configurez les contrôles de sécurité des enfants dans B1 Admin : capacité des salles, ratios de bénévoles, listes de personnes autorisées à récupérer les enfants et SMS d'appel aux parents."
 ---
 
 # Sécurité du Pointage
@@ -15,7 +16,7 @@ B1 comprend un ensemble de contrôles de sécurité pour enfants lors du pointag
 
 - Configurez votre [structure de participation](setup.md) et vos [bornes de pointage](check-in.md)
 - Les salles sont des [groupes](../groups/creating-groups.md) liés aux heures de service — les paramètres de sécurité ci-dessous se trouvent sur le groupe
-- L'appel aux parents et la diffusion d'urgence nécessitent un fournisseur de textos connecté ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), ou Mutual Ministry)
+- L'appel aux parents et la diffusion d'urgence nécessitent un fournisseur de textos connecté ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), ou Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Ces deux fonctions envoient des messages texte via le fournisseur de textos conn
 
 Les personnes qui se sont désinscrites des textos, ou qui n'ont pas de numéro mobile en dossier, sont automatiquement ignorées — la borne rapporte combien de messages ont été envoyés et combien ont été ignorés.
 
-Voir la présentation du côté de la borne dans [Sortie et Sécurité des Enfants](../../b1-checkin/check-in/checking-out).
+Voir la présentation du côté de la borne dans [Sortie et Sécurité des Enfants](../../b1-checkin/check-in/checking-out.md).
 
 ## Articles Connexes
 
 - [Pointage](check-in.md) — configuration et matériel de la borne
-- [Sortie et Sécurité des Enfants](../../b1-checkin/check-in/checking-out) — la sortie de la borne, la vérification de récupération et les flux d'appel
+- [Sortie et Sécurité des Enfants](../../b1-checkin/check-in/checking-out.md) — la sortie de la borne, la vérification de récupération et les flux d'appel
 - [Création de Groupes](../groups/creating-groups.md) — où vivent les paramètres de salle
 - [Configuration de la Participation](setup.md) — services, heures de service et affectations de salles
 - [Âge Minimum pour les Messages Privés](../settings/mobile-app.md#member-directory--messaging-settings) — bloque les nouvelles conversations de messages privés avec les enfants tout en les gardant dans le répertoire

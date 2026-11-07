@@ -1,5 +1,7 @@
 ---
-title: "Suunnitelmien katselu"
+title: "Palvelusuunnitelmasi B1.church-jäsenportaalissa"
+sidebar_label: "Suunnitelmien katselu"
+description: "Tarkista palvelusuunnitelmiisi määrätyt tehtävät B1.churchissa, hyväksy tai hylkää pyyntöjä, aseta estopäivät ja tarkastele aiempaa palveluhistoriaasi."
 ---
 
 # Suunnitelmien katselu

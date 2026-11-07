@@ -1,5 +1,6 @@
 ---
 title: "Aggiungere persone"
+description: "Aggiungi una persona al database della chiesa in B1 Admin, compila i dettagli e collega i familiari in nuclei per check-in e report."
 ---
 
 # Aggiungere persone

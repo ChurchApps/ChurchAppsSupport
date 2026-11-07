@@ -1,5 +1,6 @@
 ---
 title: "Check-In Safety"
+description: "Configure child-safety controls in B1 Admin: room capacity, volunteer ratios, trusted pickup lists, and page-a-parent texts for check-in."
 ---
 
 # Check-In Safety
@@ -15,7 +16,7 @@ B1 includes a set of child-safety controls for check-in: room capacity limits an
 
 - Set up your [attendance structure](setup.md) and [check-in kiosks](check-in.md)
 - Rooms are [groups](../groups/creating-groups.md) linked to service times — the safety settings below live on the group
-- Page-a-parent and emergency broadcast require a connected texting provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), or Mutual Ministry)
+- Page-a-parent and emergency broadcast require a connected texting provider ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), or Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Both features send text messages through your church's connected texting provide
 
 People who have opted out of texts, or who have no mobile number on file, are skipped automatically — the kiosk reports how many messages were sent and how many were skipped.
 
-See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out).
+See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md).
 
 ## Related Articles
 
 - [Check-In](check-in.md) — kiosk setup and hardware
-- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out) — the kiosk check-out, pickup verification, and paging flows
+- [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md) — the kiosk check-out, pickup verification, and paging flows
 - [Creating Groups](../groups/creating-groups.md) — where room settings live
 - [Attendance Setup](setup.md) — services, service times, and room assignments
 - [Minimum Age for Private Messages](../settings/mobile-app.md#member-directory--messaging-settings) — blocks new private-message conversations with children while keeping them in the directory

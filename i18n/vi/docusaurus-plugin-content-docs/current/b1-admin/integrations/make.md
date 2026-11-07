@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Kết nối B1 Admin với Make để tự động hóa quy trình: tạo khóa API, thiết lập trình kích hoạt và hành động B1.church, và khắc phục lỗi thường gặp."
 ---
 
 # Make
@@ -110,6 +111,6 @@ Trigger chỉ kích hoạt với các sự kiện xảy ra **khi kịch bản đ
 
 ## Xem thêm
 
-- [Zapier](./zapier): cùng mô hình với giao diện đơn giản hơn và danh mục ứng dụng lớn hơn
-- [Slack & Discord](./slack-discord): thông báo chat tích hợp sẵn mà không cần Make
+- [Zapier](./zapier.md): cùng mô hình với giao diện đơn giản hơn và danh mục ứng dụng lớn hơn
+- [Slack & Discord](./slack-discord.md): thông báo chat tích hợp sẵn mà không cần Make
 - [Webhooks (tài liệu cho nhà phát triển)](/docs/developer/api/webhooks)

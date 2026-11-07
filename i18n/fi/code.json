@@ -386,13 +386,13 @@
     "message": "B1 - Mobiili"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobiilisovellus kirkon jäsenille iOS:ssä ja Android:ssa."
+    "message": "Vanhempi jäsensovellus iOS- ja Android-laitteille, jonka on nyt korvannut B1.church-verkkosovellus."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 - Check-In"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Itsepalvelumaisen check-in-sovellus Android-tableteille."
+    "message": "Itsepalvelullinen sisäänkirjauspääte iPad- ja Android-tableteille."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Suunniteltu erityisesti kirkon työnkuluille - ei yleinen työkalu, joka on sovitettu palveluihin."
   },
   "homepage.title": {
-    "message": "Koti"
+    "message": "Ohje B1.church-, Lessons.church- ja FreePlay-palveluihin"
   },
   "homepage.description": {
-    "message": "ChurchAppsin tukidokumentaatio - ilmaiset ja avoimen lähdekoodin työkalut kirkon hallintoon."
+    "message": "Oppaita ja dokumentaatiota ChurchAppsin ilmaisiin, avoimen lähdekoodin kirkko-ohjelmistoihin: B1.church-kirkonhallinta, sisäänkirjaus, lahjoitukset ja verkkosivut, Lessons.church-opetussuunnitelma sekä FreePlay."
   },
   "homepage.products.heading": {
     "message": "Valitse Tuotteesi"

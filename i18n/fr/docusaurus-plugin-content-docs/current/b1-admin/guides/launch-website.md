@@ -1,5 +1,6 @@
 ---
 title: "Guide : Lancer votre site Web d'église"
+description: "Configurez le site web d'une église dans B1 Admin : créez votre page d'accueil, harmonisez les couleurs et le logo, ajoutez les pages principales, reliez un domaine personnalisé et ajoutez les formulaires de dons."
 ---
 
 # Lancer votre site Web d'église

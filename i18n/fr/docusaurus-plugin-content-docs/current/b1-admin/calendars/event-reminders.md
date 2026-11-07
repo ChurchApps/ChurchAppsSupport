@@ -1,21 +1,22 @@
 ---
 title: "Rappels d'événements"
+description: "Configurez les rappels d'événements dans B1 Admin par notification push, courriel et SMS, en choisissant le moment, les destinataires et un message personnalisé pour prévenir les personnes à temps."
 ---
 
 # Rappels d'événements
 
 <div class="article-intro">
 
-Les rappels d'événements informent automatiquement les bonnes personnes avant qu'un événement n'ait lieu -- par exemple, « Ne le manquez pas ! L'atelier sur la santé commence demain à 9 h. » Vous configurez un rappel une seule fois sur l'événement, et B1 l'envoie à l'heure prévue par notification push, par courriel et, si votre église a configuré la messagerie texte, par SMS. Les membres peuvent contrôler les rappels qu'ils reçoivent depuis leurs propres [Préférences de notification](../../b1-church/getting-started/notification-preferences).
+Les rappels d'événements informent automatiquement les bonnes personnes avant qu'un événement n'ait lieu -- par exemple, « Ne le manquez pas ! L'atelier sur la santé commence demain à 9 h. » Vous configurez un rappel une seule fois sur l'événement, et B1 l'envoie à l'heure prévue par notification push, par courriel et, si votre église a configuré la messagerie texte, par SMS. Les membres peuvent contrôler les rappels qu'ils reçoivent depuis leurs propres [Préférences de notification](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Créez l'événement pour lequel vous souhaitez envoyer un rappel (voir [Créer des calendriers](creating-calendars))
-- Pour joindre les personnes inscrites, [activez l'inscription](creating-calendars) pour l'événement
-- Pour joindre un groupe entier, assurez-vous que l'événement appartient à un [groupe](../groups/creating-groups) comportant des membres
+- Créez l'événement pour lequel vous souhaitez envoyer un rappel (voir [Créer des calendriers](./creating-calendars.md))
+- Pour joindre les personnes inscrites, [activez l'inscription](./creating-calendars.md) pour l'événement
+- Pour joindre un groupe entier, assurez-vous que l'événement appartient à un [groupe](../groups/creating-groups.md) comportant des membres
 
 </div>
 
@@ -57,21 +58,21 @@ Les invités ajoutés uniquement par leur nom (sans fiche personne liée) ne peu
 - Les événements récurrents sont gérés automatiquement : chaque occurrence à venir reçoit son propre rappel.
 
 :::tip
-Les rappels sont envoyés **par notification push en premier, le courriel servant de solution de secours**. Si un membre a activé les notifications push, il recevra une notification push ; sinon, il recevra un courriel à la place. Les membres choisissent les canaux qu'ils souhaitent pour chaque type de notification dans leurs [Préférences de notification](../../b1-church/getting-started/notification-preferences).
+Les rappels sont envoyés **par notification push en premier, le courriel servant de solution de secours**. Si un membre a activé les notifications push, il recevra une notification push ; sinon, il recevra un courriel à la place. Les membres choisissent les canaux qu'ils souhaitent pour chaque type de notification dans leurs [Préférences de notification](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Rappels par SMS
 
 Le canal **SMS** n'apparaît que lorsque votre église a connecté un fournisseur de messagerie texte. Les SMS passent par le fournisseur de messagerie texte de votre église, et chaque SMS peut coûter de l'argent à votre église. Ils sont envoyés en plus de tout rappel push ou par courriel, et uniquement aux personnes qui :
 
-- ont activé les **Messages SMS** dans leurs [Préférences de notification](../../b1-church/getting-started/notification-preferences), et
+- ont activé les **Messages SMS** dans leurs [Préférences de notification](../../b1-church/getting-started/notification-preferences.md), et
 - ont un numéro de téléphone mobile sur leur profil.
 
 Chaque SMS commence par le nom de votre église, tient en un seul message et se termine par « Répondez STOP pour vous désabonner ». Toute personne qui répond STOP cesse de recevoir des SMS de votre église. Pour que les réponses STOP parviennent à B1, collez l'**URL du webhook des messages entrants (STOP)** depuis vos [paramètres de messagerie texte](../settings/church-settings.md#texting) dans le webhook de messages entrants de votre fournisseur.
 
 ## Ce que les membres peuvent contrôler
 
-Les rappels respectent toujours les [Préférences de notification](../../b1-church/getting-started/notification-preferences) de chaque membre. Un membre peut :
+Les rappels respectent toujours les [Préférences de notification](../../b1-church/getting-started/notification-preferences.md) de chaque membre. Un membre peut :
 
 - désactiver les **Rappels d'événements** pour le push, le courriel ou le SMS tout en gardant les autres notifications activées ;
 - activer ou désactiver les rappels par SMS avec **Messages SMS** ;
@@ -81,10 +82,10 @@ Vous ne pouvez pas passer outre le choix d'un membre de se désabonner des rappe
 
 ## Rappels pour le service
 
-Les bénévoles planifiés sur un plan reçoivent un **rappel de service** distinct, avec les détails du plan et, s'ils n'ont pas encore répondu, des boutons **Accepter / Refuser** directement dans le courriel. Ces rappels sont configurés sur le type de plan plutôt que sur un événement du calendrier, et peuvent aussi être envoyés par SMS -- consultez [Rappels aux bénévoles](../serving/plans#volunteer-reminders) et [Bénévoles du dimanche](../guides/sunday-volunteers) pour savoir comment fonctionnent la planification des bénévoles et leurs rappels.
+Les bénévoles planifiés sur un plan reçoivent un **rappel de service** distinct, avec les détails du plan et, s'ils n'ont pas encore répondu, des boutons **Accepter / Refuser** directement dans le courriel. Ces rappels sont configurés sur le type de plan plutôt que sur un événement du calendrier, et peuvent aussi être envoyés par SMS -- consultez [Rappels aux bénévoles](../serving/plans.md#volunteer-reminders) et [Bénévoles du dimanche](../guides/sunday-volunteers.md) pour savoir comment fonctionnent la planification des bénévoles et leurs rappels.
 
 ## Et ensuite
 
-- [Préférences de notification](../../b1-church/getting-started/notification-preferences) -- Ce que les membres peuvent contrôler
-- [Guide d'inscription aux événements](../guides/event-registration) -- Configurer l'inscription pour que les rappels puissent atteindre les participants
-- [Créer des calendriers](creating-calendars) -- Retour à la configuration des calendriers
+- [Préférences de notification](../../b1-church/getting-started/notification-preferences.md) -- Ce que les membres peuvent contrôler
+- [Guide d'inscription aux événements](../guides/event-registration.md) -- Configurer l'inscription pour que les rappels puissent atteindre les participants
+- [Créer des calendriers](./creating-calendars.md) -- Retour à la configuration des calendriers

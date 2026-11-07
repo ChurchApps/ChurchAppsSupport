@@ -6,7 +6,7 @@ description: "B1 で教会が管理する Twilio の設定、公開サインア�
 # 教会所有の Twilio オンボーディング草案
 
 :::caution 提案中の連携に関する草案
-これは提案段階のワークフローです。現在 B1 には **設定 > Texting** に基本的な **Twilio** の選択肢があります（Account SID、Auth Token、From Number、受信 STOP Webhook）。詳しくは [教会設定: Texting](../../b1-admin/settings/church-settings.md#texting) を参照してください。以下の追加の B1 設定項目、同意の対応付け、検証手順は将来のリリースで必要となる要件であり、既存の設定を探すための手順ではありません。対象範囲と依存関係については [技術提案](./twilio-byok-proposal) を読んでください。Twilio の情報は 2026 年 10 月 22 日に確認したものです。キャンペーンを申請する前に、最新の要件を必ず確認してください。
+これは提案段階のワークフローです。現在 B1 には **設定 > Texting** に基本的な **Twilio** の選択肢があります（Account SID、Auth Token、From Number、受信 STOP Webhook）。詳しくは [教会設定: Texting](../../b1-admin/settings/church-settings.md#texting) を参照してください。以下の追加の B1 設定項目、同意の対応付け、検証手順は将来のリリースで必要となる要件であり、既存の設定を探すための手順ではありません。対象範囲と依存関係については [技術提案](./twilio-byok-proposal.md) を読んでください。Twilio の情報は 2026 年 10 月 22 日に確認したものです。キャンペーンを申請する前に、最新の要件を必ず確認してください。
 :::
 
 ## 推奨される体制
@@ -34,7 +34,7 @@ description: "B1 で教会が管理する Twilio の設定、公開サインア�
 | 既存の自動処理 | すべてのフォーム送信者やグループメンバーをテキストメッセージのワークフローに登録しない。確認済みの同意の対応付けだけが、そのプログラムへの登録を許可できる |
 | サンキューメッセージ | 同意が拒否された場合や、確認/審査が保留中の場合は、SMS に登録されたとはせず、フォームが受け付けられたことだけを伝える |
 
-既存のチェックボックス項目でフォームの例を示すことはできますが、B1 には依然として同意の記録と送信の制御が必要です。現在の共有レンダラーは説明文をプレーンテキストとして表示します。説明欄に Markdown や URL を入力しても、ポリシーのリンクがクリック可能になるという保証にはなりません。実装では、実際のリンクを含むアクセシブルな同意コントロールを提供する必要があります。[B1 フォームの作成](../../b1-admin/forms/creating-forms) と [技術提案](./twilio-byok-proposal#consent-and-suppression-are-required-release-work) を参照してください。
+既存のチェックボックス項目でフォームの例を示すことはできますが、B1 には依然として同意の記録と送信の制御が必要です。現在の共有レンダラーは説明文をプレーンテキストとして表示します。説明欄に Markdown や URL を入力しても、ポリシーのリンクがクリック可能になるという保証にはなりません。実装では、実際のリンクを含むアクセシブルな同意コントロールを提供する必要があります。[B1 フォームの作成](../../b1-admin/forms/creating-forms.md) と [技術提案](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work) を参照してください。
 
 Twilio は、自発的で検証可能なオプトインを求めています。SMS を、必須の会員規約、メール/電話の許可、寄付への同意、イベント登録と一緒にまとめないでください。訪問者カードに携帯電話番号を書いてあっても、それ自体は SMS への同意にはなりません。Twilio の [自発的な同意に関する要件](https://www.twilio.com/docs/api/errors/30923) と [キャンペーンの推奨事項](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations) を参照してください。
 

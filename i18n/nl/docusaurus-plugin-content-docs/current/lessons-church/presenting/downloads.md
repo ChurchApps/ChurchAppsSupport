@@ -1,5 +1,6 @@
 ---
 title: "Downloads en materialen"
+description: "Vind en download printbare activiteitenbladen, leidersgidsen en pdf's bij Lessons.church-lessen, studies of programma's voor je klas."
 ---
 
 # Downloads en materialen

@@ -1,5 +1,6 @@
 ---
 title: "Uparjanje zaslona"
+description: "Poveži FreePlay TV s koledarjem skupine zaslonov v FreePlay Admin s štirimestno kodo na TV-ju, da samostojno predvaja načrtovano vsebino."
 ---
 
 # Uparjanje zaslona
@@ -13,9 +14,9 @@ Da TV prikažete na koledarju, ga uparite s **FreePlay Admin**. TV prikaže šti
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite in zaženite FreePlay na TV. Glejte [Začetek uporabe](../getting-started/)
+- Namestite in zaženite FreePlay na TV. Glejte [Začetek uporabe](../getting-started/index.md)
 - Imejte prijavne podatke ChurchApps za vašo cerkev, da se lahko prijavite v FreePlay Admin
-- Po želji najprej [ustvarite seznam predvajanja](./building-playlists) in ga [načrtujte](./scheduling-the-calendar), da bo TV takoj imel, kaj predvajati
+- Po želji najprej [ustvarite seznam predvajanja](./building-playlists.md) in ga [načrtujte](./scheduling-the-calendar.md), da bo TV takoj imel, kaj predvajati
 
 </div>
 
@@ -38,7 +39,7 @@ Koda velja 15 minut, odštevalnik pod njo pa prikazuje, koliko časa je še na v
 5. Pod **Način** pustite izbrano **Načrtovano**. TV bo samostojno predvajal po koledarju skupine.
 6. Kliknite **Upari**.
 
-TV prikaže **Povezano!**, nato **Nalaganje vašega urnika...**. Naložil bo, kar je načrtovano, in začel predvajati. Glejte [Načrtovano predvajanje na TV-ju](./scheduled-playback).
+TV prikaže **Povezano!**, nato **Nalaganje vašega urnika...**. Naložil bo, kar je načrtovano, in začel predvajati. Glejte [Načrtovano predvajanje na TV-ju](./scheduled-playback.md).
 
 :::info
 Če FreePlay Admin sporoči **Te kode ni mogoče ujemati z nobenim TV-jem**, preverite kodo na zaslonu. Če je potekla, uporabite novo kodo, ki jo TV zdaj prikazuje.
@@ -51,11 +52,11 @@ Nastavitev **Način** ima dve možnosti:
 - **Načrtovano** – Predvaja samostojno po koledarju skupine. Nihče ni potreben, da pritisne Začni.
 - **Ročno** – Nekdo izbere vsebino z daljincem. Ročni zaslon se še vedno prikazuje na vašem seznamu **Zasloni**, vendar ne sledi koledarju, zato je polje **Skupina** onemogočeno.
 
-Način zaslona lahko pozneje spremenite z **Uredi** na [strani Zasloni](./managing-screens).
+Način zaslona lahko pozneje spremenite z **Uredi** na [strani Zasloni](./managing-screens.md).
 
 ## Uparjanje na namestitveni načrt
 
-Koda na zaslonu **Upari ta zaslon** deluje tudi v B1 Admin. Če jo tam vnesete in pod **Prikaži načrte za** izberete vrsto načrta, TV sledi tej vrsti načrta v [Načrtovalnem načinu](../plan-mode/) namesto koledarju. Glejte [Uparjanje naprave](../plan-mode/device-pairing).
+Koda na zaslonu **Upari ta zaslon** deluje tudi v B1 Admin. Če jo tam vnesete in pod **Prikaži načrte za** izberete vrsto načrta, TV sledi tej vrsti načrta v [Načrtovalnem načinu](../plan-mode/index.md) namesto koledarju. Glejte [Uparjanje naprave](../plan-mode/device-pairing.md).
 
 ## Spreminjanje ali prekinitev uparjanja na TV-ju
 
@@ -79,6 +80,6 @@ TV se vrne na prikaz kode za uparjanje. Ko ga želite spet uporabljati, ga ponov
 
 ## Sorodni članki
 
-- **[Upravljanje zaslonov in skupin](./managing-screens)** – Preimenujte zaslon, ga premaknite v drugo skupino ali preverite njegove prenose
-- **[Načrtovanje koledarja](./scheduling-the-calendar)** – Odločite, kaj zasloni skupine predvajajo
-- **[Izbira načina uparjanja](../getting-started/pairing-modes)** – Primerjajte Načrtovani način z Načrtovalnim načinom in sami brskajte po ponudnikih
+- **[Upravljanje zaslonov in skupin](./managing-screens.md)** – Preimenujte zaslon, ga premaknite v drugo skupino ali preverite njegove prenose
+- **[Načrtovanje koledarja](./scheduling-the-calendar.md)** – Odločite, kaj zasloni skupine predvajajo
+- **[Izbira načina uparjanja](../getting-started/pairing-modes.md)** – Primerjajte Načrtovani način z Načrtovalnim načinom in sami brskajte po ponudnikih

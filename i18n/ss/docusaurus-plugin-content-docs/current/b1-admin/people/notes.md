@@ -1,5 +1,6 @@
 ---
 title: "Emanothi"
+description: "Bona tinanti tekunakekela, tilandzelo netinhlelo tebantfu, emaqembu, tiketimenti nemakhadi emsebenti ngelulwandzi lunye ku-B1 Admin, lokusha kakhulu kuya kulokudzala."
 ---
 
 # Emanothi

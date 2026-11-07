@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Подключите Donorbox к B1 Admin через Zapier, чтобы онлайн-пожертвования автоматически создавали записи о пожертвованиях и профили жертвователей без ручного экспорта."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox's *New or Updated Donation* срабатывает на правки т
 
 ## См. также
 
-- [Zapier (обзор)](../zapier) — B1 сторона каждого рецепта Zapier
-- [Subsplash](./subsplash) — другая платформа пожертвований с приложением Zapier
-- [Mailchimp](./mailchimp) — цепь "новый подарок" в тег электронной почты
+- [Zapier (обзор)](../zapier.md) — B1 сторона каждого рецепта Zapier
+- [Subsplash](./subsplash.md) — другая платформа пожертвований с приложением Zapier
+- [Mailchimp](./mailchimp.md) — цепь "новый подарок" в тег электронной почты

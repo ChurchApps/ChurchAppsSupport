@@ -1,5 +1,6 @@
 ---
 title: "Configurare"
+description: "Alegeți cum lucrați local la proiectele ChurchApps: frontend pe API-urile demo comune sau stack complet local cu MySQL pentru modificări backend."
 ---
 
 # Configurare
@@ -40,15 +41,15 @@ Această abordare vă permite să începeți modificările frontend în câteva 
 
 ### 2. Rularea totală local
 
-Dacă trebuie să modificați codul API sau să lucrați offline, puteți rula întreaga stivă local. Aceasta necesită MySQL 8.0+ și configurare suplimentară. Consultați ghidul [configurarea locală a API-ului](../api/local-setup) pentru instrucțiuni detaliate.
+Dacă trebuie să modificați codul API sau să lucrați offline, puteți rula întreaga stivă local. Aceasta necesită MySQL 8.0+ și configurare suplimentară. Consultați ghidul [configurarea locală a API-ului](../api/local-setup.md) pentru instrucțiuni detaliate.
 
 ## Primii pași
 
 Urmați aceste pagini în ordine:
 
-1. **[Cerințe preliminare](prerequisites)** -- Instalați instrumentele necesare (Node.js, Git, MySQL etc.)
-2. **[Prezentarea generală a proiectelor](project-overview)** -- Aflați ce proiecte există și ce fac
-3. **[Variabile de mediu](environment-variables)** -- Configurați fișierele `.env` pentru a conecta totul între ele
+1. **[Cerințe preliminare](./prerequisites.md)** -- Instalați instrumentele necesare (Node.js, Git, MySQL etc.)
+2. **[Prezentarea generală a proiectelor](./project-overview.md)** -- Aflați ce proiecte există și ce fac
+3. **[Variabile de mediu](./environment-variables.md)** -- Configurați fișierele `.env` pentru a conecta totul între ele
 
 :::info
 Fiecare proiect ChurchApps este un depozit Git independent. Trebuie să clonați doar proiectul sau proiectele specifice la care doriți să lucrați.

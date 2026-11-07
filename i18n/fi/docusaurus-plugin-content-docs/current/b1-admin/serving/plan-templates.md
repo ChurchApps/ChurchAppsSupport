@@ -1,5 +1,6 @@
 ---
 title: "Suunnitelmapohjat"
+description: "Tallenna palvelusuunnitelman järjestys ja paikat uudelleenkäytettävänä mallina B1 Adminissa ja käytä sitä tuleviin suunnitelmiin yhdellä napsautuksella."
 ---
 
 # Suunnitelmapohjat

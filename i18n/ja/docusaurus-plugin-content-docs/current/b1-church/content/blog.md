@@ -1,5 +1,7 @@
 ---
-title: "ブログ"
+title: "B1.church のブログの閲覧と RSS フィード"
+sidebar_label: "ブログ"
+description: "教会の B1.church ブログをカテゴリまたはタグで閲覧・絞り込み、古い投稿をめくって見られます。RSS フィードで新しい投稿を追うこともできます。"
 ---
 
 # ブログ

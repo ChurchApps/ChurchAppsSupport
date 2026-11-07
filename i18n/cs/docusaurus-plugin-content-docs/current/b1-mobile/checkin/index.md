@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-in do církve pomocí aplikace B1 Mobile"
+sidebar_label: "Check-In"
+description: "Přihlaste sebe a domácnost na církevní bohoslužby ze svého telefonu v aplikaci B1 Mobile, vyberte bohoslužby a skupiny ještě před příchodem."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Přihlašování je rychlý, vícekrokový postup, který vás provede výběrem
 
 ## Začínáme
 
-Přihlášení otevřete v aplikaci B1 Mobile v sekci **Check-In**. Pro použití této funkce musíte být přihlášeni. Pokud přihlášeni nejste, budete nejprve vyzváni k [přihlášení](../getting-started/logging-in).
+Přihlášení otevřete v aplikaci B1 Mobile v sekci **Check-In**. Pro použití této funkce musíte být přihlášeni. Pokud přihlášeni nejste, budete nejprve vyzváni k [přihlášení](../getting-started/logging-in.md).
 
 :::info
 Funkce přihlašování vyžaduje, aby váš sbor v nastavení administrace vytvořil bohoslužby a skupiny pro účast. Pokud se při otevření obrazovky přihlašování nezobrazí žádné bohoslužby, pravděpodobně tato funkce pro váš sbor ještě nebyla nastavena. S žádostí o pomoc se obraťte na správce svého sboru.
@@ -30,4 +32,4 @@ Funkce přihlašování vyžaduje, aby váš sbor v nastavení administrace vytv
 
 ## Další kroky
 
-- [Samostatné přihlášení](./self-checkin) -- Podrobný návod, jak se přihlásit z telefonu
+- [Samostatné přihlášení](./self-checkin.md) -- Podrobný návod, jak se přihlásit z telefonu

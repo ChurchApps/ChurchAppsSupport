@@ -1,5 +1,6 @@
 ---
 title: "Approving Profile Changes"
+description: "Review and approve member profile change requests in B1 Admin, and set up the Directory Approval Group that receives them."
 ---
 
 # Approving Profile Changes

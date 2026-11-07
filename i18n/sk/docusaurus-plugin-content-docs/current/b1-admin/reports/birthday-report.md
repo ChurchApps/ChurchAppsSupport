@@ -1,5 +1,6 @@
 ---
 title: "Zoznamy narodenín a výročí"
+description: "Zostavte zoznam ľudí s narodeninami alebo výročím v danom mesiaci pomocou filtrov vyhľadávania osôb v B1 Admin a potom zobrazte alebo exportujte dátumy."
 ---
 
 # Zoznamy narodenín a výročí

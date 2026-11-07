@@ -1,5 +1,6 @@
 ---
 title: "Zobrazenie pre učiteľa pre lekcie"
+description: "Otvorte lekciu v celoobrazovkovom učiteľskom zobrazení z plánu na B1.church, prechádzajte sekciami, prehrávajte médiá a sťahujte materiály."
 ---
 
 # Zobrazenie pre učiteľa pre lekcie

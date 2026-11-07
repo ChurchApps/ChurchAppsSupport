@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Leer hoe de ChurchApps API gegevens verdeelt over zes MySQL-databases, één per module, en hoe je verbindingen configureert en initialiseert."
 ---
 
 # Database
@@ -13,8 +14,8 @@ De ChurchApps API maakt gebruik van een **database-per-module** architectuur. El
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Installeer **MySQL 8.0+** -- zie [Vereisten](../setup/prerequisites)
-- Configureer databaseverbindingsreeksen in je `.env` bestand -- zie [Omgevingsvariabelen](../setup/environment-variables)
+- Installeer **MySQL 8.0+** -- zie [Vereisten](../setup/prerequisites.md)
+- Configureer databaseverbindingsreeksen in je `.env` bestand -- zie [Omgevingsvariabelen](../setup/environment-variables.md)
 
 </div>
 
@@ -123,5 +124,5 @@ Neem altijd `churchId` in uw vragen op om multi-tenant isolatie te behouden. Voe
 
 ## Gerelateerde artikelen
 
-- **[Modulestructuur](./module-structure)** -- Hoe controllers en opslagplaatsen binnen elke module zijn georganiseerd
-- **[Lokale API-setup](./local-setup)** -- Volledige stap-voor-stap instellingsgids
+- **[Modulestructuur](./module-structure.md)** -- Hoe controllers en opslagplaatsen binnen elke module zijn georganiseerd
+- **[Lokale API-setup](./local-setup.md)** -- Volledige stap-voor-stap instellingsgids

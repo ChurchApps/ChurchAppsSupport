@@ -1,5 +1,7 @@
 ---
-title: "Luhlu Lwemalunga"
+title: "Ligcini Lemalungu Ku-App ye-B1 Mobile"
+sidebar_label: "Luhlu Lwemalunga"
+description: "Funa bantfu belicawe lakho nge-Member Directory ye-B1 Mobile: hamba ngekulandzelana kwemagama, funa ngemabito, bese uvula emaphrofayili nemalinki emindeni."
 ---
 
 # Luhlu Lwemalunga
@@ -13,7 +15,7 @@ Luhlu lwemalunga ku-B1 Mobile lukuvumela kutsi ucwaninge futsi usesha bantfu eli
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 
 </div>
 
@@ -51,5 +53,5 @@ Lwati lolubonakala ephrofayeleni ngayinye luya ngetilungiselelo teimfihlo naluhl
 
 ## Tibhalo Letihlobene
 
-- [Kutfumelana Imilayeto](./messaging) -- Tfumela umlayeto wangasese kumuntfu lomtfole eluhlwini
+- [Kutfumelana Imilayeto](./messaging.md) -- Tfumela umlayeto wangasese kumuntfu lomtfole eluhlwini
 - [Tilungiselelo Teimfihlo](../profile/privacy-settings.md) -- Lawula loko labanye labangakubona ngawe eluhlwini

@@ -386,13 +386,13 @@
     "message": "B1 Mobil"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Aplicație mobilă pentru membrii bisericii pe iOS și Android."
+    "message": "Aplicația veche pentru membri, pentru iOS și Android, înlocuită acum de aplicația web B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Înregistrare"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Aplicație de înregistrare la chioșc cu autoservire pentru tablete Android."
+    "message": "Aplicație de check-in self-service pentru chioscuri, pe tablete iPad și Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Proiectat special pentru fluxurile de lucru ale bisericii — nu este un instrument generic adaptat pentru ministerul."
   },
   "homepage.title": {
-    "message": "Acasă"
+    "message": "Ajutor pentru B1.church, Lessons.church și FreePlay"
   },
   "homepage.description": {
-    "message": "Documentație de suport pentru ChurchApps — instrumente gratuite și open source pentru gestionarea bisericii."
+    "message": "Ghiduri și documentație pentru software-ul bisericesc gratuit și open-source al ChurchApps: managementul bisericii B1.church, check-in, donații și site-uri web, curriculumul Lessons.church și FreePlay."
   },
   "homepage.products.heading": {
     "message": "Alege-ți produsul"

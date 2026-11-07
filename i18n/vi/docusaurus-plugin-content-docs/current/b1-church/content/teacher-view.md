@@ -1,5 +1,6 @@
 ---
 title: "Chế độ Giáo viên cho Bài học"
+description: "Mở bài học ở chế độ Xem của giáo viên toàn màn hình từ kế hoạch trên B1.church, rồi chuyển giữa các phần, phát phương tiện và tải tài nguyên lớp học."
 ---
 
 # Chế độ Giáo viên cho Bài học

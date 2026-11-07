@@ -1,5 +1,7 @@
 ---
-title: "入门指南"
+title: "ChurchApps 入门指南：前 15 分钟"
+sidebar_label: "入门指南"
+description: "几个步骤即可设置新的 ChurchApps 账户：添加教会信息，将成员导入 B1 Admin，邀请团队成员，并选择第一个项目。"
 ---
 
 # 入门指南

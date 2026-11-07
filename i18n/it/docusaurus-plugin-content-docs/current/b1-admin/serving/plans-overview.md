@@ -1,5 +1,6 @@
 ---
 title: "Panoramica dei Piani"
+description: "Panoramica delle assegnazioni dei volontari su molte date in B1 Admin: individua le posizioni scoperte e riempile o invia email al team da un'unica griglia."
 ---
 
 # Panoramica dei Piani

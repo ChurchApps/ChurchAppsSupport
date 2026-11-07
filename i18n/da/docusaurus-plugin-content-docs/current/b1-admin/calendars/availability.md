@@ -1,5 +1,6 @@
 ---
 title: "Tilgængelighedskalender"
+description: "Opsæt bookbare lokaler og udstyr i B1 Admin, book dem i kalenderen med buffertid, og håndtér gentagne bookinger og bookinger, der kræver godkendelse."
 ---
 
 # Tilgængelighedskalender
@@ -13,7 +14,7 @@ Tilgængelighedskalenderen giver dig et overblik over alle lokale- og ressourceb
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opret mindst ét [lokale eller én ressource](rooms-resources) i afsnittet Lokaler og ressourcer
+- Opret mindst ét [lokale eller én ressource](./rooms-resources.md) i afsnittet Lokaler og ressourcer
 - Du skal have redigeringsadgang til afsnittet Kalendere i B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Brug rullemenuen **Lokale / ressource** øverst til venstre for at indsnævre ka
 6. Klik på **Gem** for at sende bookingen.
 
 :::info
-Hvis lokalet eller ressourcen har en konfigureret **Godkendelsesgruppe**, vises bookingen som **Afventer**, indtil en leder i den gruppe godkender den. Se [Kalendergodkendelser](approvals) for godkendelsesprocessen.
+Hvis lokalet eller ressourcen har en konfigureret **Godkendelsesgruppe**, vises bookingen som **Afventer**, indtil en leder i den gruppe godkender den. Se [Kalendergodkendelser](./approvals.md) for godkendelsesprocessen.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalenderen fremhæver eventuelle konflikter, før du gemmer. Hvis du ser en konf
 
 ## Relaterede artikler
 
-- [Lokaler, ressourcer og planlægning](rooms-resources) — opsæt bookbare lokaler og udstyr
-- [Kalendergodkendelser](approvals) — godkend eller afvis bookinganmodninger
-- [Oprettelse af kalendere](creating-calendars) — administrer begivenhedskalendere
+- [Lokaler, ressourcer og planlægning](./rooms-resources.md) — opsæt bookbare lokaler og udstyr
+- [Kalendergodkendelser](./approvals.md) — godkend eller afvis bookinganmodninger
+- [Oprettelse af kalendere](./creating-calendars.md) — administrer begivenhedskalendere

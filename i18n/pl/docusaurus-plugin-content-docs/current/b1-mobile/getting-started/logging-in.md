@@ -1,5 +1,7 @@
 ---
-title: "Logowanie"
+title: "Logowanie do B1 Mobile"
+sidebar_label: "Logowanie"
+description: "Zaloguj się do B1 Mobile kontem ChurchApps, zarejestruj nowe konto lub odzyskaj zapomniane hasło za pomocą 6-cyfrowego kodu."
 ---
 
 # Logowanie
@@ -13,7 +15,7 @@ B1 Mobile korzysta z tego samego konta ChurchApps, którego używasz na B1.churc
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](./installing) na swoim urządzeniu z systemem iOS lub Android
+- [Zainstaluj B1 Mobile](./installing.md) na swoim urządzeniu z systemem iOS lub Android
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile korzysta z tego samego konta ChurchApps, którego używasz na B1.churc
 3. Wpisz swój **adres e-mail** i **hasło**.
 4. Stuknij **Zaloguj się**.
 
-Po zalogowaniu zostaniesz przeniesiony do [pulpitu](../dashboard/). Jeśli nie wybrałeś jeszcze kościoła, zostaniesz poproszony o wyszukanie go i wybranie.
+Po zalogowaniu zostaniesz przeniesiony do [pulpitu](../dashboard/index.md). Jeśli nie wybrałeś jeszcze kościoła, zostaniesz poproszony o wyszukanie go i wybranie.
 
 ## Tworzenie nowego konta
 

@@ -1,5 +1,6 @@
 ---
 title: "Implementación de aplicaciones web"
+description: "Distribuera ChurchApps webbappar som B1 Admin till Amazon S3 och CloudFront, med automatisk GitHub Actions-deploy vid merge eller manuella kommandon."
 ---
 
 Oops, that wasn't right: the file is for Swedish, not Spanish. Here is the correct version.
@@ -19,7 +20,7 @@ ChurchApps webbapplikationer distribueras som statiska webbplatser till **Amazon
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Konfigurera webbappen lokalt och kontrollera att den går att bygga -- se [Webbappar](../web-apps/)
+- Konfigurera webbappen lokalt och kontrollera att den går att bygga -- se [Webbappar](../web-apps/index.md)
 - Konfigurera AWS-autentiseringsuppgifter med åtkomst till S3 och CloudFront
 - Känna till namnet på målbucketen i S3 och distributions-ID:t för CloudFront
 
@@ -59,6 +60,6 @@ Om du vill verifiera ett bygge lokalt innan du distribuerar kan du köra `npm ru
 
 ## Relaterade artiklar
 
-- **[Webbappar](../web-apps/)** -- Installationsguider för B1Admin, B1App och LessonsApp
-- **[API-distribution](./apis)** -- Distribution av backend-API:erna
-- **[Mobildistribution](./mobile)** -- Distribution av mobilappar till appbutikerna
+- **[Webbappar](../web-apps/index.md)** -- Installationsguider för B1Admin, B1App och LessonsApp
+- **[API-distribution](./apis.md)** -- Distribution av backend-API:erna
+- **[Mobildistribution](./mobile.md)** -- Distribution av mobilappar till appbutikerna

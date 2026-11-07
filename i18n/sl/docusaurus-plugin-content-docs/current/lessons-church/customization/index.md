@@ -1,5 +1,6 @@
 ---
 title: "Prilagajanje"
+description: "Spoznaj, kako v uri Lessons.church skriti sklope, vloge ali dejanja ter preurediti vsebino, bodisi za eno učilnico bodisi za vse učilnice v cerkvi."
 ---
 
 # Prilagajanje

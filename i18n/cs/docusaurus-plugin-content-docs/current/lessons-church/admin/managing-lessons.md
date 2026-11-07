@@ -1,5 +1,6 @@
 ---
 title: "Správa lekcí"
+description: "Sestavte lekci v administraci Lessons.church: místa, sekce a akce Say, Do, Note nebo Play podle rolí, plus text pro rodiče a zdroje."
 ---
 
 # Správa lekcí

@@ -1,5 +1,7 @@
 ---
-title: "Vers dneva"
+title: "Verz dneva v B1 Mobile"
+sidebar_label: "Vers dneva"
+description: "Na zaslonu Verz dneva v B1 Mobile si oglejte današnji verz kot sliko, prilagojeno usmerjenosti telefona ali tablice. Posodobljeno vsak dan."
 ---
 
 # Vers dneva
@@ -13,7 +15,7 @@ Zaslon Vers dneva prikazuje dnevni svetopisemski verz kot lepo oblikovano sliko.
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 - Vaša cerkev mora imeti omogočeno funkcijo Vers dneva
 
 </div>
@@ -46,5 +48,5 @@ Vers dneva je vgrajena vsebinska funkcija aplikacije B1 Mobile. Če je v stransk
 
 ## Sorodni članki
 
-- [Biblija](./bible) -- Preberite celotne odlomke Svetega pisma v vgrajenem bralniku
-- [Pridige](./sermons) -- Oglejte si posnete pridige iz vaše cerkve
+- [Biblija](./bible.md) -- Preberite celotne odlomke Svetega pisma v vgrajenem bralniku
+- [Pridige](./sermons.md) -- Oglejte si posnete pridige iz vaše cerkve

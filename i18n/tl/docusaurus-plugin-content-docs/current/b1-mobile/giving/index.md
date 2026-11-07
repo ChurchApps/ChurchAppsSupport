@@ -1,5 +1,7 @@
 ---
-title: "Pagbibigay"
+title: "Pagbibigay sa B1 Mobile App"
+sidebar_label: "Pagbibigay"
+description: "Magbigay sa B1 Mobile app, tingnan ang year-to-date na pagbibigay, at pamahalaan ang naka-save na paraan ng bayad. Sakop ang Overview, Donate, Manage, at History."
 ---
 
 # Pagbibigay
@@ -24,7 +26,7 @@ Ang seksyon ng pagbibigay ay nakaayos sa apat na tab:
 Lahat ng donasyong ginawa sa pamamagitan ng B1 Mobile ay secure na pinoproseso sa pamamagitan ng **Stripe**. Ang iyong impormasyon sa pagbabayad ay hinahawakan ng secure na imprastraktura ng Stripe at hindi kailanman iniimbak sa mga server ng ChurchApps. Maaari kang magbigay nang may kumpiyansa na alam mong protektado ang iyong mga detalyeng pinansyal.
 
 :::info
-Ang iyong church administrator ang nagse-set up ng mga available na fund at payment processing sa pamamagitan ng [B1 Admin](../../b1-admin/). Kung hindi mo makita ang opsyon ng pagbibigay sa app, maaaring hindi pa na-configure ng iyong simbahan ang feature na ito.
+Ang iyong church administrator ang nagse-set up ng mga available na fund at payment processing sa pamamagitan ng [B1 Admin](../../b1-admin/index.md). Kung hindi mo makita ang opsyon ng pagbibigay sa app, maaaring hindi pa na-configure ng iyong simbahan ang feature na ito.
 :::
 
 ## Ano ang Maaari Mong Gawin
@@ -38,6 +40,6 @@ Narito ang maaari mong gawin mula sa seksyon ng pagbibigay:
 
 ## Mga Susunod na Hakbang
 
-- [Pagbibigay ng Donasyon](./making-donations) -- Alamin kung paano magbigay ng regalo mula sa app
-- [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments) -- Magdagdag o mag-alis ng mga naka-save na paraan ng pagbabayad
-- [Kasaysayan ng Donasyon](./donation-history) -- Tingnan ang iyong buod ng pagbibigay at mga nakaraang donasyon
+- [Pagbibigay ng Donasyon](./making-donations.md) -- Alamin kung paano magbigay ng regalo mula sa app
+- [Pamamahala ng mga Paraan ng Pagbabayad](./managing-payments.md) -- Magdagdag o mag-alis ng mga naka-save na paraan ng pagbabayad
+- [Kasaysayan ng Donasyon](./donation-history.md) -- Tingnan ang iyong buod ng pagbibigay at mga nakaraang donasyon

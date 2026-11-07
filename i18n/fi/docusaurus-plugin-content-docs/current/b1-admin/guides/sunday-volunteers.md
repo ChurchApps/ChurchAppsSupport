@@ -1,5 +1,6 @@
 ---
 title: "Opas: Sunnuntain vapaaehtoisten hallinta"
+description: "Määritä B1 Adminissa vapaaehtoistiimit, viikkosuunnitelmat, jumalanpalvelusjärjestys ja sunnuntain tehtävät, jotta vapaaehtoiset näkevät tehtävänsä B1.churchissa."
 ---
 
 # Sunnuntain vapaaehtoisten hallinta
@@ -95,7 +96,7 @@ Anna vapaaehtoisten ilmoittautua tehtäviin itse sen sijaan, että odottavat yll
 3. Valitse kullekin paikalle **Salli itse-ilmoittautuminen** -valintaruutu, jotta paikka on itse valittavissa.
 4. Lisää jokaiselle paikalle **Kuvaus**, jotta vapaaehtoiset tietävät, mihin tehtävään kuuluu.
 
-Kun itse-ilmoittautumispaikat on luotu, ne näkyvät automaattisesti vapaaehtoisten ilmoittautumissivuilla [B1.church](../../b1-church/serving/volunteer-signup)-sivustolla ja [B1-mobiilisovelluksessa](../../b1-mobile/serving/volunteer-signup). Jäsenet voivat selata avoimia paikkoja, nähdä jäljellä olevien paikkojen määrän ja ilmoittautua yhdellä klikkauksella.
+Kun itse-ilmoittautumispaikat on luotu, ne näkyvät automaattisesti vapaaehtoisten ilmoittautumissivuilla [B1.church](../../b1-church/serving/volunteer-signup.md)-sivustolla ja [B1-mobiilisovelluksessa](../../b1-mobile/serving/volunteer-signup.md). Jäsenet voivat selata avoimia paikkoja, nähdä jäljellä olevien paikkojen määrän ja ilmoittautua yhdellä klikkauksella.
 
 :::tip
 Yhdistä samaan suunnitelmaan ylläpidon määräämiä ja itse-ilmoittautuvia paikkoja. Voit esimerkiksi määrätä ylistysjohtajan suoraan, mutta antaa tervehtijöiden ja kahvitarjoilijoiden valita paikkansa itse.
@@ -109,7 +110,7 @@ Määrätyt vapaaehtoiset näkevät suunnitelmansa automaattisesti ja voivat vas
 2. He voivat hyväksyä tai hylätä tehtävät suoraan kummassa tahansa palvelussa
 3. He voivat merkitä estopäiviä viikoille, joina eivät ole käytettävissä
 4. Suunnitelmat voi tulostaa harjoituksia varten tai kiinnittää takahuoneeseen
-5. Vapaaehtoiset voivat selata avoimia paikkoja ja ilmoittautua niihin [vapaaehtoisten ilmoittautumissivulla](../../b1-church/serving/volunteer-signup)
+5. Vapaaehtoiset voivat selata avoimia paikkoja ja ilmoittautua niihin [vapaaehtoisten ilmoittautumissivulla](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Mobiilisovelluksen push-ilmoitukset kertovat vapaaehtoisille, kun heille on määrätty uusia tehtäviä tai suunnitelmat muuttuvat.
@@ -130,5 +131,5 @@ Vapaaehtoistoiminnan hallintasi on nyt määritetty. Luo joka viikko uusi suunni
 - [Työnkulut](../serving/workflows.md): ohjaa ihmiset toistuvien prosessien läpi triggerien ja automaattisten vaiheiden avulla
 - [Suunnitelmien katselu (verkko)](../../b1-church/plans/viewing-plans.md): miten vapaaehtoiset näkevät suunnitelmat verkossa
 - [Suunnitelmien katselu (mobiili)](../../b1-mobile/serving/viewing-plans.md): miten vapaaehtoiset näkevät suunnitelmat mobiilissa
-- [Vapaaehtoisten ilmoittautuminen (verkko)](../../b1-church/serving/volunteer-signup): miten jäsenet valitsevat vapaaehtoispaikkoja itse
-- [Vapaaehtoisten ilmoittautuminen (mobiili)](../../b1-mobile/serving/volunteer-signup): vapaaehtoisten itse-ilmoittautuminen mobiilissa
+- [Vapaaehtoisten ilmoittautuminen (verkko)](../../b1-church/serving/volunteer-signup.md): miten jäsenet valitsevat vapaaehtoispaikkoja itse
+- [Vapaaehtoisten ilmoittautuminen (mobiili)](../../b1-mobile/serving/volunteer-signup.md): vapaaehtoisten itse-ilmoittautuminen mobiilissa

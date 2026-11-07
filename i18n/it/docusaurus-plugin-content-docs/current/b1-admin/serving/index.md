@@ -1,5 +1,7 @@
 ---
-title: "Servizio"
+title: "Panoramica di Serving in B1 Admin"
+sidebar_label: "Servizio"
+description: "Coordina i volontari e pianifica i culti nell'area Serving di B1 Admin, dalle schede dei ministeri e dai team ai piani di culto, brani e attività."
 ---
 
 # Servizio

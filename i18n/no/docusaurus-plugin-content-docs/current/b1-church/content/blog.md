@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Bla i B1.church-bloggen og RSS-feeder"
+sidebar_label: "Blog"
+description: "Bla gjennom og filtrer B1.church-bloggen for menigheten din etter kategori eller emneord, bla til eldre innlegg, eller følg nye via RSS-feeder."
 ---
 
 # Blog

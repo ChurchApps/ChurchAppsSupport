@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referens för @churchapps/apihelper som används av alla ChurchApps Express-API:er: lokal byggning, test via Yarn-portal och publicering med changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Paketet `@churchapps/apihelper` innehåller serverside-verktyg för alla ChurchA
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera **Node.js** och **Git** -- se [Förutsättningar](../setup/prerequisites)
+- Installera **Node.js** och **Git** -- se [Förutsättningar](../setup/prerequisites.md)
 - Bekanta dig med [Packages-arbetsytan](./index.md) och släppflödet
-- Det här paketet är beroende av [`@churchapps/helpers`](./helpers) (som peer dependency) och exporterar om det
+- Det här paketet är beroende av [`@churchapps/helpers`](./helpers.md) (som peer dependency) och exporterar om det
 
 </div>
 
@@ -65,6 +66,6 @@ Det här paketet är ett beroende för alla ChurchApps-API:er -- kärn-API:et Ap
 
 ## Relaterade artiklar
 
-- **[Helpers](./helpers)** -- Baspaketet för verktyg som det här paketet är beroende av
-- **[Modulstruktur](../api/module-structure)** -- Hur kontroller och auth-middleware används i API-moduler
-- **[Lokal API-konfiguration](../api/local-setup)** -- Konfigurera API:et för lokal utveckling
+- **[Helpers](./helpers.md)** -- Baspaketet för verktyg som det här paketet är beroende av
+- **[Modulstruktur](../api/module-structure.md)** -- Hur kontroller och auth-middleware används i API-moduler
+- **[Lokal API-konfiguration](../api/local-setup.md)** -- Konfigurera API:et för lokal utveckling

@@ -1,5 +1,6 @@
 ---
 title: "Fizetős regisztrációk"
+description: "Fizetős eseményregisztráció a B1 Admin-ban: árazott jegytípusok, kiegészítők, kedvezménykódok, várólista és fizetés az adományszolgáltatón át."
 ---
 
 # Fizetős regisztrációk
@@ -17,7 +18,7 @@ Az eseményregisztráció több lehet, mint egy egyszerű létszámfelmérés. M
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Először engedélyezze a regisztrációt az eseményen — lásd: [Naptárak létrehozása](creating-calendars#enabling-event-registration)
+- Először engedélyezze a regisztrációt az eseményen — lásd: [Naptárak létrehozása](./creating-calendars.md#enabling-event-registration)
 - Online fizetések gyűjtéséhez a gyülekezetének be kell állítania az [online adományozást](../donations/online-giving-setup.md) (Stripe, PayPal vagy Kingdom Funding). Az ingyenes eseményekhez nincs szükség adományozási beállításra. Online adományozás nélkül a fizetős regisztrációk is működnek, de az emberek közvetlenül a gyülekezetnek fizetnek — lásd: [Gyülekezetek online adományozás nélkül](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Minden kód mutatja a **Felhasználások** számát, így láthatja, hányszor v
 Kapcsolja be az **Engedélyezett várólista** opciót a Regisztrációs beállítások kártyán. Amikor az esemény eléri a kapacitását:
 
 - Az új regisztrálók várólistás helyet kapnak az elutasítás helyett. Ugyanazt a jelentkezést töltik ki (várólistán fizetés nélkül).
-- Ha valaki lemond, a legrégebbi várólistás regisztrációt **automatikusan előreléptetjük**, és e-mailt kap, hogy felszabadult egy hely. Ha tartozása van, az e-mail a gyülekezete B1 oldalán található [Regisztrációim](../../b1-church/events/my-registrations) oldalra irányítja, ahol kifizetheti.
+- Ha valaki lemond, a legrégebbi várólistás regisztrációt **automatikusan előreléptetjük**, és e-mailt kap, hogy felszabadult egy hely. Ha tartozása van, az e-mail a gyülekezete B1 oldalán található [Regisztrációim](../../b1-church/events/my-registrations.md) oldalra irányítja, ahol kifizetheti.
 - Bármikor manuálisan előreléptethet valakit a várólistás soron lévő **Előléptetés** műveletével — ez hasznos a kapacitás emelése után.
 
 :::info
@@ -79,7 +80,7 @@ Nyissa meg az eseményt a Regisztrációk oldalról, hogy lássa az összes regi
 
 - Kattintson a sor részletek ikonjára a **Regisztráció részletei** párbeszédpanel megnyitásához — tagok, választások, fizetett/tartozás, és egy **Fizetések** táblázat, amely minden díjat listáz (összeg, mód, dátum).
 - A **CSV exportálása** letölti a teljes névsort a tagok, résztvevőtípusok, választások, fizetett/összes/tartozás és állapot oszlopokkal, valamint minden regisztrációs kérdéshez egy oszloppal.
-- A **Résztvevő hozzáadása** offline vagy telefonos jelentkezést rögzít bármely személynek a gyülekezetében. Válassza ki a személyt, és fizetős eseménynél a résztvevőtípusát. Nem terhelik meg a kártyáját: a fizetős regisztráció **függőben** lévőként mentődik, a teljes összeggel mint fizetendő tartozással. Ha a gyülekezetnek van online adományozása, a személy a [Regisztrációim](../../b1-church/events/my-registrations) oldalon fizethet; különben személyesen kell beszedni. A résztvevők hozzáadásához a Regisztrációk szerkesztési jogosultságra van szüksége.
+- A **Résztvevő hozzáadása** offline vagy telefonos jelentkezést rögzít bármely személynek a gyülekezetében. Válassza ki a személyt, és fizetős eseménynél a résztvevőtípusát. Nem terhelik meg a kártyáját: a fizetős regisztráció **függőben** lévőként mentődik, a teljes összeggel mint fizetendő tartozással. Ha a gyülekezetnek van online adományozása, a személy a [Regisztrációim](../../b1-church/events/my-registrations.md) oldalon fizethet; különben személyesen kell beszedni. A résztvevők hozzáadásához a Regisztrációk szerkesztési jogosultságra van szüksége.
 
 :::info
 A visszatérítéseket a B1-en belül nem dolgozzuk fel. Ha vissza kell térítenie egy lemondott fizetős regisztrációt, a visszatérítést az adományozási szolgáltató irányítópultján (pl. Stripe) indítsa.
@@ -94,12 +95,12 @@ A fizetések ugyanazon az adományozási átjárón keresztül történnek, amel
 Ha a gyülekezetnek nincs beállított adományozási szolgáltatója, a fizetős események akkor is fogadhatnak regisztrációkat. A fizetési lépés tájékoztatja a regisztrálókat, hogy online fizetés nem érhető el, és közvetlenül a gyülekezetnek fizethetnek. A **Regisztráció és fizetés később** gomb pedig elmenti a regisztrációt. Ez **függőben** lévőként kerül mentésre a teljes összeggel mint fizetendő tartozással, és figyelmeztetéssel jelenik meg a névsorban. A pénzt úgy gyűjtse be, ahogy a gyülekezete szokásosan teszi.
 
 :::info
-A B1-ben nincs mód arra, hogy egy offline fizetést beérkezettként jelöljön meg. A fizetendő tartozás a névsorban és a regisztráló [Regisztrációim](../../b1-church/events/my-registrations) kártyáján marad, miután beszedte, ezért vezessen saját nyilvántartást arról, ki fizetett.
+A B1-ben nincs mód arra, hogy egy offline fizetést beérkezettként jelöljön meg. A fizetendő tartozás a névsorban és a regisztráló [Regisztrációim](../../b1-church/events/my-registrations.md) kártyáján marad, miután beszedte, ezért vezessen saját nyilvántartást arról, ki fizetett.
 :::
 
 ## Kapcsolódó cikkek
 
-- [Naptárak létrehozása](creating-calendars#enabling-event-registration) — regisztráció engedélyezése és az alapbeállítások
+- [Naptárak létrehozása](./creating-calendars.md#enabling-event-registration) — regisztráció engedélyezése és az alapbeállítások
 - [Online adományozás beállítása](../donations/online-giving-setup.md) — a fizetésnél használt fizetési átjáró beállítása
-- [Regisztráció eseményekre](../../b1-church/events/registering) — amit a tagok látnak jelentkezéskor
-- [Regisztrációim](../../b1-church/events/my-registrations) — hogyan fizetik ki a tagok a tartozásukat és szerkesztik a regisztrációikat
+- [Regisztráció eseményekre](../../b1-church/events/registering.md) — amit a tagok látnak jelentkezéskor
+- [Regisztrációim](../../b1-church/events/my-registrations.md) — hogyan fizetik ki a tagok a tartozásukat és szerkesztik a regisztrációikat

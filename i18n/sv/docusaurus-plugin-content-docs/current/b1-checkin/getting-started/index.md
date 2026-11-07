@@ -1,5 +1,7 @@
 ---
-title: "Komma igång"
+title: "Komma igång med B1 Checkin"
+sidebar_label: "Komma igång"
+description: "Ställ in B1 Checkin-kioskappen på en Android-surfplatta: installera den, logga in, välj din kyrka och anslut eventuellt en etikettskrivare."
 ---
 
 # Komma igång med B1 Church Checkin
@@ -27,9 +29,9 @@ Det tar bara några minuter att konfigurera B1 Church Checkin. Det här avsnitte
 
 När du startar appen för första gången går du igenom tre steg:
 
-1. **[Logga in](./logging-in)** -- Ange din e-postadress och ditt lösenord för att autentisera dig.
-2. **[Välj din kyrka](./logging-in)** -- Om ditt konto är kopplat till flera kyrkor väljer du vilken som kiosken ska betjäna.
-3. **[Konfigurera en skrivare](./printer-setup)** -- Ställ in en nätverksskrivare för etikettutskrift, eller hoppa över det här steget om du inte behöver etiketter.
+1. **[Logga in](./logging-in.md)** -- Ange din e-postadress och ditt lösenord för att autentisera dig.
+2. **[Välj din kyrka](./logging-in.md)** -- Om ditt konto är kopplat till flera kyrkor väljer du vilken som kiosken ska betjäna.
+3. **[Konfigurera en skrivare](./printer-setup.md)** -- Ställ in en nätverksskrivare för etikettutskrift, eller hoppa över det här steget om du inte behöver etiketter.
 
 Efter den första inloggningen sparar appen dina inloggningsuppgifter och kyrkval. Vid nästa start hoppar den automatiskt direkt till tjänstevyn.
 
@@ -43,6 +45,6 @@ Se till att din kyrkadministratör har konfigurerat tjänster, tjänstetider och
 
 ## Nästa steg
 
-- [Logga in](./logging-in) -- Detaljerade instruktioner för inloggning och val av kyrka.
-- [Skrivarinställningar](./printer-setup) -- Hur du hittar, väljer och testar din etikettskrivare.
-- [Incheckningsflödet](../check-in/) -- Lär dig hela incheckningsflödet när kiosken är konfigurerad.
+- [Logga in](./logging-in.md) -- Detaljerade instruktioner för inloggning och val av kyrka.
+- [Skrivarinställningar](./printer-setup.md) -- Hur du hittar, väljer och testar din etikettskrivare.
+- [Incheckningsflödet](../check-in/index.md) -- Lär dig hela incheckningsflödet när kiosken är konfigurerad.

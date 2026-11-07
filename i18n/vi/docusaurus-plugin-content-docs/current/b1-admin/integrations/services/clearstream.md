@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Kết nối Clearstream SMS với B1 Admin qua Zapier: gửi tin nhắn khi có khoản dâng hoặc biểu mẫu mới, và đưa phản hồi trở lại thành hồ sơ người."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Bật Zap. Khi được kích hoạt, B1 sẽ đăng ký webhook quà tặng; b�
 
 ## Xem thêm
 
-- [Text In Church](./text-in-church) — nền tảng SMS thay thế, có cấu trúc kết nối tương tự
-- [Mobile Message](./mobile-message) — dành cho các hội thánh ngoài Hoa Kỳ
-- [Tổng quan về Zapier](../zapier) — phần B1 của mọi công thức Zapier
+- [Text In Church](./text-in-church.md) — nền tảng SMS thay thế, có cấu trúc kết nối tương tự
+- [Mobile Message](./mobile-message.md) — dành cho các hội thánh ngoài Hoa Kỳ
+- [Tổng quan về Zapier](../zapier.md) — phần B1 của mọi công thức Zapier
 - [Tài liệu API của Clearstream](https://api-docs.clearstream.io/) — dành cho các tích hợp tùy chỉnh ngoài ứng dụng Zapier

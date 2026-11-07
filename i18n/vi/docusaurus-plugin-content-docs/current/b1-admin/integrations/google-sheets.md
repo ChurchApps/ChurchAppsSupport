@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Kết nối B1 Admin với Google Sheets qua tiện ích B1 Export để kéo dữ liệu Người, Dâng hiến, Nhóm và Điểm danh vào các tab bảng tính khi cần."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Lần xuất sẽ chạy ngầm dưới tài khoản Google của bạn. Nếu k
 - **"B1 rejected the API key (401)"**: khóa đã bị thu hồi hoặc nhập sai. Hãy tạo lại khóa và dán lại.
 - **"This API key lacks permission for /giving/donations (403)"**: khóa không có quyền `donations:read`. Hãy cập nhật quyền của khóa trong B1Admin.
 - **Bảng tính không làm mới** sau khi chạy: đảm bảo bạn đang xem đúng tên tab (`B1 People`, v.v.). Lần xuất sẽ tự tạo tab nếu tab chưa tồn tại.
-- **"Quota exceeded"**: Apps Script giới hạn hạn ngạch hằng ngày cho mỗi người dùng đối với `UrlFetchApp` (thường là hàng nghìn lệnh gọi mỗi ngày). Một hội thánh lớn có nhiều bản ghi có thể cần chia nhỏ việc xuất qua nhiều ngày, hoặc dùng [Make](./make) / một tích hợp tùy chỉnh để đồng bộ khối lượng lớn.
+- **"Quota exceeded"**: Apps Script giới hạn hạn ngạch hằng ngày cho mỗi người dùng đối với `UrlFetchApp` (thường là hàng nghìn lệnh gọi mỗi ngày). Một hội thánh lớn có nhiều bản ghi có thể cần chia nhỏ việc xuất qua nhiều ngày, hoặc dùng [Make](./make.md) / một tích hợp tùy chỉnh để đồng bộ khối lượng lớn.
 
 ## Tùy chỉnh tiện ích
 
@@ -108,6 +109,6 @@ Tiện ích là mã nguồn mở. Dự án Apps Script nằm trong kho `B1Integr
 
 ## Xem thêm
 
-- [Zapier](./zapier): để đồng bộ theo thời gian thực thay vì xuất theo yêu cầu
-- [Make](./make): để đồng bộ với các bước chuyển đổi phức tạp hơn
+- [Zapier](./zapier.md): để đồng bộ theo thời gian thực thay vì xuất theo yêu cầu
+- [Make](./make.md): để đồng bộ với các bước chuyển đổi phức tạp hơn
 - [API Keys (developer reference)](/docs/developer/api/api-keys)

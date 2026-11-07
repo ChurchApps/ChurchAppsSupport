@@ -1,5 +1,6 @@
 ---
 title: "Sakhiwo Sekunikela"
+description: "Incwadzi yekunikela kwe-ChurchApps: indlela i-B1 Admin ne-B1.church letfumela ngayo tipho ngetisebenti te-Stripe, PayPal, Kingdom Funding, nePaystack."
 ---
 
 # Sakhiwo Sekunikela
@@ -155,6 +156,6 @@ Tindlela tekukhokha kanye newebhook tibhala imigca lefanako ye-`donations` / `fu
 
 ## Emakhasi Lahlobene
 
-- [Ema-Endpoint Ekunikela](../api/endpoints/giving) — bubanti be-REST lobugcwele bwetipho, tinhlobo, ema-batch, ema-liso, tiphindzaphindzako, tindlela tekukhokha, kanye newebhook
-- [AppHelper](../shared-libraries/app-helper) — i-pakethi ye-npm lehambisa luhlu lwabahlinzeki bekukhokha kanye netisebentiso tekunikela
-- [Sakhiwo Semodyuli](../api/module-structure) — kutsi umodyuli we-GivingApi uhlelwe njani ku-server-side
+- [Ema-Endpoint Ekunikela](../api/endpoints/giving.md) — bubanti be-REST lobugcwele bwetipho, tinhlobo, ema-batch, ema-liso, tiphindzaphindzako, tindlela tekukhokha, kanye newebhook
+- [AppHelper](../shared-libraries/app-helper.md) — i-pakethi ye-npm lehambisa luhlu lwabahlinzeki bekukhokha kanye netisebentiso tekunikela
+- [Sakhiwo Semodyuli](../api/module-structure.md) — kutsi umodyuli we-GivingApi uhlelwe njani ku-server-side

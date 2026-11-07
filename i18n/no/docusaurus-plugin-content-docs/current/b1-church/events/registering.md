@@ -1,5 +1,7 @@
 ---
-title: "Melde deg på arrangementer"
+title: "Påmelding til arrangement i B1.church"
+sidebar_label: "Melde deg på arrangementer"
+description: "Meld deg på arrangement i B1.church: oppgi opplysninger, legg til familie, velg alternativer, bruk rabattkoder og betal eller bli satt på venteliste."
 ---
 
 # Melde deg på arrangementer
@@ -79,14 +81,14 @@ En bekreftelsesmelding vises med arrangementets detaljer og en liste over alle d
 
 ## Bli med på venteliste {#joining-a-waitlist}
 
-Hvis arrangementet er fullt og kirken din har aktivert venteliste, viser første steg: *«Dette arrangementet er fullt. Du kan bli med på ventelisten, så varsler vi deg hvis en plass blir ledig.»* Fullfør påmeldingen som vanlig -- betalingen hoppes over mens du står på ventelisten. Når en plass blir ledig, får du en e-post; hvis det skal betales, inneholder den en lenke for å fullføre betalingen. Du kan også sjekke statusen din og betale fra [Mine påmeldinger](./my-registrations).
+Hvis arrangementet er fullt og kirken din har aktivert venteliste, viser første steg: *«Dette arrangementet er fullt. Du kan bli med på ventelisten, så varsler vi deg hvis en plass blir ledig.»* Fullfør påmeldingen som vanlig -- betalingen hoppes over mens du står på ventelisten. Når en plass blir ledig, får du en e-post; hvis det skal betales, inneholder den en lenke for å fullføre betalingen. Du kan også sjekke statusen din og betale fra [Mine påmeldinger](./my-registrations.md).
 
 ## Endre eller avbestille en påmelding
 
-Hvis du er logget inn, kan du redigere eller avbestille påmeldingen din selv fra siden **Påmeldinger** i medlemsportalen -- se [Mine påmeldinger](./my-registrations). Gjester bør kontakte kontoret i kirken, og ansatte kan gjøre endringen fra påmeldingssiden i B1 Admin.
+Hvis du er logget inn, kan du redigere eller avbestille påmeldingen din selv fra siden **Påmeldinger** i medlemsportalen -- se [Mine påmeldinger](./my-registrations.md). Gjester bør kontakte kontoret i kirken, og ansatte kan gjøre endringen fra påmeldingssiden i B1 Admin.
 
 ## Relaterte artikler
 
 - [Oversikt over arrangementer](./index.md) -- Bla gjennom kommende arrangementer med påmelding
-- [Mine påmeldinger](./my-registrations) -- Se, rediger, betal restbeløp og avbestill påmeldingene dine
-- [Gi gaver](../giving/making-donations) -- Gi en gave i tillegg til deltakelse på et arrangement
+- [Mine påmeldinger](./my-registrations.md) -- Se, rediger, betal restbeløp og avbestill påmeldingene dine
+- [Gi gaver](../giving/making-donations.md) -- Gi en gave i tillegg til deltakelse på et arrangement

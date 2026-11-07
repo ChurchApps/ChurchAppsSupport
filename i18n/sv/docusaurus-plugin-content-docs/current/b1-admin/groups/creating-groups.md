@@ -1,5 +1,6 @@
 ---
 title: "Skapa grupper"
+description: "Ställ in en ny grupp i B1 Admin, från val av kategori och namn till inställningar för anslutningsregler, etiketter, meddelanden och närvaro."
 ---
 
 # Skapa grupper

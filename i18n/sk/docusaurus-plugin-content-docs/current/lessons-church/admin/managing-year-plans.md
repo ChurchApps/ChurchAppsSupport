@@ -1,5 +1,6 @@
 ---
 title: "Správa ročných plánov"
+description: "Ročný plán týždenných lekcií v Lessons.church: ukotvenie týždňov k Veľkej noci alebo Vianociam a zverejnenie pre cirkvi v B1 Admin."
 ---
 
 # Správa ročných plánov

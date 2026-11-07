@@ -1,5 +1,6 @@
 ---
 title: "Arkitektura ng Notification at Paalala"
+description: "Paano dinadaanan ng B1 Admin API ang notification, iskedyul na paalala, limitasyon ng email, at text opt-out sa iisang delivery funnel at preference gate."
 ---
 
 # Arkitektura ng Notification at Paalala
@@ -185,6 +186,6 @@ Sa lokal, maaaring i-trigger ang parehong lohika kapag hiniling gamit ang `npm r
 
 ## Mga Kaugnay na Pahina
 
-- [Real-time Architecture](../realtime) — ang WebSocket protocol at mga client primitive (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) na sinasakyan ng in-app delivery level
-- [Web Push Notifications](../web-push) — VAPID setup at ang browser Push API path na ginagamit ng push escalation level
-- [Messaging Endpoints](../api/endpoints/messaging) — kumpletong REST surface para sa mga message, conversation, connection, at notification/reminder route
+- [Real-time Architecture](../realtime.md) — ang WebSocket protocol at mga client primitive (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) na sinasakyan ng in-app delivery level
+- [Web Push Notifications](../web-push.md) — VAPID setup at ang browser Push API path na ginagamit ng push escalation level
+- [Messaging Endpoints](../api/endpoints/messaging.md) — kumpletong REST surface para sa mga message, conversation, connection, at notification/reminder route

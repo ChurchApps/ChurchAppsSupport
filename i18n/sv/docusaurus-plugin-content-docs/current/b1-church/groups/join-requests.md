@@ -1,5 +1,6 @@
 ---
 title: "Ansökan om att gå med i en grupp"
+description: "Begär att gå med i en grupp som kräver godkännande i B1.church, lägg till en valfri anteckning till ledaren, och följ eller avbryt din väntande begäran."
 ---
 
 # Ansökan om att gå med i en grupp

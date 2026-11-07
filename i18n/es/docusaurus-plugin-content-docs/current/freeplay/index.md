@@ -1,5 +1,6 @@
 ---
 title: "Descripción general de FreePlay"
+description: "Resumen de FreePlay, la app de TV para aulas con reproducción de lecciones sin conexión en Android TV, Fire TV y Apple TV, y enlaces a guías."
 ---
 
 # Descripción general de FreePlay
@@ -22,10 +23,10 @@ Nuestra **<a href="/guides/freeplay-b1admin" target="_blank">guía de configurac
 
 - **Reproducción sin conexión** - Descargue con anticipación videos y diapositivas de imágenes para que nunca dependa del Wi-Fi durante los servicios
 - **Administración de descargas** - Vea y administre todo el contenido descargado desde **Configuración** > **Descargas**
-- **Modo programado** - Cree listas de reproducción y colóquelas en un calendario en [admin.freeplay.church](https://admin.freeplay.church); los televisores vinculados las reproducen a la hora correcta sin que nadie presione Iniciar. Consulte [Modo programado](./scheduled-mode/)
+- **Modo programado** - Cree listas de reproducción y colóquelas en un calendario en [admin.freeplay.church](https://admin.freeplay.church); los televisores vinculados las reproducen a la hora correcta sin que nadie presione Iniciar. Consulte [Modo programado](./scheduled-mode/index.md)
 - **Vinculación con planes** - Vincule su dispositivo a un plan de servicio de la iglesia para coordinar el contenido entre las salas
 - **Proveedores de contenido** - Explore y descargue contenido de fuentes externas como [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox y OneDrive
-- **Anuncios** - Reproduzca en bucle una carpeta de diapositivas de un proveedor conectado. Consulte [Anuncios](./content-providers/announcements)
+- **Anuncios** - Reproduzca en bucle una carpeta de diapositivas de un proveedor conectado. Consulte [Anuncios](./content-providers/announcements.md)
 - **Compatible con el control remoto del televisor** - Navegue por toda la app con un control remoto estándar usando los botones direccionales y seleccionar
 - **Barra lateral plegable** - Una barra lateral delgada mantiene la navegación accesible sin saturar la pantalla
 
@@ -35,10 +36,10 @@ Cuando inicia FreePlay, se conecta a sus proveedores de contenido y busca el con
 
 ## Secciones
 
-- **[Primeros pasos](./getting-started/)** - Instale la app, ábrala y elija cómo conectarse
-- **[Modo programado](./scheduled-mode/)** - Vincule los televisores a un calendario y administrelos en FreePlay Admin
-- **[Modo de plan](./plan-mode/)** - Vincule a un plan de servicio de la iglesia
-- **[Proveedores de contenido](./content-providers/)** - Conéctese a fuentes de contenido externas
+- **[Primeros pasos](./getting-started/index.md)** - Instale la app, ábrala y elija cómo conectarse
+- **[Modo programado](./scheduled-mode/index.md)** - Vincule los televisores a un calendario y administrelos en FreePlay Admin
+- **[Modo de plan](./plan-mode/index.md)** - Vincule a un plan de servicio de la iglesia
+- **[Proveedores de contenido](./content-providers/index.md)** - Conéctese a fuentes de contenido externas
 
 :::info
 FreePlay es parte del conjunto de herramientas gratuitas y de código abierto [ChurchApps](https://churchapps.org) para iglesias.

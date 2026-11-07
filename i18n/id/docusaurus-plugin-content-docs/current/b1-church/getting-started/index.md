@@ -1,5 +1,7 @@
 ---
-title: "Memulai"
+title: "Memulai dengan Portal Anggota B1.church"
+sidebar_label: "Memulai"
+description: "Temukan situs B1.church gereja Anda, buat akun anggota, dan lihat apa yang ditawarkan portal, dari grup dan pemberian hingga check-in dan rencana."
 ---
 
 # Memulai dengan B1.church

@@ -1,5 +1,6 @@
 ---
 title: "Kutivakalisa & Timvumo"
+description: "Incwadzi yelogini ye-JWT ye-ChurchApps API, kungena ngetinyatselo letimbili, tinkhulumo ze-OAuth 2.0, nemodeli yemvume kubathuthukisi lakhe tihlanganisi."
 ---
 
 # Kutivakalisa & Timvumo
@@ -232,5 +233,5 @@ Kuletafula tema-endpoint kulo lonkhe lombhalo, loku kukhonjiswa kutsi **JWT** ka
 
 ## Emakhasi Lahlobene
 
-- [Module Structure](../module-structure) — Kuhlelwa kwema-controller, ema-repository, kanye nema-model
-- [Local Setup](../local-setup) — Kusebentisa i-API endzaweni yakho kutfutfuka
+- [Module Structure](../module-structure.md) — Kuhlelwa kwema-controller, ema-repository, kanye nema-model
+- [Local Setup](../local-setup.md) — Kusebentisa i-API endzaweni yakho kutfutfuka

@@ -1,5 +1,6 @@
 ---
 title: "Projektin yleiskatsaus"
+description: "Kartta ChurchAppsin repositorioista kategorioittain: kehykset, kehitysportit, tietokannat ja jaettujen @churchapps-pakettien yhteydet."
 ---
 
 # Projektin yleiskatsaus
@@ -13,7 +14,7 @@ ChurchAppsiin kuuluu noin 20 itsenäistä repositoriota, joista jokainen on julk
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna sen projektikategorian [esivaatimukset](./prerequisites), jonka parissa haluat työskennellä
+- Asenna sen projektikategorian [esivaatimukset](./prerequisites.md), jonka parissa haluat työskennellä
 
 </div>
 
@@ -72,7 +73,7 @@ Jaettu koodi julkaistaan npm:ään `@churchapps`-nimiavaruudessa, ja yllä oleva
 | `@churchapps/integration-sdk` | B1.church-integraatiotyökalupakki: webhookit, REST-asiakas, OAuth | Ulkoiset integraatiokehittäjät |
 | `@churchapps/texting` | SMS-palveluntarjoajan abstraktio | Api |
 
-Katso [Jaetut kirjastot](../shared-libraries/) työtilan asetuksista ja julkaisuprosessista.
+Katso [Jaetut kirjastot](../shared-libraries/index.md) työtilan asetuksista ja julkaisuprosessista.
 
 ## Projektien väliset suhteet
 
@@ -90,5 +91,5 @@ Kaikki käyttöliittymäsovellukset riippuvat paketista `@churchapps/helpers`. V
 
 ## Seuraavat vaiheet
 
-- **[Ympäristömuuttujat](./environment-variables)** -- Määritä `.env`-tiedostosi yhdistääksesi API:hin
-- **[API:n paikallinen asennus](../api/local-setup)** -- Asenna taustapalvelun API paikallisesti
+- **[Ympäristömuuttujat](./environment-variables.md)** -- Määritä `.env`-tiedostosi yhdistääksesi API:hin
+- **[API:n paikallinen asennus](../api/local-setup.md)** -- Asenna taustapalvelun API paikallisesti

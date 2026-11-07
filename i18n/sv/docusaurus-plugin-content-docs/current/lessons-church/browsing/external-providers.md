@@ -1,5 +1,6 @@
 ---
 title: "Externa leverantörer"
+description: "Så lägger tredjepartsleverantörer av läroplaner till sitt innehåll i Lessons.church med Open Lesson Format och hur du ansluter en från portalen."
 ---
 
 # Externa leverantörer

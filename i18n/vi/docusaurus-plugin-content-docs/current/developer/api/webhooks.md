@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Thiết lập webhook thời gian thực từ B1 Admin: đăng ký endpoint, chọn sự kiện, xác minh chữ ký HMAC, xử lý thử lại và gửi lại dữ liệu bị lỗi."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Vào **Settings → Developer → Webhooks → New Webhook**. Nhập tên, URL n
 
 ### Qua API
 
-Mọi endpoint nằm dưới đường dẫn gốc của module Membership là `/membership/webhooks`, và yêu cầu một trong hai thứ: JWT từ quản trị viên nhà thờ có quyền `Settings / Edit`, **hoặc một [API key](./api-keys) được tạo với phạm vi `settings:write`**. Các route này chấp nhận cả hai. Nhờ vậy, Zapier và Make có thể đăng ký webhook thay mặt nhà thờ khi một Zap hoặc scenario được bật.
+Mọi endpoint nằm dưới đường dẫn gốc của module Membership là `/membership/webhooks`, và yêu cầu một trong hai thứ: JWT từ quản trị viên nhà thờ có quyền `Settings / Edit`, **hoặc một [API key](./api-keys.md) được tạo với phạm vi `settings:write`**. Các route này chấp nhận cả hai. Nhờ vậy, Zapier và Make có thể đăng ký webhook thay mặt nhà thờ khi một Zap hoặc scenario được bật.
 
 ```http
 POST /membership/webhooks

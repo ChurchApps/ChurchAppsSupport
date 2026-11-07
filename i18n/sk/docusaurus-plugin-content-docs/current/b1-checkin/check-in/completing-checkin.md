@@ -1,5 +1,6 @@
 ---
 title: "Dokončenie prihlásenia"
+description: "Dokončite prihlásenie rodiny na kiosku v B1 Checkin: limity miestností, tlač štítkov, bezpečnostné kódy na vyzdvihnutie a ďalšie kroky aplikácie."
 ---
 
 # Dokončenie prihlásenia
@@ -13,9 +14,9 @@ Keď skontrolujete svoju domácnosť a prípadne priradíte skupiny, ste priprav
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Skontrolujte svoju domácnosť](./household-review) na obrazovke kontroly domácnosti
-- [Priraďte skupiny](./group-assignment) každému členovi rodiny, ktorý sa potrebuje prihlásiť do konkrétnej triedy alebo programu
-- Voliteľne [pridajte hostí](./adding-guests), ktorí navštevujú vašu rodinu
+- [Skontrolujte svoju domácnosť](./household-review.md) na obrazovke kontroly domácnosti
+- [Priraďte skupiny](./group-assignment.md) každému členovi rodiny, ktorý sa potrebuje prihlásiť do konkrétnej triedy alebo programu
+- Voliteľne [pridajte hostí](./adding-guests.md), ktorí navštevujú vašu rodinu
 
 </div>
 
@@ -28,10 +29,10 @@ To je všetko. Dochádzka vašej rodiny bola zaznamenaná.
 
 ## Plné miestnosti a pomer dobrovoľníkov
 
-Ak váš kostol nastavil [bezpečnostné limity](../../b1-admin/attendance/checkin-safety) pre svoje miestnosti, server ich pred uložením skontroluje:
+Ak váš kostol nastavil [bezpečnostné limity](../../b1-admin/attendance/checkin-safety.md) pre svoje miestnosti, server ich pred uložením skontroluje:
 
 - Ak je vybraná miestnosť **plná alebo zatvorená**, prihlásenie neprebehne a aplikácia uvedie názov miestnosti, aby ste mohli vybrať inú.
-- Ak má čas bohoslužby [harmonogram prihlasovania](../../b1-admin/attendance/setup#setting-a-check-in-schedule) a jeho okno na prihlasovanie momentálne nie je otvorené, prihlásenie do miestností tohto času bohoslužby je tiež odmietnuté. Obrazovka **Zatiaľ sa nemôžete prihlásiť** uvádza miestnosť s dôvodom „prihlasovanie momentálne nie je otvorené“; klepnutím na **Zmeniť miestnosti** vyberte iný čas bohoslužby alebo skupinu. (Časy bohoslužieb, ktoré sú už uzavreté, sa zobrazujú ako **Zatvorené** na [obrazovke domácnosti](./household-review) a nedajú sa vybrať, takže túto správu zvyčajne uvidíte len vtedy, ak okno zatvorí počas prihlasovania.)
+- Ak má čas bohoslužby [harmonogram prihlasovania](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho okno na prihlasovanie momentálne nie je otvorené, prihlásenie do miestností tohto času bohoslužby je tiež odmietnuté. Obrazovka **Zatiaľ sa nemôžete prihlásiť** uvádza miestnosť s dôvodom „prihlasovanie momentálne nie je otvorené“; klepnutím na **Zmeniť miestnosti** vyberte iný čas bohoslužby alebo skupinu. (Časy bohoslužieb, ktoré sú už uzavreté, sa zobrazujú ako **Zatvorené** na [obrazovke domácnosti](./household-review.md) a nedajú sa vybrať, takže túto správu zvyčajne uvidíte len vtedy, ak okno zatvorí počas prihlasovania.)
 - Domácnosť, ktorá sa prihlásila na skorší čas bohoslužby, sa môže neskôr vrátiť a pridať otvorený čas bohoslužby, a to aj po tom, ako skoršie okno zatvorilo. Ich existujúce prihlásenia sa zachovajú a nespôsobia, že nové prihlásenie bude odmietnuté.
 - Ak má detská miestnosť na svoj pomer **nedostatok dobrovoľníkov**, aplikácia buď zobrazí upozornenie, ktoré môže zamestnanec potvrdiť, aby mohol pokračovať, alebo prihlásenie úplne zablokuje – podľa toho, ako váš kostol nastavil presadzovanie pomeru.
 
@@ -49,7 +50,7 @@ Rovnaký bezpečnostný kód sa objaví na menovke dieťaťa aj na lístku na vy
 Bezpečnostný kód sa pri každom prihlásení vygeneruje nanovo a obsahuje iba spoluhlásky a číslice (samohlásky sú vynechané, aby sa nevytvárali nevhodné slová).
 
 :::warning
-Ak sa štítky netlačia, otvorte nastavenia správcu klepnutím na **logo kostola** sedemkrát a potom klepnite na **Zmeniť tlačiareň**, aby ste overili pripojenie tlačiarne. Kroky na riešenie problémov nájdete v časti [Nastavenie tlačiarne](../getting-started/printer-setup).
+Ak sa štítky netlačia, otvorte nastavenia správcu klepnutím na **logo kostola** sedemkrát a potom klepnite na **Zmeniť tlačiareň**, aby ste overili pripojenie tlačiarne. Kroky na riešenie problémov nájdete v časti [Nastavenie tlačiarne](../getting-started/printer-setup.md).
 :::
 
 ## Čo sa stane po prihlásení

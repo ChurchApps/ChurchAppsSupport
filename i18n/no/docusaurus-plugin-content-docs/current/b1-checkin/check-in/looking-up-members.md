@@ -1,5 +1,6 @@
 ---
 title: "Slå opp medlemmer"
+description: "Finn familien din på B1 Checkin-kiosken ved å søke etter telefonsifre eller navn, og registrer deg som gjest hvis du er besøkende første gang."
 ---
 
 # Slå opp medlemmer
@@ -13,7 +14,7 @@ Etter at du har valgt en gudstjeneste, kommer du til oppslagsskjermen for medlem
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Velg en gudstjeneste](./selecting-service) på tjenesteskjermen
+- [Velg en gudstjeneste](./selecting-service.md) på tjenesteskjermen
 - Kontroller at husstanden din er [lagt inn i systemet](../../b1-admin/people/adding-people.md) av en administrator i menigheten
 
 </div>
@@ -45,7 +46,7 @@ Appen søker etter medlemmer med navn som samsvarer med det du skrev.
 
 Søkeresultatene vises som kort under søkefeltet. Hvert kort viser personens **navn** og **bilde** (hvis det er registrert).
 
-Trykk på kortet til en person for å velge vedkommende. Appen henter alle medlemmene i personens husstand og tar deg til [husstandsoversikten](./household-review).
+Trykk på kortet til en person for å velge vedkommende. Appen henter alle medlemmene i personens husstand og tar deg til [husstandsoversikten](./household-review.md).
 
 :::tip
 Å søke på de fire siste sifrene i telefonnummeret er den raskeste måten å finne familien din på. Oppmuntre medlemmene til å bruke denne metoden for å få en raskere innsjekking.
@@ -60,7 +61,7 @@ Hvis det ikke finnes treff, viser appen en melding om det. Kontroller sifrene el
 Hvis menigheten din har slått på QR-registrering av gjester, vises en lenke **Registrer deg som gjest** under søket på oppslagsskjermen. Førstegangsbesøkende kan bruke den til å legge familien sin inn i menighetens system før de sjekker inn.
 
 1. Trykk på **Registrer deg som gjest**. Et vindu åpnes med en QR-kode og meldingen «Skann for å registrere deg som gjest».
-2. Velg hvordan du vil fylle ut [registreringsskjemaet for gjester](../../b1-church/checkin/guest-registration):
+2. Velg hvordan du vil fylle ut [registreringsskjemaet for gjester](../../b1-church/checkin/guest-registration.md):
    - **På telefonen** -- Skann QR-koden, fyll ut skjemaet på telefonen og trykk på **OK** for å lukke vinduet.
    - **På kiosken** -- Trykk på **Registrer her** for å åpne det samme skjemaet direkte på nettbrettet. Fyll det ut og trykk på **Registrer**, og trykk deretter på **Ferdig** (eller tilbakepila) for å gå tilbake til oppslagsskjermen.
 3. Når du er registrert, søker du opp familien din på navn eller telefonnummer for å sjekke inn.
@@ -71,7 +72,7 @@ Skjemaet som åpnes med **Registrer her**, blir værende på registreringssiden 
 
 ## Skrive ut etiketter for innsjekking på telefon
 
-Familier som allerede har sjekket inn på telefonen via [selvinnsjekking i B1 Church](../../b1-church/checkin/self-checkin), kan skrive ut navnelappene sine på kiosken uten å søke seg opp.
+Familier som allerede har sjekket inn på telefonen via [selvinnsjekking i B1 Church](../../b1-church/checkin/self-checkin.md), kan skrive ut navnelappene sine på kiosken uten å søke seg opp.
 
 1. Trykk på knappen **Skann kode** (QR-kodeikonet) på oppslagsskjermen.
 2. Hold QR-koden fra telefonen opp mot kameraet. Hvis appen ber om tilgang til kameraet, trykker du på **Tillat kamera**. Frontkameraet brukes som standard. Trykk på vendeknappen for å bytte.
@@ -81,4 +82,4 @@ Skanningen skriver bare ut etiketter -- oppmøtet ble allerede registrert da fam
 
 ## Neste steg
 
-Når du har valgt en person, [går du gjennom husstanden din](./household-review) og håndterer gruppetilhørighet.
+Når du har valgt en person, [går du gjennom husstanden din](./household-review.md) og håndterer gruppetilhørighet.

@@ -1,5 +1,7 @@
 ---
-title: "Acara"
+title: "Acara Gereja di B1.church: Telusuri dan Daftar"
+sidebar_label: "Acara"
+description: "Telusuri acara gereja mendatang di B1.church, cek status pendaftaran, dan daftar atau tambahkan acara ke kalender Anda."
 ---
 
 # Acara
@@ -43,7 +45,7 @@ Jika sebuah acara sudah penuh, Anda mungkin masih dapat bergabung dalam **daftar
 
 ## Pelajari Lebih Lanjut
 
-- [Mendaftar untuk Acara](./registering) -- Panduan langkah demi langkah untuk mendaftar acara
-- [Pendaftaran Saya](./my-registrations) -- Lihat pendaftaran Anda, bayar saldo, edit, atau batalkan
-- [Mengajukan Acara & Ruangan](./requesting-events) -- Ajukan acara dengan ruangan dan sumber daya yang dibutuhkan
-- [Self Check-In](../checkin/self-checkin) -- Lakukan check-in saat Anda tiba di acara
+- [Mendaftar untuk Acara](./registering.md) -- Panduan langkah demi langkah untuk mendaftar acara
+- [Pendaftaran Saya](./my-registrations.md) -- Lihat pendaftaran Anda, bayar saldo, edit, atau batalkan
+- [Mengajukan Acara & Ruangan](./requesting-events.md) -- Ajukan acara dengan ruangan dan sumber daya yang dibutuhkan
+- [Self Check-In](../checkin/self-checkin.md) -- Lakukan check-in saat Anda tiba di acara

@@ -1,5 +1,7 @@
 ---
-title: "Freiwilligen-Anmeldung"
+title: "Ehrenamtliche Anmeldung in der B1 Mobile App"
+sidebar_label: "Freiwilligen-Anmeldung"
+description: "Offene Ehrenamtsstellen für kommende Gottesdienste finden, sich anmelden oder eine Anmeldung in der B1 Mobile App entfernen. Mit Fristen und Platzbegrenzung."
 ---
 
 # Freiwilligen-Anmeldung
@@ -13,7 +15,7 @@ Durchsehen Sie verfügbare ehrenamtliche Positionen und melden Sie sich direkt i
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und sich [anmelden](../getting-started/logging-in) bei Ihrem Konto
+- [B1 Mobile installieren](../getting-started/installing.md) und sich [anmelden](../getting-started/logging-in.md) bei Ihrem Konto
 - Ihre Gemeindeverwaltung muss die Selbsteintragung für mindestens eine Position aktiviert haben
 
 </div>
@@ -60,5 +62,5 @@ Aktivieren Sie [Push-Benachrichtigungen](../community/notifications.md), um übe
 
 ## Verwandte Artikel
 
-- [Pläne anzeigen](./viewing-plans) -- Ihre zugewiesenen Pläne und Gottesdienstabläufe ansehen
+- [Pläne anzeigen](./viewing-plans.md) -- Ihre zugewiesenen Pläne und Gottesdienstabläufe ansehen
 - [Benachrichtigungen](../community/notifications.md) -- Bleiben Sie über Dienstzuweisungen auf dem Laufenden

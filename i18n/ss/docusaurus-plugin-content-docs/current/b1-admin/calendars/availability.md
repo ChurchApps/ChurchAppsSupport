@@ -1,5 +1,6 @@
 ---
 title: "Ikhalenda Lekutfolakala"
+description: "Setfula emakamelo netinsita ku-B1 Admin, ubhukhe ekhalendeni, engeze sikhatsi sekulungiselela, uphatse kubhukha lokuphindwako nalokudzinga kuvunywa."
 ---
 
 # Ikhalenda Lekutfolakala
@@ -13,7 +14,7 @@ Ikhalenda Lekutfolakala likuniketa kubuka lokusetulu kwako konkhe kubhukha kwema
 <div class="prereqs">
 <h4>Ngembikwe Kucala</h4>
 
-- Hlela [likamelo nome insita](rooms-resources) linye noma ngesikhatsi ku-Rooms & Resources
+- Hlela [likamelo nome insita](./rooms-resources.md) linye noma ngesikhatsi ku-Rooms & Resources
 - Udzinga kufinyelela kwekuhlela ku-Calendars ku-B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Sebentisa i-**Filter** dropdown ngesencele lengetulu kuze unciphise ikhalenda li
 6. Chofota **Save** kutfumela kubhukha.
 
 :::info
-Nangabe likamelo nome insita line-**Approval Group** lehleliwe, kubhukha kutakuvela njenge-**Pending** kuze kufike umholi walelocembu ekuyivumeleni. Buka [Kuvunywa Kwemakhalenda](approvals) kutfola inchubo yekuvunywa.
+Nangabe likamelo nome insita line-**Approval Group** lehleliwe, kubhukha kutakuvela njenge-**Pending** kuze kufike umholi walelocembu ekuyivumeleni. Buka [Kuvunywa Kwemakhalenda](./approvals.md) kutfola inchubo yekuvunywa.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Ikhalenda litawukhombisa nome ngukuphi kungahambisani ngembikwe usindza. Nangabe
 
 ## Tihloko Letihlobene
 
-- [Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi](rooms-resources) — hlela tindzawo letingabhukhwa kanye netimphahla
-- [Kuvunywa Kwemakhalenda](approvals) — vumela nome unqabe tetisandzo tekubhukha
-- [Dala Emakhalenda](creating-calendars) — phatsa emakhalenda emicimbi
+- [Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi](./rooms-resources.md) — hlela tindzawo letingabhukhwa kanye netimphahla
+- [Kuvunywa Kwemakhalenda](./approvals.md) — vumela nome unqabe tetisandzo tekubhukha
+- [Dala Emakhalenda](./creating-calendars.md) — phatsa emakhalenda emicimbi

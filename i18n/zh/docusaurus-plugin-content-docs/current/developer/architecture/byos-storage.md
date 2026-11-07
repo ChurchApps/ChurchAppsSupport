@@ -1,5 +1,6 @@
 ---
 title: "自带存储"
+description: "在 B1 Admin 中连接您自己的 Google Drive、Dropbox、OneDrive 或兼容 S3 的存储桶，使教会文件上传可绕过 100MB 平台限制。"
 ---
 
 # 自带存储（BYOS）
@@ -8,7 +9,7 @@ title: "自带存储"
 
 ## 提供商接缝
 
-BYOS 重用为 [MinistryStuff](./ministrystuff) 构建的存储接缝：`IStorageProvider`（`Packages/apihelper`）由 `StorageResolver` 从 `content.storageProviders` 表按教会解析。不像单一 `churchapps`/`ministrystuff` 提供商，BYOS 提供商持有每教会凭据，所以 `StorageResolver.forChurch` 从教会的行构造每请求实例。实现在 `Api/src/modules/content/helpers/` 旁边的解析器：`GoogleDriveStorageProvider`、`DropboxStorageProvider`、`OneDriveStorageProvider`、`S3CompatibleStorageProvider`，加 `ByosAuth`（OAuth 令牌交换 + 单飞刷新 -- Dropbox 轮换刷新令牌，所以刷新按 `ProviderProxyController` 做的相同方式重复删除）。
+BYOS 重用为 [MinistryStuff](./ministrystuff.md) 构建的存储接缝：`IStorageProvider`（`Packages/apihelper`）由 `StorageResolver` 从 `content.storageProviders` 表按教会解析。不像单一 `churchapps`/`ministrystuff` 提供商，BYOS 提供商持有每教会凭据，所以 `StorageResolver.forChurch` 从教会的行构造每请求实例。实现在 `Api/src/modules/content/helpers/` 旁边的解析器：`GoogleDriveStorageProvider`、`DropboxStorageProvider`、`OneDriveStorageProvider`、`S3CompatibleStorageProvider`，加 `ByosAuth`（OAuth 令牌交换 + 单飞刷新 -- Dropbox 轮换刷新令牌，所以刷新按 `ProviderProxyController` 做的相同方式重复删除）。
 
 `storageProviders` 携带凭据：`accessToken`/`refreshToken`/`tokenExpiresAt`（加密，OAuth 三联）或 `apiKey`/`apiSecret` + `settings` JSON（`{endpoint, region, bucket, publicBase}`，S3）。令牌从不到达客户端 -- `GET /content/storage/providers` 掩盖秘密并返回 `connected` 布尔值。
 

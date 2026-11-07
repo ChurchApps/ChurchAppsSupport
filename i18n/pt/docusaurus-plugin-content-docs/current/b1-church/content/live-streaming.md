@@ -1,5 +1,7 @@
 ---
-title: "Transmissão ao Vivo"
+title: "Assistindo Transmissões ao Vivo no B1.church"
+sidebar_label: "Transmissão ao Vivo"
+description: "Assista aos cultos ao vivo da sua igreja na página Stream do B1.church e participe do chat junto com a transmissão, sem precisar de login."
 ---
 
 # Transmissão ao Vivo

@@ -1,5 +1,7 @@
 ---
-title: "Jumalanpalveluksen järjestys"
+title: "Palvelujärjestys B1 Adminissa"
+sidebar_label: "Jumalanpalveluksen järjestys"
+description: "Määritä B1 Adminissa jumalanpalveluksen järjestys: lisää lauluja, oppitunteja ja omia kohtia, järjestä ne osioihin ja tulosta ajo-ohje."
 ---
 
 # Jumalanpalveluksen järjestys

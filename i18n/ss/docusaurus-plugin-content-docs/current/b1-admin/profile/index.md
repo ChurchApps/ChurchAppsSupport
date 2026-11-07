@@ -1,5 +1,7 @@
 ---
-title: "Iphrofayela"
+title: "Tilungiselelo Tephrofayili Nemidivayisi ku-B1 Admin"
+sidebar_label: "Iphrofayela"
+description: "Vuselela ligama, imeyili, liphasiwedi, kuqinisekisa kabili, sitayela, nemidivayisi exhunyiwe kuphrofayili yakho ye-B1 Admin, nekuvuma tishintjo tetiprofayili."
 ---
 
 # Iphrofayela

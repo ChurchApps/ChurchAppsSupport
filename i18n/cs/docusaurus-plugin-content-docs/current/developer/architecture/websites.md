@@ -1,12 +1,13 @@
 ---
 title: "Směrování webu a více webů"
+description: "Jak B1.church mapuje subdomény a vlastní domény na správnou církev nebo sekundární web a jak hraniční vrstva Caddy zajišťuje TLS pro vlastní domény."
 ---
 
 # Směrování webu a více webů
 
 <div class="article-intro">
 
-Jeden sbor může nyní provozovat více než jeden samostatný web a každý z nich může být umístěn na subdoméně `*.b1.church` nebo na plně vlastní doméně sboru. Tato stránka popisuje směrovací vrstvu, která stojí *pod* tvorbou webu: jak se příchozí požadavek přiřadí ke sboru **a** ke konkrétnímu webu, datový model více webů (zástupná hodnota `siteId`, která zajišťuje, že se všechny dříve existující weby zobrazují beze změny), a okraj pro vlastní domény, tedy vlastní proxy Caddy na EC2, která ukončuje TLS a přepisuje každou doménu sboru na její nadřazený `*.b1.church`. Informace o tom, co se zobrazí poté, co je požadavek přiřazen, tedy strom stránek, sekcí a prvků, najdete v části [Tvorba webu](./website-builder).
+Jeden sbor může nyní provozovat více než jeden samostatný web a každý z nich může být umístěn na subdoméně `*.b1.church` nebo na plně vlastní doméně sboru. Tato stránka popisuje směrovací vrstvu, která stojí *pod* tvorbou webu: jak se příchozí požadavek přiřadí ke sboru **a** ke konkrétnímu webu, datový model více webů (zástupná hodnota `siteId`, která zajišťuje, že se všechny dříve existující weby zobrazují beze změny), a okraj pro vlastní domény, tedy vlastní proxy Caddy na EC2, která ukončuje TLS a přepisuje každou doménu sboru na její nadřazený `*.b1.church`. Informace o tom, co se zobrazí poté, co je požadavek přiřazen, tedy strom stránek, sekcí a prvků, najdete v části [Tvorba webu](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### Aktuální stav: statická konfigurace, žádný běhový stav
 
-Box (Windows EC2 za trvalou Elastic IP) provozuje Caddy ze **statického Caddyfile**. Obsahuje TLS na vyžádání, jehož `ask` ukazuje na `/membership/domains/authorize`, a soubor mapy hostitel→upstream. Ten každých 5 minut obnovuje z `/membership/domains/hostmap` naplánovaná úloha, která končí elegantním `caddy reload`. Konfigurace přežije restarty bez jakéhokoli běhového stavu, takže není potřeba žádné opětovné „priming". Neznámé SNI je **odmítnuto na úrovni TLS**, protože pro hostitele, který `authorize` odmítne, se nevytvoří žádný certifikát. Autorizovaný, ale zatím nenamapovaný hostitel (zcela nová doména v okně synchronizace) dostane čistou chybu 404. Nové domény jsou směrovatelné do ~5 minut od uložení. Jejich certifikáty se vytvoří při prvním zásahu. Nastavení a sestavení, provoz a ověřená úskalí: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy).
+Box (Windows EC2 za trvalou Elastic IP) provozuje Caddy ze **statického Caddyfile**. Obsahuje TLS na vyžádání, jehož `ask` ukazuje na `/membership/domains/authorize`, a soubor mapy hostitel→upstream. Ten každých 5 minut obnovuje z `/membership/domains/hostmap` naplánovaná úloha, která končí elegantním `caddy reload`. Konfigurace přežije restarty bez jakéhokoli běhového stavu, takže není potřeba žádné opětovné „priming". Neznámé SNI je **odmítnuto na úrovni TLS**, protože pro hostitele, který `authorize` odmítne, se nevytvoří žádný certifikát. Autorizovaný, ale zatím nenamapovaný hostitel (zcela nová doména v okně synchronizace) dostane čistou chybu 404. Nové domény jsou směrovatelné do ~5 minut od uložení. Jejich certifikáty se vytvoří při prvním zásahu. Nastavení a sestavení, provoz a ověřená úskalí: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md).
 
 ### Starší běhové odesílání: cesta pro návrat, čeká na smazání
 
@@ -209,8 +210,8 @@ Box (Windows EC2 za trvalou Elastic IP) provozuje Caddy ze **statického Caddyfi
 
 ## Související stránky
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy): samotný okrajový box, tedy čerstvé nastavení, služba WinSW, úloha synchronizace mapy a provozní úskalí
-- [Tvorba webu](./website-builder): strom stránek, sekcí a prvků, renderery, blog, SEO a generování pomocí AI (co se zobrazí poté, co je požadavek přiřazen ke sboru nebo webu)
-- [Content Endpoints](../api/endpoints/content): REST rozhraní pro stránky, bloky, odkazy a globální styly, nyní všechny rozpoznávají `?siteId=`
-- [B1App](../web-apps/b1-app): aplikace Next.js, která hostí middleware a směrování `[sdSlug]`
-- [Nasazení webových aplikací](../deployment/web-apps): jak se B1App nasazuje na Vercel
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md): samotný okrajový box, tedy čerstvé nastavení, služba WinSW, úloha synchronizace mapy a provozní úskalí
+- [Tvorba webu](./website-builder.md): strom stránek, sekcí a prvků, renderery, blog, SEO a generování pomocí AI (co se zobrazí poté, co je požadavek přiřazen ke sboru nebo webu)
+- [Content Endpoints](../api/endpoints/content.md): REST rozhraní pro stránky, bloky, odkazy a globální styly, nyní všechny rozpoznávají `?siteId=`
+- [B1App](../web-apps/b1-app.md): aplikace Next.js, která hostí middleware a směrování `[sdSlug]`
+- [Nasazení webových aplikací](../deployment/web-apps.md): jak se B1App nasazuje na Vercel

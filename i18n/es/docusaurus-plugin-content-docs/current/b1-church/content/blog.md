@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Cómo explorar el blog de B1.church y las fuentes RSS"
+sidebar_label: "Blog"
+description: "Explora y filtra el blog de B1.church de tu iglesia por categoría o etiqueta, navega entre entradas antiguas o sigue las nuevas mediante fuentes RSS."
 ---
 
 # Blog

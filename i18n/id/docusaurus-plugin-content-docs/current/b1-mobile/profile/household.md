@@ -1,5 +1,6 @@
 ---
 title: "Rumah Tangga"
+description: "Lihat siapa saja di rumah tangga Anda dan bagaimana anggota saling terhubung di tab Profil B1 Mobile, yang diandalkan oleh check-in dan fitur lainnya."
 ---
 
 # Rumah Tangga
@@ -13,7 +14,7 @@ Tab **Rumah Tangga** di layar Profil Anda menampilkan anggota keluarga Anda. Di 
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Instal B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Instal B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 
 </div>
 
@@ -33,7 +34,7 @@ Informasi rumah tangga Anda digunakan oleh beberapa fitur di B1 Mobile dan di se
 
 - **Check-in** -- Saat Anda [melakukan check-in](../checkin/self-checkin.md) untuk sebuah ibadah atau acara, Anda dapat melakukan check-in untuk seluruh anggota rumah tangga sekaligus, alih-alih melakukan check-in satu per satu.
 - **Catatan gereja** -- Gereja Anda menggunakan data rumah tangga untuk menjaga catatan keluarga tetap teratur dan untuk berkomunikasi dengan keluarga Anda sebagai satu kesatuan.
-- **Direktori** -- Anggota lain mungkin dapat melihat informasi rumah tangga Anda di [direktori gereja](../community/member-directory.md), tergantung pada [pengaturan privasi](./privacy-settings) Anda.
+- **Direktori** -- Anggota lain mungkin dapat melihat informasi rumah tangga Anda di [direktori gereja](../community/member-directory.md), tergantung pada [pengaturan privasi](./privacy-settings.md) Anda.
 
 ## Melihat Rumah Tangga Anda
 
@@ -47,10 +48,10 @@ Keanggotaan rumah tangga biasanya dikelola oleh administrator gereja Anda. Jika 
 
 ## Menjaga Informasi Tetap Terkini
 
-Jika detail anggota keluarga perlu diperbarui, mereka dapat [mengedit profil mereka sendiri](./editing-profile), atau Anda dapat menghubungi administrator gereja Anda untuk melakukan perubahan. Menjaga informasi rumah tangga tetap akurat memastikan fitur seperti [check-in](../checkin/) berjalan lancar untuk seluruh keluarga Anda.
+Jika detail anggota keluarga perlu diperbarui, mereka dapat [mengedit profil mereka sendiri](./editing-profile.md), atau Anda dapat menghubungi administrator gereja Anda untuk melakukan perubahan. Menjaga informasi rumah tangga tetap akurat memastikan fitur seperti [check-in](../checkin/index.md) berjalan lancar untuk seluruh keluarga Anda.
 
 ## Artikel Terkait
 
 - [Self Check-In](../checkin/self-checkin.md) -- Lakukan check-in untuk anggota rumah tangga Anda pada ibadah
-- [Mengedit Profil Anda](./editing-profile) -- Perbarui informasi pribadi Anda sendiri
-- [Pengaturan Privasi](./privacy-settings) -- Kendalikan apa yang dapat dilihat orang lain tentang rumah tangga Anda
+- [Mengedit Profil Anda](./editing-profile.md) -- Perbarui informasi pribadi Anda sendiri
+- [Pengaturan Privasi](./privacy-settings.md) -- Kendalikan apa yang dapat dilihat orang lain tentang rumah tangga Anda

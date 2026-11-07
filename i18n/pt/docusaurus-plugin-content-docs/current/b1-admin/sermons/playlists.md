@@ -1,5 +1,6 @@
 ---
 title: "Listas de Reprodução"
+description: "Agrupe seus sermões em séries no B1 Admin para que visitantes do seu site no B1.church possam navegar e acompanhar cada série na ordem."
 ---
 
 # Listas de Reprodução
@@ -39,10 +40,10 @@ Crie suas listas de reprodução primeiro antes de adicionar sermões. Dessa for
 
 ## Adicionando Sermões a uma Lista de Reprodução
 
-Quando você [adiciona ou edita um sermão](managing-sermons), você o atribui a uma lista de reprodução usando o menu suspenso **Lista de Reprodução**. Todos os sermões atribuídos à mesma lista de reprodução são agrupados e exibidos em ordem no seu site.
+Quando você [adiciona ou edita um sermão](./managing-sermons.md), você o atribui a uma lista de reprodução usando o menu suspenso **Lista de Reprodução**. Todos os sermões atribuídos à mesma lista de reprodução são agrupados e exibidos em ordem no seu site.
 
 :::info
-Você também pode atribuir sermões a listas de reprodução durante [Importação em Lote](bulk-import). Ao importar do YouTube ou Vimeo, selecione uma lista de reprodução no menu suspenso **Importar Para Lista de Reprodução** antes de clicar em **Importar**.
+Você também pode atribuir sermões a listas de reprodução durante [Importação em Lote](./bulk-import.md). Ao importar do YouTube ou Vimeo, selecione uma lista de reprodução no menu suspenso **Importar Para Lista de Reprodução** antes de clicar em **Importar**.
 :::
 
 ## Como Listas de Reprodução Aparecem no Seu Site
@@ -55,5 +56,5 @@ Listas de reprodução são exibidas no seu site B1.church como coleções naveg
 
 ## Próximas Etapas
 
-- [Gerenciando Sermões](managing-sermons) -- Adicione sermões individuais às suas listas de reprodução
-- [Importação em Lote](bulk-import) -- Importe vários sermões e atribua-os às listas de reprodução
+- [Gerenciando Sermões](./managing-sermons.md) -- Adicione sermões individuais às suas listas de reprodução
+- [Importação em Lote](./bulk-import.md) -- Importe vários sermões e atribua-os às listas de reprodução

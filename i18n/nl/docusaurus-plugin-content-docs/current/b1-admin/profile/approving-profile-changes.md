@@ -1,5 +1,6 @@
 ---
 title: "Profielwijzigingen goedkeuren"
+description: "Bekijk en keur wijzigingen in ledenprofielen goed in B1 Admin en stel de Directory Approval Group in die ze ontvangt."
 ---
 
 # Profielwijzigingen goedkeuren

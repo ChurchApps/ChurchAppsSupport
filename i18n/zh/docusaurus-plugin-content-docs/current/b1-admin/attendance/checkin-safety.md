@@ -1,5 +1,6 @@
 ---
 title: "签到安全"
+description: "在 B1 Admin 中配置儿童安全控制：教室容量、志愿者比例、可信接送名单，以及签到时发送的“通知家长”短信。"
 ---
 
 # 签到安全
@@ -15,7 +16,7 @@ B1 包括一套针对签到的儿童安全控制：房间容量限制和志愿�
 
 - 设置您的[出勤结构](setup.md)和[签到自助服务终端](check-in.md)
 - 房间是[小组](../groups/creating-groups.md)，与服务时间相关联 — 下面的安全设置位于小组上
-- 通知家长和紧急广播需要已连接的短信服务提供商（[Text In Church](../integrations/services/text-in-church)、[Clearstream](../integrations/services/clearstream) 或 Mutual Ministry）
+- 通知家长和紧急广播需要已连接的短信服务提供商（[Text In Church](../integrations/services/text-in-church.md)、[Clearstream](../integrations/services/clearstream.md) 或 Mutual Ministry）
 
 </div>
 
@@ -90,12 +91,12 @@ B1 包括一套针对签到的儿童安全控制：房间容量限制和志愿�
 
 选择退出文本或文件中没有手机号码的人员会被自动跳过 — 自助服务终端报告发送的消息数和跳过的数量。
 
-有关自助服务终端的演练，请参阅[签出与儿童安全](../../b1-checkin/check-in/checking-out)。
+有关自助服务终端的演练，请参阅[签出与儿童安全](../../b1-checkin/check-in/checking-out.md)。
 
 ## 相关文章
 
 - [签到](check-in.md) — 自助服务终端设置和硬件
-- [签出与儿童安全](../../b1-checkin/check-in/checking-out) — 自助服务终端签出、接送验证和通知流
+- [签出与儿童安全](../../b1-checkin/check-in/checking-out.md) — 自助服务终端签出、接送验证和通知流
 - [创建小组](../groups/creating-groups.md) — 房间设置所在的位置
 - [出勤设置](setup.md) — 服务、服务时间和房间分配
 - [私人消息的最小年龄](../settings/mobile-app.md#member-directory--messaging-settings) — 在将儿童保留在目录中的同时，阻止与儿童的新私人消息对话

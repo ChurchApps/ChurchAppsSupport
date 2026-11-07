@@ -1,5 +1,6 @@
 ---
 title: "Používanje urejevalnika strani"
+description: "V B1 Admin nastavite urejevalnik strani: dodajte razdelke in elemente, jih oblikujte, predogledate na mobilnih napravah in objavite osnutke. Zajema tudi razveljavitev in zgodovino različic."
 ---
 
 # Používanje urejevalnika strani
@@ -17,8 +18,8 @@ Urejevalnik strani B1 je vizualni graditelj s povleci in spusti, ki vam omogoča
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Dokončajte [začetno nastavitev](initial-setup), da nastavite svojo spletno stran
-- Ustvarite vsaj eno stran v [upravljanju strani](managing-pages)
+- Dokončajte [začetno nastavitev](./initial-setup.md), da nastavite svojo spletno stran
+- Ustvarite vsaj eno stran v [upravljanju strani](./managing-pages.md)
 - Za dostop do urejevalnika potrebujete dovoljenje **content.edit**
 
 </div>
@@ -31,7 +32,7 @@ Urejevalnik strani B1 je vizualni graditelj s povleci in spusti, ki vam omogoča
 Urejevalnik se odpre na celotnem zaslonu. Levi zaslon prikazuje strukturo vaše strani in razpoložljive vsebinske elemente; osrednje območje prikazuje predogled strani v živo.
 
 :::info
-Urejevalnik se vedno prikazuje v svetlem načinu, ne glede na nastavitev teme v programu B1 Admin, in uporablja pisave za naslove in besedilo, ki ste jih izbrali v [videzu](appearance). Tako predogled natančno ustreza temu, kako bo stran videti obiskovalcem spletne strani.
+Urejevalnik se vedno prikazuje v svetlem načinu, ne glede na nastavitev teme v programu B1 Admin, in uporablja pisave za naslove in besedilo, ki ste jih izbrali v [videzu](./appearance.md). Tako predogled natančno ustreza temu, kako bo stran videti obiskovalcem spletne strani.
 :::
 
 ## Struktura strani: oddelki in elementi
@@ -61,7 +62,7 @@ Ste že zgradili oddelek, a želite drugačno strukturo? Uporabite preklopnik po
    - **Slika** -- Naložite fotografijo ali jo povežite
    - **Gumb** -- Klikljiva povezava za poziv k dejanju
    - **Kartica** -- Slika z naslovom in opisom
-   - **Obrazec** -- Vdelajte [obrazec](../forms/creating-forms) neposredno na stran. Če ima obrazec [glavno fotografijo](../forms/creating-forms.md#adding-a-header-photo), se prikaže nad vprašanji
+   - **Obrazec** -- Vdelajte [obrazec](../forms/creating-forms.md) neposredno na stran. Če ima obrazec [glavno fotografijo](../forms/creating-forms.md#adding-a-header-photo), se prikaže nad vprašanji
    - **Koledar** -- Prikaz koledarja dogodkov
    - **FAQ** -- Bloki vprašanj in odgovorov v obliki harmonike
    - **Video** -- Vdelajte video z naslovom URL
@@ -79,7 +80,7 @@ Ste že zgradili oddelek, a želite drugačno strukturo? Uporabite preklopnik po
    - **Zemljevid** -- Vdelan zemljevid, centriran na naslov vaše cerkve
    - **Tabela** -- Preprosta mreža vrstic in stolpcev za tabelarično vsebino
    - **Besedilo s fotografijo** -- Besedilo in slika drug ob drugem
-   - **Logotip** -- Logotip vaše cerkve, prevzet iz [videza](appearance)
+   - **Logotip** -- Logotip vaše cerkve, prevzet iz [videza](./appearance.md)
    - **Prenos v živo** -- Predvajalnik vašega prenosa v živo, vdelan neposredno na stran
    - **Podcast** -- Seznam epizod, pridobljenih iz zunanjega RSS vira podcasta, ki ga vnesete, z nastavitvami za število prikazanih epizod ter za prikaz datumov in opisov. Vsaka epizoda na objavljeni strani ima predvajalnik zvoka in povezavo **Prenesi**, ki shrani zvočno datoteko epizode pod naslovom epizode. To je namenjeno prikazu katerega koli vira podcasta na vaši strani; če želite objaviti lastne pridige kot podcast, glejte [upravljanje pridig](../sermons/managing-sermons.md#your-podcast-feed)
    - **Darovanje** -- Gumb za darovanje ali vdelan obrazec za darovanja
@@ -100,7 +101,7 @@ Element **HTML** ima dve polji:
 
 Element **Koledar** prikazuje dogodke iz enega od vaših koledarjev:
 
-1. Pod **Izberi** izberite **Skupinski koledar** (dogodki ene skupine -- seznam prikazuje skupine, katerih član ste) ali **Kuriran koledar** (koledar, ki ste ga sestavili pod **Koledarji**; glejte [kuriran koledar](../calendars/curated-calendar)).
+1. Pod **Izberi** izberite **Skupinski koledar** (dogodki ene skupine -- seznam prikazuje skupine, katerih član ste) ali **Kuriran koledar** (koledar, ki ste ga sestavili pod **Koledarji**; glejte [kuriran koledar](../calendars/curated-calendar.md)).
 2. Pod **Izberi koledar** izberite skupino ali koledar.
 3. Pod **Prikaz** izberite, kako ga želite prikazati:
    - **Mesečni koledar** -- Mreža meseca, po kateri lahko obiskovalci brskajo.
@@ -133,7 +134,7 @@ Kliknite kateri koli element, da odprete njegovo podokno slogov. Pogoste možnos
 Za napredno oblikovanje ima vsak oddelek in element polje **Lastni CSS**, kamor lahko zapišete lastna pravila CSS. Ta so omejena na ta element, zato nehote ne vplivajo na preostanek strani.
 
 :::tip
-Če morate sloge uporabiti po celotni spletni strani -- na primer posebno pisavo ali globalno barvo -- uporabite nastavitve [videza](appearance) namesto lastnega CSS-ja na posameznih straneh.
+Če morate sloge uporabiti po celotni spletni strani -- na primer posebno pisavo ali globalno barvo -- uporabite nastavitve [videza](./appearance.md) namesto lastnega CSS-ja na posameznih straneh.
 :::
 
 ## Predogled strani
@@ -188,7 +189,7 @@ Potek osnutka/objave uporabite, kadar želite pripraviti stran -- na primer za p
 
 ## Sorodni članki
 
-- [Upravljanje strani](managing-pages) -- Ustvarjanje strani, nastavitev naslovov URL in upravljanje navigacije spletne strani
-- [Videz](appearance) -- Nastavitev barv, pisav in blagovne znamke za celotno spletno stran
-- [Datoteke](files) -- Nalaganje slik in dokumentov za uporabo v urejevalniku
-- [Ustvarjanje obrazcev](../forms/creating-forms) -- Izdelava obrazcev, ki jih lahko vdelate na strani
+- [Upravljanje strani](./managing-pages.md) -- Ustvarjanje strani, nastavitev naslovov URL in upravljanje navigacije spletne strani
+- [Videz](./appearance.md) -- Nastavitev barv, pisav in blagovne znamke za celotno spletno stran
+- [Datoteke](./files.md) -- Nalaganje slik in dokumentov za uporabo v urejevalniku
+- [Ustvarjanje obrazcev](../forms/creating-forms.md) -- Izdelava obrazcev, ki jih lahko vdelate na strani

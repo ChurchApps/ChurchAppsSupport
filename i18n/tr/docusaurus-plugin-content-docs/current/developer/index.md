@@ -1,5 +1,6 @@
 ---
 title: "Geliştirici Dokümantasyonu"
+description: "ChurchApps geliştirici dokümanlarında yol bulun: yerel kurulum, API ve web uygulaması rehberleri, paylaşılan kütüphaneler, mobil derlemeler ve açık kaynaklı projelerin dağıtımı."
 ---
 
 # Geliştirici Dokümantasyonu
@@ -24,16 +25,16 @@ Temel özellikler:
 
 ## Bu Bölümün Kapsamı
 
-- **[Kurulum](setup/)** -- Yerel geliştirme ortamı, ön koşullar ve yapılandırma
-  - [Ön Koşullar](setup/prerequisites) -- Gerekli araçlar ve yazılımlar
-  - [Proje Genel Bakış](setup/project-overview) -- Tüm projelere hızlı bakış
-  - [Ortam Değişkenleri](setup/environment-variables) -- `.env` dosyalarını yapılandırma
-- **[API](api/)** -- Çekirdek API yerel kurulumu, veritabanı başlatma ve modül yapısı
-- **[Web Uygulamaları](web-apps/)** -- B1Admin, B1App ve LessonsApp'i yerel olarak çalıştırma
-- **[Mobil Uygulamalar](mobile/)** -- B1Mobile ve diğer Expo uygulamalarını derleme
-- **[Paylaşılan Kütüphaneler](shared-libraries/)** -- Helpers, ApiHelper ve AppHelper ile çalışma
-- **[Dağıtım](deployment/)** -- API'leri, web uygulamalarını ve mobil uygulamaları dağıtma
-- **[FreePlay İçerik Sağlayıcısı](freeplay-content-provider)** -- Ders kitaplığınızı FreePlay ile entegre etme
+- **[Kurulum](./setup/index.md)** -- Yerel geliştirme ortamı, ön koşullar ve yapılandırma
+  - [Ön Koşullar](./setup/prerequisites.md) -- Gerekli araçlar ve yazılımlar
+  - [Proje Genel Bakış](./setup/project-overview.md) -- Tüm projelere hızlı bakış
+  - [Ortam Değişkenleri](./setup/environment-variables.md) -- `.env` dosyalarını yapılandırma
+- **[API](./api/index.md)** -- Çekirdek API yerel kurulumu, veritabanı başlatma ve modül yapısı
+- **[Web Uygulamaları](./web-apps/index.md)** -- B1Admin, B1App ve LessonsApp'i yerel olarak çalıştırma
+- **[Mobil Uygulamalar](./mobile/index.md)** -- B1Mobile ve diğer Expo uygulamalarını derleme
+- **[Paylaşılan Kütüphaneler](./shared-libraries/index.md)** -- Helpers, ApiHelper ve AppHelper ile çalışma
+- **[Dağıtım](./deployment/index.md)** -- API'leri, web uygulamalarını ve mobil uygulamaları dağıtma
+- **[FreePlay İçerik Sağlayıcısı](./freeplay-content-provider.md)** -- Ders kitaplığınızı FreePlay ile entegre etme
 
 ## Topluluk ve Kaynaklar
 

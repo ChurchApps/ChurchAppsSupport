@@ -1,5 +1,6 @@
 ---
 title: "Donații"
+description: "Înregistrați, organizați și raportați donațiile în B1 Admin: de la loturi și fonduri la extrase anuale și donații online prin Stripe sau PayPal."
 ---
 
 # Donații

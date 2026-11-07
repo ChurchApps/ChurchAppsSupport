@@ -1,5 +1,6 @@
 ---
 title: "Santé des groupes"
+description: "Vérifiez la santé des groupes dans B1 Admin grâce à un tableau sur 90 jours indiquant les membres, adhésions, départs, taux de désabonnement et présence moyenne, afin de repérer les groupes à suivre."
 ---
 
 # Santé des groupes
@@ -13,8 +14,8 @@ Le tableau de bord Santé des groupes vous donne une vue d'ensemble de comment t
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin d'au moins quelques groupes avec des membres pour voir des données significatives. Voir [Creating Groups](creating-groups).
-- Les données d'attendance sont extraites des sessions enregistrées. Voir la section [Attendance](../attendance/).
+- Vous avez besoin d'au moins quelques groupes avec des membres pour voir des données significatives. Voir [Creating Groups](./creating-groups.md).
+- Les données d'attendance sont extraites des sessions enregistrées. Voir la section [Attendance](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Cliquer sur un nom de groupe vous amène directement à la page de détail du gr
 
 ## Articles connexes
 
-- [Creating Groups](creating-groups) — configurez les groupes
-- [Group Members](group-members) — gérez l'adhésion au groupe
-- [Tracking Attendance](../attendance/tracking-attendance) — enregistrez les sessions d'attendance qui alimentent ce tableau de bord
+- [Creating Groups](./creating-groups.md) — configurez les groupes
+- [Group Members](./group-members.md) — gérez l'adhésion au groupe
+- [Tracking Attendance](../attendance/tracking-attendance.md) — enregistrez les sessions d'attendance qui alimentent ce tableau de bord

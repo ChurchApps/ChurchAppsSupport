@@ -1,5 +1,6 @@
 ---
 title: "Configurer les salles de classe"
+description: "Créer, renommer et supprimer des classes dans le portail Lessons.church, prêtes pour la planification hebdomadaire des leçons."
 ---
 
 # Configurer les salles de classe

@@ -1,5 +1,6 @@
 ---
 title: "Browsing og download af indhold"
+description: "Naviger i biblioteket hos en forbundet udbyder med din TV-fjernbetjening i FreePlay, og download eller stream lektioner og videoer til afspilning."
 ---
 
 # Browsing og download af indhold
@@ -13,7 +14,7 @@ Når du forbinder til en indholdsudbyder, kan du gennemse dens bibliotek, downlo
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Forbind til mindst en indholdsudbyder -- se [Forbindelse til udbydere](./connecting-providers)
+- Forbind til mindst en indholdsudbyder -- se [Forbindelse til udbydere](./connecting-providers.md)
 - Har din TV fjernbetjening klar til navigation
 
 </div>
@@ -62,7 +63,7 @@ Afspilning fungerer på samme måde som lektionsafspilning. Brug disse kontrolle
 Når du forlader afspilleren, vender du tilbage til indholdsviseren på rotniveauet for den aktuelle udbyder.
 
 :::info
-For en fuldstændig reference til alle afspiller kontroller, se [Afspilning af lektioner](../content-providers/playing-content).
+For en fuldstændig reference til alle afspiller kontroller, se [Afspilning af lektioner](./playing-content.md).
 :::
 
 ## Skifteudbydr

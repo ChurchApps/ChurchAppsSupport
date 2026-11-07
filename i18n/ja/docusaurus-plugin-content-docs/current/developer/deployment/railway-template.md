@@ -1,5 +1,6 @@
 ---
 title: "Railway でのセルフホスティング"
+description: "Railway にプライベートな ChurchApps インスタンスを約 15 分でデプロイし、メール、カスタムドメイン、複数教会のルーティング、寄付、ファイルストレージを B1 Admin と B1App で設定します。"
 ---
 
 # Railway でのセルフホスティング
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Vimeo の説教のサポート |
 | `API_BIBLE_KEY` | レッスンやコンテンツ内の聖書の節の検索 |
 | `YOUVERSION_API_KEY` | YouVersion 聖書との連携 |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | ブラウザのプッシュ通知（[VAPID キーペアを生成](./docker#push-notifications)） |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | ブラウザのプッシュ通知（[VAPID キーペアを生成](./docker.md#push-notifications)） |
 | `HUBSPOT_KEY` | 新規登録の CRM 連携（任意） |
 
 ## 更新
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## 関連記事
 
-- **[Docker でのセルフホスティング](./docker)**：同じ構成を、ご自身のハードウェアや VPS 上で動かす方法
-- **[初期設定](../../getting-started/initial-setup)**：教会を作成した後の最初の手順
-- **[ウェブサイトの初期設定](../../b1-admin/website/initial-setup)**：教会の公開サイトを設定する
-- **[献金の設定](../../b1-admin/donations/online-giving-setup)**：Stripe または PayPal を接続する
-- **[ローカルの API セットアップ](../api/local-setup)**：開発用にスタックをローカルで動かす
-- **[API のデプロイ（AWS）](./apis)**：公式の ChurchApps SaaS がどのようにデプロイされているか
+- **[Docker でのセルフホスティング](./docker.md)**：同じ構成を、ご自身のハードウェアや VPS 上で動かす方法
+- **[初期設定](../../getting-started/initial-setup.md)**：教会を作成した後の最初の手順
+- **[ウェブサイトの初期設定](../../b1-admin/website/initial-setup.md)**：教会の公開サイトを設定する
+- **[献金の設定](../../b1-admin/donations/online-giving-setup.md)**：Stripe または PayPal を接続する
+- **[ローカルの API セットアップ](../api/local-setup.md)**：開発用にスタックをローカルで動かす
+- **[API のデプロイ（AWS）](./apis.md)**：公式の ChurchApps SaaS がどのようにデプロイされているか

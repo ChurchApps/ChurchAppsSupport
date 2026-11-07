@@ -1,5 +1,6 @@
 ---
 title: "Planlegge kalenderen"
+description: "Sett opp en ukentlig eller engangsplan i FreePlay Admin-kalenderen for å spille spillelister, gudstjenesteplaner eller leverandørmapper på skjermgruppene dine, med standardløkker som reserve."
 ---
 
 # Planlegge kalenderen
@@ -13,8 +14,8 @@ title: "Planlegge kalenderen"
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Opprett minst én skjermgruppe. Se [Administrere skjermer og grupper](./managing-screens#screen-groups)
-- [Lag en spilleliste](./building-playlists), eller ha en plantype satt opp i B1 Admin
+- Opprett minst én skjermgruppe. Se [Administrere skjermer og grupper](./managing-screens.md#screen-groups)
+- [Lag en spilleliste](./building-playlists.md), eller ha en plantype satt opp i B1 Admin
 
 </div>
 
@@ -82,10 +83,10 @@ Hvis to tidsplaner overlapper, viser skjemaet en advarsel: **Overlapper en annen
 
 ## Hvordan skjermer henter endringer
 
-Koblede skjermer laster ned alt som er planlagt for de neste 7 dagene, og de sjekker selv etter endringer. Du trenger ikke å røre TV-en etter at du har redigert kalenderen. For å se når en skjerm har alt den trenger, sjekk **Klar til og med** på [Skjermsiden](./managing-screens).
+Koblede skjermer laster ned alt som er planlagt for de neste 7 dagene, og de sjekker selv etter endringer. Du trenger ikke å røre TV-en etter at du har redigert kalenderen. For å se når en skjerm har alt den trenger, sjekk **Klar til og med** på [Skjermsiden](./managing-screens.md).
 
 ## Relaterte artikler
 
-- **[Lage spillelister](./building-playlists)** - Lag spillelistene du planlegger
-- **[Planlagt avspilling på TV-en](./scheduled-playback)** - Hvordan lærerstyrte leksjoner og fjernkontrollen fungerer på TV-en
-- **[Administrere skjermer og grupper](./managing-screens)** - Legg til grupper og sjekk hver skjerms nedlastinger
+- **[Lage spillelister](./building-playlists.md)** - Lag spillelistene du planlegger
+- **[Planlagt avspilling på TV-en](./scheduled-playback.md)** - Hvordan lærerstyrte leksjoner og fjernkontrollen fungerer på TV-en
+- **[Administrere skjermer og grupper](./managing-screens.md)** - Legg til grupper og sjekk hver skjerms nedlastinger

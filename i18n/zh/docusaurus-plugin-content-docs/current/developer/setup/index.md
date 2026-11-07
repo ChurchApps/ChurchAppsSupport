@@ -1,5 +1,6 @@
 ---
 title: "设置"
+description: "为 ChurchApps 项目选择本地开发路径：前端工作可连接共享演示 API；后端修改则可在本地使用 MySQL 运行完整技术栈。"
 ---
 
 # 设置
@@ -40,15 +41,15 @@ https://api.demo.churchapps.org/giving
 
 ### 2. 在本地运行全部内容
 
-如果您需要修改 API 代码或需要离线工作，可以在本地运行完整的技术栈。这需要 MySQL 8.0+ 以及额外的配置。详细说明请参阅 [API 本地设置](../api/local-setup)指南。
+如果您需要修改 API 代码或需要离线工作，可以在本地运行完整的技术栈。这需要 MySQL 8.0+ 以及额外的配置。详细说明请参阅 [API 本地设置](../api/local-setup.md)指南。
 
 ## 入门
 
 请按以下顺序阅读这些页面：
 
-1. **[前置条件](prerequisites)** -- 安装所需工具（Node.js、Git、MySQL 等）
-2. **[项目概述](project-overview)** -- 了解有哪些项目以及它们的用途
-3. **[环境变量](environment-variables)** -- 配置您的 `.env` 文件，将所有内容连接在一起
+1. **[前置条件](./prerequisites.md)** -- 安装所需工具（Node.js、Git、MySQL 等）
+2. **[项目概述](./project-overview.md)** -- 了解有哪些项目以及它们的用途
+3. **[环境变量](./environment-variables.md)** -- 配置您的 `.env` 文件，将所有内容连接在一起
 
 :::info
 每个 ChurchApps 项目都是独立的 Git 仓库。您只需克隆您想要使用的特定项目即可。

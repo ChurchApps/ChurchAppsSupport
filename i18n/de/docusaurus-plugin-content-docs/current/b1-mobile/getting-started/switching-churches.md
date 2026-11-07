@@ -1,5 +1,6 @@
 ---
 title: "Kirche wechseln"
+description: "Wechseln Sie in der B1 Mobile App zwischen Gemeinden, indem Sie eine zuletzt genutzte wählen oder nach dem Namen suchen. Ein ChurchApps-Login genügt."
 ---
 
 # Kirche wechseln
@@ -13,7 +14,7 @@ Wenn du Mitglied in mehr als einer Kirche bist, macht B1 Mobile es dir leicht, z
 <div class="prereqs">
 <h4>Vor dem Start</h4>
 
-- [B1 Mobile installieren](./installing) und dich [in deinem Konto anmelden](./logging-in)
+- [B1 Mobile installieren](./installing.md) und dich [in deinem Konto anmelden](./logging-in.md)
 
 </div>
 
@@ -24,7 +25,7 @@ Wenn du Mitglied in mehr als einer Kirche bist, macht B1 Mobile es dir leicht, z
 3. Der Bildschirm **Kirchensuche** wird angezeigt. Die zuletzt besuchten Kirchen werden oben angezeigt, damit du schnell darauf zugreifen kannst.
 4. Tippe auf eine kürzlich besuchte Kirche, um zu ihr zu wechseln, oder gib im Suchfeld den Namen einer anderen Kirche ein.
 
-Wenn du die Kirche wechselst, lädt die App neu und zeigt das Branding, die Navigationslinks und die Inhalte dieser Kirche an. Deine [Startseite](../dashboard/), [Gruppen](../groups/) und andere Daten beziehen sich dann auf die neu ausgewählte Kirche.
+Wenn du die Kirche wechselst, lädt die App neu und zeigt das Branding, die Navigationslinks und die Inhalte dieser Kirche an. Deine [Startseite](../dashboard/index.md), [Gruppen](../groups/index.md) und andere Daten beziehen sich dann auf die neu ausgewählte Kirche.
 
 ## Nach einer Kirche suchen
 

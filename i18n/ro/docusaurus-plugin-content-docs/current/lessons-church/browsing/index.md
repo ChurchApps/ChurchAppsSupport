@@ -1,5 +1,6 @@
 ---
 title: "Răsfoirea conținutului"
+description: "Cum răsfoiți biblioteca gratuită de curriculum Lessons.church fără cont: pagina de start, răsfoirea pe program, căutarea și furnizorii externi."
 ---
 
 # Răsfoirea conținutului

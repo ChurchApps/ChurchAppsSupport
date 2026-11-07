@@ -1,5 +1,6 @@
 ---
 title: "Izpiski o darovih"
+description: "Ustvarite letne izjave o darovanju za vse darovalce v B1 Admin, nato jih prenesite kot datoteke CSV ali natisnite za pošiljanje z davčno odbitnimi zneski."
 ---
 
 # Izpiski o darovih

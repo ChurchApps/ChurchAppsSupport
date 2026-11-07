@@ -1,5 +1,6 @@
 ---
 title: "Nastavení"
+description: "Orientujte se v nastavení B1 Admin: údaje o církvi, branding, kampusy, vlastní pole, uživatelské role a navigace aplikace B1.church."
 ---
 
 # Nastavení

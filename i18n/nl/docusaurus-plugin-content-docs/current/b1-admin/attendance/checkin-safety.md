@@ -1,5 +1,6 @@
 ---
 title: "Veiligheid bij inchecken"
+description: "Configureer kinderveiligheid in B1 Admin: ruimtecapaciteit, vrijwilligersverhoudingen, lijsten met vertrouwde ophaalpersonen en oproep-sms'jes naar ouders."
 ---
 
 # Veiligheid bij inchecken
@@ -15,7 +16,7 @@ B1 bevat een set kinderveiligheidsfuncties voor het inchecken: limieten voor de 
 
 - Stel uw [aanwezigheidsstructuur](setup.md) en [incheckkiosken](check-in.md) in
 - Zalen zijn [groepen](../groups/creating-groups.md) die zijn gekoppeld aan diensttijden — de onderstaande veiligheidsinstellingen bevinden zich op de groep
-- Ouder oproepen en noodberichten vereisen een gekoppelde sms-provider ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) of Mutual Ministry)
+- Ouder oproepen en noodberichten vereisen een gekoppelde sms-provider ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) of Mutual Ministry)
 
 </div>
 
@@ -90,11 +91,11 @@ Beide functies versturen sms-berichten via de gekoppelde sms-provider van uw ker
 
 Personen die zich hebben afgemeld voor sms-berichten, of die geen mobiel nummer geregistreerd hebben, worden automatisch overgeslagen — de kiosk rapporteert hoeveel berichten zijn verzonden en hoeveel zijn overgeslagen.
 
-Zie de doorloop aan de kioskzijde in [Uitchecken en kinderveiligheid](../../b1-checkin/check-in/checking-out).
+Zie de doorloop aan de kioskzijde in [Uitchecken en kinderveiligheid](../../b1-checkin/check-in/checking-out.md).
 
 ## Gerelateerde artikelen
 
 - [Check-In](check-in.md) — kiosk-instellingen en hardware
-- [Uitchecken en kinderveiligheid](../../b1-checkin/check-in/checking-out) — het uitchecken bij de kiosk, ophaalverificatie en oproepfuncties
+- [Uitchecken en kinderveiligheid](../../b1-checkin/check-in/checking-out.md) — het uitchecken bij de kiosk, ophaalverificatie en oproepfuncties
 - [Groepen aanmaken](../groups/creating-groups.md) — waar zaalinstellingen zich bevinden
 - [Aanwezigheid instellen](setup.md) — diensten, diensttijden en zaaltoewijzingen

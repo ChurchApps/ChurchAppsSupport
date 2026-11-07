@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Verbinden Sie B1 Admin mit Claude, um in einfacher Sprache nach Anwesenheit, Spenden und Gruppen zu fragen, mit Anmeldeoption und einem Schlüssel mit eingeschränkten Berechtigungen."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Das ist dieselbe Oberfläche wie `/membership/people`, `/giving/donations`, `/at
 
 - [API-Schlüssel](/docs/developer/api/api-keys) – vollständige Referenz der Bereiche
 - [MCP-Server (Entwicklerreferenz)](/docs/developer/api/mcp) – Protokolldetails und Werkzeugschemata
-- [ChatGPT](./chatgpt) – dasselbe Prinzip, für die Modelle von OpenAI
+- [ChatGPT](./chatgpt.md) – dasselbe Prinzip, für die Modelle von OpenAI

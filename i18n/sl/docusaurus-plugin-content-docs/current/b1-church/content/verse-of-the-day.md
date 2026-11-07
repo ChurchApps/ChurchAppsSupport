@@ -1,5 +1,7 @@
 ---
-title: "Vsakodnevni verz"
+title: "Vers dneva na spletni strani in portalu B1.church"
+sidebar_label: "Vsakodnevni verz"
+description: "Oglejte si sliko vsakdanjega verza in pretekle verze ter jih delite ali prenesite s spletne strani ali portala B1.church na katerem koli zaslonu."
 ---
 
 # Vsakodnevni verz

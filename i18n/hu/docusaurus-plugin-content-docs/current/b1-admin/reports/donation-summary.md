@@ -1,5 +1,6 @@
 ---
 title: "Adománykimutatás"
+description: "Futtassa a B1 Admin adomány-összesítő jelentését: teljes adományösszeg, egyedi adakozók száma és alapok szerinti összegek tetszőleges időszakra."
 ---
 
 # Adománykimutatás

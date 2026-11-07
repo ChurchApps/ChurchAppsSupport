@@ -1,5 +1,6 @@
 ---
 title: "Uložené zoznamy"
+description: "Uložte vyhľadávanie v People v B1 Admin ako pomenovaný zoznam a načítajte ho jedným kliknutím. Zoznamy sú živé a noví členovia sa v nich zobrazia automaticky."
 ---
 
 # Uložené zoznamy

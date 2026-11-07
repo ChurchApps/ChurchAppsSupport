@@ -1,5 +1,6 @@
 ---
 title: "Planiranje koledarja"
+description: "Nastavi tedenski ali enkratni urnik v koledarju FreePlay Admin: seznami, načrti ali mape ponudnikov na skupinah zaslonov, privzete zanke pa kot rezerva."
 ---
 
 # Planiranje koledarja
@@ -13,8 +14,8 @@ Stran **Koledar** v FreePlay Admin določa, kaj vsaka skupina zaslonov predvaja 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Ustvarite vsaj eno skupino zaslonov. Glejte [Upravljanje zaslonov in skupin](./managing-screens#screen-groups)
-- [Sestavite seznam predvajanja](./building-playlists) ali pa imejte nastavljen tip načrta v B1 Admin
+- Ustvarite vsaj eno skupino zaslonov. Glejte [Upravljanje zaslonov in skupin](./managing-screens.md#screen-groups)
+- [Sestavite seznam predvajanja](./building-playlists.md) ali pa imejte nastavljen tip načrta v B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Nato izpolnite obrazec:
 
 ## Kako zasloni prevzamejo spremembe
 
-Seznanjeni zasloni prenesejo vse, kar je načrtovano za naslednjih 7 dni, in sami preverjajo, ali so se spremembe zgodile. Po urejanju koledarja se ne rabite dotikati televizorja. Da vidite, kdaj ima zaslon vse, kar potrebuje, preverite **Pripravljeno do** na [strani Zasloni](./managing-screens).
+Seznanjeni zasloni prenesejo vse, kar je načrtovano za naslednjih 7 dni, in sami preverjajo, ali so se spremembe zgodile. Po urejanju koledarja se ne rabite dotikati televizorja. Da vidite, kdaj ima zaslon vse, kar potrebuje, preverite **Pripravljeno do** na [strani Zasloni](./managing-screens.md).
 
 ## Sorodni članki
 
-- **[Sestavljanje seznamov predvajanja](./building-playlists)** - Ustvarite sezname predvajanja, ki jih načrtujete
-- **[Predvajanje po urniku na televizorju](./scheduled-playback)** - Kako na televizorju delujeta lekcije s tempom učitelja in daljinski upravljalnik
-- **[Upravljanje zaslonov in skupin](./managing-screens)** - Dodajanje skupin in preverjanje prenosov vsakega zaslona
+- **[Sestavljanje seznamov predvajanja](./building-playlists.md)** - Ustvarite sezname predvajanja, ki jih načrtujete
+- **[Predvajanje po urniku na televizorju](./scheduled-playback.md)** - Kako na televizorju delujeta lekcije s tempom učitelja in daljinski upravljalnik
+- **[Upravljanje zaslonov in skupin](./managing-screens.md)** - Dodajanje skupin in preverjanje prenosov vsakega zaslona
 - **[Ohranjanje le dela vsake lekcije](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Skrajšajte vsako načrtovano lekcijo v tipu načrta na dele, ki jih vaša soba predvaja

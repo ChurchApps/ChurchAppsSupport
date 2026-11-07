@@ -1,5 +1,6 @@
 ---
 title: "Slack ve Discord"
+description: "B1 Admin etkinliklerini (yeni kişiler, bağışlar, form gönderimleri) gelen webhook ile Slack veya Discord kanalına gönderin; Zapier gerekmez."
 ---
 
 # Slack ve Discord
@@ -114,7 +115,7 @@ Bir teslimat başarısız olursa (kırmızı `failed` veya `exhausted` rozeti), 
 
 - **Mesaj görünmüyor ve teslimat durumu `400`** — genellikle Bağlayıcı Türü **Standard** olarak ayarlanmıştır, ancak URL bir Slack veya Discord URL'sidir. Slack ve Discord ham zarfı reddeder. Açılır menüden **Slack** veya **Discord** seçeneğini seçin ve test isteğini yeniden gönderin.
 - **Webhook otomatik olarak devre dışı kaldı**: 3 ardışık başarısız teslimattan sonra B1 webhook'u kapatır. URL'yi düzeltin (veya Slack/Discord'da yeniden oluşturun) ve **Active** seçeneğini yeniden açın.
-- **Mesaj geldi ama ayrıntılar eksik**: Her sohbet platformunun mesaj boyutu sınırı vardır. B1 mesajları tasarım gereği tek satırlıktır. Daha zengin bildirimler için, Slack eylemlerini kullanarak daha kapsamlı bir Slack mesajı oluşturmak üzere [Zapier](./zapier) veya [Make](./make) kullanın.
+- **Mesaj geldi ama ayrıntılar eksik**: Her sohbet platformunun mesaj boyutu sınırı vardır. B1 mesajları tasarım gereği tek satırlıktır. Daha zengin bildirimler için, Slack eylemlerini kullanarak daha kapsamlı bir Slack mesajı oluşturmak üzere [Zapier](./zapier.md) veya [Make](./make.md) kullanın.
 
 ## Daha Sonra Bağlayıcı Türünü Değiştirme
 
@@ -122,6 +123,6 @@ Mevcut bir webhook'un Bağlayıcı Türünü değiştirebilirsiniz. Değişiklik
 
 ## Ayrıca Bakın
 
-- [Zapier](./zapier): B1 olaylarıyla tetiklenen çok adımlı iş akışları için
-- [Make](./make): görsel senaryo oluşturucu
+- [Zapier](./zapier.md): B1 olaylarıyla tetiklenen çok adımlı iş akışları için
+- [Make](./make.md): görsel senaryo oluşturucu
 - [Webhook'lar (geliştirici başvurusu)](/docs/developer/api/webhooks): bir webhook'u kendi sunucunuza yönlendirirseniz tam yük ve imza biçimi için

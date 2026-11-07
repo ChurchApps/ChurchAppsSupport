@@ -1,5 +1,6 @@
 ---
 title: "Demografi"
+description: "Se församlingens ålder, kön, medlemskap, civilstånd och campusfördelning i B1 Admins interaktiva diagram och gå ner i detalj på valfri grupp."
 ---
 
 # Demografi

@@ -1,5 +1,7 @@
 ---
-title: "Tjek ind"
+title: "Check-in til kirken med B1 Mobile-appen"
+sidebar_label: "Tjek ind"
+description: "Check dig selv og din husstand ind til kirkens gudstjenester fra din telefon i B1 Mobile, og vælg gudstjenester og grupper, før du ankommer."
 ---
 
 # Tjek ind
@@ -16,7 +18,7 @@ Tjek ind-processen er et hurtigt, flertrinsfold, der vejleder dig gennem at væl
 
 ## Kom i gang
 
-For at få adgang til tjek ind skal du åbne afsnittet **Tjek ind** i B1 Mobile. Du skal være logget ind for at bruge denne funktion. Hvis du ikke er logget ind, bliver du bedt om at [logge ind](../getting-started/logging-in) først.
+For at få adgang til tjek ind skal du åbne afsnittet **Tjek ind** i B1 Mobile. Du skal være logget ind for at bruge denne funktion. Hvis du ikke er logget ind, bliver du bedt om at [logge ind](../getting-started/logging-in.md) først.
 
 :::info
 Funktionen tjek ind kræver, at din kirke har opsat gudstjenester og tilstedeværelsesgrupper i deres administrationsindstillinger. Hvis der ikke vises nogen gudstjenester, når du åbner tjek ind-skærmen, har din kirke muligvis ikke denne funktion konfigureret endnu. Kontakt din kirkes administrator for hjælp.
@@ -30,4 +32,4 @@ Funktionen tjek ind kræver, at din kirke har opsat gudstjenester og tilstedevæ
 
 ## Næste trin
 
-- [Selvtjek ind](./self-checkin) -- Trinvis vejledning til at tjekke ind fra din telefon
+- [Selvtjek ind](./self-checkin.md) -- Trinvis vejledning til at tjekke ind fra din telefon

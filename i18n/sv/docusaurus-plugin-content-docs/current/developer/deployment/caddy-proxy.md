@@ -1,5 +1,6 @@
 ---
 title: "Caddy-proxy för egna domäner"
+description: "Bygg och kör Caddy-reverse-proxyn som betjänar egna församlingsdomäner för B1.church-webbplatser, med TLS-certifikat, värdmappning och kända fallgropar."
 ---
 
 # Caddy-proxy för egna domäner
@@ -10,7 +11,7 @@ Egna domäner för kyrkor (`mychurch.org` → kyrkans B1-webbplats) tas emot av 
 
 </div>
 
-Information om hur en förfrågan kopplas till en kyrka eller webbplats i B1App, när den väl nått fram, finns i [Webbplatsroutning och flera webbplatser](../architecture/websites).
+Information om hur en förfrågan kopplas till en kyrka eller webbplats i B1App, när den väl nått fram, finns i [Webbplatsroutning och flera webbplatser](../architecture/websites.md).
 
 ## Komponenter
 
@@ -87,5 +88,5 @@ Admin-API:t lyssnar bara på `localhost:2019`. Det gamla körtidsläget exponera
 
 ## Relaterade sidor
 
-- [Webbplatsroutning och flera webbplatser](../architecture/websites): hur en proxad förfrågan kopplas till en kyrka eller webbplats i B1App
-- [API-driftsättning](./apis): driftsättning av Membership API:t som tillhandahåller `authorize` och `hostmap`
+- [Webbplatsroutning och flera webbplatser](../architecture/websites.md): hur en proxad förfrågan kopplas till en kyrka eller webbplats i B1App
+- [API-driftsättning](./apis.md): driftsättning av Membership API:t som tillhandahåller `authorize` och `hostmap`

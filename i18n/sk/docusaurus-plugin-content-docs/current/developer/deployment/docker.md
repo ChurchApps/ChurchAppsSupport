@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting with Docker"
+description: "Nainštalujte súkromný stack B1 Admin, portál členov, API a MySQL na vlastný počítač pomocou Dockeru, potom ho aktualizujte a zálohujte príkazom b1."
 ---
 
 # Self-Hosting with Docker
 
 <div class="article-intro">
 
-Spustite vlastnú súkromnú inštanciu B1 Admin, člensky portál a webovú stránku B1, API a databázu MySQL na ľubovoľnom počítači s Dockerom — domácom serveri, malom VPS alebo lokálnom zariadení. Jeden príkaz to nainštaluje, jeden príkaz to aktualizuje a každá aktualizácia najprv vytvorí zálohu. Ak nechcete spravovať server vôbec, pozrite si [Self-Hosting on Railway](./railway-template) ako spravovanú alternatívu.
+Spustite vlastnú súkromnú inštanciu B1 Admin, člensky portál a webovú stránku B1, API a databázu MySQL na ľubovoľnom počítači s Dockerom — domácom serveri, malom VPS alebo lokálnom zariadení. Jeden príkaz to nainštaluje, jeden príkaz to aktualizuje a každá aktualizácia najprv vytvorí zálohu. Ak nechcete spravovať server vôbec, pozrite si [Self-Hosting on Railway](./railway-template.md) ako spravovanú alternatívu.
 
 </div>
 
@@ -94,10 +95,10 @@ Ak ste inštalovali na `localhost` a neskôr ju chcete sprístupniť verejne: na
 
 Tieto funkcie fungujú presne rovnako ako na Railway — rovnaké premenné prostredia, nastavené v `.env` namiesto na paneli Railway:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** — návody pre poskytovateľov Resend, Brevo a Gmail
-- **[Viacero stránok](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — neobmedzený počet kostolov na jednej inštancii. `/` zobrazuje kostol, ktorého slug je `DEFAULT_CHURCH_SLUG` (prvý kostol je `church`); ďalšie domény nasmerujte na tento počítač a namapujte ich v sekcii **Settings → Domains** v B1Admin
-- **[Online dary](./railway-template#4-online-giving-stripe--paypal)** — nastavujú sa pre každý kostol v administračnom rozhraní
-- **[Voliteľné integrácie](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)** — návody pre poskytovateľov Resend, Brevo a Gmail
+- **[Viacero stránok](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — neobmedzený počet kostolov na jednej inštancii. `/` zobrazuje kostol, ktorého slug je `DEFAULT_CHURCH_SLUG` (prvý kostol je `church`); ďalšie domény nasmerujte na tento počítač a namapujte ich v sekcii **Settings → Domains** v B1Admin
+- **[Online dary](./railway-template.md#4-online-giving-stripe--paypal)** — nastavujú sa pre každý kostol v administračnom rozhraní
+- **[Voliteľné integrácie](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push notifikácie](#push-notifications)** — `WEB_PUSH_*`; inštalátor ich nechá prázdne, takže push je vypnutý, kým ich nepridáte
 
 Pozvánky a ďalšie e-maily odosielané kostolom sú na vlastnej inštancii povolené automaticky (hostovaná služba ich kvôli ochrane reputácie odosielateľa podmieňuje manuálnou kontrolou).
@@ -148,7 +149,7 @@ Všetky údaje uchovávajú tri pomenované zväzky Docker:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Pre veľké mediálne knižnice môžete úložisko súborov prepnúť na S3 — nastavte `FILE_STORE=S3` a premenné `AWS_*` popísané v sekcii [File Storage v návode pre Railway](./railway-template#5-file-storage). Zálohy databázy neobsahujú objekty S3; na tomto úložisku zapnite verzovanie bucketu.
+Pre veľké mediálne knižnice môžete úložisko súborov prepnúť na S3 — nastavte `FILE_STORE=S3` a premenné `AWS_*` popísané v sekcii [File Storage v návode pre Railway](./railway-template.md#5-file-storage). Zálohy databázy neobsahujú objekty S3; na tomto úložisku zapnite verzovanie bucketu.
 
 ## Aktualizácia
 
@@ -187,6 +188,6 @@ Stále máte problém? Otvorte issue na [github.com/ChurchApps/ChurchAppsSupport
 
 ## Súvisiace články
 
-- **[Self-Hosting on Railway](./railway-template)** — alternatíva spravovaného hostingu a spoločné návody na konfiguráciu po nasadení
-- **[Initial Setup](../../getting-started/initial-setup)** — prvé kroky po vytvorení kostola
-- **[Local API Setup](../api/local-setup)** — priame spustenie celého stacku na vývoj
+- **[Self-Hosting on Railway](./railway-template.md)** — alternatíva spravovaného hostingu a spoločné návody na konfiguráciu po nasadení
+- **[Initial Setup](../../getting-started/initial-setup.md)** — prvé kroky po vytvorení kostola
+- **[Local API Setup](../api/local-setup.md)** — priame spustenie celého stacku na vývoj

@@ -1,5 +1,7 @@
 ---
-title: "Blogi"
+title: "Blogikirjoitus verkkosivullesi B1 Adminissa"
+sidebar_label: "Blogi"
+description: "Luo, ajasta ja julkaise blogikirjoituksia seurakuntasi verkkosivulla B1 Adminissa, myös tiivistelmät, kategoriat, tagit, otsikkokuvat ja kommenttiupotukset."
 ---
 
 # Blogi
@@ -13,8 +15,8 @@ Blogi-sivun avulla voit julkaista uutisia, päivityksiä ja hartauksia kirkkosi 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Suorita verkkosivustosi [Alkuasetukset](initial-setup)
-- Lisää navigointilinkki osoitteeseen `/blog` kohdasta [Sivujen hallinta](managing-pages), jos haluat kävijöiden löytävän blogisi valikosta
+- Suorita verkkosivustosi [Alkuasetukset](./initial-setup.md)
+- Lisää navigointilinkki osoitteeseen `/blog` kohdasta [Sivujen hallinta](./managing-pages.md), jos haluat kävijöiden löytävän blogisi valikosta
 
 </div>
 
@@ -31,7 +33,7 @@ Blogi-sivun avulla voit julkaista uutisia, päivityksiä ja hartauksia kirkkosi 
 3. Lisää **Tiivistelmä** – lyhyt yhteenveto, joka näkyy kirjoitusluettelossa, meta-kuvauksissa ja RSS-syötteessä. Jos jätät kentän tyhjäksi, se luodaan automaattisesti kirjoituksen sisällön alusta.
 4. Kirjoita kirjoituksen runko **Sisältö**-editoriin Markdown-muodossa. Napsauta **Esikatselu** nähdäksesi, miltä muotoiltu kirjoitus näyttää.
 5. Valitse **Luokka** (valitse olemassa oleva tai kirjoita uusi) ja halutessasi pilkulla erotetut **Tunnisteet**.
-6. Napsauta **Valitse kuva** valitaksesi valokuvan [Tiedostot](files)-galleriastasi tai lataa uusi. Ladatut valokuvat avautuvat sisäänrakennettuun rajaustyökaluun, joka on lukittu 16:9-suhteeseen, jolloin voit rajata minkä tahansa valokuvan sopimaan kirjoituksen otsikkoon ja listakortteihin.
+6. Napsauta **Valitse kuva** valitaksesi valokuvan [Tiedostot](./files.md)-galleriastasi tai lataa uusi. Ladatut valokuvat avautuvat sisäänrakennettuun rajaustyökaluun, joka on lukittu 16:9-suhteeseen, jolloin voit rajata minkä tahansa valokuvan sopimaan kirjoituksen otsikkoon ja listakortteihin.
 7. Aseta **Tekijä** – oletuksena se olet sinä, mutta voit hakea ja valita kenet tahansa tietokantasi henkilön.
 8. Ota **Julkaistu** käyttöön ja aseta **Julkaisupäivä**, kun olet valmis julkaisemaan kirjoituksen. Jos jätät sen pois päältä, kirjoitus tallentuu luonnoksena.
 
@@ -58,7 +60,7 @@ Jokainen luettelon kirjoitus näyttää yhden kolmesta tilasta:
 Julkaistut kirjoitukset näkyvät osoitteessa `{yoursite}/blog`, 10 kirjoitusta sivulla. Sivuilla selaamiseen käytetään linkkejä **Vanhemmat**/**Uudemmat**. Lisäksi sivulla on luokkasuodatin, ja jokaisen kirjoituksen tekijä ja kuva näkyvät. Myös tunnisteet ovat napsautettavia merkkejä, joiden avulla kävijät voivat suodattaa listaa tunnisteen mukaan samalla tavalla. Yksittäiset kirjoitukset ovat osoitteessa `{yoursite}/blog/{slug}` ja sisältävät samasta luokasta olevia aiheeseen liittyviä kirjoituksia. Blogisivu julkaisee myös RSS-syötteen, jonka syötelukijat ja automaatiotyökalut, kuten Zapier, löytävät automaattisesti.
 
 :::info
-Blogikirjoitukset ovat erillinen sisältötyyppi tavallisista verkkosivujen sivuista – niitä ei luoda [sivueditorilla](page-editor), eivätkä ne näy Sivut-luettelossa. Tämä pitää blogin kirjoittamisen nopeana ja keskittyneenä itse kirjoittamiseen.
+Blogikirjoitukset ovat erillinen sisältötyyppi tavallisista verkkosivujen sivuista – niitä ei luoda [sivueditorilla](./page-editor.md), eivätkä ne näy Sivut-luettelossa. Tämä pitää blogin kirjoittamisen nopeana ja keskittyneenä itse kirjoittamiseen.
 :::
 
 ## Kommenttien lisääminen kirjoitusten alle
@@ -77,6 +79,6 @@ Tyhjennä kenttä ja napsauta **Tallenna** poistaaksesi koodin kaikista kirjoitu
 
 ## Seuraavat vaiheet
 
-- [Sivujen hallinta](managing-pages) – Lisää navigointilinkki blogiisi
-- [Tiedostot](files) – Lataa kirjoituksissasi käytettäviä valokuvia
+- [Sivujen hallinta](./managing-pages.md) – Lisää navigointilinkki blogiisi
+- [Tiedostot](./files.md) – Lataa kirjoituksissasi käytettäviä valokuvia
 - [Zapier-integraatio](../integrations/zapier.md) – Käynnistä automaatioita, kun uusia kirjoituksia julkaistaan

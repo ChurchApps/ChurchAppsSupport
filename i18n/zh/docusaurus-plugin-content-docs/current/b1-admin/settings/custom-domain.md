@@ -1,5 +1,6 @@
 ---
 title: "自定义域名"
+description: "在 B1 Admin 中通过设置 DNS 记录并在“设置”中添加域名，将您自己的域名（如 www.yourchurch.org）指向您的 B1 网站。"
 ---
 
 # 自定义域名

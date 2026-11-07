@@ -1,5 +1,6 @@
 ---
 title: "Powiadomienia Web Push"
+description: "Konfiguracja kluczy VAPID, klienta WebPushHelper i service workera, by B1.church i B1 Admin mogły wysyłać członkom powiadomienia push w przeglądarce."
 ---
 
 # Powiadomienia Web Push
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Powiązane strony
 
-- [Architektura powiadomień](./architecture/notifications) -- Pełny lejek eskalacji w aplikacji, push i e-mail oraz silnik przypomnień
-- [Architektura czasu rzeczywistego](./realtime) -- Dostarczanie przez WebSocket. Push jest teraz wysyłany z tego samego lejka w aplikacji równolegle z dostarczeniem przez gniazdo, w tym samym przebiegu, a nie tylko jako zapasowa ścieżka, gdy dostarczenie przez gniazdo się nie powiedzie
-- [Endpointy wiadomości](./api/endpoints/messaging) -- Powiadomienia, urządzenia i pozostała część interfejsu wiadomości
-- [AppHelper](./shared-libraries/app-helper) -- Pakiet npm, który zawiera `WebPushHelper`
+- [Architektura powiadomień](./architecture/notifications.md) -- Pełny lejek eskalacji w aplikacji, push i e-mail oraz silnik przypomnień
+- [Architektura czasu rzeczywistego](./realtime.md) -- Dostarczanie przez WebSocket. Push jest teraz wysyłany z tego samego lejka w aplikacji równolegle z dostarczeniem przez gniazdo, w tym samym przebiegu, a nie tylko jako zapasowa ścieżka, gdy dostarczenie przez gniazdo się nie powiedzie
+- [Endpointy wiadomości](./api/endpoints/messaging.md) -- Powiadomienia, urządzenia i pozostała część interfejsu wiadomości
+- [AppHelper](./shared-libraries/app-helper.md) -- Pakiet npm, który zawiera `WebPushHelper`

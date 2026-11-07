@@ -1,5 +1,6 @@
 ---
 title: "Panduan: Membuat Laporan Pemberian Akhir Tahun"
+description: "Di B1 Admin, selesaikan catatan donasi tahun ini, periksa pengaturan pajak dana, dan buat laporan pemberian yang dapat dikurangkan pajak untuk setiap donatur."
 ---
 
 # Membuat Laporan Pemberian Akhir Tahun

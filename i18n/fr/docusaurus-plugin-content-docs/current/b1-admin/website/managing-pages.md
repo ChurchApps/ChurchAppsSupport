@@ -1,5 +1,6 @@
 ---
 title: "Gestion des pages"
+description: "Créez, modifiez et organisez les pages et la navigation dans la vue Pages de B1 Admin : réglages, redirections et modèles de site."
 ---
 
 # Gestion des pages
@@ -13,13 +14,13 @@ La vue Pages du site web est votre centre d'accueil central pour créer, éditer
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Complétez la [configuration initiale](initial-setup) pour configurer votre domaine et vos paramètres de site de base
-- Préparez votre contenu et vos images. Utilisez d'abord le gestionnaire [Fichiers](files) pour télécharger les ressources médias.
+- Complétez la [configuration initiale](./initial-setup.md) pour configurer votre domaine et vos paramètres de site de base
+- Préparez votre contenu et vos images. Utilisez d'abord le gestionnaire [Fichiers](./files.md) pour télécharger les ressources médias.
 
 </div>
 
 :::info
-Si votre église a plus d'un site web (par exemple, des sites distincts par campus), utilisez le sélecteur de site en haut de la vue Pages du site web pour basculer entre eux. Chaque site a ses propres pages, navigation et paramètres d'[apparence](appearance).
+Si votre église a plus d'un site web (par exemple, des sites distincts par campus), utilisez le sélecteur de site en haut de la vue Pages du site web pour basculer entre eux. Chaque site a ses propres pages, navigation et paramètres d'[apparence](./appearance.md).
 :::
 
 ## Comprendre les types de pages
@@ -35,7 +36,7 @@ Vous pouvez convertir n'importe quelle page générée automatiquement en page p
 
 1. Cliquez sur le bouton **Ajouter une page** en haut à droite de la vue Pages du site web.
 2. Choisissez un type de page (vierge ou un modèle) et donnez-lui un nom.
-3. Cliquez sur **Éditer le contenu** à côté de n'importe quelle page pour ouvrir l'[éditeur de page](page-editor), où vous pouvez ajouter des sections, du texte, des images et d'autres éléments.
+3. Cliquez sur **Éditer le contenu** à côté de n'importe quelle page pour ouvrir l'[éditeur de page](./page-editor.md), où vous pouvez ajouter des sections, du texte, des images et d'autres éléments.
 4. Cliquez sur **Paramètres de la page** à côté d'une page pour mettre à jour le titre de la page, le chemin d'URL et autres métadonnées.
 5. Cliquez sur le chemin d'une page dans la colonne **Chemin** pour ouvrir la page en direct dans un nouvel onglet et voir exactement comment elle s'affichera pour les visiteurs.
 
@@ -112,10 +113,10 @@ Si vous construisez votre site à partir de zéro, vous pouvez l'amorcer à l'ai
 3. Lorsque vous en trouvez un qui vous plaît, cliquez sur **Appliquer le modèle**.
 4. Les pages qui n'existent pas encore sont créées et ajoutées à votre navigation. Les pages existantes sont laissées telles quelles.
 
-Après l'application d'un modèle, ouvrez chaque page dans l'[éditeur de page](page-editor) pour remplacer le texte et les images d'espace réservé par le contenu réel de votre église.
+Après l'application d'un modèle, ouvrez chaque page dans l'[éditeur de page](./page-editor.md) pour remplacer le texte et les images d'espace réservé par le contenu réel de votre église.
 
 :::info
-Les modèles de site créent la structure de page et la navigation. Ils ne remplacent pas le schéma de couleurs ou les polices de votre site -- ceux-ci sont contrôlés par l'[Apparence](appearance).
+Les modèles de site créent la structure de page et la navigation. Ils ne remplacent pas le schéma de couleurs ou les polices de votre site -- ceux-ci sont contrôlés par l'[Apparence](./appearance.md).
 :::
 
 ## Lightbox d'image
@@ -124,7 +125,7 @@ Lorsque les visiteurs cliquent sur une image de votre site web, elle s'ouvre dan
 
 ## Étapes suivantes
 
-- [Configuration initiale](initial-setup) -- Instructions de configuration initiale
-- [Utilisation de l'éditeur de page](page-editor) -- Apprenez à créer et styliser le contenu de la page
-- [Apparence](appearance) -- Personnalisez le thème visuel de votre site
-- [Fichiers](files) -- Téléchargez et gérez les ressources médias de vos pages
+- [Configuration initiale](./initial-setup.md) -- Instructions de configuration initiale
+- [Utilisation de l'éditeur de page](./page-editor.md) -- Apprenez à créer et styliser le contenu de la page
+- [Apparence](./appearance.md) -- Personnalisez le thème visuel de votre site
+- [Fichiers](./files.md) -- Téléchargez et gérez les ressources médias de vos pages

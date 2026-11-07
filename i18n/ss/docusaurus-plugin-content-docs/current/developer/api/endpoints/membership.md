@@ -1,5 +1,6 @@
 ---
 title: "Ema-Endpoint E-Membership"
+description: "Incwadzi ye-Membership API ye-ChurchApps: bantfu, emindeni, emaqembu, tindzima, tifomu, nemasethingi, nemitsetfo yekugunyaza nemvume."
 ---
 
 # Ema-Endpoint E-Membership
@@ -71,7 +72,7 @@ Authorization: Bearer <token>
 
 Umkhondvo losisekelo: `/membership/users`
 
-Buka [Authentication & Permissions](./authentication) kuma-endpoint ekungena, kubhaliswa, kanye nekuphatsa liphasiwedi.
+Buka [Authentication & Permissions](./authentication.md) kuma-endpoint ekungena, kubhaliswa, kanye nekuphatsa liphasiwedi.
 
 | Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
 |--------|------|------|------------|-------------|
@@ -332,6 +333,6 @@ Umkhondvo losisekelo: `/membership/clientErrors`
 
 ## Emakhasi Lahlobene
 
-- [Authentication & Permissions](./authentication) — Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
-- [Attendance Endpoints](./attendance) — Kulandzelela service kanye nekuvakasha
-- [Module Structure](../module-structure) — Sifanekiso sekuhlelwa kwekhodi
+- [Authentication & Permissions](./authentication.md) — Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
+- [Attendance Endpoints](./attendance.md) — Kulandzelela service kanye nekuvakasha
+- [Module Structure](../module-structure.md) — Sifanekiso sekuhlelwa kwekhodi

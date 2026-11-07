@@ -1,5 +1,6 @@
 ---
 title: "Adományok rögzítése"
+description: "Adományok rögzítése a B1 Admin-ban: tétel létrehozása, ajándékok egyenkénti bevitele, CSV-import, vagy egyetlen ajándék rögzítése az adakozó profiljából."
 ---
 
 # Adományok rögzítése

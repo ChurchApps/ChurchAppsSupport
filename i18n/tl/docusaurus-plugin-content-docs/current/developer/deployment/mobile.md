@@ -1,5 +1,6 @@
 ---
 title: "Pag-deploy ng Mobile"
+description: "Gabay sa pagbuo ng Android at iOS release ng B1 Mobile app gamit ang Expo EAS, pag-submit sa app store, at pag-push ng OTA update."
 ---
 
 # Pag-deploy ng Mobile
@@ -13,7 +14,7 @@ Ang mga ChurchApps mobile app ay binubuo at dine-deploy gamit ang **Expo EAS Bui
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-setup ang mobile app nang lokal -- tingnan ang [B1 Mobile](../mobile/b1-mobile)
+- I-setup ang mobile app nang lokal -- tingnan ang [B1 Mobile](../mobile/b1-mobile.md)
 - Mag-install at i-configure ang [EAS CLI](https://docs.expo.dev/eas/)
 - Magkaroon ng access sa Google Play Console (Android) at/o Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Ang pagkalimot na mag-update ng mga numero ng bersyon sa lahat ng file ay magdud
 
 ## Mga Kaugnay na Artikulo
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Gabay sa lokal na pag-setup at development
-- **[Pag-deploy ng API](./apis)** -- Pag-deploy ng mga backend API
-- **[Pag-deploy ng Web App](./web-apps)** -- Pag-deploy ng mga frontend na web application
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Gabay sa lokal na pag-setup at development
+- **[Pag-deploy ng API](./apis.md)** -- Pag-deploy ng mga backend API
+- **[Pag-deploy ng Web App](./web-apps.md)** -- Pag-deploy ng mga frontend na web application

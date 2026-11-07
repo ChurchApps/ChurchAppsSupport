@@ -1,5 +1,6 @@
 ---
 title: "Mukauttaminen"
+description: "Piilota osioita, rooleja tai toimintoja Lessons.church-oppitunnilta ja järjestä sisältö uudelleen joko yhdelle luokkahuoneelle tai kaikille."
 ---
 
 # Mukauttaminen

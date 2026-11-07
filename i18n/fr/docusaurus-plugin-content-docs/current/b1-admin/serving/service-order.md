@@ -1,5 +1,7 @@
 ---
-title: "Ordre de service"
+title: "Ordre du culte dans B1 Admin"
+sidebar_label: "Ordre de service"
+description: "Configurez l'ordre du culte dans B1 Admin : ajoutez chants, leçons et éléments personnalisés, organisez-les en sections et imprimez la feuille de route."
 ---
 
 # Ordre de service

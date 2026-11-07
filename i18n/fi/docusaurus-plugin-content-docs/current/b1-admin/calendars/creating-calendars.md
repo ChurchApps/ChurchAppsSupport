@@ -1,5 +1,6 @@
 ---
 title: "Kalenterien luominen"
+description: "Luo kalenteri B1 Adminissa, yhdistä ryhmät tai tuo .ics-tiedostoja ja hallitse tapahtumia, ilmoittautumisia ja muistiinpanoja yhdestä paikasta."
 ---
 
 # Kalenterien luominen
@@ -61,7 +62,7 @@ Ryhmien liittäminen kalenteriisi on tehokas tapa koota tapahtumat automaattises
 :::
 
 :::info
-Jos haluat luoda yhden kalenterin, joka kokoaa tapahtumia monista seurakuntasi ryhmistä, katso [Kuratoitu kalenteri](curated-calendar) yksinkertaisempaa tapaa varten.
+Jos haluat luoda yhden kalenterin, joka kokoaa tapahtumia monista seurakuntasi ryhmistä, katso [Kuratoitu kalenteri](./curated-calendar.md) yksinkertaisempaa tapaa varten.
 :::
 
 ## Tapahtumien lisääminen ja muokkaaminen {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Lisää tapahtuma napsauttamalla **Uusi tapahtuma** kalenterin tietosivulla, tai
 - **Alkaa** ja **Päättyy**, **Toistuu** ja **Näkyvyys** (**Julkinen** tai **Yksityinen**).
 - **Tunnisteet** -- Pilkulla erotetut tunnisteet, kuten `youth, students`. Verkkosivustosi Kalenteri-elementti voidaan asettaa näyttämään vain tietyllä tunnisteella varustetut tapahtumat. Tämä on sama **Tunnisteet**-kenttä, joka näkyy tapahtuman ilmoittautumisasetuksissa.
 - **Ketkä voivat nähdä muistiinpanot** ja **Ketkä voivat lisätä muistiinpanoja** -- Kuka voi lukea ja lisätä tapahtuman muistiinpanoja (katso [Tapahtuman muistiinpanot](#event-notes)). Valitse **Vain henkilökunta** (oletus), **Ryhmäjohtajat** (tapahtuman ryhmän johtajat) tai **Ryhmän jäsenet** (kaikki tapahtuman ryhmän jäsenet, johtajat mukaan lukien).
-- **Huoneet** ja **Resurssit** -- Varaa tila ja laitteet tapahtumalle. Katso [Huoneet, resurssit ja ajoitus](rooms-resources).
+- **Huoneet** ja **Resurssit** -- Varaa tila ja laitteet tapahtumalle. Katso [Huoneet, resurssit ja ajoitus](./rooms-resources.md).
 
 Napsauta **Tallenna**. Jos tapahtuma toistuu, B1 pyytää vahvistuksen, koska tallennus päivittää kaikki sarjan esiintymät.
 
@@ -101,12 +102,12 @@ Voit ottaa ilmoittautumisen käyttöön mille tahansa kalenteritapahtumalle, jot
    - **Ilmoittautuminen päättyy** -- Päivämäärä ja kellonaika, jolloin ilmoittautuminen päättyy.
    - **Tunnisteet** -- Pilkulla erotetut tunnisteet (esim. „nuoret, retriitti, VBS”) auttavat luokittelemaan ilmoittautumiseen liittyviä tapahtumia.
    - **Ilmoittautumiskysymykset** -- Voit halutessasi liittää [lomakkeen](../forms/creating-forms.md), jotta ilmoittautujat vastaavat lisäkysymyksiin (ruokavalio, T-paidan koko, hätäyhteystieto jne.) osana ilmoittautumista. Valitse **Ei mitään**, jos haluat ohittaa kysymykset.
-   - **Ota jonotuslista käyttöön** -- Kun tapahtuma täyttyy, anna lisäilmoittautujien liittyä jonotuslistalle sen sijaan, että heidät torjuttaisiin. Katso [Maksulliset ilmoittautumiset](paid-registrations#waitlist).
+   - **Ota jonotuslista käyttöön** -- Kun tapahtuma täyttyy, anna lisäilmoittautujien liittyä jonotuslistalle sen sijaan, että heidät torjuttaisiin. Katso [Maksulliset ilmoittautumiset](./paid-registrations.md#waitlist).
 4. Tallenna tapahtuma.
 
-Maksullisten tapahtumien osalta sama asetussivu mahdollistaa hinnoiteltujen **Osallistujatyyppien**, valinnaisten **Valintojen** (lisäpalvelut) ja **Alennuskoodien** määrittämisen. Maksut kerätään seurakuntasi lahjoituspalvelun kautta. Katso koko ohje sivulta [Maksulliset ilmoittautumiset](paid-registrations).
+Maksullisten tapahtumien osalta sama asetussivu mahdollistaa hinnoiteltujen **Osallistujatyyppien**, valinnaisten **Valintojen** (lisäpalvelut) ja **Alennuskoodien** määrittämisen. Maksut kerätään seurakuntasi lahjoituspalvelun kautta. Katso koko ohje sivulta [Maksulliset ilmoittautumiset](./paid-registrations.md).
 
-Kun ilmoittautuminen on otettu käyttöön, jäsenet näkevät painikkeen **Ilmoittaudu tähän tapahtumaan**, kun he katsovat tapahtumaa [B1-verkkosivustolla](../../b1-church/events/registering) tai [B1-mobiilisovelluksessa](../../b1-mobile/events/registering). Jos liität lomakkeen, ilmoittautujat näkevät ilmoittautumisen aikana **Kysymykset**-vaiheen, ja heidän vastauksensa tallennetaan ilmoittautumisen yhteydessä.
+Kun ilmoittautuminen on otettu käyttöön, jäsenet näkevät painikkeen **Ilmoittaudu tähän tapahtumaan**, kun he katsovat tapahtumaa [B1-verkkosivustolla](../../b1-church/events/registering.md) tai [B1-mobiilisovelluksessa](../../b1-mobile/events/registering.md). Jos liität lomakkeen, ilmoittautujat näkevät ilmoittautumisen aikana **Kysymykset**-vaiheen, ja heidän vastauksensa tallennetaan ilmoittautumisen yhteydessä.
 
 :::info
 Ilmoittautumiskysymykset toimivat vain lomakkeilla, joita **ei** ole merkitty rajoitetuiksi. Rajoitettu lomake ohitetaan automaattisesti ilmoittautumisen aikana eikä sitä näytetä, joten käytä rajoittamatonta lomaketta, kun liität kysymyksiä tapahtumaan.
@@ -126,7 +127,7 @@ Ilmoittautumisten katsominen ja hallinta tapahtumillesi:
    - **Siirrä ylös** jonotuslistalla olevia ilmoittautumisia, kun paikka vapautuu
    - **Vie CSV** -- Lataa kaikki ilmoittautumiset, mukaan lukien osallistujatyypit, valinnat, maksusummat ja kysymysten vastaukset
 
-Jos tapahtumaan on liitetty ilmoittautumiskysymyksiä, tietosivulla näkyy myös suodatin **Vain vastaamattomat kysymykset**, jolla löydät nopeasti ilmoittautujat, jotka eivät ole vielä lähettäneet vastauksia. Jokaisessa vastatussa ilmoittautumisessa on myös **Näytä vastaukset** -painike vastausten katsomista varten. Maksulliset tapahtumat lisäävät **Tyyppi**-sarakkeen, **Maksettu / Yhteensä** -sarakkeen, tyyppikohtaiset määrät ja maksutietojen valintaikkunan. Katso [Maksulliset ilmoittautumiset](paid-registrations#the-registration-roster).
+Jos tapahtumaan on liitetty ilmoittautumiskysymyksiä, tietosivulla näkyy myös suodatin **Vain vastaamattomat kysymykset**, jolla löydät nopeasti ilmoittautujat, jotka eivät ole vielä lähettäneet vastauksia. Jokaisessa vastatussa ilmoittautumisessa on myös **Näytä vastaukset** -painike vastausten katsomista varten. Maksulliset tapahtumat lisäävät **Tyyppi**-sarakkeen, **Maksettu / Yhteensä** -sarakkeen, tyyppikohtaiset määrät ja maksutietojen valintaikkunan. Katso [Maksulliset ilmoittautumiset](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Käytä kapasiteettipalkkia seurataksesi, kuinka nopeasti tapahtumat täyttyvät. Palkki muuttuu punaiseksi, kun tapahtuma on täynnä tai ylittää kapasiteetin.
@@ -134,7 +135,7 @@ Käytä kapasiteettipalkkia seurataksesi, kuinka nopeasti tapahtumat täyttyvät
 
 ## Seuraavat vaiheet
 
-- [Kuratoitu kalenteri](curated-calendar) -- Luo kalenteri, joka hakee tapahtumia useista ryhmistä
-- [Maksulliset ilmoittautumiset](paid-registrations) -- Osallistujatyypit, lisävalinnat, alennuskoodit, maksut ja jonotuslistat
-- [Tapahtumailmoittautumisen opas](../guides/event-registration) -- Vaiheittainen opas tapahtumailmoittautumisen määrittämiseen
-- [Kalenterien yleiskatsaus](./) -- Palaa kalenterien yleiskatsaukseen
+- [Kuratoitu kalenteri](./curated-calendar.md) -- Luo kalenteri, joka hakee tapahtumia useista ryhmistä
+- [Maksulliset ilmoittautumiset](./paid-registrations.md) -- Osallistujatyypit, lisävalinnat, alennuskoodit, maksut ja jonotuslistat
+- [Tapahtumailmoittautumisen opas](../guides/event-registration.md) -- Vaiheittainen opas tapahtumailmoittautumisen määrittämiseen
+- [Kalenterien yleiskatsaus](./index.md) -- Palaa kalenterien yleiskatsaukseen

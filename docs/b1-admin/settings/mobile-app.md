@@ -1,5 +1,6 @@
 ---
 title: "Mobile App Settings"
+description: "Configure the navigation tabs, Home screen tiles, sign-in prompt, and member directory privacy settings for the B1.church member app in B1 Admin."
 ---
 
 # Mobile App Settings

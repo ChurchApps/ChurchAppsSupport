@@ -1,5 +1,6 @@
 ---
 title: "Opombe"
+description: "Pregledujte pastoralne opombe, sledenja in načrte oseb, skupin, dogodkov ter delovnih kartic na enem seznamu v B1 Admin, od najnovejših do najstarejših."
 ---
 
 # Opombe

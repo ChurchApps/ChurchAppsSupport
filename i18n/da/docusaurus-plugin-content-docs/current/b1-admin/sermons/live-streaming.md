@@ -1,5 +1,7 @@
 ---
-title: "live streaming"
+title: "Livestream-tider og opsætning i B1 Admin"
+sidebar_label: "live streaming"
+description: "Planlæg faste eller enkeltstående livestreams, indstil chat- og tidlig videotid, forbind en YouTube-kanal og fejlfind indlejringer i B1 Admin."
 ---
 
 # live streaming
@@ -15,7 +17,7 @@ Live stream gange siden lader dig konfigurere dit kirks streaming skema, adminis
 
 - Du har brug for **contentApi.streamingServices.edit** tilladelse. Se [roller og tilladelser](../settings/roles-permissions.md) hvis du ikke har adgang.
 - Har din YouTube kanal ID klar hvis du planlægger at brug automatiseret live streaming
-- Tilføj mindst en [prædikenindtastning](managing-sermons) eller permanent live URL for at bruge som din stream kilde
+- Tilføj mindst en [prædikenindtastning](./managing-sermons.md) eller permanent live URL for at bruge som din stream kilde
 
 </div>
 
@@ -76,13 +78,13 @@ For at finde din YouTube kanal ID, gå til din YouTube kanals avancerede indstil
 
 ## tilpas farver og logo
 
-Din live stream siden bruger dit webstedsindhold [udseende](../website/appearance) indstillinger:
+Din live stream siden bruger dit webstedsindhold [udseende](../website/appearance.md) indstillinger:
 
 - **lys accent farve** med mørk tekst bliver brugt til headeren.
 - **mørk accent farve** med lys tekst blive brugt til sidebjælken.
 - Dit **lys bagrund logo** vises på streaming siden. Brug et billede med en transparent baggrund og en 4:1 aspect ratio.
 
-For at ændre disse, gå til **websted** derefter **udseende** og opdater din [farve palet](../website/appearance#color-palette) og [logo](../website/appearance#logo-and-branding) indstillinger.
+For at ændre disse, gå til **websted** derefter **udseende** og opdater din [farve palet](../website/appearance.md#color-palette) og [logo](../website/appearance.md#logo-and-branding) indstillinger.
 
 ## Tilføj streaming værter
 
@@ -129,5 +131,5 @@ YouTube automatiseret kanal live stream indlejring kan være blokeret når der e
 
 ## Næste trin
 
-- [administrering af prædikener](managing-sermons) -- Tilføj prædikener til dit bibliotek
-- [playlister](playlists) -- Organiser prædikener ind i serier
+- [administrering af prædikener](./managing-sermons.md) -- Tilføj prædikener til dit bibliotek
+- [playlister](./playlists.md) -- Organiser prædikener ind i serier

@@ -1,5 +1,7 @@
 ---
-title: "Check-in"
+title: "Configurarea auto-check-in cu B1 Checkin și B1 Admin"
+sidebar_label: "Check-in"
+description: "Configurați auto-check-in cu aplicația B1 Checkin în B1 Admin: dispozitive, conturi kiosc, programe, branding și înscrierea oaspeților prin QR."
 ---
 
 # Check-in
@@ -99,7 +101,7 @@ Folosiți ecranul de repaus pentru a afișa anunțuri, evenimente viitoare sau m
 
 Chioșcul de check-in poate afișa un cod QR pe care vizitatorii îl scanează pentru a se înregistra singuri, împreună cu familiile lor, pe propriul telefon. Acest lucru accelerează procesul de check-in pentru oaspeții care vin pentru prima dată.
 
-Când un oaspete scanează codul QR, este dus la o [pagină de înregistrare a oaspeților](../../b1-church/checkin/guest-registration), unde introduce numele membrilor familiei sale și alte detalii pe care decideți să le solicitați. Un voluntar îl poate apoi căuta pe chioșc și îl poate înregistra.
+Când un oaspete scanează codul QR, este dus la o [pagină de înregistrare a oaspeților](../../b1-church/checkin/guest-registration.md), unde introduce numele membrilor familiei sale și alte detalii pe care decideți să le solicitați. Un voluntar îl poate apoi căuta pe chioșc și îl poate înregistra.
 
 ### Activarea înregistrării oaspeților prin QR
 

@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie kazaniami"
+description: "Zarządzaj biblioteką kazań w B1 Admin: dodawaj kazania z YouTube, Vimeo lub Facebooka, edytuj szczegóły i uzyskaj kanał podcastu dla swojego kościoła."
 ---
 
 # Zarządzanie kazaniami
@@ -14,7 +15,7 @@ Strona Kazania wyświetla całą bibliotekę kazań. Stąd możesz dodawać nowe
 <h4>Zanim zaczniesz</h4>
 
 - Potrzebujesz uprawnienia **contentApi.streamingServices.edit**. Jeśli nie masz dostępu, zobacz [Role i uprawnienia](../settings/roles-permissions.md).
-- Utwórz co najmniej jedną [playlistę](playlists), do której przypiszesz kazania
+- Utwórz co najmniej jedną [playlistę](./playlists.md), do której przypiszesz kazania
 - Przygotuj identyfikatory wideo lub adresy URL z YouTube, Vimeo lub Facebooka
 
 </div>
@@ -35,7 +36,7 @@ Strona Kazania wyświetla całą bibliotekę kazań. Stąd możesz dodawać nowe
 6. Wprowadź potrzebne zmiany i kliknij **Zapisz**.
 
 :::tip
-Możesz też dodać stały adres URL transmisji na żywo, wybierając **Dodaj stały adres URL na żywo** z listy rozwijanej **Dodaj kazanie**. Tworzy to trwałe połączenie z transmisją na żywo Twojego kanału YouTube, korzystając z Twojego identyfikatora kanału. Więcej informacji znajdziesz w sekcji [Transmisje na żywo](live-streaming).
+Możesz też dodać stały adres URL transmisji na żywo, wybierając **Dodaj stały adres URL na żywo** z listy rozwijanej **Dodaj kazanie**. Tworzy to trwałe połączenie z transmisją na żywo Twojego kanału YouTube, korzystając z Twojego identyfikatora kanału. Więcej informacji znajdziesz w sekcji [Transmisje na żywo](./live-streaming.md).
 :::
 
 ## Edytowanie kazania
@@ -73,11 +74,11 @@ Po dodaniu kazania możesz zaplanować jego emisję na stronie transmisji na ży
 3. Kazanie zostanie odtworzone o zaplanowanej porze nabożeństwa.
 
 :::info
-Aby zaimportować wiele kazań naraz zamiast dodawać je pojedynczo, skorzystaj z narzędzia [Import zbiorczy](bulk-import), które pobiera filmy bezpośrednio z Twojego konta YouTube lub Vimeo.
+Aby zaimportować wiele kazań naraz zamiast dodawać je pojedynczo, skorzystaj z narzędzia [Import zbiorczy](./bulk-import.md), które pobiera filmy bezpośrednio z Twojego konta YouTube lub Vimeo.
 :::
 
 ## Następne kroki
 
-- [Playlisty](playlists) -- Porządkowanie kazań w serie
-- [Transmisje na żywo](live-streaming) -- Konfiguracja harmonogramu transmisji
-- [Import zbiorczy](bulk-import) -- Import wielu kazań naraz
+- [Playlisty](./playlists.md) -- Porządkowanie kazań w serie
+- [Transmisje na żywo](./live-streaming.md) -- Konfiguracja harmonogramu transmisji
+- [Import zbiorczy](./bulk-import.md) -- Import wielu kazań naraz

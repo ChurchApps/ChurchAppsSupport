@@ -1,5 +1,6 @@
 ---
 title: "Bildirimler ve Hatırlatıcılar Mimarisi"
+description: "B1 Admin API'si bildirimleri, zamanlanmış hatırlatmaları, kilise e-posta sınırlarını ve SMS aboneliği iptallerini tek bir teslimat hattı ve tercih kapısı üzerinden yönlendirir."
 ---
 
 # Bildirimler ve Hatırlatıcılar Mimarisi
@@ -185,6 +186,6 @@ Yerelde aynı mantık, `Api` projesinden `npm run timer:30min` ve `npm run timer
 
 ## İlgili sayfalar
 
-- [Gerçek Zamanlı Mimari](../realtime): Yerel uygulama içi teslimat seviyesinin üzerinde çalıştığı WebSocket protokolü ve istemci ilkel öğeleri (`SocketHelper`, `SubscriptionManager`, `ConversationStore`)
-- [Web Push Bildirimleri](../web-push): Push yükseltme seviyesinin kullandığı VAPID kurulumu ve tarayıcı Push API yolu
-- [Mesajlaşma Uç Noktaları](../api/endpoints/messaging): Mesajlar, konuşmalar, bağlantılar ve bildirim/hatırlatıcı yolları için tam REST yüzeyi
+- [Gerçek Zamanlı Mimari](../realtime.md): Yerel uygulama içi teslimat seviyesinin üzerinde çalıştığı WebSocket protokolü ve istemci ilkel öğeleri (`SocketHelper`, `SubscriptionManager`, `ConversationStore`)
+- [Web Push Bildirimleri](../web-push.md): Push yükseltme seviyesinin kullandığı VAPID kurulumu ve tarayıcı Push API yolu
+- [Mesajlaşma Uç Noktaları](../api/endpoints/messaging.md): Mesajlar, konuşmalar, bağlantılar ve bildirim/hatırlatıcı yolları için tam REST yüzeyi

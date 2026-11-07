@@ -1,5 +1,6 @@
 ---
 title: "Närvaro"
+description: "Granska veckans närvaro, rum och gäster i B1 Admin och ställ sedan in campus, gudstjänsttider, deltagarantal och kioskincheckning från sidan Närvaro."
 ---
 
 # Närvaro

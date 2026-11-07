@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie lekcjami"
+description: "Buduj strukturę lekcji w panelu Lessons.church: miejsca, sekcje i akcje ról (Say, Do, Note, Play), kopia dla rodziców i zasoby."
 ---
 
 # Zarządzanie lekcjami

@@ -1,5 +1,6 @@
 ---
 title: "Stripe importas"
+description: "Importuokite Stripe aukas į B1 Admin su peržiūra: kiekvienas mokėjimas pažymimas kaip naujas, jau importuotas ar praleistas prieš patvirtinimą."
 ---
 
 # Stripe importas

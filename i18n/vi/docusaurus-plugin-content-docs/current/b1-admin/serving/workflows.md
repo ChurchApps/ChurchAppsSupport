@@ -1,5 +1,6 @@
 ---
 title: "Quy trình làm việc"
+description: "Xây dựng bảng kiểu Kanban trong B1 Admin để đưa người qua các bước theo dõi bằng email, tin nhắn và trình kích hoạt tự động, tự thêm người vào."
 ---
 
 # Quy trình làm việc

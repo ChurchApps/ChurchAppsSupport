@@ -1,5 +1,6 @@
 ---
 title: "Navigatiestijlen"
+description: "Pas kleuren aan voor vaste en transparante navigatiebalken op je kerkwebsite in B1 Admin, inclusief linkkleuren voor hover- en actieve status."
 ---
 
 # Navigatiestijlen

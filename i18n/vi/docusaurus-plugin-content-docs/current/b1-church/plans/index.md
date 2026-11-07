@@ -1,5 +1,6 @@
 ---
 title: "Kế hoạch"
+description: "Xem các lịch phục vụ bạn được phân công trên B1.church, kiểm tra vị trí và ngày, rồi chấp nhận hoặc từ chối phân công từ cổng thành viên của bạn."
 ---
 
 # Kế hoạch

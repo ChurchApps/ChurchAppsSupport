@@ -1,5 +1,6 @@
 ---
 title: "Adatvédelmi beállítások"
+description: "Szabályozd, mely profiladatokat, például telefonszámot, e-mail-címet és címet láthatják más tagok a B1 Mobile könyvtárban, és tekintsd át a függőben lévő módosításokat."
 ---
 
 # Adatvédelmi beállítások
@@ -13,7 +14,7 @@ A profil képernyő **Láthatóság** fülén szabályozhatja, hogy a többi egy
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing), majd [jelentkezzen be](../getting-started/logging-in) fiókjába
+- [Telepítse a B1 Mobile alkalmazást](../getting-started/installing.md), majd [jelentkezzen be](../getting-started/logging-in.md) fiókjába
 
 </div>
 
@@ -52,8 +53,8 @@ A **Fiók** fül biztonsági beállításaihoz nyújt hozzáférést. Ezen a fü
 
 | Fül | Célja |
 |---|---|
-| **Profil** | [Személyes adatainak és fényképének szerkesztése](./editing-profile) |
-| **Háztartás** | [Családtagjainak megtekintése](./household) |
+| **Profil** | [Személyes adatainak és fényképének szerkesztése](./editing-profile.md) |
+| **Háztartás** | [Családtagjainak megtekintése](./household.md) |
 | **Láthatóság** | A névjegyzékben mások által látható adatok szabályozása |
 | **Függőben** | Jóváhagyásra váró profilmódosítások áttekintése |
 | **Fiók** | Biztonsági beállítások kezelése |
@@ -62,6 +63,6 @@ Ezek a fülek együtt biztosítják, hogy teljes mértékben Ön szabályozhassa
 
 ## Kapcsolódó cikkek
 
-- [Profil szerkesztése](./editing-profile) -- Személyes adatainak frissítése
-- [Háztartás](./household) -- Családtagjainak megtekintése és kezelése
+- [Profil szerkesztése](./editing-profile.md) -- Személyes adatainak frissítése
+- [Háztartás](./household.md) -- Családtagjainak megtekintése és kezelése
 - [Névjegyzék](../community/member-directory.md) -- Hogyan jelenik meg a profilja másoknak

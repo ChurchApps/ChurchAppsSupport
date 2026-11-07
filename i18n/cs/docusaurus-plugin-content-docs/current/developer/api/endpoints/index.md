@@ -1,5 +1,6 @@
 ---
 title: "Referenčník koncových bodů"
+description: "Najděte endpointy API ChurchApps podle modulu, zjistěte HTTP metodu, cestu, autentizaci a oprávnění každé trasy a konvence dávkového ukládání a chyb."
 ---
 
 # Referenčník koncových bodů
@@ -89,10 +90,10 @@ Parametry reportu se předávají jako hodnoty v query stringu (např. `?startDa
 
 | Modul | Základní cesta | Popis |
 |-------|----------------|-------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Přihlášení, registrace, JWT tokeny, OAuth, oprávnění |
-| [Membership](./membership) | `/membership/*` | Lidé, sbory, skupiny, domácnosti, role, formuláře, nastavení |
-| [Attendance](./attendance) | `/attendance/*` | Kampusy, bohoslužby, relace, návštěvy, záznamy o check-inu |
-| [Content](./content) | `/content/*` | Stránky, kázání, události, soubory, galerie, Bible, streamování |
-| [Giving](./giving) | `/giving/*` | Dary, fondy, platební brány, předplatná |
-| [Messaging](./messaging) | `/messaging/*` | Konverzace, oznámení, zařízení, SMS |
-| [Doing](./doing) | `/doing/*` | Plány, úkoly, přiřazení, automatizace, plánování |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Přihlášení, registrace, JWT tokeny, OAuth, oprávnění |
+| [Membership](./membership.md) | `/membership/*` | Lidé, sbory, skupiny, domácnosti, role, formuláře, nastavení |
+| [Attendance](./attendance.md) | `/attendance/*` | Kampusy, bohoslužby, relace, návštěvy, záznamy o check-inu |
+| [Content](./content.md) | `/content/*` | Stránky, kázání, události, soubory, galerie, Bible, streamování |
+| [Giving](./giving.md) | `/giving/*` | Dary, fondy, platební brány, předplatná |
+| [Messaging](./messaging.md) | `/messaging/*` | Konverzace, oznámení, zařízení, SMS |
+| [Doing](./doing.md) | `/doing/*` | Plány, úkoly, přiřazení, automatizace, plánování |

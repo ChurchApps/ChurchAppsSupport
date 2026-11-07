@@ -1,5 +1,7 @@
 ---
-title: "Profilis"
+title: "Profilio nustatymai ir įrenginiai B1 Admin"
+sidebar_label: "Profilis"
+description: "Atnaujinkite vardą, el. paštą, slaptažodį, dviejų veiksnių prisijungimą, temą ir įrenginius B1 Admin profilyje bei tvirtinkite narių profilio pakeitimus."
 ---
 
 # Profilis

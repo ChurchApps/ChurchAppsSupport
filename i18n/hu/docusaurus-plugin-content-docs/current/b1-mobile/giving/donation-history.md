@@ -1,5 +1,7 @@
 ---
-title: "Adománytörténet"
+title: "Adományelőzmények megtekintése a B1 Mobile alkalmazásban"
+sidebar_label: "Adománytörténet"
+description: "Tekintsd meg az idei adakozásaidat, az utolsó adományodat és a teljes adományi nyilvántartást a B1 Mobile alkalmazásban, és az Áttekintés fülről egy koppintással megismételhetsz egy korábbi adományt."
 ---
 
 # Adománytörténet
@@ -13,8 +15,8 @@ A B1 Mobile két lapon keresztül nyújt átfogó képet az adakozásaidról: az
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
-- [Tegyél legalább egy adományt](./making-donations), hogy lásd az adománytörténetedet
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
+- [Tegyél legalább egy adományt](./making-donations.md), hogy lásd az adománytörténetedet
 
 </div>
 
@@ -45,5 +47,5 @@ Rendszeresen nézd meg az **Áttekintés** lapot, hogy követni tudd az adakozá
 
 ## Kapcsolódó cikkek
 
-- [Adomány küldése](./making-donations) -- Új adomány küldése az alkalmazásból
-- [Fizetési módok kezelése](./managing-payments) -- Mentett fizetési módok hozzáadása vagy eltávolítása
+- [Adomány küldése](./making-donations.md) -- Új adomány küldése az alkalmazásból
+- [Fizetési módok kezelése](./managing-payments.md) -- Mentett fizetési módok hozzáadása vagy eltávolítása

@@ -1,5 +1,6 @@
 ---
 title: "एंडपॉइंट संदर्भ"
+description: "मॉड्यूल के अनुसार हर ChurchApps API एंडपॉइंट खोजें, प्रत्येक मार्ग की HTTP विधि, पथ, प्रमाणीकरण और अनुमति देखें, और API कॉल करने से पहले बैच-सेव व त्रुटि नियम सीखें।"
 ---
 
 # एंडपॉइंट संदर्भ
@@ -89,10 +90,10 @@ Authorization: Bearer <token>
 
 | मॉड्यूल | बेस पथ | विवरण |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | लॉगिन, पंजीकरण, JWT टोकन, OAuth, अनुमतियाँ |
-| [Membership](./membership) | `/membership/*` | लोग, चर्च, समूह, परिवार, भूमिकाएँ, फ़ॉर्म, सेटिंग्स |
-| [Attendance](./attendance) | `/attendance/*` | कैंपस, सेवाएँ, सत्र, विज़िट, चेक-इन रिकॉर्ड |
-| [Content](./content) | `/content/*` | पृष्ठ, प्रवचन, इवेंट, फ़ाइलें, गैलरी, बाइबल, स्ट्रीमिंग |
-| [Giving](./giving) | `/giving/*` | दान, फ़ंड, भुगतान गेटवे, सदस्यताएँ |
-| [Messaging](./messaging) | `/messaging/*` | वार्तालाप, सूचनाएँ, डिवाइस, SMS |
-| [Doing](./doing) | `/doing/*` | योजनाएँ, कार्य, असाइनमेंट, ऑटोमेशन, शेड्यूलिंग |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | लॉगिन, पंजीकरण, JWT टोकन, OAuth, अनुमतियाँ |
+| [Membership](./membership.md) | `/membership/*` | लोग, चर्च, समूह, परिवार, भूमिकाएँ, फ़ॉर्म, सेटिंग्स |
+| [Attendance](./attendance.md) | `/attendance/*` | कैंपस, सेवाएँ, सत्र, विज़िट, चेक-इन रिकॉर्ड |
+| [Content](./content.md) | `/content/*` | पृष्ठ, प्रवचन, इवेंट, फ़ाइलें, गैलरी, बाइबल, स्ट्रीमिंग |
+| [Giving](./giving.md) | `/giving/*` | दान, फ़ंड, भुगतान गेटवे, सदस्यताएँ |
+| [Messaging](./messaging.md) | `/messaging/*` | वार्तालाप, सूचनाएँ, डिवाइस, SMS |
+| [Doing](./doing.md) | `/doing/*` | योजनाएँ, कार्य, असाइनमेंट, ऑटोमेशन, शेड्यूलिंग |

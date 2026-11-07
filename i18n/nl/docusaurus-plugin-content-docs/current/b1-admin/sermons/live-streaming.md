@@ -1,5 +1,7 @@
 ---
-title: "Live streaming"
+title: "Livestreamtijden en instellingen in B1 Admin"
+sidebar_label: "Live streaming"
+description: "Plan wekelijkse of eenmalige livestreamdiensten, stel chat- en vroege videotijden in, koppel een YouTube-kanaal en los embed-problemen op in B1 Admin."
 ---
 
 # Live streaming
@@ -15,7 +17,7 @@ Op de pagina Live Stream Times kunt u het streamingschema van uw kerk configurer
 
 - U hebt de machtiging **contentApi.streamingServices.edit** nodig. Zie [Rollen & Machtigingen](../settings/roles-permissions.md) als u geen toegang hebt.
 - Zorg dat u uw YouTube Channel ID gereed hebt als u van plan bent geautomatiseerde live streaming te gebruiken
-- Voeg minstens één [preek](managing-sermons) of permanente live URL toe om als uw streambron te gebruiken
+- Voeg minstens één [preek](./managing-sermons.md) of permanente live URL toe om als uw streambron te gebruiken
 
 </div>
 
@@ -76,13 +78,13 @@ Om uw YouTube Channel ID te vinden, gaat u naar de geavanceerde instellingen van
 
 ## Kleuren en logo aanpassen
 
-Uw live streamingpagina gebruikt de [Weergave](../website/appearance)-instellingen van uw website:
+Uw live streamingpagina gebruikt de [Weergave](../website/appearance.md)-instellingen van uw website:
 
 - De **lichte accentkleur** met donkere tekst wordt gebruikt voor de koptekst.
 - De **donkere accentkleur** met lichte tekst wordt gebruikt voor de zijbalk.
 - Uw **Light Background Logo** verschijnt op de streamingpagina. Gebruik een afbeelding met een transparante achtergrond en een verhouding van 4:1.
 
-Als u deze wilt wijzigen, gaat u naar **Website** en vervolgens **Weergave** en werk u uw [Kleurenpalette](../website/appearance#color-palette)- en [Logo](../website/appearance#logo-and-branding)-instellingen bij.
+Als u deze wilt wijzigen, gaat u naar **Website** en vervolgens **Weergave** en werk u uw [Kleurenpalette](../website/appearance.md#color-palette)- en [Logo](../website/appearance.md#logo-and-branding)-instellingen bij.
 
 ## Streaminghost toevoegen
 
@@ -129,5 +131,5 @@ YouTube's geautomatiseerde live streaminsluiting van kanaal kan worden geblokkee
 
 ## Volgende stappen
 
-- [Preken beheren](managing-sermons) -- Voeg preken aan uw bibliotheek toe
-- [Afspeellijsten](playlists) -- Organiseer preken in series
+- [Preken beheren](./managing-sermons.md) -- Voeg preken aan uw bibliotheek toe
+- [Afspeellijsten](./playlists.md) -- Organiseer preken in series

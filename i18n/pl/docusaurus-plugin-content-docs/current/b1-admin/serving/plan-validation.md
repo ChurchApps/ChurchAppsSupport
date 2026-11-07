@@ -1,5 +1,6 @@
 ---
 title: "Weryfikacja planu i powiadomienia"
+description: "Sprawdzaj w B1 Admin plany nabożeństw pod kątem wolnych stanowisk, konfliktów terminów i zablokowanych wolontariuszy, po czym powiadom cały zespół jednym kliknięciem."
 ---
 
 # Weryfikacja planu i powiadomienia dla wolontariuszy

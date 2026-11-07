@@ -1,5 +1,7 @@
 ---
-title: "Komunidad"
+title: "Community Member Directory sa B1.church"
+sidebar_label: "Komunidad"
+description: "Maghanap ng miyembro sa directory ng B1.church ayon sa pangalan o grupo, tingnan ang profile, at alamin kung nasaan na ang mga update ng retiradong Timeline."
 ---
 
 # Komunidad
@@ -26,5 +28,5 @@ Ang mga miyembro at impormasyon na makikita mo sa direktoryo ay depende sa mga p
 :::
 
 :::tip
-Gamitin ang mga feature ng komunidad kasabay ng [Mga Grupo](../groups/) para manatiling engaged sa iyong simbahan sa buong linggo.
+Gamitin ang mga feature ng komunidad kasabay ng [Mga Grupo](../groups/index.md) para manatiling engaged sa iyong simbahan sa buong linggo.
 :::

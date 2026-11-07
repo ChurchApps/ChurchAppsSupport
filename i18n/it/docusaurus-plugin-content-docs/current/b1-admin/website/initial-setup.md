@@ -1,5 +1,7 @@
 ---
-title: "Configurazione Iniziale"
+title: "Iniziare con il sito web di B1 Admin"
+sidebar_label: "Configurazione Iniziale"
+description: "Configura il sito in B1 Admin: collega un sottodominio o dominio personalizzato, crea la home, scegli colori e logo e costruisci la navigazione."
 ---
 
 # Configurazione Iniziale
@@ -45,7 +47,7 @@ Se non vedi l'opzione Impostazioni, chiedi alla persona che ha configurato il tu
 6. Dopo aver aggiunto una sezione, fai clic di nuovo su **Aggiungi Contenuto** per inserire testo, immagini, video, schede, moduli e altro trascinandoli nella tua sezione.
 
 :::info
-Per istruzioni dettagliate su come lavorare con le pagine e la navigazione, vedi [Gestione Pagine](managing-pages). Per una guida completa all'editor visuale, vedi [Utilizzo dell'Editor di Pagine](page-editor).
+Per istruzioni dettagliate su come lavorare con le pagine e la navigazione, vedi [Gestione Pagine](./managing-pages.md). Per una guida completa all'editor visuale, vedi [Utilizzo dell'Editor di Pagine](./page-editor.md).
 :::
 
 ## Configurazione Aspetto del Sito
@@ -57,7 +59,7 @@ Per istruzioni dettagliate su come lavorare con le pagine e la navigazione, vedi
 5. Configura il tuo **Piè di Pagina Sito** con le informazioni di contatto e i link della tua chiesa.
 
 :::info
-Le modifiche che apportate in Aspetto si applicano a tutto il tuo sito web. Vedi la pagina [Aspetto](appearance) per istruzioni dettagliate su ogni impostazione.
+Le modifiche che apportate in Aspetto si applicano a tutto il tuo sito web. Vedi la pagina [Aspetto](./appearance.md) per istruzioni dettagliate su ogni impostazione.
 :::
 
 ## Configurazione Navigazione
@@ -70,6 +72,6 @@ I tuoi link di navigazione appaiono nella visualizzazione Pagine Sito Web. Per o
 
 ## Prossimi Passaggi
 
-- [Gestione Pagine](managing-pages) -- Scopri come lavorare con le pagine e la navigazione in dettaglio
-- [Aspetto](appearance) -- Metti a punto i colori, i caratteri e il layout del tuo sito
-- [File](files) -- Carica immagini e documenti per il tuo sito web
+- [Gestione Pagine](./managing-pages.md) -- Scopri come lavorare con le pagine e la navigazione in dettaglio
+- [Aspetto](./appearance.md) -- Metti a punto i colori, i caratteri e il layout del tuo sito
+- [File](./files.md) -- Carica immagini e documenti per il tuo sito web

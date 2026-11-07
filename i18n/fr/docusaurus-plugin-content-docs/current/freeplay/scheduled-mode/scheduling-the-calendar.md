@@ -1,5 +1,6 @@
 ---
 title: "Planifier le calendrier"
+description: "Planifier listes, plans ou dossiers sur vos groupes d'écrans, en récurrence hebdomadaire ou ponctuelle, dans le Calendrier de FreePlay Admin."
 ---
 
 # Planifier le calendrier
@@ -13,8 +14,8 @@ La page **Calendar** de FreePlay Admin contrôle ce que diffuse chaque groupe d'
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Créez au moins un groupe d'écrans. Voir [Gérer les écrans et les groupes](./managing-screens#screen-groups)
-- [Créez une liste de lecture](./building-playlists), ou disposez d'un type de plan configuré dans B1 Admin
+- Créez au moins un groupe d'écrans. Voir [Gérer les écrans et les groupes](./managing-screens.md#screen-groups)
+- [Créez une liste de lecture](./building-playlists.md), ou disposez d'un type de plan configuré dans B1 Admin
 
 </div>
 
@@ -82,10 +83,10 @@ Si deux programmations se chevauchent, le formulaire affiche un avertissement : 
 
 ## Comment les écrans prennent en compte les modifications
 
-Les écrans associés téléchargent tout ce qui est programmé pour les 7 jours suivants, et vérifient eux-mêmes les modifications. Vous n'avez pas besoin de toucher au téléviseur après avoir modifié le calendrier. Pour savoir quand un écran dispose de tout ce dont il a besoin, consultez **Ready through** sur la [page Écrans](./managing-screens).
+Les écrans associés téléchargent tout ce qui est programmé pour les 7 jours suivants, et vérifient eux-mêmes les modifications. Vous n'avez pas besoin de toucher au téléviseur après avoir modifié le calendrier. Pour savoir quand un écran dispose de tout ce dont il a besoin, consultez **Ready through** sur la [page Écrans](./managing-screens.md).
 
 ## Articles connexes
 
-- **[Créer des listes de lecture](./building-playlists)** - Créez les listes de lecture que vous programmez
-- **[Lecture programmée sur le téléviseur](./scheduled-playback)** - Comment fonctionnent les leçons en mode teacher paced et la télécommande sur le téléviseur
-- **[Gérer les écrans et les groupes](./managing-screens)** - Ajouter des groupes et vérifier les téléchargements de chaque écran
+- **[Créer des listes de lecture](./building-playlists.md)** - Créez les listes de lecture que vous programmez
+- **[Lecture programmée sur le téléviseur](./scheduled-playback.md)** - Comment fonctionnent les leçons en mode teacher paced et la télécommande sur le téléviseur
+- **[Gérer les écrans et les groupes](./managing-screens.md)** - Ajouter des groupes et vérifier les téléchargements de chaque écran

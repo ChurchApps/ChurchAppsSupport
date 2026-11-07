@@ -1,5 +1,6 @@
 ---
 title: "Bytte menigheter"
+description: "Bytt mellom menigheter i B1 Mobile-appen ved å velge en nylig brukt menighet eller søke etter navn, alt med én ChurchApps-innlogging."
 ---
 
 # Bytte menigheter
@@ -13,7 +14,7 @@ Hvis du er medlem av mer enn én menighet, gjør B1 Mobile det enkelt å bytte m
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](./installing) og [logg inn](./logging-in) på kontoen din
+- [Installer B1 Mobile](./installing.md) og [logg inn](./logging-in.md) på kontoen din
 
 </div>
 
@@ -24,7 +25,7 @@ Hvis du er medlem av mer enn én menighet, gjør B1 Mobile det enkelt å bytte m
 3. Skjermbildet **Menighetssøk** vises. Menighetene du nylig har besøkt, vises øverst for rask tilgang.
 4. Trykk på en nylig besøkt menighet for å bytte til den, eller skriv i søkefeltet for å finne en annen menighet.
 
-Når du bytter menighet, laster appen på nytt med den menighetens profil, navigasjonslenker og innhold. [Oversikten](../dashboard/), [gruppene](../groups/) og andre data dine vil da vise den nyvalgte menigheten.
+Når du bytter menighet, laster appen på nytt med den menighetens profil, navigasjonslenker og innhold. [Oversikten](../dashboard/index.md), [gruppene](../groups/index.md) og andre data dine vil da vise den nyvalgte menigheten.
 
 ## Søke etter en menighet
 

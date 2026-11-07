@@ -1,5 +1,6 @@
 ---
 title: "Adicionando pessoas"
+description: "Adicione uma pessoa ao banco de dados da igreja no B1 Admin, preencha seus dados e vincule familiares em domicílios para check-in e relatórios."
 ---
 
 # Adicionando pessoas

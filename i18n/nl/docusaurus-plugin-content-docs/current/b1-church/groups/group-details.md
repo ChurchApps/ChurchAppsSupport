@@ -1,5 +1,7 @@
 ---
-title: "Groep Details"
+title: "Groepsdetails in het ledenportaal van B1.church"
+sidebar_label: "Groep Details"
+description: "Open de detailpagina van een groep op B1.church om evenementen, vergaderingen, formulieren en leden te zien, en word lid of vraag toegang aan."
 ---
 
 # Groep Details

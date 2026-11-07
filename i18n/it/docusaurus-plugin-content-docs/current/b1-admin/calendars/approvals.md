@@ -1,5 +1,6 @@
 ---
 title: "Approvazioni del calendario"
+description: "Esamina in B1 Admin le richieste di prenotazione di sale e risorse, verifica i conflitti, poi approva o rifiuta, pubblicando facoltativamente l'evento."
 ---
 
 # Approvazioni del calendario
@@ -13,7 +14,7 @@ La pagina Approvazioni è dove gli amministratori esaminano e agiscono su richie
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configurate stanze o risorse con un **Gruppo di approvazione** in [Stanze e risorse](rooms-resources)
+- Configurate stanze o risorse con un **Gruppo di approvazione** in [Stanze e risorse](./rooms-resources.md)
 - Avete bisogno del permesso **Amministratore calendari** o del permesso **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Fate clic su **Approva** o **Rifiuta** su qualsiasi richiesta di prenotazione (i
 Quando fate clic su **Approva**, si apre una finestra di dialogo **Approva prenotazione** in modo da poter pubblicare anche l'evento nello stesso passaggio:
 
 1. Spuntate **Pubblica nel calendario pubblico** per rendere l'evento pubblico sul calendario del gruppo. Lasciate deselezionato per approvare la prenotazione senza modificare la visibilità dell'evento.
-2. Una volta spuntato **Pubblica nel calendario pubblico**, potete opzionalmente scegliere un calendario curato da **Aggiungi anche al calendario** per aggiungere l'evento anche a uno dei vostri [calendari curati](curated-calendar). Lasciatelo impostato su **Nessuno** per saltare questo. (Questa opzione appare solo se avete il permesso **content.edit**.)
+2. Una volta spuntato **Pubblica nel calendario pubblico**, potete opzionalmente scegliere un calendario curato da **Aggiungi anche al calendario** per aggiungere l'evento anche a uno dei vostri [calendari curati](./curated-calendar.md). Lasciatelo impostato su **Nessuno** per saltare questo. (Questa opzione appare solo se avete il permesso **content.edit**.)
 3. Fate clic su **Approva**.
 
 ## Eventi in sospeso
@@ -49,10 +50,10 @@ Quando fate clic su **Approva**, si apre una finestra di dialogo **Approva preno
 Se il vostro flusso di lavoro del calendario richiede l'approvazione dell'evento prima che gli eventi diventino visibili al pubblico, gli eventi in sospeso appaiono nella sezione **Richieste di evento**. Fate clic su **Approva** per pubblicare un evento nel calendario, o su **Rifiuta** per notificare al presentatore che sono necessarie modifiche.
 
 :::tip
-Configurate un Gruppo di approvazione su una stanza in [Stanze e risorse](rooms-resources) per richiedere l'approvazione per quella stanza. I gruppi con accesso possono quindi richiedere la stanza quando creano eventi, e quelle richieste fluiscono in questa pagina.
+Configurate un Gruppo di approvazione su una stanza in [Stanze e risorse](./rooms-resources.md) per richiedere l'approvazione per quella stanza. I gruppi con accesso possono quindi richiedere la stanza quando creano eventi, e quelle richieste fluiscono in questa pagina.
 :::
 
 ## Articoli correlati
 
-- [Stanze, risorse e pianificazione](rooms-resources) — configurate stanze e risorse prenotabili
-- [Creazione di calendari](creating-calendars) — gestite calendari ed eventi
+- [Stanze, risorse e pianificazione](./rooms-resources.md) — configurate stanze e risorse prenotabili
+- [Creazione di calendari](./creating-calendars.md) — gestite calendari ed eventi

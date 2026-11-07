@@ -1,5 +1,6 @@
 ---
 title: "Integrations"
+description: "B1 Admin을 Slack, Discord, Zapier, Make, Google 스프레드시트, Claude 같은 AI 도우미에 연결합니다. 설정 단계와 각 연결에 필요한 API 키 범위를 안내합니다."
 ---
 
 # 연동
@@ -14,21 +15,21 @@ B1은 팀이 이미 사용하는 도구와 연결됩니다. 직원 알림을 위
 
 | 연동 | 기능 | 방향 | 설정에 걸리는 시간 |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Slack 채널에 읽기 쉬운 알림(새 사람, 기부, 등록 등)을 게시합니다 | B1 → Slack | 2분 |
-| **[Discord](./slack-discord)** | Discord 채널에 같은 알림을 게시합니다 | B1 → Discord | 2분 |
-| **[Zapier](./zapier)** | B1 이벤트를 트리거로 사용하고, Zapier의 7,000개 이상 앱에서 B1 작업을 사용합니다 | 양방향 | Zap당 5~10분 |
-| **[Make](./make)** | Zapier와 같은 개념이며, Make의 시각적 시나리오 빌더에서 사용합니다 | 양방향 | 시나리오당 5~10분 |
-| **[Google Sheets](./google-sheets)** | 사람 / 기부 / 그룹 / 출석 데이터를 필요할 때 스프레드시트로 내보냅니다 | B1 → Sheet | 5분 |
-| **[Claude](./claude)** | Anthropic의 Claude에게 교회 데이터에 대해 질문하며, 사용자 권한 범위 내에서 동작합니다. 무료로 체험할 수 있고 추천합니다 | 양방향 | 3분 미만 |
-| **[ChatGPT](./chatgpt)** | OpenAI의 ChatGPT로 같은 기능을 제공합니다(유료 ChatGPT 요금제 필요) | 양방향 | 10분 |
-| **[연결된 서비스](./services/)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr용 추천 설정 가이드 | 다양함 | 서비스당 5~10분 |
+| **[Slack](./slack-discord.md)** | Slack 채널에 읽기 쉬운 알림(새 사람, 기부, 등록 등)을 게시합니다 | B1 → Slack | 2분 |
+| **[Discord](./slack-discord.md)** | Discord 채널에 같은 알림을 게시합니다 | B1 → Discord | 2분 |
+| **[Zapier](./zapier.md)** | B1 이벤트를 트리거로 사용하고, Zapier의 7,000개 이상 앱에서 B1 작업을 사용합니다 | 양방향 | Zap당 5~10분 |
+| **[Make](./make.md)** | Zapier와 같은 개념이며, Make의 시각적 시나리오 빌더에서 사용합니다 | 양방향 | 시나리오당 5~10분 |
+| **[Google Sheets](./google-sheets.md)** | 사람 / 기부 / 그룹 / 출석 데이터를 필요할 때 스프레드시트로 내보냅니다 | B1 → Sheet | 5분 |
+| **[Claude](./claude.md)** | Anthropic의 Claude에게 교회 데이터에 대해 질문하며, 사용자 권한 범위 내에서 동작합니다. 무료로 체험할 수 있고 추천합니다 | 양방향 | 3분 미만 |
+| **[ChatGPT](./chatgpt.md)** | OpenAI의 ChatGPT로 같은 기능을 제공합니다(유료 ChatGPT 요금제 필요) | 양방향 | 10분 |
+| **[연결된 서비스](./services/index.md)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr용 추천 설정 가이드 | 다양함 | 서비스당 5~10분 |
 
 ## 선택 방법
 
 - **채팅에서 알림만 받고 싶으신가요?** **Slack** 또는 **Discord**를 사용하세요. 제3자 계정도, 관리할 Zap도 필요 없습니다. 모든 설정은 B1Admin 안에서 이루어집니다.
 - **여러 앱에 걸친 작업을 자동화하고 싶으신가요?** (예: "누군가 헌금하면 Mailchimp 목록에 추가하고 Slack #donations에 알림 보내기") **Zapier** 또는 **Make**를 사용하세요. Zapier는 더 사용하기 쉽고, Make는 규모가 커질수록 저렴하며 더 유연한 로직을 지원합니다.
 - **일회성 데이터 추출이나 정기 보고서가 필요하신가요?** **Google Sheets**를 사용하세요. 부가 기능 사이드바에 API 키를 붙여넣고 내보내기를 클릭하면 됩니다.
-- **일반 언어로 질문하고 싶으신가요?** (예: "지난 일요일에 처음 방문한 사람은 몇 명이었나요?", "이번 달 헌금을 요약해 주세요") **[Claude](./claude)**부터 시작하세요. 무료로 체험할 수 있으며 3분 이내에 설정됩니다. **[ChatGPT](./chatgpt)**도 유료 요금제로 사용할 수 있습니다. Claude는 B1 계정으로 로그인하여 연결되며, ChatGPT는 B1 API 키를 사용합니다.
+- **일반 언어로 질문하고 싶으신가요?** (예: "지난 일요일에 처음 방문한 사람은 몇 명이었나요?", "이번 달 헌금을 요약해 주세요") **[Claude](./claude.md)**부터 시작하세요. 무료로 체험할 수 있으며 3분 이내에 설정됩니다. **[ChatGPT](./chatgpt.md)**도 유료 요금제로 사용할 수 있습니다. Claude는 B1 계정으로 로그인하여 연결되며, ChatGPT는 B1 API 키를 사용합니다.
 - **직접 맞춤형 연동을 만들고 싶으신가요?** 위의 어떤 것도 맞지 않는다면, [API 키](/docs/developer/api/api-keys)를 사용하여 [REST API](/docs/developer/api)와 직접 통신하거나, 직접 운영하는 서버를 [웹훅](/docs/developer/api/webhooks)에 구독시키세요.
 
 ## 공통 사항
@@ -59,10 +60,10 @@ ChurchApps는 무료이며 오픈 소스입니다. Slack/Discord, [`@churchapps/
 
 ## 다음 단계
 
-- [Slack & Discord](./slack-discord) — 채팅 알림 게시
-- [Zapier](./zapier) — 7,000개 이상의 앱과 연결
-- [Make](./make) — 시각적 워크플로 자동화
-- [Google Sheets](./google-sheets) — 스프레드시트로 내보내기
-- [Claude](./claude) — 교회 데이터에 대해 Anthropic의 Claude에게 질문
-- [ChatGPT](./chatgpt) — 교회 데이터에 대해 OpenAI의 ChatGPT에게 질문
-- [연결된 서비스](./services/) — 서비스별 추천 설정 (Mailchimp, Donorbox, Clearstream 등)
+- [Slack & Discord](./slack-discord.md) — 채팅 알림 게시
+- [Zapier](./zapier.md) — 7,000개 이상의 앱과 연결
+- [Make](./make.md) — 시각적 워크플로 자동화
+- [Google Sheets](./google-sheets.md) — 스프레드시트로 내보내기
+- [Claude](./claude.md) — 교회 데이터에 대해 Anthropic의 Claude에게 질문
+- [ChatGPT](./chatgpt.md) — 교회 데이터에 대해 OpenAI의 ChatGPT에게 질문
+- [연결된 서비스](./services/index.md) — 서비스별 추천 설정 (Mailchimp, Donorbox, Clearstream 등)

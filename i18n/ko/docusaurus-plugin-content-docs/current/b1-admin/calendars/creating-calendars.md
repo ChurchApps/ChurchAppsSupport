@@ -1,5 +1,6 @@
 ---
 title: "캘린더 만들기"
+description: "B1 Admin에서 캘린더를 만들고, 그룹을 연결하거나 .ics 파일을 가져오며, 한곳에서 행사, 등록, 메모를 관리합니다."
 ---
 
 # 캘린더 만들기
@@ -61,7 +62,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 :::
 
 :::info
-교회 전체 그룹의 행사를 모아 하나의 캘린더를 만들고 싶다면, 간편한 방법인 [큐레이션 캘린더](curated-calendar)를 참고하세요.
+교회 전체 그룹의 행사를 모아 하나의 캘린더를 만들고 싶다면, 간편한 방법인 [큐레이션 캘린더](./curated-calendar.md)를 참고하세요.
 :::
 
 ## 행사 추가 및 편집 {#adding-and-editing-events}
@@ -75,7 +76,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 - **Start**와 **End**, **Repeats**, 그리고 **Visibility**(**Public** 또는 **Private**).
 - **Tags** -- `youth, students`처럼 쉼표로 구분된 라벨. 웹사이트의 캘린더 요소를 특정 태그가 있는 행사만 보여 주도록 설정할 수 있습니다. 행사의 등록 설정에 보이는 **Tags** 필드와 같은 필드입니다.
 - **Who can view notes**와 **Who can post notes** -- 행사 메모를 읽고 쓸 수 있는 사람([행사 메모](#event-notes) 참고). **Staff only**(기본값), **Group leaders**(행사 그룹의 리더), **Group members**(리더를 포함해 행사 그룹의 모든 구성원) 중에서 고르세요.
-- **Rooms**와 **Resources** -- 행사에 필요한 공간과 장비를 예약합니다. [시설, 자원 및 일정 관리](rooms-resources)를 참고하세요.
+- **Rooms**와 **Resources** -- 행사에 필요한 공간과 장비를 예약합니다. [시설, 자원 및 일정 관리](./rooms-resources.md)를 참고하세요.
 
 **Save**를 클릭하세요. 행사가 반복되는 경우 B1은 저장하면 시리즈의 모든 발생 건이 갱신되므로 확인을 요청합니다.
 
@@ -101,12 +102,12 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
    - **Registration Closes** -- 등록이 마감되는 날짜와 시간.
    - **Tags** -- 등록 가능한 행사를 분류하는 데 도움이 되도록 쉼표로 구분된 라벨(예: "youth, retreat, vbs").
    - **Registration Questions** -- 선택 사항으로 [양식](../forms/creating-forms.md)을 연결하면, 등록자가 신청하면서 추가 질문(식이 제한, 티셔츠 사이즈, 비상 연락처 등)에 답할 수 있습니다. 질문을 쓰지 않으려면 **None**을 고르세요.
-   - **Enable Waitlist** -- 행사가 가득 차면 등록을 거절하는 대신 추가 등록자를 대기자 명단에 올릴 수 있습니다. [유료 등록의 대기자 명단](paid-registrations#waitlist)을 참고하세요.
+   - **Enable Waitlist** -- 행사가 가득 차면 등록을 거절하는 대신 추가 등록자를 대기자 명단에 올릴 수 있습니다. [유료 등록의 대기자 명단](./paid-registrations.md#waitlist)을 참고하세요.
 4. 행사를 저장하세요.
 
-유료 행사의 경우 같은 설정 페이지에서 가격이 있는 **Attendee Types**(참가자 유형), 선택 사항인 **Selections**(추가 옵션), **Discount Codes**(할인 코드)를 정의할 수 있으며, 결제는 교회의 헌금 제공자를 통해 받습니다. 전체 과정은 [유료 등록](paid-registrations)을 참고하세요.
+유료 행사의 경우 같은 설정 페이지에서 가격이 있는 **Attendee Types**(참가자 유형), 선택 사항인 **Selections**(추가 옵션), **Discount Codes**(할인 코드)를 정의할 수 있으며, 결제는 교회의 헌금 제공자를 통해 받습니다. 전체 과정은 [유료 등록](./paid-registrations.md)을 참고하세요.
 
-등록을 켜면, 교인이 [B1 웹사이트](../../b1-church/events/registering)나 [B1 모바일 앱](../../b1-mobile/events/registering)에서 행사를 볼 때 **Register for this Event** 버튼이 나타납니다. 양식을 연결했다면 등록자는 등록 중에 **Questions** 단계를 보게 되며, 답변은 등록과 함께 저장됩니다.
+등록을 켜면, 교인이 [B1 웹사이트](../../b1-church/events/registering.md)나 [B1 모바일 앱](../../b1-mobile/events/registering.md)에서 행사를 볼 때 **Register for this Event** 버튼이 나타납니다. 양식을 연결했다면 등록자는 등록 중에 **Questions** 단계를 보게 되며, 답변은 등록과 함께 저장됩니다.
 
 :::info
 등록 질문은 **제한된(Restricted)** 표시가 없는 양식에서만 작동합니다. 제한된 양식은 보여 주지 않고 등록 과정에서 자동으로 건너뛰므로, 행사에 질문을 연결할 때는 제한되지 않은 양식을 사용하세요.
@@ -126,7 +127,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
    - 자리가 나면 대기자 명단의 등록을 **Promote**(승격)합니다.
    - **Export CSV** -- 참가자 유형, 선택 옵션, 결제 금액, 질문 답변을 포함해 모든 등록을 내려받습니다.
 
-행사에 등록 질문이 연결되어 있으면, 상세 페이지에 **Unanswered questions only** 필터가 나타나 아직 답변하지 않은 등록자를 빠르게 찾을 수 있습니다. 답변한 각 등록에는 **View Answers** 버튼이 있어 응답을 볼 수 있습니다. 유료 행사에는 **Type** 열, **Paid / Total** 열, 유형별 인원수, 결제 상세 대화상자가 추가로 나타납니다. [유료 등록](paid-registrations#the-registration-roster)을 참고하세요.
+행사에 등록 질문이 연결되어 있으면, 상세 페이지에 **Unanswered questions only** 필터가 나타나 아직 답변하지 않은 등록자를 빠르게 찾을 수 있습니다. 답변한 각 등록에는 **View Answers** 버튼이 있어 응답을 볼 수 있습니다. 유료 행사에는 **Type** 열, **Paid / Total** 열, 유형별 인원수, 결제 상세 대화상자가 추가로 나타납니다. [유료 등록](./paid-registrations.md#the-registration-roster)을 참고하세요.
 
 :::tip
 정원 진행 막대를 보면 행사가 얼마나 빨리 차고 있는지 확인할 수 있습니다. 행사가 정원에 도달하거나 넘으면 막대가 빨간색으로 바뀝니다.
@@ -134,7 +135,7 @@ B1 Admin에서 캘린더를 만들면 하나 이상의 그룹을 연결해 행�
 
 ## 다음 단계
 
-- [큐레이션 캘린더](curated-calendar) -- 여러 그룹의 행사를 가져오는 캘린더 만들기
-- [유료 등록](paid-registrations) -- 참가자 유형, 추가 옵션, 할인 코드, 결제, 대기자 명단
-- [행사 등록 안내](../guides/event-registration) -- 행사 등록 설정을 단계별로 안내
-- [캘린더 개요](./) -- 캘린더 개요로 돌아가기
+- [큐레이션 캘린더](./curated-calendar.md) -- 여러 그룹의 행사를 가져오는 캘린더 만들기
+- [유료 등록](./paid-registrations.md) -- 참가자 유형, 추가 옵션, 할인 코드, 결제, 대기자 명단
+- [행사 등록 안내](../guides/event-registration.md) -- 행사 등록 설정을 단계별로 안내
+- [캘린더 개요](./index.md) -- 캘린더 개요로 돌아가기

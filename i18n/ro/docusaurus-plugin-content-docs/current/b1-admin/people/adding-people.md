@@ -1,5 +1,6 @@
 ---
 title: "Adăugarea persoanelor"
+description: "Adăugați o persoană în baza de date a bisericii în B1 Admin, completați detaliile și legați membrii familiei în gospodării pentru check-in și rapoarte."
 ---
 
 # Adăugarea persoanelor

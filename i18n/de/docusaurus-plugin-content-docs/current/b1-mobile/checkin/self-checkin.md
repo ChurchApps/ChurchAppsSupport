@@ -1,5 +1,7 @@
 ---
-title: "Selbst-Check-in"
+title: "Selbst-Check-in über die B1 Mobile App"
+sidebar_label: "Selbst-Check-in"
+description: "Melden Sie sich und Ihren Haushalt in der B1 Mobile App zu einem Gottesdienst an, inklusive Auswahl der Uhrzeit und der Gruppe jeder Person."
 ---
 
 # Selbst-Check-in
@@ -13,7 +15,7 @@ Das Einchecken über B1 Mobile ist ein einfacher Vorgang mit mehreren Schritten.
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und sich in Ihrem Konto [anmelden](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und sich in Ihrem Konto [anmelden](../getting-started/logging-in.md)
 - Stellen Sie sicher, dass Ihre [Haushaltsmitglieder](../profile/household.md) in Ihrem Profil eingerichtet sind
 
 </div>

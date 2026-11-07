@@ -1,5 +1,7 @@
 ---
-title: "Istentiszteleti sorrend"
+title: "Istentiszteleti rend a B1 Adminban"
+sidebar_label: "Istentiszteleti sorrend"
+description: "Állítson be istentiszteleti rendet a B1 Adminban: adjon hozzá dalokat, leckéket és egyéni elemeket, rendezze őket szakaszokba, és nyomtassa ki a futó lapot."
 ---
 
 # Istentiszteleti sorrend

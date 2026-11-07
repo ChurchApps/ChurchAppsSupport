@@ -1,5 +1,6 @@
 ---
 title: "Betalte påmeldinger"
+description: "Sett opp betalte påmeldinger i B1 Admin: prisede deltakertyper, tilleggsvalg, rabattkoder, venteliste og innbetaling via din givertjeneste."
 ---
 
 # Betalte påmeldinger
@@ -13,7 +14,7 @@ Påmelding til arrangementer kan gå utover en enkel deltakerteller. Du kan defi
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Aktiver påmelding på arrangementet først -- se [Opprette kalendere](creating-calendars#enabling-event-registration)
+- Aktiver påmelding på arrangementet først -- se [Opprette kalendere](./creating-calendars.md#enabling-event-registration)
 - For å ta imot betalinger på nett må kirken din ha [nettbasert giving konfigurert](../donations/online-giving-setup.md) (Stripe, PayPal eller Kingdom Funding). Gratis arrangementer trenger ikke giveoppsett. Uten nettbasert giving fungerer betalte påmeldinger fortsatt, men folk betaler kirken direkte -- se [Kirker uten nettbasert giving](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Hver kode viser et antall **bruk**, slik at du kan se hvor ofte den er brukt. P�
 Slå på **Aktiver venteliste** i kortet for påmeldingsinnstillinger. Når arrangementet når kapasiteten:
 
 - Nye påmeldte får tilbud om en plass på ventelisten i stedet for å bli avvist. De fullfører den samme påmeldingen (betaling hoppes over mens de står på ventelisten).
-- Når noen avbestiller, **flyttes den eldste påmeldingen på ventelisten opp automatisk**, og får en e-post om at en plass er blitt ledig. Hvis de skylder et beløp, lenker e-posten dem til [Mine påmeldinger](../../b1-church/events/my-registrations) på kirkens B1-nettsted, der de kan fullføre betalingen.
+- Når noen avbestiller, **flyttes den eldste påmeldingen på ventelisten opp automatisk**, og får en e-post om at en plass er blitt ledig. Hvis de skylder et beløp, lenker e-posten dem til [Mine påmeldinger](../../b1-church/events/my-registrations.md) på kirkens B1-nettsted, der de kan fullføre betalingen.
 - Du kan flytte noen opp manuelt når som helst med handlingen **Flytt opp** på en rad på ventelisten -- nyttig etter at du har økt kapasiteten på arrangementet.
 
 :::info
@@ -75,7 +76,7 @@ Påmeldinger som er flyttet opp, forblir *ventende* til et eventuelt beløp er b
 
 - Klikk på detaljikonet på en rad for å åpne dialogen **Påmeldingsdetaljer** -- medlemmer, valg, betalt/restbeløp og en tabell over **Betalinger** som lister hvert beløp (beløp, metode, dato).
 - **Eksporter CSV** laster ned hele deltakerlisten med kolonner for medlemmer, deltakertyper, valg, betalt/totalt/restbeløp, status og én kolonne per påmeldingsspørsmål.
-- **Legg til deltaker** registrerer en påmelding som er gjort frakoblet eller per telefon for en hvilken som helst person i kirken din. Velg personen og, for et betalt arrangement, deres deltakertype. Kortet deres belastes ikke: en betalt påmelding lagres som **ventende** med hele beløpet som utestående saldo. Hvis kirken har nettbasert giving, kan personen betale via [Mine påmeldinger](../../b1-church/events/my-registrations); ellers må du innkreve beløpet personlig. Du trenger tillatelsen Rediger påmeldinger for å legge til deltakere.
+- **Legg til deltaker** registrerer en påmelding som er gjort frakoblet eller per telefon for en hvilken som helst person i kirken din. Velg personen og, for et betalt arrangement, deres deltakertype. Kortet deres belastes ikke: en betalt påmelding lagres som **ventende** med hele beløpet som utestående saldo. Hvis kirken har nettbasert giving, kan personen betale via [Mine påmeldinger](../../b1-church/events/my-registrations.md); ellers må du innkreve beløpet personlig. Du trenger tillatelsen Rediger påmeldinger for å legge til deltakere.
 
 :::info
 Refusjoner behandles ikke i B1. Hvis du må refundere en avbestilt betalt påmelding, gjør du det fra giveleverandørens dashbord (f.eks. Stripe).
@@ -90,12 +91,12 @@ Betalinger går gjennom den samme giveløsningen kirken din allerede bruker til 
 Hvis kirken din ikke har satt opp en giveleverandør, kan betalte arrangementer fortsatt ta imot påmeldinger. Betalingssteget forteller de påmeldte at betaling på nett ikke er tilgjengelig, og at de kan betale kirken direkte, og en knapp for **Meld på og betal senere** lagrer påmeldingen. Den lagres som **ventende** med hele beløpet som utestående saldo, og vises på deltakerlisten med en advarsel om restbeløp. Innkreve pengene på den måten kirken din vanligvis gjør det.
 
 :::info
-B1 har ingen måte å merke en betaling utenfor systemet som mottatt. Restbeløpet forblir på deltakerlisten og på den påmeldtes kort under [Mine påmeldinger](../../b1-church/events/my-registrations) etter at du har innkrevd det, så før din egen oversikt over hvem som har betalt.
+B1 har ingen måte å merke en betaling utenfor systemet som mottatt. Restbeløpet forblir på deltakerlisten og på den påmeldtes kort under [Mine påmeldinger](../../b1-church/events/my-registrations.md) etter at du har innkrevd det, så før din egen oversikt over hvem som har betalt.
 :::
 
 ## Relaterte artikler
 
-- [Opprette kalendere](creating-calendars#enabling-event-registration) -- aktiver påmelding og de grunnleggende innstillingene
+- [Opprette kalendere](./creating-calendars.md#enabling-event-registration) -- aktiver påmelding og de grunnleggende innstillingene
 - [Oppsett for nettbasert giving](../donations/online-giving-setup.md) -- konfigurer betalingsløsningen som brukes i kassen
-- [Melde seg på arrangementer](../../b1-church/events/registering) -- det medlemmer ser når de melder seg på
-- [Mine påmeldinger](../../b1-church/events/my-registrations) -- hvordan medlemmer betaler restbeløp og redigerer påmeldinger
+- [Melde seg på arrangementer](../../b1-church/events/registering.md) -- det medlemmer ser når de melder seg på
+- [Mine påmeldinger](../../b1-church/events/my-registrations.md) -- hvordan medlemmer betaler restbeløp og redigerer påmeldinger

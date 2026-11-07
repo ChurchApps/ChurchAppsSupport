@@ -1,5 +1,6 @@
 ---
 title: "Demografija"
+description: "Oglejte si starost, spol, članstvo, zakonski stan in sestavo kampusov v B1 Admin z interaktivnimi grafikoni in poglobite v katero koli skupino."
 ---
 
 # Demografija

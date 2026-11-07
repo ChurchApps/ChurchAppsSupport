@@ -1,5 +1,7 @@
 ---
-title: "Pointage"
+title: "Configuration de l'enregistrement autonome avec B1 Checkin et B1 Admin"
+sidebar_label: "Pointage"
+description: "Configurez l'enregistrement autonome aux services avec l'application B1 Checkin dans B1 Admin : appareils, comptes kiosque, horaires, image de marque et inscription des visiteurs par code QR."
 ---
 
 # Pointage
@@ -99,7 +101,7 @@ Utilisez l'écran de veille pour afficher des annonces, des événements à veni
 
 La borne de pointage peut afficher un code QR que les visiteurs scannent pour s'inscrire eux-mêmes et leur famille sur leur propre téléphone. Cela accélère le pointage pour les visiteurs qui viennent pour la première fois.
 
-Lorsqu'un visiteur scanne le code QR, il accède à une [page d'inscription des visiteurs](../../b1-church/checkin/guest-registration) où il saisit les noms de sa famille ainsi que les autres informations que vous choisissez de demander. Un bénévole peut ensuite le rechercher sur la borne et le pointer.
+Lorsqu'un visiteur scanne le code QR, il accède à une [page d'inscription des visiteurs](../../b1-church/checkin/guest-registration.md) où il saisit les noms de sa famille ainsi que les autres informations que vous choisissez de demander. Un bénévole peut ensuite le rechercher sur la borne et le pointer.
 
 ### Activer l'inscription par code QR
 

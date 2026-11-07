@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "通过 Zapier 将 Subsplash 的奉献、新人员和表单回复连接到 B1，使奉献和个人档案自动进入 B1 Admin。"
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ title: "Subsplash"
 
 ## 另请参阅
 
-- [Donorbox](./donorbox)：方案结构相同，但使用不同的奉献平台
-- [Zapier（概览）](../zapier)：每个 Zapier 方案的 B1 端说明
+- [Donorbox](./donorbox.md)：方案结构相同，但使用不同的奉献平台
+- [Zapier（概览）](../zapier.md)：每个 Zapier 方案的 B1 端说明
 - [Subsplash Zapier 集成指南](https://support.subsplash.com/en/articles/9825926-zapier-integration)（Subsplash 官方文档）

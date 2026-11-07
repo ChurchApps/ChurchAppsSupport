@@ -1,5 +1,7 @@
 ---
-title: "Lessons (Deprecated)"
+title: "Tab na Lessons sa B1.church (Hindi Na Ginagamit)"
+sidebar_label: "Lessons (Deprecated)"
+description: "Hindi na ginagamit ang Lessons tab sa B1.church. Mag-browse sa Lessons.church at i-play sa classroom TV gamit ang FreePlay ang mga lesson."
 ---
 
 # Lessons (Deprecated)
@@ -9,7 +11,7 @@ Ang naka-embed na tab na **Lessons** sa B1.church ay deprecated na. Ang pag-play
 
 Para direktang mag-browse, mag-iskedyul, o mag-edit ng curriculum, mag-sign in sa [Lessons.church](https://lessons.church) sa iyong browser. Para mag-play ng mga lesson sa TV ng silid-aralan, i-install ang [FreePlay](/docs/freeplay/getting-started/) sa iyong TV device.
 
-Ang mga magulang ng mga grupong may nakatalagang uri ng lesson plan sa B1Admin ay makikita ang **lesson ngayong linggo** sa pahina ng [mga detalye ng grupo](/docs/b1-church/groups/group-details.md) — hindi sa deprecated na tab na ito.
+Ang mga magulang ng mga grupong may nakatalagang uri ng lesson plan sa B1Admin ay makikita ang **lesson ngayong linggo** sa pahina ng [mga detalye ng grupo](../groups/group-details.md) — hindi sa deprecated na tab na ito.
 :::
 
 <div class="article-intro">

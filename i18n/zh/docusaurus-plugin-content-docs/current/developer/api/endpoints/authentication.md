@@ -1,5 +1,6 @@
 ---
 title: "身份验证与权限"
+description: "ChurchApps API 的 JWT 登录、双因素验证、OAuth 2.0 流程和权限模型参考，供构建集成的开发者使用。"
 ---
 
 # 身份验证与权限
@@ -244,7 +245,7 @@ API 支持 OAuth 2.0，用于第三方集成。提供两种授权类型。
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | 根据客户端 ID 获取客户端（密钥已隐去） |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | 创建或更新客户端 |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | 删除客户端 |
-| POST | `/membership/oauth/register` | Public | — | 面向 MCP 连接器等公开客户端的动态客户端注册（RFC 7591）。参见[已连接的应用](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | 面向 MCP 连接器等公开客户端的动态客户端注册（RFC 7591）。参见[已连接的应用](../connected-apps.md#dynamic-client-registration) |
 
 ### 设备批准端点
 
@@ -265,5 +266,5 @@ API 使用两个包装函数来决定身份验证要求：
 
 ## 相关页面
 
-- [模块结构](../module-structure) —— 控制器、仓储和模型的组织方式
-- [本地设置](../local-setup) —— 在本地运行 API 进行开发
+- [模块结构](../module-structure.md) —— 控制器、仓储和模型的组织方式
+- [本地设置](../local-setup.md) —— 在本地运行 API 进行开发

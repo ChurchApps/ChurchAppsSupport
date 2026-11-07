@@ -1,5 +1,6 @@
 ---
 title: "Mencari Orang"
+description: "Cari direktori Orang B1 Admin berdasarkan nama, urutkan dan pilih kolom di tampilan tabel, buat filter dengan Pencarian Lanjutan, dan ekspor hasil ke CSV."
 ---
 
 # Mencari Orang

@@ -1,5 +1,6 @@
 ---
 title: "Theo dõi điểm danh"
+description: "Xem xu hướng điểm danh, lọc báo cáo theo cơ sở, buổi lễ hoặc nhóm, và xuất dữ liệu điểm danh nhóm từ trang Điểm danh trong B1 Admin."
 ---
 
 # Theo dõi điểm danh

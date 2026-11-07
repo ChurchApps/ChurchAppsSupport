@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Reference for @churchapps/apihelper-pakken, som alle ChurchApps Express-API'er i Packages-workspacet bruger: lokal build, test med en Yarn-portal og udgivelse via changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer **Node.js** og **Git** -- se [Forudsætninger](../setup/prerequisites)
+- Installer **Node.js** og **Git** -- se [Forudsætninger](../setup/prerequisites.md)
 - Gør dig bekendt med [npm link workflow](./index.md) til lokal udvikling
-- Denne pakke afhænger af [`@churchapps/helpers`](./helpers)
+- Denne pakke afhænger af [`@churchapps/helpers`](./helpers.md)
 
 </div>
 
@@ -68,6 +69,6 @@ Denne pakke er en afhængighed af hver ChurchApps API. Når du foretager ændrin
 
 ## Relaterede artikler
 
-- **[Helpers](./helpers)** -- Det grundlæggende værktøjspakke, som denne pakke afhænger af
-- **[Modulstruktur](../api/module-structure)** -- Hvordan controllere og auth middleware bruges i API-moduler
-- **[Lokalt API-setup](../api/local-setup)** -- Opsætning af API'en til lokal udvikling
+- **[Helpers](./helpers.md)** -- Det grundlæggende værktøjspakke, som denne pakke afhænger af
+- **[Modulstruktur](../api/module-structure.md)** -- Hvordan controllere og auth middleware bruges i API-moduler
+- **[Lokalt API-setup](../api/local-setup.md)** -- Opsætning af API'en til lokal udvikling

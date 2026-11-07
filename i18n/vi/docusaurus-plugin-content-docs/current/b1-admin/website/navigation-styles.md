@@ -1,5 +1,6 @@
 ---
 title: "Kiểu dáng điều hướng"
+description: "Tùy chỉnh màu cho thanh điều hướng trang web trong suốt và đặc trong B1 Admin, bao gồm trạng thái liên kết, khi di chuột và đang hoạt động cho trang hội thánh."
 ---
 
 # Kiểu dáng điều hướng

@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Повежите Subsplash донације, нове особе и одговоре на обрасце са B1 преко Zapier-а, да поклони и профили аутоматски стижу у B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Subsplash → B1 је једини смер који Subsplash-ова аплик
 
 ## Погледајте и
 
-- [Donorbox](./donorbox): иста структура рецепата, друга платформа за донације
-- [Zapier (преглед)](../zapier): B1 страна сваког Zapier рецепта
+- [Donorbox](./donorbox.md): иста структура рецепата, друга платформа за донације
+- [Zapier (преглед)](../zapier.md): B1 страна сваког Zapier рецепта
 - [Subsplash-ов водич за Zapier интеграцију](https://support.subsplash.com/en/articles/9825926-zapier-integration) (документација компаније Subsplash)

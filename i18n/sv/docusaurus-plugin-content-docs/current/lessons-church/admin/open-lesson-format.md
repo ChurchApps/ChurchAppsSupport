@@ -1,5 +1,6 @@
 ---
 title: "Öppet lektionsformat"
+description: "Formatspecifikation för externa läroplansleverantörer på Lessons.church: JSON-fälten för leverantörsträdet och varianternas flöde, åtgärder och mediefiler."
 ---
 
 # Öppet lektionsformat

@@ -1,5 +1,7 @@
 ---
-title: "Tapahtumat"
+title: "Seurakuntatapahtumat ja ilmoittautuminen B1 Mobilessa"
+sidebar_label: "Tapahtumat"
+description: "Selaa tulevia seurakuntatapahtumia B1 Mobilessa ja ilmoittaudu itsesi sekä perheesi jäsenet tapahtumiin, joihin ilmoittautuminen on auki."
 ---
 
 # Tapahtumat
@@ -23,10 +25,10 @@ Tapahtumilla voi olla eri tilanteita:
 
 ## Mitä tarvitset
 
-- [B1 Mobile asennettuna](../getting-started/installing) ja [kirjauduttuna sisään](../getting-started/logging-in)
+- [B1 Mobile asennettuna](../getting-started/installing.md) ja [kirjauduttuna sisään](../getting-started/logging-in.md)
 - Seurakuntasi on otettava tapahtuman ilmoittautuminen käyttöön
 
 ## Lue lisää
 
-- [Ilmoittautuminen tapahtumiin](./registering) -- Vaiheittainen ohje tapahtumaan ilmoittautumiseen mobiilisovelluksessa
-- [Itsesisäänkirjautuminen](../checkin/self-checkin) -- Kirjaudu sisään, kun saavut tapahtumaan
+- [Ilmoittautuminen tapahtumiin](./registering.md) -- Vaiheittainen ohje tapahtumaan ilmoittautumiseen mobiilisovelluksessa
+- [Itsesisäänkirjautuminen](../checkin/self-checkin.md) -- Kirjaudu sisään, kun saavut tapahtumaan

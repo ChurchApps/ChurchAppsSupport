@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: bažnyčios lankomumo sekimas"
+description: "Sekite bažnyčios lankomumą B1 Admin: nustatykite filialus ir pamaldų laikus, registruokite rankiniu būdu ar savitarnos registracija ir skaitykite ataskaitas."
 ---
 
 # Bažnyčios lankomumo sekimas

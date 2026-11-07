@@ -1,5 +1,7 @@
 ---
-title: "Első lépések"
+title: "Kezdő lépések a B1 Mobile alkalmazással (elavult)"
+sidebar_label: "Első lépések"
+description: "Állítsd be a B1 Mobile alkalmazást telefonodon: keresd meg az alkalmazást, jelentkezz be ChurchApps-fiókoddal, és válaszd ki gyülekezetedet. Vedd figyelembe, hogy a B1 Mobile elavult, a PWA javára."
 ---
 
 # Első lépések
@@ -25,10 +27,10 @@ Ennyi az egész. Miután kiválasztotta gyülekezetét, az alkalmazás betölti 
 
 ## Ebben a szakaszban
 
-- [Az alkalmazás telepítése](./installing) -- Hol töltheti le a B1 Mobile alkalmazást, és milyen eszközkövetelmények vonatkoznak rá.
-- [Bejelentkezés](./logging-in) -- Hogyan jelentkezhet be, vagy hozhat létre új fiókot.
-- [Gyülekezetváltás](./switching-churches) -- Hogyan válthat gyülekezetei között, ha egynél több gyülekezethez tartozik.
+- [Az alkalmazás telepítése](./installing.md) -- Hol töltheti le a B1 Mobile alkalmazást, és milyen eszközkövetelmények vonatkoznak rá.
+- [Bejelentkezés](./logging-in.md) -- Hogyan jelentkezhet be, vagy hozhat létre új fiókot.
+- [Gyülekezetváltás](./switching-churches.md) -- Hogyan válthat gyülekezetei között, ha egynél több gyülekezethez tartozik.
 
 :::tip
-A B1 Mobile ugyanazt a ChurchApps-fiókot használja, mint a ChurchApps összes többi terméke. Ha már rendelkezik fiókkal a [B1.church](../../b1-church/) oldalon, a B1 Adminban vagy a Lessons.church oldalon, ugyanezekkel az adatokkal jelentkezhet be.
+A B1 Mobile ugyanazt a ChurchApps-fiókot használja, mint a ChurchApps összes többi terméke. Ha már rendelkezik fiókkal a [B1.church](../../b1-church/index.md) oldalon, a B1 Adminban vagy a Lessons.church oldalon, ugyanezekkel az adatokkal jelentkezhet be.
 :::

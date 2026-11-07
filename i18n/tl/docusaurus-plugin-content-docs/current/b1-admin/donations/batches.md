@@ -1,5 +1,6 @@
 ---
 title: "Mga Donation Batch"
+description: "Pagsamahin ang handog sa donation batch sa B1 Admin, saka isara, i-print, o i-export ang bawat isa para tugma ang kabuuan sa bank deposit."
 ---
 
 # Mga Donation Batch

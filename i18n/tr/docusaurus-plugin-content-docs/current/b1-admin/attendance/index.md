@@ -1,5 +1,6 @@
 ---
 title: "Yoklama"
+description: "B1 Admin'de haftalık katılımı, odaları ve misafirleri inceleyin; Attendance sayfasından kampüs, ibadet saati, katılımcı sayısı ve kiosk check-in ayarlarını yapın."
 ---
 
 # Yoklama

@@ -1,5 +1,6 @@
 ---
 title: "Tinsita Letichumene"
+description: "Xhuma i-B1 Admin ku-Mailchimp, Donorbox, Subsplash, VOMO, Clearstream nemanye emathuluzi ngetindlela ze-Zapier noma Make, netinhlelo tekusetfula."
 ---
 
 # Tinsita Letichumene
@@ -14,14 +15,14 @@ Indlela lesheshako yekuchumanisa B1 kulelinye lithulusi letekhono lelibandla nga
 
 | Insita | Sigaba | Libhulotsi | Loko lokungachumaniswa |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Imeyili | Zapier nobe Make | Fanisa bantfu labasha be-B1 / baniki kuluchungechunge lwelalelisi le-Mailchimp |
-| [Donorbox](./donorbox) | Imnikelo | Zapier | Fak' emnikelo ne-baniki be-Donorbox babuyele ku-B1 |
-| [Subsplash](./subsplash) | I-App / Imnikelo | Zapier | Fak' kunikelwa nebantfu be-Subsplash babuyele ku-B1 |
-| [VOMO](./vomo) | Kutivolontiya | Zapier | Fanisa kubhalisa kwebavolontiya emkatsi wemacembu e-B1 nemaphrojekthi e-VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Calisa umlayeto we-Clearstream kusuka kumcimbi we-B1; famukela tiphendvulo njengemarekhodi e-B1 |
-| [Text In Church](./text-in-church) | SMS / Tinchubo | Zapier | Calisa tinchubo te-Text In Church kusuka ku-B1; famukela imininingwane ye-Connect Card |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier nobe Make | Tfumela SMS kusuka kunoma yimuphi umcimbi we-B1 |
-| [Checkr](./checkr) | Kuhlolwa kwemuva | Make | Cala kuhlolwa kwemuva nakukhona lojoyina licembu lekukhonta |
+| [Mailchimp](./mailchimp.md) | Imeyili | Zapier nobe Make | Fanisa bantfu labasha be-B1 / baniki kuluchungechunge lwelalelisi le-Mailchimp |
+| [Donorbox](./donorbox.md) | Imnikelo | Zapier | Fak' emnikelo ne-baniki be-Donorbox babuyele ku-B1 |
+| [Subsplash](./subsplash.md) | I-App / Imnikelo | Zapier | Fak' kunikelwa nebantfu be-Subsplash babuyele ku-B1 |
+| [VOMO](./vomo.md) | Kutivolontiya | Zapier | Fanisa kubhalisa kwebavolontiya emkatsi wemacembu e-B1 nemaphrojekthi e-VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Calisa umlayeto we-Clearstream kusuka kumcimbi we-B1; famukela tiphendvulo njengemarekhodi e-B1 |
+| [Text In Church](./text-in-church.md) | SMS / Tinchubo | Zapier | Calisa tinchubo te-Text In Church kusuka ku-B1; famukela imininingwane ye-Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier nobe Make | Tfumela SMS kusuka kunoma yimuphi umcimbi we-B1 |
+| [Checkr](./checkr.md) | Kuhlolwa kwemuva | Make | Cala kuhlolwa kwemuva nakukhona lojoyina licembu lekukhonta |
 
 ## Loko Lokufananako Kuto Tonkhe
 
@@ -45,8 +46,8 @@ Siphindze sagwema ngekwenta sicinisekile emathulusi laphakathi kwe-Planning Cent
 
 ## Buka Nalokunye
 
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier lufana konkhe; leliphepha lifaka konkhe kanye
-- [Make (kubuka konkhe)](../make) — kufanako yetintfo te-Make
-- [Slack & Discord](../slack-discord) — tatiso letinyenti letingasedzingi libhulotsi
-- [Google Sheets](../google-sheets) — kutfunyelwa nakudzingeka
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier lufana konkhe; leliphepha lifaka konkhe kanye
+- [Make (kubuka konkhe)](../make.md) — kufanako yetintfo te-Make
+- [Slack & Discord](../slack-discord.md) — tatiso letinyenti letingasedzingi libhulotsi
+- [Google Sheets](../google-sheets.md) — kutfunyelwa nakudzingeka
 - [Webhooks (inkomba yentfutfuki)](/docs/developer/api/webhooks) — luhlu lwemcimbi lesetjentiswa iseluleko ngasinye

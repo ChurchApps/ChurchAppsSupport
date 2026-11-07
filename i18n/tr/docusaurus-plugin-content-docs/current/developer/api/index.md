@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "ChurchApps API'nin modüler monolit tasarımı, altı veri modülü, teknoloji yığını, portları ve Lambda işlevleri; kurulum ve başvuru sayfalarına bağlantılar."
 ---
 
 # API
@@ -52,8 +53,8 @@ AWS'ye dağıtıldığında API, altı Lambda fonksiyonu olarak çalışır:
 
 API, iki paylaşılan ChurchApps paketine bağlıdır:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Temel yardımcı araçlar (DateHelper, ApiHelper vb.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Kimlik doğrulama, veritabanı yardımcıları ve AWS entegrasyonları dahil Express sunucu yardımcı araçları
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Temel yardımcı araçlar (DateHelper, ApiHelper vb.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Kimlik doğrulama, veritabanı yardımcıları ve AWS entegrasyonları dahil Express sunucu yardımcı araçları
 
 :::info
 API, ES modüllerini kullanır (`package.json` içinde `"type": "module"`). İçe aktarmalarınızın ES modül sözdizimini kullandığından emin olun.
@@ -61,11 +62,11 @@ API, ES modüllerini kullanır (`package.json` içinde `"type": "module"`). İç
 
 ## Bu Bölümde
 
-- **[Yerel Kurulum](./local-setup)** -- API'yi yerel olarak klonlayın, yapılandırın ve çalıştırın
-- **[Veritabanı](./database)** -- Modül başına veritabanı mimarisi, şema betikleri ve veri erişim kalıpları
-- **[Modül Yapısı](./module-structure)** -- Denetleyiciler, depolar, modeller ve kimlik doğrulama
-- **[API Anahtarları](./api-keys)** -- Betikler ve bağlayıcılar için kişisel erişim belirteçleri
-- **[Bağlı Uygulamalar (OAuth)](./connected-apps)** -- Üçüncü taraf uygulamalar için çok kiracılı OAuth akışı
-- **[Webhook'lar](./webhooks)** -- Olay bildirimlerini dış sistemlere iletin
-- **[MCP Sunucusu](./mcp)** -- API'yi yapay zeka asistanlarına açan Model Context Protocol uç noktası
-- **[Uç Nokta Başvurusu](./endpoints/)** -- Tüm modüller için eksiksiz REST API belgeleri
+- **[Yerel Kurulum](./local-setup.md)** -- API'yi yerel olarak klonlayın, yapılandırın ve çalıştırın
+- **[Veritabanı](./database.md)** -- Modül başına veritabanı mimarisi, şema betikleri ve veri erişim kalıpları
+- **[Modül Yapısı](./module-structure.md)** -- Denetleyiciler, depolar, modeller ve kimlik doğrulama
+- **[API Anahtarları](./api-keys.md)** -- Betikler ve bağlayıcılar için kişisel erişim belirteçleri
+- **[Bağlı Uygulamalar (OAuth)](./connected-apps.md)** -- Üçüncü taraf uygulamalar için çok kiracılı OAuth akışı
+- **[Webhook'lar](./webhooks.md)** -- Olay bildirimlerini dış sistemlere iletin
+- **[MCP Sunucusu](./mcp.md)** -- API'yi yapay zeka asistanlarına açan Model Context Protocol uç noktası
+- **[Uç Nokta Başvurusu](./endpoints/index.md)** -- Tüm modüller için eksiksiz REST API belgeleri

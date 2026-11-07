@@ -1,5 +1,7 @@
 ---
-title: "Kuhlela Tifundvo"
+title: "Kuhlelwa Kwetifundvo kusuka ku-Lessons.church ku-B1 Admin"
+sidebar_label: "Kuhlela Tifundvo"
+description: "Xhuma i-Lessons.church ku-B1 Admin, bese uhlela tifundvo, uhlele luhlelo lonkhe ngobuningi, noma usebentise luhlelo lwemnyaka ku-tihlelo tetinkhonzo temnyango."
 ---
 
 # Kuhlela Tifundvo Kusuka ku-Lessons.church

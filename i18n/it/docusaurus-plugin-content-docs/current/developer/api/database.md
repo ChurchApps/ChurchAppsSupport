@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Scopri come l'API ChurchApps suddivide i dati in sei database MySQL, uno per modulo, e come configurare e inizializzare le connessioni."
 ---
 
 # Database
@@ -13,8 +14,8 @@ L'API di ChurchApps utilizza un'architettura **database-per-modulo**. Ciascuno d
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa **MySQL 8.0+** -- vedi [Prerequisiti](../setup/prerequisites)
-- Configura le stringhe di connessione al database nel tuo file `.env` -- vedi [Variabili d'ambiente](../setup/environment-variables)
+- Installa **MySQL 8.0+** -- vedi [Prerequisiti](../setup/prerequisites.md)
+- Configura le stringhe di connessione al database nel tuo file `.env` -- vedi [Variabili d'ambiente](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Decisioni chiave di progettazione
 
 - **Un database per modulo** -- Ogni modulo mantiene il proprio database MySQL con un pool di connessioni dedicato (gestito da `KyselyPool`). Questo mantiene i moduli disaccoppiati e consente un'evoluzione indipendente dello schema.
-- **Proprietà esclusiva** -- Le tabelle di un modulo vengono lette e scritte solo dal codice di quel modulo. Quando un altro modulo ha bisogno di quei dati, chiama il gateway del modulo proprietario invece di interrogare direttamente le tabelle -- vedi [Comunicazione tra moduli](./module-structure#cross-module-communication).
+- **Proprietà esclusiva** -- Le tabelle di un modulo vengono lette e scritte solo dal codice di quel modulo. Quando un altro modulo ha bisogno di quei dati, chiama il gateway del modulo proprietario invece di interrogare direttamente le tabelle -- vedi [Comunicazione tra moduli](./module-structure.md#cross-module-communication).
 - **Pattern repository senza ORM** -- Tutti gli accessi ai dati passano attraverso classi repository che costruiscono SQL tipizzato con il query builder Kysely a fronte dello schema del modulo. Questo garantisce pieno controllo sulle prestazioni e sul comportamento delle query.
 - **Multi-tenant per progettazione** -- Ogni query è ambitata per `churchId`. Tutte le tabelle includono una colonna `churchId`, e il livello repository applica automaticamente l'isolamento tra tenant.
 
@@ -129,5 +130,5 @@ Questo vincolo è ciò che rende reali i confini dei moduli: ogni schema può ev
 
 ## Articoli correlati
 
-- **[Struttura dei moduli](./module-structure)** -- Come sono organizzati controller e repository all'interno di ogni modulo
-- **[Configurazione API locale](./local-setup)** -- Guida completa passo passo alla configurazione
+- **[Struttura dei moduli](./module-structure.md)** -- Come sono organizzati controller e repository all'interno di ogni modulo
+- **[Configurazione API locale](./local-setup.md)** -- Guida completa passo passo alla configurazione

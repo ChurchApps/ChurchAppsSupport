@@ -1,5 +1,7 @@
 ---
-title: "Sermões"
+title: "Assistindo Sermões no B1 Mobile"
+sidebar_label: "Sermões"
+description: "Navegue, pesquise e assista a sermões gravados e séries no app B1 Mobile, incluindo como acompanhar a contagem regressiva de uma transmissão ao vivo."
 ---
 
 # Sermões
@@ -13,7 +15,7 @@ A tela de Sermões permite que você navegue e assista a sermões gravados da su
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 - Sua igreja precisa ter conteúdo de sermões configurado no portal administrativo
 
 </div>
@@ -29,7 +31,7 @@ No topo da tela, o sermão mais recente é exibido como um cartão em destaque, 
 
 ## Contagem Regressiva da Transmissão ao Vivo
 
-Quando uma [transmissão ao vivo](./live-streaming) está prevista para acontecer nas próximas 24 horas, um cronômetro de contagem regressiva aparece na tela de Sermões. Ele informa quando o próximo culto será transmitido, para que você possa se programar para assistir ao vivo.
+Quando uma [transmissão ao vivo](./live-streaming.md) está prevista para acontecer nas próximas 24 horas, um cronômetro de contagem regressiva aparece na tela de Sermões. Ele informa quando o próximo culto será transmitido, para que você possa se programar para assistir ao vivo.
 
 ## Assistindo a um Sermão
 
@@ -51,7 +53,7 @@ Cada item de sermão pode mostrar:
 - **Miniatura** -- Uma imagem de pré-visualização do sermão
 
 :::tip
-Se você vir uma contagem regressiva na tela de Sermões, toque nela para ir diretamente à [transmissão ao vivo](./live-streaming) quando ela começar.
+Se você vir uma contagem regressiva na tela de Sermões, toque nela para ir diretamente à [transmissão ao vivo](./live-streaming.md) quando ela começar.
 :::
 
 ## Disponibilidade

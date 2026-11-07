@@ -1,5 +1,7 @@
 ---
-title: "İlk Kurulum"
+title: "B1 Admin Web Sitenizle Başlarken"
+sidebar_label: "İlk Kurulum"
+description: "B1 Admin kilise web sitenizi kurun: bir alt alan adı veya özel alan adı belirleyin, ana sayfanızı oluşturun, marka renklerini ve logoyu seçin ve gezinmeyi oluşturun."
 ---
 
 # İlk Kurulum
@@ -45,7 +47,7 @@ Ayarlar seçeneğini görmüyorsanız, kilise hesabınızı kuran kişiden size 
 6. Bir bölüm ekledikten sonra, metin, resim, video, kart, form ve daha fazlasını bölümünüze sürükleyerek eklemek için yeniden **İçerik Ekle**'ye tıklayın.
 
 :::info
-Sayfalar ve gezinme ile çalışma hakkında ayrıntılı bilgi için bkz. [Sayfaları Yönetme](managing-pages). Görsel düzenleyici hakkında tam bir kılavuz için bkz. [Sayfa Düzenleyicisini Kullanma](page-editor).
+Sayfalar ve gezinme ile çalışma hakkında ayrıntılı bilgi için bkz. [Sayfaları Yönetme](./managing-pages.md). Görsel düzenleyici hakkında tam bir kılavuz için bkz. [Sayfa Düzenleyicisini Kullanma](./page-editor.md).
 :::
 
 ## Site Görünümünü Yapılandırma
@@ -57,7 +59,7 @@ Sayfalar ve gezinme ile çalışma hakkında ayrıntılı bilgi için bkz. [Sayf
 5. **Site Altbilgisi**'ni kilisenizin iletişim bilgileri ve bağlantılarıyla yapılandırın.
 
 :::info
-Görünüm bölümünde yaptığınız değişiklikler tüm web siteniz genelinde uygulanır. Her bir ayar hakkında ayrıntılı talimatlar için [Görünüm](appearance) sayfasına bakın.
+Görünüm bölümünde yaptığınız değişiklikler tüm web siteniz genelinde uygulanır. Her bir ayar hakkında ayrıntılı talimatlar için [Görünüm](./appearance.md) sayfasına bakın.
 :::
 
 ## Gezinmeyi Ayarlama
@@ -70,6 +72,6 @@ Gezinme bağlantılarınız Web Sitesi Sayfaları görünümünde yer alır. Bun
 
 ## Sonraki Adımlar
 
-- [Sayfaları Yönetme](managing-pages) -- Sayfalar ve gezinme ile çalışmayı ayrıntılı olarak öğrenin
-- [Görünüm](appearance) -- Sitenizin renklerini, yazı tiplerini ve düzenini ince ayarlayın
-- [Dosyalar](files) -- Web siteniz için resim ve belgeler yükleyin
+- [Sayfaları Yönetme](./managing-pages.md) -- Sayfalar ve gezinme ile çalışmayı ayrıntılı olarak öğrenin
+- [Görünüm](./appearance.md) -- Sitenizin renklerini, yazı tiplerini ve düzenini ince ayarlayın
+- [Dosyalar](./files.md) -- Web siteniz için resim ve belgeler yükleyin

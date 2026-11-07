@@ -1,5 +1,6 @@
 ---
 title: "消息"
+description: "在 B1 Mobile 中与教会成员开始、阅读、编辑和删除一对一私人对话，并可通过会员通讯录查找成员。"
 ---
 
 # 消息
@@ -13,7 +14,7 @@ B1 Mobile 包括私人消息，因此您可以直接从应用与其他教会成�
 <div class="prereqs">
 <h4>开始前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile 包括私人消息，因此您可以直接从应用与其他教会成�
 ## 开始新对话
 
 1. 从消息屏幕中，点击选项来开始新对话。
-2. 使用搜索字段来查找您想给其消息的成员。您也可以通过[成员目录](./member-directory)找到成员。
+2. 使用搜索字段来查找您想给其消息的成员。您也可以通过[成员目录](./member-directory.md)找到成员。
 3. 从搜索结果中选择成员。
 4. 输入您的消息并点击 **Send**。
 
@@ -52,11 +53,11 @@ B1 Mobile 包括私人消息，因此您可以直接从应用与其他教会成�
 :::
 
 :::info
-启用[推送通知](./notifications)来在某人给您发送新消息时收到警报，即使应用未打开。
+启用[推送通知](./notifications.md)来在某人给您发送新消息时收到警报，即使应用未打开。
 :::
 
 ## 相关文章
 
-- [成员目录](./member-directory)——查找成员来消息
-- [通知](./notifications)——获得有关新消息的通知
-- [小组](../groups/)——参与小组对话
+- [成员目录](./member-directory.md)——查找成员来消息
+- [通知](./notifications.md)——获得有关新消息的通知
+- [小组](../groups/index.md)——参与小组对话

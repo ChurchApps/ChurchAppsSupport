@@ -1,5 +1,6 @@
 ---
 title: "Metinių planų tvarkymas"
+description: "Sukurkite metinį savaitinių pamokų planą Lessons.church, susiekite savaites su Velykomis ar Kalėdomis ir paskelbkite bažnyčioms B1 Admin."
 ---
 
 # Metinių planų tvarkymas

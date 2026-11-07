@@ -1,5 +1,6 @@
 ---
 title: "Me-siden"
+description: "Hva Me-siden i B1App-medlemsportalen viser på én skjerm: kommende tjeneste, arrangementer og påmeldinger, husstand, grupper, gaver, skjemaer og innboks."
 ---
 
 # Me-siden
@@ -31,7 +32,7 @@ Hvis du er logget ut, ser du "Logg inn for å se uken din" og en knapp **Logg in
 Seksjonen **Kommende** viser de neste tre elementene dine i datorekkefølge, hver merket med en typebrikke. Hvis du har flere, trykk **Alle kommende** for å se hele listen, og **Tilbake til Me** for å gå tilbake.
 
 - **Tjeneste** -- dine frivillige verv på kommende tjenesteplaner, med dato og starttidspunkt for gudstjenesten du tjener på (tidspunktet teamet ditt trengs, når planen har flere gudstjenestetider, eller bare datoen hvis planen ikke har tidspunkter). Trykk på et verv for å åpne planen.
-- **Påmelding** -- arrangementer du har [meldt deg på](../events/registering). Trykk deg videre til dine [påmeldinger](../events/my-registrations).
+- **Påmelding** -- arrangementer du har [meldt deg på](../events/registering.md). Trykk deg videre til dine [påmeldinger](../events/my-registrations.md).
 - **Arrangement** -- kommende arrangementer fra grupper du tilhører. Trykk på et arrangement for å åpne gruppens arrangementer.
 
 Hvis et arrangement eller en påmelding har et bilde, vises en liten miniatyr av det i starten av raden.
@@ -66,7 +67,7 @@ Seksjonen **Forespørsler og påmeldinger** viser hvor mange arrangementspåmeld
 
 Hvis menigheten din har rom eller ressurser som kan bookes, vises to lenker til:
 
-- **Be om et arrangement** -- be om å holde et arrangement med rommene og utstyret du trenger. Se [Be om arrangementer og rom](../events/requesting-events).
+- **Be om et arrangement** -- be om å holde et arrangement med rommene og utstyret du trenger. Se [Be om arrangementer og rom](../events/requesting-events.md).
 - **Mine forespørsler** -- følg statusen på forespørslene dine, og avbryt de som venter.
 
 Hvis menigheten din ikke har satt opp rom eller ressurser, er disse lenkene skjult.
@@ -77,8 +78,8 @@ Seksjonen **Innboks** viser de to siste varslene dine, slik at du kan ta igjen d
 
 ## Relaterte artikler
 
-- [Navigere i B1App](./navigating) -- oppsettet i medlemsportalen
-- [Be om arrangementer og rom](../events/requesting-events) -- send inn og følg forespørsler om rom og ressurser
-- [Mine påmeldinger](../events/my-registrations) -- administrer arrangementspåmeldingene dine
-- [Frivillig påmelding](../serving/volunteer-signup) -- hvordan tjenesteoppdrag fungerer
-- [Selvinnsjekk](../checkin/self-checkin) -- hvordan oppmøtet ditt registreres
+- [Navigere i B1App](./navigating.md) -- oppsettet i medlemsportalen
+- [Be om arrangementer og rom](../events/requesting-events.md) -- send inn og følg forespørsler om rom og ressurser
+- [Mine påmeldinger](../events/my-registrations.md) -- administrer arrangementspåmeldingene dine
+- [Frivillig påmelding](../serving/volunteer-signup.md) -- hvordan tjenesteoppdrag fungerer
+- [Selvinnsjekk](../checkin/self-checkin.md) -- hvordan oppmøtet ditt registreres

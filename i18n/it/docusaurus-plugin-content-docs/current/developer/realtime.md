@@ -1,5 +1,6 @@
 ---
 title: "Architettura in Tempo Reale"
+description: "Come il livello WebSocket di ChurchApps gestisce chat, presenza e notifiche in tempo reale: handshake, iscrizione alle room e primitive per sviluppatori."
 ---
 
 # Architettura in Tempo Reale
@@ -226,8 +227,8 @@ Lo streaming live è il maggior consumatore anonimo del framework. Utilizza due 
 
 ## Pagine Correlate
 
-- [Architettura delle Notifiche](./architecture/notifications) -- L'imbuto di escalation in-app/push/email a cui alimenta questo trasporto
-- [Endpoint di Messaggistica](./api/endpoints/messaging) -- Superficie REST completa per messaggi, conversazioni, connessioni, dispositivi
-- [Notifiche Web Push](./web-push) -- Push del browser, separato dalla consegna via socket in pagina
-- [AppHelper](./shared-libraries/app-helper) -- Il pacchetto npm che fornisce i primitivi client
-- [Struttura dei Moduli](./api/module-structure) -- Come è organizzato lato server il modulo di messaggistica
+- [Architettura delle Notifiche](./architecture/notifications.md) -- L'imbuto di escalation in-app/push/email a cui alimenta questo trasporto
+- [Endpoint di Messaggistica](./api/endpoints/messaging.md) -- Superficie REST completa per messaggi, conversazioni, connessioni, dispositivi
+- [Notifiche Web Push](./web-push.md) -- Push del browser, separato dalla consegna via socket in pagina
+- [AppHelper](./shared-libraries/app-helper.md) -- Il pacchetto npm che fornisce i primitivi client
+- [Struttura dei Moduli](./api/module-structure.md) -- Come è organizzato lato server il modulo di messaggistica

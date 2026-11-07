@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Pojasni modularno zasnovo API-ja ChurchApps, šest podatkovnih modulov, tehnološki sklad, vrata in funkcije Lambda ter povezave do navodil za razvijalce."
 ---
 
 # API
@@ -52,8 +53,8 @@ Ko je API nameščen v AWS, se izvaja kot šest funkcij Lambda:
 
 API je odvisen od dveh skupnih paketov ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Osnovna orodja (DateHelper, ApiHelper itd.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Pripomočki strežnika Express, vključno z avtentikacijo, pomočniki za podatkovno bazo in integracijami AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Osnovna orodja (DateHelper, ApiHelper itd.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Pripomočki strežnika Express, vključno z avtentikacijo, pomočniki za podatkovno bazo in integracijami AWS
 
 :::info
 API uporablja module ES (`"type": "module"` v `package.json`). Poskrbite, da vaši uvozi uporabljajo sintakso modulov ES.
@@ -61,11 +62,11 @@ API uporablja module ES (`"type": "module"` v `package.json`). Poskrbite, da va�
 
 ## V tem razdelku
 
-- **[Lokalna namestitev](./local-setup)** -- Klonirajte, nastavite in zaženite API lokalno
-- **[Podatkovna baza](./database)** -- Arhitektura ene podatkovne baze na modul, skripte sheme in vzorci dostopa do podatkov
-- **[Struktura modulov](./module-structure)** -- Krmilniki, repozitoriji, modeli in avtentikacija
-- **[Ključi API](./api-keys)** -- Osebni dostopni žetoni za skripte in povezovalnike
-- **[Povezane aplikacije (OAuth)](./connected-apps)** -- Večnajemniški tok OAuth za aplikacije tretjih oseb
-- **[Webhooki](./webhooks)** -- Pošiljanje obvestil o dogodkih zunanjim sistemom
-- **[Strežnik MCP](./mcp)** -- Končna točka Model Context Protocol, ki API izpostavi pomočnikom umetne inteligence
-- **[Referenca končnih točk](./endpoints/)** -- Popolna dokumentacija REST API za vse module
+- **[Lokalna namestitev](./local-setup.md)** -- Klonirajte, nastavite in zaženite API lokalno
+- **[Podatkovna baza](./database.md)** -- Arhitektura ene podatkovne baze na modul, skripte sheme in vzorci dostopa do podatkov
+- **[Struktura modulov](./module-structure.md)** -- Krmilniki, repozitoriji, modeli in avtentikacija
+- **[Ključi API](./api-keys.md)** -- Osebni dostopni žetoni za skripte in povezovalnike
+- **[Povezane aplikacije (OAuth)](./connected-apps.md)** -- Večnajemniški tok OAuth za aplikacije tretjih oseb
+- **[Webhooki](./webhooks.md)** -- Pošiljanje obvestil o dogodkih zunanjim sistemom
+- **[Strežnik MCP](./mcp.md)** -- Končna točka Model Context Protocol, ki API izpostavi pomočnikom umetne inteligence
+- **[Referenca končnih točk](./endpoints/index.md)** -- Popolna dokumentacija REST API za vse module

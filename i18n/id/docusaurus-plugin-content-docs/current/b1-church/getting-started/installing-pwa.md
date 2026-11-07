@@ -1,5 +1,6 @@
 ---
 title: "Menginstal sebagai Aplikasi (PWA)"
+description: "Pasang B1.church sebagai aplikasi di iPhone atau Android dari portal anggota, menambahkan ikonnya ke layar utama lewat Safari atau Chrome."
 ---
 
 # Menginstal sebagai Aplikasi (PWA)

@@ -1,5 +1,7 @@
 ---
-title: "Profile"
+title: "Profile and Assigned Cards in B1 Mobile"
+sidebar_label: "Profile"
+description: "Manage your name, contact details, household, and privacy visibility in the B1 Mobile profile, plus handle workflow cards and tasks assigned to you."
 ---
 
 # Profile
@@ -20,7 +22,7 @@ The **Profile** tab lets you view and edit your personal information, including 
 
 ### Household
 
-The **Household** tab shows your family members and their roles within your household. This information is used for features like [check-in](../checkin/), where you can check in your whole family at once.
+The **Household** tab shows your family members and their roles within your household. This information is used for features like [check-in](../checkin/index.md), where you can check in your whole family at once.
 
 ### Visibility
 
@@ -55,6 +57,6 @@ Tap a plain task to see who it is from, who it is about, and its notes. Closing 
 
 ## Next Steps
 
-- [Editing Your Profile](./editing-profile) -- Update your name, contact details, and photo
-- [Household](./household) -- View and manage your family members
-- [Privacy Settings](./privacy-settings) -- Control what others can see about you
+- [Editing Your Profile](./editing-profile.md) -- Update your name, contact details, and photo
+- [Household](./household.md) -- View and manage your family members
+- [Privacy Settings](./privacy-settings.md) -- Control what others can see about you

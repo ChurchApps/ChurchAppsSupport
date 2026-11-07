@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Theo dõi điểm danh nhà thờ"
+description: "Theo dõi điểm danh hội thánh trong B1 Admin bằng cách thiết lập cơ sở và giờ lễ, ghi nhận thủ công hoặc qua tự check-in, rồi xem báo cáo."
 ---
 
 # Theo dõi điểm danh nhà thờ

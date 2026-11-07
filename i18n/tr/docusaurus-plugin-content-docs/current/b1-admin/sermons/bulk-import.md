@@ -1,5 +1,6 @@
 ---
 title: "Bulk Import"
+description: "Vaaz videolarını bir YouTube kanalından veya Vimeo hesabından toplu olarak B1 Admin'e aktarın, ardından bunları bir oynatma listesinde düzenleyin."
 ---
 
 # Bulk Import
@@ -14,7 +15,7 @@ Sayfa Toplu İçe Aktar, YouTube veya Vimeo'dan videoları içe aktararak sermon
 <h4>Başlamadan Önce</h4>
 
 - **contentApi.streamingServices.edit** iznine ihtiyacınız var. Erişiminiz yoksa [Roller ve İzinler](../settings/roles-permissions.md) bölümüne bakın.
-- Sermonlarınızı içe aktaracağınız en az bir [playlist](playlists) oluşturun
+- Sermonlarınızı içe aktaracağınız en az bir [playlist](./playlists.md) oluşturun
 - YouTube Kanal Kimliğinizi veya Vimeo hesap bilgilerinizi hazır bulundurun
 
 </div>
@@ -39,7 +40,7 @@ Videoları içe aktarmadan önce, bunları düzenleyeceğiniz en az bir playlist
 2. **Create First Playlist** düğmesine tıklayın ve adı, açıklamayı, yayın tarihini ve küçük resmi doldurun.
 3. **Save** düğmesine tıklayın, ardından **Add Sermon**'a tıklayıp **Bulk Import** seçeneğini seçerek Toplu İçe Aktar sayfasına geri dönün.
 
-Playlist oluşturma ve yönetme hakkında ayrıntılı bilgi için [Playlists](playlists) sayfasına bakın.
+Playlist oluşturma ve yönetme hakkında ayrıntılı bilgi için [Playlists](./playlists.md) sayfasına bakın.
 
 ## Videoları İçe Aktarma
 
@@ -54,11 +55,11 @@ Playlist oluşturma ve yönetme hakkında ayrıntılı bilgi için [Playlists](p
 Videolarınız başlıkları, açıklamaları, tarihleri ve küçük resimleri dahil tüm ayrıntılarıyla içe aktarılacaktır. YouTube başlıklarındaki ve açıklamalarındaki `&`, kesme işaretleri ve tırnak işaretleri gibi özel karakterler, `&amp;` gibi kodlar yerine olduğu gibi görünür.
 
 :::info
-Toplu içe aktarma, başka bir platformdan geçiş yaparken başlangıç yapmak için idealdir. Bundan sonra tek tek sermon eklemek için bunun yerine [Managing Sermons](managing-sermons) sayfasına bakın.
+Toplu içe aktarma, başka bir platformdan geçiş yaparken başlangıç yapmak için idealdir. Bundan sonra tek tek sermon eklemek için bunun yerine [Managing Sermons](./managing-sermons.md) sayfasına bakın.
 :::
 
 ## Sonraki Adımlar
 
-- [Managing Sermons](managing-sermons) -- İçe aktarılan sermon ayrıntılarını düzenleyin
-- [Playlists](playlists) -- Sermon serilerini oluşturun ve yönetin
-- [Live Streaming](live-streaming) -- Ibadetleriniz için canlı yayını ayarlayın
+- [Managing Sermons](./managing-sermons.md) -- İçe aktarılan sermon ayrıntılarını düzenleyin
+- [Playlists](./playlists.md) -- Sermon serilerini oluşturun ve yönetin
+- [Live Streaming](./live-streaming.md) -- Ibadetleriniz için canlı yayını ayarlayın

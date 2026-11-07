@@ -1,5 +1,7 @@
 ---
-title: "Erste Schritte"
+title: "Erste Schritte mit dem B1.church-Mitgliederportal"
+sidebar_label: "Erste Schritte"
+description: "Die B1.church-Website Ihrer Gemeinde finden, Mitgliedskonto anlegen und entdecken, was das Portal bietet: Gruppen, Spenden, Check-in, Pläne."
 ---
 
 # Erste Schritte mit B1.church

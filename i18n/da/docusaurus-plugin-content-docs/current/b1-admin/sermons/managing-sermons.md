@@ -1,5 +1,6 @@
 ---
 title: "administrering af prædikener"
+description: "Administrér dit prædikenbibliotek i B1 Admin: tilføj prædikener fra YouTube, Vimeo eller Facebook, redigér detaljer og få et podcastfeed til din kirke."
 ---
 
 # administrering af prædikener
@@ -14,7 +15,7 @@ Prædikener siden viser dit hele prædikenbibliotek. Fra her kan du tilføje nye
 <h4>Før du begynder</h4>
 
 - Du har brug for **contentApi.streamingServices.edit** tilladelse. Se [roller og tilladelser](../settings/roles-permissions.md) hvis du ikke har adgang.
-- Opret mindst en [playliste](playlists) for at organisere dine prædikener ind i
+- Opret mindst en [playliste](./playlists.md) for at organisere dine prædikener ind i
 - Har dine video ID'er eller URL'er klar fra YouTube, Vimeo eller Facebook
 
 </div>
@@ -35,7 +36,7 @@ Prædikener siden viser dit hele prædikenbibliotek. Fra her kan du tilføje nye
 6. Lav enhver ændringer du ønsker og klik **gem**.
 
 :::tip
-Du kan også tilføje en permanent live stream URL ved at vælge **Tilføj permanent live URL** fra **Tilføj prædikenindtastning** dropdown. Dette opbygger en vedvarende forbindelse til din YouTube kanals live stream ved at bruge din kanal ID. Se [live streaming](live-streaming) til mere detaljer.
+Du kan også tilføje en permanent live stream URL ved at vælge **Tilføj permanent live URL** fra **Tilføj prædikenindtastning** dropdown. Dette opbygger en vedvarende forbindelse til din YouTube kanals live stream ved at bruge din kanal ID. Se [live streaming](./live-streaming.md) til mere detaljer.
 :::
 
 ## rediger en prædikenindtastning
@@ -64,11 +65,11 @@ Efter tilføjelse af en prædikenindtastning, kan du planlægge den til udsendel
 3. Prædikenindtastningen spilles på den planlagte tjeneste gang.
 
 :::info
-Til import af flere prædikener på en gang i stedet for tilføjelse af dem en ad gangen, brug [masseimport](bulk-import) værktøjet for at trække videoer direkte fra din YouTube eller Vimeo konto.
+Til import af flere prædikener på en gang i stedet for tilføjelse af dem en ad gangen, brug [masseimport](./bulk-import.md) værktøjet for at trække videoer direkte fra din YouTube eller Vimeo konto.
 :::
 
 ## Næste trin
 
-- [playlister](playlists) -- Organiser prædikener ind i serier
-- [live streaming](live-streaming) -- konfigurér dit streaming skema
-- [masseimport](bulk-import) -- import flere prædikener på en gang
+- [playlister](./playlists.md) -- Organiser prædikener ind i serier
+- [live streaming](./live-streaming.md) -- konfigurér dit streaming skema
+- [masseimport](./bulk-import.md) -- import flere prædikener på en gang

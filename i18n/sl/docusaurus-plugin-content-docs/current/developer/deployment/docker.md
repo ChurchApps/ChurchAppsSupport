@@ -1,12 +1,13 @@
 ---
 title: "Samostojna namestitev z Dockerjem"
+description: "Namestite zasebni B1 Admin, portal za člane, API in MySQL na svoj računalnik z Dockerjem, nato pa posodabljajte in varnostno kopirajte z ukazom b1."
 ---
 
 # Samostojna namestitev z Dockerjem
 
 <div class="article-intro">
 
-Zaženite lastno zasebno različico programa B1 Admin, spletnega mesta in portala za člane B1, API-ja in podatkovne baze MySQL na kateri koli napravi z Dockerjem: domačem strežniku, majhnem VPS-u ali strojni opremi v lastnih prostorih. Namestitev izvedete z enim ukazom, posodobitev z enim ukazom, pri čemer se vsaka posodobitev najprej varnostno kopira. Če ne želite sami upravljati strežnika, si oglejte [Samostojna namestitev na Railway](./railway-template) za upravljano alternativo.
+Zaženite lastno zasebno različico programa B1 Admin, spletnega mesta in portala za člane B1, API-ja in podatkovne baze MySQL na kateri koli napravi z Dockerjem: domačem strežniku, majhnem VPS-u ali strojni opremi v lastnih prostorih. Namestitev izvedete z enim ukazom, posodobitev z enim ukazom, pri čemer se vsaka posodobitev najprej varnostno kopira. Če ne želite sami upravljati strežnika, si oglejte [Samostojna namestitev na Railway](./railway-template.md) za upravljano alternativo.
 
 </div>
 
@@ -94,10 +95,10 @@ Shranite `.env` na varno. `ENCRYPTION_KEY` ščiti shranjene poverilnice plačil
 
 Ti delujejo povsem enako kot na Railway: iste okoljske spremenljivke, vendar nastavljene v `.env` namesto na nadzorni plošči Railway:
 
-- **[E-pošta / SMTP](./railway-template#1-email-highly-recommended)** — navodila za ponudnike Resend, Brevo in Gmail
-- **[Več spletnih mest](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — neomejeno število cerkva na namestitev. `/` streže cerkev, katere slug je `DEFAULT_CHURCH_SLUG` (prva cerkev je `church`). Dodatne domene usmerite na napravo in jih preslikajte pod **Nastavitve → Domene** v B1Admin.
-- **[Spletno darovanje](./railway-template#4-online-giving-stripe--paypal)** — konfigurirano za vsako cerkev v skrbniškem vmesniku
-- **[Izbirne integracije](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-pošta / SMTP](./railway-template.md#1-email-highly-recommended)** — navodila za ponudnike Resend, Brevo in Gmail
+- **[Več spletnih mest](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — neomejeno število cerkva na namestitev. `/` streže cerkev, katere slug je `DEFAULT_CHURCH_SLUG` (prva cerkev je `church`). Dodatne domene usmerite na napravo in jih preslikajte pod **Nastavitve → Domene** v B1Admin.
+- **[Spletno darovanje](./railway-template.md#4-online-giving-stripe--paypal)** — konfigurirano za vsako cerkev v skrbniškem vmesniku
+- **[Izbirne integracije](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Potisna obvestila](#push-notifications)** — `WEB_PUSH_*`; namestitveni program jih pusti prazne, zato je potisno obveščanje izklopljeno, dokler jih ne dodate
 
 Vabila in druga e-poštna sporočila, ki jih pošilja cerkev, so na samostojni namestitvi samodejno omogočena. Gostovana storitev jih zaradi zaščite ugleda pošiljatelja zadrži za ročni pregled.
@@ -148,7 +149,7 @@ Tri poimenovani nosilci Docker hranijo vse stanje:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Za velike knjižnice medijev lahko shranjevanje datotek preklopite na S3. Nastavite `FILE_STORE=S3` ter spremenljivke `AWS_*`, opisane v [razdelku o shranjevanju datotek v vodniku za Railway](./railway-template#5-file-storage). Varnostne kopije podatkovne baze ne vključujejo predmetov S3, zato tam omogočite različice vedra.
+Za velike knjižnice medijev lahko shranjevanje datotek preklopite na S3. Nastavite `FILE_STORE=S3` ter spremenljivke `AWS_*`, opisane v [razdelku o shranjevanju datotek v vodniku za Railway](./railway-template.md#5-file-storage). Varnostne kopije podatkovne baze ne vključujejo predmetov S3, zato tam omogočite različice vedra.
 
 ## Posodabljanje
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## Sorodni članki
 
-- **[Samostojna namestitev na Railway](./railway-template)**: alternativa upravljanega gostovanja, skupaj z vodniki za skupno konfiguracijo po namestitvi
-- **[Začetna nastavitev](../../getting-started/initial-setup)**: prvi koraki po ustvarjenju cerkve
-- **[Lokalna nastavitev API-ja](../api/local-setup)**: neposredni zagon sklada za razvoj
+- **[Samostojna namestitev na Railway](./railway-template.md)**: alternativa upravljanega gostovanja, skupaj z vodniki za skupno konfiguracijo po namestitvi
+- **[Začetna nastavitev](../../getting-started/initial-setup.md)**: prvi koraki po ustvarjenju cerkve
+- **[Lokalna nastavitev API-ja](../api/local-setup.md)**: neposredni zagon sklada za razvoj

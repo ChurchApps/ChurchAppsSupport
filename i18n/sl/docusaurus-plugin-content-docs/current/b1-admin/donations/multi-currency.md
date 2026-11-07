@@ -1,5 +1,6 @@
 ---
 title: "Podpora za več valut"
+description: "Beležite in poročajte o darovih v različnih valutah v B1 Admin, vključno z ročnim vnosom, spletnim darovanjem prek Stripe in pretvorbo skupnih vsot."
 ---
 
 # Podpora za več valut

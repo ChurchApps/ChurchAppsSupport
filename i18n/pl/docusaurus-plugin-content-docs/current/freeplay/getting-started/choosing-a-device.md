@@ -1,5 +1,6 @@
 ---
 title: "Wybór urządzenia"
+description: "Wybór urządzenia do telewizorów klasowych FreePlay: od sticków Fire TV i pudełek Onn po Apple TV oraz urządzenia, których lepiej unikać."
 ---
 
 # Wybór urządzenia do FreePlay

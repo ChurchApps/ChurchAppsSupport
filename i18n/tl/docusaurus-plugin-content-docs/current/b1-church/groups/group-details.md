@@ -1,5 +1,7 @@
 ---
-title: "Mga Detalye ng Grupo"
+title: "Mga Detalye ng Grupo sa B1.church Member Portal"
+sidebar_label: "Mga Detalye ng Grupo"
+description: "Buksan ang detalye ng grupo sa B1.church view ng B1 Admin: tingnan ang mga event, pulong, form, at miyembro, at sumali o humiling na makasali."
 ---
 
 # Mga Detalye ng Grupo

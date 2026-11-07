@@ -1,5 +1,6 @@
 ---
 title: "Prezentovanie"
+description: "Zobrazenie lekcií na projektore v režime Presenter Mode v Lessons.church, zdieľanie sprievodcov pre dobrovoľníkov podľa rolí a tlač materiálov pred hodinou."
 ---
 
 # Prezentovanie

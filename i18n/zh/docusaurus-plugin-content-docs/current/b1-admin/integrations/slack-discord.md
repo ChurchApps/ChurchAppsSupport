@@ -1,5 +1,6 @@
 ---
 title: "Slack 和 Discord"
+description: "通过传入式 webhook 将 B1 Admin 事件（如新人员、奉献和表单提交）发布到 Slack 或 Discord 频道，无需 Zapier。"
 ---
 
 # Slack 和 Discord
@@ -114,7 +115,7 @@ webhook 编辑器的 **最近交付** 表显示最后 50 次尝试。点击一�
 
 - **没有消息出现 + 交付状态 `400`** — 通常连接器类型设置为 **标准**，但 URL 是 Slack/Discord 之一。Slack/Discord 拒绝原始信封。将下拉列表切换为 **Slack** 或 **Discord** 并重新发送测试。
 - **Webhook 自动禁用** — 经过 3 次连续失败交付后，B1 关闭 webhook。修复 URL（或在 Slack/Discord 上轮换它）并将 **激活** 切换回开。
-- **消息到达但缺少细节** — 每个聊天平台都限制消息大小。B1 的消息设计为单行；为了获得更丰富的通知，使用 [Zapier](./zapier) 或 [Make](./make) 通过他们的 Slack 操作组成更完整的 Slack 消息。
+- **消息到达但缺少细节** — 每个聊天平台都限制消息大小。B1 的消息设计为单行；为了获得更丰富的通知，使用 [Zapier](./zapier.md) 或 [Make](./make.md) 通过他们的 Slack 操作组成更完整的 Slack 消息。
 
 ## 稍后切换连接器类型
 
@@ -122,6 +123,6 @@ webhook 编辑器的 **最近交付** 表显示最后 50 次尝试。点击一�
 
 ## 另请参阅
 
-- [Zapier](./zapier) — 用于由 B1 事件触发的多步工作流
-- [Make](./make) — 可视化场景生成器
+- [Zapier](./zapier.md) — 用于由 B1 事件触发的多步工作流
+- [Make](./make.md) — 可视化场景生成器
 - [Webhooks（开发者参考）](/docs/developer/api/webhooks) — 如果您曾经将 webhook 指向您自己的服务器，完整的有效负载 + 签名格式

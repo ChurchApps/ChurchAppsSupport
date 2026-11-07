@@ -1,5 +1,6 @@
 ---
 title: "Playlist"
+description: "Kelompokkan khotbah ke dalam seri di B1 Admin agar pengunjung situs B1.church Anda dapat menelusuri dan mengikuti tiap seri khotbah secara berurutan."
 ---
 
 # Playlist
@@ -39,10 +40,10 @@ Buat playlist Anda terlebih dahulu sebelum menambahkan khotbah. Dengan begitu, A
 
 ## Menambahkan Khotbah ke Playlist
 
-Saat Anda [menambah atau mengedit khotbah](managing-sermons), Anda menetapkannya ke playlist menggunakan dropdown **Playlist**. Semua khotbah yang ditetapkan ke playlist yang sama akan dikelompokkan dan ditampilkan secara berurutan di situs web Anda.
+Saat Anda [menambah atau mengedit khotbah](./managing-sermons.md), Anda menetapkannya ke playlist menggunakan dropdown **Playlist**. Semua khotbah yang ditetapkan ke playlist yang sama akan dikelompokkan dan ditampilkan secara berurutan di situs web Anda.
 
 :::info
-Anda juga dapat menetapkan khotbah ke playlist selama [Bulk Import](bulk-import). Saat mengimpor dari YouTube atau Vimeo, pilih playlist dari dropdown **Import Into Playlist** sebelum mengklik **Import**.
+Anda juga dapat menetapkan khotbah ke playlist selama [Bulk Import](./bulk-import.md). Saat mengimpor dari YouTube atau Vimeo, pilih playlist dari dropdown **Import Into Playlist** sebelum mengklik **Import**.
 :::
 
 ## Tampilan Playlist di Situs Web Anda
@@ -55,5 +56,5 @@ Playlist ditampilkan di situs web B1.church Anda sebagai kumpulan yang dapat dij
 
 ## Langkah Selanjutnya
 
-- [Mengelola Khotbah](managing-sermons) -- Menambahkan khotbah satu per satu ke playlist Anda
-- [Bulk Import](bulk-import) -- Mengimpor banyak khotbah sekaligus dan menetapkannya ke playlist
+- [Mengelola Khotbah](./managing-sermons.md) -- Menambahkan khotbah satu per satu ke playlist Anda
+- [Bulk Import](./bulk-import.md) -- Mengimpor banyak khotbah sekaligus dan menetapkannya ke playlist

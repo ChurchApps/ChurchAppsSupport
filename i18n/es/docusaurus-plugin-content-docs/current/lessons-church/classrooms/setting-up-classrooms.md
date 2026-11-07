@@ -1,5 +1,6 @@
 ---
 title: "Configurar aulas"
+description: "Crea, renombra y elimina aulas en el portal de Lessons.church para que cada sala o grupo de edad esté lista para programar lecciones semanales."
 ---
 
 # Configurar aulas

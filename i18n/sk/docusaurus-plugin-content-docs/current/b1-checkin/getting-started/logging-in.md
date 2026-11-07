@@ -1,5 +1,7 @@
 ---
-title: "Prihlásenie"
+title: "Prihlásenie do B1 Church Checkin"
+sidebar_label: "Prihlásenie"
+description: "Prihláste sa do aplikácie kiosku B1 Church Checkin, vyberte svoj zbor a pochopte automatické prihlásenie, nastavenia správcu a odhlásenie na tablete."
 ---
 
 # Prihlásenie
@@ -63,7 +65,7 @@ Nastavenia správcu sú zámerne skryté, aby členovia cirkvi, ktorí kiosk pou
 2. Ak je nastavený PIN kiosku, po výzve zadajte PIN.
 3. Otvorí sa obrazovka **Admin Settings** s týmito možnosťami:
    - **Change Service** — zmena vybraného času služby
-   - **Change Printer** — otvorenie [nastavení tlačiarne](./printer-setup), kde môžete vyhľadať a vybrať tlačiareň
+   - **Change Printer** — otvorenie [nastavení tlačiarne](./printer-setup.md), kde môžete vyhľadať a vybrať tlačiareň
    - **Set/Change PIN** — nastavenie alebo zmena PIN kiosku, ktorý chráni prístup správcu
    - **Logout** — odhlásenie a návrat na prihlasovaciu obrazovku
 
@@ -73,4 +75,4 @@ Odhlásenie vymaže všetky uložené prihlasovacie údaje a výber cirkvi. Ak c
 
 ## Ďalšie kroky
 
-Po prihlásení môžete [nastaviť tlačiareň](./printer-setup) alebo prejsť priamo na [postup check-in](../check-in/).
+Po prihlásení môžete [nastaviť tlačiareň](./printer-setup.md) alebo prejsť priamo na [postup check-in](../check-in/index.md).

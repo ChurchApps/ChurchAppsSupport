@@ -1,5 +1,6 @@
 ---
 title: "Registrazione ospiti"
+description: "Registra te e la tua famiglia come ospiti alla prima visita tramite il modulo QR di B1 Checkin, così i volontari possono farti il check-in al tuo arrivo."
 ---
 
 # Registrazione ospiti
@@ -22,7 +23,7 @@ Se visiti una chiesa per la prima volta, puoi registrare te stesso e la tua fami
 
 La registrazione ospiti è pensata per i visitatori che non hanno ancora un account. Sul chiosco di check-in della chiesa, tocca **Registrati come ospite** per mostrare un codice QR che porta alla pagina di registrazione. Puoi anche ricevere il link da un volontario o da un accogliente, oppure trovarlo su un volantino o sul sito web della chiesa.
 
-Non hai il telefono a portata di mano? Nella stessa finestra del codice QR sul chiosco, tocca **Registrati qui** per compilare il modulo direttamente sul chiosco. Vedi [Registrarsi come ospite](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) per capire come funziona sul chiosco.
+Non hai il telefono a portata di mano? Nella stessa finestra del codice QR sul chiosco, tocca **Registrati qui** per compilare il modulo direttamente sul chiosco. Vedi [Registrarsi come ospite](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) per capire come funziona sul chiosco.
 
 La pagina si apre con il titolo **Registrazione ospiti**. Se la chiesa ha aggiunto una foto di intestazione, compare in cima alla pagina; altrimenti vedrai una piccola icona.
 
@@ -51,7 +52,7 @@ La tua registrazione crea dei record nel database della chiesa:
 - Vengono create le **schede persona** per ogni membro della famiglia con lo stato di appartenenza "Visitatore".
 - Eventuali commenti inseriti vengono salvati come nota nella scheda del contatto principale, perché lo staff della chiesa li legga.
 - Se la chiesa ha scelto un gruppo per i nuovi ospiti, la tua famiglia viene aggiunta a quel gruppo. La chiesa potrebbe anche registrare automaticamente la tua presenza se ti registri durante uno degli orari di culto programmati di quel gruppo.
-- Un volontario o un amministratore della chiesa può poi registrare la tua famiglia usando il chiosco [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Un volontario o un amministratore della chiesa può poi registrare la tua famiglia usando il chiosco [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Se ti registri di nuovo con lo stesso nome e con la stessa email o lo stesso numero di telefono, i registri della chiesa ti riconoscono e riutilizzano il tuo profilo esistente invece di aggiungere un duplicato. Chiunque altro viene aggiunto come nuovo. Se ti sei già registrato, puoi anche cercare semplicemente il tuo nome o il tuo numero di telefono sul chiosco.
@@ -63,6 +64,6 @@ Se il modulo chiede il tuo indirizzo email, fornirlo aiuta la chiesa a fare foll
 
 ## Articoli correlati
 
-- [Self check-in](./self-checkin) — Effettua il check-in da solo dopo la registrazione
-- [Aggiungere ospiti (chiosco)](../../b1-checkin/check-in/adding-guests) — Come i volontari aggiungono gli ospiti al chiosco
-- [Check-in](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) — Come gli amministratori della chiesa configurano la registrazione ospiti tramite codice QR
+- [Self check-in](./self-checkin.md) — Effettua il check-in da solo dopo la registrazione
+- [Aggiungere ospiti (chiosco)](../../b1-checkin/check-in/adding-guests.md) — Come i volontari aggiungono gli ospiti al chiosco
+- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) — Come gli amministratori della chiesa configurano la registrazione ospiti tramite codice QR

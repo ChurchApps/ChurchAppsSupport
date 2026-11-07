@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "B1App üye web uygulamasını Next.js 22+ ile yerel olarak kurun, API uç noktalarını .env dosyasında yapılandırın ve geliştirme sunucusunu 3301 portunda çalıştırın."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App, Next.js ile oluşturulmuş, kiliseye üye olan kişilerin kullandığı h
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js 22+** ve **Git** yükleyin -- bkz. [Ön Koşullar](../setup/prerequisites)
-- API hedefinizi yapılandırın (demo veya yerel) -- bkz. [Ortam Değişkenleri](../setup/environment-variables)
+- **Node.js 22+** ve **Git** yükleyin -- bkz. [Ön Koşullar](../setup/prerequisites.md)
+- API hedefinizi yapılandırın (demo veya yerel) -- bkz. [Ortam Değişkenleri](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Next.js geliştirme sunucusu [http://localhost:3301](http://localhost:3301) adre
 3. Yeni sürümün sunulması için CloudFront önbellek geçersiz kılma işlemi tetiklenir
 
 :::tip
-Ayrıntılı dağıtım talimatları için [Web Uygulaması Dağıtımı](../deployment/web-apps) kılavuzuna bakın.
+Ayrıntılı dağıtım talimatları için [Web Uygulaması Dağıtımı](../deployment/web-apps.md) kılavuzuna bakın.
 :::

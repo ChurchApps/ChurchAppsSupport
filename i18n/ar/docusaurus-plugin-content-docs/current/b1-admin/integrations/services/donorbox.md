@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "اربط Donorbox بـ B1 Admin عبر Zapier لتُنشأ التبرعات الإلكترونية سجلات تبرع وملفات مانحين تلقائيًا، دون الحاجة إلى تصدير يدوي."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ title: "Donorbox"
 
 ## انظر أيضًا
 
-- [نظرة عامة على Zapier](../zapier): الجانب الخاص بـ B1 في كل وصفات Zapier
-- [Subsplash](./subsplash): منصة تبرع أخرى لديها تطبيق Zapier
-- [Mailchimp](./mailchimp): اربط "هبة جديدة" بوسم بريد إلكتروني
+- [نظرة عامة على Zapier](../zapier.md): الجانب الخاص بـ B1 في كل وصفات Zapier
+- [Subsplash](./subsplash.md): منصة تبرع أخرى لديها تطبيق Zapier
+- [Mailchimp](./mailchimp.md): اربط "هبة جديدة" بوسم بريد إلكتروني

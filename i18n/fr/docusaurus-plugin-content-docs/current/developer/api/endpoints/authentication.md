@@ -1,5 +1,6 @@
 ---
 title: "Authentification et autorisations"
+description: "Référence de l’API ChurchApps : connexion JWT, double authentification, flux OAuth 2.0 et modèle de permissions pour les intégrations."
 ---
 
 # Authentification et autorisations
@@ -244,7 +245,7 @@ Pour les appareils sans navigateur (applications de téléviseur, bornes) :
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Obtenir un client par identifiant client (secret masqué) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Créer ou mettre à jour un client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Supprimer un client |
-| POST | `/membership/oauth/register` | Publique | — | Enregistrement dynamique de client (RFC 7591) pour les clients publics comme les connecteurs MCP. Voir [Applications connectées](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Publique | — | Enregistrement dynamique de client (RFC 7591) pour les clients publics comme les connecteurs MCP. Voir [Applications connectées](../connected-apps.md#dynamic-client-registration) |
 
 ### Points de terminaison d'approbation des appareils
 
@@ -265,5 +266,5 @@ Dans les tableaux de points de terminaison de cette documentation, ceux-ci sont 
 
 ## Pages connexes
 
-- [Structure des modules](../module-structure) — Comment les contrôleurs, les référentiels et les modèles sont organisés
-- [Configuration locale](../local-setup) — Exécuter l'API localement pour le développement
+- [Structure des modules](../module-structure.md) — Comment les contrôleurs, les référentiels et les modèles sont organisés
+- [Configuration locale](../local-setup.md) — Exécuter l'API localement pour le développement

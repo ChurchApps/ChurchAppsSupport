@@ -1,5 +1,6 @@
 ---
 title: "Tartalom böngészése és letöltése"
+description: "Csatlakoztatott szolgáltató könyvtárának böngészése a FreePlay TV-távirányítójával, majd leckék és videók letöltése vagy streamelése lejátszáshoz."
 ---
 
 # Tartalom böngészése és letöltése
@@ -13,7 +14,7 @@ Miután csatlakozott egy tartalomszolgáltatóhoz, böngészheti annak könyvtá
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Csatlakozzon legalább egy tartalomszolgáltatóhoz -- lásd: [Szolgáltatókhoz való csatlakozás](./connecting-providers)
+- Csatlakozzon legalább egy tartalomszolgáltatóhoz -- lásd: [Szolgáltatókhoz való csatlakozás](./connecting-providers.md)
 - Legyen készen a TV távirányítója a navigáláshoz
 
 </div>
@@ -38,7 +39,7 @@ Olyan mélyre léphet, amilyet a szolgáltató tartalomstruktúrája enged. A b�
 
 ## Böngészés a Lessons.church-on
 
-A [Lessons.church](../../lessons-church/) könyvtára ugyanúgy van rendezve, mint a weboldala. A legfelső szinten két mappát lát:
+A [Lessons.church](../../lessons-church/index.md) könyvtára ugyanúgy van rendezve, mint a weboldala. A legfelső szinten két mappát lát:
 
 - **Lessons** - Lépjen be a **program**, majd a **tanulmány**, végül a **lecke** szintre. Minden lecke felsorolja a **helyszíneit**, amelyek a lecke egy-egy korosztályra vagy környezetre szabott változatai, például Óvoda vagy Általános iskola. Válasszon ki egy helyszínt a lecke adott változatának letöltési képernyőjének megnyitásához
 - **Add-Ons** - Extra videók és források, kategóriák szerint csoportosítva
@@ -78,7 +79,7 @@ Ezekkel a vezérlőkkel használhatja a lejátszás közben:
 Amikor kilép a lejátszóból, visszatér a tartalomböngésző legfelső szintjére az aktuális szolgáltatónál.
 
 :::info
-A lejátszó összes vezérlőjének teljes leírásáért lásd: [Tartalom lejátszása](./playing-content).
+A lejátszó összes vezérlőjének teljes leírásáért lásd: [Tartalom lejátszása](./playing-content.md).
 :::
 
 ## Váltás szolgáltatók között

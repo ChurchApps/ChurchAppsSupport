@@ -1,5 +1,6 @@
 ---
 title: "Kalendáriumok"
+description: "Naptárak beállítása a B1 Admin-ban, eseményeik kezelése és közzététel a B1.church weboldalon, hogy a gyülekezet lássa a közelgő programokat."
 ---
 
 # Kalendáriumok
@@ -18,20 +19,20 @@ A B1 Admin Kalendáriumok szakasza lehetővé teszi, hogy az egyházad számára
 
 ## Mit tehetsz?
 
-- **Új kalendárium hozzáadása** -- Kattints a lap tetején lévő **Kalendárium hozzáadása** gombra, hogy egy adott szolgálathoz, eseménytípushoz vagy célhoz kalendáriumot hozz létre. A lépésenkénti útmutatóért lásd: [Kalendáriumok létrehozása](creating-calendars).
+- **Új kalendárium hozzáadása** -- Kattints a lap tetején lévő **Kalendárium hozzáadása** gombra, hogy egy adott szolgálathoz, eseménytípushoz vagy célhoz kalendáriumot hozz létre. A lépésenkénti útmutatóért lásd: [Kalendáriumok létrehozása](./creating-calendars.md).
 - **Kalendárium szerkesztése** -- Kattints bármely kalendárium **Események kezelése** gombjára, hogy megnyisd és kezeld, mely csoportok szerepelnek benne.
 - **Kalendáriumok közzététele** -- A kalendáriumok megjeleníthetők a B1.church weboldaladon, hogy a látogatók lássák a gyülekezetedben közelgő eseményeket.
-- **Összesített kalendáriumok létrehozása** -- Több csoport eseményeit egyetlen kalendáriumnézetbe gyűjtheted, hogy átfogó képet kapj a gyülekezetedben zajló eseményekről. A részletekért lásd: [Összesített kalendárium](curated-calendar).
-- **Termek és erőforrások kezelése** -- Kövesd nyomon a lefoglalható helyiségeket és felszereléseket, és kezeld a jóváhagyási kérelmeket. A részletekért lásd: [Termek és erőforrások](rooms-resources).
-- **Elérhetőség megtekintése** -- Tekintsd meg az összes terem- és erőforrás-foglalást egyetlen kalendáriumban, és foglalj helyet a közelgő eseményekre. A részletekért lásd: [Elérhetőségi kalendárium](availability).
+- **Összesített kalendáriumok létrehozása** -- Több csoport eseményeit egyetlen kalendáriumnézetbe gyűjtheted, hogy átfogó képet kapj a gyülekezetedben zajló eseményekről. A részletekért lásd: [Összesített kalendárium](./curated-calendar.md).
+- **Termek és erőforrások kezelése** -- Kövesd nyomon a lefoglalható helyiségeket és felszereléseket, és kezeld a jóváhagyási kérelmeket. A részletekért lásd: [Termek és erőforrások](./rooms-resources.md).
+- **Elérhetőség megtekintése** -- Tekintsd meg az összes terem- és erőforrás-foglalást egyetlen kalendáriumban, és foglalj helyet a közelgő eseményekre. A részletekért lásd: [Elérhetőségi kalendárium](./availability.md).
 
 :::info
-A kalendáriumok szorosan együttműködnek a [Csoportokkal](../groups/creating-groups.md). Amikor a csoportoknál események vannak ütemezve, ezek bekerülhetnek a kalendáriumaidba. Azt, hogyan kapcsolhatod össze a csoportokat a kalendáriumokkal, a [Kalendáriumok létrehozása](creating-calendars) oldalon találod.
+A kalendáriumok szorosan együttműködnek a [Csoportokkal](../groups/creating-groups.md). Amikor a csoportoknál események vannak ütemezve, ezek bekerülhetnek a kalendáriumaidba. Azt, hogyan kapcsolhatod össze a csoportokat a kalendáriumokkal, a [Kalendáriumok létrehozása](./creating-calendars.md) oldalon találod.
 :::
 
 ## Következő lépések
 
-- [Kalendáriumok létrehozása](creating-calendars) -- Új kalendárium beállítása és csoportok összekapcsolása
-- [Összesített kalendárium](curated-calendar) -- Több csoport eseményeinek összesítése egy nézetbe
-- [Termek és erőforrások](rooms-resources) -- Lefoglalható helyiségek és felszerelések kezelése
-- [Elérhetőségi kalendárium](availability) -- Terem- és erőforrás-foglalások megtekintése és kezelése
+- [Kalendáriumok létrehozása](./creating-calendars.md) -- Új kalendárium beállítása és csoportok összekapcsolása
+- [Összesített kalendárium](./curated-calendar.md) -- Több csoport eseményeinek összesítése egy nézetbe
+- [Termek és erőforrások](./rooms-resources.md) -- Lefoglalható helyiségek és felszerelések kezelése
+- [Elérhetőségi kalendárium](./availability.md) -- Terem- és erőforrás-foglalások megtekintése és kezelése

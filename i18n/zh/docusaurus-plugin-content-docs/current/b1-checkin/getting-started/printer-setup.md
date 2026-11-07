@@ -1,5 +1,6 @@
 ---
 title: "打印机设置"
+description: "为 B1 Checkin 登记机设置网络标签打印机：在您的 Wi-Fi 中找到它，选择打印机，运行测试打印并保存所选设置。"
 ---
 
 # 打印机设置
@@ -13,7 +14,7 @@ B1 Church Checkin 可以在网络标签打印机上打印姓名标签和家长�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [登录](./logging-in) B1 Church Checkin 应用并选择您的教会
+- [登录](./logging-in.md) B1 Church Checkin 应用并选择您的教会
 - 将兼容的网络标签打印机连接到与平板电脑相同的 Wi-Fi 网络
 
 </div>
@@ -71,4 +72,4 @@ B1 Church Checkin 可以在网络标签打印机上打印姓名标签和家长�
 
 ## 后续步骤
 
-打印机配置完成后，您就可以开始签到了。请参阅[签到流程](../check-in/)了解完整流程的工作方式，从[选择聚会](../check-in/selecting-service)开始。
+打印机配置完成后，您就可以开始签到了。请参阅[签到流程](../check-in/index.md)了解完整流程的工作方式，从[选择聚会](../check-in/selecting-service.md)开始。

@@ -1,5 +1,6 @@
 ---
 title: "Membuat Kalender"
+description: "Buat kalender di B1 Admin, hubungkan grup atau impor berkas .ics, dan kelola acara, pendaftaran, serta catatannya dari satu tempat."
 ---
 
 # Membuat Kalender
@@ -61,7 +62,7 @@ Menghubungkan grup ke kalender Anda adalah cara yang efektif untuk mengumpulkan 
 :::
 
 :::info
-Jika Anda ingin membuat satu kalender yang mengambil acara dari banyak grup di seluruh gereja Anda, lihat [Kalender Terkurasi](curated-calendar) untuk pendekatan yang lebih ringkas.
+Jika Anda ingin membuat satu kalender yang mengambil acara dari banyak grup di seluruh gereja Anda, lihat [Kalender Terkurasi](./curated-calendar.md) untuk pendekatan yang lebih ringkas.
 :::
 
 ## Menambah dan Mengedit Acara {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Klik **New Event** di halaman detail kalender untuk menambah acara, atau klik ac
 - **Start** dan **End**, **Repeats**, dan **Visibility** (**Public** atau **Private**).
 - **Tags** -- Label yang dipisahkan koma, seperti `youth, students`. Elemen Calendar di situs web Anda dapat diatur untuk hanya menampilkan acara dengan tag tertentu. Ini adalah kolom **Tags** yang sama dengan yang ada di pengaturan pendaftaran acara.
 - **Who can view notes** dan **Who can post notes** -- Siapa yang dapat membaca dan menambahkan catatan acara (lihat [Catatan Acara](#event-notes)). Pilih **Staff only** (bawaan), **Group leaders** (pemimpin grup acara), atau **Group members** (semua orang di grup acara, termasuk pemimpinnya).
-- **Rooms** dan **Resources** -- Pesan ruang dan peralatan untuk acara. Lihat [Ruangan, Sumber Daya & Penjadwalan](rooms-resources).
+- **Rooms** dan **Resources** -- Pesan ruang dan peralatan untuk acara. Lihat [Ruangan, Sumber Daya & Penjadwalan](./rooms-resources.md).
 
 Klik **Save**. Jika acara berulang, B1 akan meminta konfirmasi, karena menyimpan akan memperbarui setiap kejadian dalam seri tersebut.
 
@@ -101,12 +102,12 @@ Anda dapat mengaktifkan pendaftaran untuk acara kalender mana pun agar anggota d
    - **Registration Closes** -- Tanggal dan waktu ketika pendaftaran ditutup.
    - **Tags** -- Label yang dipisahkan koma (misalnya, "youth, retreat, vbs") untuk membantu mengelompokkan acara yang dapat didaftari.
    - **Registration Questions** -- Opsional, lampirkan [formulir](../forms/creating-forms.md) agar pendaftar menjawab pertanyaan tambahan (pantangan makanan, ukuran kaus, kontak darurat, dll.) saat mendaftar. Pilih **None** untuk melewati pertanyaan.
-   - **Enable Waitlist** -- Ketika acara penuh, izinkan pendaftar tambahan masuk daftar tunggu alih-alih ditolak. Lihat [Pendaftaran Berbayar](paid-registrations#waitlist).
+   - **Enable Waitlist** -- Ketika acara penuh, izinkan pendaftar tambahan masuk daftar tunggu alih-alih ditolak. Lihat [Pendaftaran Berbayar](./paid-registrations.md#waitlist).
 4. Simpan acara.
 
-Untuk acara berbayar, halaman pengaturan yang sama memungkinkan Anda menentukan **Attendee Types** dengan harga, **Selections** (tambahan) opsional, dan **Discount Codes**, dengan pembayaran dikumpulkan melalui penyedia donasi gereja Anda. Lihat [Pendaftaran Berbayar](paid-registrations) untuk panduan lengkapnya.
+Untuk acara berbayar, halaman pengaturan yang sama memungkinkan Anda menentukan **Attendee Types** dengan harga, **Selections** (tambahan) opsional, dan **Discount Codes**, dengan pembayaran dikumpulkan melalui penyedia donasi gereja Anda. Lihat [Pendaftaran Berbayar](./paid-registrations.md) untuk panduan lengkapnya.
 
-Setelah pendaftaran diaktifkan, anggota akan melihat tombol **Register for this Event** saat membuka acara di [situs web B1](../../b1-church/events/registering) atau [aplikasi seluler B1](../../b1-mobile/events/registering). Jika Anda melampirkan formulir, pendaftar akan melihat langkah **Questions** selama pendaftaran dan jawaban mereka akan disimpan bersama pendaftaran mereka.
+Setelah pendaftaran diaktifkan, anggota akan melihat tombol **Register for this Event** saat membuka acara di [situs web B1](../../b1-church/events/registering.md) atau [aplikasi seluler B1](../../b1-mobile/events/registering.md). Jika Anda melampirkan formulir, pendaftar akan melihat langkah **Questions** selama pendaftaran dan jawaban mereka akan disimpan bersama pendaftaran mereka.
 
 :::info
 Pertanyaan Pendaftaran hanya berfungsi dengan formulir yang **tidak** ditandai sebagai Restricted. Formulir terbatas akan dilewati secara otomatis selama pendaftaran alih-alih ditampilkan, jadi gunakan formulir yang tidak dibatasi saat melampirkan pertanyaan ke acara.
@@ -126,7 +127,7 @@ Untuk melihat dan mengelola pendaftaran acara Anda:
    - **Promote** pendaftaran daftar tunggu ketika ada tempat yang kosong
    - **Export CSV** -- Mengunduh semua pendaftaran, termasuk jenis peserta, pilihan, jumlah pembayaran, dan jawaban pertanyaan
 
-Jika acara memiliki Pertanyaan Pendaftaran yang dilampirkan, halaman detail juga menampilkan filter **Unanswered questions only** untuk dengan cepat menemukan pendaftar yang belum mengirimkan jawaban, dan tombol **View Answers** pada setiap pendaftaran yang sudah dijawab untuk melihat tanggapan mereka. Acara berbayar menambahkan kolom **Type**, kolom **Paid / Total**, jumlah per jenis, dan dialog rincian pembayaran -- lihat [Pendaftaran Berbayar](paid-registrations#the-registration-roster).
+Jika acara memiliki Pertanyaan Pendaftaran yang dilampirkan, halaman detail juga menampilkan filter **Unanswered questions only** untuk dengan cepat menemukan pendaftar yang belum mengirimkan jawaban, dan tombol **View Answers** pada setiap pendaftaran yang sudah dijawab untuk melihat tanggapan mereka. Acara berbayar menambahkan kolom **Type**, kolom **Paid / Total**, jumlah per jenis, dan dialog rincian pembayaran -- lihat [Pendaftaran Berbayar](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Gunakan bilah kemajuan kapasitas untuk memantau seberapa cepat acara terisi. Bilah akan berubah merah ketika acara mencapai atau melampaui kapasitas.
@@ -134,7 +135,7 @@ Gunakan bilah kemajuan kapasitas untuk memantau seberapa cepat acara terisi. Bil
 
 ## Langkah Selanjutnya
 
-- [Kalender Terkurasi](curated-calendar) -- Membuat kalender yang mengambil dari beberapa grup
-- [Pendaftaran Berbayar](paid-registrations) -- Jenis peserta, pilihan tambahan, kode diskon, pembayaran, dan daftar tunggu
-- [Panduan Pendaftaran Acara](../guides/event-registration) -- Panduan langkah demi langkah untuk menyiapkan pendaftaran acara
-- [Ikhtisar Kalender](./) -- Kembali ke ikhtisar kalender
+- [Kalender Terkurasi](./curated-calendar.md) -- Membuat kalender yang mengambil dari beberapa grup
+- [Pendaftaran Berbayar](./paid-registrations.md) -- Jenis peserta, pilihan tambahan, kode diskon, pembayaran, dan daftar tunggu
+- [Panduan Pendaftaran Acara](../guides/event-registration.md) -- Panduan langkah demi langkah untuk menyiapkan pendaftaran acara
+- [Ikhtisar Kalender](./index.md) -- Kembali ke ikhtisar kalender

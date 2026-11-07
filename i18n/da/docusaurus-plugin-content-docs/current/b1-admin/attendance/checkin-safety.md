@@ -1,5 +1,6 @@
 ---
 title: "Sikkerhed ved check-in"
+description: "Konfigurer børnesikkerhed i B1 Admin: rumkapacitet, voksenforhold for frivillige, lister over betroede afhentere og sms til forældre ved check-in."
 ---
 
 # Sikkerhed ved check-in
@@ -15,7 +16,7 @@ B1 indeholder et sæt sikkerhedskontroller for børn til check-in: kapacitetsgr�
 
 - Opsæt din [tilstedeværelsesstruktur](setup.md) og [check-in-kiosker](check-in.md)
 - Lokaler er [grupper](../groups/creating-groups.md) knyttet til gudstjenestetider — sikkerhedsindstillingerne nedenfor findes på gruppen
-- Tilkald-forælder og nødudsendelse kræver en forbundet SMS-udbyder ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) eller Mutual Ministry)
+- Tilkald-forælder og nødudsendelse kræver en forbundet SMS-udbyder ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) eller Mutual Ministry)
 
 </div>
 
@@ -90,11 +91,11 @@ Begge funktioner sender sms-beskeder gennem din kirkes forbundne SMS-udbyder —
 
 Personer, der har fravalgt sms'er, eller som ikke har et mobilnummer registreret, springes automatisk over — kiosken rapporterer, hvor mange beskeder der blev sendt, og hvor mange der blev sprunget over.
 
-Se gennemgangen på kiosksiden i [Udtjekning og børnesikkerhed](../../b1-checkin/check-in/checking-out).
+Se gennemgangen på kiosksiden i [Udtjekning og børnesikkerhed](../../b1-checkin/check-in/checking-out.md).
 
 ## Relaterede artikler
 
 - [Check-in](check-in.md) — kioskopsætning og hardware
-- [Udtjekning og børnesikkerhed](../../b1-checkin/check-in/checking-out) — kioskens udtjekning, afhentningsverificering og tilkaldelsesforløb
+- [Udtjekning og børnesikkerhed](../../b1-checkin/check-in/checking-out.md) — kioskens udtjekning, afhentningsverificering og tilkaldelsesforløb
 - [Opret grupper](../groups/creating-groups.md) — hvor lokaleindstillinger findes
 - [Opsætning af tilstedeværelse](setup.md) — gudstjenester, gudstjenestetider og lokaletildelinger

@@ -1,5 +1,7 @@
 ---
-title: "Elenco dei membri"
+title: "Rubrica dei membri nel portale B1.church"
+sidebar_label: "Elenco dei membri"
+description: "Cerca e sfoglia i membri della chiesa nella rubrica di B1.church, visualizza profili e membri del nucleo familiare e scopri chi può accedere alla rubrica."
 ---
 
 # Elenco dei membri

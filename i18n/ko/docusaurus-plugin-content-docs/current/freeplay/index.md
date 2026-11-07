@@ -1,5 +1,6 @@
 ---
 title: "FreePlay 개요"
+description: "FreePlay 개요: Android TV, Fire TV, Apple TV에서 오프라인 레슨 재생을 지원하는 교실용 TV 앱이며, 설정 가이드 링크를 제공합니다."
 ---
 
 # FreePlay 개요
@@ -22,10 +23,10 @@ FreePlay는 교회를 위한 TV 앱으로, 교실 TV에 수업 콘텐츠를 표�
 
 - **오프라인 재생** - 예배 중에 Wi-Fi에 의존하지 않도록 동영상과 이미지 슬라이드를 미리 다운로드합니다
 - **다운로드 관리** - **설정** > **다운로드**에서 다운로드한 모든 콘텐츠를 보고 관리합니다
-- **예약 모드** - 재생 목록을 만들어 [admin.freeplay.church](https://admin.freeplay.church)의 캘린더에 배치하면, 페어링된 TV가 아무도 시작 버튼을 누르지 않아도 정해진 시간에 재생합니다 -- [예약 모드](./scheduled-mode/)를 참조하세요
+- **예약 모드** - 재생 목록을 만들어 [admin.freeplay.church](https://admin.freeplay.church)의 캘린더에 배치하면, 페어링된 TV가 아무도 시작 버튼을 누르지 않아도 정해진 시간에 재생합니다 -- [예약 모드](./scheduled-mode/index.md)를 참조하세요
 - **계획 페어링** - 기기를 교회 예배 계획에 연결하여 여러 방의 콘텐츠를 조율합니다
 - **콘텐츠 제공자** - [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox, OneDrive 같은 외부 소스에서 콘텐츠를 찾아보고 다운로드합니다
-- **공지 슬라이드** - 연결된 제공자의 슬라이드 폴더를 반복 재생합니다 -- [공지 슬라이드](./content-providers/announcements)를 참조하세요
+- **공지 슬라이드** - 연결된 제공자의 슬라이드 폴더를 반복 재생합니다 -- [공지 슬라이드](./content-providers/announcements.md)를 참조하세요
 - **TV 리모컨 지원** - 방향 버튼과 선택 버튼을 사용하여 일반 TV 리모컨만으로 앱 전체를 탐색할 수 있습니다
 - **접을 수 있는 사이드바** - 화면을 어지럽히지 않으면서도 탐색 메뉴에 쉽게 접근할 수 있도록 얇은 사이드바를 제공합니다
 
@@ -35,10 +36,10 @@ FreePlay를 실행하면 콘텐츠 제공자에 연결되어 사용 가능한 �
 
 ## 섹션
 
-- **[시작하기](./getting-started/)** - 앱을 설치하고 실행한 다음, 연결 방법을 선택합니다
-- **[예약 모드](./scheduled-mode/)** - TV를 캘린더에 페어링하고 FreePlay Admin에서 관리합니다
-- **[계획 모드](./plan-mode/)** - 교회 예배 계획에 페어링합니다
-- **[콘텐츠 제공자](./content-providers/)** - 외부 콘텐츠 소스에 연결합니다
+- **[시작하기](./getting-started/index.md)** - 앱을 설치하고 실행한 다음, 연결 방법을 선택합니다
+- **[예약 모드](./scheduled-mode/index.md)** - TV를 캘린더에 페어링하고 FreePlay Admin에서 관리합니다
+- **[계획 모드](./plan-mode/index.md)** - 교회 예배 계획에 페어링합니다
+- **[콘텐츠 제공자](./content-providers/index.md)** - 외부 콘텐츠 소스에 연결합니다
 
 :::info
 FreePlay는 교회를 위한 무료 오픈소스 도구 모음인 [ChurchApps](https://churchapps.org)의 일부입니다.

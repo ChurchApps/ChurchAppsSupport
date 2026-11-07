@@ -1,5 +1,7 @@
 ---
-title: "Versetul zilei"
+title: "Versetul zilei pe site-ul și portalul B1.church"
+sidebar_label: "Versetul zilei"
+description: "Răsfoiește imaginea versetului zilei și versetele anterioare, apoi distribuie-le sau descarcă-le de pe site-ul B1.church sau portal, pe orice ecran."
 ---
 
 # Versetul zilei

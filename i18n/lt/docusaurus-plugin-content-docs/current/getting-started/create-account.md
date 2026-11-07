@@ -1,5 +1,6 @@
 ---
 title: "Paskyros sukūrimas"
+description: "Užsiregistruokite ChurchApps paskyrą B1.church, patvirtinkite el. paštą ir sukurkite ar prisijunkite prie bažnyčios, kad galėtumėte pradėti B1 Admin sąranką."
 ---
 
 # Paskyros sukūrimas

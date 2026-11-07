@@ -1,5 +1,6 @@
 ---
 title: "Ustvarjanje obrazcev"
+description: "Izdelajte obrazce po meri v B1 Admin za prijave na dogodke, ankete in obiskovalne kartice ter jih delite prek povezave, QR kode ali tiskanja."
 ---
 
 # Ustvarjanje obrazcev

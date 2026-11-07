@@ -1,5 +1,7 @@
 ---
-title: "Director de membri"
+title: "Agenda membrilor în aplicația B1 Mobile"
+sidebar_label: "Director de membri"
+description: "Găsiți persoane din biserica dvs. cu agenda membrilor din B1 Mobile: răsfoiți alfabetic, căutați după nume și deschideți profiluri și legăturile gospodăriei."
 ---
 
 # Director de membri
@@ -13,7 +15,7 @@ Directorul de membri din B1 Mobile vă permite să căutați și să găsiți pe
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](../getting-started/installing) și [autentificați-vă](../getting-started/logging-in) în contul dvs.
+- [Instalați B1 Mobile](../getting-started/installing.md) și [autentificați-vă](../getting-started/logging-in.md) în contul dvs.
 
 </div>
 
@@ -51,5 +53,5 @@ Informațiile vizibile în fiecare profil depind de setările de confidențialit
 
 ## Articole conexe
 
-- [Mesagerie](./messaging) -- Trimiteți un mesaj privat unei persoane găsite în director
+- [Mesagerie](./messaging.md) -- Trimiteți un mesaj privat unei persoane găsite în director
 - [Setările de confidențialitate](../profile/privacy-settings.md) -- Controlați ce pot vedea alții despre dvs. în director

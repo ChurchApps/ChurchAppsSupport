@@ -1,5 +1,7 @@
 ---
-title: "Donationshistorik"
+title: "Se gavehistorik i B1 Mobile"
+sidebar_label: "Donationshistorik"
+description: "Tjek din årlige givning, seneste gave og den fulde gavehistorik i B1 Mobile, og gentag en tidligere gave med ét tryk fra fanen Oversigt."
 ---
 
 # Donationshistorik
@@ -13,8 +15,8 @@ B1 Mobile giver dig et klart billede af din giver gennem to faner: **Oversigt** 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
-- [Foretage mindst en donation](./making-donations) for at se din historik
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
+- [Foretage mindst en donation](./making-donations.md) for at se din historik
 
 </div>
 
@@ -45,5 +47,5 @@ Tjek fanen **Oversigt** regelmæssigt for at holde dig på toppen af dine giveld
 
 ## Relaterede artikler
 
-- [Foretage en donation](./making-donations) -- Foretag en ny gave fra appen
-- [Administration af betalingsmetoder](./managing-payments) -- Tilføj eller fjern gemte betalingsmetoder
+- [Foretage en donation](./making-donations.md) -- Foretag en ny gave fra appen
+- [Administration af betalingsmetoder](./managing-payments.md) -- Tilføj eller fjern gemte betalingsmetoder

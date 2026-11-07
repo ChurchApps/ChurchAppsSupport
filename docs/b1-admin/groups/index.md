@@ -1,5 +1,7 @@
 ---
-title: "Groups"
+title: "Groups in B1 Admin"
+sidebar_label: "Groups"
+description: "Set up and organize groups in B1 Admin, including categories, members, calendars, and join requests, with a guide to finding the Groups page."
 ---
 
 # Groups

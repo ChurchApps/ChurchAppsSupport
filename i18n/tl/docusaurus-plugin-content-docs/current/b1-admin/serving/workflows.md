@@ -1,5 +1,6 @@
 ---
 title: "Mga Workflow"
+description: "Gumawa ng Kanban-style na board sa B1 Admin para gabayan ang tao sa follow-up na hakbang, gamit ang awtomatikong email, text, at trigger na nagdadagdag ng tao."
 ---
 
 # Mga Workflow

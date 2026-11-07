@@ -1,5 +1,7 @@
 ---
-title: "Service"
+title: "Plannings de service dans l’application B1 Mobile"
+sidebar_label: "Service"
+description: "Consultez votre planning de service, vos affectations et l’état de vos postes dans B1 Mobile, et découvrez comment vous inscrire aux postes bénévoles."
 ---
 
 # Service
@@ -19,5 +21,5 @@ La section Service dans B1 Mobile vous permet de voir vos affectations de servic
 
 ## En savoir plus
 
-- [Affichage des plans](./viewing-plans) — Guide complet pour afficher vos plans de service
-- [Inscription des bénévoles](./volunteer-signup) — Comment vous inscrire à une position ouverte
+- [Affichage des plans](./viewing-plans.md) — Guide complet pour afficher vos plans de service
+- [Inscription des bénévoles](./volunteer-signup.md) — Comment vous inscrire à une position ouverte

@@ -1,5 +1,7 @@
 ---
-title: "Predikeen"
+title: "Saarnojen selaaminen B1.church-sivustollasi"
+sidebar_label: "Predikeen"
+description: "Selaa ja katso tallennettuja saarnoja seurakuntasi kirjastosta B1.church-sivustolla, ryhmiteltyinä sarjoihin tai soittolistoihin. Ei kirjautumista."
 ---
 
 # Predikeen

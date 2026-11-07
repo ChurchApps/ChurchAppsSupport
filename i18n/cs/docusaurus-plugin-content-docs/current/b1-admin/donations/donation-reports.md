@@ -1,5 +1,6 @@
 ---
 title: "Přehledy darů"
+description: "Projděte souhrny darů, odchody dárců a podrobnosti dávek v B1 Admin pomocí přehledu Souhrn darů, zobrazení Ztracení dárci a exportů CSV."
 ---
 
 # Přehledy darů

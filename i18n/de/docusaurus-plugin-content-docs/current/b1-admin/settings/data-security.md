@@ -1,5 +1,6 @@
 ---
 title: "Datensicherheit"
+description: "Wie ChurchApps die Daten Ihrer Gemeinde in B1 Admin schützt: gehashte Passwörter, HTTPS, getrennte Datenbanken und DSGVO-Datenwerkzeuge."
 ---
 
 # Datensicherheit

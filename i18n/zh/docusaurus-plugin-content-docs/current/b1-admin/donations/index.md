@@ -1,5 +1,6 @@
 ---
 title: "奉献"
+description: "在 B1 Admin 中记录、整理和报告教会奉献，涵盖批次、基金、年终报表，以及 Stripe 或 PayPal 在线捐款。"
 ---
 
 # 奉献

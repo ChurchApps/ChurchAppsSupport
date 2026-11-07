@@ -1,5 +1,6 @@
 ---
 title: "Imikhankaso Netithembiso"
+description: "Dala tinhlelo tekutfola imali ku-B1 Admin, rekhoda tibopho tebantfu, bese ulandzela inchubekelo yekufinyelela tinhloso ngemininikelo yangempela."
 ---
 
 # Imikhankaso Netithembiso
@@ -13,7 +14,7 @@ Imikhankaso ikuvumela kutsi ucalise umkhankaso wekucoca imali ngenhloso lecondzi
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Hlela [tikhwama tekunikela](funds) takho — umkhankaso ngamunye uhlotjaniswa nesikhwama
+- Hlela [tikhwama tekunikela](./funds.md) takho — umkhankaso ngamunye uhlotjaniswa nesikhwama
 - Udzinga kufinyelela esiceleni Seminikelo se-B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Chofota luphawu lwekuhlela kunome yikuphi ikhadi lomkhankaso kute ubuyekete liga
 
 ## Tindzaba Letihlobene
 
-- [Kubhala Iminikelo Phansi](recording-donations) — bhala tipho letingempela letigcwalisa tithembiso
-- [Tikhwama](funds) — hlela sikhwama lesitawuhlotjaniswa nemkhankaso
-- [Imibiko Yeminikelo](donation-reports) — kubika ngeminikelo ngesikhwama
+- [Kubhala Iminikelo Phansi](./recording-donations.md) — bhala tipho letingempela letigcwalisa tithembiso
+- [Tikhwama](./funds.md) — hlela sikhwama lesitawuhlotjaniswa nemkhankaso
+- [Imibiko Yeminikelo](./donation-reports.md) — kubika ngeminikelo ngesikhwama

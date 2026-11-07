@@ -1,5 +1,6 @@
 ---
 title: "Distribuzione delle Applicazioni Web"
+description: "Come distribuire le web app di ChurchApps, come B1 Admin, su Amazon S3 e CloudFront: deploy automatici con GitHub Actions al merge o comandi manuali."
 ---
 
 # Distribuzione delle Applicazioni Web
@@ -13,7 +14,7 @@ Le applicazioni web di ChurchApps vengono distribuite come siti statici su **Ama
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Configura l'applicazione web in locale e verifica che si compili -- vedi [Applicazioni Web](../web-apps/)
+- Configura l'applicazione web in locale e verifica che si compili -- vedi [Applicazioni Web](../web-apps/index.md)
 - Configura le credenziali AWS con accesso a S3 e CloudFront
 - Conosci il nome del bucket S3 di destinazione e l'ID della distribuzione CloudFront
 
@@ -53,6 +54,6 @@ Se devi verificare una build in locale prima della distribuzione, esegui `npm ru
 
 ## Articoli Correlati
 
-- **[Applicazioni Web](../web-apps/)** -- Guide alla configurazione di B1Admin, B1App e LessonsApp
-- **[Distribuzione delle API](./apis)** -- Distribuzione delle API backend
-- **[Distribuzione Mobile](./mobile)** -- Distribuzione delle applicazioni mobile negli app store
+- **[Applicazioni Web](../web-apps/index.md)** -- Guide alla configurazione di B1Admin, B1App e LessonsApp
+- **[Distribuzione delle API](./apis.md)** -- Distribuzione delle API backend
+- **[Distribuzione Mobile](./mobile.md)** -- Distribuzione delle applicazioni mobile negli app store

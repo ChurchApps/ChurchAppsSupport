@@ -1,5 +1,7 @@
 ---
-title: "Fellesskap"
+title: "Fellesskapsfunksjoner i B1 Mobile-appen"
+sidebar_label: "Fellesskap"
+description: "Bruk B1 Mobile-appen til å søke i medlemskatalogen, sende private meldinger til andre medlemmer og se push-varsler fra menigheten din."
 ---
 
 # Fellesskap
@@ -12,13 +14,13 @@ Funksjonene for **Fellesskap** i B1 Mobile hjelper deg å holde kontakten med me
 
 ## Hva du finner
 
-- **[Medlemskatalog](./member-directory)** -- Bla gjennom og søk i menighetens medlemskatalog. Slå opp personer etter navn, og trykk på et medlem for å se profilen med kontaktinformasjon og familieforbindelser.
-- **[Meldinger](./messaging)** -- Send og motta private meldinger med andre medlemmer i menigheten. Start nye samtaler, eller fortsett der du slapp med eksisterende.
-- **[Varsler](./notifications)** -- Hold deg oppdatert med push-varsler om gruppeaktivitet, meldinger, tjenesteoppgaver og andre viktige oppdateringer fra menigheten din.
+- **[Medlemskatalog](./member-directory.md)** -- Bla gjennom og søk i menighetens medlemskatalog. Slå opp personer etter navn, og trykk på et medlem for å se profilen med kontaktinformasjon og familieforbindelser.
+- **[Meldinger](./messaging.md)** -- Send og motta private meldinger med andre medlemmer i menigheten. Start nye samtaler, eller fortsett der du slapp med eksisterende.
+- **[Varsler](./notifications.md)** -- Hold deg oppdatert med push-varsler om gruppeaktivitet, meldinger, tjenesteoppgaver og andre viktige oppdateringer fra menigheten din.
 
 ## Komme i gang
 
-Du må være innlogget for å få tilgang til fellesskapsfunksjonene. Hvis du ikke er logget inn, blir du bedt om å [logge inn](../getting-started/logging-in) når du prøver å bruke en av disse delene.
+Du må være innlogget for å få tilgang til fellesskapsfunksjonene. Hvis du ikke er logget inn, blir du bedt om å [logge inn](../getting-started/logging-in.md) når du prøver å bruke en av disse delene.
 
 Medlemskatalogen, meldinger og varsler er hver for seg tilgjengelige fra appens navigasjon. Sammen gir de deg en enkel måte å finne folk på, kommunisere privat og holde deg oppdatert på det som skjer i menigheten din.
 

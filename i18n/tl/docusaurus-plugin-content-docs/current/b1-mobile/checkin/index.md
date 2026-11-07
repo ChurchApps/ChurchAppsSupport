@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In sa Simbahan Gamit ang B1 Mobile App"
+sidebar_label: "Check-In"
+description: "I-check in ang sarili at sambahayan sa serbisyo mula sa telepono gamit ang B1 Mobile, pumili ng serbisyo at grupo bago dumating."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Ang proseso ng check-in ay isang mabilis na multi-step na daloy na gagabay sa iy
 
 ## Pagsisimula
 
-Para ma-access ang check-in, buksan ang seksyong **Check-In** sa B1 Mobile. Kailangan mong naka-log in para magamit ang feature na ito. Kung hindi ka naka-sign in, hihilingin sa iyong [mag-log in](../getting-started/logging-in) muna.
+Para ma-access ang check-in, buksan ang seksyong **Check-In** sa B1 Mobile. Kailangan mong naka-log in para magamit ang feature na ito. Kung hindi ka naka-sign in, hihilingin sa iyong [mag-log in](../getting-started/logging-in.md) muna.
 
 :::info
 Ang feature ng check-in ay nangangailangan na ang iyong simbahan ay nag-set up ng mga serbisyo at attendance group sa kanilang mga setting ng administrasyon. Kung walang lumabas na mga serbisyo kapag binuksan mo ang check-in screen, maaaring hindi pa na-configure ng iyong simbahan ang feature na ito. Makipag-ugnayan sa iyong church administrator para sa tulong.
@@ -30,4 +32,4 @@ Ang feature ng check-in ay nangangailangan na ang iyong simbahan ay nag-set up n
 
 ## Mga Susunod na Hakbang
 
-- [Self Check-In](./self-checkin) -- Sunud-sunod na gabay sa pag-check in mula sa iyong telepono
+- [Self Check-In](./self-checkin.md) -- Sunud-sunod na gabay sa pag-check in mula sa iyong telepono

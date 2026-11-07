@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Подключите B1 Admin к Make для автоматизации процессов: создайте ключ API, настройте триггер и действия B1.church и устраните распространённые ошибки."
 ---
 
 # Make
@@ -110,6 +111,6 @@ title: "Make"
 
 ## См. также
 
-- [Zapier](./zapier) — тот же паттерн с более простым UI и большим каталогом приложений
-- [Slack & Discord](./slack-discord) — встроенные уведомления чата без Make
+- [Zapier](./zapier.md) — тот же паттерн с более простым UI и большим каталогом приложений
+- [Slack & Discord](./slack-discord.md) — встроенные уведомления чата без Make
 - [Webhooks (справка разработчика)](/docs/developer/api/webhooks)

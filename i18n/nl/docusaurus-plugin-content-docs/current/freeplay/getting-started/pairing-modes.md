@@ -1,5 +1,6 @@
 ---
 title: "Choosing a Pairing Mode"
+description: "Kies de juiste manier om een FreePlay-tv te koppelen: een agenda uit FreePlay Admin, een serviceplan uit B1 Admin, of helemaal niet koppelen."
 ---
 
 # Choosing a Pairing Mode
@@ -40,7 +41,7 @@ Kies **Pair to Plan** wanneer u een kerkserviceplan wilt volgen. Deze modus gene
 
 ## Content Providers
 
-Als u geen koppeling nodig hebt met een klaslokaal of plan, kunt u rechtstreeks inhoudsproviders doorbladeren. Providers als [Lessons.church](../../lessons-church/) en Bible Project bieden inhoud die u op aanvraag kunt downloaden en afspelen.
+Als u geen koppeling nodig hebt met een klaslokaal of plan, kunt u rechtstreeks inhoudsproviders doorbladeren. Providers als [Lessons.church](../../lessons-church/index.md) en Bible Project bieden inhoud die u op aanvraag kunt downloaden en afspelen.
 
 **Best voor:** TV's waar vrijwilligers handmatig kiezen wat ze elke week afspelen, of wanneer u beschikbare inhoud wilt verkennen.
 
@@ -50,6 +51,6 @@ U kunt het scherm **Providers** op elk moment openen vanuit de zijbalk onderaan 
 
 ## Gerelateerde Artikelen
 
-- **[Classroom Mode](../scheduled-mode/)** - Volledige gids voor koppelen met een klaslokaal
-- **[Plan Mode](../plan-mode/)** - Volledige gids voor koppelen met een serviceplan
-- **[Content Providers](../content-providers/)** - Doorbladeren en download inhoud van externe bronnen
+- **[Classroom Mode](../scheduled-mode/index.md)** - Volledige gids voor koppelen met een klaslokaal
+- **[Plan Mode](../plan-mode/index.md)** - Volledige gids voor koppelen met een serviceplan
+- **[Content Providers](../content-providers/index.md)** - Doorbladeren en download inhoud van externe bronnen

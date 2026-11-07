@@ -1,5 +1,7 @@
 ---
-title: "Profil szerkesztése"
+title: "Profil szerkesztése a B1 Mobile alkalmazásban"
+sidebar_label: "Profil szerkesztése"
+description: "Frissítsd nevedet, e-mail-címedet, telefonszámodat, címedet és profilképedet a B1 Mobile alkalmazásban, hogy gyülekezeted nyilvántartásai és könyvtára naprakész maradjon."
 ---
 
 # Profil szerkesztése
@@ -13,7 +15,7 @@ A **Profil** lap segítségével frissítheted személyes adataidat, hogy a gyü
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 
 </div>
 
@@ -34,7 +36,7 @@ A profilod a következő személyes adatokat tartalmazza:
 3. Koppints a frissíteni kívánt mezőre, és végezd el a módosításokat.
 4. Ha végeztél, mentsd el a változtatásokat.
 
-A frissített adataid automatikusan szinkronizálódnak. Aki megtekinti a profilodat (a [adatvédelmi beállításaidtól](./privacy-settings) függően), azonnal látni fogja az új adatokat.
+A frissített adataid automatikusan szinkronizálódnak. Aki megtekinti a profilodat (a [adatvédelmi beállításaidtól](./privacy-settings.md) függően), azonnal látni fogja az új adatokat.
 
 :::tip
 Tartsd naprakészen az e-mail-címedet és a telefonszámodat. A gyülekezeted ezen adatok alapján küld neked fontos tájékoztatásokat és emlékeztetőket.
@@ -46,7 +48,7 @@ A profilképedet a **Profil** lapon adhatod hozzá vagy cserélheted le. A fotó
 
 ## Módosítások a ChurchApps-szolgáltatások között
 
-Mivel minden ChurchApps-szolgáltatás ugyanazt a fiókrendszert használja, a B1 Mobile-ban végzett módosítás azonnal látszik a [B1.church](../../b1-church/) felületen, a gyülekezeted adminisztrációs eszközeiben és minden más összekapcsolt szolgáltatásban. Nem kell külön-külön frissítened az adataidat minden helyen.
+Mivel minden ChurchApps-szolgáltatás ugyanazt a fiókrendszert használja, a B1 Mobile-ban végzett módosítás azonnal látszik a [B1.church](../../b1-church/index.md) felületen, a gyülekezeted adminisztrációs eszközeiben és minden más összekapcsolt szolgáltatásban. Nem kell külön-külön frissítened az adataidat minden helyen.
 
 :::info
 Egyes gyülekezetek bizonyos profilmódosításokhoz adminisztrátori jóváhagyást kérnek. Ha a módosításod nem jelenik meg azonnal, nézd meg a profilképernyőn a **Függőben** lapot, ahol az állapotát láthatod.
@@ -54,5 +56,5 @@ Egyes gyülekezetek bizonyos profilmódosításokhoz adminisztrátori jóváhagy
 
 ## Kapcsolódó cikkek
 
-- [Háztartás](./household) -- Családtagjaid megtekintése és kezelése
-- [Adatvédelmi beállítások](./privacy-settings) -- Annak szabályozása, hogy mások mit láthatnak rólad
+- [Háztartás](./household.md) -- Családtagjaid megtekintése és kezelése
+- [Adatvédelmi beállítások](./privacy-settings.md) -- Annak szabályozása, hogy mások mit láthatnak rólad

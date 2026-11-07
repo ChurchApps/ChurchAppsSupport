@@ -1,5 +1,6 @@
 ---
 title: "Lektionen anpassen"
+description: "Abschnitte und Rollen in einer Lektion ausblenden, entfernen oder umsortieren und wählen, ob die Änderung für ein Klassenzimmer oder alle gilt."
 ---
 
 # Lektionen anpassen

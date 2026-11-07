@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea predicilor"
+description: "Administrează biblioteca de predici din B1 Admin: adaugă predici de pe YouTube, Vimeo sau Facebook, editează detaliile și obține un flux de podcast."
 ---
 
 # Gestionarea predicilor
@@ -14,7 +15,7 @@ Pagina Predici afișează întreaga bibliotecă de predici a bisericii. De aici 
 <h4>Înainte de a începe</h4>
 
 - Aveți nevoie de permisiunea **contentApi.streamingServices.edit**. Consultați [Roluri și permisiuni](../settings/roles-permissions.md) dacă nu aveți acces.
-- Creați cel puțin o [listă de redare](playlists) în care să vă organizați predicile
+- Creați cel puțin o [listă de redare](./playlists.md) în care să vă organizați predicile
 - Pregătiți ID-urile sau URL-urile videoclipurilor de pe YouTube, Vimeo sau Facebook
 
 </div>
@@ -35,7 +36,7 @@ Pagina Predici afișează întreaga bibliotecă de predici a bisericii. De aici 
 6. Faceți modificările dorite și faceți clic pe **Save**.
 
 :::tip
-Puteți adăuga și un link permanent pentru transmisiune în direct selectând **Add Permanent Live URL** din meniul derulant **Add Sermon**. Acesta creează o conexiune persistentă la transmisiunea live a canalului dvs. de YouTube, folosind ID-ul canalului. Pentru mai multe detalii, consultați [Transmisiunea în direct](live-streaming).
+Puteți adăuga și un link permanent pentru transmisiune în direct selectând **Add Permanent Live URL** din meniul derulant **Add Sermon**. Acesta creează o conexiune persistentă la transmisiunea live a canalului dvs. de YouTube, folosind ID-ul canalului. Pentru mai multe detalii, consultați [Transmisiunea în direct](./live-streaming.md).
 :::
 
 ## Editarea unei predici
@@ -73,11 +74,11 @@ După ce adăugați o predică, o puteți programa pentru difuzare pe pagina dvs
 3. Predica va fi redată la ora serviciului programat.
 
 :::info
-Pentru a importa mai multe predici deodată, în loc să le adăugați una câte una, folosiți instrumentul [Import în masă](bulk-import), care preia videoclipurile direct din contul dvs. de YouTube sau Vimeo.
+Pentru a importa mai multe predici deodată, în loc să le adăugați una câte una, folosiți instrumentul [Import în masă](./bulk-import.md), care preia videoclipurile direct din contul dvs. de YouTube sau Vimeo.
 :::
 
 ## Pașii următori
 
-- [Liste de redare](playlists) -- Organizați predicile în serii
-- [Transmisiunea în direct](live-streaming) -- Configurați programul de transmisiune
-- [Import în masă](bulk-import) -- Importați mai multe predici deodată
+- [Liste de redare](./playlists.md) -- Organizați predicile în serii
+- [Transmisiunea în direct](./live-streaming.md) -- Configurați programul de transmisiune
+- [Import în masă](./bulk-import.md) -- Importați mai multe predici deodată

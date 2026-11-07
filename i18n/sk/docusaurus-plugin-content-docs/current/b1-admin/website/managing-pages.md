@@ -1,5 +1,6 @@
 ---
 title: "Správa stránok"
+description: "Vytvárajte, upravujte a organizujte stránky a navigáciu v zobrazení Stránky webu v B1 Admin vrátane nastavení stránky, presmerovaní a šablón."
 ---
 
 # Správa stránok
@@ -13,13 +14,13 @@ Zobrazenie Stránky webu je váš centrálny bod na vytváranie, úpravy a organ
 <div class="prereqs">
 <h4>Pred začiatkom</h4>
 
-- Dokončite [Počiatočné nastavenie](initial-setup), aby ste nastavili doménu a základné nastavenia webu
-- Pripravte si obsah a obrázky. Najprv nahrajte mediálne súbory pomocou správcu [Súbory](files).
+- Dokončite [Počiatočné nastavenie](./initial-setup.md), aby ste nastavili doménu a základné nastavenia webu
+- Pripravte si obsah a obrázky. Najprv nahrajte mediálne súbory pomocou správcu [Súbory](./files.md).
 
 </div>
 
 :::info
-Ak má vaša cirkev viac webov (napríklad samostatné weby pre jednotlivé pobočky), použite prepínač webov v hornej časti zobrazenia Stránky webu a prepínajte sa medzi nimi. Každý web má vlastné stránky, navigáciu a nastavenia [vzhľadu](appearance).
+Ak má vaša cirkev viac webov (napríklad samostatné weby pre jednotlivé pobočky), použite prepínač webov v hornej časti zobrazenia Stránky webu a prepínajte sa medzi nimi. Každý web má vlastné stránky, navigáciu a nastavenia [vzhľadu](./appearance.md).
 :::
 
 ## Typy stránok
@@ -35,7 +36,7 @@ Tabuľka **Stránky** uvádza každú stránku na vašom webe podľa **Cesty** a
 
 1. Kliknite na tlačidlo **Pridať stránku** v pravom hornom rohu zobrazenia Stránky webu.
 2. Vyberte typ stránky (prázdna alebo šablóna) a zadajte jej názov.
-3. Kliknite na **Upraviť obsah** vedľa ľubovoľnej stránky a otvorte [editor stránok](page-editor), kde môžete pridávať sekcie, text, obrázky a ďalšie prvky.
+3. Kliknite na **Upraviť obsah** vedľa ľubovoľnej stránky a otvorte [editor stránok](./page-editor.md), kde môžete pridávať sekcie, text, obrázky a ďalšie prvky.
 4. Kliknite na **Nastavenia stránky** vedľa stránky, ak chcete upraviť jej názov, cestu URL a ďalšie metaúdaje.
 5. Kliknutím na cestu stránky v stĺpci **Cesta** otvoríte živú stránku na novej karte a uvidíte presne, ako bude vyzerať pre návštevníkov.
 
@@ -112,10 +113,10 @@ Ak budujete web od nuly, môžete ho vytvoriť pomocou **Šablóny webu** namies
 3. Keď nájdete vhodnú šablónu, kliknite na **Použiť šablónu**.
 4. Stránky, ktoré ešte neexistujú, sa vytvoria a pridajú do navigácie. Existujúce stránky zostanú nezmenené.
 
-Po použití šablóny otvorte každú stránku v [editore stránok](page-editor) a nahraďte ukážkový text a obrázky skutočným obsahom vašej cirkvi.
+Po použití šablóny otvorte každú stránku v [editore stránok](./page-editor.md) a nahraďte ukážkový text a obrázky skutočným obsahom vašej cirkvi.
 
 :::info
-Šablóny webu vytvárajú štruktúru stránok a navigáciu. Neprepisujú farebnú schému ani písma webu -- tie riadi [Vzhľad](appearance).
+Šablóny webu vytvárajú štruktúru stránok a navigáciu. Neprepisujú farebnú schému ani písma webu -- tie riadi [Vzhľad](./appearance.md).
 :::
 
 ## Zväčšenie obrázkov (lightbox)
@@ -124,7 +125,7 @@ Keď návštevníci kliknú na obrázok na vašom webe, otvorí sa na celú obra
 
 ## Ďalšie kroky
 
-- [Počiatočné nastavenie](initial-setup) -- Pokyny na prvé nastavenie
-- [Použitie editora stránok](page-editor) -- Naučte sa, ako vytvárať a štýlovať obsah stránok
-- [Vzhľad](appearance) -- Prispôsobte si vizuálny motív vášho webu
-- [Súbory](files) -- Nahrávajte a spravujte mediálne súbory pre svoje stránky
+- [Počiatočné nastavenie](./initial-setup.md) -- Pokyny na prvé nastavenie
+- [Použitie editora stránok](./page-editor.md) -- Naučte sa, ako vytvárať a štýlovať obsah stránok
+- [Vzhľad](./appearance.md) -- Prispôsobte si vizuálny motív vášho webu
+- [Súbory](./files.md) -- Nahrávajte a spravujte mediálne súbory pre svoje stránky

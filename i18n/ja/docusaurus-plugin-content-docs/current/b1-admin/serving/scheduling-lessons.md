@@ -1,5 +1,7 @@
 ---
-title: "レッスンのスケジュール設定"
+title: "B1 Admin での Lessons.church からのレッスン予定"
+sidebar_label: "レッスンのスケジュール設定"
+description: "B1 Admin を Lessons.church に接続し、レッスンを予定したり、シリーズを一括で予定したり、年間計画を奉仕グループの礼拝計画に適用したりします。"
 ---
 
 # Lessons.church からレッスンをスケジュールする

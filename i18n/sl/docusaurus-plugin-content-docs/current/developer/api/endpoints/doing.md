@@ -1,5 +1,6 @@
 ---
 title: "Končne točke za Doing"
+description: "Referenca končnih točk API-ja Doing za servisne načrte, dodelitve prostovoljcev, naloge in avtomatizacije v B1 Admin, s potmi, avtentikacijo in dovoljenji."
 ---
 
 # Končne točke za Doing
@@ -278,6 +279,6 @@ Posreduje zahteve zunanjim ponudnikom vsebin (npr. ProPresenter, EasyWorship). S
 
 ## Sorodne strani
 
-- [Končne točke članstva](./membership) — osebe, skupine, vloge in dovoljenja
-- [Končne točke obiskovanja](./attendance) — spremljanje bogoslužij in obiskov
-- [Struktura modula](../module-structure) — vzorci organizacije kode
+- [Končne točke članstva](./membership.md) — osebe, skupine, vloge in dovoljenja
+- [Končne točke obiskovanja](./attendance.md) — spremljanje bogoslužij in obiskov
+- [Struktura modula](../module-structure.md) — vzorci organizacije kode

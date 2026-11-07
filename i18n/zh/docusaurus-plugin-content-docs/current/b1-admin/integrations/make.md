@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "将 B1 Admin 连接到 Make 以自动化工作流程：创建 API 密钥、设置 B1.church 触发器和操作，并排查常见错误。"
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make 应用是开源的 — JSON 定义位于 `B1Integrations/Make/` �
 
 ## 另请参阅
 
-- [Zapier](./zapier) — 相同模式，更简单的 UI 和更大的应用目录
-- [Slack 和 Discord](./slack-discord) — 内置聊天通知，不需要 Make
+- [Zapier](./zapier.md) — 相同模式，更简单的 UI 和更大的应用目录
+- [Slack 和 Discord](./slack-discord.md) — 内置聊天通知，不需要 Make
 - [Webhooks（开发者参考）](/docs/developer/api/webhooks)

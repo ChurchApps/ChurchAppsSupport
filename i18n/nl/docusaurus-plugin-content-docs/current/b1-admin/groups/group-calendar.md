@@ -1,5 +1,6 @@
 ---
 title: "Groepsagenda"
+description: "Plan bijeenkomsten en terugkerende evenementen in de groepsagenda in B1 Admin en B1.church, met bulkplanning, RSVP's en agenda-abonnementen."
 ---
 
 # Groepsagenda

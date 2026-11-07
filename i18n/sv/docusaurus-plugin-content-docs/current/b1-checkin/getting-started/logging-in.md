@@ -1,5 +1,7 @@
 ---
-title: "Logga in"
+title: "Logga in i B1 Church Checkin"
+sidebar_label: "Logga in"
+description: "Logga in i B1 Church Checkin-kioskappen, välj din kyrka och förstå automatisk inloggning, admininställningar och utloggning på incheckningsplattan."
 ---
 
 # Logga in
@@ -63,7 +65,7 @@ Administratörsinställningarna är avsiktligt dolda så att församlingsmedlemm
 2. Om en kiosk-PIN-kod är angiven, ange PIN-koden när du uppmanas.
 3. Skärmen **Administratörsinställningar** öppnas med följande alternativ:
    - **Byt tjänst**: växla till en annan vald tjänsttid
-   - **Byt skrivare**: öppna [skrivarinställningarna](./printer-setup) för att söka efter och välja en skrivare
+   - **Byt skrivare**: öppna [skrivarinställningarna](./printer-setup.md) för att söka efter och välja en skrivare
    - **Ange/ändra PIN-kod**: ange eller uppdatera kiosk-PIN-koden som skyddar administratörsåtkomsten
    - **Logga ut**: logga ut och återgå till inloggningsskärmen
 
@@ -73,4 +75,4 @@ Att logga ut rensar alla sparade uppgifter och din valda församling. Du måste 
 
 ## Nästa steg
 
-När du är inloggad kan du [konfigurera en skrivare](./printer-setup) eller gå direkt till [incheckningsflödet](../check-in/).
+När du är inloggad kan du [konfigurera en skrivare](./printer-setup.md) eller gå direkt till [incheckningsflödet](../check-in/index.md).

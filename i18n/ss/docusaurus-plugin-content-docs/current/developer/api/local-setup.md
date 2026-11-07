@@ -1,5 +1,6 @@
 ---
 title: "Kuhlela I-API Endzaweni Yakho"
+description: "Setha i-ChurchApps API lapho: klona i-repo, lungiselela ema-database we-MySQL lasitfupha, cala i-schema, bese uqala i-dev server."
 ---
 
 # Kuhlela I-API Endzaweni Yakho
@@ -13,9 +14,9 @@ Lomhlahlandlela uyakuhambisa ekuhleleni i-ChurchApps API kutfutfuka endzaweni ya
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka **Node.js 22+**, **Git**, kanye ne-**MySQL 8.0+** -- buka [Prerequisites](../setup/prerequisites)
+- Faka **Node.js 22+**, **Git**, kanye ne-**MySQL 8.0+** -- buka [Prerequisites](../setup/prerequisites.md)
 - Akha umsebentisi we-MySQL lonelungelo lekwakha ema-database
-- Buyeketa i-[Environment Variables](../setup/environment-variables) yekuhlela i-API
+- Buyeketa i-[Environment Variables](../setup/environment-variables.md) yekuhlela i-API
 
 </div>
 
@@ -108,10 +109,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Loku kukuvumela kuhlola kushintjwa kwe-library kumelene ne-API ngaphandle kwekushicelela ku-npm. Buka [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) kuemininingwane -- futsi ungakaze wenze commit ye-portal resolution leyibhala i-link ku-`package.json`.
+Loku kukuvumela kuhlola kushintjwa kwe-library kumelene ne-API ngaphandle kwekushicelela ku-npm. Buka [Shared Libraries](../shared-libraries/index.md#local-development-against-a-consuming-app) kuemininingwane -- futsi ungakaze wenze commit ye-portal resolution leyibhala i-link ku-`package.json`.
 
 ## Emahlandla Lahlobene
 
-- **[Database](./database)** -- Kucondzisisa umumo we-database-nga-module ngayinye
-- **[Module Structure](./module-structure)** -- Kuhlelwa kwema-controller, ema-repository, kanye nema-model
-- **[Shared Libraries](../shared-libraries/)** -- Kusebenta ne-`@churchapps/helpers` kanye ne-`@churchapps/apihelper`
+- **[Database](./database.md)** -- Kucondzisisa umumo we-database-nga-module ngayinye
+- **[Module Structure](./module-structure.md)** -- Kuhlelwa kwema-controller, ema-repository, kanye nema-model
+- **[Shared Libraries](../shared-libraries/index.md)** -- Kusebenta ne-`@churchapps/helpers` kanye ne-`@churchapps/apihelper`

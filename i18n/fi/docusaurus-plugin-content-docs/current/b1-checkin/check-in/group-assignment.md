@@ -1,5 +1,6 @@
 ---
 title: "Ryhmien määrittäminen"
+description: "Valitse B1 Checkinissä kullekin jumalanpalveluksen ajalle ryhmä tai luokka perheenjäsenelle. Käytä luokkia, ikä- ja luokka-asteohjeita tai None-vaihtoehtoa."
 ---
 
 # Ryhmien määrittäminen
@@ -13,7 +14,7 @@ Kun napautat palvelunajan painiketta talouden tarkistusnäytöllä, sovellus ava
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Tarkista taloutesi](./household-review) talouden tarkistusnäytöllä
+- [Tarkista taloutesi](./household-review.md) talouden tarkistusnäytöllä
 - Laajenna jäsen, jonka haluat määrittää, ja napauta palvelunajan painiketta
 - Varmista, että seurakuntasi ylläpitäjä on [luonut ryhmät](../../b1-admin/groups/creating-groups.md) ja linkittänyt ne palveluaikoihin B1 Adminissa
 
@@ -34,7 +35,7 @@ Laajenna kategoria napauttamalla kategoriakorttia, niin näet siinä olevat yksi
 2. Tarkista kyseisen kategorian ryhmäluettelo. Jokaisen ryhmän nimen oikealla puolella on valintakuvake.
 3. Napauta haluamasi **ryhmän nimeä**.
 
-Sovellus tallentaa valintasi ja palaa [talouden tarkistusnäytölle](./household-review). Kyseisen jäsenen palvelunajan painikkeessa näkyy nyt valitsemasi ryhmän nimi.
+Sovellus tallentaa valintasi ja palaa [talouden tarkistusnäytölle](./household-review.md). Kyseisen jäsenen palvelunajan painikkeessa näkyy nyt valitsemasi ryhmän nimi.
 
 ## Ikä- ja luokka-asteohjeet
 
@@ -52,7 +53,7 @@ Käytä **Ei mitään** -vaihtoehtoa aikuisille, jotka osallistuvat pääjumalan
 
 Muuta jo tehty ryhmämääritys seuraavasti:
 
-1. Palaa [talouden tarkistusnäytölle](./household-review).
+1. Palaa [talouden tarkistusnäytölle](./household-review.md).
 2. Laajenna jäsen, jonka ryhmää haluat muuttaa.
 3. Napauta palvelunajan painiketta (siinä näkyy nyt nykyisin määritetyn ryhmän nimi).
 4. Valitse toinen ryhmä tai napauta **Ei mitään**.
@@ -63,8 +64,8 @@ Ryhmät ja kategoriat määrittää seurakuntasi ylläpitäjä B1 Adminissa. Jos
 
 ## Seuraavat vaiheet
 
-Kun olet määrittänyt ryhmät, palaa [talouden tarkistusnäytölle](./household-review) ja:
+Kun olet määrittänyt ryhmät, palaa [talouden tarkistusnäytölle](./household-review.md) ja:
 
 - Määritä ryhmät muille perheenjäsenille
-- [Lisää vieras](./adding-guests), jos joku tulee vierailulle perheesi kanssa
-- [Viimeistele sisäänkirjautuminen](./completing-checkin), kun kaikki määritykset ovat valmiit
+- [Lisää vieras](./adding-guests.md), jos joku tulee vierailulle perheesi kanssa
+- [Viimeistele sisäänkirjautuminen](./completing-checkin.md), kun kaikki määritykset ovat valmiit

@@ -1,5 +1,6 @@
 ---
 title: "Bezpieczeństwo przy zameldowaniu"
+description: "Configurați în B1 Admin siguranța copiilor: capacitatea sălilor, raportul voluntari-copii, persoane autorizate la ridicare și SMS-uri către părinți."
 ---
 
 Wait, I need to correct myself: the file I'm translating is into **Romanian**, not Polish. Here is the translation:
@@ -21,7 +22,7 @@ B1 include un set de controale de siguranță pentru copii la check-in: limite d
 
 - Configurează [structura de prezență](setup.md) și [chioșcurile de check-in](check-in.md)
 - Sălile sunt [grupuri](../groups/creating-groups.md) legate de orele serviciilor — setările de siguranță de mai jos se află la nivelul grupului
-- Pagina către părinte și difuzarea de urgență necesită un furnizor de mesaje text conectat ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) sau Mutual Ministry)
+- Pagina către părinte și difuzarea de urgență necesită un furnizor de mesaje text conectat ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) sau Mutual Ministry)
 
 </div>
 
@@ -96,12 +97,12 @@ Ambele funcții trimit mesaje text prin furnizorul de mesaje text conectat al bi
 
 Persoanele care s-au dezabonat de la mesajele text sau care nu au un număr de telefon mobil înregistrat sunt omise automat — chioșcul raportează câte mesaje au fost trimise și câte au fost omise.
 
-Pentru ghidul de pe partea chioșcului, vezi [Check-Out și siguranța copiilor](../../b1-checkin/check-in/checking-out).
+Pentru ghidul de pe partea chioșcului, vezi [Check-Out și siguranța copiilor](../../b1-checkin/check-in/checking-out.md).
 
 ## Articole conexe
 
 - [Check-In](check-in.md) — configurarea chioșcului și hardware-ul
-- [Check-Out și siguranța copiilor](../../b1-checkin/check-in/checking-out) — check-out-ul de la chioșc, verificarea ridicării și fluxurile de paginare
+- [Check-Out și siguranța copiilor](../../b1-checkin/check-in/checking-out.md) — check-out-ul de la chioșc, verificarea ridicării și fluxurile de paginare
 - [Crearea grupurilor](../groups/creating-groups.md) — unde se află setările sălilor
 - [Configurarea prezenței](setup.md) — servicii, orele serviciilor și alocarea sălilor
 - [Vârsta minimă pentru mesajele private](../settings/mobile-app.md#member-directory--messaging-settings) — blochează conversațiile private noi cu copiii, păstrându-i în director

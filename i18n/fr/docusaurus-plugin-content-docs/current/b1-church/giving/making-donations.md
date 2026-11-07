@@ -1,5 +1,7 @@
 ---
-title: "Faire un don"
+title: "Faire des dons dans le portail des membres B1.church"
+sidebar_label: "Faire un don"
+description: "Faites un don ponctuel ou récurrent à votre église via B1.church, avec ou sans compte, puis consultez votre historique de dons."
 ---
 
 # Faire un don

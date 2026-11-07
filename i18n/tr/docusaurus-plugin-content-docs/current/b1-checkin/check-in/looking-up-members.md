@@ -1,5 +1,6 @@
 ---
 title: "Üyeleri Arama"
+description: "B1 Checkin kiosk'unda telefon numarası hanelerini veya adı arayarak ailenizi bulun; ilk kez gelen bir ziyaretçiyseniz konuk olarak kaydolun."
 ---
 
 # Üyeleri Arama
@@ -13,7 +14,7 @@ Bir hizmet seçtikten sonra üye arama ekranına gelirsiniz. Bu ekranda check-in
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Hizmetler ekranından [bir hizmet seçin](./selecting-service)
+- Hizmetler ekranından [bir hizmet seçin](./selecting-service.md)
 - Hane halkınızın bir kilise yöneticisi tarafından [sisteme eklendiğinden](../../b1-admin/people/adding-people.md) emin olun
 
 </div>
@@ -45,7 +46,7 @@ Uygulama, yazdığınız adla eşleşen üyeleri arar.
 
 Arama sonuçları, arama alanının altında kartlar halinde görünür. Her kart kişinin **adını** ve (kayıtlıysa) **fotoğrafını** gösterir.
 
-Seçmek istediğiniz kişinin kartına dokunun. Uygulama, o kişinin hane halkındaki tüm üyeleri yükler ve sizi [hane halkı inceleme ekranına](./household-review) götürür.
+Seçmek istediğiniz kişinin kartına dokunun. Uygulama, o kişinin hane halkındaki tüm üyeleri yükler ve sizi [hane halkı inceleme ekranına](./household-review.md) götürür.
 
 :::tip
 Ailenizi bulmanın en hızlı yolu telefon numarasının son 4 hanesiyle arama yapmaktır. Daha hızlı bir check-in deneyimi için üyelere bu yöntemi kullanmalarını önerin.
@@ -60,7 +61,7 @@ Sonuç bulunamazsa uygulama bunu size bildiren bir mesaj gösterir. Girdiğiniz 
 Kilisenizde QR kodla misafir kaydı etkinse, arama ekranında aramanın altında **Misafir olarak kaydol** bağlantısı görünür. İlk kez gelen ziyaretçiler, check-in yapmadan önce ailelerini kilisenin sistemine eklemek için bu bağlantıyı kullanabilir.
 
 1. **Misafir olarak kaydol** düğmesine dokunun. Bir QR kodu ve "Misafir olarak kaydolmak için tarayın." mesajının yer aldığı bir pencere açılır.
-2. [Misafir kayıt formunu](../../b1-church/checkin/guest-registration) nasıl dolduracağınızı seçin:
+2. [Misafir kayıt formunu](../../b1-church/checkin/guest-registration.md) nasıl dolduracağınızı seçin:
    - **Telefonunuzda** -- QR kodu tarayın, formu telefonunuzda doldurun ve pencereyi kapatmak için **Tamam** düğmesine dokunun.
    - **Kioskta** -- Aynı formu doğrudan tablette açmak için **Burada kaydol** düğmesine dokunun. Formu doldurun ve **Kaydol** düğmesine, ardından arama ekranına dönmek için **Bitti** (veya geri oku) düğmesine dokunun.
 3. Kaydolduktan sonra check-in yapmak için ailenizi ad veya telefon numarasıyla arayın.
@@ -71,7 +72,7 @@ Kilisenizde QR kodla misafir kaydı etkinse, arama ekranında aramanın altında
 
 ## Telefonla Check-In Yapan Aileler İçin Etiket Yazdırma
 
-[B1 Church öz check-in](../../b1-church/checkin/self-checkin) üzerinden telefonlarında zaten check-in yapmış aileler, kendilerini aramadan kioskta isim etiketlerini yazdırabilir.
+[B1 Church öz check-in](../../b1-church/checkin/self-checkin.md) üzerinden telefonlarında zaten check-in yapmış aileler, kendilerini aramadan kioskta isim etiketlerini yazdırabilir.
 
 1. Arama ekranında **Kodu tara** düğmesine (QR kod simgesi) dokunun.
 2. Telefonunuzdaki QR kodu kameraya tutun. Uygulama kamera erişimi isterse **Kameraya İzin Ver** düğmesine dokunun. Varsayılan olarak ön kamera kullanılır; değiştirmek için çevirme düğmesine dokunun.
@@ -81,4 +82,4 @@ Kodu taramak yalnızca etiketleri yazdırır -- katılım, aile telefonlarından
 
 ## Sonraki Adım
 
-Bir kişiyi seçtikten sonra, [hane halkınızı inceleyecek](./household-review) ve grup atamalarını yöneteceksiniz.
+Bir kişiyi seçtikten sonra, [hane halkınızı inceleyecek](./household-review.md) ve grup atamalarını yöneteceksiniz.

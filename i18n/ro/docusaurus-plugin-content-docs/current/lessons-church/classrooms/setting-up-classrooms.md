@@ -1,5 +1,6 @@
 ---
 title: "Configurarea claselor"
+description: "Creați, redenumiți și ștergeți clase în portalul Lessons.church, ca fiecare sală sau grupă să fie gata pentru programarea săptămânală."
 ---
 
 # Configurarea claselor

@@ -1,5 +1,6 @@
 ---
 title: "Påmelding til arrangementer"
+description: "Svar Går, Kanskje eller Kommer ikke på gruppearrangementer i B1.church-medlemsportalen, og se hvor mange andre som kommer. Ledere kan også se svarene."
 ---
 
 # Påmelding til arrangementer
@@ -30,14 +31,14 @@ Svaret ditt gjelder for det bestemte arrangementet – for et ukentlig møte sva
 ## For gruppeledere
 
 - **Se svar** – Ledere ser en lenke **Vis svar** på hvert arrangement i gruppens kalender (**Alle arrangementer**). Den åpner arket **Svar** som lister alle etter svar – Kommer, Kanskje og Kommer ikke. Hvis ingen har svart ennå, vises «Ingen svar ennå.»
-- **Slå svar (RSVP) på eller av** – Når du oppretter eller redigerer et arrangement, bruk bryteren **Tillat svar (RSVP)**. Arrangementer med svar slått av viser ingen svarknapper. Ansatte som oppretter arrangementer i bulk fra B1 Admin har det samme alternativet – se [Gruppekalender](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Slå svar (RSVP) på eller av** – Når du oppretter eller redigerer et arrangement, bruk bryteren **Tillat svar (RSVP)**. Arrangementer med svar slått av viser ingen svarknapper. Ansatte som oppretter arrangementer i bulk fra B1 Admin har det samme alternativet – se [Gruppekalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Svar (RSVP) er en enkel deltakertelling. Hvis arrangementet ditt trenger påmeldingsdetaljer, kapasitetsstyring eller betaling, bruk [arrangementspåmelding](../events/registering) i stedet.
+Svar (RSVP) er en enkel deltakertelling. Hvis arrangementet ditt trenger påmeldingsdetaljer, kapasitetsstyring eller betaling, bruk [arrangementspåmelding](../events/registering.md) i stedet.
 :::
 
 ## Relaterte artikler
 
 - [Gruppedetaljer](./group-details.md) – Alt på gruppens detaljside
-- [Gruppekalender (B1 Admin)](../../b1-admin/groups/group-calendar) – Slik administrerer ansatte og ledere gruppearrangementer og svar
-- [Melde seg på arrangementer](../events/registering) – Full arrangementspåmelding med kapasitet og betaling
+- [Gruppekalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) – Slik administrerer ansatte og ledere gruppearrangementer og svar
+- [Melde seg på arrangementer](../events/registering.md) – Full arrangementspåmelding med kapasitet og betaling

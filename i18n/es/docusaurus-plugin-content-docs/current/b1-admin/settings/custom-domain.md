@@ -1,5 +1,6 @@
 ---
 title: "Dominio personalizado"
+description: "Apunta tu propio dominio, como www.tuiglesia.org, a tu sitio de B1 en B1 Admin configurando los registros DNS y agregando el dominio en Configuración."
 ---
 
 # Dominio personalizado

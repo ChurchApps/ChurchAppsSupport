@@ -1,5 +1,7 @@
 ---
-title: "Registrierung für Veranstaltungen"
+title: "Regisztráció eseményekre a B1 Mobile alkalmazásban"
+sidebar_label: "Registrierung für Veranstaltungen"
+description: "Jelentkezz magadat és családtagjaidat gyülekezeti eseményekre a B1 Mobile alkalmazásból, nézd meg a fennmaradó férőhelyeket, és erősítsd meg jelentkezésedet három lépésben."
 ---
 
 Wait, I need to correct myself: the target language is Hungarian, not German. Here is the translation into Hungarian:
@@ -19,7 +21,7 @@ Regisztrálhatsz egyházi eseményekre közvetlenül a B1 Mobile alkalmazásból
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing) és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md) és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 - Az eseményhez engedélyezni kell a regisztrációt, és a regisztrációs időszaknak nyitva kell lennie
 
 </div>
@@ -56,4 +58,4 @@ Ha le szeretnéd mondani a regisztrációdat, lépj kapcsolatba az egyház admin
 ## Kapcsolódó cikkek
 
 - [Események áttekintése](./index.md) -- Regisztrációval rendelkező események böngészése mobilon
-- [Beosztások megtekintése](../serving/viewing-plans) -- A szolgálati beosztásod megtekintése
+- [Beosztások megtekintése](../serving/viewing-plans.md) -- A szolgálati beosztásod megtekintése

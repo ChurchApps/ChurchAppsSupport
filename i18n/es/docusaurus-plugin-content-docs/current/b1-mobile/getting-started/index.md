@@ -1,5 +1,7 @@
 ---
-title: "Empezando"
+title: "Primeros pasos con B1 Mobile (obsoleta)"
+sidebar_label: "Empezando"
+description: "Configure B1 Mobile en su teléfono: encuentre la aplicación, inicie sesión con su cuenta de ChurchApps y elija su iglesia. Tenga en cuenta que B1 Mobile está obsoleta en favor de la PWA."
 ---
 
 # Empezando
@@ -25,10 +27,10 @@ Eso es todo. Una vez que hayas seleccionado tu iglesia, la aplicación carga la 
 
 ## En Esta Sección
 
-- [Installing the App](./installing) -- Dónde descargar B1 Mobile y requisitos del dispositivo.
-- [Logging In](./logging-in) -- Cómo iniciar sesión o crear una nueva cuenta.
-- [Switching Churches](./switching-churches) -- Cómo cambiar entre iglesias si perteneces a más de una.
+- [Installing the App](./installing.md) -- Dónde descargar B1 Mobile y requisitos del dispositivo.
+- [Logging In](./logging-in.md) -- Cómo iniciar sesión o crear una nueva cuenta.
+- [Switching Churches](./switching-churches.md) -- Cómo cambiar entre iglesias si perteneces a más de una.
 
 :::tip
-B1 Mobile usa la misma cuenta de ChurchApps que todos los otros productos de ChurchApps. Si ya tienes una cuenta de [B1.church](../../b1-church/), B1 Admin o Lessons.church, puedes usar esas mismas credenciales para iniciar sesión.
+B1 Mobile usa la misma cuenta de ChurchApps que todos los otros productos de ChurchApps. Si ya tienes una cuenta de [B1.church](../../b1-church/index.md), B1 Admin o Lessons.church, puedes usar esas mismas credenciales para iniciar sesión.
 :::

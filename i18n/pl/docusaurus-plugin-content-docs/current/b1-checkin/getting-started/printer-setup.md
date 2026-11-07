@@ -1,5 +1,6 @@
 ---
 title: "Konfiguracja drukarki"
+description: "Skonfiguruj sieciową drukarkę etykiet dla kiosków B1 Checkin: znajdź ją w sieci Wi-Fi, wybierz, wykonaj wydruk testowy i zapisz wybór."
 ---
 
 # Konfiguracja drukarki
@@ -13,7 +14,7 @@ B1 Church Checkin może drukować etykiety z imionami i kwitki odbioru dziecka n
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zaloguj się](./logging-in) do aplikacji B1 Church Checkin i wybierz swój kościół
+- [Zaloguj się](./logging-in.md) do aplikacji B1 Church Checkin i wybierz swój kościół
 - Podłącz zgodną sieciową drukarkę etykiet do tej samej sieci Wi-Fi, co tablet
 
 </div>
@@ -87,4 +88,4 @@ Jeśli przeniesiesz kiosk w inne miejsce lub zmienisz konfigurację sieci, wró�
 
 ## Następne kroki
 
-Po skonfigurowaniu drukarki możesz rozpocząć meldowanie. Aby poznać pełny proces, zobacz [przebieg meldowania](../check-in/), zaczynając od [wyboru nabożeństwa](../check-in/selecting-service).
+Po skonfigurowaniu drukarki możesz rozpocząć meldowanie. Aby poznać pełny proces, zobacz [przebieg meldowania](../check-in/index.md), zaczynając od [wyboru nabożeństwa](../check-in/selecting-service.md).

@@ -1,5 +1,6 @@
 ---
 title: "API-avaimet"
+description: "Luo, rajaa ja peruuta B1-API-avaimia B1 Adminissa palvelinskripteille sekä Zapier-, Make- tai Google Sheets -liittimille ilman täyttä OAuth-prosessia."
 ---
 
 # API-avaimet
@@ -104,7 +105,7 @@ Peruttu avain lakkaa toimimasta heti. Siinä ei ole armonaikaa.
 
 ## Ero OAuthiin
 
-API-avaimet sopivat, kun **seurakuntasi on ainoa, joka käyttää integraatiota**. Liitännäiselle, joka tarvitsee pääsyn moniin seurakuntiin kunkin seurakunnan nimenomaisella suostumuksella, kuten B1-yhteisön yhteiseen SaaS-sovellukseen, käytä sen sijaan [OAuth ja yhdistetyt sovellukset](./connected-apps) -ohjetta.
+API-avaimet sopivat, kun **seurakuntasi on ainoa, joka käyttää integraatiota**. Liitännäiselle, joka tarvitsee pääsyn moniin seurakuntiin kunkin seurakunnan nimenomaisella suostumuksella, kuten B1-yhteisön yhteiseen SaaS-sovellukseen, käytä sen sijaan [OAuth ja yhdistetyt sovellukset](./connected-apps.md) -ohjetta.
 
 | | API-avain | OAuth |
 |---|---|---|

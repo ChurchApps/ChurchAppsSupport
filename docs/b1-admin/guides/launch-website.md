@@ -1,5 +1,6 @@
 ---
 title: "Guide: Launch Your Church Website"
+description: "Set up a church website in B1 Admin: build your home page, match colors and logo, add key pages, connect a custom domain, and add giving forms."
 ---
 
 # Launch Your Church Website

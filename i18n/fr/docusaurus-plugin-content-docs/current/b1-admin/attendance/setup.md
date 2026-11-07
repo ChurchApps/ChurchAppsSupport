@@ -1,5 +1,6 @@
 ---
 title: "Configuration des présences"
+description: "Configurez les campus, les services, les horaires et les affectations de groupes dans B1 Admin pour que le suivi de présence et les horaires d'enregistrement fonctionnent dans toute votre église."
 ---
 
 # Configuration des présences

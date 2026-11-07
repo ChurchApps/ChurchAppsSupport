@@ -1,5 +1,6 @@
 ---
 title: "Tilin luominen"
+description: "Rekisteröi ChurchApps-tili B1.churchissa, vahvista sähköpostiosoite ja luo tai liity seurakuntaan, jotta voit aloittaa B1 Adminin määrittämisen."
 ---
 
 # Tilin luominen

@@ -1,5 +1,6 @@
 ---
 title: "Dokončení odbavení"
+description: "Dokončete check-in rodiny na kiosku v B1 Checkin: limity místností, tisk štítků, bezpečnostní kódy pro vyzvednutí a co aplikace udělá dál."
 ---
 
 # Dokončení odbavení
@@ -13,9 +14,9 @@ Jakmile zkontrolujete svou domácnost a případně přiřadíte skupiny, jste p
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Zkontrolujte svou domácnost](./household-review) na obrazovce kontroly domácnosti
-- [Přiřaďte skupiny](./group-assignment) všem členům rodiny, kteří se mají odbavit do konkrétní třídy nebo programu
-- Volitelně [přidejte hosty](./adding-guests), kteří přicházejí s vaší rodinou
+- [Zkontrolujte svou domácnost](./household-review.md) na obrazovce kontroly domácnosti
+- [Přiřaďte skupiny](./group-assignment.md) všem členům rodiny, kteří se mají odbavit do konkrétní třídy nebo programu
+- Volitelně [přidejte hosty](./adding-guests.md), kteří přicházejí s vaší rodinou
 
 </div>
 
@@ -28,10 +29,10 @@ To je vše. Docházka vaší rodiny byla zaznamenána.
 
 ## Plné místnosti a poměry dobrovolníků
 
-Pokud váš sbor nastavil [bezpečnostní limity](../../b1-admin/attendance/checkin-safety) pro své místnosti, server je před uložením zkontroluje:
+Pokud váš sbor nastavil [bezpečnostní limity](../../b1-admin/attendance/checkin-safety.md) pro své místnosti, server je před uložením zkontroluje:
 
 - Pokud je vybraná místnost **plná nebo uzavřená**, odbavení neproběhne a aplikace místnost pojmenuje, abyste mohli vybrat jinou.
-- Pokud má časový termín bohoslužby [harmonogram odbavení](../../b1-admin/attendance/setup#setting-a-check-in-schedule) a jeho okno pro odbavení právě není otevřené, odbavení do místností tohoto časového termínu je také odmítnuto. Obrazovka **Can't check in yet** uvádí místnost s důvodem „odbavení právě není otevřeno“. Klepnutím na **Change Rooms** vyberete jiný časový termín nebo skupinu. (Časové termíny, které jsou již uzavřeny, se na [obrazovce domácnosti](./household-review) zobrazují jako **Closed** a nelze je vybrat, takže tuto situaci uvidíte obvykle jen tehdy, pokud okno skončí během odbavování.)
+- Pokud má časový termín bohoslužby [harmonogram odbavení](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho okno pro odbavení právě není otevřené, odbavení do místností tohoto časového termínu je také odmítnuto. Obrazovka **Can't check in yet** uvádí místnost s důvodem „odbavení právě není otevřeno“. Klepnutím na **Change Rooms** vyberete jiný časový termín nebo skupinu. (Časové termíny, které jsou již uzavřeny, se na [obrazovce domácnosti](./household-review.md) zobrazují jako **Closed** a nelze je vybrat, takže tuto situaci uvidíte obvykle jen tehdy, pokud okno skončí během odbavování.)
 - Domácnost, která se odbavila na dřívější časový termín, se může vrátit později a přidat otevřený časový termín, i poté, co dřívější okno skončilo. Jejich stávající odbavení zůstanou zachována a nezpůsobí odmítnutí nového odbavení.
 - Pokud dětská místnost **nemá dostatek dobrovolníků** podle svého poměru, aplikace buď zobrazí upozornění, které může člen personálu potvrdit a pokračovat, nebo odbavení zcela zablokuje. Záleží na tom, jak váš sbor nastavil vynucování poměrů.
 
@@ -49,7 +50,7 @@ Stejný bezpečnostní kód se objeví na jmenovce dítěte i na lístku pro vyz
 Bezpečnostní kód se vygeneruje znovu pro každé odbavení a používá pouze souhlásky a číslice. Samohlásky jsou vynechány, aby nevznikala nevhodná slova.
 
 :::warning
-Pokud se štítky netisknou, otevřete nastavení správce klepnutím na **logo sboru** sedmkrát a poté klepněte na **Change Printer**, abyste ověřili připojení tiskárny. Postup při řešení problémů najdete v části [Nastavení tiskárny](../getting-started/printer-setup).
+Pokud se štítky netisknou, otevřete nastavení správce klepnutím na **logo sboru** sedmkrát a poté klepněte na **Change Printer**, abyste ověřili připojení tiskárny. Postup při řešení problémů najdete v části [Nastavení tiskárny](../getting-started/printer-setup.md).
 :::
 
 ## Co se stane po odbavení

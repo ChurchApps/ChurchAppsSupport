@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Conectați donațiile, persoanele noi și răspunsurile de formular din Subsplash la B1 prin Zapier, ca darurile și profilurile să ajungă automat în B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Activează Zap-ul. Donațiile viitoare din Subsplash ajung în **B1Admin → Don
 
 ## Vezi și
 
-- [Donorbox](./donorbox): aceeași structură de scenarii, pe o altă platformă de donații
-- [Zapier (prezentare generală)](../zapier): partea B1 a fiecărui scenariu Zapier
+- [Donorbox](./donorbox.md): aceeași structură de scenarii, pe o altă platformă de donații
+- [Zapier (prezentare generală)](../zapier.md): partea B1 a fiecărui scenariu Zapier
 - [Ghidul de integrare Zapier al Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (documentația Subsplash)

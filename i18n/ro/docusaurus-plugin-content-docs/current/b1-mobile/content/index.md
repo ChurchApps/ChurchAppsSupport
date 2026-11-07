@@ -1,5 +1,7 @@
 ---
-title: "Conținut"
+title: "Funcții de conținut în aplicația B1 Mobile"
+sidebar_label: "Conținut"
+description: "Găsiți predici, transmisiuni live, citirea Bibliei și Versetul zilei în aplicația B1 Mobile și vedeți ce funcții de conținut a activat biserica dvs."
 ---
 
 # Conținut
@@ -30,20 +32,20 @@ Vizualizează o imagine cu un verset biblic frumos formatat, care se schimbă î
 
 ### Lecții (depreciat)
 
-Ecranul Lecții integrat a fost înlocuit cu **[FreePlay](/docs/freeplay/)** pentru redarea în sala de clasă și cu vizitarea directă a [Lessons.church](https://lessons.church) pentru răsfoire. Consultă [pagina de referință pentru Lecții](./lessons) pentru detalii.
+Ecranul Lecții integrat a fost înlocuit cu **[FreePlay](/docs/freeplay/)** pentru redarea în sala de clasă și cu vizitarea directă a [Lessons.church](https://lessons.church) pentru răsfoire. Consultă [pagina de referință pentru Lecții](./lessons.md) pentru detalii.
 
 ## Găsirea conținutului
 
 Funcționalitățile de conținut sunt disponibile din meniul lateral al aplicației. Administratorul bisericii tale decide ce funcționalități de conținut sunt activate, așa că s-ar putea să nu vezi toate opțiunile enumerate mai sus. Dacă o anumită funcționalitate lipsește, este posibil ca biserica ta să nu o fi configurat încă.
 
 :::info
-Funcționalitățile de conținut sunt configurate de administratorul bisericii tale prin [B1 Admin](../../b1-admin/). Dacă nu vezi o funcționalitate pe care o aștepți, contactează biroul bisericii tale.
+Funcționalitățile de conținut sunt configurate de administratorul bisericii tale prin [B1 Admin](../../b1-admin/index.md). Dacă nu vezi o funcționalitate pe care o aștepți, contactează biroul bisericii tale.
 :::
 
 ## Pașii următori
 
-- [Predici](./sermons) -- Răsfoiește și urmărește predicile înregistrate
-- [Transmisiuni live](./live-streaming) -- Urmărește transmisiunile live
-- [Biblia](./bible) -- Citește Scriptura în cititorul integrat
-- [Versetul zilei](./verse-of-the-day) -- Vezi versetul zilnic de astăzi
+- [Predici](./sermons.md) -- Răsfoiește și urmărește predicile înregistrate
+- [Transmisiuni live](./live-streaming.md) -- Urmărește transmisiunile live
+- [Biblia](./bible.md) -- Citește Scriptura în cititorul integrat
+- [Versetul zilei](./verse-of-the-day.md) -- Vezi versetul zilnic de astăzi
 - [FreePlay](/docs/freeplay/) -- Redă lecții pe televizoarele din clasă (înlocuiește ecranul Lecții din aplicație, depreciat)

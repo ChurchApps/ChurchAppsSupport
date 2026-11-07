@@ -1,5 +1,6 @@
 ---
 title: "Wybór trybu parowania"
+description: "Izberi pravi način povezave FreePlay TV: koledar iz FreePlay Admin, načrt bogoslužja iz B1 Admin ali brez povezave."
 ---
 
 Ten plik jest w języku polskim. Ta sekcja wymaga przetłumaczenia na słoweński — poniżej tłumaczenie właściwe.
@@ -38,7 +39,7 @@ Kodo vnesite v **FreePlay Admin** na naslovu [admin.freeplay.church](https://adm
 
 **Najprimernejše za:** Oznake v preddverju in na hodnikih, zanke z obvestili ter učilnice, kjer se mora lekcija že predvajati, ko ljudje vstopijo.
 
-Za celoten vodnik glejte **[Načrtovani način](../scheduled-mode/)**.
+Za celoten vodnik glejte **[Načrtovani način](../scheduled-mode/index.md)**.
 
 ## Način načrta (B1 Admin)
 
@@ -48,7 +49,7 @@ Kodo vnesite v **B1 Admin**, kadar želite, da televizor sledi tipu načrta bogo
 
 **Najprimernejše za:** Televizorje, ki prikazujejo vsebino, povezano s tedenskim načrtom bogoslužja, kjer nekdo predvajanje zažene, ko pride čas zanj.
 
-Za celoten vodnik glejte **[Način načrta](../plan-mode/)**.
+Za celoten vodnik glejte **[Način načrta](../plan-mode/index.md)**.
 
 :::tip
 Trenutni načrt bogoslužja lahko predvajate tudi po urniku. V FreePlay Admin dodajte vnos v koledar in pod **Načrti bogoslužja** izberite tip načrta.
@@ -56,7 +57,7 @@ Trenutni načrt bogoslužja lahko predvajate tudi po urniku. V FreePlay Admin do
 
 ## Ponudniki vsebine (brez seznanjanja)
 
-Če televizorja sploh ne potrebujete seznaniti, lahko brskate po ponudnikih vsebine neposredno. Ponudniki, kot sta [Lessons.church](../../lessons-church/) in Bible Project, imajo vsebino, ki jo lahko prenesete in predvajate kadarkoli želite.
+Če televizorja sploh ne potrebujete seznaniti, lahko brskate po ponudnikih vsebine neposredno. Ponudniki, kot sta [Lessons.church](../../lessons-church/index.md) in Bible Project, imajo vsebino, ki jo lahko prenesete in predvajate kadarkoli želite.
 
 **Najprimernejše za:** Televizorje, kjer prostovoljci vsak teden izberejo, kaj naj se predvaja, ali kadar želite raziskati, kaj je na voljo.
 
@@ -66,6 +67,6 @@ Zaslon **Ponudniki** lahko kadarkoli odprete prek **Nastavitve** na dnu stranske
 
 ## Sorodni članki
 
-- **[Načrtovani način](../scheduled-mode/)** - Postavite televizorje v koledar s FreePlay Admin
-- **[Način načrta](../plan-mode/)** - Celoten vodnik za seznanjanje z načrtom bogoslužja
-- **[Ponudniki vsebine](../content-providers/)** - Brskajte in prenašajte vsebino iz zunanjih virov
+- **[Načrtovani način](../scheduled-mode/index.md)** - Postavite televizorje v koledar s FreePlay Admin
+- **[Način načrta](../plan-mode/index.md)** - Celoten vodnik za seznanjanje z načrtom bogoslužja
+- **[Ponudniki vsebine](../content-providers/index.md)** - Brskajte in prenašajte vsebino iz zunanjih virov

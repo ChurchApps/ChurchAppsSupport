@@ -1,5 +1,6 @@
 ---
 title: "Kopfzahl Erfassung & Trend"
+description: "Erfassen Sie in B1 Admin eine Gesamtzahl der Teilnehmenden für einen Gottesdienst oder eine Gruppe ohne namentliche Liste und verfolgen Sie die Werte wöchentlich im Bericht Besucherzahl-Trend."
 ---
 
 # Kopfzahl Erfassung & Trend

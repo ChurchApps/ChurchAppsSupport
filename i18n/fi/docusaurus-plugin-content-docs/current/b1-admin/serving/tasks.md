@@ -1,5 +1,6 @@
 ---
 title: "Tehtävät"
+description: "Luo, delegoi ja sulje tehtäviä B1 Adminissa, löydä ne kohdasta Serving > My Work ja aseta eräpäivämuistutukset, ettei seurantakohteita unohdu."
 ---
 
 # Tehtävät

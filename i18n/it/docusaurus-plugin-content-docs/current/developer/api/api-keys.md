@@ -1,5 +1,6 @@
 ---
 title: "Chiavi API"
+description: "Crea, limita e revoca le chiavi API B1 in B1 Admin per script server e connettori Zapier, Make o Google Sheets, senza un flusso OAuth completo."
 ---
 
 # Chiavi API
@@ -104,7 +105,7 @@ Una chiave revocata viene eliminata immediatamente — non c'è alcun periodo di
 
 ## Differenze rispetto a OAuth
 
-Le chiavi API sono appropriate quando **la tua chiesa è l'unica a usare l'integrazione**. Per un connettore che deve accedere a molte chiese, ciascuna con il proprio consenso esplicito — come un'app SaaS condivisa nella comunità B1 — usa invece [OAuth e App connesse](./connected-apps).
+Le chiavi API sono appropriate quando **la tua chiesa è l'unica a usare l'integrazione**. Per un connettore che deve accedere a molte chiese, ciascuna con il proprio consenso esplicito — come un'app SaaS condivisa nella comunità B1 — usa invece [OAuth e App connesse](./connected-apps.md).
 
 | | Chiave API | OAuth |
 |---|---|---|

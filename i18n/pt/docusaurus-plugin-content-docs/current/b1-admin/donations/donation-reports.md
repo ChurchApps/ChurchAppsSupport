@@ -1,5 +1,6 @@
 ---
 title: "Relatórios de doações"
+description: "Analise totais de doações, doadores inativos e detalhes por lote no B1 Admin com o painel Resumo de Doações, a visão de Doadores Inativos e exportações CSV."
 ---
 
 # Relatórios de doações

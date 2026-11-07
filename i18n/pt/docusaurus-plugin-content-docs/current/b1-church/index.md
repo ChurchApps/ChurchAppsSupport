@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Saiba o que o site do B1.church da sua igreja oferece aos membros, do portal e grupos a doações, eventos, voluntariado e check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Quando os membros visitam o seu site B1.church, veem o site público da sua igre
 
 ## Saiba mais
 
-- [Primeiros passos](./getting-started/) -- Crie sua conta, entre e aprenda a navegar pelo B1.church.
-- [Grupos](./groups/) -- Participe dos grupos da sua igreja.
-- [Doações](./giving/) -- Faça doações e gerencie as suas ofertas.
-- [Eventos](./events/) -- Veja os próximos eventos da igreja e inscreva-se neles.
-- [Atendimento](./serving/) -- Veja os planos e inscreva-se para posições de voluntariado.
-- [Planos](./plans/) -- Veja os planos de culto e as suas posições de voluntário.
-- [Check-in](./checkin/) -- Faça check-in em cultos e eventos e cadastre visitantes.
-- [Diretório da comunidade](./community/) -- Encontre e conecte-se com outros membros.
-- [Conteúdo](./content/) -- Sermões, Bíblia, versículo do dia e transmissões ao vivo. (A reprodução de lições foi transferida para o [FreePlay](/docs/freeplay/).)
+- [Primeiros passos](./getting-started/index.md) -- Crie sua conta, entre e aprenda a navegar pelo B1.church.
+- [Grupos](./groups/index.md) -- Participe dos grupos da sua igreja.
+- [Doações](./giving/index.md) -- Faça doações e gerencie as suas ofertas.
+- [Eventos](./events/index.md) -- Veja os próximos eventos da igreja e inscreva-se neles.
+- [Atendimento](./serving/index.md) -- Veja os planos e inscreva-se para posições de voluntariado.
+- [Planos](./plans/index.md) -- Veja os planos de culto e as suas posições de voluntário.
+- [Check-in](./checkin/index.md) -- Faça check-in em cultos e eventos e cadastre visitantes.
+- [Diretório da comunidade](./community/index.md) -- Encontre e conecte-se com outros membros.
+- [Conteúdo](./content/index.md) -- Sermões, Bíblia, versículo do dia e transmissões ao vivo. (A reprodução de lições foi transferida para o [FreePlay](/docs/freeplay/).)
 
 :::info
 O B1.church é totalmente gratuito para igrejas e membros. O administrador da sua igreja configura e personaliza o site pelo B1 Admin. Como membro, basta acessar o endereço B1.church da sua igreja para começar.

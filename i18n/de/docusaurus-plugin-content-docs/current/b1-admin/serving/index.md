@@ -1,5 +1,7 @@
 ---
-title: "Dienst"
+title: "Serving-Übersicht in B1 Admin"
+sidebar_label: "Dienst"
+description: "Ehrenamtliche koordinieren und Gottesdienste planen im Bereich Serving von B1 Admin: Dienstbereiche, Teams, Ablaufpläne, Lieder und Aufgaben."
 ---
 
 # Dienst

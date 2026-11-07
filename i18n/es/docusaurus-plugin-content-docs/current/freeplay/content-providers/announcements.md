@@ -1,5 +1,6 @@
 ---
 title: "Anuncios"
+description: "Reproduce en bucle una carpeta de diapositivas en FreePlay TV para anuncios antes de clase: elige la carpeta, mantenla sincronizada y apágala al terminar."
 ---
 
 # Anuncios
@@ -13,7 +14,7 @@ FreePlay puede reproducir en bucle una carpeta de diapositivas de anuncios en su
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Conecte un proveedor de contenido](./connecting-providers) que tenga sus diapositivas de anuncios, como Dropbox u OneDrive
+- [Conecte un proveedor de contenido](./connecting-providers.md) que tenga sus diapositivas de anuncios, como Dropbox u OneDrive
 - Coloque las imágenes o los videos que desea reproducir en bucle en una sola carpeta de ese proveedor
 
 </div>
@@ -37,7 +38,7 @@ Una vez descargadas las diapositivas, aparece un elemento **Anuncios** cerca de 
 - Después de la última diapositiva, el bucle vuelve a empezar desde la primera
 - Si la carpeta tiene un único video, se repite en el mismo lugar
 
-El bucle se reproduce desde los archivos guardados en el dispositivo, así que sigue funcionando sin conexión a internet. Puede usar los mismos controles remotos que con cualquier otro contenido; consulte [Reproducir contenido](./playing-content).
+El bucle se reproduce desde los archivos guardados en el dispositivo, así que sigue funcionando sin conexión a internet. Puede usar los mismos controles remotos que con cualquier otro contenido; consulte [Reproducir contenido](./playing-content.md).
 
 ## Actualizar las diapositivas
 
@@ -61,6 +62,6 @@ Desconectar el proveedor también desactiva los anuncios que provenían de él.
 
 ## Artículos relacionados
 
-- **[Conectar proveedores](./connecting-providers)**: conecte el proveedor que tiene sus diapositivas
-- **[Explorar y descargar contenido](./browsing-content)**: explore las carpetas de un proveedor y reproduzca contenido bajo demanda
-- **[Reproducir contenido](./playing-content)**: controles del reproductor con el control remoto de su TV
+- **[Conectar proveedores](./connecting-providers.md)**: conecte el proveedor que tiene sus diapositivas
+- **[Explorar y descargar contenido](./browsing-content.md)**: explore las carpetas de un proveedor y reproduzca contenido bajo demanda
+- **[Reproducir contenido](./playing-content.md)**: controles del reproductor con el control remoto de su TV

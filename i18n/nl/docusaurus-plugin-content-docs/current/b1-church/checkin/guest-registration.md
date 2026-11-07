@@ -1,5 +1,6 @@
 ---
 title: "Gastregistratie"
+description: "Registreer jezelf en je gezin als eerste gasten via het QR-formulier in B1 Checkin, zodat vrijwilligers je bij aankomst kunnen inchecken."
 ---
 
 # Gastregistratie
@@ -42,7 +43,7 @@ Uw registratie maakt records in de kerkendatabase:
 
 - Een **huishouden** wordt gemaakt met de achternaam van de primaire contactpersoon.
 - **Persoonrecords** worden gemaakt voor elk gezinslid met de lidmaatschapsstatus "Gast".
-- Een kerkmedewerker of beheerder kan uw familie vervolgens aanmelden met behulp van de [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kiosk.
+- Een kerkmedewerker of beheerder kan uw familie vervolgens aanmelden met behulp van de [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kiosk.
 
 :::info
 Als uw e-mailadres overeenkomt met een bestaande record in de kerkendatabase, wordt het systeem aan die record gekoppeld in plaats van een duplicaat te maken. Dit houdt de gegevens van de kerk schoon.
@@ -54,5 +55,5 @@ Het verstrekken van uw e-mailadres helpt de kerk u na uw bezoek op te volgen. He
 
 ## Gerelateerde artikelen
 
-- [Zelf aanmelden](./self-checkin) -- Meld jezelf aan na registratie
-- [Gasten toevoegen (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Hoe vrijwilligers gasten op de kiosk toevoegen
+- [Zelf aanmelden](./self-checkin.md) -- Meld jezelf aan na registratie
+- [Gasten toevoegen (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Hoe vrijwilligers gasten op de kiosk toevoegen

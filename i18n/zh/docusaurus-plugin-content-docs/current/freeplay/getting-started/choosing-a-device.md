@@ -1,5 +1,6 @@
 ---
 title: "选择设备"
+description: "为教室电视挑选合适的 FreePlay 设备：从 Fire TV Stick 和 Onn 盒子到 Apple TV，并说明哪些设备不建议选择。"
 ---
 
 # 为 FreePlay 选择设备

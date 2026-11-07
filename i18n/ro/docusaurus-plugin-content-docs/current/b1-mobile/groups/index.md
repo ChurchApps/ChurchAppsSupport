@@ -1,5 +1,7 @@
 ---
-title: "Grupuri"
+title: "Ecranul Grupuri în B1 Mobile"
+sidebar_label: "Grupuri"
+description: "Găsiți grupurile din care faceți parte în ecranul Grupuri din B1 Mobile, inclusiv grupul cel mai vizitat în partea de sus și restul grupurilor bisericii dedesubt."
 ---
 
 # Grupuri
@@ -30,10 +32,10 @@ Iată ce poți face din ecranul Grupuri:
 - **Rămâi conectat** -- Vezi ce împărtășesc membrii grupului tău, ține pasul cu conversațiile și interacționează cu conținutul grupului.
 
 :::tip
-Ecranul Grupuri se adaptează la modul tău de utilizare, la fel ca [panoul principal](../dashboard/). Grupurile pe care le vizitezi cel mai des sunt promovate în partea de sus, pentru acces rapid.
+Ecranul Grupuri se adaptează la modul tău de utilizare, la fel ca [panoul principal](../dashboard/index.md). Grupurile pe care le vizitezi cel mai des sunt promovate în partea de sus, pentru acces rapid.
 :::
 
 ## Pașii următori
 
-- [Detaliile grupului](./group-details) -- Vezi ce conține pagina de detalii a unui grup
-- [Cronologia grupului](./group-timeline) -- Află mai multe despre fluxul unificat de activitate din grupurile tale
+- [Detaliile grupului](./group-details.md) -- Vezi ce conține pagina de detalii a unui grup
+- [Cronologia grupului](./group-timeline.md) -- Află mai multe despre fluxul unificat de activitate din grupurile tale

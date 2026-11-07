@@ -1,5 +1,6 @@
 ---
 title: "Valg af en paringsmodus"
+description: "Vælg den rigtige måde at parre et FreePlay TV på: en kalender fra FreePlay Admin, en gudstjenesteplan fra B1 Admin eller slet ingen parring."
 ---
 
 # Valg af en paringsmodus
@@ -40,7 +41,7 @@ Vælg **Par til plan**, når du ønsker at følge en kirkestjeneste plan. Denne 
 
 ## Indholdsudbydere
 
-Hvis du ikke har brug for at pare til et klasseværelse eller plan, kan du gennemse indholdsudbydere direkte. Udbydere som [Lessons.church](../../lessons-church/) og Bible Project tilbyder indhold, som du kan downloade og afspille efter behov.
+Hvis du ikke har brug for at pare til et klasseværelse eller plan, kan du gennemse indholdsudbydere direkte. Udbydere som [Lessons.church](../../lessons-church/index.md) og Bible Project tilbyder indhold, som du kan downloade og afspille efter behov.
 
 **Bedst til:** TV'er, hvor frivillige manuelt vælger, hvad de skal afspille hver uge, eller når du ønsker at udforske tilgængeligt indhold.
 
@@ -50,6 +51,6 @@ Du kan få adgang til skærmen **Udbydere** til enhver tid fra sidelinjen neders
 
 ## Relaterede artikler
 
-- **[Klasseværelses-tilstand](../scheduled-mode/)** - Fuld vejledning til parring med et klasseværelse
-- **[Plan-tilstand](../plan-mode/)** - Fuld vejledning til parring med en serviceplah
-- **[Indholdsudbydere](../content-providers/)** - Gennemse og download indhold fra eksterne kilder
+- **[Klasseværelses-tilstand](../scheduled-mode/index.md)** - Fuld vejledning til parring med et klasseværelse
+- **[Plan-tilstand](../plan-mode/index.md)** - Fuld vejledning til parring med en serviceplah
+- **[Indholdsudbydere](../content-providers/index.md)** - Gennemse og download indhold fra eksterne kilder

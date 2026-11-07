@@ -1,5 +1,6 @@
 ---
 title: "Distribuzione"
+description: "Scopri dove viene distribuito ogni progetto ChurchApps: API AWS Lambda, app web su S3, build mobile Expo e B1 Admin self-hosted su Railway o Docker."
 ---
 
 # Distribuzione
@@ -14,12 +15,12 @@ ChurchApps utilizza strategie di distribuzione diverse a seconda del tipo di pro
 
 | Tipo di progetto | Destinazione di distribuzione | Strumenti |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
-| [Applicazioni web](./web-apps) | S3 + CloudFront | Build statica, sincronizzazione S3, invalidazione CloudFront |
-| [App mobili](./mobile) | Store delle app | Expo EAS Build + OTA Updates |
-| [Self-Hosting (Railway)](./railway-template) | Railway | Template con un clic: MySQL + Api + B1Admin + B1App |
-| [Self-Hosting (Docker)](./docker) | Qualsiasi host Docker | Installer con una sola riga; immagini GHCR precompilate + Caddy, aggiornamento/backup/rollback con `./deploy/b1` |
-| [Proxy Caddy con dominio personalizzato](./caddy-proxy) | EC2 Windows (Elastic IP `3.23.251.61`) | Caddyfile statico + servizio WinSW + sincronizzazione pianificata della mappa |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
+| [Applicazioni web](./web-apps.md) | S3 + CloudFront | Build statica, sincronizzazione S3, invalidazione CloudFront |
+| [App mobili](./mobile.md) | Store delle app | Expo EAS Build + OTA Updates |
+| [Self-Hosting (Railway)](./railway-template.md) | Railway | Template con un clic: MySQL + Api + B1Admin + B1App |
+| [Self-Hosting (Docker)](./docker.md) | Qualsiasi host Docker | Installer con una sola riga; immagini GHCR precompilate + Caddy, aggiornamento/backup/rollback con `./deploy/b1` |
+| [Proxy Caddy con dominio personalizzato](./caddy-proxy.md) | EC2 Windows (Elastic IP `3.23.251.61`) | Caddyfile statico + servizio WinSW + sincronizzazione pianificata della mappa |
 | FreeShow | Download diretto | Electron Builder (binari multipiattaforma) |
 
 ## Ambienti

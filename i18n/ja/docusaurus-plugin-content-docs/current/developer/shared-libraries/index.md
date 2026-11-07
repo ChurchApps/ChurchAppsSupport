@@ -1,5 +1,6 @@
 ---
 title: "共有ライブラリ"
+description: "B1 Admin、B1.church、API が共有する @churchapps npm パッケージのドキュメント。Packages ワークスペースの設定方法と、changesets を使ったリリース方法を掲載しています。"
 ---
 
 # 共有ライブラリ
@@ -14,9 +15,9 @@ ChurchAppsの共有コードは、`@churchapps/*` スコープの下でnpmに公
 
 | パッケージ | 説明 | 利用先 |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | 基盤レイヤー。フレームワークに依存しないヘルパー関数と、アプリ間のデータ契約を形成する共有TypeScriptインターフェースを提供します | すべてのプロジェクト |
-| [`@churchapps/apihelper`](./api-helper) | サーバーサイドのExpressユーティリティ。認証、基本コントローラー、データベースアクセス、AWSおよびメール連携を含みます | すべてのAPI |
-| [`@churchapps/apphelper`](./app-helper) | 共有のReactコンポーネントと機能モジュール（ログイン、寄付、フォーム、Markdown、ウェブサイト） | すべてのWebアプリ |
+| [`@churchapps/helpers`](./helpers.md) | 基盤レイヤー。フレームワークに依存しないヘルパー関数と、アプリ間のデータ契約を形成する共有TypeScriptインターフェースを提供します | すべてのプロジェクト |
+| [`@churchapps/apihelper`](./api-helper.md) | サーバーサイドのExpressユーティリティ。認証、基本コントローラー、データベースアクセス、AWSおよびメール連携を含みます | すべてのAPI |
+| [`@churchapps/apphelper`](./app-helper.md) | 共有のReactコンポーネントと機能モジュール（ログイン、寄付、フォーム、Markdown、ウェブサイト） | すべてのWebアプリ |
 | `@churchapps/content-providers` | サードパーティのコンテンツプロバイダー（Lessons.church、Planning Center、Dropboxなど）を抽象化したレイヤー | Api、B1Admin、B1App、FreePlay |
 | `@churchapps/integration-sdk` | B1.church連携を構築するためのツールキット。Webhookの検証、型付きRESTクライアント、OAuthヘルパーを含みます | 外部の連携開発者 |
 | `@churchapps/texting` | SMSプロバイダーの抽象化レイヤー（Text In Church、Clearstream、Mutual Ministry、MinistryStuff、Nalo Solutions、Twilio） | Api |

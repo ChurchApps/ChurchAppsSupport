@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting på Railway"
+description: "Deploy en privat ChurchApps-instans på Railway på ca. 15 minutter, og konfigurer e-mail, egne domæner, flere kirker, givning og filopbevaring."
 ---
 
 # Self-Hosting på Railway
@@ -195,7 +196,7 @@ Disse åbner for specifikke funktioner og kan alle tilføjes senere via Railway-
 | `VIMEO_TOKEN` | Understøttelse af Vimeo-prædikener |
 | `API_BIBLE_KEY` | Slåning op i bibelvers i lektioner og indhold |
 | `YOUVERSION_API_KEY` | YouVersion-bibelintegration |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push-notifikationer i browseren ([generér et VAPID-nøglepar](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push-notifikationer i browseren ([generér et VAPID-nøglepar](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Valgfri CRM-synkronisering af nye registreringer |
 
 ## Opdatering
@@ -234,9 +235,9 @@ Hvis du støder på noget, der ikke står på denne liste, så opret en issue p�
 
 ## Relaterede artikler
 
-- **[Self-Hosting med Docker](./docker)** — Samme stak på din egen hardware eller VPS
-- **[Første opsætning](../../getting-started/initial-setup)** — Første skridt, efter din kirke er oprettet
-- **[Opsætning af hjemmeside](../../b1-admin/website/initial-setup)** — Konfigurér din kirkes offentlige side
-- **[Donationsindstillinger](../../b1-admin/donations/online-giving-setup)** — Tilslut Stripe eller PayPal
-- **[Lokal API-opsætning](../api/local-setup)** — Kør stakken lokalt til udvikling
-- **[API-udrulning (AWS)](./apis)** — Sådan udrulles ChurchApps' officielle SaaS
+- **[Self-Hosting med Docker](./docker.md)** — Samme stak på din egen hardware eller VPS
+- **[Første opsætning](../../getting-started/initial-setup.md)** — Første skridt, efter din kirke er oprettet
+- **[Opsætning af hjemmeside](../../b1-admin/website/initial-setup.md)** — Konfigurér din kirkes offentlige side
+- **[Donationsindstillinger](../../b1-admin/donations/online-giving-setup.md)** — Tilslut Stripe eller PayPal
+- **[Lokal API-opsætning](../api/local-setup.md)** — Kør stakken lokalt til udvikling
+- **[API-udrulning (AWS)](./apis.md)** — Sådan udrulles ChurchApps' officielle SaaS

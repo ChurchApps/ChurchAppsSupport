@@ -1,5 +1,6 @@
 ---
 title: "Donation Batches"
+description: "Group offerings into donation batches in B1 Admin, then close, print, or export each one so totals match your bank deposits."
 ---
 
 # Donation Batches

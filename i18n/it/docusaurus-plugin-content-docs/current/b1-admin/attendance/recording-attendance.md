@@ -1,5 +1,6 @@
 ---
 title: "Registrare le presenze"
+description: "Registra le presenze di ogni incontro di gruppo in B1 Admin: crea una sessione, segna i presenti, salva le note e stampa l'elenco o esporta in foglio di calcolo."
 ---
 
 # Registrare le presenze

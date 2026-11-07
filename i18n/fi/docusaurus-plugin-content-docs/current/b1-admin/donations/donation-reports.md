@@ -1,5 +1,6 @@
 ---
 title: "Lahjoitusraportit"
+description: "Tarkastele B1 Adminissa lahjoitussummia, lakanneita lahjoittajia ja erien tietoja yhteenvetokojelaudalta, Lakanneet lahjoittajat -näkymästä ja CSV-vienneistä."
 ---
 
 # Lahjoitusraportit

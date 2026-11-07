@@ -1,5 +1,6 @@
 ---
 title: "Mga Istatistika"
+description: "Tingnan ang bilang ng download kada study, kung aling simbahan ang gumagamit ng resources, at kanilang lokasyon sa statistics, na may filter ayon sa petsa."
 ---
 
 # Mga Istatistika

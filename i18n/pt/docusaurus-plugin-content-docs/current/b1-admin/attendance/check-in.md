@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In por Autoatendimento: B1 Checkin e B1 Admin"
+sidebar_label: "Check-In"
+description: "Configure o check-in por autoatendimento com o B1 Checkin no B1 Admin: dispositivos, quiosques, horários, identidade visual e cadastro de visitantes via QR code."
 ---
 
 # Check-In
@@ -99,7 +101,7 @@ Use a tela ociosa para exibir anúncios, eventos próximos ou mensagens de boas-
 
 O quiosque de check-in pode exibir um QR code que os visitantes escaneiam para se cadastrar, junto com a família, no próprio celular. Isso agiliza o check-in de visitantes que estão na primeira vez.
 
-Quando um visitante escaneia o QR code, ele é levado a uma [página de cadastro de visitantes](../../b1-church/checkin/guest-registration), onde informa os nomes da família e quaisquer outros dados que você decidir pedir. Em seguida, um voluntário pode procurá-lo no quiosque e fazer o check-in.
+Quando um visitante escaneia o QR code, ele é levado a uma [página de cadastro de visitantes](../../b1-church/checkin/guest-registration.md), onde informa os nomes da família e quaisquer outros dados que você decidir pedir. Em seguida, um voluntário pode procurá-lo no quiosque e fazer o check-in.
 
 ### Ativando o cadastro de visitantes por QR Code
 

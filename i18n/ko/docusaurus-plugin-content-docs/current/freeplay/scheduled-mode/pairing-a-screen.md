@@ -1,5 +1,6 @@
 ---
 title: "화면 연결하기"
+description: "FreePlay Admin에서 TV의 네 글자 코드를 사용해 FreePlay TV를 화면 그룹 캘린더에 페어링하면, 예약된 콘텐츠를 자동으로 재생합니다."
 ---
 
 # 화면 연결하기
@@ -13,9 +14,9 @@ TV를 캘린더에 맞추려면 **FreePlay Admin**과 연결해야 합니다. TV
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- TV에 FreePlay를 설치하고 실행하세요. [시작하기](../getting-started/)를 참고하세요.
+- TV에 FreePlay를 설치하고 실행하세요. [시작하기](../getting-started/index.md)를 참고하세요.
 - FreePlay Admin에 로그인할 수 있도록 교회의 ChurchApps 로그인 정보를 준비하세요.
-- 원하면 TV가 바로 재생할 내용이 있도록 먼저 [재생 목록을 만들고](./building-playlists) [예약](./scheduling-the-calendar)하세요.
+- 원하면 TV가 바로 재생할 내용이 있도록 먼저 [재생 목록을 만들고](./building-playlists.md) [예약](./scheduling-the-calendar.md)하세요.
 
 </div>
 
@@ -38,7 +39,7 @@ TV를 캘린더에 맞추려면 **FreePlay Admin**과 연결해야 합니다. TV
 5. **Mode**는 **Scheduled**를 그대로 두세요. 그러면 TV가 그룹의 캘린더에 따라 스스로 재생합니다.
 6. **Pair**를 클릭하세요.
 
-TV에 **Connected!**가 표시된 뒤 **Loading your schedule...**이 나타납니다. TV는 예약된 콘텐츠를 다운로드하고 재생을 시작합니다. [TV의 예약 재생](./scheduled-playback)을 참고하세요.
+TV에 **Connected!**가 표시된 뒤 **Loading your schedule...**이 나타납니다. TV는 예약된 콘텐츠를 다운로드하고 재생을 시작합니다. [TV의 예약 재생](./scheduled-playback.md)을 참고하세요.
 
 :::info
 FreePlay Admin에 **That code didn't match a TV**가 표시되면 TV 화면의 코드를 다시 확인하세요. 코드가 만료되었다면 TV가 지금 표시하고 있는 새 코드를 사용하세요.
@@ -51,11 +52,11 @@ FreePlay Admin에 **That code didn't match a TV**가 표시되면 TV 화면의 �
 - **Scheduled** -- 그룹의 캘린더에 따라 스스로 재생합니다. 누군가 Start를 누를 필요가 없습니다.
 - **Manual** -- 사람이 리모컨으로 콘텐츠를 고릅니다. 수동 화면도 **Screens** 목록에 나타나지만 캘린더를 따르지 않으므로 **Group** 항목은 비활성화됩니다.
 
-나중에 [Screens 페이지](./managing-screens)의 **Edit**에서 화면의 모드를 바꿀 수 있습니다.
+나중에 [Screens 페이지](./managing-screens.md)의 **Edit**에서 화면의 모드를 바꿀 수 있습니다.
 
 ## 대신 예배 순서에 연결하기
 
-**Pair this screen** 화면의 코드는 B1 Admin에서도 사용할 수 있습니다. B1 Admin에서 코드를 입력하고 **Show Plans For**에서 예배 순서 유형을 고르면, TV는 캘린더 대신 해당 예배 순서 유형을 [예배 순서 모드](../plan-mode/)로 따라갑니다. [기기 연결하기](../plan-mode/device-pairing)를 참고하세요.
+**Pair this screen** 화면의 코드는 B1 Admin에서도 사용할 수 있습니다. B1 Admin에서 코드를 입력하고 **Show Plans For**에서 예배 순서 유형을 고르면, TV는 캘린더 대신 해당 예배 순서 유형을 [예배 순서 모드](../plan-mode/index.md)로 따라갑니다. [기기 연결하기](../plan-mode/device-pairing.md)를 참고하세요.
 
 ## TV에서 연결 변경 또는 해제하기 {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ TV는 다시 연결 코드를 표시합니다. 다시 사용하고 싶을 때 �
 
 ## 관련 문서
 
-- **[화면 및 그룹 관리하기](./managing-screens)** -- 화면 이름 바꾸기, 다른 그룹으로 옮기기, 다운로드 상태 확인하기
-- **[캘린더 예약하기](./scheduling-the-calendar)** -- 그룹의 화면에서 재생할 내용 정하기
-- **[연결 방식 선택하기](../getting-started/pairing-modes)** -- 예약 모드와 예배 순서 모드, 직접 콘텐츠 제공자 찾아보기 비교하기
+- **[화면 및 그룹 관리하기](./managing-screens.md)** -- 화면 이름 바꾸기, 다른 그룹으로 옮기기, 다운로드 상태 확인하기
+- **[캘린더 예약하기](./scheduling-the-calendar.md)** -- 그룹의 화면에서 재생할 내용 정하기
+- **[연결 방식 선택하기](../getting-started/pairing-modes.md)** -- 예약 모드와 예배 순서 모드, 직접 콘텐츠 제공자 찾아보기 비교하기

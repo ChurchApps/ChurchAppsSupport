@@ -1,5 +1,6 @@
 ---
 title: "Managing Devices"
+description: "Ipares, lagyan ng label, at alisin ang ChurchAppsPlayer at FreePlay screen na nakakonekta sa B1 Admin, para updated at ligtas ang mga display ng simbahan."
 ---
 
 # Managing Devices

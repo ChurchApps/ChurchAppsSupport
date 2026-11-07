@@ -1,5 +1,7 @@
 ---
-title: "Logging ind"
+title: "Log ind i B1 Mobile"
+sidebar_label: "Logging ind"
+description: "Log ind i B1 Mobile-appen med din ChurchApps-konto, opret en ny konto, eller gendan en glemt adgangskode med en 6-cifret kode."
 ---
 
 # Logging ind
@@ -13,7 +15,7 @@ B1 Mobile bruger den samme ChurchApps-konto, som du bruger på B1.church og andr
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](./installing) på din iOS eller Android enhed
+- [Installer B1 Mobile](./installing.md) på din iOS eller Android enhed
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile bruger den samme ChurchApps-konto, som du bruger på B1.church og andr
 3. Enter din **e-mailadresse** og **adgangskode**.
 4. Tryk **Log ind**.
 
-Efter at have logget ind, bliver du taget til [instrumentbrættet](../dashboard/). Hvis du ikke allerede har valgt en kirke, blir du bedt om at søge efter og vælge en.
+Efter at have logget ind, bliver du taget til [instrumentbrættet](../dashboard/index.md). Hvis du ikke allerede har valgt en kirke, blir du bedt om at søge efter og vælge en.
 
 ## Oprettelse af en ny konto
 

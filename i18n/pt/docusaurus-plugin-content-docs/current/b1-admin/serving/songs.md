@@ -1,5 +1,6 @@
 ---
 title: "Músicas"
+description: "Gerencie sua biblioteca de músicas no B1 Admin: pesquise e adicione músicas, edite detalhes, anexe letras em ChordPro e arranjos, e envie áudios de ensaio."
 ---
 
 # Músicas

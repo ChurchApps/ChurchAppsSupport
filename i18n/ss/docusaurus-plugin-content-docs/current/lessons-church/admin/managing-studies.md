@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tifundvo"
+description: "Dala, hlela, futsi uhlele tifundvo ngaphakathi kwenhlelo ku-admin ye-Lessons.church, bese unamatanisa tinkhombandlela temakhulumo netifomethi tetincwadzi tetindzaba nganoma yisiphi.."
 ---
 
 # Kuphatsa Tifundvo

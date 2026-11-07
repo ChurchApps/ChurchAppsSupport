@@ -1,5 +1,6 @@
 ---
 title: "Adatok importálása"
+description: "Meglévő személyek, csoportok, részvételi és adományi adatok átvitele a B1 Admin-ba a B1 Transfer eszközzel, vagy adatmentés exportálása bármikor."
 ---
 
 # Adatok importálása

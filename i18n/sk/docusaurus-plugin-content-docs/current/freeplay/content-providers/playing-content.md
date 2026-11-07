@@ -1,5 +1,6 @@
 ---
 title: "Prehrávanie obsahu"
+description: "Ovládanie FreePlay diaľkovým ovládačom: pauza, preskakovanie snímok a videí, skok na ľubovoľnú správu a ukončenie prehrávania z poskytovateľa, plánu alebo sťahovania."
 ---
 
 # Prehrávanie obsahu
@@ -13,13 +14,13 @@ Prehrávač FreePlay sa roztiahne na celú obrazovku a je navrhnutý pre diaľko
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Vyberte si niečo na prehrávanie. Pozrite si [Prehliadanie a sťahovanie obsahu](./browsing-content), [Režim plánu](../plan-mode/) alebo [Oznamy](./announcements)
+- Vyberte si niečo na prehrávanie. Pozrite si [Prehliadanie a sťahovanie obsahu](./browsing-content.md), [Režim plánu](../plan-mode/index.md) alebo [Oznamy](./announcements.md)
 - Stlačte **Štart**, čím otvoríte prehrávač
 
 </div>
 
 :::info
-Obrazovky spárované s kalendárom používajú samostatný naplánovaný prehrávač s mierne odlišným ovládaním. Pozrite si [Naplánované prehrávanie v televízore](../scheduled-mode/scheduled-playback).
+Obrazovky spárované s kalendárom používajú samostatný naplánovaný prehrávač s mierne odlišným ovládaním. Pozrite si [Naplánované prehrávanie v televízore](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Ovládanie prehrávača
@@ -57,7 +58,7 @@ Počas prehrávania stlačte **Hore** a otvorí sa **Vyberte prejav**. Zobrazí 
 Stlačte na ovládači **Dole** alebo **Späť**, čím opustíte prehrávač. Kam sa dostanete, závisí od toho, čo ste prehrávali:
 
 - **Obsah poskytovateľa** - Späť do prehliadača obsahu
-- **Plán** - Späť na obrazovku sťahovania plánu. Pozrite si [Režim plánu](../plan-mode/)
+- **Plán** - Späť na obrazovku sťahovania plánu. Pozrite si [Režim plánu](../plan-mode/index.md)
 - **Stiahnutý obsah** - Späť na obrazovku **Stiahnuté**
 
 :::info
@@ -66,5 +67,5 @@ Obrazovka zostáva počas otvoreného prehrávača zapnutá, takže televízor n
 
 ## Súvisiace články
 
-- **[Prehliadanie a sťahovanie obsahu](./browsing-content)** - Nájdite obsah a stiahnite si ho na prehrávanie offline
-- **[Naplánované prehrávanie v televízore](../scheduled-mode/scheduled-playback)** - Diaľkové ovládanie pre obrazovky, ktoré sa riadia kalendárom
+- **[Prehliadanie a sťahovanie obsahu](./browsing-content.md)** - Nájdite obsah a stiahnite si ho na prehrávanie offline
+- **[Naplánované prehrávanie v televízore](../scheduled-mode/scheduled-playback.md)** - Diaľkové ovládanie pre obrazovky, ktoré sa riadia kalendárom

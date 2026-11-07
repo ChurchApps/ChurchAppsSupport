@@ -1,5 +1,7 @@
 ---
-title: "Donation History"
+title: "Viewing Donation History in B1 Mobile"
+sidebar_label: "Donation History"
+description: "Check your year-to-date giving, last gift, and full donation record in B1 Mobile, and repeat a past gift with one tap from the Overview tab."
 ---
 
 # Donation History
@@ -13,8 +15,8 @@ B1 Mobile gives you a clear picture of your giving through two tabs: **Overview*
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
-- [Make at least one donation](./making-donations) to see your history
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
+- [Make at least one donation](./making-donations.md) to see your history
 
 </div>
 
@@ -45,5 +47,5 @@ Check the **Overview** tab regularly to stay on top of your giving goals. The ye
 
 ## Related Articles
 
-- [Making a Donation](./making-donations) -- Make a new gift from the app
-- [Managing Payment Methods](./managing-payments) -- Add or remove saved payment methods
+- [Making a Donation](./making-donations.md) -- Make a new gift from the app
+- [Managing Payment Methods](./managing-payments.md) -- Add or remove saved payment methods

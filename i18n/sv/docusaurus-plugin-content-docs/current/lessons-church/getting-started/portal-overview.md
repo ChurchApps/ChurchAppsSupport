@@ -1,5 +1,6 @@
 ---
 title: "Portalöversikt"
+description: "Gå igenom Lessons.church-portalen för att hitta klassrum, granska schemalagda lektioner, ställa in flödeslänkar och nå externa leverantörer och admin-verktyg."
 ---
 
 # Portalöversikt

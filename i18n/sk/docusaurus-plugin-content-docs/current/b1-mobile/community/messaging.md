@@ -1,5 +1,6 @@
 ---
 title: "Správy"
+description: "Začínajte, čítajte, upravujte a mažte súkromné konverzácie jeden na jedného s členmi cirkvi v B1 Mobile a nájdite ľudí cez adresár členov."
 ---
 
 # Správy
@@ -13,7 +14,7 @@ B1 Mobile obsahuje súkromné správy, vďaka ktorým si môžete priamo z aplik
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Nainštalujte B1 Mobile](../getting-started/installing) a [sa prihláste](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte B1 Mobile](../getting-started/installing.md) a [sa prihláste](../getting-started/logging-in.md) do svojho účtu
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile obsahuje súkromné správy, vďaka ktorým si môžete priamo z aplik
 ## Začatie novej konverzácie
 
 1. Na obrazovke správ klepnite na možnosť začať novú konverzáciu.
-2. Použite vyhľadávacie pole a nájdite člena, ktorému chcete písať. Členov môžete nájsť aj v [adresári členov](./member-directory).
+2. Použite vyhľadávacie pole a nájdite člena, ktorému chcete písať. Členov môžete nájsť aj v [adresári členov](./member-directory.md).
 3. Vyberte člena zo zoznamu výsledkov vyhľadávania.
 4. Napíšte správu a klepnite na **Odoslať**.
 
@@ -52,11 +53,11 @@ Správy využite na koordináciu s ostatnými dobrovoľníkmi, na nadviazanie ko
 :::
 
 :::info
-Zapnite [push notifikácie](./notifications), aby vás upozornili na novú správu, aj keď aplikácia nie je otvorená.
+Zapnite [push notifikácie](./notifications.md), aby vás upozornili na novú správu, aj keď aplikácia nie je otvorená.
 :::
 
 ## Súvisiace články
 
-- [Adresár členov](./member-directory) -- Vyhľadajte členov, ktorým chcete písať
-- [Notifikácie](./notifications) -- Dostávajte upozornenia na nové správy
-- [Skupiny](../groups/) -- Zapojte sa do konverzácií v skupinách
+- [Adresár členov](./member-directory.md) -- Vyhľadajte členov, ktorým chcete písať
+- [Notifikácie](./notifications.md) -- Dostávajte upozornenia na nové správy
+- [Skupiny](../groups/index.md) -- Zapojte sa do konverzácií v skupinách

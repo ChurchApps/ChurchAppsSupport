@@ -1,5 +1,6 @@
 ---
 title: "Kuphuma Kanye Nekuphepha Kwetingane"
+description: "Phuma tingane esiteshini se-B1 Checkin esibekwe ngebantfu ngemakhodi wekuvikela, labantfu labahlolwe labatsatsa, kubizwa kwabazali, kuphrinta kabusha emalebula, nemiyalezo yesimo lesisheshako."
 ---
 
 # Kuphuma Kanye Nekuphepha Kwetingane
@@ -14,7 +15,7 @@ Kuphuma kuvala luchungechunge lwekubhalisa kwetingane: umtali ukhombisa ikhodi y
 <h4>Ngembi Kwekucala</h4>
 
 - Kuphuma kutfolakala etikhungweni letihleliwe esimeni se **sebantfu** ekuhleleni kwemlawuli we-kiosk
-- Tingane kufanele [tibe setibhalisiwe](./completing-checkin) tinelilebula leliphrintiwe lelekulanda lelinemakhodi ekuphepha
+- Tingane kufanele [tibe setibhalisiwe](./completing-checkin.md) tinelilebula leliphrintiwe lelekulanda lelinemakhodi ekuphepha
 - Kubita nembiko wesimo lesiphuthumako kudzinga kutsi libandla lakho lihlanganiswe nemniniti we-SMS ku-B1 Admin
 
 </div>
@@ -38,7 +39,7 @@ Nangabe ligama lelibhaliwe lifanana nalomuntfu lophawulwe kutsi **Akavunyelwe** 
 Nase kucinisekisiwe kutsi ngubani lolandzako, cindzetela check out. Ligama lemuntfu lolandzako liyagcinwa embikweni wekubakhona.
 
 :::info
-Bantfu labatsenjiwe kanye nalabangavunyelwe kulanda balawulwa ngumsebenti webandla ekhasini lemuntfu ngamunye ku-B1 Admin -- bona [Kuphepha Kwekubhalisa](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Bantfu labatsenjiwe kanye nalabangavunyelwe kulanda balawulwa ngumsebenti webandla ekhasini lemuntfu ngamunye ku-B1 Admin -- bona [Kuphepha Kwekubhalisa](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Kubita Umtali
@@ -64,6 +65,6 @@ Umbiko uya kuyo yonkhe imindeni lebhalisiwe yenkhonzo lekhetsiwe. Yisebentise et
 
 ## Imibhalo Lehlobene
 
-- [Kucedza Kubhalisa](./completing-checkin) — lapho emakhodi ekuphepha nemalebula ekulanda avela khona
-- [Kuphepha Kwekubhalisa](../../b1-admin/attendance/checkin-safety) — kuhlela emandla, tilinganiso, bantfu bekulanda, kanye nesidzingo semniniti we-SMS
-- [Kuhlela Iprinta](../getting-started/printer-setup) — kuhlelwa kweprinta yemalebula
+- [Kucedza Kubhalisa](./completing-checkin.md) — lapho emakhodi ekuphepha nemalebula ekulanda avela khona
+- [Kuphepha Kwekubhalisa](../../b1-admin/attendance/checkin-safety.md) — kuhlela emandla, tilinganiso, bantfu bekulanda, kanye nesidzingo semniniti we-SMS
+- [Kuhlela Iprinta](../getting-started/printer-setup.md) — kuhlelwa kweprinta yemalebula

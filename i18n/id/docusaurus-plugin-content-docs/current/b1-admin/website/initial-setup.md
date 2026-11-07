@@ -1,5 +1,7 @@
 ---
-title: "Pengaturan Awal"
+title: "Memulai Situs Web B1 Admin Anda"
+sidebar_label: "Pengaturan Awal"
+description: "Atur situs gereja B1 Admin Anda: arahkan subdomain atau domain kustom, buat halaman utama, pilih warna merek dan logo, serta susun navigasi."
 ---
 
 # Pengaturan Awal
@@ -45,7 +47,7 @@ Jika Anda tidak melihat opsi Settings, mintalah orang yang menyiapkan akun gerej
 6. Setelah menambahkan section, klik **Add Content** lagi untuk menyisipkan teks, gambar, video, kartu, formulir, dan lainnya dengan menyeretnya ke dalam section Anda.
 
 :::info
-Untuk petunjuk terperinci tentang mengelola halaman dan navigasi, lihat [Mengelola Halaman](managing-pages). Untuk panduan lengkap editor visual, lihat [Menggunakan Editor Halaman](page-editor).
+Untuk petunjuk terperinci tentang mengelola halaman dan navigasi, lihat [Mengelola Halaman](./managing-pages.md). Untuk panduan lengkap editor visual, lihat [Menggunakan Editor Halaman](./page-editor.md).
 :::
 
 ## Mengonfigurasi Tampilan Situs
@@ -57,7 +59,7 @@ Untuk petunjuk terperinci tentang mengelola halaman dan navigasi, lihat [Mengelo
 5. Konfigurasi **Site Footer** dengan informasi kontak dan tautan gereja Anda.
 
 :::info
-Perubahan yang Anda buat di Appearance berlaku di seluruh situs web Anda. Lihat halaman [Appearance](appearance) untuk petunjuk terperinci tentang setiap pengaturan.
+Perubahan yang Anda buat di Appearance berlaku di seluruh situs web Anda. Lihat halaman [Appearance](./appearance.md) untuk petunjuk terperinci tentang setiap pengaturan.
 :::
 
 ## Mengatur Navigasi
@@ -70,6 +72,6 @@ Tautan navigasi Anda muncul di tampilan Website Pages. Untuk menatanya:
 
 ## Langkah Selanjutnya
 
-- [Mengelola Halaman](managing-pages) -- Pelajari cara bekerja dengan halaman dan navigasi secara terperinci
-- [Appearance](appearance) -- Sesuaikan warna, font, dan tata letak situs Anda
-- [Files](files) -- Unggah gambar dan dokumen untuk situs web Anda
+- [Mengelola Halaman](./managing-pages.md) -- Pelajari cara bekerja dengan halaman dan navigasi secara terperinci
+- [Appearance](./appearance.md) -- Sesuaikan warna, font, dan tata letak situs Anda
+- [Files](./files.md) -- Unggah gambar dan dokumen untuk situs web Anda

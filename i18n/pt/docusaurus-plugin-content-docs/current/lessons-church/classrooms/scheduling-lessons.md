@@ -1,5 +1,7 @@
 ---
-title: "Agendando Aulas"
+title: "Agendamento de aulas por sala no portal"
+sidebar_label: "Agendando Aulas"
+description: "Agende lições do Lessons.church em um calendário de sala no portal B1 Admin escolhendo programa, estudo, lição e local por faixa etária para cada data."
 ---
 
 # Agendando Aulas

@@ -1,5 +1,6 @@
 ---
 title: "Styly navigace"
+description: "Upravte barvy průhledných i plných navigačních lišt webu v B1 Admin, včetně stavů odkazů, najetí myší a aktivního stavu na webu církve."
 ---
 
 # Styly navigace

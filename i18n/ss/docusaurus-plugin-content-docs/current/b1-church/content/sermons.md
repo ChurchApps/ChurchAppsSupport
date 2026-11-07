@@ -1,5 +1,7 @@
 ---
-title: "Tintshumayelo"
+title: "Kuphepha Tinkhulumo ku-Webhusayithi Yakho ye-B1.church"
+sidebar_label: "Tintshumayelo"
+description: "Phepha futsi ubuke tinkhulumo letirekhodwe kulaibhurari yesonto lakho ku-webhusayithi ye-B1.church, letihlelwe ngetindzandzana noma ngemapleyilisti. Akudzingeki kungena."
 ---
 
 # Tintshumayelo

@@ -1,5 +1,6 @@
 ---
 title: "Configuración de donaciones en línea"
+description: "Conecta Stripe, PayPal, Kingdom Funding o Paystack a B1 Admin para que los miembros donen en línea desde tu web de B1.church con sincronización."
 ---
 
 # Configuración de donaciones en línea

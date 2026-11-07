@@ -1,5 +1,6 @@
 ---
 title: "Nastavenie lokálneho API"
+description: "Nastavte API ChurchApps lokálne: naklonujte repozitár, nakonfigurujte šesť databáz MySQL pre moduly, inicializujte schému a spustite vývojový server s hot-reloadom."
 ---
 
 # Nastavenie lokálneho API
@@ -13,9 +14,9 @@ Tento návod vás prevedie nastavením API ChurchApps pre lokálny vývoj. Naklo
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nainštalujte **Node.js 24+**, **Git** a **MySQL 8.0+** -- pozri [Predpoklady](../setup/prerequisites)
+- Nainštalujte **Node.js 24+**, **Git** a **MySQL 8.0+** -- pozri [Predpoklady](../setup/prerequisites.md)
 - Vytvorte používateľa MySQL s oprávnením na vytváranie databáz
-- Prezrite si referenciu [Premenné prostredia](../setup/environment-variables) pre konfiguráciu API
+- Prezrite si referenciu [Premenné prostredia](../setup/environment-variables.md) pre konfiguráciu API
 
 </div>
 
@@ -82,7 +83,7 @@ API sa spustí s automatickým obnovením na adrese [http://localhost:8084](http
 
 ## Nasadenie
 
-Staging prostredie bolo vyradené. API sa nasadzuje do demo prostredia pri každom pushi do `main` a do produkcie cez ručný workflow **Deploy Prod**, ktorý zároveň aplikuje čakajúce migrácie databázy. Podrobnosti nájdete v článku [Nasadenie API](../deployment/apis).
+Staging prostredie bolo vyradené. API sa nasadzuje do demo prostredia pri každom pushi do `main` a do produkcie cez ručný workflow **Deploy Prod**, ktorý zároveň aplikuje čakajúce migrácie databázy. Podrobnosti nájdete v článku [Nasadenie API](../deployment/apis.md).
 
 ## Lokálny vývoj knižníc
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Týmto môžete testovať zmeny knižnice voči API bez publikovania na npm. Podrobnosti nájdete v článku [Zdieľané knižnice](../shared-libraries/#local-development-against-a-consuming-app) -- a nikdy nekomitujte portal resolution, ktorý príkaz `link` zapíše do `package.json`.
+Týmto môžete testovať zmeny knižnice voči API bez publikovania na npm. Podrobnosti nájdete v článku [Zdieľané knižnice](../shared-libraries/index.md#local-development-against-a-consuming-app) -- a nikdy nekomitujte portal resolution, ktorý príkaz `link` zapíše do `package.json`.
 
 ## Súvisiace články
 
-- **[Databáza](./database)** -- Pochopenie architektúry s databázou pre každý modul
-- **[Štruktúra modulu](./module-structure)** -- Ako sú usporiadané kontroléry, repozitáre a modely
-- **[Zdieľané knižnice](../shared-libraries/)** -- Práca s `@churchapps/helpers` a `@churchapps/apihelper`
+- **[Databáza](./database.md)** -- Pochopenie architektúry s databázou pre každý modul
+- **[Štruktúra modulu](./module-structure.md)** -- Ako sú usporiadané kontroléry, repozitáre a modely
+- **[Zdieľané knižnice](../shared-libraries/index.md)** -- Práca s `@churchapps/helpers` a `@churchapps/apihelper`

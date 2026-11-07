@@ -1,5 +1,6 @@
 ---
 title: "Notes"
+description: "Review pastoral care notes, follow-ups, and planning from people, groups, events, and workflow cards in one B1 Admin list, newest first."
 ---
 
 # Notes

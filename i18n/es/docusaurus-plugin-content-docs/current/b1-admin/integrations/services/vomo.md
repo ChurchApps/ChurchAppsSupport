@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Conecta los registros de voluntarios y los registros en quiosco de VOMO con personas y grupos de B1 Admin mediante Zapier, con permisos de clave API y pasos."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Cuando el proyecto de VOMO termina, limpia manualmente el grupo de B1 (o emparej
 
 ### Enviar un texto "gracias por registrarte" a través de SMS
 
-Encadena VOMO Participación → Clearstream Enviar texto o Text In Church Enviar mensaje en el mismo Zap. Ambos tienen acciones de Zapier de primera clase — ve [Clearstream](./clearstream) y [Text In Church](./text-in-church).
+Encadena VOMO Participación → Clearstream Enviar texto o Text In Church Enviar mensaje en el mismo Zap. Ambos tienen acciones de Zapier de primera clase — ve [Clearstream](./clearstream.md) y [Text In Church](./text-in-church.md).
 
 ### Detectar abandono
 
@@ -91,6 +92,6 @@ Ejecuta un disparador de *Programación* de Zapier diaria que llama Buscar organ
 
 ## Ver También
 
-- [Zapier (descripción general)](../zapier) — lado B1 de cada receta de Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — empareja registros de voluntarios con confirmaciones de SMS
+- [Zapier (descripción general)](../zapier.md) — lado B1 de cada receta de Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — empareja registros de voluntarios con confirmaciones de SMS
 - [Webhooks (referencia de desarrollador)](/docs/developer/api/webhooks) — los eventos en los que VOMO puede disparar

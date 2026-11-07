@@ -1,5 +1,6 @@
 ---
 title: "Záznam auditu"
+description: "Prezrite si záznam auditu v B1 Admin: kto sa prihlásil, upravil záznamy osôb alebo zmenil oprávnenia. Filtrované položky exportujte do CSV."
 ---
 
 # Záznam auditu
@@ -78,6 +79,6 @@ Záznam auditu kontrolujte pravidelne, najmä po zaškolení nových členov tí
 
 ## Súvisiace články
 
-- [Roly a oprávnenia](../settings/roles-permissions) -- Správa toho, kto má prístup k čomu
-- [Zabezpečenie údajov](../settings/data-security) -- Ako sú vaše údaje chránené
+- [Roly a oprávnenia](../settings/roles-permissions.md) -- Správa toho, kto má prístup k čomu
+- [Zabezpečenie údajov](../settings/data-security.md) -- Ako sú vaše údaje chránené
 - [Prehľad reportov](./index.md) -- Prehľad všetkých dostupných reportov

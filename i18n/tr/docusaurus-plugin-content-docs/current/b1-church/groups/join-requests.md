@@ -1,5 +1,6 @@
 ---
 title: "Gruba Katılma Talebi Gönderme"
+description: "B1.church'te onay gerektiren bir gruba katılma talebi gönderin, lidere isteğe bağlı not ekleyin ve bekleyen talebinizi takip edin veya iptal edin."
 ---
 
 # Gruba Katılma Talebi Gönderme

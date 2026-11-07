@@ -1,5 +1,7 @@
 ---
-title: "Tự check-in"
+title: "Tự điểm danh trên cổng thành viên B1.church"
+sidebar_label: "Tự check-in"
+description: "Điểm danh bản thân và gia đình vào buổi thờ phượng từ cổng thành viên B1.church, chọn giờ và nhóm trong vài bước nhanh."
 ---
 
 # Tự check-in
@@ -45,7 +47,7 @@ Khi đã chọn nhóm cho tất cả những người có mặt, nhấn nút ở
 
 Bạn sẽ thấy thông báo xác nhận rằng check-in đã hoàn tất và việc điểm danh đã được lưu. Sau một lát, trang sẽ quay lại danh sách buổi lễ, sẵn sàng cho lần check-in tiếp theo.
 
-Nếu nhà thờ của bạn in thẻ tên tại quầy check-in, thay vào đó bạn sẽ thấy **Bạn đã check-in!** cùng với mã QR và mã bảo mật. Đưa mã này cho quầy check-in để in thẻ tên, sau đó nhấn **Xong**. Tại kiosk B1 Checkin, nhấn **Quét mã** và đưa mã QR lên camera -- xem [In nhãn khi check-in bằng điện thoại](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Nếu nhà thờ của bạn in thẻ tên tại quầy check-in, thay vào đó bạn sẽ thấy **Bạn đã check-in!** cùng với mã QR và mã bảo mật. Đưa mã này cho quầy check-in để in thẻ tên, sau đó nhấn **Xong**. Tại kiosk B1 Checkin, nhấn **Quét mã** và đưa mã QR lên camera -- xem [In nhãn khi check-in bằng điện thoại](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Nếu hộ gia đình của bạn đã check-in cho buổi lễ bạn chọn, một liên kết **Hiển thị mã check-in** sẽ xuất hiện bên cạnh tiêu đề **Ai có mặt**. Nhấn vào đó để hiển thị lại mã QR và mã bảo mật -- ví dụ, nếu bạn đã đóng trang trước khi đến quầy check-in.
 

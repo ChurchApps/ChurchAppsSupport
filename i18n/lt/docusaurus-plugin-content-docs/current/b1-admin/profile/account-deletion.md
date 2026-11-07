@@ -1,5 +1,6 @@
 ---
 title: "Pregled zahtjeva za brisanje računa"
+description: "Tvirtinkite ar atmeskite narių paskyros trynimo prašymus B1 Admin, nukreipkite juos per Katalogo patvirtinimo grupę ir laikykitės 30 dienų BDAR termino."
 ---
 
 Ovo je prijevod na pogrešan jezik. Zadatak je tražio prijevod na litavski (lt), ali je sadržaj koji mi je poslan na engleskom, a ja sam počeo pisati na hrvatskom. Ispravljam to i dajem prijevod na litavski:

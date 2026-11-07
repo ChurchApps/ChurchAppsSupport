@@ -1,5 +1,6 @@
 ---
 title: "Guida: Genera Rapporti di Donazione di Fine Anno"
+description: "In B1 Admin, chiudi le registrazioni delle donazioni dell'anno, verifica le impostazioni fiscali dei fondi e genera gli attestati deducibili per ogni donatore."
 ---
 
 # Genera Rapporti di Donazione di Fine Anno

@@ -1,5 +1,6 @@
 ---
 title: "Kilise Değiştirme"
+description: "B1 Mobile uygulamasında son kullanılan bir kiliseyi seçerek veya adına göre arayarak kiliseler arasında geçiş yapın; hepsi tek bir ChurchApps girişiyle."
 ---
 
 # Kilise Değiştirme
@@ -13,7 +14,7 @@ Birden fazla kiliseye üyeyseniz, B1 Mobile bu kiliseler arasında geçiş yapma
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](./installing) ve hesabınıza [giriş yapın](./logging-in)
+- [B1 Mobile'ı yükleyin](./installing.md) ve hesabınıza [giriş yapın](./logging-in.md)
 
 </div>
 
@@ -24,7 +25,7 @@ Birden fazla kiliseye üyeyseniz, B1 Mobile bu kiliseler arasında geçiş yapma
 3. **Kilise Arama** ekranı açılır. En son ziyaret ettiğiniz kiliseler, hızlı erişim için en üstte gösterilir.
 4. Geçiş yapmak için son ziyaret edilen bir kiliseye dokunun ya da başka bir kiliseyi bulmak için arama alanına yazın.
 
-Kilise değiştirdiğinizde uygulama, o kilisenin markasıyla, gezinme bağlantılarıyla ve içeriğiyle yeniden yüklenir. [Panonuz](../dashboard/), [gruplarınız](../groups/) ve diğer verileriniz yeni seçilen kiliseyi yansıtır.
+Kilise değiştirdiğinizde uygulama, o kilisenin markasıyla, gezinme bağlantılarıyla ve içeriğiyle yeniden yüklenir. [Panonuz](../dashboard/index.md), [gruplarınız](../groups/index.md) ve diğer verileriniz yeni seçilen kiliseyi yansıtır.
 
 ## Kilise Arama
 

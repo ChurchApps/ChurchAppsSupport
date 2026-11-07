@@ -1,5 +1,6 @@
 ---
 title: "Statistics"
+description: "Find download counts by study, see which churches are pulling your resources, and map their locations in Lessons.church admin statistics, with date-range filtering."
 ---
 
 # Statistics

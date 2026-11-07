@@ -1,5 +1,6 @@
 ---
 title: "administrering af sider"
+description: "Opret, redigér og organisér sider og navigation i B1 Admins sidevisning, inklusive sideindstillinger, omdirigeringer og sideskabeloner."
 ---
 
 # administrering af sider
@@ -13,8 +14,8 @@ websted sider visning er dines centrale hub til opbygning, redigering og organis
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- fuldført [oprindelig opsætning](initial-setup) for at konfigurere dines domæne og basis websted indstillinger
-- Har dines indhold og billeder klar. Brug [filer](files) administrator for at upload medie aktiver først.
+- fuldført [oprindelig opsætning](./initial-setup.md) for at konfigurere dines domæne og basis websted indstillinger
+- Har dines indhold og billeder klar. Brug [filer](./files.md) administrator for at upload medie aktiver først.
 
 </div>
 
@@ -69,6 +70,6 @@ når besøgende klik på billede på dines websted, det åbner ind i fuldskærm 
 
 ## Næste trin
 
-- [oprindelig opsætning](initial-setup) -- første-tid opsætning instruktioner
-- [udseende](appearance) -- tilpas dines websteds visuelt tema
-- [filer](files) -- upload og administrer medie aktiver til dines sider
+- [oprindelig opsætning](./initial-setup.md) -- første-tid opsætning instruktioner
+- [udseende](./appearance.md) -- tilpas dines websteds visuelt tema
+- [filer](./files.md) -- upload og administrer medie aktiver til dines sider

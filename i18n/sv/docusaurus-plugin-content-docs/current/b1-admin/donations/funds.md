@@ -1,5 +1,6 @@
 ---
 title: "Hantera fonder"
+description: "Skapa och ordna gåvofonder i B1 Admin, ange skattemässig avdragsrätt och givarsynlighet samt granska fondsummor och gåvohistorik för rapportering."
 ---
 
 # Hantera fonder

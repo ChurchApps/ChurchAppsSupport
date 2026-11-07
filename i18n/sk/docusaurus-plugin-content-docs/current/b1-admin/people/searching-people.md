@@ -1,5 +1,6 @@
 ---
 title: "Vyhľadávanie osôb"
+description: "Hľadajte v adresári People v B1 Admin podľa mena, zoraďte a vyberte stĺpce v tabuľke, zostavte filtre cez Advanced Search a exportujte výsledky do CSV."
 ---
 
 # Vyhľadávanie osôb

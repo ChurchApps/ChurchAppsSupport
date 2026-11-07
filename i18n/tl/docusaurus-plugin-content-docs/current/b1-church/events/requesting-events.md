@@ -1,5 +1,6 @@
 ---
 title: "Paghiling ng Events at Rooms"
+description: "Humiling ng booking ng kuwarto o kagamitan para sa event sa B1.church member portal, subaybayan sa My Requests, at kanselahin kung pending pa."
 ---
 
 # Paghiling ng Events at Rooms
@@ -42,11 +43,11 @@ Buksan ang **My Requests** mula sa Me page. Ipinapakita ng bawat kahilingan ang 
 Habang nakabinbin pa ang kahilingan, maaari mo itong bawiin gamit ang **Cancel request** (hihilingin sa iyong kumpirmahin -- hindi na maibabalik ang pagkansela).
 
 :::info
-Sinusuri ng mga staff ng simbahan ang mga kahilingan sa B1 Admin [Approvals page](../../b1-admin/calendars/approvals). Ang mga kuwarto at resource na nangangailangan ng approval ay nakadepende sa iyong simbahan -- tingnan ang [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
+Sinusuri ng mga staff ng simbahan ang mga kahilingan sa B1 Admin [Approvals page](../../b1-admin/calendars/approvals.md). Ang mga kuwarto at resource na nangangailangan ng approval ay nakadepende sa iyong simbahan -- tingnan ang [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [The Me Page](../getting-started/me-page) -- Kung saan nakalagay ang mga link ng kahilingan
-- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- Paano sinusuri ng mga staff ang mga kahilingan
-- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Paano nagko-configure ang mga simbahan ng mga espasyong maaaring i-book
+- [The Me Page](../getting-started/me-page.md) -- Kung saan nakalagay ang mga link ng kahilingan
+- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Paano sinusuri ng mga staff ang mga kahilingan
+- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Paano nagko-configure ang mga simbahan ng mga espasyong maaaring i-book

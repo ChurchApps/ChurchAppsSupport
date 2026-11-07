@@ -1,5 +1,6 @@
 ---
 title: "Etkinlik ve Oda Talebi"
+description: "B1.church üye portalından bir etkinlik için oda veya ekipman rezervasyonu talep edin, durumunu Taleplerim'den takip edin ve beklemedeyken iptal edin."
 ---
 
 # Etkinlik ve Oda Talebi
@@ -42,11 +43,11 @@ Ben sayfasından **My Requests** (Taleplerim) bölümünü açın. Her talep etk
 Talep hâlâ beklemedeyken **Cancel request** (Talebi iptal et) seçeneğiyle talebinizi geri çekebilirsiniz. Onaylamanız istenir; iptal işlemi geri alınamaz.
 
 :::info
-Talepler, kilise personeli tarafından B1 Admin üzerindeki [Onaylar sayfasında](../../b1-admin/calendars/approvals) incelenir. Hangi oda ve kaynakların onay gerektirdiği kilisenize bağlıdır; bkz. [Odalar ve Kaynaklar](../../b1-admin/calendars/rooms-resources).
+Talepler, kilise personeli tarafından B1 Admin üzerindeki [Onaylar sayfasında](../../b1-admin/calendars/approvals.md) incelenir. Hangi oda ve kaynakların onay gerektirdiği kilisenize bağlıdır; bkz. [Odalar ve Kaynaklar](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## İlgili Makaleler
 
-- [Ben Sayfası](../getting-started/me-page) -- Talep bağlantılarının bulunduğu yer
-- [Takvim Onayları (B1 Admin)](../../b1-admin/calendars/approvals) -- Personelin talepleri nasıl incelediği
-- [Odalar ve Kaynaklar (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Kiliselerin rezerve edilebilir alanları nasıl yapılandırdığı
+- [Ben Sayfası](../getting-started/me-page.md) -- Talep bağlantılarının bulunduğu yer
+- [Takvim Onayları (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Personelin talepleri nasıl incelediği
+- [Odalar ve Kaynaklar (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Kiliselerin rezerve edilebilir alanları nasıl yapılandırdığı

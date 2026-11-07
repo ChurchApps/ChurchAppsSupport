@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Contenido"
+description: "Referencia de endpoints de la API de Contenido de ChurchApps: páginas web, entradas de blog, redirecciones, sermones, eventos, archivos, búsquedas bíblicas y canciones en B1 Admin."
 ---
 
 # Endpoints de Contenido
@@ -133,7 +134,7 @@ Ruta base: `/content/pageHistory`
 
 Ruta base: `/content/posts`
 
-Las publicaciones del blog son filas independientes: `title`, `slug` (único por iglesia), `excerpt`, `content` (cuerpo en markdown), `authorId`, `photoUrl`, `publishDate`, `category` y `tags`. Una publicación se considera publicada una vez que `publishDate` está establecida y es una fecha pasada. Los endpoints de lectura enriquecen cada publicación con `authorName`, resuelto a partir de `authorId`. Consulta [Arquitectura del constructor de sitios web](../../architecture/website-builder#blog).
+Las publicaciones del blog son filas independientes: `title`, `slug` (único por iglesia), `excerpt`, `content` (cuerpo en markdown), `authorId`, `photoUrl`, `publishDate`, `category` y `tags`. Una publicación se considera publicada una vez que `publishDate` está establecida y es una fecha pasada. Los endpoints de lectura enriquecen cada publicación con `authorName`, resuelto a partir de `authorId`. Consulta [Arquitectura del constructor de sitios web](../../architecture/website-builder.md#blog).
 
 | Método | Ruta | Autenticación | Permiso | Descripción |
 |--------|------|---------------|---------|-------------|
@@ -458,8 +459,8 @@ Ruta base: `/content/support`
 
 ## Páginas relacionadas
 
-- [Arquitectura del constructor de sitios web](../../architecture/website-builder) -- Cómo se relacionan las páginas, secciones, elementos, publicaciones y redirecciones entre las aplicaciones
-- [Endpoints de Membresía](./membership) -- Personas, iglesias, grupos, roles, permisos
-- [Endpoints de Asistencia](./attendance) -- Seguimiento de servicios y visitas
-- [Autenticación y permisos](./authentication) -- Flujo de inicio de sesión, JWT, modelo de permisos
-- [Estructura del módulo](../module-structure) -- Patrones de organización del código
+- [Arquitectura del constructor de sitios web](../../architecture/website-builder.md) -- Cómo se relacionan las páginas, secciones, elementos, publicaciones y redirecciones entre las aplicaciones
+- [Endpoints de Membresía](./membership.md) -- Personas, iglesias, grupos, roles, permisos
+- [Endpoints de Asistencia](./attendance.md) -- Seguimiento de servicios y visitas
+- [Autenticación y permisos](./authentication.md) -- Flujo de inicio de sesión, JWT, modelo de permisos
+- [Estructura del módulo](../module-structure.md) -- Patrones de organización del código

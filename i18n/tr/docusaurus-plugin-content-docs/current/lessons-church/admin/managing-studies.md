@@ -1,5 +1,6 @@
 ---
 title: "Çalışmaları Yönetme"
+description: "Lessons.church yönetim alanında bir program içindeki çalışmaları oluşturun, düzenleyin ve kategorilendirin; her birine seri özetleri veya bülten şablonları ekleyin."
 ---
 
 # Çalışmaları Yönetme

@@ -1,5 +1,7 @@
 ---
-title: "Foretage en donation"
+title: "Sådan giver du gaver i B1.church-medlemsportalen"
+sidebar_label: "Foretage en donation"
+description: "Giv en engangsgave eller fast gave til din kirke via B1.church, med eller uden konto, og gennemgå din givehistorik bagefter."
 ---
 
 # Foretage en donation

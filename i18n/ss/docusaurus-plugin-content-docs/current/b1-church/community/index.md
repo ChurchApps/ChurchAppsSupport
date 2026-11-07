@@ -1,5 +1,7 @@
 ---
-title: "Umphakatsi"
+title: "Ulwati Lwamalungu Esontweni ku-B1.church"
+sidebar_label: "Umphakatsi"
+description: "Sesha ulwati lwamalungu esonto lakho ku-B1.church ngelibito noma ngeliqembu, bona emaphrofayili, bese utfola ni lapho tindzaba letisha se-Timeline lesisusiwe."
 ---
 
 # Umphakatsi
@@ -26,5 +28,5 @@ Emalungu nemininingwane lokubonakala kuwe eluhlwini kuya ngetilungiselelo temfih
 :::
 
 :::tip
-Sebentisa tinsita te-Umphakatsi kanye ne[Emacembu](../groups/) kute uhlale ubambe iciniso ebandleni lakho ngesonto lonkhe.
+Sebentisa tinsita te-Umphakatsi kanye ne[Emacembu](../groups/index.md) kute uhlale ubambe iciniso ebandleni lakho ngesonto lonkhe.
 :::

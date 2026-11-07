@@ -1,5 +1,6 @@
 ---
 title: "Ansluta leverantörer och skapa spellistor"
+description: "Ställ in anslutna innehållsleverantörer i FreePlay Admin, bygg, ordna och förhandsgranska spellistor för schemalagda TV-skärmar."
 ---
 
 # Ansluta leverantörer och skapa spellistor
@@ -107,6 +108,6 @@ Klicka på **Presentera** för att spela upp spellistan i helskärm i din webbl�
 
 ## Relaterade artiklar
 
-- **[Schemalägga kalendern](./scheduling-the-calendar)** - Lägg din spellista i skärmgruppens kalender
-- **[Hantera skärmar och grupper](./managing-screens)** - Ange en spellista som gruppens standardloop
-- **[Innehållsleverantörer](../content-providers/)** - Leverantörer du kan ansluta direkt på TV:n
+- **[Schemalägga kalendern](./scheduling-the-calendar.md)** - Lägg din spellista i skärmgruppens kalender
+- **[Hantera skärmar och grupper](./managing-screens.md)** - Ange en spellista som gruppens standardloop
+- **[Innehållsleverantörer](../content-providers/index.md)** - Leverantörer du kan ansluta direkt på TV:n

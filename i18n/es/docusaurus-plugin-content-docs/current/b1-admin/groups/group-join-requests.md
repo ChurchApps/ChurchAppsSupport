@@ -1,5 +1,6 @@
 ---
 title: "Solicitudes para unirse a un grupo"
+description: "Revisa, aprueba o rechaza solicitudes de unirse a un grupo en B1 Admin, localiza las pendientes como líder o administrador y añade un motivo al rechazar."
 ---
 
 # Solicitudes para unirse a un grupo

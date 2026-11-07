@@ -1,5 +1,6 @@
 ---
 title: "Tartalomszolgáltatók"
+description: "Leckeanyagok, videók és képek böngészése és letöltése a Lessons.churchről, Dropboxról, OneDrive-ról és más szolgáltatókról a FreePlay TV alkalmazásban."
 ---
 
 # Tartalomszolgáltatók
@@ -14,7 +15,7 @@ A tartalomszolgáltatók külső szolgáltatások, amelyek óraanyagokat, videó
 
 A FreePlay jelenleg a következő szolgáltatókat tartalmazza:
 
-- **[Lessons.church](../../lessons-church/)** - Ingyenes, nyílt forráskódú gyermekszolgálati tananyag
+- **[Lessons.church](../../lessons-church/index.md)** - Ingyenes, nyílt forráskódú gyermekszolgálati tananyag
 - **Bible Project** - Videók és források, amelyek a Bibliát mutatják be
 - **SignPresenter** - Prezentációs és kiírási tartalmak gyülekezetek számára
 - **B1.church** - Tartalom a saját B1 gyülekezeti beállításából
@@ -24,7 +25,7 @@ A FreePlay jelenleg a következő szolgáltatókat tartalmazza:
 - **OneDrive** - Képek, videók és hangfájlok böngészése és lejátszása a saját Microsoft OneDrive-ról
 
 :::note
-A Google Drive és a FreeShow többé nem jelenik meg a FreePlay TV alkalmazásban. A Google Drive tartalmak TV-kre juttatásához csatlakoztassa a [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers) felületen, adja hozzá a fájlokat egy lejátszási listához, majd ütemezze be a lejátszási listát.
+A Google Drive és a FreeShow többé nem jelenik meg a FreePlay TV alkalmazásban. A Google Drive tartalmak TV-kre juttatásához csatlakoztassa a [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers) felületen, adja hozzá a fájlokat egy lejátszási listához, majd ütemezze be a lejátszási listát.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Minden szolgáltatónak megvan a saját tartalomtára, amely mappákba és fájl
 
 A csatlakoztatott szolgáltatók a képernyő bal oldalán lévő oldalsávban jelennek meg, a **Böngészés** címsor alatt. A szolgáltatók között az oldalsávban történő kiválasztással válthat, így a beállítás során könnyen átléphet egyik tartalomforrásból a másikba.
 
-Bármelyik csatlakoztatott szolgáltatótól kiválaszthat egy mappát is, amelyet a TV-n [hirdetésként](./announcements) ismételten lejátszhat.
+Bármelyik csatlakoztatott szolgáltatótól kiválaszthat egy mappát is, amelyet a TV-n [hirdetésként](./announcements.md) ismételten lejátszhat.
 
 :::tip
-A TV-n csatlakoztatott szolgáltatók csak az adott TV-hez érvényesek. Ha a [Ütemezett módot](../scheduled-mode/) használja, a szolgáltatókat egyszer, a FreePlay Admin felületen csatlakoztassa, és minden ütemezett képernyő lejátszhat a tőlük származó tartalmakat.
+A TV-n csatlakoztatott szolgáltatók csak az adott TV-hez érvényesek. Ha a [Ütemezett módot](../scheduled-mode/index.md) használja, a szolgáltatókat egyszer, a FreePlay Admin felületen csatlakoztassa, és minden ütemezett képernyő lejátszhat a tőlük származó tartalmakat.
 :::
 
 ## Ebben a szakaszban
 
-- **[Csatlakozás szolgáltatókhoz](./connecting-providers)** - Hogyan hitelesítsen és csatlakozzon
-- **[Tartalmak böngészése és letöltése](./browsing-content)** - Mappák böngészése, fájlok letöltése és tartalmak lejátszása
-- **[Hirdetések](./announcements)** - Egy szolgáltatótól származó diasor ismétlése
+- **[Csatlakozás szolgáltatókhoz](./connecting-providers.md)** - Hogyan hitelesítsen és csatlakozzon
+- **[Tartalmak böngészése és letöltése](./browsing-content.md)** - Mappák böngészése, fájlok letöltése és tartalmak lejátszása
+- **[Hirdetések](./announcements.md)** - Egy szolgáltatótól származó diasor ismétlése

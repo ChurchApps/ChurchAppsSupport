@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Generarea rapoartelor de donații pentru sfârșitul anului"
+description: "În B1 Admin, finalizați donațiile anului, verificați setările fiscale ale fondurilor și generați extrasele deductibile pentru fiecare donator."
 ---
 
 # Generarea rapoartelor de donații pentru sfârșitul anului

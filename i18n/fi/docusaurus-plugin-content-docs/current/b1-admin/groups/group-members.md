@@ -1,5 +1,6 @@
 ---
 title: "Ryhmän jäsenet"
+description: "Lisää, poista ja nimitä ryhmäjäseniä ohjaajiksi B1 Adminissa, ja lähetä jäsenlista sähköpostitse, tekstiviestillä, tulostettuna tai vietynä ryhmäsivulta."
 ---
 
 # Ryhmän jäsenet

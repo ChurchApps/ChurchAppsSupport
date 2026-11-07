@@ -1,5 +1,7 @@
 ---
-title: "prædikener"
+title: "Prædikener i B1 Admin"
+sidebar_label: "prædikener"
+description: "Opsæt og administrér dit prædikenbibliotek, afspilningslister, livestream-plan og bulkimport fra YouTube eller Vimeo i B1 Admin."
 ---
 
 # prædikener
@@ -20,27 +22,27 @@ Prædikener sektionen er organiseret ind i fire hovedområder:
 
 ### prædikener
 
-Tilføj og administrer individuelle prædikenopgaver i dit bibliotek. Hver prædikenindtastning kan inkludere titel, taler, dato, beskrivelse, thumbnail og links til video eller lydindhold. Du kan forbinde prædikener til YouTube, Vimeo, Facebook eller brugerdefineret video URL'er. Se [administrering af prædikener](managing-sermons) til fulde detaljer.
+Tilføj og administrer individuelle prædikenopgaver i dit bibliotek. Hver prædikenindtastning kan inkludere titel, taler, dato, beskrivelse, thumbnail og links til video eller lydindhold. Du kan forbinde prædikener til YouTube, Vimeo, Facebook eller brugerdefineret video URL'er. Se [administrering af prædikener](./managing-sermons.md) til fulde detaljer.
 
 ### playlister
 
-Organiser dine prædikener ind i serier eller samlinger. Playlister gør det nemt for din menighed at gennemse gennem en prædikenslide i orden. Hver playliste har sit eget navn, beskrivelse og thumbnail. Se [playlister](playlists) til mere information.
+Organiser dine prædikener ind i serier eller samlinger. Playlister gør det nemt for din menighed at gennemse gennem en prædikenslide i orden. Hver playliste har sit eget navn, beskrivelse og thumbnail. Se [playlister](./playlists.md) til mere information.
 
 ### live stream gange
 
-Konfigurér din kirks live streaming skema. Opsæt tilbagevendende ugentlige tjenester eller engangs arrangementer, administrer chat og video indstillinger og kontrol hvornår din stream går live. Besøgende vil se den næste planlagte service gang på din streaming siden. Se [live streaming](live-streaming) til opsætning instruktioner.
+Konfigurér din kirks live streaming skema. Opsæt tilbagevendende ugentlige tjenester eller engangs arrangementer, administrer chat og video indstillinger og kontrol hvornår din stream går live. Besøgende vil se den næste planlagte service gang på din streaming siden. Se [live streaming](./live-streaming.md) til opsætning instruktioner.
 
 ### masseimport
 
-Hurtigt befolke dit prædikenbibliotek ved at importere videoer i bulk fra YouTube eller Vimeo. Dette er den hurtigste måde at migrere dit eksisterende prædikenindhold ind i B1. Se [masseimport](bulk-import) for at komme i gang.
+Hurtigt befolke dit prædikenbibliotek ved at importere videoer i bulk fra YouTube eller Vimeo. Dette er den hurtigste måde at migrere dit eksisterende prædikenindhold ind i B1. Se [masseimport](./bulk-import.md) for at komme i gang.
 
 :::tip
-Hvis du opsætter prædikener for første gang, start med at opbygge en [playliste](playlists), derefter eller [tilføj prædikener individuelt](managing-sermons) eller [importér dem i bulk](bulk-import) fra YouTube eller Vimeo.
+Hvis du opsætter prædikener for første gang, start med at opbygge en [playliste](./playlists.md), derefter eller [tilføj prædikener individuelt](./managing-sermons.md) eller [importér dem i bulk](./bulk-import.md) fra YouTube eller Vimeo.
 :::
 
 ## Næste trin
 
-- [administrering af prædikener](managing-sermons) -- Tilføj og rediger individuelle prædikener
-- [playlister](playlists) -- Organiser prædikener ind i serier
-- [live streaming](live-streaming) -- opsætning af dit live stream skema og indstillinger
-- [masseimport](bulk-import) -- Import prædikener fra YouTube eller Vimeo
+- [administrering af prædikener](./managing-sermons.md) -- Tilføj og rediger individuelle prædikener
+- [playlister](./playlists.md) -- Organiser prædikener ind i serier
+- [live streaming](./live-streaming.md) -- opsætning af dit live stream skema og indstillinger
+- [masseimport](./bulk-import.md) -- Import prædikener fra YouTube eller Vimeo

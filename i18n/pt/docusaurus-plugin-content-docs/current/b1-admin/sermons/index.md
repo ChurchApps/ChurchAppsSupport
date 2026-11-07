@@ -1,5 +1,7 @@
 ---
-title: "Sermões"
+title: "Sermões no B1 Admin"
+sidebar_label: "Sermões"
+description: "Configure e gerencie sua biblioteca de sermões, playlists, agenda de transmissões ao vivo e importações em massa do YouTube ou Vimeo no B1 Admin."
 ---
 
 # Sermões
@@ -20,27 +22,27 @@ A seção de Sermões é organizada em quatro áreas principais:
 
 ### Sermões
 
-Adicione e gerencie entradas individuais de sermões na sua biblioteca. Cada sermão pode incluir um título, pregador, data, descrição, miniatura e links para conteúdo de vídeo ou áudio. Você pode vincular sermões ao YouTube, Vimeo, Facebook ou URLs de vídeo personalizados. Veja [Gerenciamento de Sermões](managing-sermons) para detalhes completos.
+Adicione e gerencie entradas individuais de sermões na sua biblioteca. Cada sermão pode incluir um título, pregador, data, descrição, miniatura e links para conteúdo de vídeo ou áudio. Você pode vincular sermões ao YouTube, Vimeo, Facebook ou URLs de vídeo personalizados. Veja [Gerenciamento de Sermões](./managing-sermons.md) para detalhes completos.
 
 ### Playlists
 
-Organize seus sermões em séries ou coleções. As playlists facilitam para sua congregação navegar por uma série de sermões em ordem. Cada playlist tem seu próprio nome, descrição e miniatura. Veja [Playlists](playlists) para mais informações.
+Organize seus sermões em séries ou coleções. As playlists facilitam para sua congregação navegar por uma série de sermões em ordem. Cada playlist tem seu próprio nome, descrição e miniatura. Veja [Playlists](./playlists.md) para mais informações.
 
 ### Horários de Transmissão ao Vivo
 
-Configure o horário de transmissão ao vivo da sua igreja. Configure cultos semanais recorrentes ou eventos únicos, gerencie configurações de chat e vídeo, e controle quando sua transmissão vai ao ar. Os visitantes verão o próximo horário de culto agendado na sua página de transmissão. Uma página separada **Configurações** em **Sermões** controla as abas (chat, oração e links personalizados) exibidas ao lado da sua transmissão ao vivo. Veja [Transmissão ao Vivo](live-streaming) para instruções de configuração.
+Configure o horário de transmissão ao vivo da sua igreja. Configure cultos semanais recorrentes ou eventos únicos, gerencie configurações de chat e vídeo, e controle quando sua transmissão vai ao ar. Os visitantes verão o próximo horário de culto agendado na sua página de transmissão. Uma página separada **Configurações** em **Sermões** controla as abas (chat, oração e links personalizados) exibidas ao lado da sua transmissão ao vivo. Veja [Transmissão ao Vivo](./live-streaming.md) para instruções de configuração.
 
 ### Importação em Massa
 
-Popule rapidamente sua biblioteca de sermões importando vídeos em massa do YouTube ou Vimeo. Esta é a maneira mais rápida de migrar seu conteúdo de sermões existente para o B1. Veja [Importação em Massa](bulk-import) para começar.
+Popule rapidamente sua biblioteca de sermões importando vídeos em massa do YouTube ou Vimeo. Esta é a maneira mais rápida de migrar seu conteúdo de sermões existente para o B1. Veja [Importação em Massa](./bulk-import.md) para começar.
 
 :::tip
-Se você está configurando sermões pela primeira vez, comece criando uma [playlist](playlists), depois [adicione sermões individualmente](managing-sermons) ou [importe-os em massa](bulk-import) do YouTube ou Vimeo.
+Se você está configurando sermões pela primeira vez, comece criando uma [playlist](./playlists.md), depois [adicione sermões individualmente](./managing-sermons.md) ou [importe-os em massa](./bulk-import.md) do YouTube ou Vimeo.
 :::
 
 ## Próximos Passos
 
-- [Gerenciamento de Sermões](managing-sermons) -- Adicionar e editar sermões individuais
-- [Playlists](playlists) -- Organizar sermões em séries
-- [Transmissão ao Vivo](live-streaming) -- Configurar o horário e as configurações da sua transmissão ao vivo
-- [Importação em Massa](bulk-import) -- Importar sermões do YouTube ou Vimeo
+- [Gerenciamento de Sermões](./managing-sermons.md) -- Adicionar e editar sermões individuais
+- [Playlists](./playlists.md) -- Organizar sermões em séries
+- [Transmissão ao Vivo](./live-streaming.md) -- Configurar o horário e as configurações da sua transmissão ao vivo
+- [Importação em Massa](./bulk-import.md) -- Importar sermões do YouTube ou Vimeo

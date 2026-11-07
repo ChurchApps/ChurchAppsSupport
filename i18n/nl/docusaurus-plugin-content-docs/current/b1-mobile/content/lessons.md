@@ -1,5 +1,7 @@
 ---
-title: "Lessen"
+title: "Lessenscherm in B1 Mobile (uitgefaseerd)"
+sidebar_label: "Lessen"
+description: "Pagina Lessen (verouderd): waarom het Lessen-scherm in B1 Mobile is uitgefaseerd en waar je het lesmateriaal nu vindt (FreePlay of Lessons.church)."
 ---
 
 # Lessen
@@ -13,7 +15,7 @@ Het scherm Lessen geeft u toegang tot de curriculum en leermaterialen van uw ker
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld u aan](../getting-started/logging-in) op uw account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld u aan](../getting-started/logging-in.md) op uw account
 - Uw kerk moet curriculum hebben geconfigureerd via Lessons.church
 
 </div>
@@ -46,5 +48,5 @@ Het scherm Lessen verschijnt wanneer uw kerk curriculum via Lessons.church heeft
 
 ## Gerelateerde artikelen
 
-- [Bijbel](./bible) -- Lees de Schrift naast uw lessen
-- [Preken](./sermons) -- Bekijk preken die uw studies aanvullen
+- [Bijbel](./bible.md) -- Lees de Schrift naast uw lessen
+- [Preken](./sermons.md) -- Bekijk preken die uw studies aanvullen

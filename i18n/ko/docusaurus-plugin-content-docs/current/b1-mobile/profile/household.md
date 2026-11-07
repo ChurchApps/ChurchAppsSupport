@@ -1,5 +1,6 @@
 ---
 title: "가족"
+description: "B1 Mobile 프로필 탭에서 가족 구성원과 구성원 간 연결을 확인하세요. 체크인 등 여러 기능이 이 정보를 사용합니다."
 ---
 
 # 가족
@@ -13,7 +14,7 @@ title: "가족"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [B1 모바일 설치](../getting-started/installing) 및 계정으로 [로그인](../getting-started/logging-in)
+- [B1 모바일 설치](../getting-started/installing.md) 및 계정으로 [로그인](../getting-started/logging-in.md)
 
 </div>
 
@@ -33,7 +34,7 @@ title: "가족"
 
 - **체크인** -- 예배나 행사에 [체크인](../checkin/self-checkin.md)할 때, 각 사람을 개별적으로 체크인하는 대신 가족 전체를 한 번에 체크인할 수 있습니다.
 - **교회 기록** -- 교회에서 가족 데이터를 사용하여 가족 기록을 정리하고 가족 단위로 소통합니다.
-- **명부** -- 다른 교인이 [개인정보 설정](./privacy-settings)에 따라 [교회 명부](../community/member-directory.md)에서 가족 정보를 볼 수 있습니다.
+- **명부** -- 다른 교인이 [개인정보 설정](./privacy-settings.md)에 따라 [교회 명부](../community/member-directory.md)에서 가족 정보를 볼 수 있습니다.
 
 ## 가족 조회
 
@@ -47,10 +48,10 @@ title: "가족"
 
 ## 정보 최신 유지
 
-가족 구성원의 정보를 업데이트해야 하는 경우, 해당 구성원이 [자신의 프로필을 편집](./editing-profile)하거나 교회 관리자에게 연락하여 변경할 수 있습니다. 가족 정보를 정확하게 유지하면 [체크인](../checkin/) 같은 기능이 가족 전체에 대해 원활하게 작동합니다.
+가족 구성원의 정보를 업데이트해야 하는 경우, 해당 구성원이 [자신의 프로필을 편집](./editing-profile.md)하거나 교회 관리자에게 연락하여 변경할 수 있습니다. 가족 정보를 정확하게 유지하면 [체크인](../checkin/index.md) 같은 기능이 가족 전체에 대해 원활하게 작동합니다.
 
 ## 관련 문서
 
 - [셀프 체크인](../checkin/self-checkin.md) -- 예배에 가족 구성원 체크인
-- [프로필 편집](./editing-profile) -- 자신의 개인 정보 업데이트
-- [개인정보 설정](./privacy-settings) -- 다른 사람이 가족 정보를 볼 수 있는 범위 제어
+- [프로필 편집](./editing-profile.md) -- 자신의 개인 정보 업데이트
+- [개인정보 설정](./privacy-settings.md) -- 다른 사람이 가족 정보를 볼 수 있는 범위 제어

@@ -1,5 +1,6 @@
 ---
 title: "Hantera inskickningar"
+description: "Granska, skriv ut och tilldela om formulärinlämningar i B1 Admin, flytta svar till rätt person och följ upp besökskort och böneönskemål."
 ---
 
 # Hantera inskickningar

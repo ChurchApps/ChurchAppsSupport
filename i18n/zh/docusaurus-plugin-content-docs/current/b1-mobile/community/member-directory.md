@@ -1,5 +1,7 @@
 ---
-title: "成员目录"
+title: "B1 Mobile 应用中的会员通讯录"
+sidebar_label: "成员目录"
+description: "使用 B1 Mobile 会员通讯录查找教会中的成员：按字母顺序浏览、按姓名搜索，并打开个人资料和家庭链接。"
 ---
 
 # 成员目录
@@ -13,7 +15,7 @@ B1 Mobile 中的成员目录让您可以浏览和搜索教会中的成员。无�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 
 </div>
 
@@ -51,5 +53,5 @@ B1 Mobile 中的成员目录让您可以浏览和搜索教会中的成员。无�
 
 ## 相关文章
 
-- [私信](./messaging) -- 向您在目录中找到的人发送私信
+- [私信](./messaging.md) -- 向您在目录中找到的人发送私信
 - [隐私设置](../profile/privacy-settings.md) -- 控制其他人在目录中可以看到的关于您的信息

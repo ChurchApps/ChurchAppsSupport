@@ -1,5 +1,6 @@
 ---
 title: "Mẫu Email"
+description: "Thiết lập mẫu email và tin nhắn văn bản trong B1 Admin, với trường ghép, tùy chọn tin nhắn và bản xem trước để gửi thông điệp hàng loạt."
 ---
 
 # Mẫu Email

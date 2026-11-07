@@ -1,5 +1,6 @@
 ---
 title: "Modo programado"
+description: "Haz que los TV de FreePlay reproduzcan listas según un calendario en FreePlay Admin: inician y se detienen solos y siguen si se cae el Wi-Fi."
 ---
 
 # Modo programado
@@ -18,16 +19,16 @@ FreePlay Admin usa su inicio de sesión de ChurchApps, el mismo que utiliza en B
 
 FreePlay Admin tiene cuatro páginas principales, enumeradas en la parte superior del sitio:
 
-- **[Pantallas](./managing-screens)**: los TV que ha vinculado, su estado y los **grupos de pantallas** a los que pertenecen. Las pantallas de un grupo comparten un calendario y un bucle predeterminado
-- **[Listas de reproducción](./building-playlists)**: bucles de imágenes y videos que elige de sus proveedores de contenido
-- **[Calendario](./scheduling-the-calendar)**: lo que reproduce cada grupo de pantallas y cuándo
-- **[Proveedores](./building-playlists#connecting-providers)**: las fuentes de contenido de donde toman sus listas de reproducción. Conecta cada uno una sola vez para toda la iglesia
+- **[Pantallas](./managing-screens.md)**: los TV que ha vinculado, su estado y los **grupos de pantallas** a los que pertenecen. Las pantallas de un grupo comparten un calendario y un bucle predeterminado
+- **[Listas de reproducción](./building-playlists.md)**: bucles de imágenes y videos que elige de sus proveedores de contenido
+- **[Calendario](./scheduling-the-calendar.md)**: lo que reproduce cada grupo de pantallas y cuándo
+- **[Proveedores](./building-playlists.md#connecting-providers)**: las fuentes de contenido de donde toman sus listas de reproducción. Conecta cada uno una sola vez para toda la iglesia
 
 Cuando no hay nada programado, las pantallas de un grupo reproducen su **bucle predeterminado**. Si el grupo no tiene un bucle predeterminado, las pantallas se apagan.
 
 ## En qué se diferencia del Modo plan
 
-- **[Modo plan](../plan-mode/)** sigue un tipo de plan de servicio de B1 Admin. Alguien presiona **Iniciar plan** en el TV, y la lección se reproduce cuando lo hace
+- **[Modo plan](../plan-mode/index.md)** sigue un tipo de plan de servicio de B1 Admin. Alguien presiona **Iniciar plan** en el TV, y la lección se reproduce cuando lo hace
 - **El Modo programado** sigue un calendario. El contenido inicia y se detiene en las horas que usted fija, por lo que funciona bien para la señalización del vestíbulo, los bucles de anuncios y las aulas donde la lección debe estar en pantalla antes de que llegue alguien
 
 Una entrada del calendario también puede reproducir un plan de servicio. Elija el tipo de plan en **Planes de servicio** al añadir un horario, y la pantalla reproducirá el plan que esté vigente en B1 Admin esa semana. Esto incluye las lecciones de Go Curriculum, incluso las que haya personalizado en el plan. La pantalla usa el inicio de sesión de Go Curriculum vinculado al ministerio del tipo de plan en B1 Admin, o la conexión de Go Curriculum de la iglesia si el ministerio no tiene una.
@@ -49,8 +50,8 @@ Presione **Ctrl+K** (**⌘K** en un Mac), o haga clic en el cuadro de búsqueda 
 
 ## En esta sección
 
-- **[Vincular una pantalla](./pairing-a-screen)**: muestre el código en el TV y vincúlelo en FreePlay Admin
-- **[Administrar pantallas y grupos](./managing-screens)**: revise el estado y las descargas, y organice las pantallas en grupos
-- **[Conectar proveedores y crear listas de reproducción](./building-playlists)**: vincule fuentes de contenido y cree bucles de imágenes y videos
-- **[Programar el calendario](./scheduling-the-calendar)**: decida qué se reproduce y cuándo, y qué pasa cuando termina antes de tiempo
-- **[Reproducción programada en el TV](./scheduled-playback)**: lo que hace el TV por su cuenta y cómo usar el control remoto durante la reproducción
+- **[Vincular una pantalla](./pairing-a-screen.md)**: muestre el código en el TV y vincúlelo en FreePlay Admin
+- **[Administrar pantallas y grupos](./managing-screens.md)**: revise el estado y las descargas, y organice las pantallas en grupos
+- **[Conectar proveedores y crear listas de reproducción](./building-playlists.md)**: vincule fuentes de contenido y cree bucles de imágenes y videos
+- **[Programar el calendario](./scheduling-the-calendar.md)**: decida qué se reproduce y cuándo, y qué pasa cuando termina antes de tiempo
+- **[Reproducción programada en el TV](./scheduled-playback.md)**: lo que hace el TV por su cuenta y cómo usar el control remoto durante la reproducción

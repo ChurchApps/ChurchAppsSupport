@@ -1,5 +1,6 @@
 ---
 title: "Agendando o calendário"
+description: "Monte uma agenda semanal ou pontual no Calendário do FreePlay Admin para tocar playlists, planos ou pastas de provedores, com loops padrão como reserva."
 ---
 
 # Agendando o calendário
@@ -13,8 +14,8 @@ A página **Calendário** no FreePlay Admin controla o que cada grupo de telas r
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Crie pelo menos um grupo de telas. Veja [Gerenciando telas e grupos](./managing-screens#screen-groups)
-- [Crie uma playlist](./building-playlists), ou tenha um tipo de plano configurado no B1 Admin
+- Crie pelo menos um grupo de telas. Veja [Gerenciando telas e grupos](./managing-screens.md#screen-groups)
+- [Crie uma playlist](./building-playlists.md), ou tenha um tipo de plano configurado no B1 Admin
 
 </div>
 
@@ -82,10 +83,10 @@ Se dois agendamentos se sobreporem, o formulário mostra um aviso: **Sobrepõe o
 
 ## Como as telas recebem as mudanças
 
-As telas pareadas baixam tudo o que está agendado para os próximos 7 dias e verificam mudanças por conta própria. Você não precisa mexer na TV depois de editar o calendário. Para ver quando uma tela tem tudo o que precisa, verifique **Pronta até** na [página Telas](./managing-screens).
+As telas pareadas baixam tudo o que está agendado para os próximos 7 dias e verificam mudanças por conta própria. Você não precisa mexer na TV depois de editar o calendário. Para ver quando uma tela tem tudo o que precisa, verifique **Pronta até** na [página Telas](./managing-screens.md).
 
 ## Artigos relacionados
 
-- **[Criando playlists](./building-playlists)** - Crie as playlists que você agenda
-- **[Reprodução programada na TV](./scheduled-playback)** - Como as lições em ritmo do professor e o controle remoto funcionam na TV
-- **[Gerenciando telas e grupos](./managing-screens)** - Adicione grupos e verifique os downloads de cada tela
+- **[Criando playlists](./building-playlists.md)** - Crie as playlists que você agenda
+- **[Reprodução programada na TV](./scheduled-playback.md)** - Como as lições em ritmo do professor e o controle remoto funcionam na TV
+- **[Gerenciando telas e grupos](./managing-screens.md)** - Adicione grupos e verifique os downloads de cada tela

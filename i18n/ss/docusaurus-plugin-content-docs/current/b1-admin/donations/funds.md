@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tikhwama"
+description: "Dala uhlele tigaba temalunga ku-B1 Admin, setfula simo semtfetfo wekukhishwa nekubonakala kwemnikelo, bese ubheka tinani tetigaba nemlandvo wetipho."
 ---
 
 # Kuphatsa Tikhwama

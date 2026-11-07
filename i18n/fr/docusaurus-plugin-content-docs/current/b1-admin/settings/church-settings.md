@@ -1,5 +1,6 @@
 ---
 title: "Paramètres de l'église"
+description: "Réglez le nom, l'adresse, le sous-domaine, le fuseau horaire, le format régional, le fournisseur SMS et le stockage des fichiers dans B1 Admin."
 ---
 
 # Paramètres de l'église

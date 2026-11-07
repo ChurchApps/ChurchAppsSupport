@@ -1,5 +1,6 @@
 ---
 title: "Guide: Set Up Event Registration"
+description: "Set up an event registration form in B1 Admin to collect attendee details and optional payments, embed it on your church website, and track signups."
 ---
 
 # Set Up Event Registration
@@ -11,7 +12,7 @@ Create an event registration form, collect attendee information and optional pay
 </div>
 
 :::info
-**Two ways to handle event registration:** This guide covers **forms-based registration**, which gives you full control over custom fields and payment collection. For simpler events where you just need to track who is coming, use **native event registration** built into the calendar -- see [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration) for setup instructions. Native registration lets members sign up directly from the [B1 website](../../b1-church/events/registering) and [mobile app](../../b1-mobile/events/registering) with capacity tracking, date windows, and email confirmations.
+**Two ways to handle event registration:** This guide covers **forms-based registration**, which gives you full control over custom fields and payment collection. For simpler events where you just need to track who is coming, use **native event registration** built into the calendar -- see [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration) for setup instructions. Native registration lets members sign up directly from the [B1 website](../../b1-church/events/registering.md) and [mobile app](../../b1-mobile/events/registering.md) with capacity tracking, date windows, and email confirmations.
 :::
 
 <div class="prereqs">

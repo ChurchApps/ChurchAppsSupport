@@ -1,5 +1,6 @@
 ---
 title: "Quản lý bài gửi"
+description: "Xem, in và phân công lại các phản hồi biểu mẫu trong B1 Admin, chuyển phản hồi đến đúng người và theo dõi thẻ khách viếng thăm và yêu cầu cầu nguyện."
 ---
 
 # Quản lý bài gửi

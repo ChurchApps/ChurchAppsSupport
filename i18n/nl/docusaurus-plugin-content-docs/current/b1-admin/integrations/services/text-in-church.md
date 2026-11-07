@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Koppel B1 Admin en Text In Church met Zapier: maak een API-sleutel, bouw een Zap van connectiekaart naar B1 en spiegel groepslidmaatschap."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Zet de Zap aan. De volgende verbindingskaart die via TIC wordt ingediend, versch
 
 ## Zie ook
 
-- [Clearstream](./clearstream) — alternatief sms-platform met een vergelijkbare Zapier-opzet
-- [Zapier (overzicht)](../zapier) — B1-kant van elk Zapier-recept
+- [Clearstream](./clearstream.md) — alternatief sms-platform met een vergelijkbare Zapier-opzet
+- [Zapier (overzicht)](../zapier.md) — B1-kant van elk Zapier-recept
 - [Text In Church Zapier-handleiding](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (documentatie van TIC)

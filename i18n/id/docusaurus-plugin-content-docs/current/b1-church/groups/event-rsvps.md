@@ -1,5 +1,6 @@
 ---
 title: "RSVP Acara"
+description: "Jawab Hadir, Mungkin, atau Tidak Bisa Hadir untuk acara grup di portal anggota B1.church, dan lihat jumlah yang akan datang. Pemimpin juga bisa meninjau."
 ---
 
 # RSVP Acara
@@ -30,14 +31,14 @@ RSVP Anda berlaku untuk kejadian tertentu tersebut. Untuk rapat mingguan, Anda m
 ## Untuk Pemimpin Grup
 
 - **Melihat respons** -- Pemimpin melihat tautan **Lihat respons** di setiap acara pada kalender grup (**Semua acara**). Tautan ini membuka lembar **Respons** yang mencantumkan semua orang berdasarkan jawaban mereka: Hadir, Mungkin, dan Tidak hadir. Jika belum ada yang menjawab, akan muncul tulisan "Belum ada respons."
-- **Mengaktifkan atau menonaktifkan RSVP** -- Saat membuat atau mengedit acara, gunakan sakelar **Izinkan RSVP**. Acara dengan RSVP yang dinonaktifkan tidak menampilkan tombol respons. Staf yang membuat acara secara massal dari B1 Admin juga memiliki opsi yang sama. Lihat [Kalender Grup](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Mengaktifkan atau menonaktifkan RSVP** -- Saat membuat atau mengedit acara, gunakan sakelar **Izinkan RSVP**. Acara dengan RSVP yang dinonaktifkan tidak menampilkan tombol respons. Staf yang membuat acara secara massal dari B1 Admin juga memiliki opsi yang sama. Lihat [Kalender Grup](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-RSVP adalah cara sederhana untuk menghitung jumlah peserta. Jika acara Anda membutuhkan detail pendaftaran, pengelolaan kapasitas, atau pembayaran, gunakan [pendaftaran acara](../events/registering) sebagai gantinya.
+RSVP adalah cara sederhana untuk menghitung jumlah peserta. Jika acara Anda membutuhkan detail pendaftaran, pengelolaan kapasitas, atau pembayaran, gunakan [pendaftaran acara](../events/registering.md) sebagai gantinya.
 :::
 
 ## Artikel Terkait
 
 - [Detail Grup](./group-details.md) -- Semua yang ada di halaman detail grup
-- [Kalender Grup (B1 Admin)](../../b1-admin/groups/group-calendar) -- Cara staf dan pemimpin mengelola acara dan RSVP grup
-- [Mendaftar untuk Acara](../events/registering) -- Pendaftaran acara lengkap dengan kapasitas dan pembayaran
+- [Kalender Grup (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Cara staf dan pemimpin mengelola acara dan RSVP grup
+- [Mendaftar untuk Acara](../events/registering.md) -- Pendaftaran acara lengkap dengan kapasitas dan pembayaran

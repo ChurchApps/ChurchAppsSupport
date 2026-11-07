@@ -1,5 +1,6 @@
 ---
 title: "Fiók létrehozása"
+description: "ChurchApps-fiók regisztrálása a Lessons.churchen, majd összekapcsolása új vagy meglévő egyházi profillal az osztálytermek és menetrendek kezeléséhez."
 ---
 
 # Fiók létrehozása

@@ -1,5 +1,6 @@
 ---
 title: "Implementare"
+description: "Aflați unde se implementează fiecare proiect ChurchApps, de la API-uri AWS Lambda și aplicații web S3 până la build-uri mobile Expo și B1 Admin self-hosted pe Railway sau Docker."
 ---
 
 # Implementare
@@ -14,12 +15,12 @@ ChurchApps folosește strategii de implementare diferite în funcție de tipul p
 
 | Tip de proiect | Destinația implementării | Instrumente |
 |-------------|-------------------|---------|
-| [API-uri](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
-| [Aplicații web](./web-apps) | S3 + CloudFront | Build static, sincronizare S3, invalidare CloudFront |
-| [Aplicații mobile](./mobile) | Magazine de aplicații | Expo EAS Build + actualizări OTA |
-| [Auto-găzduire (Railway)](./railway-template) | Railway | Șablon dintr-un clic: MySQL + Api + B1Admin + B1App |
-| [Auto-găzduire (Docker)](./docker) | Orice gazdă Docker | Instalator dintr-o linie; imagini GHCR precompilate + Caddy, `./deploy/b1` pentru actualizare/backup/revenire |
-| [Proxy Caddy pentru domenii personalizate](./caddy-proxy) | EC2 Windows (IP elastic `3.23.251.61`) | Caddyfile static + serviciu WinSW + sincronizare programată a hărții |
+| [API-uri](./apis.md) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
+| [Aplicații web](./web-apps.md) | S3 + CloudFront | Build static, sincronizare S3, invalidare CloudFront |
+| [Aplicații mobile](./mobile.md) | Magazine de aplicații | Expo EAS Build + actualizări OTA |
+| [Auto-găzduire (Railway)](./railway-template.md) | Railway | Șablon dintr-un clic: MySQL + Api + B1Admin + B1App |
+| [Auto-găzduire (Docker)](./docker.md) | Orice gazdă Docker | Instalator dintr-o linie; imagini GHCR precompilate + Caddy, `./deploy/b1` pentru actualizare/backup/revenire |
+| [Proxy Caddy pentru domenii personalizate](./caddy-proxy.md) | EC2 Windows (IP elastic `3.23.251.61`) | Caddyfile static + serviciu WinSW + sincronizare programată a hărții |
 | FreeShow | Descărcare directă | Electron Builder (binare multiplatformă) |
 
 ## Medii

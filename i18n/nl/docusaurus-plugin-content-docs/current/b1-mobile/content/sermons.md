@@ -1,5 +1,7 @@
 ---
-title: "Preken"
+title: "Preken bekijken in B1 Mobile"
+sidebar_label: "Preken"
+description: "Blader door, zoek en bekijk opgenomen preken en reeksen in de B1 Mobile-app, inclusief hoe je het aftelscherm van een livestream bereikt."
 ---
 
 # Preken
@@ -13,7 +15,7 @@ Met het scherm Preken kunt u opgenomen preken van uw kerk bladeren en bekijken. 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld u aan](../getting-started/logging-in) op uw account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld u aan](../getting-started/logging-in.md) op uw account
 - Uw kerk moet priekinhoud hebben geconfigureerd in hun admin-portal
 
 </div>
@@ -29,7 +31,7 @@ Boven aan het scherm wordt de meest recente preek weergegeven als een aanbevolen
 
 ## Live stream aftelling
 
-Wanneer een [live stream](./live-streaming) binnenkomst 24 uur na aankomst, verschijnt er een aftellingstimer op het scherm Preken. Dit geeft u te weten wanneer de volgende dienst wordt uitgezonden, zodat u kunt plannen om live te kijken.
+Wanneer een [live stream](./live-streaming.md) binnenkomst 24 uur na aankomst, verschijnt er een aftellingstimer op het scherm Preken. Dit geeft u te weten wanneer de volgende dienst wordt uitgezonden, zodat u kunt plannen om live te kijken.
 
 ## Een preek bekijken
 
@@ -51,7 +53,7 @@ Elke prekeninvoering kan weergeven:
 - **Miniatuur** -- Een voorbeeldafbeelding voor de preek
 
 :::tip
-Als u een aftelling op het scherm Preken ziet, tikt u erop om rechtstreeks naar de [live stream](./live-streaming) te gaan wanneer deze begint.
+Als u een aftelling op het scherm Preken ziet, tikt u erop om rechtstreeks naar de [live stream](./live-streaming.md) te gaan wanneer deze begint.
 :::
 
 ## Beschikbaarheid

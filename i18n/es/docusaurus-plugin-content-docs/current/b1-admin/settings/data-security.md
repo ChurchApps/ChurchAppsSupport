@@ -1,5 +1,6 @@
 ---
 title: "Seguridad de datos"
+description: "Descubre cómo ChurchApps protege los datos de tu iglesia en B1 Admin, desde contraseñas cifradas y HTTPS hasta bases de datos separadas y herramientas de datos conforme al RGPD."
 ---
 
 # Seguridad de datos

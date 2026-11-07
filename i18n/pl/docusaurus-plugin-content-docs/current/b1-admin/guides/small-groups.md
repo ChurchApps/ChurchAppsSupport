@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: Prowadzenie grup małych"
+description: "Skonfiguruj małe grupy, studia biblijne i zespoły służebne w B1 Admin, a następnie opublikuj kalendarz kościoła i sekcję grup na swojej stronie B1."
 ---
 
 # Prowadzenie grup małych
@@ -78,7 +79,7 @@ Członkowie mogą odkrywać grupy, dołączać do nich i uczestniczyć w nich z 
 
 1. Członkowie przeglądają i dołączają do grup na [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Członkowie grup mogą przeglądać szczegóły, kalendarze i publikować w [rozmowach](../../b1-church/groups/conversations.md)
-3. Wszystkie funkcje grup są również dostępne w [aplikacji mobilnej B1](../../b1-mobile/groups/)
+3. Wszystkie funkcje grup są również dostępne w [aplikacji mobilnej B1](../../b1-mobile/groups/index.md)
 
 :::info
 Członkowie widzą swoje grupy, nadchodzące wydarzenia i rozmowy grupowe zarówno w wersji internetowej, jak i mobilnej. Wszystko pozostaje zsynchronizowane.
@@ -97,4 +98,4 @@ Twoje grupy małe są skonfigurowane i połączone. Członkowie mogą odkrywać 
 - [Kalendarz zbiorczy](../calendars/curated-calendar.md) — budowanie wspólnego kalendarza kościoła
 - [Przeglądanie grup (web)](../../b1-church/groups/browsing-groups.md) — jak członkowie znajdują grupy
 - [Rozmowy grupowe (web)](../../b1-church/groups/conversations.md) — dyskusje w grupach
-- [Grupy (mobilnie)](../../b1-mobile/groups/) — grupy w aplikacji mobilnej
+- [Grupy (mobilnie)](../../b1-mobile/groups/index.md) — grupy w aplikacji mobilnej

@@ -1,5 +1,6 @@
 ---
 title: "Аутентификация и права доступа"
+description: "Справочник по JWT-входу API ChurchApps, двухфакторной аутентификации, потокам OAuth 2.0 и модели разрешений для разработчиков интеграций."
 ---
 
 # Аутентификация и права доступа
@@ -244,7 +245,7 @@ API поддерживает OAuth 2.0 для сторонних интегра�
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Получить клиента по client ID (секрет скрыт) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Создать или обновить клиента |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Удалить клиента |
-| POST | `/membership/oauth/register` | Public | — | Динамическая регистрация клиента (RFC 7591) для публичных клиентов, например MCP-коннекторов. См. [Connected Apps](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | Динамическая регистрация клиента (RFC 7591) для публичных клиентов, например MCP-коннекторов. См. [Connected Apps](../connected-apps.md#dynamic-client-registration) |
 
 ### Эндпоинты подтверждения устройств
 
@@ -265,5 +266,5 @@ API использует две обёртки функций, которые о
 
 ## Связанные страницы
 
-- [Структура модулей](../module-structure) — как организованы контроллеры, репозитории и модели
-- [Локальная установка](../local-setup) — запуск API локально для разработки
+- [Структура модулей](../module-structure.md) — как организованы контроллеры, репозитории и модели
+- [Локальная установка](../local-setup.md) — запуск API локально для разработки

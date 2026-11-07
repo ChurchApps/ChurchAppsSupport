@@ -1,5 +1,6 @@
 ---
 title: "Ukubuyekeza Ticelo Zokususa Iakhawunti"
+description: "Vuma noma wenqabe ticelo tekususa ama-akhawunti emalungu ku-B1 Admin, udlulise eQembu Lekuvuma Imininingwane, uhlangabezane nesikhatsi se-GDPR sensuku ta-30."
 ---
 
 # Ukubuyekeza Ticelo Zokususa Iakhawunti

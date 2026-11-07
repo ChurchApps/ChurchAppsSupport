@@ -1,5 +1,6 @@
 ---
 title: "Donatiebatches"
+description: "Groepeer giften in batches in B1 Admin en sluit, print of exporteer elke batch zodat de totalen overeenkomen met je bankstortingen."
 ---
 
 # Donatiebatches

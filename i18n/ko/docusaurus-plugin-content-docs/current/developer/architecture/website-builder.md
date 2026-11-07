@@ -1,5 +1,6 @@
 ---
 title: "웹사이트 빌더 아키텍처"
+description: "B1 웹사이트 빌더의 개발자 지도: 콘텐츠 트리, 공유 요소 카탈로그, 렌더링 파이프라인, B1 Admin과 B1.church의 AI 페이지 생성."
 ---
 
 # 웹사이트 빌더 아키텍처
@@ -82,7 +83,7 @@ URL 하나에 대한 전체 트리는 익명 호출 한 번, 즉 `GET /content/p
 
 ### 편집기 양식 (B1Admin)
 
-편집기의 유형별 설정 양식은 `B1Admin/src/site/admin/elements/`에 있습니다. `ElementEdit.tsx`가 전용 컴포넌트(`GalleryEdit`, `TestimonialEdit`, `StatsEdit` 등)나 유형별 인라인 필드 빌더로 분기합니다. 이 카탈로그의 AI용 거울은 API의 MCP `describe_page_builder` 도구입니다([MCP 서버](../api/mcp) 참고).
+편집기의 유형별 설정 양식은 `B1Admin/src/site/admin/elements/`에 있습니다. `ElementEdit.tsx`가 전용 컴포넌트(`GalleryEdit`, `TestimonialEdit`, `StatsEdit` 등)나 유형별 인라인 필드 빌더로 분기합니다. 이 카탈로그의 AI용 거울은 API의 MCP `describe_page_builder` 도구입니다([MCP 서버](../api/mcp.md) 참고).
 
 편집기 미리 보기는 실제 사이트와 같은 `Theme`을 마운트하며, 이 테마는 교회의 전역 스타일에서 `--headingFont` / `--bodyFont` CSS 변수를 설정합니다. B1App은 이 변수를 `pages.css`를 통해 적용하는데, B1Admin은 이것을 가져올 수 없습니다. 그래서 `ContentEditor.tsx`가 `EDITOR_PAGE_FONT_CSS`(`src/site/admin/editorCss.ts`)를 주입하여 `.page` 본문 텍스트와 `h1`–`h6`에 적용합니다. 이것이 없으면 미리 보기의 제목이 관리자 화면의 글꼴로 나타났습니다.
 
@@ -153,7 +154,7 @@ B1Admin의 작성 UI(**Site → Blog**)는 대화상자에서 글을 편집합�
 |---------|--------------|
 | 메타 설명 | `pages.metaDescription`(300자 이하)이 `MetaHelper.getMetaData()`를 거쳐, 빌더로 렌더링되는 모든 라우트의 Next.js `Metadata`(description + Open Graph)가 됩니다. B1Admin의 페이지 설정에는 AI **Generate** 버튼이 있습니다(아래 참고) |
 | 리디렉션 | 교회별 `redirects` 행을 `/content/redirects`에서 관리합니다(`content.edit`, 200행 상한, 경로 정규화). 404가 될 경로에 대해 B1App의 페이지 라우트는 `GET /content/redirects/public/:churchId`로 경로를 확인하고, Next의 `permanentRedirect`로 HTTP 308을 보냅니다. 일치하지 않는 경로는 `notFound()`로 넘어갑니다 |
-| 브랜드 404 | `not-found.tsx`는 일반 오류 대신 `BrandedNotFound`를 렌더링하며, 교회의 로고, 이름, 테마를 보여 줍니다. 알 수 없는 `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, `/volunteer/[planId]` 경로는 실제 404를 반환합니다. 알 수 없는 서브도메인과 잘못된 형식의 페이지 슬러그도 마찬가지입니다([웹사이트 라우팅 및 다중 사이트](./websites) 참고) |
+| 브랜드 404 | `not-found.tsx`는 일반 오류 대신 `BrandedNotFound`를 렌더링하며, 교회의 로고, 이름, 테마를 보여 줍니다. 알 수 없는 `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, `/volunteer/[planId]` 경로는 실제 404를 반환합니다. 알 수 없는 서브도메인과 잘못된 형식의 페이지 슬러그도 마찬가지입니다([웹사이트 라우팅 및 다중 사이트](./websites.md) 참고) |
 | 구조화된 데이터 | 블로그 글의 `BlogPosting` JSON-LD. 개별 설교 페이지(`/{sdSlug}/sermons/[sermonId]`)와 `sermons` 요소가 있는 페이지의 `VideoObject`. 빌더 페이지의 캘린더/행사 요소와 각 `/{sdSlug}/events/[eventId]` 페이지의 `Event`(다음 발생 건, 행사 사진을 `image`로 사용). `serviceTimes` 요소의 schema.org `Event` |
 | 설교 페이지 | 모든 공개 설교는 `/sermons/[sermonId]`에 전체 메타데이터를 가진 크롤링 가능한 페이지를 가집니다. 설교는 더 이상 클라이언트 측 탐색 요소 안에 갇혀 있지 않습니다 |
 | 분석 | 공개 설정 키 `ga4MeasurementId`(B1Admin에서 리디렉션 옆에서 관리)가 `next/script`를 통해 교회별 GA4 gtag를 삽입합니다. B1 앱(`/{sdSlug}/mobile`)은 유효한 `G-` ID일 때 ChurchApps 자체 태그와 함께 같은 ID로 페이지 조회도 보냅니다(GTM 컨테이너 ID는 웹사이트 전용으로 남음). 각 `gtag('config')`에는 `navigator.standalone` 또는 `(display-mode: standalone)` 미디어 쿼리를 기반으로 한 `display_mode`(`installed` 또는 `browser`)가 실립니다(`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -201,7 +202,7 @@ B1Admin의 `SectionToolbar` 다시 쓰기 버튼과 페이지 목록의 "Generat
 | `POST /website/generateAltText` | 이미지 URL 최대 20개에 대한 비전 호출. 간결한 대체 텍스트를 반환(125자 이하, "photo of" 접두어 제거) |
 | `POST /website/generateMetaDescription` | 페이지 텍스트 콘텐츠에서 SEO 메타 설명 하나(155자 이하). B1Admin 페이지 설정의 Generate 버튼에 연결됨 |
 
-이 엔드포인트들의 프롬프트는 `AskApi/config/instructions/` 아래의 마크다운 파일이며, 모델이 생성에 사용하는 요소 카탈로그도 포함합니다. 두 가지 설계 원칙이 카탈로그를 정직하게 유지합니다. 클라이언트는 모든 요청에 `availableElementTypes`를 보내며(프롬프트는 그 목록의 유형만 쓸 수 있고, 서버는 전체 집합을 하드코딩하지 않음), API의 MCP `describe_page_builder` 도구는 [MCP](../api/mcp)를 통해 작업하는 AI 에이전트를 위해 같은 가이드를 담고 있습니다. 모델은 OpenRouter를 통한 Anthropic Claude입니다. 섹션 콘텐츠에는 3.5 Haiku(지연 시간 때문), 개요, 사이트 계획, 비전에는 3.5 Sonnet을 씁니다. OpenRouter 키가 설정되지 않으면 OpenAI로 대체합니다.
+이 엔드포인트들의 프롬프트는 `AskApi/config/instructions/` 아래의 마크다운 파일이며, 모델이 생성에 사용하는 요소 카탈로그도 포함합니다. 두 가지 설계 원칙이 카탈로그를 정직하게 유지합니다. 클라이언트는 모든 요청에 `availableElementTypes`를 보내며(프롬프트는 그 목록의 유형만 쓸 수 있고, 서버는 전체 집합을 하드코딩하지 않음), API의 MCP `describe_page_builder` 도구는 [MCP](../api/mcp.md)를 통해 작업하는 AI 에이전트를 위해 같은 가이드를 담고 있습니다. 모델은 OpenRouter를 통한 Anthropic Claude입니다. 섹션 콘텐츠에는 3.5 Haiku(지연 시간 때문), 개요, 사이트 계획, 비전에는 3.5 Sonnet을 씁니다. OpenRouter 키가 설정되지 않으면 OpenAI로 대체합니다.
 
 ## 대화형 양식
 
@@ -226,8 +227,8 @@ B1App의 공개 렌더링 경로는 교회 태그가 붙은 조회를 캐시합�
 
 ## 관련 문서
 
-- [웹사이트 라우팅 및 다중 사이트](./websites) -- 요청이 교회/사이트로 연결되는 방식과 사용자 지정 도메인 라우팅
-- [Content 엔드포인트](../api/endpoints/content) -- 페이지, 섹션, 요소, 블록, 글, 리디렉션, 설정의 전체 REST 인터페이스
-- [AppHelper](../shared-libraries/app-helper) -- 렌더러, 레지스트리, 구분선, 위젯을 제공하는 npm 패키지
-- [MCP 서버](../api/mcp) -- `describe_page_builder` 가이드 도구 포함
+- [웹사이트 라우팅 및 다중 사이트](./websites.md) -- 요청이 교회/사이트로 연결되는 방식과 사용자 지정 도메인 라우팅
+- [Content 엔드포인트](../api/endpoints/content.md) -- 페이지, 섹션, 요소, 블록, 글, 리디렉션, 설정의 전체 REST 인터페이스
+- [AppHelper](../shared-libraries/app-helper.md) -- 렌더러, 레지스트리, 구분선, 위젯을 제공하는 npm 패키지
+- [MCP 서버](../api/mcp.md) -- `describe_page_builder` 가이드 도구 포함
 - [페이지 편집기(최종 사용자)](/docs/b1-admin/website/page-editor) -- 직원용 편집기 문서

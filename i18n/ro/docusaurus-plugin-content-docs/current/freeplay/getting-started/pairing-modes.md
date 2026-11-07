@@ -1,5 +1,6 @@
 ---
 title: "Alegerea unui mod de asociere"
+description: "Alegeți modul potrivit de asociere a unui TV FreePlay: un calendar din FreePlay Admin, un plan de serviciu din B1 Admin sau fără asociere."
 ---
 
 # Alegerea unui mod de asociere
@@ -32,7 +33,7 @@ Introdu codul în **FreePlay Admin**, la [admin.freeplay.church](https://admin.f
 
 **Cel mai potrivit pentru:** Afișaje în holuri și pe coridoare, bucle de anunțuri și săli de clasă în care lecția trebuie să fie deja pornită când intră oamenii.
 
-Vezi **[Modul programat](../scheduled-mode/)** pentru ghidul complet.
+Vezi **[Modul programat](../scheduled-mode/index.md)** pentru ghidul complet.
 
 ## Modul plan (B1 Admin)
 
@@ -42,7 +43,7 @@ Introdu codul în **B1 Admin** atunci când vrei ca televizorul să urmeze un ti
 
 **Cel mai potrivit pentru:** Televizoare care afișează conținut legat de planul săptămânal de slujbă, când cineva pornește redarea la momentul potrivit.
 
-Vezi **[Modul plan](../plan-mode/)** pentru ghidul complet.
+Vezi **[Modul plan](../plan-mode/index.md)** pentru ghidul complet.
 
 :::tip
 Poți reda și planul curent de slujbă conform unui program. În FreePlay Admin, adaugă o intrare în calendar și alege tipul de plan sub **Planuri de slujbă**.
@@ -50,7 +51,7 @@ Poți reda și planul curent de slujbă conform unui program. În FreePlay Admin
 
 ## Furnizori de conținut (fără asociere)
 
-Dacă nu trebuie deloc să asociezi televizorul, poți naviga direct prin furnizorii de conținut. Furnizori precum [Lessons.church](../../lessons-church/) și Bible Project au conținut pe care îl poți descărca și reda oricând dorești.
+Dacă nu trebuie deloc să asociezi televizorul, poți naviga direct prin furnizorii de conținut. Furnizori precum [Lessons.church](../../lessons-church/index.md) și Bible Project au conținut pe care îl poți descărca și reda oricând dorești.
 
 **Cel mai potrivit pentru:** Televizoare unde voluntarii aleg ce să redea în fiecare săptămână sau când vrei să explorezi ce este disponibil.
 
@@ -60,6 +61,6 @@ Poți deschide oricând ecranul **Furnizori** din **Setări**, în partea de jos
 
 ## Articole înrudite
 
-- **[Modul programat](../scheduled-mode/)** - Programează televizoarele într-un calendar cu FreePlay Admin
-- **[Modul plan](../plan-mode/)** - Ghid complet pentru asocierea cu un plan de slujbă
-- **[Furnizori de conținut](../content-providers/)** - Navighează și descarcă conținut din surse externe
+- **[Modul programat](../scheduled-mode/index.md)** - Programează televizoarele într-un calendar cu FreePlay Admin
+- **[Modul plan](../plan-mode/index.md)** - Ghid complet pentru asocierea cu un plan de slujbă
+- **[Furnizori de conținut](../content-providers/index.md)** - Navighează și descarcă conținut din surse externe

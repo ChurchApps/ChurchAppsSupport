@@ -1,5 +1,7 @@
 ---
-title: "Biblija"
+title: "Biblijos skaitymas B1.church"
+sidebar_label: "Biblija"
+description: "Skaitykite Šventąjį Raštą B1.church Biblijos skaitykloje su knygos, skyriaus ir vertimo valdikliais bei Biblijos puslapiu kasdieniam skaitymui."
 ---
 
 # Biblija

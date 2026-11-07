@@ -1,5 +1,6 @@
 ---
 title: "Perpesanan"
+description: "Mulai, baca, edit, dan hapus percakapan pribadi satu lawan satu dengan anggota gereja di B1 Mobile, serta temukan orang melalui Direktori Anggota."
 ---
 
 # Perpesanan
@@ -13,7 +14,7 @@ B1 Mobile menyediakan fitur perpesanan pribadi sehingga Anda dapat mengobrol sat
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile menyediakan fitur perpesanan pribadi sehingga Anda dapat mengobrol sat
 ## Memulai Percakapan Baru
 
 1. Dari layar perpesanan, ketuk opsi untuk memulai percakapan baru.
-2. Gunakan kolom pencarian untuk menemukan anggota yang ingin Anda hubungi. Anda juga dapat menemukan anggota melalui [Direktori Anggota](./member-directory).
+2. Gunakan kolom pencarian untuk menemukan anggota yang ingin Anda hubungi. Anda juga dapat menemukan anggota melalui [Direktori Anggota](./member-directory.md).
 3. Pilih anggota dari hasil pencarian.
 4. Ketik pesan Anda lalu ketuk **Kirim**.
 
@@ -52,11 +53,11 @@ Gunakan perpesanan untuk berkoordinasi dengan sesama relawan, menindaklanjuti se
 :::
 
 :::info
-Aktifkan [notifikasi push](./notifications) untuk mendapatkan pemberitahuan saat seseorang mengirim pesan baru kepada Anda, bahkan ketika aplikasi tidak sedang dibuka.
+Aktifkan [notifikasi push](./notifications.md) untuk mendapatkan pemberitahuan saat seseorang mengirim pesan baru kepada Anda, bahkan ketika aplikasi tidak sedang dibuka.
 :::
 
 ## Artikel Terkait
 
-- [Direktori Anggota](./member-directory) -- Temukan anggota untuk dihubungi
-- [Notifikasi](./notifications) -- Dapatkan pemberitahuan tentang pesan baru
-- [Grup](../groups/) -- Ikut serta dalam percakapan grup
+- [Direktori Anggota](./member-directory.md) -- Temukan anggota untuk dihubungi
+- [Notifikasi](./notifications.md) -- Dapatkan pemberitahuan tentang pesan baru
+- [Grup](../groups/index.md) -- Ikut serta dalam percakapan grup

@@ -1,5 +1,6 @@
 ---
 title: "Anunțuri"
+description: "Redați în buclă un dosar de slide-uri pe TV-ul FreePlay pentru anunțuri: alegeți dosarul furnizorului, mențineți sincronizarea și opriți la final."
 ---
 
 # Anunțuri
@@ -13,7 +14,7 @@ FreePlay poate reda în buclă un folder cu diapozitive de anunțuri pe televizo
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Conectați-vă la un furnizor de conținut](./connecting-providers) care conține diapozitivele de anunțuri, cum ar fi Dropbox sau OneDrive
+- [Conectați-vă la un furnizor de conținut](./connecting-providers.md) care conține diapozitivele de anunțuri, cum ar fi Dropbox sau OneDrive
 - Adunați imaginile sau videoclipurile pe care doriți să le redați în buclă într-un singur folder la acel furnizor
 
 </div>
@@ -37,7 +38,7 @@ După ce diapozitivele au fost descărcate, în partea de sus a barei laterale a
 - După ultimul diapozitiv, bucla reîncepe de la primul
 - Dacă folderul conține un singur videoclip, acesta se repetă pe loc
 
-Bucla se redă din fișierele salvate pe dispozitiv, deci continuă să ruleze fără conexiune la internet. Puteți folosi aceleași comenzi de la telecomandă ca pentru orice alt conținut -- consultați [Redarea conținutului](./playing-content).
+Bucla se redă din fișierele salvate pe dispozitiv, deci continuă să ruleze fără conexiune la internet. Puteți folosi aceleași comenzi de la telecomandă ca pentru orice alt conținut -- consultați [Redarea conținutului](./playing-content.md).
 
 ## Actualizarea diapozitivelor
 
@@ -61,6 +62,6 @@ Deconectarea furnizorului dezactivează și anunțurile care provin de la acesta
 
 ## Articole înrudite
 
-- **[Conectarea la furnizori](./connecting-providers)** - Conectați furnizorul care conține diapozitivele dumneavoastră
-- **[Navigarea și descărcarea conținutului](./browsing-content)** - Parcurgeți folderele unui furnizor și redați conținutul la cerere
-- **[Redarea conținutului](./playing-content)** - Comenzile playerului de pe telecomanda televizorului
+- **[Conectarea la furnizori](./connecting-providers.md)** - Conectați furnizorul care conține diapozitivele dumneavoastră
+- **[Navigarea și descărcarea conținutului](./browsing-content.md)** - Parcurgeți folderele unui furnizor și redați conținutul la cerere
+- **[Redarea conținutului](./playing-content.md)** - Comenzile playerului de pe telecomanda televizorului

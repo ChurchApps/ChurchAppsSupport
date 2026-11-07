@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "B1 Admin에서 실시간 웹훅을 설정하세요. 엔드포인트를 등록하고, 이벤트를 선택하며, HMAC 서명을 검증하고, 재시도를 처리하며, 실패한 페이로드를 다시 전송합니다."
 ---
 
 # Webhooks

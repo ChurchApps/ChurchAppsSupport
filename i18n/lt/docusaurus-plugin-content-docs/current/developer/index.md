@@ -1,5 +1,6 @@
 ---
 title: "Kūrėjo dokumentacija"
+description: "ChurchApps kūrėjo dokumentacija: vietinė sąranka, API ir žiniatinklio programų vadovai, bendrosios bibliotekos, mobiliųjų programų kūrimas ir diegimas."
 ---
 
 # Kūrėjo dokumentacija
@@ -24,16 +25,16 @@ Pagrindinės savybės:
 
 ## Ką apima šis skyrius
 
-- **[Diegimas](setup/)** -- Vietinė kūrimo aplinka, reikalavimai ir konfigūracija
-  - [Reikalavimai](setup/prerequisites) -- Reikalingi įrankiai ir programinė įranga
-  - [Projektų apžvalga](setup/project-overview) -- Visi projektai vienoje vietoje
-  - [Aplinkos kintamieji](setup/environment-variables) -- `.env` failų konfigūravimas
-- **[API](api/)** -- Pagrindinio API vietinis diegimas, duomenų bazės inicializavimas ir modulių struktūra
-- **[Žiniatinklio programos](web-apps/)** -- B1Admin, B1App ir LessonsApp paleidimas vietoje
-- **[Mobilios programos](mobile/)** -- B1Mobile ir kitų Expo programų kūrimas
-- **[Bendros bibliotekos](shared-libraries/)** -- Darbas su Helpers, ApiHelper ir AppHelper
-- **[Diegimas](deployment/)** -- API, žiniatinklio ir mobiliųjų programų diegimas
-- **[FreePlay turinio teikėjas](freeplay-content-provider)** -- Jūsų pamokų bibliotekos integravimas su FreePlay
+- **[Diegimas](./setup/index.md)** -- Vietinė kūrimo aplinka, reikalavimai ir konfigūracija
+  - [Reikalavimai](./setup/prerequisites.md) -- Reikalingi įrankiai ir programinė įranga
+  - [Projektų apžvalga](./setup/project-overview.md) -- Visi projektai vienoje vietoje
+  - [Aplinkos kintamieji](./setup/environment-variables.md) -- `.env` failų konfigūravimas
+- **[API](./api/index.md)** -- Pagrindinio API vietinis diegimas, duomenų bazės inicializavimas ir modulių struktūra
+- **[Žiniatinklio programos](./web-apps/index.md)** -- B1Admin, B1App ir LessonsApp paleidimas vietoje
+- **[Mobilios programos](./mobile/index.md)** -- B1Mobile ir kitų Expo programų kūrimas
+- **[Bendros bibliotekos](./shared-libraries/index.md)** -- Darbas su Helpers, ApiHelper ir AppHelper
+- **[Diegimas](./deployment/index.md)** -- API, žiniatinklio ir mobiliųjų programų diegimas
+- **[FreePlay turinio teikėjas](./freeplay-content-provider.md)** -- Jūsų pamokų bibliotekos integravimas su FreePlay
 
 ## Bendruomenė ir ištekliai
 

@@ -1,5 +1,6 @@
 ---
 title: "Prehľad FreePlay"
+description: "Prehľad FreePlay, aplikácie pre triedne TV na prehrávanie lekcií offline na Android TV, Fire TV a Apple TV, s odkazmi na návody na nastavenie."
 ---
 
 # Prehľad FreePlay
@@ -22,10 +23,10 @@ Náš **<a href="/guides/freeplay-b1admin" target="_blank">kompletný sprievodca
 
 - **Prehrávanie offline** - Stiahnite si videá a obrázkové snímky vopred, aby ste sa počas bohoslužieb nikdy nemuseli spoliehať na Wi-Fi
 - **Správa stiahnutého obsahu** - Zobrazujte a spravujte všetok stiahnutý obsah v **Nastavenia** > **Stiahnuté**
-- **Plánovaný režim** - Vytvorte playlisty a zaraďte ich do kalendára na [admin.freeplay.church](https://admin.freeplay.church); spárované televízory ich prehrajú v správny čas bez toho, aby niekto stlačil Štart -- pozrite [Plánovaný režim](./scheduled-mode/)
+- **Plánovaný režim** - Vytvorte playlisty a zaraďte ich do kalendára na [admin.freeplay.church](https://admin.freeplay.church); spárované televízory ich prehrajú v správny čas bez toho, aby niekto stlačil Štart -- pozrite [Plánovaný režim](./scheduled-mode/index.md)
 - **Párovanie s plánom** - Prepojte svoje zariadenie s plánom bohoslužieb cirkvi pre koordinovaný obsah v jednotlivých miestnostiach
 - **Poskytovatelia obsahu** - Prehliadajte a sťahujte obsah z externých zdrojov ako [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox a OneDrive
-- **Oznámenia** - Opakujte priečinok so snímkami z pripojeného poskytovateľa -- pozrite [Oznámenia](./content-providers/announcements)
+- **Oznámenia** - Opakujte priečinok so snímkami z pripojeného poskytovateľa -- pozrite [Oznámenia](./content-providers/announcements.md)
 - **Vhodné pre diaľkový ovládač TV** - Celú aplikáciu ovládajte štandardným diaľkovým ovládačom pomocou smerových tlačidiel a tlačidla výberu
 - **Zbaliteľný bočný panel** - Štíhly bočný panel udržiava navigáciu dostupnú bez zahlcovania obrazovky
 
@@ -35,10 +36,10 @@ Keď spustíte FreePlay, pripojí sa k vašim poskytovateľom obsahu a skontrolu
 
 ## Sekcie
 
-- **[Začíname](./getting-started/)** - Nainštalujte aplikáciu, spustite ju a vyberte si spôsob pripojenia
-- **[Plánovaný režim](./scheduled-mode/)** - Spárujte televízory s kalendárom a spravujte ich vo FreePlay Admin
-- **[Režim plánu](./plan-mode/)** - Spárujte s plánom bohoslužieb cirkvi
-- **[Poskytovatelia obsahu](./content-providers/)** - Pripojte sa k externým zdrojom obsahu
+- **[Začíname](./getting-started/index.md)** - Nainštalujte aplikáciu, spustite ju a vyberte si spôsob pripojenia
+- **[Plánovaný režim](./scheduled-mode/index.md)** - Spárujte televízory s kalendárom a spravujte ich vo FreePlay Admin
+- **[Režim plánu](./plan-mode/index.md)** - Spárujte s plánom bohoslužieb cirkvi
+- **[Poskytovatelia obsahu](./content-providers/index.md)** - Pripojte sa k externým zdrojom obsahu
 
 :::info
 FreePlay je súčasťou bezplatnej sady nástrojov s otvoreným zdrojovým kódom pre cirkvi od [ChurchApps](https://churchapps.org).

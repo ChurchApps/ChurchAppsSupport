@@ -31,7 +31,7 @@ Dostawca przypisany do kościoła (wiersz w `content.storageProviders`, zarządz
 
 Uwaga o zakresie: wybór dostawcy obejmuje przepływ **plików i zasobów** w treściach, czyli miejsce, gdzie przechowywane są duże media. Przesyłanie galerii, logo i zdjęć pozostaje u domyślnego dostawcy. Pobierają one klucze z pamięci i budują adresy URL po stronie klienta, więc przypisywanie do kościoła na razie nie ma tu zastosowania.
 
-Ten sam punkt integracji obsługuje również [Własny magazyn (Bring-Your-Own Storage)](./byos-storage): kościoły mogą podłączyć Dysk Google, Dropbox, OneDrive lub własny kubełek zgodny z S3 zamiast planu MinistryStuff.
+Ten sam punkt integracji obsługuje również [Własny magazyn (Bring-Your-Own Storage)](./byos-storage.md): kościoły mogą podłączyć Dysk Google, Dropbox, OneDrive lub własny kubełek zgodny z S3 zamiast planu MinistryStuff.
 
 ## Rozliczenia
 

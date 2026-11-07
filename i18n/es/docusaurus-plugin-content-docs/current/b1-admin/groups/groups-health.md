@@ -1,5 +1,6 @@
 ---
 title: "Salud de grupos"
+description: "Revisa la salud de los grupos en B1 Admin con una tabla de 90 días: miembros, altas, bajas, abandono y asistencia media para detectar grupos a seguir."
 ---
 
 # Salud de grupos
@@ -13,8 +14,8 @@ El panel de Salud de grupos le da una vista de pájaro de cómo están funcionan
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesita al menos algunos grupos con miembros para ver datos significativos. Vea [Creación de grupos](creating-groups).
-- Los datos de asistencia se extraen de sesiones registradas. Vea la sección [Asistencia](../attendance/).
+- Necesita al menos algunos grupos con miembros para ver datos significativos. Vea [Creación de grupos](./creating-groups.md).
+- Los datos de asistencia se extraen de sesiones registradas. Vea la sección [Asistencia](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Hacer clic en un nombre de grupo lo lleva directamente a la página de detalle d
 
 ## Artículos relacionados
 
-- [Creación de grupos](creating-groups) — configurar grupos
-- [Miembros del grupo](group-members) — gestionar membresía de grupo
-- [Seguimiento de asistencia](../attendance/tracking-attendance) — registrar sesiones de asistencia que alimentan este panel
+- [Creación de grupos](./creating-groups.md) — configurar grupos
+- [Miembros del grupo](./group-members.md) — gestionar membresía de grupo
+- [Seguimiento de asistencia](../attendance/tracking-attendance.md) — registrar sesiones de asistencia que alimentan este panel

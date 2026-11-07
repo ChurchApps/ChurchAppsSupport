@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Reliez B1 Admin à Zapier pour lancer des automatisations sur les nouvelles personnes, les dons et les membres de groupes, et réinscrire des données dans B1 sans programmation."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Choisissez un déclencheur, puis ajoutez une ou plusieurs étapes d'action. Exem
 ### Publier les dons dans un canal Slack avec une carte plus riche que le connecteur intégré
 
 - **Déclencheur** — B1 : Nouveau don
-- **Action** — Slack : Envoyer un message dans un canal. Composez la mise en page de votre choix -- boutons, pièces jointes, etc. -- que le [connecteur Slack intégré](./slack-discord) ne permet pas de réaliser.
+- **Action** — Slack : Envoyer un message dans un canal. Composez la mise en page de votre choix -- boutons, pièces jointes, etc. -- que le [connecteur Slack intégré](./slack-discord.md) ne permet pas de réaliser.
 
 ### Ajouter les nouveaux membres de groupe à un groupe Google
 
@@ -106,6 +107,6 @@ Cela signifie que le déclencheur ne se déclenche que pour les événements qui
 
 ## Voir aussi
 
-- [Make](./make) -- le même principe, sur une autre plateforme
-- [Slack et Discord](./slack-discord) -- notifications de clavardage plus simples, sans Zapier
+- [Make](./make.md) -- le même principe, sur une autre plateforme
+- [Slack et Discord](./slack-discord.md) -- notifications de clavardage plus simples, sans Zapier
 - [Webhooks (référence développeur)](/docs/developer/api/webhooks)

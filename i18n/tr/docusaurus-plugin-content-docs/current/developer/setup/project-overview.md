@@ -1,5 +1,6 @@
 ---
 title: "Proje Genel Bakışı"
+description: "Her ChurchApps deposunu kategorisine göre listeleyin: çerçeveler, geliştirme portları, veritabanları ve paylaşılan @churchapps paketlerinin bunları nasıl birbirine bağladığı; geliştirici kurulum dokümanlarında."
 ---
 
 # Proje Genel Bakışı
@@ -13,7 +14,7 @@ ChurchApps, [ChurchApps GitHub organizasyonu](https://github.com/ChurchApps) alt
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Üzerinde çalışmak istediğiniz proje kategorisi için [ön koşulları](./prerequisites) yükleyin
+- Üzerinde çalışmak istediğiniz proje kategorisi için [ön koşulları](./prerequisites.md) yükleyin
 
 </div>
 
@@ -72,7 +73,7 @@ Paylaşılan kod, `@churchapps` kapsamı altında npm'de yayımlanır ve yukarı
 | `@churchapps/integration-sdk` | B1.church entegrasyon araç seti: webhook'lar, REST istemcisi, OAuth | Harici entegrasyon geliştiricileri |
 | `@churchapps/texting` | SMS sağlayıcı soyutlaması | Api |
 
-Çalışma alanı kurulumu ve yayım iş akışı için [Paylaşılan Kütüphaneler](../shared-libraries/) bölümüne bakın.
+Çalışma alanı kurulumu ve yayım iş akışı için [Paylaşılan Kütüphaneler](../shared-libraries/index.md) bölümüne bakın.
 
 ## Proje İlişkileri
 
@@ -90,5 +91,5 @@ Tüm ön yüz uygulamaları `@churchapps/helpers` paketine bağlıdır. Web uygu
 
 ## Sonraki Adımlar
 
-- **[Ortam Değişkenleri](./environment-variables)** -- API'lere bağlanmak için `.env` dosyalarınızı yapılandırın
-- **[API Yerel Kurulumu](../api/local-setup)** -- Arka uç API'sini yerel olarak kurun
+- **[Ortam Değişkenleri](./environment-variables.md)** -- API'lere bağlanmak için `.env` dosyalarınızı yapılandırın
+- **[API Yerel Kurulumu](../api/local-setup.md)** -- Arka uç API'sini yerel olarak kurun

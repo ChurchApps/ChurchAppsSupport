@@ -1,5 +1,6 @@
 ---
 title: "Pridedami svečiai"
+description: "Pridėkite lankantį vaiką, gimininį ar draugą prie namų ūkio B1 Checkin savitarnos terminale, tada priskirkite grupes ir užbaikite registraciją."
 ---
 
 # Pridedami svečiai
@@ -13,8 +14,8 @@ Jei kas nors atvyksta pas jūsų šeimą ir turi prisiregistruoti kartu su jūs�
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Raskite savo šeimą](./looking-up-members) ir paieškos rezultatuose pasirinkite narį
-- Būkite [namų ūkio peržiūros ekrane](./household-review), kuriame matote savo šeimos narius
+- [Raskite savo šeimą](./looking-up-members.md) ir paieškos rezultatuose pasirinkite narį
+- Būkite [namų ūkio peržiūros ekrane](./household-review.md), kuriame matote savo šeimos narius
 
 </div>
 
@@ -36,8 +37,8 @@ Jei svečio vardas sutampa su asmeniu, kuris jau yra sistemoje ir nėra narys, p
 
 Kai svečias pasirodys jūsų namų ūkio sąraše, galite:
 
-- **Išskleisti jo kortelę** ir [priskirti jį grupei](./group-assignment) taip pat, kaip bet kurį kitą šeimos narį.
-- **[Prisiregistruoti](./completing-checkin)** visam namų ūkiui, įskaitant svečią.
+- **Išskleisti jo kortelę** ir [priskirti jį grupei](./group-assignment.md) taip pat, kaip bet kurį kitą šeimos narį.
+- **[Prisiregistruoti](./completing-checkin.md)** visam namų ūkiui, įskaitant svečią.
 
 ## Atšaukimas
 
@@ -49,4 +50,4 @@ Pridėjus svečią savitarnos terminale, bažnyčios duomenų bazėje sukuriamas
 
 ## Kitas žingsnis
 
-Pridėję svečius ir, jei reikia, [priskirę grupes](./group-assignment), galite [užbaigti prisiregistravimą](./completing-checkin).
+Pridėję svečius ir, jei reikia, [priskirę grupes](./group-assignment.md), galite [užbaigti prisiregistravimą](./completing-checkin.md).

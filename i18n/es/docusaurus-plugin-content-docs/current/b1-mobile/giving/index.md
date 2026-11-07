@@ -1,5 +1,7 @@
 ---
-title: "Ofrendas"
+title: "Donativos en la aplicación B1 Mobile"
+sidebar_label: "Ofrendas"
+description: "Haga un donativo en la aplicación B1 Mobile, consulte sus donativos del año y gestione los métodos de pago guardados. Abarca las pestañas Resumen, Donar, Gestionar e Historial."
 ---
 
 # Ofrendas
@@ -24,7 +26,7 @@ La sección de ofrendas está organizada en cuatro pestañas:
 Todas las donaciones realizadas a través de B1 Mobile se procesan de forma segura mediante **Stripe**. Tu información de pago es manejada por la infraestructura segura de Stripe y nunca se almacena en los servidores de ChurchApps. Puedes dar con la confianza de que tus datos financieros están protegidos.
 
 :::info
-El administrador de tu iglesia configura los fondos disponibles y el procesamiento de pagos a través de [B1 Admin](../../b1-admin/). Si no ves una opción de ofrendas en la aplicación, es posible que tu iglesia aún no tenga esta función configurada.
+El administrador de tu iglesia configura los fondos disponibles y el procesamiento de pagos a través de [B1 Admin](../../b1-admin/index.md). Si no ves una opción de ofrendas en la aplicación, es posible que tu iglesia aún no tenga esta función configurada.
 :::
 
 ## Lo Que Puedes Hacer
@@ -38,6 +40,6 @@ Esto es lo que puedes hacer desde la sección de ofrendas:
 
 ## Próximos Pasos
 
-- [Realizar una Donación](./making-donations) -- Aprende cómo hacer una ofrenda desde la aplicación
-- [Administrar Métodos de Pago](./managing-payments) -- Agrega o elimina métodos de pago guardados
-- [Historial de Donaciones](./donation-history) -- Consulta tu resumen de ofrendas y donaciones anteriores
+- [Realizar una Donación](./making-donations.md) -- Aprende cómo hacer una ofrenda desde la aplicación
+- [Administrar Métodos de Pago](./managing-payments.md) -- Agrega o elimina métodos de pago guardados
+- [Historial de Donaciones](./donation-history.md) -- Consulta tu resumen de ofrendas y donaciones anteriores

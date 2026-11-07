@@ -1,5 +1,6 @@
 ---
 title: "Ghi nhận điểm danh"
+description: "Ghi điểm danh cho mỗi buổi họp nhóm trong B1 Admin: tạo buổi, đánh dấu người tham dự, lưu ghi chú và in danh sách điểm danh hoặc xuất ra bảng tính."
 ---
 
 # Ghi nhận điểm danh

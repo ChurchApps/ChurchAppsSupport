@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: sukurkite savo pamokslų biblioteką ir tiesioginę transliaciją"
+description: "Importuokite YouTube ar Vimeo pamokslus, sudėkite juos į grojaraščius ir nustatykite pasikartojančias tiesiogines transliacijas su pokalbiu B1 Admin."
 ---
 
 # Sukurkite savo pamokslų biblioteką ir tiesioginę transliaciją

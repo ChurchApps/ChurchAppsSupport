@@ -1,5 +1,6 @@
 ---
 title: "Administrar Métodos de Pago"
+description: "Agregue, revise y elimine tarjetas guardadas en la pestaña Gestionar de la sección de donativos de B1 Mobile, para que los donativos repetidos sean más rápidos sin volver a ingresar los datos de la tarjeta."
 ---
 
 # Administrar Métodos de Pago
@@ -13,7 +14,7 @@ La pestaña **Administrar** en la sección de ofrendas te permite ver y administ
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 
 </div>
 
@@ -31,7 +32,7 @@ Para agregar una nueva tarjeta:
 4. Ingresa los datos de tu tarjeta. La información se envía de forma segura a **Stripe** para su procesamiento.
 5. Una vez guardada, la nueva tarjeta aparecerá en tu lista de métodos de pago.
 
-Tu tarjeta guardada estará disponible como opción de pago la próxima vez que [realices una donación](./making-donations) desde la pestaña **Donar**.
+Tu tarjeta guardada estará disponible como opción de pago la próxima vez que [realices una donación](./making-donations.md) desde la pestaña **Donar**.
 
 ## Eliminar un Método de Pago
 
@@ -44,7 +45,7 @@ Si ya no deseas tener una tarjeta registrada, puedes eliminarla desde la pestañ
 La tarjeta ya no aparecerá como opción de pago cuando realices una donación.
 
 :::info
-Eliminar un método de pago no afecta las donaciones anteriores. Tu [historial de donaciones](./donation-history) permanece sin cambios.
+Eliminar un método de pago no afecta las donaciones anteriores. Tu [historial de donaciones](./donation-history.md) permanece sin cambios.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Mantén al menos un método de pago guardado para dar rápidamente. De esta mane
 
 ## Artículos Relacionados
 
-- [Realizar una Donación](./making-donations) -- Aprende cómo hacer una ofrenda usando un método de pago guardado
-- [Historial de Donaciones](./donation-history) -- Consulta tu resumen de ofrendas y donaciones anteriores
+- [Realizar una Donación](./making-donations.md) -- Aprende cómo hacer una ofrenda usando un método de pago guardado
+- [Historial de Donaciones](./donation-history.md) -- Consulta tu resumen de ofrendas y donaciones anteriores

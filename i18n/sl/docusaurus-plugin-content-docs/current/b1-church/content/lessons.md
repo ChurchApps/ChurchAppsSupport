@@ -1,5 +1,7 @@
 ---
-title: "Lekcije (opuščeno)"
+title: "Zastarel zavihek Lessons na B1.church"
+sidebar_label: "Lekcije (opuščeno)"
+description: "Zavihek Lessons v B1.church je zastarel. Kurikulum lekcij najdete na Lessons.church, predvajate pa ga na učilniških televizorjih s FreePlay."
 ---
 
 # Lekcije (opuščeno)
@@ -9,7 +11,7 @@ Vgrajeni zavihek **Lekcije** na B1.church je opuščen. Predvajanje učnih gradi
 
 Za brskanje, načrtovanje ali urejanje učnih gradiv neposredno se v brskalniku prijavite v [Lessons.church](https://lessons.church). Za predvajanje lekcij na učilniškem televizorju namestite [FreePlay](/docs/freeplay/getting-started/) na svojo TV napravo.
 
-Starši skupin, povezanih z vrsto načrta lekcij v B1Admin, na strani [podrobnosti skupine](/docs/b1-church/groups/group-details.md) vidijo **lekcijo za ta teden** — ne na tem opuščenem zavihku.
+Starši skupin, povezanih z vrsto načrta lekcij v B1Admin, na strani [podrobnosti skupine](../groups/group-details.md) vidijo **lekcijo za ta teden** — ne na tem opuščenem zavihku.
 :::
 
 <div class="article-intro">

@@ -1,5 +1,6 @@
 ---
 title: "Adománycsomagok"
+description: "Adományok tételekbe rendezése a B1 Admin-ban, majd lezárás, nyomtatás vagy export, hogy az összegek egyezzenek a banki befizetésekkel."
 ---
 
 # Adománycsomagok

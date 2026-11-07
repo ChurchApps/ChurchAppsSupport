@@ -1,5 +1,6 @@
 ---
 title: "Személyre szabás"
+description: "Szakaszok, szerepkörök vagy műveletek elrejtése és a tartalom átrendezése egy Lessons.church-leckében, egy vagy minden osztályteremre."
 ---
 
 # Személyre szabás

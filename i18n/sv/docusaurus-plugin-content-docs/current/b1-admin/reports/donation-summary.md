@@ -1,5 +1,6 @@
 ---
 title: "Gåvosammanfattning"
+description: "Kör rapporten Donation Summary i B1 Admin för att se total gåvovolym, antal unika givare och belopp per fond för valfritt datumintervall."
 ---
 
 # Gåvosammanfattning

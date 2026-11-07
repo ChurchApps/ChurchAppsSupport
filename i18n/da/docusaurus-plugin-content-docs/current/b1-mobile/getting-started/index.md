@@ -1,5 +1,7 @@
 ---
-title: "Kom i gang"
+title: "Kom i gang med B1 Mobile (udfaset)"
+sidebar_label: "Kom i gang"
+description: "Opsæt B1 Mobile på din telefon: find appen, log ind med din ChurchApps-konto og vælg din kirke. B1 Mobile er udfaset til fordel for PWA'en."
 ---
 
 # Kom i gang
@@ -21,10 +23,10 @@ Det er det. Når du har valgt din kirke, indlæser appen din kirkes branding, na
 
 ## I dette afsnit
 
-- [Installation af appen](./installing) -- Hvor du downloader B1 Mobile og enhedsanvenderkrav.
-- [Logging ind](./logging-in) -- Hvordan du logger ind eller opretter en ny konto.
-- [Skifter kirker](./switching-churches) -- Hvordan du skifter mellem kirker, hvis du tilhører mere end en.
+- [Installation af appen](./installing.md) -- Hvor du downloader B1 Mobile og enhedsanvenderkrav.
+- [Logging ind](./logging-in.md) -- Hvordan du logger ind eller opretter en ny konto.
+- [Skifter kirker](./switching-churches.md) -- Hvordan du skifter mellem kirker, hvis du tilhører mere end en.
 
 :::tip
-B1 Mobile bruger den samme ChurchApps-konto som alle andre ChurchApps-produkter. Hvis du allerede har en konto fra [B1.church](../../b1-church/), B1 Admin eller Lessons.church, kan du bruge de samme legitimationsoplysninger til at logge ind.
+B1 Mobile bruger den samme ChurchApps-konto som alle andre ChurchApps-produkter. Hvis du allerede har en konto fra [B1.church](../../b1-church/index.md), B1 Admin eller Lessons.church, kan du bruge de samme legitimationsoplysninger til at logge ind.
 :::

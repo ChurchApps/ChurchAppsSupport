@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Hubungkan Clearstream SMS ke B1 Admin lewat Zapier: kirim SMS saat ada pemberian atau pengiriman formulir baru, dan tarik balasan masuk kembali sebagai data orang."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Aktifkan Zap. B1 mendaftarkan webhook donasi saat Zap diaktifkan. Anda akan meli
 
 ## Lihat Juga
 
-- [Text In Church](./text-in-church): platform SMS alternatif dengan pola pengaturan serupa
-- [Mobile Message](./mobile-message): untuk gereja di luar AS
-- [Zapier (ringkasan)](../zapier): sisi B1 dari setiap resep Zapier
+- [Text In Church](./text-in-church.md): platform SMS alternatif dengan pola pengaturan serupa
+- [Mobile Message](./mobile-message.md): untuk gereja di luar AS
+- [Zapier (ringkasan)](../zapier.md): sisi B1 dari setiap resep Zapier
 - [Dokumentasi API Clearstream](https://api-docs.clearstream.io/): untuk integrasi kustom di luar aplikasi Zapier

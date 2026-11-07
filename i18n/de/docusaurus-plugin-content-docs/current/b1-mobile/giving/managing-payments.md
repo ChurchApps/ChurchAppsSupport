@@ -1,5 +1,6 @@
 ---
 title: "Zahlungsmethoden verwalten"
+description: "Karten in B1 Mobile speichern, prüfen und entfernen (Registerkarte Verwalten), damit Wiederholungsspenden ohne erneute Eingabe schneller gehen."
 ---
 
 # Zahlungsmethoden verwalten
@@ -13,7 +14,7 @@ Der Tab **Verwalten** im Bereich Spenden zeigt dir deine gespeicherten Zahlungsm
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [Installiere B1 Mobile](../getting-started/installing) und [melde dich](../getting-started/logging-in) bei deinem Konto an
+- [Installiere B1 Mobile](../getting-started/installing.md) und [melde dich](../getting-started/logging-in.md) bei deinem Konto an
 
 </div>
 
@@ -31,7 +32,7 @@ So fügst du eine neue Karte hinzu:
 4. Gib deine Kartendaten ein. Die Informationen werden sicher an **Stripe** zur Verarbeitung übermittelt.
 5. Nach dem Speichern erscheint die neue Karte in deiner Liste der Zahlungsmethoden.
 
-Deine gespeicherte Karte steht dann beim nächsten Mal als Zahlungsoption zur Verfügung, wenn du im Tab **Spenden** eine [Spende tätigst](./making-donations).
+Deine gespeicherte Karte steht dann beim nächsten Mal als Zahlungsoption zur Verfügung, wenn du im Tab **Spenden** eine [Spende tätigst](./making-donations.md).
 
 ## Eine Zahlungsmethode entfernen
 
@@ -44,7 +45,7 @@ Wenn du eine Karte nicht mehr hinterlegt haben möchtest, kannst du sie im Tab *
 Die Karte wird beim Tätigen einer Spende nicht mehr als Zahlungsoption angezeigt.
 
 :::info
-Das Entfernen einer Zahlungsmethode wirkt sich nicht auf frühere Spenden aus. Dein [Spendenverlauf](./donation-history) bleibt unverändert.
+Das Entfernen einer Zahlungsmethode wirkt sich nicht auf frühere Spenden aus. Dein [Spendenverlauf](./donation-history.md) bleibt unverändert.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Behalte mindestens eine gespeicherte Zahlungsmethode für schnelles Spenden. So 
 
 ## Verwandte Artikel
 
-- [Eine Spende tätigen](./making-donations) -- Erfahre, wie du mit einer gespeicherten Zahlungsmethode ein Geschenk gibst
-- [Spendenverlauf](./donation-history) -- Zeige deine Spendenübersicht und frühere Spenden an
+- [Eine Spende tätigen](./making-donations.md) -- Erfahre, wie du mit einer gespeicherten Zahlungsmethode ein Geschenk gibst
+- [Spendenverlauf](./donation-history.md) -- Zeige deine Spendenübersicht und frühere Spenden an

@@ -1,5 +1,6 @@
 ---
 title: "Gegevens exporteren"
+description: "Exporteer personen naar CSV, groepsledenlijsten of een volledige B1-databasebackup vanuit B1 Admin, en zie wat de B1 Export Zip bevat."
 ---
 
 # Gegevens exporteren

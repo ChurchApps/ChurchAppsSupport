@@ -1,5 +1,7 @@
 ---
-title: "기부 내역"
+title: "B1.church의 헌금 내역 및 명세서"
+sidebar_label: "기부 내역"
+description: "B1.church 교인 포털의 Giving 페이지에서 과거 헌금 내역을 보고, 연도별로 필터링하고, 세금용 헌금 명세서를 인쇄하세요."
 ---
 
 # 기부 내역

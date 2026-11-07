@@ -1,5 +1,7 @@
 ---
-title: "Comunidad"
+title: "Funciones de comunidad en la aplicación B1 Mobile"
+sidebar_label: "Comunidad"
+description: "Use la aplicación B1 Mobile para buscar en el directorio de miembros, enviar mensajes privados a otros miembros y revisar las notificaciones push de su iglesia."
 ---
 
 # Comunidad
@@ -12,13 +14,13 @@ Las funciones de **Comunidad** en B1 Mobile te ayudan a mantenerte conectado con
 
 ## Lo Que Encontrarás
 
-- **[Directorio de Miembros](./member-directory)** -- Explora y busca en el directorio de miembros de tu iglesia. Busca personas por nombre y toca un miembro para ver su perfil con información de contacto y conexiones familiares.
-- **[Mensajería](./messaging)** -- Envía y recibe mensajes privados con otros miembros de la iglesia. Inicia nuevas conversaciones o retoma donde lo dejaste con las existentes.
-- **[Notificaciones](./notifications)** -- Mantente al día con notificaciones push sobre actividad de grupos, mensajes, asignaciones de servicio y otras actualizaciones importantes de tu iglesia.
+- **[Directorio de Miembros](./member-directory.md)** -- Explora y busca en el directorio de miembros de tu iglesia. Busca personas por nombre y toca un miembro para ver su perfil con información de contacto y conexiones familiares.
+- **[Mensajería](./messaging.md)** -- Envía y recibe mensajes privados con otros miembros de la iglesia. Inicia nuevas conversaciones o retoma donde lo dejaste con las existentes.
+- **[Notificaciones](./notifications.md)** -- Mantente al día con notificaciones push sobre actividad de grupos, mensajes, asignaciones de servicio y otras actualizaciones importantes de tu iglesia.
 
 ## Primeros Pasos
 
-Debes haber iniciado sesión para acceder a las funciones de comunidad. Si no has iniciado sesión, se te pedirá que [inicies sesión](../getting-started/logging-in) cuando intentes usar cualquiera de estas secciones.
+Debes haber iniciado sesión para acceder a las funciones de comunidad. Si no has iniciado sesión, se te pedirá que [inicies sesión](../getting-started/logging-in.md) cuando intentes usar cualquiera de estas secciones.
 
 El directorio de miembros, la mensajería y las notificaciones son accesibles desde la navegación de la aplicación. Juntos, te brindan una forma sencilla de encontrar personas, comunicarte de forma privada y estar al tanto de lo que sucede en tu iglesia.
 

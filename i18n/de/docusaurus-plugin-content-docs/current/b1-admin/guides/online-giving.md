@@ -1,5 +1,6 @@
 ---
 title: "Anleitung: Online-Spenden einrichten"
+description: "Richten Sie in B1 Admin Online-Spenden ein, indem Sie Spendenfonds anlegen, Stripe verbinden und Ihrer B1.church-Website eine Spendenseite für Mitglieder hinzufügen."
 ---
 
 # Online-Spenden einrichten
@@ -70,7 +71,7 @@ Verwenden Sie zuerst den Stripe-Testmodus, wenn Sie ohne echte Abbuchungen teste
 Verbreiten Sie die Nachricht, damit Mitglieder wissen, dass sie online spenden können.
 
 1. Teilen Sie die Spenden-URL über Ihre Website, E-Mail-Newsletter, Gemeindebriefe und soziale Medien
-2. Mitglieder können auch über die [B1 Mobile-App](../../b1-mobile/giving/) spenden -- die Spendenfunktion ist integriert
+2. Mitglieder können auch über die [B1 Mobile-App](../../b1-mobile/giving/index.md) spenden -- die Spendenfunktion ist integriert
 
 :::info
 Mitglieder, die sich anmelden, können Zahlungsmethoden speichern, wiederkehrende Spenden einrichten und ihre Spendenhistorie einsehen. Anonymes Spenden funktioniert auch -- keine Anmeldung erforderlich.

@@ -1,5 +1,7 @@
 ---
-title: "Visualizarea planurilor"
+title: "Vizualizarea planurilor de slujire în B1 Mobile"
+sidebar_label: "Visualizarea planurilor"
+description: "Verificați programul dvs. de slujire viitor și anterior în B1 Mobile, citiți detaliile planului și ordinea slujbei și tipăriți planurile pentru repetiții sau pentru culise."
 ---
 
 # Visualizarea planurilor
@@ -13,7 +15,7 @@ Ecranul de planuri din B1 Mobile vă oferă o imagine completă a programului dv
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](../getting-started/installing) și [autentificați-vă](../getting-started/logging-in) în contul dvs.
+- [Instalați B1 Mobile](../getting-started/installing.md) și [autentificați-vă](../getting-started/logging-in.md) în contul dvs.
 - Să fiți desemnat în cel puțin un plan de slujire de către administratorul bisericii dvs.
 
 </div>
@@ -61,4 +63,4 @@ Veți primi [notificări push](../community/notifications.md) când sunteți des
 
 ## Articole conexe
 
-- [Înscrierea voluntarilor](./volunteer-signup) -- Răsfoiți și vă înscrieți pentru posturile de voluntari disponibile
+- [Înscrierea voluntarilor](./volunteer-signup.md) -- Răsfoiți și vă înscrieți pentru posturile de voluntari disponibile

@@ -1,5 +1,6 @@
 ---
 title: "가용성 달력"
+description: "B1 Admin에서 예약 가능한 공간과 장비를 설정하고 캘린더에서 예약합니다. 준비 및 정리 여유 시간을 추가하고 반복 예약이나 승인이 필요한 예약을 처리합니다."
 ---
 
 # 가용성 달력
@@ -13,7 +14,7 @@ title: "가용성 달력"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 객실 및 리소스 섹션에서 최소 하나의 [객실 또는 리소스](rooms-resources)를 설정합니다
+- 객실 및 리소스 섹션에서 최소 하나의 [객실 또는 리소스](./rooms-resources.md)를 설정합니다
 - B1 Admin의 달력 섹션에 대한 편집 액세스가 필요합니다
 
 </div>
@@ -58,7 +59,7 @@ B1 Admin에서 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-men
 6. **저장**을 클릭하여 예약을 제출합니다.
 
 :::info
-객실이나 리소스에 **승인 그룹**이 구성된 경우 예약은 해당 그룹의 리더가 승인할 때까지 **보류 중**으로 나타납니다. 승인 워크플로는 [달력 승인](approvals)을 참조합니다.
+객실이나 리소스에 **승인 그룹**이 구성된 경우 예약은 해당 그룹의 리더가 승인할 때까지 **보류 중**으로 나타납니다. 승인 워크플로는 [달력 승인](./approvals.md)을 참조합니다.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ B1 Admin에서 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-men
 
 ## 관련 기사
 
-- [객실, 리소스 및 일정 예약](rooms-resources) — 예약 가능한 공간 및 장비를 설정합니다
-- [달력 승인](approvals) — 예약 요청 승인 또는 거부
-- [달력 만들기](creating-calendars) — 이벤트 달력 관리
+- [객실, 리소스 및 일정 예약](./rooms-resources.md) — 예약 가능한 공간 및 장비를 설정합니다
+- [달력 승인](./approvals.md) — 예약 요청 승인 또는 거부
+- [달력 만들기](./creating-calendars.md) — 이벤트 달력 관리

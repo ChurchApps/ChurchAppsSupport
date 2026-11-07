@@ -1,5 +1,6 @@
 ---
 title: "Hỗ trợ đa tiền tệ"
+description: "Înregistrați și raportați donații în monede diferite în B1 Admin, inclusiv introducerea manuală, donațiile online Stripe și modul de conversie a totalurilor."
 ---
 
 Thấy có lỗi: tiêu đề tiếng Việt lẫn vào file Romania. Sửa lại đúng:

@@ -1,5 +1,6 @@
 ---
 title: "Výber zariadenia"
+description: "Výber správneho zariadenia pre triedne TV s FreePlay podľa dokumentácie ChurchApps: od tyčiek Fire TV a boxov Onn po Apple TV, a ktoré vynechať."
 ---
 
 # Výber zariadenia pre FreePlay

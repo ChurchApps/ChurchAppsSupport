@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Drive smågrupper"
+description: "Sett opp smågrupper, bibelstudier og tjenesteteam i B1 Admin, og publiser deretter en menighetsomfattende kalender og gruppeseksjon på B1-nettstedet."
 ---
 
 # Drive smågrupper
@@ -78,7 +79,7 @@ Medlemmer kan oppdage, bli med i og delta i grupper fra telefonen eller datamask
 
 1. Medlemmer blar gjennom og blir med i grupper på [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Gruppemedlemmer kan se detaljer og kalendere og legge ut innlegg i [samtaler](../../b1-church/groups/conversations.md)
-3. Alle gruppefunksjonene er også tilgjengelige i [B1 Mobile-appen](../../b1-mobile/groups/)
+3. Alle gruppefunksjonene er også tilgjengelige i [B1 Mobile-appen](../../b1-mobile/groups/index.md)
 
 :::info
 Medlemmer ser sine grupper, kommende arrangementer og gruppesamtaler både på nett og i mobilen — alt holdes synkronisert.
@@ -97,4 +98,4 @@ Smågruppene dine er satt opp og koblet sammen. Medlemmer kan oppdage grupper, s
 - [Kuratert kalender](../calendars/curated-calendar.md) — bygg en samlet menighetskalender
 - [Bla i grupper (nett)](../../b1-church/groups/browsing-groups.md) — slik finner medlemmer grupper
 - [Gruppesamtaler (nett)](../../b1-church/groups/conversations.md) — gruppediskusjoner
-- [Grupper (mobil)](../../b1-mobile/groups/) — grupper i mobilappen
+- [Grupper (mobil)](../../b1-mobile/groups/index.md) — grupper i mobilappen

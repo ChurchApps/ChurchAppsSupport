@@ -1,5 +1,7 @@
 ---
-title: "Grupper"
+title: "Kirkegrupper i B1.church-medlemsportalen"
+sidebar_label: "Grupper"
+description: "Gennemse og tilmeld dig kirkegrupper på dit B1.church-site. Tjek møder, begivenheder, medlemmer og ressourcer på gruppesiderne, og chat med din gruppe."
 ---
 
 # Grupper

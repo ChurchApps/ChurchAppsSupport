@@ -1,5 +1,6 @@
 ---
 title: "Oma tallennustila (BYOS)"
+description: "Yhdistä oma Google Drive, Dropbox, OneDrive tai S3-yhteensopiva säilö B1 Adminissa, jotta seurakunnan tiedostolataukset ohittavat 100 Mt alustarajoituksen."
 ---
 
 # Oma tallennustila (BYOS)
@@ -8,7 +9,7 @@ Seurakunnat saavat noin 100 MB ilmaista isännöityä tiedostotallennustilaa (`/
 
 ## Palveluntarjoajan liitäntäkohta
 
-BYOS käyttää uudelleen [MinistryStuff](./ministrystuff):lle rakennettua tallennusliitäntää: `IStorageProvider` (`Packages/apihelper`), jonka `StorageResolver` ratkaisee seurakunnittain `content.storageProviders`-taulusta. Toisin kuin yksittäiset `churchapps`- ja `ministrystuff`-palveluntarjoajat, BYOS-palveluntarjoajat sisältävät seurakuntakohtaiset tunnistetiedot, joten `StorageResolver.forChurch` luo instanssin jokaiselle pyynnölle seurakunnan rivin perusteella. Toteutukset ovat resolverin vieressä kansiossa `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` sekä `ByosAuth` (OAuth-tokenien vaihto ja yhdellä kertaa suoritettava päivitys — Dropbox kierrättää päivitystokenit, joten päivitykset deduplikoidaan samalla tavalla kuin `ProviderProxyController`:ssa).
+BYOS käyttää uudelleen [MinistryStuff](./ministrystuff.md):lle rakennettua tallennusliitäntää: `IStorageProvider` (`Packages/apihelper`), jonka `StorageResolver` ratkaisee seurakunnittain `content.storageProviders`-taulusta. Toisin kuin yksittäiset `churchapps`- ja `ministrystuff`-palveluntarjoajat, BYOS-palveluntarjoajat sisältävät seurakuntakohtaiset tunnistetiedot, joten `StorageResolver.forChurch` luo instanssin jokaiselle pyynnölle seurakunnan rivin perusteella. Toteutukset ovat resolverin vieressä kansiossa `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` sekä `ByosAuth` (OAuth-tokenien vaihto ja yhdellä kertaa suoritettava päivitys — Dropbox kierrättää päivitystokenit, joten päivitykset deduplikoidaan samalla tavalla kuin `ProviderProxyController`:ssa).
 
 `storageProviders` sisältää tunnistetiedot: `accessToken`/`refreshToken`/`tokenExpiresAt` (salattu, OAuth-kolmikko) tai `apiKey`/`apiSecret` + `settings`-JSON (`{endpoint, region, bucket, publicBase}`, S3). Tokenit eivät koskaan päädy asiakkaalle — `GET /content/storage/providers` peittää salaisuudet ja palauttaa `connected`-totuusarvon.
 

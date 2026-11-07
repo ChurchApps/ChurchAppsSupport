@@ -1,5 +1,7 @@
 ---
-title: "Renginiai"
+title: "Bažnyčios renginiai ir registracija B1 Mobile"
+sidebar_label: "Renginiai"
+description: "Naršykite artėjančius bažnyčios renginius B1 Mobile programėlėje ir registruokite save bei šeimos narius į tuos, kuriems registracija atidaryta."
 ---
 
 # Renginiai
@@ -23,10 +25,10 @@ Renginiai gali turėti skirtingas būsenas:
 
 ## Ko jums reikia
 
-- Įdiegta [B1 Mobile](../getting-started/installing) programėlė ir [prisijungta](../getting-started/logging-in) prie paskyros
+- Įdiegta [B1 Mobile](../getting-started/installing.md) programėlė ir [prisijungta](../getting-started/logging-in.md) prie paskyros
 - Jūsų bažnyčioje renginio registracija turi būti įjungta
 
 ## Sužinokite daugiau
 
-- [Registracija į renginius](./registering) -- Žingsnis po žingsnio vadovas, kaip užsiregistruoti renginiui mobiliajame įrenginyje
-- [Savitarnos registracija](../checkin/self-checkin) -- Užsiregistruokite atvykę į renginį
+- [Registracija į renginius](./registering.md) -- Žingsnis po žingsnio vadovas, kaip užsiregistruoti renginiui mobiliajame įrenginyje
+- [Savitarnos registracija](../checkin/self-checkin.md) -- Užsiregistruokite atvykę į renginį

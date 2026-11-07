@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil et fiches assignées dans B1 Mobile"
+sidebar_label: "Profil"
+description: "Gérez nom, coordonnées, foyer et confidentialité dans le profil B1 Mobile, et traitez les fiches et tâches qui vous sont assignées."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ L'onglet **Profil** vous permet de consulter et de modifier vos informations per
 
 ### Foyer
 
-L'onglet **Foyer** affiche les membres de votre famille et leurs rôles au sein de votre foyer. Ces informations sont utilisées par des fonctionnalités comme l'[enregistrement](../checkin/), où vous pouvez enregistrer toute votre famille en une seule fois.
+L'onglet **Foyer** affiche les membres de votre famille et leurs rôles au sein de votre foyer. Ces informations sont utilisées par des fonctionnalités comme l'[enregistrement](../checkin/index.md), où vous pouvez enregistrer toute votre famille en une seule fois.
 
 ### Visibilité
 
@@ -42,6 +44,6 @@ L'onglet **Compte** donne accès à vos paramètres de sécurité.
 
 ## Prochaines étapes
 
-- [Modifier votre profil](./editing-profile) -- Mettez à jour votre nom, vos coordonnées et votre photo
-- [Foyer](./household) -- Consultez et gérez les membres de votre famille
-- [Paramètres de confidentialité](./privacy-settings) -- Contrôlez ce que les autres peuvent voir à votre sujet
+- [Modifier votre profil](./editing-profile.md) -- Mettez à jour votre nom, vos coordonnées et votre photo
+- [Foyer](./household.md) -- Consultez et gérez les membres de votre famille
+- [Paramètres de confidentialité](./privacy-settings.md) -- Contrôlez ce que les autres peuvent voir à votre sujet

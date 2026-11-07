@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Perangkat"
+description: "Pasangkan, beri label, dan hapus layar ChurchAppsPlayer dan FreePlay yang terhubung ke akun Anda di B1 Admin, agar layar gereja tetap mutakhir dan aman."
 ---
 
 # Mengelola Perangkat

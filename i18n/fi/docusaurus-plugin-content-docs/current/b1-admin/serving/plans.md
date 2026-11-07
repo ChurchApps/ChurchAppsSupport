@@ -1,5 +1,6 @@
 ---
 title: "Palvelusuunnitelmat"
+description: "Määritä vapaaehtoisten aikataulutus B1 Adminissa: luo palvelusuunnitelmat, kopioi aiemmat viikot, nimeä tiimiläiset paikkoihin ja hallitse muistutuksia."
 ---
 
 # Palvelusuunnitelmat

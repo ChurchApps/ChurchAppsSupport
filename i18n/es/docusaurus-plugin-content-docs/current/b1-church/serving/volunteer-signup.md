@@ -1,5 +1,7 @@
 ---
-title: "Inscripción de voluntarios"
+title: "Inscripción de voluntarios en el portal de miembros de B1.church"
+sidebar_label: "Inscripción de voluntarios"
+description: "Explore los puestos de voluntariado abiertos por categoría e inscríbase en los próximos servicios, o elimine su inscripción en B1.church antes de la fecha límite."
 ---
 
 # Inscripción de voluntarios
@@ -74,4 +76,4 @@ Revisa la página de voluntarios con regularidad, sobre todo al principio de la 
 ## Artículos relacionados
 
 - [Resumen de servicio](./index.md) -- Descripción general de las funciones de servicio en B1.church
-- [Ver planes](../plans/viewing-plans) -- Consulta tus planes asignados y los órdenes de servicio
+- [Ver planes](../plans/viewing-plans.md) -- Consulta tus planes asignados y los órdenes de servicio

@@ -1,5 +1,7 @@
 ---
-title: "Zapisy na wolontariat"
+title: "Zapisy na wolontariat w portalu członka B1.church"
+sidebar_label: "Zapisy na wolontariat"
+description: "Przeglądaj wolne stanowiska wolontariackie według kategorii i zapisuj się na nadchodzące nabożeństwa lub usuwaj zapis w B1.church przed terminem."
 ---
 
 # Zapisy na wolontariat
@@ -74,4 +76,4 @@ Regularnie sprawdzaj stronę wolontariatu, zwłaszcza na początku tygodnia. Pop
 ## Powiązane artykuły
 
 - [Przegląd służenia](./index.md) -- Przegląd funkcji służenia w B1.church
-- [Przeglądanie planów](../plans/viewing-plans) -- Zobacz przypisane Ci plany i porządki nabożeństw
+- [Przeglądanie planów](../plans/viewing-plans.md) -- Zobacz przypisane Ci plany i porządki nabożeństw

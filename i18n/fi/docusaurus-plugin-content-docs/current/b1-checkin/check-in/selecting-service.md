@@ -1,5 +1,6 @@
 ---
 title: "Palvelun valitseminen"
+description: "Valitse osallistuttava palvelu B1 Checkinin palvelunäkymässä. Valinta määrittää palveluajat ja ryhmät, jotka näkyvät sisäänkirjautumisen loppuvaiheissa."
 ---
 
 # Palvelun valitseminen
@@ -13,7 +14,7 @@ Jokaisen sisäänkirjautumisen ensimmäinen vaihe on valita, mihin palveluun osa
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Kirjaudu sisään](../getting-started/logging-in) B1 Church Checkin -sovellukseen ja valitse seurakuntasi
+- [Kirjaudu sisään](../getting-started/logging-in.md) B1 Church Checkin -sovellukseen ja valitse seurakuntasi
 - Varmista, että seurakunnan ylläpitäjä on [määrittänyt palvelut ja palveluajat](../../b1-admin/attendance/setup.md) B1 Adminissa
 
 </div>
@@ -24,11 +25,11 @@ Jokaisen sisäänkirjautumisen ensimmäinen vaihe on valita, mihin palveluun osa
 2. Näet luettelon kaikista seurakunnallesi määritetyistä palveluista. Jokainen palvelu näkyy korttina, jossa on palvelun nimi (esimerkiksi "Sunnuntaiaamu" tai "Keskiviikkoilta").
 3. Napauta palvelua, johon osallistut.
 
-Sovellus lataa palveluun liittyvät palveluajat ja ryhmät ja vie sinut sitten [jäsenhakunäkymään](./looking-up-members).
+Sovellus lataa palveluun liittyvät palveluajat ja ryhmät ja vie sinut sitten [jäsenhakunäkymään](./looking-up-members.md).
 
 ## Kun sisäänkirjautuminen ei ole auki
 
-Jos ylläpitäjäsi on asettanut palveluajalle [sisäänkirjautumisaikataulun](../../b1-admin/attendance/setup#setting-a-check-in-schedule), sovellus sallii perheiden valita kyseisen palveluajan vain sen sisäänkirjautumisikkunan ollessa auki. Palveluajat, joiden ikkuna on tällä hetkellä kiinni, näkyvät edelleen [taloudenkatselunäkymässä](./household-review), mutta ne on merkitty **Suljettu**-tilaan (esimerkiksi **Suljettu · avautuu su klo 9.30**) eikä niissä ole ryhmäpainiketta.
+Jos ylläpitäjäsi on asettanut palveluajalle [sisäänkirjautumisaikataulun](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), sovellus sallii perheiden valita kyseisen palveluajan vain sen sisäänkirjautumisikkunan ollessa auki. Palveluajat, joiden ikkuna on tällä hetkellä kiinni, näkyvät edelleen [taloudenkatselunäkymässä](./household-review.md), mutta ne on merkitty **Suljettu**-tilaan (esimerkiksi **Suljettu · avautuu su klo 9.30**) eikä niissä ole ryhmäpainiketta.
 
 Jos kaikki valitsemasi palvelun palveluajat ovat suljettuina, sovellus kertoo, milloin sisäänkirjautuminen avautuu, esimerkiksi: **"Tämän palvelun sisäänkirjautuminen avautuu su klo 9.30."** (Jos avautumisaikaa ei voida näyttää, sovellus kertoo: **"Sisäänkirjautuminen ei ole tällä hetkellä auki tälle palvelulle."**) Palaa palveluluetteloon napauttamalla **Takaisin** ja valitse toinen palvelu, tai odota, että ikkuna avautuu, ja yritä uudelleen.
 
@@ -56,4 +57,4 @@ Jos seurakunnassasi on määritetty vain yksi palvelu, sinun on silti napautetta
 
 ## Seuraava vaihe
 
-Kun olet valinnut palvelun, [etsit perheesi](./looking-up-members) puhelinnumeron tai nimen perusteella.
+Kun olet valinnut palvelun, [etsit perheesi](./looking-up-members.md) puhelinnumeron tai nimen perusteella.

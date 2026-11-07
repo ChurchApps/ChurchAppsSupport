@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Blog auf B1.church durchsuchen und RSS-Feeds nutzen"
+sidebar_label: "Blog"
+description: "Blog auf B1.church nach Kategorie oder Schlagwort filtern, ältere Beiträge durchblättern oder über RSS-Feeds neue Beiträge verfolgen."
 ---
 
 # Blog

@@ -1,5 +1,7 @@
 ---
-title: "Pamokų planavimas"
+title: "Pamokų planavimas iš Lessons.church B1 Admin"
+sidebar_label: "Pamokų planavimas"
+description: "Susiekite Lessons.church su B1 Admin, tada planuokite pamokas, masiškai planuokite seriją arba taikykite metinį planą tarnystės pamaldų planams."
 ---
 
 # Pamokų planavimas iš Lessons.church

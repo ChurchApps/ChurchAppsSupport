@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Xhuma i-ChatGPT kudatha ye-B1 yebandla ngekhiyi ye-API, uze ubuze ngebantfu, timinikelo netinkhundla ngelulwimi lolucacile ku-B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Xhuma i-ChatGPT kumininingwane ye-B1 yelibandla lakho bese uyibuta imibuto ngelu
 </div>
 
 :::tip Kuyanconywa: linga i-Claude kucala — imahhala
-I-[Claude](./claude) ixhuma ku-B1 **eluhlelweni lwayo lwamahhala** futsi ilungiselelwa ngaphansi kwemaminithi lali-3 — vele ungete i-B1 njenge-connector bese ungena nge-akhawunti yakho ye-B1. Akudzingeki khiya. Yindlela lelula kakhulu yekutsi libandla lakho lilinge i-AI ne-B1 ngaphambi kwekukhokhela nome yini.
+I-[Claude](./claude.md) ixhuma ku-B1 **eluhlelweni lwayo lwamahhala** futsi ilungiselelwa ngaphansi kwemaminithi lali-3 — vele ungete i-B1 njenge-connector bese ungena nge-akhawunti yakho ye-B1. Akudzingeki khiya. Yindlela lelula kakhulu yekutsi libandla lakho lilinge i-AI ne-B1 ngaphambi kwekukhokhela nome yini.
 :::
 
 ## Kuyilungiselela
@@ -254,5 +255,5 @@ Nobe ngubani lonelinki angabuta imibuto ngelulwimi lwemvelo. Emkhawulo weikhiya 
 
 - [API Keys](/docs/developer/api/api-keys) — luhlu loluphelele lwemkhawulo
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — imininingwane yeprothokholi kanye netinhlaka temathulusi
-- [Claude](./claude) — umbono lofanako, wemamodeli e-Anthropic
+- [Claude](./claude.md) — umbono lofanako, wemamodeli e-Anthropic
 - [REST API reference](/docs/developer/api/endpoints) — onkhe ema-endpoint langabitwa yi-action ye-Custom GPT

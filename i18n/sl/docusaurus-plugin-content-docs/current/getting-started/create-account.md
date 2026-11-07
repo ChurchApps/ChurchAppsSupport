@@ -1,5 +1,6 @@
 ---
 title: "Ustvarjanje vašega računa"
+description: "Registriraj račun ChurchApps na B1.church, potrdi e-pošto ter ustvari ali se pridruži cerkvi, da lahko začneš z nastavitvijo B1 Admin."
 ---
 
 # Ustvarjanje vašega računa

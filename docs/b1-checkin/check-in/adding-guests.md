@@ -1,5 +1,6 @@
 ---
 title: "Adding Guests"
+description: "Add a visiting child, relative, or friend to a household at the B1 Checkin kiosk, then assign groups and complete check-in."
 ---
 
 # Adding Guests
@@ -13,8 +14,8 @@ If someone is visiting your family and needs to check in with your household, yo
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Look up your family](./looking-up-members) and select a member from the search results
-- Be on the [household review screen](./household-review) where you can see your family members
+- [Look up your family](./looking-up-members.md) and select a member from the search results
+- Be on the [household review screen](./household-review.md) where you can see your family members
 
 </div>
 
@@ -36,8 +37,8 @@ If the guest's name matches someone already in the system who is not a member, t
 
 Once the guest appears in your household list, you can:
 
-- **Expand their card** and [assign them to a group](./group-assignment), just like any other family member.
-- **[Check in](./completing-checkin)** the entire household including the guest.
+- **Expand their card** and [assign them to a group](./group-assignment.md), just like any other family member.
+- **[Check in](./completing-checkin.md)** the entire household including the guest.
 
 ## Canceling
 
@@ -49,4 +50,4 @@ Adding a guest at the kiosk creates a person record in your church's database. Y
 
 ## Next Step
 
-After adding guests and [assigning groups](./group-assignment) as needed, you are ready to [complete check-in](./completing-checkin).
+After adding guests and [assigning groups](./group-assignment.md) as needed, you are ready to [complete check-in](./completing-checkin.md).

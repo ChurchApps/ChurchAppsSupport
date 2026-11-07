@@ -1,5 +1,6 @@
 ---
 title: "Suporta sa Multi-Currency"
+description: "Itala at iulat ang donasyon sa iba't ibang pera sa B1 Admin, kasama ang manual na entry, Stripe online giving, at conversion ng pinagsamang kabuuan."
 ---
 
 # Suporta sa Multi-Currency

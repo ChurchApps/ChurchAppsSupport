@@ -1,5 +1,6 @@
 ---
 title: "Skapa ett konto"
+description: "Registrera ett ChurchApps-konto på Lessons.church och koppla det sedan till en ny eller befintlig kyrkprofil så att du kan hantera klassrum och scheman."
 ---
 
 # Skapa ett konto

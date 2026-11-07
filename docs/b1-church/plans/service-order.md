@@ -1,5 +1,7 @@
 ---
-title: "Service Order"
+title: "Service Order Details in the B1.church App"
+sidebar_label: "Service Order"
+description: "View a plan's service order in the B1.church app, with cumulative timing, song lyrics, key transposition, and lesson previews for your team."
 ---
 
 # Service Order

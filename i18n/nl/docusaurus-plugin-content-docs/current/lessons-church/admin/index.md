@@ -1,5 +1,6 @@
 ---
 title: "Administration"
+description: "Overzicht van het beheergedeelte van Lessons.church: programma's, studies, lessen, bronnen, statistieken en externe curriculumproviders beheren."
 ---
 
 # Administration

@@ -1,5 +1,6 @@
 ---
 title: "Database"
+description: "Lær hvordan ChurchApps API fordeler data på seks MySQL-databaser, én per modul, og hvordan du konfigurerer tilkoblinger og initialiserer dem."
 ---
 
 # Database
@@ -13,8 +14,8 @@ ChurchApps API-et bruker en **database-per-modul**-arkitektur. Hver av de seks d
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites)
-- Konfigurer databasetilkoblingsstrenger i `.env`-filen din -- se [Miljøvariabler](../setup/environment-variables)
+- Installer **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites.md)
+- Konfigurer databasetilkoblingsstrenger i `.env`-filen din -- se [Miljøvariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Sentrale designvalg
 
 - **Én database per modul** -- Hver modul opprettholder sin egen MySQL-database med en dedikert tilkoblingspool (administrert av `KyselyPool`). Dette holder modulene frikoblet og muliggjør uavhengig skjemautvikling.
-- **Eksklusivt eierskap** -- En moduls tabeller leses og skrives kun av modulens egen kode. Når en annen modul trenger dataene, kaller den den eiende modulens gateway i stedet for å spørre tabellene direkte -- se [Kommunikasjon på tvers av moduler](./module-structure#cross-module-communication).
+- **Eksklusivt eierskap** -- En moduls tabeller leses og skrives kun av modulens egen kode. Når en annen modul trenger dataene, kaller den den eiende modulens gateway i stedet for å spørre tabellene direkte -- se [Kommunikasjon på tvers av moduler](./module-structure.md#cross-module-communication).
 - **Repository-mønster uten ORM** -- All datatilgang går gjennom repository-klasser som bygger typet SQL med Kysely-spørringsbyggeren mot modulens skjema. Dette gir full kontroll over spørringsytelse og -atferd.
 - **Multi-tenant per design** -- Hver spørring er avgrenset av `churchId`. Alle tabeller inkluderer en `churchId`-kolonne, og repository-laget håndhever tenant-isolasjon automatisk.
 
@@ -129,5 +130,5 @@ Denne begrensningen er det som gjør modulgrensene reelle: hvert skjema kan utvi
 
 ## Relaterte artikler
 
-- **[Modulstruktur](./module-structure)** -- Hvordan kontrollere og repositories er organisert innenfor hver modul
-- **[Lokalt API-oppsett](./local-setup)** -- Full trinnvis oppsettsveiledning
+- **[Modulstruktur](./module-structure.md)** -- Hvordan kontrollere og repositories er organisert innenfor hver modul
+- **[Lokalt API-oppsett](./local-setup.md)** -- Full trinnvis oppsettsveiledning

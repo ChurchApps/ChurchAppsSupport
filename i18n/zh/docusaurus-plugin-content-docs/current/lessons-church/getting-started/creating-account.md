@@ -1,5 +1,6 @@
 ---
 title: "创建账号"
+description: "在 Lessons.church 注册 ChurchApps 账户，然后将其连接到新的或已有的教会资料，以便管理教室和课程安排。"
 ---
 
 # 创建账号

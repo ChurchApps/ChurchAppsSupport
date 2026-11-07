@@ -1,5 +1,6 @@
 ---
 title: "Csoportok hozzárendelése"
+description: "Csoport kiválasztása családtagnak istentiszteleti időpontonként a B1 Checkinben: kategóriák, kor- és osztályútmutató, valamint a „None” lehetőség."
 ---
 
 # Csoportok hozzárendelése
@@ -13,7 +14,7 @@ Amikor a háztartás áttekintő képernyőn megérinti valamelyik istentisztele
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Tekintse át a háztartását](./household-review) a háztartás áttekintő képernyőn
+- [Tekintse át a háztartását](./household-review.md) a háztartás áttekintő képernyőn
 - Bontsa ki a hozzárendelni kívánt tagot, és érintse meg valamelyik istentiszteleti időpont gombját
 - Győződjön meg arról, hogy az egyházi adminisztrátora [létrehozta a csoportokat](../../b1-admin/groups/creating-groups.md), és a B1 Adminban hozzárendelte őket az istentiszteleti időpontokhoz
 
@@ -34,7 +35,7 @@ A csoportok **kategóriákban** jelennek meg. Minden kategória egy kártyaként
 2. Tekintse át a kategórián belüli csoportok listáját. Minden csoport neve mellett jobb oldalon egy kiválasztó ikon látható.
 3. Érintse meg a hozzárendelni kívánt **csoport nevét**.
 
-Az alkalmazás elmenti a választását, és visszairányítja a [háztartás áttekintő képernyőre](./household-review). Az adott tag istentiszteleti időpont gombján ezután a kiválasztott csoport neve fog megjelenni.
+Az alkalmazás elmenti a választását, és visszairányítja a [háztartás áttekintő képernyőre](./household-review.md). Az adott tag istentiszteleti időpont gombján ezután a kiválasztott csoport neve fog megjelenni.
 
 ## Életkor és évfolyam szerinti útmutatás
 
@@ -52,7 +53,7 @@ A **Nincs** lehetőséget használja azoknál a felnőtteknél, akik a fő isten
 
 Már meglévő csoporthozzárendelés módosításához:
 
-1. Térjen vissza a [háztartás áttekintő képernyőre](./household-review).
+1. Térjen vissza a [háztartás áttekintő képernyőre](./household-review.md).
 2. Bontsa ki azt a tagot, akinek a csoportját módosítani szeretné.
 3. Érintse meg az istentiszteleti időpont gombot (amely most már a jelenleg hozzárendelt csoport nevét mutatja).
 4. Válasszon másik csoportot, vagy érintse meg a **Nincs** gombot.
@@ -63,8 +64,8 @@ A csoportokat és kategóriákat az egyházi adminisztrátora állítja be a B1 
 
 ## Következő lépések
 
-A csoportok hozzárendelése után térjen vissza a [háztartás áttekintő képernyőre](./household-review), hogy:
+A csoportok hozzárendelése után térjen vissza a [háztartás áttekintő képernyőre](./household-review.md), hogy:
 
 - További családtagokhoz rendeljen csoportokat
-- [Vendéget adjon hozzá](./adding-guests), ha valaki a családjával látogat el
-- [Fejezze be a bejelentkezést](./completing-checkin), amikor minden hozzárendelés kész
+- [Vendéget adjon hozzá](./adding-guests.md), ha valaki a családjával látogat el
+- [Fejezze be a bejelentkezést](./completing-checkin.md), amikor minden hozzárendelés kész

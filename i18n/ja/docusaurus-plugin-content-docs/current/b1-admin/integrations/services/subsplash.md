@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Zapier で Subsplash の献金、新規の人物、フォーム回答を B1 に接続します。献金とプロフィールが B1 Admin に自動的に登録されます。"
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Zap をオンにします。これ以降、Subsplash の献金は数秒以内に
 
 ## 関連項目
 
-- [Donorbox](./donorbox)：レシピの形式は同じですが、別の献金プラットフォームです
-- [Zapier（概要）](../zapier)：すべての Zapier レシピの B1 側の説明
+- [Donorbox](./donorbox.md)：レシピの形式は同じですが、別の献金プラットフォームです
+- [Zapier（概要）](../zapier.md)：すべての Zapier レシピの B1 側の説明
 - [Subsplash の Zapier 連携ガイド](https://support.subsplash.com/en/articles/9825926-zapier-integration)（Subsplash のドキュメント）

@@ -1,5 +1,6 @@
 ---
 title: "Brskanje in prenašanje vsebine"
+description: "Krmari po knjižnici povezanega ponudnika z daljincem FreePlay TV, nato prenesi ali pretakaj ure in videe za predvajanje."
 ---
 
 # Brskanje in prenašanje vsebine
@@ -13,7 +14,7 @@ Ko se povežete z ponudnikom vsebine, lahko brskate po njegovi knjižnici, prena
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Povežite se vsaj z enim ponudnikom vsebine -- glejte [Povezovanje s ponudniki](./connecting-providers)
+- Povežite se vsaj z enim ponudnikom vsebine -- glejte [Povezovanje s ponudniki](./connecting-providers.md)
 - Pripravite daljinski upravljalnik televizorja za krmarjenje
 
 </div>
@@ -38,7 +39,7 @@ Pomikate se lahko globoko, kolikor to dopušča struktura vsebine ponudnika. Brs
 
 ## Brskanje po Lessons.church
 
-Knjižnica [Lessons.church](../../lessons-church/) je organizirana enako kot njihova spletna stran. Na najvišji ravni boste videli dve mapi:
+Knjižnica [Lessons.church](../../lessons-church/index.md) je organizirana enako kot njihova spletna stran. Na najvišji ravni boste videli dve mapi:
 
 - **Lessons** - Pomikajte se po **programu**, nato po **študiji**, nato po **lekciji**. Vsaka lekcija nato prikaže svoja **prizorišča** (venues), to so različice lekcije za določeno starostno skupino ali okolje, na primer Predšolski ali Osnovnošolski. Izberite prizorišče, da odprete zaslon za prenos te različice lekcije.
 - **Dodatki** - Dodatni videoposnetki in viri, razvrščeni po kategorijah.
@@ -78,7 +79,7 @@ Med predvajanjem uporabljajte te kontrole:
 Ko zapustite predvajalnik, se vrnete v brskalnik vsebine na korenski ravni trenutnega ponudnika.
 
 :::info
-Za popoln seznam vseh kontrol predvajalnika glejte [Predvajanje vsebine](./playing-content).
+Za popoln seznam vseh kontrol predvajalnika glejte [Predvajanje vsebine](./playing-content.md).
 :::
 
 ## Preklapljanje med ponudniki

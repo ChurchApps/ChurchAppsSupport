@@ -1,5 +1,6 @@
 ---
 title: "Požymiai"
+description: "Įdiekite Node.js, npm, Git ir platformų įrankius prieš dirbdami su ChurchApps projektais, pvz., B1 Admin, Lessons.church, FreePlay ar API vietoje."
 ---
 
 # Požymiai
@@ -13,7 +14,7 @@ title: "Požymiai"
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Peržiūrėkite [Projektų apžvalgą](./project-overview), kad nustatytumėte, su kuriais projektais norite dirbti
+- Peržiūrėkite [Projektų apžvalgą](./project-overview.md), kad nustatytumėte, su kuriais projektais norite dirbti
 - Savo kūrimo kompiuteryje turėkite administratoriaus teises programinei įrangai įdiegti
 
 </div>
@@ -40,7 +41,7 @@ Jei planuojate vietoje paleisti API (o ne nukreipti į demonstracinius API):
 |------|---------|-------|
 | **MySQL** | 8.0+ | Kiekvienas API modulis naudoja savo duomenų bazę |
 
-Pagrindiniam API jums reikės šešių duomenų bazių: `membership`, `attendance`, `content`, `giving`, `messaging` ir `doing`. API yra skriptų, skirtų schemai inicializuoti – žr. vadovą [API vietinis diegimas](../api/local-setup).
+Pagrindiniam API jums reikės šešių duomenų bazių: `membership`, `attendance`, `content`, `giving`, `messaging` ir `doing`. API yra skriptų, skirtų schemai inicializuoti – žr. vadovą [API vietinis diegimas](../api/local-setup.md).
 
 ## Mobiliųjų programėlių kūrimas
 
@@ -110,5 +111,5 @@ mysql --version   # Reikalinga tik vietiniam API kūrimui
 
 ## Kiti žingsniai
 
-- **[Projektų apžvalga](./project-overview)** -- Peržiūrėkite visus projektus ir jų paskirtį
-- **[Aplinkos kintamieji](./environment-variables)** -- Sukonfigūruokite savo `.env` failus
+- **[Projektų apžvalga](./project-overview.md)** -- Peržiūrėkite visus projektus ir jų paskirtį
+- **[Aplinkos kintamieji](./environment-variables.md)** -- Sukonfigūruokite savo `.env` failus

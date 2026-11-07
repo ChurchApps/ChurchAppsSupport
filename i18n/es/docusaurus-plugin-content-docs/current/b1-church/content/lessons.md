@@ -1,5 +1,7 @@
 ---
-title: "Lecciones (Deprecado)"
+title: "Pestaña de lecciones obsoleta en B1.church"
+sidebar_label: "Lecciones (Deprecado)"
+description: "La pestaña Lecciones de B1.church está obsoleta. Encuentra dónde está ahora el currículo de lecciones: explóralo en Lessons.church y reprodúcelo en televisores de aula con FreePlay."
 ---
 
 # Lecciones (Deprecado)
@@ -9,7 +11,7 @@ La pestaña **Lecciones** integrada en B1.church ha sido deprecada. La reproducc
 
 Para explorar, programar o editar planes de estudios directamente, inicia sesión en [Lessons.church](https://lessons.church) en tu navegador. Para reproducir lecciones en una TV del aula, instala [FreePlay](/docs/freeplay/getting-started/) en tu dispositivo de TV.
 
-Los padres de grupos asociados a un tipo de plan de lecciones en B1Admin ven **la lección de esta semana** en la página [detalles del grupo](/docs/b1-church/groups/group-details.md) -- no en esta pestaña deprecada.
+Los padres de grupos asociados a un tipo de plan de lecciones en B1Admin ven **la lección de esta semana** en la página [detalles del grupo](../groups/group-details.md) -- no en esta pestaña deprecada.
 :::
 
 <div class="article-intro">

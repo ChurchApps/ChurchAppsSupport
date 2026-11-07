@@ -1,5 +1,6 @@
 ---
 title: "Groepen toewijzen"
+description: "Kies per dienst welke groep of klas een gezinslid bijwoont in B1 Checkin, met categorieën, leeftijds- en klasadvies en de optie Geen."
 ---
 
 # Groepen toewijzen
@@ -13,7 +14,7 @@ Wanneer u een serviceknop tikt op het scherm voor huishoudhoofddeling, opent de 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Bekijk uw huishouden](./household-review) op het scherm voor huishoudhoofddeling
+- [Bekijk uw huishouden](./household-review.md) op het scherm voor huishoudhoofddeling
 - Vouw het lid uit waaraan u wilt toewijzen en tik op een serviceknop
 - Zorg ervoor dat uw kerkbeheerder [groepen heeft gemaakt](../../b1-admin/groups/creating-groups.md) en deze aan diensttijden in B1 Admin heeft gekoppeld
 
@@ -34,7 +35,7 @@ Tik op een categoriekaart om deze uit te vouwen en zie de afzonderlijke groepen 
 2. Bekijk de lijst met groepen in die categorie. Elke groep toont zijn naam met een selectiepictogram aan de rechterkant.
 3. Tik op de **groepsnaam** die u wilt toewijzen.
 
-De app slaat uw selectie op en keert u terug naar het [scherm voor huishoudhoofddeling](./household-review). De serviceknop voor dat lid toont nu de naam van de groep die u hebt geselecteerd.
+De app slaat uw selectie op en keert u terug naar het [scherm voor huishoudhoofddeling](./household-review.md). De serviceknop voor dat lid toont nu de naam van de groep die u hebt geselecteerd.
 
 ## "Geen" kiezen
 
@@ -48,7 +49,7 @@ Gebruik de optie **Geen** voor volwassenen die de hoofdgodsdienstwering bijwonen
 
 Om een groepstoewijzing die al is aangebracht te wijzigen:
 
-1. Ga terug naar het [scherm voor huishoudhoofddeling](./household-review).
+1. Ga terug naar het [scherm voor huishoudhoofddeling](./household-review.md).
 2. Vouw het lid uit waarvan u de groep wilt wijzigen.
 3. Tik op de serviceknop (die nu de huidige groepsnaam toont).
 4. Selecteer een andere groep of tik op **Geen**.
@@ -59,8 +60,8 @@ Groepen en categorieën worden ingesteld door uw kerkbeheerder in B1 Admin. Als 
 
 ## Volgende stappen
 
-Na het toewijzen van groepen, keert u terug naar het [scherm voor huishoudhoofddeling](./household-review) om:
+Na het toewijzen van groepen, keert u terug naar het [scherm voor huishoudhoofddeling](./household-review.md) om:
 
 - Groepen aan extra gezinsleden toe te wijzen
-- [Een gast toevoegen](./adding-guests) als iemand uw familie bezoekt
-- [Aanmelden af te ronden](./completing-checkin) wanneer alle toewijzingen gereed zijn
+- [Een gast toevoegen](./adding-guests.md) als iemand uw familie bezoekt
+- [Aanmelden af te ronden](./completing-checkin.md) wanneer alle toewijzingen gereed zijn

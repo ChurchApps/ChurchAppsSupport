@@ -1,5 +1,6 @@
 ---
 title: "Announcements"
+description: "Loop a folder of slides on FreePlay TV for lobby or pre-class announcements: pick a provider folder, keep it synced, and turn it off when finished."
 ---
 
 # Announcements
@@ -13,7 +14,7 @@ FreePlay can loop a folder of announcement slides on your TV -- for example, in 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Connect to a content provider](./connecting-providers) that holds your announcement slides, such as Dropbox or OneDrive
+- [Connect to a content provider](./connecting-providers.md) that holds your announcement slides, such as Dropbox or OneDrive
 - Put the images or videos you want to loop together in one folder in that provider
 
 </div>
@@ -37,7 +38,7 @@ Once slides have been downloaded, an **Announcements** item appears near the top
 - After the last slide, the loop starts over from the first one
 - If the folder has a single video, it repeats in place
 
-The loop plays from the files saved on the device, so it keeps running without an internet connection. You can use the same remote controls as any other content -- see [Playing Content](./playing-content).
+The loop plays from the files saved on the device, so it keeps running without an internet connection. You can use the same remote controls as any other content -- see [Playing Content](./playing-content.md).
 
 ## Updating the Slides
 
@@ -61,6 +62,6 @@ Disconnecting the provider also turns off announcements that came from it.
 
 ## Related Articles
 
-- **[Connecting to Providers](./connecting-providers)** - Connect the provider that holds your slides
-- **[Browsing and Downloading Content](./browsing-content)** - Browse a provider's folders and play content on demand
-- **[Playing Content](./playing-content)** - Player controls for your TV remote
+- **[Connecting to Providers](./connecting-providers.md)** - Connect the provider that holds your slides
+- **[Browsing and Downloading Content](./browsing-content.md)** - Browse a provider's folders and play content on demand
+- **[Playing Content](./playing-content.md)** - Player controls for your TV remote

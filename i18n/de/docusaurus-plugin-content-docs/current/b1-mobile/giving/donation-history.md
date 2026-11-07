@@ -1,5 +1,7 @@
 ---
-title: "Spendenverlauf"
+title: "Spendenverlauf in B1 Mobile ansehen"
+sidebar_label: "Spendenverlauf"
+description: "Prüfen Sie Ihre Spenden seit Jahresbeginn, die letzte Gabe und den Verlauf in B1 Mobile und wiederholen Sie frühere Gaben per Tipp in der Übersicht."
 ---
 
 # Spendenverlauf
@@ -13,8 +15,8 @@ B1 Mobile zeigt dir deine Spenden übersichtlich in zwei Reitern: **Übersicht**
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und dich in deinem Konto [anmelden](../getting-started/logging-in)
-- [Mindestens eine Spende tätigen](./making-donations), um deinen Verlauf zu sehen
+- [B1 Mobile installieren](../getting-started/installing.md) und dich in deinem Konto [anmelden](../getting-started/logging-in.md)
+- [Mindestens eine Spende tätigen](./making-donations.md), um deinen Verlauf zu sehen
 
 </div>
 
@@ -45,5 +47,5 @@ Schau regelmäßig im Reiter **Übersicht** nach, um deine Spendenziele im Blick
 
 ## Verwandte Artikel
 
-- [Eine Spende tätigen](./making-donations) -- Eine neue Spende über die App tätigen
-- [Zahlungsmethoden verwalten](./managing-payments) -- Gespeicherte Zahlungsmethoden hinzufügen oder entfernen
+- [Eine Spende tätigen](./making-donations.md) -- Eine neue Spende über die App tätigen
+- [Zahlungsmethoden verwalten](./managing-payments.md) -- Gespeicherte Zahlungsmethoden hinzufügen oder entfernen

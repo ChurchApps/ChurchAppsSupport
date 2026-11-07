@@ -1,5 +1,6 @@
 ---
 title: "Mga Download at Materyal"
+description: "Hanapin at i-download ang printable na activity sheets, leader guides, at PDF na nakakabit sa aralin, studies, o programs ng Lessons.church para sa klase mo."
 ---
 
 # Mga Download at Materyal

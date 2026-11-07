@@ -1,5 +1,6 @@
 ---
 title: "Obsługa wiadomości"
+description: "Rozpoczynaj, czytaj, edytuj i usuwaj prywatne rozmowy jeden na jeden z członkami kościoła w B1 Mobile oraz znajdź osoby w katalogu członków."
 ---
 
 # Obsługa wiadomości
@@ -13,7 +14,7 @@ B1 Mobile zawiera funkcję prywatnych wiadomości, dzięki której możesz prowa
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile zawiera funkcję prywatnych wiadomości, dzięki której możesz prowa
 ## Rozpoczynanie nowej rozmowy
 
 1. Na ekranie wiadomości stuknij opcję rozpoczęcia nowej rozmowy.
-2. Użyj pola wyszukiwania, aby znaleźć członka, do którego chcesz napisać. Członków możesz też znaleźć w [Katalogu członków](./member-directory).
+2. Użyj pola wyszukiwania, aby znaleźć członka, do którego chcesz napisać. Członków możesz też znaleźć w [Katalogu członków](./member-directory.md).
 3. Wybierz członka z wyników wyszukiwania.
 4. Wpisz wiadomość i stuknij **Wyślij**.
 
@@ -52,11 +53,11 @@ Korzystaj z wiadomości, aby koordynować działania z innymi wolontariuszami, k
 :::
 
 :::info
-Włącz [powiadomienia push](./notifications), aby otrzymywać alert o nowej wiadomości, nawet gdy aplikacja nie jest otwarta.
+Włącz [powiadomienia push](./notifications.md), aby otrzymywać alert o nowej wiadomości, nawet gdy aplikacja nie jest otwarta.
 :::
 
 ## Powiązane artykuły
 
-- [Katalog członków](./member-directory) -- Znajdź członków, do których możesz napisać
-- [Powiadomienia](./notifications) -- Otrzymuj informacje o nowych wiadomościach
-- [Grupy](../groups/) -- Uczestnicz w rozmowach grupowych
+- [Katalog członków](./member-directory.md) -- Znajdź członków, do których możesz napisać
+- [Powiadomienia](./notifications.md) -- Otrzymuj informacje o nowych wiadomościach
+- [Grupy](../groups/index.md) -- Uczestnicz w rozmowach grupowych

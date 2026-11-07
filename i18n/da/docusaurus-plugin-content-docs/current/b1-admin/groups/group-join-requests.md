@@ -1,5 +1,6 @@
 ---
 title: "Anmodninger om gruppedeltagelse"
+description: "Gennemgå, godkend eller afvis gruppeanmodninger i B1 Admin, find ventende anmodninger som leder eller administrator, og angiv årsag ved afvisning."
 ---
 
 # Anmodninger om gruppedeltagelse

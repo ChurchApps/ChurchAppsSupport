@@ -1,5 +1,6 @@
 ---
 title: "Auditlog en ongedaan te maken batches"
+description: "Over het auditlogboek van de API, dat elke wijziging per module registreert, en hoe importbatches rij voor rij ongedaan worden gemaakt in B1 Admin."
 ---
 
 # Auditlog en ongedaan te maken batches
@@ -155,6 +156,6 @@ Beide beheeroppervlakken zijn **nog in ontwikkeling**. Het doel is:
 
 ## Gerelateerde pagina's
 
-- [Modulestructuur](../api/module-structure): hoe een controller die niet bij membership hoort via `RepoManager` de membership-repositories bereikt
-- [Geven](./giving): de donatieschrijfpaden die als `sensitive` worden geauditeerd, ook wanneer ze anoniem zijn
-- [Membership-endpoints](../api/endpoints/membership): de REST-interface die `X-Batch-Id` meestuurt en `/auditlogs` en `/batches` beschikbaar maakt
+- [Modulestructuur](../api/module-structure.md): hoe een controller die niet bij membership hoort via `RepoManager` de membership-repositories bereikt
+- [Geven](./giving.md): de donatieschrijfpaden die als `sensitive` worden geauditeerd, ook wanneer ze anoniem zijn
+- [Membership-endpoints](../api/endpoints/membership.md): de REST-interface die `X-Batch-Id` meestuurt en `/auditlogs` en `/batches` beschikbaar maakt

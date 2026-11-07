@@ -1,5 +1,6 @@
 ---
 title: "Spendenbescheinigungen"
+description: "Erstellen Sie in B1 Admin Jahresspendenbescheinigungen für alle Spender und laden Sie sie als CSV-Dateien herunter oder drucken Sie sie mit steuerlich absetzbaren Summen zum Versand."
 ---
 
 # Spendenbescheinigungen

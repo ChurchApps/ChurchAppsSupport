@@ -1,5 +1,6 @@
 ---
 title: "Kerkinstellingen"
+description: "Stel in de pagina Kerkinstellingen van B1 Admin de naam, het adres, subdomein, de tijdzone, regionotatie, sms-provider en bestandsopslag van je kerk in."
 ---
 
 # Kerkinstellingen

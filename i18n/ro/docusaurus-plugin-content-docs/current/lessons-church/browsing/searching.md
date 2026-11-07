@@ -1,5 +1,6 @@
 ---
 title: "Căutarea"
+description: "Găsiți programe, studii și lecții în biblioteca Lessons.church după cuvânt-cheie sau poveste biblică, și cum sunt ordonate rezultatele."
 ---
 
 # Căutarea

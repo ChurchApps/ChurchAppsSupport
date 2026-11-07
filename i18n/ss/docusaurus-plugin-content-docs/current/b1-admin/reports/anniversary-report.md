@@ -1,5 +1,6 @@
 ---
 title: "Uhlu Lwetinkhumbulo Temshado"
+description: "Lulisa wonkhe labanelilanga lemshado ngenyanga oyikhetsile ku-B1 Admin, netinsuku letibonakala emiphumela, bese ukhipha ku-spreadsheet yemabhuletini nemakhadi."
 ---
 
 # Uhlu Lwetinkhumbulo Temshado

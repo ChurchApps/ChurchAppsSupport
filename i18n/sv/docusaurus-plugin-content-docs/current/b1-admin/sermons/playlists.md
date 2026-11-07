@@ -1,5 +1,6 @@
 ---
 title: "Spellistor"
+description: "Gruppera dina predikningar i serier i B1 Admin så att besökare på din B1.church-webbplats kan bläddra bland och följa varje predikningsserie i ordning."
 ---
 
 # Spellistor
@@ -39,10 +40,10 @@ Skapa dina spellistor innan du lägger till predikningar. Då kan du tilldela va
 
 ## Lägga till predikningar i en spellista
 
-När du [lägger till eller redigerar en predikning](managing-sermons) tilldelar du den till en spellista med rullgardinsmenyn **Spellista**. Alla predikningar som tilldelats samma spellista grupperas och visas i ordning på din webbplats.
+När du [lägger till eller redigerar en predikning](./managing-sermons.md) tilldelar du den till en spellista med rullgardinsmenyn **Spellista**. Alla predikningar som tilldelats samma spellista grupperas och visas i ordning på din webbplats.
 
 :::info
-Du kan också tilldela predikningar till spellistor vid [Massimport](bulk-import). Vid import från YouTube eller Vimeo väljer du en spellista i rullgardinsmenyn **Importera till spellista** innan du klickar på **Importera**.
+Du kan också tilldela predikningar till spellistor vid [Massimport](./bulk-import.md). Vid import från YouTube eller Vimeo väljer du en spellista i rullgardinsmenyn **Importera till spellista** innan du klickar på **Importera**.
 :::
 
 ## Så visas spellistor på din webbplats
@@ -55,5 +56,5 @@ Spellistor visas på din B1.church-webbplats som bläddringsbara samlingar. Bes�
 
 ## Nästa steg
 
-- [Hantera predikningar](managing-sermons) -- Lägg till enskilda predikningar i dina spellistor
-- [Massimport](bulk-import) -- Importera flera predikningar och tilldela dem till spellistor
+- [Hantera predikningar](./managing-sermons.md) -- Lägg till enskilda predikningar i dina spellistor
+- [Massimport](./bulk-import.md) -- Importera flera predikningar och tilldela dem till spellistor

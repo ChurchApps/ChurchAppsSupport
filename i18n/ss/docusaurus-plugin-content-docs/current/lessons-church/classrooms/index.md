@@ -1,5 +1,6 @@
 ---
 title: "Emakilasi"
+description: "Setfa futsi ulawule emakilasi lahlela tikhatsi temfundziso yelibandla lakho ku-Lessons.church, kusukela etigumbini netigaba temaqembu eminyaka kuya ekubukweni kwebavolontiya."
 ---
 
 # Emakilasi

@@ -1,5 +1,7 @@
 ---
-title: "Ordinea serviciului"
+title: "Ordinea slujbei în B1 Admin"
+sidebar_label: "Ordinea serviciului"
+description: "Configurează ordinea slujbei din B1 Admin: adaugă cântări, lecții și elemente personalizate, organizează-le în secțiuni și tipărește foaia de desfășurare."
 ---
 
 # Ordinea serviciului

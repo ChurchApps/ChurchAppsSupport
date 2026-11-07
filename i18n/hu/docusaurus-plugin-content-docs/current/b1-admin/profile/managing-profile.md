@@ -1,5 +1,6 @@
 ---
 title: "Profilod kezelése"
+description: "ChurchApps-fiók frissítése a B1 Admin-ban: név, e-mail és jelszó szerkesztése, kétlépcsős bejelentkezés bekapcsolása, téma kiválasztása vagy fiók törlése."
 ---
 
 # Profilod kezelése

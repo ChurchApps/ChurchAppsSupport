@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: pradėkite savo bažnyčios darbą su B1"
+description: "Pereikite per naujos bažnyčios sąranką B1 Admin: paskyra, nustatymai, vaidmenys, narių importas ir pagrindinių funkcijų paleidimas."
 ---
 
 # Pradėkite savo bažnyčios darbą su B1

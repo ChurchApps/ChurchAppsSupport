@@ -1,5 +1,7 @@
 ---
-title: "Getting Started"
+title: "Getting Started with B1.church Member Portal"
+sidebar_label: "Getting Started"
+description: "Find your church's B1.church site, create your member account, and see what the portal offers, from groups and giving to check-in and plans."
 ---
 
 # Getting Started with B1.church

@@ -1,5 +1,6 @@
 ---
 title: "Hỗ trợ nhiều loại tiền tệ"
+description: "Ghi nhận và báo cáo dâng hiến bằng nhiều loại tiền tệ trong B1 Admin, gồm nhập thủ công, dâng trực tuyến qua Stripe và cách quy đổi tổng hợp."
 ---
 
 # Hỗ trợ nhiều loại tiền tệ

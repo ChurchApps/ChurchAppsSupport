@@ -1,5 +1,6 @@
 ---
 title: "Guide: Build Your Sermon Library & Live Stream"
+description: "Import your YouTube or Vimeo sermons, organize them into playlists, and set up recurring live streams with chat in B1 Admin for your church website."
 ---
 
 # Build Your Sermon Library & Live Stream

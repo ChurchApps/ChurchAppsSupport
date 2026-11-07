@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje strežnika"
+description: "Samo za uporabnike Server.Admin: ponastavitev dvostopenjske prijave, prevzem računov, moderiranje Commons in odobritev e-pošte cerkve v B1 Admin."
 ---
 
 # Upravljanje strežnika

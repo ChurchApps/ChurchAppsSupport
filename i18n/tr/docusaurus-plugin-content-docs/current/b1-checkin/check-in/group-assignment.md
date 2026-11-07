@@ -1,5 +1,6 @@
 ---
 title: "Grupları Atama"
+description: "B1 Checkin'de her ibadet saati için aile üyesinin katılacağı grubu veya sınıfı seçin; kategorileri, yaş ve sınıf rehberliğini ve Yok seçeneğini kullanın."
 ---
 
 # Grupları Atama
@@ -13,7 +14,7 @@ Hane halkı inceleme ekranında bir ibadet saati düğmesine dokunduğunuzda uyg
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Hane halkı inceleme ekranında [hane halkınızı inceleyin](./household-review)
+- Hane halkı inceleme ekranında [hane halkınızı inceleyin](./household-review.md)
 - Atamak istediğiniz üyeyi genişletin ve bir ibadet saati düğmesine dokunun
 - Kilise yöneticinizin B1 Admin'de [grupları oluşturduğundan](../../b1-admin/groups/creating-groups.md) ve bunları ibadet saatleriyle ilişkilendirdiğinden emin olun
 
@@ -34,7 +35,7 @@ Gruplar **kategoriler** halinde gösterilir. Her kategori aşağıdakileri göst
 2. Bu kategorideki grupların listesini inceleyin. Her grup adını sağda bir seçim simgesiyle gösterir.
 3. Atamak istediğiniz **grup adına** dokunun.
 
-Uygulama seçiminizi kaydeder ve sizi [hane halkı inceleme ekranına](./household-review) geri döndürür. O üye için ibadet saati düğmesi artık seçtiğiniz grubun adını gösterecektir.
+Uygulama seçiminizi kaydeder ve sizi [hane halkı inceleme ekranına](./household-review.md) geri döndürür. O üye için ibadet saati düğmesi artık seçtiğiniz grubun adını gösterecektir.
 
 ## Yaş ve Sınıf Düzeyi Rehberi
 
@@ -52,7 +53,7 @@ Bir aile üyesinin bu ibadet saati için hiçbir gruba atanmaması gerektiğine 
 
 Daha önce yapılmış bir grup atamasını değiştirmek için:
 
-1. [Hane halkı inceleme ekranına](./household-review) geri dönün.
+1. [Hane halkı inceleme ekranına](./household-review.md) geri dönün.
 2. Grubunu değiştirmek istediğiniz üyeyi genişletin.
 3. Ibadet saati düğmesine dokunun (bu düğme artık atanmış olan grubun adını gösterir).
 4. Farklı bir grup seçin veya **Yok** düğmesine dokunun.
@@ -63,8 +64,8 @@ Gruplar ve kategoriler, kilise yöneticiniz tarafından B1 Admin'de yapılandır
 
 ## Sonraki Adımlar
 
-Grupları atadıktan sonra, aşağıdakileri yapmak için [hane halkı inceleme ekranına](./household-review) dönün:
+Grupları atadıktan sonra, aşağıdakileri yapmak için [hane halkı inceleme ekranına](./household-review.md) dönün:
 
 - Diğer aile üyelerine grup atayın
-- Ailenizle birlikte ziyaret eden biri varsa [misafir ekleyin](./adding-guests)
-- Tüm atamalar hazır olduğunda [check-in işlemini tamamlayın](./completing-checkin)
+- Ailenizle birlikte ziyaret eden biri varsa [misafir ekleyin](./adding-guests.md)
+- Tüm atamalar hazır olduğunda [check-in işlemini tamamlayın](./completing-checkin.md)

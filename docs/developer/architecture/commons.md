@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "How user-submitted songs, lessons, and templates move through the shared moderation queue in B1 Admin's Server Admin, from submission to publish."
 ---
 
 # Content Commons — Shared Asset Library & Moderation

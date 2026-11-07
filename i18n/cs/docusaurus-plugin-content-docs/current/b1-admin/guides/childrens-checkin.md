@@ -1,5 +1,6 @@
 ---
 title: "Podrobný návod: Nastavení dětské check-in služby"
+description: "Nastavte v B1 Admin odbavení dětí: propojte rodiny, vytvořte skupiny podle věku, nastavte bohoslužby a vytiskněte jmenovky pro kiosek B1 Checkin."
 ---
 
 # Nastavení dětské check-in služby

@@ -1,5 +1,6 @@
 ---
 title: "Osztálytermek"
+description: "Osztálytermek beállítása és kezelése a Lessons.churchben: termek, korcsoportok és önkéntesi nézetek, a tanítási menetrend szervezéséhez."
 ---
 
 # Osztálytermek

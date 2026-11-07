@@ -1,5 +1,6 @@
 ---
 title: "Architektura czasu rzeczywistego"
+description: "Jak warstwa WebSocket ChurchApps dostarcza czat na żywo, obecność i powiadomienia: handshake gniazda, subskrypcje pokoi i prymitywy klienta dla deweloperów."
 ---
 
 # Architektura czasu rzeczywistego
@@ -226,8 +227,8 @@ Transmisja na żywo to największy anonimowy konsument tego systemu. Do określe
 
 ## Powiązane strony
 
-- [Architektura powiadomień](./architecture/notifications) -- Lejek powiadomień w aplikacji, push i e-mail, do którego zasila ten transport
-- [Endpointy wiadomości](./api/endpoints/messaging) -- Pełny interfejs REST dla wiadomości, rozmów, połączeń i urządzeń
-- [Powiadomienia push w przeglądarce](./web-push) -- Push w przeglądarce, niezależny od dostarczania przez gniazdo na stronie
-- [AppHelper](./shared-libraries/app-helper) -- Pakiet npm zawierający elementy podstawowe po stronie klienta
-- [Struktura modułów](./api/module-structure) -- Organizacja modułu wiadomości po stronie serwera
+- [Architektura powiadomień](./architecture/notifications.md) -- Lejek powiadomień w aplikacji, push i e-mail, do którego zasila ten transport
+- [Endpointy wiadomości](./api/endpoints/messaging.md) -- Pełny interfejs REST dla wiadomości, rozmów, połączeń i urządzeń
+- [Powiadomienia push w przeglądarce](./web-push.md) -- Push w przeglądarce, niezależny od dostarczania przez gniazdo na stronie
+- [AppHelper](./shared-libraries/app-helper.md) -- Pakiet npm zawierający elementy podstawowe po stronie klienta
+- [Struktura modułów](./api/module-structure.md) -- Organizacja modułu wiadomości po stronie serwera

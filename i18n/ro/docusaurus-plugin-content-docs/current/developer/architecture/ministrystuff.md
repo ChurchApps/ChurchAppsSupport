@@ -35,7 +35,7 @@ Cota este egală cu octeții planului și se numără din `storageObjects` (reze
 
 Notă de domeniu: selectarea furnizorului acoperă fluxul de **fișiere și resurse** de conținut, adică locul unde se află media în masă. Încărcările de galerie, logo și fotografii rămân pe furnizorul implicit. Acestea listează cheile din stocare și construiesc URL-urile pe partea clientului, deci ancorarea pe biserică nu se aplică încă.
 
-Aceeași interfață alimentează și [Bring-Your-Own Storage](./byos-storage): bisericile pot lega Google Drive, Dropbox, OneDrive sau propriul bucket compatibil S3, în loc să folosească un plan MinistryStuff.
+Aceeași interfață alimentează și [Bring-Your-Own Storage](./byos-storage.md): bisericile pot lega Google Drive, Dropbox, OneDrive sau propriul bucket compatibil S3, în loc să folosească un plan MinistryStuff.
 
 ## Facturare
 

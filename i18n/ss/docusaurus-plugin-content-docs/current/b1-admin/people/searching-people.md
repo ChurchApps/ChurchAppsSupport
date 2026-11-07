@@ -1,5 +1,6 @@
 ---
 title: "Kusesha Bantfu"
+description: "Sesha ku-B1 Admin ngemagama, hlela futsi ukhetse tikholomu kubuka kwetabula, wakhe tihlungi nge-Advanced Search, bese udlulisela okutfolakele ku-CSV."
 ---
 
 # Kusesha Bantfu

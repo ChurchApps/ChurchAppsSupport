@@ -1,5 +1,6 @@
 ---
 title: "Personnes"
+description: "Recherchez, ajoutez et modifiez les membres de l'église dans la section Personnes de B1 Admin, y compris le suivi des foyers, les mises à jour en lot et l'impression et l'exportation du répertoire."
 ---
 
 # Personnes

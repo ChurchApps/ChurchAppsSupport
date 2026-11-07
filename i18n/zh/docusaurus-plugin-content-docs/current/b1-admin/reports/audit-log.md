@@ -1,5 +1,6 @@
 ---
 title: "审计日志"
+description: "在 B1 Admin 中查看审计日志，了解谁登录、编辑了人员记录或更改了权限，并将筛选后的条目导出为 CSV。"
 ---
 
 # 审计日志
@@ -78,6 +79,6 @@ title: "审计日志"
 
 ## 相关文章
 
-- [角色和权限](../settings/roles-permissions) -- 管理谁有权访问什么
-- [数据安全](../settings/data-security) -- 了解您的数据如何受保护
+- [角色和权限](../settings/roles-permissions.md) -- 管理谁有权访问什么
+- [数据安全](../settings/data-security.md) -- 了解您的数据如何受保护
 - [报告概览](./index.md) -- 查看所有可用报告

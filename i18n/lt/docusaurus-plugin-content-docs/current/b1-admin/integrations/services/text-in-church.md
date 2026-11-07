@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Susiekite B1 Admin su Text In Church per Zapier: sukurkite API raktą, sukurkite jungtinį ryšį iš kontaktinės kortelės į B1 ir atspindėkite grupių narystes."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Tai dažniausia kryptis. TIC pateiktos ryšio kortelės automatiškai tampa nauj
 
 ## Taip pat žr.
 
-- [Clearstream](./clearstream) — alternatyvi SMS platforma su panašia Zapier struktūra
-- [Zapier (apžvalga)](../zapier) — B1 pusė kiekvienam Zapier receptui
+- [Clearstream](./clearstream.md) — alternatyvi SMS platforma su panašia Zapier struktūra
+- [Zapier (apžvalga)](../zapier.md) — B1 pusė kiekvienam Zapier receptui
 - [Text In Church Zapier vadovas](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TIC dokumentacija)

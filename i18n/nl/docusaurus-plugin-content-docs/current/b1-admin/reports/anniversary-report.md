@@ -1,5 +1,6 @@
 ---
 title: "Lijst met trouwdata"
+description: "Haal in B1 Admin een lijst op van iedereen met een trouwjubileum in een gekozen maand, met datums, en exporteer die naar een spreadsheet."
 ---
 
 # Lijst met trouwdata

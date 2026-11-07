@@ -1,5 +1,6 @@
 ---
 title: "Bibliothèques partagées"
+description: "Paquets npm @churchapps partagés par B1 Admin, B1.church et les API : configuration de l'espace Packages et publication avec changesets."
 ---
 
 # Bibliothèques partagées
@@ -14,9 +15,9 @@ Le code partagé de ChurchApps est publié sur npm sous le périmètre `@churcha
 
 | Paquet | Description | Utilisé par |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Couche de base : fonctions d'aide indépendantes de tout framework et interfaces TypeScript partagées qui forment le contrat de données commun entre les applications | Tous les projets |
-| [`@churchapps/apihelper`](./api-helper) | Utilitaires Express côté serveur : authentification, contrôleurs de base, accès à la base de données, intégrations AWS et e-mail | Toutes les API |
-| [`@churchapps/apphelper`](./app-helper) | Composants React partagés et modules fonctionnels (connexion, dons, formulaires, markdown, site web) | Toutes les applications web |
+| [`@churchapps/helpers`](./helpers.md) | Couche de base : fonctions d'aide indépendantes de tout framework et interfaces TypeScript partagées qui forment le contrat de données commun entre les applications | Tous les projets |
+| [`@churchapps/apihelper`](./api-helper.md) | Utilitaires Express côté serveur : authentification, contrôleurs de base, accès à la base de données, intégrations AWS et e-mail | Toutes les API |
+| [`@churchapps/apphelper`](./app-helper.md) | Composants React partagés et modules fonctionnels (connexion, dons, formulaires, markdown, site web) | Toutes les applications web |
 | `@churchapps/content-providers` | Couche d'abstraction au-dessus des fournisseurs de contenu tiers (Lessons.church, Planning Center, Dropbox et d'autres) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Boîte à outils pour créer des intégrations B1.church : vérification des webhooks, client REST typé, aides OAuth | Développeurs d'intégrations externes |
 | `@churchapps/texting` | Abstraction des fournisseurs de SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

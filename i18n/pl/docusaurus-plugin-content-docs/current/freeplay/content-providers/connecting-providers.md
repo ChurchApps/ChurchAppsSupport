@@ -1,5 +1,6 @@
 ---
 title: "Połączenie z dostawcami"
+description: "Połącz FreePlay z dostawcą treści kodem QR, logowaniem e-mailem lub jednym kliknięciem; zarządzaj połączeniem i rozłącz je w Ustawieniach."
 ---
 
 # Połączenie z dostawcami
@@ -13,7 +14,7 @@ Zanim będziesz mógł przeglądać treści od dostawcy, musisz się z nim poł�
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj i uruchom FreePlay -- zobacz [Pierwsze kroki](../getting-started/)
+- Zainstaluj i uruchom FreePlay -- zobacz [Pierwsze kroki](../getting-started/index.md)
 - Miej pod ręką pilot do telewizora, aby móc poruszać się po aplikacji
 - W przypadku dostawców wymagających logowania przygotuj dane do konta
 
@@ -80,7 +81,7 @@ Wybranie karty dostawcy z odznaką **Połączono** otwiera ekran **Ustawienia do
 
 - **Przeglądaj bibliotekę** -- Pokaż lub ukryj bibliotekę treści tego dostawcy na pasku bocznym
 - **Automatyczne pobieranie dzisiejszej lekcji** -- Używaj tego dostawcy jako źródła dzisiejszej lekcji i pobieraj jego pliki z wyprzedzeniem (wyświetlane tylko dla dostawców oferujących bieżącą lekcję)
-- **Używaj do ogłoszeń** -- Wybierz folder od tego dostawcy, który będzie odtwarzany w pętli z pozycji **Ogłoszenia** na pasku bocznym. Zobacz [Ogłoszenia](./announcements)
+- **Używaj do ogłoszeń** -- Wybierz folder od tego dostawcy, który będzie odtwarzany w pętli z pozycji **Ogłoszenia** na pasku bocznym. Zobacz [Ogłoszenia](./announcements.md)
 - **Sprawdź aktualizacje ogłoszeń** -- Widoczne po wybraniu folderu ogłoszeń; pobiera nowe slajdy i usuwa te, które zostały skasowane
 - **Rozłącz** -- Usuń połączenie
 
@@ -100,6 +101,6 @@ Rozłączenie usuwa zapisane dane uwierzytelniające z Twojego urządzenia. Jeś
 
 ## Powiązane artykuły
 
-- **[Przeglądanie i pobieranie treści](./browsing-content)** - Poruszaj się po folderach i odtwarzaj treści po połączeniu
-- **[Ogłoszenia](./announcements)** - Odtwarzaj w pętli folder slajdów od połączonego dostawcy
+- **[Przeglądanie i pobieranie treści](./browsing-content.md)** - Poruszaj się po folderach i odtwarzaj treści po połączeniu
+- **[Ogłoszenia](./announcements.md)** - Odtwarzaj w pętli folder slajdów od połączonego dostawcy
 - **[Przegląd dostawców treści](./index.md)** - Zobacz wszystkich dostępnych dostawców

@@ -1,5 +1,6 @@
 ---
 title: "Einen Bildschirm koppeln"
+description: "FreePlay-TV per vierstelligem Code an einen Gruppenkalender in FreePlay Admin koppeln, damit er geplante Inhalte selbstständig abspielt."
 ---
 
 # Einen Bildschirm koppeln
@@ -13,9 +14,9 @@ Um einen Fernseher auf einen Kalender zu setzen, koppeln Sie ihn mit **FreePlay 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren und starten Sie FreePlay auf dem Fernseher. Siehe [Erste Schritte](../getting-started/)
+- Installieren und starten Sie FreePlay auf dem Fernseher. Siehe [Erste Schritte](../getting-started/index.md)
 - Halten Sie einen ChurchApps-Zugang für Ihre Kirche bereit, um sich bei FreePlay Admin anzumelden
-- Optional können Sie zuerst [eine Playlist erstellen](./building-playlists) und [diese planen](./scheduling-the-calendar), damit der Fernseher sofort etwas abspielen kann
+- Optional können Sie zuerst [eine Playlist erstellen](./building-playlists.md) und [diese planen](./scheduling-the-calendar.md), damit der Fernseher sofort etwas abspielen kann
 
 </div>
 
@@ -38,7 +39,7 @@ Der Code ist 15 Minuten gültig, und ein Countdown darunter zeigt die verbleiben
 5. Lassen Sie unter **Modus** die Option **Geplant** ausgewählt. Der Fernseher spielt dann selbstständig nach dem Kalender der Gruppe ab.
 6. Klicken Sie auf **Koppeln**.
 
-Der Fernseher zeigt **Verbunden!** und danach **Ihr Zeitplan wird geladen...** an. Er lädt die geplanten Inhalte herunter und beginnt mit der Wiedergabe. Siehe [Geplante Wiedergabe auf dem Fernseher](./scheduled-playback).
+Der Fernseher zeigt **Verbunden!** und danach **Ihr Zeitplan wird geladen...** an. Er lädt die geplanten Inhalte herunter und beginnt mit der Wiedergabe. Siehe [Geplante Wiedergabe auf dem Fernseher](./scheduled-playback.md).
 
 :::info
 Wenn FreePlay Admin **Dieser Code stimmt mit keinem Fernseher überein** meldet, prüfen Sie den Code auf dem Bildschirm. Ist er abgelaufen, verwenden Sie den neuen Code, den der Fernseher jetzt anzeigt.
@@ -51,11 +52,11 @@ Die Einstellung **Modus** bietet zwei Optionen:
 - **Geplant** — Spielt nach dem Kalender der Gruppe selbstständig ab. Niemand muss auf Start drücken.
 - **Manuell** — Jemand wählt Inhalte mit der Fernbedienung aus. Ein manueller Bildschirm erscheint trotzdem in Ihrer Liste **Bildschirme**, folgt aber keinem Kalender, daher ist das Feld **Gruppe** deaktiviert.
 
-Sie können den Modus eines Bildschirms später über **Bearbeiten** auf der [Seite Bildschirme](./managing-screens) ändern.
+Sie können den Modus eines Bildschirms später über **Bearbeiten** auf der [Seite Bildschirme](./managing-screens.md) ändern.
 
 ## Stattdessen mit einem Dienstplan koppeln
 
-Der Code auf dem Bildschirm **Diesen Bildschirm koppeln** funktioniert auch in B1 Admin. Wenn Sie ihn dort eingeben und unter **Pläne anzeigen für** einen Planungstyp auswählen, folgt der Fernseher diesem Planungstyp im [Plan-Modus](../plan-mode/) statt einem Kalender. Siehe [Ihr Gerät koppeln](../plan-mode/device-pairing).
+Der Code auf dem Bildschirm **Diesen Bildschirm koppeln** funktioniert auch in B1 Admin. Wenn Sie ihn dort eingeben und unter **Pläne anzeigen für** einen Planungstyp auswählen, folgt der Fernseher diesem Planungstyp im [Plan-Modus](../plan-mode/index.md) statt einem Kalender. Siehe [Ihr Gerät koppeln](../plan-mode/device-pairing.md).
 
 ## Am Fernseher ändern oder die Kopplung aufheben {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ Der Fernseher zeigt wieder einen Kopplungscode an. Koppeln Sie ihn erneut, wenn 
 
 ## Verwandte Artikel
 
-- **[Bildschirme und Gruppen verwalten](./managing-screens)** — Einen Bildschirm umbenennen, in eine andere Gruppe verschieben oder seine Downloads prüfen
-- **[Kalender planen](./scheduling-the-calendar)** — Festlegen, was die Bildschirme der Gruppe abspielen
-- **[Einen Kopplungsmodus auswählen](../getting-started/pairing-modes)** — Den geplanten Modus mit dem Plan-Modus und dem eigenständigen Durchsuchen von Anbietern vergleichen
+- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** — Einen Bildschirm umbenennen, in eine andere Gruppe verschieben oder seine Downloads prüfen
+- **[Kalender planen](./scheduling-the-calendar.md)** — Festlegen, was die Bildschirme der Gruppe abspielen
+- **[Einen Kopplungsmodus auswählen](../getting-started/pairing-modes.md)** — Den geplanten Modus mit dem Plan-Modus und dem eigenständigen Durchsuchen von Anbietern vergleichen

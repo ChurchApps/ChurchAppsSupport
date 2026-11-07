@@ -1,5 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Aan de slag met B1 Checkin"
+sidebar_label: "Aan de slag"
+description: "Stel de B1 Checkin-kioskapp in op een Android-tablet: installeer, log in, kies je kerk en koppel eventueel een labelprinter."
 ---
 
 # Aan de slag met B1 Church Checkin
@@ -27,9 +29,9 @@ Het instellen van B1 Church Checkin duurt slechts een paar minuten. In deze sect
 
 Wanneer u de app voor het eerst start, gaat u door drie stappen heen:
 
-1. **[Meld u aan](./logging-in)** -- Voer uw e-mailadres en wachtwoord in om u te verifiëren.
-2. **[Selecteer uw kerk](./logging-in)** -- Als uw account aan meerdere kerken is gekoppeld, kies welke deze kiosk moet bedienen.
-3. **[Stel een printer in](./printer-setup)** -- Configureer een netwerkprinter voor etiketafdrukken of sla deze stap over als u geen etiketten nodig hebt.
+1. **[Meld u aan](./logging-in.md)** -- Voer uw e-mailadres en wachtwoord in om u te verifiëren.
+2. **[Selecteer uw kerk](./logging-in.md)** -- Als uw account aan meerdere kerken is gekoppeld, kies welke deze kiosk moet bedienen.
+3. **[Stel een printer in](./printer-setup.md)** -- Configureer een netwerkprinter voor etiketafdrukken of sla deze stap over als u geen etiketten nodig hebt.
 
 Na de eerste aanmelding slaat de app uw referenties en kerkselectie op. Bij toekomstige starten gaat het direct naar het dienstenscherm.
 
@@ -43,6 +45,6 @@ Zorg ervoor dat uw kerkbeheerder diensten, diensttijden en groepen in B1 Admin h
 
 ## Volgende stappen
 
-- [Aanmelden](./logging-in) -- Gedetailleerde aanmeldings- en kerkselectie-instructies.
-- [Printerinstellingen](./printer-setup) -- Hoe u uw etiketprinter kunt ontdekken, selecteren en testen.
-- [Aanmeldingsworkflow](../check-in/) -- Leer de volledige aanmeldingsflow zodra uw kiosk is ingesteld.
+- [Aanmelden](./logging-in.md) -- Gedetailleerde aanmeldings- en kerkselectie-instructies.
+- [Printerinstellingen](./printer-setup.md) -- Hoe u uw etiketprinter kunt ontdekken, selecteren en testen.
+- [Aanmeldingsworkflow](../check-in/index.md) -- Leer de volledige aanmeldingsflow zodra uw kiosk is ingesteld.

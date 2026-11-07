@@ -1,5 +1,7 @@
 ---
-title: "Pag-sign Up sa Pagboboluntaryo"
+title: "Pagpapatala sa Pagboboluntaryo sa B1.church Member Portal"
+sidebar_label: "Pag-sign Up sa Pagboboluntaryo"
+description: "Tumingin ng bakanteng posisyon sa pagboboluntaryo ayon sa kategorya at magpatala para sa paparating na serbisyo, o alisin ang pagpapatala bago ang deadline."
 ---
 
 # Pag-sign Up sa Pagboboluntaryo
@@ -74,4 +76,4 @@ Regular na tingnan ang volunteer page, lalo na sa simula ng linggo. Mabilis mapu
 ## Mga Kaugnay na Artikulo
 
 - [Serving Overview](./index.md) -- Pangkalahatang-ideya ng mga feature ng serving sa B1.church
-- [Viewing Plans](../plans/viewing-plans) -- Tingnan ang iyong mga naka-assign na plan at service order
+- [Viewing Plans](../plans/viewing-plans.md) -- Tingnan ang iyong mga naka-assign na plan at service order

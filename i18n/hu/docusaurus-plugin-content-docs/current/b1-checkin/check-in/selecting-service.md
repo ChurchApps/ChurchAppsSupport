@@ -1,5 +1,6 @@
 ---
 title: "Szolgálat kiválasztása"
+description: "A B1 Checkin szolgáltatások képernyőjén válassza ki a részvétel szolgálatát; ez határozza meg a további lépések időpontjait és csoportjait."
 ---
 
 # Szolgálat kiválasztása
@@ -13,7 +14,7 @@ Minden check-in első lépése annak kiválasztása, hogy melyik szolgálatra é
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Jelentkezz be](../getting-started/logging-in) a B1 Church Checkin alkalmazásba, és válaszd ki a gyülekezetedet
+- [Jelentkezz be](../getting-started/logging-in.md) a B1 Church Checkin alkalmazásba, és válaszd ki a gyülekezetedet
 - Győződj meg arról, hogy a gyülekezet adminisztrátora [beállította a szolgálatokat és a szolgálati időpontokat](../../b1-admin/attendance/setup.md) a B1 Adminban
 
 </div>
@@ -24,11 +25,11 @@ Minden check-in első lépése annak kiválasztása, hogy melyik szolgálatra é
 2. Láthatod a gyülekezetedhez beállított összes szolgálat listáját. Minden szolgálat egy kártyaként jelenik meg, amely a szolgálat nevét mutatja (például „Vasárnap délelőtt” vagy „Szerda este”).
 3. Koppints arra a szolgálatra, amelyikre érkezel.
 
-Az alkalmazás betölti az adott szolgálathoz tartozó szolgálati időpontokat és csoportokat, majd a [tagkereső képernyőre](./looking-up-members) navigál.
+Az alkalmazás betölti az adott szolgálathoz tartozó szolgálati időpontokat és csoportokat, majd a [tagkereső képernyőre](./looking-up-members.md) navigál.
 
 ## Amikor a check-in nincs nyitva
 
-Ha az adminisztrátorod egy szolgálati időponthoz [check-in ütemezést](../../b1-admin/attendance/setup#setting-a-check-in-schedule) rendelt, az alkalmazás csak akkor engedi a családoknak az adott szolgálati időpont kiválasztását, ha annak check-in időablaka nyitva van. Azok a szolgálati időpontok, amelyek időablaka jelenleg zárva van, továbbra is megjelennek a [háztartás képernyőn](./household-review), de **Lezárva** jelzéssel szerepelnek (például **Lezárva · nyit: V 9:30**), csoportgomb helyett.
+Ha az adminisztrátorod egy szolgálati időponthoz [check-in ütemezést](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) rendelt, az alkalmazás csak akkor engedi a családoknak az adott szolgálati időpont kiválasztását, ha annak check-in időablaka nyitva van. Azok a szolgálati időpontok, amelyek időablaka jelenleg zárva van, továbbra is megjelennek a [háztartás képernyőn](./household-review.md), de **Lezárva** jelzéssel szerepelnek (például **Lezárva · nyit: V 9:30**), csoportgomb helyett.
 
 Ha a kiválasztott szolgálat összes szolgálati időpontja zárva van, az alkalmazás megmondja, mikor nyit a check-in, például: **„A check-in erre a szolgálatra V 9:30-kor nyit.”** (Ha nem jeleníthető meg nyitási időpont, a következő üzenet jelenik meg: **„A check-in jelenleg nincs nyitva ehhez a szolgálathoz.”**) Koppints a **Vissza** gombra, hogy visszatérj a szolgálatok listájához és másik szolgálatot válassz, vagy várj, amíg az időablak megnyílik, majd próbáld újra.
 
@@ -56,4 +57,4 @@ Ha a gyülekezetednél csak egy szolgálat van beállítva, akkor is meg kell ko
 
 ## Következő lépés
 
-A szolgálat kiválasztása után [telefonszám vagy név alapján kikeresed a családodat](./looking-up-members).
+A szolgálat kiválasztása után [telefonszám vagy név alapján kikeresed a családodat](./looking-up-members.md).

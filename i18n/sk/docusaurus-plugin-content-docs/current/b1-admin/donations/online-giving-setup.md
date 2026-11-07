@@ -1,5 +1,6 @@
 ---
 title: "Nastavenie online darovania"
+description: "Prepojte Stripe, PayPal, Kingdom Funding alebo Paystack s B1 Admin, aby členovia mohli dávať online cez váš web B1.church a dary sa synchronizovali."
 ---
 
 # Nastavenie online darovania

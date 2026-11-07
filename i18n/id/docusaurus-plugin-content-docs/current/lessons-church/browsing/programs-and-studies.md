@@ -1,5 +1,6 @@
 ---
 title: "Program dan Studi"
+description: "Pahami keterkaitan program, studi, pelajaran, dan venue di Lessons.church untuk menemukan kurikulum yang tepat dan berpindah antar pelajaran terkait."
 ---
 
 # Program dan Studi

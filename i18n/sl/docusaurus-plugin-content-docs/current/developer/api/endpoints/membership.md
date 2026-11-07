@@ -1,5 +1,6 @@
 ---
 title: "Končne točke za članstvo"
+description: "Referenca končnih točk API-ja Membership v ChurchApps: osebe, gospodinjstva, skupine, vloge, obrazci in nastavitve, s pravili za avtentikacijo in dovoljenja."
 ---
 
 # Končne točke za članstvo
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Osnovna pot: `/membership/users`
 
-Za končne točke za prijavo, registracijo in upravljanje gesel glejte [Avtentikacija in dovoljenja](./authentication).
+Za končne točke za prijavo, registracijo in upravljanje gesel glejte [Avtentikacija in dovoljenja](./authentication.md).
 
 | Metoda | Pot | Avtentikacija | Dovoljenje | Opis |
 |--------|------|------|------|------|
@@ -342,6 +343,6 @@ Osnovna pot: `/membership/clientErrors`
 
 ## Sorodne strani
 
-- [Avtentikacija in dovoljenja](./authentication) — Potek prijave, JWT, OAuth, model dovoljenj
-- [Končne točke za udeležbo](./attendance) — Sledenje storitvam in obiskom
-- [Struktura modula](../module-structure) — Vzorci organizacije kode
+- [Avtentikacija in dovoljenja](./authentication.md) — Potek prijave, JWT, OAuth, model dovoljenj
+- [Končne točke za udeležbo](./attendance.md) — Sledenje storitvam in obiskom
+- [Struktura modula](../module-structure.md) — Vzorci organizacije kode

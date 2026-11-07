@@ -1,5 +1,6 @@
 ---
 title: "Massenbearbeitung von Personen"
+description: "Päivitä jäsenyystila, siviilisääty, sukupuoli, opt-out, mukautetut kyllä/ei-kentät tai ryhmäjäsenyys useille henkilöille kerralla B1 Adminissa."
 ---
 
 # Massenbearbeitung von Personen

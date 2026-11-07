@@ -1,5 +1,7 @@
 ---
-title: "Fællesskab"
+title: "Fællesskabsfunktioner i B1 Mobile-appen"
+sidebar_label: "Fællesskab"
+description: "Brug B1 Mobile-appen til at søge i medlemskataloget, sende private beskeder til andre medlemmer og gennemgå push-notifikationer fra din kirke."
 ---
 
 # Fællesskab
@@ -12,13 +14,13 @@ Funktionerne **Fællesskab** i B1 Mobile hjælper dig med at holde dig forbundet
 
 ## Hvad du finder
 
-- **[Medlemsmappe](./member-directory)** -- Gennemse og søg i din kirkes medlemsmappe. Slå mennesker op efter navn, og tryk på et medlem for at se deres profil med kontaktoplysninger og familieforbindelser.
-- **[Messaging](./messaging)** -- Send og modtag private meddelelser med andre kirkebedlemmer. Start nye samtaler eller fortsæt der, hvor du slap af med eksisterende.
-- **[Meddelelser](./notifications)** -- Hold dig opdateret med push-meddelelser om gruppeaktivitet, meddelelser, tjeneste tildelte opgaver og andre vigtige opdateringer fra din kirke.
+- **[Medlemsmappe](./member-directory.md)** -- Gennemse og søg i din kirkes medlemsmappe. Slå mennesker op efter navn, og tryk på et medlem for at se deres profil med kontaktoplysninger og familieforbindelser.
+- **[Messaging](./messaging.md)** -- Send og modtag private meddelelser med andre kirkebedlemmer. Start nye samtaler eller fortsæt der, hvor du slap af med eksisterende.
+- **[Meddelelser](./notifications.md)** -- Hold dig opdateret med push-meddelelser om gruppeaktivitet, meddelelser, tjeneste tildelte opgaver og andre vigtige opdateringer fra din kirke.
 
 ## Kom i gang
 
-Du skal være logget ind for at få adgang til fællesskabsfunktioner. Hvis du ikke er logget ind, bliver du bedt om at [logge ind](../getting-started/logging-in) når du forsøger at bruge nogle af disse afsnit.
+Du skal være logget ind for at få adgang til fællesskabsfunktioner. Hvis du ikke er logget ind, bliver du bedt om at [logge ind](../getting-started/logging-in.md) når du forsøger at bruge nogle af disse afsnit.
 
 Medlemsmappen, messaging og meddelelser er hver tilgængelig fra appens navigation. Sammen giver de dig en simpel måde at finde mennesker, kommunikere privat og holde dig i løkken med, hvad der sker på din kirke.
 

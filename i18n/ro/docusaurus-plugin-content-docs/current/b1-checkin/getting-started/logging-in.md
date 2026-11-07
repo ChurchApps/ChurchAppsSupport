@@ -1,5 +1,7 @@
 ---
-title: "Prijavljivanje"
+title: "Autentificare în B1 Church Checkin"
+sidebar_label: "Prijavljivanje"
+description: "Conectează-te la aplicația chioșcului B1 Church Checkin, alege biserica și înțelege autentificarea automată, setările admin și deconectarea."
 ---
 
 # Prijavljivanje
@@ -63,7 +65,7 @@ Postavke administratora namjerno su skrivene kako članovi crkve koji koriste ki
 2. Ako je postavljen PIN za kiosk, unesite PIN kada se to zatraži.
 3. Otvoriće se ekran **Admin Settings** sa sljedećim opcijama:
    - **Change Service** — promijenite odabrano vrijeme službe
-   - **Change Printer** — otvorite [postavke štampača](./printer-setup) za pretragu i odabir štampača
+   - **Change Printer** — otvorite [postavke štampača](./printer-setup.md) za pretragu i odabir štampača
    - **Set/Change PIN** — postavite ili ažurirajte PIN za kiosk koji štiti pristup administratora
    - **Logout** — odjavite se i vratite na ekran za prijavu
 
@@ -73,4 +75,4 @@ Odjava briše sve sačuvane podatke za prijavu i odabir crkve. Da biste ponovo k
 
 ## Sljedeći koraci
 
-Nakon prijave možete [podesiti štampač](./printer-setup) ili direktno otići na [tok prijave](../check-in/).
+Nakon prijave možete [podesiti štampač](./printer-setup.md) ili direktno otići na [tok prijave](../check-in/index.md).

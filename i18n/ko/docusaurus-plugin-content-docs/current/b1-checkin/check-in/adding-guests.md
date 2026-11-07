@@ -1,5 +1,6 @@
 ---
 title: "방문자 추가"
+description: "B1 Checkin 키오스크에서 방문하는 자녀, 친척, 친구를 가정에 추가한 뒤 그룹을 배정하고 체크인을 완료하세요."
 ---
 
 # 방문자 추가
@@ -13,8 +14,8 @@ title: "방문자 추가"
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [가족을 조회](./looking-up-members)하고 검색 결과에서 구성원을 선택합니다.
-- 가족 구성원을 확인할 수 있는 [가정 검토 화면](./household-review)에 있어야 합니다.
+- [가족을 조회](./looking-up-members.md)하고 검색 결과에서 구성원을 선택합니다.
+- 가족 구성원을 확인할 수 있는 [가정 검토 화면](./household-review.md)에 있어야 합니다.
 
 </div>
 
@@ -36,8 +37,8 @@ title: "방문자 추가"
 
 방문자가 가정 목록에 표시되면 다음 작업을 할 수 있습니다.
 
-- **카드를 펼쳐** 다른 가족 구성원과 마찬가지로 [그룹에 배정](./group-assignment)합니다.
-- 방문자를 포함한 가정 전체를 **[체크인](./completing-checkin)**합니다.
+- **카드를 펼쳐** 다른 가족 구성원과 마찬가지로 [그룹에 배정](./group-assignment.md)합니다.
+- 방문자를 포함한 가정 전체를 **[체크인](./completing-checkin.md)**합니다.
 
 ## 취소
 
@@ -49,4 +50,4 @@ title: "방문자 추가"
 
 ## 다음 단계
 
-방문자를 추가하고 필요에 따라 [그룹을 배정](./group-assignment)한 후 [체크인을 완료](./completing-checkin)할 준비가 된 것입니다.
+방문자를 추가하고 필요에 따라 [그룹을 배정](./group-assignment.md)한 후 [체크인을 완료](./completing-checkin.md)할 준비가 된 것입니다.

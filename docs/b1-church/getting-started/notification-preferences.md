@@ -1,5 +1,6 @@
 ---
 title: "Notification Preferences"
+description: "Set notification channels, email frequency, quiet hours, and text opt-outs for each notification type in B1 Admin and the B1 app, from one screen."
 ---
 
 # Notification Preferences
@@ -60,6 +61,6 @@ Time-sensitive notifications -- like a security alert or a child check-in safety
 
 ## Related
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) -- Serving reminders and responding to schedule requests
-- [Registering for Events](../events/registering) -- Sign up for events that send reminders
-- [Installing the App](installing-pwa) -- Add B1 to your device so you can receive push notifications
+- [Volunteer Sign-Up](../serving/volunteer-signup.md) -- Serving reminders and responding to schedule requests
+- [Registering for Events](../events/registering.md) -- Sign up for events that send reminders
+- [Installing the App](./installing-pwa.md) -- Add B1 to your device so you can receive push notifications

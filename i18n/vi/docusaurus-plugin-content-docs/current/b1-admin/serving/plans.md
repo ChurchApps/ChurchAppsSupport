@@ -1,5 +1,6 @@
 ---
 title: "Kế hoạch phục vụ"
+description: "Thiết lập lịch tình nguyện trong B1 Admin: tạo kế hoạch phục vụ theo ngày, sao chép từ các tuần trước, phân công thành viên vào vị trí, và quản lý hạn đăng ký và nhắc nhở."
 ---
 
 # Kế hoạch phục vụ

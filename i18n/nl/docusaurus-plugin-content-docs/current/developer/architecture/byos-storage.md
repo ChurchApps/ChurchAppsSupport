@@ -1,5 +1,6 @@
 ---
 title: "Eigen opslag meenemen (BYOS)"
+description: "Koppel je eigen Google Drive, Dropbox, OneDrive of S3-compatibele bucket in B1 Admin, zodat kerkuploads de platformlimiet van 100 MB omzeilen."
 ---
 
 # Eigen opslag meenemen (BYOS)
@@ -8,7 +9,7 @@ Kerken krijgen ongeveer 100MB gratis gehoste bestandsopslag (de `/content/files`
 
 ## De providerkoppeling
 
-BYOS hergebruikt de opslagkoppeling die is gebouwd voor [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), die per kerk wordt opgelost door `StorageResolver` uit de tabel `content.storageProviders`. In tegenstelling tot de singleton-providers `churchapps`/`ministrystuff` bewaren BYOS-providers inloggegevens per kerk. Daarom maakt `StorageResolver.forChurch` per verzoek een instantie aan op basis van de rij van de kerk. De implementaties staan naast de resolver in `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (OAuth-tokenuitwisseling + single-flight-vernieuwing — Dropbox roteert refresh-tokens, dus vernieuwingen worden op dezelfde manier ontdubbeld als bij `ProviderProxyController`).
+BYOS hergebruikt de opslagkoppeling die is gebouwd voor [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), die per kerk wordt opgelost door `StorageResolver` uit de tabel `content.storageProviders`. In tegenstelling tot de singleton-providers `churchapps`/`ministrystuff` bewaren BYOS-providers inloggegevens per kerk. Daarom maakt `StorageResolver.forChurch` per verzoek een instantie aan op basis van de rij van de kerk. De implementaties staan naast de resolver in `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, plus `ByosAuth` (OAuth-tokenuitwisseling + single-flight-vernieuwing — Dropbox roteert refresh-tokens, dus vernieuwingen worden op dezelfde manier ontdubbeld als bij `ProviderProxyController`).
 
 `storageProviders` bevat de inloggegevens: `accessToken`/`refreshToken`/`tokenExpiresAt` (versleuteld, het OAuth-trio) of `apiKey`/`apiSecret` + `settings`-JSON (`{endpoint, region, bucket, publicBase}`, S3). Tokens bereiken nooit de client. `GET /content/storage/providers` maskeert geheimen en geeft een booleaanse `connected`-waarde terug.
 

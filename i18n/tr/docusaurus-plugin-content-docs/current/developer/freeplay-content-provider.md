@@ -1,5 +1,6 @@
 ---
 title: "FreePlay İçerik Sağlayıcısı"
+description: "Bir ders kütüphanesini FreePlay'e bağlamak için içerik sağlayıcının sunması gerekenler: logo, oturum açma modeli, katalog ve oynatma listesi uç noktaları ile medya formatları."
 ---
 
 # FreePlay İçerik Sağlayıcısı

@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Zapier で VOMO の奉仕者登録とキオスクのチェックインを B1 Admin の人物とグループに接続します。API キーの権限と設定手順を含みます。"
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMOのプロジェクトが終了したら、B1のグループを手動で空�
 
 ### SMSで「お申し込みありがとうございます」を送る
 
-同じZapの中で、VOMO Participationの後にClearstream Send TextまたはText In Church Send Messageを連鎖させます。どちらもZapierの専用アクションがあります。詳しくは[Clearstream](./clearstream)と[Text In Church](./text-in-church)を参照してください。
+同じZapの中で、VOMO Participationの後にClearstream Send TextまたはText In Church Send Messageを連鎖させます。どちらもZapierの専用アクションがあります。詳しくは[Clearstream](./clearstream.md)と[Text In Church](./text-in-church.md)を参照してください。
 
 ### 離脱を検知する
 
@@ -91,6 +92,6 @@ VOMOのプロジェクトが終了したら、B1のグループを手動で空�
 
 ## 関連項目
 
-- [Zapier（概要）](../zapier)：すべてのZapierレシピのB1側の情報
-- [Clearstream](./clearstream)、[Text In Church](./text-in-church)：ボランティアの申し込みをSMSの確認メッセージと組み合わせます
+- [Zapier（概要）](../zapier.md)：すべてのZapierレシピのB1側の情報
+- [Clearstream](./clearstream.md)、[Text In Church](./text-in-church.md)：ボランティアの申し込みをSMSの確認メッセージと組み合わせます
 - [Webhooks（開発者向けリファレンス）](/docs/developer/api/webhooks)：VOMOがトリガーにできるイベント

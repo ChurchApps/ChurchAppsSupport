@@ -1,5 +1,7 @@
 ---
-title: "시작하기"
+title: "FreePlay TV 앱 시작하기"
+sidebar_label: "시작하기"
+description: "Android TV, Fire TV 또는 Apple TV에 FreePlay 설정: 앱 설치, 첫 실행, 리모컨 조작과 사이드바 익히기."
 ---
 
 # FreePlay 시작하기
@@ -42,7 +44,7 @@ FreePlay는 Fire TV(새로운 Vega OS 스틱 포함), onn 같은 Android TV 및 
 
 FreePlay를 처음 열면 FreePlay 로고가 나타나는 애니메이션 시작 화면이 보입니다. 앱은 이전에 연결해 둔 콘텐츠 제공자가 있는지 확인합니다. 이미 제공자를 연결했다면 해당 제공자의 콘텐츠 찾아보기 화면으로 바로 이동합니다. 연결된 제공자가 없다면 첫 번째 콘텐츠 소스를 연결할 수 있는 **Content Providers** 화면이 열립니다.
 
-TV가 [예약 모드](../scheduled-mode/)에서 캘린더에 연결되어 있다면, FreePlay는 이 모든 과정을 건너뛰고 예약 재생 화면으로 바로 엽니다.
+TV가 [예약 모드](../scheduled-mode/index.md)에서 캘린더에 연결되어 있다면, FreePlay는 이 모든 과정을 건너뛰고 예약 재생 화면으로 바로 엽니다.
 
 ## TV 리모컨으로 조작하기
 
@@ -62,13 +64,13 @@ FreePlay는 TV 리모컨에 맞게 만들어졌습니다. 앱 전체에서 사�
 
 사이드바에는 위에서 아래로 다음 항목이 나열됩니다.
 
-- **Today's Plan** -- TV가 예배 순서에 연결되어 있을 때 표시됩니다. [예배 순서 모드](../plan-mode/)를 참고하세요.
-- **Announcements** -- 공지 폴더를 선택하면 표시됩니다. [공지](../content-providers/announcements)를 참고하세요.
-- **Browse** -- 연결된 각 콘텐츠 제공자를 찾아볼 수 있습니다. [콘텐츠 찾아보기 및 다운로드](../content-providers/browsing-content)를 참고하세요.
-- **Settings** -- 사이드바 맨 아래에 있습니다. **Pair to a calendar**(이 TV를 캘린더나 예배 순서에 연결하기 -- [연결 방식 선택하기](./pairing-modes)를 참고하세요), **Downloads**(이 기기에 저장된 콘텐츠 재생 또는 삭제), **Providers**(콘텐츠 제공자 연결 및 공지 폴더 선택)를 열 수 있습니다.
+- **Today's Plan** -- TV가 예배 순서에 연결되어 있을 때 표시됩니다. [예배 순서 모드](../plan-mode/index.md)를 참고하세요.
+- **Announcements** -- 공지 폴더를 선택하면 표시됩니다. [공지](../content-providers/announcements.md)를 참고하세요.
+- **Browse** -- 연결된 각 콘텐츠 제공자를 찾아볼 수 있습니다. [콘텐츠 찾아보기 및 다운로드](../content-providers/browsing-content.md)를 참고하세요.
+- **Settings** -- 사이드바 맨 아래에 있습니다. **Pair to a calendar**(이 TV를 캘린더나 예배 순서에 연결하기 -- [연결 방식 선택하기](./pairing-modes.md)를 참고하세요), **Downloads**(이 기기에 저장된 콘텐츠 재생 또는 삭제), **Providers**(콘텐츠 제공자 연결 및 공지 폴더 선택)를 열 수 있습니다.
 
 ## 다음 단계
 
-- **[연결 방식 선택하기](./pairing-modes)** -- TV를 연결하는 여러 방법 알아보기
-- **[예약 모드](../scheduled-mode/)** -- FreePlay Admin으로 TV를 캘린더에 맞추기
-- **[콘텐츠 제공자](../content-providers/)** -- Lessons.church, Bible Project 등에 연결하기
+- **[연결 방식 선택하기](./pairing-modes.md)** -- TV를 연결하는 여러 방법 알아보기
+- **[예약 모드](../scheduled-mode/index.md)** -- FreePlay Admin으로 TV를 캘린더에 맞추기
+- **[콘텐츠 제공자](../content-providers/index.md)** -- Lessons.church, Bible Project 등에 연결하기

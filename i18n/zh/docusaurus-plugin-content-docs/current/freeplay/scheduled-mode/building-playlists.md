@@ -1,5 +1,6 @@
 ---
 title: "连接提供商与构建播放列表"
+description: "先在 FreePlay Admin 中设置已连接的内容提供方，然后为定时播放的电视屏幕构建、排列和预览播放列表。"
 ---
 
 # 连接提供商与构建播放列表
@@ -107,6 +108,6 @@ FreePlay Admin 中的提供商连接属于整个教会，而不属于某个人�
 
 ## 相关文章
 
-- **[安排日程](./scheduling-the-calendar)** —— 将您的播放列表放到屏幕组的日程上
-- **[管理屏幕与小组](./managing-screens)** —— 将某个播放列表设置为小组的默认循环
-- **[内容提供商](../content-providers/)** —— 您可以直接在电视上连接的提供商
+- **[安排日程](./scheduling-the-calendar.md)** —— 将您的播放列表放到屏幕组的日程上
+- **[管理屏幕与小组](./managing-screens.md)** —— 将某个播放列表设置为小组的默认循环
+- **[内容提供商](../content-providers/index.md)** —— 您可以直接在电视上连接的提供商

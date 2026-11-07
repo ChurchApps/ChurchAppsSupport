@@ -1,5 +1,6 @@
 ---
 title: "Solicitações de entrada em grupos"
+description: "Revise, aprove ou recuse solicitações de entrada em grupos no B1 Admin, encontre pedidos pendentes como líder ou admin e informe o motivo ao recusar."
 ---
 
 # Solicitações de entrada em grupos

@@ -1,5 +1,6 @@
 ---
 title: "Selbst-Hosting auf Railway"
+description: "Private ChurchApps-Instanz in ca. 15 Minuten auf Railway bereitstellen, dann E-Mail, eigene Domains, Giving und Dateispeicher für B1 Admin und B1App einrichten."
 ---
 
 # Selbst-Hosting auf Railway
@@ -195,7 +196,7 @@ Diese schalten bestimmte Funktionen frei und können jederzeit über das Railway
 | `VIMEO_TOKEN` | Unterstützung für Vimeo-Predigten |
 | `API_BIBLE_KEY` | Nachschlagen von Bibelversen in Lektionen und Inhalten |
 | `YOUVERSION_API_KEY` | Integration der YouVersion-Bibel |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser-Push-Benachrichtigungen ([VAPID-Schlüsselpaar erzeugen](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser-Push-Benachrichtigungen ([VAPID-Schlüsselpaar erzeugen](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Optionale CRM-Synchronisierung für neue Anmeldungen |
 
 ## Aktualisierung
@@ -234,9 +235,9 @@ Falls Sie auf etwas stoßen, das hier nicht aufgeführt ist, eröffnen Sie ein I
 
 ## Verwandte Artikel
 
-- **[Selbst-Hosting mit Docker](./docker)** — derselbe Stack auf eigener Hardware oder einem VPS
-- **[Ersteinrichtung](../../getting-started/initial-setup)** — erste Schritte, nachdem Ihre Gemeinde angelegt wurde
-- **[Website-Ersteinrichtung](../../b1-admin/website/initial-setup)** — Konfiguration der öffentlichen Website Ihrer Gemeinde
-- **[Spendeneinstellungen](../../b1-admin/donations/online-giving-setup)** — Stripe oder PayPal anbinden
-- **[Lokale API-Einrichtung](../api/local-setup)** — den Stack lokal für die Entwicklung ausführen
-- **[API-Bereitstellung (AWS)](./apis)** — wie das offizielle SaaS von ChurchApps bereitgestellt wird
+- **[Selbst-Hosting mit Docker](./docker.md)** — derselbe Stack auf eigener Hardware oder einem VPS
+- **[Ersteinrichtung](../../getting-started/initial-setup.md)** — erste Schritte, nachdem Ihre Gemeinde angelegt wurde
+- **[Website-Ersteinrichtung](../../b1-admin/website/initial-setup.md)** — Konfiguration der öffentlichen Website Ihrer Gemeinde
+- **[Spendeneinstellungen](../../b1-admin/donations/online-giving-setup.md)** — Stripe oder PayPal anbinden
+- **[Lokale API-Einrichtung](../api/local-setup.md)** — den Stack lokal für die Entwicklung ausführen
+- **[API-Bereitstellung (AWS)](./apis.md)** — wie das offizielle SaaS von ChurchApps bereitgestellt wird

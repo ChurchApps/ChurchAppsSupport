@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Hubungkan Donorbox ke B1 Admin dengan Zapier agar donasi online otomatis membuat catatan donasi dan profil donatur, tanpa perlu ekspor manual."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Jika Anda menjalankan beberapa kampanye Donorbox yang dipetakan ke dana B1 yang 
 
 ## Lihat Juga
 
-- [Zapier (ikhtisar)](../zapier) — sisi B1 dari setiap resep Zapier
-- [Subsplash](./subsplash) — platform donasi lain dengan aplikasi Zapier
-- [Mailchimp](./mailchimp) — hubungkan "pemberian baru" dengan tag email
+- [Zapier (ikhtisar)](../zapier.md) — sisi B1 dari setiap resep Zapier
+- [Subsplash](./subsplash.md) — platform donasi lain dengan aplikasi Zapier
+- [Mailchimp](./mailchimp.md) — hubungkan "pemberian baru" dengan tag email

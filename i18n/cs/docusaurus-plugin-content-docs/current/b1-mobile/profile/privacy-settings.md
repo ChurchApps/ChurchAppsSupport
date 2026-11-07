@@ -1,5 +1,6 @@
 ---
 title: "Nastavení soukromí"
+description: "Určete, které údaje profilu, jako telefon, e-mail a adresa, mohou ostatní členové vidět v adresáři B1 Mobile, a zkontrolujte čekající změny."
 ---
 
 # Nastavení soukromí
@@ -13,7 +14,7 @@ Karta **Viditelnost** na obrazovce Profilu vám umožňuje ovládat, co ostatní
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [přihlaste se](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [přihlaste se](../getting-started/logging-in.md) ke svému účtu
 
 </div>
 
@@ -52,8 +53,8 @@ Karta **Účet** poskytuje přístup k nastavení zabezpečení. Pomocí této k
 
 | Karta | Účel |
 |---|---|
-| **Profil** | [Úprava osobních údajů](./editing-profile) a fotografie |
-| **Domácnost** | [Zobrazení členů rodiny](./household) |
+| **Profil** | [Úprava osobních údajů](./editing-profile.md) a fotografie |
+| **Domácnost** | [Zobrazení členů rodiny](./household.md) |
 | **Viditelnost** | Ovládání toho, co ostatní vidí v adresáři |
 | **Čekající** | Kontrola změn profilu čekajících na schválení |
 | **Účet** | Správa nastavení zabezpečení |
@@ -62,6 +63,6 @@ Tyto karty spolu slouží k tomu, abyste měli plnou kontrolu nad svými osobní
 
 ## Související články
 
-- [Úprava profilu](./editing-profile) -- Aktualizace osobních údajů
-- [Domácnost](./household) -- Zobrazení a správa členů rodiny
+- [Úprava profilu](./editing-profile.md) -- Aktualizace osobních údajů
+- [Domácnost](./household.md) -- Zobrazení a správa členů rodiny
 - [Adresář členů](../community/member-directory.md) -- Jak se váš profil zobrazuje ostatním

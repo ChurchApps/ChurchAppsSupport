@@ -1,5 +1,6 @@
 ---
 title: "Proxy tên miền tùy chỉnh Caddy"
+description: "Xây dựng và chạy reverse proxy Caddy phục vụ tên miền nhà thờ tùy chỉnh cho trang B1.church, gồm chứng chỉ TLS, ánh xạ host và các lỗi thường gặp."
 ---
 
 # Proxy tên miền tùy chỉnh Caddy
@@ -10,7 +11,7 @@ Tên miền tùy chỉnh của nhà thờ (`mychurch.org` → trang web B1 của
 
 </div>
 
-Về cách một yêu cầu được ánh xạ tới nhà thờ/trang web khi đã đến B1App, xem [Định tuyến trang web & Đa trang](../architecture/websites).
+Về cách một yêu cầu được ánh xạ tới nhà thờ/trang web khi đã đến B1App, xem [Định tuyến trang web & Đa trang](../architecture/websites.md).
 
 ## Các thành phần
 
@@ -88,5 +89,5 @@ Admin API chỉ lắng nghe trên `localhost:2019`. Chế độ runtime cũ đã
 
 ## Trang liên quan
 
-- [Định tuyến trang web & Đa trang](../architecture/websites) — cách yêu cầu được proxy được phân giải thành nhà thờ/trang web trong B1App
-- [Triển khai API](./apis) — triển khai Membership API phục vụ `authorize`/`hostmap`
+- [Định tuyến trang web & Đa trang](../architecture/websites.md) — cách yêu cầu được proxy được phân giải thành nhà thờ/trang web trong B1App
+- [Triển khai API](./apis.md) — triển khai Membership API phục vụ `authorize`/`hostmap`

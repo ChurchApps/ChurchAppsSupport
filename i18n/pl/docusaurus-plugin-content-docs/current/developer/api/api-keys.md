@@ -1,5 +1,6 @@
 ---
 title: "Klucze API"
+description: "Twórz, zawężaj zakres i unieważniaj klucze API B1 w B1 Admin dla skryptów serwerowych i konektorów Zapier, Make lub Google Sheets, bez OAuth."
 ---
 
 # Klucze API
@@ -104,7 +105,7 @@ Odwołany klucz przestaje działać natychmiast — nie ma okresu łaski.
 
 ## Czym różni się od OAuth
 
-Klucze API sprawdzają się, gdy **Twój kościół jest jedynym, który korzysta z integracji**. W przypadku łącznika, który musi mieć dostęp do wielu kościołów, każdego z wyraźną zgodą — np. aplikacji SaaS współdzielonej w społeczności B1 — zamiast tego użyj [OAuth i połączonych aplikacji](./connected-apps).
+Klucze API sprawdzają się, gdy **Twój kościół jest jedynym, który korzysta z integracji**. W przypadku łącznika, który musi mieć dostęp do wielu kościołów, każdego z wyraźną zgodą — np. aplikacji SaaS współdzielonej w społeczności B1 — zamiast tego użyj [OAuth i połączonych aplikacji](./connected-apps.md).
 
 | | Klucz API | OAuth |
 |---|---|---|

@@ -1,5 +1,6 @@
 ---
 title: "API 키"
+description: "서버 스크립트와 Zapier, Make, Google Sheets 커넥터를 위해 B1 Admin에서 B1 API 키를 만들고, 권한 범위를 정하고, 폐기하세요. 전체 OAuth 흐름은 필요하지 않습니다."
 ---
 
 # API 키
@@ -104,7 +105,7 @@ curl https://api.churchapps.org/membership/people \
 
 ## OAuth와의 차이
 
-API 키는 **교회가 그 연동을 유일하게 사용하는 경우**에 적합합니다. B1 커뮤니티 전체에서 공유되는 SaaS 앱처럼, 여러 교회가 각자 명시적으로 동의하여 접근하는 커넥터에는 [OAuth 및 연결된 앱](./connected-apps)을 대신 사용하세요.
+API 키는 **교회가 그 연동을 유일하게 사용하는 경우**에 적합합니다. B1 커뮤니티 전체에서 공유되는 SaaS 앱처럼, 여러 교회가 각자 명시적으로 동의하여 접근하는 커넥터에는 [OAuth 및 연결된 앱](./connected-apps.md)을 대신 사용하세요.
 
 | | API 키 | OAuth |
 |---|---|---|

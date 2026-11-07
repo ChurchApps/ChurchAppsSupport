@@ -1,5 +1,7 @@
 ---
-title: "Grupuri"
+title: "Grupurile bisericii în portalul membrilor B1.church"
+sidebar_label: "Grupuri"
+description: "Explorați și alăturați-vă grupurilor bisericii pe site-ul dvs. B1.church, apoi folosiți paginile grupurilor pentru a verifica întâlnirile, evenimentele, membrii și resursele și pentru a discuta cu grupul."
 ---
 
 # Grupuri

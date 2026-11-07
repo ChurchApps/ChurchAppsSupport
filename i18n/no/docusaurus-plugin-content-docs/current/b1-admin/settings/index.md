@@ -1,5 +1,6 @@
 ---
 title: "Innstillinger"
+description: "Finn frem i innstillingene i B1 Admin: menighetsinfo, merkevare, campuser, egendefinerte felt, brukerroller og navigasjonen i B1.church-appen."
 ---
 
 # Innstillinger

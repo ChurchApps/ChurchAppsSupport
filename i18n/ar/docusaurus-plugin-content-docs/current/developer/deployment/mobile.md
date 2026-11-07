@@ -1,5 +1,6 @@
 ---
 title: "نشر تطبيق الجوال"
+description: "يشرح بناء إصدارات Android وiOS لتطبيق B1 Mobile باستخدام Expo EAS، وإرسالها إلى متاجر التطبيقات، ودفع تحديثات OTA."
 ---
 
 # نشر تطبيق الجوال
@@ -13,7 +14,7 @@ title: "نشر تطبيق الجوال"
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- إعداد تطبيق الجوال محليًا — راجع [B1 Mobile](../mobile/b1-mobile)
+- إعداد تطبيق الجوال محليًا — راجع [B1 Mobile](../mobile/b1-mobile.md)
 - تثبيت [EAS CLI](https://docs.expo.dev/eas/) وإعداده
 - الحصول على صلاحية الوصول إلى Google Play Console (لنظام Android) و/أو Apple App Store Connect (لنظام iOS)
 
@@ -77,6 +78,6 @@ npm run update:production
 
 ## مقالات ذات صلة
 
-- **[B1 Mobile](../mobile/b1-mobile)** — دليل الإعداد المحلي والتطوير
-- **[API Deployment](./apis)** — نشر واجهات برمجة التطبيقات الخلفية
-- **[Web App Deployment](./web-apps)** — نشر تطبيقات الويب الأمامية
+- **[B1 Mobile](../mobile/b1-mobile.md)** — دليل الإعداد المحلي والتطوير
+- **[API Deployment](./apis.md)** — نشر واجهات برمجة التطبيقات الخلفية
+- **[Web App Deployment](./web-apps.md)** — نشر تطبيقات الويب الأمامية

@@ -1,5 +1,6 @@
 ---
 title: "Skiftende kirker"
+description: "Skift mellem kirker i B1 Mobile-appen ved at vælge en nylig kirke eller søge efter navn, alt sammen med ét ChurchApps-login."
 ---
 
 # Skiftende kirker
@@ -13,7 +14,7 @@ Hvis du er medlem af mere end en kirke, gør B1 Mobile det nemt at skifte mellem
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](./installing) og [log ind](./logging-in) på din konto
+- [Installer B1 Mobile](./installing.md) og [log ind](./logging-in.md) på din konto
 
 </div>
 
@@ -24,7 +25,7 @@ Hvis du er medlem af mere end en kirke, gør B1 Mobile det nemt at skifte mellem
 3. Skærmen **Kirkesøgning** vises. Dine nyligt besøgte kirker vises øverst til hurtig adgang.
 4. Tryk på en nylig kirke for at skifte til den, eller skriv i søgefeltet for at finde en anden kirke.
 
-Når du skifter kirker, genindlæses appen med den kirkes branding, navigationlinks og indhold. Dit [instrumentbræt](../dashboard/), [grupper](../groups/) og andre data vil afspejle den nyligt valgte kirke.
+Når du skifter kirker, genindlæses appen med den kirkes branding, navigationlinks og indhold. Dit [instrumentbræt](../dashboard/index.md), [grupper](../groups/index.md) og andre data vil afspejle den nyligt valgte kirke.
 
 ## Søgning efter en kirke
 

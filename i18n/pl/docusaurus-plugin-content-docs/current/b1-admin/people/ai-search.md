@@ -1,5 +1,6 @@
 ---
 title: "Wyszukiwanie AI"
+description: "Przeszukuj katalog osób w B1 Admin pytaniami zwykłym językiem, np. którzy członkowie nie byli na nabożeństwie od trzech miesięcy, zamiast budować filtry."
 ---
 
 # Wyszukiwanie AI

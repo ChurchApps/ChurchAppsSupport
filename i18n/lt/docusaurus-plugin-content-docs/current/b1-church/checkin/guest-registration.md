@@ -1,5 +1,6 @@
 ---
 title: "Registracija svečių"
+description: "Registruokitės su šeima kaip pirmą kartą atvykę svečiai per QR formą B1 Checkin, kad savanoriai galėtų jus užregistruoti atvykus."
 ---
 
 # Registracija svečių
@@ -22,7 +23,7 @@ Jei lankotės bažnyčioje pirmą kartą, galite užsiregistruoti patys ir užre
 
 Svečių registracija skirta lankytojams, kurie dar neturi paskyros. Bažnyčios registracijos įrenginyje bakstelėkite **Registruotis kaip svečiui**, kad būtų rodomas QR kodas, nukreipiantis į registracijos puslapį. Nuorodą taip pat galite gauti iš savanorio ar pasitikėjo, rasti ją skrajutėje arba bažnyčios svetainėje.
 
-Neturite po ranka telefono? Tame pačiame įrenginio QR kodo lange bakstelėkite **Registruotis čia**, kad užpildytumėte formą pačiame įrenginyje. Kaip tai veikia įrenginyje, žr. [Registracija kaip svečias](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Neturite po ranka telefono? Tame pačiame įrenginio QR kodo lange bakstelėkite **Registruotis čia**, kad užpildytumėte formą pačiame įrenginyje. Kaip tai veikia įrenginyje, žr. [Registracija kaip svečias](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Puslapis atsidaro su pavadinimu **Svečių registracija**. Jei bažnyčia yra pridėjusi antraštės nuotrauką, ji rodoma puslapio viršuje; priešingu atveju matysite nedidelę piktogramą.
 
@@ -51,7 +52,7 @@ Jūsų registracija sukuria įrašus bažnyčios duomenų bazėje:
 - Kiekvienam šeimos nariui sukuriami **asmens įrašai** su narystės statusu „Lankytojas“.
 - Visi jūsų įvesti komentarai išsaugomi kaip pastaba pagrindinio kontakto įraše, kad bažnyčios darbuotojai galėtų su ja susipažinti.
 - Jei bažnyčia pasirinko grupę naujiems svečiams, jūsų šeima į ją pridedama. Bažnyčia taip pat gali automatiškai įrašyti jūsų dalyvavimą, jei registruojatės per vieną iš tos grupės suplanuotų pamaldų laikų.
-- Bažnyčios savanoris ar administratorius gali tuomet įregistruoti jūsų šeimą naudodamas [B1 Checkin](../../b1-checkin/check-in/looking-up-members) įrenginį.
+- Bažnyčios savanoris ar administratorius gali tuomet įregistruoti jūsų šeimą naudodamas [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) įrenginį.
 
 :::info
 Jei registruojatės dar kartą su tuo pačiu vardu ir tuo pačiu el. paštu ar telefono numeriu, bažnyčios įrašai jus atpažįsta ir naudoja esamą profilį, o nekuria dublikato. Kiti asmenys įtraukiami kaip nauji. Jei jau esate užsiregistravę, taip pat galite tiesiog ieškoti savo vardo ar telefono numerio įrenginyje.
@@ -63,6 +64,6 @@ Jei formoje prašoma jūsų el. pašto adreso, jo pateikimas padeda bažnyčiai 
 
 ## Susiję straipsniai
 
-- [Savarankiška registracija](./self-checkin) -- Užsiregistruokite patys po registracijos
-- [Svečių pridėjimas (įrenginys)](../../b1-checkin/check-in/adding-guests) -- Kaip savanoriai prideda svečius įrenginyje
-- [Registracija](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Kaip bažnyčios administratoriai nustato QR svečių registraciją
+- [Savarankiška registracija](./self-checkin.md) -- Užsiregistruokite patys po registracijos
+- [Svečių pridėjimas (įrenginys)](../../b1-checkin/check-in/adding-guests.md) -- Kaip savanoriai prideda svečius įrenginyje
+- [Registracija](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Kaip bažnyčios administratoriai nustato QR svečių registraciją

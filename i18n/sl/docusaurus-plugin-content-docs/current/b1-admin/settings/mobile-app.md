@@ -1,5 +1,6 @@
 ---
 title: "Nastavitve mobilne aplikacije"
+description: "Za mobilno aplikacijo B1.church v B1 Admin nastavite zavihke za krmarjenje, ploščice na začetnem zaslonu, poziv za prijavo ter zasebnost imenika članov."
 ---
 
 # Nastavitve mobilne aplikacije

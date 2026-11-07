@@ -1,5 +1,6 @@
 ---
 title: "Bağışların Kaydedilmesi"
+description: "B1 Admin'de toplu kayıt oluşturun, bağışları tek tek girin, CSV içe aktarın veya bağışçı profilinden tek bir bağış kaydedin."
 ---
 
 # Bağışların Kaydedilmesi

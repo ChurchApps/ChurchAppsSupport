@@ -1,12 +1,13 @@
 ---
 title: "Prijungtos programos ir OAuth"
+description: "Jungkite trečiųjų šalių programas prie bažnyčios B1 duomenų per OAuth 2.0 sutikimą be bendrų slaptažodžių ir panaikinkite prieigą B1 Admin nustatymuose."
 ---
 
 # Prijungtos programos ir OAuth
 
 <div class="article-intro">
 
-B1 API palaiko OAuth 2.0, todėl trečiosios šalies programa gali paprašyti kiekvieno bažnyčios administratoriaus leidimo pasiekti jo duomenis, ir bažnyčiai nereikia niekada dalytis slaptažodžiu ar API raktu. **Prijungta programa** yra OAuth raktas, kurį bažnyčios administratorius patvirtino. Jį panaikinus, trečiosios šalies programos prieiga nutraukiama vienu paspaudimu. Šį kelią naudokite daugiabučiams SaaS jungikliams. Vienos bažnyčios integracijai geriau naudokite [API raktus](./api-keys).
+B1 API palaiko OAuth 2.0, todėl trečiosios šalies programa gali paprašyti kiekvieno bažnyčios administratoriaus leidimo pasiekti jo duomenis, ir bažnyčiai nereikia niekada dalytis slaptažodžiu ar API raktu. **Prijungta programa** yra OAuth raktas, kurį bažnyčios administratorius patvirtino. Jį panaikinus, trečiosios šalies programos prieiga nutraukiama vienu paspaudimu. Šį kelią naudokite daugiabučiams SaaS jungikliams. Vienos bažnyčios integracijai geriau naudokite [API raktus](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API palaiko OAuth 2.0, todėl trečiosios šalies programa gali paprašyti ki
 | **Prijungta programa** | Konkreti `(klientas, bažnyčios administratorius)` pora, kai administratorius suteikė klientui prieigą. Kiekvieną prijungtą programą palaiko OAuth atnaujinimo raktas. |
 | **Prieigos raktas** | Trumpalaikis JWT (≈ 7 dienos), kurį klientas naudoja API iškvietimams. Struktūra tokia pati kaip naudotojo JWT: `Authorization: Bearer <jwt>`. |
 | **Atnaujinimo raktas** | Ilgalaikė neskaidri eilutė (≈ 90 dienų), kurią klientas naudoja naujiems prieigos raktams gauti. |
-| **Sritis** | Apriboja, ką prieigos raktas gali daryti. Žr. [sričių katalogą](./api-keys#scopes). |
+| **Sritis** | Apriboja, ką prieigos raktas gali daryti. Žr. [sričių katalogą](./api-keys.md#scopes). |
 
 ## Suteikimo srautai
 
@@ -162,7 +163,7 @@ Sąraše automatiškai nerodomi pasibaigę raktai.
 
 ## Sritys ir sutikimas
 
-Sričių eilutės yra tas pats katalogas kaip [API raktų](./api-keys#scopes). Geriausia praktika klientams:
+Sričių eilutės yra tas pats katalogas kaip [API raktų](./api-keys.md#scopes). Geriausia praktika klientams:
 
 - **Prašykite siauriausių veikiančių sričių.** Bažnyčios pastebi, jei prašote `donations:write`, kai tereikia skaityti žmonių duomenis.
 - **Naudokite atnaujinimo raktą ir trumpalaikius prieigos raktus.** Ilgalaikius prieigos raktus sunkiau greitai panaikinti.
@@ -183,7 +184,7 @@ Užregistruoti peradresavimo URI turi tiksliai atitikti užklausoje esantį `red
 
 ### Dinaminė kliento registracija
 
-`POST /membership/oauth/register` (viešas, RFC 7591) leidžia klientui, pavyzdžiui claude.ai MCP jungikliui, užsiregistruoti pačiam. Apie tai skelbiama API dokumente `/.well-known/oauth-authorization-server`. Žr. [MCP serveris → OAuth atradimas](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (viešas, RFC 7591) leidžia klientui, pavyzdžiui claude.ai MCP jungikliui, užsiregistruoti pačiam. Apie tai skelbiama API dokumente `/.well-known/oauth-authorization-server`. Žr. [MCP serveris → OAuth atradimas](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ B1Admin sutikimo puslapyje savarankiškai užsiregistravusi programa gauna prane
 
 ## SDK palaikymas
 
-Paketas `@churchapps/integration-sdk` apgaubia kiekvieną OAuth srautą tipizuotomis pagalbinėmis funkcijomis: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Žr. paketo README ir [Webhook'ai](./webhooks#sdk-support), kur pateiktas pilnas pavyzdys.
+Paketas `@churchapps/integration-sdk` apgaubia kiekvieną OAuth srautą tipizuotomis pagalbinėmis funkcijomis: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Žr. paketo README ir [Webhook'ai](./webhooks.md#sdk-support), kur pateiktas pilnas pavyzdys.

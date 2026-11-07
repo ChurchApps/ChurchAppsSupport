@@ -1,5 +1,7 @@
 ---
-title: "Livestreaming"
+title: "Live-Streams auf B1.church ansehen"
+sidebar_label: "Livestreaming"
+description: "Gottesdienste Ihrer Gemeinde auf der Stream-Seite von B1.church ansehen und dem Chat neben der Übertragung beitreten, ohne Anmeldung."
 ---
 
 # Livestreaming

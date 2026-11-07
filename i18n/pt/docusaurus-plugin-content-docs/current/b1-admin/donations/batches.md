@@ -1,5 +1,6 @@
 ---
 title: "Lotes de doações"
+description: "Agrupe as ofertas em lotes no B1 Admin e feche, imprima ou exporte cada um para que os totais batam com os depósitos bancários."
 ---
 
 # Lotes de doações

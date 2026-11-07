@@ -1,5 +1,7 @@
 ---
-title: "小组"
+title: "B1 Admin 中的小组"
+sidebar_label: "小组"
+description: "在 B1 Admin 中设置和整理小组，包括类别、成员、日历和加入申请，并附有查找小组页面的指南。"
 ---
 
 # 小组

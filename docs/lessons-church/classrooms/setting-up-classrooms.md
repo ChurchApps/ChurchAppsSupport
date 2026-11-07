@@ -1,5 +1,6 @@
 ---
 title: "Setting Up Classrooms"
+description: "Create, rename, and remove classrooms in the Lessons.church portal so each room or age group is ready for weekly lesson scheduling."
 ---
 
 # Setting Up Classrooms

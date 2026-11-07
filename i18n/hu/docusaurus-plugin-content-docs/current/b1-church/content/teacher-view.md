@@ -1,5 +1,6 @@
 ---
 title: "Tanári nézet a leckékhez"
+description: "Lecke megnyitása teljes képernyős tanári nézetben a B1.church tervéből, ugrás szakaszok között, média lejátszása és órai anyagok letöltése."
 ---
 
 # Tanári nézet a leckékhez

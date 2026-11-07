@@ -1,5 +1,6 @@
 ---
 title: "Pamokslų valdymas"
+description: "Tvarkykite pamokslų biblioteką B1 Admin: pridėkite pamokslus iš YouTube, Vimeo ar Facebook, redaguokite duomenis ir gaukite bažnyčios podcast kanalą."
 ---
 
 # Pamokslų valdymas
@@ -14,7 +15,7 @@ Puslapyje Pamokslai rodoma visa jūsų pamokslų biblioteka. Čia galite pridėt
 <h4>Prieš pradedant</h4>
 
 - Jums reikia leidimo **contentApi.streamingServices.edit**. Jei neturite prieigos, žr. [Vaidmenys ir leidimai](../settings/roles-permissions.md).
-- Sukurkite bent vieną [grojaraštį](playlists), į kurį surinksite pamokslus
+- Sukurkite bent vieną [grojaraštį](./playlists.md), į kurį surinksite pamokslus
 - Iš YouTube, Vimeo ar Facebook pasiruoškite vaizdo įrašų ID arba nuorodas
 
 </div>
@@ -35,7 +36,7 @@ Puslapyje Pamokslai rodoma visa jūsų pamokslų biblioteka. Čia galite pridėt
 6. Atlikite norimus pakeitimus ir spustelėkite **Išsaugoti**.
 
 :::tip
-Taip pat galite pridėti nuolatinę tiesioginės transliacijos nuorodą, pasirinkdami **Pridėti nuolatinę tiesioginės transliacijos nuorodą** išskleidžiamajame sąraše **Pridėti pamokslą**. Tai sukuria nuolatinį ryšį su jūsų YouTube kanalo tiesiogine transliacija, naudojant jūsų kanalo ID. Daugiau informacijos rasite skyriuje [Tiesioginė transliacija](live-streaming).
+Taip pat galite pridėti nuolatinę tiesioginės transliacijos nuorodą, pasirinkdami **Pridėti nuolatinę tiesioginės transliacijos nuorodą** išskleidžiamajame sąraše **Pridėti pamokslą**. Tai sukuria nuolatinį ryšį su jūsų YouTube kanalo tiesiogine transliacija, naudojant jūsų kanalo ID. Daugiau informacijos rasite skyriuje [Tiesioginė transliacija](./live-streaming.md).
 :::
 
 ## Pamokslo redagavimas
@@ -73,11 +74,11 @@ Pridėję pamokslą, galite suplanuoti jo transliaciją savo tiesioginės transl
 3. Pamokslas bus rodomas suplanuotu pamaldų laiku.
 
 :::info
-Norėdami importuoti kelis pamokslus vienu metu, o ne pridėti juos po vieną, naudokite įrankį [Masinis importavimas](bulk-import), kad tiesiogiai iš savo YouTube ar Vimeo paskyros įkeltumėte vaizdo įrašus.
+Norėdami importuoti kelis pamokslus vienu metu, o ne pridėti juos po vieną, naudokite įrankį [Masinis importavimas](./bulk-import.md), kad tiesiogiai iš savo YouTube ar Vimeo paskyros įkeltumėte vaizdo įrašus.
 :::
 
 ## Kiti žingsniai
 
-- [Grojaraščiai](playlists) -- sutvarkykite pamokslus į serijas
-- [Tiesioginė transliacija](live-streaming) -- sukonfigūruokite transliacijos tvarkaraštį
-- [Masinis importavimas](bulk-import) -- vienu metu importuokite kelis pamokslus
+- [Grojaraščiai](./playlists.md) -- sutvarkykite pamokslus į serijas
+- [Tiesioginė transliacija](./live-streaming.md) -- sukonfigūruokite transliacijos tvarkaraštį
+- [Masinis importavimas](./bulk-import.md) -- vienu metu importuokite kelis pamokslus

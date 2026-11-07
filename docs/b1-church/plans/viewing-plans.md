@@ -1,5 +1,7 @@
 ---
-title: "Viewing Plans"
+title: "Your Service Plans in the B1.church Member Portal"
+sidebar_label: "Viewing Plans"
+description: "Check your service plan assignments in B1.church, accept or decline requests, set blockout dates, and review your past serving history."
 ---
 
 # Viewing Plans

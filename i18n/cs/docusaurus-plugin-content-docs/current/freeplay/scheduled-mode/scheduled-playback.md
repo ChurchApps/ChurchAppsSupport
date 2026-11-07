@@ -1,5 +1,6 @@
 ---
 title: "Plánované přehrávání na TV"
+description: "Spárovaná FreePlay TV stáhne týden dopředu a hraje podle hodin, i offline. Popisuje informační panel, tlačítka dálkového ovladače a připnutí playlistu."
 ---
 
 # Plánované přehrávání na TV
@@ -13,8 +14,8 @@ Jakmile je TV spárována s kalendářem, FreePlay ji spouští za vás. Stáhne
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Spárujte TV s kalendářem](./pairing-a-screen)
-- [Přidejte obsah do kalendáře](./scheduling-the-calendar), nebo nastavte výchozí smyčku pro skupinu obrazovky
+- [Spárujte TV s kalendářem](./pairing-a-screen.md)
+- [Přidejte obsah do kalendáře](./scheduling-the-calendar.md), nebo nastavte výchozí smyčku pro skupinu obrazovky
 
 </div>
 
@@ -40,7 +41,7 @@ Panel má také tři tlačítka:
 
 - **Připnout tento playlist** - Ponechá aktuální obsah ve smyčce a ignoruje kalendář. Výběrem **Odepnout playlist** se vrátíte k rozvrhu
 - **Procházet obsah** - Opustí plánovaný přehrávač a umožní procházet vaše připojené poskytovatele
-- **Nastavení** - Otevře nastavení FreePlay, kde můžete [zrušit spárování nebo spárovat s jiným kalendářem](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Nastavení** - Otevře nastavení FreePlay, kde můžete [zrušit spárování nebo spárovat s jiným kalendářem](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Chcete-li se po procházení vrátit k rozvrhu, stiskněte na ovladači tlačítko **Back** na obrazovce **Poskytovatelé obsahu**, nebo otevřete **Nastavení**, vyberte **Spárovat s kalendářem** a zvolte **Zpět k rozvrhu**. Spárovaná TV se také vrátí k plánovanému přehrávači pokaždé, když se FreePlay vrátí do popředí, a vždy se otevře na plánovaném přehrávači.
@@ -77,6 +78,6 @@ Kalendář obrazovky můžete přehrávat také ve webovém prohlížeči. Ve Fr
 
 ## Související články
 
-- **[Plánování kalendáře](./scheduling-the-calendar)** - Nastavte, co se přehraje a co se stane, když skončí dříve
-- **[Správa obrazovek a skupin](./managing-screens)** - Zkontrolujte stahování jednotlivých obrazovek ve FreePlay Admin
-- **[Přehrávání obsahu](../content-providers/playing-content)** - Ovládací prvky přehrávače, když přehráváte obsah sami
+- **[Plánování kalendáře](./scheduling-the-calendar.md)** - Nastavte, co se přehraje a co se stane, když skončí dříve
+- **[Správa obrazovek a skupin](./managing-screens.md)** - Zkontrolujte stahování jednotlivých obrazovek ve FreePlay Admin
+- **[Přehrávání obsahu](../content-providers/playing-content.md)** - Ovládací prvky přehrávače, když přehráváte obsah sami

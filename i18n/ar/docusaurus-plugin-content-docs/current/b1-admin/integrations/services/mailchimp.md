@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "زامن أشخاص B1 Admin وعضوية المجموعات أو القوائم المحفوظة مع جمهور Mailchimp كوسوم، مع خطوات الإعداد والاستيراد الأولي وحل المشكلات."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ title: "Mailchimp"
 
 ## وصفات أخرى (Zapier / Make)
 
-أي شيء يتجاوز مزامنة الجمهور، مثل وسم المتبرعين عند `donation.created`، أو الاتجاه العكسي من Mailchimp إلى B1، أو المزامنة مع منصة بريد إلكتروني مختلفة تمامًا (Constant Contact وBrevo وغيرهما)، ما زال متاحًا عبر [Zapier](../zapier) أو [Make](../make)، إذ تُفعَّل بالأحداث نفسها الخاصة بالـ webhook:
+أي شيء يتجاوز مزامنة الجمهور، مثل وسم المتبرعين عند `donation.created`، أو الاتجاه العكسي من Mailchimp إلى B1، أو المزامنة مع منصة بريد إلكتروني مختلفة تمامًا (Constant Contact وBrevo وغيرهما)، ما زال متاحًا عبر [Zapier](../zapier.md) أو [Make](../make.md)، إذ تُفعَّل بالأحداث نفسها الخاصة بالـ webhook:
 
 - **وسم المتبرعين:** B1 *New Donation* ← B1 *Find Person* ← Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **في الاتجاهين:** Mailchimp *New Subscriber* ← B1 *Create Person*
@@ -83,4 +84,4 @@ title: "Mailchimp"
 
 - [Webhooks (المرجع للمطوّرين)](/docs/developer/api/webhooks): المحرك الذي يعمل خلف الكواليس، وكتالوج الأحداث، وسلوك التسليم وإعادة المحاولة
 - [القوائم المحفوظة](/docs/b1-admin/people/lists): جمهور قائم على القواعد يتوافق بشكل طبيعي مع وسوم Mailchimp
-- [Zapier (نظرة عامة)](../zapier): للوصفات التي تتجاوز مزامنة الجمهور
+- [Zapier (نظرة عامة)](../zapier.md): للوصفات التي تتجاوز مزامنة الجمهور

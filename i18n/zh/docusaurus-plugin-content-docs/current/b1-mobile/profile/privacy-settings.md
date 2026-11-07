@@ -1,5 +1,6 @@
 ---
 title: "隐私设置"
+description: "控制其他成员在 B1 Mobile 通讯录中可以看到的个人资料，如电话、电子邮件和地址，并查看待处理的更改。"
 ---
 
 # 隐私设置
@@ -13,7 +14,7 @@ title: "隐私设置"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 
 </div>
 
@@ -52,8 +53,8 @@ title: "隐私设置"
 
 | 标签 | 用途 |
 |---|---|
-| **个人资料** | [编辑个人信息](./editing-profile)和照片 |
-| **家庭成员** | [查看家庭成员](./household) |
+| **个人资料** | [编辑个人信息](./editing-profile.md)和照片 |
+| **家庭成员** | [查看家庭成员](./household.md) |
 | **可见性** | 控制在目录中其他人可以看到的内容 |
 | **待审核** | 查看等待审批的资料更改 |
 | **账户** | 管理安全设置 |
@@ -62,6 +63,6 @@ title: "隐私设置"
 
 ## 相关文章
 
-- [编辑个人资料](./editing-profile) -- 更新您的个人信息
-- [家庭成员](./household) -- 查看和管理您的家庭成员
+- [编辑个人资料](./editing-profile.md) -- 更新您的个人信息
+- [家庭成员](./household.md) -- 查看和管理您的家庭成员
 - [成员目录](../community/member-directory.md) -- 查看您的资料在其他人眼中的样子

@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Vietinė B1App narių žiniatinklio programos sąranka su Next.js 22+, API galinių taškų nustatymas .env faile ir kūrimo serverio paleidimas prievade 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App yra viešoji bažnyčios narių programa, sukurta naudojant Next.js. Ji su
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite **Node.js 22+** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites)
-- Sukonfigūruokite API tikslą (demonstracinį arba lokalų) -- žr. [Aplinkos kintamieji](../setup/environment-variables)
+- Įdiekite **Node.js 22+** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites.md)
+- Sukonfigūruokite API tikslą (demonstracinį arba lokalų) -- žr. [Aplinkos kintamieji](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Produkciniai kūriniai diegiami į **S3 + CloudFront**:
 3. Paleidžiamas CloudFront invalidavimas, kad būtų pateikta nauja versija
 
 :::tip
-Išsamias diegimo instrukcijas rasite vadove [Web App diegimas](../deployment/web-apps).
+Išsamias diegimo instrukcijas rasite vadove [Web App diegimas](../deployment/web-apps.md).
 :::

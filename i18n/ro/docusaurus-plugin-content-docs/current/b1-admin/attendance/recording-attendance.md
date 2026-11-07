@@ -1,5 +1,6 @@
 ---
 title: "Înregistrarea prezenței"
+description: "Înregistrați prezența la fiecare întâlnire de grup în B1 Admin: creați o sesiune, marcați participanții, salvați notele și exportați sau tipăriți lista."
 ---
 
 # Înregistrarea prezenței

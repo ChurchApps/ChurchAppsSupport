@@ -1,5 +1,7 @@
 ---
-title: "Grupės"
+title: "Grupės B1 Admin"
+sidebar_label: "Grupės"
+description: "Nustatykite ir tvarkykite grupes B1 Admin: kategorijas, narius, kalendorius ir prisijungimo užklausas, su nurodymais, kaip rasti grupių puslapį."
 ---
 
 # Grupės

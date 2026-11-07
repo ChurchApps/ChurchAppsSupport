@@ -1,5 +1,6 @@
 ---
 title: "Browsing af indhold"
+description: "Find ud af, hvordan du gennemser Lessons.churchs gratis curriculum-bibliotek uden konto, herunder forsidens layout, browsing efter program, søgning og eksterne udbydere."
 ---
 
 # Browsing af indhold

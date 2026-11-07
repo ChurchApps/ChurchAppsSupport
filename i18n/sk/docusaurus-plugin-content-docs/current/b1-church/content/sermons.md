@@ -1,5 +1,7 @@
 ---
-title: "Kázne"
+title: "Prehliadanie kázní na webe B1.church"
+sidebar_label: "Kázne"
+description: "Prehliadajte a sledujte nahrané kázne z knižnice vášho zboru na webe B1.church, zoskupené do sérií alebo playlistov. Prihlásenie nie je potrebné."
 ---
 
 # Kázne

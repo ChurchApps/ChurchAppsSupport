@@ -1,5 +1,6 @@
 ---
 title: "Parowanie ekranu"
+description: "Sparuj telewizor FreePlay z kalendarzem grupy ekranów w FreePlay Admin czteroliterowym kodem z telewizora, by samodzielnie odtwarzał treści z harmonogramu."
 ---
 
 # Parowanie ekranu
@@ -13,9 +14,9 @@ Aby dodać telewizor do kalendarza, sparuj go z **FreePlay Admin**. Telewizor wy
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj i uruchom FreePlay na telewizorze. Zobacz [Pierwsze kroki](../getting-started/)
+- Zainstaluj i uruchom FreePlay na telewizorze. Zobacz [Pierwsze kroki](../getting-started/index.md)
 - Miej dane logowania do ChurchApps dla swojego kościoła, aby móc zalogować się do FreePlay Admin
-- Opcjonalnie najpierw [utwórz playlistę](./building-playlists) i [zaplanuj ją](./scheduling-the-calendar), aby telewizor od razu miał co odtwarzać
+- Opcjonalnie najpierw [utwórz playlistę](./building-playlists.md) i [zaplanuj ją](./scheduling-the-calendar.md), aby telewizor od razu miał co odtwarzać
 
 </div>
 
@@ -38,7 +39,7 @@ Kod jest ważny przez 15 minut, a odliczanie pod nim pokazuje, ile czasu pozosta
 5. W polu **Tryb** pozostaw wybrane **Zaplanowany**. Telewizor będzie odtwarzać treści zgodnie z kalendarzem grupy, bez dodatkowych działań.
 6. Kliknij **Sparuj**.
 
-Telewizor wyświetli **Połączono!**, a następnie **Wczytywanie harmonogramu...**. Pobierze zaplanowane treści i rozpocznie odtwarzanie. Zobacz [Odtwarzanie zaplanowane na telewizorze](./scheduled-playback).
+Telewizor wyświetli **Połączono!**, a następnie **Wczytywanie harmonogramu...**. Pobierze zaplanowane treści i rozpocznie odtwarzanie. Zobacz [Odtwarzanie zaplanowane na telewizorze](./scheduled-playback.md).
 
 :::info
 Jeśli FreePlay Admin wyświetli komunikat **Ten kod nie pasuje do żadnego telewizora**, sprawdź kod na ekranie. Jeśli wygasł, użyj nowego kodu, który telewizor wyświetla teraz.
@@ -51,11 +52,11 @@ Ustawienie **Tryb** ma dwie opcje:
 - **Zaplanowany** - Odtwarza treści zgodnie z kalendarzem grupy, bez udziału użytkownika. Nikt nie musi naciskać Start.
 - **Ręczny** - Treści wybiera osoba za pomocą pilota. Ekran ręczny nadal pojawia się na liście **Ekrany**, ale nie korzysta z kalendarza, dlatego pole **Grupa** jest wyłączone.
 
-Tryb ekranu możesz później zmienić, klikając **Edytuj** na [stronie Ekrany](./managing-screens).
+Tryb ekranu możesz później zmienić, klikając **Edytuj** na [stronie Ekrany](./managing-screens.md).
 
 ## Parowanie z planem nabożeństwa
 
-Kod z ekranu **Sparuj ten ekran** działa również w B1 Admin. Jeśli wpiszesz go tam i wybierzesz typ planu w polu **Pokaż plany dla**, telewizor będzie wyświetlał ten typ planu w [Trybie planu](../plan-mode/) zamiast kalendarza. Zobacz [Parowanie urządzenia](../plan-mode/device-pairing).
+Kod z ekranu **Sparuj ten ekran** działa również w B1 Admin. Jeśli wpiszesz go tam i wybierzesz typ planu w polu **Pokaż plany dla**, telewizor będzie wyświetlał ten typ planu w [Trybie planu](../plan-mode/index.md) zamiast kalendarza. Zobacz [Parowanie urządzenia](../plan-mode/device-pairing.md).
 
 ## Zmiana lub usuwanie parowania na telewizorze
 
@@ -79,6 +80,6 @@ Telewizor wróci do wyświetlania kodu parowania. Gdy chcesz go ponownie użyć,
 
 ## Powiązane artykuły
 
-- **[Zarządzanie ekranami i grupami](./managing-screens)** - Zmień nazwę ekranu, przenieś go do innej grupy lub sprawdź jego pobrane pliki
-- **[Planowanie kalendarza](./scheduling-the-calendar)** - Ustal, co odtwarzają ekrany grupy
-- **[Wybór trybu parowania](../getting-started/pairing-modes)** - Porównaj tryb zaplanowany z Trybem planu oraz samodzielnym przeglądaniem dostawców
+- **[Zarządzanie ekranami i grupami](./managing-screens.md)** - Zmień nazwę ekranu, przenieś go do innej grupy lub sprawdź jego pobrane pliki
+- **[Planowanie kalendarza](./scheduling-the-calendar.md)** - Ustal, co odtwarzają ekrany grupy
+- **[Wybór trybu parowania](../getting-started/pairing-modes.md)** - Porównaj tryb zaplanowany z Trybem planu oraz samodzielnym przeglądaniem dostawców

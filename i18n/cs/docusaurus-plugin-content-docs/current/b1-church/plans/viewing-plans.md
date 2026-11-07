@@ -1,5 +1,7 @@
 ---
-title: "Zobrazení plánů"
+title: "Vaše servisní plány v členském portálu B1.church"
+sidebar_label: "Zobrazení plánů"
+description: "Zkontrolujte přiřazení k servisním plánům na B1.church, přijměte nebo odmítněte žádosti, nastavte blokovaná data a prohlédněte si historii služby."
 ---
 
 # Zobrazení plánů

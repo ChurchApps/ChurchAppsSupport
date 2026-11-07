@@ -1,5 +1,7 @@
 ---
-title: "Tagok névjegyzéke"
+title: "Tagjegyzék a B1.church tagi portálon"
+sidebar_label: "Tagok névjegyzéke"
+description: "Keressen és böngésszen a B1.church tagjegyzékében, tekintse meg tagok profiljait és háztartási tagjait, és nézze meg, kik férhetnek hozzá a jegyzékhez."
 ---
 
 # Tagok névjegyzéke

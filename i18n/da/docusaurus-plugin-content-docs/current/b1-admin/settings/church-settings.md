@@ -1,5 +1,6 @@
 ---
 title: "kirkens indstillinger"
+description: "Angiv kirkens navn, adresse, underdomæne, tidszone, regionsformat, sms-udbyder og fillagring på siden Kirkeindstillinger i B1 Admin."
 ---
 
 # kirkens indstillinger

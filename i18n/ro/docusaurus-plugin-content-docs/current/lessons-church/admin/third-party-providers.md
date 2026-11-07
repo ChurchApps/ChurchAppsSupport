@@ -1,5 +1,6 @@
 ---
 title: "Furnizori terți"
+description: "Adăugați un feed extern de curriculum în Lessons.church din pagina Third-Party și vizualizați, actualizați sau eliminați conexiunile furnizorilor."
 ---
 
 # Furnizori terți

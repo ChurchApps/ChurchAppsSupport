@@ -1,5 +1,6 @@
 ---
 title: "集成"
+description: "将 B1 Admin 连接到 Slack、Discord、Zapier、Make、Google Sheets 和 Claude 等 AI 助手，提供设置步骤及每项集成所需的 API 密钥权限范围。"
 ---
 
 # 集成
@@ -14,21 +15,21 @@ B1 可以与您的团队已经在使用的工具相连。您可以连接 Slack �
 
 | 集成 | 功能 | 方向 | 设置所需时间 |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | 将易读的通知（新增人员、奉献、报名等……）发布到 Slack 频道 | B1 → Slack | 2 分钟 |
-| **[Discord](./slack-discord)** | 同上，发布到 Discord 频道 | B1 → Discord | 2 分钟 |
-| **[Zapier](./zapier)** | 将 B1 事件用作触发器，并在 Zapier 的 7,000 多个应用中使用 B1 操作 | 双向 | 每个 Zap 5–10 分钟 |
-| **[Make](./make)** | 与 Zapier 思路相同，在 Make 的可视化场景构建器中使用 | 双向 | 每个场景 5–10 分钟 |
-| **[Google Sheets](./google-sheets)** | 随时将人员、奉献、小组和考勤导出到电子表格 | B1 → 表格 | 5 分钟 |
-| **[Claude](./claude)** | 向 Anthropic 的 Claude 询问您教会数据的相关问题，权限范围与您的权限一致；免费试用，推荐使用 | 双向 | 不到 3 分钟 |
-| **[ChatGPT](./chatgpt)** | 同样的思路，使用 OpenAI 的 ChatGPT（需要付费的 ChatGPT 套餐） | 双向 | 10 分钟 |
-| **[已连接的服务](./services/)** | 为 Mailchimp、Donorbox、Subsplash、VOMO、Clearstream、Text In Church、Mobile Message、Checkr 提供的精选方案 | 各不相同 | 每项 5–10 分钟 |
+| **[Slack](./slack-discord.md)** | 将易读的通知（新增人员、奉献、报名等……）发布到 Slack 频道 | B1 → Slack | 2 分钟 |
+| **[Discord](./slack-discord.md)** | 同上，发布到 Discord 频道 | B1 → Discord | 2 分钟 |
+| **[Zapier](./zapier.md)** | 将 B1 事件用作触发器，并在 Zapier 的 7,000 多个应用中使用 B1 操作 | 双向 | 每个 Zap 5–10 分钟 |
+| **[Make](./make.md)** | 与 Zapier 思路相同，在 Make 的可视化场景构建器中使用 | 双向 | 每个场景 5–10 分钟 |
+| **[Google Sheets](./google-sheets.md)** | 随时将人员、奉献、小组和考勤导出到电子表格 | B1 → 表格 | 5 分钟 |
+| **[Claude](./claude.md)** | 向 Anthropic 的 Claude 询问您教会数据的相关问题，权限范围与您的权限一致；免费试用，推荐使用 | 双向 | 不到 3 分钟 |
+| **[ChatGPT](./chatgpt.md)** | 同样的思路，使用 OpenAI 的 ChatGPT（需要付费的 ChatGPT 套餐） | 双向 | 10 分钟 |
+| **[已连接的服务](./services/index.md)** | 为 Mailchimp、Donorbox、Subsplash、VOMO、Clearstream、Text In Church、Mobile Message、Checkr 提供的精选方案 | 各不相同 | 每项 5–10 分钟 |
 
 ## 如何选择
 
 - **只想在聊天中收到通知？** 使用 **Slack** 或 **Discord**，无需第三方账户，也无需维护 Zap。完全在 B1Admin 内配置即可。
 - **想跨应用自动化某项工作**（例如"当有人奉献时，将其添加到我的 Mailchimp 列表并发送到 Slack #donations 频道"）？请使用 **Zapier** 或 **Make**。Zapier 更易上手；Make 在规模较大时更便宜，并且逻辑更灵活。
 - **需要一次性的数据提取或定期报告？** 使用 **Google Sheets**：将 API 密钥粘贴到插件的侧边栏中，然后点击导出即可。
-- **想用日常语言提问**（例如"上周日有多少首次到访的访客？"、"总结本月奉献情况"）？请从 **[Claude](./claude)** 开始。它可以免费试用，并且不到 3 分钟即可设置完成。**[ChatGPT](./chatgpt)** 也可以使用，但需要付费套餐。Claude 通过登录您的 B1 账户进行连接；ChatGPT 则使用 B1 API 密钥。
+- **想用日常语言提问**（例如"上周日有多少首次到访的访客？"、"总结本月奉献情况"）？请从 **[Claude](./claude.md)** 开始。它可以免费试用，并且不到 3 分钟即可设置完成。**[ChatGPT](./chatgpt.md)** 也可以使用，但需要付费套餐。Claude 通过登录您的 B1 账户进行连接；ChatGPT 则使用 B1 API 密钥。
 - **想构建您自己的定制集成？** 以上都不适用的话，可以直接使用 [API 密钥](/docs/developer/api/api-keys) 调用 [REST API](/docs/developer/api)，或将您控制的服务器订阅到 [webhooks](/docs/developer/api/webhooks)。
 
 ## 共同之处
@@ -59,10 +60,10 @@ ChurchApps 是免费且开源的。对我们而言，Slack/Discord、[`@churchap
 
 ## 后续步骤
 
-- [Slack 与 Discord](./slack-discord)：发布聊天通知
-- [Zapier](./zapier)：连接 7,000 多个应用
-- [Make](./make)：可视化工作流自动化
-- [Google Sheets](./google-sheets)：导出到电子表格
-- [Claude](./claude)：向 Anthropic 的 Claude 询问您教会的数据
-- [ChatGPT](./chatgpt)：向 OpenAI 的 ChatGPT 询问您教会的数据
-- [已连接的服务](./services/)：各服务的具体方案（Mailchimp、Donorbox、Clearstream 等）
+- [Slack 与 Discord](./slack-discord.md)：发布聊天通知
+- [Zapier](./zapier.md)：连接 7,000 多个应用
+- [Make](./make.md)：可视化工作流自动化
+- [Google Sheets](./google-sheets.md)：导出到电子表格
+- [Claude](./claude.md)：向 Anthropic 的 Claude 询问您教会的数据
+- [ChatGPT](./chatgpt.md)：向 OpenAI 的 ChatGPT 询问您教会的数据
+- [已连接的服务](./services/index.md)：各服务的具体方案（Mailchimp、Donorbox、Clearstream 等）

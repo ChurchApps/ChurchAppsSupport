@@ -1,5 +1,6 @@
 ---
 title: "Plány služieb"
+description: "Plánujte dobrovoľníkov v B1 Admin: vytvárajte plány podľa dátumu, kopírujte predošlé týždne, priraďte ľudí na pozície a nastavte termíny prihlásenia a pripomienky."
 ---
 
 # Plány služieb

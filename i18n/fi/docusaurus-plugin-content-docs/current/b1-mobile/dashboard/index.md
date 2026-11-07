@@ -1,5 +1,6 @@
 ---
 title: "Kojelauta"
+description: "Tutustu B1 Mobile -sovelluksen aloitusnäyttöön, jossa tärkeimmät ominaisuudet ovat suurina kortteina ja muut pikatoimintojen alla."
 ---
 
 # Kojelauta
@@ -28,7 +29,7 @@ Pääkortin alla näkyy enintään kaksi **suosittua korttia** vierekkäin. Ne e
 
 ## Pikatoiminnot
 
-Muut ominaisuudet näkyvät **Pikatoiminnot**-ruudukossa suosittujen korttien alapuolella. Jokaisessa kohdassa on kuvake ja nimi. Nämä ovat kaikki muut seurakuntasi määrittämät navigointilinkit. Niiden kautta pääset kaikkeen [ryhmistä](../groups/) ja [lahjoittamisesta](../giving/) [sisäänkirjautumiseen](../checkin/), [saarnoihin](../content/sermons.md) ja muuhun.
+Muut ominaisuudet näkyvät **Pikatoiminnot**-ruudukossa suosittujen korttien alapuolella. Jokaisessa kohdassa on kuvake ja nimi. Nämä ovat kaikki muut seurakuntasi määrittämät navigointilinkit. Niiden kautta pääset kaikkeen [ryhmistä](../groups/index.md) ja [lahjoittamisesta](../giving/index.md) [sisäänkirjautumiseen](../checkin/index.md), [saarnoihin](../content/sermons.md) ja muuhun.
 
 ## Kuinka asettelu mukautuu
 
@@ -41,7 +42,7 @@ Kojelaudan asettelu personoidaan käyttötottumustesi perusteella. Joka kerta ku
 Jos et ole vielä käyttänyt sovellusta, ominaisuudet näkyvät seurakuntasi määrittämässä oletusjärjestyksessä. Ajan myötä kojelauta järjestyy uudelleen käyttötottumustesi mukaan.
 
 :::info
-Seurakuntasi ylläpitäjä määrittää kojelaudalla näkyvät ominaisuudet [B1 Adminin](../../b1-admin/) kautta. Jos et näe odottamaasi ominaisuutta, ota yhteyttä seurakuntasi toimistoon.
+Seurakuntasi ylläpitäjä määrittää kojelaudalla näkyvät ominaisuudet [B1 Adminin](../../b1-admin/index.md) kautta. Jos et näe odottamaasi ominaisuutta, ota yhteyttä seurakuntasi toimistoon.
 :::
 
 ## Kojelaudan päivittäminen

@@ -29,7 +29,7 @@ B1Admin Send Text → Api `TextingController` → `@churchapps/texting` `getProv
 
 Scope note: provider selection को cover करता है content **files/resources** flow (जहां bulk media live)। Gallery/logo/photo uploads को stay करते हैं default provider पर — वे storage से keys को list करते हैं और build करते हैं URLs client-side, इसलिए per-church rooting अभी तक apply नहीं करता है।
 
-Same seam भी power करता है [Bring-Your-Own Storage](./byos-storage): churches को link कर सकते हैं Google Drive, Dropbox, OneDrive, या उनके own S3-compatible bucket एक MinistryStuff plan के बजाय।
+Same seam भी power करता है [Bring-Your-Own Storage](./byos-storage.md): churches को link कर सकते हैं Google Drive, Dropbox, OneDrive, या उनके own S3-compatible bucket एक MinistryStuff plan के बजाय।
 
 ## Billing
 

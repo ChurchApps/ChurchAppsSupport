@@ -1,5 +1,6 @@
 ---
 title: "Externí poskytovatelé"
+description: "Zjistěte, jak externí poskytovatelé kurikula přidávají obsah do Lessons.church pomocí Open Lesson Format a jak jednoho připojit z portálu."
 ---
 
 # Externí poskytovatelé

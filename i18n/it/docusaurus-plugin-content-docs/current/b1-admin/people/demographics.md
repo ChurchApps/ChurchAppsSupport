@@ -1,5 +1,6 @@
 ---
 title: "Dati demografici"
+description: "Consulta in B1 Admin età, genere, stato di membro, stato civile e composizione per sede della comunità con grafici interattivi, e approfondisci ogni gruppo."
 ---
 
 # Dati demografici

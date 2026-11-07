@@ -1,5 +1,6 @@
 ---
 title: "Kalendář dostupnosti"
+description: "Nastavte v B1 Admin místnosti a vybavení k rezervaci, přidejte časy na přípravu a úklid a řešte opakované rezervace i rezervace se schválením."
 ---
 
 # Kalendář dostupnosti
@@ -13,7 +14,7 @@ Kalendář dostupnosti vám poskytne přehled o všech rezervacích místností 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- V sekci Místnosti a zdroje nastavte alespoň jednu [místnost nebo zdroj](rooms-resources)
+- V sekci Místnosti a zdroje nastavte alespoň jednu [místnost nebo zdroj](./rooms-resources.md)
 - Potřebujete přístup k úpravám sekce Kalendáře v B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Pomocí rozbalovací nabídky **Místnost / zdroj** vlevo nahoře zúžte kalend
 6. Kliknutím na **Uložit** rezervaci odešlete.
 
 :::info
-Pokud má místnost nebo zdroj nastavenou **skupinu pro schvalování**, rezervace se zobrazí jako **Čeká na schválení**, dokud ji nevyřídí vedoucí této skupiny. Postup schvalování najdete v článku [Schvalování kalendáře](approvals).
+Pokud má místnost nebo zdroj nastavenou **skupinu pro schvalování**, rezervace se zobrazí jako **Čeká na schválení**, dokud ji nevyřídí vedoucí této skupiny. Postup schvalování najdete v článku [Schvalování kalendáře](./approvals.md).
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalendář zvýrazní všechny kolize ještě před uložením. Pokud se zobraz�
 
 ## Související články
 
-- [Místnosti, zdroje a plánování](rooms-resources) — nastavení rezervovatelných prostor a vybavení
-- [Schvalování kalendáře](approvals) — schvalování nebo zamítání žádostí o rezervaci
-- [Vytváření kalendářů](creating-calendars) — správa kalendářů akcí
+- [Místnosti, zdroje a plánování](./rooms-resources.md) — nastavení rezervovatelných prostor a vybavení
+- [Schvalování kalendáře](./approvals.md) — schvalování nebo zamítání žádostí o rezervaci
+- [Vytváření kalendářů](./creating-calendars.md) — správa kalendářů akcí

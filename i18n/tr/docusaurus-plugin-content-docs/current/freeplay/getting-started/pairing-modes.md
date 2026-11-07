@@ -1,5 +1,6 @@
 ---
 title: "Bir Eşleştirme Modu Seçme"
+description: "FreePlay TV'yi eşleştirmenin doğru yolunu seçin: FreePlay Admin'den bir takvim, B1 Admin'den bir ibadet planı veya hiç eşleştirme yapmamak."
 ---
 
 # Bir Eşleştirme Modu Seçme
@@ -32,7 +33,7 @@ TV'nin kendi kendine çalışmasını istediğinizde kodu [admin.freeplay.church
 
 **En uygun olduğu durumlar:** Lobi ve koridor tabelaları, duyuru döngüleri ve insanlar içeri girdiğinde dersin zaten oynatılıyor olması gereken sınıflar.
 
-Tam kılavuz için bkz. **[Zamanlanmış Mod](../scheduled-mode/)**.
+Tam kılavuz için bkz. **[Zamanlanmış Mod](../scheduled-mode/index.md)**.
 
 ## Plan Modu (B1 Admin)
 
@@ -42,7 +43,7 @@ TV'nin bir ibadet planı türünü izlemesini istediğinizde kodu **B1 Admin**'e
 
 **En uygun olduğu durumlar:** Haftalık ibadet planınıza bağlı içerik gösteren TV'ler; zamanı geldiğinde birinin oynatmayı başlattığı durumlar.
 
-Tam kılavuz için bkz. **[Plan Modu](../plan-mode/)**.
+Tam kılavuz için bkz. **[Plan Modu](../plan-mode/index.md)**.
 
 :::tip
 Geçerli ibadet planını bir zamanlamayla da oynatabilirsiniz. FreePlay Admin'de bir takvim girdisi ekleyin ve **İbadet planları** altından plan türünü seçin.
@@ -50,7 +51,7 @@ Geçerli ibadet planını bir zamanlamayla da oynatabilirsiniz. FreePlay Admin'd
 
 ## İçerik Sağlayıcılar (Eşleştirme Gerekmez)
 
-TV'yi hiç eşleştirmeniz gerekmiyorsa içerik sağlayıcılarına doğrudan göz atabilirsiniz. [Lessons.church](../../lessons-church/) ve Bible Project gibi sağlayıcılar, istediğiniz zaman indirip oynatabileceğiniz içerikler sunar.
+TV'yi hiç eşleştirmeniz gerekmiyorsa içerik sağlayıcılarına doğrudan göz atabilirsiniz. [Lessons.church](../../lessons-church/index.md) ve Bible Project gibi sağlayıcılar, istediğiniz zaman indirip oynatabileceğiniz içerikler sunar.
 
 **En uygun olduğu durumlar:** Gönüllülerin her hafta neyi oynatacaklarını seçtiği TV'ler veya neyin mevcut olduğunu keşfetmek istediğiniz durumlar.
 
@@ -60,6 +61,6 @@ TV'yi hiç eşleştirmeniz gerekmiyorsa içerik sağlayıcılarına doğrudan g�
 
 ## İlgili Makaleler
 
-- **[Zamanlanmış Mod](../scheduled-mode/)** - FreePlay Admin ile TV'leri bir takvime yerleştirin
-- **[Plan Modu](../plan-mode/)** - Bir ibadet planıyla eşleştirme hakkında tam kılavuz
-- **[İçerik Sağlayıcılar](../content-providers/)** - Harici kaynaklardan içerik göz atın ve indirin
+- **[Zamanlanmış Mod](../scheduled-mode/index.md)** - FreePlay Admin ile TV'leri bir takvime yerleştirin
+- **[Plan Modu](../plan-mode/index.md)** - Bir ibadet planıyla eşleştirme hakkında tam kılavuz
+- **[İçerik Sağlayıcılar](../content-providers/index.md)** - Harici kaynaklardan içerik göz atın ve indirin

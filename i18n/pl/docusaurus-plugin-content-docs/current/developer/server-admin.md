@@ -1,5 +1,6 @@
 ---
 title: "Administracja serwerem"
+description: "Tylko Server.Admin: reset dwuetapowego logowania, logowanie jako inny użytkownik, moderacja Commons i zatwierdzanie e-maila kościoła w B1 Admin."
 ---
 
 # Administracja serwerem

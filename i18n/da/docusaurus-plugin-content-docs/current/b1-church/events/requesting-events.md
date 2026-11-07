@@ -1,5 +1,6 @@
 ---
 title: "Anmode om begivenheder & lokaler"
+description: "Anmod om lokale- eller udstyrsbooking til en begivenhed fra B1.church-portalen, følg status under Mine anmodninger og annullér mens den afventer."
 ---
 
 # Anmode om begivenheder & lokaler
@@ -42,11 +43,11 @@ Efter indsendelse viser en opsummering med **Anmodning indsendt** status for hve
 Mens en anmodning stadig afventer, kan du trække den tilbage med **Annuller anmodning** (du bliver bedt om at bekræfte — annullering kan ikke fortrydes).
 
 :::info
-Anmodninger gennemgås af kirkens medarbejdere på B1 Admin-siden [Godkendelser](../../b1-admin/calendars/approvals). Hvilke lokaler og ressourcer der kræver godkendelse, er op til din kirke — se [Lokaler & ressourcer](../../b1-admin/calendars/rooms-resources).
+Anmodninger gennemgås af kirkens medarbejdere på B1 Admin-siden [Godkendelser](../../b1-admin/calendars/approvals.md). Hvilke lokaler og ressourcer der kræver godkendelse, er op til din kirke — se [Lokaler & ressourcer](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Relaterede artikler
 
-- [Mig-siden](../getting-started/me-page) -- Hvor anmodningsgenvejene findes
-- [Kalendergodkendelser (B1 Admin)](../../b1-admin/calendars/approvals) -- Hvordan medarbejdere gennemgår anmodninger
-- [Lokaler & ressourcer (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Hvordan kirker konfigurerer bookbare lokaler
+- [Mig-siden](../getting-started/me-page.md) -- Hvor anmodningsgenvejene findes
+- [Kalendergodkendelser (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Hvordan medarbejdere gennemgår anmodninger
+- [Lokaler & ressourcer (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Hvordan kirker konfigurerer bookbare lokaler

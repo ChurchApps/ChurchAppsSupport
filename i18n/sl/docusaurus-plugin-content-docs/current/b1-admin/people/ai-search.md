@@ -1,5 +1,6 @@
 ---
 title: "Iskanje z umetno inteligenco"
+description: "Iščite v imeniku oseb B1 Admin z vprašanji v preprostem jeziku, na primer kateri člani niso bili prisotni tri mesece, namesto gradnje filtrov."
 ---
 
 # Iskanje z umetno inteligenco

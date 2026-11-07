@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Запуск B1 Mobile (React Native/Expo) локально, налаштування кінцевих точок API та збірка для Android чи iOS. Примітка: B1 Mobile застарів."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile — це основний мобільний застосунок Chur
 <div class="prereqs">
 <h4>Перш ніж почати</h4>
 
-- Встановіть **Node.js** та **Expo CLI** -- див. [Передумови](../setup/prerequisites)
+- Встановіть **Node.js** та **Expo CLI** -- див. [Передумови](../setup/prerequisites.md)
 - Встановіть **Android Studio** (для емулятора Android) або **Xcode** (для симулятора iOS)
-- Налаштуйте цільовий API (demo або local) -- див. [Змінні середовища](../setup/environment-variables)
+- Налаштуйте цільовий API (demo або local) -- див. [Змінні середовища](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ npm run update:production
 
 ## Пов'язані статті
 
-- **[Розгортання мобільних застосунків](../deployment/mobile)** -- Повний посібник зі збирання, подання та розгортання мобільних застосунків
-- **[Змінні середовища](../setup/environment-variables)** -- Повний довідник з налаштування мобільного середовища
+- **[Розгортання мобільних застосунків](../deployment/mobile.md)** -- Повний посібник зі збирання, подання та розгортання мобільних застосунків
+- **[Змінні середовища](../setup/environment-variables.md)** -- Повний довідник з налаштування мобільного середовища

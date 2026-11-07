@@ -1,5 +1,6 @@
 ---
 title: "Planuotas atkūrimas televizoriuje"
+description: "Susietas FreePlay TV atsisiunčia savaitę į priekį ir groja pagal laiką, net be ryšio. Apima informacijos skydelį, pulto mygtukus ir grojaraščio prisegimą."
 ---
 
 # Planuotas atkūrimas televizoriuje
@@ -13,8 +14,8 @@ Kai televizorius susietas su kalendoriumi, FreePlay jį valdo automatiškai. Jis
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Susiekite televizorių su kalendoriumi](./pairing-a-screen)
-- [Įdėkite ką nors į kalendorių](./scheduling-the-calendar) arba nustatykite numatytąjį ciklą ekranui priskirtai grupei
+- [Susiekite televizorių su kalendoriumi](./pairing-a-screen.md)
+- [Įdėkite ką nors į kalendorių](./scheduling-the-calendar.md) arba nustatykite numatytąjį ciklą ekranui priskirtai grupei
 
 </div>
 
@@ -40,7 +41,7 @@ Skydelyje taip pat yra trys mygtukai:
 
 - **Prisegti šį grojaraštį** - Toliau cikliškai rodyti dabartinį turinį ir ignoruoti kalendorių. Pasirinkite **Atsegti grojaraštį**, kad grįžtumėte prie tvarkaraščio
 - **Naršyti turinį** - Išeiti iš suplanuoto grotuvo ir naršyti prijungtus teikėjus
-- **Nustatymai** - Atidaryti FreePlay nustatymus, kur galite [atsieti arba susieti su kitu kalendoriumi](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Nustatymai** - Atidaryti FreePlay nustatymus, kur galite [atsieti arba susieti su kitu kalendoriumi](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Norėdami po naršymo grįžti prie tvarkaraščio, nuotolinio valdymo pulte paspauskite **Atgal** ekrane **Turinio teikėjai** arba atidarykite **Nustatymus**, pasirinkite **Susieti su kalendoriumi** ir išrinkite **Atgal į tvarkaraštį**. Susietas televizorius taip pat grįžta prie suplanuoto grotuvo, kai FreePlay vėl atsiranda priekiniame plane, ir visada atsidaro suplanuotame grotuve.
@@ -77,6 +78,6 @@ Ekrano kalendorių taip pat galite groti žiniatinklio naršyklėje. FreePlay Ad
 
 ## Susiję straipsniai
 
-- **[Kalendoriaus planavimas](./scheduling-the-calendar)** - Nustatykite, kas bus grojama ir kas nutiks, kai turinys baigsis anksčiau laiko
-- **[Ekranų ir grupių valdymas](./managing-screens)** - Peržiūrėkite kiekvieno ekrano atsisiuntimus FreePlay Admin
-- **[Turinio grojimas](../content-providers/playing-content)** - Grotuvo valdikliai, kai turinį grojate patys
+- **[Kalendoriaus planavimas](./scheduling-the-calendar.md)** - Nustatykite, kas bus grojama ir kas nutiks, kai turinys baigsis anksčiau laiko
+- **[Ekranų ir grupių valdymas](./managing-screens.md)** - Peržiūrėkite kiekvieno ekrano atsisiuntimus FreePlay Admin
+- **[Turinio grojimas](../content-providers/playing-content.md)** - Grotuvo valdikliai, kai turinį grojate patys

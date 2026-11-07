@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Browse, schedule, and present free age-graded lessons from 12+ providers in Lessons.church, with classrooms, venues, and FreePlay or B1 integrations."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church works with other ChurchApps tools to help you deliver content:
 
 ## Documentation Sections
 
-- [Getting Started](./getting-started/) -- Create your account and learn the basics
-- [Browsing Content](./browsing/) -- Find programs, studies, and lessons
-- [Classrooms](./classrooms/) -- Set up classrooms and schedule lessons
-- [Customization](./customization/) -- Tailor lessons to your church
-- [Presenting](./presenting/) -- Deliver lessons in class using presenter mode
-- [Administration](./admin/) -- Manage programs, studies, and lessons as an admin
+- [Getting Started](./getting-started/index.md) -- Create your account and learn the basics
+- [Browsing Content](./browsing/index.md) -- Find programs, studies, and lessons
+- [Classrooms](./classrooms/index.md) -- Set up classrooms and schedule lessons
+- [Customization](./customization/index.md) -- Tailor lessons to your church
+- [Presenting](./presenting/index.md) -- Deliver lessons in class using presenter mode
+- [Administration](./admin/index.md) -- Manage programs, studies, and lessons as an admin
 - [Statement of Faith](./statement-of-faith.md) -- Core beliefs and curriculum guidelines
 
 For support, email [support@churchapps.org](mailto:support@churchapps.org).

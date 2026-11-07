@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Подешавање и покретање B1 Mobile React Native/Expo апликације, конфигурација API крајњих тачака и build за Android или iOS. B1 Mobile је застарео."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile је основна мобилна апликација за члан�
 <div class="prereqs">
 <h4>Пре него што почнете</h4>
 
-- Инсталирајте **Node.js** и **Expo CLI** -- погледајте [Предуслови](../setup/prerequisites)
+- Инсталирајте **Node.js** и **Expo CLI** -- погледајте [Предуслови](../setup/prerequisites.md)
 - Инсталирајте **Android Studio** (за Android емулатор) или **Xcode** (за iOS симулатор)
-- Подесите свој API циљ (демо или локални) -- погледајте [Променљиве окружења](../setup/environment-variables)
+- Подесите свој API циљ (демо или локални) -- погледајте [Променљиве окружења](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA ажурирања су идеална за измене само у JavaScr
 
 ## Сродни чланци
 
-- **[Mobile Deployment](../deployment/mobile)** -- Потпуни водич за израду, слање и објављивање мобилних апликација
-- **[Environment Variables](../setup/environment-variables)** -- Комплетан референтни водич за конфигурацију мобилног окружења
+- **[Mobile Deployment](../deployment/mobile.md)** -- Потпуни водич за израду, слање и објављивање мобилних апликација
+- **[Environment Variables](../setup/environment-variables.md)** -- Комплетан референтни водич за конфигурацију мобилног окружења

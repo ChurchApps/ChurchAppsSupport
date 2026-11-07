@@ -1,5 +1,6 @@
 ---
 title: "Teacher View para sa Mga Aralin"
+description: "Buksan ang lesson sa full-screen na Teacher View mula sa plano sa B1.church, lumipat ng seksyon, magpatugtog ng media, at mag-download ng resources."
 ---
 
 # Teacher View para sa Mga Aralin

@@ -1,5 +1,7 @@
 ---
-title: "Aloitus"
+title: "B1 Mobilen käyttöönotto (vanhentunut)"
+sidebar_label: "Aloitus"
+description: "Ota B1 Mobile käyttöön puhelimellasi: löydä sovellus, kirjaudu ChurchApps-tililläsi ja valitse seurakuntasi. Huomaa, että B1 Mobile on vanhentunut ja korvattu PWA:lla."
 ---
 
 # Aloitus
@@ -25,10 +27,10 @@ Siinä kaikki. Kun olet valinnut seurakuntasi, sovellus lataa seurakuntasi brän
 
 ## Tässä osiossa
 
-- [Sovelluksen asentaminen](./installing) -- Mistä B1 Mobilen voi ladata ja laitevaatimukset.
-- [Kirjautuminen](./logging-in) -- Miten kirjaudut sisään tai luot uuden tilin.
-- [Seurakunnan vaihtaminen](./switching-churches) -- Miten vaihdat seurakuntaa, jos kuulut useampaan kuin yhteen.
+- [Sovelluksen asentaminen](./installing.md) -- Mistä B1 Mobilen voi ladata ja laitevaatimukset.
+- [Kirjautuminen](./logging-in.md) -- Miten kirjaudut sisään tai luot uuden tilin.
+- [Seurakunnan vaihtaminen](./switching-churches.md) -- Miten vaihdat seurakuntaa, jos kuulut useampaan kuin yhteen.
 
 :::tip
-B1 Mobile käyttää samaa ChurchApps-tiliä kuin kaikki muut ChurchApps-tuotteet. Jos sinulla on jo tili [B1.churchistä](../../b1-church/), B1 Administa tai Lessons.churchista, voit kirjautua samoilla tunnuksilla.
+B1 Mobile käyttää samaa ChurchApps-tiliä kuin kaikki muut ChurchApps-tuotteet. Jos sinulla on jo tili [B1.churchistä](../../b1-church/index.md), B1 Administa tai Lessons.churchista, voit kirjautua samoilla tunnuksilla.
 :::

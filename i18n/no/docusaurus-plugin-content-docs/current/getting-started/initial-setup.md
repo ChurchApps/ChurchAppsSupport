@@ -1,5 +1,7 @@
 ---
-title: "Første oppsett"
+title: "Første oppsett av kirken i B1 Admin"
+sidebar_label: "Første oppsett"
+description: "Gå gjennom førstegangskonfigureringen av en ny kirke i B1 Admin: kirkeinfo, merkevare, roller og anbefalt rekkefølge for oppsett av personer, grupper, oppmøte og givertjeneste."
 ---
 
 # Første oppsett

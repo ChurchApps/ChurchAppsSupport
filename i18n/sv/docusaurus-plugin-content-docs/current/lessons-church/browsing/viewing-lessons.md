@@ -1,5 +1,6 @@
 ---
 title: "Visa lektioner"
+description: "Gå igenom hur du öppnar en lektion i Lessons.church, läser sektioner och rollåtgärder, hittar nedladdningar och byter åldersvariant före lektionen."
 ---
 
 # Visa lektioner

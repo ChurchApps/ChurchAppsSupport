@@ -1,5 +1,6 @@
 ---
 title: "Zobrazení pro učitele u lekcí"
+description: "Otevřete lekci v celoobrazovkovém Teacher View z plánu na B1.church, pak přeskakujte mezi sekcemi, přehrávejte média a stahujte materiály ke hodině."
 ---
 
 # Zobrazení pro učitele u lekcí

@@ -386,13 +386,13 @@
     "message": "B1 Iselula"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Uhlelo lwelucingo lwemalunga elibandla ku-iOS na-Android."
+    "message": "Uhlelo lwemalunga lwasendulo lwe-iOS ne-Android, lapho selushintjwe yi-app yeweb ye-B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Kungena"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Uhlelo lwekungena lwekutitsatsela ekhiyoski kwematjabhulethi e-Android."
+    "message": "I-app yekungena ngekwenta yodvwa yamathebhulethi e-iPad ne-Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Iyakliwe ngalokukhetsekile kwendlela yekusebenta yelibandla — akusiyo insita levamile lelungiselelwe umsebenti wenkontsini."
   },
   "homepage.title": {
-    "message": "Ekhaya"
+    "message": "Usito lwe-B1.church, Lessons.church & FreePlay"
   },
   "homepage.description": {
-    "message": "Imibhalo yekusekela ya-ChurchApps — tinsita letimahhala nato-mtfombo-vulekile tekuphatsa emabandla."
+    "message": "Tihlahlandlela netincwadzi tekusebenta ngesofthiwe yesonto ye-ChurchApps yemahhala nevulekile: kuphatsa lisonto ye-B1.church, kungena nekunikela, iwebhusayithi, inhlelo yekufundza ye-Lessons.church, nale-FreePlay."
   },
   "homepage.products.heading": {
     "message": "Khetsa Umkhicito Wakho"

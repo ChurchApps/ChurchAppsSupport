@@ -1,5 +1,7 @@
 ---
-title: "Prekener"
+title: "Prekener i B1 Admin"
+sidebar_label: "Prekener"
+description: "Sett opp og administrer prekenbiblioteket, spillelister, direktesendingsplan og bulk-import fra YouTube eller Vimeo i B1 Admin."
 ---
 
 # Prekener
@@ -20,27 +22,27 @@ Prekener-seksjonen er organisert i fire hovedomrader:
 
 ### Prekener
 
-Legg til og administrer individuelle prekenoppforinger i biblioteket. Hver preken kan inneholde tittel, taler, dato, beskrivelse, miniatyrbilde og lenker til video- eller lydinnhold. Du kan lenke prekener til YouTube, Vimeo, Facebook eller tilpassede video-URLer. Se [Administrere prekener](managing-sermons) for alle detaljer.
+Legg til og administrer individuelle prekenoppforinger i biblioteket. Hver preken kan inneholde tittel, taler, dato, beskrivelse, miniatyrbilde og lenker til video- eller lydinnhold. Du kan lenke prekener til YouTube, Vimeo, Facebook eller tilpassede video-URLer. Se [Administrere prekener](./managing-sermons.md) for alle detaljer.
 
 ### Spillelister
 
-Organiser prekenene i serier eller samlinger. Spillelister gjor det enkelt for menigheten a bla gjennom en prekenserie i riktig rekkefolge. Hver spilleliste har sitt eget navn, beskrivelse og miniatyrbilde. Se [Spillelister](playlists) for mer informasjon.
+Organiser prekenene i serier eller samlinger. Spillelister gjor det enkelt for menigheten a bla gjennom en prekenserie i riktig rekkefolge. Hver spilleliste har sitt eget navn, beskrivelse og miniatyrbilde. Se [Spillelister](./playlists.md) for mer informasjon.
 
 ### Direktesendingstider
 
-Konfigurer menighetens direktesendingsplan. Sett opp regelmessige ukentlige gudstjenester eller engangshendelser, administrer chat- og videoinnstillinger, og kontroller nar sendingen gar direkte. Besokende vil se neste planlagte gudstjenestetid pa sendingssiden. En egen **Innstillinger**-side under **Prekener** styrer fanene (chat, bønn og egendefinerte lenker) som vises ved siden av direktesendingen. Se [Direktesending](live-streaming) for oppsettsinstruksjoner.
+Konfigurer menighetens direktesendingsplan. Sett opp regelmessige ukentlige gudstjenester eller engangshendelser, administrer chat- og videoinnstillinger, og kontroller nar sendingen gar direkte. Besokende vil se neste planlagte gudstjenestetid pa sendingssiden. En egen **Innstillinger**-side under **Prekener** styrer fanene (chat, bønn og egendefinerte lenker) som vises ved siden av direktesendingen. Se [Direktesending](./live-streaming.md) for oppsettsinstruksjoner.
 
 ### Masseimport
 
-Fyll prekenbiblioteket raskt ved a importere videoer i bulk fra YouTube eller Vimeo. Dette er den raskeste maten a migrere eksisterende prekeninnhold til B1. Se [Masseimport](bulk-import) for a komme i gang.
+Fyll prekenbiblioteket raskt ved a importere videoer i bulk fra YouTube eller Vimeo. Dette er den raskeste maten a migrere eksisterende prekeninnhold til B1. Se [Masseimport](./bulk-import.md) for a komme i gang.
 
 :::tip
-Hvis du setter opp prekener for forste gang, start med a opprette en [spilleliste](playlists), deretter enten [legg til prekener individuelt](managing-sermons) eller [importer dem i bulk](bulk-import) fra YouTube eller Vimeo.
+Hvis du setter opp prekener for forste gang, start med a opprette en [spilleliste](./playlists.md), deretter enten [legg til prekener individuelt](./managing-sermons.md) eller [importer dem i bulk](./bulk-import.md) fra YouTube eller Vimeo.
 :::
 
 ## Neste steg
 
-- [Administrere prekener](managing-sermons) -- Legg til og rediger individuelle prekener
-- [Spillelister](playlists) -- Organiser prekener i serier
-- [Direktesending](live-streaming) -- Sett opp direktesendingsplan og innstillinger
-- [Masseimport](bulk-import) -- Importer prekener fra YouTube eller Vimeo
+- [Administrere prekener](./managing-sermons.md) -- Legg til og rediger individuelle prekener
+- [Spillelister](./playlists.md) -- Organiser prekener i serier
+- [Direktesending](./live-streaming.md) -- Sett opp direktesendingsplan og innstillinger
+- [Masseimport](./bulk-import.md) -- Importer prekener fra YouTube eller Vimeo

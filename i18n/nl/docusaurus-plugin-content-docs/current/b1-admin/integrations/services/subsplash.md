@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Koppel Subsplash-donaties, nieuwe personen en formulierreacties aan B1 met Zapier, zodat giften en profielen automatisch in B1 Admin terechtkomen."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Zet de Zap aan. Nieuwe donaties via Subsplash verschijnen binnen enkele seconden
 
 ## Zie ook
 
-- [Donorbox](./donorbox): hetzelfde receptmodel, maar voor een ander donatieplatform
-- [Zapier (overzicht)](../zapier): de B1-kant van elk Zapier-recept
+- [Donorbox](./donorbox.md): hetzelfde receptmodel, maar voor een ander donatieplatform
+- [Zapier (overzicht)](../zapier.md): de B1-kant van elk Zapier-recept
 - [Zapier-integratiehandleiding van Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (documentatie van Subsplash)

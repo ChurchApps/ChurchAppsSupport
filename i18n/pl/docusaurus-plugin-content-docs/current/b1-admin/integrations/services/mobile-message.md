@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Połącz zdarzenia B1 Admin z Mobile Message, australijskim API SMS, przez webhooki Zapier lub Make, by wysyłać SMS-y powitalne, o darowiznach i przypomnienia."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Endpoint `/v1/messages` w Mobile Message przyjmuje do 10 000 wiadomości w jedny
 
 ### Alternatywa w Make
 
-Jeśli wolisz Make, dodaj moduł **HTTP — Make a request** po wyzwalaczu B1 Watch Events i skonfiguruj go tak samo (POST, Basic Auth, treść JSON). Informacje o części po stronie B1 znajdziesz w [przeglądzie Make](../make).
+Jeśli wolisz Make, dodaj moduł **HTTP — Make a request** po wyzwalaczu B1 Watch Events i skonfiguruj go tak samo (POST, Basic Auth, treść JSON). Informacje o części po stronie B1 znajdziesz w [przeglądzie Make](../make.md).
 
 ## Ograniczenia i uwagi
 
@@ -102,6 +103,6 @@ Jeśli wolisz Make, dodaj moduł **HTTP — Make a request** po wyzwalaczu B1 Wa
 
 ## Zobacz także
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — alternatywni dostawcy SMS z natywnymi aplikacjami Zapier (bez kroku Webhooks by Zapier)
-- [Zapier (przegląd)](../zapier) — strona B1 wszystkich przepisów Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternatywni dostawcy SMS z natywnymi aplikacjami Zapier (bez kroku Webhooks by Zapier)
+- [Zapier (przegląd)](../zapier.md) — strona B1 wszystkich przepisów Zapier
 - [Dokumentacja API Mobile Message](https://mobilemessage.com.au/api-documentation)

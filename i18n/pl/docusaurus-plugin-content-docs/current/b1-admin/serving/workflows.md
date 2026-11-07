@@ -1,5 +1,6 @@
 ---
 title: "Przepływy pracy"
+description: "Twórz tablice w stylu Kanban w B1 Admin, by prowadzić osoby przez kolejne kroki za pomocą automatycznych e-maili, SMS-ów i wyzwalaczy dodających osoby."
 ---
 
 # Przepływy pracy

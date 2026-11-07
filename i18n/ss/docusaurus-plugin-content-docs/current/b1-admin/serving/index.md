@@ -1,5 +1,7 @@
 ---
-title: "Kukhonta"
+title: "Ukusebenta Kwesisekelo ku-B1 Admin"
+sidebar_label: "Kukhonta"
+description: "Hlela labaphe ngesikhatsi nekuhlela tinkhonzo ku-B1 Admin, kusukela ku-ma-tab ebasebenti nakumaqembu kuya ekuhleleni tinkhonzo, tingoma netimisebenti."
 ---
 
 # Kukhonta
@@ -26,7 +28,7 @@ Sigaba seKukhonta sifaka letindzawo letibalulekile:
 
 - **[Tinhlelo](./plans.md)** -- Yakha tinhlelo tenkonzo temilanga lekhetsekile bese wabela bavolontiya emacenjini. Tinhlelo tikusita kuhlela kutsi ngubani lokhontako futsi ngunini, kute wonkhe umuntfu atiwe indzima yakhe ngaphambi kwesikhatsi. Setha [sikhumbuto sebavolontiya](./plans.md#sikhumbuto-sebavolontiya) lesitentekayo ngekutigcina kute licembu lakho lati ngaphambi kwenkonzo ngayinye, futsi usebentise i-**[Kubuka Konkhe Kwetinhlelo](./plans-overview.md)** kute ubone yonkhe imisebenti letawenteka emavikini lamaningi kuthebula linye.
 - **[Tingoma](./songs.md)** -- Phatsa umtapo wakho wetingoma tekukhulekela kanye nemavi, kuhlelwa, kanye netixhumanisi tangaphandle. Licembu lakho lekukhulekela lingasebentisa loku kutilungiselela tinkonzo letitako.
-- **[Imisebenti](./tasks.md)** -- Abela futsi ulandzelele imisebenti yemalunga elicembu lakho. Setha [Kutitenzela](./automations.md) kute wakhe imisebenti lephindzaphindzako ngekutigcina, kuze kute lokushiywako.
+- **[Imisebenti](./tasks.md)** -- Abela futsi ulandzelele imisebenti yemalunga elicembu lakho. Setha [Kutitenzela](./workflows.md) kute wakhe imisebenti lephindzaphindzako ngekutigcina, kuze kute lokushiywako.
 - **[Tinchubo Temisebenti](./workflows.md)** -- Hambisa bantfu kutindzawo letilandzelanako ku-bhodi lebonakalako le-Kanban, kufaka ekhatsi kulandzelela tivakashiletisha nobe inchubo yebulunga. Tinyatselo tingasebentisa tento letitentekako ngekutigcina (kutfumela i-imeyili, kulinda emalanga lambalwa, kwengeta ecemjini), futsi emakhadi ahamba ngekusebentisa tinkhinobho temiphumela, kuhambiswa ngekusekelwa etimweni, nobe tisusi tetehlakalo netikhatsi -- kanye netincwadzi telubiko letihlangene.
 
 ## Kucala

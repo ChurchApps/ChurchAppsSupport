@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Izvedite, kaj spletno mesto B1.church vaše cerkve ponuja članom: od portala za člane in skupin do darovanja, dogodkov, služenja in prijave."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Ko člani obiščejo vaše spletno mesto B1.church, vidijo javno spletno stran v
 
 ## Več informacij
 
-- [Začetek uporabe](./getting-started/) -- Ustvarite račun, se prijavite in spoznajte, kako se gibati po B1.church.
-- [Skupine](./groups/) -- Pridružite se skupinam vaše cerkve in sodelujte v njih.
-- [Darovanja](./giving/) -- Darujte in upravljajte svoja darovanja.
-- [Dogodki](./events/) -- Brskajte po prihajajočih cerkvenih dogodkih in se zanje prijavite.
-- [Služenje](./serving/) -- Oglejte si načrte in se prijavite na prostovoljske položaje.
-- [Načrti](./plans/) -- Oglejte si načrte bogoslužij in svoje prostovoljske položaje.
-- [Prijava](./checkin/) -- Prijavite se na bogoslužja, dogodke in registracijo gostov.
-- [Imenik skupnosti](./community/) -- Poiščite druge člane in se povežite z njimi.
-- [Vsebina](./content/) -- Pridige, Sveto pismo, vsakodnevni verz in prenosi v živo. (Predvajanje lekcij se je preselilo v [FreePlay](/docs/freeplay/).)
+- [Začetek uporabe](./getting-started/index.md) -- Ustvarite račun, se prijavite in spoznajte, kako se gibati po B1.church.
+- [Skupine](./groups/index.md) -- Pridružite se skupinam vaše cerkve in sodelujte v njih.
+- [Darovanja](./giving/index.md) -- Darujte in upravljajte svoja darovanja.
+- [Dogodki](./events/index.md) -- Brskajte po prihajajočih cerkvenih dogodkih in se zanje prijavite.
+- [Služenje](./serving/index.md) -- Oglejte si načrte in se prijavite na prostovoljske položaje.
+- [Načrti](./plans/index.md) -- Oglejte si načrte bogoslužij in svoje prostovoljske položaje.
+- [Prijava](./checkin/index.md) -- Prijavite se na bogoslužja, dogodke in registracijo gostov.
+- [Imenik skupnosti](./community/index.md) -- Poiščite druge člane in se povežite z njimi.
+- [Vsebina](./content/index.md) -- Pridige, Sveto pismo, vsakodnevni verz in prenosi v živo. (Predvajanje lekcij se je preselilo v [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church je za cerkve in člane popolnoma brezplačen. Skrbnik vaše cerkve spletno mesto nastavi in prilagodi prek B1 Admin. Kot član preprosto obiščete naslov URL B1.church vaše cerkve in začnete.

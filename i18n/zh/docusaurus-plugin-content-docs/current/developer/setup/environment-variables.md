@@ -1,5 +1,6 @@
 ---
 title: "环境变量"
+description: "为 ChurchApps 项目设置 .env 文件，在共享演示 API 与本地 API 之间做选择，并为 B1 Admin、B1.church、B1 Mobile、Lessons.church 等填写变量。"
 ---
 
 # 环境变量
@@ -13,9 +14,9 @@ title: "环境变量"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装您所用项目的[前置条件](./prerequisites)
+- 安装您所用项目的[前置条件](./prerequisites.md)
 - 克隆您想要参与的项目仓库
-- 查看[项目概览](./project-overview)，了解您的项目需要哪些 API 模块
+- 查看[项目概览](./project-overview.md)，了解您的项目需要哪些 API 模块
 
 </div>
 
@@ -64,7 +65,7 @@ https://api.demo.churchapps.org/doing
 
 ### 选项 2：本地 API
 
-在您的计算机上运行 Api 项目。需要 MySQL 8.0 以上版本，并为每个模块创建数据库。请参阅 [API 本地设置](../api/local-setup)指南。
+在您的计算机上运行 Api 项目。需要 MySQL 8.0 以上版本，并为每个模块创建数据库。请参阅 [API 本地设置](../api/local-setup.md)指南。
 
 ```bash
 # Base URL pattern

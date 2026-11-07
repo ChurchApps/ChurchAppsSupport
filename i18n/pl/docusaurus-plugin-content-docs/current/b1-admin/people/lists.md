@@ -1,5 +1,6 @@
 ---
 title: "Zapisane listy"
+description: "Zapisz wyszukiwanie osób w B1 Admin jako nazwaną listę i wczytaj ją jednym kliknięciem. Listy są na bieżąco aktualizowane o nowych pasujących członków."
 ---
 
 # Zapisane listy

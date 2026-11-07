@@ -1,5 +1,6 @@
 ---
 title: "Docentweergave voor lessen"
+description: "Open een les in de schermvullende Docentweergave vanuit een plan op B1.church, spring tussen secties, speel media af en download lesmateriaal."
 ---
 
 # Docentweergave voor lessen

@@ -1,5 +1,6 @@
 ---
 title: "कनेक्टेड सेवाएँ"
+description: "Zapier या Make रेसिपी से B1 Admin को Mailchimp, Donorbox, Subsplash, VOMO, Clearstream और अन्य उपकरणों से जोड़ें, हर एक के लिए सेटअप गाइड के साथ।"
 ---
 
 # कनेक्टेड सेवाएँ
@@ -14,14 +15,14 @@ B1 को किसी अन्य चर्च-तकनीक टूल स�
 
 | सेवा | श्रेणी | ब्रिज | आप क्या वायर कर सकते हैं |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | ईमेल | Zapier या Make | नए B1 लोगों / दानदाताओं को Mailchimp ऑडियंस में सिंक करें |
-| [Donorbox](./donorbox) | दान | Zapier | Donorbox के दान और दानदाताओं को वापस B1 में भेजें |
-| [Subsplash](./subsplash) | ऐप / दान | Zapier | Subsplash के दान और लोगों को B1 में लाएँ |
-| [VOMO](./vomo) | स्वयंसेवा | Zapier | B1 समूहों और VOMO प्रोजेक्ट्स के बीच स्वयंसेवक साइनअप सिंक करें |
-| [Clearstream](./clearstream) | SMS | Zapier | B1 इवेंट्स से Clearstream टेक्स्ट ट्रिगर करें; उत्तरों को B1 रिकॉर्ड के रूप में लें |
-| [Text In Church](./text-in-church) | SMS / वर्कफ़्लो | Zapier | B1 से Text In Church वर्कफ़्लो ट्रिगर करें; Connect Card डेटा प्राप्त करें |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier या Make | किसी भी B1 इवेंट से SMS भेजें |
-| [Checkr](./checkr) | पृष्ठभूमि जाँच | Make | जब कोई सेवा टीम में जुड़े तो पृष्ठभूमि जाँच शुरू करें |
+| [Mailchimp](./mailchimp.md) | ईमेल | Zapier या Make | नए B1 लोगों / दानदाताओं को Mailchimp ऑडियंस में सिंक करें |
+| [Donorbox](./donorbox.md) | दान | Zapier | Donorbox के दान और दानदाताओं को वापस B1 में भेजें |
+| [Subsplash](./subsplash.md) | ऐप / दान | Zapier | Subsplash के दान और लोगों को B1 में लाएँ |
+| [VOMO](./vomo.md) | स्वयंसेवा | Zapier | B1 समूहों और VOMO प्रोजेक्ट्स के बीच स्वयंसेवक साइनअप सिंक करें |
+| [Clearstream](./clearstream.md) | SMS | Zapier | B1 इवेंट्स से Clearstream टेक्स्ट ट्रिगर करें; उत्तरों को B1 रिकॉर्ड के रूप में लें |
+| [Text In Church](./text-in-church.md) | SMS / वर्कफ़्लो | Zapier | B1 से Text In Church वर्कफ़्लो ट्रिगर करें; Connect Card डेटा प्राप्त करें |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier या Make | किसी भी B1 इवेंट से SMS भेजें |
+| [Checkr](./checkr.md) | पृष्ठभूमि जाँच | Make | जब कोई सेवा टीम में जुड़े तो पृष्ठभूमि जाँच शुरू करें |
 
 ## इन सभी में क्या समान है
 
@@ -45,8 +46,8 @@ Tithe.ly, Pushpay, Vanco, PastorsLine, Gloo, Notebird, KidCheck, MinistrySafe �
 
 ## यह भी देखें
 
-- [Zapier (अवलोकन)](../zapier): हर Zapier रेसिपी की B1 ओर एक जैसी है; यह दस्तावेज़ इसे एक बार कवर करता है
-- [Make (अवलोकन)](../make): Make के scenarios के लिए भी यही
-- [Slack & Discord](../slack-discord): किसी ब्रिज के बिना चैट सूचनाएँ
-- [Google Sheets](../google-sheets): माँग पर निर्यात
+- [Zapier (अवलोकन)](../zapier.md): हर Zapier रेसिपी की B1 ओर एक जैसी है; यह दस्तावेज़ इसे एक बार कवर करता है
+- [Make (अवलोकन)](../make.md): Make के scenarios के लिए भी यही
+- [Slack & Discord](../slack-discord.md): किसी ब्रिज के बिना चैट सूचनाएँ
+- [Google Sheets](../google-sheets.md): माँग पर निर्यात
 - [Webhooks (डेवलपर संदर्भ)](/docs/developer/api/webhooks): वह इवेंट कैटलॉग जिस पर हर रेसिपी निर्भर है

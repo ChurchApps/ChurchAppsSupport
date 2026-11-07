@@ -1,5 +1,6 @@
 ---
 title: "Kết nối nhà cung cấp và tạo danh sách phát"
+description: "Thiết lập nhà cung cấp nội dung trong FreePlay Admin, rồi tạo, sắp xếp và xem trước danh sách phát cho màn hình TV theo lịch."
 ---
 
 # Kết nối nhà cung cấp và tạo danh sách phát
@@ -107,6 +108,6 @@ Nhấp **Present** để phát danh sách toàn màn hình trong trình duyệt.
 
 ## Bài viết liên quan
 
-- **[Lên lịch chiếu](./scheduling-the-calendar)** - Đưa danh sách phát của bạn vào lịch của một nhóm màn hình
-- **[Quản lý màn hình và nhóm](./managing-screens)** - Đặt một danh sách phát làm vòng lặp mặc định của nhóm
-- **[Nhà cung cấp nội dung](../content-providers/)** - Các nhà cung cấp bạn có thể kết nối trực tiếp trên TV
+- **[Lên lịch chiếu](./scheduling-the-calendar.md)** - Đưa danh sách phát của bạn vào lịch của một nhóm màn hình
+- **[Quản lý màn hình và nhóm](./managing-screens.md)** - Đặt một danh sách phát làm vòng lặp mặc định của nhóm
+- **[Nhà cung cấp nội dung](../content-providers/index.md)** - Các nhà cung cấp bạn có thể kết nối trực tiếp trên TV

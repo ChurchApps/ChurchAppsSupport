@@ -1,5 +1,6 @@
 ---
 title: "Points de terminaison Doing"
+description: "Référence des points d’accès de l’API Doing (plans de service, affectations, tâches, automatisations) : chemins, authentification et permissions."
 ---
 
 # Points de terminaison Doing
@@ -278,6 +279,6 @@ Transmet les requêtes aux fournisseurs de contenu externes (par exemple ProPres
 
 ## Pages connexes
 
-- [Points de terminaison Membership](./membership) — Personnes, groupes, rôles et autorisations
-- [Points de terminaison Attendance](./attendance) — Suivi des services et des visites
-- [Structure des modules](../module-structure) — Modèles d'organisation du code
+- [Points de terminaison Membership](./membership.md) — Personnes, groupes, rôles et autorisations
+- [Points de terminaison Attendance](./attendance.md) — Suivi des services et des visites
+- [Structure des modules](../module-structure.md) — Modèles d'organisation du code

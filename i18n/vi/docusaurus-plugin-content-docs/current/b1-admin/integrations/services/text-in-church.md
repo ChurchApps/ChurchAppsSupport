@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Kết nối B1 Admin với Text In Church qua Zapier: tạo khóa API, xây Zap từ thẻ kết nối đến B1 và đồng bộ thành viên nhóm."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Bật Zap. Thẻ kết nối tiếp theo được gửi qua TIC sẽ tự độn
 
 ## Xem Thêm
 
-- [Clearstream](./clearstream) — nền tảng SMS thay thế, có cấu trúc Zapier tương tự
-- [Zapier (tổng quan)](../zapier) — phía B1 của mọi công thức Zapier
+- [Clearstream](./clearstream.md) — nền tảng SMS thay thế, có cấu trúc Zapier tương tự
+- [Zapier (tổng quan)](../zapier.md) — phía B1 của mọi công thức Zapier
 - [Hướng dẫn Zapier của Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (tài liệu của TIC)

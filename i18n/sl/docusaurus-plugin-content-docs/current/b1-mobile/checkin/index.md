@@ -1,5 +1,7 @@
 ---
-title: "Prijava"
+title: "Prijava na cerkev z aplikacijo B1 Mobile"
+sidebar_label: "Prijava"
+description: "Prijavite sebe in svoje gospodinjstvo na bogoslužja s telefonom v aplikaciji B1 Mobile ter izberite bogoslužja in skupine še pred prihodom."
 ---
 
 # Prijava
@@ -16,7 +18,7 @@ Postopek prijave je hiter, večkoračni tok, ki vas vodi skozi izbiro bogoslužj
 
 ## Začetek
 
-Za dostop do prijave odprite razdelek **Prijava** v aplikaciji B1 Mobile. Za uporabo te funkcije morate biti prijavljeni. Če niste prijavljeni, vas bomo najprej pozvali, da se [prijavite](../getting-started/logging-in).
+Za dostop do prijave odprite razdelek **Prijava** v aplikaciji B1 Mobile. Za uporabo te funkcije morate biti prijavljeni. Če niste prijavljeni, vas bomo najprej pozvali, da se [prijavite](../getting-started/logging-in.md).
 
 :::info
 Funkcija prijave zahteva, da je vaša cerkev nastavila bogoslužja in skupine za udeležbo v svojih upravnih nastavitvah. Če se ob odprtju zaslona za prijavo ne prikaže nobeno bogoslužje, ta funkcija morda še ni nastavljena. Za pomoč se obrnite na cerkvenega skrbnika.
@@ -30,4 +32,4 @@ Funkcija prijave zahteva, da je vaša cerkev nastavila bogoslužja in skupine za
 
 ## Naslednji koraki
 
-- [Samoprijava](./self-checkin) -- Podroben vodnik za prijavo prek telefona
+- [Samoprijava](./self-checkin.md) -- Podroben vodnik za prijavo prek telefona

@@ -1,5 +1,7 @@
 ---
-title: "Inscrição de voluntários"
+title: "Inscrição de Voluntários no Portal do B1.church"
+sidebar_label: "Inscrição de voluntários"
+description: "Navegue pelas vagas de voluntariado abertas por categoria e inscreva-se em cultos futuros ou remova sua inscrição no B1.church antes do prazo."
 ---
 
 # Inscrição de voluntários
@@ -74,4 +76,4 @@ Consulte a página de voluntariado regularmente, especialmente no início da sem
 ## Artigos relacionados
 
 - [Visão geral do voluntariado](./index.md) -- Visão geral dos recursos de voluntariado no B1.church
-- [Visualizando planos](../plans/viewing-plans) -- Veja seus planos designados e as ordens de culto
+- [Visualizando planos](../plans/viewing-plans.md) -- Veja seus planos designados e as ordens de culto

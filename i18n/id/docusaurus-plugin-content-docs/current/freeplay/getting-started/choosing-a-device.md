@@ -1,5 +1,6 @@
 ---
 title: "Memilih Perangkat"
+description: "Pilih perangkat TV kelas FreePlay yang tepat, dari Fire TV Stick dan kotak Onn hingga Apple TV, serta perangkat yang sebaiknya dihindari."
 ---
 
 # Memilih Perangkat untuk FreePlay

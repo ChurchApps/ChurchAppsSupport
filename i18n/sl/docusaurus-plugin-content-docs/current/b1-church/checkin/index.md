@@ -1,5 +1,7 @@
 ---
-title: "Prijava"
+title: "Prijava na bogoslužje v portalu članov B1.church"
+sidebar_label: "Prijava"
+description: "Prijavite sebe in člane gospodinjstva na cerkveno bogoslužje prek portala članov B1.church, brez kioska, in si dodelite skupine."
 ---
 
 # Prijava

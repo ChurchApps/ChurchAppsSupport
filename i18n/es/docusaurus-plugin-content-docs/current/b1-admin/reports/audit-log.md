@@ -1,5 +1,6 @@
 ---
 title: "Registro de Auditoría"
+description: "Revisa el registro de auditoría en B1 Admin para ver quién inició sesión, editó registros de personas o cambió permisos, y exporta las entradas filtradas a CSV."
 ---
 
 # Registro de Auditoría
@@ -78,6 +79,6 @@ Revisa el registro de auditoría regularmente, especialmente después de incorpo
 
 ## Artículos Relacionados
 
-- [Roles y Permisos](../settings/roles-permissions) -- Gestiona quién tiene acceso a qué
-- [Data Security](../settings/data-security) -- Comprende cómo se protegen tus datos
+- [Roles y Permisos](../settings/roles-permissions.md) -- Gestiona quién tiene acceso a qué
+- [Data Security](../settings/data-security.md) -- Comprende cómo se protegen tus datos
 - [Reports Overview](./index.md) -- Ver todos los informes disponibles

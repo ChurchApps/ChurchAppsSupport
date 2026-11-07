@@ -1,5 +1,6 @@
 ---
 title: "Odtwarzanie treści"
+description: "Sterowanie FreePlay pilotem: pauza, pomijanie slajdów i filmów, skok do wybranego kazania oraz wyjście z odtwarzacza z dostawcy, planu lub pobranych treści."
 ---
 
 # Odtwarzanie treści
@@ -13,13 +14,13 @@ Odtwarzacz FreePlay wypełnia cały ekran i jest przystosowany do pilotów telew
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Wybierz coś do odtworzenia. Zobacz [Przeglądanie i pobieranie treści](./browsing-content), [Tryb planu](../plan-mode/) lub [Ogłoszenia](./announcements)
+- Wybierz coś do odtworzenia. Zobacz [Przeglądanie i pobieranie treści](./browsing-content.md), [Tryb planu](../plan-mode/index.md) lub [Ogłoszenia](./announcements.md)
 - Naciśnij **Start**, aby otworzyć odtwarzacz
 
 </div>
 
 :::info
-Ekrany powiązane z kalendarzem korzystają z osobnego odtwarzacza zaplanowanego, który ma nieco inne elementy sterowania. Zobacz [Odtwarzanie zaplanowane na telewizorze](../scheduled-mode/scheduled-playback).
+Ekrany powiązane z kalendarzem korzystają z osobnego odtwarzacza zaplanowanego, który ma nieco inne elementy sterowania. Zobacz [Odtwarzanie zaplanowane na telewizorze](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Sterowanie odtwarzaczem
@@ -57,7 +58,7 @@ Naciśnij **w górę** podczas odtwarzania, aby otworzyć **Wybierz wiadomość*
 Naciśnij **w dół** lub **Wstecz** na pilocie, aby opuścić odtwarzacz. Miejsce, do którego wrócisz, zależy od tego, co odtwarzałeś:
 
 - **Treści od dostawcy** - powrót do przeglądarki treści
-- **Plan** - powrót do ekranu pobierania planu. Zobacz [Tryb planu](../plan-mode/)
+- **Plan** - powrót do ekranu pobierania planu. Zobacz [Tryb planu](../plan-mode/index.md)
 - **Pobrana treść** - powrót do ekranu **Pobrane**
 
 :::info
@@ -66,5 +67,5 @@ Ekran pozostaje włączony, dopóki odtwarzacz jest otwarty, dzięki czemu telew
 
 ## Powiązane artykuły
 
-- **[Przeglądanie i pobieranie treści](./browsing-content)** - Znajdź treści i pobierz je do odtwarzania offline
-- **[Odtwarzanie zaplanowane na telewizorze](../scheduled-mode/scheduled-playback)** - Sterowanie pilotem dla ekranów działających według kalendarza
+- **[Przeglądanie i pobieranie treści](./browsing-content.md)** - Znajdź treści i pobierz je do odtwarzania offline
+- **[Odtwarzanie zaplanowane na telewizorze](../scheduled-mode/scheduled-playback.md)** - Sterowanie pilotem dla ekranów działających według kalendarza

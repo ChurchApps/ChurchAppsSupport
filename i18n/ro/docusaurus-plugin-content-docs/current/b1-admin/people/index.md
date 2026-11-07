@@ -1,5 +1,6 @@
 ---
 title: "Persoane"
+description: "Căutați, adăugați și editați membrii bisericii în secțiunea People din B1 Admin, cu gospodării, actualizări în masă și export al directorului."
 ---
 
 # Persoane

@@ -1,5 +1,6 @@
 ---
 title: "Modulstruktur"
+description: "Förklarar hur API:ets moduler är uppbyggda, med controllers, repositories, gateways, behörighetskontroller och de sex Lambda-funktionerna som kör koden i B1-utvecklingsmiljöer."
 ---
 
 # Modulstruktur
@@ -13,8 +14,8 @@ Varje API-modul följer en enhetlig intern struktur med controllers, repositorie
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Installera API:et lokalt – se [Lokal API-installation](./local-setup)
-- Läs igenom [databasarkitekturen](./database) för att förstå dataåtkomstlagret
+- Installera API:et lokalt – se [Lokal API-installation](./local-setup.md)
+- Läs igenom [databasarkitekturen](./database.md) för att förstå dataåtkomstlagret
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Kommunikation mellan moduler
 
-Varje modul äger sin egen databas (se [Databas](./database)). En modul frågar aldrig en annan moduls tabeller direkt. När en modul behöver data som ägs av en annan modul, till exempel när doing-modulen slår upp personer från membership, går den via den ägande modulens **gateway** i `src/shared/modules/`:
+Varje modul äger sin egen databas (se [Databas](./database.md)). En modul frågar aldrig en annan moduls tabeller direkt. När en modul behöver data som ägs av en annan modul, till exempel när doing-modulen slår upp personer från membership, går den via den ägande modulens **gateway** i `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Lokalt körs funktionen `web` på port 8084 och funktionen `socket` på port 808
 
 ## Relaterade artiklar
 
-- **[Databas](./database)** – Anslutningssträngar, schemaskript och mönster för dataåtkomst
-- **[Lokal API-installation](./local-setup)** – Fullständig steg-för-steg-guide för installation
-- **[ApiHelper](../shared-libraries/api-helper)** – Det delade biblioteket som tillhandahåller `CustomBaseController` och autentiseringsmiddleware
+- **[Databas](./database.md)** – Anslutningssträngar, schemaskript och mönster för dataåtkomst
+- **[Lokal API-installation](./local-setup.md)** – Fullständig steg-för-steg-guide för installation
+- **[ApiHelper](../shared-libraries/api-helper.md)** – Det delade biblioteket som tillhandahåller `CustomBaseController` och autentiseringsmiddleware

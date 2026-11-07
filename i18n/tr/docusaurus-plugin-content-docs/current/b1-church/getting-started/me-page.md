@@ -1,5 +1,6 @@
 ---
 title: "Me Sayfası"
+description: "B1App üye portalındaki Ben sayfasının tek ekranda gösterdiklerini görün: yaklaşan hizmetler, etkinlikler ve kayıtlar; ayrıca hane, gruplar, bağışlar, formlar, katılım ve gelen kutusu."
 ---
 
 # Me Sayfası
@@ -31,7 +32,7 @@ Oturumunuz kapalıysa bunun yerine "Haftanızı görmek için oturum açın" yaz
 **Yaklaşan** bölümünde, tarih sırasına göre en yakın üç öğeniz listelenir ve her biri bir tür etiketiyle işaretlenir. Daha fazla öğeniz varsa tam listeyi görmek için **Tüm yaklaşanlar** seçeneğine, Me sayfasına dönmek için **Me sayfasına dön** seçeneğine dokunun.
 
 - **Hizmet** -- Yaklaşan hizmet planlarındaki gönüllü görevleriniz. Bu görevlerde tarih ve hizmetin başlangıç saati gösterilir. Plan birden fazla hizmet saatine sahipse ekibinizin ihtiyaç duyduğu saat, plan saat içermiyorsa yalnızca tarih gösterilir. Planı açmak için bir göreve dokunun.
-- **Kayıt** -- [Kaydolduğunuz](../events/registering) etkinlikler. Bu satıra dokunarak [kayıtlarınıza](../events/my-registrations) gidebilirsiniz.
+- **Kayıt** -- [Kaydolduğunuz](../events/registering.md) etkinlikler. Bu satıra dokunarak [kayıtlarınıza](../events/my-registrations.md) gidebilirsiniz.
 - **Etkinlik** -- Üyesi olduğunuz gruplardaki yaklaşan etkinlikler. Birine dokunarak grubun etkinliklerini açabilirsiniz.
 
 Bir etkinliğin veya kaydın fotoğrafı varsa satırın başında küçük bir önizleme görünür.
@@ -66,7 +67,7 @@ Bir satıra veya **Geçmiş** seçeneğine dokunarak **Katılımım** sayfasın�
 
 Kilisenizde rezerve edilebilir odalar veya kaynaklar varsa iki bağlantı daha görünür:
 
-- **Etkinlik Talep Et** -- İhtiyaç duyduğunuz oda ve ekipmanlarla bir etkinlik düzenlemek için talepte bulunun. Bkz. [Etkinlik ve Oda Talepleri](../events/requesting-events).
+- **Etkinlik Talep Et** -- İhtiyaç duyduğunuz oda ve ekipmanlarla bir etkinlik düzenlemek için talepte bulunun. Bkz. [Etkinlik ve Oda Talepleri](../events/requesting-events.md).
 - **Taleplerim** -- Taleplerinizin durumunu takip edin ve bekleyen talepleri iptal edin.
 
 Kilisenizde oda veya kaynak tanımlanmamışsa bu bağlantılar gizlenir.
@@ -77,8 +78,8 @@ Kilisenizde oda veya kaynak tanımlanmamışsa bu bağlantılar gizlenir.
 
 ## İlgili Makaleler
 
-- [B1App'te Gezinme](./navigating) -- Üye portalının düzeni
-- [Etkinlik ve Oda Talepleri](../events/requesting-events) -- Oda ve kaynak taleplerini gönderin ve takip edin
-- [Kayıtlarım](../events/my-registrations) -- Etkinlik kayıtlarınızı yönetin
-- [Gönüllü Kaydı](../serving/volunteer-signup) -- Hizmet görevlerinin nasıl çalıştığı
-- [Self Check-In](../checkin/self-checkin) -- Katılımınızın nasıl kaydedildiği
+- [B1App'te Gezinme](./navigating.md) -- Üye portalının düzeni
+- [Etkinlik ve Oda Talepleri](../events/requesting-events.md) -- Oda ve kaynak taleplerini gönderin ve takip edin
+- [Kayıtlarım](../events/my-registrations.md) -- Etkinlik kayıtlarınızı yönetin
+- [Gönüllü Kaydı](../serving/volunteer-signup.md) -- Hizmet görevlerinin nasıl çalıştığı
+- [Self Check-In](../checkin/self-checkin.md) -- Katılımınızın nasıl kaydedildiği

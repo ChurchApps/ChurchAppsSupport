@@ -1,5 +1,6 @@
 ---
 title: "Imprimer le répertoire"
+description: "Générez un répertoire de membres imprimable, regroupé par foyer, avec photos, coordonnées et anniversaires, depuis B1 Admin, au format lettre."
 ---
 
 # Imprimer le répertoire

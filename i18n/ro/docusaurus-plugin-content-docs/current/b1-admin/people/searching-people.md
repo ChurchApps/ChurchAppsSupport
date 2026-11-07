@@ -1,5 +1,6 @@
 ---
 title: "Căutarea persoanelor"
+description: "Căutați în directorul People din B1 Admin după nume, sortați coloanele, creați filtre cu Advanced Search și exportați rezultatele în CSV."
 ---
 
 # Căutarea persoanelor

@@ -1,5 +1,6 @@
 ---
 title: "Portal Genel Bakışı"
+description: "Lessons.church portalında sınıfları bulmak, planlanmış dersleri incelemek, besleme bağlantılarını kurmak ve Harici Sağlayıcılar ile Yönetim araçlarına ulaşmak için turu yapın."
 ---
 
 # Portal Genel Bakışı

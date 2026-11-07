@@ -1,5 +1,6 @@
 ---
 title: "Asignar Grupos"
+description: "Elige a qué grupo o clase asiste cada miembro de la familia en cada horario de servicio en B1 Checkin, usando categorías, orientación por edad y grado, y la opción Ninguno."
 ---
 
 # Asignar Grupos
@@ -13,7 +14,7 @@ Cuando tocas un botón de horario de servicio en la pantalla de revisión de hog
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Revisa tu hogar](./household-review) en la pantalla de revisión de hogar
+- [Revisa tu hogar](./household-review.md) en la pantalla de revisión de hogar
 - Expande el miembro que quieres asignar y toca un botón de horario de servicio
 - Asegúrate de que el administrador de tu iglesia haya [creado grupos](../../b1-admin/groups/creating-groups.md) y los haya vinculado a horarios de servicio en B1 Admin
 
@@ -34,7 +35,7 @@ Toca una tarjeta de categoría para expandirla y ver los grupos individuales den
 2. Revisa la lista de grupos dentro de esa categoría. Cada grupo muestra su nombre con un ícono de selección a la derecha.
 3. Toca el **nombre del grupo** que quieres asignar.
 
-La aplicación guarda tu selección y te regresa a la [pantalla de revisión de hogar](./household-review). El botón de horario de servicio para ese miembro mostrará ahora el nombre del grupo que seleccionaste.
+La aplicación guarda tu selección y te regresa a la [pantalla de revisión de hogar](./household-review.md). El botón de horario de servicio para ese miembro mostrará ahora el nombre del grupo que seleccionaste.
 
 ## Guía de Edad y Grado
 
@@ -52,7 +53,7 @@ Usa la opción **Ninguno** para adultos que asisten al servicio principal de ado
 
 Para cambiar una asignación de grupo que ya se ha realizado:
 
-1. Regresa a la [pantalla de revisión de hogar](./household-review).
+1. Regresa a la [pantalla de revisión de hogar](./household-review.md).
 2. Expande el miembro cuyo grupo quieres cambiar.
 3. Toca el botón de horario de servicio (que ahora muestra el nombre del grupo actualmente asignado).
 4. Selecciona un grupo diferente o toca **Ninguno**.
@@ -63,8 +64,8 @@ Los grupos y categorías son configurados por el administrador de tu iglesia en 
 
 ## Próximos Pasos
 
-Después de asignar grupos, regresa a la [pantalla de revisión de hogar](./household-review) para:
+Después de asignar grupos, regresa a la [pantalla de revisión de hogar](./household-review.md) para:
 
 - Asignar grupos a miembros adicionales de la familia
-- [Agregar un invitado](./adding-guests) si alguien está visitando con tu familia
-- [Completar el registro](./completing-checkin) cuando todas las asignaciones estén listas
+- [Agregar un invitado](./adding-guests.md) si alguien está visitando con tu familia
+- [Completar el registro](./completing-checkin.md) cuando todas las asignaciones estén listas

@@ -1,5 +1,7 @@
 ---
-title: "Mengedit Profil Anda"
+title: "Mengedit Profil Anda di Portal Anggota B1.church"
+sidebar_label: "Mengedit Profil Anda"
+description: "Perbarui detail kontak, anggota rumah tangga, email dan kata sandi masuk, serta pengaturan privasi di portal anggota B1.church."
 ---
 
 # Mengedit Profil Anda

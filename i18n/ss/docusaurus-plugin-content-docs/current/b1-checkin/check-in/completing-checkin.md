@@ -1,5 +1,6 @@
 ---
 title: "Kucedza Kubhalisa"
+description: "Phetsa kungena kwemndeni ku-kiosk ye-B1 Checkin, kufaka phakatsi tinkhawulo tekamelo, kuphrinta emalebula, makhodi ekuvikela wekutsatsa, nekutsi i-app yentela kuphi kulandzela."
 ---
 
 # Kucedza Kubhalisa
@@ -13,9 +14,9 @@ Nase ubuyeketile umndeni wakho futsi wenta konkhe kwabelwa kwemacembu lokudzinge
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- [Buyeketa umndeni wakho](./household-review) eskrinini sekubuyeketa umndeni
-- [Yabela emacembu](./group-assignment) kunobe ngumuphi umuntfu wemndeni ledzinga kubhaliswa kulikilasi nobe kuluhlelo lolutsite
-- Ngalokutsandvekako [engeta tivakashi](./adding-guests) letivakashile nemndeni wakho
+- [Buyeketa umndeni wakho](./household-review.md) eskrinini sekubuyeketa umndeni
+- [Yabela emacembu](./group-assignment.md) kunobe ngumuphi umuntfu wemndeni ledzinga kubhaliswa kulikilasi nobe kuluhlelo lolutsite
+- Ngalokutsandvekako [engeta tivakashi](./adding-guests.md) letivakashile nemndeni wakho
 
 </div>
 
@@ -28,7 +29,7 @@ Yikho konkhe lokudzingekako. Kubakhona kwemndeni wakho sekubhaliwe.
 
 ## Emakamelo Lagcwele Netilinganiso Tebavolontiya
 
-Nangabe libandla lakho lisewahlele [emandla ekuphepha](../../b1-admin/attendance/checkin-safety) ekamelweni lawo, isevha iyawahlola ngembi kwekugcina:
+Nangabe libandla lakho lisewahlele [emandla ekuphepha](../../b1-admin/attendance/checkin-safety.md) ekamelweni lawo, isevha iyawahlola ngembi kwekugcina:
 
 - Nangabe likamelo lelikhetsiwe **ligcwele nobe livaliwe**, kubhalisa akwenteki futsi i-app iyalibita likamelo kute ukhone kukhetsa lelinye.
 - Nangabe likamelo letingane **lisilela ngebavolontiya** kutilinganiso talo, i-app ingakhombisa sikhumbuto lesingacinisekiswa ngumsebenti webandla kute kuchubeke, nobe ivimbe kubhalisa ngalokuphelele -- konkhe kuya ngendlela libandla lakho lelihlele ngayo kuphocelelwa kwetilinganiso.
@@ -47,7 +48,7 @@ Ikhodi lefanako yekuphepha ivela kokubili elebulini legama lengane naencwadzini 
 Ikhodi yekuphepha yakhiwa isha kubhalisa ngakunye futsi isebentisa tinhlamvu letimayelana nemidvumo kuphela (tinhlamvu tesikwehla tiyekwe kute kungabi khona emagama langakafanele akhiwe).
 
 :::warning
-Nangabe emalebula angaphrinti, vula Kuhlelwa Kwemlawuli ngekucindzetela **ilogo yebandla** kasikhombisa, bese ucindzetele **Shintja Iprinta** kute uhlole luchumano lweprinta. Bona [Kuhlela Iprinta](../getting-started/printer-setup) kutetinyatselo tekulungisa.
+Nangabe emalebula angaphrinti, vula Kuhlelwa Kwemlawuli ngekucindzetela **ilogo yebandla** kasikhombisa, bese ucindzetele **Shintja Iprinta** kute uhlole luchumano lweprinta. Bona [Kuhlela Iprinta](../getting-started/printer-setup.md) kutetinyatselo tekulungisa.
 :::
 
 ## Loko Lokwentekako Ngemuva Kwekubhalisa

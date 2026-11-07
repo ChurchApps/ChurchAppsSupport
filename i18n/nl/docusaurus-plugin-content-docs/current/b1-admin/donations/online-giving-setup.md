@@ -1,5 +1,6 @@
 ---
 title: "Online Geven instellen"
+description: "Koppel Stripe, PayPal, Kingdom Funding of Paystack aan B1 Admin, zodat leden online kunnen geven via je B1.church-site en giften synchroniseren."
 ---
 
 # Online Geven instellen

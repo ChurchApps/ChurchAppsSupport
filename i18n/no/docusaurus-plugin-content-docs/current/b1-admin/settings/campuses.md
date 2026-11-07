@@ -1,5 +1,6 @@
 ---
 title: "Campuser"
+description: "Sett opp campuser i B1 Admin for å spore hvilket sted hver person og gruppe tilhører, og filtrer personer, oppmøte og demografi etter lokasjon."
 ---
 
 # Campuser

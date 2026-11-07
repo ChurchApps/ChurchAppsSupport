@@ -1,5 +1,7 @@
 ---
-title: "Bibelen"
+title: "Læsning af Bibelen i B1 Mobile"
+sidebar_label: "Bibelen"
+description: "Åbn Skriften fra menuen i B1 Mobile-appen med den indbyggede bibellæser. Naviger mellem bøger, kapitler og vers, og find din kirkes bibelindstilling."
 ---
 
 # Bibelen
@@ -13,7 +15,7 @@ B1 Mobile indeholder en indbygget Bibelleser, så du kan læse Skriftten direkte
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Din kirke skal have Bibelarkivets funktion aktiveret
 
 </div>
@@ -37,7 +39,7 @@ Den integrerede læser giver kontroller til at bevæge sig gennem Skriftten. Du 
 Læseren fyldes skærmen og giver dig masser af plads til at læse komfortabelt på din enhed.
 
 :::tip
-Gør Bibelskærmen til en del af din daglige rutine -- det er en hurtig måde at læse Skriftten, hvor du end er. Parr den med [Vers af dagen](./verse-of-the-day) for daglig inspiration.
+Gør Bibelskærmen til en del af din daglige rutine -- det er en hurtig måde at læse Skriftten, hvor du end er. Parr den med [Vers af dagen](./verse-of-the-day.md) for daglig inspiration.
 :::
 
 ## Tilgængelighed
@@ -46,6 +48,6 @@ Bibelskærmen er tilgængelig, når din kirke har aktiveret denne funktion. Hvis
 
 ## Relaterede artikler
 
-- [Vers af dagen](./verse-of-the-day) -- Se et dagligt Bibelvers
-- [Prædikener](./sermons) -- Se prædikener, der udfylder din Bibellesning
-- [Lektioner](./lessons) -- Få adgang til struktureret læreplan og studiumateriale
+- [Vers af dagen](./verse-of-the-day.md) -- Se et dagligt Bibelvers
+- [Prædikener](./sermons.md) -- Se prædikener, der udfylder din Bibellesning
+- [Lektioner](./lessons.md) -- Få adgang til struktureret læreplan og studiumateriale

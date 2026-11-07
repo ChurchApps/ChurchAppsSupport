@@ -1,5 +1,6 @@
 ---
 title: "Lastna shramba (BYOS)"
+description: "Povežite svoj Google Drive, Dropbox, OneDrive ali s S3 združljiv bucket v B1 Admin, da nalaganja datotek cerkve obidejo platformsko omejitev 100 MB."
 ---
 
 # Lastna shramba (BYOS)
@@ -8,7 +9,7 @@ Cerkve dobijo približno 100 MB brezplačne gostovane shrambe datotek (površine
 
 ## Vmesnik ponudnika
 
-BYOS ponovno uporablja vmesnik shrambe, zgrajen za [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), ki ga za vsako cerkev razreši `StorageResolver` iz tabele `content.storageProviders`. Za razliko od enojnih ponudnikov `churchapps`/`ministrystuff` imajo ponudniki BYOS poverilnice za posamezno cerkev, zato `StorageResolver.forChurch` ustvari primerek za vsako zahtevo iz vrstice cerkve. Implementacije so poleg razreševalnika v `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, ter `ByosAuth` (izmenjava OAuth žetonov in osvežitev z enojnim letom — Dropbox rotira osvežitvene žetone, zato se osvežitve podvajajo na enak način kot pri `ProviderProxyController`).
+BYOS ponovno uporablja vmesnik shrambe, zgrajen za [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), ki ga za vsako cerkev razreši `StorageResolver` iz tabele `content.storageProviders`. Za razliko od enojnih ponudnikov `churchapps`/`ministrystuff` imajo ponudniki BYOS poverilnice za posamezno cerkev, zato `StorageResolver.forChurch` ustvari primerek za vsako zahtevo iz vrstice cerkve. Implementacije so poleg razreševalnika v `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, ter `ByosAuth` (izmenjava OAuth žetonov in osvežitev z enojnim letom — Dropbox rotira osvežitvene žetone, zato se osvežitve podvajajo na enak način kot pri `ProviderProxyController`).
 
 `storageProviders` hrani poverilnice: `accessToken`/`refreshToken`/`tokenExpiresAt` (šifrirano, trojica OAuth) ali `apiKey`/`apiSecret` + JSON `settings` (`{endpoint, region, bucket, publicBase}`, S3). Žetoni nikoli ne dosežejo odjemalca — `GET /content/storage/providers` skrije skrivnosti in vrne logično vrednost `connected`.
 

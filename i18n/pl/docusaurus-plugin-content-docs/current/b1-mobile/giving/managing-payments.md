@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie metodami płatności"
+description: "Dodawaj, przeglądaj i usuwaj zapisane karty na karcie Zarządzaj w sekcji darów B1 Mobile, by powtarzane dary szły szybciej."
 ---
 
 # Zarządzanie metodami płatności
@@ -13,7 +14,7 @@ Karta **Zarządzaj** w sekcji darowizn pozwala przeglądać i zarządzać zapisa
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj aplikację B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj aplikację B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 
 </div>
 
@@ -31,7 +32,7 @@ Aby dodać nową kartę:
 4. Wpisz dane swojej karty. Informacje są bezpiecznie przesyłane do firmy **Stripe** w celu przetworzenia.
 5. Po zapisaniu nowa karta pojawi się na liście metod płatności.
 
-Zapisana karta będzie wtedy dostępna jako opcja płatności przy następnym [przekazaniu darowizny](./making-donations) z karty **Przekaż**.
+Zapisana karta będzie wtedy dostępna jako opcja płatności przy następnym [przekazaniu darowizny](./making-donations.md) z karty **Przekaż**.
 
 ## Usuwanie metody płatności
 
@@ -44,7 +45,7 @@ Jeśli nie chcesz już przechowywać karty, możesz ją usunąć na karcie **Zar
 Karta nie będzie już pojawiać się jako opcja płatności przy przekazywaniu darowizn.
 
 :::info
-Usunięcie metody płatności nie wpływa na wcześniejsze darowizny. Twoja [historia darowizn](./donation-history) pozostaje bez zmian.
+Usunięcie metody płatności nie wpływa na wcześniejsze darowizny. Twoja [historia darowizn](./donation-history.md) pozostaje bez zmian.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Zachowaj co najmniej jedną zapisaną metodę płatności, aby szybko przekazywa
 
 ## Powiązane artykuły
 
-- [Przekazywanie darowizny](./making-donations) -- Dowiedz się, jak przekazać darowiznę przy użyciu zapisanej metody płatności
-- [Historia darowizn](./donation-history) -- Przeglądaj podsumowanie darowizn i wcześniejsze płatności
+- [Przekazywanie darowizny](./making-donations.md) -- Dowiedz się, jak przekazać darowiznę przy użyciu zapisanej metody płatności
+- [Historia darowizn](./donation-history.md) -- Przeglądaj podsumowanie darowizn i wcześniejsze płatności

@@ -1,12 +1,13 @@
 ---
 title: "Ứng dụng đã kết nối & OAuth"
+description: "Kết nối ứng dụng bên thứ ba với dữ liệu B1 qua sự đồng ý OAuth 2.0, không chia sẻ mật khẩu hay khóa API, và thu hồi quyền trong cài đặt B1 Admin."
 ---
 
 # Ứng dụng đã kết nối & OAuth
 
 <div class="article-intro">
 
-API của B1 hỗ trợ OAuth 2.0, cho phép một ứng dụng bên thứ ba xin quyền truy cập dữ liệu của từng quản trị viên nhà thờ mà không cần nhà thờ phải chia sẻ mật khẩu hay khóa API. **Ứng dụng đã kết nối** (Connected App) là một token OAuth mà quản trị viên nhà thờ đã phê duyệt; thu hồi token này sẽ chấm dứt quyền truy cập của ứng dụng bên thứ ba chỉ bằng một cú nhấp chuột. Hãy dùng cách này cho các trình kết nối SaaS đa khách thuê. Với tích hợp cho một nhà thờ duy nhất, nên ưu tiên [Khóa API](./api-keys).
+API của B1 hỗ trợ OAuth 2.0, cho phép một ứng dụng bên thứ ba xin quyền truy cập dữ liệu của từng quản trị viên nhà thờ mà không cần nhà thờ phải chia sẻ mật khẩu hay khóa API. **Ứng dụng đã kết nối** (Connected App) là một token OAuth mà quản trị viên nhà thờ đã phê duyệt; thu hồi token này sẽ chấm dứt quyền truy cập của ứng dụng bên thứ ba chỉ bằng một cú nhấp chuột. Hãy dùng cách này cho các trình kết nối SaaS đa khách thuê. Với tích hợp cho một nhà thờ duy nhất, nên ưu tiên [Khóa API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ API của B1 hỗ trợ OAuth 2.0, cho phép một ứng dụng bên thứ ba xi
 | **Ứng dụng đã kết nối** | Một cặp `(ứng dụng khách, quản trị viên nhà thờ)` cụ thể, trong đó quản trị viên đã cấp quyền truy cập cho ứng dụng khách. Mỗi ứng dụng đã kết nối được hỗ trợ bởi một refresh token OAuth. |
 | **Token truy cập** | Một JWT có thời hạn ngắn (khoảng 7 ngày) mà ứng dụng khách dùng để gọi API. Có cấu trúc giống JWT của người dùng: `Authorization: Bearer <jwt>`. |
 | **Refresh token** | Một chuỗi opaque có thời hạn dài (khoảng 90 ngày) mà ứng dụng khách dùng để tạo token truy cập mới. |
-| **Phạm vi (scope)** | Giới hạn những gì token truy cập có thể làm. Xem [danh mục phạm vi](./api-keys#scopes). |
+| **Phạm vi (scope)** | Giới hạn những gì token truy cập có thể làm. Xem [danh mục phạm vi](./api-keys.md#scopes). |
 
 ## Các luồng cấp quyền
 
@@ -162,7 +163,7 @@ Danh sách tự động loại trừ các token đã hết hạn.
 
 ## Phạm vi & Sự đồng ý
 
-Các chuỗi phạm vi có cùng danh mục với [khóa API](./api-keys#scopes). Các phương pháp hay nhất dành cho ứng dụng khách:
+Các chuỗi phạm vi có cùng danh mục với [khóa API](./api-keys.md#scopes). Các phương pháp hay nhất dành cho ứng dụng khách:
 
 - **Yêu cầu các phạm vi hẹp nhất có thể đáp ứng nhu cầu.** Nhà thờ sẽ nhận thấy nếu bạn yêu cầu `donations:write` trong khi chỉ cần đọc dữ liệu người dùng.
 - **Dùng refresh token kết hợp với token truy cập có thời hạn ngắn.** Token truy cập có thời hạn dài khó thu hồi nhanh hơn.
@@ -183,7 +184,7 @@ Các URI chuyển hướng đã đăng ký phải khớp chính xác với `redi
 
 ### Đăng ký ứng dụng khách động
 
-`POST /membership/oauth/register` (công khai, RFC 7591) cho phép một ứng dụng khách như connector MCP của claude.ai tự đăng ký. Điểm cuối này được quảng bá trong tài liệu `/.well-known/oauth-authorization-server` của API. Xem [Máy chủ MCP → Khám phá OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (công khai, RFC 7591) cho phép một ứng dụng khách như connector MCP của claude.ai tự đăng ký. Điểm cuối này được quảng bá trong tài liệu `/.well-known/oauth-authorization-server` của API. Xem [Máy chủ MCP → Khám phá OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Trên trang đồng ý của B1Admin, một ứng dụng khách tự đăng ký 
 
 ## Hỗ trợ SDK
 
-Gói `@churchapps/integration-sdk` bao bọc mọi luồng OAuth bằng các hàm trợ giúp có kiểu dữ liệu: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Xem README của gói và [Webhooks](./webhooks#sdk-support) để có ví dụ đầy đủ từ đầu đến cuối.
+Gói `@churchapps/integration-sdk` bao bọc mọi luồng OAuth bằng các hàm trợ giúp có kiểu dữ liệu: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Xem README của gói và [Webhooks](./webhooks.md#sdk-support) để có ví dụ đầy đủ từ đầu đến cuối.

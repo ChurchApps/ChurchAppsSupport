@@ -1,5 +1,7 @@
 ---
-title: "Inscripción de voluntarios"
+title: "Inscripción de voluntarios en la aplicación B1 Mobile"
+sidebar_label: "Inscripción de voluntarios"
+description: "Encuentre puestos de voluntariado abiertos para los próximos servicios, inscríbase o elimine una inscripción en la aplicación B1 Mobile. Incluye fechas límite y cómo funcionan los límites de cupos."
 ---
 
 # Inscripción de voluntarios
@@ -13,7 +15,7 @@ Explora las posiciones de voluntariado disponibles e inscríbete en los próximo
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 - El administrador de tu iglesia debe haber habilitado la inscripción propia en al menos una posición
 
 </div>
@@ -60,5 +62,5 @@ Activa las [notificaciones push](../community/notifications.md) para enterarte d
 
 ## Artículos relacionados
 
-- [Ver planes](./viewing-plans): consulta tus planes asignados y los órdenes de servicio
+- [Ver planes](./viewing-plans.md): consulta tus planes asignados y los órdenes de servicio
 - [Notificaciones](../community/notifications.md): mantente al día con tus asignaciones de servicio

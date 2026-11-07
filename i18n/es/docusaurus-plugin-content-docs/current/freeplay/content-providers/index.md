@@ -1,5 +1,6 @@
 ---
 title: "Proveedores de contenido"
+description: "Explora y descarga materiales de lecciones, videos e imágenes de Lessons.church, Dropbox, OneDrive y otros proveedores en la app FreePlay TV."
 ---
 
 # Proveedores de contenido
@@ -14,7 +15,7 @@ Los proveedores de contenido son servicios externos que suministran materiales d
 
 FreePlay incluye actualmente los siguientes proveedores:
 
-- **[Lessons.church](../../lessons-church/)**: material curricular de ministerio infantil gratuito y de código abierto
+- **[Lessons.church](../../lessons-church/index.md)**: material curricular de ministerio infantil gratuito y de código abierto
 - **Bible Project**: videos y recursos que exploran la Biblia
 - **SignPresenter**: contenido de presentaciones y señalización para iglesias
 - **B1.church**: contenido de la configuración de tu propia iglesia en B1
@@ -24,7 +25,7 @@ FreePlay incluye actualmente los siguientes proveedores:
 - **OneDrive**: explora y reproduce imágenes, videos y audio de tu propio Microsoft OneDrive
 
 :::note
-Google Drive y FreeShow ya no se muestran en la aplicación de TV de FreePlay. Para usar contenido de Google Drive en tus TV, conéctalo en [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers), añade los archivos a una lista de reproducción y programa esa lista.
+Google Drive y FreeShow ya no se muestran en la aplicación de TV de FreePlay. Para usar contenido de Google Drive en tus TV, conéctalo en [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), añade los archivos a una lista de reproducción y programa esa lista.
 :::
 
 :::info
@@ -37,14 +38,14 @@ Cada proveedor tiene su propia biblioteca de contenido organizada en carpetas y 
 
 Los proveedores conectados aparecen en la barra lateral de la izquierda de la pantalla, bajo el encabezado **Explorar**. Puedes cambiar entre proveedores seleccionándolos en la barra lateral, lo que facilita saltar entre fuentes de contenido durante la configuración.
 
-También puedes elegir una carpeta de cualquier proveedor conectado para repetirla en bucle como [anuncios](./announcements) en tu TV.
+También puedes elegir una carpeta de cualquier proveedor conectado para repetirla en bucle como [anuncios](./announcements.md) en tu TV.
 
 :::tip
-Los proveedores que conectas en la TV son solo para esa TV. Si usas el [Modo programado](../scheduled-mode/), conecta los proveedores una sola vez en FreePlay Admin, y todas las pantallas programadas podrán reproducir contenido de ellos.
+Los proveedores que conectas en la TV son solo para esa TV. Si usas el [Modo programado](../scheduled-mode/index.md), conecta los proveedores una sola vez en FreePlay Admin, y todas las pantallas programadas podrán reproducir contenido de ellos.
 :::
 
 ## En esta sección
 
-- **[Conectarse a proveedores](./connecting-providers)**: cómo autenticarse y conectarse
-- **[Explorar y descargar contenido](./browsing-content)**: navegar por carpetas, descargar archivos y reproducir contenido
-- **[Anuncios](./announcements)**: repetir en bucle una carpeta de diapositivas de un proveedor
+- **[Conectarse a proveedores](./connecting-providers.md)**: cómo autenticarse y conectarse
+- **[Explorar y descargar contenido](./browsing-content.md)**: navegar por carpetas, descargar archivos y reproducir contenido
+- **[Anuncios](./announcements.md)**: repetir en bucle una carpeta de diapositivas de un proveedor

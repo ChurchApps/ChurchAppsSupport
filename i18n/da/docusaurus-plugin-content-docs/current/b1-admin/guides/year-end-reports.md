@@ -1,5 +1,6 @@
 ---
 title: "Guide: Generer år-slutrapporter"
+description: "Afslut årets donationsregistreringer i B1 Admin, kontrollér fondenes skatteindstillinger, og generér skattefradragsberettigede årsopgørelser for alle givere."
 ---
 
 # Generer år-slutrapporter

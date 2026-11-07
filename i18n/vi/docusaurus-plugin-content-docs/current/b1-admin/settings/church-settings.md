@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt nhà thờ"
+description: "Thiết lập tên, địa chỉ, tên miền phụ, múi giờ, định dạng khu vực, nhà cung cấp nhắn tin và lưu trữ tệp cho hội thánh trên trang Cài đặt Hội thánh của B1 Admin."
 ---
 
 # Cài đặt nhà thờ

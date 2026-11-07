@@ -1,5 +1,6 @@
 ---
 title: "Programy i cykle"
+description: "Jak w Lessons.church łączą się programy, studia, lekcje i miejsca, by znaleźć właściwy materiał i przechodzić między powiązanymi lekcjami."
 ---
 
 # Programy i cykle

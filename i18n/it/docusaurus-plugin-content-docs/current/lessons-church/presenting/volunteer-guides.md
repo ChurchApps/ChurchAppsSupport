@@ -1,5 +1,6 @@
 ---
 title: "Guide per i volontari"
+description: "Configurare guide specifiche per ruolo in Lessons.church, così ogni volontario vede solo i propri passaggi, e stamparle o condividerle prima della lezione."
 ---
 
 # Guide per i volontari

@@ -1,5 +1,6 @@
 ---
 title: "Kalendere"
+description: "Sett opp kalendere i B1 Admin, styr hvilke arrangementer som vises, og publiser dem på B1.church-nettstedet slik at menigheten ser kommende arrangementer."
 ---
 
 # Kalendere
@@ -18,20 +19,20 @@ I Kalendere-delen i B1 Admin kan du lage kuraterte kalendere for menigheten din 
 
 ## Hva du kan gjøre
 
-- **Legge til en ny kalender** -- Klikk på **Legg til kalender** øverst på siden for å opprette en kalender for en bestemt tjeneste, en type arrangement eller et formål. Se [Opprette kalendere](creating-calendars) for trinnvise instruksjoner.
+- **Legge til en ny kalender** -- Klikk på **Legg til kalender** øverst på siden for å opprette en kalender for en bestemt tjeneste, en type arrangement eller et formål. Se [Opprette kalendere](./creating-calendars.md) for trinnvise instruksjoner.
 - **Redigere en kalender** -- Klikk på **Administrer arrangementer** på en kalender for å åpne den og bestemme hvilke grupper som skal inngå.
 - **Publisere kalendere** -- Kalendere kan vises på B1.church-nettstedet ditt, slik at besøkende kan se kommende arrangementer i menigheten.
-- **Lage kuraterte kalendere** -- Samle arrangementer fra flere grupper i én kalendervisning for en helhetlig oversikt over alt som skjer i menigheten. Se [Kuratert kalender](curated-calendar) for mer informasjon.
-- **Administrere rom og ressurser** -- Hold oversikt over lokaler og utstyr som kan bookes, og håndter godkjenningsforespørsler. Se [Rom og ressurser](rooms-resources) for mer informasjon.
-- **Se tilgjengelighet** -- Se alle booking av rom og ressurser i én kalender, og book lokaler til kommende arrangementer. Se [Tilgjengelighetskalender](availability) for mer informasjon.
+- **Lage kuraterte kalendere** -- Samle arrangementer fra flere grupper i én kalendervisning for en helhetlig oversikt over alt som skjer i menigheten. Se [Kuratert kalender](./curated-calendar.md) for mer informasjon.
+- **Administrere rom og ressurser** -- Hold oversikt over lokaler og utstyr som kan bookes, og håndter godkjenningsforespørsler. Se [Rom og ressurser](./rooms-resources.md) for mer informasjon.
+- **Se tilgjengelighet** -- Se alle booking av rom og ressurser i én kalender, og book lokaler til kommende arrangementer. Se [Tilgjengelighetskalender](./availability.md) for mer informasjon.
 
 :::info
-Kalendere henger tett sammen med [grupper](../groups/creating-groups.md). Når grupper har planlagte arrangementer, kan disse hentes inn i kalendrene dine. På siden [Opprette kalendere](creating-calendars) kan du lese hvordan du kobler grupper til kalendere.
+Kalendere henger tett sammen med [grupper](../groups/creating-groups.md). Når grupper har planlagte arrangementer, kan disse hentes inn i kalendrene dine. På siden [Opprette kalendere](./creating-calendars.md) kan du lese hvordan du kobler grupper til kalendere.
 :::
 
 ## Neste steg
 
-- [Opprette kalendere](creating-calendars) -- Sett opp en ny kalender og koble til grupper
-- [Kuratert kalender](curated-calendar) -- Samle arrangementer fra flere grupper i én visning
-- [Rom og ressurser](rooms-resources) -- Administrer lokaler og utstyr som kan bookes
-- [Tilgjengelighetskalender](availability) -- Se og administrer booking av rom og ressurser
+- [Opprette kalendere](./creating-calendars.md) -- Sett opp en ny kalender og koble til grupper
+- [Kuratert kalender](./curated-calendar.md) -- Samle arrangementer fra flere grupper i én visning
+- [Rom og ressurser](./rooms-resources.md) -- Administrer lokaler og utstyr som kan bookes
+- [Tilgjengelighetskalender](./availability.md) -- Se og administrer booking av rom og ressurser

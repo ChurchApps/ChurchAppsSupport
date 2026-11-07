@@ -1,5 +1,6 @@
 ---
 title: "Menjava cerkva"
+description: "Preklapljajte med cerkvami v aplikaciji B1 Mobile tako, da izberete nedavno cerkev ali jo poiščete po imenu, vse z enim prijavnim podatkom ChurchApps."
 ---
 
 # Menjava cerkva
@@ -13,7 +14,7 @@ title: "Menjava cerkva"
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](./installing) in [se prijavite](./logging-in) v svoj račun
+- [Namestite B1 Mobile](./installing.md) in [se prijavite](./logging-in.md) v svoj račun
 
 </div>
 
@@ -24,7 +25,7 @@ title: "Menjava cerkva"
 3. Prikaže se zaslon **Iskanje cerkve**. Nedavno obiskane cerkve so na vrhu za hiter dostop.
 4. Tapnite nedavno cerkev, da preklopite nanjo, ali vnesite iskalni niz v polje za iskanje, da poiščete drugo cerkev.
 
-Ko zamenjate cerkev, se aplikacija ponovno naloži z oblikovanjem, navigacijskimi povezavami in vsebino te cerkve. Vaša [nadzorna plošča](../dashboard/), [skupine](../groups/) in drugi podatki bodo odražali novo izbrano cerkev.
+Ko zamenjate cerkev, se aplikacija ponovno naloži z oblikovanjem, navigacijskimi povezavami in vsebino te cerkve. Vaša [nadzorna plošča](../dashboard/index.md), [skupine](../groups/index.md) in drugi podatki bodo odražali novo izbrano cerkev.
 
 ## Iskanje cerkve
 

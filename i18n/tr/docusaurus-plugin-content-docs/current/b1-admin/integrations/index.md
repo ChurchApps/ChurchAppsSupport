@@ -1,5 +1,6 @@
 ---
 title: "Entegrasyonlar"
+description: "B1 Admin'i Slack, Discord, Zapier, Make, Google Sheets ve Claude gibi AI asistanlarına bağlayın; kurulum adımları ve gereken API anahtarı kapsamlarıyla."
 ---
 
 # Entegrasyonlar
@@ -14,21 +15,21 @@ B1, ekibinizin zaten kullandığı araçlarla bağlanır. Personel bildirimleri 
 
 | Entegrasyon | Ne yapar | Yön | Kurulum çabası |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Yeni kişiler, bağışlar, kayıtlar gibi okunabilir bildirimleri bir Slack kanalına gönderir | B1 → Slack | 2 dakika |
-| **[Discord](./slack-discord)** | Aynısını bir Discord kanalında yapar | B1 → Discord | 2 dakika |
-| **[Zapier](./zapier)** | B1 olaylarını tetikleyici olarak, B1 eylemlerini Zapier'in 7.000'den fazla uygulamasından herhangi birinde kullanır | Her iki yön | Zap başına 5–10 dk |
-| **[Make](./make)** | Zapier ile aynı mantık, Make'in görsel senaryo oluşturucusunda | Her iki yön | Senaryo başına 5–10 dk |
-| **[Google Sheets](./google-sheets)** | Kişiler / Bağışlar / Gruplar / Katılım verilerini istediğiniz zaman bir elektronik tabloya aktarır | B1 → Tablo | 5 dakika |
-| **[Claude](./claude)** | Anthropic'in Claude'una kilise verileriniz hakkında soru sorun; yetkilerinize göre sınırlandırılır — denemesi ücretsiz, önerilir | Her iki yön | 3 dakikadan az |
-| **[ChatGPT](./chatgpt)** | OpenAI'nin ChatGPT'si ile aynı mantık (ücretli bir ChatGPT planı gerekir) | Her iki yön | 10 dakika |
-| **[Bağlı hizmetler](./services/)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr için hazır tarifler | Değişken | Her biri 5–10 dk |
+| **[Slack](./slack-discord.md)** | Yeni kişiler, bağışlar, kayıtlar gibi okunabilir bildirimleri bir Slack kanalına gönderir | B1 → Slack | 2 dakika |
+| **[Discord](./slack-discord.md)** | Aynısını bir Discord kanalında yapar | B1 → Discord | 2 dakika |
+| **[Zapier](./zapier.md)** | B1 olaylarını tetikleyici olarak, B1 eylemlerini Zapier'in 7.000'den fazla uygulamasından herhangi birinde kullanır | Her iki yön | Zap başına 5–10 dk |
+| **[Make](./make.md)** | Zapier ile aynı mantık, Make'in görsel senaryo oluşturucusunda | Her iki yön | Senaryo başına 5–10 dk |
+| **[Google Sheets](./google-sheets.md)** | Kişiler / Bağışlar / Gruplar / Katılım verilerini istediğiniz zaman bir elektronik tabloya aktarır | B1 → Tablo | 5 dakika |
+| **[Claude](./claude.md)** | Anthropic'in Claude'una kilise verileriniz hakkında soru sorun; yetkilerinize göre sınırlandırılır — denemesi ücretsiz, önerilir | Her iki yön | 3 dakikadan az |
+| **[ChatGPT](./chatgpt.md)** | OpenAI'nin ChatGPT'si ile aynı mantık (ücretli bir ChatGPT planı gerekir) | Her iki yön | 10 dakika |
+| **[Bağlı hizmetler](./services/index.md)** | Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr için hazır tarifler | Değişken | Her biri 5–10 dk |
 
 ## Nasıl Seçilir
 
 - **Sohbette yalnızca bir bildirim mi istiyorsunuz?** **Slack** veya **Discord** kullanın — üçüncü taraf hesabı yok, bakımını yapmanız gereken bir Zap yok. Tamamen B1Admin içinden yapılandırılır.
 - **Uygulamalar arasında bir şeyi otomatikleştirmek mi istiyorsunuz** (ör. "biri bağış yaptığında, onu Mailchimp listeme ve Slack #bağışlar kanalına ekle")? **Zapier** veya **Make** kullanın. Zapier daha kolay kullanımlıdır; Make ölçek büyüdükçe daha ucuzdur ve daha esnek mantık sunar.
 - **Tek seferlik bir veri çekme veya planlanmış bir rapor mu gerekiyor?** **Google Sheets** kullanın — eklentinin kenar çubuğuna bir API anahtarı yapıştırın ve Dışa Aktar'a tıklayın.
-- **Düz bir dille soru sormak mı istiyorsunuz** ("geçen Pazar kaç ilk kez gelen ziyaretçi vardı?", "bu ayki bağışları özetle")? **[Claude](./claude)** ile başlayın — denemesi ücretsizdir ve 3 dakikadan kısa sürede kurulur. **[ChatGPT](./chatgpt)** de ücretli bir planla çalışır. Claude, B1 hesabınızla oturum açarak bağlanır; ChatGPT ise bir B1 API anahtarı kullanır.
+- **Düz bir dille soru sormak mı istiyorsunuz** ("geçen Pazar kaç ilk kez gelen ziyaretçi vardı?", "bu ayki bağışları özetle")? **[Claude](./claude.md)** ile başlayın — denemesi ücretsizdir ve 3 dakikadan kısa sürede kurulur. **[ChatGPT](./chatgpt.md)** de ücretli bir planla çalışır. Claude, B1 hesabınızla oturum açarak bağlanır; ChatGPT ise bir B1 API anahtarı kullanır.
 - **Kendi özel entegrasyonunuzu mu geliştiriyorsunuz?** Yukarıdakilerin hiçbiri değil — [API anahtarı](/docs/developer/api/api-keys) ile doğrudan [REST API](/docs/developer/api) üzerinden çalışın veya kontrol ettiğiniz bir sunucuyu [webhook'lara](/docs/developer/api/webhooks) abone edin.
 
 ## Ortak Özellikler
@@ -59,10 +60,10 @@ Yukarıdakilerin hiçbiri uymuyorsa, her B1 yüzeyi açıktır:
 
 ## Sonraki Adımlar
 
-- [Slack & Discord](./slack-discord) — sohbet bildirimleri gönderin
-- [Zapier](./zapier) — 7.000'den fazla uygulamaya bağlanın
-- [Make](./make) — görsel iş akışı otomasyonu
-- [Google Sheets](./google-sheets) — elektronik tablolara aktarın
-- [Claude](./claude) — Anthropic'in Claude'una kilise verileriniz hakkında sorun
-- [ChatGPT](./chatgpt) — OpenAI'nin ChatGPT'sine kilise verileriniz hakkında sorun
-- [Bağlı hizmetler](./services/) — hizmet başına hazır tarifler (Mailchimp, Donorbox, Clearstream, …)
+- [Slack & Discord](./slack-discord.md) — sohbet bildirimleri gönderin
+- [Zapier](./zapier.md) — 7.000'den fazla uygulamaya bağlanın
+- [Make](./make.md) — görsel iş akışı otomasyonu
+- [Google Sheets](./google-sheets.md) — elektronik tablolara aktarın
+- [Claude](./claude.md) — Anthropic'in Claude'una kilise verileriniz hakkında sorun
+- [ChatGPT](./chatgpt.md) — OpenAI'nin ChatGPT'sine kilise verileriniz hakkında sorun
+- [Bağlı hizmetler](./services/index.md) — hizmet başına hazır tarifler (Mailchimp, Donorbox, Clearstream, …)

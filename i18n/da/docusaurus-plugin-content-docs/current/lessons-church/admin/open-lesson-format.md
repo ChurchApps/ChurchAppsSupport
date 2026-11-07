@@ -1,5 +1,6 @@
 ---
 title: "Open Lesson Format"
+description: "Formatspecifikation for tredjepartsudbydere af curriculum på Lessons.church: udbydertræet og venue-feedets JSON-felter, handlinger og mediefiler."
 ---
 
 # Open Lesson Format

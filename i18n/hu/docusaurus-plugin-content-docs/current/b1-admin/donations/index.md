@@ -1,5 +1,6 @@
 ---
 title: "Adományok"
+description: "Adományok rögzítése, rendezése és jelentése a B1 Admin-ban: tételek, alapok, évvégi kimutatások, valamint Stripe vagy PayPal online adományok."
 ---
 
 # Adományok

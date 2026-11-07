@@ -1,5 +1,6 @@
 ---
 title: "Beitrittsanfragen für Gruppen"
+description: "Prüfen, genehmigen oder lehnen Sie in B1 Admin Beitrittsanfragen für Gruppen ab, finden Sie als Leitung oder Administrator offene Anfragen und geben Sie beim Ablehnen einen Grund an."
 ---
 
 # Beitrittsanfragen für Gruppen

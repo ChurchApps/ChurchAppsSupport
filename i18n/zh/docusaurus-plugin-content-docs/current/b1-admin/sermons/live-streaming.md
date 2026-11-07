@@ -1,5 +1,7 @@
 ---
-title: "在线直播"
+title: "B1 Admin 中的直播时间与设置"
+sidebar_label: "在线直播"
+description: "在 B1 Admin 中安排每周或一次性直播服务，设置聊天和提前播放时间，连接 YouTube 频道，并排查嵌入问题。"
 ---
 
 # 在线直播
@@ -15,7 +17,7 @@ title: "在线直播"
 
 - 你需要 **contentApi.streamingServices.edit** 权限。如果你没有访问权限，请参阅[角色与权限](../settings/roles-permissions.md)。
 - 如果你计划使用自动直播，请准备好你的 YouTube 频道 ID
-- 至少添加一个[讲道](managing-sermons)或永久直播网址，作为直播来源
+- 至少添加一个[讲道](./managing-sermons.md)或永久直播网址，作为直播来源
 
 </div>
 
@@ -76,13 +78,13 @@ title: "在线直播"
 
 ## 自定义颜色和标志
 
-你的直播页面使用你网站的[外观](../website/appearance)设置：
+你的直播页面使用你网站的[外观](../website/appearance.md)设置：
 
 - 页眉使用**浅色强调色**搭配深色文字。
 - 侧边栏使用**深色强调色**搭配浅色文字。
 - 你的**浅色背景标志**会显示在直播页面上。请使用背景透明、宽高比为 4:1 的图片。
 
-若要更改这些设置，请进入 **Website**，然后点击 **Appearance**，更新你的[配色方案](../website/appearance#color-palette)和[标志](../website/appearance#logo-and-branding)设置。
+若要更改这些设置，请进入 **Website**，然后点击 **Appearance**，更新你的[配色方案](../website/appearance.md#color-palette)和[标志](../website/appearance.md#logo-and-branding)设置。
 
 ## 添加直播主持人
 
@@ -129,5 +131,5 @@ title: "在线直播"
 
 ## 下一步
 
-- [管理讲道](managing-sermons) —— 向你的讲道库中添加讲道
-- [播放列表](playlists) —— 将讲道整理成系列
+- [管理讲道](./managing-sermons.md) —— 向你的讲道库中添加讲道
+- [播放列表](./playlists.md) —— 将讲道整理成系列

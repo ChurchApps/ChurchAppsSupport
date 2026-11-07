@@ -1,5 +1,6 @@
 ---
 title: "Goedkeuringen in de agenda"
+description: "Bekijk openstaande reserveringsaanvragen voor ruimtes en middelen in B1 Admin, controleer op conflicten en keur goed of wijs af, optioneel met publicatie."
 ---
 
 # Goedkeuringen in de agenda
@@ -13,7 +14,7 @@ Op de pagina Goedkeuringen beoordelen en behandelen beheerders de openstaande aa
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Stel ruimtes of middelen in met een **Goedkeuringsgroep** via [Ruimtes & middelen](rooms-resources)
+- Stel ruimtes of middelen in met een **Goedkeuringsgroep** via [Ruimtes & middelen](./rooms-resources.md)
 - Je hebt de machtiging **Calendars Admin** of de machtiging **content.edit** nodig
 
 </div>
@@ -41,7 +42,7 @@ Klik op **Goedkeuren** of **Afwijzen** bij een boekingsaanvraag (bij afwijzen wo
 Wanneer je op **Goedkeuren** klikt, opent het dialoogvenster **Boeking goedkeuren**, zodat je de gebeurtenis in dezelfde stap ook kunt publiceren:
 
 1. Vink **Publiceren in openbare agenda** aan om de gebeurtenis openbaar te maken in de agenda van de groep. Laat dit uitgevinkt om de boeking goed te keuren zonder de zichtbaarheid van de gebeurtenis te wijzigen.
-2. Zodra **Publiceren in openbare agenda** is aangevinkt, kun je optioneel een samengestelde agenda kiezen bij **Ook toevoegen aan agenda** om de gebeurtenis ook aan een van je [samengestelde agenda's](curated-calendar) toe te voegen. Laat de optie op **Geen** staan om dit over te slaan. (Deze optie verschijnt alleen als je de machtiging **content.edit** hebt.)
+2. Zodra **Publiceren in openbare agenda** is aangevinkt, kun je optioneel een samengestelde agenda kiezen bij **Ook toevoegen aan agenda** om de gebeurtenis ook aan een van je [samengestelde agenda's](./curated-calendar.md) toe te voegen. Laat de optie op **Geen** staan om dit over te slaan. (Deze optie verschijnt alleen als je de machtiging **content.edit** hebt.)
 3. Klik op **Goedkeuren**.
 
 ## Gebeurtenissen in afwachting
@@ -49,10 +50,10 @@ Wanneer je op **Goedkeuren** klikt, opent het dialoogvenster **Boeking goedkeure
 Als je agenda-workflow vereist dat gebeurtenissen worden goedgekeurd voordat ze zichtbaar zijn voor het publiek, verschijnen gebeurtenissen die wachten op goedkeuring in de sectie **Aanvragen voor gebeurtenissen**. Klik op **Goedkeuren** om een gebeurtenis in de agenda te publiceren, of op **Afwijzen** om de indiener te laten weten dat er wijzigingen nodig zijn.
 
 :::tip
-Stel een Goedkeuringsgroep in voor een ruimte via [Ruimtes & middelen](rooms-resources) om goedkeuring voor die ruimte verplicht te maken. Groepen met toegang kunnen de ruimte dan aanvragen bij het aanmaken van gebeurtenissen, en die aanvragen komen op deze pagina terecht.
+Stel een Goedkeuringsgroep in voor een ruimte via [Ruimtes & middelen](./rooms-resources.md) om goedkeuring voor die ruimte verplicht te maken. Groepen met toegang kunnen de ruimte dan aanvragen bij het aanmaken van gebeurtenissen, en die aanvragen komen op deze pagina terecht.
 :::
 
 ## Gerelateerde artikelen
 
-- [Ruimtes, middelen & planning](rooms-resources) — boekbare ruimtes en middelen instellen
-- [Agenda's aanmaken](creating-calendars) — agenda's en gebeurtenissen beheren
+- [Ruimtes, middelen & planning](./rooms-resources.md) — boekbare ruimtes en middelen instellen
+- [Agenda's aanmaken](./creating-calendars.md) — agenda's en gebeurtenissen beheren

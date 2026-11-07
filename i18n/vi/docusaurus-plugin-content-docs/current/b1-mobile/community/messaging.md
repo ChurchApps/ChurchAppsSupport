@@ -1,5 +1,6 @@
 ---
 title: "Nhắn tin"
+description: "Bắt đầu, đọc, sửa và xóa các cuộc trò chuyện riêng với thành viên nhà thờ trong B1 Mobile, và tìm người qua Danh bạ thành viên."
 ---
 
 # Nhắn tin
@@ -13,7 +14,7 @@ B1 Mobile có tính năng nhắn tin riêng tư để bạn trò chuyện một-
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile có tính năng nhắn tin riêng tư để bạn trò chuyện một-
 ## Bắt Đầu Cuộc Trò Chuyện Mới
 
 1. Từ màn hình nhắn tin, nhấn vào tùy chọn bắt đầu cuộc trò chuyện mới.
-2. Sử dụng ô tìm kiếm để tìm thành viên bạn muốn nhắn tin. Bạn cũng có thể tìm thành viên thông qua [Danh bạ thành viên](./member-directory).
+2. Sử dụng ô tìm kiếm để tìm thành viên bạn muốn nhắn tin. Bạn cũng có thể tìm thành viên thông qua [Danh bạ thành viên](./member-directory.md).
 3. Chọn thành viên từ kết quả tìm kiếm.
 4. Nhập tin nhắn và nhấn **Gửi**.
 
@@ -52,11 +53,11 @@ Hãy dùng tính năng nhắn tin để phối hợp với các tình nguyện v
 :::
 
 :::info
-Bật [thông báo đẩy](./notifications) để nhận cảnh báo khi có ai đó gửi tin nhắn mới cho bạn, ngay cả khi ứng dụng không mở.
+Bật [thông báo đẩy](./notifications.md) để nhận cảnh báo khi có ai đó gửi tin nhắn mới cho bạn, ngay cả khi ứng dụng không mở.
 :::
 
 ## Bài Viết Liên Quan
 
-- [Danh bạ thành viên](./member-directory) -- Tìm thành viên để nhắn tin
-- [Thông báo](./notifications) -- Nhận thông báo về tin nhắn mới
-- [Nhóm](../groups/) -- Tham gia các cuộc trò chuyện nhóm
+- [Danh bạ thành viên](./member-directory.md) -- Tìm thành viên để nhắn tin
+- [Thông báo](./notifications.md) -- Nhận thông báo về tin nhắn mới
+- [Nhóm](../groups/index.md) -- Tham gia các cuộc trò chuyện nhóm

@@ -1,5 +1,6 @@
 ---
 title: "Prispôsobenie lekcií"
+description: "Odstránenie, skrytie alebo zmena poradia sekcií a rolí v lekcii Lessons.church a výber, či sa zmeny použijú pre jednu triedu alebo pre všetky."
 ---
 
 # Prispôsobenie lekcií

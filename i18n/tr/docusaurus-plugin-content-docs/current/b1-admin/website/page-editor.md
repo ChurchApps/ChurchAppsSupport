@@ -1,5 +1,6 @@
 ---
 title: "Sayfa Düzenleyicisini Kullanma"
+description: "B1 Admin'de sayfa düzenleyicisini kurun: bölüm ve öğe ekleyin, biçimlendirin, mobilde önizleyin ve taslakları yayımlayın. Geri alma ve sürüm geçmişini de kapsar."
 ---
 
 # Sayfa Düzenleyicisini Kullanma
@@ -17,8 +18,8 @@ B1 sayfa düzenleyicisi, kod yazmadan kilise web sitenizin sayfalarını tasarla
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Web sitenizi yapılandırmak için [İlk Kurulum](initial-setup) adımlarını tamamlayın
-- [Sayfaları Yönetme](managing-pages) bölümünde en az bir sayfa oluşturun
+- Web sitenizi yapılandırmak için [İlk Kurulum](./initial-setup.md) adımlarını tamamlayın
+- [Sayfaları Yönetme](./managing-pages.md) bölümünde en az bir sayfa oluşturun
 - Düzenleyiciye erişmek için **content.edit** iznine sahip olmanız gerekir
 
 </div>
@@ -31,7 +32,7 @@ B1 sayfa düzenleyicisi, kod yazmadan kilise web sitenizin sayfalarını tasarla
 Düzenleyici tam ekran modda açılır. Sol panel sayfanızın yapısını ve kullanılabilir içerik öğelerini gösterir; orta alan ise sayfanızın canlı önizlemesini gösterir.
 
 :::info
-Düzenleyici, B1 Admin tema ayarınızdan bağımsız olarak her zaman açık modda görüntülenir ve [Görünüm](appearance) bölümünde seçtiğiniz başlık ve metin yazı tiplerini kullanır. Bu sayede önizleme, sayfanızın web sitesi ziyaretçilerine nasıl görüneceğini doğru şekilde yansıtır.
+Düzenleyici, B1 Admin tema ayarınızdan bağımsız olarak her zaman açık modda görüntülenir ve [Görünüm](./appearance.md) bölümünde seçtiğiniz başlık ve metin yazı tiplerini kullanır. Bu sayede önizleme, sayfanızın web sitesi ziyaretçilerine nasıl görüneceğini doğru şekilde yansıtır.
 :::
 
 ## Sayfa Yapısı: Bölümler ve Öğeler
@@ -61,7 +62,7 @@ Bir bölümü oluşturdunuz ama farklı bir yapı mı istiyorsunuz? Mevcut içer
    - **Resim** -- Bir fotoğraf yükleyin veya bağlantısını verin
    - **Düğme** -- Tıklanabilir bir eylem bağlantısı
    - **Kart** -- Başlık ve açıklamalı bir resim
-   - **Form** -- Sayfaya doğrudan bir [form](../forms/creating-forms) yerleştirin. Formun bir [başlık fotoğrafı](../forms/creating-forms.md#adding-a-header-photo) varsa, soruların üstünde görünür
+   - **Form** -- Sayfaya doğrudan bir [form](../forms/creating-forms.md) yerleştirin. Formun bir [başlık fotoğrafı](../forms/creating-forms.md#adding-a-header-photo) varsa, soruların üstünde görünür
    - **Takvim** -- Bir etkinlik takvimi gösterin
    - **SSS** -- Akordeon tarzında soru ve cevap blokları
    - **Video** -- URL ile bir video yerleştirin
@@ -79,7 +80,7 @@ Bir bölümü oluşturdunuz ama farklı bir yapı mı istiyorsunuz? Mevcut içer
    - **Harita** -- Kilisenizin adresine ortalanmış gömülü bir harita
    - **Tablo** -- Tablo şeklindeki içerik için basit satır ve sütun ızgarası
    - **Metin ve Resim** -- Yan yana metin ve resim
-   - **Logo** -- [Görünüm](appearance) bölümünden alınan kilise logonuz
+   - **Logo** -- [Görünüm](./appearance.md) bölümünden alınan kilise logonuz
    - **Canlı Yayın** -- Canlı yayın oynatıcınız, doğrudan sayfaya gömülü
    - **Podcast** -- Sağladığınız harici bir podcast RSS akış URL'sinden alınan bölüm listesi; kaç bölüm gösterileceği ve tarih ile açıklamaların görüntülenip görüntülenmeyeceği ayarlarıyla birlikte. Canlı sitedeki her bölümün bir ses oynatıcısı ve bölüm sesini bölüm başlığı altında kaydeden bir **İndir** bağlantısı vardır. Bu öğe, sitenizde herhangi bir podcast akışını öne çıkarmak içindir; kendi vaazlarınızı podcast olarak yayımlamak için bunun yerine [Vaazları Yönetme](../sermons/managing-sermons.md#your-podcast-feed) bölümüne bakın
    - **Bağış** -- Bir bağış düğmesi veya gömülü bağış formu
@@ -100,7 +101,7 @@ JavaScript kutusuna yalnızca bir web adresi (örneğin bir resim bağlantısı)
 
 **Takvim** öğesi takvimlerinizden birinin etkinliklerini gösterir:
 
-1. **Seç** altında **Grup Takvimi** (tek bir grubun etkinlikleri -- listede üyesi olduğunuz gruplar gösterilir) veya **Özel Takvim** (**Takvimler** altında oluşturduğunuz takvim; bkz. [Özel Takvim](../calendars/curated-calendar)) seçeneğini belirleyin.
+1. **Seç** altında **Grup Takvimi** (tek bir grubun etkinlikleri -- listede üyesi olduğunuz gruplar gösterilir) veya **Özel Takvim** (**Takvimler** altında oluşturduğunuz takvim; bkz. [Özel Takvim](../calendars/curated-calendar.md)) seçeneğini belirleyin.
 2. **Takvim Seç** altında grubu veya takvimi seçin.
 3. **Görüntüleme** altında nasıl gösterileceğini seçin:
    - **Aylık takvim** -- Ziyaretçilerin ileri geri gezebileceği bir ay ızgarası.
@@ -133,7 +134,7 @@ Stil panelini açmak için herhangi bir öğeye tıklayın. Yaygın seçenekler 
 Gelişmiş biçimlendirme için her bölümün ve öğenin, kendi CSS kurallarınızı yazabileceğiniz bir **Özel CSS** alanı vardır. Bu kurallar yalnızca o öğeyle sınırlıdır; bu nedenle sayfanın geri kalanını istemeden etkilemezler.
 
 :::tip
-Tüm sitenizde geçerli olacak stiller uygulamak istiyorsanız -- örneğin özel bir yazı tipi veya genel bir renk -- bireysel sayfalardaki özel CSS yerine [Görünüm](appearance) ayarlarını kullanın.
+Tüm sitenizde geçerli olacak stiller uygulamak istiyorsanız -- örneğin özel bir yazı tipi veya genel bir renk -- bireysel sayfalardaki özel CSS yerine [Görünüm](./appearance.md) ayarlarını kullanın.
 :::
 
 ## Sayfanızı Önizleme
@@ -188,7 +189,7 @@ Bir sayfayı hazırlamak istediğinizde -- örneğin yaklaşan bir etkinlik içi
 
 ## İlgili Makaleler
 
-- [Sayfaları Yönetme](managing-pages) -- Sayfa oluşturun, URL'leri ayarlayın ve site gezinmesini yönetin
-- [Görünüm](appearance) -- Site genelindeki renkleri, yazı tiplerini ve markayı ayarlayın
-- [Dosyalar](files) -- Düzenleyicide kullanmak üzere resim ve belgeler yükleyin
-- [Form Oluşturma](../forms/creating-forms) -- Sayfalara gömebileceğiniz formlar oluşturun
+- [Sayfaları Yönetme](./managing-pages.md) -- Sayfa oluşturun, URL'leri ayarlayın ve site gezinmesini yönetin
+- [Görünüm](./appearance.md) -- Site genelindeki renkleri, yazı tiplerini ve markayı ayarlayın
+- [Dosyalar](./files.md) -- Düzenleyicide kullanmak üzere resim ve belgeler yükleyin
+- [Form Oluşturma](../forms/creating-forms.md) -- Sayfalara gömebileceğiniz formlar oluşturun

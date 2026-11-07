@@ -1,5 +1,6 @@
 ---
 title: "Entegrasyon ve Genişletme Yüzeyi"
+description: "ChurchApps B1'e bağlanmanın tüm yolları: REST API, API anahtarları, OAuth, webhook'lar, MCP ve içerik sağlayıcıları; her biri için başvuru bağlantılarıyla."
 ---
 
 # Entegrasyon ve Genişletme Yüzeyi
@@ -14,12 +15,12 @@ title: "Entegrasyon ve Genişletme Yüzeyi"
 
 Sisteme giriş ve çıkış için altı yol vardır ve hepsi aynı kimlik doğrulama katmanını paylaşır:
 
-- **[REST API](../api/api-keys)** — Ürünün tüm yüzeyi; herhangi bir dilden taşıyıcı (bearer) belirteciyle çağrılabilir.
-- **[API anahtarları](../api/api-keys)** — En basit kimlik bilgisi: tek bir kişiye ve tek bir kiliseye bağlı bir `cak_…` belirteci.
-- **[OAuth 2.0 ve Bağlı Uygulamalar](../api/connected-apps)** — Çok kiracılı uygulamalar için kilise bazında onay; bir kullanıcının aldığı JWT ile aynı JWT'yi üretir.
-- **[Webhook'lar](../api/webhooks)** — İmzalı, kalıcı olarak teslim edilen giden olaylar.
-- **[MCP sunucusu](../api/mcp)** — `/mcp` adresinde REST API'nin yapay zekaya yönelik bir sarmalayıcısı.
-- **[İçerik sağlayıcıları](../freeplay-content-provider)** — Harici medya kütüphanelerinin FreePlay ve B1 uygulamalarına gelen giriş yolu.
+- **[REST API](../api/api-keys.md)** — Ürünün tüm yüzeyi; herhangi bir dilden taşıyıcı (bearer) belirteciyle çağrılabilir.
+- **[API anahtarları](../api/api-keys.md)** — En basit kimlik bilgisi: tek bir kişiye ve tek bir kiliseye bağlı bir `cak_…` belirteci.
+- **[OAuth 2.0 ve Bağlı Uygulamalar](../api/connected-apps.md)** — Çok kiracılı uygulamalar için kilise bazında onay; bir kullanıcının aldığı JWT ile aynı JWT'yi üretir.
+- **[Webhook'lar](../api/webhooks.md)** — İmzalı, kalıcı olarak teslim edilen giden olaylar.
+- **[MCP sunucusu](../api/mcp.md)** — `/mcp` adresinde REST API'nin yapay zekaya yönelik bir sarmalayıcısı.
+- **[İçerik sağlayıcıları](../freeplay-content-provider.md)** — Harici medya kütüphanelerinin FreePlay ve B1 uygulamalarına gelen giriş yolu.
 
 İçerik sağlayıcıları dışındaki her şey, modülleri kararlı temel yollar altında bağlanan tek bir monolitik API ([Api](https://github.com/ChurchApps/Api) deposu) tarafından sunulur: `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` ve `/mcp`.
 
@@ -80,7 +81,7 @@ Denetleyiciler, belirtecin `permissions` dizisine karşı `au.checkAccess(conten
 - Bir kapsam yalnızca izinleri *kaldırabilir*; dolayısıyla kapsamlı bir kimlik bilgisi sunucu / alan yöneticiliği düzeyine yükselemez (bu izinler bilerek hiçbir kapsama eşlenmemiştir).
 - API anahtarları `cak_` önekini taşır; `CustomAuthProvider.getUser()` bu öneki kontrol eder, gizli anahtarı karma (hash) yapar ve her çağrıda anahtarın sahibi kişinin canlı RBAC izinlerini yeniden çözümler.
 
-Tam kapsam listesi için [API Anahtarları → Kapsamlar](../api/api-keys#scopes) bölümüne bakın.
+Tam kapsam listesi için [API Anahtarları → Kapsamlar](../api/api-keys.md#scopes) bölümüne bakın.
 
 ## Yüzey Başvurusu
 
@@ -90,7 +91,7 @@ Tam kapsam listesi için [API Anahtarları → Kapsamlar](../api/api-keys#scopes
 
 ### API anahtarları
 
-**B1Admin → Settings → Developer → API Keys** bölümünde oluşturulan bir `cak_<prefix>.<secret>` kişisel erişim belirtecidir. Yalnızca SHA-256 karması saklanır; ham anahtar bir kez gösterilir. `/membership/apiKeys` adresinde yönetilir (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Tek bir kilisenin kendi betikleri ve Zapier, Make ve Google Sheets gibi bağlayıcılar için en uygunudur. → **[API Anahtarları](../api/api-keys)**
+**B1Admin → Settings → Developer → API Keys** bölümünde oluşturulan bir `cak_<prefix>.<secret>` kişisel erişim belirtecidir. Yalnızca SHA-256 karması saklanır; ham anahtar bir kez gösterilir. `/membership/apiKeys` adresinde yönetilir (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Tek bir kilisenin kendi betikleri ve Zapier, Make ve Google Sheets gibi bağlayıcılar için en uygunudur. → **[API Anahtarları](../api/api-keys.md)**
 
 ### OAuth 2.0 ve Bağlı Uygulamalar
 
@@ -102,19 +103,19 @@ Her kilisenin onay vermesi gereken çok kiracılı uygulamalar içindir. `/membe
 
 Gizli anahtarsız istemciler `POST /oauth/register` ile (RFC 7591 dinamik istemci kaydı) kendilerini de kaydedebilir; bir `client_id` alırlar, gizli anahtarları olmaz ve yönlendirme URI'leri `https` veya loopback olmak zorundadır.
 
-**Bağlı Uygulama**, bir kilise yöneticisinin verilmiş bir belirteci gördüğü görünümdür; `/membership/oauth/connections` adresinde listelenir ve iptal edilebilir. Denetleyici ayrıca, tarayıcısı olmayan bir cihazın *harici* bir sağlayıcıya karşı oturum açmasını sağlayan bir OAuth **relay-session** köprüsünü (`/oauth/relay/*`) da barındırır. → **[Bağlı Uygulamalar ve OAuth](../api/connected-apps)**
+**Bağlı Uygulama**, bir kilise yöneticisinin verilmiş bir belirteci gördüğü görünümdür; `/membership/oauth/connections` adresinde listelenir ve iptal edilebilir. Denetleyici ayrıca, tarayıcısı olmayan bir cihazın *harici* bir sağlayıcıya karşı oturum açmasını sağlayan bir OAuth **relay-session** köprüsünü (`/oauth/relay/*`) da barındırır. → **[Bağlı Uygulamalar ve OAuth](../api/connected-apps.md)**
 
 ### Webhook'lar
 
-Tek giden yüzeydir. Bir kilise, olaylara abone olmak için herkese açık bir HTTPS uç noktası kaydeder; eşleşen bir değişiklik olduğunda `WebhookDispatcher.emit(churchId, event, payload)` yalnızca kimlik içeren yükleri görünen adlarla zenginleştirir (`personName`, `groupName`, `formName` — aramalar yalnızca bir abonelik eşleştiğinde çalışır), bir teslimat kaydeder ve arka plandaki bir işçi, yeniden deneme/geri çekilme ve yeniden teslimle birlikte imzalı bir JSON zarfını POST eder. Motor `Api/src/shared/webhooks/` altında, kilise bazında CRUD işlemleri ise `/membership/webhooks` altında (`WebhookController.ts`) bulunur. Bir `connectorType` alanı, Slack ve Discord için gövdeyi yeniden biçimlendirir; `mailchimp` bağlayıcısı ise tüm HTTP alışverişini üstlenir (Mailchimp API'sine olay başına yöntem/URL/kimlik doğrulama ile; kimlik bilgileri `webhooks.connectorConfig` içinde şifreli tutulur). → **[Webhook'lar](../api/webhooks)**
+Tek giden yüzeydir. Bir kilise, olaylara abone olmak için herkese açık bir HTTPS uç noktası kaydeder; eşleşen bir değişiklik olduğunda `WebhookDispatcher.emit(churchId, event, payload)` yalnızca kimlik içeren yükleri görünen adlarla zenginleştirir (`personName`, `groupName`, `formName` — aramalar yalnızca bir abonelik eşleştiğinde çalışır), bir teslimat kaydeder ve arka plandaki bir işçi, yeniden deneme/geri çekilme ve yeniden teslimle birlikte imzalı bir JSON zarfını POST eder. Motor `Api/src/shared/webhooks/` altında, kilise bazında CRUD işlemleri ise `/membership/webhooks` altında (`WebhookController.ts`) bulunur. Bir `connectorType` alanı, Slack ve Discord için gövdeyi yeniden biçimlendirir; `mailchimp` bağlayıcısı ise tüm HTTP alışverişini üstlenir (Mailchimp API'sine olay başına yöntem/URL/kimlik doğrulama ile; kimlik bilgileri `webhooks.connectorConfig` içinde şifreli tutulur). → **[Webhook'lar](../api/webhooks.md)**
 
 ### MCP sunucusu
 
-`/mcp` adresinde (`Api/src/modules/mcp/`) bir yapay zekaya yönelik sarmalayıcıdır. Üç genel araç — `list_endpoints`, `describe_endpoint` ve `api_call` — tüm REST yüzeyini herhangi bir MCP istemcisine dinamik olarak sunar. Kimlik doğrulama, diğer her şeyle aynı taşıyıcı belirtecidir. OAuth ile oturum açan istemciler (claude.ai özel bağlayıcıları) için `/mcp` adresinden gelen 401 yanıtı, `/.well-known/oauth-protected-resource` adresine işaret eden bir `WWW-Authenticate` başlığı taşır; `/.well-known/oauth-authorization-server` ise `/membership/oauth` uç noktalarını, dinamik kaydı, PKCE'yi ve B1Admin `/oauth` onay sayfasını duyurur (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call`, Express yığınına süreç içinde yeniden girer; böylece her izin ve kilise kapsamlandırma kuralı yine uygulanır. → **[MCP Sunucusu](../api/mcp)**
+`/mcp` adresinde (`Api/src/modules/mcp/`) bir yapay zekaya yönelik sarmalayıcıdır. Üç genel araç — `list_endpoints`, `describe_endpoint` ve `api_call` — tüm REST yüzeyini herhangi bir MCP istemcisine dinamik olarak sunar. Kimlik doğrulama, diğer her şeyle aynı taşıyıcı belirtecidir. OAuth ile oturum açan istemciler (claude.ai özel bağlayıcıları) için `/mcp` adresinden gelen 401 yanıtı, `/.well-known/oauth-protected-resource` adresine işaret eden bir `WWW-Authenticate` başlığı taşır; `/.well-known/oauth-authorization-server` ise `/membership/oauth` uç noktalarını, dinamik kaydı, PKCE'yi ve B1Admin `/oauth` onay sayfasını duyurur (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call`, Express yığınına süreç içinde yeniden girer; böylece her izin ve kilise kapsamlandırma kuralı yine uygulanır. → **[MCP Sunucusu](../api/mcp.md)**
 
 ### İçerik sağlayıcıları
 
-İçeri gelen içerik yoludur; API'den ayrı olan `Packages/content-providers` (`@churchapps/content-providers`) paketinde bulunur. Her sağlayıcı `IProvider` arayüzünü (`src/interfaces.ts`) uygular — `browse`, `getPlaylist`, `getInstructions` ve kimlik doğrulama kancaları — ve kendini `src/providers/registry.ts` içindeki bir `Map` kaydına ekler. Burada **B1 OAuth istemcisidir**: bir sağlayıcı `none`, `oauth_pkce`, `device_flow` veya `form_login` türünde bir `AuthType` bildirir ve paylaşılan yardımcılar (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) harici kaynağa karşı istemci tarafı PKCE / device akışını çalıştırır. Bugün on bir sağlayıcı yayımlanmıştır — Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church ve B1.church dahil — ve bunlar FreePlay ile B1 uygulamalarına içerik besler. → **[FreePlay İçerik Sağlayıcısı](../freeplay-content-provider)**
+İçeri gelen içerik yoludur; API'den ayrı olan `Packages/content-providers` (`@churchapps/content-providers`) paketinde bulunur. Her sağlayıcı `IProvider` arayüzünü (`src/interfaces.ts`) uygular — `browse`, `getPlaylist`, `getInstructions` ve kimlik doğrulama kancaları — ve kendini `src/providers/registry.ts` içindeki bir `Map` kaydına ekler. Burada **B1 OAuth istemcisidir**: bir sağlayıcı `none`, `oauth_pkce`, `device_flow` veya `form_login` türünde bir `AuthType` bildirir ve paylaşılan yardımcılar (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) harici kaynağa karşı istemci tarafı PKCE / device akışını çalıştırır. Bugün on bir sağlayıcı yayımlanmıştır — Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church ve B1.church dahil — ve bunlar FreePlay ile B1 uygulamalarına içerik besler. → **[FreePlay İçerik Sağlayıcısı](../freeplay-content-provider.md)**
 
 **Yıl planları** bu yol üzerinden işler. Bir müfredat yayıncısı (`lessons.edit` yetkisiyle) Lessons.church yönetim panelinde sıralı 1., 2. ve 3. hafta dizilerini tutar (`LessonsApi` tabloları `yearPlans` ve `yearPlanWeeks`, isteğe bağlı `startMonth` ve hafta başına `easter` / `christmas` değerinde bir `anchor` ile); LessonsApi üzerindeki `GET /yearPlans/public` canlı planları anonim olarak sunar ve her haftanın program/çalışma/mekân bilgisini ders ağacından doldurur. B1Admin'in **Serving → Plans → Schedule Lesson → Apply Year Plan** akışı bu uç noktayı tüketir ve dahil edilen her hafta için bir DoingApi planı yazar (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). `startMonth` içeren planlar, sabitlenmiş haftaları seçilen yıla göre çözer (Paskalya Gregoryen computus ile, Noel ise 25 Aralık'a eşit veya ondan önceki Pazar olarak) ve aralarındaki haftaları doldurur; `startMonth` içermeyen planlar ise yine de N. haftayı `startDate + (N−1)×7` gün olarak eşler. Harici OLF sağlayıcılarından gelen veya yolu eksik haftalar uygulama anında atlanır; kiliseler ortaya çıkan planları diğerleri gibi düzenler ve FreePlay, plana ne konduysa onu oynatır.
 
@@ -122,12 +123,12 @@ Tek giden yüzeydir. Bir kilise, olaylara abone olmak için herkese açık bir H
 
 | Yüzey | Kimlik doğrulama mekanizması | Yön | Nerede uygulanır | Başvuru |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT veya `cak_…` anahtarı | Giriş | `Api/src/modules/*` | [API Anahtarları](../api/api-keys) |
-| API anahtarları | SHA-256 ile karmalanmış `cak_` belirteci | Kimlik bilgisi | `Api/.../membership/controllers/ApiKeyController.ts` | [API Anahtarları](../api/api-keys) |
-| OAuth 2.0 / Bağlı Uygulamalar | Yetkilendirme kodu (PKCE) · cihaz · yenileme → JWT; dinamik istemci kaydı | Giriş | `Api/.../membership/controllers/OAuthController.ts` | [Bağlı Uygulamalar](../api/connected-apps) |
-| Webhook'lar | Kanca başına gizli anahtar, HMAC-SHA256 imzası | Çıkış | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook'lar](../api/webhooks) |
-| MCP sunucusu | `Bearer` JWT, OAuth JWT (`/.well-known` üzerinden keşfedilen) veya `cak_…` anahtarı | Giriş (yapay zeka) | `Api/src/modules/mcp/` | [MCP Sunucusu](../api/mcp) |
-| İçerik sağlayıcıları | Sağlayıcıya göre: yok / OAuth PKCE / cihaz / form | Giriş içeriği | `Packages/content-providers/` | [İçerik Sağlayıcısı](../freeplay-content-provider) |
+| REST API | `Bearer` JWT veya `cak_…` anahtarı | Giriş | `Api/src/modules/*` | [API Anahtarları](../api/api-keys.md) |
+| API anahtarları | SHA-256 ile karmalanmış `cak_` belirteci | Kimlik bilgisi | `Api/.../membership/controllers/ApiKeyController.ts` | [API Anahtarları](../api/api-keys.md) |
+| OAuth 2.0 / Bağlı Uygulamalar | Yetkilendirme kodu (PKCE) · cihaz · yenileme → JWT; dinamik istemci kaydı | Giriş | `Api/.../membership/controllers/OAuthController.ts` | [Bağlı Uygulamalar](../api/connected-apps.md) |
+| Webhook'lar | Kanca başına gizli anahtar, HMAC-SHA256 imzası | Çıkış | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhook'lar](../api/webhooks.md) |
+| MCP sunucusu | `Bearer` JWT, OAuth JWT (`/.well-known` üzerinden keşfedilen) veya `cak_…` anahtarı | Giriş (yapay zeka) | `Api/src/modules/mcp/` | [MCP Sunucusu](../api/mcp.md) |
+| İçerik sağlayıcıları | Sağlayıcıya göre: yok / OAuth PKCE / cihaz / form | Giriş içeriği | `Packages/content-providers/` | [İçerik Sağlayıcısı](../freeplay-content-provider.md) |
 
 ## Hazır Bağlayıcılar
 
@@ -143,9 +144,9 @@ Kendi kodunuz için **[`@churchapps/integration-sdk`](https://www.npmjs.com/pack
 
 ## İlgili Sayfalar
 
-- [API Anahtarları](../api/api-keys) — En basit kimlik bilgisi ve kapsam listesi
-- [Bağlı Uygulamalar ve OAuth](../api/connected-apps) — Çok kiracılı onay akışları
-- [Webhook'lar](../api/webhooks) — Giden olay sistemi
-- [MCP Sunucusu](../api/mcp) — Yapay zeka entegrasyon sarmalayıcısı
-- [FreePlay İçerik Sağlayıcısı](../freeplay-content-provider) — Giriş içerik kaynağı olmak
+- [API Anahtarları](../api/api-keys.md) — En basit kimlik bilgisi ve kapsam listesi
+- [Bağlı Uygulamalar ve OAuth](../api/connected-apps.md) — Çok kiracılı onay akışları
+- [Webhook'lar](../api/webhooks.md) — Giden olay sistemi
+- [MCP Sunucusu](../api/mcp.md) — Yapay zeka entegrasyon sarmalayıcısı
+- [FreePlay İçerik Sağlayıcısı](../freeplay-content-provider.md) — Giriş içerik kaynağı olmak
 - [Entegrasyonlar (son kullanıcı)](/docs/b1-admin/integrations/) — Hazır bağlayıcı kurulum kılavuzları

@@ -1,5 +1,6 @@
 ---
 title: "Note"
+description: "Consulta in un'unica lista di B1 Admin le note di cura pastorale, i follow-up e la pianificazione da persone, gruppi, eventi e schede, dalla più recente."
 ---
 
 # Note

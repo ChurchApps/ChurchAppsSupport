@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Usang)"
+description: "Aplikasi native B1 Mobile tidak digunakan lagi. Anggota dan admin sebaiknya memakai PWA B1.church; halaman lama disimpan sebagai referensi."
 ---
 
 # B1 Mobile (Usang)
@@ -40,16 +41,16 @@ B1 Mobile mendukung notifikasi push agar Anda tidak melewatkan pembaruan penting
 
 ## Pelajari Lebih Lanjut
 
-- [Memulai](./getting-started/) -- Pasang aplikasi, buat akun, dan pilih gereja Anda.
-- [Dasbor](./dashboard/) -- Memahami layar beranda yang disesuaikan untuk Anda.
-- [Grup](./groups/) -- Tetap terhubung dengan grup gereja Anda.
-- [Persembahan](./giving/) -- Berikan persembahan dari ponsel Anda.
-- [Acara](./events/) -- Telusuri dan daftar acara gereja yang akan datang.
-- [Check-In](./checkin/) -- Lakukan check-in untuk ibadah dan acara.
-- [Pelayanan](./serving/) -- Lihat rencana pelayanan, penugasan, dan peluang sukarela Anda.
-- [Komunitas](./community/) -- Telusuri direktori anggota dan kirim pesan.
-- [Konten](./content/) -- Khotbah, Alkitab, ayat hari ini, dan pelajaran (layar pelajaran sudah usang, lihat [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Kelola profil dan pengaturan akun Anda.
+- [Memulai](./getting-started/index.md) -- Pasang aplikasi, buat akun, dan pilih gereja Anda.
+- [Dasbor](./dashboard/index.md) -- Memahami layar beranda yang disesuaikan untuk Anda.
+- [Grup](./groups/index.md) -- Tetap terhubung dengan grup gereja Anda.
+- [Persembahan](./giving/index.md) -- Berikan persembahan dari ponsel Anda.
+- [Acara](./events/index.md) -- Telusuri dan daftar acara gereja yang akan datang.
+- [Check-In](./checkin/index.md) -- Lakukan check-in untuk ibadah dan acara.
+- [Pelayanan](./serving/index.md) -- Lihat rencana pelayanan, penugasan, dan peluang sukarela Anda.
+- [Komunitas](./community/index.md) -- Telusuri direktori anggota dan kirim pesan.
+- [Konten](./content/index.md) -- Khotbah, Alkitab, ayat hari ini, dan pelajaran (layar pelajaran sudah usang, lihat [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Kelola profil dan pengaturan akun Anda.
 
 :::info
 B1 Mobile telah digantikan oleh [PWA B1.church](../b1-church/getting-started/installing-pwa.md). Penerapan baru sebaiknya menggunakan PWA, karena aplikasi native tidak lagi diperbarui.

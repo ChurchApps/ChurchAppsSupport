@@ -1,5 +1,6 @@
 ---
 title: "通知"
+description: "为 B1 Mobile 应用设置推送提醒，然后查看、打开和清除与消息、小组和服事相关的教会通知。"
 ---
 
 # 通知
@@ -13,7 +14,7 @@ B1 Mobile 使用推送通知来让您了解您的教会正在发生的事情。�
 <div class="prereqs">
 <h4>开始前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 在您的设备设置中允许 B1 Mobile 的通知
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile 使用推送通知来让您了解您的教会正在发生的事情。�
 
 通知可以涵盖一系列活动，包括：
 
-- **消息**——当某人给您发送[私人消息](./messaging)时。
-- **小组活动**——来自您所属[小组](../groups/)的更新、帖子和对话。
+- **消息**——当某人给您发送[私人消息](./messaging.md)时。
+- **小组活动**——来自您所属[小组](../groups/index.md)的更新、帖子和对话。
 - **服侍分配**——当您被分配到一个[计划](../serving/viewing-plans.md)或您的分配状态改变时。
 - **其他更新**——与您相关的一般公告和活动。
 

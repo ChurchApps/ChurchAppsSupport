@@ -1,5 +1,6 @@
 ---
 title: "udseende"
+description: "Angiv farver, skrifttyper, afstande, logo og navigation til din kirkes hjemmeside i B1 Admin, samt widgets, GA4-analyse, omdirigeringer og CSS."
 ---
 
 # udseende
@@ -13,7 +14,7 @@ udseende siden lader dig tilpas det samlede udsende og fornemmelse af dit kirkew
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- fuldført [oprindelig opsætning](initial-setup) til dit websted
+- fuldført [oprindelig opsætning](./initial-setup.md) til dit websted
 - Har dit kirkelogo klar i PNG format med transparent baggrund og en 4:1 aspect ratio
 - ved dit kirkes mærkningsfarver (hex værdier) hvis du har en eksisterende stilguide
 
@@ -75,5 +76,5 @@ Hvis du ønsker hurtig startpunkt, **foreslåede paletter** i farve palet sektio
 
 ## Næste trin
 
-- [administrering af sider](managing-pages) -- byg og organiser dit websted sider
-- [filer](files) -- upload medie aktiver til dit websted
+- [administrering af sider](./managing-pages.md) -- byg og organiser dit websted sider
+- [filer](./files.md) -- upload medie aktiver til dit websted

@@ -1,5 +1,6 @@
 ---
 title: "已连接的服务"
+description: "使用 Zapier 或 Make 方案将 B1 Admin 连接到 Mailchimp、Donorbox、Subsplash、VOMO、Clearstream 等工具，并附有每项的设置指南。"
 ---
 
 # 已连接的服务
@@ -14,14 +15,14 @@ title: "已连接的服务"
 
 | 服务 | 类别 | 网桥 | 您可以连接什么 |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | 电子邮件 | Zapier 或 Make | 将新 B1 人员/捐赠者同步到 Mailchimp 受众 |
-| [Donorbox](./donorbox) | 捐款 | Zapier | 推送 Donorbox 捐款和捐赠者回到 B1 |
-| [Subsplash](./subsplash) | 应用/捐款 | Zapier | 拉取 Subsplash 捐款和人员到 B1 |
-| [VOMO](./vomo) | 志愿服务 | Zapier | 在 B1 小组和 VOMO 项目之间同步志愿者注册 |
-| [Clearstream](./clearstream) | 短信 | Zapier | 从 B1 事件触发 Clearstream 文本；将回复摄取为 B1 记录 |
-| [Text In Church](./text-in-church) | 短信/工作流 | Zapier | 从 B1 触发 Text In Church 工作流；接收连接卡数据 |
-| [Mobile Message](./mobile-message) | 短信（澳大利亚） | Webhooks by Zapier 或 Make | 从任何 B1 事件发送短信 |
-| [Checkr](./checkr) | 背景检查 | Make | 当有人加入服务团队时启动背景检查 |
+| [Mailchimp](./mailchimp.md) | 电子邮件 | Zapier 或 Make | 将新 B1 人员/捐赠者同步到 Mailchimp 受众 |
+| [Donorbox](./donorbox.md) | 捐款 | Zapier | 推送 Donorbox 捐款和捐赠者回到 B1 |
+| [Subsplash](./subsplash.md) | 应用/捐款 | Zapier | 拉取 Subsplash 捐款和人员到 B1 |
+| [VOMO](./vomo.md) | 志愿服务 | Zapier | 在 B1 小组和 VOMO 项目之间同步志愿者注册 |
+| [Clearstream](./clearstream.md) | 短信 | Zapier | 从 B1 事件触发 Clearstream 文本；将回复摄取为 B1 记录 |
+| [Text In Church](./text-in-church.md) | 短信/工作流 | Zapier | 从 B1 触发 Text In Church 工作流；接收连接卡数据 |
+| [Mobile Message](./mobile-message.md) | 短信（澳大利亚） | Webhooks by Zapier 或 Make | 从任何 B1 事件发送短信 |
+| [Checkr](./checkr.md) | 背景检查 | Make | 当有人加入服务团队时启动背景检查 |
 
 ## 所有这些的共同点
 
@@ -45,8 +46,8 @@ title: "已连接的服务"
 
 ## 另请参阅
 
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧相同；此文档覆盖一次
-- [Make（概览）](../make) — 对于 Make 场景相同
-- [Slack 和 Discord](../slack-discord) — 聊天通知，不需要任何网桥
-- [Google Sheets](../google-sheets) — 按需导出
+- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧相同；此文档覆盖一次
+- [Make（概览）](../make.md) — 对于 Make 场景相同
+- [Slack 和 Discord](../slack-discord.md) — 聊天通知，不需要任何网桥
+- [Google Sheets](../google-sheets.md) — 按需导出
 - [Webhooks（开发者参考）](/docs/developer/api/webhooks) — 每个方案依赖的事件目录

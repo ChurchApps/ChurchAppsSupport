@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Xhuma timinikelo te-Subsplash, bantfu labasha netimo temafomu ku-B1 nge-Zapier, kuze tinikelo nemaphrofayili angene ku-B1 Admin ngalokuzenzakalelako."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Vula i-Zap. Imnikelo yeSubsplash lengetako ingena ku **B1Admin → Imnikelo** ng
 
 ## Buka Nalokunye
 
-- [Donorbox](./donorbox) — sakhiwo lesifananako seseluleko, inkundla yemnikelo lehlukile
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Donorbox](./donorbox.md) — sakhiwo lesifananako seseluleko, inkundla yemnikelo lehlukile
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
 - [Umhlahlandlela wekuchumanisa we-Zapier we-Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (emaphepha e-Subsplash)

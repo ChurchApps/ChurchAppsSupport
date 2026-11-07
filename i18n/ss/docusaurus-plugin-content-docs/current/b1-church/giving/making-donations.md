@@ -1,5 +1,7 @@
 ---
-title: "Kwenta Umnikelo"
+title: "Kwenta Tipho Ku-Iphothali Yelilungu le-B1.church"
+sidebar_label: "Kwenta Umnikelo"
+description: "Nikela ngetipho kulicawe lakho nge-B1.church, noma ungabi nekhawunti, bese ubuka umlandvo wetipho takho ngemuva kwaloko."
 ---
 
 # Kwenta Umnikelo

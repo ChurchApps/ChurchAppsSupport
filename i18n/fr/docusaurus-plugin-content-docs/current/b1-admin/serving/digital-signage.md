@@ -1,5 +1,6 @@
 ---
 title: "Affichage numérique"
+description: "Affichez le contenu des leçons sur une TV du hall avec une URL de signalisation numérique toujours à jour dans B1 Admin, ou utilisez les TV FreePlay."
 ---
 
 # Affichage numérique
@@ -14,7 +15,7 @@ Envoyez le contenu de vos leçons vers une télévision du hall d'entrée ou d'u
 <h4>Avant de commencer</h4>
 
 - Configurez un [type de plan](./plans.md) avec [Lessons.church](../../b1-church/content/lessons.md) ou un autre contenu de leçon programmé
-- Disposez d'un compte [SignPresenter](https://www.signpresenter.com) et d'un appareil configuré pour l'afficher, ou d'une télévision exécutant [FreePlay](../../freeplay/)
+- Disposez d'un compte [SignPresenter](https://www.signpresenter.com) et d'un appareil configuré pour l'afficher, ou d'une télévision exécutant [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Pour la configuration pas à pas dans SignPresenter, consultez le [guide Lessons
 
 ## Utiliser plutôt les téléviseurs FreePlay
 
-Si vos écrans utilisent [FreePlay](../../freeplay/), vous n'avez pas besoin de l'URL du flux. La boîte de dialogue **Digital Signage Feed** comporte un lien vers **admin.freeplay.church/calendar**, où vous pouvez programmer ce type de plan sur vos téléviseurs FreePlay :
+Si vos écrans utilisent [FreePlay](../../freeplay/index.md), vous n'avez pas besoin de l'URL du flux. La boîte de dialogue **Digital Signage Feed** comporte un lien vers **admin.freeplay.church/calendar**, où vous pouvez programmer ce type de plan sur vos téléviseurs FreePlay :
 
 1. Cliquez sur le lien **admin.freeplay.church/calendar** dans la boîte de dialogue. FreePlay Admin utilise les mêmes identifiants que B1 Admin.
 2. Choisissez le groupe d'écrans correspondant à vos téléviseurs et cliquez sur **Add schedule**.
 3. Sous **Play**, choisissez votre type de plan dans **Service plans**. Il est marqué **(current plan)**.
 4. Définissez les jours et les heures, puis cliquez sur **Save**.
 
-Les téléviseurs diffusent chaque semaine le plan en cours pour ce type de plan, aux heures que vous avez définies. Cela fonctionne également avec les leçons Go Curriculum, y compris les plans que vous avez personnalisés. FreePlay se connecte avec le compte Go Curriculum lié au ministère sous **Content Providers** (voir [Programmer des leçons](./scheduling-lessons.md)), ou avec la connexion Go Curriculum de l'église si le ministère n'en possède pas. Consultez [Programmer le calendrier](../../freeplay/scheduled-mode/scheduling-the-calendar) pour découvrir toutes les options, et [Associer un écran](../../freeplay/scheduled-mode/pairing-a-screen) pour ajouter un téléviseur.
+Les téléviseurs diffusent chaque semaine le plan en cours pour ce type de plan, aux heures que vous avez définies. Cela fonctionne également avec les leçons Go Curriculum, y compris les plans que vous avez personnalisés. FreePlay se connecte avec le compte Go Curriculum lié au ministère sous **Content Providers** (voir [Programmer des leçons](./scheduling-lessons.md)), ou avec la connexion Go Curriculum de l'église si le ministère n'en possède pas. Consultez [Programmer le calendrier](../../freeplay/scheduled-mode/scheduling-the-calendar.md) pour découvrir toutes les options, et [Associer un écran](../../freeplay/scheduled-mode/pairing-a-screen.md) pour ajouter un téléviseur.
 
 :::note
 L'URL du flux n'inclut pas les médias Go Curriculum, car ce contenu nécessite l'identifiant Go Curriculum de votre église. Pour afficher une leçon Go Curriculum sur un téléviseur du hall d'entrée ou d'une salle de classe, utilisez FreePlay.
@@ -53,4 +54,4 @@ L'URL du flux n'inclut pas les médias Go Curriculum, car ce contenu nécessite 
 
 - Gérez les plans qui alimentent cet affichage sur la page [Plans](./plans.md)
 - Programmez du contenu avec [Lessons.church](./scheduling-lessons.md)
-- Placez les téléviseurs FreePlay sur un calendrier avec le [mode programmé](../../freeplay/scheduled-mode/)
+- Placez les téléviseurs FreePlay sur un calendrier avec le [mode programmé](../../freeplay/scheduled-mode/index.md)

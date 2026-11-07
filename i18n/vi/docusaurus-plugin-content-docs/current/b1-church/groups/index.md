@@ -1,5 +1,7 @@
 ---
-title: "Nhóm"
+title: "Nhóm sinh hoạt trong Cổng thành viên B1.church"
+sidebar_label: "Nhóm"
+description: "Duyệt và tham gia các nhóm trên trang B1.church của nhà thờ, rồi dùng trang nhóm để xem buổi họp, sự kiện, thành viên, tài liệu và trò chuyện với nhóm."
 ---
 
 # Nhóm

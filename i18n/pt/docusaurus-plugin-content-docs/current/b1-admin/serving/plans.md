@@ -1,5 +1,6 @@
 ---
 title: "Planos de culto"
+description: "Configure escalas no B1 Admin: crie planos por data, copie de semanas anteriores, atribua membros às posições e gerencie prazos e lembretes de inscrição."
 ---
 
 # Planos de culto

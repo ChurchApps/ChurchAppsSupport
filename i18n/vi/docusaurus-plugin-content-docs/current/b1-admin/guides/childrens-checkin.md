@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Thiết lập Check-In cho Ban Thiếu nhi"
+description: "Thiết lập check-in cho trẻ em trong B1 Admin: liên kết gia đình, tạo nhóm theo độ tuổi, cấu hình buổi lễ và in thẻ tên cho kiosk B1 Checkin."
 ---
 
 # Thiết lập Check-In cho Ban Thiếu nhi

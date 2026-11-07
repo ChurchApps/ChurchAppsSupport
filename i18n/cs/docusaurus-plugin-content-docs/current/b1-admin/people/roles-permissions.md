@@ -1,5 +1,6 @@
 ---
 title: "Přiřazování rolí"
+description: "Přiřaďte v B1 Admin role, aby zaměstnanci a dobrovolníci měli přístup jen k oblastem lidí, darů, docházky a skupin, které potřebují."
 ---
 
 # Přiřazování rolí

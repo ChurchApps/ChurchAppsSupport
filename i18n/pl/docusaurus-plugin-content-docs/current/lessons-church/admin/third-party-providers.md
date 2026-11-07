@@ -1,5 +1,6 @@
 ---
 title: "Dostawcy zewnętrzni"
+description: "Dodaj zewnętrzny kanał programu nauczania do Lessons.church na stronie Third-Party w panelu, a następnie przeglądaj, aktualizuj lub usuwaj połączenia."
 ---
 
 # Dostawcy zewnętrzni

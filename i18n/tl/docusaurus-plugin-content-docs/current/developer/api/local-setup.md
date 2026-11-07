@@ -1,5 +1,6 @@
 ---
 title: "Lokal na Setup ng API"
+description: "I-set up ang ChurchApps API nang lokal: i-clone ang repo, i-configure ang anim na MySQL database, i-initialize ang schema, at simulan ang dev server."
 ---
 
 # Lokal na Setup ng API
@@ -13,9 +14,9 @@ Gagabayan ka ng gabay na ito sa pag-set up ng ChurchApps API para sa lokal na de
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang **Node.js 24+**, **Git**, at **MySQL 8.0+** -- tingnan ang [Prerequisites](../setup/prerequisites)
+- I-install ang **Node.js 24+**, **Git**, at **MySQL 8.0+** -- tingnan ang [Prerequisites](../setup/prerequisites.md)
 - Gumawa ng MySQL user na may pribilehiyo sa paggawa ng database
-- Repasuhin ang sanggunian ng [Environment Variables](../setup/environment-variables) para sa configuration ng API
+- Repasuhin ang sanggunian ng [Environment Variables](../setup/environment-variables.md) para sa configuration ng API
 
 </div>
 
@@ -82,7 +83,7 @@ Magsisimula ang API na may hot reload sa [http://localhost:8084](http://localhos
 
 ## Deployment
 
-Inalis na ang staging environment. Dine-deploy ang Api sa demo environment sa bawat push sa `main` at sa production sa pamamagitan ng manual na workflow na **Deploy Prod**, na naglalapat din ng mga nakabinbing database migration. Tingnan ang [API Deployment](../deployment/apis) para sa mga detalye.
+Inalis na ang staging environment. Dine-deploy ang Api sa demo environment sa bawat push sa `main` at sa production sa pamamagitan ng manual na workflow na **Deploy Prod**, na naglalapat din ng mga nakabinbing database migration. Tingnan ang [API Deployment](../deployment/apis.md) para sa mga detalye.
 
 ## Lokal na Library Development
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Nagpapahintulot ito na subukan ang mga pagbabago sa library laban sa API nang hindi ini-publish sa npm. Tingnan ang [Shared Libraries](../shared-libraries/#local-development-against-a-consuming-app) para sa mga detalye -- at huwag kailanman i-commit ang portal resolution na isinusulat ng link sa `package.json`.
+Nagpapahintulot ito na subukan ang mga pagbabago sa library laban sa API nang hindi ini-publish sa npm. Tingnan ang [Shared Libraries](../shared-libraries/index.md#local-development-against-a-consuming-app) para sa mga detalye -- at huwag kailanman i-commit ang portal resolution na isinusulat ng link sa `package.json`.
 
 ## Mga Kaugnay na Artikulo
 
-- **[Database](./database)** -- Pag-unawa sa arkitekturang database-per-module
-- **[Module Structure](./module-structure)** -- Paano inaayos ang mga controller, repository, at model
-- **[Shared Libraries](../shared-libraries/)** -- Pagtatrabaho sa `@churchapps/helpers` at `@churchapps/apihelper`
+- **[Database](./database.md)** -- Pag-unawa sa arkitekturang database-per-module
+- **[Module Structure](./module-structure.md)** -- Paano inaayos ang mga controller, repository, at model
+- **[Shared Libraries](../shared-libraries/index.md)** -- Pagtatrabaho sa `@churchapps/helpers` at `@churchapps/apihelper`

@@ -1,5 +1,7 @@
 ---
-title: "Initialt Setup"
+title: "Indledende kirkeopsætning i B1 Admin"
+sidebar_label: "Initialt Setup"
+description: "Gennemgå den første konfiguration af en ny kirke i B1 Admin: kirkeoplysninger, branding, roller og den anbefalede rækkefølge for opsætning af personer, grupper, fremmøde og donationer."
 ---
 
 # Initialt Setup

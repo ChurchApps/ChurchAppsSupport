@@ -1,5 +1,7 @@
 ---
-title: "Profilio redagavimas"
+title: "Profilio redagavimas B1.church narių portale"
+sidebar_label: "Profilio redagavimas"
+description: "Atnaujinkite kontaktinius duomenis, namų ūkio narius, prisijungimo el. paštą ir slaptažodį bei privatumo nustatymus B1.church narių portale."
 ---
 
 # Profilio redagavimas

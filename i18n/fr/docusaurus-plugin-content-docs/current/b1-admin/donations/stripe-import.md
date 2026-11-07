@@ -1,5 +1,6 @@
 ---
 title: "Importation Stripe"
+description: "Importez les dons Stripe dans B1 Admin grâce à un import avec aperçu préalable, qui marque chaque paiement comme nouveau, déjà importé ou ignoré avant que vous ne confirmiez."
 ---
 
 # Importation Stripe

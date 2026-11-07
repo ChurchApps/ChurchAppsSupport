@@ -1,5 +1,6 @@
 ---
 title: "Förutsättningar"
+description: "Installera Node.js, npm, Git och plattformsverktyg innan du arbetar med ChurchApps-projekt som B1 Admin, Lessons.church, FreePlay eller API:et lokalt."
 ---
 
 # Förutsättningar
@@ -13,7 +14,7 @@ Vilka verktyg du behöver beror på vilka projekt du planerar att arbeta med. De
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Läs igenom [Projektöversikten](./project-overview) för att avgöra vilka projekt du vill arbeta med
+- Läs igenom [Projektöversikten](./project-overview.md) för att avgöra vilka projekt du vill arbeta med
 - Ha administratörsbehörighet på din utvecklingsdator för att kunna installera programvara
 
 </div>
@@ -40,7 +41,7 @@ Om du planerar att köra API:et lokalt (i stället för att peka mot demo-API:er
 |------|---------|-------|
 | **MySQL** | 8.0+ | Varje API-modul använder sin egen databas |
 
-Du behöver sex databaser för kärn-API:et: `membership`, `attendance`, `content`, `giving`, `messaging` och `doing`. API:et innehåller skript för att initiera schemat -- se guiden [API lokal installation](../api/local-setup).
+Du behöver sex databaser för kärn-API:et: `membership`, `attendance`, `content`, `giving`, `messaging` och `doing`. API:et innehåller skript för att initiera schemat -- se guiden [API lokal installation](../api/local-setup.md).
 
 ## Utveckling av mobilappar
 
@@ -110,5 +111,5 @@ mysql --version   # Behövs endast för lokal API-utveckling
 
 ## Nästa steg
 
-- **[Projektöversikt](./project-overview)** -- Se alla projekt och vad de gör
-- **[Miljövariabler](./environment-variables)** -- Konfigurera dina `.env`-filer
+- **[Projektöversikt](./project-overview.md)** -- Se alla projekt och vad de gör
+- **[Miljövariabler](./environment-variables.md)** -- Konfigurera dina `.env`-filer

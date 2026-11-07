@@ -1,5 +1,6 @@
 ---
 title: "Oppitunnin mukauttaminen"
+description: "Poista, piilota tai järjestä uudelleen osioita ja rooleja Lessons.church-oppitunnilla ja valitse, koskevatko muutokset yhtä luokkahuonetta vai kaikkia."
 ---
 
 # Oppitunnin mukauttaminen

@@ -1,5 +1,6 @@
 ---
 title: "Programy a studie"
+description: "Zjistěte, jak spolu souvisejí programy, studia, lekce a místa v Lessons.church, abyste našli správné kurikulum a přecházeli mezi souvisejícími lekcemi."
 ---
 
 # Programy a studie

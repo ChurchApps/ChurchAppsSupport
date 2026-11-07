@@ -1,5 +1,6 @@
 ---
 title: "Schválenie zmien profilu"
+description: "Prezerajte a schvaľujte žiadosti členov o zmenu profilu v B1 Admin a nastavte Directory Approval Group, ktorá ich dostáva."
 ---
 
 # Schválenie zmien profilu

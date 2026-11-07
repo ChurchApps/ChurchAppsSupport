@@ -1,5 +1,7 @@
 ---
-title: "Konten"
+title: "Fitur Konten di Portal Anggota B1.church"
+sidebar_label: "Konten"
+description: "Lihat konten yang diaktifkan gereja Anda di portal anggota B1.church, lalu telusuri khotbah, siaran langsung, bacaan Alkitab, dan pelajaran."
 ---
 
 # Konten

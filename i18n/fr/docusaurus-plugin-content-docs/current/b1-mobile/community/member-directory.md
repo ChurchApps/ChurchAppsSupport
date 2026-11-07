@@ -1,5 +1,7 @@
 ---
-title: "Annuaire des membres"
+title: "Annuaire des membres dans l’application B1 Mobile"
+sidebar_label: "Annuaire des membres"
+description: "Trouvez des membres de votre église dans l’annuaire B1 Mobile : parcourez par ordre alphabétique, cherchez par nom et ouvrez les profils."
 ---
 
 # Annuaire des membres
@@ -13,7 +15,7 @@ L'annuaire des membres dans B1 Mobile vous permet de parcourir et de rechercher 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 
 </div>
 
@@ -51,5 +53,5 @@ Les informations visibles dans chaque profil dépendent des paramètres de confi
 
 ## Articles connexes
 
-- [Messagerie](./messaging) -- Envoyez un message privé à quelqu'un que vous trouvez dans l'annuaire
+- [Messagerie](./messaging.md) -- Envoyez un message privé à quelqu'un que vous trouvez dans l'annuaire
 - [Paramètres de confidentialité](../profile/privacy-settings.md) -- Contrôlez ce que les autres peuvent voir à votre sujet dans l'annuaire

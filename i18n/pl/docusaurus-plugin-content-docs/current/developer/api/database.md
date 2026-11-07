@@ -1,5 +1,6 @@
 ---
 title: "Baza danych"
+description: "Dowiedz się, jak API ChurchApps dzieli dane na sześć baz MySQL, po jednej na moduł, oraz jak skonfigurować połączenia i je zainicjować."
 ---
 
 # Baza danych
@@ -13,8 +14,8 @@ Interfejs API ChurchApps wykorzystuje architekturę **baza danych dla każdego m
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj **MySQL 8.0+** -- zobacz [Wymagania wstępne](../setup/prerequisites)
-- Skonfiguruj ciągi połączenia z bazą danych w pliku `.env` -- zobacz [Zmienne środowiskowe](../setup/environment-variables)
+- Zainstaluj **MySQL 8.0+** -- zobacz [Wymagania wstępne](../setup/prerequisites.md)
+- Skonfiguruj ciągi połączenia z bazą danych w pliku `.env` -- zobacz [Zmienne środowiskowe](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Kluczowe decyzje projektowe
 
 - **Jedna baza danych na moduł** -- Każdy moduł utrzymuje własną bazę MySQL z dedykowaną pulą połączeń (zarządzaną przez `KyselyPool`). Dzięki temu moduły są niezależne od siebie i mogą rozwijać schemat niezależnie.
-- **Wyłączna własność** -- Tabele modułu są odczytywane i zapisywane wyłącznie przez kod tego modułu. Gdy inny moduł potrzebuje tych danych, wywołuje bramę (gateway) modułu będącego właścicielem, zamiast samodzielnie odpytywać jego tabele -- zobacz [Komunikacja między modułami](./module-structure#cross-module-communication).
+- **Wyłączna własność** -- Tabele modułu są odczytywane i zapisywane wyłącznie przez kod tego modułu. Gdy inny moduł potrzebuje tych danych, wywołuje bramę (gateway) modułu będącego właścicielem, zamiast samodzielnie odpytywać jego tabele -- zobacz [Komunikacja między modułami](./module-structure.md#cross-module-communication).
 - **Wzorzec repozytorium bez ORM** -- Ccały dostęp do danych odbywa się przez klasy repozytoriów, które budują typowane zapytania SQL za pomocą kreatora zapytań Kysely, opartego na schemacie modułu. Daje to pełną kontrolę nad wydajnością i zachowaniem zapytań.
 - **Wielodostępność w fazie projektowania** -- Każde zapytanie jest ograniczone przez `churchId`. Wszystkie tabele zawierają kolumnę `churchId`, a warstwa repozytoriów automatycznie wymusza izolację danych między kościołami.
 
@@ -129,5 +130,5 @@ To ograniczenie sprawia, że granice modułów są rzeczywiste: każdy schemat m
 
 ## Powiązane artykuły
 
-- **[Struktura modułu](./module-structure)** -- Jak kontrolery i repozytoria są zorganizowane w każdym module
-- **[Konfiguracja lokalnego API](./local-setup)** -- Pełny, krok po kroku przewodnik konfiguracji
+- **[Struktura modułu](./module-structure.md)** -- Jak kontrolery i repozytoria są zorganizowane w każdym module
+- **[Konfiguracja lokalnego API](./local-setup.md)** -- Pełny, krok po kroku przewodnik konfiguracji

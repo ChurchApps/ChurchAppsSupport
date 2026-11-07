@@ -1,5 +1,7 @@
 ---
-title: "Live Streaming"
+title: "Panonood ng Live Stream sa B1.church"
+sidebar_label: "Live Streaming"
+description: "Panoorin ang live na serbisyo ng simbahan sa pahina ng Stream ng B1.church at sumali sa chat kasabay ng broadcast, nang hindi na kailangang mag-login."
 ---
 
 # Live Streaming

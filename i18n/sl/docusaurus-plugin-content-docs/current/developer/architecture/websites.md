@@ -1,12 +1,13 @@
 ---
 title: "Usmerjanje spletnih strani in več spletnih mest"
+description: "Kako B1.church preslika poddomene in lastne domene na pravo cerkev ali sekundarno spletno mesto ter kako mrežna plast Caddy upravlja TLS za lastne domene."
 ---
 
 # Usmerjanje spletnih strani in več spletnih mest
 
 <div class="article-intro">
 
-Ena cerkev lahko zdaj upravlja več ločenih spletnih mest, vsako pa lahko deluje na poddomeni `*.b1.church` ali na popolnoma prilagojeni domeni, ki je last cerkve. Ta stran opisuje plast usmerjanja, ki je *pod* graditeljem: kako se dohodna zahteva razreši v cerkev **in** v določeno spletno mesto, model podatkov za več spletnih mest (čuvar `siteId`, ki ohranja delovanje vseh obstoječih spletnih mest nespremenjeno) ter robni del za domene po meri, to je samostojni posredniški strežnik Caddy na EC2, ki zaključi TLS in preusmeri vsako cerkveno domeno na njen upstream `*.b1.church`. Za to, kaj se dejansko prikaže, ko je zahteva razrešena, to je drevo strani, odsekov in elementov, glejte [Graditelj spletnih strani](./website-builder).
+Ena cerkev lahko zdaj upravlja več ločenih spletnih mest, vsako pa lahko deluje na poddomeni `*.b1.church` ali na popolnoma prilagojeni domeni, ki je last cerkve. Ta stran opisuje plast usmerjanja, ki je *pod* graditeljem: kako se dohodna zahteva razreši v cerkev **in** v določeno spletno mesto, model podatkov za več spletnih mest (čuvar `siteId`, ki ohranja delovanje vseh obstoječih spletnih mest nespremenjeno) ter robni del za domene po meri, to je samostojni posredniški strežnik Caddy na EC2, ki zaključi TLS in preusmeri vsako cerkveno domeno na njen upstream `*.b1.church`. Za to, kaj se dejansko prikaže, ko je zahteva razrešena, to je drevo strani, odsekov in elementov, glejte [Graditelj spletnih strani](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ Vrstice `www.*` so izključene iz zemljevida. Caddy namesto tega streže `www.{h
 
 ### Trenutno stanje: statična konfiguracija, brez izvajalnega stanja
 
-Strežnik (Windows EC2 za trajnim elastičnim IP-jem) izvaja Caddy iz **statične Caddyfile**. Ta vsebuje TLS na zahtevo, katerega `ask` kaže na `/membership/domains/authorize`, in datoteko zemljevida host→upstream, ki jo vsakih 5 minut osvežuje načrtovana naloga iz `/membership/domains/hostmap`. Ta naloga se konča z elegantnim `caddy reload`. Konfiguracija preživi ponovne zagone brez izvajalnega stanja, brez ponovnega pripravljanja. Neznani SNI je **zavrnjen na ravni TLS** (certifikat za gostitelja, ki ga `authorize` zavrne, se ne izda), gostitelj, ki je odobren, a še ni na zemljevidu (nova domena znotraj obdobja sinhronizacije), pa dobi čisti 404. Nove domene so usmerljive v približno 5 minutah po shranjevanju, njihovi certifikati pa se izdajo ob prvem obisku. Gradnja/nastavitev, delovanje in preizkušene pasti: [Caddy posrednik za domene po meri](../deployment/caddy-proxy).
+Strežnik (Windows EC2 za trajnim elastičnim IP-jem) izvaja Caddy iz **statične Caddyfile**. Ta vsebuje TLS na zahtevo, katerega `ask` kaže na `/membership/domains/authorize`, in datoteko zemljevida host→upstream, ki jo vsakih 5 minut osvežuje načrtovana naloga iz `/membership/domains/hostmap`. Ta naloga se konča z elegantnim `caddy reload`. Konfiguracija preživi ponovne zagone brez izvajalnega stanja, brez ponovnega pripravljanja. Neznani SNI je **zavrnjen na ravni TLS** (certifikat za gostitelja, ki ga `authorize` zavrne, se ne izda), gostitelj, ki je odobren, a še ni na zemljevidu (nova domena znotraj obdobja sinhronizacije), pa dobi čisti 404. Nove domene so usmerljive v približno 5 minutah po shranjevanju, njihovi certifikati pa se izdajo ob prvem obisku. Gradnja/nastavitev, delovanje in preizkušene pasti: [Caddy posrednik za domene po meri](../deployment/caddy-proxy.md).
 
 ### Starejše potiskanje v izvajalnem času: pot za povratek, čaka na brisanje
 
@@ -209,8 +210,8 @@ Strežnik (Windows EC2 za trajnim elastičnim IP-jem) izvaja Caddy iz **statičn
 
 ## Povezane strani
 
-- [Caddy posrednik za domene po meri](../deployment/caddy-proxy): sam robni strežnik, namestitev novega strežnika, storitev WinSW, naloga sinhronizacije zemljevida in operativne pasti
-- [Graditelj spletnih strani](./website-builder): drevo strani/odsekov/elementov, upodabljalniki, blog, SEO in generiranje z AI (kaj se prikaže, ko je zahteva razrešena v cerkev/spletno mesto)
-- [Končne točke vsebine](../api/endpoints/content): REST vmesnik za strani, bloke, povezave in globalne sloge, ki so zdaj vsi občutljivi na `?siteId=`
-- [B1App](../web-apps/b1-app): aplikacija Next.js, ki gosti `middleware` in usmerjanje `[sdSlug]`
-- [Namestitev spletnih aplikacij](../deployment/web-apps): kako je B1App nameščen v Vercel
+- [Caddy posrednik za domene po meri](../deployment/caddy-proxy.md): sam robni strežnik, namestitev novega strežnika, storitev WinSW, naloga sinhronizacije zemljevida in operativne pasti
+- [Graditelj spletnih strani](./website-builder.md): drevo strani/odsekov/elementov, upodabljalniki, blog, SEO in generiranje z AI (kaj se prikaže, ko je zahteva razrešena v cerkev/spletno mesto)
+- [Končne točke vsebine](../api/endpoints/content.md): REST vmesnik za strani, bloke, povezave in globalne sloge, ki so zdaj vsi občutljivi na `?siteId=`
+- [B1App](../web-apps/b1-app.md): aplikacija Next.js, ki gosti `middleware` in usmerjanje `[sdSlug]`
+- [Namestitev spletnih aplikacij](../deployment/web-apps.md): kako je B1App nameščen v Vercel

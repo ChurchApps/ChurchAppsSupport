@@ -1,5 +1,7 @@
 ---
-title: "Prekener"
+title: "Bla i prekener på B1.church-nettstedet ditt"
+sidebar_label: "Prekener"
+description: "Bla i og se innspilte prekener fra menighetens bibliotek på B1.church-nettstedet, gruppert i serier eller spillelister. Ingen innlogging nødvendig."
 ---
 
 # Prekener

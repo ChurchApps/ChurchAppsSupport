@@ -1,5 +1,6 @@
 ---
 title: "Vodič: Ustvarite svojo knjižnico pridig in prenos v živo"
+description: "Uvozite pridige z YouTube ali Vimeo v B1 Admin, razvrstite jih v sezname predvajanja in nastavite ponavljajoče se žive prenose s klepetom."
 ---
 
 # Ustvarite svojo knjižnico pridig in prenos v živo

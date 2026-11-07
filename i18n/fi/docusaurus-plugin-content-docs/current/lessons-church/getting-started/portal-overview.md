@@ -1,5 +1,6 @@
 ---
 title: "Portaalin yleiskatsaus"
+description: "Tutustu Lessons.church-portaaliin: luokkahuoneet, aikataulutetut oppitunnit, syötelinkit sekä ulkoiset tarjoajat ja ylläpitotyökalut."
 ---
 
 # Portaalin yleiskatsaus

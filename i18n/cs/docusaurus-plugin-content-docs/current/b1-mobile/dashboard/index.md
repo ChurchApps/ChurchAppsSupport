@@ -1,5 +1,6 @@
 ---
 title: "Kontrolní panel"
+description: "Orientujte se na domovské obrazovce B1 Mobile, kde jsou nejpoužívanější funkce zobrazeny jako velké karty a ostatní jsou v Rychlých akcích."
 ---
 
 # Kontrolní panel
@@ -28,7 +29,7 @@ Pod hlavní kartou uvidíte až dvě **doporučené karty** zobrazené vedle seb
 
 ## Rychlé akce
 
-Zbývající funkce se zobrazují v mřížce **Rychlých akcí** pod doporučenými kartami. Každá položka zobrazuje ikonu a popisek. Jsou to všechny ostatní navigační odkazy, které váš sbor nastavil, a poskytují přístup ke všemu od [skupin](../groups/) a [darů](../giving/) až po [prezenci](../checkin/), [kázání](../content/sermons.md) a další.
+Zbývající funkce se zobrazují v mřížce **Rychlých akcí** pod doporučenými kartami. Každá položka zobrazuje ikonu a popisek. Jsou to všechny ostatní navigační odkazy, které váš sbor nastavil, a poskytují přístup ke všemu od [skupin](../groups/index.md) a [darů](../giving/index.md) až po [prezenci](../checkin/index.md), [kázání](../content/sermons.md) a další.
 
 ## Jak se rozložení přizpůsobuje
 
@@ -41,7 +42,7 @@ Rozložení kontrolního panelu je personalizováno podle vašich způsobů pou�
 Pokud jste aplikaci ještě nepoužívali, funkce se zobrazí ve výchozím pořadí, které nastavil váš sbor. Postupem času se kontrolní panel přeskupí tak, aby odpovídal vašim zvyklostem.
 
 :::info
-Funkce dostupné na vašem kontrolním panelu nastavuje správce vašeho sboru prostřednictvím [B1 Admin](../../b1-admin/). Pokud funkci, kterou očekáváte, nevidíte, obraťte se na kancelář vašeho sboru.
+Funkce dostupné na vašem kontrolním panelu nastavuje správce vašeho sboru prostřednictvím [B1 Admin](../../b1-admin/index.md). Pokud funkci, kterou očekáváte, nevidíte, obraťte se na kancelář vašeho sboru.
 :::
 
 ## Obnovení kontrolního panelu

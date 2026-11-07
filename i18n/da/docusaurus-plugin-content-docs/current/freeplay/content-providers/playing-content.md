@@ -1,5 +1,6 @@
 ---
 title: "Afspilning af indhold"
+description: "Styr FreePlay med en TV-fjernbetjening: sæt på pause, spring over slides og videoer, hop til ethvert budskab og afslut afspilleren, uanset om indholdet kommer fra en udbyder, en plan eller en download."
 ---
 
 # Afspilning af indhold
@@ -13,13 +14,13 @@ FreePlay-afspilleren fylder hele skærmen og er bygget til tv-fjernbetjeninger. 
 <div class="prereqs">
 <h4>Inden du begynder</h4>
 
-- Vælg noget at afspille. Se [Gennemse og download indhold](./browsing-content), [Planlægningstilstand](../plan-mode/) eller [Meddelelser](./announcements)
+- Vælg noget at afspille. Se [Gennemse og download indhold](./browsing-content.md), [Planlægningstilstand](../plan-mode/index.md) eller [Meddelelser](./announcements.md)
 - Tryk på **Start** for at åbne afspilleren
 
 </div>
 
 :::info
-Skærme, der er knyttet til en kalender, bruger en separat planlagt afspiller med lidt andre knapper. Se [Planlagt afspilning på tv'et](../scheduled-mode/scheduled-playback).
+Skærme, der er knyttet til en kalender, bruger en separat planlagt afspiller med lidt andre knapper. Se [Planlagt afspilning på tv'et](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Afspilningsknapper
@@ -57,7 +58,7 @@ Tryk på **Op** under afspilning for at åbne **Vælg en besked**. Den viser all
 Tryk på **Ned** eller **Tilbage** på din fjernbetjening for at forlade afspilleren. Hvor du ender, afhænger af, hvad du afspillede:
 
 - **Udbyderindhold** - Tilbage til indholdsbrowseren
-- **En plan** - Tilbage til skærmen for plandownload. Se [Planlægningstilstand](../plan-mode/)
+- **En plan** - Tilbage til skærmen for plandownload. Se [Planlægningstilstand](../plan-mode/index.md)
 - **En download** - Tilbage til skærmen **Downloads**
 
 :::info
@@ -66,5 +67,5 @@ Skærmen forbliver vågen, mens afspilleren er åben, så tv'et ikke går i dval
 
 ## Relaterede artikler
 
-- **[Gennemse og download indhold](./browsing-content)** - Find indhold, og download det til offline afspilning
-- **[Planlagt afspilning på tv'et](../scheduled-mode/scheduled-playback)** - Fjernbetjeningsknapper til skærme, der følger en kalender
+- **[Gennemse og download indhold](./browsing-content.md)** - Find indhold, og download det til offline afspilning
+- **[Planlagt afspilning på tv'et](../scheduled-mode/scheduled-playback.md)** - Fjernbetjeningsknapper til skærme, der følger en kalender

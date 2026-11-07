@@ -1,5 +1,6 @@
 ---
 title: "Lista de Aniversarios"
+description: "Obtén una lista de todas las personas que cumplen aniversario de boda en un mes elegido en B1 Admin, con las fechas visibles en los resultados y exportable a una hoja de cálculo para boletines o tarjetas."
 ---
 
 # Lista de Aniversarios

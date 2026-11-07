@@ -1,5 +1,6 @@
 ---
 title: "Choisir un service"
+description: "Choisissez le culte auquel vous participez dans l'écran des services de B1 Checkin : il définit horaires et groupes affichés pour la suite."
 ---
 
 # Choisir un service
@@ -13,7 +14,7 @@ La première étape de tout enregistrement consiste à choisir le service auquel
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Connectez-vous](../getting-started/logging-in) à l'application B1 Church Checkin et sélectionnez votre église
+- [Connectez-vous](../getting-started/logging-in.md) à l'application B1 Church Checkin et sélectionnez votre église
 - Vérifiez que votre administrateur d'église a [configuré les services et les créneaux de culte](../../b1-admin/attendance/setup.md) dans B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ La première étape de tout enregistrement consiste à choisir le service auquel
 2. Vous voyez la liste de tous les services configurés pour votre église. Chaque service apparaît sous forme de carte affichant son nom (par exemple « Culte du dimanche matin » ou « Soirée du mercredi »).
 3. Appuyez sur le service auquel vous participez.
 
-L'application charge les créneaux de culte et les groupes associés à ce service, puis vous mène à l'[écran de recherche des membres](./looking-up-members).
+L'application charge les créneaux de culte et les groupes associés à ce service, puis vous mène à l'[écran de recherche des membres](./looking-up-members.md).
 
 ## Lorsque l'enregistrement n'est pas ouvert
 
-Si votre administrateur a attribué à un créneau de culte un [calendrier d'enregistrement](../../b1-admin/attendance/setup#setting-a-check-in-schedule), l'application ne permet aux familles de choisir ce créneau que lorsque sa fenêtre d'enregistrement est ouverte. Les créneaux dont la fenêtre est fermée actuellement restent visibles sur [l'écran du foyer](./household-review), mais sont marqués **Fermé** (par exemple **Fermé · ouvre dim. 9:30**) au lieu de proposer un bouton de groupe.
+Si votre administrateur a attribué à un créneau de culte un [calendrier d'enregistrement](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), l'application ne permet aux familles de choisir ce créneau que lorsque sa fenêtre d'enregistrement est ouverte. Les créneaux dont la fenêtre est fermée actuellement restent visibles sur [l'écran du foyer](./household-review.md), mais sont marqués **Fermé** (par exemple **Fermé · ouvre dim. 9:30**) au lieu de proposer un bouton de groupe.
 
 Si tous les créneaux de culte du service que vous avez touché sont fermés, l'application vous indique quand l'enregistrement ouvre, par exemple **« L'enregistrement pour ce service ouvre dim. 9:30. »** (Si aucune heure d'ouverture ne peut être affichée, le message indique **« L'enregistrement n'est pas ouvert pour ce service actuellement. »**) Appuyez sur **Retour** pour revenir à la liste des services et en choisir un autre, ou attendez l'ouverture de la fenêtre et réessayez.
 
@@ -56,4 +57,4 @@ Si votre église n'a configuré qu'un seul service, vous devez tout de même le 
 
 ## Étape suivante
 
-Après avoir sélectionné un service, vous [rechercherez votre famille](./looking-up-members) par numéro de téléphone ou par nom.
+Après avoir sélectionné un service, vous [rechercherez votre famille](./looking-up-members.md) par numéro de téléphone ou par nom.

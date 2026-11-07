@@ -1,5 +1,6 @@
 ---
 title: "fødselsdagrapport"
+description: "Lav en liste over alle med fødselsdag eller bryllupsdag i en given måned ved hjælp af personsøgningsfiltre i B1 Admin, og se eller eksportér datoerne."
 ---
 
 # fødselsdagrapport

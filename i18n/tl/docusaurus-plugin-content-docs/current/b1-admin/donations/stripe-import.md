@@ -1,5 +1,6 @@
 ---
 title: "Stripe Import"
+description: "Hilahin ang donasyon mula sa Stripe papunta sa B1 Admin gamit ang preview muna na import na nagmamarka sa bawat charge bilang bago, na-import, o nilaktawan."
 ---
 
 # Stripe Import

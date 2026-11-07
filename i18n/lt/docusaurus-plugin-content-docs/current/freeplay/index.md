@@ -1,5 +1,6 @@
 ---
 title: "Pārskats par FreePlay"
+description: "FreePlay apžvalga: klasės televizorių programa pamokoms be interneto Android TV, Fire TV ir Apple TV, su nuorodomis į sąrankos vadovus."
 ---
 
 # Pārskats par FreePlay
@@ -22,10 +23,10 @@ Mūsų **<a href="/guides/freeplay-b1admin" target="_blank">išsamus sąrankos v
 
 - **Veikimas be ryšio** - Iš anksto atsisiųskite vaizdo įrašus ir vaizdo skaidres, kad pamaldų metu niekada nepriklausytumėte nuo Wi-Fi
 - **Atsisiuntimų valdymas** - Peržiūrėkite ir tvarkykite visą atsisiųstą turinį skiltyje **Nustatymai** > **Atsisiuntimai**
-- **Tvarkaraščio režimas** - Sudarykite grojaraščius ir įtraukite juos į kalendorių adresu [admin.freeplay.church](https://admin.freeplay.church); susieti televizoriai juos paleis tinkamu laiku, nieko nespaudžiant. Žr. [Tvarkaraščio režimas](./scheduled-mode/)
+- **Tvarkaraščio režimas** - Sudarykite grojaraščius ir įtraukite juos į kalendorių adresu [admin.freeplay.church](https://admin.freeplay.church); susieti televizoriai juos paleis tinkamu laiku, nieko nespaudžiant. Žr. [Tvarkaraščio režimas](./scheduled-mode/index.md)
 - **Plano susiejimas** - Susiekite įrenginį su bažnyčios pamaldų planu, kad turinys būtų koordinuojamas tarp kambarių
 - **Turinio teikėjai** - Naršykite ir atsisiųskite turinį iš išorinių šaltinių, pavyzdžiui, [Lessons.church](/docs/lessons-church/), Bible Project, Dropbox ir OneDrive
-- **Skelbimai** - Ciklišk atkurkite prijungto teikėjo aplanko skaidres; žr. [Skelbimai](./content-providers/announcements)
+- **Skelbimai** - Ciklišk atkurkite prijungto teikėjo aplanko skaidres; žr. [Skelbimai](./content-providers/announcements.md)
 - **Patogumas su TV pulteliu** - Visa programėlė valdoma standartiniu televizoriaus pulteliu naudojant krypčių mygtukus ir patvirtinimo mygtuką
 - **Sutraukiama šoninė juosta** - Siaura šoninė juosta leidžia lengvai naviguoti neužgriozdinant ekrano
 
@@ -35,10 +36,10 @@ Paleidus FreePlay, programėlė prisijungia prie jūsų turinio teikėjų ir tik
 
 ## Skyriai
 
-- **[Pradžia](./getting-started/)** - Įdiekite programėlę, paleiskite ją ir pasirinkite, kaip prisijungti
-- **[Tvarkaraščio režimas](./scheduled-mode/)** - Susiekite televizorius su kalendoriumi ir tvarkykite juos FreePlay Admin
-- **[Plano režimas](./plan-mode/)** - Susiekite su bažnyčios pamaldų planu
-- **[Turinio teikėjai](./content-providers/)** - Prisijunkite prie išorinių turinio šaltinių
+- **[Pradžia](./getting-started/index.md)** - Įdiekite programėlę, paleiskite ją ir pasirinkite, kaip prisijungti
+- **[Tvarkaraščio režimas](./scheduled-mode/index.md)** - Susiekite televizorius su kalendoriumi ir tvarkykite juos FreePlay Admin
+- **[Plano režimas](./plan-mode/index.md)** - Susiekite su bažnyčios pamaldų planu
+- **[Turinio teikėjai](./content-providers/index.md)** - Prisijunkite prie išorinių turinio šaltinių
 
 :::info
 FreePlay yra [ChurchApps](https://churchapps.org) nemokamų, atvirojo kodo įrankių bažnyčioms rinkinio dalis.

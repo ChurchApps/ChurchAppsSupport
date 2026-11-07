@@ -1,5 +1,6 @@
 ---
 title: "Completar el registro de entrada"
+description: "Termina el registro de entrada de una familia en el quiosco de B1 Checkin, incluyendo límites de aula, impresión de etiquetas, códigos de seguridad para la recogida y lo que hace la app después."
 ---
 
 # Completar el registro de entrada
@@ -13,9 +14,9 @@ Una vez que haya revisado su hogar y asignado los grupos necesarios, está listo
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Revise su hogar](./household-review) en la pantalla de revisión del hogar
-- [Asigne grupos](./group-assignment) a los miembros de la familia que necesiten registrarse en una clase o programa específico
-- Opcionalmente, [agregue a los invitados](./adding-guests) que visitan con su familia
+- [Revise su hogar](./household-review.md) en la pantalla de revisión del hogar
+- [Asigne grupos](./group-assignment.md) a los miembros de la familia que necesiten registrarse en una clase o programa específico
+- Opcionalmente, [agregue a los invitados](./adding-guests.md) que visitan con su familia
 
 </div>
 
@@ -28,10 +29,10 @@ Eso es todo. La asistencia de su familia ha quedado registrada.
 
 ## Salas llenas y proporciones de voluntarios
 
-Si su iglesia ha configurado [límites de seguridad](../../b1-admin/attendance/checkin-safety) en sus salas, el servidor los verifica antes de guardar:
+Si su iglesia ha configurado [límites de seguridad](../../b1-admin/attendance/checkin-safety.md) en sus salas, el servidor los verifica antes de guardar:
 
 - Si una sala seleccionada está **llena o cerrada**, el registro no se completa y la aplicación indica el nombre de la sala para que pueda elegir otra.
-- Si el horario de servicio tiene un [calendario de registro](../../b1-admin/attendance/setup#setting-a-check-in-schedule) y su ventana de registro no está abierta en este momento, también se rechaza el registro en las salas de ese horario de servicio. La pantalla **No se puede registrar aún** muestra la sala con el motivo "el registro no está abierto en este momento"; toque **Cambiar salas** para elegir otro horario de servicio o grupo. (Los horarios de servicio que ya están cerrados se muestran como **Cerrado** en la [pantalla del hogar](./household-review) y no se pueden elegir, así que normalmente solo verá esto si una ventana se cierra durante un registro de entrada.)
+- Si el horario de servicio tiene un [calendario de registro](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) y su ventana de registro no está abierta en este momento, también se rechaza el registro en las salas de ese horario de servicio. La pantalla **No se puede registrar aún** muestra la sala con el motivo "el registro no está abierto en este momento"; toque **Cambiar salas** para elegir otro horario de servicio o grupo. (Los horarios de servicio que ya están cerrados se muestran como **Cerrado** en la [pantalla del hogar](./household-review.md) y no se pueden elegir, así que normalmente solo verá esto si una ventana se cierra durante un registro de entrada.)
 - Un hogar que se registró en un horario de servicio anterior puede volver más tarde y agregar un horario de servicio abierto, incluso después de que la ventana anterior se haya cerrado. Sus registros de entrada existentes se conservan y no hacen que el nuevo registro sea rechazado.
 - Si una sala infantil tiene **falta de voluntarios** para su proporción, la aplicación muestra una advertencia que un miembro del personal puede confirmar para continuar, o bloquea por completo el registro, según cómo haya configurado su iglesia la aplicación de las proporciones.
 
@@ -49,7 +50,7 @@ El mismo código de seguridad aparece en la etiqueta con nombre del niño y en e
 El código de seguridad se genera de nuevo en cada registro de entrada y solo usa consonantes y dígitos (se excluyen las vocales para evitar que formen palabras inapropiadas).
 
 :::warning
-Si las etiquetas no se imprimen, abra la Configuración de administrador tocando el **logotipo de la iglesia** siete veces, y luego toque **Cambiar impresora** para verificar la conexión con la impresora. Consulte [Configuración de la impresora](../getting-started/printer-setup) para ver los pasos de solución de problemas.
+Si las etiquetas no se imprimen, abra la Configuración de administrador tocando el **logotipo de la iglesia** siete veces, y luego toque **Cambiar impresora** para verificar la conexión con la impresora. Consulte [Configuración de la impresora](../getting-started/printer-setup.md) para ver los pasos de solución de problemas.
 :::
 
 ## Qué sucede después del registro de entrada

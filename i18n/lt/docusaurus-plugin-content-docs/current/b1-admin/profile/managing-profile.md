@@ -1,5 +1,6 @@
 ---
 title: "Jūsų profilio tvarkymas"
+description: "Atnaujinkite ChurchApps paskyrą B1 Admin: keiskite vardą, el. paštą ir slaptažodį, įjunkite dviejų veiksnių prisijungimą, pasirinkite temą ar ištrinkite paskyrą."
 ---
 
 # Jūsų profilio tvarkymas

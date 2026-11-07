@@ -1,5 +1,6 @@
 ---
 title: "Caddy egyéni domain proxy"
+description: "Építsd meg és futtasd a Caddy fordított proxyt, amely a B1.church oldalainak egyedi gyülekezeti domaineit szolgálja ki, TLS-tanúsítványokkal, host-leképezéssel és ismert buktatókkal."
 ---
 
 # Caddy egyéni domain proxy
@@ -10,7 +11,7 @@ Az egyéni egyházi domainek (`mychurch.org` → az egyház B1 webhelye) egyetle
 
 </div>
 
-Arról, hogy egy kérés hogyan jut el egy egyházhoz vagy webhelyhez, miután megérkezett a B1App-hoz, lásd: [Webhely-útválasztás és több webhely](../architecture/websites).
+Arról, hogy egy kérés hogyan jut el egy egyházhoz vagy webhelyhez, miután megérkezett a B1App-hoz, lásd: [Webhely-útválasztás és több webhely](../architecture/websites.md).
 
 ## Komponensek
 
@@ -88,5 +89,5 @@ Az API-ban lévő `CaddyHelper` (valamint a `/membership/domains/caddy` és `/ca
 
 ## Kapcsolódó oldalak
 
-- [Webhely-útválasztás és több webhely](../architecture/websites): hogyan oldódik fel a proxyzott kérés egy egyházra vagy webhelyre a B1App-ban
-- [API telepítés](./apis): a `authorize`/`hostmap` végpontokat kiszolgáló Membership API telepítése
+- [Webhely-útválasztás és több webhely](../architecture/websites.md): hogyan oldódik fel a proxyzott kérés egy egyházra vagy webhelyre a B1App-ban
+- [API telepítés](./apis.md): a `authorize`/`hostmap` végpontokat kiszolgáló Membership API telepítése

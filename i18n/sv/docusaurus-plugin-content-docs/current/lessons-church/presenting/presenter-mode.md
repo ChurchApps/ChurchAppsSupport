@@ -1,5 +1,6 @@
 ---
 title: "Presentationsläge"
+description: "Kör en lektion i helskärm på klassrumsprojektor eller TV med Presenter Mode i Lessons.church och gå igenom varje sektion under lektionen."
 ---
 
 # Presentationsläge

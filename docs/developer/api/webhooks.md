@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Set up real-time webhooks from B1 Admin: register endpoints, choose events, verify HMAC signatures, handle retries, and redeliver failed payloads."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Go to **Settings → Developer → Webhooks → New Webhook**. Enter a name, the
 
 ### Via the API
 
-All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier and Make register webhooks on the church's behalf when a Zap or scenario is turned on.
+All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys.md) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier and Make register webhooks on the church's behalf when a Zap or scenario is turned on.
 
 ```http
 POST /membership/webhooks

@@ -1,5 +1,6 @@
 ---
 title: "Reproducción programada en el televisor"
+description: "Un TV FreePlay vinculado descarga la semana siguiente y reproduce según el reloj, aun sin conexión. Cubre el panel de información, el control y fijar listas."
 ---
 
 # Reproducción programada en el televisor
@@ -13,8 +14,8 @@ Una vez que un televisor está vinculado a un calendario, FreePlay lo ejecuta po
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Vincule el televisor a un calendario](./pairing-a-screen)
-- [Ponga algo en el calendario](./scheduling-the-calendar), o configure un bucle predeterminado para el grupo de la pantalla
+- [Vincule el televisor a un calendario](./pairing-a-screen.md)
+- [Ponga algo en el calendario](./scheduling-the-calendar.md), o configure un bucle predeterminado para el grupo de la pantalla
 
 </div>
 
@@ -40,7 +41,7 @@ El panel también tiene tres botones:
 
 - **Fijar esta lista de reproducción**: mantiene el contenido actual en bucle e ignora el calendario. Seleccione **Desfijar lista de reproducción** para volver a la programación
 - **Explorar contenido**: sale del reproductor programado para explorar sus proveedores conectados
-- **Configuración**: abre la configuración de FreePlay, donde puede [desvincular o vincular a otro calendario](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Configuración**: abre la configuración de FreePlay, donde puede [desvincular o vincular a otro calendario](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Para volver a la programación después de explorar, presione **Atrás** en el control remoto desde la pantalla de **Proveedores de contenido**, o abra **Configuración**, seleccione **Vincular a un calendario** y elija **Volver a la programación**. Un televisor vinculado también vuelve al reproductor programado cada vez que FreePlay regresa al primer plano, y siempre se abre en el reproductor programado.
@@ -77,6 +78,6 @@ También puede reproducir el calendario de una pantalla en un navegador web. En 
 
 ## Artículos relacionados
 
-- **[Programar el calendario](./scheduling-the-calendar)**: decida qué se reproduce y qué pasa cuando termina antes
-- **[Administrar pantallas y grupos](./managing-screens)**: revise las descargas de cada pantalla desde FreePlay Admin
-- **[Reproducir contenido](../content-providers/playing-content)**: controles del reproductor cuando reproduce contenido usted mismo
+- **[Programar el calendario](./scheduling-the-calendar.md)**: decida qué se reproduce y qué pasa cuando termina antes
+- **[Administrar pantallas y grupos](./managing-screens.md)**: revise las descargas de cada pantalla desde FreePlay Admin
+- **[Reproducir contenido](../content-providers/playing-content.md)**: controles del reproductor cuando reproduce contenido usted mismo

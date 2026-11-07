@@ -1,5 +1,6 @@
 ---
 title: "Konfigurera klassrum"
+description: "Skapa, byt namn på och ta bort klassrum i Lessons.church-portalen så att varje rum eller åldersgrupp är redo för veckovis schemaläggning av lektioner."
 ---
 
 # Konfigurera klassrum

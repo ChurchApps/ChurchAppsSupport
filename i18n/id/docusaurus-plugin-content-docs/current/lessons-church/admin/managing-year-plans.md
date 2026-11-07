@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Rencana Tahun"
+description: "Buat rencana tahunan pelajaran mingguan di Lessons.church, kaitkan minggu dengan Paskah atau Natal, dan terbitkan untuk diterapkan gereja di B1 Admin."
 ---
 
 # Mengelola Rencana Tahun

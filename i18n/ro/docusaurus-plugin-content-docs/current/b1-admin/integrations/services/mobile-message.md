@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Conectați evenimentele B1 Admin la Mobile Message, un API SMS australian, prin webhook-uri Zapier sau Make, pentru SMS-uri de bun venit, donații și memento."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Endpoint-ul `/v1/messages` al Mobile Message acceptă până la 10.000 de mesaje
 
 ### Alternativa Make
 
-Dacă preferi Make, adaugă modulul **HTTP — Make a request** după declanșatorul B1 Watch Events și configureaz-o în același mod (POST, Basic Auth, corp JSON). Consultă [Prezentarea generală Make](../make) pentru partea din B1.
+Dacă preferi Make, adaugă modulul **HTTP — Make a request** după declanșatorul B1 Watch Events și configureaz-o în același mod (POST, Basic Auth, corp JSON). Consultă [Prezentarea generală Make](../make.md) pentru partea din B1.
 
 ## Limite și note
 
@@ -102,6 +103,6 @@ Dacă preferi Make, adaugă modulul **HTTP — Make a request** după declanșat
 
 ## Vezi și
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): alți furnizori SMS, cu aplicații Zapier native (nu este necesar un pas Webhooks by Zapier)
-- [Zapier (prezentare generală)](../zapier): partea B1 din fiecare rețetă Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): alți furnizori SMS, cu aplicații Zapier native (nu este necesar un pas Webhooks by Zapier)
+- [Zapier (prezentare generală)](../zapier.md): partea B1 din fiecare rețetă Zapier
 - [Documentația API Mobile Message](https://mobilemessage.com.au/api-documentation)

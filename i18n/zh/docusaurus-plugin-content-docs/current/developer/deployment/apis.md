@@ -1,5 +1,6 @@
 ---
 title: "API 部署"
+description: "使用 Serverless 将 ChurchApps API 部署到 AWS Lambda，涵盖构建、演示和生产工作流、数据库迁移以及 SSM 配置。"
 ---
 
 # API 部署
@@ -13,7 +14,7 @@ ChurchApps API 以 AWS Lambda 函数的形式部署，使用 Serverless Framewor
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在本地设置 API —— 参见[本地 API 设置](../api/local-setup)
+- 在本地设置 API —— 参见[本地 API 设置](../api/local-setup.md)
 - 在您的机器上配置 AWS 凭据
 - 确保您有权访问目标 AWS 账户
 
@@ -47,7 +48,7 @@ npm run deploy-prod
 
 ## 数据库迁移
 
-**Deploy Prod** 会在部署过程中应用待处理的数据库迁移。正式环境的数据库仅接受来自 VPC 内部的连接，因此在 `serverless deploy` 完成后，工作流会调用 `migrate` Lambda（`api-Prod-migrate`），由它运行所有模块的待处理迁移，并返回 `{ ok, environment, modules }`。如果任何模块失败或被拒绝（例如某个数据库没有迁移历史记录），该任务将失败，从而确保数据库结构永远不会落后于代码。**Rollback Prod** 只会回滚 Lambda 代码；迁移会保持已应用状态，因此请保持迁移为增量式（additive）。有关检查状态或手动运行迁移的方法，请参阅 [服务器管理 —— 数据库迁移](../server-admin#database-migrations)。
+**Deploy Prod** 会在部署过程中应用待处理的数据库迁移。正式环境的数据库仅接受来自 VPC 内部的连接，因此在 `serverless deploy` 完成后，工作流会调用 `migrate` Lambda（`api-Prod-migrate`），由它运行所有模块的待处理迁移，并返回 `{ ok, environment, modules }`。如果任何模块失败或被拒绝（例如某个数据库没有迁移历史记录），该任务将失败，从而确保数据库结构永远不会落后于代码。**Rollback Prod** 只会回滚 Lambda 代码；迁移会保持已应用状态，因此请保持迁移为增量式（additive）。有关检查状态或手动运行迁移的方法，请参阅 [服务器管理 —— 数据库迁移](../server-admin.md#database-migrations)。
 
 ## 创建的资源
 
@@ -75,6 +76,6 @@ npm run deploy-prod
 
 ## 相关文章
 
-- **[本地 API 设置](../api/local-setup)** —— 为开发配置 API
-- **[模块结构](../api/module-structure)** —— 了解 Lambda 函数架构
-- **[Web 应用部署](./web-apps)** —— 部署前端应用
+- **[本地 API 设置](../api/local-setup.md)** —— 为开发配置 API
+- **[模块结构](../api/module-structure.md)** —— 了解 Lambda 函数架构
+- **[Web 应用部署](./web-apps.md)** —— 部署前端应用

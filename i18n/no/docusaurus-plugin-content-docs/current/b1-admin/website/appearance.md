@@ -1,5 +1,6 @@
 ---
 title: "Utseende"
+description: "Angi farger, skrifter, avstand, logo og navigasjon for nettstedet ditt i B1 Admin, samt widgets, GA4-analyse, omdirigeringer og egen CSS."
 ---
 
 # Utseende
@@ -13,7 +14,7 @@ Siden Utseende lar deg tilpasse det samlede utseendet og inntrykket av menighete
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Fullfør [Første oppsett](initial-setup) for nettstedet ditt
+- Fullfør [Første oppsett](./initial-setup.md) for nettstedet ditt
 - Ha menighetens logo klar i PNG-format med gjennomsiktig bakgrunn og et sideforhold på 4:1
 - Kjenn til menighetens merkefarger (heksadesimale verdier) hvis du har en eksisterende stilguide
 
@@ -98,7 +99,7 @@ Egen CSS er kraftig, men kan ødelegge oppsettet på nettstedet ditt hvis den br
 :::
 
 :::info
-Nettstedet ditt håndhever en innholdssikkerhetspolicy som blokkerer innebygde skript fra alle andre kilder. Feltet **Egen HTML** her, og [HTML-elementet](page-editor#using-the-html-element) på enkeltsider, er de betrodde unntakene -- kode du lagrer der kjøres uendret, så lim bare inn skript fra kilder du stoler på (analysekoder, chat-moduler og lignende innbygginger).
+Nettstedet ditt håndhever en innholdssikkerhetspolicy som blokkerer innebygde skript fra alle andre kilder. Feltet **Egen HTML** her, og [HTML-elementet](./page-editor.md#using-the-html-element) på enkeltsider, er de betrodde unntakene -- kode du lagrer der kjøres uendret, så lim bare inn skript fra kilder du stoler på (analysekoder, chat-moduler og lignende innbygginger).
 :::
 
 ## Stilmaler
@@ -107,5 +108,5 @@ Hvis du vil ha et raskt utgangspunkt, tilbyr **Foreslåtte paletter** i delen Fa
 
 ## Neste steg
 
-- [Administrere sider](managing-pages) -- Bygg og organiser nettstedets sider
-- [Filer](files) -- Last opp mediefiler for nettstedet ditt
+- [Administrere sider](./managing-pages.md) -- Bygg og organiser nettstedets sider
+- [Filer](./files.md) -- Last opp mediefiler for nettstedet ditt

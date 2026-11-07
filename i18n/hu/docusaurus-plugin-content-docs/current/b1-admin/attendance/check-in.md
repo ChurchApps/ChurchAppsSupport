@@ -1,5 +1,7 @@
 ---
-title: "Bejelentkezés"
+title: "Önbejelentkezés beállítása: B1 Checkin és B1 Admin"
+sidebar_label: "Bejelentkezés"
+description: "Önbejelentkezés beállítása a B1 Admin-ban a B1 Checkin alkalmazással: eszközök, kioszk-fiókok, ütemezések, arculat és QR-kódos vendégregisztráció."
 ---
 
 # Bejelentkezés
@@ -99,7 +101,7 @@ Az üresjárati képernyővel bejelentéseket, közelgő eseményeket vagy üdv�
 
 A bejelentkező kioszk egy QR-kódot jeleníthet meg, amelyet a látogatók beolvasva maguk és családjuk számára regisztrálhatnak a saját telefonjukon. Ez felgyorsítja a bejelentkezést az első alkalommal érkező vendégeknek.
 
-Amikor egy vendég beolvassa a QR-kódot, egy [vendégregisztrációs oldalra](../../b1-church/checkin/guest-registration) kerül, ahol megadhatja családja neveit, valamint minden egyéb, Ön által kért adatot. Egy önkéntes ezután megkeresheti a kioszkon, és bejelentkeztetheti.
+Amikor egy vendég beolvassa a QR-kódot, egy [vendégregisztrációs oldalra](../../b1-church/checkin/guest-registration.md) kerül, ahol megadhatja családja neveit, valamint minden egyéb, Ön által kért adatot. Egy önkéntes ezután megkeresheti a kioszkon, és bejelentkeztetheti.
 
 ### QR-kódos vendégregisztráció bekapcsolása
 

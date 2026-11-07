@@ -1,5 +1,6 @@
 ---
 title: "Näyttöjen ja ryhmien hallinta"
+description: "Tarkista FreePlay-TV:iden valmius sunnuntaiksi, muokkaa näyttöasetuksia ja luo ryhmiä, jotka jakavat yhden kalenterin FreePlay Adminissa."
 ---
 
 # Näyttöjen ja ryhmien hallinta
@@ -14,7 +15,7 @@ Sivu **Näytöt** FreePlay Adminissa listaa kaikki kirkkoosi yhdistetyt TV-laitt
 <h4>Ennen aloittamista</h4>
 
 - Kirjaudu FreePlay Adminiin osoitteessa [admin.freeplay.church](https://admin.freeplay.church)
-- [Yhdistä vähintään yksi näyttö](./pairing-a-screen)
+- [Yhdistä vähintään yksi näyttö](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Käytä **Esitä**-painiketta toistaaksesi näytön kalenterin selaimessa tai **
 
 Napsauta näytön nimikettä avataksesi sen sivun. Vasemmalla:
 
-- **Esitä selaimessa** - Toista tämän näytön kalenteri koko ruudulla selaimessa, samoin kuin se näyttäisi TV:ssä. Katso [Esittäminen selaimesta](./scheduled-playback#presenting-from-a-browser)
+- **Esitä selaimessa** - Toista tämän näytön kalenteri koko ruudulla selaimessa, samoin kuin se näyttäisi TV:ssä. Katso [Esittäminen selaimesta](./scheduled-playback.md#presenting-from-a-browser)
 - **Muokkaa** - Muuta nimikettä, ryhmää tai tilaa
 - **Lisää** > **Irrota** - Katkaise yhteys TV:hen. Se palaa näyttämään yhdistämiskoodia
 
@@ -93,6 +94,6 @@ Ryhmän poistaminen poistaa myös sen aikataulun. Ryhmän näytöt pimenevät, k
 
 ## Liittyvät artikkelit
 
-- **[Näytön yhdistäminen](./pairing-a-screen)** - Lisää uusi TV
-- **[Kalenterin ajastaminen](./scheduling-the-calendar)** - Määritä, mitä kukin ryhmä toistaa, ja sen oletussilmukka
-- **[Ajastettu toisto TV:ssä](./scheduled-playback)** - Mitä "Valmis asti" -päivämäärä tarkoittaa itse TV:ssä
+- **[Näytön yhdistäminen](./pairing-a-screen.md)** - Lisää uusi TV
+- **[Kalenterin ajastaminen](./scheduling-the-calendar.md)** - Määritä, mitä kukin ryhmä toistaa, ja sen oletussilmukka
+- **[Ajastettu toisto TV:ssä](./scheduled-playback.md)** - Mitä "Valmis asti" -päivämäärä tarkoittaa itse TV:ssä

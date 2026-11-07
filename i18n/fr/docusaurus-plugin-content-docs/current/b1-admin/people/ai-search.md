@@ -1,5 +1,6 @@
 ---
 title: "Recherche IA"
+description: "Recherchez dans le répertoire des personnes de B1 Admin avec des questions en langage courant, comme quels membres ne sont pas venus depuis trois mois, au lieu de créer des filtres."
 ---
 
 # Recherche IA

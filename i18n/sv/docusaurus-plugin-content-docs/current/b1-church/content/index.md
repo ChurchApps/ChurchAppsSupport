@@ -1,5 +1,7 @@
 ---
-title: "Innehåll"
+title: "Innehållsfunktioner i B1.church medlemsportal"
+sidebar_label: "Innehåll"
+description: "Se vilket innehåll din kyrka aktiverat i B1.church medlemsportalen och bläddra sedan bland predikningar, livesändningar, bibelläsning och lektioner."
 ---
 
 # Innehåll

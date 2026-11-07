@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synkronoi B1 Adminin henkilöt ja ryhmä- tai tallennettujen listojen jäsenyydet Mailchimp-yleisöön tunnisteina. Mukana asennus, tuonti ja vianmääritys."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Kun teet alkulatauksen Mailchimpin tuojan kautta, pidät suostumuskysymyksen omi
 
 ## Muut reseptit (Zapier / Make)
 
-Kaikki, mikä ylittää yleisön synkronoinnin, on edelleen käytettävissä [Zapierin](../zapier) tai [Maken](../make) kautta. Näin on esimerkiksi antajien merkitseminen tapahtumalla `donation.created`, käänteinen suunta Mailchimp → B1 tai synkronointi kokonaan toiseen sähköpostialustaan, kuten Constant Contactiin tai Brevoon. Nämä käynnistyvät samoista webhook-tapahtumista:
+Kaikki, mikä ylittää yleisön synkronoinnin, on edelleen käytettävissä [Zapierin](../zapier.md) tai [Maken](../make.md) kautta. Näin on esimerkiksi antajien merkitseminen tapahtumalla `donation.created`, käänteinen suunta Mailchimp → B1 tai synkronointi kokonaan toiseen sähköpostialustaan, kuten Constant Contactiin tai Brevoon. Nämä käynnistyvät samoista webhook-tapahtumista:
 
 - **Merkitse antajat:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Kaksisuuntainen:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Jos olet aiemmin kytkenyt henkilö- ja ryhmäsynkronoinnin Zapierin kautta, kytk
 
 - [Webhookit (kehittäjän viiteopas)](/docs/developer/api/webhooks): moottori tämän taustalla, tapahtumaluettelo sekä toimituksen ja uudelleenyritysten toiminta
 - [Tallennetut listat](/docs/b1-admin/people/lists): sääntöihin perustuvat yleisöt, jotka sopivat luontevasti Mailchimp-tunnisteiksi
-- [Zapier (yleiskatsaus)](../zapier): reseptit yleisön synkronoinnin ylittäviin tarpeisiin
+- [Zapier (yleiskatsaus)](../zapier.md): reseptit yleisön synkronoinnin ylittäviin tarpeisiin

@@ -1,5 +1,6 @@
 ---
 title: "Tilihistoria"
+description: "Tarkista B1 Adminin lokitiedot: kuka kirjautui sisään, muokkasi henkilötietoja tai muutti oikeuksia. Vie suodatetut merkinnät CSV-tiedostoon."
 ---
 
 # Tilihistoria
@@ -78,6 +79,6 @@ Tarkastele tilihistoriaa säännöllisesti, erityisesti uusien tiimin jäsenten 
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Roolit ja käyttöoikeudet](../settings/roles-permissions) -- Hallitse, kenellä on pääsy mihinkin
-- [Tietoturva](../settings/data-security) -- Tutustu siihen, miten tietojasi suojataan
+- [Roolit ja käyttöoikeudet](../settings/roles-permissions.md) -- Hallitse, kenellä on pääsy mihinkin
+- [Tietoturva](../settings/data-security.md) -- Tutustu siihen, miten tietojasi suojataan
 - [Raporttien yleiskatsaus](./index.md) -- Katso kaikki käytettävissä olevat raportit

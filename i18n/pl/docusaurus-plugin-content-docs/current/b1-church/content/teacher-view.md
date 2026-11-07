@@ -1,5 +1,6 @@
 ---
 title: "Widok nauczyciela dla lekcji"
+description: "Otwórz lekcję w widoku nauczyciela na pełnym ekranie z planu na B1.church, przechodź między sekcjami, odtwarzaj multimedia i pobieraj materiały do zajęć."
 ---
 
 # Widok nauczyciela dla lekcji

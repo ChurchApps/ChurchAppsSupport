@@ -1,5 +1,6 @@
 ---
 title: "Kufakwa Kwetinhlelo Teselula"
+description: "Chaza kwakhiwa kwemakhephu e-Android ne-iOS e-B1 Mobile nge-Expo EAS, kuwafake ngetinhlelo letitolo, nekuphusha kuvuselelwa kwe-OTA."
 ---
 
 # Kufakwa Kwetinhlelo Teselula
@@ -13,7 +14,7 @@ Tinhlelo teselula te-ChurchApps takhiwa futsi tifakwa kusetjentiswa i-**Expo EAS
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- Hlela uhlelo lweselula ngasekhaya -- bona [B1 Mobile](../mobile/b1-mobile)
+- Hlela uhlelo lweselula ngasekhaya -- bona [B1 Mobile](../mobile/b1-mobile.md)
 - Faka futsi uhlele i-[EAS CLI](https://docs.expo.dev/eas/)
 - Yiba nemfinyelelo ku-Google Play Console (Android) kanye/nome i-Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Kukhohlwa kubuyeketa tinombolo tevasyini kuwo onkhe emafayela kutokwenta kwehlul
 
 ## Emahloko Lahlobene
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Umhlahlandlela wekuhlelwa nekutfutfukiswa kwasekhaya
-- **[Kufakwa Kwe-API](./apis)** -- Kufaka ema-backend API
-- **[Kufakwa Kwe-Web App](./web-apps)** -- Kufaka tinhlelo te-frontend te-web
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Umhlahlandlela wekuhlelwa nekutfutfukiswa kwasekhaya
+- **[Kufakwa Kwe-API](./apis.md)** -- Kufaka ema-backend API
+- **[Kufakwa Kwe-Web App](./web-apps.md)** -- Kufaka tinhlelo te-frontend te-web

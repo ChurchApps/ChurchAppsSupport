@@ -1,5 +1,6 @@
 ---
 title: "Viestinnän päätepisteet"
+description: "Viiteopas ChurchApps-viestintä-API:n päätepisteille: keskustelut, muistiinpanojen käyttösäännöt, tekstiviestit, sähköpostipohjat, ilmoitukset ja laitteet."
 ---
 
 # Viestinnän päätepisteet
@@ -190,7 +191,7 @@ Peruspolku: `/messaging/notificationpreferences`
 
 Peruspolku: `/messaging/connections`
 
-Hallinnoi WebSocket- ja reaaliaikaisia yhteyksiä chatille, ryhmäkeskusteluille, yksityisviesteille ja suoratoistolle. Katso koko protokolla kohdasta [Reaaliaikainen arkkitehtuuri](../../realtime).
+Hallinnoi WebSocket- ja reaaliaikaisia yhteyksiä chatille, ryhmäkeskusteluille, yksityisviesteille ja suoratoistolle. Katso koko protokolla kohdasta [Reaaliaikainen arkkitehtuuri](../../realtime.md).
 
 | Metodi | Polku | Todennus | Käyttöoikeus | Kuvaus |
 |--------|------|------|------|------|
@@ -367,9 +368,9 @@ Seuraa lähetettyjen viestien (tekstiviestit, push-ilmoitukset, sähköposti) to
 
 ## Aiheeseen liittyvät sivut
 
-- [Reaaliaikainen arkkitehtuuri](../../realtime) -- WebSocket-protokolla, huonetilaukset ja yhtenäinen toimituskehys
-- [Web-push-ilmoitukset](../../web-push) -- Selaimen push-rekisteröinti ja toimitus
-- [Jäsenyyden päätepisteet](./membership) -- Henkilöt, ryhmät, roolit ja ydintunnistus
-- [Osallistumisen päätepisteet](./attendance) -- Palveluiden ja käyntien seuranta
-- [Todennus ja käyttöoikeudet](./authentication) -- Kirjautumisvirta, JWT, OAuth ja oikeusmalli
-- [Moduulirakenne](../module-structure) -- Koodin järjestämisen mallit
+- [Reaaliaikainen arkkitehtuuri](../../realtime.md) -- WebSocket-protokolla, huonetilaukset ja yhtenäinen toimituskehys
+- [Web-push-ilmoitukset](../../web-push.md) -- Selaimen push-rekisteröinti ja toimitus
+- [Jäsenyyden päätepisteet](./membership.md) -- Henkilöt, ryhmät, roolit ja ydintunnistus
+- [Osallistumisen päätepisteet](./attendance.md) -- Palveluiden ja käyntien seuranta
+- [Todennus ja käyttöoikeudet](./authentication.md) -- Kirjautumisvirta, JWT, OAuth ja oikeusmalli
+- [Moduulirakenne](../module-structure.md) -- Koodin järjestämisen mallit

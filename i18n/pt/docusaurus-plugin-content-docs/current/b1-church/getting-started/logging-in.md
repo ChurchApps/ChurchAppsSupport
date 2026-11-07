@@ -1,5 +1,7 @@
 ---
-title: "Entrando"
+title: "Como Fazer Login no B1.church e no Portal de Membros"
+sidebar_label: "Entrando"
+description: "Entre no seu portal de membros do B1.church, use códigos de dois fatores ou login único, redefina uma senha esquecida e saia pelo menu da conta."
 ---
 
 # Entrando
@@ -13,7 +15,7 @@ Entrar no B1.church dá acesso ao portal de membros, onde você pode ver o que e
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Você precisa de uma conta do ChurchApps. Veja [Primeiros passos](../getting-started/) para criar uma.
+- Você precisa de uma conta do ChurchApps. Veja [Primeiros passos](./index.md) para criar uma.
 - Você precisa do endereço B1.church da sua igreja (por exemplo, `https://suaigreja.b1.church`).
 
 </div>
@@ -35,7 +37,7 @@ Você continua conectado no mesmo navegador ou aplicativo instalado até sair, m
 
 ## Acessando o portal de membros
 
-Depois de entrar, você pode acessar o portal de membros clicando no seu **nome** no canto superior direito da página e selecionando **Portal de membros** no menu. O portal de membros é onde ficam todas as suas ferramentas pessoais da igreja, incluindo o seu [painel Início](./navigating.md), a página [Eu](./me-page.md), os [grupos](../groups/), as [doações](../giving/) e muito mais.
+Depois de entrar, você pode acessar o portal de membros clicando no seu **nome** no canto superior direito da página e selecionando **Portal de membros** no menu. O portal de membros é onde ficam todas as suas ferramentas pessoais da igreja, incluindo o seu [painel Início](./navigating.md), a página [Eu](./me-page.md), os [grupos](../groups/index.md), as [doações](../giving/index.md) e muito mais.
 
 ## Seu menu do usuário
 

@@ -1,5 +1,6 @@
 ---
 title: "Opslag af medlemmer"
+description: "Find din familie på B1 Checkin-kiosken ved at søge med telefonnummerets cifre eller navn, og registrér dig som gæst, hvis du er første gang."
 ---
 
 # Opslag af medlemmer
@@ -13,7 +14,7 @@ Efter valg af en servin ankommer du til medlems opslags skærmen. Her søger du 
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Vælg en servin](./selecting-service) fra servin skærmen
+- [Vælg en servin](./selecting-service.md) fra servin skærmen
 - Sørg for, at din husstand er blevet [tilføjet til systemet](../../b1-admin/people/adding-people.md) af en kirke administrator
 
 </div>
@@ -45,7 +46,7 @@ Appen søger efter medlemmer, hvis navn matcher hvad du skrev.
 
 Søge resultater vises som kort under søge feltet. Hvert kort viser personens **navn** og **foto** (hvis en er på fil).
 
-Tryk på et persons kort for at vælge dem. Appen indlæser alle medlemmer af denne persons husstand og tager dig til [husstands oversigten](./household-review).
+Tryk på et persons kort for at vælge dem. Appen indlæser alle medlemmer af denne persons husstand og tager dig til [husstands oversigten](./household-review.md).
 
 :::tip
 Søgning efter de sidste 4 cifre af et telefonnummer er den hurtigste måde at slå din familie op på. Opfordr medlemmer til at bruge denne metode til en hurtigere check-in oplevelse.
@@ -57,4 +58,4 @@ Hvis ingen resultater findes, viser appen en besked, der lader dig vide det. Dob
 
 ## Næste trin
 
-Efter valg af en person vil du [gennemgå din husstand](./household-review) og administrere gruppe tildelinger.
+Efter valg af en person vil du [gennemgå din husstand](./household-review.md) og administrere gruppe tildelinger.

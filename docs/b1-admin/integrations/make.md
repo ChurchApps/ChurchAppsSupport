@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Connect B1 Admin to Make to automate workflows: create an API key, set up the B1.church trigger and actions, and troubleshoot common errors."
 ---
 
 # Make
@@ -110,6 +111,6 @@ The B1.church Make app is open source — the JSON definitions live in the `B1In
 
 ## See Also
 
-- [Zapier](./zapier) — same pattern with a simpler UI and a larger app catalog
-- [Slack & Discord](./slack-discord) — built-in chat notifications without Make
+- [Zapier](./zapier.md) — same pattern with a simpler UI and a larger app catalog
+- [Slack & Discord](./slack-discord.md) — built-in chat notifications without Make
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

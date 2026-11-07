@@ -1,5 +1,7 @@
 ---
-title: "Predikningar"
+title: "Bläddra bland predikningar på din B1.church-webbplats"
+sidebar_label: "Predikningar"
+description: "Bläddra bland och titta på inspelade predikningar från din kyrkas bibliotek på B1.church-webbplatsen, grupperade i serier eller spellistor. Ingen inloggning krävs."
 ---
 
 # Predikningar

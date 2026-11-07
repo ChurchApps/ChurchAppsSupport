@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Nastavitve profila in naprave v B1 Admin"
+sidebar_label: "Profil"
+description: "Posodobite ime, e-pošto, geslo, dvostopenjsko prijavo, temo in povezane naprave v svojem profilu B1 Admin ter odobrite spremembe profilov članov."
 ---
 
 # Profil

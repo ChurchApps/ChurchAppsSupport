@@ -1,5 +1,6 @@
 ---
 title: "Web Push-meldingen"
+description: "Stel VAPID-sleutels, de WebPushHelper-client en service worker-afhandeling in, zodat B1.church en B1 Admin browserpushmeldingen naar leden kunnen sturen."
 ---
 
 # Web Push-meldingen
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Gerelateerde pagina's
 
-- [Architectuur van meldingen](./architecture/notifications): de volledige trechter voor in-app-, push- en e-mailescalatie, en de herinneringsengine
-- [Realtime-architectuur](./realtime): WebSocket-aflevering. Push wordt nu vanuit dezelfde in-app-trechter afgevuurd, naast socketaflevering in dezelfde ronde, en niet alleen als reserve wanneer een socketaflevering niet slaagt
-- [Messaging-eindpunten](./api/endpoints/messaging): meldingen, apparaten en de rest van het messaging-oppervlak
-- [AppHelper](./shared-libraries/app-helper): het npm-pakket dat `WebPushHelper` bevat
+- [Architectuur van meldingen](./architecture/notifications.md): de volledige trechter voor in-app-, push- en e-mailescalatie, en de herinneringsengine
+- [Realtime-architectuur](./realtime.md): WebSocket-aflevering. Push wordt nu vanuit dezelfde in-app-trechter afgevuurd, naast socketaflevering in dezelfde ronde, en niet alleen als reserve wanneer een socketaflevering niet slaagt
+- [Messaging-eindpunten](./api/endpoints/messaging.md): meldingen, apparaten en de rest van het messaging-oppervlak
+- [AppHelper](./shared-libraries/app-helper.md): het npm-pakket dat `WebPushHelper` bevat

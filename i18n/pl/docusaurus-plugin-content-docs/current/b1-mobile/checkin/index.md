@@ -1,5 +1,7 @@
 ---
-title: "Zameldowanie"
+title: "Zameldowanie w kościele przez aplikację B1 Mobile"
+sidebar_label: "Zameldowanie"
+description: "Zamelduj siebie i swoje gospodarstwo domowe na nabożeństwach w aplikacji B1 Mobile, wybierając nabożeństwa i grupy przed przyjściem."
 ---
 
 # Zameldowanie
@@ -16,7 +18,7 @@ Proces zameldowania to szybka, wieloetapowa procedura, która prowadzi Cię prze
 
 ## Pierwsze kroki
 
-Aby otworzyć zameldowanie, przejdź do sekcji **Zameldowanie** w aplikacji B1 Mobile. Aby korzystać z tej funkcji, musisz być zalogowany. Jeśli nie jesteś zalogowany, najpierw zostaniesz poproszony o [zalogowanie się](../getting-started/logging-in).
+Aby otworzyć zameldowanie, przejdź do sekcji **Zameldowanie** w aplikacji B1 Mobile. Aby korzystać z tej funkcji, musisz być zalogowany. Jeśli nie jesteś zalogowany, najpierw zostaniesz poproszony o [zalogowanie się](../getting-started/logging-in.md).
 
 :::info
 Funkcja zameldowania wymaga, aby Twój kościół skonfigurował nabożeństwa i grupy obecności w ustawieniach administracyjnych. Jeśli po otwarciu ekranu zameldowania nie widzisz żadnych nabożeństw, Twój kościół może jeszcze nie mieć skonfigurowanej tej funkcji. Pomocy udzieli administrator kościoła.
@@ -30,4 +32,4 @@ Funkcja zameldowania wymaga, aby Twój kościół skonfigurował nabożeństwa i
 
 ## Następne kroki
 
-- [Samodzielne zameldowanie](./self-checkin) -- Instrukcja krok po kroku, jak zameldować się ze swojego telefonu
+- [Samodzielne zameldowanie](./self-checkin.md) -- Instrukcja krok po kroku, jak zameldować się ze swojego telefonu

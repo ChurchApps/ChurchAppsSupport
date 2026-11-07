@@ -1,5 +1,6 @@
 ---
 title: "Pranešimai"
+description: "Nustatykite B1 Mobile programėlės pranešimus, tada peržiūrėkite, atidarykite ir išvalykite bažnyčios pranešimus apie žinutes, grupes ir tarnystę."
 ---
 
 # Pranešimai
@@ -13,7 +14,7 @@ B1 Mobile naudoja push pranešimus, kad informuotų jus apie tai, kas vyksta jū
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
 - Įrenginio nustatymuose leiskite B1 Mobile pranešimus
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile naudoja push pranešimus, kad informuotų jus apie tai, kas vyksta jū
 
 Pranešimai gali apimti įvairią veiklą, įskaitant:
 
-- **Žinutės** -- kai kas nors jums išsiunčia [privačią žinutę](./messaging).
-- **Grupių veikla** -- atnaujinimai, įrašai ir pokalbiai iš [grupių](../groups/), kurioms priklausote.
+- **Žinutės** -- kai kas nors jums išsiunčia [privačią žinutę](./messaging.md).
+- **Grupių veikla** -- atnaujinimai, įrašai ir pokalbiai iš [grupių](../groups/index.md), kurioms priklausote.
 - **Tarnystės paskyrimai** -- kai esate paskirtas į [planą](../serving/viewing-plans.md) arba kai pasikeičia jūsų paskyrimo būsena.
 - **Kiti atnaujinimai** -- bendri pranešimai ir jums aktuali veikla.
 

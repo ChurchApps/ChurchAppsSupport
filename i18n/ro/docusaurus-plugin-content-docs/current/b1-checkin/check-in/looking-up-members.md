@@ -1,5 +1,6 @@
 ---
 title: "Căutarea membrilor"
+description: "Găsește familia la chioșcul B1 Checkin căutând după cifrele telefonului sau după nume și înregistrează-te ca oaspete dacă ești vizitator pentru prima dată."
 ---
 
 # Căutarea membrilor
@@ -13,7 +14,7 @@ După ce selectați un serviciu, ajungeți pe ecranul de căutare a membrilor. A
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Selectați un serviciu](./selecting-service) de pe ecranul serviciilor
+- [Selectați un serviciu](./selecting-service.md) de pe ecranul serviciilor
 - Asigurați-vă că gospodăria dvs. a fost [adăugată în sistem](../../b1-admin/people/adding-people.md) de un administrator al bisericii
 
 </div>
@@ -45,7 +46,7 @@ Aplicația caută membrii al căror nume corespunde textului introdus.
 
 Rezultatele căutării apar sub formă de carduri sub câmpul de căutare. Fiecare card afișează **numele** persoanei și **fotografia** acesteia (dacă există una înregistrată).
 
-Atingeți cardul unei persoane pentru a o selecta. Aplicația încarcă toți membrii gospodăriei acelei persoane și vă duce la [ecranul de verificare a gospodăriei](./household-review).
+Atingeți cardul unei persoane pentru a o selecta. Aplicația încarcă toți membrii gospodăriei acelei persoane și vă duce la [ecranul de verificare a gospodăriei](./household-review.md).
 
 :::tip
 Căutarea după ultimele 4 cifre ale numărului de telefon este cea mai rapidă modalitate de a vă găsi familia. Încurajați membrii să folosească această metodă pentru o experiență de check-in mai rapidă.
@@ -60,7 +61,7 @@ Dacă nu se găsesc rezultate, aplicația afișează un mesaj care vă anunță 
 Dacă biserica dvs. are activată înregistrarea prin cod QR pentru vizitatori, pe ecranul de căutare apare sub câmpul de căutare un link **Înregistrează-te ca vizitator**. Vizitatorii care vin pentru prima dată pot să-l folosească pentru a-și adăuga familia în sistemul bisericii înainte de a face check-in.
 
 1. Atingeți **Înregistrează-te ca vizitator**. Se deschide o fereastră cu un cod QR și mesajul „Scanați pentru a vă înregistra ca vizitator”.
-2. Alegeți cum doriți să completați [formularul de înregistrare a vizitatorilor](../../b1-church/checkin/guest-registration):
+2. Alegeți cum doriți să completați [formularul de înregistrare a vizitatorilor](../../b1-church/checkin/guest-registration.md):
    - **Pe telefonul dvs.** -- Scanați codul QR, completați formularul pe telefon și atingeți **OK** pentru a închide fereastra.
    - **Pe chiosc** -- Atingeți **Înregistrează-te aici** pentru a deschide același formular direct pe tabletă. Completați-l și atingeți **Înregistrează**, apoi atingeți **Gata** (sau săgeata înapoi) pentru a reveni la ecranul de căutare.
 3. Odată înregistrat, căutați-vă familia după nume sau număr de telefon pentru a face check-in.
@@ -71,7 +72,7 @@ Formularul deschis cu **Înregistrează-te aici** rămâne pe pagina de înregis
 
 ## Tipărirea etichetelor pentru un check-in de pe telefon
 
-Familiile care s-au înregistrat deja pe telefon prin [check-in-ul automat din B1 Church](../../b1-church/checkin/self-checkin) își pot tipări etichetele cu nume la chiosc, fără să se mai caute.
+Familiile care s-au înregistrat deja pe telefon prin [check-in-ul automat din B1 Church](../../b1-church/checkin/self-checkin.md) își pot tipări etichetele cu nume la chiosc, fără să se mai caute.
 
 1. Pe ecranul de căutare, atingeți butonul **Scanează codul** (pictograma codului QR).
 2. Țineți codul QR de pe telefon în fața camerei. Dacă aplicația solicită acces la cameră, atingeți **Permite camera**. Implicit se folosește camera frontală; atingeți butonul de schimbare pentru a comuta.
@@ -81,4 +82,4 @@ Scanarea tipărește doar etichetele -- prezența a fost deja înregistrată câ
 
 ## Pasul următor
 
-După ce selectați o persoană, veți [verifica gospodăria](./household-review) și veți gestiona atribuirile la grupuri.
+După ce selectați o persoană, veți [verifica gospodăria](./household-review.md) și veți gestiona atribuirile la grupuri.

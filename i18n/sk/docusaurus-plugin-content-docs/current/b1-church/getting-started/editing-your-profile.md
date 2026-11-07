@@ -1,5 +1,7 @@
 ---
-title: "Úprava vášho profilu"
+title: "Úprava profilu v členskom portáli B1.church"
+sidebar_label: "Úprava vášho profilu"
+description: "Aktualizujte kontaktné údaje, členov domácnosti, prihlasovací e-mail a heslo a nastavenia súkromia v členskom portáli B1.church."
 ---
 
 # Úprava vášho profilu

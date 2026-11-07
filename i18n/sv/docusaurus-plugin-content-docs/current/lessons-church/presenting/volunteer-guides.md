@@ -1,5 +1,6 @@
 ---
 title: "Guider för frivilliga"
+description: "Ställ in rollspecifika guider i Lessons.church så att varje volontär bara ser sina egna steg, och skriv ut eller dela dem före lektionen."
 ---
 
 # Guider för frivilliga

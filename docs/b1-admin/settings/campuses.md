@@ -1,5 +1,6 @@
 ---
 title: "Campuses"
+description: "Set up campuses in B1 Admin to track which site each person and group belongs to, then filter people, attendance, and demographics by location."
 ---
 
 # Campuses

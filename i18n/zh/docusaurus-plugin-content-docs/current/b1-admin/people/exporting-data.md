@@ -1,5 +1,6 @@
 ---
 title: "导出数据"
+description: "从 B1 Admin 导出人员 CSV、小组成员名单或完整的 B1 数据库备份，并了解 B1 Export Zip 包含的内容。"
 ---
 
 # 导出数据

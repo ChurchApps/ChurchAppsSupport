@@ -1,5 +1,6 @@
 ---
 title: "Configuración de Privacidad"
+description: "Controle qué datos de su perfil, como teléfono, correo electrónico y dirección, pueden ver otros miembros en el directorio de B1 Mobile, y revise los cambios pendientes."
 ---
 
 # Configuración de Privacidad
@@ -13,7 +14,7 @@ La pestaña **Visibilidad** en tu pantalla de Perfil te permite controlar lo que
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 
 </div>
 
@@ -52,8 +53,8 @@ La pestaña **Cuenta** proporciona acceso a tu configuración de seguridad. Usa 
 
 | Pestaña | Propósito |
 |---|---|
-| **Perfil** | [Editar tu información personal](./editing-profile) y foto |
-| **Hogar** | [Ver tus miembros familiares](./household) |
+| **Perfil** | [Editar tu información personal](./editing-profile.md) y foto |
+| **Hogar** | [Ver tus miembros familiares](./household.md) |
 | **Visibilidad** | Controlar lo que otros ven en el directorio |
 | **Pendientes** | Revisar cambios de perfil en espera de aprobación |
 | **Cuenta** | Administrar configuración de seguridad |
@@ -62,6 +63,6 @@ Estas pestañas trabajan juntas para darte control total sobre tu información p
 
 ## Artículos Relacionados
 
-- [Editar tu Perfil](./editing-profile) -- Actualiza tu información personal
-- [Hogar](./household) -- Consulta y administra tus miembros familiares
+- [Editar tu Perfil](./editing-profile.md) -- Actualiza tu información personal
+- [Hogar](./household.md) -- Consulta y administra tus miembros familiares
 - [Directorio de Miembros](../community/member-directory.md) -- Ve cómo tu perfil aparece para otros

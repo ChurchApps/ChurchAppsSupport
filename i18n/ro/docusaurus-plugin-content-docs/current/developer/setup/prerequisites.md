@@ -1,5 +1,6 @@
 ---
 title: "Cerințe preliminare"
+description: "Instalați Node.js, npm, Git și uneltele platformei înainte de a lucra local la proiecte ChurchApps precum B1 Admin, Lessons.church, FreePlay sau API-ul."
 ---
 
 # Cerințe preliminare
@@ -13,7 +14,7 @@ Instrumentele de care aveți nevoie depind de proiectele la care plănuiți să 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Consultați [Prezentarea generală a proiectelor](./project-overview) pentru a stabili la ce proiecte doriți să lucrați
+- Consultați [Prezentarea generală a proiectelor](./project-overview.md) pentru a stabili la ce proiecte doriți să lucrați
 - Aveți nevoie de acces de administrator pe computerul de dezvoltare pentru a instala software-ul
 
 </div>
@@ -40,7 +41,7 @@ Dacă intenționați să rulați API-ul local (în loc să folosiți API-urile d
 |------|---------|-------|
 | **MySQL** | 8.0+ | Fiecare modul al API-ului folosește propria bază de date |
 
-Veți avea nevoie de șase baze de date pentru API-ul de bază: `membership`, `attendance`, `content`, `giving`, `messaging` și `doing`. API-ul include scripturi pentru inițializarea schemei -- consultați ghidul [configurarea locală a API-ului](../api/local-setup).
+Veți avea nevoie de șase baze de date pentru API-ul de bază: `membership`, `attendance`, `content`, `giving`, `messaging` și `doing`. API-ul include scripturi pentru inițializarea schemei -- consultați ghidul [configurarea locală a API-ului](../api/local-setup.md).
 
 ## Dezvoltarea aplicațiilor mobile
 
@@ -110,5 +111,5 @@ mysql --version   # Necesar doar pentru dezvoltarea locală a API-ului
 
 ## Pașii următori
 
-- **[Prezentarea generală a proiectelor](./project-overview)** -- Vedeți toate proiectele și ce fac
-- **[Variabile de mediu](./environment-variables)** -- Configurați fișierele `.env`
+- **[Prezentarea generală a proiectelor](./project-overview.md)** -- Vedeți toate proiectele și ce fac
+- **[Variabile de mediu](./environment-variables.md)** -- Configurați fișierele `.env`

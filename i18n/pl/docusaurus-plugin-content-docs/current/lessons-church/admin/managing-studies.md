@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie studiami"
+description: "Tworzenie, edycja i kategoryzacja studiów w programie w panelu Lessons.church oraz dołączanie do nich przeglądów serii lub szablonów biuletynów."
 ---
 
 # Zarządzanie studiami

@@ -1,5 +1,6 @@
 ---
 title: "Descripción General de Planes"
+description: "Obtén una vista general de las asignaciones de voluntarios en muchas fechas de servicio en B1 Admin, detecta posiciones sin cubrir y completa o envía correos a tu equipo desde una sola cuadrícula."
 ---
 
 # Descripción General de Planes

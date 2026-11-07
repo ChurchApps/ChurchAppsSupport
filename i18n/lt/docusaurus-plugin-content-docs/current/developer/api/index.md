@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "ChurchApps API modulinio monolito dizainas, šeši duomenų moduliai, technologijų stekas, prievadai ir Lambda funkcijos, su nuorodomis į kūrėjų dokumentus."
 ---
 
 # API
@@ -52,8 +53,8 @@ Diegiant į AWS, API veikia kaip šešios Lambda funkcijos:
 
 API priklauso nuo dviejų bendrųjų ChurchApps paketų:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- bazinės pagalbinės priemonės (DateHelper, ApiHelper ir kt.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express serverio pagalbinės priemonės, įskaitant autentifikaciją, duomenų bazės pagalbines funkcijas ir AWS integracijas
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- bazinės pagalbinės priemonės (DateHelper, ApiHelper ir kt.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express serverio pagalbinės priemonės, įskaitant autentifikaciją, duomenų bazės pagalbines funkcijas ir AWS integracijas
 
 :::info
 API naudoja ES modulius (`package.json` faile nurodyta `"type": "module"`). Įsitikinkite, kad jūsų importai naudoja ES modulių sintaksę.
@@ -61,11 +62,11 @@ API naudoja ES modulius (`package.json` faile nurodyta `"type": "module"`). Įsi
 
 ## Šis skyrius
 
-- **[Vietinis diegimas](./local-setup)** -- klonuokite, sukonfigūruokite ir paleiskite API lokaliai
-- **[Duomenų bazė](./database)** -- architektūra su atskira duomenų baze kiekvienam moduliui, schemos skriptai ir duomenų prieigos modeliai
-- **[Modulio struktūra](./module-structure)** -- valdikliai, saugyklos, modeliai ir autentifikacija
-- **[API raktai](./api-keys)** -- asmeniniai prieigos žetonai skriptams ir jungtims
-- **[Susietos programos (OAuth)](./connected-apps)** -- daugianuomininkė OAuth eiga trečiųjų šalių programoms
-- **[Webhook'ai](./webhooks)** -- įvykių pranešimų siuntimas išorinėms sistemoms
-- **[MCP serveris](./mcp)** -- Model Context Protocol galinis taškas, atveriantis API DI asistentams
-- **[Galinių taškų žinynas](./endpoints/)** -- pilna REST API dokumentacija visiems moduliams
+- **[Vietinis diegimas](./local-setup.md)** -- klonuokite, sukonfigūruokite ir paleiskite API lokaliai
+- **[Duomenų bazė](./database.md)** -- architektūra su atskira duomenų baze kiekvienam moduliui, schemos skriptai ir duomenų prieigos modeliai
+- **[Modulio struktūra](./module-structure.md)** -- valdikliai, saugyklos, modeliai ir autentifikacija
+- **[API raktai](./api-keys.md)** -- asmeniniai prieigos žetonai skriptams ir jungtims
+- **[Susietos programos (OAuth)](./connected-apps.md)** -- daugianuomininkė OAuth eiga trečiųjų šalių programoms
+- **[Webhook'ai](./webhooks.md)** -- įvykių pranešimų siuntimas išorinėms sistemoms
+- **[MCP serveris](./mcp.md)** -- Model Context Protocol galinis taškas, atveriantis API DI asistentams
+- **[Galinių taškų žinynas](./endpoints/index.md)** -- pilna REST API dokumentacija visiems moduliams

@@ -1,5 +1,6 @@
 ---
 title: "FreePlay-sisällöntarjoaja"
+description: "Mitä sisällöntarjoajan on toimitettava, jotta materiaalikirjasto yhdistyy FreePlayhin: logo, kirjautuminen, katalogi- ja soittolistarajapinnat sekä mediamuodot."
 ---
 
 # FreePlay-sisällöntarjoaja

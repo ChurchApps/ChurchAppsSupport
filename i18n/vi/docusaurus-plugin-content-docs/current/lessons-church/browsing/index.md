@@ -1,5 +1,6 @@
 ---
 title: "Duyệt nội dung"
+description: "Cách duyệt thư viện giáo trình miễn phí Lessons.church không cần tài khoản: bố cục trang chủ, duyệt theo chương trình, tìm kiếm và nhà cung cấp ngoài."
 ---
 
 # Duyệt nội dung

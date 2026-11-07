@@ -1,5 +1,6 @@
 ---
 title: "AI paieška"
+description: "Ieškokite B1 Admin asmenų katalogo paprastais klausimais, pvz., kurie nariai nelankė tris mėnesius, vietoj filtrų kūrimo."
 ---
 
 # AI paieška

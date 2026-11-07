@@ -1,5 +1,7 @@
 ---
-title: "Mitgliederverzeichnis"
+title: "Mitgliederverzeichnis im B1.church-Mitgliederportal"
+sidebar_label: "Mitgliederverzeichnis"
+description: "Gemeindemitglieder im B1.church-Verzeichnis suchen und durchsehen, Profile und Haushaltsmitglieder anzeigen und sehen, wer Zugriff hat."
 ---
 
 # Mitgliederverzeichnis

@@ -1,5 +1,6 @@
 ---
 title: "Oppmøterapporter"
+description: "Bruk de tre oppmøterapportene i B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance), se hva hver viser, og kjør og eksporter dem."
 ---
 
 # Oppmøterapporter

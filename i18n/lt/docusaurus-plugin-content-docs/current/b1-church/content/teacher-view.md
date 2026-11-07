@@ -1,5 +1,6 @@
 ---
 title: "Mokytojo vaizdas pamokoms"
+description: "Atidarykite pamoką pilno ekrano Mokytojo rodinyje iš plano B1.church, tada pereikite tarp skyrių, paleiskite mediją ir atsisiųskite klasės medžiagą."
 ---
 
 # Mokytojo vaizdas pamokoms

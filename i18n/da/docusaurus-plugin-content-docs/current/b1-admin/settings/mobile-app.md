@@ -1,5 +1,6 @@
 ---
 title: "Mobile app indstillinger"
+description: "Konfigurér navigationsfaner, startskærmsfliser, login-prompt og privatlivsindstillinger for medlemsoversigten i B1.church-medlemsappen i B1 Admin."
 ---
 
 # Mobile app indstillinger

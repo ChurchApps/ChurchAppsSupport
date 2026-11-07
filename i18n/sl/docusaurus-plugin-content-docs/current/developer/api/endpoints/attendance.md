@@ -1,5 +1,6 @@
 ---
 title: "Končne točke za obiskanost"
+description: "Referenca API-ja za udeležbo v B1 Admin in B1 Checkin: kampusi, bogoslužja, časi bogoslužij, seje, obiski, pravila prijave in končne točke za izvoz."
 ---
 
 # Končne točke za obiskanost
@@ -270,6 +271,6 @@ Spremlja zaporedja obiskanosti posameznikov -- zaporedne tedne, v katerih je ose
 
 ## Sorodne strani
 
-- [Končne točke članstva](./membership) — Osebe, skupine, vloge in upravljanje cerkve
-- [Overjanje in dovoljenja](./authentication) — Potek prijave, JWT, model dovoljenj
-- [Struktura modula](../module-structure) — Vzorci organizacije kode
+- [Končne točke članstva](./membership.md) — Osebe, skupine, vloge in upravljanje cerkve
+- [Overjanje in dovoljenja](./authentication.md) — Potek prijave, JWT, model dovoljenj
+- [Struktura modula](../module-structure.md) — Vzorci organizacije kode

@@ -1,5 +1,7 @@
 ---
-title: "Veranstaltungen"
+title: "Gemeindeveranstaltungen und Anmeldung in B1 Mobile"
+sidebar_label: "Veranstaltungen"
+description: "Durchsuchen Sie kommende Gemeindeveranstaltungen in B1 Mobile und melden Sie sich selbst sowie Familienmitglieder für Termine mit offener Anmeldung an."
 ---
 
 # Veranstaltungen
@@ -23,10 +25,10 @@ Veranstaltungen können verschiedene Status haben:
 
 ## Was Sie benötigen
 
-- [B1 Mobile installiert](../getting-started/installing) und [angemeldet](../getting-started/logging-in)
+- [B1 Mobile installiert](../getting-started/installing.md) und [angemeldet](../getting-started/logging-in.md)
 - Ihre Kirche muss die Veranstaltungsregistrierung für die Veranstaltung aktiviert haben
 
 ## Weitere Informationen
 
-- [Registrierung für Veranstaltungen](./registering) -- Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung auf mobilen Geräten
-- [Self Check-In](../checkin/self-checkin) -- Melden Sie sich an, wenn Sie bei der Veranstaltung ankommen
+- [Registrierung für Veranstaltungen](./registering.md) -- Schritt-für-Schritt-Anleitung zur Anmeldung für eine Veranstaltung auf mobilen Geräten
+- [Self Check-In](../checkin/self-checkin.md) -- Melden Sie sich an, wenn Sie bei der Veranstaltung ankommen

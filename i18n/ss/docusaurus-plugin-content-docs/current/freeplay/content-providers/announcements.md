@@ -1,5 +1,6 @@
 ---
 title: "Tisaziso"
+description: "Phindzela ifolda yemasilayidi ku-FreePlay TV kutimemo tekuphuma ebhokisini nangaphambi kwesifundvo: khetha ifolda yomhlinzeki, uyigcine ihlanganisiwe, bese uyivala uma sewuqedile."
 ---
 
 # Tisaziso
@@ -13,7 +14,7 @@ FreePlay ingadlala ifoda lemaslayidi wetisaziso ku-TV yakho -- nasi sibonelo, es
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- [Xhuma kumhlinzeki wekuqukethwe](./connecting-providers) lobamba emaslayidi wakho wetisaziso, njengeDropbox noma OneDrive
+- [Xhuma kumhlinzeki wekuqukethwe](./connecting-providers.md) lobamba emaslayidi wakho wetisaziso, njengeDropbox noma OneDrive
 - Beka tifanekiso noma tividiyo lofuna kuphindwaphindwa ndzawonye esikhwameni esinye kulowo mhlinzeki
 
 </div>
@@ -37,7 +38,7 @@ Emaslayidi sekulandiwe, sitfombe se**Tisaziso** sivela eduze kwaphezulu kwebhalo
 - Ngemuva kwelisiladi lekugcina, kuphindwaphinda kuqale kulokwekucala
 - Uma ifoda linevidiyo linye kuphela, iphindwaphinda ngaphandle kwekuhamba
 
-Kuphindwaphinda kudlala emafayeleni agcinwe kumshini, ngako kuyaqhubeka nangaphandle kwesixhumanisi se-inthanethi. Ungasebentisa tilawuli letilawulo te-TV ifana nakunoma yikuphi lokunye kuqukethwe -- bona [Kudlala Lokuqukethwe](./playing-content).
+Kuphindwaphinda kudlala emafayeleni agcinwe kumshini, ngako kuyaqhubeka nangaphandle kwesixhumanisi se-inthanethi. Ungasebentisa tilawuli letilawulo te-TV ifana nakunoma yikuphi lokunye kuqukethwe -- bona [Kudlala Lokuqukethwe](./playing-content.md).
 
 ## Kubuyekeza Emaslayidi
 
@@ -61,6 +62,6 @@ Kukhipha umhlinzeki kuphindze kuvale tisaziso letitfolwe kuye.
 
 ## Tindzatjana Lebihlobene
 
-- **[Kuxhumana Kubahlinzeki](./connecting-providers)** - Xhuma umhlinzeki lobamba emaslayidi wakho
-- **[Kuhamba Nekulanda Lokuqukethwe](./browsing-content)** - Hamba emafoldeni omhlinzeki ubuye udlale lokuqukethwe uma ufuna
-- **[Kudlala Lokuqukethwe](./playing-content)** - Tilawuli te-player lesetjentiswa ngetilawuli te-TV yakho
+- **[Kuxhumana Kubahlinzeki](./connecting-providers.md)** - Xhuma umhlinzeki lobamba emaslayidi wakho
+- **[Kuhamba Nekulanda Lokuqukethwe](./browsing-content.md)** - Hamba emafoldeni omhlinzeki ubuye udlale lokuqukethwe uma ufuna
+- **[Kudlala Lokuqukethwe](./playing-content.md)** - Tilawuli te-player lesetjentiswa ngetilawuli te-TV yakho

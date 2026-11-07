@@ -1,5 +1,6 @@
 ---
 title: "Planlægning af kalenderen"
+description: "Opsæt en ugentlig eller engangsplan i FreePlay Admins kalender til at afspille playlister, gudstjenesteplaner eller udbydermapper på dine skærmgrupper, med standardløkker som reserve."
 ---
 
 # Planlægning af kalenderen
@@ -13,8 +14,8 @@ Siden **Kalender** i FreePlay Admin styrer, hvad hver skærmgruppe afspiller, og
 <div class="prereqs">
 <h4>Før du går i gang</h4>
 
-- Opret mindst én skærmgruppe. Se [Administration af skærme og grupper](./managing-screens#screen-groups)
-- [Byg en afspilningsliste](./building-playlists), eller sørg for, at en plantype er oprettet i B1 Admin
+- Opret mindst én skærmgruppe. Se [Administration af skærme og grupper](./managing-screens.md#screen-groups)
+- [Byg en afspilningsliste](./building-playlists.md), eller sørg for, at en plantype er oprettet i B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Hvis to planer overlapper hinanden, viser formularen en advarsel: **Overlapper m
 
 ## Sådan henter skærme ændringer
 
-Parrede skærme downloader alt, der er planlagt for de næste 7 dage, og de tjekker selv for ændringer. Du behøver ikke røre ved tv'et, efter du har redigeret kalenderen. For at se, hvornår en skærm har alt, den behøver, tjek **Klar til og med** på [Skærme-siden](./managing-screens).
+Parrede skærme downloader alt, der er planlagt for de næste 7 dage, og de tjekker selv for ændringer. Du behøver ikke røre ved tv'et, efter du har redigeret kalenderen. For at se, hvornår en skærm har alt, den behøver, tjek **Klar til og med** på [Skærme-siden](./managing-screens.md).
 
 ## Relaterede artikler
 
-- **[Byg afspilningslister](./building-playlists)** - Opret de afspilningslister, du planlægger
-- **[Planlagt afspilning på tv'et](./scheduled-playback)** - Sådan fungerer lærerstyrede lektioner og fjernbetjeningen på tv'et
-- **[Administration af skærme og grupper](./managing-screens)** - Tilføj grupper og tjek hver skærms downloads
+- **[Byg afspilningslister](./building-playlists.md)** - Opret de afspilningslister, du planlægger
+- **[Planlagt afspilning på tv'et](./scheduled-playback.md)** - Sådan fungerer lærerstyrede lektioner og fjernbetjeningen på tv'et
+- **[Administration af skærme og grupper](./managing-screens.md)** - Tilføj grupper og tjek hver skærms downloads
 - **[Behold kun en del af hver lektion](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Beskær alle planlagte lektioner i en plantype til de dele, dit lokale afspiller

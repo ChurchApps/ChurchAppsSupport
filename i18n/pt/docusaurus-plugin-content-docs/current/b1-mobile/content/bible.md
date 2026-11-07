@@ -1,5 +1,7 @@
 ---
-title: "Bíblia"
+title: "Lendo a Bíblia no B1 Mobile"
+sidebar_label: "Bíblia"
+description: "Use o leitor bíblico do B1 Mobile para abrir as Escrituras pelo menu lateral, navegar por livros, capítulos e versículos e achar a opção bíblica da igreja."
 ---
 
 # Bíblia
@@ -13,7 +15,7 @@ O B1 Mobile inclui um leitor de Bíblia integrado para que você possa ler as Es
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 - A sua igreja precisa ter o recurso Bíblia habilitado
 
 </div>
@@ -37,7 +39,7 @@ O leitor incorporado oferece controles para percorrer as Escrituras. Você pode:
 O leitor ocupa a tela inteira, dando bastante espaço para ler confortavelmente no seu dispositivo.
 
 :::tip
-Faça da tela da Bíblia parte da sua rotina diária -- é uma forma rápida de ler as Escrituras onde quer que você esteja. Combine-a com o [Versículo do Dia](./verse-of-the-day) para uma inspiração diária.
+Faça da tela da Bíblia parte da sua rotina diária -- é uma forma rápida de ler as Escrituras onde quer que você esteja. Combine-a com o [Versículo do Dia](./verse-of-the-day.md) para uma inspiração diária.
 :::
 
 ## Disponibilidade
@@ -46,6 +48,6 @@ A tela da Bíblia está disponível quando a sua igreja habilita este recurso. S
 
 ## Artigos relacionados
 
-- [Versículo do Dia](./verse-of-the-day) -- Veja um versículo bíblico diário
-- [Sermões](./sermons) -- Assista a sermões que complementam sua leitura da Bíblia
+- [Versículo do Dia](./verse-of-the-day.md) -- Veja um versículo bíblico diário
+- [Sermões](./sermons.md) -- Assista a sermões que complementam sua leitura da Bíblia
 - [FreePlay](/docs/freeplay/) -- Reproduza currículos estruturados em TVs de sala de aula (substitui a antiga tela de Lições no aplicativo, que foi descontinuada)

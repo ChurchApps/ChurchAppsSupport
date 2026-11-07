@@ -1,5 +1,6 @@
 ---
 title: "Playlist"
+description: "Raggruppa i sermoni in serie in B1 Admin, così i visitatori del tuo sito B1.church possono sfogliare e seguire ogni serie in ordine."
 ---
 
 # Playlist
@@ -39,10 +40,10 @@ Crea le tue playlist prima di aggiungere i sermoni. In questo modo puoi assegnar
 
 ## Aggiunta di Sermoni a una Playlist
 
-Quando [aggiungi o modifichi un sermone](managing-sermons), assegni il sermone a una playlist utilizzando il menu a discesa **Playlist**. Tutti i sermoni assegnati alla stessa playlist sono raggruppati insieme e visualizzati in ordine sul tuo sito web.
+Quando [aggiungi o modifichi un sermone](./managing-sermons.md), assegni il sermone a una playlist utilizzando il menu a discesa **Playlist**. Tutti i sermoni assegnati alla stessa playlist sono raggruppati insieme e visualizzati in ordine sul tuo sito web.
 
 :::info
-Puoi anche assegnare i sermoni alle playlist durante [Importazione in Blocco](bulk-import). Quando importi da YouTube o Vimeo, seleziona una playlist dal menu a discesa **Importa in Playlist** prima di fare clic su **Importa**.
+Puoi anche assegnare i sermoni alle playlist durante [Importazione in Blocco](./bulk-import.md). Quando importi da YouTube o Vimeo, seleziona una playlist dal menu a discesa **Importa in Playlist** prima di fare clic su **Importa**.
 :::
 
 ## Come Appaiono le Playlist sul Tuo Sito Web
@@ -55,5 +56,5 @@ Le playlist vengono visualizzate sul tuo sito web B1.church come collezioni sfog
 
 ## Passi Successivi
 
-- [Gestione dei Sermoni](managing-sermons) -- Aggiungi i singoli sermoni alle tue playlist
-- [Importazione in Blocco](bulk-import) -- Importa più sermoni e assegnali alle playlist
+- [Gestione dei Sermoni](./managing-sermons.md) -- Aggiungi i singoli sermoni alle tue playlist
+- [Importazione in Blocco](./bulk-import.md) -- Importa più sermoni e assegnali alle playlist

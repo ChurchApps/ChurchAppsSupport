@@ -1,5 +1,7 @@
 ---
-title: "Kucala"
+title: "Kuqala Ngeportal Yelilungu le-B1.church"
+sidebar_label: "Kucala"
+description: "Fumana sayithi yesonto lakho ye-B1.church, dala i-akhawunti yakho yelilungu, bese ubona lokutfolakalako ku-portal, kusukela emaqembuni nekunikela kuya ekungeneni nemacebo."
 ---
 
 # Kucala nge-B1.church

@@ -1,5 +1,6 @@
 ---
 title: "認証と権限"
+description: "インテグレーションを構築する開発者向けに、ChurchApps API の JWT ログイン、二段階認証、OAuth 2.0 のフロー、権限モデルを説明するリファレンスです。"
 ---
 
 # 認証と権限
@@ -244,7 +245,7 @@ API は、サードパーティとの連携のために OAuth 2.0 をサポー�
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | クライアント ID を指定してクライアントを取得します（シークレットは非表示） |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | クライアントを作成または更新します |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | クライアントを削除します |
-| POST | `/membership/oauth/register` | 公開 | — | MCP コネクタなどの公開クライアント向けの動的クライアント登録（RFC 7591）。[接続済みアプリ](../connected-apps#dynamic-client-registration)を参照してください |
+| POST | `/membership/oauth/register` | 公開 | — | MCP コネクタなどの公開クライアント向けの動的クライアント登録（RFC 7591）。[接続済みアプリ](../connected-apps.md#dynamic-client-registration)を参照してください |
 
 ### デバイス承認のエンドポイント
 
@@ -265,5 +266,5 @@ API では、認証の要否を決める 2 つのラッパー関数を使用し�
 
 ## 関連ページ
 
-- [モジュール構成](../module-structure) — コントローラー、リポジトリ、モデルの構成
-- [ローカルでのセットアップ](../local-setup) — 開発用にローカルで API を実行する方法
+- [モジュール構成](../module-structure.md) — コントローラー、リポジトリ、モデルの構成
+- [ローカルでのセットアップ](../local-setup.md) — 開発用にローカルで API を実行する方法

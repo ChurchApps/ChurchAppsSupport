@@ -1,5 +1,6 @@
 ---
 title: "Points de terminaison Membership"
+description: "Référence des points d’accès de l’API Membership : personnes, foyers, groupes, rôles, formulaires et paramètres, avec règles d’accès."
 ---
 
 # Points de terminaison Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Chemin de base : `/membership/users`
 
-Voir [Authentification et autorisations](./authentication) pour les points de terminaison de connexion, d'inscription et de gestion des mots de passe.
+Voir [Authentification et autorisations](./authentication.md) pour les points de terminaison de connexion, d'inscription et de gestion des mots de passe.
 
 | Méthode | Chemin | Auth | Autorisation | Description |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Chemin de base : `/membership/clientErrors`
 
 ## Pages connexes
 
-- [Authentification et autorisations](./authentication) — Flux de connexion, JWT, OAuth, modèle d'autorisations
-- [Points de terminaison Attendance](./attendance) — Suivi des services et des visites
-- [Structure des modules](../module-structure) — Modèles d'organisation du code
+- [Authentification et autorisations](./authentication.md) — Flux de connexion, JWT, OAuth, modèle d'autorisations
+- [Points de terminaison Attendance](./attendance.md) — Suivi des services et des visites
+- [Structure des modules](../module-structure.md) — Modèles d'organisation du code

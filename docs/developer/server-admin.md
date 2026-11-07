@@ -1,5 +1,6 @@
 ---
 title: "Server Administration"
+description: "For Server.Admin users only: reset two-factor sign-in, impersonate accounts, moderate Commons, and approve church email in B1 Admin."
 ---
 
 # Server Administration

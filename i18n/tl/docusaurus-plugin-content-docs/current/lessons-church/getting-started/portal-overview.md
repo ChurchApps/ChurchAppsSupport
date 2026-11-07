@@ -1,5 +1,6 @@
 ---
 title: "Pangkalahatang-tanaw ng Portal"
+description: "Libutin ang Lessons.church portal: hanapin ang classrooms, tingnan ang naka-iskedyul na aralin, mag-set up ng feed links, at puntahan ang External Providers."
 ---
 
 # Pangkalahatang-tanaw ng Portal

@@ -1,5 +1,6 @@
 ---
 title: "Presenteren"
+description: "Toon lessen op een beamer met Presenter Mode in Lessons.church, deel rolgebaseerde vrijwilligersgidsen en print materiaal vóór de les."
 ---
 
 # Presenteren

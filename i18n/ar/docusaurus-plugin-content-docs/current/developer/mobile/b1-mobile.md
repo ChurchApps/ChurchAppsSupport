@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "إعداد تطبيق B1 Mobile المبني بـ React Native وExpo وتشغيله محلياً، وضبط نقاط نهاية API، والبناء لنظامي Android وiOS. ملاحظة: تطبيق B1 Mobile مهجور."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile هو تطبيق الجوال الرئيسي لأعضاء الكنيس�
 <div class="prereqs">
 <h4>قبل البدء</h4>
 
-- ثبّت **Node.js** و**Expo CLI** -- راجع [المتطلبات الأساسية](../setup/prerequisites)
+- ثبّت **Node.js** و**Expo CLI** -- راجع [المتطلبات الأساسية](../setup/prerequisites.md)
 - ثبّت **Android Studio** (لمحاكي Android) أو **Xcode** (لمحاكي iOS)
-- اضبط عنوان واجهة البرمجة الخاصة بك (تجريبي أو محلي) -- راجع [متغيرات البيئة](../setup/environment-variables)
+- اضبط عنوان واجهة البرمجة الخاصة بك (تجريبي أو محلي) -- راجع [متغيرات البيئة](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ npm run update:production
 
 ## مقالات ذات صلة
 
-- **[نشر تطبيقات الجوال](../deployment/mobile)** -- دليل شامل لبناء تطبيقات الجوال وتقديمها ونشرها
-- **[متغيرات البيئة](../setup/environment-variables)** -- المرجع الكامل لإعدادات بيئة الجوال
+- **[نشر تطبيقات الجوال](../deployment/mobile.md)** -- دليل شامل لبناء تطبيقات الجوال وتقديمها ونشرها
+- **[متغيرات البيئة](../setup/environment-variables.md)** -- المرجع الكامل لإعدادات بيئة الجوال

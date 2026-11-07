@@ -1,5 +1,6 @@
 ---
 title: "Doing Eindpunten"
+description: "Eindpuntreferentie voor de Doing API achter dienstplannen, vrijwilligersopdrachten, taken en automatiseringen in B1 Admin, met paden, auth en rechten."
 ---
 
 # Doing Eindpunten
@@ -265,6 +266,6 @@ Proxy aanvragen naar externe inhoudsprovodders (bijv. ProPresenter, EasyWorship)
 
 ## Gerelateerde pagina's
 
-- [Lidmaatschap Eindpunten](./membership) — Mensen, groepen, rollen en toestemmingen
-- [Aanwezigheid Eindpunten](./attendance) — Service en bezoek tracering
-- [Modulestructuur](../module-structure) — Codeorganisatiepatronen
+- [Lidmaatschap Eindpunten](./membership.md) — Mensen, groepen, rollen en toestemmingen
+- [Aanwezigheid Eindpunten](./attendance.md) — Service en bezoek tracering
+- [Modulestructuur](../module-structure.md) — Codeorganisatiepatronen

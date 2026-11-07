@@ -1,5 +1,6 @@
 ---
 title: "Báo cáo quyên góp"
+description: "Xem tổng số dâng hiến, người ngừng dâng và chi tiết theo đợt trong B1 Admin với bảng tổng quan Donations Summary, màn hình Lapsed Givers và xuất CSV."
 ---
 
 # Báo cáo quyên góp

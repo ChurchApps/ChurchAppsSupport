@@ -1,5 +1,6 @@
 ---
 title: "Plany"
+description: "Sprawdź, do jakich planów służby jesteś przypisany w B1.church, zobacz swoje funkcje i daty oraz przyjmuj lub odrzucaj przydziały w portalu."
 ---
 
 # Plany

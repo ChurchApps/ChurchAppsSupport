@@ -1,5 +1,6 @@
 ---
 title: "Configurações do aplicativo móvel"
+description: "Configure abas de navegação, blocos da tela inicial, aviso de login e privacidade do diretório de membros do app B1.church no B1 Admin."
 ---
 
 # Configurações do aplicativo móvel

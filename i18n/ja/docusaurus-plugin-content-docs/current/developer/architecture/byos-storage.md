@@ -1,5 +1,6 @@
 ---
 title: "持ち込みストレージ（BYOS）"
+description: "B1 Admin で自分の Google Drive、Dropbox、OneDrive、または S3 互換バケットを接続すると、教会のファイルアップロードがプラットフォームの 100MB 制限を受けなくなります。"
 ---
 
 # 持ち込みストレージ（BYOS）
@@ -8,7 +9,7 @@ title: "持ち込みストレージ（BYOS）"
 
 ## プロバイダーの接続点
 
-BYOSは、[MinistryStuff](./ministrystuff) 向けに作られたストレージの接続点を再利用します。`Packages/apihelper` の `IStorageProvider` が、`content.storageProviders` テーブルをもとに `StorageResolver` によって教会ごとに解決されます。シングルトンの `churchapps` や `ministrystuff` プロバイダーとは異なり、BYOSプロバイダーは教会ごとの認証情報を保持するため、`StorageResolver.forChurch` はリクエストごとに、教会の行から実体を生成します。実装は `Api/src/modules/content/helpers/` にリゾルバーと並んで配置されています。`GoogleDriveStorageProvider`、`DropboxStorageProvider`、`OneDriveStorageProvider`、`S3CompatibleStorageProvider` のほか、OAuthトークン交換と単一実行のトークン更新（Dropboxはリフレッシュトークンを毎回ローテーションするため、`ProviderProxyController` と同じ方法で重複したリフレッシュを排除します）を担う `ByosAuth` があります。
+BYOSは、[MinistryStuff](./ministrystuff.md) 向けに作られたストレージの接続点を再利用します。`Packages/apihelper` の `IStorageProvider` が、`content.storageProviders` テーブルをもとに `StorageResolver` によって教会ごとに解決されます。シングルトンの `churchapps` や `ministrystuff` プロバイダーとは異なり、BYOSプロバイダーは教会ごとの認証情報を保持するため、`StorageResolver.forChurch` はリクエストごとに、教会の行から実体を生成します。実装は `Api/src/modules/content/helpers/` にリゾルバーと並んで配置されています。`GoogleDriveStorageProvider`、`DropboxStorageProvider`、`OneDriveStorageProvider`、`S3CompatibleStorageProvider` のほか、OAuthトークン交換と単一実行のトークン更新（Dropboxはリフレッシュトークンを毎回ローテーションするため、`ProviderProxyController` と同じ方法で重複したリフレッシュを排除します）を担う `ByosAuth` があります。
 
 `storageProviders` には認証情報が保存されます。OAuthの3点セット（`accessToken`、`refreshToken`、`tokenExpiresAt`）は暗号化されます。S3の場合は `apiKey`、`apiSecret`、そして `settings` のJSON（`{endpoint, region, bucket, publicBase}`）が使われます。トークンがクライアントに渡ることはありません。`GET /content/storage/providers` は機密情報を伏せ字にし、`connected` の真偽値を返します。
 

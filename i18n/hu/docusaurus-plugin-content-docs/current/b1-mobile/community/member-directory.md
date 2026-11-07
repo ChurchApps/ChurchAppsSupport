@@ -1,5 +1,7 @@
 ---
-title: "Tagsági könyvtár"
+title: "Tagkönyvtár a B1 Mobile alkalmazásban"
+sidebar_label: "Tagsági könyvtár"
+description: "Keress gyülekezeti tagokat a B1 Mobile tagkönyvtárában: böngészés ábécé szerint, keresés név alapján, profilok és háztartási hivatkozások megnyitása."
 ---
 
 # Tagsági könyvtár
@@ -13,7 +15,7 @@ A B1 Mobile tagsági könyvtára lehetővé teszi, hogy böngéssz és keress az
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 
 </div>
 
@@ -51,5 +53,5 @@ Az egyes profilokban látható információk az egyházad adatvédelmi és köny
 
 ## Kapcsolódó cikkek
 
-- [Üzenetküldés](./messaging) -- Privát üzenet küldése a könyvtárban megtalált személynek
+- [Üzenetküldés](./messaging.md) -- Privát üzenet küldése a könyvtárban megtalált személynek
 - [Adatvédelmi beállítások](../profile/privacy-settings.md) -- Szabályozd, mit láthatnak mások rólad a könyvtárban

@@ -1,5 +1,6 @@
 ---
 title: "Osoby"
+description: "Wyszukuj, dodawaj i edytuj członków w sekcji People w B1 Admin: gospodarstwa domowe, zbiorcze aktualizacje oraz druk i eksport katalogu."
 ---
 
 # Osoby

@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "VOMO gönüllü kayıtlarını ve kiosk check-in'lerini Zapier ile B1 Admin kişilerine ve gruplarına bağlayın; API anahtarı kapsamları ve kurulum adımlarıyla."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO projesi sona erdiğinde B1 grubunu elle temizleyin. Ya da bunu, kişileri g
 
 ### SMS ile "kaydolduğunuz için teşekkürler" mesajı gönderme
 
-Aynı Zap içinde VOMO Participation'ı Clearstream Send Text veya Text In Church Send Message eylemine bağlayın. Her ikisinin de birinci sınıf Zapier eylemleri vardır. Bkz. [Clearstream](./clearstream) ve [Text In Church](./text-in-church).
+Aynı Zap içinde VOMO Participation'ı Clearstream Send Text veya Text In Church Send Message eylemine bağlayın. Her ikisinin de birinci sınıf Zapier eylemleri vardır. Bkz. [Clearstream](./clearstream.md) ve [Text In Church](./text-in-church.md).
 
 ### Kopmaları tespit etme
 
@@ -91,6 +92,6 @@ Bu ay hizmet ekibine katılan B1 kişilerinin listesi için VOMO'da Find Organiz
 
 ## Ayrıca Bakınız
 
-- [Zapier (genel bakış)](../zapier): Her Zapier tarifinin B1 tarafı
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): Gönüllü kayıtlarını SMS onaylarıyla eşleştirir
+- [Zapier (genel bakış)](../zapier.md): Her Zapier tarifinin B1 tarafı
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): Gönüllü kayıtlarını SMS onaylarıyla eşleştirir
 - [Webhook'lar (geliştirici başvurusu)](/docs/developer/api/webhooks): VOMO'nun tetiklenebileceği olaylar

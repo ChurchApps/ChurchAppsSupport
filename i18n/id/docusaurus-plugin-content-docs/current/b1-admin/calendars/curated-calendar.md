@@ -1,5 +1,6 @@
 ---
 title: "Kalender Terkurasi"
+description: "Atur kalender gereja terkurasi di B1 Admin yang menarik acara dari beberapa grup, lalu bagikan di situs web, lewat langganan ICS, atau sebagai unduhan."
 ---
 
 # Kalender Terkurasi
@@ -15,7 +16,7 @@ Kalender terkurasi menggabungkan acara dari beberapa grup ke dalam satu tampilan
 
 - Siapkan [grup](../groups/creating-groups.md) yang acaranya ingin Anda sertakan
 - Pastikan pemimpin grup sudah menambahkan acara ke grup masing-masing
-- Pelajari dasar-dasar [Membuat Kalender](creating-calendars)
+- Pelajari dasar-dasar [Membuat Kalender](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Hanya acara **publik** yang muncul di kalender terkurasi di situs web Anda dan d
 
 ## Langkah Selanjutnya
 
-- [Membuat Kalender](creating-calendars) -- Pelajari dasar-dasar pembuatan kalender
-- [Ikhtisar Kalender](./) -- Kembali ke ikhtisar kalender
+- [Membuat Kalender](./creating-calendars.md) -- Pelajari dasar-dasar pembuatan kalender
+- [Ikhtisar Kalender](./index.md) -- Kembali ke ikhtisar kalender

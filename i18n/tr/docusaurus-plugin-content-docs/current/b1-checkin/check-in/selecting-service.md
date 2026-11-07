@@ -1,5 +1,6 @@
 ---
 title: "Hizmet Seçme"
+description: "B1 Checkin'in hizmetler ekranında katıldığınız ibadeti seçin; bu seçim, check-in akışının geri kalanında gösterilen ibadet saatlerini ve grupları belirler."
 ---
 
 # Hizmet Seçme
@@ -13,7 +14,7 @@ Her yoklamanın ilk adımı, katılacağınız hizmeti seçmektir. Hizmetler ekr
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- B1 Church Checkin uygulamasına [giriş yapın](../getting-started/logging-in) ve kilisenizi seçin
+- B1 Church Checkin uygulamasına [giriş yapın](../getting-started/logging-in.md) ve kilisenizi seçin
 - Kilise yöneticinizin B1 Admin içinde [hizmetleri ve hizmet saatlerini yapılandırdığından](../../b1-admin/attendance/setup.md) emin olun
 
 </div>
@@ -24,11 +25,11 @@ Her yoklamanın ilk adımı, katılacağınız hizmeti seçmektir. Hizmetler ekr
 2. Kilisenize tanımlanmış tüm hizmetlerin bir listesini görürsünüz. Her hizmet, hizmet adını (örneğin "Pazar Sabahı" veya "Çarşamba Akşamı") gösteren bir kart olarak görünür.
 3. Katılacağınız hizmete dokunun.
 
-Uygulama, o hizmetle ilişkili hizmet saatlerini ve grupları yükler, ardından sizi [üye arama ekranına](./looking-up-members) götürür.
+Uygulama, o hizmetle ilişkili hizmet saatlerini ve grupları yükler, ardından sizi [üye arama ekranına](./looking-up-members.md) götürür.
 
 ## Yoklama Açık Değilken
 
-Yöneticiniz bir hizmet saatine bir [yoklama takvimi](../../b1-admin/attendance/setup#setting-a-check-in-schedule) atadıysa, uygulama aileler için o hizmet saatini yalnızca yoklama penceresi açıkken seçmelerine izin verir. Yoklama penceresi şu anda kapalı olan hizmet saatleri yine de [hane ekranında](./household-review) görünür, ancak grup düğmesi sunmak yerine **Kapalı** olarak işaretlenir (örneğin **Kapalı · Paz 09:30'da açılır**).
+Yöneticiniz bir hizmet saatine bir [yoklama takvimi](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) atadıysa, uygulama aileler için o hizmet saatini yalnızca yoklama penceresi açıkken seçmelerine izin verir. Yoklama penceresi şu anda kapalı olan hizmet saatleri yine de [hane ekranında](./household-review.md) görünür, ancak grup düğmesi sunmak yerine **Kapalı** olarak işaretlenir (örneğin **Kapalı · Paz 09:30'da açılır**).
 
 Dokunduğunuz hizmetin tüm hizmet saatleri kapalıysa, uygulama yoklamanın ne zaman açılacağını bildirir -- örneğin **"Bu hizmet için yoklama Paz 09:30'da açılır."** (Bir açılış saati gösterilemiyorsa, **"Bu hizmet için yoklama şu anda açık değil."** yazar.) Hizmetler listesine dönmek ve farklı bir hizmet seçmek için **Geri** düğmesine dokunun veya pencere açılana kadar bekleyip tekrar deneyin.
 
@@ -56,4 +57,4 @@ Kiliseniz yalnızca bir hizmet yapılandırdıysa, yine de devam etmek için ona
 
 ## Sonraki Adım
 
-Bir hizmeti seçtikten sonra, telefon numarası veya adla [ailenizi arayacaksınız](./looking-up-members).
+Bir hizmeti seçtikten sonra, telefon numarası veya adla [ailenizi arayacaksınız](./looking-up-members.md).

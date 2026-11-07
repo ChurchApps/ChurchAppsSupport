@@ -1,5 +1,6 @@
 ---
 title: Pahayag ng Pananampalataya
+description: "Ang paniniwala ng ChurchApps tungkol sa Diyos, Jesus, Espiritu Santo, Kasulatan, kaligtasan, at simbahan, ang pamantayan sa pagrepaso ng Lessons.church."
 ---
 
 # Pahayag ng Pananampalataya

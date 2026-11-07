@@ -1,5 +1,6 @@
 ---
 title: "Osztálytermek beállítása"
+description: "Osztálytermek létrehozása, átnevezése és eltávolítása a Lessons.church portálon, hogy minden terem vagy korcsoport készen álljon a heti leckeütemezésre."
 ---
 
 # Osztálytermek beállítása

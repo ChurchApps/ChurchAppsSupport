@@ -1,5 +1,6 @@
 ---
 title: "Utseende"
+description: "Ange färger, typsnitt, avstånd, logotyp och navigering för din kyrkowebbplats i B1 Admin, samt widgetar, GA4-analys, omdirigeringar och anpassad CSS."
 ---
 
 # Utseende
@@ -13,7 +14,7 @@ Sidan Utseende låter dig anpassa hela din kyrkas webbplats utseende och känsla
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Slutför [Första inställningen](initial-setup) för din webbplats
+- Slutför [Första inställningen](./initial-setup.md) för din webbplats
 - Ha din kyrkas logotyp redo i PNG-format med transparent bakgrund och bildförhållandet 4:1
 - Känn till din kyrkas varumärkesfärger (hexvärden) om du har en befintlig stilguide
 
@@ -98,7 +99,7 @@ Anpassad CSS är kraftfull men kan bryta din webbplats layout om den används fe
 :::
 
 :::info
-Din webbplats använder en Content Security Policy som blockerar inline-skript från alla andra källor. Fältet **Anpassad HTML** här, och [HTML-elementet](page-editor#using-the-html-element) på enskilda sidor, är de betrodda undantagen -- kod du sparar där körs som den är, så klistra bara in skript från källor du litar på (analysspårningar, chattwidgetar och liknande inbäddningar).
+Din webbplats använder en Content Security Policy som blockerar inline-skript från alla andra källor. Fältet **Anpassad HTML** här, och [HTML-elementet](./page-editor.md#using-the-html-element) på enskilda sidor, är de betrodda undantagen -- kod du sparar där körs som den är, så klistra bara in skript från källor du litar på (analysspårningar, chattwidgetar och liknande inbäddningar).
 :::
 
 ## Temateman
@@ -107,5 +108,5 @@ Om du vill ha en snabb startpunkt erbjuder **Föreslagna paletter** i avsnittet 
 
 ## Nästa steg
 
-- [Hantera sidor](managing-pages) -- Skapa och organisera webbplatsens sidor
-- [Filer](files) -- Ladda upp mediefiler för din webbplats
+- [Hantera sidor](./managing-pages.md) -- Skapa och organisera webbplatsens sidor
+- [Filer](./files.md) -- Ladda upp mediefiler för din webbplats

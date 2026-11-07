@@ -1,5 +1,6 @@
 ---
 title: "Gruppenmitglieder"
+description: "Fügen Sie in B1 Admin Gruppenmitglieder hinzu, entfernen Sie sie und benennen Sie Leitungen. Anschließend können Sie die Mitgliederliste von der Gruppenseite aus per E-Mail, SMS, Ausdruck oder Export versenden."
 ---
 
 # Gruppenmitglieder

@@ -1,5 +1,6 @@
 ---
 title: "Arquitectura de notificaciones y recordatorios"
+description: "Cómo la API de B1 Admin enruta las notificaciones, los recordatorios programados, los límites de correo de la iglesia y las cancelaciones de mensajes de texto a través de un único embudo de entrega y una puerta de preferencias."
 ---
 
 # Arquitectura de notificaciones y recordatorios
@@ -185,6 +186,6 @@ En local, la misma lógica puede activarse bajo demanda con `npm run timer:30min
 
 ## Páginas relacionadas
 
-- [Arquitectura en tiempo real](../realtime): el protocolo WebSocket y las primitivas del cliente (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) sobre los que se apoya el nivel de entrega en la aplicación
-- [Notificaciones web push](../web-push): configuración de VAPID y la ruta de la API Push del navegador que usa el nivel de escalamiento push
-- [Endpoints de mensajería](../api/endpoints/messaging): la superficie REST completa de mensajes, conversaciones, conexiones y rutas de notificaciones y recordatorios
+- [Arquitectura en tiempo real](../realtime.md): el protocolo WebSocket y las primitivas del cliente (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) sobre los que se apoya el nivel de entrega en la aplicación
+- [Notificaciones web push](../web-push.md): configuración de VAPID y la ruta de la API Push del navegador que usa el nivel de escalamiento push
+- [Endpoints de mensajería](../api/endpoints/messaging.md): la superficie REST completa de mensajes, conversaciones, conexiones y rutas de notificaciones y recordatorios

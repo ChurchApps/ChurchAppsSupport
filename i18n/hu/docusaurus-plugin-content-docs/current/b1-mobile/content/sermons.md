@@ -1,5 +1,7 @@
 ---
-title: "Igehirdetések"
+title: "Prédikációk nézése a B1 Mobile alkalmazásban"
+sidebar_label: "Igehirdetések"
+description: "Böngéssz, keress és nézz felvett prédikációkat és sorozatokat a B1 Mobile alkalmazásban, beleértve az élő közvetítés visszaszámlálójának elérését is."
 ---
 
 # Igehirdetések
@@ -13,7 +15,7 @@ Az Igehirdetések képernyőn böngészhetsz és megnézheted gyülekezeted rög
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 - A gyülekezetednek igehirdetés-tartalmat kell beállítania az adminisztrációs felületén
 
 </div>
@@ -29,7 +31,7 @@ A képernyő tetején a legutóbbi igehirdetés kiemelt kártyaként jelenik meg
 
 ## Élő adás visszaszámláló
 
-Ha egy [élő adás](./live-streaming) a következő 24 órán belül kezdődik, visszaszámláló jelenik meg az Igehirdetések képernyőn. Ez jelzi, mikor sugárzódik a következő istentisztelet, így előre tervezheted, hogy élőben nézed.
+Ha egy [élő adás](./live-streaming.md) a következő 24 órán belül kezdődik, visszaszámláló jelenik meg az Igehirdetések képernyőn. Ez jelzi, mikor sugárzódik a következő istentisztelet, így előre tervezheted, hogy élőben nézed.
 
 ## Igehirdetés megtekintése
 
@@ -51,7 +53,7 @@ Minden igehirdetés-bejegyzés az alábbiakat jelenítheti meg:
 - **Bélyegkép** -- Az igehirdetés előnézeti képe
 
 :::tip
-Ha visszaszámlálót látsz az Igehirdetések képernyőn, koppints rá, és az élő adás kezdetekor azonnal az [élő adáshoz](./live-streaming) juthatsz.
+Ha visszaszámlálót látsz az Igehirdetések képernyőn, koppints rá, és az élő adás kezdetekor azonnal az [élő adáshoz](./live-streaming.md) juthatsz.
 :::
 
 ## Elérhetőség

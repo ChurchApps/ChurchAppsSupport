@@ -1,5 +1,6 @@
 ---
 title: "Listas Salvas"
+description: "Salve uma busca de Pessoas no B1 Admin como lista nomeada e recarregue-a com um clique. Novos membros que correspondam aparecem automaticamente."
 ---
 
 # Listas Salvas

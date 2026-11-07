@@ -1,5 +1,7 @@
 ---
-title: "Histórico de Doações"
+title: "Histórico de Doações no B1 Mobile"
+sidebar_label: "Histórico de Doações"
+description: "Confira suas doações do ano, a última contribuição e o registro completo no B1 Mobile, e repita uma doação anterior com um toque na aba Visão Geral."
 ---
 
 # Histórico de Doações
@@ -13,8 +15,8 @@ O B1 Mobile oferece uma visão clara das suas contribuições por meio de duas a
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
-- [Faça pelo menos uma doação](./making-donations) para ver seu histórico
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
+- [Faça pelo menos uma doação](./making-donations.md) para ver seu histórico
 
 </div>
 
@@ -45,5 +47,5 @@ Verifique a aba **Visão Geral** regularmente para acompanhar suas metas de cont
 
 ## Artigos Relacionados
 
-- [Como Fazer uma Doação](./making-donations) -- Faça uma nova contribuição pelo aplicativo
-- [Como Gerenciar Formas de Pagamento](./managing-payments) -- Adicione ou remova formas de pagamento salvas
+- [Como Fazer uma Doação](./making-donations.md) -- Faça uma nova contribuição pelo aplicativo
+- [Como Gerenciar Formas de Pagamento](./managing-payments.md) -- Adicione ou remova formas de pagamento salvas

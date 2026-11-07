@@ -1,5 +1,7 @@
 ---
-title: "Bắt đầu sử dụng"
+title: "Bắt đầu với B1 Checkin"
+sidebar_label: "Bắt đầu sử dụng"
+description: "Thiết lập ứng dụng kiosk B1 Checkin trên máy tính bảng Android: cài đặt, đăng nhập, chọn hội thánh và tùy chọn kết nối máy in nhãn."
 ---
 
 # Bắt đầu sử dụng B1 Church Checkin
@@ -27,9 +29,9 @@ Thiết lập B1 Church Checkin chỉ mất vài phút. Phần này hướng d�
 
 Khi mở ứng dụng lần đầu tiên, bạn sẽ thực hiện ba bước:
 
-1. **[Đăng nhập](./logging-in)** -- Nhập email và mật khẩu để xác thực.
-2. **[Chọn nhà thờ của bạn](./logging-in)** -- Nếu tài khoản của bạn được liên kết với nhiều nhà thờ, hãy chọn nhà thờ mà kiosk này sẽ phục vụ.
-3. **[Thiết lập máy in](./printer-setup)** -- Cấu hình máy in mạng để in nhãn, hoặc bỏ qua bước này nếu bạn không cần in nhãn.
+1. **[Đăng nhập](./logging-in.md)** -- Nhập email và mật khẩu để xác thực.
+2. **[Chọn nhà thờ của bạn](./logging-in.md)** -- Nếu tài khoản của bạn được liên kết với nhiều nhà thờ, hãy chọn nhà thờ mà kiosk này sẽ phục vụ.
+3. **[Thiết lập máy in](./printer-setup.md)** -- Cấu hình máy in mạng để in nhãn, hoặc bỏ qua bước này nếu bạn không cần in nhãn.
 
 Sau lần đăng nhập đầu tiên, ứng dụng sẽ lưu thông tin đăng nhập và lựa chọn nhà thờ của bạn. Ở những lần mở sau, ứng dụng sẽ tự động chuyển thẳng đến màn hình dịch vụ.
 
@@ -43,6 +45,6 @@ Hãy đảm bảo quản trị viên nhà thờ đã cấu hình các dịch v�
 
 ## Bước tiếp theo
 
-- [Đăng nhập](./logging-in) -- Hướng dẫn chi tiết về đăng nhập và chọn nhà thờ.
-- [Thiết lập máy in](./printer-setup) -- Cách tìm, chọn và kiểm tra máy in nhãn.
-- [Quy trình check-in](../check-in/) -- Tìm hiểu toàn bộ quy trình check-in sau khi kiosk đã được thiết lập.
+- [Đăng nhập](./logging-in.md) -- Hướng dẫn chi tiết về đăng nhập và chọn nhà thờ.
+- [Thiết lập máy in](./printer-setup.md) -- Cách tìm, chọn và kiểm tra máy in nhãn.
+- [Quy trình check-in](../check-in/index.md) -- Tìm hiểu toàn bộ quy trình check-in sau khi kiosk đã được thiết lập.

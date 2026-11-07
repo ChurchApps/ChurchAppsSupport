@@ -1,5 +1,6 @@
 ---
 title: "ウェブフック"
+description: "B1 Admin からリアルタイムの Webhook を設定します。エンドポイントの登録、イベントの選択、HMAC 署名の検証、再試行の処理、失敗したペイロードの再送信を扱います。"
 ---
 
 # ウェブフック
@@ -33,7 +34,7 @@ title: "ウェブフック"
 
 ### APIでの登録
 
-すべてのエンドポイントは、Membershipモジュールの基本パス `/membership/webhooks` 以下にあり、`Settings / Edit` 権限を持つ教会管理者のJWT、または `settings:write` スコープで発行された [APIキー](./api-keys) のいずれかが必要です。同じルートでどちらも受け付けます。これにより、ZapまたはシナリオがオンになったときにZapierやMakeが教会の代わりにウェブフックを登録できます。
+すべてのエンドポイントは、Membershipモジュールの基本パス `/membership/webhooks` 以下にあり、`Settings / Edit` 権限を持つ教会管理者のJWT、または `settings:write` スコープで発行された [APIキー](./api-keys.md) のいずれかが必要です。同じルートでどちらも受け付けます。これにより、ZapまたはシナリオがオンになったときにZapierやMakeが教会の代わりにウェブフックを登録できます。
 
 ```http
 POST /membership/webhooks

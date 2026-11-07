@@ -1,5 +1,6 @@
 ---
 title: "Inställningar"
+description: "Hitta rätt i B1 Admins Settings: kyrkans uppgifter, varumärke, campus, egna fält, användarroller och navigering i B1.church-appen."
 ---
 
 # Inställningar

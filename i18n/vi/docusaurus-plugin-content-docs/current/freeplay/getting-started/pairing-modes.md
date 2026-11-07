@@ -1,5 +1,6 @@
 ---
 title: "Chọn chế độ ghép nối"
+description: "Chọn cách ghép nối TV FreePlay phù hợp: lịch từ FreePlay Admin, kế hoạch dịch vụ từ B1 Admin, hoặc không ghép nối."
 ---
 
 # Chọn chế độ ghép nối
@@ -32,7 +33,7 @@ Nhập mã trong **FreePlay Admin** tại [admin.freeplay.church](https://admin.
 
 **Phù hợp nhất cho:** Biển hiệu ở sảnh và hành lang, vòng lặp thông báo, và các lớp học nơi bài học nên đã được phát khi mọi người bước vào.
 
-Xem **[Chế độ theo lịch](../scheduled-mode/)** để biết hướng dẫn đầy đủ.
+Xem **[Chế độ theo lịch](../scheduled-mode/index.md)** để biết hướng dẫn đầy đủ.
 
 ## Chế độ kế hoạch (B1 Admin)
 
@@ -42,7 +43,7 @@ Nhập mã trong **B1 Admin** khi bạn muốn TV theo một loại kế hoạch
 
 **Phù hợp nhất cho:** Các TV hiển thị nội dung gắn với kế hoạch buổi thờ phượng hằng tuần, nơi có người bắt đầu phát khi đến giờ.
 
-Xem **[Chế độ kế hoạch](../plan-mode/)** để biết hướng dẫn đầy đủ.
+Xem **[Chế độ kế hoạch](../plan-mode/index.md)** để biết hướng dẫn đầy đủ.
 
 :::tip
 Bạn cũng có thể phát kế hoạch buổi thờ phượng hiện tại theo lịch. Trong FreePlay Admin, thêm một mục lịch và chọn loại kế hoạch trong mục **Service plans**.
@@ -50,7 +51,7 @@ Bạn cũng có thể phát kế hoạch buổi thờ phượng hiện tại the
 
 ## Nhà cung cấp nội dung (không cần ghép nối)
 
-Nếu không cần ghép nối TV, bạn có thể duyệt trực tiếp các nhà cung cấp nội dung. Những nhà cung cấp như [Lessons.church](../../lessons-church/) và Bible Project có nội dung mà bạn có thể tải xuống và phát bất cứ lúc nào.
+Nếu không cần ghép nối TV, bạn có thể duyệt trực tiếp các nhà cung cấp nội dung. Những nhà cung cấp như [Lessons.church](../../lessons-church/index.md) và Bible Project có nội dung mà bạn có thể tải xuống và phát bất cứ lúc nào.
 
 **Phù hợp nhất cho:** Các TV mà tình nguyện viên chọn nội dung phát mỗi tuần, hoặc khi bạn muốn khám phá những gì có sẵn.
 
@@ -60,6 +61,6 @@ Bạn có thể mở màn hình **Providers** bất cứ lúc nào từ **Settin
 
 ## Bài viết liên quan
 
-- **[Chế độ theo lịch](../scheduled-mode/)** - Đặt TV theo lịch bằng FreePlay Admin
-- **[Chế độ kế hoạch](../plan-mode/)** - Hướng dẫn đầy đủ về ghép nối với kế hoạch buổi thờ phượng
-- **[Nhà cung cấp nội dung](../content-providers/)** - Duyệt và tải nội dung từ các nguồn bên ngoài
+- **[Chế độ theo lịch](../scheduled-mode/index.md)** - Đặt TV theo lịch bằng FreePlay Admin
+- **[Chế độ kế hoạch](../plan-mode/index.md)** - Hướng dẫn đầy đủ về ghép nối với kế hoạch buổi thờ phượng
+- **[Nhà cung cấp nội dung](../content-providers/index.md)** - Duyệt và tải nội dung từ các nguồn bên ngoài

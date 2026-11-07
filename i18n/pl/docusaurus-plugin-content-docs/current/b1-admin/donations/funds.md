@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie funduszami"
+description: "Twórz i porządkuj fundusze darowizn w B1 Admin, ustawiaj status odliczalności podatkowej i widoczność dla darczyńców oraz przeglądaj sumy i historię darowizn."
 ---
 
 # Zarządzanie funduszami

@@ -1,5 +1,7 @@
 ---
-title: "Primeiros passos"
+title: "Primeiros passos com o app FreePlay TV"
+sidebar_label: "Primeiros passos"
+description: "Instale e configure o FreePlay em Android TV, Fire TV ou Apple TV: instale o app, abra-o pela primeira vez e conheça os controles remotos e a barra lateral."
 ---
 
 # Primeiros passos com o FreePlay
@@ -42,7 +44,7 @@ O FreePlay roda em Fire TV (incluindo os sticks mais novos com Vega OS), Android
 
 Quando você abrir o FreePlay pela primeira vez, verá uma tela de abertura animada com o logotipo do FreePlay. O aplicativo verifica se há provedores de conteúdo conectados anteriormente. Se você já tiver conectado um provedor, ele levará você diretamente ao navegador de conteúdo desse provedor. Caso contrário, abrirá a tela **Provedores de conteúdo**, onde você pode conectar a sua primeira fonte de conteúdo.
 
-Se a TV estiver pareada a um calendário no [Modo agendado](../scheduled-mode/), o FreePlay pula tudo isso e abre diretamente o player agendado.
+Se a TV estiver pareada a um calendário no [Modo agendado](../scheduled-mode/index.md), o FreePlay pula tudo isso e abre diretamente o player agendado.
 
 ## Navegando com o controle remoto da TV
 
@@ -62,13 +64,13 @@ A barra lateral se recolhe em uma faixa estreita de ícones quando você está n
 
 A barra lateral lista, de cima para baixo:
 
-- **Plano de hoje** -- Aparece quando a TV está pareada a um plano. Veja [Modo de plano](../plan-mode/)
-- **Avisos** -- Aparece depois que você escolhe uma pasta de avisos. Veja [Avisos](../content-providers/announcements)
-- **Navegar** -- Cada provedor de conteúdo conectado que você pode navegar. Veja [Navegando e baixando conteúdo](../content-providers/browsing-content)
-- **Configurações** -- Na parte inferior da barra lateral. Abre **Parear com um calendário** (pareie esta TV a um calendário ou plano — veja [Escolhendo um modo de pareamento](./pairing-modes)), **Downloads** (reproduza ou exclua o conteúdo salvo neste dispositivo) e **Provedores** (conecte provedores de conteúdo e escolha a pasta de avisos)
+- **Plano de hoje** -- Aparece quando a TV está pareada a um plano. Veja [Modo de plano](../plan-mode/index.md)
+- **Avisos** -- Aparece depois que você escolhe uma pasta de avisos. Veja [Avisos](../content-providers/announcements.md)
+- **Navegar** -- Cada provedor de conteúdo conectado que você pode navegar. Veja [Navegando e baixando conteúdo](../content-providers/browsing-content.md)
+- **Configurações** -- Na parte inferior da barra lateral. Abre **Parear com um calendário** (pareie esta TV a um calendário ou plano — veja [Escolhendo um modo de pareamento](./pairing-modes.md)), **Downloads** (reproduza ou exclua o conteúdo salvo neste dispositivo) e **Provedores** (conecte provedores de conteúdo e escolha a pasta de avisos)
 
 ## O que vem a seguir
 
-- **[Escolhendo um modo de pareamento](./pairing-modes)** - Conheça as diferentes formas de conectar a sua TV
-- **[Modo agendado](../scheduled-mode/)** - Coloque as suas TVs em um calendário com o FreePlay Admin
-- **[Provedores de conteúdo](../content-providers/)** - Conecte-se ao Lessons.church, ao Bible Project e a outros
+- **[Escolhendo um modo de pareamento](./pairing-modes.md)** - Conheça as diferentes formas de conectar a sua TV
+- **[Modo agendado](../scheduled-mode/index.md)** - Coloque as suas TVs em um calendário com o FreePlay Admin
+- **[Provedores de conteúdo](../content-providers/index.md)** - Conecte-se ao Lessons.church, ao Bible Project e a outros

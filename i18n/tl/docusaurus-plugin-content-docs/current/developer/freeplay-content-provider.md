@@ -1,5 +1,6 @@
 ---
 title: "FreePlay Content Provider"
+description: "Ano ang dapat ibigay ng content provider para ikonekta ang lesson library sa FreePlay: logo, sign-in, catalog at playlist endpoints, at media formats."
 ---
 
 # FreePlay Content Provider

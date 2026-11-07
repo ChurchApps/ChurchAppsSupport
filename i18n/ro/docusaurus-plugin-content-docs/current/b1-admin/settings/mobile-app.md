@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt ứng dụng di động"
+description: "Configurează filele de navigare, plăcile de pe ecranul principal, solicitarea de autentificare și confidențialitatea directorului pentru aplicația B1.church din B1 Admin."
 ---
 
 Ghi chú: Đây là bản dịch, không phải nội dung gốc. Yêu cầu của bạn là dịch sang tiếng Romania (`ro`), nên đoạn trên đã được viết sai ngôn ngữ. Xin lỗi về điều đó. Bản dịch đúng nằm bên dưới.

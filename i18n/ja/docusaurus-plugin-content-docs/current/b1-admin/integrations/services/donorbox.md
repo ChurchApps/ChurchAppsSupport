@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Zapier で Donorbox を B1 Admin に接続し、オンライン献金から献金記録と献金者のプロフィールが手作業のエクスポートなしで自動的に作成されるようにします。"
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox の *New or Updated Donation* は、編集時にも発火します。Za
 
 ## 関連項目
 
-- [Zapier（概要）](../zapier) — すべての Zapier レシピの B1 側の説明
-- [Subsplash](./subsplash) — Zapier アプリを持つ別の寄付プラットフォーム
-- [Mailchimp](./mailchimp) — 「新しい寄付」をメールタグに連携
+- [Zapier（概要）](../zapier.md) — すべての Zapier レシピの B1 側の説明
+- [Subsplash](./subsplash.md) — Zapier アプリを持つ別の寄付プラットフォーム
+- [Mailchimp](./mailchimp.md) — 「新しい寄付」をメールタグに連携

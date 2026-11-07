@@ -1,5 +1,7 @@
 ---
-title: "Medlemskatalog"
+title: "Medlemskatalogen i B1.church medlemsportal"
+sidebar_label: "Medlemskatalog"
+description: "Sök och bläddra bland kyrkans medlemmar i B1.church-katalogen, visa deras profiler och hushållsmedlemmar och se vem som har åtkomst till katalogen."
 ---
 
 # Medlemskatalog

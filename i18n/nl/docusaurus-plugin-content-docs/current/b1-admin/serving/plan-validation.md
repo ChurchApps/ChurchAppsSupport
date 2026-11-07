@@ -1,5 +1,6 @@
 ---
 title: "Planvalidatie & meldingen"
+description: "Controleer dienstplannen in B1 Admin op onbezette posities, conflicten en geblokkeerde vrijwilligers, en stuur je team met één klik een pushmelding."
 ---
 
 # Planvalidatie & vrijwilligersmeldingen
@@ -59,5 +60,5 @@ Vrijwilligers moeten de B1 Mobiele app hebben geïnstalleerd en meldingen hebben
 ## Gerelateerde artikelen
 
 - [Service Plans](./plans.md)
-- [Automations](./automations.md)
+- [Automations](./workflows.md)
 - [B1 Mobiele meldingen](/docs/b1-mobile/community/notifications)

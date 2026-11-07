@@ -1,5 +1,7 @@
 ---
-title: "oprindelig opsætning"
+title: "Kom godt i gang med din B1 Admin-hjemmeside"
+sidebar_label: "oprindelig opsætning"
+description: "Opsæt din B1 Admin-hjemmeside: peg et underdomæne eller eget domæne, opret forsiden, vælg brandfarver og logo, og byg navigationen."
 ---
 
 # oprindelig opsætning
@@ -45,7 +47,7 @@ Hvis du ikke ser indstillinger mulighed, spørg personen som opsætning dines ki
 6. Efter tilføjelse af sektion, klik **Tilføj indhold** igen for at indsæt tekst, billeder, videoer, kort, formularer og mere ved at træk dem ind i dines sektion.
 
 :::info
-til detaljerede instruktioner på arbejde med sider, navigation og siden typer, se [administrering af sider](managing-pages).
+til detaljerede instruktioner på arbejde med sider, navigation og siden typer, se [administrering af sider](./managing-pages.md).
 :::
 
 ## konfigurering af websted udseende
@@ -57,7 +59,7 @@ til detaljerede instruktioner på arbejde med sider, navigation og siden typer, 
 5. konfigurér dines **websted footer** med dines kirkes kontakt information og links.
 
 :::info
-ændringer du gør i udseende anvend på tværs af dines hele websted. Se [udseende](appearance) siden til detaljerede instruktioner på hver indstilling.
+ændringer du gør i udseende anvend på tværs af dines hele websted. Se [udseende](./appearance.md) siden til detaljerede instruktioner på hver indstilling.
 :::
 
 ## opsætning af navigation
@@ -70,6 +72,6 @@ Dines navigations links vises i venstre sidebar af websted sider visning. for at
 
 ## Næste trin
 
-- [administrering af sider](managing-pages) -- lær hvordan til at arbejde med sider og navigation i detaljer
-- [udseende](appearance) -- fine-tune dines websteds farver, skrifttyper og layout
-- [filer](files) -- upload billeder og dokumenter til dines websted
+- [administrering af sider](./managing-pages.md) -- lær hvordan til at arbejde med sider og navigation i detaljer
+- [udseende](./appearance.md) -- fine-tune dines websteds farver, skrifttyper og layout
+- [filer](./files.md) -- upload billeder og dokumenter til dines websted

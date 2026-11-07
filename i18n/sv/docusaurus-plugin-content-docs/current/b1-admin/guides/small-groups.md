@@ -1,5 +1,6 @@
 ---
 title: "Guide: Hantera smågrupper"
+description: "Ställ in smågrupper, bibelstudier och tjänstegrupper i B1 Admin och publicera sedan en gemensam kalender och ett gruppavsnitt på din B1-webbplats."
 ---
 
 # Hantera smågrupper
@@ -78,7 +79,7 @@ Medlemmar kan hitta, gå med i och delta i grupper från sin telefon eller dator
 
 1. Medlemmar bläddrar bland och går med i grupper på [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Gruppmedlemmar kan visa detaljer och kalendrar samt skriva i [konversationer](../../b1-church/groups/conversations.md)
-3. Alla gruppfunktioner finns också i [B1 Mobile-appen](../../b1-mobile/groups/)
+3. Alla gruppfunktioner finns också i [B1 Mobile-appen](../../b1-mobile/groups/index.md)
 
 :::info
 Medlemmar ser sina grupper, kommande händelser och gruppkonversationer både på webben och i mobilen — allt hålls synkat.
@@ -97,4 +98,4 @@ Dina smågrupper är konfigurerade och kopplade. Medlemmar kan hitta grupper, se
 - [Sammanställd kalender](../calendars/curated-calendar.md) — bygg en gemensam församlingskalender
 - [Bläddra bland grupper (webb)](../../b1-church/groups/browsing-groups.md) — så hittar medlemmar grupper
 - [Gruppkonversationer (webb)](../../b1-church/groups/conversations.md) — gruppdiskussioner
-- [Grupper (mobil)](../../b1-mobile/groups/) — grupper i mobilappen
+- [Grupper (mobil)](../../b1-mobile/groups/index.md) — grupper i mobilappen

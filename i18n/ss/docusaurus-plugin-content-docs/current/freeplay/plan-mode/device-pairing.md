@@ -1,5 +1,6 @@
 ---
 title: "Kuhlanganiswa Kwelidivayisi Lakho"
+description: "Hlanganisa i-FreePlay TV nalohlobo lwesikhathi ku-B1 Admin ngekhodi letinhlamvu letine ekukhombiswa esikrinini, bese ulanda imidiya yalesikhathi kwekudlala kwe-Plan Mode."
 ---
 
 # Kuhlanganiswa Kwelidivayisi Lakho
@@ -13,7 +14,7 @@ Kuze usebentise Simo Selicebo, udzinga kuhlanganisa TV yakho nenhlobo yelicebo k
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka bese ucalisa i-FreePlay -- buka [Kucala](../getting-started/)
+- Faka bese ucalisa i-FreePlay -- buka [Kucala](../getting-started/index.md)
 - Khetsa **Pair to Plan** kusuka [esikrinini sesimo sekuhlanganiswa](../getting-started/pairing-modes.md)
 - Yiba nemfinyelelo ku-**B1 Admin** ngekhompyuta nome ngelusiba kuze ucedze kuhlanganiswa
 
@@ -66,4 +67,4 @@ Emakhodi ekuhlanganisa aphelelwa ngemuva kwesikhatsi lesibekiwe. Uma ulinde sikh
 ## Timibhalo Lehlobene
 
 - **[Sifinyeto Sesimo Selicebo](./index.md)** - Kucondzisisa kutsi Simo Selicebo sihlukaniseka njani ku-Simo Selikilasi
-- **[Kudlalwa Kwetifundzo](../content-providers/playing-content)** - Kulawulwa kwemdlali kuyafana kuletimo tatibili
+- **[Kudlalwa Kwetifundzo](../content-providers/playing-content.md)** - Kulawulwa kwemdlali kuyafana kuletimo tatibili

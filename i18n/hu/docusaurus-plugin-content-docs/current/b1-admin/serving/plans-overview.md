@@ -1,5 +1,6 @@
 ---
 title: "Tervek áttekintése"
+description: "Önkéntesek beosztásának áttekintése több szolgálati napra a B1 Adminban: betöltetlen pozíciók keresése, és feltöltés vagy e-mail egy rácsból."
 ---
 
 # Tervek áttekintése

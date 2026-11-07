@@ -1,5 +1,6 @@
 ---
 title: "Calendários"
+description: "Configure calendários no B1 Admin, defina os eventos exibidos e publique-os no site B1.church para a congregação acompanhar a agenda da igreja."
 ---
 
 # Calendários
@@ -18,20 +19,20 @@ A seção de Calendários em B1 Admin permite que você crie calendários seleci
 
 ## O Que Você Pode Fazer
 
-- **Adicionar um novo calendário** -- Clique em **Adicionar Calendário** no topo da página para criar um calendário para um ministério específico, tipo de evento ou finalidade. Veja [Criando Calendários](creating-calendars) para instruções passo a passo.
+- **Adicionar um novo calendário** -- Clique em **Adicionar Calendário** no topo da página para criar um calendário para um ministério específico, tipo de evento ou finalidade. Veja [Criando Calendários](./creating-calendars.md) para instruções passo a passo.
 - **Editar um calendário** -- Clique em **Gerenciar Eventos** em qualquer calendário para abri-lo e gerenciar quais grupos estão incluídos nele.
 - **Publicar calendários** -- Os calendários podem ser exibidos em seu site B1.church para que os visitantes possam ver os próximos eventos em sua igreja.
-- **Criar calendários selecionados** -- Extraia eventos de múltiplos grupos em uma visualização de calendário única para uma visão abrangente de tudo que está acontecendo em sua igreja. Veja [Calendário Selecionado](curated-calendar) para detalhes.
-- **Gerenciar salas e recursos** -- Rastreie espaços e equipamentos reserváveis e manipule solicitações de aprovação. Veja [Salas e Recursos](rooms-resources) para detalhes.
-- **Visualizar disponibilidade** -- Veja todas as reservas de salas e recursos em um único calendário e reserve espaços para próximos eventos. Veja [Calendário de Disponibilidade](availability) para detalhes.
+- **Criar calendários selecionados** -- Extraia eventos de múltiplos grupos em uma visualização de calendário única para uma visão abrangente de tudo que está acontecendo em sua igreja. Veja [Calendário Selecionado](./curated-calendar.md) para detalhes.
+- **Gerenciar salas e recursos** -- Rastreie espaços e equipamentos reserváveis e manipule solicitações de aprovação. Veja [Salas e Recursos](./rooms-resources.md) para detalhes.
+- **Visualizar disponibilidade** -- Veja todas as reservas de salas e recursos em um único calendário e reserve espaços para próximos eventos. Veja [Calendário de Disponibilidade](./availability.md) para detalhes.
 
 :::info
-Calendários trabalham de perto com [Grupos](../groups/creating-groups.md). Quando grupos têm eventos agendados, esses eventos podem ser puxados para seus calendários. Veja a página [Criando Calendários](creating-calendars) para aprender como conectar grupos aos calendários.
+Calendários trabalham de perto com [Grupos](../groups/creating-groups.md). Quando grupos têm eventos agendados, esses eventos podem ser puxados para seus calendários. Veja a página [Criando Calendários](./creating-calendars.md) para aprender como conectar grupos aos calendários.
 :::
 
 ## Próximas Etapas
 
-- [Criando Calendários](creating-calendars) -- Configure um novo calendário e conecte grupos
-- [Calendário Selecionado](curated-calendar) -- Agregue eventos de múltiplos grupos em uma visualização
-- [Salas e Recursos](rooms-resources) -- Gerencie espaços e equipamentos reserváveis
-- [Calendário de Disponibilidade](availability) -- Visualize e gerencie reservas de salas/recursos
+- [Criando Calendários](./creating-calendars.md) -- Configure um novo calendário e conecte grupos
+- [Calendário Selecionado](./curated-calendar.md) -- Agregue eventos de múltiplos grupos em uma visualização
+- [Salas e Recursos](./rooms-resources.md) -- Gerencie espaços e equipamentos reserváveis
+- [Calendário de Disponibilidade](./availability.md) -- Visualize e gerencie reservas de salas/recursos

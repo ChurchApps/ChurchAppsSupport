@@ -1,5 +1,7 @@
 ---
-title: "Rejestracja na wydarzenia"
+title: "Rejestracja na wydarzenia w B1 Mobile"
+sidebar_label: "Rejestracja na wydarzenia"
+description: "Zapisz siebie i członków rodziny na wydarzenia kościelne w aplikacji B1 Mobile, sprawdź wolne miejsca i potwierdź zapis w trzech krokach."
 ---
 
 # Rejestracja na wydarzenia
@@ -13,7 +15,7 @@ Zarejestruj się na wydarzenia kościelne bezpośrednio w aplikacji B1 Mobile, w
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Wydarzenie musi mieć włączoną rejestrację, a okno rejestracji musi być otwarte
 
 </div>
@@ -50,4 +52,4 @@ Jeśli musisz anulować rejestrację, skontaktuj się z administratorem swojego 
 ## Powiązane artykuły
 
 - [Przegląd wydarzeń](./index.md) -- Przeglądaj wydarzenia z rejestracją na urządzeniu mobilnym
-- [Wyświetlanie planów](../serving/viewing-plans) -- Zobacz swój harmonogram służby
+- [Wyświetlanie planów](../serving/viewing-plans.md) -- Zobacz swój harmonogram służby

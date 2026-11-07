@@ -1,5 +1,6 @@
 ---
 title: "AI Search"
+description: "Maghanap sa people directory ng B1 Admin gamit ang simpleng tanong, gaya ng aling miyembro ang hindi dumalo nang tatlong buwan, imbes na bumuo ng filter."
 ---
 
 # AI Search

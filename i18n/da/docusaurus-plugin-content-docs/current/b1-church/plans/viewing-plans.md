@@ -1,5 +1,7 @@
 ---
-title: "Se planer"
+title: "Dine tjenesteplaner i B1.church-medlemsportalen"
+sidebar_label: "Se planer"
+description: "Tjek dine tjenesteplan-tildelinger i B1.church, accepter eller afslå anmodninger, angiv blokeringsdatoer og gennemgå din tidligere tjenestehistorik."
 ---
 
 # Se planer

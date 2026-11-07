@@ -1,5 +1,6 @@
 ---
 title: "Előadó mód"
+description: "Lecke teljes képernyőn futtatása osztálytermi projektoron vagy TV-n a Lessons.church Presenter Mode-jával, és az egyes szakaszok léptetése óra alatt."
 ---
 
 # Előadó mód

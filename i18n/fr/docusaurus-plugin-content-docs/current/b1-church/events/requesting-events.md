@@ -1,5 +1,6 @@
 ---
 title: "Demande d'Événements et de Salles"
+description: "Demandez une salle ou du matériel pour un événement depuis le portail B1.church, suivez-la dans Mes demandes et annulez-la si elle est en attente."
 ---
 
 # Demande d'Événements et de Salles
@@ -42,11 +43,11 @@ Ouvrez **Mes demandes** depuis la page Me. Chaque demande affiche l'événement,
 Tant qu'une demande est encore en attente, vous pouvez la retirer avec **Annuler la demande** (il vous sera demandé de confirmer — l'annulation est irréversible).
 
 :::info
-Les demandes sont examinées par le personnel de l'église sur la [page des approbations](../../b1-admin/calendars/approvals) de B1 Admin. Les salles et ressources qui nécessitent une approbation dépendent de votre église — consultez [Salles et ressources](../../b1-admin/calendars/rooms-resources).
+Les demandes sont examinées par le personnel de l'église sur la [page des approbations](../../b1-admin/calendars/approvals.md) de B1 Admin. Les salles et ressources qui nécessitent une approbation dépendent de votre église — consultez [Salles et ressources](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Articles connexes
 
-- [La page Me](../getting-started/me-page) — Où se trouvent les liens de demande
-- [Approbations du calendrier (B1 Admin)](../../b1-admin/calendars/approvals) — Comment le personnel examine les demandes
-- [Salles et ressources (B1 Admin)](../../b1-admin/calendars/rooms-resources) — Comment les églises configurent les espaces réservables
+- [La page Me](../getting-started/me-page.md) — Où se trouvent les liens de demande
+- [Approbations du calendrier (B1 Admin)](../../b1-admin/calendars/approvals.md) — Comment le personnel examine les demandes
+- [Salles et ressources (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) — Comment les églises configurent les espaces réservables

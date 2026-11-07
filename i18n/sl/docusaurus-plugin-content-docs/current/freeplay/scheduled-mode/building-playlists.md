@@ -1,5 +1,6 @@
 ---
 title: "Povezovanje ponudnikov in ustvarjanje seznamov predvajanja"
+description: "Nastavi povezane ponudnike vsebine v FreePlay Admin, nato sestavi, uredi in predogledaj sezname predvajanja za načrtovane TV-zaslone."
 ---
 
 # Povezovanje ponudnikov in ustvarjanje seznamov predvajanja
@@ -107,6 +108,6 @@ Kliknite **Predvajaj**, da seznam predvajanja predvajate čez celoten zaslon v b
 
 ## Sorodni članki
 
-- **[Načrtovanje koledarja](./scheduling-the-calendar)** - Postavite svoj seznam predvajanja v koledar skupine zaslonov
-- **[Upravljanje zaslonov in skupin](./managing-screens)** - Nastavite seznam predvajanja kot privzeto zanko skupine
-- **[Ponudniki vsebin](../content-providers/)** - Ponudniki, ki jih lahko povežete neposredno na televizorju
+- **[Načrtovanje koledarja](./scheduling-the-calendar.md)** - Postavite svoj seznam predvajanja v koledar skupine zaslonov
+- **[Upravljanje zaslonov in skupin](./managing-screens.md)** - Nastavite seznam predvajanja kot privzeto zanko skupine
+- **[Ponudniki vsebin](../content-providers/index.md)** - Ponudniki, ki jih lahko povežete neposredno na televizorju

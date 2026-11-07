@@ -1,5 +1,6 @@
 ---
 title: "Søgning"
+description: "Find programmer, studier og lektioner i Lessons.church-biblioteket med nøgleord eller bibelhistorie, og lær hvordan søgeresultaterne rangeres og mærkes."
 ---
 
 # Søgning

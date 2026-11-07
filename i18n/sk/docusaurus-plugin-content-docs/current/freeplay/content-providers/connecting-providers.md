@@ -1,5 +1,6 @@
 ---
 title: "Pripojenie k poskytovateľom"
+description: "Pripojte FreePlay k poskytovateľovi obsahu pomocou QR kódu, prihlásenia e-mailom alebo jedným kliknutím a spravujte alebo odpojte pripojenie v Nastaveniach."
 ---
 
 # Pripojenie k poskytovateľom
@@ -13,7 +14,7 @@ Skôr ako budete môcť prechádzať obsah od poskytovateľa, musíte sa k nemu 
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Nainštalujte a spustite FreePlay -- pozrite si [Začíname](../getting-started/)
+- Nainštalujte a spustite FreePlay -- pozrite si [Začíname](../getting-started/index.md)
 - Pripravte si diaľkový ovládač televízora na ovládanie
 - Pri poskytovateľoch, ktorí vyžadujú prihlásenie, si pripravte prihlasovacie údaje k účtu
 
@@ -80,7 +81,7 @@ Ak vyberiete kartu poskytovateľa s označením **Pripojené**, otvorí sa obraz
 
 - **Prehliadať knižnicu** -- Zobraziť alebo skryť knižnicu obsahu tohto poskytovateľa na bočnom paneli
 - **Automaticky stiahnuť dnešnú lekciu** -- Použiť tohto poskytovateľa ako zdroj dnešnej lekcie a vopred stiahnuť jeho súbory (zobrazuje sa iba pri poskytovateľoch, ktorí ponúkajú aktuálnu lekciu)
-- **Použiť pre oznámenia** -- Vyberte priečinok od tohto poskytovateľa, ktorý sa bude cyklicky prehrávať v položke **Oznámenia** na bočnom paneli. Pozrite si [Oznámenia](./announcements)
+- **Použiť pre oznámenia** -- Vyberte priečinok od tohto poskytovateľa, ktorý sa bude cyklicky prehrávať v položke **Oznámenia** na bočnom paneli. Pozrite si [Oznámenia](./announcements.md)
 - **Skontrolovať aktualizácie oznámení** -- Zobrazí sa po výbere priečinka pre oznámenia; stiahne nové snímky a odstráni zmazané
 - **Odpojiť** -- Zrušiť pripojenie
 
@@ -100,6 +101,6 @@ Odpojením sa z vášho zariadenia odstráni uložené overenie. Ak sa neskôr c
 
 ## Súvisiace články
 
-- **[Prehliadanie a sťahovanie obsahu](./browsing-content)** - Prechádzanie priečinkov a prehrávanie obsahu po pripojení
-- **[Oznámenia](./announcements)** - Cyklické prehrávanie priečinka so snímkami od pripojeného poskytovateľa
+- **[Prehliadanie a sťahovanie obsahu](./browsing-content.md)** - Prechádzanie priečinkov a prehrávanie obsahu po pripojení
+- **[Oznámenia](./announcements.md)** - Cyklické prehrávanie priečinka so snímkami od pripojeného poskytovateľa
 - **[Prehľad poskytovateľov obsahu](./index.md)** - Zobrazenie všetkých dostupných poskytovateľov

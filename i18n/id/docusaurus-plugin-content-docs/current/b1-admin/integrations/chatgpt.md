@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Hubungkan ChatGPT ke data B1 gereja Anda dengan kunci API agar Anda dapat mengajukan pertanyaan dalam bahasa sehari-hari tentang orang, pemberian, dan kehadiran di B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Hubungkan ChatGPT ke data B1 gereja Anda dan ajukan pertanyaan dalam bahasa seha
 </div>
 
 :::tip Disarankan: coba Claude terlebih dahulu — gratis
-[Claude](./claude) terhubung ke B1 pada **paket gratisnya** dan dapat diatur dalam kurang dari 3 menit — cukup tambahkan B1 sebagai konektor dan masuk dengan akun B1 Anda. Tidak perlu kunci. Ini cara termudah bagi gereja Anda untuk mencoba AI bersama B1 sebelum membayar apa pun.
+[Claude](./claude.md) terhubung ke B1 pada **paket gratisnya** dan dapat diatur dalam kurang dari 3 menit — cukup tambahkan B1 sebagai konektor dan masuk dengan akun B1 Anda. Tidak perlu kunci. Ini cara termudah bagi gereja Anda untuk mencoba AI bersama B1 sebelum membayar apa pun.
 :::
 
 ## Cara Mengaturnya
@@ -254,5 +255,5 @@ Siapa pun yang memiliki tautan dapat mengajukan pertanyaan dalam bahasa sehari-h
 
 - [API Keys](/docs/developer/api/api-keys) — referensi cakupan lengkap
 - [MCP Server (referensi pengembang)](/docs/developer/api/mcp) — detail protokol dan skema tool
-- [Claude](./claude) — konsep serupa, untuk model Anthropic
+- [Claude](./claude.md) — konsep serupa, untuk model Anthropic
 - [Referensi REST API](/docs/developer/api/endpoints) — setiap endpoint yang dapat dipanggil oleh action Custom GPT

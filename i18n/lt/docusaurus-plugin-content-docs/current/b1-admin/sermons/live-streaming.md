@@ -1,5 +1,7 @@
 ---
-title: "Tiesioginė transliacija"
+title: "Tiesioginių transliacijų laikai ir sąranka B1 Admin"
+sidebar_label: "Tiesioginė transliacija"
+description: "Planuokite tiesiogines transliacijas, nustatykite pokalbio ir anksti rodomo vaizdo laiką, prijunkite YouTube kanalą ir spręskite įterpimo problemas."
 ---
 
 # Tiesioginė transliacija
@@ -19,7 +21,7 @@ Puslapis „Tiesioginės transliacijos laikai“ leidžia nustatyti jūsų bažn
 
 - Jums reikia leidimo **contentApi.streamingServices.edit**. Jei neturite prieigos, žr. [Vaidmenys ir leidimai](../settings/roles-permissions.md).
 - Turėkite paruoštą savo YouTube kanalo ID, jei planuojate naudoti automatinę tiesioginę transliaciją
-- Pridėkite bent vieną [pamokslą](managing-sermons) arba nuolatinį tiesioginės transliacijos URL, kad galėtumėte naudoti transliacijos šaltinį
+- Pridėkite bent vieną [pamokslą](./managing-sermons.md) arba nuolatinį tiesioginės transliacijos URL, kad galėtumėte naudoti transliacijos šaltinį
 
 </div>
 
@@ -80,13 +82,13 @@ Norėdami rasti YouTube kanalo ID, eikite į savo YouTube kanalo išplėstinius 
 
 ## Spalvų ir logotipo pritaikymas
 
-Jūsų tiesioginės transliacijos puslapis naudoja jūsų svetainės [išvaizdos](../website/appearance) nustatymus:
+Jūsų tiesioginės transliacijos puslapis naudoja jūsų svetainės [išvaizdos](../website/appearance.md) nustatymus:
 
 - Antraštei naudojama **šviesi akcentinė spalva** su tamsiu tekstu.
 - Šoninei juostai naudojama **tamsi akcentinė spalva** su šviesiu tekstu.
 - Transliacijos puslapyje rodomas jūsų **šviesios fono logotipas**. Naudokite paveikslėlį su skaidriu fonu ir 4:1 kraštinių santykiu.
 
-Norėdami tai pakeisti, eikite į **Svetainė**, tada **Išvaizda**, ir atnaujinkite savo [spalvų paletės](../website/appearance#color-palette) bei [logotipo](../website/appearance#logo-and-branding) nustatymus.
+Norėdami tai pakeisti, eikite į **Svetainė**, tada **Išvaizda**, ir atnaujinkite savo [spalvų paletės](../website/appearance.md#color-palette) bei [logotipo](../website/appearance.md#logo-and-branding) nustatymus.
 
 ## Transliacijos vedėjų pridėjimas
 
@@ -133,5 +135,5 @@ YouTube automatinis kanalo tiesioginės transliacijos įterpimas gali būti blok
 
 ## Kiti žingsniai
 
-- [Pamokslų tvarkymas](managing-sermons) – pridėkite pamokslų į savo biblioteką
-- [Grojaraščiai](playlists) – suskirstykite pamokslus į serijas
+- [Pamokslų tvarkymas](./managing-sermons.md) – pridėkite pamokslų į savo biblioteką
+- [Grojaraščiai](./playlists.md) – suskirstykite pamokslus į serijas

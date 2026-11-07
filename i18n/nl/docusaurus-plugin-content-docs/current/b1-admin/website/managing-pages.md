@@ -1,5 +1,6 @@
 ---
 title: "Pagina's beheren"
+description: "Maak, bewerk en orden pagina's en navigatie in de paginaweergave van de B1 Admin-website, inclusief paginainstellingen, redirects en sitesjablonen."
 ---
 
 # Pagina's beheren
@@ -13,8 +14,8 @@ De weergave Website Pages is uw centrale hub voor het maken, bewerken en organis
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Voltooi [Initiële installatie](initial-setup) om uw domein en basisinstellingen in te stellen
-- Zorg dat uw inhoud en afbeeldingen gereed zijn. Gebruik eerst de [Bestanden](files)-beheerder om media-assets te uploaden.
+- Voltooi [Initiële installatie](./initial-setup.md) om uw domein en basisinstellingen in te stellen
+- Zorg dat uw inhoud en afbeeldingen gereed zijn. Gebruik eerst de [Bestanden](./files.md)-beheerder om media-assets te uploaden.
 
 </div>
 
@@ -69,6 +70,6 @@ Wanneer bezoekers op een afbeelding op uw website klikken, wordt deze geopend in
 
 ## Volgende stappen
 
-- [Initiële installatie](initial-setup) -- Setupinstructies voor de eerste keer
-- [Weergave](appearance) -- Pas het visuele thema van uw site aan
-- [Bestanden](files) -- Upload en beheer media-assets voor uw pagina's
+- [Initiële installatie](./initial-setup.md) -- Setupinstructies voor de eerste keer
+- [Weergave](./appearance.md) -- Pas het visuele thema van uw site aan
+- [Bestanden](./files.md) -- Upload en beheer media-assets voor uw pagina's

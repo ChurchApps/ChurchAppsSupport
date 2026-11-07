@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Miten käyttäjien lähettämät laulut, oppitunnit ja mallit kulkevat yhteisen moderointijonon kautta B1 Adminin palvelinhallinnassa lähetyksestä julkaisuun."
 ---
 
 # Content Commons — jaettu resurssikirjasto ja moderointi

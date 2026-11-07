@@ -1,5 +1,6 @@
 ---
 title: "Dashboard"
+description: "Vind je weg op het startscherm van B1 Mobile, waar je meest gebruikte functies als grote kaarten staan en de rest onder Snelle acties."
 ---
 
 # Dashboard
@@ -24,7 +25,7 @@ Onder de herokaart ziet u maximaal twee **aanbevolen kaarten** die naast elkaar 
 
 ## Snelle acties
 
-De overige functies verschijnen in een raster **Snelle acties** onder de aanbevolen kaarten. Elk item toont een pictogram en label. Dit zijn alle andere navigatiekoppelingen die uw kerk heeft geconfigureerd, waardoor u toegang hebt tot alles van [groepen](../groups/) en [geven](../giving/) tot [aanmelden](../checkin/), [preken](../content/sermons.md) en meer.
+De overige functies verschijnen in een raster **Snelle acties** onder de aanbevolen kaarten. Elk item toont een pictogram en label. Dit zijn alle andere navigatiekoppelingen die uw kerk heeft geconfigureerd, waardoor u toegang hebt tot alles van [groepen](../groups/index.md) en [geven](../giving/index.md) tot [aanmelden](../checkin/index.md), [preken](../content/sermons.md) en meer.
 
 ## Hoe de lay-out zich aanpast
 
@@ -37,7 +38,7 @@ De dashboard-indeling is gepersonaliseerd op basis van uw gebruikspatronen. Elke
 Als u de app nog niet hebt gebruikt, verschijnen functies in de standaardvolgorde die uw kerk heeft geconfigureerd. In de loop der tijd wordt het dashboard opnieuw geschud om met uw gewoonten overeen te komen.
 
 :::info
-De functies die beschikbaar zijn op uw dashboard worden geconfigureerd door uw kerkbeheerder via [B1 Admin](../../b1-admin/). Als u een functie niet ziet die u verwacht, neem contact op met uw kerkkantoor.
+De functies die beschikbaar zijn op uw dashboard worden geconfigureerd door uw kerkbeheerder via [B1 Admin](../../b1-admin/index.md). Als u een functie niet ziet die u verwacht, neem contact op met uw kerkkantoor.
 :::
 
 ## Het dashboard vernieuwen

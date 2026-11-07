@@ -1,5 +1,6 @@
 ---
 title: "Vista del maestro para lecciones"
+description: "B1.church'teki bir plandan dersi tam ekran Öğretmen Görünümünde açın; bölümler arasında geçiş yapın, medyayı oynatın ve sınıf kaynaklarını indirin."
 ---
 
 Wait — I need to correct myself. The file you provided is in English and the task is to translate it into Turkish. Here is the translated file:

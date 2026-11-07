@@ -1,5 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Aan de slag met het ledenportaal van B1.church"
+sidebar_label: "Aan de slag"
+description: "Vind de B1.church-site van je kerk, maak je ledenaccount aan en bekijk wat het portaal biedt, van groepen en geven tot inchecken en plannen."
 ---
 
 # Aan de slag met B1.church

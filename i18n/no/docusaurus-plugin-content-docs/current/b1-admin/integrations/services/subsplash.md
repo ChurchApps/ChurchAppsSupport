@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Koble Subsplash-gaver, nye personer og skjemasvar til B1 med Zapier, slik at gaver og profiler havner automatisk i B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Slå på Zap-en. Fremtidige gaver fra Subsplash flyter inn under **B1Admin → D
 
 ## Se også
 
-- [Donorbox](./donorbox) — samme oppskriftsform, annen givingsplattform
-- [Zapier (oversikt)](../zapier) — B1-siden av hver Zapier-oppskrift
+- [Donorbox](./donorbox.md) — samme oppskriftsform, annen givingsplattform
+- [Zapier (oversikt)](../zapier.md) — B1-siden av hver Zapier-oppskrift
 - [Subsplashs veiledning for Zapier-integrasjon](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplashs dokumentasjon)

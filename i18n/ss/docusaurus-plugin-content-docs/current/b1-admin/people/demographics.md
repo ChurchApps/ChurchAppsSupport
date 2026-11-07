@@ -1,5 +1,6 @@
 ---
 title: "Simo Sebantfu"
+description: "Bona iminyaka, ubulili, bulungu, simo semshado nemakhaya ebandla ku-B1 Admin ngetinkhombandlela letisebenta, bese ungena kunoma iliphi liqembu."
 ---
 
 # Simo Sebantfu

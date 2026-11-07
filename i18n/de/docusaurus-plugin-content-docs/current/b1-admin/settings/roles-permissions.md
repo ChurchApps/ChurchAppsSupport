@@ -1,5 +1,6 @@
 ---
 title: "Rollen & Berechtigungen"
+description: "Rollen in B1 Admin festlegen: was Mitarbeitende und Ehrenamtliche sehen und ändern dürfen, von Spenden über Anwesenheit bis zu Personen und Gruppen."
 ---
 
 # Rollen & Berechtigungen

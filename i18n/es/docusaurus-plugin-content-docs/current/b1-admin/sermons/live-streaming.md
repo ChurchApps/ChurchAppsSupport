@@ -1,5 +1,7 @@
 ---
-title: "Transmisión en vivo"
+title: "Horarios y configuración de transmisiones en vivo en B1 Admin"
+sidebar_label: "Transmisión en vivo"
+description: "Programa transmisiones en vivo de servicios semanales o únicos, configura el chat y el tiempo de inicio anticipado del video, conecta un canal de YouTube y soluciona problemas de inserción en B1 Admin."
 ---
 
 # Transmisión en vivo
@@ -15,7 +17,7 @@ La página de Horarios de transmisión en vivo le permite configurar el calendar
 
 - Necesita el permiso **contentApi.streamingServices.edit**. Consulte [Roles y permisos](../settings/roles-permissions.md) si no tiene acceso.
 - Tenga a mano el ID de su canal de YouTube si planea usar la transmisión en vivo automatizada
-- Agregue al menos un [sermón](managing-sermons) o una URL de transmisión en vivo permanente para usarla como fuente de su transmisión
+- Agregue al menos un [sermón](./managing-sermons.md) o una URL de transmisión en vivo permanente para usarla como fuente de su transmisión
 
 </div>
 
@@ -76,13 +78,13 @@ Para encontrar el ID de su canal de YouTube, vaya a la configuración avanzada d
 
 ## Personalizar colores y logotipo
 
-Su página de transmisión en vivo usa la configuración de [Apariencia](../website/appearance) de su sitio web:
+Su página de transmisión en vivo usa la configuración de [Apariencia](../website/appearance.md) de su sitio web:
 
 - El **color de acento claro** con texto oscuro se usa para el encabezado.
 - El **color de acento oscuro** con texto claro se usa para la barra lateral.
 - Su **Logotipo para fondo claro** aparece en la página de transmisión. Use una imagen con fondo transparente y una relación de aspecto de 4:1.
 
-Para cambiar estos elementos, vaya a **Sitio web** y luego a **Apariencia**, y actualice su [Paleta de colores](../website/appearance#color-palette) y su configuración de [Logotipo](../website/appearance#logo-and-branding).
+Para cambiar estos elementos, vaya a **Sitio web** y luego a **Apariencia**, y actualice su [Paleta de colores](../website/appearance.md#color-palette) y su configuración de [Logotipo](../website/appearance.md#logo-and-branding).
 
 ## Agregar anfitriones de transmisión
 
@@ -129,5 +131,5 @@ La inserción automatizada de la transmisión del canal de YouTube puede bloquea
 
 ## Próximos pasos
 
-- [Administrar sermones](managing-sermons) -- Agregue sermones a su biblioteca
-- [Listas de reproducción](playlists) -- Organice los sermones en series
+- [Administrar sermones](./managing-sermons.md) -- Agregue sermones a su biblioteca
+- [Listas de reproducción](./playlists.md) -- Organice los sermones en series

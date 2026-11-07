@@ -1,5 +1,6 @@
 ---
 title: "Administración de Páginas"
+description: "Crea, edita y organiza páginas y navegación en la vista de Páginas del sitio web de B1 Admin, incluyendo la configuración de páginas, redirecciones y plantillas de sitio."
 ---
 
 # Administración de Páginas
@@ -13,13 +14,13 @@ La vista Website Pages es tu centro central para crear, editar y organizar todas
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Completa la [Configuración Inicial](initial-setup) para configurar tu dominio y la configuración básica del sitio
-- Ten tu contenido e imágenes listos. Usa el administrador [Files](files) para cargar activos multimedia primero.
+- Completa la [Configuración Inicial](./initial-setup.md) para configurar tu dominio y la configuración básica del sitio
+- Ten tu contenido e imágenes listos. Usa el administrador [Files](./files.md) para cargar activos multimedia primero.
 
 </div>
 
 :::info
-Si tu iglesia tiene más de un sitio web (por ejemplo, sitios separados por campus), usa el conmutador de sitio en la parte superior de la vista Website Pages para saltar entre ellos. Cada sitio tiene sus propias páginas, navegación y configuración de [apariencia](appearance).
+Si tu iglesia tiene más de un sitio web (por ejemplo, sitios separados por campus), usa el conmutador de sitio en la parte superior de la vista Website Pages para saltar entre ellos. Cada sitio tiene sus propias páginas, navegación y configuración de [apariencia](./appearance.md).
 :::
 
 ## Comprensión de los Tipos de Página
@@ -35,7 +36,7 @@ Puedes convertir cualquier página generada automáticamente en una página pers
 
 1. Haz clic en el botón **Add Page** en la esquina superior derecha de la vista Website Pages.
 2. Elige un tipo de página (blanco o plantilla) y dale un nombre.
-3. Haz clic en **Edit Content** junto a cualquier página para abrir el [editor de páginas](page-editor), donde puedes agregar secciones, texto, imágenes y otros elementos.
+3. Haz clic en **Edit Content** junto a cualquier página para abrir el [editor de páginas](./page-editor.md), donde puedes agregar secciones, texto, imágenes y otros elementos.
 4. Haz clic en **Page Settings** junto a una página para actualizar el título de la página, la ruta de URL y otros metadatos.
 5. Haz clic en la ruta de una página en la columna **Path** para abrir la página en vivo en una nueva pestaña y ver exactamente cómo se verá para los visitantes.
 
@@ -112,10 +113,10 @@ Si estás construyendo tu sitio desde cero, puedes arrancarlo usando una **Site 
 3. Cuando encuentres una que te guste, haz clic en **Apply Template**.
 4. Las páginas que no existen se crean y se agregan a tu navegación. Las páginas existentes se dejan como están.
 
-Después de aplicar una plantilla, abre cada página en el [editor de páginas](page-editor) para reemplazar el texto y las imágenes de marcador de posición con el contenido real de tu iglesia.
+Después de aplicar una plantilla, abre cada página en el [editor de páginas](./page-editor.md) para reemplazar el texto y las imágenes de marcador de posición con el contenido real de tu iglesia.
 
 :::info
-Las plantillas de sitio crean estructura de página y navegación. No anulan el esquema de color o las fuentes de tu sitio -- esos son controlados por [Apariencia](appearance).
+Las plantillas de sitio crean estructura de página y navegación. No anulan el esquema de color o las fuentes de tu sitio -- esos son controlados por [Apariencia](./appearance.md).
 :::
 
 ## Lightbox de Imagen
@@ -124,7 +125,7 @@ Cuando los visitantes hacen clic en una imagen en tu sitio web, se abre en una s
 
 ## Próximos Pasos
 
-- [Configuración Inicial](initial-setup) -- Instrucciones de configuración por primera vez
-- [Uso del Editor de Páginas](page-editor) -- Aprende cómo construir y estilizar el contenido de la página
-- [Apariencia](appearance) -- Personaliza el tema visual de tu sitio
-- [Archivos](files) -- Carga y administra activos multimedia para tus páginas
+- [Configuración Inicial](./initial-setup.md) -- Instrucciones de configuración por primera vez
+- [Uso del Editor de Páginas](./page-editor.md) -- Aprende cómo construir y estilizar el contenido de la página
+- [Apariencia](./appearance.md) -- Personaliza el tema visual de tu sitio
+- [Archivos](./files.md) -- Carga y administra activos multimedia para tus páginas

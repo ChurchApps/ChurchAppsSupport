@@ -1,5 +1,6 @@
 ---
 title: "Conectar proveedores y crear listas de reproducción"
+description: "Configura proveedores conectados en FreePlay Admin y luego crea, ordena y previsualiza listas para las pantallas programadas."
 ---
 
 # Conectar proveedores y crear listas de reproducción
@@ -107,6 +108,6 @@ Haz clic en **Presentar** para reproducir la lista a pantalla completa en tu nav
 
 ## Artículos relacionados
 
-- **[Programar el calendario](./scheduling-the-calendar)**: coloca tu lista en el calendario de un grupo de pantallas
-- **[Gestionar pantallas y grupos](./managing-screens)**: asigna una lista como bucle predeterminado de un grupo
-- **[Proveedores de contenido](../content-providers/)**: proveedores que puedes conectar en la propia TV
+- **[Programar el calendario](./scheduling-the-calendar.md)**: coloca tu lista en el calendario de un grupo de pantallas
+- **[Gestionar pantallas y grupos](./managing-screens.md)**: asigna una lista como bucle predeterminado de un grupo
+- **[Proveedores de contenido](../content-providers/index.md)**: proveedores que puedes conectar en la propia TV

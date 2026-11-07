@@ -1,5 +1,6 @@
 ---
 title: "Scheduled Mode"
+description: "Set up FreePlay TVs to play playlists on a calendar in FreePlay Admin, so screens start and stop on their own and keep playing through Wi-Fi drops."
 ---
 
 # Scheduled Mode
@@ -18,16 +19,16 @@ FreePlay Admin uses your ChurchApps login, the same one you use for B1 Admin. Th
 
 FreePlay Admin has four main pages, listed across the top of the site:
 
-- **[Screens](./managing-screens)** - The TVs you've paired, their status, and the **screen groups** they belong to. Screens in a group share one calendar and one default loop
-- **[Playlists](./building-playlists)** - Loops of images and videos you pick from your content providers
-- **[Calendar](./scheduling-the-calendar)** - What each screen group plays, and when
-- **[Providers](./building-playlists#connecting-providers)** - The content sources your playlists pull from. You connect each one once for the whole church
+- **[Screens](./managing-screens.md)** - The TVs you've paired, their status, and the **screen groups** they belong to. Screens in a group share one calendar and one default loop
+- **[Playlists](./building-playlists.md)** - Loops of images and videos you pick from your content providers
+- **[Calendar](./scheduling-the-calendar.md)** - What each screen group plays, and when
+- **[Providers](./building-playlists.md#connecting-providers)** - The content sources your playlists pull from. You connect each one once for the whole church
 
 When nothing is scheduled, a group's screens play its **default loop**. If the group has no default loop, the screens go dark.
 
 ## How It Differs from Plan Mode
 
-- **[Plan Mode](../plan-mode/)** follows one service plan type from B1 Admin. Someone presses **Start Plan** on the TV, and the lesson plays when they do
+- **[Plan Mode](../plan-mode/index.md)** follows one service plan type from B1 Admin. Someone presses **Start Plan** on the TV, and the lesson plays when they do
 - **Scheduled Mode** follows a calendar. Content starts and stops at the times you set, so it works well for lobby signage, announcement loops, and classrooms where the lesson should be up before anyone walks in
 
 A calendar entry can still play a service plan. Pick the plan type under **Service plans** when you add a schedule, and the screen plays whatever plan is current in B1 Admin that week. This includes Go Curriculum lessons, even ones you've customized in the plan. The screen uses the Go Curriculum login linked to the plan type's ministry in B1 Admin, or the church's Go Curriculum connection if the ministry has none.
@@ -49,8 +50,8 @@ Press **Ctrl+K** (**⌘K** on a Mac), or click the search box in the header, to 
 
 ## In This Section
 
-- **[Pairing a Screen](./pairing-a-screen)** - Show the code on the TV and pair it in FreePlay Admin
-- **[Managing Screens and Groups](./managing-screens)** - Check status and downloads, and organize screens into groups
-- **[Connecting Providers and Building Playlists](./building-playlists)** - Link content sources and build loops of images and videos
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Decide what plays when, and what happens when it finishes early
-- **[Scheduled Playback on the TV](./scheduled-playback)** - What the TV does on its own, and how to use the remote during playback
+- **[Pairing a Screen](./pairing-a-screen.md)** - Show the code on the TV and pair it in FreePlay Admin
+- **[Managing Screens and Groups](./managing-screens.md)** - Check status and downloads, and organize screens into groups
+- **[Connecting Providers and Building Playlists](./building-playlists.md)** - Link content sources and build loops of images and videos
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Decide what plays when, and what happens when it finishes early
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - What the TV does on its own, and how to use the remote during playback

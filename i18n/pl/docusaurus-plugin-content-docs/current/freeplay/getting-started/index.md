@@ -1,5 +1,7 @@
 ---
-title: "Pierwsze kroki"
+title: "Pierwsze kroki z aplikacją FreePlay TV"
+sidebar_label: "Pierwsze kroki"
+description: "Konfiguracja FreePlay na Android TV, Fire TV lub Apple TV: instalacja aplikacji, pierwsze uruchomienie oraz pilot i pasek boczny."
 ---
 
 # Pierwsze kroki z FreePlay
@@ -42,7 +44,7 @@ FreePlay działa na Fire TV (w tym na nowszych nośnikach z systemem Vega OS), n
 
 Gdy po raz pierwszy otworzysz FreePlay, zobaczysz animowany ekran powitalny z logo FreePlay. Aplikacja sprawdza, czy są już połączeni dostawcy treści. Jeśli połączyłeś już dostawcę, od razu przeniesie Cię do przeglądarki treści tego dostawcy. W przeciwnym razie otworzy ekran **Dostawcy treści**, na którym możesz połączyć pierwsze źródło treści.
 
-Jeśli telewizor jest sparowany z kalendarzem w [Trybie zaplanowanym](../scheduled-mode/), FreePlay pomija wszystkie te kroki i od razu otwiera zaplanowany odtwarzacz.
+Jeśli telewizor jest sparowany z kalendarzem w [Trybie zaplanowanym](../scheduled-mode/index.md), FreePlay pomija wszystkie te kroki i od razu otwiera zaplanowany odtwarzacz.
 
 ## Nawigacja pilotem telewizora
 
@@ -62,13 +64,13 @@ Podczas przeglądania treści pasek boczny zwija się do wąskiego paska ikon. N
 
 Pasek boczny zawiera, od góry do dołu:
 
-- **Dzisiejszy plan** -- Wyświetlany, gdy telewizor jest sparowany z planem. Zobacz [Tryb planu](../plan-mode/)
-- **Ogłoszenia** -- Wyświetlany po wybraniu folderu ogłoszeń. Zobacz [Ogłoszenia](../content-providers/announcements)
-- **Przeglądaj** -- Każdy połączony dostawca treści, który możesz przeglądać. Zobacz [Przeglądanie i pobieranie treści](../content-providers/browsing-content)
-- **Ustawienia** -- Na dole paska bocznego. Otwiera **Paruj z kalendarzem** (sparowanie tego telewizora z kalendarzem lub planem -- zobacz [Wybór trybu parowania](./pairing-modes)), **Pobrane** (odtwarzanie lub usuwanie treści zapisanych na tym urządzeniu) oraz **Dostawcy** (połączenie dostawców treści i wybór folderu ogłoszeń)
+- **Dzisiejszy plan** -- Wyświetlany, gdy telewizor jest sparowany z planem. Zobacz [Tryb planu](../plan-mode/index.md)
+- **Ogłoszenia** -- Wyświetlany po wybraniu folderu ogłoszeń. Zobacz [Ogłoszenia](../content-providers/announcements.md)
+- **Przeglądaj** -- Każdy połączony dostawca treści, który możesz przeglądać. Zobacz [Przeglądanie i pobieranie treści](../content-providers/browsing-content.md)
+- **Ustawienia** -- Na dole paska bocznego. Otwiera **Paruj z kalendarzem** (sparowanie tego telewizora z kalendarzem lub planem -- zobacz [Wybór trybu parowania](./pairing-modes.md)), **Pobrane** (odtwarzanie lub usuwanie treści zapisanych na tym urządzeniu) oraz **Dostawcy** (połączenie dostawców treści i wybór folderu ogłoszeń)
 
 ## Co dalej
 
-- **[Wybór trybu parowania](./pairing-modes)** - Poznaj różne sposoby połączenia telewizora
-- **[Tryb zaplanowany](../scheduled-mode/)** - Ustaw swoje telewizory według kalendarza za pomocą FreePlay Admin
-- **[Dostawcy treści](../content-providers/)** - Połącz się z Lessons.church, Bible Project i innymi
+- **[Wybór trybu parowania](./pairing-modes.md)** - Poznaj różne sposoby połączenia telewizora
+- **[Tryb zaplanowany](../scheduled-mode/index.md)** - Ustaw swoje telewizory według kalendarza za pomocą FreePlay Admin
+- **[Dostawcy treści](../content-providers/index.md)** - Połącz się z Lessons.church, Bible Project i innymi

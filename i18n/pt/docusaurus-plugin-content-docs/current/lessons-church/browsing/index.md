@@ -1,5 +1,6 @@
 ---
 title: "Navegando pelo Conteúdo"
+description: "Navegue pela biblioteca gratuita de currículo do Lessons.church sem conta: página inicial, navegação por programa, busca e provedores externos."
 ---
 
 # Navegando pelo Conteúdo

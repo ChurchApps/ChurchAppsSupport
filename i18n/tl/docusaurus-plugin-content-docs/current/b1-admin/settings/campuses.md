@@ -1,5 +1,6 @@
 ---
 title: "Campuses"
+description: "I-set up ang campus sa B1 Admin para masubaybayan kung saang site kabilang ang bawat tao at grupo, at i-filter ang tao, attendance, at demographics ayon sa lokasyon."
 ---
 
 # Mga Campus

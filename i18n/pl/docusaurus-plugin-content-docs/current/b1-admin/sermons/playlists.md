@@ -1,5 +1,6 @@
 ---
 title: "Playlisty"
+description: "Grupuj kazania w serie w B1 Admin, aby odwiedzający stronę B1.church mogli przeglądać i śledzić każdą serię kazań po kolei."
 ---
 
 # Playlisty
@@ -39,10 +40,10 @@ Najpierw utwórz playlisty, a dopiero potem dodawaj kazania. Dzięki temu możes
 
 ## Dodawanie kazań do playlisty
 
-Gdy [dodajesz lub edytujesz kazanie](managing-sermons), przypisujesz je do playlisty za pomocą listy rozwijanej **Playlista**. Wszystkie kazania przypisane do tej samej playlisty są grupowane razem i wyświetlane w odpowiedniej kolejności na Twojej stronie.
+Gdy [dodajesz lub edytujesz kazanie](./managing-sermons.md), przypisujesz je do playlisty za pomocą listy rozwijanej **Playlista**. Wszystkie kazania przypisane do tej samej playlisty są grupowane razem i wyświetlane w odpowiedniej kolejności na Twojej stronie.
 
 :::info
-Kazania możesz też przypisywać do playlist podczas [importu zbiorczego](bulk-import). Przy imporcie z YouTube lub Vimeo wybierz playlistę z listy rozwijanej **Importuj do playlisty** przed kliknięciem **Importuj**.
+Kazania możesz też przypisywać do playlist podczas [importu zbiorczego](./bulk-import.md). Przy imporcie z YouTube lub Vimeo wybierz playlistę z listy rozwijanej **Importuj do playlisty** przed kliknięciem **Importuj**.
 :::
 
 ## Jak playlisty wyglądają na Twojej stronie
@@ -55,5 +56,5 @@ Playlisty są wyświetlane na Twojej stronie B1.church jako zbiory, które możn
 
 ## Dalsze kroki
 
-- [Zarządzanie kazaniami](managing-sermons) -- Dodawanie pojedynczych kazań do playlist
-- [Import zbiorczy](bulk-import) -- Import wielu kazań i przypisywanie ich do playlist
+- [Zarządzanie kazaniami](./managing-sermons.md) -- Dodawanie pojedynczych kazań do playlist
+- [Import zbiorczy](./bulk-import.md) -- Import wielu kazań i przypisywanie ich do playlist

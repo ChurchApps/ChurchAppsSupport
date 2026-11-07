@@ -1,5 +1,7 @@
 ---
-title: "Emaqembu"
+title: "Emaqembu ku-B1 Admin"
+sidebar_label: "Emaqembu"
+description: "Setfula futsi uhlele emaqembu ku-B1 Admin, kuhlanganise tigaba, emalungu, tikhalendari, nemicelo yekujoyina, nemhlahlandlela wekutfola likhasi lemaqembu."
 ---
 
 # Emaqembu

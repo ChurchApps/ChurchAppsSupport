@@ -1,5 +1,7 @@
 ---
-title: "Masuk ke Akun"
+title: "Masuk ke B1.church dan Portal Anggota"
+sidebar_label: "Masuk ke Akun"
+description: "Masuk ke portal anggota B1.church, gunakan kode dua langkah atau single sign-on, atur ulang kata sandi yang lupa, dan keluar dari menu akun."
 ---
 
 # Masuk ke Akun
@@ -17,7 +19,7 @@ Masuk ke B1.church memberi Anda akses ke portal anggota tempat Anda dapat meliha
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Anda memerlukan akun ChurchApps. Lihat [Memulai](../getting-started/) untuk membuatnya.
+- Anda memerlukan akun ChurchApps. Lihat [Memulai](./index.md) untuk membuatnya.
 - Anda memerlukan URL B1.church gereja Anda (misalnya, `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Anda tetap masuk di peramban atau aplikasi terpasang yang sama hingga Anda kelua
 
 ## Mengakses Portal Anggota
 
-Setelah masuk, Anda dapat mengakses portal anggota dengan mengklik **nama** Anda di pojok kanan atas halaman lalu memilih **Portal Anggota** dari menu. Portal anggota adalah tempat semua alat gereja pribadi Anda berada, termasuk [dasbor Beranda](./navigating.md), [halaman Saya](./me-page.md), [kelompok](../groups/), [pemberian](../giving/), dan lainnya.
+Setelah masuk, Anda dapat mengakses portal anggota dengan mengklik **nama** Anda di pojok kanan atas halaman lalu memilih **Portal Anggota** dari menu. Portal anggota adalah tempat semua alat gereja pribadi Anda berada, termasuk [dasbor Beranda](./navigating.md), [halaman Saya](./me-page.md), [kelompok](../groups/index.md), [pemberian](../giving/index.md), dan lainnya.
 
 ## Menu Pengguna Anda
 

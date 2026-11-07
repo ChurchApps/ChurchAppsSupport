@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin Overview"
+description: "Set up the B1 Church Checkin kiosk app on iPad or Android tablets so families can self-check-in, assign children to groups, and print labels and pickup slips."
 ---
 
 # B1 Church Checkin Overview
@@ -24,7 +25,7 @@ Place an iPad or Android tablet in your lobby or welcome area. Members walk up, 
 - **Household review** -- See all family members with photos and current group assignments at a glance.
 - **Group assignment** -- Assign each family member to the right class or group for the selected service time.
 - **Guest check-in** -- Add a guest to your household on the spot with a first and last name.
-- **QR guest registration** -- Display a QR code that visitors can scan to [register themselves](../b1-church/checkin/guest-registration) on their own phone before checking in, or let them tap **Register here** to fill in the same form on the kiosk.
+- **QR guest registration** -- Display a QR code that visitors can scan to [register themselves](../b1-church/checkin/guest-registration.md) on their own phone before checking in, or let them tap **Register here** to fill in the same form on the kiosk.
 - **Label printing** -- Print name labels for children and parent pickup slips with unique security codes.
 - **Network printer support** -- Discover and configure network printers directly from the app.
 - **Auto-login** -- After the first login, the app remembers your credentials and goes straight to the services screen on future launches.
@@ -33,8 +34,8 @@ Place an iPad or Android tablet in your lobby or welcome area. Members walk up, 
 
 ## Documentation Sections
 
-- **[Getting Started](./getting-started/)** -- Installing the app, logging in, and setting up your printer.
-- **[Check-In Workflow](./check-in/)** -- The full check-in flow from selecting a service to printing labels.
+- **[Getting Started](./getting-started/index.md)** -- Installing the app, logging in, and setting up your printer.
+- **[Check-In Workflow](./check-in/index.md)** -- The full check-in flow from selecting a service to printing labels.
 
 :::tip
 B1 Church Checkin works best on a 10-inch tablet (iPad or Android) mounted in landscape orientation where families can easily reach it. Get the app from the [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin), or [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

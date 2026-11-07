@@ -1,5 +1,6 @@
 ---
 title: "Relevés de dons"
+description: "Créez les relevés de dons de fin d'année pour chaque donateur dans B1 Admin, puis téléchargez-les en fichiers CSV ou imprimez-les pour l'envoi postal avec les totaux déductibles d'impôt."
 ---
 
 # Relevés de dons

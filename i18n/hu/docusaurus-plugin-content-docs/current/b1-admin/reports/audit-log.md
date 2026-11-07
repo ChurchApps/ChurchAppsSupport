@@ -1,5 +1,6 @@
 ---
 title: "Auditnapló"
+description: "A B1 Admin ellenőrzési naplója: ki jelentkezett be, ki szerkesztett személyi adatot vagy módosított jogosultságot, és szűrt bejegyzések CSV-exportja."
 ---
 
 # Auditnapló
@@ -78,6 +79,6 @@ Rendszeresen tekintse át az auditnaplót, különösen új csapattagok betanít
 
 ## Kapcsolódó cikkek
 
-- [Szerepkörök és jogosultságok](../settings/roles-permissions) -- Annak kezelése, hogy ki mihez férhet hozzá
-- [Adatbiztonság](../settings/data-security) -- Az adatai védelmének megismerése
+- [Szerepkörök és jogosultságok](../settings/roles-permissions.md) -- Annak kezelése, hogy ki mihez férhet hozzá
+- [Adatbiztonság](../settings/data-security.md) -- Az adatai védelmének megismerése
 - [Jelentések áttekintése](./index.md) -- Az összes elérhető jelentés megtekintése

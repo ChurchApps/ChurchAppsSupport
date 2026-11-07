@@ -1,5 +1,6 @@
 ---
 title: "Planowanie kalendarza"
+description: "Ustaw cotygodniowy lub jednorazowy harmonogram w kalendarzu FreePlay Admin (playlisty, plany, foldery dostawców) z domyślnymi pętlami jako zapasem."
 ---
 
 # Planowanie kalendarza
@@ -13,8 +14,8 @@ Strona **Kalendarz** w FreePlay Admin określa, co każda grupa ekranów odtwarz
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Utwórz co najmniej jedną grupę ekranów. Zobacz [Zarządzanie ekranami i grupami](./managing-screens#screen-groups)
-- [Utwórz playlistę](./building-playlists) lub skonfiguruj typ planu w B1 Admin
+- Utwórz co najmniej jedną grupę ekranów. Zobacz [Zarządzanie ekranami i grupami](./managing-screens.md#screen-groups)
+- [Utwórz playlistę](./building-playlists.md) lub skonfiguruj typ planu w B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Jeśli dwa harmonogramy się nakładają, formularz wyświetla ostrzeżenie: **N
 
 ## Jak ekrany pobierają zmiany
 
-Sparowane ekrany pobierają wszystko, co jest zaplanowane na kolejne 7 dni, i samodzielnie sprawdzają, czy są zmiany. Nie musisz dotykać telewizora po edycji kalendarza. Aby sprawdzić, kiedy ekran ma wszystko, czego potrzebuje, zobacz **Gotowe do** na [stronie Ekrany](./managing-screens).
+Sparowane ekrany pobierają wszystko, co jest zaplanowane na kolejne 7 dni, i samodzielnie sprawdzają, czy są zmiany. Nie musisz dotykać telewizora po edycji kalendarza. Aby sprawdzić, kiedy ekran ma wszystko, czego potrzebuje, zobacz **Gotowe do** na [stronie Ekrany](./managing-screens.md).
 
 ## Powiązane artykuły
 
-- **[Tworzenie playlist](./building-playlists)** - Utwórz playlisty, które planujesz
-- **[Odtwarzanie zaplanowanych treści w telewizorze](./scheduled-playback)** - Jak lekcje w tempie nauczyciela i pilot działają w telewizorze
-- **[Zarządzanie ekranami i grupami](./managing-screens)** - Dodawaj grupy i sprawdzaj pobieranie na każdym ekranie
+- **[Tworzenie playlist](./building-playlists.md)** - Utwórz playlisty, które planujesz
+- **[Odtwarzanie zaplanowanych treści w telewizorze](./scheduled-playback.md)** - Jak lekcje w tempie nauczyciela i pilot działają w telewizorze
+- **[Zarządzanie ekranami i grupami](./managing-screens.md)** - Dodawaj grupy i sprawdzaj pobieranie na każdym ekranie
 - **[Zachowanie tylko części każdej lekcji](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Przytnij każdą zaplanowaną lekcję w typie planu do części, które odtwarza twoja sala

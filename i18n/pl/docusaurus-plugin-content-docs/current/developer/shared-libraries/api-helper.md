@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Opis pakietu @churchapps/apihelper używanego przez API ChurchApps na Express: budowanie lokalne, testowanie przez portal Yarn i publikacja z changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Pakiet `@churchapps/apihelper` zawiera narzędzia po stronie serwera dla wszystk
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj **Node.js** i **Git** -- zobacz [Wymagania wstępne](../setup/prerequisites)
+- Zainstaluj **Node.js** i **Git** -- zobacz [Wymagania wstępne](../setup/prerequisites.md)
 - Zapoznaj się z konfiguracją i procesem wydawania [obszaru roboczego Packages](./index.md)
-- Ten pakiet zależy od [`@churchapps/helpers`](./helpers) (jako zależność peer) i ponownie go eksportuje
+- Ten pakiet zależy od [`@churchapps/helpers`](./helpers.md) (jako zależność peer) i ponownie go eksportuje
 
 </div>
 
@@ -65,6 +66,6 @@ Ten pakiet jest zależnością każdego interfejsu API ChurchApps -- głównego 
 
 ## Powiązane artykuły
 
-- **[Helpers](./helpers)** -- Podstawowy pakiet narzędziowy, od którego zależy ten pakiet
-- **[Struktura modułów](../api/module-structure)** -- Jak kontrolery i middleware uwierzytelniania są używane w modułach API
-- **[Lokalna konfiguracja API](../api/local-setup)** -- Konfiguracja API do lokalnego programowania
+- **[Helpers](./helpers.md)** -- Podstawowy pakiet narzędziowy, od którego zależy ten pakiet
+- **[Struktura modułów](../api/module-structure.md)** -- Jak kontrolery i middleware uwierzytelniania są używane w modułach API
+- **[Lokalna konfiguracja API](../api/local-setup.md)** -- Konfiguracja API do lokalnego programowania

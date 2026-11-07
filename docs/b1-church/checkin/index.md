@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-In in the B1.church Member Portal"
+sidebar_label: "Check-In"
+description: "Check yourself and household members into a church service from the B1.church member portal, skipping the kiosk and assigning groups."
 ---
 
 # Check-In

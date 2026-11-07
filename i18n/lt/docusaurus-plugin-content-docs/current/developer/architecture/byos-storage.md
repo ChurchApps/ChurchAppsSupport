@@ -1,5 +1,6 @@
 ---
 title: "Savo saugyklos naudojimas"
+description: "Prijunkite savo Google Drive, Dropbox, OneDrive ar S3 suderinamą saugyklą B1 Admin, kad bažnyčios failų įkėlimai neapribotų 100 MB platformos limito."
 ---
 
 # Savo saugyklos naudojimas (BYOS)
@@ -8,7 +9,7 @@ Bažnyčios gauna apie 100 MB nemokamos talpinamos failų saugyklos (`/content/f
 
 ## Teikėjo sąsaja
 
-BYOS naudoja saugyklos sąsają, sukurtą [MinistryStuff](./ministrystuff) funkcijai: `IStorageProvider` (`Packages/apihelper`), kurią kiekvienai bažnyčiai pagal `content.storageProviders` lentelę pateikia `StorageResolver`. Skirtingai nei vienetiniai `churchapps`/`ministrystuff` teikėjai, BYOS teikėjai saugo kiekvienos bažnyčios prisijungimo duomenis, todėl `StorageResolver.forChurch` kiekvienai užklausai sukuria atskirą egzempliorių pagal bažnyčios įrašą. Realizacijos yra šalia resolverio `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, taip pat `ByosAuth` (OAuth prieigos raktų keitimas ir vienu metu vykdomas atnaujinimas — Dropbox rotuoja atnaujinimo raktus, todėl atnaujinimai dedupliuojami taip pat, kaip tai daro `ProviderProxyController`).
+BYOS naudoja saugyklos sąsają, sukurtą [MinistryStuff](./ministrystuff.md) funkcijai: `IStorageProvider` (`Packages/apihelper`), kurią kiekvienai bažnyčiai pagal `content.storageProviders` lentelę pateikia `StorageResolver`. Skirtingai nei vienetiniai `churchapps`/`ministrystuff` teikėjai, BYOS teikėjai saugo kiekvienos bažnyčios prisijungimo duomenis, todėl `StorageResolver.forChurch` kiekvienai užklausai sukuria atskirą egzempliorių pagal bažnyčios įrašą. Realizacijos yra šalia resolverio `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, taip pat `ByosAuth` (OAuth prieigos raktų keitimas ir vienu metu vykdomas atnaujinimas — Dropbox rotuoja atnaujinimo raktus, todėl atnaujinimai dedupliuojami taip pat, kaip tai daro `ProviderProxyController`).
 
 `storageProviders` saugo prisijungimo duomenis: `accessToken`/`refreshToken`/`tokenExpiresAt` (šifruoti, OAuth trijulė) arba `apiKey`/`apiSecret` ir `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3). Prieigos raktai niekada nepasiekia kliento — `GET /content/storage/providers` paslepia paslaptis ir grąžina `connected` loginę reikšmę.
 

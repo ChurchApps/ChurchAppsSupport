@@ -1,5 +1,6 @@
 ---
 title: "Baniketi Bekucuketfwe"
+description: "Hlola bese ulanda imitfombo yemifundziso, tividiyo netifanekiso kusuka ku-Lessons.church, Dropbox, OneDrive, nakabanye bahlinzeki ku-FreePlay TV app."
 ---
 
 # Baniketi Bekucuketfwe
@@ -14,7 +15,7 @@ Baniketi bekucuketfwe timisela tangephandle letiniketa imibhalo yetifundzo, emav
 
 FreePlay njengamanje ifaka labafolokati labalandzelako:
 
-- **[Lessons.church](../../lessons-church/)** - Luhlelo lwekufundzisa bantfwana lolumahhala, loluvuliwe (open-source)
+- **[Lessons.church](../../lessons-church/index.md)** - Luhlelo lwekufundzisa bantfwana lolumahhala, loluvuliwe (open-source)
 - **Bible Project** - Emavidiyo netinsita letihlola liBhayibheli
 - **SignPresenter** - Kucuketfwe kwekwetfulwa nekutfumela imiyalo emabandleni
 - **B1.church** - Kucuketfwe lokusuka elungiselelweni lwakho lwe-B1 church
@@ -31,5 +32,5 @@ Baniketi labaxhunyiwe babonakala encenyeni yaseceleni ngakwesencele sesikrini. U
 
 ## Kulesigaba
 
-- **[Kuxhumana Nebaniketi](./connecting-providers)** - Indlela yekucinisekiswa nekuxhuma
-- **[Kuhlola Nekulayisha Kucuketfwe](./browsing-content)** - Hamba emafolda, ulayishe emafayela, futsi udlale kucuketfwe
+- **[Kuxhumana Nebaniketi](./connecting-providers.md)** - Indlela yekucinisekiswa nekuxhuma
+- **[Kuhlola Nekulayisha Kucuketfwe](./browsing-content.md)** - Hamba emafolda, ulayishe emafayela, futsi udlale kucuketfwe

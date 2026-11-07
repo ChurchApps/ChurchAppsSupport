@@ -1,5 +1,6 @@
 ---
 title: "Fil d'actualité"
+description: "L'onglet Chronologie du portail B1.church a été retiré. Trouvez discussions, événements, tâches et alertes sur la page Me, la cloche et dans chaque groupe."
 ---
 
 # Fil d'actualité
@@ -16,13 +17,13 @@ L'onglet autonome **Fil d'actualité** a été retiré. Le portail membre s'ouvr
 | --- | --- |
 | Conversations et annonces de groupe | Le chat de chaque [groupe](../groups/conversations.md) (**Ouvrir le chat**) |
 | Événements à venir pour vous et vos groupes | La page **Moi** (`/mobile/me`) et la section **Prochain événement** de chaque groupe |
-| Tâches et affectations de service | La page **Moi** et les [Plans](../plans/) |
+| Tâches et affectations de service | La page **Moi** et les [Plans](../plans/index.md) |
 | Nouvelles prédications | La section **Dernière prédication** de l'accueil et l'onglet [Prédications](../content/sermons.md) |
 | Tout ce qui vous a sollicité | L'icône **cloche** de la barre d'application, ou `/mobile/notifications` |
 
 ## La page Moi
 
-[La page Moi](../getting-started/me-page) est le remplaçant le plus proche de l'ancien fil. Elle liste ce qui vous attend : affectations de service, inscriptions aux événements et événements de groupe, ainsi que les formulaires que vous avez soumis, votre historique de présence et vos notifications les plus récentes. Elle donne aussi accès directement à votre profil, à vos préférences de notification, à vos messages, à vos dons et à vos inscriptions.
+[La page Moi](../getting-started/me-page.md) est le remplaçant le plus proche de l'ancien fil. Elle liste ce qui vous attend : affectations de service, inscriptions aux événements et événements de groupe, ainsi que les formulaires que vous avez soumis, votre historique de présence et vos notifications les plus récentes. Elle donne aussi accès directement à votre profil, à vos préférences de notification, à vos messages, à vos dons et à vos inscriptions.
 
 ## Notifications
 

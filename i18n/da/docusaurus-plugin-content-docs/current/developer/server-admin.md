@@ -1,5 +1,6 @@
 ---
 title: "Serveradministration"
+description: "Kun til Server.Admin-brugere: nulstil tofaktorlogin, skift til andre konti, modér Commons og godkend kirkens e-mail i B1 Admin."
 ---
 
 # Serveradministration

@@ -1,5 +1,6 @@
 ---
 title: "Yıldönümü Listesi"
+description: "B1 Admin'de seçtiğiniz aydaki evlilik yıl dönümlerini listeleyin; tarihler sonuçlarda görünür ve bülten veya kartlar için elektronik tabloya aktarılabilir."
 ---
 
 # Yıldönümü Listesi

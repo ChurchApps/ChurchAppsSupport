@@ -1,5 +1,6 @@
 ---
 title: "Lokalt oppsett av API"
+description: "Sett opp ChurchApps API lokalt: klon repoet, konfigurer seks MySQL-moduldatabaser, initialiser skjemaet og start utviklingsserveren med hot reload."
 ---
 
 # Lokalt oppsett av API
@@ -13,9 +14,9 @@ Denne veiledningen går gjennom hvordan du setter opp ChurchApps API for lokal u
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js 24+**, **Git** og **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites)
+- Installer **Node.js 24+**, **Git** og **MySQL 8.0+** -- se [Forutsetninger](../setup/prerequisites.md)
 - Opprett en MySQL-bruker med tillatelse til å opprette databaser
-- Gå gjennom referansen for [miljøvariabler](../setup/environment-variables) for konfigurasjon av API-et
+- Gå gjennom referansen for [miljøvariabler](../setup/environment-variables.md) for konfigurasjon av API-et
 
 </div>
 
@@ -82,7 +83,7 @@ API-et starter med hot reload på [http://localhost:8084](http://localhost:8084)
 
 ## Utrulling
 
-Staging-miljøet er avviklet. API-et rulles ut til demomiljøet ved hver push til `main`, og til produksjon gjennom den manuelle arbeidsflyten **Deploy Prod**, som også kjører ventende databasemigreringer. Se [API-utrulling](../deployment/apis) for detaljer.
+Staging-miljøet er avviklet. API-et rulles ut til demomiljøet ved hver push til `main`, og til produksjon gjennom den manuelle arbeidsflyten **Deploy Prod**, som også kjører ventende databasemigreringer. Se [API-utrulling](../deployment/apis.md) for detaljer.
 
 ## Lokal bibliotekutvikling
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Dette lar deg teste endringer i biblioteket mot API-et uten å publisere til npm. Se [Delte biblioteker](../shared-libraries/#local-development-against-a-consuming-app) for detaljer -- og commit aldri portal-oppløsningen som lenken skriver til `package.json`.
+Dette lar deg teste endringer i biblioteket mot API-et uten å publisere til npm. Se [Delte biblioteker](../shared-libraries/index.md#local-development-against-a-consuming-app) for detaljer -- og commit aldri portal-oppløsningen som lenken skriver til `package.json`.
 
 ## Relaterte artikler
 
-- **[Database](./database)** -- Forstå arkitekturen med én database per modul
-- **[Modulstruktur](./module-structure)** -- Hvordan kontrollere, repositorier og modeller er organisert
-- **[Delte biblioteker](../shared-libraries/)** -- Arbeid med `@churchapps/helpers` og `@churchapps/apihelper`
+- **[Database](./database.md)** -- Forstå arkitekturen med én database per modul
+- **[Modulstruktur](./module-structure.md)** -- Hvordan kontrollere, repositorier og modeller er organisert
+- **[Delte biblioteker](../shared-libraries/index.md)** -- Arbeid med `@churchapps/helpers` og `@churchapps/apihelper`

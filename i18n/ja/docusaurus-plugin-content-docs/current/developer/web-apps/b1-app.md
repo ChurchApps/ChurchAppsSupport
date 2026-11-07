@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Next.js 22 以降で B1App の会員向け Web アプリをローカルに設定します。.env で API エンドポイントを構成し、ポート 3301 で開発サーバーを実行します。"
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App は、Next.js で構築された教会メンバー向けの公開アプリ
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js 22 以降**と **Git** をインストールします -- [前提条件](../setup/prerequisites) を参照してください
-- API の接続先（デモまたはローカル）を設定します -- [環境変数](../setup/environment-variables) を参照してください
+- **Node.js 22 以降**と **Git** をインストールします -- [前提条件](../setup/prerequisites.md) を参照してください
+- API の接続先（デモまたはローカル）を設定します -- [環境変数](../setup/environment-variables.md) を参照してください
 
 </div>
 
@@ -89,5 +90,5 @@ Next.js の開発サーバーは [http://localhost:3301](http://localhost:3301) 
 3. CloudFront のキャッシュ無効化を実行し、新しいバージョンを配信します
 
 :::tip
-詳しいデプロイ手順は [Web アプリのデプロイ](../deployment/web-apps) ガイドを参照してください。
+詳しいデプロイ手順は [Web アプリのデプロイ](../deployment/web-apps.md) ガイドを参照してください。
 :::

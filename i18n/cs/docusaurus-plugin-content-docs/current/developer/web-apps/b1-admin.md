@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Lokální nastavení B1 Admin: naklonujte řídicí panel React/Vite, nastavte koncové body API v .env a spusťte vývojový server pro správu církve."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin je administrativní řídicí panel církve -- jednostránková aplikace
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **Node.js 22+** a **Git** -- viz [Předpoklady](../setup/prerequisites)
-- Nastavte cíl API (demo nebo lokální) -- viz [Proměnné prostředí](../setup/environment-variables)
+- Nainstalujte **Node.js 22+** a **Git** -- viz [Předpoklady](../setup/prerequisites.md)
+- Nastavte cíl API (demo nebo lokální) -- viz [Proměnné prostředí](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Produkční sestavení se nasazují do **S3 + CloudFront**:
 3. Spustí se invalidace CloudFront, aby se doručila nová verze
 
 :::tip
-Podrobné pokyny k nasazení najdete v průvodci [Nasazení webových aplikací](../deployment/web-apps).
+Podrobné pokyny k nasazení najdete v průvodci [Nasazení webových aplikací](../deployment/web-apps.md).
 :::

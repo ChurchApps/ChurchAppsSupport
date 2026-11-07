@@ -1,5 +1,6 @@
 ---
 title: "Architektur des Website-Builders"
+description: "Entwicklerübersicht des B1-Website-Builders: Inhaltsbaum, gemeinsamer Elementkatalog, Render-Pipeline und KI-Seitenerstellung in B1 Admin und B1.church."
 ---
 
 # Architektur des Website-Builders
@@ -82,7 +83,7 @@ Die Renderer liegen in `Packages/apphelper/src/website/components/elementTypes/`
 
 ### Formulare im Editor (B1Admin)
 
-Die Einstellungsformulare des Editors für jeden Typ liegen in `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` verteilt auf eine eigene Komponente (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` …) oder einen eingebetteten Feldaufbau je Typ. Das KI-seitige Gegenstück zu diesem Katalog ist das MCP-Werkzeug `describe_page_builder` der API (siehe [MCP-Server](../api/mcp)).
+Die Einstellungsformulare des Editors für jeden Typ liegen in `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` verteilt auf eine eigene Komponente (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` …) oder einen eingebetteten Feldaufbau je Typ. Das KI-seitige Gegenstück zu diesem Katalog ist das MCP-Werkzeug `describe_page_builder` der API (siehe [MCP-Server](../api/mcp.md)).
 
 Die Vorschau des Editors bindet dasselbe `Theme` ein wie die Live-Website; es setzt die CSS-Variablen `--headingFont` / `--bodyFont` aus den globalen Stilen der Gemeinde. B1App wendet diese Variablen über `pages.css` an, das B1Admin nicht importieren kann. Daher injiziert `ContentEditor.tsx` `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`), um sie auf den Fließtext in `.page` und auf `h1`–`h6` anzuwenden. Ohne dies zeigte die Vorschau Überschriften in der Schrift der Administration.
 
@@ -151,7 +152,7 @@ Dies alles wird von B1App auf Grundlage der Daten der ContentApi gerendert — d
 |---------|--------------|
 | Metabeschreibungen | `pages.metaDescription` (≤300 Zeichen) fließt über `MetaHelper.getMetaData()` in die Next.js-`Metadata` (description + Open Graph) auf jeder vom Builder gerenderten Route. Die Seiteneinstellungen in B1Admin enthalten eine KI-Schaltfläche „Generate“ (siehe unten) |
 | Weiterleitungen | Gemeindeweite Zeilen `redirects`, verwaltet unter `/content/redirects` (`content.edit`, Obergrenze von 200 Zeilen, normalisierte Pfade). Bei einer Anfrage, die sonst 404 ergäbe, löst die Seitenroute von B1App den Pfad über `GET /content/redirects/public/:churchId` auf und sendet mit `permanentRedirect` von Next eine HTTP-308-Weiterleitung; nicht zugeordnete Pfade fallen auf `notFound()` zurück |
-| Gebrandete 404-Seite | `not-found.tsx` rendert `BrandedNotFound` mit Logo, Name und Design der Gemeinde statt eines allgemeinen Fehlers. Unbekannte Pfade `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` und `/volunteer/[planId]` liefern eine echte 404, ebenso unbekannte Subdomains und fehlerhafte Seiten-Slugs (siehe [Website-Routing und Multi-Site](./websites)) |
+| Gebrandete 404-Seite | `not-found.tsx` rendert `BrandedNotFound` mit Logo, Name und Design der Gemeinde statt eines allgemeinen Fehlers. Unbekannte Pfade `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` und `/volunteer/[planId]` liefern eine echte 404, ebenso unbekannte Subdomains und fehlerhafte Seiten-Slugs (siehe [Website-Routing und Multi-Site](./websites.md)) |
 | Strukturierte Daten | `BlogPosting`-JSON-LD für Blogbeiträge; `VideoObject` auf den Seiten einzelner Predigten (`/{sdSlug}/sermons/[sermonId]`) und auf Seiten mit einem Element `sermons`; `Event` aus den Elementen Kalender/Veranstaltung auf Seiten des Builders und auf jeder Seite `/{sdSlug}/events/[eventId]` (nächstes Vorkommen, mit dem Foto der Veranstaltung als `image`); schema.org-`Event` aus dem Element `serviceTimes` |
 | Predigtseiten | Jede öffentliche Predigt erhält eine durchsuchbare Seite unter `/sermons/[sermonId]` mit vollständigen Metadaten — Predigten sind nicht mehr im clientseitigen Browser-Element eingeschlossen |
 | Analyse | Die öffentliche Einstellung `ga4MeasurementId` (verwaltet neben den Weiterleitungen in B1Admin) bindet über `next/script` ein gtag für GA4 je Gemeinde ein. Die B1-App (`/{sdSlug}/mobile`) sendet ihre Seitenaufrufe ebenfalls an diese ID, neben dem eigenen Tag von ChurchApps, sofern es eine gültige `G-`-ID ist (GTM-Container-IDs bleiben der Website vorbehalten). Jeder `gtag('config')`-Aufruf trägt ein `display_mode` mit dem Wert `installed` oder `browser`, abhängig von `navigator.standalone` oder der Medienabfrage `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ Die Schaltfläche „Umschreiben“ in der Symbolleiste des Abschnitts und die S
 | `POST /website/generateAltText` | Bildanalyse über bis zu 20 Bild-URLs; liefert einen knappen Alternativtext (≤125 Zeichen, Präfixe wie „photo of“ entfernt) |
 | `POST /website/generateMetaDescription` | Eine SEO-Metabeschreibung (≤155 Zeichen) aus dem Textinhalt der Seite — angebunden an die Schaltfläche Generate in den Seiteneinstellungen von B1Admin |
 
-Die Prompts dieser Endpunkte sind Markdown-Dateien unter `AskApi/config/instructions/`, einschließlich des Elementkatalogs, aus dem das Modell erzeugt. Zwei Gestaltungsentscheidungen halten den Katalog korrekt: Der Client übergibt bei jeder Anfrage `availableElementTypes` (der Prompt darf nur Typen aus dieser Liste verwenden — der Server hartkodiert nie die vollständige Menge), und das MCP-Werkzeug `describe_page_builder` der API enthält dieselbe Anleitung für KI-Agenten, die über [MCP](../api/mcp) arbeiten. Die Modelle sind Anthropic Claude über OpenRouter — 3.5 Haiku für Abschnittsinhalte (Latenz), 3.5 Sonnet für Gliederungen, Seitenpläne und Bildanalyse — mit einem Rückgriff auf OpenAI, wenn kein OpenRouter-Schlüssel konfiguriert ist.
+Die Prompts dieser Endpunkte sind Markdown-Dateien unter `AskApi/config/instructions/`, einschließlich des Elementkatalogs, aus dem das Modell erzeugt. Zwei Gestaltungsentscheidungen halten den Katalog korrekt: Der Client übergibt bei jeder Anfrage `availableElementTypes` (der Prompt darf nur Typen aus dieser Liste verwenden — der Server hartkodiert nie die vollständige Menge), und das MCP-Werkzeug `describe_page_builder` der API enthält dieselbe Anleitung für KI-Agenten, die über [MCP](../api/mcp.md) arbeiten. Die Modelle sind Anthropic Claude über OpenRouter — 3.5 Haiku für Abschnittsinhalte (Latenz), 3.5 Sonnet für Gliederungen, Seitenpläne und Bildanalyse — mit einem Rückgriff auf OpenAI, wenn kein OpenRouter-Schlüssel konfiguriert ist.
 
 ## Formulare im Dialogstil
 
@@ -224,8 +225,8 @@ Controller, die einen Bump auslösen: Seiten (speichern, löschen, duplizieren, 
 
 ## Verwandte Seiten
 
-- [Website-Routing und Multi-Site](./websites) — wie eine Anfrage einer Gemeinde/Website zugeordnet wird und wie eigene Domains geleitet werden
-- [Content-Endpunkte](../api/endpoints/content) — vollständige REST-Schnittstelle für Seiten, Abschnitte, Elemente, Blöcke, Beiträge, Weiterleitungen und Einstellungen
-- [AppHelper](../shared-libraries/app-helper) — das npm-Paket mit den Renderern, der Registry, den Teilern und den Widgets
-- [MCP-Server](../api/mcp) — einschließlich des Anleitungswerkzeugs `describe_page_builder`
+- [Website-Routing und Multi-Site](./websites.md) — wie eine Anfrage einer Gemeinde/Website zugeordnet wird und wie eigene Domains geleitet werden
+- [Content-Endpunkte](../api/endpoints/content.md) — vollständige REST-Schnittstelle für Seiten, Abschnitte, Elemente, Blöcke, Beiträge, Weiterleitungen und Einstellungen
+- [AppHelper](../shared-libraries/app-helper.md) — das npm-Paket mit den Renderern, der Registry, den Teilern und den Widgets
+- [MCP-Server](../api/mcp.md) — einschließlich des Anleitungswerkzeugs `describe_page_builder`
 - [Seiteneditor (für Endnutzer)](/docs/b1-admin/website/page-editor) — die Dokumentation des Editors für Mitarbeitende

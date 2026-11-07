@@ -1,5 +1,6 @@
 ---
 title: "Memasangkan Perangkat Anda"
+description: "Pasangkan FreePlay TV ke jenis rencana di B1 Admin dengan kode empat huruf di layar, lalu unduh media rencana untuk pemutaran Plan Mode."
 ---
 
 # Memasangkan Perangkat Anda
@@ -13,7 +14,7 @@ Untuk menggunakan Mode Rencana, Anda memasangkan TV dengan jenis rencana di B1 A
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Pasang dan jalankan FreePlay. Lihat [Memulai](../getting-started/)
+- Pasang dan jalankan FreePlay. Lihat [Memulai](../getting-started/index.md)
 - Pastikan Anda memiliki akses ke **B1 Admin** di komputer atau ponsel untuk menyelesaikan pemasangan
 
 </div>
@@ -25,7 +26,7 @@ Untuk menggunakan Mode Rencana, Anda memasangkan TV dengan jenis rencana di B1 A
 3. FreePlay menampilkan kode pemasangan empat huruf dengan huruf besar, di samping kode QR.
 4. Di bawah kode, indikator **Menunggu konfirmasi** yang berdenyut menunjukkan bahwa FreePlay sedang menunggu Anda menyelesaikan pemasangan.
 
-Kode yang sama juga berfungsi untuk [Mode Terjadwal](../scheduled-mode/) di FreePlay Admin dan untuk Mode Rencana di B1 Admin. Kode QR dan alamat **freeplay.church/pair** di layar membuka FreePlay Admin. Untuk Mode Rencana, abaikan keduanya dan masukkan kode di B1 Admin seperti dijelaskan di bawah.
+Kode yang sama juga berfungsi untuk [Mode Terjadwal](../scheduled-mode/index.md) di FreePlay Admin dan untuk Mode Rencana di B1 Admin. Kode QR dan alamat **freeplay.church/pair** di layar membuka FreePlay Admin. Untuk Mode Rencana, abaikan keduanya dan masukkan kode di B1 Admin seperti dijelaskan di bawah.
 
 ## Memasukkan Kode di B1 Admin
 
@@ -61,5 +62,5 @@ Kode pemasangan kedaluwarsa setelah 15 menit. FreePlay menampilkan kode baru sec
 ## Artikel Terkait
 
 - **[Ikhtisar Mode Rencana](./index.md)** - Perbedaan Mode Rencana dan Mode Terjadwal
-- **[Memasangkan Layar](../scheduled-mode/pairing-a-screen)** - Pasangkan TV yang sama ke kalender di FreePlay Admin
-- **[Memutar Konten](../content-providers/playing-content)** - Kontrol pemutar untuk pemutaran rencana
+- **[Memasangkan Layar](../scheduled-mode/pairing-a-screen.md)** - Pasangkan TV yang sama ke kalender di FreePlay Admin
+- **[Memutar Konten](../content-providers/playing-content.md)** - Kontrol pemutar untuk pemutaran rencana

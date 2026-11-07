@@ -1,5 +1,6 @@
 ---
 title: "Administrere innsendinger"
+description: "Gå gjennom, skriv ut og tildel skjemainnsendinger i B1 Admin, send svarene til riktig person, og følg opp besøkskort og bønneforespørsler."
 ---
 
 # Administrere innsendinger

@@ -1,5 +1,6 @@
 ---
 title: "Opgeslagen lijsten"
+description: "Sla een zoekopdracht in People van B1 Admin op als benoemde lijst en laad die met één klik. Nieuwe passende leden verschijnen automatisch."
 ---
 
 # Opgeslagen lijsten

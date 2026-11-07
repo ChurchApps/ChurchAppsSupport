@@ -1,5 +1,6 @@
 ---
 title: "Névjegyzék nyomtatása"
+description: "Háztartásonként csoportosított, nyomtatható tagnévsor generálása a B1 Admin-ból fényképekkel, elérhetőségekkel és születésnapokkal, levélpapír-méretben."
 ---
 
 # Névjegyzék nyomtatása

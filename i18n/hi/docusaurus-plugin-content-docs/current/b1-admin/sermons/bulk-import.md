@@ -1,5 +1,6 @@
 ---
 title: "बल्क इंपोर्ट"
+description: "B1 Admin में YouTube चैनल या Vimeo खाते से कई सेरमन वीडियो एक साथ आयात करें, फिर उन्हें प्लेलिस्ट में व्यवस्थित करें।"
 ---
 
 # बल्क इंपोर्ट
@@ -14,7 +15,7 @@ Bulk Import पेज आपको YouTube या Vimeo से वीडिय�
 <h4>शुरू करने से पहले</h4>
 
 - आपको **contentApi.streamingServices.edit** अनुमति चाहिए। अगर आपके पास पहुँच नहीं है, तो [Roles & Permissions](../settings/roles-permissions.md) देखें।
-- अपनी sermons आयात करने के लिए कम से कम एक [playlist](playlists) बनाएँ
+- अपनी sermons आयात करने के लिए कम से कम एक [playlist](./playlists.md) बनाएँ
 - अपना YouTube Channel ID या Vimeo खाते की जानकारी तैयार रखें
 
 </div>
@@ -39,7 +40,7 @@ Bulk Import पेज आपको YouTube या Vimeo से वीडिय�
 2. **Create First Playlist** पर क्लिक करें और नाम, विवरण, प्रकाशन तिथि और थंबनेल भरें।
 3. **Save** पर क्लिक करें, फिर **Add Sermon** पर क्लिक करके और **Bulk Import** चुनकर Bulk Import पर वापस जाएँ।
 
-playlists बनाने और प्रबंधित करने के विस्तृत निर्देशों के लिए [Playlists](playlists) देखें।
+playlists बनाने और प्रबंधित करने के विस्तृत निर्देशों के लिए [Playlists](./playlists.md) देखें।
 
 ## वीडियो आयात करना
 
@@ -54,11 +55,11 @@ playlists बनाने और प्रबंधित करने के �
 आपके वीडियो अपने सभी विवरणों के साथ आयात होंगे, जिनमें शीर्षक, विवरण, तारीखें और थंबनेल शामिल हैं। YouTube शीर्षकों और विवरणों में मौजूद विशेष अक्षर, जैसे `&`, अपॉस्ट्रोफ़ी और उद्धरण चिह्न, जैसे हैं वैसे ही आते हैं, `&amp;` जैसे कोड के रूप में नहीं।
 
 :::info
-बल्क इंपोर्ट तब आदर्श है जब आप किसी दूसरे प्लेटफ़ॉर्म से माइग्रेट कर रहे हों। आगे चलकर अलग-अलग sermons जोड़ने के लिए [Managing Sermons](managing-sermons) पेज का उपयोग करें।
+बल्क इंपोर्ट तब आदर्श है जब आप किसी दूसरे प्लेटफ़ॉर्म से माइग्रेट कर रहे हों। आगे चलकर अलग-अलग sermons जोड़ने के लिए [Managing Sermons](./managing-sermons.md) पेज का उपयोग करें।
 :::
 
 ## अगले चरण
 
-- [Managing Sermons](managing-sermons) -- आयात की गई sermon विवरण संपादित करें
-- [Playlists](playlists) -- sermon श्रृंखलाएँ बनाएँ और प्रबंधित करें
-- [Live Streaming](live-streaming) -- अपनी सेवाओं के लिए लाइव स्ट्रीमिंग सेट करें
+- [Managing Sermons](./managing-sermons.md) -- आयात की गई sermon विवरण संपादित करें
+- [Playlists](./playlists.md) -- sermon श्रृंखलाएँ बनाएँ और प्रबंधित करें
+- [Live Streaming](./live-streaming.md) -- अपनी सेवाओं के लिए लाइव स्ट्रीमिंग सेट करें

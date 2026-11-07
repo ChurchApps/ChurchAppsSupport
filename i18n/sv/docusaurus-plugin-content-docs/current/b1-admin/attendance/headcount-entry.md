@@ -1,5 +1,6 @@
 ---
 title: "Närvarande antal & trend"
+description: "Ange ett totalt antal deltagare för en gudstjänst eller grupp i B1 Admin utan namnlista och följ sedan totalerna vecka för vecka i rapporten Headcount Trend."
 ---
 
 # Närvarande antal & trend

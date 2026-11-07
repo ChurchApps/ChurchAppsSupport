@@ -1,5 +1,6 @@
 ---
 title: "Kayıtlarım"
+description: "B1 Church üye portalında kayıt durumunu kontrol edin, ödenmemiş bakiyeyi ödeyin, katılımcıları veya eklentileri düzenleyin ya da bir etkinlik kaydını iptal edin."
 ---
 
 # Kayıtlarım
@@ -14,7 +15,7 @@ title: "Kayıtlarım"
 <h4>Başlamadan Önce</h4>
 
 - [Oturum açmış](../getting-started/logging-in.md) olmanız gerekir — misafir kayıtları burada görünmez
-- En az bir etkinlik kaydınız olmalıdır. Bkz. [Etkinliklere Kayıt Olma](./registering).
+- En az bir etkinlik kaydınız olmalıdır. Bkz. [Etkinliklere Kayıt Olma](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Yeriniz hemen serbest bırakılır. Etkinlikte bir bekleme listesi varsa, sırad
 
 ## İlgili Makaleler
 
-- [Etkinliklere Kayıt Olma](./registering) -- Ödeme ve bekleme listeleri dahil kayıt süreci
+- [Etkinliklere Kayıt Olma](./registering.md) -- Ödeme ve bekleme listeleri dahil kayıt süreci
 - [Etkinlikler Genel Bakış](./index.md) -- Yaklaşan etkinlikleri inceleyin

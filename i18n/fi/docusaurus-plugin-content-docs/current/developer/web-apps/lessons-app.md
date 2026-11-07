@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Asenna LessonsApp (Next.js) paikallisesti Node.js 22+:lla, yhdistä se paikalliseen LessonsApi:in ja tutustu koontiin sekä S3/CloudFront-julkaisuun."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp on sisällönhallintasovellus, jolla hallitaan [Lessons.church](https
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **Node.js 22+** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites)
-- Määritä API-kohde (paikallinen LessonsApi) -- katso [Ympäristömuuttujat](../setup/environment-variables)
+- Asenna **Node.js 22+** ja **Git** -- katso [Esivaatimukset](../setup/prerequisites.md)
+- Määritä API-kohde (paikallinen LessonsApi) -- katso [Ympäristömuuttujat](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Tuotantoversiot julkaistaan **S3 + CloudFront**-palveluun:
 3. CloudFront-välimuistin mitätöinti käynnistetään, jotta palvellaan uusi versio
 
 :::tip
-Yksityiskohtaiset julkaisuohjeet löytyvät [Web App -julkaisu](../deployment/web-apps) -oppaasta.
+Yksityiskohtaiset julkaisuohjeet löytyvät [Web App -julkaisu](../deployment/web-apps.md) -oppaasta.
 :::

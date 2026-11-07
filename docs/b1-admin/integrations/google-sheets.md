@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Connect B1 Admin to Google Sheets with the B1 Export add-on to pull People, Donations, Groups, and Attendance into spreadsheet tabs on demand."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ The export runs in the background under your Google account. If the API key is r
 - **"B1 rejected the API key (401)"** — the key was revoked or is wrong. Re-mint and re-paste it.
 - **"This API key lacks permission for /giving/donations (403)"** — the key doesn't have `donations:read`. Update the key's scopes in B1Admin.
 - **Sheet doesn't refresh** after running — make sure you're looking at the *correct* tab name (`B1 People` etc.). The export creates the tab if it didn't exist.
-- **"Quota exceeded"** — Apps Script imposes per-user daily quotas on `UrlFetchApp` (typically thousands of calls per day). A large church with many records may need to split exports across multiple days or use [Make](./make) / a custom integration for high-volume sync.
+- **"Quota exceeded"** — Apps Script imposes per-user daily quotas on `UrlFetchApp` (typically thousands of calls per day). A large church with many records may need to split exports across multiple days or use [Make](./make.md) / a custom integration for high-volume sync.
 
 ## Customising the Add-On
 
@@ -108,6 +109,6 @@ The add-on is open source — the Apps Script project lives in the `B1Integratio
 
 ## See Also
 
-- [Zapier](./zapier) — for real-time sync rather than on-demand export
-- [Make](./make) — for sync with more complex transformations
+- [Zapier](./zapier.md) — for real-time sync rather than on-demand export
+- [Make](./make.md) — for sync with more complex transformations
 - [API Keys (developer reference)](/docs/developer/api/api-keys)

@@ -1,5 +1,6 @@
 ---
 title: "Attendance"
+description: "Review weekly attendance, rooms, and guests in B1 Admin, then set up campuses, service times, headcounts, and kiosk check-in from the Attendance page."
 ---
 
 # Attendance

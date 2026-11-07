@@ -1,5 +1,6 @@
 ---
 title: "Nastavitve obvestil"
+description: "Na enem zaslonu v B1 Admin in aplikaciji B1 nastavite kanale obvestil, pogostost e-pošte, tihe ure ter odjave od SMS-ov za vsako vrsto obvestila."
 ---
 
 # Nastavitve obvestil
@@ -60,6 +61,6 @@ Po prilagoditvi nastavitev tapnite **Shrani nastavitve**. Vaše spremembe začne
 
 ## Povezano
 
-- [Prijava za prostovoljno služenje](../serving/volunteer-signup) -- Opomniki za služenje in odgovarjanje na zahteve glede urnika
-- [Prijava na dogodke](../events/registering) -- Prijavite se na dogodke, ki pošiljajo opomnike
-- [Namestitev aplikacije](installing-pwa) -- Dodajte B1 v svojo napravo, da boste lahko prejemali potisna obvestila
+- [Prijava za prostovoljno služenje](../serving/volunteer-signup.md) -- Opomniki za služenje in odgovarjanje na zahteve glede urnika
+- [Prijava na dogodke](../events/registering.md) -- Prijavite se na dogodke, ki pošiljajo opomnike
+- [Namestitev aplikacije](./installing-pwa.md) -- Dodajte B1 v svojo napravo, da boste lahko prejemali potisna obvestila

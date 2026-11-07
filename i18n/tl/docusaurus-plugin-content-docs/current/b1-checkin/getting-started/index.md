@@ -1,5 +1,7 @@
 ---
-title: "Pagsisimula"
+title: "Pagsisimula sa B1 Checkin"
+sidebar_label: "Pagsisimula"
+description: "I-set up ang B1 Checkin kiosk app sa Android tablet: i-install, mag-log in, piliin ang simbahan, at opsyonal na ikonekta ang label printer."
 ---
 
 # Pagsisimula sa B1 Church Checkin
@@ -27,9 +29,9 @@ Ang pag-setup ng B1 Church Checkin ay ilang minuto lang. Inaakay ka ng seksyong 
 
 Kapag binuksan mo ang app sa unang pagkakataon, dadaan ka sa tatlong hakbang:
 
-1. **[Mag-log in](./logging-in)** -- Ilagay ang iyong email at password para mag-authenticate.
-2. **[Pumili ng simbahan](./logging-in)** -- Kung ang iyong account ay naka-link sa maraming simbahan, piliin kung alin ang dapat pagsilbihan ng kiosk na ito.
-3. **[Mag-setup ng printer](./printer-setup)** -- Mag-configure ng network printer para sa label printing, o laktawan ang hakbang na ito kung hindi mo kailangan ng mga label.
+1. **[Mag-log in](./logging-in.md)** -- Ilagay ang iyong email at password para mag-authenticate.
+2. **[Pumili ng simbahan](./logging-in.md)** -- Kung ang iyong account ay naka-link sa maraming simbahan, piliin kung alin ang dapat pagsilbihan ng kiosk na ito.
+3. **[Mag-setup ng printer](./printer-setup.md)** -- Mag-configure ng network printer para sa label printing, o laktawan ang hakbang na ito kung hindi mo kailangan ng mga label.
 
 Pagkatapos ng unang login, sine-save ng app ang iyong mga credential at pagpili ng simbahan. Sa mga susunod na pagbukas, dumiretso na ito sa services screen nang awtomatiko.
 
@@ -43,6 +45,6 @@ Siguraduhing na-configure na ng administrator ng iyong simbahan ang mga serbisyo
 
 ## Mga Susunod na Hakbang
 
-- [Pag-log In](./logging-in) -- Detalyadong mga tagubilin sa pag-log in at pagpili ng simbahan.
-- [Pag-setup ng Printer](./printer-setup) -- Paano tumuklas, pumili, at mag-test ng iyong label printer.
-- [Workflow ng Check-In](../check-in/) -- Alamin ang buong proseso ng check-in kapag naka-setup na ang iyong kiosk.
+- [Pag-log In](./logging-in.md) -- Detalyadong mga tagubilin sa pag-log in at pagpili ng simbahan.
+- [Pag-setup ng Printer](./printer-setup.md) -- Paano tumuklas, pumili, at mag-test ng iyong label printer.
+- [Workflow ng Check-In](../check-in/index.md) -- Alamin ang buong proseso ng check-in kapag naka-setup na ang iyong kiosk.

@@ -1,5 +1,6 @@
 ---
 title: "Puslapių redaktoriaus naudojimas"
+description: "Redaguokite B1 Admin puslapius: pridėkite skyrius ir elementus, stilizuokite, peržiūrėkite mobiliajame ir skelbkite juodraščius, su versijų istorija."
 ---
 
 # Puslapių redaktoriaus naudojimas
@@ -17,8 +18,8 @@ B1 puslapių redaktorius – tai vizualus vilkimo ir nuleidimo kūrimo įrankis,
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Atlikite [Pradinis nustatymas](initial-setup), kad sukonfigūruotumėte savo svetainę
-- Sukurkite bent vieną puslapį skyriuje [Puslapių valdymas](managing-pages)
+- Atlikite [Pradinis nustatymas](./initial-setup.md), kad sukonfigūruotumėte savo svetainę
+- Sukurkite bent vieną puslapį skyriuje [Puslapių valdymas](./managing-pages.md)
 - Norint pasiekti redaktorių, reikia **content.edit** leidimo
 
 </div>
@@ -31,7 +32,7 @@ B1 puslapių redaktorius – tai vizualus vilkimo ir nuleidimo kūrimo įrankis,
 Redaktorius atsidaro visame ekrane. Kairiajame skydelyje rodoma jūsų puslapio struktūra ir galimi turinio elementai; centrinėje srityje rodoma tiesioginė puslapio peržiūra.
 
 :::info
-Redaktorius visada rodomas šviesiame režime, neatsižvelgiant į jūsų B1 Admin temos nustatymą, ir naudoja antraštių bei pagrindinio teksto šriftus, kuriuos pasirinkote skiltyje [Appearance](appearance). Taip peržiūra tiksliai atitinka tai, kaip puslapis atrodys svetainės lankytojams.
+Redaktorius visada rodomas šviesiame režime, neatsižvelgiant į jūsų B1 Admin temos nustatymą, ir naudoja antraštių bei pagrindinio teksto šriftus, kuriuos pasirinkote skiltyje [Appearance](./appearance.md). Taip peržiūra tiksliai atitinka tai, kaip puslapis atrodys svetainės lankytojams.
 :::
 
 ## Puslapio struktūra: skyriai ir elementai
@@ -61,7 +62,7 @@ Jei skyrius jau sukurtas, bet norite kitokios struktūros? Naudokite to skyriaus
    - **Nuotrauka** – įkelkite nuotrauką arba nurodykite jos nuorodą
    - **Mygtukas** – spustelėjamas raginimo veikti (call-to-action) nuorodos mygtukas
    - **Kortelė** – nuotrauka su pavadinimu ir aprašymu
-   - **Forma** – įterpkite [formą](../forms/creating-forms) tiesiai į puslapį. Jei formai pridėta [antraštės nuotrauka](../forms/creating-forms.md#adding-a-header-photo), ji rodoma virš klausimų
+   - **Forma** – įterpkite [formą](../forms/creating-forms.md) tiesiai į puslapį. Jei formai pridėta [antraštės nuotrauka](../forms/creating-forms.md#adding-a-header-photo), ji rodoma virš klausimų
    - **Kalendorius** – rodo renginių kalendorių
    - **DUK** – akordeono tipo klausimų ir atsakymų blokai
    - **Video** – įterpkite vaizdo įrašą pagal URL
@@ -79,7 +80,7 @@ Jei skyrius jau sukurtas, bet norite kitokios struktūros? Naudokite to skyriaus
    - **Žemėlapis** – įterptas žemėlapis, centruotas pagal bažnyčios adresą
    - **Lentelė** – paprastas eilučių ir stulpelių tinklelis lentelių duomenims
    - **Tekstas su nuotrauka** – tekstas ir nuotrauka šalia vienas kito
-   - **Logotipas** – jūsų bažnyčios logotipas, paimtas iš skilties [Appearance](appearance)
+   - **Logotipas** – jūsų bažnyčios logotipas, paimtas iš skilties [Appearance](./appearance.md)
    - **Tiesioginė transliacija** – jūsų tiesioginės transliacijos grotuvas, įterptas tiesiai į puslapį
    - **Podkastas** – epizodų sąrašas, paimtas iš jūsų nurodyto išorinio podkasto RSS srauto URL, su nustatymais, kiek epizodų rodyti ir ar rodyti datas bei aprašymus. Kiekvienas epizodas gyvoje svetainėje turi garso grotuvą ir **Download** nuorodą, kuri išsaugo epizodo garso failą pavadinimu pagal epizodo pavadinimą. Tai skirta bet kokio podkasto srautui rodyti svetainėje; jei norite publikuoti savo pamokslus kaip podkastą, žr. [Pamokslų valdymas](../sermons/managing-sermons.md#your-podcast-feed)
    - **Auka** – aukojimo mygtukas arba įterpta aukojimo forma
@@ -100,7 +101,7 @@ Jei į JavaScript lauką įklijuosite tik interneto adresą (pavyzdžiui, paveik
 
 **Kalendorius** elementas rodo renginius iš vieno iš jūsų kalendorių:
 
-1. Skiltyje **Select** pasirinkite **Group Calendar** (vienos grupės renginiai – sąraše rodomos grupės, kuriose esate narys) arba **Curated Calendar** (kalendorius, kurį sukūrėte skiltyje **Calendars**; žr. [Curated Calendar](../calendars/curated-calendar)).
+1. Skiltyje **Select** pasirinkite **Group Calendar** (vienos grupės renginiai – sąraše rodomos grupės, kuriose esate narys) arba **Curated Calendar** (kalendorius, kurį sukūrėte skiltyje **Calendars**; žr. [Curated Calendar](../calendars/curated-calendar.md)).
 2. Skiltyje **Select Calendar** pasirinkite grupę ar kalendorių.
 3. Skiltyje **Display** pasirinkite rodymo būdą:
    - **Month calendar** – mėnesio tinklelis, kurį lankytojai gali peržiūrėti puslapis po puslapio.
@@ -133,7 +134,7 @@ Spustelėkite bet kurį elementą, kad atidarytumėte jo stiliaus skydelį. Daž
 Pažengusiam stilizavimui kiekvienas skyrius ir elementas turi lauką **Custom CSS**, kuriame galite rašyti savo CSS taisykles. Jos taikomos tik tam elementui, todėl nepaveiks kitų puslapio dalių.
 
 :::tip
-Jei norite taikyti stilius visai svetainei – pavyzdžiui, pasirinktinį šriftą ar bendrą spalvą – naudokite [Appearance](appearance) nustatymus, o ne pasirinktinį CSS atskiruose puslapiuose.
+Jei norite taikyti stilius visai svetainei – pavyzdžiui, pasirinktinį šriftą ar bendrą spalvą – naudokite [Appearance](./appearance.md) nustatymus, o ne pasirinktinį CSS atskiruose puslapiuose.
 :::
 
 ## Puslapio peržiūra
@@ -188,7 +189,7 @@ Naudokite juodraščio / publikavimo eigą, kai norite paruošti puslapį – pa
 
 ## Susiję straipsniai
 
-- [Puslapių valdymas](managing-pages) – kurkite puslapius, nustatykite URL ir tvarkykite svetainės navigaciją
-- [Appearance](appearance) – nustatykite visos svetainės spalvas, šriftus ir prekinį ženklą
-- [Failai](files) – įkelkite nuotraukas ir dokumentus, kuriuos norite naudoti redaktoriuje
-- [Formų kūrimas](../forms/creating-forms) – kurkite formas, kurias galite įterpti į puslapius
+- [Puslapių valdymas](./managing-pages.md) – kurkite puslapius, nustatykite URL ir tvarkykite svetainės navigaciją
+- [Appearance](./appearance.md) – nustatykite visos svetainės spalvas, šriftus ir prekinį ženklą
+- [Failai](./files.md) – įkelkite nuotraukas ir dokumentus, kuriuos norite naudoti redaktoriuje
+- [Formų kūrimas](../forms/creating-forms.md) – kurkite formas, kurias galite įterpti į puslapius

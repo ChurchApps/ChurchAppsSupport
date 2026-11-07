@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Pengiriman Formulir"
+description: "Tinjau, cetak, dan tugaskan ulang pengiriman formulir di B1 Admin, memindahkan jawaban ke orang yang tepat dan menindaklanjuti kartu pengunjung serta permohonan doa."
 ---
 
 # Mengelola Pengiriman Formulir

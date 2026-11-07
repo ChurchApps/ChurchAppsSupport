@@ -1,5 +1,7 @@
 ---
-title: "Edytowanie profilu"
+title: "Edycja profilu w portalu członka B1.church"
+sidebar_label: "Edytowanie profilu"
+description: "Aktualizuj dane kontaktowe, członków gospodarstwa domowego, e-mail logowania, hasło i ustawienia prywatności w portalu członka B1.church."
 ---
 
 # Edytowanie profilu

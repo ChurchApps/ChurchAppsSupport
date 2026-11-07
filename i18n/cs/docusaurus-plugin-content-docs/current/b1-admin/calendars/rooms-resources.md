@@ -1,5 +1,6 @@
 ---
 title: "Místnosti, zdroje a plánování"
+description: "Nastavte v B1 Admin místnosti, vybavení, blokace a šablony akcí, aby skupiny mohly žádat o rezervace a vy je schvalovali bez dvojích rezervací."
 ---
 
 # Místnosti, zdroje a plánování
@@ -14,7 +15,7 @@ Místnosti a zdroje vám umožní sledovat prostory a vybavení vaší církve, 
 <h4>Než začnete</h4>
 
 - Potřebujete administrátorský přístup k sekci Kalendáře v B1 Admin
-- Nastavte [skupiny](../groups/creating-groups), jejichž členové budou odesílat žádosti o rezervaci
+- Nastavte [skupiny](../groups/creating-groups.md), jejichž členové budou odesílat žádosti o rezervaci
 
 </div>
 
@@ -76,7 +77,7 @@ Při vytváření nové akce může zaměstnanec zvolit existující šablonu, k
 
 ## Související články
 
-- [Kalendář dostupnosti](availability) — přehled všech rezervací na jednom místě a rezervace místností nebo zdrojů přímo
-- [Schvalování kalendáře](approvals) — schvalování nebo zamítání žádostí o rezervaci místností a zdrojů
-- [Vytváření kalendářů](creating-calendars) — nastavení kalendářů akcí
-- [Vytváření skupin](../groups/creating-groups) — nastavení skupin, které mohou rezervovat místnosti a zdroje
+- [Kalendář dostupnosti](./availability.md) — přehled všech rezervací na jednom místě a rezervace místností nebo zdrojů přímo
+- [Schvalování kalendáře](./approvals.md) — schvalování nebo zamítání žádostí o rezervaci místností a zdrojů
+- [Vytváření kalendářů](./creating-calendars.md) — nastavení kalendářů akcí
+- [Vytváření skupin](../groups/creating-groups.md) — nastavení skupin, které mohou rezervovat místnosti a zdroje

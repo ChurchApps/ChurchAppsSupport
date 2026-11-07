@@ -1,5 +1,6 @@
 ---
 title: "Xem bài học"
+description: "Hướng dẫn mở bài học trên Lessons.church, đọc các phần và hành động theo vai trò, tìm tệp tải xuống và chuyển địa điểm theo nhóm tuổi trước giờ học."
 ---
 
 # Xem bài học

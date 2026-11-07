@@ -1,5 +1,7 @@
 ---
-title: "Derslerin Planlanması"
+title: "B1 Admin'de Lessons.church Derslerini Planlama"
+sidebar_label: "Derslerin Planlanması"
+description: "Lessons.church'ü B1 Admin'e bağlayın, ardından dersleri planlayın, bir seriyi toplu olarak planlayın veya yıllık planı bir ekibin hizmet planlarına uygulayın."
 ---
 
 # Lessons.church'ten Dersleri Planlama

@@ -1,5 +1,7 @@
 ---
-title: "सेल्फ चेक-इन"
+title: "B1 Mobile ऐप से स्व-चेक-इन"
+sidebar_label: "सेल्फ चेक-इन"
+description: "B1 Mobile ऐप से सेवा के समय का चयन और हर व्यक्ति का समूह तय करने सहित, स्वयं और अपने परिवार को किसी सेवा में चेक-इन करें।"
 ---
 
 # सेल्फ चेक-इन
@@ -13,7 +15,7 @@ B1 Mobile से चेक-इन करना एक सरल, बहु-च�
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- [B1 Mobile इंस्टॉल करें](../getting-started/installing) और अपने खाते में [लॉग इन करें](../getting-started/logging-in)
+- [B1 Mobile इंस्टॉल करें](../getting-started/installing.md) और अपने खाते में [लॉग इन करें](../getting-started/logging-in.md)
 - सुनिश्चित करें कि आपके [परिवार के सदस्य](../profile/household.md) आपकी प्रोफ़ाइल में सेट किए गए हैं
 
 </div>

@@ -1,5 +1,6 @@
 ---
 title: "Assigning Groups"
+description: "Choose which group or class a family member attends for each service time in B1 Checkin, using categories, age and grade guidance, and the None option."
 ---
 
 # Assigning Groups
@@ -13,7 +14,7 @@ When you tap a service time button on the household review screen, the app opens
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Review your household](./household-review) on the household review screen
+- [Review your household](./household-review.md) on the household review screen
 - Expand the member you want to assign and tap a service time button
 - Ensure your church administrator has [created groups](../../b1-admin/groups/creating-groups.md) and linked them to service times in B1 Admin
 
@@ -34,7 +35,7 @@ Tap a category card to expand it and see the individual groups inside. Tap it ag
 2. Review the list of groups within that category. Each group shows its name with a selection icon on the right.
 3. Tap the **group name** you want to assign.
 
-The app saves your selection and returns you to the [household review screen](./household-review). The service time button for that member will now show the name of the group you selected.
+The app saves your selection and returns you to the [household review screen](./household-review.md). The service time button for that member will now show the name of the group you selected.
 
 ## Age and Grade Guidance
 
@@ -52,7 +53,7 @@ Use the **None** option for adults who attend the main worship service and do no
 
 To change a group assignment that has already been made:
 
-1. Go back to the [household review screen](./household-review).
+1. Go back to the [household review screen](./household-review.md).
 2. Expand the member whose group you want to change.
 3. Tap the service time button (which now shows the currently assigned group name).
 4. Select a different group or tap **None**.
@@ -63,8 +64,8 @@ Groups and categories are configured by your church administrator in B1 Admin. I
 
 ## Next Steps
 
-After assigning groups, return to the [household review screen](./household-review) to:
+After assigning groups, return to the [household review screen](./household-review.md) to:
 
 - Assign groups to additional family members
-- [Add a guest](./adding-guests) if someone is visiting with your family
-- [Complete check-in](./completing-checkin) when all assignments are ready
+- [Add a guest](./adding-guests.md) if someone is visiting with your family
+- [Complete check-in](./completing-checkin.md) when all assignments are ready

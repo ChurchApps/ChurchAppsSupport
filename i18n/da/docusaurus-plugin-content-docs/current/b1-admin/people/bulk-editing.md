@@ -1,5 +1,6 @@
 ---
 title: "Bulk-redigering af folk"
+description: "Opdatér medlemsstatus, civilstand, køn, fravalg, Ja/Nej-felter eller gruppemedlemskab for mange personer på én gang i B1 Admin."
 ---
 
 # Bulk-redigering af folk

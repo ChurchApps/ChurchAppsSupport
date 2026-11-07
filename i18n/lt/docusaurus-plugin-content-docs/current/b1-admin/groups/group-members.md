@@ -1,5 +1,6 @@
 ---
 title: "Grupių nariai"
+description: "Pridėkite, pašalinkite narius ir paskirkite vadovus B1 Admin grupėse, tada siųskite el. laišką, SMS, spausdinkite ar eksportuokite narių sąrašą iš grupės puslapio."
 ---
 
 # Grupių nariai

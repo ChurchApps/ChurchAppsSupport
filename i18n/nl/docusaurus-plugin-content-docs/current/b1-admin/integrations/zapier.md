@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Koppel B1 Admin aan Zapier om automatiseringen te starten bij nieuwe personen, giften en groepsleden, zonder programmeerkennis."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Kies een trigger en voeg daarna een of meer actiestappen toe. Hieronder staan vo
 ### Giften posten in een Slack-kanaal met een rijkere kaart dan de ingebouwde connector
 
 - **Trigger**: B1: Nieuwe gift
-- **Actie**: Slack: Kanaalbericht verzenden. Stel elke lay-out samen, zoals knoppen, bijlagen of andere opties, die de ingebouwde [Slack-connector](./slack-discord) niet kan.
+- **Actie**: Slack: Kanaalbericht verzenden. Stel elke lay-out samen, zoals knoppen, bijlagen of andere opties, die de ingebouwde [Slack-connector](./slack-discord.md) niet kan.
 
 ### Nieuwe groepsleden toevoegen aan een Google-groep
 
@@ -106,6 +107,6 @@ Dat betekent dat de trigger alleen afgaat voor gebeurtenissen die plaatsvinden *
 
 ## Zie ook
 
-- [Make](./make): hetzelfde patroon, maar op een ander platform
-- [Slack & Discord](./slack-discord): eenvoudigere chatmeldingen zonder Zapier
+- [Make](./make.md): hetzelfde patroon, maar op een ander platform
+- [Slack & Discord](./slack-discord.md): eenvoudigere chatmeldingen zonder Zapier
 - [Webhooks (ontwikkelaarsreferentie)](/docs/developer/api/webhooks)

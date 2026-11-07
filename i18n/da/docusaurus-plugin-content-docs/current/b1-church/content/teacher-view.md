@@ -1,5 +1,6 @@
 ---
 title: "Lærervisning til lektioner"
+description: "Åbn en lektion i fuldskærms-lærervisning fra en plan på B1.church, hop mellem afsnit, afspil medier og download undervisningsmateriale."
 ---
 
 # Lærervisning til lektioner

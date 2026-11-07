@@ -1,5 +1,7 @@
 ---
-title: "Gemeinschaft"
+title: "Mitgliederverzeichnis in B1.church"
+sidebar_label: "Gemeinschaft"
+description: "Mitgliederverzeichnis in B1.church nach Name oder Gruppe durchsuchen, Profile ansehen und erfahren, wo die Timeline-Updates nun zu finden sind."
 ---
 
 # Gemeinschaft
@@ -26,5 +28,5 @@ Welche Mitglieder und Informationen im Verzeichnis für Sie sichtbar sind, häng
 :::
 
 :::tip
-Nutzen Sie die Gemeinschaftsfunktionen zusammen mit den [Gruppen](../groups/), um sich unter der Woche aktiv in Ihrer Gemeinde zu engagieren.
+Nutzen Sie die Gemeinschaftsfunktionen zusammen mit den [Gruppen](../groups/index.md), um sich unter der Woche aktiv in Ihrer Gemeinde zu engagieren.
 :::

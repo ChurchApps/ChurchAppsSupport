@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Połącz zgłoszenia wolontariuszy w B1 Admin z weryfikacją karalności Checkr przez Make.com, z opcjonalnymi alertami o statusie raportu dla koordynatora."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Jeśli Twój kościół używa członkostwa w grupach B1 do kontrolowania dostę
 
 ## Zobacz także
 
-- [Make (przegląd)](../make) — strona B1 dla każdego scenariusza Make
-- [Wiadomości mobilne](./mobile-message) — dla dostawców SMS bez aplikacji Zapier, ten sam schemat Webhooks/HTTP co w połączeniu Checkr z Make
+- [Make (przegląd)](../make.md) — strona B1 dla każdego scenariusza Make
+- [Wiadomości mobilne](./mobile-message.md) — dla dostawców SMS bez aplikacji Zapier, ten sam schemat Webhooks/HTTP co w połączeniu Checkr z Make
 - [Dokumentacja API Checkr](https://docs.checkr.com/)

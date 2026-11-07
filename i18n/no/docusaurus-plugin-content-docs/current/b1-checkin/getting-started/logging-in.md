@@ -1,5 +1,7 @@
 ---
-title: "Logge inn"
+title: "Logge inn i B1 Church Checkin"
+sidebar_label: "Logge inn"
+description: "Logg inn i B1 Church Checkin-kioskappen, velg menighet, og forstå automatisk innlogging, admininnstillinger og utlogging på nettbrettet."
 ---
 
 # Logge inn
@@ -63,7 +65,7 @@ Administratorinnstillinger er bevisst skjult, slik at medlemmer som bruker kiosk
 2. Hvis det er satt en kiosk-PIN, skriver du inn PIN-koden når du blir bedt om det.
 3. Skjermen **Administratorinnstillinger** åpnes med følgende alternativer:
    - **Bytt gudstjeneste** -- bytt den valgte gudstjenestetiden
-   - **Bytt skriver** -- åpne [skriverinnstillingene](./printer-setup) for å søke etter og velge en skriver
+   - **Bytt skriver** -- åpne [skriverinnstillingene](./printer-setup.md) for å søke etter og velge en skriver
    - **Sett/endre PIN** -- sett eller oppdater kiosk-PIN-koden som beskytter administratortilgangen
    - **Logg ut** -- logg ut og gå tilbake til innloggingsskjermen
 
@@ -73,4 +75,4 @@ Administratorinnstillinger er bevisst skjult, slik at medlemmer som bruker kiosk
 
 ## Neste steg
 
-Når du er logget inn, kan du [sette opp en skriver](./printer-setup) eller gå direkte til [innsjekkingsflyten](../check-in/).
+Når du er logget inn, kan du [sette opp en skriver](./printer-setup.md) eller gå direkte til [innsjekkingsflyten](../check-in/index.md).

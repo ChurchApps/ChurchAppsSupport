@@ -1,12 +1,13 @@
 ---
 title: "使用 Docker 自托管"
+description: "使用 Docker 在您自己的机器上安装私有的 B1 Admin、会员门户、API 和 MySQL 组件，然后使用 b1 命令进行升级和备份。"
 ---
 
 # 使用 Docker 自托管
 
 <div class="article-intro">
 
-在任何安装了 Docker 的机器上运行你自己的私有 B1 Admin、B1 成员门户和网站、API 以及 MySQL 数据库实例——无论是家用服务器、小型 VPS 还是本地部署的机器。一条命令即可安装，一条命令即可升级，并且每次升级前都会先进行备份。如果你根本不想管理服务器，请参阅[在 Railway 上自托管](./railway-template)，了解托管式替代方案。
+在任何安装了 Docker 的机器上运行你自己的私有 B1 Admin、B1 成员门户和网站、API 以及 MySQL 数据库实例——无论是家用服务器、小型 VPS 还是本地部署的机器。一条命令即可安装，一条命令即可升级，并且每次升级前都会先进行备份。如果你根本不想管理服务器，请参阅[在 Railway 上自托管](./railway-template.md)，了解托管式替代方案。
 
 </div>
 
@@ -94,10 +95,10 @@ SUPPORT_EMAIL=noreply@church.example.org
 
 这些功能与在 Railway 上的使用方式完全相同——使用相同的环境变量，只是在 `.env` 中设置，而不是在 Railway 控制台中设置：
 
-- **[电子邮件 / SMTP](./railway-template#1-email-highly-recommended)** —— Resend、Brevo 和 Gmail 的服务商配置指南
-- **[多站点](./railway-template#3-multi-site-multiple-churches-on-one-instance)** —— 每个实例可以托管无限数量的教会。`/` 会提供 slug 为 `DEFAULT_CHURCH_SLUG` 的教会服务（第一个教会的 slug 为 `church`）；将额外的域名指向该主机，并在 B1Admin 的 **设置 → 域名** 中进行映射
-- **[在线奉献](./railway-template#4-online-giving-stripe--paypal)** —— 在管理界面中为每个教会单独配置
-- **[可选集成](./railway-template#6-optional-feature-integrations)** —— `OPENAI_API_KEY`、`YOUTUBE_API_KEY`、`PEXELS_KEY`、`VIMEO_TOKEN`、`API_BIBLE_KEY`、`GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[电子邮件 / SMTP](./railway-template.md#1-email-highly-recommended)** —— Resend、Brevo 和 Gmail 的服务商配置指南
+- **[多站点](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** —— 每个实例可以托管无限数量的教会。`/` 会提供 slug 为 `DEFAULT_CHURCH_SLUG` 的教会服务（第一个教会的 slug 为 `church`）；将额外的域名指向该主机，并在 B1Admin 的 **设置 → 域名** 中进行映射
+- **[在线奉献](./railway-template.md#4-online-giving-stripe--paypal)** —— 在管理界面中为每个教会单独配置
+- **[可选集成](./railway-template.md#6-optional-feature-integrations)** —— `OPENAI_API_KEY`、`YOUTUBE_API_KEY`、`PEXELS_KEY`、`VIMEO_TOKEN`、`API_BIBLE_KEY`、`GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[推送通知](#push-notifications)** —— `WEB_PUSH_*`；安装程序会将其留空，因此在你添加之前推送功能处于关闭状态
 
 在自托管实例上，邀请函和教会发送的其他电子邮件会自动启用（托管服务则会将这些功能置于人工审核之后，以保护其发信信誉）。
@@ -148,7 +149,7 @@ SUPPORT_EMAIL=noreply@church.example.org
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-如果媒体库较大，可以将文件存储切换到 S3——设置 `FILE_STORE=S3` 以及 [Railway 指南文件存储部分](./railway-template#5-file-storage)中描述的 `AWS_*` 变量。数据库备份不包括 S3 对象；请在该存储桶上启用版本控制。
+如果媒体库较大，可以将文件存储切换到 S3——设置 `FILE_STORE=S3` 以及 [Railway 指南文件存储部分](./railway-template.md#5-file-storage)中描述的 `AWS_*` 变量。数据库备份不包括 S3 对象；请在该存储桶上启用版本控制。
 
 ## 更新
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## 相关文章
 
-- **[在 Railway 上自托管](./railway-template)** —— 托管式替代方案，以及共享的部署后配置指南
-- **[初始设置](../../getting-started/initial-setup)** —— 创建教会之后的第一步
-- **[本地 API 设置](../api/local-setup)** —— 直接运行整套环境以进行开发
+- **[在 Railway 上自托管](./railway-template.md)** —— 托管式替代方案，以及共享的部署后配置指南
+- **[初始设置](../../getting-started/initial-setup.md)** —— 创建教会之后的第一步
+- **[本地 API 设置](../api/local-setup.md)** —— 直接运行整套环境以进行开发

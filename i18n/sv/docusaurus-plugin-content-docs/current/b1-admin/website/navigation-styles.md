@@ -1,5 +1,6 @@
 ---
 title: "Navigeringsstilar"
+description: "Anpassa färger för fasta och transparenta webbplatsnavigeringsfält i B1 Admin, inklusive länk-, hover- och aktiva tillstånd för din kyrkosida."
 ---
 
 # Navigeringsstilar

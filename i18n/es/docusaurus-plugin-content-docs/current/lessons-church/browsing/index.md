@@ -1,5 +1,6 @@
 ---
 title: "Explorar contenido"
+description: "Cómo explorar la biblioteca gratuita de currículo de Lessons.church sin cuenta: página de inicio, búsqueda por programa, búsqueda y proveedores externos."
 ---
 
 # Explorar contenido

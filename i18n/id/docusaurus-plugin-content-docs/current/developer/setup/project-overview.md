@@ -1,5 +1,6 @@
 ---
 title: "Ringkasan Proyek"
+description: "Peta semua repositori ChurchApps per kategori: framework, port dev, database, dan keterkaitan paket @churchapps bersama dalam dokumentasi setup developer."
 ---
 
 # Ringkasan Proyek
@@ -13,7 +14,7 @@ ChurchApps terdiri dari sekitar 20 repositori independen, yang masing-masing dit
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Instal [prasyarat](./prerequisites) untuk kategori proyek yang ingin Anda kerjakan
+- Instal [prasyarat](./prerequisites.md) untuk kategori proyek yang ingin Anda kerjakan
 
 </div>
 
@@ -72,7 +73,7 @@ Kode bersama diterbitkan ke npm di bawah scope `@churchapps` dan digunakan sebag
 | `@churchapps/integration-sdk` | Toolkit integrasi B1.church: webhook, klien REST, OAuth | Pengembang integrasi eksternal |
 | `@churchapps/texting` | Abstraksi penyedia SMS | Api |
 
-Lihat [Pustaka Bersama](../shared-libraries/) untuk pengaturan workspace dan alur rilis.
+Lihat [Pustaka Bersama](../shared-libraries/index.md) untuk pengaturan workspace dan alur rilis.
 
 ## Hubungan Antarproyek
 
@@ -90,5 +91,5 @@ Semua aplikasi frontend bergantung pada `@churchapps/helpers`. Aplikasi web juga
 
 ## Langkah Selanjutnya
 
-- **[Variabel Lingkungan](./environment-variables)** -- Konfigurasikan file `.env` Anda untuk terhubung ke API
-- **[Pengaturan Lokal API](../api/local-setup)** -- Siapkan backend API secara lokal
+- **[Variabel Lingkungan](./environment-variables.md)** -- Konfigurasikan file `.env` Anda untuk terhubung ke API
+- **[Pengaturan Lokal API](../api/local-setup.md)** -- Siapkan backend API secara lokal

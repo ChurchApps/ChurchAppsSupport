@@ -1,5 +1,6 @@
 ---
 title: "Lahjoitusyhteenveto"
+description: "Aja B1 Adminin Donation Summary -raportti ja näe kokonaislahjoitukset, yksilöllisten lahjoittajien määrä ja summat rahastoittain valitsemallasi aikavälillä."
 ---
 
 # Lahjoitusyhteenveto

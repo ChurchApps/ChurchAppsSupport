@@ -1,5 +1,7 @@
 ---
-title: "Direktestrømming"
+title: "Se direktesendinger på B1.church"
+sidebar_label: "Direktestrømming"
+description: "Se menighetens gudstjenester live på B1.church-siden Stream og delta i chatten sammen med sendingen, uten innlogging."
 ---
 
 # Direktestrømming

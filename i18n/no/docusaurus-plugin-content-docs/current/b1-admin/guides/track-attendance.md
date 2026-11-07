@@ -1,5 +1,6 @@
 ---
 title: "Veiledning: Følg opp oppmøtet i menigheten"
+description: "Før oppmøte i B1 Admin ved å sette opp campuser og gudstjenestetider, registrere det manuelt eller via selvinnsjekk, og lese rapportene."
 ---
 
 # Følg opp oppmøtet i menigheten

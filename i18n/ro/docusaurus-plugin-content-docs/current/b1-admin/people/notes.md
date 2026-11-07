@@ -1,5 +1,6 @@
 ---
 title: "Note"
+description: "Revizuiți notele pastorale, urmăririle și planificările din persoane, grupuri, evenimente și carduri de flux, într-o listă B1 Admin, cele mai noi primele."
 ---
 
 # Note

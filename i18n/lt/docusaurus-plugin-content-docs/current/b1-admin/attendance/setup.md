@@ -1,5 +1,6 @@
 ---
 title: "Lankomumo sąranka"
+description: "Nustatykite filialus, pamaldas, laikus ir grupių priskyrimus B1 Admin, kad lankomumo apskaita ir registracijos tvarkaraščiai veiktų visoje bažnyčioje."
 ---
 
 # Lankomumo sąranka

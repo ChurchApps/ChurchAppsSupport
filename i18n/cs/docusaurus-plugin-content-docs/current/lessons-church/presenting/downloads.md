@@ -1,5 +1,6 @@
 ---
 title: "Ke stažení a materiály"
+description: "Najděte a stáhněte tisknutelné pracovní listy, průvodce pro vedoucí a PDF připojené k lekcím, studiím nebo programům Lessons.church pro vaši třídu."
 ---
 
 # Ke stažení a materiály

@@ -1,5 +1,6 @@
 ---
 title: "Evenementen & ruimtes aanvragen"
+description: "Vraag via het ledenportaal van B1.church een ruimte- of materiaalreservering aan, volg de status in Mijn aanvragen en annuleer die zolang hij openstaat."
 ---
 
 # Evenementen & ruimtes aanvragen
@@ -42,11 +43,11 @@ Open **Mijn aanvragen** vanaf de Ik-pagina. Elke aanvraag toont het evenement, w
 Zolang een aanvraag nog in behandeling is, kun je hem intrekken met **Aanvraag annuleren** (je wordt gevraagd te bevestigen — annuleren kan niet ongedaan worden gemaakt).
 
 :::info
-Aanvragen worden beoordeeld door kerkpersoneel op de B1 Admin-pagina [Goedkeuringen](../../b1-admin/calendars/approvals). Welke ruimtes en hulpbronnen goedkeuring nodig hebben, is aan je kerk — zie [Ruimtes & hulpbronnen](../../b1-admin/calendars/rooms-resources).
+Aanvragen worden beoordeeld door kerkpersoneel op de B1 Admin-pagina [Goedkeuringen](../../b1-admin/calendars/approvals.md). Welke ruimtes en hulpbronnen goedkeuring nodig hebben, is aan je kerk — zie [Ruimtes & hulpbronnen](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Gerelateerde artikelen
 
-- [De Ik-pagina](../getting-started/me-page) -- Waar de aanvraagsnelkoppelingen zich bevinden
-- [Kalendergoedkeuringen (B1 Admin)](../../b1-admin/calendars/approvals) -- Hoe personeel aanvragen beoordeelt
-- [Ruimtes & hulpbronnen (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Hoe kerken boekbare ruimtes configureren
+- [De Ik-pagina](../getting-started/me-page.md) -- Waar de aanvraagsnelkoppelingen zich bevinden
+- [Kalendergoedkeuringen (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Hoe personeel aanvragen beoordeelt
+- [Ruimtes & hulpbronnen (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Hoe kerken boekbare ruimtes configureren

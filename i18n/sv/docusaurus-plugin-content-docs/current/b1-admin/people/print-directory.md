@@ -1,5 +1,6 @@
 ---
 title: "Skriv ut katalog"
+description: "Skapa en utskriftsbar medlemskatalog grupperad per hushåll från B1 Admin med foton, kontaktuppgifter och födelsedagar, anpassad för pappersformat Letter."
 ---
 
 # Skriv ut katalog

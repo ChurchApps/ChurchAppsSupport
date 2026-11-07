@@ -1,5 +1,6 @@
 ---
 title: "Tinhlobo Te-Navigation"
+description: "Lungisa imibala yemabha ekuhamba lacacile nalabonakala ngekukhanya ku-webhusayithi ye-B1 Admin, kufaka phakatsi imibala yematawu, lapho ucindzeta khona, nelapho sisebenta khona."
 ---
 
 # Tinhlobo Te-Navigation

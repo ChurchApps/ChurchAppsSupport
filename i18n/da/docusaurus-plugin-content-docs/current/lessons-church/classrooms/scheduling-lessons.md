@@ -1,5 +1,7 @@
 ---
-title: "Planlægning af lektioner"
+title: "Planlægning af klasselokalelektioner i portalen"
+sidebar_label: "Planlægning af lektioner"
+description: "Planlæg Lessons.church-lektioner i en klasseværelseskalender i B1 Admin-portalen ved at vælge program, studie, lektion og aldersspecifikt lokale for hver dato."
 ---
 
 # Planlægning af lektioner

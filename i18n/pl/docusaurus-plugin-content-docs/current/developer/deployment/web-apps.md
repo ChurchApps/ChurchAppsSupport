@@ -1,5 +1,6 @@
 ---
 title: "Implementacja aplikacji internetowej"
+description: "Wdrażanie aplikacji webowych ChurchApps (np. B1 Admin) na Amazon S3 i CloudFront: automatycznie przez GitHub Actions po scaleniu lub ręcznie."
 ---
 
 # Implementacja aplikacji internetowej
@@ -13,7 +14,7 @@ Aplikacje internetowe ChurchApps są wdrażane jako statyczne witryny w **Amazon
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Skonfiguruj aplikację internetową lokalnie i sprawdź, czy się buduje -- zobacz [Aplikacje internetowe](../web-apps/)
+- Skonfiguruj aplikację internetową lokalnie i sprawdź, czy się buduje -- zobacz [Aplikacje internetowe](../web-apps/index.md)
 - Skonfiguruj poświadczenia AWS z dostępem do S3 i CloudFront
 - Poznaj nazwę docelowego zasobnika S3 oraz identyfikator dystrybucji CloudFront
 
@@ -53,6 +54,6 @@ Jeśli chcesz sprawdzić build lokalnie przed wdrożeniem, uruchom `npm run buil
 
 ## Powiązane artykuły
 
-- **[Aplikacje internetowe](../web-apps/)** -- Przewodniki konfiguracji dla B1Admin, B1App i LessonsApp
-- **[Wdrożenie API](./apis)** -- Wdrażanie usług zaplecza API
-- **[Wdrożenie aplikacji mobilnych](./mobile)** -- Publikowanie aplikacji mobilnych w sklepach z aplikacjami
+- **[Aplikacje internetowe](../web-apps/index.md)** -- Przewodniki konfiguracji dla B1Admin, B1App i LessonsApp
+- **[Wdrożenie API](./apis.md)** -- Wdrażanie usług zaplecza API
+- **[Wdrożenie aplikacji mobilnych](./mobile.md)** -- Publikowanie aplikacji mobilnych w sklepach z aplikacjami

@@ -1,5 +1,6 @@
 ---
 title: "Tietojen tuominen"
+description: "Tuo olemassa olevat henkilöt, ryhmät, läsnäolo- ja lahjoitustiedot B1 Adminiin B1 Transfer -työkalulla tai vie datan varmuuskopio milloin tahansa."
 ---
 
 # Tietojen tuominen

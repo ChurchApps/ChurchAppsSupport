@@ -1,5 +1,6 @@
 ---
 title: "Campanhas e Promessas"
+description: "Crie campanhas de arrecadação no B1 Admin, registre promessas de contribuição dos membros e acompanhe o progresso da meta com as doações de cada fundo."
 ---
 
 # Campanhas e Promessas
@@ -13,7 +14,7 @@ As campanhas permitem realizar uma arrecadação em torno de uma meta específic
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure seus [fundos de doação](funds) -- cada campanha está vinculada a um fundo
+- Configure seus [fundos de doação](./funds.md) -- cada campanha está vinculada a um fundo
 - Você precisa de acesso à seção de Doações do B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Clique em **Editar** em qualquer linha de campanha (ou em **Editar Campanha** no
 
 ## Artigos Relacionados
 
-- [Registrando Doações](recording-donations) -- registre as ofertas efetivas que cumprem as promessas
-- [Fundos](funds) -- configure o fundo a ser associado a uma campanha
-- [Relatórios de Doações](donation-reports) -- relatórios de doações por fundo
+- [Registrando Doações](./recording-donations.md) -- registre as ofertas efetivas que cumprem as promessas
+- [Fundos](./funds.md) -- configure o fundo a ser associado a uma campanha
+- [Relatórios de Doações](./donation-reports.md) -- relatórios de doações por fundo

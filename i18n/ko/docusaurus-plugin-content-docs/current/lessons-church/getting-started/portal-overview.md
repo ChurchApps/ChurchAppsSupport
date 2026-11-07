@@ -1,5 +1,6 @@
 ---
 title: "포털 개요"
+description: "Lessons.church 포털을 둘러보며 교실을 찾고, 예약된 레슨을 확인하고, 피드 링크를 설정하고, 외부 제공자와 관리 도구에 접근합니다."
 ---
 # 포털 개요
 <div class="article-intro">

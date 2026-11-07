@@ -1,5 +1,6 @@
 ---
 title: "Impor Massal"
+description: "Impor video khotbah secara massal dari kanal YouTube atau akun Vimeo ke B1 Admin, lalu kelompokkan ke dalam daftar putar."
 ---
 
 # Impor Massal
@@ -14,7 +15,7 @@ Halaman Impor Massal memungkinkan Anda dengan cepat mengisi pustaka khotbah deng
 <h4>Sebelum Anda Mulai</h4>
 
 - Anda memerlukan izin **contentApi.streamingServices.edit**. Lihat [Peran & Izin](../settings/roles-permissions.md) jika Anda tidak memiliki akses.
-- Buat setidaknya satu [playlist](playlists) untuk tempat mengimpor khotbah Anda
+- Buat setidaknya satu [playlist](./playlists.md) untuk tempat mengimpor khotbah Anda
 - Siapkan ID Channel YouTube atau informasi akun Vimeo Anda
 
 </div>
@@ -39,7 +40,7 @@ Sebelum mengimpor video, Anda memerlukan setidaknya satu playlist untuk mengatur
 2. Klik **Buat Playlist Pertama** dan isi nama, deskripsi, tanggal publikasi, dan thumbnail.
 3. Klik **Simpan**, lalu kembali ke Impor Massal dengan mengklik **Tambah Khotbah** dan memilih **Impor Massal**.
 
-Lihat [Playlist](playlists) untuk petunjuk lengkap tentang membuat dan mengelola playlist.
+Lihat [Playlist](./playlists.md) untuk petunjuk lengkap tentang membuat dan mengelola playlist.
 
 ## Mengimpor Video
 
@@ -54,11 +55,11 @@ Lihat [Playlist](playlists) untuk petunjuk lengkap tentang membuat dan mengelola
 Video Anda akan diimpor beserta semua detailnya, termasuk judul, deskripsi, tanggal, dan thumbnail. Karakter khusus dalam judul dan deskripsi YouTube, seperti `&`, tanda kutip tunggal, dan tanda kutip ganda, akan tampil sebagaimana aslinya, bukan sebagai kode seperti `&amp;`.
 
 :::info
-Impor massal sangat cocok untuk memulai saat Anda berpindah dari platform lain. Untuk menambahkan khotbah satuan ke depannya, gunakan halaman [Mengelola Khotbah](managing-sermons) sebagai gantinya.
+Impor massal sangat cocok untuk memulai saat Anda berpindah dari platform lain. Untuk menambahkan khotbah satuan ke depannya, gunakan halaman [Mengelola Khotbah](./managing-sermons.md) sebagai gantinya.
 :::
 
 ## Langkah Selanjutnya
 
-- [Mengelola Khotbah](managing-sermons) -- Edit detail khotbah yang diimpor
-- [Playlist](playlists) -- Buat dan kelola seri khotbah
-- [Live Streaming](live-streaming) -- Siapkan siaran langsung untuk ibadah Anda
+- [Mengelola Khotbah](./managing-sermons.md) -- Edit detail khotbah yang diimpor
+- [Playlist](./playlists.md) -- Buat dan kelola seri khotbah
+- [Live Streaming](./live-streaming.md) -- Siapkan siaran langsung untuk ibadah Anda

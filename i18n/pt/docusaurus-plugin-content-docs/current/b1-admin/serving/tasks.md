@@ -1,5 +1,6 @@
 ---
 title: "Tarefas"
+description: "Crie, atribua e conclua tarefas no B1 Admin, encontre-as em Serving > My Work e defina lembretes de prazo para que nenhum acompanhamento seja esquecido."
 ---
 
 # Tarefas

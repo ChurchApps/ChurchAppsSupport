@@ -1,5 +1,6 @@
 ---
 title: "Posuzování žádostí o smazání účtu"
+description: "Schvalujte nebo zamítejte žádosti členů o smazání účtu v B1 Admin, směrujte je přes skupinu pro schvalování adresáře a dodržte 30denní lhůtu GDPR."
 ---
 
 # Posuzování žádostí o smazání účtu

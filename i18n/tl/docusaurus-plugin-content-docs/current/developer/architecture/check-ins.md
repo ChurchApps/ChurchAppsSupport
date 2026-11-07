@@ -1,5 +1,6 @@
 ---
 title: "Mga Check-In"
+description: "Paano gumagana ang check-in sa B1Checkin, B1App, at B1 Admin: data model ng attendance, grupo bilang kwarto, capacity gate, at pickup safety rules."
 ---
 
 # Mga Check-In
@@ -216,7 +217,7 @@ Kinukuha ng `src/components/checkin/GuestRegister.tsx` ng B1App ang checklist mu
 
 ## Mga Kaugnay na Pahina
 
-- [Attendance Endpoints](../api/endpoints/attendance) -- Kumpletong REST surface para sa mga campus, serbisyo, session, visit, at visit session
-- [Membership Endpoints](../api/endpoints/membership) -- Mga tao, household, at grupo
-- [Webhooks](../api/webhooks) -- Ang mga event na `session.created`, `attendance.recorded`, at `attendance.checkout`
-- [Module Structure](../api/module-structure) -- Kung paano inaayos ang attendance module sa panig ng server
+- [Attendance Endpoints](../api/endpoints/attendance.md) -- Kumpletong REST surface para sa mga campus, serbisyo, session, visit, at visit session
+- [Membership Endpoints](../api/endpoints/membership.md) -- Mga tao, household, at grupo
+- [Webhooks](../api/webhooks.md) -- Ang mga event na `session.created`, `attendance.recorded`, at `attendance.checkout`
+- [Module Structure](../api/module-structure.md) -- Kung paano inaayos ang attendance module sa panig ng server

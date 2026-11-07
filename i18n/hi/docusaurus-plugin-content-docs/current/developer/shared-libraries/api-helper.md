@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "@churchapps/apihelper पैकेज का संदर्भ, जिसे Packages वर्कस्पेस में सभी ChurchApps Express APIs उपयोग करते हैं: लोकल बिल्ड, Yarn पोर्टल से टेस्टिंग और changeset प्रकाशन।"
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ title: "ApiHelper"
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- **Node.js** और **Git** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites)
+- **Node.js** और **Git** इंस्टॉल करें -- देखें [Prerequisites](../setup/prerequisites.md)
 - [Packages वर्कस्पेस](./index.md) सेटअप और रिलीज़ फ़्लो से परिचित हो जाएँ
-- यह पैकेज [`@churchapps/helpers`](./helpers) पर निर्भर करता है (peer dependency के रूप में) और उसे री-एक्सपोर्ट करता है
+- यह पैकेज [`@churchapps/helpers`](./helpers.md) पर निर्भर करता है (peer dependency के रूप में) और उसे री-एक्सपोर्ट करता है
 
 </div>
 
@@ -65,6 +66,6 @@ title: "ApiHelper"
 
 ## संबंधित लेख
 
-- **[Helpers](./helpers)** -- बेस उपयोगिता पैकेज, जिस पर यह पैकेज निर्भर करता है
-- **[Module Structure](../api/module-structure)** -- API मॉड्यूल में कंट्रोलर और auth middleware कैसे उपयोग होते हैं
-- **[Local API Setup](../api/local-setup)** -- लोकल डेवलपमेंट के लिए API सेटअप करना
+- **[Helpers](./helpers.md)** -- बेस उपयोगिता पैकेज, जिस पर यह पैकेज निर्भर करता है
+- **[Module Structure](../api/module-structure.md)** -- API मॉड्यूल में कंट्रोलर और auth middleware कैसे उपयोग होते हैं
+- **[Local API Setup](../api/local-setup.md)** -- लोकल डेवलपमेंट के लिए API सेटअप करना

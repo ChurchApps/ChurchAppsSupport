@@ -1,5 +1,6 @@
 ---
 title: "Časová os"
+description: "Karta Časová os v členskom portáli B1.church bola zrušená. Skupinové chaty, udalosti, úlohy a upozornenia nájdete na stránke Ja, v zvončeku a v skupinách."
 ---
 
 # Časová os
@@ -16,13 +17,13 @@ Samostatná karta **Časová os** bola vyradená. Portál pre členov sa teraz o
 | --- | --- |
 | Skupinové konverzácie a oznámenia | Chat v každej [skupine](../groups/conversations.md) (**Otvoriť chat**) |
 | Nadchádzajúce udalosti pre vás a vaše skupiny | Stránka **Ja** (`/mobile/me`) a sekcia **Ďalšia udalosť** v každej skupine |
-| Úlohy a priradenia služieb | Stránka **Ja** a [Plány](../plans/) |
+| Úlohy a priradenia služieb | Stránka **Ja** a [Plány](../plans/index.md) |
 | Nové kázne | Sekcia **Najnovšia kázeň** na domovskej stránke a karta [Kázne](../content/sermons.md) |
 | Čokoľvek, čo vás upozornilo | Ikona **zvončeka** na lište aplikácie alebo `/mobile/notifications` |
 
 ## Stránka Ja
 
-[Stránka Ja](../getting-started/me-page) je najbližšou náhradou za bývalý kanál. Zobrazuje, čo sa vás blíži -- priradenia služieb, registrácie na udalosti a udalosti skupín -- spolu s formulármi, ktoré ste odoslali, históriou vašej účasti a najnovšími upozorneniami. Priamo odtiaľ sa dostanete k svojmu profilu, nastaveniam upozornení, správam, darovaniam a registráciám.
+[Stránka Ja](../getting-started/me-page.md) je najbližšou náhradou za bývalý kanál. Zobrazuje, čo sa vás blíži -- priradenia služieb, registrácie na udalosti a udalosti skupín -- spolu s formulármi, ktoré ste odoslali, históriou vašej účasti a najnovšími upozorneniami. Priamo odtiaľ sa dostanete k svojmu profilu, nastaveniam upozornení, správam, darovaniam a registráciám.
 
 ## Upozornenia
 

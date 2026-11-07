@@ -1,5 +1,6 @@
 ---
 title: "Sedi"
+description: "Configura le sedi in B1 Admin per indicare a quale sede appartengono persone e gruppi, poi filtra persone, presenze e dati demografici per luogo."
 ---
 
 # Sedi

@@ -1,5 +1,6 @@
 ---
 title: "Administrar envíos"
+description: "Revisa, imprime y reasigna envíos de formularios en B1 Admin, llevando cada respuesta a la persona adecuada y haciendo seguimiento de visitas y oraciones."
 ---
 
 # Administrar envíos

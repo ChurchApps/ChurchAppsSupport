@@ -1,5 +1,6 @@
 ---
 title: "Module Structure"
+description: "Ipinapaliwanag ang ayos ng mga module ng API: controller, repository, gateway, auth check, at anim na Lambda function sa B1 developer environment."
 ---
 
 # Module Structure
@@ -13,8 +14,8 @@ Bawat API module ay sumusunod sa isang consistent internal structure na may cont
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-setup ang API nang lokal -- tingnan ang [Local API Setup](./local-setup)
-- Suriin ang [Database](./database) architecture upang maunawaan ang data access layer
+- I-setup ang API nang lokal -- tingnan ang [Local API Setup](./local-setup.md)
+- Suriin ang [Database](./database.md) architecture upang maunawaan ang data access layer
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Cross-Module Communication
 
-Bawat module ay may-ari ng sarili nitong database (tingnan ang [Database](./database)), at isang module ay hindi kailanman nag-query ng iba pang module's tables nang direkta. Kapag isang module ay kailangan ng data na-own ng iba -- halimbawa, ang doing module na nag-resolve ng people mula sa membership -- ito ay napupunta sa pamamagitan ng owning module's **gateway** sa `src/shared/modules/`:
+Bawat module ay may-ari ng sarili nitong database (tingnan ang [Database](./database.md)), at isang module ay hindi kailanman nag-query ng iba pang module's tables nang direkta. Kapag isang module ay kailangan ng data na-own ng iba -- halimbawa, ang doing module na nag-resolve ng people mula sa membership -- ito ay napupunta sa pamamagitan ng owning module's **gateway** sa `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Nang lokal, ang `web` function ay tumatakbo sa port 8084 at ang `socket` functio
 
 ## Related Articles
 
-- **[Database](./database)** -- Connection strings, schema scripts, at data access patterns
-- **[Local API Setup](./local-setup)** -- Full step-by-step setup guide
-- **[ApiHelper](../shared-libraries/api-helper)** -- Ang shared library na nagbibigay ng `CustomBaseController` at auth middleware
+- **[Database](./database.md)** -- Connection strings, schema scripts, at data access patterns
+- **[Local API Setup](./local-setup.md)** -- Full step-by-step setup guide
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Ang shared library na nagbibigay ng `CustomBaseController` at auth middleware

@@ -1,5 +1,6 @@
 ---
 title: "Správa platebních metod"
+description: "Přidávejte, kontrolujte a odstraňujte uložené karty na kartě Správa v sekci darů B1 Mobile, aby se opakované dary daly zadat rychleji."
 ---
 
 # Správa platebních metod
@@ -13,7 +14,7 @@ Záložka **Správa** v sekci darů vám umožňuje zobrazit a spravovat uložen
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 
 </div>
 
@@ -31,7 +32,7 @@ Chcete-li přidat novou kartu:
 4. Zadejte údaje o kartě. Informace jsou bezpečně odeslány společnosti **Stripe** ke zpracování.
 5. Po uložení se nová karta zobrazí v seznamu vašich platebních metod.
 
-Uložená karta bude poté k dispozici jako platební možnost při příštím [daru](./making-donations) na záložce **Darovat**.
+Uložená karta bude poté k dispozici jako platební možnost při příštím [daru](./making-donations.md) na záložce **Darovat**.
 
 ## Odebrání platební metody
 
@@ -44,7 +45,7 @@ Pokud už nechcete mít kartu uloženou, můžete ji odebrat na záložce **Spr�
 Karta se při darování již nebude zobrazovat jako platební možnost.
 
 :::info
-Odebrání platební metody neovlivní žádné dřívější dary. Vaše [historie darů](./donation-history) zůstane beze změny.
+Odebrání platební metody neovlivní žádné dřívější dary. Vaše [historie darů](./donation-history.md) zůstane beze změny.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Mějte uloženou alespoň jednu platební metodu pro rychlé darování. Pak mů
 
 ## Související články
 
-- [Jak provést dar](./making-donations) -- Naučte se, jak darovat pomocí uložené platební metody
-- [Historie darů](./donation-history) -- Zobrazte si přehled svého darování a dřívější dary
+- [Jak provést dar](./making-donations.md) -- Naučte se, jak darovat pomocí uložené platební metody
+- [Historie darů](./donation-history.md) -- Zobrazte si přehled svého darování a dřívější dary

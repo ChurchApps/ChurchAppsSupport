@@ -1,5 +1,6 @@
 ---
 title: "PWA としてアプリをインストール"
+description: "会員ポータルから B1.church を iPhone または Android にアプリとしてインストールします。Safari または Chrome でホーム画面にアイコンを追加します。"
 ---
 
 # PWA としてアプリをインストール

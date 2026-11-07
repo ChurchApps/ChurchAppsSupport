@@ -1,5 +1,7 @@
 ---
-title: "Kunikela"
+title: "Kunikela Ngelinethi Nekuniketa ku-B1.church"
+sidebar_label: "Kunikela"
+description: "Nikela ngelinethi esontweni lakho ku-B1.church ngaphandle kwe-akhawunti, noma ngena ukuze uphatse tinikelo letiphindzaphindzekako, tindlela tekukhokha, nemibiko yekuniketa."
 ---
 
 # Kunikela

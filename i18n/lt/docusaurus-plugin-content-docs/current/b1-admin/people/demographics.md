@@ -1,5 +1,6 @@
 ---
 title: "Demografija"
+description: "Peržiūrėkite bendruomenės amžių, lytį, narystę, šeimyninį statusą ir filialų sudėtį B1 Admin interaktyviuose grafikuose ir pasigilinkite į bet kurią grupę."
 ---
 
 # Demografija

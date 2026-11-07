@@ -1,5 +1,6 @@
 ---
 title: "Koncové body darovania"
+description: "Referencia koncových bodov Giving API v ChurchApps: dary, dávky, brány, predplatné a platobné metódy s pravidlami autentifikácie a oprávnení pre vývojárov integrujúcich B1 Admin."
 ---
 
 # Koncové body darovania
@@ -284,6 +285,6 @@ Rozširuje `GenericCrudController` s CRUD trasami: `getById`, `getAll`, `post`, 
 
 ## Súvisiace stránky
 
-- [Koncové body členstva](./membership) — Osoby, cirkvi, skupiny, roly a oprávnenia
-- [Autentifikácia a oprávnenia](./authentication) — Prihlasovací tok, JWT, OAuth, model oprávnení
-- [Štruktúra modulu](../module-structure) — Vzory organizácie kódu
+- [Koncové body členstva](./membership.md) — Osoby, cirkvi, skupiny, roly a oprávnenia
+- [Autentifikácia a oprávnenia](./authentication.md) — Prihlasovací tok, JWT, OAuth, model oprávnení
+- [Štruktúra modulu](../module-structure.md) — Vzory organizácie kódu

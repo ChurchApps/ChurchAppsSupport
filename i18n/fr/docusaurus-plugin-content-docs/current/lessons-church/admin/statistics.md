@@ -1,5 +1,6 @@
 ---
 title: "Statistiques"
+description: "Consulter les nombres de téléchargements par étude, voir quelles églises utilisent vos ressources et les situer sur une carte, avec filtre par période."
 ---
 
 # Statistiques

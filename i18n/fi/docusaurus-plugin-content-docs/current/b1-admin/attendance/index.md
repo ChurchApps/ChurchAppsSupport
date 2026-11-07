@@ -1,5 +1,6 @@
 ---
 title: "Läsnäolo"
+description: "Tarkastele viikon läsnäoloa, huoneita ja vieraita B1 Adminissa sekä määritä seurakunnat, palveluajat ja kioskikirjautuminen Läsnäolo-sivulta."
 ---
 
 # Läsnäolo

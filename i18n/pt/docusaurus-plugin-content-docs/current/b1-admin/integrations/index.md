@@ -1,5 +1,6 @@
 ---
 title: "Integrações"
+description: "Conecte o B1 Admin ao Slack, Discord, Zapier, Make, Google Sheets e assistentes de IA como o Claude, com passos e escopos de chave de API."
 ---
 
 # Integrações
@@ -14,21 +15,21 @@ O B1 se conecta às ferramentas que a sua equipe já usa. Conecte o Slack ou o D
 
 | Integração | O que faz | Direção | Esforço para configurar |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Publica notificações legíveis (novas pessoas, doações, inscrições, …) em um canal do Slack | B1 → Slack | 2 minutos |
-| **[Discord](./slack-discord)** | O mesmo, em um canal do Discord | B1 → Discord | 2 minutos |
-| **[Zapier](./zapier)** | Use eventos do B1 como gatilhos e ações do B1 em qualquer um dos mais de 7.000 aplicativos do Zapier | Ambos | 5–10 min por Zap |
-| **[Make](./make)** | A mesma ideia do Zapier, no construtor visual de cenários do Make | Ambos | 5–10 min por cenário |
-| **[Google Sheets](./google-sheets)** | Exporta Pessoas / Doações / Grupos / Presença para uma planilha sob demanda | B1 → Planilha | 5 minutos |
-| **[Claude](./claude)** | Faça perguntas ao Claude, da Anthropic, sobre os dados da sua igreja, limitadas às suas permissões — gratuito para testar, recomendado | Ambos | Menos de 3 minutos |
-| **[ChatGPT](./chatgpt)** | A mesma ideia com o ChatGPT, da OpenAI (requer um plano pago do ChatGPT) | Ambos | 10 minutos |
-| **[Serviços conectados](./services/)** | Receitas selecionadas para Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varia | 5–10 min cada |
+| **[Slack](./slack-discord.md)** | Publica notificações legíveis (novas pessoas, doações, inscrições, …) em um canal do Slack | B1 → Slack | 2 minutos |
+| **[Discord](./slack-discord.md)** | O mesmo, em um canal do Discord | B1 → Discord | 2 minutos |
+| **[Zapier](./zapier.md)** | Use eventos do B1 como gatilhos e ações do B1 em qualquer um dos mais de 7.000 aplicativos do Zapier | Ambos | 5–10 min por Zap |
+| **[Make](./make.md)** | A mesma ideia do Zapier, no construtor visual de cenários do Make | Ambos | 5–10 min por cenário |
+| **[Google Sheets](./google-sheets.md)** | Exporta Pessoas / Doações / Grupos / Presença para uma planilha sob demanda | B1 → Planilha | 5 minutos |
+| **[Claude](./claude.md)** | Faça perguntas ao Claude, da Anthropic, sobre os dados da sua igreja, limitadas às suas permissões — gratuito para testar, recomendado | Ambos | Menos de 3 minutos |
+| **[ChatGPT](./chatgpt.md)** | A mesma ideia com o ChatGPT, da OpenAI (requer um plano pago do ChatGPT) | Ambos | 10 minutos |
+| **[Serviços conectados](./services/index.md)** | Receitas selecionadas para Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varia | 5–10 min cada |
 
 ## Como escolher
 
 - **Quer apenas uma notificação no chat?** Use o **Slack** ou o **Discord** — sem conta de terceiros, sem Zap para manter. Configurado inteiramente dentro do B1Admin.
 - **Quer automatizar algo entre aplicativos** (por exemplo, "quando alguém doar, adicione-o à minha lista do Mailchimp e ao canal #doacoes do Slack")? Use o **Zapier** ou o **Make**. O Zapier é mais amigável; o Make é mais barato em escala e tem uma lógica mais flexível.
 - **Precisa de uma extração de dados pontual ou de um relatório programado?** Use o **Google Sheets** — cole uma chave de API na barra lateral do complemento e clique em Exportar.
-- **Quer fazer perguntas em linguagem simples** ("quantos visitantes de primeira vez vieram no domingo passado?", "resuma as doações deste mês")? Comece com o **[Claude](./claude)** — é gratuito para testar e leva menos de 3 minutos para configurar. O **[ChatGPT](./chatgpt)** também funciona com um plano pago. O Claude se conecta fazendo login com a sua conta do B1; o ChatGPT usa uma chave de API do B1.
+- **Quer fazer perguntas em linguagem simples** ("quantos visitantes de primeira vez vieram no domingo passado?", "resuma as doações deste mês")? Comece com o **[Claude](./claude.md)** — é gratuito para testar e leva menos de 3 minutos para configurar. O **[ChatGPT](./chatgpt.md)** também funciona com um plano pago. O Claude se conecta fazendo login com a sua conta do B1; o ChatGPT usa uma chave de API do B1.
 - **Quer criar a sua própria integração personalizada?** Nenhuma das opções acima — fale diretamente com a [API REST](/docs/developer/api) usando uma [chave de API](/docs/developer/api/api-keys), ou assine um servidor que você controla nos [webhooks](/docs/developer/api/webhooks).
 
 ## O que todas têm em comum
@@ -59,10 +60,10 @@ Se nada acima se encaixar, toda a superfície do B1 está aberta:
 
 ## Próximos passos
 
-- [Slack e Discord](./slack-discord) — publique notificações no chat
-- [Zapier](./zapier) — conecte-se a mais de 7.000 aplicativos
-- [Make](./make) — automação visual de fluxos de trabalho
-- [Google Sheets](./google-sheets) — exporte para planilhas
-- [Claude](./claude) — pergunte ao Claude sobre os dados da sua igreja
-- [ChatGPT](./chatgpt) — pergunte ao ChatGPT da OpenAI sobre os dados da sua igreja
-- [Serviços conectados](./services/) — receitas por serviço (Mailchimp, Donorbox, Clearstream, …)
+- [Slack e Discord](./slack-discord.md) — publique notificações no chat
+- [Zapier](./zapier.md) — conecte-se a mais de 7.000 aplicativos
+- [Make](./make.md) — automação visual de fluxos de trabalho
+- [Google Sheets](./google-sheets.md) — exporte para planilhas
+- [Claude](./claude.md) — pergunte ao Claude sobre os dados da sua igreja
+- [ChatGPT](./chatgpt.md) — pergunte ao ChatGPT da OpenAI sobre os dados da sua igreja
+- [Serviços conectados](./services/index.md) — receitas por serviço (Mailchimp, Donorbox, Clearstream, …)

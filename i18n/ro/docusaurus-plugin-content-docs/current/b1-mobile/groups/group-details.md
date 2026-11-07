@@ -1,5 +1,7 @@
 ---
-title: "Detalii grup"
+title: "Detaliile grupului în aplicația B1 Mobile"
+sidebar_label: "Detalii grup"
+description: "Vedeți ce afișează pagina de detalii a grupului în B1 Mobile, inclusiv informațiile grupului, postările și membrii, și cum o deschideți din ecranul Grupuri."
 ---
 
 # Detalii grup
@@ -13,7 +15,7 @@ Când atingi un grup din ecranul Grupuri, ajungi la pagina cu detaliile grupului
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Deschide ecranul [Grupuri](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Grupul cel mai des vizitat apare ca un card principal în partea de sus a ecranu
 
 ## Articole conexe
 
-- [Cronologia grupului](./group-timeline) -- Află despre fluxul unificat de activități din toate grupurile tale
+- [Cronologia grupului](./group-timeline.md) -- Află despre fluxul unificat de activități din toate grupurile tale
 - [Mesagerie](../community/messaging.md) -- Trimite mesaje private membrilor grupului

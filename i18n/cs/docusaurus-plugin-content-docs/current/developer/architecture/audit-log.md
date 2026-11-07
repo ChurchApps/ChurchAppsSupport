@@ -1,5 +1,6 @@
 ---
 title: "Auditní záznam a dávky s možností vrácení"
+description: "Popisuje auditní log API, který zaznamenává každou změnu uživatele napříč moduly, a způsob, jak lze importní dávky vrátit zpět řádek po řádku v B1 Admin."
 ---
 
 # Auditní záznam a dávky s možností vrácení
@@ -155,6 +156,6 @@ Obě rozhraní pro správce jsou **v přípravě**. Záměr je tento:
 
 ## Související stránky
 
-- [Struktura modulů](../api/module-structure) – jak se controller mimo modul členství dostane k repozitářům členství přes `RepoManager`
-- [Dary](./giving) – zápisové cesty darů, které jsou auditovány jako `sensitive`, i když jsou anonymní
-- [Endpointy členství](../api/endpoints/membership) – REST rozhraní, které nese `X-Batch-Id` a vystavuje `/auditlogs` a `/batches`
+- [Struktura modulů](../api/module-structure.md) – jak se controller mimo modul členství dostane k repozitářům členství přes `RepoManager`
+- [Dary](./giving.md) – zápisové cesty darů, které jsou auditovány jako `sensitive`, i když jsou anonymní
+- [Endpointy členství](../api/endpoints/membership.md) – REST rozhraní, které nese `X-Batch-Id` a vystavuje `/auditlogs` a `/batches`

@@ -1,5 +1,6 @@
 ---
 title: "Programe și studii"
+description: "Aflați cum se leagă programele, studiile, lecțiile și locațiile Lessons.church, ca să găsiți curriculumul potrivit și să treceți între lecții conexe."
 ---
 
 # Programe și studii

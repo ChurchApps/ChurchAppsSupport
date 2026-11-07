@@ -1,5 +1,6 @@
 ---
 title: "Dumalo"
+description: "Suriin ang lingguhang attendance, kuwarto, at bisita sa B1 Admin; i-set up ang campus, oras ng serbisyo, headcount, at kiosk check-in sa Attendance page."
 ---
 
 # Dumalo

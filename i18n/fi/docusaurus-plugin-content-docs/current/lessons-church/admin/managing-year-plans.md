@@ -1,5 +1,6 @@
 ---
 title: "Vuosisuunnitelmien hallinta"
+description: "Luo viikkoittaisten oppituntien vuosisuunnitelma Lessons.churchissa, ankkuroi viikot pääsiäiseen tai jouluun ja julkaise se B1 Adminiin sovellettavaksi."
 ---
 
 # Vuosisuunnitelmien hallinta

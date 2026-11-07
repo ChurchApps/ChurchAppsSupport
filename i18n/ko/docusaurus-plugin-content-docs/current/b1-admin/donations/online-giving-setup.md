@@ -1,5 +1,6 @@
 ---
 title: "온라인 헌금 설정"
+description: "Stripe, PayPal, Kingdom Funding, Paystack을 B1 Admin에 연결해 성도가 B1.church 사이트에서 온라인으로 헌금하고, 헌금 기록이 자동으로 동기화되도록 합니다."
 ---
 
 # 온라인 헌금 설정

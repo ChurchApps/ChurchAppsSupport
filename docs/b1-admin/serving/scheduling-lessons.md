@@ -1,5 +1,7 @@
 ---
-title: "Scheduling Lessons"
+title: "Scheduling Lessons from Lessons.church in B1 Admin"
+sidebar_label: "Scheduling Lessons"
+description: "Link Lessons.church to B1 Admin, then schedule lessons, bulk-schedule a series, or apply a year plan to a ministry's service plans."
 ---
 
 # Scheduling Lessons from Lessons.church

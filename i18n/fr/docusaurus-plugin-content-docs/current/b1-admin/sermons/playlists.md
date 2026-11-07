@@ -1,5 +1,6 @@
 ---
 title: "Playlists"
+description: "Regroupez vos prédications en séries dans B1 Admin pour que les visiteurs de votre site B1.church les parcourent et suivent chaque série dans l'ordre."
 ---
 
 # Playlists
@@ -39,10 +40,10 @@ Créez d'abord vos playlists avant d'ajouter des sermons. De cette façon, vous 
 
 ## Ajout de sermons à une playlist
 
-Lorsque vous [ajoutez ou modifiez un sermon](managing-sermons), vous l'attribuez à une playlist à l'aide du menu déroulant **Playlist**. Tous les sermons attribués à la même playlist sont regroupés ensemble et affichés dans l'ordre sur votre site Web.
+Lorsque vous [ajoutez ou modifiez un sermon](./managing-sermons.md), vous l'attribuez à une playlist à l'aide du menu déroulant **Playlist**. Tous les sermons attribués à la même playlist sont regroupés ensemble et affichés dans l'ordre sur votre site Web.
 
 :::info
-Vous pouvez également attribuer des sermons à des playlists lors de l'[Importation en masse](bulk-import). Lors de l'importation à partir de YouTube ou Vimeo, sélectionnez une playlist dans le menu déroulant **Importer dans la playlist** avant de cliquer sur **Importer**.
+Vous pouvez également attribuer des sermons à des playlists lors de l'[Importation en masse](./bulk-import.md). Lors de l'importation à partir de YouTube ou Vimeo, sélectionnez une playlist dans le menu déroulant **Importer dans la playlist** avant de cliquer sur **Importer**.
 :::
 
 ## Comment les playlists apparaissent sur votre site Web
@@ -55,5 +56,5 @@ Les playlists s'affichent sur votre site Web B1.church comme des collections con
 
 ## Prochaines étapes
 
-- [Gestion des sermons](managing-sermons) -- Ajouter des sermons individuels à vos playlists
-- [Importation en masse](bulk-import) -- Importer plusieurs sermons et les attribuer à des playlists
+- [Gestion des sermons](./managing-sermons.md) -- Ajouter des sermons individuels à vos playlists
+- [Importation en masse](./bulk-import.md) -- Importer plusieurs sermons et les attribuer à des playlists

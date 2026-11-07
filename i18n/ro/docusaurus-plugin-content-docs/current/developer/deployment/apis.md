@@ -1,5 +1,6 @@
 ---
 title: "Implementarea API"
+description: "Implementați API-ul ChurchApps pe AWS Lambda cu Serverless, acoperind build-urile, fluxurile de lucru demo și prod, migrările bazei de date și configurarea SSM."
 ---
 
 # Implementarea API
@@ -13,7 +14,7 @@ API-urile ChurchApps sunt implementate ca funcții AWS Lambda folosind Serverles
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Configurați API-ul local -- consultați [Configurarea locală a API-ului](../api/local-setup)
+- Configurați API-ul local -- consultați [Configurarea locală a API-ului](../api/local-setup.md)
 - Configurați credențialele AWS pe computerul dumneavoastră
 - Asigurați-vă că aveți acces la contul AWS țintă
 
@@ -47,7 +48,7 @@ npm run deploy-prod
 
 ## Migrări ale bazei de date
 
-**Deploy Prod** aplică migrările de bază de date în așteptare ca parte a implementării. Bazele de date de producție acceptă conexiuni doar din interiorul VPC, așa că imediat după `serverless deploy`, workflow-ul invocă funcția Lambda `migrate` (`api-Prod-migrate`), care rulează migrările în așteptare ale fiecărui modul și returnează `{ ok, environment, modules }`. Dacă un modul eșuează sau este refuzat (de exemplu, o bază de date fără istoric de migrări), jobul eșuează, astfel încât schema să nu rămână în urma codului. **Rollback Prod** revine doar la codul Lambda; migrările rămân aplicate, de aceea păstrați-le aditive. Consultați [Administrarea serverului -- Migrări ale bazei de date](../server-admin#database-migrations) pentru verificarea stării sau rularea manuală a migrărilor.
+**Deploy Prod** aplică migrările de bază de date în așteptare ca parte a implementării. Bazele de date de producție acceptă conexiuni doar din interiorul VPC, așa că imediat după `serverless deploy`, workflow-ul invocă funcția Lambda `migrate` (`api-Prod-migrate`), care rulează migrările în așteptare ale fiecărui modul și returnează `{ ok, environment, modules }`. Dacă un modul eșuează sau este refuzat (de exemplu, o bază de date fără istoric de migrări), jobul eșuează, astfel încât schema să nu rămână în urma codului. **Rollback Prod** revine doar la codul Lambda; migrările rămân aplicate, de aceea păstrați-le aditive. Consultați [Administrarea serverului -- Migrări ale bazei de date](../server-admin.md#database-migrations) pentru verificarea stării sau rularea manuală a migrărilor.
 
 ## Ce se creează
 
@@ -75,6 +76,6 @@ Fiecare îmbinare în `main` se implementează mai întâi în mediul demo. Veri
 
 ## Articole conexe
 
-- **[Configurarea locală a API-ului](../api/local-setup)** -- Configurarea API-ului pentru dezvoltare
-- **[Structura modulelor](../api/module-structure)** -- Înțelegerea arhitecturii funcțiilor Lambda
-- **[Implementarea aplicațiilor web](./web-apps)** -- Implementarea aplicațiilor frontend
+- **[Configurarea locală a API-ului](../api/local-setup.md)** -- Configurarea API-ului pentru dezvoltare
+- **[Structura modulelor](../api/module-structure.md)** -- Înțelegerea arhitecturii funcțiilor Lambda
+- **[Implementarea aplicațiilor web](./web-apps.md)** -- Implementarea aplicațiilor frontend

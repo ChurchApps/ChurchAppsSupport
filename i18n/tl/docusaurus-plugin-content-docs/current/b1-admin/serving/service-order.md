@@ -1,5 +1,7 @@
 ---
-title: "Order of Service"
+title: "Service Order sa B1 Admin"
+sidebar_label: "Order of Service"
+description: "I-set up ang service order sa B1 Admin para sa worship plan: magdagdag ng kanta, lesson, at custom na item, ayusin sa mga seksyon, at i-print ang run sheet."
 ---
 
 # Order of Service

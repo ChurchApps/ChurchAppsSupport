@@ -1,5 +1,6 @@
 ---
 title: "Giao diện"
+description: "Đặt màu sắc, phông chữ, khoảng cách, logo và điều hướng cho trang web hội thánh trong B1 Admin, cùng tiện ích, phân tích GA4, chuyển hướng và CSS tùy chỉnh."
 ---
 
 # Giao diện
@@ -13,7 +14,7 @@ Trang Giao diện cho phép bạn tùy chỉnh diện mạo tổng thể của t
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Hoàn tất [Thiết lập ban đầu](initial-setup) cho trang web của bạn
+- Hoàn tất [Thiết lập ban đầu](./initial-setup.md) cho trang web của bạn
 - Chuẩn bị logo nhà thờ ở định dạng PNG, nền trong suốt và tỷ lệ khung hình 4:1
 - Biết các màu thương hiệu của nhà thờ (mã hex) nếu bạn đã có sổ tay phong cách
 
@@ -98,7 +99,7 @@ CSS tùy chỉnh rất mạnh nhưng có thể làm hỏng bố cục trang web 
 :::
 
 :::info
-Trang web của bạn áp dụng Chính sách bảo mật nội dung (Content Security Policy) chặn các tập lệnh nội tuyến từ bất kỳ nguồn nào khác. Trường **Custom HTML** ở đây và [phần tử HTML](page-editor#using-the-html-element) trên từng trang là các ngoại lệ được tin cậy -- mã bạn lưu ở đó sẽ chạy nguyên dạng, vì vậy chỉ dán các tập lệnh từ nguồn bạn tin cậy (thẻ phân tích, tiện ích trò chuyện và các đoạn nhúng tương tự).
+Trang web của bạn áp dụng Chính sách bảo mật nội dung (Content Security Policy) chặn các tập lệnh nội tuyến từ bất kỳ nguồn nào khác. Trường **Custom HTML** ở đây và [phần tử HTML](./page-editor.md#using-the-html-element) trên từng trang là các ngoại lệ được tin cậy -- mã bạn lưu ở đó sẽ chạy nguyên dạng, vì vậy chỉ dán các tập lệnh từ nguồn bạn tin cậy (thẻ phân tích, tiện ích trò chuyện và các đoạn nhúng tương tự).
 :::
 
 ## Chủ đề kiểu dáng
@@ -107,5 +108,5 @@ Nếu bạn muốn có điểm khởi đầu nhanh, **Suggested Palettes** trong
 
 ## Bước tiếp theo
 
-- [Quản lý trang](managing-pages) -- Xây dựng và sắp xếp các trang web của bạn
-- [Tệp](files) -- Tải lên tài nguyên đa phương tiện cho trang web của bạn
+- [Quản lý trang](./managing-pages.md) -- Xây dựng và sắp xếp các trang web của bạn
+- [Tệp](./files.md) -- Tải lên tài nguyên đa phương tiện cho trang web của bạn

@@ -1,5 +1,6 @@
 ---
 title: "Zmienne środowiskowe"
+description: "Konfiguracja pliku .env w projektach ChurchApps: wspólne demo API lub lokalne API oraz zmienne dla B1 Admin, B1.church, B1 Mobile, Lessons.church i innych."
 ---
 
 # Zmienne środowiskowe
@@ -13,9 +14,9 @@ Każdy projekt ChurchApps korzysta z pliku `.env` do lokalnej konfiguracji. Każ
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Zainstaluj [wymagania wstępne](./prerequisites) dla swojego projektu
+- Zainstaluj [wymagania wstępne](./prerequisites.md) dla swojego projektu
 - Sklonuj repozytorium projektu, nad którym chcesz pracować
-- Zapoznaj się z [Przeglądem projektu](./project-overview), aby dowiedzieć się, których modułów API wymaga Twój projekt
+- Zapoznaj się z [Przeglądem projektu](./project-overview.md), aby dowiedzieć się, których modułów API wymaga Twój projekt
 
 </div>
 
@@ -64,7 +65,7 @@ https://api.demo.churchapps.org/doing
 
 ### Opcja 2: Lokalne API
 
-Uruchom projekt Api na swoim komputerze. Wymaga to MySQL 8.0+ z bazami danych utworzonymi dla każdego modułu. Zobacz przewodnik [Lokalna konfiguracja API](../api/local-setup).
+Uruchom projekt Api na swoim komputerze. Wymaga to MySQL 8.0+ z bazami danych utworzonymi dla każdego modułu. Zobacz przewodnik [Lokalna konfiguracja API](../api/local-setup.md).
 
 ```bash
 # Schemat adresu bazowego

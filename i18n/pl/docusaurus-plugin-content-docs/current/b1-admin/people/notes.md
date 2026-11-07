@@ -1,5 +1,6 @@
 ---
 title: "Notatki"
+description: "Przeglądaj notatki duszpasterskie, zadania do wykonania i plany dotyczące osób, grup, wydarzeń i kart procesów na jednej liście w B1 Admin, od najnowszych."
 ---
 
 # Notatki

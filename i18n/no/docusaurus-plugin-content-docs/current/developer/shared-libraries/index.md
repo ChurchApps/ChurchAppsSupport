@@ -1,5 +1,6 @@
 ---
 title: "Delte biblioteker"
+description: "Dokumentasjon for @churchapps npm-pakkene som deles av B1 Admin, B1.church og API-er, samt hvordan du setter opp Packages-arbeidsområdet og slipper nye versjoner med changesets."
 ---
 
 # Delte biblioteker
@@ -14,9 +15,9 @@ ChurchApps' delte kode publiseres til npm under `@churchapps/*`-omfanget. Alle d
 
 | Pakke | Beskrivelse | Brukes av |
 |---------|-------------|-----------|
-| [`@churchapps/helpers`](./helpers) | Fundamentlaget: rammeuavhengige hjelpefunksjoner og de delte TypeScript-grensesnittene som utgjør den tverrgående dataavtalen mellom appene | Alle prosjekter |
-| [`@churchapps/apihelper`](./api-helper) | Serverside Express-verktøy: autentisering, basiskontrollere, databasetilgang, AWS- og e-postintegrasjoner | Alle API-er |
-| [`@churchapps/apphelper`](./app-helper) | Delte React-komponenter og funksjonsmoduler (innlogging, gaver, skjemaer, markdown, nettsted) | Alle webapper |
+| [`@churchapps/helpers`](./helpers.md) | Fundamentlaget: rammeuavhengige hjelpefunksjoner og de delte TypeScript-grensesnittene som utgjør den tverrgående dataavtalen mellom appene | Alle prosjekter |
+| [`@churchapps/apihelper`](./api-helper.md) | Serverside Express-verktøy: autentisering, basiskontrollere, databasetilgang, AWS- og e-postintegrasjoner | Alle API-er |
+| [`@churchapps/apphelper`](./app-helper.md) | Delte React-komponenter og funksjonsmoduler (innlogging, gaver, skjemaer, markdown, nettsted) | Alle webapper |
 | `@churchapps/content-providers` | Abstraksjon over tredjeparts innholdsleverandører (Lessons.church, Planning Center, Dropbox og flere) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Verktøysett for å bygge B1.church-integrasjoner: verifisering av webhooks, typet REST-klient, OAuth-hjelpere | Eksterne integrasjonsutviklere |
 | `@churchapps/texting` | SMS-leverandørabstraksjon (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

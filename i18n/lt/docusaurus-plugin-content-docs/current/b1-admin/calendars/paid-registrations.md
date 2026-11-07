@@ -1,5 +1,6 @@
 ---
 title: "Mokamos registracijos"
+description: "Nustatykite mokamas registracijas B1 Admin: kainuojamus dalyvių tipus, priedus, nuolaidų kodus, laukimo sąrašus ir mokėjimus per aukojimų paslaugų teikėją."
 ---
 
 # Mokamos registracijos
@@ -17,7 +18,7 @@ Renginio registracija gali būti daugiau nei paprastas dalyvių skaičiavimas. G
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Pirmiausia įjunkite registraciją renginiui — žr. [Kalendorių kūrimas](creating-calendars#enabling-event-registration)
+- Pirmiausia įjunkite registraciją renginiui — žr. [Kalendorių kūrimas](./creating-calendars.md#enabling-event-registration)
 - Norint priimti mokėjimus internetu, jūsų bažnyčioje turi būti [sukonfigūruotas internetinis aukojimas](../donations/online-giving-setup.md) (Stripe, PayPal arba Kingdom Funding). Nemokamiems renginiams aukojimų sąranka nereikalinga. Be internetinio aukojimo mokamos registracijos vis tiek veikia, tačiau žmonės moka tiesiogiai bažnyčiai — žr. [Bažnyčios be internetinio aukojimo](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Kiekvienas kodas rodo **Uses** skaičių, kad matytumėte, kaip dažnai jis buvo
 Registracijos nustatymų kortelėje įjunkite **Enable Waitlist**. Kai renginys pasiekia talpą:
 
 - Nauji registruotieji siūlomi vietą laukiančiųjų sąraše, o ne atmetami. Jie užpildo tą pačią registraciją (mokėjimas laukiančiųjų sąraše praleidžiamas).
-- Kai kas nors atšaukia, seniausia laukiančiųjų sąraše esanti registracija **automatiškai perkeliama** ir gauna el. laišką, kad atsirado laisva vieta. Jei jie yra skolingi, laiške pateikiama nuoroda į [Mano registracijos](../../b1-church/events/my-registrations) jūsų bažnyčios B1 svetainėje, kur jie gali atlikti mokėjimą.
+- Kai kas nors atšaukia, seniausia laukiančiųjų sąraše esanti registracija **automatiškai perkeliama** ir gauna el. laišką, kad atsirado laisva vieta. Jei jie yra skolingi, laiške pateikiama nuoroda į [Mano registracijos](../../b1-church/events/my-registrations.md) jūsų bažnyčios B1 svetainėje, kur jie gali atlikti mokėjimą.
 - Bet kada galite perkelti asmenį rankiniu būdu naudodami veiksmą **Promote** laukiančiojo eilutėje — tai naudinga padidinus renginio talpą.
 
 :::info
@@ -79,7 +80,7 @@ Atidarykite renginį iš registracijų puslapio, kad pamatytumėte visas registr
 
 - Spustelėkite eilutės detalių piktogramą, kad atidarytumėte dialogą **Registration Details** — nariai, pasirinkimai, sumokėta / balansas ir lentelę **Payments**, kurioje išvardyti visi mokėjimai (suma, būdas, data).
 - **Export CSV** atsisiunčia visą sąrašą su stulpeliais: nariai, dalyvių tipai, pasirinkimai, sumokėta / iš viso / balansas, statusas ir po vieną stulpelį kiekvienam registracijos klausimui.
-- **Add Attendee** įrašo neprisijungusią arba telefonu gautą registraciją bet kuriam jūsų bažnyčios asmeniui. Pasirinkite asmenį ir, mokamame renginyje, jo dalyvių tipą. Jo kortelė nenuskaitoma: mokama registracija išsaugoma kaip **pending** su visa suma kaip nesumokėtu balansu. Jei jūsų bažnyčioje yra internetinis aukojimas, asmuo gali sumokėti per [Mano registracijos](../../b1-church/events/my-registrations); kitu atveju surinkite pinigus asmeniškai. Dalyvius pridėti reikia Registrations Edit leidimo.
+- **Add Attendee** įrašo neprisijungusią arba telefonu gautą registraciją bet kuriam jūsų bažnyčios asmeniui. Pasirinkite asmenį ir, mokamame renginyje, jo dalyvių tipą. Jo kortelė nenuskaitoma: mokama registracija išsaugoma kaip **pending** su visa suma kaip nesumokėtu balansu. Jei jūsų bažnyčioje yra internetinis aukojimas, asmuo gali sumokėti per [Mano registracijos](../../b1-church/events/my-registrations.md); kitu atveju surinkite pinigus asmeniškai. Dalyvius pridėti reikia Registrations Edit leidimo.
 
 :::info
 Grąžinimai B1 sistemoje neapdorojami. Jei reikia grąžinti pinigus už atšauktą mokamą registraciją, grąžinimą atlikite savo aukojimų teikėjo valdymo skydelyje (pvz., Stripe).
@@ -94,12 +95,12 @@ Mokėjimai vykdomi per tuos pačius aukojimų vartus, kuriuos jūsų bažnyčia 
 Jei jūsų bažnyčioje nėra sukonfigūruoto aukojimų teikėjo, mokami renginiai vis tiek gali priimti registracijas. Mokėjimo žingsnyje registruotiesiems pranešama, kad mokėjimas internetu nepasiekiamas ir kad jie gali mokėti tiesiogiai bažnyčiai, o mygtukas **Register and Pay Later** išsaugo registraciją. Ji išsaugoma kaip **pending** su visa suma kaip nesumokėtu balansu ir sąraše rodoma su balanso įspėjimu. Surinkite pinigus taip, kaip jūsų bažnyčia paprastai daro.
 
 :::info
-B1 sistemoje nėra būdo pažymėti, kad neprisijungus atliktas mokėjimas gautas. Nesumokėtas balansas lieka sąraše ir registruotojo [Mano registracijos](../../b1-church/events/my-registrations) kortelėje net surinkus pinigus, todėl pasilikite savo įrašus apie tai, kas sumokėjo.
+B1 sistemoje nėra būdo pažymėti, kad neprisijungus atliktas mokėjimas gautas. Nesumokėtas balansas lieka sąraše ir registruotojo [Mano registracijos](../../b1-church/events/my-registrations.md) kortelėje net surinkus pinigus, todėl pasilikite savo įrašus apie tai, kas sumokėjo.
 :::
 
 ## Susiję straipsniai
 
-- [Kalendorių kūrimas](creating-calendars#enabling-event-registration) — registracijos įjungimas ir pagrindiniai nustatymai
+- [Kalendorių kūrimas](./creating-calendars.md#enabling-event-registration) — registracijos įjungimas ir pagrindiniai nustatymai
 - [Internetinio aukojimo sąranka](../donations/online-giving-setup.md) — atsiskaitymo metu naudojamų mokėjimo vartų konfigūravimas
-- [Registracija į renginius](../../b1-church/events/registering) — ką nariai mato registruodamiesi
-- [Mano registracijos](../../b1-church/events/my-registrations) — kaip nariai moka balansus ir redaguoja registracijas
+- [Registracija į renginius](../../b1-church/events/registering.md) — ką nariai mato registruodamiesi
+- [Mano registracijos](../../b1-church/events/my-registrations.md) — kaip nariai moka balansus ir redaguoja registracijas

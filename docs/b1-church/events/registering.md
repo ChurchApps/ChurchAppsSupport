@@ -1,5 +1,7 @@
 ---
-title: "Registering for Events"
+title: "Event Registration in B1.church"
+sidebar_label: "Registering for Events"
+description: "Register for a church event in B1.church: enter your details, add family members, pick options, apply discount codes, and pay or join a waitlist."
 ---
 
 # Registering for Events
@@ -79,14 +81,14 @@ A confirmation message appears with the event details and a list of everyone you
 
 ## Joining a Waitlist
 
-If the event is full and your church enabled the waitlist, the first step shows: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Complete the signup as normal — payment is skipped while you are waitlisted. When a spot opens, you receive an email; if a payment is due, it includes a link to complete it. You can also check your status and pay from [My Registrations](./my-registrations).
+If the event is full and your church enabled the waitlist, the first step shows: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Complete the signup as normal — payment is skipped while you are waitlisted. When a spot opens, you receive an email; if a payment is due, it includes a link to complete it. You can also check your status and pay from [My Registrations](./my-registrations.md).
 
 ## Changing or Canceling a Registration
 
-If you are logged in, you can edit or cancel your registration yourself from the **Registrations** page in the member portal — see [My Registrations](./my-registrations). Guests should contact the church office, and staff can make the change from the B1 Admin registrations page.
+If you are logged in, you can edit or cancel your registration yourself from the **Registrations** page in the member portal — see [My Registrations](./my-registrations.md). Guests should contact the church office, and staff can make the change from the B1 Admin registrations page.
 
 ## Related Articles
 
 - [Events Overview](./index.md) -- Browse upcoming events with registration
-- [My Registrations](./my-registrations) -- View, edit, pay balances, and cancel your registrations
-- [Making Donations](../giving/making-donations) -- Make a donation alongside event participation
+- [My Registrations](./my-registrations.md) -- View, edit, pay balances, and cancel your registrations
+- [Making Donations](../giving/making-donations.md) -- Make a donation alongside event participation

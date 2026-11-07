@@ -1,5 +1,6 @@
 ---
 title: "指南：管理星期日志愿者"
+description: "在 B1 Admin 中设置志愿者团队、每周聚会计划、礼拜程序和主日任务，使志愿者可在 B1.church 和移动应用中查看并回应分派。"
 ---
 
 # 管理星期日志愿者
@@ -95,7 +96,7 @@ B1 Admin 不再按重复周期自动创建任务。对于需要让人员按步�
 3. 对于每个岗位，勾选 **Allow Self-Signup**（允许自助报名），使其可供自助报名。
 4. 为每个岗位添加**描述**，使志愿者了解该职责的内容。
 
-自助报名岗位创建后，会自动显示在 [B1.church](../../b1-church/serving/volunteer-signup) 和 [B1 移动应用](../../b1-mobile/serving/volunteer-signup)的志愿者报名页面上。成员可以浏览开放的岗位、查看剩余名额，并一键报名。
+自助报名岗位创建后，会自动显示在 [B1.church](../../b1-church/serving/volunteer-signup.md) 和 [B1 移动应用](../../b1-mobile/serving/volunteer-signup.md)的志愿者报名页面上。成员可以浏览开放的岗位、查看剩余名额，并一键报名。
 
 :::tip
 在同一个计划中混合使用管理员分配和自助报名的岗位。例如，直接分配敬拜带领人，同时让迎宾和咖啡服务人员自行选择。
@@ -109,7 +110,7 @@ B1 Admin 不再按重复周期自动创建任务。对于需要让人员按步�
 2. 他们可以直接在任一平台上接受或婉拒安排
 3. 对于无法服事的周次，他们可以设置不可服事日期
 4. 计划可以打印出来用于排练，或张贴在后台
-5. 志愿者可以通过[志愿者报名页面](../../b1-church/serving/volunteer-signup)浏览并报名开放的岗位
+5. 志愿者可以通过[志愿者报名页面](../../b1-church/serving/volunteer-signup.md)浏览并报名开放的岗位
 
 :::tip
 移动应用上的推送通知会在志愿者收到新安排或计划有变动时提醒他们。
@@ -130,5 +131,5 @@ B1 Admin 不再按重复周期自动创建任务。对于需要让人员按步�
 - [工作流](../serving/workflows.md) —— 通过触发器和自动化步骤推进可重复的流程
 - [查看计划（网页）](../../b1-church/plans/viewing-plans.md) —— 志愿者如何在线查看计划
 - [查看计划（移动端）](../../b1-mobile/serving/viewing-plans.md) —— 志愿者如何在移动端查看计划
-- [志愿者报名（网页）](../../b1-church/serving/volunteer-signup) —— 成员如何自行选择志愿者岗位
-- [志愿者报名（移动端）](../../b1-mobile/serving/volunteer-signup) —— 移动端的志愿者自助报名
+- [志愿者报名（网页）](../../b1-church/serving/volunteer-signup.md) —— 成员如何自行选择志愿者岗位
+- [志愿者报名（移动端）](../../b1-mobile/serving/volunteer-signup.md) —— 移动端的志愿者自助报名

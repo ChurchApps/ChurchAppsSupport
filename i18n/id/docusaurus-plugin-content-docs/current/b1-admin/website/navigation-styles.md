@@ -1,5 +1,6 @@
 ---
 title: "Gaya Navigasi"
+description: "Sesuaikan warna bilah navigasi situs yang solid dan transparan di B1 Admin, termasuk status tautan, hover, dan aktif untuk situs gereja Anda."
 ---
 
 # Gaya Navigasi

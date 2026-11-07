@@ -1,5 +1,7 @@
 ---
-title: "Imininingwane Yelicembu"
+title: "Imininingwane Yeliqembu Ku-Iphothali le-B1.church"
+sidebar_label: "Imininingwane Yelicembu"
+description: "Fika, vula, uphatse likhasi lemininingwane yeliqembu kumbono wemalungu we-B1 Admin ku-B1.church: bona imicimbi, tikhatsi, sifomo, nemalungu, bese ujoyina noma ucele kujoyina."
 ---
 
 # Imininingwane Yelicembu

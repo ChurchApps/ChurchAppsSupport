@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "اربط تسجيلات المتطوعين في B1 Admin بفحوصات الخلفية من Checkr عبر Make.com، مع تنبيهات اختيارية لحالة التقارير لمنسق الخدمة الآمنة."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ title: "Checkr"
 
 ## انظر أيضًا
 
-- [Make (نظرة عامة)](../make) — الجانب الخاص بـ B1 في كل سيناريو Make
-- [Mobile Message](./mobile-message) — للمزودين الذين لا يوفرون تطبيقات Zapier للرسائل النصية، وهو يعتمد على نمط Webhooks/HTTP نفسه المستخدم في ربط Checkr مع Make
+- [Make (نظرة عامة)](../make.md) — الجانب الخاص بـ B1 في كل سيناريو Make
+- [Mobile Message](./mobile-message.md) — للمزودين الذين لا يوفرون تطبيقات Zapier للرسائل النصية، وهو يعتمد على نمط Webhooks/HTTP نفسه المستخدم في ربط Checkr مع Make
 - [وثائق Checkr API](https://docs.checkr.com/)

@@ -1,5 +1,6 @@
 ---
 title: "Modul-struktúra"
+description: "Ismerteti az API moduljainak felépítését: vezérlők, adattárak, átjárók, hitelesítési ellenőrzések és a hat Lambda-függvény, amelyek a kódot futtatják a B1 fejlesztői környezetekben."
 ---
 
 # Modul-struktúra
@@ -13,8 +14,8 @@ Minden API-modul egységes belső felépítést követ, amely vezérlőkből, ad
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítsa be helyileg az API-t – lásd: [Helyi API-beállítás](./local-setup)
-- Tekintse át az [Adatbázis](./database) architektúráját, hogy megértse az adat-hozzáférési réteget
+- Állítsa be helyileg az API-t – lásd: [Helyi API-beállítás](./local-setup.md)
+- Tekintse át az [Adatbázis](./database.md) architektúráját, hogy megértse az adat-hozzáférési réteget
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Modulok közötti kommunikáció
 
-Minden modul a saját adatbázisával rendelkezik (lásd: [Adatbázis](./database)), és egyetlen modul sem kérdezi közvetlenül egy másik modul tábláit. Ha egy modulnak egy másik modul tulajdonában lévő adatra van szüksége – például a doing modulnak a membership-ből kell személyeket feloldania –, akkor az adott modul tulajdonosának **átjáróján** (gateway) keresztül teszi ezt, amely a `src/shared/modules/` könyvtárban található:
+Minden modul a saját adatbázisával rendelkezik (lásd: [Adatbázis](./database.md)), és egyetlen modul sem kérdezi közvetlenül egy másik modul tábláit. Ha egy modulnak egy másik modul tulajdonában lévő adatra van szüksége – például a doing modulnak a membership-ből kell személyeket feloldania –, akkor az adott modul tulajdonosának **átjáróján** (gateway) keresztül teszi ezt, amely a `src/shared/modules/` könyvtárban található:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Helyileg a `web` függvény a 8084-es porton, a `socket` függvény a 8087-es po
 
 ## Kapcsolódó cikkek
 
-- **[Adatbázis](./database)** – Kapcsolati karakterláncok, sémaszkriptek és adat-hozzáférési minták
-- **[Helyi API-beállítás](./local-setup)** – Teljes, lépésenkénti beállítási útmutató
-- **[ApiHelper](../shared-libraries/api-helper)** – A megosztott könyvtár, amely a `CustomBaseController`-t és az auth middleware-t biztosítja
+- **[Adatbázis](./database.md)** – Kapcsolati karakterláncok, sémaszkriptek és adat-hozzáférési minták
+- **[Helyi API-beállítás](./local-setup.md)** – Teljes, lépésenkénti beállítási útmutató
+- **[ApiHelper](../shared-libraries/api-helper.md)** – A megosztott könyvtár, amely a `CustomBaseController`-t és az auth middleware-t biztosítja

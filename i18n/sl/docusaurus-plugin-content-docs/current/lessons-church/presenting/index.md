@@ -1,5 +1,6 @@
 ---
 title: "Predstavitev"
+description: "Prikaži ure na projektorju s Presenter Mode v Lessons.church, deli vodnike po vlogah za prostovoljce in natisni gradiva pred uro."
 ---
 
 # Predstavitev

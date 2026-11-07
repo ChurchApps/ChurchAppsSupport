@@ -1,12 +1,13 @@
 ---
 title: "Yhdistetyt sovellukset ja OAuth"
+description: "Yhdistä kolmannen osapuolen sovelluksia seurakunnan B1-tietoihin OAuth 2.0 -suostumuksella ilman jaettuja salasanoja tai API-avaimia ja peruuta pääsy milloin tahansa B1 Adminin asetuksista."
 ---
 
 # Yhdistetyt sovellukset ja OAuth
 
 <div class="article-intro">
 
-B1 API tukee OAuth 2.0 -protokollaa, joten kolmannen osapuolen sovellus voi pyytää kunkin seurakunnan ylläpitäjältä luvan käyttää heidän tietojaan ilman, että seurakunta koskaan jakaa salasanaa tai API-avainta. **Yhdistetty sovellus** on OAuth-tunniste, jonka seurakunnan ylläpitäjä on hyväksynyt. Sen peruuttaminen katkaisee kolmannen osapuolen sovelluksen käyttöoikeuden yhdellä napsautuksella. Käytä tätä polkua monivuokralaisille SaaS-liittimille. Yhden seurakunnan integraatioon suosi [API-avaimia](./api-keys).
+B1 API tukee OAuth 2.0 -protokollaa, joten kolmannen osapuolen sovellus voi pyytää kunkin seurakunnan ylläpitäjältä luvan käyttää heidän tietojaan ilman, että seurakunta koskaan jakaa salasanaa tai API-avainta. **Yhdistetty sovellus** on OAuth-tunniste, jonka seurakunnan ylläpitäjä on hyväksynyt. Sen peruuttaminen katkaisee kolmannen osapuolen sovelluksen käyttöoikeuden yhdellä napsautuksella. Käytä tätä polkua monivuokralaisille SaaS-liittimille. Yhden seurakunnan integraatioon suosi [API-avaimia](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API tukee OAuth 2.0 -protokollaa, joten kolmannen osapuolen sovellus voi pyyt
 | **Yhdistetty sovellus** | Tietty `(asiakas, seurakunnan ylläpitäjä)`-pari, jossa ylläpitäjä on myöntänyt asiakkaalle pääsyn. Jokaista yhdistettyä sovellusta tukee OAuth-päivitystunniste. |
 | **Käyttötunniste** | Lyhytikäinen JWT (noin 7 päivää), jota asiakas käyttää API-kutsuissa. Muoto on sama kuin käyttäjän JWT: `Authorization: Bearer <jwt>`. |
 | **Päivitystunniste** | Pitkäikäinen läpinäkymätön merkkijono (noin 90 päivää), jolla asiakas luo uusia käyttötunnisteita. |
-| **Laajuus (scope)** | Rajaa sitä, mitä käyttötunniste voi tehdä. Katso [laajuusluettelo](./api-keys#scopes). |
+| **Laajuus (scope)** | Rajaa sitä, mitä käyttötunniste voi tehdä. Katso [laajuusluettelo](./api-keys.md#scopes). |
 
 ## Myöntövirrat
 
@@ -162,7 +163,7 @@ Luettelo jättää automaattisesti pois vanhentuneet tunnisteet.
 
 ## Laajuudet ja suostumus
 
-Laajuusmerkkijonot ovat samaa luetteloa kuin [API-avaimet](./api-keys#scopes). Asiakkaiden parhaat käytännöt:
+Laajuusmerkkijonot ovat samaa luetteloa kuin [API-avaimet](./api-keys.md#scopes). Asiakkaiden parhaat käytännöt:
 
 - **Pyydä kapeimmat toimivat laajuudet.** Seurakunnat huomaavat, jos pyydät `donations:write`-oikeutta, vaikka tarvitset vain ihmisten tietojen lukemista.
 - **Käytä päivitystunnistetta ja lyhytikäisiä käyttötunnisteita.** Pitkäikäisiä käyttötunnisteita on vaikeampi peruuttaa nopeasti.
@@ -183,7 +184,7 @@ Rekisteröityjen uudelleenohjaus-URI:iden on vastattava pyynnön `redirect_uri`-
 
 ### Dynaaminen asiakasrekisteröinti
 
-`POST /membership/oauth/register` (julkinen, RFC 7591) antaa asiakkaan, kuten claude.ai:n MCP-liittimen, rekisteröityä itse. API:n dokumentti `/.well-known/oauth-authorization-server` mainostaa tätä päätepistettä. Katso [MCP-palvelin → OAuth-löytäminen](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (julkinen, RFC 7591) antaa asiakkaan, kuten claude.ai:n MCP-liittimen, rekisteröityä itse. API:n dokumentti `/.well-known/oauth-authorization-server` mainostaa tätä päätepistettä. Katso [MCP-palvelin → OAuth-löytäminen](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ B1Adminin suostumussivulla itse rekisteröityneestä asiakkaasta näytetään il
 
 ## SDK-tuki
 
-Paketti `@churchapps/integration-sdk` kääri jokaisen OAuth-virran tyypitettyihin apufunktioihin: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` ja `.awaitDeviceToken()`. Katso paketin README sekä [Webhooks](./webhooks#sdk-support) päästä päähän -esimerkkiin.
+Paketti `@churchapps/integration-sdk` kääri jokaisen OAuth-virran tyypitettyihin apufunktioihin: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` ja `.awaitDeviceToken()`. Katso paketin README sekä [Webhooks](./webhooks.md#sdk-support) päästä päähän -esimerkkiin.

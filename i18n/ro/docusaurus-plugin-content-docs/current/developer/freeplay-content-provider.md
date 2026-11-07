@@ -1,5 +1,6 @@
 ---
 title: "Furnizor de conținut FreePlay"
+description: "Ce trebuie să ofere un furnizor de conținut pentru a conecta o bibliotecă de lecții la FreePlay: logo, autentificare, catalog, playlisturi și formate media."
 ---
 
 # Furnizor de conținut FreePlay

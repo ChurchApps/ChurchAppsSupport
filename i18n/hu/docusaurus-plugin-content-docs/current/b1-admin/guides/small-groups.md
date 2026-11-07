@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Kiscsoportok működtetése"
+description: "Kiscsoportok, bibliatanulmányok és szolgálati csapatok beállítása a B1 Admin-ban, majd gyülekezeti naptár és csoportrész közzététele a B1 weboldalon."
 ---
 
 # Kiscsoportok működtetése
@@ -78,7 +79,7 @@ A tagok a telefonjukról vagy a számítógépükről fedezhetik fel, csatlakozh
 
 1. A tagok a [B1.church](../../b1-church/groups/browsing-groups.md) oldalon böngészhetik és csatlakozhatnak csoportokhoz
 2. A csoporttagok megtekinthetik a részleteket és a naptárakat, valamint [beszélgetésekben](../../b1-church/groups/conversations.md) írhatnak
-3. Minden csoportfunkció elérhető a [B1 Mobile alkalmazásban](../../b1-mobile/groups/) is
+3. Minden csoportfunkció elérhető a [B1 Mobile alkalmazásban](../../b1-mobile/groups/index.md) is
 
 :::info
 A tagok webes és mobilos felületen egyaránt látják csoportjaikat, közelgő eseményeiket és csoportbeszélgetéseiket – minden szinkronban marad.
@@ -97,4 +98,4 @@ A kiscsoportjai be vannak állítva és összekapcsolva. A tagok csoportokat fed
 - [Szerkesztett naptár](../calendars/curated-calendar.md) – egységes egyházi naptár összeállítása
 - [Csoportok böngészése (webes)](../../b1-church/groups/browsing-groups.md) – hogyan találják meg a tagok a csoportokat
 - [Csoportbeszélgetések (webes)](../../b1-church/groups/conversations.md) – csoportos megbeszélések
-- [Csoportok (mobil)](../../b1-mobile/groups/) – csoportok a mobilalkalmazásban
+- [Csoportok (mobil)](../../b1-mobile/groups/index.md) – csoportok a mobilalkalmazásban

@@ -1,5 +1,6 @@
 ---
 title: "Łączenie FreePlay z B1 Admin"
+description: "Połącz telewizor w klasie z FreePlay z zaplanowanymi lekcjami w B1 Admin, aby nauczyciele mogli odtwarzać je na ekranie podczas zajęć."
 ---
 
 # Podłączanie telewizora w sali lekcyjnej do lekcji w B1 Admin

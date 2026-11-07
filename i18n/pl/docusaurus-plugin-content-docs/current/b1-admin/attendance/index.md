@@ -1,5 +1,6 @@
 ---
 title: "Dochodzenie"
+description: "Przeglądaj frekwencję, sale i gości w B1 Admin, a następnie konfiguruj kampusy, godziny nabożeństw i kioski meldunkowe na stronie Frekwencja."
 ---
 
 # Dochodzenie

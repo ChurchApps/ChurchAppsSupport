@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Yakha Luhla Lwakho Lwetintshumayelo & Kusakata Bukhona"
+description: "Ngenisa tinkhulumo takho te-YouTube noma Vimeo, uzihlele kuyi-playlist, bese usetfula tinhlangano letiphilile netingcoco ku-B1 Admin ngewebhusayitini yebandla."
 ---
 
 # Yakha Luhla Lwakho Lwetintshumayelo & Kusakata Bukhona

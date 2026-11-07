@@ -1,5 +1,6 @@
 ---
 title: "Tervek"
+description: "Nézd meg, mely istentiszteleti terveknek vagy szolgálati beosztásodnak vagy, a B1.church oldalon ellenőrizd a pozíciókat és dátumokat, majd fogadd el vagy utasítsd vissza a kiosztásokat a tagi portálodról."
 ---
 
 # Tervek

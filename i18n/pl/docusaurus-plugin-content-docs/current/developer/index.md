@@ -1,5 +1,6 @@
 ---
 title: "Dokumentacja dla deweloperów"
+description: "Dokumentacja deweloperska ChurchApps: konfiguracja lokalna, API, aplikacje webowe, biblioteki wspólne, aplikacje mobilne i wdrażanie projektów open source."
 ---
 
 # Dokumentacja dla deweloperów
@@ -24,16 +25,16 @@ Najważniejsze cechy:
 
 ## Czego dotyczy ta sekcja
 
-- **[Konfiguracja](setup/)** -- Lokalne środowisko programistyczne, wymagania wstępne i konfiguracja
-  - [Wymagania wstępne](setup/prerequisites) -- Wymagane narzędzia i oprogramowanie
-  - [Przegląd projektów](setup/project-overview) -- Wszystkie projekty w skrócie
-  - [Zmienne środowiskowe](setup/environment-variables) -- Konfiguracja plików `.env`
-- **[API](api/)** -- Lokalna konfiguracja głównego API, inicjalizacja bazy danych i struktura modułów
-- **[Aplikacje internetowe](web-apps/)** -- Uruchamianie B1Admin, B1App i LessonsApp lokalnie
-- **[Aplikacje mobilne](mobile/)** -- Budowanie B1Mobile i innych aplikacji Expo
-- **[Biblioteki współdzielone](shared-libraries/)** -- Praca z Helpers, ApiHelper i AppHelper
-- **[Wdrażanie](deployment/)** -- Wdrażanie API, aplikacji internetowych i mobilnych
-- **[Dostawca treści FreePlay](freeplay-content-provider)** -- Integracja Twojej biblioteki lekcji z FreePlay
+- **[Konfiguracja](./setup/index.md)** -- Lokalne środowisko programistyczne, wymagania wstępne i konfiguracja
+  - [Wymagania wstępne](./setup/prerequisites.md) -- Wymagane narzędzia i oprogramowanie
+  - [Przegląd projektów](./setup/project-overview.md) -- Wszystkie projekty w skrócie
+  - [Zmienne środowiskowe](./setup/environment-variables.md) -- Konfiguracja plików `.env`
+- **[API](./api/index.md)** -- Lokalna konfiguracja głównego API, inicjalizacja bazy danych i struktura modułów
+- **[Aplikacje internetowe](./web-apps/index.md)** -- Uruchamianie B1Admin, B1App i LessonsApp lokalnie
+- **[Aplikacje mobilne](./mobile/index.md)** -- Budowanie B1Mobile i innych aplikacji Expo
+- **[Biblioteki współdzielone](./shared-libraries/index.md)** -- Praca z Helpers, ApiHelper i AppHelper
+- **[Wdrażanie](./deployment/index.md)** -- Wdrażanie API, aplikacji internetowych i mobilnych
+- **[Dostawca treści FreePlay](./freeplay-content-provider.md)** -- Integracja Twojej biblioteki lekcji z FreePlay
 
 ## Społeczność i zasoby
 

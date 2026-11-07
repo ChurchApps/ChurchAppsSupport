@@ -1,5 +1,6 @@
 ---
 title: "Správa programov"
+description: "Vytváranie a úprava programov v Lessons.church: slugy a miniatúry, zoskupenie štúdií do kategórií a zdroje na úrovni programu."
 ---
 
 # Správa programov

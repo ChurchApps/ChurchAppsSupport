@@ -1,5 +1,6 @@
 ---
 title: "Demografi"
+description: "Se menighetens alder, kjønn, medlemskap, sivilstand og campusfordeling i B1 Admins interaktive diagrammer, og gå i dybden på hver gruppe."
 ---
 
 # Demografi

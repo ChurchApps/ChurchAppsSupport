@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Doing"
+description: "Referensi endpoint Doing API di balik rencana pelayanan, penugasan sukarelawan, tugas, dan otomatisasi di B1 Admin, dengan jalur, autentikasi, dan izin."
 ---
 
 # Endpoint Doing
@@ -278,6 +279,6 @@ Meneruskan permintaan ke penyedia konten eksternal (misalnya, ProPresenter, Easy
 
 ## Halaman Terkait
 
-- [Endpoint Keanggotaan](./membership) — Orang, grup, peran, dan izin
-- [Endpoint Kehadiran](./attendance) — Pelacakan layanan dan kunjungan
-- [Struktur Modul](../module-structure) — Pola organisasi kode
+- [Endpoint Keanggotaan](./membership.md) — Orang, grup, peran, dan izin
+- [Endpoint Kehadiran](./attendance.md) — Pelacakan layanan dan kunjungan
+- [Struktur Modul](../module-structure.md) — Pola organisasi kode

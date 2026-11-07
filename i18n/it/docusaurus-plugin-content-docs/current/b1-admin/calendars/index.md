@@ -1,5 +1,6 @@
 ---
 title: "Calendari"
+description: "Imposta i calendari in B1 Admin, gestisci gli eventi che vi compaiono e pubblicali sul sito B1.church perché la comunità veda gli appuntamenti."
 ---
 
 # Calendari
@@ -18,20 +19,20 @@ La sezione Calendari in B1 Admin ti consente di creare calendari curati per la t
 
 ## Quello che Puoi Fare
 
-- **Aggiungi un nuovo calendario** -- Fai clic su **Aggiungi Calendario** in alto nella pagina per creare un calendario per un ministero specifico, tipo di evento o scopo. Vedi [Creazione di Calendari](creating-calendars) per istruzioni passo dopo passo.
+- **Aggiungi un nuovo calendario** -- Fai clic su **Aggiungi Calendario** in alto nella pagina per creare un calendario per un ministero specifico, tipo di evento o scopo. Vedi [Creazione di Calendari](./creating-calendars.md) per istruzioni passo dopo passo.
 - **Modifica un calendario** -- Fai clic su **Gestisci Eventi** su qualsiasi calendario per aprirlo e gestire quali gruppi sono inclusi in esso.
 - **Pubblica calendari** -- I calendari possono essere visualizzati sul tuo sito web B1.church in modo che i visitatori possano vedere gli imminenti eventi nella tua chiesa.
-- **Crea calendari curati** -- Estrai gli eventi da più gruppi in una singola visualizzazione di calendario per un quadro completo di tutto ciò che accade nella tua chiesa. Vedi [Calendario Curato](curated-calendar) per i dettagli.
-- **Gestisci stanze e risorse** -- Traccia spazi prenotabili e attrezzature e gestisci le richieste di approvazione. Vedi [Stanze e Risorse](rooms-resources) per i dettagli.
-- **Visualizza disponibilità** -- Vedi tutte le prenotazioni di stanze e risorse su un singolo calendario e prenota spazi per gli imminenti eventi. Vedi [Calendario di Disponibilità](availability) per i dettagli.
+- **Crea calendari curati** -- Estrai gli eventi da più gruppi in una singola visualizzazione di calendario per un quadro completo di tutto ciò che accade nella tua chiesa. Vedi [Calendario Curato](./curated-calendar.md) per i dettagli.
+- **Gestisci stanze e risorse** -- Traccia spazi prenotabili e attrezzature e gestisci le richieste di approvazione. Vedi [Stanze e Risorse](./rooms-resources.md) per i dettagli.
+- **Visualizza disponibilità** -- Vedi tutte le prenotazioni di stanze e risorse su un singolo calendario e prenota spazi per gli imminenti eventi. Vedi [Calendario di Disponibilità](./availability.md) per i dettagli.
 
 :::info
-I calendari lavorano strettamente con i [Gruppi](../groups/creating-groups.md). Quando i gruppi hanno eventi programmati, questi eventi possono essere estrati nei tuoi calendari. Vedi la pagina [Creazione di Calendari](creating-calendars) per imparare come collegare i gruppi ai calendari.
+I calendari lavorano strettamente con i [Gruppi](../groups/creating-groups.md). Quando i gruppi hanno eventi programmati, questi eventi possono essere estrati nei tuoi calendari. Vedi la pagina [Creazione di Calendari](./creating-calendars.md) per imparare come collegare i gruppi ai calendari.
 :::
 
 ## Passaggi Successivi
 
-- [Creazione di Calendari](creating-calendars) -- Configura un nuovo calendario e collega i gruppi
-- [Calendario Curato](curated-calendar) -- Aggrega gli eventi da più gruppi in una vista
-- [Stanze e Risorse](rooms-resources) -- Gestisci spazi prenotabili e attrezzature
-- [Calendario di Disponibilità](availability) -- Visualizza e gestisci le prenotazioni di stanze/risorse
+- [Creazione di Calendari](./creating-calendars.md) -- Configura un nuovo calendario e collega i gruppi
+- [Calendario Curato](./curated-calendar.md) -- Aggrega gli eventi da più gruppi in una vista
+- [Stanze e Risorse](./rooms-resources.md) -- Gestisci spazi prenotabili e attrezzature
+- [Calendario di Disponibilità](./availability.md) -- Visualizza e gestisci le prenotazioni di stanze/risorse

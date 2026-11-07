@@ -1,5 +1,7 @@
 ---
-title: "Aloitus"
+title: "Aloitus B1.church-jäsenportaalin kanssa"
+sidebar_label: "Aloitus"
+description: "Löydä seurakuntasi B1.church-sivusto, luo jäsentili ja tutustu portaalin tarjontaan: ryhmät, lahjoitukset, sisäänkirjautuminen ja suunnitelmat."
 ---
 
 # Aloitus B1.churchin kanssa

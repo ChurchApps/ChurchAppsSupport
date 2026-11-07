@@ -1,5 +1,6 @@
 ---
 title: "Format lekcji otwartych"
+description: "Specyfikacja formatu dla zewnętrznych dostawców programów na Lessons.church: drzewo dostawcy i pola JSON kanału miejsc, akcje i pliki multimedialne."
 ---
 
 # Format lekcji otwartych

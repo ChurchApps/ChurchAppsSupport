@@ -1,5 +1,6 @@
 ---
 title: "출석 보고서"
+description: "B1 Admin의 세 가지 출석 보고서(Attendance Trend, Group Attendance, Daily Group Attendance)와 각 보고서가 보여주는 내용을 확인하고, 실행 및 내보내기 단계를 알아보세요."
 ---
 
 # 출석 보고서

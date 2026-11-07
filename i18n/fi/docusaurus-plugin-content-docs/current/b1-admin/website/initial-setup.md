@@ -1,5 +1,7 @@
 ---
-title: "Alkuasetukset"
+title: "Aloitus B1 Adminin verkkosivuston kanssa"
+sidebar_label: "Alkuasetukset"
+description: "Määritä B1 Adminin seurakuntasivusto: osoita alidomain tai oma verkkotunnus, luo etusivu, valitse brändivärit ja logo sekä rakenna navigointi."
 ---
 
 # Alkuasetukset
@@ -45,7 +47,7 @@ Jos et näe Asetukset-vaihtoehtoa, pyydä henkilöltä, joka perusti kirkkosi ti
 6. Lisättyäsi osion napsauta uudelleen **Lisää sisältöä** ja lisää tekstiä, kuvia, videoita, kortteja, lomakkeita ja muuta vetämällä ne osioon.
 
 :::info
-Lisätietoja sivujen ja navigaation käsittelystä on kohdassa [Sivujen hallinta](managing-pages). Kattavan oppaan visuaaliseen editoriin löydät kohdasta [Sivueditorin käyttö](page-editor).
+Lisätietoja sivujen ja navigaation käsittelystä on kohdassa [Sivujen hallinta](./managing-pages.md). Kattavan oppaan visuaaliseen editoriin löydät kohdasta [Sivueditorin käyttö](./page-editor.md).
 :::
 
 ## Sivuston ulkoasun määrittäminen
@@ -57,7 +59,7 @@ Lisätietoja sivujen ja navigaation käsittelystä on kohdassa [Sivujen hallinta
 5. Määritä **Sivuston alatunniste** kirkkosi yhteystiedoilla ja linkeillä.
 
 :::info
-Ulkoasussa tekemäsi muutokset koskevat koko verkkosivustoasi. Katso ohjeet kullekin asetukselle sivulta [Ulkoasu](appearance).
+Ulkoasussa tekemäsi muutokset koskevat koko verkkosivustoasi. Katso ohjeet kullekin asetukselle sivulta [Ulkoasu](./appearance.md).
 :::
 
 ## Navigaation määrittäminen
@@ -70,6 +72,6 @@ Navigaatiolinkkisi näkyvät Verkkosivun sivut -näkymässä. Voit järjestää 
 
 ## Seuraavat vaiheet
 
-- [Sivujen hallinta](managing-pages) -- Opi käsittelemään sivuja ja navigaatiota yksityiskohtaisesti
-- [Ulkoasu](appearance) -- Hienosäädä sivustosi värejä, fontteja ja asettelua
-- [Tiedostot](files) -- Lataa kuvia ja asiakirjoja verkkosivustollesi
+- [Sivujen hallinta](./managing-pages.md) -- Opi käsittelemään sivuja ja navigaatiota yksityiskohtaisesti
+- [Ulkoasu](./appearance.md) -- Hienosäädä sivustosi värejä, fontteja ja asettelua
+- [Tiedostot](./files.md) -- Lataa kuvia ja asiakirjoja verkkosivustollesi

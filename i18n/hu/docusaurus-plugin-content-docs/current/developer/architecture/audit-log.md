@@ -1,5 +1,6 @@
 ---
 title: "Naplózás és visszavonható kötegek"
+description: "Ismerteti az API naplózási naplóját, amely minden modulon átívelő felhasználói módosítást rögzít, valamint azt, hogyan vonhatók vissza soronként az importálási kötegek a B1 Adminban."
 ---
 
 # Naplózás és visszavonható kötegek
@@ -155,6 +156,6 @@ Mindkét admin felület **folyamatban van**. A cél:
 
 ## Kapcsolódó oldalak
 
-- [Modulszerkezet](../api/module-structure): hogyan éri el egy nem membership vezérlő a membership repository-kat a `RepoManager`-en keresztül
-- [Adakozás](./giving): az adományozási írási útvonalak, amelyek névtelen esetben is `sensitive`-ként naplózódnak
-- [Membership végpontok](../api/endpoints/membership): a REST felület, amely az `X-Batch-Id`-t hordozza, és az `/auditlogs` és `/batches` útvonalakat teszi elérhetővé
+- [Modulszerkezet](../api/module-structure.md): hogyan éri el egy nem membership vezérlő a membership repository-kat a `RepoManager`-en keresztül
+- [Adakozás](./giving.md): az adományozási írási útvonalak, amelyek névtelen esetben is `sensitive`-ként naplózódnak
+- [Membership végpontok](../api/endpoints/membership.md): a REST felület, amely az `X-Batch-Id`-t hordozza, és az `/auditlogs` és `/batches` útvonalakat teszi elérhetővé

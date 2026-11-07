@@ -1,5 +1,6 @@
 ---
 title: "Nastavitev"
+description: "Izberi lokalno pot razvoja za projekte ChurchApps: delo na frontendu z deljenimi demo API-ji ali celoten sklad lokalno z MySQL za spremembe zaledja."
 ---
 
 # Nastavitev
@@ -40,15 +41,15 @@ Ta pristop vam omogoča, da začnete z urejanjem sprednjega dela v nekaj minutah
 
 ### 2. Zaženite vse lokalno
 
-Če morate spremeniti kodo API-ja ali delati brez povezave, lahko celoten sklad zaženete lokalno. Za to potrebujete MySQL 8.0 ali novejši in dodatno nastavitev. Podrobna navodila najdete v vodniku [lokalna nastavitev API-ja](../api/local-setup).
+Če morate spremeniti kodo API-ja ali delati brez povezave, lahko celoten sklad zaženete lokalno. Za to potrebujete MySQL 8.0 ali novejši in dodatno nastavitev. Podrobna navodila najdete v vodniku [lokalna nastavitev API-ja](../api/local-setup.md).
 
 ## Začetek
 
 Sledite tem straneh v navedenem vrstnem redu:
 
-1. **[Predpogoji](prerequisites)** -- Namestite potrebna orodja (Node.js, Git, MySQL itd.)
-2. **[Pregled projektov](project-overview)** -- Spoznajte, kateri projekti obstajajo in kaj počnejo
-3. **[Spremenljivke okolja](environment-variables)** -- Nastavite svoje datoteke `.env`, da vse povežete med seboj
+1. **[Predpogoji](./prerequisites.md)** -- Namestite potrebna orodja (Node.js, Git, MySQL itd.)
+2. **[Pregled projektov](./project-overview.md)** -- Spoznajte, kateri projekti obstajajo in kaj počnejo
+3. **[Spremenljivke okolja](./environment-variables.md)** -- Nastavite svoje datoteke `.env`, da vse povežete med seboj
 
 :::info
 Vsak projekt ChurchApps je samostojen repozitorij Git. Klonirati morate le tiste projekte, na katerih želite delati.

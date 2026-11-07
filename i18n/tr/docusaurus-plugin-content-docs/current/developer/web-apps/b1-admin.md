@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "B1 Admin'i yerel olarak kurun: React/Vite panosunu klonlayın, .env dosyasında API uç noktalarını yapılandırın ve kilise yönetimi çalışması için geliştirme sunucusunu başlatın."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin, Vite ve Material-UI ile oluşturulmuş bir React tek sayfalık uygulama
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js 22+** ve **Git** kurun -- bkz. [Ön Koşullar](../setup/prerequisites)
-- API hedefinizi yapılandırın (demo veya yerel) -- bkz. [Ortam Değişkenleri](../setup/environment-variables)
+- **Node.js 22+** ve **Git** kurun -- bkz. [Ön Koşullar](../setup/prerequisites.md)
+- API hedefinizi yapılandırın (demo veya yerel) -- bkz. [Ortam Değişkenleri](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Bu komut Vite geliştirme sunucusunu başlatır. Uygulama, sıcak modül değiş
 3. Yeni sürümü sunmak için CloudFront önbellek geçersiz kılma işlemi tetiklenir
 
 :::tip
-Ayrıntılı dağıtım talimatları için [Web Uygulaması Dağıtımı](../deployment/web-apps) kılavuzuna bakın.
+Ayrıntılı dağıtım talimatları için [Web Uygulaması Dağıtımı](../deployment/web-apps.md) kılavuzuna bakın.
 :::

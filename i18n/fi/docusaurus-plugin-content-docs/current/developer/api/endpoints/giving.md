@@ -1,5 +1,6 @@
 ---
 title: "Lahjoitusrajapinnat"
+description: "Viiteopas ChurchApps Giving API:n päätepisteille: lahjoitukset, erät, maksuyhdyskäytävät, tilaukset ja maksutavat sekä todennus- ja käyttöoikeussäännöt B1 Admin -integraatioita kehittäville."
 ---
 
 # Lahjoitusrajapinnat
@@ -284,6 +285,6 @@ Laajentaa `GenericCrudController`-luokkaa CRUD-reitityksillä: `getById`, `getAl
 
 ## Aiheeseen liittyvät sivut
 
-- [Jäsenyyden päätepisteet](./membership) — Henkilöt, seurakunnat, ryhmät, roolit ja oikeudet
-- [Todennus ja käyttöoikeudet](./authentication) — Kirjautumisvirta, JWT, OAuth, käyttöoikeusmalli
-- [Moduulin rakenne](../module-structure) — Koodin järjestämisen mallit
+- [Jäsenyyden päätepisteet](./membership.md) — Henkilöt, seurakunnat, ryhmät, roolit ja oikeudet
+- [Todennus ja käyttöoikeudet](./authentication.md) — Kirjautumisvirta, JWT, OAuth, käyttöoikeusmalli
+- [Moduulin rakenne](../module-structure.md) — Koodin järjestämisen mallit

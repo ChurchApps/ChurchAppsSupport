@@ -1,5 +1,6 @@
 ---
 title: "Creating Your Account"
+description: "Register a ChurchApps account at B1.church, verify your email, and create or join a church so you can start setting up B1 Admin."
 ---
 
 # Creating Your Account

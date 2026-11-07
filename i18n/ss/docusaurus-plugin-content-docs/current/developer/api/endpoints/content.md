@@ -1,5 +1,6 @@
 ---
 title: "Ema-Endpoint E-Content"
+description: "Incwadzi ye-Content API ye-ChurchApps: emakhasi ewebhusayithi, tikhomba-ndlela, tinkhulumo, emicimbi, emafayela, libhayibheli, nemahubo ku-B1 Admin."
 ---
 
 # Ema-Endpoint E-Content
@@ -132,7 +133,7 @@ Umkhondvo losisekelo: `/content/pageHistory`
 
 Umkhondvo losisekelo: `/content/posts`
 
-Imibhalo ye-blog yidatha lengetulu kwemakhasi lavamile: i-`pageId` ye-post ngayinye ikhomba likhasi legcina umtimba, futsi umugca we-post wengeta i-`title`, `slug` (ngeyodvwa ku-libandla ngalinye), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, kanye ne-`tags`. I-post ishicelelwa nge-`publishDate` seyihleliwe futsi seyendlulile. Buka [Website Builder Architecture](../../architecture/website-builder#blog-posts-over-pages).
+Imibhalo ye-blog yidatha lengetulu kwemakhasi lavamile: i-`pageId` ye-post ngayinye ikhomba likhasi legcina umtimba, futsi umugca we-post wengeta i-`title`, `slug` (ngeyodvwa ku-libandla ngalinye), `excerpt`, `authorId`, `photoUrl`, `publishDate`, `category`, kanye ne-`tags`. I-post ishicelelwa nge-`publishDate` seyihleliwe futsi seyendlulile. Buka [Website Builder Architecture](../../architecture/website-builder.md#blog-posts-over-pages).
 
 | Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
 |--------|------|------|------------|-------------|
@@ -452,8 +453,8 @@ Umkhondvo losisekelo: `/content/support`
 
 ## Emakhasi Lahlobene
 
-- [Website Builder Architecture](../../architecture/website-builder) -- Indlela emakhasi, tigaba, ema-element, ema-post, kanye nekuphindzelwa lokuhlanganiswa ngayo kuwo wonkhe ema-app
-- [Membership Endpoints](./membership) -- Bantfu, emabandla, emacembu, ema-role, timvumo
-- [Attendance Endpoints](./attendance) -- Kulandzelela service kanye nekuvakasha
-- [Authentication & Permissions](./authentication) -- Inchubo yekungena, JWT, sifanekiso semvumo
-- [Module Structure](../module-structure) -- Sifanekiso sekuhlelwa kwekhodi
+- [Website Builder Architecture](../../architecture/website-builder.md) -- Indlela emakhasi, tigaba, ema-element, ema-post, kanye nekuphindzelwa lokuhlanganiswa ngayo kuwo wonkhe ema-app
+- [Membership Endpoints](./membership.md) -- Bantfu, emabandla, emacembu, ema-role, timvumo
+- [Attendance Endpoints](./attendance.md) -- Kulandzelela service kanye nekuvakasha
+- [Authentication & Permissions](./authentication.md) -- Inchubo yekungena, JWT, sifanekiso semvumo
+- [Module Structure](../module-structure.md) -- Sifanekiso sekuhlelwa kwekhodi

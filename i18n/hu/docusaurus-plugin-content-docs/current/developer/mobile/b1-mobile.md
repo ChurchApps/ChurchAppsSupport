@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "A B1 Mobile React Native/Expo-alkalmazás helyi beállítása és futtatása, API-végpontjainak konfigurálása, Android- vagy iOS-buildek készítése. A B1 Mobile elavult."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ A B1 Mobile a ChurchApps elsődleges, a gyülekezeti tagok számára készült m
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Telepítse a **Node.js**-t és az **Expo CLI**-t -- lásd: [Előfeltételek](../setup/prerequisites)
+- Telepítse a **Node.js**-t és az **Expo CLI**-t -- lásd: [Előfeltételek](../setup/prerequisites.md)
 - Telepítse az **Android Studio**-t (Android emulátorhoz) vagy az **Xcode**-ot (iOS szimulátorhoz)
-- Állítsa be az API célpontot (demó vagy helyi) -- lásd: [Környezeti változók](../setup/environment-variables)
+- Állítsa be az API célpontot (demó vagy helyi) -- lásd: [Környezeti változók](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Az OTA frissítések ideálisak kizárólag JavaScript-változásokhoz. Ha natí
 
 ## Kapcsolódó cikkek
 
-- **[Mobilalkalmazás telepítése](../deployment/mobile)** -- Teljes útmutató a mobilalkalmazások építéséhez, beküldéséhez és telepítéséhez
-- **[Környezeti változók](../setup/environment-variables)** -- A mobilalkalmazás környezeti beállításainak teljes referenciája
+- **[Mobilalkalmazás telepítése](../deployment/mobile.md)** -- Teljes útmutató a mobilalkalmazások építéséhez, beküldéséhez és telepítéséhez
+- **[Környezeti változók](../setup/environment-variables.md)** -- A mobilalkalmazás környezeti beállításainak teljes referenciája

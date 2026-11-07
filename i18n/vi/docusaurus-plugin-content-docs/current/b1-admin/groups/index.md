@@ -1,5 +1,7 @@
 ---
-title: "Nhóm"
+title: "Nhóm trong B1 Admin"
+sidebar_label: "Nhóm"
+description: "Thiết lập và tổ chức nhóm trong B1 Admin, gồm danh mục, thành viên, lịch và yêu cầu tham gia, kèm hướng dẫn tìm trang Nhóm."
 ---
 
 # Nhóm

@@ -1,5 +1,7 @@
 ---
-title: "服侍"
+title: "B1 Admin 服事概览"
+sidebar_label: "服侍"
+description: "在 B1 Admin 的服事区协调志愿者并规划教会崇拜，涵盖事工标签、团队、崇拜计划、诗歌和任务。"
 ---
 
 # 服侍

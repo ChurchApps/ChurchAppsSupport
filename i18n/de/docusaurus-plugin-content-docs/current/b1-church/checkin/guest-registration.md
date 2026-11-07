@@ -1,5 +1,6 @@
 ---
 title: "Gastregistrierung"
+description: "Sich und Ihre Familie per QR-Formular in B1 Checkin als Erstbesucher registrieren, damit Ehrenamtliche Sie bei Ankunft einchecken können."
 ---
 
 # Gastregistrierung
@@ -22,7 +23,7 @@ Wenn Sie zum ersten Mal eine Kirche besuchen, können Sie sich und Ihre Familie 
 
 Die Gastregistrierung ist für Besucher gedacht, die noch kein Konto haben. Tippen Sie am Check-in-Kiosk der Kirche auf **Als Gast registrieren**, um einen QR-Code anzuzeigen, der zur Registrierungsseite führt. Sie können den Link auch von einem Freiwilligen oder einem Empfangsmitarbeiter erhalten oder auf einem Flyer bzw. der Website der Kirche finden.
 
-Kein Telefon zur Hand? Tippen Sie im selben QR-Code-Fenster am Kiosk auf **Hier registrieren**, um das Formular direkt am Kiosk auszufüllen. Wie das am Kiosk funktioniert, erfahren Sie unter [Als Gast registrieren](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest).
+Kein Telefon zur Hand? Tippen Sie im selben QR-Code-Fenster am Kiosk auf **Hier registrieren**, um das Formular direkt am Kiosk auszufüllen. Wie das am Kiosk funktioniert, erfahren Sie unter [Als Gast registrieren](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
 
 Die Seite trägt den Titel **Gastregistrierung**. Wenn die Kirche ein Kopfbild hinzugefügt hat, wird es oben auf der Seite angezeigt; andernfalls sehen Sie ein kleines Symbol.
 
@@ -51,7 +52,7 @@ Ihre Registrierung legt Einträge in der Datenbank der Kirche an:
 - Für jedes Familienmitglied werden **Personendatensätze** mit dem Mitgliedschaftsstatus „Besucher“ angelegt.
 - Alle Kommentare, die Sie eingegeben haben, werden als Notiz im Datensatz des Hauptkontakts gespeichert, damit die Mitarbeiter der Kirche sie lesen können.
 - Wenn die Kirche eine Gruppe für neue Gäste ausgewählt hat, wird Ihre Familie dieser Gruppe hinzugefügt. Die Kirche kann Ihre Anwesenheit auch automatisch erfassen, wenn Sie sich während eines planmäßigen Gottesdienstzeitpunkt dieser Gruppe registrieren.
-- Ein Freiwilliger oder Administrator der Kirche kann Ihre Familie anschließend über den [B1-Checkin-Kiosk](../../b1-checkin/check-in/looking-up-members) einchecken.
+- Ein Freiwilliger oder Administrator der Kirche kann Ihre Familie anschließend über den [B1-Checkin-Kiosk](../../b1-checkin/check-in/looking-up-members.md) einchecken.
 
 :::info
 Wenn Sie sich erneut mit demselben Vornamen und derselben E-Mail-Adresse oder Telefonnummer registrieren, erkennen die Datensätze der Kirche Sie und verwenden Ihr bestehendes Profil, anstatt ein Duplikat anzulegen. Alle anderen Personen werden als neue Einträge angelegt. Wenn Sie sich bereits registriert haben, können Sie am Kiosk auch einfach Ihren Namen oder Ihre Telefonnummer suchen.
@@ -63,6 +64,6 @@ Wenn das Formular nach Ihrer E-Mail-Adresse fragt, hilft deren Angabe der Kirche
 
 ## Verwandte Artikel
 
-- [Selbst-Check-in](./self-checkin) — Sich nach der Registrierung selbst einchecken
-- [Gäste hinzufügen (Kiosk)](../../b1-checkin/check-in/adding-guests) — Wie Freiwillige am Kiosk Gäste hinzufügen
-- [Check-in](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) — Wie Kirchenadministratoren die QR-Gastregistrierung einrichten
+- [Selbst-Check-in](./self-checkin.md) — Sich nach der Registrierung selbst einchecken
+- [Gäste hinzufügen (Kiosk)](../../b1-checkin/check-in/adding-guests.md) — Wie Freiwillige am Kiosk Gäste hinzufügen
+- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) — Wie Kirchenadministratoren die QR-Gastregistrierung einrichten

@@ -1,5 +1,6 @@
 ---
 title: "Administrasyon"
+description: "Pangkalahatang-tanaw ng admin area ng Lessons.church: pamamahala ng programs, studies, lessons, resources, statistics, at external curriculum providers."
 ---
 
 # Administrasyon

@@ -1,5 +1,7 @@
 ---
-title: "Kezdeti beállítás"
+title: "Egyházi alapbeállítás a B1 Adminban"
+sidebar_label: "Kezdeti beállítás"
+description: "Egy új egyház első beállítása a B1 Adminban: adatok, arculat, szerepkörök, és ajánlott sorrend személyek, csoportok, jelenlét és adakozás beállításához."
 ---
 
 # Kezdeti beállítás

@@ -1,5 +1,6 @@
 ---
 title: "Sporing af fremmøde"
+description: "Gennemgå tendenser i fremmøde, filtrér rapporter efter campus, gudstjeneste eller gruppe, og eksportér gruppefremmøde fra siden Attendance i B1 Admin."
 ---
 
 # Sporing af fremmøde

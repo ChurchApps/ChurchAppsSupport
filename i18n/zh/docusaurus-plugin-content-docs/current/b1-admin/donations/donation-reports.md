@@ -1,5 +1,6 @@
 ---
 title: "捐款报告"
+description: "在 B1 Admin 中通过“Donations Summary”仪表板、“Lapsed Givers”视图和 CSV 导出功能，查看奉献总额、捐款人流失情况及批次明细。"
 ---
 
 # 捐款报告

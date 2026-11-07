@@ -1,5 +1,6 @@
 ---
 title: "चेक-इन लेबल डिज़ाइनर"
+description: "B1 Admin में चेक-इन पर छपने वाले नेमटैग और पिकअप स्लिप टेम्पलेट अनुकूलित करें, जिनमें फ़ील्ड, स्थिति और जन्मदिन या नोट्स की शर्तें शामिल हैं।"
 ---
 
 # चेक-इन लेबल डिज़ाइनर
@@ -13,8 +14,8 @@ Label Designer आपको नाम टैग और पिकअप स्ल
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- [Attendance](setup) को सेट अप करें और कम से कम एक सेवा समय को चेक-इन सक्षम के साथ कॉन्फ़िगर करें
-- [Check-In](check-in) को सेट अप करें ताकि लेबल प्रिंट हो रहे हों
+- [Attendance](./setup.md) को सेट अप करें और कम से कम एक सेवा समय को चेक-इन सक्षम के साथ कॉन्फ़िगर करें
+- [Check-In](./check-in.md) को सेट अप करें ताकि लेबल प्रिंट हो रहे हों
 - आपको Attendance अनुभाग तक प्रशासनिक पहुंच की आवश्यकता है
 
 </div>
@@ -85,6 +86,6 @@ editor लेबल का एक scaled preview दिखाता है क�
 
 ## संबंधित आलेख
 
-- [Check-In Setup](setup) — चेक-इन के लिए सेवाओं और समूहों को कॉन्फ़िगर करें
-- [Completing Check-In](check-in) — परिवारों के लिए चेक-इन flow
-- [B1 Checkin Getting Started](../../b1-checkin/getting-started/) — Checkin किस्क ऐप
+- [Check-In Setup](./setup.md) — चेक-इन के लिए सेवाओं और समूहों को कॉन्फ़िगर करें
+- [Completing Check-In](./check-in.md) — परिवारों के लिए चेक-इन flow
+- [B1 Checkin Getting Started](../../b1-checkin/getting-started/index.md) — Checkin किस्क ऐप

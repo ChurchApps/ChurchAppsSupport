@@ -1,5 +1,6 @@
 ---
 title: "Nastavitve cerkve"
+description: "Na strani Nastavitve cerkve v B1 Admin nastavite ime, naslov, poddomeno, časovni pas, obliko regije, ponudnika SMS-ov in shranjevanje datotek za vašo cerkev."
 ---
 
 # Nastavitve cerkve

@@ -1,5 +1,7 @@
 ---
-title: "Porządek nabożeństwa"
+title: "Szczegóły porządku nabożeństwa w aplikacji B1.church"
+sidebar_label: "Porządek nabożeństwa"
+description: "Zobacz porządek nabożeństwa w aplikacji B1.church: skumulowane czasy, teksty pieśni, transpozycję tonacji i podgląd lekcji dla zespołu."
 ---
 
 # Porządek nabożeństwa

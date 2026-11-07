@@ -1,5 +1,6 @@
 ---
 title: "Kalender"
+description: "Richten Sie in B1 Admin Kalender ein, verwalten Sie, welche Termine darin erscheinen, und veröffentlichen Sie sie auf Ihrer B1.church-Website, damit die Gemeinde kommende Termine sehen kann."
 ---
 
 # Kalender
@@ -18,20 +19,20 @@ Der Kalenderbereich in B1 Admin ermöglicht es Ihnen, kuratierte Kalender für I
 
 ## Was Sie tun können
 
-- **Einen neuen Kalender hinzufügen** -- Klicken Sie oben auf der Seite auf **Kalender hinzufügen**, um einen Kalender für ein bestimmtes Ministerium, einen Ereignistyp oder einen Zweck zu erstellen. Siehe [Kalender erstellen](creating-calendars) für schrittweise Anweisungen.
+- **Einen neuen Kalender hinzufügen** -- Klicken Sie oben auf der Seite auf **Kalender hinzufügen**, um einen Kalender für ein bestimmtes Ministerium, einen Ereignistyp oder einen Zweck zu erstellen. Siehe [Kalender erstellen](./creating-calendars.md) für schrittweise Anweisungen.
 - **Einen Kalender bearbeiten** -- Klicken Sie bei einem beliebigen Kalender auf **Ereignisse verwalten**, um ihn zu öffnen und zu verwalten, welche Gruppen darin enthalten sind.
 - **Kalender veröffentlichen** -- Kalender können auf Ihrer B1.church-Website angezeigt werden, damit Besucher kommende Ereignisse in Ihrer Kirche sehen können.
-- **Kuratierte Kalender erstellen** -- Ziehen Sie Ereignisse von mehreren Gruppen in eine einzelne Kalenderansicht für einen umfassenden Überblick über alles, was in Ihrer Kirche passiert. Siehe [Kuratierter Kalender](curated-calendar) für Details.
-- **Räume und Ressourcen verwalten** -- Verfolgen Sie buchbare Räume und Ausrüstung und bearbeiten Sie Genehmigungsanfragen. Siehe [Räume & Ressourcen](rooms-resources) für Details.
-- **Verfügbarkeit anzeigen** -- Sehen Sie alle Raum- und Ressourcenbuchungen in einem einzigen Kalender und buchen Sie Räume für kommende Ereignisse. Siehe [Verfügbarkeitskalender](availability) für Details.
+- **Kuratierte Kalender erstellen** -- Ziehen Sie Ereignisse von mehreren Gruppen in eine einzelne Kalenderansicht für einen umfassenden Überblick über alles, was in Ihrer Kirche passiert. Siehe [Kuratierter Kalender](./curated-calendar.md) für Details.
+- **Räume und Ressourcen verwalten** -- Verfolgen Sie buchbare Räume und Ausrüstung und bearbeiten Sie Genehmigungsanfragen. Siehe [Räume & Ressourcen](./rooms-resources.md) für Details.
+- **Verfügbarkeit anzeigen** -- Sehen Sie alle Raum- und Ressourcenbuchungen in einem einzigen Kalender und buchen Sie Räume für kommende Ereignisse. Siehe [Verfügbarkeitskalender](./availability.md) für Details.
 
 :::info
-Kalender arbeiten eng mit [Gruppen](../groups/creating-groups.md) zusammen. Wenn Gruppen Ereignisse geplant haben, können diese Ereignisse in Ihre Kalender eingezogen werden. Siehe die Seite [Kalender erstellen](creating-calendars), um zu erfahren, wie Sie Gruppen mit Kalendern verbinden.
+Kalender arbeiten eng mit [Gruppen](../groups/creating-groups.md) zusammen. Wenn Gruppen Ereignisse geplant haben, können diese Ereignisse in Ihre Kalender eingezogen werden. Siehe die Seite [Kalender erstellen](./creating-calendars.md), um zu erfahren, wie Sie Gruppen mit Kalendern verbinden.
 :::
 
 ## Nächste Schritte
 
-- [Kalender erstellen](creating-calendars) -- Richten Sie einen neuen Kalender ein und verbinden Sie Gruppen
-- [Kuratierter Kalender](curated-calendar) -- Aggregieren Sie Ereignisse von mehreren Gruppen in eine Ansicht
-- [Räume & Ressourcen](rooms-resources) -- Verwalten Sie buchbare Räume und Ausrüstung
-- [Verfügbarkeitskalender](availability) -- Anzeigen und Verwalten von Raum-/Ressourcenbuchungen
+- [Kalender erstellen](./creating-calendars.md) -- Richten Sie einen neuen Kalender ein und verbinden Sie Gruppen
+- [Kuratierter Kalender](./curated-calendar.md) -- Aggregieren Sie Ereignisse von mehreren Gruppen in eine Ansicht
+- [Räume & Ressourcen](./rooms-resources.md) -- Verwalten Sie buchbare Räume und Ausrüstung
+- [Verfügbarkeitskalender](./availability.md) -- Anzeigen und Verwalten von Raum-/Ressourcenbuchungen

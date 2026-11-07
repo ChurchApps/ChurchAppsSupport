@@ -1,5 +1,6 @@
 ---
 title: "Solicitud para Unirse a un Grupo"
+description: "Solicite unirse a un grupo que requiere aprobación en B1.church, agregue una nota opcional para el líder, y haga seguimiento o cancele su solicitud pendiente."
 ---
 
 # Solicitud para Unirse a un Grupo

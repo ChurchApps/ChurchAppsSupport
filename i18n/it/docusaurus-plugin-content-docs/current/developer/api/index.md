@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Spiega il design monolitico modulare dell'API ChurchApps, i sei moduli dati, lo stack, le porte e le funzioni Lambda, con link alla documentazione."
 ---
 
 # API
@@ -52,8 +53,8 @@ Quando viene distribuita su AWS, l'API viene eseguita come sei funzioni Lambda:
 
 L'API dipende da due pacchetti condivisi di ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Utilità di base (DateHelper, ApiHelper, ecc.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Utilità per il server Express, inclusi autenticazione, helper per il database e integrazioni AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Utilità di base (DateHelper, ApiHelper, ecc.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Utilità per il server Express, inclusi autenticazione, helper per il database e integrazioni AWS
 
 :::info
 L'API usa i moduli ES (`"type": "module"` in `package.json`). Assicurati che i tuoi import usino la sintassi dei moduli ES.
@@ -61,11 +62,11 @@ L'API usa i moduli ES (`"type": "module"` in `package.json`). Assicurati che i t
 
 ## In questa sezione
 
-- **[Setup locale](./local-setup)** -- Clona, configura ed esegui l'API in locale
-- **[Database](./database)** -- Architettura con un database per modulo, script dello schema e schemi di accesso ai dati
-- **[Struttura del modulo](./module-structure)** -- Controller, repository, modelli e autenticazione
-- **[Chiavi API](./api-keys)** -- Token di accesso personali per script e connettori
-- **[App collegate (OAuth)](./connected-apps)** -- Flusso OAuth multi-tenant per app di terze parti
-- **[Webhook](./webhooks)** -- Invio di notifiche di eventi a sistemi esterni
-- **[Server MCP](./mcp)** -- Endpoint Model Context Protocol che espone l'API agli assistenti IA
-- **[Riferimento degli endpoint](./endpoints/)** -- Documentazione REST completa dell'API per tutti i moduli
+- **[Setup locale](./local-setup.md)** -- Clona, configura ed esegui l'API in locale
+- **[Database](./database.md)** -- Architettura con un database per modulo, script dello schema e schemi di accesso ai dati
+- **[Struttura del modulo](./module-structure.md)** -- Controller, repository, modelli e autenticazione
+- **[Chiavi API](./api-keys.md)** -- Token di accesso personali per script e connettori
+- **[App collegate (OAuth)](./connected-apps.md)** -- Flusso OAuth multi-tenant per app di terze parti
+- **[Webhook](./webhooks.md)** -- Invio di notifiche di eventi a sistemi esterni
+- **[Server MCP](./mcp.md)** -- Endpoint Model Context Protocol che espone l'API agli assistenti IA
+- **[Riferimento degli endpoint](./endpoints/index.md)** -- Documentazione REST completa dell'API per tutti i moduli

@@ -1,5 +1,6 @@
 ---
 title: "Programas y estudios"
+description: "Cómo se relacionan programas, estudios, lecciones y lugares en Lessons.church para hallar el currículo adecuado y pasar entre lecciones relacionadas."
 ---
 
 # Programas y estudios

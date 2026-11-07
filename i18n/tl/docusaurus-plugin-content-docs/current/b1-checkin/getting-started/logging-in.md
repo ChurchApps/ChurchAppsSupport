@@ -1,5 +1,7 @@
 ---
-title: "Pag-log In"
+title: "Pag-log In sa B1 Church Checkin"
+sidebar_label: "Pag-log In"
+description: "Mag-sign in sa B1 Church Checkin kiosk app, piliin ang simbahan, at unawain ang auto-login, admin settings, at logout sa check-in tablet."
 ---
 
 # Pag-log In
@@ -63,7 +65,7 @@ Sadyang nakatago ang mga setting ng admin para hindi aksidenteng mabago ng mga m
 2. Kung may nakatakdang kiosk PIN, ilagay ang PIN kapag hiningi.
 3. Magbubukas ang screen na **Admin Settings** na may mga sumusunod na opsyon:
    - **Change Service** -- palitan ang napiling oras ng serbisyo
-   - **Change Printer** -- buksan ang [mga setting ng printer](./printer-setup) para mag-scan at pumili ng printer
+   - **Change Printer** -- buksan ang [mga setting ng printer](./printer-setup.md) para mag-scan at pumili ng printer
    - **Set/Change PIN** -- itakda o palitan ang kiosk PIN na nagpoprotekta sa admin access
    - **Logout** -- mag-sign out at bumalik sa login screen
 
@@ -73,4 +75,4 @@ Binubura ng pag-log out ang lahat ng naka-save na kredensyal at ang pagpili ng s
 
 ## Mga Susunod na Hakbang
 
-Kapag naka-log in na, maaari mong [i-set up ang printer](./printer-setup) o direktang pumunta sa [check-in workflow](../check-in/).
+Kapag naka-log in na, maaari mong [i-set up ang printer](./printer-setup.md) o direktang pumunta sa [check-in workflow](../check-in/index.md).

@@ -1,5 +1,6 @@
 ---
 title: "Bezpečnost při odbavení"
+description: "Nastavte v B1 Admin bezpečnostní prvky pro děti: kapacitu místností, poměr dobrovolníků, seznamy důvěryhodných osob k vyzvednutí a SMS rodičům."
 ---
 
 # Bezpečnost při odbavení
@@ -15,7 +16,7 @@ B1 obsahuje sadu ochranných prvků pro děti při odbavení: limity kapacity m�
 
 - Nastavte svou [strukturu docházky](setup.md) a [odbavovací kiosky](check-in.md)
 - Místnosti jsou [skupiny](../groups/creating-groups.md) propojené s časy bohoslužeb — bezpečnostní nastavení níže se nacházejí u skupiny
-- Upozornění rodičů a nouzové hromadné vysílání vyžadují připojeného poskytovatele SMS ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream), nebo Mutual Ministry)
+- Upozornění rodičů a nouzové hromadné vysílání vyžadují připojeného poskytovatele SMS ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md), nebo Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Obě funkce odesílají textové zprávy prostřednictvím připojeného poskyto
 
 Osoby, které se odhlásily z textových zpráv, nebo které nemají v evidenci uvedené mobilní číslo, jsou automaticky přeskočeny — kiosek uvede, kolik zpráv bylo odesláno a kolik přeskočeno.
 
-Podrobný postup na straně kiosku najdete v [Odhlášení a bezpečnost dětí](../../b1-checkin/check-in/checking-out).
+Podrobný postup na straně kiosku najdete v [Odhlášení a bezpečnost dětí](../../b1-checkin/check-in/checking-out.md).
 
 ## Související články
 
 - [Odbavení](check-in.md) — nastavení kiosku a hardware
-- [Odhlášení a bezpečnost dětí](../../b1-checkin/check-in/checking-out) — odhlašování na kiosku, ověřování vyzvednutí a postupy upozorňování
+- [Odhlášení a bezpečnost dětí](../../b1-checkin/check-in/checking-out.md) — odhlašování na kiosku, ověřování vyzvednutí a postupy upozorňování
 - [Vytváření skupin](../groups/creating-groups.md) — kde se nacházejí nastavení místností
 - [Nastavení docházky](setup.md) — služby, časy bohoslužeb a přiřazení místností
 - [Minimální věk pro soukromé zprávy](../settings/mobile-app.md#member-directory--messaging-settings) — blokuje nové soukromé konverzace s dětmi, zatímco zůstávají v adresáři

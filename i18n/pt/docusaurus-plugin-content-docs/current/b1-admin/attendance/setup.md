@@ -1,5 +1,6 @@
 ---
 title: "Configuração de Presença"
+description: "Configure campi, cultos, horários e atribuições de grupos no B1 Admin para que o controle de presença e os horários de check-in funcionem em toda a igreja."
 ---
 
 # Configuração de Presença

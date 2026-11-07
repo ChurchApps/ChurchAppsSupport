@@ -1,5 +1,6 @@
 ---
 title: "Campus"
+description: "Ställ in campus i B1 Admin för att spåra vilken plats varje person och grupp tillhör, och filtrera sedan personer, närvaro och demografi efter plats."
 ---
 
 # Campus

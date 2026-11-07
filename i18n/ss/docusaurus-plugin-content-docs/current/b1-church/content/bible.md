@@ -1,5 +1,7 @@
 ---
-title: "LiBhayibheli"
+title: "Kufunda ILifa ku-B1.church"
+sidebar_label: "LiBhayibheli"
+description: "Fundza Lifa ku-B1.church Bible reader, unetilawuli tencwadi, sahluko nenguquko, nekhasi le-Bible lekufunda kwemalanga ngemalanga."
 ---
 
 # LiBhayibheli

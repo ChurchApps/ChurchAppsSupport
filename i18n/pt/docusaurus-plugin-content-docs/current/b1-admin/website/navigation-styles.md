@@ -1,5 +1,6 @@
 ---
 title: "Estilos de Navegação"
+description: "Personalize as cores das barras de navegação sólidas e transparentes do site no B1 Admin, incluindo estados de link, hover e ativo do seu site."
 ---
 
 # Estilos de Navegação

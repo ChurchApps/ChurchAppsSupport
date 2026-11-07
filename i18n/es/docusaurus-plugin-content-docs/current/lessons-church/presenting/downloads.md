@@ -1,5 +1,6 @@
 ---
 title: "Descargas y materiales"
+description: "Encuentra y descarga hojas de actividades imprimibles, guías para líderes y PDF adjuntos a lecciones, estudios o programas de Lessons.church para tu clase."
 ---
 
 # Descargas y materiales

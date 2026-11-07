@@ -1,5 +1,6 @@
 ---
 title: "Attendance Setup"
+description: "I-set up ang mga campus, serbisyo, oras ng serbisyo, at grupo sa B1 Admin para gumana ang attendance tracking at check-in sa buong simbahan."
 ---
 
 # Attendance Setup

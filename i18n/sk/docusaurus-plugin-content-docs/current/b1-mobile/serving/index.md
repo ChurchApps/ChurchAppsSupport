@@ -1,5 +1,7 @@
 ---
-title: "Slúženie"
+title: "Rozpisy služby v aplikácii B1 Mobile"
+sidebar_label: "Slúženie"
+description: "Zobrazte si svoj rozpis služby, nadchádzajúce priradenia a stav pozícií v aplikácii B1 Mobile a zistite, ako sa prihlásiť na voľné dobrovoľnícke role."
 ---
 
 # Slúženie
@@ -15,11 +17,11 @@ Sekcia **Slúženie** v aplikácii B1 Mobile vám poskytuje rýchly a jednoduch�
 - **Nadchádzajúce úlohy** -- Všetky vaše budúce termíny služby na jednom mieste, takže vždy viete, kedy budete najbližšie potrební.
 - **História služieb** -- Pozrite si služby, ktoré ste už vykonali, a sledujte svoje zapojenie v čase.
 - **Pridelené pozície** -- Každá úloha zobrazuje pozíciu, ktorá vám bola pridelená, spolu s jej aktuálnym stavom -- či je vyžiadaná, potvrdená alebo čaká na vašu odpoveď.
-- **Dobrovoľnícke príležitosti** -- Prezrite si voľné pozície a [sa prihláste sami](./volunteer-signup) na nadchádzajúce služby.
+- **Dobrovoľnícke príležitosti** -- Prezrite si voľné pozície a [sa prihláste sami](./volunteer-signup.md) na nadchádzajúce služby.
 
 ## Začíname
 
-Ak chcete zobraziť svoj rozpis služieb, klepnite na **Slúženie** v dolnej navigácii aplikácie. Na zobrazenie svojich úloh musíte byť prihlásení. Ak nie ste prihlásení, zobrazí sa vám výzva na [prihlásenie](../getting-started/logging-in).
+Ak chcete zobraziť svoj rozpis služieb, klepnite na **Slúženie** v dolnej navigácii aplikácie. Na zobrazenie svojich úloh musíte byť prihlásení. Ak nie ste prihlásení, zobrazí sa vám výzva na [prihlásenie](../getting-started/logging-in.md).
 
 :::info
 Zobrazia sa vám iba plány, na ktoré ste boli priradení. Ak nevidíte žiadne úlohy, znamená to, že ste ešte nie ste zaradení do žiadneho servisného tímu. Obráťte sa na správcu vášho kostola alebo vedúceho služby, aby ste sa mohli zapojiť.
@@ -27,5 +29,5 @@ Zobrazia sa vám iba plány, na ktoré ste boli priradení. Ak nevidíte žiadne
 
 ## Ďalšie kroky
 
-- [Zobrazenie plánov](./viewing-plans) -- Naučte sa, ako prechádzať svoje nadchádzajúce a minulé plány a zobraziť úplné podrobnosti o každom z nich
-- [Prihlásenie dobrovoľníka](./volunteer-signup) -- Prezrite si voľné pozície a prihláste sa na dobrovoľnícke príležitosti
+- [Zobrazenie plánov](./viewing-plans.md) -- Naučte sa, ako prechádzať svoje nadchádzajúce a minulé plány a zobraziť úplné podrobnosti o každom z nich
+- [Prihlásenie dobrovoľníka](./volunteer-signup.md) -- Prezrite si voľné pozície a prihláste sa na dobrovoľnícke príležitosti

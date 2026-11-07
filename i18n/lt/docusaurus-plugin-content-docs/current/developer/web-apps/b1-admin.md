@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Vietinė B1 Admin sąranka: klonuokite React/Vite valdymo skydelį, nustatykite API adresus .env faile ir paleiskite kūrimo serverį."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin yra bažnyčios administravimo valdymo skydelis – React vienpuslapio p
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite **Node.js 22+** ir **Git** – žr. [Reikalavimai](../setup/prerequisites)
-- Nustatykite API tikslą (demonstracinį arba vietinį) – žr. [Aplinkos kintamieji](../setup/environment-variables)
+- Įdiekite **Node.js 22+** ir **Git** – žr. [Reikalavimai](../setup/prerequisites.md)
+- Nustatykite API tikslą (demonstracinį arba vietinį) – žr. [Aplinkos kintamieji](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Gamybinės versijos diegiamos į **S3 + CloudFront**:
 3. Paleidžiamas CloudFront talpyklos išvalymas, kad būtų pateikta nauja versija
 
 :::tip
-Išsamias diegimo instrukcijas rasite vadove [Interneto programų diegimas](../deployment/web-apps).
+Išsamias diegimo instrukcijas rasite vadove [Interneto programų diegimas](../deployment/web-apps.md).
 :::

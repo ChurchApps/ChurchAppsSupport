@@ -1,5 +1,7 @@
 ---
-title: "Dagens vers"
+title: "Dagens vers på B1.church-webbplatsen och portalen"
+sidebar_label: "Dagens vers"
+description: "Bläddra bland dagens bibelvers bild och tidigare verser, och dela eller ladda ner dem från din B1.church-webbplats eller medlemsportal på alla skärmstorlekar."
 ---
 
 # Dagens vers

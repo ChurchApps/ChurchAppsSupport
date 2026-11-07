@@ -1,5 +1,6 @@
 ---
 title: "Klíče API"
+description: "Vytvářejte, omezujte a odvolávejte API klíče B1 v B1 Admin pro serverové skripty a konektory Zapier, Make nebo Google Sheets bez plného toku OAuth."
 ---
 
 # Klíče API
@@ -104,7 +105,7 @@ Zrušený klíč přestane fungovat okamžitě – neexistuje žádná lhůta pr
 
 ## Rozdíl oproti OAuth
 
-Klíče API se hodí, když je **vaše církev jediná, která integraci používá**. Pro konektor, který potřebuje přístup k mnoha sborům, a to vždy s výslovným souhlasem každého z nich – například aplikace SaaS sdílená v komunitě B1 – použijte raději [OAuth a propojené aplikace](./connected-apps).
+Klíče API se hodí, když je **vaše církev jediná, která integraci používá**. Pro konektor, který potřebuje přístup k mnoha sborům, a to vždy s výslovným souhlasem každého z nich – například aplikace SaaS sdílená v komunitě B1 – použijte raději [OAuth a propojené aplikace](./connected-apps.md).
 
 | | Klíč API | OAuth |
 |---|---|---|

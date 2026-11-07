@@ -1,5 +1,6 @@
 ---
 title: "Revisar su hogar"
+description: "Revisa tu hogar en B1 Checkin después de elegir a una persona, luego asigna grupos para cada horario de servicio y marca los invitados o voluntarios antes de registrar la entrada."
 ---
 
 # Revisar su hogar
@@ -13,8 +14,8 @@ Después de seleccionar a una persona de los resultados de búsqueda, la aplicac
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Seleccione un servicio](./selecting-service) en la pantalla de servicios
-- [Busque a un miembro](./looking-up-members) y selecciónelo de los resultados de búsqueda
+- [Seleccione un servicio](./selecting-service.md) en la pantalla de servicios
+- [Busque a un miembro](./looking-up-members.md) y selecciónelo de los resultados de búsqueda
 
 </div>
 
@@ -35,9 +36,9 @@ Toque la tarjeta de un miembro para expandirla. Cuando está expandida, verá un
 - Los **grupos ofrecidos** en ese horario de servicio, enumerados debajo del nombre (por ejemplo, "Guardería, Preescolar, Clase bíblica para adultos"), para que pueda ver qué clases están disponibles antes de elegir
 - Un **botón** que muestra el grupo asignado actualmente, o "Seleccionar grupo" si todavía no se ha asignado ninguno
 
-Si un horario de servicio tiene un [calendario de registro](../../b1-admin/attendance/setup#setting-a-check-in-schedule) y su ventana está cerrada en este momento, la fila muestra **Cerrado** en lugar de un botón, junto con la próxima hora de apertura cuando hay una disponible, como **Cerrado · abre dom 9:30 AM**. Si la persona ya tiene registrada su entrada en ese horario de servicio, la fila muestra su grupo con una marca de verificación (por ejemplo, **Sala infantil 1 · Registrado**), para que pueda ver dónde está aunque la ventana ya esté cerrada.
+Si un horario de servicio tiene un [calendario de registro](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) y su ventana está cerrada en este momento, la fila muestra **Cerrado** en lugar de un botón, junto con la próxima hora de apertura cuando hay una disponible, como **Cerrado · abre dom 9:30 AM**. Si la persona ya tiene registrada su entrada en ese horario de servicio, la fila muestra su grupo con una marca de verificación (por ejemplo, **Sala infantil 1 · Registrado**), para que pueda ver dónde está aunque la ventana ya esté cerrada.
 
-Toque el botón del grupo para ir a la [pantalla de selección de grupo](./group-assignment), donde puede elegir o cambiar el grupo de esa persona para ese horario de servicio.
+Toque el botón del grupo para ir a la [pantalla de selección de grupo](./group-assignment.md), donde puede elegir o cambiar el grupo de esa persona para ese horario de servicio.
 
 La tarjeta expandida también muestra las etiquetas **Miembro**, **Invitado** y **Voluntario**. Toque una para indicar cómo se registra esta persona: Miembro es la opción predeterminada. El tipo importa en las salas infantiles: los voluntarios cuentan para la proporción de voluntarios por niño de la sala, y los invitados cuentan para la capacidad de invitados que su iglesia haya establecido.
 
@@ -51,9 +52,9 @@ No es necesario asignar a cada miembro de la familia a un grupo. Los adultos que
 
 Desde la pantalla de revisión del hogar tiene tres opciones:
 
-- **Expanda a un miembro** y toque un botón de horario de servicio para [asignar o cambiar un grupo](./group-assignment).
-- **Toque el botón Agregar invitado** debajo de la lista de miembros para [agregar un invitado](./adding-guests) a su hogar.
-- **Toque el botón Registrar entrada** en la parte inferior de la pantalla para [completar el registro de entrada](./completing-checkin) de todo el hogar.
+- **Expanda a un miembro** y toque un botón de horario de servicio para [asignar o cambiar un grupo](./group-assignment.md).
+- **Toque el botón Agregar invitado** debajo de la lista de miembros para [agregar un invitado](./adding-guests.md) a su hogar.
+- **Toque el botón Registrar entrada** en la parte inferior de la pantalla para [completar el registro de entrada](./completing-checkin.md) de todo el hogar.
 
 :::info
 Las asignaciones de grupo de un registro anterior al mismo servicio se cargan automáticamente. Si sus hijos asisten a los mismos grupos cada semana, es posible que no necesite cambiar nada: solo revise y registre la entrada.
@@ -61,6 +62,6 @@ Las asignaciones de grupo de un registro anterior al mismo servicio se cargan au
 
 ## Próximos pasos
 
-- [Asigne grupos](./group-assignment) a los miembros de la familia que necesiten registrar su entrada en una clase o programa específico.
-- [Agregue un invitado](./adding-guests) si alguien visita con su familia.
-- [Complete el registro de entrada](./completing-checkin) cuando las asignaciones de todos se vean correctas.
+- [Asigne grupos](./group-assignment.md) a los miembros de la familia que necesiten registrar su entrada en una clase o programa específico.
+- [Agregue un invitado](./adding-guests.md) si alguien visita con su familia.
+- [Complete el registro de entrada](./completing-checkin.md) cuando las asignaciones de todos se vean correctas.

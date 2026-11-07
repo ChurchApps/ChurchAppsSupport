@@ -1,5 +1,7 @@
 ---
-title: "Primeiros Passos"
+title: "Primeiros Passos com o B1 Checkin"
+sidebar_label: "Primeiros Passos"
+description: "Configure o app de quiosque B1 Checkin em um tablet Android: instale, faça login, escolha sua igreja e, se quiser, conecte uma impressora de etiquetas."
 ---
 
 # Primeiros Passos com o B1 Church Checkin
@@ -27,9 +29,9 @@ Configurar o B1 Church Checkin leva apenas alguns minutos. Esta seção orienta 
 
 Ao abrir o aplicativo pela primeira vez, você passará por três etapas:
 
-1. **[Fazer login](./logging-in)** -- Insira seu e-mail e senha para se autenticar.
-2. **[Selecionar sua igreja](./logging-in)** -- Se sua conta estiver vinculada a várias igrejas, escolha qual este quiosque deve atender.
-3. **[Configurar uma impressora](./printer-setup)** -- Configure uma impressora de rede para impressão de etiquetas, ou pule esta etapa se você não precisar de etiquetas.
+1. **[Fazer login](./logging-in.md)** -- Insira seu e-mail e senha para se autenticar.
+2. **[Selecionar sua igreja](./logging-in.md)** -- Se sua conta estiver vinculada a várias igrejas, escolha qual este quiosque deve atender.
+3. **[Configurar uma impressora](./printer-setup.md)** -- Configure uma impressora de rede para impressão de etiquetas, ou pule esta etapa se você não precisar de etiquetas.
 
 Após o primeiro login, o aplicativo salva suas credenciais e a seleção da igreja. Nos próximos acessos, ele irá direto para a tela de cultos automaticamente.
 
@@ -43,6 +45,6 @@ Certifique-se de que o administrador da sua igreja configurou cultos, horários 
 
 ## Próximos Passos
 
-- [Fazer Login](./logging-in) -- Instruções detalhadas de login e seleção de igreja.
-- [Configuração da Impressora](./printer-setup) -- Como descobrir, selecionar e testar sua impressora de etiquetas.
-- [Fluxo de Check-In](../check-in/) -- Aprenda o fluxo completo de check-in depois que seu quiosque estiver configurado.
+- [Fazer Login](./logging-in.md) -- Instruções detalhadas de login e seleção de igreja.
+- [Configuração da Impressora](./printer-setup.md) -- Como descobrir, selecionar e testar sua impressora de etiquetas.
+- [Fluxo de Check-In](../check-in/index.md) -- Aprenda o fluxo completo de check-in depois que seu quiosque estiver configurado.

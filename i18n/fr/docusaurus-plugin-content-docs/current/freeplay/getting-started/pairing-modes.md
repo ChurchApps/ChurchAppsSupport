@@ -1,5 +1,6 @@
 ---
 title: "Choisir un mode de couplage"
+description: "Choisir la bonne méthode d'appairage d'une TV FreePlay : un calendrier de FreePlay Admin, un plan de service de B1 Admin, ou aucun appairage."
 ---
 
 # Choisir un mode de couplage
@@ -32,7 +33,7 @@ Saisissez le code dans **FreePlay Admin** à l'adresse [admin.freeplay.church](h
 
 **Idéal pour :** la signalétique du hall et des couloirs, les boucles d'annonces, et les salles de classe où la leçon doit déjà être diffusée lorsque les gens arrivent.
 
-Consultez **[Mode programmé](../scheduled-mode/)** pour le guide complet.
+Consultez **[Mode programmé](../scheduled-mode/index.md)** pour le guide complet.
 
 ## Mode plan (B1 Admin)
 
@@ -42,7 +43,7 @@ Saisissez le code dans **B1 Admin** lorsque vous voulez que le téléviseur suiv
 
 **Idéal pour :** les téléviseurs qui affichent du contenu lié au plan de culte hebdomadaire, lorsque quelqu'un lance la diffusion au bon moment.
 
-Consultez **[Mode plan](../plan-mode/)** pour le guide complet.
+Consultez **[Mode plan](../plan-mode/index.md)** pour le guide complet.
 
 :::tip
 Vous pouvez aussi diffuser le plan de culte en cours selon un calendrier. Dans FreePlay Admin, ajoutez une entrée au calendrier et choisissez le type de plan sous **Plans de culte**.
@@ -50,7 +51,7 @@ Vous pouvez aussi diffuser le plan de culte en cours selon un calendrier. Dans F
 
 ## Fournisseurs de contenu (sans couplage)
 
-Si vous n'avez pas besoin de coupler le téléviseur, vous pouvez parcourir directement les fournisseurs de contenu. Des fournisseurs comme [Lessons.church](../../lessons-church/) et Bible Project proposent du contenu que vous pouvez télécharger et diffuser quand vous le souhaitez.
+Si vous n'avez pas besoin de coupler le téléviseur, vous pouvez parcourir directement les fournisseurs de contenu. Des fournisseurs comme [Lessons.church](../../lessons-church/index.md) et Bible Project proposent du contenu que vous pouvez télécharger et diffuser quand vous le souhaitez.
 
 **Idéal pour :** les téléviseurs où les bénévoles choisissent chaque semaine ce qui est diffusé, ou lorsque vous voulez découvrir ce qui est disponible.
 
@@ -60,6 +61,6 @@ Vous pouvez ouvrir l'écran **Fournisseurs** à tout moment depuis **Paramètres
 
 ## Articles connexes
 
-- **[Mode programmé](../scheduled-mode/)** -- Placer les téléviseurs sur un calendrier avec FreePlay Admin
-- **[Mode plan](../plan-mode/)** -- Guide complet du couplage avec un plan de culte
-- **[Fournisseurs de contenu](../content-providers/)** -- Parcourir et télécharger du contenu depuis des sources externes
+- **[Mode programmé](../scheduled-mode/index.md)** -- Placer les téléviseurs sur un calendrier avec FreePlay Admin
+- **[Mode plan](../plan-mode/index.md)** -- Guide complet du couplage avec un plan de culte
+- **[Fournisseurs de contenu](../content-providers/index.md)** -- Parcourir et télécharger du contenu depuis des sources externes

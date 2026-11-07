@@ -1,5 +1,6 @@
 ---
 title: "Dodawanie osób"
+description: "Dodaj osobę do bazy danych kościoła w B1 Admin, uzupełnij jej dane i powiąż członków rodziny w gospodarstwa domowe do meldowania i raportów."
 ---
 
 # Dodawanie osób

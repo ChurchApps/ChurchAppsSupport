@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Referensi paket bersama @churchapps/apphelper di workspace Packages: titik masuk subpath, aplikasi yang memakai tiap ekspor, serta langkah dev lokal dan publikasi."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ Paket `@churchapps/apphelper` menyediakan komponen React dan utilitas bersama un
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Instal **Node.js** dan **Git** -- lihat [Prasyarat](../setup/prerequisites)
+- Instal **Node.js** dan **Git** -- lihat [Prasyarat](../setup/prerequisites.md)
 - Pelajari pengaturan [ruang kerja Packages](./index.md) dan alur rilisnya
 
 </div>
@@ -92,6 +93,6 @@ Jangan pernah menghapus atau mengganti nama export sebelum pengganti dipublikasi
 
 ## Artikel Terkait
 
-- **[Helpers](./helpers)** -- Paket utilitas dasar yang digunakan bersama AppHelper
-- **[Aplikasi Web](../web-apps/)** -- Aplikasi web yang menggunakan paket ini
+- **[Helpers](./helpers.md)** -- Paket utilitas dasar yang digunakan bersama AppHelper
+- **[Aplikasi Web](../web-apps/index.md)** -- Aplikasi web yang menggunakan paket ini
 - **[Ikhtisar Pustaka Bersama](./index.md)** -- Pengaturan ruang kerja, alur rilis, dan alur kerja tautan lokal

@@ -1,5 +1,7 @@
 ---
-title: "Szolgálati sorrend"
+title: "Istentiszteleti rend részletei a B1.church alkalmazásban"
+sidebar_label: "Szolgálati sorrend"
+description: "Tekintsd meg egy terv istentiszteleti rendjét a B1.church alkalmazásban: kumulatív időzítéssel, dalszövegekkel, hangnem-transzponálással és a csapatod számára szóló lecke-előnézetekkel."
 ---
 
 # Szolgálati sorrend

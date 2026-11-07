@@ -1,5 +1,7 @@
 ---
-title: "Aanmelden"
+title: "Inloggen bij B1 Church Checkin"
+sidebar_label: "Aanmelden"
+description: "Log in op de B1 Church Checkin-kioskapp, kies je kerk en begrijp automatisch inloggen, beheerinstellingen en uitloggen op de incheck-tablet."
 ---
 
 # Aanmelden
@@ -60,7 +62,7 @@ Beheerdersgegevens zijn opzettelijk verborgen zodat kerkleden die de kiosk gebru
 2. Als er een kiosk-PIN is ingesteld, voert u de PIN in wanneer hierom wordt gevraagd.
 3. Het scherm **Beheerdersgegevens** wordt geopend met de volgende opties:
    - **Dienst wijzigen** — wissel de geselecteerde diensttijd
-   - **Printer wijzigen** -- open [printerinstellingen](./printer-setup) om naar printers te scannen en er een te selecteren
+   - **Printer wijzigen** -- open [printerinstellingen](./printer-setup.md) om naar printers te scannen en er een te selecteren
    - **PIN instellen/wijzigen** -- stel of werk de kiosk-PIN in die beheerderstoegang beveiligt
    - **Afmelden** -- meld u af en keer terug naar het aanmeldingsscherm
 
@@ -70,4 +72,4 @@ Afmelden wist alle opgeslagen referenties en kerkselectie. U moet uw e-mailadres
 
 ## Volgende stappen
 
-Eenmaal aangemeld, kunt u [een printer instellen](./printer-setup) of direct naar de [aanmeldingsworkflow](../check-in/) gaan.
+Eenmaal aangemeld, kunt u [een printer instellen](./printer-setup.md) of direct naar de [aanmeldingsworkflow](../check-in/index.md) gaan.

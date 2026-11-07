@@ -1,5 +1,7 @@
 ---
-title: "Paglilingkod"
+title: "Iskedyul ng Paglilingkod sa B1 Mobile App"
+sidebar_label: "Paglilingkod"
+description: "Tingnan ang iskedyul ng paglilingkod, paparating na takda, at status ng posisyon sa B1 Mobile app, at alamin kung paano magpatala sa bakanteng tungkulin."
 ---
 
 # Paglilingkod
@@ -18,7 +20,7 @@ Ang seksyon ng **Serving** sa B1 Mobile ay nagbibigay sa iyo ng mabilis at madal
 
 ## Pagsisimula
 
-Para tingnan ang iyong schedule ng paglilingkod, i-tap ang **Serving** sa bottom navigation ng app. Kailangan mong naka-log in para ma-access ang iyong mga takdang-aralin. Kung hindi ka naka-sign in, hihilingin sa iyong [mag-log in](../getting-started/logging-in) muna.
+Para tingnan ang iyong schedule ng paglilingkod, i-tap ang **Serving** sa bottom navigation ng app. Kailangan mong naka-log in para ma-access ang iyong mga takdang-aralin. Kung hindi ka naka-sign in, hihilingin sa iyong [mag-log in](../getting-started/logging-in.md) muna.
 
 :::info
 Makikita mo lamang ang mga plano kung saan ka na-assign. Kung hindi ka nakakakita ng mga takdang-aralin, ibig sabihin ay hindi ka pa naidadagdag sa isang serving team. Makipag-ugnayan sa iyong church administrator o ministry leader para makilahok.
@@ -26,4 +28,4 @@ Makikita mo lamang ang mga plano kung saan ka na-assign. Kung hindi ka nakakakit
 
 ## Mga Susunod na Hakbang
 
-- [Pagtingin sa mga Plano](./viewing-plans) -- Alamin kung paano mag-browse ng iyong mga paparating at nakaraang plano at tingnan ang mga buong detalye ng bawat isa
+- [Pagtingin sa mga Plano](./viewing-plans.md) -- Alamin kung paano mag-browse ng iyong mga paparating at nakaraang plano at tingnan ang mga buong detalye ng bawat isa

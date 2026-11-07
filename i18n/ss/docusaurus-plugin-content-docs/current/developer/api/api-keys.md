@@ -1,5 +1,6 @@
 ---
 title: "Tikhiya te-API"
+description: "Dala, bekela imingcele, bese uvimbe tikhiye te-API ze-B1 ku-B1 Admin wetiskripthi tasesevheni nekuxhuma ne-Zapier, Make, noma Google Sheets, ngaphandle kwe-OAuth 2.0 egcwele."
 ---
 
 # Tikhiya te-API
@@ -103,7 +104,7 @@ Sikhiya lesisusiwe siyanyamalala ngekushesha — akukho sikhatsi sekulinda.
 
 ## Kwehluka Kwako ku-OAuth
 
-Tikhiya te-API tifanele nangabe **libandla lakho lodvwa lelisebentisa i-integration**. Ku-connector ledzinga kufinyelela emabandla lamanyenti, ngamunye ngemvume yakhe leyicacile — njengengcinga ye-SaSS lehlanganyelwako emphakatsini we-B1 — sebentisa [OAuth ne-Connected Apps](./connected-apps) kunaloko.
+Tikhiya te-API tifanele nangabe **libandla lakho lodvwa lelisebentisa i-integration**. Ku-connector ledzinga kufinyelela emabandla lamanyenti, ngamunye ngemvume yakhe leyicacile — njengengcinga ye-SaSS lehlanganyelwako emphakatsini we-B1 — sebentisa [OAuth ne-Connected Apps](./connected-apps.md) kunaloko.
 
 | | Sikhiya se-API | OAuth |
 |---|---|---|

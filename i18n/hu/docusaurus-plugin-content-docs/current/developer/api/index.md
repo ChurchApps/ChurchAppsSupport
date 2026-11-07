@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Ismerteti a ChurchApps API moduláris monolit felépítését, hat adatmodulját, technológiai veremét, portjait és Lambda-függvényeit, hivatkozásokkal a beállítási, adatbázis-, hitelesítési és végpontdokumentációkhoz fejlesztőknek."
 ---
 
 # API
@@ -52,8 +53,8 @@ Az AWS-re történő telepítéskor az API hat Lambda-függvényként fut:
 
 Az API két megosztott ChurchApps csomagra épül:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Alapvető segédeszközök (DateHelper, ApiHelper stb.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express szerver-segédeszközök, köztük hitelesítés, adatbázis-segédfüggvények és AWS-integrációk
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Alapvető segédeszközök (DateHelper, ApiHelper stb.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express szerver-segédeszközök, köztük hitelesítés, adatbázis-segédfüggvények és AWS-integrációk
 
 :::info
 Az API ES modulokat használ (`"type": "module"` a `package.json` fájlban). Győződj meg róla, hogy az importok ES modul szintaxist használnak.
@@ -61,11 +62,11 @@ Az API ES modulokat használ (`"type": "module"` a `package.json` fájlban). Gy�
 
 ## Ebben a szakaszban
 
-- **[Helyi telepítés](./local-setup)** -- Az API klónozása, konfigurálása és helyi futtatása
-- **[Adatbázis](./database)** -- Adatbázisonkénti modulfelépítés, sémaszkriptek és adathozzáférési minták
-- **[Modulstruktúra](./module-structure)** -- Vezérlők, repozitóriumok, modellek és hitelesítés
-- **[API-kulcsok](./api-keys)** -- Személyes hozzáférési tokenek szkriptekhez és csatlakozókhoz
-- **[Csatlakoztatott alkalmazások (OAuth)](./connected-apps)** -- Többbérlős OAuth-folyamat harmadik féltől származó alkalmazásokhoz
-- **[Webhookok](./webhooks)** -- Eseményértesítések küldése külső rendszerekbe
-- **[MCP-szerver](./mcp)** -- Model Context Protocol végpont, amely az API-t MI-asszisztensek számára teszi elérhetővé
-- **[Végpontok referenciája](./endpoints/)** -- Teljes REST API-dokumentáció minden modulhoz
+- **[Helyi telepítés](./local-setup.md)** -- Az API klónozása, konfigurálása és helyi futtatása
+- **[Adatbázis](./database.md)** -- Adatbázisonkénti modulfelépítés, sémaszkriptek és adathozzáférési minták
+- **[Modulstruktúra](./module-structure.md)** -- Vezérlők, repozitóriumok, modellek és hitelesítés
+- **[API-kulcsok](./api-keys.md)** -- Személyes hozzáférési tokenek szkriptekhez és csatlakozókhoz
+- **[Csatlakoztatott alkalmazások (OAuth)](./connected-apps.md)** -- Többbérlős OAuth-folyamat harmadik féltől származó alkalmazásokhoz
+- **[Webhookok](./webhooks.md)** -- Eseményértesítések küldése külső rendszerekbe
+- **[MCP-szerver](./mcp.md)** -- Model Context Protocol végpont, amely az API-t MI-asszisztensek számára teszi elérhetővé
+- **[Végpontok referenciája](./endpoints/index.md)** -- Teljes REST API-dokumentáció minden modulhoz

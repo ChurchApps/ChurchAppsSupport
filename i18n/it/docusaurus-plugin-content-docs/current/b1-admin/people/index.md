@@ -1,5 +1,6 @@
 ---
 title: "Persone"
+description: "Cerca, aggiungi e modifica i membri nella sezione Persone di B1 Admin: nuclei familiari, aggiornamenti in blocco, stampa ed esportazione della directory."
 ---
 
 # Persone

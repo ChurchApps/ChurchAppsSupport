@@ -1,5 +1,6 @@
 ---
 title: "API 密钥"
+description: "在 B1 Admin 中创建、设定范围和撤销 B1 API 密钥，用于服务器脚本以及 Zapier、Make 或 Google Sheets 连接器，无需完整的 OAuth 流程。"
 ---
 
 # API 密钥
@@ -104,7 +105,7 @@ curl https://api.churchapps.org/membership/people \
 
 ## 与 OAuth 的区别
 
-当**您的教会是唯一使用该集成的教会**时，API 密钥是合适的选择。对于需要在每个教会明确同意的情况下访问多个教会数据的连接器——例如在 B1 社区中共享的 SaaS 应用——请改用 [OAuth 与已连接应用](./connected-apps)。
+当**您的教会是唯一使用该集成的教会**时，API 密钥是合适的选择。对于需要在每个教会明确同意的情况下访问多个教会数据的连接器——例如在 B1 社区中共享的 SaaS 应用——请改用 [OAuth 与已连接应用](./connected-apps.md)。
 
 | | API 密钥 | OAuth |
 |---|---|---|

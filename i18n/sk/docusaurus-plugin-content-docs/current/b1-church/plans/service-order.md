@@ -1,5 +1,7 @@
 ---
-title: "Poradie služby"
+title: "Podrobnosti poradia bohoslužby v aplikácii B1.church"
+sidebar_label: "Poradie služby"
+description: "Pozrite si poradie bohoslužby v aplikácii B1.church s kumulatívnym časovaním, textami piesní, transpozíciou tónín a ukážkami lekcií pre váš tím."
 ---
 
 # Poradie služby

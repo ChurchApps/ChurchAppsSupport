@@ -1,5 +1,6 @@
 ---
 title: "Eget domene"
+description: "Pek ditt eget domene, for eksempel www.dinmenighet.no, mot B1-nettstedet ditt i B1 Admin ved å sette opp DNS-poster og legge til domenet i Innstillinger."
 ---
 
 # Eget domene

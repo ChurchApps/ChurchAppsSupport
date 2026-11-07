@@ -1,5 +1,6 @@
 ---
 title: "Ilmoitukset"
+description: "Ota käyttöön B1 Mobile -sovelluksen push-hälytykset ja tarkastele, avaa ja tyhjennä seurakuntasi ilmoitukset viesteistä, ryhmistä ja palvelemisesta."
 ---
 
 # Ilmoitukset
@@ -13,7 +14,7 @@ B1 Mobile käyttää push-ilmoituksia, jotta pysyt ajan tasalla siitä, mitä se
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Salli ilmoitukset B1 Mobilelle laitteesi asetuksissa
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile käyttää push-ilmoituksia, jotta pysyt ajan tasalla siitä, mitä se
 
 Ilmoitukset voivat koskea useita eri toimintoja, muun muassa:
 
-- **Viestit** -- Kun joku lähettää sinulle [yksityisviestin](./messaging).
-- **Ryhmätoiminta** -- Päivitykset, julkaisut ja keskustelut [ryhmistä](../groups/), joihin kuulut.
+- **Viestit** -- Kun joku lähettää sinulle [yksityisviestin](./messaging.md).
+- **Ryhmätoiminta** -- Päivitykset, julkaisut ja keskustelut [ryhmistä](../groups/index.md), joihin kuulut.
 - **Palvelutehtävät** -- Kun sinut lisätään [suunnitelmaan](../serving/viewing-plans.md) tai tehtäväsi tila muuttuu.
 - **Muut päivitykset** -- Yleiset tiedotteet ja sinua koskeva toiminta.
 

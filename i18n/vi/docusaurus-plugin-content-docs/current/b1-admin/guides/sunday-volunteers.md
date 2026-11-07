@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Quản lý tình nguyện viên Chủ nhật"
+description: "Thiết lập đội tình nguyện, kế hoạch phục vụ và công việc Chúa nhật trong B1 Admin để tình nguyện viên xem và phản hồi trên B1.church và ứng dụng di động."
 ---
 
 # Quản lý tình nguyện viên Chủ nhật
@@ -95,7 +96,7 @@ Cho phép tình nguyện viên tự đăng ký vào các vị trí thay vì ch�
 3. Với mỗi vị trí, chọn ô **Cho phép tự đăng ký** để vị trí đó sẵn sàng cho việc tự phục vụ.
 4. Thêm **Mô tả** cho từng vị trí để tình nguyện viên biết vai trò đó bao gồm những gì.
 
-Sau khi tạo các vị trí tự đăng ký, chúng sẽ tự động xuất hiện trên các trang đăng ký tình nguyện viên tại [B1.church](../../b1-church/serving/volunteer-signup) và [ứng dụng di động B1](../../b1-mobile/serving/volunteer-signup). Thành viên có thể xem các vị trí còn trống, biết còn bao nhiêu chỗ và đăng ký chỉ với một lần nhấn.
+Sau khi tạo các vị trí tự đăng ký, chúng sẽ tự động xuất hiện trên các trang đăng ký tình nguyện viên tại [B1.church](../../b1-church/serving/volunteer-signup.md) và [ứng dụng di động B1](../../b1-mobile/serving/volunteer-signup.md). Thành viên có thể xem các vị trí còn trống, biết còn bao nhiêu chỗ và đăng ký chỉ với một lần nhấn.
 
 :::tip
 Kết hợp các vị trí do quản trị viên phân công và các vị trí tự đăng ký trong cùng một kế hoạch. Ví dụ, phân công trực tiếp người dẫn dắt ngợi khen nhưng để nhóm đón tiếp và nhóm phục vụ cà phê tự chọn vị trí.
@@ -109,7 +110,7 @@ Tình nguyện viên được phân công sẽ tự động thấy kế hoạch 
 2. Họ có thể chấp nhận hoặc từ chối phân công trực tiếp từ một trong hai nền tảng
 3. Họ có thể đặt ngày bận cho những tuần không tham gia được
 4. Kế hoạch có thể in ra để tập dượt hoặc dán sau sân khấu
-5. Tình nguyện viên có thể xem và đăng ký các vị trí còn trống qua [trang đăng ký tình nguyện viên](../../b1-church/serving/volunteer-signup)
+5. Tình nguyện viên có thể xem và đăng ký các vị trí còn trống qua [trang đăng ký tình nguyện viên](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Thông báo đẩy trên ứng dụng di động sẽ cảnh báo tình nguyện viên khi họ nhận được phân công mới hoặc khi kế hoạch thay đổi.
@@ -130,5 +131,5 @@ Hệ thống quản lý tình nguyện viên của bạn đã được thiết l
 - [Quy trình tự động](../serving/workflows.md) — đưa người qua các quy trình lặp lại bằng trình kích hoạt và các bước tự động
 - [Xem kế hoạch (Web)](../../b1-church/plans/viewing-plans.md) — cách tình nguyện viên xem kế hoạch trực tuyến
 - [Xem kế hoạch (Di động)](../../b1-mobile/serving/viewing-plans.md) — cách tình nguyện viên xem kế hoạch trên điện thoại
-- [Đăng ký tình nguyện viên (Web)](../../b1-church/serving/volunteer-signup) — cách thành viên tự chọn vị trí tình nguyện
-- [Đăng ký tình nguyện viên (Di động)](../../b1-mobile/serving/volunteer-signup) — tự đăng ký tình nguyện trên điện thoại
+- [Đăng ký tình nguyện viên (Web)](../../b1-church/serving/volunteer-signup.md) — cách thành viên tự chọn vị trí tình nguyện
+- [Đăng ký tình nguyện viên (Di động)](../../b1-mobile/serving/volunteer-signup.md) — tự đăng ký tình nguyện trên điện thoại

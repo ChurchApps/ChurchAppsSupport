@@ -1,5 +1,6 @@
 ---
 title: "Výber služby"
+description: "Vyberte bohoslužbu, ktorej sa zúčastňujete, na obrazovke služieb v B1 Checkin. Určuje to časy bohoslužieb a skupiny zobrazené v ďalšom priebehu prihlásenia."
 ---
 
 # Výber služby
@@ -13,7 +14,7 @@ Prvým krokom každého odbavenia je výber služby, na ktorú prichádzate. Obr
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- [Prihláste sa](../getting-started/logging-in) do aplikácie B1 Church Checkin a vyberte svoj kostol
+- [Prihláste sa](../getting-started/logging-in.md) do aplikácie B1 Church Checkin a vyberte svoj kostol
 - Uistite sa, že váš správca kostola [nakonfiguroval služby a časy služieb](../../b1-admin/attendance/setup.md) v B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Prvým krokom každého odbavenia je výber služby, na ktorú prichádzate. Obr
 2. Uvidíte zoznam všetkých služieb, ktoré boli nakonfigurované pre váš kostol. Každá služba sa zobrazí ako karta s názvom služby (napríklad „Nedeľné ráno“ alebo „Streda večer“).
 3. Ťuknite na službu, na ktorú prichádzate.
 
-Aplikácia načíta časy služieb a skupiny priradené k tejto službe a potom vás presmeruje na [obrazovku vyhľadávania členov](./looking-up-members).
+Aplikácia načíta časy služieb a skupiny priradené k tejto službe a potom vás presmeruje na [obrazovku vyhľadávania členov](./looking-up-members.md).
 
 ## Keď odbavovanie nie je otvorené
 
-Ak váš správca priradil času služby [harmonogram odbavovania](../../b1-admin/attendance/setup#setting-a-check-in-schedule), aplikácia umožní rodinám vybrať tento čas služby iba vtedy, keď je jeho okno odbavovania otvorené. Časy služieb, ktorých okno je práve zatvorené, sa stále zobrazia na [obrazovke domácnosti](./household-review), ale budú označené **Zatvorené** (napríklad **Zatvorené · otvorí sa ne 9:30**) namiesto tlačidla skupiny.
+Ak váš správca priradil času služby [harmonogram odbavovania](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), aplikácia umožní rodinám vybrať tento čas služby iba vtedy, keď je jeho okno odbavovania otvorené. Časy služieb, ktorých okno je práve zatvorené, sa stále zobrazia na [obrazovke domácnosti](./household-review.md), ale budú označené **Zatvorené** (napríklad **Zatvorené · otvorí sa ne 9:30**) namiesto tlačidla skupiny.
 
 Ak sú všetky časy služby, ktorú ste vybrali, zatvorené, aplikácia vám oznámi, kedy sa odbavovanie otvorí – napríklad **„Odbavovanie pre túto službu sa otvorí ne 9:30.“** (Ak nie je možné zobraziť čas otvorenia, zobrazí sa **„Odbavovanie pre túto službu momentálne nie je otvorené.“**) Ťuknutím na **Späť** sa vrátite na zoznam služieb a vyberiete inú službu, alebo počkáte, kým sa okno otvorí, a skúsite znova.
 
@@ -56,4 +57,4 @@ Ak má váš kostol nakonfigurovanú iba jednu službu, aj tak ju musíte ťuknu
 
 ## Ďalší krok
 
-Po výbere služby [vyhľadáte svoju rodinu](./looking-up-members) podľa telefónneho čísla alebo mena.
+Po výbere služby [vyhľadáte svoju rodinu](./looking-up-members.md) podľa telefónneho čísla alebo mena.

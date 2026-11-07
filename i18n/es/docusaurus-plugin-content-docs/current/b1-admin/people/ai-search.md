@@ -1,5 +1,6 @@
 ---
 title: "Búsqueda con IA"
+description: "Busca en el directorio de personas de B1 Admin con preguntas en lenguaje natural, como qué miembros no han asistido en tres meses, sin crear filtros."
 ---
 
 # Búsqueda con IA

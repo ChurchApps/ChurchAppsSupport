@@ -1,5 +1,7 @@
 ---
-title: "Log ind"
+title: "Log ind på B1.church og medlemsportalen"
+sidebar_label: "Log ind"
+description: "Log ind i din B1.church medlemsportal, brug tofaktorkoder eller single sign-on, nulstil en glemt adgangskode og log ud fra din kontomenu."
 ---
 
 # Log ind
@@ -13,7 +15,7 @@ Log ind til B1.church giver dig adgang til medlemsportalen, hvor du kan se din t
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Du har brug for en ChurchApps-konto. Se [Kom i gang](../getting-started/) for at oprette en.
+- Du har brug for en ChurchApps-konto. Se [Kom i gang](./index.md) for at oprette en.
 - Du har brug for dit kirkes B1.church URL (for eksempel, `https://yourchurchname.b1.church`).
 
 </div>
@@ -29,7 +31,7 @@ Efter at være logget ind bliver du taget tilbage til siden, du var på før du 
 
 ## Få adgang til medlemsportalen
 
-Når du er logget ind, kan du få adgang til medlemsportalen ved at klikke på dit **navn** i det øverste højre hjørne af siden og vælge **Medlemsportal** fra menuen. Medlemsportalen er hvor alle dine personlige kirkværktøjer lever, herunder din [tidslinje](../community/timeline.md), [grupper](../groups/), [giving](../giving/) og meget mere.
+Når du er logget ind, kan du få adgang til medlemsportalen ved at klikke på dit **navn** i det øverste højre hjørne af siden og vælge **Medlemsportal** fra menuen. Medlemsportalen er hvor alle dine personlige kirkværktøjer lever, herunder din [tidslinje](../community/timeline.md), [grupper](../groups/index.md), [giving](../giving/index.md) og meget mere.
 
 ## Din brugermenu
 

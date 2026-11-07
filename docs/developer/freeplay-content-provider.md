@@ -1,5 +1,6 @@
 ---
 title: "FreePlay Content Provider"
+description: "What a content provider must supply to connect a lesson library to FreePlay: logo, sign-in model, catalog and playlist endpoints, and media formats."
 ---
 
 # FreePlay Content Provider

@@ -1,5 +1,6 @@
 ---
 title: "Estatísticas"
+description: "Veja downloads por estudo, quais igrejas usam seus recursos e a localização delas no mapa, com filtro de datas nas estatísticas do Lessons.church."
 ---
 
 # Estatísticas

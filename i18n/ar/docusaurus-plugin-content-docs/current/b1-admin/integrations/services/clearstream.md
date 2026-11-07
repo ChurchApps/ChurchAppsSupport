@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "اربط Clearstream SMS بـ B1 Admin عبر Zapier: أرسل رسائل نصية عند الهدايا الجديدة أو إرسال النماذج، واسترجع الردود الواردة كأشخاص."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ title: "Clearstream"
 
 ## انظر أيضًا
 
-- [Text In Church](./text-in-church): منصة رسائل نصية بديلة، بهيكل ربط مشابه
-- [Mobile Message](./mobile-message): للكنائس خارج الولايات المتحدة
-- [Zapier (overview)](../zapier): الجانب الخاص بـ B1 من كل وصفات Zapier
+- [Text In Church](./text-in-church.md): منصة رسائل نصية بديلة، بهيكل ربط مشابه
+- [Mobile Message](./mobile-message.md): للكنائس خارج الولايات المتحدة
+- [Zapier (overview)](../zapier.md): الجانب الخاص بـ B1 من كل وصفات Zapier
 - [Clearstream API docs](https://api-docs.clearstream.io/): للتكاملات المخصصة التي تتجاوز تطبيق Zapier

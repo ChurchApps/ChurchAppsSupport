@@ -1,5 +1,6 @@
 ---
 title: "Groepsleden"
+description: "Voeg groepsleden toe of verwijder ze en wijs leiders aan in B1 Admin, en mail, sms't, print of exporteer de ledenlijst vanaf de groepspagina."
 ---
 
 # Groepsleden

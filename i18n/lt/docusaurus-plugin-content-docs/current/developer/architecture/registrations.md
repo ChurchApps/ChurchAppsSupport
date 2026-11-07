@@ -1,12 +1,13 @@
 ---
 title: "Renginių registracijos"
+description: "Renginių registracijos B1 Admin ir B1App: dalyvių tipai, mokami priedai, nuolaidų kodai, mokėjimai per aukų tarpininką ir laukiančiųjų sąrašas."
 ---
 
 # Renginių registracijos
 
 <div class="article-intro">
 
-Vietinė renginių registracija gyvena turinio modulyje ir nuo mokamų registracijų etapo turi visą komercinį modelį: įkainotus dalyvių tipus, įkainotus papildomus pasirinkimus, nuolaidų kodus, mokėjimus per esamą bažnyčios aukojimo šliuzą ir būsenomis valdomą laukiamojo sąrašą. Mokėjimo kelias tyčia pakartoja aukojimo sistemą: registracijos valdiklis mokėjimus apdoroja per tą pačią `GatewayService` / `IGatewayProvider` abstrakciją, aprašytą [Aukojimas](./giving) puslapyje, todėl turinio modulyje nėra jokių kortelių duomenų ar šliuzo SDK žinių. Šiame puslapyje aprašomas duomenų modelis, kainodaros ir talpos taisyklės bei registracijos, mokėjimo ir laukiamojo sąrašo eigos.
+Vietinė renginių registracija gyvena turinio modulyje ir nuo mokamų registracijų etapo turi visą komercinį modelį: įkainotus dalyvių tipus, įkainotus papildomus pasirinkimus, nuolaidų kodus, mokėjimus per esamą bažnyčios aukojimo šliuzą ir būsenomis valdomą laukiamojo sąrašą. Mokėjimo kelias tyčia pakartoja aukojimo sistemą: registracijos valdiklis mokėjimus apdoroja per tą pačią `GatewayService` / `IGatewayProvider` abstrakciją, aprašytą [Aukojimas](./giving.md) puslapyje, todėl turinio modulyje nėra jokių kortelių duomenų ar šliuzo SDK žinių. Šiame puslapyje aprašomas duomenų modelis, kainodaros ir talpos taisyklės bei registracijos, mokėjimo ir laukiamojo sąrašo eigos.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenizavimas vyksta naršyklėje tiksliai taip pat kaip aukojimams (žr. [Aukojimas](./giving)): vedlys naudoja apphelper mokėjimo teikėjų registrą, todėl prisijungę nariai gali mokėti išsaugotomis kortelėmis, o svečiai tokenizuoja naują kortelę. Valdiklis atkartoja `DonateController` teikėjų ypatumus (Kingdom Funding `pm-{id}` mokėjimo metodų ID, Stripe SCA `requires_action` atsakymus, kurie grąžinami klientui be mokėjimo įrašymo). Sėkmingas mokėjimas įrašo `registrationPayments` eilutę, padidina `amountPaid` ir patvirtina registraciją. **Grąžinimai neįgyvendinti:** atšaukta apmokėta registracija išlaiko savo mokėjimų įrašus, o bet koks grąžinimas tvarkomas atskirai šliuzo valdymo skydelyje.
+Tokenizavimas vyksta naršyklėje tiksliai taip pat kaip aukojimams (žr. [Aukojimas](./giving.md)): vedlys naudoja apphelper mokėjimo teikėjų registrą, todėl prisijungę nariai gali mokėti išsaugotomis kortelėmis, o svečiai tokenizuoja naują kortelę. Valdiklis atkartoja `DonateController` teikėjų ypatumus (Kingdom Funding `pm-{id}` mokėjimo metodų ID, Stripe SCA `requires_action` atsakymus, kurie grąžinami klientui be mokėjimo įrašymo). Sėkmingas mokėjimas įrašo `registrationPayments` eilutę, padidina `amountPaid` ir patvirtina registraciją. **Grąžinimai neįgyvendinti:** atšaukta apmokėta registracija išlaiko savo mokėjimų įrašus, o bet koks grąžinimas tvarkomas atskirai šliuzo valdymo skydelyje.
 
 Abu įėjimo taškai eina tuo pačiu kodo keliu: `register` (mokėjimas registruojantis) ir `pay` (likučio mokėjimas / laukiamojo sąrašo užbaigimas).
 
@@ -147,7 +148,7 @@ Tarpmodulinės užklausos (svečio asmens paieška ar sukūrimas, bažnyčios į
 
 ## Susiję puslapiai
 
-- [Aukojimas](./giving): šliuzo abstrakcija, teikėjų registras ir tokenizavimo modelis, kuriuos naudoja ši funkcija
-- [Turinio galutiniai taškai](../api/endpoints/content): turinio modulio REST sąsaja
-- [Webhook](../api/webhooks): įvykis `registration.created`
-- [Modulio struktūra](../api/module-structure): kaip turinio modulis organizuotas serverio pusėje
+- [Aukojimas](./giving.md): šliuzo abstrakcija, teikėjų registras ir tokenizavimo modelis, kuriuos naudoja ši funkcija
+- [Turinio galutiniai taškai](../api/endpoints/content.md): turinio modulio REST sąsaja
+- [Webhook](../api/webhooks.md): įvykis `registration.created`
+- [Modulio struktūra](../api/module-structure.md): kaip turinio modulis organizuotas serverio pusėje

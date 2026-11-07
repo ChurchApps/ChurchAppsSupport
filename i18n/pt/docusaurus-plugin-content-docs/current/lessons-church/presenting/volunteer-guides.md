@@ -1,5 +1,6 @@
 ---
 title: "Guias do Voluntário"
+description: "Configure guias específicos por função no Lessons.church para que cada voluntário veja apenas seus próprios passos, e imprima ou compartilhe antes da aula."
 ---
 
 # Guias do Voluntário

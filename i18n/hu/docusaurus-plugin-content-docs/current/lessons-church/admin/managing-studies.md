@@ -1,5 +1,6 @@
 ---
 title: "Tanulmányok kezelése"
+description: "Tanulmányok létrehozása, szerkesztése és kategorizálása a Lessons.church adminban, sorozatáttekintők és hírlevélsablonok csatolásával."
 ---
 
 # Tanulmányok kezelése

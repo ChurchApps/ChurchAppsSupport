@@ -1,5 +1,6 @@
 ---
 title: "Playlisten"
+description: "Predigten in B1 Admin zu Reihen gruppieren, damit Besucher auf der B1.church-Website jede Predigtreihe der Reihe nach ansehen können."
 ---
 
 # Playlisten
@@ -39,10 +40,10 @@ Erstellen Sie Ihre Playlisten zuerst, bevor Sie Predigten hinzufügen. Auf diese
 
 ## Predigten zu einer Playlist hinzufügen
 
-Wenn Sie [eine Predigt hinzufügen oder bearbeiten](managing-sermons), weisen Sie sie mithilfe des Dropdowns **Playlist** einer Playlist zu. Alle Predigten, die derselben Playlist zugeordnet sind, werden zusammen gruppiert und in Reihenfolge auf Ihrer Website angezeigt.
+Wenn Sie [eine Predigt hinzufügen oder bearbeiten](./managing-sermons.md), weisen Sie sie mithilfe des Dropdowns **Playlist** einer Playlist zu. Alle Predigten, die derselben Playlist zugeordnet sind, werden zusammen gruppiert und in Reihenfolge auf Ihrer Website angezeigt.
 
 :::info
-Sie können Predigten auch während des [Massenimports](bulk-import) Playlisten zuweisen. Wählen Sie beim Importieren von YouTube oder Vimeo eine Playlist aus dem Dropdown **In Playlist importieren**, bevor Sie auf **Importieren** klicken.
+Sie können Predigten auch während des [Massenimports](./bulk-import.md) Playlisten zuweisen. Wählen Sie beim Importieren von YouTube oder Vimeo eine Playlist aus dem Dropdown **In Playlist importieren**, bevor Sie auf **Importieren** klicken.
 :::
 
 ## Wie Playlisten auf Ihrer Website erscheinen
@@ -55,5 +56,5 @@ Playlisten werden auf Ihrer B1.church-Website als durchsuchbare Sammlungen angez
 
 ## Nächste Schritte
 
-- [Predigten verwalten](managing-sermons) -- Fügen Sie einzelne Predigten zu Ihren Playlisten hinzu
-- [Massenimport](bulk-import) -- Importieren Sie mehrere Predigten und weisen Sie sie Playlisten zu
+- [Predigten verwalten](./managing-sermons.md) -- Fügen Sie einzelne Predigten zu Ihren Playlisten hinzu
+- [Massenimport](./bulk-import.md) -- Importieren Sie mehrere Predigten und weisen Sie sie Playlisten zu

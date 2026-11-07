@@ -1,5 +1,6 @@
 ---
 title: "Pesquisa AI"
+description: "Pesquise o diretório de pessoas do B1 Admin com perguntas em linguagem natural, como quais membros não frequentam há três meses, sem montar filtros."
 ---
 
 # Pesquisa AI

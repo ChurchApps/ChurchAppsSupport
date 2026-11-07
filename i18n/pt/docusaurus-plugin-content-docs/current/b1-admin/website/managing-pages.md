@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Páginas"
+description: "Crie, edite e organize páginas e a navegação na visualização Pages do B1 Admin, incluindo configurações de página, redirecionamentos e modelos de site."
 ---
 
 # Gerenciando Páginas
@@ -13,13 +14,13 @@ A visualização Website Pages é seu hub central para criar, editar e organizar
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Complete a [Configuração Inicial](initial-setup) para configurar seu domínio e configurações básicas do site
-- Tenha seu conteúdo e imagens prontos. Use o gerenciador [Files](files) para enviar ativos de mídia primeiro.
+- Complete a [Configuração Inicial](./initial-setup.md) para configurar seu domínio e configurações básicas do site
+- Tenha seu conteúdo e imagens prontos. Use o gerenciador [Files](./files.md) para enviar ativos de mídia primeiro.
 
 </div>
 
 :::info
-Se sua igreja tem mais de um site (por exemplo, sites separados por campus), use o alternador de site no topo da visualização Website Pages para pular entre eles. Cada site tem suas próprias páginas, navegação e configurações de [appearance](appearance).
+Se sua igreja tem mais de um site (por exemplo, sites separados por campus), use o alternador de site no topo da visualização Website Pages para pular entre eles. Cada site tem suas próprias páginas, navegação e configurações de [appearance](./appearance.md).
 :::
 
 ## Compreendendo Tipos de Página
@@ -35,7 +36,7 @@ Você pode converter qualquer página gerada automaticamente em uma página pers
 
 1. Clique no botão **Add Page** no canto superior direito da visualização Website Pages.
 2. Escolha um tipo de página (em branco ou um modelo) e nomeie.
-3. Clique em **Edit Content** ao lado de qualquer página para abrir o [editor de página](page-editor), onde você pode adicionar seções, texto, imagens e outros elementos.
+3. Clique em **Edit Content** ao lado de qualquer página para abrir o [editor de página](./page-editor.md), onde você pode adicionar seções, texto, imagens e outros elementos.
 4. Clique em **Page Settings** ao lado de uma página para atualizar o título, caminho de URL e outros metadados.
 5. Clique no caminho de uma página na coluna **Path** para abrir a página ao vivo em uma nova aba e ver exatamente como ela se parecerá para os visitantes.
 
@@ -113,10 +114,10 @@ Se você está construindo seu site do zero, você pode iniciá-lo usando um **S
 3. Quando encontrar um que gosta, clique em **Apply Template**.
 4. Páginas que não existem já são criadas e adicionadas à sua navegação. Páginas existentes são deixadas como estão.
 
-Após aplicar um modelo, abra cada página no [editor de página](page-editor) para substituir o texto e imagens de espaço reservado com o conteúdo real da sua igreja.
+Após aplicar um modelo, abra cada página no [editor de página](./page-editor.md) para substituir o texto e imagens de espaço reservado com o conteúdo real da sua igreja.
 
 :::info
-Modelos de site criam estrutura de página e navegação. Eles não substituem seu esquema de cores ou fontes do site -- esses são controlados por [Appearance](appearance).
+Modelos de site criam estrutura de página e navegação. Eles não substituem seu esquema de cores ou fontes do site -- esses são controlados por [Appearance](./appearance.md).
 :::
 
 ## Caixa de Luz de Imagem
@@ -125,7 +126,7 @@ Quando visitantes clicam em uma imagem no seu site, ela abre em uma sobreposiç�
 
 ## Próximas Etapas
 
-- [Initial Setup](initial-setup) -- Instruções de configuração pela primeira vez
-- [Using the Page Editor](page-editor) -- Aprenda como construir e estilizar conteúdo de página
-- [Appearance](appearance) -- Personalize o tema visual do seu site
-- [Files](files) -- Envie e gerencie ativos de mídia para suas páginas
+- [Initial Setup](./initial-setup.md) -- Instruções de configuração pela primeira vez
+- [Using the Page Editor](./page-editor.md) -- Aprenda como construir e estilizar conteúdo de página
+- [Appearance](./appearance.md) -- Personalize o tema visual do seu site
+- [Files](./files.md) -- Envie e gerencie ativos de mídia para suas páginas

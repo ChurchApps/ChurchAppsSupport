@@ -1,5 +1,6 @@
 ---
 title: "Klasseværelser"
+description: "Opsæt og administrér de klasseværelser, der organiserer din kirkes undervisningsplan i Lessons.church, fra lokaler og aldersgrupper til visninger for frivillige."
 ---
 
 # Klasseværelser

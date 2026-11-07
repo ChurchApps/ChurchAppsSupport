@@ -1,5 +1,6 @@
 ---
 title: "Caddy pasirinktinių domenų tarpinis serveris"
+description: "Caddy atvirkštinis tarpinis serveris B1.church pasirinktiniams domenams: TLS sertifikatai, pagrindinių kompiuterių susiejimas ir žinomos problemos."
 ---
 
 # Caddy pasirinktinių domenų tarpinis serveris
@@ -10,7 +11,7 @@ Pasirinktiniai bažnyčių domenai (`mychurch.org` → bažnyčios B1 svetainė)
 
 </div>
 
-Apie tai, kaip užklausa, pasiekusi B1App, nustatoma į bažnyčią ir svetainę, skaitykite [Svetainių maršrutizavimas ir kelios svetainės](../architecture/websites).
+Apie tai, kaip užklausa, pasiekusi B1App, nustatoma į bažnyčią ir svetainę, skaitykite [Svetainių maršrutizavimas ir kelios svetainės](../architecture/websites.md).
 
 ## Komponentai
 
@@ -88,5 +89,5 @@ Administravimo API įrištas tik prie `localhost:2019`. Senasis veikimo laiko re
 
 ## Susiję puslapiai
 
-- [Svetainių maršrutizavimas ir kelios svetainės](../architecture/websites) – kaip tarpinio serverio užklausa B1App nustatoma į bažnyčią ir svetainę
-- [API diegimas](./apis) – Membership API, kuris teikia `authorize`/`hostmap`, diegimas
+- [Svetainių maršrutizavimas ir kelios svetainės](../architecture/websites.md) – kaip tarpinio serverio užklausa B1App nustatoma į bažnyčią ir svetainę
+- [API diegimas](./apis.md) – Membership API, kuris teikia `authorize`/`hostmap`, diegimas

@@ -1,5 +1,6 @@
 ---
 title: "Skupine darov"
+description: "Razvrstite darove v serije v B1 Admin, nato vsako zaprite, natisnite ali izvozite, da se vsote ujemajo z bančnimi nakazili."
 ---
 
 # Skupine darov

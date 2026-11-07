@@ -1,5 +1,7 @@
 ---
-title: "Začetna nastavitev"
+title: "Začetna nastavitev cerkve v B1 Admin"
+sidebar_label: "Začetna nastavitev"
+description: "Vodič po prvi nastavitvi nove cerkve v B1 Admin: podatki, blagovna znamka, vloge in priporočen vrstni red za osebe, skupine, prisotnost in darovanja."
 ---
 
 # Začetna nastavitev

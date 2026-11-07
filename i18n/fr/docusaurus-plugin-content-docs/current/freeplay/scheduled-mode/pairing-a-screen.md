@@ -1,5 +1,6 @@
 ---
 title: "Associer un écran"
+description: "Appairer une TV FreePlay à un calendrier de groupe dans FreePlay Admin avec le code à quatre lettres de la TV, pour une lecture programmée autonome."
 ---
 
 # Associer un écran
@@ -13,9 +14,9 @@ Pour placer un téléviseur sur un calendrier, associez-le à **FreePlay Admin**
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez et lancez FreePlay sur le téléviseur. Voir [Pour commencer](../getting-started/)
+- Installez et lancez FreePlay sur le téléviseur. Voir [Pour commencer](../getting-started/index.md)
 - Ayez un compte ChurchApps pour votre église afin de vous connecter à FreePlay Admin
-- Facultativement, [créez une liste de lecture](./building-playlists) et [planifiez-la](./scheduling-the-calendar) d'abord, afin que le téléviseur ait quelque chose à lire immédiatement
+- Facultativement, [créez une liste de lecture](./building-playlists.md) et [planifiez-la](./scheduling-the-calendar.md) d'abord, afin que le téléviseur ait quelque chose à lire immédiatement
 
 </div>
 
@@ -38,7 +39,7 @@ Le code est valable 15 minutes, et un compte à rebours sous le code indique le 
 5. Sous **Mode**, laissez **Planifié** sélectionné. Le téléviseur jouera selon le calendrier du groupe, de façon autonome.
 6. Cliquez sur **Associer**.
 
-Le téléviseur affiche **Connecté !** puis **Chargement de votre horaire...**. Il télécharge le contenu planifié et commence la lecture. Voir [Lecture planifiée sur le téléviseur](./scheduled-playback).
+Le téléviseur affiche **Connecté !** puis **Chargement de votre horaire...**. Il télécharge le contenu planifié et commence la lecture. Voir [Lecture planifiée sur le téléviseur](./scheduled-playback.md).
 
 :::info
 Si FreePlay Admin indique **Ce code ne correspond à aucun téléviseur**, vérifiez le code affiché à l'écran. S'il a expiré, utilisez le nouveau code que le téléviseur affiche maintenant.
@@ -51,11 +52,11 @@ Le paramètre **Mode** propose deux options :
 - **Planifié** - Joue selon le calendrier du groupe, de façon autonome. Personne n'a besoin d'appuyer sur Démarrer.
 - **Manuel** - Une personne choisit le contenu avec la télécommande. Un écran manuel apparaît toujours dans votre liste **Écrans**, mais il ne suit pas de calendrier ; le champ **Groupe** est donc désactivé.
 
-Vous pouvez changer le mode d'un écran plus tard depuis **Modifier** sur la [page Écrans](./managing-screens).
+Vous pouvez changer le mode d'un écran plus tard depuis **Modifier** sur la [page Écrans](./managing-screens.md).
 
 ## Associer à un plan de service à la place
 
-Le code de l'écran **Associer cet écran** fonctionne aussi dans B1 Admin. Si vous le saisissez là-bas et choisissez un type de plan sous **Afficher les plans pour**, le téléviseur suit ce type de plan dans le [Mode plan](../plan-mode/) au lieu d'un calendrier. Voir [Associer votre appareil](../plan-mode/device-pairing).
+Le code de l'écran **Associer cet écran** fonctionne aussi dans B1 Admin. Si vous le saisissez là-bas et choisissez un type de plan sous **Afficher les plans pour**, le téléviseur suit ce type de plan dans le [Mode plan](../plan-mode/index.md) au lieu d'un calendrier. Voir [Associer votre appareil](../plan-mode/device-pairing.md).
 
 ## Changer ou dissocier depuis le téléviseur {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ Le téléviseur revient à l'affichage d'un code d'association. Associez-le à n
 
 ## Articles connexes
 
-- **[Gérer les écrans et les groupes](./managing-screens)** - Renommer un écran, le déplacer dans un autre groupe ou vérifier ses téléchargements
-- **[Planifier le calendrier](./scheduling-the-calendar)** - Décider ce que jouent les écrans du groupe
-- **[Choisir un mode d'association](../getting-started/pairing-modes)** - Comparer le mode planifié, le mode plan et la navigation manuelle chez les fournisseurs
+- **[Gérer les écrans et les groupes](./managing-screens.md)** - Renommer un écran, le déplacer dans un autre groupe ou vérifier ses téléchargements
+- **[Planifier le calendrier](./scheduling-the-calendar.md)** - Décider ce que jouent les écrans du groupe
+- **[Choisir un mode d'association](../getting-started/pairing-modes.md)** - Comparer le mode planifié, le mode plan et la navigation manuelle chez les fournisseurs

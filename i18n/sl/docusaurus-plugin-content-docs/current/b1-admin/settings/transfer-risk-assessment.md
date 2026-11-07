@@ -1,5 +1,6 @@
 ---
 title: "Ocena tveganja prenosa"
+description: "Evidenca skladnosti podjetja ChurchApps za prenose podatkov cerkve iz Združenega kraljestva in EGP v ZDA v B1 Admin, ki zajema zaščitne ukrepe, podobdelovalce in nadzor dostopa."
 ---
 
 # Ocena tveganja prenosa

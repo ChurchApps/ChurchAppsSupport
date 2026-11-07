@@ -1,5 +1,6 @@
 ---
 title: "Kehadiran"
+description: "Tinjau kehadiran, ruangan, dan tamu mingguan di B1 Admin, lalu atur kampus, jam layanan, jumlah hadir, dan check-in kios dari halaman Kehadiran."
 ---
 
 # Kehadiran

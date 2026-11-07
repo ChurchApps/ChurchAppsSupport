@@ -1,5 +1,6 @@
 ---
 title: "Cấu trúc module"
+description: "Giải thích cách bố trí các module API: controller, repository, gateway, kiểm tra xác thực, và sáu hàm Lambda chạy mã trong môi trường phát triển B1."
 ---
 
 # Cấu trúc module
@@ -13,8 +14,8 @@ Mỗi module API đều tuân theo một cấu trúc nội bộ nhất quán g�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Thiết lập API trên máy cục bộ -- xem [Thiết lập API cục bộ](./local-setup)
-- Xem qua kiến trúc [Cơ sở dữ liệu](./database) để hiểu lớp truy cập dữ liệu
+- Thiết lập API trên máy cục bộ -- xem [Thiết lập API cục bộ](./local-setup.md)
+- Xem qua kiến trúc [Cơ sở dữ liệu](./database.md) để hiểu lớp truy cập dữ liệu
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Giao tiếp giữa các module
 
-Mỗi module sở hữu cơ sở dữ liệu riêng (xem [Cơ sở dữ liệu](./database)), và một module không bao giờ truy vấn trực tiếp các bảng của module khác. Khi một module cần dữ liệu thuộc về module khác -- ví dụ, module doing cần lấy thông tin người từ membership -- nó đi qua **gateway** của module sở hữu trong `src/shared/modules/`:
+Mỗi module sở hữu cơ sở dữ liệu riêng (xem [Cơ sở dữ liệu](./database.md)), và một module không bao giờ truy vấn trực tiếp các bảng của module khác. Khi một module cần dữ liệu thuộc về module khác -- ví dụ, module doing cần lấy thông tin người từ membership -- nó đi qua **gateway** của module sở hữu trong `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Trên máy cục bộ, hàm `web` chạy ở cổng 8084 và hàm `socket` chạ
 
 ## Bài viết liên quan
 
-- **[Cơ sở dữ liệu](./database)** -- Chuỗi kết nối, script schema và các mẫu truy cập dữ liệu
-- **[Thiết lập API cục bộ](./local-setup)** -- Hướng dẫn thiết lập đầy đủ từng bước
-- **[ApiHelper](../shared-libraries/api-helper)** -- Thư viện dùng chung cung cấp `CustomBaseController` và middleware xác thực
+- **[Cơ sở dữ liệu](./database.md)** -- Chuỗi kết nối, script schema và các mẫu truy cập dữ liệu
+- **[Thiết lập API cục bộ](./local-setup.md)** -- Hướng dẫn thiết lập đầy đủ từng bước
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Thư viện dùng chung cung cấp `CustomBaseController` và middleware xác thực

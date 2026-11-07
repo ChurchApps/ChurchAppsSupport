@@ -1,5 +1,6 @@
 ---
 title: "Egyházi beállítások"
+description: "Egyháza neve, címe, aldomainje, időzónája, régióformátuma, SMS-szolgáltatója és fájltárhelye a B1 Admin Egyházi beállítások oldalán."
 ---
 
 # Egyházi beállítások

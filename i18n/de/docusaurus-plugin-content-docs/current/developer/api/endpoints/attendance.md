@@ -1,5 +1,6 @@
 ---
 title: "Anwesenheit-Endpunkte"
+description: "Referenz der Anwesenheits-API in B1 Admin und B1 Checkin: Campus, Dienste, Gottesdienstzeiten, Sitzungen, Besuche, Check-in-Regeln und Exportendpunkte."
 ---
 
 # Anwesenheit-Endpunkte
@@ -270,6 +271,6 @@ Verfolgt Anwesenheitsserien einzelner Personen -- aufeinanderfolgende Wochen, in
 
 ## Verwandte Seiten
 
-- [Mitgliedschafts-Endpunkte](./membership) — Personen, Gruppen, Rollen und Kirchenverwaltung
-- [Authentifizierung und Berechtigungen](./authentication) — Anmeldeablauf, JWT, Berechtigungsmodell
-- [Modulstruktur](../module-structure) — Muster der Code-Organisation
+- [Mitgliedschafts-Endpunkte](./membership.md) — Personen, Gruppen, Rollen und Kirchenverwaltung
+- [Authentifizierung und Berechtigungen](./authentication.md) — Anmeldeablauf, JWT, Berechtigungsmodell
+- [Modulstruktur](../module-structure.md) — Muster der Code-Organisation

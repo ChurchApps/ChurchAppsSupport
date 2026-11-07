@@ -1,5 +1,6 @@
 ---
 title: "Demografie"
+description: "Sehen Sie in B1 Admin in interaktiven Diagrammen Alter, Geschlecht, Mitgliedschaft, Familienstand und Campus Ihrer Gemeinde und gehen Sie bis in einzelne Gruppen."
 ---
 
 # Demografie

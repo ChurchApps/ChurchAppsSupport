@@ -1,5 +1,6 @@
 ---
 title: "Klasių nustatymas"
+description: "Kurkite, pervardykite ir šalinkite klases Lessons.church portale, kad kiekvienas kambarys ar amžiaus grupė būtų paruošta savaitinei pamokų tvarkai."
 ---
 
 # Klasių nustatymas

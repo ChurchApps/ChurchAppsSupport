@@ -1,5 +1,6 @@
 ---
 title: "Revisando sua família"
+description: "Revise sua família no B1 Checkin após escolher uma pessoa, atribua grupos para cada horário e marque visitantes ou voluntários antes do check-in."
 ---
 
 # Revisando sua família
@@ -13,8 +14,8 @@ Depois de selecionar uma pessoa nos resultados da busca, o aplicativo carrega to
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Selecione um serviço](./selecting-service) na tela de serviços
-- [Busque um membro](./looking-up-members) e selecione-o nos resultados da busca
+- [Selecione um serviço](./selecting-service.md) na tela de serviços
+- [Busque um membro](./looking-up-members.md) e selecione-o nos resultados da busca
 
 </div>
 
@@ -35,9 +36,9 @@ Toque no cartão de um membro para expandi-lo. Quando expandido, você verá uma
 - Os **grupos oferecidos** nesse horário de culto, listados abaixo do nome (por exemplo, "Berçário, Pré-escola, Classe bíblica de adultos"), para que você veja quais classes estão disponíveis antes de escolher
 - Um **botão** que mostra o grupo atualmente atribuído, ou "Selecionar grupo" se nenhum grupo tiver sido atribuído ainda
 
-Se um horário de culto tiver uma [programação de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) e a janela estiver fechada neste momento, a linha mostra **Encerrado** no lugar de um botão, com o próximo horário de abertura quando houver, como **Encerrado · abre dom 9:30**. Se a pessoa já tiver feito check-in naquele horário de culto, a linha mostra o grupo dela com um sinal de verificação (por exemplo, **Sala Kids 1 · Com check-in feito**), para que você veja onde ela está, mesmo que a janela já tenha fechado.
+Se um horário de culto tiver uma [programação de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) e a janela estiver fechada neste momento, a linha mostra **Encerrado** no lugar de um botão, com o próximo horário de abertura quando houver, como **Encerrado · abre dom 9:30**. Se a pessoa já tiver feito check-in naquele horário de culto, a linha mostra o grupo dela com um sinal de verificação (por exemplo, **Sala Kids 1 · Com check-in feito**), para que você veja onde ela está, mesmo que a janela já tenha fechado.
 
-Toque no botão do grupo para ir à [tela de seleção de grupo](./group-assignment), onde você pode escolher ou alterar o grupo daquela pessoa e daquele horário de culto.
+Toque no botão do grupo para ir à [tela de seleção de grupo](./group-assignment.md), onde você pode escolher ou alterar o grupo daquela pessoa e daquele horário de culto.
 
 O cartão expandido também mostra as etiquetas **Membro**, **Visitante** e **Voluntário**. Toque em uma delas para definir como esta pessoa está fazendo o check-in. Membro é o padrão. O tipo é importante para as salas infantis: voluntários contam para a proporção voluntário-criança da sala, e visitantes contam para qualquer limite de visitantes que a sua igreja tenha definido.
 
@@ -51,9 +52,9 @@ Você não precisa atribuir cada membro da família a um grupo. Adultos que est�
 
 Na tela de revisão da família, você tem três opções:
 
-- **Expanda um membro** e toque em um botão de horário de culto para [atribuir ou alterar um grupo](./group-assignment).
-- **Toque no botão Adicionar visitante** abaixo da lista de membros para [adicionar um visitante](./adding-guests) à sua família.
-- **Toque no botão Check-in** na parte inferior da tela para [concluir o check-in](./completing-checkin) de todos da família.
+- **Expanda um membro** e toque em um botão de horário de culto para [atribuir ou alterar um grupo](./group-assignment.md).
+- **Toque no botão Adicionar visitante** abaixo da lista de membros para [adicionar um visitante](./adding-guests.md) à sua família.
+- **Toque no botão Check-in** na parte inferior da tela para [concluir o check-in](./completing-checkin.md) de todos da família.
 
 :::info
 As atribuições de grupo de um check-in anterior para o mesmo serviço são pré-carregadas automaticamente. Se os seus filhos frequentam os mesmos grupos toda semana, talvez você não precise alterar nada; basta revisar e fazer o check-in.
@@ -61,6 +62,6 @@ As atribuições de grupo de um check-in anterior para o mesmo serviço são pr�
 
 ## Próximos passos
 
-- [Atribua grupos](./group-assignment) aos membros da família que precisam fazer check-in em uma classe ou programa específico.
-- [Adicione um visitante](./adding-guests) se alguém estiver visitando com a sua família.
-- [Conclua o check-in](./completing-checkin) quando as atribuições de todos estiverem corretas.
+- [Atribua grupos](./group-assignment.md) aos membros da família que precisam fazer check-in em uma classe ou programa específico.
+- [Adicione um visitante](./adding-guests.md) se alguém estiver visitando com a sua família.
+- [Conclua o check-in](./completing-checkin.md) quando as atribuições de todos estiverem corretas.

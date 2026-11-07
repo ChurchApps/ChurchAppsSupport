@@ -1,5 +1,7 @@
 ---
-title: "Lịch sử quyên góp"
+title: "Xem lịch sử quyên góp trong B1 Mobile"
+sidebar_label: "Lịch sử quyên góp"
+description: "Xem tổng quyên góp trong năm, lần quyên góp gần nhất và toàn bộ lịch sử trong B1 Mobile, và lặp lại khoản quyên góp cũ bằng một chạm từ tab Tổng quan."
 ---
 
 # Lịch sử quyên góp
@@ -13,8 +15,8 @@ B1 Mobile giúp bạn theo dõi rõ ràng việc quyên góp của mình qua hai
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
-- [Thực hiện ít nhất một lần quyên góp](./making-donations) để xem lịch sử của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
+- [Thực hiện ít nhất một lần quyên góp](./making-donations.md) để xem lịch sử của bạn
 
 </div>
 
@@ -45,5 +47,5 @@ Hãy thường xuyên kiểm tra tab **Tổng quan** để theo dõi mục tiêu
 
 ## Bài viết liên quan
 
-- [Quyên góp](./making-donations) -- Thực hiện một lần quyên góp mới từ ứng dụng
-- [Quản lý phương thức thanh toán](./managing-payments) -- Thêm hoặc xóa phương thức thanh toán đã lưu
+- [Quyên góp](./making-donations.md) -- Thực hiện một lần quyên góp mới từ ứng dụng
+- [Quản lý phương thức thanh toán](./managing-payments.md) -- Thêm hoặc xóa phương thức thanh toán đã lưu

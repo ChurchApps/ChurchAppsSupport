@@ -1,5 +1,6 @@
 ---
 title: "Donation Reports"
+description: "Review giving totals, donor lapses, and batch-level details in B1 Admin with the Donations Summary dashboard, Lapsed Givers view, and CSV exports."
 ---
 
 # Donation Reports

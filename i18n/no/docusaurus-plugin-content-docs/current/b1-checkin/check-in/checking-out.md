@@ -1,5 +1,6 @@
 ---
 title: "Utsjekking og barnesikkerhet"
+description: "Sjekk ut barn på en bemannet B1 Checkin-stasjon med sikkerhetskoder, verifiserte henteperson, varsling av foreldre, nye etiketter og nødkunngjøringer."
 ---
 
 # Utsjekking og barnesikkerhet
@@ -14,7 +15,7 @@ Utsjekking avslutter innsjekkingen av barn: en forelder viser sikkerhetskoden fr
 <h4>Før du begynner</h4>
 
 - Utsjekking er tilgjengelig på stasjoner som er satt til **betjent** modus i kioskens administratorinnstillinger
-- Barna må være [sjekket inn](./completing-checkin) med en utskrevet hentelapp som har sikkerhetskoden
+- Barna må være [sjekket inn](./completing-checkin.md) med en utskrevet hentelapp som har sikkerhetskoden
 - Tilkalling og nødvarsling krever at kirken har koblet til en leverandør av tekstmeldinger i B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Hvis et navn du skriver inn, stemmer med noen som er markert som **Ikke autorise
 Når hentepersonen er bekreftet, trykker du på sjekk ut. Hentepersonens navn lagres sammen med oppmøteregistreringen.
 
 :::info
-Godkjente og ikke-autoriserte hentepersoner administreres av kirkens ansatte på hver persons side i B1 Admin — se [Innsjekkingssikkerhet](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Godkjente og ikke-autoriserte hentepersoner administreres av kirkens ansatte på hver persons side i B1 Admin — se [Innsjekkingssikkerhet](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Tilkalle en forelder
@@ -65,6 +66,6 @@ Varselet sendes til alle innsjekkede husstander for den valgte gudstjenesten. Br
 
 ## Relaterte artikler
 
-- [Fullføre innsjekking](./completing-checkin) — hvor sikkerhetskoder og hentelapper kommer fra
-- [Innsjekkingssikkerhet](../../b1-admin/attendance/checkin-safety) — konfigurere kapasitet, forhold, hentepersoner og kravet om leverandør av tekstmeldinger
-- [Skriveroppsett](../getting-started/printer-setup) — konfigurasjon av etikettskriver
+- [Fullføre innsjekking](./completing-checkin.md) — hvor sikkerhetskoder og hentelapper kommer fra
+- [Innsjekkingssikkerhet](../../b1-admin/attendance/checkin-safety.md) — konfigurere kapasitet, forhold, hentepersoner og kravet om leverandør av tekstmeldinger
+- [Skriveroppsett](../getting-started/printer-setup.md) — konfigurasjon av etikettskriver

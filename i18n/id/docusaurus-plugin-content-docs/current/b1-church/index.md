@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Cari tahu apa yang ditawarkan situs B1.church gereja Anda bagi anggota, dari portal anggota dan grup hingga persembahan, acara, pelayanan, dan check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Ketika anggota mengunjungi situs B1.church Anda, mereka akan melihat situs web p
 
 ## Pelajari Lebih Lanjut
 
-- [Getting Started](./getting-started/) -- Buat akun Anda, masuk, dan pelajari cara menavigasi B1.church.
-- [Groups](./groups/) -- Bergabung dan berpartisipasi dalam grup gereja Anda.
-- [Giving](./giving/) -- Berikan persembahan dan kelola persembahan Anda.
-- [Events](./events/) -- Telusuri dan daftar untuk acara gereja yang akan datang.
-- [Serving](./serving/) -- Lihat rencana dan daftar untuk posisi pelayanan sukarela.
-- [Plans](./plans/) -- Lihat rencana ibadah dan posisi pelayanan sukarela Anda.
-- [Check-In](./checkin/) -- Check-in untuk ibadah, acara, dan pendaftaran tamu.
-- [Community Directory](./community/) -- Temukan dan terhubung dengan anggota lainnya.
-- [Content](./content/) -- Khotbah, Alkitab, ayat harian, dan siaran langsung. (Pemutaran pelajaran telah dipindahkan ke [FreePlay](/docs/freeplay/).)
+- [Getting Started](./getting-started/index.md) -- Buat akun Anda, masuk, dan pelajari cara menavigasi B1.church.
+- [Groups](./groups/index.md) -- Bergabung dan berpartisipasi dalam grup gereja Anda.
+- [Giving](./giving/index.md) -- Berikan persembahan dan kelola persembahan Anda.
+- [Events](./events/index.md) -- Telusuri dan daftar untuk acara gereja yang akan datang.
+- [Serving](./serving/index.md) -- Lihat rencana dan daftar untuk posisi pelayanan sukarela.
+- [Plans](./plans/index.md) -- Lihat rencana ibadah dan posisi pelayanan sukarela Anda.
+- [Check-In](./checkin/index.md) -- Check-in untuk ibadah, acara, dan pendaftaran tamu.
+- [Community Directory](./community/index.md) -- Temukan dan terhubung dengan anggota lainnya.
+- [Content](./content/index.md) -- Khotbah, Alkitab, ayat harian, dan siaran langsung. (Pemutaran pelajaran telah dipindahkan ke [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church sepenuhnya gratis untuk gereja dan anggota. Administrator gereja Anda menyiapkan dan menyesuaikan situs melalui B1 Admin. Sebagai anggota, Anda cukup mengunjungi URL B1.church gereja Anda untuk memulai.

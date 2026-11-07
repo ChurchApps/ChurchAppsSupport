@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Setfa futsi ufake i-B1 Mobile, i-app ye-React Native/Expo, endzaweni, lungisa tindzawo te-API, bese wakha ngeAndroid noma iOS. Qaphela kutsi i-B1 Mobile ayisasekelwa."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile yi-app yeselula lesemcoka lebhekene nemalunga e-ChurchApps, leyakhiwe 
 <div class="prereqs">
 <h4>Ngaphambi Kutsi Ucale</h4>
 
-- Faka **Node.js** ne-**Expo CLI** -- bona [Tidzingo Tekucala](../setup/prerequisites)
+- Faka **Node.js** ne-**Expo CLI** -- bona [Tidzingo Tekucala](../setup/prerequisites.md)
 - Faka **Android Studio** (yekulinganisa i-Android) nobe **Xcode** (yekulinganisa i-iOS)
-- Hlela umgomo wakho we-API (staging nobe wasekhaya) -- bona [Tintfo Letishintjashintjako Tesimo](../setup/environment-variables)
+- Hlela umgomo wakho we-API (staging nobe wasekhaya) -- bona [Tintfo Letishintjashintjako Tesimo](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Tibuyeketo te-OTA tilungele kakhulu tishintjo te-JavaScript kuphela. Nangabe ush
 
 ## Tihloko Letihambelanako
 
-- **[Kufakwa Kweselula](../deployment/mobile)** -- Sicondziso lesiphelele sekwakha, kwetfula, nekufaka ti-app teselula
-- **[Tintfo Letishintjashintjako Tesimo](../setup/environment-variables)** -- Sibuyeketi lesiphelele sekuhlelwa kwesimo seselula
+- **[Kufakwa Kweselula](../deployment/mobile.md)** -- Sicondziso lesiphelele sekwakha, kwetfula, nekufaka ti-app teselula
+- **[Tintfo Letishintjashintjako Tesimo](../setup/environment-variables.md)** -- Sibuyeketi lesiphelele sekuhlelwa kwesimo seselula

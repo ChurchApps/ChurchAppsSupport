@@ -1,5 +1,6 @@
 ---
 title: "Spenden erfassen"
+description: "Erfassen Sie Kirchenspenden in B1 Admin, indem Sie einen Stapel anlegen, Gaben einzeln eingeben, eine CSV-Datei importieren oder eine Gabe aus einem Spenderprofil erfassen."
 ---
 
 # Spenden erfassen

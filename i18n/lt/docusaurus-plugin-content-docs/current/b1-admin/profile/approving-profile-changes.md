@@ -1,5 +1,6 @@
 ---
 title: "Profilio pakeitimų patvirtinimas"
+description: "Peržiūrėkite ir patvirtinkite narių profilio pakeitimų prašymus B1 Admin bei nustatykite Katalogo patvirtinimo grupę, kuri jų gauna."
 ---
 
 # Profilio pakeitimų patvirtinimas

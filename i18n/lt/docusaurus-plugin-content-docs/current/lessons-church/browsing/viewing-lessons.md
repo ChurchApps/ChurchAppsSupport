@@ -1,5 +1,6 @@
 ---
 title: "Перегляд уроків"
+description: "Atidarykite pamoką Lessons.church: skaitykite skyrius ir vaidmenų veiksmus, raskite atsisiuntimus ir perjunkite amžiaus grupių vietas prieš pamoką."
 ---
 
 # Перегляд уроків

@@ -1,5 +1,7 @@
 ---
-title: "Historial de donaciones"
+title: "Historial de donaciones y certificados en B1.church"
+sidebar_label: "Historial de donaciones"
+description: "Consulta tus donaciones anteriores, filtra por año e imprime certificados de donación para impuestos desde la página Donaciones del portal de miembros de B1.church."
 ---
 
 # Historial de donaciones

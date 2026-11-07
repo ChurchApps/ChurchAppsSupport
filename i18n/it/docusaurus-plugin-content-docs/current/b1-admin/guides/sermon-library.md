@@ -1,5 +1,6 @@
 ---
 title: "Guida: Crea la tua libreria di sermoni e la diretta streaming"
+description: "Importa le predicazioni da YouTube o Vimeo, organizzale in playlist e imposta dirette ricorrenti con chat in B1 Admin per il sito della chiesa."
 ---
 
 # Crea la tua libreria di sermoni e la diretta streaming

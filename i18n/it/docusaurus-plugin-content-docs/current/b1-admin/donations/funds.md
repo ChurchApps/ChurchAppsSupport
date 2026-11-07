@@ -1,5 +1,6 @@
 ---
 title: "Gestione dei fondi"
+description: "Crea e organizza i fondi di donazione in B1 Admin, imposta la deducibilità fiscale e la visibilità per i donatori, e consulta totali e storico dei doni."
 ---
 
 # Gestione dei fondi

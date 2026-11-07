@@ -1,5 +1,6 @@
 ---
 title: "Odtwarzanie zaplanowane na telewizorze"
+description: "Sparowany telewizor FreePlay pobiera tydzień z wyprzedzeniem i gra według zegara, także offline. Opis panelu info, przycisków pilota i przypinania playlisty."
 ---
 
 # Odtwarzanie zaplanowane na telewizorze
@@ -13,8 +14,8 @@ Gdy telewizor zostanie połączony z kalendarzem, FreePlay uruchomi go za Ciebie
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Połącz telewizor z kalendarzem](./pairing-a-screen)
-- [Dodaj coś do kalendarza](./scheduling-the-calendar) lub ustaw domyślną pętlę dla grupy, do której należy ekran
+- [Połącz telewizor z kalendarzem](./pairing-a-screen.md)
+- [Dodaj coś do kalendarza](./scheduling-the-calendar.md) lub ustaw domyślną pętlę dla grupy, do której należy ekran
 
 </div>
 
@@ -40,7 +41,7 @@ Panel zawiera także trzy przyciski:
 
 - **Przypnij tę playlistę** - Zapętla bieżące treści i ignoruje kalendarz. Wybierz **Odepnij playlistę**, aby wrócić do harmonogramu
 - **Przeglądaj treści** - Opuszcza odtwarzacz z harmonogramem, aby przeglądać podłączonych dostawców
-- **Ustawienia** - Otwiera ustawienia FreePlay, gdzie możesz [odłączyć telewizor lub połączyć go z innym kalendarzem](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Ustawienia** - Otwiera ustawienia FreePlay, gdzie możesz [odłączyć telewizor lub połączyć go z innym kalendarzem](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Aby wrócić do harmonogramu po przeglądaniu, naciśnij na pilocie przycisk **Wstecz** na ekranie **Dostawcy treści** albo otwórz **Ustawienia**, wybierz **Połącz z kalendarzem** i wybierz **Wróć do harmonogramu**. Połączony telewizor wraca też do odtwarzacza z harmonogramem zawsze, gdy FreePlay wraca na pierwszy plan, a po uruchomieniu zawsze otwiera się w odtwarzaczu z harmonogramem.
@@ -77,6 +78,6 @@ Kalendarz ekranu możesz też odtworzyć w przeglądarce internetowej. W FreePla
 
 ## Powiązane artykuły
 
-- **[Planowanie kalendarza](./scheduling-the-calendar)** - Ustaw, co ma być odtwarzane i co się stanie, gdy treść zakończy się wcześniej
-- **[Zarządzanie ekranami i grupami](./managing-screens)** - Sprawdź pobrane pliki każdego ekranu w FreePlay Admin
-- **[Odtwarzanie treści](../content-providers/playing-content)** - Sterowanie odtwarzaczem, gdy odtwarzasz treści samodzielnie
+- **[Planowanie kalendarza](./scheduling-the-calendar.md)** - Ustaw, co ma być odtwarzane i co się stanie, gdy treść zakończy się wcześniej
+- **[Zarządzanie ekranami i grupami](./managing-screens.md)** - Sprawdź pobrane pliki każdego ekranu w FreePlay Admin
+- **[Odtwarzanie treści](../content-providers/playing-content.md)** - Sterowanie odtwarzaczem, gdy odtwarzasz treści samodzielnie

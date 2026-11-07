@@ -1,5 +1,6 @@
 ---
 title: "PWA-ként telepítés (Progresszív webalkalmazás)"
+description: "Telepítse a B1.church-et alkalmazásként iPhone-ra vagy Androidra a tagi portálról, ikonját hozzáadva a kezdőképernyőhöz Safariban vagy Chrome-ban."
 ---
 
 # PWA-ként telepítés (Progresszív webalkalmazás)

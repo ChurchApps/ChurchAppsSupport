@@ -1,12 +1,13 @@
 ---
 title: "Tilkoblede apper og OAuth"
+description: "Koble tredjepartsapper til en menighets B1-data med OAuth 2.0-samtykke, uten delte passord eller API-nøkler. Tilbakekall tilgang i B1 Admin."
 ---
 
 # Tilkoblede apper og OAuth
 
 <div class="article-intro">
 
-B1 API-et støtter OAuth 2.0, slik at en tredjepartsapplikasjon kan be hver menighetsadministrator om tillatelse til å få tilgang til dataene deres, uten at menigheten noensinne deler et passord eller en API-nøkkel. En **tilkoblet app** er et OAuth-token som en menighetsadministrator har godkjent. Å tilbakekalle det fjerner tredjepartsappens tilgang med ett klikk. Bruk denne veien for SaaS-koblinger med flere tenanter. For en integrasjon med én menighet foretrekker du [API-nøkler](./api-keys).
+B1 API-et støtter OAuth 2.0, slik at en tredjepartsapplikasjon kan be hver menighetsadministrator om tillatelse til å få tilgang til dataene deres, uten at menigheten noensinne deler et passord eller en API-nøkkel. En **tilkoblet app** er et OAuth-token som en menighetsadministrator har godkjent. Å tilbakekalle det fjerner tredjepartsappens tilgang med ett klikk. Bruk denne veien for SaaS-koblinger med flere tenanter. For en integrasjon med én menighet foretrekker du [API-nøkler](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API-et støtter OAuth 2.0, slik at en tredjepartsapplikasjon kan be hver meni
 | **Tilkoblet app** | Et spesifikt par `(klient, menighetsadministrator)` der administratoren har gitt klienten tilgang. Hver tilkoblede app støttes av et OAuth-oppdateringstoken. |
 | **Tilgangstoken** | En kortlivet JWT (≈ 7 dager) som klienten bruker til API-kall. Samme form som en bruker-JWT: `Authorization: Bearer <jwt>`. |
 | **Oppdateringstoken** | En langlivet, ugjennomsiktig streng (≈ 90 dager) som klienten bruker til å lage nye tilgangstokener. |
-| **Omfang** | Begrenser hva tilgangstokenet kan gjøre. Se [omfangskatalogen](./api-keys#scopes). |
+| **Omfang** | Begrenser hva tilgangstokenet kan gjøre. Se [omfangskatalogen](./api-keys.md#scopes). |
 
 ## Tilgangsflyter
 
@@ -162,7 +163,7 @@ Listen ekskluderer utløpte tokener automatisk.
 
 ## Omfang og samtykke
 
-Omfangsstrengene er den samme katalogen som [API-nøkler](./api-keys#scopes). Beste praksis for klienter:
+Omfangsstrengene er den samme katalogen som [API-nøkler](./api-keys.md#scopes). Beste praksis for klienter:
 
 - **Be om de smaleste omfangene som fungerer.** Menigheter legger merke til det hvis du ber om `donations:write` når du bare trenger å lese personer.
 - **Bruk et oppdateringstoken og kortlivede tilgangstokener.** Langlivede tilgangstokener er vanskeligere å tilbakekalle raskt.
@@ -183,7 +184,7 @@ Registrerte omdirigerings-URI-er må samsvare nøyaktig med `redirect_uri` i for
 
 ### Dynamisk klientregistrering {#dynamic-client-registration}
 
-`POST /membership/oauth/register` (offentlig, RFC 7591) lar en klient, for eksempel claude.ai sin MCP-kobling, registrere seg selv. Den annonseres i API-ets `/.well-known/oauth-authorization-server`-dokument. Se [MCP-server → OAuth-oppdagelse](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (offentlig, RFC 7591) lar en klient, for eksempel claude.ai sin MCP-kobling, registrere seg selv. Den annonseres i API-ets `/.well-known/oauth-authorization-server`-dokument. Se [MCP-server → OAuth-oppdagelse](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ På samtykkesiden i B1Admin får en selvregistrert klient en melding om at den r
 
 ## SDK-støtte
 
-Pakken `@churchapps/integration-sdk` pakker inn hver OAuth-flyt med typede hjelpefunksjoner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` og `.awaitDeviceToken()`. Se pakkens README og [Webhooks](./webhooks#sdk-support) for et eksempel fra ende til ende.
+Pakken `@churchapps/integration-sdk` pakker inn hver OAuth-flyt med typede hjelpefunksjoner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` og `.awaitDeviceToken()`. Se pakkens README og [Webhooks](./webhooks.md#sdk-support) for et eksempel fra ende til ende.

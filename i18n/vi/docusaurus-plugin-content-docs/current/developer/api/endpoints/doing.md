@@ -1,5 +1,6 @@
 ---
 title: "Endpoint của Doing"
+description: "Tài liệu endpoint của Doing API đứng sau lịch phục vụ, phân công tình nguyện, công việc và tự động hóa trong B1 Admin, kèm đường dẫn, xác thực và quyền."
 ---
 
 # Endpoint của Doing
@@ -278,6 +279,6 @@ Chuyển tiếp yêu cầu đến các nhà cung cấp nội dung bên ngoài (v
 
 ## Trang liên quan
 
-- [Endpoint Membership](./membership) — Người, nhóm, vai trò và quyền
-- [Endpoint Attendance](./attendance) — Theo dõi buổi nhóm và lượt thăm
-- [Cấu trúc module](../module-structure) — Các mẫu tổ chức mã nguồn
+- [Endpoint Membership](./membership.md) — Người, nhóm, vai trò và quyền
+- [Endpoint Attendance](./attendance.md) — Theo dõi buổi nhóm và lượt thăm
+- [Cấu trúc module](../module-structure.md) — Các mẫu tổ chức mã nguồn

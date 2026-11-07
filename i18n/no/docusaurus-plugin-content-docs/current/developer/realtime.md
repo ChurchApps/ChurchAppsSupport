@@ -1,5 +1,6 @@
 ---
 title: "Sanntidsarkitektur"
+description: "Slik leverer ChurchApps WebSocket-lag live chat, tilstedeværelse og varsler: socket-håndtrykket, romabonnementer og klientprimitiver for utviklere."
 ---
 
 # Sanntidsarkitektur
@@ -226,8 +227,8 @@ Live streamen er den største anonyme konsumenten av rammeverket. Den bruker to 
 
 ## Relaterte sider
 
-- [Varslingsarkitektur](./architecture/notifications) -- Eskaleringstrakten for i-app/push/e-post som denne transporten mater inn i
-- [Meldingsendepunkter](./api/endpoints/messaging) -- Fullstendig REST-overflate for meldinger, samtaler, tilkoblinger, enheter
-- [Web push-varsler](./web-push) -- Nettleser-push, atskilt fra sanntidslevering på siden
-- [AppHelper](./shared-libraries/app-helper) -- npm-pakken som leverer klientprimitivene
-- [Modulstruktur](./api/module-structure) -- Hvordan meldingsmodulen er organisert på serversiden
+- [Varslingsarkitektur](./architecture/notifications.md) -- Eskaleringstrakten for i-app/push/e-post som denne transporten mater inn i
+- [Meldingsendepunkter](./api/endpoints/messaging.md) -- Fullstendig REST-overflate for meldinger, samtaler, tilkoblinger, enheter
+- [Web push-varsler](./web-push.md) -- Nettleser-push, atskilt fra sanntidslevering på siden
+- [AppHelper](./shared-libraries/app-helper.md) -- npm-pakken som leverer klientprimitivene
+- [Modulstruktur](./api/module-structure.md) -- Hvordan meldingsmodulen er organisert på serversiden

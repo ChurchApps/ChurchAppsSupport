@@ -1,5 +1,6 @@
 ---
 title: "Documentație pentru dezvoltatori"
+description: "Orientare în documentația ChurchApps pentru dezvoltatori: configurare locală, ghiduri API și aplicații web, biblioteci comune, aplicații mobile și implementare."
 ---
 
 # Documentație pentru dezvoltatori
@@ -24,16 +25,16 @@ Caracteristici cheie:
 
 ## Ce acoperă această secțiune
 
-- **[Configurare](setup/)** -- Mediul local de dezvoltare, cerințele preliminare și configurarea
-  - [Cerințe preliminare](setup/prerequisites) -- Instrumente și software necesare
-  - [Prezentare generală a proiectului](setup/project-overview) -- Toate proiectele, pe scurt
-  - [Variabile de mediu](setup/environment-variables) -- Configurarea fișierelor `.env`
-- **[API](api/)** -- Configurarea locală a API-ului principal, inițializarea bazei de date și structura modulelor
-- **[Aplicații web](web-apps/)** -- Rularea B1Admin, B1App și LessonsApp local
-- **[Aplicații mobile](mobile/)** -- Compilarea B1Mobile și a altor aplicații Expo
-- **[Biblioteci partajate](shared-libraries/)** -- Lucrul cu Helpers, ApiHelper și AppHelper
-- **[Implementare](deployment/)** -- Implementarea API-urilor, a aplicațiilor web și a aplicațiilor mobile
-- **[Furnizor de conținut FreePlay](freeplay-content-provider)** -- Integrarea bibliotecii tale de lecții cu FreePlay
+- **[Configurare](./setup/index.md)** -- Mediul local de dezvoltare, cerințele preliminare și configurarea
+  - [Cerințe preliminare](./setup/prerequisites.md) -- Instrumente și software necesare
+  - [Prezentare generală a proiectului](./setup/project-overview.md) -- Toate proiectele, pe scurt
+  - [Variabile de mediu](./setup/environment-variables.md) -- Configurarea fișierelor `.env`
+- **[API](./api/index.md)** -- Configurarea locală a API-ului principal, inițializarea bazei de date și structura modulelor
+- **[Aplicații web](./web-apps/index.md)** -- Rularea B1Admin, B1App și LessonsApp local
+- **[Aplicații mobile](./mobile/index.md)** -- Compilarea B1Mobile și a altor aplicații Expo
+- **[Biblioteci partajate](./shared-libraries/index.md)** -- Lucrul cu Helpers, ApiHelper și AppHelper
+- **[Implementare](./deployment/index.md)** -- Implementarea API-urilor, a aplicațiilor web și a aplicațiilor mobile
+- **[Furnizor de conținut FreePlay](./freeplay-content-provider.md)** -- Integrarea bibliotecii tale de lecții cu FreePlay
 
 ## Comunitate și resurse
 

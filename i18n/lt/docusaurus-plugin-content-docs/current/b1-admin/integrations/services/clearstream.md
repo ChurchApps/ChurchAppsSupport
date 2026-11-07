@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Prijunkite Clearstream SMS prie B1 Admin per Zapier: siųskite žinutes apie naujas aukas ar formas ir grąžinkite gautus atsakymus kaip asmenis."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Clearstream Zapier veiksmai: *Send Text to Number*, *Send Text to List*, *Create
 
 ## Taip pat žr.
 
-- [Text In Church](./text-in-church) — alternatyvi SMS platforma, panašus sujungimo principas
-- [Mobile Message](./mobile-message) — bažnyčioms ne JAV
-- [Zapier (overview)](../zapier) — B1 pusė visiems Zapier receptams
+- [Text In Church](./text-in-church.md) — alternatyvi SMS platforma, panašus sujungimo principas
+- [Mobile Message](./mobile-message.md) — bažnyčioms ne JAV
+- [Zapier (overview)](../zapier.md) — B1 pusė visiems Zapier receptams
 - [Clearstream API docs](https://api-docs.clearstream.io/) — pasirinktinėms integracijoms už Zapier programėlės ribų

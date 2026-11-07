@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobil"
+description: "B1 Mobile React Native/Expo uygulamasını yerel olarak kurup çalıştırın, API uç noktalarını yapılandırın ve Android veya iOS için derleyin. B1 Mobile'ın kullanımdan kaldırıldığını unutmayın."
 ---
 
 # B1 Mobil
@@ -13,9 +14,9 @@ B1 Mobil, React Native ve Expo ile geliştirilmiş, ChurchApps'in birincil üye 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **Node.js** ve **Expo CLI** kurun -- bkz. [Ön Koşullar](../setup/prerequisites)
+- **Node.js** ve **Expo CLI** kurun -- bkz. [Ön Koşullar](../setup/prerequisites.md)
 - **Android Studio** (Android emülatörü için) veya **Xcode** (iOS simülatörü için) kurun
-- API hedefinizi yapılandırın (demo veya yerel) -- bkz. [Ortam Değişkenleri](../setup/environment-variables)
+- API hedefinizi yapılandırın (demo veya yerel) -- bkz. [Ortam Değişkenleri](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA güncellemeleri yalnızca JavaScript değişiklikleri için idealdir. Yerel 
 
 ## İlgili Makaleler
 
-- **[Mobil Dağıtım](../deployment/mobile)** -- Mobil uygulamaları derleme, gönderme ve dağıtma hakkında tam kılavuz
-- **[Ortam Değişkenleri](../setup/environment-variables)** -- Mobil ortam yapılandırması için eksiksiz başvuru
+- **[Mobil Dağıtım](../deployment/mobile.md)** -- Mobil uygulamaları derleme, gönderme ve dağıtma hakkında tam kılavuz
+- **[Ortam Değişkenleri](../setup/environment-variables.md)** -- Mobil ortam yapılandırması için eksiksiz başvuru

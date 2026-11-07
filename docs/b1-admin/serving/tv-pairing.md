@@ -1,5 +1,6 @@
 ---
 title: "Connecting FreePlay to B1 Admin"
+description: "Connect a classroom TV running FreePlay to your scheduled lessons in B1 Admin, so teachers can play them on screen during class."
 ---
 
 # Connecting a Classroom TV to Your B1 Admin Lessons

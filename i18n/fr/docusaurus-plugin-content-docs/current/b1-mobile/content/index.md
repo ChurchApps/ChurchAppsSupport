@@ -1,5 +1,7 @@
 ---
-title: "Contenu"
+title: "Fonctions de contenu dans l’application B1 Mobile"
+sidebar_label: "Contenu"
+description: "Trouvez sermons, diffusions en direct, lecture biblique et Verset du jour dans B1 Mobile, et voyez quelles fonctions de contenu votre église a activées."
 ---
 
 # Contenu

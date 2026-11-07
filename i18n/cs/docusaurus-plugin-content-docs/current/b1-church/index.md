@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Zjistěte, co web vaší církve na B1.church nabízí členům: od členského portálu a skupin po dary, události, službu a check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Když členové navštíví váš web B1.church, uvidí veřejné webové strán
 
 ## Další informace
 
-- [Začínáme](./getting-started/) -- Vytvořte si účet, přihlaste se a naučte se orientovat na B1.church.
-- [Skupiny](./groups/) -- Připojte se ke skupinám sboru a zapojte se do nich.
-- [Dary](./giving/) -- Přispívejte a spravujte své dary.
-- [Akce](./events/) -- Procházejte nadcházející církevní akce a registrujte se na ně.
-- [Služba](./serving/) -- Prohlížejte plány a přihlašujte se na dobrovolnické pozice.
-- [Plány](./plans/) -- Prohlížejte plány bohoslužeb a své dobrovolnické pozice.
-- [Check-In](./checkin/) -- Přihlašování na bohoslužby, akce a registrace hostů.
-- [Adresář komunity](./community/) -- Najděte další členy a navažte s nimi kontakt.
-- [Obsah](./content/) -- Kázání, Bible, denní verš a živé přenosy. (Přehrávání lekcí se přesunulo do [FreePlay](/docs/freeplay/).)
+- [Začínáme](./getting-started/index.md) -- Vytvořte si účet, přihlaste se a naučte se orientovat na B1.church.
+- [Skupiny](./groups/index.md) -- Připojte se ke skupinám sboru a zapojte se do nich.
+- [Dary](./giving/index.md) -- Přispívejte a spravujte své dary.
+- [Akce](./events/index.md) -- Procházejte nadcházející církevní akce a registrujte se na ně.
+- [Služba](./serving/index.md) -- Prohlížejte plány a přihlašujte se na dobrovolnické pozice.
+- [Plány](./plans/index.md) -- Prohlížejte plány bohoslužeb a své dobrovolnické pozice.
+- [Check-In](./checkin/index.md) -- Přihlašování na bohoslužby, akce a registrace hostů.
+- [Adresář komunity](./community/index.md) -- Najděte další členy a navažte s nimi kontakt.
+- [Obsah](./content/index.md) -- Kázání, Bible, denní verš a živé přenosy. (Přehrávání lekcí se přesunulo do [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church je pro sbory i členy zcela zdarma. Správce sboru web nastavuje a přizpůsobuje přes B1 Admin. Jako člen stačí navštívit URL B1.church vašeho sboru a můžete začít.

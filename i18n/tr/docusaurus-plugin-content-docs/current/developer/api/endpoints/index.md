@@ -1,5 +1,6 @@
 ---
 title: "Uç Nokta Başvurusu"
+description: "Her ChurchApps API uç noktasını modüle göre bulun; HTTP yöntemi, yol, kimlik doğrulama ve izni görün, ayrıca toplu kaydetme ve hata kurallarını öğrenin."
 ---
 
 # Uç Nokta Başvurusu
@@ -89,10 +90,10 @@ Rapor parametreleri sorgu dizesi değerleri olarak iletilir (ör. `?startDate=20
 
 | Modül | Temel Yol | Açıklama |
 |-------|-----------|----------|
-| [Kimlik Doğrulama](./authentication) | `/membership/users`, `/membership/oauth` | Giriş, kayıt, JWT belirteçleri, OAuth, izinler |
-| [Üyelik](./membership) | `/membership/*` | Kişiler, kiliseler, gruplar, haneler, roller, formlar, ayarlar |
-| [Katılım](./attendance) | `/attendance/*` | Kampüsler, hizmetler, oturumlar, ziyaretler, giriş kayıtları |
-| [İçerik](./content) | `/content/*` | Sayfalar, vaazlar, etkinlikler, dosyalar, galeriler, Kutsal Kitap, yayın |
-| [Bağış](./giving) | `/giving/*` | Bağışlar, fonlar, ödeme geçitleri, abonelikler |
-| [Mesajlaşma](./messaging) | `/messaging/*` | Konuşmalar, bildirimler, cihazlar, SMS |
-| [Planlama](./doing) | `/doing/*` | Planlar, görevler, atamalar, otomasyonlar, zamanlama |
+| [Kimlik Doğrulama](./authentication.md) | `/membership/users`, `/membership/oauth` | Giriş, kayıt, JWT belirteçleri, OAuth, izinler |
+| [Üyelik](./membership.md) | `/membership/*` | Kişiler, kiliseler, gruplar, haneler, roller, formlar, ayarlar |
+| [Katılım](./attendance.md) | `/attendance/*` | Kampüsler, hizmetler, oturumlar, ziyaretler, giriş kayıtları |
+| [İçerik](./content.md) | `/content/*` | Sayfalar, vaazlar, etkinlikler, dosyalar, galeriler, Kutsal Kitap, yayın |
+| [Bağış](./giving.md) | `/giving/*` | Bağışlar, fonlar, ödeme geçitleri, abonelikler |
+| [Mesajlaşma](./messaging.md) | `/messaging/*` | Konuşmalar, bildirimler, cihazlar, SMS |
+| [Planlama](./doing.md) | `/doing/*` | Planlar, görevler, atamalar, otomasyonlar, zamanlama |

@@ -1,5 +1,6 @@
 ---
 title: "Plantillas de correo"
+description: "Configura plantillas de correo electrónico y mensajes de texto en B1 Admin, con campos de combinación, opciones de SMS y vistas previas para comunicaciones masivas."
 ---
 
 # Plantillas de correo

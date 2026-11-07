@@ -1,5 +1,6 @@
 ---
 title: "Auditlogboek"
+description: "Bekijk in B1 Admin wie is ingelogd, personen heeft bewerkt of rechten heeft gewijzigd in het auditlogboek, en exporteer gefilterde items naar CSV."
 ---
 
 # Auditlogboek
@@ -78,6 +79,6 @@ Controleer het auditlogboek regelmatig, vooral na het onboarden van nieuwe teaml
 
 ## Gerelateerde artikelen
 
-- [Rollen & Machtigingen](../settings/roles-permissions) -- Beheer wie toegang tot wat heeft
-- [Gegevensbeveiliging](../settings/data-security) -- Begrijp hoe uw gegevens worden beschermd
+- [Rollen & Machtigingen](../settings/roles-permissions.md) -- Beheer wie toegang tot wat heeft
+- [Gegevensbeveiliging](../settings/data-security.md) -- Begrijp hoe uw gegevens worden beschermd
 - [Rapportoverzicht](./index.md) -- Zie alle beschikbare rapporten

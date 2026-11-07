@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Prepojte B1 Admin a Text In Church cez Zapier: vytvorte API kľúč, zostavte Zap z karty spojenia do B1 a zrkadlite členstvo v skupinách."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Zap zapnite. Ďalšia prihlasovacia karta odoslaná cez TIC sa automaticky objav
 
 ## Pozrite tiež
 
-- [Clearstream](./clearstream) – alternatívna platforma SMS s podobným zapojením cez Zapier
-- [Zapier (prehľad)](../zapier) – strana B1 pre každý recept v Zapier
+- [Clearstream](./clearstream.md) – alternatívna platforma SMS s podobným zapojením cez Zapier
+- [Zapier (prehľad)](../zapier.md) – strana B1 pre každý recept v Zapier
 - [Návod na Text In Church pre Zapier](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (dokumentácia TIC)

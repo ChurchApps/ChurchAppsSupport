@@ -1,5 +1,6 @@
 ---
 title: "Prehľad projektov"
+description: "Prehľad repozitárov ChurchApps podľa kategórií: frameworky, vývojové porty, databázy a spôsob prepojenia zdieľaných balíkov @churchapps."
 ---
 
 # Prehľad projektov
@@ -13,7 +14,7 @@ ChurchApps pozostáva z približne 20 nezávislých repozitárov, z ktorých ka�
 <div class="prereqs">
 <h4>Skôr než začnete</h4>
 
-- Nainštalujte si [predpoklady](./prerequisites) pre kategóriu projektov, na ktorej chcete pracovať
+- Nainštalujte si [predpoklady](./prerequisites.md) pre kategóriu projektov, na ktorej chcete pracovať
 
 </div>
 
@@ -72,7 +73,7 @@ Zdieľaný kód je publikovaný na npm pod rozsahom `@churchapps` a projekty uve
 | `@churchapps/integration-sdk` | Sada nástrojov pre integrácie B1.church: webhooky, REST klient, OAuth | Vývojári externých integrácií |
 | `@churchapps/texting` | Abstrakcia poskytovateľov SMS | Api |
 
-Pozrite si [Zdieľané knižnice](../shared-libraries/), kde nájdete informácie o nastavení workspace a postupe vydávania.
+Pozrite si [Zdieľané knižnice](../shared-libraries/index.md), kde nájdete informácie o nastavení workspace a postupe vydávania.
 
 ## Vzťahy medzi projektmi
 
@@ -90,5 +91,5 @@ Všetky frontendové aplikácie závisia od `@churchapps/helpers`. Webové aplik
 
 ## Ďalšie kroky
 
-- **[Premenné prostredia](./environment-variables)** -- Nastavte si súbory `.env` tak, aby sa pripájali k API
-- **[Lokálne nastavenie API](../api/local-setup)** -- Nastavte si backendové API lokálne
+- **[Premenné prostredia](./environment-variables.md)** -- Nastavte si súbory `.env` tak, aby sa pripájali k API
+- **[Lokálne nastavenie API](../api/local-setup.md)** -- Nastavte si backendové API lokálne

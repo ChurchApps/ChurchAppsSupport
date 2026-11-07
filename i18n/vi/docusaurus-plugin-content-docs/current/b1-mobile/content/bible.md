@@ -1,5 +1,7 @@
 ---
-title: "Kinh Thánh"
+title: "Đọc Kinh Thánh trong B1 Mobile"
+sidebar_label: "Kinh Thánh"
+description: "Dùng trình đọc Kinh Thánh trong B1 Mobile để mở từ menu ngăn kéo, chuyển giữa các sách, chương và câu, và tìm tùy chọn Kinh Thánh của nhà thờ."
 ---
 
 # Kinh Thánh
@@ -13,7 +15,7 @@ B1 Mobile có sẵn trình đọc Kinh Thánh tích hợp để bạn có thể 
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Hội thánh của bạn phải bật tính năng Kinh Thánh
 
 </div>
@@ -37,7 +39,7 @@ Trình đọc được nhúng cung cấp các điều khiển để di chuyển 
 Trình đọc chiếm toàn bộ màn hình, cho bạn nhiều không gian để đọc thoải mái trên thiết bị của mình.
 
 :::tip
-Hãy biến màn hình Kinh Thánh thành một phần trong thói quen hằng ngày của bạn -- đây là cách nhanh chóng để đọc Lời Chúa ở bất cứ đâu. Kết hợp với [Câu Gốc Hằng Ngày](./verse-of-the-day) để có thêm cảm hứng mỗi ngày.
+Hãy biến màn hình Kinh Thánh thành một phần trong thói quen hằng ngày của bạn -- đây là cách nhanh chóng để đọc Lời Chúa ở bất cứ đâu. Kết hợp với [Câu Gốc Hằng Ngày](./verse-of-the-day.md) để có thêm cảm hứng mỗi ngày.
 :::
 
 ## Tình Trạng Khả Dụng
@@ -46,6 +48,6 @@ Màn hình Kinh Thánh chỉ khả dụng khi hội thánh của bạn đã bậ
 
 ## Bài Viết Liên Quan
 
-- [Câu Gốc Hằng Ngày](./verse-of-the-day) -- Xem một câu Kinh Thánh mỗi ngày
-- [Bài Giảng](./sermons) -- Xem các bài giảng bổ sung cho việc đọc Kinh Thánh của bạn
+- [Câu Gốc Hằng Ngày](./verse-of-the-day.md) -- Xem một câu Kinh Thánh mỗi ngày
+- [Bài Giảng](./sermons.md) -- Xem các bài giảng bổ sung cho việc đọc Kinh Thánh của bạn
 - [FreePlay](/docs/freeplay/) -- Chơi chương trình học có cấu trúc trên TV lớp học (thay thế màn hình Bài Học trong ứng dụng đã ngừng hỗ trợ)

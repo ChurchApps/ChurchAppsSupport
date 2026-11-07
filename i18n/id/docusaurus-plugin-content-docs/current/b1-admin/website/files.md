@@ -1,5 +1,6 @@
 ---
 title: "File"
+description: "Unggah, telusuri, dan kelola gambar dan dokumen untuk situs gereja Anda di B1 Admin, termasuk menautkan penyimpanan eksternal untuk ruang tambahan."
 ---
 
 # File
@@ -13,7 +14,7 @@ Halaman File adalah pusat penyimpanan untuk semua media dan dokumen yang digunak
 <div class="prereqs">
 <h4>Sebelum Anda Memulai</h4>
 
-- Selesaikan [Pengaturan Awal](initial-setup) untuk situs web Anda
+- Selesaikan [Pengaturan Awal](./initial-setup.md) untuk situs web Anda
 - Optimalkan gambar sebelum mengunggah agar waktu muat halaman lebih cepat
 - Siapkan file Anda dalam format web yang umum (PNG, JPG, PDF, dll.)
 
@@ -42,7 +43,7 @@ Tabel file mencantumkan setiap file yang diunggah beserta **Name** dan **Size**-
 3. File yang Anda unggah di sini tersedia untuk digunakan di seluruh halaman situs web dan blok konten Anda.
 
 :::info
-Saat membuat halaman di [Mengelola Halaman](managing-pages), Anda dapat merujuk file apa pun yang diunggah di sini melalui URL-nya. Ini membuat semua media Anda tertata di satu lokasi pusat.
+Saat membuat halaman di [Mengelola Halaman](./managing-pages.md), Anda dapat merujuk file apa pun yang diunggah di sini melalui URL-nya. Ini membuat semua media Anda tertata di satu lokasi pusat.
 :::
 
 ## Menghapus File
@@ -57,5 +58,5 @@ File yang dihapus tidak dapat dipulihkan. Periksa kembali bahwa file tidak lagi 
 
 ## Langkah Selanjutnya
 
-- [Mengelola Halaman](managing-pages) -- Tambahkan file yang telah diunggah ke halaman situs web
-- [Tampilan](appearance) -- Sesuaikan tema visual situs Anda
+- [Mengelola Halaman](./managing-pages.md) -- Tambahkan file yang telah diunggah ke halaman situs web
+- [Tampilan](./appearance.md) -- Sesuaikan tema visual situs Anda

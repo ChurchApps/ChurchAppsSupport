@@ -1,5 +1,6 @@
 ---
 title: "Notificări"
+description: "Configurați alertele push pentru aplicația B1 Mobile, apoi vizualizați, deschideți și ștergeți notificările bisericii pentru mesaje, grupuri și slujire."
 ---
 
 # Notificări
@@ -13,7 +14,7 @@ B1 Mobile folosește notificări push pentru a te ține la curent cu ce se înt�
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Permite notificările pentru B1 Mobile în setările dispozitivului tău
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile folosește notificări push pentru a te ține la curent cu ce se înt�
 
 Notificările pot acoperi o gamă largă de activități, inclusiv:
 
-- **Mesaje** -- Când cineva îți trimite un [mesaj privat](./messaging).
-- **Activitatea grupurilor** -- Actualizări, postări și conversații din [grupurile](../groups/) din care faci parte.
+- **Mesaje** -- Când cineva îți trimite un [mesaj privat](./messaging.md).
+- **Activitatea grupurilor** -- Actualizări, postări și conversații din [grupurile](../groups/index.md) din care faci parte.
 - **Atribuiri de serviciu** -- Când ești atribuit unui [plan](../serving/viewing-plans.md) sau când se schimbă statusul atribuirii tale.
 - **Alte actualizări** -- Anunțuri generale și activități relevante pentru tine.
 

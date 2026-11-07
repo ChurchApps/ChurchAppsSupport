@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "A @churchapps/apphelper megosztott csomag referenciája: alútvonalak, az egyes exportokat használó alkalmazások, helyi fejlesztés és közzététel."
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ A `@churchapps/apphelper` csomag megosztott React-komponenseket és segédfunkci
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **Node.js**-t és a **Git**-et – lásd: [Előfeltételek](../setup/prerequisites)
+- Telepítse a **Node.js**-t és a **Git**-et – lásd: [Előfeltételek](../setup/prerequisites.md)
 - Ismerkedjen meg a [Packages munkaterület](./index.md) beállításával és a kiadási folyamattal
 
 </div>
@@ -92,6 +93,6 @@ Ne távolítson el és ne nevezzen át exportot addig, amíg a helyettesítő ni
 
 ## Kapcsolódó cikkek
 
-- **[Segédfüggvények](./helpers)** – Az AppHelperrel együtt használt alapvető segédcsomag
-- **[Webalkalmazások](../web-apps/)** – Az ezt a csomagot használó webalkalmazások
+- **[Segédfüggvények](./helpers.md)** – Az AppHelperrel együtt használt alapvető segédcsomag
+- **[Webalkalmazások](../web-apps/index.md)** – Az ezt a csomagot használó webalkalmazások
 - **[Megosztott könyvtárak áttekintése](./index.md)** – Munkaterület-beállítás, kiadási folyamat és a helyi linkelési munkafolyamat

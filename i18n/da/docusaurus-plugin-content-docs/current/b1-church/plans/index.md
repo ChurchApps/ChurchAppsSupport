@@ -1,5 +1,6 @@
 ---
 title: "Planer"
+description: "Find ud af, hvilke tjenesteplaner du er tildelt i B1.church, tjek dine positioner og datoer, og accepter eller afslå opgaver fra din medlemsportal."
 ---
 
 # Planer

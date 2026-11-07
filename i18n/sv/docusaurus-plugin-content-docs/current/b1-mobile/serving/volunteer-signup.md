@@ -1,5 +1,7 @@
 ---
-title: "Anmälan som volontär"
+title: "Volontäranmälan i B1 Mobile-appen"
+sidebar_label: "Anmälan som volontär"
+description: "Hitta lediga volontärpositioner för kommande gudstjänster, anmäl dig eller ta bort en anmälan i B1 Mobile-appen. Omfattar tidsfrister och hur platsbegränsningar fungerar."
 ---
 
 # Anmälan som volontär
@@ -13,7 +15,7 @@ Bläddra bland lediga volontärpositioner och anmäl dig till kommande gudstjän
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Din kyrkadministratör måste ha aktiverat självanmälan för minst en position
 
 </div>
@@ -60,5 +62,5 @@ Aktivera [pushnotiser](../community/notifications.md) för att hålla dig inform
 
 ## Relaterade artiklar
 
-- [Visa planer](./viewing-plans) – Se dina tilldelade planer och gudstjänstordningar
+- [Visa planer](./viewing-plans.md) – Se dina tilldelade planer och gudstjänstordningar
 - [Notiser](../community/notifications.md) – Håll dig uppdaterad om dina tjänstuppdrag

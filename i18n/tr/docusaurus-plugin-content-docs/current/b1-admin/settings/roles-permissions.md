@@ -1,5 +1,6 @@
 ---
 title: "Roller ve İzinler"
+description: "B1 Admin'de rolleri ayarlayarak personel ve gönüllülerin bağışlardan ve katılımdan kişilere ve gruplara kadar neleri görebileceğini ve değiştirebileceğini kontrol edin."
 ---
 
 # Roller ve İzinler

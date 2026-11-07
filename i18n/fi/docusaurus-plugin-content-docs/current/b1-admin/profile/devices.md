@@ -1,5 +1,6 @@
 ---
 title: "Laitteiden hallinta"
+description: "Yhdistä, nimeä ja poista tiliisi B1 Adminissa liitetyt ChurchAppsPlayer- ja FreePlay-näytöt, jotta seurakunnan näytöt pysyvät ajan tasalla ja turvallisina."
 ---
 
 # Laitteiden hallinta

@@ -1,5 +1,6 @@
 ---
 title: "Görünüm"
+description: "B1 Admin'de kilise web siteniz için renkleri, yazı tiplerini, boşlukları, logoyu ve gezinmeyi ayarlayın; ayrıca bileşenler, GA4 analitiği, yönlendirmeler ve özel CSS."
 ---
 
 # Görünüm
@@ -13,7 +14,7 @@ Görünüm sayfası, kilise web sitenizin genel görünümünü ve hissini özel
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Web siteniz için [İlk Kurulum](initial-setup) adımlarını tamamlayın
+- Web siteniz için [İlk Kurulum](./initial-setup.md) adımlarını tamamlayın
 - Kilise logonuzu, şeffaf arka planlı ve 4:1 en-boy oranına sahip PNG biçiminde hazır bulundurun
 - Mevcut bir stil rehberiniz varsa kilisenizin marka renklerinin onaltılık (hex) değerlerini bilin
 
@@ -98,7 +99,7 @@ Site bileşenleri, sayfa içeriğinin üzerinde yüzen şekilde sitenizin her sa
 :::
 
 :::info
-Siteniz, satır içi betiklerin başka kaynaklardan gelmesini engelleyen bir İçerik Güvenlik Politikası (Content Security Policy) uygular. Buradaki **Custom HTML** alanı ile bireysel sayfalardaki [HTML öğesi](page-editor#using-the-html-element) bu kuralın istisnalarıdır. Bu alanlara kaydettiğiniz kod olduğu gibi çalışır. Bu nedenle yalnızca güvendiğiniz kaynaklardan betik yapıştırın (analitik etiketleri, sohbet bileşenleri ve benzeri gömülü içerikler).
+Siteniz, satır içi betiklerin başka kaynaklardan gelmesini engelleyen bir İçerik Güvenlik Politikası (Content Security Policy) uygular. Buradaki **Custom HTML** alanı ile bireysel sayfalardaki [HTML öğesi](./page-editor.md#using-the-html-element) bu kuralın istisnalarıdır. Bu alanlara kaydettiğiniz kod olduğu gibi çalışır. Bu nedenle yalnızca güvendiğiniz kaynaklardan betik yapıştırın (analitik etiketleri, sohbet bileşenleri ve benzeri gömülü içerikler).
 :::
 
 ## Stil Temaları
@@ -107,5 +108,5 @@ Hızlı bir başlangıç noktası istiyorsanız, Color Palette bölümündeki **
 
 ## Sonraki Adımlar
 
-- [Sayfaları Yönetme](managing-pages) -- Web sitenizin sayfalarını oluşturun ve düzenleyin
-- [Dosyalar](files) -- Sitenizin medya dosyalarını yükleyin
+- [Sayfaları Yönetme](./managing-pages.md) -- Web sitenizin sayfalarını oluşturun ve düzenleyin
+- [Dosyalar](./files.md) -- Sitenizin medya dosyalarını yükleyin

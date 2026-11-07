@@ -1,5 +1,6 @@
 ---
 title: "Flujos de trabajo"
+description: "Crea tableros estilo Kanban en B1 Admin para guiar a las personas por los pasos de seguimiento con correos, mensajes de texto automáticos y disparadores que agregan personas automáticamente."
 ---
 
 # Flujos de trabajo

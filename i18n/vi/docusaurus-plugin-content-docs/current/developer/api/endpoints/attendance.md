@@ -1,5 +1,6 @@
 ---
 title: "Các endpoint Điểm danh"
+description: "Tài liệu API điểm danh cho B1 Admin và B1 Checkin: cơ sở, buổi lễ, giờ lễ, phiên, lượt tham dự, quy tắc điểm danh và các endpoint xuất dữ liệu."
 ---
 
 # Các endpoint Điểm danh
@@ -270,6 +271,6 @@ Theo dõi chuỗi điểm danh của từng cá nhân -- số tuần liên tiế
 
 ## Trang liên quan
 
-- [Các endpoint Thành viên](./membership) — Người, nhóm, vai trò và quản lý hội thánh
-- [Xác thực & Quyền](./authentication) — Luồng đăng nhập, JWT, mô hình quyền
-- [Cấu trúc mô-đun](../module-structure) — Các mẫu tổ chức mã nguồn
+- [Các endpoint Thành viên](./membership.md) — Người, nhóm, vai trò và quản lý hội thánh
+- [Xác thực & Quyền](./authentication.md) — Luồng đăng nhập, JWT, mô hình quyền
+- [Cấu trúc mô-đun](../module-structure.md) — Các mẫu tổ chức mã nguồn

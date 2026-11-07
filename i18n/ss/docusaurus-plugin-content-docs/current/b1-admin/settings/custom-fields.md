@@ -1,5 +1,6 @@
 ---
 title: "Emasikhala Lakhetsile"
+description: "Chaza tinkhundla letikhethekile ku-B1 Admin kulandzela tinkhondvo letengetiwe temuntfu, njengetinsuku lekuphela kwekuhlolwa kwemabhakhraundi noma emasayizi ematiishethi, bese usesha futsi uhlunge ngato."
 ---
 
 # Emasikhala Lakhetsile

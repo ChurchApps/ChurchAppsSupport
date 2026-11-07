@@ -1,5 +1,6 @@
 ---
 title: "API įdiegimas"
+description: "Diekite ChurchApps API į AWS Lambda su Serverless: kūrimas, demo ir produkcijos darbo eigos, duomenų bazių migracijos ir SSM konfigūracija."
 ---
 
 # API įdiegimas
@@ -13,7 +14,7 @@ ChurchApps API diegiami kaip AWS Lambda funkcijos naudojant Serverless Framework
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Nusistatykite API lokaliai – žr. [Lokalus API nustatymas](../api/local-setup)
+- Nusistatykite API lokaliai – žr. [Lokalus API nustatymas](../api/local-setup.md)
 - Savo kompiuteryje nustatykite AWS prisijungimo duomenis
 - Įsitikinkite, kad turite prieigą prie tikslinės AWS paskyros
 
@@ -47,7 +48,7 @@ Praktikoje API diegia GitHub Actions: **Deploy Demo** paleidžiamas kiekvieną k
 
 ## Duomenų bazės migracijos
 
-**Deploy Prod** diegimo metu pritaiko laukiančias duomenų bazės migracijas. Produkcinės duomenų bazės priima ryšius tik iš VPC vidaus, todėl iškart po `serverless deploy` darbo eiga iškviečia `migrate` Lambda funkciją (`api-Prod-migrate`). Ji vykdo kiekvieno modulio laukiančias migracijas ir grąžina `{ ok, environment, modules }`. Jei kuris nors modulis nepavyksta arba jo migracijos atmetamos (pavyzdžiui, duomenų bazė be migracijų istorijos), darbas nutraukiamas, kad schema niekada neatsiliktų nuo kodo. **Rollback Prod** atšaukia tik Lambda kodą; migracijos lieka pritaikytos, todėl jas rašykite taip, kad jos tik pridėtų, o ne keistų ar šalintų. Informacijos apie migracijų būseną ar rankinį jų vykdymą ieškokite [Serverio administravimas -- Duomenų bazės migracijos](../server-admin#database-migrations).
+**Deploy Prod** diegimo metu pritaiko laukiančias duomenų bazės migracijas. Produkcinės duomenų bazės priima ryšius tik iš VPC vidaus, todėl iškart po `serverless deploy` darbo eiga iškviečia `migrate` Lambda funkciją (`api-Prod-migrate`). Ji vykdo kiekvieno modulio laukiančias migracijas ir grąžina `{ ok, environment, modules }`. Jei kuris nors modulis nepavyksta arba jo migracijos atmetamos (pavyzdžiui, duomenų bazė be migracijų istorijos), darbas nutraukiamas, kad schema niekada neatsiliktų nuo kodo. **Rollback Prod** atšaukia tik Lambda kodą; migracijos lieka pritaikytos, todėl jas rašykite taip, kad jos tik pridėtų, o ne keistų ar šalintų. Informacijos apie migracijų būseną ar rankinį jų vykdymą ieškokite [Serverio administravimas -- Duomenų bazės migracijos](../server-admin.md#database-migrations).
 
 ## Kas sukuriama
 
@@ -75,6 +76,6 @@ Kiekvienas sujungimas į `main` pirmiausia diegiamas į demonstracinę aplinką.
 
 ## Susijusie straipsniai
 
-- **[Lokalus API nustatymas](../api/local-setup)** -- API nustatymas kūrimui
-- **[Modulio struktūra](../api/module-structure)** -- Lambda funkcijų architektūros supratimas
-- **[Žiniatinklio programų diegimas](./web-apps)** -- Frontend programų diegimas
+- **[Lokalus API nustatymas](../api/local-setup.md)** -- API nustatymas kūrimui
+- **[Modulio struktūra](../api/module-structure.md)** -- Lambda funkcijų architektūros supratimas
+- **[Žiniatinklio programų diegimas](./web-apps.md)** -- Frontend programų diegimas

@@ -1,5 +1,6 @@
 ---
 title: "Lập lịch trên trang Lịch"
+description: "Thiết lập lịch hằng tuần hoặc một lần trong Lịch của FreePlay Admin để phát danh sách, kế hoạch hoặc thư mục trên nhóm màn hình, có vòng lặp dự phòng."
 ---
 
 # Lập lịch trên trang Lịch
@@ -13,8 +14,8 @@ Trang **Lịch** trong FreePlay Admin quyết định mỗi nhóm màn hình ph�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Tạo ít nhất một nhóm màn hình. Xem [Quản lý màn hình và nhóm](./managing-screens#screen-groups)
-- [Tạo danh sách phát](./building-playlists), hoặc đã thiết lập loại kế hoạch trong B1 Admin
+- Tạo ít nhất một nhóm màn hình. Xem [Quản lý màn hình và nhóm](./managing-screens.md#screen-groups)
+- [Tạo danh sách phát](./building-playlists.md), hoặc đã thiết lập loại kế hoạch trong B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Nếu hai lịch trùng nhau, biểu mẫu sẽ hiện cảnh báo: **Trùng v�
 
 ## Màn hình cập nhật thay đổi như thế nào
 
-Các màn hình đã ghép đôi sẽ tải xuống mọi nội dung được lên lịch trong 7 ngày tới và tự kiểm tra thay đổi. Bạn không cần chạm vào TV sau khi chỉnh sửa lịch. Để xem khi nào màn hình đã có đủ mọi thứ cần thiết, hãy kiểm tra **Sẵn sàng đến** trên [trang Màn hình](./managing-screens).
+Các màn hình đã ghép đôi sẽ tải xuống mọi nội dung được lên lịch trong 7 ngày tới và tự kiểm tra thay đổi. Bạn không cần chạm vào TV sau khi chỉnh sửa lịch. Để xem khi nào màn hình đã có đủ mọi thứ cần thiết, hãy kiểm tra **Sẵn sàng đến** trên [trang Màn hình](./managing-screens.md).
 
 ## Bài viết liên quan
 
-- **[Tạo danh sách phát](./building-playlists)** - Tạo các danh sách phát bạn sẽ lên lịch
-- **[Phát theo lịch trên TV](./scheduled-playback)** - Cách bài học theo nhịp giảng viên và điều khiển từ xa hoạt động trên TV
-- **[Quản lý màn hình và nhóm](./managing-screens)** - Thêm nhóm và kiểm tra việc tải xuống của từng màn hình
+- **[Tạo danh sách phát](./building-playlists.md)** - Tạo các danh sách phát bạn sẽ lên lịch
+- **[Phát theo lịch trên TV](./scheduled-playback.md)** - Cách bài học theo nhịp giảng viên và điều khiển từ xa hoạt động trên TV
+- **[Quản lý màn hình và nhóm](./managing-screens.md)** - Thêm nhóm và kiểm tra việc tải xuống của từng màn hình
 - **[Chỉ giữ một phần của mỗi bài học](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Cắt mọi bài học đã lên lịch trong một loại kế hoạch xuống các phần mà phòng của bạn phát

@@ -1,5 +1,6 @@
 ---
 title: "Fornitori di terze parti"
+description: "Aggiungere un feed di curricula esterno a Lessons.church dalla pagina Third-Party admin, poi visualizzare, aggiornare o rimuovere la connessione."
 ---
 
 # Fornitori di terze parti

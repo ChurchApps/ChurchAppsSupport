@@ -1,5 +1,6 @@
 ---
 title: "Bibliotecas compartidas"
+description: "Paquetes npm @churchapps compartidos por B1 Admin, B1.church y las APIs, cómo configurar el workspace Packages y publicar con changesets."
 ---
 
 # Bibliotecas compartidas
@@ -14,9 +15,9 @@ El código compartido de ChurchApps se publica en npm bajo el ámbito `@churchap
 
 | Paquete | Descripción | Utilizado por |
 |---------|-------------|---------------|
-| [`@churchapps/helpers`](./helpers) | Capa base: funciones auxiliares independientes de frameworks e interfaces TypeScript compartidas que forman el contrato de datos entre aplicaciones | Todos los proyectos |
-| [`@churchapps/apihelper`](./api-helper) | Utilidades de Express del lado del servidor: autenticación, controladores base, acceso a bases de datos, integraciones con AWS y correo electrónico | Todas las APIs |
-| [`@churchapps/apphelper`](./app-helper) | Componentes de React y módulos de funcionalidades compartidos (inicio de sesión, donaciones, formularios, markdown, sitio web) | Todas las aplicaciones web |
+| [`@churchapps/helpers`](./helpers.md) | Capa base: funciones auxiliares independientes de frameworks e interfaces TypeScript compartidas que forman el contrato de datos entre aplicaciones | Todos los proyectos |
+| [`@churchapps/apihelper`](./api-helper.md) | Utilidades de Express del lado del servidor: autenticación, controladores base, acceso a bases de datos, integraciones con AWS y correo electrónico | Todas las APIs |
+| [`@churchapps/apphelper`](./app-helper.md) | Componentes de React y módulos de funcionalidades compartidos (inicio de sesión, donaciones, formularios, markdown, sitio web) | Todas las aplicaciones web |
 | `@churchapps/content-providers` | Capa de abstracción sobre proveedores de contenido de terceros (Lessons.church, Planning Center, Dropbox y otros) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Kit de herramientas para crear integraciones de B1.church: verificación de webhooks, cliente REST tipado, ayudantes de OAuth | Desarrolladores externos de integraciones |
 | `@churchapps/texting` | Abstracción de proveedores de SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

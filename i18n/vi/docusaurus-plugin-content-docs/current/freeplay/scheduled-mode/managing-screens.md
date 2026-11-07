@@ -1,5 +1,6 @@
 ---
 title: "Quản lý màn hình và nhóm"
+description: "Kiểm tra TV FreePlay nào trực tuyến và sẵn sàng cho Chủ nhật, chỉnh cài đặt màn hình và lập nhóm dùng chung lịch trong FreePlay Admin."
 ---
 
 # Quản lý màn hình và nhóm
@@ -14,7 +15,7 @@ Trang **Screens** trong FreePlay Admin liệt kê mọi TV được ghép nối 
 <h4>Trước khi bắt đầu</h4>
 
 - Đăng nhập vào FreePlay Admin tại [admin.freeplay.church](https://admin.freeplay.church)
-- [Ghép nối ít nhất một màn hình](./pairing-a-screen)
+- [Ghép nối ít nhất một màn hình](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Dùng **Present** để phát lịch của màn hình trong trình duyệt, ho�
 
 Nhấp vào nhãn của màn hình để mở trang của màn hình đó. Ở bên trái:
 
-- **Present in browser** - Phát lịch của màn hình này toàn màn hình trong trình duyệt, giống như cách nó hiển thị trên TV. Xem [Trình bày từ trình duyệt](./scheduled-playback#presenting-from-a-browser)
+- **Present in browser** - Phát lịch của màn hình này toàn màn hình trong trình duyệt, giống như cách nó hiển thị trên TV. Xem [Trình bày từ trình duyệt](./scheduled-playback.md#presenting-from-a-browser)
 - **Edit** - Thay đổi nhãn, nhóm hoặc chế độ
 - **More** > **Unpair** - Ngắt kết nối TV. TV sẽ quay lại hiển thị mã ghép nối
 
@@ -93,6 +94,6 @@ Xóa một nhóm cũng sẽ xóa luôn lịch của nhóm đó. Các màn hình 
 
 ## Bài viết liên quan
 
-- **[Ghép nối màn hình](./pairing-a-screen)** - Thêm TV mới
-- **[Lên lịch cho lịch chiếu](./scheduling-the-calendar)** - Thiết lập nội dung mỗi nhóm phát và vòng lặp mặc định của nhóm
-- **[Phát theo lịch trên TV](./scheduled-playback)** - Ý nghĩa của ngày "Ready through" trên chính TV
+- **[Ghép nối màn hình](./pairing-a-screen.md)** - Thêm TV mới
+- **[Lên lịch cho lịch chiếu](./scheduling-the-calendar.md)** - Thiết lập nội dung mỗi nhóm phát và vòng lặp mặc định của nhóm
+- **[Phát theo lịch trên TV](./scheduled-playback.md)** - Ý nghĩa của ngày "Ready through" trên chính TV

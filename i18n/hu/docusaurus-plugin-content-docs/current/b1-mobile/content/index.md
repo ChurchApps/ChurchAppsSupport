@@ -1,5 +1,7 @@
 ---
-title: "Tartalom"
+title: "Tartalmi funkciók a B1 Mobile alkalmazásban"
+sidebar_label: "Tartalom"
+description: "Keress prédikációkat, élő közvetítéseket, bibliaolvasást és a Nap versét a B1 Mobile alkalmazásban, és nézd meg, mely tartalmi funkciókat kapcsolta be gyülekezeted."
 ---
 
 # Tartalom
@@ -30,20 +32,20 @@ Tekintse meg a minden nap változó, szépen formázott bibliai versképet. A k�
 
 ### Lessons (elavult)
 
-A beágyazott Lessons képernyőt osztálytermi lejátszáshoz a **[FreePlay](/docs/freeplay/)** váltotta fel, a böngészéshez pedig közvetlenül a [Lessons.church](https://lessons.church) oldalt érdemes felkeresni. A részletekért lásd a [Lessons referenciaoldalt](./lessons).
+A beágyazott Lessons képernyőt osztálytermi lejátszáshoz a **[FreePlay](/docs/freeplay/)** váltotta fel, a böngészéshez pedig közvetlenül a [Lessons.church](https://lessons.church) oldalt érdemes felkeresni. A részletekért lásd a [Lessons referenciaoldalt](./lessons.md).
 
 ## Tartalom keresése
 
 A tartalmi funkciók az alkalmazás oldalsó menüjéből érhetők el. A gyülekezet adminisztrátora dönti el, mely tartalmi funkciók engedélyezettek, ezért lehet, hogy nem látja a fent felsorolt összes lehetőséget. Ha egy adott funkció hiányzik, lehet, hogy a gyülekezete még nem állította be.
 
 :::info
-A tartalmi funkciókat a gyülekezet adminisztrátora állítja be a [B1 Admin](../../b1-admin/) felületen keresztül. Ha nem látja a várt funkciót, forduljon a gyülekezeti irodához.
+A tartalmi funkciókat a gyülekezet adminisztrátora állítja be a [B1 Admin](../../b1-admin/index.md) felületen keresztül. Ha nem látja a várt funkciót, forduljon a gyülekezeti irodához.
 :::
 
 ## Következő lépések
 
-- [Igehirdetések](./sermons) -- Felvett igehirdetések böngészése és megtekintése
-- [Élő közvetítés](./live-streaming) -- Élő adások követése
-- [Biblia](./bible) -- Szentírás olvasása a beépített olvasóban
-- [Napi igevers](./verse-of-the-day) -- A mai igevers megtekintése
+- [Igehirdetések](./sermons.md) -- Felvett igehirdetések böngészése és megtekintése
+- [Élő közvetítés](./live-streaming.md) -- Élő adások követése
+- [Biblia](./bible.md) -- Szentírás olvasása a beépített olvasóban
+- [Napi igevers](./verse-of-the-day.md) -- A mai igevers megtekintése
 - [FreePlay](/docs/freeplay/) -- Leckék lejátszása osztálytermi tévéken (az elavult alkalmazásbeli Lessons képernyő helyett)

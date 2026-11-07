@@ -1,5 +1,6 @@
 ---
 title: "Administration"
+description: "Overview of the Lessons.church admin area in ChurchApps, covering how to manage programs, studies, lessons, resources, statistics, and external curriculum providers."
 ---
 
 # Administration

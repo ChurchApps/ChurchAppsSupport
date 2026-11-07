@@ -1,5 +1,6 @@
 ---
 title: "Recording Donations"
+description: "Record church donations in B1 Admin by creating a batch, entering gifts one at a time, importing a CSV, or logging one gift from a donor profile."
 ---
 
 # Recording Donations

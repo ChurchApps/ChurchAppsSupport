@@ -1,5 +1,7 @@
 ---
-title: "Group Details"
+title: "Group Details in the B1 Mobile App"
+sidebar_label: "Group Details"
+description: "See what the group detail page in B1 Mobile shows, including group info, posts, and members, and how to open it from the Groups screen."
 ---
 
 # Group Details
@@ -13,7 +15,7 @@ When you tap a group from the Groups screen, you are taken to that group's detai
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Open the [Groups](./index.md) screen
 
 </div>
@@ -46,5 +48,5 @@ Your most-visited group appears as the hero card at the top of the Groups screen
 
 ## Related Articles
 
-- [Group Timeline](./group-timeline) -- Learn about the unified activity feed across all your groups
+- [Group Timeline](./group-timeline.md) -- Learn about the unified activity feed across all your groups
 - [Messaging](../community/messaging.md) -- Send private messages to group members

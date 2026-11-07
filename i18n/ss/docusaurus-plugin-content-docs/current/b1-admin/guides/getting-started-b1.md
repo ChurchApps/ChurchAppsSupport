@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Calisa Libandla Lakho nge-B1"
+description: "Hamba ngetinyatselo tekusetfula libandla lelisha ku-B1 Admin: dala akhawunti, lungisa tilungiselelo, engeta tindzima, ngenisa emalungu, uvule tinsita."
 ---
 
 # Calisa Libandla Lakho nge-B1

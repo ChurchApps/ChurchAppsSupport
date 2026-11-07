@@ -1,5 +1,6 @@
 ---
 title: "Guia: Configurar o check-in do ministério infantil"
+description: "Configure o check-in infantil no B1 Admin: vincule famílias, crie grupos por idade, defina cultos e imprima crachás para o quiosque B1 Checkin."
 ---
 
 # Configurar o check-in do ministério infantil

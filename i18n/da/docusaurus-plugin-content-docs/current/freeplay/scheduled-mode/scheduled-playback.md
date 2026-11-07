@@ -1,5 +1,6 @@
 ---
 title: "Planlagt afspilning på TV'et"
+description: "Et parret FreePlay-tv henter ugen forude og afspiller efter uret, også offline. Dækker infopanelet, fjernbetjeningsknapperne og fastgørelse af en playliste."
 ---
 
 # Planlagt afspilning på TV'et
@@ -13,8 +14,8 @@ Når et TV er parret med en kalender, kører FreePlay det for dig. Det henter in
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Par TV'et med en kalender](./pairing-a-screen)
-- [Læg noget i kalenderen](./scheduling-the-calendar), eller angiv en standardloop for skærmens gruppe
+- [Par TV'et med en kalender](./pairing-a-screen.md)
+- [Læg noget i kalenderen](./scheduling-the-calendar.md), eller angiv en standardloop for skærmens gruppe
 
 </div>
 
@@ -40,7 +41,7 @@ Panelet har også tre knapper:
 
 - **Fastgør denne playliste** - Bliv ved med at afspille det aktuelle indhold i en loop og ignorer kalenderen. Vælg **Frigør playliste** for at vende tilbage til programmet
 - **Gennemse indhold** - Forlad den planlagte afspiller for at gennemse dine tilsluttede udbydere
-- **Indstillinger** - Åbn FreePlays indstillinger, hvor du kan [afparre eller parre med en anden kalender](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Indstillinger** - Åbn FreePlays indstillinger, hvor du kan [afparre eller parre med en anden kalender](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 For at vende tilbage til programmet efter gennemsyn, tryk på **Tilbage** på fjernbetjeningen fra skærmbilledet **Indholdsudbydere**, eller åbn **Indstillinger**, vælg **Par med en kalender**, og vælg **Tilbage til program**. Et parret TV vender også tilbage til den planlagte afspiller, når FreePlay kommer tilbage i forgrunden, og det åbner altid til den planlagte afspiller.
@@ -77,6 +78,6 @@ Du kan også afspille en skærms kalender i en webbrowser. I FreePlay Admin skal
 
 ## Relaterede artikler
 
-- **[Planlægning af kalenderen](./scheduling-the-calendar)** - Angiv, hvad der afspilles, og hvad der sker, når det er færdigt tidligt
-- **[Administration af skærme og grupper](./managing-screens)** - Tjek hver skærms hentede filer fra FreePlay Admin
-- **[Afspilning af indhold](../content-providers/playing-content)** - Afspilningskontroller, når du selv afspiller indhold
+- **[Planlægning af kalenderen](./scheduling-the-calendar.md)** - Angiv, hvad der afspilles, og hvad der sker, når det er færdigt tidligt
+- **[Administration af skærme og grupper](./managing-screens.md)** - Tjek hver skærms hentede filer fra FreePlay Admin
+- **[Afspilning af indhold](../content-providers/playing-content.md)** - Afspilningskontroller, når du selv afspiller indhold

@@ -1,5 +1,6 @@
 ---
 title: "Lagu"
+description: "Kelola pustaka lagu pujian di B1 Admin: cari dan tambahkan lagu, edit detailnya, lampirkan lirik ChordPro dan aransemen, serta unggah audio latihan."
 ---
 
 # Lagu

@@ -1,5 +1,6 @@
 ---
 title: "Verbinden Sie einen Klassen-Fernseher mit Ihren B1 Admin-Lektionen"
+description: "Einen Klassenraum-TV mit FreePlay an geplante Lektionen in B1 Admin koppeln, damit Lehrkräfte sie im Unterricht abspielen können."
 ---
 
 # Verbinden Sie einen Klassen-Fernseher mit Ihren B1 Admin-Lektionen

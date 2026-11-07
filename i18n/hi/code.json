@@ -386,13 +386,13 @@
     "message": "B1 मोबाइल"
   },
   "homepage.products.b1mobile.description": {
-    "message": "iOS और Android पर चर्च सदस्यों के लिए मोबाइल ऐप।"
+    "message": "iOS और Android के लिए पुराना सदस्य ऐप, जिसे अब B1.church वेब ऐप से बदल दिया गया है।"
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 चेक-इन"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Android टैबलेट के लिए सेल्फ-सर्विस कियोस्क चेक-इन ऐप।"
+    "message": "iPad और Android टैबलेट के लिए स्व-सेवा चेक-इन किओस्क ऐप।"
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "चर्च कार्यप्रवाहों के लिए विशेष रूप से डिज़ाइन किया गया — मंत्रालय के लिए पुनर्उपयोग किया गया कोई सामान्य टूल नहीं।"
   },
   "homepage.title": {
-    "message": "होम पेज"
+    "message": "B1.church, Lessons.church और FreePlay के लिए सहायता"
   },
   "homepage.description": {
-    "message": "ChurchApps के लिए सहायता दस्तावेज़ — चर्च प्रबंधन के लिए मुफ्त ओपन-सोर्स टूल।"
+    "message": "ChurchApps के निःशुल्क, ओपन-सोर्स चर्च सॉफ़्टवेयर के लिए मार्गदर्शिकाएँ और दस्तावेज़ीकरण: B1.church चर्च प्रबंधन, चेक-इन, दान और वेबसाइटें, Lessons.church पाठ्यक्रम, और FreePlay।"
   },
   "homepage.products.heading": {
     "message": "अपना उत्पाद चुनें"

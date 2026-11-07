@@ -1,5 +1,6 @@
 ---
 title: "Guía: Generar Reportes de Donaciones de Fin de Año"
+description: "En B1 Admin, cierra los registros de donaciones del año, revisa la configuración fiscal de los fondos y genera extractos deducibles para cada donante."
 ---
 
 # Generar Reportes de Donaciones de Fin de Año

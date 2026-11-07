@@ -1,5 +1,6 @@
 ---
 title: "Syntymäpäivä- ja hääpäivälistat"
+description: "Luo lista kaikista, joilla on syntymäpäivä tai hääpäivä valittuna kuukautena B1 Adminin People-haun suodattimilla, ja katso tai vie päivämäärät."
 ---
 
 # Syntymäpäivä- ja hääpäivälistat

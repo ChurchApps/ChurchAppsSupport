@@ -1,5 +1,6 @@
 ---
 title: "Wyszukiwanie"
+description: "Wyszukiwanie programów, studiów i lekcji w bibliotece Lessons.church według słowa kluczowego lub historii biblijnej oraz zasady rankingu i etykiet wyników."
 ---
 
 # Wyszukiwanie

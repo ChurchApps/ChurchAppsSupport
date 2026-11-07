@@ -1,5 +1,6 @@
 ---
 title: "Créer un compte"
+description: "Créer un compte ChurchApps sur Lessons.church, puis le relier à un profil d'église nouveau ou existant pour gérer classes et calendriers."
 ---
 
 # Créer un compte

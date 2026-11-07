@@ -1,5 +1,7 @@
 ---
-title: "Kom i Gang"
+title: "Komme i gang med B1 Checkin"
+sidebar_label: "Kom i Gang"
+description: "Sett opp B1 Checkin-kioskappen på et Android-nettbrett: installer den, logg inn, velg menighet og koble eventuelt til en etikettskriver."
 ---
 
 # Kom i Gang med B1 Church Checkin
@@ -27,9 +29,9 @@ Det tar bare noen minutter å sette opp B1 Church Checkin. Denne seksjonen veile
 
 Når du starter appen for første gang, går du gjennom tre trinn:
 
-1. **[Logg inn](./logging-in)** -- Skriv inn e-posten og passordet ditt for å autentisere.
-2. **[Velg kirken din](./logging-in)** -- Hvis kontoen din er knyttet til flere kirker, velg hvilken denne kiosken skal betjene.
-3. **[Sett opp en skriver](./printer-setup)** -- Konfigurer en nettverksskriver for etikettutskrift, eller hopp over dette trinnet hvis du ikke trenger etiketter.
+1. **[Logg inn](./logging-in.md)** -- Skriv inn e-posten og passordet ditt for å autentisere.
+2. **[Velg kirken din](./logging-in.md)** -- Hvis kontoen din er knyttet til flere kirker, velg hvilken denne kiosken skal betjene.
+3. **[Sett opp en skriver](./printer-setup.md)** -- Konfigurer en nettverksskriver for etikettutskrift, eller hopp over dette trinnet hvis du ikke trenger etiketter.
 
 Etter første innlogging lagrer appen legitimasjonen din og kirkevalget. Ved fremtidige oppstarter hopper den rett til gudstjenesteskjermen automatisk.
 
@@ -43,6 +45,6 @@ Sørg for at kirkens administrator har konfigurert gudstjenester, gudstjenesteti
 
 ## Neste Trinn
 
-- [Logge Inn](./logging-in) -- Detaljerte instruksjoner for innlogging og kirkevalg.
-- [Skriveroppsett](./printer-setup) -- Hvordan oppdage, velge og teste etikettskriveren din.
-- [Innsjekkingsarbeidsflyt](../check-in/) -- Lær den fullstendige innsjekkingsflyten når kiosken er satt opp.
+- [Logge Inn](./logging-in.md) -- Detaljerte instruksjoner for innlogging og kirkevalg.
+- [Skriveroppsett](./printer-setup.md) -- Hvordan oppdage, velge og teste etikettskriveren din.
+- [Innsjekkingsarbeidsflyt](../check-in/index.md) -- Lær den fullstendige innsjekkingsflyten når kiosken er satt opp.

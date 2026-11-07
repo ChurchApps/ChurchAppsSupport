@@ -1,5 +1,6 @@
 ---
 title: "Kostenpflichtige Anmeldungen"
+description: "Richten Sie in B1 Admin kostenpflichtige Veranstaltungsanmeldungen ein: Teilnehmerkategorien mit Preisen, Zusatzoptionen, Rabattcodes, Wartelisten und Zahlungseingang über Ihren Spendenanbieter."
 ---
 
 # Kostenpflichtige Anmeldungen
@@ -13,7 +14,7 @@ Veranstaltungsanmeldungen können mehr sein als eine einfache Teilnehmerzählung
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Aktivieren Sie zuerst die Anmeldung für die Veranstaltung – siehe [Kalender erstellen](creating-calendars#enabling-event-registration)
+- Aktivieren Sie zuerst die Anmeldung für die Veranstaltung – siehe [Kalender erstellen](./creating-calendars.md#enabling-event-registration)
 - Um Zahlungen online einzuziehen, muss Ihre Kirche [Online-Spenden eingerichtet haben](../donations/online-giving-setup.md) (Stripe, PayPal oder Kingdom Funding). Kostenlose Veranstaltungen benötigen keine Spendeneinrichtung. Ohne Online-Spenden funktionieren kostenpflichtige Anmeldungen trotzdem, die Menschen bezahlen die Kirche jedoch direkt – siehe [Kirchen ohne Online-Spenden](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Jeder Code zeigt eine Zählung **Einlösungen**, damit Sie sehen, wie oft er ver
 Aktivieren Sie **Warteliste aktivieren** in der Karte Anmeldeeinstellungen. Erreicht die Veranstaltung die Kapazität:
 
 - Neue Anmeldende erhalten einen Platz auf der Warteliste statt einer Absage. Sie schließen dieselbe Anmeldung ab (die Zahlung wird auf der Warteliste übersprungen).
-- Wenn jemand storniert, rückt die älteste Anmeldung auf der Warteliste **automatisch nach** und erhält eine E-Mail, dass ein Platz frei geworden ist. Schuldet die Person einen Betrag, verlinkt die E-Mail auf [Meine Anmeldungen](../../b1-church/events/my-registrations) auf der B1-Seite Ihrer Kirche, wo die Zahlung abgeschlossen werden kann.
+- Wenn jemand storniert, rückt die älteste Anmeldung auf der Warteliste **automatisch nach** und erhält eine E-Mail, dass ein Platz frei geworden ist. Schuldet die Person einen Betrag, verlinkt die E-Mail auf [Meine Anmeldungen](../../b1-church/events/my-registrations.md) auf der B1-Seite Ihrer Kirche, wo die Zahlung abgeschlossen werden kann.
 - Sie können jemanden jederzeit manuell über die Aktion **Nachrücken** in einer Zeile der Warteliste nachrücken lassen – nützlich, nachdem Sie die Kapazität der Veranstaltung erhöht haben.
 
 :::info
@@ -75,7 +76,7 @@ Nachgerückte Anmeldungen bleiben *ausstehend*, bis ein offener Betrag bezahlt i
 
 - Klicken Sie auf das Symbol für Details einer Zeile, um den Dialog **Anmeldedetails** zu öffnen – mit Mitgliedern, Auswahlmöglichkeiten, Bezahlt/Offen und einer Tabelle **Zahlungen**, die jede Buchung auflistet (Betrag, Zahlungsart, Datum).
 - **CSV exportieren** lädt die vollständige Teilnehmerliste mit Spalten für Mitglieder, Teilnehmertypen, Auswahlmöglichkeiten, Bezahlt/Gesamt/Offen, Status und eine Spalte pro Anmeldefrage herunter.
-- **Teilnehmer hinzufügen** erfasst eine Anmeldung offline oder telefonisch für jede Person in Ihrer Kirche. Wählen Sie die Person und bei einer kostenpflichtigen Veranstaltung ihren Teilnehmertyp. Ihre Karte wird nicht belastet: Eine kostenpflichtige Anmeldung wird als **ausstehend** mit dem vollen Betrag als offenem Saldo gespeichert. Hat Ihre Kirche Online-Spenden, kann die Person den Betrag über [Meine Anmeldungen](../../b1-church/events/my-registrations) bezahlen; andernfalls kassieren Sie persönlich. Zum Hinzufügen von Teilnehmenden benötigen Sie die Berechtigung **Anmeldungen bearbeiten**.
+- **Teilnehmer hinzufügen** erfasst eine Anmeldung offline oder telefonisch für jede Person in Ihrer Kirche. Wählen Sie die Person und bei einer kostenpflichtigen Veranstaltung ihren Teilnehmertyp. Ihre Karte wird nicht belastet: Eine kostenpflichtige Anmeldung wird als **ausstehend** mit dem vollen Betrag als offenem Saldo gespeichert. Hat Ihre Kirche Online-Spenden, kann die Person den Betrag über [Meine Anmeldungen](../../b1-church/events/my-registrations.md) bezahlen; andernfalls kassieren Sie persönlich. Zum Hinzufügen von Teilnehmenden benötigen Sie die Berechtigung **Anmeldungen bearbeiten**.
 
 :::info
 Rückerstattungen werden in B1 nicht abgewickelt. Müssen Sie eine stornierte kostenpflichtige Anmeldung erstatten, veranlassen Sie die Rückerstattung im Dashboard Ihres Zahlungsanbieters (z. B. Stripe).
@@ -90,12 +91,12 @@ Zahlungen laufen über denselben Spendenzahlungsdienst, den Ihre Kirche bereits 
 Hat Ihre Kirche keinen Zahlungsanbieter für Spenden eingerichtet, können kostenpflichtige Veranstaltungen trotzdem Anmeldungen annehmen. Der Zahlungsschritt teilt Anmeldenden mit, dass Online-Zahlung nicht verfügbar ist und sie direkt an die Kirche zahlen können. Eine Schaltfläche **Anmelden und später bezahlen** speichert die Anmeldung. Sie wird als **ausstehend** mit dem vollen Betrag als offenem Saldo gespeichert und erscheint in der Teilnehmerliste mit einem Hinweis auf den offenen Betrag. Ziehen Sie das Geld so ein, wie Ihre Kirche es üblicherweise tut.
 
 :::info
-B1 kann eine Offline-Zahlung nicht als eingegangen markieren. Der offene Betrag bleibt in der Teilnehmerliste und auf der Karte der anmeldenden Person unter [Meine Anmeldungen](../../b1-church/events/my-registrations), auch nachdem Sie ihn eingezogen haben. Führen Sie deshalb eine eigene Aufstellung darüber, wer bezahlt hat.
+B1 kann eine Offline-Zahlung nicht als eingegangen markieren. Der offene Betrag bleibt in der Teilnehmerliste und auf der Karte der anmeldenden Person unter [Meine Anmeldungen](../../b1-church/events/my-registrations.md), auch nachdem Sie ihn eingezogen haben. Führen Sie deshalb eine eigene Aufstellung darüber, wer bezahlt hat.
 :::
 
 ## Verwandte Artikel
 
-- [Kalender erstellen](creating-calendars#enabling-event-registration) – Anmeldung aktivieren und die grundlegenden Einstellungen
+- [Kalender erstellen](./creating-calendars.md#enabling-event-registration) – Anmeldung aktivieren und die grundlegenden Einstellungen
 - [Online-Spenden einrichten](../donations/online-giving-setup.md) – den Zahlungsdienst konfigurieren, der beim Bezahlen genutzt wird
-- [Für Veranstaltungen anmelden](../../b1-church/events/registering) – was Mitglieder bei der Anmeldung sehen
-- [Meine Anmeldungen](../../b1-church/events/my-registrations) – wie Mitglieder Salden bezahlen und Anmeldungen bearbeiten
+- [Für Veranstaltungen anmelden](../../b1-church/events/registering.md) – was Mitglieder bei der Anmeldung sehen
+- [Meine Anmeldungen](../../b1-church/events/my-registrations.md) – wie Mitglieder Salden bezahlen und Anmeldungen bearbeiten

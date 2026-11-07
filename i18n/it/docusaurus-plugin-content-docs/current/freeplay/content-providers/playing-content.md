@@ -1,5 +1,6 @@
 ---
 title: "Riprodurre i contenuti"
+description: "Controllare FreePlay con il telecomando: pausa, salto tra slide e video, vai a qualsiasi messaggio, esci dal player da provider, piano o download."
 ---
 
 # Riprodurre i contenuti
@@ -13,13 +14,13 @@ Il lettore di FreePlay occupa l'intero schermo ed è pensato per i telecomandi d
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Scegliete cosa riprodurre. Vedere [Sfogliare e scaricare i contenuti](./browsing-content), [Modalità Piano](../plan-mode/) oppure [Annunci](./announcements)
+- Scegliete cosa riprodurre. Vedere [Sfogliare e scaricare i contenuti](./browsing-content.md), [Modalità Piano](../plan-mode/index.md) oppure [Annunci](./announcements.md)
 - Premete **Avvia** per aprire il lettore
 
 </div>
 
 :::info
-Gli schermi abbinati a un calendario usano un lettore programmato separato, con controlli leggermente diversi. Vedere [Riproduzione programmata sulla TV](../scheduled-mode/scheduled-playback).
+Gli schermi abbinati a un calendario usano un lettore programmato separato, con controlli leggermente diversi. Vedere [Riproduzione programmata sulla TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Controlli del lettore
@@ -57,7 +58,7 @@ Premete **Su** durante la riproduzione per aprire **Seleziona un messaggio**. Mo
 Premete **Giù** o **Indietro** sul telecomando per uscire dal lettore. La destinazione dipende da ciò che stavate riproducendo:
 
 - **Contenuto di un fornitore** -- Torna al browser dei contenuti
-- **Un piano** -- Torna alla schermata di download del piano. Vedere [Modalità Piano](../plan-mode/)
+- **Un piano** -- Torna alla schermata di download del piano. Vedere [Modalità Piano](../plan-mode/index.md)
 - **Un download** -- Torna alla schermata **Download**
 
 :::info
@@ -66,5 +67,5 @@ Lo schermo resta acceso mentre il lettore è aperto, così la TV non va in stand
 
 ## Articoli correlati
 
-- **[Sfogliare e scaricare i contenuti](./browsing-content)** -- Trovare i contenuti e scaricarli per la riproduzione offline
-- **[Riproduzione programmata sulla TV](../scheduled-mode/scheduled-playback)** -- Comandi del telecomando per gli schermi che seguono un calendario
+- **[Sfogliare e scaricare i contenuti](./browsing-content.md)** -- Trovare i contenuti e scaricarli per la riproduzione offline
+- **[Riproduzione programmata sulla TV](../scheduled-mode/scheduled-playback.md)** -- Comandi del telecomando per gli schermi che seguono un calendario

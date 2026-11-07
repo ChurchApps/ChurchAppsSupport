@@ -1,5 +1,6 @@
 ---
 title: "Tổng quan Cổng thông tin"
+description: "Tham quan cổng Lessons.church để tìm lớp học, xem bài học đã lên lịch, thiết lập liên kết nguồn cấp và truy cập Nhà cung cấp bên ngoài và công cụ Quản trị."
 ---
 
 # Tổng quan Cổng thông tin

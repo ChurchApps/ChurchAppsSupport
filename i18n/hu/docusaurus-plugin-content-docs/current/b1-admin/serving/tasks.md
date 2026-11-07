@@ -1,5 +1,6 @@
 ---
 title: "Feladatok"
+description: "Hozzon létre, osszon ki és zárjon le feladatokat a B1 Adminban, találja őket a Szolgálat > My Work menüben, és állítson be határidő-emlékeztetőket."
 ---
 
 # Feladatok

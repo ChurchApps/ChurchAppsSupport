@@ -1,5 +1,6 @@
 ---
 title: "Solicitando Eventos e Salas"
+description: "Solicite reserva de sala ou equipamento para um evento no portal do B1.church, acompanhe em My Requests e cancele enquanto estiver pendente."
 ---
 
 # Solicitando Eventos e Salas
@@ -42,11 +43,11 @@ Abra **Minhas Solicitações** na página Eu. Cada solicitação mostra o evento
 Enquanto a solicitação ainda estiver pendente, você pode retirá-la com **Cancelar solicitação** (será solicitada uma confirmação -- o cancelamento não pode ser desfeito).
 
 :::info
-As solicitações são analisadas pela equipe da igreja na [página de Aprovações](../../b1-admin/calendars/approvals) do B1 Admin. Quais salas e recursos precisam de aprovação fica a critério da sua igreja -- consulte [Salas e Recursos](../../b1-admin/calendars/rooms-resources).
+As solicitações são analisadas pela equipe da igreja na [página de Aprovações](../../b1-admin/calendars/approvals.md) do B1 Admin. Quais salas e recursos precisam de aprovação fica a critério da sua igreja -- consulte [Salas e Recursos](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Artigos Relacionados
 
-- [A Página Eu](../getting-started/me-page) -- Onde estão os links de solicitação
-- [Aprovações de Calendário (B1 Admin)](../../b1-admin/calendars/approvals) -- Como a equipe analisa as solicitações
-- [Salas e Recursos (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Como as igrejas configuram os espaços reserváveis
+- [A Página Eu](../getting-started/me-page.md) -- Onde estão os links de solicitação
+- [Aprovações de Calendário (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Como a equipe analisa as solicitações
+- [Salas e Recursos (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Como as igrejas configuram os espaços reserváveis

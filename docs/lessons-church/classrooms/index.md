@@ -1,5 +1,6 @@
 ---
 title: "Classrooms"
+description: "Set up and manage the classrooms that organize your church's teaching schedule in Lessons.church, from rooms and age groups to volunteer-facing views."
 ---
 
 # Classrooms

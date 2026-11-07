@@ -1,5 +1,6 @@
 ---
 title: "Seleccionar un servicio"
+description: "Elige el servicio al que asistes en la pantalla de servicios de B1 Checkin, lo cual define los horarios de servicio y los grupos que se muestran en el resto del proceso de registro."
 ---
 
 # Seleccionar un servicio
@@ -13,7 +14,7 @@ El primer paso de cada registro de entrada es elegir a qué servicio asiste. La 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Inicie sesión](../getting-started/logging-in) en la aplicación B1 Church Checkin y seleccione su iglesia
+- [Inicie sesión](../getting-started/logging-in.md) en la aplicación B1 Church Checkin y seleccione su iglesia
 - Asegúrese de que el administrador de su iglesia haya [configurado los servicios y los horarios de servicio](../../b1-admin/attendance/setup.md) en B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ El primer paso de cada registro de entrada es elegir a qué servicio asiste. La 
 2. Verá una lista de todos los servicios configurados para su iglesia. Cada servicio aparece como una tarjeta con el nombre del servicio (por ejemplo, "Domingo por la mañana" o "Miércoles por la noche").
 3. Toque el servicio al que asiste.
 
-La aplicación carga los horarios de servicio y los grupos asociados a ese servicio, y luego lo lleva a la [pantalla de búsqueda de miembros](./looking-up-members).
+La aplicación carga los horarios de servicio y los grupos asociados a ese servicio, y luego lo lleva a la [pantalla de búsqueda de miembros](./looking-up-members.md).
 
 ## Cuando el registro de entrada no está abierto
 
-Si su administrador asignó a un horario de servicio un [calendario de registro](../../b1-admin/attendance/setup#setting-a-check-in-schedule), la aplicación solo permite a las familias elegir ese horario de servicio mientras su ventana de registro esté abierta. Los horarios de servicio cuya ventana está cerrada en este momento siguen apareciendo en la [pantalla del hogar](./household-review), pero se marcan como **Cerrado** (por ejemplo, **Cerrado · abre dom 9:30 AM**) en lugar de ofrecer un botón de grupo.
+Si su administrador asignó a un horario de servicio un [calendario de registro](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), la aplicación solo permite a las familias elegir ese horario de servicio mientras su ventana de registro esté abierta. Los horarios de servicio cuya ventana está cerrada en este momento siguen apareciendo en la [pantalla del hogar](./household-review.md), pero se marcan como **Cerrado** (por ejemplo, **Cerrado · abre dom 9:30 AM**) en lugar de ofrecer un botón de grupo.
 
 Si todos los horarios de servicio del servicio que tocó están cerrados, la aplicación le indica cuándo abre el registro; por ejemplo, **"El registro para este servicio abre dom 9:30 AM."** (Si no se puede mostrar una hora de apertura, dice **"El registro no está abierto para este servicio en este momento."**) Toque **Atrás** para volver a la lista de servicios y elegir otro servicio, o espere hasta que la ventana se abra e intente de nuevo.
 
@@ -56,4 +57,4 @@ Si su iglesia tiene configurado un solo servicio, aun así debe tocarlo para con
 
 ## Próximo paso
 
-Después de seleccionar un servicio, [buscará a su familia](./looking-up-members) por número de teléfono o por nombre.
+Después de seleccionar un servicio, [buscará a su familia](./looking-up-members.md) por número de teléfono o por nombre.

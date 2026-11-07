@@ -1,5 +1,6 @@
 ---
 title: "Mga Doing Endpoint"
+description: "Sanggunian ng endpoint ng Doing API para sa service plan, takda ng boluntaryo, gawain, at automation sa B1 Admin, kasama path, auth, at permission."
 ---
 
 # Mga Doing Endpoint
@@ -278,6 +279,6 @@ Nagpa-proxy ng mga request sa mga external na content provider (hal., ProPresent
 
 ## Mga Kaugnay na Pahina
 
-- [Membership Endpoints](./membership) — People, grupo, role, at permiso
-- [Attendance Endpoints](./attendance) — Pagsubaybay sa serbisyo at pagbisita
-- [Module Structure](../module-structure) — Mga pattern ng organisasyon ng code
+- [Membership Endpoints](./membership.md) — People, grupo, role, at permiso
+- [Attendance Endpoints](./attendance.md) — Pagsubaybay sa serbisyo at pagbisita
+- [Module Structure](../module-structure.md) — Mga pattern ng organisasyon ng code

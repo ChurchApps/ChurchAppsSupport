@@ -1,5 +1,6 @@
 ---
 title: "Elenchi di Compleanni e Anniversari"
+description: "Crea un elenco di tutti i compleanni o anniversari di un mese specifico usando i filtri di ricerca Persone in B1 Admin, poi visualizza o esporta le date."
 ---
 
 # Elenchi di Compleanni e Anniversari

@@ -1,12 +1,13 @@
 ---
 title: "वेबसाइट रूटिंग और मल्टी-साइट"
+description: "B1.church उपडोमेन और कस्टम डोमेन को सही चर्च या द्वितीयक साइट से कैसे जोड़ता है, साथ ही कस्टम डोमेन के TLS को संभालने वाला Caddy एज।"
 ---
 
 # वेबसाइट रूटिंग और मल्टी-साइट
 
 <div class="article-intro">
 
-एक ही चर्च अब एक से अधिक अलग वेबसाइटें परोस सकता है, और हर एक `*.b1.church` सबडोमेन पर या पूरी तरह कस्टम, चर्च-स्वामित्व वाले डोमेन पर रह सकती है। यह पृष्ठ रूटिंग परत का मानचित्र देता है जो बिल्डर *के नीचे* बैठती है: एक आने वाला अनुरोध चर्च **और** एक विशिष्ट साइट दोनों पर कैसे हल होता है, मल्टी-साइट डेटा मॉडल (`siteId` sentinel जो हर पूर्व-मौजूदा साइट को अपरिवर्तित रेंडर रखता है), और कस्टम-डोमेन किनारा -- EC2 पर एक स्व-प्रबंधित Caddy प्रॉक्सी जो TLS समाप्त करता है और हर चर्च डोमेन को उसके `*.b1.church` upstream पर फिर से लिखता है। एक बार अनुरोध हल हो जाने पर वास्तव में क्या रेंडर होता है -- पृष्ठ/section/element tree -- उसके लिए [Website Builder](./website-builder) देखें।
+एक ही चर्च अब एक से अधिक अलग वेबसाइटें परोस सकता है, और हर एक `*.b1.church` सबडोमेन पर या पूरी तरह कस्टम, चर्च-स्वामित्व वाले डोमेन पर रह सकती है। यह पृष्ठ रूटिंग परत का मानचित्र देता है जो बिल्डर *के नीचे* बैठती है: एक आने वाला अनुरोध चर्च **और** एक विशिष्ट साइट दोनों पर कैसे हल होता है, मल्टी-साइट डेटा मॉडल (`siteId` sentinel जो हर पूर्व-मौजूदा साइट को अपरिवर्तित रेंडर रखता है), और कस्टम-डोमेन किनारा -- EC2 पर एक स्व-प्रबंधित Caddy प्रॉक्सी जो TLS समाप्त करता है और हर चर्च डोमेन को उसके `*.b1.church` upstream पर फिर से लिखता है। एक बार अनुरोध हल हो जाने पर वास्तव में क्या रेंडर होता है -- पृष्ठ/section/element tree -- उसके लिए [Website Builder](./website-builder.md) देखें।
 
 </div>
 
@@ -201,7 +202,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### वर्तमान स्थिति -- स्टेटिक कॉन्फ़िग, कोई रनटाइम स्थिति नहीं
 
-बॉक्स (स्थायी Elastic IP के पीछे एक Windows EC2) एक **स्टेटिक Caddyfile** से Caddy चलाता है: on-demand TLS जिसका `ask` `/membership/domains/authorize` की ओर इंगित करता है, साथ में एक होस्ट→upstream मैप फ़ाइल जो हर 5 मिनट में `/membership/domains/hostmap` से एक शेड्यूल्ड टास्क द्वारा रिफ़्रेश होती है, जो एक graceful `caddy reload` पर समाप्त होता है। कॉन्फ़िग शून्य रनटाइम स्थिति के साथ रीस्टार्ट से बचता है -- कोई री-प्राइमिंग नाच नहीं -- और एक अज्ञात SNI **TLS-refused** होता है (उस होस्ट के लिए कोई सर्टिफ़िकेट नहीं ढाला जाता जिसे `authorize` अस्वीकार करता है), जबकि एक authorized-लेकिन-अभी-मैप-नहीं होस्ट (sync विंडो के भीतर एक बिल्कुल नया डोमेन) एक साफ़ 404 पाता है। नए डोमेन एक save के ~5 मिनट के भीतर routable हो जाते हैं; उनके सर्टिफ़िकेट पहली hit पर ढाले जाते हैं। बिल्ड/सेटअप, संचालन, और फ़ील्ड-परीक्षित समस्याएँ: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy)।
+बॉक्स (स्थायी Elastic IP के पीछे एक Windows EC2) एक **स्टेटिक Caddyfile** से Caddy चलाता है: on-demand TLS जिसका `ask` `/membership/domains/authorize` की ओर इंगित करता है, साथ में एक होस्ट→upstream मैप फ़ाइल जो हर 5 मिनट में `/membership/domains/hostmap` से एक शेड्यूल्ड टास्क द्वारा रिफ़्रेश होती है, जो एक graceful `caddy reload` पर समाप्त होता है। कॉन्फ़िग शून्य रनटाइम स्थिति के साथ रीस्टार्ट से बचता है -- कोई री-प्राइमिंग नाच नहीं -- और एक अज्ञात SNI **TLS-refused** होता है (उस होस्ट के लिए कोई सर्टिफ़िकेट नहीं ढाला जाता जिसे `authorize` अस्वीकार करता है), जबकि एक authorized-लेकिन-अभी-मैप-नहीं होस्ट (sync विंडो के भीतर एक बिल्कुल नया डोमेन) एक साफ़ 404 पाता है। नए डोमेन एक save के ~5 मिनट के भीतर routable हो जाते हैं; उनके सर्टिफ़िकेट पहली hit पर ढाले जाते हैं। बिल्ड/सेटअप, संचालन, और फ़ील्ड-परीक्षित समस्याएँ: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md)।
 
 ### लेगेसी रनटाइम push -- रोलबैक पथ, हटाने के लिए लंबित
 
@@ -209,8 +210,8 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ## संबंधित पृष्ठ
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy) -- स्वयं किनारा बॉक्स: नए बॉक्स का सेटअप, WinSW सेवा, मैप सिंक टास्क, और परिचालन समस्याएँ
-- [Website Builder](./website-builder) -- पृष्ठ/section/element tree, renderers, ब्लॉग, SEO, और AI जेनरेशन (अनुरोध चर्च/साइट पर हल होने के बाद क्या रेंडर होता है)
-- [Content Endpoints](../api/endpoints/content) -- pages, blocks, links, और global styles के लिए REST सतह, अब सभी `?siteId=`-जागरूक
-- [B1App](../web-apps/b1-app) -- Next.js ऐप जो middleware और `[sdSlug]` रूटिंग होस्ट करता है
-- [Web App Deployment](../deployment/web-apps) -- B1App Vercel पर कैसे डिप्लॉय होता है
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md) -- स्वयं किनारा बॉक्स: नए बॉक्स का सेटअप, WinSW सेवा, मैप सिंक टास्क, और परिचालन समस्याएँ
+- [Website Builder](./website-builder.md) -- पृष्ठ/section/element tree, renderers, ब्लॉग, SEO, और AI जेनरेशन (अनुरोध चर्च/साइट पर हल होने के बाद क्या रेंडर होता है)
+- [Content Endpoints](../api/endpoints/content.md) -- pages, blocks, links, और global styles के लिए REST सतह, अब सभी `?siteId=`-जागरूक
+- [B1App](../web-apps/b1-app.md) -- Next.js ऐप जो middleware और `[sdSlug]` रूटिंग होस्ट करता है
+- [Web App Deployment](../deployment/web-apps.md) -- B1App Vercel पर कैसे डिप्लॉय होता है

@@ -1,5 +1,6 @@
 ---
 title: "Pamamahala ng Funds"
+description: "Gumawa at ayusin ang donation fund sa B1 Admin, itakda ang tax-deductible status at donor visibility, at tingnan ang kabuuan at kasaysayan ng handog."
 ---
 
 # Pamamahala ng Funds

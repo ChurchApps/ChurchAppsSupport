@@ -1,5 +1,6 @@
 ---
 title: "Folk"
+description: "Søg, tilføj og redigér medlemmer i afsnittet People i B1 Admin, inkl. husstandsregistrering, masseopdateringer og udskrivning og eksport af kontaktlisten."
 ---
 
 # Folk

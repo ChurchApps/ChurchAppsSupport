@@ -1,5 +1,6 @@
 ---
 title: "Authentifizierung und Berechtigungen"
+description: "Referenz zur JWT-Anmeldung, Zwei-Faktor-Anmeldung, OAuth-2.0-Abläufen und zum Berechtigungsmodell der ChurchApps-API für Entwickler von Integrationen."
 ---
 
 # Authentifizierung und Berechtigungen
@@ -244,7 +245,7 @@ Für Geräte ohne Browser (TV-Apps, Kioske):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Client anhand der Client-ID abrufen (Geheimnis ausgeblendet) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Client erstellen oder aktualisieren |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Client löschen |
-| POST | `/membership/oauth/register` | Öffentlich | — | Dynamische Client-Registrierung (RFC 7591) für öffentliche Clients wie MCP-Connectors. Siehe [Connected Apps](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Öffentlich | — | Dynamische Client-Registrierung (RFC 7591) für öffentliche Clients wie MCP-Connectors. Siehe [Connected Apps](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpunkte zur Gerätegenehmigung
 
@@ -265,5 +266,5 @@ In den Endpunkttabellen dieser Dokumentation werden diese in der Spalte Auth als
 
 ## Verwandte Seiten
 
-- [Modulstruktur](../module-structure) — Wie Controller, Repositories und Modelle organisiert sind
-- [Lokale Einrichtung](../local-setup) — Die API lokal für die Entwicklung ausführen
+- [Modulstruktur](../module-structure.md) — Wie Controller, Repositories und Modelle organisiert sind
+- [Lokale Einrichtung](../local-setup.md) — Die API lokal für die Entwicklung ausführen

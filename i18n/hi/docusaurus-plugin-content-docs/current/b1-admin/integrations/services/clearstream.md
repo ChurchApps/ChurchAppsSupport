@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Zapier के माध्यम से Clearstream SMS को B1 Admin से जोड़ें: नए उपहार या फ़ॉर्म सबमिशन पर टेक्स्ट भेजें, और आने वाले उत्तर लोगों के रूप में वापस लाएँ।"
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Zap चालू करें। सक्रिय होने पर B1 द�
 
 ## यह भी देखें
 
-- [Text In Church](./text-in-church) — वैकल्पिक SMS प्लेटफ़ॉर्म, लगभग समान व्यवस्था
-- [Mobile Message](./mobile-message) — अमेरिका के बाहर के चर्चों के लिए
-- [Zapier (overview)](../zapier) — हर Zapier रेसिपी का B1 पक्ष
+- [Text In Church](./text-in-church.md) — वैकल्पिक SMS प्लेटफ़ॉर्म, लगभग समान व्यवस्था
+- [Mobile Message](./mobile-message.md) — अमेरिका के बाहर के चर्चों के लिए
+- [Zapier (overview)](../zapier.md) — हर Zapier रेसिपी का B1 पक्ष
 - [Clearstream API docs](https://api-docs.clearstream.io/) — Zapier ऐप से परे कस्टम इंटीग्रेशन के लिए

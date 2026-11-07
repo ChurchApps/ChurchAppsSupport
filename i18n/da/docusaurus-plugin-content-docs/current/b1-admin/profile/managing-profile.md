@@ -1,5 +1,6 @@
 ---
 title: "Administrer din profil"
+description: "Opdatér din ChurchApps-konto i B1 Admin: redigér navn, e-mail og adgangskode, slå tofaktorlogin til, vælg et tema eller slet din konto."
 ---
 
 # Administrer din profil

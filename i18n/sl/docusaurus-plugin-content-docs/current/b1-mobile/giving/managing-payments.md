@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje načinov plačila"
+description: "Dodajajte, pregledujte in odstranjujte shranjene kartice na zavihku Upravljanje v razdelku za darovanje v B1 Mobile, da ponovljeni darovi potekajo hitreje."
 ---
 
 # Upravljanje načinov plačila
@@ -13,7 +14,7 @@ Zavihek **Upravljanje** v razdelku za darovanja vam omogoča ogled in upravljanj
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 
 </div>
 
@@ -31,7 +32,7 @@ Za dodajanje nove kartice:
 4. Vnesite podatke o kartici. Podatki se varno pošljejo podjetju **Stripe** v obdelavo.
 5. Ko je kartica shranjena, se bo nova kartica prikazala na vašem seznamu načinov plačila.
 
-Vaša shranjena kartica bo nato na voljo kot možnost plačila, ko naslednjič [opravite darovanje](./making-donations) na zavihku **Darovanje**.
+Vaša shranjena kartica bo nato na voljo kot možnost plačila, ko naslednjič [opravite darovanje](./making-donations.md) na zavihku **Darovanje**.
 
 ## Odstranjevanje načina plačila
 
@@ -44,7 +45,7 @@ Vaša shranjena kartica bo nato na voljo kot možnost plačila, ko naslednjič [
 Kartica se ob darovanju ne bo več prikazovala kot možnost plačila.
 
 :::info
-Odstranitev načina plačila ne vpliva na pretekla darovanja. Vaša [zgodovina darovanj](./donation-history) ostane nespremenjena.
+Odstranitev načina plačila ne vpliva na pretekla darovanja. Vaša [zgodovina darovanj](./donation-history.md) ostane nespremenjena.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Za hitro darovanje shranite vsaj en način plačila. Tako lahko na zavihku **Pre
 
 ## Sorodni članki
 
-- [Darovanje](./making-donations) -- Naučite se, kako podariti z uporabo shranjenega načina plačila
-- [Zgodovina darovanj](./donation-history) -- Oglejte si povzetek svojih darovanj in pretekla darovanja
+- [Darovanje](./making-donations.md) -- Naučite se, kako podariti z uporabo shranjenega načina plačila
+- [Zgodovina darovanj](./donation-history.md) -- Oglejte si povzetek svojih darovanj in pretekla darovanja

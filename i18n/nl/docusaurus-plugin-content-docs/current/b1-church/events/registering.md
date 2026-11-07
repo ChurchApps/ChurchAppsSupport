@@ -1,5 +1,7 @@
 ---
-title: "Aanmelden voor Evenementen"
+title: "Evenementinschrijving in B1.church"
+sidebar_label: "Aanmelden voor Evenementen"
+description: "Schrijf je in voor een evenement op B1.church: gegevens invullen, gezinsleden toevoegen, opties kiezen, kortingscodes gebruiken en betalen of wachtlijst."
 ---
 
 # Aanmelden voor Evenementen
@@ -55,4 +57,4 @@ Als je je aanmelding wilt annuleren, neem je contact op met je kerkbeheerder. Ze
 ## Gerelateerde artikelen
 
 - [Overzicht evenementen](./index.md) -- Blader aankomende evenementen met registratie
-- [Donaties maken](../giving/making-donations) -- Maak een donatie naast deelname aan evenementen
+- [Donaties maken](../giving/making-donations.md) -- Maak een donatie naast deelname aan evenementen

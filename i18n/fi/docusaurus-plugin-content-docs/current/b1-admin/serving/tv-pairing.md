@@ -1,5 +1,6 @@
 ---
 title: "FreePlayn yhdistäminen B1 Adminiin"
+description: "Yhdistä FreePlayta käyttävä luokkahuoneen TV ajoitettuihin oppitunteihin B1 Adminissa, jotta opettajat voivat näyttää ne ruudulla tunnilla."
 ---
 
 # Luokkahuoneen television yhdistäminen B1 Adminin oppitunteihin

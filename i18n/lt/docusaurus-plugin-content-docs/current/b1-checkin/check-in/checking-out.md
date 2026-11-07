@@ -1,5 +1,6 @@
 ---
 title: "Odjava ir vaikų sauga"
+description: "Išregistruokite vaikus B1 Checkin punkte: apsaugos kodai, patikrinti atsiėmėjai, tėvų iškvietimas, etikečių perspausdinimas ir skubūs pranešimai."
 ---
 
 # Odjava ir vaikų sauga
@@ -14,7 +15,7 @@ Odjava uždaro vaikų registracijos ciklą: tėvai pateikia saugumo kodą iš sa
 <h4>Prieš pradedant</h4>
 
 - Odjava galima punktuose, nustatytuose į **rankinį** režimą kioskų administravimo nustatymuose
-- Vaikai turi būti [užregistruoti](./completing-checkin) su atspausdintu išsiimamu lipduku, kuriame yra saugumo kodas
+- Vaikai turi būti [užregistruoti](./completing-checkin.md) su atspausdintu išsiimamu lipduku, kuriame yra saugumo kodas
 - Išsikvietimui ir skubiems pranešimams reikia, kad jūsų bažnyčia būtų prijungusi SMS paslaugos teikėją B1 Admin sistemoje
 
 </div>
@@ -39,7 +40,7 @@ Jei įvestas vardas sutampa su asmeniu, pažymėtu **Not Authorized** tai šeima
 Patvirtinus asmenį, paspauskite odjungti. Asmens, atvykusio pasiimti vaiką, vardas įrašomas kartu su lankomumo įrašu.
 
 :::info
-Patikimus ir neįgaliotus asmenis pasiimti vaikų valdo bažnyčios darbuotojai kiekvieno asmens puslapyje B1 Admin sistemoje — žr. [Registracijos saugumas](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Patikimus ir neįgaliotus asmenis pasiimti vaikų valdo bažnyčios darbuotojai kiekvieno asmens puslapyje B1 Admin sistemoje — žr. [Registracijos saugumas](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Tėvų išsikvietimas
@@ -65,6 +66,6 @@ Pranešimas siunčiamas kiekvienai užregistruotai šeimai pasirinktoms pamaldom
 
 ## Susiję straipsniai
 
-- [Registracijos užbaigimas](./completing-checkin) — iš kur atsiranda saugumo kodai ir išsiimami lipdukai
-- [Registracijos saugumas](../../b1-admin/attendance/checkin-safety) — talpumo, santykių, asmenų pasiimti ir SMS paslaugos teikėjo reikalavimų konfigūravimas
-- [Spausdintuvo sąranka](../getting-started/printer-setup) — lipdukų spausdintuvo konfigūravimas
+- [Registracijos užbaigimas](./completing-checkin.md) — iš kur atsiranda saugumo kodai ir išsiimami lipdukai
+- [Registracijos saugumas](../../b1-admin/attendance/checkin-safety.md) — talpumo, santykių, asmenų pasiimti ir SMS paslaugos teikėjo reikalavimų konfigūravimas
+- [Spausdintuvo sąranka](../getting-started/printer-setup.md) — lipdukų spausdintuvo konfigūravimas

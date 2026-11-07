@@ -1,5 +1,6 @@
 ---
 title: "Anpassning"
+description: "Lär dig dölja sektioner, roller eller åtgärder i en Lessons.church-lektion och ordna om innehållet, för ett klassrum eller alla i kyrkan."
 ---
 
 # Anpassning

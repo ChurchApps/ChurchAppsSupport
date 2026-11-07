@@ -1,5 +1,6 @@
 ---
 title: "Bağış Grupları"
+description: "B1 Admin'de bağışları toplu kayıtlara ayırın; ardından her birini kapatın, yazdırın veya dışa aktarın, böylece toplamlar banka yatırmalarınızla eşleşsin."
 ---
 
 # Bağış Grupları

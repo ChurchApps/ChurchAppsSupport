@@ -1,5 +1,6 @@
 ---
 title: "My Registrations"
+description: "Check registration status, pay a balance due, edit attendees or add-ons, or cancel an event sign-up in B1 Church's member portal."
 ---
 
 # My Registrations
@@ -14,7 +15,7 @@ The **Registrations** page in the member portal is your home base for every even
 <h4>Before You Begin</h4>
 
 - You must be [logged in](../getting-started/logging-in.md) — guest registrations do not appear here
-- You need at least one event registration. See [Registering for Events](./registering).
+- You need at least one event registration. See [Registering for Events](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Your spot is released immediately. If the event has a waitlist, the next person 
 
 ## Related Articles
 
-- [Registering for Events](./registering) -- The signup process, including payment and waitlists
+- [Registering for Events](./registering.md) -- The signup process, including payment and waitlists
 - [Events Overview](./index.md) -- Browse upcoming events

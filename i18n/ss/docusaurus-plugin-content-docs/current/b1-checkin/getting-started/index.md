@@ -1,5 +1,7 @@
 ---
-title: "Kucala"
+title: "Kuqala Nge-B1 Checkin"
+sidebar_label: "Kucala"
+description: "Setela i-app yekuzicelela ye-B1 Checkin ku-tablet ye-Android: yifake, ngena, khetsa lesonto lakho, bese uxhuma ngekukhetsa iprintha yemalebula."
 ---
 
 # Kucala Nge-B1 Church Checkin
@@ -27,9 +29,9 @@ Kuhlela B1 Church Checkin kutsatsa imizuzu lembalwa nje. Lesigaba sikuhambisa es
 
 Nawuvula i-app kwekucala, utawuchubeka etinyatselweni letintsatfu:
 
-1. **[Ngena](./logging-in)** -- Faka imeyili nelipasiwedi yakho kute ucinisekiswe.
-2. **[Khetsa libandla lakho](./logging-in)** -- Nangabe i-akhawundi yakho ihlanganiswe nemabandla lamanyenti, khetsa kutsi ngutsini lelizakusetjentiswa yile kiosk.
-3. **[Hlela iprinta](./printer-setup)** -- Hlela iprinta lehlanganiswe nenethiwekhi yekuphrinta emalebula, nobe weqe lesinyatselo nangabe ungawadzingi emalebula.
+1. **[Ngena](./logging-in.md)** -- Faka imeyili nelipasiwedi yakho kute ucinisekiswe.
+2. **[Khetsa libandla lakho](./logging-in.md)** -- Nangabe i-akhawundi yakho ihlanganiswe nemabandla lamanyenti, khetsa kutsi ngutsini lelizakusetjentiswa yile kiosk.
+3. **[Hlela iprinta](./printer-setup.md)** -- Hlela iprinta lehlanganiswe nenethiwekhi yekuphrinta emalebula, nobe weqe lesinyatselo nangabe ungawadzingi emalebula.
 
 Ngemuva kwekungena kwekucala, i-app iyagcina imininingwane yakho yekungena kanye nekukhetsa kwakho kwebandla. Ekuvuleni lokutako, itawweqa iye ngco eskrinini setinkhonzo ngekutentela.
 
@@ -43,6 +45,6 @@ Cinisekisa kutsi umlawuli webandla lakho usewahlele tinkhonzo, tikhatsi tenkhonz
 
 ## Tinyatselo Letilandzelako
 
-- [Kungena](./logging-in) -- Imiyalo lehlaziyiwe yekungena nekukhetsa libandla.
-- [Kuhlela Iprinta](./printer-setup) -- Indlela yekutfola, kukhetsa, nekuhlola iprinta yakho yemalebula.
-- [Luchungechunge Lwekubhalisa](../check-in/) -- Fundza lonkhe luchungechunge lwekubhalisa kusukela i-kiosk yakho isihleliwe.
+- [Kungena](./logging-in.md) -- Imiyalo lehlaziyiwe yekungena nekukhetsa libandla.
+- [Kuhlela Iprinta](./printer-setup.md) -- Indlela yekutfola, kukhetsa, nekuhlola iprinta yakho yemalebula.
+- [Luchungechunge Lwekubhalisa](../check-in/index.md) -- Fundza lonkhe luchungechunge lwekubhalisa kusukela i-kiosk yakho isihleliwe.

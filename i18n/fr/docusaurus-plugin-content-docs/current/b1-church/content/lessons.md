@@ -1,5 +1,7 @@
 ---
-title: "Leçons (Dépréciée)"
+title: "Onglet Leçons obsolète dans B1.church"
+sidebar_label: "Leçons (Dépréciée)"
+description: "L'onglet Leçons de B1.church est obsolète. Retrouvez les leçons sur Lessons.church et diffusez-les sur les TV de classe avec FreePlay."
 ---
 
 # Leçons (Dépréciée)
@@ -9,7 +11,7 @@ L'onglet **Leçons** intégré sur B1.church a été déprécié. La lecture du 
 
 Pour parcourir, planifier ou modifier le curriculum directement, connectez-vous à [Lessons.church](https://lessons.church) dans votre navigateur. Pour jouer des leçons sur un téléviseur de classe, installez [FreePlay](/docs/freeplay/getting-started/) sur votre appareil TV.
 
-Les parents de groupes associés à un type de plan de leçon dans B1Admin voient **cette semaine la leçon** sur la page des [détails du groupe](/docs/b1-church/groups/group-details.md) -- pas sur cet onglet déprécié.
+Les parents de groupes associés à un type de plan de leçon dans B1Admin voient **cette semaine la leçon** sur la page des [détails du groupe](../groups/group-details.md) -- pas sur cet onglet déprécié.
 :::
 
 <div class="article-intro">

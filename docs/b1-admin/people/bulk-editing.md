@@ -1,5 +1,6 @@
 ---
 title: "Bulk Editing People"
+description: "Update membership status, marital status, gender, opt-out, custom Yes/No fields, or group membership for many people at once in B1 Admin."
 ---
 
 # Bulk Editing People

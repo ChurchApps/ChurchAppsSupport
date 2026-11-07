@@ -1,5 +1,6 @@
 ---
 title: "Group Timeline"
+description: "See how the B1 Mobile group timeline merges posts, conversations, and updates from all your groups into one feed, and what to do while it is paused."
 ---
 
 # Group Timeline
@@ -17,7 +18,7 @@ The group timeline feature is temporarily unavailable while improvements are bei
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Be a member of at least one group at your church
 
 </div>
@@ -41,7 +42,7 @@ Each item in the timeline shows which group it came from, so you always know the
 The timeline is a great way to stay connected with your church community at a glance. Here are a few tips for getting the most out of it:
 
 - **Check in regularly** -- Open the Groups screen and scroll through the timeline to catch up on recent activity.
-- **Tap for more** -- If a post catches your eye, tap it or tap the group name to go to the full [group detail page](./group-details) for more context.
+- **Tap for more** -- If a post catches your eye, tap it or tap the group name to go to the full [group detail page](./group-details.md) for more context.
 - **Everything in one place** -- You do not need to visit each group separately. The timeline brings all the activity to you.
 
 :::info
@@ -54,5 +55,5 @@ Enable [push notifications](../community/notifications.md) to get alerted when n
 
 ## Related Articles
 
-- [Group Details](./group-details) -- View a single group's full profile and posts
+- [Group Details](./group-details.md) -- View a single group's full profile and posts
 - [Notifications](../community/notifications.md) -- Get notified about group activity

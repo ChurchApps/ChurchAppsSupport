@@ -1,5 +1,7 @@
 ---
-title: "Kungena"
+title: "Kusetfulwa Kokuzibhalisa nge-B1 Checkin ne-B1 Admin"
+sidebar_label: "Kungena"
+description: "Setfula kuzibhalisa ekufikeni nge-B1 Checkin ku-B1 Admin: tidivayisi, ama-akhawunti ekhiyosiki, tikhatsi, kwetfulwa kwebandla, nekubhalisa tivakashi nge-QR."
 ---
 
 # Kungena
@@ -98,7 +100,7 @@ Sebentisa sikrini sekungasebenti kute ukhombise tati so, imicimbi letako, nobe i
 
 Ikiosk yekungena ingakhombisa i-QR code leti vakashi tingayikalisela kuzibhalisa wona nemindeni yato kwafoni lato. Loku kusheshisa inchubo yekungena kutivakashi tekucala.
 
-Nasikalisela QR code, tivakashi tiyisiwa [ekhasini lekubhaliswa kwesivakashi](../../b1-church/checkin/guest-registration) lapho tifaka ligama lato, i-imeyili, nemalunga emndeni. Umsebenti lofakako angabe abafuna kuma-kiosk bese abangenisa.
+Nasikalisela QR code, tivakashi tiyisiwa [ekhasini lekubhaliswa kwesivakashi](../../b1-church/checkin/guest-registration.md) lapho tifaka ligama lato, i-imeyili, nemalunga emndeni. Umsebenti lofakako angabe abafuna kuma-kiosk bese abangenisa.
 
 ### Kuvula Kubhaliswa Kwesivakashi nge-QR
 

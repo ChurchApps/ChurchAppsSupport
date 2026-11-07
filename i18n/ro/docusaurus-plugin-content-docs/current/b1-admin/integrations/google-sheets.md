@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Conectați B1 Admin la Google Sheets cu add-on-ul B1 Export, pentru a trage Persoane, Donații, Grupuri și Prezență în foi de calcul la cerere."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Exportul rulează în fundal, sub contul tău Google. Dacă cheia API este rotit
 - **„B1 rejected the API key (401)”**: cheia a fost revocată sau este greșită. Generează-o din nou și lipește-o.
 - **„This API key lacks permission for /giving/donations (403)”**: cheia nu are `donations:read`. Actualizează scopurile cheii în B1Admin.
 - **Foaia nu se reîmprospătează** după rulare: verifică dacă te uiți la numele *corect* al filei (`B1 People` etc.). Exportul creează fila dacă nu există.
-- **„Quota exceeded”**: Apps Script impune cote zilnice per utilizator pentru `UrlFetchApp` (de obicei mii de apeluri pe zi). O biserică mare cu multe înregistrări poate avea nevoie să împartă exporturile pe mai multe zile sau să folosească [Make](./make) ori o integrare personalizată pentru sincronizare cu volum mare.
+- **„Quota exceeded”**: Apps Script impune cote zilnice per utilizator pentru `UrlFetchApp` (de obicei mii de apeluri pe zi). O biserică mare cu multe înregistrări poate avea nevoie să împartă exporturile pe mai multe zile sau să folosească [Make](./make.md) ori o integrare personalizată pentru sincronizare cu volum mare.
 
 ## Personalizarea suplimentului
 
@@ -108,6 +109,6 @@ Suplimentul este open source. Proiectul Apps Script se află în repository-ul `
 
 ## Vezi și
 
-- [Zapier](./zapier): pentru sincronizare în timp real, nu export la cerere
-- [Make](./make): pentru sincronizare cu transformări mai complexe
+- [Zapier](./zapier.md): pentru sincronizare în timp real, nu export la cerere
+- [Make](./make.md): pentru sincronizare cu transformări mai complexe
 - [Chei API (referință pentru dezvoltatori)](/docs/developer/api/api-keys)

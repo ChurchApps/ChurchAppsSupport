@@ -1,5 +1,7 @@
 ---
-title: "Content"
+title: "Mga Feature ng Nilalaman sa B1.church Member Portal"
+sidebar_label: "Content"
+description: "Tingnan kung aling nilalaman ang naka-enable sa B1.church member portal, saka mag-browse ng sermon, live stream, pagbasa ng Bibliya, at lesson."
 ---
 
 # Content

@@ -1,5 +1,7 @@
 ---
-title: "Planų peržiūra"
+title: "Jūsų tarnystės planai B1.church narių portale"
+sidebar_label: "Planų peržiūra"
+description: "Tikrinkite tarnystės planų paskyrimus B1.church, priimkite ar atmeskite prašymus, nurodykite negalimas datas ir peržiūrėkite ankstesnę tarnystės istoriją."
 ---
 
 # Planų peržiūra

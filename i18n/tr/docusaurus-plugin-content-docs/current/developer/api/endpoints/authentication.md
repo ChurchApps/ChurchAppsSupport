@@ -1,5 +1,6 @@
 ---
 title: "Kimlik Doğrulama ve İzinler"
+description: "ChurchApps API'nin JWT girişi, iki faktörlü oturum açma, OAuth 2.0 akışları ve izin modeli için başvuru; entegrasyon geliştiricileri için."
 ---
 
 # Kimlik Doğrulama ve İzinler
@@ -244,7 +245,7 @@ Tarayıcısı olmayan cihazlar için (TV uygulamaları, kiosklar):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | İstemci kimliğine göre istemciyi getirir (gizli anahtar gizlenir) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | İstemci oluşturur veya günceller |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | İstemciyi siler |
-| POST | `/membership/oauth/register` | Herkese açık | — | MCP bağlayıcıları gibi herkese açık istemciler için dinamik istemci kaydı (RFC 7591). Bkz. [Bağlı Uygulamalar](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Herkese açık | — | MCP bağlayıcıları gibi herkese açık istemciler için dinamik istemci kaydı (RFC 7591). Bkz. [Bağlı Uygulamalar](../connected-apps.md#dynamic-client-registration) |
 
 ### Cihaz Onay Uç Noktaları
 
@@ -265,5 +266,5 @@ Bu belgelendirmedeki uç nokta tablolarında bunlar, Kimlik doğrulama sütunund
 
 ## İlgili Sayfalar
 
-- [Modül Yapısı](../module-structure) — Denetleyicilerin, depoların ve modellerin nasıl düzenlendiği
-- [Yerel Kurulum](../local-setup) — Geliştirme için API'yi yerel olarak çalıştırma
+- [Modül Yapısı](../module-structure.md) — Denetleyicilerin, depoların ve modellerin nasıl düzenlendiği
+- [Yerel Kurulum](../local-setup.md) — Geliştirme için API'yi yerel olarak çalıştırma

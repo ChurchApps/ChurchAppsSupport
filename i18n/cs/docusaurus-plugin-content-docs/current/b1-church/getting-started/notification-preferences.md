@@ -1,5 +1,6 @@
 ---
 title: "Nastavení oznámení"
+description: "Nastavte kanály oznámení, frekvenci e-mailů, tichou dobu a odhlášení SMS pro každý typ oznámení v B1 Admin i aplikaci B1 na jedné obrazovce."
 ---
 
 # Nastavení oznámení
@@ -60,6 +61,6 @@ Oznámení s časovou citlivostí -- například bezpečnostní upozornění neb
 
 ## Související
 
-- [Dobrovolnická registrace](../serving/volunteer-signup) -- Připomenutí služby a reakce na žádosti o rozpis
-- [Registrace na akce](../events/registering) -- Přihlášení na akce, které posílají připomenutí
-- [Instalace aplikace](installing-pwa) -- Přidejte B1 do svého zařízení, abyste mohli přijímat push oznámení
+- [Dobrovolnická registrace](../serving/volunteer-signup.md) -- Připomenutí služby a reakce na žádosti o rozpis
+- [Registrace na akce](../events/registering.md) -- Přihlášení na akce, které posílají připomenutí
+- [Instalace aplikace](./installing-pwa.md) -- Přidejte B1 do svého zařízení, abyste mohli přijímat push oznámení

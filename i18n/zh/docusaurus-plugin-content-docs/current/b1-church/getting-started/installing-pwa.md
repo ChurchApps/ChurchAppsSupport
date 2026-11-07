@@ -1,5 +1,6 @@
 ---
 title: "安装为应用（PWA）"
+description: "通过会友门户将 B1.church 安装为 iPhone 或 Android 应用，并在 Safari 或 Chrome 中将其图标添加到主屏幕。"
 ---
 
 # 安装为应用（PWA）

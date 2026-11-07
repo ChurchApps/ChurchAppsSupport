@@ -1,5 +1,6 @@
 ---
 title: "Uwierzytelnianie i uprawnienia"
+description: "Dokumentacja logowania JWT, logowania dwuskładnikowego, przepływów OAuth 2.0 i modelu uprawnień API ChurchApps dla deweloperów integracji."
 ---
 
 # Uwierzytelnianie i uprawnienia
@@ -244,7 +245,7 @@ Dla urządzeń bez przeglądarki (aplikacje telewizyjne, kioski):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Pobierz klienta po identyfikatorze klienta (sekret ukryty) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Utwórz lub zaktualizuj klienta |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Usuń klienta |
-| POST | `/membership/oauth/register` | Publiczny | — | Dynamiczna rejestracja klienta (RFC 7591) dla klientów publicznych, takich jak konektory MCP. Zobacz [Połączone aplikacje](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Publiczny | — | Dynamiczna rejestracja klienta (RFC 7591) dla klientów publicznych, takich jak konektory MCP. Zobacz [Połączone aplikacje](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpointy zatwierdzania urządzeń
 
@@ -265,5 +266,5 @@ W tabelach endpointów w tej dokumentacji są one oznaczone odpowiednio jako **J
 
 ## Powiązane strony
 
-- [Struktura modułów](../module-structure) — Jak organizowane są kontrolery, repozytoria i modele
-- [Lokalna konfiguracja](../local-setup) — Uruchamianie API lokalnie na potrzeby programowania
+- [Struktura modułów](../module-structure.md) — Jak organizowane są kontrolery, repozytoria i modele
+- [Lokalna konfiguracja](../local-setup.md) — Uruchamianie API lokalnie na potrzeby programowania

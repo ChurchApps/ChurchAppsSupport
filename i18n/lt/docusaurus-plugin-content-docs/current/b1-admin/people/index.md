@@ -1,5 +1,6 @@
 ---
 title: "Asmenys"
+description: "Ieškokite, pridėkite ir redaguokite narius B1 Admin Asmenų skyriuje: namų ūkiai, masiniai atnaujinimai, katalogo spausdinimas ir eksportas."
 ---
 
 # Asmenys

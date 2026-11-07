@@ -1,5 +1,7 @@
 ---
-title: "Gönüllü Kaydı"
+title: "B1.church Üye Portalında Gönüllü Kaydı"
+sidebar_label: "Gönüllü Kaydı"
+description: "Açık gönüllü pozisyonlarına kategoriye göre göz atın; yaklaşan ibadetler için B1.church'te kaydolun veya son tarihten önce kaydınızı kaldırın."
 ---
 
 # Gönüllü Kaydı
@@ -74,4 +76,4 @@ Gönüllü sayfasını düzenli olarak kontrol edin, özellikle haftanın başı
 ## İlgili Makaleler
 
 - [Hizmet Genel Bakışı](./index.md) -- B1.church üzerindeki hizmet özelliklerine genel bakış
-- [Planları Görüntüleme](../plans/viewing-plans) -- Size atanmış planları ve ibadet sıralarını görüntüleyin
+- [Planları Görüntüleme](../plans/viewing-plans.md) -- Size atanmış planları ve ibadet sıralarını görüntüleyin

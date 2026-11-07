@@ -1,12 +1,13 @@
 ---
 title: "Anslutna appar och OAuth"
+description: "Anslut tredjepartsappar till en församlings B1-data med OAuth 2.0-samtycke, utan delade lösenord eller API-nycklar, och återkalla åtkomst när som helst i B1 Admin-inställningarna."
 ---
 
 # Anslutna appar och OAuth
 
 <div class="article-intro">
 
-B1 API:et stöder OAuth 2.0, så att en tredjepartsapp kan be varje kyrkadministratör om tillstånd att komma åt deras data, utan att kyrkan någonsin behöver dela ett lösenord eller en API-nyckel. En **ansluten app** är en OAuth-token som en kyrkadministratör har godkänt. Om man återkallar den bryts tredjepartsappens åtkomst med ett klick. Använd den här vägen för multi-tenant SaaS-kopplingar. För en integration med en enskild kyrka rekommenderas i stället [API-nycklar](./api-keys).
+B1 API:et stöder OAuth 2.0, så att en tredjepartsapp kan be varje kyrkadministratör om tillstånd att komma åt deras data, utan att kyrkan någonsin behöver dela ett lösenord eller en API-nyckel. En **ansluten app** är en OAuth-token som en kyrkadministratör har godkänt. Om man återkallar den bryts tredjepartsappens åtkomst med ett klick. Använd den här vägen för multi-tenant SaaS-kopplingar. För en integration med en enskild kyrka rekommenderas i stället [API-nycklar](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API:et stöder OAuth 2.0, så att en tredjepartsapp kan be varje kyrkadminist
 | **Ansluten app** | Ett specifikt par `(klient, kyrkadministratör)` där administratören har gett klienten åtkomst. Varje ansluten app stöds av en OAuth-uppdateringstoken. |
 | **Åtkomsttoken** | En kortlivad JWT (≈ 7 dagar) som klienten använder för API-anrop. Samma form som en användar-JWT: `Authorization: Bearer <jwt>`. |
 | **Uppdateringstoken** | En långlivad ogenomskinlig sträng (≈ 90 dagar) som klienten använder för att skapa nya åtkomsttokens. |
-| **Scope** | Begränsar vad åtkomsttoken kan göra. Se [scope-katalogen](./api-keys#scopes). |
+| **Scope** | Begränsar vad åtkomsttoken kan göra. Se [scope-katalogen](./api-keys.md#scopes). |
 
 ## Grant-flöden
 
@@ -162,7 +163,7 @@ Listan exkluderar automatiskt utgångna tokens.
 
 ## Scopes och samtycke
 
-Scope-strängarna är samma katalog som [API-nycklar](./api-keys#scopes). Bästa praxis för klienter:
+Scope-strängarna är samma katalog som [API-nycklar](./api-keys.md#scopes). Bästa praxis för klienter:
 
 - **Begär de snävaste scopes som fungerar.** Kyrkor märker det om du ber om `donations:write` när du bara behöver läsa personer.
 - **Använd en uppdateringstoken tillsammans med kortlivade åtkomsttokens.** Långlivade åtkomsttokens är svårare att återkalla snabbt.
@@ -183,7 +184,7 @@ Registrerade redirect-URI:er måste exakt matcha `redirect_uri` i begäran. En p
 
 ### Dynamisk klientregistrering
 
-`POST /membership/oauth/register` (publik, RFC 7591) låter en klient, till exempel claude.ai:s MCP-koppling, registrera sig själv. Den annonseras i API:ets dokument `/.well-known/oauth-authorization-server`. Se [MCP-server → OAuth-discovery](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (publik, RFC 7591) låter en klient, till exempel claude.ai:s MCP-koppling, registrera sig själv. Den annonseras i API:ets dokument `/.well-known/oauth-authorization-server`. Se [MCP-server → OAuth-discovery](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ På samtyckessidan i B1Admin får en självregistrerad klient en notis om att de
 
 ## SDK-stöd
 
-Paketet `@churchapps/integration-sdk` omsluter varje OAuth-flöde med typade hjälpfunktioner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` och `.awaitDeviceToken()`. Se paketets README och [Webhooks](./webhooks#sdk-support) för ett komplett exempel.
+Paketet `@churchapps/integration-sdk` omsluter varje OAuth-flöde med typade hjälpfunktioner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` och `.awaitDeviceToken()`. Se paketets README och [Webhooks](./webhooks.md#sdk-support) för ett komplett exempel.

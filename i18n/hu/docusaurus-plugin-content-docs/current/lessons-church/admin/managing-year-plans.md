@@ -1,5 +1,6 @@
 ---
 title: "Éves tervek kezelése"
+description: "Éves heti tervek létrehozása a Lessons.churchben, a hetek húsvéthoz vagy karácsonyhoz igazítása, közzététel a B1 Adminban való alkalmazáshoz."
 ---
 
 # Éves tervek kezelése

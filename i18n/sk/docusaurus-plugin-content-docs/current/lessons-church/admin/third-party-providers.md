@@ -1,5 +1,6 @@
 ---
 title: "Poskytovatelia tretích strán"
+description: "Pridanie externého kanála kurikula do Lessons.church na stránke Third-Party, potom zobrazenie, úprava alebo odstránenie pripojení poskytovateľov."
 ---
 
 # Poskytovatelia tretích strán

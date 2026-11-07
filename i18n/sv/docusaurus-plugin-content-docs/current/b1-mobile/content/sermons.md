@@ -1,5 +1,7 @@
 ---
-title: "Predikningar"
+title: "Titta på predikningar i B1 Mobile"
+sidebar_label: "Predikningar"
+description: "Bläddra, sök och titta på inspelade predikningar och serier i B1 Mobile-appen, inklusive hur du hittar nedräkningen till en livesändning."
 ---
 
 # Predikningar
@@ -13,7 +15,7 @@ Skärmen Predikningar låter dig bläddra bland och se inspelade predikningar fr
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Din församling måste ha predikningsinnehåll konfigurerat i deras adminportal
 
 </div>
@@ -29,7 +31,7 @@ Högst upp på skärmen visas den senaste predikan som ett utvalt kort, så att 
 
 ## Nedräkning till livesändning
 
-När en [livesändning](./live-streaming) börjar inom de närmaste 24 timmarna visas en nedräkningstimer på skärmen Predikningar. Det visar när nästa gudstjänst sänds, så att du kan planera att titta live.
+När en [livesändning](./live-streaming.md) börjar inom de närmaste 24 timmarna visas en nedräkningstimer på skärmen Predikningar. Det visar när nästa gudstjänst sänds, så att du kan planera att titta live.
 
 ## Så här ser du en predikan
 
@@ -51,7 +53,7 @@ Varje predikningspost kan visa:
 - **Miniatyrbild** -- En förhandsvisningsbild för predikan
 
 :::tip
-Om du ser en nedräkning på skärmen Predikningar kan du trycka på den för att hoppa direkt till [livesändningen](./live-streaming) när den startar.
+Om du ser en nedräkning på skärmen Predikningar kan du trycka på den för att hoppa direkt till [livesändningen](./live-streaming.md) när den startar.
 :::
 
 ## Tillgänglighet

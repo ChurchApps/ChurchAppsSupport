@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Răsfoirea blogului B1.church și a fluxurilor RSS"
+sidebar_label: "Blog"
+description: "Răsfoiește și filtrează blogul bisericii pe B1.church după categorie sau etichetă, parcurge articolele vechi sau urmărește cele noi prin fluxuri RSS."
 ---
 
 # Blog

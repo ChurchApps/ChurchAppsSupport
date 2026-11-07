@@ -1,5 +1,7 @@
 ---
-title: "Eventos"
+title: "Eventos de la iglesia en B1.church: explorar e inscribirse"
+sidebar_label: "Eventos"
+description: "Explora los próximos eventos de la iglesia en B1.church, consulta el estado de las inscripciones y regístrate o añade eventos a tu calendario."
 ---
 
 # Eventos
@@ -43,7 +45,7 @@ Si un evento está lleno, es posible que aún pueda unirse a la **lista de esper
 
 ## Más información
 
-- [Inscribirse en eventos](./registering): guía paso a paso para registrarse en un evento
-- [Mis inscripciones](./my-registrations): vea sus inscripciones, pague saldos, edite o cancele
-- [Solicitar eventos y salas](./requesting-events): solicite un evento con las salas y los recursos que necesita
-- [Autorregistro](../checkin/self-checkin): registre su llegada cuando llegue al evento
+- [Inscribirse en eventos](./registering.md): guía paso a paso para registrarse en un evento
+- [Mis inscripciones](./my-registrations.md): vea sus inscripciones, pague saldos, edite o cancele
+- [Solicitar eventos y salas](./requesting-events.md): solicite un evento con las salas y los recursos que necesita
+- [Autorregistro](../checkin/self-checkin.md): registre su llegada cuando llegue al evento

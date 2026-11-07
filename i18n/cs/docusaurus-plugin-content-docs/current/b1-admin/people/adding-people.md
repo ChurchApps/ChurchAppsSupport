@@ -1,5 +1,6 @@
 ---
 title: "Přidávání osob"
+description: "Přidejte osobu do databáze sboru v B1 Admin, vyplňte její údaje a propojte členy rodiny do domácností pro odbavení a přehledy."
 ---
 
 # Přidávání osob

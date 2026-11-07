@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Connect ChatGPT to your church's B1 data with an API key so you can ask plain-English questions about people, giving, and attendance in B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Connect ChatGPT to your church's B1 data and ask it questions in plain English �
 </div>
 
 :::tip Recommended: try Claude first — it's free
-[Claude](./claude) connects to B1 on its **free plan** and sets up in less than 3 minutes — just add B1 as a connector and sign in with your B1 account. No key needed. It's the easiest way for your church to try AI with B1 before paying for anything.
+[Claude](./claude.md) connects to B1 on its **free plan** and sets up in less than 3 minutes — just add B1 as a connector and sign in with your B1 account. No key needed. It's the easiest way for your church to try AI with B1 before paying for anything.
 :::
 
 ## Set It Up
@@ -254,5 +255,5 @@ Anyone with the link can ask natural-language questions. The key's scopes still 
 
 - [API Keys](/docs/developer/api/api-keys) — full scope reference
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — protocol details and tool schemas
-- [Claude](./claude) — same idea, for Anthropic's models
+- [Claude](./claude.md) — same idea, for Anthropic's models
 - [REST API reference](/docs/developer/api/endpoints) — every endpoint a Custom GPT action can call

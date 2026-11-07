@@ -1,5 +1,6 @@
 ---
 title: "Mga Endpoint ng Membership"
+description: "Sanggunian ng endpoint para sa ChurchApps Membership API: tao, sambahayan, grupo, tungkulin, form, at setting, kasama ang auth at permission rules."
 ---
 
 # Mga Endpoint ng Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Batayang path: `/membership/users`
 
-Tingnan ang [Authentication at Mga Pahintulot](./authentication) para sa mga endpoint ng login, registration, at pamamahala ng password.
+Tingnan ang [Authentication at Mga Pahintulot](./authentication.md) para sa mga endpoint ng login, registration, at pamamahala ng password.
 
 | Paraan | Path | Auth | Pahintulot | Paglalarawan |
 |--------|------|------|------------|--------------|
@@ -342,6 +343,6 @@ Batayang path: `/membership/clientErrors`
 
 ## Mga Kaugnay na Pahina
 
-- [Authentication at Mga Pahintulot](./authentication) — Daloy ng login, JWT, OAuth, modelo ng pahintulot
-- [Mga Endpoint ng Attendance](./attendance) — Pagsubaybay ng serbisyo at pagbisita
-- [Istruktura ng Module](../module-structure) — Mga pattern ng pag-oorganisa ng code
+- [Authentication at Mga Pahintulot](./authentication.md) — Daloy ng login, JWT, OAuth, modelo ng pahintulot
+- [Mga Endpoint ng Attendance](./attendance.md) — Pagsubaybay ng serbisyo at pagbisita
+- [Istruktura ng Module](../module-structure.md) — Mga pattern ng pag-oorganisa ng code

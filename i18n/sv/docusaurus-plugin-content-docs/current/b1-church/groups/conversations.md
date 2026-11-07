@@ -1,5 +1,6 @@
 ---
 title: "Gruppkonversationer"
+description: "Lär dig skriva, redigera, reagera på och hantera meddelanden i en B1.church-gruppchatt, inklusive meddelanden och moderationsverktyg för ledare."
 ---
 
 # Gruppkonversationer

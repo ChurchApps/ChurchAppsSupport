@@ -1,5 +1,7 @@
 ---
-title: "Incheckning"
+title: "Kyrkincheckning med B1 Mobile-appen"
+sidebar_label: "Incheckning"
+description: "Checka in dig själv och ditt hushåll till kyrkans gudstjänster från telefonen i B1 Mobile, genom att välja gudstjänster och grupper innan du kommer."
 ---
 
 # Incheckning
@@ -16,7 +18,7 @@ Incheckningsprocessen är ett snabbt, flerstegsförlopp som guidar dig genom att
 
 ## Komma igång
 
-För att öppna incheckningen, öppna avsnittet **Check-In** i B1 Mobile. Du måste vara inloggad för att använda funktionen. Om du inte är inloggad uppmanas du att först [logga in](../getting-started/logging-in).
+För att öppna incheckningen, öppna avsnittet **Check-In** i B1 Mobile. Du måste vara inloggad för att använda funktionen. Om du inte är inloggad uppmanas du att först [logga in](../getting-started/logging-in.md).
 
 :::info
 Incheckningsfunktionen kräver att din kyrka har konfigurerat gudstjänster och närvarogrupper i sina administrationsinställningar. Om inga gudstjänster visas när du öppnar incheckningsskärmen kan det betyda att din kyrka inte har konfigurerat funktionen ännu. Kontakta din kyrkoadministratör för hjälp.
@@ -30,4 +32,4 @@ Incheckningsfunktionen kräver att din kyrka har konfigurerat gudstjänster och 
 
 ## Nästa steg
 
-- [Självincheckning](./self-checkin) -- Steg-för-steg-guide för att checka in från din telefon
+- [Självincheckning](./self-checkin.md) -- Steg-för-steg-guide för att checka in från din telefon

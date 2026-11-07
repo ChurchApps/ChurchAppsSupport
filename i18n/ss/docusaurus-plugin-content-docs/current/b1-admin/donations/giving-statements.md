@@ -1,5 +1,6 @@
 ---
 title: "Tincwadzi Temnikelo"
+description: "Dala titatimende temnyaka wetiminikelo kwibanganikelako bonkhe ku-B1 Admin, bese uzilanda njenge-CSV noma uziphrinte ngetinani letikhokhelwa tintela."
 ---
 
 # Tincwadzi Temnikelo

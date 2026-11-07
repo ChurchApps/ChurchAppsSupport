@@ -1,5 +1,6 @@
 ---
 title: "Megjelenés"
+description: "Színek, betűtípusok, logó és navigáció beállítása a B1 Adminban, plusz widgetek, GA4-elemzés, átirányítások és egyéni CSS."
 ---
 
 # Megjelenés
@@ -13,7 +14,7 @@ A Megjelenés oldalon testreszabhatja templomi weboldalának általános megjele
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Végezze el a weboldala [kezdeti beállítását](initial-setup)
+- Végezze el a weboldala [kezdeti beállítását](./initial-setup.md)
 - Készüljön fel a templom logójával PNG formátumban, átlátszó háttérrel és 4:1 képarányban
 - Ismerje a templom márkaszíneit (hexadecimális értékeit), ha van már stílusútmutatója
 
@@ -98,7 +99,7 @@ Az egyéni CSS erőteljes, de helytelen használat esetén elronthatja a webolda
 :::
 
 :::info
-A weboldala Tartalombiztonsági szabályzatot (CSP) alkalmaz, amely minden más forrásból származó beágyazott szkriptet letilt. Az itt található **Egyéni HTML** mező és az egyes oldalakon használható [HTML elem](page-editor#using-the-html-element) a megbízható kivételek: az itt mentett kód változtatás nélkül fut, ezért csak megbízható forrásból származó szkripteket illesszen be (például elemzési címkéket, csevegőwidgeteket és hasonló beágyazásokat).
+A weboldala Tartalombiztonsági szabályzatot (CSP) alkalmaz, amely minden más forrásból származó beágyazott szkriptet letilt. Az itt található **Egyéni HTML** mező és az egyes oldalakon használható [HTML elem](./page-editor.md#using-the-html-element) a megbízható kivételek: az itt mentett kód változtatás nélkül fut, ezért csak megbízható forrásból származó szkripteket illesszen be (például elemzési címkéket, csevegőwidgeteket és hasonló beágyazásokat).
 :::
 
 ## Stílustémák
@@ -107,5 +108,5 @@ Ha gyors kiindulópontra van szüksége, a Színpaletta szakaszban található *
 
 ## Következő lépések
 
-- [Oldalak kezelése](managing-pages) – A weboldal oldalainak létrehozása és rendezése
-- [Fájlok](files) – Médiatartalmak feltöltése a weboldalához
+- [Oldalak kezelése](./managing-pages.md) – A weboldal oldalainak létrehozása és rendezése
+- [Fájlok](./files.md) – Médiatartalmak feltöltése a weboldalához

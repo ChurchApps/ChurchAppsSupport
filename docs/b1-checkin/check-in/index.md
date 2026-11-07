@@ -1,5 +1,6 @@
 ---
 title: "Check-In Workflow"
+description: "Walk through the B1 Church Checkin kiosk flow step by step, from picking a service to checking out, and set up services, groups, and people in B1 Admin first."
 ---
 
 # Check-In Workflow
@@ -12,13 +13,13 @@ The check-in process in B1 Church Checkin follows a simple, step-by-step flow. A
 
 ## The Check-In Flow at a Glance
 
-1. **[Select a service](./selecting-service)** -- Choose which service you are attending (e.g., Sunday AM, Sunday PM, Midweek).
-2. **[Look up your family](./looking-up-members)** -- Search by phone number or last name to find yourself in the system.
-3. **[Review your household](./household-review)** -- See all family members and their current group assignments.
-4. **[Assign groups](./group-assignment)** -- Choose which class or group each family member should attend for each service time.
-5. **[Add guests](./adding-guests)** (optional) -- Add a visitor to your household if they are joining you.
-6. **[Complete check-in](./completing-checkin)** -- Tap the check-in button to submit attendance and print labels.
-7. **[Check out](./checking-out)** (manned stations) -- At pickup time, verify the security code and pickup person, with trusted-pickup lists, page-a-parent, and label reprints.
+1. **[Select a service](./selecting-service.md)** -- Choose which service you are attending (e.g., Sunday AM, Sunday PM, Midweek).
+2. **[Look up your family](./looking-up-members.md)** -- Search by phone number or last name to find yourself in the system.
+3. **[Review your household](./household-review.md)** -- See all family members and their current group assignments.
+4. **[Assign groups](./group-assignment.md)** -- Choose which class or group each family member should attend for each service time.
+5. **[Add guests](./adding-guests.md)** (optional) -- Add a visitor to your household if they are joining you.
+6. **[Complete check-in](./completing-checkin.md)** -- Tap the check-in button to submit attendance and print labels.
+7. **[Check out](./checking-out.md)** (manned stations) -- At pickup time, verify the security code and pickup person, with trusted-pickup lists, page-a-parent, and label reprints.
 
 After check-in is complete, the app displays a success screen and automatically returns to the lookup screen, ready for the next family.
 
@@ -36,5 +37,5 @@ Make sure the following are configured in B1 Admin before using the check-in kio
 - **People** are added to the system with household associations. See [adding people](../../b1-admin/people/adding-people.md).
 
 :::info
-If you have not yet set up the kiosk itself, see [Getting Started](../getting-started/) for installation, login, and printer configuration instructions.
+If you have not yet set up the kiosk itself, see [Getting Started](../getting-started/index.md) for installation, login, and printer configuration instructions.
 :::

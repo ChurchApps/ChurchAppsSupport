@@ -1,5 +1,7 @@
 ---
-title: "Wydarzenia"
+title: "Wydarzenia kościelne i rejestracja w B1 Mobile"
+sidebar_label: "Wydarzenia"
+description: "Przeglądaj nadchodzące wydarzenia kościelne w B1 Mobile i zapisuj siebie oraz członków rodziny na te, na które zapisy są otwarte."
 ---
 
 # Wydarzenia
@@ -23,10 +25,10 @@ Wydarzenia mogą mieć różne statusy:
 
 ## Czego potrzebujesz
 
-- Zainstalowanej aplikacji [B1 Mobile](../getting-started/installing) i [zalogowania](../getting-started/logging-in)
+- Zainstalowanej aplikacji [B1 Mobile](../getting-started/installing.md) i [zalogowania](../getting-started/logging-in.md)
 - Rejestracja na wydarzenia musi być włączona w Twoim kościele dla danego wydarzenia
 
 ## Dowiedz się więcej
 
-- [Rejestracja na wydarzenia](./registering) -- Przewodnik krok po kroku, jak zapisać się na wydarzenie w aplikacji mobilnej
-- [Samodzielne zameldowanie](../checkin/self-checkin) -- Zamelduj się po przybyciu na wydarzenie
+- [Rejestracja na wydarzenia](./registering.md) -- Przewodnik krok po kroku, jak zapisać się na wydarzenie w aplikacji mobilnej
+- [Samodzielne zameldowanie](../checkin/self-checkin.md) -- Zamelduj się po przybyciu na wydarzenie

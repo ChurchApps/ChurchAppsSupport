@@ -1,12 +1,13 @@
 ---
 title: "Nettstedsruting og flere nettsteder"
+description: "Hvordan B1.church kobler underdomener og egne domener til riktig menighet eller sekundærside, og Caddy-kanten som håndterer TLS for egne domener."
 ---
 
 # Nettstedsruting og flere nettsteder
 
 <div class="article-intro">
 
-En enkelt kirke kan nå drive mer enn ett distinkt nettsted, og hvert kan ligge på et `*.b1.church`-underdomene eller på et fullt tilpasset, kirkeeid domene. Denne siden kartlegger rutingslaget *under* byggeren: hvordan en innkommende forespørsel løses til både en kirke **og** et bestemt nettsted, datamodellen for flere nettsteder (`siteId`-sentinelen som gjør at alle eksisterende nettsteder fortsatt rendres uendret), og det egendefinerte domenets kant — en selvstyrt Caddy-proxy på EC2 som avslutter TLS og skriver om hvert kirkedomene til dets `*.b1.church`-oppstrøms. For hva som faktisk rendres når en forespørsel er løst — sidetreet, seksjonene og elementene — se [Nettstedbygger](./website-builder).
+En enkelt kirke kan nå drive mer enn ett distinkt nettsted, og hvert kan ligge på et `*.b1.church`-underdomene eller på et fullt tilpasset, kirkeeid domene. Denne siden kartlegger rutingslaget *under* byggeren: hvordan en innkommende forespørsel løses til både en kirke **og** et bestemt nettsted, datamodellen for flere nettsteder (`siteId`-sentinelen som gjør at alle eksisterende nettsteder fortsatt rendres uendret), og det egendefinerte domenets kant — en selvstyrt Caddy-proxy på EC2 som avslutter TLS og skriver om hvert kirkedomene til dets `*.b1.church`-oppstrøms. For hva som faktisk rendres når en forespørsel er løst — sidetreet, seksjonene og elementene — se [Nettstedbygger](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ To operasjonelle detaljer i middlewaren:
 
 - **Cache.** Hver verts resultat (en treff *eller* en bekreftet bom — aldri en nettverksfeil) caches i **10 minutter** i et in-memory-`Map`, per serverless-isolat.
 - **Matcher.** Matcheren inkluderer med vilje `/sitemap.xml`, `/robots.txt` og `/manifest.webmanifest` på nytt. Dens første mønster ekskluderer prikkede stier, noe som ellers ville droppet disse filene; de legges til igjen slik at et egendefinert domenes SEO-/PWA-filer også får `x-site`-headeren.
-- **Kanonisk header.** For kirkesider legger middlewaren til en responsheader `Link: <{proto}://{host}{path}>; rel="canonical"` som nevner verten siden faktisk ble servert fra — underdomene eller egendefinert domene (`helpers/canonicalLink.ts`). Når et egendefinert domene når B1App gjennom [Caddy-proxyen](../deployment/caddy-proxy), er forespørselens vert `{sub}.b1.church`-underdomenet, så middlewaren bruker besøkendes domene fra `X-Church-Host` i stedet — men bare etter at `/domains/public/lookup/{host}` bekrefter at det domenet peker til samme underdomene (`ownsSubdomain()`). Den kanoniske lenken, `robots.txt` og `sitemap.xml` nevner da det egendefinerte domenet i stedet for `b1.church`-underdomenet. Den hoppes over på ikke-kirkevert (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) og på `/mobile`, `/login`, `/logout`, og de genererte robots-/sitemap-/manifest-filene.
+- **Kanonisk header.** For kirkesider legger middlewaren til en responsheader `Link: <{proto}://{host}{path}>; rel="canonical"` som nevner verten siden faktisk ble servert fra — underdomene eller egendefinert domene (`helpers/canonicalLink.ts`). Når et egendefinert domene når B1App gjennom [Caddy-proxyen](../deployment/caddy-proxy.md), er forespørselens vert `{sub}.b1.church`-underdomenet, så middlewaren bruker besøkendes domene fra `X-Church-Host` i stedet — men bare etter at `/domains/public/lookup/{host}` bekrefter at det domenet peker til samme underdomene (`ownsSubdomain()`). Den kanoniske lenken, `robots.txt` og `sitemap.xml` nevner da det egendefinerte domenet i stedet for `b1.church`-underdomenet. Den hoppes over på ikke-kirkevert (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) og på `/mobile`, `/login`, `/logout`, og de genererte robots-/sitemap-/manifest-filene.
 
 ### Deaktivert offentlig nettside
 
@@ -201,7 +202,7 @@ Rader `www.*` er utelatt fra kartet; Caddy serverer `www.{host}` via en `302`-om
 
 ### Nåværende tilstand — statisk konfigurasjon, ingen kjøretidstilstand
 
-Boksen (en Windows-EC2 bak den permanente Elastic IP-en) kjører Caddy fra en **statisk Caddyfile**: on-demand-TLS der `ask` peker til `/membership/domains/authorize`, pluss en vert→oppstrøms-kartfil oppfrisket hvert 5. minutt fra `/membership/domains/hostmap` av en planlagt oppgave som ender i en elegant `caddy reload`. Konfigurasjonen overlever omstarter uten kjøretidstilstand — ingen «re-priming»-dans — og en ukjent SNI er **TLS-avvist** (ingen sertifikat utstedes for en vert `authorize` avviser), mens en autorisert men ennå ikke kartlagt vert (et helt nytt domene innenfor synkroniseringsvinduet) får en ren 404. Nye domener blir rutbare innen ~5 minutter etter en lagring; sertifikatene deres utstedes ved første treff. Bygg/oppsett, drift og feltprøvde fallgruver: [Caddy-proxy for egendefinerte domener](../deployment/caddy-proxy).
+Boksen (en Windows-EC2 bak den permanente Elastic IP-en) kjører Caddy fra en **statisk Caddyfile**: on-demand-TLS der `ask` peker til `/membership/domains/authorize`, pluss en vert→oppstrøms-kartfil oppfrisket hvert 5. minutt fra `/membership/domains/hostmap` av en planlagt oppgave som ender i en elegant `caddy reload`. Konfigurasjonen overlever omstarter uten kjøretidstilstand — ingen «re-priming»-dans — og en ukjent SNI er **TLS-avvist** (ingen sertifikat utstedes for en vert `authorize` avviser), mens en autorisert men ennå ikke kartlagt vert (et helt nytt domene innenfor synkroniseringsvinduet) får en ren 404. Nye domener blir rutbare innen ~5 minutter etter en lagring; sertifikatene deres utstedes ved første treff. Bygg/oppsett, drift og feltprøvde fallgruver: [Caddy-proxy for egendefinerte domener](../deployment/caddy-proxy.md).
 
 ### Legacy kjøretids-push — tilbakerulling, venter på sletting
 
@@ -209,8 +210,8 @@ Boksen (en Windows-EC2 bak den permanente Elastic IP-en) kjører Caddy fra en **
 
 ## Relaterte sider
 
-- [Caddy-proxy for egendefinerte domener](../deployment/caddy-proxy) — selve kantboksen: oppsett av ny maskin, WinSW-tjeneste, kartsynkroniseringsoppgave og driftsfallgruver
-- [Nettstedbygger](./website-builder) — sidetreet, rendererne, bloggen, SEO og AI-generering (det som rendres når en forespørsel er løst til en kirke/et nettsted)
-- [Content-endepunkter](../api/endpoints/content) — REST-flaten for sider, blokker, lenker og globale stiler, alle nå `?siteId=`-bevisste
-- [B1App](../web-apps/b1-app) — Next.js-appen som er vert for middlewaren og `[sdSlug]`-rutingen
-- [Distribusjon av webapper](../deployment/web-apps) — hvordan B1App distribueres til Vercel
+- [Caddy-proxy for egendefinerte domener](../deployment/caddy-proxy.md) — selve kantboksen: oppsett av ny maskin, WinSW-tjeneste, kartsynkroniseringsoppgave og driftsfallgruver
+- [Nettstedbygger](./website-builder.md) — sidetreet, rendererne, bloggen, SEO og AI-generering (det som rendres når en forespørsel er løst til en kirke/et nettsted)
+- [Content-endepunkter](../api/endpoints/content.md) — REST-flaten for sider, blokker, lenker og globale stiler, alle nå `?siteId=`-bevisste
+- [B1App](../web-apps/b1-app.md) — Next.js-appen som er vert for middlewaren og `[sdSlug]`-rutingen
+- [Distribusjon av webapper](../deployment/web-apps.md) — hvordan B1App distribueres til Vercel

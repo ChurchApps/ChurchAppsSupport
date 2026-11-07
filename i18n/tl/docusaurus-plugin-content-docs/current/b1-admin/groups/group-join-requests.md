@@ -1,5 +1,6 @@
 ---
 title: "Mga Join Request sa Grupo"
+description: "Suriin, aprubahan, o tanggihan ang join request sa grupo sa B1 Admin, hanapin ang nakabinbin bilang leader o admin, at maglagay ng dahilan kapag tinanggihan."
 ---
 
 # Mga Join Request sa Grupo

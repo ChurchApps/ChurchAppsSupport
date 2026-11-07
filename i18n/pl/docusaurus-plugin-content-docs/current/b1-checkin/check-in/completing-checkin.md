@@ -1,5 +1,6 @@
 ---
 title: "Dokončování check-inu"
+description: "Zakończ zameldowanie rodziny na kiosku w B1 Checkin: limity sal, drukowanie etykiet, kody bezpieczeństwa przy odbiorze i to, co aplikacja robi dalej."
 ---
 
 # Dokončování check-inu
@@ -13,9 +14,9 @@ Jakmile zkontrolujete svou domácnost a provedete případná přiřazení ke sk
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Zkontrolujte svou domácnost](./household-review) na obrazovce kontroly domácnosti
-- [Přiřaďte skupiny](./group-assignment) všem členům rodiny, kteří se mají přihlásit do konkrétní třídy nebo programu
-- Volitelně [přidejte hosty](./adding-guests), kteří jsou s vaší rodinou na návštěvě
+- [Zkontrolujte svou domácnost](./household-review.md) na obrazovce kontroly domácnosti
+- [Přiřaďte skupiny](./group-assignment.md) všem členům rodiny, kteří se mají přihlásit do konkrétní třídy nebo programu
+- Volitelně [přidejte hosty](./adding-guests.md), kteří jsou s vaší rodinou na návštěvě
 
 </div>
 
@@ -28,10 +29,10 @@ To je vše. Docházka vaší rodiny byla zaznamenána.
 
 ## Plné místnosti a poměry dobrovolníků
 
-Pokud má váš sbor na místnostech nastavené [bezpečnostní limity](../../b1-admin/attendance/checkin-safety), server je před uložením zkontroluje:
+Pokud má váš sbor na místnostech nastavené [bezpečnostní limity](../../b1-admin/attendance/checkin-safety.md), server je před uložením zkontroluje:
 
 - Pokud je vybraná místnost **plná nebo uzavřená**, check-in neproběhne a aplikace název místnosti zobrazí, abyste mohli vybrat jinou.
-- Pokud má termín bohoslužby [rozvrh check-inu](../../b1-admin/attendance/setup#setting-a-check-in-schedule) a jeho okno pro check-in právě není otevřené, check-in do místností tohoto termínu bohoslužby je rovněž odmítnut. Obrazovka **Zatím nelze přihlásit** uvádí místnost s důvodem „check-in právě není otevřený“; klepnutím na **Změnit místnosti** vyberte jiný termín bohoslužby nebo skupinu. (Termíny bohoslužeb, které jsou již uzavřené, jsou na [obrazovce domácnosti](./household-review) zobrazeny jako **Uzavřeno** a nelze je vybrat, takže tuto zprávu uvidíte obvykle jen tehdy, pokud okno skončí během přihlašování.)
+- Pokud má termín bohoslužby [rozvrh check-inu](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho okno pro check-in právě není otevřené, check-in do místností tohoto termínu bohoslužby je rovněž odmítnut. Obrazovka **Zatím nelze přihlásit** uvádí místnost s důvodem „check-in právě není otevřený“; klepnutím na **Změnit místnosti** vyberte jiný termín bohoslužby nebo skupinu. (Termíny bohoslužeb, které jsou již uzavřené, jsou na [obrazovce domácnosti](./household-review.md) zobrazeny jako **Uzavřeno** a nelze je vybrat, takže tuto zprávu uvidíte obvykle jen tehdy, pokud okno skončí během přihlašování.)
 - Domácnost, která se přihlásila na dřívější termín bohoslužby, se může vrátit později a přidat otevřený termín bohoslužby, a to i poté, co dřívější okno uzavřelo. Jejich stávající přihlášení zůstanou zachována a nebrání novému check-inu.
 - Pokud je v dětské místnosti **nedostatek dobrovolníků** oproti stanovenému poměru, aplikace buď zobrazí upozornění, které může člen personálu potvrdit a pokračovat, nebo check-in zcela zablokuje -- podle toho, jak váš sbor nastavil vynucování poměrů.
 
@@ -49,7 +50,7 @@ Stejný bezpečnostní kód se objeví jak na jmenovce dítěte, tak na lístku 
 Bezpečnostní kód se pro každý check-in generuje znovu a používá pouze souhlásky a číslice (samohlásky jsou vynechány, aby nevznikala nevhodná slova).
 
 :::warning
-Pokud se štítky netisknou, otevřete nastavení správce klepnutím na **logo sboru** sedmkrát a poté klepněte na **Změnit tiskárnu**, abyste ověřili připojení tiskárny. Kroky pro řešení potíží najdete v části [Nastavení tiskárny](../getting-started/printer-setup).
+Pokud se štítky netisknou, otevřete nastavení správce klepnutím na **logo sboru** sedmkrát a poté klepněte na **Změnit tiskárnu**, abyste ověřili připojení tiskárny. Kroky pro řešení potíží najdete v části [Nastavení tiskárny](../getting-started/printer-setup.md).
 :::
 
 ## Co se děje po check-inu

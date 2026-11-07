@@ -29,7 +29,7 @@ De providerrij van een kerk (`content.storageProviders`, beheerd in B1Admin → 
 
 Let op de reikwijdte: de providerkeuze geldt voor de stroom van content-**bestanden en -bronnen** (waar grote mediabestanden staan). Uploads van galerij, logo's en foto's blijven bij de standaardprovider, omdat die sleutels uit de opslag ophalen en URL's aan de clientzijde opbouwen. Toewijzing per kerk is daar nog niet van toepassing.
 
-Dezelfde koppeling wordt ook gebruikt voor [Bring-Your-Own Storage](./byos-storage): kerken kunnen Google Drive, Dropbox, OneDrive of hun eigen S3-compatibele bucket koppelen in plaats van een MinistryStuff-abonnement.
+Dezelfde koppeling wordt ook gebruikt voor [Bring-Your-Own Storage](./byos-storage.md): kerken kunnen Google Drive, Dropbox, OneDrive of hun eigen S3-compatibele bucket koppelen in plaats van een MinistryStuff-abonnement.
 
 ## Facturering
 

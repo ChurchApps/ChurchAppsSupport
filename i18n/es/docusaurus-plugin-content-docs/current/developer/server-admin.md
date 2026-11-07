@@ -1,5 +1,6 @@
 ---
 title: "Administración del servidor"
+description: "Solo para usuarios de Server.Admin: restablecer la verificación en dos pasos, suplantar cuentas, moderar Commons y aprobar el correo de iglesias en B1 Admin."
 ---
 
 # Administración del servidor

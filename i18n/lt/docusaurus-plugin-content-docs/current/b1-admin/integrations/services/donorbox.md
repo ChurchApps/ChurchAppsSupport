@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Prijunkite Donorbox prie B1 Admin per Zapier, kad internetinės aukos automatiškai kurtų aukų įrašus ir aukotojų profilius be rankinio eksporto."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox *New or Updated Donation* suveikia ir redagavus aukas. Naudokite Zapier
 
 ## Taip pat žr.
 
-- [Zapier (apžvalga)](../zapier): B1 pusė kiekvienam Zapier receptui
-- [Subsplash](./subsplash): kita aukų platforma su Zapier programėle
-- [Mailchimp](./mailchimp): susiekite „naujos aukos“ įvykį su el. pašto žyma
+- [Zapier (apžvalga)](../zapier.md): B1 pusė kiekvienam Zapier receptui
+- [Subsplash](./subsplash.md): kita aukų platforma su Zapier programėle
+- [Mailchimp](./mailchimp.md): susiekite „naujos aukos“ įvykį su el. pašto žyma

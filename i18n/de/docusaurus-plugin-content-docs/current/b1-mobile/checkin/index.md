@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-in zum Gottesdienst mit der B1 Mobile App"
+sidebar_label: "Check-In"
+description: "Melden Sie sich und Ihren Haushalt per Smartphone in B1 Mobile zum Gottesdienst ein und wählen Gottesdienste und Gruppen schon vor Ihrer Ankunft."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ Der Check-in-Vorgang ist ein kurzer, mehrstufiger Ablauf. Er führt Sie durch di
 
 ## Erste Schritte
 
-Um auf den Check-in zuzugreifen, öffnen Sie den Bereich **Check-In** in B1 Mobile. Sie müssen angemeldet sein, um diese Funktion zu nutzen. Falls Sie nicht angemeldet sind, werden Sie zuerst aufgefordert, sich [anzumelden](../getting-started/logging-in).
+Um auf den Check-in zuzugreifen, öffnen Sie den Bereich **Check-In** in B1 Mobile. Sie müssen angemeldet sein, um diese Funktion zu nutzen. Falls Sie nicht angemeldet sind, werden Sie zuerst aufgefordert, sich [anzumelden](../getting-started/logging-in.md).
 
 :::info
 Die Check-in-Funktion setzt voraus, dass Ihre Gemeinde Gottesdienste und Anwesenheitsgruppen in den Verwaltungseinstellungen eingerichtet hat. Wenn beim Öffnen des Check-in-Bildschirms keine Gottesdienste angezeigt werden, ist diese Funktion in Ihrer Gemeinde möglicherweise noch nicht konfiguriert. Wenden Sie sich für Hilfe an Ihre Gemeindeverwaltung.
@@ -30,4 +32,4 @@ Die Check-in-Funktion setzt voraus, dass Ihre Gemeinde Gottesdienste und Anwesen
 
 ## Nächste Schritte
 
-- [Selbst-Check-in](./self-checkin) -- Schritt-für-Schritt-Anleitung zum Einchecken mit Ihrem Telefon
+- [Selbst-Check-in](./self-checkin.md) -- Schritt-für-Schritt-Anleitung zum Einchecken mit Ihrem Telefon

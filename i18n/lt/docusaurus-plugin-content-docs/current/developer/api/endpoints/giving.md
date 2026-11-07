@@ -1,5 +1,6 @@
 ---
 title: "Aukojimų galutiniai taškai"
+description: "Giving API nuoroda: aukos, partijos, tarpininkai, prenumeratos ir mokėjimo būdai, su autentifikacijos ir leidimų taisyklėmis."
 ---
 
 # Aukojimų galutiniai taškai
@@ -284,6 +285,6 @@ Plėčia `GenericCrudController` su CRUD maršrutais: `getById`, `getAll`, `post
 
 ## Susiję puslapiai
 
-- [Narystės galutiniai taškai](./membership) – asmenys, bažnyčios, grupės, vaidmenys ir leidimai
-- [Autentifikacija ir leidimai](./authentication) – prisijungimo srautas, JWT, OAuth, leidimų modelis
-- [Modulio struktūra](../module-structure) – kodo organizavimo modeliai
+- [Narystės galutiniai taškai](./membership.md) – asmenys, bažnyčios, grupės, vaidmenys ir leidimai
+- [Autentifikacija ir leidimai](./authentication.md) – prisijungimo srautas, JWT, OAuth, leidimų modelis
+- [Modulio struktūra](../module-structure.md) – kodo organizavimo modeliai

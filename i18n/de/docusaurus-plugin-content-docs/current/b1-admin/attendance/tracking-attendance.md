@@ -1,5 +1,6 @@
 ---
 title: "Teilnahme verfolgen"
+description: "Prüfen Sie Anwesenheitstrends, filtern Sie Berichte nach Gemeinde, Gottesdienst oder Gruppe und exportieren Sie Gruppenanwesenheiten von der Anwesenheitsseite in B1 Admin."
 ---
 
 # Teilnahme verfolgen

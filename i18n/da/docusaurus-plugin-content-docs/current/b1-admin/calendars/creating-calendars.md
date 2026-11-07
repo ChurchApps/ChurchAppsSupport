@@ -1,5 +1,6 @@
 ---
 title: "Oprettelse af kalendere"
+description: "Opret en kalender i B1 Admin, forbind grupper eller importér .ics-filer, og administrér begivenheder, tilmeldinger og noter ét sted."
 ---
 
 # Oprettelse af kalendere
@@ -53,7 +54,7 @@ Tilslutning af grupper til din kalender er en kraftfuld måde at samle begivenhe
 :::
 
 :::info
-Hvis du vil oprette en enkelt kalender, der trækker begivenheder fra mange grupper på tværs af din kirke, skal du se [Kurateret kalender](curated-calendar) for en strømlinet tilgang.
+Hvis du vil oprette en enkelt kalender, der trækker begivenheder fra mange grupper på tværs af din kirke, skal du se [Kurateret kalender](./curated-calendar.md) for en strømlinet tilgang.
 :::
 
 ## Aktivering af begivenhedsregistrering
@@ -69,7 +70,7 @@ Du kan aktivere registrering for enhver kalenderbegivenhed, så medlemmer kan ti
    - **Mærker** -- Kommaseparerede etiketter (f.eks. "ungdom, retreat, vbs") for at hjælpe med at kategorisere registrerbare begivenheder.
 4. Gem begivenheden.
 
-Når registrering er aktiveret, vil medlemmer se en knap **Registrer dig for denne begivenhed**, når de ser begivenheden på [B1-webstedet](../../b1-church/events/registering) eller [B1 Mobile-appen](../../b1-mobile/events/registering).
+Når registrering er aktiveret, vil medlemmer se en knap **Registrer dig for denne begivenhed**, når de ser begivenheden på [B1-webstedet](../../b1-church/events/registering.md) eller [B1 Mobile-appen](../../b1-mobile/events/registering.md).
 
 ### Styring af registreringer
 
@@ -89,6 +90,6 @@ Brug kapacitetsprogresslinjen til at overvåge, hvor hurtigt begivenheder fyldes
 
 ## Næste trin
 
-- [Kurateret kalender](curated-calendar) -- Opret en kalender, der trækker fra flere grupper
-- [Vejledning til begivenhedsregistrering](../guides/event-registration) -- Trinvis vejledning til opsætning af begivenhedsregistrering
-- [Kalenderoverssigt](./) -- Vend tilbage til kalenderoverssigten
+- [Kurateret kalender](./curated-calendar.md) -- Opret en kalender, der trækker fra flere grupper
+- [Vejledning til begivenhedsregistrering](../guides/event-registration.md) -- Trinvis vejledning til opsætning af begivenhedsregistrering
+- [Kalenderoverssigt](./index.md) -- Vend tilbage til kalenderoverssigten

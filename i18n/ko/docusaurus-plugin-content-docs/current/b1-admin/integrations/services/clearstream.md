@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Zapier로 Clearstream SMS를 B1 Admin에 연결합니다. 새 헌금이나 양식 제출 시 문자를 보내고, 수신된 답장을 사람 정보로 다시 가져옵니다."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Zap을 켭니다. B1은 기부 웹훅을 활성화 시 등록합니다. **설정
 
 ## 참고도 보기
 
-- [Text In Church](./text-in-church) — 대체 SMS 플랫폼, 유사한 Zapier 형태
-- [Mobile Message](./mobile-message) — US 외부의 교회의 경우
-- [Zapier(개요)](../zapier) — 모든 Zapier 레시피의 B1 측
+- [Text In Church](./text-in-church.md) — 대체 SMS 플랫폼, 유사한 Zapier 형태
+- [Mobile Message](./mobile-message.md) — US 외부의 교회의 경우
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
 - [Clearstream API 문서](https://api-docs.clearstream.io/) — Zapier 앱을 넘어서는 맞춤 통합의 경우

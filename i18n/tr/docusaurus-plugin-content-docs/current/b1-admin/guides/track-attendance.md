@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Kilise Katılımını Takip Etme"
+description: "B1 Admin'de kampüs ve ibadet saatlerini kurarak kilise katılımını izleyin; manuel ya da self check-in ile kaydedin ve raporları okuyun."
 ---
 
 # Kilise Katılımını Takip Etme

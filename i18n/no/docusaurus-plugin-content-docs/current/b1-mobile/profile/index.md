@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil og tildelte kort i B1 Mobile"
+sidebar_label: "Profil"
+description: "Administrer navn, kontaktopplysninger, husstand og personvernsynlighet i B1 Mobile-profilen, og håndter arbeidskort og oppgaver som er tildelt deg."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Fanen **Profil** lar deg se og redigere personlige opplysninger, inkludert navn,
 
 ### Husstand
 
-Fanen **Husstand** viser familiemedlemmene dine og deres roller i husstanden. Denne informasjonen brukes til funksjoner som [innsjekking](../checkin/), der du kan sjekke inn hele familien samtidig.
+Fanen **Husstand** viser familiemedlemmene dine og deres roller i husstanden. Denne informasjonen brukes til funksjoner som [innsjekking](../checkin/index.md), der du kan sjekke inn hele familien samtidig.
 
 ### Synlighet
 
@@ -55,6 +57,6 @@ Trykk på en vanlig oppgave for å se hvem den er fra, hvem den gjelder, og nota
 
 ## Neste steg
 
-- [Redigere profilen din](./editing-profile) -- Oppdater navnet, kontaktopplysningene og bildet ditt
-- [Husstand](./household) -- Se og administrer familiemedlemmene dine
-- [Personverninnstillinger](./privacy-settings) -- Kontroller hva andre kan se om deg
+- [Redigere profilen din](./editing-profile.md) -- Oppdater navnet, kontaktopplysningene og bildet ditt
+- [Husstand](./household.md) -- Se og administrer familiemedlemmene dine
+- [Personverninnstillinger](./privacy-settings.md) -- Kontroller hva andre kan se om deg

@@ -1,5 +1,6 @@
 ---
 title: "Evidence prisotnosti"
+description: "Zabeležite prisotnost na srečanju skupine v B1 Admin: ustvarite sejo, označite udeležence, shranite opombe in natisnite seznam ali izvozite preglednico."
 ---
 
 # Evidence prisotnosti

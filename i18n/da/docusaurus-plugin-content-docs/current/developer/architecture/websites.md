@@ -1,12 +1,13 @@
 ---
 title: "Webstedsrouting og multi-site"
+description: "Hvordan B1.church kobler subdomæner og egne domæner til den rigtige kirke eller det sekundære site, plus Caddy-edgen, der håndterer TLS for egne domæner."
 ---
 
 # Webstedsrouting og multi-site
 
 <div class="article-intro">
 
-En enkelt kirke kan nu drive mere end ét særskilt websted, og hvert af dem kan ligge på et `*.b1.church`-underdomæne eller på et fuldt tilpasset domæne, som kirken selv ejer. Denne side beskriver routinglaget, der ligger *under* builderen: hvordan en indkommende anmodning bliver til både en kirke **og** et bestemt websted, den multi-site datamodel (`siteId`-sentinelværdien, der sikrer, at alle eksisterende websteder fortsat vises uændret), og custom-domain-kanten, en selvstyret Caddy-proxy på EC2, der afslutter TLS og omskriver hvert kirkedomæne til sin `*.b1.church`-upstream. Hvad der faktisk vises, når en anmodning er løst, altså side-, sektion- og elementtræet, se [Website Builder](./website-builder).
+En enkelt kirke kan nu drive mere end ét særskilt websted, og hvert af dem kan ligge på et `*.b1.church`-underdomæne eller på et fuldt tilpasset domæne, som kirken selv ejer. Denne side beskriver routinglaget, der ligger *under* builderen: hvordan en indkommende anmodning bliver til både en kirke **og** et bestemt websted, den multi-site datamodel (`siteId`-sentinelværdien, der sikrer, at alle eksisterende websteder fortsat vises uændret), og custom-domain-kanten, en selvstyret Caddy-proxy på EC2, der afslutter TLS og omskriver hvert kirkedomæne til sin `*.b1.church`-upstream. Hvad der faktisk vises, når en anmodning er løst, altså side-, sektion- og elementtræet, se [Website Builder](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ To driftsdetaljer om middleware:
 
 - **Cache.** Hver værts resultat (et hit *eller* en bekræftet miss, aldrig en netværksfejl) caches i **10 minutter** i en in-memory `Map`, pr. serverless-isolate.
 - **Matcher.** Matcheren inkluderer bevidst igen `/sitemap.xml`, `/robots.txt` og `/manifest.webmanifest`. Dens første mønster udelukker stiers med punktum, hvilket ellers ville droppe disse filer. De tilføjes igen, så et custom domains kirke-specifikke SEO- og PWA-filer også modtager `x-site`-headeren.
-- **Kanonisk header.** For kirkesider tilføjer middleware en `Link: <{proto}://{host}{path}>; rel="canonical"`-svarheader, som angiver den vært siden faktisk blev serveret fra, enten underdomænet eller custom domain (`helpers/canonicalLink.ts`). Når et custom domain når B1App gennem [Caddy-proxyen](../deployment/caddy-proxy), er anmodningens vært `{sub}.b1.church`-underdomænet. Middleware bruger derfor besøgerens domæne fra `X-Church-Host` i stedet, men kun efter at `/domains/public/lookup/{host}` bekræfter, at domænet peger på samme underdomæne (`ownsSubdomain()`). Den kanoniske link, `robots.txt` og `sitemap.xml` peger derefter på custom domain i stedet for `b1.church`-underdomænet. Det springes over på ikke-kirkelige værter (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) og på `/mobile`, `/login`, `/logout` samt de genererede robots-, sitemap- og manifestfiler.
+- **Kanonisk header.** For kirkesider tilføjer middleware en `Link: <{proto}://{host}{path}>; rel="canonical"`-svarheader, som angiver den vært siden faktisk blev serveret fra, enten underdomænet eller custom domain (`helpers/canonicalLink.ts`). Når et custom domain når B1App gennem [Caddy-proxyen](../deployment/caddy-proxy.md), er anmodningens vært `{sub}.b1.church`-underdomænet. Middleware bruger derfor besøgerens domæne fra `X-Church-Host` i stedet, men kun efter at `/domains/public/lookup/{host}` bekræfter, at domænet peger på samme underdomæne (`ownsSubdomain()`). Den kanoniske link, `robots.txt` og `sitemap.xml` peger derefter på custom domain i stedet for `b1.church`-underdomænet. Det springes over på ikke-kirkelige værter (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) og på `/mobile`, `/login`, `/logout` samt de genererede robots-, sitemap- og manifestfiler.
 
 ### Deaktiveret offentlig hjemmeside
 
@@ -201,7 +202,7 @@ Rækker med `www.*` udelukkes fra mapningen. Caddy serverer `www.{host}` via en 
 
 ### Nuværende tilstand: statisk konfiguration, ingen runtime-tilstand
 
-Maskinen (en Windows EC2 bag den permanente Elastic IP) kører Caddy med en **statisk Caddyfile**. Den har on-demand TLS, hvor `ask` peger på `/membership/domains/authorize`, samt en værts→upstream-mapfil, som opdateres hvert 5. minut fra `/membership/domains/hostmap` af en planlagt opgave, der slutter med en elegant `caddy reload`. Konfigurationen overlever genstarter uden nogen runtime-tilstand, og der er ingen dans med at genprimere. En ukendt SNI bliver **TLS-afvist** (der udstedes intet certifikat til en vært, som `authorize` afviser), mens en autoriseret, men endnu ikke mappet vært (et helt nyt domæne inden for synkroniseringsvinduet) får et rent 404. Nye domæner kan routes inden for ca. 5 minutter efter et save. Deres certifikater udstedes ved første besøg. Opsætning, drift og gotchas fra praksis: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy).
+Maskinen (en Windows EC2 bag den permanente Elastic IP) kører Caddy med en **statisk Caddyfile**. Den har on-demand TLS, hvor `ask` peger på `/membership/domains/authorize`, samt en værts→upstream-mapfil, som opdateres hvert 5. minut fra `/membership/domains/hostmap` af en planlagt opgave, der slutter med en elegant `caddy reload`. Konfigurationen overlever genstarter uden nogen runtime-tilstand, og der er ingen dans med at genprimere. En ukendt SNI bliver **TLS-afvist** (der udstedes intet certifikat til en vært, som `authorize` afviser), mens en autoriseret, men endnu ikke mappet vært (et helt nyt domæne inden for synkroniseringsvinduet) får et rent 404. Nye domæner kan routes inden for ca. 5 minutter efter et save. Deres certifikater udstedes ved første besøg. Opsætning, drift og gotchas fra praksis: [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md).
 
 ### Legacy runtime-push: rollback-vej, afventer sletning
 
@@ -209,8 +210,8 @@ Maskinen (en Windows EC2 bag den permanente Elastic IP) kører Caddy med en **st
 
 ## Relaterede sider
 
-- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy): selve kantmaskinen: opsætning af en frisk maskine, WinSW-tjenesten, synkroniseringsopgaven for kortet og driftsgotchas
-- [Website Builder](./website-builder): sidernes, sektionernes og elementernes træ, renderere, blog, SEO og AI-generering (det der vises, når en anmodning er løst til en kirke/et websted)
-- [Content Endpoints](../api/endpoints/content): REST-fladen for sider, blokke, links og globale stilarter, som nu alle er `?siteId=`-bevidste
-- [B1App](../web-apps/b1-app): Next.js-appen, der huser middleware og `[sdSlug]`-routingen
-- [Web App Deployment](../deployment/web-apps): hvordan B1App deployes til Vercel
+- [Caddy Custom-Domain Proxy](../deployment/caddy-proxy.md): selve kantmaskinen: opsætning af en frisk maskine, WinSW-tjenesten, synkroniseringsopgaven for kortet og driftsgotchas
+- [Website Builder](./website-builder.md): sidernes, sektionernes og elementernes træ, renderere, blog, SEO og AI-generering (det der vises, når en anmodning er løst til en kirke/et websted)
+- [Content Endpoints](../api/endpoints/content.md): REST-fladen for sider, blokke, links og globale stilarter, som nu alle er `?siteId=`-bevidste
+- [B1App](../web-apps/b1-app.md): Next.js-appen, der huser middleware og `[sdSlug]`-routingen
+- [Web App Deployment](../deployment/web-apps.md): hvordan B1App deployes til Vercel

@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "在 Node.js 22+ 上本地设置 LessonsApp Next.js 课程编辑器，将其指向本地 LessonsApi，并了解其构建过程和 S3/CloudFront 部署方式。"
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp 是 [Lessons.church](https://lessons.church) 的课程内容管理应
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **Node.js 22+** 和 **Git** —— 参见[前置条件](../setup/prerequisites)
-- 配置您的 API 目标（本地 LessonsApi）—— 参见[环境变量](../setup/environment-variables)
+- 安装 **Node.js 22+** 和 **Git** —— 参见[前置条件](../setup/prerequisites.md)
+- 配置您的 API 目标（本地 LessonsApi）—— 参见[环境变量](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ LessonsApp 与 **LessonsApi** 后端通信，这是一个独立于主 ChurchApps
 3. 触发 CloudFront 失效，以提供新版本
 
 :::tip
-有关详细的部署说明，请参阅 [Web 应用部署](../deployment/web-apps) 指南。
+有关详细的部署说明，请参阅 [Web 应用部署](../deployment/web-apps.md) 指南。
 :::

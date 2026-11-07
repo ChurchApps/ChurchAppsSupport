@@ -1,5 +1,6 @@
 ---
 title: "Pagpili ng Pairing Mode"
+description: "Piliin ang tamang paraan ng pag-pair ng FreePlay TV: kalendaryo mula sa FreePlay Admin, service plan mula sa B1 Admin, o walang pairing."
 ---
 
 # Pagpili ng Pairing Mode
@@ -32,7 +33,7 @@ Ilagay ang code sa **FreePlay Admin** sa [admin.freeplay.church](https://admin.f
 
 **Pinakamainam para sa:** Signage sa lobby at pasilyo, mga announcement loop, at mga silid-aralan kung saan dapat nang tumutugtog ang lesson pagpasok ng mga tao.
 
-Tingnan ang **[Scheduled Mode](../scheduled-mode/)** para sa buong gabay.
+Tingnan ang **[Scheduled Mode](../scheduled-mode/index.md)** para sa buong gabay.
 
 ## Plan Mode (B1 Admin)
 
@@ -42,7 +43,7 @@ Ilagay ang code sa **B1 Admin** kapag gusto mong sundan ng TV ang isang plan typ
 
 **Pinakamainam para sa:** Mga TV na nagpapakita ng content na nakatali sa lingguhan mong service plan, kung saan may magsisimula ng playback kapag oras na.
 
-Tingnan ang **[Plan Mode](../plan-mode/)** para sa buong gabay.
+Tingnan ang **[Plan Mode](../plan-mode/index.md)** para sa buong gabay.
 
 :::tip
 Maaari mo ring i-play ang kasalukuyang service plan ayon sa iskedyul. Sa FreePlay Admin, magdagdag ng calendar entry at piliin ang plan type sa ilalim ng **Service plans**.
@@ -50,7 +51,7 @@ Maaari mo ring i-play ang kasalukuyang service plan ayon sa iskedyul. Sa FreePla
 
 ## Mga Content Provider (Walang Pairing)
 
-Kung hindi mo kailangang i-pair ang TV, maaari kang mag-browse nang direkta sa mga content provider. May content na maaari mong i-download at i-play anumang oras ang mga provider gaya ng [Lessons.church](../../lessons-church/) at Bible Project.
+Kung hindi mo kailangang i-pair ang TV, maaari kang mag-browse nang direkta sa mga content provider. May content na maaari mong i-download at i-play anumang oras ang mga provider gaya ng [Lessons.church](../../lessons-church/index.md) at Bible Project.
 
 **Pinakamainam para sa:** Mga TV kung saan pumipili ang mga volunteer ng ipe-play bawat linggo, o kapag gusto mong tuklasin kung ano ang available.
 
@@ -60,6 +61,6 @@ Maaari mong buksan ang pahinang **Providers** anumang oras mula sa **Settings** 
 
 ## Kaugnay na Artikulo
 
-- **[Scheduled Mode](../scheduled-mode/)** - Ilagay ang mga TV sa kalendaryo gamit ang FreePlay Admin
-- **[Plan Mode](../plan-mode/)** - Buong gabay sa pag-pair sa isang service plan
-- **[Content Providers](../content-providers/)** - Mag-browse at mag-download ng content mula sa mga external na source
+- **[Scheduled Mode](../scheduled-mode/index.md)** - Ilagay ang mga TV sa kalendaryo gamit ang FreePlay Admin
+- **[Plan Mode](../plan-mode/index.md)** - Buong gabay sa pag-pair sa isang service plan
+- **[Content Providers](../content-providers/index.md)** - Mag-browse at mag-download ng content mula sa mga external na source

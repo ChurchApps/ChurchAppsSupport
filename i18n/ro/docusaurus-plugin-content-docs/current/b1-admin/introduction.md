@@ -1,5 +1,6 @@
 ---
 title: Introducere în B1.church
+description: "Vă ghidează la autentificarea în B1 Admin, navigarea prin Dashboard și meniul Jump și configurarea datelor bisericii înainte de a explora alte instrumente."
 ---
 
 # Bun venit în B1.church Admin!
@@ -34,7 +35,7 @@ Pentru asistență suplimentară, vă rugăm să trimiteți un e-mail la [suppor
 10. Acum puteți intra în B1.church prin **portalul membrilor** sau **portalul administrator**. Portalul membrilor vă permite să vedeți cum arată B1.church pentru membrii dvs., să vizualizați grupurile dvs. și să gestionați donațiile personale.
 
 :::tip
-Începeți cu pagina [Setări](./settings/) pentru a configura numele bisericii, identitatea vizuală și permisiunile echipei. Acest lucru asigură că tot ce configurați ulterior se va afișa corect.
+Începeți cu pagina [Setări](./settings/index.md) pentru a configura numele bisericii, identitatea vizuală și permisiunile echipei. Acest lucru asigură că tot ce configurați ulterior se va afișa corect.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Căutarea este adesea cea mai rapidă cale către o pagină -- scrieți o parte 
 
 După ce ați urmărit această introducere, explorați aceste funcționalități cheie:
 
-- [Adăugarea persoanelor](./people/adding-people) -- Aflați cum să adăugați membri în baza de date
-- [Grupuri](./groups/) -- Configurați și gestionați grupurile bisericii
-- [Planuri de serviciu](./serving/plans) -- Organizați lucrarea dvs. de slujire
-- [Prezență](./attendance/) -- Urmăriți prezența și check-in-ul
-- [Site-ul web](./website/) -- Construiți și personalizați site-ul web al bisericii
-- [Setări](./settings/) -- Configurați informațiile bisericii și permisiunile
+- [Adăugarea persoanelor](./people/adding-people.md) -- Aflați cum să adăugați membri în baza de date
+- [Grupuri](./groups/index.md) -- Configurați și gestionați grupurile bisericii
+- [Planuri de serviciu](./serving/plans.md) -- Organizați lucrarea dvs. de slujire
+- [Prezență](./attendance/index.md) -- Urmăriți prezența și check-in-ul
+- [Site-ul web](./website/index.md) -- Construiți și personalizați site-ul web al bisericii
+- [Setări](./settings/index.md) -- Configurați informațiile bisericii și permisiunile

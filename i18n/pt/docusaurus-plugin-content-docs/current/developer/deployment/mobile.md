@@ -1,5 +1,6 @@
 ---
 title: "Implantação Móvel"
+description: "Passo a passo para gerar versões Android e iOS do app B1 Mobile com Expo EAS, enviá-las às lojas de apps e publicar atualizações OTA."
 ---
 
 # Implantação Móvel
@@ -13,7 +14,7 @@ As aplicações móveis do ChurchApps são construídas e implantadas usando o *
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure a aplicação móvel localmente -- veja [B1 Mobile](../mobile/b1-mobile)
+- Configure a aplicação móvel localmente -- veja [B1 Mobile](../mobile/b1-mobile.md)
 - Instale e configure o [EAS CLI](https://docs.expo.dev/eas/)
 - Tenha acesso ao Google Play Console (Android) e/ou Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Esquecer de atualizar os números de versão em todos os arquivos causará falha
 
 ## Artigos Relacionados
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Guia de configuração local e desenvolvimento
-- **[Implantação de APIs](./apis)** -- Implantando as APIs do backend
-- **[Implantação de Aplicações Web](./web-apps)** -- Implantando as aplicações web frontend
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Guia de configuração local e desenvolvimento
+- **[Implantação de APIs](./apis.md)** -- Implantando as APIs do backend
+- **[Implantação de Aplicações Web](./web-apps.md)** -- Implantando as aplicações web frontend

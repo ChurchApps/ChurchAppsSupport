@@ -1,5 +1,6 @@
 ---
 title: "Presentazione"
+description: "Proietta le lezioni con la Presenter Mode di Lessons.church, condividi guide per volontari per ruolo e stampa i materiali prima della lezione."
 ---
 
 # Presentazione

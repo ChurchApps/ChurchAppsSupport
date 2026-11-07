@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Online adományozás beállítása"
+description: "Online adakozás beállítása a B1 Admin-ban: adományalapok létrehozása, Stripe csatlakoztatása, és egy Adományozás oldal hozzáadása a B1.church weboldalhoz."
 ---
 
 # Online adományozás beállítása
@@ -70,7 +71,7 @@ Ha valós terhelés nélkül szeretné ellenőrizni a működést, először has
 Hírdesse meg, hogy a tagok tudjanak online adakozni.
 
 1. Ossza meg az adományozási webcímet a weboldalán, e-mail hírlevelekben, hirdetőlapokon és a közösségi médiában
-2. A tagok a [B1 Mobile alkalmazáson](../../b1-mobile/giving/) keresztül is adakozhatnak – az adományozási funkció beépítve megtalálható
+2. A tagok a [B1 Mobile alkalmazáson](../../b1-mobile/giving/index.md) keresztül is adakozhatnak – az adományozási funkció beépítve megtalálható
 
 :::info
 A bejelentkezett tagok menthetik fizetési módjaikat, beállíthatnak ismétlődő adományokat, és megtekinthetik adománytörténetüket. Bejelentkezés nélküli, névtelen adakozásra is van lehetőség.

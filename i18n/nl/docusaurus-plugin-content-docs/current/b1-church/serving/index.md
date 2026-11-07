@@ -1,5 +1,7 @@
 ---
-title: "Dienen"
+title: "Vrijwilligerswerk en aanmelden op B1.church"
+sidebar_label: "Dienen"
+description: "Blader door vrijwilligersmogelijkheden op B1.church, meld je aan voor open posities, bekijk je opdrachten en annuleer aanmeldingen vóór de deadline."
 ---
 
 # Dienen
@@ -14,7 +16,7 @@ Het gedeelte Dienen op B1.church laat je vrijwilligersmogelijkheden doorbladeren
 
 - **Blader vrijwilligersmogelijkheden** -- Bekijk aankomende serviceplanned met openstaande posities die vrijwilligers nodig hebben.
 - **Inschrijven voor posities** -- Kies een positie en schrijf jezelf in met één klik.
-- **Bekijk je plannen** -- Zie je aankomende en voorgaande [dienestoewijzingen](../plans/viewing-plans).
+- **Bekijk je plannen** -- Zie je aankomende en voorgaande [dienestoewijzingen](../plans/viewing-plans.md).
 - **Verwijder inschrijvingen** -- Annuleer een zelf-inschrijving als je schema verandert (vóór de deadline).
 
 ## Hoe Het Werkt
@@ -27,5 +29,5 @@ Alleen posities die je kerkbeheerder voor zelf-inschrijving heeft ingeschakeld, 
 
 ## Meer weten
 
-- [Vrijwilligers Inschrijving](./volunteer-signup) -- Stap-voor-stap gids voor het doorbladeren en inschrijven voor vrijwilligers posities
-- [Plannen Bekijken](../plans/viewing-plans) -- Zie je toegewezen serviceplanned en service orders
+- [Vrijwilligers Inschrijving](./volunteer-signup.md) -- Stap-voor-stap gids voor het doorbladeren en inschrijven voor vrijwilligers posities
+- [Plannen Bekijken](../plans/viewing-plans.md) -- Zie je toegewezen serviceplanned en service orders

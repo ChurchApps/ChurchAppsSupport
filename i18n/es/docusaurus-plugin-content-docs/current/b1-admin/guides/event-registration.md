@@ -1,5 +1,6 @@
 ---
 title: "Guía: Configuración del Registro de Eventos"
+description: "Configura un formulario de inscripción en B1 Admin para recopilar datos y pagos opcionales, insértalo en tu web y controla las inscripciones."
 ---
 
 # Configuración del Registro de Eventos
@@ -11,7 +12,7 @@ Cree un formulario de registro de eventos, recopile información de asistentes y
 </div>
 
 :::info
-**Dos formas de manejar el registro de eventos:** Esta guía cubre el **registro basado en formularios**, que le brinda control total sobre campos personalizados y recopilación de pagos. Para eventos más simples donde solo necesita rastrear quién viene, use el **registro de eventos nativo** integrado en el calendario -- consulte [Creación de Calendarios](../calendars/creating-calendars.md#enabling-event-registration) para instrucciones de configuración. El registro nativo permite que los miembros se inscriban directamente desde el [sitio web B1](../../b1-church/events/registering) y la [aplicación móvil](../../b1-mobile/events/registering) con seguimiento de capacidad, ventanas de fecha y confirmaciones por correo electrónico.
+**Dos formas de manejar el registro de eventos:** Esta guía cubre el **registro basado en formularios**, que le brinda control total sobre campos personalizados y recopilación de pagos. Para eventos más simples donde solo necesita rastrear quién viene, use el **registro de eventos nativo** integrado en el calendario -- consulte [Creación de Calendarios](../calendars/creating-calendars.md#enabling-event-registration) para instrucciones de configuración. El registro nativo permite que los miembros se inscriban directamente desde el [sitio web B1](../../b1-church/events/registering.md) y la [aplicación móvil](../../b1-mobile/events/registering.md) con seguimiento de capacidad, ventanas de fecha y confirmaciones por correo electrónico.
 :::
 
 <div class="prereqs">

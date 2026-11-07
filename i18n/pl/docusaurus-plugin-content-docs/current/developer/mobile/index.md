@@ -1,5 +1,6 @@
 ---
 title: "Aplikacje mobilne"
+description: "Przegląd aplikacji mobilnych ChurchApps (Expo, React Native): B1 Mobile, B1 Checkin i LessonsScreen oraz link do przewodnika konfiguracji narzędzi."
 ---
 
 # Aplikacje mobilne
@@ -14,13 +15,13 @@ Aplikacje mobilne ChurchApps są zbudowane w oparciu o **React Native** i **Expo
 
 | Aplikacja | Przeznaczenie | Platforma |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Główna aplikacja dla członków kościoła | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Główna aplikacja dla członków kościoła | Android, iOS |
 | B1 Checkin | Aplikacja kioskowa na stanowiska meldunkowe | Android, iOS |
 | LessonsScreen | Aplikacja na Android TV do wyświetlania lekcji w salach | Android TV |
 
 ### B1 Mobile
 
-Główna aplikacja dla członków kościoła. Członkowie mogą przeglądać katalog wspólnoty, korzystać z opcji darowizn, sprawdzać obecność, otrzymywać powiadomienia i uczestniczyć w życiu swojej wspólnoty. Szczegóły znajdziesz w [przewodniku konfiguracji B1 Mobile](./b1-mobile).
+Główna aplikacja dla członków kościoła. Członkowie mogą przeglądać katalog wspólnoty, korzystać z opcji darowizn, sprawdzać obecność, otrzymywać powiadomienia i uczestniczyć w życiu swojej wspólnoty. Szczegóły znajdziesz w [przewodniku konfiguracji B1 Mobile](./b1-mobile.md).
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Aplikacja kioskowa stworzona specjalnie dla stanowisk meldunkowych w kościołac
 Aplikacja na Android TV, która wyświetla treści lekcji w salach. Nauczyciele mogą przesyłać na ekran telewizora slajdy, filmy i ćwiczenia z lekcji, co ułatwia prezentowanie materiału podczas zajęć.
 
 :::info
-Wszystkie aplikacje mobilne korzystają z tego samego zestawu narzędzi opartego na Expo i stosują podobne procedury konfiguracji. Przewodnik [B1 Mobile](./b1-mobile) służy jako odniesienie dla ogólnego procesu konfiguracji we wszystkich projektach mobilnych.
+Wszystkie aplikacje mobilne korzystają z tego samego zestawu narzędzi opartego na Expo i stosują podobne procedury konfiguracji. Przewodnik [B1 Mobile](./b1-mobile.md) służy jako odniesienie dla ogólnego procesu konfiguracji we wszystkich projektach mobilnych.
 :::

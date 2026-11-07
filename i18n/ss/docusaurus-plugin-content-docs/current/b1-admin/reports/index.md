@@ -1,5 +1,6 @@
 ---
 title: "Imibiko"
+description: "Fumana usebentise timbiko letakhelwe ku-B1 Admin tetinsuku letizalwako, tekuba khona, tekuniketa kanye ne-audit log, kuncike esigabeni lolusho kuso."
 ---
 
 # Imibiko
@@ -14,12 +15,12 @@ Likhasi le-Reports likuniketa kufinyelela ngekushesha kumibiko lesheyakhelwe lek
 
 Likhasi le-Reports liveta emakhadi embiko wembiko ngawunye lokhona. Chofota nome ngiliphi ikhadi kuvula umbiko kanye netihlungo taso.
 
-- **[Umbiko Wemalanga Ekutalwa](./birthday-report)** -- Buka emalanga ekutalwa lasetako emalunga elibandla lakho.
-- **[Iphetheni Yekubakhona](./attendance-reports)** -- Bona kutsi emaphetheni ekubakhona ashintja njani ngesikhatsi kuwo onkhe tinsita takho.
-- **[Kubakhona Kwelicembu](./attendance-reports)** -- Buka tinani letiphelele tekubakhona ngelicembu kuluhla lwelusuku lolukhetsiwe.
-- **[Kubakhona Kwelicembu Lilanga Ngelilanga](./attendance-reports)** -- Tfola kuhlukaniswa kwelilanga nelilanga kwemininingwane yekubakhona kwelicembu.
-- **[Sifinyeto Semnikelo](./donation-summary)** -- Buyeketa tinani letiphelele teminikelo kanye nemaphetheni ekuhlela timali.
-- **[Irekhodi Lekuhlolwa](./audit-log)** -- Landzelela tonkhe tishintjo netento kuyo yonkhe inhlelo yakho yekuphatsa libandla (litfolakala ngentasi kwe-Settings > Audit Log).
+- **[Umbiko Wemalanga Ekutalwa](./birthday-report.md)** -- Buka emalanga ekutalwa lasetako emalunga elibandla lakho.
+- **[Iphetheni Yekubakhona](./attendance-reports.md)** -- Bona kutsi emaphetheni ekubakhona ashintja njani ngesikhatsi kuwo onkhe tinsita takho.
+- **[Kubakhona Kwelicembu](./attendance-reports.md)** -- Buka tinani letiphelele tekubakhona ngelicembu kuluhla lwelusuku lolukhetsiwe.
+- **[Kubakhona Kwelicembu Lilanga Ngelilanga](./attendance-reports.md)** -- Tfola kuhlukaniswa kwelilanga nelilanga kwemininingwane yekubakhona kwelicembu.
+- **[Sifinyeto Semnikelo](./donation-summary.md)** -- Buyeketa tinani letiphelele teminikelo kanye nemaphetheni ekuhlela timali.
+- **[Irekhodi Lekuhlolwa](./audit-log.md)** -- Landzelela tonkhe tishintjo netento kuyo yonkhe inhlelo yakho yekuphatsa libandla (litfolakala ngentasi kwe-Settings > Audit Log).
 
 ## Kusebentisa Imibiko
 
@@ -38,7 +39,7 @@ Mininingwane yembiko incike ekufakweni kwemininingwane ngalokuhambisanako. Cinis
 
 ## Fundza Kwengetiwe
 
-- [Umbiko Wemalanga Ekutalwa](./birthday-report) -- Kutfola nekusebentisa mininingwane yemalanga ekutalwa.
-- [Imibiko Yekubakhona](./attendance-reports) -- Kucondza imibiko lemitsatfu yekubakhona.
-- [Sifinyeto Semnikelo](./donation-summary) -- Kubuyeketa mininingwane yeminikelo kanye netifinyeto temali.
-- [Irekhodi Lekuhlolwa](./audit-log) -- Kulandzelela umsebenti wenhlelo netishintjo.
+- [Umbiko Wemalanga Ekutalwa](./birthday-report.md) -- Kutfola nekusebentisa mininingwane yemalanga ekutalwa.
+- [Imibiko Yekubakhona](./attendance-reports.md) -- Kucondza imibiko lemitsatfu yekubakhona.
+- [Sifinyeto Semnikelo](./donation-summary.md) -- Kubuyeketa mininingwane yeminikelo kanye netifinyeto temali.
+- [Irekhodi Lekuhlolwa](./audit-log.md) -- Kulandzelela umsebenti wenhlelo netishintjo.

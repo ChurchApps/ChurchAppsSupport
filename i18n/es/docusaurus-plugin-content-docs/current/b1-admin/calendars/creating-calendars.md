@@ -1,5 +1,6 @@
 ---
 title: "Creación de calendarios"
+description: "Crea un calendario en B1 Admin, conecta grupos o importa archivos .ics, y gestiona sus eventos, inscripciones y notas desde un solo lugar."
 ---
 
 # Creación de calendarios
@@ -61,7 +62,7 @@ Conectar grupos a su calendario es una forma eficaz de agregar eventos automáti
 :::
 
 :::info
-Si desea crear un solo calendario que tome eventos de muchos grupos de su iglesia, consulte [Calendario seleccionado](curated-calendar) para un enfoque simplificado.
+Si desea crear un solo calendario que tome eventos de muchos grupos de su iglesia, consulte [Calendario seleccionado](./curated-calendar.md) para un enfoque simplificado.
 :::
 
 ## Agregar y editar eventos {#adding-and-editing-events}
@@ -75,7 +76,7 @@ Haga clic en **Nuevo evento** en la página de detalle del calendario para agreg
 - **Inicio** y **Fin**, **Se repite** y **Visibilidad** (**Público** o **Privado**).
 - **Etiquetas** -- Títulos separados por comas, como `jóvenes, estudiantes`. Un elemento Calendario en su sitio web puede configurarse para mostrar solo eventos con cierta etiqueta. Es el mismo campo **Etiquetas** que aparece en la configuración de inscripción del evento.
 - **Quién puede ver las notas** y **Quién puede publicar notas** -- Quién puede leer y agregar notas al evento (consulte [Notas del evento](#event-notes)). Elija **Solo personal** (el valor predeterminado), **Líderes de grupo** (líderes del grupo del evento) o **Miembros del grupo** (todas las personas del grupo del evento, incluidos sus líderes).
-- **Salones** y **Recursos** -- Reserve espacio y equipo para el evento. Consulte [Salones, recursos y programación](rooms-resources).
+- **Salones** y **Recursos** -- Reserve espacio y equipo para el evento. Consulte [Salones, recursos y programación](./rooms-resources.md).
 
 Haga clic en **Guardar**. Si el evento se repite, B1 le pide confirmación, porque al guardar se actualiza cada ocurrencia de la serie.
 
@@ -101,12 +102,12 @@ Puede habilitar la inscripción para cualquier evento del calendario para que lo
    - **Cierre de inscripciones** -- La fecha y hora en que la inscripción se cierra.
    - **Etiquetas** -- Títulos separados por comas (por ejemplo, "jóvenes, retiro, VBS") para ayudar a clasificar los eventos con inscripción.
    - **Preguntas de inscripción** -- Opcionalmente, adjunte un [formulario](../forms/creating-forms.md) para que los inscritos respondan preguntas adicionales (restricciones alimentarias, talla de camiseta, contacto de emergencia, etc.) como parte de la inscripción. Elija **Ninguno** para omitir las preguntas.
-   - **Habilitar lista de espera** -- Cuando el evento se llena, permite que más personas se unan a una lista de espera en lugar de ser rechazadas. Consulte [Inscripciones pagadas](paid-registrations#waitlist).
+   - **Habilitar lista de espera** -- Cuando el evento se llena, permite que más personas se unan a una lista de espera en lugar de ser rechazadas. Consulte [Inscripciones pagadas](./paid-registrations.md#waitlist).
 4. Guarde el evento.
 
-Para los eventos de pago, la misma página de configuración le permite definir **Tipos de asistente** con precio, **Selecciones** opcionales (complementos) y **Códigos de descuento**, con el pago cobrado a través del proveedor de donaciones de su iglesia. Consulte [Inscripciones pagadas](paid-registrations) para ver la guía completa.
+Para los eventos de pago, la misma página de configuración le permite definir **Tipos de asistente** con precio, **Selecciones** opcionales (complementos) y **Códigos de descuento**, con el pago cobrado a través del proveedor de donaciones de su iglesia. Consulte [Inscripciones pagadas](./paid-registrations.md) para ver la guía completa.
 
-Una vez habilitada la inscripción, los miembros verán un botón **Inscribirse a este evento** cuando vean el evento en el [sitio web de B1](../../b1-church/events/registering) o en la [aplicación móvil de B1](../../b1-mobile/events/registering). Si adjuntó un formulario, los inscritos verán un paso de **Preguntas** durante la inscripción, y sus respuestas se guardan junto con su inscripción.
+Una vez habilitada la inscripción, los miembros verán un botón **Inscribirse a este evento** cuando vean el evento en el [sitio web de B1](../../b1-church/events/registering.md) o en la [aplicación móvil de B1](../../b1-mobile/events/registering.md). Si adjuntó un formulario, los inscritos verán un paso de **Preguntas** durante la inscripción, y sus respuestas se guardan junto con su inscripción.
 
 :::info
 Las preguntas de inscripción solo funcionan con formularios que **no** estén marcados como Restringidos. Un formulario restringido se omite automáticamente durante la inscripción en lugar de mostrarse, así que use un formulario no restringido al adjuntar preguntas a un evento.
@@ -126,7 +127,7 @@ Para ver y administrar las inscripciones de sus eventos:
    - **Promover** inscripciones en lista de espera cuando se libere un lugar.
    - **Exportar CSV** -- Descargue todas las inscripciones, incluidos tipos de asistente, selecciones, montos pagados y respuestas a las preguntas.
 
-Si el evento tiene preguntas de inscripción adjuntas, la página de detalle también muestra un filtro de **Solo preguntas sin responder** para encontrar rápidamente a los inscritos que aún no han enviado respuestas, y un botón **Ver respuestas** en cada inscripción respondida para ver sus respuestas. Los eventos de pago agregan una columna de **Tipo**, una columna de **Pagado / Total**, conteos por tipo y un cuadro de diálogo de detalle de pagos -- consulte [Inscripciones pagadas](paid-registrations#the-registration-roster).
+Si el evento tiene preguntas de inscripción adjuntas, la página de detalle también muestra un filtro de **Solo preguntas sin responder** para encontrar rápidamente a los inscritos que aún no han enviado respuestas, y un botón **Ver respuestas** en cada inscripción respondida para ver sus respuestas. Los eventos de pago agregan una columna de **Tipo**, una columna de **Pagado / Total**, conteos por tipo y un cuadro de diálogo de detalle de pagos -- consulte [Inscripciones pagadas](./paid-registrations.md#the-registration-roster).
 
 :::tip
 Use la barra de progreso de capacidad para vigilar qué tan rápido se llenan los eventos. La barra se pone roja cuando un evento alcanza o supera su capacidad.
@@ -134,7 +135,7 @@ Use la barra de progreso de capacidad para vigilar qué tan rápido se llenan lo
 
 ## Próximos pasos
 
-- [Calendario seleccionado](curated-calendar) -- Cree un calendario que tome eventos de varios grupos
-- [Inscripciones pagadas](paid-registrations) -- Tipos de asistente, selecciones de complementos, códigos de descuento, pagos y listas de espera
-- [Guía de inscripción a eventos](../guides/event-registration) -- Guía paso a paso para configurar la inscripción a eventos
-- [Resumen de calendarios](./) -- Regrese al resumen de calendarios
+- [Calendario seleccionado](./curated-calendar.md) -- Cree un calendario que tome eventos de varios grupos
+- [Inscripciones pagadas](./paid-registrations.md) -- Tipos de asistente, selecciones de complementos, códigos de descuento, pagos y listas de espera
+- [Guía de inscripción a eventos](../guides/event-registration.md) -- Guía paso a paso para configurar la inscripción a eventos
+- [Resumen de calendarios](./index.md) -- Regrese al resumen de calendarios

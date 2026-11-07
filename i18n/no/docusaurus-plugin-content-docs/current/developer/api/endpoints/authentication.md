@@ -1,5 +1,6 @@
 ---
 title: "Autentisering og tillatelser"
+description: "Referanse for ChurchApps API-ets JWT-innlogging, tofaktorinnlogging, OAuth 2.0-flyter og tillatelsesmodell for utviklere som bygger integrasjoner."
 ---
 
 # Autentisering og tillatelser
@@ -244,7 +245,7 @@ For enheter uten nettleser (TV-apper, kiosker):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Hent klient etter klient-ID (hemmelighet skjult) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Opprett eller oppdater en klient |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Slett en klient |
-| POST | `/membership/oauth/register` | Offentlig | — | Dynamisk klientregistrering (RFC 7591) for offentlige klienter som MCP-tilkoblinger. Se [Tilkoblede apper](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Offentlig | — | Dynamisk klientregistrering (RFC 7591) for offentlige klienter som MCP-tilkoblinger. Se [Tilkoblede apper](../connected-apps.md#dynamic-client-registration) |
 
 ### Endepunkter for godkjenning av enheter
 
@@ -265,5 +266,5 @@ I endepunkttabellene i denne dokumentasjonen angis disse som henholdsvis **JWT**
 
 ## Relaterte sider
 
-- [Modulstruktur](../module-structure) — Hvordan kontrollere, repositorier og modeller er organisert
-- [Lokalt oppsett](../local-setup) — Kjør API-et lokalt for utvikling
+- [Modulstruktur](../module-structure.md) — Hvordan kontrollere, repositorier og modeller er organisert
+- [Lokalt oppsett](../local-setup.md) — Kjør API-et lokalt for utvikling

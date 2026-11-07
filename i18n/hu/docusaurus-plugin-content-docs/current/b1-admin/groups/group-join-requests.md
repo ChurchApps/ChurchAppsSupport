@@ -1,5 +1,6 @@
 ---
 title: "Csoportos csatlakozási kérelmek"
+description: "Csoportcsatlakozási kérelmek jóváhagyása vagy elutasítása a B1 Admin-ban, függő kérelmek keresése vezetőként vagy adminként, indoklás elutasításkor."
 ---
 
 # Csoportos csatlakozási kérelmek

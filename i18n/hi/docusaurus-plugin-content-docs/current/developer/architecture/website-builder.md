@@ -1,5 +1,6 @@
 ---
 title: "वेबसाइट बिल्डर आर्किटेक्चर"
+description: "B1 वेबसाइट बिल्डर का डेवलपर मानचित्र: सामग्री ट्री, साझा तत्व सूची, रेंडर पाइपलाइन और B1 Admin व B1.church में AI पृष्ठ निर्माण।"
 ---
 
 # वेबसाइट बिल्डर आर्किटेक्चर
@@ -82,7 +83,7 @@ B1App द्वारा परोसी जाने वाली हर चर
 
 ### संपादक फ़ॉर्म (B1Admin)
 
-संपादक के प्रति-प्रकार सेटिंग्स फ़ॉर्म `B1Admin/src/site/admin/elements/` में रहते हैं -- `ElementEdit.tsx` एक समर्पित कंपोनेंट (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) या प्रति प्रकार एक inline फ़ील्ड बिल्डर को dispatch करता है। इस कैटलॉग का AI-मुखी प्रतिबिंब API का MCP `describe_page_builder` टूल है (देखें [MCP Server](../api/mcp))।
+संपादक के प्रति-प्रकार सेटिंग्स फ़ॉर्म `B1Admin/src/site/admin/elements/` में रहते हैं -- `ElementEdit.tsx` एक समर्पित कंपोनेंट (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) या प्रति प्रकार एक inline फ़ील्ड बिल्डर को dispatch करता है। इस कैटलॉग का AI-मुखी प्रतिबिंब API का MCP `describe_page_builder` टूल है (देखें [MCP Server](../api/mcp.md))।
 
 संपादक पूर्वावलोकन वही `Theme` माउंट करता है जो लाइव साइट पर है, जो चर्च के वैश्विक styles से `--headingFont` / `--bodyFont` CSS variables सेट करता है। B1App इन variables को `pages.css` के माध्यम से लागू करता है, जिसे B1Admin इम्पोर्ट नहीं कर सकता, इसलिए `ContentEditor.tsx` `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) इंजेक्ट करता है ताकि उन्हें `.page` बॉडी टेक्स्ट और `h1`–`h6` पर लागू करे। इसके बिना, पूर्वावलोकन शीर्षक एडमिन फ़ॉन्ट में दिखाता था।
 
@@ -151,7 +152,7 @@ Curated इवेंट्स `realEventId` (`eventPageId()`) से लिं�
 |---------|--------------|
 | Meta विवरण | `pages.metaDescription` (≤300 अक्षर) `MetaHelper.getMetaData()` के माध्यम से हर builder-रेंडर रूट पर Next.js `Metadata` (description + Open Graph) में बहता है। B1Admin की पृष्ठ सेटिंग्स में AI "Generate" बटन शामिल है (नीचे देखें) |
 | रीडायरेक्ट | `/content/redirects` पर प्रबंधित प्रति-चर्च `redirects` पंक्तियाँ (`content.edit`, 200-पंक्ति सीमा, सामान्यीकृत पथ)। संभावित 404 पर, B1App का पृष्ठ रूट पथ को `GET /content/redirects/public/:churchId` के विरुद्ध हल करता है और Next के `permanentRedirect` के माध्यम से HTTP 308 जारी करता है; अमिलान पथ `notFound()` पर गिरते हैं |
-| ब्रांडेड 404 | `not-found.tsx` सामान्य त्रुटि के बजाय चर्च के लोगो, नाम, और थीम के साथ `BrandedNotFound` रेंडर करता है। अज्ञात `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, और `/volunteer/[planId]` पथ वास्तविक 404 लौटाते हैं, जैसे अज्ञात सबडोमेन और खराब पृष्ठ slugs (देखें [Website Routing & Multi-Site](./websites)) |
+| ब्रांडेड 404 | `not-found.tsx` सामान्य त्रुटि के बजाय चर्च के लोगो, नाम, और थीम के साथ `BrandedNotFound` रेंडर करता है। अज्ञात `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, और `/volunteer/[planId]` पथ वास्तविक 404 लौटाते हैं, जैसे अज्ञात सबडोमेन और खराब पृष्ठ slugs (देखें [Website Routing & Multi-Site](./websites.md)) |
 | संरचित डेटा | ब्लॉग पोस्ट पर `BlogPosting` JSON-LD; प्रति-सर्मन पृष्ठों (`/{sdSlug}/sermons/[sermonId]`) पर और `sermons` एलिमेंट वाले पृष्ठों पर `VideoObject`; बिल्डर पृष्ठों पर calendar/event एलिमेंट्स और हर `/{sdSlug}/events/[eventId]` पृष्ठ पर `Event` (अगली घटना, इवेंट फ़ोटो `image` के रूप में); `serviceTimes` एलिमेंट से schema.org `Event` |
 | सर्मन पृष्ठ | हर सार्वजनिक सर्मन को पूर्ण मेटाडेटा के साथ `/sermons/[sermonId]` पर एक crawlable पृष्ठ मिलता है -- सर्मन अब क्लाइंट-साइड ब्राउज़र एलिमेंट के भीतर बंद नहीं हैं |
 | Analytics | सार्वजनिक सेटिंग key `ga4MeasurementId` (B1Admin में रीडायरेक्ट के बगल में प्रबंधित) `next/script` के माध्यम से प्रति-चर्च GA4 gtag इंजेक्ट करती है। B1 ऐप (`/{sdSlug}/mobile`) भी जब वैध `G-` ID हो तो अपने पृष्ठ दृश्य उस ID पर भेजता है, ChurchApps के अपने टैग के साथ (GTM कंटेनर IDs केवल वेबसाइट पर रहते हैं)। हर `gtag('config')` `navigator.standalone` या `(display-mode: standalone)` मीडिया क्वेरी के आधार पर `display_mode` `installed` या `browser` के साथ आता है (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ B1Admin में `SectionToolbar` rewrite बटन और पृष्ठ-स�
 | `POST /website/generateAltText` | 20 इमेज URLs तक पर Vision कॉल; संक्षिप्त alt टेक्स्ट लौटाता है (≤125 अक्षर, "photo of" उपसर्ग हटाए गए) |
 | `POST /website/generateMetaDescription` | पृष्ठ के टेक्स्ट कंटेंट से एक SEO meta विवरण (≤155 अक्षर) -- B1Admin की पृष्ठ सेटिंग्स पर Generate बटन से जुड़ा |
 
-इन endpoints के prompts `AskApi/config/instructions/` के अंतर्गत markdown फ़ाइलें हैं, जिनमें वह एलिमेंट कैटलॉग शामिल है जिससे मॉडल जेनरेट करता है। दो डिज़ाइन बिंदु इस कैटलॉग को ईमानदार रखते हैं: क्लाइंट हर अनुरोध पर `availableElementTypes` भेजता है (prompt केवल उस सूची के प्रकार उपयोग कर सकता है -- सर्वर पूरा सेट कभी हार्डकोड नहीं करता), और API का MCP `describe_page_builder` टूल वही गाइड AI एजेंटों के लिए [MCP](../api/mcp) के माध्यम से काम करते हुए रखता है। मॉडल OpenRouter के माध्यम से Anthropic Claude हैं -- sections कंटेंट के लिए 3.5 Haiku (विलंबता), outlines, site plans, और vision के लिए 3.5 Sonnet -- और OpenRouter key कॉन्फ़िगर न होने पर OpenAI fallback के साथ।
+इन endpoints के prompts `AskApi/config/instructions/` के अंतर्गत markdown फ़ाइलें हैं, जिनमें वह एलिमेंट कैटलॉग शामिल है जिससे मॉडल जेनरेट करता है। दो डिज़ाइन बिंदु इस कैटलॉग को ईमानदार रखते हैं: क्लाइंट हर अनुरोध पर `availableElementTypes` भेजता है (prompt केवल उस सूची के प्रकार उपयोग कर सकता है -- सर्वर पूरा सेट कभी हार्डकोड नहीं करता), और API का MCP `describe_page_builder` टूल वही गाइड AI एजेंटों के लिए [MCP](../api/mcp.md) के माध्यम से काम करते हुए रखता है। मॉडल OpenRouter के माध्यम से Anthropic Claude हैं -- sections कंटेंट के लिए 3.5 Haiku (विलंबता), outlines, site plans, और vision के लिए 3.5 Sonnet -- और OpenRouter key कॉन्फ़िगर न होने पर OpenAI fallback के साथ।
 
 ## संवादात्मक फ़ॉर्म
 
@@ -224,8 +225,8 @@ Bump करने वाले नियंत्रक: pages (save, delete, du
 
 ## संबंधित पृष्ठ
 
-- [Website Routing & Multi-Site](./websites) -- अनुरोध किसी चर्च/साइट पर कैसे हल होता है और कस्टम डोमेन कैसे रूट होते हैं
-- [Content Endpoints](../api/endpoints/content) -- पृष्ठों, sections, elements, blocks, posts, redirects, और settings के लिए पूर्ण REST सतह
-- [AppHelper](../shared-libraries/app-helper) -- npm पैकेज जो renderers, रजिस्ट्री, dividers, और widgets भेजता है
-- [MCP Server](../api/mcp) -- `describe_page_builder` गाइड टूल सहित
+- [Website Routing & Multi-Site](./websites.md) -- अनुरोध किसी चर्च/साइट पर कैसे हल होता है और कस्टम डोमेन कैसे रूट होते हैं
+- [Content Endpoints](../api/endpoints/content.md) -- पृष्ठों, sections, elements, blocks, posts, redirects, और settings के लिए पूर्ण REST सतह
+- [AppHelper](../shared-libraries/app-helper.md) -- npm पैकेज जो renderers, रजिस्ट्री, dividers, और widgets भेजता है
+- [MCP Server](../api/mcp.md) -- `describe_page_builder` गाइड टूल सहित
 - [Page Editor (end-user)](/docs/b1-admin/website/page-editor) -- स्टाफ़-मुखी संपादक दस्तावेज़ीकरण

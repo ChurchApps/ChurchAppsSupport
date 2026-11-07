@@ -1,5 +1,6 @@
 ---
 title: "Gérer les fonds"
+description: "Créez et organisez les fonds de dons dans B1 Admin, définissez le statut déductible d'impôt et la visibilité pour les donateurs, puis consultez les totaux par fonds et l'historique des dons pour les rapports."
 ---
 
 # Gérer les fonds

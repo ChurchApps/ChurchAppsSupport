@@ -1,5 +1,7 @@
 ---
-title: "Początkowa konfiguracja"
+title: "Pierwsze kroki z witryną B1 Admin"
+sidebar_label: "Początkowa konfiguracja"
+description: "Skonfiguruj witrynę kościoła w B1 Admin: wskaż subdomenę lub własną domenę, utwórz stronę główną, wybierz kolory marki i logo oraz zbuduj nawigację."
 ---
 
 # Początkowa konfiguracja
@@ -45,7 +47,7 @@ Jeśli nie widzisz opcji Settings, poproś osobę, która skonfigurowała konto 
 6. Po dodaniu sekcji kliknij ponownie **Add Content**, aby wstawić tekst, obrazy, filmy, karty, formularze i inne elementy, przeciągając je do sekcji.
 
 :::info
-Szczegółowe instrukcje dotyczące pracy ze stronami i nawigacją znajdziesz w artykule [Zarządzanie stronami](managing-pages). Pełny przewodnik po wizualnym edytorze znajdziesz w artykule [Korzystanie z edytora stron](page-editor).
+Szczegółowe instrukcje dotyczące pracy ze stronami i nawigacją znajdziesz w artykule [Zarządzanie stronami](./managing-pages.md). Pełny przewodnik po wizualnym edytorze znajdziesz w artykule [Korzystanie z edytora stron](./page-editor.md).
 :::
 
 ## Konfiguracja wyglądu strony
@@ -57,7 +59,7 @@ Szczegółowe instrukcje dotyczące pracy ze stronami i nawigacją znajdziesz w 
 5. Skonfiguruj **Site Footer**, dodając dane kontaktowe kościoła i linki.
 
 :::info
-Zmiany wprowadzone w sekcji Appearance obowiązują w całej Twojej stronie internetowej. Szczegółowe instrukcje dotyczące każdego ustawienia znajdziesz na stronie [Appearance](appearance).
+Zmiany wprowadzone w sekcji Appearance obowiązują w całej Twojej stronie internetowej. Szczegółowe instrukcje dotyczące każdego ustawienia znajdziesz na stronie [Appearance](./appearance.md).
 :::
 
 ## Konfiguracja nawigacji
@@ -70,6 +72,6 @@ Linki nawigacyjne są widoczne w widoku Website Pages. Aby je uporządkować:
 
 ## Kolejne kroki
 
-- [Zarządzanie stronami](managing-pages) — Dowiedz się szczegółowo, jak pracować ze stronami i nawigacją
-- [Appearance](appearance) — Dopracuj kolory, czcionki i układ swojej strony
-- [Pliki](files) — Prześlij obrazy i dokumenty na swoją stronę internetową
+- [Zarządzanie stronami](./managing-pages.md) — Dowiedz się szczegółowo, jak pracować ze stronami i nawigacją
+- [Appearance](./appearance.md) — Dopracuj kolory, czcionki i układ swojej strony
+- [Pliki](./files.md) — Prześlij obrazy i dokumenty na swoją stronę internetową

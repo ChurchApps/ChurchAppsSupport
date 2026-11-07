@@ -1,5 +1,7 @@
 ---
-title: "Ryhmän tiedot"
+title: "Ryhmän tiedot B1.church-jäsenportaalissa"
+sidebar_label: "Ryhmän tiedot"
+description: "Löydä, avaa ja hallitse ryhmän tietosivua B1 Adminin jäsenille suunnatussa B1.church-näkymässä: katso tapahtumat, kokoontumiset, lomakkeet ja jäsenet sekä liity ryhmään tai pyydä liittymistä."
 ---
 
 # Ryhmän tiedot

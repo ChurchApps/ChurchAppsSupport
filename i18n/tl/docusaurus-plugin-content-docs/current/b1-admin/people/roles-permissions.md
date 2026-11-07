@@ -1,5 +1,6 @@
 ---
 title: "Pagtatalaga ng Mga Role"
+description: "Magtalaga ng role sa B1 Admin para bigyan ang staff at volunteer ng access lamang sa mga lugar ng tao, donasyon, attendance, at grupo na kailangan nila."
 ---
 
 # Pagtatalaga ng Mga Role

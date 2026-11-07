@@ -1,5 +1,6 @@
 ---
 title: "Donaties"
+description: "Registreer, ordenen en rapporteer kerkgiften in B1 Admin, van batches en fondsen tot jaaroverzichten en online donaties via Stripe of PayPal."
 ---
 
 # Donaties

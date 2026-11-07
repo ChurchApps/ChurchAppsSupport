@@ -1,5 +1,6 @@
 ---
 title: "Ihr Profil verwalten"
+description: "Aktualisieren Sie Ihr ChurchApps-Konto in B1 Admin: Name, E-Mail und Passwort bearbeiten, Zwei-Faktor-Anmeldung aktivieren, ein Design wählen oder Ihr Konto löschen."
 ---
 
 # Ihr Profil verwalten

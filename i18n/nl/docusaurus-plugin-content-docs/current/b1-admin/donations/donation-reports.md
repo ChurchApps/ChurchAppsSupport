@@ -1,5 +1,6 @@
 ---
 title: "Donatie-rapporten"
+description: "Bekijk giftentotalen, donorverlies en batchdetails in B1 Admin via het Donations Summary-dashboard, de Lapsed Givers-weergave en CSV-exports."
 ---
 
 # Donatie-rapporten

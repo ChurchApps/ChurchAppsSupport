@@ -1,5 +1,6 @@
 ---
 title: "ウェブサイトビルダーのアーキテクチャ"
+description: "B1 ウェブサイトビルダーの開発者向けマップです。コンテンツツリー、共有エレメントのカタログ、レンダリングの流れ、B1 Admin と B1.church の AI ページ生成を扱います。"
 ---
 
 # ウェブサイトビルダーのアーキテクチャ
@@ -82,7 +83,7 @@ B1App で提供されるすべての教会ウェブサイトは、ContentApi に
 
 ### エディターのフォーム（B1Admin）
 
-エディターのタイプごとの設定フォームは `B1Admin/src/site/admin/elements/` にあります。`ElementEdit.tsx` は、専用のコンポーネント（`GalleryEdit`、`TestimonialEdit`、`StatsEdit` など）、またはタイプごとのインラインのフィールドビルダーに処理を振り分けます。このカタログの AI 向けの写しは、API の MCP ツール `describe_page_builder` です（[MCP サーバー](../api/mcp)を参照）。
+エディターのタイプごとの設定フォームは `B1Admin/src/site/admin/elements/` にあります。`ElementEdit.tsx` は、専用のコンポーネント（`GalleryEdit`、`TestimonialEdit`、`StatsEdit` など）、またはタイプごとのインラインのフィールドビルダーに処理を振り分けます。このカタログの AI 向けの写しは、API の MCP ツール `describe_page_builder` です（[MCP サーバー](../api/mcp.md)を参照）。
 
 エディターのプレビューは、公開サイトと同じ `Theme` をマウントします。これは教会のグローバルスタイルから `--headingFont` / `--bodyFont` の CSS 変数を設定します。B1App はこれらの変数を `pages.css` を通じて適用しますが、B1Admin はそれをインポートできません。そのため `ContentEditor.tsx` は `EDITOR_PAGE_FONT_CSS`（`src/site/admin/editorCss.ts`）を挿入し、`.page` の本文テキストと `h1`–`h6` に適用します。これがないと、プレビューの見出しが管理画面のフォントで表示されてしまっていました。
 
@@ -155,7 +156,7 @@ B1Admin の投稿作成 UI（**Site → Blog**）は、ダイアログで投稿�
 |---------|--------------|
 | メタディスクリプション | `pages.metaDescription`（300文字以内）は `MetaHelper.getMetaData()` を通じて、ビルダーで描画されるすべてのルートの Next.js の `Metadata`（description と Open Graph）に反映されます。B1Admin のページ設定には、AI による「Generate」ボタンがあります（後述） |
 | リダイレクト | 教会ごとの `redirects` の行は `/content/redirects` で管理されます（`content.edit`、200行の上限、パスは正規化されます）。404 になりそうな場合、B1App のページルートは `GET /content/redirects/public/:churchId` に対してパスを照合し、Next の `permanentRedirect` を通じて HTTP 308 を返します。一致しないパスは `notFound()` に流れます |
-| ブランド付きの 404 | `not-found.tsx` は、汎用的なエラーの代わりに、教会のロゴ、名称、テーマを使った `BrandedNotFound` を描画します。未知の `/register/[eventId]`、`/events/[eventId]`、`/stream/[pageSlug]`、`/volunteer/[planId]` のパスは、通常の 404 を返します。未知のサブドメインや不正な形式のページスラッグも同様です（[ウェブサイトのルーティングとマルチサイト](./websites)を参照） |
+| ブランド付きの 404 | `not-found.tsx` は、汎用的なエラーの代わりに、教会のロゴ、名称、テーマを使った `BrandedNotFound` を描画します。未知の `/register/[eventId]`、`/events/[eventId]`、`/stream/[pageSlug]`、`/volunteer/[planId]` のパスは、通常の 404 を返します。未知のサブドメインや不正な形式のページスラッグも同様です（[ウェブサイトのルーティングとマルチサイト](./websites.md)を参照） |
 | 構造化データ | ブログ投稿には `BlogPosting` JSON-LD。個別の説教ページ（`/{sdSlug}/sermons/[sermonId]`）と、`sermons` 要素を含むページには `VideoObject`。ビルダーのページ上のカレンダーとイベントの要素、および各 `/{sdSlug}/events/[eventId]` ページからは `Event`（次回の発生分、イベントの写真を `image` として使用）。`serviceTimes` 要素からは schema.org の `Event` |
 | 説教ページ | 公開されているすべての説教には、完全なメタデータを備えたクロール可能なページ `/sermons/[sermonId]` が与えられます。説教は、もはやクライアントサイドのブラウザー要素の中に閉じ込められません |
 | 分析 | 公開設定のキー `ga4MeasurementId`（B1Admin でリダイレクトの隣に管理）は、`next/script` を通じて教会ごとの GA4 gtag を挿入します。B1 アプリ（`/{sdSlug}/mobile`）も、有効な `G-` ID の場合は、ChurchApps 自身のタグと並んで、そのIDにページビューを送信します（GTM のコンテナ ID はウェブサイト専用のままです）。各 `gtag('config')` には、`navigator.standalone` または `(display-mode: standalone)` のメディアクエリに基づいて、`installed` または `browser` の `display_mode` が付きます（`B1App/src/helpers/mobileAnalytics.ts`） |
@@ -203,7 +204,7 @@ B1Admin の `SectionToolbar` の書き換えボタンと、ページ一覧の「
 | `POST /website/generateAltText` | 最大20件の画像 URL に対するビジョン呼び出しです。簡潔な代替テキスト（125文字以内。「photo of」の接頭辞は除去）を返します |
 | `POST /website/generateMetaDescription` | ページのテキスト内容から、SEO のメタディスクリプション（155文字以内）を1つ生成します。B1Admin のページ設定の Generate ボタンに接続されています |
 
-これらのエンドポイントのプロンプトは、`AskApi/config/instructions/` 以下の Markdown ファイルです。モデルが生成元とする要素カタログも含まれます。カタログを正確に保つための設計上の2点があります。クライアントはすべてのリクエストで `availableElementTypes` を渡します。プロンプトはその一覧にあるタイプしか使えません。サーバーが全体の集合をハードコードすることはありません。また、API の MCP ツール `describe_page_builder` は、[MCP](../api/mcp) を通じて作業する AI エージェントのための同じガイドを持っています。モデルは OpenRouter 経由の Anthropic Claude です。セクションの本文には 3.5 Haiku（レイテンシー重視）、アウトライン、サイトの計画、ビジョンには 3.5 Sonnet を使用します。OpenRouter のキーが設定されていない場合は、OpenAI へのフォールバックがあります。
+これらのエンドポイントのプロンプトは、`AskApi/config/instructions/` 以下の Markdown ファイルです。モデルが生成元とする要素カタログも含まれます。カタログを正確に保つための設計上の2点があります。クライアントはすべてのリクエストで `availableElementTypes` を渡します。プロンプトはその一覧にあるタイプしか使えません。サーバーが全体の集合をハードコードすることはありません。また、API の MCP ツール `describe_page_builder` は、[MCP](../api/mcp.md) を通じて作業する AI エージェントのための同じガイドを持っています。モデルは OpenRouter 経由の Anthropic Claude です。セクションの本文には 3.5 Haiku（レイテンシー重視）、アウトライン、サイトの計画、ビジョンには 3.5 Sonnet を使用します。OpenRouter のキーが設定されていない場合は、OpenAI へのフォールバックがあります。
 
 ## 対話型フォーム
 
@@ -228,8 +229,8 @@ B1App の公開描画のパスは、教会のタグが付いた取得結果を�
 
 ## 関連ページ
 
-- [ウェブサイトのルーティングとマルチサイト](./websites)：リクエストが教会やサイトにどう解決されるか、カスタムドメインがどうルーティングされるか
-- [コンテンツのエンドポイント](../api/endpoints/content)：ページ、セクション、要素、ブロック、投稿、リダイレクト、設定のための REST API の全体像
-- [AppHelper](../shared-libraries/app-helper)：描画処理、レジストリ、区切り線、ウィジェットを提供する npm パッケージ
-- [MCP サーバー](../api/mcp)：ガイドツール `describe_page_builder` を含む
+- [ウェブサイトのルーティングとマルチサイト](./websites.md)：リクエストが教会やサイトにどう解決されるか、カスタムドメインがどうルーティングされるか
+- [コンテンツのエンドポイント](../api/endpoints/content.md)：ページ、セクション、要素、ブロック、投稿、リダイレクト、設定のための REST API の全体像
+- [AppHelper](../shared-libraries/app-helper.md)：描画処理、レジストリ、区切り線、ウィジェットを提供する npm パッケージ
+- [MCP サーバー](../api/mcp.md)：ガイドツール `describe_page_builder` を含む
 - [ページエディター（エンドユーザー向け）](/docs/b1-admin/website/page-editor)：スタッフ向けのエディターのドキュメント

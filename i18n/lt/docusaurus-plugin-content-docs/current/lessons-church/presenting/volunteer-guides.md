@@ -1,5 +1,6 @@
 ---
 title: "Volontierių vadovai"
+description: "Nustatykite vaidmenų vadovus Lessons.church, kad kiekvienas savanoris matytų tik savo žingsnius, ir atspausdinkite ar pasidalinkite jais prieš pamoką."
 ---
 
 # Volontierių vadovai

@@ -1,5 +1,6 @@
 ---
 title: "Authentication & Permissions"
+description: "Reference for the ChurchApps API's JWT login, two-factor sign-in, OAuth 2.0 flows, and permission model for developers building integrations."
 ---
 
 # Authentication & Permissions
@@ -244,7 +245,7 @@ For devices without a browser (TV apps, kiosks):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Get client by client ID (secret redacted) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Create or update a client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Delete a client |
-| POST | `/membership/oauth/register` | Public | — | Dynamic client registration (RFC 7591) for public clients such as MCP connectors. See [Connected Apps](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | Dynamic client registration (RFC 7591) for public clients such as MCP connectors. See [Connected Apps](../connected-apps.md#dynamic-client-registration) |
 
 ### Device Approval Endpoints
 
@@ -265,5 +266,5 @@ In the endpoint tables throughout this documentation, these are indicated as **J
 
 ## Related Pages
 
-- [Module Structure](../module-structure) — How controllers, repositories, and models are organized
-- [Local Setup](../local-setup) — Running the API locally for development
+- [Module Structure](../module-structure.md) — How controllers, repositories, and models are organized
+- [Local Setup](../local-setup.md) — Running the API locally for development

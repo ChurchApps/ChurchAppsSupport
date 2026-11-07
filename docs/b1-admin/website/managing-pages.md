@@ -1,5 +1,6 @@
 ---
 title: "Managing Pages"
+description: "Create, edit, and organize pages and navigation in B1 Admin's Website Pages view, including page settings, redirects, and site templates."
 ---
 
 # Managing Pages
@@ -13,13 +14,13 @@ The Website Pages view is your central hub for creating, editing, and organizing
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Complete the [Initial Setup](initial-setup) to configure your domain and basic site settings
-- Have your content and images ready. Use the [Files](files) manager to upload media assets first.
+- Complete the [Initial Setup](./initial-setup.md) to configure your domain and basic site settings
+- Have your content and images ready. Use the [Files](./files.md) manager to upload media assets first.
 
 </div>
 
 :::info
-If your church has more than one website (for example, separate sites per campus), use the site switcher at the top of the Website Pages view to jump between them. Each site has its own pages, navigation, and [appearance](appearance) settings.
+If your church has more than one website (for example, separate sites per campus), use the site switcher at the top of the Website Pages view to jump between them. Each site has its own pages, navigation, and [appearance](./appearance.md) settings.
 :::
 
 ## Understanding Page Types
@@ -35,7 +36,7 @@ You can convert any auto-generated page into a custom page if you want full cont
 
 1. Click the **Add Page** button at the top right of the Website Pages view.
 2. Choose a page type (blank or a template) and give it a name.
-3. Click **Edit Content** next to any page to open the [page editor](page-editor), where you can add sections, text, images, and other elements.
+3. Click **Edit Content** next to any page to open the [page editor](./page-editor.md), where you can add sections, text, images, and other elements.
 4. Click **Page Settings** next to a page to update the page title, URL path, and other metadata.
 5. Click a page's path in the **Path** column to open the live page in a new tab and see exactly how it will look to visitors.
 
@@ -112,10 +113,10 @@ If you are building your site from scratch, you can bootstrap it using a **Site 
 3. When you find one you like, click **Apply Template**.
 4. Pages that do not already exist are created and added to your navigation. Existing pages are left as-is.
 
-After applying a template, open each page in the [page editor](page-editor) to replace the placeholder text and images with your church's real content.
+After applying a template, open each page in the [page editor](./page-editor.md) to replace the placeholder text and images with your church's real content.
 
 :::info
-Site templates create page structure and navigation. They do not override your site's color scheme or fonts — those are controlled by [Appearance](appearance).
+Site templates create page structure and navigation. They do not override your site's color scheme or fonts — those are controlled by [Appearance](./appearance.md).
 :::
 
 ## Image Lightbox
@@ -124,7 +125,7 @@ When visitors click on an image on your website, it opens in a full-screen light
 
 ## Next Steps
 
-- [Initial Setup](initial-setup) -- First-time setup instructions
-- [Using the Page Editor](page-editor) -- Learn how to build and style page content
-- [Appearance](appearance) -- Customize your site's visual theme
-- [Files](files) -- Upload and manage media assets for your pages
+- [Initial Setup](./initial-setup.md) -- First-time setup instructions
+- [Using the Page Editor](./page-editor.md) -- Learn how to build and style page content
+- [Appearance](./appearance.md) -- Customize your site's visual theme
+- [Files](./files.md) -- Upload and manage media assets for your pages

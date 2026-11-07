@@ -1,5 +1,7 @@
 ---
-title: "Modificare il tuo profilo"
+title: "Modificare il profilo nel portale membri B1.church"
+sidebar_label: "Modificare il tuo profilo"
+description: "Aggiorna i recapiti, i membri del nucleo familiare, l'email e la password di accesso e le impostazioni di privacy nel portale membri B1.church."
 ---
 
 # Modificare il tuo profilo

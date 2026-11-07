@@ -1,5 +1,7 @@
 ---
-title: "Pradžia"
+title: "Pradžia su B1.church narių portalu"
+sidebar_label: "Pradžia"
+description: "Raskite bažnyčios B1.church svetainę, sukurkite narių paskyrą ir sužinokite, ką siūlo portalas: grupes, aukojimą, registraciją ir planus."
 ---
 
 # Darbo su B1.church pradžia

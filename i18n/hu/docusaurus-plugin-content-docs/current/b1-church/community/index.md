@@ -1,5 +1,7 @@
 ---
-title: "Közösség"
+title: "Közösségi tagjegyzék a B1.church-ben"
+sidebar_label: "Közösség"
+description: "Keresés a B1.church tagjegyzékében név vagy csoport szerint, profilok megtekintése, és az Idővonal helyettesítőinek megtalálása."
 ---
 
 # Közösség
@@ -26,5 +28,5 @@ A névsorban Önnek látható tagok és adatok gyülekezete adatvédelmi beáll�
 :::
 
 :::tip
-A közösségi funkciókat a [Csoportokkal](../groups/) együtt használja, hogy a hét során végig kapcsolatban maradjon gyülekezetével.
+A közösségi funkciókat a [Csoportokkal](../groups/index.md) együtt használja, hogy a hét során végig kapcsolatban maradjon gyülekezetével.
 :::

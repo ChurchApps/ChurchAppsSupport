@@ -56,7 +56,7 @@ const products = [
   },
   {
     title: translate({id: 'homepage.products.b1mobile.title', message: 'B1 Mobile'}),
-    description: translate({id: 'homepage.products.b1mobile.description', message: 'Mobile app for church members on iOS and Android.'}),
+    description: translate({id: 'homepage.products.b1mobile.description', message: 'Legacy member app for iOS and Android, now replaced by the B1.church web app.'}),
     link: '/docs/b1-mobile/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -67,7 +67,7 @@ const products = [
   },
   {
     title: translate({id: 'homepage.products.b1checkin.title', message: 'B1 Checkin'}),
-    description: translate({id: 'homepage.products.b1checkin.description', message: 'Self-service check-in kiosk app for Android tablets.'}),
+    description: translate({id: 'homepage.products.b1checkin.description', message: 'Self-service check-in kiosk app for iPad and Android tablets.'}),
     link: '/docs/b1-checkin/',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -142,8 +142,8 @@ const values = [
 export default function Home(): ReactNode {
   return (
     <Layout
-      title={translate({id: 'homepage.title', message: 'Home'})}
-      description={translate({id: 'homepage.description', message: 'Support documentation for ChurchApps - free, open-source church management tools.'})}
+      title={translate({id: 'homepage.title', message: 'Help for B1.church, Lessons.church & FreePlay'})}
+      description={translate({id: 'homepage.description', message: 'Guides and documentation for ChurchApps\' free, open-source church software: B1.church church management, check-in, giving and websites, Lessons.church curriculum, and FreePlay.'})}
     >
       <HomepageHeader />
       <main>

@@ -1,5 +1,7 @@
 ---
-title: "Perfil"
+title: "Ajustes de perfil y dispositivos en B1 Admin"
+sidebar_label: "Perfil"
+description: "Actualiza nombre, correo, contraseña, verificación en dos pasos, tema y dispositivos en tu perfil de B1 Admin, y aprueba cambios de perfil de miembros."
 ---
 
 # Perfil

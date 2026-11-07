@@ -1,5 +1,6 @@
 ---
 title: "Paid Registrations"
+description: "Set up paid event registrations in B1 Admin: priced attendee types, add-ons, discount codes, waitlists, and collecting payment through your giving provider."
 ---
 
 # Paid Registrations
@@ -17,7 +18,7 @@ Event registration can go beyond a simple head count. You can define priced atte
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Enable registration on the event first — see [Creating Calendars](creating-calendars#enabling-event-registration)
+- Enable registration on the event first — see [Creating Calendars](./creating-calendars.md#enabling-event-registration)
 - To collect payments online, your church needs [online giving configured](../donations/online-giving-setup.md) (Stripe, PayPal, or Kingdom Funding). Free events need no giving setup. Without online giving, paid registrations still work, but people pay the church directly — see [Churches Without Online Giving](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Each code shows a **Uses** count so you can see how often it has been redeemed. 
 Turn on **Enable Waitlist** in the Registration Settings card. When the event reaches capacity:
 
 - New registrants are offered a waitlist spot instead of being turned away. They complete the same signup (payment is skipped while waitlisted).
-- When someone cancels, the oldest waitlisted registration is **promoted automatically** and receives an email that a spot opened. If they owe a balance, the email links them to [My Registrations](../../b1-church/events/my-registrations) on your church's B1 site, where they can complete payment.
+- When someone cancels, the oldest waitlisted registration is **promoted automatically** and receives an email that a spot opened. If they owe a balance, the email links them to [My Registrations](../../b1-church/events/my-registrations.md) on your church's B1 site, where they can complete payment.
 - You can promote someone manually at any time with the **Promote** action on a waitlisted row — useful after raising the event capacity.
 
 :::info
@@ -79,7 +80,7 @@ Open an event from the Registrations page to see every registration. The card ti
 
 - Click a row's details icon to open the **Registration Details** dialog — members, selections, paid/balance, and a **Payments** table listing every charge (amount, method, date).
 - **Export CSV** downloads the full roster with columns for members, attendee types, selections, paid/total/balance, status, and one column per registration question.
-- **Add Attendee** records an offline or phone signup for any person in your church. Pick the person and, on a paid event, their attendee type. Their card is not charged: a paid registration is saved as **pending** with the full amount as a balance due. If your church has online giving, the person can pay it from [My Registrations](../../b1-church/events/my-registrations); otherwise collect it in person. You need the Registrations Edit permission to add attendees.
+- **Add Attendee** records an offline or phone signup for any person in your church. Pick the person and, on a paid event, their attendee type. Their card is not charged: a paid registration is saved as **pending** with the full amount as a balance due. If your church has online giving, the person can pay it from [My Registrations](../../b1-church/events/my-registrations.md); otherwise collect it in person. You need the Registrations Edit permission to add attendees.
 
 :::info
 Refunds are not processed inside B1. If you need to refund a cancelled paid registration, issue the refund from your giving provider's dashboard (e.g. Stripe).
@@ -94,12 +95,12 @@ Payments run through the same giving gateway your church already uses for donati
 If your church has no giving provider set up, paid events can still take registrations. The payment step tells registrants that online payment is not available and that they can pay the church directly, and a **Register and Pay Later** button saves the registration. It is saved as **pending** with the full amount as a balance due, and it shows up on the roster with a balance warning. Collect the money however your church normally does.
 
 :::info
-B1 has no way to mark an offline payment as received. The balance due stays on the roster and on the registrant's [My Registrations](../../b1-church/events/my-registrations) card after you collect it, so keep your own record of who has paid.
+B1 has no way to mark an offline payment as received. The balance due stays on the roster and on the registrant's [My Registrations](../../b1-church/events/my-registrations.md) card after you collect it, so keep your own record of who has paid.
 :::
 
 ## Related Articles
 
-- [Creating Calendars](creating-calendars#enabling-event-registration) — enable registration and the basic settings
+- [Creating Calendars](./creating-calendars.md#enabling-event-registration) — enable registration and the basic settings
 - [Online Giving Setup](../donations/online-giving-setup.md) — configure the payment gateway used at checkout
-- [Registering for Events](../../b1-church/events/registering) — what members see when they sign up
-- [My Registrations](../../b1-church/events/my-registrations) — how members pay balances and edit registrations
+- [Registering for Events](../../b1-church/events/registering.md) — what members see when they sign up
+- [My Registrations](../../b1-church/events/my-registrations.md) — how members pay balances and edit registrations

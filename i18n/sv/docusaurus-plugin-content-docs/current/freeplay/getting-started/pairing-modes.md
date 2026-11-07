@@ -1,5 +1,6 @@
 ---
 title: "Velja läge för parkoppling"
+description: "Välj rätt sätt att koppla en FreePlay-TV: en kalender från FreePlay Admin, en gudstjänstplan från B1 Admin eller ingen koppling alls."
 ---
 
 # Velja läge för parkoppling
@@ -32,7 +33,7 @@ Ange koden i **FreePlay Admin** på [admin.freeplay.church](https://admin.freepl
 
 **Bäst för:** Skyltar i entréer och korridorer, loopar med meddelanden och klassrum där lektionen ska redan spelas när folk kommer in.
 
-Se **[Schemalagt läge](../scheduled-mode/)** för hela guiden.
+Se **[Schemalagt läge](../scheduled-mode/index.md)** för hela guiden.
 
 ## Planläge (B1 Admin)
 
@@ -42,7 +43,7 @@ Ange koden i **B1 Admin** när du vill att TV:n ska följa en gudstjänstplan. T
 
 **Bäst för:** TV:ur som visar innehåll kopplat till din veckoplan för gudstjänsten, där någon startar uppspelningen när det är dags.
 
-Se **[Planläge](../plan-mode/)** för hela guiden.
+Se **[Planläge](../plan-mode/index.md)** för hela guiden.
 
 :::tip
 Du kan också spela upp den aktuella gudstjänstplanen enligt schema. Lägg till en kalenderpost i FreePlay Admin och välj plantyp under **Gudstjänstplaner**.
@@ -50,7 +51,7 @@ Du kan också spela upp den aktuella gudstjänstplanen enligt schema. Lägg till
 
 ## Innehållsleverantörer (utan parkoppling)
 
-Om du inte behöver para ihop TV:n alls kan du bläddra bland innehållsleverantörer direkt. Leverantörer som [Lessons.church](../../lessons-church/) och Bible Project har innehåll som du kan ladda ned och spela upp när du vill.
+Om du inte behöver para ihop TV:n alls kan du bläddra bland innehållsleverantörer direkt. Leverantörer som [Lessons.church](../../lessons-church/index.md) och Bible Project har innehåll som du kan ladda ned och spela upp när du vill.
 
 **Bäst för:** TV:ar där volontärer väljer vad som ska spelas varje vecka, eller när du vill utforska vad som finns tillgängligt.
 
@@ -60,6 +61,6 @@ Du kan öppna skärmen **Leverantörer** när som helst från **Inställningar**
 
 ## Relaterade artiklar
 
-- **[Schemalagt läge](../scheduled-mode/)** - Lägg TV:ar i en kalender med FreePlay Admin
-- **[Planläge](../plan-mode/)** - Fullständig guide för parkoppling med en gudstjänstplan
-- **[Innehållsleverantörer](../content-providers/)** - Bläddra bland och ladda ned innehåll från externa källor
+- **[Schemalagt läge](../scheduled-mode/index.md)** - Lägg TV:ar i en kalender med FreePlay Admin
+- **[Planläge](../plan-mode/index.md)** - Fullständig guide för parkoppling med en gudstjänstplan
+- **[Innehållsleverantörer](../content-providers/index.md)** - Bläddra bland och ladda ned innehåll från externa källor

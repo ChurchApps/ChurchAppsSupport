@@ -1,5 +1,6 @@
 ---
 title: "Odjava in varnost otrok"
+description: "Na B1 Checkin postaji z osebjem odjavite otroke z varnostnimi kodami, preverjenimi osebami za prevzem, klicem staršev, ponovnim tiskanjem nalepk in izrednimi sporočili."
 ---
 
 # Odjava in varnost otrok
@@ -14,7 +15,7 @@ Odjava zaključi postopek prijave otrok: starš pokaže varnostno kodo z nalepke
 <h4>Preden začnete</h4>
 
 - Odjava je na voljo na postajah, nastavljenih na način **ročno** v nastavitvah kioska
-- Otroci morajo biti [prijavljeni](./completing-checkin) z natisnjeno nalepko za prevzem, ki vsebuje varnostno kodo
+- Otroci morajo biti [prijavljeni](./completing-checkin.md) z natisnjeno nalepko za prevzem, ki vsebuje varnostno kodo
 - Pošiljanje sporočil staršem in izredna obvestila zahtevajo, da je v vaši cerkvi v B1 Admin povezan ponudnik SMS-sporočil
 
 </div>
@@ -39,7 +40,7 @@ Zaslon za odjavo vpraša, kdo prevzema otroke:
 Ko je oseba za prevzem potrjena, se dotaknite odjave. Ime osebe za prevzem se shrani z zapisom o prisotnosti.
 
 :::info
-Osebe zaupanja vredne za prevzem in osebe, ki niso pooblaščene, upravlja cerkveno osebje na strani vsake osebe v B1 Admin. Glejte [Varnost prijave](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Osebe zaupanja vredne za prevzem in osebe, ki niso pooblaščene, upravlja cerkveno osebje na strani vsake osebe v B1 Admin. Glejte [Varnost prijave](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Sporočilo staršem
@@ -65,6 +66,6 @@ Obvestilo gre vsem prijavljenim družinam za izbrano bogoslužje. Uporabite ga s
 
 ## Sorodni članki
 
-- [Dokončanje prijave](./completing-checkin): od koder prihajajo varnostne kode in nalepke za prevzem
-- [Varnost prijave](../../b1-admin/attendance/checkin-safety): nastavitev kapacitet, razmerij, oseb za prevzem in zahteve za ponudnika SMS-sporočil
-- [Nastavitev tiskalnika](../getting-started/printer-setup): nastavitev tiskalnika nalepk
+- [Dokončanje prijave](./completing-checkin.md): od koder prihajajo varnostne kode in nalepke za prevzem
+- [Varnost prijave](../../b1-admin/attendance/checkin-safety.md): nastavitev kapacitet, razmerij, oseb za prevzem in zahteve za ponudnika SMS-sporočil
+- [Nastavitev tiskalnika](../getting-started/printer-setup.md): nastavitev tiskalnika nalepk

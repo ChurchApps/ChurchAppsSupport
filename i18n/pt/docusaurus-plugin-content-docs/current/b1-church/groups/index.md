@@ -1,5 +1,7 @@
 ---
-title: "Grupos"
+title: "Grupos da Igreja no Portal de Membros do B1.church"
+sidebar_label: "Grupos"
+description: "Encontre e participe de grupos da igreja no seu site do B1.church e use as páginas para ver reuniões, eventos, membros, recursos e conversar com o grupo."
 ---
 
 # Grupos

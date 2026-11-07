@@ -1,5 +1,6 @@
 ---
 title: "Aplikacje internetowe"
+description: "Przegląd trzech aplikacji webowych ChurchApps (B1 Admin, B1.church, Lessons.church), wspólnego stosu React i MUI, pakietów apphelper i narzędzi budowania."
 ---
 
 # Aplikacje internetowe
@@ -41,7 +42,7 @@ Aplikacje współdzielą komponenty interfejsu i narzędzia za pośrednictwem ro
 | `@churchapps/apphelper-website` | Komponenty witryny i systemu zarządzania treścią |
 
 :::tip
-Szczegółowe informacje o lokalnym rozwijaniu tych pakietów współdzielonych znajdziesz w dokumentacji [AppHelper](../shared-libraries/app-helper).
+Szczegółowe informacje o lokalnym rozwijaniu tych pakietów współdzielonych znajdziesz w dokumentacji [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Skrypt postinstall

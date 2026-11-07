@@ -1,5 +1,7 @@
 ---
-title: "Historia darowizn"
+title: "Przeglądanie historii darów w B1 Mobile"
+sidebar_label: "Historia darowizn"
+description: "Sprawdź swoje dary od początku roku, ostatni dar i pełną historię w B1 Mobile, a z karty Przegląd powtórz dawny dar jednym dotknięciem."
 ---
 
 # Historia darowizn
@@ -13,8 +15,8 @@ B1 Mobile pozwala przejrzeć Twoje darowizny na dwóch kartach: **Przegląd**, k
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
-- [Wykonaj co najmniej jedną darowiznę](./making-donations), aby zobaczyć swoją historię
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
+- [Wykonaj co najmniej jedną darowiznę](./making-donations.md), aby zobaczyć swoją historię
 
 </div>
 
@@ -45,5 +47,5 @@ Regularnie sprawdzaj kartę **Przegląd**, aby być na bieżąco z celami dotycz
 
 ## Powiązane artykuły
 
-- [Wykonywanie darowizny](./making-donations) -- Przekaż nową darowiznę z aplikacji
-- [Zarządzanie metodami płatności](./managing-payments) -- Dodawanie lub usuwanie zapisanych metod płatności
+- [Wykonywanie darowizny](./making-donations.md) -- Przekaż nową darowiznę z aplikacji
+- [Zarządzanie metodami płatności](./managing-payments.md) -- Dodawanie lub usuwanie zapisanych metod płatności

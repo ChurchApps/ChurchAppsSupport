@@ -1,5 +1,6 @@
 ---
 title: "Menyetujui Perubahan Profil"
+description: "Tinjau dan setujui permintaan perubahan profil anggota di B1 Admin, serta atur Grup Persetujuan Direktori yang menerimanya."
 ---
 
 # Menyetujui Perubahan Profil

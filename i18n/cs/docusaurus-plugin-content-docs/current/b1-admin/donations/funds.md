@@ -1,5 +1,6 @@
 ---
 title: "Správa fondů"
+description: "Vytvářejte a organizujte fondy darů v B1 Admin, nastavte daňovou odpočitatelnost a viditelnost pro dárce a sledujte součty fondů a historii darů."
 ---
 
 # Správa fondů

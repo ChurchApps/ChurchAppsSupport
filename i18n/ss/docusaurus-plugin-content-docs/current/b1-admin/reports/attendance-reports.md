@@ -1,5 +1,6 @@
 ---
 title: "Imibiko Yekubakhona"
+description: "Fumana timbiko letintsatfu tekuba khona ku-B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance) netinyatselo tekuwusebenta nekuwukhipha."
 ---
 
 # Imibiko Yekubakhona

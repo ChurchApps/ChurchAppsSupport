@@ -1,12 +1,13 @@
 ---
 title: "Roteamento de sites e multi-site"
+description: "Como o B1.church mapeia subdomínios e domínios próprios para a igreja ou site secundário correto, e o proxy Caddy que cuida do TLS."
 ---
 
 # Roteamento de sites e multi-site
 
 <div class="article-intro">
 
-Uma única igreja agora pode servir mais de um site distinto, e cada um pode estar em um subdomínio `*.b1.church` ou em um domínio personalizado totalmente próprio da igreja. Esta página mapeia a camada de roteamento que fica *por baixo* do criador: como uma requisição recebida se resolve para uma igreja **e** para um site específico, o modelo de dados multi-site (a sentinela `siteId` que mantém todos os sites já existentes renderizando como antes) e a borda de domínios personalizados — um proxy Caddy gerenciado por nós mesmos, em uma EC2, que encerra o TLS e reescreve cada domínio da igreja para o seu upstream `*.b1.church`. Para o que de fato é renderizado depois que a requisição foi resolvida — a árvore de página/seção/elemento —, veja [Criador de sites](./website-builder).
+Uma única igreja agora pode servir mais de um site distinto, e cada um pode estar em um subdomínio `*.b1.church` ou em um domínio personalizado totalmente próprio da igreja. Esta página mapeia a camada de roteamento que fica *por baixo* do criador: como uma requisição recebida se resolve para uma igreja **e** para um site específico, o modelo de dados multi-site (a sentinela `siteId` que mantém todos os sites já existentes renderizando como antes) e a borda de domínios personalizados — um proxy Caddy gerenciado por nós mesmos, em uma EC2, que encerra o TLS e reescreve cada domínio da igreja para o seu upstream `*.b1.church`. Para o que de fato é renderizado depois que a requisição foi resolvida — a árvore de página/seção/elemento —, veja [Criador de sites](./website-builder.md).
 
 </div>
 
@@ -92,7 +93,7 @@ Dois detalhes operacionais do middleware:
 
 - **Cache.** O resultado de cada host (um acerto *ou* uma falha confirmada — nunca um erro de rede) fica em cache por **10 minutos** em um `Map` em memória, por isolate serverless.
 - **Matcher.** O matcher reinclui deliberadamente `/sitemap.xml`, `/robots.txt` e `/manifest.webmanifest`. Seu primeiro padrão exclui caminhos com ponto, o que de outro modo derrubaria esses arquivos; eles são incluídos de volta para que os arquivos de SEO/PWA por igreja de um domínio personalizado também recebam o cabeçalho `x-site`.
-- **Cabeçalho canônico.** Nas páginas da igreja, o middleware acrescenta um cabeçalho de resposta `Link: <{proto}://{host}{path}>; rel="canonical"` nomeando o host pelo qual a página foi de fato servida — subdomínio ou domínio personalizado (`helpers/canonicalLink.ts`). Quando um domínio personalizado chega ao B1App pelo [proxy Caddy](../deployment/caddy-proxy), o host da requisição é o subdomínio `{sub}.b1.church`, então o middleware usa o domínio do visitante a partir de `X-Church-Host` — mas somente depois que `/domains/public/lookup/{host}` confirma que aquele domínio aponta para o mesmo subdomínio (`ownsSubdomain()`). O link canônico, o `robots.txt` e o `sitemap.xml` então nomeiam o domínio personalizado, em vez do subdomínio `b1.church`. Ele é ignorado em hosts que não são de igreja (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) e em `/mobile`, `/login`, `/logout` e nos arquivos gerados de robots/sitemap/manifest.
+- **Cabeçalho canônico.** Nas páginas da igreja, o middleware acrescenta um cabeçalho de resposta `Link: <{proto}://{host}{path}>; rel="canonical"` nomeando o host pelo qual a página foi de fato servida — subdomínio ou domínio personalizado (`helpers/canonicalLink.ts`). Quando um domínio personalizado chega ao B1App pelo [proxy Caddy](../deployment/caddy-proxy.md), o host da requisição é o subdomínio `{sub}.b1.church`, então o middleware usa o domínio do visitante a partir de `X-Church-Host` — mas somente depois que `/domains/public/lookup/{host}` confirma que aquele domínio aponta para o mesmo subdomínio (`ownsSubdomain()`). O link canônico, o `robots.txt` e o `sitemap.xml` então nomeiam o domínio personalizado, em vez do subdomínio `b1.church`. Ele é ignorado em hosts que não são de igreja (`b1.church`, `localhost`, `*.vercel.app`, `*.up.railway.app`) e em `/mobile`, `/login`, `/logout` e nos arquivos gerados de robots/sitemap/manifest.
 
 ### Site público desativado
 
@@ -201,7 +202,7 @@ As linhas `www.*` ficam fora do mapa; o Caddy atende `www.{host}` por um redirec
 
 ### Estado atual — configuração estática, sem estado em tempo de execução
 
-A máquina (uma EC2 Windows atrás de um Elastic IP permanente) roda o Caddy a partir de um **Caddyfile estático**: TLS sob demanda cujo `ask` aponta para `/membership/domains/authorize`, mais um arquivo de mapa host→upstream atualizado a cada 5 minutos a partir de `/membership/domains/hostmap` por uma tarefa agendada que termina em um `caddy reload` gracioso. A configuração sobrevive a reinicializações sem nenhum estado em tempo de execução — sem o ritual de reconfiguração — e um SNI desconhecido é **recusado no TLS** (nenhum certificado é emitido para um host que o `authorize` rejeita), enquanto um host autorizado ainda não mapeado (um domínio recém-criado dentro da janela de sincronização) recebe um 404 limpo. Novos domínios se tornam roteáveis em até ~5 minutos após um salvamento; seus certificados são emitidos no primeiro acesso. Montagem/configuração, operação e armadilhas testadas em campo: [Proxy de domínio personalizado com Caddy](../deployment/caddy-proxy).
+A máquina (uma EC2 Windows atrás de um Elastic IP permanente) roda o Caddy a partir de um **Caddyfile estático**: TLS sob demanda cujo `ask` aponta para `/membership/domains/authorize`, mais um arquivo de mapa host→upstream atualizado a cada 5 minutos a partir de `/membership/domains/hostmap` por uma tarefa agendada que termina em um `caddy reload` gracioso. A configuração sobrevive a reinicializações sem nenhum estado em tempo de execução — sem o ritual de reconfiguração — e um SNI desconhecido é **recusado no TLS** (nenhum certificado é emitido para um host que o `authorize` rejeita), enquanto um host autorizado ainda não mapeado (um domínio recém-criado dentro da janela de sincronização) recebe um 404 limpo. Novos domínios se tornam roteáveis em até ~5 minutos após um salvamento; seus certificados são emitidos no primeiro acesso. Montagem/configuração, operação e armadilhas testadas em campo: [Proxy de domínio personalizado com Caddy](../deployment/caddy-proxy.md).
 
 ### Envio legado em tempo de execução — caminho de rollback, exclusão pendente
 
@@ -209,8 +210,8 @@ O `CaddyHelper` (módulo de membership) ainda consegue dirigir o Caddy pela sua 
 
 ## Páginas relacionadas
 
-- [Proxy de domínio personalizado com Caddy](../deployment/caddy-proxy) — a própria máquina de borda: configuração de uma máquina nova, serviço WinSW, tarefa de sincronização do mapa e armadilhas operacionais
-- [Criador de sites](./website-builder) — a árvore de página/seção/elemento, os renderizadores, o blog, SEO e a geração por IA (o que é renderizado depois que uma requisição se resolve para uma igreja/site)
-- [Endpoints de Content](../api/endpoints/content) — a superfície REST para páginas, blocos, links e estilos globais, todos agora sensíveis a `?siteId=`
-- [B1App](../web-apps/b1-app) — o app Next.js que hospeda o middleware e o roteamento `[sdSlug]`
-- [Implantação de apps web](../deployment/web-apps) — como o B1App é implantado na Vercel
+- [Proxy de domínio personalizado com Caddy](../deployment/caddy-proxy.md) — a própria máquina de borda: configuração de uma máquina nova, serviço WinSW, tarefa de sincronização do mapa e armadilhas operacionais
+- [Criador de sites](./website-builder.md) — a árvore de página/seção/elemento, os renderizadores, o blog, SEO e a geração por IA (o que é renderizado depois que uma requisição se resolve para uma igreja/site)
+- [Endpoints de Content](../api/endpoints/content.md) — a superfície REST para páginas, blocos, links e estilos globais, todos agora sensíveis a `?siteId=`
+- [B1App](../web-apps/b1-app.md) — o app Next.js que hospeda o middleware e o roteamento `[sdSlug]`
+- [Implantação de apps web](../deployment/web-apps.md) — como o B1App é implantado na Vercel

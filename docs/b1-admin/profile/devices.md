@@ -1,5 +1,6 @@
 ---
 title: "Managing Devices"
+description: "Pair, label, and remove ChurchAppsPlayer and FreePlay screens connected to your account in B1 Admin, so church displays stay current and secure."
 ---
 
 # Managing Devices

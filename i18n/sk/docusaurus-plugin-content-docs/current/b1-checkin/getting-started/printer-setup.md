@@ -1,5 +1,6 @@
 ---
 title: "Nastavenie tlačiarne"
+description: "Nastavte sieťovú tlačiareň štítkov pre kiosky B1 Checkin: nájdite ju vo Wi-Fi, vyberte ju, vytlačte testovaciu stránku a uložte výber."
 ---
 
 # Nastavenie tlačiarne
@@ -13,7 +14,7 @@ B1 Church Checkin dokáže tlačiť štítky s menami a lístky na vyzdvihnutie 
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- [Prihláste sa](./logging-in) do aplikácie B1 Church Checkin a vyberte svoj kostol
+- [Prihláste sa](./logging-in.md) do aplikácie B1 Church Checkin a vyberte svoj kostol
 - Pripojte kompatibilnú sieťovú štítkovú tlačiareň k rovnakej Wi-Fi sieti ako tablet
 
 </div>
@@ -87,4 +88,4 @@ Ak presuniete kiosk na iné miesto alebo zmeníte nastavenie siete, vráťte sa 
 
 ## Ďalšie kroky
 
-Keď máte tlačiareň nastavenú, môžete začať s check-in. Pozrite si [postup check-in](../check-in/), kde nájdete celý proces od začiatku, vrátane [výberu bohoslužby](../check-in/selecting-service).
+Keď máte tlačiareň nastavenú, môžete začať s check-in. Pozrite si [postup check-in](../check-in/index.md), kde nájdete celý proces od začiatku, vrátane [výberu bohoslužby](../check-in/selecting-service.md).

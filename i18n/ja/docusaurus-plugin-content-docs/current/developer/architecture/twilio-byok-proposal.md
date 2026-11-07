@@ -6,7 +6,7 @@ description: "教会が所有する Twilio 連携、同意モデル、実装範�
 # Twilio BYOK 連携の提案
 
 :::caution 提案 — 利用可能な連携ではありません
-これはメンテナーによるレビュー用の設計案で、2026年10月22日に確認した公開ソースと Twilio のドキュメントに基づいています。その後、基本的な Twilio プロバイダーが提供されています（`@churchapps/texting` 0.6.0 および B1 Admin の **Settings > Texting**）。教会は Account SID、Auth Token、送信元番号を入力します（プロバイダーは `MG` で始まる Messaging Service SID も受け付けますが、`fromNumber` 列はまだ `varchar(20)` のため、34文字の SID には短すぎます）。メッセージは受信者1人につき1リクエストずつ Twilio の Messages API を通じて送信され、STOP の返信は既存の受信 Webhook を通じて B1 に届きます。[教会設定：Texting](../../b1-admin/settings/church-settings.md#texting) を参照してください。以下の同意モデル、Advanced Opt-Out の処理、配信ステータス、セットアップ準備状況の確認は、まだ提案段階で、出荷された動作ではありません。[教会向けオンボーディング草案](./twilio-byok-onboarding-draft) には、提案されたセットアップ手順と教会固有の例が含まれています。
+これはメンテナーによるレビュー用の設計案で、2026年10月22日に確認した公開ソースと Twilio のドキュメントに基づいています。その後、基本的な Twilio プロバイダーが提供されています（`@churchapps/texting` 0.6.0 および B1 Admin の **Settings > Texting**）。教会は Account SID、Auth Token、送信元番号を入力します（プロバイダーは `MG` で始まる Messaging Service SID も受け付けますが、`fromNumber` 列はまだ `varchar(20)` のため、34文字の SID には短すぎます）。メッセージは受信者1人につき1リクエストずつ Twilio の Messages API を通じて送信され、STOP の返信は既存の受信 Webhook を通じて B1 に届きます。[教会設定：Texting](../../b1-admin/settings/church-settings.md#texting) を参照してください。以下の同意モデル、Advanced Opt-Out の処理、配信ステータス、セットアップ準備状況の確認は、まだ提案段階で、出荷された動作ではありません。[教会向けオンボーディング草案](./twilio-byok-onboarding-draft.md) には、提案されたセットアップ手順と教会固有の例が含まれています。
 :::
 
 ## 推奨する方向性
@@ -38,7 +38,7 @@ B1 の既存のテキスト送信プロバイダー・システムに Twilio を
 | [メッセージングのスキーマ](https://github.com/ChurchApps/Api/blob/82eda28b6803754548ce007bd52177a21700f118/tools/migrations/messaging/2026-04-03_initial_schema.ts) | `apiKey`、`apiSecret`、20文字の `fromNumber` を保存する。配信ログは即時の成功／エラーを保存し、プロバイダー ID や最終的な配信状態は保存しない。 | E.164 形式の送信元は適合する。34文字の Messaging Service SID には専用の項目が必要。耐久性のあるプロバイダー メッセージ／ステータスの保存を追加する。 |
 | [公開フォームページ](https://github.com/ChurchApps/B1App/blob/5ca19ee4ef947235b8ffba9fbb35af42d0dcb41d/src/app/%5BsdSlug%5D/%28public%29/%5BpageSlug%5D/%5Bid%5D/components/FormPage.tsx)、[共有フォームレンダラー](https://github.com/ChurchApps/Packages/blob/68c93d610031d3ed56d3582055413e851c5cb2ee/apphelper/src/forms/components/QuestionEdit.tsx)、[送信コントローラー](https://github.com/ChurchApps/Api/blob/82eda28b6803754548ce007bd52177a21700f118/src/modules/membership/controllers/FormSubmissionController.ts) | 制限のないフォームとオプションのチェックボックスは存在する。説明文はプレーンテキスト。送信内容は保持されるが、テキスト送信の経路にはキャンペーン固有の同意台帳がない。 | 実際のポリシーへのリンクを備え、サーバー側で証拠を取得する、設定可能な SMS 同意コントロールを追加する。汎用のチェックボックスやグループ所属によって SMS が自動的に許可されてはならない。 |
 
-[教会設定のドキュメント](../../b1-admin/settings/church-settings#texting) では、現在の配信停止フラグがディレクトリの公開設定と共有されていることも説明されています。この結合はリリース上の懸案事項であり、START と返信しても、ディレクトリの公開状態が変わってはなりません。
+[教会設定のドキュメント](../../b1-admin/settings/church-settings.md#texting) では、現在の配信停止フラグがディレクトリの公開設定と共有されていることも説明されています。この結合はリリース上の懸案事項であり、START と返信しても、ディレクトリの公開状態が変わってはなりません。
 
 ## 構成と認証情報の設計
 

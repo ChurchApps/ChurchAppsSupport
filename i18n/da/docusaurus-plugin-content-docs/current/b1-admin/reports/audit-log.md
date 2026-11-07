@@ -1,5 +1,6 @@
 ---
 title: "Revision log"
+description: "Gennemgå auditloggen i B1 Admin for at se, hvem der loggede ind, redigerede personposter eller ændrede tilladelser, og eksportér filtrerede poster til CSV."
 ---
 
 # Revision log
@@ -78,6 +79,6 @@ Gennemgå revision loggen regelmæssigt, især efter onboarding nye holmedlemmer
 
 ## Relaterede artikler
 
-- [roller og tilladelser](../settings/roles-permissions) -- Administrer hvem der har adgang til hvad
-- [datasikkerhed](../settings/data-security) -- Forstå hvordan dine data er beskyttet
+- [roller og tilladelser](../settings/roles-permissions.md) -- Administrer hvem der har adgang til hvad
+- [datasikkerhed](../settings/data-security.md) -- Forstå hvordan dine data er beskyttet
 - [rapporter oversigt](./index.md) -- Se alle tilgængelige rapporter

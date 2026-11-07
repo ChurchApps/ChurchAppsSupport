@@ -1,5 +1,7 @@
 ---
-title: "Masuk"
+title: "Masuk ke B1 Church Checkin"
+sidebar_label: "Masuk"
+description: "Masuk ke aplikasi kiosk B1 Church Checkin, pilih gereja Anda, dan pahami masuk otomatis, pengaturan admin, serta keluar di tablet check-in."
 ---
 
 # Masuk
@@ -63,7 +65,7 @@ Pengaturan admin sengaja disembunyikan agar anggota gereja yang menggunakan kios
 2. Jika PIN kiosk sudah diatur, masukkan PIN saat diminta.
 3. Layar **Admin Settings** akan terbuka dengan pilihan berikut:
    - **Change Service**: mengganti waktu layanan yang dipilih
-   - **Change Printer**: membuka [pengaturan printer](./printer-setup) untuk memindai dan memilih printer
+   - **Change Printer**: membuka [pengaturan printer](./printer-setup.md) untuk memindai dan memilih printer
    - **Set/Change PIN**: mengatur atau memperbarui PIN kiosk yang melindungi akses admin
    - **Logout**: keluar dan kembali ke layar masuk
 
@@ -73,4 +75,4 @@ Keluar akan menghapus semua kredensial dan pilihan gereja yang tersimpan. Anda h
 
 ## Langkah Selanjutnya
 
-Setelah masuk, Anda dapat [mengatur printer](./printer-setup) atau langsung menuju [alur kerja check-in](../check-in/).
+Setelah masuk, Anda dapat [mengatur printer](./printer-setup.md) atau langsung menuju [alur kerja check-in](../check-in/index.md).

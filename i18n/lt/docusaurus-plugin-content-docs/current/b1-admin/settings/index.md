@@ -1,5 +1,6 @@
 ---
 title: "Nastatymai"
+description: "Raskite kelią B1 Admin nustatymuose: bažnyčios info, prekinis ženklas, filialai, papildomi laukai, vaidmenys ir B1.church programėlės navigacija."
 ---
 
 # Nastatymai

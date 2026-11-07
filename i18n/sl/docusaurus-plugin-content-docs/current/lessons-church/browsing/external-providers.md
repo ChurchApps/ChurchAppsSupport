@@ -1,5 +1,6 @@
 ---
 title: "Zunanji ponudniki"
+description: "Spoznaj, kako zunanji ponudniki kurikula dodajajo vsebino v Lessons.church po Open Lesson Formatu, in kako enega povežeš prek portala."
 ---
 
 # Zunanji ponudniki

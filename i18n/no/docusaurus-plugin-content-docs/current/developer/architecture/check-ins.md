@@ -1,5 +1,6 @@
 ---
 title: "Innsjekkinger"
+description: "Hvordan innsjekking fungerer på tvers av B1Checkin, B1App og B1 Admin: datamodellen for oppmøte, grupper som rom, kapasitetsgrenser og regler for sikker henting."
 ---
 
 # Innsjekkinger
@@ -216,7 +217,7 @@ B1Apps `src/components/checkin/GuestRegister.tsx` henter sjekklisten fra det ano
 
 ## Relaterte sider
 
-- [Attendance-endepunkter](../api/endpoints/attendance) -- Full REST-flate for kirkesteder, gudstjenester, økter, besøk og besøksøkter
-- [Membership-endepunkter](../api/endpoints/membership) -- Personer, husstander og grupper
-- [Webhooks](../api/webhooks) -- Hendelsene `session.created`, `attendance.recorded` og `attendance.checkout`
-- [Modulstruktur](../api/module-structure) -- Hvordan attendance-modulen er organisert på serversiden
+- [Attendance-endepunkter](../api/endpoints/attendance.md) -- Full REST-flate for kirkesteder, gudstjenester, økter, besøk og besøksøkter
+- [Membership-endepunkter](../api/endpoints/membership.md) -- Personer, husstander og grupper
+- [Webhooks](../api/webhooks.md) -- Hendelsene `session.created`, `attendance.recorded` og `attendance.checkout`
+- [Modulstruktur](../api/module-structure.md) -- Hvordan attendance-modulen er organisert på serversiden

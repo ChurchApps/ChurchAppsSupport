@@ -1,5 +1,7 @@
 ---
-title: "Iscriversi agli eventi"
+title: "Iscrizione agli eventi su B1.church"
+sidebar_label: "Iscriversi agli eventi"
+description: "Iscriviti a un evento su B1.church: inserisci i tuoi dati, aggiungi familiari, scegli le opzioni, usa codici sconto e paga o entra in lista d'attesa."
 ---
 
 # Iscriversi agli eventi
@@ -79,14 +81,14 @@ Compare un messaggio di conferma con i dettagli dell'evento e l'elenco di tutte 
 
 ## Entrare in lista d'attesa {#joining-a-waitlist}
 
-Se l'evento è al completo e la tua chiesa ha attivato la lista d'attesa, il primo passaggio mostra: *"Questo evento è al completo. Puoi entrare in lista d'attesa e ti avviseremo se si libera un posto."* Completa l'iscrizione come al solito — il pagamento viene saltato mentre sei in lista d'attesa. Quando si libera un posto, ricevi un'email; se è dovuto un pagamento, l'email contiene un link per completarlo. Puoi anche controllare il tuo stato e pagare da [Le mie iscrizioni](./my-registrations).
+Se l'evento è al completo e la tua chiesa ha attivato la lista d'attesa, il primo passaggio mostra: *"Questo evento è al completo. Puoi entrare in lista d'attesa e ti avviseremo se si libera un posto."* Completa l'iscrizione come al solito — il pagamento viene saltato mentre sei in lista d'attesa. Quando si libera un posto, ricevi un'email; se è dovuto un pagamento, l'email contiene un link per completarlo. Puoi anche controllare il tuo stato e pagare da [Le mie iscrizioni](./my-registrations.md).
 
 ## Modificare o annullare un'iscrizione
 
-Se hai effettuato l'accesso, puoi modificare o annullare da solo la tua iscrizione dalla pagina **Iscrizioni** nel portale dei membri — vedi [Le mie iscrizioni](./my-registrations). Gli ospiti devono contattare la segreteria della chiesa, mentre lo staff può fare la modifica dalla pagina Iscrizioni di B1 Admin.
+Se hai effettuato l'accesso, puoi modificare o annullare da solo la tua iscrizione dalla pagina **Iscrizioni** nel portale dei membri — vedi [Le mie iscrizioni](./my-registrations.md). Gli ospiti devono contattare la segreteria della chiesa, mentre lo staff può fare la modifica dalla pagina Iscrizioni di B1 Admin.
 
 ## Articoli correlati
 
 - [Panoramica degli eventi](./index.md) -- Sfoglia gli eventi futuri con iscrizione
-- [Le mie iscrizioni](./my-registrations) -- Visualizza, modifica, paga i saldi e annulla le tue iscrizioni
-- [Fare donazioni](../giving/making-donations) -- Fai una donazione insieme alla partecipazione a un evento
+- [Le mie iscrizioni](./my-registrations.md) -- Visualizza, modifica, paga i saldi e annulla le tue iscrizioni
+- [Fare donazioni](../giving/making-donations.md) -- Fai una donazione insieme alla partecipazione a un evento

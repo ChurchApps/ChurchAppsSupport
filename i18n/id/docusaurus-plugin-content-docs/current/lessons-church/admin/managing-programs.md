@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Program"
+description: "Buat dan ubah program kurikulum di Lessons.church, atur slug dan thumbnail, kelompokkan studi ke dalam kategori, dan lampirkan sumber daya tingkat program."
 ---
 
 # Mengelola Program

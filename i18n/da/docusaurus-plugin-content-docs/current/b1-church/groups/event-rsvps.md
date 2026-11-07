@@ -1,5 +1,6 @@
 ---
 title: "Begivenheds-RSVP'er"
+description: "Svar Deltager, Måske eller Kan ikke deltage i gruppebegivenheder i B1.church-medlemsportalen, og se hvor mange andre der kommer. Ledere kan også se svarene."
 ---
 
 # Begivenheds-RSVP'er
@@ -30,14 +31,14 @@ Din RSVP gælder for den specifikke forekomst — for et ugentligt møde svarer 
 ## For gruppeledere
 
 - **Se svar** -- Ledere ser en knap til **Se svar** på hvert begivenhedskort. Den åbner arket **Svar**, der viser alle efter svar — Deltager, Måske og Kan ikke. Hvis ingen har svaret endnu, vises "Ingen svar endnu."
-- **Slå RSVP'er til eller fra** -- Når du opretter eller redigerer en begivenhed, skal du bruge kontakten **Tillad RSVP'er**. Begivenheder med RSVP'er slået fra viser ingen svarknapper. Medarbejdere, der opretter begivenheder i bulk fra B1 Admin, har den samme mulighed — se [Gruppekalender](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Slå RSVP'er til eller fra** -- Når du opretter eller redigerer en begivenhed, skal du bruge kontakten **Tillad RSVP'er**. Begivenheder med RSVP'er slået fra viser ingen svarknapper. Medarbejdere, der opretter begivenheder i bulk fra B1 Admin, har den samme mulighed — se [Gruppekalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-RSVP'er er en let optælling. Hvis din begivenhed kræver tilmeldingsdetaljer, kapacitetsstyring eller betaling, skal du bruge [begivenhedstilmelding](../events/registering) i stedet.
+RSVP'er er en let optælling. Hvis din begivenhed kræver tilmeldingsdetaljer, kapacitetsstyring eller betaling, skal du bruge [begivenhedstilmelding](../events/registering.md) i stedet.
 :::
 
 ## Relaterede artikler
 
 - [Gruppedetaljer](./group-details.md) -- Alt på gruppedetaljesiden
-- [Gruppekalender (B1 Admin)](../../b1-admin/groups/group-calendar) -- Hvordan medarbejdere og ledere administrerer gruppebegivenheder og RSVP'er
-- [Tilmelding til begivenheder](../events/registering) -- Fuld begivenhedstilmelding med kapacitet og betalinger
+- [Gruppekalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Hvordan medarbejdere og ledere administrerer gruppebegivenheder og RSVP'er
+- [Tilmelding til begivenheder](../events/registering.md) -- Fuld begivenhedstilmelding med kapacitet og betalinger

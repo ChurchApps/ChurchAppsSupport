@@ -1,5 +1,6 @@
 ---
 title: "Formato de Lição Aberta"
+description: "Especificação do Open Lesson Format para provedores terceiros no Lessons.church: árvore de provedores, campos JSON do feed de locais, ações e mídia."
 ---
 
 # Formato de Lição Aberta

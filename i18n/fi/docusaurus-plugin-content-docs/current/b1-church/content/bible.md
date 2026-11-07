@@ -1,5 +1,7 @@
 ---
-title: "Raamattu"
+title: "Raamatun lukeminen B1.churchissa"
+sidebar_label: "Raamattu"
+description: "Lue Raamattua B1.churchin Raamattu-lukijassa kirja-, luku- ja käännösvalinnoilla sekä Raamattu-sivulla päivittäistä lukemista varten."
 ---
 
 # Raamattu

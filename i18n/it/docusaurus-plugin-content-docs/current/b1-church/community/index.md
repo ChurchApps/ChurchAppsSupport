@@ -1,5 +1,7 @@
 ---
-title: "Comunità"
+title: "Rubrica della comunità in B1.church"
+sidebar_label: "Comunità"
+description: "Cerca nella rubrica dei membri di B1.church per nome o gruppo, vedi i profili e scopri dove sono finiti gli aggiornamenti della Timeline dismessa."
 ---
 
 # Comunità
@@ -26,5 +28,5 @@ I membri e le informazioni visibili nella rubrica dipendono dalle impostazioni s
 :::
 
 :::tip
-Usa le funzionalità della comunità insieme ai [Gruppi](../groups/) per rimanere coinvolto con la tua chiesa durante tutta la settimana.
+Usa le funzionalità della comunità insieme ai [Gruppi](../groups/index.md) per rimanere coinvolto con la tua chiesa durante tutta la settimana.
 :::

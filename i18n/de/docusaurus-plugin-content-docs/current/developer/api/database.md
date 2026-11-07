@@ -1,5 +1,6 @@
 ---
 title: "Datenbank"
+description: "Erfahren Sie, wie die ChurchApps-API Daten auf sechs MySQL-Datenbanken verteilt, eine pro Modul, und wie Sie Verbindungen konfigurieren und initialisieren."
 ---
 
 # Datenbank
@@ -13,8 +14,8 @@ Die ChurchApps-API verwendet eine **Datenbank-pro-Modul**-Architektur. Jedes der
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites)
-- Konfigurieren Sie die Datenbank-Verbindungszeichenfolgen in Ihrer `.env`-Datei -- siehe [Umgebungsvariablen](../setup/environment-variables)
+- Installieren Sie **MySQL 8.0+** -- siehe [Voraussetzungen](../setup/prerequisites.md)
+- Konfigurieren Sie die Datenbank-Verbindungszeichenfolgen in Ihrer `.env`-Datei -- siehe [Umgebungsvariablen](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Wichtige Designentscheidungen
 
 - **Eine Datenbank pro Modul** -- Jedes Modul unterhält seine eigene MySQL-Datenbank mit einem dedizierten Connection-Pool (verwaltet von `KyselyPool`). Dies hält die Module entkoppelt und ermöglicht eine unabhängige Schema-Entwicklung.
-- **Exklusiver Besitz** -- Die Tabellen eines Moduls werden nur vom eigenen Code dieses Moduls gelesen und beschrieben. Wenn ein anderes Modul die Daten benötigt, ruft es das Gateway des besitzenden Moduls auf, anstatt die Tabellen selbst abzufragen -- siehe [Modulübergreifende Kommunikation](./module-structure#cross-module-communication).
+- **Exklusiver Besitz** -- Die Tabellen eines Moduls werden nur vom eigenen Code dieses Moduls gelesen und beschrieben. Wenn ein anderes Modul die Daten benötigt, ruft es das Gateway des besitzenden Moduls auf, anstatt die Tabellen selbst abzufragen -- siehe [Modulübergreifende Kommunikation](./module-structure.md#cross-module-communication).
 - **Repository-Muster ohne ORM** -- Der gesamte Datenzugriff erfolgt über Repository-Klassen, die mit dem Kysely-Query-Builder typisiertes SQL gegen das Schema des Moduls erstellen. Dies bietet volle Kontrolle über Abfrageleistung und -verhalten.
 - **Multi-Tenant per Design** -- Jede Abfrage ist nach `churchId` abgegrenzt. Alle Tabellen enthalten eine `churchId`-Spalte, und die Repository-Schicht erzwingt die Mandantenisolation automatisch.
 
@@ -129,5 +130,5 @@ Diese Einschränkung ist es, was die Modulgrenzen real macht: Jedes Schema kann 
 
 ## Verwandte Artikel
 
-- **[Modulstruktur](./module-structure)** -- Wie Controller und Repositories innerhalb jedes Moduls organisiert sind
-- **[Lokale API-Einrichtung](./local-setup)** -- Vollständige Schritt-für-Schritt-Anleitung zur Einrichtung
+- **[Modulstruktur](./module-structure.md)** -- Wie Controller und Repositories innerhalb jedes Moduls organisiert sind
+- **[Lokale API-Einrichtung](./local-setup.md)** -- Vollständige Schritt-für-Schritt-Anleitung zur Einrichtung

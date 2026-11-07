@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "12-nél több szolgáltató ingyenes, korosztályos leckéi a Lessons.churchen: böngészés, ütemezés, bemutatás, osztálytermek és FreePlay/B1-integráció."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ A Lessons.church más ChurchApps eszközökkel együttműködve segít a tartalo
 
 ## Dokumentációs szakaszok
 
-- [Első lépések](./getting-started/) -- Hozd létre a fiókodat, és ismerkedj meg az alapokkal
-- [Tartalmak böngészése](./browsing/) -- Programok, tanulmányok és leckék keresése
-- [Osztantermek](./classrooms/) -- Osztantermek beállítása és leckék ütemezése
-- [Testreszabás](./customization/) -- A leckék igazítása a gyülekezetedhez
-- [Bemutatás](./presenting/) -- Leckék tartása órán az előadói mód használatával
-- [Adminisztráció](./admin/) -- Programok, tanulmányok és leckék kezelése adminisztrátorként
+- [Első lépések](./getting-started/index.md) -- Hozd létre a fiókodat, és ismerkedj meg az alapokkal
+- [Tartalmak böngészése](./browsing/index.md) -- Programok, tanulmányok és leckék keresése
+- [Osztantermek](./classrooms/index.md) -- Osztantermek beállítása és leckék ütemezése
+- [Testreszabás](./customization/index.md) -- A leckék igazítása a gyülekezetedhez
+- [Bemutatás](./presenting/index.md) -- Leckék tartása órán az előadói mód használatával
+- [Adminisztráció](./admin/index.md) -- Programok, tanulmányok és leckék kezelése adminisztrátorként
 - [Hitvallás](./statement-of-faith.md) -- Alapvető hiedelmek és tantervi irányelvek
 
 Támogatásért írj e-mailt a [support@churchapps.org](mailto:support@churchapps.org) címre.

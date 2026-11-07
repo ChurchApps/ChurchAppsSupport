@@ -1,5 +1,6 @@
 ---
 title: "Guest Registration"
+description: "Magparehistro ng sarili at pamilya bilang unang beses na bisita gamit ang QR form sa B1 Checkin para masuri ka ng mga boluntaryo pagdating mo."
 ---
 
 # Guest Registration
@@ -22,7 +23,7 @@ Kung unang beses kang bumibisita sa isang simbahan, maaari mong iparehistro ang 
 
 Idinisenyo ang guest registration para sa mga bisitang wala pang account. Sa check-in kiosk ng simbahan, i-tap ang **Register as guest** para magpakita ng QR code na nagli-link sa registration page. Maaari ka ring tumanggap ng link mula sa boluntaryo o greeter, o hanapin ito sa flyer o sa website ng simbahan.
 
-Walang dalang telepono? Sa parehong QR code window sa kiosk, i-tap ang **Register here** para punan ang form mismo sa kiosk. Tingnan ang [Registering as a Guest](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) para malaman kung paano ito gumagana sa kiosk.
+Walang dalang telepono? Sa parehong QR code window sa kiosk, i-tap ang **Register here** para punan ang form mismo sa kiosk. Tingnan ang [Registering as a Guest](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) para malaman kung paano ito gumagana sa kiosk.
 
 Bumubukas ang pahina na may pamagat na **Guest Registration**. Kung nagdagdag ng header photo ang simbahan, lilitaw ito sa itaas ng pahina; kung hindi, makakakita ka ng maliit na icon.
 
@@ -51,7 +52,7 @@ Lumilikha ang iyong registration ng mga record sa database ng simbahan:
 - Nalilikha ang **person record** para sa bawat miyembro ng pamilya na may membership status na "Visitor."
 - Anumang komentong inilagay mo ay sine-save bilang note sa record ng primary contact para mabasa ng staff ng simbahan.
 - Kung pumili ang simbahan ng grupo para sa mga bagong bisita, idadagdag ang iyong pamilya dito. Maaari ring awtomatikong maitala ng simbahan ang iyong attendance kung magparehistro ka sa isa sa mga naka-iskedyul na oras ng serbisyo ng grupong iyon.
-- Maaari nang i-check in ng boluntaryo o administrator ng simbahan ang iyong pamilya gamit ang [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kiosk.
+- Maaari nang i-check in ng boluntaryo o administrator ng simbahan ang iyong pamilya gamit ang [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kiosk.
 
 :::info
 Kung magparehistro ka ulit gamit ang parehong first name at parehong email o telepono, kinikilala ka ng mga record ng simbahan at ginagamit muli ang umiiral mong profile sa halip na magdagdag ng duplicate. Ang sinumang iba ay idinadagdag bilang bago. Kung nakapagparehistro ka na, maaari mo ring hanapin lang ang iyong pangalan o numero ng telepono sa kiosk.
@@ -63,6 +64,6 @@ Kung hinihingi ng form ang iyong email address, makakatulong ang pagbibigay nito
 
 ## Mga Kaugnay na Artikulo
 
-- [Self Check-In](./self-checkin) -- I-check in ang iyong sarili pagkatapos magparehistro
-- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Paano nagdaragdag ng bisita ang mga boluntaryo sa kiosk
-- [Check-In](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Paano nagse-set up ng QR guest registration ang mga administrator ng simbahan
+- [Self Check-In](./self-checkin.md) -- I-check in ang iyong sarili pagkatapos magparehistro
+- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Paano nagdaragdag ng bisita ang mga boluntaryo sa kiosk
+- [Check-In](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Paano nagse-set up ng QR guest registration ang mga administrator ng simbahan

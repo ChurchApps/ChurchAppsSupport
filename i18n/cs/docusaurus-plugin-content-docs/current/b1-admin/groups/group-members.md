@@ -1,5 +1,6 @@
 ---
 title: "Členové skupiny"
+description: "Přidávejte, odebírejte a určujte vedoucí členů skupiny v B1 Admin a poté seznam členů pošlete e-mailem, SMS, vytiskněte nebo exportujte ze stránky skupiny."
 ---
 
 # Členové skupiny

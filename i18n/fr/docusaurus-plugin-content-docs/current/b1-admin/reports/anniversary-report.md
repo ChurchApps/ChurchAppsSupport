@@ -1,5 +1,6 @@
 ---
 title: "Liste des anniversaires de mariage"
+description: "Listez les personnes ayant un anniversaire de mariage un mois donné dans B1 Admin, dates affichées et exportables vers un tableur pour bulletins ou cartes."
 ---
 
 # Liste des anniversaires de mariage

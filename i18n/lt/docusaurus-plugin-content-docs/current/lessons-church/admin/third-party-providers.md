@@ -1,5 +1,6 @@
 ---
 title: "Trečiųjų šalių teikėjai"
+description: "Pridėkite išorinį mokymo srautą prie Lessons.church per trečiųjų šalių administravimo puslapį, o vėliau peržiūrėkite, atnaujinkite ar pašalinkite jungtis."
 ---
 
 # Trečiųjų šalių teikėjai

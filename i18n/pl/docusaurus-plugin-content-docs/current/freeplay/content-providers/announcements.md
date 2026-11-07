@@ -1,5 +1,6 @@
 ---
 title: "Ogłoszenia"
+description: "Zapętlanie folderu slajdów na telewizorze FreePlay przed nabożeństwem lub lekcją: wybór folderu dostawcy, synchronizacja i wyłączenie po zakończeniu."
 ---
 
 # Ogłoszenia
@@ -13,7 +14,7 @@ FreePlay może w pętli wyświetlać na telewizorze folder slajdów z ogłoszeni
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Połącz się z dostawcą treści](./connecting-providers), który przechowuje Twoje slajdy z ogłoszeniami, na przykład Dropbox lub OneDrive
+- [Połącz się z dostawcą treści](./connecting-providers.md), który przechowuje Twoje slajdy z ogłoszeniami, na przykład Dropbox lub OneDrive
 - Umieść obrazy lub filmy, które chcesz zapętlić, razem w jednym folderze u tego dostawcy
 
 </div>
@@ -37,7 +38,7 @@ Gdy slajdy zostaną pobrane, pozycja **Ogłoszenia** pojawi się blisko góry pa
 - Po ostatnim slajdzie pętla zaczyna się od nowa, od pierwszego
 - Jeśli folder zawiera jeden film, będzie on powtarzany w miejscu
 
-Pętla odtwarzana jest z plików zapisanych na urządzeniu, więc działa bez połączenia z internetem. Możesz używać tych samych przycisków pilota co przy każdej innej treści -- zobacz [Odtwarzanie treści](./playing-content).
+Pętla odtwarzana jest z plików zapisanych na urządzeniu, więc działa bez połączenia z internetem. Możesz używać tych samych przycisków pilota co przy każdej innej treści -- zobacz [Odtwarzanie treści](./playing-content.md).
 
 ## Aktualizowanie slajdów
 
@@ -61,6 +62,6 @@ Odłączenie dostawcy również wyłącza ogłoszenia pochodzące od niego.
 
 ## Powiązane artykuły
 
-- **[Łączenie z dostawcami](./connecting-providers)** - Połącz dostawcę, który przechowuje Twoje slajdy
-- **[Przeglądanie i pobieranie treści](./browsing-content)** - Przeglądaj foldery dostawcy i odtwarzaj treści na żądanie
-- **[Odtwarzanie treści](./playing-content)** - Sterowanie odtwarzaniem za pomocą pilota telewizora
+- **[Łączenie z dostawcami](./connecting-providers.md)** - Połącz dostawcę, który przechowuje Twoje slajdy
+- **[Przeglądanie i pobieranie treści](./browsing-content.md)** - Przeglądaj foldery dostawcy i odtwarzaj treści na żądanie
+- **[Odtwarzanie treści](./playing-content.md)** - Sterowanie odtwarzaniem za pomocą pilota telewizora

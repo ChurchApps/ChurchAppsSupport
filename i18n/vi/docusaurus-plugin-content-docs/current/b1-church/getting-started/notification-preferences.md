@@ -1,5 +1,6 @@
 ---
 title: "Tùy chọn thông báo"
+description: "Đặt kênh thông báo, tần suất email, giờ yên tĩnh và tùy chọn từ chối tin nhắn cho từng loại thông báo trong B1 Admin và ứng dụng B1, từ một màn hình."
 ---
 
 # Tùy chọn thông báo
@@ -60,6 +61,6 @@ Các thông báo nhạy cảm về thời gian -- như cảnh báo bảo mật h
 
 ## Liên quan
 
-- [Đăng ký làm tình nguyện](../serving/volunteer-signup) -- Nhắc nhở phục vụ và phản hồi các yêu cầu lịch trình
-- [Đăng ký sự kiện](../events/registering) -- Đăng ký các sự kiện có gửi nhắc nhở
-- [Cài đặt ứng dụng](installing-pwa) -- Thêm B1 vào thiết bị để nhận thông báo đẩy
+- [Đăng ký làm tình nguyện](../serving/volunteer-signup.md) -- Nhắc nhở phục vụ và phản hồi các yêu cầu lịch trình
+- [Đăng ký sự kiện](../events/registering.md) -- Đăng ký các sự kiện có gửi nhắc nhở
+- [Cài đặt ứng dụng](./installing-pwa.md) -- Thêm B1 vào thiết bị để nhận thông báo đẩy

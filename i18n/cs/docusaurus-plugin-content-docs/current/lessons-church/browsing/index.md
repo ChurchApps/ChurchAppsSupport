@@ -1,5 +1,6 @@
 ---
 title: "Procházení obsahu"
+description: "Procházení bezplatné kurikulární knihovny Lessons.church bez účtu: domovská stránka, programy, vyhledávání a externí poskytovatelé."
 ---
 
 # Procházení obsahu

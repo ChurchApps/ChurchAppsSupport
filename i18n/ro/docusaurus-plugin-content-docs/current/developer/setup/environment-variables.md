@@ -1,5 +1,6 @@
 ---
 title: "Variabile de mediu"
+description: "Configurați .env pentru proiectele ChurchApps: API demo comun sau local și variabilele pentru B1 Admin, B1.church, B1 Mobile, Lessons.church și altele."
 ---
 
 # Variabile de mediu
@@ -13,9 +14,9 @@ Fiecare proiect ChurchApps folosește un fișier `.env` pentru configurarea loca
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalează [cerințele preliminare](./prerequisites) pentru proiectul tău
+- Instalează [cerințele preliminare](./prerequisites.md) pentru proiectul tău
 - Clonează depozitul proiectului cu care vrei să lucrezi
-- Consultă [Prezentarea generală a proiectului](./project-overview) pentru a înțelege ce module API are nevoie proiectul tău
+- Consultă [Prezentarea generală a proiectului](./project-overview.md) pentru a înțelege ce module API are nevoie proiectul tău
 
 </div>
 
@@ -64,7 +65,7 @@ Mediul de staging (`api.staging.churchapps.org`, `api.staging.lessons.church` ș
 
 ### Opțiunea 2: API local
 
-Rulează proiectul Api pe calculatorul tău. Necesită MySQL 8.0+ cu baze de date create pentru fiecare modul. Consultă ghidul [configurarea locală a API-ului](../api/local-setup).
+Rulează proiectul Api pe calculatorul tău. Necesită MySQL 8.0+ cu baze de date create pentru fiecare modul. Consultă ghidul [configurarea locală a API-ului](../api/local-setup.md).
 
 ```bash
 # Model URL de bază

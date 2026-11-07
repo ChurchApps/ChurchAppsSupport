@@ -1,5 +1,6 @@
 ---
 title: "Enregistrer les dons"
+description: "Enregistrez les dons à l'église dans B1 Admin en créant un lot, en saisissant les dons un à un, en important un CSV ou en consignant un don depuis le profil d'un donateur."
 ---
 
 # Enregistrer les dons

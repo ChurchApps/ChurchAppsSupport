@@ -1,5 +1,6 @@
 ---
 title: "Ihr Gerät koppeln"
+description: "FreePlay-TV per vierstelligem Bildschirmcode mit einem Plan-Typ in B1 Admin koppeln und anschließend die Medien für den Plan-Modus herunterladen."
 ---
 
 # Ihr Gerät koppeln
@@ -13,7 +14,7 @@ Um den Planmodus zu verwenden, koppeln Sie Ihren Fernseher mit einem Planungstyp
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren und starten Sie FreePlay. Siehe [Erste Schritte](../getting-started/)
+- Installieren und starten Sie FreePlay. Siehe [Erste Schritte](../getting-started/index.md)
 - Sie benötigen Zugriff auf **B1 Admin** an einem Computer oder Telefon, um die Kopplung abzuschließen
 
 </div>
@@ -25,7 +26,7 @@ Um den Planmodus zu verwenden, koppeln Sie Ihren Fernseher mit einem Planungstyp
 3. FreePlay zeigt einen vierstelligen Kopplungscode in großen Buchstaben neben einem QR-Code an.
 4. Unter dem Code zeigt eine pulsierende Anzeige **Warte auf Bestätigung**, dass FreePlay auf den Abschluss der Kopplung wartet.
 
-Derselbe Code funktioniert für den [Geplanten Modus](../scheduled-mode/) in FreePlay Admin und für den Planmodus in B1 Admin. Der QR-Code und die Adresse **freeplay.church/pair** auf dem Bildschirm öffnen FreePlay Admin. Für den Planmodus ignorieren Sie sie und geben den Code wie unten beschrieben in B1 Admin ein.
+Derselbe Code funktioniert für den [Geplanten Modus](../scheduled-mode/index.md) in FreePlay Admin und für den Planmodus in B1 Admin. Der QR-Code und die Adresse **freeplay.church/pair** auf dem Bildschirm öffnen FreePlay Admin. Für den Planmodus ignorieren Sie sie und geben den Code wie unten beschrieben in B1 Admin ein.
 
 ## Den Code in B1 Admin eingeben
 
@@ -61,5 +62,5 @@ Kopplungscodes laufen nach 15 Minuten ab. FreePlay zeigt automatisch einen neuen
 ## Verwandte Artikel
 
 - **[Überblick über den Planmodus](./index.md)** - Wie sich der Planmodus vom Geplanten Modus unterscheidet
-- **[Einen Bildschirm koppeln](../scheduled-mode/pairing-a-screen)** - Denselben Fernseher stattdessen in FreePlay Admin mit einem Kalender koppeln
-- **[Inhalte abspielen](../content-providers/playing-content)** - Player-Steuerung für die Plan-Wiedergabe
+- **[Einen Bildschirm koppeln](../scheduled-mode/pairing-a-screen.md)** - Denselben Fernseher stattdessen in FreePlay Admin mit einem Kalender koppeln
+- **[Inhalte abspielen](../content-providers/playing-content.md)** - Player-Steuerung für die Plan-Wiedergabe

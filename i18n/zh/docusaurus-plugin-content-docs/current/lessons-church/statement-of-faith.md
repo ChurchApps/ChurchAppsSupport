@@ -1,5 +1,6 @@
 ---
 title: 信仰声明
+description: "ChurchApps 对上帝、耶稣、圣灵、圣经、救恩和教会的信仰立场，也是审核 Lessons.church 课程内容的标准。"
 ---
 
 # 信仰声明

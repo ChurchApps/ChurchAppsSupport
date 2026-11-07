@@ -1,5 +1,7 @@
 ---
-title: "Je profiel bewerken"
+title: "Je profiel bewerken in het ledenportaal van B1.church"
+sidebar_label: "Je profiel bewerken"
+description: "Werk je contactgegevens, gezinsleden, inlog-e-mail en wachtwoord en privacy-instellingen bij in het ledenportaal van B1.church."
 ---
 
 # Je profiel bewerken

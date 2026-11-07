@@ -1,5 +1,6 @@
 ---
 title: "Mobile Deployment"
+description: "Doorloopt het bouwen van Android- en iOS-releases van de B1 Mobile-app met Expo EAS, het indienen bij de appstores en het pushen van OTA-updates."
 ---
 
 # Mobile Deployment
@@ -13,7 +14,7 @@ ChurchApps mobiele apps worden gebouwd en geïmplementeerd met behulp van **Expo
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Stel de mobiele app lokaal in -- zie [B1 Mobile](../mobile/b1-mobile)
+- Stel de mobiele app lokaal in -- zie [B1 Mobile](../mobile/b1-mobile.md)
 - Installeer en configureer de [EAS CLI](https://docs.expo.dev/eas/)
 - Hebben toegang tot Google Play Console (Android) en/of Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Het vergeten om versienummers in alle bestanden bij te werken, veroorzaakt bouwf
 
 ## Gerelateerde Artikelen
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Lokale setup- en ontwikkelingsgids
-- **[API Deployment](./apis)** -- De backend-API's implementeren
-- **[Web App Deployment](./web-apps)** -- De frontend web-applicaties implementeren
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokale setup- en ontwikkelingsgids
+- **[API Deployment](./apis.md)** -- De backend-API's implementeren
+- **[Web App Deployment](./web-apps.md)** -- De frontend web-applicaties implementeren

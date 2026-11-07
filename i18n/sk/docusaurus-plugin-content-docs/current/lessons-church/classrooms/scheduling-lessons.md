@@ -1,5 +1,7 @@
 ---
-title: "Plánovanie lekcií"
+title: "Plánovanie lekcií tried v portáli"
+sidebar_label: "Plánovanie lekcií"
+description: "Plánovanie lekcií Lessons.church v kalendári triedy v portáli B1 Admin výberom programu, štúdie, lekcie a vekovo špecifického miesta pre každý dátum."
 ---
 
 # Plánovanie lekcií

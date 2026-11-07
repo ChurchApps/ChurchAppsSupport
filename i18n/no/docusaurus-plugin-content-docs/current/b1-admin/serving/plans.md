@@ -1,5 +1,6 @@
 ---
 title: "Gudstjenesteplaner"
+description: "Planlegg frivillige i B1 Admin: lag gudstjenesteplaner etter dato, kopier fra tidligere uker, tildel posisjoner og sett påmeldingsfrister og påminnelser."
 ---
 
 # Gudstjenesteplaner

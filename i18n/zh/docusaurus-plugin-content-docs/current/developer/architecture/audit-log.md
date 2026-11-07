@@ -1,5 +1,6 @@
 ---
 title: "审计日志与可撤销批次"
+description: "介绍记录各模块中所有用户更改的 API 审计日志，以及如何在 B1 Admin 中逐行撤销导入批次。"
 ---
 
 # 审计日志与可撤销批次
@@ -155,6 +156,6 @@ membership 数据库中的一张 `auditLogs` 表支撑着所有模块。列：`i
 
 ## 相关页面
 
-- [模块结构](../api/module-structure) —— 非 membership 模块的控制器如何通过 `RepoManager` 访问 membership 模块的仓储
-- [捐赠](./giving) —— 即便是匿名场景也会被标记为 `sensitive` 加以审计的捐赠写入路径
-- [Membership 端点](../api/endpoints/membership) —— 携带 `X-Batch-Id`，并暴露 `/auditlogs` 和 `/batches` 的 REST 接入面
+- [模块结构](../api/module-structure.md) —— 非 membership 模块的控制器如何通过 `RepoManager` 访问 membership 模块的仓储
+- [捐赠](./giving.md) —— 即便是匿名场景也会被标记为 `sensitive` 加以审计的捐赠写入路径
+- [Membership 端点](../api/endpoints/membership.md) —— 携带 `X-Batch-Id`，并暴露 `/auditlogs` 和 `/batches` 的 REST 接入面

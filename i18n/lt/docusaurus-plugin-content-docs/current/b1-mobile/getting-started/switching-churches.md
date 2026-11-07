@@ -1,5 +1,6 @@
 ---
 title: "Bažnyčių keitimas"
+description: "Perjunkite tarp bažnyčių B1 Mobile programėlėje: pasirinkite neseniai naudotą arba ieškokite pagal pavadinimą, viskas su viena ChurchApps paskyra."
 ---
 
 # Bažnyčių keitimas
@@ -13,7 +14,7 @@ Jei esate narys daugiau nei vienos bažnyčios, B1 Mobile leidžia lengvai perju
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](./installing) ir [prisijunkite](./logging-in) prie savo paskyros
+- [Įdiekite B1 Mobile](./installing.md) ir [prisijunkite](./logging-in.md) prie savo paskyros
 
 </div>
 
@@ -24,7 +25,7 @@ Jei esate narys daugiau nei vienos bažnyčios, B1 Mobile leidžia lengvai perju
 3. Atsidaro **Bažnyčios paieškos** ekranas. Neseniai aplankytos bažnyčios rodomos viršuje, kad būtų lengva jas greitai pasiekti.
 4. Bakstelėkite neseniai aplankytą bažnyčią, kad į ją perjungtumėte, arba paieškos lauke įveskite kitos bažnyčios pavadinimą.
 
-Perjungus bažnyčią, programa perkraunama su tos bažnyčios prekiniu ženklu, navigacijos nuorodomis ir turiniu. Jūsų [suvestinė](../dashboard/), [grupės](../groups/) ir kiti duomenys atspindės naujai pasirinktą bažnyčią.
+Perjungus bažnyčią, programa perkraunama su tos bažnyčios prekiniu ženklu, navigacijos nuorodomis ir turiniu. Jūsų [suvestinė](../dashboard/index.md), [grupės](../groups/index.md) ir kiti duomenys atspindės naujai pasirinktą bažnyčią.
 
 ## Bažnyčios paieška
 

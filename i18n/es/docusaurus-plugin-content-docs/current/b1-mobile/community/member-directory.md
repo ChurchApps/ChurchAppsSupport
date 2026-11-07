@@ -1,5 +1,7 @@
 ---
-title: "Directorio de Miembros"
+title: "Directorio de miembros en la aplicación B1 Mobile"
+sidebar_label: "Directorio de Miembros"
+description: "Encuentre personas de su iglesia con el directorio de miembros de B1 Mobile: explore alfabéticamente, busque por nombre y abra perfiles y enlaces de hogar."
 ---
 
 # Directorio de Miembros
@@ -13,7 +15,7 @@ El directorio de miembros en B1 Mobile te permite explorar y buscar personas en 
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](../getting-started/installing) e [inicia sesión](../getting-started/logging-in) en tu cuenta
+- [Instala B1 Mobile](../getting-started/installing.md) e [inicia sesión](../getting-started/logging-in.md) en tu cuenta
 
 </div>
 
@@ -51,5 +53,5 @@ La información visible en cada perfil depende de la configuración de privacida
 
 ## Artículos Relacionados
 
-- [Mensajería](./messaging) -- Envía un mensaje privado a alguien que encuentres en el directorio
+- [Mensajería](./messaging.md) -- Envía un mensaje privado a alguien que encuentres en el directorio
 - [Configuración de Privacidad](../profile/privacy-settings.md) -- Controla lo que otros pueden ver sobre ti en el directorio

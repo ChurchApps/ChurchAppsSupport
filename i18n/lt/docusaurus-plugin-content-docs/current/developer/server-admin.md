@@ -1,5 +1,6 @@
 ---
 title: "Serverio administravimas"
+description: "Tik Server.Admin naudotojams: iš naujo nustatyti dviejų veiksnių prisijungimą, veikti kaip kitas naudotojas, moderuoti Commons, patvirtinti bažnyčios el. paštą."
 ---
 
 # Serverio administravimas

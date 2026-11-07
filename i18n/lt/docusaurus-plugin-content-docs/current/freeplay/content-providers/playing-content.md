@@ -1,5 +1,6 @@
 ---
 title: "Turinio atkūrimas"
+description: "Valdykite FreePlay TV pultu: pauzė, skaidrių ir vaizdo įrašų perjungimas, šuolis į bet kurį pranešimą ir išėjimas iš grotuvo."
 ---
 
 # Turinio atkūrimas
@@ -13,13 +14,13 @@ FreePlay grotuvas užima visą ekraną ir yra pritaikytas valdyti televizoriaus 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Pasirinkite, ką atkurti. Žr. [Turinio naršymas ir atsisiuntimas](./browsing-content), [Plano režimas](../plan-mode/) arba [Skelbimai](./announcements)
+- Pasirinkite, ką atkurti. Žr. [Turinio naršymas ir atsisiuntimas](./browsing-content.md), [Plano režimas](../plan-mode/index.md) arba [Skelbimai](./announcements.md)
 - Paspauskite **Pradėti**, kad atidarytumėte grotuvą
 
 </div>
 
 :::info
-Ekranams, susietiems su kalendoriumi, naudojamas atskiras suplanuotas grotuvas su truputį kitokiais valdikliais. Žr. [Suplanuotas atkūrimas televizoriuje](../scheduled-mode/scheduled-playback).
+Ekranams, susietiems su kalendoriumi, naudojamas atskiras suplanuotas grotuvas su truputį kitokiais valdikliais. Žr. [Suplanuotas atkūrimas televizoriuje](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Grotuvo valdikliai
@@ -57,7 +58,7 @@ Atkūrimo metu paspauskite **Aukštyn**, kad atidarytumėte **Pasirinkti praneš
 Norėdami išeiti iš grotuvo, pulte paspauskite **Žemyn** arba **Atgal**. Kur atsidursite, priklauso nuo to, ką atkūrėte:
 
 - **Teikėjo turinys** – grįžtama į turinio naršyklę
-- **Planas** – grįžtama į plano atsisiuntimo ekraną. Žr. [Plano režimas](../plan-mode/)
+- **Planas** – grįžtama į plano atsisiuntimo ekraną. Žr. [Plano režimas](../plan-mode/index.md)
 - **Atsisiuntimas** – grįžtama į ekraną **Atsisiuntimai**
 
 :::info
@@ -66,5 +67,5 @@ Kol grotuvas atidarytas, ekranas lieka įjungtas, todėl televizorius pamokos vi
 
 ## Susiję straipsniai
 
-- **[Turinio naršymas ir atsisiuntimas](./browsing-content)** – raskite turinį ir atsisiųskite jį atkurti neprisijungus
-- **[Suplanuotas atkūrimas televizoriuje](../scheduled-mode/scheduled-playback)** – ekranų, kurie seka kalendorių, pultų valdikliai
+- **[Turinio naršymas ir atsisiuntimas](./browsing-content.md)** – raskite turinį ir atsisiųskite jį atkurti neprisijungus
+- **[Suplanuotas atkūrimas televizoriuje](../scheduled-mode/scheduled-playback.md)** – ekranų, kurie seka kalendorių, pultų valdikliai

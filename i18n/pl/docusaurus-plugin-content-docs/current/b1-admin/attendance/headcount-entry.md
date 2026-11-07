@@ -1,5 +1,6 @@
 ---
 title: "Zapis i trend liczby osób"
+description: "Wpisz łączną liczbę uczestników nabożeństwa lub grupy w B1 Admin bez listy imiennej i śledź wyniki tydzień po tygodniu w raporcie Headcount Trend."
 ---
 
 # Zapis i trend liczby osób

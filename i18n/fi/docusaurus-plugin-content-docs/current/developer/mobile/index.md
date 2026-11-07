@@ -1,5 +1,6 @@
 ---
 title: "Mobiilisovellukset"
+description: "Yleiskatsaus ChurchAppsin Expo- ja React Native -mobiilisovelluksiin (B1 Mobile, B1 Checkin, LessonsScreen) ja linkit yhteisen työkaluketjun asennusohjeeseen."
 ---
 
 # Mobiilisovellukset
@@ -14,13 +15,13 @@ ChurchAppsin mobiilisovellukset on rakennettu **React Nativella** ja **Expolla**
 
 | Sovellus | Tarkoitus | Alusta |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | Seurakunnan jäsenille suunnattu pääsovellus | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | Seurakunnan jäsenille suunnattu pääsovellus | Android, iOS |
 | B1 Checkin | Sisäänkirjautumisasemien kioskisovellus | Android, iOS |
 | LessonsScreen | Android TV -sovellus opetusmateriaalin näyttämiseen luokkahuoneissa | Android TV |
 
 ### B1 Mobile
 
-Seurakunnan pääsovellus jäsenille. Jäsenet voivat selata hakemistoja, tehdä lahjoituksia, merkitä läsnäoloa, vastaanottaa ilmoituksia ja olla vuorovaikutuksessa seurakuntayhteisönsä kanssa. Lisätietoja on [B1 Mobile -asennusoppaassa](./b1-mobile).
+Seurakunnan pääsovellus jäsenille. Jäsenet voivat selata hakemistoja, tehdä lahjoituksia, merkitä läsnäoloa, vastaanottaa ilmoituksia ja olla vuorovaikutuksessa seurakuntayhteisönsä kanssa. Lisätietoja on [B1 Mobile -asennusoppaassa](./b1-mobile.md).
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ Seurakuntien sisäänkirjautumisasemille suunniteltu kioskisovellus. Se tarjoaa 
 Android TV -sovellus, joka näyttää opetusmateriaalia luokkahuoneissa. Opettajat voivat lähettää oppitunnin diat, videot ja tehtävät TV-ruudulle, mikä helpottaa opetussuunnitelman materiaalin esittämistä tuntien aikana.
 
 :::info
-Kaikki mobiilisovellukset käyttävät samaa Expo-pohjaista työkaluketjua ja noudattavat samankaltaisia asennustapoja. [B1 Mobile -opas](./b1-mobile) toimii viitteenä yleisestä asennusprosessista kaikissa mobiiliprojekteissa.
+Kaikki mobiilisovellukset käyttävät samaa Expo-pohjaista työkaluketjua ja noudattavat samankaltaisia asennustapoja. [B1 Mobile -opas](./b1-mobile.md) toimii viitteenä yleisestä asennusprosessista kaikissa mobiiliprojekteissa.
 :::

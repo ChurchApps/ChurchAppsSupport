@@ -1,5 +1,7 @@
 ---
-title: "Danh bạ thành viên"
+title: "Danh bạ thành viên trong ứng dụng B1 Mobile"
+sidebar_label: "Danh bạ thành viên"
+description: "Tìm người trong nhà thờ bằng danh bạ thành viên B1 Mobile: duyệt theo thứ tự chữ cái, tìm theo tên, và mở hồ sơ cùng liên kết gia đình."
 ---
 
 # Danh bạ thành viên
@@ -13,7 +15,7 @@ Danh bạ thành viên trong B1 Mobile cho phép bạn duyệt và tìm kiếm n
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 
 </div>
 
@@ -51,5 +53,5 @@ Thông tin hiển thị trong mỗi hồ sơ phụ thuộc vào cài đặt quy�
 
 ## Bài viết liên quan
 
-- [Nhắn tin](./messaging) -- Gửi tin nhắn riêng đến người bạn tìm thấy trong danh bạ
+- [Nhắn tin](./messaging.md) -- Gửi tin nhắn riêng đến người bạn tìm thấy trong danh bạ
 - [Cài đặt quyền riêng tư](../profile/privacy-settings.md) -- Kiểm soát những gì người khác có thể thấy về bạn trong danh bạ

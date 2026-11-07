@@ -1,5 +1,6 @@
 ---
 title: "Grupni časovni trak"
+description: "Oglejte si, kako časovnica skupin v B1 Mobile združi objave, pogovore in posodobitve vseh vaših skupin v en vir ter kaj storiti, ko je ustavljena."
 ---
 
 # Grupni časovni trak
@@ -17,7 +18,7 @@ Funkcija grupnega časovnega traku je trenutno nedostopna, ker potekajo izboljš
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite aplikacijo B1 Mobile](../getting-started/installing) in [se prijavite](../getting-started/logging-in) v svoj račun
+- [Namestite aplikacijo B1 Mobile](../getting-started/installing.md) in [se prijavite](../getting-started/logging-in.md) v svoj račun
 - Biti morate član vsaj ene skupine v vaši cerkvi
 
 </div>
@@ -41,7 +42,7 @@ Pri vsakem elementu v časovnem traku je prikazano, iz katere skupine prihaja, t
 Časovni trak je odličen način, da z enim pogledom ostanete povezani s svojo cerkveno skupnostjo. Tukaj je nekaj nasvetov, kako ga čim bolje izkoristiti:
 
 - **Redno preverjajte** -- Odprite zaslon Skupine in pomikajte se po časovnem traku, da nadoknadite nedavno dejavnost.
-- **Odprite podrobnosti** -- Če vas objava pritegne, se je dotaknite ali se dotaknite imena skupine, da odprete celotno [stran s podrobnostmi skupine](./group-details) in več konteksta.
+- **Odprite podrobnosti** -- Če vas objava pritegne, se je dotaknite ali se dotaknite imena skupine, da odprete celotno [stran s podrobnostmi skupine](./group-details.md) in več konteksta.
 - **Vse na enem mestu** -- Ni treba obiskovati vsake skupine posebej. Časovni trak vam prinese vso dejavnost.
 
 :::info
@@ -54,5 +55,5 @@ Omogočite [potisna obvestila](../community/notifications.md), da vas obvestimo,
 
 ## Sorodni članki
 
-- [Podrobnosti skupine](./group-details) -- Ogled celotnega profila posamezne skupine in njenih objav
+- [Podrobnosti skupine](./group-details.md) -- Ogled celotnega profila posamezne skupine in njenih objav
 - [Obvestila](../community/notifications.md) -- Prejemanje obvestil o dejavnosti v skupinah

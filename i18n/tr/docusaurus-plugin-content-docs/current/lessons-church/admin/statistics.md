@@ -1,5 +1,6 @@
 ---
 title: "İstatistikler"
+description: "Çalışmalara göre indirme sayılarını bulun, kaynaklarınızı hangi kiliselerin çektiğini görün ve konumlarını Lessons.church yönetim istatistiklerinde haritalandırın; tarih aralığı filtreleme ile."
 ---
 
 # İstatistikler

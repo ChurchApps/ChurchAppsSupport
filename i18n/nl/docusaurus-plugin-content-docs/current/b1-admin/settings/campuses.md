@@ -1,5 +1,6 @@
 ---
 title: "Campussen"
+description: "Stel campussen in B1 Admin in om bij te houden tot welke locatie elk persoon en elke groep behoort, en filter personen, aanwezigheid en demografie op locatie."
 ---
 
 # Campussen

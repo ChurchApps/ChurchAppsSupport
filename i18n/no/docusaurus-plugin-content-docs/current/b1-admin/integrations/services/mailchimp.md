@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Synkroniser personer og gruppe- eller lagrede listemedlemskap fra B1 Admin til et Mailchimp-publikum som tagger, med oppsett, første import og feilsøking."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Koblingen synkroniserer *endringer* fra det øyeblikk den er på; den fyller ikk
 
 ## Andre oppskrifter (Zapier / Make)
 
-Alt utover publikum-synkronisering — tagging av givere på `donation.created`, en Mailchimp → B1 reversretning, eller synkronisering til en helt annen e-post-plattform (Constant Contact, Brevo, etc.) — er fortsatt tilgjengelig gjennom [Zapier](../zapier) eller [Make](../make), som utløser på de samme webhook-hendelsene:
+Alt utover publikum-synkronisering — tagging av givere på `donation.created`, en Mailchimp → B1 reversretning, eller synkronisering til en helt annen e-post-plattform (Constant Contact, Brevo, etc.) — er fortsatt tilgjengelig gjennom [Zapier](../zapier.md) eller [Make](../make.md), som utløser på de samme webhook-hendelsene:
 
 - **Tagg givere:** B1 *Ny donasjon* → B1 *Finn person* → Mailchimp *Legg til abonnent til tag* (`Ga-2026`)
 - **Toveis:** Mailchimp *Ny abonnent* → B1 *Opprett person*
@@ -83,4 +84,4 @@ Hvis du tidligere kjørte person/gruppe-synkronisering gjennom Zapier, slå av d
 
 - [Webhooks (utviklerreferanse)](/docs/developer/api/webhooks) — motoren under, hendelseskatalog, leveranse/forsøk-semantikk
 - [Lagrede lister](/docs/b1-admin/people/lists) — regelbasert publikum som mapper naturlig til Mailchimp-tagger
-- [Zapier (oversikt)](../zapier) — for oppskrifter utover publikum-synkronisering
+- [Zapier (oversikt)](../zapier.md) — for oppskrifter utover publikum-synkronisering

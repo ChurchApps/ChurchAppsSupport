@@ -1,5 +1,6 @@
 ---
 title: "Vapaaehtoisohjeet"
+description: "Määritä Lessons.churchissa roolikohtaiset oppaat, jotta jokainen vapaaehtoinen näkee vain omat vaiheensa, ja tulosta tai jaa ne ennen tuntia."
 ---
 
 # Vapaaehtoisohjeet

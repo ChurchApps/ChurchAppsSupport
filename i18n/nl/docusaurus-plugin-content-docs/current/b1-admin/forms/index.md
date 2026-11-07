@@ -1,5 +1,6 @@
 ---
 title: "Formulieren"
+description: "Zoek, filter, bewerk, archiveer en herstel aangepaste formulieren in B1 Admin, en lees waar je formulierleden instelt en inzendingen bekijkt."
 ---
 
 # Formulieren

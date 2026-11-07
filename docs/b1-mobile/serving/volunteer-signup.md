@@ -1,5 +1,7 @@
 ---
-title: "Volunteer Signup"
+title: "Volunteer Signup in the B1 Mobile App"
+sidebar_label: "Volunteer Signup"
+description: "Find open volunteer positions for upcoming services, sign up, or remove a signup in the B1 Mobile app. Covers deadlines and how spot limits work."
 ---
 
 # Volunteer Signup
@@ -13,7 +15,7 @@ Browse available volunteer positions and sign up for upcoming services directly 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Your church administrator must have enabled self-signup on at least one position
 
 </div>
@@ -60,5 +62,5 @@ Enable [push notifications](../community/notifications.md) to stay informed abou
 
 ## Related Articles
 
-- [Viewing Plans](./viewing-plans) -- See your assigned plans and service orders
+- [Viewing Plans](./viewing-plans.md) -- See your assigned plans and service orders
 - [Notifications](../community/notifications.md) -- Stay updated on serving assignments

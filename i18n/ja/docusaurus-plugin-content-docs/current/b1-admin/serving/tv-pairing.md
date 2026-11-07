@@ -1,5 +1,6 @@
 ---
 title: "FreePlayをB1 Adminに接続する"
+description: "FreePlay を実行している教室のテレビを、B1 Admin の予定済みレッスンに接続します。授業中に教師が画面でレッスンを再生できます。"
 ---
 
 # B1 Adminのレッスンを教室のテレビに接続する

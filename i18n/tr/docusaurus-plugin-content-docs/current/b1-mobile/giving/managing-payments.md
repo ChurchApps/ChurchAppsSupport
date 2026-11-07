@@ -1,5 +1,6 @@
 ---
 title: "Ödeme Yöntemlerini Yönetme"
+description: "B1 Mobile bağışlar bölümündeki Yönet sekmesinde kayıtlı kartları ekleyin, inceleyin ve kaldırın; kart bilgisi girmeden tekrarlayan bağışlar hızlanır."
 ---
 
 # Ödeme Yöntemlerini Yönetme
@@ -13,7 +14,7 @@ Bağış bölümündeki **Yönet** sekmesi, kayıtlı ödeme yöntemlerinizi gö
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 
 </div>
 
@@ -31,7 +32,7 @@ Yeni bir kart eklemek için:
 4. Kart bilgilerinizi girin. Bilgiler işlenmek üzere güvenli bir şekilde **Stripe**'a gönderilir.
 5. Kaydedildikten sonra yeni kartınız ödeme yöntemleri listenizde görünecektir.
 
-Kayıtlı kartınız, bir sonraki seferinde **Bağış Yap** sekmesinden [bağış yaptığınızda](./making-donations) bir ödeme seçeneği olarak kullanılabilir olacaktır.
+Kayıtlı kartınız, bir sonraki seferinde **Bağış Yap** sekmesinden [bağış yaptığınızda](./making-donations.md) bir ödeme seçeneği olarak kullanılabilir olacaktır.
 
 ## Bir Ödeme Yöntemini Kaldırma
 
@@ -44,7 +45,7 @@ Kayıtlı bir kartı artık tutmak istemiyorsanız, bunu **Yönet** sekmesinden 
 Kart, bağış yaptığınızda artık bir ödeme seçeneği olarak görünmeyecektir.
 
 :::info
-Bir ödeme yöntemini kaldırmak, geçmiş bağışlarınızı etkilemez. [Bağış geçmişiniz](./donation-history) olduğu gibi kalır.
+Bir ödeme yöntemini kaldırmak, geçmiş bağışlarınızı etkilemez. [Bağış geçmişiniz](./donation-history.md) olduğu gibi kalır.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Hızlı bağış yapabilmek için en az bir ödeme yönteminin kayıtlı olması
 
 ## İlgili Makaleler
 
-- [Bağış Yapma](./making-donations) -- Kayıtlı bir ödeme yöntemi kullanarak nasıl bağış yapacağınızı öğrenin
-- [Bağış Geçmişi](./donation-history) -- Bağış özetinizi ve geçmiş bağışlarınızı görüntüleyin
+- [Bağış Yapma](./making-donations.md) -- Kayıtlı bir ödeme yöntemi kullanarak nasıl bağış yapacağınızı öğrenin
+- [Bağış Geçmişi](./donation-history.md) -- Bağış özetinizi ve geçmiş bağışlarınızı görüntüleyin

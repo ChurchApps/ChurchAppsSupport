@@ -1,5 +1,7 @@
 ---
-title: "Check-in automat"
+title: "Auto-check-in din aplicația B1 Mobile"
+sidebar_label: "Check-in automat"
+description: "Efectuați check-in pentru dvs. și gospodăria dvs. la o slujbă din aplicația B1 Mobile, inclusiv alegerea orei slujbei și atribuirea grupului fiecărei persoane."
 ---
 
 # Check-in automat
@@ -13,7 +15,7 @@ Efectuarea check-in-ului din B1 Mobile este un proces simplu, în mai mulți pa�
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 - Asigură-te că [membrii gospodăriei](../profile/household.md) sunt configurați în profilul tău
 
 </div>

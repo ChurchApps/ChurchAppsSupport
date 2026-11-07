@@ -1,5 +1,6 @@
 ---
 title: "Email Templates"
+description: "Set up email and text message templates in B1 Admin, with merge fields, text message options, and previews for mass communication."
 ---
 
 # Email Templates

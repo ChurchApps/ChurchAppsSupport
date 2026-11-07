@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Nastavenia profilu a zariadenia v B1 Admin"
+sidebar_label: "Profil"
+description: "Aktualizujte meno, e-mail, heslo, dvojfaktorové prihlásenie, tému a pripojené zariadenia vo svojom profile B1 Admin a schvaľujte zmeny profilov členov."
 ---
 
 # Profil

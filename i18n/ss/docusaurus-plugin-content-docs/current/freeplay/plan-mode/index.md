@@ -1,5 +1,6 @@
 ---
 title: "Simo Selicebo"
+description: "Xhuma i-TV ku-FreePlay nesikhatsi sebandla kusuka ku-B1 Admin, kuze ikhombise tifundziso, tetikhatsi, nemidiya yesonto lelikhona ngalokulandzelana."
 ---
 
 # Simo Selicebo
@@ -12,7 +13,7 @@ Simo Selicebo sixhuma TV yakho nelicebo lenkonzo yebandla. Esikhundleni sekuland
 
 ## Indlela Lehlukene Ngayo Ku-Simo Selikilasi
 
-- **[Simo Selikilasi](../scheduled-mode/)** ilanda sifundzo lesihlelekile ligumbi lelitsite ngelilanga lelinikiwe
+- **[Simo Selikilasi](../scheduled-mode/index.md)** ilanda sifundzo lesihlelekile ligumbi lelitsite ngelilanga lelinikiwe
 - **Simo Selicebo** silanda kucuketfwe lokuhlotjaniswa nenhlobo yelicebo, lokungafaka tifundzo, kwetfulwa kwebaniketi, tintfo letengetiwe, naleminye imidiya lehleliwe ngekulandzelana lokwakhelwe
 
 Simo Selicebo sisita kakhulu nawe icebo lakho lenkonzo lifaka kuhlangana kwekucuketfwe lokusuka etindzaweni letehlukene, konkhe kuhlelwe kube kulandzelana kunye.
@@ -28,4 +29,4 @@ TV ihlala ihlanganisiwe nenhlobo yelicebo. Liviki ngalinye, ilanda ngekutitjinte
 
 ## Kulesigaba
 
-- **[Kuhlanganiswa Kwelidivayisi Lakho](./device-pairing)** - Indlela yekukhipha nekufaka likhodi lekuhlanganisa
+- **[Kuhlanganiswa Kwelidivayisi Lakho](./device-pairing.md)** - Indlela yekukhipha nekufaka likhodi lekuhlanganisa

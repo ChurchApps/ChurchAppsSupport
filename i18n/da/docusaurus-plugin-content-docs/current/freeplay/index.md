@@ -1,5 +1,6 @@
 ---
 title: "FreePlay oversigt"
+description: "Oversigt over FreePlay, klasseværelses-tv-appen til afspilning af lektioner offline på Android TV, Fire TV og Apple TV, med links til opsætningsguider."
 ---
 
 # FreePlay oversigt
@@ -34,11 +35,11 @@ Når du starter FreePlay, opretter det forbindelse til dine indholdsudbydere og 
 
 ## Sektioner
 
-- **[Kom i gang](./getting-started/)** - Installer appen, start den og vælg hvordan du forbinder
-- **[Klasseværelses-tilstand](./scheduled-mode/)** - Par til et klasseværelse og afspil planlagte lektioner
-- **[Plan-tilstand](./plan-mode/)** - Par til en kirkestjeneste plan
-- **[Indholdsudbydere](./content-providers/)** - Forbind til eksterne indholdskiler
-- **[Gennemfletning af lektioner](./content-providers/browsing-content)** - Udforsk hele lektionsbiblioteket efter program og studie
+- **[Kom i gang](./getting-started/index.md)** - Installer appen, start den og vælg hvordan du forbinder
+- **[Klasseværelses-tilstand](./scheduled-mode/index.md)** - Par til et klasseværelse og afspil planlagte lektioner
+- **[Plan-tilstand](./plan-mode/index.md)** - Par til en kirkestjeneste plan
+- **[Indholdsudbydere](./content-providers/index.md)** - Forbind til eksterne indholdskiler
+- **[Gennemfletning af lektioner](./content-providers/browsing-content.md)** - Udforsk hele lektionsbiblioteket efter program og studie
 
 :::info
 FreePlay er en del af [ChurchApps](https://churchapps.org) pakke med gratis, open-source værktøjer til kirker.

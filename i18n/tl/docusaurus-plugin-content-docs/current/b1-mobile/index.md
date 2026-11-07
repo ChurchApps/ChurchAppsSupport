@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Deprecated)"
+description: "Ipinapaliwanag na deprecated na ang native na B1 Mobile app; gamitin ang B1.church PWA. Nananatili ang mga lumang pahina para sa sanggunian."
 ---
 
 # B1 Mobile (Deprecated)
@@ -40,16 +41,16 @@ Ang B1 Mobile ay sumusuporta sa push notifications upang hindi ka makaligtaan ng
 
 ## Matuto Ng Higit Pa
 
-- [Pagsisimula](./getting-started/) -- I-install ang app, lumikha ng account, at pumili ng iyong simbahan.
-- [Dashboard](./dashboard/) -- Maunawaan ang iyong personalized home screen.
-- [Mga Grupo](./groups/) -- Manatiling konektado sa iyong mga grupo ng simbahan.
-- [Pagbibigay](./giving/) -- Gumawa ng mga donasyon mula sa iyong telepono.
-- [Mga Kaganapan](./events/) -- Tuklasin at magrehistro para sa mga darating na kaganapan ng simbahan.
-- [Check-In](./checkin/) -- I-check in para sa mga serbisyo at kaganapan.
-- [Pagsisilbi](./serving/) -- Tingnan ang iyong mga plano ng pagsisilbi, mga assignment, at mga pagkakataon ng volunteer.
-- [Komunidad](./community/) -- Tuklasin ang direktoryo ng miyembro at magpadala ng mga mensahe.
-- [Nilalaman](./content/) -- Mga sermon, Bible, verse of the day, at mga leksyon (lessons screen deprecated — tingnan ang [FreePlay](/docs/freeplay/)).
-- [Profile](./profile/) -- Pamahalaan ang iyong profile at account settings.
+- [Pagsisimula](./getting-started/index.md) -- I-install ang app, lumikha ng account, at pumili ng iyong simbahan.
+- [Dashboard](./dashboard/index.md) -- Maunawaan ang iyong personalized home screen.
+- [Mga Grupo](./groups/index.md) -- Manatiling konektado sa iyong mga grupo ng simbahan.
+- [Pagbibigay](./giving/index.md) -- Gumawa ng mga donasyon mula sa iyong telepono.
+- [Mga Kaganapan](./events/index.md) -- Tuklasin at magrehistro para sa mga darating na kaganapan ng simbahan.
+- [Check-In](./checkin/index.md) -- I-check in para sa mga serbisyo at kaganapan.
+- [Pagsisilbi](./serving/index.md) -- Tingnan ang iyong mga plano ng pagsisilbi, mga assignment, at mga pagkakataon ng volunteer.
+- [Komunidad](./community/index.md) -- Tuklasin ang direktoryo ng miyembro at magpadala ng mga mensahe.
+- [Nilalaman](./content/index.md) -- Mga sermon, Bible, verse of the day, at mga leksyon (lessons screen deprecated — tingnan ang [FreePlay](/docs/freeplay/)).
+- [Profile](./profile/index.md) -- Pamahalaan ang iyong profile at account settings.
 
 :::info
 Ang B1 Mobile ay pinalitan ng [B1.church PWA](../b1-church/getting-started/installing-pwa.md). Ang mga bagong deployment ay dapat gumamit ng PWA — ang native app ay hindi na ina-update.

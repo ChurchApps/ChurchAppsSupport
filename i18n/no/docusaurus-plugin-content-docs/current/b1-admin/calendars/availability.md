@@ -1,5 +1,6 @@
 ---
 title: "Tilgjengelighetskalender"
+description: "Sett opp bookbare rom og utstyr i B1 Admin, legg inn buffer for oppsett og rydding, og håndter gjentakende bestillinger og de som krever godkjenning."
 ---
 
 # Tilgjengelighetskalender
@@ -13,7 +14,7 @@ Tilgjengelighetskalenderen gir deg en oversikt over alle bookinger av rom og res
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp minst ett [rom eller en ressurs](rooms-resources) i seksjonen Rom og ressurser
+- Sett opp minst ett [rom eller en ressurs](./rooms-resources.md) i seksjonen Rom og ressurser
 - Du trenger redigeringstilgang til Kalendere-seksjonen i B1 Admin
 
 </div>
@@ -58,7 +59,7 @@ Bruk nedtrekksmenyen **Rom / ressurs** øverst til venstre for å begrense kalen
 6. Klikk på **Lagre** for å sende inn bookingen.
 
 :::info
-Hvis rommet eller ressursen har en **Godkjenningsgruppe** konfigurert, vises bookingen som **Venter** til en leder i den gruppen godkjenner den. Se [Godkjenninger i kalenderen](approvals) for godkjenningsrutinen.
+Hvis rommet eller ressursen har en **Godkjenningsgruppe** konfigurert, vises bookingen som **Venter** til en leder i den gruppen godkjenner den. Se [Godkjenninger i kalenderen](./approvals.md) for godkjenningsrutinen.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Kalenderen uthever alle konflikter før du lagrer. Hvis du ser en konfliktadvars
 
 ## Relaterte artikler
 
-- [Rom, ressurser og planlegging](rooms-resources) — sett opp lokaler og utstyr som kan bookes
-- [Godkjenninger i kalenderen](approvals) — godkjenn eller avslå bookingforespørsler
-- [Opprette kalendere](creating-calendars) — administrer arrangementskalendere
+- [Rom, ressurser og planlegging](./rooms-resources.md) — sett opp lokaler og utstyr som kan bookes
+- [Godkjenninger i kalenderen](./approvals.md) — godkjenn eller avslå bookingforespørsler
+- [Opprette kalendere](./creating-calendars.md) — administrer arrangementskalendere

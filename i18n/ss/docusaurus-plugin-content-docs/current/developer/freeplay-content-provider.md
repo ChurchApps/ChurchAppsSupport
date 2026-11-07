@@ -1,5 +1,6 @@
 ---
 title: "Umniniyo Wekucuketfwe kwe-FreePlay"
+description: "Lokufanele umhlinzeki wemaphepha ekufundza ayinike kuze axhumanise umtfombo wemifundziso ne-FreePlay: logo, indlela yekungena, tikhathalogi netindzawo tetiphepha nemafomethi emidiya."
 ---
 
 # Umniniyo Wekucuketfwe kwe-FreePlay

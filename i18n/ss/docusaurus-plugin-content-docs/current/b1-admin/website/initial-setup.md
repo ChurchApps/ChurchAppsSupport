@@ -1,5 +1,7 @@
 ---
-title: "Kulungisa Kwekucala"
+title: "Kuqala Ngewebhusayithi Yakho ye-B1 Admin"
+sidebar_label: "Kulungisa Kwekucala"
+description: "Setela iwebhusayithi yesonto lakho ye-B1 Admin: chaza subdomain noma idomeyini yakho, akha likhasi lekhaya, khetsa imibala yebrandi nelogo, bese wakha nendlela yekuhamba."
 ---
 
 # Kulungisa Kwekucala
@@ -45,7 +47,7 @@ Uma ungayiboni inketfo ye-Settings, cela umuntfu lolungise i-akhawunti yelibandl
 6. Ngemuva kwekungeta sigaba, chofota **Add Content** futsi kute ufake umbhalo, titfombe, emavidiyo, emakhadi, emafomu, nakunye lokunyenti ngekutidvonsela esigabeni sakho.
 
 :::info
-Kutfola imiyalo lecacile ngekusebenta ngemakhasi ne-navigation, buka [Managing Pages](managing-pages). Kutfola umculu logcwele we-visual editor, buka [Using the Page Editor](page-editor).
+Kutfola imiyalo lecacile ngekusebenta ngemakhasi ne-navigation, buka [Managing Pages](./managing-pages.md). Kutfola umculu logcwele we-visual editor, buka [Using the Page Editor](./page-editor.md).
 :::
 
 ## Kulungisa Kubukeka Kwelisayithi
@@ -57,7 +59,7 @@ Kutfola imiyalo lecacile ngekusebenta ngemakhasi ne-navigation, buka [Managing P
 5. Lungisa i- **Site Footer** yakho ngemininingwane yekutsintsana yelibandla lakho kanye netilinki.
 
 :::info
-Tinshintjo lotenta ku-Appearance tisebenta kulo lonkhe liwebhusayithi lakho. Buka likhasi le- [Appearance](appearance) kutfola imiyalo lecacile yalinye lungiselelo.
+Tinshintjo lotenta ku-Appearance tisebenta kulo lonkhe liwebhusayithi lakho. Buka likhasi le- [Appearance](./appearance.md) kutfola imiyalo lecacile yalinye lungiselelo.
 :::
 
 ## Kulungisa I-Navigation
@@ -70,6 +72,6 @@ Tilinki takho te-navigation tivela kulisayidbha lengesencele lembukisi we-Websit
 
 ## Tinyatselo Letilandzelako
 
-- [Managing Pages](managing-pages) -- Fundza kutsi usebenta njani ngemakhasi ne-navigation ngalokugcwele
-- [Appearance](appearance) -- Hlela imibala, imibhalo, kanye nesakhiwo selisayithi lakho
-- [Files](files) -- Layisha titfombe nemibhalo yeliwebhusayithi lakho
+- [Managing Pages](./managing-pages.md) -- Fundza kutsi usebenta njani ngemakhasi ne-navigation ngalokugcwele
+- [Appearance](./appearance.md) -- Hlela imibala, imibhalo, kanye nesakhiwo selisayithi lakho
+- [Files](./files.md) -- Layisha titfombe nemibhalo yeliwebhusayithi lakho

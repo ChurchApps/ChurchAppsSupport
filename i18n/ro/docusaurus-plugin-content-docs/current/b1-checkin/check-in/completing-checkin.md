@@ -1,5 +1,6 @@
 ---
 title: "Finalizarea check-in-ului"
+description: "Finalizează check-in-ul familiei la chioșc în B1 Checkin: limite pe săli, etichete, coduri de securitate la ridicare și pașii următori."
 ---
 
 # Finalizarea check-in-ului
@@ -13,9 +14,9 @@ După ce ați verificat gospodăria și ați făcut eventualele atribuiri de gru
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Verificați gospodăria](./household-review) pe ecranul de verificare a gospodăriei
-- [Atribuiți grupuri](./group-assignment) pentru membrii familiei care trebuie să se înregistreze la o anumită clasă sau program
-- Opțional, [adăugați oaspeții](./adding-guests) care vin împreună cu familia dumneavoastră
+- [Verificați gospodăria](./household-review.md) pe ecranul de verificare a gospodăriei
+- [Atribuiți grupuri](./group-assignment.md) pentru membrii familiei care trebuie să se înregistreze la o anumită clasă sau program
+- Opțional, [adăugați oaspeții](./adding-guests.md) care vin împreună cu familia dumneavoastră
 
 </div>
 
@@ -28,10 +29,10 @@ Atât este necesar. Prezența familiei dumneavoastră a fost înregistrată.
 
 ## Săli pline și rapoarte de voluntari
 
-Dacă biserica dumneavoastră a configurat [limite de siguranță](../../b1-admin/attendance/checkin-safety) pentru sălile sale, serverul le verifică înainte de salvare:
+Dacă biserica dumneavoastră a configurat [limite de siguranță](../../b1-admin/attendance/checkin-safety.md) pentru sălile sale, serverul le verifică înainte de salvare:
 
 - Dacă o sală selectată este **plină sau închisă**, check-in-ul nu se finalizează, iar aplicația indică numele sălii, pentru a putea alege alta.
-- Dacă momentul serviciului are un [program de check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule) și fereastra sa de check-in nu este deschisă în acest moment, check-in-ul în sălile acelui moment al serviciului este de asemenea refuzat. Ecranul **Nu se poate face check-in încă** listează sala împreună cu motivul „check-in-ul nu este deschis în acest moment”; atingeți **Schimbă sălile** pentru a alege alt moment al serviciului sau alt grup. (Momentele serviciului deja închise sunt afișate ca **Închis** pe [ecranul gospodăriei](./household-review) și nu pot fi selectate, deci de obicei veți vedea acest lucru doar dacă o fereastră se închide în timpul unui check-in.)
+- Dacă momentul serviciului are un [program de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) și fereastra sa de check-in nu este deschisă în acest moment, check-in-ul în sălile acelui moment al serviciului este de asemenea refuzat. Ecranul **Nu se poate face check-in încă** listează sala împreună cu motivul „check-in-ul nu este deschis în acest moment”; atingeți **Schimbă sălile** pentru a alege alt moment al serviciului sau alt grup. (Momentele serviciului deja închise sunt afișate ca **Închis** pe [ecranul gospodăriei](./household-review.md) și nu pot fi selectate, deci de obicei veți vedea acest lucru doar dacă o fereastră se închide în timpul unui check-in.)
 - O gospodărie care s-a înregistrat pentru un moment anterior al serviciului poate reveni mai târziu și poate adăuga un moment deschis al serviciului, chiar și după ce fereastra anterioară s-a închis. Înregistrările existente sunt păstrate și nu determină refuzarea noului check-in.
 - Dacă o sală pentru copii are **lipsă de voluntari** față de raportul impus, aplicația fie afișează un avertisment pe care un membru al personalului îl poate confirma pentru a continua, fie blochează complet check-in-ul -- în funcție de modul în care biserica dumneavoastră a configurat aplicarea rapoartelor.
 
@@ -49,7 +50,7 @@ Același cod de securitate apare atât pe eticheta cu nume a copilului, cât și
 Codul de securitate este generat din nou pentru fiecare check-in și folosește doar consoane și cifre (vocalele sunt excluse pentru a evita formarea unor cuvinte nepotrivite).
 
 :::warning
-Dacă etichetele nu se tipăresc, deschideți Setările administratorului atingând de șapte ori **logo-ul bisericii**, apoi atingeți **Schimbă imprimanta** pentru a verifica conexiunea la imprimantă. Consultați [Configurarea imprimantei](../getting-started/printer-setup) pentru pașii de depanare.
+Dacă etichetele nu se tipăresc, deschideți Setările administratorului atingând de șapte ori **logo-ul bisericii**, apoi atingeți **Schimbă imprimanta** pentru a verifica conexiunea la imprimantă. Consultați [Configurarea imprimantei](../getting-started/printer-setup.md) pentru pașii de depanare.
 :::
 
 ## Ce se întâmplă după check-in

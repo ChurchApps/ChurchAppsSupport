@@ -1,5 +1,6 @@
 ---
 title: "Gruppernas hälsa"
+description: "Kontrollera grupphälsan i B1 Admin med en 90-dagarstabell över medlemmar, anslutningar, avhopp och snittnärvaro för att hitta grupper som behöver uppföljning."
 ---
 
 # Gruppernas hälsa
@@ -13,8 +14,8 @@ Instrumentpanelen för gruppernas hälsa ger dig en överblick över hur alla di
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Du behöver minst några grupper med medlemmar för att se meningsfulla data. Se [Skapa grupper](creating-groups).
-- Närvarodata hämtas från registrerade sessioner. Se avsnittet [Närvaro](../attendance/).
+- Du behöver minst några grupper med medlemmar för att se meningsfulla data. Se [Skapa grupper](./creating-groups.md).
+- Närvarodata hämtas från registrerade sessioner. Se avsnittet [Närvaro](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Om du klickar på ett gruppnamn kommer du direkt till gruppens detaljsida, där 
 
 ## Relaterade artiklar
 
-- [Skapa grupper](creating-groups): skapa grupper
-- [Gruppmedlemmar](group-members): hantera gruppmedlemskap
-- [Registrera närvaro](../attendance/tracking-attendance): registrera närvarosessioner som matar den här instrumentpanelen
+- [Skapa grupper](./creating-groups.md): skapa grupper
+- [Gruppmedlemmar](./group-members.md): hantera gruppmedlemskap
+- [Registrera närvaro](../attendance/tracking-attendance.md): registrera närvarosessioner som matar den här instrumentpanelen

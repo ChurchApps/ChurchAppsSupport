@@ -1,5 +1,6 @@
 ---
 title: "Spille av innhold"
+description: "Styr FreePlay med en TV-fjernkontroll: sett på pause, hopp over lysbilder og videoer, gå til en hvilken som helst preken og avslutt spilleren fra leverandør-, plan- eller nedlastingsinnhold."
 ---
 
 # Spille av innhold
@@ -13,13 +14,13 @@ FreePlay-spilleren fyller skjermen og er laget for TV-fjernkontroller. Den spill
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Velg noe å spille av. Se [Bla gjennom og last ned innhold](./browsing-content), [Planmodus](../plan-mode/) eller [Kunngjøringer](./announcements)
+- Velg noe å spille av. Se [Bla gjennom og last ned innhold](./browsing-content.md), [Planmodus](../plan-mode/index.md) eller [Kunngjøringer](./announcements.md)
 - Trykk **Start** for å åpne spilleren
 
 </div>
 
 :::info
-Skjermer som er koblet til en kalender bruker en egen planlagt spiller med litt andre kontroller. Se [Planlagt avspilling på TV-en](../scheduled-mode/scheduled-playback).
+Skjermer som er koblet til en kalender bruker en egen planlagt spiller med litt andre kontroller. Se [Planlagt avspilling på TV-en](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Spillerkontroller
@@ -57,7 +58,7 @@ Trykk **Opp** under avspilling for å åpne **Velg en melding**. Den viser alle 
 Trykk **Ned** eller **Tilbake** på fjernkontrollen for å forlate spilleren. Hvor du havner, avhenger av hva du spilte av:
 
 - **Leverandørinnhold** — tilbake til innholdsleseren
-- **En plan** — tilbake til skjermen for plannedlasting. Se [Planmodus](../plan-mode/)
+- **En plan** — tilbake til skjermen for plannedlasting. Se [Planmodus](../plan-mode/index.md)
 - **En nedlasting** — tilbake til skjermen **Nedlastinger**
 
 :::info
@@ -66,5 +67,5 @@ Skjermen holdes våken mens spilleren er åpen, slik at TV-en ikke går i dvale 
 
 ## Relaterte artikler
 
-- **[Bla gjennom og last ned innhold](./browsing-content)** — finn innhold og last det ned for frakoblet avspilling
-- **[Planlagt avspilling på TV-en](../scheduled-mode/scheduled-playback)** — fjernkontrollfunksjoner for skjermer som følger en kalender
+- **[Bla gjennom og last ned innhold](./browsing-content.md)** — finn innhold og last det ned for frakoblet avspilling
+- **[Planlagt avspilling på TV-en](../scheduled-mode/scheduled-playback.md)** — fjernkontrollfunksjoner for skjermer som følger en kalender

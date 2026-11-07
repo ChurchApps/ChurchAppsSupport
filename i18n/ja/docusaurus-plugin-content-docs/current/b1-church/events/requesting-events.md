@@ -1,5 +1,6 @@
 ---
 title: "イベントと部屋のリクエスト"
+description: "B1.church の会員ポータルから、イベント用の部屋や備品の予約を申請します。「My Requests」で状況を確認し、保留中であればキャンセルできます。"
 ---
 
 # イベントと部屋のリクエスト
@@ -42,11 +43,11 @@ Me ページから **My Requests** を開きます。各リクエストには、
 リクエストがまだ保留中の場合は、**リクエストをキャンセル** で取り下げられます（確認を求められます。キャンセルは取り消せません）。
 
 :::info
-リクエストは教会のスタッフが B1 Admin の[承認ページ](../../b1-admin/calendars/approvals)で確認します。どの部屋やリソースに承認が必要かは教会によって異なります。詳しくは[部屋とリソース](../../b1-admin/calendars/rooms-resources)を参照してください。
+リクエストは教会のスタッフが B1 Admin の[承認ページ](../../b1-admin/calendars/approvals.md)で確認します。どの部屋やリソースに承認が必要かは教会によって異なります。詳しくは[部屋とリソース](../../b1-admin/calendars/rooms-resources.md)を参照してください。
 :::
 
 ## 関連記事
 
-- [Me ページ](../getting-started/me-page) -- リクエストへのリンクがある場所
-- [カレンダーの承認 (B1 Admin)](../../b1-admin/calendars/approvals) -- スタッフがリクエストを確認する方法
-- [部屋とリソース (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- 教会が予約可能なスペースを設定する方法
+- [Me ページ](../getting-started/me-page.md) -- リクエストへのリンクがある場所
+- [カレンダーの承認 (B1 Admin)](../../b1-admin/calendars/approvals.md) -- スタッフがリクエストを確認する方法
+- [部屋とリソース (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- 教会が予約可能なスペースを設定する方法

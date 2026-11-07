@@ -1,5 +1,6 @@
 ---
 title: "Plan Modu"
+description: "Bir FreePlay TV'yi B1 Admin'den bir kilise ibadet planına bağlayın; böylece o haftanın dersleri, sunumları ve medyası sırayla gösterilir."
 ---
 
 # Plan Modu
@@ -12,13 +13,13 @@ Plan Modu, televizyonunuzu bir ibadet hizmet planına bağlar. Bir sınıf progr
 
 ## Diğer Modlardan Farkı
 
-- **[Zamanlanmış Mod](../scheduled-mode/)**, FreePlay Admin'deki takvimden, sizin belirlediğiniz saatlerde oynatma listelerini çalar. Başlat düğmesine kimsenin basması gerekmez.
+- **[Zamanlanmış Mod](../scheduled-mode/index.md)**, FreePlay Admin'deki takvimden, sizin belirlediğiniz saatlerde oynatma listelerini çalar. Başlat düğmesine kimsenin basması gerekmez.
 - **Plan Modu**, bir plan türüyle ilişkili içeriği getirir. Bu içerik; dersler, sağlayıcı sunumları, ek öğeler ve özel bir sırayla düzenlenmiş diğer medyaları içerebilir.
 
 Plan Modu, hizmet planınız farklı kaynaklardan gelen içeriklerin karışımını içeriyorsa ve bunların hepsi tek bir sırada düzenlenmişse özellikle kullanışlıdır.
 
 :::tip
-Mevcut planın belirli bir saatte kendiliğinden oynatılmasını mı istiyorsunuz? FreePlay Admin'de bir takvim girişi ekleyin ve **Hizmet planları** altından plan türünü seçin. Bkz. [Takvimi Planlama](../scheduled-mode/scheduling-the-calendar).
+Mevcut planın belirli bir saatte kendiliğinden oynatılmasını mı istiyorsunuz? FreePlay Admin'de bir takvim girişi ekleyin ve **Hizmet planları** altından plan türünü seçin. Bkz. [Takvimi Planlama](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Nasıl Çalışır
@@ -32,4 +33,4 @@ TV, plan türüne bağlı kalır. Her hafta en güncel planı ve içeriğini oto
 
 ## Bu Bölümde
 
-- **[Cihazınızı Eşleştirme](./device-pairing)** - Eşleştirme kodunun nasıl oluşturulacağı ve girileceği
+- **[Cihazınızı Eşleştirme](./device-pairing.md)** - Eşleştirme kodunun nasıl oluşturulacağı ve girileceği

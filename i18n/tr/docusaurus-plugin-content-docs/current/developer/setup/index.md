@@ -1,5 +1,6 @@
 ---
 title: "Kurulum"
+description: "ChurchApps projeleri için yerel geliştirme yolunu seçin: ön uç çalışması için paylaşılan demo API'lere yönelin ya da arka uç değişiklikleri için MySQL ile tam yığını yerel olarak çalıştırın."
 ---
 
 # Kurulum
@@ -40,15 +41,15 @@ Bu yaklaşım, birkaç dakika içinde ön yüz değişikliklerine başlamanızı
 
 ### 2. Her Şeyi Yerel Olarak Çalıştırma
 
-API kodunu değiştirmeniz veya çevrimdışı çalışmanız gerekiyorsa tüm yığını yerel olarak çalıştırabilirsiniz. Bunun için MySQL 8.0+ ve ek yapılandırma gerekir. Ayrıntılı talimatlar için [API yerel kurulumu](../api/local-setup) kılavuzuna bakın.
+API kodunu değiştirmeniz veya çevrimdışı çalışmanız gerekiyorsa tüm yığını yerel olarak çalıştırabilirsiniz. Bunun için MySQL 8.0+ ve ek yapılandırma gerekir. Ayrıntılı talimatlar için [API yerel kurulumu](../api/local-setup.md) kılavuzuna bakın.
 
 ## Başlarken
 
 Bu sayfaları sırayla izleyin:
 
-1. **[Ön Koşullar](prerequisites)** -- Gerekli araçları kurun (Node.js, Git, MySQL vb.)
-2. **[Proje Genel Bakışı](project-overview)** -- Hangi projelerin var olduğunu ve ne işe yaradıklarını öğrenin
-3. **[Ortam Değişkenleri](environment-variables)** -- Her şeyi birbirine bağlamak için `.env` dosyalarınızı yapılandırın
+1. **[Ön Koşullar](./prerequisites.md)** -- Gerekli araçları kurun (Node.js, Git, MySQL vb.)
+2. **[Proje Genel Bakışı](./project-overview.md)** -- Hangi projelerin var olduğunu ve ne işe yaradıklarını öğrenin
+3. **[Ortam Değişkenleri](./environment-variables.md)** -- Her şeyi birbirine bağlamak için `.env` dosyalarınızı yapılandırın
 
 :::info
 Her ChurchApps projesi bağımsız bir Git deposudur. Yalnızca üzerinde çalışmak istediğiniz projeleri klonlamanız yeterlidir.

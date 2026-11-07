@@ -1,5 +1,6 @@
 ---
 title: "Criando formulários"
+description: "Crie formulários personalizados no B1 Admin para inscrições em eventos, pesquisas e cartões de visitante e compartilhe-os por link, QR code ou impressão."
 ---
 
 # Criando formulários

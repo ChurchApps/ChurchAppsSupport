@@ -1,5 +1,6 @@
 ---
 title: "Shranjeni seznami"
+description: "Shranite iskanje oseb v B1 Admin kot poimenovan seznam in ga z enim klikom znova naložite. Seznami so živi in novi ujemajoči člani se pojavijo samodejno."
 ---
 
 # Shranjeni seznami

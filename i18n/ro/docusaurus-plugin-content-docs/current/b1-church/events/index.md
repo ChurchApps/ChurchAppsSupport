@@ -1,5 +1,7 @@
 ---
-title: "Evenimente"
+title: "Evenimente pe B1.church: răsfoire și înscriere"
+sidebar_label: "Evenimente"
+description: "Răsfoiește evenimentele bisericii viitoare pe B1.church, verifică starea înscrierii și înscrie-te sau adaugă evenimentele în calendarul tău."
 ---
 
 # Evenimente
@@ -43,7 +45,7 @@ Dacă un eveniment este complet, este posibil să vă puteți înscrie în **lis
 
 ## Aflați mai multe
 
-- [Înscrierea la evenimente](./registering) -- Ghid pas cu pas pentru înscrierea la un eveniment
-- [Înscrierile mele](./my-registrations) -- Vizualizați înscrierile, plătiți soldurile, editați sau anulați
-- [Solicitarea evenimentelor și a sălilor](./requesting-events) -- Solicitați un eveniment cu sălile și resursele necesare
-- [Check-in automat](../checkin/self-checkin) -- Faceți check-in atunci când ajungeți la eveniment
+- [Înscrierea la evenimente](./registering.md) -- Ghid pas cu pas pentru înscrierea la un eveniment
+- [Înscrierile mele](./my-registrations.md) -- Vizualizați înscrierile, plătiți soldurile, editați sau anulați
+- [Solicitarea evenimentelor și a sălilor](./requesting-events.md) -- Solicitați un eveniment cu sălile și resursele necesare
+- [Check-in automat](../checkin/self-checkin.md) -- Faceți check-in atunci când ajungeți la eveniment

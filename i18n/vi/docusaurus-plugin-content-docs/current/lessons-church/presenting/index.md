@@ -1,5 +1,6 @@
 ---
 title: "Trình bày"
+description: "Chiếu bài học bằng máy chiếu với Chế độ trình chiếu trong Lessons.church, chia sẻ hướng dẫn theo vai trò cho tình nguyện viên và in tài liệu trước giờ học."
 ---
 
 # Trình bày

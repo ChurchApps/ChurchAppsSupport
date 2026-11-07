@@ -1,5 +1,6 @@
 ---
 title: "Modulstruktur"
+description: "Forklarer oppbygningen av API-modulene: kontrollere, repositorier, gatewayer, tilgangskontroller og de seks Lambda-funksjonene i B1-utviklingsmiljøer."
 ---
 
 # Modulstruktur
@@ -13,8 +14,8 @@ Hver API-modul følger en konsistent intern struktur med kontrollere, repositori
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp API-et lokalt -- se [Lokalt API-oppsett](./local-setup)
-- Gå gjennom [database](./database)-arkitekturen for å forstå datatilgangslaget
+- Sett opp API-et lokalt -- se [Lokalt API-oppsett](./local-setup.md)
+- Gå gjennom [database](./database.md)-arkitekturen for å forstå datatilgangslaget
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Kommunikasjon på tvers av moduler
 
-Hver modul eier sin egen database (se [Database](./database)), og en modul spør aldri direkte mot en annen moduls tabeller. Når én modul trenger data eid av en annen -- for eksempel når doing-modulen slår opp personer fra membership -- går den gjennom den eiende modulens **gateway** i `src/shared/modules/`:
+Hver modul eier sin egen database (se [Database](./database.md)), og en modul spør aldri direkte mot en annen moduls tabeller. Når én modul trenger data eid av en annen -- for eksempel når doing-modulen slår opp personer fra membership -- går den gjennom den eiende modulens **gateway** i `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Lokalt kjører `web`-funksjonen på port 8084, og `socket`-funksjonen kjører p�
 
 ## Relaterte artikler
 
-- **[Database](./database)** -- Tilkoblingsstrenger, skjemaskript og datatilgangsmønstre
-- **[Lokalt API-oppsett](./local-setup)** -- Fullstendig trinnvis oppsettguide
-- **[ApiHelper](../shared-libraries/api-helper)** -- Det delte biblioteket som tilbyr `CustomBaseController` og autentiseringsmellomvare
+- **[Database](./database.md)** -- Tilkoblingsstrenger, skjemaskript og datatilgangsmønstre
+- **[Lokalt API-oppsett](./local-setup.md)** -- Fullstendig trinnvis oppsettguide
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Det delte biblioteket som tilbyr `CustomBaseController` og autentiseringsmellomvare

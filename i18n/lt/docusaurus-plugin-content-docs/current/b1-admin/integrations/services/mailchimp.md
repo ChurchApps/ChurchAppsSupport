@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sinchronizuokite B1 Admin asmenis ir grupės ar išsaugoto sąrašo narystes su Mailchimp auditorija kaip žymas, su sąranka, pradiniu importu ir trikčių šalinimu."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Pradinį įkėlimą atlikdami per Mailchimp importavimo įrankį išlaikote kont
 
 ## Kiti receptai (Zapier / Make)
 
-Viskas, kas viršija auditorijos sinchronizaciją — žymėti aukotojus pagal `donation.created`, atvirkštinė kryptis Mailchimp → B1 arba sinchronizacija su visiškai kita el. pašto platforma (Constant Contact, Brevo ir pan.) — vis dar pasiekiama per [Zapier](../zapier) arba [Make](../make), kurie suaktyvinami tais pačiais webhook įvykiais:
+Viskas, kas viršija auditorijos sinchronizaciją — žymėti aukotojus pagal `donation.created`, atvirkštinė kryptis Mailchimp → B1 arba sinchronizacija su visiškai kita el. pašto platforma (Constant Contact, Brevo ir pan.) — vis dar pasiekiama per [Zapier](../zapier.md) arba [Make](../make.md), kurie suaktyvinami tais pačiais webhook įvykiais:
 
 - **Žymėti aukotojus:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Dvikryptė:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Jei anksčiau asmenų ir grupių sinchronizaciją sujungėte per Zapier, išjunk
 
 - [Webhooks (kūrėjo žinynas)](/docs/developer/api/webhooks) — variklis, įvykių katalogas, pristatymo ir kartojimo taisyklės
 - [Saved Lists](/docs/b1-admin/people/lists) — taisyklėmis paremtos auditorijos, kurios natūraliai atitinka Mailchimp žymas
-- [Zapier (apžvalga)](../zapier) — receptams, išeinantiems už auditorijos sinchronizacijos ribų
+- [Zapier (apžvalga)](../zapier.md) — receptams, išeinantiems už auditorijos sinchronizacijos ribų

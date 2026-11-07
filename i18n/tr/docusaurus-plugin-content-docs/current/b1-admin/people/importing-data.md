@@ -1,5 +1,6 @@
 ---
 title: "Verileri İçe Aktarma"
+description: "Mevcut kişi, grup, katılım ve bağış kayıtlarını B1 Transfer aracıyla B1 Admin'e aktarın ya da verilerinizin yedeğini istediğiniz zaman alın."
 ---
 
 # Verileri İçe Aktarma

@@ -1,5 +1,6 @@
 ---
 title: "Paramètres de confidentialité"
+description: "Choisissez quels détails (téléphone, e-mail, adresse) les autres membres voient dans l’annuaire B1 Mobile, et consultez les modifications en attente."
 ---
 
 # Paramètres de confidentialité
@@ -13,7 +14,7 @@ L'onglet **Visibilité** sur votre écran Profil vous permet de contrôler ce qu
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 
 </div>
 
@@ -52,8 +53,8 @@ L'onglet **Compte** donne accès à vos paramètres de sécurité. Utilisez cet 
 
 | Onglet | Fonction |
 |---|---|
-| **Profil** | [Modifiez vos informations personnelles](./editing-profile) et votre photo |
-| **Foyer** | [Consultez les membres de votre famille](./household) |
+| **Profil** | [Modifiez vos informations personnelles](./editing-profile.md) et votre photo |
+| **Foyer** | [Consultez les membres de votre famille](./household.md) |
 | **Visibilité** | Contrôlez ce que les autres voient dans l'annuaire |
 | **En attente** | Consultez les modifications de profil en attente d'approbation |
 | **Compte** | Gérez les paramètres de sécurité |
@@ -62,6 +63,6 @@ Ces onglets fonctionnent ensemble pour vous donner un contrôle total sur vos in
 
 ## Articles connexes
 
-- [Modifier votre profil](./editing-profile) -- Mettez à jour vos informations personnelles
-- [Foyer](./household) -- Consultez et gérez les membres de votre famille
+- [Modifier votre profil](./editing-profile.md) -- Mettez à jour vos informations personnelles
+- [Foyer](./household.md) -- Consultez et gérez les membres de votre famille
 - [Annuaire des membres](../community/member-directory.md) -- Voyez comment votre profil apparaît aux autres

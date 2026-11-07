@@ -1,5 +1,6 @@
 ---
 title: "Conectando Provedores e Criando Playlists"
+description: "Configure provedores de conteúdo conectados no FreePlay Admin e depois crie, organize e visualize playlists para telas agendadas."
 ---
 
 # Conectando Provedores e Criando Playlists
@@ -107,6 +108,6 @@ Clique em **Apresentar** para reproduzir a playlist em tela cheia no seu navegad
 
 ## Artigos relacionados
 
-- **[Agendando a agenda](./scheduling-the-calendar)** - Coloque sua playlist na agenda de um grupo de telas
-- **[Gerenciando telas e grupos](./managing-screens)** - Defina uma playlist como loop padrão de um grupo
-- **[Provedores de conteúdo](../content-providers/)** - Provedores que você pode conectar na própria TV
+- **[Agendando a agenda](./scheduling-the-calendar.md)** - Coloque sua playlist na agenda de um grupo de telas
+- **[Gerenciando telas e grupos](./managing-screens.md)** - Defina uma playlist como loop padrão de um grupo
+- **[Provedores de conteúdo](../content-providers/index.md)** - Provedores que você pode conectar na própria TV

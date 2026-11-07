@@ -1,5 +1,6 @@
 ---
 title: "Templat Email"
+description: "Atur templat email dan pesan teks di B1 Admin dengan bidang gabungan, opsi SMS, dan pratinjau untuk komunikasi massal."
 ---
 
 # Templat Email

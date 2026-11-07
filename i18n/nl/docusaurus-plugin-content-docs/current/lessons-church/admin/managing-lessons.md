@@ -1,5 +1,6 @@
 ---
 title: "Managing Lessons"
+description: "Bouw de structuur van een les in Lessons.church: locaties, onderdelen en rolacties (Say, Do, Note of Play), plus thuiskopie voor ouders en bronnen."
 ---
 
 # Managing Lessons

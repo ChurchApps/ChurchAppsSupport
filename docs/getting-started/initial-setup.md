@@ -1,5 +1,7 @@
 ---
-title: "Initial Setup"
+title: "Initial Church Setup in B1 Admin"
+sidebar_label: "Initial Setup"
+description: "Walk through the first-time configuration of a new church in B1 Admin: church info, branding, roles, and the recommended order for setting up people, groups, attendance, and giving."
 ---
 
 # Initial Setup

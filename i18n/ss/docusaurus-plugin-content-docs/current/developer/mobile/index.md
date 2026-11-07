@@ -1,5 +1,6 @@
 ---
 title: "Ti-App Teselula"
+description: "Kubukwa kwama-app eMobile e-ChurchApps ye-Expo ne-React Native: i-B1 Mobile, i-B1 Checkin, ne-LessonsScreen, netikhombisi kulokusetfwa kwetulusi letilabelwana."
 ---
 
 # Ti-App Teselula
@@ -14,13 +15,13 @@ Ti-app teselula te-ChurchApps takhiwe nge-**React Native** ne-**Expo**, tiniketa
 
 | I-App | Injongo | I-Platform |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile) | I-app lesemcoka lebhekene nemalunga ebandla | Android, iOS |
+| [B1 Mobile](./b1-mobile.md) | I-app lesemcoka lebhekene nemalunga ebandla | Android, iOS |
 | B1 Checkin | I-app ye-kiosk yetitishi tekungena | Android, iOS |
 | LessonsScreen | I-app ye-Android TV yekubonisa tifundvo emakilasini | Android TV |
 
 ### B1 Mobile
 
-I-app lesemcoka yelilunga lebandla. Emalunga angabukela tincwadzi tebantfu, afinyelele ekupheni, ahlole kubakhona, atfole tatiso, futsi asebentisane nemphakatsi webandla labo. Bona [sicondziso sekusungula se-B1 Mobile](./b1-mobile) kutfola imininingwane.
+I-app lesemcoka yelilunga lebandla. Emalunga angabukela tincwadzi tebantfu, afinyelele ekupheni, ahlole kubakhona, atfole tatiso, futsi asebentisane nemphakatsi webandla labo. Bona [sicondziso sekusungula se-B1 Mobile](./b1-mobile.md) kutfola imininingwane.
 
 ### B1 Checkin
 
@@ -31,5 +32,5 @@ I-application ye-kiosk leyakhelwe injongo yetitishi tekungena emabandleni. Inike
 I-application ye-Android TV lebonisa kucuketfwe kwetifundvo emakilasini. Bafundzisi bangaphushela ema-slide etifundvo, ematividiyo, kanye nemisebenti kusikrini se-TV, lokwenta kube lula kwetfula tulwimi/imibhalo yekufundzisa ngesikhatsi setifundvo.
 
 :::info
-Ti-app tonkhe teselula tabelana ngachungechunga lelifanako lemathulusi lesekelwe ku-Expo futsi tilandzela emaphetheni lafanako ekusungula. Sicondziso se-[B1 Mobile](./b1-mobile) sisebenta njengesibuyeketi senchubo lejwayelekile yekusungula kuwo onkhe emaphrojekthi eselula.
+Ti-app tonkhe teselula tabelana ngachungechunga lelifanako lemathulusi lesekelwe ku-Expo futsi tilandzela emaphetheni lafanako ekusungula. Sicondziso se-[B1 Mobile](./b1-mobile.md) sisebenta njengesibuyeketi senchubo lejwayelekile yekusungula kuwo onkhe emaphrojekthi eselula.
 :::

@@ -1,5 +1,7 @@
 ---
-title: "Tjänster"
+title: "Översikt över Serving i B1 Admin"
+sidebar_label: "Tjänster"
+description: "Samordna volontärer och planera kyrkans gudstjänster i B1 Admins Serving-område, från ministerflikar och team till gudstjänstplaner, sånger och uppgifter."
 ---
 
 # Tjänster

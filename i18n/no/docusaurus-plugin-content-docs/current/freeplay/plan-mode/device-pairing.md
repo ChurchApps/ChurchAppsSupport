@@ -1,5 +1,6 @@
 ---
 title: "Pare enheten din"
+description: "Koble en FreePlay TV til en plantype i B1 Admin med en firebokstavskode som vises på skjermen, og last deretter ned planens medier for avspilling i planmodus."
 ---
 
 # Pare enheten din
@@ -13,7 +14,7 @@ For å bruke Planmodus parer du TV-en med en plantype i B1 Admin. FreePlay viser
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer og start FreePlay. Se [Kom i gang](../getting-started/)
+- Installer og start FreePlay. Se [Kom i gang](../getting-started/index.md)
 - Ha tilgang til **B1 Admin** på en datamaskin eller telefon for å fullføre paringen
 
 </div>
@@ -25,7 +26,7 @@ For å bruke Planmodus parer du TV-en med en plantype i B1 Admin. FreePlay viser
 3. FreePlay viser en firebokstavs paringskode med store bokstaver, ved siden av en QR-kode.
 4. Under koden viser en pulserende **Venter på bekreftelse**-indikator at FreePlay venter på at du skal fullføre paringen.
 
-Den samme koden fungerer for [Planlagt modus](../scheduled-mode/) i FreePlay Admin og for Planmodus i B1 Admin. QR-koden og adressen **freeplay.church/pair** på skjermen åpner FreePlay Admin. For Planmodus kan du se bort fra dem og skrive inn koden i B1 Admin som beskrevet nedenfor.
+Den samme koden fungerer for [Planlagt modus](../scheduled-mode/index.md) i FreePlay Admin og for Planmodus i B1 Admin. QR-koden og adressen **freeplay.church/pair** på skjermen åpner FreePlay Admin. For Planmodus kan du se bort fra dem og skrive inn koden i B1 Admin som beskrevet nedenfor.
 
 ## Skrive inn koden i B1 Admin
 
@@ -61,5 +62,5 @@ Paringskoder utløper etter 15 minutter. FreePlay viser en ny kode automatisk n�
 ## Relaterte artikler
 
 - **[Oversikt over Planmodus](./index.md)** - Hvordan Planmodus skiller seg fra Planlagt modus
-- **[Pare en skjerm](../scheduled-mode/pairing-a-screen)** - Par den samme TV-en til en kalender i FreePlay Admin i stedet
-- **[Spille av innhold](../content-providers/playing-content)** - Kontroller for avspilling
+- **[Pare en skjerm](../scheduled-mode/pairing-a-screen.md)** - Par den samme TV-en til en kalender i FreePlay Admin i stedet
+- **[Spille av innhold](../content-providers/playing-content.md)** - Kontroller for avspilling

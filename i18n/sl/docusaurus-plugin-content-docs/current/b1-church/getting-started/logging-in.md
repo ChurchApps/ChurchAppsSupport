@@ -1,5 +1,7 @@
 ---
-title: "Prijava"
+title: "Prijava v B1.church in portal članov"
+sidebar_label: "Prijava"
+description: "Prijavite se v portal članov B1.church, uporabite dvostopenjske kode ali enotno prijavo, ponastavite pozabljeno geslo in se odjavite iz menija računa."
 ---
 
 # Prijava
@@ -17,7 +19,7 @@ Prijava v B1.church vam omogoča dostop do portala za člane, kjer lahko vidite,
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Potrebujete račun ChurchApps. Za ustvarjanje glejte [Začetek uporabe](../getting-started/).
+- Potrebujete račun ChurchApps. Za ustvarjanje glejte [Začetek uporabe](./index.md).
 - Potrebujete URL naslov vaše cerkve B1.church (na primer `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Ostanete prijavljeni v istem brskalniku ali nameščeni aplikaciji, dokler se ne
 
 ## Dostop do portala za člane
 
-Ko ste prijavljeni, do portala za člane dostopate tako, da kliknete svoje **ime** v zgornjem desnem kotu strani in v meniju izberete **Portal za člane**. Portal za člane je mesto, kjer so vsa vaša osebna orodja za cerkev, vključno z vašo [nadzorno ploščo Domov](./navigating.md), [stranjo Jaz](./me-page.md), [skupinami](../groups/), [darovanjem](../giving/) in še več.
+Ko ste prijavljeni, do portala za člane dostopate tako, da kliknete svoje **ime** v zgornjem desnem kotu strani in v meniju izberete **Portal za člane**. Portal za člane je mesto, kjer so vsa vaša osebna orodja za cerkev, vključno z vašo [nadzorno ploščo Domov](./navigating.md), [stranjo Jaz](./me-page.md), [skupinami](../groups/index.md), [darovanjem](../giving/index.md) in še več.
 
 ## Vaš uporabniški meni
 

@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "Локальний запуск редактора уроків LessonsApp (Next.js, Node.js 22+) з локальним LessonsApi та розгортання в S3/CloudFront."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp — це програма для керування уроками н
 <div class="prereqs">
 <h4>Перш ніж почати</h4>
 
-- Встановіть **Node.js 22+** та **Git** -- див. [Передумови](../setup/prerequisites)
-- Налаштуйте цільовий API (локальний LessonsApi) -- див. [Змінні середовища](../setup/environment-variables)
+- Встановіть **Node.js 22+** та **Git** -- див. [Передумови](../setup/prerequisites.md)
+- Налаштуйте цільовий API (локальний LessonsApi) -- див. [Змінні середовища](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ LessonsApp взаємодіє з бекендом **LessonsApi**, який є о
 3. Запускається інвалідація CloudFront, щоб відобразити нову версію
 
 :::tip
-Докладні інструкції щодо розгортання дивіться в посібнику [Розгортання веб-застосунків](../deployment/web-apps).
+Докладні інструкції щодо розгортання дивіться в посібнику [Розгортання веб-застосунків](../deployment/web-apps.md).
 :::

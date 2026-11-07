@@ -1,5 +1,6 @@
 ---
 title: "Déploiement mobile"
+description: "Pas à pas pour produire les versions Android et iOS de B1 Mobile avec Expo EAS, les soumettre aux boutiques d’applications et publier les mises à jour OTA."
 ---
 
 # Déploiement mobile
@@ -13,7 +14,7 @@ Les applications mobiles ChurchApps sont construites et déployées à l'aide d'
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurer l'application mobile localement -- voir [B1 Mobile](../mobile/b1-mobile)
+- Configurer l'application mobile localement -- voir [B1 Mobile](../mobile/b1-mobile.md)
 - Installer et configurer [EAS CLI](https://docs.expo.dev/eas/)
 - Avoir accès à Google Play Console (Android) et/ou Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Oublier de mettre à jour les numéros de version dans tous les fichiers causera
 
 ## Articles connexes
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Guide de configuration local et de développement
-- **[Déploiement de l'API](./apis)** -- Déployer les APIs backend
-- **[Déploiement des applications web](./web-apps)** -- Déployer les applications web frontend
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Guide de configuration local et de développement
+- **[Déploiement de l'API](./apis.md)** -- Déployer les APIs backend
+- **[Déploiement des applications web](./web-apps.md)** -- Déployer les applications web frontend

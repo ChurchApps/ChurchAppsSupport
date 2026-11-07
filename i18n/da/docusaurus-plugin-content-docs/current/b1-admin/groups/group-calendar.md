@@ -1,5 +1,6 @@
 ---
 title: "Gruppekalender"
+description: "Planlæg møder og gentagne begivenheder i en gruppekalender i B1 Admin og B1.church med masseplanlægning, RSVP og kalenderabonnementer."
 ---
 
 # Gruppekalender

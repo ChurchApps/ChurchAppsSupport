@@ -1,5 +1,6 @@
 ---
 title: "Mengajukan Permintaan untuk Bergabung dengan Grup"
+description: "Ajukan bergabung ke grup yang butuh persetujuan di B1.church, tambahkan catatan opsional untuk pemimpin, lalu pantau atau batalkan permintaan yang tertunda."
 ---
 
 # Mengajukan Permintaan untuk Bergabung dengan Grup

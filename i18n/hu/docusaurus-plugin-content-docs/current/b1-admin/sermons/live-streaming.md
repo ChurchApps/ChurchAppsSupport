@@ -1,5 +1,7 @@
 ---
-title: "Canlı közvetítés"
+title: "Élő közvetítés időpontjai és beállítása a B1 Adminban"
+sidebar_label: "Canlı közvetítés"
+description: "Heti vagy egyszeri élő közvetítések ütemezése, chat- és korai videóidőzítés, YouTube-csatorna összekötése és beágyazási hibák elhárítása a B1 Adminban."
 ---
 
 # Canlı közvetítés
@@ -19,7 +21,7 @@ A Live Stream Times oldal lehetővé teszi, hogy beállítsa gyülekezete közve
 
 - Szüksége lesz a **contentApi.streamingServices.edit** jogosultságra. Ha nincs hozzáférése, tekintse meg a [Szerepkörök és jogosultságok](../settings/roles-permissions.md) oldalt.
 - Készüljön fel a YouTube-csatornája azonosítójával, ha automatikus élő közvetítést szeretne használni
-- Adjon hozzá legalább egy [igehirdetést](managing-sermons) vagy állandó élő URL-t a közvetítés forrásaként
+- Adjon hozzá legalább egy [igehirdetést](./managing-sermons.md) vagy állandó élő URL-t a közvetítés forrásaként
 
 </div>
 
@@ -80,13 +82,13 @@ A YouTube-csatornája azonosítójának megkereséséhez lépjen a YouTube-csato
 
 ## Színek és logó testreszabása
 
-Az élő közvetítési oldal a webhely [Megjelenés](../website/appearance) beállításait használja:
+Az élő közvetítési oldal a webhely [Megjelenés](../website/appearance.md) beállításait használja:
 
 - A fejlécben a **világos kiemelőszín** sötét szöveggel jelenik meg.
 - Az oldalsávban a **sötét kiemelőszín** világos szöveggel jelenik meg.
 - A **Világos háttérhez használt logó** megjelenik a közvetítési oldalon. Átlátszó hátterű, 4:1 képarányú képet használjon.
 
-Ezek megváltoztatásához lépjen a **Webhely**, majd a **Megjelenés** menübe, és frissítse a [Színpaletta](../website/appearance#color-palette) és a [Logó](../website/appearance#logo-and-branding) beállításait.
+Ezek megváltoztatásához lépjen a **Webhely**, majd a **Megjelenés** menübe, és frissítse a [Színpaletta](../website/appearance.md#color-palette) és a [Logó](../website/appearance.md#logo-and-branding) beállításait.
 
 ## Közvetítő munkatársak hozzáadása
 
@@ -133,5 +135,5 @@ A YouTube automatikus csatornás élő közvetítésének beágyazását blokkol
 
 ## Következő lépések
 
-- [Igehirdetések kezelése](managing-sermons) – Igehirdetések hozzáadása a könyvtárához
-- [Lejátszási listák](playlists) – Igehirdetések rendezése sorozatokba
+- [Igehirdetések kezelése](./managing-sermons.md) – Igehirdetések hozzáadása a könyvtárához
+- [Lejátszási listák](./playlists.md) – Igehirdetések rendezése sorozatokba

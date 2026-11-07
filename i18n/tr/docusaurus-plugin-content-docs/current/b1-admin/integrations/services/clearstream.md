@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Clearstream SMS'i Zapier ile B1 Admin'e bağlayın: yeni bağışlarda ya da form gönderimlerinde mesaj gönderin ve gelen yanıtları kişi olarak geri alın."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Zap'i açın. B1, etkinleştirildiğinde bağış webhook'unu kaydeder; **Ayarla
 
 ## Ayrıca Bakınız
 
-- [Text In Church](./text-in-church) — benzer bağlantı yapısına sahip alternatif SMS platformu
-- [Mobile Message](./mobile-message) — ABD dışındaki kiliseler için
-- [Zapier (genel bakış)](../zapier) — her Zapier tarifinin B1 tarafı
+- [Text In Church](./text-in-church.md) — benzer bağlantı yapısına sahip alternatif SMS platformu
+- [Mobile Message](./mobile-message.md) — ABD dışındaki kiliseler için
+- [Zapier (genel bakış)](../zapier.md) — her Zapier tarifinin B1 tarafı
 - [Clearstream API dokümantasyonu](https://api-docs.clearstream.io/) — Zapier uygulamasının ötesindeki özel entegrasyonlar için

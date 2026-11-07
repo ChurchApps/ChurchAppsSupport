@@ -1,5 +1,6 @@
 ---
 title: "Pengumuman"
+description: "Putar folder slide berulang di FreePlay TV untuk pengumuman lobi atau sebelum kelas: pilih folder penyedia, jaga sinkronisasi, dan matikan saat selesai."
 ---
 
 # Pengumuman
@@ -13,7 +14,7 @@ FreePlay dapat memutar folder slide pengumuman secara berulang di TV Anda, misal
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Hubungkan ke penyedia konten](./connecting-providers) yang menyimpan slide pengumuman Anda, seperti Dropbox atau OneDrive
+- [Hubungkan ke penyedia konten](./connecting-providers.md) yang menyimpan slide pengumuman Anda, seperti Dropbox atau OneDrive
 - Kumpulkan gambar atau video yang ingin Anda putar berulang dalam satu folder di penyedia tersebut
 
 </div>
@@ -37,7 +38,7 @@ Setelah slide diunduh, item **Pengumuman** akan muncul di dekat bagian atas bila
 - Setelah slide terakhir, pemutaran berulang dimulai lagi dari slide pertama
 - Jika folder hanya berisi satu video, video tersebut akan diulang di tempatnya
 
-Pemutaran berulang menggunakan file yang tersimpan di perangkat, sehingga tetap berjalan tanpa koneksi internet. Anda dapat menggunakan kontrol remote yang sama seperti konten lainnya -- lihat [Memutar Konten](./playing-content).
+Pemutaran berulang menggunakan file yang tersimpan di perangkat, sehingga tetap berjalan tanpa koneksi internet. Anda dapat menggunakan kontrol remote yang sama seperti konten lainnya -- lihat [Memutar Konten](./playing-content.md).
 
 ## Memperbarui Slide
 
@@ -61,6 +62,6 @@ Memutuskan koneksi penyedia juga akan mematikan pengumuman yang berasal darinya.
 
 ## Artikel Terkait
 
-- **[Menghubungkan ke Penyedia](./connecting-providers)** - Hubungkan penyedia yang menyimpan slide Anda
-- **[Menjelajahi dan Mengunduh Konten](./browsing-content)** - Jelajahi folder penyedia dan putar konten sesuai permintaan
-- **[Memutar Konten](./playing-content)** - Kontrol pemutar untuk remote TV Anda
+- **[Menghubungkan ke Penyedia](./connecting-providers.md)** - Hubungkan penyedia yang menyimpan slide Anda
+- **[Menjelajahi dan Mengunduh Konten](./browsing-content.md)** - Jelajahi folder penyedia dan putar konten sesuai permintaan
+- **[Memutar Konten](./playing-content.md)** - Kontrol pemutar untuk remote TV Anda

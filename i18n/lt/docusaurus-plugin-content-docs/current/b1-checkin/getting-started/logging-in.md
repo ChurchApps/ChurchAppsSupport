@@ -1,5 +1,7 @@
 ---
-title: "Prisijungimas"
+title: "Prisijungimas prie B1 Church Checkin"
+sidebar_label: "Prisijungimas"
+description: "Prisijunkite prie B1 Church Checkin, pasirinkite bažnyčią ir sužinokite apie automatinį prisijungimą, administravimo nustatymus ir atsijungimą."
 ---
 
 # Prisijungimas
@@ -63,7 +65,7 @@ Administratoriaus nustatymai tyčia paslėpti, kad bažnyčios nariai, naudojant
 2. Jei nustatytas kiosko PIN kodas, įveskite jį, kai bus paprašyta.
 3. Atsidarys **Administratoriaus nustatymų** ekranas su tokiomis parinktimis:
    - **Change Service** (Keisti paslaugą) — pakeisti pasirinktą paslaugos laiką
-   - **Change Printer** (Keisti spausdintuvą) — atidaryti [spausdintuvo nustatymus](./printer-setup), kad rastumėte ir pasirinktumėte spausdintuvą
+   - **Change Printer** (Keisti spausdintuvą) — atidaryti [spausdintuvo nustatymus](./printer-setup.md), kad rastumėte ir pasirinktumėte spausdintuvą
    - **Set/Change PIN** (Nustatyti / keisti PIN) — nustatyti arba atnaujinti kiosko PIN kodą, kuris saugo administratoriaus prieigą
    - **Logout** (Atsijungti) — atsijungti ir grįžti į prisijungimo ekraną
 
@@ -73,4 +75,4 @@ Atsijungus išvalomi visi išsaugoti prisijungimo duomenys ir bažnyčios pasiri
 
 ## Kiti žingsniai
 
-Prisijungę galite [nustatyti spausdintuvą](./printer-setup) arba iš karto pereiti prie [registravimo eigos](../check-in/).
+Prisijungę galite [nustatyti spausdintuvą](./printer-setup.md) arba iš karto pereiti prie [registravimo eigos](../check-in/index.md).

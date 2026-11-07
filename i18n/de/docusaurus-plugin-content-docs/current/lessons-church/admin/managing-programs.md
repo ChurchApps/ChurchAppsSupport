@@ -1,5 +1,6 @@
 ---
 title: "Programme verwalten"
+description: "Lehrplanprogramme in Lessons.church anlegen und bearbeiten: Slugs, Vorschaubilder, Studien in Kategorien und Programm-Ressourcen."
 ---
 
 # Programme verwalten

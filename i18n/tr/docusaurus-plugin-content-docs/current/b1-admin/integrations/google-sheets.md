@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "B1 Export eklentisiyle B1 Admin'i Google Sheets'e bağlayın; Kişiler, Bağışlar, Gruplar ve Katılım verilerini istek üzerine tablo sekmelerine aktarın."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Dışa aktarma, Google hesabınız altında arka planda çalışır. API anahtar
 - **"B1 rejected the API key (401)"**: Anahtar iptal edilmiş veya hatalıdır. Yeni bir anahtar oluşturup yeniden yapıştırın.
 - **"This API key lacks permission for /giving/donations (403)"**: Anahtarda `donations:read` yetkisi yoktur. B1Admin'de anahtarın yetkilerini güncelleyin.
 - **Çalıştırmadan sonra sayfa yenilenmiyor**: Doğru sekme adına (`B1 People` vb.) baktığınızdan emin olun. Sekme yoksa dışa aktarma sekmeyi oluşturur.
-- **"Quota exceeded"**: Apps Script, `UrlFetchApp` için kullanıcı başına günlük kotalar uygular (genellikle günde binlerce çağrı). Çok sayıda kaydı olan büyük bir kilise, dışa aktarmaları birden fazla güne bölmek veya yüksek hacimli senkronizasyon için [Make](./make) ya da özel bir entegrasyon kullanmak zorunda kalabilir.
+- **"Quota exceeded"**: Apps Script, `UrlFetchApp` için kullanıcı başına günlük kotalar uygular (genellikle günde binlerce çağrı). Çok sayıda kaydı olan büyük bir kilise, dışa aktarmaları birden fazla güne bölmek veya yüksek hacimli senkronizasyon için [Make](./make.md) ya da özel bir entegrasyon kullanmak zorunda kalabilir.
 
 ## Eklentiyi Özelleştirme
 
@@ -108,6 +109,6 @@ Eklenti açık kaynaklıdır. Apps Script projesi `B1Integrations/GoogleSheetsAd
 
 ## Ayrıca Bakınız
 
-- [Zapier](./zapier): İsteğe bağlı dışa aktarma yerine gerçek zamanlı senkronizasyon için
-- [Make](./make): Daha karmaşık dönüşümlerle senkronizasyon için
+- [Zapier](./zapier.md): İsteğe bağlı dışa aktarma yerine gerçek zamanlı senkronizasyon için
+- [Make](./make.md): Daha karmaşık dönüşümlerle senkronizasyon için
 - [API Anahtarları (geliştirici başvurusu)](/docs/developer/api/api-keys)

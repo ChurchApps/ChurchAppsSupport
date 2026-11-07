@@ -1,5 +1,6 @@
 ---
 title: "Guía: Configurar donaciones en línea"
+description: "Configura donaciones en línea en B1 Admin creando fondos, conectando Stripe y añadiendo una página de donación a tu web de B1.church para los miembros."
 ---
 
 # Configurar donaciones en línea
@@ -70,7 +71,7 @@ Usa el modo de prueba de Stripe primero si quieres verificar sin cargos reales, 
 Difunde la noticia para que los miembros sepan que pueden dar en línea.
 
 1. Comparte la URL de donaciones a través de tu sitio web, boletines por correo electrónico, hojas informativas y redes sociales
-2. Los miembros también pueden dar a través de la [aplicación B1 Mobile](../../b1-mobile/giving/) — la función de donaciones está integrada
+2. Los miembros también pueden dar a través de la [aplicación B1 Mobile](../../b1-mobile/giving/index.md) — la función de donaciones está integrada
 
 :::info
 Los miembros que inician sesión pueden guardar métodos de pago, configurar donaciones recurrentes y ver su historial de donaciones. Las donaciones anónimas también funcionan — no se requiere inicio de sesión.

@@ -1,5 +1,6 @@
 ---
 title: "İçerik Uç Noktaları"
+description: "ChurchApps İçerik API'si uç nokta başvurusu: web sayfaları, blog yazıları, yönlendirmeler, vaazlar, etkinlikler, dosyalar, İncil sorguları ve ilahiler."
 ---
 
 # İçerik Uç Noktaları
@@ -133,7 +134,7 @@ Temel yol: `/content/pageHistory`
 
 Temel yol: `/content/posts`
 
-Blog yazıları bağımsız satırlardır: `title`, `slug` (kilise başına benzersiz), `excerpt`, `content` (markdown gövdesi), `authorId`, `photoUrl`, `publishDate`, `category` ve `tags`. Bir yazı, `publishDate` ayarlandığında ve geçmiş bir tarihte olduğunda yayımlanmış sayılır. Okuma uç noktaları her yazıyı, `authorId` değerinden çözümlenen `authorName` ile zenginleştirir. Bkz. [Web Sitesi Oluşturucu Mimarisi](../../architecture/website-builder#blog).
+Blog yazıları bağımsız satırlardır: `title`, `slug` (kilise başına benzersiz), `excerpt`, `content` (markdown gövdesi), `authorId`, `photoUrl`, `publishDate`, `category` ve `tags`. Bir yazı, `publishDate` ayarlandığında ve geçmiş bir tarihte olduğunda yayımlanmış sayılır. Okuma uç noktaları her yazıyı, `authorId` değerinden çözümlenen `authorName` ile zenginleştirir. Bkz. [Web Sitesi Oluşturucu Mimarisi](../../architecture/website-builder.md#blog).
 
 | Yöntem | Yol | Yetkilendirme | İzin | Açıklama |
 |--------|------|------|------|-------------|
@@ -458,8 +459,8 @@ Temel yol: `/content/support`
 
 ## İlgili Sayfalar
 
-- [Web Sitesi Oluşturucu Mimarisi](../../architecture/website-builder) -- Sayfaların, bölümlerin, öğelerin, yazıların ve yönlendirmelerin uygulamalar arasında nasıl bir araya geldiği
-- [Üyelik Uç Noktaları](./membership) -- Kişiler, kiliseler, gruplar, roller, izinler
-- [Yoklama Uç Noktaları](./attendance) -- Hizmet ve ziyaret takibi
-- [Kimlik Doğrulama ve İzinler](./authentication) -- Giriş akışı, JWT, izin modeli
-- [Modül Yapısı](../module-structure) -- Kod organizasyon kalıpları
+- [Web Sitesi Oluşturucu Mimarisi](../../architecture/website-builder.md) -- Sayfaların, bölümlerin, öğelerin, yazıların ve yönlendirmelerin uygulamalar arasında nasıl bir araya geldiği
+- [Üyelik Uç Noktaları](./membership.md) -- Kişiler, kiliseler, gruplar, roller, izinler
+- [Yoklama Uç Noktaları](./attendance.md) -- Hizmet ve ziyaret takibi
+- [Kimlik Doğrulama ve İzinler](./authentication.md) -- Giriş akışı, JWT, izin modeli
+- [Modül Yapısı](../module-structure.md) -- Kod organizasyon kalıpları

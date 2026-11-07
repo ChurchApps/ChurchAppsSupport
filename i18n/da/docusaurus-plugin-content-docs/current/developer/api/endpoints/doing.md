@@ -1,5 +1,6 @@
 ---
 title: "Gørende slutpunkter"
+description: "Endpoint-reference for Doing-API'et bag tjenesteplaner, frivillige tildelinger, opgaver og automatiseringer i B1 Admin, med stier, autorisation og tilladelser."
 ---
 
 # Gørende slutpunkter
@@ -31,6 +32,6 @@ Basesti: `/doing/plans`
 
 ## Relaterede sider
 
-- [Medlemskab slutpunkter](./membership) — Mennesker, grupper, roller og tilladelser
-- [Tilstedeværelse slutpunkter](./attendance) — Service og besøg sporing
-- [Modul struktur](../module-structure) — Kode organiserings mønstre
+- [Medlemskab slutpunkter](./membership.md) — Mennesker, grupper, roller og tilladelser
+- [Tilstedeværelse slutpunkter](./attendance.md) — Service og besøg sporing
+- [Modul struktur](../module-structure.md) — Kode organiserings mønstre

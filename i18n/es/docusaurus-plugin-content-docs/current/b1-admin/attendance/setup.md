@@ -1,5 +1,6 @@
 ---
 title: "Configuración de asistencia"
+description: "Configura campus, servicios, horarios y grupos en B1 Admin para que el seguimiento de asistencia y el registro funcionen en toda tu iglesia."
 ---
 
 # Configuración de asistencia

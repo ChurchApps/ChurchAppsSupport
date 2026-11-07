@@ -1,5 +1,6 @@
 ---
 title: "Report sulle presenze"
+description: "Scopri i tre report sulle presenze di B1 Admin (andamento, presenze per gruppo e presenze giornaliere per gruppo) e come generarli ed esportarli."
 ---
 
 # Report sulle presenze

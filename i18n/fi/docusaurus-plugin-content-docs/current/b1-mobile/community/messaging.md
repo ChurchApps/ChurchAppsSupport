@@ -1,5 +1,6 @@
 ---
 title: "Viestintä"
+description: "Aloita, lue, muokkaa ja poista yksityisiä kahdenkeskisiä keskusteluja seurakuntalaisten kanssa B1 Mobilessa sekä löydä ihmisiä jäsenhakemiston kautta."
 ---
 
 # Viestintä
@@ -13,7 +14,7 @@ B1 Mobile sisältää yksityisviestit, joiden avulla voit keskustella kahden kes
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile sisältää yksityisviestit, joiden avulla voit keskustella kahden kes
 ## Uuden keskustelun aloittaminen
 
 1. Napauta viestinäkymästä vaihtoehtoa, jolla aloitat uuden keskustelun.
-2. Etsi haluamasi jäsen hakukentän avulla. Voit löytää jäseniä myös [jäsenhakemiston](./member-directory) kautta.
+2. Etsi haluamasi jäsen hakukentän avulla. Voit löytää jäseniä myös [jäsenhakemiston](./member-directory.md) kautta.
 3. Valitse jäsen hakutuloksista.
 4. Kirjoita viestisi ja napauta **Lähetä**.
 
@@ -52,11 +53,11 @@ Käytä viestintää vapaaehtoistoimijoiden kanssa yhteydenpitoon, kun seuraat k
 :::
 
 :::info
-Ota [push-ilmoitukset](./notifications) käyttöön, niin saat hälytyksen, kun joku lähettää sinulle uuden viestin, vaikka sovellus ei olisi auki.
+Ota [push-ilmoitukset](./notifications.md) käyttöön, niin saat hälytyksen, kun joku lähettää sinulle uuden viestin, vaikka sovellus ei olisi auki.
 :::
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Jäsenhakemisto](./member-directory) -- Etsi jäseniä, joille voit lähettää viestin
-- [Ilmoitukset](./notifications) -- Saa tieto uusista viesteistä
-- [Ryhmät](../groups/) -- Osallistu ryhmäkeskusteluihin
+- [Jäsenhakemisto](./member-directory.md) -- Etsi jäseniä, joille voit lähettää viestin
+- [Ilmoitukset](./notifications.md) -- Saa tieto uusista viesteistä
+- [Ryhmät](../groups/index.md) -- Osallistu ryhmäkeskusteluihin

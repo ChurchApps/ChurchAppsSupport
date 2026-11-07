@@ -1,5 +1,6 @@
 ---
 title: "Internetinių aukų nustatymas"
+description: "Prijunkite Stripe, PayPal, Kingdom Funding ar Paystack prie B1 Admin, kad nariai galėtų aukoti internetu per B1.church svetainę, o aukos būtų sinchronizuojamos."
 ---
 
 # Internetinių aukų nustatymas

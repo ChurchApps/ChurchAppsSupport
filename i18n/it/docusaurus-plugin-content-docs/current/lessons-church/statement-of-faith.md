@@ -1,5 +1,6 @@
 ---
 title: Dichiarazione di fede
+description: "Ciò che ChurchApps crede su Dio, Gesù, Spirito Santo, Scrittura, salvezza e chiesa: lo standard per la revisione dei curricula di Lessons.church."
 ---
 
 # Dichiarazione di fede

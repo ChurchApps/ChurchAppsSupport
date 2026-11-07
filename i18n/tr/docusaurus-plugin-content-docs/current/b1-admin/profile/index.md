@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "B1 Admin'de Profil Ayarları ve Cihazlar"
+sidebar_label: "Profil"
+description: "B1 Admin profilinizde adınızı, e-postanızı, şifrenizi, iki faktörlü oturum açmayı, temayı ve bağlı cihazları güncelleyin; üye profil değişikliklerini onaylayın."
 ---
 
 # Profil

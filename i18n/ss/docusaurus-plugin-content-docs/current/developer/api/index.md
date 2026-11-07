@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Chaza kutsi i-ChurchApps API yakhiwe ngemodyuli, ine-ema-database lasitfupha, stack, tiphothi, nemisebenti ye-Lambda, netixhumanisi temanjalo kubathuthukisi."
 ---
 
 # API
@@ -52,8 +53,8 @@ Nawudeployiwe ku-AWS, i-API isebenta njengema-function lasi-6 e-Lambda:
 
 I-API incike kumaphakheji lamabili la-ChurchApps lahlanganyelwako:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Emathulusi lasisekelo (DateHelper, ApiHelper, njll.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Emathulusi e-Express server lafaka kutivakalisa, ema-helper edatabase, kanye nekuhlanganiswa ne-AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Emathulusi lasisekelo (DateHelper, ApiHelper, njll.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Emathulusi e-Express server lafaka kutivakalisa, ema-helper edatabase, kanye nekuhlanganiswa ne-AWS
 
 :::info
 I-API isebentisa ema-ES module (`"type": "module"` ku-`package.json`). Cinisekisa kutsi kungeniswa kwakho kusebentisa i-syntax ye-ES module.
@@ -61,11 +62,11 @@ I-API isebentisa ema-ES module (`"type": "module"` ku-`package.json`). Cinisekis
 
 ## Kulesigaba
 
-- **[Local Setup](./local-setup)** -- Klona, hlela, futsi usebentise i-API endzaweni yakho
-- **[Database](./database)** -- Umumo we-database-nga-module ngayinye, ema-script e-schema, kanye netindlela tekufinyelela idatha
-- **[Module Structure](./module-structure)** -- Ema-controller, ema-repository, ema-model, kanye nekutivakalisa
-- **[API Keys](./api-keys)** -- Ema-token ekufinyelela lomuntfu kuma-script nema-connector
-- **[Connected Apps (OAuth)](./connected-apps)** -- Inchubo ye-OAuth ye-multi-tenant kuma-app etitsatfu
-- **[Webhooks](./webhooks)** -- Tfumela tatiso temicimbi kuletinye tinsita
-- **[MCP Server](./mcp)** -- I-endpoint ye-Model Context Protocol lekhipha i-API kubasiti be-AI
-- **[Endpoint Reference](./endpoints/)** -- Emibhalo lephelele ye-REST API kuwo wonkhe ema-module
+- **[Local Setup](./local-setup.md)** -- Klona, hlela, futsi usebentise i-API endzaweni yakho
+- **[Database](./database.md)** -- Umumo we-database-nga-module ngayinye, ema-script e-schema, kanye netindlela tekufinyelela idatha
+- **[Module Structure](./module-structure.md)** -- Ema-controller, ema-repository, ema-model, kanye nekutivakalisa
+- **[API Keys](./api-keys.md)** -- Ema-token ekufinyelela lomuntfu kuma-script nema-connector
+- **[Connected Apps (OAuth)](./connected-apps.md)** -- Inchubo ye-OAuth ye-multi-tenant kuma-app etitsatfu
+- **[Webhooks](./webhooks.md)** -- Tfumela tatiso temicimbi kuletinye tinsita
+- **[MCP Server](./mcp.md)** -- I-endpoint ye-Model Context Protocol lekhipha i-API kubasiti be-AI
+- **[Endpoint Reference](./endpoints/index.md)** -- Emibhalo lephelele ye-REST API kuwo wonkhe ema-module

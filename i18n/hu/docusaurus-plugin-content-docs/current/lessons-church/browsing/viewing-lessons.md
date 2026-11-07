@@ -1,5 +1,6 @@
 ---
 title: "Leckék megtekintése"
+description: "Lecke megnyitása a Lessons.churchen: szakaszok és szerepkör-műveletek, letöltések megtalálása, korcsoportos helyszínek váltása óra előtt."
 ---
 
 # Leckék megtekintése

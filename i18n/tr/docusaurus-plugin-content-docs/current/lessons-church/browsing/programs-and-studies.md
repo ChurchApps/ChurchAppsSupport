@@ -1,5 +1,6 @@
 ---
 title: "Programlar ve Çalışmalar"
+description: "Lessons.church'te programların, çalışmaların, derslerin ve mekânların nasıl birbirine bağlandığını öğrenin; doğru müfredatı bulun ve ilgili dersler arasında geçiş yapın."
 ---
 
 # Programlar ve Çalışmalar

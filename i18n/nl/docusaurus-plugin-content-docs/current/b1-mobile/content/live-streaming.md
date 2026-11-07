@@ -1,5 +1,7 @@
 ---
-title: "Live streamen"
+title: "Livestreams bekijken in de B1 Mobile-app"
+sidebar_label: "Live streamen"
+description: "Kijk mee met de live-uitzending van je kerk in de B1 Mobile-app via het zijmenu of het aftelscherm bij Preken, en zie wanneer diensten beginnen."
 ---
 
 # Live streamen
@@ -13,14 +15,14 @@ B1 Mobile stelt u in staat om de live stream van uw kerk rechtstreeks van uw tel
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld u aan](../getting-started/logging-in) op uw account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld u aan](../getting-started/logging-in.md) op uw account
 - Uw kerk moet een streamingschema hebben geconfigureerd
 
 </div>
 
 ## Een live stream bekijken
 
-1. Open het scherm **Stream** uit het draaiermenu, of tik op de aftelling op het scherm [Preken](./sermons) wanneer een live stream op het punt staat te beginnen.
+1. Open het scherm **Stream** uit het draaiermenu, of tik op de aftelling op het scherm [Preken](./sermons.md) wanneer een live stream op het punt staat te beginnen.
 2. Als een dienst momenteel live is, laadt de videospeler automatisch en begint de uitzending af te spelen.
 3. Bekijk de stream rechtstreeks in de app.
 
@@ -31,7 +33,7 @@ Wanneer er momenteel geen live stream actief is, kan het scherm offlineinhoud of
 Er zijn twee manieren om de live stream te openen:
 
 - **Draaiermenu** -- Open het draaiermenu en tik op **Stream** om rechtstreeks naar het live streamscherm te gaan.
-- **Scherm Preken** -- Wanneer een live stream binnen 24 uur is gepland, verschijnt een aftelling op het scherm [Preken](./sermons). Zodra de uitzending begint, kunt u daar vanuit navigeren naar de stream.
+- **Scherm Preken** -- Wanneer een live stream binnen 24 uur is gepland, verschijnt een aftelling op het scherm [Preken](./sermons.md). Zodra de uitzending begint, kunt u daar vanuit navigeren naar de stream.
 
 ## Voor en na de dienst
 
@@ -46,5 +48,5 @@ Als het streamscherm een aftelling of offlinebericht geeft, is de volgende gepla
 Het live streamscherm is beschikbaar wanneer uw kerk een streamingschema heeft geconfigureerd. Als u geen optie **Stream** in het draaiermenu van uw app ziet, heeft uw kerk mogelijk geen live streaming ingesteld. Neem contact op met uw kerkbeheerder voor details.
 
 :::tip
-Controleer het scherm [Preken](./sermons) voor een aftellingstimer die aangeeft wanneer de volgende live uitzending begint.
+Controleer het scherm [Preken](./sermons.md) voor een aftellingstimer die aangeeft wanneer de volgende live uitzending begint.
 :::

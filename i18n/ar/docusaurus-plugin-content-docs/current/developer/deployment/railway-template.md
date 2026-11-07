@@ -1,5 +1,6 @@
 ---
 title: "الاستضافة الذاتية على Railway"
+description: "انشر نسخة ChurchApps خاصة على Railway في نحو 15 دقيقة، ثم اضبط البريد الإلكتروني والنطاقات المخصصة وتوجيه الكنائس المتعددة والعطاء وتخزين الملفات لـ B1 Admin وB1App."
 ---
 
 # الاستضافة الذاتية على Railway
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | دعم خطب Vimeo |
 | `API_BIBLE_KEY` | البحث عن آيات الكتاب المقدس في الدروس والمحتوى |
 | `YOUVERSION_API_KEY` | تكامل YouVersion للكتاب المقدس |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | إشعارات الدفع في المتصفح ([أنشئ زوج مفاتيح VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | إشعارات الدفع في المتصفح ([أنشئ زوج مفاتيح VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | مزامنة اختيارية مع نظام إدارة العلاقات (CRM) للتسجيلات الجديدة |
 
 ## التحديث
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## مقالات ذات صلة
 
-- **[الاستضافة الذاتية باستخدام Docker](./docker)** — المكدس نفسه على أجهزتك الخاصة أو VPS
-- **[الإعداد الأولي](../../getting-started/initial-setup)** — الخطوات الأولى بعد إنشاء كنيستك
-- **[إعداد موقع الكنيسة الأولي](../../b1-admin/website/initial-setup)** — إعداد الموقع العام لكنيستك
-- **[إعدادات العطاء](../../b1-admin/donations/online-giving-setup)** — ربط Stripe أو PayPal
-- **[إعداد API المحلي](../api/local-setup)** — تشغيل المكدس محليًا للتطوير
-- **[نشر API (AWS)](./apis)** — كيفية نشر منصة ChurchApps الرسمية السحابية
+- **[الاستضافة الذاتية باستخدام Docker](./docker.md)** — المكدس نفسه على أجهزتك الخاصة أو VPS
+- **[الإعداد الأولي](../../getting-started/initial-setup.md)** — الخطوات الأولى بعد إنشاء كنيستك
+- **[إعداد موقع الكنيسة الأولي](../../b1-admin/website/initial-setup.md)** — إعداد الموقع العام لكنيستك
+- **[إعدادات العطاء](../../b1-admin/donations/online-giving-setup.md)** — ربط Stripe أو PayPal
+- **[إعداد API المحلي](../api/local-setup.md)** — تشغيل المكدس محليًا للتطوير
+- **[نشر API (AWS)](./apis.md)** — كيفية نشر منصة ChurchApps الرسمية السحابية

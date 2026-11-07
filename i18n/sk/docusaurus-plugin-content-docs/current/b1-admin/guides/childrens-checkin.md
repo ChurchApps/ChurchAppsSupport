@@ -1,5 +1,6 @@
 ---
 title: "Návod: Nastavenie detského check-in"
+description: "Nastavte check-in detí v B1 Admin: prepojte rodiny, vytvorte skupiny podľa veku, nakonfigurujte bohoslužby a tlačte menovky pre kiosk B1 Checkin."
 ---
 
 # Nastavenie detského check-in

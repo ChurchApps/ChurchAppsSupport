@@ -1,5 +1,6 @@
 ---
 title: "Odobravanie zmian profilu"
+description: "Przeglądaj i zatwierdzaj wnioski członków o zmianę profilu w B1 Admin oraz skonfiguruj Directory Approval Group, która je otrzymuje."
 ---
 
 # Odobravanie zmian profilu

@@ -1,5 +1,6 @@
 ---
 title: "Webhook'lar"
+description: "B1 Admin'de gerçek zamanlı webhook'lar kurun: uç noktaları kaydedin, olayları seçin, HMAC imzalarını doğrulayın ve başarısız yükleri yeniden gönderin."
 ---
 
 # Webhook'lar
@@ -33,7 +34,7 @@ Teslimat, **kalıcı bir gelen kutusu (outbox)** kullanır: abone olunan bir ola
 
 ### API Üzerinden
 
-Tüm uç noktalar Üyelik modülünün temel yolu `/membership/webhooks` altındadır ve `Settings / Edit` iznine sahip bir kilise yöneticisinin JWT'sini **veya `settings:write` kapsamıyla oluşturulmuş bir [API anahtarını](./api-keys)** gerektirir. Aynı rotalar her ikisini de kabul eder. Bu sayede bir Zap veya senaryo etkinleştirildiğinde Zapier ve Make, kilise adına webhook'ları kaydedebilir.
+Tüm uç noktalar Üyelik modülünün temel yolu `/membership/webhooks` altındadır ve `Settings / Edit` iznine sahip bir kilise yöneticisinin JWT'sini **veya `settings:write` kapsamıyla oluşturulmuş bir [API anahtarını](./api-keys.md)** gerektirir. Aynı rotalar her ikisini de kabul eder. Bu sayede bir Zap veya senaryo etkinleştirildiğinde Zapier ve Make, kilise adına webhook'ları kaydedebilir.
 
 ```http
 POST /membership/webhooks

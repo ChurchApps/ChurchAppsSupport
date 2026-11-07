@@ -1,5 +1,6 @@
 ---
 title: "Kudala I-Akhawunti Yakho"
+description: "Bhalisa i-akhawunti ye-ChurchApps ku-B1.church, fakazela i-imeyili yakho, bese wakha noma ujoyine ibandla kutsi ukwazi kuqala kusetfa i-B1 Admin."
 ---
 
 # Kudala I-Akhawunti Yakho

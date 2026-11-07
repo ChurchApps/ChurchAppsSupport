@@ -1,5 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Aan de slag met B1 Mobile (verouderd)"
+sidebar_label: "Aan de slag"
+description: "Stel B1 Mobile in op je telefoon: vind de app, log in met je ChurchApps-account en kies je kerk. B1 Mobile is verouderd ten gunste van de PWA."
 ---
 
 # Aan de slag
@@ -21,10 +23,10 @@ Dat is alles. Nadat u uw kerk hebt geselecteerd, laadt de app de branding van uw
 
 ## In deze sectie
 
-- [De app installeren](./installing) -- Waar u B1 Mobile kunt downloaden en apparaatvereisten.
-- [Aanmelden](./logging-in) -- Hoe u zich aanmeldt of een nieuw account aanmaakt.
-- [Van kerk wisselen](./switching-churches) -- Hoe u van kerk wisselt als u tot meer dan één hoort.
+- [De app installeren](./installing.md) -- Waar u B1 Mobile kunt downloaden en apparaatvereisten.
+- [Aanmelden](./logging-in.md) -- Hoe u zich aanmeldt of een nieuw account aanmaakt.
+- [Van kerk wisselen](./switching-churches.md) -- Hoe u van kerk wisselt als u tot meer dan één hoort.
 
 :::tip
-B1 Mobile gebruikt dezelfde ChurchApps-account als alle andere ChurchApps-producten. Als u al een account hebt van [B1.church](../../b1-church/), B1 Admin of Lessons.church, kunt u dezelfde referenties gebruiken om in te loggen.
+B1 Mobile gebruikt dezelfde ChurchApps-account als alle andere ChurchApps-producten. Als u al een account hebt van [B1.church](../../b1-church/index.md), B1 Admin of Lessons.church, kunt u dezelfde referenties gebruiken om in te loggen.
 :::

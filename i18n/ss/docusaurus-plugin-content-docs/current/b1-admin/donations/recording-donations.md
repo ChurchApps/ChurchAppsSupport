@@ -1,5 +1,6 @@
 ---
 title: "Kubhala Iminikelo Phansi"
+description: "Rekhoda timinikelo ku-B1 Admin ngekwakha inqwaba, ngekungenisa umnikelo ngamunye, ngekulayisha i-CSV, noma ngerekhodi lenye kuphrofayili yemnikelo."
 ---
 
 # Kubhala Iminikelo Phansi

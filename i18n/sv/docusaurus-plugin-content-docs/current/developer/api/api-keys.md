@@ -1,5 +1,6 @@
 ---
 title: "API-nycklar"
+description: "Skapa, avgränsa och återkalla B1 API-nycklar i B1 Admin för serverskript och Zapier-, Make- eller Google Sheets-kopplingar, utan ett fullständigt OAuth-flöde."
 ---
 
 # API-nycklar
@@ -104,7 +105,7 @@ En återkallad nyckel slutar fungera omedelbart. Det finns ingen övergångsperi
 
 ## Skillnaden mot OAuth
 
-API-nycklar passar när **din kyrka är den enda som använder integrationen**. För en koppling som behöver nå många kyrkor, där varje kyrka uttryckligen godkänner åtkomsten, till exempel en SaaS-app som delas inom B1-communityt, använd i stället [OAuth och anslutna appar](./connected-apps).
+API-nycklar passar när **din kyrka är den enda som använder integrationen**. För en koppling som behöver nå många kyrkor, där varje kyrka uttryckligen godkänner åtkomsten, till exempel en SaaS-app som delas inom B1-communityt, använd i stället [OAuth och anslutna appar](./connected-apps.md).
 
 | | API-nyckel | OAuth |
 |---|---|---|

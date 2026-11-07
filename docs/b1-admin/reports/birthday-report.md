@@ -1,5 +1,6 @@
 ---
 title: "Birthday & Anniversary Lists"
+description: "Build a list of everyone with a birthday or anniversary in a given month using People search filters in B1 Admin, then view or export the dates."
 ---
 
 # Birthday & Anniversary Lists

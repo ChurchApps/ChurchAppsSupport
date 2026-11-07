@@ -1,5 +1,6 @@
 ---
 title: "Formulir"
+description: "Cari, saring, edit, arsipkan, dan pulihkan formulir kustom di B1 Admin, serta tempat mengatur anggota formulir dan meninjau pengiriman."
 ---
 
 # Formulir

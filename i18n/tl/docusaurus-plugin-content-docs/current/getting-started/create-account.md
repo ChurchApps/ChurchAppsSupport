@@ -1,5 +1,6 @@
 ---
 title: "Paggawa ng Iyong Account"
+description: "Magparehistro ng ChurchApps account sa B1.church, i-verify ang email, at gumawa o sumali sa simbahan para makapagsimula sa pag-set up ng B1 Admin."
 ---
 
 # Paggawa ng Iyong Account

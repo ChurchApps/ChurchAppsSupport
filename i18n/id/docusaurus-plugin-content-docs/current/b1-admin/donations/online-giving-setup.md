@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Pemberian Online"
+description: "Hubungkan Stripe, PayPal, Kingdom Funding, atau Paystack ke B1 Admin agar anggota bisa memberi online lewat situs B1.church dan catatannya tersinkron."
 ---
 
 # Pengaturan Pemberian Online

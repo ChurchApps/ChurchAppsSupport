@@ -1,5 +1,7 @@
 ---
-title: "Pradžia"
+title: "Pradžia su B1 Mobile (nebenaudojama)"
+sidebar_label: "Pradžia"
+description: "Nustatykite B1 Mobile telefone: raskite programėlę, prisijunkite su ChurchApps paskyra ir pasirinkite bažnyčią. B1 Mobile nebepalaikoma – naudokite PWA."
 ---
 
 # Pradžia
@@ -25,10 +27,10 @@ Tiek. Kai pasirinksite bažnyčią, programėlė įkels jos stilių, navigacijos
 
 ## Šiame skyriuje
 
-- [Programėlės įdiegimas](./installing) – kur atsisiųsti B1 Mobile ir įrenginio reikalavimai.
-- [Prisijungimas](./logging-in) – kaip prisijungti arba sukurti naują paskyrą.
-- [Bažnyčių keitimas](./switching-churches) – kaip perjungti bažnyčias, jei priklausote daugiau nei vienai.
+- [Programėlės įdiegimas](./installing.md) – kur atsisiųsti B1 Mobile ir įrenginio reikalavimai.
+- [Prisijungimas](./logging-in.md) – kaip prisijungti arba sukurti naują paskyrą.
+- [Bažnyčių keitimas](./switching-churches.md) – kaip perjungti bažnyčias, jei priklausote daugiau nei vienai.
 
 :::tip
-B1 Mobile naudoja tą pačią ChurchApps paskyrą kaip ir visi kiti ChurchApps produktai. Jei jau turite paskyrą iš [B1.church](../../b1-church/), B1 Admin ar Lessons.church, galite prisijungti su tais pačiais prisijungimo duomenimis.
+B1 Mobile naudoja tą pačią ChurchApps paskyrą kaip ir visi kiti ChurchApps produktai. Jei jau turite paskyrą iš [B1.church](../../b1-church/index.md), B1 Admin ar Lessons.church, galite prisijungti su tais pačiais prisijungimo duomenimis.
 :::

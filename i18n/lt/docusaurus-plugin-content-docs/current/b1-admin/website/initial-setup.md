@@ -1,5 +1,7 @@
 ---
-title: "Pradinis nustatymas"
+title: "Pradžia su B1 Admin svetaine"
+sidebar_label: "Pradinis nustatymas"
+description: "Nustatykite B1 Admin bažnyčios svetainę: pasirinkite subdomeną ar savo domeną, sukurkite pradžios puslapį, parinkite spalvas, logotipą ir navigaciją."
 ---
 
 # Pradinis nustatymas
@@ -45,7 +47,7 @@ Jei nematote parinkties Settings, paprašykite asmens, kuris nustatė jūsų ba�
 6. Pridėję sekciją, vėl spustelėkite **Add Content**, kad įterptumėte tekstą, nuotraukas, vaizdo įrašus, kortelės, formas ir kt., įvilkdami juos į sekciją.
 
 :::info
-Išsamių nurodymų apie darbą su puslapiais ir navigacija ieškokite skyriuje [Puslapių valdymas](managing-pages). Visą vizualinio redaktoriaus vadovą rasite skyriuje [Puslapio redaktoriaus naudojimas](page-editor).
+Išsamių nurodymų apie darbą su puslapiais ir navigacija ieškokite skyriuje [Puslapių valdymas](./managing-pages.md). Visą vizualinio redaktoriaus vadovą rasite skyriuje [Puslapio redaktoriaus naudojimas](./page-editor.md).
 :::
 
 ## Svetainės išvaizdos konfigūravimas
@@ -57,7 +59,7 @@ Išsamių nurodymų apie darbą su puslapiais ir navigacija ieškokite skyriuje 
 5. Sukonfigūruokite **Site Footer** su bažnyčios kontaktine informacija ir nuorodomis.
 
 :::info
-Pakeitimai, atlikti skyriuje Appearance, taikomi visai jūsų svetainei. Išsamių kiekvieno nustatymo aprašymų ieškokite puslapyje [Išvaizda](appearance).
+Pakeitimai, atlikti skyriuje Appearance, taikomi visai jūsų svetainei. Išsamių kiekvieno nustatymo aprašymų ieškokite puslapyje [Išvaizda](./appearance.md).
 :::
 
 ## Navigacijos nustatymas
@@ -70,6 +72,6 @@ Jūsų navigacijos nuorodos rodomos rodinyje Website Pages. Norėdami jas sutvar
 
 ## Kiti žingsniai
 
-- [Puslapių valdymas](managing-pages) -- Sužinokite, kaip detaliai dirbti su puslapiais ir navigacija
-- [Išvaizda](appearance) -- Smulkiai sureguliuokite svetainės spalvas, šriftus ir maketą
-- [Failai](files) -- Įkelkite nuotraukas ir dokumentus savo svetainei
+- [Puslapių valdymas](./managing-pages.md) -- Sužinokite, kaip detaliai dirbti su puslapiais ir navigacija
+- [Išvaizda](./appearance.md) -- Smulkiai sureguliuokite svetainės spalvas, šriftus ir maketą
+- [Failai](./files.md) -- Įkelkite nuotraukas ir dokumentus savo svetainei

@@ -1,5 +1,7 @@
 ---
-title: "登录"
+title: "登录 B1 Mobile"
+sidebar_label: "登录"
+description: "使用您的 ChurchApps 账户登录 B1 Mobile 应用、注册新账户，或通过 6 位验证码找回忘记的密码。"
 ---
 
 # 登录
@@ -13,7 +15,7 @@ B1 Mobile 使用您在 B1.church 和其他 ChurchApps 产品上使用的相同 C
 <div class="prereqs">
 <h4>开始前</h4>
 
-- 在您的 iOS 或 Android 设备上[安装 B1 Mobile](./installing)
+- 在您的 iOS 或 Android 设备上[安装 B1 Mobile](./installing.md)
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobile 使用您在 B1.church 和其他 ChurchApps 产品上使用的相同 C
 3. 输入您的**电子邮件地址**和**密码**。
 4. 点击 **Sign In**。
 
-登录后，您将被带到[仪表板](../dashboard/)。如果您还没有选择教会，您会被提示搜索并选择一个。
+登录后，您将被带到[仪表板](../dashboard/index.md)。如果您还没有选择教会，您会被提示搜索并选择一个。
 
 ## 创建新账户
 

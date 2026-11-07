@@ -1,5 +1,6 @@
 ---
 title: "Givningsrapporter"
+description: "Gå gjennom givertall, frafalne givere og detaljer per bunt i B1 Admin med dashbordet Donations Summary, visningen Lapsed Givers og CSV-eksporter."
 ---
 
 # Givningsrapporter

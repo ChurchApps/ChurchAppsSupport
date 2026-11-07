@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Kết nối Donorbox với B1 Admin qua Zapier để khoản quyên góp trực tuyến tự động tạo bản ghi dâng hiến và hồ sơ người dâng, không cần xuất thủ công."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Sự kiện *New or Updated Donation* của Donorbox cũng kích hoạt khi ch�
 
 ## Xem thêm
 
-- [Zapier (tổng quan)](../zapier): phía B1 của mọi công thức Zapier
-- [Subsplash](./subsplash): nền tảng quyên góp khác có ứng dụng Zapier
-- [Mailchimp](./mailchimp): nối "quà tặng mới" với một thẻ email
+- [Zapier (tổng quan)](../zapier.md): phía B1 của mọi công thức Zapier
+- [Subsplash](./subsplash.md): nền tảng quyên góp khác có ứng dụng Zapier
+- [Mailchimp](./mailchimp.md): nối "quà tặng mới" với một thẻ email

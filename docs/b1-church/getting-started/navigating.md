@@ -1,5 +1,6 @@
 ---
 title: "Navigating B1App"
+description: "Find your way around the B1.church member portal on a phone or computer: the Home dashboard, bottom tab bar, More page, and Me page."
 ---
 
 # Navigating B1App
@@ -92,7 +93,7 @@ Detail pages -- a group, a plan, your Me page, the Plans and Giving screens -- a
 
 ## The Me Page
 
-**Me** (`/mobile/me`) is your personal hub. It shows your name and photo with **Edit Profile** and **Settings** ([notification preferences](./notification-preferences.md)) buttons, then what is coming up for you -- serving assignments, event registrations, and group events -- followed by your household, your groups, your [giving](../giving/) this year, the forms you've submitted, your attendance history, your [registrations](../events/my-registrations.md), and your recent notifications and messages. See [The Me Page](./me-page) for details.
+**Me** (`/mobile/me`) is your personal hub. It shows your name and photo with **Edit Profile** and **Settings** ([notification preferences](./notification-preferences.md)) buttons, then what is coming up for you -- serving assignments, event registrations, and group events -- followed by your household, your groups, your [giving](../giving/index.md) this year, the forms you've submitted, your attendance history, your [registrations](../events/my-registrations.md), and your recent notifications and messages. See [The Me Page](./me-page.md) for details.
 
 If you are signed out, the Me page shows a **Sign In** button instead.
 

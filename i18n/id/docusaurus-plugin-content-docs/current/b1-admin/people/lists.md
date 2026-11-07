@@ -1,5 +1,6 @@
 ---
 title: "Daftar Tersimpan"
+description: "Simpan pencarian Orang di B1 Admin sebagai daftar bernama, lalu muat ulang dengan satu klik. Daftar tetap aktif, jadi anggota baru yang cocok muncul otomatis."
 ---
 
 # Daftar Tersimpan

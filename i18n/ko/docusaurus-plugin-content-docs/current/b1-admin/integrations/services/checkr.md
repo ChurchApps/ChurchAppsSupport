@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "B1 Admin의 봉사자 신청을 Make.com으로 Checkr 신원조회에 연결합니다. 안전 사역 담당자를 위한 보고서 상태 알림을 선택적으로 설정할 수 있습니다."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Make의 Checkr 작업: 후보자 생성, 신원조회 초대장 생성, 후보�
 
 ## 참고 항목
 
-- [Make (개요)](../make) — 모든 Make 시나리오의 B1 측 구성
-- [Mobile Message](./mobile-message) — Zapier 앱이 없는 SMS 제공업체용, Checkr Make 연결과 동일한 Webhooks/HTTP 패턴 사용
+- [Make (개요)](../make.md) — 모든 Make 시나리오의 B1 측 구성
+- [Mobile Message](./mobile-message.md) — Zapier 앱이 없는 SMS 제공업체용, Checkr Make 연결과 동일한 Webhooks/HTTP 패턴 사용
 - [Checkr API 문서](https://docs.checkr.com/)

@@ -1,5 +1,7 @@
 ---
-title: "Lektioner"
+title: "Udgået lektionsfane i B1.church"
+sidebar_label: "Lektioner"
+description: "Lektionsfanen i B1.church er udgået. Find lektionsmaterialet nu: gennemse det på Lessons.church og afspil det på klasseværelses-TV med FreePlay."
 ---
 
 # Lektioner

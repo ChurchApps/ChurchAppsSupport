@@ -1,5 +1,7 @@
 ---
-title: "Mga Kaganapan"
+title: "Mga Event at Pagpapatala sa Simbahan sa B1 Mobile"
+sidebar_label: "Mga Kaganapan"
+description: "Mag-browse ng paparating na event ng simbahan sa B1 Mobile at magpatala ng iyong sarili at pamilya sa mga event na bukas ang pagpapatala."
 ---
 
 # Mga Kaganapan
@@ -23,10 +25,10 @@ Ang mga kaganapan ay maaaring magpakita ng iba't ibang katayuan:
 
 ## Kung Ano Ang Kailangan Mo
 
-- [B1 Mobile installed](../getting-started/installing) at [logged in](../getting-started/logging-in)
+- [B1 Mobile installed](../getting-started/installing.md) at [logged in](../getting-started/logging-in.md)
 - Ang iyong simbahan ay dapat may enabled na pagrehistro ng kaganapan para sa kaganapan
 
 ## Matuto Ng Marami Pang Iba
 
-- [Pagrehistro para sa Mga Kaganapan](./registering) -- Hakbang-hakbang na gabay sa pag-sign up para sa isang kaganapan sa mobile
-- [Self Check-In](../checkin/self-checkin) -- Mag-check in kapag dumating ka sa kaganapan
+- [Pagrehistro para sa Mga Kaganapan](./registering.md) -- Hakbang-hakbang na gabay sa pag-sign up para sa isang kaganapan sa mobile
+- [Self Check-In](../checkin/self-checkin.md) -- Mag-check in kapag dumating ka sa kaganapan

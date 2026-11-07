@@ -1,5 +1,7 @@
 ---
-title: "讲道"
+title: "在您的 B1.church 网站上浏览讲道"
+sidebar_label: "讲道"
+description: "在 B1.church 网站上浏览和观看教会库中的录制讲道，按系列或播放列表分组。无需登录。"
 ---
 
 # 讲道

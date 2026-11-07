@@ -1,5 +1,6 @@
 ---
 title: "Collegare FreePlay a B1 Admin"
+description: "Collega una TV in aula con FreePlay alle lezioni pianificate in B1 Admin, così gli insegnanti possono riprodurle sullo schermo durante la lezione."
 ---
 
 # Collegare un TV dell'aula alle lezioni di B1 Admin

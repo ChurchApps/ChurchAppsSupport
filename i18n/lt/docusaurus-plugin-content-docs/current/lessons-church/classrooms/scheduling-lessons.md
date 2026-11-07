@@ -1,5 +1,7 @@
 ---
-title: "Pamokų planavimas"
+title: "Klasių pamokų planavimas portale"
+sidebar_label: "Pamokų planavimas"
+description: "Planuokite Lessons.church pamokas klasės kalendoriuje B1 Admin portale: kiekvienai datai pasirinkite programą, mokymą, pamoką ir amžiui tinkamą vietą."
 ---
 
 # Pamokų planavimas

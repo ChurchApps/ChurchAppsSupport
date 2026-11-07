@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profilbeállítások és eszközök a B1 Admin-ban"
+sidebar_label: "Profil"
+description: "Név, e-mail, jelszó, kétlépcsős bejelentkezés, téma és kapcsolt eszközök frissítése a B1 Admin profiljában, valamint tagi profilmódosítások jóváhagyása."
 ---
 
 # Profil

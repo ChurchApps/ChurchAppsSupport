@@ -1,5 +1,6 @@
 ---
 title: "Files"
+description: "Upload, browse, and manage images and documents for your church website in B1 Admin, including linking external storage for more space."
 ---
 
 # Files
@@ -13,7 +14,7 @@ The Files page is the central repository for all media and documents used on you
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Complete the [Initial Setup](initial-setup) for your website
+- Complete the [Initial Setup](./initial-setup.md) for your website
 - Optimize images before uploading for faster page load times
 - Prepare your files in common web formats (PNG, JPG, PDF, etc.)
 
@@ -42,7 +43,7 @@ The files table lists every uploaded file with its **Name** and **Size**. Click 
 3. Files you upload here are available for use across all your website pages and content blocks.
 
 :::info
-When building pages in [Managing Pages](managing-pages), you can reference any file uploaded here by its URL. This keeps all your media organized in one central location.
+When building pages in [Managing Pages](./managing-pages.md), you can reference any file uploaded here by its URL. This keeps all your media organized in one central location.
 :::
 
 ## Deleting Files
@@ -57,5 +58,5 @@ Deleted files cannot be recovered. Double-check that a file is no longer in use 
 
 ## Next Steps
 
-- [Managing Pages](managing-pages) -- Add your uploaded files to website pages
-- [Appearance](appearance) -- Customize your site's visual theme
+- [Managing Pages](./managing-pages.md) -- Add your uploaded files to website pages
+- [Appearance](./appearance.md) -- Customize your site's visual theme

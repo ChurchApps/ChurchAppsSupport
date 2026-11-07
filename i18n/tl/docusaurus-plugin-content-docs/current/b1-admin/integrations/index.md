@@ -1,5 +1,6 @@
 ---
 title: "Mga Integrasyon"
+description: "Ikonekta ang B1 Admin sa Slack, Discord, Zapier, Make, Google Sheets, at AI assistant tulad ng Claude, kasama ang setup at mga API key scope ng bawat isa."
 ---
 
 # Mga Integrasyon
@@ -14,21 +15,21 @@ Kumokonekta ang B1 sa mga tool na ginagamit na ng iyong team. Ikonekta ang Slack
 
 | Integration | Ano ang ginagawa nito | Direksyon | Pagsisikap sa pag-set up |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Nagpo-post ng madaling basahing notification (mga bagong tao, donasyon, sign-up, …) sa isang Slack channel | B1 → Slack | 2 minuto |
-| **[Discord](./slack-discord)** | Pareho, sa isang Discord channel | B1 → Discord | 2 minuto |
-| **[Zapier](./zapier)** | Gamitin ang mga event ng B1 bilang trigger at ang mga aksyon ng B1 sa alinman sa 7,000+ app ng Zapier | Pareho | 5–10 min bawat Zap |
-| **[Make](./make)** | Parehong ideya sa Zapier, sa visual scenario builder ng Make | Pareho | 5–10 min bawat scenario |
-| **[Google Sheets](./google-sheets)** | Mag-export ng People / Donations / Groups / Attendance sa spreadsheet kapag kailangan | B1 → Sheet | 5 minuto |
-| **[Claude](./claude)** | Magtanong sa Claude ng Anthropic tungkol sa datos ng iyong simbahan, nakabatay sa iyong pahintulot — libreng subukan, inirerekomenda | Pareho | Wala pang 3 minuto |
-| **[ChatGPT](./chatgpt)** | Parehong ideya gamit ang ChatGPT ng OpenAI (kailangan ng bayad na ChatGPT plan) | Pareho | 10 minuto |
-| **[Connected services](./services/)** | Mga piling recipe para sa Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Iba-iba | 5–10 min bawat isa |
+| **[Slack](./slack-discord.md)** | Nagpo-post ng madaling basahing notification (mga bagong tao, donasyon, sign-up, …) sa isang Slack channel | B1 → Slack | 2 minuto |
+| **[Discord](./slack-discord.md)** | Pareho, sa isang Discord channel | B1 → Discord | 2 minuto |
+| **[Zapier](./zapier.md)** | Gamitin ang mga event ng B1 bilang trigger at ang mga aksyon ng B1 sa alinman sa 7,000+ app ng Zapier | Pareho | 5–10 min bawat Zap |
+| **[Make](./make.md)** | Parehong ideya sa Zapier, sa visual scenario builder ng Make | Pareho | 5–10 min bawat scenario |
+| **[Google Sheets](./google-sheets.md)** | Mag-export ng People / Donations / Groups / Attendance sa spreadsheet kapag kailangan | B1 → Sheet | 5 minuto |
+| **[Claude](./claude.md)** | Magtanong sa Claude ng Anthropic tungkol sa datos ng iyong simbahan, nakabatay sa iyong pahintulot — libreng subukan, inirerekomenda | Pareho | Wala pang 3 minuto |
+| **[ChatGPT](./chatgpt.md)** | Parehong ideya gamit ang ChatGPT ng OpenAI (kailangan ng bayad na ChatGPT plan) | Pareho | 10 minuto |
+| **[Connected services](./services/index.md)** | Mga piling recipe para sa Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Iba-iba | 5–10 min bawat isa |
 
 ## Paano Pumili
 
 - **Gusto mo lang ng notification sa chat?** Gamitin ang **Slack** o **Discord** — walang third-party account, walang Zap na kailangang pangalagaan. Kumpletong naka-configure sa loob ng B1Admin.
 - **Gusto mong i-automate ang isang bagay sa iba't ibang app** (hal. "kapag may nagbigay, idagdag siya sa aking Mailchimp list at sa Slack #donations")? Gamitin ang **Zapier** o **Make**. Mas madali ang Zapier; mas mura ang Make kapag malaki na ang gamit at mas flexible ang logic nito.
 - **Kailangan mo ng isang beses na pagkuha ng datos o naka-iskedyul na ulat?** Gamitin ang **Google Sheets** — i-paste ang API key sa sidebar ng add-on at i-click ang Export.
-- **Gusto mong magtanong sa simpleng Ingles** ("ilan ang first-time visitors noong nakaraang Linggo?", "ibuod ang giving ngayong buwan")? Magsimula sa **[Claude](./claude)** — libreng subukan at wala pang 3 minuto ang pag-set up. Gumagana rin ang **[ChatGPT](./chatgpt)** kung mayroon kang bayad na plan. Kumokonekta ang Claude sa pamamagitan ng pag-sign in gamit ang iyong B1 account; gumagamit ang ChatGPT ng B1 API key.
+- **Gusto mong magtanong sa simpleng Ingles** ("ilan ang first-time visitors noong nakaraang Linggo?", "ibuod ang giving ngayong buwan")? Magsimula sa **[Claude](./claude.md)** — libreng subukan at wala pang 3 minuto ang pag-set up. Gumagana rin ang **[ChatGPT](./chatgpt.md)** kung mayroon kang bayad na plan. Kumokonekta ang Claude sa pamamagitan ng pag-sign in gamit ang iyong B1 account; gumagamit ang ChatGPT ng B1 API key.
 - **Gumagawa ka ng sarili mong custom integration?** Wala sa mga nasa itaas — direktang makipag-usap sa [REST API](/docs/developer/api) gamit ang [API key](/docs/developer/api/api-keys), o mag-subscribe ng server na kontrolado mo sa [webhooks](/docs/developer/api/webhooks).
 
 ## Ang Pagkakapareho ng Lahat
@@ -59,10 +60,10 @@ Kung wala sa nasa itaas ang akma, bukas ang bawat surface ng B1:
 
 ## Mga Susunod na Hakbang
 
-- [Slack & Discord](./slack-discord) — mag-post ng notification sa chat
-- [Zapier](./zapier) — kumonekta sa 7,000+ app
-- [Make](./make) — visual na automation ng workflow
-- [Google Sheets](./google-sheets) — mag-export sa spreadsheet
-- [Claude](./claude) — magtanong sa Claude tungkol sa datos ng iyong simbahan
-- [ChatGPT](./chatgpt) — magtanong sa ChatGPT ng OpenAI tungkol sa datos ng iyong simbahan
-- [Connected services](./services/) — mga recipe bawat serbisyo (Mailchimp, Donorbox, Clearstream, …)
+- [Slack & Discord](./slack-discord.md) — mag-post ng notification sa chat
+- [Zapier](./zapier.md) — kumonekta sa 7,000+ app
+- [Make](./make.md) — visual na automation ng workflow
+- [Google Sheets](./google-sheets.md) — mag-export sa spreadsheet
+- [Claude](./claude.md) — magtanong sa Claude tungkol sa datos ng iyong simbahan
+- [ChatGPT](./chatgpt.md) — magtanong sa ChatGPT ng OpenAI tungkol sa datos ng iyong simbahan
+- [Connected services](./services/index.md) — mga recipe bawat serbisyo (Mailchimp, Donorbox, Clearstream, …)

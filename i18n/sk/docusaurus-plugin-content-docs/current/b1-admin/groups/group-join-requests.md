@@ -1,5 +1,6 @@
 ---
 title: "Žiadosti o pripojenie do skupiny"
+description: "Schvaľujte alebo zamietajte žiadosti o pripojenie do skupín v B1 Admin, nájdite čakajúce žiadosti ako vedúci alebo admin a pri zamietnutí uveďte dôvod."
 ---
 
 # Žiadosti o pripojenie do skupiny

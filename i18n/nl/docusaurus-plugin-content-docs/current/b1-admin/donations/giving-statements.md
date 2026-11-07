@@ -1,5 +1,6 @@
 ---
 title: "Giftverklaringen"
+description: "Maak jaaroverzichten van giften voor elke donor in B1 Admin en download ze als CSV of print ze voor verzending, met fiscaal aftrekbare totalen."
 ---
 
 # Giftverklaringen

@@ -1,5 +1,7 @@
 ---
-title: "Dirette Streaming"
+title: "Guardare le dirette su B1.church"
+sidebar_label: "Dirette Streaming"
+description: "Guarda le dirette dei culti della tua chiesa nella pagina Stream di B1.church e partecipa alla chat insieme alla trasmissione, senza accesso."
 ---
 
 # Dirette Streaming

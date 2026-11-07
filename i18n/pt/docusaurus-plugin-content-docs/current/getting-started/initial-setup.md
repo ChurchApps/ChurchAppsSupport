@@ -1,5 +1,7 @@
 ---
-title: "Configuração Inicial"
+title: "Configuração inicial da igreja no B1 Admin"
+sidebar_label: "Configuração Inicial"
+description: "Primeira configuração de uma nova igreja no B1 Admin: dados, identidade visual, funções e a ordem recomendada para pessoas, grupos, presença e doações."
 ---
 
 # Configuração Inicial

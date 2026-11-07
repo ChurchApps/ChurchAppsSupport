@@ -1,5 +1,7 @@
 ---
-title: "Zelf Check-In"
+title: "Zelf inchecken via de B1 Mobile-app"
+sidebar_label: "Zelf Check-In"
+description: "Meld jezelf en je gezin aan voor een dienst via de B1 Mobile-app, inclusief het kiezen van het diensttijdstip en de groep van elk gezinslid."
 ---
 
 # Zelf Check-In
@@ -13,7 +15,7 @@ Check-in vanuit B1 Mobile is een eenvoudig multistap proces. In slechts enkele t
 <div class="prereqs">
 <h4>Voorbepaling</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld je aan](../getting-started/logging-in) op je account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld je aan](../getting-started/logging-in.md) op je account
 - Zorg dat je [huishoudenleden](../profile/household.md) in je profiel zijn ingesteld
 
 </div>

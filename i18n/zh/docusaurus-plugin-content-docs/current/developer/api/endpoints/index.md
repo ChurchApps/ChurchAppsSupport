@@ -1,5 +1,6 @@
 ---
 title: "端点参考"
+description: "按模块查找所有 ChurchApps API 端点，查看每条路由的 HTTP 方法、路径、认证和权限，并在调用 API 之前了解批量保存和错误处理约定。"
 ---
 
 # 端点参考
@@ -89,10 +90,10 @@ Authorization: Bearer <token>
 
 | 模块 | 基础路径 | 描述 |
 |--------|-----------|-------------|
-| [认证](./authentication) | `/membership/users`、`/membership/oauth` | 登录、注册、JWT 令牌、OAuth、权限 |
-| [成员管理](./membership) | `/membership/*` | 人员、教会、群组、家庭、角色、表单、设置 |
-| [出席](./attendance) | `/attendance/*` | 校区、礼拜、场次、访问、签到记录 |
-| [内容](./content) | `/content/*` | 页面、讲道、活动、文件、图库、圣经、流媒体 |
-| [捐赠](./giving) | `/giving/*` | 捐款、基金、支付网关、订阅 |
-| [消息](./messaging) | `/messaging/*` | 会话、通知、设备、短信 |
-| [事务](./doing) | `/doing/*` | 计划、任务、分配、自动化、排班 |
+| [认证](./authentication.md) | `/membership/users`、`/membership/oauth` | 登录、注册、JWT 令牌、OAuth、权限 |
+| [成员管理](./membership.md) | `/membership/*` | 人员、教会、群组、家庭、角色、表单、设置 |
+| [出席](./attendance.md) | `/attendance/*` | 校区、礼拜、场次、访问、签到记录 |
+| [内容](./content.md) | `/content/*` | 页面、讲道、活动、文件、图库、圣经、流媒体 |
+| [捐赠](./giving.md) | `/giving/*` | 捐款、基金、支付网关、订阅 |
+| [消息](./messaging.md) | `/messaging/*` | 会话、通知、设备、短信 |
+| [事务](./doing.md) | `/doing/*` | 计划、任务、分配、自动化、排班 |

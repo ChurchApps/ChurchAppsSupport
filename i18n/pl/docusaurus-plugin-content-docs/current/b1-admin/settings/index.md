@@ -1,5 +1,6 @@
 ---
 title: "Ustawienia"
+description: "Poruszaj się po ustawieniach B1 Admin: dane kościoła, wygląd, kampusy, pola niestandardowe, role użytkowników i nawigacja aplikacji B1.church."
 ---
 
 # Ustawienia

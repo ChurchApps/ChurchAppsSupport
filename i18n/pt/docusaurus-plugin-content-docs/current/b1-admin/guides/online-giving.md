@@ -1,5 +1,6 @@
 ---
 title: "Guia: Configurar Doações Online"
+description: "Configure doações online no B1 Admin criando fundos, conectando o Stripe e adicionando uma página Doar ao seu site B1.church para os membros."
 ---
 
 # Configurar Doações Online
@@ -70,7 +71,7 @@ Use o modo de teste do Stripe primeiro se quiser verificar sem cobranças reais,
 Divulgue para que os membros saibam que podem contribuir online.
 
 1. Compartilhe a URL de doações pelo seu site, boletins informativos por e-mail, informativos e redes sociais
-2. Os membros também podem contribuir pelo [aplicativo B1 Mobile](../../b1-mobile/giving/) — o recurso de doações já está integrado
+2. Os membros também podem contribuir pelo [aplicativo B1 Mobile](../../b1-mobile/giving/index.md) — o recurso de doações já está integrado
 
 :::info
 Membros que fazem login podem salvar métodos de pagamento, configurar doações recorrentes e visualizar seu histórico de doações. Doações anônimas também funcionam — não é necessário login.

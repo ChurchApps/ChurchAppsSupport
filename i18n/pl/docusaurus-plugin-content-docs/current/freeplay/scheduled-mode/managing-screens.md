@@ -1,5 +1,6 @@
 ---
 title: "Zarządzanie ekranami i grupami"
+description: "Sprawdź, czy telewizory FreePlay są online i gotowe na niedzielę, edytuj ustawienia ekranów i twórz grupy z jednym kalendarzem w FreePlay Admin."
 ---
 
 # Zarządzanie ekranami i grupami
@@ -14,7 +15,7 @@ Strona **Ekrany** w FreePlay Admin wyświetla wszystkie telewizory sparowane z T
 <h4>Zanim zaczniesz</h4>
 
 - Zaloguj się do FreePlay Admin pod adresem [admin.freeplay.church](https://admin.freeplay.church)
-- [Sparuj co najmniej jeden ekran](./pairing-a-screen)
+- [Sparuj co najmniej jeden ekran](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Użyj **Wyświetl**, aby odtworzyć kalendarz ekranu w przeglądarce, albo **Edy
 
 Kliknij etykietę ekranu, aby otworzyć jego stronę. Po lewej stronie:
 
-- **Wyświetl w przeglądarce** - Odtwórz kalendarz tego ekranu na pełnym ekranie w przeglądarce, tak jak wyglądałby na telewizorze. Zobacz [Wyświetlanie z przeglądarki](./scheduled-playback#presenting-from-a-browser)
+- **Wyświetl w przeglądarce** - Odtwórz kalendarz tego ekranu na pełnym ekranie w przeglądarce, tak jak wyglądałby na telewizorze. Zobacz [Wyświetlanie z przeglądarki](./scheduled-playback.md#presenting-from-a-browser)
 - **Edytuj** - Zmień etykietę, grupę lub tryb
 - **Więcej** > **Rozparuj** - Rozłącz telewizor. Wróci on do wyświetlania kodu parowania
 
@@ -93,6 +94,6 @@ Usunięcie grupy usuwa również jej harmonogram. Ekrany w tej grupie gasną, do
 
 ## Powiązane artykuły
 
-- **[Parowanie ekranu](./pairing-a-screen)** - Dodaj nowy telewizor
-- **[Planowanie kalendarza](./scheduling-the-calendar)** - Ustaw, co odtwarza każda grupa, i jej domyślną pętlę
-- **[Zaplanowane odtwarzanie na telewizorze](./scheduled-playback)** - Co oznacza data „Gotowe do” na samym telewizorze
+- **[Parowanie ekranu](./pairing-a-screen.md)** - Dodaj nowy telewizor
+- **[Planowanie kalendarza](./scheduling-the-calendar.md)** - Ustaw, co odtwarza każda grupa, i jej domyślną pętlę
+- **[Zaplanowane odtwarzanie na telewizorze](./scheduled-playback.md)** - Co oznacza data „Gotowe do” na samym telewizorze

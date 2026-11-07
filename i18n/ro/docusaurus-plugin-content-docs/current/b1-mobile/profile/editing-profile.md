@@ -1,5 +1,7 @@
 ---
-title: "Redactarea profilului tău"
+title: "Editarea profilului dvs. în aplicația B1 Mobile"
+sidebar_label: "Redactarea profilului tău"
+description: "Actualizați numele, adresa de e-mail, telefonul, adresa și fotografia de profil în aplicația B1 Mobile, pentru ca evidențele și agenda bisericii să rămână actualizate."
 ---
 
 # Redactarea profilului tău
@@ -13,7 +15,7 @@ Fila **Profil** îți permite să îți actualizezi informațiile personale, ast
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 
 </div>
 
@@ -34,7 +36,7 @@ Profilul tău include următoarele date personale:
 3. Atinge câmpul pe care vrei să îl actualizezi și fă modificările.
 4. Salvează modificările când ai terminat.
 
-Informațiile actualizate sunt sincronizate automat. Oricine îți vizualizează profilul (sub rezerva [setărilor tale de confidențialitate](./privacy-settings)) va vedea imediat noile date.
+Informațiile actualizate sunt sincronizate automat. Oricine îți vizualizează profilul (sub rezerva [setărilor tale de confidențialitate](./privacy-settings.md)) va vedea imediat noile date.
 
 :::tip
 Păstrează-ți adresa de e-mail și numărul de telefon actualizate. Biserica ta folosește aceste informații pentru a-ți trimite actualizări și memento-uri importante.
@@ -46,7 +48,7 @@ Poți adăuga sau schimba fotografia de profil din fila **Profil**. Fotografia t
 
 ## Modificări în toate serviciile ChurchApps
 
-Deoarece toate serviciile ChurchApps folosesc același sistem de conturi, o modificare pe care o faci în B1 Mobile este vizibilă imediat în [B1.church](../../b1-church/), în instrumentele de administrare ale bisericii tale și în orice alte servicii conectate. Nu trebuie să îți actualizezi informațiile separat în fiecare loc.
+Deoarece toate serviciile ChurchApps folosesc același sistem de conturi, o modificare pe care o faci în B1 Mobile este vizibilă imediat în [B1.church](../../b1-church/index.md), în instrumentele de administrare ale bisericii tale și în orice alte servicii conectate. Nu trebuie să îți actualizezi informațiile separat în fiecare loc.
 
 :::info
 Unele biserici cer aprobarea administratorului pentru anumite modificări ale profilului. Dacă actualizarea nu apare imediat, verifică starea ei în fila **În așteptare** de pe ecranul profilului tău.
@@ -54,5 +56,5 @@ Unele biserici cer aprobarea administratorului pentru anumite modificări ale pr
 
 ## Articole înrudite
 
-- [Gospodăria](./household) -- Vizualizează și gestionează membrii familiei tale
-- [Setări de confidențialitate](./privacy-settings) -- Controlează ce pot vedea alții despre tine
+- [Gospodăria](./household.md) -- Vizualizează și gestionează membrii familiei tale
+- [Setări de confidențialitate](./privacy-settings.md) -- Controlează ce pot vedea alții despre tine

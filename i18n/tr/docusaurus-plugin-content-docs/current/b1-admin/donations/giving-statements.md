@@ -1,5 +1,6 @@
 ---
 title: "Bağış Özetleri"
+description: "B1 Admin'de her bağışçı için yıl sonu bağış dökümleri oluşturun; ardından bunları CSV olarak indirin ya da vergi indirimli toplamlarla posta için yazdırın."
 ---
 
 # Bağış Özetleri

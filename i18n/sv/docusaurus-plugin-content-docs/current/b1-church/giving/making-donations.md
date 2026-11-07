@@ -1,5 +1,7 @@
 ---
-title: "Göra en gåva"
+title: "Göra donationer i B1.church medlemsportal"
+sidebar_label: "Göra en gåva"
+description: "Gör en engångsgåva eller en återkommande gåva till din församling via B1.church, med eller utan konto, och granska din givarhistorik efteråt."
 ---
 
 # Göra en gåva

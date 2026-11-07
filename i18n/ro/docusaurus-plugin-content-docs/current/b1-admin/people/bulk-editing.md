@@ -1,5 +1,6 @@
 ---
 title: "Editarea în bloc a persoanelor"
+description: "Actualizați în masă în B1 Admin statutul de membru, starea civilă, genul, renunțarea, câmpurile Da/Nu sau apartenența la grupuri."
 ---
 
 # Editarea în bloc a persoanelor

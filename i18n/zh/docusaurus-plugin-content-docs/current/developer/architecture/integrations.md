@@ -1,5 +1,6 @@
 ---
 title: "集成与扩展接口"
+description: "ChurchApps B1 的所有连接方式概览：REST API、API 密钥、OAuth、Webhook、MCP 和内容提供方，并附有各参考文档的链接。"
 ---
 
 # 集成与扩展接口
@@ -14,12 +15,12 @@ title: "集成与扩展接口"
 
 进出系统的方式共有六种，它们都共享同一个认证层：
 
-- **[REST API](../api/api-keys)** —— 整个产品接口，可从任何语言使用 bearer token 调用。
-- **[API 密钥](../api/api-keys)** —— 最简单的凭证：一个绑定到某教会中某个人员的 `cak_…` 令牌。
-- **[OAuth 2.0 与连接应用](../api/connected-apps)** —— 面向多租户应用、按教会授予同意；签发与用户获得的相同 JWT。
-- **[Webhooks](../api/webhooks)** —— 经过签名、可持久投递的出站事件。
-- **[MCP 服务器](../api/mcp)** —— 位于 `/mcp` 的、面向 AI 的 REST API 封装。
-- **[内容提供方](../freeplay-content-provider)** —— 外部媒体库进入 FreePlay 和 B1 应用的入站路径。
+- **[REST API](../api/api-keys.md)** —— 整个产品接口，可从任何语言使用 bearer token 调用。
+- **[API 密钥](../api/api-keys.md)** —— 最简单的凭证：一个绑定到某教会中某个人员的 `cak_…` 令牌。
+- **[OAuth 2.0 与连接应用](../api/connected-apps.md)** —— 面向多租户应用、按教会授予同意；签发与用户获得的相同 JWT。
+- **[Webhooks](../api/webhooks.md)** —— 经过签名、可持久投递的出站事件。
+- **[MCP 服务器](../api/mcp.md)** —— 位于 `/mcp` 的、面向 AI 的 REST API 封装。
+- **[内容提供方](../freeplay-content-provider.md)** —— 外部媒体库进入 FreePlay 和 B1 应用的入站路径。
 
 除内容提供方外，其他所有功能都由单一的单体 API（[Api](https://github.com/ChurchApps/Api) 代码仓库）提供服务，其各模块挂载在稳定的基础路径下——`/membership`、`/giving`、`/attendance`、`/content`、`/messaging`、`/doing`、`/reporting` 和 `/mcp`。
 
@@ -80,7 +81,7 @@ OAuth 访问令牌的结构与登录 JWT 完全相同——唯一的区别在于
 - 范围只能*移除*权限，因此受限范围的凭证永远无法提升为服务器/域管理员权限（这些权限被有意排除在任何范围之外）。
 - API 密钥带有 `cak_` 前缀；`CustomAuthProvider.getUser()` 会根据该前缀进行分支，对密钥进行哈希，并在每次调用时重新解析所属人员实时的 RBAC 权限。
 
-完整范围目录参见 [API 密钥 → 范围](../api/api-keys#scopes)。
+完整范围目录参见 [API 密钥 → 范围](../api/api-keys.md#scopes)。
 
 ## 接口参考
 
@@ -90,7 +91,7 @@ OAuth 访问令牌的结构与登录 JWT 完全相同——唯一的区别在于
 
 ### API 密钥
 
-一个 `cak_<prefix>.<secret>` 形式的个人访问令牌，在 **B1Admin → Settings → Developer → API Keys** 中创建。系统仅存储其 SHA-256 哈希值，原始密钥只显示一次。通过 `/membership/apiKeys` 管理（`Api/src/modules/membership/controllers/ApiKeyController.ts`）。最适用于单个教会自己的脚本，以及 Zapier、Make 和 Google Sheets 等连接器。→ **[API 密钥](../api/api-keys)**
+一个 `cak_<prefix>.<secret>` 形式的个人访问令牌，在 **B1Admin → Settings → Developer → API Keys** 中创建。系统仅存储其 SHA-256 哈希值，原始密钥只显示一次。通过 `/membership/apiKeys` 管理（`Api/src/modules/membership/controllers/ApiKeyController.ts`）。最适用于单个教会自己的脚本，以及 Zapier、Make 和 Google Sheets 等连接器。→ **[API 密钥](../api/api-keys.md)**
 
 ### OAuth 2.0 与连接应用
 
@@ -102,19 +103,19 @@ OAuth 访问令牌的结构与登录 JWT 完全相同——唯一的区别在于
 
 公开客户端也可以通过 `POST /oauth/register` 自行注册（RFC 7591 动态客户端注册）；它们会获得一个 `client_id` 且没有密钥，其重定向 URI 必须为 `https` 或回环地址。
 
-**连接应用**是教会管理员所看到的、已授予令牌的视图，可在 `/membership/oauth/connections` 中列出并撤销。该控制器还提供一个 OAuth **中继会话**桥接（`/oauth/relay/*`），使没有浏览器的设备能够针对*外部*提供方完成登录。→ **[连接应用与 OAuth](../api/connected-apps)**
+**连接应用**是教会管理员所看到的、已授予令牌的视图，可在 `/membership/oauth/connections` 中列出并撤销。该控制器还提供一个 OAuth **中继会话**桥接（`/oauth/relay/*`），使没有浏览器的设备能够针对*外部*提供方完成登录。→ **[连接应用与 OAuth](../api/connected-apps.md)**
 
 ### Webhooks
 
-这是唯一的出站接口。教会可以为事件订阅一个公开的 HTTPS 端点；当发生匹配的变更时，`WebhookDispatcher.emit(churchId, event, payload)` 会用显示名称（`personName`、`groupName`、`formName`——仅在有订阅匹配时才执行查询）丰富只含 id 的载荷，记录一次投递，然后由后台工作进程以带重试/退避和重投机制的方式 POST 一个经过签名的 JSON 信封。引擎位于 `Api/src/shared/webhooks/`，每个教会的增删改查位于 `/membership/webhooks`（`WebhookController.ts`）。`connectorType` 字段会为 Slack / Discord 重新塑造请求体；`mailchimp` 连接器则更进一步，全权负责整个 HTTP 交互（针对 Mailchimp API 的每个事件方法/URL/认证，凭证加密存储于 `webhooks.connectorConfig`）。→ **[Webhooks](../api/webhooks)**
+这是唯一的出站接口。教会可以为事件订阅一个公开的 HTTPS 端点；当发生匹配的变更时，`WebhookDispatcher.emit(churchId, event, payload)` 会用显示名称（`personName`、`groupName`、`formName`——仅在有订阅匹配时才执行查询）丰富只含 id 的载荷，记录一次投递，然后由后台工作进程以带重试/退避和重投机制的方式 POST 一个经过签名的 JSON 信封。引擎位于 `Api/src/shared/webhooks/`，每个教会的增删改查位于 `/membership/webhooks`（`WebhookController.ts`）。`connectorType` 字段会为 Slack / Discord 重新塑造请求体；`mailchimp` 连接器则更进一步，全权负责整个 HTTP 交互（针对 Mailchimp API 的每个事件方法/URL/认证，凭证加密存储于 `webhooks.connectorConfig`）。→ **[Webhooks](../api/webhooks.md)**
 
 ### MCP 服务器
 
-位于 `/mcp` 的面向 AI 的封装（`Api/src/modules/mcp/`）。三个通用工具——`list_endpoints`、`describe_endpoint`、`api_call`——将整个 REST 接口动态地暴露给任何 MCP 客户端。认证方式与其他所有接口相同，使用同一个 bearer token。对于使用 OAuth 登录的客户端（claude.ai 自定义连接器），`/mcp` 返回的 401 会附带一个 `WWW-Authenticate` 头，指向 `/.well-known/oauth-protected-resource`；而 `/.well-known/oauth-authorization-server` 会公布 `/membership/oauth` 端点、动态注册、PKCE 以及 B1Admin 的 `/oauth` 同意页面（`WellKnownController.ts`、`OAuthMetadata.ts`）。`api_call` 会在进程内重新进入 Express 栈，因此所有权限和教会范围规则依然生效。→ **[MCP 服务器](../api/mcp)**
+位于 `/mcp` 的面向 AI 的封装（`Api/src/modules/mcp/`）。三个通用工具——`list_endpoints`、`describe_endpoint`、`api_call`——将整个 REST 接口动态地暴露给任何 MCP 客户端。认证方式与其他所有接口相同，使用同一个 bearer token。对于使用 OAuth 登录的客户端（claude.ai 自定义连接器），`/mcp` 返回的 401 会附带一个 `WWW-Authenticate` 头，指向 `/.well-known/oauth-protected-resource`；而 `/.well-known/oauth-authorization-server` 会公布 `/membership/oauth` 端点、动态注册、PKCE 以及 B1Admin 的 `/oauth` 同意页面（`WellKnownController.ts`、`OAuthMetadata.ts`）。`api_call` 会在进程内重新进入 Express 栈，因此所有权限和教会范围规则依然生效。→ **[MCP 服务器](../api/mcp.md)**
 
 ### 内容提供方
 
-入站内容路径，位于独立的包 `Packages/content-providers`（`@churchapps/content-providers`）中，而不在 API 内。每个提供方都实现 `IProvider` 接口（`src/interfaces.ts`）——包括 `browse`、`getPlaylist`、`getInstructions` 以及认证钩子——并自行注册到 `Map` 注册表中（`src/providers/registry.ts`）。在这里，**B1 是 OAuth 客户端**：提供方声明其 `AuthType` 为 `none`、`oauth_pkce`、`device_flow` 或 `form_login` 之一，由共享的辅助工具（`OAuthHelper`、`DeviceFlowHelper`、`TokenHelper`、`ApiHelper`）针对外部来源执行客户端侧的 PKCE 或设备流程。目前共内置 11 个提供方，包括 Planning Center、Dropbox、Life.Church、CBN、BibleProject、Jesus Film、Lessons.church 和 B1.church，为 FreePlay 和 B1 应用提供内容。→ **[FreePlay 内容提供方](../freeplay-content-provider)**
+入站内容路径，位于独立的包 `Packages/content-providers`（`@churchapps/content-providers`）中，而不在 API 内。每个提供方都实现 `IProvider` 接口（`src/interfaces.ts`）——包括 `browse`、`getPlaylist`、`getInstructions` 以及认证钩子——并自行注册到 `Map` 注册表中（`src/providers/registry.ts`）。在这里，**B1 是 OAuth 客户端**：提供方声明其 `AuthType` 为 `none`、`oauth_pkce`、`device_flow` 或 `form_login` 之一，由共享的辅助工具（`OAuthHelper`、`DeviceFlowHelper`、`TokenHelper`、`ApiHelper`）针对外部来源执行客户端侧的 PKCE 或设备流程。目前共内置 11 个提供方，包括 Planning Center、Dropbox、Life.Church、CBN、BibleProject、Jesus Film、Lessons.church 和 B1.church，为 FreePlay 和 B1 应用提供内容。→ **[FreePlay 内容提供方](../freeplay-content-provider.md)**
 
 **年度计划**也依托于这一路径。课程发布者（需具备 `lessons.edit` 权限）在 Lessons.church 管理后台中维护有序的第 1/2/3 周序列（LessonsApi 数据表 `yearPlans` / `yearPlanWeeks`，可选 `startMonth`，每周可设置 `anchor` 为 `easter` / `christmas`）；LessonsApi 上的 `GET /yearPlans/public` 匿名提供已上线的计划，并从课程树中为每周补全程序/研读/场地信息。B1Admin 的**服务 → 计划 → 排定课程 → 应用年度计划**会调用该端点，并为每个包含的周写入一个 DoingApi 计划（`providerId=lessonschurch`，`providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`）。带有 `startMonth` 的计划会根据所选年份解析锚定周（复活节使用公历 computus 算法，圣诞节为不晚于 12 月 25 日的那个周日），并填充其间的周；不带 `startMonth` 的计划仍会将第 N 周映射为 `startDate + (N−1)×7` 天。来自外部 OLF 提供方的周或路径不完整的周，会在应用时跳过；教会可像编辑其他计划一样编辑生成的计划，而 FreePlay 会播放计划中的任何内容。
 
@@ -122,12 +123,12 @@ OAuth 访问令牌的结构与登录 JWT 完全相同——唯一的区别在于
 
 | 接口 | 认证机制 | 方向 | 实现位置 | 参考 |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT 或 `cak_…` 密钥 | 入站 | `Api/src/modules/*` | [API 密钥](../api/api-keys) |
-| API 密钥 | SHA-256 哈希的 `cak_` 令牌 | 凭证 | `Api/.../membership/controllers/ApiKeyController.ts` | [API 密钥](../api/api-keys) |
-| OAuth 2.0 / 连接应用 | 授权码（PKCE）· 设备 · 刷新 → JWT；动态客户端注册 | 入站 | `Api/.../membership/controllers/OAuthController.ts` | [连接应用](../api/connected-apps) |
-| Webhooks | 每个 hook 的密钥，HMAC-SHA256 签名 | 出站 | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks) |
-| MCP 服务器 | `Bearer` JWT、OAuth JWT（通过 `/.well-known` 发现）或 `cak_…` 密钥 | 入站（AI） | `Api/src/modules/mcp/` | [MCP 服务器](../api/mcp) |
-| 内容提供方 | 按提供方：无 / OAuth PKCE / 设备 / 表单 | 入站内容 | `Packages/content-providers/` | [内容提供方](../freeplay-content-provider) |
+| REST API | `Bearer` JWT 或 `cak_…` 密钥 | 入站 | `Api/src/modules/*` | [API 密钥](../api/api-keys.md) |
+| API 密钥 | SHA-256 哈希的 `cak_` 令牌 | 凭证 | `Api/.../membership/controllers/ApiKeyController.ts` | [API 密钥](../api/api-keys.md) |
+| OAuth 2.0 / 连接应用 | 授权码（PKCE）· 设备 · 刷新 → JWT；动态客户端注册 | 入站 | `Api/.../membership/controllers/OAuthController.ts` | [连接应用](../api/connected-apps.md) |
+| Webhooks | 每个 hook 的密钥，HMAC-SHA256 签名 | 出站 | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
+| MCP 服务器 | `Bearer` JWT、OAuth JWT（通过 `/.well-known` 发现）或 `cak_…` 密钥 | 入站（AI） | `Api/src/modules/mcp/` | [MCP 服务器](../api/mcp.md) |
+| 内容提供方 | 按提供方：无 / OAuth PKCE / 设备 / 表单 | 入站内容 | `Packages/content-providers/` | [内容提供方](../freeplay-content-provider.md) |
 
 ## 预构建连接器
 
@@ -143,9 +144,9 @@ ChurchApps 并不要求每个人都从零开始构建，而是在上述接口之
 
 ## 相关页面
 
-- [API 密钥](../api/api-keys) —— 最简单的凭证以及范围目录
-- [连接应用与 OAuth](../api/connected-apps) —— 多租户同意流程
-- [Webhooks](../api/webhooks) —— 出站事件系统
-- [MCP 服务器](../api/mcp) —— AI 集成封装
-- [FreePlay 内容提供方](../freeplay-content-provider) —— 成为入站内容来源
+- [API 密钥](../api/api-keys.md) —— 最简单的凭证以及范围目录
+- [连接应用与 OAuth](../api/connected-apps.md) —— 多租户同意流程
+- [Webhooks](../api/webhooks.md) —— 出站事件系统
+- [MCP 服务器](../api/mcp.md) —— AI 集成封装
+- [FreePlay 内容提供方](../freeplay-content-provider.md) —— 成为入站内容来源
 - [集成（最终用户）](/docs/b1-admin/integrations/) —— 预构建连接器设置指南

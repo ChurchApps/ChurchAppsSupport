@@ -1,5 +1,6 @@
 ---
 title: "Skrivarinställningar"
+description: "Ställ in en nätverksetikettskrivare för B1 Checkin-kiosker: hitta den på ditt Wi-Fi, välj den, gör en testutskrift och spara valet."
 ---
 
 # Skrivarinställningar
@@ -13,7 +14,7 @@ B1 Church Checkin kan skriva ut namnetiketter och hämtningsbevis för föräldr
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Logga in](./logging-in) i appen B1 Church Checkin och välj din kyrka
+- [Logga in](./logging-in.md) i appen B1 Church Checkin och välj din kyrka
 - Anslut en kompatibel nätverksansluten etikettskrivare till samma Wi-Fi-nätverk som surfplattan
 
 </div>
@@ -87,4 +88,4 @@ Om du flyttar kiosken till en annan plats eller ändrar din nätverksinstallatio
 
 ## Nästa steg
 
-När skrivaren är konfigurerad är du redo att börja checka in. Se [incheckningsflödet](../check-in/) för att lära dig hur hela processen fungerar, med början i [val av gudstjänst](../check-in/selecting-service).
+När skrivaren är konfigurerad är du redo att börja checka in. Se [incheckningsflödet](../check-in/index.md) för att lära dig hur hela processen fungerar, med början i [val av gudstjänst](../check-in/selecting-service.md).

@@ -1,5 +1,7 @@
 ---
-title: "编辑个人资料"
+title: "在 B1 Mobile 应用中编辑个人资料"
+sidebar_label: "编辑个人资料"
+description: "在 B1 Mobile 应用中更新您的姓名、电子邮件、电话、地址和头像，让教会的记录和通讯录保持最新。"
 ---
 
 # 编辑个人资料
@@ -13,7 +15,7 @@ title: "编辑个人资料"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 
 </div>
 
@@ -34,7 +36,7 @@ title: "编辑个人资料"
 3. 点击要更新的字段并进行更改。
 4. 完成后保存更改。
 
-您更新的信息会自动同步。任何查看您资料的人（取决于您的[隐私设置](./privacy-settings)）将立即看到新的详细信息。
+您更新的信息会自动同步。任何查看您资料的人（取决于您的[隐私设置](./privacy-settings.md)）将立即看到新的详细信息。
 
 :::tip
 保持电子邮件地址和电话号码为最新。教会使用这些信息向您发送重要更新和提醒。
@@ -46,7 +48,7 @@ title: "编辑个人资料"
 
 ## 跨 ChurchApps 的更改
 
-由于所有 ChurchApps 服务共享相同的账户系统，您在 B1 Mobile 中所做的更改会立即显示在 [B1.church](../../b1-church/)、教会的管理工具以及任何其他连接的服务中。您无需在每个地方分别更新信息。
+由于所有 ChurchApps 服务共享相同的账户系统，您在 B1 Mobile 中所做的更改会立即显示在 [B1.church](../../b1-church/index.md)、教会的管理工具以及任何其他连接的服务中。您无需在每个地方分别更新信息。
 
 :::info
 某些教会要求管理员审批特定的资料更改。如果您的更新没有立即显示，请检查个人资料界面上的**待审核**标签查看其状态。
@@ -54,5 +56,5 @@ title: "编辑个人资料"
 
 ## 相关文章
 
-- [家庭成员](./household) -- 查看和管理您的家庭成员
-- [隐私设置](./privacy-settings) -- 控制其他人可以看到的关于您的信息
+- [家庭成员](./household.md) -- 查看和管理您的家庭成员
+- [隐私设置](./privacy-settings.md) -- 控制其他人可以看到的关于您的信息

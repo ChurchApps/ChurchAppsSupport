@@ -1,5 +1,6 @@
 ---
 title: "Group Members"
+description: "Add, remove, and designate leaders for group members in B1 Admin, then email, text, print, or export the member list from the group page."
 ---
 
 # Group Members

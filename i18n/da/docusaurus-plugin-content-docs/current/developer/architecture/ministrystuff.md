@@ -29,7 +29,7 @@ En kirkes udbyderrække (`content.storageProviders`, administreret i B1Admin →
 
 Scope-note: Udbydervalget dækker filer og ressourcer i indholdsflowet, hvor de store medier ligger. Galleri-, logo- og fotouploads bliver på standardudbyderen. De lister nøgler fra lagringen og bygger URL'er på klientsiden, så kirkespecifik rodplacering gælder endnu ikke.
 
-Den samme grænseflade driver også [Bring-Your-Own Storage](./byos-storage) (egen lagring): kirker kan forbinde Google Drive, Dropbox, OneDrive eller deres egen S3-kompatible bucket i stedet for en MinistryStuff-plan.
+Den samme grænseflade driver også [Bring-Your-Own Storage](./byos-storage.md) (egen lagring): kirker kan forbinde Google Drive, Dropbox, OneDrive eller deres egen S3-kompatible bucket i stedet for en MinistryStuff-plan.
 
 ## Fakturering
 

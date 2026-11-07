@@ -1,5 +1,6 @@
 ---
 title: "Guia: Gere Relatórios de Doações de Fim de Ano"
+description: "No B1 Admin, conclua os registros de doações do ano, confira as configurações fiscais dos fundos e gere extratos dedutíveis para cada doador."
 ---
 
 # Gere Relatórios de Doações de Fim de Ano

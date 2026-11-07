@@ -1,5 +1,7 @@
 ---
-title: "이벤트"
+title: "B1.church 교회 행사: 찾아보기 및 등록"
+sidebar_label: "이벤트"
+description: "B1.church에서 다가오는 교회 행사를 둘러보고, 등록 상태를 확인하고, 신청하거나 행사를 캘린더에 추가하세요."
 ---
 
 # 이벤트
@@ -43,7 +45,7 @@ B1.church의 이벤트 섹션을 사용하면 다가오는 교회 이벤트를 �
 
 ## 더 알아보기
 
-- [이벤트 등록하기](./registering) -- 이벤트에 등록하는 단계별 가이드
-- [내 등록 내역](./my-registrations) -- 등록 내역 보기, 잔액 결제, 수정 또는 취소
-- [이벤트 및 방 요청하기](./requesting-events) -- 필요한 방과 리소스와 함께 이벤트 요청
-- [셀프 체크인](../checkin/self-checkin) -- 이벤트 도착 시 체크인
+- [이벤트 등록하기](./registering.md) -- 이벤트에 등록하는 단계별 가이드
+- [내 등록 내역](./my-registrations.md) -- 등록 내역 보기, 잔액 결제, 수정 또는 취소
+- [이벤트 및 방 요청하기](./requesting-events.md) -- 필요한 방과 리소스와 함께 이벤트 요청
+- [셀프 체크인](../checkin/self-checkin.md) -- 이벤트 도착 시 체크인

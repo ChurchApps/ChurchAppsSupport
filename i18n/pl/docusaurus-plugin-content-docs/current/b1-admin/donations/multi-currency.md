@@ -1,5 +1,6 @@
 ---
 title: "Obsługa wielu walut"
+description: "Rejestruj i raportuj darowizny w różnych walutach w B1 Admin, w tym ręczne wpisy, darowizny online przez Stripe oraz zasady przeliczania sum łącznych."
 ---
 
 # Obsługa wielu walut

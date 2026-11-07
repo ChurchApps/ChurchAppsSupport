@@ -1,5 +1,6 @@
 ---
 title: "Imisebenti"
+description: "Dala, nika, futsi uvale timisebenti ku-B1 Admin, utfole ku-Serving > My Work, bese usetela tikhumbuto temalanga ekugcina ukuze emisebentini ingaphuthelwa."
 ---
 
 # Imisebenti
@@ -54,7 +55,7 @@ Cindzetela nayiphi umsebenti kute uvule likhasi laso lelinemininingwane. Kusuka 
 4. Imisebenti lesivaliwe iyasuswa kumbukiso wekwehluleka kodvwa ingakafinyelelwa ngekuvula **Show Closed**.
 
 :::info
-Ungasetha kutitenzela kwemisebenti lephindzaphindzako kute yakhiwe ngekulandzelana kwesikhatsi. Bona [Kutitenzela](./automations.md) kute utfole imininingwane yekusetha loku.
+Ungasetha kutitenzela kwemisebenti lephindzaphindzako kute yakhiwe ngekulandzelana kwesikhatsi. Bona [Kutitenzela](./workflows.md) kute utfole imininingwane yekusetha loku.
 :::
 
 :::tip
@@ -64,5 +65,5 @@ Nawudzinga kuhambisa bantfu labaningi ngendlela lefanako yetigaba -- njengekulan
 ## Tinyatselo Letilandzelako
 
 - Hambisa bantfu ngenchubo yetinyatselo letiningi nge[Tinchubo Temisebenti](./workflows.md)
-- Setha [Kutitenzela](./automations.md) kute wakhe imisebenti lephindzaphindzako ngekutigcina
+- Setha [Kutitenzela](./workflows.md) kute wakhe imisebenti lephindzaphindzako ngekutigcina
 - Sebentisa imisebenti kanye [netinhlelo tenkonzo](./plans.md) kute ulandzelele tintfo tekulungiselela inkonzo

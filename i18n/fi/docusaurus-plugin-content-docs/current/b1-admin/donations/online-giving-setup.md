@@ -1,5 +1,6 @@
 ---
 title: "Verkkolahjoitusten määrittäminen"
+description: "Yhdistä Stripe, PayPal, Kingdom Funding tai Paystack B1 Adminiin, jotta jäsenet voivat lahjoittaa verkossa B1.church-sivustolla ja lahjat synkronoituvat."
 ---
 
 # Verkkolahjoitusten määrittäminen

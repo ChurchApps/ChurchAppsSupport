@@ -35,7 +35,7 @@ A kvóta a csomag bájtmennyisége, amelyet a `storageObjects` tábla számol (`
 
 Hatókör: a szolgáltató kiválasztása a tartalmi **fájlok és erőforrások** folyamatát fedi le, ahol a nagy mennyiségű média található. A galéria-, logó- és fotófeltöltések az alapértelmezett szolgáltatón maradnak. Ezek a tárolóból listázzák a kulcsokat, és az URL-eket kliensoldalon építik fel, ezért a gyülekezetenkénti gyökérkönyvtár-beállítás egyelőre nem alkalmazható rájuk.
 
-Ugyanez a csatlakozási pont működteti a [Saját tárhely (Bring-Your-Own Storage)](./byos-storage) funkciót is: a gyülekezetek a MinistryStuff-csomag helyett csatlakoztathatják a Google Drive-ot, a Dropboxot, az OneDrive-ot vagy saját S3-kompatibilis tárolójukat.
+Ugyanez a csatlakozási pont működteti a [Saját tárhely (Bring-Your-Own Storage)](./byos-storage.md) funkciót is: a gyülekezetek a MinistryStuff-csomag helyett csatlakoztathatják a Google Drive-ot, a Dropboxot, az OneDrive-ot vagy saját S3-kompatibilis tárolójukat.
 
 ## Számlázás
 

@@ -1,5 +1,6 @@
 ---
 title: "Kalendarz zbiorczy"
+description: "Skonfiguruj zbiorczy kalendarz kościoła w B1 Admin z wydarzeniami wielu grup, a potem udostępnij go na stronie, przez subskrypcję ICS lub jako plik."
 ---
 
 # Kalendarz zbiorczy
@@ -15,7 +16,7 @@ Kalendarz zbiorczy łączy wydarzenia z wielu grup w jeden wspólny widok kalend
 
 - Skonfiguruj [grupy](../groups/creating-groups.md), których wydarzenia chcesz uwzględnić
 - Upewnij się, że liderzy grup dodali wydarzenia do swoich grup
-- Zapoznaj się z podstawami [tworzenia kalendarzy](creating-calendars)
+- Zapoznaj się z podstawami [tworzenia kalendarzy](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Na kalendarzu zbiorczym na Twojej stronie internetowej oraz w jego subskrypcji I
 
 ## Następne kroki
 
-- [Tworzenie kalendarzy](creating-calendars) -- Poznaj podstawy tworzenia kalendarza
-- [Przegląd kalendarzy](./) -- Wróć do przeglądu kalendarzy
+- [Tworzenie kalendarzy](./creating-calendars.md) -- Poznaj podstawy tworzenia kalendarza
+- [Przegląd kalendarzy](./index.md) -- Wróć do przeglądu kalendarzy

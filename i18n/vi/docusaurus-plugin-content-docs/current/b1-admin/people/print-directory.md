@@ -1,5 +1,6 @@
 ---
 title: "Bản in danh bạ"
+description: "Tạo danh bạ thành viên có thể in, nhóm theo hộ gia đình từ B1 Admin với ảnh, thông tin liên hệ và sinh nhật, định dạng khổ giấy Letter."
 ---
 
 # Bản in danh bạ

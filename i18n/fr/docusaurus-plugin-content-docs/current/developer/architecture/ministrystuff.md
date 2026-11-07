@@ -29,7 +29,7 @@ La ligne de fournisseur d'une église (`content.storageProviders`, gérée dans 
 
 Portée note : la sélection du fournisseur couvre le flux **fichiers/ressources** de contenu (où vivent les médias en masse). Les uploads galerie/logo/photo restent sur le fournisseur par défaut -- ils listent les clés du stockage et construisent les URLs côté client, pour que le renvoi par église ne s'applique pas encore.
 
-La même couture alimente également le [Bring-Your-Own Storage](./byos-storage) : les églises peuvent lier Google Drive, Dropbox, OneDrive ou leur propre seau S3-compatible à la place d'un plan MinistryStuff.
+La même couture alimente également le [Bring-Your-Own Storage](./byos-storage.md) : les églises peuvent lier Google Drive, Dropbox, OneDrive ou leur propre seau S3-compatible à la place d'un plan MinistryStuff.
 
 ## Facturation
 

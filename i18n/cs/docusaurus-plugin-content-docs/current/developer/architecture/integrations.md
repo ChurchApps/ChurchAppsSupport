@@ -1,5 +1,6 @@
 ---
 title: "Integrační a rozšiřující plocha"
+description: "Přehled všech způsobů připojení k ChurchApps B1: REST API, API klíče, OAuth, webhooky, MCP a poskytovatelé obsahu, s odkazy na každou referenci."
 ---
 
 # Integrační a rozšiřující plocha
@@ -14,12 +15,12 @@ Vše, co se může třetí strana připojit, prochází jedním API a jedním au
 
 Existuje šest způsobů, jak dovnitř a ven, a všechny sdílejí stejnou autentizační vrstvu:
 
-- **[REST API](../api/api-keys)** — celý produktový povrch, volatelný s bearer tokenem z jakéhokoli jazyka.
-- **[API klíče](../api/api-keys)** — nejjednodušší přihlašovací údaj: token `cak_…` vázaný na jednu osobu v jednom sboru.
-- **[OAuth 2.0 a propojené aplikace](../api/connected-apps)** — souhlas na úrovni sboru pro vícenájemcové aplikace; vydává stejný JWT, jaký dostane uživatel.
-- **[Webhooky](../api/webhooks)** — podepsané, trvale doručované odchozí události.
-- **[MCP server](../api/mcp)** — wrapper nad REST API určený pro AI na `/mcp`.
-- **[Poskytovatelé obsahu](../freeplay-content-provider)** — příchozí cesta pro externí mediální knihovny do FreePlay a aplikací B1.
+- **[REST API](../api/api-keys.md)** — celý produktový povrch, volatelný s bearer tokenem z jakéhokoli jazyka.
+- **[API klíče](../api/api-keys.md)** — nejjednodušší přihlašovací údaj: token `cak_…` vázaný na jednu osobu v jednom sboru.
+- **[OAuth 2.0 a propojené aplikace](../api/connected-apps.md)** — souhlas na úrovni sboru pro vícenájemcové aplikace; vydává stejný JWT, jaký dostane uživatel.
+- **[Webhooky](../api/webhooks.md)** — podepsané, trvale doručované odchozí události.
+- **[MCP server](../api/mcp.md)** — wrapper nad REST API určený pro AI na `/mcp`.
+- **[Poskytovatelé obsahu](../freeplay-content-provider.md)** — příchozí cesta pro externí mediální knihovny do FreePlay a aplikací B1.
 
 Vše kromě poskytovatelů obsahu obsluhuje jediné monolitické API (repozitář [Api](https://github.com/ChurchApps/Api)), jehož moduly jsou připojeny pod stabilními základními cestami — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting` a `/mcp`.
 
@@ -80,7 +81,7 @@ Kontrolery omezují akce voláním `au.checkAccess(contentType, action)` proti p
 - Rozsah může oprávnění pouze *odebírat*, takže omezený přihlašovací údaj nikdy nemůže povýšit na správce serveru nebo domény (tato oprávnění jsou záměrně nenamapována na žádný rozsah).
 - API klíče nesou prefix `cak_`; `CustomAuthProvider.getUser()` se podle něj větví, hashuje tajemství a při každém volání znovu načte aktuální oprávnění RBAC vlastnící osoby.
 
-Úplný katalog rozsahů viz [API klíče → Rozsahy](../api/api-keys#scopes).
+Úplný katalog rozsahů viz [API klíče → Rozsahy](../api/api-keys.md#scopes).
 
 ## Přehled referencí ploch
 
@@ -90,7 +91,7 @@ Kompletní produktový povrch. Jakýkoli ověřený endpoint přijímá buď JWT
 
 ### API klíče
 
-Osobní přístupový token `cak_<prefix>.<secret>`, vytvořený v **B1Admin → Nastavení → Vývojář → API klíče**. Ukládá se pouze hash SHA-256; surový klíč se zobrazí jednou. Spravuje se na `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Nejvhodnější pro vlastní skripty jednoho sboru a pro konektory jako Zapier, Make a Google Sheets. → **[API klíče](../api/api-keys)**
+Osobní přístupový token `cak_<prefix>.<secret>`, vytvořený v **B1Admin → Nastavení → Vývojář → API klíče**. Ukládá se pouze hash SHA-256; surový klíč se zobrazí jednou. Spravuje se na `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Nejvhodnější pro vlastní skripty jednoho sboru a pro konektory jako Zapier, Make a Google Sheets. → **[API klíče](../api/api-keys.md)**
 
 ### OAuth 2.0 a propojené aplikace
 
@@ -102,19 +103,19 @@ Pro vícenájemcové aplikace, které potřebují souhlas každého sboru. Imple
 
 Veřejní klienti se mohou také sami registrovat přes `POST /oauth/register` (dynamická registrace klienta podle RFC 7591); dostanou `client_id` bez tajemství a jejich redirect URI musí být `https` nebo loopback.
 
-**Propojená aplikace** je pohled na udělený token z pohledu správce sboru; seznam a možnost odvolání je na `/membership/oauth/connections`. Kontroler také hostuje most **relay-session** OAuth (`/oauth/relay/*`), který umožňuje zařízení bez prohlížeče dokončit přihlášení proti *externímu* poskytovateli. → **[Propojené aplikace a OAuth](../api/connected-apps)**
+**Propojená aplikace** je pohled na udělený token z pohledu správce sboru; seznam a možnost odvolání je na `/membership/oauth/connections`. Kontroler také hostuje most **relay-session** OAuth (`/oauth/relay/*`), který umožňuje zařízení bez prohlížeče dokončit přihlášení proti *externímu* poskytovateli. → **[Propojené aplikace a OAuth](../api/connected-apps.md)**
 
 ### Webhooky
 
-Jediná odchozí plocha. Sbor přihlásí k odběru událostí veřejný HTTPS endpoint; když nastane odpovídající změna, `WebhookDispatcher.emit(churchId, event, payload)` obohatí payloady obsahující pouze ID o zobrazovaná jména (`personName`, `groupName`, `formName` — vyhledávání proběhne jen tehdy, když se odběr shoduje), zaznamená doručení a na pozadí worker odešle podepsanou JSON obálku s opakováním, backoffem a opětovným doručením. Engine je v `Api/src/shared/webhooks/`, CRUD pro každý sbor pod `/membership/webhooks` (`WebhookController.ts`). Pole `connectorType` přetváří tělo pro Slack a Discord; konektor `mailchimp` jde dál a vlastní celou HTTP výměnu (metoda, URL a autentizace pro každou událost vůči API Mailchimpu; přihlašovací údaje jsou šifrované v `webhooks.connectorConfig`). → **[Webhooky](../api/webhooks)**
+Jediná odchozí plocha. Sbor přihlásí k odběru událostí veřejný HTTPS endpoint; když nastane odpovídající změna, `WebhookDispatcher.emit(churchId, event, payload)` obohatí payloady obsahující pouze ID o zobrazovaná jména (`personName`, `groupName`, `formName` — vyhledávání proběhne jen tehdy, když se odběr shoduje), zaznamená doručení a na pozadí worker odešle podepsanou JSON obálku s opakováním, backoffem a opětovným doručením. Engine je v `Api/src/shared/webhooks/`, CRUD pro každý sbor pod `/membership/webhooks` (`WebhookController.ts`). Pole `connectorType` přetváří tělo pro Slack a Discord; konektor `mailchimp` jde dál a vlastní celou HTTP výměnu (metoda, URL a autentizace pro každou událost vůči API Mailchimpu; přihlašovací údaje jsou šifrované v `webhooks.connectorConfig`). → **[Webhooky](../api/webhooks.md)**
 
 ### MCP server
 
-AI wrapper na `/mcp` (`Api/src/modules/mcp/`). Tři generické nástroje — `list_endpoints`, `describe_endpoint`, `api_call` — dynamicky zpřístupňují celou REST plochu jakémukoli MCP klientovi. Autentizace je stejný bearer token jako u všeho ostatního. Pro klienty, kteří se přihlašují přes OAuth (vlastní konektory claude.ai), nese odpověď 401 z `/mcp` hlavičku `WWW-Authenticate` ukazující na `/.well-known/oauth-protected-resource`, a `/.well-known/oauth-authorization-server` inzeruje endpointy `/membership/oauth`, dynamickou registraci, PKCE a stránku souhlasu B1Admin `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` znovu vstupuje do Express zásobníku in-process, takže se uplatní každé pravidlo oprávnění a určování rozsahu podle sboru. → **[MCP server](../api/mcp)**
+AI wrapper na `/mcp` (`Api/src/modules/mcp/`). Tři generické nástroje — `list_endpoints`, `describe_endpoint`, `api_call` — dynamicky zpřístupňují celou REST plochu jakémukoli MCP klientovi. Autentizace je stejný bearer token jako u všeho ostatního. Pro klienty, kteří se přihlašují přes OAuth (vlastní konektory claude.ai), nese odpověď 401 z `/mcp` hlavičku `WWW-Authenticate` ukazující na `/.well-known/oauth-protected-resource`, a `/.well-known/oauth-authorization-server` inzeruje endpointy `/membership/oauth`, dynamickou registraci, PKCE a stránku souhlasu B1Admin `/oauth` (`WellKnownController.ts`, `OAuthMetadata.ts`). `api_call` znovu vstupuje do Express zásobníku in-process, takže se uplatní každé pravidlo oprávnění a určování rozsahu podle sboru. → **[MCP server](../api/mcp.md)**
 
 ### Poskytovatelé obsahu
 
-Příchozí cesta obsahu je v samostatném balíčku `Packages/content-providers` (`@churchapps/content-providers`), nikoli v API. Každý poskytovatel implementuje rozhraní `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` a háčky autentizace — a sám se registruje do registru `Map` (`src/providers/registry.ts`). Zde je **B1 OAuth klientem**: poskytovatel deklaruje `AuthType` jako `none`, `oauth_pkce`, `device_flow` nebo `form_login` a sdílené pomocné funkce (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) provádějí na straně klienta PKCE nebo device flow vůči externímu zdroji. Dnes je dodáváno jedenáct poskytovatelů — včetně Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church a B1.church — které napájejí FreePlay a aplikace B1. → **[FreePlay poskytovatel obsahu](../freeplay-content-provider)**
+Příchozí cesta obsahu je v samostatném balíčku `Packages/content-providers` (`@churchapps/content-providers`), nikoli v API. Každý poskytovatel implementuje rozhraní `IProvider` (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions` a háčky autentizace — a sám se registruje do registru `Map` (`src/providers/registry.ts`). Zde je **B1 OAuth klientem**: poskytovatel deklaruje `AuthType` jako `none`, `oauth_pkce`, `device_flow` nebo `form_login` a sdílené pomocné funkce (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) provádějí na straně klienta PKCE nebo device flow vůči externímu zdroji. Dnes je dodáváno jedenáct poskytovatelů — včetně Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church a B1.church — které napájejí FreePlay a aplikace B1. → **[FreePlay poskytovatel obsahu](../freeplay-content-provider.md)**
 
 **Plány na rok** využívají tuto cestu. Autor kurikula (s oprávněním `lessons.edit`) udržuje uspořádané sekvence týdne 1/2/3 v administraci Lessons.church (tabulky `LessonsApi` `yearPlans` a `yearPlanWeeks`, s volitelným `startMonth` a per-týdenní `anchor` `easter` nebo `christmas`). `GET /yearPlans/public` na LessonsApi doručuje živé plány anonymně a u každého týdne doplní program, studii a místo ze stromu lekcí. V **B1Admin → Servírování → Plány → Naplánovat lekci → Použít plán na rok** se tento endpoint použije a zapíše se jeden plán DoingApi na každý zahrnutý týden (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Plány s `startMonth` přiřadí kotvené týdny k vybranému roku (Velikonoce podle gregoriánského výpočtu, Vánoce jako neděle na den nebo před 25. prosincem) a vyplní úseky mezi nimi; plány bez `startMonth` stále mapují týden N na `startDate + (N−1)×7` dní. Týdny z externích poskytovatelů OLF nebo s neúplnou cestou se při aplikaci přeskočí. Sbory plány upravují jako jakékoli jiné a FreePlay přehraje to, co je na plánu.
 
@@ -122,12 +123,12 @@ Příchozí cesta obsahu je v samostatném balíčku `Packages/content-providers
 
 | Plocha | Mechanismus autentizace | Směr | Kde je implementováno | Reference |
 |---|---|---|---|---|
-| REST API | `Bearer` JWT nebo klíč `cak_…` | Příchozí | `Api/src/modules/*` | [API klíče](../api/api-keys) |
-| API klíče | Token `cak_` hashovaný SHA-256 | Přihlašovací údaj | `Api/.../membership/controllers/ApiKeyController.ts` | [API klíče](../api/api-keys) |
-| OAuth 2.0 / Propojené aplikace | Auth code (PKCE) · device · refresh → JWT; dynamická registrace klienta | Příchozí | `Api/.../membership/controllers/OAuthController.ts` | [Propojené aplikace](../api/connected-apps) |
-| Webhooky | Tajemství pro každý hook, podpis HMAC-SHA256 | Odchozí | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooky](../api/webhooks) |
-| MCP server | `Bearer` JWT, OAuth JWT (objevený přes `/.well-known`), nebo klíč `cak_…` | Příchozí (AI) | `Api/src/modules/mcp/` | [MCP server](../api/mcp) |
-| Poskytovatelé obsahu | Podle poskytovatele: žádný / OAuth PKCE / device / formulář | Příchozí obsah | `Packages/content-providers/` | [Poskytovatel obsahu](../freeplay-content-provider) |
+| REST API | `Bearer` JWT nebo klíč `cak_…` | Příchozí | `Api/src/modules/*` | [API klíče](../api/api-keys.md) |
+| API klíče | Token `cak_` hashovaný SHA-256 | Přihlašovací údaj | `Api/.../membership/controllers/ApiKeyController.ts` | [API klíče](../api/api-keys.md) |
+| OAuth 2.0 / Propojené aplikace | Auth code (PKCE) · device · refresh → JWT; dynamická registrace klienta | Příchozí | `Api/.../membership/controllers/OAuthController.ts` | [Propojené aplikace](../api/connected-apps.md) |
+| Webhooky | Tajemství pro každý hook, podpis HMAC-SHA256 | Odchozí | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooky](../api/webhooks.md) |
+| MCP server | `Bearer` JWT, OAuth JWT (objevený přes `/.well-known`), nebo klíč `cak_…` | Příchozí (AI) | `Api/src/modules/mcp/` | [MCP server](../api/mcp.md) |
+| Poskytovatelé obsahu | Podle poskytovatele: žádný / OAuth PKCE / device / formulář | Příchozí obsah | `Packages/content-providers/` | [Poskytovatel obsahu](../freeplay-content-provider.md) |
 
 ## Hotové konektory
 
@@ -143,9 +144,9 @@ Pro vlastní kód obaluje **[`@churchapps/integration-sdk`](https://www.npmjs.co
 
 ## Související stránky
 
-- [API klíče](../api/api-keys) — nejjednodušší přihlašovací údaj a katalog rozsahů
-- [Propojené aplikace a OAuth](../api/connected-apps) — toky souhlasu pro vícenájemcové aplikace
-- [Webhooky](../api/webhooks) — systém odchozích událostí
-- [MCP server](../api/mcp) — AI integrační wrapper
-- [FreePlay poskytovatel obsahu](../freeplay-content-provider) — jak se stát příchozím zdrojem obsahu
+- [API klíče](../api/api-keys.md) — nejjednodušší přihlašovací údaj a katalog rozsahů
+- [Propojené aplikace a OAuth](../api/connected-apps.md) — toky souhlasu pro vícenájemcové aplikace
+- [Webhooky](../api/webhooks.md) — systém odchozích událostí
+- [MCP server](../api/mcp.md) — AI integrační wrapper
+- [FreePlay poskytovatel obsahu](../freeplay-content-provider.md) — jak se stát příchozím zdrojem obsahu
 - [Integrace (pro koncové uživatele)](/docs/b1-admin/integrations/) — průvodci nastavením hotových konektorů

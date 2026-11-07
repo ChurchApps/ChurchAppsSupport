@@ -1,5 +1,7 @@
 ---
-title: "Lekce (zastaralé)"
+title: "Zastaralá záložka Lessons v B1.church"
+sidebar_label: "Lekce (zastaralé)"
+description: "Záložka Lessons v B1.church je zastaralá. Kurikulum lekcí najdete na Lessons.church a přehrajete ho na TV ve třídě pomocí FreePlay."
 ---
 
 # Lekce (zastaralé)
@@ -9,7 +11,7 @@ Vložená karta **Lekce** na B1.church byla zrušena. Přehrávání učebních 
 
 Chcete-li lekce procházet, plánovat nebo upravovat přímo, přihlaste se ve svém prohlížeči na [Lessons.church](https://lessons.church). Chcete-li přehrávat lekce na třídní televizi, nainstalujte si [FreePlay](/docs/freeplay/getting-started/) na své TV zařízení.
 
-Rodiče skupin spojených s typem plánu lekcí v B1Admin vidí **lekci tohoto týdne** na stránce [podrobnosti skupiny](/docs/b1-church/groups/group-details.md), nikoli na této zastaralé kartě.
+Rodiče skupin spojených s typem plánu lekcí v B1Admin vidí **lekci tohoto týdne** na stránce [podrobnosti skupiny](../groups/group-details.md), nikoli na této zastaralé kartě.
 :::
 
 <div class="article-intro">

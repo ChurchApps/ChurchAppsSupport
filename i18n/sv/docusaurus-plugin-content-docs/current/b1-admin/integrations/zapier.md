@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Koppla B1 Admin till Zapier för att starta automatiseringar vid nya personer, gåvor och gruppmedlemmar och skriv tillbaka poster till B1 utan kodning."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Välj en utlösare och lägg sedan till ett eller flera åtgärdssteg. Exempel f
 ### Publicera gåvor i en Slack-kanal med ett rikare kort än den inbyggda kopplingen
 
 - **Utlösare** — B1: Ny gåva
-- **Åtgärd** — Slack: Skicka kanalmeddelande. Skapa valfri layout med knappar, bilagor osv. som den inbyggda [Slack-kopplingen](./slack-discord) inte klarar av.
+- **Åtgärd** — Slack: Skicka kanalmeddelande. Skapa valfri layout med knappar, bilagor osv. som den inbyggda [Slack-kopplingen](./slack-discord.md) inte klarar av.
 
 ### Lägg till nya gruppmedlemmar i en Google-grupp
 
@@ -106,6 +107,6 @@ Det innebär att utlösaren bara aktiveras för händelser som inträffar **efte
 
 ## Se även
 
-- [Make](./make): samma mönster, annan plattform
-- [Slack & Discord](./slack-discord): enklare chattaviseringar utan Zapier
+- [Make](./make.md): samma mönster, annan plattform
+- [Slack & Discord](./slack-discord.md): enklare chattaviseringar utan Zapier
 - [Webhooks (utvecklarreferens)](/docs/developer/api/webhooks)

@@ -1,5 +1,6 @@
 ---
 title: "Lokalios API sąranka"
+description: "Nustatykite ChurchApps API lokaliai: klonuokite saugyklą, sukonfigūruokite šešias MySQL duomenų bazes, inicializuokite schemą ir paleiskite kūrimo serverį."
 ---
 
 # Lokalios API sąranka
@@ -13,9 +14,9 @@ title: "Lokalios API sąranka"
 <div class="prereqs">
 <h4>Prieš pradėdami</h4>
 
-- Įdiekite **Node.js 24+**, **Git** ir **MySQL 8.0+** -- žr. [Reikalavimai](../setup/prerequisites)
+- Įdiekite **Node.js 24+**, **Git** ir **MySQL 8.0+** -- žr. [Reikalavimai](../setup/prerequisites.md)
 - Sukurkite MySQL naudotoją su duomenų bazių kūrimo teisėmis
-- Peržiūrėkite [Aplinkos kintamųjų](../setup/environment-variables) nuorodą, kurioje aprašyta API konfigūracija
+- Peržiūrėkite [Aplinkos kintamųjų](../setup/environment-variables.md) nuorodą, kurioje aprašyta API konfigūracija
 
 </div>
 
@@ -82,7 +83,7 @@ API paleidžiamas su karštuoju perkrovimu adresu [http://localhost:8084](http:/
 
 ## Diegimas
 
-Pastraipos aplinka nebenaudojama. API diegiamas į demonstracinę aplinką po kiekvieno įkėlimo į `main` šaką, o į produkcinę aplinką -- rankiniu **Deploy Prod** darbo eigos paleidimu, kuris taip pat taiko laukiančias duomenų bazės migracijas. Išsamesnės informacijos rasite [API diegimas](../deployment/apis).
+Pastraipos aplinka nebenaudojama. API diegiamas į demonstracinę aplinką po kiekvieno įkėlimo į `main` šaką, o į produkcinę aplinką -- rankiniu **Deploy Prod** darbo eigos paleidimu, kuris taip pat taiko laukiančias duomenų bazės migracijas. Išsamesnės informacijos rasite [API diegimas](../deployment/apis.md).
 
 ## Vietinis bibliotekų kūrimas
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Taip galite išbandyti bibliotekos pakeitimus su API, nepublikuodami jų npm. Išsamiau žr. [Bendrosios bibliotekos](../shared-libraries/#local-development-against-a-consuming-app) -- ir niekada necommitinkite portalo nuorodos, kurią `link` įrašo į `package.json`.
+Taip galite išbandyti bibliotekos pakeitimus su API, nepublikuodami jų npm. Išsamiau žr. [Bendrosios bibliotekos](../shared-libraries/index.md#local-development-against-a-consuming-app) -- ir niekada necommitinkite portalo nuorodos, kurią `link` įrašo į `package.json`.
 
 ## Susiję straipsniai
 
-- **[Duomenų bazė](./database)** -- Supraskite kiekvienam moduliui skirtos duomenų bazės architektūrą
-- **[Modulio struktūra](./module-structure)** -- Kaip organizuoti valdikliai, saugyklos ir modeliai
-- **[Bendrosios bibliotekos](../shared-libraries/)** -- Darbas su `@churchapps/helpers` ir `@churchapps/apihelper`
+- **[Duomenų bazė](./database.md)** -- Supraskite kiekvienam moduliui skirtos duomenų bazės architektūrą
+- **[Modulio struktūra](./module-structure.md)** -- Kaip organizuoti valdikliai, saugyklos ir modeliai
+- **[Bendrosios bibliotekos](../shared-libraries/index.md)** -- Darbas su `@churchapps/helpers` ir `@churchapps/apihelper`

@@ -1,5 +1,6 @@
 ---
 title: "Arquitetura de notificações e lembretes"
+description: "Como a API do B1 Admin roteia notificações, lembretes agendados, limites de e-mail e opt-outs de SMS por um único funil de envio e portão de preferências."
 ---
 
 # Arquitetura de notificações e lembretes
@@ -185,6 +186,6 @@ Localmente, a mesma lógica pode ser acionada sob demanda com `npm run timer:30m
 
 ## Páginas relacionadas
 
-- [Arquitetura em tempo real](../realtime) — o protocolo WebSocket e as primitivas do cliente (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) sobre as quais o nível de entrega no app se apoia
-- [Notificações Web Push](../web-push) — configuração do VAPID e o caminho da Push API do navegador usado pelo nível de escalonamento push
-- [Endpoints de mensagens](../api/endpoints/messaging) — a superfície REST completa de mensagens, conversas, conexões e rotas de notificações/lembretes
+- [Arquitetura em tempo real](../realtime.md) — o protocolo WebSocket e as primitivas do cliente (`SocketHelper`, `SubscriptionManager`, `ConversationStore`) sobre as quais o nível de entrega no app se apoia
+- [Notificações Web Push](../web-push.md) — configuração do VAPID e o caminho da Push API do navegador usado pelo nível de escalonamento push
+- [Endpoints de mensagens](../api/endpoints/messaging.md) — a superfície REST completa de mensagens, conversas, conexões e rotas de notificações/lembretes

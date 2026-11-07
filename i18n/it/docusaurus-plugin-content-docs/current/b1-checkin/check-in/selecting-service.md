@@ -1,5 +1,6 @@
 ---
 title: "Selezionare un servizio"
+description: "Scegli il culto a cui partecipi nella schermata dei servizi di B1 Checkin: stabilisce gli orari e i gruppi mostrati nel resto del flusso di check-in."
 ---
 
 # Selezionare un servizio
@@ -13,7 +14,7 @@ Il primo passo di ogni check-in è scegliere a quale servizio partecipi. La sche
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Accedi](../getting-started/logging-in) all'app B1 Church Checkin e seleziona la tua chiesa
+- [Accedi](../getting-started/logging-in.md) all'app B1 Church Checkin e seleziona la tua chiesa
 - Assicurati che l'amministratore della chiesa abbia [configurato servizi e orari di culto](../../b1-admin/attendance/setup.md) in B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Il primo passo di ogni check-in è scegliere a quale servizio partecipi. La sche
 2. Vedrai un elenco di tutti i servizi configurati per la tua chiesa. Ogni servizio compare come una scheda con il nome del servizio (ad esempio "Culto della domenica mattina" o "Mercoledì sera").
 3. Tocca il servizio a cui partecipi.
 
-L'app carica gli orari di culto e i gruppi associati a quel servizio, poi ti porta alla [schermata di ricerca dei membri](./looking-up-members).
+L'app carica gli orari di culto e i gruppi associati a quel servizio, poi ti porta alla [schermata di ricerca dei membri](./looking-up-members.md).
 
 ## Quando il check-in non è aperto
 
-Se l'amministratore ha assegnato a un orario di culto una [pianificazione del check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule), l'app permette alle famiglie di scegliere quell'orario di culto solo mentre la sua finestra di check-in è aperta (ad esempio, da 30 minuti prima del culto fino a poco dopo la sua fine). Al di fuori di quella finestra, l'orario di culto viene elencato come **Chiuso**, con l'indicazione di quando riapre, se nota, ad esempio **Chiuso · apre dom 9:30**. Questi orari compaiono comunque nella [schermata della famiglia](./household-review) ma, invece di offrire un pulsante per il gruppo, sono contrassegnati come **Chiuso**.
+Se l'amministratore ha assegnato a un orario di culto una [pianificazione del check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), l'app permette alle famiglie di scegliere quell'orario di culto solo mentre la sua finestra di check-in è aperta (ad esempio, da 30 minuti prima del culto fino a poco dopo la sua fine). Al di fuori di quella finestra, l'orario di culto viene elencato come **Chiuso**, con l'indicazione di quando riapre, se nota, ad esempio **Chiuso · apre dom 9:30**. Questi orari compaiono comunque nella [schermata della famiglia](./household-review.md) ma, invece di offrire un pulsante per il gruppo, sono contrassegnati come **Chiuso**.
 
 Se tutti gli orari di culto del servizio che hai toccato sono chiusi, l'app ti dice quando apre il check-in, ad esempio **"Il check-in per questo servizio apre dom 9:30."** (Se non è possibile indicare un orario di apertura, il messaggio dice **"Il check-in per questo servizio non è aperto in questo momento."**) Tocca **Indietro** per tornare all'elenco dei servizi e scegliere un servizio diverso, oppure attendi l'apertura della finestra e riprova.
 
@@ -56,4 +57,4 @@ Se la tua chiesa ha un solo servizio configurato, devi comunque toccarlo per pro
 
 ## Passaggio successivo
 
-Dopo aver selezionato un servizio, cercherai la tua famiglia [tramite numero di telefono o nome](./looking-up-members).
+Dopo aver selezionato un servizio, cercherai la tua famiglia [tramite numero di telefono o nome](./looking-up-members.md).

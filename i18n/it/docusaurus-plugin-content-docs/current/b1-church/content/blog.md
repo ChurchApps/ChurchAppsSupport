@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Sfogliare il blog di B1.church e i feed RSS"
+sidebar_label: "Blog"
+description: "Sfoglia e filtra il blog di B1.church per categoria o tag, scorri i post più vecchi o segui quelli nuovi tramite feed RSS."
 ---
 
 # Blog

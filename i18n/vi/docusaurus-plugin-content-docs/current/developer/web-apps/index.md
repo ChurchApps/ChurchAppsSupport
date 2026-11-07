@@ -1,5 +1,6 @@
 ---
 title: "Ứng dụng web"
+description: "Tổng quan ba ứng dụng web ChurchApps (B1 Admin, B1.church, Lessons.church), ngăn xếp React và MUI dùng chung, gói apphelper và công cụ build."
 ---
 
 # Ứng dụng web
@@ -41,7 +42,7 @@ Các ứng dụng chia sẻ component giao diện và tiện ích thông qua h�
 | `@churchapps/apphelper-website` | Các component website/CMS |
 
 :::tip
-Để biết chi tiết về cách phát triển các gói dùng chung này trên máy cục bộ, xem tài liệu [AppHelper](../shared-libraries/app-helper).
+Để biết chi tiết về cách phát triển các gói dùng chung này trên máy cục bộ, xem tài liệu [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Script postinstall

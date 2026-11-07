@@ -1,5 +1,7 @@
 ---
-title: "Szczegóły grupy"
+title: "Szczegóły grupy w portalu członka B1.church"
+sidebar_label: "Szczegóły grupy"
+description: "Otwórz stronę szczegółów grupy w widoku B1.church (B1 Admin): wydarzenia, spotkania, formularze i członkowie oraz dołączanie lub prośba o dostęp."
 ---
 
 # Szczegóły grupy

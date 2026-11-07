@@ -1,5 +1,6 @@
 ---
 title: "Phân công nhóm"
+description: "Chọn nhóm hoặc lớp mà thành viên gia đình tham dự cho mỗi giờ thờ phượng trong B1 Checkin, dùng danh mục, hướng dẫn theo tuổi và lớp, và tùy chọn Không có."
 ---
 
 # Phân công nhóm
@@ -13,7 +14,7 @@ Khi bạn nhấn vào nút giờ thờ phượng trên màn hình xem lại hộ
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Xem lại hộ gia đình](./household-review) trên màn hình xem lại hộ gia đình
+- [Xem lại hộ gia đình](./household-review.md) trên màn hình xem lại hộ gia đình
 - Mở rộng thành viên bạn muốn phân công và nhấn vào nút giờ thờ phượng
 - Đảm bảo quản trị viên của nhà thờ đã [tạo nhóm](../../b1-admin/groups/creating-groups.md) và liên kết chúng với các giờ thờ phượng trong B1 Admin
 
@@ -34,7 +35,7 @@ Nhấn vào thẻ danh mục để mở rộng và xem các nhóm riêng lẻ b�
 2. Xem danh sách các nhóm trong danh mục đó. Mỗi nhóm hiển thị tên với biểu tượng chọn ở bên phải.
 3. Nhấn vào **tên nhóm** bạn muốn phân công.
 
-Ứng dụng sẽ lưu lựa chọn của bạn và đưa bạn trở lại [màn hình xem lại hộ gia đình](./household-review). Nút giờ thờ phượng của thành viên đó giờ sẽ hiển thị tên nhóm bạn đã chọn.
+Ứng dụng sẽ lưu lựa chọn của bạn và đưa bạn trở lại [màn hình xem lại hộ gia đình](./household-review.md). Nút giờ thờ phượng của thành viên đó giờ sẽ hiển thị tên nhóm bạn đã chọn.
 
 ## Hướng dẫn về độ tuổi và lớp học
 
@@ -52,7 +53,7 @@ Sử dụng tùy chọn **Không có** đối với người lớn tham dự bu�
 
 Để thay đổi phân công nhóm đã được thực hiện:
 
-1. Quay lại [màn hình xem lại hộ gia đình](./household-review).
+1. Quay lại [màn hình xem lại hộ gia đình](./household-review.md).
 2. Mở rộng thành viên mà bạn muốn thay đổi nhóm.
 3. Nhấn vào nút giờ thờ phượng (hiện đang hiển thị tên nhóm đã được phân công).
 4. Chọn một nhóm khác hoặc nhấn **Không có**.
@@ -63,8 +64,8 @@ Các nhóm và danh mục được quản trị viên nhà thờ của bạn c�
 
 ## Bước tiếp theo
 
-Sau khi phân công nhóm, hãy quay lại [màn hình xem lại hộ gia đình](./household-review) để:
+Sau khi phân công nhóm, hãy quay lại [màn hình xem lại hộ gia đình](./household-review.md) để:
 
 - Phân công nhóm cho các thành viên gia đình khác
-- [Thêm khách](./adding-guests) nếu có ai đó đến thăm cùng gia đình bạn
-- [Hoàn tất điểm danh](./completing-checkin) khi tất cả các phân công đã sẵn sàng
+- [Thêm khách](./adding-guests.md) nếu có ai đó đến thăm cùng gia đình bạn
+- [Hoàn tất điểm danh](./completing-checkin.md) khi tất cả các phân công đã sẵn sàng

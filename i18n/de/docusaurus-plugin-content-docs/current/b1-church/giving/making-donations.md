@@ -1,5 +1,7 @@
 ---
-title: "Eine Spende tätigen"
+title: "Spenden im Mitgliederportal von B1.church"
+sidebar_label: "Eine Spende tätigen"
+description: "Geben Sie einmalig oder regelmäßig eine Spende an Ihre Gemeinde über B1.church, mit oder ohne Konto, und prüfen Sie danach Ihren Spendenverlauf."
 ---
 
 # Eine Spende tätigen

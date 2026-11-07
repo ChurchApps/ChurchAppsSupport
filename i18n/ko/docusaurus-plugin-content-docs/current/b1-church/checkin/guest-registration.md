@@ -1,5 +1,6 @@
 ---
 title: "손님 등록"
+description: "B1 Checkin의 QR 양식으로 본인과 가족을 처음 방문하는 손님으로 등록하면, 도착했을 때 자원봉사자가 체크인해 줄 수 있습니다."
 ---
 
 # 손님 등록
@@ -22,7 +23,7 @@ title: "손님 등록"
 
 손님 등록은 아직 계정이 없는 방문자를 위한 기능입니다. 교회의 체크인 키오스크에서 **Register as guest**를 누르면 등록 페이지로 연결되는 QR 코드가 표시됩니다. 봉사자나 안내 담당자에게 링크를 받거나, 전단지나 교회 웹사이트에서 찾을 수도 있습니다.
 
-휴대폰이 없나요? 키오스크의 같은 QR 코드 화면에서 **Register here**를 누르면 키오스크에서 직접 양식을 작성할 수 있습니다. 키오스크에서 어떻게 작동하는지는 [손님으로 등록하기](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest)를 참고하세요.
+휴대폰이 없나요? 키오스크의 같은 QR 코드 화면에서 **Register here**를 누르면 키오스크에서 직접 양식을 작성할 수 있습니다. 키오스크에서 어떻게 작동하는지는 [손님으로 등록하기](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest)를 참고하세요.
 
 페이지는 **Guest Registration** 제목으로 열립니다. 교회가 머리글 사진을 추가했다면 페이지 상단에 표시되고, 그렇지 않다면 작은 아이콘이 보입니다.
 
@@ -51,7 +52,7 @@ title: "손님 등록"
 - 가족 구성원마다 "Visitor" 교인 상태로 **교인 기록**이 만들어집니다.
 - 입력한 댓글은 주 연락처의 기록에 메모로 저장되어 교회 직원이 확인할 수 있습니다.
 - 교회가 신규 손님을 위한 그룹을 정해 두었다면 가족이 그 그룹에 추가됩니다. 해당 그룹의 예배 시간 중에 등록하면 출석도 자동으로 기록될 수 있습니다.
-- 교회 봉사자나 관리자가 [B1 Checkin](../../b1-checkin/check-in/looking-up-members) 키오스크에서 가족을 체크인해 줄 수 있습니다.
+- 교회 봉사자나 관리자가 [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) 키오스크에서 가족을 체크인해 줄 수 있습니다.
 
 :::info
 같은 이름과 같은 이메일 또는 전화번호로 다시 등록하면, 교회 기록이 나를 알아보고 중복 추가 없이 기존 프로필을 사용합니다. 다른 사람은 새로 추가됩니다. 이미 등록했다면 키오스크에서 이름이나 전화번호를 검색해도 됩니다.
@@ -63,6 +64,6 @@ title: "손님 등록"
 
 ## 관련 문서
 
-- [셀프 체크인](./self-checkin) -- 등록한 뒤 직접 체크인하기
-- [손님 추가하기(키오스크)](../../b1-checkin/check-in/adding-guests) -- 봉사자가 키오스크에서 손님을 추가하는 방법
-- [체크인](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- 교회 관리자가 QR 손님 등록을 설정하는 방법
+- [셀프 체크인](./self-checkin.md) -- 등록한 뒤 직접 체크인하기
+- [손님 추가하기(키오스크)](../../b1-checkin/check-in/adding-guests.md) -- 봉사자가 키오스크에서 손님을 추가하는 방법
+- [체크인](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- 교회 관리자가 QR 손님 등록을 설정하는 방법

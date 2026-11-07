@@ -1,5 +1,6 @@
 ---
 title: "Arquitetura em Tempo Real"
+description: "Como a camada WebSocket da ChurchApps entrega chat ao vivo, presença e notificações: handshake, inscrição em salas e primitivas do cliente."
 ---
 
 # Arquitetura em Tempo Real
@@ -226,8 +227,8 @@ A transmissão ao vivo é o maior consumidor anônimo da estrutura. Ela usa dois
 
 ## Páginas Relacionadas
 
-- [Arquitetura de Notificações](./architecture/notifications) -- O funil de escalação em app/push/email que este transporte alimenta
-- [Endpoints de Mensagens](./api/endpoints/messaging) -- Superfície REST completa para mensagens, conversas, conexões, dispositivos
-- [Notificações Web Push](./web-push) -- Push do navegador, separado da entrega de socket na página
-- [AppHelper](./shared-libraries/app-helper) -- O pacote npm que envia as primitivas do cliente
-- [Estrutura do Módulo](./api/module-structure) -- Como o módulo de mensagens é organizado no lado do servidor
+- [Arquitetura de Notificações](./architecture/notifications.md) -- O funil de escalação em app/push/email que este transporte alimenta
+- [Endpoints de Mensagens](./api/endpoints/messaging.md) -- Superfície REST completa para mensagens, conversas, conexões, dispositivos
+- [Notificações Web Push](./web-push.md) -- Push do navegador, separado da entrega de socket na página
+- [AppHelper](./shared-libraries/app-helper.md) -- O pacote npm que envia as primitivas do cliente
+- [Estrutura do Módulo](./api/module-structure.md) -- Como o módulo de mensagens é organizado no lado do servidor

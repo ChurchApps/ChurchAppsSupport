@@ -1,5 +1,6 @@
 ---
 title: "Yêu cầu tham gia nhóm"
+description: "Xin tham gia nhóm cần phê duyệt trên B1.church, thêm ghi chú tùy chọn cho trưởng nhóm, và theo dõi hoặc hủy yêu cầu đang chờ."
 ---
 
 # Yêu cầu tham gia nhóm

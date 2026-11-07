@@ -1,5 +1,7 @@
 ---
-title: "Tinklaraštis"
+title: "Įrašų rašymas bažnyčios svetainei B1 Admin"
+sidebar_label: "Tinklaraštis"
+description: "Kurkite, planuokite ir skelbkite tinklaraščio įrašus B1 Admin: santraukas, kategorijas, žymas, antraščių nuotraukas ir komentarus."
 ---
 
 # Tinklaraštis
@@ -13,8 +15,8 @@ Puslapis Tinklaraštis leidžia skelbti naujienas, atnaujinimus ir devocijas jū
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Užbaikite [Pradinį sąranką](initial-setup) savo svetainei
-- Jei norite, kad lankytojai rastų tinklaraštį iš meniu, pridėkite navigacijos nuorodą į `/blog` per [Puslapių tvarkymas](managing-pages)
+- Užbaikite [Pradinį sąranką](./initial-setup.md) savo svetainei
+- Jei norite, kad lankytojai rastų tinklaraštį iš meniu, pridėkite navigacijos nuorodą į `/blog` per [Puslapių tvarkymas](./managing-pages.md)
 
 </div>
 
@@ -31,7 +33,7 @@ Puslapis Tinklaraštis leidžia skelbti naujienas, atnaujinimus ir devocijas jū
 3. Pridėkite **Santrauką** – trumpą apibendrinimą, rodomą įrašų sąraše, meta aprašymuose ir RSS kanale. Jei jos nepaliksite tuščios, ji bus sugeneruota automatiškai iš įrašo turinio pradžios.
 4. Įrašo tekstą parašykite **Turinio** redaktoriuje naudodami Markdown. Spustelėkite **Peržiūra**, kad pamatytumėte, kaip suformatuotas įrašas atrodys.
 5. Pasirinkite **Kategoriją** (pasirinkite esamą arba įveskite naują) ir, jei norite, įveskite **Žymas**, atskirtas kableliais.
-6. Spustelėkite **Pasirinkti nuotrauką**, kad išrinktumėte nuotrauką iš savo [Failų](files) galerijos, arba įkelkite naują. Įkeltos nuotraukos atsidaro įmontuotame kirpimo įrankyje, užrakintame 16:9 santykiu, todėl bet kurią nuotrauką galite pritaikyti įrašo antraštei ir kortelėms sąraše.
+6. Spustelėkite **Pasirinkti nuotrauką**, kad išrinktumėte nuotrauką iš savo [Failų](./files.md) galerijos, arba įkelkite naują. Įkeltos nuotraukos atsidaro įmontuotame kirpimo įrankyje, užrakintame 16:9 santykiu, todėl bet kurią nuotrauką galite pritaikyti įrašo antraštei ir kortelėms sąraše.
 7. Nustatykite **Autorių** – pagal numatytuosius nustatymus tai esate jūs, bet galite ieškoti ir pasirinkti bet kurį asmenį savo duomenų bazėje.
 8. Kai būsite pasiruošę viešinti įrašą, įjunkite **Paskelbta** ir nustatykite **Paskelbimo datą**. Jei paliksite išjungta, įrašas bus išsaugotas kaip juodraštis.
 
@@ -58,7 +60,7 @@ Kiekvienas sąraše esantis įrašas rodo vieną iš trijų būsenų:
 Paskelbti įrašai rodomi adresu `{yoursite}/blog`, po 10 vienam puslapiui, su nuorodomis **Senesni**/**Naujesni**, kad galėtumėte naršyti archyvą. Taip pat pateikiamas kategorijų filtras, o kiekvieno įrašo autorius ir nuotrauka matomi. Žymos rodomos kaip spustelėjami elementai, todėl lankytojai gali filtruoti sąrašą pagal žymas tokiu pačiu būdu. Atskiri įrašai pasiekiami adresu `{yoursite}/blog/{slug}` ir apima susijusius įrašus iš tos pačios kategorijos. Tinklaraščio puslapis taip pat publikuoja RSS kanalą, kurį skaitytuvai ir automatizavimo įrankiai, pavyzdžiui, Zapier, gali automatiškai aptikti.
 
 :::info
-Tinklaraščio įrašai yra atskiras turinio tipas, skirtingas nuo įprastų svetainės puslapių – jie nekuriami [puslapių redaktoriuje](page-editor) ir nerodomi Puslapių sąraše. Taip rašymas tinklaraštyje tampa greitesnis ir labiau sutelktas į tekstą.
+Tinklaraščio įrašai yra atskiras turinio tipas, skirtingas nuo įprastų svetainės puslapių – jie nekuriami [puslapių redaktoriuje](./page-editor.md) ir nerodomi Puslapių sąraše. Taip rašymas tinklaraštyje tampa greitesnis ir labiau sutelktas į tekstą.
 :::
 
 ## Komentarų pridėjimas po įrašais
@@ -77,6 +79,6 @@ Ištuštinkite laukelį ir spustelėkite **Išsaugoti**, kad pašalintumėte kod
 
 ## Kiti žingsniai
 
-- [Puslapių tvarkymas](managing-pages) – pridėkite navigacijos nuorodą į savo tinklaraštį
-- [Failai](files) – įkelkite nuotraukas, kurias naudosite savo įrašuose
+- [Puslapių tvarkymas](./managing-pages.md) – pridėkite navigacijos nuorodą į savo tinklaraštį
+- [Failai](./files.md) – įkelkite nuotraukas, kurias naudosite savo įrašuose
 - [Zapier integracija](../integrations/zapier.md) – paleiskite automatizacijas, kai paskelbiami nauji įrašai

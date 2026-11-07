@@ -1,5 +1,6 @@
 ---
 title: "Campusuri"
+description: "Configurează campusurile în B1 Admin ca să știi ce sediu aparține fiecărei persoane și grupe, apoi filtrează persoanele, prezența și demografia după locație."
 ---
 
 # Campusuri

@@ -1,5 +1,6 @@
 ---
 title: "Plano tikrinimas ir pranešimai"
+description: "Tikrinkite pamaldų planus B1 Admin dėl neužpildytų pareigų, tvarkaraščio konfliktų ir neprieinamų savanorių, ir vienu paspaudimu praneškite komandai."
 ---
 
 # Plano tikrinimas ir pranešimai savanoriams

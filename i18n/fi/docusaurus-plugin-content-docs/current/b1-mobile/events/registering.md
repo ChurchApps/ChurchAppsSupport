@@ -1,5 +1,7 @@
 ---
-title: "Tapahtumiin ilmoittautuminen"
+title: "Ilmoittautuminen tapahtumiin B1 Mobilessa"
+sidebar_label: "Tapahtumiin ilmoittautuminen"
+description: "Ilmoittaudu itsesi ja perheesi jäsenet seurakuntatapahtumiin B1 Mobile -sovelluksella, tarkista jäljellä oleva kapasiteetti ja vahvista ilmoittautumisesi kolmessa vaiheessa."
 ---
 
 # Tapahtumiin ilmoittautuminen
@@ -13,7 +15,7 @@ Ilmoittaudu kirkon tapahtumiin suoraan B1 Mobile -sovelluksesta yksinkertaisella
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Tapahtumassa on oltava ilmoittautuminen käytössä ja ilmoittautumisajan on oltava avoinna
 
 </div>
@@ -50,4 +52,4 @@ Jos sinun on peruttava ilmoittautumisesi, ota yhteyttä kirkon ylläpitäjään.
 ## Aiheeseen liittyvät artikkelit
 
 - [Tapahtumien yleiskatsaus](./index.md) -- Selaa ilmoittautumista vaativia tapahtumia mobiilissa
-- [Suunnitelmien tarkastelu](../serving/viewing-plans) -- Katso palvelusaikataulusi
+- [Suunnitelmien tarkastelu](../serving/viewing-plans.md) -- Katso palvelusaikataulusi

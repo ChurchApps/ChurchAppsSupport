@@ -1,5 +1,6 @@
 ---
 title: "Configuración de la aplicación móvil"
+description: "Configura las pestañas de navegación, los mosaicos de la pantalla de inicio, el aviso de inicio de sesión y la privacidad del directorio de miembros para la app de miembros B1.church en B1 Admin."
 ---
 
 # Configuración de la aplicación móvil

@@ -1,5 +1,6 @@
 ---
 title: "Daftar Ulang Tahun Pernikahan"
+description: "Buat daftar semua orang yang ulang tahun pernikahan di bulan tertentu di B1 Admin, lengkap dengan tanggal dan ekspor ke spreadsheet untuk buletin atau kartu."
 ---
 
 # Daftar Ulang Tahun Pernikahan

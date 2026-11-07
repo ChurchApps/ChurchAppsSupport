@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Connect VOMO volunteer signups and kiosk check-ins to B1 Admin people and groups with Zapier, including the API key scopes and setup steps."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ When the VOMO project ends, manually clear the B1 group (or pair this with a *Pa
 
 ### Send a "thanks for signing up" text via SMS
 
-Chain VOMO Participation → Clearstream Send Text or Text In Church Send Message in the same Zap. Both have first-class Zapier actions — see [Clearstream](./clearstream) and [Text In Church](./text-in-church).
+Chain VOMO Participation → Clearstream Send Text or Text In Church Send Message in the same Zap. Both have first-class Zapier actions — see [Clearstream](./clearstream.md) and [Text In Church](./text-in-church.md).
 
 ### Detect drop-off
 
@@ -91,6 +92,6 @@ Run a daily Zapier *Schedule* trigger that calls Find Organizer in VOMO for a li
 
 ## See Also
 
-- [Zapier (overview)](../zapier) — B1 side of every Zapier recipe
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — pair volunteer signups with SMS confirmations
+- [Zapier (overview)](../zapier.md) — B1 side of every Zapier recipe
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — pair volunteer signups with SMS confirmations
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — the events VOMO can trigger on

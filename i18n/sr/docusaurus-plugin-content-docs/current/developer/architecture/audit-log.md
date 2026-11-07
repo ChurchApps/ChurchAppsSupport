@@ -1,5 +1,6 @@
 ---
 title: "Журнал ревизије и серије са могућношћу поништавања"
+description: "Описује API евиденцију измена која бележи сваку промену корисника у свим модулима и како се увозне серије могу поништити ред по ред у B1 Admin-у."
 ---
 
 # Журнал ревизије и серије са могућношћу поништавања
@@ -155,6 +156,6 @@ BaseController.actionWrapper ──▶ derive {module, entityType, category, act
 
 ## Повезане странице
 
-- [Структура модула](../api/module-structure): како контролер изван membership-а стиже до membership репозиторијума преко `RepoManager`
-- [Давања](./giving): путање уписа донација које се бележе као `sensitive`, чак и кад су анонимне
-- [Крајње тачке членства](../api/endpoints/membership): REST површина која носи `X-Batch-Id` и излаже `/auditlogs` и `/batches`
+- [Структура модула](../api/module-structure.md): како контролер изван membership-а стиже до membership репозиторијума преко `RepoManager`
+- [Давања](./giving.md): путање уписа донација које се бележе као `sensitive`, чак и кад су анонимне
+- [Крајње тачке членства](../api/endpoints/membership.md): REST површина која носи `X-Batch-Id` и излаже `/auditlogs` и `/batches`

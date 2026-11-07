@@ -1,5 +1,6 @@
 ---
 title: "Providers जोड़ना और Playlists बनाना"
+description: "FreePlay Admin में जुड़े कंटेंट प्रोवाइडर सेट करें, फिर शेड्यूल्ड TV स्क्रीन के लिए प्लेलिस्ट बनाएँ, व्यवस्थित करें और पूर्वावलोकन करें।"
 ---
 
 # Providers जोड़ना और Playlists बनाना
@@ -107,6 +108,6 @@ Playlist को अपने browser में full screen चलाने क�
 
 ## संबंधित लेख
 
-- **[Calendar का Scheduling](./scheduling-the-calendar)** - अपनी playlist को screen group के calendar पर रखें
-- **[Screens और Groups का प्रबंधन](./managing-screens)** - किसी playlist को group का default loop बनाएं
-- **[Content Providers](../content-providers/)** - वे providers जिन्हें आप सीधे TV पर जोड़ सकते हैं
+- **[Calendar का Scheduling](./scheduling-the-calendar.md)** - अपनी playlist को screen group के calendar पर रखें
+- **[Screens और Groups का प्रबंधन](./managing-screens.md)** - किसी playlist को group का default loop बनाएं
+- **[Content Providers](../content-providers/index.md)** - वे providers जिन्हें आप सीधे TV पर जोड़ सकते हैं

@@ -1,5 +1,6 @@
 ---
 title: "Settings"
+description: "Find your way around B1 Admin's Settings: church info, branding, campuses, custom fields, user roles, and the B1.church app navigation."
 ---
 
 # Settings

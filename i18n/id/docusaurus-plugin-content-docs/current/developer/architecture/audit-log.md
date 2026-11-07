@@ -1,5 +1,6 @@
 ---
 title: "Log Audit & Batch yang Dapat Dibatalkan"
+description: "Mencakup log audit API yang mencatat setiap perubahan pengguna di seluruh modul, dan cara membatalkan batch impor baris demi baris di B1 Admin."
 ---
 
 # Log Audit & Batch yang Dapat Dibatalkan
@@ -155,6 +156,6 @@ Kedua antarmuka admin ini **masih dalam pengembangan**. Tujuannya sebagai beriku
 
 ## Halaman Terkait
 
-- [Module Structure](../api/module-structure): cara controller non-membership mencapai repo membership melalui `RepoManager`
-- [Giving](./giving): jalur penulisan donasi yang diaudit sebagai `sensitive` meskipun dilakukan secara anonim
-- [Membership Endpoints](../api/endpoints/membership): REST surface yang membawa `X-Batch-Id` dan menyediakan `/auditlogs` dan `/batches`
+- [Module Structure](../api/module-structure.md): cara controller non-membership mencapai repo membership melalui `RepoManager`
+- [Giving](./giving.md): jalur penulisan donasi yang diaudit sebagai `sensitive` meskipun dilakukan secara anonim
+- [Membership Endpoints](../api/endpoints/membership.md): REST surface yang membawa `X-Batch-Id` dan menyediakan `/auditlogs` dan `/batches`

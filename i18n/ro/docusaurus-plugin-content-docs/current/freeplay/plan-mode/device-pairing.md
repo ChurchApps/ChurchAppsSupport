@@ -1,5 +1,6 @@
 ---
 title: "Asocierea dispozitivului"
+description: "Asociați un TV FreePlay cu un tip de plan din B1 Admin prin codul de patru litere de pe ecran, apoi descărcați media pentru redarea în Plan Mode."
 ---
 
 # Asocierea dispozitivului
@@ -13,7 +14,7 @@ Pentru a utiliza modul Plan, asociați televizorul cu un tip de plan din B1 Admi
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați și lansați FreePlay. Consultați [Noțiuni de bază](../getting-started/)
+- Instalați și lansați FreePlay. Consultați [Noțiuni de bază](../getting-started/index.md)
 - Aveți acces la **B1 Admin** pe un computer sau telefon pentru a finaliza asocierea
 
 </div>
@@ -25,7 +26,7 @@ Pentru a utiliza modul Plan, asociați televizorul cu un tip de plan din B1 Admi
 3. FreePlay afișează un cod de asociere din patru litere, cu caractere mari, lângă un cod QR.
 4. Sub cod, un indicator pulsatoriu **Waiting for confirmation** (Se așteaptă confirmarea) arată că FreePlay așteaptă să finalizați asocierea.
 
-Același cod funcționează și pentru [Modul programat](../scheduled-mode/) din FreePlay Admin și pentru modul Plan din B1 Admin. Codul QR și adresa **freeplay.church/pair** de pe ecran deschid FreePlay Admin. Pentru modul Plan, ignorați-le și introduceți codul în B1 Admin, după cum este descris mai jos.
+Același cod funcționează și pentru [Modul programat](../scheduled-mode/index.md) din FreePlay Admin și pentru modul Plan din B1 Admin. Codul QR și adresa **freeplay.church/pair** de pe ecran deschid FreePlay Admin. Pentru modul Plan, ignorați-le și introduceți codul în B1 Admin, după cum este descris mai jos.
 
 ## Introducerea codului în B1 Admin
 
@@ -61,5 +62,5 @@ Codurile de asociere expiră după 15 minute. FreePlay afișează automat un cod
 ## Articole asociate
 
 - **[Prezentarea generală a modului Plan](./index.md)** - Diferențele dintre modul Plan și modul programat
-- **[Asocierea unui ecran](../scheduled-mode/pairing-a-screen)** - Asociați același televizor cu un calendar din FreePlay Admin
-- **[Redarea conținutului](../content-providers/playing-content)** - Comenzile playerului pentru redarea planului
+- **[Asocierea unui ecran](../scheduled-mode/pairing-a-screen.md)** - Asociați același televizor cu un calendar din FreePlay Admin
+- **[Redarea conținutului](../content-providers/playing-content.md)** - Comenzile playerului pentru redarea planului

@@ -1,5 +1,6 @@
 ---
 title: "Guide: Set Up Online Giving"
+description: "Set up online giving in B1 Admin by creating donation funds, connecting Stripe, and adding a Donate page to your B1.church website for members."
 ---
 
 # Set Up Online Giving
@@ -70,7 +71,7 @@ Use Stripe's test mode first if you want to verify without real charges, then sw
 Spread the word so members know they can give online.
 
 1. Share the giving URL via your website, email newsletters, bulletins, and social media
-2. Members can also give through the [B1 Mobile app](../../b1-mobile/giving/) — the giving feature is built in
+2. Members can also give through the [B1 Mobile app](../../b1-mobile/giving/index.md) — the giving feature is built in
 
 :::info
 Members who log in can save payment methods, set up recurring donations, and view their giving history. Anonymous giving works too — no login required.

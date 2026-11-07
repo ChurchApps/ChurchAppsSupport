@@ -1,5 +1,6 @@
 ---
 title: "Ekranų ir grupių tvarkymas"
+description: "Patikrinkite, kurie FreePlay TV prisijungę ir pasiruošę sekmadieniui, tada redaguokite ekranų nustatymus ir kurkite grupes, dalijančias vieną kalendorių."
 ---
 
 # Ekranų ir grupių tvarkymas
@@ -14,7 +15,7 @@ Puslapyje **Ekranai** FreePlay Admin rodomi visi jūsų bažnyčiai susieti tele
 <h4>Prieš pradedant</h4>
 
 - Prisijunkite prie FreePlay Admin adresu [admin.freeplay.church](https://admin.freeplay.church)
-- [Susiekite bent vieną ekraną](./pairing-a-screen)
+- [Susiekite bent vieną ekraną](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Naudokite **Rodyti**, kad paleistumėte ekrano kalendorių naršyklėje, arba **
 
 Spustelėkite ekrano etiketę, kad atidarytumėte jo puslapį. Kairėje esančiose parinktyse:
 
-- **Rodyti naršyklėje** - Paleisti šio ekrano kalendorių visame ekrane naršyklėje, kaip jis atrodytų televizoriuje. Žr. [Rodymas iš naršyklės](./scheduled-playback#presenting-from-a-browser)
+- **Rodyti naršyklėje** - Paleisti šio ekrano kalendorių visame ekrane naršyklėje, kaip jis atrodytų televizoriuje. Žr. [Rodymas iš naršyklės](./scheduled-playback.md#presenting-from-a-browser)
 - **Redaguoti** - Pakeisti etiketę, grupę ar režimą
 - **Daugiau** > **Atsieti** - Atjungti televizorių. Jis vėl rodys susiejimo kodą
 
@@ -93,6 +94,6 @@ Ištrynus grupę, ištrinamas ir jos tvarkaraštis. Tos grupės ekranai išsijun
 
 ## Susiję straipsniai
 
-- **[Ekrano susiejimas](./pairing-a-screen)** - Pridėti naują televizorių
-- **[Kalendoriaus planavimas](./scheduling-the-calendar)** - Nustatyti, ką kiekviena grupė rodo, ir jos numatytąjį ciklą
-- **[Suplanuotas rodymas televizoriuje](./scheduled-playback)** - Ką reiškia data „Paruošta iki“ pačiame televizoriuje
+- **[Ekrano susiejimas](./pairing-a-screen.md)** - Pridėti naują televizorių
+- **[Kalendoriaus planavimas](./scheduling-the-calendar.md)** - Nustatyti, ką kiekviena grupė rodo, ir jos numatytąjį ciklą
+- **[Suplanuotas rodymas televizoriuje](./scheduled-playback.md)** - Ką reiškia data „Paruošta iki“ pačiame televizoriuje

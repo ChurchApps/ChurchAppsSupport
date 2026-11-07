@@ -1,5 +1,6 @@
 ---
 title: Úvod do B1.church
+description: "Prevedie vás prihlásením do B1 Admin, orientáciou na Dashboard a ponuke Jump a nastavením údajov o zbore pred preskúmaním ďalších nástrojov."
 ---
 
 # Vitajte v B1.church Admin!
@@ -34,7 +35,7 @@ title: Úvod do B1.church
 10. Teraz môžete vstúpiť do B1.church cez **portál pre členov** alebo **portál pre správcov**. Portál pre členov vám ukáže, ako B1.church vyzerá pre vašich členov, umožní vám zobraziť vaše skupiny a spravovať vaše osobné dary.
 
 :::tip
-Začnite so stránkou [Nastavenia](./settings/), kde nakonfigurujete názov cirkvi, vizuálnu identitu a oprávnenia tímu. Tým sa zabezpečí, že všetko ostatné, čo nastavíte, sa zobrazí správne.
+Začnite so stránkou [Nastavenia](./settings/index.md), kde nakonfigurujete názov cirkvi, vizuálnu identitu a oprávnenia tímu. Tým sa zabezpečí, že všetko ostatné, čo nastavíte, sa zobrazí správne.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Vyhľadávanie je často najrýchlejší spôsob, ako sa dostať na stránku. Za
 
 Po pozretí tohto úvodu si pozrite tieto kľúčové funkcie:
 
-- [Pridávanie ľudí](./people/adding-people) -- Naučte sa pridávať členov do databázy
-- [Skupiny](./groups/) -- Nastavenie a správa cirkevných skupín
-- [Plány služby](./serving/plans) -- Organizujte svoju službu
-- [Účasť](./attendance/) -- Sledujte účasť a prihlasovanie
-- [Web](./website/) -- Vytvorte a prispôsobte webovú stránku vašej cirkvi
-- [Nastavenia](./settings/) -- Nakonfigurujte informácie o cirkvi a oprávnenia
+- [Pridávanie ľudí](./people/adding-people.md) -- Naučte sa pridávať členov do databázy
+- [Skupiny](./groups/index.md) -- Nastavenie a správa cirkevných skupín
+- [Plány služby](./serving/plans.md) -- Organizujte svoju službu
+- [Účasť](./attendance/index.md) -- Sledujte účasť a prihlasovanie
+- [Web](./website/index.md) -- Vytvorte a prispôsobte webovú stránku vašej cirkvi
+- [Nastavenia](./settings/index.md) -- Nakonfigurujte informácie o cirkvi a oprávnenia

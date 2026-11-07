@@ -1,5 +1,6 @@
 ---
 title: "Pustaka Bersama"
+description: "Dokumentasi paket npm @churchapps yang dipakai B1 Admin, B1.church, dan API, serta cara menyiapkan workspace Packages dan merilis dengan changesets."
 ---
 
 # Pustaka Bersama
@@ -14,9 +15,9 @@ Kode bersama ChurchApps dipublikasikan ke npm di bawah scope `@churchapps/*`. Se
 
 | Paket | Deskripsi | Digunakan Oleh |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | Lapisan dasar: fungsi helper yang tidak bergantung pada framework dan antarmuka TypeScript bersama yang membentuk kontrak data lintas aplikasi | Semua proyek |
-| [`@churchapps/apihelper`](./api-helper) | Utilitas Express sisi server: autentikasi, controller dasar, akses database, serta integrasi AWS dan email | Semua API |
-| [`@churchapps/apphelper`](./app-helper) | Komponen React bersama dan modul fitur (login, donasi, formulir, markdown, website) | Semua aplikasi web |
+| [`@churchapps/helpers`](./helpers.md) | Lapisan dasar: fungsi helper yang tidak bergantung pada framework dan antarmuka TypeScript bersama yang membentuk kontrak data lintas aplikasi | Semua proyek |
+| [`@churchapps/apihelper`](./api-helper.md) | Utilitas Express sisi server: autentikasi, controller dasar, akses database, serta integrasi AWS dan email | Semua API |
+| [`@churchapps/apphelper`](./app-helper.md) | Komponen React bersama dan modul fitur (login, donasi, formulir, markdown, website) | Semua aplikasi web |
 | `@churchapps/content-providers` | Abstraksi atas penyedia konten pihak ketiga (Lessons.church, Planning Center, Dropbox, dan lainnya) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Toolkit untuk membangun integrasi B1.church: verifikasi webhook, klien REST bertipe, helper OAuth | Pengembang integrasi eksternal |
 | `@churchapps/texting` | Abstraksi penyedia SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

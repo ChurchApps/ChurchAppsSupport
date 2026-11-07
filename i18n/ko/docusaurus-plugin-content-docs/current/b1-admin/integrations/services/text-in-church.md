@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Zapier로 B1 Admin과 Text In Church를 연결합니다. API 키를 발급하고, 연결 카드를 B1로 보내는 Zap을 만들며, 그룹 구성원을 동기화합니다."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Zap을 켭니다. TIC를 통해 제출된 다음 연결 카드는 **B1Admin → 
 
 ## 참고도 보기
 
-- [Clearstream](./clearstream) — 유사한 Zapier 모양의 대체 SMS 플랫폼
-- [Zapier(개요)](../zapier) — 모든 Zapier 레시피의 B1 측
+- [Clearstream](./clearstream.md) — 유사한 Zapier 모양의 대체 SMS 플랫폼
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
 - [Text In Church Zapier 가이드](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration)(TIC의 문서)

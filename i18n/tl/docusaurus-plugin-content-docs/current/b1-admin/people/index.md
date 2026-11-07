@@ -1,5 +1,6 @@
 ---
 title: "Mga Tao"
+description: "Maghanap, magdagdag, at mag-edit ng miyembro sa People section ng B1 Admin, kasama ang household tracking, bulk update, at pag-print at export ng directory."
 ---
 
 # Mga Tao

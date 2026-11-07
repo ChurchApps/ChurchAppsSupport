@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Ipinapaliwanag ang modular monolith design ng ChurchApps API, anim na data module, tech stack, port, at Lambda function, may link sa setup at endpoint docs."
 ---
 
 # API
@@ -52,8 +53,8 @@ Kapag na-deploy sa AWS, tumatakbo ang API bilang anim na Lambda function:
 
 Umaasa ang API sa dalawang shared ChurchApps package:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Mga pangunahing utility (DateHelper, ApiHelper, atbp.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Mga utility ng Express server kabilang ang auth, database helper, at AWS integration
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Mga pangunahing utility (DateHelper, ApiHelper, atbp.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Mga utility ng Express server kabilang ang auth, database helper, at AWS integration
 
 :::info
 Gumagamit ang API ng ES modules (`"type": "module"` sa `package.json`). Siguraduhing ginagamit ng iyong mga import ang ES module syntax.
@@ -61,11 +62,11 @@ Gumagamit ang API ng ES modules (`"type": "module"` sa `package.json`). Siguradu
 
 ## Nasa Seksyong Ito
 
-- **[Local Setup](./local-setup)** -- I-clone, i-configure, at patakbuhin ang API nang lokal
-- **[Database](./database)** -- Arkitekturang database-per-module, mga schema script, at mga pattern ng pag-access ng datos
-- **[Module Structure](./module-structure)** -- Mga controller, repository, model, at authentication
-- **[API Keys](./api-keys)** -- Mga personal na access token para sa mga script at connector
-- **[Connected Apps (OAuth)](./connected-apps)** -- Multi-tenant na OAuth flow para sa mga third-party app
-- **[Webhooks](./webhooks)** -- Magpadala ng push notification ng mga event sa mga external na sistema
-- **[MCP Server](./mcp)** -- Model Context Protocol endpoint na naglalantad ng API sa mga AI assistant
-- **[Endpoint Reference](./endpoints/)** -- Kumpletong REST API documentation para sa lahat ng module
+- **[Local Setup](./local-setup.md)** -- I-clone, i-configure, at patakbuhin ang API nang lokal
+- **[Database](./database.md)** -- Arkitekturang database-per-module, mga schema script, at mga pattern ng pag-access ng datos
+- **[Module Structure](./module-structure.md)** -- Mga controller, repository, model, at authentication
+- **[API Keys](./api-keys.md)** -- Mga personal na access token para sa mga script at connector
+- **[Connected Apps (OAuth)](./connected-apps.md)** -- Multi-tenant na OAuth flow para sa mga third-party app
+- **[Webhooks](./webhooks.md)** -- Magpadala ng push notification ng mga event sa mga external na sistema
+- **[MCP Server](./mcp.md)** -- Model Context Protocol endpoint na naglalantad ng API sa mga AI assistant
+- **[Endpoint Reference](./endpoints/index.md)** -- Kumpletong REST API documentation para sa lahat ng module

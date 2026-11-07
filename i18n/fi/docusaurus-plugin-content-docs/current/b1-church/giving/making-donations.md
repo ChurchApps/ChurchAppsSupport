@@ -1,5 +1,7 @@
 ---
-title: "Lahjoituksen tekeminen"
+title: "Lahjoittaminen B1.church-jäsenportaalissa"
+sidebar_label: "Lahjoituksen tekeminen"
+description: "Tee kertalahjoitus tai toistuva lahjoitus seurakunnallesi B1.churchin kautta, tilillä tai ilman, ja tarkista lahjoitushistoriasi jälkeenpäin."
 ---
 
 # Lahjoituksen tekeminen

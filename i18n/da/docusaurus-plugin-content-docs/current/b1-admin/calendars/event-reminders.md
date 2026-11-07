@@ -1,21 +1,22 @@
 ---
 title: "Begivenhedspåmindelser"
+description: "Opsæt begivenhedspåmindelser i B1 Admin via push, e-mail og sms med valg af tidspunkt, modtagere og egen besked, så folk får besked i tide."
 ---
 
 # Begivenhedspåmindelser
 
 <div class="article-intro">
 
-Begivenhedspåmindelser sender automatisk besked til de rigtige personer, før en begivenhed finder sted -- for eksempel "Gå ikke glip af det! Sundhedsworkshoppen starter i morgen kl. 9:00." Du konfigurerer en påmindelse én gang på begivenheden, og B1 sender den afsted til tiden via pushnotifikationer, e-mail og, hvis din menighed har sms opsat, tekstbeskeder. Medlemmer kan selv styre, hvilke påmindelser de modtager, under deres egne [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences).
+Begivenhedspåmindelser sender automatisk besked til de rigtige personer, før en begivenhed finder sted -- for eksempel "Gå ikke glip af det! Sundhedsworkshoppen starter i morgen kl. 9:00." Du konfigurerer en påmindelse én gang på begivenheden, og B1 sender den afsted til tiden via pushnotifikationer, e-mail og, hvis din menighed har sms opsat, tekstbeskeder. Medlemmer kan selv styre, hvilke påmindelser de modtager, under deres egne [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opret den begivenhed, du vil minde folk om (se [Oprettelse af kalendere](creating-calendars))
-- For at nå tilmeldte deltagere skal du [aktivere tilmelding](creating-calendars) på begivenheden
-- For at nå en hel gruppe skal du sikre, at begivenheden hører til en [gruppe](../groups/creating-groups) med medlemmer
+- Opret den begivenhed, du vil minde folk om (se [Oprettelse af kalendere](./creating-calendars.md))
+- For at nå tilmeldte deltagere skal du [aktivere tilmelding](./creating-calendars.md) på begivenheden
+- For at nå en hel gruppe skal du sikre, at begivenheden hører til en [gruppe](../groups/creating-groups.md) med medlemmer
 
 </div>
 
@@ -57,21 +58,21 @@ Gæster, der kun er tilføjet med navn (uden tilknyttet personpost), kan ikke mo
 - Gentagne begivenheder håndteres automatisk: hver kommende forekomst får sin egen påmindelse.
 
 :::tip
-Påmindelser sendes **først som push, med e-mail som reserve**. Hvis et medlem har pushnotifikationer aktiveret, får de en push; ellers får de en e-mail i stedet. Medlemmer vælger selv, hvilke kanaler de vil have for hver notifikationstype, under deres [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences).
+Påmindelser sendes **først som push, med e-mail som reserve**. Hvis et medlem har pushnotifikationer aktiveret, får de en push; ellers får de en e-mail i stedet. Medlemmer vælger selv, hvilke kanaler de vil have for hver notifikationstype, under deres [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Tekstpåmindelser
 
 Kanalen **Tekstbesked** vises kun, når din menighed har en sms-udbyder tilsluttet. Tekstbeskeder sendes via din menigheds sms-udbyder, og hver tekstbesked kan koste menigheden penge. De sendes ud over eventuelle push- eller e-mailpåmindelser, og kun til personer, der:
 
-- Har slået **Tekstbeskeder** til i deres [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences), og
+- Har slået **Tekstbeskeder** til i deres [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences.md), og
 - Har et mobilnummer på deres profil.
 
 Hver tekstbesked starter med din menigheds navn, holdes inden for én sms, og slutter med "Svar STOP for at framelde." Den, der svarer STOP, holder op med at modtage tekstbeskeder fra din menighed. For at STOP-svar kan nå B1, skal du indsætte **Inbound (STOP) webhook-URL'en** fra dine [sms-indstillinger](../settings/church-settings.md#texting) i din udbyders webhook for indkommende beskeder.
 
 ## Hvad medlemmer kan styre
 
-Påmindelser respekterer altid hvert medlems [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences). Et medlem kan:
+Påmindelser respekterer altid hvert medlems [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences.md). Et medlem kan:
 
 - Slå **Begivenhedspåmindelser** fra for push, e-mail eller tekst, mens andre notifikationer forbliver slået til.
 - Slå tekstpåmindelser til eller fra med **Tekstbeskeder**.
@@ -81,10 +82,10 @@ Du kan ikke tilsidesætte et medlems valg om at framelde sig begivenhedspåminde
 
 ## Tjenestepåmindelser
 
-Frivillige, der er planlagt på en plan, modtager en separat **tjenestepåmindelse** med plandetaljerne og, hvis de endnu ikke har svaret, knapperne **Accepter / Afslå** direkte i e-mailen. Disse påmindelser konfigureres på plantypen i stedet for på en kalenderbegivenhed, og de kan også sendes som tekstbesked -- se [Frivilligpåmindelser](../serving/plans#volunteer-reminders) og [Søndagsfrivillige](../guides/sunday-volunteers) for, hvordan planlægning af frivillige og påmindelser fungerer.
+Frivillige, der er planlagt på en plan, modtager en separat **tjenestepåmindelse** med plandetaljerne og, hvis de endnu ikke har svaret, knapperne **Accepter / Afslå** direkte i e-mailen. Disse påmindelser konfigureres på plantypen i stedet for på en kalenderbegivenhed, og de kan også sendes som tekstbesked -- se [Frivilligpåmindelser](../serving/plans.md#volunteer-reminders) og [Søndagsfrivillige](../guides/sunday-volunteers.md) for, hvordan planlægning af frivillige og påmindelser fungerer.
 
 ## Næste skridt
 
-- [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences) -- Hvad medlemmer kan styre
-- [Guide til begivenhedstilmelding](../guides/event-registration) -- Opsæt tilmelding, så påmindelser kan nå deltagerne
-- [Oprettelse af kalendere](creating-calendars) -- Tilbage til kalenderopsætning
+- [Notifikationsindstillinger](../../b1-church/getting-started/notification-preferences.md) -- Hvad medlemmer kan styre
+- [Guide til begivenhedstilmelding](../guides/event-registration.md) -- Opsæt tilmelding, så påmindelser kan nå deltagerne
+- [Oprettelse af kalendere](./creating-calendars.md) -- Tilbage til kalenderopsætning

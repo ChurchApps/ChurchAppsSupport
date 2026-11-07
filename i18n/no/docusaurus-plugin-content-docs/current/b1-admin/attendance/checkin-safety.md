@@ -1,5 +1,6 @@
 ---
 title: "Sikkerhet ved innsjekking"
+description: "Konfigurer barnesikkerhet i B1 Admin: romkapasitet, bemanningsforhold, liste over godkjente hentepersoner og SMS til foreldre ved innsjekk."
 ---
 
 # Sikkerhet ved innsjekking
@@ -15,7 +16,7 @@ B1 har en rekke sikkerhetsfunksjoner for barn ved innsjekking: kapasitetsgrenser
 
 - Sett opp [strukturen for oppmøte](setup.md) og [innsjekkingskioskene](check-in.md)
 - Rom er [grupper](../groups/creating-groups.md) koblet til samlingstidspunkter – sikkerhetsinnstillingene nedenfor ligger på gruppen
-- Tilkalling av foresatte og nødvarsling krever en tilkoblet tekstmeldingstjeneste ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) eller Mutual Ministry)
+- Tilkalling av foresatte og nødvarsling krever en tilkoblet tekstmeldingstjeneste ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) eller Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Begge funksjonene sender tekstmeldinger via menighetens tilkoblede tekstmeldings
 
 Personer som har reservert seg mot tekstmeldinger, eller som ikke har registrert mobilnummer, hoppes automatisk over – kiosken viser hvor mange meldinger som ble sendt og hvor mange som ble hoppet over.
 
-Se gjennomgangen fra kioskens side i [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out).
+Se gjennomgangen fra kioskens side i [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out.md).
 
 ## Relaterte artikler
 
 - [Innsjekking](check-in.md) — oppsett av kiosk og utstyr
-- [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out) — utsjekking på kiosken, kontroll av henting og tilkalling
+- [Utsjekking og barnesikkerhet](../../b1-checkin/check-in/checking-out.md) — utsjekking på kiosken, kontroll av henting og tilkalling
 - [Opprette grupper](../groups/creating-groups.md) — her ligger rominnstillingene
 - [Oppsett av oppmøte](setup.md) — gudstjenester, samlingstidspunkter og romtildeling
 - [Minimumsalder for private meldinger](../settings/mobile-app.md#member-directory--messaging-settings) — blokkerer nye private samtaler med barn, samtidig som de forblir i medlemsregisteret

@@ -1,5 +1,6 @@
 ---
 title: "Prijave"
+description: "Kako deluje prijava v B1Checkin, B1App in B1 Admin: model podatkov o udeležbi, skupine kot sobe, omejitve zmogljivosti in varnostna pravila za prevzem."
 ---
 
 # Prijave
@@ -216,7 +217,7 @@ Prijava QR se upravlja z nastavitvami cerkve, shranjenimi na kartici **QR regist
 
 ## Sorodne strani
 
-- [Končne točke udeležbe](../api/endpoints/attendance) -- Celoten REST vmesnik za kampuse, storitve, srečanja, obiske in obiske srečanj
-- [Končne točke članstva](../api/endpoints/membership) -- Osebe, gospodinjstva in skupine
-- [Webhooki](../api/webhooks) -- Dogodki `session.created`, `attendance.recorded` in `attendance.checkout`
-- [Struktura modula](../api/module-structure) -- Kako je modul udeležbe organiziran na strežniški strani
+- [Končne točke udeležbe](../api/endpoints/attendance.md) -- Celoten REST vmesnik za kampuse, storitve, srečanja, obiske in obiske srečanj
+- [Končne točke članstva](../api/endpoints/membership.md) -- Osebe, gospodinjstva in skupine
+- [Webhooki](../api/webhooks.md) -- Dogodki `session.created`, `attendance.recorded` in `attendance.checkout`
+- [Struktura modula](../api/module-structure.md) -- Kako je modul udeležbe organiziran na strežniški strani

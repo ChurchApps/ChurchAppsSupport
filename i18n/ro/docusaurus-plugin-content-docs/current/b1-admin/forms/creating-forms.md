@@ -1,5 +1,6 @@
 ---
 title: "Crearea formularelor"
+description: "Creați formulare personalizate în B1 Admin pentru înscrieri la evenimente, sondaje și carduri de vizitator, apoi distribuiți-le prin link, cod QR sau tipărite."
 ---
 
 # Crearea formularelor

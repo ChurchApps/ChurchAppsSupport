@@ -1,5 +1,7 @@
 ---
-title: "Servindo"
+title: "Visão Geral de Serving no B1 Admin"
+sidebar_label: "Servindo"
+description: "Coordene voluntários e planeje cultos na área Serving do B1 Admin, de abas de ministérios e equipes a planos de culto, músicas e tarefas."
 ---
 
 # Servindo

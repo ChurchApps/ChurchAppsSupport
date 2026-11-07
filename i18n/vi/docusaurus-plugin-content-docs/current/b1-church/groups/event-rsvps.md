@@ -1,5 +1,6 @@
 ---
 title: "Phản hồi tham dự sự kiện"
+description: "Trả lời Sẽ đi, Có thể, hoặc Không đi cho sự kiện nhóm trên Cổng thành viên B1.church, và xem số người tham gia. Trưởng nhóm cũng xem được các phản hồi."
 ---
 
 # Phản hồi tham dự sự kiện
@@ -30,14 +31,14 @@ Phản hồi của bạn chỉ áp dụng cho buổi cụ thể đó. Ví dụ, 
 ## Dành cho trưởng nhóm
 
 - **Xem phản hồi** -- Trưởng nhóm thấy liên kết **Xem phản hồi** ở mỗi sự kiện trong lịch của nhóm (**Tất cả sự kiện**). Liên kết này mở bảng **Phản hồi**, liệt kê mọi người theo từng câu trả lời: Tham gia, Có thể và Không tham gia. Nếu chưa ai phản hồi, bảng sẽ hiển thị "Chưa có phản hồi nào."
-- **Bật hoặc tắt phản hồi tham dự** -- Khi tạo hoặc chỉnh sửa sự kiện, hãy dùng công tắc **Cho phép xác nhận tham dự**. Sự kiện đã tắt tùy chọn này sẽ không hiển thị nút phản hồi. Nhân viên tạo sự kiện hàng loạt từ B1 Admin cũng có tùy chọn tương tự. Xem [Lịch nhóm](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Bật hoặc tắt phản hồi tham dự** -- Khi tạo hoặc chỉnh sửa sự kiện, hãy dùng công tắc **Cho phép xác nhận tham dự**. Sự kiện đã tắt tùy chọn này sẽ không hiển thị nút phản hồi. Nhân viên tạo sự kiện hàng loạt từ B1 Admin cũng có tùy chọn tương tự. Xem [Lịch nhóm](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Phản hồi tham dự chỉ là cách đếm số người nhanh chóng. Nếu sự kiện của bạn cần thông tin đăng ký, quản lý sức chứa hoặc thanh toán, hãy dùng [đăng ký sự kiện](../events/registering) thay thế.
+Phản hồi tham dự chỉ là cách đếm số người nhanh chóng. Nếu sự kiện của bạn cần thông tin đăng ký, quản lý sức chứa hoặc thanh toán, hãy dùng [đăng ký sự kiện](../events/registering.md) thay thế.
 :::
 
 ## Bài viết liên quan
 
 - [Chi tiết nhóm](./group-details.md) -- Mọi thông tin trên trang chi tiết nhóm
-- [Lịch nhóm (B1 Admin)](../../b1-admin/groups/group-calendar) -- Cách nhân viên và trưởng nhóm quản lý sự kiện và phản hồi tham dự của nhóm
-- [Đăng ký tham gia sự kiện](../events/registering) -- Đăng ký sự kiện đầy đủ, có sức chứa và thanh toán
+- [Lịch nhóm (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Cách nhân viên và trưởng nhóm quản lý sự kiện và phản hồi tham dự của nhóm
+- [Đăng ký tham gia sự kiện](../events/registering.md) -- Đăng ký sự kiện đầy đủ, có sức chứa và thanh toán

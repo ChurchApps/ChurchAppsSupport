@@ -1,5 +1,6 @@
 ---
 title: "Planai"
+description: "Sužinokite, kuriuose tarnystės planuose esate paskirti B1.church, peržiūrėkite savo pareigas ir datas bei priimkite ar atmeskite paskyrimus narių portale."
 ---
 
 # Planai

@@ -1,5 +1,6 @@
 ---
 title: "Messagerie"
+description: "Commencez, lisez, modifiez et supprimez des conversations privées avec les membres de l’église dans B1 Mobile, et trouvez des personnes via l’annuaire."
 ---
 
 # Messagerie
@@ -13,7 +14,7 @@ B1 Mobile inclut la messagerie privée pour que vous puissiez avoir des conversa
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile inclut la messagerie privée pour que vous puissiez avoir des conversa
 ## Commencer une nouvelle conversation
 
 1. À partir de l'écran de messagerie, appuyez sur l'option pour commencer une nouvelle conversation.
-2. Utilisez le champ de recherche pour trouver le membre que vous souhaitez contacter. Vous pouvez également trouver des membres via l'[Annuaire des membres](./member-directory).
+2. Utilisez le champ de recherche pour trouver le membre que vous souhaitez contacter. Vous pouvez également trouver des membres via l'[Annuaire des membres](./member-directory.md).
 3. Sélectionnez le membre dans les résultats de la recherche.
 4. Tapez votre message et appuyez sur **Send**.
 
@@ -52,11 +53,11 @@ Utilisez la messagerie pour coordonner avec des bénévoles, faire un suivi aupr
 :::
 
 :::info
-Activez les [notifications push](./notifications) pour être alerté lorsque quelqu'un vous envoie un nouveau message, même lorsque l'application n'est pas ouverte.
+Activez les [notifications push](./notifications.md) pour être alerté lorsque quelqu'un vous envoie un nouveau message, même lorsque l'application n'est pas ouverte.
 :::
 
 ## Articles connexes
 
-- [Member Directory](./member-directory) -- Trouvez des membres à contacter
-- [Notifications](./notifications) -- Soyez notifié de nouveaux messages
-- [Groups](../groups/) -- Participez aux conversations de groupe
+- [Member Directory](./member-directory.md) -- Trouvez des membres à contacter
+- [Notifications](./notifications.md) -- Soyez notifié de nouveaux messages
+- [Groups](../groups/index.md) -- Participez aux conversations de groupe

@@ -1,5 +1,6 @@
 ---
 title: "Administrere fond"
+description: "Opprett og organiser gavefond i B1 Admin, sett skattefradrag og giversynlighet, og følg fondets totaler og gavehistorikk til rapportering."
 ---
 
 # Administrere fond

@@ -1,5 +1,6 @@
 ---
 title: "Premenné prostredia"
+description: "Nastavenie súboru .env pre projekty ChurchApps: voľba zdieľaného demo API alebo lokálneho API a premenné pre B1 Admin, B1.church, B1 Mobile, Lessons.church a ďalšie."
 ---
 
 # Premenné prostredia
@@ -13,9 +14,9 @@ Každý projekt ChurchApps používa súbor `.env` na lokálnu konfiguráciu. Ka
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- Nainštalujte [predpoklady](./prerequisites) pre svoj projekt
+- Nainštalujte [predpoklady](./prerequisites.md) pre svoj projekt
 - Naklonujte repozitár projektu, na ktorom chcete pracovať
-- Prečítajte si [Prehľad projektu](./project-overview), aby ste pochopili, ktoré moduly API váš projekt potrebuje
+- Prečítajte si [Prehľad projektu](./project-overview.md), aby ste pochopili, ktoré moduly API váš projekt potrebuje
 
 </div>
 
@@ -64,7 +65,7 @@ Staging prostredie (`api.staging.churchapps.org`, `api.staging.lessons.church` a
 
 ### Možnosť 2: Lokálne API
 
-Spustite projekt Api na svojom počítači. Vyžaduje MySQL 8.0+ s databázami vytvorenými pre každý modul. Pozrite si návod [lokálne nastavenie API](../api/local-setup).
+Spustite projekt Api na svojom počítači. Vyžaduje MySQL 8.0+ s databázami vytvorenými pre každý modul. Pozrite si návod [lokálne nastavenie API](../api/local-setup.md).
 
 ```bash
 # Vzor základnej URL

@@ -1,5 +1,6 @@
 ---
 title: "Thiết lập API cục bộ"
+description: "Thiết lập API ChurchApps cục bộ: clone kho mã, cấu hình sáu cơ sở dữ liệu MySQL cho module, khởi tạo schema và chạy máy chủ phát triển tự tải lại."
 ---
 
 # Thiết lập API cục bộ
@@ -13,9 +14,9 @@ Hướng dẫn này sẽ giúp bạn thiết lập API ChurchApps để phát tr
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js 24+**, **Git** và **MySQL 8.0+** -- xem [Điều kiện tiên quyết](../setup/prerequisites)
+- Cài đặt **Node.js 24+**, **Git** và **MySQL 8.0+** -- xem [Điều kiện tiên quyết](../setup/prerequisites.md)
 - Tạo một người dùng MySQL có quyền tạo cơ sở dữ liệu
-- Xem tài liệu [Biến môi trường](../setup/environment-variables) về cấu hình API
+- Xem tài liệu [Biến môi trường](../setup/environment-variables.md) về cấu hình API
 
 </div>
 
@@ -82,7 +83,7 @@ API sẽ khởi động với tính năng tự động tải lại tại [http:/
 
 ## Triển khai
 
-Môi trường staging đã được gỡ bỏ. API được triển khai lên môi trường demo mỗi khi có push lên `main`, và lên môi trường production thông qua quy trình thủ công **Deploy Prod**, quy trình này cũng áp dụng các bản di chuyển cơ sở dữ liệu đang chờ xử lý. Xem [Triển khai API](../deployment/apis) để biết chi tiết.
+Môi trường staging đã được gỡ bỏ. API được triển khai lên môi trường demo mỗi khi có push lên `main`, và lên môi trường production thông qua quy trình thủ công **Deploy Prod**, quy trình này cũng áp dụng các bản di chuyển cơ sở dữ liệu đang chờ xử lý. Xem [Triển khai API](../deployment/apis.md) để biết chi tiết.
 
 ## Phát triển thư viện cục bộ
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Cách này cho phép bạn kiểm thử các thay đổi của thư viện với API mà không cần publish lên npm. Xem [Thư viện dùng chung](../shared-libraries/#local-development-against-a-consuming-app) để biết chi tiết -- và tuyệt đối không commit phần resolution portal mà lệnh link ghi vào `package.json`.
+Cách này cho phép bạn kiểm thử các thay đổi của thư viện với API mà không cần publish lên npm. Xem [Thư viện dùng chung](../shared-libraries/index.md#local-development-against-a-consuming-app) để biết chi tiết -- và tuyệt đối không commit phần resolution portal mà lệnh link ghi vào `package.json`.
 
 ## Bài viết liên quan
 
-- **[Cơ sở dữ liệu](./database)** -- Tìm hiểu kiến trúc mỗi mô-đun một cơ sở dữ liệu
-- **[Cấu trúc mô-đun](./module-structure)** -- Cách tổ chức controller, repository và model
-- **[Thư viện dùng chung](../shared-libraries/)** -- Làm việc với `@churchapps/helpers` và `@churchapps/apihelper`
+- **[Cơ sở dữ liệu](./database.md)** -- Tìm hiểu kiến trúc mỗi mô-đun một cơ sở dữ liệu
+- **[Cấu trúc mô-đun](./module-structure.md)** -- Cách tổ chức controller, repository và model
+- **[Thư viện dùng chung](../shared-libraries/index.md)** -- Làm việc với `@churchapps/helpers` và `@churchapps/apihelper`

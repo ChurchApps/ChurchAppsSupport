@@ -1,5 +1,6 @@
 ---
 title: "Variabili d'ambiente"
+description: "Configurare il file .env dei progetti ChurchApps: scegliere tra API demo condivisa o locale e compilare le variabili per B1 Admin, B1.church, B1 Mobile e altri."
 ---
 
 # Variabili d'ambiente
@@ -13,9 +14,9 @@ Ogni progetto ChurchApps usa un file `.env` per la configurazione locale. Ogni p
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa i [prerequisiti](./prerequisites) per il tuo progetto
+- Installa i [prerequisiti](./prerequisites.md) per il tuo progetto
 - Clona il repository del progetto su cui vuoi lavorare
-- Consulta la [Panoramica dei progetti](./project-overview) per capire di quali moduli API ha bisogno il tuo progetto
+- Consulta la [Panoramica dei progetti](./project-overview.md) per capire di quali moduli API ha bisogno il tuo progetto
 
 </div>
 
@@ -64,7 +65,7 @@ L'ambiente di staging (`api.staging.churchapps.org`, `api.staging.lessons.church
 
 ### Opzione 2: API locale
 
-Esegui il progetto Api sulla tua macchina. Richiede MySQL 8.0 o superiore con i database creati per ogni modulo. Vedi la guida [configurazione locale dell'API](../api/local-setup).
+Esegui il progetto Api sulla tua macchina. Richiede MySQL 8.0 o superiore con i database creati per ogni modulo. Vedi la guida [configurazione locale dell'API](../api/local-setup.md).
 
 ```bash
 # Base URL pattern

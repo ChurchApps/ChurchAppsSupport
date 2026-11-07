@@ -1,5 +1,6 @@
 ---
 title: "Parring af din enhed"
+description: "Par et FreePlay TV med en plantype i B1 Admin ved hjælp af en firebogstavskode på skærmen, og download planens medier til afspilning i plantilstand."
 ---
 
 # Parring af din enhed
@@ -13,7 +14,7 @@ For at bruge Plan-tilstand, skal du pare dit TV med en plantype i B1 Admin. Free
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer og start FreePlay -- se [Kom i gang](../getting-started/)
+- Installer og start FreePlay -- se [Kom i gang](../getting-started/index.md)
 - Vælg **Par til plan** fra [skærmen paringstilstand](../getting-started/pairing-modes.md)
 - Har adgang til **B1 Admin** på en computer eller telefon for at gennemføre paringen
 
@@ -66,4 +67,4 @@ Paringskoder udløber efter en bestemt periode. Hvis du venter for længe, skal 
 ## Relaterede artikler
 
 - **[Plan-tilstand oversigt](./index.md)** - Forståelse af hvordan Plan-tilstand adskiller sig fra klasseværelses-tilstand
-- **[Afspilning af lektioner](../content-providers/playing-content)** - Afspiller kontroller er de samme i begge tilstande
+- **[Afspilning af lektioner](../content-providers/playing-content.md)** - Afspiller kontroller er de samme i begge tilstande

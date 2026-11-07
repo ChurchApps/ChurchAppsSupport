@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Ikonekta ang B1 Admin sa Google Sheets gamit ang B1 Export add-on para hilahin ang People, Donations, Groups, at Attendance sa spreadsheet tuwing kailangan."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Ang export ay tumatakbo sa background sa ilalim ng iyong Google account. Kung an
 - **"B1 rejected the API key (401)"** — ang key ay na-revoke o mali. Muling lumikha at muling i-paste ito.
 - **"This API key lacks permission for /giving/donations (403)"** — ang key ay walang `donations:read`. I-update ang scopes ng key sa B1Admin.
 - **Sheet doesn't refresh** pagkatapos ng pag-run — siguraduhin na titingin ka sa *correct* tab name (`B1 People` atbp.). Ang export ay lumilikha ng tab kung ito ay hindi umiiral.
-- **"Quota exceeded"** — Ang Apps Script ay naglalaan ng per-user daily quotas sa `UrlFetchApp` (karaniwang libu-libong calls bawat araw). Isang malaking church na may maraming records ay maaaring kailangang hatiin ang exports sa maraming araw o gamitin ang [Make](./make) / isang custom integration para sa high-volume sync.
+- **"Quota exceeded"** — Ang Apps Script ay naglalaan ng per-user daily quotas sa `UrlFetchApp` (karaniwang libu-libong calls bawat araw). Isang malaking church na may maraming records ay maaaring kailangang hatiin ang exports sa maraming araw o gamitin ang [Make](./make.md) / isang custom integration para sa high-volume sync.
 
 ## Pag-customize ng Add-On
 
@@ -108,6 +109,6 @@ Ang add-on ay open source — ang Apps Script project ay nasa `B1Integrations/Go
 
 ## Makita Din
 
-- [Zapier](./zapier) — para sa real-time sync sa halip na on-demand export
-- [Make](./make) — para sa sync na may mas kumplikadong transformations
+- [Zapier](./zapier.md) — para sa real-time sync sa halip na on-demand export
+- [Make](./make.md) — para sa sync na may mas kumplikadong transformations
 - [API Keys (developer reference)](/docs/developer/api/api-keys)

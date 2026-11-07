@@ -1,5 +1,6 @@
 ---
 title: "Alapok kezelése"
+description: "Adományalapok létrehozása és rendezése a B1 Admin-ban, adólevonhatóság és adakozói láthatóság beállítása, összegek és ajándéktörténet a jelentéshez."
 ---
 
 # Alapok kezelése

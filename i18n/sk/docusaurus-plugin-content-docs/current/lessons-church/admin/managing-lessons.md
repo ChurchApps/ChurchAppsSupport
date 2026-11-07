@@ -1,5 +1,6 @@
 ---
 title: "Správa lekcií"
+description: "Štruktúra lekcie v admin časti Lessons.church: miesta, sekcie a akcie podľa rolí (Povedz, Urob, Zapíš, Prehraj), text pre rodiča a zdroje."
 ---
 
 # Správa lekcií

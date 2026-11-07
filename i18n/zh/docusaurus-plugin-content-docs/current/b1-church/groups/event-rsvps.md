@@ -1,5 +1,6 @@
 ---
 title: "活动回复（RSVP）"
+description: "在 B1.church 会员门户中回复小组活动的“参加”“可能参加”或“无法参加”，并查看有多少人会参加。负责人也可以查看回复情况。"
 ---
 
 # 活动回复（RSVP）
@@ -30,14 +31,14 @@ title: "活动回复（RSVP）"
 ## 面向小组负责人
 
 - **查看回复** -- 负责人可以在小组日历（**All events**）中每个活动上看到 **View responses**（查看回复）链接。点击后会打开 **Responses**（回复）面板，按回复类型列出所有人——Going、Maybe 和 Can't go。如果还没有人回复，则显示“No responses yet”（暂无回复）。
-- **开启或关闭活动回复** -- 在创建或编辑活动时，使用 **Allow RSVPs**（允许回复）开关。关闭回复的活动不会显示回复按钮。在 B1 Admin 中批量创建活动的工作人员也有同样的选项——请参阅[小组日历](../../b1-admin/groups/group-calendar#event-rsvps)。
+- **开启或关闭活动回复** -- 在创建或编辑活动时，使用 **Allow RSVPs**（允许回复）开关。关闭回复的活动不会显示回复按钮。在 B1 Admin 中批量创建活动的工作人员也有同样的选项——请参阅[小组日历](../../b1-admin/groups/group-calendar.md#event-rsvps)。
 
 :::tip
-活动回复是一种轻量级的人数统计方式。如果您的活动需要报名信息、人数上限管理或付款，请改用[活动报名](../events/registering)。
+活动回复是一种轻量级的人数统计方式。如果您的活动需要报名信息、人数上限管理或付款，请改用[活动报名](../events/registering.md)。
 :::
 
 ## 相关文章
 
 - [小组详情](./group-details.md) -- 小组详情页面上的所有内容
-- [小组日历（B1 Admin）](../../b1-admin/groups/group-calendar) -- 工作人员和负责人如何管理小组活动和活动回复
-- [报名参加活动](../events/registering) -- 包含人数上限和付款的完整活动报名
+- [小组日历（B1 Admin）](../../b1-admin/groups/group-calendar.md) -- 工作人员和负责人如何管理小组活动和活动回复
+- [报名参加活动](../events/registering.md) -- 包含人数上限和付款的完整活动报名

@@ -1,5 +1,6 @@
 ---
 title: "Registrere oppmøte"
+description: "Før oppmøte for hvert gruppemøte i B1 Admin: opprett en økt, merk hvem som møtte, lagre notater og skriv ut oppmøtelister eller eksporter til regneark."
 ---
 
 # Registrere oppmøte

@@ -1,5 +1,6 @@
 ---
 title: "कंटेंट चलाना"
+description: "टीवी रिमोट से FreePlay नियंत्रित करें: रोकें, स्लाइड और वीडियो छोड़ें, किसी भी संदेश पर जाएँ, और प्रोवाइडर, प्लान या डाउनलोड सामग्री से प्लेयर बंद करें।"
 ---
 
 # कंटेंट चलाना
@@ -13,13 +14,13 @@ FreePlay प्लेयर स्क्रीन को पूरा भर द
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- कुछ चुनें जो चलाना है। देखें [Browsing and Downloading Content](./browsing-content), [Plan Mode](../plan-mode/), या [Announcements](./announcements)
+- कुछ चुनें जो चलाना है। देखें [Browsing and Downloading Content](./browsing-content.md), [Plan Mode](../plan-mode/index.md), या [Announcements](./announcements.md)
 - प्लेयर खोलने के लिए **Start** दबाएँ
 
 </div>
 
 :::info
-कैलेंडर से जुड़ी स्क्रीन थोड़े अलग नियंत्रणों वाला एक अलग शेड्यूल्ड प्लेयर उपयोग करती हैं। देखें [Scheduled Playback on the TV](../scheduled-mode/scheduled-playback)।
+कैलेंडर से जुड़ी स्क्रीन थोड़े अलग नियंत्रणों वाला एक अलग शेड्यूल्ड प्लेयर उपयोग करती हैं। देखें [Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md)।
 :::
 
 ## प्लेयर नियंत्रण
@@ -57,7 +58,7 @@ FreePlay प्लेयर स्क्रीन को पूरा भर द
 प्लेयर छोड़ने के लिए अपने रिमोट पर **Down** या **Back** दबाएँ। आप कहाँ पहुँचेंगे, यह इस पर निर्भर करता है कि आप क्या चला रहे थे:
 
 - **Provider content** - कंटेंट ब्राउज़र पर वापस
-- **A plan** - प्लान डाउनलोड स्क्रीन पर वापस। देखें [Plan Mode](../plan-mode/)
+- **A plan** - प्लान डाउनलोड स्क्रीन पर वापस। देखें [Plan Mode](../plan-mode/index.md)
 - **A download** - **Downloads** स्क्रीन पर वापस
 
 :::info
@@ -66,5 +67,5 @@ FreePlay प्लेयर स्क्रीन को पूरा भर द
 
 ## संबंधित लेख
 
-- **[Browsing and Downloading Content](./browsing-content)** - कंटेंट खोजें और ऑफ़लाइन चलाने के लिए डाउनलोड करें
-- **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback)** - कैलेंडर का पालन करने वाली स्क्रीन के लिए रिमोट नियंत्रण
+- **[Browsing and Downloading Content](./browsing-content.md)** - कंटेंट खोजें और ऑफ़लाइन चलाने के लिए डाउनलोड करें
+- **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md)** - कैलेंडर का पालन करने वाली स्क्रीन के लिए रिमोट नियंत्रण

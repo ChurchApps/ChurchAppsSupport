@@ -1,5 +1,6 @@
 ---
 title: "Guide: Skapa årsrapporter för gåvor"
+description: "Slutför årets gåvoregister i B1 Admin, kontrollera skatteinställningarna för fonderna och skapa avdragsgilla gåvobesked för varje givare."
 ---
 
 # Skapa årsrapporter för gåvor

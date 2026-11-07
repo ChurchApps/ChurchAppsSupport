@@ -1,5 +1,7 @@
 ---
-title: "Pamaldų tvarka"
+title: "Pamaldų tvarka B1 Admin"
+sidebar_label: "Pamaldų tvarka"
+description: "Sudarykite pamaldų tvarką B1 Admin: pridėkite dainas, pamokas ir savitus elementus, sudėliokite į skyrius ir atspausdinkite vykdymo lapą."
 ---
 
 # Pamaldų tvarka

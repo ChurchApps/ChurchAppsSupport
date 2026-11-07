@@ -1,5 +1,6 @@
 ---
 title: "Endpoint dei contenuti"
+description: "Riferimento endpoint dell'API Content di ChurchApps: pagine web, post del blog, reindirizzamenti, predicazioni, eventi, file, Bibbia e canzoni in B1 Admin."
 ---
 
 # Endpoint dei contenuti
@@ -133,7 +134,7 @@ Percorso base: `/content/pageHistory`
 
 Percorso base: `/content/posts`
 
-Gli articoli del blog sono righe autonome: `title`, `slug` (univoco per chiesa), `excerpt`, `content` (corpo in markdown), `authorId`, `photoUrl`, `publishDate`, `category` e `tags`. Un articolo è pubblicato una volta impostato `publishDate` con una data passata. Gli endpoint di lettura arricchiscono ogni articolo con `authorName`, ricavato da `authorId`. Vedi [Architettura del website builder](../../architecture/website-builder#blog).
+Gli articoli del blog sono righe autonome: `title`, `slug` (univoco per chiesa), `excerpt`, `content` (corpo in markdown), `authorId`, `photoUrl`, `publishDate`, `category` e `tags`. Un articolo è pubblicato una volta impostato `publishDate` con una data passata. Gli endpoint di lettura arricchiscono ogni articolo con `authorName`, ricavato da `authorId`. Vedi [Architettura del website builder](../../architecture/website-builder.md#blog).
 
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|------|------|------------|-------------|
@@ -458,8 +459,8 @@ Percorso base: `/content/support`
 
 ## Pagine correlate
 
-- [Architettura del website builder](../../architecture/website-builder) -- Come pagine, sezioni, elementi, articoli e reindirizzamenti si integrano tra le applicazioni
-- [Endpoint di Membership](./membership) -- Persone, chiese, gruppi, ruoli, permessi
-- [Endpoint di Presenze](./attendance) -- Monitoraggio dei servizi e delle visite
-- [Autenticazione e permessi](./authentication) -- Flusso di accesso, JWT, modello dei permessi
-- [Struttura del modulo](../module-structure) -- Schemi di organizzazione del codice
+- [Architettura del website builder](../../architecture/website-builder.md) -- Come pagine, sezioni, elementi, articoli e reindirizzamenti si integrano tra le applicazioni
+- [Endpoint di Membership](./membership.md) -- Persone, chiese, gruppi, ruoli, permessi
+- [Endpoint di Presenze](./attendance.md) -- Monitoraggio dei servizi e delle visite
+- [Autenticazione e permessi](./authentication.md) -- Flusso di accesso, JWT, modello dei permessi
+- [Struttura del modulo](../module-structure.md) -- Schemi di organizzazione del codice

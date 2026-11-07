@@ -1,5 +1,6 @@
 ---
 title: "Switching Churches"
+description: "Switch between churches in the B1 Mobile app by picking a recent church or searching by name, all with one ChurchApps login."
 ---
 
 # Switching Churches
@@ -13,7 +14,7 @@ If you are a member of more than one church, B1 Mobile makes it easy to switch b
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](./installing) and [log in](./logging-in) to your account
+- [Install B1 Mobile](./installing.md) and [log in](./logging-in.md) to your account
 
 </div>
 
@@ -24,7 +25,7 @@ If you are a member of more than one church, B1 Mobile makes it easy to switch b
 3. The **Church Search** screen appears. Your recently visited churches are shown at the top for quick access.
 4. Tap a recent church to switch to it, or type in the search field to find a different church.
 
-When you switch churches, the app reloads with that church's branding, navigation links, and content. Your [dashboard](../dashboard/), [groups](../groups/), and other data will reflect the newly selected church.
+When you switch churches, the app reloads with that church's branding, navigation links, and content. Your [dashboard](../dashboard/index.md), [groups](../groups/index.md), and other data will reflect the newly selected church.
 
 ## Searching for a Church
 

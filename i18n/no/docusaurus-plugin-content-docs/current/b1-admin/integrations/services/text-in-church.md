@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Koble B1 Admin og Text In Church sammen med Zapier: lag en API-nøkkel, bygg en Zap fra kontaktkort til B1, og speil gruppemedlemskap."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Slå Zap-en på. Det neste connect-kort sendt gjennom TIC lander i **B1Admin →
 
 ## Se også
 
-- [Clearstream](./clearstream) — alternativ SMS-plattform med lignende Zapier-form
-- [Zapier (oversikt)](../zapier) — B1-siden av hver Zapier-oppskrift
+- [Clearstream](./clearstream.md) — alternativ SMS-plattform med lignende Zapier-form
+- [Zapier (oversikt)](../zapier.md) — B1-siden av hver Zapier-oppskrift
 - [Text In Church Zapier-guide](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TICs docs)

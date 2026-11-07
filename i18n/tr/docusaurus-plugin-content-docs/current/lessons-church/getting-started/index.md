@@ -1,5 +1,7 @@
 ---
-title: "Başlarken"
+title: "Lessons.church'e Başlarken"
+sidebar_label: "Başlarken"
+description: "Ücretsiz Lessons.church hesabınızı oluşturun, kilisenizi bağlayın, sınıfları kurun ve ilk derslerinizi planlayın. Abonelik ya da deneme gerekmez."
 ---
 
 # Başlarken

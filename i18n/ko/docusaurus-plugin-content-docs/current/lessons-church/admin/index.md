@@ -1,5 +1,6 @@
 ---
 title: "관리"
+description: "ChurchApps의 Lessons.church 관리 영역 개요: 프로그램, 연구, 레슨, 자료, 통계, 외부 교육과정 제공자 관리 방법."
 ---
 # 관리
 <div class="article-intro">

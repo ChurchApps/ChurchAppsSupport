@@ -1,5 +1,7 @@
 ---
-title: "Check-in pelo próprio celular"
+title: "Check-in Próprio pelo App B1 Mobile"
+sidebar_label: "Check-in pelo próprio celular"
+description: "Registre você e sua família em um culto pelo app B1 Mobile, incluindo a escolha do horário e do grupo de cada pessoa."
 ---
 
 # Check-in pelo próprio celular
@@ -13,7 +15,7 @@ Fazer check-in pelo B1 Mobile é um processo simples, com várias etapas. Em pou
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [faça login](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [faça login](../getting-started/logging-in.md) na sua conta
 - Certifique-se de que os seus [membros da família](../profile/household.md) estão cadastrados no seu perfil
 
 </div>

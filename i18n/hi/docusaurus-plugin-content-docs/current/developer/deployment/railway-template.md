@@ -1,5 +1,6 @@
 ---
 title: "Railway पर स्व-होस्टिंग"
+description: "लगभग 15 मिनट में Railway पर निजी ChurchApps इंस्टेंस तैनात करें, फिर B1 Admin और B1App के लिए ईमेल, कस्टम डोमेन, मल्टी-चर्च रूटिंग, दान और फ़ाइल संग्रह कॉन्फ़िगर करें।"
 ---
 
 # Railway पर स्व-होस्टिंग
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Vimeo उपदेश समर्थन |
 | `API_BIBLE_KEY` | पाठों और कंटेंट में बाइबल पद खोज |
 | `YOUVERSION_API_KEY` | YouVersion बाइबल एकीकरण |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | ब्राउज़र push सूचनाएँ ([VAPID keypair बनाएँ](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | ब्राउज़र push सूचनाएँ ([VAPID keypair बनाएँ](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | नए पंजीकरणों के लिए वैकल्पिक CRM सिंक |
 
 ## अपडेट करना
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## संबंधित लेख
 
-- **[Docker के साथ स्व-होस्टिंग](./docker)** -- अपने हार्डवेयर या VPS पर वही स्टैक
-- **[प्रारंभिक सेटअप](../../getting-started/initial-setup)** -- आपका चर्च बनने के बाद पहले कदम
-- **[Website Initial Setup](../../b1-admin/website/initial-setup)** -- अपने चर्च की सार्वजनिक साइट कॉन्फ़िगर करें
-- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** -- Stripe या PayPal जोड़ें
-- **[Local API Setup](../api/local-setup)** -- विकास के लिए स्थानीय रूप से स्टैक चलाना
-- **[API Deployment (AWS)](./apis)** -- आधिकारिक ChurchApps SaaS कैसे डिप्लॉय होता है
+- **[Docker के साथ स्व-होस्टिंग](./docker.md)** -- अपने हार्डवेयर या VPS पर वही स्टैक
+- **[प्रारंभिक सेटअप](../../getting-started/initial-setup.md)** -- आपका चर्च बनने के बाद पहले कदम
+- **[Website Initial Setup](../../b1-admin/website/initial-setup.md)** -- अपने चर्च की सार्वजनिक साइट कॉन्फ़िगर करें
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup.md)** -- Stripe या PayPal जोड़ें
+- **[Local API Setup](../api/local-setup.md)** -- विकास के लिए स्थानीय रूप से स्टैक चलाना
+- **[API Deployment (AWS)](./apis.md)** -- आधिकारिक ChurchApps SaaS कैसे डिप्लॉय होता है

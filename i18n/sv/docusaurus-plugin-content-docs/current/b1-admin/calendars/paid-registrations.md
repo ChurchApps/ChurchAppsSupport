@@ -1,5 +1,6 @@
 ---
 title: "Betalda registreringar"
+description: "Ställ in betalda eventanmälningar i B1 Admin: deltagartyper med pris, tillägg, rabattkoder, väntelistor och betalning via din givartjänst."
 ---
 
 # Betalda registreringar
@@ -17,7 +18,7 @@ Eventregistrering kan gå längre än en enkel deltagarräkning. Du kan definier
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Aktivera registrering för eventet först — se [Skapa kalendrar](creating-calendars#enabling-event-registration)
+- Aktivera registrering för eventet först — se [Skapa kalendrar](./creating-calendars.md#enabling-event-registration)
 - För att ta emot betalningar online behöver din kyrka [konfigurerad onlinegivning](../donations/online-giving-setup.md) (Stripe, PayPal eller Kingdom Funding). Gratis evenemang kräver ingen givarinställning. Utan onlinegivning fungerar betalda registreringar fortfarande, men personerna betalar kyrkan direkt — se [Kyrkor utan onlinegivning](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Varje kod visar ett **Användningar**-antal, så du kan se hur ofta den har lös
 Aktivera **Aktivera väntelista** på kortet Registreringsinställningar. När evenemanget når sin kapacitet:
 
 - Nya registrerade erbjuds en plats på väntelistan i stället för att nekas. De slutför samma anmälan (betalningen hoppas över medan de står på väntelistan).
-- När någon avbokar flyttas den äldsta registreringen på väntelistan **upp automatiskt** och får ett e-postmeddelande om att en plats har frigjorts. Om de har en utestående skuld länkar e-postmeddelandet till [Mina registreringar](../../b1-church/events/my-registrations) på din kyrkas B1-webbplats, där de kan slutföra betalningen.
+- När någon avbokar flyttas den äldsta registreringen på väntelistan **upp automatiskt** och får ett e-postmeddelande om att en plats har frigjorts. Om de har en utestående skuld länkar e-postmeddelandet till [Mina registreringar](../../b1-church/events/my-registrations.md) på din kyrkas B1-webbplats, där de kan slutföra betalningen.
 - Du kan flytta upp någon manuellt när som helst med åtgärden **Flytta upp** på en rad på väntelistan — användbart efter att du har höjt evenemangets kapacitet.
 
 :::info
@@ -79,7 +80,7 @@ Uppflyttade registreringar förblir *väntande* tills eventuell skuld är betald
 
 - Klicka på en rads detaljikon för att öppna dialogrutan **Registreringsdetaljer** — medlemmar, val, betalt/saldo och en tabell **Betalningar** som listar varje debitering (belopp, metod, datum).
 - **Exportera CSV** laddar ner hela listan med kolumner för medlemmar, deltagartyper, val, betalt/totalt/saldo, status och en kolumn per registreringsfråga.
-- **Lägg till deltagare** registrerar en anmälan gjord offline eller per telefon för vilken person som helst i din kyrka. Välj personen och, vid ett betalt evenemang, deras deltagartyp. Deras kort debiteras inte: en betald registrering sparas som **väntande** med hela beloppet som utestående saldo. Om din kyrka har onlinegivning kan personen betala från [Mina registreringar](../../b1-church/events/my-registrations); annars tar du emot betalningen personligen. Du behöver behörigheten Registreringar – Redigera för att lägga till deltagare.
+- **Lägg till deltagare** registrerar en anmälan gjord offline eller per telefon för vilken person som helst i din kyrka. Välj personen och, vid ett betalt evenemang, deras deltagartyp. Deras kort debiteras inte: en betald registrering sparas som **väntande** med hela beloppet som utestående saldo. Om din kyrka har onlinegivning kan personen betala från [Mina registreringar](../../b1-church/events/my-registrations.md); annars tar du emot betalningen personligen. Du behöver behörigheten Registreringar – Redigera för att lägga till deltagare.
 
 :::info
 Återbetalningar hanteras inte i B1. Om du behöver återbetala en avbokad betald registrering gör du återbetalningen i din givartjänsts instrumentpanel (t.ex. Stripe).
@@ -94,12 +95,12 @@ Betalningar går genom samma givargateway som din kyrka redan använder för gå
 Om din kyrka inte har någon givartjänst konfigurerad kan betalda evenemang ändå ta emot registreringar. Betalningssteget informerar registrerade om att onlinebetalning inte är tillgänglig och att de kan betala kyrkan direkt, och knappen **Registrera och betala senare** sparar registreringen. Den sparas som **väntande** med hela beloppet som utestående saldo och visas i listan med en saldovarning. Ta in pengarna på det sätt din kyrka vanligtvis gör.
 
 :::info
-B1 har inget sätt att markera en offline-betalning som mottagen. Det utestående saldot finns kvar i listan och på den registrerades kort under [Mina registreringar](../../b1-church/events/my-registrations) även efter att du har tagit emot pengarna, såför din egen förteckning över vem som har betalat.
+B1 har inget sätt att markera en offline-betalning som mottagen. Det utestående saldot finns kvar i listan och på den registrerades kort under [Mina registreringar](../../b1-church/events/my-registrations.md) även efter att du har tagit emot pengarna, såför din egen förteckning över vem som har betalat.
 :::
 
 ## Relaterade artiklar
 
-- [Skapa kalendrar](creating-calendars#enabling-event-registration) — aktivera registrering och grundinställningarna
+- [Skapa kalendrar](./creating-calendars.md#enabling-event-registration) — aktivera registrering och grundinställningarna
 - [Konfigurera onlinegivning](../donations/online-giving-setup.md) — konfigurera betalningsgatewayen som används i kassan
-- [Registrera dig för evenemang](../../b1-church/events/registering) — vad medlemmar ser när de anmäler sig
-- [Mina registreringar](../../b1-church/events/my-registrations) — hur medlemmar betalar saldon och redigerar registreringar
+- [Registrera dig för evenemang](../../b1-church/events/registering.md) — vad medlemmar ser när de anmäler sig
+- [Mina registreringar](../../b1-church/events/my-registrations.md) — hur medlemmar betalar saldon och redigerar registreringar

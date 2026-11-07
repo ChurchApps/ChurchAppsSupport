@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Prijunkite B1 Admin prie Claude, kad paprasta kalba klaustumėte apie lankomumą, aukas ir grupes, su prisijungimo ir ribotų leidimų API rakto parinktimis."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Tai ta pati `/membership/people`, `/giving/donations`, `/attendance/visits` ir k
 
 - [API Keys](/docs/developer/api/api-keys) — visa teisių nuoroda
 - [MCP Server (developer reference)](/docs/developer/api/mcp) — protokolo detalės ir įrankių schemos
-- [ChatGPT](./chatgpt) — ta pati idėja, skirta OpenAI modeliams
+- [ChatGPT](./chatgpt.md) — ta pati idėja, skirta OpenAI modeliams

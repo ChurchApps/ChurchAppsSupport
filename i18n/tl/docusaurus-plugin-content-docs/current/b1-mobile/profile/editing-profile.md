@@ -1,5 +1,7 @@
 ---
-title: "Pag-edit ng Iyong Profile"
+title: "Pag-edit ng Iyong Profile sa B1 Mobile App"
+sidebar_label: "Pag-edit ng Iyong Profile"
+description: "I-update ang pangalan, email, telepono, address, at larawan sa profile sa B1 Mobile app para manatiling updated ang talaan at directory ng simbahan."
 ---
 
 # Pag-edit ng Iyong Profile
@@ -13,7 +15,7 @@ Ang tab na **Profile** ay nagbibigay-daan sa iyong i-update ang iyong personal n
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 
 </div>
 
@@ -34,7 +36,7 @@ Kasama sa iyong profile ang mga sumusunod na personal na detalye:
 3. I-tap ang field na gusto mong i-update at gawin ang iyong mga pagbabago.
 4. I-save ang iyong mga pagbabago kapag tapos ka na.
 
-Awtomatikong na-sync ang iyong na-update na impormasyon. Sinumang tumingin sa iyong profile (batay sa iyong [mga setting ng privacy](./privacy-settings)) ay makikita agad ang mga bagong detalye.
+Awtomatikong na-sync ang iyong na-update na impormasyon. Sinumang tumingin sa iyong profile (batay sa iyong [mga setting ng privacy](./privacy-settings.md)) ay makikita agad ang mga bagong detalye.
 
 :::tip
 Panatilihing updated ang iyong email address at numero ng telepono. Ginagamit ng iyong simbahan ang impormasyong ito para magpadala sa iyo ng mahahalagang update at paalala.
@@ -46,7 +48,7 @@ Maaari kang magdagdag o magpalit ng iyong profile photo mula sa tab na **Profile
 
 ## Mga Pagbabago sa Lahat ng ChurchApps
 
-Dahil lahat ng serbisyo ng ChurchApps ay gumagamit ng parehong sistema ng account, ang pagbabagong ginawa mo sa B1 Mobile ay agad na nakikita sa [B1.church](../../b1-church/), sa mga admin tool ng iyong simbahan, at sa anumang iba pang konektadong serbisyo. Hindi mo na kailangang i-update ang iyong impormasyon nang hiwalay sa bawat lugar.
+Dahil lahat ng serbisyo ng ChurchApps ay gumagamit ng parehong sistema ng account, ang pagbabagong ginawa mo sa B1 Mobile ay agad na nakikita sa [B1.church](../../b1-church/index.md), sa mga admin tool ng iyong simbahan, at sa anumang iba pang konektadong serbisyo. Hindi mo na kailangang i-update ang iyong impormasyon nang hiwalay sa bawat lugar.
 
 :::info
 Ang ilang simbahan ay nangangailangan ng pag-apruba ng administrator para sa ilang pagbabago sa profile. Kung hindi agad lumabas ang iyong update, tingnan ang tab na **Pending** sa iyong profile screen para sa status nito.
@@ -54,5 +56,5 @@ Ang ilang simbahan ay nangangailangan ng pag-apruba ng administrator para sa ila
 
 ## Mga Kaugnay na Artikulo
 
-- [Sambahayan](./household) -- Tingnan at pamahalaan ang iyong mga miyembro ng pamilya
-- [Mga Setting ng Privacy](./privacy-settings) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyo
+- [Sambahayan](./household.md) -- Tingnan at pamahalaan ang iyong mga miyembro ng pamilya
+- [Mga Setting ng Privacy](./privacy-settings.md) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyo

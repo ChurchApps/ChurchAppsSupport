@@ -1,5 +1,7 @@
 ---
-title: "Začíname"
+title: "Začíname s B1 Checkin"
+sidebar_label: "Začíname"
+description: "Nastavte aplikáciu kiosku B1 Checkin na tablete Android: nainštalujte ju, prihláste sa, vyberte svoj zbor a voliteľne pripojte tlačiareň štítkov."
 ---
 
 # Začíname s B1 Church Checkin
@@ -27,9 +29,9 @@ Nastavenie B1 Church Checkin zaberie len pár minút. Táto sekcia vás prevedie
 
 Pri prvom spustení aplikácie prejdete tromi krokmi:
 
-1. **[Prihláste sa](./logging-in)** -- Zadajte svoj e-mail a heslo na overenie.
-2. **[Vyberte svoj kostol](./logging-in)** -- Ak je váš účet prepojený s viacerými kostolmi, vyberte, ktorý z nich má tento kiosk obsluhovať.
-3. **[Nastavte tlačiareň](./printer-setup)** -- Nakonfigurujte sieťovú tlačiareň na tlač štítkov, alebo tento krok preskočte, ak štítky nepotrebujete.
+1. **[Prihláste sa](./logging-in.md)** -- Zadajte svoj e-mail a heslo na overenie.
+2. **[Vyberte svoj kostol](./logging-in.md)** -- Ak je váš účet prepojený s viacerými kostolmi, vyberte, ktorý z nich má tento kiosk obsluhovať.
+3. **[Nastavte tlačiareň](./printer-setup.md)** -- Nakonfigurujte sieťovú tlačiareň na tlač štítkov, alebo tento krok preskočte, ak štítky nepotrebujete.
 
 Po prvom prihlásení aplikácia uloží vaše prihlasovacie údaje a výber kostola. Pri ďalších spusteniach automaticky prejde priamo na obrazovku služieb.
 
@@ -43,6 +45,6 @@ Skôr než nastavíte kiosk, uistite sa, že správca vášho kostola nakonfigur
 
 ## Ďalšie kroky
 
-- [Prihlásenie](./logging-in) -- Podrobné pokyny na prihlásenie a výber kostola.
-- [Nastavenie tlačiarne](./printer-setup) -- Ako nájsť, vybrať a otestovať tlačiareň štítkov.
-- [Postup prihlásenia detí](../check-in/) -- Naučte sa celý postup odbavenia po nastavení kiosku.
+- [Prihlásenie](./logging-in.md) -- Podrobné pokyny na prihlásenie a výber kostola.
+- [Nastavenie tlačiarne](./printer-setup.md) -- Ako nájsť, vybrať a otestovať tlačiareň štítkov.
+- [Postup prihlásenia detí](../check-in/index.md) -- Naučte sa celý postup odbavenia po nastavení kiosku.

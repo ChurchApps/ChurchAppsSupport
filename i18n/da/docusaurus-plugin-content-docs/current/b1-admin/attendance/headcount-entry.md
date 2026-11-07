@@ -1,5 +1,6 @@
 ---
 title: "Registrering og tendens for deltagerantal"
+description: "Indtast samlet deltagerantal for en gudstjeneste eller gruppe i B1 Admin uden navneliste, og følg tallene uge for uge i rapporten Headcount Trend."
 ---
 
 # Registrering og tendens for deltagerantal

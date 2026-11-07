@@ -1,21 +1,22 @@
 ---
 title: "Mga Paalala ng Event"
+description: "I-set up ang paalala sa event sa B1 Admin para sa push, email, at text. Piliin ang oras, tatanggap, at mensahe para maabisuhan ang mga tao sa tamang panahon."
 ---
 
 # Mga Paalala ng Event
 
 <div class="article-intro">
 
-Awtomatikong nagpapaalala ang mga paalala ng event sa mga tamang tao bago magsimula ang event -- halimbawa, "Huwag palampasin! Magsisimula bukas ng 9:00 AM ang healthcare workshop." Isang beses mo lang i-configure ang paalala sa event, at ipapadala ito ng B1 sa takdang oras sa pamamagitan ng push notification, email, at, kung may naka-set up na texting ang iyong simbahan, text message. Maaaring kontrolin ng mga miyembro kung aling paalala ang tatanggapin nila mula sa sarili nilang [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Awtomatikong nagpapaalala ang mga paalala ng event sa mga tamang tao bago magsimula ang event -- halimbawa, "Huwag palampasin! Magsisimula bukas ng 9:00 AM ang healthcare workshop." Isang beses mo lang i-configure ang paalala sa event, at ipapadala ito ng B1 sa takdang oras sa pamamagitan ng push notification, email, at, kung may naka-set up na texting ang iyong simbahan, text message. Maaaring kontrolin ng mga miyembro kung aling paalala ang tatanggapin nila mula sa sarili nilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Gumawa ng event na gusto mong paalalahanan ang mga tao (tingnan ang [Creating Calendars](creating-calendars))
-- Para maabot ang mga nakarehistrong dadalo, [i-enable ang registration](creating-calendars) sa event
-- Para maabot ang buong grupo, tiyaking kabilang ang event sa isang [grupo](../groups/creating-groups) na may mga miyembro
+- Gumawa ng event na gusto mong paalalahanan ang mga tao (tingnan ang [Creating Calendars](./creating-calendars.md))
+- Para maabot ang mga nakarehistrong dadalo, [i-enable ang registration](./creating-calendars.md) sa event
+- Para maabot ang buong grupo, tiyaking kabilang ang event sa isang [grupo](../groups/creating-groups.md) na may mga miyembro
 
 </div>
 
@@ -57,21 +58,21 @@ Ang mga panauhing idinagdag lang sa pangalan (nang walang nakakonektang person r
 - Awtomatikong hinahawakan ang mga paulit-ulit na event: bawat darating na pag-uulit ay may sariling paalala.
 
 :::tip
-Ipinapadala muna ang mga paalala sa **push**, at ang email ay pamalit. Kung naka-enable ang push notification ng miyembro, makakatanggap siya ng push; kung hindi, email na lang ang ipapadala. Pinipili ng mga miyembro kung aling channel ang gusto nila para sa bawat uri ng notification sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences).
+Ipinapadala muna ang mga paalala sa **push**, at ang email ay pamalit. Kung naka-enable ang push notification ng miyembro, makakatanggap siya ng push; kung hindi, email na lang ang ipapadala. Pinipili ng mga miyembro kung aling channel ang gusto nila para sa bawat uri ng notification sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Mga Text Reminder
 
 Lalabas lang ang channel na **Text** kapag may nakakonektang texting provider ang iyong simbahan. Ipinapadala ang mga text sa pamamagitan ng texting provider ng iyong simbahan, at maaaring may bayaring kaakibat ang bawat text para sa iyong simbahan. Dagdag ang mga ito sa anumang push o email reminder, at ipinapadala lamang sa mga taong:
 
-- Nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences), at
+- Nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at
 - May mobile number sa kanilang profile.
 
 Ang bawat text ay nagsisimula sa pangalan ng iyong simbahan, nananatili sa iisang text message, at nagtatapos sa "Reply STOP to opt out." Sinumang sumagot ng STOP ay titigil na sa pagtanggap ng mga text mula sa iyong simbahan. Para maabot ng mga STOP reply ang B1, i-paste ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng iyong provider.
 
 ## Ano ang Maaaring Kontrolin ng mga Miyembro
 
-Palaging iginagalang ng mga paalala ang [Notification Preferences](../../b1-church/getting-started/notification-preferences) ng bawat miyembro. Maaaring:
+Palaging iginagalang ng mga paalala ang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) ng bawat miyembro. Maaaring:
 
 - I-off ang **Event Reminders** para sa push, email, o text habang nananatiling on ang ibang notification.
 - I-on o i-off ang mga text reminder gamit ang **Text messages**.
@@ -81,10 +82,10 @@ Hindi mo maaaring baliktarin ang pasya ng miyembro na mag-opt out sa mga paalala
 
 ## Mga Paalala para sa Paglilingkod
 
-Ang mga boluntaryong naka-iskedyul sa isang plano ay tumatanggap ng hiwalay na **serving reminder** na may mga detalye ng plano at, kung hindi pa sila tumutugon, mga button na **Accept / Decline** mismo sa email. Ang mga paalalang ito ay naka-configure sa plan type at hindi sa calendar event, at maaari ring ipadala sa pamamagitan ng text -- tingnan ang [Volunteer Reminders](../serving/plans#volunteer-reminders) at [Sunday Volunteers](../guides/sunday-volunteers) para sa kung paano gumagana ang pag-iskedyul ng boluntaryo at mga paalala.
+Ang mga boluntaryong naka-iskedyul sa isang plano ay tumatanggap ng hiwalay na **serving reminder** na may mga detalye ng plano at, kung hindi pa sila tumutugon, mga button na **Accept / Decline** mismo sa email. Ang mga paalalang ito ay naka-configure sa plan type at hindi sa calendar event, at maaari ring ipadala sa pamamagitan ng text -- tingnan ang [Volunteer Reminders](../serving/plans.md#volunteer-reminders) at [Sunday Volunteers](../guides/sunday-volunteers.md) para sa kung paano gumagana ang pag-iskedyul ng boluntaryo at mga paalala.
 
 ## Mga Susunod na Hakbang
 
-- [Notification Preferences](../../b1-church/getting-started/notification-preferences) -- Ano ang maaaring kontrolin ng mga miyembro
-- [Event Registration Guide](../guides/event-registration) -- I-set up ang registration para maabot ng mga paalala ang mga dadalo
-- [Creating Calendars](creating-calendars) -- Bumalik sa pag-set up ng calendar
+- [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) -- Ano ang maaaring kontrolin ng mga miyembro
+- [Event Registration Guide](../guides/event-registration.md) -- I-set up ang registration para maabot ng mga paalala ang mga dadalo
+- [Creating Calendars](./creating-calendars.md) -- Bumalik sa pag-set up ng calendar

@@ -1,5 +1,6 @@
 ---
 title: "Présence"
+description: "Consultez la présence hebdomadaire, les salles et les visiteurs dans B1 Admin, puis configurez les campus, les horaires de services, les effectifs et l'enregistrement par kiosque depuis la page Présence."
 ---
 
 # Présence

@@ -1,5 +1,6 @@
 ---
 title: "Arkitektur for nettstedbyggeren"
+description: "Utviklerkart over B1-nettsidebyggeren: innholdstre, delt elementkatalog, renderingspipeline og KI-generering av sider i B1 Admin og B1.church."
 ---
 
 # Arkitektur for nettstedbyggeren
@@ -82,7 +83,7 @@ Rendererne ligger i `Packages/apphelper/src/website/components/elementTypes/`, �
 
 ### Redigeringsskjemaer (B1Admin)
 
-Editorens innstillingsskjemaer per type ligger i `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` sender videre til en dedikert komponent (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) eller en innebygd feltbygger per type. Den KI-vendte speilingen av denne katalogen er API-ets MCP-verktøy `describe_page_builder` (se [MCP-server](../api/mcp)).
+Editorens innstillingsskjemaer per type ligger i `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` sender videre til en dedikert komponent (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) eller en innebygd feltbygger per type. Den KI-vendte speilingen av denne katalogen er API-ets MCP-verktøy `describe_page_builder` (se [MCP-server](../api/mcp.md)).
 
 ### Formdeler for seksjoner
 
@@ -149,7 +150,7 @@ Alt dette er gjengivelse på B1App-siden over ContentApi-data — API-et lagrer,
 |---------|--------------|
 | Metabeskrivelser | `pages.metaDescription` (≤300 tegn) flyter gjennom `MetaHelper.getMetaData()` inn i Next.js `Metadata` (description + Open Graph) på hver byggerrendret rute. B1Admins sideinnstillinger har en AI-knapp **Generate** (se nedenfor) |
 | Omdirigeringer | Rader `redirects` per kirke, administrert på `/content/redirects` (`content.edit`, grense på 200 rader, normaliserte stier). Ved en mulig 404 slår B1Apps siderute stien opp mot `GET /content/redirects/public/:churchId` og sender en HTTP 308 via Nexts `permanentRedirect`; ukjente stier faller gjennom til `notFound()` |
-| Merket 404 | `not-found.tsx` rendrer `BrandedNotFound` med kirkens logo, navn og tema i stedet for en generisk feil. Ukjente stier `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` og `/volunteer/[planId]` gir en ekte 404, det samme gjelder ukjente underdomener og ugyldige sideslugger (se [Nettstedsruting og flere nettsteder](./websites)) |
+| Merket 404 | `not-found.tsx` rendrer `BrandedNotFound` med kirkens logo, navn og tema i stedet for en generisk feil. Ukjente stier `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` og `/volunteer/[planId]` gir en ekte 404, det samme gjelder ukjente underdomener og ugyldige sideslugger (se [Nettstedsruting og flere nettsteder](./websites.md)) |
 | Strukturerte data | `BlogPosting` JSON-LD på blogginnlegg; `VideoObject` på sidene for hver preken (`/{sdSlug}/sermons/[sermonId]`) og på sider som inneholder et `sermons`-element; `Event` fra kalender-/arrangementselementer på byggersider og på hver `/{sdSlug}/events/[eventId]`-side (neste forekomst, med arrangementsbildet som `image`); schema.org `Event` fra elementet `serviceTimes` |
 | Prekensider | Hver offentlig preken får en gjennomsøkbar side på `/sermons/[sermonId]` med full metadata — prekener er ikke lenger låst inne i den klientsidige nettleserelementet |
 | Analyse | Den offentlige innstillingsnøkkelen `ga4MeasurementId` (administrert ved siden av omdirigeringer i B1Admin) injiserer en per-kirke GA4 gtag via `next/script`. B1-appen (`/{sdSlug}/mobile`) sender også sine sidevisninger til den IDen, ved siden av ChurchApps' egen tagg, når det er en gyldig `G-`-ID (GTM-container-ID-er forblir bare for nettstedet). Hver `gtag('config')` bærer en `display_mode` på `installed` eller `browser`, basert på `navigator.standalone` eller medieforespørselen `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -197,7 +198,7 @@ Hver fase er sin egen forespørsel slik at hvert kall holder seg innenfor API Ga
 | `POST /website/generateAltText` | Visjonskall over opptil 20 bilde-URL-er; returnerer kort alternativ tekst (≤125 tegn, med ledende «photo of»-prefikser fjernet) |
 | `POST /website/generateMetaDescription` | Én SEO-metabeskrivelse (≤155 tegn) fra sidens tekstinnhold — koblet til Generate-knappen i B1Admins sideinnstillinger |
 
-Prompter for disse endepunktene er markdown-filer under `AskApi/config/instructions/`, inkludert elementkatalogen modellen genererer fra. To designvalg holder katalogen ærlig: klienten sender `availableElementTypes` med hver forespørsel (prompten kan bare bruke typer fra den listen — serveren hardkoder aldri hele settet), og API-ets MCP-verktøy `describe_page_builder` bærer den samme veiledningen for KI-agenter som jobber gjennom [MCP](../api/mcp). Modellene er Anthropic Claude via OpenRouter — 3.5 Haiku for seksjonsinnhold (latens), 3.5 Sonnet for disposisjoner, nettstedsplaner og visjon — med en OpenAI-reserve når ingen OpenRouter-nøkkel er konfigurert.
+Prompter for disse endepunktene er markdown-filer under `AskApi/config/instructions/`, inkludert elementkatalogen modellen genererer fra. To designvalg holder katalogen ærlig: klienten sender `availableElementTypes` med hver forespørsel (prompten kan bare bruke typer fra den listen — serveren hardkoder aldri hele settet), og API-ets MCP-verktøy `describe_page_builder` bærer den samme veiledningen for KI-agenter som jobber gjennom [MCP](../api/mcp.md). Modellene er Anthropic Claude via OpenRouter — 3.5 Haiku for seksjonsinnhold (latens), 3.5 Sonnet for disposisjoner, nettstedsplaner og visjon — med en OpenAI-reserve når ingen OpenRouter-nøkkel er konfigurert.
 
 ## Samtaleskjemaer
 
@@ -222,8 +223,8 @@ Kontrollere som bumper: sider (lagre, slette, duplisere, publisere, forkaste, av
 
 ## Relaterte sider
 
-- [Nettstedsruting og flere nettsteder](./websites) — hvordan en forespørsel løses til en kirke/et nettsted, og hvordan egne domener rutes
-- [Content-endepunkter](../api/endpoints/content) — full REST-flate for sider, seksjoner, elementer, blokker, innlegg, omdirigeringer og innstillinger
-- [AppHelper](../shared-libraries/app-helper) — npm-pakken som leverer rendererne, registeret, formdelerne og widgetene
-- [MCP-server](../api/mcp) — inkludert verktøyveiledningen `describe_page_builder`
+- [Nettstedsruting og flere nettsteder](./websites.md) — hvordan en forespørsel løses til en kirke/et nettsted, og hvordan egne domener rutes
+- [Content-endepunkter](../api/endpoints/content.md) — full REST-flate for sider, seksjoner, elementer, blokker, innlegg, omdirigeringer og innstillinger
+- [AppHelper](../shared-libraries/app-helper.md) — npm-pakken som leverer rendererne, registeret, formdelerne og widgetene
+- [MCP-server](../api/mcp.md) — inkludert verktøyveiledningen `describe_page_builder`
 - [Sideeditor (sluttbruker)](/docs/b1-admin/website/page-editor) — dokumentasjonen for editoren for ansatte

@@ -1,5 +1,7 @@
 ---
-title: "Lektioner (utfasad)"
+title: "Skärmen Lektioner i B1 Mobile (avvecklad)"
+sidebar_label: "Lektioner (utfasad)"
+description: "Lektioner (utfasad) sida: varför skärmen Lektioner i B1 Mobile-appen avvecklades och var du hittar undervisningsmaterial nu (FreePlay eller Lessons.church)."
 ---
 
 # Lektioner (utfasad)
@@ -19,7 +21,7 @@ Lektionsskärmen gav dig tillgång till din församlings kursplan och undervisni
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 - Din församling måste ha konfigurerat kursinnehåll via Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Skärmen Lektioner visas när din församling har konfigurerat kursmaterial via 
 
 - [FreePlay-översikt](/docs/freeplay/) -- TV-appen som ersätter den för uppspelning av lektioner i klassrum
 - [Lessons.church](/docs/lessons-church/) -- Bläddra i och hantera kursinnehåll direkt
-- [Bibel](./bible) -- Läs Skriften tillsammans med dina lektioner
-- [Predikningar](./sermons) -- Titta på predikningar som kompletterar dina studier
+- [Bibel](./bible.md) -- Läs Skriften tillsammans med dina lektioner
+- [Predikningar](./sermons.md) -- Titta på predikningar som kompletterar dina studier

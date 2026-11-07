@@ -1,5 +1,6 @@
 ---
 title: "Explorar grupos"
+description: "Explore los grupos públicos de su iglesia en B1.church por categoría, y revise los horarios, ubicaciones y descripciones de cada tarjeta para encontrar el adecuado."
 ---
 
 # Explorar grupos

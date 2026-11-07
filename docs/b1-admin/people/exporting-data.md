@@ -1,5 +1,6 @@
 ---
 title: "Exporting Data"
+description: "Export people to CSV, group member lists, or a full B1 database backup from B1 Admin, and see what the B1 Export Zip contains."
 ---
 
 # Exporting Data

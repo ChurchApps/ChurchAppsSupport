@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Construiește-ți biblioteca de predici și transmisiunea live"
+description: "Importați predicile de pe YouTube sau Vimeo, organizați-le în liste de redare și configurați transmisiuni live recurente cu chat în B1 Admin pentru site."
 ---
 
 # Construiește-ți biblioteca de predici și transmisiunea live

@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Doing"
+description: "Referência de endpoints da API Doing (escalas de culto, voluntários, tarefas e automações no B1 Admin), com caminhos, autenticação e permissões."
 ---
 
 # Endpoints de Doing
@@ -278,6 +279,6 @@ Encaminha requisições para provedores externos de conteúdo (por exemplo, ProP
 
 ## Páginas relacionadas
 
-- [Endpoints de Membership](./membership) — Pessoas, grupos, funções e permissões
-- [Endpoints de Attendance](./attendance) — Rastreamento de cultos e visitas
-- [Estrutura do módulo](../module-structure) — Padrões de organização do código
+- [Endpoints de Membership](./membership.md) — Pessoas, grupos, funções e permissões
+- [Endpoints de Attendance](./attendance.md) — Rastreamento de cultos e visitas
+- [Estrutura do módulo](../module-structure.md) — Padrões de organização do código

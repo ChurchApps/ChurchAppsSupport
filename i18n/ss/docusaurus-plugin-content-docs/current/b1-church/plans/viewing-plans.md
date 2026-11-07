@@ -1,5 +1,7 @@
 ---
-title: "Kubuka Tinhlelo"
+title: "Tinhlelo Takho Temsebenti ku-B1.church"
+sidebar_label: "Kubuka Tinhlelo"
+description: "Hlola tabelo takho tetinhlelo temsebenti ku-B1.church, wemukele noma wenqabe ticelo, setsa emalanga lotingasebenti kuwo, bese ubuka umlandvo wakho wekusebenta wangaphambili."
 ---
 
 # Kubuka Tinhlelo

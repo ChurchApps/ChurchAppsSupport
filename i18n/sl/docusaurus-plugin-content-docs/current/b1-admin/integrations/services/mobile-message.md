@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Povežite dogodke B1 Admin z Mobile Message, avstralskim SMS API, prek webhookov Zapier ali Make za pošiljanje dobrodošlic, potrdil darov in opomnikov."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Končna točka `/v1/messages` pri Mobile Message sprejme do 10.000 sporočil na 
 
 ### Alternativa Make
 
-Če raje uporabljate Make, po sprožilcu B1 Watch Events dodajte modul **HTTP — Make a request** in ga nastavite enako (POST, Basic Auth, JSON telo). Za stran B1 glejte [pregled Make](../make).
+Če raje uporabljate Make, po sprožilcu B1 Watch Events dodajte modul **HTTP — Make a request** in ga nastavite enako (POST, Basic Auth, JSON telo). Za stran B1 glejte [pregled Make](../make.md).
 
 ## Omejitve in opombe
 
@@ -102,6 +103,6 @@ Končna točka `/v1/messages` pri Mobile Message sprejme do 10.000 sporočil na 
 
 ## Glejte tudi
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — alternativna ponudnika SMS z uradnimi aplikacijami za Zapier (korak Webhooks by Zapier ni potreben)
-- [Zapier (pregled)](../zapier) — stran B1 za vse recepte Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternativna ponudnika SMS z uradnimi aplikacijami za Zapier (korak Webhooks by Zapier ni potreben)
+- [Zapier (pregled)](../zapier.md) — stran B1 za vse recepte Zapier
 - [Dokumentacija API Mobile Message](https://mobilemessage.com.au/api-documentation)

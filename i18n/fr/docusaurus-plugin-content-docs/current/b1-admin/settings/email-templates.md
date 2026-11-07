@@ -1,5 +1,6 @@
 ---
 title: "Modèles de courriel"
+description: "Créez des modèles d'e-mails et de SMS dans B1 Admin avec champs de fusion, options SMS et aperçus pour les communications de masse."
 ---
 
 # Modèles de courriel

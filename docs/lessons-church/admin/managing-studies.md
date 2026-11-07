@@ -1,5 +1,6 @@
 ---
 title: "Managing Studies"
+description: "Create, edit, and categorize studies inside a program in the Lessons.church admin area, and attach series overviews or newsletter templates to each one."
 ---
 
 # Managing Studies

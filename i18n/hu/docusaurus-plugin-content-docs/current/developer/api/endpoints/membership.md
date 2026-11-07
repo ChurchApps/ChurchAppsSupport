@@ -1,5 +1,6 @@
 ---
 title: "Membership-végpontok"
+description: "Végpontreferencia a ChurchApps Membership API-hoz: személyek, háztartások, csoportok, szerepkörök, űrlapok és beállítások, hitelesítési és jogosultsági szabályokkal."
 ---
 
 # Membership-végpontok
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Alap útvonal: `/membership/users`
 
-A bejelentkezéssel, regisztrációval és jelszókezeléssel kapcsolatos végpontokért lásd: [Hitelesítés és jogosultságok](./authentication).
+A bejelentkezéssel, regisztrációval és jelszókezeléssel kapcsolatos végpontokért lásd: [Hitelesítés és jogosultságok](./authentication.md).
 
 | Metódus | Útvonal | Hitelesítés | Jogosultság | Leírás |
 |--------|------|------|------|-------------|
@@ -342,6 +343,6 @@ Alap útvonal: `/membership/clientErrors`
 
 ## Kapcsolódó oldalak
 
-- [Hitelesítés és jogosultságok](./authentication) — Bejelentkezési folyamat, JWT, OAuth, jogosultsági modell
-- [Részvétel-végpontok](./attendance) — Istentiszteletek és látogatások nyilvántartása
-- [Modulstruktúra](../module-structure) — Kódszervezési minták
+- [Hitelesítés és jogosultságok](./authentication.md) — Bejelentkezési folyamat, JWT, OAuth, jogosultsági modell
+- [Részvétel-végpontok](./attendance.md) — Istentiszteletek és látogatások nyilvántartása
+- [Modulstruktúra](../module-structure.md) — Kódszervezési minták

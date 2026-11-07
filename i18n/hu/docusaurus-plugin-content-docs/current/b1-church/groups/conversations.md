@@ -1,5 +1,6 @@
 ---
 title: "Csoportbeszélgetések"
+description: "Tudd meg, hogyan küldj, szerkessz és kezelj üzeneteket a B1.church csoportos csevegésben, beleértve a közleményeket és a vezetői moderációs eszközöket."
 ---
 
 # Csoportbeszélgetések

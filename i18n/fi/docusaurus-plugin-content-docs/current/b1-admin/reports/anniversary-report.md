@@ -1,5 +1,6 @@
 ---
 title: "Syntymäpäivä- ja hääpäivälista"
+description: "Hae B1 Administa lista kaikista, joilla on hääpäivä valittuna kuukautena. Päivämäärät näkyvät tuloksissa ja lista voidaan viedä taulukkolaskentaan tiedotteita tai kortteja varten."
 ---
 
 # Hääpäivälista

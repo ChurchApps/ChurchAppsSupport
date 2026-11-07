@@ -1,5 +1,6 @@
 ---
 title: "考勤接口"
+description: "B1 Admin 和 B1 Checkin 中考勤 API 的参考文档：校区、礼拜、礼拜时间、场次、到访记录、签到规则和导出端点。"
 ---
 
 # 考勤接口
@@ -270,6 +271,6 @@ Authorization: Bearer <token>
 
 ## 相关页面
 
-- [成员接口](./membership) —— 人员、小组、角色和教会管理
-- [身份验证与权限](./authentication) —— 登录流程、JWT、权限模型
-- [模块结构](../module-structure) —— 代码组织模式
+- [成员接口](./membership.md) —— 人员、小组、角色和教会管理
+- [身份验证与权限](./authentication.md) —— 登录流程、JWT、权限模型
+- [模块结构](../module-structure.md) —— 代码组织模式

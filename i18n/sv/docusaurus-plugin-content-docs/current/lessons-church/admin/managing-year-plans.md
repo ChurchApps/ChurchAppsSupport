@@ -1,5 +1,6 @@
 ---
 title: "Hantera årsplaner"
+description: "Skapa en årsplan med veckolektioner i Lessons.church, förankra veckor till påsk eller jul och publicera den så att kyrkor kan använda den i B1 Admin."
 ---
 
 # Hantera årsplaner

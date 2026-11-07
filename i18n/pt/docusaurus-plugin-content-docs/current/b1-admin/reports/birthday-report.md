@@ -1,5 +1,6 @@
 ---
 title: "Listas de Aniversários de Nascimento e Casamento"
+description: "Crie uma lista de pessoas com aniversário ou aniversário de casamento em um mês, usando filtros de busca de Pessoas no B1 Admin, e exporte as datas."
 ---
 
 # Listas de Aniversários de Nascimento e Casamento

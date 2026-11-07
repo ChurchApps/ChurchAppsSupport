@@ -1,5 +1,6 @@
 ---
 title: "Umbiko Wemalanga Ekutalwa"
+description: "Akha uhlu lwabo bonkhe labanelilanga lekuzalwa nolwemshado ngenyanga leyinikiwe ngetihlungi te-People ku-B1 Admin, bese ubona noma ukhipha tinsuku."
 ---
 
 # Umbiko Wemalanga Ekutalwa

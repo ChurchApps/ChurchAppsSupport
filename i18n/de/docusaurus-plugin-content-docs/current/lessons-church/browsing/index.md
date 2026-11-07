@@ -1,5 +1,6 @@
 ---
 title: "Inhalte durchsuchen"
+description: "So durchsuchen Sie die kostenlose Lehrplanbibliothek von Lessons.church ohne Konto: Startseite, Stöbern nach Programm, Suche und externe Anbieter."
 ---
 
 # Inhalte durchsuchen

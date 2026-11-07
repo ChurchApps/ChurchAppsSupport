@@ -1,5 +1,6 @@
 ---
 title: "Saját üzemeltetés a Railway-en"
+description: "Telepíts privát ChurchApps-példányt a Railway-re körülbelül 15 perc alatt, majd állítsd be az e-mailt, az egyedi domaineket, a több gyülekezetes útválasztást, az adakozást és a fájltárolást a B1 Adminhoz és a B1App-hoz."
 ---
 
 # Saját üzemeltetés a Railway-en
@@ -195,7 +196,7 @@ Ezek specifikus funkciókat oldanak fel, és később is hozzáadhatók a Railwa
 | `VIMEO_TOKEN` | Vimeo-igehirdetés-támogatás |
 | `API_BIBLE_KEY` | Bibliaversek keresése leckékben és tartalmakban |
 | `YOUVERSION_API_KEY` | YouVersion Biblia-integráció |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Böngészőbeli push-értesítések ([VAPID-kulcspár létrehozása](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Böngészőbeli push-értesítések ([VAPID-kulcspár létrehozása](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Opcionális CRM-szinkronizálás az új regisztrációkhoz |
 
 ## Frissítés
@@ -234,9 +235,9 @@ Ha olyan problémával találkozik, amely nincs a listán, nyisson hibajelentés
 
 ## Kapcsolódó cikkek
 
-- **[Docker-rel történő saját üzemeltetés](./docker)**: ugyanaz a verem a saját hardverén vagy VPS-en
-- **[Kezdeti beállítás](../../getting-started/initial-setup)**: az első lépések a gyülekezet létrehozása után
-- **[Weboldal kezdeti beállítása](../../b1-admin/website/initial-setup)**: a gyülekezet nyilvános weboldalának beállítása
-- **[Adakozási beállítások](../../b1-admin/donations/online-giving-setup)**: Stripe vagy PayPal összekötése
-- **[Helyi API-beállítás](../api/local-setup)**: a verem helyi futtatása fejlesztéshez
-- **[API-telepítés (AWS)](./apis)**: a hivatalos ChurchApps SaaS telepítésének módja
+- **[Docker-rel történő saját üzemeltetés](./docker.md)**: ugyanaz a verem a saját hardverén vagy VPS-en
+- **[Kezdeti beállítás](../../getting-started/initial-setup.md)**: az első lépések a gyülekezet létrehozása után
+- **[Weboldal kezdeti beállítása](../../b1-admin/website/initial-setup.md)**: a gyülekezet nyilvános weboldalának beállítása
+- **[Adakozási beállítások](../../b1-admin/donations/online-giving-setup.md)**: Stripe vagy PayPal összekötése
+- **[Helyi API-beállítás](../api/local-setup.md)**: a verem helyi futtatása fejlesztéshez
+- **[API-telepítés (AWS)](./apis.md)**: a hivatalos ChurchApps SaaS telepítésének módja

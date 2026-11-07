@@ -1,5 +1,6 @@
 ---
 title: "Setup"
+description: "Pick a local dev path for ChurchApps projects: point frontend work at the shared demo APIs, or run the full stack locally with MySQL for backend changes."
 ---
 
 # Setup
@@ -40,15 +41,15 @@ This approach lets you start making frontend changes in minutes. It is the recom
 
 ### 2. Run Everything Locally
 
-If you need to modify API code or work offline, you can run the full stack locally. This requires MySQL 8.0+ and additional configuration. See the [API local setup](../api/local-setup) guide for detailed instructions.
+If you need to modify API code or work offline, you can run the full stack locally. This requires MySQL 8.0+ and additional configuration. See the [API local setup](../api/local-setup.md) guide for detailed instructions.
 
 ## Getting Started
 
 Follow these pages in order:
 
-1. **[Prerequisites](prerequisites)** -- Install the required tools (Node.js, Git, MySQL, etc.)
-2. **[Project Overview](project-overview)** -- Understand which projects exist and what they do
-3. **[Environment Variables](environment-variables)** -- Configure your `.env` files to connect everything together
+1. **[Prerequisites](./prerequisites.md)** -- Install the required tools (Node.js, Git, MySQL, etc.)
+2. **[Project Overview](./project-overview.md)** -- Understand which projects exist and what they do
+3. **[Environment Variables](./environment-variables.md)** -- Configure your `.env` files to connect everything together
 
 :::info
 Each ChurchApps project is an independent Git repository. You only need to clone the specific project(s) you want to work on.

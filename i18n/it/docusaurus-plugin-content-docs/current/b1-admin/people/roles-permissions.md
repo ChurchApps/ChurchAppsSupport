@@ -1,5 +1,6 @@
 ---
 title: "Assegnare i ruoli"
+description: "Assegna ruoli in B1 Admin per dare a personale e volontari accesso solo alle aree di persone, donazioni, presenze e gruppi di cui hanno bisogno."
 ---
 
 # Assegnare i ruoli

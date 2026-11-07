@@ -1,5 +1,6 @@
 ---
 title: "Küratörlü Takvim"
+description: "B1 Admin'de birden fazla gruptan etkinlik toplayan kilise geneli küratörlü takvim kurun; web sitenizde, ICS aboneliğiyle veya indirme olarak paylaşın."
 ---
 
 # Küratörlü Takvim
@@ -15,7 +16,7 @@ Küratörlü bir takvim, birden fazla gruptan gelen etkinlikleri tek bir birleş
 
 - Etkinliklerini dahil etmek istediğiniz [grupları](../groups/creating-groups.md) kurun
 - Grup liderlerinin etkinlikleri kendi gruplarına eklediğinden emin olun
-- [Takvim Oluşturma](creating-calendars) konusundaki temel bilgilere göz atın
+- [Takvim Oluşturma](./creating-calendars.md) konusundaki temel bilgilere göz atın
 
 </div>
 
@@ -61,5 +62,5 @@ Küratörlü takvimde yalnızca **genel** etkinlikler web sitenizde ve ICS abone
 
 ## Sonraki Adımlar
 
-- [Takvim Oluşturma](creating-calendars) -- Takvim oluşturmanın temellerini öğrenin
-- [Takvimlere Genel Bakış](./) -- Takvimlere genel bakış sayfasına dönün
+- [Takvim Oluşturma](./creating-calendars.md) -- Takvim oluşturmanın temellerini öğrenin
+- [Takvimlere Genel Bakış](./index.md) -- Takvimlere genel bakış sayfasına dönün

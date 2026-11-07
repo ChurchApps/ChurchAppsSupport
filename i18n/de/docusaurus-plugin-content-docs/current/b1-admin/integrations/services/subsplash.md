@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Verbinden Sie Subsplash-Spenden, neue Personen und Formularantworten über Zapier mit B1, damit Gaben und Profile automatisch in B1 Admin landen."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Schalten Sie den Zap ein. Künftige Spenden aus Subsplash erscheinen innerhalb v
 
 ## Siehe auch
 
-- [Donorbox](./donorbox) -- gleiche Anleitungsform, andere Spendenplattform
-- [Zapier (Überblick)](../zapier) -- B1-Seite jeder Zapier-Anleitung
+- [Donorbox](./donorbox.md) -- gleiche Anleitungsform, andere Spendenplattform
+- [Zapier (Überblick)](../zapier.md) -- B1-Seite jeder Zapier-Anleitung
 - [Anleitung zur Zapier-Integration von Subsplash](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Dokumentation von Subsplash)

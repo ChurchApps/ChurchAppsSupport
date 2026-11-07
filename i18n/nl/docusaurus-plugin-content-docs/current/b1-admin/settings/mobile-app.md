@@ -1,5 +1,6 @@
 ---
 title: "Instellingen mobiele app"
+description: "Configureer de navigatietabbladen, startschermtegels, inlogmelding en privacy van de ledenlijst voor de B1.church-ledenapp in B1 Admin."
 ---
 
 # Instellingen mobiele app

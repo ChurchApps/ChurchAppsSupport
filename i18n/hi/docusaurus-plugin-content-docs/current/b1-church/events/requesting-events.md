@@ -1,5 +1,6 @@
 ---
 title: "Events और Rooms का अनुरोध"
+description: "B1.church सदस्य पोर्टल से किसी कार्यक्रम के लिए कक्ष या उपकरण बुकिंग का अनुरोध करें, My Requests में उसकी स्थिति देखें, और लंबित रहते हुए रद्द करें।"
 ---
 
 # Events और Rooms का अनुरोध
@@ -42,11 +43,11 @@ Me page से **My Requests** खोलें। हर request event, आप�
 जब तक कोई request pending है, आप **Cancel request** से उसे वापस ले सकते हैं (आपसे पुष्टि के लिए पूछा जाएगा -- cancel करना वापस नहीं किया जा सकता)।
 
 :::info
-अनुरोधों की समीक्षा church के staff द्वारा B1 Admin के [Approvals page](../../b1-admin/calendars/approvals) पर की जाती है। कौन-से rooms और resources को approval चाहिए, यह आपके church पर निर्भर है -- देखें [Rooms & Resources](../../b1-admin/calendars/rooms-resources)।
+अनुरोधों की समीक्षा church के staff द्वारा B1 Admin के [Approvals page](../../b1-admin/calendars/approvals.md) पर की जाती है। कौन-से rooms और resources को approval चाहिए, यह आपके church पर निर्भर है -- देखें [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md)।
 :::
 
 ## संबंधित लेख
 
-- [The Me Page](../getting-started/me-page) -- जहां अनुरोध के links रहते हैं
-- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals) -- staff अनुरोधों की समीक्षा कैसे करता है
-- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- churches bookable spaces कैसे कॉन्फ़िगर करते हैं
+- [The Me Page](../getting-started/me-page.md) -- जहां अनुरोध के links रहते हैं
+- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals.md) -- staff अनुरोधों की समीक्षा कैसे करता है
+- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- churches bookable spaces कैसे कॉन्फ़िगर करते हैं

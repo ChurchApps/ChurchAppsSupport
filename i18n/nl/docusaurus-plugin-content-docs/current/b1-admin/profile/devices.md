@@ -1,5 +1,6 @@
 ---
 title: "Apparaten beheren"
+description: "Koppel, label en verwijder ChurchAppsPlayer- en FreePlay-schermen die aan je account zijn gekoppeld in B1 Admin, zodat kerkschermen actueel en veilig blijven."
 ---
 
 # Apparaten beheren

@@ -1,5 +1,7 @@
 ---
-title: "Ulinadás"
+title: "Első lépések a Lessons.church használatával"
+sidebar_label: "Ulinadás"
+description: "Ingyenes Lessons.church-fiók létrehozása, egyház csatlakoztatása, osztálytermek beállítása és az első leckék ütemezése. Nincs előfizetés, nincs próbaidőszak."
 ---
 
 # Ulinadás

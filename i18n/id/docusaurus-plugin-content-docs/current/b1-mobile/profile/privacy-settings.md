@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Privasi"
+description: "Atur detail profil seperti telepon, email, dan alamat yang dapat dilihat anggota lain di direktori B1 Mobile, serta tinjau perubahan yang tertunda."
 ---
 
 # Pengaturan Privasi
@@ -13,7 +14,7 @@ Tab **Visibilitas** di layar Profil Anda memungkinkan Anda mengontrol apa yang d
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Pasang B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Pasang B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 
 </div>
 
@@ -52,8 +53,8 @@ Tab **Akun** menyediakan akses ke pengaturan keamanan Anda. Gunakan tab ini untu
 
 | Tab | Fungsi |
 |---|---|
-| **Profil** | [Ubah informasi pribadi Anda](./editing-profile) dan foto |
-| **Rumah Tangga** | [Lihat anggota keluarga Anda](./household) |
+| **Profil** | [Ubah informasi pribadi Anda](./editing-profile.md) dan foto |
+| **Rumah Tangga** | [Lihat anggota keluarga Anda](./household.md) |
 | **Visibilitas** | Kontrol apa yang dilihat orang lain di direktori |
 | **Tertunda** | Tinjau perubahan profil yang menunggu persetujuan |
 | **Akun** | Kelola pengaturan keamanan |
@@ -62,6 +63,6 @@ Tab-tab ini bekerja bersama untuk memberi Anda kendali penuh atas informasi prib
 
 ## Artikel Terkait
 
-- [Mengedit Profil Anda](./editing-profile) -- Perbarui informasi pribadi Anda
-- [Rumah Tangga](./household) -- Lihat dan kelola anggota keluarga Anda
+- [Mengedit Profil Anda](./editing-profile.md) -- Perbarui informasi pribadi Anda
+- [Rumah Tangga](./household.md) -- Lihat dan kelola anggota keluarga Anda
 - [Direktori Anggota](../community/member-directory.md) -- Lihat bagaimana profil Anda tampil bagi orang lain

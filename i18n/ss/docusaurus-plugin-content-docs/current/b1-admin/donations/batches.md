@@ -1,5 +1,6 @@
 ---
 title: "Emaqoqo Emnikelo"
+description: "Hlanganisa timinikelo ngetinqwaba ku-B1 Admin, bese uvala, uphrinte, noma udlulise ngalinye, kuze tinanani tifanane nemadiphozithi ebhange."
 ---
 
 # Emaqoqo Emnikelo

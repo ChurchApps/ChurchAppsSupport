@@ -1,5 +1,6 @@
 ---
 title: "Calendário selecionado"
+description: "Monte um calendário curado da igreja no B1 Admin com eventos de vários grupos e compartilhe-o no site, por assinatura ICS ou como download."
 ---
 
 # Calendário selecionado
@@ -15,7 +16,7 @@ Um calendário selecionado reúne eventos de vários grupos em uma única visual
 
 - Configure os [grupos](../groups/creating-groups.md) cujos eventos você quer incluir
 - Certifique-se de que os líderes de grupo adicionaram eventos aos seus respectivos grupos
-- Familiarize-se com o básico de [Criando calendários](creating-calendars)
+- Familiarize-se com o básico de [Criando calendários](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Somente eventos **públicos** aparecem no calendário selecionado do seu site e 
 
 ## Próximos passos
 
-- [Criando calendários](creating-calendars) -- Aprenda o básico da criação de calendários
-- [Visão geral de calendários](./) -- Voltar à visão geral de calendários
+- [Criando calendários](./creating-calendars.md) -- Aprenda o básico da criação de calendários
+- [Visão geral de calendários](./index.md) -- Voltar à visão geral de calendários

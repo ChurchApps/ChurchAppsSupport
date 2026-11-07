@@ -1,5 +1,7 @@
 ---
-title: "Bendruomenė"
+title: "Bendruomenės funkcijos B1 Mobile programėlėje"
+sidebar_label: "Bendruomenė"
+description: "Naudokite B1 Mobile programėlę narių katalogui ieškoti, privačioms žinutėms siųsti kitiems nariams ir peržiūrėti bažnyčios pranešimus."
 ---
 
 # Bendruomenė
@@ -12,13 +14,13 @@ title: "Bendruomenė"
 
 ## Ką čia rasite
 
-- **[Narių katalogas](./member-directory)** -- Naršykite ir ieškokite savo bažnyčios narių kataloge. Ieškokite žmonių pagal vardą, o palietę narį pamatysite jo profilį su kontaktine informacija ir šeimos ryšiais.
-- **[Žinutės](./messaging)** -- Siųskite ir gaukite privačias žinutes iš kitų bažnyčios narių. Pradėkite naujus pokalbius arba tęskite jau vykusius.
-- **[Pranešimai](./notifications)** -- Gaukite push pranešimus apie grupių veiklą, žinutes, tarnystės paskyrimus ir kitus svarbius bažnyčios atnaujinimus.
+- **[Narių katalogas](./member-directory.md)** -- Naršykite ir ieškokite savo bažnyčios narių kataloge. Ieškokite žmonių pagal vardą, o palietę narį pamatysite jo profilį su kontaktine informacija ir šeimos ryšiais.
+- **[Žinutės](./messaging.md)** -- Siųskite ir gaukite privačias žinutes iš kitų bažnyčios narių. Pradėkite naujus pokalbius arba tęskite jau vykusius.
+- **[Pranešimai](./notifications.md)** -- Gaukite push pranešimus apie grupių veiklą, žinutes, tarnystės paskyrimus ir kitus svarbius bažnyčios atnaujinimus.
 
 ## Pradžia
 
-Norint naudotis bendruomenės funkcijomis, reikia būti prisijungus. Jei nesate prisijungę, būsite paraginti [prisijungti](../getting-started/logging-in), kai bandysite naudotis bet kuriuo iš šių skyrių.
+Norint naudotis bendruomenės funkcijomis, reikia būti prisijungus. Jei nesate prisijungę, būsite paraginti [prisijungti](../getting-started/logging-in.md), kai bandysite naudotis bet kuriuo iš šių skyrių.
 
 Narių katalogas, žinutės ir pranešimai pasiekiami iš programėlės navigacijos. Kartu jie suteikia paprastą būdą rasti žmones, bendrauti privačiai ir būti informuotam apie tai, kas vyksta jūsų bažnyčioje.
 

@@ -1,5 +1,6 @@
 ---
 title: "Nhóm hoạt động"
+description: "Xem cách dòng thời gian nhóm trong B1 Mobile gộp bài đăng, trò chuyện và cập nhật từ tất cả nhóm của bạn thành một nguồn tin, và cần làm gì khi tạm dừng."
 ---
 
 # Nhóm hoạt động
@@ -17,7 +18,7 @@ Tính năng dòng thời gian nhóm tạm thời không khả dụng trong khi c
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Là thành viên của ít nhất một nhóm tại hội thánh của bạn
 
 </div>
@@ -41,7 +42,7 @@ Mỗi mục trong dòng thời gian đều cho biết nó đến từ nhóm nào
 Dòng thời gian là cách tuyệt vời để giữ kết nối với cộng đồng hội thánh chỉ với một cái nhìn. Dưới đây là một vài mẹo để tận dụng tối đa tính năng này:
 
 - **Kiểm tra thường xuyên** -- Mở màn hình Nhóm và cuộn qua dòng thời gian để theo kịp các hoạt động gần đây.
-- **Nhấn để xem thêm** -- Nếu một bài đăng thu hút sự chú ý của bạn, hãy nhấn vào bài đó hoặc nhấn vào tên nhóm để chuyển đến [trang chi tiết nhóm](./group-details) đầy đủ hơn.
+- **Nhấn để xem thêm** -- Nếu một bài đăng thu hút sự chú ý của bạn, hãy nhấn vào bài đó hoặc nhấn vào tên nhóm để chuyển đến [trang chi tiết nhóm](./group-details.md) đầy đủ hơn.
 - **Mọi thứ ở một nơi** -- Bạn không cần truy cập từng nhóm riêng biệt. Dòng thời gian sẽ đưa mọi hoạt động đến với bạn.
 
 :::info
@@ -54,5 +55,5 @@ Bật [thông báo đẩy](../community/notifications.md) để nhận cảnh b�
 
 ## Bài viết liên quan
 
-- [Chi tiết nhóm](./group-details) -- Xem toàn bộ hồ sơ và bài đăng của một nhóm
+- [Chi tiết nhóm](./group-details.md) -- Xem toàn bộ hồ sơ và bài đăng của một nhóm
 - [Thông báo](../community/notifications.md) -- Nhận thông báo về hoạt động nhóm

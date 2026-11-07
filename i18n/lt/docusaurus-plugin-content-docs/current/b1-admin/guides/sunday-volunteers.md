@@ -1,5 +1,6 @@
 ---
 title: "Vadovas: tvarkykite sekmadienio savanorius"
+description: "Nustatykite savanorių komandas, savaitės planus, pamaldų tvarką ir sekmadienio užduotis B1 Admin, kad savanoriai matytų paskyrimus B1.church ir programėlėje."
 ---
 
 # Tvarkykite sekmadienio savanorius
@@ -95,7 +96,7 @@ Leiskite savanoriams patiems registruotis į pareigas, o ne laukti administrator
 3. Kiekvienai pareigai pažymėkite langelį **Leisti savitarnos registraciją**, kad ji būtų prieinama savitarnai.
 4. Kiekvienai pareigai pridėkite **Aprašymą**, kad savanoriai žinotų, ką apima vaidmuo.
 
-Kai savitarnos pareigos sukurtos, jos automatiškai atsiranda savanorių registracijos puslapiuose [B1.church](../../b1-church/serving/volunteer-signup) ir [B1 mobiliojoje programėlėje](../../b1-mobile/serving/volunteer-signup). Nariai gali peržiūrėti laisvas pareigas, matyti, kiek vietų liko, ir užsiregistruoti vienu paspaudimu.
+Kai savitarnos pareigos sukurtos, jos automatiškai atsiranda savanorių registracijos puslapiuose [B1.church](../../b1-church/serving/volunteer-signup.md) ir [B1 mobiliojoje programėlėje](../../b1-mobile/serving/volunteer-signup.md). Nariai gali peržiūrėti laisvas pareigas, matyti, kiek vietų liko, ir užsiregistruoti vienu paspaudimu.
 
 :::tip
 Tame pačiame plane derinkite administratoriaus priskirtas ir savitarnos pareigas. Pavyzdžiui, giesmių vadovą priskirkite tiesiogiai, o sveikintojams ir kavos padavėjams leiskite pasirinkti patiems.
@@ -109,7 +110,7 @@ Priskirti savanoriai automatiškai mato savo planus ir gali atsakyti.
 2. Paskyrimus gali tiesiogiai priimti arba atsisakyti bet kurioje platformoje
 3. Jie gali nurodyti datas, kai nebus laisvi
 4. Planus galima atspausdinti repeticijoms arba iškabinti už scenos
-5. Savanoriai gali naršyti ir registruotis į laisvas pareigas per [savanorių registracijos puslapį](../../b1-church/serving/volunteer-signup)
+5. Savanoriai gali naršyti ir registruotis į laisvas pareigas per [savanorių registracijos puslapį](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Mobiliosios programėlės pranešimai įspėja savanorius, kai jie gauna naujų paskyrimų arba kai planai pasikeičia.
@@ -130,5 +131,5 @@ Jūsų savanorių valdymo sistema nustatyta. Kiekvieną savaitę sukurkite nauj�
 - [Darbo eigos](../serving/workflows.md) — vesk žmones per pasikartojančius procesus su paleidikliais ir automatizuotais žingsniais
 - [Planų peržiūra (internete)](../../b1-church/plans/viewing-plans.md) — kaip savanoriai mato planus internete
 - [Planų peržiūra (mobiliesiems)](../../b1-mobile/serving/viewing-plans.md) — kaip savanoriai mato planus mobiliuosiuose įrenginiuose
-- [Savanorių registracija (internete)](../../b1-church/serving/volunteer-signup) — kaip nariai patys pasirenka savanorių pareigas
-- [Savanorių registracija (mobiliesiems)](../../b1-mobile/serving/volunteer-signup) — savanorių savitarnos registracija mobiliuosiuose įrenginiuose
+- [Savanorių registracija (internete)](../../b1-church/serving/volunteer-signup.md) — kaip nariai patys pasirenka savanorių pareigas
+- [Savanorių registracija (mobiliesiems)](../../b1-mobile/serving/volunteer-signup.md) — savanorių savitarnos registracija mobiliuosiuose įrenginiuose

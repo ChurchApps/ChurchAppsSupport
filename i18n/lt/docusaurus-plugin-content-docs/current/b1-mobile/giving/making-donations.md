@@ -1,5 +1,7 @@
 ---
-title: "Donacijų teikimas"
+title: "Aukos teikimas B1 Mobile programėlėje"
+sidebar_label: "Donacijų teikimas"
+description: "Aukokite bažnyčiai B1 Mobile skirtuke Aukoti: pasirinkite fondą, įveskite sumą, sumokėkite per Stripe ir greitai pakartokite ankstesnes aukas."
 ---
 
 # Donacijų teikimas
@@ -13,8 +15,8 @@ Aukas per B1 Mobile galite pateikti greitai ir paprastai. Aukojimo skilties **Do
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Įdiekite B1 Mobile](../getting-started/installing) ir [prisijunkite](../getting-started/logging-in) prie savo paskyros
-- Turėkite paruoštą kredito ar debetinę kortelę arba iš anksto [įsirašykite mokėjimo būdą](./managing-payments)
+- [Įdiekite B1 Mobile](../getting-started/installing.md) ir [prisijunkite](../getting-started/logging-in.md) prie savo paskyros
+- Turėkite paruoštą kredito ar debetinę kortelę arba iš anksto [įsirašykite mokėjimo būdą](./managing-payments.md)
 
 </div>
 
@@ -42,10 +44,10 @@ Prieš pateikdami patikrinkite aukos sumą ir fondą. Aukos apdorojamos iš kart
 Jei norite aukoti tiek pat, kiek aukojote paskutinį kartą, nereikia eiti per visą aukojimo procesą. Skirtuke **Overview** (Apžvalga) rodoma jūsų naujausia auka ir mygtukas **Repeat** (Kartoti). Bakstelėkite jį, kad greitai pateiktumėte tą pačią auką dar kartą.
 
 :::tip
-Jei planuojate aukoti reguliariai, išsaugokite mokėjimo būdą skirtuke **Manage** (Tvarkyti), kad kitą kartą galėtumėte aukoti dar greičiau. Daugiau informacijos rasite straipsnyje [Mokėjimo būdų tvarkymas](./managing-payments).
+Jei planuojate aukoti reguliariai, išsaugokite mokėjimo būdą skirtuke **Manage** (Tvarkyti), kad kitą kartą galėtumėte aukoti dar greičiau. Daugiau informacijos rasite straipsnyje [Mokėjimo būdų tvarkymas](./managing-payments.md).
 :::
 
 ## Susiję straipsniai
 
-- [Mokėjimo būdų tvarkymas](./managing-payments) -- Įsirašykite kortelę, kad ateityje aukoti būtų greičiau
-- [Aukų istorija](./donation-history) -- Peržiūrėkite savo aukojimų suvestinę ir ankstesnes aukas
+- [Mokėjimo būdų tvarkymas](./managing-payments.md) -- Įsirašykite kortelę, kad ateityje aukoti būtų greičiau
+- [Aukų istorija](./donation-history.md) -- Peržiūrėkite savo aukojimų suvestinę ir ankstesnes aukas

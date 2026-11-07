@@ -1,5 +1,6 @@
 ---
 title: "Nhà cung cấp bên thứ ba"
+description: "Thêm nguồn giáo trình bên ngoài vào Lessons.church từ trang Nhà cung cấp bên thứ ba, sau đó xem, cập nhật hoặc gỡ kết nối khi cần."
 ---
 
 # Nhà cung cấp bên thứ ba

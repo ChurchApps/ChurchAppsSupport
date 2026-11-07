@@ -1,5 +1,6 @@
 ---
 title: "Digital Signage"
+description: "Lektionsinhalte per Digital-Signage-URL an einen TV im Foyer oder Flur senden, die immer den aktuellen Plan zeigt; alternativ FreePlay-TVs nutzen."
 ---
 
 # Digital Signage
@@ -14,7 +15,7 @@ Zeigen Sie Ihre Lerninhalte über einen Digital-Signage-Feed auf einem Fernseher
 <h4>Bevor Sie beginnen</h4>
 
 - Richten Sie einen [Planungstyp](./plans.md) mit [Lessons.church](../../b1-church/content/lessons.md) oder anderen Lerninhalten ein, die geplant sind
-- Halten Sie ein [SignPresenter](https://www.signpresenter.com)-Konto und ein Gerät bereit, auf dem es angezeigt wird, oder einen Fernseher mit [FreePlay](../../freeplay/)
+- Halten Sie ein [SignPresenter](https://www.signpresenter.com)-Konto und ein Gerät bereit, auf dem es angezeigt wird, oder einen Fernseher mit [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Eine Schritt-für-Schritt-Anleitung zur Einrichtung innerhalb von SignPresenter 
 
 ## Stattdessen FreePlay-Fernseher verwenden
 
-Wenn Ihre Bildschirme [FreePlay](../../freeplay/) verwenden, benötigen Sie die Feed-URL nicht. Der Dialog **Digital-Signage-Feed** verlinkt auf **admin.freeplay.church/calendar**, wo Sie diesen Planungstyp auf Ihren FreePlay-Fernsehern planen können:
+Wenn Ihre Bildschirme [FreePlay](../../freeplay/index.md) verwenden, benötigen Sie die Feed-URL nicht. Der Dialog **Digital-Signage-Feed** verlinkt auf **admin.freeplay.church/calendar**, wo Sie diesen Planungstyp auf Ihren FreePlay-Fernsehern planen können:
 
 1. Klicken Sie im Dialog auf den Link **admin.freeplay.church/calendar**. FreePlay-Admin verwendet dieselbe Anmeldung wie B1 Admin.
 2. Wählen Sie die Bildschirmgruppe für Ihre Fernseher aus und klicken Sie auf **Zeitplan hinzufügen**.
 3. Wählen Sie unter **Wiedergabe** Ihren Planungstyp aus **Gottesdienstpläne** aus. Er ist mit **(aktueller Plan)** markiert.
 4. Legen Sie die Tage und Uhrzeiten fest und klicken Sie dann auf **Speichern**.
 
-Die Fernseher spielen jede Woche zu den von Ihnen festgelegten Zeiten den Plan ab, der für diesen Planungstyp gerade aktuell ist. Das funktioniert auch mit Go-Curriculum-Lektionen, einschließlich angepasster Pläne. FreePlay meldet sich mit dem Go-Curriculum-Konto an, das unter **Inhaltsanbieter** mit dem Dienst verknüpft ist (siehe [Lektionen planen](./scheduling-lessons.md)), oder mit der Go-Curriculum-Verbindung der Kirche, falls der Dienst keine hat. Alle Optionen finden Sie unter [Den Kalender planen](../../freeplay/scheduled-mode/scheduling-the-calendar), und unter [Einen Bildschirm koppeln](../../freeplay/scheduled-mode/pairing-a-screen) erfahren Sie, wie Sie einen Fernseher hinzufügen.
+Die Fernseher spielen jede Woche zu den von Ihnen festgelegten Zeiten den Plan ab, der für diesen Planungstyp gerade aktuell ist. Das funktioniert auch mit Go-Curriculum-Lektionen, einschließlich angepasster Pläne. FreePlay meldet sich mit dem Go-Curriculum-Konto an, das unter **Inhaltsanbieter** mit dem Dienst verknüpft ist (siehe [Lektionen planen](./scheduling-lessons.md)), oder mit der Go-Curriculum-Verbindung der Kirche, falls der Dienst keine hat. Alle Optionen finden Sie unter [Den Kalender planen](../../freeplay/scheduled-mode/scheduling-the-calendar.md), und unter [Einen Bildschirm koppeln](../../freeplay/scheduled-mode/pairing-a-screen.md) erfahren Sie, wie Sie einen Fernseher hinzufügen.
 
 :::note
 Die Feed-URL enthält keine Medien aus Go Curriculum, da dieser Inhalt Ihre Go-Curriculum-Anmeldung der Kirche erfordert. Um eine Go-Curriculum-Lektion auf einem Fernseher in der Lobby oder im Klassenzimmer anzuzeigen, verwenden Sie FreePlay.
@@ -53,4 +54,4 @@ Die Feed-URL enthält keine Medien aus Go Curriculum, da dieser Inhalt Ihre Go-C
 
 - Verwalten Sie die Pläne, die dieses Digital-Signage-Display speisen, auf der Seite [Pläne](./plans.md)
 - Planen Sie Inhalte mit [Lessons.church](./scheduling-lessons.md)
-- Stellen Sie FreePlay-Fernseher mit [Geplanter Modus](../../freeplay/scheduled-mode/) in einen Kalender
+- Stellen Sie FreePlay-Fernseher mit [Geplanter Modus](../../freeplay/scheduled-mode/index.md) in einen Kalender

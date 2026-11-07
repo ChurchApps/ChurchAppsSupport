@@ -1,5 +1,6 @@
 ---
 title: "Powiadomienia"
+description: "Skonfiguruj powiadomienia push w B1 Mobile, a potem przeglądaj, otwieraj i czyść powiadomienia kościoła dotyczące wiadomości, grup i służby."
 ---
 
 # Powiadomienia
@@ -13,7 +14,7 @@ B1 Mobile wykorzystuje powiadomienia push, aby informować Cię o tym, co dzieje
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 - Zezwól na powiadomienia dla B1 Mobile w ustawieniach urządzenia
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile wykorzystuje powiadomienia push, aby informować Cię o tym, co dzieje
 
 Powiadomienia mogą dotyczyć różnych rodzajów aktywności, w tym:
 
-- **Wiadomości** -- Gdy ktoś wyśle Ci [wiadomość prywatną](./messaging).
-- **Aktywność grup** -- Aktualizacje, posty i rozmowy w [grupach](../groups/), do których należysz.
+- **Wiadomości** -- Gdy ktoś wyśle Ci [wiadomość prywatną](./messaging.md).
+- **Aktywność grup** -- Aktualizacje, posty i rozmowy w [grupach](../groups/index.md), do których należysz.
 - **Zadania w posługiwaniu** -- Gdy zostaniesz przypisany do [planu](../serving/viewing-plans.md) lub gdy zmieni się status Twojego przydziału.
 - **Inne aktualizacje** -- Ogólne ogłoszenia i aktywność istotna dla Ciebie.
 

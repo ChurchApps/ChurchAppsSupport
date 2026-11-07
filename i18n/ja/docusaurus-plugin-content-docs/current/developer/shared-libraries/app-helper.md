@@ -1,5 +1,6 @@
 ---
 title: "AppHelper"
+description: "Packages ワークスペース内の共有パッケージ @churchapps/apphelper のリファレンス。サブパスのエントリポイント、各エクスポートを利用するアプリ、ローカル開発と公開の手順を説明します。"
 ---
 
 # AppHelper
@@ -13,7 +14,7 @@ title: "AppHelper"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- **Node.js** と **Git** をインストールしてください — [前提条件](../setup/prerequisites) を参照
+- **Node.js** と **Git** をインストールしてください — [前提条件](../setup/prerequisites.md) を参照
 - [Packages ワークスペース](./index.md) のセットアップとリリースの流れを確認してください
 
 </div>
@@ -92,6 +93,6 @@ AppHelper のコンポーネントを開発・テストするには、プレイ�
 
 ## 関連記事
 
-- **[Helpers](./helpers)** — AppHelper と併用される基本のユーティリティパッケージ
-- **[Web Apps](../web-apps/)** — このパッケージを利用する Web アプリケーション
+- **[Helpers](./helpers.md)** — AppHelper と併用される基本のユーティリティパッケージ
+- **[Web Apps](../web-apps/index.md)** — このパッケージを利用する Web アプリケーション
 - **[共有ライブラリの概要](./index.md)** — ワークスペースのセットアップ、リリースの流れ、ローカルリンクの手順

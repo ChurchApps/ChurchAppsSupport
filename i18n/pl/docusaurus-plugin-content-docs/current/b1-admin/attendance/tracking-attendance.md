@@ -1,5 +1,6 @@
 ---
 title: "Śledzenie frekwencji"
+description: "Analizuj trendy frekwencji, filtruj raporty według kampusu, nabożeństwa lub grupy i eksportuj frekwencję grup ze strony Frekwencja w B1 Admin."
 ---
 
 # Śledzenie frekwencji

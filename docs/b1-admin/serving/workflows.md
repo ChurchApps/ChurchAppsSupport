@@ -1,5 +1,6 @@
 ---
 title: "Workflows"
+description: "Build Kanban-style boards in B1 Admin to carry people through follow-up steps with automated emails, texts, and triggers that add people automatically."
 ---
 
 # Workflows

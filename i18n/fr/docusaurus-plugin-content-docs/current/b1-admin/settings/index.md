@@ -1,5 +1,6 @@
 ---
 title: "Paramètres"
+description: "Naviguez dans les Paramètres de B1 Admin : infos de l'église, identité visuelle, sites, champs personnalisés, rôles et navigation de l'app B1.church."
 ---
 
 # Paramètres

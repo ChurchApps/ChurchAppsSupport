@@ -1,5 +1,6 @@
 ---
 title: "Web Push-notifikationer"
+description: "Opsæt VAPID-nøgler, WebPushHelper-klienten og service worker-håndtering, så B1.church og B1 Admin kan sende browser-pushnotifikationer til medlemmer."
 ---
 
 # Web Push-notifikationer
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Relaterede sider
 
-- [Notifikationsarkitektur](./architecture/notifications): den fulde eskaleringstragt for notifikationer i appen, push og e-mail samt påmindelsesmotoren
-- [Realtidsarkitektur](./realtime): WebSocket-levering. Push udløses nu fra samme tragt i appen sammen med socket-levering i samme proces, ikke kun som en reserve, når en socket-levering ikke lykkes
-- [Messaging-endpoints](./api/endpoints/messaging): notifikationer, enheder og resten af messaging-fladen
-- [AppHelper](./shared-libraries/app-helper): npm-pakken, der leveres med `WebPushHelper`
+- [Notifikationsarkitektur](./architecture/notifications.md): den fulde eskaleringstragt for notifikationer i appen, push og e-mail samt påmindelsesmotoren
+- [Realtidsarkitektur](./realtime.md): WebSocket-levering. Push udløses nu fra samme tragt i appen sammen med socket-levering i samme proces, ikke kun som en reserve, når en socket-levering ikke lykkes
+- [Messaging-endpoints](./api/endpoints/messaging.md): notifikationer, enheder og resten af messaging-fladen
+- [AppHelper](./shared-libraries/app-helper.md): npm-pakken, der leveres med `WebPushHelper`

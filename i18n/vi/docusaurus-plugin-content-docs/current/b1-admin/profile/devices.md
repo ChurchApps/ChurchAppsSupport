@@ -1,5 +1,6 @@
 ---
 title: "Quản lý thiết bị"
+description: "Ghép nối, đặt nhãn và gỡ các màn hình ChurchAppsPlayer và FreePlay đã kết nối với tài khoản trong B1 Admin để màn hình hội thánh luôn cập nhật và an toàn."
 ---
 
 # Quản lý thiết bị

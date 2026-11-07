@@ -1,5 +1,6 @@
 ---
 title: "Sakhiwo Sesikhatsi Lesiphetsimile"
+description: "Indlela i-WebSocket layer ye-ChurchApps ngayo ilethela ingcoco yekuxoxa, kuba khona kwabantfu nemacembelo: kuhlangana kwe-socket, kubhalisela emakamelweni, nemakhono wekuhlelelwa kwetikhishi kubahlelisi."
 ---
 
 # Sakhiwo Sesikhatsi Lesiphetsimile
@@ -226,8 +227,8 @@ I-live stream ngumsebentisi lomkhulu longabatiwa waloluhlaka. Isebentisa ema-`co
 
 ## Emakhasi Lahambelanako
 
-- [Sakhiwo Setatiso](./architecture/notifications) -- Lifonile lekukhulisa kwe-in-app/push/imeyili lokudliwa yilolutfutfwa
-- [Messaging Endpoints](./api/endpoints/messaging) -- Sibonelo lesiphelele se-REST setemilayeto, tingcoco, emaxhumano, emadivayisi
-- [Tatiso Te-Push Te-Web](./web-push) -- I-push yebrawuza, lehlukene nekuletsiwa nge-socket yasekhasini
-- [AppHelper](./shared-libraries/app-helper) -- Liphakheji le-npm lelitfumela tisekelo te-client
-- [Module Structure](./api/module-structure) -- Indlela i-module yemilayeto lehlelwe ngayo laceleni lwe-server
+- [Sakhiwo Setatiso](./architecture/notifications.md) -- Lifonile lekukhulisa kwe-in-app/push/imeyili lokudliwa yilolutfutfwa
+- [Messaging Endpoints](./api/endpoints/messaging.md) -- Sibonelo lesiphelele se-REST setemilayeto, tingcoco, emaxhumano, emadivayisi
+- [Tatiso Te-Push Te-Web](./web-push.md) -- I-push yebrawuza, lehlukene nekuletsiwa nge-socket yasekhasini
+- [AppHelper](./shared-libraries/app-helper.md) -- Liphakheji le-npm lelitfumela tisekelo te-client
+- [Module Structure](./api/module-structure.md) -- Indlela i-module yemilayeto lehlelwe ngayo laceleni lwe-server

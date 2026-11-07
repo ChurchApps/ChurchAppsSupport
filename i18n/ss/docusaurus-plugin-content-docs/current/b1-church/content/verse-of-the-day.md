@@ -1,5 +1,7 @@
 ---
-title: "Ivesi Lelanga"
+title: "Ivesi Lelilanga ku-Webhusayithi ne-Portal ye-B1.church"
+sidebar_label: "Ivesi Lelanga"
+description: "Phepha ivesi lelilanga lelikhombisa sitfombe nemavesi lakudala, bese wabelane noma ulandvo kusuka ewebhusayithini yakho ye-B1.church noma kuportal kunoma yisiphi sikrini."
 ---
 
 # Ivesi Lelanga

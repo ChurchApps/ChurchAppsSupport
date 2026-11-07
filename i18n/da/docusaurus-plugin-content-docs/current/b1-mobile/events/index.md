@@ -1,5 +1,7 @@
 ---
-title: "Arrangementer"
+title: "Kirkebegivenheder og tilmelding i B1 Mobile"
+sidebar_label: "Arrangementer"
+description: "Gennemse kommende kirkebegivenheder i B1 Mobile og tilmeld dig selv og familiemedlemmer til dem, hvor tilmelding er åben."
 ---
 
 # Arrangementer
@@ -23,10 +25,10 @@ Arrangementer kan vise forskellige statusser:
 
 ## Hvad du har brug for
 
-- [B1 Mobile installeret](../getting-started/installing) og [logget ind](../getting-started/logging-in)
+- [B1 Mobile installeret](../getting-started/installing.md) og [logget ind](../getting-started/logging-in.md)
 - Din kirke skal have arrangement registrering aktiveret for arrangementet
 
 ## Læs mere
 
-- [Registrering for arrangementer](./registering) -- Trinvis vejledning til at tilmelde dig et arrangement på mobil
-- [Selvtjek ind](../checkin/self-checkin) -- Tjek ind når du ankommer til arrangementet
+- [Registrering for arrangementer](./registering.md) -- Trinvis vejledning til at tilmelde dig et arrangement på mobil
+- [Selvtjek ind](../checkin/self-checkin.md) -- Tjek ind når du ankommer til arrangementet

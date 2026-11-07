@@ -1,5 +1,6 @@
 ---
 title: "Begäran om evenemang och rum"
+description: "Begär en rums- eller utrustningsbokning för ett evenemang från B1.church medlemsportal, följ dess status under My Requests och avboka den medan den är väntande."
 ---
 
 # Begäran om evenemang och rum
@@ -42,11 +43,11 @@ Efter att du skickat visas en sammanfattning, **Begäran skickad**, som visar st
 Så länge en begäran fortfarande väntar kan du dra tillbaka den med **Avbryt begäran** (du kommer att bli ombedd att bekräfta – avbokning kan inte ångras).
 
 :::info
-Begäranden granskas av församlingens personal på B1 Admins [sida för godkännanden](../../b1-admin/calendars/approvals). Vilka rum och resurser som kräver godkännande bestäms av din församling – se [Rum och resurser](../../b1-admin/calendars/rooms-resources).
+Begäranden granskas av församlingens personal på B1 Admins [sida för godkännanden](../../b1-admin/calendars/approvals.md). Vilka rum och resurser som kräver godkännande bestäms av din församling – se [Rum och resurser](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Relaterade artiklar
 
-- [Sidan Jag](../getting-started/me-page) -- Där begärandelänkarna finns
-- [Godkännanden i kalendern (B1 Admin)](../../b1-admin/calendars/approvals) -- Hur personalen granskar begäranden
-- [Rum och resurser (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Hur församlingar konfigurerar bokningsbara utrymmen
+- [Sidan Jag](../getting-started/me-page.md) -- Där begärandelänkarna finns
+- [Godkännanden i kalendern (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Hur personalen granskar begäranden
+- [Rum och resurser (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Hur församlingar konfigurerar bokningsbara utrymmen

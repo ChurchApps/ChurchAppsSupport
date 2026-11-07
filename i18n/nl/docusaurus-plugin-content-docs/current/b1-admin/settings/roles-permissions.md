@@ -1,5 +1,6 @@
 ---
 title: "Rollen & Machtigingen"
+description: "Stel rollen in B1 Admin in om te bepalen wat medewerkers en vrijwilligers kunnen zien en wijzigen, van donaties en aanwezigheid tot personen en groepen."
 ---
 
 # Rollen & Machtigingen

@@ -1,5 +1,6 @@
 ---
 title: "Buscar personas"
+description: "Busca en Personas de B1 Admin por nombre, ordena y elige columnas en la tabla, crea filtros con Búsqueda avanzada y exporta resultados a CSV."
 ---
 
 # Buscar personas

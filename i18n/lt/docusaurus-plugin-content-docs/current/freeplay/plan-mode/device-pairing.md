@@ -1,5 +1,6 @@
 ---
 title: "Įrenginio susiejimas"
+description: "Susiekite FreePlay TV su plano tipu B1 Admin, naudodami ekrane rodomą keturženklį kodą, tada atsisiųskite plano mediją grojimui Plan Mode režimu."
 ---
 
 # Įrenginio susiejimas
@@ -13,7 +14,7 @@ Norėdami naudoti Plano režimą, susiekite savo televizorių su plano tipu prog
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite ir paleiskite FreePlay. Žr. [Pradžia](../getting-started/)
+- Įdiekite ir paleiskite FreePlay. Žr. [Pradžia](../getting-started/index.md)
 - Turėkite prieigą prie **B1 Admin** kompiuteryje arba telefone, kad galėtumėte baigti susiejimą
 
 </div>
@@ -25,7 +26,7 @@ Norėdami naudoti Plano režimą, susiekite savo televizorių su plano tipu prog
 3. FreePlay parodys keturių raidžių susiejimo kodą dideliu šriftu, šalia QR kodo.
 4. Po kodu mirksintis užrašas **Laukiama patvirtinimo** rodo, kad FreePlay laukia, kol baigsite susiejimą.
 
-Tas pats kodas veikia ir su [Tvarkaraščio režimu](../scheduled-mode/) programoje FreePlay Admin, ir su Plano režimu programoje B1 Admin. QR kodas ir ekrane rodomas adresas **freeplay.church/pair** atveria FreePlay Admin. Plano režimui jų nepaisykite ir įveskite kodą programoje B1 Admin, kaip aprašyta toliau.
+Tas pats kodas veikia ir su [Tvarkaraščio režimu](../scheduled-mode/index.md) programoje FreePlay Admin, ir su Plano režimu programoje B1 Admin. QR kodas ir ekrane rodomas adresas **freeplay.church/pair** atveria FreePlay Admin. Plano režimui jų nepaisykite ir įveskite kodą programoje B1 Admin, kaip aprašyta toliau.
 
 ## Kodo įvedimas programoje B1 Admin
 
@@ -61,5 +62,5 @@ Susiejimo kodai galioja 15 minučių. Kai senas kodas pasibaigia, FreePlay autom
 ## Susiję straipsniai
 
 - **[Plano režimo apžvalga](./index.md)** - Kuo Plano režimas skiriasi nuo Tvarkaraščio režimo
-- **[Ekrano susiejimas](../scheduled-mode/pairing-a-screen)** - Vietoj to susiekite tą patį televizorių su kalendoriumi programoje FreePlay Admin
-- **[Turinio atkūrimas](../content-providers/playing-content)** - Plano atkūrimo valdymo elementai
+- **[Ekrano susiejimas](../scheduled-mode/pairing-a-screen.md)** - Vietoj to susiekite tą patį televizorių su kalendoriumi programoje FreePlay Admin
+- **[Turinio atkūrimas](../content-providers/playing-content.md)** - Plano atkūrimo valdymo elementai

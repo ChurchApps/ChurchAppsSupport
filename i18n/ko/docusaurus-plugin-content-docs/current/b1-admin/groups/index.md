@@ -1,5 +1,7 @@
 ---
-title: "그룹"
+title: "B1 Admin의 그룹"
+sidebar_label: "그룹"
+description: "B1 Admin에서 그룹을 설정하고 정리합니다. 분류, 구성원, 캘린더, 가입 요청을 다루며 그룹 페이지를 찾는 방법도 안내합니다."
 ---
 
 # 그룹

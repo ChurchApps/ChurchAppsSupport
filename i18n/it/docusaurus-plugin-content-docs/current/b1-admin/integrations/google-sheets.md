@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Collega B1 Admin a Google Sheets con l'add-on B1 Export per portare persone, donazioni, gruppi e presenze nei fogli di calcolo quando serve."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ L'esportazione viene eseguita in background con il tuo account Google. Se la chi
 - **"B1 ha rifiutato la chiave API (401)"** — la chiave è stata revocata o è sbagliata. Ri-crea e ri-incolla.
 - **"Questa chiave API manca di autorizzazione per /giving/donazioni (403)"** — la chiave non ha `donations:read`. Aggiorna gli ambiti della chiave in B1Admin.
 - **Il foglio non si aggiorna** dopo l'esecuzione — assicurati di stare guardando il nome della scheda *corretto* (`B1 Persone` ecc.). L'esportazione crea la scheda se non esisteva.
-- **"Quota superata"** — Apps Script impone quote giornaliere per utente su `UrlFetchApp` (solitamente migliaia di chiamate al giorno). Una grande chiesa con molti record potrebbe aver bisogno di dividere le esportazioni su più giorni o usare [Make](./make) / un'integrazione personalizzata per la sincronizzazione ad alto volume.
+- **"Quota superata"** — Apps Script impone quote giornaliere per utente su `UrlFetchApp` (solitamente migliaia di chiamate al giorno). Una grande chiesa con molti record potrebbe aver bisogno di dividere le esportazioni su più giorni o usare [Make](./make.md) / un'integrazione personalizzata per la sincronizzazione ad alto volume.
 
 ## Personalizzazione del componente aggiuntivo
 
@@ -108,6 +109,6 @@ Il componente aggiuntivo è open source — il progetto Apps Script vive nel rep
 
 ## Vedi anche
 
-- [Zapier](./zapier) — per la sincronizzazione in tempo reale anziché l'esportazione su richiesta
-- [Make](./make) — per la sincronizzazione con trasformazioni più complesse
+- [Zapier](./zapier.md) — per la sincronizzazione in tempo reale anziché l'esportazione su richiesta
+- [Make](./make.md) — per la sincronizzazione con trasformazioni più complesse
 - [Chiavi API (riferimento per sviluppatori)](/docs/developer/api/api-keys)

@@ -1,5 +1,6 @@
 ---
 title: "Návod: Správa nedeľných dobrovoľníkov"
+description: "Nastavte tímy dobrovoľníkov, týždenné plány služieb a nedeľné úlohy v B1 Admin, aby ich dobrovoľníci videli na B1.church aj v mobilnej appke."
 ---
 
 # Správa nedeľných dobrovoľníkov
@@ -95,7 +96,7 @@ Nechajte dobrovoľníkov prihlásiť sa na pozície samostatne, namiesto čakani
 3. Pri každej pozícii zaškrtnite políčko **Povoliť samoobslužnú registráciu**, aby bola dostupná na samoobslužné prihlásenie.
 4. Ku každej pozícii pridajte **Popis**, aby dobrovoľníci vedeli, čo rola obnáša.
 
-Po vytvorení pozícií so samoobslužnou registráciou sa automaticky zobrazia na stránkach registrácie dobrovoľníkov na [B1.church](../../b1-church/serving/volunteer-signup) a v [mobilnej aplikácii B1](../../b1-mobile/serving/volunteer-signup). Členovia si môžu prezrieť voľné pozície, vidieť, koľko miest zostáva, a prihlásiť sa jedným kliknutím.
+Po vytvorení pozícií so samoobslužnou registráciou sa automaticky zobrazia na stránkach registrácie dobrovoľníkov na [B1.church](../../b1-church/serving/volunteer-signup.md) a v [mobilnej aplikácii B1](../../b1-mobile/serving/volunteer-signup.md). Členovia si môžu prezrieť voľné pozície, vidieť, koľko miest zostáva, a prihlásiť sa jedným kliknutím.
 
 :::tip
 Kombinujte pozície s pridelením od administrátora a pozície so samoobslužnou registráciou v tom istom pláne. Napríklad vedúceho chvály priraďte priamo, ale uvítacím a kávovým službám nechajte možnosť vybrať si sami.
@@ -109,7 +110,7 @@ Priradení dobrovoľníci automaticky vidia svoje plány a môžu reagovať.
 2. Pridelenia môžu priamo prijať alebo odmietnuť z ktorejkoľvek platformy
 3. Môžu nastaviť blokované termíny pre týždne, kedy nemajú čas
 4. Plány možno vytlačiť na nácvik alebo vyvesiť za javiskom
-5. Dobrovoľníci si môžu prezrieť voľné pozície a prihlásiť sa na ne cez [stránku registrácie dobrovoľníkov](../../b1-church/serving/volunteer-signup)
+5. Dobrovoľníci si môžu prezrieť voľné pozície a prihlásiť sa na ne cez [stránku registrácie dobrovoľníkov](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Push notifikácie v mobilnej aplikácii upozornia dobrovoľníkov, keď dostanú nové pridelenia alebo keď sa plán zmení.
@@ -130,5 +131,5 @@ Váš systém správy dobrovoľníkov je nastavený. Každý týždeň vytvorte 
 - [Pracovné postupy](../serving/workflows.md) — posúvanie ľudí cez opakujúce sa procesy pomocou spúšťačov a automatizovaných krokov
 - [Zobrazenie plánov (web)](../../b1-church/plans/viewing-plans.md) — ako dobrovoľníci vidia plány online
 - [Zobrazenie plánov (mobil)](../../b1-mobile/serving/viewing-plans.md) — ako dobrovoľníci vidia plány na mobile
-- [Registrácia dobrovoľníkov (web)](../../b1-church/serving/volunteer-signup) — ako členovia samostatne vyberajú pozície dobrovoľníkov
-- [Registrácia dobrovoľníkov (mobil)](../../b1-mobile/serving/volunteer-signup) — samoobslužná registrácia dobrovoľníkov na mobile
+- [Registrácia dobrovoľníkov (web)](../../b1-church/serving/volunteer-signup.md) — ako členovia samostatne vyberajú pozície dobrovoľníkov
+- [Registrácia dobrovoľníkov (mobil)](../../b1-mobile/serving/volunteer-signup.md) — samoobslužná registrácia dobrovoľníkov na mobile

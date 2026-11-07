@@ -1,5 +1,6 @@
 ---
 title: "Calendrier personnalisé"
+description: "Configurez un calendrier organisé pour toute l'église dans B1 Admin, qui regroupe les événements de plusieurs groupes, puis partagez-le sur votre site web, par abonnement ICS ou sous forme de téléchargement."
 ---
 
 # Calendrier personnalisé
@@ -15,7 +16,7 @@ Un calendrier personnalisé regroupe les événements de plusieurs groupes dans 
 
 - Configurez les [groupes](../groups/creating-groups.md) dont vous souhaitez inclure les événements
 - Assurez-vous que les responsables de groupe ont ajouté des événements à leurs groupes respectifs
-- Familiarisez-vous avec les bases de [Créer des calendriers](creating-calendars)
+- Familiarisez-vous avec les bases de [Créer des calendriers](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Seuls les événements **publics** apparaissent dans le calendrier personnalisé
 
 ## Et ensuite
 
-- [Créer des calendriers](creating-calendars) -- Apprendre les bases de la création de calendriers
-- [Vue d'ensemble des calendriers](./) -- Retour à la vue d'ensemble des calendriers
+- [Créer des calendriers](./creating-calendars.md) -- Apprendre les bases de la création de calendriers
+- [Vue d'ensemble des calendriers](./index.md) -- Retour à la vue d'ensemble des calendriers

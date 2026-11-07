@@ -1,5 +1,6 @@
 ---
 title: "Menelusuri dan Mengunduh Konten"
+description: "Jelajahi pustaka penyedia yang terhubung dengan remote TV di FreePlay, lalu unduh atau streaming pelajaran dan video untuk diputar."
 ---
 
 # Menelusuri dan Mengunduh Konten
@@ -13,7 +14,7 @@ Setelah terhubung ke penyedia konten, Anda dapat menelusuri pustakanya, mengundu
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Hubungkan setidaknya satu penyedia konten -- lihat [Menghubungkan Penyedia](./connecting-providers)
+- Hubungkan setidaknya satu penyedia konten -- lihat [Menghubungkan Penyedia](./connecting-providers.md)
 - Siapkan remote TV Anda untuk navigasi
 
 </div>
@@ -38,7 +39,7 @@ Anda dapat menelusuri sedalam struktur konten penyedia memungkinkan. Penelusur m
 
 ## Menelusuri Lessons.church
 
-Pustaka [Lessons.church](../../lessons-church/) diatur dengan cara yang sama seperti situs webnya. Di tingkat teratas, Anda akan melihat dua folder:
+Pustaka [Lessons.church](../../lessons-church/index.md) diatur dengan cara yang sama seperti situs webnya. Di tingkat teratas, Anda akan melihat dua folder:
 
 - **Lessons** - Masuk berdasarkan **program**, lalu **studi**, lalu **pelajaran**. Setiap pelajaran kemudian mencantumkan **venue**-nya, yaitu versi pelajaran untuk kelompok usia atau setting tertentu, seperti Prasekolah atau SD. Pilih venue untuk membuka layar unduhan untuk versi pelajaran tersebut
 - **Add-Ons** - Video dan sumber daya tambahan, dikelompokkan berdasarkan kategori
@@ -78,7 +79,7 @@ Gunakan kontrol berikut selama pemutaran:
 Saat Anda keluar dari pemutar, Anda kembali ke penelusur konten di tingkat root penyedia saat ini.
 
 :::info
-Untuk referensi lengkap semua kontrol pemutar, lihat [Memutar Konten](./playing-content).
+Untuk referensi lengkap semua kontrol pemutar, lihat [Memutar Konten](./playing-content.md).
 :::
 
 ## Berpindah Antar Penyedia

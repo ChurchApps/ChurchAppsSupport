@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Verbinden Sie Freiwilligenanmeldungen in B1 Admin mit Checkr-Hintergrundprüfungen über Make.com, mit optionalen Statusmeldungen für Ihre Koordination für sicheren Dienst."
 ---
 
 # Checkr

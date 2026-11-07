@@ -1,5 +1,6 @@
 ---
 title: "Managing Submissions"
+description: "Review, print, and reassign form submissions in B1 Admin, moving responses to the right person and following up on visitor cards and prayer requests."
 ---
 
 # Managing Submissions

@@ -1,5 +1,6 @@
 ---
 title: "Mes Inscriptions"
+description: "Vérifiez l'état de vos inscriptions, réglez un solde, modifiez participants ou options, ou annulez une inscription dans le portail membre B1 Church."
 ---
 
 # Mes Inscriptions
@@ -14,7 +15,7 @@ La page **Inscriptions** dans le portail des membres est votre base pour chaque 
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) — les inscriptions invité n'apparaissent pas ici
-- Vous avez besoin d'au moins une inscription d'événement. Voir [Inscription aux Événements](./registering).
+- Vous avez besoin d'au moins une inscription d'événement. Voir [Inscription aux Événements](./registering.md).
 
 </div>
 

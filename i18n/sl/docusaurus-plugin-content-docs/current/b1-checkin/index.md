@@ -1,5 +1,6 @@
 ---
 title: "Pregled B1 Church Checkin"
+description: "Nastavite aplikacijo kioska B1 Church Checkin na tablicah iPad ali Android, da se družine lahko same prijavijo, otroke dodelite skupinam ter natisnete nalepke in listke za prevzem."
 ---
 
 # Pregled B1 Church Checkin
@@ -24,7 +25,7 @@ IPad ali Android tablični računalnik namestite v preddverje ali na sprejemno m
 - **Pregled družine** -- Na prvi pogled vidite vse člane družine s fotografijami in trenutnimi dodelitvami skupin.
 - **Dodelitev skupin** -- Vsakega člana družine dodelite pravemu razredu ali skupini za izbrani termin bogoslužja.
 - **Prijava gostov** -- Gosta lahko na mestu dodate v svojo družino z imenom in priimkom.
-- **Registracija gostov prek QR kode** -- Prikažite QR kodo, ki jo obiskovalci lahko skenirajo, da se [sami registrirajo](../b1-church/checkin/guest-registration) na svojem telefonu, preden se prijavijo, ali pa tapnejo **Registriraj se tukaj** in izpolnijo enak obrazec na kiosku.
+- **Registracija gostov prek QR kode** -- Prikažite QR kodo, ki jo obiskovalci lahko skenirajo, da se [sami registrirajo](../b1-church/checkin/guest-registration.md) na svojem telefonu, preden se prijavijo, ali pa tapnejo **Registriraj se tukaj** in izpolnijo enak obrazec na kiosku.
 - **Tiskanje oznak** -- Natisnite oznake z imeni za otroke in potrdila za prevzem staršem z edinstvenimi varnostnimi kodami.
 - **Podpora omrežnim tiskalnikom** -- Neposredno iz aplikacije poiščite in nastavite omrežne tiskalnike.
 - **Samodejna prijava** -- Po prvi prijavi aplikacija zapomni vaše podatke in ob naslednjih zagonih odpre zaslon s storitvami.
@@ -33,8 +34,8 @@ IPad ali Android tablični računalnik namestite v preddverje ali na sprejemno m
 
 ## Razdelki dokumentacije
 
-- **[Začetek uporabe](./getting-started/)** -- Namestitev aplikacije, prijava in nastavitev tiskalnika.
-- **[Potek prijave](./check-in/)** -- Celoten potek prijave od izbire bogoslužja do tiskanja oznak.
+- **[Začetek uporabe](./getting-started/index.md)** -- Namestitev aplikacije, prijava in nastavitev tiskalnika.
+- **[Potek prijave](./check-in/index.md)** -- Celoten potek prijave od izbire bogoslužja do tiskanja oznak.
 
 :::tip
 B1 Church Checkin najbolje deluje na 10-palčnem tabličnem računalniku (iPad ali Android), nameščenem v ležečo usmeritev, kjer družine lahko enostavno dosežejo zaslon. Aplikacijo lahko prenesete iz [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) ali [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

@@ -1,5 +1,7 @@
 ---
-title: "Registravimasis"
+title: "Registracija B1.church narių portale"
+sidebar_label: "Registravimasis"
+description: "Užregistruokite save ir namų ūkio narius į bažnyčios pamaldas per B1.church narių portalą, apeidami terminalą ir priskirdami grupes."
 ---
 
 # Registravimasis

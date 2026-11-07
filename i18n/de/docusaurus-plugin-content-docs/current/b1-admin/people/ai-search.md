@@ -1,5 +1,6 @@
 ---
 title: "KI-Suche"
+description: "Durchsuchen Sie das Personenverzeichnis in B1 Admin mit Fragen in einfacher Sprache, etwa welche Mitglieder seit drei Monaten nicht da waren, statt Filter zu erstellen."
 ---
 
 # KI-Suche

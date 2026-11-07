@@ -1,5 +1,7 @@
 ---
-title: "Gaver"
+title: "Nettgiving og gaver i B1.church"
+sidebar_label: "Gaver"
+description: "Gi til menigheten din på nett i B1.church uten konto, eller logg inn for å administrere faste gaver, betalingsmetoder og gaveoversikter."
 ---
 
 # Gaver

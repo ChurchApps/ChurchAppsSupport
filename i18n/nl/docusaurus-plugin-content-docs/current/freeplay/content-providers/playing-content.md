@@ -1,5 +1,6 @@
 ---
 title: "Afspelen van inhoud"
+description: "Bedien FreePlay met de tv-afstandsbediening: pauzeren, dia's en video's overslaan, naar elk onderdeel springen en de speler afsluiten."
 ---
 
 # Afspelen van inhoud
@@ -13,13 +14,13 @@ De FreePlay-speler vult het hele scherm en is ontworpen voor tv-afstandsbedienin
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Kies iets om af te spelen. Zie [Inhoud bladeren en downloaden](./browsing-content), [Planmodus](../plan-mode/) of [Aankondigingen](./announcements)
+- Kies iets om af te spelen. Zie [Inhoud bladeren en downloaden](./browsing-content.md), [Planmodus](../plan-mode/index.md) of [Aankondigingen](./announcements.md)
 - Druk op **Start** om de speler te openen
 
 </div>
 
 :::info
-Schermen die aan een agenda zijn gekoppeld, gebruiken een aparte geplande speler met iets andere bediening. Zie [Geplande weergave op de tv](../scheduled-mode/scheduled-playback).
+Schermen die aan een agenda zijn gekoppeld, gebruiken een aparte geplande speler met iets andere bediening. Zie [Geplande weergave op de tv](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Bediening van de speler
@@ -57,7 +58,7 @@ Druk tijdens het afspelen op **Omhoog** om **Selecteer een boodschap** te openen
 Druk op **Omlaag** of **Terug** op je afstandsbediening om de speler te verlaten. Waar je terechtkomt, hangt af van wat je afspeelde:
 
 - **Inhoud van een aanbieder** - Terug naar de inhoudsbrowser
-- **Een plan** - Terug naar het downloadscherm van het plan. Zie [Planmodus](../plan-mode/)
+- **Een plan** - Terug naar het downloadscherm van het plan. Zie [Planmodus](../plan-mode/index.md)
 - **Een download** - Terug naar het scherm **Downloads**
 
 :::info
@@ -66,5 +67,5 @@ Het scherm blijft wakker zolang de speler open is, zodat de tv niet in slaapstan
 
 ## Gerelateerde artikelen
 
-- **[Inhoud bladeren en downloaden](./browsing-content)** - Inhoud vinden en downloaden om offline af te spelen
-- **[Geplande weergave op de tv](../scheduled-mode/scheduled-playback)** - Afstandsbedieningen voor schermen die een agenda volgen
+- **[Inhoud bladeren en downloaden](./browsing-content.md)** - Inhoud vinden en downloaden om offline af te spelen
+- **[Geplande weergave op de tv](../scheduled-mode/scheduled-playback.md)** - Afstandsbedieningen voor schermen die een agenda volgen

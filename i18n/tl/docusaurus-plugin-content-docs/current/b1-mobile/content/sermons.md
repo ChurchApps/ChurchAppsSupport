@@ -1,5 +1,7 @@
 ---
-title: "Mga Sermon"
+title: "Panonood ng Sermon sa B1 Mobile"
+sidebar_label: "Mga Sermon"
+description: "Mag-browse, maghanap, at manood ng mga naitalang sermon at serye sa B1 Mobile app, kasama kung paano makita ang countdown ng live stream."
 ---
 
 # Mga Sermon
@@ -13,7 +15,7 @@ Ang Sermons screen ay nagbibigay-daan sa iyong mag-browse at manood ng mga naka-
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Kailangang may na-configure na nilalaman ng sermon ang iyong simbahan sa kanilang admin portal
 
 </div>
@@ -29,7 +31,7 @@ Sa itaas ng screen, ang pinakahuling sermon ay ipinapakita bilang isang featured
 
 ## Countdown ng Live Stream
 
-Kapag may paparating na [live stream](./live-streaming) sa loob ng susunod na 24 na oras, lumalabas ang countdown timer sa Sermons screen. Pinapaalam nito sa iyo kung kailan magbo-broadcast ang susunod na serbisyo para makapagplano kang manood nang live.
+Kapag may paparating na [live stream](./live-streaming.md) sa loob ng susunod na 24 na oras, lumalabas ang countdown timer sa Sermons screen. Pinapaalam nito sa iyo kung kailan magbo-broadcast ang susunod na serbisyo para makapagplano kang manood nang live.
 
 ## Panonood ng Sermon
 
@@ -51,7 +53,7 @@ Ang bawat sermon entry ay maaaring magpakita ng:
 - **Thumbnail** -- Isang preview na imahe para sa sermon
 
 :::tip
-Kung makakakita ka ng countdown sa Sermons screen, i-tap ito para pumunta nang direkta sa [live stream](./live-streaming) kapag nagsimula na ito.
+Kung makakakita ka ng countdown sa Sermons screen, i-tap ito para pumunta nang direkta sa [live stream](./live-streaming.md) kapag nagsimula na ito.
 :::
 
 ## Availability

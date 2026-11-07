@@ -1,5 +1,7 @@
 ---
-title: "Evenimente"
+title: "Evenimente și înscrieri la biserică în B1 Mobile"
+sidebar_label: "Evenimente"
+description: "Răsfoiți evenimentele bisericii din B1 Mobile și înscrieți-vă pe dvs. și pe membrii familiei la cele la care înscrierea este deschisă."
 ---
 
 # Evenimente
@@ -23,10 +25,10 @@ Evenimentele pot afișa stări diferite:
 
 ## Ce aveți nevoie
 
-- [B1 Mobile instalat](../getting-started/installing) și [autentificat](../getting-started/logging-in)
+- [B1 Mobile instalat](../getting-started/installing.md) și [autentificat](../getting-started/logging-in.md)
 - Biserica dvs. trebuie să aibă activată înscrierea la evenimente pentru evenimentul respectiv
 
 ## Aflați mai multe
 
-- [Înscrierea la evenimente](./registering) -- Ghid pas cu pas pentru înscrierea la un eveniment de pe dispozitivul mobil
-- [Self Check-In](../checkin/self-checkin) -- Faceți check-in la sosirea la eveniment
+- [Înscrierea la evenimente](./registering.md) -- Ghid pas cu pas pentru înscrierea la un eveniment de pe dispozitivul mobil
+- [Self Check-In](../checkin/self-checkin.md) -- Faceți check-in la sosirea la eveniment

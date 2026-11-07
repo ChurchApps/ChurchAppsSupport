@@ -1,5 +1,6 @@
 ---
 title: "Plan Şablonları"
+description: "Bir ibadet planının sırasını ve pozisyonlarını B1 Admin'de yeniden kullanılabilir bir şablon olarak kaydedin, ardından tek tıkla gelecekteki planlara uygulayın."
 ---
 
 # Plan Şablonları

@@ -1,5 +1,6 @@
 ---
 title: "Formų kūrimas"
+description: "Kurkite tinkintas formas B1 Admin renginių registracijoms, apklausoms ir lankytojų kortelėms, tada dalinkitės jomis nuoroda, QR kodu ar spausdinta versija."
 ---
 
 # Formų kūrimas

@@ -1,5 +1,6 @@
 ---
 title: "Setup"
+description: "Kies een lokale dev-route voor ChurchApps: frontend-werk tegen de gedeelde demo-API's, of de volledige stack lokaal met MySQL voor backend-wijzigingen."
 ---
 
 # Setup
@@ -38,15 +39,15 @@ Deze benadering stelt u in staat om in minuten frontend-wijzigingen aan te breng
 
 ### 2. Alles Lokaal Uitvoeren
 
-Als u API-code moet aanpassen of offline moet werken, kunt u de volledige stack lokaal uitvoeren. Dit vereist MySQL 8.0+ en aanvullende configuratie. Zie de [API lokale setup](../api/local-setup)-gids voor gedetailleerde instructies.
+Als u API-code moet aanpassen of offline moet werken, kunt u de volledige stack lokaal uitvoeren. Dit vereist MySQL 8.0+ en aanvullende configuratie. Zie de [API lokale setup](../api/local-setup.md)-gids voor gedetailleerde instructies.
 
 ## Aan De Slag
 
 Volg deze pagina's in volgorde:
 
-1. **[Prerequisites](prerequisites)** -- Installeer de vereiste tools (Node.js, Git, MySQL, enz.)
-2. **[Project Overview](project-overview)** -- Begrijp welke projecten bestaan en wat zij doen
-3. **[Environment Variables](environment-variables)** -- Configureer uw `.env`-bestanden om alles te verbinden
+1. **[Prerequisites](./prerequisites.md)** -- Installeer de vereiste tools (Node.js, Git, MySQL, enz.)
+2. **[Project Overview](./project-overview.md)** -- Begrijp welke projecten bestaan en wat zij doen
+3. **[Environment Variables](./environment-variables.md)** -- Configureer uw `.env`-bestanden om alles te verbinden
 
 :::info
 Elk ChurchApps-project is een onafhankelijke Git-repository. U hoeft alleen de specifieke project(en) te klonen die u wilt gebruiken.

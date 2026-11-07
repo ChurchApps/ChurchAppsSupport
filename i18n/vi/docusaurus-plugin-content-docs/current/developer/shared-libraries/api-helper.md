@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Tham chiếu gói @churchapps/apihelper cho các API Express của ChurchApps: build cục bộ, thử nghiệm qua Yarn portal và phát hành bằng changeset."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Gói `@churchapps/apihelper` cung cấp các tiện ích phía máy chủ cho t�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js** và **Git** -- xem [Điều kiện tiên quyết](../setup/prerequisites)
+- Cài đặt **Node.js** và **Git** -- xem [Điều kiện tiên quyết](../setup/prerequisites.md)
 - Làm quen với thiết lập và quy trình phát hành của [không gian làm việc Packages](./index.md)
-- Gói này phụ thuộc vào [`@churchapps/helpers`](./helpers) (như một peer dependency) và xuất lại toàn bộ nội dung của gói đó
+- Gói này phụ thuộc vào [`@churchapps/helpers`](./helpers.md) (như một peer dependency) và xuất lại toàn bộ nội dung của gói đó
 
 </div>
 
@@ -65,6 +66,6 @@ Gói này là một phụ thuộc của mọi API ChurchApps -- bao gồm Api ch
 
 ## Bài viết liên quan
 
-- **[Helpers](./helpers)** -- Gói tiện ích cơ sở mà gói này phụ thuộc vào
-- **[Module Structure](../api/module-structure)** -- Cách controller và middleware xác thực được sử dụng trong các module API
-- **[Local API Setup](../api/local-setup)** -- Thiết lập API để phát triển cục bộ
+- **[Helpers](./helpers.md)** -- Gói tiện ích cơ sở mà gói này phụ thuộc vào
+- **[Module Structure](../api/module-structure.md)** -- Cách controller và middleware xác thực được sử dụng trong các module API
+- **[Local API Setup](../api/local-setup.md)** -- Thiết lập API để phát triển cục bộ

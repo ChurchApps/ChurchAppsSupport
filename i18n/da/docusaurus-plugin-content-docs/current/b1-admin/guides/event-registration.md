@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Opsætning af begivenhedsregistrering"
+description: "Opsæt en tilmeldingsformular i B1 Admin til deltageroplysninger og evt. betalinger, indlejr den på hjemmesiden og følg tilmeldingerne."
 ---
 
 # Opsætning af begivenhedsregistrering
@@ -11,7 +12,7 @@ Opret en begivenhedsregistreringsformular, saml deltageroplysninger og valgfri b
 </div>
 
 :::info
-**To måder at håndtere begivenhedsregistrering:** Denne vejledning dækker **formularbaseret registrering**, som giver dig fuld kontrol over brugerdefinerede felter og betalingindsamling. For enklere begivenheder, hvor du kun skal spore, hvem der kommer, skal du bruge **indfødt begivenhedsregistrering** bygget ind i kalenderen -- se [Oprettelse af kalendere](../calendars/creating-calendars.md#enabling-event-registration) for opsætningsinstruktioner. Indfødt registrering lader medlemmer tilmelde sig direkte fra [B1-webstedet](../../b1-church/events/registering) og [mobilappen](../../b1-mobile/events/registering) med kapacitetssporing, datovindue og e-mailbekræftelser.
+**To måder at håndtere begivenhedsregistrering:** Denne vejledning dækker **formularbaseret registrering**, som giver dig fuld kontrol over brugerdefinerede felter og betalingindsamling. For enklere begivenheder, hvor du kun skal spore, hvem der kommer, skal du bruge **indfødt begivenhedsregistrering** bygget ind i kalenderen -- se [Oprettelse af kalendere](../calendars/creating-calendars.md#enabling-event-registration) for opsætningsinstruktioner. Indfødt registrering lader medlemmer tilmelde sig direkte fra [B1-webstedet](../../b1-church/events/registering.md) og [mobilappen](../../b1-mobile/events/registering.md) med kapacitetssporing, datovindue og e-mailbekræftelser.
 :::
 
 <div class="prereqs">

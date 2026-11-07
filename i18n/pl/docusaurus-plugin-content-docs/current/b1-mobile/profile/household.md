@@ -1,5 +1,6 @@
 ---
 title: "Gospodarstwo domowe"
+description: "Zobacz, kto należy do Twojego gospodarstwa domowego i jak członkowie są połączeni w zakładce Profil B1 Mobile. Od tego zależą zameldowania i inne funkcje."
 ---
 
 # Gospodarstwo domowe
@@ -13,7 +14,7 @@ Zakładka **Gospodarstwo domowe** na ekranie Profilu pokazuje członków Twojej 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj aplikację B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj aplikację B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 
 </div>
 
@@ -33,7 +34,7 @@ Informacje o gospodarstwie domowym są wykorzystywane przez kilka funkcji w apli
 
 - **Meldowanie** -- Kiedy [meldujesz się](../checkin/self-checkin.md) na nabożeństwo lub wydarzenie, możesz zameldować całe gospodarstwo domowe naraz, zamiast meldować każdą osobę osobno.
 - **Dokumentacja kościoła** -- Twój kościół wykorzystuje dane o gospodarstwach domowych, aby porządkować dokumentację rodzin i kontaktować się z rodziną jako całością.
-- **Spis wiernych** -- Inni członkowie mogą widzieć informacje o Twoim gospodarstwie domowym w [spisie wiernych](../community/member-directory.md), w zależności od Twoich [ustawień prywatności](./privacy-settings).
+- **Spis wiernych** -- Inni członkowie mogą widzieć informacje o Twoim gospodarstwie domowym w [spisie wiernych](../community/member-directory.md), w zależności od Twoich [ustawień prywatności](./privacy-settings.md).
 
 ## Przeglądanie gospodarstwa domowego
 
@@ -47,10 +48,10 @@ Członkostwem w gospodarstwie domowym zazwyczaj zarządza administrator Twojego 
 
 ## Utrzymywanie aktualnych informacji
 
-Jeśli dane członka rodziny wymagają aktualizacji, może on [edytować swój własny profil](./editing-profile) lub możesz skontaktować się z administratorem kościoła, aby wprowadzić zmiany. Dbanie o aktualność informacji o gospodarstwie domowym sprawia, że funkcje takie jak [meldowanie](../checkin/) działają sprawnie dla całej rodziny.
+Jeśli dane członka rodziny wymagają aktualizacji, może on [edytować swój własny profil](./editing-profile.md) lub możesz skontaktować się z administratorem kościoła, aby wprowadzić zmiany. Dbanie o aktualność informacji o gospodarstwie domowym sprawia, że funkcje takie jak [meldowanie](../checkin/index.md) działają sprawnie dla całej rodziny.
 
 ## Powiązane artykuły
 
 - [Samodzielne meldowanie](../checkin/self-checkin.md) -- Melduj członków swojego gospodarstwa domowego na nabożeństwa
-- [Edytowanie profilu](./editing-profile) -- Aktualizuj swoje dane osobowe
-- [Ustawienia prywatności](./privacy-settings) -- Kontroluj, co inni mogą widzieć o Twoim gospodarstwie domowym
+- [Edytowanie profilu](./editing-profile.md) -- Aktualizuj swoje dane osobowe
+- [Ustawienia prywatności](./privacy-settings.md) -- Kontroluj, co inni mogą widzieć o Twoim gospodarstwie domowym

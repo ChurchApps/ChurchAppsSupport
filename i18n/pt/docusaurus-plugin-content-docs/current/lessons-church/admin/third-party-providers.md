@@ -1,5 +1,6 @@
 ---
 title: "Provedores de Terceiros"
+description: "Adicione um feed externo de currículo ao Lessons.church pela página Third-Party e depois visualize, atualize ou remova conexões de provedores."
 ---
 
 # Provedores de Terceiros

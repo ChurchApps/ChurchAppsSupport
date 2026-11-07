@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Vysvetľuje modulárny monolitický dizajn API ChurchApps, jeho šesť dátových modulov, technologický zásobník, porty a funkcie Lambda, s odkazmi na nastavenie, databázu, autentifikáciu a dokumentáciu koncových bodov pre vývojárov."
 ---
 
 # API
@@ -52,8 +53,8 @@ Keď je API nasadené v AWS, beží ako šesť funkcií Lambda:
 
 API závisí od dvoch zdieľaných balíkov ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Základné pomocné funkcie (DateHelper, ApiHelper a ďalšie)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Pomocné funkcie servera Express vrátane autentifikácie, pomocných funkcií databázy a integrácií s AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Základné pomocné funkcie (DateHelper, ApiHelper a ďalšie)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Pomocné funkcie servera Express vrátane autentifikácie, pomocných funkcií databázy a integrácií s AWS
 
 :::info
 API používa moduly ES (`"type": "module"` v `package.json`). Uistite sa, že vaše importy používajú syntax modulov ES.
@@ -61,11 +62,11 @@ API používa moduly ES (`"type": "module"` v `package.json`). Uistite sa, že v
 
 ## V tejto sekcii
 
-- **[Lokálna inštalácia](./local-setup)** -- Klonovanie, konfigurácia a spustenie API lokálne
-- **[Databáza](./database)** -- Architektúra databázy pre každý modul, skripty schémy a vzory prístupu k údajom
-- **[Štruktúra modulu](./module-structure)** -- Kontroléry, repozitáre, modely a autentifikácia
-- **[Kľúče API](./api-keys)** -- Osobné prístupové tokeny pre skripty a konektory
-- **[Pripojené aplikácie (OAuth)](./connected-apps)** -- Viacnájomcový tok OAuth pre aplikácie tretích strán
-- **[Webhooky](./webhooks)** -- Odosielanie upozornení o udalostiach externým systémom
-- **[Server MCP](./mcp)** -- Koncový bod Model Context Protocol, ktorý sprístupňuje API AI asistentom
-- **[Referencia koncových bodov](./endpoints/)** -- Úplná dokumentácia REST API pre všetky moduly
+- **[Lokálna inštalácia](./local-setup.md)** -- Klonovanie, konfigurácia a spustenie API lokálne
+- **[Databáza](./database.md)** -- Architektúra databázy pre každý modul, skripty schémy a vzory prístupu k údajom
+- **[Štruktúra modulu](./module-structure.md)** -- Kontroléry, repozitáre, modely a autentifikácia
+- **[Kľúče API](./api-keys.md)** -- Osobné prístupové tokeny pre skripty a konektory
+- **[Pripojené aplikácie (OAuth)](./connected-apps.md)** -- Viacnájomcový tok OAuth pre aplikácie tretích strán
+- **[Webhooky](./webhooks.md)** -- Odosielanie upozornení o udalostiach externým systémom
+- **[Server MCP](./mcp.md)** -- Koncový bod Model Context Protocol, ktorý sprístupňuje API AI asistentom
+- **[Referencia koncových bodov](./endpoints/index.md)** -- Úplná dokumentácia REST API pre všetky moduly

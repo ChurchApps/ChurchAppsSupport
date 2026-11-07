@@ -1,5 +1,6 @@
 ---
 title: "Journal d'audit"
+description: "Consultez le journal d'audit de B1 Admin : connexions, modifications de fiches personnes et de permissions. Exportez les entrées filtrées en CSV."
 ---
 
 # Journal d'audit
@@ -78,6 +79,6 @@ Examinez régulièrement le journal d'audit, surtout après l'intégration de no
 
 ## Articles connexes
 
-- [Rôles et permissions](../settings/roles-permissions) -- Gérez qui a accès à quoi
-- [Sécurité des données](../settings/data-security) -- Comprenez comment vos données sont protégées
+- [Rôles et permissions](../settings/roles-permissions.md) -- Gérez qui a accès à quoi
+- [Sécurité des données](../settings/data-security.md) -- Comprenez comment vos données sont protégées
 - [Aperçu des rapports](./index.md) -- Voir tous les rapports disponibles

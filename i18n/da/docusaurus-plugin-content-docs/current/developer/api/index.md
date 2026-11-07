@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Forklarer ChurchApps API's modulære monolitdesign, seks datamoduler, teknologistak, porte og Lambda-funktioner, med links til opsætning og dokumentation."
 ---
 
 # API
@@ -50,8 +51,8 @@ Når der implementeres på AWS, kører API'en som fire Lambda-funktioner:
 
 API'en afhænger af to delte ChurchApps-pakker:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Grundlæggende værktøjer (DateHelper, ApiHelper osv.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Express-serverværktøjer inkluderet godkendelse, databasehjælpere og AWS-integrationer
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Grundlæggende værktøjer (DateHelper, ApiHelper osv.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Express-serverværktøjer inkluderet godkendelse, databasehjælpere og AWS-integrationer
 
 :::info
 API'en bruger ES-moduler (`"type": "module"` i `package.json`). Sørg for, at dine importer bruger ES-modulsyntaks.
@@ -59,7 +60,7 @@ API'en bruger ES-moduler (`"type": "module"` i `package.json`). Sørg for, at di
 
 ## I dette afsnit
 
-- **[Lokalt Setup](./local-setup)** -- Klon, konfigurér og kør API'en lokalt
-- **[Database](./database)** -- Database-per-modul arkitektur, skemascripter og dataadgangsmønstre
-- **[Modulstruktur](./module-structure)** -- Controllere, repositories, modeller og godkendelse
-- **[Endpoint-reference](./endpoints/)** -- Komplette REST API-dokumentation for alle moduler
+- **[Lokalt Setup](./local-setup.md)** -- Klon, konfigurér og kør API'en lokalt
+- **[Database](./database.md)** -- Database-per-modul arkitektur, skemascripter og dataadgangsmønstre
+- **[Modulstruktur](./module-structure.md)** -- Controllere, repositories, modeller og godkendelse
+- **[Endpoint-reference](./endpoints/index.md)** -- Komplette REST API-dokumentation for alle moduler

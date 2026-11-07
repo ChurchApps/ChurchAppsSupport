@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje oddaj"
+description: "Pregledujte, tiskajte in preusmerjajte oddane obrazce v B1 Admin, pošljite odgovore pravi osebi ter spremljajte obiskovalne kartice in prošnje za molitev."
 ---
 
 # Upravljanje oddaj

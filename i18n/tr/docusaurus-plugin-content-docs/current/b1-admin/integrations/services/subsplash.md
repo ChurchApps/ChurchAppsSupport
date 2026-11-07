@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Subsplash bağışlarını, yeni kişileri ve form yanıtlarını Zapier ile B1'e bağlayın; bağışlar ve profiller otomatik olarak B1 Admin'e düşsün."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ Zap'i etkinleştirin. Bundan sonraki Subsplash bağışları birkaç saniye içi
 
 ## Ayrıca Bakınız
 
-- [Donorbox](./donorbox): aynı tarif yapısını kullanan, farklı bir bağış platformu
-- [Zapier (genel bakış)](../zapier): her Zapier tarifinin B1 tarafı
+- [Donorbox](./donorbox.md): aynı tarif yapısını kullanan, farklı bir bağış platformu
+- [Zapier (genel bakış)](../zapier.md): her Zapier tarifinin B1 tarafı
 - [Subsplash Zapier entegrasyon kılavuzu](https://support.subsplash.com/en/articles/9825926-zapier-integration) (Subsplash dokümantasyonu)

@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Lokální nastavení členské webové aplikace B1App pomocí Next.js 22+, nastavení koncových bodů API v .env a spuštění vývojového serveru na portu 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App je veřejně dostupná aplikace pro členy církve, postavená na Next.js.
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **Node.js 22+** a **Git** -- viz [Předpoklady](../setup/prerequisites)
-- Nastavte cílové API (demo nebo lokální) -- viz [Proměnné prostředí](../setup/environment-variables)
+- Nainstalujte **Node.js 22+** a **Git** -- viz [Předpoklady](../setup/prerequisites.md)
+- Nastavte cílové API (demo nebo lokální) -- viz [Proměnné prostředí](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Produkční sestavení se nasazují na **S3 + CloudFront**:
 3. Spustí se invalidace CloudFront, aby se načetla nová verze
 
 :::tip
-Podrobné pokyny k nasazení najdete v průvodci [Nasazení webových aplikací](../deployment/web-apps).
+Podrobné pokyny k nasazení najdete v průvodci [Nasazení webových aplikací](../deployment/web-apps.md).
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Planübersicht"
+description: "Überblick über die Einteilungen mehrerer Termine in B1 Admin: offene Positionen erkennen und das Team aus einem Raster besetzen oder anschreiben."
 ---
 
 # Planübersicht

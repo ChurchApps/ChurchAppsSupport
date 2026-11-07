@@ -1,5 +1,6 @@
 ---
 title: "Kolmannen osapuolen palveluntarjoajat"
+description: "Lisää ulkoinen opetussuunnitelmasyöte Lessons.churchiin Third-Party-ylläpitosivulta ja näytä, päivitä tai poista tarjoajayhteydet tarpeen mukaan."
 ---
 
 # Kolmannen osapuolen palveluntarjoajat

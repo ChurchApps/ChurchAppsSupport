@@ -1,5 +1,6 @@
 ---
 title: "Cơ sở dữ liệu"
+description: "Tìm hiểu cách API ChurchApps chia dữ liệu thành sáu cơ sở dữ liệu MySQL, mỗi module một cơ sở, cùng cách cấu hình kết nối và khởi tạo chúng."
 ---
 
 # Cơ sở dữ liệu
@@ -13,8 +14,8 @@ API của ChurchApps sử dụng kiến trúc **mỗi module một cơ sở dữ
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **MySQL 8.0+** -- xem [Yêu cầu tiên quyết](../setup/prerequisites)
-- Cấu hình chuỗi kết nối cơ sở dữ liệu trong tệp `.env` -- xem [Biến môi trường](../setup/environment-variables)
+- Cài đặt **MySQL 8.0+** -- xem [Yêu cầu tiên quyết](../setup/prerequisites.md)
+- Cấu hình chuỗi kết nối cơ sở dữ liệu trong tệp `.env` -- xem [Biến môi trường](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Các quyết định thiết kế chính
 
 - **Một cơ sở dữ liệu cho mỗi module** -- Mỗi module duy trì cơ sở dữ liệu MySQL riêng với một connection pool chuyên dụng (do `KyselyPool` quản lý). Điều này giúp các module độc lập với nhau và cho phép phát triển lược đồ một cách riêng biệt.
-- **Quyền sở hữu độc quyền** -- Các bảng của một module chỉ được đọc và ghi bởi mã nguồn của chính module đó. Khi module khác cần dữ liệu này, nó sẽ gọi gateway của module sở hữu thay vì truy vấn trực tiếp các bảng -- xem [Giao tiếp giữa các module](./module-structure#cross-module-communication).
+- **Quyền sở hữu độc quyền** -- Các bảng của một module chỉ được đọc và ghi bởi mã nguồn của chính module đó. Khi module khác cần dữ liệu này, nó sẽ gọi gateway của module sở hữu thay vì truy vấn trực tiếp các bảng -- xem [Giao tiếp giữa các module](./module-structure.md#cross-module-communication).
 - **Mẫu repository không dùng ORM** -- Mọi truy cập dữ liệu đều đi qua các lớp repository, xây dựng câu SQL có kiểu dữ liệu bằng trình xây dựng truy vấn Kysely trên lược đồ của module. Cách này giúp kiểm soát đầy đủ hiệu năng và hành vi truy vấn.
 - **Đa thuê bao ngay từ thiết kế** -- Mọi truy vấn đều được giới hạn theo `churchId`. Tất cả các bảng đều có cột `churchId`, và lớp repository tự động thực thi cách ly giữa các thuê bao.
 
@@ -129,5 +130,5 @@ Ràng buộc này làm cho ranh giới module trở nên thực sự: mỗi lư�
 
 ## Bài viết liên quan
 
-- **[Cấu trúc module](./module-structure)** -- Cách các controller và repository được tổ chức bên trong mỗi module
-- **[Thiết lập API cục bộ](./local-setup)** -- Hướng dẫn thiết lập đầy đủ từng bước
+- **[Cấu trúc module](./module-structure.md)** -- Cách các controller và repository được tổ chức bên trong mỗi module
+- **[Thiết lập API cục bộ](./local-setup.md)** -- Hướng dẫn thiết lập đầy đủ từng bước

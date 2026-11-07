@@ -1,5 +1,6 @@
 ---
 title: "Tóm tắt quyên góp"
+description: "Chạy báo cáo Tóm tắt quyên góp trong B1 Admin để xem tổng số tiền dâng hiến, số người quyên góp duy nhất và số tiền theo quỹ trong khoảng thời gian bạn chọn."
 ---
 
 # Tóm tắt quyên góp

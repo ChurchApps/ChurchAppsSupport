@@ -1,5 +1,6 @@
 ---
 title: "Gruppenkalender"
+description: "Planen Sie Treffen und wiederkehrende Termine im Gruppenkalender von B1 Admin und B1.church mit Massenplanung, Zusagen (RSVP) und Kalenderabonnements."
 ---
 
 # Gruppenkalender

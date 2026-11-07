@@ -1,5 +1,6 @@
 ---
 title: "Godkjenninger i kalenderen"
+description: "Behandle ventende forespørsler om booking av rom og ressurser i B1 Admin: sjekk konflikter, godkjenn eller avslå, og publiser eventuelt arrangementet."
 ---
 
 # Godkjenninger i kalenderen
@@ -13,7 +14,7 @@ På Godkjenninger-siden går administratorer gjennom og behandler ventende booki
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Konfigurer rom eller ressurser med en **Godkjenningsgruppe** i [Rom og ressurser](rooms-resources)
+- Konfigurer rom eller ressurser med en **Godkjenningsgruppe** i [Rom og ressurser](./rooms-resources.md)
 - Du trenger tillatelsen **Kalenderadministrator** eller tillatelsen **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Klikk på **Godkjenn** eller **Avslå** på en bookingforespørsel (avslag må b
 Når du klikker på **Godkjenn**, åpnes en dialogboks **Godkjenn booking**, slik at du også kan publisere arrangementet i samme steg:
 
 1. Kryss av for **Publiser i offentlig kalender** for å gjøre arrangementet offentlig i gruppens kalender. La den stå uten avkrysning for å godkjenne bookingen uten å endre arrangementets synlighet.
-2. Når **Publiser i offentlig kalender** er avkrysset, kan du eventuelt velge en kuratert kalender under **Legg også til i kalender** for å legge arrangementet til i en av dine [kurerte kalendere](curated-calendar). La den stå på **Ingen** for å hoppe over dette. (Dette alternativet vises bare hvis du har tillatelsen **content.edit**.)
+2. Når **Publiser i offentlig kalender** er avkrysset, kan du eventuelt velge en kuratert kalender under **Legg også til i kalender** for å legge arrangementet til i en av dine [kurerte kalendere](./curated-calendar.md). La den stå på **Ingen** for å hoppe over dette. (Dette alternativet vises bare hvis du har tillatelsen **content.edit**.)
 3. Klikk på **Godkjenn**.
 
 ## Ventende arrangementer
@@ -49,10 +50,10 @@ Når du klikker på **Godkjenn**, åpnes en dialogboks **Godkjenn booking**, sli
 Hvis kalenderrutinen din krever godkjenning før arrangementer blir synlige for offentligheten, vises ventende arrangementer i delen **Arrangementsforespørsler**. Klikk på **Godkjenn** for å publisere et arrangement i kalenderen, eller **Avslå** for å gi innsenderen beskjed om at det må gjøres endringer.
 
 :::tip
-Sett opp en godkjenningsgruppe på et rom i [Rom og ressurser](rooms-resources) for å kreve godkjenning for det rommet. Grupper med tilgang kan da be om rommet når de oppretter arrangementer, og forespørslene havner på denne siden.
+Sett opp en godkjenningsgruppe på et rom i [Rom og ressurser](./rooms-resources.md) for å kreve godkjenning for det rommet. Grupper med tilgang kan da be om rommet når de oppretter arrangementer, og forespørslene havner på denne siden.
 :::
 
 ## Relaterte artikler
 
-- [Rom, ressurser og planlegging](rooms-resources) — sett opp rom og ressurser som kan bookes
-- [Opprette kalendere](creating-calendars) — administrer kalendere og arrangementer
+- [Rom, ressurser og planlegging](./rooms-resources.md) — sett opp rom og ressurser som kan bookes
+- [Opprette kalendere](./creating-calendars.md) — administrer kalendere og arrangementer

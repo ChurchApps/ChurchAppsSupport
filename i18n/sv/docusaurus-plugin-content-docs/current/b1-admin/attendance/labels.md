@@ -1,5 +1,6 @@
 ---
 title: "Designer för incheckningsetiketter"
+description: "Anpassa mallarna för namnskyltar och hämtningslappar som skrivs ut vid incheckning i B1 Admin, med fält, placering och villkor för födelsedag eller anteckningar."
 ---
 
 # Designer för incheckningsetiketter
@@ -13,8 +14,8 @@ Etikettdesignern låter dig skapa och anpassa mallar för namnbrickor och upphä
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Konfigurera [Närvaro](setup) och ställ in minst en gudstjänsttid med incheckning aktiverad
-- Konfigurera [Incheckning](check-in) så att etiketter skrivs ut
+- Konfigurera [Närvaro](./setup.md) och ställ in minst en gudstjänsttid med incheckning aktiverad
+- Konfigurera [Incheckning](./check-in.md) så att etiketter skrivs ut
 - Du behöver administratörsbehörighet för avsnittet Närvaro
 
 </div>
@@ -85,6 +86,6 @@ Gör en testutskrift efter att du redigerat en mall för att kontrollera att lay
 
 ## Relaterade artiklar
 
-- [Inställning av incheckning](setup) — konfigurera tjänster och grupper för incheckning
-- [Slutföra incheckning](check-in) — incheckningsflödet för familjer
-- [Komma igång med B1 Checkin](../../b1-checkin/getting-started/) — incheckningskioskappen
+- [Inställning av incheckning](./setup.md) — konfigurera tjänster och grupper för incheckning
+- [Slutföra incheckning](./check-in.md) — incheckningsflödet för familjer
+- [Komma igång med B1 Checkin](../../b1-checkin/getting-started/index.md) — incheckningskioskappen

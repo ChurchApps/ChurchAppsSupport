@@ -1,5 +1,6 @@
 ---
 title: "Wygląd"
+description: "Ustaw kolory, czcionki, odstępy, logo i nawigację strony kościoła w B1 Admin, a także widżety, analitykę GA4, przekierowania i własny CSS."
 ---
 
 # Wygląd
@@ -13,7 +14,7 @@ Strona Wygląd pozwala dostosować ogólny wygląd i charakter witryny Twojego k
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Ukończ [wstępną konfigurację](initial-setup) swojej witryny
+- Ukończ [wstępną konfigurację](./initial-setup.md) swojej witryny
 - Przygotuj logo kościoła w formacie PNG z przezroczystym tłem i proporcjami 4:1
 - Jeśli masz przewodnik po stylu, znaj kolory marki swojego kościoła (wartości szesnastkowe)
 
@@ -98,7 +99,7 @@ Własny CSS jest potężny, ale nieprawidłowe użycie może zepsuć układ witr
 :::
 
 :::info
-Twoja witryna stosuje politykę bezpieczeństwa treści (Content Security Policy), która blokuje skrypty wbudowane pochodzące z innych źródeł. Pole **Własny HTML** tutaj oraz [element HTML](page-editor#using-the-html-element) na poszczególnych stronach są zaufanymi wyjątkami -- kod zapisany w tych miejscach jest uruchamiany bez zmian, dlatego wklejaj skrypty tylko ze źródeł, którym ufasz (tagi analityczne, widżety czatu i podobne osadzenia).
+Twoja witryna stosuje politykę bezpieczeństwa treści (Content Security Policy), która blokuje skrypty wbudowane pochodzące z innych źródeł. Pole **Własny HTML** tutaj oraz [element HTML](./page-editor.md#using-the-html-element) na poszczególnych stronach są zaufanymi wyjątkami -- kod zapisany w tych miejscach jest uruchamiany bez zmian, dlatego wklejaj skrypty tylko ze źródeł, którym ufasz (tagi analityczne, widżety czatu i podobne osadzenia).
 :::
 
 ## Motywy stylów
@@ -107,5 +108,5 @@ Jeśli szukasz szybkiego punktu wyjścia, **Sugerowane palety** w sekcji Paleta 
 
 ## Następne kroki
 
-- [Zarządzanie stronami](managing-pages) -- Tworzenie i organizowanie stron witryny
-- [Pliki](files) -- Przesyłanie zasobów multimedialnych dla witryny
+- [Zarządzanie stronami](./managing-pages.md) -- Tworzenie i organizowanie stron witryny
+- [Pliki](./files.md) -- Przesyłanie zasobów multimedialnych dla witryny

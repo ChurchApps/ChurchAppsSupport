@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-in na Igreja pelo App B1 Mobile"
+sidebar_label: "Check-In"
+description: "Registre você e sua família nos cultos pelo celular no B1 Mobile, escolhendo cultos e grupos antes de chegar à igreja."
 ---
 
 # Check-In
@@ -16,7 +18,7 @@ O processo de check-in é rápido e tem várias etapas, que guiam você na escol
 
 ## Primeiros Passos
 
-Para acessar o check-in, abra a seção **Check-In** no B1 Mobile. Você precisa estar conectado para usar este recurso. Se não estiver conectado, será solicitado que você primeiro [faça login](../getting-started/logging-in).
+Para acessar o check-in, abra a seção **Check-In** no B1 Mobile. Você precisa estar conectado para usar este recurso. Se não estiver conectado, será solicitado que você primeiro [faça login](../getting-started/logging-in.md).
 
 :::info
 O recurso de check-in exige que sua igreja tenha configurado cultos e grupos de presença nas configurações de administração. Se nenhum culto aparecer ao abrir a tela de check-in, sua igreja pode ainda não ter ativado este recurso. Entre em contato com o administrador da sua igreja para obter ajuda.
@@ -30,4 +32,4 @@ O recurso de check-in exige que sua igreja tenha configurado cultos e grupos de 
 
 ## Próximos Passos
 
-- [Check-In por conta própria](./self-checkin) -- Guia passo a passo para fazer check-in pelo seu celular
+- [Check-In por conta própria](./self-checkin.md) -- Guia passo a passo para fazer check-in pelo seu celular

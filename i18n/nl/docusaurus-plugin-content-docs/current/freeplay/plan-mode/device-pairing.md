@@ -1,5 +1,6 @@
 ---
 title: "Pairing Your Device"
+description: "Koppel een FreePlay-tv aan een plantype in B1 Admin met de vierletterige code op het scherm en download de media van het plan voor Plan Mode."
 ---
 
 # Pairing Your Device
@@ -13,7 +14,7 @@ Als u Plan Mode wilt gebruiken, moet u uw TV met een plantype in B1 Admin koppel
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer en start FreePlay -- zie [Getting Started](../getting-started/)
+- Installeer en start FreePlay -- zie [Getting Started](../getting-started/index.md)
 - Kies **Pair to Plan** uit het [pairing mode screen](../getting-started/pairing-modes.md)
 - Hebt u toegang tot **B1 Admin** op een computer of telefoon om de koppeling in te stellen
 
@@ -66,4 +67,4 @@ Koppelingscodes verlopen na een bepaalde periode. Als u te lang wacht, genereert
 ## Gerelateerde Artikelen
 
 - **[Plan Mode Overview](./index.md)** - Begrijpen hoe Plan Mode verschilt van Classroom Mode
-- **[Playing Lessons](../content-providers/playing-content)** - Spelerbesturingselementen zijn in beide modi hetzelfde
+- **[Playing Lessons](../content-providers/playing-content.md)** - Spelerbesturingselementen zijn in beide modi hetzelfde

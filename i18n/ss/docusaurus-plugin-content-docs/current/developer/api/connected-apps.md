@@ -1,12 +1,13 @@
 ---
 title: "Ema-App Lahlanganisiwe & OAuth"
+description: "Xhumanisa ema-app langaphandle nedatha ye-B1 yelicawe ngemvume ye-OAuth 2.0, ngaphandle kwemaphasiwedi lalabelwanako noma tikhiye te-API, bese uyeka kufinyelela noma nini kusetingeni ze-B1 Admin."
 ---
 
 # Ema-App Lahlanganisiwe & OAuth
 
 <div class="article-intro">
 
-I-B1 API isekela i-OAuth 2.0 kuze i-app yelucezu lwesitsatfu icele umphatsi ngamunye welibandla imvumo yekufinyelela kudatha yakhe — ngaphandle kwekutsi libandla life yabelane ngephasiwedi noma sikhiya se-API. **I-Connected App** ngu-token we-OAuth lovunyiwe ngumphatsi welibandla; kususa lelo tokheni kuvimbela kufinyelela kwe-app yelucezu lwesitsatfu ngekuchofota kanye. Sebentisa lendlela ye-connectors le-SaaS letisebenta emabandla lamanyenti. Ku-integration yelibandla linye, khetsa [Tikhiya te-API](./api-keys).
+I-B1 API isekela i-OAuth 2.0 kuze i-app yelucezu lwesitsatfu icele umphatsi ngamunye welibandla imvumo yekufinyelela kudatha yakhe — ngaphandle kwekutsi libandla life yabelane ngephasiwedi noma sikhiya se-API. **I-Connected App** ngu-token we-OAuth lovunyiwe ngumphatsi welibandla; kususa lelo tokheni kuvimbela kufinyelela kwe-app yelucezu lwesitsatfu ngekuchofota kanye. Sebentisa lendlela ye-connectors le-SaaS letisebenta emabandla lamanyenti. Ku-integration yelibandla linye, khetsa [Tikhiya te-API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ I-B1 API isekela i-OAuth 2.0 kuze i-app yelucezu lwesitsatfu icele umphatsi ngam
 | **Connected App** | Umbhangqwano lotsite we `(client, umphatsi welibandla)` lapho umphatsi anike client leyo imvumo. Yonkhe i-Connected App isekelwe yi-token ye-refresh ye-OAuth. |
 | **Access token** | I-JWT lephila sikhatsi lesifisha (~emalanga lasi-7) lesetjentiswa yi-client kutingcelo te-API. Umumo ufana newe-JWT yemsebentisi — `Authorization: Bearer <jwt>`. |
 | **Refresh token** | Sitringi lesingacaci lesiphila sikhatsi lesidze (~emalanga langu-90) lesetjentiswa yi-client kutakha ema-access token lamasha. |
-| **Scope** | Iyancisha loko i-access token ingakwenta — buka [luhla lwema-scope](./api-keys#scopes). |
+| **Scope** | Iyancisha loko i-access token ingakwenta — buka [luhla lwema-scope](./api-keys.md#scopes). |
 
 ## Tinchubo Tekunika
 
@@ -156,7 +157,7 @@ Luhla lucedza ema-token lasavele evele kuphela.
 
 ## Ema-Scope Nekuvuma
 
-Tona letiring lete-scope yiluhla lolufanako [nalelu lwetikhiya te-API](./api-keys#scopes). Tindlela letisebenta kahle kuma-client:
+Tona letiring lete-scope yiluhla lolufanako [nalelu lwetikhiya te-API](./api-keys.md#scopes). Tindlela letisebenta kahle kuma-client:
 
 - **Cela ema-scope lancane kakhulu lasebentako.** Emabandla ayabona nawucela `donations:write` kepha udzinga kufundza bantfu kuphela.
 - **Sebentisa i-refresh token kanye nema-access token laphila sikhatsi lesifisha.** Ema-access token laphila sikhatsi lesidze anzima kususa ngekushesha.
@@ -175,4 +176,4 @@ Ema-OAuth client (ema-app etitsatfu ngokwawo) kwamanjena abhaliswa jikelele ngum
 
 ## Kusekelwa Yi-SDK
 
-Liphakheji le-`@churchapps/integration-sdk` lisonga nchubo yonkhe ye-OAuth ngeti-helper letikhitiwe — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Buka i-README yeliphakheji kanye [ne-Webhooks](./webhooks#sdk-support) ngesibonelo lesigcwele.
+Liphakheji le-`@churchapps/integration-sdk` lisonga nchubo yonkhe ye-OAuth ngeti-helper letikhitiwe — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Buka i-README yeliphakheji kanye [ne-Webhooks](./webhooks.md#sdk-support) ngesibonelo lesigcwele.

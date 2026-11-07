@@ -1,5 +1,6 @@
 ---
 title: "Clearstream"
+description: "Connect Clearstream SMS to B1 Admin through Zapier: send texts on new gifts or form submissions, and pull incoming replies back in as people."
 ---
 
 # Clearstream
@@ -87,7 +88,7 @@ Turn the Zap on. B1 registers the donation webhook on activation; you'll see `Za
 
 ## See Also
 
-- [Text In Church](./text-in-church) — alternative SMS platform, similar wiring shape
-- [Mobile Message](./mobile-message) — for churches outside the US
-- [Zapier (overview)](../zapier) — B1 side of every Zapier recipe
+- [Text In Church](./text-in-church.md) — alternative SMS platform, similar wiring shape
+- [Mobile Message](./mobile-message.md) — for churches outside the US
+- [Zapier (overview)](../zapier.md) — B1 side of every Zapier recipe
 - [Clearstream API docs](https://api-docs.clearstream.io/) — for custom integrations beyond the Zapier app

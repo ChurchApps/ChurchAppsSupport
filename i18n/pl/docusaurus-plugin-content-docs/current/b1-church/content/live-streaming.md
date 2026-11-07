@@ -1,5 +1,7 @@
 ---
-title: "Transmisja na żywo"
+title: "Oglądanie transmisji na żywo w B1.church"
+sidebar_label: "Transmisja na żywo"
+description: "Oglądaj transmisje na żywo z nabożeństw swojego kościoła na stronie Transmisja w B1.church i dołączaj do czatu, bez konieczności logowania."
 ---
 
 # Transmisja na żywo

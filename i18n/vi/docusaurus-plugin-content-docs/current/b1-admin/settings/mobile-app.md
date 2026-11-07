@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt ứng dụng di động"
+description: "Cấu hình các tab điều hướng, ô trên màn hình Trang chủ, lời nhắc đăng nhập và cài đặt quyền riêng tư danh bạ thành viên cho ứng dụng B1.church trong B1 Admin."
 ---
 
 # Cài đặt ứng dụng di động

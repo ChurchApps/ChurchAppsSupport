@@ -1,5 +1,6 @@
 ---
 title: "Despliegue de la API"
+description: "Despliegue la API de ChurchApps en AWS Lambda con Serverless, incluidas las compilaciones, los flujos de trabajo de demo y producción, las migraciones de base de datos y la configuración de SSM."
 ---
 
 # Despliegue de la API
@@ -13,7 +14,7 @@ Las APIs de ChurchApps se despliegan como funciones de AWS Lambda usando Serverl
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Configura la API localmente; consulta [Configuración local de la API](../api/local-setup)
+- Configura la API localmente; consulta [Configuración local de la API](../api/local-setup.md)
 - Configura tus credenciales de AWS en tu equipo
 - Asegúrate de tener acceso a la cuenta de AWS de destino
 
@@ -47,7 +48,7 @@ En la práctica, la API se despliega mediante GitHub Actions: **Deploy Demo** se
 
 ## Migraciones de base de datos
 
-**Deploy Prod** aplica las migraciones de base de datos pendientes como parte del despliegue. Las bases de datos de producción solo aceptan conexiones desde dentro de la VPC, así que justo después de `serverless deploy` el flujo de trabajo invoca la función Lambda `migrate` (`api-Prod-migrate`), que ejecuta las migraciones pendientes de cada módulo y devuelve `{ ok, environment, modules }`. Si algún módulo falla o es rechazado (por ejemplo, una base de datos sin historial de migraciones), el trabajo falla para que el esquema nunca quede por detrás del código. **Rollback Prod** solo revierte el código de Lambda; las migraciones permanecen aplicadas, así que mantenlas aditivas. Consulta [Administración del servidor: migraciones de base de datos](../server-admin#database-migrations) para revisar el estado o ejecutar migraciones manualmente.
+**Deploy Prod** aplica las migraciones de base de datos pendientes como parte del despliegue. Las bases de datos de producción solo aceptan conexiones desde dentro de la VPC, así que justo después de `serverless deploy` el flujo de trabajo invoca la función Lambda `migrate` (`api-Prod-migrate`), que ejecuta las migraciones pendientes de cada módulo y devuelve `{ ok, environment, modules }`. Si algún módulo falla o es rechazado (por ejemplo, una base de datos sin historial de migraciones), el trabajo falla para que el esquema nunca quede por detrás del código. **Rollback Prod** solo revierte el código de Lambda; las migraciones permanecen aplicadas, así que mantenlas aditivas. Consulta [Administración del servidor: migraciones de base de datos](../server-admin.md#database-migrations) para revisar el estado o ejecutar migraciones manualmente.
 
 ## Qué se crea
 
@@ -75,6 +76,6 @@ Cada merge a `main` se despliega primero en el entorno de demostración. Verific
 
 ## Artículos relacionados
 
-- **[Configuración local de la API](../api/local-setup)**: cómo configurar la API para desarrollo
-- **[Estructura de módulos](../api/module-structure)**: cómo funciona la arquitectura de funciones Lambda
-- **[Despliegue de aplicaciones web](./web-apps)**: cómo desplegar las aplicaciones frontend
+- **[Configuración local de la API](../api/local-setup.md)**: cómo configurar la API para desarrollo
+- **[Estructura de módulos](../api/module-structure.md)**: cómo funciona la arquitectura de funciones Lambda
+- **[Despliegue de aplicaciones web](./web-apps.md)**: cómo desplegar las aplicaciones frontend

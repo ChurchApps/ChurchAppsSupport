@@ -1,5 +1,6 @@
 ---
 title: "Documentação para Desenvolvedores"
+description: "Guia dos documentos para desenvolvedores da ChurchApps: configuração local, APIs, apps web, bibliotecas compartilhadas, builds mobile e implantação."
 ---
 
 # Documentação para Desenvolvedores
@@ -24,16 +25,16 @@ Principais características:
 
 ## O que esta seção abrange
 
-- **[Configuração](setup/)** -- Ambiente local de desenvolvimento, pré-requisitos e configuração
-  - [Pré-requisitos](setup/prerequisites) -- Ferramentas e softwares necessários
-  - [Visão geral do projeto](setup/project-overview) -- Todos os projetos de relance
-  - [Variáveis de ambiente](setup/environment-variables) -- Configurando os arquivos `.env`
-- **[API](api/)** -- Configuração local da API principal, inicialização do banco de dados e estrutura dos módulos
-- **[Aplicativos web](web-apps/)** -- Executando B1Admin, B1App e LessonsApp localmente
-- **[Aplicativos móveis](mobile/)** -- Compilando o B1Mobile e outros apps Expo
-- **[Bibliotecas compartilhadas](shared-libraries/)** -- Trabalhando com Helpers, ApiHelper e AppHelper
-- **[Implantação](deployment/)** -- Implantando APIs, aplicativos web e aplicativos móveis
-- **[Provedor de conteúdo do FreePlay](freeplay-content-provider)** -- Integrando sua biblioteca de lições ao FreePlay
+- **[Configuração](./setup/index.md)** -- Ambiente local de desenvolvimento, pré-requisitos e configuração
+  - [Pré-requisitos](./setup/prerequisites.md) -- Ferramentas e softwares necessários
+  - [Visão geral do projeto](./setup/project-overview.md) -- Todos os projetos de relance
+  - [Variáveis de ambiente](./setup/environment-variables.md) -- Configurando os arquivos `.env`
+- **[API](./api/index.md)** -- Configuração local da API principal, inicialização do banco de dados e estrutura dos módulos
+- **[Aplicativos web](./web-apps/index.md)** -- Executando B1Admin, B1App e LessonsApp localmente
+- **[Aplicativos móveis](./mobile/index.md)** -- Compilando o B1Mobile e outros apps Expo
+- **[Bibliotecas compartilhadas](./shared-libraries/index.md)** -- Trabalhando com Helpers, ApiHelper e AppHelper
+- **[Implantação](./deployment/index.md)** -- Implantando APIs, aplicativos web e aplicativos móveis
+- **[Provedor de conteúdo do FreePlay](./freeplay-content-provider.md)** -- Integrando sua biblioteca de lições ao FreePlay
 
 ## Comunidade e recursos
 

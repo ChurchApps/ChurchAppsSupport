@@ -1,5 +1,6 @@
 ---
 title: "Tổng quan về B1 Church Checkin"
+description: "Thiết lập ứng dụng kiosk B1 Church Checkin trên máy iPad hoặc Android để gia đình tự điểm danh, gán trẻ vào nhóm và in nhãn cùng phiếu đón."
 ---
 
 # Tổng quan về B1 Church Checkin
@@ -24,7 +25,7 @@ B1 Church Checkin là ứng dụng kiosk tự phục vụ dành cho iPad và má
 - **Xem lại thông tin gia đình** -- Xem tất cả thành viên trong gia đình kèm ảnh và nhóm hiện tại của họ chỉ trong một lần nhìn.
 - **Phân công nhóm** -- Gán từng thành viên trong gia đình vào đúng lớp hoặc nhóm cho giờ lễ đã chọn.
 - **Check-in cho khách** -- Thêm khách vào gia đình của bạn ngay tại chỗ, chỉ cần họ và tên.
-- **Đăng ký khách bằng mã QR** -- Hiển thị mã QR để khách có thể quét và [tự đăng ký](../b1-church/checkin/guest-registration) trên điện thoại của họ trước khi check-in, hoặc để họ chạm vào **Đăng ký tại đây** nhằm điền cùng biểu mẫu trên kiosk.
+- **Đăng ký khách bằng mã QR** -- Hiển thị mã QR để khách có thể quét và [tự đăng ký](../b1-church/checkin/guest-registration.md) trên điện thoại của họ trước khi check-in, hoặc để họ chạm vào **Đăng ký tại đây** nhằm điền cùng biểu mẫu trên kiosk.
 - **In nhãn** -- In nhãn tên cho trẻ em và phiếu đón con cho phụ huynh, kèm mã bảo mật riêng.
 - **Hỗ trợ máy in mạng** -- Tìm và cấu hình máy in mạng trực tiếp từ ứng dụng.
 - **Tự động đăng nhập** -- Sau lần đăng nhập đầu tiên, ứng dụng sẽ ghi nhớ thông tin đăng nhập và mở thẳng màn hình dịch vụ trong những lần khởi động sau.
@@ -33,8 +34,8 @@ B1 Church Checkin là ứng dụng kiosk tự phục vụ dành cho iPad và má
 
 ## Các phần tài liệu
 
-- **[Bắt đầu](./getting-started/)** -- Cài đặt ứng dụng, đăng nhập và thiết lập máy in.
-- **[Quy trình Check-in](./check-in/)** -- Toàn bộ quy trình check-in, từ chọn buổi lễ đến in nhãn.
+- **[Bắt đầu](./getting-started/index.md)** -- Cài đặt ứng dụng, đăng nhập và thiết lập máy in.
+- **[Quy trình Check-in](./check-in/index.md)** -- Toàn bộ quy trình check-in, từ chọn buổi lễ đến in nhãn.
 
 :::tip
 B1 Church Checkin hoạt động tốt nhất trên máy tính bảng 10 inch (iPad hoặc Android) đặt theo chiều ngang, nơi các gia đình có thể dễ dàng thao tác. Tải ứng dụng từ [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) hoặc [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

@@ -1,5 +1,6 @@
 ---
 title: "Paid Registrations"
+description: "B1 Admin で有料イベント登録を設定します。料金付きの参加者区分、追加オプション、割引コード、キャンセル待ち、献金プロバイダーを通じた支払い受付について説明します。"
 ---
 
 # Paid Registrations
@@ -17,7 +18,7 @@ title: "Paid Registrations"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- まず、イベントで登録を有効にしてください。詳しくは [カレンダーの作成](creating-calendars#enabling-event-registration) を参照してください。
+- まず、イベントで登録を有効にしてください。詳しくは [カレンダーの作成](./creating-calendars.md#enabling-event-registration) を参照してください。
 - オンラインで支払いを受け付けるには、教会で[オンライン献金の設定](../donations/online-giving-setup.md)（Stripe、PayPal、またはKingdom Funding）を済ませておく必要があります。無料のイベントであれば献金の設定は不要です。オンライン献金が未設定でも有料の登録は利用できますが、参加者は教会に直接支払うことになります。詳しくは [オンライン献金を設定していない教会](#churches-without-online-giving) を参照してください。
 
 </div>
@@ -66,7 +67,7 @@ title: "Paid Registrations"
 Registration Settings カードで **Enable Waitlist** をオンにします。イベントが定員に達すると、次のように動作します。
 
 - 新しい登録者は、登録を断られるのではなく、待機リストの枠を提示されます。通常どおり申し込みを完了できます（待機中は支払い手続きがスキップされます）。
-- 誰かがキャンセルすると、待機リストで最も古い登録が**自動的に繰り上げ**られ、空きが出たことを知らせるメールが届きます。未払いの残高がある場合、メールには教会のB1サイトの [My Registrations](../../b1-church/events/my-registrations) へのリンクが含まれており、そこから支払いを完了できます。
+- 誰かがキャンセルすると、待機リストで最も古い登録が**自動的に繰り上げ**られ、空きが出たことを知らせるメールが届きます。未払いの残高がある場合、メールには教会のB1サイトの [My Registrations](../../b1-church/events/my-registrations.md) へのリンクが含まれており、そこから支払いを完了できます。
 - 待機中の行にある **Promote** 操作を使うと、いつでも手動で繰り上げができます。イベントの定員を増やした後などに便利です。
 
 :::info
@@ -79,7 +80,7 @@ Registration Settings カードで **Enable Waitlist** をオンにします。�
 
 - 行の詳細アイコンをクリックすると、**Registration Details** ダイアログが開きます。ここには、メンバー、追加オプション、支払済み額と残高、そしてすべての支払い（金額、支払い方法、日付）を一覧できる **Payments** の表が表示されます。
 - **Export CSV** を使うと、名簿全体をダウンロードできます。CSVには、メンバー、参加者タイプ、追加オプション、支払済み/合計/残高、ステータス、そして登録質問ごとの列が含まれます。
-- **Add Attendee** を使うと、教会内の任意の人について、オフラインまたは電話での申し込みを記録できます。その人物を選び、有料イベントの場合は参加者タイプも選択します。この操作ではカードへの請求は行われません。有料の登録は、支払うべき全額が残高として記録された**保留中（pending）**の状態で保存されます。教会がオンライン献金を利用している場合、本人は [My Registrations](../../b1-church/events/my-registrations) から支払うことができます。そうでない場合は、直接受け取ってください。参加者を追加するには、Registrations の編集権限が必要です。
+- **Add Attendee** を使うと、教会内の任意の人について、オフラインまたは電話での申し込みを記録できます。その人物を選び、有料イベントの場合は参加者タイプも選択します。この操作ではカードへの請求は行われません。有料の登録は、支払うべき全額が残高として記録された**保留中（pending）**の状態で保存されます。教会がオンライン献金を利用している場合、本人は [My Registrations](../../b1-church/events/my-registrations.md) から支払うことができます。そうでない場合は、直接受け取ってください。参加者を追加するには、Registrations の編集権限が必要です。
 
 :::info
 返金は B1 内では処理されません。キャンセルされた有料の登録を返金する必要がある場合は、献金プロバイダーの管理画面（例：Stripe）から返金を行ってください。
@@ -94,12 +95,12 @@ Registration Settings カードで **Enable Waitlist** をオンにします。�
 教会で献金プロバイダーを設定していない場合でも、有料のイベントで登録を受け付けることができます。支払い画面では、オンライン決済が利用できないこと、また教会に直接支払えることが登録者に表示されます。**Register and Pay Later** ボタンを押すと、登録が保存されます。登録は、支払うべき全額が残高として記録された**保留中（pending）**の状態で保存され、名簿には残高の警告付きで表示されます。お金の受け取りは、教会の通常の方法で行ってください。
 
 :::info
-B1には、オフラインの支払いを受領済みとして記録する機能はありません。残高は、受け取った後も名簿と登録者の [My Registrations](../../b1-church/events/my-registrations) カードに残るため、誰が支払い済みかを独自に記録しておいてください。
+B1には、オフラインの支払いを受領済みとして記録する機能はありません。残高は、受け取った後も名簿と登録者の [My Registrations](../../b1-church/events/my-registrations.md) カードに残るため、誰が支払い済みかを独自に記録しておいてください。
 :::
 
 ## 関連記事
 
-- [カレンダーの作成](creating-calendars#enabling-event-registration) — 登録と基本設定の有効化
+- [カレンダーの作成](./creating-calendars.md#enabling-event-registration) — 登録と基本設定の有効化
 - [オンライン献金の設定](../donations/online-giving-setup.md) — 支払い時に使用する決済ゲートウェイの設定
-- [イベントへの登録](../../b1-church/events/registering) — メンバーが申し込み時に表示される内容
-- [My Registrations](../../b1-church/events/my-registrations) — メンバーが残高を支払い、登録を編集する方法
+- [イベントへの登録](../../b1-church/events/registering.md) — メンバーが申し込み時に表示される内容
+- [My Registrations](../../b1-church/events/my-registrations.md) — メンバーが残高を支払い、登録を編集する方法

@@ -1,5 +1,7 @@
 ---
-title: "小组详情"
+title: "B1 Mobile 应用中的小组详情"
+sidebar_label: "小组详情"
+description: "了解 B1 Mobile 中小组详情页显示的内容，包括小组信息、帖子和成员，以及如何从小组页面打开它。"
 ---
 
 # 小组详情
@@ -13,7 +15,7 @@ title: "小组详情"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 打开[小组](./index.md)界面
 
 </div>
@@ -46,5 +48,5 @@ title: "小组详情"
 
 ## 相关文章
 
-- [小组时间线](./group-timeline) -- 了解跨小组的统一动态流
+- [小组时间线](./group-timeline.md) -- 了解跨小组的统一动态流
 - [私信](../community/messaging.md) -- 向小组成员发送私信

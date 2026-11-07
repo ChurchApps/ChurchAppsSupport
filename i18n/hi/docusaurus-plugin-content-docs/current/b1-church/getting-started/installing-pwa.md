@@ -1,5 +1,6 @@
 ---
 title: "ऐप के रूप में Install करना (PWA)"
+description: "सदस्य पोर्टल से B1.church को iPhone या Android पर ऐप के रूप में इंस्टॉल करें, Safari या Chrome में इसका आइकन अपनी होम स्क्रीन पर जोड़ें।"
 ---
 
 # ऐप के रूप में Install करना (PWA)

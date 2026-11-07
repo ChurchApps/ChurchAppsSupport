@@ -1,5 +1,7 @@
 ---
-title: "Živā transliacija"
+title: "Tiesioginių transliacijų žiūrėjimas B1.church"
+sidebar_label: "Živā transliacija"
+description: "Žiūrėkite bažnyčios tiesiogines pamaldas B1.church Transliacijos puslapyje ir prisijunkite prie pokalbio kartu su transliacija, prisijungti nereikia."
 ---
 
 # Živā transliacija

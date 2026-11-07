@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "A B1App tagi webalkalmazás helyi beállítása Next.js 22+ segítségével, API-végpontjainak konfigurálása .env-ben, a fejlesztői szerver futtatása a 3301-es porton."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App ist die öffentlich zugängliche Anwendung für Gemeindemitglieder, die mi
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js 22+** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites)
-- Konfigurieren Sie Ihr API-Ziel (Demo oder lokal) -- siehe [Umgebungsvariablen](../setup/environment-variables)
+- Installieren Sie **Node.js 22+** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites.md)
+- Konfigurieren Sie Ihr API-Ziel (Demo oder lokal) -- siehe [Umgebungsvariablen](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Produktionsbuilds werden auf **S3 + CloudFront** bereitgestellt:
 3. Eine CloudFront-Invalidierung wird ausgelöst, damit die neue Version ausgeliefert wird
 
 :::tip
-Ausführliche Bereitstellungsanweisungen finden Sie im Leitfaden [Webanwendungs-Bereitstellung](../deployment/web-apps).
+Ausführliche Bereitstellungsanweisungen finden Sie im Leitfaden [Webanwendungs-Bereitstellung](../deployment/web-apps.md).
 :::

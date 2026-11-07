@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje programov"
+description: "Ustvari in uredi programe kurikula v Lessons.church, nastavi slug in sličice, razvrsti študije v kategorije ter dodaj vire na ravni programa."
 ---
 
 # Upravljanje programov

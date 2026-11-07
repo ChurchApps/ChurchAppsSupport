@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "اربط تسجيلات متطوعي VOMO وتسجيلات الأكشاك بأشخاص ومجموعات B1 Admin عبر Zapier، بما في ذلك نطاقات مفاتيح API وخطوات الإعداد."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO منصة لإشراك المتطوعين، إذ يسجّل الأشخاص �
 
 ### إرسال رسالة نصية "شكرًا على التسجيل" عبر SMS
 
-اربط VOMO Participation بـ Clearstream Send Text أو Text In Church Send Message في الـ Zap نفسه. ولكلٍّ منهما إجراءات Zapier مخصصة، راجع [Clearstream](./clearstream) و[Text In Church](./text-in-church).
+اربط VOMO Participation بـ Clearstream Send Text أو Text In Church Send Message في الـ Zap نفسه. ولكلٍّ منهما إجراءات Zapier مخصصة، راجع [Clearstream](./clearstream.md) و[Text In Church](./text-in-church.md).
 
 ### رصد التوقف عن المشاركة
 
@@ -91,6 +92,6 @@ VOMO منصة لإشراك المتطوعين، إذ يسجّل الأشخاص �
 
 ## انظر أيضًا
 
-- [Zapier (نظرة عامة)](../zapier): الجانب الخاص بـ B1 في كل وصفات Zapier
-- [Clearstream](./clearstream) و[Text In Church](./text-in-church): لربط تسجيلات المتطوعين بتأكيدات SMS
+- [Zapier (نظرة عامة)](../zapier.md): الجانب الخاص بـ B1 في كل وصفات Zapier
+- [Clearstream](./clearstream.md) و[Text In Church](./text-in-church.md): لربط تسجيلات المتطوعين بتأكيدات SMS
 - [Webhooks (المرجع للمطورين)](/docs/developer/api/webhooks): الأحداث التي يمكن لـ VOMO تشغيلها

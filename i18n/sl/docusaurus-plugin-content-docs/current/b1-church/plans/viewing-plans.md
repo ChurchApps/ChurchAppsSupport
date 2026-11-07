@@ -1,5 +1,7 @@
 ---
-title: "Ogled načrtov"
+title: "Vaši servisni načrti v portalu za člane B1.church"
+sidebar_label: "Ogled načrtov"
+description: "Preverite svoje dodelitve servisnih načrtov na B1.church, sprejmite ali zavrnite prošnje, nastavite datume nedosegljivosti in si oglejte pretekla služenja."
 ---
 
 # Ogled načrtov

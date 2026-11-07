@@ -1,5 +1,6 @@
 ---
 title: "Tracking Attendance"
+description: "Review attendance trends, filter reports by campus, service, or group, and export group attendance from the Attendance page in B1 Admin."
 ---
 
 # Tracking Attendance

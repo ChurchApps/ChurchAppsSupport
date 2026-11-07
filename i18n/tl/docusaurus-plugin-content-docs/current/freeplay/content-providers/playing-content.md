@@ -1,5 +1,6 @@
 ---
 title: "Pag-play ng Content"
+description: "Kontrolin ang FreePlay gamit ang TV remote: i-pause, laktawan ang slides at video, pumunta sa anumang mensahe, at lumabas sa player."
 ---
 
 # Pag-play ng Content
@@ -13,13 +14,13 @@ Pinupuno ng FreePlay player ang screen at ginawa ito para sa TV remote. Nagpe-pl
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Pumili ng ipe-play. Tingnan ang [Browsing and Downloading Content](./browsing-content), [Plan Mode](../plan-mode/), o [Announcements](./announcements)
+- Pumili ng ipe-play. Tingnan ang [Browsing and Downloading Content](./browsing-content.md), [Plan Mode](../plan-mode/index.md), o [Announcements](./announcements.md)
 - Pindutin ang **Simulan** para buksan ang player
 
 </div>
 
 :::info
-Ang mga screen na naka-pair sa kalendaryo ay gumagamit ng hiwalay na scheduled player na may bahagyang ibang kontrol. Tingnan ang [Scheduled Playback on the TV](../scheduled-mode/scheduled-playback).
+Ang mga screen na naka-pair sa kalendaryo ay gumagamit ng hiwalay na scheduled player na may bahagyang ibang kontrol. Tingnan ang [Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Mga Kontrol ng Player
@@ -57,7 +58,7 @@ Pindutin ang **Pataas** habang nagpe-play para buksan ang **Pumili ng Message**.
 Pindutin ang **Down** o **Bumalik** sa remote mo para umalis sa player. Nakadepende kung saan ka mapupunta sa kung ano ang pinapatugtog mo:
 
 - **Content ng provider** -- Bumalik sa content browser
-- **Isang plan** -- Bumalik sa screen ng plan download. Tingnan ang [Plan Mode](../plan-mode/)
+- **Isang plan** -- Bumalik sa screen ng plan download. Tingnan ang [Plan Mode](../plan-mode/index.md)
 - **Isang download** -- Bumalik sa screen na **Mga Download**
 
 :::info
@@ -66,5 +67,5 @@ Nananatiling gising ang screen habang bukas ang player, kaya hindi matutulog ang
 
 ## Mga Kaugnay na Artikulo
 
-- **[Browsing and Downloading Content](./browsing-content)** -- Maghanap ng content at i-download ito para sa offline na pag-play
-- **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback)** -- Mga remote control para sa mga screen na sumusunod sa kalendaryo
+- **[Browsing and Downloading Content](./browsing-content.md)** -- Maghanap ng content at i-download ito para sa offline na pag-play
+- **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md)** -- Mga remote control para sa mga screen na sumusunod sa kalendaryo

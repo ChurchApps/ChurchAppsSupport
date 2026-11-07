@@ -1,5 +1,7 @@
 ---
-title: "Přihlášení"
+title: "Přihlášení do B1 Church Checkin"
+sidebar_label: "Přihlášení"
+description: "Přihlaste se do kiosku B1 Church Checkin, vyberte církev a pochopte automatické přihlášení, nastavení správce a odhlášení na check-in tabletu."
 ---
 
 # Přihlášení
@@ -63,7 +65,7 @@ Nastavení správce jsou záměrně skrytá, aby členové sboru používající
 2. Pokud je nastaven PIN kiosku, zadejte jej, když budete vyzváni.
 3. Otevře se obrazovka **Nastavení správce** s těmito možnostmi:
    - **Změnit bohoslužbu** — přepnout vybraný čas bohoslužby
-   - **Změnit tiskárnu** — otevřít [nastavení tiskárny](./printer-setup), kde vyhledáte a vyberete tiskárnu
+   - **Změnit tiskárnu** — otevřít [nastavení tiskárny](./printer-setup.md), kde vyhledáte a vyberete tiskárnu
    - **Nastavit/změnit PIN** — nastavit nebo upravit PIN kiosku, který chrání přístup správce
    - **Odhlásit se** — odhlásit se a vrátit na přihlašovací obrazovku
 
@@ -73,4 +75,4 @@ Odhlášení vymaže všechny uložené přihlašovací údaje a výběr sboru. 
 
 ## Další kroky
 
-Po přihlášení můžete [nastavit tiskárnu](./printer-setup) nebo přejít přímo na [postup odbavování](../check-in/).
+Po přihlášení můžete [nastavit tiskárnu](./printer-setup.md) nebo přejít přímo na [postup odbavování](../check-in/index.md).

@@ -1,5 +1,6 @@
 ---
 title: "Configuration locale de l'API"
+description: "Installez l’API ChurchApps en local : clonez le dépôt, configurez six bases MySQL, initialisez le schéma et lancez le serveur de dev à chaud."
 ---
 
 # Configuration locale de l'API
@@ -13,9 +14,9 @@ Ce guide vous accompagne dans la configuration de l'API ChurchApps pour le déve
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Installez **Node.js 24+**, **Git** et **MySQL 8.0+** -- voir [Prérequis](../setup/prerequisites)
+- Installez **Node.js 24+**, **Git** et **MySQL 8.0+** -- voir [Prérequis](../setup/prerequisites.md)
 - Créez un utilisateur MySQL disposant des privilèges de création de bases de données
-- Consultez la référence des [variables d'environnement](../setup/environment-variables) pour la configuration de l'API
+- Consultez la référence des [variables d'environnement](../setup/environment-variables.md) pour la configuration de l'API
 
 </div>
 
@@ -82,7 +83,7 @@ L'API démarre avec rechargement à chaud à l'adresse [http://localhost:8084](h
 
 ## Déploiement
 
-L'environnement de préproduction a été retiré. L'API se déploie dans l'environnement de démonstration à chaque envoi vers `main`, et en production par le flux de travail manuel **Deploy Prod**, qui applique aussi les migrations de base de données en attente. Voir [Déploiement de l'API](../deployment/apis) pour plus de détails.
+L'environnement de préproduction a été retiré. L'API se déploie dans l'environnement de démonstration à chaque envoi vers `main`, et en production par le flux de travail manuel **Deploy Prod**, qui applique aussi les migrations de base de données en attente. Voir [Déploiement de l'API](../deployment/apis.md) pour plus de détails.
 
 ## Développement local des bibliothèques
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Cela vous permet de tester les modifications de bibliothèque avec l'API sans publier sur npm. Voir [Bibliothèques partagées](../shared-libraries/#local-development-against-a-consuming-app) pour plus de détails -- et ne committez jamais la résolution du portail que le lien écrit dans `package.json`.
+Cela vous permet de tester les modifications de bibliothèque avec l'API sans publier sur npm. Voir [Bibliothèques partagées](../shared-libraries/index.md#local-development-against-a-consuming-app) pour plus de détails -- et ne committez jamais la résolution du portail que le lien écrit dans `package.json`.
 
 ## Articles connexes
 
-- **[Base de données](./database)** -- Comprendre l'architecture d'une base par module
-- **[Structure des modules](./module-structure)** -- Comment les contrôleurs, les référentiels et les modèles sont organisés
-- **[Bibliothèques partagées](../shared-libraries/)** -- Travailler avec `@churchapps/helpers` et `@churchapps/apihelper`
+- **[Base de données](./database.md)** -- Comprendre l'architecture d'une base par module
+- **[Structure des modules](./module-structure.md)** -- Comment les contrôleurs, les référentiels et les modèles sont organisés
+- **[Bibliothèques partagées](../shared-libraries/index.md)** -- Travailler avec `@churchapps/helpers` et `@churchapps/apihelper`

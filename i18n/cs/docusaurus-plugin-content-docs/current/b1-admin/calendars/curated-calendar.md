@@ -1,5 +1,6 @@
 ---
 title: "Kurátorský kalendář"
+description: "Nastavte v B1 Admin kurátorovaný kalendář sboru, který čerpá akce z více skupin, a sdílejte ho na webu, přes odběr ICS nebo ke stažení."
 ---
 
 # Kurátorský kalendář
@@ -15,7 +16,7 @@ Kurátorský kalendář spojuje události z více skupin do jednoho společného
 
 - Nastavte [skupiny](../groups/creating-groups.md), jejichž události chcete zahrnout
 - Ujistěte se, že vedoucí skupin přidali události do svých skupin
-- Seznamte se se základy [vytváření kalendářů](creating-calendars)
+- Seznamte se se základy [vytváření kalendářů](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Na kurátorském kalendáři na vašem webu a v jeho odběru ICS se zobrazují p
 
 ## Další kroky
 
-- [Vytváření kalendářů](creating-calendars) -- Naučte se základy vytváření kalendářů
-- [Přehled kalendářů](./) -- Vraťte se na přehled kalendářů
+- [Vytváření kalendářů](./creating-calendars.md) -- Naučte se základy vytváření kalendářů
+- [Přehled kalendářů](./index.md) -- Vraťte se na přehled kalendářů

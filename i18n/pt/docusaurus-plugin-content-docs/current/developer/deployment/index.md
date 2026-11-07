@@ -1,5 +1,6 @@
 ---
 title: "Implantação"
+description: "Veja onde cada projeto ChurchApps é implantado: APIs no AWS Lambda, apps web no S3, builds móveis com Expo e B1 Admin no Railway ou Docker."
 ---
 
 # Implantação
@@ -14,12 +15,12 @@ O ChurchApps usa estratégias de implantação diferentes conforme o tipo de pro
 
 | Tipo de projeto | Destino da implantação | Ferramentas |
 |-----------------|------------------------|-------------|
-| [APIs](./apis) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
-| [Aplicativos web](./web-apps) | S3 + CloudFront | Build estático, sincronização com o S3, invalidação do CloudFront |
-| [Aplicativos móveis](./mobile) | Lojas de aplicativos | Expo EAS Build + atualizações OTA |
-| [Auto-hospedagem (Railway)](./railway-template) | Railway | Modelo de um clique: MySQL + Api + B1Admin + B1App |
-| [Auto-hospedagem (Docker)](./docker) | Qualquer host Docker | Instalador de uma linha; imagens prontas do GHCR + Caddy, atualização/backup/rollback com `./deploy/b1` |
-| [Proxy de domínio personalizado com Caddy](./caddy-proxy) | EC2 Windows (Elastic IP `3.23.251.61`) | Caddyfile estático + serviço WinSW + sincronização agendada do mapa |
+| [APIs](./apis.md) | AWS Lambda | Serverless Framework v3 (runtime Node.js 24.x) |
+| [Aplicativos web](./web-apps.md) | S3 + CloudFront | Build estático, sincronização com o S3, invalidação do CloudFront |
+| [Aplicativos móveis](./mobile.md) | Lojas de aplicativos | Expo EAS Build + atualizações OTA |
+| [Auto-hospedagem (Railway)](./railway-template.md) | Railway | Modelo de um clique: MySQL + Api + B1Admin + B1App |
+| [Auto-hospedagem (Docker)](./docker.md) | Qualquer host Docker | Instalador de uma linha; imagens prontas do GHCR + Caddy, atualização/backup/rollback com `./deploy/b1` |
+| [Proxy de domínio personalizado com Caddy](./caddy-proxy.md) | EC2 Windows (Elastic IP `3.23.251.61`) | Caddyfile estático + serviço WinSW + sincronização agendada do mapa |
 | FreeShow | Download direto | Electron Builder (binários multiplataforma) |
 
 ## Ambientes

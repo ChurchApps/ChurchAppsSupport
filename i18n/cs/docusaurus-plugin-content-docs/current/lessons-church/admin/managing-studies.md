@@ -1,5 +1,6 @@
 ---
 title: "Správa studií"
+description: "Vytvářejte, upravujte a kategorizujte studia v programu v administraci Lessons.church a ke každému připojte přehled série nebo šablonu zpravodaje."
 ---
 
 # Správa studií

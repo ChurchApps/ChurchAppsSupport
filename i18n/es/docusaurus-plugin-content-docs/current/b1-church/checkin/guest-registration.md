@@ -1,5 +1,6 @@
 ---
 title: "Registro de invitados"
+description: "Regístrate tú y tu familia como visitantes por primera vez con el formulario QR de B1 Checkin para que los voluntarios puedan registrar tu entrada al llegar."
 ---
 
 # Registro de invitados
@@ -22,7 +23,7 @@ Si visita una iglesia por primera vez, puede registrarse usted y a su familia co
 
 El registro de invitados está diseñado para visitantes que todavía no tienen una cuenta. En el quiosco de registro de entrada de la iglesia, toque **Registrarse como invitado** para mostrar un código QR que enlaza con la página de registro. También puede recibir el enlace de un voluntario o de un recibidor, o encontrarlo en un volante o en el sitio web de la iglesia.
 
-¿No tiene el teléfono a la mano? En la misma ventana del código QR del quiosco, toque **Regístrese aquí** para llenar el formulario en el propio quiosco. Consulte [Registrarse como invitado](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) para ver cómo funciona en el quiosco.
+¿No tiene el teléfono a la mano? En la misma ventana del código QR del quiosco, toque **Regístrese aquí** para llenar el formulario en el propio quiosco. Consulte [Registrarse como invitado](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) para ver cómo funciona en el quiosco.
 
 La página se abre con el título **Registro de invitados**. Si la iglesia agregó una foto de encabezado, aparece en la parte superior de la página; de lo contrario, verá un pequeño ícono.
 
@@ -51,7 +52,7 @@ Su registro crea registros en la base de datos de la iglesia:
 - Se crean **registros de persona** para cada miembro de la familia, con el estado de membresía "Visitante".
 - Los comentarios que ingresó se guardan como una nota en el registro del contacto principal para que el personal de la iglesia los lea.
 - Si la iglesia eligió un grupo para los invitados nuevos, su familia se agrega a él. Además, la iglesia puede registrar su asistencia automáticamente si se registra durante uno de los horarios de servicio programados de ese grupo.
-- Un voluntario o administrador de la iglesia puede registrar ahora la entrada de su familia en el quiosco de [B1 Checkin](../../b1-checkin/check-in/looking-up-members).
+- Un voluntario o administrador de la iglesia puede registrar ahora la entrada de su familia en el quiosco de [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
 Si se registra de nuevo con el mismo nombre y el mismo correo electrónico o teléfono, los registros de la iglesia lo reconocen y reutilizan su perfil existente en lugar de crear un duplicado. Cualquier otra persona se agrega como nueva. Si ya se registró, también puede buscar su nombre o su número de teléfono en el quiosco.
@@ -63,6 +64,6 @@ Si el formulario le pide su correo electrónico, proporcionarlo ayuda a la igles
 
 ## Artículos relacionados
 
-- [Registro de entrada propio](./self-checkin): registre su propia entrada después de registrarse
-- [Agregar invitados (quiosco)](../../b1-checkin/check-in/adding-guests): cómo los voluntarios agregan invitados en el quiosco
-- [Registro de entrada](../../b1-admin/attendance/check-in#guest-registration-via-qr-code): cómo los administradores de la iglesia configuran el registro de invitados por código QR
+- [Registro de entrada propio](./self-checkin.md): registre su propia entrada después de registrarse
+- [Agregar invitados (quiosco)](../../b1-checkin/check-in/adding-guests.md): cómo los voluntarios agregan invitados en el quiosco
+- [Registro de entrada](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code): cómo los administradores de la iglesia configuran el registro de invitados por código QR

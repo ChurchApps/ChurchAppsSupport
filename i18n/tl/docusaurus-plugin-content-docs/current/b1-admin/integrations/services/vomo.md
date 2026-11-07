@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Ikonekta ang VOMO volunteer signup at kiosk check-in sa mga tao at grupo ng B1 Admin gamit ang Zapier, kasama ang API key scope at mga hakbang sa setup."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Kapag ang VOMO project ay nagtapos, manu-manong burahin ang B1 group (o i-pair i
 
 ### Magpadala ng "thanks for signing up" text sa SMS
 
-Chain VOMO Participation → Clearstream Send Text o Text In Church Send Message sa parehong Zap. Pareho ay may first-class Zapier actions — tingnan ang [Clearstream](./clearstream) at [Text In Church](./text-in-church).
+Chain VOMO Participation → Clearstream Send Text o Text In Church Send Message sa parehong Zap. Pareho ay may first-class Zapier actions — tingnan ang [Clearstream](./clearstream.md) at [Text In Church](./text-in-church.md).
 
 ### Detect drop-off
 
@@ -91,6 +92,6 @@ Magpatakbo ng daily Zapier *Schedule* trigger na tumatawag sa Find Organizer sa 
 
 ## Makita Din
 
-- [Zapier (overview)](../zapier) — B1 side ng bawat Zapier recipe
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — i-pair ang volunteer signups na may SMS confirmations
+- [Zapier (overview)](../zapier.md) — B1 side ng bawat Zapier recipe
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — i-pair ang volunteer signups na may SMS confirmations
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang events na maaari nang mag-trigger ng VOMO

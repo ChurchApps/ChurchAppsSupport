@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting on Railway"
+description: "Deploy instans ChurchApps pribadi di Railway sekitar 15 menit, lalu atur email, domain kustom, perutean multi-gereja, persembahan, dan penyimpanan berkas."
 ---
 
 # Self-Hosting on Railway
@@ -195,7 +196,7 @@ Integrasi ini membuka fitur tertentu dan semuanya dapat ditambahkan nanti melalu
 | `VIMEO_TOKEN` | Dukungan khotbah Vimeo |
 | `API_BIBLE_KEY` | Pencarian ayat Alkitab dalam pelajaran dan konten |
 | `YOUVERSION_API_KEY` | Integrasi Alkitab YouVersion |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notifikasi push browser ([buat pasangan kunci VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Notifikasi push browser ([buat pasangan kunci VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Sinkronisasi CRM opsional untuk pendaftaran baru |
 
 ## Pembaruan
@@ -234,9 +235,9 @@ Jika Anda menemukan masalah yang tidak ada dalam daftar ini, buka isu di [github
 
 ## Artikel Terkait
 
-- **[Self-Hosting dengan Docker](./docker)** — Tumpukan yang sama di perangkat keras atau VPS Anda sendiri
-- **[Pengaturan Awal](../../getting-started/initial-setup)** — Langkah pertama setelah gereja Anda dibuat
-- **[Pengaturan Awal Situs Web](../../b1-admin/website/initial-setup)** — Konfigurasi situs publik gereja Anda
-- **[Pengaturan Pemberian](../../b1-admin/donations/online-giving-setup)** — Hubungkan Stripe atau PayPal
-- **[Pengaturan API Lokal](../api/local-setup)** — Menjalankan tumpukan secara lokal untuk pengembangan
-- **[Deployment API (AWS)](./apis)** — Cara SaaS resmi ChurchApps di-deploy
+- **[Self-Hosting dengan Docker](./docker.md)** — Tumpukan yang sama di perangkat keras atau VPS Anda sendiri
+- **[Pengaturan Awal](../../getting-started/initial-setup.md)** — Langkah pertama setelah gereja Anda dibuat
+- **[Pengaturan Awal Situs Web](../../b1-admin/website/initial-setup.md)** — Konfigurasi situs publik gereja Anda
+- **[Pengaturan Pemberian](../../b1-admin/donations/online-giving-setup.md)** — Hubungkan Stripe atau PayPal
+- **[Pengaturan API Lokal](../api/local-setup.md)** — Menjalankan tumpukan secara lokal untuk pengembangan
+- **[Deployment API (AWS)](./apis.md)** — Cara SaaS resmi ChurchApps di-deploy

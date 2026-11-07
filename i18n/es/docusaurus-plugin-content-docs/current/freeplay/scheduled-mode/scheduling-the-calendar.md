@@ -1,5 +1,6 @@
 ---
 title: "Programar el calendario"
+description: "Programa en el Calendario de FreePlay Admin listas, planes o carpetas de proveedor por semana o una vez, con bucles predeterminados de respaldo."
 ---
 
 # Programar el calendario
@@ -13,8 +14,8 @@ La página **Calendario** de FreePlay Admin controla lo que reproduce cada grupo
 <div class="prereqs">
 <h4>Antes de empezar</h4>
 
-- Cree al menos un grupo de pantallas. Véase [Administrar pantallas y grupos](./managing-screens#screen-groups)
-- [Cree una lista de reproducción](./building-playlists), o tenga un tipo de plan configurado en B1 Admin
+- Cree al menos un grupo de pantallas. Véase [Administrar pantallas y grupos](./managing-screens.md#screen-groups)
+- [Cree una lista de reproducción](./building-playlists.md), o tenga un tipo de plan configurado en B1 Admin
 
 </div>
 
@@ -82,10 +83,10 @@ Si dos horarios se superponen, el formulario muestra una advertencia: **Se super
 
 ## Cómo las pantallas reciben los cambios
 
-Las pantallas vinculadas descargan todo lo programado para los próximos 7 días, y comprueban los cambios por su cuenta. No necesita tocar el TV después de editar el calendario. Para ver cuándo una pantalla tiene todo lo necesario, revise **Listo hasta** en la [página de Pantallas](./managing-screens).
+Las pantallas vinculadas descargan todo lo programado para los próximos 7 días, y comprueban los cambios por su cuenta. No necesita tocar el TV después de editar el calendario. Para ver cuándo una pantalla tiene todo lo necesario, revise **Listo hasta** en la [página de Pantallas](./managing-screens.md).
 
 ## Artículos relacionados
 
-- **[Crear listas de reproducción](./building-playlists)**: cree las listas de reproducción que programa
-- **[Reproducción programada en el TV](./scheduled-playback)**: cómo funcionan las lecciones con ritmo del maestro y el control remoto en el TV
-- **[Administrar pantallas y grupos](./managing-screens)**: añada grupos y revise las descargas de cada pantalla
+- **[Crear listas de reproducción](./building-playlists.md)**: cree las listas de reproducción que programa
+- **[Reproducción programada en el TV](./scheduled-playback.md)**: cómo funcionan las lecciones con ritmo del maestro y el control remoto en el TV
+- **[Administrar pantallas y grupos](./managing-screens.md)**: añada grupos y revise las descargas de cada pantalla

@@ -1,5 +1,6 @@
 ---
 title: "Administrācija"
+description: "Lessons.church administravimo srities apžvalga ChurchApps: programų, mokymų, pamokų, išteklių, statistikos ir išorinių mokymo programų teikėjų valdymas."
 ---
 
 # Administrācija

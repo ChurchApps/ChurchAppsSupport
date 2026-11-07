@@ -1,5 +1,6 @@
 ---
 title: "Lotti di donazioni"
+description: "Raggruppa le offerte in lotti in B1 Admin, poi chiudi, stampa o esporta ciascuno, così i totali corrispondono ai depositi bancari."
 ---
 
 # Lotti di donazioni

@@ -31,7 +31,7 @@ Slučovací pole (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchN
 
 Rozsah: výběr poskytovatele se týká pouze toku **souborů a zdrojů** (kde je uloženo hromadné médium). Nahrávání galerií, log a fotografií zůstává u výchozího poskytovatele. Ty vypisují klíče z úložiště a sestavují URL na straně klienta, takže zakořenění podle sboru zatím neplatí.
 
-Stejné rozhraní využívá i [Úložiště typu Bring-Your-Own](./byos-storage): sbory mohou připojit Disk Google, Dropbox, OneDrive nebo vlastní bucket kompatibilní s S3 místo tarifu MinistryStuff.
+Stejné rozhraní využívá i [Úložiště typu Bring-Your-Own](./byos-storage.md): sbory mohou připojit Disk Google, Dropbox, OneDrive nebo vlastní bucket kompatibilní s S3 místo tarifu MinistryStuff.
 
 ## Fakturace
 

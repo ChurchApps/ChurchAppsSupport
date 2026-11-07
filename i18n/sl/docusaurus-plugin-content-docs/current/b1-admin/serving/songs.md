@@ -1,5 +1,6 @@
 ---
 title: "Pesmi"
+description: "Upravljajte knjižnico čaščenjskih pesmi v B1 Admin: iščite in dodajajte pesmi, urejajte podrobnosti, pripenjajte besedila v ChordPro in aranžmaje ter nalagajte posnetke za vaje."
 ---
 
 # Pesmi

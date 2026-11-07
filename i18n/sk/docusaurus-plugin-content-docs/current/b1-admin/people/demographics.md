@@ -1,5 +1,6 @@
 ---
 title: "Demografia"
+description: "Pozrite si vek, pohlavie, členstvo, rodinný stav a zloženie kampusov vášho zboru v interaktívnych grafoch B1 Admin a preklikajte sa do ktorejkoľvek skupiny."
 ---
 
 # Demografia

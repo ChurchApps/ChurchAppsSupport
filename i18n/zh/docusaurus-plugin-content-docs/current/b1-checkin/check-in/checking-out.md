@@ -1,5 +1,6 @@
 ---
 title: "签出和儿童安全"
+description: "在有人值守的 B1 Checkin 站点为儿童办理离场，涵盖安全码、已核实的接送人员、家长呼叫、标签补打以及紧急广播。"
 ---
 
 # 签出和儿童安全
@@ -14,7 +15,7 @@ title: "签出和儿童安全"
 <h4>开始前</h4>
 
 - 签出在自助终端管理员设置中设置为**有人值守**模式的站点上可用
-- 儿童必须已与[签入](./completing-checkin)和打印接送标签上的安全代码
+- 儿童必须已与[签入](./completing-checkin.md)和打印接送标签上的安全代码
 - 分页和紧急广播需要您的教会在B1 Admin中连接了短信提供商
 
 </div>
@@ -39,7 +40,7 @@ title: "签出和儿童安全"
 一旦接送人被确认，点击签出。接送人的名字存储在出勤记录中。
 
 :::info
-受信任和未被授权的接送人由教会员工在B1 Admin中每个人的页面上管理 -- 请参阅[签入安全](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people)。
+受信任和未被授权的接送人由教会员工在B1 Admin中每个人的页面上管理 -- 请参阅[签入安全](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people)。
 :::
 
 ## 给家长分页
@@ -65,6 +66,6 @@ title: "签出和儿童安全"
 
 ## 相关文章
 
-- [完成签入](./completing-checkin) -- 安全代码和接送标签来自何处
-- [签入安全](../../b1-admin/attendance/checkin-safety) -- 配置容量、比例、接送人和短信提供商要求
-- [打印机设置](../getting-started/printer-setup) -- 标签打印机配置
+- [完成签入](./completing-checkin.md) -- 安全代码和接送标签来自何处
+- [签入安全](../../b1-admin/attendance/checkin-safety.md) -- 配置容量、比例、接送人和短信提供商要求
+- [打印机设置](../getting-started/printer-setup.md) -- 标签打印机配置

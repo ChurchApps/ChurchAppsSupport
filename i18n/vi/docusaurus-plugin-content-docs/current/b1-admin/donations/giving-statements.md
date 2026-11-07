@@ -1,5 +1,6 @@
 ---
 title: "Giấy xác nhận quyên góp"
+description: "Tạo sao kê dâng hiến cuối năm cho mọi người dâng trong B1 Admin, rồi tải về dạng CSV hoặc in để gửi thư kèm tổng số được khấu trừ thuế."
 ---
 
 # Giấy xác nhận quyên góp

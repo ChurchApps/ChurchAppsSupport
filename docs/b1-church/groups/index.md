@@ -1,5 +1,7 @@
 ---
-title: "Groups"
+title: "Church Groups in the B1.church Member Portal"
+sidebar_label: "Groups"
+description: "Browse and join church groups on your B1.church site, then use group pages to check meetings, events, members, and resources, and chat with your group."
 ---
 
 # Groups

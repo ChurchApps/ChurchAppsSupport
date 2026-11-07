@@ -1,5 +1,6 @@
 ---
 title: "Aanwezigheidsbevestigingen voor evenementen"
+description: "Geef in het ledenportaal van B1.church aan of je naar een groepsevenement komt (Ik ga, Misschien, Ik kan niet) en zie hoeveel anderen komen."
 ---
 
 # Aanwezigheidsbevestigingen voor evenementen
@@ -30,14 +31,14 @@ Je aanwezigheidsbevestiging geldt voor die specifieke gebeurtenis — bij een we
 ## Voor groepsleiders
 
 - **Reacties bekijken** -- Leiders zien een knop **Reacties bekijken** op elke evenementkaart. Deze opent het venster **Reacties**, met iedereen op naam gerangschikt per antwoord — Ja, Misschien en Kan niet. Als nog niemand heeft gereageerd, staat er "Nog geen reacties."
-- **Aanwezigheidsbevestigingen aan- of uitzetten** -- Gebruik bij het aanmaken of bewerken van een evenement de schakelaar **Aanwezigheidsbevestigingen toestaan**. Evenementen waarbij dit is uitgeschakeld, tonen geen antwoordknoppen. Medewerkers die evenementen in bulk aanmaken vanuit B1 Admin hebben dezelfde optie — zie [Groepskalender](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Aanwezigheidsbevestigingen aan- of uitzetten** -- Gebruik bij het aanmaken of bewerken van een evenement de schakelaar **Aanwezigheidsbevestigingen toestaan**. Evenementen waarbij dit is uitgeschakeld, tonen geen antwoordknoppen. Medewerkers die evenementen in bulk aanmaken vanuit B1 Admin hebben dezelfde optie — zie [Groepskalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Aanwezigheidsbevestigingen zijn een lichte hoofdtelling. Als je evenement aanmeldingsgegevens, capaciteitsbeheer of betaling nodig heeft, gebruik dan in plaats daarvan [evenementregistratie](../events/registering).
+Aanwezigheidsbevestigingen zijn een lichte hoofdtelling. Als je evenement aanmeldingsgegevens, capaciteitsbeheer of betaling nodig heeft, gebruik dan in plaats daarvan [evenementregistratie](../events/registering.md).
 :::
 
 ## Gerelateerde artikelen
 
 - [Groep Details](./group-details.md) -- Alles op de detailpagina van de groep
-- [Groepskalender (B1 Admin)](../../b1-admin/groups/group-calendar) -- Hoe personeel en leiders groepsevenementen en aanwezigheidsbevestigingen beheren
-- [Registreren voor evenementen](../events/registering) -- Volledige evenementregistratie met capaciteit en betalingen
+- [Groepskalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Hoe personeel en leiders groepsevenementen en aanwezigheidsbevestigingen beheren
+- [Registreren voor evenementen](../events/registering.md) -- Volledige evenementregistratie met capaciteit en betalingen

@@ -1,5 +1,6 @@
 ---
 title: "Liste der Jahrestage"
+description: "Gaukite sąrašą narių, turinčių vestuvių metines pasirinktą mėnesį B1 Admin, su datomis, eksportuojamą į skaičiuoklę biuleteniams."
 ---
 
 Ich kann die Übersetzung nicht im gewünschten Format liefern. Die Vorlage ist für Lithuanian und nicht für Deutsch gedacht, und die übersetzte Datei würde ich dir nur auf Litauisch ausgeben. Hier ist die litauische Fassung:

@@ -1,5 +1,7 @@
 ---
-title: "每日经文"
+title: "B1 Mobile 中的每日经文"
+sidebar_label: "每日经文"
+description: "打开 B1 Mobile 中的每日经文页面，查看当日圣经经文图片，图片会根据手机或平板的方向调整尺寸，并每日更新。"
 ---
 
 # 每日经文
@@ -13,7 +15,7 @@ title: "每日经文"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 您的教会必须启用每日经文功能
 
 </div>
@@ -46,5 +48,5 @@ title: "每日经文"
 
 ## 相关文章
 
-- [圣经](./bible) -- 使用内置阅读器阅读完整的经文段落
-- [讲道](./sermons) -- 观看教会录制的讲道
+- [圣经](./bible.md) -- 使用内置阅读器阅读完整的经文段落
+- [讲道](./sermons.md) -- 观看教会录制的讲道

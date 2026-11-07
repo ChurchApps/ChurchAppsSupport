@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "A @churchapps/apihelper csomag referenciája (Packages munkaterület): helyi build, tesztelés Yarn-portállal és közzététel changesetekkel."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ A `@churchapps/apihelper` csomag szerveroldali segédeszközöket biztosít mind
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **Node.js**-t és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites)
+- Telepítse a **Node.js**-t és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites.md)
 - Ismerkedjen meg a [Packages munkaterület](./index.md) beállításával és a kiadási folyamattal
-- Ez a csomag a [`@churchapps/helpers`](./helpers) csomagtól függ (peer dependency-ként), és újra exportálja azt
+- Ez a csomag a [`@churchapps/helpers`](./helpers.md) csomagtól függ (peer dependency-ként), és újra exportálja azt
 
 </div>
 
@@ -65,6 +66,6 @@ Ez a csomag minden ChurchApps API függősége -- a core Api, az AskApi és a Le
 
 ## Kapcsolódó cikkek
 
-- **[Helpers](./helpers)** -- Az alapvető segédcsomag, amelytől ez a csomag függ
-- **[Modulstruktúra](../api/module-structure)** -- Hogyan használják a vezérlők és az auth middleware az API-modulokban
-- **[Helyi API-beállítás](../api/local-setup)** -- Az API beállítása helyi fejlesztéshez
+- **[Helpers](./helpers.md)** -- Az alapvető segédcsomag, amelytől ez a csomag függ
+- **[Modulstruktúra](../api/module-structure.md)** -- Hogyan használják a vezérlők és az auth middleware az API-modulokban
+- **[Helyi API-beállítás](../api/local-setup.md)** -- Az API beállítása helyi fejlesztéshez

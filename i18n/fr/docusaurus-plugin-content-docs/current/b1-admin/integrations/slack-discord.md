@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Publiez les événements de B1 Admin, comme les nouvelles personnes, les dons et les soumissions de formulaires, dans un canal Slack ou Discord au moyen d'un webhook entrant, sans Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Si quelque chose a échoué (badge rouge `failed` ou `exhausted`), le dialogue a
 
 - **Aucun message n'apparaît + statut de livraison `400`** — généralement le type de connecteur est défini sur **Standard** mais l'URL est une Slack/Discord. Slack/Discord rejettent l'enveloppe brute. Changez la liste déroulante sur **Slack** ou **Discord** et renvoyez le test.
 - **Webhook désactivé automatiquement** — après 3 livraisons échouées consécutives, B1 désactive le webhook. Corrigez l'URL (ou tournez-la sur Slack/Discord) et basculez **Actif** arrière.
-- **Le message est arrivé mais manque de détail** — chaque plate-forme de chat limite la taille des messages. Les messages B1 sont des lignes uniques par conception; pour les notifications plus riches utilisez [Zapier](./zapier) ou [Make](./make) pour composer un message Slack plus complet via leurs actions Slack.
+- **Le message est arrivé mais manque de détail** — chaque plate-forme de chat limite la taille des messages. Les messages B1 sont des lignes uniques par conception; pour les notifications plus riches utilisez [Zapier](./zapier.md) ou [Make](./make.md) pour composer un message Slack plus complet via leurs actions Slack.
 
 ## Basculer les types de connecteurs ultérieurement
 
@@ -122,6 +123,6 @@ Vous pouvez changer le type de connecteur sur un webhook existant — il prend e
 
 ## Voir aussi
 
-- [Zapier](./zapier) — pour les workflows multi-étapes déclenchés par les événements B1
-- [Make](./make) — constructeur de scénario visuel
+- [Zapier](./zapier.md) — pour les workflows multi-étapes déclenchés par les événements B1
+- [Make](./make.md) — constructeur de scénario visuel
 - [Webhooks (référence développeur)](/docs/developer/api/webhooks) — le format de charge utile complète + signature si vous pointez jamais un webhook à votre propre serveur

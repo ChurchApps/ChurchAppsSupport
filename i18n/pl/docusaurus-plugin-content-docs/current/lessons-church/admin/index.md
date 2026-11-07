@@ -1,5 +1,6 @@
 ---
 title: "Administracja"
+description: "Panel administracyjny Lessons.church: zarządzanie programami, studiami, lekcjami, zasobami, statystykami i zewnętrznymi dostawcami materiałów."
 ---
 
 # Administracja

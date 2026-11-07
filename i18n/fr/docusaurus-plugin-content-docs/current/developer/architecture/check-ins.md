@@ -1,5 +1,6 @@
 ---
 title: "Pointages"
+description: "Enregistrements entre B1Checkin, B1App et B1 Admin : modèle de présence, groupes comme salles, limites de capacité et règles de sortie sécurisée."
 ---
 
 # Pointages
@@ -216,7 +217,7 @@ L'inscription par QR est pilotée par les paramètres d'église enregistrés dep
 
 ## Pages connexes
 
-- [Points de terminaison Attendance](../api/endpoints/attendance) — Surface REST complète pour les campus, services, séances, visites et visitSessions
-- [Points de terminaison Membership](../api/endpoints/membership) — Personnes, foyers et groupes
-- [Webhooks](../api/webhooks) — Les événements `session.created`, `attendance.recorded` et `attendance.checkout`
-- [Structure des modules](../api/module-structure) — Organisation côté serveur du module attendance
+- [Points de terminaison Attendance](../api/endpoints/attendance.md) — Surface REST complète pour les campus, services, séances, visites et visitSessions
+- [Points de terminaison Membership](../api/endpoints/membership.md) — Personnes, foyers et groupes
+- [Webhooks](../api/webhooks.md) — Les événements `session.created`, `attendance.recorded` et `attendance.checkout`
+- [Structure des modules](../api/module-structure.md) — Organisation côté serveur du module attendance

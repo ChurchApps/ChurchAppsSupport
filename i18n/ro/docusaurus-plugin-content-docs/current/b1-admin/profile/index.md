@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Setări de profil și dispozitive în B1 Admin"
+sidebar_label: "Profil"
+description: "Actualizați numele, e-mailul, parola, autentificarea în doi pași, tema și dispozitivele conectate din profilul B1 Admin și aprobați modificările de profil."
 ---
 
 # Profil

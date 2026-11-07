@@ -1,5 +1,6 @@
 ---
 title: "API-nøgler"
+description: "Opret, afgræns og tilbagekald B1 API-nøgler i B1 Admin til serverscripts og Zapier-, Make- eller Google Sheets-connectorer, uden et fuldt OAuth-flow."
 ---
 
 # API-nøgler
@@ -104,7 +105,7 @@ En tilbagekaldt nøgle er straks ugyldig — der er ingen karensperiode.
 
 ## Hvordan det adskiller sig fra OAuth
 
-API-nøgler er velegnede, når **din kirke er den eneste, der bruger integrationen**. For en forbindelse, der skal have adgang til mange kirker, hvor hver enkelt giver eksplicit samtykke — som en SaaS-app, der deles i B1-fællesskabet — bør du i stedet bruge [OAuth og tilsluttede apps](./connected-apps).
+API-nøgler er velegnede, når **din kirke er den eneste, der bruger integrationen**. For en forbindelse, der skal have adgang til mange kirker, hvor hver enkelt giver eksplicit samtykke — som en SaaS-app, der deles i B1-fællesskabet — bør du i stedet bruge [OAuth og tilsluttede apps](./connected-apps.md).
 
 | | API-nøgle | OAuth |
 |---|---|---|

@@ -1,5 +1,6 @@
 ---
 title: "Elegir un modo de emparejamiento"
+description: "Elige la forma correcta de vincular un TV con FreePlay: un calendario de FreePlay Admin, un plan de servicio de B1 Admin o ninguna vinculación."
 ---
 
 # Elegir un modo de emparejamiento
@@ -32,7 +33,7 @@ Introduce el código en **FreePlay Admin**, en [admin.freeplay.church](https://a
 
 **Ideal para:** señalización en vestíbulos y pasillos, bucles de anuncios y aulas donde la lección ya debe estar reproduciéndose cuando llegan las personas.
 
-Consulta **[Modo programado](../scheduled-mode/)** para la guía completa.
+Consulta **[Modo programado](../scheduled-mode/index.md)** para la guía completa.
 
 ## Modo plan (B1 Admin)
 
@@ -42,7 +43,7 @@ Introduce el código en **B1 Admin** cuando quieras que el televisor siga un tip
 
 **Ideal para:** televisores que muestran contenido vinculado a tu plan de servicio semanal, donde alguien inicia la reproducción cuando llega el momento.
 
-Consulta **[Modo plan](../plan-mode/)** para la guía completa.
+Consulta **[Modo plan](../plan-mode/index.md)** para la guía completa.
 
 :::tip
 También puedes reproducir el plan de servicio vigente según un horario. En FreePlay Admin, agrega una entrada al calendario y elige el tipo de plan en **Planes de servicio**.
@@ -50,7 +51,7 @@ También puedes reproducir el plan de servicio vigente según un horario. En Fre
 
 ## Proveedores de contenido (sin emparejamiento)
 
-Si no necesitas emparejar el televisor, puedes explorar los proveedores de contenido directamente. Proveedores como [Lessons.church](../../lessons-church/) y Bible Project tienen contenido que puedes descargar y reproducir cuando quieras.
+Si no necesitas emparejar el televisor, puedes explorar los proveedores de contenido directamente. Proveedores como [Lessons.church](../../lessons-church/index.md) y Bible Project tienen contenido que puedes descargar y reproducir cuando quieras.
 
 **Ideal para:** televisores donde los voluntarios eligen qué reproducir cada semana, o cuando quieres explorar lo que está disponible.
 
@@ -60,6 +61,6 @@ Puedes abrir la pantalla **Proveedores** en cualquier momento desde **Configurac
 
 ## Artículos relacionados
 
-- **[Modo programado](../scheduled-mode/)**: pon televisores en un calendario con FreePlay Admin
-- **[Modo plan](../plan-mode/)**: guía completa para emparejar con un plan de servicio
-- **[Proveedores de contenido](../content-providers/)**: explora y descarga contenido de fuentes externas
+- **[Modo programado](../scheduled-mode/index.md)**: pon televisores en un calendario con FreePlay Admin
+- **[Modo plan](../plan-mode/index.md)**: guía completa para emparejar con un plan de servicio
+- **[Proveedores de contenido](../content-providers/index.md)**: explora y descarga contenido de fuentes externas

@@ -1,5 +1,6 @@
 ---
 title: "Persetujuan Kalender"
+description: "Tinjau permintaan pemesanan ruangan dan sumber daya yang tertunda di B1 Admin, periksa bentrokan, lalu setujui atau tolak, dengan opsi menerbitkan acara."
 ---
 
 # Persetujuan Kalender
@@ -13,7 +14,7 @@ Halaman Persetujuan adalah tempat administrator meninjau dan menindaklanjuti per
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Atur ruangan atau sumber daya dengan **Grup Persetujuan** di [Ruangan & Sumber Daya](rooms-resources)
+- Atur ruangan atau sumber daya dengan **Grup Persetujuan** di [Ruangan & Sumber Daya](./rooms-resources.md)
 - Anda memerlukan izin **Calendars Admin** atau izin **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Klik **Approve** atau **Reject** pada permintaan pemesanan mana pun (penolakan a
 Ketika Anda mengklik **Approve**, dialog **Approve booking** akan terbuka sehingga Anda juga dapat mempublikasikan acara dalam langkah yang sama:
 
 1. Centang **Publish to public calendar** untuk membuat acara tersebut publik di kalender grupnya. Biarkan tidak tercentang jika Anda ingin menyetujui pemesanan tanpa mengubah visibilitas acara.
-2. Setelah **Publish to public calendar** dicentang, Anda dapat memilih kalender kurasi dari **Also add to calendar** untuk menambahkan acara ke salah satu [kalender kurasi](curated-calendar) Anda juga. Biarkan diatur ke **None** jika tidak ingin menambahkannya. (Opsi ini hanya muncul jika Anda memiliki izin **content.edit**.)
+2. Setelah **Publish to public calendar** dicentang, Anda dapat memilih kalender kurasi dari **Also add to calendar** untuk menambahkan acara ke salah satu [kalender kurasi](./curated-calendar.md) Anda juga. Biarkan diatur ke **None** jika tidak ingin menambahkannya. (Opsi ini hanya muncul jika Anda memiliki izin **content.edit**.)
 3. Klik **Approve**.
 
 ## Acara yang Menunggu
@@ -49,10 +50,10 @@ Ketika Anda mengklik **Approve**, dialog **Approve booking** akan terbuka sehing
 Jika alur kerja kalender Anda mewajibkan persetujuan acara sebelum acara terlihat oleh publik, acara yang menunggu akan muncul di bagian **Event Requests**. Klik **Approve** untuk mempublikasikan acara ke kalender, atau **Reject** untuk memberi tahu pengirim bahwa perubahan diperlukan.
 
 :::tip
-Atur Grup Persetujuan pada ruangan di [Ruangan & Sumber Daya](rooms-resources) untuk mewajibkan persetujuan bagi ruangan tersebut. Grup yang memiliki akses kemudian dapat meminta ruangan tersebut saat membuat acara, dan permintaan tersebut akan masuk ke halaman ini.
+Atur Grup Persetujuan pada ruangan di [Ruangan & Sumber Daya](./rooms-resources.md) untuk mewajibkan persetujuan bagi ruangan tersebut. Grup yang memiliki akses kemudian dapat meminta ruangan tersebut saat membuat acara, dan permintaan tersebut akan masuk ke halaman ini.
 :::
 
 ## Artikel Terkait
 
-- [Ruangan, Sumber Daya & Penjadwalan](rooms-resources) — mengatur ruangan dan sumber daya yang dapat dipesan
-- [Membuat Kalender](creating-calendars) — mengelola kalender dan acara
+- [Ruangan, Sumber Daya & Penjadwalan](./rooms-resources.md) — mengatur ruangan dan sumber daya yang dapat dipesan
+- [Membuat Kalender](./creating-calendars.md) — mengelola kalender dan acara

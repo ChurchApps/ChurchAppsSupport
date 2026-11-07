@@ -1,5 +1,6 @@
 ---
 title: "Percakapan Grup"
+description: "Pelajari cara mengirim, mengedit, bereaksi terhadap, dan mengelola pesan di obrolan grup B1.church, termasuk pengumuman dan alat moderasi pemimpin."
 ---
 
 # Percakapan Grup

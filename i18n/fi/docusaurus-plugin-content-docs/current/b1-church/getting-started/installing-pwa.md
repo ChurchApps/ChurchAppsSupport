@@ -1,5 +1,6 @@
 ---
 title: "Asennus sovellukseksi (PWA)"
+description: "Asenna B1.church iPhone- tai Android-laitteeseen sovelluksena jäsenportaalista ja lisää sen kuvake aloitusnäytölle Safarissa tai Chromessa."
 ---
 
 # Asennus sovellukseksi (PWA)

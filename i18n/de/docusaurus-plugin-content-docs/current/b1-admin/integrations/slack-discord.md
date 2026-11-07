@@ -1,5 +1,6 @@
 ---
 title: "Slack & Discord"
+description: "Senden Sie B1 Admin-Ereignisse wie neue Personen, Spenden und Formulareinsendungen per eingehendem Webhook in einen Slack- oder Discord-Kanal, ganz ohne Zapier."
 ---
 
 # Slack & Discord
@@ -114,7 +115,7 @@ Wenn etwas fehlgeschlagen ist (roter `failed` oder `exhausted` Badge), zeigt der
 
 - **Keine Nachricht erscheint + Lieferungsstatus `400`** – normalerweise ist der Connector Type auf **Standard** gesetzt, aber die URL ist eine Slack/Discord. Slack/Discord lehnen die rohe Hülle ab. Schalten Sie die Dropdown auf **Slack** oder **Discord** und senden Sie den Test erneut.
 - **Webhook auto-deaktiviert** – nach 3 aufeinanderfolgenden fehlgeschlagenen Lieferungen schaltet B1 den Webhook aus. Reparieren Sie die URL (oder rotieren Sie sie in Slack/Discord) und schalten Sie **Aktiv** zurück.
-- **Nachricht kam an, ist aber fehlende Details** – jede Chat-Plattform begrenzt die Nachrichtengröße. B1s Nachrichten sind standardmäßig einzeilig; für reichhaltigere Benachrichtigungen verwenden Sie [Zapier](./zapier) oder [Make](./make), um eine vollere Slack-Nachricht über ihre Slack-Aktionen zu verfassen.
+- **Nachricht kam an, ist aber fehlende Details** – jede Chat-Plattform begrenzt die Nachrichtengröße. B1s Nachrichten sind standardmäßig einzeilig; für reichhaltigere Benachrichtigungen verwenden Sie [Zapier](./zapier.md) oder [Make](./make.md), um eine vollere Slack-Nachricht über ihre Slack-Aktionen zu verfassen.
 
 ## Wechseln Sie Connector Types Später
 
@@ -122,6 +123,6 @@ Sie können den Connector Type auf einem bestehenden Webhook ändern – er wird
 
 ## Siehe auch
 
-- [Zapier](./zapier) – für Multi-Schritt-Workflows, ausgelöst von B1-Ereignissen
-- [Make](./make) – visueller Szenario-Builder
+- [Zapier](./zapier.md) – für Multi-Schritt-Workflows, ausgelöst von B1-Ereignissen
+- [Make](./make.md) – visueller Szenario-Builder
 - [Webhooks (Entwickler-Referenz)](/docs/developer/api/webhooks) – das vollständige Payload + Signaturformat, wenn Sie jemals einen Webhook auf Ihren eigenen Server zeigen

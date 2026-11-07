@@ -1,5 +1,6 @@
 ---
 title: "Open Lesson Format"
+description: "Format spec for third-party curriculum providers on Lessons.church: the provider tree and venue feed JSON fields, actions, and media files."
 ---
 
 # Open Lesson Format

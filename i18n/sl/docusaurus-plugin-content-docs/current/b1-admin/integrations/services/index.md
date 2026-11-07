@@ -1,5 +1,6 @@
 ---
 title: "Povezane storitve"
+description: "Povežite B1 Admin z Mailchimp, Donorbox, Subsplash, VOMO, Clearstream in drugimi orodji prek receptov Zapier ali Make, z vodniki za vsakega."
 ---
 
 # Povezane storitve
@@ -14,14 +15,14 @@ Najhitrejši način za povezavo B1 z drugim orodjem za cerkveno tehnologijo je o
 
 | Storitev | Kategorija | Most | Kaj lahko povežete |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | E-pošta | Zapier ali Make | Sinhronizira nove osebe in darovalce iz B1 v občinstvo Mailchimp |
-| [Donorbox](./donorbox) | Darovanja | Zapier | Pošlje darovanja in darovalce iz Donorbox nazaj v B1 |
-| [Subsplash](./subsplash) | Aplikacija / Darovanja | Zapier | Prenese darovanja in osebe iz Subsplash v B1 |
-| [VOMO](./vomo) | Prostovoljstvo | Zapier | Sinhronizira prijave prostovoljcev med skupinami B1 in projekti VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Sproži sporočilo SMS prek Clearstream ob dogodkih v B1; odgovore sprejme kot zapise v B1 |
-| [Text In Church](./text-in-church) | SMS / Delovni tokovi | Zapier | Sproži delovne tokove Text In Church iz B1; prejema podatke s Connect Card |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier ali Make | Pošilja SMS ob katerem koli dogodku v B1 |
-| [Checkr](./checkr) | Preverjanje preteklosti | Make | Sproži preverjanje preteklosti, ko se nekdo pridruži ekipi za služenje |
+| [Mailchimp](./mailchimp.md) | E-pošta | Zapier ali Make | Sinhronizira nove osebe in darovalce iz B1 v občinstvo Mailchimp |
+| [Donorbox](./donorbox.md) | Darovanja | Zapier | Pošlje darovanja in darovalce iz Donorbox nazaj v B1 |
+| [Subsplash](./subsplash.md) | Aplikacija / Darovanja | Zapier | Prenese darovanja in osebe iz Subsplash v B1 |
+| [VOMO](./vomo.md) | Prostovoljstvo | Zapier | Sinhronizira prijave prostovoljcev med skupinami B1 in projekti VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Sproži sporočilo SMS prek Clearstream ob dogodkih v B1; odgovore sprejme kot zapise v B1 |
+| [Text In Church](./text-in-church.md) | SMS / Delovni tokovi | Zapier | Sproži delovne tokove Text In Church iz B1; prejema podatke s Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier ali Make | Pošilja SMS ob katerem koli dogodku v B1 |
+| [Checkr](./checkr.md) | Preverjanje preteklosti | Make | Sproži preverjanje preteklosti, ko se nekdo pridruži ekipi za služenje |
 
 ## Kaj imajo vse skupnega
 
@@ -45,8 +46,8 @@ Namenoma smo izpustili orodja, specifična za Planning Center-Services (glasba, 
 
 ## Glejte tudi
 
-- [Zapier (pregled)](../zapier): stran B1 pri vsakem receptu Zapier je enaka, zato jo ta dokument opiše enkrat
-- [Make (pregled)](../make): enako za scenarije Make
-- [Slack in Discord](../slack-discord): obvestila v klepetu brez mostu
-- [Google Sheets](../google-sheets): izvozi na zahtevo
+- [Zapier (pregled)](../zapier.md): stran B1 pri vsakem receptu Zapier je enaka, zato jo ta dokument opiše enkrat
+- [Make (pregled)](../make.md): enako za scenarije Make
+- [Slack in Discord](../slack-discord.md): obvestila v klepetu brez mostu
+- [Google Sheets](../google-sheets.md): izvozi na zahtevo
 - [Webhooki (referenca za razvijalce)](/docs/developer/api/webhooks): katalog dogodkov, na katerega se zanaša vsak recept

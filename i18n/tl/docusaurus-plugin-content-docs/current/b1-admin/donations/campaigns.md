@@ -1,5 +1,6 @@
 ---
 title: "Mga Campaign at Pledge"
+description: "Gumawa ng fundraising campaign sa B1 Admin, itala ang pledge ng miyembro, at subaybayan ang progreso sa layunin laban sa aktuwal na donasyon ng bawat pondo."
 ---
 
 # Mga Campaign at Pledge
@@ -13,7 +14,7 @@ Hinahayaan ka ng mga campaign na magpatakbo ng kampanya sa pangangalap ng pondo 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-set up ang iyong [donation funds](funds) -- nakatali ang bawat campaign sa isang fund
+- I-set up ang iyong [donation funds](./funds.md) -- nakatali ang bawat campaign sa isang fund
 - Kailangan mong magkaroon ng access sa seksyong Donations ng B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ I-click ang **I-edit** sa anumang row ng campaign (o ang **I-edit ang Campaign**
 
 ## Mga Kaugnay na Artikulo
 
-- [Recording Donations](recording-donations) -- itala ang aktuwal na mga kaloob na tutupad sa mga pledge
-- [Funds](funds) -- i-set up ang fund na ii-associate sa isang campaign
-- [Donation Reports](donation-reports) -- pag-uulat ng mga donasyon ayon sa fund
+- [Recording Donations](./recording-donations.md) -- itala ang aktuwal na mga kaloob na tutupad sa mga pledge
+- [Funds](./funds.md) -- i-set up ang fund na ii-associate sa isang campaign
+- [Donation Reports](./donation-reports.md) -- pag-uulat ng mga donasyon ayon sa fund

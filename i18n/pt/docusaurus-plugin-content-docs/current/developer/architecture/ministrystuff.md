@@ -29,7 +29,7 @@ Uma linha de provedor da igreja (`content.storageProviders`, gerenciada em B1Adm
 
 Nota de escopo: seleção de provedor cobre o fluxo de **arquivos/recursos** de conteúdo (onde mídia em massa vive). Carregamentos de galeria/logo/foto ficam no provedor padrão — eles listam chaves do armazenamento e constroem URLs no lado do cliente, portanto enraizamento por-igreja não se aplica ainda.
 
-A mesma costura também alimenta [Bring-Your-Own Storage](./byos-storage): igrejas podem ligar Google Drive, Dropbox, OneDrive ou seu próprio balde compatível com S3 em vez de um plano MinistryStuff.
+A mesma costura também alimenta [Bring-Your-Own Storage](./byos-storage.md): igrejas podem ligar Google Drive, Dropbox, OneDrive ou seu próprio balde compatível com S3 em vez de um plano MinistryStuff.
 
 ## Faturamento
 

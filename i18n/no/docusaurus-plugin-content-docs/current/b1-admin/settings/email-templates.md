@@ -1,5 +1,6 @@
 ---
 title: "E-postmaler"
+description: "Sett opp e-post- og SMS-maler i B1 Admin med flettefelt, tekstmeldingsvalg og forhåndsvisninger for masseutsendelser."
 ---
 
 # E-postmaler

@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin oversigt"
+description: "Opsæt B1 Church Checkin-kioskappen på iPad eller Android-tablets, så familier selv kan checke ind, og udskriv labels og afhentningsslips."
 ---
 
 # B1 Church Checkin oversigt
@@ -20,7 +21,7 @@ Anbring en iPad eller Android tablet i din foyer eller velkomst område. Medlemm
 - **Husstand oversigt** -- Se alle familiemedlemmer med fotos og nuværende gruppe tildelinger på et øjeblik.
 - **Gruppe tildeling** -- Tildel hvert familiemedlem den rigtige klasse eller gruppe for den valgte servin tid.
 - **Gæst check-in** -- Tilføj en gæst til din husstand på stedet med fornavn og efternavn.
-- **QR gæst registrering** -- Vis en QR kode, som besøgende kan scanne til [register sig selv](../b1-church/checkin/guest-registration) på deres egen telefon før checkin.
+- **QR gæst registrering** -- Vis en QR kode, som besøgende kan scanne til [register sig selv](../b1-church/checkin/guest-registration.md) på deres egen telefon før checkin.
 - **Label udskrivning** -- Udskriv navne labels til børn og forælder afhentning slips med unikke sikkerhedskoder.
 - **Netværks printer support** -- Discover og konfigurer netværks printere direkte fra appen.
 - **Auto-login** -- Efter det første login husker appen dine legitimationsoplysninger og går direkte til servin skærmen ved fremtidigt start.
@@ -29,8 +30,8 @@ Anbring en iPad eller Android tablet i din foyer eller velkomst område. Medlemm
 
 ## Dokumentation sektioner
 
-- **[Kom godt i gang](./getting-started/)** -- Installation af appen, login og opsætning af din printer.
-- **[Check-in arbejdsgang](./check-in/)** -- Hele check-in flowet fra valg af servin til udskrivning af labels.
+- **[Kom godt i gang](./getting-started/index.md)** -- Installation af appen, login og opsætning af din printer.
+- **[Check-in arbejdsgang](./check-in/index.md)** -- Hele check-in flowet fra valg af servin til udskrivning af labels.
 
 :::tip
 B1 Church Checkin fungerer bedst på en 10-tommer tablet (iPad eller Android) monteret i landskabsorientering hvor familier let kan nå den. Hent appen fra [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) eller [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

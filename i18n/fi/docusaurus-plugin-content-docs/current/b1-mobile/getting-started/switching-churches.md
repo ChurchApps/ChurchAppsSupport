@@ -1,5 +1,6 @@
 ---
 title: "Seurakuntien vaihtaminen"
+description: "Vaihda seurakuntaa B1 Mobile -sovelluksessa valitsemalla viimeksi käytetty seurakunta tai hakemalla nimellä, kaikki yhdellä ChurchApps-kirjautumisella."
 ---
 
 # Seurakuntien vaihtaminen
@@ -13,7 +14,7 @@ Jos olet useamman kuin yhden seurakunnan jäsen, B1 Mobile tekee seurakuntien v�
 <div class="prereqs">
 <h4>Ennen kuin aloitat</h4>
 
-- [Asenna B1 Mobile](./installing) ja [kirjaudu sisään](./logging-in) tilillesi
+- [Asenna B1 Mobile](./installing.md) ja [kirjaudu sisään](./logging-in.md) tilillesi
 
 </div>
 
@@ -24,7 +25,7 @@ Jos olet useamman kuin yhden seurakunnan jäsen, B1 Mobile tekee seurakuntien v�
 3. Näkyviin tulee **Seurakuntahaku**-näkymä. Viimeksi vierailtujen seurakuntien nimet näkyvät ylhäällä nopeaa käyttöä varten.
 4. Vaihda seurakuntaa napauttamalla viimeksi käytettyä seurakuntaa, tai etsi toinen seurakunta kirjoittamalla hakukenttään.
 
-Kun vaihdat seurakuntaa, sovellus latautuu uudelleen ja näyttää valitun seurakunnan brändin, navigointilinkit ja sisällön. [Kojelautasi](../dashboard/), [ryhmäsi](../groups/) ja muut tietosi päivittyvät vastaamaan uutta valittua seurakuntaa.
+Kun vaihdat seurakuntaa, sovellus latautuu uudelleen ja näyttää valitun seurakunnan brändin, navigointilinkit ja sisällön. [Kojelautasi](../dashboard/index.md), [ryhmäsi](../groups/index.md) ja muut tietosi päivittyvät vastaamaan uutta valittua seurakuntaa.
 
 ## Seurakunnan etsiminen
 

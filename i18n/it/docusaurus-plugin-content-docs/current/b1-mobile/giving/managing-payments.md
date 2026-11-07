@@ -1,5 +1,6 @@
 ---
 title: "Gestione dei Metodi di Pagamento"
+description: "Aggiungi, controlla e rimuovi le carte salvate nella scheda Gestisci di B1 Mobile, così le donazioni ripetute sono più veloci senza reinserire i dati."
 ---
 
 # Gestione dei Metodi di Pagamento
@@ -13,7 +14,7 @@ La scheda **Gestisci** nella sezione offerte ti permette di visualizzare e gesti
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Installa B1 Mobile](../getting-started/installing) e [accedi](../getting-started/logging-in) al tuo account
+- [Installa B1 Mobile](../getting-started/installing.md) e [accedi](../getting-started/logging-in.md) al tuo account
 
 </div>
 
@@ -31,7 +32,7 @@ Per aggiungere una nuova carta:
 4. Inserisci i dati della tua carta. Le informazioni vengono inviate in modo sicuro a **Stripe** per l'elaborazione.
 5. Una volta salvata, la nuova carta apparirà nel tuo elenco dei metodi di pagamento.
 
-La carta salvata sarà quindi disponibile come opzione di pagamento la prossima volta che [effettui una donazione](./making-donations) dalla scheda **Dona**.
+La carta salvata sarà quindi disponibile come opzione di pagamento la prossima volta che [effettui una donazione](./making-donations.md) dalla scheda **Dona**.
 
 ## Rimozione di un Metodo di Pagamento
 
@@ -44,7 +45,7 @@ Se non desideri più avere una carta registrata, puoi rimuoverla dalla scheda **
 La carta non apparirà più come opzione di pagamento quando effettui una donazione.
 
 :::info
-La rimozione di un metodo di pagamento non influisce sulle donazioni passate. La tua [cronologia donazioni](./donation-history) rimane invariata.
+La rimozione di un metodo di pagamento non influisce sulle donazioni passate. La tua [cronologia donazioni](./donation-history.md) rimane invariata.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Mantieni almeno un metodo di pagamento salvato per donazioni rapide. In questo m
 
 ## Articoli Correlati
 
-- [Effettuare una Donazione](./making-donations) -- Scopri come fare un'offerta usando un metodo di pagamento salvato
-- [Cronologia Donazioni](./donation-history) -- Visualizza il riepilogo delle offerte e le donazioni passate
+- [Effettuare una Donazione](./making-donations.md) -- Scopri come fare un'offerta usando un metodo di pagamento salvato
+- [Cronologia Donazioni](./donation-history.md) -- Visualizza il riepilogo delle offerte e le donazioni passate

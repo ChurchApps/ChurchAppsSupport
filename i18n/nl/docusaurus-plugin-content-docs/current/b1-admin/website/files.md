@@ -1,5 +1,6 @@
 ---
 title: "Bestanden"
+description: "Upload, bekijk en beheer afbeeldingen en documenten voor je kerkwebsite in B1 Admin, inclusief het koppelen van externe opslag voor meer ruimte."
 ---
 
 # Bestanden
@@ -13,7 +14,7 @@ De pagina Bestanden is de centrale opslagplaats voor alle media en documenten di
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Voltooi [Initiële installatie](initial-setup) voor uw website
+- Voltooi [Initiële installatie](./initial-setup.md) voor uw website
 - Optimaliseer afbeeldingen vóór uploaden voor snellere paginaladingstijden
 - Bereid uw bestanden voor in veelgebruikte webformaten (PNG, JPG, PDF, enz.)
 
@@ -48,7 +49,7 @@ Voor de beste resultaten optimaliseert u afbeeldingen vóór uploaden. Kleinere 
 3. Bestanden die u hier uploadt, zijn beschikbaar voor gebruik in al uw website pagina's en inhoudsblokken.
 
 :::info
-Bij het bouwen van pagina's in [Pagina's beheren](managing-pages), kunt u elk bestand dat hier is geüpload, via de URL ervan raadplegen. Dit houdt al uw media op één centrale locatie georganiseerd.
+Bij het bouwen van pagina's in [Pagina's beheren](./managing-pages.md), kunt u elk bestand dat hier is geüpload, via de URL ervan raadplegen. Dit houdt al uw media op één centrale locatie georganiseerd.
 :::
 
 ## Bestanden verwijderen
@@ -63,5 +64,5 @@ Verwijderde bestanden kunnen niet worden hersteld. Controleer dubbel dat een bes
 
 ## Volgende stappen
 
-- [Pagina's beheren](managing-pages) -- Voeg uw geüploade bestanden toe aan website pagina's
-- [Weergave](appearance) -- Pas het visuele thema van uw site aan
+- [Pagina's beheren](./managing-pages.md) -- Voeg uw geüploade bestanden toe aan website pagina's
+- [Weergave](./appearance.md) -- Pas het visuele thema van uw site aan

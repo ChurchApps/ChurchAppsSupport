@@ -1,5 +1,6 @@
 ---
 title: "Notificări push web"
+description: "Configurați chei VAPID, clientul WebPushHelper și service worker-ul, pentru ca B1.church și B1 Admin să trimită notificări push în browser membrilor."
 ---
 
 # Notificări push web
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Pagini conexe
 
-- [Arhitectura notificărilor](./architecture/notifications): pâlnia completă de escaladare în aplicație, push și e-mail, și motorul de reamintiri
-- [Arhitectura în timp real](./realtime): livrarea prin WebSocket. Push se declanșează acum din aceeași pâlnie din aplicație, alături de livrarea prin socket, în aceeași etapă, nu doar ca rezervă atunci când o livrare prin socket nu reușește
-- [Endpoint-uri de mesagerie](./api/endpoints/messaging): notificări, dispozitive și restul suprafeței de mesagerie
-- [AppHelper](./shared-libraries/app-helper): pachetul npm care livrează `WebPushHelper`
+- [Arhitectura notificărilor](./architecture/notifications.md): pâlnia completă de escaladare în aplicație, push și e-mail, și motorul de reamintiri
+- [Arhitectura în timp real](./realtime.md): livrarea prin WebSocket. Push se declanșează acum din aceeași pâlnie din aplicație, alături de livrarea prin socket, în aceeași etapă, nu doar ca rezervă atunci când o livrare prin socket nu reușește
+- [Endpoint-uri de mesagerie](./api/endpoints/messaging.md): notificări, dispozitive și restul suprafeței de mesagerie
+- [AppHelper](./shared-libraries/app-helper.md): pachetul npm care livrează `WebPushHelper`

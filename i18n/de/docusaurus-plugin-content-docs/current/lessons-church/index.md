@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Kostenlose, altersgestufte Lektionen von über 12 Anbietern durchsuchen, planen und präsentieren, mit Klassenzimmern und FreePlay- und B1-Integrationen."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church funktioniert mit anderen ChurchApps-Tools, um Ihnen bei der Liefe
 
 ## Dokumentationsabschnitte
 
-- [Erste Schritte](./getting-started/) – Erstellen Sie Ihr Konto und lernen Sie die Grundlagen
-- [Inhalte durchsuchen](./browsing/) – Finden Sie Programme, Studien und Lektionen
-- [Klassenzimmer](./classrooms/) – Richten Sie Klassenzimmer ein und planen Sie Lektionen
-- [Anpassung](./customization/) – Passen Sie Lektionen an Ihre Kirche an
-- [Präsentation](./presenting/) – Liefern Sie Lektionen im Klassenzimmer mit Präsentationsmodus
-- [Verwaltung](./admin/) – Verwalten Sie Programme, Studien und Lektionen als Admin
+- [Erste Schritte](./getting-started/index.md) – Erstellen Sie Ihr Konto und lernen Sie die Grundlagen
+- [Inhalte durchsuchen](./browsing/index.md) – Finden Sie Programme, Studien und Lektionen
+- [Klassenzimmer](./classrooms/index.md) – Richten Sie Klassenzimmer ein und planen Sie Lektionen
+- [Anpassung](./customization/index.md) – Passen Sie Lektionen an Ihre Kirche an
+- [Präsentation](./presenting/index.md) – Liefern Sie Lektionen im Klassenzimmer mit Präsentationsmodus
+- [Verwaltung](./admin/index.md) – Verwalten Sie Programme, Studien und Lektionen als Admin
 - [Glaubenserklärung](./statement-of-faith.md) – Kern-Überzeugungen und Curriculum-Richtlinien
 
 Für Support senden Sie eine E-Mail an [support@churchapps.org](mailto:support@churchapps.org).

@@ -1,5 +1,6 @@
 ---
 title: "Weergave"
+description: "Stel kleuren, lettertypen, afstanden, logo en navigatie in voor je kerkwebsite in B1 Admin, plus widgets, GA4-analyse, redirects en aangepaste CSS."
 ---
 
 # Weergave
@@ -13,7 +14,7 @@ Op de pagina Weergave kunt u het algehele uiterlijk en gevoel van uw kerkwebsite
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Voltooi [Initiële installatie](initial-setup) voor uw website
+- Voltooi [Initiële installatie](./initial-setup.md) voor uw website
 - Zorg dat u uw kerklogo in PNG-indeling met transparante achtergrond en verhouding van 4:1 gereed hebt
 - Ken de merkkleurenvan uw kerk (hexwaarden) als u een bestaande stijlhandleiding hebt
 
@@ -75,5 +76,5 @@ Als u een snelle startpunt wilt, bieden de **Suggested Palettes** in de sectie C
 
 ## Volgende stappen
 
-- [Pagina's beheren](managing-pages) -- Bouw en organiseer uw website pagina's
-- [Bestanden](files) -- Upload media-assets voor uw site
+- [Pagina's beheren](./managing-pages.md) -- Bouw en organiseer uw website pagina's
+- [Bestanden](./files.md) -- Upload media-assets voor uw site

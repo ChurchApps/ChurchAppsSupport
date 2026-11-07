@@ -1,5 +1,6 @@
 ---
 title: "Content Providers"
+description: "FreePlay TV ऐप में Lessons.church, Dropbox, OneDrive और अन्य प्रोवाइडर से पाठ सामग्री, वीडियो और चित्र ब्राउज़ करें और डाउनलोड करें।"
 ---
 
 # Content Providers
@@ -14,7 +15,7 @@ Content providers बाहरी सेवाएं हैं जो आपक�
 
 FreePlay में वर्तमान में ये providers शामिल हैं:
 
-- **[Lessons.church](../../lessons-church/)** - मुफ्त, open-source बच्चों के ministry curriculum
+- **[Lessons.church](../../lessons-church/index.md)** - मुफ्त, open-source बच्चों के ministry curriculum
 - **Bible Project** - Bible की खोज करने वाले videos और संसाधन
 - **SignPresenter** - चर्चों के लिए presentation और signage content
 - **B1.church** - आपके अपने B1 church setup की content
@@ -24,7 +25,7 @@ FreePlay में वर्तमान में ये providers शामि
 - **OneDrive** - अपने Microsoft OneDrive से images, videos और audio browse करें और चलाएं
 
 :::note
-Google Drive और FreeShow अब FreePlay TV app में नहीं दिखाए जाते। अपने TVs पर Google Drive की content उपयोग करने के लिए, उसे [FreePlay Admin](../scheduled-mode/building-playlists#connecting-providers) में connect करें, files को एक playlist में जोड़ें, और वह playlist schedule करें।
+Google Drive और FreeShow अब FreePlay TV app में नहीं दिखाए जाते। अपने TVs पर Google Drive की content उपयोग करने के लिए, उसे [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers) में connect करें, files को एक playlist में जोड़ें, और वह playlist schedule करें।
 :::
 
 :::info
@@ -37,14 +38,14 @@ Google Drive और FreeShow अब FreePlay TV app में नहीं द�
 
 Connected providers स्क्रीन के बाईं ओर sidebar में, **Browse** heading के अंतर्गत दिखते हैं। आप sidebar में उन्हें चुनकर providers के बीच switch कर सकते हैं, जिससे setup के दौरान content स्रोतों के बीच आसानी से जाया जा सकता है।
 
-आप किसी भी connected provider से एक folder चुन सकते हैं, ताकि उसे अपने TV पर [announcements](./announcements) के रूप में loop किया जाए।
+आप किसी भी connected provider से एक folder चुन सकते हैं, ताकि उसे अपने TV पर [announcements](./announcements.md) के रूप में loop किया जाए।
 
 :::tip
-TV पर आप जो providers connect करते हैं, वे केवल उसी TV के लिए होते हैं। यदि आप [Scheduled Mode](../scheduled-mode/) उपयोग करते हैं, तो इसके बजाय providers को एक बार FreePlay Admin में connect करें, और हर scheduled screen उनसे content चला सकेगी।
+TV पर आप जो providers connect करते हैं, वे केवल उसी TV के लिए होते हैं। यदि आप [Scheduled Mode](../scheduled-mode/index.md) उपयोग करते हैं, तो इसके बजाय providers को एक बार FreePlay Admin में connect करें, और हर scheduled screen उनसे content चला सकेगी।
 :::
 
 ## इस Section में
 
-- **[Providers से Connect करना](./connecting-providers)** - प्रमाणीकरण करके connect कैसे करें
-- **[Content Browse और Download करना](./browsing-content)** - folders में जाएं, files download करें, और content चलाएं
-- **[Announcements](./announcements)** - किसी provider के folder के slides को loop करें
+- **[Providers से Connect करना](./connecting-providers.md)** - प्रमाणीकरण करके connect कैसे करें
+- **[Content Browse और Download करना](./browsing-content.md)** - folders में जाएं, files download करें, और content चलाएं
+- **[Announcements](./announcements.md)** - किसी provider के folder के slides को loop करें

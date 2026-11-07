@@ -1,5 +1,7 @@
 ---
-title: "Pagsisimula"
+title: "Pagsisimula sa Lessons.church"
+sidebar_label: "Pagsisimula"
+description: "Gumawa ng libreng Lessons.church account, ikonekta ang simbahan, mag-set up ng classrooms, at mag-iskedyul ng unang mga aralin. Walang subscription o trial."
 ---
 
 # Pagsisimula

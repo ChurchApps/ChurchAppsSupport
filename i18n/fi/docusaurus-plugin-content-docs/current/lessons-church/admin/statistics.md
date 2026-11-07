@@ -1,5 +1,6 @@
 ---
 title: "Tilastot"
+description: "Katso latausmäärät opinnoittain, näe mitkä seurakunnat käyttävät resurssejasi ja sijainnit Lessons.churchin tilastoissa, päivämäärävälin suodatuksella."
 ---
 
 # Tilastot

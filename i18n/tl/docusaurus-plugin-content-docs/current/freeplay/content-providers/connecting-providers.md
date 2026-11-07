@@ -1,5 +1,6 @@
 ---
 title: "Pagkonekta sa mga Provider"
+description: "Ikonekta ang FreePlay sa content provider gamit ang QR code, email login, o one-click access, at pamahalaan o putulin ang koneksyon mula sa Settings."
 ---
 
 # Pagkonekta sa mga Provider
@@ -13,7 +14,7 @@ Bago ka makapag-browse ng content mula sa isang provider, kailangan mo munang ku
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install at buksan ang FreePlay -- tingnan ang [Getting Started](../getting-started/)
+- I-install at buksan ang FreePlay -- tingnan ang [Getting Started](../getting-started/index.md)
 - Ihanda ang remote ng iyong TV para sa pag-navigate
 - Para sa mga provider na humihingi ng login, ihanda ang iyong account credentials
 
@@ -80,7 +81,7 @@ Ang pagpili ng provider card na may badge na **Connected** ay magbubukas ng scre
 
 - **Browse Library** -- Ipakita o itago ang content library ng provider na ito sa sidebar
 - **Auto-Download Today's Lesson** -- Gamitin ang provider na ito bilang pinagmumulan ng lesson ngayong araw at i-pre-download ang mga file nito (lumalabas lang para sa mga provider na may kasalukuyang lesson)
-- **Use for Announcements** -- Pumili ng folder mula sa provider na ito para mag-loop mula sa item na **Announcements** sa sidebar. Tingnan ang [Announcements](./announcements)
+- **Use for Announcements** -- Pumili ng folder mula sa provider na ito para mag-loop mula sa item na **Announcements** sa sidebar. Tingnan ang [Announcements](./announcements.md)
 - **Check for Announcement Updates** -- Lumalabas kapag napili na ang announcements folder; nagda-download ng mga bagong slide at nag-aalis ng mga na-delete na
 - **Disconnect** -- Alisin ang koneksyon
 
@@ -100,6 +101,6 @@ Inaalis ng pag-disconnect ang naka-save na authentication sa iyong device. Kakai
 
 ## Mga Kaugnay na Artikulo
 
-- **[Browsing and Downloading Content](./browsing-content)** - Mag-navigate sa mga folder at magpatugtog ng content pagkatapos kumonekta
-- **[Announcements](./announcements)** - Mag-loop ng folder ng mga slide mula sa nakakonektang provider
+- **[Browsing and Downloading Content](./browsing-content.md)** - Mag-navigate sa mga folder at magpatugtog ng content pagkatapos kumonekta
+- **[Announcements](./announcements.md)** - Mag-loop ng folder ng mga slide mula sa nakakonektang provider
 - **[Content Providers Overview](./index.md)** - Tingnan ang lahat ng available na provider

@@ -1,5 +1,6 @@
 ---
 title: "Giving-endepunkter"
+description: "Referanse for Giving-API-endepunktene i ChurchApps: gaver, batcher, gatewayer, abonnementer og betalingsmetoder, med autentisering og tillatelser."
 ---
 
 # Giving-endepunkter
@@ -284,6 +285,6 @@ Utvider `GenericCrudController` med CRUD-ruter: `getById`, `getAll`, `post`, `de
 
 ## Relaterte sider
 
-- [Medlemskapsendepunkter](./membership) — Personer, kirker, grupper, roller og tillatelser
-- [Autentisering og tillatelser](./authentication) — Innloggingsflyt, JWT, OAuth, tillatelsesmodell
-- [Modulstruktur](../module-structure) — Mønstre for kodeorganisering
+- [Medlemskapsendepunkter](./membership.md) — Personer, kirker, grupper, roller og tillatelser
+- [Autentisering og tillatelser](./authentication.md) — Innloggingsflyt, JWT, OAuth, tillatelsesmodell
+- [Modulstruktur](../module-structure.md) — Mønstre for kodeorganisering

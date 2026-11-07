@@ -1,5 +1,6 @@
 ---
 title: "Özelleştirme"
+description: "Bir Lessons.church dersinde bölümleri, rolleri veya eylemleri gizlemeyi ve içeriği yeniden sıralamayı öğrenin; tek bir sınıf için ya da kilisenizdeki tüm sınıflar için."
 ---
 
 # Özelleştirme

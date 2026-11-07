@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Erfahren Sie, was die B1.church-Seite Ihrer Gemeinde Mitgliedern bietet: vom Mitgliederportal und Gruppen bis zu Spenden, Terminen, Ehrenamt und Check-in."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Wenn Mitglieder Ihre B1.church-Seite besuchen, sehen sie die öffentliche Websit
 
 ## Mehr erfahren
 
-- [Erste Schritte](./getting-started/) — Konto erstellen, anmelden und erfahren, wie Sie sich auf B1.church zurechtfinden.
-- [Gruppen](./groups/) — Treten Sie den Gruppen Ihrer Kirche bei und nehmen Sie daran teil.
-- [Geben](./giving/) — Spenden tätigen und Ihre Spenden verwalten.
-- [Veranstaltungen](./events/) — Kommende Veranstaltungen Ihrer Kirche durchsuchen und sich dafür anmelden.
-- [Dienst](./serving/) — Pläne ansehen und sich für ehrenamtliche Positionen eintragen.
-- [Pläne](./plans/) — Gottesdienstpläne und Ihre ehrenamtlichen Positionen ansehen.
-- [Check-in](./checkin/) — Einchecken für Gottesdienste und Veranstaltungen sowie Gastregistrierung.
-- [Gemeindeverzeichnis](./community/) — Andere Mitglieder finden und sich mit ihnen vernetzen.
-- [Inhalte](./content/) — Predigten, Bibel, Tagesvers und Live-Streaming. (Die Wiedergabe von Lektionen wurde zu [FreePlay](/docs/freeplay/) verlegt.)
+- [Erste Schritte](./getting-started/index.md) — Konto erstellen, anmelden und erfahren, wie Sie sich auf B1.church zurechtfinden.
+- [Gruppen](./groups/index.md) — Treten Sie den Gruppen Ihrer Kirche bei und nehmen Sie daran teil.
+- [Geben](./giving/index.md) — Spenden tätigen und Ihre Spenden verwalten.
+- [Veranstaltungen](./events/index.md) — Kommende Veranstaltungen Ihrer Kirche durchsuchen und sich dafür anmelden.
+- [Dienst](./serving/index.md) — Pläne ansehen und sich für ehrenamtliche Positionen eintragen.
+- [Pläne](./plans/index.md) — Gottesdienstpläne und Ihre ehrenamtlichen Positionen ansehen.
+- [Check-in](./checkin/index.md) — Einchecken für Gottesdienste und Veranstaltungen sowie Gastregistrierung.
+- [Gemeindeverzeichnis](./community/index.md) — Andere Mitglieder finden und sich mit ihnen vernetzen.
+- [Inhalte](./content/index.md) — Predigten, Bibel, Tagesvers und Live-Streaming. (Die Wiedergabe von Lektionen wurde zu [FreePlay](/docs/freeplay/) verlegt.)
 
 :::info
 B1.church ist für Kirchen und Mitglieder vollkommen kostenlos. Ihr Kirchenadministrator richtet die Website über B1 Admin ein und passt sie an. Als Mitglied besuchen Sie einfach die B1.church-URL Ihrer Kirche, um loszulegen.

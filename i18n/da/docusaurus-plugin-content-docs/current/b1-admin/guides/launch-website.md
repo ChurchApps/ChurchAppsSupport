@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Lancering af dit kirkewebsted"
+description: "Opsæt en kirkehjemmeside i B1 Admin: byg forsiden, tilpas farver og logo, tilføj vigtige sider, forbind et eget domæne og tilføj gaveformularer."
 ---
 
 # Lancering af dit kirkewebsted

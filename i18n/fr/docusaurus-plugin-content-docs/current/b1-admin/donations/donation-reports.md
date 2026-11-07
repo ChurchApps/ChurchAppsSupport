@@ -1,5 +1,6 @@
 ---
 title: "Rapports de dons"
+description: "Consultez les totaux des dons, les donateurs inactifs et les détails par lot dans B1 Admin grâce au tableau de bord Résumé des dons, à la vue Donateurs inactifs et aux exports CSV."
 ---
 
 # Rapports de dons

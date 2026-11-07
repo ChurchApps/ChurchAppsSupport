@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "B1 Admin csatlakoztatása Zapier-hez: automatizmusok új személyekre, adományokra és csoporttagokra, visszaírás a B1-be kódolás nélkül."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Válassz egy triggert, majd adj hozzá egy vagy több műveleti lépést. Az al�
 ### Adományok közzététele Slack-csatornán, a beépített összekötőnél gazdagabb kártyával
 
 - **Trigger** — B1: Új adomány
-- **Művelet** — Slack: Üzenet küldése csatornára. Állíts össze bármilyen elrendezést – gombokat, mellékleteket stb. –, amelyre a beépített [Slack-összekötő](./slack-discord) nem képes.
+- **Művelet** — Slack: Üzenet küldése csatornára. Állíts össze bármilyen elrendezést – gombokat, mellékleteket stb. –, amelyre a beépített [Slack-összekötő](./slack-discord.md) nem képes.
 
 ### Új csoporttagok hozzáadása Google-csoporthoz
 
@@ -106,6 +107,6 @@ Ez azt jelenti, hogy a trigger csak azokra az eseményekre aktiválódik, amelye
 
 ## Lásd még
 
-- [Make](./make) – ugyanez a minta, más platformon
-- [Slack és Discord](./slack-discord) – egyszerűbb csevegési értesítések Zapier nélkül
+- [Make](./make.md) – ugyanez a minta, más platformon
+- [Slack és Discord](./slack-discord.md) – egyszerűbb csevegési értesítések Zapier nélkül
 - [Webhookok (fejlesztői referencia)](/docs/developer/api/webhooks)

@@ -1,5 +1,7 @@
 ---
-title: "İncil"
+title: "B1 Mobile'da Kutsal Kitap Okuma"
+sidebar_label: "İncil"
+description: "B1 Mobile'daki yerleşik İncil okuyucuyla çekmece menüsünden Kutsal Kitap'ı açın, kitap, bölüm ve ayetlerde gezinin ve kilisenizin İncil seçeneğini bulun."
 ---
 
 # İncil
@@ -13,7 +15,7 @@ B1 Mobile, uygulamanın içinde yerleşik bir İncil okuyucusu içerir; böylece
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Kiliseniz İncil özelliğinin etkin olması gerekir
 
 </div>
@@ -37,7 +39,7 @@ Yerleşik okuyucu, Kutsal Yazı içinde ilerlemek için denetimler sunar. Şunla
 Okuyucu ekranın tamamını kaplar; böylece cihazınızda rahatça okumak için geniş bir alan elde edersiniz.
 
 :::tip
-İncil ekranını günlük rutininizin bir parçası haline getirin; nerede olursanız olun Kutsal Yazıyı okumanın hızlı bir yoludur. İlham için [Günün Ayeti](./verse-of-the-day) ile birlikte kullanın.
+İncil ekranını günlük rutininizin bir parçası haline getirin; nerede olursanız olun Kutsal Yazıyı okumanın hızlı bir yoludur. İlham için [Günün Ayeti](./verse-of-the-day.md) ile birlikte kullanın.
 :::
 
 ## Kullanılabilirlik
@@ -46,6 +48,6 @@ Okuyucu ekranın tamamını kaplar; böylece cihazınızda rahatça okumak için
 
 ## İlgili Makaleler
 
-- [Günün Ayeti](./verse-of-the-day) -- Her gün bir İncil ayetini görün
-- [Vaazlar](./sermons) -- İncil okumanızı tamamlayacak vaazları izleyin
+- [Günün Ayeti](./verse-of-the-day.md) -- Her gün bir İncil ayetini görün
+- [Vaazlar](./sermons.md) -- İncil okumanızı tamamlayacak vaazları izleyin
 - [FreePlay](/docs/freeplay/) -- Sınıf televizyonlarında yapılandırılmış müfredatı oynatın (kullanımdan kaldırılan uygulama içi Dersler ekranının yerini alır)

@@ -1,5 +1,7 @@
 ---
-title: "Första installationen"
+title: "Första kyrkinställningen i B1 Admin"
+sidebar_label: "Första installationen"
+description: "Gå igenom första konfigurationen av en ny kyrka i B1 Admin: kyrkoinfo, varumärke, roller och rekommenderad ordning för personer, grupper, närvaro och gåvor."
 ---
 
 # Första installationen

@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Sermões"
+description: "Gerencie sua biblioteca no B1 Admin: adicione sermões do YouTube, Vimeo ou Facebook, edite os detalhes e obtenha um feed de podcast para sua igreja."
 ---
 
 # Gerenciando Sermões
@@ -14,7 +15,7 @@ A página de Sermões exibe toda a sua biblioteca de sermões. A partir daqui vo
 <h4>Antes de começar</h4>
 
 - Você precisa da permissão **contentApi.streamingServices.edit**. Veja [Funções e Permissões](../settings/roles-permissions.md) se você não tiver acesso.
-- Crie pelo menos uma [playlist](playlists) para organizar seus sermões
+- Crie pelo menos uma [playlist](./playlists.md) para organizar seus sermões
 - Tenha seus IDs de vídeo ou URLs prontos no YouTube, Vimeo ou Facebook
 
 </div>
@@ -35,7 +36,7 @@ A página de Sermões exibe toda a sua biblioteca de sermões. A partir daqui vo
 6. Faça qualquer alteração que desejar e clique em **Salvar**.
 
 :::tip
-Você também pode adicionar uma URL de transmissão ao vivo permanente selecionando **Adicionar URL de Transmissão Ao Vivo Permanente** no menu suspenso **Adicionar Sermão**. Isso cria uma conexão persistente com o fluxo ao vivo do seu canal do YouTube usando seu ID de Canal. Veja [Transmissão ao Vivo](live-streaming) para mais detalhes.
+Você também pode adicionar uma URL de transmissão ao vivo permanente selecionando **Adicionar URL de Transmissão Ao Vivo Permanente** no menu suspenso **Adicionar Sermão**. Isso cria uma conexão persistente com o fluxo ao vivo do seu canal do YouTube usando seu ID de Canal. Veja [Transmissão ao Vivo](./live-streaming.md) para mais detalhes.
 :::
 
 ## Editando um Sermão
@@ -73,11 +74,11 @@ Depois de adicionar um sermão, você pode agendá-lo para transmissão em sua p
 3. O sermão será exibido no horário do serviço agendado.
 
 :::info
-Para importar vários sermões de uma vez em vez de adicioná-los um por um, use a ferramenta [Importação em Lote](bulk-import) para puxar vídeos diretamente de sua conta do YouTube ou Vimeo.
+Para importar vários sermões de uma vez em vez de adicioná-los um por um, use a ferramenta [Importação em Lote](./bulk-import.md) para puxar vídeos diretamente de sua conta do YouTube ou Vimeo.
 :::
 
 ## Próximas Etapas
 
-- [Playlists](playlists) -- Organize sermões em séries
-- [Transmissão ao Vivo](live-streaming) -- Configure seu cronograma de transmissão
-- [Importação em Lote](bulk-import) -- Importe vários sermões de uma vez
+- [Playlists](./playlists.md) -- Organize sermões em séries
+- [Transmissão ao Vivo](./live-streaming.md) -- Configure seu cronograma de transmissão
+- [Importação em Lote](./bulk-import.md) -- Importe vários sermões de uma vez

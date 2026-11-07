@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "ChurchApps API의 모듈형 모놀리스 설계, 여섯 개의 데이터 모듈, 기술 스택, 포트, Lambda 함수를 설명하고, 개발자를 위한 설정, 데이터베이스, 인증, 엔드포인트 문서 링크를 제공합니다."
 ---
 
 # API
@@ -52,8 +53,8 @@ AWS에 배포하면 API는 여섯 개의 Lambda 함수로 실행됩니다.
 
 API는 두 개의 ChurchApps 공유 패키지에 의존합니다.
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- 기본 유틸리티(DateHelper, ApiHelper 등)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- 인증, 데이터베이스 헬퍼, AWS 연동을 포함한 Express 서버 유틸리티
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- 기본 유틸리티(DateHelper, ApiHelper 등)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- 인증, 데이터베이스 헬퍼, AWS 연동을 포함한 Express 서버 유틸리티
 
 :::info
 API는 ES 모듈을 사용합니다(`package.json`에 `"type": "module"`). 가져오기(import)는 반드시 ES 모듈 문법을 사용해야 합니다.
@@ -61,11 +62,11 @@ API는 ES 모듈을 사용합니다(`package.json`에 `"type": "module"`). 가�
 
 ## 이 섹션의 내용
 
-- **[로컬 설정](./local-setup)** -- API를 복제하고, 구성하고, 로컬에서 실행하기
-- **[데이터베이스](./database)** -- 모듈별 데이터베이스 구조, 스키마 스크립트, 데이터 접근 패턴
-- **[모듈 구조](./module-structure)** -- 컨트롤러, 리포지토리, 모델, 인증
-- **[API 키](./api-keys)** -- 스크립트와 커넥터를 위한 개인 액세스 토큰
-- **[연결된 앱(OAuth)](./connected-apps)** -- 제3자 앱을 위한 다중 테넌트 OAuth 흐름
-- **[웹훅](./webhooks)** -- 외부 시스템에 이벤트 알림 보내기
-- **[MCP 서버](./mcp)** -- API를 AI 어시스턴트에 노출하는 Model Context Protocol 엔드포인트
-- **[엔드포인트 참조](./endpoints/)** -- 모든 모듈의 전체 REST API 문서
+- **[로컬 설정](./local-setup.md)** -- API를 복제하고, 구성하고, 로컬에서 실행하기
+- **[데이터베이스](./database.md)** -- 모듈별 데이터베이스 구조, 스키마 스크립트, 데이터 접근 패턴
+- **[모듈 구조](./module-structure.md)** -- 컨트롤러, 리포지토리, 모델, 인증
+- **[API 키](./api-keys.md)** -- 스크립트와 커넥터를 위한 개인 액세스 토큰
+- **[연결된 앱(OAuth)](./connected-apps.md)** -- 제3자 앱을 위한 다중 테넌트 OAuth 흐름
+- **[웹훅](./webhooks.md)** -- 외부 시스템에 이벤트 알림 보내기
+- **[MCP 서버](./mcp.md)** -- API를 AI 어시스턴트에 노출하는 Model Context Protocol 엔드포인트
+- **[엔드포인트 참조](./endpoints/index.md)** -- 모든 모듈의 전체 REST API 문서

@@ -1,5 +1,6 @@
 ---
 title: "Doações"
+description: "Registre, organize e relate as contribuições da igreja no B1 Admin, de lotes e fundos a extratos anuais e doações online via Stripe ou PayPal."
 ---
 
 # Doações

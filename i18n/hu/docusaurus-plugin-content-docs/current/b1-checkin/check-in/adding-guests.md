@@ -1,5 +1,6 @@
 ---
 title: "Gäste hinzufügen"
+description: "Látogató gyermeket, rokont vagy barátot adhat egy háztartáshoz a B1 Checkin kioszkon, majd csoportokat rendelhet hozzá és befejezheti a bejelentkezést."
 ---
 
 # Gäste hinzufügen
@@ -13,8 +14,8 @@ Wenn jemand Ihre Familie besucht und sich mit Ihrem Haushalt einchecken möchte,
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Suchen Sie Ihre Familie](./looking-up-members) und wählen Sie ein Mitglied aus den Suchergebnissen aus
-- Öffnen Sie den [Haushaltsprüfungsbildschirm](./household-review), auf dem Sie Ihre Familienmitglieder sehen
+- [Suchen Sie Ihre Familie](./looking-up-members.md) und wählen Sie ein Mitglied aus den Suchergebnissen aus
+- Öffnen Sie den [Haushaltsprüfungsbildschirm](./household-review.md), auf dem Sie Ihre Familienmitglieder sehen
 
 </div>
 
@@ -36,8 +37,8 @@ Wenn der Name des Gastes mit einer Person übereinstimmt, die bereits im System 
 
 Sobald der Gast in Ihrer Haushaltsliste erscheint, können Sie:
 
-- **Seine Karte aufklappen** und ihn [einer Gruppe zuweisen](./group-assignment), genau wie jedes andere Familienmitglied.
-- Den gesamten Haushalt einschließlich des Gastes [einchecken](./completing-checkin).
+- **Seine Karte aufklappen** und ihn [einer Gruppe zuweisen](./group-assignment.md), genau wie jedes andere Familienmitglied.
+- Den gesamten Haushalt einschließlich des Gastes [einchecken](./completing-checkin.md).
 
 ## Abbrechen
 
@@ -49,4 +50,4 @@ Wenn Sie am Kiosk einen Gast hinzufügen, wird ein Personendatensatz in der Geme
 
 ## Nächster Schritt
 
-Nachdem Sie Gäste hinzugefügt und bei Bedarf [Gruppen zugewiesen](./group-assignment) haben, können Sie den [Check-in abschließen](./completing-checkin).
+Nachdem Sie Gäste hinzugefügt und bei Bedarf [Gruppen zugewiesen](./group-assignment.md) haben, können Sie den [Check-in abschließen](./completing-checkin.md).

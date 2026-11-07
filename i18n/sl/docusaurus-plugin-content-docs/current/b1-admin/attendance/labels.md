@@ -1,5 +1,6 @@
 ---
 title: "Oblikovalnik nalepk za prijavo"
+description: "Prilagodite predloge značk z imenom in potrdil za prevzem v B1 Admin, vključno s polji, položajem ter pogoji za rojstni dan ali opombe."
 ---
 
 # Oblikovalnik nalepk za prijavo
@@ -13,8 +14,8 @@ Oblikovalnik nalepk vam omogoča, da ustvarite in prilagodite predloge značk z 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Nastavite [Udeležbo](setup) in konfigurirajte vsaj en čas bogoslužja z omogočeno prijavo
-- Nastavite [Prijavo](check-in), da se nalepke tiskajo
+- Nastavite [Udeležbo](./setup.md) in konfigurirajte vsaj en čas bogoslužja z omogočeno prijavo
+- Nastavite [Prijavo](./check-in.md), da se nalepke tiskajo
 - Potrebujete skrbniški dostop do razdelka Udeležba
 
 </div>
@@ -85,6 +86,6 @@ Po urejanju predloge natisnite preizkusno nalepko, da preverite, ali je postavit
 
 ## Sorodni članki
 
-- [Nastavitev prijave](setup) — konfiguracija storitev in skupin za prijavo
-- [Dokončanje prijave](check-in) — postopek prijave za družine
-- [Začetek dela z B1 Checkin](../../b1-checkin/getting-started/) — aplikacija za prijavo na kiosku
+- [Nastavitev prijave](./setup.md) — konfiguracija storitev in skupin za prijavo
+- [Dokončanje prijave](./check-in.md) — postopek prijave za družine
+- [Začetek dela z B1 Checkin](../../b1-checkin/getting-started/index.md) — aplikacija za prijavo na kiosku

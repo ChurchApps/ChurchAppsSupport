@@ -1,5 +1,6 @@
 ---
 title: Wprowadzenie do B1.church
+description: "Przeprowadzi Cię przez logowanie do B1 Admin, poruszanie się po pulpicie i menu Jump oraz konfigurację danych kościoła przed poznaniem innych narzędzi."
 ---
 
 # Witamy w B1.church Admin!
@@ -34,7 +35,7 @@ Aby uzyskać dalszą pomoc, napisz na adres [support@churchapps.org](mailto:supp
 10. Możesz teraz wejść do B1.church przez **portal członka** lub **portal administratora**. Portal członka pozwala zobaczyć, jak B1.church wygląda dla Twoich członków, przeglądać grupy i zarządzać własnymi darowiznami.
 
 :::tip
-Zacznij od strony [Ustawienia](./settings/), gdzie skonfigurujesz nazwę kościoła, branding i uprawnienia zespołu. Dzięki temu wszystko, co skonfigurujesz później, będzie wyświetlane poprawnie.
+Zacznij od strony [Ustawienia](./settings/index.md), gdzie skonfigurujesz nazwę kościoła, branding i uprawnienia zespołu. Dzięki temu wszystko, co skonfigurujesz później, będzie wyświetlane poprawnie.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Wyszukiwanie to często najszybszy sposób na dotarcie do strony – wpisz czę�
 
 Po obejrzeniu tego wprowadzenia poznaj te kluczowe funkcje:
 
-- [Dodawanie osób](./people/adding-people) – Dowiedz się, jak dodawać członków do bazy danych
-- [Grupy](./groups/) – Twórz i zarządzaj grupami kościelnymi
-- [Plany służby](./serving/plans) – Zorganizuj służbę w swoim kościele
-- [Frekwencja](./attendance/) – Śledź frekwencję i meldowanie
-- [Strona internetowa](./website/) – Twórz i dostosowuj stronę internetową kościoła
-- [Ustawienia](./settings/) – Skonfiguruj informacje o kościele i uprawnienia
+- [Dodawanie osób](./people/adding-people.md) – Dowiedz się, jak dodawać członków do bazy danych
+- [Grupy](./groups/index.md) – Twórz i zarządzaj grupami kościelnymi
+- [Plany służby](./serving/plans.md) – Zorganizuj służbę w swoim kościele
+- [Frekwencja](./attendance/index.md) – Śledź frekwencję i meldowanie
+- [Strona internetowa](./website/index.md) – Twórz i dostosowuj stronę internetową kościoła
+- [Ustawienia](./settings/index.md) – Skonfiguruj informacje o kościele i uprawnienia

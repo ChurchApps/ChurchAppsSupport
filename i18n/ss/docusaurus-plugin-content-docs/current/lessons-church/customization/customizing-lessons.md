@@ -1,5 +1,6 @@
 ---
 title: "Kulungisela Tifundzo"
+description: "Susa, fihla, noma uhlele kabusha tingcenye netindzima kulifundziso le-Lessons.church, bese ukhetsa kutsi tinguquko zisebente kukilasi linye noma kuwo wonkhe emakilasi."
 ---
 
 # Kulungisela Tifundzo

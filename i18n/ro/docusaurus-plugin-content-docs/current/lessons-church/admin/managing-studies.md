@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea studiilor"
+description: "Creați, editați și categorisiți studii într-un program din administrarea Lessons.church și atașați la fiecare rezumatul seriei sau șabloane de buletin."
 ---
 
 # Gestionarea studiilor

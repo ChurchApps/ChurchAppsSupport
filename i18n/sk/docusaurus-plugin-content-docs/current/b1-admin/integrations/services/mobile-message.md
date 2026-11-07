@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Pripojte udalosti B1 Admin k Mobile Message, austrálskemu SMS API, cez webhooky Zapier alebo Make a posielajte uvítacie, darcovské a pripomienkové texty."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Endpoint `/v1/messages` od Mobile Message prijme až 10 000 správ v jednom vola
 
 ### Alternatíva v Make
 
-Ak používate Make, za spúšťač B1 Watch Events pridajte modul **HTTP — Make a request**, nakonfigurujte ho rovnako (POST, Basic Auth, JSON telo). Strana B1 je popísaná v [prehľade Make](../make).
+Ak používate Make, za spúšťač B1 Watch Events pridajte modul **HTTP — Make a request**, nakonfigurujte ho rovnako (POST, Basic Auth, JSON telo). Strana B1 je popísaná v [prehľade Make](../make.md).
 
 ## Obmedzenia a poznámky
 
@@ -102,6 +103,6 @@ Ak používate Make, za spúšťač B1 Watch Events pridajte modul **HTTP — Ma
 
 ## Pozri tiež
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — alternatívni poskytovatelia SMS s natívnymi aplikáciami pre Zapier (nie je potrebný krok Webhooks by Zapier)
-- [Zapier (prehľad)](../zapier) — strana B1 pre každý recept Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternatívni poskytovatelia SMS s natívnymi aplikáciami pre Zapier (nie je potrebný krok Webhooks by Zapier)
+- [Zapier (prehľad)](../zapier.md) — strana B1 pre každý recept Zapier
 - [Dokumentácia API Mobile Message](https://mobilemessage.com.au/api-documentation)

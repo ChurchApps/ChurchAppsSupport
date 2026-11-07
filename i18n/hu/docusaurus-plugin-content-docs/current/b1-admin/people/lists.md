@@ -1,5 +1,6 @@
 ---
 title: "Mentett listák"
+description: "Személyi keresés mentése a B1 Admin-ban nevesített listaként, betöltés egy kattintással. A listák élők: az új illeszkedő tagok automatikusan megjelennek."
 ---
 
 # Mentett listák

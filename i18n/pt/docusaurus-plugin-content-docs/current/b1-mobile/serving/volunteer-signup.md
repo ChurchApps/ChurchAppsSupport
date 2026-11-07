@@ -1,5 +1,7 @@
 ---
-title: "Inscrição de Voluntários"
+title: "Inscrição de Voluntários no App B1 Mobile"
+sidebar_label: "Inscrição de Voluntários"
+description: "Encontre vagas de voluntariado abertas para os próximos cultos, inscreva-se ou remova uma inscrição no app B1 Mobile. Aborda prazos e limites de vagas."
 ---
 
 # Inscrição de Voluntários
@@ -13,7 +15,7 @@ Navegue pelas posições de voluntário disponíveis e inscreva-se para os próx
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Instale o B1 Mobile](../getting-started/installing) e [entre](../getting-started/logging-in) na sua conta
+- [Instale o B1 Mobile](../getting-started/installing.md) e [entre](../getting-started/logging-in.md) na sua conta
 - O administrador da sua igreja deve ter habilitado a inscrição própria em pelo menos uma posição
 
 </div>
@@ -60,5 +62,5 @@ Ative as [notificações push](../community/notifications.md) para ficar informa
 
 ## Artigos Relacionados
 
-- [Visualizando Planos](./viewing-plans) -- Veja seus planos atribuídos e as ordens de culto
+- [Visualizando Planos](./viewing-plans.md) -- Veja seus planos atribuídos e as ordens de culto
 - [Notificações](../community/notifications.md) -- Fique atualizado sobre as escalas de serviço

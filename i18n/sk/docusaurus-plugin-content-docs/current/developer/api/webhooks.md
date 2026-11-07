@@ -1,5 +1,6 @@
 ---
 title: "Webhooky"
+description: "Nastavte webhooky v reálnom čase z B1 Admin: registrujte koncové body, vyberte udalosti, overujte podpisy HMAC, spracúvajte opakovania a znovu doručte neúspešné údaje."
 ---
 
 # Webhooky
@@ -33,7 +34,7 @@ Prejdite na **Nastavenia → Vývojár → Webhooky → Nový webhook**. Zadajte
 
 ### Cez API
 
-Všetky koncové body sú pod základnou cestou modulu Membership `/membership/webhooks` a vyžadujú buď JWT od správcu cirkvi s oprávnením `Settings / Edit`, **alebo [API kľúč](./api-keys) vytvorený s rozsahom `settings:write`**. Rovnaké trasy akceptujú oba typy. Vďaka tomu môžu Zapier a Make registrovať webhooky v mene cirkvi, keď sa zapne Zap alebo scenár.
+Všetky koncové body sú pod základnou cestou modulu Membership `/membership/webhooks` a vyžadujú buď JWT od správcu cirkvi s oprávnením `Settings / Edit`, **alebo [API kľúč](./api-keys.md) vytvorený s rozsahom `settings:write`**. Rovnaké trasy akceptujú oba typy. Vďaka tomu môžu Zapier a Make registrovať webhooky v mene cirkvi, keď sa zapne Zap alebo scenár.
 
 ```http
 POST /membership/webhooks

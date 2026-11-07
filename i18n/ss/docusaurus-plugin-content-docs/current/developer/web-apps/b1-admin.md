@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Setfa i-B1 Admin endzaweni: klona idashibhodi ye-React/Vite, lungisa tindzawo te-API ku-.env, bese uqala i-dev server yemsebenti wekulawula ibandla."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin luhlelo lwekuphatsa liligobhondolo -- luhlelo lwe-React lwelikhasi linye
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- Faka i-**Node.js 22+** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites)
-- Hlela indzawo yakho ye-API lohlosiwe (staging nome yasekhaya) -- bona [Tintfo Tesimo Sekusebenta](../setup/environment-variables)
+- Faka i-**Node.js 22+** kanye ne-**Git** -- bona [Tidzingo Letandzulelo](../setup/prerequisites.md)
+- Hlela indzawo yakho ye-API lohlosiwe (staging nome yasekhaya) -- bona [Tintfo Tesimo Sekusebenta](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Kwakhiwa kwe-production kutfunyelwa ku-**S3 + CloudFront**:
 3. Kususa lokusesikhwameni kwe-CloudFront kuyacaliswa kuze kunikelwe lomniniko lomusha
 
 :::tip
-Kuze utfole imiyalo lengephetseli yekutfunyelwa, bona sicwayiso se-[Kutfunyelwa Kwetinhlelo TeWebhu](../deployment/web-apps).
+Kuze utfole imiyalo lengephetseli yekutfunyelwa, bona sicwayiso se-[Kutfunyelwa Kwetinhlelo TeWebhu](../deployment/web-apps.md).
 :::

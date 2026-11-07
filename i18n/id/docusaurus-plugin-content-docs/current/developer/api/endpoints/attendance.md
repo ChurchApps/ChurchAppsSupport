@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Kehadiran"
+description: "Referensi API kehadiran untuk B1 Admin dan B1 Checkin: kampus, ibadah, waktu ibadah, sesi, kunjungan, aturan check-in, dan endpoint ekspor."
 ---
 
 # Endpoint Kehadiran
@@ -270,6 +271,6 @@ Melacak rangkaian kehadiran individu, yaitu jumlah minggu berturut-turut seseora
 
 ## Halaman Terkait
 
-- [Endpoint Keanggotaan](./membership) — Orang, kelompok, peran, dan pengelolaan gereja
-- [Autentikasi & Izin](./authentication) — Alur login, JWT, model izin
-- [Struktur Modul](../module-structure) — Pola organisasi kode
+- [Endpoint Keanggotaan](./membership.md) — Orang, kelompok, peran, dan pengelolaan gereja
+- [Autentikasi & Izin](./authentication.md) — Alur login, JWT, model izin
+- [Struktur Modul](../module-structure.md) — Pola organisasi kode

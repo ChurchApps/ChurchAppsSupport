@@ -1,5 +1,6 @@
 ---
 title: "管理设备"
+description: "在 B1 Admin 中配对、标注和移除连接到您账户的 ChurchAppsPlayer 和 FreePlay 屏幕，确保教会显示屏内容及时更新且安全。"
 ---
 
 # 管理设备

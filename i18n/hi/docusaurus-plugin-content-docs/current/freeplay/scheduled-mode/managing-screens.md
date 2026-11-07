@@ -1,5 +1,6 @@
 ---
 title: "स्क्रीन और समूह प्रबंधित करना"
+description: "देखें कि कौन से FreePlay TV ऑनलाइन और रविवार के लिए तैयार हैं, फिर स्क्रीन सेटिंग्स बदलें और FreePlay Admin में एक कैलेंडर साझा करने वाले समूह बनाएँ।"
 ---
 
 # स्क्रीन और समूह प्रबंधित करना
@@ -14,7 +15,7 @@ FreePlay Admin में **Screens** पेज आपके चर्च से 
 <h4>शुरू करने से पहले</h4>
 
 - [admin.freeplay.church](https://admin.freeplay.church) पर FreePlay Admin में साइन इन करें
-- [कम से कम एक स्क्रीन पेयर करें](./pairing-a-screen)
+- [कम से कम एक स्क्रीन पेयर करें](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ FreePlay Admin में **Screens** पेज आपके चर्च से 
 
 स्क्रीन का पेज खोलने के लिए उसका लेबल क्लिक करें। बाईं ओर:
 
-- **Present in browser** - इस स्क्रीन का कैलेंडर आपके ब्राउज़र में पूरी स्क्रीन पर चलाएँ, जैसा वह TV पर दिखता। देखें [Presenting from a Browser](./scheduled-playback#presenting-from-a-browser)
+- **Present in browser** - इस स्क्रीन का कैलेंडर आपके ब्राउज़र में पूरी स्क्रीन पर चलाएँ, जैसा वह TV पर दिखता। देखें [Presenting from a Browser](./scheduled-playback.md#presenting-from-a-browser)
 - **Edit** - लेबल, समूह, या मोड बदलें
 - **More** > **Unpair** - TV का कनेक्शन तोड़ें। वह फिर एक पेयरिंग कोड दिखाने लगता है
 
@@ -93,6 +94,6 @@ FreePlay Admin में **Screens** पेज आपके चर्च से 
 
 ## संबंधित लेख
 
-- **[Pairing a Screen](./pairing-a-screen)** - एक नया TV जोड़ें
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - हर समूह क्या चलाए और उसका default loop क्या हो, यह तय करें
-- **[Scheduled Playback on the TV](./scheduled-playback)** - TV पर "Ready through" तारीख का क्या अर्थ है
+- **[Pairing a Screen](./pairing-a-screen.md)** - एक नया TV जोड़ें
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - हर समूह क्या चलाए और उसका default loop क्या हो, यह तय करें
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - TV पर "Ready through" तारीख का क्या अर्थ है

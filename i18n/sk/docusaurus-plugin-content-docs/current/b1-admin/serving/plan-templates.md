@@ -1,5 +1,6 @@
 ---
 title: "Šablóny plánov"
+description: "Uložte poradie bohoslužby a pozície ako opakovane použiteľnú šablónu v B1 Admin a potom ju jedným kliknutím použite pre budúce plány."
 ---
 
 # Šablóny plánov

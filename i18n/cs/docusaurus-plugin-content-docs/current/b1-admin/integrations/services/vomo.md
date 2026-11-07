@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Propojte registrace dobrovolníků VOMO a odbavení na kiosku s lidmi a skupinami v B1 Admin přes Zapier, včetně oprávnění API klíče a kroků nastavení."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Když projekt ve VOMO skončí, skupinu v B1 vyprázdněte ručně (nebo tento s
 
 ### Odeslání SMS „děkujeme za přihlášení“
 
-V jednom Zapu za sebou zařaďte VOMO Participation → Clearstream Send Text nebo Text In Church Send Message. Obě aplikace mají vlastní akce pro Zapier. Viz [Clearstream](./clearstream) a [Text In Church](./text-in-church).
+V jednom Zapu za sebou zařaďte VOMO Participation → Clearstream Send Text nebo Text In Church Send Message. Obě aplikace mají vlastní akce pro Zapier. Viz [Clearstream](./clearstream.md) a [Text In Church](./text-in-church.md).
 
 ### Zjišťování odpadu dobrovolníků
 
@@ -91,6 +92,6 @@ Naplánujte denní spouštěč *Schedule* v Zapieru, který zavolá Find Organiz
 
 ## Viz také
 
-- [Zapier (přehled)](../zapier) – strana B1 u každého scénáře pro Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) – spojení přihlášek dobrovolníků s SMS potvrzeními
+- [Zapier (přehled)](../zapier.md) – strana B1 u každého scénáře pro Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) – spojení přihlášek dobrovolníků s SMS potvrzeními
 - [Webhooks (referenční příručka pro vývojáře)](/docs/developer/api/webhooks) – události, na které může VOMO reagovat

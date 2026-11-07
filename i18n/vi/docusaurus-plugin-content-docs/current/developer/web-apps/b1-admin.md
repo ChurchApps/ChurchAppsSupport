@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Thiết lập B1 Admin cục bộ: clone bảng điều khiển React/Vite, cấu hình endpoint API trong .env và khởi động máy chủ phát triển để quản lý nhà thờ."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin là bảng điều khiển quản trị nhà thờ, một ứng dụng �
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt **Node.js 22+** và **Git** -- xem [Yêu cầu tiên quyết](../setup/prerequisites)
-- Cấu hình mục tiêu API (demo hoặc cục bộ) -- xem [Biến môi trường](../setup/environment-variables)
+- Cài đặt **Node.js 22+** và **Git** -- xem [Yêu cầu tiên quyết](../setup/prerequisites.md)
+- Cấu hình mục tiêu API (demo hoặc cục bộ) -- xem [Biến môi trường](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Các bản build production được triển khai lên **S3 + CloudFront**:
 3. Việc invalidation CloudFront được kích hoạt để phân phối phiên bản mới
 
 :::tip
-Để xem hướng dẫn triển khai chi tiết, hãy xem hướng dẫn [Triển khai ứng dụng web](../deployment/web-apps).
+Để xem hướng dẫn triển khai chi tiết, hãy xem hướng dẫn [Triển khai ứng dụng web](../deployment/web-apps.md).
 :::

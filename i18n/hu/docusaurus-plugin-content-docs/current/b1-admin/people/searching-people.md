@@ -1,5 +1,6 @@
 ---
 title: "Személyek keresése"
+description: "Keresés a B1 Admin személyi nyilvántartásában név szerint, rendezés és oszlopok választása táblázatban, Advanced Search szűrők, CSV-export."
 ---
 
 # Személyek keresése

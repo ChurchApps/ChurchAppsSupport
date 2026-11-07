@@ -1,5 +1,6 @@
 ---
 title: "설정"
+description: "ChurchApps 프로젝트의 로컬 개발 경로 선택: 프런트엔드 작업은 공유 데모 API에 연결하고, 백엔드 변경은 MySQL과 함께 전체 스택을 로컬에서 실행합니다."
 ---
 
 # 설정
@@ -40,15 +41,15 @@ https://api.demo.churchapps.org/giving
 
 ### 2. 모든 것을 로컬에서 실행
 
-API 코드를 수정하거나 오프라인에서 작업해야 한다면 전체 스택을 로컬에서 실행할 수 있습니다. 이를 위해서는 MySQL 8.0 이상과 추가 설정이 필요합니다. 자세한 안내는 [API 로컬 설정](../api/local-setup) 가이드를 참조하세요.
+API 코드를 수정하거나 오프라인에서 작업해야 한다면 전체 스택을 로컬에서 실행할 수 있습니다. 이를 위해서는 MySQL 8.0 이상과 추가 설정이 필요합니다. 자세한 안내는 [API 로컬 설정](../api/local-setup.md) 가이드를 참조하세요.
 
 ## 시작하기
 
 다음 페이지를 순서대로 따라 하세요:
 
-1. **[사전 요구 사항](prerequisites)** -- 필요한 도구(Node.js, Git, MySQL 등)를 설치합니다
-2. **[프로젝트 개요](project-overview)** -- 어떤 프로젝트가 있고 각각 무엇을 하는지 이해합니다
-3. **[환경 변수](environment-variables)** -- `.env` 파일을 설정하여 모든 구성 요소를 서로 연결합니다
+1. **[사전 요구 사항](./prerequisites.md)** -- 필요한 도구(Node.js, Git, MySQL 등)를 설치합니다
+2. **[프로젝트 개요](./project-overview.md)** -- 어떤 프로젝트가 있고 각각 무엇을 하는지 이해합니다
+3. **[환경 변수](./environment-variables.md)** -- `.env` 파일을 설정하여 모든 구성 요소를 서로 연결합니다
 
 :::info
 각 ChurchApps 프로젝트는 독립된 Git 저장소입니다. 작업하려는 특정 프로젝트만 클론하면 됩니다.

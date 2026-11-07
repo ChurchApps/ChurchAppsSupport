@@ -1,5 +1,6 @@
 ---
 title: "Zgłaszanie wydarzeń i sal"
+description: "Zamów salę lub sprzęt na wydarzenie w portalu członka B1.church, śledź status w zakładce Moje prośby i anuluj rezerwację, dopóki jest oczekująca."
 ---
 
 # Zgłaszanie wydarzeń i sal
@@ -42,11 +43,11 @@ Otwórz **My Requests** na stronie Me. Każde zgłoszenie pokazuje wydarzenie, d
 Dopóki zgłoszenie jest w toku, możesz je wycofać przyciskiem **Cancel request** (zostaniesz poproszony o potwierdzenie — anulowania nie można cofnąć).
 
 :::info
-Zgłoszenia są rozpatrywane przez personel kościoła na [stronie Approvals](../../b1-admin/calendars/approvals) w B1 Admin. To, które sale i zasoby wymagają zatwierdzenia, zależy od kościoła — zobacz [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
+Zgłoszenia są rozpatrywane przez personel kościoła na [stronie Approvals](../../b1-admin/calendars/approvals.md) w B1 Admin. To, które sale i zasoby wymagają zatwierdzenia, zależy od kościoła — zobacz [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Powiązane artykuły
 
-- [Strona Me](../getting-started/me-page) -- Gdzie znajdują się linki do zgłoszeń
-- [Zatwierdzanie kalendarza (B1 Admin)](../../b1-admin/calendars/approvals) -- Jak personel rozpatruje zgłoszenia
-- [Sale i zasoby (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Jak kościoły konfigurują miejsca do rezerwacji
+- [Strona Me](../getting-started/me-page.md) -- Gdzie znajdują się linki do zgłoszeń
+- [Zatwierdzanie kalendarza (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Jak personel rozpatruje zgłoszenia
+- [Sale i zasoby (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Jak kościoły konfigurują miejsca do rezerwacji

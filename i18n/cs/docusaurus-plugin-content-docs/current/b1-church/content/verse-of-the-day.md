@@ -1,5 +1,7 @@
 ---
-title: "Verš dne"
+title: "Verš dne na webu a v portálu B1.church"
+sidebar_label: "Verš dne"
+description: "Prohlížejte obrázek verše dne a dřívější verše, pak je sdílejte nebo stáhněte na webu nebo v portálu B1.church na libovolné obrazovce."
 ---
 
 # Verš dne

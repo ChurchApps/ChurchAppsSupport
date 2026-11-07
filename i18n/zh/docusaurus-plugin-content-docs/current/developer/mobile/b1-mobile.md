@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "在本地设置并运行 B1 Mobile React Native/Expo 应用，配置其 API 端点，并构建 Android 或 iOS 版本。注意：B1 Mobile 已弃用。"
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile 是 ChurchApps 面向会员的主要移动应用，基于 React Native
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 安装 **Node.js** 和 **Expo CLI** -- 请参阅[前置条件](../setup/prerequisites)
+- 安装 **Node.js** 和 **Expo CLI** -- 请参阅[前置条件](../setup/prerequisites.md)
 - 安装 **Android Studio**（用于 Android 模拟器）或 **Xcode**（用于 iOS 模拟器）
-- 配置你的 API 目标（演示或本地）-- 请参阅[环境变量](../setup/environment-variables)
+- 配置你的 API 目标（演示或本地）-- 请参阅[环境变量](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ OTA 更新非常适合仅涉及 JavaScript 的更改。如果你修改了原生�
 
 ## 相关文章
 
-- **[移动应用部署](../deployment/mobile)** -- 构建、提交和部署移动应用的完整指南
-- **[环境变量](../setup/environment-variables)** -- 移动端环境配置的完整参考
+- **[移动应用部署](../deployment/mobile.md)** -- 构建、提交和部署移动应用的完整指南
+- **[环境变量](../setup/environment-variables.md)** -- 移动端环境配置的完整参考

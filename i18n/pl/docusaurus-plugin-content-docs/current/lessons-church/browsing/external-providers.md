@@ -1,5 +1,6 @@
 ---
 title: "Zewnętrzni dostawcy"
+description: "Jak zewnętrzni dostawcy programów nauczania dodają treści do Lessons.church w formacie Open Lesson Format i jak połączyć dostawcę z portalu."
 ---
 
 # Zewnętrzni dostawcy

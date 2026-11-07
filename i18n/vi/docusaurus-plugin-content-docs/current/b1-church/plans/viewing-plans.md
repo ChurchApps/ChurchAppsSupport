@@ -1,5 +1,7 @@
 ---
-title: "Xem kế hoạch"
+title: "Lịch phục vụ của bạn trong Cổng thành viên B1.church"
+sidebar_label: "Xem kế hoạch"
+description: "Kiểm tra các phân công lịch phục vụ trên B1.church, chấp nhận hoặc từ chối yêu cầu, đặt ngày bận, và xem lại lịch sử phục vụ trước đây."
 ---
 
 # Xem kế hoạch

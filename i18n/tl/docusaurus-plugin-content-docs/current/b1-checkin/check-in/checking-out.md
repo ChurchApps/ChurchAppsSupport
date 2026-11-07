@@ -1,5 +1,6 @@
 ---
 title: "Pag-check Out at Kaligtasan ng Bata"
+description: "Mag-check out ng mga bata sa manned na B1 Checkin station gamit ang security code, beripikadong sundo, paging sa magulang, reprint ng label, at emergency broadcast."
 ---
 
 # Pag-check Out at Kaligtasan ng Bata
@@ -14,7 +15,7 @@ Ang check-out ang nagtatapos sa proseso ng check-in ng bata: iprinisenta ng magu
 <h4>Bago Magsimula</h4>
 
 - Available ang check-out sa mga station na nakatakda sa **manned** mode sa admin settings ng kiosk
-- Dapat ay na-[check in](./completing-checkin) na ang mga bata at may naka-print na pickup label na may security code
+- Dapat ay na-[check in](./completing-checkin.md) na ang mga bata at may naka-print na pickup label na may security code
 - Para sa paging at emergency broadcast, kailangang may nakakonektang texting provider ang inyong simbahan sa B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Kung ang pangalang tinype ay tumutugma sa isang taong minarkahang **Not Authoriz
 Kapag nakumpirma na ang sumundo, i-tap ang check out. Ang pangalan ng sumundo ay iniimbak kasama ng attendance record.
 
 :::info
-Ang mga pinagkakatiwalaan at hindi awtorisadong sundo ay pinamamahalaan ng mga staff ng simbahan sa pahina ng bawat tao sa B1 Admin — tingnan ang [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Ang mga pinagkakatiwalaan at hindi awtorisadong sundo ay pinamamahalaan ng mga staff ng simbahan sa pahina ng bawat tao sa B1 Admin — tingnan ang [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Pag-page sa Magulang
@@ -65,6 +66,6 @@ Napupunta ang broadcast sa bawat sambahayang naka-check in para sa napiling serb
 
 ## Mga Kaugnay na Artikulo
 
-- [Pagkumpleto ng Check-In](./completing-checkin) — kung saan nanggagaling ang mga security code at pickup label
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — pag-configure ng mga kapasidad, ratio, mga sundo, at ng kinakailangang texting provider
-- [Pag-setup ng Printer](../getting-started/printer-setup) — configuration ng label printer
+- [Pagkumpleto ng Check-In](./completing-checkin.md) — kung saan nanggagaling ang mga security code at pickup label
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) — pag-configure ng mga kapasidad, ratio, mga sundo, at ng kinakailangang texting provider
+- [Pag-setup ng Printer](../getting-started/printer-setup.md) — configuration ng label printer

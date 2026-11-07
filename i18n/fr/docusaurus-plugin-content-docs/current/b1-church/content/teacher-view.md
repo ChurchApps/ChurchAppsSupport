@@ -1,5 +1,6 @@
 ---
 title: "Vue enseignant pour les leçons"
+description: "Ouvrez une leçon en Vue enseignant plein écran depuis un plan B1.church, naviguez entre les sections, lancez les médias et téléchargez les ressources."
 ---
 
 # Vue enseignant pour les leçons

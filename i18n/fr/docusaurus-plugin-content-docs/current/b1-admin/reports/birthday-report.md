@@ -1,5 +1,6 @@
 ---
 title: "Listes d'anniversaires de naissance et de mariage"
+description: "Listez les anniversaires et anniversaires de mariage d'un mois donné grâce aux filtres de recherche Personnes de B1 Admin, puis affichez ou exportez les dates."
 ---
 
 # Listes d'anniversaires de naissance et de mariage

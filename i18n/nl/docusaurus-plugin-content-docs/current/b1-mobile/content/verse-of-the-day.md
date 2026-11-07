@@ -1,5 +1,7 @@
 ---
-title: "Vers van de dag"
+title: "Vers van de dag in B1 Mobile"
+sidebar_label: "Vers van de dag"
+description: "Open het scherm Vers van de dag in B1 Mobile om het Bijbelvers van vandaag te zien als afbeelding op maat van je telefoon of tablet, dagelijks bijgewerkt."
 ---
 
 # Vers van de dag
@@ -13,7 +15,7 @@ Het scherm Vers van de dag geeft een dagelijks Bijbelvers weer als een mooi opge
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Installeer B1 Mobile](../getting-started/installing) en [meld u aan](../getting-started/logging-in) op uw account
+- [Installeer B1 Mobile](../getting-started/installing.md) en [meld u aan](../getting-started/logging-in.md) op uw account
 - Uw kerk moet de functie Vers van de dag ingeschakeld hebben
 
 </div>
@@ -46,5 +48,5 @@ Het Vers van de dag is een ingebouwde inhoudsfunctie van B1 Mobile. Als u het ni
 
 ## Gerelateerde artikelen
 
-- [Bijbel](./bible) -- Lees volledige passages van de Schrift in de ingebouwde lezer
-- [Preken](./sermons) -- Bekijk opgenomen preken van uw kerk
+- [Bijbel](./bible.md) -- Lees volledige passages van de Schrift in de ingebouwde lezer
+- [Preken](./sermons.md) -- Bekijk opgenomen preken van uw kerk

@@ -1,5 +1,6 @@
 ---
 title: "Podpora více měn"
+description: "Evidujte a vykazujte dary v různých měnách v B1 Admin, včetně ručního zadání, online darů přes Stripe a způsobu přepočtu souhrnných částek."
 ---
 
 # Podpora více měn

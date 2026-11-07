@@ -1,5 +1,6 @@
 ---
 title: "Kuhlela Iprinta"
+description: "Setela iprintha yemalebula yenethiwekhi ye-B1 Checkin: yitfole ku-Wi-Fi yakho, yikhetse, yenta kuphrinta kwekuhlola, bese ugcina kukhetsa kwakho."
 ---
 
 # Kuhlela Iprinta
@@ -13,7 +14,7 @@ I-B1 Church Checkin iyakhona kuphrinta emalebula emagama netincwadzi tekulanda k
 <div class="prereqs">
 <h4>Ngembi Kwekucala</h4>
 
-- [Ngena](./logging-in) ku-B1 Church Checkin bese ukhetsa libandla lakho
+- [Ngena](./logging-in.md) ku-B1 Church Checkin bese ukhetsa libandla lakho
 - Hlanganisa iprinta yemalebula lehambisana nenethiwekhi kunethiwekhi yeWi-Fi lefanako neyethebulethi
 
 </div>
@@ -77,4 +78,4 @@ Nangabe uhambisa i-kiosk kulenye indzawo nobe ushintja kuhlelwa kwakho kwenethiw
 
 ## Tinyatselo Letilandzelako
 
-Nangabe iprinta yakho sekuhlelekile, usulungele kucala kubhalisa. Bona [luchungechunge lwekubhalisa](../check-in/) kute ufundze kutsi lonkhe lolo shubo lusebenta njani, kucala [ngekukhetsa inkhonzo](../check-in/selecting-service).
+Nangabe iprinta yakho sekuhlelekile, usulungele kucala kubhalisa. Bona [luchungechunge lwekubhalisa](../check-in/index.md) kute ufundze kutsi lonkhe lolo shubo lusebenta njani, kucala [ngekukhetsa inkhonzo](../check-in/selecting-service.md).

@@ -1,5 +1,7 @@
 ---
-title: "Pornirea"
+title: "Primii pași cu B1 Mobile (Depreciată)"
+sidebar_label: "Pornirea"
+description: "Configurați B1 Mobile pe telefon: găsiți aplicația, autentificați-vă cu contul ChurchApps și alegeți biserica. Rețineți că B1 Mobile este depreciată în favoarea PWA."
 ---
 
 # Pornirea
@@ -25,10 +27,10 @@ Atât. Odată ce ați selectat biserica, aplicația încarcă identitatea vizual
 
 ## În această secțiune
 
-- [Instalarea aplicației](./installing) -- De unde se descarcă B1 Mobile și cerințele dispozitivului.
-- [Autentificarea](./logging-in) -- Cum vă conectați sau creați un cont nou.
-- [Schimbarea bisericii](./switching-churches) -- Cum comutați între biserici dacă aparțineți la mai multe.
+- [Instalarea aplicației](./installing.md) -- De unde se descarcă B1 Mobile și cerințele dispozitivului.
+- [Autentificarea](./logging-in.md) -- Cum vă conectați sau creați un cont nou.
+- [Schimbarea bisericii](./switching-churches.md) -- Cum comutați între biserici dacă aparțineți la mai multe.
 
 :::tip
-B1 Mobile utilizează același cont ChurchApps ca toate celelalte produse ChurchApps. Dacă aveți deja un cont de la [B1.church](../../b1-church/), B1 Admin sau Lessons.church, puteți utiliza aceleași date de autentificare pentru a vă conecta.
+B1 Mobile utilizează același cont ChurchApps ca toate celelalte produse ChurchApps. Dacă aveți deja un cont de la [B1.church](../../b1-church/index.md), B1 Admin sau Lessons.church, puteți utiliza aceleași date de autentificare pentru a vă conecta.
 :::

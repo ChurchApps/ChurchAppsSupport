@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Lokalna namestitev spletne aplikacije za člane B1App z Next.js 22+, nastavitev API-jevih končnih točk v .env in zagon razvojnega strežnika na vratih 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App je aplikacija za člane cerkve, namenjena javnosti, zgrajena z Next.js. Za
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **Node.js 22+** in **Git** -- glejte [Predpogoji](../setup/prerequisites)
-- Nastavite svoj ciljni API (demo ali lokalni) -- glejte [Okoljske spremenljivke](../setup/environment-variables)
+- Namestite **Node.js 22+** in **Git** -- glejte [Predpogoji](../setup/prerequisites.md)
+- Nastavite svoj ciljni API (demo ali lokalni) -- glejte [Okoljske spremenljivke](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Produkcijske gradnje se namestijo v **S3 + CloudFront**:
 3. Sproži se razveljavitev CloudFront, da se prikaže nova različica
 
 :::tip
-Podrobna navodila za namestitev najdete v vodniku [Namestitev spletnih aplikacij](../deployment/web-apps).
+Podrobna navodila za namestitev najdete v vodniku [Namestitev spletnih aplikacij](../deployment/web-apps.md).
 :::

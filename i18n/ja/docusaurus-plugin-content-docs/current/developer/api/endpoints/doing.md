@@ -1,5 +1,6 @@
 ---
 title: "Doing エンドポイント"
+description: "礼拝プラン、ボランティアの割り当て、タスク、自動化を支える Doing API のエンドポイントリファレンスです。B1 Admin で使われるパス、認証、権限を記載しています。"
 ---
 
 # Doing エンドポイント
@@ -278,6 +279,6 @@ CRUD 基底クラスを拡張（GET `/`、GET `/:id`、POST `/`、DELETE `/:id` 
 
 ## 関連ページ
 
-- [Membership エンドポイント](./membership) — 人物、グループ、役割、権限
-- [Attendance エンドポイント](./attendance) — 礼拝と訪問の記録
-- [モジュール構成](../module-structure) — コードの構成パターン
+- [Membership エンドポイント](./membership.md) — 人物、グループ、役割、権限
+- [Attendance エンドポイント](./attendance.md) — 礼拝と訪問の記録
+- [モジュール構成](../module-structure.md) — コードの構成パターン

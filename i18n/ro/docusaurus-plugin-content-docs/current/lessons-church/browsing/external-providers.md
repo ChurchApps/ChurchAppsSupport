@@ -1,5 +1,6 @@
 ---
 title: "Furnizori externi"
+description: "Aflați cum furnizorii terți de curriculum adaugă conținut în Lessons.church prin Open Lesson Format și cum conectați unul din portal."
 ---
 
 # Furnizori externi

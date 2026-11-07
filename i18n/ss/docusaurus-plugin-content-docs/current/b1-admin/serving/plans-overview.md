@@ -1,5 +1,6 @@
 ---
 title: "Kubuka Konkhe Kwetinhlelo"
+description: "Bona tonkhe tinhlelo temisebenti ngesikhatsi esinyenti ku-B1 Admin ngetibonakalo letimbili, tibone tindzawo letingagcwaliswanga, bese ugcwalisa noma uletsa ngemeyili liqembu kusuka kuletabula yinye."
 ---
 
 # Kubuka Konkhe Kwetinhlelo

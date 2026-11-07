@@ -1,5 +1,6 @@
 ---
 title: "Coupler votre appareil"
+description: "Appairer une TV FreePlay à un type de plan dans B1 Admin avec le code à quatre lettres affiché, puis télécharger les médias pour le mode Plan."
 ---
 
 # Coupler votre appareil
@@ -13,7 +14,7 @@ Pour utiliser le mode Plan, vous couplez votre téléviseur à un type de plan d
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Installez et lancez FreePlay. Voir [Démarrer](../getting-started/)
+- Installez et lancez FreePlay. Voir [Démarrer](../getting-started/index.md)
 - Ayez accès à **B1 Admin** sur un ordinateur ou un téléphone pour effectuer le couplage
 
 </div>
@@ -25,7 +26,7 @@ Pour utiliser le mode Plan, vous couplez votre téléviseur à un type de plan d
 3. FreePlay affiche un code de couplage de quatre lettres en gros caractères, à côté d'un code QR.
 4. Sous le code, un indicateur **En attente de confirmation** clignotant indique que FreePlay attend que vous terminiez le couplage.
 
-Le même code fonctionne pour le [mode programmé](../scheduled-mode/) dans FreePlay Admin et pour le mode Plan dans B1 Admin. Le code QR et l'adresse **freeplay.church/pair** affichés à l'écran ouvrent FreePlay Admin. Pour le mode Plan, ignorez-les et saisissez le code dans B1 Admin comme décrit ci-dessous.
+Le même code fonctionne pour le [mode programmé](../scheduled-mode/index.md) dans FreePlay Admin et pour le mode Plan dans B1 Admin. Le code QR et l'adresse **freeplay.church/pair** affichés à l'écran ouvrent FreePlay Admin. Pour le mode Plan, ignorez-les et saisissez le code dans B1 Admin comme décrit ci-dessous.
 
 ## Saisir le code dans B1 Admin
 
@@ -61,5 +62,5 @@ Les codes de couplage expirent au bout de 15 minutes. FreePlay affiche automatiq
 ## Articles connexes
 
 - **[Vue d'ensemble du mode Plan](./index.md)** -- En quoi le mode Plan diffère du mode programmé
-- **[Coupler un écran](../scheduled-mode/pairing-a-screen)** -- Coupler le même téléviseur à un calendrier dans FreePlay Admin à la place
-- **[Lecture du contenu](../content-providers/playing-content)** -- Commandes du lecteur pour la lecture d'un plan
+- **[Coupler un écran](../scheduled-mode/pairing-a-screen.md)** -- Coupler le même téléviseur à un calendrier dans FreePlay Admin à la place
+- **[Lecture du contenu](../content-providers/playing-content.md)** -- Commandes du lecteur pour la lecture d'un plan

@@ -1,5 +1,6 @@
 ---
 title: "Preken beheren"
+description: "Beheer je preekbibliotheek in B1 Admin: voeg preken toe vanuit YouTube, Vimeo of Facebook, bewerk gegevens en krijg een podcastfeed voor je kerk."
 ---
 
 # Preken beheren
@@ -14,7 +15,7 @@ De pagina Preken geeft uw volledige prekenbibliotheek weer. Vanaf hier kunt u ni
 <h4>Voordat u begint</h4>
 
 - U hebt de machtiging **contentApi.streamingServices.edit** nodig. Zie [Rollen & Machtigingen](../settings/roles-permissions.md) als u geen toegang hebt.
-- Maak minstens één [afspeellijst](playlists) om uw preken in in te delen
+- Maak minstens één [afspeellijst](./playlists.md) om uw preken in in te delen
 - Zorg dat u uw video-ID's of URL's gereed hebt van YouTube, Vimeo of Facebook
 
 </div>
@@ -35,7 +36,7 @@ De pagina Preken geeft uw volledige prekenbibliotheek weer. Vanaf hier kunt u ni
 6. Maak de gewenste wijzigingen en klik op **Opslaan**.
 
 :::tip
-U kunt ook een permanente live stream-URL toevoegen door **Permanente live URL toevoegen** uit de vervolgkeuzelijst **Preek toevoegen** te selecteren. Dit maakt een permanente verbinding met uw YouTube-kanaal's live stream met behulp van uw Channel ID. Zie [Live streaming](live-streaming) voor meer details.
+U kunt ook een permanente live stream-URL toevoegen door **Permanente live URL toevoegen** uit de vervolgkeuzelijst **Preek toevoegen** te selecteren. Dit maakt een permanente verbinding met uw YouTube-kanaal's live stream met behulp van uw Channel ID. Zie [Live streaming](./live-streaming.md) voor meer details.
 :::
 
 ## Een preek bewerken
@@ -64,11 +65,11 @@ Nadat u een preek hebt toegevoegd, kunt u deze voor uitzending op uw live stream
 3. De preek zal op de geplande servicetijd worden afgespeeld.
 
 :::info
-Als u in plaats van één voor één meerdere preken tegelijk wilt importeren, gebruikt u het hulpmiddel [Bulkimport](bulk-import) om video's rechtstreeks van uw YouTube- of Vimeo-account op te halen.
+Als u in plaats van één voor één meerdere preken tegelijk wilt importeren, gebruikt u het hulpmiddel [Bulkimport](./bulk-import.md) om video's rechtstreeks van uw YouTube- of Vimeo-account op te halen.
 :::
 
 ## Volgende stappen
 
-- [Afspeellijsten](playlists) -- Organiseer preken in series
-- [Live streaming](live-streaming) -- Configureer uw streamingschema
-- [Bulkimport](bulk-import) -- Importeer meerdere preken tegelijk
+- [Afspeellijsten](./playlists.md) -- Organiseer preken in series
+- [Live streaming](./live-streaming.md) -- Configureer uw streamingschema
+- [Bulkimport](./bulk-import.md) -- Importeer meerdere preken tegelijk

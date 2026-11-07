@@ -1,5 +1,6 @@
 ---
 title: "Menjelajahi Konten"
+description: "Cara menjelajahi pustaka kurikulum gratis Lessons.church tanpa akun, termasuk tata letak beranda, menjelajah per program, pencarian, dan penyedia eksternal."
 ---
 
 # Menjelajahi Konten

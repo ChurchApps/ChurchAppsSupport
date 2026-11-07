@@ -1,5 +1,7 @@
 ---
-title: "Giver"
+title: "Online giving og donationer på B1.church"
+sidebar_label: "Giver"
+description: "Donér online til din kirke på B1.church uden konto, eller log ind for at administrere tilbagevendende gaver, betalingsmetoder og årsopgørelser."
 ---
 
 # Giver

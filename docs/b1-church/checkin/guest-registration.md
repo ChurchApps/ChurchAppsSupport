@@ -1,5 +1,6 @@
 ---
 title: "Guest Registration"
+description: "Register yourself and your family as first-time guests with the QR form in B1 Checkin so volunteers can check you in when you arrive."
 ---
 
 # Guest Registration
@@ -22,7 +23,7 @@ If you are visiting a church for the first time, you can register yourself and y
 
 Guest registration is designed for visitors who do not yet have an account. On the church's check-in kiosk, tap **Register as guest** to show a QR code that links to the registration page. You can also receive the link from a volunteer or greeter, or find it on a flyer or the church's website.
 
-Don't have a phone handy? In the same QR code window on the kiosk, tap **Register here** to fill in the form on the kiosk itself. See [Registering as a Guest](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) for how this works on the kiosk.
+Don't have a phone handy? In the same QR code window on the kiosk, tap **Register here** to fill in the form on the kiosk itself. See [Registering as a Guest](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) for how this works on the kiosk.
 
 The page opens with the title **Guest Registration**. If the church has added a header photo, it appears at the top of the page; otherwise you'll see a small icon.
 
@@ -51,7 +52,7 @@ Your registration creates records in the church database:
 - **Person records** are created for each family member with a "Visitor" membership status.
 - Any comments you entered are saved as a note on the primary contact's record for church staff to read.
 - If the church has chosen a group for new guests, your family is added to it. The church may also have your attendance recorded automatically if you register during one of that group's scheduled service times.
-- A church volunteer or administrator can then check your family in using the [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kiosk.
+- A church volunteer or administrator can then check your family in using the [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kiosk.
 
 :::info
 If you register again with the same first name and the same email or phone number, the church's records recognize you and reuse your existing profile instead of adding a duplicate. Anyone else is added as new. If you've already registered, you can also just search for your name or phone number on the kiosk.
@@ -63,6 +64,6 @@ If the form asks for your email address, providing it helps the church follow up
 
 ## Related Articles
 
-- [Self Check-In](./self-checkin) -- Check yourself in after registering
-- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests) -- How volunteers add guests at the kiosk
-- [Check-In](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- How church administrators set up QR guest registration
+- [Self Check-In](./self-checkin.md) -- Check yourself in after registering
+- [Adding Guests (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- How volunteers add guests at the kiosk
+- [Check-In](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- How church administrators set up QR guest registration

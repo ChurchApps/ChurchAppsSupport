@@ -1,5 +1,6 @@
 ---
 title: "Salas de Aula"
+description: "Configure e gerencie as salas que organizam a programação de ensino da sua igreja no Lessons.church, de salas e faixas etárias às visões para voluntários."
 ---
 
 # Salas de Aula

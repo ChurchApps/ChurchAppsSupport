@@ -1,5 +1,6 @@
 ---
 title: "在 Railway 上自托管"
+description: "在约 15 分钟内于 Railway 上部署私有的 ChurchApps 实例，然后为 B1 Admin 和 B1App 配置电子邮件、自定义域名、多教会路由、奉献和文件存储。"
 ---
 
 # 在 Railway 上自托管
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Vimeo 讲道支持 |
 | `API_BIBLE_KEY` | 课程和内容中的圣经经文查询 |
 | `YOUVERSION_API_KEY` | YouVersion 圣经集成 |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | 浏览器推送通知（[生成 VAPID 密钥对](./docker#push-notifications)） |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | 浏览器推送通知（[生成 VAPID 密钥对](./docker.md#push-notifications)） |
 | `HUBSPOT_KEY` | 可选的新登记 CRM 同步 |
 
 ## 更新
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## 相关文章
 
-- **[使用 Docker 自托管](./docker)** —— 相同的技术栈，运行在你自己的硬件或 VPS 上
-- **[初始设置](../../getting-started/initial-setup)** —— 创建教会之后的第一步
-- **[网站初始设置](../../b1-admin/website/initial-setup)** —— 配置你教会的公开网站
-- **[奉献设置](../../b1-admin/donations/online-giving-setup)** —— 接入 Stripe 或 PayPal
-- **[本地 API 设置](../api/local-setup)** —— 在本地运行整套环境以进行开发
-- **[API 部署（AWS）](./apis)** —— ChurchApps 官方 SaaS 的部署方式
+- **[使用 Docker 自托管](./docker.md)** —— 相同的技术栈，运行在你自己的硬件或 VPS 上
+- **[初始设置](../../getting-started/initial-setup.md)** —— 创建教会之后的第一步
+- **[网站初始设置](../../b1-admin/website/initial-setup.md)** —— 配置你教会的公开网站
+- **[奉献设置](../../b1-admin/donations/online-giving-setup.md)** —— 接入 Stripe 或 PayPal
+- **[本地 API 设置](../api/local-setup.md)** —— 在本地运行整套环境以进行开发
+- **[API 部署（AWS）](./apis.md)** —— ChurchApps 官方 SaaS 的部署方式

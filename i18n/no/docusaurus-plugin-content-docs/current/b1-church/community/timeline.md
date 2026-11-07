@@ -1,5 +1,6 @@
 ---
 title: "Tidslinje"
+description: "Fanen Timeline i B1.church-medlemsportalen er avviklet. Finn gruppesamtaler, arrangementer, oppgaver og varsler på Me-siden, klokkeikonet og i hver gruppe."
 ---
 
 # Tidslinje
@@ -16,13 +17,13 @@ Den frittstående fanen **Tidslinje** er fjernet. Medlemsportalen åpnes nå på
 | --- | --- |
 | Gruppesamtaler og kunngjøringer | Chatten inne i hver [gruppe](../groups/conversations.md) (**Åpne chat**) |
 | Kommende hendelser for deg og gruppene dine | **Me**-siden (`/mobile/me`) og hver gruppes seksjon **Neste hendelse** |
-| Oppgaver og tjenesteoppdrag | **Me**-siden og [Planer](../plans/) |
+| Oppgaver og tjenesteoppdrag | **Me**-siden og [Planer](../plans/index.md) |
 | Nye prekener | Seksjonen **Siste preken** på Hjem og fanen [Prekener](../content/sermons.md) |
 | Alt som ga deg et varsel | **Bjella**-ikonet i appens topplinje, eller `/mobile/notifications` |
 
 ## Me-siden
 
-[Me-siden](../getting-started/me-page) er det nærmeste erstatningen for det gamle strømmeoppslaget. Den lister opp det som kommer for deg -- tjenesteoppdrag, påmeldinger til hendelser og gruppehendelser -- sammen med skjemaene du har sendt inn, oppmøtehistorikken din og de nyeste varslene dine, og lenker direkte til profilen din, varselinnstillinger, meldinger, gaver og registreringer.
+[Me-siden](../getting-started/me-page.md) er det nærmeste erstatningen for det gamle strømmeoppslaget. Den lister opp det som kommer for deg -- tjenesteoppdrag, påmeldinger til hendelser og gruppehendelser -- sammen med skjemaene du har sendt inn, oppmøtehistorikken din og de nyeste varslene dine, og lenker direkte til profilen din, varselinnstillinger, meldinger, gaver og registreringer.
 
 ## Varsler
 

@@ -1,5 +1,7 @@
 ---
-title: "Profil bearbeiten"
+title: "Profil in der B1 Mobile App bearbeiten"
+sidebar_label: "Profil bearbeiten"
+description: "Aktualisieren Sie Name, E-Mail, Telefon, Adresse und Profilfoto in der B1 Mobile App, damit Gemeindedaten und Verzeichnis aktuell bleiben."
 ---
 
 # Profil bearbeiten
@@ -13,7 +15,7 @@ Auf dem Tab **Profil** kannst du deine persönlichen Angaben aktualisieren, dami
 <div class="prereqs">
 <h4>Bevor du beginnst</h4>
 
-- [B1 Mobile installieren](../getting-started/installing) und [in dein Konto einloggen](../getting-started/logging-in)
+- [B1 Mobile installieren](../getting-started/installing.md) und [in dein Konto einloggen](../getting-started/logging-in.md)
 
 </div>
 
@@ -34,7 +36,7 @@ Dein Profil umfasst folgende persönliche Angaben:
 3. Tippe auf das Feld, das du aktualisieren möchtest, und nimm deine Änderungen vor.
 4. Speichere deine Änderungen, wenn du fertig bist.
 
-Deine aktualisierten Angaben werden automatisch synchronisiert. Wer dein Profil ansieht (abhängig von deinen [Datenschutzeinstellungen](./privacy-settings)), sieht die neuen Daten sofort.
+Deine aktualisierten Angaben werden automatisch synchronisiert. Wer dein Profil ansieht (abhängig von deinen [Datenschutzeinstellungen](./privacy-settings.md)), sieht die neuen Daten sofort.
 
 :::tip
 Halte deine E-Mail-Adresse und Telefonnummer aktuell. Deine Kirche nutzt diese Angaben, um dir wichtige Neuigkeiten und Erinnerungen zu senden.
@@ -46,7 +48,7 @@ Du kannst dein Profilfoto auf dem Tab **Profil** hinzufügen oder ändern. Dein 
 
 ## Änderungen über ChurchApps hinweg
 
-Da alle ChurchApps-Dienste dasselbe Kontosystem nutzen, ist eine Änderung, die du in B1 Mobile vornimmst, sofort in [B1.church](../../b1-church/), in den Verwaltungswerkzeugen deiner Kirche und in allen anderen verbundenen Diensten sichtbar. Du musst deine Angaben nicht an jeder Stelle separat aktualisieren.
+Da alle ChurchApps-Dienste dasselbe Kontosystem nutzen, ist eine Änderung, die du in B1 Mobile vornimmst, sofort in [B1.church](../../b1-church/index.md), in den Verwaltungswerkzeugen deiner Kirche und in allen anderen verbundenen Diensten sichtbar. Du musst deine Angaben nicht an jeder Stelle separat aktualisieren.
 
 :::info
 Manche Kirchen verlangen für bestimmte Profiländerungen die Genehmigung durch einen Administrator. Wenn deine Änderung nicht sofort erscheint, prüfe den Status auf dem Tab **Ausstehend** deines Profilbildschirms.
@@ -54,5 +56,5 @@ Manche Kirchen verlangen für bestimmte Profiländerungen die Genehmigung durch 
 
 ## Verwandte Artikel
 
-- [Haushalt](./household) -- Familienmitglieder anzeigen und verwalten
-- [Datenschutzeinstellungen](./privacy-settings) -- Festlegen, was andere über dich sehen können
+- [Haushalt](./household.md) -- Familienmitglieder anzeigen und verwalten
+- [Datenschutzeinstellungen](./privacy-settings.md) -- Festlegen, was andere über dich sehen können

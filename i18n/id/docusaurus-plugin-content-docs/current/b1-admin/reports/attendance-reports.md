@@ -1,5 +1,6 @@
 ---
 title: "Laporan Kehadiran"
+description: "Pelajari tiga laporan kehadiran B1 Admin (Tren Kehadiran, Kehadiran Grup, Kehadiran Grup Harian) beserta isinya, dan cara menjalankan serta mengekspornya."
 ---
 
 # Laporan Kehadiran

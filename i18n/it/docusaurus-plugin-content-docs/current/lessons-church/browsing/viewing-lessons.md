@@ -1,5 +1,6 @@
 ---
 title: "Visualizzazione delle lezioni"
+description: "Come aprire una lezione su Lessons.church, leggere sezioni e azioni per ruolo, trovare i download e cambiare sede per fascia d'età prima della lezione."
 ---
 
 # Visualizzazione delle lezioni

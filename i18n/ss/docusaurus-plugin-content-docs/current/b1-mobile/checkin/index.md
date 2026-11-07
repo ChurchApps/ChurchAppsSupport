@@ -1,5 +1,7 @@
 ---
-title: "Kubhalisa Kuya Enkhonzweni"
+title: "Kungena Ngefoni Nge-App ye-B1 Mobile"
+sidebar_label: "Kubhalisa Kuya Enkhonzweni"
+description: "Zingenisa wena nemndeni wakho etinkhonzweni telicawe kusuka ku-foni yakho nge-B1 Mobile, ukhetse tinkhonzo namaqembu ngaphambi kwekufika."
 ---
 
 # Kubhalisa Kuya Enkhonzweni
@@ -16,7 +18,7 @@ Inchubo yekubhalisa yindlela lesheshako, lenetitebe letinyenti, lekuhola ekukhet
 
 ## Kucala
 
-Kute ufinyelele ekubhaliseni, vula liphesheya lelitsi **Kubhalisa Kuya Enkhonzweni** ku-B1 Mobile. Kufanele ube ungenile ku-akhawundi yakho kutsi usebentise lesisici. Uma ungakangeni, utawucelwa kutsi [ungene](../getting-started/logging-in) kucala.
+Kute ufinyelele ekubhaliseni, vula liphesheya lelitsi **Kubhalisa Kuya Enkhonzweni** ku-B1 Mobile. Kufanele ube ungenile ku-akhawundi yakho kutsi usebentise lesisici. Uma ungakangeni, utawucelwa kutsi [ungene](../getting-started/logging-in.md) kucala.
 
 :::info
 Lesisici sekubhalisa sidzinga kutsi libandla lakho selisungule tinkhonzo nemacembu ekuba khona etilungiselelweni tekuphatsa. Uma kute tinkhonzo letivela nawuvula sikrini sekubhalisa, kungenteka libandla lakho lisengakalulungiseleli lesisici. Tsindzana nemphatsi welibandla lakho kutfola lusito.
@@ -30,4 +32,4 @@ Lesisici sekubhalisa sidzinga kutsi libandla lakho selisungule tinkhonzo nemacem
 
 ## Tinyatselo Letilandzelako
 
-- [Kutibhalisa](./self-checkin) -- Umhlahlandlela wenyatselo ngayinye wekutibhalisa usebentisa lucingo lwakho
+- [Kutibhalisa](./self-checkin.md) -- Umhlahlandlela wenyatselo ngayinye wekutibhalisa usebentisa lucingo lwakho

@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil und zugewiesene Karten in B1 Mobile"
+sidebar_label: "Profil"
+description: "Verwalten Sie in Ihrem B1-Mobile-Profil Name, Kontaktdaten, Haushalt und Sichtbarkeit der Privatsphäre sowie zugewiesene Karten und Aufgaben."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ Im Tab **Profil** kannst du deine persönlichen Daten anzeigen und bearbeiten, e
 
 ### Haushalt
 
-Der Tab **Haushalt** zeigt deine Familienmitglieder und ihre Rollen in deinem Haushalt. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/) verwendet, mit dem du deine ganze Familie auf einmal einchecken kannst.
+Der Tab **Haushalt** zeigt deine Familienmitglieder und ihre Rollen in deinem Haushalt. Diese Informationen werden für Funktionen wie den [Check-in](../checkin/index.md) verwendet, mit dem du deine ganze Familie auf einmal einchecken kannst.
 
 ### Sichtbarkeit
 
@@ -55,6 +57,6 @@ Tippe auf eine einfache Aufgabe, um zu sehen, von wem sie stammt, wem sie gilt u
 
 ## Nächste Schritte
 
-- [Dein Profil bearbeiten](./editing-profile) -- Name, Kontaktdaten und Foto aktualisieren
-- [Haushalt](./household) -- Familienmitglieder anzeigen und verwalten
-- [Datenschutzeinstellungen](./privacy-settings) -- Festlegen, was andere über dich sehen können
+- [Dein Profil bearbeiten](./editing-profile.md) -- Name, Kontaktdaten und Foto aktualisieren
+- [Haushalt](./household.md) -- Familienmitglieder anzeigen und verwalten
+- [Datenschutzeinstellungen](./privacy-settings.md) -- Festlegen, was andere über dich sehen können

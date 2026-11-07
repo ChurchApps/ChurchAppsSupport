@@ -1,5 +1,6 @@
 ---
 title: "Takvim Onayları"
+description: "B1 Admin'de bekleyen oda ve kaynak rezervasyonlarını inceleyin, çakışmaları kontrol edin, onaylayın ya da reddedin; isterseniz etkinliği yayınlayın."
 ---
 
 # Takvim Onayları
@@ -13,7 +14,7 @@ Onaylar sayfası, yöneticilerin bekleyen oda ve kaynak rezervasyon taleplerini 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [Odalar ve Kaynaklar](rooms-resources) bölümünde odalara veya kaynaklara bir **Onay Grubu** tanımlayın
+- [Odalar ve Kaynaklar](./rooms-resources.md) bölümünde odalara veya kaynaklara bir **Onay Grubu** tanımlayın
 - **Takvimler Yöneticisi** iznine veya **content.edit** iznine sahip olmanız gerekir
 
 </div>
@@ -41,7 +42,7 @@ Herhangi bir rezervasyon talebinde **Onayla** veya **Reddet** düğmesine tıkla
 **Onayla** düğmesine tıkladığınızda, aynı adımda etkinliği de yayımlayabilmeniz için bir **Rezervasyonu onayla** iletişim kutusu açılır:
 
 1. Etkinliği grubunun takviminde herkese açık hale getirmek için **Herkese açık takvimde yayımla** seçeneğini işaretleyin. Etkinliğin görünürlüğünü değiştirmeden rezervasyonu onaylamak için bu seçeneği işaretsiz bırakın.
-2. **Herkese açık takvimde yayımla** işaretlendikten sonra, isterseniz **Ayrıca takvime ekle** seçeneğinden etkinliği [özel takvimlerinizden](curated-calendar) birine de ekleyebilirsiniz. Bu adımı atlamak için **Yok** olarak bırakın. (Bu seçenek yalnızca **content.edit** iznine sahipseniz görünür.)
+2. **Herkese açık takvimde yayımla** işaretlendikten sonra, isterseniz **Ayrıca takvime ekle** seçeneğinden etkinliği [özel takvimlerinizden](./curated-calendar.md) birine de ekleyebilirsiniz. Bu adımı atlamak için **Yok** olarak bırakın. (Bu seçenek yalnızca **content.edit** iznine sahipseniz görünür.)
 3. **Onayla** düğmesine tıklayın.
 
 ## Bekleyen Etkinlikler
@@ -49,10 +50,10 @@ Herhangi bir rezervasyon talebinde **Onayla** veya **Reddet** düğmesine tıkla
 Takvim iş akışınız, etkinliklerin herkese açık hale gelmeden önce onaylanmasını gerektiriyorsa, bekleyen etkinlikler **Etkinlik Talepleri** bölümünde görünür. Etkinliği takvimde yayımlamak için **Onayla**, gönderene değişiklik gerektiğini bildirmek için **Reddet** düğmesine tıklayın.
 
 :::tip
-Bir odanın bu oda için onay gerektirmesini sağlamak amacıyla [Odalar ve Kaynaklar](rooms-resources) bölümünde o odaya bir Onay Grubu tanımlayın. Erişimi olan gruplar etkinlik oluştururken odayı talep edebilir ve bu talepler bu sayfaya düşer.
+Bir odanın bu oda için onay gerektirmesini sağlamak amacıyla [Odalar ve Kaynaklar](./rooms-resources.md) bölümünde o odaya bir Onay Grubu tanımlayın. Erişimi olan gruplar etkinlik oluştururken odayı talep edebilir ve bu talepler bu sayfaya düşer.
 :::
 
 ## İlgili Makaleler
 
-- [Odalar, Kaynaklar ve Planlama](rooms-resources) — rezerve edilebilir odaları ve kaynakları yapılandırın
-- [Takvim Oluşturma](creating-calendars) — takvimleri ve etkinlikleri yönetin
+- [Odalar, Kaynaklar ve Planlama](./rooms-resources.md) — rezerve edilebilir odaları ve kaynakları yapılandırın
+- [Takvim Oluşturma](./creating-calendars.md) — takvimleri ve etkinlikleri yönetin

@@ -1,5 +1,6 @@
 ---
 title: "Kilise Ayarları"
+description: "B1 Admin Kilise Ayarları sayfasında kilisenizin adını, adresini, alt alan adını, saat dilimini, bölge biçimini, kısa mesaj sağlayıcısını ve dosya depolamasını ayarlayın."
 ---
 
 # Kilise Ayarları

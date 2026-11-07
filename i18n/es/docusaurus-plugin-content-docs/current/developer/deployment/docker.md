@@ -1,12 +1,13 @@
 ---
 title: "Autoalojamiento con Docker"
+description: "Instale en su propia máquina una pila privada de B1 Admin, portal de miembros, API y MySQL con Docker, y luego actualícela y haga copias de seguridad con el comando b1."
 ---
 
 # Autoalojamiento con Docker
 
 <div class="article-intro">
 
-Ejecute su propia instancia privada de B1 Admin, del portal de miembros y sitio web de B1, de la API y de una base de datos MySQL en cualquier equipo con Docker: un servidor doméstico, un VPS pequeño o un equipo local. Un comando la instala, un comando la actualiza, y cada actualización toma primero una copia de seguridad. Si prefiere no administrar un servidor, consulte [Autoalojamiento en Railway](./railway-template) como alternativa administrada.
+Ejecute su propia instancia privada de B1 Admin, del portal de miembros y sitio web de B1, de la API y de una base de datos MySQL en cualquier equipo con Docker: un servidor doméstico, un VPS pequeño o un equipo local. Un comando la instala, un comando la actualiza, y cada actualización toma primero una copia de seguridad. Si prefiere no administrar un servidor, consulte [Autoalojamiento en Railway](./railway-template.md) como alternativa administrada.
 
 </div>
 
@@ -94,10 +95,10 @@ Si instaló en `localhost` y después quiere publicarla: apunte el DNS a la máq
 
 Estas funciones funcionan exactamente igual que en Railway: las mismas variables de entorno, configuradas en `.env` en lugar del panel de Railway:
 
-- **[Correo electrónico / SMTP](./railway-template#1-email-highly-recommended)**: guías por proveedor para Resend, Brevo y Gmail
-- **[Multisitio](./railway-template#3-multi-site-multiple-churches-on-one-instance)**: iglesias ilimitadas por instancia. `/` sirve la iglesia cuyo identificador es `DEFAULT_CHURCH_SLUG` (la primera iglesia es `church`); apunte los dominios adicionales al equipo y asígnelos en **Settings → Domains** dentro de B1Admin
-- **[Donaciones en línea](./railway-template#4-online-giving-stripe--paypal)**: se configuran por iglesia en la interfaz de administración
-- **[Integraciones opcionales](./railway-template#6-optional-feature-integrations)**: `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Correo electrónico / SMTP](./railway-template.md#1-email-highly-recommended)**: guías por proveedor para Resend, Brevo y Gmail
+- **[Multisitio](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)**: iglesias ilimitadas por instancia. `/` sirve la iglesia cuyo identificador es `DEFAULT_CHURCH_SLUG` (la primera iglesia es `church`); apunte los dominios adicionales al equipo y asígnelos en **Settings → Domains** dentro de B1Admin
+- **[Donaciones en línea](./railway-template.md#4-online-giving-stripe--paypal)**: se configuran por iglesia en la interfaz de administración
+- **[Integraciones opcionales](./railway-template.md#6-optional-feature-integrations)**: `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Notificaciones push](#push-notifications)**: `WEB_PUSH_*`; el instalador las deja en blanco, así que las push permanecen desactivadas hasta que las agregue
 
 Las invitaciones y otros correos enviados por la iglesia están habilitados automáticamente en una instancia autoalojada (el servicio alojado los limita con una revisión manual para proteger su reputación de envío).
@@ -148,7 +149,7 @@ Tres volúmenes de Docker con nombre guardan todo el estado:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Para bibliotecas multimedia grandes, puede cambiar el almacenamiento de archivos a S3: establezca `FILE_STORE=S3` más las variables `AWS_*` descritas en la [sección de Almacenamiento de archivos de la guía de Railway](./railway-template#5-file-storage). Las copias de la base de datos no incluyen los objetos de S3; active el control de versiones del bucket.
+Para bibliotecas multimedia grandes, puede cambiar el almacenamiento de archivos a S3: establezca `FILE_STORE=S3` más las variables `AWS_*` descritas en la [sección de Almacenamiento de archivos de la guía de Railway](./railway-template.md#5-file-storage). Las copias de la base de datos no incluyen los objetos de S3; active el control de versiones del bucket.
 
 ## Actualizar
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## Artículos relacionados
 
-- **[Autoalojamiento en Railway](./railway-template)**: alternativa de alojamiento administrado, más las guías compartidas de configuración posterior al despliegue
-- **[Configuración inicial](../../getting-started/initial-setup)**: primeros pasos después de crear su iglesia
-- **[Configuración local de la API](../api/local-setup)**: ejecute el stack directamente para desarrollo
+- **[Autoalojamiento en Railway](./railway-template.md)**: alternativa de alojamiento administrado, más las guías compartidas de configuración posterior al despliegue
+- **[Configuración inicial](../../getting-started/initial-setup.md)**: primeros pasos después de crear su iglesia
+- **[Configuración local de la API](../api/local-setup.md)**: ejecute el stack directamente para desarrollo

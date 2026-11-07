@@ -1,5 +1,6 @@
 ---
 title: "Registrando Doações"
+description: "Registre doações no B1 Admin criando um lote, lançando as ofertas uma a uma, importando um CSV ou registrando uma doação no perfil do doador."
 ---
 
 # Registrando Doações

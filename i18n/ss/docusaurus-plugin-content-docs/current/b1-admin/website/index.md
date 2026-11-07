@@ -1,5 +1,6 @@
 ---
 title: "Liwebhusayithi"
+description: "Bona kubuka konkhe kwe-B1 Admin Website builder: emakhasi, ibhulogi, tiblokhi, sitayela, mafayela netikhalenda, netinkhombo tekusetela nemahhayidi wekuhlela."
 ---
 
 # Liwebhusayithi
@@ -26,24 +27,24 @@ Yakha ticenye tekucuketfwa letingasetjentiswa kaningi lotingabeka emakhasini lam
 
 ### Kubukeka (Appearance)
 
-Lungisa sihloko, imibala, imibhalo, ilogo, kanye nekukhweleta kwendzawo yeliwebhusayithi lakho. Ungasebentisa tihloko letakhiwe ngaphambilini kute ucale ngekushesha nome uhlele imininingwane yonkhe nge-color palette editor, tilungiselelo temibhalo, kanye ne-CSS lekhetsile. Buka umculu we- [Appearance](appearance) kutfola imininingwane leyphelele.
+Lungisa sihloko, imibala, imibhalo, ilogo, kanye nekukhweleta kwendzawo yeliwebhusayithi lakho. Ungasebentisa tihloko letakhiwe ngaphambilini kute ucale ngekushesha nome uhlele imininingwane yonkhe nge-color palette editor, tilungiselelo temibhalo, kanye ne-CSS lekhetsile. Buka umculu we- [Appearance](./appearance.md) kutfola imininingwane leyphelele.
 
 ### Emafayela (Files)
 
-Layisha futsi uhlele tonkhe tintfo temidiya yakho -- titfombe, imibhalo, naletinye tifayela -- endzaweni yinye lesisekelo. Sebentisa emafolda kute ugcine tintfo tihlelekile bese ukhopha tilinki temafayela kute utisebentise nakuphi kulisayithi lakho. Buka [Files](files) kutfola imininingwane lengetiwe.
+Layisha futsi uhlele tonkhe tintfo temidiya yakho -- titfombe, imibhalo, naletinye tifayela -- endzaweni yinye lesisekelo. Sebentisa emafolda kute ugcine tintfo tihlelekile bese ukhopha tilinki temafayela kute utisebentise nakuphi kulisayithi lakho. Buka [Files](./files.md) kutfola imininingwane lengetiwe.
 
 ### Emakhalendha (Calendars)
 
 Shicilela emakhalendha etehlakalo kuliwebhusayithi lakho kute tivakashi tibone loko lokwenteka kulibandla lakho. Dala emakhalendha lahlelwe lakhipha tehlakalo etigcele letinyenti kubukeko banye.
 
 :::tip
-Cala nge- [Initial Setup](initial-setup) uma ulungisela liwebhusayithi lakho kwekucala. Ikukhokhela ekulungiseni domain, kudala likhasi lakho lekucala, kanye nekulungisa kubukeka kwelisayithi lakho.
+Cala nge- [Initial Setup](./initial-setup.md) uma ulungisela liwebhusayithi lakho kwekucala. Ikukhokhela ekulungiseni domain, kudala likhasi lakho lekucala, kanye nekulungisa kubukeka kwelisayithi lakho.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Initial Setup](initial-setup) -- Faka liwebhusayithi lakho lisebente kwekucala
-- [Managing Pages](managing-pages) -- Fundza kutsi udala futsi uhlele njani emakhasi akho
-- [Using the Page Editor](page-editor) -- Yakha futsi ulungise kucuketfwa kwekhasi lakho nge-visual editor
-- [Appearance](appearance) -- Lungisa kubukeka nesimo selisayithi lakho
-- [Files](files) -- Layisha futsi uphatse emafayela emidiya
+- [Initial Setup](./initial-setup.md) -- Faka liwebhusayithi lakho lisebente kwekucala
+- [Managing Pages](./managing-pages.md) -- Fundza kutsi udala futsi uhlele njani emakhasi akho
+- [Using the Page Editor](./page-editor.md) -- Yakha futsi ulungise kucuketfwa kwekhasi lakho nge-visual editor
+- [Appearance](./appearance.md) -- Lungisa kubukeka nesimo selisayithi lakho
+- [Files](./files.md) -- Layisha futsi uphatse emafayela emidiya

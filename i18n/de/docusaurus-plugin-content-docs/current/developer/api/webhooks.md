@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Echtzeit-Webhooks in B1 Admin einrichten: Endpunkte und Ereignisse wählen, HMAC-Signaturen prüfen, Wiederholungen steuern und Fehlversuche neu senden."
 ---
 
 # Webhooks
@@ -33,7 +34,7 @@ Gehen Sie zu **Einstellungen → Entwickler → Webhooks → Neuer Webhook**. Ge
 
 ### Über die API
 
-Alle Endpunkte liegen unter dem Basisweg des Mitgliedschaftsmoduls `/membership/webhooks` und erfordern entweder ein JWT von einem Kirchenadministrator mit der Berechtigung `Settings / Edit`, **oder einen [API-Schlüssel](./api-keys) mit dem Umfang `settings:write`**. Die gleichen Routen akzeptieren beide. Dies ist, was Zapier und Make Webhooks im Namen der Kirche registrieren können, wenn ein Zap oder Szenario aktiviert wird.
+Alle Endpunkte liegen unter dem Basisweg des Mitgliedschaftsmoduls `/membership/webhooks` und erfordern entweder ein JWT von einem Kirchenadministrator mit der Berechtigung `Settings / Edit`, **oder einen [API-Schlüssel](./api-keys.md) mit dem Umfang `settings:write`**. Die gleichen Routen akzeptieren beide. Dies ist, was Zapier und Make Webhooks im Namen der Kirche registrieren können, wenn ein Zap oder Szenario aktiviert wird.
 
 ```http
 POST /membership/webhooks

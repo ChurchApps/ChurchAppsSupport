@@ -1,5 +1,6 @@
 ---
 title: "Dane demograficzne"
+description: "Zobacz wiek, płeć, członkostwo, stan cywilny i kampusy swojej wspólnoty w interaktywnych wykresach B1 Admin i przejdź do szczegółów każdej grupy."
 ---
 
 # Dane demograficzne

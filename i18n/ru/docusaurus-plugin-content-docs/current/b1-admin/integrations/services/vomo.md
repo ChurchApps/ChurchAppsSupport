@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Подключите регистрации волонтёров VOMO и регистрацию на киоске к людям и группам B1 Admin через Zapier, включая области доступа API-ключа и шаги настройки."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO это платформа волонтерского взаимодейст
 
 ### Отправьте "спасибо за регистрацию" текст через SMS
 
-Объедините VOMO Participation → Clearstream Send Text или Text In Church Send Message в том же Zap. Оба имеют действия первого класса Zapier — см. [Clearstream](./clearstream) и [Text In Church](./text-in-church).
+Объедините VOMO Participation → Clearstream Send Text или Text In Church Send Message в том же Zap. Оба имеют действия первого класса Zapier — см. [Clearstream](./clearstream.md) и [Text In Church](./text-in-church.md).
 
 ### Обнаружьте отсев
 
@@ -91,6 +92,6 @@ VOMO это платформа волонтерского взаимодейст
 
 ## См. также
 
-- [Zapier (обзор)](../zapier) — B1 сторона каждого рецепта Zapier
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — объедините регистрации волонтеров с подтверждениями SMS
+- [Zapier (обзор)](../zapier.md) — B1 сторона каждого рецепта Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — объедините регистрации волонтеров с подтверждениями SMS
 - [Webhooks (справка разработчика)](/docs/developer/api/webhooks) — события, которые VOMO может запустить

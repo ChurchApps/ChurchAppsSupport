@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Pripojte ChatGPT k dátam vášho zboru v B1 pomocou API kľúča a kladte otázky o ľuďoch, daroch a účasti v B1 Admin v jednoduchom jazyku."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Pripojte ChatGPT k údajom vašej cirkvi v B1 a kladte mu otázky jednoduchým j
 </div>
 
 :::tip Odporúčanie: najprv skúste Claude, je zadarmo
-[Claude](./claude) sa pripája k B1 v **bezplatnom pláne** a nastavenie trvá menej ako 3 minúty. Stačí pridať B1 ako konektor a prihlásiť sa svojím účtom B1. Kľúč nie je potrebný. Je to najjednoduchší spôsob, ako môže vaša cirkev vyskúšať AI s B1, skôr než za niečo zaplatí.
+[Claude](./claude.md) sa pripája k B1 v **bezplatnom pláne** a nastavenie trvá menej ako 3 minúty. Stačí pridať B1 ako konektor a prihlásiť sa svojím účtom B1. Kľúč nie je potrebný. Je to najjednoduchší spôsob, ako môže vaša cirkev vyskúšať AI s B1, skôr než za niečo zaplatí.
 :::
 
 ## Nastavenie
@@ -254,5 +255,5 @@ Ktokoľvek s odkazom môže klásť otázky v prirodzenom jazyku. Rozsahy kľú�
 
 - [API Keys](/docs/developer/api/api-keys): úplný prehľad rozsahov
 - [MCP Server (referencia pre vývojárov)](/docs/developer/api/mcp): podrobnosti protokolu a schémy nástrojov
-- [Claude](./claude): to isté, ale pre modely Anthropic
+- [Claude](./claude.md): to isté, ale pre modely Anthropic
 - [REST API referencia](/docs/developer/api/endpoints): každý endpoint, ktorý môže volať Custom GPT akcia

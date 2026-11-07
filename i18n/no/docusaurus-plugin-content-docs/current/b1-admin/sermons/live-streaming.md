@@ -1,5 +1,7 @@
 ---
-title: "Direktesending"
+title: "Sendetider og oppsett for direktesendinger i B1 Admin"
+sidebar_label: "Direktesending"
+description: "Planlegg ukentlige eller engangssendinger, angi chat- og tidlig videotid, koble til en YouTube-kanal og feilsøk innbygginger i B1 Admin."
 ---
 
 # Direktesending
@@ -15,7 +17,7 @@ Siden Direktesendingstider lar deg konfigurere kirkens sendeplan, administrere g
 
 - Du trenger tillatelsen **contentApi.streamingServices.edit**. Se [Roller og tillatelser](../settings/roles-permissions.md) hvis du ikke har tilgang.
 - Ha YouTube-kanal-ID-en din klar hvis du planlegger å bruke automatisk direktesending
-- Legg til minst én [preken](managing-sermons) eller en permanent direkte-URL for å bruke som kilde for sendingen
+- Legg til minst én [preken](./managing-sermons.md) eller en permanent direkte-URL for å bruke som kilde for sendingen
 
 </div>
 
@@ -76,13 +78,13 @@ For å finne YouTube-kanal-ID-en din går du til avanserte innstillinger for You
 
 ## Tilpasse farger og logo
 
-Sendesiden din bruker innstillingene for [utseende](../website/appearance) på nettstedet ditt:
+Sendesiden din bruker innstillingene for [utseende](../website/appearance.md) på nettstedet ditt:
 
 - **Lys aksentfarge** med mørk tekst brukes til toppteksten.
 - **Mørk aksentfarge** med lys tekst brukes til sidepanelet.
 - **Logoen din for lys bakgrunn** vises på sendesiden. Bruk et bilde med gjennomsiktig bakgrunn og et sideforhold på 4:1.
 
-For å endre disse, gå til **Nettsted** og deretter **Utseende**, og oppdater innstillingene for [fargepalett](../website/appearance#color-palette) og [logo](../website/appearance#logo-and-branding).
+For å endre disse, gå til **Nettsted** og deretter **Utseende**, og oppdater innstillingene for [fargepalett](../website/appearance.md#color-palette) og [logo](../website/appearance.md#logo-and-branding).
 
 ## Legge til vertskap for direktesending
 
@@ -129,5 +131,5 @@ YouTubes automatiske innbygging av kanalens direktesending kan blokkeres når de
 
 ## Neste steg
 
-- [Administrere prekener](managing-sermons) -- Legg til prekener i biblioteket ditt
-- [Spillelister](playlists) -- Organiser prekener i serier
+- [Administrere prekener](./managing-sermons.md) -- Legg til prekener i biblioteket ditt
+- [Spillelister](./playlists.md) -- Organiser prekener i serier

@@ -1,5 +1,6 @@
 ---
 title: "Самостійне розгортання на Railway"
+description: "Розгорніть ChurchApps на Railway приблизно за 15 хвилин, потім налаштуйте email, власні домени, кілька церков, пожертви та сховище файлів."
 ---
 
 # Самостійне розгортання на Railway
@@ -195,7 +196,7 @@ AWS_REGION=us-east-2
 | `VIMEO_TOKEN` | Підтримка проповідей з Vimeo |
 | `API_BIBLE_KEY` | Пошук віршів Біблії в уроках і контенті |
 | `YOUVERSION_API_KEY` | Інтеграція з YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push-сповіщення у браузері ([згенерувати пару ключів VAPID](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Push-сповіщення у браузері ([згенерувати пару ключів VAPID](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Необов'язкова синхронізація з CRM для нових реєстрацій |
 
 ## Оновлення
@@ -234,9 +235,9 @@ AWS_REGION=us-east-2
 
 ## Пов'язані статті
 
-- **[Самостійне розгортання з Docker](./docker)** — той самий стек на вашому власному обладнанні або VPS
-- **[Початкове налаштування](../../getting-started/initial-setup)** — перші кроки після створення вашої церкви
-- **[Початкове налаштування вебсайту](../../b1-admin/website/initial-setup)** — налаштуйте публічний сайт вашої церкви
-- **[Налаштування пожертв](../../b1-admin/donations/online-giving-setup)** — підключіть Stripe або PayPal
-- **[Локальне налаштування API](../api/local-setup)** — запуск стеку локально для розробки
-- **[Розгортання API (AWS)](./apis)** — як розгорнуто офіційний SaaS ChurchApps
+- **[Самостійне розгортання з Docker](./docker.md)** — той самий стек на вашому власному обладнанні або VPS
+- **[Початкове налаштування](../../getting-started/initial-setup.md)** — перші кроки після створення вашої церкви
+- **[Початкове налаштування вебсайту](../../b1-admin/website/initial-setup.md)** — налаштуйте публічний сайт вашої церкви
+- **[Налаштування пожертв](../../b1-admin/donations/online-giving-setup.md)** — підключіть Stripe або PayPal
+- **[Локальне налаштування API](../api/local-setup.md)** — запуск стеку локально для розробки
+- **[Розгортання API (AWS)](./apis.md)** — як розгорнуто офіційний SaaS ChurchApps

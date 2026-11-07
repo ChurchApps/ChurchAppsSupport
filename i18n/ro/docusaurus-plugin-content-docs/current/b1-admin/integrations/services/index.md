@@ -1,5 +1,6 @@
 ---
 title: "Servicii conectate"
+description: "Conectați B1 Admin la Mailchimp, Donorbox, Subsplash, VOMO, Clearstream și alte instrumente prin rețete Zapier sau Make, cu ghiduri pentru fiecare."
 ---
 
 # Servicii conectate
@@ -14,14 +15,14 @@ Cea mai rapidă modalitate de a conecta B1 cu un alt instrument tehnologic pentr
 
 | Serviciu | Categorie | Punte | Ce poți conecta |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | E-mail | Zapier sau Make | Sincronizează persoanele și donatorii noi din B1 într-o audiență Mailchimp |
-| [Donorbox](./donorbox) | Donații | Zapier | Trimite donațiile și donatorii din Donorbox înapoi în B1 |
-| [Subsplash](./subsplash) | Aplicație / Donații | Zapier | Aduce donațiile și persoanele din Subsplash în B1 |
-| [VOMO](./vomo) | Voluntariat | Zapier | Sincronizează înscrierile voluntarilor între grupurile B1 și proiectele VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Declanșează un mesaj text Clearstream din evenimentele B1; preia răspunsurile ca înregistrări B1 |
-| [Text In Church](./text-in-church) | SMS / Fluxuri de lucru | Zapier | Declanșează fluxurile Text In Church din B1; primește date din Connect Card |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier sau Make | Trimite SMS din orice eveniment B1 |
-| [Checkr](./checkr) | Verificări de fundal | Make | Pornește o verificare de fundal când cineva se alătură unei echipe de slujire |
+| [Mailchimp](./mailchimp.md) | E-mail | Zapier sau Make | Sincronizează persoanele și donatorii noi din B1 într-o audiență Mailchimp |
+| [Donorbox](./donorbox.md) | Donații | Zapier | Trimite donațiile și donatorii din Donorbox înapoi în B1 |
+| [Subsplash](./subsplash.md) | Aplicație / Donații | Zapier | Aduce donațiile și persoanele din Subsplash în B1 |
+| [VOMO](./vomo.md) | Voluntariat | Zapier | Sincronizează înscrierile voluntarilor între grupurile B1 și proiectele VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Declanșează un mesaj text Clearstream din evenimentele B1; preia răspunsurile ca înregistrări B1 |
+| [Text In Church](./text-in-church.md) | SMS / Fluxuri de lucru | Zapier | Declanșează fluxurile Text In Church din B1; primește date din Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier sau Make | Trimite SMS din orice eveniment B1 |
+| [Checkr](./checkr.md) | Verificări de fundal | Make | Pornește o verificare de fundal când cineva se alătură unei echipe de slujire |
 
 ## Ce au în comun toate acestea
 
@@ -45,8 +46,8 @@ Am exclus, de asemenea, în mod deliberat instrumentele specifice Planning Cente
 
 ## Vezi și
 
-- [Zapier (prezentare generală)](../zapier): partea B1 a fiecărei rețete Zapier este identică, iar această documentație o acoperă o singură dată
-- [Make (prezentare generală)](../make): la fel pentru scenariile Make
-- [Slack & Discord](../slack-discord): notificări în chat, fără nicio punte
-- [Google Sheets](../google-sheets): exporturi la cerere
+- [Zapier (prezentare generală)](../zapier.md): partea B1 a fiecărei rețete Zapier este identică, iar această documentație o acoperă o singură dată
+- [Make (prezentare generală)](../make.md): la fel pentru scenariile Make
+- [Slack & Discord](../slack-discord.md): notificări în chat, fără nicio punte
+- [Google Sheets](../google-sheets.md): exporturi la cerere
 - [Webhook-uri (referință pentru dezvoltatori)](/docs/developer/api/webhooks): catalogul de evenimente de care depind toate rețetele

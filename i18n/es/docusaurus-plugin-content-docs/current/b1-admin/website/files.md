@@ -1,5 +1,6 @@
 ---
 title: "Archivos"
+description: "Sube, explora y administra imágenes y documentos para el sitio web de tu iglesia en B1 Admin, incluyendo la vinculación de almacenamiento externo para más espacio."
 ---
 
 # Archivos
@@ -13,7 +14,7 @@ La página Archivos es el repositorio central para todos los medios y documentos
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- Completa la [Configuración Inicial](initial-setup) de tu sitio web
+- Completa la [Configuración Inicial](./initial-setup.md) de tu sitio web
 - Optimiza las imágenes antes de cargarlas para tiempos de carga más rápidos
 - Prepara tus archivos en formatos web comunes (PNG, JPG, PDF, etc.)
 
@@ -42,7 +43,7 @@ La tabla de archivos muestra todos los archivos cargados con su **Name** y **Siz
 3. Los archivos que cargues aquí están disponibles para usarse en todas tus páginas web y bloques de contenido.
 
 :::info
-Al construir páginas en [Administración de Páginas](managing-pages), puedes referenciar cualquier archivo cargado aquí por su URL. Esto mantiene todos tus medios organizados en una ubicación central.
+Al construir páginas en [Administración de Páginas](./managing-pages.md), puedes referenciar cualquier archivo cargado aquí por su URL. Esto mantiene todos tus medios organizados en una ubicación central.
 :::
 
 ## Eliminación de Archivos
@@ -57,5 +58,5 @@ Los archivos eliminados no pueden ser recuperados. Verifica dos veces que un arc
 
 ## Próximos Pasos
 
-- [Administración de Páginas](managing-pages) -- Agrega tus archivos cargados a las páginas web
-- [Apariencia](appearance) -- Personaliza el tema visual de tu sitio
+- [Administración de Páginas](./managing-pages.md) -- Agrega tus archivos cargados a las páginas web
+- [Apariencia](./appearance.md) -- Personaliza el tema visual de tu sitio

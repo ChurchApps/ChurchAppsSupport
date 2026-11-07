@@ -1,5 +1,6 @@
 ---
 title: "Kılavuz: Yıl Sonu Bağış Raporları Oluşturma"
+description: "B1 Admin'de yılın bağış kayıtlarını tamamlayın, fon vergi ayarlarını kontrol edin ve her bağışçı için vergi indirimli bağış dökümleri oluşturun."
 ---
 
 # Yıl Sonu Bağış Raporları Oluşturma

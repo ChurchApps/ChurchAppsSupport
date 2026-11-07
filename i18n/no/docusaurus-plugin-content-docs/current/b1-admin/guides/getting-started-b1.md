@@ -1,5 +1,6 @@
 ---
 title: "Guide: Kom i gang med B1 for din menighet"
+description: "Gå gjennom oppsett av en ny menighet i B1 Admin: opprett konto, konfigurer innstillinger, legg til roller, importer medlemmer og ta i bruk kjernefunksjonene."
 ---
 
 # Kom i gang med B1 for din menighet

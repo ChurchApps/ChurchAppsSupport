@@ -1,5 +1,6 @@
 ---
 title: "Avaliação de Risco de Transferência"
+description: "Registro de conformidade da ChurchApps para transferências de dados do Reino Unido/EEE aos EUA no B1 Admin: salvaguardas, subprocessadores e acessos."
 ---
 
 # Avaliação de Risco de Transferência

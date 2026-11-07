@@ -1,5 +1,7 @@
 ---
-title: "Visualización de Planes"
+title: "Ver planes de servicio en B1 Mobile"
+sidebar_label: "Visualización de Planes"
+description: "Revise su horario de servicio pasado y próximo en B1 Mobile, lea los detalles del plan y el orden del servicio, e imprima los planes para ensayos o referencia en bastidores."
 ---
 
 # Visualización de Planes
@@ -13,7 +15,7 @@ La pantalla de planes en B1 Mobile le brinda una imagen completa de su horario d
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instale B1 Mobile](../getting-started/installing) e [inicie sesión](../getting-started/logging-in) en su cuenta
+- [Instale B1 Mobile](../getting-started/installing.md) e [inicie sesión](../getting-started/logging-in.md) en su cuenta
 - Sea asignado a al menos un plan de servicio por su administrador de iglesia
 
 </div>
@@ -61,4 +63,4 @@ Recibirá [notificaciones push](../community/notifications.md) cuando sea asigna
 
 ## Artículos Relacionados
 
-- [Registro de Voluntarios](./volunteer-signup) -- Explore y regístrese para posiciones de voluntarios abiertos
+- [Registro de Voluntarios](./volunteer-signup.md) -- Explore y regístrese para posiciones de voluntarios abiertos

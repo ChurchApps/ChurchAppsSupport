@@ -1,5 +1,6 @@
 ---
 title: "Print Directory"
+description: "Generați din B1 Admin un director tipăribil al membrilor, grupat pe gospodării, cu fotografii, contacte și zile de naștere, pe hârtie letter."
 ---
 
 # Print Directory

@@ -1,5 +1,6 @@
 ---
 title: "Povezovanje naprave"
+description: "Poveži FreePlay TV z vrsto načrta v B1 Admin s štirimestno kodo na zaslonu, nato prenesi medije načrta za predvajanje v načinu Plan Mode."
 ---
 
 # Povezovanje naprave
@@ -13,7 +14,7 @@ Za uporabo načina načrta povežete svoj televizor z vrsto načrta v programu B
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite in zaženite FreePlay. Glejte [Začetek uporabe](../getting-started/)
+- Namestite in zaženite FreePlay. Glejte [Začetek uporabe](../getting-started/index.md)
 - Za dokončanje povezave potrebujete dostop do **B1 Admin** na računalniku ali telefonu
 
 </div>
@@ -25,7 +26,7 @@ Za uporabo načina načrta povežete svoj televizor z vrsto načrta v programu B
 3. FreePlay prikaže štirimestno kodo za povezavo z velikimi črkami poleg kode QR.
 4. Pod kodo se prikaže utripajoča oznaka **Čakam na potrditev**, ki pomeni, da FreePlay čaka, da dokončate povezavo.
 
-Ista koda deluje za [Način urnika](../scheduled-mode/) v FreePlay Admin in za način načrta v B1 Admin. Koda QR in naslov **freeplay.church/pair** na zaslonu odpreta FreePlay Admin. Za način načrta ju prezrite in kodo vnesite v B1 Admin, kot je opisano spodaj.
+Ista koda deluje za [Način urnika](../scheduled-mode/index.md) v FreePlay Admin in za način načrta v B1 Admin. Koda QR in naslov **freeplay.church/pair** na zaslonu odpreta FreePlay Admin. Za način načrta ju prezrite in kodo vnesite v B1 Admin, kot je opisano spodaj.
 
 ## Vnos kode v B1 Admin
 
@@ -61,5 +62,5 @@ Kode za povezavo potečejo po 15 minutah. Ko se stara koda izteče, FreePlay sam
 ## Sorodni članki
 
 - **[Pregled načina načrta](./index.md)** - Kako se način načrta razlikuje od načina urnika
-- **[Povezovanje zaslona](../scheduled-mode/pairing-a-screen)** - Namesto tega isti televizor povežite s koledarjem v FreePlay Admin
-- **[Predvajanje vsebine](../content-providers/playing-content)** - Upravljalniki predvajalnika za predvajanje načrta
+- **[Povezovanje zaslona](../scheduled-mode/pairing-a-screen.md)** - Namesto tega isti televizor povežite s koledarjem v FreePlay Admin
+- **[Predvajanje vsebine](../content-providers/playing-content.md)** - Upravljalniki predvajalnika za predvajanje načrta

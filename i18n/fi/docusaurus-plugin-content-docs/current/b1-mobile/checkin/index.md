@@ -1,5 +1,7 @@
 ---
-title: "Sisäänkirjautuminen"
+title: "Kirjautuminen jumalanpalveluksiin B1 Mobile -sovelluksella"
+sidebar_label: "Sisäänkirjautuminen"
+description: "Kirjaa itsesi ja perheesi jumalanpalveluksiin puhelimellasi B1 Mobile -sovelluksessa valitsemalla palvelut ja ryhmät ennen saapumista."
 ---
 
 # Sisäänkirjautuminen
@@ -16,7 +18,7 @@ Sisäänkirjautuminen on nopea, useavaiheinen prosessi, joka opastaa sinut valit
 
 ## Aloittaminen
 
-Avaa **Sisäänkirjautuminen**-osio B1 Mobilessa. Sinun täytyy olla kirjautunut sisään käyttääksesi tätä ominaisuutta. Jos et ole kirjautunut sisään, sinua pyydetään ensin [kirjautumaan](../getting-started/logging-in).
+Avaa **Sisäänkirjautuminen**-osio B1 Mobilessa. Sinun täytyy olla kirjautunut sisään käyttääksesi tätä ominaisuutta. Jos et ole kirjautunut sisään, sinua pyydetään ensin [kirjautumaan](../getting-started/logging-in.md).
 
 :::info
 Sisäänkirjautuminen edellyttää, että seurakuntasi on määrittänyt jumalanpalvelukset ja läsnäoloryhmät hallintoasetuksissaan. Jos sisäänkirjautumisnäkymässä ei näy yhtään jumalanpalvelusta, seurakunnassasi ei ehkä ole vielä otettu tätä ominaisuutta käyttöön. Pyydä apua seurakuntasi ylläpitäjältä.
@@ -30,4 +32,4 @@ Sisäänkirjautuminen edellyttää, että seurakuntasi on määrittänyt jumalan
 
 ## Seuraavaksi
 
-- [Itsenäinen sisäänkirjautuminen](./self-checkin) -- Vaiheittainen ohje sisäänkirjautumiseen puhelimellasi
+- [Itsenäinen sisäänkirjautuminen](./self-checkin.md) -- Vaiheittainen ohje sisäänkirjautumiseen puhelimellasi

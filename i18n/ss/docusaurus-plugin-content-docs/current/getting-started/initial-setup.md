@@ -1,5 +1,7 @@
 ---
-title: "Kulungiswa Kwasekucaleni"
+title: "Kusetfwa Kwekucala Kwelibandla Ku-B1 Admin"
+sidebar_label: "Kulungiswa Kwasekucaleni"
+description: "Hamba ngekusetfwa kwekucala kwelibandla lelisha ku-B1 Admin: tinhlobonhlobo temininingwane, tinkhangiso, tindzima, nendlela lenconywa yekusetfa bantfu, emaqembu, kuhamba, nekunikela."
 ---
 
 # Kulungiswa Kwasekucaleni

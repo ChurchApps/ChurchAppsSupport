@@ -1,5 +1,6 @@
 ---
 title: "Granskning av begäranden om kontoradering"
+description: "Godkänn eller avslå medlemmars begäran om kontoradering i B1 Admin, skicka dem via Directory Approval Group och följ GDPR:s tidsfrist på 30 dagar."
 ---
 
 # Granskning av begäranden om kontoradering

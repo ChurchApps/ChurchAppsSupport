@@ -1,5 +1,6 @@
 ---
 title: "Beleženje donacij"
+description: "Beležite cerkvene darove v B1 Admin: ustvarite serijo, vnesite darila posamezno, uvozite CSV ali zabeležite eno darilo iz profila darovalca."
 ---
 
 # Beleženje donacij

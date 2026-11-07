@@ -1,5 +1,6 @@
 ---
 title: "Ustvarjanje skupin"
+description: "Nastavite novo skupino v B1 Admin: od izbire kategorije in imena do pravil pridružitve, oznak, sporočanja in nastavitev prisotnosti."
 ---
 
 # Ustvarjanje skupin

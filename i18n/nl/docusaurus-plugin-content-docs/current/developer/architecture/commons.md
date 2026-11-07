@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Hoe door gebruikers ingediende liederen, lessen en sjablonen via de moderatiewachtrij in B1 Admin's Server Admin worden gepubliceerd."
 ---
 
 # Content Commons: gedeelde bibliotheek en moderatie

@@ -1,12 +1,13 @@
 ---
 title: "Routarea site-urilor și multi-site"
+description: "Cum asociază B1.church subdomeniile și domeniile personalizate cu biserica sau site-ul secundar potrivit, plus proxy-ul Caddy de la margine care gestionează TLS pentru domeniile personalizate."
 ---
 
 # Routarea site-urilor și multi-site
 
 <div class="article-intro">
 
-O singură biserică poate acum servi mai multe site-uri web distincte, iar fiecare poate fi găzduit pe un subdomeniu `*.b1.church` sau pe un domeniu personalizat, deținut de biserică. Această pagină descrie stratul de routare de *sub* constructor: cum se rezolvă o cerere primită către o biserică **și** către un anumit site, modelul de date multi-site (valoarea sentinelă `siteId` care păstrează funcționarea tuturor site-urilor existente) și nodul de domeniu personalizat — un proxy Caddy autogestionat pe EC2, care termină TLS și rescrie fiecare domeniu al bisericii către upstream-ul său `*.b1.church`. Pentru ceea ce se afișează efectiv odată ce o cerere a fost rezolvată — arborele pagină/secțiune/element — vezi [Constructorul de site-uri](./website-builder).
+O singură biserică poate acum servi mai multe site-uri web distincte, iar fiecare poate fi găzduit pe un subdomeniu `*.b1.church` sau pe un domeniu personalizat, deținut de biserică. Această pagină descrie stratul de routare de *sub* constructor: cum se rezolvă o cerere primită către o biserică **și** către un anumit site, modelul de date multi-site (valoarea sentinelă `siteId` care păstrează funcționarea tuturor site-urilor existente) și nodul de domeniu personalizat — un proxy Caddy autogestionat pe EC2, care termină TLS și rescrie fiecare domeniu al bisericii către upstream-ul său `*.b1.church`. Pentru ceea ce se afișează efectiv odată ce o cerere a fost rezolvată — arborele pagină/secțiune/element — vezi [Constructorul de site-uri](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ Rândurile `www.*` sunt excluse din hartă; Caddy servește `www.{host}` printr-
 
 ### Starea curentă — configurație statică, fără stare de rulare
 
-Mașina (EC2 Windows în spatele unui Elastic IP permanent) rulează Caddy dintr-un **Caddyfile static**: TLS la cerere al cărui `ask` indică `/membership/domains/authorize`, plus un fișier de hartă host→upstream reîmprospătat la fiecare 5 minute din `/membership/domains/hostmap` de către o sarcină programată, care se încheie cu un `caddy reload` grațios. Configurația supraviețuiește repornirilor fără nicio stare de rulare — fără ritualul de re-inițializare — iar un SNI necunoscut este **refuzat la TLS** (nu se emite niciun certificat pentru un host pe care `authorize` îl respinge), în timp ce un host autorizat, dar încă nemapat (un domeniu nou în fereastra de sincronizare), primește un 404 curat. Domeniile noi devin rutabile în ~5 minute de la salvare; certificatele lor sunt emise la prima accesare. Configurarea/instalarea, operarea și capcanele verificate în practică: [Proxy Caddy pentru domenii personalizate](../deployment/caddy-proxy).
+Mașina (EC2 Windows în spatele unui Elastic IP permanent) rulează Caddy dintr-un **Caddyfile static**: TLS la cerere al cărui `ask` indică `/membership/domains/authorize`, plus un fișier de hartă host→upstream reîmprospătat la fiecare 5 minute din `/membership/domains/hostmap` de către o sarcină programată, care se încheie cu un `caddy reload` grațios. Configurația supraviețuiește repornirilor fără nicio stare de rulare — fără ritualul de re-inițializare — iar un SNI necunoscut este **refuzat la TLS** (nu se emite niciun certificat pentru un host pe care `authorize` îl respinge), în timp ce un host autorizat, dar încă nemapat (un domeniu nou în fereastra de sincronizare), primește un 404 curat. Domeniile noi devin rutabile în ~5 minute de la salvare; certificatele lor sunt emise la prima accesare. Configurarea/instalarea, operarea și capcanele verificate în practică: [Proxy Caddy pentru domenii personalizate](../deployment/caddy-proxy.md).
 
 ### Împingerea de rulare moștenită — cale de revenire, în curs de ștergere
 
@@ -209,8 +210,8 @@ Mașina (EC2 Windows în spatele unui Elastic IP permanent) rulează Caddy dintr
 
 ## Pagini conexe
 
-- [Proxy Caddy pentru domenii personalizate](../deployment/caddy-proxy) — mașina edge în sine: configurarea unei mașini noi, serviciul WinSW, sarcina de sincronizare a hărții și capcanele operaționale
-- [Constructorul de site-uri](./website-builder) — arborele pagină/secțiune/element, randatoarele, blogul, SEO și generarea cu AI (ceea ce se afișează odată ce o cerere a fost rezolvată către o biserică/site)
-- [Endpoint-uri de conținut](../api/endpoints/content) — suprafața REST pentru pagini, blocuri, linkuri și stiluri globale, toate acum conștiente de `?siteId=`
-- [B1App](../web-apps/b1-app) — aplicația Next.js care găzduiește middleware-ul și routarea `[sdSlug]`
-- [Implementarea aplicațiilor web](../deployment/web-apps) — cum este implementată B1App pe Vercel
+- [Proxy Caddy pentru domenii personalizate](../deployment/caddy-proxy.md) — mașina edge în sine: configurarea unei mașini noi, serviciul WinSW, sarcina de sincronizare a hărții și capcanele operaționale
+- [Constructorul de site-uri](./website-builder.md) — arborele pagină/secțiune/element, randatoarele, blogul, SEO și generarea cu AI (ceea ce se afișează odată ce o cerere a fost rezolvată către o biserică/site)
+- [Endpoint-uri de conținut](../api/endpoints/content.md) — suprafața REST pentru pagini, blocuri, linkuri și stiluri globale, toate acum conștiente de `?siteId=`
+- [B1App](../web-apps/b1-app.md) — aplicația Next.js care găzduiește middleware-ul și routarea `[sdSlug]`
+- [Implementarea aplicațiilor web](../deployment/web-apps.md) — cum este implementată B1App pe Vercel

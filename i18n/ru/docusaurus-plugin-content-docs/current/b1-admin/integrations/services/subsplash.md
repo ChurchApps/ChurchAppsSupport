@@ -1,5 +1,6 @@
 ---
 title: "Subsplash"
+description: "Подключите пожертвования Subsplash, новых людей и ответы форм к B1 через Zapier, чтобы взносы и профили автоматически попадали в B1 Admin."
 ---
 
 # Subsplash
@@ -91,6 +92,6 @@ title: "Subsplash"
 
 ## См. также
 
-- [Donorbox](./donorbox) — такой же принцип рецептов, но для другой платформы пожертвований
-- [Zapier (обзор)](../zapier) — сторона B1 во всех рецептах Zapier
+- [Donorbox](./donorbox.md) — такой же принцип рецептов, но для другой платформы пожертвований
+- [Zapier (обзор)](../zapier.md) — сторона B1 во всех рецептах Zapier
 - [Инструкция по интеграции Subsplash с Zapier](https://support.subsplash.com/en/articles/9825926-zapier-integration) (документация Subsplash)

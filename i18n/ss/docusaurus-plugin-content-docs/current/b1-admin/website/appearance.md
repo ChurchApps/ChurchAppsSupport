@@ -1,5 +1,6 @@
 ---
 title: "Kubukeka"
+description: "Setela emibala, emafonti, sikhala, logo, nekuhamba kwewebhusayithi yesonto lakho ku-B1 Admin, kanye netinhlelo, i-GA4 analytics, ukuhlanganiswa kwetikhombo, nekhodi lesitayela lelisungulwe."
 ---
 
 # Kubukeka
@@ -13,7 +14,7 @@ Likhasi le-Appearance likuvumela kutsi ulungise sonkhe simo nekubukeka kweliwebh
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Cedza [Initial Setup](initial-setup) yeliwebhusayithi lakho
+- Cedza [Initial Setup](./initial-setup.md) yeliwebhusayithi lakho
 - Yenta kutsi ilogo yelibandla lakho ilungile ngesifomeni se-PNG lenesizinda lesicondzekako kanye ne-aspect ratio ye-4:1
 - Yati imibala yebrendi welibandla lakho (emanani e-hex) uma unayo i-style guide lesele ikhona
 
@@ -86,5 +87,5 @@ Uma ufuna indzawo lekhawuleta yekucala, i- **Suggested Palettes** esigabeni se-C
 
 ## Tinyatselo Letilandzelako
 
-- [Managing Pages](managing-pages) -- Yakha futsi uhlele emakhasi eliwebhusayithi lakho
-- [Files](files) -- Layisha tintfo temidiya yelisayithi lakho
+- [Managing Pages](./managing-pages.md) -- Yakha futsi uhlele emakhasi eliwebhusayithi lakho
+- [Files](./files.md) -- Layisha tintfo temidiya yelisayithi lakho

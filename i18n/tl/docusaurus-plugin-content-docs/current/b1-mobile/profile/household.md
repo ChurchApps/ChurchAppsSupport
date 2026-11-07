@@ -1,5 +1,6 @@
 ---
 title: "Sambahayan"
+description: "Tingnan ang iyong sambahayan at kung paano konektado ang mga miyembro sa Profile tab ng B1 Mobile, na ginagamit ng check-in at iba pang tampok."
 ---
 
 # Sambahayan
@@ -13,7 +14,7 @@ Ang tab na **Household** sa iyong Profile screen ay nagpapakita ng iyong mga miy
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 
 </div>
 
@@ -33,7 +34,7 @@ Ang impormasyon ng iyong sambahayan ay ginagamit ng ilang feature sa B1 Mobile a
 
 - **Check-in** -- Kapag [nag-check in](../checkin/self-checkin.md) ka para sa isang serbisyo o kaganapan, maaari mong i-check in ang buong sambahayan mo nang sabay-sabay sa halip na i-check in ang bawat tao nang paisa-isa.
 - **Mga rekord ng simbahan** -- Ginagamit ng iyong simbahan ang data ng sambahayan para panatilihing maayos ang mga rekord ng pamilya at para makipag-usap sa iyong pamilya bilang isang yunit.
-- **Direktoryo** -- Maaaring makita ng ibang miyembro ang iyong impormasyon ng sambahayan sa [direktoryo ng simbahan](../community/member-directory.md), depende sa iyong [mga setting ng privacy](./privacy-settings).
+- **Direktoryo** -- Maaaring makita ng ibang miyembro ang iyong impormasyon ng sambahayan sa [direktoryo ng simbahan](../community/member-directory.md), depende sa iyong [mga setting ng privacy](./privacy-settings.md).
 
 ## Pagtingin sa Iyong Sambahayan
 
@@ -47,10 +48,10 @@ Ang pagiging miyembro ng sambahayan ay karaniwang pinapamahalaan ng iyong church
 
 ## Pananatiling Updated ng Impormasyon
 
-Kung kailangang i-update ang mga detalye ng isang miyembro ng pamilya, maaari nilang [i-edit ang kanilang sariling profile](./editing-profile), o maaari kang makipag-ugnayan sa iyong church administrator para gumawa ng mga pagbabago. Ang pagpapanatiling tama ng impormasyon ng sambahayan ay tinitiyak na maayos na gumagana ang mga feature tulad ng [check-in](../checkin/) para sa buong pamilya mo.
+Kung kailangang i-update ang mga detalye ng isang miyembro ng pamilya, maaari nilang [i-edit ang kanilang sariling profile](./editing-profile.md), o maaari kang makipag-ugnayan sa iyong church administrator para gumawa ng mga pagbabago. Ang pagpapanatiling tama ng impormasyon ng sambahayan ay tinitiyak na maayos na gumagana ang mga feature tulad ng [check-in](../checkin/index.md) para sa buong pamilya mo.
 
 ## Mga Kaugnay na Artikulo
 
 - [Self Check-In](../checkin/self-checkin.md) -- I-check in ang iyong mga miyembro ng sambahayan para sa mga serbisyo
-- [Pag-edit ng Iyong Profile](./editing-profile) -- I-update ang iyong sariling personal na impormasyon
-- [Mga Setting ng Privacy](./privacy-settings) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyong sambahayan
+- [Pag-edit ng Iyong Profile](./editing-profile.md) -- I-update ang iyong sariling personal na impormasyon
+- [Mga Setting ng Privacy](./privacy-settings.md) -- Kontrolin kung ano ang makikita ng iba tungkol sa iyong sambahayan

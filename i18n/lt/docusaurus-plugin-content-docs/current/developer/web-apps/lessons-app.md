@@ -1,5 +1,6 @@
 ---
 title: "LessonsApp"
+description: "LessonsApp (Next.js pamokų redaktorius) vietinė sąranka su Node.js 22+, nukreipimas į vietinį LessonsApi ir kūrimo bei S3/CloudFront diegimas."
 ---
 
 # LessonsApp
@@ -13,8 +14,8 @@ LessonsApp yra pamokų turinio valdymo programa, skirta [Lessons.church](https:/
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite **Node.js 22+** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites)
-- Sukonfigūruokite API tikslą (vietinis LessonsApi) -- žr. [Aplinkos kintamieji](../setup/environment-variables)
+- Įdiekite **Node.js 22+** ir **Git** -- žr. [Reikalavimai](../setup/prerequisites.md)
+- Sukonfigūruokite API tikslą (vietinis LessonsApi) -- žr. [Aplinkos kintamieji](../setup/environment-variables.md)
 
 </div>
 
@@ -81,5 +82,5 @@ Produkcinės versijos diegiamos naudojant **S3 + CloudFront**:
 3. Paleidžiamas CloudFront talpyklos išvalymas, kad būtų rodoma nauja versija
 
 :::tip
-Išsamias diegimo instrukcijas rasite [Web App diegimo](../deployment/web-apps) vadove.
+Išsamias diegimo instrukcijas rasite [Web App diegimo](../deployment/web-apps.md) vadove.
 :::

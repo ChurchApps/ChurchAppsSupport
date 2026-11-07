@@ -1,5 +1,6 @@
 ---
 title: "Donation Summary"
+description: "Run the Donation Summary report in B1 Admin to see total giving, unique donor count, and amounts by fund for any date range you choose."
 ---
 
 # Donation Summary

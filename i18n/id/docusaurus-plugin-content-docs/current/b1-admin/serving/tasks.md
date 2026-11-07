@@ -1,5 +1,6 @@
 ---
 title: "Tugas"
+description: "Buat, tugaskan, dan tutup tugas di B1 Admin, temukan di Serving > My Work, dan atur pengingat tenggat agar tindak lanjut tidak terlewat."
 ---
 
 # Tugas

@@ -1,5 +1,6 @@
 ---
 title: "Inzendingen beheren"
+description: "Bekijk, print en wijs formulierinzendingen opnieuw toe in B1 Admin, stuur reacties naar de juiste persoon en volg bezoekerskaarten en gebedsverzoeken op."
 ---
 
 # Inzendingen beheren

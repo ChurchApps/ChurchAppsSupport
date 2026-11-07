@@ -1,5 +1,6 @@
 ---
 title: "Pola niestandardowe"
+description: "Definiuj w B1 Admin pola niestandardowe, np. daty ważności zaświadczeń o niekaralności lub rozmiary koszulek, i wyszukuj oraz filtruj osoby po tych polach."
 ---
 
 # Pola niestandardowe

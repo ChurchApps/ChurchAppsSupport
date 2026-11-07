@@ -1,5 +1,6 @@
 ---
 title: "Išvaizda"
+description: "Nustatykite bažnyčios svetainės spalvas, šriftus, tarpus, logotipą ir navigaciją B1 Admin, taip pat valdiklius, GA4 analitiką, nukreipimus ir CSS."
 ---
 
 # Išvaizda
@@ -13,7 +14,7 @@ Puslapis „Išvaizda" leidžia pritaikyti bendrą jūsų bažnyčios svetainės
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Atlikite [pradinę sąranką](initial-setup) savo svetainei
+- Atlikite [pradinę sąranką](./initial-setup.md) savo svetainei
 - Paruoškite bažnyčios logotipą PNG formatu su permatomu fonu ir 4:1 kraštinių santykiu
 - Žinokite savo bažnyčios prekės ženklo spalvas (šešioliktainės reikšmės), jei turite esamą stiliaus vadovą
 
@@ -98,7 +99,7 @@ Pasirinktinis CSS yra galingas, bet netinkamai naudojamas gali sugadinti svetain
 :::
 
 :::info
-Jūsų svetainėje taikoma Turinio saugumo politika (Content Security Policy), kuri blokuoja įterptinius scenarijus iš bet kokio kito šaltinio. Čia esantis laukas **Pasirinktinis HTML** ir [HTML elementas](page-editor#using-the-html-element) atskiruose puslapiuose yra patikimos išimtys. Čia įrašytas kodas vykdomas tiesiogiai, todėl įklijuokite tik scenarijus iš patikimų šaltinių (sekimo žymas, pokalbių valdiklius ir panašius įterpimus).
+Jūsų svetainėje taikoma Turinio saugumo politika (Content Security Policy), kuri blokuoja įterptinius scenarijus iš bet kokio kito šaltinio. Čia esantis laukas **Pasirinktinis HTML** ir [HTML elementas](./page-editor.md#using-the-html-element) atskiruose puslapiuose yra patikimos išimtys. Čia įrašytas kodas vykdomas tiesiogiai, todėl įklijuokite tik scenarijus iš patikimų šaltinių (sekimo žymas, pokalbių valdiklius ir panašius įterpimus).
 :::
 
 ## Stiliaus temos
@@ -107,5 +108,5 @@ Jei norite greito starto taško, skyriuje **Spalvų paletė** esančios **Siūlo
 
 ## Kiti žingsniai
 
-- [Puslapių tvarkymas](managing-pages): kurkite ir tvarkykite savo svetainės puslapius
-- [Failai](files): įkelkite savo svetainei skirtą mediją
+- [Puslapių tvarkymas](./managing-pages.md): kurkite ir tvarkykite savo svetainės puslapius
+- [Failai](./files.md): įkelkite savo svetainei skirtą mediją

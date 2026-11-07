@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Sett opp B1 Admin lokalt: klon React/Vite-dashbordet, konfigurer API-endepunktene i .env og start utviklingsserveren for kirkeadministrasjon."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin er administrasjonsdashbordet for kirken -- en React-enkeltsideapplikasjo
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Installer **Node.js 22+** og **Git** -- se [Forutsetninger](../setup/prerequisites)
-- Konfigurer API-målet ditt (demo eller lokalt) -- se [Miljøvariabler](../setup/environment-variables)
+- Installer **Node.js 22+** og **Git** -- se [Forutsetninger](../setup/prerequisites.md)
+- Konfigurer API-målet ditt (demo eller lokalt) -- se [Miljøvariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Produksjonsbygg distribueres til **S3 + CloudFront**:
 3. CloudFront-invalidering utløses for å servere den nye versjonen
 
 :::tip
-For detaljerte distribusjonsinstruksjoner, se veiledningen [Distribusjon av webapper](../deployment/web-apps).
+For detaljerte distribusjonsinstruksjoner, se veiledningen [Distribusjon av webapper](../deployment/web-apps.md).
 :::

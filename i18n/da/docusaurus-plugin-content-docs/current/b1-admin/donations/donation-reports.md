@@ -1,5 +1,6 @@
 ---
 title: "Donationsrapporter"
+description: "Gennemgå gavetotaler, frafald blandt givere og batchdetaljer i B1 Admin med dashboardet Donations Summary, visningen Lapsed Givers og CSV-eksport."
 ---
 
 # Donationsrapporter

@@ -1,5 +1,6 @@
 ---
 title: "Amministrazione"
+description: "Panoramica dell'area admin di Lessons.church: gestione di programmi, studi, lezioni, risorse, statistiche e provider di curricula esterni."
 ---
 
 # Amministrazione

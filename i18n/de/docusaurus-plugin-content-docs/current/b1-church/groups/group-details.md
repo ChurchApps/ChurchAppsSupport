@@ -1,5 +1,7 @@
 ---
-title: "Gruppendetails"
+title: "Gruppendetails im Mitgliederportal von B1.church"
+sidebar_label: "Gruppendetails"
+description: "Gruppen-Detailseiten in B1 Admin (Ansicht für Mitglieder): Termine, Treffen, Formulare und Mitglieder sehen, beitreten oder Beitritt anfragen."
 ---
 
 # Gruppendetails

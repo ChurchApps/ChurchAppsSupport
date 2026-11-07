@@ -1,5 +1,6 @@
 ---
 title: "Bağışlar"
+description: "B1 Admin'de kilise bağışlarını kaydedin, düzenleyin ve raporlayın: toplu kayıtlar, fonlar, yıl sonu dökümleri ve Stripe veya PayPal çevrimiçi bağışları."
 ---
 
 # Bağışlar

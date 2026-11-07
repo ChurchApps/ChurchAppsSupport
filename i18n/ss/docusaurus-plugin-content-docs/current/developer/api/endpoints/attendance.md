@@ -1,5 +1,6 @@
 ---
 title: "Ema-Endpoint E-Attendance"
+description: "Incwadzi ye-API yekuvakashela ye-B1 Admin ne-B1 Checkin: emakhampasi, tinkhonzo, tikhatsi tenkhonzo, tiseshini, tivakashi, imitsetfo yekungena, nemaendpoint ekutfumela kunye."
 ---
 
 # Ema-Endpoint E-Attendance
@@ -266,6 +267,6 @@ Ilandzelela kulandzelana kwekubakhona kwemuntfu ngamunye -- emaviki lalandzelana
 
 ## Emakhasi Lahlobene
 
-- [Membership Endpoints](./membership) — Bantfu, emacembu, ema-role, kanye nekuphatsa libandla
-- [Authentication & Permissions](./authentication) — Inchubo yekungena, JWT, sifanekiso semvumo
-- [Module Structure](../module-structure) — Sifanekiso sekuhlelwa kwekhodi
+- [Membership Endpoints](./membership.md) — Bantfu, emacembu, ema-role, kanye nekuphatsa libandla
+- [Authentication & Permissions](./authentication.md) — Inchubo yekungena, JWT, sifanekiso semvumo
+- [Module Structure](../module-structure.md) — Sifanekiso sekuhlelwa kwekhodi

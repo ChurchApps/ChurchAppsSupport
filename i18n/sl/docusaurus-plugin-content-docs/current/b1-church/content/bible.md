@@ -1,5 +1,7 @@
 ---
-title: "Biblija"
+title: "Branje Svetega pisma na B1.church"
+sidebar_label: "Biblija"
+description: "Berite Sveto pismo v bralniku B1.church z nadzorom za knjigo, poglavje in prevod ter s stranjo Biblija za dnevno branje."
 ---
 
 # Biblija

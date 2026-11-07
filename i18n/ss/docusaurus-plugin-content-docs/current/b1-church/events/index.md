@@ -1,5 +1,7 @@
 ---
-title: "Imicimbi"
+title: "Emicimbi Yesonto ku-B1.church: Phepha Futsi Bhalisa"
+sidebar_label: "Imicimbi"
+description: "Phepha emicimbi yesonto letayo ku-B1.church, hlola simo sekubhalisa, bese ubhalisa noma wengete emicimbi ekhalendeni yakho."
 ---
 
 # Imicimbi
@@ -40,7 +42,7 @@ Nangabe umcimbi sewugcwele, kungenteka usakwati kungena eluhlwini **lwekulindza*
 
 ## Fundza Kabanti
 
-- [Kubhalisela Imicimbi](./registering) -- Luhlaka lwenyatselo nganye lwekubhalisela umcimbi
-- [Kubhaliswa Kwami](./my-registrations) -- Bona kubhaliswa kwakho, khokha imali losele, hlela, nome ukhansele
-- [Kucela Imicimbi Nemakamelo](./requesting-events) -- Cela umcimbi kanye nemakamelo netinsiza letiwudzingako
-- [Kutibhalisa Ngekwakho](../checkin/self-checkin) -- Bhalisa ekufikeni kwakho emcimbini
+- [Kubhalisela Imicimbi](./registering.md) -- Luhlaka lwenyatselo nganye lwekubhalisela umcimbi
+- [Kubhaliswa Kwami](./my-registrations.md) -- Bona kubhaliswa kwakho, khokha imali losele, hlela, nome ukhansele
+- [Kucela Imicimbi Nemakamelo](./requesting-events.md) -- Cela umcimbi kanye nemakamelo netinsiza letiwudzingako
+- [Kutibhalisa Ngekwakho](../checkin/self-checkin.md) -- Bhalisa ekufikeni kwakho emcimbini

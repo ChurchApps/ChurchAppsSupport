@@ -1,5 +1,6 @@
 ---
 title: "B1 Church Checkin apžvalga"
+description: "Nustatykite B1 Church Checkin programėlę iPad ar Android planšetėse: savitarnos registracija, vaikų priskyrimas grupėms, etikečių spausdinimas."
 ---
 
 # B1 Church Checkin apžvalga
@@ -24,7 +25,7 @@ Padėkite iPad ar Android planšetę savo fojė arba sveikinimo zonoje. Nariai p
 - **Namų ūkio peržiūra** -- vienu žvilgsniu matykite visus šeimos narius su nuotraukomis ir dabartiniais grupių priskyrimais.
 - **Grupių priskyrimas** -- priskirkite kiekvieną šeimos narį tinkamai klasei ar grupei pasirinktam pamaldų laikui.
 - **Svečių registravimas** -- nedelsiant pridėkite svečią prie savo namų ūkio, nurodydami vardą ir pavardę.
-- **QR kodo svečių registracija** -- rodykite QR kodą, kurį lankytojai gali nuskaityti, kad [patys užsiregistruotų](../b1-church/checkin/guest-registration) savo telefone prieš registruodamiesi, arba leiskite jiems bakstelėti **Registruotis čia**, kad užpildytų tą pačią formą kioske.
+- **QR kodo svečių registracija** -- rodykite QR kodą, kurį lankytojai gali nuskaityti, kad [patys užsiregistruotų](../b1-church/checkin/guest-registration.md) savo telefone prieš registruodamiesi, arba leiskite jiems bakstelėti **Registruotis čia**, kad užpildytų tą pačią formą kioske.
 - **Etikečių spausdinimas** -- spausdinkite vaikų vardo etiketes ir tėvų atsiėmimo lapelius su unikaliais saugumo kodais.
 - **Tinklo spausdintuvų palaikymas** -- aptikite tinklo spausdintuvus ir sukonfigūruokite juos tiesiogiai programoje.
 - **Automatinis prisijungimas** -- po pirmojo prisijungimo programa prisimena jūsų prisijungimo duomenis ir kitais paleidimo kartais tiesiai atidaro pamaldų ekraną.
@@ -33,8 +34,8 @@ Padėkite iPad ar Android planšetę savo fojė arba sveikinimo zonoje. Nariai p
 
 ## Dokumentacijos skyriai
 
-- **[Pradžia](./getting-started/)** -- programos įdiegimas, prisijungimas ir spausdintuvo nustatymas.
-- **[Registracijos eiga](./check-in/)** -- visa registracijos eiga nuo pamaldų pasirinkimo iki etikečių spausdinimo.
+- **[Pradžia](./getting-started/index.md)** -- programos įdiegimas, prisijungimas ir spausdintuvo nustatymas.
+- **[Registracijos eiga](./check-in/index.md)** -- visa registracijos eiga nuo pamaldų pasirinkimo iki etikečių spausdinimo.
 
 :::tip
 B1 Church Checkin geriausiai veikia 10 colių planšetėje (iPad ar Android), pritvirtintoje horizontalia orientacija, kur šeimos gali lengvai pasiekti ekraną. Programą galite atsisiųsti iš [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998), [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin) arba [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/).

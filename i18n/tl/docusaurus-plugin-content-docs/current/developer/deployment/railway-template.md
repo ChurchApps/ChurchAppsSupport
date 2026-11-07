@@ -1,5 +1,6 @@
 ---
 title: "Self-Hosting sa Railway"
+description: "I-deploy ang pribadong ChurchApps sa Railway sa mga 15 minuto, at i-configure ang email, custom domain, giving, at file storage para sa B1 Admin at B1App."
 ---
 
 # Self-Hosting sa Railway
@@ -195,7 +196,7 @@ Ina-unlock ng mga ito ang partikular na feature at maaaring idagdag sa bandang h
 | `VIMEO_TOKEN` | Suporta sa sermon sa Vimeo |
 | `API_BIBLE_KEY` | Paghahanap ng bersikulo sa Bibliya sa mga aralin at nilalaman |
 | `YOUVERSION_API_KEY` | Integration ng YouVersion Bible |
-| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notification ([gumawa ng VAPID keypair](./docker#push-notifications)) |
+| `WEB_PUSH_PUBLIC_KEY` + `WEB_PUSH_PRIVATE_KEY` | Browser push notification ([gumawa ng VAPID keypair](./docker.md#push-notifications)) |
 | `HUBSPOT_KEY` | Opsyonal na CRM sync para sa mga bagong registration |
 
 ## Pag-update
@@ -234,9 +235,9 @@ Kung may makaharap kang bagay na wala sa listahang ito, magbukas ng issue sa [gi
 
 ## Mga Kaugnay na Artikulo
 
-- **[Self-Hosting gamit ang Docker](./docker)** -- Ang parehong stack sa sarili mong hardware o VPS
-- **[Initial Setup](../../getting-started/initial-setup)** -- Mga unang hakbang pagkatapos malikha ang simbahan mo
-- **[Website Initial Setup](../../b1-admin/website/initial-setup)** -- I-configure ang pampublikong site ng simbahan mo
-- **[Giving Settings](../../b1-admin/donations/online-giving-setup)** -- Ikonekta ang Stripe o PayPal
-- **[Local API Setup](../api/local-setup)** -- Pagpapatakbo ng stack nang lokal para sa development
-- **[API Deployment (AWS)](./apis)** -- Kung paano dine-deploy ang opisyal na ChurchApps SaaS
+- **[Self-Hosting gamit ang Docker](./docker.md)** -- Ang parehong stack sa sarili mong hardware o VPS
+- **[Initial Setup](../../getting-started/initial-setup.md)** -- Mga unang hakbang pagkatapos malikha ang simbahan mo
+- **[Website Initial Setup](../../b1-admin/website/initial-setup.md)** -- I-configure ang pampublikong site ng simbahan mo
+- **[Giving Settings](../../b1-admin/donations/online-giving-setup.md)** -- Ikonekta ang Stripe o PayPal
+- **[Local API Setup](../api/local-setup.md)** -- Pagpapatakbo ng stack nang lokal para sa development
+- **[API Deployment (AWS)](./apis.md)** -- Kung paano dine-deploy ang opisyal na ChurchApps SaaS

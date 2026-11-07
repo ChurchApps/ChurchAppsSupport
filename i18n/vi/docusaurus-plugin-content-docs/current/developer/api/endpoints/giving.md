@@ -1,5 +1,6 @@
 ---
 title: "Điểm cuối Quyên góp"
+description: "Tài liệu Giving API của ChurchApps: quyên góp, đợt, cổng thanh toán, đăng ký và phương thức thanh toán, kèm quy tắc xác thực và quyền cho tích hợp B1 Admin."
 ---
 
 # Điểm cuối Quyên góp
@@ -284,6 +285,6 @@ Mở rộng `GenericCrudController` với các route CRUD: `getById`, `getAll`, 
 
 ## Trang liên quan
 
-- [Điểm cuối Thành viên](./membership) — Người, nhà thờ, nhóm, vai trò và quyền
-- [Xác thực & Quyền](./authentication) — Luồng đăng nhập, JWT, OAuth, mô hình quyền
-- [Cấu trúc mô-đun](../module-structure) — Các mẫu tổ chức mã
+- [Điểm cuối Thành viên](./membership.md) — Người, nhà thờ, nhóm, vai trò và quyền
+- [Xác thực & Quyền](./authentication.md) — Luồng đăng nhập, JWT, OAuth, mô hình quyền
+- [Cấu trúc mô-đun](../module-structure.md) — Các mẫu tổ chức mã

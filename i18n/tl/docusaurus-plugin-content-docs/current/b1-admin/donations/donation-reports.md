@@ -1,5 +1,6 @@
 ---
 title: "Mga Ulat ng Donasyon"
+description: "Suriin ang kabuuang handog, mga donor na tumigil, at detalye ng batch sa B1 Admin gamit ang Donations Summary dashboard, Lapsed Givers view, at CSV export."
 ---
 
 # Mga Ulat ng Donasyon

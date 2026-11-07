@@ -1,5 +1,6 @@
 ---
 title: "Eszköz párosítása"
+description: "FreePlay TV párosítása B1 Adminban egy tervtípushoz a képernyőn látható négybetűs kóddal, majd a terv médiájának letöltése Tervmódhoz."
 ---
 
 # Eszköz párosítása
@@ -13,7 +14,7 @@ A Tervezési mód használatához a TV-t párosítani kell egy tervtípussal a B
 <div class="prereqs">
 <h4>Mielőtt elkezdené</h4>
 
-- Telepítse és indítsa el a FreePlayt. Lásd: [Első lépések](../getting-started/)
+- Telepítse és indítsa el a FreePlayt. Lásd: [Első lépések](../getting-started/index.md)
 - Legyen hozzáférése a **B1 Adminhoz** számítógépen vagy telefonon a párosítás elvégzéséhez
 
 </div>
@@ -25,7 +26,7 @@ A Tervezési mód használatához a TV-t párosítani kell egy tervtípussal a B
 3. A FreePlay egy négybetűs párosítókódot jelenít meg nagy betűkkel, egy QR-kód mellett.
 4. A kód alatt egy pulzáló **Megerősítésre vár** jelzés mutatja, hogy a FreePlay várja a párosítás befejezését.
 
-Ugyanez a kód működik a FreePlay Adminban használható [Ütemezett móddal](../scheduled-mode/) és a B1 Adminban használható Tervezési móddal. A QR-kód és a képernyőn látható **freeplay.church/pair** cím a FreePlay Adminba visz. Tervezési módban ezekre ne figyeljen, hanem az alábbiak szerint írja be a kódot a B1 Adminban.
+Ugyanez a kód működik a FreePlay Adminban használható [Ütemezett móddal](../scheduled-mode/index.md) és a B1 Adminban használható Tervezési móddal. A QR-kód és a képernyőn látható **freeplay.church/pair** cím a FreePlay Adminba visz. Tervezési módban ezekre ne figyeljen, hanem az alábbiak szerint írja be a kódot a B1 Adminban.
 
 ## A kód megadása a B1 Adminban
 
@@ -61,5 +62,5 @@ A párosítókódok 15 perc múlva lejárnak. Amikor a régi kód lejár, a Free
 ## Kapcsolódó cikkek
 
 - **[A Tervezési mód áttekintése](./index.md)** - A Tervezési mód és az Ütemezett mód közötti különbségek
-- **[Kijelző párosítása](../scheduled-mode/pairing-a-screen)** - Ugyanezt a TV-t párosíthatja naptárral a FreePlay Adminban
-- **[Tartalom lejátszása](../content-providers/playing-content)** - A lejátszó vezérlőelemei tervlejátszáshoz
+- **[Kijelző párosítása](../scheduled-mode/pairing-a-screen.md)** - Ugyanezt a TV-t párosíthatja naptárral a FreePlay Adminban
+- **[Tartalom lejátszása](../content-providers/playing-content.md)** - A lejátszó vezérlőelemei tervlejátszáshoz

@@ -1,5 +1,6 @@
 ---
 title: "Správa kázání"
+description: "Spravujte knihovnu kázání v B1 Admin: přidávejte kázání z YouTube, Vimeo nebo Facebooku, upravujte detaily a získejte podcastový kanál pro vaši církev."
 ---
 
 # Správa kázání
@@ -14,7 +15,7 @@ Stránka Kázání zobrazuje celou vaši knihovnu kázání. Odtud můžete při
 <h4>Než začnete</h4>
 
 - Potřebujete oprávnění **contentApi.streamingServices.edit**. Pokud k němu nemáte přístup, podívejte se na [Role a oprávnění](../settings/roles-permissions.md).
-- Vytvořte alespoň jeden [playlist](playlists), do kterého kázání zařadíte
+- Vytvořte alespoň jeden [playlist](./playlists.md), do kterého kázání zařadíte
 - Připravte si ID videí nebo URL z YouTube, Vimeo nebo Facebooku
 
 </div>
@@ -35,7 +36,7 @@ Stránka Kázání zobrazuje celou vaši knihovnu kázání. Odtud můžete při
 6. Proveďte požadované úpravy a klikněte na **Uložit**.
 
 :::tip
-Trvalou URL živého přenosu můžete přidat také výběrem možnosti **Přidat trvalou URL živého přenosu** v rozbalovací nabídce **Přidat kázání**. Tím vznikne stálé připojení k živému přenosu vašeho kanálu YouTube pomocí ID vašeho kanálu. Podrobnosti najdete v článku [Živé vysílání](live-streaming).
+Trvalou URL živého přenosu můžete přidat také výběrem možnosti **Přidat trvalou URL živého přenosu** v rozbalovací nabídce **Přidat kázání**. Tím vznikne stálé připojení k živému přenosu vašeho kanálu YouTube pomocí ID vašeho kanálu. Podrobnosti najdete v článku [Živé vysílání](./live-streaming.md).
 :::
 
 ## Úprava kázání
@@ -73,11 +74,11 @@ Po přidání kázání ho můžete naplánovat k vysílání na stránce živé
 3. Kázání se přehraje v naplánovaný čas bohoslužby.
 
 :::info
-Pokud chcete naimportovat více kázání najednou místo jejich přidávání jednotlivě, použijte nástroj [Hromadný import](bulk-import), který stáhne videa přímo z vašeho účtu YouTube nebo Vimeo.
+Pokud chcete naimportovat více kázání najednou místo jejich přidávání jednotlivě, použijte nástroj [Hromadný import](./bulk-import.md), který stáhne videa přímo z vašeho účtu YouTube nebo Vimeo.
 :::
 
 ## Další kroky
 
-- [Playlisty](playlists) -- Uspořádejte kázání do sérií
-- [Živé vysílání](live-streaming) -- Nastavte si plán vysílání
-- [Hromadný import](bulk-import) -- Naimportujte více kázání najednou
+- [Playlisty](./playlists.md) -- Uspořádejte kázání do sérií
+- [Živé vysílání](./live-streaming.md) -- Nastavte si plán vysílání
+- [Hromadný import](./bulk-import.md) -- Naimportujte více kázání najednou

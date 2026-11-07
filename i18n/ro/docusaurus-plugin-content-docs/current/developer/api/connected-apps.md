@@ -1,12 +1,13 @@
 ---
 title: "Aplicații conectate și OAuth"
+description: "Conectați aplicații terțe la datele B1 ale unei biserici prin consimțământ OAuth 2.0, fără parole partajate sau chei API, și revocați accesul oricând din setările B1 Admin."
 ---
 
 # Aplicații conectate și OAuth
 
 <div class="article-intro">
 
-API-ul B1 acceptă OAuth 2.0, astfel încât o aplicație a unui terț poate cere fiecărui administrator de biserică permisiunea de a accesa datele acesteia, fără ca biserica să ofere vreodată o parolă sau o cheie API. O **aplicație conectată** este un token OAuth aprobat de un administrator de biserică; revocarea lui întrerupe accesul aplicației terțe dintr-un singur clic. Folosiți această cale pentru conectorii SaaS multi-tenant. Pentru o integrare cu o singură biserică, preferați [Chei API](./api-keys).
+API-ul B1 acceptă OAuth 2.0, astfel încât o aplicație a unui terț poate cere fiecărui administrator de biserică permisiunea de a accesa datele acesteia, fără ca biserica să ofere vreodată o parolă sau o cheie API. O **aplicație conectată** este un token OAuth aprobat de un administrator de biserică; revocarea lui întrerupe accesul aplicației terțe dintr-un singur clic. Folosiți această cale pentru conectorii SaaS multi-tenant. Pentru o integrare cu o singură biserică, preferați [Chei API](./api-keys.md).
 
 </div>
 
@@ -27,7 +28,7 @@ API-ul B1 acceptă OAuth 2.0, astfel încât o aplicație a unui terț poate cer
 | **Aplicație conectată** | O pereche specifică `(client, administrator de biserică)` pentru care administratorul a acordat accesul clientului. Fiecare aplicație conectată are un token de reîmprospătare OAuth asociat. |
 | **Token de acces** | Un JWT cu valabilitate scurtă (≈ 7 zile), pe care clientul îl folosește pentru apelurile API. Are aceeași structură ca un JWT de utilizator — `Authorization: Bearer <jwt>`. |
 | **Token de reîmprospătare** | Un șir opac, cu valabilitate lungă (≈ 90 de zile), pe care clientul îl folosește pentru a obține tokenuri de acces noi. |
-| **Domeniu de acces (scope)** | Limitează ce poate face tokenul de acces — consultați [catalogul de domenii](./api-keys#scopes). |
+| **Domeniu de acces (scope)** | Limitează ce poate face tokenul de acces — consultați [catalogul de domenii](./api-keys.md#scopes). |
 
 ## Fluxuri de acordare
 
@@ -162,7 +163,7 @@ Lista exclude automat tokenurile expirate.
 
 ## Domenii de acces și consimțământ
 
-Șirurile de domenii de acces sunt același catalog ca la [chei API](./api-keys#scopes). Bunele practici pentru clienți:
+Șirurile de domenii de acces sunt același catalog ca la [chei API](./api-keys.md#scopes). Bunele practici pentru clienți:
 
 - **Solicitați cele mai restrictive domenii care funcționează.** Bisericile observă dacă cereți `donations:write` când aveți nevoie doar de citire a persoanelor.
 - **Folosiți un token de reîmprospătare și tokenuri de acces cu valabilitate scurtă.** Tokenurile de acces cu valabilitate lungă sunt mai greu de revocat rapid.
@@ -183,7 +184,7 @@ URI-urile de redirecționare înregistrate trebuie să corespundă exact cu `red
 
 ### Înregistrare dinamică a clientului
 
-`POST /membership/oauth/register` (public, RFC 7591) permite unui client, cum ar fi conectorul MCP al claude.ai, să se înregistreze singur. Este anunțat în documentul `/.well-known/oauth-authorization-server` al API-ului — consultați [Server MCP → Descoperire OAuth](./mcp#oauth-discovery).
+`POST /membership/oauth/register` (public, RFC 7591) permite unui client, cum ar fi conectorul MCP al claude.ai, să se înregistreze singur. Este anunțat în documentul `/.well-known/oauth-authorization-server` al API-ului — consultați [Server MCP → Descoperire OAuth](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ Pe pagina de consimțământ din B1Admin, un client înregistrat singur primeșt
 
 ## Suport SDK
 
-Pachetul `@churchapps/integration-sdk` învelește fiecare flux OAuth cu funcții ajutătoare tipizate — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Consultați README-ul pachetului și [Webhook-uri](./webhooks#sdk-support) pentru un exemplu complet.
+Pachetul `@churchapps/integration-sdk` învelește fiecare flux OAuth cu funcții ajutătoare tipizate — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Consultați README-ul pachetului și [Webhook-uri](./webhooks.md#sdk-support) pentru un exemplu complet.

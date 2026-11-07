@@ -1,5 +1,6 @@
 ---
 title: "Notities"
+description: "Bekijk pastorale zorgnotities, opvolgingen en planning van personen, groepen, evenementen en workflowkaarten in één B1 Admin-lijst, nieuwste eerst."
 ---
 
 # Notities

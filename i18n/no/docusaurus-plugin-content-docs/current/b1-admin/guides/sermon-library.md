@@ -1,5 +1,6 @@
 ---
 title: "Guide: Bygg ditt preken-arkiv og direktesending"
+description: "Importer preken fra YouTube eller Vimeo, organiser dem i spillelister, og sett opp faste direktesendinger med chat i B1 Admin for nettsiden."
 ---
 
 # Bygg ditt preken-arkiv og direktesending

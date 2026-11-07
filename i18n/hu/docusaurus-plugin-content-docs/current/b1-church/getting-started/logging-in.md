@@ -1,5 +1,7 @@
 ---
-title: "Bejelentkezés"
+title: "Bejelentkezés a B1.church-be és a tagi portálba"
+sidebar_label: "Bejelentkezés"
+description: "Bejelentkezés a B1.church tagi portálba, kétfaktoros kódok vagy egyszeri bejelentkezés, elfelejtett jelszó visszaállítása és kijelentkezés a fiókmenüből."
 ---
 
 # Bejelentkezés
@@ -17,7 +19,7 @@ A B1.church-be való bejelentkezéssel hozzáférhet a tagi portálhoz, ahol meg
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Szüksége van egy ChurchApps-fiókra. Ennek létrehozásához lásd: [Első lépések](../getting-started/).
+- Szüksége van egy ChurchApps-fiókra. Ennek létrehozásához lásd: [Első lépések](./index.md).
 - Szüksége van egyházközössége B1.church-webcímére (például `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Ugyanabban a böngészőben vagy telepített alkalmazásban addig marad bejelent
 
 ## Hozzáférés a tagi portálhoz
 
-Bejelentkezés után úgy juthat el a tagi portálhoz, hogy az oldal jobb felső sarkában a **nevére** kattint, majd a menüből a **Tagi portál** lehetőséget választja. A tagi portál tartja össze az összes személyes egyházi eszközét, köztük a [Főoldali irányítópultot](./navigating.md), a [Saját oldalt](./me-page.md), a [csoportokat](../groups/), az [adakozást](../giving/) és még sok mást.
+Bejelentkezés után úgy juthat el a tagi portálhoz, hogy az oldal jobb felső sarkában a **nevére** kattint, majd a menüből a **Tagi portál** lehetőséget választja. A tagi portál tartja össze az összes személyes egyházi eszközét, köztük a [Főoldali irányítópultot](./navigating.md), a [Saját oldalt](./me-page.md), a [csoportokat](../groups/index.md), az [adakozást](../giving/index.md) és még sok mást.
 
 ## Felhasználói menü
 

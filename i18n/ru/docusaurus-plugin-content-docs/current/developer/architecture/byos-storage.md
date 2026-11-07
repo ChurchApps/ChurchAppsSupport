@@ -1,5 +1,6 @@
 ---
 title: "Bring-Your-Own Storage"
+description: "Подключите свой Google Drive, Dropbox, OneDrive или S3-совместимый бакет в B1 Admin, чтобы файлы церкви обходили лимит платформы в 100 МБ."
 ---
 
 # Bring-Your-Own Storage (BYOS)
@@ -8,7 +9,7 @@ title: "Bring-Your-Own Storage"
 
 ## The provider seam
 
-BYOS переиспользует шов хранилища, построенный для [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`) разрешен per church по `StorageResolver` из таблицы `content.storageProviders`. В отличие от одноэлементных поставщиков `churchapps`/`ministrystuff`, поставщики BYOS держат per-church учетные данные, поэтому `StorageResolver.forChurch` конструирует экземпляр за запрос из строки церкви. Реализации живут рядом с разрешителем в `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, плюс `ByosAuth` (обмен маркеров OAuth + единственный рейд рефреш -- Dropbox ротирует маркеры рефреш, поэтому рефреши дедублицированы так же, как `ProviderProxyController`).
+BYOS переиспользует шов хранилища, построенный для [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`) разрешен per church по `StorageResolver` из таблицы `content.storageProviders`. В отличие от одноэлементных поставщиков `churchapps`/`ministrystuff`, поставщики BYOS держат per-church учетные данные, поэтому `StorageResolver.forChurch` конструирует экземпляр за запрос из строки церкви. Реализации живут рядом с разрешителем в `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider`, плюс `ByosAuth` (обмен маркеров OAuth + единственный рейд рефреш -- Dropbox ротирует маркеры рефреш, поэтому рефреши дедублицированы так же, как `ProviderProxyController`).
 
 `storageProviders` несет учетные данные: `accessToken`/`refreshToken`/`tokenExpiresAt` (зашифрованный, трио OAuth) или `apiKey`/`apiSecret` + `settings` JSON (`{endpoint, region, bucket, publicBase}`, S3). Маркеры никогда не достигают клиента -- `GET /content/storage/providers` маскирует секреты и возвращает `connected` boolean.
 

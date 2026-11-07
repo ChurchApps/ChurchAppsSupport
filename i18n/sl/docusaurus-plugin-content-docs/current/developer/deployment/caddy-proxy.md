@@ -1,5 +1,6 @@
 ---
 title: "Caddy proxy za domene cerkva"
+description: "Zgradite in zaženite obratni posrednik Caddy za lastne domene cerkva na B1.church: certifikati TLS, preslikava gostiteljev in znane težave."
 ---
 
 # Caddy proxy za domene cerkva
@@ -10,7 +11,7 @@ Domene cerkva po meri (`mychurch.org` → spletno mesto cerkve B1) se končajo n
 
 </div>
 
-Za to, kako zahteva po prihodu v B1App pride do cerkve ali spletnega mesta, glejte [Usmerjanje spletnih mest in več spletnih mest](../architecture/websites).
+Za to, kako zahteva po prihodu v B1App pride do cerkve ali spletnega mesta, glejte [Usmerjanje spletnih mest in več spletnih mest](../architecture/websites.md).
 
 ## Sestavni deli
 
@@ -88,5 +89,5 @@ Administrativni API se veže samo na `localhost:2019`. Zastareli način izvajanj
 
 ## Sorodne strani
 
-- [Usmerjanje spletnih mest in več spletnih mest](../architecture/websites) — kako se posredovana zahteva razreši v cerkev/spletno mesto v B1App
-- [Namestitev API-ja](./apis) — namestitev Membership API-ja, ki strežbo `authorize`/`hostmap`
+- [Usmerjanje spletnih mest in več spletnih mest](../architecture/websites.md) — kako se posredovana zahteva razreši v cerkev/spletno mesto v B1App
+- [Namestitev API-ja](./apis.md) — namestitev Membership API-ja, ki strežbo `authorize`/`hostmap`

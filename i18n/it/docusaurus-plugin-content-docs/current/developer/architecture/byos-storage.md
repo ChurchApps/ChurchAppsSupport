@@ -1,5 +1,6 @@
 ---
 title: "Archiviazione Bring-Your-Own (BYOS)"
+description: "Collega il tuo Google Drive, Dropbox, OneDrive o bucket S3 compatibile in B1 Admin, così i caricamenti dei file della chiesa superano il limite di 100 MB."
 ---
 
 # Archiviazione Bring-Your-Own (BYOS)

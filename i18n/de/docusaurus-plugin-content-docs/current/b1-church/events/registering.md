@@ -1,5 +1,7 @@
 ---
-title: "Anmeldung für Veranstaltungen"
+title: "Veranstaltungsanmeldung auf B1.church"
+sidebar_label: "Anmeldung für Veranstaltungen"
+description: "Für eine Veranstaltung auf B1.church anmelden: Angaben eingeben, Familie hinzufügen, Optionen wählen, Rabattcodes anwenden, zahlen oder Warteliste."
 ---
 
 # Anmeldung für Veranstaltungen
@@ -77,14 +79,14 @@ Es erscheint eine Bestätigungsmeldung mit den Veranstaltungsdetails und einer L
 
 ## Auf die Warteliste setzen lassen {#joining-a-waitlist}
 
-Ist die Veranstaltung voll und hat Ihre Kirche die Warteliste aktiviert, lautet der erste Schritt: *„Diese Veranstaltung ist voll. Sie können sich auf die Warteliste setzen lassen, und wir benachrichtigen Sie, falls ein Platz frei wird.“* Schließen Sie die Anmeldung wie gewohnt ab — solange Sie auf der Warteliste stehen, entfällt die Zahlung. Wenn ein Platz frei wird, erhalten Sie eine E-Mail; falls eine Zahlung fällig ist, enthält sie einen Link zum Abschluss. Ihren Status und die Zahlung können Sie auch unter [Meine Anmeldungen](./my-registrations) einsehen.
+Ist die Veranstaltung voll und hat Ihre Kirche die Warteliste aktiviert, lautet der erste Schritt: *„Diese Veranstaltung ist voll. Sie können sich auf die Warteliste setzen lassen, und wir benachrichtigen Sie, falls ein Platz frei wird.“* Schließen Sie die Anmeldung wie gewohnt ab — solange Sie auf der Warteliste stehen, entfällt die Zahlung. Wenn ein Platz frei wird, erhalten Sie eine E-Mail; falls eine Zahlung fällig ist, enthält sie einen Link zum Abschluss. Ihren Status und die Zahlung können Sie auch unter [Meine Anmeldungen](./my-registrations.md) einsehen.
 
 ## Anmeldung ändern oder stornieren
 
-Wenn Sie angemeldet sind, können Sie Ihre Anmeldung selbst auf der Seite **Anmeldungen** im Mitgliederportal bearbeiten oder stornieren — siehe [Meine Anmeldungen](./my-registrations). Gäste sollten sich an das Kirchenbüro wenden; Mitarbeitende können die Änderung auf der Seite „Anmeldungen“ in B1 Admin vornehmen.
+Wenn Sie angemeldet sind, können Sie Ihre Anmeldung selbst auf der Seite **Anmeldungen** im Mitgliederportal bearbeiten oder stornieren — siehe [Meine Anmeldungen](./my-registrations.md). Gäste sollten sich an das Kirchenbüro wenden; Mitarbeitende können die Änderung auf der Seite „Anmeldungen“ in B1 Admin vornehmen.
 
 ## Verwandte Artikel
 
 - [Veranstaltungsübersicht](./index.md) — Kommende Veranstaltungen mit Anmeldung durchsuchen
-- [Meine Anmeldungen](./my-registrations) — Ihre Anmeldungen ansehen, bearbeiten, Restbeträge bezahlen und stornieren
-- [Spenden tätigen](../giving/making-donations) — Eine Spende zusätzlich zur Teilnahme an einer Veranstaltung leisten
+- [Meine Anmeldungen](./my-registrations.md) — Ihre Anmeldungen ansehen, bearbeiten, Restbeträge bezahlen und stornieren
+- [Spenden tätigen](../giving/making-donations.md) — Eine Spende zusätzlich zur Teilnahme an einer Veranstaltung leisten

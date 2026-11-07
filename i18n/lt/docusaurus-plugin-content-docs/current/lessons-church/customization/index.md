@@ -1,5 +1,6 @@
 ---
 title: "Prilagodymas"
+description: "Sužinokite, kaip paslėpti skyrius, vaidmenis ar veiksmus Lessons.church pamokoje ir pertvarkyti turinį, vienai klasei arba visoms bažnyčios klasėms."
 ---
 
 # Prilagodymas

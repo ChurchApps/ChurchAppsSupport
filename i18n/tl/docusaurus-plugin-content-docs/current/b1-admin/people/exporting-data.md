@@ -1,5 +1,6 @@
 ---
 title: "Pag-export ng Datos"
+description: "I-export ang tao sa CSV, listahan ng miyembro ng grupo, o buong backup ng B1 database mula sa B1 Admin, at tingnan ang laman ng B1 Export Zip."
 ---
 
 # Pag-export ng Datos

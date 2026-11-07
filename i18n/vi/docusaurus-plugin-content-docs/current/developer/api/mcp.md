@@ -1,5 +1,6 @@
 ---
 title: "Máy chủ MCP"
+description: "Thiết lập MCP cho API B1 để client AI như Claude Code, Cursor hay Claude Desktop gọi endpoint dữ liệu nhà thờ bằng khóa API hoặc đăng nhập OAuth."
 ---
 
 # Máy chủ MCP
@@ -13,7 +14,7 @@ API B1 đi kèm một máy chủ [MCP (Model Context Protocol)](https://modelcon
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Khóa API B1](./api-keys) (`cak_…`) với các scope mà client cần có, hoặc một client MCP có thể đăng nhập bằng OAuth (xem [Khám phá OAuth](#oauth-discovery))
+- [Khóa API B1](./api-keys.md) (`cak_…`) với các scope mà client cần có, hoặc một client MCP có thể đăng nhập bằng OAuth (xem [Khám phá OAuth](#oauth-discovery))
 - Một host API B1 có thể truy cập, như `https://api.churchapps.org` cho các giáo hội được lưu trữ, hoặc triển khai riêng của bạn
 - Một client MCP. Xem [Claude](/docs/b1-admin/integrations/claude) và [ChatGPT](/docs/b1-admin/integrations/chatgpt) để biết hướng dẫn thiết lập cho người dùng cuối
 
@@ -119,7 +120,7 @@ Kết quả công cụ được đánh dấu `isError: true` cho mọi phản h�
 
 ### `describe_page_builder`
 
-Đây là công cụ duy nhất không mang tính tổng quát: một hướng dẫn tĩnh, tự đầy đủ về việc xây dựng trang web thông qua các endpoint `/content/*`. Nội dung bao gồm mô hình dữ liệu Page → Section → Element, quy trình tạo, từng `elementType` cùng cấu trúc `answersJSON` của nó, các cài đặt ở cấp section như đường phân chia hình dạng `dividerTop`/`dividerBottom`, và một ví dụ đầu cuối. Công cụ không nhận đầu vào và phản ánh danh mục element được duy trì trong trình chỉnh sửa B1Admin (xem [Kiến trúc Website Builder](../architecture/website-builder)). Các agent được kỳ vọng gọi công cụ này một lần trước khi tạo hoặc chỉnh sửa nội dung trang, sau đó thực hiện thao tác qua `api_call`.
+Đây là công cụ duy nhất không mang tính tổng quát: một hướng dẫn tĩnh, tự đầy đủ về việc xây dựng trang web thông qua các endpoint `/content/*`. Nội dung bao gồm mô hình dữ liệu Page → Section → Element, quy trình tạo, từng `elementType` cùng cấu trúc `answersJSON` của nó, các cài đặt ở cấp section như đường phân chia hình dạng `dividerTop`/`dividerBottom`, và một ví dụ đầu cuối. Công cụ không nhận đầu vào và phản ánh danh mục element được duy trì trong trình chỉnh sửa B1Admin (xem [Kiến trúc Website Builder](../architecture/website-builder.md)). Các agent được kỳ vọng gọi công cụ này một lần trước khi tạo hoặc chỉnh sửa nội dung trang, sau đó thực hiện thao tác qua `api_call`.
 
 ## Mô hình xác thực
 
@@ -153,11 +154,11 @@ Không có giới hạn tốc độ ở cấp ứng dụng trên `/mcp`. Việc 
 
 ## Khám phá OAuth
 
-Máy chủ MCP công bố metadata OAuth 2.1 để các client chỉ kết nối tới máy chủ được khám phá qua OAuth, đặc biệt là giao diện "Add custom connector" của Claude.ai, có thể đăng nhập người dùng mà không cần dán khóa. `/mcp` là protected resource, [nhà cung cấp OAuth](./connected-apps) hiện có dưới `/membership/oauth` là authorization server, và trang `/oauth` của B1Admin là màn hình đồng ý.
+Máy chủ MCP công bố metadata OAuth 2.1 để các client chỉ kết nối tới máy chủ được khám phá qua OAuth, đặc biệt là giao diện "Add custom connector" của Claude.ai, có thể đăng nhập người dùng mà không cần dán khóa. `/mcp` là protected resource, [nhà cung cấp OAuth](./connected-apps.md) hiện có dưới `/membership/oauth` là authorization server, và trang `/oauth` của B1Admin là màn hình đồng ý.
 
 | Endpoint | Mục đích |
 |---|---|
-| `GET /.well-known/oauth-protected-resource` (cũng là `/.well-known/oauth-protected-resource/mcp`) | Metadata protected resource (RFC 9728): `resource` là `<api>/mcp`, `authorization_servers` là gốc API, `scopes_supported` liệt kê mọi [scope khóa API](./api-keys#scopes) |
+| `GET /.well-known/oauth-protected-resource` (cũng là `/.well-known/oauth-protected-resource/mcp`) | Metadata protected resource (RFC 9728): `resource` là `<api>/mcp`, `authorization_servers` là gốc API, `scopes_supported` liệt kê mọi [scope khóa API](./api-keys.md#scopes) |
 | `GET /.well-known/oauth-authorization-server` | Metadata authorization server (RFC 8414): `authorization_endpoint` là `/oauth` của B1Admin, `token_endpoint` là `/membership/oauth/token`, `registration_endpoint` là `/membership/oauth/register` |
 | `POST /membership/oauth/register` | Đăng ký client động (RFC 7591) |
 
@@ -209,8 +210,8 @@ Máy chủ MCP nằm tại `src/modules/mcp/` trong repo Api. Các tệp đáng 
 
 ## Liên quan
 
-- [Khóa API](./api-keys)
-- [Webhook](./webhooks)
-- [Ứng dụng được kết nối (OAuth)](./connected-apps)
+- [Khóa API](./api-keys.md)
+- [Webhook](./webhooks.md)
+- [Ứng dụng được kết nối (OAuth)](./connected-apps.md)
 - [Claude: thiết lập cho người dùng cuối](/docs/b1-admin/integrations/claude)
 - [ChatGPT: thiết lập cho người dùng cuối](/docs/b1-admin/integrations/chatgpt)

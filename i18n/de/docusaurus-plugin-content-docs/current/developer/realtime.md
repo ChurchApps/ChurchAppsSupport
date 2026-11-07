@@ -1,5 +1,6 @@
 ---
 title: "Echtzeit-Architektur"
+description: "Wie die WebSocket-Schicht von ChurchApps Live-Chat, Präsenz und Benachrichtigungen ausliefert: Handshake, Raum-Abos und Client-Bausteine."
 ---
 
 # Echtzeit-Architektur
@@ -226,8 +227,8 @@ Der Live-Stream ist der größte anonyme Konsument des Frameworks. Er verwendet 
 
 ## Verwandte Seiten
 
-- [Architektur der Benachrichtigungen](./architecture/notifications) -- Der In-App-/Push-/E-Mail-Eskalationstrichter, den dieser Transport speist
-- [Messaging-Endpunkte](./api/endpoints/messaging) -- Vollständige REST-Oberfläche für Nachrichten, Konversationen, Verbindungen, Geräte
-- [Web-Push-Benachrichtigungen](./web-push) -- Browser-Push, getrennt von der In-Page-Socket-Zustellung
-- [AppHelper](./shared-libraries/app-helper) -- Das npm-Paket, das die Client-Primitiven bereitstellt
-- [Modulstruktur](./api/module-structure) -- Wie das Messaging-Modul serverseitig organisiert ist
+- [Architektur der Benachrichtigungen](./architecture/notifications.md) -- Der In-App-/Push-/E-Mail-Eskalationstrichter, den dieser Transport speist
+- [Messaging-Endpunkte](./api/endpoints/messaging.md) -- Vollständige REST-Oberfläche für Nachrichten, Konversationen, Verbindungen, Geräte
+- [Web-Push-Benachrichtigungen](./web-push.md) -- Browser-Push, getrennt von der In-Page-Socket-Zustellung
+- [AppHelper](./shared-libraries/app-helper.md) -- Das npm-Paket, das die Client-Primitiven bereitstellt
+- [Modulstruktur](./api/module-structure.md) -- Wie das Messaging-Modul serverseitig organisiert ist

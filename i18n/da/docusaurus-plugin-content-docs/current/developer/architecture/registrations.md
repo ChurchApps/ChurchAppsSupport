@@ -1,12 +1,13 @@
 ---
 title: "Begivenhedstilmeldinger"
+description: "Hvordan begivenhedstilmeldinger virker i B1 Admin og B1App: deltagertyper, betalte tilvalg, rabatkoder, betalinger via givegateway og venteliste."
 ---
 
 # Begivenhedstilmeldinger
 
 <div class="article-intro">
 
-Den indbyggede begivenhedstilmelding findes i content-modulet og har, siden bølgen med betalte tilmeldinger, en fuld kommerciel model: prissatte deltagertyper, prissatte tilvalg, rabatkoder, betalinger gennem kirkens eksisterende giver-gateway og en statusdrevet venteliste. Betalingsflowet genbruger bevidst giving-stakken. Tilmeldingscontrolleren opkræver gennem samme `GatewayService` / `IGatewayProvider`-abstraktion, som er dokumenteret under [Giving](./giving), så der hverken findes kortdata eller gateway-SDK-viden i content-modulet. Denne side beskriver datamodellen, prisfastsættelses- og kapacitetsreglerne samt flowene for tilmelding, betaling og venteliste.
+Den indbyggede begivenhedstilmelding findes i content-modulet og har, siden bølgen med betalte tilmeldinger, en fuld kommerciel model: prissatte deltagertyper, prissatte tilvalg, rabatkoder, betalinger gennem kirkens eksisterende giver-gateway og en statusdrevet venteliste. Betalingsflowet genbruger bevidst giving-stakken. Tilmeldingscontrolleren opkræver gennem samme `GatewayService` / `IGatewayProvider`-abstraktion, som er dokumenteret under [Giving](./giving.md), så der hverken findes kortdata eller gateway-SDK-viden i content-modulet. Denne side beskriver datamodellen, prisfastsættelses- og kapacitetsreglerne samt flowene for tilmelding, betaling og venteliste.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisering sker i browseren nøjagtig som ved donationer (se [Giving](./giving)). Guiden genbruger apphelper-betalingsudbyderregistret, så indloggede medlemmer kan betale med gemte kort, og gæster tokeniserer et nyt kort. Controlleren spejler `DonateController`s udbyder-særheder (Kingdom Funding `pm-{id}`-betalingsmetode-id'er, Stripe SCA-svar med `requires_action`, som returneres til klienten uden at registrere en betaling). En vellykket opkrævning skriver en `registrationPayments`-række, øger `amountPaid` og bekræfter tilmeldingen. **Refusioner er ikke implementeret.** En annulleret betalt tilmelding beholder sine betalingsrækker, og eventuelle refusioner håndteres uden for systemet i gatewayens dashboard.
+Tokenisering sker i browseren nøjagtig som ved donationer (se [Giving](./giving.md)). Guiden genbruger apphelper-betalingsudbyderregistret, så indloggede medlemmer kan betale med gemte kort, og gæster tokeniserer et nyt kort. Controlleren spejler `DonateController`s udbyder-særheder (Kingdom Funding `pm-{id}`-betalingsmetode-id'er, Stripe SCA-svar med `requires_action`, som returneres til klienten uden at registrere en betaling). En vellykket opkrævning skriver en `registrationPayments`-række, øger `amountPaid` og bekræfter tilmeldingen. **Refusioner er ikke implementeret.** En annulleret betalt tilmelding beholder sine betalingsrækker, og eventuelle refusioner håndteres uden for systemet i gatewayens dashboard.
 
 Begge indgangspunkter går gennem samme kodesti: `register` (betaling ved tilmelding) og `pay` (restbetaling / fuldførelse af venteliste).
 
@@ -147,7 +148,7 @@ Opslag på tværs af moduler (oprettelse eller opslag af gæsteperson, indlæsni
 
 ## Relaterede sider
 
-- [Giving](./giving) — gateway-abstraktionen, udbyderregistret og tokeniseringsmodellen, som denne funktion genbruger
-- [Content-endpoints](../api/endpoints/content) — content-modulets REST-overflade
-- [Webhooks](../api/webhooks) — begivenheden `registration.created`
-- [Modulstruktur](../api/module-structure) — hvordan content-modulet er organiseret på serversiden
+- [Giving](./giving.md) — gateway-abstraktionen, udbyderregistret og tokeniseringsmodellen, som denne funktion genbruger
+- [Content-endpoints](../api/endpoints/content.md) — content-modulets REST-overflade
+- [Webhooks](../api/webhooks.md) — begivenheden `registration.created`
+- [Modulstruktur](../api/module-structure.md) — hvordan content-modulet er organiseret på serversiden

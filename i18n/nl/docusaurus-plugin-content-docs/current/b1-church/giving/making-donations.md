@@ -1,5 +1,7 @@
 ---
-title: "Een donatie doen"
+title: "Donaties doen in het ledenportaal van B1.church"
+sidebar_label: "Een donatie doen"
+description: "Doe via B1.church een eenmalige of terugkerende gift aan je kerk, met of zonder account, en bekijk daarna je giftengeschiedenis."
 ---
 
 # Een donatie doen

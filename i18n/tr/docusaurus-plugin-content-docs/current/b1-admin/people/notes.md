@@ -1,5 +1,6 @@
 ---
 title: "Notlar"
+description: "Kişilerden, gruplardan, etkinliklerden ve iş akışı kartlarından gelen pastoral bakım notlarını, takipleri ve planları tek B1 Admin listesinde en yeniden eskiye görün."
 ---
 
 # Notlar

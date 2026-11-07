@@ -1,5 +1,6 @@
 ---
 title: "Hantera studier"
+description: "Skapa, redigera och kategorisera studier i ett program i Lessons.church-admin och bifoga serieöversikter eller nyhetsbrevsmallar till varje studie."
 ---
 
 # Hantera studier

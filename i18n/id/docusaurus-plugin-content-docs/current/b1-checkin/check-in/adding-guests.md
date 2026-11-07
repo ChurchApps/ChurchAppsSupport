@@ -1,5 +1,6 @@
 ---
 title: "Menambahkan Tamu"
+description: "Tambahkan anak, kerabat, atau teman yang berkunjung ke sebuah keluarga di kiosk B1 Checkin, lalu tetapkan grup dan selesaikan check-in."
 ---
 
 # Menambahkan Tamu
@@ -13,8 +14,8 @@ Jika seseorang sedang berkunjung ke keluarga Anda dan perlu melakukan check-in b
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Cari keluarga Anda](./looking-up-members) dan pilih anggota dari hasil pencarian
-- Berada di [layar tinjauan rumah tangga](./household-review) tempat Anda dapat melihat anggota keluarga Anda
+- [Cari keluarga Anda](./looking-up-members.md) dan pilih anggota dari hasil pencarian
+- Berada di [layar tinjauan rumah tangga](./household-review.md) tempat Anda dapat melihat anggota keluarga Anda
 
 </div>
 
@@ -36,8 +37,8 @@ Jika nama tamu cocok dengan seseorang yang sudah ada dalam sistem tetapi bukan a
 
 Setelah tamu muncul dalam daftar rumah tangga, Anda dapat:
 
-- **Buka kartu mereka** dan [tetapkan mereka ke grup](./group-assignment), sama seperti anggota keluarga lainnya.
-- **[Lakukan check-in](./completing-checkin)** untuk seluruh rumah tangga termasuk tamu.
+- **Buka kartu mereka** dan [tetapkan mereka ke grup](./group-assignment.md), sama seperti anggota keluarga lainnya.
+- **[Lakukan check-in](./completing-checkin.md)** untuk seluruh rumah tangga termasuk tamu.
 
 ## Membatalkan
 
@@ -49,4 +50,4 @@ Menambahkan tamu di kiosk akan membuat catatan orang dalam basis data gereja And
 
 ## Langkah Berikutnya
 
-Setelah menambahkan tamu dan [menetapkan grup](./group-assignment) sesuai kebutuhan, Anda siap untuk [menyelesaikan check-in](./completing-checkin).
+Setelah menambahkan tamu dan [menetapkan grup](./group-assignment.md) sesuai kebutuhan, Anda siap untuk [menyelesaikan check-in](./completing-checkin.md).

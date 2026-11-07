@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "Collega B1 Admin a Zapier per avviare automazioni su nuove persone, donazioni e membri dei gruppi, e riscrivere i record in B1 senza programmare."
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ Scegli un trigger, poi aggiungi uno o più passaggi di azione. Esempi qui sotto.
 ### Pubblica le donazioni in un canale Slack con una scheda più ricca del connettore integrato
 
 - **Trigger** -- B1: Nuova donazione
-- **Azione** -- Slack: Invia messaggio nel canale. Componi qualsiasi layout -- pulsanti, allegati, ecc. -- che il [connettore Slack integrato](./slack-discord) non può creare.
+- **Azione** -- Slack: Invia messaggio nel canale. Componi qualsiasi layout -- pulsanti, allegati, ecc. -- che il [connettore Slack integrato](./slack-discord.md) non può creare.
 
 ### Aggiungi i nuovi membri dei gruppi a un Gruppo Google
 
@@ -106,6 +107,6 @@ Questo significa che il trigger si attiva solo per gli eventi che si verificano 
 
 ## Vedi anche
 
-- [Make](./make) -- stesso schema, piattaforma diversa
-- [Slack & Discord](./slack-discord) -- notifiche di chat più semplici senza Zapier
+- [Make](./make.md) -- stesso schema, piattaforma diversa
+- [Slack & Discord](./slack-discord.md) -- notifiche di chat più semplici senza Zapier
 - [Webhook (riferimento per sviluppatori)](/docs/developer/api/webhooks)

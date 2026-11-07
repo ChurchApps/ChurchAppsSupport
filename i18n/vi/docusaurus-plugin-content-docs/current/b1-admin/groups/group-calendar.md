@@ -1,5 +1,6 @@
 ---
 title: "Lịch nhóm"
+description: "Lên kế hoạch buổi họp và sự kiện định kỳ trên lịch nhóm trong B1 Admin và B1.church, với lên lịch hàng loạt, RSVP và đăng ký lịch."
 ---
 
 # Lịch nhóm

@@ -1,5 +1,6 @@
 ---
 title: "Önkéntes útmutatók"
+description: "Szerepköri útmutatók beállítása a Lessons.churchben, hogy minden önkéntes csak a saját lépéseit lássa, és óra előtt nyomtassa vagyossza meg őket."
 ---
 
 # Önkéntes útmutatók

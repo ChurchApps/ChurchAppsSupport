@@ -1,5 +1,6 @@
 ---
 title: "Ohjelmat ja opinnot"
+description: "Miten Lessons.churchin ohjelmat, opinnot, oppitunnit ja paikat liittyvät toisiinsa, jotta löydät oikean opetussuunnitelman ja siirryt liittyville oppitunneille."
 ---
 
 # Ohjelmat ja opinnot

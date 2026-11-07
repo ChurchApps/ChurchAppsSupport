@@ -1,5 +1,7 @@
 ---
-title: "Donații"
+title: "Donații online și donații în B1.church"
+sidebar_label: "Donații"
+description: "Donează online bisericii tale în B1.church fără cont sau autentifică-te pentru a gestiona donațiile recurente, metodele de plată și extrasele de donații."
 ---
 
 # Donații

@@ -1,5 +1,7 @@
 ---
-title: "Enregistrement"
+title: "Enregistrement dans le portail membre B1.church"
+sidebar_label: "Enregistrement"
+description: "Enregistrez-vous, vous et votre foyer, à un culte depuis le portail membre B1.church, sans passer par la borne, et choisissez vos groupes."
 ---
 
 # Enregistrement

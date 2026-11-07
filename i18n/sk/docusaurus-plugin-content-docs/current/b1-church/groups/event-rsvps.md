@@ -1,5 +1,6 @@
 ---
 title: "RSVP na udalosti"
+description: "Odpovedajte na skupinové udalosti v portáli členov B1.church možnosťami Prídem, Možno alebo Nemôžem a pozrite si, koľko ďalších ľudí príde. Vedúci môžu odpovede tiež prehliadať."
 ---
 
 # RSVP na udalosti
@@ -30,14 +31,14 @@ Vaša RSVP odpoveď sa vzťahuje na konkrétny výskyt udalosti. Pri týždennom
 ## Pre vedúcich skupín
 
 - **Zobrazenie odpovedí** -- Vedúci vidia pri každej udalosti v kalendári skupiny (**Všetky udalosti**) odkaz **Zobraziť odpovede**. Otvorí sa hárok **Odpovede** so zoznamom všetkých podľa odpovede: Idem, Možno a Nepôjdem. Ak ešte nikto neodpovedal, zobrazí sa „Zatiaľ žiadne odpovede.“
-- **Zapnutie alebo vypnutie RSVP** -- Pri vytváraní alebo úprave udalosti použite prepínač **Povoliť RSVP**. Udalosti s vypnutými RSVP nezobrazujú tlačidlá odpovedí. Zamestnanci, ktorí vytvárajú udalosti hromadne v B1 Admin, majú rovnakú možnosť. Pozri [Kalendár skupiny](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Zapnutie alebo vypnutie RSVP** -- Pri vytváraní alebo úprave udalosti použite prepínač **Povoliť RSVP**. Udalosti s vypnutými RSVP nezobrazujú tlačidlá odpovedí. Zamestnanci, ktorí vytvárajú udalosti hromadne v B1 Admin, majú rovnakú možnosť. Pozri [Kalendár skupiny](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-RSVP je ľahký spôsob, ako zistiť počet účastníkov. Ak vaša udalosť vyžaduje údaje o prihlásení, správu kapacity alebo platbu, použite namiesto toho [registráciu na udalosť](../events/registering).
+RSVP je ľahký spôsob, ako zistiť počet účastníkov. Ak vaša udalosť vyžaduje údaje o prihlásení, správu kapacity alebo platbu, použite namiesto toho [registráciu na udalosť](../events/registering.md).
 :::
 
 ## Súvisiace články
 
 - [Podrobnosti skupiny](./group-details.md) -- Všetko na detailnej stránke skupiny
-- [Kalendár skupiny (B1 Admin)](../../b1-admin/groups/group-calendar) -- Ako zamestnanci a vedúci spravujú udalosti skupín a RSVP
-- [Registrácia na udalosti](../events/registering) -- Úplná registrácia na udalosti s kapacitou a platbami
+- [Kalendár skupiny (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Ako zamestnanci a vedúci spravujú udalosti skupín a RSVP
+- [Registrácia na udalosti](../events/registering.md) -- Úplná registrácia na udalosti s kapacitou a platbami

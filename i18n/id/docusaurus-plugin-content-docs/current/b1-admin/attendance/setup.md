@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan Kehadiran"
+description: "Atur kampus, layanan, jam layanan, dan penugasan grup di B1 Admin agar pencatatan kehadiran dan jadwal check-in berjalan di seluruh gereja Anda."
 ---
 
 # Pengaturan Kehadiran

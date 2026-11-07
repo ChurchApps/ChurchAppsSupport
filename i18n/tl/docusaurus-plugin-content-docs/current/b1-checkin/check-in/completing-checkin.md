@@ -1,5 +1,6 @@
 ---
 title: "Pagkumpleto ng Check-In"
+description: "Tapusin ang check-in ng pamilya sa kiosk ng B1 Checkin: limitasyon ng kuwarto, pag-print ng label, pickup security code, at susunod na hakbang ng app."
 ---
 
 # Pagkumpleto ng Check-In
@@ -13,9 +14,9 @@ Kapag nasuri mo na ang iyong household at nagawa ang anumang kinakailangang pagt
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Suriin ang iyong household](./household-review) sa household review screen
-- [Magtalaga ng grupo](./group-assignment) sa mga miyembro ng pamilyang kailangang mag-check in sa isang partikular na klase o programa
-- Opsyonal na [magdagdag ng mga bisita](./adding-guests) na kasama ng iyong pamilya
+- [Suriin ang iyong household](./household-review.md) sa household review screen
+- [Magtalaga ng grupo](./group-assignment.md) sa mga miyembro ng pamilyang kailangang mag-check in sa isang partikular na klase o programa
+- Opsyonal na [magdagdag ng mga bisita](./adding-guests.md) na kasama ng iyong pamilya
 
 </div>
 
@@ -28,10 +29,10 @@ Iyon lamang ang kailangan. Naitala na ang attendance ng iyong pamilya.
 
 ## Mga Puno na Kuwarto at Ratio ng Volunteer
 
-Kung nagtakda ang iyong simbahan ng [safety limits](../../b1-admin/attendance/checkin-safety) sa mga kuwarto nito, sinusuri ng server ang mga ito bago i-save:
+Kung nagtakda ang iyong simbahan ng [safety limits](../../b1-admin/attendance/checkin-safety.md) sa mga kuwarto nito, sinusuri ng server ang mga ito bago i-save:
 
 - Kung ang napiling kuwarto ay **puno o sarado**, hindi matutuloy ang check-in at pangangalanan ng app ang kuwarto para makapili ka ng iba.
-- Kung may [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) ang service time at hindi bukas ang check-in window nito sa ngayon, tatanggihan din ang check-in sa mga kuwarto ng service time na iyon. Ipinapakita ng screen na **Can't check in yet** ang kuwarto kasama ang dahilang "check-in isn't open right now"; pindutin ang **Change Rooms** para pumili ng ibang service time o grupo. (Ang mga service time na sarado na ay ipinapakita bilang **Closed** sa [household screen](./household-review) at hindi maaaring piliin, kaya kadalasan mo lamang ito makikita kung nagsara ang window habang nasa gitna ng check-in.)
+- Kung may [check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) ang service time at hindi bukas ang check-in window nito sa ngayon, tatanggihan din ang check-in sa mga kuwarto ng service time na iyon. Ipinapakita ng screen na **Can't check in yet** ang kuwarto kasama ang dahilang "check-in isn't open right now"; pindutin ang **Change Rooms** para pumili ng ibang service time o grupo. (Ang mga service time na sarado na ay ipinapakita bilang **Closed** sa [household screen](./household-review.md) at hindi maaaring piliin, kaya kadalasan mo lamang ito makikita kung nagsara ang window habang nasa gitna ng check-in.)
 - Ang household na nag-check in para sa naunang service time ay maaaring bumalik sa ibang pagkakataon at magdagdag ng bukas na service time, kahit sarado na ang naunang window. Mananatili ang kanilang mga umiiral na check-in at hindi nito maaapektuhan ang bagong check-in.
 - Kung **kulang sa volunteer** ang kuwarto ng mga bata para sa ratio nito, alinman ay magpapakita ang app ng babalang maaaring kumpirmahin ng isang staff member para magpatuloy, o ganap na haharangin ang check-in -- depende sa kung paano na-configure ng iyong simbahan ang pagpapatupad ng ratio.
 
@@ -49,7 +50,7 @@ Ang parehong security code ay lumalabas sa name label ng bata at sa pickup slip 
 Ang security code ay ginagawa nang bago sa bawat check-in at gumagamit lamang ng katinig at digit (hindi kasama ang patinig para maiwasan ang pagbuo ng mga hindi angkop na salita).
 
 :::warning
-Kung hindi nag-iimprenta ang mga label, buksan ang Admin Settings sa pamamagitan ng pagpindot sa **church logo** nang pitong beses, pagkatapos ay pindutin ang **Change Printer** para i-verify ang koneksyon ng printer. Tingnan ang [Printer Setup](../getting-started/printer-setup) para sa mga hakbang sa pag-troubleshoot.
+Kung hindi nag-iimprenta ang mga label, buksan ang Admin Settings sa pamamagitan ng pagpindot sa **church logo** nang pitong beses, pagkatapos ay pindutin ang **Change Printer** para i-verify ang koneksyon ng printer. Tingnan ang [Printer Setup](../getting-started/printer-setup.md) para sa mga hakbang sa pag-troubleshoot.
 :::
 
 ## Ano ang Mangyayari Pagkatapos ng Check-In

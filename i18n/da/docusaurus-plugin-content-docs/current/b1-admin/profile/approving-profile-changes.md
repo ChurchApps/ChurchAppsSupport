@@ -1,5 +1,6 @@
 ---
 title: "Godkendelse af profilændringer"
+description: "Gennemgå og godkend medlemmers anmodninger om profilændringer i B1 Admin, og opsæt Directory Approval Group, der modtager dem."
 ---
 
 # Godkendelse af profilændringer

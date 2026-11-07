@@ -1,5 +1,6 @@
 ---
 title: "Gestion des études"
+description: "Créer, modifier et classer les études d'un programme dans l'admin Lessons.church, et joindre à chacune un aperçu de série ou un modèle de bulletin."
 ---
 
 # Gestion des études

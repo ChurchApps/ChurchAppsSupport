@@ -1,5 +1,6 @@
 ---
 title: "Tinhlelo"
+description: "Thola tinhlelo temsebenti lotabelwe kuto ku-B1.church, hlola tikhundla netinsuku takho, bese wemukela noma wenqabe timabelo kusuka ku-Iphothali Yelilungu lakho."
 ---
 
 # Tinhlelo

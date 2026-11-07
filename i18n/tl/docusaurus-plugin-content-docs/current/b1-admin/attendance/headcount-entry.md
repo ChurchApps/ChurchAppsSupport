@@ -1,5 +1,6 @@
 ---
 title: "Pagpasok ng Headcount at Trend"
+description: "Maglagay ng kabuuang bilang ng dumalo sa serbisyo o grupo sa B1 Admin nang walang pangalan, at subaybayan ang mga ito linggo-linggo sa Headcount Trend report."
 ---
 
 # Pagpasok ng Headcount at Trend

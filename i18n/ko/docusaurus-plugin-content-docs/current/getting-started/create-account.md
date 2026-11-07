@@ -1,5 +1,6 @@
 ---
 title: "계정 만들기"
+description: "B1.church에서 ChurchApps 계정을 등록하고 이메일을 인증한 뒤, 교회를 만들거나 참여하여 B1 Admin 설정을 시작합니다."
 ---
 
 # 계정 만들기

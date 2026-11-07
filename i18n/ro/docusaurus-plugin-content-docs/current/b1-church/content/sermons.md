@@ -1,5 +1,7 @@
 ---
-title: "Predici"
+title: "Răsfoirea predicilor pe site-ul tău B1.church"
+sidebar_label: "Predici"
+description: "Răsfoiește și urmărește predicile înregistrate din biblioteca bisericii pe site-ul B1.church, grupate în serii sau liste de redare. Fără autentificare."
 ---
 
 # Predici

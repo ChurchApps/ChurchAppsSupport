@@ -1,5 +1,7 @@
 ---
-title: "聖書"
+title: "B1.church で聖書を読む"
+sidebar_label: "聖書"
+description: "B1.church の聖書リーダーで聖書を読みます。書、章、訳を切り替える操作と、毎日の朗読のための聖書ページがあります。"
 ---
 
 # 聖書

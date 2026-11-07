@@ -1,5 +1,7 @@
 ---
-title: "Sisäänkirjaus"
+title: "Sisäänkirjautuminen B1.church-jäsenportaalissa"
+sidebar_label: "Sisäänkirjaus"
+description: "Kirjaa itsesi ja perheenjäsenet jumalanpalvelukseen B1.church-jäsenportaalista ohittaen kioskin ja valiten ryhmät."
 ---
 
 # Sisäänkirjaus

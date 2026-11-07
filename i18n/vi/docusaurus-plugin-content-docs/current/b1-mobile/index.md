@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (Không còn được hỗ trợ)"
+description: "Giải thích ứng dụng B1 Mobile gốc đã ngừng hỗ trợ, thành viên và quản trị viên nên dùng PWA B1.church thay thế, còn các trang cũ được giữ để tham khảo."
 ---
 
 # B1 Mobile (Không còn được hỗ trợ)
@@ -40,16 +41,16 @@ B1 Mobile hỗ trợ thông báo đẩy để bạn không bỏ lỡ các cập 
 
 ## Tìm hiểu thêm
 
-- [Bắt đầu](./getting-started/) -- Cài đặt ứng dụng, tạo tài khoản và chọn hội thánh.
-- [Bảng điều khiển](./dashboard/) -- Tìm hiểu về màn hình chính được cá nhân hóa của bạn.
-- [Nhóm](./groups/) -- Giữ liên lạc với các nhóm trong hội thánh.
-- [Dâng hiến](./giving/) -- Dâng hiến từ điện thoại.
-- [Sự kiện](./events/) -- Xem và đăng ký các sự kiện sắp tới của hội thánh.
-- [Điểm danh](./checkin/) -- Điểm danh cho buổi thờ phượng và sự kiện.
-- [Phục vụ](./serving/) -- Xem kế hoạch phục vụ, phân công và cơ hội tình nguyện.
-- [Cộng đồng](./community/) -- Duyệt danh bạ thành viên và gửi tin nhắn.
-- [Nội dung](./content/) -- Bài giảng, Kinh Thánh, câu Kinh Thánh trong ngày và bài học (màn hình bài học không còn được hỗ trợ — xem [FreePlay](/docs/freeplay/)).
-- [Hồ sơ](./profile/) -- Quản lý hồ sơ và cài đặt tài khoản của bạn.
+- [Bắt đầu](./getting-started/index.md) -- Cài đặt ứng dụng, tạo tài khoản và chọn hội thánh.
+- [Bảng điều khiển](./dashboard/index.md) -- Tìm hiểu về màn hình chính được cá nhân hóa của bạn.
+- [Nhóm](./groups/index.md) -- Giữ liên lạc với các nhóm trong hội thánh.
+- [Dâng hiến](./giving/index.md) -- Dâng hiến từ điện thoại.
+- [Sự kiện](./events/index.md) -- Xem và đăng ký các sự kiện sắp tới của hội thánh.
+- [Điểm danh](./checkin/index.md) -- Điểm danh cho buổi thờ phượng và sự kiện.
+- [Phục vụ](./serving/index.md) -- Xem kế hoạch phục vụ, phân công và cơ hội tình nguyện.
+- [Cộng đồng](./community/index.md) -- Duyệt danh bạ thành viên và gửi tin nhắn.
+- [Nội dung](./content/index.md) -- Bài giảng, Kinh Thánh, câu Kinh Thánh trong ngày và bài học (màn hình bài học không còn được hỗ trợ — xem [FreePlay](/docs/freeplay/)).
+- [Hồ sơ](./profile/index.md) -- Quản lý hồ sơ và cài đặt tài khoản của bạn.
 
 :::info
 B1 Mobile đã được thay thế bằng [B1.church PWA](../b1-church/getting-started/installing-pwa.md). Các triển khai mới nên sử dụng PWA, vì ứng dụng gốc không còn được cập nhật.

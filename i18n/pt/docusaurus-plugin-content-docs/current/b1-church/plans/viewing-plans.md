@@ -1,5 +1,7 @@
 ---
-title: "Visualizando planos"
+title: "Suas Escalas de Culto no Portal de Membros do B1.church"
+sidebar_label: "Visualizando planos"
+description: "Confira suas escalas de culto no B1.church, aceite ou recuse pedidos, defina datas de indisponibilidade e revise seu histórico de serviço."
 ---
 
 # Visualizando planos

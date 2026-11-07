@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Yhdistä B1 Admin Makeen automatisoidaksesi työnkulkuja: luo API-avain, määritä B1.church-laukaisin ja toiminnot sekä ratkaise yleisimmät virheet."
 ---
 
 # Make
@@ -110,6 +111,6 @@ B1.church Make -sovellus on avointa lähdekoodia. JSON-määrittelyt ovat `B1Int
 
 ## Katso myös
 
-- [Zapier](./zapier) — sama malli yksinkertaisemmalla käyttöliittymällä ja suuremmalla sovelluskatalogilla
-- [Slack ja Discord](./slack-discord) — sisäänrakennetut chat-ilmoitukset ilman Makea
+- [Zapier](./zapier.md) — sama malli yksinkertaisemmalla käyttöliittymällä ja suuremmalla sovelluskatalogilla
+- [Slack ja Discord](./slack-discord.md) — sisäänrakennetut chat-ilmoitukset ilman Makea
 - [Webhookit (kehittäjäviite)](/docs/developer/api/webhooks)

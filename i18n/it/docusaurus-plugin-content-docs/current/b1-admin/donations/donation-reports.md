@@ -1,5 +1,6 @@
 ---
 title: "Report sulle donazioni"
+description: "Consulta in B1 Admin i totali delle offerte, i donatori inattivi e i dettagli dei lotti con il riepilogo donazioni, la vista Donatori inattivi e i CSV."
 ---
 
 # Report sulle donazioni

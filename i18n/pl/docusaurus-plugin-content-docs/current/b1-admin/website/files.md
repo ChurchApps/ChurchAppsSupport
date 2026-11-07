@@ -1,5 +1,6 @@
 ---
 title: "Pliki"
+description: "Wysyłaj, przeglądaj i zarządzaj obrazami oraz dokumentami na stronie kościoła w B1 Admin, również łącząc zewnętrzną pamięć, by mieć więcej miejsca."
 ---
 
 # Pliki
@@ -13,7 +14,7 @@ Strona Pliki to centralne miejsce na wszystkie multimedia i dokumenty używane w
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Ukończ [wstępną konfigurację](initial-setup) swojej strony
+- Ukończ [wstępną konfigurację](./initial-setup.md) swojej strony
 - Zoptymalizuj obrazy przed przesłaniem, aby strony ładowały się szybciej
 - Przygotuj pliki w popularnych formatach internetowych (PNG, JPG, PDF itd.)
 
@@ -42,7 +43,7 @@ Tabela plików zawiera listę wszystkich przesłanych plików wraz z ich **Nazw�
 3. Pliki przesłane tutaj są dostępne do użycia na wszystkich stronach witryny i w blokach treści.
 
 :::info
-Podczas tworzenia stron w [Zarządzaniu stronami](managing-pages) możesz odwołać się do dowolnego pliku przesłanego tutaj, używając jego adresu URL. Dzięki temu wszystkie multimedia są uporządkowane w jednym centralnym miejscu.
+Podczas tworzenia stron w [Zarządzaniu stronami](./managing-pages.md) możesz odwołać się do dowolnego pliku przesłanego tutaj, używając jego adresu URL. Dzięki temu wszystkie multimedia są uporządkowane w jednym centralnym miejscu.
 :::
 
 ## Usuwanie plików
@@ -57,5 +58,5 @@ Usuniętych plików nie można odzyskać. Przed usunięciem dokładnie sprawdź,
 
 ## Kolejne kroki
 
-- [Zarządzanie stronami](managing-pages) -- Dodawaj przesłane pliki do stron witryny
-- [Wygląd](appearance) -- Dostosuj wizualny motyw swojej strony
+- [Zarządzanie stronami](./managing-pages.md) -- Dodawaj przesłane pliki do stron witryny
+- [Wygląd](./appearance.md) -- Dostosuj wizualny motyw swojej strony

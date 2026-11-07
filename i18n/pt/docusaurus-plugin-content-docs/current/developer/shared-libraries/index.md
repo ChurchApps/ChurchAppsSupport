@@ -1,5 +1,6 @@
 ---
 title: "Bibliotecas compartilhadas"
+description: "Docs dos pacotes npm @churchapps usados por B1 Admin, B1.church e APIs, com configuração do workspace Packages e publicação com changesets."
 ---
 
 # Bibliotecas compartilhadas
@@ -14,9 +15,9 @@ O código compartilhado da ChurchApps é publicado no npm sob o escopo `@churcha
 
 | Pacote | Descrição | Usado por |
 |--------|-----------|-----------|
-| [`@churchapps/helpers`](./helpers) | Camada base: funções auxiliares independentes de framework e as interfaces TypeScript compartilhadas que formam o contrato de dados entre os aplicativos | Todos os projetos |
-| [`@churchapps/apihelper`](./api-helper) | Utilitários Express do lado do servidor: autenticação, controladores base, acesso ao banco de dados, integrações com AWS e e-mail | Todas as APIs |
-| [`@churchapps/apphelper`](./app-helper) | Componentes React compartilhados e módulos de funcionalidades (login, doações, formulários, markdown, site) | Todos os apps web |
+| [`@churchapps/helpers`](./helpers.md) | Camada base: funções auxiliares independentes de framework e as interfaces TypeScript compartilhadas que formam o contrato de dados entre os aplicativos | Todos os projetos |
+| [`@churchapps/apihelper`](./api-helper.md) | Utilitários Express do lado do servidor: autenticação, controladores base, acesso ao banco de dados, integrações com AWS e e-mail | Todas as APIs |
+| [`@churchapps/apphelper`](./app-helper.md) | Componentes React compartilhados e módulos de funcionalidades (login, doações, formulários, markdown, site) | Todos os apps web |
 | `@churchapps/content-providers` | Abstração sobre provedores de conteúdo de terceiros (Lessons.church, Planning Center, Dropbox e outros) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Kit de ferramentas para criar integrações com o B1.church: verificação de webhooks, cliente REST tipado, auxiliares de OAuth | Desenvolvedores de integrações externas |
 | `@churchapps/texting` | Abstração de provedores de SMS (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

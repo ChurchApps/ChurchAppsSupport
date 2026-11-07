@@ -1,5 +1,6 @@
 ---
 title: "Fødsels- og bryllupsdagslister"
+description: "Lag en liste over alle med bursdag eller bryllupsjubileum i en bestemt måned med filtre i personsøket i B1 Admin, og vis eller eksporter datoene."
 ---
 
 # Fødsels- og bryllupsdagslister

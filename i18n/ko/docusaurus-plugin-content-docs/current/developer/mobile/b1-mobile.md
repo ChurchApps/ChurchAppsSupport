@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "B1 Mobile React Native/Expo 앱을 로컬에 설정하고 실행하며, API 엔드포인트를 구성하고 Android 또는 iOS용으로 빌드합니다. B1 Mobile은 지원 중단(deprecated)되었습니다."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile은 ChurchApps의 기본 구성원용 모바일 앱이며, React Native
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **Node.js**와 **Expo CLI**를 설치하세요 -- [사전 요구 사항](../setup/prerequisites)을 참조하세요
+- **Node.js**와 **Expo CLI**를 설치하세요 -- [사전 요구 사항](../setup/prerequisites.md)을 참조하세요
 - Android 에뮬레이터용 **Android Studio** 또는 iOS 시뮬레이터용 **Xcode**를 설치하세요
-- API 대상(데모 또는 로컬)을 구성하세요 -- [환경 변수](../setup/environment-variables)를 참조하세요
+- API 대상(데모 또는 로컬)을 구성하세요 -- [환경 변수](../setup/environment-variables.md)를 참조하세요
 
 </div>
 
@@ -109,5 +110,5 @@ OTA 업데이트는 JavaScript 전용 변경에 가장 적합합니다. 네이�
 
 ## 관련 문서
 
-- **[모바일 배포](../deployment/mobile)** -- 모바일 앱을 빌드, 제출, 배포하는 전체 가이드
-- **[환경 변수](../setup/environment-variables)** -- 모바일 환경 구성에 대한 전체 참조
+- **[모바일 배포](../deployment/mobile.md)** -- 모바일 앱을 빌드, 제출, 배포하는 전체 가이드
+- **[환경 변수](../setup/environment-variables.md)** -- 모바일 환경 구성에 대한 전체 참조

@@ -1,5 +1,6 @@
 ---
 title: "Parceando uma tela"
+description: "Pareie uma TV FreePlay a um calendário de grupo de telas no FreePlay Admin com o código de quatro letras exibido na TV, para reprodução automática."
 ---
 
 # Parceando uma tela
@@ -13,9 +14,9 @@ Para colocar uma TV em um calendário, faça o pareamento dela com o **FreePlay 
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Instale e abra o FreePlay na TV. Veja [Primeiros passos](../getting-started/)
+- Instale e abra o FreePlay na TV. Veja [Primeiros passos](../getting-started/index.md)
 - Tenha um login do ChurchApps para a sua igreja, para entrar no FreePlay Admin
-- Opcionalmente, [monte uma lista de reprodução](./building-playlists) e [agende-a](./scheduling-the-calendar) antes, para que a TV já tenha algo para reproduzir
+- Opcionalmente, [monte uma lista de reprodução](./building-playlists.md) e [agende-a](./scheduling-the-calendar.md) antes, para que a TV já tenha algo para reproduzir
 
 </div>
 
@@ -38,7 +39,7 @@ O código vale por 15 minutos, e uma contagem regressiva abaixo dele mostra quan
 5. Em **Modo**, deixe **Agendado** selecionado. A TV vai reproduzir de acordo com o calendário do grupo, sozinha.
 6. Clique em **Parear**.
 
-A TV mostra **Conectado!** e depois **Carregando sua programação...**. Ela baixa o que está agendado e começa a reproduzir. Veja [Reprodução agendada na TV](./scheduled-playback).
+A TV mostra **Conectado!** e depois **Carregando sua programação...**. Ela baixa o que está agendado e começa a reproduzir. Veja [Reprodução agendada na TV](./scheduled-playback.md).
 
 :::info
 Se o FreePlay Admin disser **Esse código não corresponde a uma TV**, confira o código na tela. Se ele tiver expirado, use o novo código que a TV está mostrando agora.
@@ -51,11 +52,11 @@ A configuração **Modo** tem duas opções:
 - **Agendado** - Reproduz de acordo com o calendário do grupo, sozinha. Ninguém precisa apertar Iniciar.
 - **Manual** - Alguém escolhe o conteúdo com o controle remoto. Uma tela manual continua aparecendo na sua lista de **Telas**, mas não segue um calendário, então o campo **Grupo** fica desativado.
 
-Você pode trocar o modo de uma tela depois, em **Editar** na [página de Telas](./managing-screens).
+Você pode trocar o modo de uma tela depois, em **Editar** na [página de Telas](./managing-screens.md).
 
 ## Parceando com um plano de culto
 
-O código da tela **Parear esta tela** também funciona no B1 Admin. Se você digitá-lo lá e escolher um tipo de plano em **Mostrar planos de**, a TV segue esse tipo de plano no [Modo de plano](../plan-mode/), em vez de um calendário. Veja [Parceando seu dispositivo](../plan-mode/device-pairing).
+O código da tela **Parear esta tela** também funciona no B1 Admin. Se você digitá-lo lá e escolher um tipo de plano em **Mostrar planos de**, a TV segue esse tipo de plano no [Modo de plano](../plan-mode/index.md), em vez de um calendário. Veja [Parceando seu dispositivo](../plan-mode/device-pairing.md).
 
 ## Alterando ou desfazendo o pareamento pela TV {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ A TV volta a mostrar um código de pareamento. Pareie-a de novo sempre que quise
 
 ## Artigos relacionados
 
-- **[Gerenciando telas e grupos](./managing-screens)** - Renomeie uma tela, mova-a para outro grupo ou veja seus downloads
-- **[Agendando o calendário](./scheduling-the-calendar)** - Decida o que as telas do grupo reproduzem
-- **[Escolhendo um modo de pareamento](../getting-started/pairing-modes)** - Compare o Modo agendado com o Modo de plano e com a navegação manual pelos provedores
+- **[Gerenciando telas e grupos](./managing-screens.md)** - Renomeie uma tela, mova-a para outro grupo ou veja seus downloads
+- **[Agendando o calendário](./scheduling-the-calendar.md)** - Decida o que as telas do grupo reproduzem
+- **[Escolhendo um modo de pareamento](../getting-started/pairing-modes.md)** - Compare o Modo agendado com o Modo de plano e com a navegação manual pelos provedores

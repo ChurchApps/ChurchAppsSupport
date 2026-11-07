@@ -1,5 +1,6 @@
 ---
 title: "Abbinare uno schermo"
+description: "Associare una TV FreePlay al calendario di un gruppo di schermi in FreePlay Admin con il codice di quattro lettere, per riprodurre contenuti programmati."
 ---
 
 # Abbinare uno schermo
@@ -13,9 +14,9 @@ Per mettere una TV su un calendario, abbinala a **FreePlay Admin**. La TV mostra
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Installa e avvia FreePlay sulla TV. Vedi [Per iniziare](../getting-started/)
+- Installa e avvia FreePlay sulla TV. Vedi [Per iniziare](../getting-started/index.md)
 - Assicurati di avere un accesso ChurchApps per la tua chiesa, così puoi accedere a FreePlay Admin
-- Facoltativamente, [crea una playlist](./building-playlists) e [programmala](./scheduling-the-calendar) prima, così la TV ha subito qualcosa da riprodurre
+- Facoltativamente, [crea una playlist](./building-playlists.md) e [programmala](./scheduling-the-calendar.md) prima, così la TV ha subito qualcosa da riprodurre
 
 </div>
 
@@ -38,7 +39,7 @@ Il codice dura 15 minuti, e un conto alla rovescia sotto mostra il tempo rimasto
 5. In **Modalità**, lascia selezionato **Programmata**. La TV riprodurrà in autonomia secondo il calendario del gruppo.
 6. Clicca su **Abbina**.
 
-La TV mostra **Connesso!** e poi **Caricamento del tuo programma...**. Scarica ciò che è programmato e inizia a riprodurre. Vedi [Riproduzione programmata sulla TV](./scheduled-playback).
+La TV mostra **Connesso!** e poi **Caricamento del tuo programma...**. Scarica ciò che è programmato e inizia a riprodurre. Vedi [Riproduzione programmata sulla TV](./scheduled-playback.md).
 
 :::info
 Se FreePlay Admin dice **Quel codice non corrisponde a nessuna TV**, controlla il codice sullo schermo. Se è scaduto, usa il nuovo codice che la TV sta mostrando ora.
@@ -51,11 +52,11 @@ L'impostazione **Modalità** ha due opzioni:
 - **Programmata** - Riproduce secondo il calendario del gruppo in autonomia. Nessuno deve premere Avvia.
 - **Manuale** - Qualcuno sceglie i contenuti con il telecomando. Uno schermo manuale compare comunque nell'elenco **Schermi**, ma non segue un calendario, quindi il campo **Gruppo** è disattivato.
 
-Puoi cambiare la modalità di uno schermo in seguito da **Modifica** nella [pagina Schermi](./managing-screens).
+Puoi cambiare la modalità di uno schermo in seguito da **Modifica** nella [pagina Schermi](./managing-screens.md).
 
 ## Abbinare a un piano di servizio
 
-Il codice della schermata **Abbina questo schermo** funziona anche in B1 Admin. Se lo inserisci lì e scegli un tipo di piano in **Mostra piani per**, la TV segue quel tipo di piano nella [Modalità piano](../plan-mode/) invece di un calendario. Vedi [Abbinare il tuo dispositivo](../plan-mode/device-pairing).
+Il codice della schermata **Abbina questo schermo** funziona anche in B1 Admin. Se lo inserisci lì e scegli un tipo di piano in **Mostra piani per**, la TV segue quel tipo di piano nella [Modalità piano](../plan-mode/index.md) invece di un calendario. Vedi [Abbinare il tuo dispositivo](../plan-mode/device-pairing.md).
 
 ## Cambiare o rimuovere l'abbinamento dalla TV {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ La TV torna a mostrare un codice di abbinamento. Abbinala di nuovo quando la vuo
 
 ## Articoli correlati
 
-- **[Gestire schermi e gruppi](./managing-screens)** - Rinomina uno schermo, spostalo in un altro gruppo o controlla i suoi download
-- **[Programmare il calendario](./scheduling-the-calendar)** - Decidi cosa riproducono gli schermi del gruppo
-- **[Scegliere una modalità di abbinamento](../getting-started/pairing-modes)** - Confronta la Modalità programmata con la Modalità piano e la navigazione autonoma dei fornitori
+- **[Gestire schermi e gruppi](./managing-screens.md)** - Rinomina uno schermo, spostalo in un altro gruppo o controlla i suoi download
+- **[Programmare il calendario](./scheduling-the-calendar.md)** - Decidi cosa riproducono gli schermi del gruppo
+- **[Scegliere una modalità di abbinamento](../getting-started/pairing-modes.md)** - Confronta la Modalità programmata con la Modalità piano e la navigazione autonoma dei fornitori

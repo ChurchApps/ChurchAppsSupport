@@ -1,5 +1,6 @@
 ---
 title: "Klassenzimmer"
+description: "Klassenzimmer in Lessons.church einrichten und verwalten: Räume, Altersgruppen und Ansichten für Ehrenamtliche, für den Unterrichtsplan der Gemeinde."
 ---
 
 # Klassenzimmer

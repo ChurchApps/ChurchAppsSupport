@@ -1,5 +1,6 @@
 ---
 title: "TV에서 예약 재생하기"
+description: "페어링된 FreePlay TV는 다가오는 한 주의 콘텐츠를 미리 다운로드하고 시계에 맞춰 재생하며, 오프라인에서도 작동합니다. 정보 패널, 리모컨 버튼, 재생목록 고정 방법을 설명합니다."
 ---
 
 # TV에서 예약 재생하기
@@ -13,8 +14,8 @@ TV가 캘린더에 연결되면 FreePlay가 알아서 재생합니다. 다가오
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- [TV를 캘린더에 연결](./pairing-a-screen)하세요.
-- [캘린더에 콘텐츠를 예약](./scheduling-the-calendar)하거나, 화면 그룹의 기본 반복 재생을 설정하세요.
+- [TV를 캘린더에 연결](./pairing-a-screen.md)하세요.
+- [캘린더에 콘텐츠를 예약](./scheduling-the-calendar.md)하거나, 화면 그룹의 기본 반복 재생을 설정하세요.
 
 </div>
 
@@ -40,7 +41,7 @@ TV가 캘린더에 연결되면 FreePlay가 알아서 재생합니다. 다가오
 
 - **Pin This Playlist** -- 캘린더를 무시하고 현재 콘텐츠를 반복 재생합니다. 예약 재생으로 돌아가려면 **Unpin Playlist**를 선택하세요.
 - **Browse Content** -- 예약 재생 화면을 떠나 연결된 제공자의 콘텐츠를 찾아볼 수 있습니다.
-- **Settings** -- FreePlay 설정을 엽니다. 여기서 [연결을 해제하거나 다른 캘린더에 연결](./pairing-a-screen#changing-or-unpairing-from-the-tv)할 수 있습니다.
+- **Settings** -- FreePlay 설정을 엽니다. 여기서 [연결을 해제하거나 다른 캘린더에 연결](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)할 수 있습니다.
 
 :::tip
 콘텐츠를 찾아본 뒤 예약 재생으로 돌아가려면, **Content Providers** 화면에서 리모컨의 **Back**을 누르거나, **Settings**를 열고 **Pair to a calendar**를 선택한 뒤 **Back to schedule**을 고르세요. 연결된 TV는 FreePlay가 다시 앞으로 올라올 때마다 예약 재생 화면으로 돌아오며, 항상 예약 재생 화면으로 열립니다.
@@ -77,6 +78,6 @@ TV가 캘린더에 연결되면 FreePlay가 알아서 재생합니다. 다가오
 
 ## 관련 문서
 
-- **[캘린더 예약하기](./scheduling-the-calendar)** -- 재생할 내용과 일찍 끝났을 때의 동작 설정하기
-- **[화면 및 그룹 관리하기](./managing-screens)** -- FreePlay Admin에서 화면별 다운로드 상태 확인하기
-- **[콘텐츠 재생하기](../content-providers/playing-content)** -- 직접 콘텐츠를 재생할 때의 플레이어 조작법
+- **[캘린더 예약하기](./scheduling-the-calendar.md)** -- 재생할 내용과 일찍 끝났을 때의 동작 설정하기
+- **[화면 및 그룹 관리하기](./managing-screens.md)** -- FreePlay Admin에서 화면별 다운로드 상태 확인하기
+- **[콘텐츠 재생하기](../content-providers/playing-content.md)** -- 직접 콘텐츠를 재생할 때의 플레이어 조작법

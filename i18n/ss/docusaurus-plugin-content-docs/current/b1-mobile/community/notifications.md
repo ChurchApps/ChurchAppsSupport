@@ -1,5 +1,6 @@
 ---
 title: "Tati"
+description: "Setsa tisaziso letisheshako ye-app ye-B1 Mobile, bese ubuka, uvule, futsi usule tisaziso telicawe letimayelana netimiyalezo, emaqembu, nekusebenta."
 ---
 
 # Tati
@@ -13,7 +14,7 @@ B1 Mobile isebentisa tati letitfunyelwako kute ihlale ikwatisa ngaloko lokwentek
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 - Vumela tati te-B1 Mobile etilungiselelweni telidivayisi lakho
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile isebentisa tati letitfunyelwako kute ihlale ikwatisa ngaloko lokwentek
 
 Tati tingafaka umsebenti lohlukahlukene, lokufaka:
 
-- **Imilayeto** -- Nakukhona umuntfu lokutfumela [umlayeto wangasese](./messaging).
-- **Umsebenti wemacembu** -- Tinguquko, timiso, netingcoco tavela [emacembwini](../groups/) longu lilunga lawo.
+- **Imilayeto** -- Nakukhona umuntfu lokutfumela [umlayeto wangasese](./messaging.md).
+- **Umsebenti wemacembu** -- Tinguquko, timiso, netingcoco tavela [emacembwini](../groups/index.md) longu lilunga lawo.
 - **Kwabelwa umsebenti wekukhonta** -- Nawabelwa [luhlelo](../serving/viewing-plans.md) nobe nakushintja simo sekwabelwa kwakho.
 - **Letinye tinguquko** -- Tetfulo letivamile netintfo letikuphatsako.
 

@@ -1,5 +1,6 @@
 ---
 title: "Přehrávání obsahu"
+description: "Ovládání FreePlay dálkovým ovladačem TV: pozastavení, přeskakování snímků a videí, skok na libovolné kázání a ukončení přehrávače."
 ---
 
 # Přehrávání obsahu
@@ -13,13 +14,13 @@ Přehrávač FreePlay zabere celou obrazovku a je navržen pro ovládání dálk
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Vyberte, co chcete přehrát. Viz [Procházení a stahování obsahu](./browsing-content), [Režim plánu](../plan-mode/) nebo [Oznámení](./announcements)
+- Vyberte, co chcete přehrát. Viz [Procházení a stahování obsahu](./browsing-content.md), [Režim plánu](../plan-mode/index.md) nebo [Oznámení](./announcements.md)
 - Stisknutím tlačítka **Start** otevřete přehrávač
 
 </div>
 
 :::info
-Obrazovky připojené ke kalendáři používají samostatný plánovaný přehrávač s mírně odlišným ovládáním. Viz [Plánované přehrávání v televizi](../scheduled-mode/scheduled-playback).
+Obrazovky připojené ke kalendáři používají samostatný plánovaný přehrávač s mírně odlišným ovládáním. Viz [Plánované přehrávání v televizi](../scheduled-mode/scheduled-playback.md).
 :::
 
 ## Ovládání přehrávače
@@ -57,7 +58,7 @@ Během přehrávání stiskněte **Nahoru** a otevřete **Výběr zprávy**. Zob
 Stisknutím **Dolů** nebo **Zpět** na ovladači opustíte přehrávač. Kam se dostanete, závisí na tom, co jste přehrávali:
 
 - **Obsah poskytovatele** – zpět do prohlížeče obsahu
-- **Plán** – zpět na obrazovku stahování plánu. Viz [Režim plánu](../plan-mode/)
+- **Plán** – zpět na obrazovku stahování plánu. Viz [Režim plánu](../plan-mode/index.md)
 - **Stažený obsah** – zpět na obrazovku **Stažené**
 
 :::info
@@ -66,5 +67,5 @@ Obrazovka zůstává během otevřeného přehrávače aktivní, takže se telev
 
 ## Související články
 
-- **[Procházení a stahování obsahu](./browsing-content)** – Najděte obsah a stáhněte jej pro přehrávání offline
-- **[Plánované přehrávání v televizi](../scheduled-mode/scheduled-playback)** – Ovládání dálkovým ovladačem pro obrazovky, které se řídí kalendářem
+- **[Procházení a stahování obsahu](./browsing-content.md)** – Najděte obsah a stáhněte jej pro přehrávání offline
+- **[Plánované přehrávání v televizi](../scheduled-mode/scheduled-playback.md)** – Ovládání dálkovým ovladačem pro obrazovky, které se řídí kalendářem

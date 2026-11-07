@@ -1,5 +1,7 @@
 ---
-title: "Volunteer Signup"
+title: "Volunteer Signup in the B1.church Member Portal"
+sidebar_label: "Volunteer Signup"
+description: "Browse open volunteer positions by category and sign up for upcoming services or remove your signup on B1.church before the deadline."
 ---
 
 # Volunteer Signup
@@ -74,4 +76,4 @@ Check the volunteer page regularly, especially early in the week. Popular positi
 ## Related Articles
 
 - [Serving Overview](./index.md) -- Overview of serving features on B1.church
-- [Viewing Plans](../plans/viewing-plans) -- View your assigned plans and service orders
+- [Viewing Plans](../plans/viewing-plans.md) -- View your assigned plans and service orders

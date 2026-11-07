@@ -1,5 +1,6 @@
 ---
 title: "Conteggio dei presenti e andamento"
+description: "Inserisci in B1 Admin il totale delle presenze di un culto o gruppo senza elenco nominativo e segui l'andamento settimanale nel report Andamento presenze."
 ---
 
 # Conteggio dei presenti e andamento

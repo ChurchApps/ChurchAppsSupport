@@ -1,5 +1,6 @@
 ---
 title: "Plánování kalendáře"
+description: "Týdenní nebo jednorázový rozvrh v Kalendáři FreePlay Admin pro playlisty, plány bohoslužeb a složky poskytovatelů na skupinách obrazovek, se smyčkami jako záloha."
 ---
 
 # Plánování kalendáře
@@ -13,8 +14,8 @@ Stránka **Kalendář** ve FreePlay Admin určuje, co každá skupina obrazovek 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Vytvořte alespoň jednu skupinu obrazovek. Viz [Správa obrazovek a skupin](./managing-screens#screen-groups)
-- [Vytvořte playlist](./building-playlists), nebo mějte v B1 Admin nastavený typ plánu
+- Vytvořte alespoň jednu skupinu obrazovek. Viz [Správa obrazovek a skupin](./managing-screens.md#screen-groups)
+- [Vytvořte playlist](./building-playlists.md), nebo mějte v B1 Admin nastavený typ plánu
 
 </div>
 
@@ -82,11 +83,11 @@ Pokud se dva plány překrývají, formulář zobrazí upozornění: **Překrýv
 
 ## Jak obrazovky přebírají změny
 
-Spárované obrazovky stahují vše naplánované na dalších 7 dní a samy kontrolují změny. Po úpravě kalendáře se k televizoru nemusíte vracet. Chcete-li zjistit, zda má obrazovka vše potřebné, podívejte se na **Připraveno do** na [stránce Obrazovky](./managing-screens).
+Spárované obrazovky stahují vše naplánované na dalších 7 dní a samy kontrolují změny. Po úpravě kalendáře se k televizoru nemusíte vracet. Chcete-li zjistit, zda má obrazovka vše potřebné, podívejte se na **Připraveno do** na [stránce Obrazovky](./managing-screens.md).
 
 ## Související články
 
-- **[Vytváření playlistů](./building-playlists)** - Vytvořte playlisty, které plánujete
-- **[Plánované přehrávání na televizoru](./scheduled-playback)** - Jak na televizoru fungují lekce v tempu učitele a dálkové ovládání
-- **[Správa obrazovek a skupin](./managing-screens)** - Přidávejte skupiny a kontrolujte stahování každé obrazovky
+- **[Vytváření playlistů](./building-playlists.md)** - Vytvořte playlisty, které plánujete
+- **[Plánované přehrávání na televizoru](./scheduled-playback.md)** - Jak na televizoru fungují lekce v tempu učitele a dálkové ovládání
+- **[Správa obrazovek a skupin](./managing-screens.md)** - Přidávejte skupiny a kontrolujte stahování každé obrazovky
 - **[Zachování jen části každé lekce](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Zkraťte každou naplánovanou lekci typu plánu na části, které vaše místnost přehrává

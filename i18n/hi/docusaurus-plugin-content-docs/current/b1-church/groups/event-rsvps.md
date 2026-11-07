@@ -1,5 +1,6 @@
 ---
 title: "Event RSVPs"
+description: "B1.church मेंबर पोर्टल में समूह कार्यक्रमों के लिए जाऊँगा, शायद, या नहीं जा सकता चुनें, और देखें कि कितने अन्य लोग आ रहे हैं। नेता भी उत्तर देख सकते हैं।"
 ---
 
 # Event RSVPs
@@ -30,14 +31,14 @@ group events में RSVPs एकत्र किए जा सकते ह�
 ## Group Leaders के लिए
 
 - **Responses देखना** -- leaders को group के calendar (**All events**) में हर event पर **View responses** link दिखता है। इससे **Responses** sheet खुलती है, जो जवाब के अनुसार सभी को सूचीबद्ध करती है -- Going, Maybe, और Can't go। यदि अभी तक किसी ने जवाब नहीं दिया है, तो "No responses yet." दिखता है।
-- **RSVPs चालू या बंद करना** -- event बनाते या edit करते समय, **Allow RSVPs** switch का उपयोग करें। जिन events में RSVPs बंद हैं उनमें कोई response buttons नहीं दिखते। B1 Admin से एक साथ कई events बनाने वाले staff के पास भी यही विकल्प है -- देखें [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps)।
+- **RSVPs चालू या बंद करना** -- event बनाते या edit करते समय, **Allow RSVPs** switch का उपयोग करें। जिन events में RSVPs बंद हैं उनमें कोई response buttons नहीं दिखते। B1 Admin से एक साथ कई events बनाने वाले staff के पास भी यही विकल्प है -- देखें [Group Calendar](../../b1-admin/groups/group-calendar.md#event-rsvps)।
 
 :::tip
-RSVPs एक हल्की head count हैं। यदि आपके event को signup विवरण, capacity प्रबंधन, या भुगतान की ज़रूरत है, तो इसके बजाय [event registration](../events/registering) का उपयोग करें।
+RSVPs एक हल्की head count हैं। यदि आपके event को signup विवरण, capacity प्रबंधन, या भुगतान की ज़रूरत है, तो इसके बजाय [event registration](../events/registering.md) का उपयोग करें।
 :::
 
 ## संबंधित लेख
 
 - [Group Details](./group-details.md) -- group detail page पर सब कुछ
-- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- staff और leaders group events और RSVPs कैसे प्रबंधित करते हैं
-- [Registering for Events](../events/registering) -- capacity और भुगतान के साथ पूर्ण event registration
+- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- staff और leaders group events और RSVPs कैसे प्रबंधित करते हैं
+- [Registering for Events](../events/registering.md) -- capacity और भुगतान के साथ पूर्ण event registration

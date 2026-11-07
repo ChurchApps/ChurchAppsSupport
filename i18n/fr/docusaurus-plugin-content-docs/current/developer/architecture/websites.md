@@ -1,12 +1,13 @@
 ---
 title: "Routage du site web et multi-sites"
+description: "Comment B1.church associe sous-domaines et domaines personnalisés à la bonne église ou au site secondaire, avec le TLS géré par Caddy."
 ---
 
 # Routage du site web et multi-sites
 
 <div class="article-intro">
 
-Une seule église peut désormais servir plus d'un site web distinct, et chacun peut vivre sur un sous-domaine `*.b1.church` ou sur un domaine personnalisé entièrement géré par l'église. Cette page décrit la couche de routage qui se trouve *sous* le générateur : comment une requête entrante est associée à une église **et** à un site précis, le modèle de données multi-sites (la valeur sentinelle `siteId` qui garde chaque site existant en fonctionnement), et la périphérie des domaines personnalisés — un proxy Caddy auto-géré sur EC2 qui termine le TLS et réécrit chaque domaine d'église vers son upstream `*.b1.church`. Pour ce qui s'affiche une fois la requête associée — l'arbre pages/sections/éléments — voir [Générateur de site web](./website-builder).
+Une seule église peut désormais servir plus d'un site web distinct, et chacun peut vivre sur un sous-domaine `*.b1.church` ou sur un domaine personnalisé entièrement géré par l'église. Cette page décrit la couche de routage qui se trouve *sous* le générateur : comment une requête entrante est associée à une église **et** à un site précis, le modèle de données multi-sites (la valeur sentinelle `siteId` qui garde chaque site existant en fonctionnement), et la périphérie des domaines personnalisés — un proxy Caddy auto-géré sur EC2 qui termine le TLS et réécrit chaque domaine d'église vers son upstream `*.b1.church`. Pour ce qui s'affiche une fois la requête associée — l'arbre pages/sections/éléments — voir [Générateur de site web](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ Les lignes `www.*` sont exclues de la correspondance ; Caddy sert `www.{host}` p
 
 ### État actuel — configuration statique, aucun état d'exécution
 
-La machine (un EC2 Windows derrière l'IP élastique permanente) exécute Caddy avec un **Caddyfile statique** : TLS à la demande dont le `ask` pointe vers `/membership/domains/authorize`, plus un fichier de correspondance hôte→upstream rafraîchi toutes les 5 minutes depuis `/membership/domains/hostmap` par une tâche planifiée qui se termine par un `caddy reload` gracieux. La configuration survit aux redémarrages sans aucun état d'exécution — pas de réamorçage manuel — et un SNI inconnu est **refusé au niveau TLS** (aucun certificat n'est émis pour un hôte que `authorize` rejette), tandis qu'un hôte autorisé mais pas encore mappé (un domaine tout neuf dans la fenêtre de synchronisation) reçoit un 404 propre. Les nouveaux domaines deviennent routables dans les 5 minutes suivant une sauvegarde ; leurs certificats sont émis au premier accès. Installation, exploitation et pièges éprouvés : [Proxy Caddy pour domaines personnalisés](../deployment/caddy-proxy).
+La machine (un EC2 Windows derrière l'IP élastique permanente) exécute Caddy avec un **Caddyfile statique** : TLS à la demande dont le `ask` pointe vers `/membership/domains/authorize`, plus un fichier de correspondance hôte→upstream rafraîchi toutes les 5 minutes depuis `/membership/domains/hostmap` par une tâche planifiée qui se termine par un `caddy reload` gracieux. La configuration survit aux redémarrages sans aucun état d'exécution — pas de réamorçage manuel — et un SNI inconnu est **refusé au niveau TLS** (aucun certificat n'est émis pour un hôte que `authorize` rejette), tandis qu'un hôte autorisé mais pas encore mappé (un domaine tout neuf dans la fenêtre de synchronisation) reçoit un 404 propre. Les nouveaux domaines deviennent routables dans les 5 minutes suivant une sauvegarde ; leurs certificats sont émis au premier accès. Installation, exploitation et pièges éprouvés : [Proxy Caddy pour domaines personnalisés](../deployment/caddy-proxy.md).
 
 ### Poussée d'exécution héritée — voie de retour arrière, suppression prévue
 
@@ -209,8 +210,8 @@ La machine (un EC2 Windows derrière l'IP élastique permanente) exécute Caddy 
 
 ## Pages connexes
 
-- [Proxy Caddy pour domaines personnalisés](../deployment/caddy-proxy) — la machine de périphérie elle-même : installation à partir de zéro, service WinSW, tâche de synchronisation de la carte, et pièges d'exploitation
-- [Générateur de site web](./website-builder) — l'arbre pages/sections/éléments, les moteurs de rendu, le blogue, le référencement et la génération par IA (ce qui s'affiche une fois la requête associée à une église/un site)
-- [Points de terminaison Content](../api/endpoints/content) — la surface REST des pages, blocs, liens et styles globaux, tous désormais sensibles à `?siteId=`
-- [B1App](../web-apps/b1-app) — l'application Next.js qui héberge le middleware et le routage `[sdSlug]`
-- [Déploiement des applications web](../deployment/web-apps) — comment B1App est déployé sur Vercel
+- [Proxy Caddy pour domaines personnalisés](../deployment/caddy-proxy.md) — la machine de périphérie elle-même : installation à partir de zéro, service WinSW, tâche de synchronisation de la carte, et pièges d'exploitation
+- [Générateur de site web](./website-builder.md) — l'arbre pages/sections/éléments, les moteurs de rendu, le blogue, le référencement et la génération par IA (ce qui s'affiche une fois la requête associée à une église/un site)
+- [Points de terminaison Content](../api/endpoints/content.md) — la surface REST des pages, blocs, liens et styles globaux, tous désormais sensibles à `?siteId=`
+- [B1App](../web-apps/b1-app.md) — l'application Next.js qui héberge le middleware et le routage `[sdSlug]`
+- [Déploiement des applications web](../deployment/web-apps.md) — comment B1App est déployé sur Vercel

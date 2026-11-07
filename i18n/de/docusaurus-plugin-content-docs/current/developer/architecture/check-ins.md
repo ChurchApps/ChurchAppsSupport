@@ -1,5 +1,6 @@
 ---
 title: "Check-ins"
+description: "So funktioniert Check-in über B1Checkin, B1App und B1 Admin: Anwesenheitsmodell, Gruppen als Räume, Kapazitätsgrenzen und Abholregeln."
 ---
 
 # Check-ins
@@ -216,7 +217,7 @@ Die Anmeldung per QR-Code wird über die Gemeindeeinstellungen gesteuert, die in
 
 ## Verwandte Seiten
 
-- [Attendance-Endpunkte](../api/endpoints/attendance) -- Vollständige REST-Schnittstelle für Standorte, Gottesdienste, Sitzungen, Besuche und Besuchssitzungen
-- [Membership-Endpunkte](../api/endpoints/membership) -- Personen, Haushalte und Gruppen
-- [Webhooks](../api/webhooks) -- Die Ereignisse `session.created`, `attendance.recorded` und `attendance.checkout`
-- [Modulstruktur](../api/module-structure) -- Wie das Anwesenheitsmodul serverseitig organisiert ist
+- [Attendance-Endpunkte](../api/endpoints/attendance.md) -- Vollständige REST-Schnittstelle für Standorte, Gottesdienste, Sitzungen, Besuche und Besuchssitzungen
+- [Membership-Endpunkte](../api/endpoints/membership.md) -- Personen, Haushalte und Gruppen
+- [Webhooks](../api/webhooks.md) -- Die Ereignisse `session.created`, `attendance.recorded` und `attendance.checkout`
+- [Modulstruktur](../api/module-structure.md) -- Wie das Anwesenheitsmodul serverseitig organisiert ist

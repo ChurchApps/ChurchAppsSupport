@@ -1,5 +1,7 @@
 ---
-title: "Vapaaehtoisilmoittautuminen"
+title: "Vapaaehtoisilmoittautuminen B1.church-jäsenportaalissa"
+sidebar_label: "Vapaaehtoisilmoittautuminen"
+description: "Selaa avoimia vapaaehtoistehtäviä kategorioittain ja ilmoittaudu tuleviin jumalanpalveluksiin tai poista ilmoittautumisesi B1.churchissa ennen määräaikaa."
 ---
 
 # Vapaaehtoisilmoittautuminen
@@ -74,4 +76,4 @@ Tarkista vapaaehtoissivu säännöllisesti, erityisesti viikon alussa. Suosituit
 ## Aiheeseen liittyvät artikkelit
 
 - [Palvelun yleiskatsaus](./index.md) – yleiskatsaus B1.church-sivuston palveluominaisuuksista
-- [Suunnitelmien tarkastelu](../plans/viewing-plans) – tarkastele sinulle määrättyjä suunnitelmia ja palvelujärjestyksiä
+- [Suunnitelmien tarkastelu](../plans/viewing-plans.md) – tarkastele sinulle määrättyjä suunnitelmia ja palvelujärjestyksiä

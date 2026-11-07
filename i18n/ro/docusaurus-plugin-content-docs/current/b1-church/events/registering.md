@@ -1,5 +1,7 @@
 ---
-title: "Înregistrarea la evenimente"
+title: "Înscrierea la evenimente în B1.church"
+sidebar_label: "Înregistrarea la evenimente"
+description: "Înscrie-te la un eveniment în B1.church: date, membri ai familiei, opțiuni, coduri de reducere, plată sau listă de așteptare."
 ---
 
 # Înregistrarea la evenimente
@@ -79,14 +81,14 @@ Apare un mesaj de confirmare cu detaliile evenimentului și o listă cu toate pe
 
 ## Înscrierea pe lista de așteptare
 
-Dacă evenimentul este complet și biserica ta a activat lista de așteptare, primul pas afișează mesajul: *„Acest eveniment este complet. Te poți înscrie pe lista de așteptare și te vom anunța dacă se eliberează un loc.”* Finalizează înscrierea ca de obicei — plata este omisă cât timp ești pe lista de așteptare. Când se eliberează un loc, primești un e-mail; dacă există o plată de efectuat, acesta include un link pentru finalizarea ei. Îți poți verifica starea și putea plăti din [Înregistrările mele](./my-registrations).
+Dacă evenimentul este complet și biserica ta a activat lista de așteptare, primul pas afișează mesajul: *„Acest eveniment este complet. Te poți înscrie pe lista de așteptare și te vom anunța dacă se eliberează un loc.”* Finalizează înscrierea ca de obicei — plata este omisă cât timp ești pe lista de așteptare. Când se eliberează un loc, primești un e-mail; dacă există o plată de efectuat, acesta include un link pentru finalizarea ei. Îți poți verifica starea și putea plăti din [Înregistrările mele](./my-registrations.md).
 
 ## Modificarea sau anularea unei înregistrări
 
-Dacă ești autentificat, îți poți modifica sau anula singur înregistrarea din pagina **Înregistrări** din portalul membrilor — vezi [Înregistrările mele](./my-registrations). Oaspeții trebuie să contacteze secretariatul bisericii, iar personalul poate face modificarea din pagina de înregistrări din B1 Admin.
+Dacă ești autentificat, îți poți modifica sau anula singur înregistrarea din pagina **Înregistrări** din portalul membrilor — vezi [Înregistrările mele](./my-registrations.md). Oaspeții trebuie să contacteze secretariatul bisericii, iar personalul poate face modificarea din pagina de înregistrări din B1 Admin.
 
 ## Articole conexe
 
 - [Prezentare generală a evenimentelor](./index.md) — Răsfoiește evenimentele viitoare cu înregistrare
-- [Înregistrările mele](./my-registrations) — Vezi, modifică, plătește soldurile și anulează înregistrările tale
-- [Efectuarea donațiilor](../giving/making-donations) — Fă o donație în paralel cu participarea la eveniment
+- [Înregistrările mele](./my-registrations.md) — Vezi, modifică, plătește soldurile și anulează înregistrările tale
+- [Efectuarea donațiilor](../giving/making-donations.md) — Fă o donație în paralel cu participarea la eveniment

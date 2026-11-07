@@ -1,5 +1,6 @@
 ---
 title: "Annunci"
+description: "Loop di slide per annunci su FreePlay TV: scegli la cartella del provider, tienila sincronizzata e disattiva il loop a fine evento."
 ---
 
 # Annunci
@@ -13,7 +14,7 @@ FreePlay può ripetere in loop una cartella di diapositive di annunci sulla tua 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Collega un fornitore di contenuti](./connecting-providers) che contenga le tue diapositive di annunci, ad esempio Dropbox o OneDrive
+- [Collega un fornitore di contenuti](./connecting-providers.md) che contenga le tue diapositive di annunci, ad esempio Dropbox o OneDrive
 - Metti insieme, in una sola cartella di quel fornitore, le immagini o i video che vuoi ripetere in loop
 
 </div>
@@ -37,7 +38,7 @@ Una volta scaricate le diapositive, nella parte alta della barra laterale compar
 - Dopo l'ultima diapositiva, il loop ricomincia dalla prima
 - Se la cartella contiene un solo video, questo viene ripetuto sul posto
 
-Il loop riproduce i file salvati sul dispositivo, quindi continua a funzionare senza connessione internet. Puoi usare gli stessi comandi del telecomando di qualsiasi altro contenuto — consulta [Riproduzione dei contenuti](./playing-content).
+Il loop riproduce i file salvati sul dispositivo, quindi continua a funzionare senza connessione internet. Puoi usare gli stessi comandi del telecomando di qualsiasi altro contenuto — consulta [Riproduzione dei contenuti](./playing-content.md).
 
 ## Aggiornare le diapositive
 
@@ -61,6 +62,6 @@ Scollegare il fornitore disattiva anche gli annunci provenienti da esso.
 
 ## Articoli correlati
 
-- **[Collegare i fornitori](./connecting-providers)** - Collega il fornitore che contiene le tue diapositive
-- **[Sfogliare e scaricare i contenuti](./browsing-content)** - Sfoglia le cartelle di un fornitore e riproduci i contenuti on demand
-- **[Riproduzione dei contenuti](./playing-content)** - Comandi del lettore con il telecomando della TV
+- **[Collegare i fornitori](./connecting-providers.md)** - Collega il fornitore che contiene le tue diapositive
+- **[Sfogliare e scaricare i contenuti](./browsing-content.md)** - Sfoglia le cartelle di un fornitore e riproduci i contenuti on demand
+- **[Riproduzione dei contenuti](./playing-content.md)** - Comandi del lettore con il telecomando della TV

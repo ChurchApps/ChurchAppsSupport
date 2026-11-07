@@ -1,5 +1,6 @@
 ---
 title: "Șabloane de e-mail"
+description: "Configurează șabloane de email și SMS în B1 Admin, cu câmpuri de completare, opțiuni de mesaje text și previzualizări pentru comunicarea în masă."
 ---
 
 # Șabloane de e-mail

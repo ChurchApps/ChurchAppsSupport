@@ -1,5 +1,6 @@
 ---
 title: "Points de terminaison Giving"
+description: "Référence des points d’accès de l’API Giving : dons, lots, passerelles, abonnements et moyens de paiement, avec règles d’authentification et de permissions."
 ---
 
 # Points de terminaison Giving
@@ -284,6 +285,6 @@ Hérite de `GenericCrudController` avec les routes CRUD : `getById`, `getAll`, `
 
 ## Pages connexes
 
-- [Points de terminaison Membership](./membership) — Personnes, églises, groupes, rôles et autorisations
-- [Authentification et autorisations](./authentication) — Flux de connexion, JWT, OAuth, modèle d'autorisations
-- [Structure des modules](../module-structure) — Modèles d'organisation du code
+- [Points de terminaison Membership](./membership.md) — Personnes, églises, groupes, rôles et autorisations
+- [Authentification et autorisations](./authentication.md) — Flux de connexion, JWT, OAuth, modèle d'autorisations
+- [Structure des modules](../module-structure.md) — Modèles d'organisation du code

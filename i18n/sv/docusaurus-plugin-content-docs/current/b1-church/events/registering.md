@@ -1,5 +1,7 @@
 ---
-title: "Registrera dig för evenemang"
+title: "Evenemangsanmälan i B1.church"
+sidebar_label: "Registrera dig för evenemang"
+description: "Anmäl dig till ett kyrkligt evenemang i B1.church: ange dina uppgifter, lägg till familjemedlemmar, välj alternativ, använd rabattkoder och betala eller ställ dig på väntelistan."
 ---
 
 # Registrera dig för evenemang
@@ -79,14 +81,14 @@ Ett bekräftelsemeddelande visas med evenemangets uppgifter och en lista över a
 
 ## Anslut dig till väntelistan
 
-Om evenemanget är fullt och din församling har aktiverat väntelistan visar det första steget: *”Evenemanget är fullt. Du kan gå med på väntelistan så meddelar vi dig om en plats blir ledig.”* Slutför anmälan som vanligt – betalningen hoppas över så länge du står på väntelistan. När en plats blir ledig får du ett mejl; om en betalning krävs innehåller mejlet en länk för att slutföra den. Du kan också kontrollera din status och betala från [Mina registreringar](./my-registrations).
+Om evenemanget är fullt och din församling har aktiverat väntelistan visar det första steget: *”Evenemanget är fullt. Du kan gå med på väntelistan så meddelar vi dig om en plats blir ledig.”* Slutför anmälan som vanligt – betalningen hoppas över så länge du står på väntelistan. När en plats blir ledig får du ett mejl; om en betalning krävs innehåller mejlet en länk för att slutföra den. Du kan också kontrollera din status och betala från [Mina registreringar](./my-registrations.md).
 
 ## Ändra eller avboka en registrering
 
-Om du är inloggad kan du själv ändra eller avboka din registrering på sidan **Registreringar** i medlemsportalen – se [Mina registreringar](./my-registrations). Gäster bör kontakta församlingskansliet, och personal kan göra ändringen från sidan för registreringar i B1 Admin.
+Om du är inloggad kan du själv ändra eller avboka din registrering på sidan **Registreringar** i medlemsportalen – se [Mina registreringar](./my-registrations.md). Gäster bör kontakta församlingskansliet, och personal kan göra ändringen från sidan för registreringar i B1 Admin.
 
 ## Relaterade artiklar
 
 - [Översikt över evenemang](./index.md) – Bläddra bland kommande evenemang med registrering
-- [Mina registreringar](./my-registrations) – Visa, ändra, betala saldon och avboka dina registreringar
-- [Ge gåvor](../giving/making-donations) – Ge en gåva i samband med deltagande i ett evenemang
+- [Mina registreringar](./my-registrations.md) – Visa, ändra, betala saldon och avboka dina registreringar
+- [Ge gåvor](../giving/making-donations.md) – Ge en gåva i samband med deltagande i ett evenemang

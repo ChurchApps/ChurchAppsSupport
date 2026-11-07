@@ -1,5 +1,7 @@
 ---
-title: "Kungena"
+title: "Kungena Ku-B1 Mobile"
+sidebar_label: "Kungena"
+description: "Ngena ku-app ye-B1 Mobile ngekhawunti yakho ye-ChurchApps, bhalisa likhawunti lelisha, noma buyisa iphasiwedi lolibaliwe ngekhodi lelinamba lematfumba lasitfupha."
 ---
 
 # Kungena
@@ -13,7 +15,7 @@ I-B1 Mobile isebentisa i-akhawundi lefananako ye-ChurchApps loyisebentisako ku-B
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka B1 Mobile](./installing) emshinini wakho we-iOS nome Android
+- [Faka B1 Mobile](./installing.md) emshinini wakho we-iOS nome Android
 
 </div>
 
@@ -24,7 +26,7 @@ I-B1 Mobile isebentisa i-akhawundi lefananako ye-ChurchApps loyisebentisako ku-B
 3. Faka **liadresi lakho le-imeyili** kanye **neliphasiwedi**.
 4. Cindzetela **Sign In**.
 
-Ngemuva kwekungena, utakuyiswa [ekhasini lasekhaya](../dashboard/). Nangabe ungakakhetsi libandla, utabutwa kutsi usesha bese ukhetsa lelinye.
+Ngemuva kwekungena, utakuyiswa [ekhasini lasekhaya](../dashboard/index.md). Nangabe ungakakhetsi libandla, utabutwa kutsi usesha bese ukhetsa lelinye.
 
 ## Kwenta I-akhawundi Lensha
 

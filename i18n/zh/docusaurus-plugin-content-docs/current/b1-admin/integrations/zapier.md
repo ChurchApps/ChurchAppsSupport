@@ -1,5 +1,6 @@
 ---
 title: "Zapier"
+description: "将 B1 Admin 连接到 Zapier，以新人员、奉献和小组成员为触发条件启动自动化，并将记录写回 B1，无需编程。"
 ---
 
 # Zapier
@@ -71,7 +72,7 @@ B1.church 应用已经开发完成并可以正常工作，但仍在等待 Zapier
 ### 以比内置连接器更丰富的卡片格式将奉献发布到 Slack 频道
 
 - **触发器** —— B1：新增奉献
-- **操作** —— Slack：发送频道消息。可以自定义任意布局——按钮、附件等——这是内置的 [Slack 连接器](./slack-discord)无法实现的。
+- **操作** —— Slack：发送频道消息。可以自定义任意布局——按钮、附件等——这是内置的 [Slack 连接器](./slack-discord.md)无法实现的。
 
 ### 将新的小组成员添加到 Google 群组
 
@@ -106,6 +107,6 @@ B1.church 应用已经开发完成并可以正常工作，但仍在等待 Zapier
 
 ## 另请参阅
 
-- [Make](./make) —— 相同的模式，不同的平台
-- [Slack 与 Discord](./slack-discord) —— 无需 Zapier 即可使用的更简单的聊天通知
+- [Make](./make.md) —— 相同的模式，不同的平台
+- [Slack 与 Discord](./slack-discord.md) —— 无需 Zapier 即可使用的更简单的聊天通知
 - [Webhooks（开发者参考）](/docs/developer/api/webhooks)

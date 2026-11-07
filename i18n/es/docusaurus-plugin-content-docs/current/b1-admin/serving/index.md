@@ -1,5 +1,7 @@
 ---
-title: "Servicio"
+title: "Descripción general de Servicio en B1 Admin"
+sidebar_label: "Servicio"
+description: "Coordina voluntarios y planifica los servicios de la iglesia en el área de Servicio de B1 Admin, desde las pestañas de ministerios y equipos hasta los planes de servicio, canciones y tareas."
 ---
 
 # Servicio

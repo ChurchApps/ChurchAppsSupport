@@ -1,5 +1,6 @@
 ---
 title: "Scheduling the Calendar"
+description: "Set up a weekly or one-time schedule in FreePlay Admin's Calendar to play playlists, service plans, or provider folders on your screen groups, with default loops as fallback."
 ---
 
 # Scheduling the Calendar
@@ -13,8 +14,8 @@ The **Calendar** page in FreePlay Admin controls what each screen group plays an
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Create at least one screen group. See [Managing Screens and Groups](./managing-screens#screen-groups)
-- [Build a playlist](./building-playlists), or have a plan type set up in B1 Admin
+- Create at least one screen group. See [Managing Screens and Groups](./managing-screens.md#screen-groups)
+- [Build a playlist](./building-playlists.md), or have a plan type set up in B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ If two schedules overlap, the form shows a warning: **Overlaps another schedule.
 
 ## How Screens Pick Up Changes
 
-Paired screens download everything scheduled for the next 7 days, and they check for changes on their own. You don't need to touch the TV after you edit the calendar. To see when a screen has everything it needs, check **Ready through** on the [Screens page](./managing-screens).
+Paired screens download everything scheduled for the next 7 days, and they check for changes on their own. You don't need to touch the TV after you edit the calendar. To see when a screen has everything it needs, check **Ready through** on the [Screens page](./managing-screens.md).
 
 ## Related Articles
 
-- **[Building Playlists](./building-playlists)** - Create the playlists you schedule
-- **[Scheduled Playback on the TV](./scheduled-playback)** - How teacher paced lessons and the remote work on the TV
-- **[Managing Screens and Groups](./managing-screens)** - Add groups and check each screen's downloads
+- **[Building Playlists](./building-playlists.md)** - Create the playlists you schedule
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - How teacher paced lessons and the remote work on the TV
+- **[Managing Screens and Groups](./managing-screens.md)** - Add groups and check each screen's downloads
 - **[Keeping Only Part of Every Lesson](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Trim every scheduled lesson in a plan type to the parts your room plays

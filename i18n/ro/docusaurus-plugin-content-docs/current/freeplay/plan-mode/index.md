@@ -1,5 +1,6 @@
 ---
 title: "Modul Plan"
+description: "Conectați un TV din FreePlay la planul de slujbă al bisericii din B1 Admin, ca să afișeze lecțiile, prezentările și media săptămânii curente, în ordine."
 ---
 
 # Modul Plan
@@ -12,13 +13,13 @@ Modul Plan conectează televizorul la un plan de slujbă al bisericii. În loc s
 
 ## Cum diferă de celelalte moduri
 
-- **[Modul programat](../scheduled-mode/)** redă liste de redare dintr-un calendar din FreePlay Admin, la orele pe care le setezi, fără ca cineva să apese Start
+- **[Modul programat](../scheduled-mode/index.md)** redă liste de redare dintr-un calendar din FreePlay Admin, la orele pe care le setezi, fără ca cineva să apese Start
 - **Modul Plan** preia conținutul asociat unui tip de plan, care poate include lecții, prezentări ale furnizorilor, suplimente și alte materiale media aranjate într-o ordine personalizată
 
 Modul Plan este util în mod deosebit atunci când planul tău de slujbă include un amestec de conținut din surse diferite, toate organizate într-o singură secvență.
 
 :::tip
-Vrei ca planul curent să se redea singur la o oră stabilită? În FreePlay Admin, adaugă o intrare în calendar și alege tipul de plan sub **Planuri de slujbă**. Vezi [Programarea calendarului](../scheduled-mode/scheduling-the-calendar).
+Vrei ca planul curent să se redea singur la o oră stabilită? În FreePlay Admin, adaugă o intrare în calendar și alege tipul de plan sub **Planuri de slujbă**. Vezi [Programarea calendarului](../scheduled-mode/scheduling-the-calendar.md).
 :::
 
 ## Cum funcționează
@@ -32,4 +33,4 @@ Televizorul rămâne asociat cu tipul de plan. În fiecare săptămână, preia 
 
 ## În această secțiune
 
-- **[Asocierea dispozitivului tău](./device-pairing)** - Cum să generezi și să introduci codul de asociere
+- **[Asocierea dispozitivului tău](./device-pairing.md)** - Cum să generezi și să introduci codul de asociere

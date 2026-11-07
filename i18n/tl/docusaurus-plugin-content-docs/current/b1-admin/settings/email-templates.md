@@ -1,5 +1,6 @@
 ---
 title: "Mga Email Template"
+description: "I-set up ang email at text message template sa B1 Admin, may merge field, opsyon sa text message, at preview para sa mass communication."
 ---
 
 # Mga Email Template

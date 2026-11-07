@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje lekcijami"
+description: "Sestavi strukturo ure v upravi Lessons.church: dodaj prostore, sklope in dejanja (Say, Do, Note, Play) po vlogah ter gradivo za starše in vire."
 ---
 
 # Upravljanje lekcijami

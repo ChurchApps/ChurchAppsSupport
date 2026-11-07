@@ -1,5 +1,7 @@
 ---
-title: "Događaji"
+title: "Cerkveni dogodki na B1.church: brskanje in prijava"
+sidebar_label: "Događaji"
+description: "Brskajte po prihajajočih cerkvenih dogodkih na B1.church, preverite stanje prijave ter se prijavite ali dodajte dogodke v svoj koledar."
 ---
 
 # Događaji
@@ -43,7 +45,7 @@ Ako je događaj popunjen, i dalje se možda možete pridružiti **listi čekanja
 
 ## Saznajte više
 
-- [Prijava na događaje](./registering) -- Korak po korak vodič za prijavu na događaj
-- [Moje prijave](./my-registrations) -- Pregledajte svoje prijave, platite preostale iznose, uredite ili otkažite
-- [Zahtjev za događaje i prostorije](./requesting-events) -- Zatražite događaj s prostorijama i resursima koji su mu potrebni
-- [Samoprijava](../checkin/self-checkin) -- Prijavite se kada stignete na događaj
+- [Prijava na događaje](./registering.md) -- Korak po korak vodič za prijavu na događaj
+- [Moje prijave](./my-registrations.md) -- Pregledajte svoje prijave, platite preostale iznose, uredite ili otkažite
+- [Zahtjev za događaje i prostorije](./requesting-events.md) -- Zatražite događaj s prostorijama i resursima koji su mu potrebni
+- [Samoprijava](../checkin/self-checkin.md) -- Prijavite se kada stignete na događaj

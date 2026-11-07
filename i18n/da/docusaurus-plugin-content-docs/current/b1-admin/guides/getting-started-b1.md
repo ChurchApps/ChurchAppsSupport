@@ -1,5 +1,6 @@
 ---
 title: "Vejledning: Kom i gang med B1"
+description: "Gennemgå opsætningen af en ny menighed i B1 Admin: opret konto, konfigurér indstillinger, tilføj roller, importér medlemmer og start kernefunktionerne."
 ---
 
 # Kom i gang med B1

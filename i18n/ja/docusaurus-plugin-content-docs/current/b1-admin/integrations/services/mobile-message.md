@@ -1,5 +1,6 @@
 ---
 title: "モバイルメッセージ"
+description: "Zapier または Make の Webhook を使い、B1 Admin のイベントをオーストラリアの SMS API である Mobile Message に接続します。ようこそ、献金、リマインダーのテキストを送信できます。"
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Message の `/v1/messages` エンドポイントは、1 回の呼び出�
 
 ### Make を使う場合
 
-Make を使う場合は、B1 Watch Events トリガーの後に **HTTP — Make a request** モジュールを配置し、同じように設定します（POST、Basic Auth、JSON ボディ）。B1 側の設定については、[Make の概要](../make)を参照してください。
+Make を使う場合は、B1 Watch Events トリガーの後に **HTTP — Make a request** モジュールを配置し、同じように設定します（POST、Basic Auth、JSON ボディ）。B1 側の設定については、[Make の概要](../make.md)を参照してください。
 
 ## 制限事項と注意点
 
@@ -102,6 +103,6 @@ Make を使う場合は、B1 Watch Events トリガーの後に **HTTP — Make 
 
 ## 関連情報
 
-- [Clearstream](./clearstream)、[Text In Church](./text-in-church)：ネイティブの Zapier アプリを持つ別の SMS プロバイダーです（Webhooks by Zapier のステップは不要です）
-- [Zapier（概要）](../zapier)：すべての Zapier レシピの B1 側の説明です
+- [Clearstream](./clearstream.md)、[Text In Church](./text-in-church.md)：ネイティブの Zapier アプリを持つ別の SMS プロバイダーです（Webhooks by Zapier のステップは不要です）
+- [Zapier（概要）](../zapier.md)：すべての Zapier レシピの B1 側の説明です
 - [Mobile Message API ドキュメント](https://mobilemessage.com.au/api-documentation)

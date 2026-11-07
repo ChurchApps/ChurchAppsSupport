@@ -1,5 +1,6 @@
 ---
 title: "Google Sheets"
+description: "Koppla B1 Admin till Google Sheets med tillägget B1 Export för att hämta Personer, Gåvor, Grupper och Närvaro till kalkylbladsflikar när du behöver."
 ---
 
 # Google Sheets
@@ -100,7 +101,7 @@ Exporten körs i bakgrunden under ditt Google-konto. Om API-nyckeln roteras elle
 - **"B1 rejected the API key (401)"**: nyckeln har återkallats eller är fel. Skapa en ny och klistra in den igen.
 - **"This API key lacks permission for /giving/donations (403)"**: nyckeln saknar `donations:read`. Uppdatera nyckelns behörigheter i B1Admin.
 - **Kalkylbladet uppdateras inte** efter en export: kontrollera att du tittar på rätt flik (`B1 People` osv.). Exporten skapar fliken om den inte finns.
-- **"Quota exceeded"**: Apps Script har dagliga kvoter per användare för `UrlFetchApp` (vanligtvis tusentals anrop per dag). En stor församling med många poster kan behöva dela upp exporterna över flera dagar, eller använda [Make](./make) eller en egen integration för synkronisering med stora volymer.
+- **"Quota exceeded"**: Apps Script har dagliga kvoter per användare för `UrlFetchApp` (vanligtvis tusentals anrop per dag). En stor församling med många poster kan behöva dela upp exporterna över flera dagar, eller använda [Make](./make.md) eller en egen integration för synkronisering med stora volymer.
 
 ## Anpassa tillägget
 
@@ -108,6 +109,6 @@ Tillägget är öppen källkod. Apps Script-projektet finns i repot `B1Integrati
 
 ## Se även
 
-- [Zapier](./zapier): för synkronisering i realtid i stället för export på begäran
-- [Make](./make): för synkronisering med mer avancerade transformationer
+- [Zapier](./zapier.md): för synkronisering i realtid i stället för export på begäran
+- [Make](./make.md): för synkronisering med mer avancerade transformationer
 - [API-nycklar (utvecklarreferens)](/docs/developer/api/api-keys)

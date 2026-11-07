@@ -1,5 +1,7 @@
 ---
-title: "Tintshumayelo"
+title: "Kubuka Tinkhulumo Ku-B1 Mobile"
+sidebar_label: "Tintshumayelo"
+description: "Hamba, funa, bese ubuka tinkhulumo letirekhodwe netinhlelo letilandzelanako ku-app ye-B1 Mobile, kuhlanganisa nekutsi ungatfola kanjani kukhawunta yekusakaza lokuphilako."
 ---
 
 # Tintshumayelo
@@ -13,7 +15,7 @@ Sikrini se-Tintshumayelo sikuvumela kutsi ubuke futsi ubukele tintshumayelo leti
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka i-B1 Mobile](../getting-started/installing) bese [ungena](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka i-B1 Mobile](../getting-started/installing.md) bese [ungena](../getting-started/logging-in.md) ku-akhawundi yakho
 - Libandla lakho kufanele libe nekucuketfwe kwetintshumayelo lokulungiselelwe ku-portal yalo yekuphatsa
 
 </div>
@@ -29,7 +31,7 @@ Esiketfweni sesikrini, intshumayelo yekugcina yakamuva ikhonjiswa njengekhadi le
 
 ## Sibalo Sekubala Kusakata Bukhoma
 
-Nakuletwa [kusakata bukhoma](./live-streaming) ngekhatsi kwemahora langu-24 lalandzelako, sibalo sekubala sibonakala esikrinini se-Tintshumayelo. Loku kukwatisa kutsi inkhonzo lelandzelako itawusakata nini kute uhlele kubukela ubukhoma.
+Nakuletwa [kusakata bukhoma](./live-streaming.md) ngekhatsi kwemahora langu-24 lalandzelako, sibalo sekubala sibonakala esikrinini se-Tintshumayelo. Loku kukwatisa kutsi inkhonzo lelandzelako itawusakata nini kute uhlele kubukela ubukhoma.
 
 ## Kubukela Intshumayelo
 
@@ -51,7 +53,7 @@ Ngulinye lentshumayelo lingakhombisa:
 - **Sitfombe** -- Sitfombe sekubuka intshumayelo ngaphambili
 
 :::tip
-Uma ubona sibalo sekubala esikrinini se-Tintshumayelo, sicindzetele kute uye ngco e[kusakateni bukhoma](./live-streaming) nakucala.
+Uma ubona sibalo sekubala esikrinini se-Tintshumayelo, sicindzetele kute uye ngco e[kusakateni bukhoma](./live-streaming.md) nakucala.
 :::
 
 ## Kutfolakala

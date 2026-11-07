@@ -1,5 +1,7 @@
 ---
-title: "تسجيل الحضور الذاتي"
+title: "التسجيل الذاتي للحضور من تطبيق B1 Mobile"
+sidebar_label: "تسجيل الحضور الذاتي"
+description: "سجّل حضورك وحضور أسرتك في خدمة من تطبيق B1 Mobile، بما في ذلك اختيار موعد الخدمة وتحديد مجموعة كل شخص."
 ---
 
 # تسجيل الحضور الذاتي
@@ -13,7 +15,7 @@ title: "تسجيل الحضور الذاتي"
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- [ثبّت تطبيق B1 Mobile](../getting-started/installing) و[سجّل الدخول](../getting-started/logging-in) إلى حسابك
+- [ثبّت تطبيق B1 Mobile](../getting-started/installing.md) و[سجّل الدخول](../getting-started/logging-in.md) إلى حسابك
 - تأكّد من إضافة [أفراد أسرتك](../profile/household.md) إلى ملفك الشخصي
 
 </div>

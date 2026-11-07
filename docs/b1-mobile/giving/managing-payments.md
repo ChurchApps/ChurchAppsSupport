@@ -1,5 +1,6 @@
 ---
 title: "Managing Payment Methods"
+description: "Add, review, and remove saved cards in the Manage tab of the B1 Mobile giving section, so repeat donations go faster without re-entering card details."
 ---
 
 # Managing Payment Methods
@@ -13,7 +14,7 @@ The **Manage** tab in the giving section lets you view and manage your saved pay
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 
 </div>
 
@@ -31,7 +32,7 @@ To add a new card:
 4. Enter your card details. The information is sent securely to **Stripe** for processing.
 5. Once saved, the new card will appear in your list of payment methods.
 
-Your saved card will then be available as a payment option the next time you [make a donation](./making-donations) from the **Donate** tab.
+Your saved card will then be available as a payment option the next time you [make a donation](./making-donations.md) from the **Donate** tab.
 
 ## Removing a Payment Method
 
@@ -44,7 +45,7 @@ If you no longer want a card on file, you can remove it from the **Manage** tab:
 The card will no longer appear as a payment option when you make a donation.
 
 :::info
-Removing a payment method does not affect any past donations. Your [donation history](./donation-history) remains unchanged.
+Removing a payment method does not affect any past donations. Your [donation history](./donation-history.md) remains unchanged.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Keep at least one payment method saved for quick giving. This way, you can use t
 
 ## Related Articles
 
-- [Making a Donation](./making-donations) -- Learn how to make a gift using a saved payment method
-- [Donation History](./donation-history) -- View your giving summary and past donations
+- [Making a Donation](./making-donations.md) -- Learn how to make a gift using a saved payment method
+- [Donation History](./donation-history.md) -- View your giving summary and past donations

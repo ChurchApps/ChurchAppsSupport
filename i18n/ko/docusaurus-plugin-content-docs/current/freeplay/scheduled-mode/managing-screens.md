@@ -1,5 +1,6 @@
 ---
 title: "화면 및 그룹 관리"
+description: "일요일에 준비된 FreePlay TV 확인, 화면 설정 편집, FreePlay Admin에서 하나의 캘린더를 공유하는 화면 그룹 설정."
 ---
 
 # 화면 및 그룹 관리
@@ -14,7 +15,7 @@ FreePlay Admin의 **Screens** 페이지에는 교회에 연결된 모든 TV가 �
 <h4>시작하기 전에</h4>
 
 - [admin.freeplay.church](https://admin.freeplay.church)에서 FreePlay Admin에 로그인하십시오
-- [화면을 한 개 이상 연결](./pairing-a-screen)하십시오
+- [화면을 한 개 이상 연결](./pairing-a-screen.md)하십시오
 
 </div>
 
@@ -43,7 +44,7 @@ FreePlay Admin의 **Screens** 페이지에는 교회에 연결된 모든 TV가 �
 
 화면의 이름을 클릭하면 화면 페이지가 열립니다. 왼쪽에는 다음이 있습니다:
 
-- **Present in browser** - TV에 나오는 모습 그대로 이 화면의 캘린더를 브라우저에서 전체 화면으로 재생합니다. [브라우저에서 보여주기](./scheduled-playback#presenting-from-a-browser)를 참조하십시오
+- **Present in browser** - TV에 나오는 모습 그대로 이 화면의 캘린더를 브라우저에서 전체 화면으로 재생합니다. [브라우저에서 보여주기](./scheduled-playback.md#presenting-from-a-browser)를 참조하십시오
 - **Edit** - 이름, 그룹, 또는 모드를 변경합니다
 - **More** > **Unpair** - TV 연결을 해제합니다. TV는 다시 연결 코드를 표시합니다
 
@@ -93,6 +94,6 @@ FreePlay Admin의 **Screens** 페이지에는 교회에 연결된 모든 TV가 �
 
 ## 관련 문서
 
-- **[화면 연결하기](./pairing-a-screen)** - 새 TV 추가하기
-- **[캘린더 예약하기](./scheduling-the-calendar)** - 각 그룹이 재생할 내용과 기본 반복 재생 목록 설정하기
-- **[TV에서 예약 재생](./scheduled-playback)** - TV에서 "Ready through" 날짜가 의미하는 것
+- **[화면 연결하기](./pairing-a-screen.md)** - 새 TV 추가하기
+- **[캘린더 예약하기](./scheduling-the-calendar.md)** - 각 그룹이 재생할 내용과 기본 반복 재생 목록 설정하기
+- **[TV에서 예약 재생](./scheduled-playback.md)** - TV에서 "Ready through" 날짜가 의미하는 것

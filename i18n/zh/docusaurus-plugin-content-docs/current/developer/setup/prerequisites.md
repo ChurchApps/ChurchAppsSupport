@@ -1,5 +1,6 @@
 ---
 title: "前置条件"
+description: "在开发 B1 Admin、Lessons.church、FreePlay 或本地 API 等 ChurchApps 项目之前，先安装 Node.js、npm、Git 及各平台所需的工具链。"
 ---
 
 # 前置条件
@@ -13,7 +14,7 @@ title: "前置条件"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 查看[项目概览](./project-overview)，确定你想参与哪些项目
+- 查看[项目概览](./project-overview.md)，确定你想参与哪些项目
 - 在你的开发机器上具有管理员权限，以便安装软件
 
 </div>
@@ -40,7 +41,7 @@ title: "前置条件"
 |------|---------|-------|
 | **MySQL** | 8.0+ | 每个 API 模块使用各自独立的数据库 |
 
-核心 API 需要六个数据库：`membership`、`attendance`、`content`、`giving`、`messaging` 和 `doing`。API 附带了初始化数据库结构的脚本——请参阅 [API 本地设置](../api/local-setup)指南。
+核心 API 需要六个数据库：`membership`、`attendance`、`content`、`giving`、`messaging` 和 `doing`。API 附带了初始化数据库结构的脚本——请参阅 [API 本地设置](../api/local-setup.md)指南。
 
 ## 移动应用开发
 
@@ -110,5 +111,5 @@ mysql --version   # 仅本地 API 开发时需要
 
 ## 下一步
 
-- **[项目概览](./project-overview)** —— 了解所有项目及其用途
-- **[环境变量](./environment-variables)** —— 配置你的 `.env` 文件
+- **[项目概览](./project-overview.md)** —— 了解所有项目及其用途
+- **[环境变量](./environment-variables.md)** —— 配置你的 `.env` 文件

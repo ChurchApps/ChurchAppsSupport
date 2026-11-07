@@ -1,5 +1,7 @@
 ---
-title: "查看计划"
+title: "在 B1 Mobile 中查看服事计划"
+sidebar_label: "查看计划"
+description: "在 B1 Mobile 中查看您即将到来和过去的服事安排，阅读计划详情和礼拜程序，并打印计划以供排练或后台参考。"
 ---
 
 # 查看计划
@@ -13,7 +15,7 @@ B1 Mobile 的计划界面为您提供服事排班的完整视图。它分为两�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 由教会管理员将您分配到至少一个服事计划中
 
 </div>

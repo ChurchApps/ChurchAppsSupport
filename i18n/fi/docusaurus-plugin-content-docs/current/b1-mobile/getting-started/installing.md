@@ -1,5 +1,6 @@
 ---
 title: "Sovelluksen asentaminen"
+description: "Asenna B1 Mobile -sovellus App Storesta tai Google Playsta, mutta huomaa, että se on vanhentunut ja suositeltava vaihtoehto on nyt B1.church PWA."
 ---
 
 # Sovelluksen asentaminen
@@ -25,7 +26,7 @@ Jos ensimmäinen haku ei tuota tuloksia, voit kokeilla hakua "B1 Mobile".
 
 ## Asennuksen jälkeen
 
-Kun sovellus on asennettu, avaa se aloitusnäytöltä. Näet seurakunnan hakunäkymän, jossa voit etsiä ja valita seurakuntasi. Jos sinulla on jo ChurchApps-tili, voit heti [kirjautua sisään](./logging-in). Jos ei ole, voit luoda tilin kirjautumisnäkymästä.
+Kun sovellus on asennettu, avaa se aloitusnäytöltä. Näet seurakunnan hakunäkymän, jossa voit etsiä ja valita seurakuntasi. Jos sinulla on jo ChurchApps-tili, voit heti [kirjautua sisään](./logging-in.md). Jos ei ole, voit luoda tilin kirjautumisnäkymästä.
 
 Sovellus pyytää lupaa lähettää push-ilmoituksia. Suosittelemme sallimaan ilmoitukset, jotta saat seurakunnaltasi ja ryhmiltäsi päivityksiä.
 

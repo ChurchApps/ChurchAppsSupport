@@ -1,5 +1,6 @@
 ---
 title: "Răsfoirea și descărcarea conținutului"
+description: "Navigați biblioteca unui furnizor conectat cu telecomanda TV-ului în FreePlay, apoi descărcați sau transmiteți lecții și videoclipuri pentru redare."
 ---
 
 # Răsfoirea și descărcarea conținutului
@@ -13,7 +14,7 @@ După ce v-ați conectat la un furnizor de conținut, puteți răsfoi biblioteca
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Conectați-vă la cel puțin un furnizor de conținut — consultați [Conectarea la furnizori](./connecting-providers)
+- Conectați-vă la cel puțin un furnizor de conținut — consultați [Conectarea la furnizori](./connecting-providers.md)
 - Aveți telecomanda televizorului la îndemână pentru navigare
 
 </div>
@@ -38,7 +39,7 @@ Puteți coborî cât de adânc permite structura de conținut a furnizorului. Br
 
 ## Răsfoirea Lessons.church
 
-Biblioteca [Lessons.church](../../lessons-church/) este organizată în același mod ca site-ul său web. La nivelul superior veți vedea două foldere:
+Biblioteca [Lessons.church](../../lessons-church/index.md) este organizată în același mod ca site-ul său web. La nivelul superior veți vedea două foldere:
 
 - **Lecții** — Intrați prin **program**, apoi **studiu**, apoi **lecție**. Fiecare lecție listează apoi **variantele** sale, adică versiuni ale lecției pentru o anumită grupă de vârstă sau un anumit context, cum ar fi Grădiniță sau Școală primară. Selectați o variantă pentru a deschide ecranul de descărcare pentru acea versiune a lecției
 - **Suplimente** — Videoclipuri și resurse suplimentare, grupate pe categorii
@@ -78,7 +79,7 @@ Folosiți aceste comenzi în timpul redării:
 Când ieșiți din player, reveniți la browserul de conținut, la nivelul rădăcină al furnizorului curent.
 
 :::info
-Pentru o referință completă a tuturor comenzilor playerului, consultați [Redarea conținutului](./playing-content).
+Pentru o referință completă a tuturor comenzilor playerului, consultați [Redarea conținutului](./playing-content.md).
 :::
 
 ## Comutarea între furnizori

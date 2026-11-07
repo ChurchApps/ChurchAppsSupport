@@ -1,5 +1,7 @@
 ---
-title: "Registrering for arrangementer"
+title: "Tilmelding til begivenheder i B1 Mobile"
+sidebar_label: "Registrering for arrangementer"
+description: "Tilmeld dig selv og familiemedlemmer til kirkebegivenheder fra B1 Mobile-appen, tjek den resterende kapacitet, og bekræft din tilmelding i tre trin."
 ---
 
 # Registrering for arrangementer
@@ -13,7 +15,7 @@ Registrer dig til kirkearrangementer direkte fra B1 Mobile ved hjælp af en simp
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Arrangementet skal have registrering aktiveret, og registreringsvinduet skal være åbent
 
 </div>
@@ -50,4 +52,4 @@ Hvis du har brug for at aflyst, kontakt din kirkes administrator. De kan aflyst 
 ## Relaterede artikler
 
 - [Arrangementsoversigt](./index.md) -- Gennemse arrangementer med registrering på mobil
-- [Se planer](../serving/viewing-plans) -- Se dit tjeneseskema
+- [Se planer](../serving/viewing-plans.md) -- Se dit tjeneseskema

@@ -1,5 +1,7 @@
 ---
-title: "Kubhalisela Imicimbi"
+title: "Kubhalisa Kumicimbi Ku-B1 Mobile"
+sidebar_label: "Kubhalisela Imicimbi"
+description: "Bhalisa wena nemndeni wakho kumicimbi yelicawe nge-app ye-B1 Mobile, hlola sikhala lesisalile, bese uciniseka kubhalisa kwakho ngetinyatselo letintsatfu."
 ---
 
 # Kubhalisela Imicimbi
@@ -13,7 +15,7 @@ Bhalisela imicimbi yelibandla ngco usukela ku-B1 Mobile ngenchubo lelula yetigab
 <div class="prereqs">
 <h4>Ngaphambi Kwekutsi Ucale</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawundi yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawundi yakho
 - Umcimbi kufanele ube nekubhalisa lokuvuliwe futsi sikhatsi sekubhalisa kufanele sibe sivulekile
 
 </div>
@@ -50,4 +52,4 @@ Nangabe udzinga kukhansela, tsintsana nemphatsi welibandla lakho. Bangakhansela 
 ## Emahloka Lahlobene
 
 - [Simo Sesijikelele Semicimbi](./index.md) -- Hlola imicimbi lenekubhalisa efonini
-- [Kubuka Tinhlelo](../serving/viewing-plans) -- Bona luhlelo lwakho lwekukhonta
+- [Kubuka Tinhlelo](../serving/viewing-plans.md) -- Bona luhlelo lwakho lwekukhonta

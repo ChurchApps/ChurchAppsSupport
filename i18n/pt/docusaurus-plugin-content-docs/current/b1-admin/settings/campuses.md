@@ -1,5 +1,6 @@
 ---
 title: "Campus"
+description: "Configure campi no B1 Admin para acompanhar a qual unidade cada pessoa e grupo pertence, depois filtre pessoas, presença e dados demográficos por local."
 ---
 
 # Campus

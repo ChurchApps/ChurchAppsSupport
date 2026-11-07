@@ -1,5 +1,6 @@
 ---
 title: "Serveradministration"
+description: "Endast för Server.Admin-användare: återställ tvåfaktorsinloggning, imitera konton, modera Commons och godkänn kyrkans e-post i B1 Admin."
 ---
 
 # Serveradministration

@@ -1,5 +1,6 @@
 ---
 title: "Administracija"
+description: "Pregled upravne površine Lessons.church v ChurchApps: upravljanje programov, študij, ur, virov, statistike in zunanjih ponudnikov kurikula."
 ---
 
 # Administracija

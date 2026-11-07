@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Yenta Imibiko Yemnikelo Yelicala Lomnyaka"
+description: "Ku-B1 Admin, qeda emarekhodi etiminikelo temnyaka, hlola tilungiselelo tetintela temalunga, bese wakhipha titatimende letikhokhelwa tintela kubo bonkhe."
 ---
 
 # Yenta Imibiko Yemnikelo Yelicala Lomnyaka

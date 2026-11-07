@@ -1,5 +1,7 @@
 ---
-title: "Blog"
+title: "Blogberichten schrijven voor je website in B1 Admin"
+sidebar_label: "Blog"
+description: "Maak, plan en publiceer blogberichten op je kerkwebsite in B1 Admin, inclusief samenvattingen, categorieën, tags, headerfoto's en reactie-embeds."
 ---
 
 # Blog
@@ -13,8 +15,8 @@ Op de pagina Blog kun je nieuws, updates en overdenkingen publiceren op de websi
 <div class="prereqs">
 <h4>Voordat je begint</h4>
 
-- Voltooi de [Initiële instelling](initial-setup) voor je website
-- Voeg een navigatielink naar `/blog` toe via [Pagina's beheren](managing-pages) als bezoekers je blog via het menu moeten kunnen vinden
+- Voltooi de [Initiële instelling](./initial-setup.md) voor je website
+- Voeg een navigatielink naar `/blog` toe via [Pagina's beheren](./managing-pages.md) als bezoekers je blog via het menu moeten kunnen vinden
 
 </div>
 
@@ -31,7 +33,7 @@ Op de pagina Blog kun je nieuws, updates en overdenkingen publiceren op de websi
 3. Voeg een **Samenvatting** toe -- een korte beschrijving die in het berichtenoverzicht, in meta-beschrijvingen en in de RSS-feed wordt getoond. Als je dit leeg laat, wordt er automatisch een samenvatting gemaakt van het begin van de inhoud van je bericht.
 4. Schrijf de tekst van het bericht in de editor **Inhoud** met Markdown. Klik op **Voorbeeld** om te zien hoe het opgemaakte bericht eruitziet.
 5. Kies een **Categorie** (kies een bestaande of typ een nieuwe) en optioneel **Tags**, gescheiden door komma's.
-6. Klik op **Afbeelding selecteren** om een foto te kiezen uit je [Bestanden](files)-galerij, of upload een nieuwe. Geüploade foto's openen in een ingebouwde bijsnijdtool die vastzit op een verhouding van 16:9, zodat je elke foto kunt bijsnijden om in de koptekst van het bericht en de overzichtskaarten te passen.
+6. Klik op **Afbeelding selecteren** om een foto te kiezen uit je [Bestanden](./files.md)-galerij, of upload een nieuwe. Geüploade foto's openen in een ingebouwde bijsnijdtool die vastzit op een verhouding van 16:9, zodat je elke foto kunt bijsnijden om in de koptekst van het bericht en de overzichtskaarten te passen.
 7. Stel de **Auteur** in -- standaard ben jij dat, maar je kunt iedere persoon in je database zoeken en selecteren.
 8. Zet **Gepubliceerd** aan en stel een **Publicatiedatum** in wanneer je het bericht openbaar wilt maken. Laat het uit om het bericht als concept op te slaan.
 
@@ -58,7 +60,7 @@ Elk bericht in de lijst toont een van drie statussen:
 Gepubliceerde berichten verschijnen op `{yoursite}/blog`, 10 per pagina, met links **Ouder**/**Nieuwer** om door je archief te bladeren, samen met een categoriefilter en de auteur en foto van elk bericht. Tags worden ook als klikbare labels weergegeven, zodat bezoekers de lijst op dezelfde manier op tag kunnen filteren. Afzonderlijke berichten staan op `{yoursite}/blog/{slug}` en bevatten gerelateerde berichten uit dezelfde categorie. De blogpagina publiceert ook een RSS-feed, die automatisch wordt herkend door feedlezers en automatiseringstools zoals Zapier.
 
 :::info
-Blogberichten zijn een apart inhoudstype los van gewone websitepagina's -- ze worden niet gemaakt in de [paginaeditor](page-editor) en verschijnen niet in de lijst Pagina's. Dit houdt het schrijven van blogberichten snel en gericht op het schrijven zelf.
+Blogberichten zijn een apart inhoudstype los van gewone websitepagina's -- ze worden niet gemaakt in de [paginaeditor](./page-editor.md) en verschijnen niet in de lijst Pagina's. Dit houdt het schrijven van blogberichten snel en gericht op het schrijven zelf.
 :::
 
 ## Reacties onder berichten toevoegen
@@ -77,6 +79,6 @@ Maak het vak leeg en klik op **Opslaan** om de code uit elk bericht te verwijder
 
 ## Volgende stappen
 
-- [Pagina's beheren](managing-pages) -- Een navigatielink naar je blog toevoegen
-- [Bestanden](files) -- Foto's uploaden om in je berichten te gebruiken
+- [Pagina's beheren](./managing-pages.md) -- Een navigatielink naar je blog toevoegen
+- [Bestanden](./files.md) -- Foto's uploaden om in je berichten te gebruiken
 - [Zapier-integratie](../integrations/zapier.md) -- Automatiseringen starten wanneer nieuwe berichten worden gepubliceerd

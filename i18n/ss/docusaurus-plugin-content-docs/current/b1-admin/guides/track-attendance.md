@@ -1,5 +1,6 @@
 ---
 title: "Umhlahlandlela: Landzelela Kubakhona Kwelibandla"
+description: "Landzela kutfola kwebantfu kubandla ngekusetfula emakamelo netikhatsi tenkonzo, ngekukugcinisa ngesandla noma ngekuzibhalisa, bese ufunda imibiko ku-B1 Admin."
 ---
 
 # Landzelela Kubakhona Kwelibandla

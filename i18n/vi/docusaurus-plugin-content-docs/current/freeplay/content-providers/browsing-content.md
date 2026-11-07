@@ -1,5 +1,6 @@
 ---
 title: "Duyệt và tải xuống nội dung"
+description: "Duyệt thư viện của nhà cung cấp đã kết nối trên FreePlay bằng điều khiển TV, rồi tải xuống hoặc phát trực tuyến bài học và video để phát lại."
 ---
 
 # Duyệt và tải xuống nội dung
@@ -13,7 +14,7 @@ Sau khi kết nối với một nhà cung cấp nội dung, bạn có thể duy�
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Kết nối với ít nhất một nhà cung cấp nội dung -- xem [Kết nối với nhà cung cấp](./connecting-providers)
+- Kết nối với ít nhất một nhà cung cấp nội dung -- xem [Kết nối với nhà cung cấp](./connecting-providers.md)
 - Chuẩn bị điều khiển từ xa của TV để điều hướng
 
 </div>
@@ -38,7 +39,7 @@ Bạn có thể đi sâu đến mức cấu trúc nội dung của nhà cung c�
 
 ## Duyệt Lessons.church
 
-Thư viện [Lessons.church](../../lessons-church/) được tổ chức giống như trang web của họ. Ở cấp cao nhất, bạn sẽ thấy hai thư mục:
+Thư viện [Lessons.church](../../lessons-church/index.md) được tổ chức giống như trang web của họ. Ở cấp cao nhất, bạn sẽ thấy hai thư mục:
 
 - **Lessons** - Đi sâu theo **chương trình**, rồi **học phần**, rồi **bài học**. Mỗi bài học sau đó liệt kê các **địa điểm**, tức là các phiên bản của bài học dành cho một nhóm tuổi hoặc bối cảnh cụ thể, chẳng hạn như Mầm non hoặc Tiểu học. Chọn một địa điểm để mở màn hình tải xuống cho phiên bản bài học đó.
 - **Add-Ons** - Video và tài nguyên bổ sung, được nhóm theo danh mục.
@@ -78,7 +79,7 @@ Sử dụng các phím sau trong khi phát:
 Khi thoát trình phát, bạn sẽ quay lại trình duyệt nội dung ở cấp gốc của nhà cung cấp hiện tại.
 
 :::info
-Để xem đầy đủ tài liệu về tất cả các phím điều khiển trình phát, xem [Phát nội dung](./playing-content).
+Để xem đầy đủ tài liệu về tất cả các phím điều khiển trình phát, xem [Phát nội dung](./playing-content.md).
 :::
 
 ## Chuyển đổi giữa các nhà cung cấp

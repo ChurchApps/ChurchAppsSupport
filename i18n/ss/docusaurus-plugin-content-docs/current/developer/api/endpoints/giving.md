@@ -1,5 +1,6 @@
 ---
 title: "Ema-Endpoint E-Giving"
+description: "Incwadzi ye-Giving API ye-ChurchApps: tipho, emabhetshi, tikhokhi, tinkhokhelo letiphindzwako, netindlela tekukhokha, nemitsetfo yekugunyaza kubathuthukisi."
 ---
 
 # Ema-Endpoint E-Giving
@@ -276,6 +277,6 @@ Yandzisa i-`GenericCrudController` ngemikhondvo ye-CRUD: `getById`, `getAll`, `p
 
 ## Emakhasi Lahlobene
 
-- [Membership Endpoints](./membership) — Bantfu, emabandla, emacembu, ema-role, kanye netimvumo
-- [Authentication & Permissions](./authentication) — Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
-- [Module Structure](../module-structure) — Sifanekiso sekuhlelwa kwekhodi
+- [Membership Endpoints](./membership.md) — Bantfu, emabandla, emacembu, ema-role, kanye netimvumo
+- [Authentication & Permissions](./authentication.md) — Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
+- [Module Structure](../module-structure.md) — Sifanekiso sekuhlelwa kwekhodi

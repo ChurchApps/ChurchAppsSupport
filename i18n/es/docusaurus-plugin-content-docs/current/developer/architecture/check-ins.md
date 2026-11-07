@@ -1,5 +1,6 @@
 ---
 title: "Registros de entrada"
+description: "Cómo funciona el registro de asistencia en B1Checkin, B1App y B1 Admin: el modelo de datos de asistencia, los grupos como salas, los límites de capacidad y las reglas de seguridad para la recogida."
 ---
 
 # Registros de entrada
@@ -216,7 +217,7 @@ El registro por QR se controla con configuraciones de la iglesia guardadas desde
 
 ## Páginas relacionadas
 
-- [Endpoints de Attendance](../api/endpoints/attendance): superficie REST completa para campus, servicios, sesiones, visitas y visitSessions
-- [Endpoints de Membership](../api/endpoints/membership): personas, hogares y grupos
-- [Webhooks](../api/webhooks): los eventos `session.created`, `attendance.recorded` y `attendance.checkout`
-- [Estructura de módulos](../api/module-structure): cómo se organiza del lado del servidor el módulo de asistencia
+- [Endpoints de Attendance](../api/endpoints/attendance.md): superficie REST completa para campus, servicios, sesiones, visitas y visitSessions
+- [Endpoints de Membership](../api/endpoints/membership.md): personas, hogares y grupos
+- [Webhooks](../api/webhooks.md): los eventos `session.created`, `attendance.recorded` y `attendance.checkout`
+- [Estructura de módulos](../api/module-structure.md): cómo se organiza del lado del servidor el módulo de asistencia

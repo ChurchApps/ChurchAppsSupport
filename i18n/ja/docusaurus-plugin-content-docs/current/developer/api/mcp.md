@@ -1,5 +1,6 @@
 ---
 title: "MCP サーバー"
+description: "B1 API への MCP アクセスを設定し、Claude Code、Cursor、Claude Desktop などの AI クライアントが API キーまたは OAuth サインインを使って教会のデータエンドポイントを呼び出せるようにします。"
 ---
 
 # MCP サーバー
@@ -13,7 +14,7 @@ B1 API には、`/mcp` で利用できる [MCP (Model Context Protocol)](https:/
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- クライアントに必要なスコープを付与した [B1 API キー](./api-keys)（`cak_…`）。または OAuth でサインインできる MCP クライアント（[OAuth Discovery](#oauth-discovery) を参照）
+- クライアントに必要なスコープを付与した [B1 API キー](./api-keys.md)（`cak_…`）。または OAuth でサインインできる MCP クライアント（[OAuth Discovery](#oauth-discovery) を参照）
 - 到達可能な B1 API のホスト。ホスト型の教会の場合は `https://api.churchapps.org`、自前でデプロイしている場合はそのエンドポイント
 - MCP クライアント。エンドユーザー向けのセットアップは [Claude](/docs/b1-admin/integrations/claude) と [ChatGPT](/docs/b1-admin/integrations/chatgpt) を参照してください
 
@@ -119,7 +120,7 @@ Authorization: Bearer cak_<prefix>.<secret>
 
 ### `describe_page_builder`
 
-汎用ではない唯一のツールです。`/content/*` エンドポイントを通じてウェブサイトのページを作成する、静的で自己完結したガイドです。Page → Section → Element のデータモデル、作成の手順、各 `elementType` とその `answersJSON` の形、`dividerTop`/`dividerBottom` の形状区切りのようなセクションレベルの設定、エンドツーエンドの具体例を扱います。B1Admin エディターで管理されている要素のカタログを反映しています（[ウェブサイトビルダーのアーキテクチャ](../architecture/website-builder)を参照）。エージェントは、ページコンテンツを作成または編集する前に一度このツールを呼び出し、その後 `api_call` で操作することが想定されています。
+汎用ではない唯一のツールです。`/content/*` エンドポイントを通じてウェブサイトのページを作成する、静的で自己完結したガイドです。Page → Section → Element のデータモデル、作成の手順、各 `elementType` とその `answersJSON` の形、`dividerTop`/`dividerBottom` の形状区切りのようなセクションレベルの設定、エンドツーエンドの具体例を扱います。B1Admin エディターで管理されている要素のカタログを反映しています（[ウェブサイトビルダーのアーキテクチャ](../architecture/website-builder.md)を参照）。エージェントは、ページコンテンツを作成または編集する前に一度このツールを呼び出し、その後 `api_call` で操作することが想定されています。
 
 ## 認証モデル
 
@@ -153,11 +154,11 @@ MCP リクエスト自体は `CustomAuthProvider.getUser()` を通過します�
 
 ## OAuth Discovery
 
-MCP サーバーは OAuth 2.1 のメタデータを公開しています。これにより、OAuth で検出されたサーバーにしか接続しないクライアント（特に Claude.ai の「カスタムコネクタを追加」画面）でも、貼り付けたキーを使わずにユーザーをサインインさせられます。`/mcp` が保護されたリソースであり、`/membership/oauth` にある既存の [OAuth プロバイダー](./connected-apps)が認可サーバーとして機能します。B1Admin の `/oauth` ページが同意画面になります。
+MCP サーバーは OAuth 2.1 のメタデータを公開しています。これにより、OAuth で検出されたサーバーにしか接続しないクライアント（特に Claude.ai の「カスタムコネクタを追加」画面）でも、貼り付けたキーを使わずにユーザーをサインインさせられます。`/mcp` が保護されたリソースであり、`/membership/oauth` にある既存の [OAuth プロバイダー](./connected-apps.md)が認可サーバーとして機能します。B1Admin の `/oauth` ページが同意画面になります。
 
 | エンドポイント | 目的 |
 |---|---|
-| `GET /.well-known/oauth-protected-resource`（`/.well-known/oauth-protected-resource/mcp` も可） | 保護されたリソースのメタデータ（RFC 9728）。`resource` は `<api>/mcp`、`authorization_servers` は API のルート、`scopes_supported` はすべての [API キースコープ](./api-keys#scopes)を一覧にします |
+| `GET /.well-known/oauth-protected-resource`（`/.well-known/oauth-protected-resource/mcp` も可） | 保護されたリソースのメタデータ（RFC 9728）。`resource` は `<api>/mcp`、`authorization_servers` は API のルート、`scopes_supported` はすべての [API キースコープ](./api-keys.md#scopes)を一覧にします |
 | `GET /.well-known/oauth-authorization-server` | 認可サーバーのメタデータ（RFC 8414）。`authorization_endpoint` は B1Admin の `/oauth`、`token_endpoint` は `/membership/oauth/token`、`registration_endpoint` は `/membership/oauth/register` です |
 | `POST /membership/oauth/register` | 動的クライアント登録（RFC 7591） |
 
@@ -209,8 +210,8 @@ MCP サーバーは Api リポジトリの `src/modules/mcp/` にあります。
 
 ## 関連項目
 
-- [API キー](./api-keys)
-- [Webhook](./webhooks)
-- [接続済みアプリ（OAuth）](./connected-apps)
+- [API キー](./api-keys.md)
+- [Webhook](./webhooks.md)
+- [接続済みアプリ（OAuth）](./connected-apps.md)
 - [Claude — エンドユーザー向けセットアップ](/docs/b1-admin/integrations/claude)
 - [ChatGPT — エンドユーザー向けセットアップ](/docs/b1-admin/integrations/chatgpt)

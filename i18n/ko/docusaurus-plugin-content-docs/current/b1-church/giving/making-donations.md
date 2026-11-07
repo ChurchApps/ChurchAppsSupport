@@ -1,5 +1,7 @@
 ---
-title: "헌금하기"
+title: "B1.church 회원 포털에서 헌금하기"
+sidebar_label: "헌금하기"
+description: "B1.church를 통해 계정 유무와 상관없이 교회에 일회성 또는 정기 헌금을 하고, 이후 헌금 내역을 확인하세요."
 ---
 
 # 헌금하기

@@ -1,5 +1,7 @@
 ---
-title: "Başlarken"
+title: "FreePlay TV Uygulamasına Başlarken"
+sidebar_label: "Başlarken"
+description: "FreePlay'i Android TV, Fire TV veya Apple TV'de kurun: uygulamayı yükleyin, ilk kez açın ve kumanda tuşlarını ve kenar çubuğunu öğrenin."
 ---
 
 # FreePlay ile Başlarken
@@ -42,7 +44,7 @@ FreePlay; Fire TV (yeni Vega OS çubukları dahil), onn gibi Android TV ve Googl
 
 FreePlay'i ilk kez açtığınızda, FreePlay logosunun yer aldığı animasyonlu bir açılış ekranı görürsünüz. Uygulama, daha önce bağlanmış içerik sağlayıcılarını kontrol eder. Bir sağlayıcı zaten bağlıysa doğrudan o sağlayıcının içerik tarayıcısına geçer. Aksi halde ilk içerik kaynağınızı bağlayabileceğiniz **İçerik Sağlayıcıları** ekranını açar.
 
-TV, [Zamanlanmış Mod](../scheduled-mode/) içinde bir takvime eşlenmişse FreePlay tüm bunları atlar ve doğrudan zamanlanmış oynatıcıyı açar.
+TV, [Zamanlanmış Mod](../scheduled-mode/index.md) içinde bir takvime eşlenmişse FreePlay tüm bunları atlar ve doğrudan zamanlanmış oynatıcıyı açar.
 
 ## TV Kumandanızla Gezinme
 
@@ -62,13 +64,13 @@ FreePlay, TV kumandaları için tasarlanmıştır. Uygulama boyunca kullanacağ�
 
 Kenar çubuğu, yukarıdan aşağıya şunları listeler:
 
-- **Bugünün Planı** -- TV bir plana eşlendiğinde gösterilir. Bkz. [Plan Modu](../plan-mode/)
-- **Duyurular** -- Bir duyuru klasörü seçtikten sonra gösterilir. Bkz. [Duyurular](../content-providers/announcements)
-- **Gözat** -- Gözatabileceğiniz bağlı her içerik sağlayıcısı. Bkz. [İçeriğe Gözatma ve İndirme](../content-providers/browsing-content)
-- **Ayarlar** -- Kenar çubuğunun altında yer alır. **Bir takvime eşle** (bu TV'yi bir takvime veya plana eşleyin -- bkz. [Eşleme Modunu Seçme](./pairing-modes)), **İndirilenler** (bu cihaza kaydedilen içeriği oynatın veya silin) ve **Sağlayıcılar** (içerik sağlayıcılarını bağlayın ve duyuru klasörünü seçin) seçeneklerini açar
+- **Bugünün Planı** -- TV bir plana eşlendiğinde gösterilir. Bkz. [Plan Modu](../plan-mode/index.md)
+- **Duyurular** -- Bir duyuru klasörü seçtikten sonra gösterilir. Bkz. [Duyurular](../content-providers/announcements.md)
+- **Gözat** -- Gözatabileceğiniz bağlı her içerik sağlayıcısı. Bkz. [İçeriğe Gözatma ve İndirme](../content-providers/browsing-content.md)
+- **Ayarlar** -- Kenar çubuğunun altında yer alır. **Bir takvime eşle** (bu TV'yi bir takvime veya plana eşleyin -- bkz. [Eşleme Modunu Seçme](./pairing-modes.md)), **İndirilenler** (bu cihaza kaydedilen içeriği oynatın veya silin) ve **Sağlayıcılar** (içerik sağlayıcılarını bağlayın ve duyuru klasörünü seçin) seçeneklerini açar
 
 ## Sırada Ne Var
 
-- **[Eşleme Modunu Seçme](./pairing-modes)** - TV'nizi bağlamanın farklı yollarını öğrenin
-- **[Zamanlanmış Mod](../scheduled-mode/)** - TV'lerinizi FreePlay Admin ile bir takvime yerleştirin
-- **[İçerik Sağlayıcıları](../content-providers/)** - Lessons.church, Bible Project ve daha fazlasına bağlanın
+- **[Eşleme Modunu Seçme](./pairing-modes.md)** - TV'nizi bağlamanın farklı yollarını öğrenin
+- **[Zamanlanmış Mod](../scheduled-mode/index.md)** - TV'lerinizi FreePlay Admin ile bir takvime yerleştirin
+- **[İçerik Sağlayıcıları](../content-providers/index.md)** - Lessons.church, Bible Project ve daha fazlasına bağlanın

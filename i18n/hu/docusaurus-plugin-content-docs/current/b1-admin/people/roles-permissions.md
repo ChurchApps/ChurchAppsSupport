@@ -1,5 +1,6 @@
 ---
 title: "Szerepkörök hozzárendelése"
+description: "Szerepkörök kiosztása a B1 Admin-ban, hogy munkatársak és önkéntesek csak a szükséges személy-, adomány-, részvételi és csoportterületeket lássák."
 ---
 
 # Szerepkörök hozzárendelése

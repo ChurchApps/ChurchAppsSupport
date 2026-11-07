@@ -1,5 +1,6 @@
 ---
 title: "项目概览"
+description: "按类别梳理 ChurchApps 的所有代码仓库，列出框架、开发端口和数据库，并说明共享 @churchapps 包如何将它们连接起来。位于开发者设置文档中。"
 ---
 
 # 项目概览
@@ -13,7 +14,7 @@ ChurchApps 由大约 20 个独立的仓库组成，全部发布在 [ChurchApps G
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 为您想要参与的项目类别安装 [前提条件](./prerequisites)
+- 为您想要参与的项目类别安装 [前提条件](./prerequisites.md)
 
 </div>
 
@@ -72,7 +73,7 @@ ChurchApps 由大约 20 个独立的仓库组成，全部发布在 [ChurchApps G
 | `@churchapps/integration-sdk` | B1.church 集成工具包：Webhook、REST 客户端、OAuth | 外部集成开发者 |
 | `@churchapps/texting` | SMS 提供商抽象 | Api |
 
-参阅 [共享库](../shared-libraries/) 了解工作区设置和发布工作流程。
+参阅 [共享库](../shared-libraries/index.md) 了解工作区设置和发布工作流程。
 
 ## 项目关系
 
@@ -90,5 +91,5 @@ FreeShow     ──────┘   @churchapps/apihelper ◄──┘
 
 ## 后续步骤
 
-- **[环境变量](./environment-variables)** ——配置您的 `.env` 文件以连接到 API
-- **[API 本地设置](../api/local-setup)** ——在本地设置后端 API
+- **[环境变量](./environment-variables.md)** ——配置您的 `.env` 文件以连接到 API
+- **[API 本地设置](../api/local-setup.md)** ——在本地设置后端 API

@@ -1,5 +1,6 @@
 ---
 title: "Hỗ trợ đa tiền tệ"
+description: "Különböző pénznemű adományok rögzítése és jelentése a B1 Admin-ban: kézi bevitel, Stripe online adakozás, valamint az összesített összegek átváltásának módja."
 ---
 
 Tôi cần dịch sang tiếng Hungary chứ không phải tiếng Việt, nên xin lỗi về tiêu đề trên. Bản dịch đúng như sau:

@@ -1,5 +1,6 @@
 ---
 title: "Omat ilmoittautumiset"
+description: "Tarkista ilmoittautumisen tila, maksa saldo, muokkaa osallistujia tai lisävalintoja tai peru tapahtumailmoittautuminen B1 Churchin jäsenportaalissa."
 ---
 
 # Omat ilmoittautumiset
@@ -14,7 +15,7 @@ Jäsenportaalin **Ilmoittautumiset**-sivu on kotipaikkasi kaikille tapahtumille,
 <h4>Ennen aloittamista</h4>
 
 - Sinun täytyy olla [kirjautunut sisään](../getting-started/logging-in.md) — vierailijoiden ilmoittautumiset eivät näy täällä
-- Tarvitset vähintään yhden tapahtumailmoittautumisen. Katso [Ilmoittautuminen tapahtumiin](./registering).
+- Tarvitset vähintään yhden tapahtumailmoittautumisen. Katso [Ilmoittautuminen tapahtumiin](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Paikkasi vapautuu välittömästi. Jos tapahtumalla on varasijalista, seuraava j
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Ilmoittautuminen tapahtumiin](./registering) -- Ilmoittautumisprosessi, mukaan lukien maksu ja varasijalistat
+- [Ilmoittautuminen tapahtumiin](./registering.md) -- Ilmoittautumisprosessi, mukaan lukien maksu ja varasijalistat
 - [Tapahtumien yleiskatsaus](./index.md) -- Selaa tulevia tapahtumia

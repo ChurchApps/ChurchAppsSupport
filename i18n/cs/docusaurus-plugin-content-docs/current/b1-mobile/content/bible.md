@@ -1,5 +1,7 @@
 ---
-title: "Biblia"
+title: "Čtení Bible v aplikaci B1 Mobile"
+sidebar_label: "Biblia"
+description: "Otevřete Bibli v čtečce aplikace B1 Mobile z menu, procházejte knihy, kapitoly a verše a najděte možnost Bible vaší církve."
 ---
 
 # Biblia
@@ -13,7 +15,7 @@ B1 Mobile obsahuje vestavěnou čtečku Bible, takže si můžete Písmo číst 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte B1 Mobile](../getting-started/installing) a [přihlaste se](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte B1 Mobile](../getting-started/installing.md) a [přihlaste se](../getting-started/logging-in.md) ke svému účtu
 - Váš sbor musí mít zapnutou funkci Bible
 
 </div>
@@ -37,7 +39,7 @@ Vestavěná čtečka nabízí ovládací prvky pro pohyb v Písmu. Můžete:
 Čtečka vyplňuje celou obrazovku, takže máte na zařízení dostatek prostoru pro pohodlné čtení.
 
 :::tip
-Udělejte z obrazovky Bible součást svého každodenního režimu – je to rychlý způsob, jak číst Písmo kdekoli jste. Spojte ji s [Veršem dne](./verse-of-the-day) pro denní inspiraci.
+Udělejte z obrazovky Bible součást svého každodenního režimu – je to rychlý způsob, jak číst Písmo kdekoli jste. Spojte ji s [Veršem dne](./verse-of-the-day.md) pro denní inspiraci.
 :::
 
 ## Dostupnost
@@ -46,6 +48,6 @@ Obrazovka Bible je k dispozici, pokud sbor tuto funkci zapnul. Pokud v postrann�
 
 ## Související články
 
-- [Verš dne](./verse-of-the-day) -- Denní biblický verš
-- [Kázání](./sermons) -- Sledujte kázání, která doplňují vaše čtení Bible
+- [Verš dne](./verse-of-the-day.md) -- Denní biblický verš
+- [Kázání](./sermons.md) -- Sledujte kázání, která doplňují vaše čtení Bible
 - [FreePlay](/docs/freeplay/) -- Přehrávejte strukturované kurikulum na televizorech ve třídách (nahrazuje zastaralou obrazovku Lekce v aplikaci)

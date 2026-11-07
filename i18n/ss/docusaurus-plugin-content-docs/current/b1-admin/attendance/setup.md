@@ -1,5 +1,6 @@
 ---
 title: "Kuhlelwa Kwekubakhona"
+description: "Setfula emabandla, tinkonzo, tikhatsi, nekabelo yemaqembu ku-B1 Admin kuze kusebente kutfolwa kwebantfu netikhatsi tekuzibhalisa emabandleni akho."
 ---
 
 # Kuhlelwa Kwekubakhona

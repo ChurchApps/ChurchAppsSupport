@@ -1,5 +1,6 @@
 ---
 title: "Playlisty"
+description: "Seskupte kázání do sérií v B1 Admin, aby návštěvníci vašeho webu B1.church mohli procházet a sledovat jednotlivé série v pořadí."
 ---
 
 # Playlisty
@@ -39,10 +40,10 @@ Nejprve vytvořte playlisty a teprve potom k nim přidávejte kázání. Každé
 
 ## Přidání kázání do playlistu
 
-Když [přidáte nebo upravíte kázání](managing-sermons), přiřadíte ho k playlistu pomocí rozbalovacího seznamu **Playlist**. Všechna kázání přiřazená ke stejnému playlistu se seskupí a na vašem webu se zobrazí v daném pořadí.
+Když [přidáte nebo upravíte kázání](./managing-sermons.md), přiřadíte ho k playlistu pomocí rozbalovacího seznamu **Playlist**. Všechna kázání přiřazená ke stejnému playlistu se seskupí a na vašem webu se zobrazí v daném pořadí.
 
 :::info
-Kázání můžete k playlistům přiřadit také během [hromadného importu](bulk-import). Při importu z YouTube nebo Vimeo vyberte playlist v rozbalovacím seznamu **Import Into Playlist** (Importovat do playlistu) ještě před kliknutím na **Import** (Importovat).
+Kázání můžete k playlistům přiřadit také během [hromadného importu](./bulk-import.md). Při importu z YouTube nebo Vimeo vyberte playlist v rozbalovacím seznamu **Import Into Playlist** (Importovat do playlistu) ještě před kliknutím na **Import** (Importovat).
 :::
 
 ## Jak se playlisty zobrazují na vašem webu
@@ -55,5 +56,5 @@ Playlisty se na vašem webu B1.church zobrazují jako kolekce, kterými lze proc
 
 ## Další kroky
 
-- [Správa kázání](managing-sermons) -- Přidávání jednotlivých kázání do playlistů
-- [Hromadný import](bulk-import) -- Import více kázání a jejich přiřazení k playlistům
+- [Správa kázání](./managing-sermons.md) -- Přidávání jednotlivých kázání do playlistů
+- [Hromadný import](./bulk-import.md) -- Import více kázání a jejich přiřazení k playlistům

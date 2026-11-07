@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Zapier로 VOMO 봉사자 신청과 키오스크 체크인을 B1 Admin의 사람과 그룹에 연결합니다. API 키 범위와 설정 단계를 포함합니다."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ VOMO 프로젝트가 끝나면 B1 그룹을 수동으로 지웁니다(*참여 �
 
 ### "가입해주셔서 감사합니다" 텍스트를 SMS를 통해 전송
 
-같은 Zap에서 VOMO 참여 → Clearstream 텍스트 전송 또는 Text In Church 메시지 전송으로 연결합니다. 둘 다 1등급 Zapier 작업을 가지고 있습니다 — [Clearstream](./clearstream) 및 [Text In Church](./text-in-church)를 참조하세요.
+같은 Zap에서 VOMO 참여 → Clearstream 텍스트 전송 또는 Text In Church 메시지 전송으로 연결합니다. 둘 다 1등급 Zapier 작업을 가지고 있습니다 — [Clearstream](./clearstream.md) 및 [Text In Church](./text-in-church.md)를 참조하세요.
 
 ### 낙오 감지
 
@@ -91,6 +92,6 @@ VOMO 프로젝트가 끝나면 B1 그룹을 수동으로 지웁니다(*참여 �
 
 ## 참고도 보기
 
-- [Zapier(개요)](../zapier) — 모든 Zapier 레시피의 B1 측
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — 자원봉사 가입을 SMS 확인과 쌍으로 만듭니다
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — 자원봉사 가입을 SMS 확인과 쌍으로 만듭니다
 - [웹훅(개발자 참조)](/docs/developer/api/webhooks) — VOMO가 트리거할 수 있는 이벤트

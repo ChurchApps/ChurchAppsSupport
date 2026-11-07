@@ -1,5 +1,6 @@
 ---
 title: "Hesabınızı Oluşturma"
+description: "B1.church'te bir ChurchApps hesabı kaydedin, e-postanızı doğrulayın ve B1 Admin kurulumuna başlamak için bir kilise oluşturun ya da katılın."
 ---
 
 # Hesabınızı Oluşturma

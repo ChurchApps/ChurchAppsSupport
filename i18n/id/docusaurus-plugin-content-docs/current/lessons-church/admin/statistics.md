@@ -1,5 +1,6 @@
 ---
 title: "Statistik"
+description: "Lihat jumlah unduhan per studi, gereja mana yang memakai sumber daya Anda, dan lokasinya di statistik admin Lessons.church, dengan filter rentang tanggal."
 ---
 
 # Statistik

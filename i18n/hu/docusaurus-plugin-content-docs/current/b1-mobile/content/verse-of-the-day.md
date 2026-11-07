@@ -1,5 +1,7 @@
 ---
-title: "Igenévers"
+title: "A Nap verse a B1 Mobile alkalmazásban"
+sidebar_label: "Igenévers"
+description: "Nyisd meg a Nap verse képernyőt a B1 Mobile alkalmazásban, és nézd meg a mai bibliai verset képként, telefonod vagy táblagéped tájolásához igazítva, naponta frissítve."
 ---
 
 # Igenévers
@@ -13,7 +15,7 @@ Az Igenévers képernyő egy napi bibliai verset jelenít meg szépen formázott
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing) és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md) és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 - Az egyházadnak engedélyeznie kell az Igenévers funkciót
 
 </div>
@@ -46,5 +48,5 @@ Az Igenévers a B1 Mobile beépített tartalmi funkciója. Ha nem látod az olda
 
 ## Kapcsolódó cikkek
 
-- [Biblia](./bible) -- Teljes szakaszok olvasása a beépített olvasóban
-- [Igehirdetések](./sermons) -- Egyházad rögzített igehirdetéseinek megtekintése
+- [Biblia](./bible.md) -- Teljes szakaszok olvasása a beépített olvasóban
+- [Igehirdetések](./sermons.md) -- Egyházad rögzített igehirdetéseinek megtekintése

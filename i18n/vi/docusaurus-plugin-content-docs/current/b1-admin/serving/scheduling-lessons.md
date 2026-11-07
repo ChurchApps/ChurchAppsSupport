@@ -1,5 +1,7 @@
 ---
-title: "Lên lịch bài học"
+title: "Lên lịch bài học từ Lessons.church trong B1 Admin"
+sidebar_label: "Lên lịch bài học"
+description: "Kết nối Lessons.church với B1 Admin, rồi lên lịch bài học, lên lịch hàng loạt cho một loạt bài, hoặc áp dụng kế hoạch cả năm cho kế hoạch phục vụ của một mục vụ."
 ---
 
 # Lên lịch bài học từ Lessons.church

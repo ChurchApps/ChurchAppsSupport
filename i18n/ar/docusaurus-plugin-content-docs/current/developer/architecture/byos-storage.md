@@ -1,5 +1,6 @@
 ---
 title: "التخزين الخاص بك (BYOS)"
+description: "اربط Google Drive أو Dropbox أو OneDrive أو حاوية S3 المتوافقة الخاصة بك في B1 Admin، ليتجاوز رفع ملفات الكنيسة حد المنصة البالغ 100 ميجابايت."
 ---
 
 # التخزين الخاص بك (BYOS)
@@ -8,7 +9,7 @@ title: "التخزين الخاص بك (BYOS)"
 
 ## طبقة المزوّد
 
-يعيد BYOS استخدام طبقة التخزين التي أُنشئت لـ [MinistryStuff](./ministrystuff): الواجهة `IStorageProvider` (في `Packages/apihelper`)، ويحدّدها `StorageResolver` لكل كنيسة على حدة من جدول `content.storageProviders`. وعلى عكس مزوّدي `churchapps` و`ministrystuff` المفردين، تحتفظ مزوّدات BYOS ببيانات اعتماد خاصة بكل كنيسة، لذلك ينشئ `StorageResolver.forChurch` نسخة لكل طلب بناءً على سجل الكنيسة. تقع التطبيقات بجانب المحدِّد في `Api/src/modules/content/helpers/`: وهي `GoogleDriveStorageProvider` و`DropboxStorageProvider` و`OneDriveStorageProvider` و`S3CompatibleStorageProvider`، إضافةً إلى `ByosAuth` (لتبادل رموز OAuth وتجديدها بشكل فردي، إذ تُدوِّر Dropbox رموز التجديد، لذلك تُزال عمليات التجديد المكررة بالطريقة نفسها التي يعتمدها `ProviderProxyController`).
+يعيد BYOS استخدام طبقة التخزين التي أُنشئت لـ [MinistryStuff](./ministrystuff.md): الواجهة `IStorageProvider` (في `Packages/apihelper`)، ويحدّدها `StorageResolver` لكل كنيسة على حدة من جدول `content.storageProviders`. وعلى عكس مزوّدي `churchapps` و`ministrystuff` المفردين، تحتفظ مزوّدات BYOS ببيانات اعتماد خاصة بكل كنيسة، لذلك ينشئ `StorageResolver.forChurch` نسخة لكل طلب بناءً على سجل الكنيسة. تقع التطبيقات بجانب المحدِّد في `Api/src/modules/content/helpers/`: وهي `GoogleDriveStorageProvider` و`DropboxStorageProvider` و`OneDriveStorageProvider` و`S3CompatibleStorageProvider`، إضافةً إلى `ByosAuth` (لتبادل رموز OAuth وتجديدها بشكل فردي، إذ تُدوِّر Dropbox رموز التجديد، لذلك تُزال عمليات التجديد المكررة بالطريقة نفسها التي يعتمدها `ProviderProxyController`).
 
 يحتوي `storageProviders` على بيانات الاعتماد: إما `accessToken` و`refreshToken` و`tokenExpiresAt` (مشفّرة، وهي مجموعة OAuth الثلاثية)، أو `apiKey` و`apiSecret` مع حقل `settings` بصيغة JSON (`{endpoint, region, bucket, publicBase}` لخدمة S3). لا تصل الرموز إلى العميل أبدًا، إذ تُخفي `GET /content/storage/providers` الأسرار وتعيد قيمة منطقية باسم `connected`.
 

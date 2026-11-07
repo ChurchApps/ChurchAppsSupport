@@ -1,5 +1,7 @@
 ---
-title: "Servisni red"
+title: "Potek bogoslužja v aplikaciji B1.church"
+sidebar_label: "Servisni red"
+description: "Oglejte si potek bogoslužja v aplikaciji B1.church s kumulativnim časovnim potekom, besedili pesmi, transpozicijo tonov in predogledi lekcij za vašo ekipo."
 ---
 
 # Servisni red

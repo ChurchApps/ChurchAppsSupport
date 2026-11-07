@@ -1,5 +1,6 @@
 ---
 title: "Tingcoco Telicembu"
+description: "Funda kutfumela, kuhlela, kuphendvula, nekuphatsa imiyalezo kuxoxo lweliqembu ku-B1.church, kuhlanganisa timemo nemathuluzi ekulawula kwemaholi."
 ---
 
 # Tingcoco Telicembu

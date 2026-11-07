@@ -386,13 +386,13 @@
     "message": "B1 Mobilný"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobilná aplikácia pre členov cirkvi na iOS a Android."
+    "message": "Staršia aplikácia pre členov na iOS a Android, ktorú nahradila webová aplikácia B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Prihlásenie"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Aplikácia na samoobslužné prihlásenie v kioskoch pre tablety Android."
+    "message": "Samoobslužný kiosk na odbavovanie pre tablety iPad a Android."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Navrhnuté špecificky pre pracovné postupy cirkvi — nie je to všeobecný nástroj prispôsobený ministrácii."
   },
   "homepage.title": {
-    "message": "Domov"
+    "message": "Pomoc pre B1.church, Lessons.church a FreePlay"
   },
   "homepage.description": {
-    "message": "Dokumentácia podpory ChurchApps — bezplatné a open source nástroje na správu cirkvi."
+    "message": "Sprievodcovia a dokumentácia k bezplatnému softvéru pre cirkvi s otvoreným zdrojovým kódom od ChurchApps: správa cirkvi B1.church, odbavovanie, darovanie a webové stránky, učebné osnovy Lessons.church a FreePlay."
   },
   "homepage.products.heading": {
     "message": "Vyberte si svoj produkt"

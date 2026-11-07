@@ -1,5 +1,6 @@
 ---
 title: "Kuphatsa Tiskrini Netiqembu"
+description: "Hlola ukutsi ema-FreePlay TV atfolakala yini futsi alungele Sonto, bese uhlela tilungiselelo tetiskrini nemaqembu ahlanganisa ikhalenda linye ku-FreePlay Admin."
 ---
 
 # Kuphatsa Tiskrini Netiqembu
@@ -14,7 +15,7 @@ Likhasi le-**Screens** ku-FreePlay Admin libala yonkhe i-TV letibambisene neband
 <h4>Ngaphambi Kokuqala</h4>
 
 - Ngena ku-FreePlay Admin ku-[admin.freeplay.church](https://admin.freeplay.church)
-- [Bambisana okungenani tiskrini sinye](./pairing-a-screen)
+- [Bambisana okungenani tiskrini sinye](./pairing-a-screen.md)
 
 </div>
 
@@ -43,7 +44,7 @@ Sebentisa **Etfula** kuze udlale ikhalenda letiskrini kusiphequluli sakho, noma 
 
 Cofa lebhuli lesikrini kuze uvule likhasi layo. Ngakwesobunxele:
 
-- **Etfula kusiphequluli** - Dlala ikhalenda lalesikrini ngekugcwele kusiphequluli sakho, njengoba bekutawubukeka kuTV. Bona [Ukwethula Kusuka Kusiphequluli](./scheduled-playback#presenting-from-a-browser)
+- **Etfula kusiphequluli** - Dlala ikhalenda lalesikrini ngekugcwele kusiphequluli sakho, njengoba bekutawubukeka kuTV. Bona [Ukwethula Kusuka Kusiphequluli](./scheduled-playback.md#presenting-from-a-browser)
 - **Hlela** - Shintja lebhuli, iqembu, noma imodi
 - **Okunye** > **Susa kubambisana** - Nqamula i-TV. Iyabuyela ekuveleni likhodi lekubambisana
 
@@ -93,6 +94,6 @@ Kususa iliqembu kuphinde kususe nekukhetsa kwaliqembu. Tiskrini taleliqembu tiya
 
 ## Tihloko Letihlobene
 
-- **[Kubambisana Nesikrini](./pairing-a-screen)** - Engeta i-TV lelisha
-- **[Kuhlela Ikhalenda](./scheduling-the-calendar)** - Setha lokudlalwako ngulelinye iqembu nelupu lalo lwekuzenzekela
-- **[Kudlala Okuhleliwe Kuka-TV](./scheduled-playback)** - Lidethi le-"Silungele kuze" lisho ntoni ku-TV ngayo
+- **[Kubambisana Nesikrini](./pairing-a-screen.md)** - Engeta i-TV lelisha
+- **[Kuhlela Ikhalenda](./scheduling-the-calendar.md)** - Setha lokudlalwako ngulelinye iqembu nelupu lalo lwekuzenzekela
+- **[Kudlala Okuhleliwe Kuka-TV](./scheduled-playback.md)** - Lidethi le-"Silungele kuze" lisho ntoni ku-TV ngayo

@@ -1,5 +1,6 @@
 ---
 title: "Programs and Studies"
+description: "Learn how Lessons.church programs, studies, lessons, and venues fit together so you can find the right curriculum and move between related lessons."
 ---
 
 # Programs and Studies

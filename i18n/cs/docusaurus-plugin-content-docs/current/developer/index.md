@@ -1,5 +1,6 @@
 ---
 title: "Dokumentace pro vývojáře"
+description: "Orientace ve vývojářských dokumentech ChurchApps: lokální nastavení, průvodci API a webovými aplikacemi, sdílené knihovny, mobilní buildy a nasazení."
 ---
 
 # Dokumentace pro vývojáře
@@ -24,16 +25,16 @@ Klíčové vlastnosti:
 
 ## Co tato sekce obsahuje
 
-- **[Nastavení](setup/)** – Lokální vývojové prostředí, předpoklady a konfigurace
-  - [Předpoklady](setup/prerequisites) – Požadované nástroje a software
-  - [Přehled projektů](setup/project-overview) – Všechny projekty na jednom místě
-  - [Proměnné prostředí](setup/environment-variables) – Konfigurace souborů `.env`
-- **[API](api/)** – Lokální nastavení hlavního API, inicializace databáze a struktura modulů
-- **[Webové aplikace](web-apps/)** – Spuštění B1Admin, B1App a LessonsApp lokálně
-- **[Mobilní aplikace](mobile/)** – Sestavení B1Mobile a dalších aplikací Expo
-- **[Sdílené knihovny](shared-libraries/)** – Práce s Helpers, ApiHelper a AppHelper
-- **[Nasazení](deployment/)** – Nasazení API, webových aplikací a mobilních aplikací
-- **[Poskytovatel obsahu pro FreePlay](freeplay-content-provider)** – Propojení vaší knihovny lekcí s FreePlay
+- **[Nastavení](./setup/index.md)** – Lokální vývojové prostředí, předpoklady a konfigurace
+  - [Předpoklady](./setup/prerequisites.md) – Požadované nástroje a software
+  - [Přehled projektů](./setup/project-overview.md) – Všechny projekty na jednom místě
+  - [Proměnné prostředí](./setup/environment-variables.md) – Konfigurace souborů `.env`
+- **[API](./api/index.md)** – Lokální nastavení hlavního API, inicializace databáze a struktura modulů
+- **[Webové aplikace](./web-apps/index.md)** – Spuštění B1Admin, B1App a LessonsApp lokálně
+- **[Mobilní aplikace](./mobile/index.md)** – Sestavení B1Mobile a dalších aplikací Expo
+- **[Sdílené knihovny](./shared-libraries/index.md)** – Práce s Helpers, ApiHelper a AppHelper
+- **[Nasazení](./deployment/index.md)** – Nasazení API, webových aplikací a mobilních aplikací
+- **[Poskytovatel obsahu pro FreePlay](./freeplay-content-provider.md)** – Propojení vaší knihovny lekcí s FreePlay
 
 ## Komunita a zdroje
 

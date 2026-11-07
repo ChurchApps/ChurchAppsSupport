@@ -1,5 +1,6 @@
 ---
 title: "Digitális kijelzés"
+description: "Lecketartalom küldése előtéri TV-re a B1 Adminban egy mindig az aktuális tervet mutató digitális hirdetés-URL-lel, vagy FreePlay TV-k használata."
 ---
 
 # Digitális kijelzés
@@ -14,7 +15,7 @@ Küldje el a lecke tartalmát egy előcsarnoki vagy folyosói TV-re digitális k
 <h4>Mielőtt elkezdi</h4>
 
 - Állítson be egy [tervtípust](./plans.md) a [Lessons.church](../../b1-church/content/lessons.md) vagy más lecketartalommal, amelyet ütemezett
-- Legyen [SignPresenter](https://www.signpresenter.com) fiókja és egy olyan eszköze, amely megjeleníti azt, vagy egy [FreePlayt](../../freeplay/) futtató TV-je
+- Legyen [SignPresenter](https://www.signpresenter.com) fiókja és egy olyan eszköze, amely megjeleníti azt, vagy egy [FreePlayt](../../freeplay/index.md) futtató TV-je
 
 </div>
 
@@ -36,14 +37,14 @@ A SignPresenteren belüli lépésenkénti beállításért lásd a [SignPresente
 
 ## FreePlay TV-k használata helyette
 
-Ha a képernyői a [FreePlayt](../../freeplay/) futtatják, nincs szükség a forrás URL-re. A **Digitális kijelzési forrás** párbeszédpanel az **admin.freeplay.church/calendar** oldalra mutató linket tartalmaz, ahol ezt a tervtípust ütemezheti a FreePlay TV-ire:
+Ha a képernyői a [FreePlayt](../../freeplay/index.md) futtatják, nincs szükség a forrás URL-re. A **Digitális kijelzési forrás** párbeszédpanel az **admin.freeplay.church/calendar** oldalra mutató linket tartalmaz, ahol ezt a tervtípust ütemezheti a FreePlay TV-ire:
 
 1. Kattintson a párbeszédpanelen lévő **admin.freeplay.church/calendar** linkre. A FreePlay Admin ugyanazzal a bejelentkezéssel érhető el, mint a B1 Admin.
 2. Válassza ki a TV-i képernyőcsoportot, és kattintson az **Ütemezés hozzáadása** gombra.
 3. A **Lejátszás** alatt válassza ki a tervtípusát a **Szolgálati tervek** közül. A tervtípus mellett a **(aktuális terv)** jelölés látható.
 4. Állítsa be a napokat és az időpontokat, majd kattintson a **Mentés** gombra.
 
-A TV-k minden héten az adott tervtípushoz aktuálisan tartozó tervet játsszák le a megadott időpontokban. Ez a Go Curriculum leckékkel is működik, beleértve a testreszabott terveket is. A FreePlay a szolgálathoz a **Tartalomszolgáltatók** alatt hozzárendelt Go Curriculum fiókkal jelentkezik be (lásd: [Leckék ütemezése](./scheduling-lessons.md)), vagy ha a szolgálathoz nincs ilyen, az egyházának Go Curriculum-kapcsolatával. Az összes lehetőségről a [Naptár ütemezése](../../freeplay/scheduled-mode/scheduling-the-calendar) oldalon olvashat, a TV hozzáadásához pedig a [Képernyő párosítása](../../freeplay/scheduled-mode/pairing-a-screen) oldalt nézze meg.
+A TV-k minden héten az adott tervtípushoz aktuálisan tartozó tervet játsszák le a megadott időpontokban. Ez a Go Curriculum leckékkel is működik, beleértve a testreszabott terveket is. A FreePlay a szolgálathoz a **Tartalomszolgáltatók** alatt hozzárendelt Go Curriculum fiókkal jelentkezik be (lásd: [Leckék ütemezése](./scheduling-lessons.md)), vagy ha a szolgálathoz nincs ilyen, az egyházának Go Curriculum-kapcsolatával. Az összes lehetőségről a [Naptár ütemezése](../../freeplay/scheduled-mode/scheduling-the-calendar.md) oldalon olvashat, a TV hozzáadásához pedig a [Képernyő párosítása](../../freeplay/scheduled-mode/pairing-a-screen.md) oldalt nézze meg.
 
 :::note
 A forrás URL nem tartalmazza a Go Curriculum médiát, mert ahhoz az egyháza Go Curriculum bejelentkezése szükséges. Ha egy Go Curriculum leckét szeretne megjeleníteni az előcsarnoki vagy osztálytermi TV-n, használja a FreePlayt.
@@ -53,4 +54,4 @@ A forrás URL nem tartalmazza a Go Curriculum médiát, mert ahhoz az egyháza G
 
 - Kezelje a digitális kijelzést tápláló terveket a [Tervek](./plans.md) oldalon
 - Ütemezzen tartalmat a [Lessons.church](./scheduling-lessons.md) segítségével
-- Ütemezze a FreePlay TV-ket a [Ütemezett mód](../../freeplay/scheduled-mode/) segítségével
+- Ütemezze a FreePlay TV-ket a [Ütemezett mód](../../freeplay/scheduled-mode/index.md) segítségével

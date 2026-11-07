@@ -1,5 +1,6 @@
 ---
 title: "Pagsusuri ng Iyong Household"
+description: "Suriin ang household sa B1 Checkin pagkatapos pumili ng tao, magtakda ng grupo kada oras ng serbisyo, at markahan ang bisita o boluntaryo bago mag-check in."
 ---
 
 # Pagsusuri ng Iyong Household
@@ -13,8 +14,8 @@ Pagkatapos mong pumili ng tao mula sa mga resulta ng paghahanap, ilo-load ng app
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Pumili ng serbisyo](./selecting-service) mula sa services screen
-- [Hanapin ang miyembro](./looking-up-members) at piliin siya mula sa mga resulta ng paghahanap
+- [Pumili ng serbisyo](./selecting-service.md) mula sa services screen
+- [Hanapin ang miyembro](./looking-up-members.md) at piliin siya mula sa mga resulta ng paghahanap
 
 </div>
 
@@ -35,9 +36,9 @@ I-tap ang card ng miyembro para buksan ito. Kapag nakabukas, makikita mo ang isa
 - Ang **mga grupong inaalok** sa service time na iyon, nakalista sa ilalim ng pangalan (halimbawa, "Nursery, Preschool, Adult Bible Class"), para makita mo kung aling mga klase ang available bago ka pumili
 - Isang **button** na nagpapakita ng kasalukuyang nakatalagang grupo, o "Select Group" kung wala pang naitalagang grupo
 
-Kung may [check-in schedule](../../b1-admin/attendance/setup#setting-a-check-in-schedule) ang service time at sarado ang window nito sa ngayon, ang row ay magpapakita ng **Closed** sa halip na button -- kasama ang susunod na oras ng pagbubukas kapag may ganoon, gaya ng **Closed · opens Sun 9:30 AM**. Kung naka-check in na ang tao sa service time na iyon, ipinapakita ng row ang kanyang grupo na may check mark (halimbawa, **Kids Room 1 · Checked in**), para malaman mo kung nasaan siya kahit sarado na ang window.
+Kung may [check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) ang service time at sarado ang window nito sa ngayon, ang row ay magpapakita ng **Closed** sa halip na button -- kasama ang susunod na oras ng pagbubukas kapag may ganoon, gaya ng **Closed · opens Sun 9:30 AM**. Kung naka-check in na ang tao sa service time na iyon, ipinapakita ng row ang kanyang grupo na may check mark (halimbawa, **Kids Room 1 · Checked in**), para malaman mo kung nasaan siya kahit sarado na ang window.
 
-I-tap ang group button para pumunta sa [group selection screen](./group-assignment) kung saan maaari mong piliin o palitan ang grupo ng taong iyon para sa service time na iyon.
+I-tap ang group button para pumunta sa [group selection screen](./group-assignment.md) kung saan maaari mong piliin o palitan ang grupo ng taong iyon para sa service time na iyon.
 
 Ipinapakita rin ng pinalawak na card ang mga chip na **Member**, **Guest**, at **Volunteer**. I-tap ang isa para itakda kung paano nagche-check in ang taong ito -- ang Member ang default. Mahalaga ang uri para sa mga kuwarto ng mga bata: binibilang ang mga volunteer sa volunteer-to-child ratio ng kuwarto, at binibilang naman ang mga guest sa anumang guest capacity na itinakda ng iyong simbahan.
 
@@ -51,9 +52,9 @@ Hindi mo kailangang bigyan ng grupo ang bawat miyembro ng pamilya. Maaaring wala
 
 Mula sa household review screen, may tatlong opsyon ka:
 
-- **Buksan ang isang miyembro** at i-tap ang service time button para [magtalaga o magpalit ng grupo](./group-assignment).
-- **I-tap ang Add Guest button** sa ilalim ng listahan ng miyembro para [magdagdag ng bisita](./adding-guests) sa iyong household.
-- **I-tap ang Check-in button** sa ibaba ng screen para [tapusin ang check-in](./completing-checkin) para sa lahat ng nasa household.
+- **Buksan ang isang miyembro** at i-tap ang service time button para [magtalaga o magpalit ng grupo](./group-assignment.md).
+- **I-tap ang Add Guest button** sa ilalim ng listahan ng miyembro para [magdagdag ng bisita](./adding-guests.md) sa iyong household.
+- **I-tap ang Check-in button** sa ibaba ng screen para [tapusin ang check-in](./completing-checkin.md) para sa lahat ng nasa household.
 
 :::info
 Awtomatikong na-pre-load ang anumang pagtatalaga ng grupo mula sa nakaraang check-in sa parehong serbisyo. Kung palagi nang dumadalo sa parehong grupo ang iyong mga anak tuwing linggo, maaaring wala kang kailangang palitan -- suriin lamang at mag-check in.
@@ -61,6 +62,6 @@ Awtomatikong na-pre-load ang anumang pagtatalaga ng grupo mula sa nakaraang chec
 
 ## Mga Susunod na Hakbang
 
-- [Magtalaga ng grupo](./group-assignment) sa mga miyembro ng pamilyang kailangang mag-check in sa isang partikular na klase o programa.
-- [Magdagdag ng bisita](./adding-guests) kung may kasama ang iyong pamilyang bisita.
-- [Tapusin ang check-in](./completing-checkin) kapag tama na ang lahat ng pagtatalaga.
+- [Magtalaga ng grupo](./group-assignment.md) sa mga miyembro ng pamilyang kailangang mag-check in sa isang partikular na klase o programa.
+- [Magdagdag ng bisita](./adding-guests.md) kung may kasama ang iyong pamilyang bisita.
+- [Tapusin ang check-in](./completing-checkin.md) kapag tama na ang lahat ng pagtatalaga.

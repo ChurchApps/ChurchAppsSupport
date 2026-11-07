@@ -1,12 +1,13 @@
 ---
 title: "Înregistrări la evenimente"
+description: "Cum funcționează înscrierile la evenimente în B1 Admin și B1App: tipurile de participanți, suplimentele plătite, codurile de reducere, plățile prin gateway-ul de donații și promovarea din lista de așteptare."
 ---
 
 # Înregistrări la evenimente
 
 <div class="article-intro">
 
-Înregistrarea nativă la evenimente se află în modulul content și, de la valul de înregistrări cu plată, are un model comercial complet: tipuri de participanți cu preț, opțiuni suplimentare cu preț, coduri de reducere, plăți prin gateway-ul de donații existent al bisericii și o listă de așteptare bazată pe stări. Fluxul de bani reutilizează intenționat stiva de donații. Controllerul de înregistrare taxează prin aceeași abstracție `GatewayService` / `IGatewayProvider` documentată în [Donații](./giving), astfel încât modulul content nu conține date de card și nici cunoștințe despre SDK-ul gateway-ului. Această pagină descrie modelul de date, regulile de preț și capacitate, precum și fluxurile de înregistrare, plată și listă de așteptare.
+Înregistrarea nativă la evenimente se află în modulul content și, de la valul de înregistrări cu plată, are un model comercial complet: tipuri de participanți cu preț, opțiuni suplimentare cu preț, coduri de reducere, plăți prin gateway-ul de donații existent al bisericii și o listă de așteptare bazată pe stări. Fluxul de bani reutilizează intenționat stiva de donații. Controllerul de înregistrare taxează prin aceeași abstracție `GatewayService` / `IGatewayProvider` documentată în [Donații](./giving.md), astfel încât modulul content nu conține date de card și nici cunoștințe despre SDK-ul gateway-ului. Această pagină descrie modelul de date, regulile de preț și capacitate, precum și fluxurile de înregistrare, plată și listă de așteptare.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenizarea are loc în browser exact ca la donații (vezi [Donații](./giving)). Asistentul reutilizează registrul de provideri de plată apphelper, astfel încât membrii autentificați pot plăti cu carduri salvate, iar oaspeții tokenizează un card nou. Controllerul reproduce particularitățile providerilor din `DonateController`: id-urile metodei de plată `pm-{id}` pentru Kingdom Funding și răspunsurile SCA `requires_action` de la Stripe, care sunt returnate clientului fără să înregistreze o plată. O taxare reușită scrie un rând în `registrationPayments`, actualizează `amountPaid` și confirmă înregistrarea. **Rambursările nu sunt implementate.** O înregistrare plătită și anulată își păstrează rândurile de plată, iar orice rambursare se face separat, în panoul gateway-ului.
+Tokenizarea are loc în browser exact ca la donații (vezi [Donații](./giving.md)). Asistentul reutilizează registrul de provideri de plată apphelper, astfel încât membrii autentificați pot plăti cu carduri salvate, iar oaspeții tokenizează un card nou. Controllerul reproduce particularitățile providerilor din `DonateController`: id-urile metodei de plată `pm-{id}` pentru Kingdom Funding și răspunsurile SCA `requires_action` de la Stripe, care sunt returnate clientului fără să înregistreze o plată. O taxare reușită scrie un rând în `registrationPayments`, actualizează `amountPaid` și confirmă înregistrarea. **Rambursările nu sunt implementate.** O înregistrare plătită și anulată își păstrează rândurile de plată, iar orice rambursare se face separat, în panoul gateway-ului.
 
 Ambele puncte de intrare trec prin același cod: `register` (plată la înscriere) și `pay` (plata soldului sau finalizarea din lista de așteptare).
 
@@ -147,7 +148,7 @@ Consultările între module (rezolvarea sau crearea persoanei-oaspete, încărca
 
 ## Pagini conexe
 
-- [Donații](./giving): abstracția gateway-ului, registrul de provideri și modelul de tokenizare pe care le reutilizează această funcție
-- [Endpoint-uri Content](../api/endpoints/content): suprafața REST a modulului content
-- [Webhook-uri](../api/webhooks): evenimentul `registration.created`
-- [Structura modulului](../api/module-structure): modul în care este organizat modulul content pe server
+- [Donații](./giving.md): abstracția gateway-ului, registrul de provideri și modelul de tokenizare pe care le reutilizează această funcție
+- [Endpoint-uri Content](../api/endpoints/content.md): suprafața REST a modulului content
+- [Webhook-uri](../api/webhooks.md): evenimentul `registration.created`
+- [Structura modulului](../api/module-structure.md): modul în care este organizat modulul content pe server

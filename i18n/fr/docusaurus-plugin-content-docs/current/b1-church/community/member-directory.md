@@ -1,5 +1,7 @@
 ---
-title: "Annuaire des membres"
+title: "Annuaire des membres dans le portail B1.church"
+sidebar_label: "Annuaire des membres"
+description: "Recherchez les membres dans l'annuaire B1.church, consultez profils et membres du foyer, et qui peut accéder à l'annuaire."
 ---
 
 # Annuaire des membres

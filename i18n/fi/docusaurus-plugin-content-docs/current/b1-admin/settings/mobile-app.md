@@ -1,5 +1,6 @@
 ---
 title: "Mobiilisovelluksen asetukset"
+description: "Määritä B1.church-jäsensovelluksen navigointivälilehdet, aloitusnäytön laatat, kirjautumiskehote ja jäsenluettelon yksityisyysasetukset B1 Adminissa."
 ---
 
 # Mobiilisovelluksen asetukset

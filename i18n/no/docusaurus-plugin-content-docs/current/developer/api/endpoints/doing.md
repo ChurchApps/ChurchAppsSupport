@@ -1,5 +1,6 @@
 ---
 title: "Doing-endepunkter"
+description: "Endepunktreferanse for Doing-API-et bak gudstjenesteplaner, frivillige oppdrag, oppgaver og automatiseringer i B1 Admin, med stier og tillatelser."
 ---
 
 # Doing-endepunkter
@@ -278,6 +279,6 @@ Videresender forespørsler til eksterne innholdsleverandører (f.eks. ProPresent
 
 ## Relaterte sider
 
-- [Medlemskapsendepunkter](./membership) — Personer, grupper, roller og tillatelser
-- [Oppmøteendepunkter](./attendance) — Sporing av gudstjenester og besøk
-- [Modulstruktur](../module-structure) — Mønstre for kodeorganisering
+- [Medlemskapsendepunkter](./membership.md) — Personer, grupper, roller og tillatelser
+- [Oppmøteendepunkter](./attendance.md) — Sporing av gudstjenester og besøk
+- [Modulstruktur](../module-structure.md) — Mønstre for kodeorganisering

@@ -1,21 +1,22 @@
 ---
 title: "Mementouri pentru evenimente"
+description: "Configurați în B1 Admin mementouri pentru evenimente prin notificare push, e-mail și SMS, alegând momentul, destinatarii și un mesaj personalizat."
 ---
 
 # Mementouri pentru evenimente
 
 <div class="article-intro">
 
-Mementourile pentru evenimente notifică automat persoanele potrivite înainte de desfășurarea unui eveniment -- de exemplu, „Nu rata! Atelierul de sănătate începe mâine la ora 9:00.” Configurezi mementoul o singură dată, pe eveniment, iar B1 îl trimite la timp prin notificări push, prin e-mail și, dacă biserica ta are configurat serviciul de mesaje text, prin mesaje text. Membrii pot controla ce mementouri primesc din propriile [Preferințe de notificare](../../b1-church/getting-started/notification-preferences).
+Mementourile pentru evenimente notifică automat persoanele potrivite înainte de desfășurarea unui eveniment -- de exemplu, „Nu rata! Atelierul de sănătate începe mâine la ora 9:00.” Configurezi mementoul o singură dată, pe eveniment, iar B1 îl trimite la timp prin notificări push, prin e-mail și, dacă biserica ta are configurat serviciul de mesaje text, prin mesaje text. Membrii pot controla ce mementouri primesc din propriile [Preferințe de notificare](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Creează evenimentul despre care vrei să îi anunți (vezi [Crearea calendarelor](creating-calendars))
-- Pentru a ajunge la participanții înscriși, [activează înscrierea](creating-calendars) la eveniment
-- Pentru a ajunge la un întreg grup, asigură-te că evenimentul aparține unui [grup](../groups/creating-groups) care are membri
+- Creează evenimentul despre care vrei să îi anunți (vezi [Crearea calendarelor](./creating-calendars.md))
+- Pentru a ajunge la participanții înscriși, [activează înscrierea](./creating-calendars.md) la eveniment
+- Pentru a ajunge la un întreg grup, asigură-te că evenimentul aparține unui [grup](../groups/creating-groups.md) care are membri
 
 </div>
 
@@ -57,21 +58,21 @@ Oaspeții adăugați doar cu numele (fără un profil de persoană asociat) nu p
 - Evenimentele recurente sunt gestionate automat: fiecare apariție viitoare primește propriul memento.
 
 :::tip
-Mementourile se trimit **mai întâi prin push, cu e-mail ca alternativă**. Dacă un membru are notificările push activate, va primi o notificare push; dacă nu, va primi în schimb un e-mail. Membrii aleg pentru fiecare tip de notificare ce canale doresc, în [Preferințele lor de notificare](../../b1-church/getting-started/notification-preferences).
+Mementourile se trimit **mai întâi prin push, cu e-mail ca alternativă**. Dacă un membru are notificările push activate, va primi o notificare push; dacă nu, va primi în schimb un e-mail. Membrii aleg pentru fiecare tip de notificare ce canale doresc, în [Preferințele lor de notificare](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Mementouri prin mesaje text
 
 Canalul **Mesaj text** apare doar când biserica ta are conectat un furnizor de mesaje text. Mesajele text se trimit prin furnizorul de mesaje text al bisericii tale, iar fiecare mesaj poate costa biserica. Ele se trimit în plus față de orice memento push sau e-mail și doar către persoanele care:
 
-- Au activat **Mesaje text** în [Preferințele lor de notificare](../../b1-church/getting-started/notification-preferences), și
+- Au activat **Mesaje text** în [Preferințele lor de notificare](../../b1-church/getting-started/notification-preferences.md), și
 - Au un număr de telefon mobil în profil.
 
 Fiecare mesaj începe cu numele bisericii tale, se păstrează într-un singur mesaj text și se termină cu „Răspunde STOP pentru a te dezabona.” Oricine răspunde STOP nu mai primește mesaje text de la biserica ta. Pentru ca răspunsurile STOP să ajungă la B1, lipește **adresa URL a webhook-ului pentru mesaje primite (STOP)** din [setările pentru mesaje text](../settings/church-settings.md#texting) în webhook-ul pentru mesaje primite al furnizorului tău.
 
 ## Ce pot controla membrii
 
-Mementourile respectă întotdeauna [Preferințele de notificare](../../b1-church/getting-started/notification-preferences) ale fiecărui membru. Un membru poate:
+Mementourile respectă întotdeauna [Preferințele de notificare](../../b1-church/getting-started/notification-preferences.md) ale fiecărui membru. Un membru poate:
 
 - Dezactiva **Mementourile pentru evenimente** pentru push, e-mail sau mesaje text, păstrând celelalte notificări active.
 - Activa sau dezactiva mementourile prin mesaje text cu **Mesaje text**.
@@ -81,10 +82,10 @@ Nu poți anula decizia unui membru de a se retrage din mementourile pentru eveni
 
 ## Mementouri pentru servire
 
-Voluntarii programați într-un plan primesc un **memento de servire** separat, cu detaliile planului și, dacă nu au răspuns încă, butoanele **Accept / Refuz** direct în e-mail. Aceste mementouri se configurează la tipul de plan, nu la un eveniment din calendar, și pot fi trimise și prin mesaj text -- vezi [Mementouri pentru voluntari](../serving/plans#volunteer-reminders) și [Voluntarii de duminică](../guides/sunday-volunteers) pentru detalii despre programarea voluntarilor și despre mementouri.
+Voluntarii programați într-un plan primesc un **memento de servire** separat, cu detaliile planului și, dacă nu au răspuns încă, butoanele **Accept / Refuz** direct în e-mail. Aceste mementouri se configurează la tipul de plan, nu la un eveniment din calendar, și pot fi trimise și prin mesaj text -- vezi [Mementouri pentru voluntari](../serving/plans.md#volunteer-reminders) și [Voluntarii de duminică](../guides/sunday-volunteers.md) pentru detalii despre programarea voluntarilor și despre mementouri.
 
 ## Pașii următori
 
-- [Preferințele de notificare](../../b1-church/getting-started/notification-preferences) -- Ce pot controla membrii
-- [Ghidul înscrierii la evenimente](../guides/event-registration) -- Configurează înscrierea, ca mementourile să poată ajunge la participanți
-- [Crearea calendarelor](creating-calendars) -- Revino la configurarea calendarului
+- [Preferințele de notificare](../../b1-church/getting-started/notification-preferences.md) -- Ce pot controla membrii
+- [Ghidul înscrierii la evenimente](../guides/event-registration.md) -- Configurează înscrierea, ca mementourile să poată ajunge la participanți
+- [Crearea calendarelor](./creating-calendars.md) -- Revino la configurarea calendarului

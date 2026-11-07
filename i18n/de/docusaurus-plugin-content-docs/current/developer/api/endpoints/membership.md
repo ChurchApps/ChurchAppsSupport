@@ -1,5 +1,6 @@
 ---
 title: "Membership-Endpunkte"
+description: "Endpunkt-Referenz der ChurchApps-Membership-API: Personen, Haushalte, Gruppen, Rollen, Formulare und Einstellungen mit Auth- und Berechtigungsregeln."
 ---
 
 # Membership-Endpunkte
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Basispfad: `/membership/users`
 
-Informationen zu den Endpunkten für Anmeldung, Registrierung und Passwortverwaltung finden Sie unter [Authentifizierung und Berechtigungen](./authentication).
+Informationen zu den Endpunkten für Anmeldung, Registrierung und Passwortverwaltung finden Sie unter [Authentifizierung und Berechtigungen](./authentication.md).
 
 | Methode | Pfad | Auth | Berechtigung | Beschreibung |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Basispfad: `/membership/clientErrors`
 
 ## Verwandte Seiten
 
-- [Authentifizierung und Berechtigungen](./authentication) — Anmeldeablauf, JWT, OAuth, Berechtigungsmodell
-- [Attendance-Endpunkte](./attendance) — Erfassung von Gottesdiensten und Besuchen
-- [Modulstruktur](../module-structure) — Muster der Code-Organisation
+- [Authentifizierung und Berechtigungen](./authentication.md) — Anmeldeablauf, JWT, OAuth, Berechtigungsmodell
+- [Attendance-Endpunkte](./attendance.md) — Erfassung von Gottesdiensten und Besuchen
+- [Modulstruktur](../module-structure.md) — Muster der Code-Organisation

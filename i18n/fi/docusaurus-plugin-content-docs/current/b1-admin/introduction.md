@@ -1,5 +1,6 @@
 ---
 title: Johdanto B1.churchiin
+description: "Opastaa kirjautumaan B1 Adminiin, löytämään Kojelaudan ja Pikahyppy-valikon sekä määrittämään seurakunnan tiedot ennen muiden työkalujen tutkimista."
 ---
 
 # Tervetuloa B1.church Adminiin!
@@ -34,7 +35,7 @@ Lisätukea saat lähettämällä sähköpostia osoitteeseen [support@churchapps.
 10. Voit nyt siirtyä B1.churchiin **jäsenportaalin** tai **hallintaportaalin** kautta. Jäsenportaalin avulla näet, miltä B1.church näyttää jäsenillesi, voit tarkastella ryhmiäsi ja hallita henkilökohtaisia lahjoituksiasi.
 
 :::tip
-Aloita [Asetukset](./settings/)-sivulta, jossa voit määrittää seurakuntasi nimen, brändin ja tiimin käyttöoikeudet. Tämä varmistaa, että kaikki muu, mitä määrität, näkyy oikein.
+Aloita [Asetukset](./settings/index.md)-sivulta, jossa voit määrittää seurakuntasi nimen, brändin ja tiimin käyttöoikeudet. Tämä varmistaa, että kaikki muu, mitä määrität, näkyy oikein.
 :::
 
 <a id="finding-anything-quickly-with-the-command-palette"></a>
@@ -81,9 +82,9 @@ Haku on usein nopein tapa päästä sivulle -- kirjoita osa sivun nimestä (kute
 
 Katsottuasi tämän johdannon tutustu näihin keskeisiin ominaisuuksiin:
 
-- [Henkilöiden lisääminen](./people/adding-people) -- Opi lisäämään jäseniä tietokantaan
-- [Ryhmät](./groups/) -- Luo ja hallitse seurakunnan ryhmiä
-- [Palvelutehtävien suunnitelmat](./serving/plans) -- Järjestä seurakuntasi palvelutyö
-- [Läsnäolo](./attendance/) -- Seuraa läsnäoloa ja sisäänkirjautumista
-- [Verkkosivut](./website/) -- Rakenna ja mukauta seurakuntasi verkkosivut
-- [Asetukset](./settings/) -- Määritä seurakuntasi tiedot ja käyttöoikeudet
+- [Henkilöiden lisääminen](./people/adding-people.md) -- Opi lisäämään jäseniä tietokantaan
+- [Ryhmät](./groups/index.md) -- Luo ja hallitse seurakunnan ryhmiä
+- [Palvelutehtävien suunnitelmat](./serving/plans.md) -- Järjestä seurakuntasi palvelutyö
+- [Läsnäolo](./attendance/index.md) -- Seuraa läsnäoloa ja sisäänkirjautumista
+- [Verkkosivut](./website/index.md) -- Rakenna ja mukauta seurakuntasi verkkosivut
+- [Asetukset](./settings/index.md) -- Määritä seurakuntasi tiedot ja käyttöoikeudet

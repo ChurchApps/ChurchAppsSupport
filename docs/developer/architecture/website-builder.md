@@ -1,5 +1,6 @@
 ---
 title: "Website Builder Architecture"
+description: "Developer map of the B1 website builder: content tree, shared element catalog, render pipeline, and AI page generation in B1 Admin and B1.church."
 ---
 
 # Website Builder Architecture
@@ -82,7 +83,7 @@ Renderers live in `Packages/apphelper/src/website/components/elementTypes/`, one
 
 ### Editor forms (B1Admin)
 
-The editor's per-type settings forms live in `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` dispatches to a dedicated component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) or an inline field builder per type. The AI-facing mirror of this catalog is the API's MCP `describe_page_builder` tool (see [MCP Server](../api/mcp)).
+The editor's per-type settings forms live in `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` dispatches to a dedicated component (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) or an inline field builder per type. The AI-facing mirror of this catalog is the API's MCP `describe_page_builder` tool (see [MCP Server](../api/mcp.md)).
 
 The editor preview mounts the same `Theme` as the live site, which sets the `--headingFont` / `--bodyFont` CSS variables from the church's global styles. B1App applies those variables through `pages.css`, which B1Admin can't import, so `ContentEditor.tsx` injects `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) to apply them to `.page` body text and `h1`–`h6`. Without it, the preview showed headings in the admin font.
 
@@ -151,7 +152,7 @@ All of this is B1App-side rendering over ContentApi data — the API stores, the
 |---------|--------------|
 | Meta descriptions | `pages.metaDescription` (≤300 chars) flows through `MetaHelper.getMetaData()` into the Next.js `Metadata` (description + Open Graph) on every builder-rendered route. B1Admin's page settings include an AI "Generate" button (see below) |
 | Redirects | Per-church `redirects` rows managed at `/content/redirects` (`content.edit`, 200-row cap, normalized paths). On a would-be 404, B1App's page route resolves the path against `GET /content/redirects/public/:churchId` and issues an HTTP 308 via Next's `permanentRedirect`; unmatched paths fall through to `notFound()` |
-| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error. Unknown `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, and `/volunteer/[planId]` paths return a real 404, as do unknown subdomains and malformed page slugs (see [Website Routing & Multi-Site](./websites)) |
+| Branded 404 | `not-found.tsx` renders `BrandedNotFound` with the church's logo, name, and theme instead of a generic error. Unknown `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]`, and `/volunteer/[planId]` paths return a real 404, as do unknown subdomains and malformed page slugs (see [Website Routing & Multi-Site](./websites.md)) |
 | Structured data | `BlogPosting` JSON-LD on blog posts; `VideoObject` on the per-sermon pages (`/{sdSlug}/sermons/[sermonId]`) and on pages containing a `sermons` element; `Event` from calendar/event elements on builder pages and on each `/{sdSlug}/events/[eventId]` page (next occurrence, with the event photo as `image`); schema.org `Event` from the `serviceTimes` element |
 | Sermon pages | Every public sermon gets a crawlable page at `/sermons/[sermonId]` with full metadata — sermons are no longer locked inside the client-side browser element |
 | Analytics | The public settings key `ga4MeasurementId` (managed next to redirects in B1Admin) injects a per-church GA4 gtag via `next/script`. The B1 app (`/{sdSlug}/mobile`) also sends its page views to that ID, alongside ChurchApps' own tag, when it is a valid `G-` ID (GTM container IDs stay website-only). Each `gtag('config')` carries a `display_mode` of `installed` or `browser`, based on `navigator.standalone` or the `(display-mode: standalone)` media query (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ The `SectionToolbar` rewrite button and the pages-list "Generate Site" button in
 | `POST /website/generateAltText` | Vision call over up to 20 image URLs; returns concise alt text (≤125 chars, "photo of" prefixes stripped) |
 | `POST /website/generateMetaDescription` | One SEO meta description (≤155 chars) from the page's text content — wired to the Generate button on B1Admin's page settings |
 
-Prompts for these endpoints are markdown files under `AskApi/config/instructions/`, including the element catalog the model generates from. Two design points keep the catalog honest: the client passes `availableElementTypes` on every request (the prompt may only use types from that list — the server never hardcodes the full set), and the API's MCP `describe_page_builder` tool carries the same guide for AI agents working through [MCP](../api/mcp). Models are Anthropic Claude via OpenRouter — 3.5 Haiku for section content (latency), 3.5 Sonnet for outlines, site plans, and vision — with an OpenAI fallback when no OpenRouter key is configured.
+Prompts for these endpoints are markdown files under `AskApi/config/instructions/`, including the element catalog the model generates from. Two design points keep the catalog honest: the client passes `availableElementTypes` on every request (the prompt may only use types from that list — the server never hardcodes the full set), and the API's MCP `describe_page_builder` tool carries the same guide for AI agents working through [MCP](../api/mcp.md). Models are Anthropic Claude via OpenRouter — 3.5 Haiku for section content (latency), 3.5 Sonnet for outlines, site plans, and vision — with an OpenAI fallback when no OpenRouter key is configured.
 
 ## Conversational forms
 
@@ -224,8 +225,8 @@ Controllers that bump: pages (save, delete, duplicate, publish, discard, unpubli
 
 ## Related Pages
 
-- [Website Routing & Multi-Site](./websites) — how a request resolves to a church/site and how custom domains route
-- [Content Endpoints](../api/endpoints/content) — full REST surface for pages, sections, elements, blocks, posts, redirects, and settings
-- [AppHelper](../shared-libraries/app-helper) — the npm package that ships the renderers, registry, dividers, and widgets
-- [MCP Server](../api/mcp) — including the `describe_page_builder` guide tool
+- [Website Routing & Multi-Site](./websites.md) — how a request resolves to a church/site and how custom domains route
+- [Content Endpoints](../api/endpoints/content.md) — full REST surface for pages, sections, elements, blocks, posts, redirects, and settings
+- [AppHelper](../shared-libraries/app-helper.md) — the npm package that ships the renderers, registry, dividers, and widgets
+- [MCP Server](../api/mcp.md) — including the `describe_page_builder` guide tool
 - [Page Editor (end-user)](/docs/b1-admin/website/page-editor) — the staff-facing editor documentation

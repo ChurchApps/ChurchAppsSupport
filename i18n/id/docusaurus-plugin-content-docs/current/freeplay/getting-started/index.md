@@ -1,5 +1,7 @@
 ---
-title: "Memulai"
+title: "Memulai dengan Aplikasi FreePlay TV"
+sidebar_label: "Memulai"
+description: "Siapkan FreePlay di Android TV, Fire TV, atau Apple TV: pasang aplikasi, buka pertama kali, dan pelajari kontrol remote serta sidebar."
 ---
 
 # Memulai dengan FreePlay
@@ -42,7 +44,7 @@ FreePlay berjalan di Fire TV (termasuk stik Vega OS yang lebih baru), kotak Andr
 
 Saat Anda membuka FreePlay untuk pertama kali, Anda akan melihat layar pembuka beranimasi dengan logo FreePlay. Aplikasi memeriksa penyedia konten yang pernah terhubung sebelumnya. Jika Anda sudah pernah menghubungkan penyedia, aplikasi akan langsung membawa Anda ke penjelajah konten penyedia tersebut. Jika tidak, aplikasi akan membuka layar **Penyedia Konten**, tempat Anda dapat terhubung ke sumber konten pertama Anda.
 
-Jika TV dipasangkan dengan kalender dalam [Mode Terjadwal](../scheduled-mode/), FreePlay melewati semua langkah ini dan langsung membuka pemutar terjadwal.
+Jika TV dipasangkan dengan kalender dalam [Mode Terjadwal](../scheduled-mode/index.md), FreePlay melewati semua langkah ini dan langsung membuka pemutar terjadwal.
 
 ## Menavigasi dengan Remote TV Anda
 
@@ -62,13 +64,13 @@ Bilah sisi menyusut menjadi jalur sempit berisi ikon saat Anda menelusuri konten
 
 Bilah sisi memuat, dari atas ke bawah:
 
-- **Rencana Hari Ini** -- Ditampilkan saat TV dipasangkan dengan sebuah rencana. Lihat [Mode Rencana](../plan-mode/)
-- **Pengumuman** -- Ditampilkan setelah Anda memilih folder pengumuman. Lihat [Pengumuman](../content-providers/announcements)
-- **Telusuri** -- Setiap penyedia konten yang terhubung dan dapat Anda telusuri. Lihat [Menelusuri dan Mengunduh Konten](../content-providers/browsing-content)
-- **Pengaturan** -- Di bagian bawah bilah sisi. Membuka **Pasangkan ke kalender** (memasangkan TV ini ke kalender atau rencana -- lihat [Memilih Mode Pemasangan](./pairing-modes)), **Unduhan** (memutar atau menghapus konten yang disimpan di perangkat ini), dan **Penyedia** (menghubungkan penyedia konten dan memilih folder pengumuman)
+- **Rencana Hari Ini** -- Ditampilkan saat TV dipasangkan dengan sebuah rencana. Lihat [Mode Rencana](../plan-mode/index.md)
+- **Pengumuman** -- Ditampilkan setelah Anda memilih folder pengumuman. Lihat [Pengumuman](../content-providers/announcements.md)
+- **Telusuri** -- Setiap penyedia konten yang terhubung dan dapat Anda telusuri. Lihat [Menelusuri dan Mengunduh Konten](../content-providers/browsing-content.md)
+- **Pengaturan** -- Di bagian bawah bilah sisi. Membuka **Pasangkan ke kalender** (memasangkan TV ini ke kalender atau rencana -- lihat [Memilih Mode Pemasangan](./pairing-modes.md)), **Unduhan** (memutar atau menghapus konten yang disimpan di perangkat ini), dan **Penyedia** (menghubungkan penyedia konten dan memilih folder pengumuman)
 
 ## Langkah Selanjutnya
 
-- **[Memilih Mode Pemasangan](./pairing-modes)** - Pelajari berbagai cara menghubungkan TV Anda
-- **[Mode Terjadwal](../scheduled-mode/)** - Jadwalkan TV Anda di kalender dengan FreePlay Admin
-- **[Penyedia Konten](../content-providers/)** - Terhubung ke Lessons.church, Bible Project, dan lainnya
+- **[Memilih Mode Pemasangan](./pairing-modes.md)** - Pelajari berbagai cara menghubungkan TV Anda
+- **[Mode Terjadwal](../scheduled-mode/index.md)** - Jadwalkan TV Anda di kalender dengan FreePlay Admin
+- **[Penyedia Konten](../content-providers/index.md)** - Terhubung ke Lessons.church, Bible Project, dan lainnya

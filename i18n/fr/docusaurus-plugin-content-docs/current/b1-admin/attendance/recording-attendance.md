@@ -1,5 +1,6 @@
 ---
 title: "Enregistrer les présences"
+description: "Enregistrez la présence à chaque réunion de groupe dans B1 Admin : créez une séance, indiquez les participants, enregistrez des notes et imprimez les feuilles d'appel ou exportez-les vers un tableur."
 ---
 
 # Enregistrer les présences

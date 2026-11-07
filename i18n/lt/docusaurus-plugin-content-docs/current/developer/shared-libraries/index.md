@@ -1,5 +1,6 @@
 ---
 title: "Bendrinamos bibliotekos"
+description: "ChurchApps npm paketų, bendrų B1 Admin, B1.church ir API, dokumentacija, Packages darbo srities sąranka ir leidimas su changesets."
 ---
 
 # Bendrinamos bibliotekos
@@ -14,9 +15,9 @@ ChurchApps bendrinamas kodas skelbiamas npm registre `@churchapps/*` vardų erdv
 
 | Paketas | Aprašymas | Naudoja |
 |---------|-----------|---------|
-| [`@churchapps/helpers`](./helpers) | Pagrindinis sluoksnis: nuo karkaso nepriklausomos pagalbinės funkcijos ir bendros TypeScript sąsajos, sudarančios tarpprograminį duomenų kontraktą | Visi projektai |
-| [`@churchapps/apihelper`](./api-helper) | Serverio pusės Express pagalbinės priemonės: autentifikavimas, bazinės valdiklių klasės, prieiga prie duomenų bazės, AWS ir el. pašto integracijos | Visos API |
-| [`@churchapps/apphelper`](./app-helper) | Bendri React komponentai ir funkciniai moduliai (prisijungimas, aukojimai, formos, Markdown, svetainė) | Visos žiniatinklio programos |
+| [`@churchapps/helpers`](./helpers.md) | Pagrindinis sluoksnis: nuo karkaso nepriklausomos pagalbinės funkcijos ir bendros TypeScript sąsajos, sudarančios tarpprograminį duomenų kontraktą | Visi projektai |
+| [`@churchapps/apihelper`](./api-helper.md) | Serverio pusės Express pagalbinės priemonės: autentifikavimas, bazinės valdiklių klasės, prieiga prie duomenų bazės, AWS ir el. pašto integracijos | Visos API |
+| [`@churchapps/apphelper`](./app-helper.md) | Bendri React komponentai ir funkciniai moduliai (prisijungimas, aukojimai, formos, Markdown, svetainė) | Visos žiniatinklio programos |
 | `@churchapps/content-providers` | Abstrakcija virš trečiųjų šalių turinio teikėjų (Lessons.church, Planning Center, Dropbox ir kiti) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Įrankių rinkinys B1.church integracijoms kurti: webhook patikra, tipizuotas REST klientas, OAuth pagalbinės funkcijos | Išorinių integracijų kūrėjai |
 | `@churchapps/texting` | SMS teikėjų abstrakcija (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

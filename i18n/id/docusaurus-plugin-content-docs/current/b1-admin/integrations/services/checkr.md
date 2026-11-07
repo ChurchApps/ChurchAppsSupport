@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Hubungkan pendaftaran relawan B1 Admin ke pemeriksaan latar belakang Checkr menggunakan Make.com, dengan peringatan status laporan opsional untuk koordinator pelayanan aman Anda."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Jika gereja Anda menggunakan keanggotaan grup B1 untuk membatasi akses (misalnya
 
 ## Lihat Juga
 
-- [Make (ikhtisar)](../make): sisi B1 dari setiap skenario Make
-- [Pesan Seluler](./mobile-message): untuk penyedia SMS tanpa aplikasi Zapier, dengan pola Webhooks/HTTP yang sama seperti integrasi Checkr di Make
+- [Make (ikhtisar)](../make.md): sisi B1 dari setiap skenario Make
+- [Pesan Seluler](./mobile-message.md): untuk penyedia SMS tanpa aplikasi Zapier, dengan pola Webhooks/HTTP yang sama seperti integrasi Checkr di Make
 - [Dokumentasi API Checkr](https://docs.checkr.com/)

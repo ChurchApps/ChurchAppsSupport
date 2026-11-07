@@ -1,5 +1,6 @@
 ---
 title: "Xác thực & Phân quyền"
+description: "Tài liệu API xác thực của ChurchApps: đăng nhập JWT, đăng nhập hai lớp, luồng OAuth 2.0 và mô hình phân quyền cho nhà phát triển tích hợp."
 ---
 
 # Xác thực & Phân quyền
@@ -244,7 +245,7 @@ Dành cho thiết bị không có trình duyệt (ứng dụng TV, kiosk):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Lấy client theo client ID (đã ẩn secret) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Tạo mới hoặc cập nhật client |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Xóa client |
-| POST | `/membership/oauth/register` | Public | — | Đăng ký client động (RFC 7591) cho client công khai như các connector MCP. Xem [Ứng dụng đã kết nối](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | Đăng ký client động (RFC 7591) cho client công khai như các connector MCP. Xem [Ứng dụng đã kết nối](../connected-apps.md#dynamic-client-registration) |
 
 ### Endpoint phê duyệt thiết bị
 
@@ -265,5 +266,5 @@ Trong các bảng endpoint của tài liệu này, hai loại này được ký 
 
 ## Trang liên quan
 
-- [Cấu trúc mô-đun](../module-structure) — Cách controller, repository và model được tổ chức
-- [Thiết lập cục bộ](../local-setup) — Chạy API trên máy để phát triển
+- [Cấu trúc mô-đun](../module-structure.md) — Cách controller, repository và model được tổ chức
+- [Thiết lập cục bộ](../local-setup.md) — Chạy API trên máy để phát triển

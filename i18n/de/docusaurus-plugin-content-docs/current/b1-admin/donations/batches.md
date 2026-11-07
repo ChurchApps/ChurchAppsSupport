@@ -1,5 +1,6 @@
 ---
 title: "Spendenstapel"
+description: "Fassen Sie Opfer in B1 Admin zu Spendenstapeln zusammen und schließen, drucken oder exportieren Sie jeden Stapel, damit die Summen mit Ihren Bankeinzahlungen übereinstimmen."
 ---
 
 # Spendenstapel

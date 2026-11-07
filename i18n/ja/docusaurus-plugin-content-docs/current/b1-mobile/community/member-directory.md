@@ -1,5 +1,7 @@
 ---
-title: "メンバーディレクトリ"
+title: "B1 Mobile アプリのメンバーディレクトリ"
+sidebar_label: "メンバーディレクトリ"
+description: "B1 Mobile のメンバーディレクトリで教会の人を探します。五十音順に閲覧、名前で検索、プロフィールと世帯のリンクを開けます。"
 ---
 
 # メンバーディレクトリ
@@ -13,7 +15,7 @@ B1 Mobileのメンバーディレクトリでは、教会内のメンバーを�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobileをインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobileをインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
 
 </div>
 
@@ -51,5 +53,5 @@ B1 Mobileのメンバーディレクトリでは、教会内のメンバーを�
 
 ## 関連記事
 
-- [メッセージ](./messaging) -- ディレクトリで見つけた相手に非公開メッセージを送信する
+- [メッセージ](./messaging.md) -- ディレクトリで見つけた相手に非公開メッセージを送信する
 - [プライバシー設定](../profile/privacy-settings.md) -- ディレクトリで他の人に見える自分の情報を管理する

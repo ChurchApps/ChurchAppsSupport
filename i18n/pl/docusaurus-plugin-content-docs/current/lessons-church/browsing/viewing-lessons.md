@@ -1,5 +1,6 @@
 ---
 title: "Przeglądanie lekcji"
+description: "Otwieranie lekcji w Lessons.church: czytanie sekcji i akcji ról, znajdowanie pobrań i przełączanie miejsc grup wiekowych przed zajęciami."
 ---
 
 # Przeglądanie lekcji

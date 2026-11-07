@@ -1,5 +1,7 @@
 ---
-title: "Agendando Lições"
+title: "Agendamento de Lições do Lessons.church no B1 Admin"
+sidebar_label: "Agendando Lições"
+description: "Conecte o Lessons.church ao B1 Admin e agende lições, agende uma série em lote ou aplique um plano anual aos planos de culto de um ministério."
 ---
 
 # Agendando Lições do Lessons.church

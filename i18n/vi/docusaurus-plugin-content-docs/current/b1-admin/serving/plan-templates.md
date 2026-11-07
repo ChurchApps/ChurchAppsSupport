@@ -1,5 +1,6 @@
 ---
 title: "Mẫu kế hoạch"
+description: "Lưu thứ tự chương trình và vị trí phục vụ của một kế hoạch thành mẫu có thể tái sử dụng trong B1 Admin, rồi áp dụng cho các kế hoạch sau chỉ với một cú nhấp."
 ---
 
 # Mẫu kế hoạch

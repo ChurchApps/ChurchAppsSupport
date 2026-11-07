@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "将 B1 Admin 连接到 Claude，让您以日常语言询问考勤、奉献和小组情况，并可选择登录方式或权限受限的密钥。"
 ---
 
 # Claude
@@ -199,4 +200,4 @@ B1 API 在 `/mcp` 上提供单一的 MCP 端点。Claude 连接到该端点，�
 
 - [API 密钥](/docs/developer/api/api-keys) —— 完整的权限范围参考
 - [MCP 服务器（开发者参考）](/docs/developer/api/mcp) —— 协议细节和工具架构
-- [ChatGPT](./chatgpt) —— 同样的思路，适用于 OpenAI 的模型
+- [ChatGPT](./chatgpt.md) —— 同样的思路，适用于 OpenAI 的模型

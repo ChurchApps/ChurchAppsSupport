@@ -1,5 +1,6 @@
 ---
 title: "出席エンドポイント"
+description: "B1 Admin と B1 Checkin の出欠 API リファレンスです。キャンパス、礼拝、礼拝時間、セッション、訪問記録、チェックインのルール、エクスポートのエンドポイントを扱います。"
 ---
 
 # 出席エンドポイント
@@ -270,6 +271,6 @@ Authorization: Bearer <token>
 
 ## 関連ページ
 
-- [メンバーシップのエンドポイント](./membership) — 個人、グループ、役割、教会の管理
-- [認証と権限](./authentication) — ログインの流れ、JWT、権限モデル
-- [モジュール構造](../module-structure) — コード構成のパターン
+- [メンバーシップのエンドポイント](./membership.md) — 個人、グループ、役割、教会の管理
+- [認証と権限](./authentication.md) — ログインの流れ、JWT、権限モデル
+- [モジュール構造](../module-structure.md) — コード構成のパターン

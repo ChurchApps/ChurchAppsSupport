@@ -1,5 +1,7 @@
 ---
-title: "Pagtingin sa mga Plano"
+title: "Pagtingin sa Serving Plans sa B1 Mobile"
+sidebar_label: "Pagtingin sa mga Plano"
+description: "Tingnan ang paparating at nakaraang iskedyul ng paglilingkod sa B1 Mobile, basahin ang detalye at service order, at i-print para sa rehearsal."
 ---
 
 # Pagtingin sa mga Plano
@@ -13,7 +15,7 @@ Ang plans screen sa B1 Mobile ay nagbibigay sa iyo ng kumpletong larawan ng iyon
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [I-install ang B1 Mobile](../getting-started/installing) at [mag-log in](../getting-started/logging-in) sa iyong account
+- [I-install ang B1 Mobile](../getting-started/installing.md) at [mag-log in](../getting-started/logging-in.md) sa iyong account
 - Ma-assign sa kahit isang serving plan ng iyong church administrator
 
 </div>

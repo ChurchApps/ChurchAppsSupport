@@ -1,5 +1,7 @@
 ---
-title: "Zapisywanie się na wolontariat"
+title: "Zapisy na wolontariat w aplikacji B1 Mobile"
+sidebar_label: "Zapisywanie się na wolontariat"
+description: "Znajdź wolne stanowiska wolontariackie na nadchodzące nabożeństwa, zapisz się lub usuń zapis w aplikacji B1 Mobile. Opisuje terminy i limity miejsc."
 ---
 
 # Zapisywanie się na wolontariat
@@ -13,7 +15,7 @@ Przeglądaj dostępne stanowiska wolontariackie i zapisuj się na nadchodzące n
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) na swoje konto
 - Administrator Twojego kościoła musi włączyć samodzielne zapisy przynajmniej na jednym stanowisku
 
 </div>
@@ -60,5 +62,5 @@ Włącz [powiadomienia push](../community/notifications.md), aby być na bieżą
 
 ## Powiązane artykuły
 
-- [Przeglądanie planów](./viewing-plans) -- Zobacz swoje przydzielone plany i porządki nabożeństw
+- [Przeglądanie planów](./viewing-plans.md) -- Zobacz swoje przydzielone plany i porządki nabożeństw
 - [Powiadomienia](../community/notifications.md) -- Bądź na bieżąco z przydziałami do służby

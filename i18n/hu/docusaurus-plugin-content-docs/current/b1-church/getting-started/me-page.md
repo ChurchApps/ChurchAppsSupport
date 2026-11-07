@@ -1,5 +1,6 @@
 ---
 title: "A Me oldal"
+description: "A B1App tagi portál Me oldala egy képernyőn: közelgő szolgálat, események, regisztrációk, háztartás, csoportok, adakozás, űrlapok, részvétel és üzenetek."
 ---
 
 # A Me oldal
@@ -31,7 +32,7 @@ Ha ki van jelentkezve, a „Jelentkezzen be, hogy lássa a heti programját” �
 A **Közelgő** szakasz a következő három tételét listázza dátum szerint rendezve, mindegyiket típusjelzővel ellátva. Ha ennél több van, koppintson az **Összes közelgő** gombra a teljes lista megtekintéséhez, illetve a **Vissza a Me oldalra** gombra a visszatéréshez.
 
 - **Szolgálat** -- Az Ön önkéntes szolgálati beosztásai a közelgő istentiszteleti terveken, a szolgálat dátumával és kezdési idejével (ha a terven több istentiszteleti időpont szerepel, a csapatnak szükséges időpont; ha a tervben nincs időpont, csak a dátum). Koppintson rá a terv megnyitásához.
-- **Regisztráció** -- Azok az események, amelyekre [regisztrált](../events/registering). Koppintson a tétel megnyitásához, és onnan jut el a [regisztrációihoz](../events/my-registrations).
+- **Regisztráció** -- Azok az események, amelyekre [regisztrált](../events/registering.md). Koppintson a tétel megnyitásához, és onnan jut el a [regisztrációihoz](../events/my-registrations.md).
 - **Esemény** -- Azon csoportjai közelgő eseményei, amelyeknek tagja. Koppintson egyre a csoport eseményeinek megnyitásához.
 
 Ha egy eseménynek vagy regisztrációnak van fotója, a sor elején annak kis előnézeti képe jelenik meg.
@@ -66,7 +67,7 @@ A **Kérelmek és regisztrációk** szakasz azt mutatja, hány eseményre van re
 
 Ha gyülekezete foglalható termekkel vagy erőforrásokkal rendelkezik, további két hivatkozás jelenik meg:
 
-- **Esemény igénylése** -- Kérjen eseményt a szükséges termekkel és felszereléssel. Lásd: [Események és termek igénylése](../events/requesting-events).
+- **Esemény igénylése** -- Kérjen eseményt a szükséges termekkel és felszereléssel. Lásd: [Események és termek igénylése](../events/requesting-events.md).
 - **Kérelmeim** -- Kövesse nyomon kérelmei állapotát, és törölje a függőben lévőket.
 
 Ha gyülekezete még nem állított be termeket vagy erőforrásokat, ezek a hivatkozások el vannak rejtve.
@@ -77,8 +78,8 @@ Az **Értesítések** szakasz a két legutóbbi értesítését mutatja, hogy a 
 
 ## Kapcsolódó cikkek
 
-- [A B1App navigálása](./navigating) -- A tagi portál felépítése
-- [Események és termek igénylése](../events/requesting-events) -- Terem- és erőforrás-kérelmek benyújtása és nyomon követése
-- [Regisztrációim](../events/my-registrations) -- Eseményregisztrációinak kezelése
-- [Önkéntes jelentkezés](../serving/volunteer-signup) -- Hogyan működnek a szolgálati beosztások
-- [Önbejelentkezés](../checkin/self-checkin) -- Hogyan rögzítik a részvételét
+- [A B1App navigálása](./navigating.md) -- A tagi portál felépítése
+- [Események és termek igénylése](../events/requesting-events.md) -- Terem- és erőforrás-kérelmek benyújtása és nyomon követése
+- [Regisztrációim](../events/my-registrations.md) -- Eseményregisztrációinak kezelése
+- [Önkéntes jelentkezés](../serving/volunteer-signup.md) -- Hogyan működnek a szolgálati beosztások
+- [Önbejelentkezés](../checkin/self-checkin.md) -- Hogyan rögzítik a részvételét

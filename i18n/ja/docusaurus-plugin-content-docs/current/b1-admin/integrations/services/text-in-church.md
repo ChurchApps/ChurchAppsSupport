@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Zapier で B1 Admin と Text In Church を連携させます。API キーの発行、コネクトカードから B1 へ送る Zap の作成、グループメンバーシップの同期を行います。"
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Zap をオンにします。次に TIC経由で送信されたコネクトカー
 
 ## 関連情報
 
-- [Clearstream](./clearstream)：同様に Zapier と連携できる別の SMS プラットフォーム
-- [Zapier（概要）](../zapier)：すべての Zapier レシピに共通する B1 側の説明
+- [Clearstream](./clearstream.md)：同様に Zapier と連携できる別の SMS プラットフォーム
+- [Zapier（概要）](../zapier.md)：すべての Zapier レシピに共通する B1 側の説明
 - [Text In Church の Zapier ガイド](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration)（TIC のドキュメント）

@@ -1,5 +1,6 @@
 ---
 title: "Naloge"
+description: "V B1 Admin ustvarjajte, dodeljujte in zaključujte naloge, jih najdite pod Služenje > Moje delo ter nastavite opomnike za rok, da nobena naloga ne ostane pozabljena."
 ---
 
 # Naloge

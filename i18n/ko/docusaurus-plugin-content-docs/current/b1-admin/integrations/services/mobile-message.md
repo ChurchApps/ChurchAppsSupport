@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Zapier 또는 Make 웹훅으로 B1 Admin 이벤트를 호주 SMS API인 Mobile Message에 연결해 환영, 헌금, 알림 문자를 보냅니다."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Mobile Message의 `/v1/messages` 엔드포인트는 호출당 최대 10,000개 �
 
 ### Make 대안
 
-Make를 선호하는 경우 B1 Watch Events 트리거 후 **HTTP — 요청 만들기** 모듈을 놓고 동일하게 구성합니다(POST, 기본 인증, JSON 본문). B1 측은 [Make 개요](../make)를 참조하세요.
+Make를 선호하는 경우 B1 Watch Events 트리거 후 **HTTP — 요청 만들기** 모듈을 놓고 동일하게 구성합니다(POST, 기본 인증, JSON 본문). B1 측은 [Make 개요](../make.md)를 참조하세요.
 
 ## 제한 및 주의사항
 
@@ -102,6 +103,6 @@ Make를 선호하는 경우 B1 Watch Events 트리거 후 **HTTP — 요청 만�
 
 ## 참고도 보기
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — 네이티브 Zapier 앱이 있는 대체 SMS 제공자(Zapier 웹훅 단계 필요 없음)
-- [Zapier(개요)](../zapier) — 모든 Zapier 레시피의 B1 측
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — 네이티브 Zapier 앱이 있는 대체 SMS 제공자(Zapier 웹훅 단계 필요 없음)
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
 - [Mobile Message API 문서](https://mobilemessage.com.au/api-documentation)

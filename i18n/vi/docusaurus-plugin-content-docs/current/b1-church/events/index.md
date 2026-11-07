@@ -1,5 +1,7 @@
 ---
-title: "Sự kiện"
+title: "Sự kiện hội thánh trên B1.church: duyệt và đăng ký"
+sidebar_label: "Sự kiện"
+description: "Duyệt các sự kiện hội thánh sắp tới trên B1.church, kiểm tra trạng thái đăng ký, và đăng ký hoặc thêm sự kiện vào lịch của bạn."
 ---
 
 # Sự kiện
@@ -43,7 +45,7 @@ Nếu sự kiện đã đầy, bạn vẫn có thể tham gia **danh sách chờ
 
 ## Tìm hiểu thêm
 
-- [Đăng ký sự kiện](./registering) -- Hướng dẫn từng bước để đăng ký tham gia sự kiện
-- [Đăng ký của tôi](./my-registrations) -- Xem các đăng ký, thanh toán số dư, chỉnh sửa hoặc hủy
-- [Yêu cầu sự kiện và phòng](./requesting-events) -- Yêu cầu sự kiện với các phòng và tài nguyên cần thiết
-- [Tự check-in](../checkin/self-checkin) -- Check-in khi bạn đến sự kiện
+- [Đăng ký sự kiện](./registering.md) -- Hướng dẫn từng bước để đăng ký tham gia sự kiện
+- [Đăng ký của tôi](./my-registrations.md) -- Xem các đăng ký, thanh toán số dư, chỉnh sửa hoặc hủy
+- [Yêu cầu sự kiện và phòng](./requesting-events.md) -- Yêu cầu sự kiện với các phòng và tài nguyên cần thiết
+- [Tự check-in](../checkin/self-checkin.md) -- Check-in khi bạn đến sự kiện

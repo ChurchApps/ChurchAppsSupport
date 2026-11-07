@@ -1,5 +1,6 @@
 ---
 title: "Profiilimuutosten hyväksyminen"
+description: "Tarkista ja hyväksy jäsenten profiilimuutospyynnöt B1 Adminissa ja määritä hakemistohyväksyntäryhmä, joka vastaanottaa ne."
 ---
 
 # Profiilimuutosten hyväksyminen

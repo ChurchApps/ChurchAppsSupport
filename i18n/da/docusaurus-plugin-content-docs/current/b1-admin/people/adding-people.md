@@ -1,5 +1,6 @@
 ---
 title: "Tilføj folk"
+description: "Tilføj en person til din kirkes database i B1 Admin, udfyld oplysningerne, og knyt familiemedlemmer til husstande til check-in og rapportering."
 ---
 
 # Tilføj folk

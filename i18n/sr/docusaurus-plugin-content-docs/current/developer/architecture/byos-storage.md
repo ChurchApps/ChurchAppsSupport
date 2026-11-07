@@ -1,5 +1,6 @@
 ---
 title: "Сопствено складиште (BYOS)"
+description: "Повежите свој Google Drive, Dropbox, OneDrive или S3-компатибилан бакет у B1 Admin-у да отпремања цркве заобиђу ограничење од 100 MB."
 ---
 
 # Сопствено складиште (BYOS)
@@ -8,7 +9,7 @@ title: "Сопствено складиште (BYOS)"
 
 ## Слој провајдера складишта
 
-BYOS поново користи слој складишта направљен за [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), који за сваку цркву разрешава `StorageResolver` на основу табеле `content.storageProviders`. За разлику од јединствених провајдера `churchapps` и `ministrystuff`, BYOS провајдери чувају креденцијале за сваку цркву, па `StorageResolver.forChurch` при сваком захтеву прави инстанцу на основу реда те цркве. Имплементације се налазе поред резолвера у `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` и `ByosAuth` (размена OAuth токена и освежавање у једном кораку; Dropbox ротира refresh токене, па се освежавања дедупликују на исти начин као у `ProviderProxyController`).
+BYOS поново користи слој складишта направљен за [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), који за сваку цркву разрешава `StorageResolver` на основу табеле `content.storageProviders`. За разлику од јединствених провајдера `churchapps` и `ministrystuff`, BYOS провајдери чувају креденцијале за сваку цркву, па `StorageResolver.forChurch` при сваком захтеву прави инстанцу на основу реда те цркве. Имплементације се налазе поред резолвера у `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` и `ByosAuth` (размена OAuth токена и освежавање у једном кораку; Dropbox ротира refresh токене, па се освежавања дедупликују на исти начин као у `ProviderProxyController`).
 
 `storageProviders` чува креденцијале: `accessToken`/`refreshToken`/`tokenExpiresAt` (шифровани, OAuth трио) или `apiKey`/`apiSecret` и `settings` JSON (`{endpoint, region, bucket, publicBase}`, за S3). Токени никада не стижу до клијента. `GET /content/storage/providers` маскира тајне и враћа логичку вредност `connected`.
 

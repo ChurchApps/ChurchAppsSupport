@@ -1,5 +1,6 @@
 ---
 title: "Práca s editorom stránok"
+description: "Nastavte editor stránok v B1 Admin: pridávajte sekcie a prvky, upravujte štýl, pozrite náhľad na mobile a publikujte koncepty. Vrátane späť a verzií."
 ---
 
 # Práca s editorom stránok
@@ -17,8 +18,8 @@ Editor stránok B1 je vizuálny nástroj na tvorbu pomocou presúvania prvkov (d
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Dokončite [Počiatočné nastavenie](initial-setup), aby ste mali nakonfigurovaný svoj web
-- Vytvorte aspoň jednu stránku v časti [Správa stránok](managing-pages)
+- Dokončite [Počiatočné nastavenie](./initial-setup.md), aby ste mali nakonfigurovaný svoj web
+- Vytvorte aspoň jednu stránku v časti [Správa stránok](./managing-pages.md)
 - Na prístup k editoru potrebujete oprávnenie **content.edit**
 
 </div>
@@ -31,7 +32,7 @@ Editor stránok B1 je vizuálny nástroj na tvorbu pomocou presúvania prvkov (d
 Editor sa otvorí na celú obrazovku. Ľavý panel zobrazuje štruktúru vašej stránky a dostupné prvky obsahu; stredná oblasť zobrazuje živý náhľad vašej stránky.
 
 :::info
-Editor sa vždy zobrazuje vo svetlom režime bez ohľadu na nastavenie motívu v B1 Admin a používa nadpisové a textové písma, ktoré ste zvolili v časti [Vzhľad](appearance). Týmto sa zabezpečí, že náhľad presne zodpovedá tomu, ako bude stránka vyzerať pre návštevníkov webu.
+Editor sa vždy zobrazuje vo svetlom režime bez ohľadu na nastavenie motívu v B1 Admin a používa nadpisové a textové písma, ktoré ste zvolili v časti [Vzhľad](./appearance.md). Týmto sa zabezpečí, že náhľad presne zodpovedá tomu, ako bude stránka vyzerať pre návštevníkov webu.
 :::
 
 ## Štruktúra stránky: sekcie a prvky
@@ -61,7 +62,7 @@ Už ste sekciu vytvorili, ale chcete inú štruktúru? Pomocou prepínača rozlo
    - **Obrázok** -- Nahrajte fotografiu alebo na ňu vložte odkaz
    - **Tlačidlo** -- Klikateľný odkaz na výzvu k akcii
    - **Karta** -- Obrázok s nadpisom a popisom
-   - **Formulár** -- Priamo na stránku vložte [formulár](../forms/creating-forms). Ak má formulár [hlavičkovú fotografiu](../forms/creating-forms.md#adding-a-header-photo), zobrazí sa nad otázkami.
+   - **Formulár** -- Priamo na stránku vložte [formulár](../forms/creating-forms.md). Ak má formulár [hlavičkovú fotografiu](../forms/creating-forms.md#adding-a-header-photo), zobrazí sa nad otázkami.
    - **Kalendár** -- Zobrazenie kalendára udalostí
    - **FAQ** -- Bloky otázok a odpovedí v štýle akordeónu
    - **Video** -- Vloženie videa pomocou URL adresy
@@ -79,7 +80,7 @@ Už ste sekciu vytvorili, ale chcete inú štruktúru? Pomocou prepínača rozlo
    - **Mapa** -- Vložená mapa vycentrovaná na adresu vašej cirkvi
    - **Tabuľka** -- Jednoduchá mriežka riadkov a stĺpcov pre tabuľkový obsah
    - **Text s fotografiou** -- Text a obrázok vedľa seba
-   - **Logo** -- Logo vašej cirkvi, načítané z [Vzhľadu](appearance)
+   - **Logo** -- Logo vašej cirkvi, načítané z [Vzhľadu](./appearance.md)
    - **Živý prenos** -- Prehrávač vášho živého prenosu vložený priamo na stránku
    - **Podcast** -- Zoznam epizód načítaný z externej URL adresy RSS kanála podcastu, ktorú zadáte, s nastaveniami počtu zobrazených epizód a toho, či sa majú zobrazovať dátumy a popisy. Každá epizóda na živej stránke má audio prehrávač a odkaz **Stiahnuť**, ktorý uloží zvukový súbor epizódy pod názvom epizódy. Slúži na zobrazenie ľubovoľného podcastového kanála na vašej stránke; ak chcete vlastné kázne publikovať ako podcast, pozrite namiesto toho [Správa káz](../sermons/managing-sermons.md#your-podcast-feed).
    - **Dar** -- Tlačidlo na dar alebo vložený formulár darov
@@ -100,7 +101,7 @@ Ak do poľa JavaScript vložíte iba webovú adresu (napríklad odkaz na obrázo
 
 Prvok **Kalendár** zobrazuje udalosti z jedného z vašich kalendárov:
 
-1. V časti **Výber** zvoľte **Kalendár skupiny** (udalosti jednej skupiny -- zoznam zobrazuje skupiny, do ktorých patríte) alebo **Kurátorský kalendár** (kalendár, ktorý ste vytvorili v časti **Kalendáre**; pozrite [Kurátorský kalendár](../calendars/curated-calendar)).
+1. V časti **Výber** zvoľte **Kalendár skupiny** (udalosti jednej skupiny -- zoznam zobrazuje skupiny, do ktorých patríte) alebo **Kurátorský kalendár** (kalendár, ktorý ste vytvorili v časti **Kalendáre**; pozrite [Kurátorský kalendár](../calendars/curated-calendar.md)).
 2. V časti **Vybrať kalendár** vyberte skupinu alebo kalendár.
 3. V časti **Zobrazenie** zvoľte, ako ho zobraziť:
    - **Mesačný kalendár** -- Mriežka mesiaca medzi ktorými môžu návštevníci prepínať.
@@ -133,7 +134,7 @@ Kliknutím na ľubovoľný prvok otvorte jeho panel štýlov. Medzi bežné mož
 Pre pokročilú štylizáciu má každá sekcia a prvok pole **Vlastné CSS**, kam môžete napísať vlastné pravidlá CSS. Tieto pravidlá sa vzťahujú len na daný prvok, takže nebudú neúmyselne ovplyvňovať zvyšok stránky.
 
 :::tip
-Ak potrebujete použiť štýly na celý web -- napríklad vlastné písmo alebo globálnu farbu -- použite nastavenia [Vzhľad](appearance) namiesto vlastného CSS na jednotlivých stránkach.
+Ak potrebujete použiť štýly na celý web -- napríklad vlastné písmo alebo globálnu farbu -- použite nastavenia [Vzhľad](./appearance.md) namiesto vlastného CSS na jednotlivých stránkach.
 :::
 
 ## Náhľad stránky
@@ -188,7 +189,7 @@ Postup konceptu a publikovania použite vtedy, keď chcete stránku pripraviť -
 
 ## Súvisiace články
 
-- [Správa stránok](managing-pages) -- Vytváranie stránok, nastavenie URL adries a správa navigácie na webe
-- [Vzhľad](appearance) -- Nastavenie farieb, písiem a brandingu pre celý web
-- [Súbory](files) -- Nahrávanie obrázkov a dokumentov na použitie v editore
-- [Vytváranie formulárov](../forms/creating-forms) -- Vytvárajte formuláre, ktoré môžete vložiť na stránky
+- [Správa stránok](./managing-pages.md) -- Vytváranie stránok, nastavenie URL adries a správa navigácie na webe
+- [Vzhľad](./appearance.md) -- Nastavenie farieb, písiem a brandingu pre celý web
+- [Súbory](./files.md) -- Nahrávanie obrázkov a dokumentov na použitie v editore
+- [Vytváranie formulárov](../forms/creating-forms.md) -- Vytvárajte formuláre, ktoré môžete vložiť na stránky

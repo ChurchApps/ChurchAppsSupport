@@ -1,5 +1,6 @@
 ---
 title: "Gegevensbeveiliging"
+description: "Lees hoe ChurchApps de gegevens van je kerk beschermt in B1 Admin, van gehashte wachtwoorden en HTTPS tot gescheiden databases en AVG-gegevenstools."
 ---
 
 # Gegevensbeveiliging

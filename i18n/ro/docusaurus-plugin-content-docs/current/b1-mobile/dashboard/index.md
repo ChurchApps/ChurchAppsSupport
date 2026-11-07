@@ -1,5 +1,6 @@
 ---
 title: "Panou de control"
+description: "Orientați-vă pe ecranul principal din B1 Mobile, unde funcțiile cel mai folosite sunt afișate ca carduri mari, iar restul se află în Acțiuni rapide."
 ---
 
 # Panou de control
@@ -28,7 +29,7 @@ Sub caseta principală veți vedea până la două **casete recomandate**, afiș
 
 ## Acțiuni rapide
 
-Celelalte funcții apar într-o grilă **Acțiuni rapide**, sub casetele recomandate. Fiecare element afișează o pictogramă și o etichetă. Acestea sunt toate celelalte linkuri de navigare configurate de biserica dumneavoastră, oferindu-vă acces la tot, de la [grupuri](../groups/) și [donații](../giving/) până la [check-in](../checkin/), [predici](../content/sermons.md) și altele.
+Celelalte funcții apar într-o grilă **Acțiuni rapide**, sub casetele recomandate. Fiecare element afișează o pictogramă și o etichetă. Acestea sunt toate celelalte linkuri de navigare configurate de biserica dumneavoastră, oferindu-vă acces la tot, de la [grupuri](../groups/index.md) și [donații](../giving/index.md) până la [check-in](../checkin/index.md), [predici](../content/sermons.md) și altele.
 
 ## Cum se adaptează aspectul
 
@@ -41,7 +42,7 @@ Aspectul panoului de control este personalizat în funcție de modul dumneavoast
 Dacă nu ați folosit încă aplicația, funcțiile apar în ordinea implicită configurată de biserică. În timp, panoul de control se rearanjează pentru a se potrivi obiceiurilor dumneavoastră.
 
 :::info
-Funcțiile disponibile pe panoul de control sunt configurate de administratorul bisericii prin [B1 Admin](../../b1-admin/). Dacă nu vedeți o funcție pe care vă așteptați să o aveți, contactați secretariatul bisericii.
+Funcțiile disponibile pe panoul de control sunt configurate de administratorul bisericii prin [B1 Admin](../../b1-admin/index.md). Dacă nu vedeți o funcție pe care vă așteptați să o aveți, contactați secretariatul bisericii.
 :::
 
 ## Reîmprospătarea panoului de control

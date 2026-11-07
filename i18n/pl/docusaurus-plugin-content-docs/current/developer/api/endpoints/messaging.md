@@ -1,5 +1,6 @@
 ---
 title: "Punkty końcowe wiadomości"
+description: "Dokumentacja punktów końcowych API wiadomości ChurchApps: rozmowy, zasady dostępu do notatek, SMS, szablony e-mail, powiadomienia i urządzenia."
 ---
 
 # Punkty końcowe wiadomości
@@ -190,7 +191,7 @@ Authorization: Bearer <token>
 
 Ścieżka bazowa: `/messaging/connections`
 
-Zarządza połączeniami WebSocket i czasu rzeczywistego dla czatu, rozmów grupowych, wiadomości prywatnych i transmisji na żywo. Pełny opis protokołu znajduje się w [Architekturze czasu rzeczywistego](../../realtime).
+Zarządza połączeniami WebSocket i czasu rzeczywistego dla czatu, rozmów grupowych, wiadomości prywatnych i transmisji na żywo. Pełny opis protokołu znajduje się w [Architekturze czasu rzeczywistego](../../realtime.md).
 
 | Metoda | Ścieżka | Uwierzytelnianie | Uprawnienie | Opis |
 |--------|---------|------------------|-------------|------|
@@ -367,9 +368,9 @@ Authorization: Bearer <token>
 
 ## Powiązane strony
 
-- [Architektura czasu rzeczywistego](../../realtime) -- protokół WebSocket, subskrypcje pokoi i wspólna platforma dostarczania
-- [Powiadomienia push w przeglądarce](../../web-push) -- rejestracja i dostarczanie powiadomień push w przeglądarce
-- [Punkty końcowe członkostwa](./membership) -- osoby, grupy, role i podstawowa tożsamość
-- [Punkty końcowe frekwencji](./attendance) -- śledzenie nabożeństw i wizyt
-- [Uwierzytelnianie i uprawnienia](./authentication) -- przepływ logowania, JWT, OAuth, model uprawnień
-- [Struktura modułu](../module-structure) -- wzorce organizacji kodu
+- [Architektura czasu rzeczywistego](../../realtime.md) -- protokół WebSocket, subskrypcje pokoi i wspólna platforma dostarczania
+- [Powiadomienia push w przeglądarce](../../web-push.md) -- rejestracja i dostarczanie powiadomień push w przeglądarce
+- [Punkty końcowe członkostwa](./membership.md) -- osoby, grupy, role i podstawowa tożsamość
+- [Punkty końcowe frekwencji](./attendance.md) -- śledzenie nabożeństw i wizyt
+- [Uwierzytelnianie i uprawnienia](./authentication.md) -- przepływ logowania, JWT, OAuth, model uprawnień
+- [Struktura modułu](../module-structure.md) -- wzorce organizacji kodu

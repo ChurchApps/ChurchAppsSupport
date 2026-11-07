@@ -1,12 +1,13 @@
 ---
 title: "Event Registrations"
+description: "How event registrations work in B1 Admin and B1App: attendee types, paid add-ons, discount codes, payments through the giving gateway, and waitlist promotion."
 ---
 
 # Event Registrations
 
 <div class="article-intro">
 
-Native event registration lives in the content module and, since the paid-registrations wave, carries a full commerce model: priced attendee types, priced add-on selections, discount codes, payments through the church's existing giving gateway, and a status-driven waitlist. The money path deliberately reuses the giving stack — the registration controller charges through the same `GatewayService` / `IGatewayProvider` abstraction documented in [Giving](./giving), so no card data or gateway SDK knowledge lives in the content module. This page maps the data model, the pricing and capacity rules, and the registration, payment, and waitlist flows.
+Native event registration lives in the content module and, since the paid-registrations wave, carries a full commerce model: priced attendee types, priced add-on selections, discount codes, payments through the church's existing giving gateway, and a status-driven waitlist. The money path deliberately reuses the giving stack — the registration controller charges through the same `GatewayService` / `IGatewayProvider` abstraction documented in [Giving](./giving.md), so no card data or gateway SDK knowledge lives in the content module. This page maps the data model, the pricing and capacity rules, and the registration, payment, and waitlist flows.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenization happens in the browser exactly as for donations (see [Giving](./giving)) — the wizard reuses the apphelper payment provider registry, so logged-in members can pay with saved cards and guests tokenize a new card. The controller mirrors `DonateController`'s provider quirks (Kingdom Funding `pm-{id}` payment-method ids, Stripe SCA `requires_action` responses returned to the client without recording a payment). A successful charge writes a `registrationPayments` row, bumps `amountPaid`, and confirms the registration. **Refunds are not implemented** — a cancelled paid registration keeps its payment rows and any refund is handled out-of-band in the gateway dashboard.
+Tokenization happens in the browser exactly as for donations (see [Giving](./giving.md)) — the wizard reuses the apphelper payment provider registry, so logged-in members can pay with saved cards and guests tokenize a new card. The controller mirrors `DonateController`'s provider quirks (Kingdom Funding `pm-{id}` payment-method ids, Stripe SCA `requires_action` responses returned to the client without recording a payment). A successful charge writes a `registrationPayments` row, bumps `amountPaid`, and confirms the registration. **Refunds are not implemented** — a cancelled paid registration keeps its payment rows and any refund is handled out-of-band in the gateway dashboard.
 
 Both entry points route through the same code path: `register` (pay at signup) and `pay` (balance payment / waitlist completion).
 
@@ -147,7 +148,7 @@ Cross-module lookups (resolving or creating the guest person, loading the church
 
 ## Related Pages
 
-- [Giving](./giving) — the gateway abstraction, provider registry, and tokenization model this feature reuses
-- [Content Endpoints](../api/endpoints/content) — the content module's REST surface
-- [Webhooks](../api/webhooks) — the `registration.created` event
-- [Module Structure](../api/module-structure) — how the content module is organized server-side
+- [Giving](./giving.md) — the gateway abstraction, provider registry, and tokenization model this feature reuses
+- [Content Endpoints](../api/endpoints/content.md) — the content module's REST surface
+- [Webhooks](../api/webhooks.md) — the `registration.created` event
+- [Module Structure](../api/module-structure.md) — how the content module is organized server-side

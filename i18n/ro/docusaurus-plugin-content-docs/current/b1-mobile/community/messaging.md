@@ -1,5 +1,6 @@
 ---
 title: "Mesajele"
+description: "Începeți, citiți, editați și ștergeți conversații private unu-la-unu cu membrii bisericii în B1 Mobile, și găsiți persoane prin Agenda membrilor."
 ---
 
 # Mesajele
@@ -13,7 +14,7 @@ B1 Mobile include funcționalitatea de mesagerie privată, care îți permite s�
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalează B1 Mobile](../getting-started/installing) și [autentifică-te](../getting-started/logging-in) în contul tău
+- [Instalează B1 Mobile](../getting-started/installing.md) și [autentifică-te](../getting-started/logging-in.md) în contul tău
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile include funcționalitatea de mesagerie privată, care îți permite s�
 ## Inițierea unei conversații noi
 
 1. Din ecranul de mesaje, atinge opțiunea de a începe o conversație nouă.
-2. Folosește câmpul de căutare pentru a găsi membrul cu care dorești să comunici. Poți găsi membri și prin [Directorul membrilor](./member-directory).
+2. Folosește câmpul de căutare pentru a găsi membrul cu care dorești să comunici. Poți găsi membri și prin [Directorul membrilor](./member-directory.md).
 3. Selectează membrul din rezultatele căutării.
 4. Scrie mesajul și atinge **Trimite**.
 
@@ -52,11 +53,11 @@ Folosește mesageria pentru a coordona activitatea cu colegii voluntari, pentru 
 :::
 
 :::info
-Activează [notificările push](./notifications) pentru a fi anunțat când cineva îți trimite un mesaj nou, chiar și atunci când aplicația nu este deschisă.
+Activează [notificările push](./notifications.md) pentru a fi anunțat când cineva îți trimite un mesaj nou, chiar și atunci când aplicația nu este deschisă.
 :::
 
 ## Articole conexe
 
-- [Directorul membrilor](./member-directory) -- Găsește membri cu care să comunici
-- [Notificări](./notifications) -- Primește notificări despre mesajele noi
-- [Grupuri](../groups/) -- Participă la conversațiile de grup
+- [Directorul membrilor](./member-directory.md) -- Găsește membri cu care să comunici
+- [Notificări](./notifications.md) -- Primește notificări despre mesajele noi
+- [Grupuri](../groups/index.md) -- Participă la conversațiile de grup

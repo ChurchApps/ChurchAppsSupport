@@ -1,5 +1,7 @@
 ---
-title: "Begivenheder"
+title: "Kirkebegivenheder på B1.church: gennemse og tilmeld"
+sidebar_label: "Begivenheder"
+description: "Gennemse kommende kirkebegivenheder på B1.church, se tilmeldingsstatus, og tilmeld dig eller føj begivenheder til din kalender."
 ---
 
 # Begivenheder
@@ -40,5 +42,5 @@ Hvis en begivenhed er fuld, tjek igen senere -- pladser kan blive ledige, hvis n
 
 ## Lær mere
 
-- [Registrering til begivenheder](./registering) -- Trinvis vejledning til tilmelding til en begivenhed
-- [Selvbetjenings-fremmøde](../checkin/self-checkin) -- Møde ind, når du ankommer til begivenheden
+- [Registrering til begivenheder](./registering.md) -- Trinvis vejledning til tilmelding til en begivenhed
+- [Selvbetjenings-fremmøde](../checkin/self-checkin.md) -- Møde ind, når du ankommer til begivenheden

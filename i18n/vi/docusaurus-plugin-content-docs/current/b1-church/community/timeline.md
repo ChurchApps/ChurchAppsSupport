@@ -1,5 +1,6 @@
 ---
 title: "Dòng thời gian"
+description: "Tab Dòng thời gian trong cổng thành viên B1.church đã ngừng hoạt động. Tìm nhóm trò chuyện, sự kiện, công việc và thông báo trên trang Tôi, biểu tượng chuông và từng nhóm."
 ---
 
 # Dòng thời gian
@@ -16,13 +17,13 @@ Tab **Dòng thời gian** độc lập đã được gỡ bỏ. Cổng thành vi
 | --- | --- |
 | Trò chuyện và thông báo của nhóm | Khung trò chuyện trong mỗi [nhóm](../groups/conversations.md) (**Mở trò chuyện**) |
 | Sự kiện sắp tới dành cho bạn và các nhóm của bạn | Trang **Me** (`/mobile/me`) và mục **Sự kiện tiếp theo** của mỗi nhóm |
-| Nhiệm vụ và phân công phục vụ | Trang **Me** và [Kế hoạch](../plans/) |
+| Nhiệm vụ và phân công phục vụ | Trang **Me** và [Kế hoạch](../plans/index.md) |
 | Bài giảng mới | Mục **Bài giảng mới nhất** trên Trang chủ và tab [Bài giảng](../content/sermons.md) |
 | Bất kỳ điều gì gửi thông báo đến bạn | Biểu tượng **chuông** trên thanh ứng dụng, hoặc `/mobile/notifications` |
 
 ## Trang Me
 
-[Trang Me](../getting-started/me-page) là phương án thay thế gần nhất cho nguồn cấp cũ. Trang này liệt kê những gì sắp diễn ra với bạn, gồm phân công phục vụ, đăng ký sự kiện và sự kiện nhóm, cùng với các biểu mẫu bạn đã gửi, lịch sử tham dự và thông báo mới nhất. Trang cũng có đường dẫn trực tiếp đến hồ sơ, tùy chọn thông báo, tin nhắn, dâng hiến và đăng ký của bạn.
+[Trang Me](../getting-started/me-page.md) là phương án thay thế gần nhất cho nguồn cấp cũ. Trang này liệt kê những gì sắp diễn ra với bạn, gồm phân công phục vụ, đăng ký sự kiện và sự kiện nhóm, cùng với các biểu mẫu bạn đã gửi, lịch sử tham dự và thông báo mới nhất. Trang cũng có đường dẫn trực tiếp đến hồ sơ, tùy chọn thông báo, tin nhắn, dâng hiến và đăng ký của bạn.
 
 ## Thông báo
 

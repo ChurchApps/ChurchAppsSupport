@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Duyệt, lên lịch và trình chiếu bài học miễn phí theo độ tuổi từ 12+ nhà cung cấp trên Lessons.church, với lớp học, địa điểm, tích hợp FreePlay và B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church hoạt động cùng các công cụ khác của ChurchApps để
 
 ## Các Phần Tài Liệu
 
-- [Bắt Đầu](./getting-started/) -- Tạo tài khoản và tìm hiểu những điều cơ bản
-- [Duyệt Nội Dung](./browsing/) -- Tìm chương trình, khóa học và bài học
-- [Lớp Học](./classrooms/) -- Thiết lập lớp học và lên lịch bài học
-- [Tùy Chỉnh](./customization/) -- Điều chỉnh bài học cho hội thánh của bạn
-- [Trình Bày](./presenting/) -- Giảng dạy bài học trong lớp bằng chế độ trình chiếu
-- [Quản Trị](./admin/) -- Quản lý chương trình, khóa học và bài học với tư cách quản trị viên
+- [Bắt Đầu](./getting-started/index.md) -- Tạo tài khoản và tìm hiểu những điều cơ bản
+- [Duyệt Nội Dung](./browsing/index.md) -- Tìm chương trình, khóa học và bài học
+- [Lớp Học](./classrooms/index.md) -- Thiết lập lớp học và lên lịch bài học
+- [Tùy Chỉnh](./customization/index.md) -- Điều chỉnh bài học cho hội thánh của bạn
+- [Trình Bày](./presenting/index.md) -- Giảng dạy bài học trong lớp bằng chế độ trình chiếu
+- [Quản Trị](./admin/index.md) -- Quản lý chương trình, khóa học và bài học với tư cách quản trị viên
 - [Tuyên Bố Đức Tin](./statement-of-faith.md) -- Niềm tin cốt lõi và nguyên tắc giáo trình
 
 Để được hỗ trợ, vui lòng gửi email đến [support@churchapps.org](mailto:support@churchapps.org).

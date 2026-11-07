@@ -1,5 +1,7 @@
 ---
-title: "Lezioni (Deprecato)"
+title: "Scheda Lezioni obsoleta su B1.church"
+sidebar_label: "Lezioni (Deprecato)"
+description: "La scheda Lezioni di B1.church è obsoleta. Il programma delle lezioni è ora su Lessons.church, da riprodurre sulle TV in aula con FreePlay."
 ---
 
 # Lezioni (Deprecato)
@@ -9,7 +11,7 @@ La scheda **Lezioni** incorporata su B1.church è stata deprecata. La riproduzio
 
 Per sfogliare, pianificare o modificare il curriculum direttamente, accedi a [Lessons.church](https://lessons.church) nel tuo browser. Per riprodurre lezioni su una TV in classe, installa [FreePlay](/docs/freeplay/getting-started/) sul tuo dispositivo TV.
 
-I genitori di gruppi associati a un tipo di piano di lezioni in B1Admin vedono **questa settimana lezione** sulla pagina [dettagli del gruppo](/docs/b1-church/groups/group-details.md) -- non su questa scheda deprecata.
+I genitori di gruppi associati a un tipo di piano di lezioni in B1Admin vedono **questa settimana lezione** sulla pagina [dettagli del gruppo](../groups/group-details.md) -- non su questa scheda deprecata.
 :::
 
 <div class="article-intro">

@@ -1,5 +1,6 @@
 ---
 title: "Csoporttagok"
+description: "Csoporttagok hozzáadása, eltávolítása és vezetők kijelölése a B1 Admin-ban, majd e-mail, SMS, nyomtatás vagy exportálás a csoport oldaláról."
 ---
 
 # Csoporttagok

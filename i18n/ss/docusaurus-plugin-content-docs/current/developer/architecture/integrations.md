@@ -1,5 +1,6 @@
 ---
 title: "Bubanti Bekuhlanganisa Nekwandzisa"
+description: "Imephu yetindlela tekuxhuma ne-ChurchApps B1: REST API, tikhiye te-API, OAuth, ma-webhook, MCP, nabahlinzeki bemdvwebo, netixhumanisi tekubhala."
 ---
 
 # Bubanti Bekuhlanganisa Nekwandzisa
@@ -14,12 +15,12 @@ Konkhe lokungangenwa yincenye yesitsatfu kuhamba nge-API yinye nemodeli yinye ye
 
 Kunetindlela letisitfupha tekungena nome kuphuma, futsi tonkhe tabelana ngesigaba sinye sekuvunyelwa:
 
-- **[REST API](../api/api-keys)** — bonkhe bubanti bemkhicito, lokungabitwa nge-bearer token kusuka kunome nguluphi lulwimi.
-- **[Ema-API key](../api/api-keys)** — imininingwane leliciniso lelilula kunato tonkhe: i-token ye-`cak_…` lebotjelwe kumuntfu munye elibandleni linye.
-- **[OAuth 2.0 kanye Netinhlelo Letixhunyiwe](../api/connected-apps)** — kuvuma kwelibandla nga linye kutinhlelo te-multi-tenant; ikhicita i-JWT lefanako naleyo umsebentisi ayitfolako.
-- **[Ema-Webhook](../api/webhooks)** — imicimbi lesulwako lesayiniwe, letfunyelwa ngekugcina.
-- **[Seva ye-MCP](../api/mcp)** — sisibonelo lesibhekiswe ku-AI setulu kwe-REST API ku-`/mcp`.
-- **[Bahlinzeki bekucuketfwa (Content providers)](../freeplay-content-provider)** — indlela yekungena yemitapo yemidiya yangephandle iye ku-FreePlay kanye netinhlelo te-B1.
+- **[REST API](../api/api-keys.md)** — bonkhe bubanti bemkhicito, lokungabitwa nge-bearer token kusuka kunome nguluphi lulwimi.
+- **[Ema-API key](../api/api-keys.md)** — imininingwane leliciniso lelilula kunato tonkhe: i-token ye-`cak_…` lebotjelwe kumuntfu munye elibandleni linye.
+- **[OAuth 2.0 kanye Netinhlelo Letixhunyiwe](../api/connected-apps.md)** — kuvuma kwelibandla nga linye kutinhlelo te-multi-tenant; ikhicita i-JWT lefanako naleyo umsebentisi ayitfolako.
+- **[Ema-Webhook](../api/webhooks.md)** — imicimbi lesulwako lesayiniwe, letfunyelwa ngekugcina.
+- **[Seva ye-MCP](../api/mcp.md)** — sisibonelo lesibhekiswe ku-AI setulu kwe-REST API ku-`/mcp`.
+- **[Bahlinzeki bekucuketfwa (Content providers)](../freeplay-content-provider.md)** — indlela yekungena yemitapo yemidiya yangephandle iye ku-FreePlay kanye netinhlelo te-B1.
 
 Konkhe ngephandle kwebahlinzeki bekucuketfwa kwenteliswa yi-API yinye lenkhulu (i-repositori ye-[Api](https://github.com/ChurchApps/Api)) lawemodyuli akhe agibela ngaphansi kwetindlela letisisekelo letimile — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, kanye ne-`/mcp`.
 
@@ -80,7 +81,7 @@ Ema-controller ahlunga tento nge-`au.checkAccess(contentType, action)` kumelene 
 - I-scope ingasusa kuphela tivumelo, ngako imininingwane leliciniso lenesigaba ayikwati kutenyusa iye ekulawuleni kweseva/lidomeni (letivumelo letifakwe ngekucabanga kusukela kunome iyiphi i-scope).
 - Ema-API key aphetse sicalo se-`cak_`; i-`CustomAuthProvider.getUser()` iyahlukanisa ngaso, ihashe imfihlo, bese iyahlunga kabusha i-RBAC lesekhona yalomuntfu lomnini ngesicelo ngasinye.
 
-Bona i-[API Keys → Scopes](../api/api-keys#scopes) kwentela luhlu lolugcwele.
+Bona i-[API Keys → Scopes](../api/api-keys.md#scopes) kwentela luhlu lolugcwele.
 
 ## Sikhombo Se-Bubanti
 
@@ -90,7 +91,7 @@ Bonkhe bubanti bemkhicito. Nome yini i-endpoint levunyelwe iyemukela nome ngabe 
 
 ### Ema-API key
 
-I-token yekufinyelela komuntfu lengumunye ye-`cak_<prefix>.<secret>`, lekhicitwa e-**B1Admin → Settings → Developer → API Keys**. Kugcinwa kuphela i-hash ye-SHA-256; i-key lengakahlungwa iyakhonjiswa kanye kuphela. Kulawulwa ku-`/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Kufanele kakhulu kutimakhinati talelibandla libodvwa kanye netixhumi njenge-Zapier, Make, kanye ne-Google Sheets. → **[Ema-API Key](../api/api-keys)**
+I-token yekufinyelela komuntfu lengumunye ye-`cak_<prefix>.<secret>`, lekhicitwa e-**B1Admin → Settings → Developer → API Keys**. Kugcinwa kuphela i-hash ye-SHA-256; i-key lengakahlungwa iyakhonjiswa kanye kuphela. Kulawulwa ku-`/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Kufanele kakhulu kutimakhinati talelibandla libodvwa kanye netixhumi njenge-Zapier, Make, kanye ne-Google Sheets. → **[Ema-API Key](../api/api-keys.md)**
 
 ### OAuth 2.0 kanye Netinhlelo Letixhunyiwe
 
@@ -100,30 +101,30 @@ Kwentela tinhlelo te-multi-tenant letidzinga libandla ngalinye kutsi livume. Kwa
 - **Khodi Yelidivayisi (Device Code)** (RFC 8628) — `POST /oauth/device/authorize` ikhicita i-`user_code`; umsebentisi uyayivumela ku-B1Admin (`/oauth/device/approve`); lidivayisi liyabuta (poll) i-`/oauth/token` nge-device-code grant. Kwentela ema-TV, ema-kiosk, kanye ne-ema-CLI langakabi na-browser.
 - **Refresh Token** — `grant_type=refresh_token` ikhicita i-token yekufinyelela lensha; ema-client lawa-public (langakabi ne-secret) angashiya i-secret.
 
-I-**Connected App** kuluvo lwe-church-admin lwe-token lenikeziwe, loluhlelwa futsi lungasuswa ku-`/membership/oauth/connections`. Umlawuli futsi utsatsa i-relay-session bridge ye-OAuth (`/oauth/relay/*`) leyivumela lidivayisi langenambrowser kutsi kuchubeke kungena ngekusayina kumhlinzeki **wangephandle**. → **[Tinhlelo Letixhunyiwe & OAuth](../api/connected-apps)**
+I-**Connected App** kuluvo lwe-church-admin lwe-token lenikeziwe, loluhlelwa futsi lungasuswa ku-`/membership/oauth/connections`. Umlawuli futsi utsatsa i-relay-session bridge ye-OAuth (`/oauth/relay/*`) leyivumela lidivayisi langenambrowser kutsi kuchubeke kungena ngekusayina kumhlinzeki **wangephandle**. → **[Tinhlelo Letixhunyiwe & OAuth](../api/connected-apps.md)**
 
 ### Ema-Webhook
 
-Yindlela yinye kuphela yekuphuma. Libandla libhalisa i-endpoint ye-HTTPS lephephile emicimbini; nangabe kwentekile lokufananako, i-`WebhookDispatcher.emit(churchId, event, payload)` iyabhala kutfunyelwa bese umsebenti wangemuva utfumela i-envelope ye-JSON lesayiniwe nge-retry/backoff kanye nekutfunyelwa kabusha. Injini ikhona ku-`Api/src/shared/webhooks/`, i-CRUD ngelibandla ngalinye ingaphansi kwe-`/membership/webhooks` (`WebhookController.ts`). Inkambu ye-`connectorType` iyashintja umtsamo kwentela i-Slack / Discord. → **[Ema-Webhook](../api/webhooks)**
+Yindlela yinye kuphela yekuphuma. Libandla libhalisa i-endpoint ye-HTTPS lephephile emicimbini; nangabe kwentekile lokufananako, i-`WebhookDispatcher.emit(churchId, event, payload)` iyabhala kutfunyelwa bese umsebenti wangemuva utfumela i-envelope ye-JSON lesayiniwe nge-retry/backoff kanye nekutfunyelwa kabusha. Injini ikhona ku-`Api/src/shared/webhooks/`, i-CRUD ngelibandla ngalinye ingaphansi kwe-`/membership/webhooks` (`WebhookController.ts`). Inkambu ye-`connectorType` iyashintja umtsamo kwentela i-Slack / Discord. → **[Ema-Webhook](../api/webhooks.md)**
 
 ### Seva ye-MCP
 
-Sisibonelo lesibhekiswe ku-AI ku-`/mcp` (`Api/src/modules/mcp/`). Tinsimbi letitsatfu letivamile — `list_endpoints`, `describe_endpoint`, `api_call` — tikhombisa bonkhe bubanti be-REST ngendlela lesheshako kunome ngiyiphi i-client ye-MCP. Kuvunyelwa kufana nale-bearer token yakho konkhe, kantsi i-`api_call` iyangena kabusha ku-Express stack ngekhatsi kwenchubo (in-process) ngako yonkhe imvume kanye nemtsetfo wekubekwa esikhtini elibandleni usasebenta. → **[Seva ye-MCP](../api/mcp)**
+Sisibonelo lesibhekiswe ku-AI ku-`/mcp` (`Api/src/modules/mcp/`). Tinsimbi letitsatfu letivamile — `list_endpoints`, `describe_endpoint`, `api_call` — tikhombisa bonkhe bubanti be-REST ngendlela lesheshako kunome ngiyiphi i-client ye-MCP. Kuvunyelwa kufana nale-bearer token yakho konkhe, kantsi i-`api_call` iyangena kabusha ku-Express stack ngekhatsi kwenchubo (in-process) ngako yonkhe imvume kanye nemtsetfo wekubekwa esikhtini elibandleni usasebenta. → **[Seva ye-MCP](../api/mcp.md)**
 
 ### Bahlinzeki Bekucuketfwa
 
-Indlela yekungena yekucuketfwa, ku-pakethi lehlukene i-`Packages/content-providers` (`@churchapps/content-providers`) kunekutsi kube ku-API. Umhlinzeki ngamunye usebentisa i-`IProvider` interface (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, kanye netibambo (hooks) tekuvunyelwa — futsi uyatibhalisa ngekwakhe ku-`Map` registry (`src/providers/registry.ts`). Lapha **i-B1 ngiyo i-client ye-OAuth**: umhlinzeki uchaza i-`AuthType` ye-`none`, `oauth_pkce`, `device_flow`, nome `form_login`, kantsi tisita letabelene (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) tisebenta i-PKCE / device flow ye-client-side kumtfombo wangephandle. Bahlinzeki labalishumi nakunye batfunyelwa lamuhla — kuhlanganisa Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, kanye ne-B1.church — bondla i-FreePlay kanye netinhlelo te-B1. → **[Umhlinzeki Wekucuketfwa we-FreePlay](../freeplay-content-provider)**
+Indlela yekungena yekucuketfwa, ku-pakethi lehlukene i-`Packages/content-providers` (`@churchapps/content-providers`) kunekutsi kube ku-API. Umhlinzeki ngamunye usebentisa i-`IProvider` interface (`src/interfaces.ts`) — `browse`, `getPlaylist`, `getInstructions`, kanye netibambo (hooks) tekuvunyelwa — futsi uyatibhalisa ngekwakhe ku-`Map` registry (`src/providers/registry.ts`). Lapha **i-B1 ngiyo i-client ye-OAuth**: umhlinzeki uchaza i-`AuthType` ye-`none`, `oauth_pkce`, `device_flow`, nome `form_login`, kantsi tisita letabelene (`OAuthHelper`, `DeviceFlowHelper`, `TokenHelper`, `ApiHelper`) tisebenta i-PKCE / device flow ye-client-side kumtfombo wangephandle. Bahlinzeki labalishumi nakunye batfunyelwa lamuhla — kuhlanganisa Planning Center, Dropbox, Life.Church, CBN, BibleProject, Jesus Film, Lessons.church, kanye ne-B1.church — bondla i-FreePlay kanye netinhlelo te-B1. → **[Umhlinzeki Wekucuketfwa we-FreePlay](../freeplay-content-provider.md)**
 
 ## Sifinyeto
 
 | Bubanti | Umshini wekuvunyelwa | Sicondzo | Lapho kwakhiwe khona | Sikhombo |
 |---|---|---|---|---|
-| REST API | I-`Bearer` JWT nome i-key ye-`cak_…` | Kungena | `Api/src/modules/*` | [Ema-API Key](../api/api-keys) |
-| Ema-API key | I-token ye-`cak_` lehashiwe nge-SHA-256 | Imininingwane leliciniso | `Api/.../membership/controllers/ApiKeyController.ts` | [Ema-API Key](../api/api-keys) |
-| OAuth 2.0 / Tinhlelo Letixhunyiwe | Khodi yekuvunyelwa · lidivayisi · refresh → JWT | Kungena | `Api/.../membership/controllers/OAuthController.ts` | [Tinhlelo Letixhunyiwe](../api/connected-apps) |
-| Ema-Webhook | Imfihlo ngewebhook ngayinye, luphawu lwe-HMAC-SHA256 | Kuphuma | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Ema-Webhook](../api/webhooks) |
-| Seva ye-MCP | I-`Bearer` JWT nome i-key ye-`cak_…` | Kungena (AI) | `Api/src/modules/mcp/` | [Seva ye-MCP](../api/mcp) |
-| Bahlinzeki bekucuketfwa | Ngamunye: akukho / OAuth PKCE / lidivayisi / fomu | Kungena kwekucuketfwa | `Packages/content-providers/` | [Umhlinzeki Wekucuketfwa](../freeplay-content-provider) |
+| REST API | I-`Bearer` JWT nome i-key ye-`cak_…` | Kungena | `Api/src/modules/*` | [Ema-API Key](../api/api-keys.md) |
+| Ema-API key | I-token ye-`cak_` lehashiwe nge-SHA-256 | Imininingwane leliciniso | `Api/.../membership/controllers/ApiKeyController.ts` | [Ema-API Key](../api/api-keys.md) |
+| OAuth 2.0 / Tinhlelo Letixhunyiwe | Khodi yekuvunyelwa · lidivayisi · refresh → JWT | Kungena | `Api/.../membership/controllers/OAuthController.ts` | [Tinhlelo Letixhunyiwe](../api/connected-apps.md) |
+| Ema-Webhook | Imfihlo ngewebhook ngayinye, luphawu lwe-HMAC-SHA256 | Kuphuma | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Ema-Webhook](../api/webhooks.md) |
+| Seva ye-MCP | I-`Bearer` JWT nome i-key ye-`cak_…` | Kungena (AI) | `Api/src/modules/mcp/` | [Seva ye-MCP](../api/mcp.md) |
+| Bahlinzeki bekucuketfwa | Ngamunye: akukho / OAuth PKCE / lidivayisi / fomu | Kungena kwekucuketfwa | `Packages/content-providers/` | [Umhlinzeki Wekucuketfwa](../freeplay-content-provider.md) |
 
 ## Tixhumi Letakhelwe Kucala
 
@@ -138,9 +139,9 @@ Kwentela ikhodi yakho, **[`@churchapps/integration-sdk`](https://www.npmjs.com/p
 
 ## Emakhasi Lahlobene
 
-- [Ema-API Key](../api/api-keys) — imininingwane leliciniso lelilula kanye neluhlu lwe-scope lolugcwele
-- [Tinhlelo Letixhunyiwe & OAuth](../api/connected-apps) — inchubo yekuvuma ye-multi-tenant
-- [Ema-Webhook](../api/webhooks) — umshini wemicimbi wekuphuma
-- [Seva ye-MCP](../api/mcp) — sisongela se-AI integration
-- [Umhlinzeki Wekucuketfwa we-FreePlay](../freeplay-content-provider) — kuba mtfombo wekucuketfwa lokungenako
+- [Ema-API Key](../api/api-keys.md) — imininingwane leliciniso lelilula kanye neluhlu lwe-scope lolugcwele
+- [Tinhlelo Letixhunyiwe & OAuth](../api/connected-apps.md) — inchubo yekuvuma ye-multi-tenant
+- [Ema-Webhook](../api/webhooks.md) — umshini wemicimbi wekuphuma
+- [Seva ye-MCP](../api/mcp.md) — sisongela se-AI integration
+- [Umhlinzeki Wekucuketfwa we-FreePlay](../freeplay-content-provider.md) — kuba mtfombo wekucuketfwa lokungenako
 - [Bubanti (bemsebentisi wekugcina)](/docs/b1-admin/integrations/) — imihlahlandlela yekuhlela tixhumi letakhelwe kucala

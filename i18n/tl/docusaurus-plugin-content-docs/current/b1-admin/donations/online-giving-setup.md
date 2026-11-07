@@ -1,5 +1,6 @@
 ---
 title: "Pag-set Up ng Online Giving"
+description: "Ikonekta ang Stripe, PayPal, Kingdom Funding, o Paystack sa B1 Admin para makapagbigay online ang mga miyembro sa B1.church site at mag-sync sa talaan."
 ---
 
 # Pag-set Up ng Online Giving

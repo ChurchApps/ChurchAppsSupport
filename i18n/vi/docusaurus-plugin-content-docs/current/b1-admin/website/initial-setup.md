@@ -1,5 +1,7 @@
 ---
-title: "Thiết lập ban đầu"
+title: "Bắt đầu với trang web B1 Admin của bạn"
+sidebar_label: "Thiết lập ban đầu"
+description: "Thiết lập trang web hội thánh B1 Admin: trỏ tên miền phụ hoặc tên miền riêng, tạo trang chủ, chọn màu thương hiệu và logo, và xây dựng điều hướng."
 ---
 
 # Thiết lập ban đầu
@@ -45,7 +47,7 @@ Nếu bạn không thấy tùy chọn Settings, hãy nhờ người đã thiết
 6. Sau khi thêm một section, nhấp **Add Content** một lần nữa để chèn văn bản, hình ảnh, video, thẻ, biểu mẫu và nhiều thành phần khác bằng cách kéo thả chúng vào section của bạn.
 
 :::info
-Để xem hướng dẫn chi tiết về cách làm việc với trang và điều hướng, hãy xem [Managing Pages](managing-pages). Để có hướng dẫn đầy đủ về trình chỉnh sửa trực quan, hãy xem [Using the Page Editor](page-editor).
+Để xem hướng dẫn chi tiết về cách làm việc với trang và điều hướng, hãy xem [Managing Pages](./managing-pages.md). Để có hướng dẫn đầy đủ về trình chỉnh sửa trực quan, hãy xem [Using the Page Editor](./page-editor.md).
 :::
 
 ## Cấu hình giao diện trang web
@@ -57,7 +59,7 @@ Nếu bạn không thấy tùy chọn Settings, hãy nhờ người đã thiết
 5. Cấu hình **Site Footer** với thông tin liên hệ và liên kết của nhà thờ bạn.
 
 :::info
-Các thay đổi bạn thực hiện trong Appearance sẽ áp dụng cho toàn bộ trang web của bạn. Xem trang [Appearance](appearance) để biết hướng dẫn chi tiết về từng cài đặt.
+Các thay đổi bạn thực hiện trong Appearance sẽ áp dụng cho toàn bộ trang web của bạn. Xem trang [Appearance](./appearance.md) để biết hướng dẫn chi tiết về từng cài đặt.
 :::
 
 ## Thiết lập điều hướng
@@ -70,6 +72,6 @@ Các liên kết điều hướng của bạn xuất hiện trong chế độ xe
 
 ## Bước tiếp theo
 
-- [Managing Pages](managing-pages) -- Tìm hiểu chi tiết cách làm việc với trang và điều hướng
-- [Appearance](appearance) -- Tinh chỉnh màu sắc, phông chữ và bố cục trang web của bạn
-- [Files](files) -- Tải hình ảnh và tài liệu lên cho trang web của bạn
+- [Managing Pages](./managing-pages.md) -- Tìm hiểu chi tiết cách làm việc với trang và điều hướng
+- [Appearance](./appearance.md) -- Tinh chỉnh màu sắc, phông chữ và bố cục trang web của bạn
+- [Files](./files.md) -- Tải hình ảnh và tài liệu lên cho trang web của bạn

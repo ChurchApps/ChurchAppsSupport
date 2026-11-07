@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Opsæt B1App-medlemswebappen lokalt med Next.js 22+, konfigurer dens API-endepunkter i .env og kør udviklingsserveren på port 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App er den offentligt-vendt kirkmedlemsapplikation bygget med Next.js. Den giv
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer **Node.js 22+** og **Git** -- se [Forudsætninger](../setup/prerequisites)
-- Konfigurér dit API-mål (staging eller lokalt) -- se [Miljøvariabler](../setup/environment-variables)
+- Installer **Node.js 22+** og **Git** -- se [Forudsætninger](../setup/prerequisites.md)
+- Konfigurér dit API-mål (staging eller lokalt) -- se [Miljøvariabler](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Produktionsbyggerier implementeres til **S3 + CloudFront**:
 3. CloudFront-ugyldighed udløses for at betjene den nye version
 
 :::tip
-For detaljerede installationsinstruktioner, se vejledningen [Webapp-installation](../deployment/web-apps).
+For detaljerede installationsinstruktioner, se vejledningen [Webapp-installation](../deployment/web-apps.md).
 :::

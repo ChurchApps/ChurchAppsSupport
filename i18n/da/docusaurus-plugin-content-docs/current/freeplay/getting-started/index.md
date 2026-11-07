@@ -1,5 +1,7 @@
 ---
-title: "Kom i gang"
+title: "Kom i gang med FreePlay TV-appen"
+sidebar_label: "Kom i gang"
+description: "Opsæt FreePlay på Android TV, Fire TV eller Apple TV: installer appen, åbn den første gang, og lær fjernbetjeningens knapper og sidemenuen at kende."
 ---
 
 # Kom i gang med FreePlay
@@ -52,5 +54,5 @@ Sidelinjen kollapses til en smal stribe med ikoner, når du gennemser indhold. T
 
 ## Hvad nu
 
-- **[Valg af en paringsmodus](./pairing-modes)** - Lær om de forskellige måder at forbinde dit TV
-- **[Indholdsudbydere](../content-providers/)** - Forbind til Lessons.church, Bible Project og mere
+- **[Valg af en paringsmodus](./pairing-modes.md)** - Lær om de forskellige måder at forbinde dit TV
+- **[Indholdsudbydere](../content-providers/index.md)** - Forbind til Lessons.church, Bible Project og mere

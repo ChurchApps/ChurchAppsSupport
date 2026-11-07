@@ -1,5 +1,6 @@
 ---
 title: "Närvaroendpoints"
+description: "Referens för närvaro-API:et i B1 Admin och B1 Checkin: campus, gudstjänster, gudstjänsttider, sessioner, besök, incheckningsregler och exportendpoints."
 ---
 
 # Närvaroendpoints
@@ -270,6 +271,6 @@ Följer närvaroserier för enskilda personer -- antal veckor i följd som en pe
 
 ## Relaterade sidor
 
-- [Medlemsendpoints](./membership) — Personer, grupper, roller och församlingshantering
-- [Autentisering och behörigheter](./authentication) — Inloggningsflöde, JWT, behörighetsmodell
-- [Modulstruktur](../module-structure) — Mönster för kodorganisation
+- [Medlemsendpoints](./membership.md) — Personer, grupper, roller och församlingshantering
+- [Autentisering och behörigheter](./authentication.md) — Inloggningsflöde, JWT, behörighetsmodell
+- [Modulstruktur](../module-structure.md) — Mönster för kodorganisation

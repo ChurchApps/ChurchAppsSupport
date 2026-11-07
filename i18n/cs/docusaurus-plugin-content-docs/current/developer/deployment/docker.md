@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting with Docker"
+description: "Nainstalujte si soukromý zásobník B1 Admin, členského portálu, API a MySQL na svůj počítač pomocí Dockeru a poté jej aktualizujte a zálohujte příkazem b1."
 ---
 
 # Self-Hosting with Docker
 
 <div class="article-intro">
 
-Spusťte si vlastní soukromou instanci aplikace B1 Admin, webu a členského portálu B1, API a databáze MySQL na libovolném počítači s Dockerem — domácím serveru, malém VPS nebo lokálním serveru. Jediným příkazem to nainstalujete a jediným příkazem aktualizujete, přičemž každá aktualizace nejprve vytvoří zálohu. Pokud nechcete spravovat server vůbec, podívejte se na [Self-Hosting na Railway](./railway-template), který nabízí spravovanou alternativu.
+Spusťte si vlastní soukromou instanci aplikace B1 Admin, webu a členského portálu B1, API a databáze MySQL na libovolném počítači s Dockerem — domácím serveru, malém VPS nebo lokálním serveru. Jediným příkazem to nainstalujete a jediným příkazem aktualizujete, přičemž každá aktualizace nejprve vytvoří zálohu. Pokud nechcete spravovat server vůbec, podívejte se na [Self-Hosting na Railway](./railway-template.md), který nabízí spravovanou alternativu.
 
 </div>
 
@@ -94,10 +95,10 @@ Pokud jste instalovali na `localhost` a později ji chcete zpřístupnit veřejn
 
 Tyto funkce fungují úplně stejně jako na Railway — stejné proměnné prostředí, jen nastavené v souboru `.env` místo řídicího panelu Railway:
 
-- **[E-mail / SMTP](./railway-template#1-email-highly-recommended)** — návody pro poskytovatele Resend, Brevo a Gmail
-- **[Více webů](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — neomezený počet sborů v jedné instanci. Na `/` se zobrazuje sbor, jehož slug odpovídá hodnotě `DEFAULT_CHURCH_SLUG` (prvním sborem je `church`); další domény nasměrujte na tento server a namapujte je v aplikaci B1Admin v sekci **Nastavení → Domény**
-- **[Online dary](./railway-template#4-online-giving-stripe--paypal)** — nastavují se pro každý sbor v administračním rozhraní
-- **[Volitelné integrace](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[E-mail / SMTP](./railway-template.md#1-email-highly-recommended)** — návody pro poskytovatele Resend, Brevo a Gmail
+- **[Více webů](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — neomezený počet sborů v jedné instanci. Na `/` se zobrazuje sbor, jehož slug odpovídá hodnotě `DEFAULT_CHURCH_SLUG` (prvním sborem je `church`); další domény nasměrujte na tento server a namapujte je v aplikaci B1Admin v sekci **Nastavení → Domény**
+- **[Online dary](./railway-template.md#4-online-giving-stripe--paypal)** — nastavují se pro každý sbor v administračním rozhraní
+- **[Volitelné integrace](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push notifikace](#push-notifikace)** — `WEB_PUSH_*`; instalátor je ponechává prázdné, takže push notifikace jsou vypnuté, dokud je nedoplníte
 
 Pozvánky a další e-maily odesílané sborem jsou na self-hostované instanci povoleny automaticky. (Hostovaná služba je z důvodu ochrany reputace odesílatele zpřístupňuje až po ruční kontrole.)
@@ -148,7 +149,7 @@ Příkaz `./deploy/b1 backup` zapíše konzistentní snímek prvních dvou svazk
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-U velkých mediálních knihoven můžete úložiště souborů přepnout na S3 — nastavte `FILE_STORE=S3` a proměnné `AWS_*` popsané v sekci [Ukládání souborů v průvodci pro Railway](./railway-template#5-file-storage). Zálohy databáze neobsahují objekty v S3; v tomto případě zapněte verzování bucketu.
+U velkých mediálních knihoven můžete úložiště souborů přepnout na S3 — nastavte `FILE_STORE=S3` a proměnné `AWS_*` popsané v sekci [Ukládání souborů v průvodci pro Railway](./railway-template.md#5-file-storage). Zálohy databáze neobsahují objekty v S3; v tomto případě zapněte verzování bucketu.
 
 ## Aktualizace
 
@@ -187,6 +188,6 @@ Stále nejde problém vyřešit? Otevřete issue na adrese [github.com/ChurchApp
 
 ## Související články
 
-- **[Self-Hosting na Railway](./railway-template)** — alternativa se spravovaným hostingem a společné průvodce konfigurací po nasazení
-- **[Počáteční nastavení](../../getting-started/initial-setup)** — první kroky po vytvoření sboru
-- **[Nastavení lokálního API](../api/local-setup)** — spuštění celého stacku přímo pro vývoj
+- **[Self-Hosting na Railway](./railway-template.md)** — alternativa se spravovaným hostingem a společné průvodce konfigurací po nasazení
+- **[Počáteční nastavení](../../getting-started/initial-setup.md)** — první kroky po vytvoření sboru
+- **[Nastavení lokálního API](../api/local-setup.md)** — spuštění celého stacku přímo pro vývoj

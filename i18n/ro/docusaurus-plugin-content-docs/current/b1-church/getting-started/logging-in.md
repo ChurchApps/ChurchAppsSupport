@@ -1,5 +1,7 @@
 ---
-title: "Autentificare"
+title: "Autentificare în B1.church și portalul de membri"
+sidebar_label: "Autentificare"
+description: "Conectează-te la portalul B1.church, folosește coduri în doi pași sau single sign-on, resetează o parolă uitată și deconectează-te din meniul contului."
 ---
 
 # Autentificare
@@ -17,7 +19,7 @@ Autentificarea în B1.church îți oferă acces la portalul pentru membri, unde 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Ai nevoie de un cont ChurchApps. Vezi [Primii pași](../getting-started/) pentru a crea unul.
+- Ai nevoie de un cont ChurchApps. Vezi [Primii pași](./index.md) pentru a crea unul.
 - Ai nevoie de adresa URL B1.church a bisericii tale (de exemplu, `https://yourchurchname.b1.church`).
 
 </div>
@@ -39,7 +41,7 @@ Rămâi conectat în același browser sau în aplicația instalată până te de
 
 ## Accesarea portalului pentru membri
 
-Odată autentificat, poți accesa portalul pentru membri făcând clic pe **numele tău** din colțul din dreapta sus al paginii și selectând **Portalul pentru membri** din meniu. Portalul pentru membri este locul în care se află toate instrumentele tale personale ale bisericii, inclusiv [panoul Acasă](./navigating.md), [pagina Eu](./me-page.md), [grupurile](../groups/), [donațiile](../giving/) și multe altele.
+Odată autentificat, poți accesa portalul pentru membri făcând clic pe **numele tău** din colțul din dreapta sus al paginii și selectând **Portalul pentru membri** din meniu. Portalul pentru membri este locul în care se află toate instrumentele tale personale ale bisericii, inclusiv [panoul Acasă](./navigating.md), [pagina Eu](./me-page.md), [grupurile](../groups/index.md), [donațiile](../giving/index.md) și multe altele.
 
 ## Meniul utilizatorului
 

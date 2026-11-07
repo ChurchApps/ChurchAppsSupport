@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Como músicas, lições e modelos enviados por usuários passam pela fila de moderação compartilhada no Server Admin do B1 Admin, do envio à publicação."
 ---
 
 # Content Commons — Biblioteca de Recursos Compartilhados e Moderação

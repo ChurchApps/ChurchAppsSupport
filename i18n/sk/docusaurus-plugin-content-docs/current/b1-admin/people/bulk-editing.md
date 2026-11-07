@@ -1,5 +1,6 @@
 ---
 title: "Hromadné úpravy osôb"
+description: "Hromadne upravte stav členstva, rodinný stav, pohlavie, odhlásenie, vlastné polia Áno/Nie alebo členstvo v skupinách pre mnoho ľudí naraz v B1 Admin."
 ---
 
 # Hromadné úpravy osôb

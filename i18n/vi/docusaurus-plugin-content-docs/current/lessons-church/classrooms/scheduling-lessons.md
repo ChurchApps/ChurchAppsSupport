@@ -1,5 +1,7 @@
 ---
-title: "Lên lịch bài học"
+title: "Lên lịch bài học lớp học trong cổng quản trị"
+sidebar_label: "Lên lịch bài học"
+description: "Lên lịch bài học Lessons.church cho lớp học trong cổng B1 Admin bằng cách chọn chương trình, khóa học, bài học và địa điểm theo độ tuổi cho từng ngày."
 ---
 
 # Lên lịch bài học

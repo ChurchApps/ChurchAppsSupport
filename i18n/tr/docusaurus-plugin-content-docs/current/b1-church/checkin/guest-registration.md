@@ -1,5 +1,6 @@
 ---
 title: "Misafir Kaydı"
+description: "B1 Checkin'deki QR formuyla kendinizi ve ailenizi ilk kez gelen konuk olarak kaydedin; böylece geldiğinizde gönüllüler sizi check-in yapabilir."
 ---
 
 # Misafir Kaydı
@@ -22,7 +23,7 @@ Bir kiliseyi ilk kez ziyaret ediyorsanız, misafir kaydı sayfasını kullanarak
 
 Misafir kaydı, henüz hesabı olmayan ziyaretçiler için tasarlanmıştır. Kilisenin check-in kioskunda, kayıt sayfasına bağlanan bir QR kodu göstermek için **Misafir olarak kaydolun** düğmesine dokunun. Bağlantıyı bir gönüllüden veya karşılayıcıdan da alabilir, ayrıca bir broşürde ya da kilisenin web sitesinde bulabilirsiniz.
 
-Yanınızda telefon yok mu? Kioskta aynı QR kodu penceresindeki **Buradan kaydolun** düğmesine dokunarak formu doğrudan kioskta doldurabilirsiniz. Bunun kioskta nasıl çalıştığını öğrenmek için [Misafir Olarak Kaydolma](../../b1-checkin/check-in/looking-up-members#registering-as-a-guest) bölümüne bakın.
+Yanınızda telefon yok mu? Kioskta aynı QR kodu penceresindeki **Buradan kaydolun** düğmesine dokunarak formu doğrudan kioskta doldurabilirsiniz. Bunun kioskta nasıl çalıştığını öğrenmek için [Misafir Olarak Kaydolma](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) bölümüne bakın.
 
 Sayfa **Misafir Kaydı** başlığıyla açılır. Kilise bir üst bilgi fotoğrafı eklemişse sayfanın üstünde görünür; eklememişse küçük bir simge görürsünüz.
 
@@ -51,7 +52,7 @@ Kaydınız, kilise veritabanında şu kayıtları oluşturur:
 - Her aile üyesi için "Ziyaretçi" üyelik durumuna sahip **kişi kayıtları** oluşturulur.
 - Girdiğiniz yorumlar, kilise personelinin okuması için birincil iletişim kişisinin kaydına not olarak eklenir.
 - Kilise, yeni misafirler için bir grup seçmişse aileniz bu gruba eklenir. Kilise, grubun planlanmış ibadet saatlerinden birinde kaydolursanız katılımınızın otomatik olarak kaydedilmesini de sağlayabilir.
-- Bir kilise gönüllüsü veya yöneticisi, ailenizi [B1 Checkin](../../b1-checkin/check-in/looking-up-members) kioskunu kullanarak check-in yapabilir.
+- Bir kilise gönüllüsü veya yöneticisi, ailenizi [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kioskunu kullanarak check-in yapabilir.
 
 :::info
 Aynı ad ve aynı e-posta veya telefon numarasıyla yeniden kaydolursanız, kilisenin kayıtları sizi tanır ve kopya oluşturmak yerine mevcut profilinizi kullanır. Diğer herkes yeni kişi olarak eklenir. Daha önce kaydolduysanız, kioskta yalnızca adınızı veya telefon numaranızı arayabilirsiniz.
@@ -63,6 +64,6 @@ Form e-posta adresinizi istiyorsa, bunu vermeniz kilisenin ziyaretinizden sonra 
 
 ## İlgili Makaleler
 
-- [Self Check-In](./self-checkin) -- Kaydolduktan sonra kendinizi check-in yapın
-- [Misafir Ekleme (Kiosk)](../../b1-checkin/check-in/adding-guests) -- Gönüllülerin kioskta misafir eklemesi
-- [Check-In](../../b1-admin/attendance/check-in#guest-registration-via-qr-code) -- Kilise yöneticilerinin QR misafir kaydını nasıl kurduğu
+- [Self Check-In](./self-checkin.md) -- Kaydolduktan sonra kendinizi check-in yapın
+- [Misafir Ekleme (Kiosk)](../../b1-checkin/check-in/adding-guests.md) -- Gönüllülerin kioskta misafir eklemesi
+- [Check-In](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Kilise yöneticilerinin QR misafir kaydını nasıl kurduğu

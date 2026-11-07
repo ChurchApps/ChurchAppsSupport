@@ -1,5 +1,7 @@
 ---
-title: "Zelf aanmelden"
+title: "Zelf inchecken in het ledenportaal van B1.church"
+sidebar_label: "Zelf aanmelden"
+description: "Check jezelf en je huishouden in bij een dienst via het ledenportaal van B1.church, met een paar snelle stappen om dienstijden en groepen te kiezen."
 ---
 
 # Zelf aanmelden

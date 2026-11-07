@@ -1,5 +1,7 @@
 ---
-title: "Thứ tự buổi thờ phượng"
+title: "Thứ tự chương trình trong B1 Admin"
+sidebar_label: "Thứ tự buổi thờ phượng"
+description: "Thiết lập thứ tự chương trình thờ phượng trong B1 Admin: thêm bài hát, bài học và mục tùy chỉnh, sắp xếp thành các phần và in bảng hướng dẫn điều hành."
 ---
 
 # Thứ tự buổi thờ phượng

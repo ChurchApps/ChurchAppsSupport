@@ -1,5 +1,7 @@
 ---
-title: "Etkinliklere Kayıt Olma"
+title: "B1 Mobile'da Etkinliklere Kayıt"
+sidebar_label: "Etkinliklere Kayıt Olma"
+description: "B1 Mobile uygulamasından kilise etkinliklerine kendinizi ve aile üyelerinizi kaydedin, kalan kontenjanı kontrol edin ve üç adımda kaydınızı onaylayın."
 ---
 
 # Etkinliklere Kayıt Olma
@@ -13,7 +15,7 @@ Basit üç adımlık bir süreçle B1 Mobile üzerinden doğrudan kilise etkinli
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - Etkinlikte kayıt özelliği açık olmalı ve kayıt süresi devam ediyor olmalıdır
 
 </div>
@@ -50,4 +52,4 @@ Ayrıca hesabınızla ilişkili e-posta adresine bir **onay e-postası** alacaks
 ## İlgili Makaleler
 
 - [Etkinlikler Genel Bakış](./index.md) -- Mobilde kaydı açık etkinlikleri inceleyin
-- [Planları Görüntüleme](../serving/viewing-plans) -- Hizmet programınızı görün
+- [Planları Görüntüleme](../serving/viewing-plans.md) -- Hizmet programınızı görün

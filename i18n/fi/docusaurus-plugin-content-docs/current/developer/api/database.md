@@ -1,5 +1,6 @@
 ---
 title: "Tietokanta"
+description: "Opi, miten ChurchApps-API jakaa tiedot kuuteen MySQL-tietokantaan, yksi kullekin moduulille, sekä miten yhteydet määritellään ja alustetaan."
 ---
 
 # Tietokanta
@@ -13,8 +14,8 @@ ChurchApps API käyttää **tietokanta-per-moduuli** -arkkitehtuuria. Jokaisella
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Asenna **MySQL 8.0+** -- katso [Esivaatimukset](../setup/prerequisites)
-- Määritä tietokantayhteyden merkkijonot `.env`-tiedostossasi -- katso [Ympäristömuuttujat](../setup/environment-variables)
+- Asenna **MySQL 8.0+** -- katso [Esivaatimukset](../setup/prerequisites.md)
+- Määritä tietokantayhteyden merkkijonot `.env`-tiedostossasi -- katso [Ympäristömuuttujat](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Keskeiset suunnitteluratkaisut
 
 - **Yksi tietokanta moduulia kohden** -- Jokainen moduuli ylläpitää omaa MySQL-tietokantaansa omalla yhteyspoolillaan (jota hallinnoi `KyselyPool`). Tämä pitää moduulit erillään toisistaan ja mahdollistaa skeeman itsenäisen kehittämisen.
-- **Yksinomainen omistajuus** -- Moduulin taulukoita lukee ja kirjoittaa vain kyseisen moduulin oma koodi. Kun toinen moduuli tarvitsee dataa, se kutsuu omistavan moduulin yhdyskäytävää sen sijaan, että kysyisi taulukoita suoraan -- katso [Moduulien välinen viestintä](./module-structure#cross-module-communication).
+- **Yksinomainen omistajuus** -- Moduulin taulukoita lukee ja kirjoittaa vain kyseisen moduulin oma koodi. Kun toinen moduuli tarvitsee dataa, se kutsuu omistavan moduulin yhdyskäytävää sen sijaan, että kysyisi taulukoita suoraan -- katso [Moduulien välinen viestintä](./module-structure.md#cross-module-communication).
 - **Repository-malli ilman ORM:ää** -- Kaikki datan käsittely kulkee repository-luokkien kautta, jotka rakentavat tyypitettyjä SQL-kyselyitä Kysely-kyselyrakentajalla moduulin skeemaa vasten. Tämä antaa täyden hallinnan kyselyjen suorituskykyyn ja toimintaan.
 - **Monivuokraus suunnittelun perustana** -- Jokainen kysely rajataan `churchId`:n mukaan. Kaikissa tauluissa on `churchId`-sarake, ja repository-kerros valvoo vuokralaisten eristämistä automaattisesti.
 
@@ -129,5 +130,5 @@ Tämä rajoite tekee moduulirajoista todellisia: jokainen skeema voi kehittyä i
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Moduulirakenne](./module-structure)** -- Miten controllerit ja repositoryt on järjestetty kunkin moduulin sisällä
-- **[Paikallinen API-asennus](./local-setup)** -- Täydellinen vaiheittainen asennusopas
+- **[Moduulirakenne](./module-structure.md)** -- Miten controllerit ja repositoryt on järjestetty kunkin moduulin sisällä
+- **[Paikallinen API-asennus](./local-setup.md)** -- Täydellinen vaiheittainen asennusopas

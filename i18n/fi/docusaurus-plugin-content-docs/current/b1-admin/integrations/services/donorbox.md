@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Yhdistä Donorbox B1 Adminiin Zapierilla, jotta verkkolahjoitukset luovat lahjoitustietueet ja lahjoittajaprofiilit automaattisesti ilman manuaalista vientiä."
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorboxin *New or Updated Donation* käynnistyy myös muokkauksista. Käytä Za
 
 ## Katso myös
 
-- [Zapier (yleiskatsaus)](../zapier): B1-puoli jokaisesta Zapier-reseptistä
-- [Subsplash](./subsplash): toinen lahjoitusalusta, jolla on Zapier-sovellus
-- [Mailchimp](./mailchimp): ketjuta "uusi lahjoitus" sähköpostitunnisteeksi
+- [Zapier (yleiskatsaus)](../zapier.md): B1-puoli jokaisesta Zapier-reseptistä
+- [Subsplash](./subsplash.md): toinen lahjoitusalusta, jolla on Zapier-sovellus
+- [Mailchimp](./mailchimp.md): ketjuta "uusi lahjoitus" sähköpostitunnisteeksi

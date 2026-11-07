@@ -1,5 +1,6 @@
 ---
 title: "Attendance-asetukset"
+description: "Määritä B1 Adminissa seurakunnat, palvelut, palveluajat ja ryhmäjaot, jotta läsnäolon seuranta ja sisäänkirjautumisaikataulut toimivat koko seurakunnassanne."
 ---
 
 # Attendance-asetukset

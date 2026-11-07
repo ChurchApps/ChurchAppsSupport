@@ -1,5 +1,7 @@
 ---
-title: "Počáteční nastavení"
+title: "Začínáme s webem B1 Admin"
+sidebar_label: "Počáteční nastavení"
+description: "Nastavte web církve v B1 Admin: připojte subdoménu nebo vlastní doménu, vytvořte domovskou stránku, vyberte barvy značky a logo a sestavte navigaci."
 ---
 
 # Počáteční nastavení
@@ -45,7 +47,7 @@ Pokud nevidíte možnost Nastavení, požádejte osobu, která nastavila účet 
 6. Po přidání sekce znovu klikněte na **Přidat obsah** a vložte text, obrázky, videa, karty, formuláře a další prvky tak, že je přetáhnete do sekce.
 
 :::info
-Podrobné pokyny k práci se stránkami a navigací najdete v článku [Správa stránek](managing-pages). Úplného průvodce vizuálním editorem najdete v článku [Použití editoru stránek](page-editor).
+Podrobné pokyny k práci se stránkami a navigací najdete v článku [Správa stránek](./managing-pages.md). Úplného průvodce vizuálním editorem najdete v článku [Použití editoru stránek](./page-editor.md).
 :::
 
 ## Úprava vzhledu webu
@@ -57,7 +59,7 @@ Podrobné pokyny k práci se stránkami a navigací najdete v článku [Správa 
 5. Nastavte **Patičku webu** s kontaktními údaji a odkazy vaší církve.
 
 :::info
-Změny provedené v sekci Vzhled se projeví na celém vašem webu. Podrobné pokyny k jednotlivým nastavením najdete na stránce [Vzhled](appearance).
+Změny provedené v sekci Vzhled se projeví na celém vašem webu. Podrobné pokyny k jednotlivým nastavením najdete na stránce [Vzhled](./appearance.md).
 :::
 
 ## Nastavení navigace
@@ -70,6 +72,6 @@ Odkazy navigace se zobrazují v zobrazení Stránky webu. Chcete-li je uspořád
 
 ## Další kroky
 
-- [Správa stránek](managing-pages) -- Podrobně se naučte pracovat se stránkami a navigací
-- [Vzhled](appearance) -- Doladěte barvy, písma a rozvržení webu
-- [Soubory](files) -- Nahrávejte obrázky a dokumenty pro svůj web
+- [Správa stránek](./managing-pages.md) -- Podrobně se naučte pracovat se stránkami a navigací
+- [Vzhled](./appearance.md) -- Doladěte barvy, písma a rozvržení webu
+- [Soubory](./files.md) -- Nahrávejte obrázky a dokumenty pro svůj web

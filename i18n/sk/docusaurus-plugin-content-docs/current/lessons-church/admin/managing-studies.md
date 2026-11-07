@@ -1,5 +1,6 @@
 ---
 title: "Správa štúdií"
+description: "Vytváranie, úprava a kategorizácia štúdií v rámci programu v admin časti Lessons.church a priradenie prehľadov série alebo šablón newsletterov ku každej."
 ---
 
 # Správa štúdií

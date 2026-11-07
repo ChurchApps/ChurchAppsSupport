@@ -1,5 +1,6 @@
 ---
 title: "Дељене библиотеке"
+description: "Документација за @churchapps npm пакете које деле B1 Admin, B1.church и API-ји, као и подешавање Packages радног простора и објављивање преко changesets-а."
 ---
 
 # Дељене библиотеке
@@ -14,9 +15,9 @@ ChurchApps дељени код се објављује на npm-у под опс
 
 | Пакет | Опис | Користе |
 |-------|------|---------|
-| [`@churchapps/helpers`](./helpers) | Основни слој: помоћне функције без зависности од оквира и заједničке TypeScript интерфејсе које чине уговор о подацима између апликација | Сви пројекти |
-| [`@churchapps/apihelper`](./api-helper) | Серверске Express помоћне функције: аутентификација, базни контролери, приступ бази, AWS и интеграције за е-пошту | Сви API-ји |
-| [`@churchapps/apphelper`](./app-helper) | Дељене React компоненте и функционални модули (пријава, донације, обрасци, markdown, веб-сајт) | Све веб апликације |
+| [`@churchapps/helpers`](./helpers.md) | Основни слој: помоћне функције без зависности од оквира и заједničке TypeScript интерфејсе које чине уговор о подацима између апликација | Сви пројекти |
+| [`@churchapps/apihelper`](./api-helper.md) | Серверске Express помоћне функције: аутентификација, базни контролери, приступ бази, AWS и интеграције за е-пошту | Сви API-ји |
+| [`@churchapps/apphelper`](./app-helper.md) | Дељене React компоненте и функционални модули (пријава, донације, обрасци, markdown, веб-сајт) | Све веб апликације |
 | `@churchapps/content-providers` | Апстракција над спољним добављачима садржаја (Lessons.church, Planning Center, Dropbox и други) | Api, B1Admin, B1App, FreePlay |
 | `@churchapps/integration-sdk` | Алатка за израду B1.church интеграција: верификација webhook-ова, типизирани REST клијент, OAuth помоћне функције | Спољни програмери интеграција |
 | `@churchapps/texting` | Апстракција над SMS добављачима (Text In Church, Clearstream, Mutual Ministry, MinistryStuff, Nalo Solutions, Twilio) | Api |

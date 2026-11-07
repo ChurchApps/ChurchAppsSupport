@@ -1,5 +1,6 @@
 ---
 title: "Cài đặt như một ứng dụng (PWA)"
+description: "Cài đặt B1.church như một ứng dụng trên iPhone hoặc Android từ cổng thành viên, thêm biểu tượng vào màn hình chính bằng Safari hoặc Chrome."
 ---
 
 # Cài đặt như một ứng dụng (PWA)

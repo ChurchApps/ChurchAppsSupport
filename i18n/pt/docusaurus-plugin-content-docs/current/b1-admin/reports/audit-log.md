@@ -1,5 +1,6 @@
 ---
 title: "Log de Auditoria"
+description: "Revise o log de auditoria no B1 Admin para ver quem entrou, editou registros de pessoas ou alterou permissões, e exporte as entradas filtradas em CSV."
 ---
 
 # Log de Auditoria
@@ -78,6 +79,6 @@ Revise o log de auditoria regularmente, especialmente após integrar novos membr
 
 ## Artigos Relacionados
 
-- [Funções e Permissões](../settings/roles-permissions) -- Gerenciar quem tem acesso ao quê
-- [Segurança de Dados](../settings/data-security) -- Entender como seus dados são protegidos
+- [Funções e Permissões](../settings/roles-permissions.md) -- Gerenciar quem tem acesso ao quê
+- [Segurança de Dados](../settings/data-security.md) -- Entender como seus dados são protegidos
 - [Visão Geral de Relatórios](./index.md) -- Veja todos os relatórios disponíveis

@@ -1,5 +1,6 @@
 ---
 title: "AI-sökning"
+description: "Sök i din personkatalog i B1 Admin med vanliga frågor, till exempel vilka medlemmar som inte har varit med på tre månader, i stället för att bygga filter."
 ---
 
 # AI-sökning

@@ -1,5 +1,6 @@
 ---
 title: "Endpoint Messaging"
+description: "Referensi endpoint API pesan ChurchApps: percakapan, aturan akses catatan, SMS, templat email, notifikasi, dan perangkat."
 ---
 
 # Endpoint Messaging
@@ -190,7 +191,7 @@ Path dasar: `/messaging/notificationpreferences`
 
 Path dasar: `/messaging/connections`
 
-Mengelola koneksi WebSocket/real-time untuk obrolan, percakapan grup, pesan pribadi, dan siaran langsung. Lihat [Arsitektur Real-time](../../realtime) untuk protokol end-to-end.
+Mengelola koneksi WebSocket/real-time untuk obrolan, percakapan grup, pesan pribadi, dan siaran langsung. Lihat [Arsitektur Real-time](../../realtime.md) untuk protokol end-to-end.
 
 | Metode | Path | Auth | Izin | Deskripsi |
 |--------|------|------|------|-----------|
@@ -367,9 +368,9 @@ Melacak status pengiriman untuk pesan yang terkirim (SMS, notifikasi push, email
 
 ## Halaman Terkait
 
-- [Arsitektur Real-time](../../realtime) -- protokol WebSocket, langganan room, dan kerangka pengiriman terpadu
-- [Notifikasi Web Push](../../web-push) -- pendaftaran dan pengiriman push browser
-- [Endpoint Keanggotaan](./membership) -- orang, grup, peran, dan identitas inti
-- [Endpoint Kehadiran](./attendance) -- pelacakan layanan dan kunjungan
-- [Autentikasi & Izin](./authentication) -- alur login, JWT, OAuth, dan model izin
-- [Struktur Modul](../module-structure) -- pola organisasi kode
+- [Arsitektur Real-time](../../realtime.md) -- protokol WebSocket, langganan room, dan kerangka pengiriman terpadu
+- [Notifikasi Web Push](../../web-push.md) -- pendaftaran dan pengiriman push browser
+- [Endpoint Keanggotaan](./membership.md) -- orang, grup, peran, dan identitas inti
+- [Endpoint Kehadiran](./attendance.md) -- pelacakan layanan dan kunjungan
+- [Autentikasi & Izin](./authentication.md) -- alur login, JWT, OAuth, dan model izin
+- [Struktur Modul](../module-structure.md) -- pola organisasi kode

@@ -26,7 +26,7 @@ Verbinden Sie ChatGPT mit den Daten Ihrer Gemeinde in B1 und stellen Sie Fragen 
 </div>
 
 :::tip Empfohlen: Probieren Sie zuerst Claude – es ist kostenlos
-[Claude](./claude) verbindet sich im **kostenlosen Tarif** mit B1 und ist in weniger als 3 Minuten eingerichtet – fügen Sie B1 einfach als Connector hinzu und melden Sie sich mit Ihrem B1-Konto an. Es ist kein Schlüssel nötig. So kann Ihre Gemeinde KI mit B1 am einfachsten ausprobieren, bevor sie für etwas bezahlt.
+[Claude](./claude.md) verbindet sich im **kostenlosen Tarif** mit B1 und ist in weniger als 3 Minuten eingerichtet – fügen Sie B1 einfach als Connector hinzu und melden Sie sich mit Ihrem B1-Konto an. Es ist kein Schlüssel nötig. So kann Ihre Gemeinde KI mit B1 am einfachsten ausprobieren, bevor sie für etwas bezahlt.
 :::
 
 ## Einrichtung
@@ -254,5 +254,5 @@ Jeder, der den Link hat, kann Fragen in natürlicher Sprache stellen. Die Scopes
 
 - [API-Schlüssel](/docs/developer/api/api-keys) — vollständige Übersicht der Scopes
 - [MCP-Server (Entwicklerreferenz)](/docs/developer/api/mcp) — Protokolldetails und Tool-Schemas
-- [Claude](./claude) — dasselbe Prinzip für die Modelle von Anthropic
+- [Claude](./claude.md) — dasselbe Prinzip für die Modelle von Anthropic
 - [REST-API-Referenz](/docs/developer/api/endpoints) — alle Endpunkte, die eine Custom-GPT-Action aufrufen kann

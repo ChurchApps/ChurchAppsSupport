@@ -1,12 +1,13 @@
 ---
 title: "Evenementinschrijvingen"
+description: "Hoe evenementinschrijvingen werken in B1 Admin en B1App: deelnemertypen, betaalde add-ons, kortingscodes, betalingen en wachtlijsten."
 ---
 
 # Evenementinschrijvingen
 
 <div class="article-intro">
 
-Inschrijvingen voor evenementen via de app zitten in de contentmodule en hebben sinds de golf met betaalde inschrijvingen een volledig handelsmodel: deelnemerstypen met prijs, optionele extra's met prijs, kortingscodes, betalingen via de bestaande giftengateway van de kerk, en een op status gebaseerde wachtlijst. De betaalroute hergebruikt bewust de giftenstack. De inschrijvingscontroller rekent af via dezelfde `GatewayService` / `IGatewayProvider`-abstractie die is beschreven in [Geven](./giving), zodat er in de contentmodule geen kaartgegevens of gateway-SDK-kennis aanwezig is. Deze pagina beschrijft het datamodel, de prijs- en capaciteitsregels, en de flows voor inschrijving, betaling en wachtlijst.
+Inschrijvingen voor evenementen via de app zitten in de contentmodule en hebben sinds de golf met betaalde inschrijvingen een volledig handelsmodel: deelnemerstypen met prijs, optionele extra's met prijs, kortingscodes, betalingen via de bestaande giftengateway van de kerk, en een op status gebaseerde wachtlijst. De betaalroute hergebruikt bewust de giftenstack. De inschrijvingscontroller rekent af via dezelfde `GatewayService` / `IGatewayProvider`-abstractie die is beschreven in [Geven](./giving.md), zodat er in de contentmodule geen kaartgegevens of gateway-SDK-kennis aanwezig is. Deze pagina beschrijft het datamodel, de prijs- en capaciteitsregels, en de flows voor inschrijving, betaling en wachtlijst.
 
 </div>
 
@@ -110,7 +111,7 @@ RegistrationController ─▶ RepoManager.getRepos("giving").gateway
                              └▶ IGatewayProvider.processCharge  (Stripe / PayPal / Kingdom Funding)
 ```
 
-Tokenisatie gebeurt in de browser precies zoals bij donaties (zie [Geven](./giving)). De wizard hergebruikt het apphelper-providerregister, zodat ingelogde leden met opgeslagen kaarten kunnen betalen en gasten een nieuwe kaart kunnen tokeniseren. De controller volgt de providerspecifieke eigenaardigheden van `DonateController`: Kingdom Funding `pm-{id}`-betaalmethode-id's (`` `pm-{id}` ``) en Stripe SCA-`requires_action`-antwoorden die naar de client worden teruggestuurd zonder dat er een betaling wordt vastgelegd. Een geslaagde betaling schrijft een `registrationPayments`-rij, verhoogt `amountPaid` en bevestigt de inschrijving. **Terugbetalingen zijn niet geïmplementeerd.** Een geannuleerde betaalde inschrijving behoudt zijn betalingsrijen, en eventuele terugbetaling wordt buiten het systeem om afgehandeld via het dashboard van de gateway.
+Tokenisatie gebeurt in de browser precies zoals bij donaties (zie [Geven](./giving.md)). De wizard hergebruikt het apphelper-providerregister, zodat ingelogde leden met opgeslagen kaarten kunnen betalen en gasten een nieuwe kaart kunnen tokeniseren. De controller volgt de providerspecifieke eigenaardigheden van `DonateController`: Kingdom Funding `pm-{id}`-betaalmethode-id's (`` `pm-{id}` ``) en Stripe SCA-`requires_action`-antwoorden die naar de client worden teruggestuurd zonder dat er een betaling wordt vastgelegd. Een geslaagde betaling schrijft een `registrationPayments`-rij, verhoogt `amountPaid` en bevestigt de inschrijving. **Terugbetalingen zijn niet geïmplementeerd.** Een geannuleerde betaalde inschrijving behoudt zijn betalingsrijen, en eventuele terugbetaling wordt buiten het systeem om afgehandeld via het dashboard van de gateway.
 
 Beide toegangspunten lopen via dezelfde codepad: `register` (betalen bij aanmelding) en `pay` (saldobetaling of voltooiing van de wachtlijst).
 
@@ -147,7 +148,7 @@ Opzoekingen over modulegrenzen heen (het oplossen of aanmaken van de gastpersoon
 
 ## Gerelateerde pagina's
 
-- [Geven](./giving): de gateway-abstractie, het providerregister en het tokenisatiemodel die deze functie hergebruikt
-- [Content-endpoints](../api/endpoints/content): de REST-interface van de contentmodule
-- [Webhooks](../api/webhooks): het evenement `registration.created`
-- [Modulestructuur](../api/module-structure): hoe de contentmodule server-side is georganiseerd
+- [Geven](./giving.md): de gateway-abstractie, het providerregister en het tokenisatiemodel die deze functie hergebruikt
+- [Content-endpoints](../api/endpoints/content.md): de REST-interface van de contentmodule
+- [Webhooks](../api/webhooks.md): het evenement `registration.created`
+- [Modulestructuur](../api/module-structure.md): hoe de contentmodule server-side is georganiseerd

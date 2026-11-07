@@ -1,5 +1,6 @@
 ---
 title: "Sisäänkirjautumisen turvallisuus"
+description: "Määritä B1 Adminissa lasten turvallisuus: huoneiden kapasiteetti, vapaaehtoisten suhdeluvut, noutolistat ja vanhemmille lähtevät viestit."
 ---
 
 # Sisäänkirjautumisen turvallisuus
@@ -15,7 +16,7 @@ B1 sisältää joukon lasten turvallisuuteen liittyviä sisäänkirjautumisen as
 
 - Määritä [osallistumisen rakenne](setup.md) ja [sisäänkirjautumispisteet](check-in.md)
 - Huoneet ovat [ryhmiä](../groups/creating-groups.md), jotka on linkitetty jumalanpalvelusaikoihin. Alla olevat turvallisuusasetukset määritetään ryhmässä.
-- Kutsu vanhempi -toiminto ja hätälähetys vaativat yhdistetyn tekstiviestipalvelun ([Text In Church](../integrations/services/text-in-church), [Clearstream](../integrations/services/clearstream) tai Mutual Ministry)
+- Kutsu vanhempi -toiminto ja hätälähetys vaativat yhdistetyn tekstiviestipalvelun ([Text In Church](../integrations/services/text-in-church.md), [Clearstream](../integrations/services/clearstream.md) tai Mutual Ministry)
 
 </div>
 
@@ -90,12 +91,12 @@ Molemmat ominaisuudet lähettävät tekstiviestejä seurakuntasi yhdistetyn teks
 
 Henkilöt, jotka ovat kieltäytyneet tekstiviesteistä tai joiden matkapuhelinnumeroa ei ole tallennettu, ohitetaan automaattisesti. Infopiste ilmoittaa, montako viestiä lähetettiin ja montako ohitettiin.
 
-Katso infopisteen puolen ohjeet artikkelista [Uloskirjautuminen ja lasten turvallisuus](../../b1-checkin/check-in/checking-out).
+Katso infopisteen puolen ohjeet artikkelista [Uloskirjautuminen ja lasten turvallisuus](../../b1-checkin/check-in/checking-out.md).
 
 ## Aiheeseen liittyvät artikkelit
 
 - [Sisäänkirjautuminen](check-in.md) — infopisteen asetukset ja laitteisto
-- [Uloskirjautuminen ja lasten turvallisuus](../../b1-checkin/check-in/checking-out) — infopisteen uloskirjautuminen, noudon varmennus ja kutsuprosessit
+- [Uloskirjautuminen ja lasten turvallisuus](../../b1-checkin/check-in/checking-out.md) — infopisteen uloskirjautuminen, noudon varmennus ja kutsuprosessit
 - [Ryhmien luominen](../groups/creating-groups.md) — missä huoneasetukset sijaitsevat
 - [Osallistumisen asetukset](setup.md) — jumalanpalvelukset, jumalanpalvelusajat ja huonemääritykset
 - [Vähimmäisikä yksityisviesteille](../settings/mobile-app.md#member-directory--messaging-settings) — estää uudet yksityisviestikeskustelut lasten kanssa, mutta pitää lapset hakemistossa

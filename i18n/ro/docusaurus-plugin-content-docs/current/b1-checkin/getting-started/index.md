@@ -1,5 +1,7 @@
 ---
-title: "Începeți"
+title: "Primii pași cu B1 Checkin"
+sidebar_label: "Începeți"
+description: "Configurează aplicația chioșcului B1 Checkin pe o tabletă Android: instalare, autentificare, alegerea bisericii și, opțional, o imprimantă de etichete."
 ---
 
 # Începeți cu B1 Church Checkin
@@ -27,9 +29,9 @@ Configurarea B1 Church Checkin durează doar câteva minute. Această secțiune 
 
 Când deschideți aplicația pentru prima dată, veți parcurge trei pași:
 
-1. **[Autentificare](./logging-in)** -- Introduceți adresa de e-mail și parola pentru a vă autentifica.
-2. **[Selectați biserica](./logging-in)** -- Dacă contul dvs. este asociat cu mai multe biserici, alegeți-o pe cea pe care o va deservi acest chioșc.
-3. **[Configurați o imprimantă](./printer-setup)** -- Configurați o imprimantă de rețea pentru imprimarea etichetelor sau omiteți acest pas dacă nu aveți nevoie de etichete.
+1. **[Autentificare](./logging-in.md)** -- Introduceți adresa de e-mail și parola pentru a vă autentifica.
+2. **[Selectați biserica](./logging-in.md)** -- Dacă contul dvs. este asociat cu mai multe biserici, alegeți-o pe cea pe care o va deservi acest chioșc.
+3. **[Configurați o imprimantă](./printer-setup.md)** -- Configurați o imprimantă de rețea pentru imprimarea etichetelor sau omiteți acest pas dacă nu aveți nevoie de etichete.
 
 După prima autentificare, aplicația salvează datele de autentificare și selecția bisericii. La pornirile următoare, va trece automat direct la ecranul serviciilor.
 
@@ -43,6 +45,6 @@ Asigurați-vă că administratorul bisericii a configurat serviciile, orele serv
 
 ## Pașii următori
 
-- [Autentificarea](./logging-in) -- Instrucțiuni detaliate pentru autentificare și selectarea bisericii.
-- [Configurarea imprimantei](./printer-setup) -- Cum să descoperiți, să selectați și să testați imprimanta de etichete.
-- [Fluxul de check-in](../check-in/) -- Aflați fluxul complet de check-in după ce chioșcul este configurat.
+- [Autentificarea](./logging-in.md) -- Instrucțiuni detaliate pentru autentificare și selectarea bisericii.
+- [Configurarea imprimantei](./printer-setup.md) -- Cum să descoperiți, să selectați și să testați imprimanta de etichete.
+- [Fluxul de check-in](../check-in/index.md) -- Aflați fluxul complet de check-in după ce chioșcul este configurat.

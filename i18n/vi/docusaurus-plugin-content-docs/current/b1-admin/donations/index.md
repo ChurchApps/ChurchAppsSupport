@@ -1,5 +1,6 @@
 ---
 title: "Quyên góp"
+description: "Ghi nhận, sắp xếp và báo cáo dâng hiến trong B1 Admin, từ đợt và quỹ đến sao kê cuối năm và quyên góp trực tuyến qua Stripe hoặc PayPal."
 ---
 
 # Quyên góp

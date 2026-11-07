@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting with Docker"
+description: "Asenna yksityinen B1 Admin, jäsenportaali, API ja MySQL-pino omalle koneellesi Dockerilla ja päivitä ja varmuuskopioi se b1-komennolla."
 ---
 
 # Self-Hosting with Docker
 
 <div class="article-intro">
 
-Käytä omaa yksityistä B1 Adminin, B1-jäsenportaalin ja verkkosivuston, API:n sekä MySQL-tietokannan instanssia millä tahansa koneella, jossa on Docker: kotipalvelimella, pienellä VPS:llä tai paikallisella laitteella. Yksi komento asentaa sen, yksi komento päivittää sen, ja jokainen päivitys ottaa ensin varmuuskopion. Jos et halua hallita palvelinta lainkaan, katso [Self-Hosting on Railway](./railway-template) hallitun vaihtoehdon osalta.
+Käytä omaa yksityistä B1 Adminin, B1-jäsenportaalin ja verkkosivuston, API:n sekä MySQL-tietokannan instanssia millä tahansa koneella, jossa on Docker: kotipalvelimella, pienellä VPS:llä tai paikallisella laitteella. Yksi komento asentaa sen, yksi komento päivittää sen, ja jokainen päivitys ottaa ensin varmuuskopion. Jos et halua hallita palvelinta lainkaan, katso [Self-Hosting on Railway](./railway-template.md) hallitun vaihtoehdon osalta.
 
 </div>
 
@@ -94,10 +95,10 @@ Jos asensit palvelun `localhost`-osoitteeseen ja haluat myöhemmin julkisen osoi
 
 Nämä toimivat täsmälleen samoin kuin Railwayllä — samat ympäristömuuttujat, mutta asetettuna `.env`-tiedostoon Railwayn hallintapaneelin sijaan:
 
-- **[Sähköposti / SMTP](./railway-template#1-email-highly-recommended)** — ohjeet palveluntarjoajille Resend, Brevo ja Gmail
-- **[Usean sivuston tuki](./railway-template#3-multi-site-multiple-churches-on-one-instance)** — rajaton määrä seurakuntia yhdessä instanssissa. `/` palvelee seurakuntaa, jonka slug on `DEFAULT_CHURCH_SLUG` (ensimmäinen seurakunta on `church`); osoita lisädomainit palvelimelle ja määritä ne B1Adminissa kohdassa **Settings → Domains**
-- **[Verkkolahjoitukset](./railway-template#4-online-giving-stripe--paypal)** — määritetään seurakunnittain hallintanäkymässä
-- **[Valinnaiset integraatiot](./railway-template#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Sähköposti / SMTP](./railway-template.md#1-email-highly-recommended)** — ohjeet palveluntarjoajille Resend, Brevo ja Gmail
+- **[Usean sivuston tuki](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** — rajaton määrä seurakuntia yhdessä instanssissa. `/` palvelee seurakuntaa, jonka slug on `DEFAULT_CHURCH_SLUG` (ensimmäinen seurakunta on `church`); osoita lisädomainit palvelimelle ja määritä ne B1Adminissa kohdassa **Settings → Domains**
+- **[Verkkolahjoitukset](./railway-template.md#4-online-giving-stripe--paypal)** — määritetään seurakunnittain hallintanäkymässä
+- **[Valinnaiset integraatiot](./railway-template.md#6-optional-feature-integrations)** — `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push-ilmoitukset](#push-notifications)** — `WEB_PUSH_*`; asennusohjelma jättää nämä tyhjiksi, joten push-ilmoitukset ovat pois käytöstä, kunnes lisäät ne
 
 Kutsut ja muut seurakunnan lähettämät sähköpostit otetaan automaattisesti käyttöön itse ylläpidetyssä instanssissa. (Hallitussa palvelussa nämä on rajattu manuaaliseen tarkastukseen lähettäjämaineen suojaamiseksi.)
@@ -148,7 +149,7 @@ Kolme nimettyä Docker-volyymiä sisältää kaiken tilatiedon:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Suurten mediakirjastojen kohdalla voit siirtää tiedostotallennuksen S3:een — aseta `FILE_STORE=S3` sekä `AWS_*`-muuttujat, jotka on kuvattu [Railway-oppaan tiedostotallennus-osiossa](./railway-template#5-file-storage). Tietokantavarmuuskopiot eivät sisällä S3-objekteja; ota niille käyttöön bucketin versiointi.
+Suurten mediakirjastojen kohdalla voit siirtää tiedostotallennuksen S3:een — aseta `FILE_STORE=S3` sekä `AWS_*`-muuttujat, jotka on kuvattu [Railway-oppaan tiedostotallennus-osiossa](./railway-template.md#5-file-storage). Tietokantavarmuuskopiot eivät sisällä S3-objekteja; ota niille käyttöön bucketin versiointi.
 
 ## Päivittäminen
 
@@ -187,6 +188,6 @@ Yhä jumissa? Avaa issue osoitteessa [github.com/ChurchApps/ChurchAppsSupport/is
 
 ## Aiheeseen liittyvät artikkelit
 
-- **[Self-Hosting on Railway](./railway-template)** — hallittu hosting-vaihtoehto sekä yhteiset julkaisun jälkeiset määritysoppaat
-- **[Initial Setup](../../getting-started/initial-setup)** — ensimmäiset vaiheet seurakunnan luomisen jälkeen
-- **[Local API Setup](../api/local-setup)** — pinon ajaminen suoraan kehitystä varten
+- **[Self-Hosting on Railway](./railway-template.md)** — hallittu hosting-vaihtoehto sekä yhteiset julkaisun jälkeiset määritysoppaat
+- **[Initial Setup](../../getting-started/initial-setup.md)** — ensimmäiset vaiheet seurakunnan luomisen jälkeen
+- **[Local API Setup](../api/local-setup.md)** — pinon ajaminen suoraan kehitystä varten

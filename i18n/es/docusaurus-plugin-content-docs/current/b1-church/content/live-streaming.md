@@ -1,5 +1,7 @@
 ---
-title: "Transmision en Vivo"
+title: "Cómo ver transmisiones en vivo en B1.church"
+sidebar_label: "Transmision en Vivo"
+description: "Mira los servicios en vivo de tu iglesia en la página Transmisión de B1.church y únete al chat junto con la emisión, sin necesidad de iniciar sesión."
 ---
 
 # Transmision en Vivo

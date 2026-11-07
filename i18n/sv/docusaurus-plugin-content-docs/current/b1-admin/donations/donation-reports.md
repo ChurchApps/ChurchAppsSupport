@@ -1,5 +1,6 @@
 ---
 title: "Donationsrapporter"
+description: "Granska gåvosummor, givare som slutat ge och detaljer per sats i B1 Admin med instrumentpanelen Donations Summary, vyn Lapsed Givers och CSV-exporter."
 ---
 
 # Donationsrapporter

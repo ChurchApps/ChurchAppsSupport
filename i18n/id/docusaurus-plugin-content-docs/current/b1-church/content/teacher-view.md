@@ -1,5 +1,6 @@
 ---
 title: "Tampilan Guru untuk Pelajaran"
+description: "Buka pelajaran dalam Teacher View layar penuh dari rencana di B1.church, lalu pindah antarbagian, putar media, dan unduh sumber daya kelas."
 ---
 
 # Tampilan Guru untuk Pelajaran

@@ -1,5 +1,7 @@
 ---
-title: "Medlemsmappe"
+title: "Medlemskatalog i B1 Mobile-appen"
+sidebar_label: "Medlemsmappe"
+description: "Find personer i din kirke med B1 Mobile-medlemskataloget: gennemse alfabetisk, søg efter navn, og åbn profiler og husstandslinks."
 ---
 
 # Medlemsmappe
@@ -13,7 +15,7 @@ Medlemsmappen i B1 Mobile lader dig gennemse og søge efter mennesker i din kirk
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 
 </div>
 
@@ -51,5 +53,5 @@ De oplysninger, der er synlige i hver profil, afhænger af din kirkes privatliv-
 
 ## Relaterede artikler
 
-- [Messaging](./messaging) -- Send en privat meddelelse til nogen, du finder i mappen
+- [Messaging](./messaging.md) -- Send en privat meddelelse til nogen, du finder i mappen
 - [Privatlivsindstillinger](../profile/privacy-settings.md) -- Kontroller, hvad andre kan se om dig i mappen

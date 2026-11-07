@@ -1,5 +1,7 @@
 ---
-title: "Registrering til begivenheder"
+title: "Begivenhedstilmelding på B1.church"
+sidebar_label: "Registrering til begivenheder"
+description: "Tilmeld dig en kirkebegivenhed på B1.church: indtast dine oplysninger, tilføj familie, vælg muligheder, brug rabatkoder og betal eller stil dig på venteliste."
 ---
 
 # Registrering til begivenheder
@@ -55,4 +57,4 @@ Hvis du skal annullere din registrering, skal du kontakte din kirkeavslutning. D
 ## Relaterede artikler
 
 - [Begivenhedssoversigt](./index.md) -- Gennemse kommende begivenheder med registrering
-- [Foretag donationer](../giving/making-donations) -- Foretag en donation sammen med begivenhedsdeltagen
+- [Foretag donationer](../giving/making-donations.md) -- Foretag en donation sammen med begivenhedsdeltagen

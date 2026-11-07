@@ -1,5 +1,6 @@
 ---
 title: "Kucela Imicimbi Nemakamelo"
+description: "Cela bukhona bekamelo noma lemishini yemcimbi kusuka ku-portal yelilungu le-B1.church, landzela simo sakho ku-My Requests, bese uyayiphindzisa nangabe isalindzele."
 ---
 
 # Kucela Imicimbi Nemakamelo
@@ -42,11 +43,11 @@ Vula **My Requests** kusuka ekhasini le-Me. Sicelo ngasinye sikhombisa umcimbi, 
 Ngesikhatsi sicelo sisalindzele, ungakwati kusihlehlisa nge-**Cancel request** (utawucelwa kucinisekisa — kukhanjelwa akukaze kwatsi kubuyiswe).
 
 :::info
-Ticelo tibuywa bebasebenti belibandla ekhasini le-B1 Admin le-[Approvals](../../b1-admin/calendars/approvals). Kutsi ngutiphi emakamelo netinsiza letidzinga imvumo kuya ngekutsi lelibandla lakini lifuna njani — bona [Emakamelo Netinsiza](../../b1-admin/calendars/rooms-resources).
+Ticelo tibuywa bebasebenti belibandla ekhasini le-B1 Admin le-[Approvals](../../b1-admin/calendars/approvals.md). Kutsi ngutiphi emakamelo netinsiza letidzinga imvumo kuya ngekutsi lelibandla lakini lifuna njani — bona [Emakamelo Netinsiza](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Imibhalo Lehlobene
 
-- [Likhasi Lami](../getting-started/me-page) -- Lapho tindlela letisheshako tesicelo tikhona
-- [Kuvunywa Kwekhalenda (B1 Admin)](../../b1-admin/calendars/approvals) -- Kutsi bebasebenti babuya njani ticelo
-- [Emakamelo Netinsiza (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- Kutsi emabandla ahlela njani tindzawo letingabhukwa
+- [Likhasi Lami](../getting-started/me-page.md) -- Lapho tindlela letisheshako tesicelo tikhona
+- [Kuvunywa Kwekhalenda (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Kutsi bebasebenti babuya njani ticelo
+- [Emakamelo Netinsiza (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Kutsi emabandla ahlela njani tindzawo letingabhukwa

@@ -1,5 +1,6 @@
 ---
 title: "Zmiana kościoła"
+description: "Przełączaj się między kościołami w B1 Mobile, wybierając ostatnio używany kościół lub wyszukując go po nazwie, wszystko jednym logowaniem ChurchApps."
 ---
 
 # Zmiana kościoła
@@ -13,7 +14,7 @@ Jeśli jesteś członkiem więcej niż jednego kościoła, B1 Mobile ułatwia pr
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](./installing) i [zaloguj się](./logging-in) na swoje konto
+- [Zainstaluj B1 Mobile](./installing.md) i [zaloguj się](./logging-in.md) na swoje konto
 
 </div>
 
@@ -24,7 +25,7 @@ Jeśli jesteś członkiem więcej niż jednego kościoła, B1 Mobile ułatwia pr
 3. Pojawi się ekran **Wyszukiwanie kościoła**. Ostatnio odwiedzane kościoły są wyświetlane na górze, aby można było szybko do nich wrócić.
 4. Dotknij ostatnio odwiedzanego kościoła, aby się do niego przełączyć, lub wpisz tekst w polu wyszukiwania, aby znaleźć inny kościół.
 
-Po zmianie kościoła aplikacja zostanie przeładowana z oprawą graficzną, linkami nawigacyjnymi i treściami tego kościoła. Twój [panel główny](../dashboard/), [grupy](../groups/) i inne dane będą odzwierciedlać nowo wybrany kościół.
+Po zmianie kościoła aplikacja zostanie przeładowana z oprawą graficzną, linkami nawigacyjnymi i treściami tego kościoła. Twój [panel główny](../dashboard/index.md), [grupy](../groups/index.md) i inne dane będą odzwierciedlać nowo wybrany kościół.
 
 ## Wyszukiwanie kościoła
 

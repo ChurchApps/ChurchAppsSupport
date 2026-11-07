@@ -1,5 +1,6 @@
 ---
 title: "Kết nối với nhà cung cấp"
+description: "Kết nối FreePlay với nhà cung cấp nội dung bằng mã QR, đăng nhập email hoặc truy cập một chạm, và quản lý hoặc ngắt kết nối trong Cài đặt."
 ---
 
 # Kết nối với nhà cung cấp
@@ -13,7 +14,7 @@ Trước khi bạn có thể duyệt nội dung từ một nhà cung cấp, bạ
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- Cài đặt và mở FreePlay -- xem [Bắt đầu](../getting-started/)
+- Cài đặt và mở FreePlay -- xem [Bắt đầu](../getting-started/index.md)
 - Chuẩn bị sẵn điều khiển từ xa của TV để điều hướng
 - Với các nhà cung cấp yêu cầu đăng nhập, hãy chuẩn bị sẵn thông tin tài khoản của bạn
 
@@ -80,7 +81,7 @@ Chọn thẻ nhà cung cấp có huy hiệu **Đã kết nối** sẽ mở màn 
 
 - **Duyệt thư viện** -- Hiển thị hoặc ẩn thư viện nội dung của nhà cung cấp này trong thanh bên
 - **Tự động tải bài học hôm nay** -- Sử dụng nhà cung cấp này làm nguồn bài học hôm nay và tải trước các tệp của bài học (chỉ hiển thị với các nhà cung cấp có bài học hiện tại)
-- **Dùng cho thông báo** -- Chọn một thư mục từ nhà cung cấp này để phát luân phiên từ mục **Thông báo** trong thanh bên. Xem [Thông báo](./announcements)
+- **Dùng cho thông báo** -- Chọn một thư mục từ nhà cung cấp này để phát luân phiên từ mục **Thông báo** trong thanh bên. Xem [Thông báo](./announcements.md)
 - **Kiểm tra cập nhật thông báo** -- Hiển thị sau khi đã chọn thư mục thông báo; tải các slide mới và xóa các slide đã bị xóa
 - **Ngắt kết nối** -- Xóa kết nối
 
@@ -100,6 +101,6 @@ Ngắt kết nối sẽ xóa thông tin xác thực đã lưu khỏi thiết b�
 
 ## Bài viết liên quan
 
-- **[Duyệt và tải nội dung](./browsing-content)** - Điều hướng các thư mục và phát nội dung sau khi kết nối
-- **[Thông báo](./announcements)** - Phát luân phiên một thư mục slide từ nhà cung cấp đã kết nối
+- **[Duyệt và tải nội dung](./browsing-content.md)** - Điều hướng các thư mục và phát nội dung sau khi kết nối
+- **[Thông báo](./announcements.md)** - Phát luân phiên một thư mục slide từ nhà cung cấp đã kết nối
 - **[Tổng quan về nhà cung cấp nội dung](./index.md)** - Xem tất cả các nhà cung cấp có sẵn

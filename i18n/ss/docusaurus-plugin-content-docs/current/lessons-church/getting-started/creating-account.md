@@ -1,5 +1,6 @@
 ---
 title: "Kusungula I-akhawunti"
+description: "Bhalisa i-akhawunti ye-ChurchApps ku-Lessons.church, bese uyixhuma kuprofayili yelibandla lelisha noma lelikhona kutsi ukwazi kulawula emakilasi nemasikhedulu."
 ---
 
 # Kusungula I-akhawunti

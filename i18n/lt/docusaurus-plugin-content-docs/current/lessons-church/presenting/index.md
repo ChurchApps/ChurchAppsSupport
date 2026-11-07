@@ -1,5 +1,6 @@
 ---
 title: "Prezentavimas"
+description: "Rodykite pamokas projektoriumi su Lessons.church pristatymo režimu, dalinkitės vaidmenims skirtais savanorių vadovais ir spausdinkite medžiagą prieš pamoką."
 ---
 
 # Prezentavimas

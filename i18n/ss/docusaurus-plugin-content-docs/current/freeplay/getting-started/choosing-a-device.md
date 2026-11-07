@@ -1,5 +1,6 @@
 ---
 title: "Kukhetsa Idivayisi"
+description: "Khetha idivayisi lefanele emaTV emakilasini e-FreePlay ku-ChurchApps: kusukela ku-Fire TV sticks ne-Onn boxes kuya ku-Apple TV, nekutsi ngaweluphi lokumele uyekele."
 ---
 
 # Kukhetsa Idivayisi ye-FreePlay

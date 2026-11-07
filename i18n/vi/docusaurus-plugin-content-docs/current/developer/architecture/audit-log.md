@@ -1,5 +1,6 @@
 ---
 title: "Nhật ký kiểm toán & Lô có thể hoàn tác"
+description: "Mô tả nhật ký kiểm tra API ghi lại mọi thay đổi của người dùng qua các module, và cách hoàn tác từng dòng trong các đợt nhập liệu trong B1 Admin."
 ---
 
 # Nhật ký kiểm toán & Lô có thể hoàn tác
@@ -155,6 +156,6 @@ Cả hai giao diện quản trị đều **đang được phát triển**; mục
 
 ## Trang liên quan
 
-- [Cấu trúc module](../api/module-structure) — cách một controller không thuộc membership truy cập các repository membership qua `RepoManager`
-- [Quyên góp](./giving) — các đường ghi quyên góp được ghi nhật ký là `sensitive` ngay cả khi ẩn danh
-- [Endpoint Membership](../api/endpoints/membership) — bề mặt REST mang `X-Batch-Id` và cung cấp `/auditlogs` và `/batches`
+- [Cấu trúc module](../api/module-structure.md) — cách một controller không thuộc membership truy cập các repository membership qua `RepoManager`
+- [Quyên góp](./giving.md) — các đường ghi quyên góp được ghi nhật ký là `sensitive` ngay cả khi ẩn danh
+- [Endpoint Membership](../api/endpoints/membership.md) — bề mặt REST mang `X-Batch-Id` và cung cấp `/auditlogs` và `/batches`

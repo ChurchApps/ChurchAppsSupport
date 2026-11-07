@@ -1,5 +1,6 @@
 ---
 title: "Verzoek om lid te worden van een groep"
+description: "Vraag lidmaatschap aan van een groep die goedkeuring vereist op B1.church, voeg een notitie voor de leider toe en volg of annuleer je verzoek."
 ---
 
 # Verzoek om lid te worden van een groep

@@ -1,5 +1,6 @@
 ---
 title: "Fournisseurs externes"
+description: "Découvrez comment les fournisseurs tiers ajoutent leur contenu à Lessons.church grâce à l'Open Lesson Format, et comment en connecter un depuis le portail."
 ---
 
 # Fournisseurs externes

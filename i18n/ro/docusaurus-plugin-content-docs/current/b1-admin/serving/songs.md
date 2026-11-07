@@ -1,5 +1,6 @@
 ---
 title: "Cântece"
+description: "Administrează cântările din B1 Admin: caută și adaugă piese, editează detaliile, atașează versuri ChordPro, aranjamente și audio pentru repetiții."
 ---
 
 # Cântece

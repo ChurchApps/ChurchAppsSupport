@@ -1,5 +1,7 @@
 ---
-title: "Darovanje"
+title: "Darovanje v aplikaciji B1 Mobile"
+sidebar_label: "Darovanje"
+description: "Podarite v aplikaciji B1 Mobile, preverite letošnje darove in upravljajte shranjene plačilne načine. Zajema zavihke Pregled, Darovanje, Upravljanje in Zgodovina."
 ---
 
 # Darovanje
@@ -24,7 +26,7 @@ Razdelek darovanja je razdeljen na štiri zavihke:
 Vsa darovanja, oddana prek B1 Mobile, se varno obdelujejo prek **Stripe**. Vaše podatke o plačilu obdeluje varna infrastruktura podjetja Stripe in se nikoli ne shranjujejo na strežnikih ChurchApps. Darujete lahko z zaupanjem, saj so vaši finančni podatki zaščiteni.
 
 :::info
-Vaš cerkveni skrbnik nastavi razpoložljive sklade in obdelavo plačil prek [B1 Admin](../../b1-admin/). Če v aplikaciji ne vidite možnosti darovanja, morda vaša cerkev te funkcije še ni nastavila.
+Vaš cerkveni skrbnik nastavi razpoložljive sklade in obdelavo plačil prek [B1 Admin](../../b1-admin/index.md). Če v aplikaciji ne vidite možnosti darovanja, morda vaša cerkev te funkcije še ni nastavila.
 :::
 
 ## Kaj lahko počnete
@@ -38,6 +40,6 @@ Tukaj je, kaj lahko počnete v razdelku darovanja:
 
 ## Naslednji koraki
 
-- [Oddaja darovanja](./making-donations) -- Naučite se, kako podariti darilo prek aplikacije
-- [Upravljanje načinov plačila](./managing-payments) -- Dodajte ali odstranite shranjene načine plačila
-- [Zgodovina darovanj](./donation-history) -- Oglejte si povzetek darovanj in pretekla darovanja
+- [Oddaja darovanja](./making-donations.md) -- Naučite se, kako podariti darilo prek aplikacije
+- [Upravljanje načinov plačila](./managing-payments.md) -- Dodajte ali odstranite shranjene načine plačila
+- [Zgodovina darovanj](./donation-history.md) -- Oglejte si povzetek darovanj in pretekla darovanja

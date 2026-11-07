@@ -1,5 +1,6 @@
 ---
 title: "Přehledy"
+description: "Najděte a spusťte vestavěné sestavy v B1 Admin pro narozeniny, trendy docházky, součty darů a auditní protokol podle sekce, ve které se nacházíte."
 ---
 
 # Přehledy
@@ -17,16 +18,16 @@ B1 Admin vám nabízí několik způsobů, jak získat údaje o vašem sboru, do
 ## Kde najdete přehledy
 
 ### Lidé
-- **[Seznamy narozenin a výročí](./birthday-report)** -- Filtrujte podle měsíce narození nebo měsíce výročí v **Lidé → Pokročilé vyhledávání**, abyste získali seznam nadcházejících narozenin nebo výročí.
+- **[Seznamy narozenin a výročí](./birthday-report.md)** -- Filtrujte podle měsíce narození nebo měsíce výročí v **Lidé → Pokročilé vyhledávání**, abyste získali seznam nadcházejících narozenin nebo výročí.
 
 ### Docházka
-- **[Přehledy docházky](./attendance-reports)** -- Trendy docházky a údaje o docházce skupin najdete v sekci **Docházka**.
+- **[Přehledy docházky](./attendance-reports.md)** -- Trendy docházky a údaje o docházce skupin najdete v sekci **Docházka**.
 
 ### Dary
-- **[Souhrn darů](./donation-summary)** -- Celkové částky darů a rozpis podle fondů najdete v sekci **Dary**.
+- **[Souhrn darů](./donation-summary.md)** -- Celkové částky darů a rozpis podle fondů najdete v sekci **Dary**.
 
 ### Nastavení
-- **[Protokol auditu](./audit-log)** -- Sledujte všechny změny a akce ve vašem systému pro správu sboru (najdete v **Nastavení → Protokol auditu**).
+- **[Protokol auditu](./audit-log.md)** -- Sledujte všechny změny a akce ve vašem systému pro správu sboru (najdete v **Nastavení → Protokol auditu**).
 
 :::info
 Výsledky přehledů závisí na konzistentním zadávání dat. Ujistěte se, že váš tým [eviduje docházku](../attendance/tracking-attendance.md), [zaznamenává dary](../donations/recording-donations.md) a udržuje [záznamy o lidech](../people/adding-people.md) aktuální, abyste získali co nejpřesnější výsledky.

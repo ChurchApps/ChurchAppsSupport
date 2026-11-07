@@ -1,5 +1,7 @@
 ---
-title: "Perfil"
+title: "Perfil y tarjetas asignadas en B1 Mobile"
+sidebar_label: "Perfil"
+description: "Gestione su nombre, datos de contacto, hogar y visibilidad de privacidad en el perfil de B1 Mobile, además de las tarjetas de flujo de trabajo y tareas asignadas a usted."
 ---
 
 # Perfil
@@ -20,7 +22,7 @@ La pestaña **Perfil** te permite ver y editar tu información personal, incluye
 
 ### Hogar
 
-La pestaña **Hogar** muestra a tus miembros familiares y sus roles dentro de tu hogar. Esta información se utiliza para funciones como el [registro de asistencia](../checkin/), donde puedes registrar a toda tu familia a la vez.
+La pestaña **Hogar** muestra a tus miembros familiares y sus roles dentro de tu hogar. Esta información se utiliza para funciones como el [registro de asistencia](../checkin/index.md), donde puedes registrar a toda tu familia a la vez.
 
 ### Visibilidad
 
@@ -42,6 +44,6 @@ La pestaña **Cuenta** proporciona acceso a tu configuración de seguridad.
 
 ## Próximos Pasos
 
-- [Editar tu Perfil](./editing-profile) -- Actualiza tu nombre, datos de contacto y foto
-- [Hogar](./household) -- Consulta y administra tus miembros familiares
-- [Configuración de Privacidad](./privacy-settings) -- Controla lo que otros pueden ver sobre ti
+- [Editar tu Perfil](./editing-profile.md) -- Actualiza tu nombre, datos de contacto y foto
+- [Hogar](./household.md) -- Consulta y administra tus miembros familiares
+- [Configuración de Privacidad](./privacy-settings.md) -- Controla lo que otros pueden ver sobre ti

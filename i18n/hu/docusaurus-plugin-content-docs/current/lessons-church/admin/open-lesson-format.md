@@ -1,5 +1,6 @@
 ---
 title: "Nyitott leckeformátum"
+description: "Formátumleírás harmadik féltől származó tantervi szolgáltatóknak a Lessons.churchen: a szolgáltatófa és helyszín-feed JSON-mezői, műveletek és médiafájlok."
 ---
 
 # Nyitott leckeformátum

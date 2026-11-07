@@ -1,5 +1,6 @@
 ---
 title: "Развёртывание"
+description: "Где развёртывается каждый проект ChurchApps: API на AWS Lambda, веб-приложения на S3, сборки Expo и самостоятельный B1 Admin на Railway или Docker."
 ---
 
 # Развёртывание
@@ -14,12 +15,12 @@ ChurchApps использует разные стратегии развёрты
 
 | Тип проекта | Цель развёртывания | Инструменты |
 |-------------|-------------------|---------|
-| [API](./apis) | AWS Lambda | Serverless Framework v3 (среда выполнения Node.js 24.x) |
-| [Веб-приложения](./web-apps) | S3 + CloudFront | Статическая сборка, синхронизация с S3, инвалидация CloudFront |
-| [Мобильные приложения](./mobile) | Магазины приложений | Expo EAS Build + OTA-обновления |
-| [Самостоятельное развёртывание (Railway)](./railway-template) | Railway | Шаблон в один клик: MySQL + Api + B1Admin + B1App |
-| [Самостоятельное развёртывание (Docker)](./docker) | Любой хост с Docker | Установка одной командой; готовые образы GHCR + Caddy, обновление/резервные копии/откат через `./deploy/b1` |
-| [Прокси Caddy для пользовательских доменов](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Статический Caddyfile + служба WinSW + запланированная синхронизация карты |
+| [API](./apis.md) | AWS Lambda | Serverless Framework v3 (среда выполнения Node.js 24.x) |
+| [Веб-приложения](./web-apps.md) | S3 + CloudFront | Статическая сборка, синхронизация с S3, инвалидация CloudFront |
+| [Мобильные приложения](./mobile.md) | Магазины приложений | Expo EAS Build + OTA-обновления |
+| [Самостоятельное развёртывание (Railway)](./railway-template.md) | Railway | Шаблон в один клик: MySQL + Api + B1Admin + B1App |
+| [Самостоятельное развёртывание (Docker)](./docker.md) | Любой хост с Docker | Установка одной командой; готовые образы GHCR + Caddy, обновление/резервные копии/откат через `./deploy/b1` |
+| [Прокси Caddy для пользовательских доменов](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Статический Caddyfile + служба WinSW + запланированная синхронизация карты |
 | FreeShow | Прямая загрузка | Electron Builder (бинарники для всех платформ) |
 
 ## Окружения

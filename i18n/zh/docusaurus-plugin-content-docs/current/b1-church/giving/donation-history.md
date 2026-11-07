@@ -1,5 +1,7 @@
 ---
-title: "奉献历史"
+title: "B1.church 中的奉献历史与对账单"
+sidebar_label: "奉献历史"
+description: "在 B1.church 会友门户的奉献页面中查看过往捐款，按年份筛选，并打印用于报税的奉献对账单。"
 ---
 
 # 奉献历史

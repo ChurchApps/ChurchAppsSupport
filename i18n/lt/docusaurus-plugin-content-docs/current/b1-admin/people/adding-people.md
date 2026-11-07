@@ -1,5 +1,6 @@
 ---
 title: "Asmenų pridėjimas"
+description: "Pridėkite asmenį į bažnyčios duomenų bazę B1 Admin, užpildykite jo duomenis ir susiekite šeimos narius į namų ūkius registracijai ir ataskaitoms."
 ---
 
 # Asmenų pridėjimas

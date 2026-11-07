@@ -1,5 +1,6 @@
 ---
 title: "Gabay: Ilunsad ang Iyong Church Website"
+description: "I-set up ang website ng simbahan sa B1 Admin: gumawa ng home page, itugma ang kulay at logo, magdagdag ng pahina, ikonekta ang custom domain, at giving form."
 ---
 
 # Ilunsad ang Iyong Church Website

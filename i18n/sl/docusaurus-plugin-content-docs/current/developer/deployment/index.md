@@ -1,5 +1,6 @@
 ---
 title: "Implementacija"
+description: "Kje se namestijo projekti ChurchApps: API-ji v AWS Lambda, spletne aplikacije v S3, mobilne gradnje Expo ter samostojni B1 Admin na Railway ali Dockerju."
 ---
 
 # Implementacija
@@ -14,12 +15,12 @@ ChurchApps uporablja različne strategije implementacije glede na vrsto projekta
 
 | Vrsta projekta | Cilj implementacije | Orodja |
 |-------------|-------------------|---------|
-| [API-ji](./apis) | AWS Lambda | Serverless Framework v3 (izvajalno okolje Node.js 24.x) |
-| [Spletne aplikacije](./web-apps) | S3 + CloudFront | Statična gradnja, sinhronizacija S3, razveljavitev predpomnilnika CloudFront |
-| [Mobilne aplikacije](./mobile) | Trgovine z aplikacijami | Expo EAS Build + OTA posodobitve |
-| [Samostojno gostovanje (Railway)](./railway-template) | Railway | Predloga z enim klikom: MySQL + Api + B1Admin + B1App |
-| [Samostojno gostovanje (Docker)](./docker) | Poljubni gostitelj Docker | Namestitev z eno vrstico; vnaprej zgrajene slike GHCR + Caddy, `./deploy/b1` za posodobitev/varnostno kopiranje/vrnitev na prejšnjo različico |
-| [Caddy posrednik za domeno po meri](./caddy-proxy) | Windows EC2 (Elastic IP `3.23.251.61`) | Statična datoteka Caddyfile + storitev WinSW + načrtovana sinhronizacija zemljevidov |
+| [API-ji](./apis.md) | AWS Lambda | Serverless Framework v3 (izvajalno okolje Node.js 24.x) |
+| [Spletne aplikacije](./web-apps.md) | S3 + CloudFront | Statična gradnja, sinhronizacija S3, razveljavitev predpomnilnika CloudFront |
+| [Mobilne aplikacije](./mobile.md) | Trgovine z aplikacijami | Expo EAS Build + OTA posodobitve |
+| [Samostojno gostovanje (Railway)](./railway-template.md) | Railway | Predloga z enim klikom: MySQL + Api + B1Admin + B1App |
+| [Samostojno gostovanje (Docker)](./docker.md) | Poljubni gostitelj Docker | Namestitev z eno vrstico; vnaprej zgrajene slike GHCR + Caddy, `./deploy/b1` za posodobitev/varnostno kopiranje/vrnitev na prejšnjo različico |
+| [Caddy posrednik za domeno po meri](./caddy-proxy.md) | Windows EC2 (Elastic IP `3.23.251.61`) | Statična datoteka Caddyfile + storitev WinSW + načrtovana sinhronizacija zemljevidov |
 | FreeShow | Neposredni prenos | Electron Builder (binarne datoteke za več platform) |
 
 ## Okolja

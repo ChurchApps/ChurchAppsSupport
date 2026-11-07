@@ -1,21 +1,22 @@
 ---
 title: "Pengingat Acara"
+description: "Atur pengingat acara di B1 Admin lewat notifikasi push, email, dan SMS, dengan memilih waktu, penerima, dan pesan kustom agar orang diingatkan tepat waktu."
 ---
 
 # Pengingat Acara
 
 <div class="article-intro">
 
-Pengingat acara secara otomatis memberi tahu orang yang tepat sebelum sebuah acara berlangsung -- misalnya, "Jangan sampai terlewat! Lokakarya kesehatan dimulai besok pukul 9:00 pagi." Anda cukup mengatur pengingat sekali pada acara, dan B1 akan mengirimkannya sesuai jadwal melalui notifikasi push, email, dan, jika gereja Anda sudah menyiapkan layanan pesan teks, pesan SMS. Anggota dapat mengatur pengingat mana saja yang ingin mereka terima melalui [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences) mereka sendiri.
+Pengingat acara secara otomatis memberi tahu orang yang tepat sebelum sebuah acara berlangsung -- misalnya, "Jangan sampai terlewat! Lokakarya kesehatan dimulai besok pukul 9:00 pagi." Anda cukup mengatur pengingat sekali pada acara, dan B1 akan mengirimkannya sesuai jadwal melalui notifikasi push, email, dan, jika gereja Anda sudah menyiapkan layanan pesan teks, pesan SMS. Anggota dapat mengatur pengingat mana saja yang ingin mereka terima melalui [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences.md) mereka sendiri.
 
 </div>
 
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Buat acara yang ingin Anda ingatkan kepada orang-orang (lihat [Membuat Kalender](creating-calendars))
-- Untuk menjangkau peserta yang sudah mendaftar, [aktifkan pendaftaran](creating-calendars) pada acara tersebut
-- Untuk menjangkau seluruh anggota grup, pastikan acara tersebut termasuk dalam [grup](../groups/creating-groups) yang memiliki anggota
+- Buat acara yang ingin Anda ingatkan kepada orang-orang (lihat [Membuat Kalender](./creating-calendars.md))
+- Untuk menjangkau peserta yang sudah mendaftar, [aktifkan pendaftaran](./creating-calendars.md) pada acara tersebut
+- Untuk menjangkau seluruh anggota grup, pastikan acara tersebut termasuk dalam [grup](../groups/creating-groups.md) yang memiliki anggota
 
 </div>
 
@@ -57,21 +58,21 @@ Tamu yang hanya ditambahkan dengan nama (tanpa data pribadi yang terhubung) tida
 - Acara berulang ditangani secara otomatis: setiap kejadian mendatang akan mendapatkan pengingatnya sendiri.
 
 :::tip
-Pengingat dikirim **melalui push terlebih dahulu, dengan email sebagai cadangan**. Jika anggota mengaktifkan notifikasi push, mereka akan menerima push; jika tidak, mereka akan menerima email. Anggota dapat memilih saluran yang mereka inginkan untuk setiap jenis notifikasi di [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences) mereka.
+Pengingat dikirim **melalui push terlebih dahulu, dengan email sebagai cadangan**. Jika anggota mengaktifkan notifikasi push, mereka akan menerima push; jika tidak, mereka akan menerima email. Anggota dapat memilih saluran yang mereka inginkan untuk setiap jenis notifikasi di [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences.md) mereka.
 :::
 
 ## Pengingat Melalui Pesan Teks
 
 Saluran **Text** hanya muncul jika gereja Anda sudah terhubung dengan penyedia layanan pesan teks. Pesan teks dikirim melalui penyedia layanan pesan teks gereja Anda, dan setiap pesan mungkin dikenakan biaya bagi gereja Anda. Pesan ini dikirim sebagai tambahan dari pengingat push atau email, dan hanya kepada orang yang:
 
-- Mengaktifkan **Text messages** di [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences) mereka, dan
+- Mengaktifkan **Text messages** di [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences.md) mereka, dan
 - Memiliki nomor ponsel di profil mereka.
 
 Setiap pesan teks diawali dengan nama gereja Anda, dibatasi menjadi satu pesan teks, dan diakhiri dengan "Reply STOP to opt out." Siapa pun yang membalas STOP akan berhenti menerima pesan teks dari gereja Anda. Agar balasan STOP dapat sampai ke B1, tempelkan **URL webhook pesan masuk (STOP)** dari [pengaturan pesan teks](../settings/church-settings.md#texting) Anda ke webhook pesan masuk milik penyedia layanan Anda.
 
 ## Yang Dapat Dikontrol Anggota
 
-Pengingat selalu mengikuti [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences) setiap anggota. Seorang anggota dapat:
+Pengingat selalu mengikuti [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences.md) setiap anggota. Seorang anggota dapat:
 
 - Mematikan **Event Reminders** untuk push, email, atau teks sambil tetap mengaktifkan notifikasi lainnya.
 - Mengaktifkan atau mematikan pengingat teks dengan **Text messages**.
@@ -81,10 +82,10 @@ Anda tidak dapat mengesampingkan pilihan anggota untuk berhenti menerima penging
 
 ## Pengingat Pelayanan
 
-Relawan yang dijadwalkan dalam sebuah rencana akan menerima **pengingat pelayanan** terpisah yang berisi detail rencana tersebut, dan jika mereka belum merespons, tombol **Accept / Decline** (Terima / Tolak) langsung di dalam email. Pengingat tersebut diatur pada jenis rencana, bukan pada acara kalender, dan juga dapat dikirim melalui pesan teks -- lihat [Pengingat Relawan](../serving/plans#volunteer-reminders) dan [Relawan Minggu](../guides/sunday-volunteers) untuk mengetahui cara kerja penjadwalan relawan dan pengingatnya.
+Relawan yang dijadwalkan dalam sebuah rencana akan menerima **pengingat pelayanan** terpisah yang berisi detail rencana tersebut, dan jika mereka belum merespons, tombol **Accept / Decline** (Terima / Tolak) langsung di dalam email. Pengingat tersebut diatur pada jenis rencana, bukan pada acara kalender, dan juga dapat dikirim melalui pesan teks -- lihat [Pengingat Relawan](../serving/plans.md#volunteer-reminders) dan [Relawan Minggu](../guides/sunday-volunteers.md) untuk mengetahui cara kerja penjadwalan relawan dan pengingatnya.
 
 ## Langkah Selanjutnya
 
-- [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences) -- Hal-hal yang dapat diatur anggota
-- [Panduan Pendaftaran Acara](../guides/event-registration) -- Atur pendaftaran agar pengingat dapat menjangkau peserta
-- [Membuat Kalender](creating-calendars) -- Kembali ke pengaturan kalender
+- [Preferensi Notifikasi](../../b1-church/getting-started/notification-preferences.md) -- Hal-hal yang dapat diatur anggota
+- [Panduan Pendaftaran Acara](../guides/event-registration.md) -- Atur pendaftaran agar pengingat dapat menjangkau peserta
+- [Membuat Kalender](./creating-calendars.md) -- Kembali ke pengaturan kalender

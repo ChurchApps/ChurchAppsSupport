@@ -1,5 +1,6 @@
 ---
 title: "Tworzenie formularzy"
+description: "Twórz formularze w B1 Admin do zapisów na wydarzenia, ankiet i kart odwiedzających, a następnie udostępniaj je linkiem, kodem QR lub w wersji drukowanej."
 ---
 
 # Tworzenie formularzy

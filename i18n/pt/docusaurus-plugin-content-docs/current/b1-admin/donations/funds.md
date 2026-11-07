@@ -1,5 +1,6 @@
 ---
 title: "Gerenciando Fundos"
+description: "Crie e organize fundos de doação no B1 Admin, defina dedutibilidade fiscal e visibilidade para o doador e revise totais e histórico de contribuições."
 ---
 
 # Gerenciando Fundos

@@ -1,5 +1,6 @@
 ---
 title: "Bla gjennom innhold"
+description: "Finn ut hvordan du blar gjennom Lessons.churchs gratis læreplanbibliotek uten konto, inkludert oppsettet på startsiden, blading etter program, søk og eksterne leverandører."
 ---
 
 # Bla gjennom innhold

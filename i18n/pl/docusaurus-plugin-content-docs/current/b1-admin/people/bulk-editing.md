@@ -1,5 +1,6 @@
 ---
 title: "Zbiorcza edycja osób"
+description: "Zaktualizuj status członkostwa, stan cywilny, płeć, rezygnację, własne pola Tak/Nie lub członkostwo w grupie dla wielu osób naraz w B1 Admin."
 ---
 
 # Zbiorcza edycja osób

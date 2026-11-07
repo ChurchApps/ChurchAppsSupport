@@ -1,5 +1,6 @@
 ---
 title: "Útmutató: Indítsa el gyülekezete weboldalát"
+description: "Gyülekezeti weboldal beállítása a B1 Admin-ban: főoldal, színek és logó, fontos oldalak, saját domain csatlakoztatása és adományozási űrlapok."
 ---
 
 # Indítsa el gyülekezete weboldalát

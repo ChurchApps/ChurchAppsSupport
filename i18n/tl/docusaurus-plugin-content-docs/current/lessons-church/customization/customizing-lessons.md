@@ -1,5 +1,6 @@
 ---
 title: "Pag-customize ng mga Aralin"
+description: "Alisin, itago, o ayusin ang sections at roles sa aralin ng Lessons.church, at piliin kung ang pagbabago ay para sa isang classroom o lahat ng classroom."
 ---
 
 # Pag-customize ng mga Aralin

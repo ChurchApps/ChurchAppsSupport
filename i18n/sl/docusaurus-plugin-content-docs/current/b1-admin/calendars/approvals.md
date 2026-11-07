@@ -1,5 +1,6 @@
 ---
 title: "Odobritve koledarja"
+description: "Pregledujte zahteve za rezervacijo sob in virov v B1 Admin, preverite morebitne konflikte ter jih odobrite ali zavrnite, po želji tudi objavite dogodek."
 ---
 
 # Odobritve koledarja
@@ -13,7 +14,7 @@ Stran Odobritve je mesto, kjer skrbniki pregledajo in obdelajo čakajoče zahtev
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Prostore ali vire z **skupino za odobritve** nastavite v razdelku [Prostori in viri](rooms-resources)
+- Prostore ali vire z **skupino za odobritve** nastavite v razdelku [Prostori in viri](./rooms-resources.md)
 - Potrebujete dovoljenje **Skrbnik koledarjev** ali dovoljenje **content.edit**
 
 </div>
@@ -41,7 +42,7 @@ Kliknite **Odobri** ali **Zavrni** pri kateri koli zahtevi za rezervacijo (pri z
 Ko kliknete **Odobri**, se odpre pogovorno okno **Odobri rezervacijo**, v katerem lahko dogodek v istem koraku tudi objavite:
 
 1. Označite **Objavi v javnem koledarju**, da bo dogodek viden v koledarju njegove skupine. Če polja ne označite, rezervacijo odobrite brez spreminjanja vidnosti dogodka.
-2. Ko je označeno **Objavi v javnem koledarju**, lahko v polju **Dodaj tudi v koledar** izberete kurirani koledar, da dogodek dodate tudi v enega od vaših [kuriranih koledarjev](curated-calendar). Če želite to preskočiti, pustite nastavitev na **Nobeden**. (Ta možnost se prikaže le, če imate dovoljenje **content.edit**.)
+2. Ko je označeno **Objavi v javnem koledarju**, lahko v polju **Dodaj tudi v koledar** izberete kurirani koledar, da dogodek dodate tudi v enega od vaših [kuriranih koledarjev](./curated-calendar.md). Če želite to preskočiti, pustite nastavitev na **Nobeden**. (Ta možnost se prikaže le, če imate dovoljenje **content.edit**.)
 3. Kliknite **Odobri**.
 
 ## Dogodki na čakanju
@@ -49,10 +50,10 @@ Ko kliknete **Odobri**, se odpre pogovorno okno **Odobri rezervacijo**, v katere
 Če vaš potek dela v koledarju zahteva odobritev dogodkov, preden so ti javno vidni, se dogodki na čakanju prikažejo v razdelku **Zahteve za dogodke**. Kliknite **Odobri**, da dogodek objavite v koledarju, ali **Zavrni**, da pošiljatelja obvestite, da so potrebne spremembe.
 
 :::tip
-Skupino za odobritve nastavite za prostor v razdelku [Prostori in viri](rooms-resources), če želite za ta prostor zahtevati odobritev. Skupine z dostopom lahko nato prostor zahtevajo pri ustvarjanju dogodkov, te zahteve pa se prikažejo na tej strani.
+Skupino za odobritve nastavite za prostor v razdelku [Prostori in viri](./rooms-resources.md), če želite za ta prostor zahtevati odobritev. Skupine z dostopom lahko nato prostor zahtevajo pri ustvarjanju dogodkov, te zahteve pa se prikažejo na tej strani.
 :::
 
 ## Sorodni članki
 
-- [Prostori, viri in načrtovanje](rooms-resources) — nastavitev rezerviranih prostorov in virov
-- [Ustvarjanje koledarjev](creating-calendars) — upravljanje koledarjev in dogodkov
+- [Prostori, viri in načrtovanje](./rooms-resources.md) — nastavitev rezerviranih prostorov in virov
+- [Ustvarjanje koledarjev](./creating-calendars.md) — upravljanje koledarjev in dogodkov

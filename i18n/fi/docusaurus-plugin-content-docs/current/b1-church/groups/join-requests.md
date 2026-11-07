@@ -1,5 +1,6 @@
 ---
 title: "Liittyminen ryhmään"
+description: "Pyydä liittymistä ryhmään, joka vaatii hyväksynnän B1.churchissa, lisää valinnainen viesti johtajalle ja seuraa tai peruuta odottava pyyntösi."
 ---
 
 # Liittyminen ryhmään

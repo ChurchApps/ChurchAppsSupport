@@ -1,5 +1,6 @@
 ---
 title: "Uygulamayı Yükleme"
+description: "B1 Mobile uygulamasını App Store veya Google Play'den yükleyin; ancak uygulama kullanımdan kaldırıldı, bunun yerine B1.church PWA önerilir."
 ---
 
 # Uygulamayı Yükleme
@@ -25,7 +26,7 @@ B1 Mobile hem iOS hem de Android cihazlar için kullanılabilir. Uygulama ücret
 
 ## Yüklemeden Sonra
 
-Uygulama yüklendikten sonra ana ekranınızdan açın. Kilisenizi bulup seçebileceğiniz kilise arama ekranı görünecektir. Zaten bir ChurchApps hesabınız varsa hemen [giriş yapabilirsiniz](./logging-in). Yoksa giriş ekranından yeni bir hesap oluşturabilirsiniz.
+Uygulama yüklendikten sonra ana ekranınızdan açın. Kilisenizi bulup seçebileceğiniz kilise arama ekranı görünecektir. Zaten bir ChurchApps hesabınız varsa hemen [giriş yapabilirsiniz](./logging-in.md). Yoksa giriş ekranından yeni bir hesap oluşturabilirsiniz.
 
 Uygulama, anlık bildirim göndermek için izin isteyecektir. Kilisenizden ve gruplardan güncellemeler alabilmeniz için bildirimlere izin vermenizi öneriyoruz.
 

@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "Lokalna namestitev B1 Admin: kloniraj nadzorno ploščo React/Vite, nastavi API-jeve končne točke v .env in zaženi razvojni strežnik za upravljanje cerkve."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ B1Admin je nadzorna plošča za upravljanje cerkve – aplikacija s stranmi v en
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **Node.js 22+** in **Git** – glejte [Predpogoji](../setup/prerequisites)
-- Nastavite svoj cilj API (demo ali lokalni) – glejte [Spremenljivke okolja](../setup/environment-variables)
+- Namestite **Node.js 22+** in **Git** – glejte [Predpogoji](../setup/prerequisites.md)
+- Nastavite svoj cilj API (demo ali lokalni) – glejte [Spremenljivke okolja](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Produkcijske gradnje se uvajajo na **S3 + CloudFront**:
 3. Sproži se invalidacija CloudFront, da se prikaže nova različica
 
 :::tip
-Za podrobna navodila o uvajanju glejte vodnik [Uvajanje spletnih aplikacij](../deployment/web-apps).
+Za podrobna navodila o uvajanju glejte vodnik [Uvajanje spletnih aplikacij](../deployment/web-apps.md).
 :::

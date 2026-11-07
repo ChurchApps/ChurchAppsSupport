@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Wire B1 Admin and Text In Church together with Zapier: mint an API key, build a connect-card-to-B1 Zap, and mirror group membership."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Turn the Zap on. The next connect card submitted through TIC lands in **B1Admin 
 
 ## See Also
 
-- [Clearstream](./clearstream) — alternative SMS platform with similar Zapier shape
-- [Zapier (overview)](../zapier) — B1 side of every Zapier recipe
+- [Clearstream](./clearstream.md) — alternative SMS platform with similar Zapier shape
+- [Zapier (overview)](../zapier.md) — B1 side of every Zapier recipe
 - [Text In Church Zapier guide](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TIC's docs)

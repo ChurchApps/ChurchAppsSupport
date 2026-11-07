@@ -1,5 +1,7 @@
 ---
-title: "Connexion"
+title: "Connexion à B1 Church Checkin"
+sidebar_label: "Connexion"
+description: "Connectez-vous à B1 Church Checkin, choisissez votre église, et découvrez la connexion automatique, les paramètres admin et la déconnexion."
 ---
 
 # Connexion
@@ -63,7 +65,7 @@ Les paramètres d'administration sont volontairement masqués afin que les membr
 2. Si un NIP de borne est défini, saisissez-le lorsqu'il vous est demandé.
 3. L'écran **Paramètres d'administration** s'ouvre avec les options suivantes :
    - **Changer de service** — changer l'horaire de service sélectionné
-   - **Changer d'imprimante** — ouvrir les [paramètres de l'imprimante](./printer-setup) pour rechercher et sélectionner une imprimante
+   - **Changer d'imprimante** — ouvrir les [paramètres de l'imprimante](./printer-setup.md) pour rechercher et sélectionner une imprimante
    - **Définir/Changer le NIP** — définir ou mettre à jour le NIP de la borne qui protège l'accès d'administration
    - **Déconnexion** — se déconnecter et revenir à l'écran de connexion
 
@@ -73,4 +75,4 @@ La déconnexion efface tous les identifiants enregistrés et le choix de l'égli
 
 ## Et ensuite
 
-Une fois connecté, vous pouvez [configurer une imprimante](./printer-setup) ou passer directement au [flux de pointage](../check-in/).
+Une fois connecté, vous pouvez [configurer une imprimante](./printer-setup.md) ou passer directement au [flux de pointage](../check-in/index.md).

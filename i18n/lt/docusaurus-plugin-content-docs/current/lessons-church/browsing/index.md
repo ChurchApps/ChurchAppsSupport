@@ -1,5 +1,6 @@
 ---
 title: "Pārlūkojamas turinys"
+description: "Kaip naršyti nemokamą Lessons.church mokymų biblioteką be paskyros: pagrindinis puslapis, naršymas pagal programas, paieška ir išoriniai teikėjai."
 ---
 
 # Pārlūkojamas turinys

@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "介绍 ChurchApps API 的模块化单体架构、六个数据模块、技术栈、端口和 Lambda 函数，并提供设置、数据库、认证和端点文档的链接，供开发者参考。"
 ---
 
 # API
@@ -52,8 +53,8 @@ ChurchApps API 是一个**模块化单体（modular monolith）**——一个代
 
 API 依赖两个 ChurchApps 共享包：
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** —— 基础工具（DateHelper、ApiHelper 等）
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** —— Express 服务器工具，包括身份验证、数据库辅助工具和 AWS 集成
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** —— 基础工具（DateHelper、ApiHelper 等）
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** —— Express 服务器工具，包括身份验证、数据库辅助工具和 AWS 集成
 
 :::info
 API 使用 ES 模块（`package.json` 中为 `"type": "module"`）。请确保你的导入语句使用 ES 模块语法。
@@ -61,11 +62,11 @@ API 使用 ES 模块（`package.json` 中为 `"type": "module"`）。请确保�
 
 ## 本节内容
 
-- **[本地设置](./local-setup)** —— 在本地克隆、配置并运行 API
-- **[数据库](./database)** —— 每个模块一个数据库的架构、建表脚本和数据访问模式
-- **[模块结构](./module-structure)** —— 控制器、仓储、模型和身份验证
-- **[API 密钥](./api-keys)** —— 用于脚本和连接器的个人访问令牌
-- **[已连接的应用（OAuth）](./connected-apps)** —— 第三方应用的多租户 OAuth 流程
-- **[Webhooks](./webhooks)** —— 向外部系统推送事件通知
-- **[MCP 服务器](./mcp)** —— 向 AI 助手开放 API 的模型上下文协议（Model Context Protocol）端点
-- **[端点参考](./endpoints/)** —— 所有模块完整的 REST API 文档
+- **[本地设置](./local-setup.md)** —— 在本地克隆、配置并运行 API
+- **[数据库](./database.md)** —— 每个模块一个数据库的架构、建表脚本和数据访问模式
+- **[模块结构](./module-structure.md)** —— 控制器、仓储、模型和身份验证
+- **[API 密钥](./api-keys.md)** —— 用于脚本和连接器的个人访问令牌
+- **[已连接的应用（OAuth）](./connected-apps.md)** —— 第三方应用的多租户 OAuth 流程
+- **[Webhooks](./webhooks.md)** —— 向外部系统推送事件通知
+- **[MCP 服务器](./mcp.md)** —— 向 AI 助手开放 API 的模型上下文协议（Model Context Protocol）端点
+- **[端点参考](./endpoints/index.md)** —— 所有模块完整的 REST API 文档

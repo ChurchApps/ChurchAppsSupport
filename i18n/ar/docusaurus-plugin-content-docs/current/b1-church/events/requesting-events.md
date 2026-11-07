@@ -1,5 +1,6 @@
 ---
 title: "طلب فعاليات وغرف"
+description: "اطلب حجز غرفة أو معدات لفعالية من بوابة أعضاء B1.church، وتابع حالته في My Requests، وألغه أثناء الانتظار."
 ---
 
 # طلب فعاليات وغرف
@@ -42,11 +43,11 @@ title: "طلب فعاليات وغرف"
 طالما أن الطلب ما زال معلّقاً، يمكنك سحبه بالضغط على **Cancel request** (سيُطلب منك التأكيد — لا يمكن التراجع عن الإلغاء).
 
 :::info
-يراجع موظفو الكنيسة الطلبات في صفحة [Approvals](../../b1-admin/calendars/approvals) ضمن B1 Admin. أما الغرف والموارد التي تحتاج إلى موافقة فيحددها كل كنيسة — راجع [Rooms & Resources](../../b1-admin/calendars/rooms-resources).
+يراجع موظفو الكنيسة الطلبات في صفحة [Approvals](../../b1-admin/calendars/approvals.md) ضمن B1 Admin. أما الغرف والموارد التي تحتاج إلى موافقة فيحددها كل كنيسة — راجع [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## مقالات ذات صلة
 
-- [صفحة Me](../getting-started/me-page) -- حيث توجد روابط الطلبات
-- [موافقات التقويم (B1 Admin)](../../b1-admin/calendars/approvals) -- كيف يراجع الموظفون الطلبات
-- [الغرف والموارد (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- كيف تُعدّ الكنائس المساحات القابلة للحجز
+- [صفحة Me](../getting-started/me-page.md) -- حيث توجد روابط الطلبات
+- [موافقات التقويم (B1 Admin)](../../b1-admin/calendars/approvals.md) -- كيف يراجع الموظفون الطلبات
+- [الغرف والموارد (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- كيف تُعدّ الكنائس المساحات القابلة للحجز

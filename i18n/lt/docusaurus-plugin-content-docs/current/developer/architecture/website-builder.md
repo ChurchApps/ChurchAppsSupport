@@ -1,5 +1,6 @@
 ---
 title: "Svetainių kūrėjo architektūra"
+description: "B1 svetainių kūrėjo žemėlapis: turinio medis, bendras elementų katalogas, atvaizdavimo procesas ir DI puslapių kūrimas B1 Admin bei B1.church."
 ---
 
 # Svetainių kūrėjo architektūra
@@ -82,7 +83,7 @@ Atvaizdavimo įrankiai yra `Packages/apphelper/src/website/components/elementTyp
 
 ### Redaktoriaus formos (B1Admin)
 
-Kiekvieno tipo nustatymų formos redaktoriuje yra `B1Admin/src/site/admin/elements/` kataloge. `ElementEdit.tsx` perduoda užklausą atskiram komponentui (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` ir kt.) arba įterptam lauko kūrėjui kiekvienam tipui. DI skirtas šio katalogo atspindys yra API MCP įrankis `describe_page_builder` (žr. [MCP serveris](../api/mcp)).
+Kiekvieno tipo nustatymų formos redaktoriuje yra `B1Admin/src/site/admin/elements/` kataloge. `ElementEdit.tsx` perduoda užklausą atskiram komponentui (`GalleryEdit`, `TestimonialEdit`, `StatsEdit` ir kt.) arba įterptam lauko kūrėjui kiekvienam tipui. DI skirtas šio katalogo atspindys yra API MCP įrankis `describe_page_builder` (žr. [MCP serveris](../api/mcp.md)).
 
 Redaktoriaus peržiūra prijungia tą patį `Theme` kaip ir tiesioginė svetainė. Jis nustato CSS kintamuosius `--headingFont` ir `--bodyFont` pagal bažnyčios bendrus stilius. B1App šiuos kintamuosius taiko per `pages.css`, kurio B1Admin negali importuoti, todėl `ContentEditor.tsx` įterpia `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`), kad jie būtų taikomi `.page` pagrindinio teksto ir `h1`–`h6` antraštėms. Be jo peržiūroje antraštės būtų rodomos administravimo šriftu.
 
@@ -151,7 +152,7 @@ Visa tai yra B1App pusės atvaizdavimas ContentApi duomenų pagrindu: API saugo,
 |----------|-------------|
 | Meta aprašymai | `pages.metaDescription` (≤300 simbolių) per `MetaHelper.getMetaData()` patenka į Next.js `Metadata` (aprašymas ir Open Graph) kiekviename kūrėjo atvaizduojamame maršrute. B1Admin puslapio nustatymuose yra DI mygtukas „Generuoti" (žr. žemiau) |
 | Peradresavimai | Kiekvienos bažnyčios `redirects` įrašai valdomi `/content/redirects` (`content.edit`, 200 eilučių riba, normalizuoti keliai). Kai būtų 404, B1App puslapio maršrutas nustato kelią pagal `GET /content/redirects/public/:churchId` ir išduoda HTTP 308 per Next `permanentRedirect`. Nesutapę keliai pereina į `notFound()` |
-| Prekinio ženklo 404 | `not-found.tsx` atvaizduoja `BrandedNotFound` su bažnyčios logotipu, pavadinimu ir tema, o ne bendrą klaidą. Nežinomi keliai `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` ir `/volunteer/[planId]` grąžina tikrą 404, kaip ir nežinomi subdomenai bei netinkami puslapių slug (žr. [Svetainių maršrutizavimas ir kelios svetainės](./websites)) |
+| Prekinio ženklo 404 | `not-found.tsx` atvaizduoja `BrandedNotFound` su bažnyčios logotipu, pavadinimu ir tema, o ne bendrą klaidą. Nežinomi keliai `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` ir `/volunteer/[planId]` grąžina tikrą 404, kaip ir nežinomi subdomenai bei netinkami puslapių slug (žr. [Svetainių maršrutizavimas ir kelios svetainės](./websites.md)) |
 | Struktūrizuoti duomenys | `BlogPosting` JSON-LD tinklaraščio įrašams; `VideoObject` kiekvieno pamokslo puslapiuose (`/{sdSlug}/sermons/[sermonId]`) ir puslapiuose, kuriuose yra elementas `sermons`; `Event` iš kalendoriaus ir renginių elementų kūrėjo puslapiuose bei kiekviename `/{sdSlug}/events/[eventId]` puslapyje (kitas pasikartojimas, su renginio nuotrauka kaip `image`); schema.org `Event` iš elemento `serviceTimes` |
 | Pamokslų puslapiai | Kiekvienas viešas pamokslas gauna indeksuojamą puslapį `/sermons/[sermonId]` su pilna meta informacija. Pamokslai nebėra užrakinti kliento pusės naršyklės elemente |
 | Analitika | Viešasis nustatymas `ga4MeasurementId` (valdomas šalia peradresavimų B1Admin) įterpia kiekvienos bažnyčios GA4 gtag per `next/script`. B1 programa (`/{sdSlug}/mobile`) taip pat siunčia savo puslapių peržiūras į tą ID, kartu su ChurchApps žyma, jei tai galiojantis `G-` ID (GTM konteinerių ID lieka tik svetainėms). Kiekvienas `gtag('config')` turi `display_mode` reikšmę `installed` arba `browser`, pagal `navigator.standalone` arba `(display-mode: standalone)` medijos užklausą (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -199,7 +200,7 @@ Mygtukas `SectionToolbar` perrašymui ir mygtukas „Generuoti svetainę" puslap
 | `POST /website/generateAltText` | Vaizdo kvietimas iki 20 vaizdo URL. Grąžina trumpą alternatyvųjį tekstą (≤125 simboliai, pašalinami priešdėliai „photo of") |
 | `POST /website/generateMetaDescription` | Vienas SEO meta aprašymas (≤155 simboliai) iš puslapio teksto. Susietas su mygtuku Generuoti B1Admin puslapio nustatymuose |
 
-Šių galinių taškų užklausos yra Markdown failai kataloge `AskApi/config/instructions/`, įskaitant elementų katalogą, iš kurio modelis generuoja. Du dizaino sprendimai išlaiko katalogą patikimą. Klientas perduoda `availableElementTypes` kiekvienoje užklausoje (užklausa gali naudoti tik tipus iš šio sąrašo. Serveris nekoduoja viso rinkinio), o API MCP įrankis `describe_page_builder` pateikia tą patį vadovą DI agentams, dirbantiems per [MCP](../api/mcp). Modeliai yra Anthropic Claude per OpenRouter: 3.5 Haiku skyrių turiniui (greitis), 3.5 Sonnet struktūroms, svetainių planams ir vaizdui. Kai OpenRouter raktas nesukonfigūruotas, naudojamas OpenAI atsarginis variantas.
+Šių galinių taškų užklausos yra Markdown failai kataloge `AskApi/config/instructions/`, įskaitant elementų katalogą, iš kurio modelis generuoja. Du dizaino sprendimai išlaiko katalogą patikimą. Klientas perduoda `availableElementTypes` kiekvienoje užklausoje (užklausa gali naudoti tik tipus iš šio sąrašo. Serveris nekoduoja viso rinkinio), o API MCP įrankis `describe_page_builder` pateikia tą patį vadovą DI agentams, dirbantiems per [MCP](../api/mcp.md). Modeliai yra Anthropic Claude per OpenRouter: 3.5 Haiku skyrių turiniui (greitis), 3.5 Sonnet struktūroms, svetainių planams ir vaizdui. Kai OpenRouter raktas nesukonfigūruotas, naudojamas OpenAI atsarginis variantas.
 
 ## Pokalbio formos
 
@@ -224,8 +225,8 @@ Valdikliai, kurie atlieka `bump`: puslapiai (įrašymas, ištrynimas, dubliavima
 
 ## Susiję puslapiai
 
-- [Svetainių maršrutizavimas ir kelios svetainės](./websites): kaip užklausa nustatoma į bažnyčią ir svetainę ir kaip veikia pasirinkti domenai
-- [Turinio galiniai taškai](../api/endpoints/content): pilnas REST paviršius puslapiams, skyriams, elementams, blokams, įrašams, peradresavimams ir nustatymams
-- [AppHelper](../shared-libraries/app-helper): npm paketas, kuriame yra atvaizdavimo įrankiai, registras, skirtukai ir valdikliai
-- [MCP serveris](../api/mcp): įskaitant įrankį `describe_page_builder`
+- [Svetainių maršrutizavimas ir kelios svetainės](./websites.md): kaip užklausa nustatoma į bažnyčią ir svetainę ir kaip veikia pasirinkti domenai
+- [Turinio galiniai taškai](../api/endpoints/content.md): pilnas REST paviršius puslapiams, skyriams, elementams, blokams, įrašams, peradresavimams ir nustatymams
+- [AppHelper](../shared-libraries/app-helper.md): npm paketas, kuriame yra atvaizdavimo įrankiai, registras, skirtukai ir valdikliai
+- [MCP serveris](../api/mcp.md): įskaitant įrankį `describe_page_builder`
 - [Puslapio redaktorius (galutiniam naudotojui)](/docs/b1-admin/website/page-editor): darbuotojams skirta redaktoriaus dokumentacija

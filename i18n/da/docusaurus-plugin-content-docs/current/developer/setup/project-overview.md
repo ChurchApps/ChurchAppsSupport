@@ -1,5 +1,6 @@
 ---
 title: "Projektoversigt"
+description: "Kortlæg alle ChurchApps-repositorier efter kategori med frameworks, udviklingsporte, databaser og hvordan de delte @churchapps-pakker forbinder dem i opsætningsdokumentationen."
 ---
 
 # Projektoversigt
@@ -13,7 +14,7 @@ ChurchApps består af cirka 20 uafhængige lagre, hver udgivet under [ChurchApps
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Installer [forudsætningerne](./prerequisites) for den projektkategori, du vil arbejde med
+- Installer [forudsætningerne](./prerequisites.md) for den projektkategori, du vil arbejde med
 
 </div>
 
@@ -99,5 +100,5 @@ Alle frontend-apps afhænger af `@churchapps/helpers`. Webapps afhænger desuden
 
 ## Næste trin
 
-- **[Miljøvariabler](./environment-variables)** -- Konfigurér dine `.env`-filer til at forbinde til API'er
-- **[Lokalt API-setup](../api/local-setup)** -- Opsæt backend API'en lokalt
+- **[Miljøvariabler](./environment-variables.md)** -- Konfigurér dine `.env`-filer til at forbinde til API'er
+- **[Lokalt API-setup](../api/local-setup.md)** -- Opsæt backend API'en lokalt

@@ -1,5 +1,6 @@
 ---
 title: "Rejestrowanie darowizn"
+description: "Rejestruj darowizny w B1 Admin: utwórz partię i wpisuj wpłaty pojedynczo, zaimportuj plik CSV lub zapisz jedną darowiznę z profilu darczyńcy."
 ---
 
 # Rejestrowanie darowizn

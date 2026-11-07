@@ -1,5 +1,6 @@
 ---
 title: "Paghahanap"
+description: "Hanapin ang programs, studies, at lessons sa Lessons.church sa pamamagitan ng keyword o kuwento sa Bibliya, at alamin kung paano niraranggo ang resulta."
 ---
 
 # Paghahanap

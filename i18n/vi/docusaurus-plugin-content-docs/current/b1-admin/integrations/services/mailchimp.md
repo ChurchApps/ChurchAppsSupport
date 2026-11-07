@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Đồng bộ người và thành viên nhóm hoặc danh sách đã lưu từ B1 Admin sang đối tượng Mailchimp dưới dạng thẻ, kèm thiết lập, nhập ban đầu và xử lý sự cố."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Việc nhập dữ liệu ban đầu qua công cụ nhập của Mailchimp giúp
 
 ## Các công thức khác (Zapier / Make)
 
-Mọi nhu cầu ngoài việc đồng bộ danh sách người nhận, chẳng hạn gắn thẻ người quyên góp khi có `donation.created`, chiều ngược lại từ Mailchimp sang B1, hoặc đồng bộ sang một nền tảng email khác (Constant Contact, Brevo, v.v.), vẫn có thể thực hiện qua [Zapier](../zapier) hoặc [Make](../make). Các công cụ này được kích hoạt bởi cùng các sự kiện webhook:
+Mọi nhu cầu ngoài việc đồng bộ danh sách người nhận, chẳng hạn gắn thẻ người quyên góp khi có `donation.created`, chiều ngược lại từ Mailchimp sang B1, hoặc đồng bộ sang một nền tảng email khác (Constant Contact, Brevo, v.v.), vẫn có thể thực hiện qua [Zapier](../zapier.md) hoặc [Make](../make.md). Các công cụ này được kích hoạt bởi cùng các sự kiện webhook:
 
 - **Gắn thẻ người quyên góp:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Hai chiều:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Nếu trước đây bạn đã thiết lập đồng bộ người và nhóm qu
 
 - [Webhooks (tài liệu dành cho nhà phát triển)](/docs/developer/api/webhooks): nền tảng bên dưới, danh mục sự kiện, ngữ nghĩa gửi lại và thử lại
 - [Saved Lists](/docs/b1-admin/people/lists): các nhóm đối tượng dựa trên quy tắc, tương ứng tự nhiên với thẻ Mailchimp
-- [Zapier (tổng quan)](../zapier): dành cho các công thức ngoài việc đồng bộ danh sách người nhận
+- [Zapier (tổng quan)](../zapier.md): dành cho các công thức ngoài việc đồng bộ danh sách người nhận

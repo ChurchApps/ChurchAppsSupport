@@ -1,5 +1,7 @@
 ---
-title: "Selbst-Check-in"
+title: "Selbst-Check-in im B1.church-Mitgliederportal"
+sidebar_label: "Selbst-Check-in"
+description: "Sich und Ihren Haushalt im Mitgliederportal von B1.church für einen Gottesdienst einchecken; Gottesdienstzeiten und Gruppen in wenigen Schritten wählen."
 ---
 
 # Selbst-Check-in
@@ -45,7 +47,7 @@ Sobald Sie allen anwesenden Personen eine Gruppe zugewiesen haben, tippen Sie au
 
 Anschließend sehen Sie eine Bestätigung, dass Ihr Check-in abgeschlossen ist und Ihre Anwesenheit gespeichert wurde. Nach kurzer Zeit kehrt die Seite zur Gottesdienstliste zurück, bereit für den nächsten Check-in.
 
-Druckt Ihre Gemeinde Namensschilder an einer Check-in-Station, sehen Sie stattdessen **Sie sind eingecheckt!** mit einem QR-Code und einem Sicherheitscode. Zeigen Sie den Code an einer Check-in-Station, um Ihre Namensschilder zu drucken, und tippen Sie dann auf **Fertig**. Am B1-Checkin-Kiosk tippen Sie auf **Code scannen** und halten den QR-Code vor die Kamera – siehe [Etiketten für einen Check-in per Telefon drucken](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Druckt Ihre Gemeinde Namensschilder an einer Check-in-Station, sehen Sie stattdessen **Sie sind eingecheckt!** mit einem QR-Code und einem Sicherheitscode. Zeigen Sie den Code an einer Check-in-Station, um Ihre Namensschilder zu drucken, und tippen Sie dann auf **Fertig**. Am B1-Checkin-Kiosk tippen Sie auf **Code scannen** und halten den QR-Code vor die Kamera – siehe [Etiketten für einen Check-in per Telefon drucken](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Ist Ihr Haushalt für den von Ihnen gewählten Gottesdienst bereits eingecheckt, erscheint neben der Überschrift **Wer ist hier?** ein Link **Check-in-Code anzeigen**. Tippen Sie darauf, um den QR-Code und den Sicherheitscode wieder anzuzeigen, etwa wenn Sie die Seite geschlossen haben, bevor Sie zu einer Check-in-Station gelangt sind.
 

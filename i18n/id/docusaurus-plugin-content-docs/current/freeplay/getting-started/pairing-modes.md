@@ -1,5 +1,6 @@
 ---
 title: "Memilih Mode Pemasangan"
+description: "Pilih cara memasangkan FreePlay TV yang tepat: kalender dari FreePlay Admin, rencana ibadah dari B1 Admin, atau tanpa pemasangan."
 ---
 
 # Memilih Mode Pemasangan
@@ -32,7 +33,7 @@ Masukkan kode di **FreePlay Admin** di [admin.freeplay.church](https://admin.fre
 
 **Paling cocok untuk:** Papan tanda di lobi dan lorong, pengulangan pengumuman, dan ruang kelas di mana pelajaran sudah harus diputar saat orang-orang masuk.
 
-Lihat **[Mode Terjadwal](../scheduled-mode/)** untuk panduan lengkapnya.
+Lihat **[Mode Terjadwal](../scheduled-mode/index.md)** untuk panduan lengkapnya.
 
 ## Mode Rencana (B1 Admin)
 
@@ -42,7 +43,7 @@ Masukkan kode di **B1 Admin** ketika Anda ingin TV mengikuti jenis rencana ibada
 
 **Paling cocok untuk:** TV yang menampilkan konten yang terkait dengan rencana ibadah mingguan Anda, di mana seseorang memulai pemutaran saat waktunya tiba.
 
-Lihat **[Mode Rencana](../plan-mode/)** untuk panduan lengkapnya.
+Lihat **[Mode Rencana](../plan-mode/index.md)** untuk panduan lengkapnya.
 
 :::tip
 Anda juga dapat memutar rencana ibadah yang sedang berjalan sesuai jadwal. Di FreePlay Admin, tambahkan entri kalender dan pilih jenis rencana di bawah **Rencana ibadah**.
@@ -50,7 +51,7 @@ Anda juga dapat memutar rencana ibadah yang sedang berjalan sesuai jadwal. Di Fr
 
 ## Penyedia Konten (Tanpa Pemasangan)
 
-Jika Anda tidak perlu memasangkan TV sama sekali, Anda dapat langsung menjelajahi penyedia konten. Penyedia seperti [Lessons.church](../../lessons-church/) dan Bible Project memiliki konten yang dapat Anda unduh dan putar kapan pun Anda mau.
+Jika Anda tidak perlu memasangkan TV sama sekali, Anda dapat langsung menjelajahi penyedia konten. Penyedia seperti [Lessons.church](../../lessons-church/index.md) dan Bible Project memiliki konten yang dapat Anda unduh dan putar kapan pun Anda mau.
 
 **Paling cocok untuk:** TV di mana relawan memilih apa yang akan diputar setiap minggu, atau ketika Anda ingin menjelajahi apa saja yang tersedia.
 
@@ -60,6 +61,6 @@ Anda dapat membuka layar **Penyedia** kapan saja dari **Pengaturan** di bagian b
 
 ## Artikel Terkait
 
-- **[Mode Terjadwal](../scheduled-mode/)** - Jadwalkan TV di kalender dengan FreePlay Admin
-- **[Mode Rencana](../plan-mode/)** - Panduan lengkap untuk memasangkan dengan rencana ibadah
-- **[Penyedia Konten](../content-providers/)** - Jelajahi dan unduh konten dari sumber eksternal
+- **[Mode Terjadwal](../scheduled-mode/index.md)** - Jadwalkan TV di kalender dengan FreePlay Admin
+- **[Mode Rencana](../plan-mode/index.md)** - Panduan lengkap untuk memasangkan dengan rencana ibadah
+- **[Penyedia Konten](../content-providers/index.md)** - Jelajahi dan unduh konten dari sumber eksternal

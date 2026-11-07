@@ -1,5 +1,6 @@
 ---
 title: "प्रमाणीकरण और अनुमतियाँ"
+description: "ChurchApps API के JWT लॉगिन, दो-चरणीय साइन-इन, OAuth 2.0 प्रवाह और अनुमति मॉडल का संदर्भ, एकीकरण बनाने वाले डेवलपर्स के लिए।"
 ---
 
 # प्रमाणीकरण और अनुमतियाँ
@@ -244,7 +245,7 @@ Access tokens **12 घंटे** बाद समाप्त हो जात�
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | client ID से क्लाइंट प्राप्त करें (secret छिपा हुआ) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | क्लाइंट बनाएँ या अपडेट करें |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | क्लाइंट हटाएँ |
-| POST | `/membership/oauth/register` | Public | — | MCP कनेक्टर जैसे public clients के लिए Dynamic client registration (RFC 7591)। देखें [Connected Apps](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Public | — | MCP कनेक्टर जैसे public clients के लिए Dynamic client registration (RFC 7591)। देखें [Connected Apps](../connected-apps.md#dynamic-client-registration) |
 
 ### डिवाइस स्वीकृति endpoints
 
@@ -265,5 +266,5 @@ API दो रैपर फ़ंक्शन उपयोग करता ह�
 
 ## संबंधित पृष्ठ
 
-- [Module Structure](../module-structure) — कंट्रोलर, रिपॉज़िटरी और मॉडल कैसे व्यवस्थित हैं
-- [Local Setup](../local-setup) — विकास के लिए API को स्थानीय रूप से चलाना
+- [Module Structure](../module-structure.md) — कंट्रोलर, रिपॉज़िटरी और मॉडल कैसे व्यवस्थित हैं
+- [Local Setup](../local-setup.md) — विकास के लिए API को स्थानीय रूप से चलाना

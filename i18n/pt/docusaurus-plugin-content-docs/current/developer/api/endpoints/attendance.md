@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Frequência"
+description: "Referência da API de presença no B1 Admin e B1 Checkin: campi, cultos, horários, sessões, visitas, regras de check-in e endpoints de exportação."
 ---
 
 # Endpoints de Frequência
@@ -270,6 +271,6 @@ Acompanha as sequências de frequência de cada pessoa -- semanas consecutivas e
 
 ## Páginas Relacionadas
 
-- [Endpoints de Membresia](./membership) — Pessoas, grupos, funções e gestão da igreja
-- [Autenticação e Permissões](./authentication) — Fluxo de login, JWT, modelo de permissões
-- [Estrutura de Módulos](../module-structure) — Padrões de organização do código
+- [Endpoints de Membresia](./membership.md) — Pessoas, grupos, funções e gestão da igreja
+- [Autenticação e Permissões](./authentication.md) — Fluxo de login, JWT, modelo de permissões
+- [Estrutura de Módulos](../module-structure.md) — Padrões de organização do código

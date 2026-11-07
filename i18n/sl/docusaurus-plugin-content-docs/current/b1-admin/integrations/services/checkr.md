@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Povežite prijave prostovoljcev v B1 Admin s preverjanjem ozadja Checkr prek Make.com, z neobveznimi opozorili o stanju poročil za koordinatorja varnosti."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Zgornje povežite s časovnim sprožilcem v Make:
 
 ## Glej tudi
 
-- [Make (pregled)](../make): stran B1 za vsak scenarij Make
-- [Mobilno sporočilo](./mobile-message): za SMS-ponudnike brez aplikacij Zapier, enak vzorec Webhooks/HTTP kot pri povezavi Checkr v Make
+- [Make (pregled)](../make.md): stran B1 za vsak scenarij Make
+- [Mobilno sporočilo](./mobile-message.md): za SMS-ponudnike brez aplikacij Zapier, enak vzorec Webhooks/HTTP kot pri povezavi Checkr v Make
 - [Dokumentacija Checkr API](https://docs.checkr.com/)

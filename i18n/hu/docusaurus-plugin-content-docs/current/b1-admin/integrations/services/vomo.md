@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "VOMO önkéntes-jelentkezések és kioszkos bejelentkezések összekötése a B1 Admin személyeivel és csoportjaival Zapier-rel, API-hatókörökkel."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Amikor a VOMO-projekt véget ér, kézzel ürítse ki a B1-csoportot, vagy páro
 
 ### „Köszönjük a jelentkezést” SMS küldése
 
-Fűzze a VOMO Részvételt követően a Clearstream Szöveg küldése vagy a Text In Church Üzenet küldése lépést ugyanabban a Zapben. Mindkettőnek van önálló Zapier-művelete. Lásd: [Clearstream](./clearstream) és [Text In Church](./text-in-church).
+Fűzze a VOMO Részvételt követően a Clearstream Szöveg küldése vagy a Text In Church Üzenet küldése lépést ugyanabban a Zapben. Mindkettőnek van önálló Zapier-művelete. Lásd: [Clearstream](./clearstream.md) és [Text In Church](./text-in-church.md).
 
 ### Lemorzsolódás észlelése
 
@@ -91,6 +92,6 @@ Futtasson napi Zapier *Ütemezés* triggert, amely a VOMO-ban meghívja a Szerve
 
 ## Lásd még
 
-- [Zapier (áttekintés)](../zapier): a B1 oldala minden Zapier-forgatókönyvhöz
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): az önkéntes-jelentkezések párosítása SMS-megerősítéssel
+- [Zapier (áttekintés)](../zapier.md): a B1 oldala minden Zapier-forgatókönyvhöz
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): az önkéntes-jelentkezések párosítása SMS-megerősítéssel
 - [Webhookok (fejlesztői referencia)](/docs/developer/api/webhooks): azok az események, amelyekre a VOMO triggerelhet

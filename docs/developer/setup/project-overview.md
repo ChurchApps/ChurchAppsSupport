@@ -1,5 +1,6 @@
 ---
 title: "Project Overview"
+description: "Map every ChurchApps repository by category, with frameworks, dev ports, databases, and how the shared @churchapps packages connect them, in the developer setup docs."
 ---
 
 # Project Overview
@@ -13,7 +14,7 @@ ChurchApps consists of approximately 20 independent repositories, each published
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Install the [prerequisites](./prerequisites) for the project category you want to work on
+- Install the [prerequisites](./prerequisites.md) for the project category you want to work on
 
 </div>
 
@@ -72,7 +73,7 @@ Shared code is published to npm under the `@churchapps` scope and consumed as re
 | `@churchapps/integration-sdk` | B1.church integration toolkit: webhooks, REST client, OAuth | External integration developers |
 | `@churchapps/texting` | SMS provider abstraction | Api |
 
-See [Shared Libraries](../shared-libraries/) for workspace setup and the release workflow.
+See [Shared Libraries](../shared-libraries/index.md) for workspace setup and the release workflow.
 
 ## Project Relationships
 
@@ -90,5 +91,5 @@ All frontend apps depend on `@churchapps/helpers`. Web apps additionally depend 
 
 ## Next Steps
 
-- **[Environment Variables](./environment-variables)** -- Configure your `.env` files to connect to APIs
-- **[API Local Setup](../api/local-setup)** -- Set up the backend API locally
+- **[Environment Variables](./environment-variables.md)** -- Configure your `.env` files to connect to APIs
+- **[API Local Setup](../api/local-setup.md)** -- Set up the backend API locally

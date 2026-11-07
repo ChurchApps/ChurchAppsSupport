@@ -1,5 +1,6 @@
 ---
 title: "Довідник з ендпоінтів"
+description: "Усі ендпоінти ChurchApps API за модулями: метод, шлях, автентифікація й дозвіл для кожного маршруту, а також правила пакетного збереження та помилок."
 ---
 
 # Довідник з ендпоінтів
@@ -89,10 +90,10 @@ Authorization: Bearer <token>
 
 | Module | Base Path | Description |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Вхід, реєстрація, JWT-токени, OAuth, дозволи |
-| [Membership](./membership) | `/membership/*` | Люди, церкви, групи, домогосподарства, ролі, форми, налаштування |
-| [Attendance](./attendance) | `/attendance/*` | Кампуси, служби, сесії, відвідування, записи чек-іну |
-| [Content](./content) | `/content/*` | Сторінки, проповіді, події, файли, галереї, Біблія, трансляції |
-| [Giving](./giving) | `/giving/*` | Пожертви, фонди, платіжні шлюзи, підписки |
-| [Messaging](./messaging) | `/messaging/*` | Розмови, сповіщення, пристрої, SMS |
-| [Doing](./doing) | `/doing/*` | Плани, завдання, призначення, автоматизація, планування |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Вхід, реєстрація, JWT-токени, OAuth, дозволи |
+| [Membership](./membership.md) | `/membership/*` | Люди, церкви, групи, домогосподарства, ролі, форми, налаштування |
+| [Attendance](./attendance.md) | `/attendance/*` | Кампуси, служби, сесії, відвідування, записи чек-іну |
+| [Content](./content.md) | `/content/*` | Сторінки, проповіді, події, файли, галереї, Біблія, трансляції |
+| [Giving](./giving.md) | `/giving/*` | Пожертви, фонди, платіжні шлюзи, підписки |
+| [Messaging](./messaging.md) | `/messaging/*` | Розмови, сповіщення, пристрої, SMS |
+| [Doing](./doing.md) | `/doing/*` | Плани, завдання, призначення, автоматизація, планування |

@@ -1,5 +1,6 @@
 ---
 title: "Denetim Günlüğü"
+description: "B1 Admin'deki denetim günlüğünü inceleyerek kimlerin giriş yaptığını, kişi kayıtlarını düzenlediğini veya izinleri değiştirdiğini görün; filtrelenmiş kayıtları CSV olarak dışa aktarın."
 ---
 
 # Denetim Günlüğü
@@ -78,6 +79,6 @@ Denetim günlüğünü düzenli olarak inceleyin; özellikle yeni ekip üyeleri 
 
 ## İlgili Makaleler
 
-- [Roller ve İzinler](../settings/roles-permissions) -- Kimin neye erişebileceğini yönetin
-- [Veri Güvenliği](../settings/data-security) -- Verilerinizin nasıl korunduğunu öğrenin
+- [Roller ve İzinler](../settings/roles-permissions.md) -- Kimin neye erişebileceğini yönetin
+- [Veri Güvenliği](../settings/data-security.md) -- Verilerinizin nasıl korunduğunu öğrenin
 - [Raporlara Genel Bakış](./index.md) -- Kullanılabilir tüm raporları görün

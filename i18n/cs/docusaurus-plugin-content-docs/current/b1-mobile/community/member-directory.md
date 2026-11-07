@@ -1,5 +1,7 @@
 ---
-title: "Členové"
+title: "Adresář členů v aplikaci B1 Mobile"
+sidebar_label: "Členové"
+description: "Najděte lidi ve své církvi pomocí adresáře členů v B1 Mobile: procházejte podle abecedy, hledejte podle jména a otevírejte profily a odkazy na domácnost."
 ---
 
 # Adresář členů
@@ -13,7 +15,7 @@ Adresář členů v aplikaci B1 Mobile vám umožňuje procházet a vyhledávat 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [přihlaste se](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [přihlaste se](../getting-started/logging-in.md) ke svému účtu
 
 </div>
 
@@ -51,5 +53,5 @@ Informace viditelné v jednotlivých profilech závisí na nastavení soukromí 
 
 ## Související články
 
-- [Zprávy](./messaging) -- Odešlete soukromou zprávu někomu, koho najdete v adresáři
+- [Zprávy](./messaging.md) -- Odešlete soukromou zprávu někomu, koho najdete v adresáři
 - [Nastavení soukromí](../profile/privacy-settings.md) -- Ovládejte, co ostatní vidí o vás v adresáři

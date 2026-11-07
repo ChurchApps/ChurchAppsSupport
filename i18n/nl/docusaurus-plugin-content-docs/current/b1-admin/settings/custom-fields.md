@@ -1,5 +1,6 @@
 ---
 title: "Aangepaste velden"
+description: "Definieer aangepaste velden in B1 Admin om extra persoonsgegevens bij te houden, zoals VOG-vervaldatums of shirtmaten, en zoek en filter daarop."
 ---
 
 # Aangepaste velden

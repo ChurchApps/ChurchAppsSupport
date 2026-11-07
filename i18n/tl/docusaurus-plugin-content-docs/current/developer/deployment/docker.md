@@ -1,12 +1,13 @@
 ---
 title: "Self-Hosting gamit ang Docker"
+description: "I-install ang pribadong B1 Admin, member portal, API, at MySQL stack sa sarili mong makina gamit ang Docker, at i-upgrade at i-backup gamit ang b1 command."
 ---
 
 # Self-Hosting gamit ang Docker
 
 <div class="article-intro">
 
-Patakbuhin ang sarili mong pribadong instance ng B1 Admin, ng B1 member portal at website, ng API, at ng MySQL database sa anumang makina na may Docker -- isang home server, maliit na VPS, o on-prem na box. Iisang command ang nag-i-install nito, iisang command ang nag-a-upgrade, at kumukuha muna ng backup ang bawat upgrade. Kung ayaw mong magmintina ng server, tingnan ang [Self-Hosting on Railway](./railway-template) para sa managed na alternatibo.
+Patakbuhin ang sarili mong pribadong instance ng B1 Admin, ng B1 member portal at website, ng API, at ng MySQL database sa anumang makina na may Docker -- isang home server, maliit na VPS, o on-prem na box. Iisang command ang nag-i-install nito, iisang command ang nag-a-upgrade, at kumukuha muna ng backup ang bawat upgrade. Kung ayaw mong magmintina ng server, tingnan ang [Self-Hosting on Railway](./railway-template.md) para sa managed na alternatibo.
 
 </div>
 
@@ -94,10 +95,10 @@ Kung nag-install ka sa `localhost` at gusto mo itong gawing pampubliko sa bandan
 
 Gumagana ang mga ito nang eksakto gaya sa Railway -- parehong environment variable, itinakda sa `.env` sa halip na sa Railway dashboard:
 
-- **[Email / SMTP](./railway-template#1-email-highly-recommended)** -- mga gabay ng provider para sa Resend, Brevo, at Gmail
-- **[Multi-site](./railway-template#3-multi-site-multiple-churches-on-one-instance)** -- walang limitasyong simbahan kada instance. Ang `/` ay naghahain ng simbahang ang slug ay `DEFAULT_CHURCH_SLUG` (ang unang simbahan ay `church`); ituro ang mga dagdag na domain sa box at i-map ang mga ito sa ilalim ng **Settings → Domains** sa B1Admin
-- **[Online giving](./railway-template#4-online-giving-stripe--paypal)** -- naka-configure kada simbahan sa admin UI
-- **[Mga opsyonal na integration](./railway-template#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[Email / SMTP](./railway-template.md#1-email-highly-recommended)** -- mga gabay ng provider para sa Resend, Brevo, at Gmail
+- **[Multi-site](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** -- walang limitasyong simbahan kada instance. Ang `/` ay naghahain ng simbahang ang slug ay `DEFAULT_CHURCH_SLUG` (ang unang simbahan ay `church`); ituro ang mga dagdag na domain sa box at i-map ang mga ito sa ilalim ng **Settings → Domains** sa B1Admin
+- **[Online giving](./railway-template.md#4-online-giving-stripe--paypal)** -- naka-configure kada simbahan sa admin UI
+- **[Mga opsyonal na integration](./railway-template.md#6-optional-feature-integrations)** -- `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push notifications](#push-notifications)** -- `WEB_PUSH_*`; blangko ang iniiwan ng installer, kaya naka-off ang push hangga't hindi mo idinadagdag ang mga ito
 
 Awtomatikong naka-enable sa self-hosted na instance ang mga imbitasyon at iba pang email na ipinapadala ng simbahan (ginagawang manual na review muna ng hosted na serbisyo ang mga ito para protektahan ang reputasyon ng sender nito).
@@ -148,7 +149,7 @@ Sumusulat ang `./deploy/b1 backup` ng pare-parehong snapshot ng unang dalawa kas
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Para sa malalaking media library, maaari mong ilipat ang file storage sa S3 -- itakda ang `FILE_STORE=S3` kasama ang mga variable na `AWS_*` na inilarawan sa [seksyong File Storage ng Railway guide](./railway-template#5-file-storage). Hindi kasama sa database backup ang mga S3 object; i-enable ang bucket versioning doon.
+Para sa malalaking media library, maaari mong ilipat ang file storage sa S3 -- itakda ang `FILE_STORE=S3` kasama ang mga variable na `AWS_*` na inilarawan sa [seksyong File Storage ng Railway guide](./railway-template.md#5-file-storage). Hindi kasama sa database backup ang mga S3 object; i-enable ang bucket versioning doon.
 
 ## Pag-update
 
@@ -187,6 +188,6 @@ Natigil pa rin? Magbukas ng issue sa [github.com/ChurchApps/ChurchAppsSupport/is
 
 ## Mga Kaugnay na Artikulo
 
-- **[Self-Hosting on Railway](./railway-template)** -- alternatibong managed na hosting, kasama ang mga shared na gabay sa configuration pagkatapos ng deploy
-- **[Initial Setup](../../getting-started/initial-setup)** -- mga unang hakbang pagkatapos malikha ang iyong simbahan
-- **[Local API Setup](../api/local-setup)** -- pagpapatakbo ng stack nang direkta para sa development
+- **[Self-Hosting on Railway](./railway-template.md)** -- alternatibong managed na hosting, kasama ang mga shared na gabay sa configuration pagkatapos ng deploy
+- **[Initial Setup](../../getting-started/initial-setup.md)** -- mga unang hakbang pagkatapos malikha ang iyong simbahan
+- **[Local API Setup](../api/local-setup.md)** -- pagpapatakbo ng stack nang direkta para sa development

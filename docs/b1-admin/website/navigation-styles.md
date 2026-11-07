@@ -1,5 +1,6 @@
 ---
 title: "Navigation Styles"
+description: "Customize colors for solid and transparent website navigation bars in B1 Admin, including link, hover, and active states for your church site."
 ---
 
 # Navigation Styles

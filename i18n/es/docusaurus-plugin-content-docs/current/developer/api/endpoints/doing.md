@@ -1,5 +1,6 @@
 ---
 title: "Endpoints de Doing"
+description: "Referencia de endpoints de la API de Doing que gestiona planes de servicio, asignaciones de voluntarios, tareas y automatizaciones en B1 Admin, con rutas, autenticación y permisos."
 ---
 
 # Endpoints de Doing
@@ -278,6 +279,6 @@ Reenvía solicitudes a proveedores de contenido externos (por ejemplo, ProPresen
 
 ## Páginas relacionadas
 
-- [Endpoints de Membership](./membership): personas, grupos, roles y permisos
-- [Endpoints de Attendance](./attendance): seguimiento de servicios y visitas
-- [Estructura de módulos](../module-structure): patrones de organización del código
+- [Endpoints de Membership](./membership.md): personas, grupos, roles y permisos
+- [Endpoints de Attendance](./attendance.md): seguimiento de servicios y visitas
+- [Estructura de módulos](../module-structure.md): patrones de organización del código

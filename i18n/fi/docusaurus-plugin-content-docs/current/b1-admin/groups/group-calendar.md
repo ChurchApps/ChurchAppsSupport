@@ -1,5 +1,6 @@
 ---
 title: "Ryhmäkalenteri"
+description: "Suunnittele kokoontumiset ryhmäkalenterilla B1 Adminissa ja B1.churchissa: massaaikataulutus, RSVP-vastaukset ja kalenteritilaukset."
 ---
 
 # Ryhmäkalenteri

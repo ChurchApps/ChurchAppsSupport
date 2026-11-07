@@ -1,5 +1,6 @@
 ---
 title: "Administrering af studier"
+description: "Opret, rediger og kategorisér studier i et program i Lessons.church-adminområdet, og knyt seriers oversigter eller nyhedsbrevsskabeloner til hvert studie."
 ---
 
 # Administrering af studier

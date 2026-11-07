@@ -1,5 +1,6 @@
 ---
 title: "Jelentések"
+description: "Keresse meg és futtassa a B1 Admin beépített jelentéseit születésnapokhoz, részvételi trendekhez, adománysumma-adatokhoz és a naplóhoz, a szakasztól függően."
 ---
 
 # Jelentések
@@ -17,16 +18,16 @@ A B1 Admin többféleképpen is lekérdezhet adatokat a gyülekezetéről, a lá
 ## Hol találhatók a jelentések
 
 ### Személyek
-- **[Születésnapi és évfordulós listák](./birthday-report)** -- Szűrjön születési hónap vagy évfordulós hónap szerint a **Személyek → Részletes keresés** menüpontban, hogy megkapja a közelgő születésnapok vagy évfordulók listáját.
+- **[Születésnapi és évfordulós listák](./birthday-report.md)** -- Szűrjön születési hónap vagy évfordulós hónap szerint a **Személyek → Részletes keresés** menüpontban, hogy megkapja a közelgő születésnapok vagy évfordulók listáját.
 
 ### Látogatottság
-- **[Látogatottsági jelentések](./attendance-reports)** -- A látogatottsági trendek és a csoportok látogatottsági adatai a **Látogatottság** szakaszban találhatók.
+- **[Látogatottsági jelentések](./attendance-reports.md)** -- A látogatottsági trendek és a csoportok látogatottsági adatai a **Látogatottság** szakaszban találhatók.
 
 ### Adományok
-- **[Adománykimutatás](./donation-summary)** -- Az adományok összesítése és az alapok szerinti bontás az **Adományok** szakaszban található.
+- **[Adománykimutatás](./donation-summary.md)** -- Az adományok összesítése és az alapok szerinti bontás az **Adományok** szakaszban található.
 
 ### Beállítások
-- **[Változásnapló](./audit-log)** -- Kövesse nyomon a gyülekezeti nyilvántartó rendszerében végrehajtott összes változást és műveletet (a **Beállítások → Változásnapló** menüpontban érhető el).
+- **[Változásnapló](./audit-log.md)** -- Kövesse nyomon a gyülekezeti nyilvántartó rendszerében végrehajtott összes változást és műveletet (a **Beállítások → Változásnapló** menüpontban érhető el).
 
 :::info
 A jelentések adatai a következetes adatrögzítéstől függnek. Győződjön meg róla, hogy csapata [nyilvántartja a látogatottságot](../attendance/tracking-attendance.md), [rögzíti az adományokat](../donations/recording-donations.md), és a [személyi nyilvántartások](../people/adding-people.md) naprakészek, hogy a lehető legpontosabb eredményeket kapja.

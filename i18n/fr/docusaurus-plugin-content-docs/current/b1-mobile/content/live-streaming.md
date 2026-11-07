@@ -1,5 +1,7 @@
 ---
-title: "Diffusion en direct"
+title: "Regarder les diffusions en direct dans B1 Mobile"
+sidebar_label: "Diffusion en direct"
+description: "Suivez la diffusion en direct de votre église dans B1 Mobile, accédez à l’écran Stream via le menu ou le compte à rebours et voyez les heures de début."
 ---
 
 # Diffusion en direct
@@ -13,14 +15,14 @@ B1 Mobile vous permet de regarder la diffusion en direct de votre église direct
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Installez B1 Mobile](../getting-started/installing) et [connectez-vous](../getting-started/logging-in) à votre compte
+- [Installez B1 Mobile](../getting-started/installing.md) et [connectez-vous](../getting-started/logging-in.md) à votre compte
 - Votre église doit avoir configuré un programme de diffusion
 
 </div>
 
 ## Regarder une diffusion en direct
 
-1. Ouvrez l'écran **Diffusion** depuis le menu latéral, ou appuyez sur le compte à rebours sur l'écran [Prédications](./sermons) lorsqu'une diffusion en direct est sur le point de commencer.
+1. Ouvrez l'écran **Diffusion** depuis le menu latéral, ou appuyez sur le compte à rebours sur l'écran [Prédications](./sermons.md) lorsqu'une diffusion en direct est sur le point de commencer.
 2. Si un culte est actuellement en direct, le lecteur vidéo se charge automatiquement et la diffusion commence.
 3. Regardez la diffusion directement dans l'application.
 
@@ -31,7 +33,7 @@ Lorsqu'aucune diffusion en direct n'est en cours, l'écran peut afficher du cont
 Il existe deux façons d'accéder à la diffusion en direct :
 
 - **Menu latéral** -- Ouvrez le menu latéral et appuyez sur **Diffusion** pour accéder directement à l'écran de diffusion en direct.
-- **Écran Prédications** -- Lorsqu'une diffusion en direct est programmée dans les prochaines 24 heures, un compte à rebours apparaît sur l'écran [Prédications](./sermons). Une fois la diffusion commencée, vous pouvez y accéder depuis cet écran.
+- **Écran Prédications** -- Lorsqu'une diffusion en direct est programmée dans les prochaines 24 heures, un compte à rebours apparaît sur l'écran [Prédications](./sermons.md). Une fois la diffusion commencée, vous pouvez y accéder depuis cet écran.
 
 ## Avant et après le culte
 
@@ -46,5 +48,5 @@ Si l'écran de diffusion affiche un compte à rebours ou un message hors ligne, 
 L'écran de diffusion en direct est disponible lorsque votre église a configuré un programme de diffusion. Si vous ne voyez pas d'option **Diffusion** dans le menu latéral de votre application, il se peut que votre église n'ait pas mis en place la diffusion en direct. Contactez l'administrateur de votre église pour plus de détails.
 
 :::tip
-Consultez l'écran [Prédications](./sermons) pour voir un compte à rebours indiquant quand la prochaine diffusion en direct commencera.
+Consultez l'écran [Prédications](./sermons.md) pour voir un compte à rebours indiquant quand la prochaine diffusion en direct commencera.
 :::

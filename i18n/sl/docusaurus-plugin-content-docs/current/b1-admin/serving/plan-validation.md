@@ -1,5 +1,6 @@
 ---
 title: "Preverjanje načrtov in obvestila"
+description: "V B1 Admin preverite načrte bogoslužij glede nezasedenih položajev, časovnih konfliktov in prostovoljcev, ki so označeni kot nedosegljivi, nato pa z enim klikom obvestite celotno ekipo."
 ---
 
 # Preverjanje načrtov in obvestila prostovoljcem

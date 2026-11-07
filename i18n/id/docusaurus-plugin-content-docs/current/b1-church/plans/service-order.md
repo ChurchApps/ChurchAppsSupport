@@ -1,5 +1,7 @@
 ---
-title: "Urutan Ibadah"
+title: "Detail Urutan Ibadah di Aplikasi B1.church"
+sidebar_label: "Urutan Ibadah"
+description: "Lihat urutan ibadah di aplikasi B1.church, dengan waktu kumulatif, lirik lagu, transposisi kunci, dan pratinjau pelajaran untuk tim Anda."
 ---
 
 # Urutan Ibadah

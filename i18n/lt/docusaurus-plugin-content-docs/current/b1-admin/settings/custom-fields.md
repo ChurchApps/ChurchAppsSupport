@@ -1,5 +1,6 @@
 ---
 title: "Pasirinktiniai laukai"
+description: "Apibrėžkite B1 Admin papildomus laukus, pvz., fono patikros galiojimo datą ar marškinėlių dydį, ir pagal juos ieškokite bei filtruokite."
 ---
 
 # Pasirinktiniai laukai

@@ -1,5 +1,6 @@
 ---
 title: "Bezpieczeństwo danych"
+description: "Sprawdź, jak ChurchApps chroni dane Twojego kościoła w B1 Admin: od haszowanych haseł i HTTPS po oddzielne bazy danych i narzędzia RODO."
 ---
 
 # Bezpieczeństwo danych

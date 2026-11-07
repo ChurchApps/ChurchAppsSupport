@@ -1,5 +1,7 @@
 ---
-title: "Palvelutehtävät"
+title: "Palvelun yleiskatsaus B1 Adminissa"
+sidebar_label: "Palvelutehtävät"
+description: "Koordinoi vapaaehtoisia ja suunnittele jumalanpalveluksia B1 Adminin Serving-alueella: tiimit, palvelusuunnitelmat, laulut ja tehtävät."
 ---
 
 # Palvelutehtävät

@@ -1,5 +1,7 @@
 ---
-title: "如何奉献"
+title: "在 B1.church 会员门户中捐款"
+sidebar_label: "如何奉献"
+description: "通过 B1.church 向您的教会进行一次性或定期捐赠，无论是否拥有账户，之后都可以查看您的奉献记录。"
 ---
 
 # 如何奉献

@@ -1,5 +1,7 @@
 ---
-title: "Zobrazení plánů"
+title: "Zobrazení servisních plánů v B1 Mobile"
+sidebar_label: "Zobrazení plánů"
+description: "Zkontrolujte nadcházející i minulé služby v B1 Mobile, přečtěte si podrobnosti plánu a pořadí bohoslužby a vytiskněte plány pro zkoušky nebo zázemí."
 ---
 
 # Zobrazení plánů
@@ -13,7 +15,7 @@ Obrazovka plánů v aplikaci B1 Mobile vám poskytuje přehled o vašem rozpisu 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing) a [se přihlaste](../getting-started/logging-in) ke svému účtu
+- [Nainstalujte aplikaci B1 Mobile](../getting-started/installing.md) a [se přihlaste](../getting-started/logging-in.md) ke svému účtu
 - Musíte být přiřazeni alespoň k jednomu plánu služby od správce vašeho sboru
 
 </div>
@@ -61,4 +63,4 @@ Když budete přiřazeni k novému plánu nebo se změní stav vašeho přiřaze
 
 ## Související články
 
-- [Přihlášení jako dobrovolník](./volunteer-signup) -- Procházejte a přihlaste se na volná dobrovolnická místa
+- [Přihlášení jako dobrovolník](./volunteer-signup.md) -- Procházejte a přihlaste se na volná dobrovolnická místa

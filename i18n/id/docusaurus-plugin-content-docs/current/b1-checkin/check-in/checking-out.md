@@ -1,5 +1,6 @@
 ---
 title: "Check-Out dan Keselamatan Anak"
+description: "Check-out anak di stasiun B1 Checkin yang dijaga dengan kode keamanan, orang penjemput terverifikasi, panggilan orang tua, cetak ulang label, dan siaran darurat."
 ---
 
 # Check-Out dan Keselamatan Anak
@@ -14,7 +15,7 @@ Check-out melengkapi proses check-in anak: orang tua menunjukkan kode keamanan d
 <h4>Sebelum Anda Mulai</h4>
 
 - Check-out tersedia di stasiun yang diatur ke mode **dijaga petugas** dalam pengaturan admin kiosk
-- Anak harus sudah [di-check-in](./completing-checkin) dengan label penjemputan tercetak yang memuat kode keamanan
+- Anak harus sudah [di-check-in](./completing-checkin.md) dengan label penjemputan tercetak yang memuat kode keamanan
 - Fitur pemanggilan orang tua dan siaran darurat mengharuskan gereja Anda memiliki penyedia layanan pesan singkat yang terhubung di B1 Admin
 
 </div>
@@ -39,7 +40,7 @@ Jika nama yang diketik cocok dengan seseorang yang ditandai **Not Authorized** u
 Setelah penjemput dikonfirmasi, ketuk check out. Nama penjemput akan disimpan bersama catatan kehadiran.
 
 :::info
-Penjemput tepercaya dan penjemput yang tidak diizinkan dikelola oleh staf gereja pada halaman masing-masing orang di B1 Admin — lihat [Check-In Safety](../../b1-admin/attendance/checkin-safety#trusted-and-not-authorized-pickup-people).
+Penjemput tepercaya dan penjemput yang tidak diizinkan dikelola oleh staf gereja pada halaman masing-masing orang di B1 Admin — lihat [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
 ## Memanggil Orang Tua
@@ -65,6 +66,6 @@ Siaran dikirim ke setiap keluarga yang di-check-in untuk kebaktian yang dipilih.
 
 ## Artikel Terkait
 
-- [Menyelesaikan Check-In](./completing-checkin) — asal kode keamanan dan label penjemputan
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety) — mengatur kapasitas, rasio, penjemput, dan persyaratan penyedia layanan pesan singkat
-- [Pengaturan Printer](../getting-started/printer-setup) — konfigurasi printer label
+- [Menyelesaikan Check-In](./completing-checkin.md) — asal kode keamanan dan label penjemputan
+- [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) — mengatur kapasitas, rasio, penjemput, dan persyaratan penyedia layanan pesan singkat
+- [Pengaturan Printer](../getting-started/printer-setup.md) — konfigurasi printer label

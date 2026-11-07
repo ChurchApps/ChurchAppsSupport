@@ -1,5 +1,6 @@
 ---
 title: "Chương trình và Chủ đề"
+description: "Hiểu cách chương trình, khóa học, bài học và địa điểm trong Lessons.church liên kết với nhau để tìm đúng giáo trình và chuyển giữa các bài liên quan."
 ---
 
 # Chương trình và Chủ đề

@@ -1,5 +1,6 @@
 ---
 title: "Prezentare"
+description: "Afișați lecții pe un proiector cu Presenter Mode în Lessons.church, partajați ghiduri pe roluri pentru voluntari și tipăriți materialele înainte de oră."
 ---
 
 # Prezentare

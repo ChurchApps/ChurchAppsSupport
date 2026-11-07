@@ -1,5 +1,6 @@
 ---
 title: "Web Push Bildirimleri"
+description: "B1.church ve B1 Admin'in üyelere tarayıcı push bildirimleri gönderebilmesi için VAPID anahtarlarını, WebPushHelper istemcisini ve service worker işlemini kurun."
 ---
 
 # Web Push Bildirimleri
@@ -160,7 +161,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## İlgili sayfalar
 
-- [Bildirim mimarisi](./architecture/notifications): Uygulama içi, push ve e-posta yükseltme akışının tamamı ve hatırlatıcı motoru
-- [Gerçek zamanlı mimari](./realtime): WebSocket iletimi. Push artık yalnızca soket iletimi ulaşmadığında bir yedek olarak değil, aynı turda soket iletimiyle birlikte aynı uygulama içi akıştan tetiklenir.
-- [Mesajlaşma uç noktaları](./api/endpoints/messaging): Bildirimler, cihazlar ve mesajlaşma yüzeyinin geri kalanı
-- [AppHelper](./shared-libraries/app-helper): `WebPushHelper` bileşenini içeren npm paketi
+- [Bildirim mimarisi](./architecture/notifications.md): Uygulama içi, push ve e-posta yükseltme akışının tamamı ve hatırlatıcı motoru
+- [Gerçek zamanlı mimari](./realtime.md): WebSocket iletimi. Push artık yalnızca soket iletimi ulaşmadığında bir yedek olarak değil, aynı turda soket iletimiyle birlikte aynı uygulama içi akıştan tetiklenir.
+- [Mesajlaşma uç noktaları](./api/endpoints/messaging.md): Bildirimler, cihazlar ve mesajlaşma yüzeyinin geri kalanı
+- [AppHelper](./shared-libraries/app-helper.md): `WebPushHelper` bileşenini içeren npm paketi

@@ -1,5 +1,7 @@
 ---
-title: "Geven"
+title: "Geven in de B1 Mobile-app"
+sidebar_label: "Geven"
+description: "Geef via de B1 Mobile-app, bekijk je giften van dit jaar en beheer betaalmethoden. Met de tabbladen Overzicht, Doneren, Beheren en Geschiedenis."
 ---
 
 # Geven
@@ -24,7 +26,7 @@ De geefpagina is georganiseerd in vier tabbladen:
 Alle donaties via B1 Mobile worden veilig verwerkt via **Stripe**. Je betalingsgegevens worden verwerkt door Stripe's veilige infrastructuur en worden nooit opgeslagen op ChurchApps-servers. Je kunt vol vertrouwen geven wetende dat je financiële gegevens zijn beveiligd.
 
 :::info
-Je kerkadministrator stelt de beschikbare fondsen en betalingsverwerking in via [B1 Admin](../../b1-admin/). Als je geen donatieoptie in de app ziet, heeft je kerk deze functie mogelijk nog niet geconfigureerd.
+Je kerkadministrator stelt de beschikbare fondsen en betalingsverwerking in via [B1 Admin](../../b1-admin/index.md). Als je geen donatieoptie in de app ziet, heeft je kerk deze functie mogelijk nog niet geconfigureerd.
 :::
 
 ## Wat je kunt doen
@@ -38,6 +40,6 @@ Dit is wat je kunt doen vanuit de geefpagina:
 
 ## Volgende stappen
 
-- [Een donatie doen](./making-donations) -- Leer hoe je een gift van de app maakt
-- [Betalingsmethoden beheren](./managing-payments) -- Voeg opgeslagen betalingsmethoden toe of verwijder deze
-- [Donatiegeschiedenis](./donation-history) -- Bekijk je donatiesamenvatting en vorige donaties
+- [Een donatie doen](./making-donations.md) -- Leer hoe je een gift van de app maakt
+- [Betalingsmethoden beheren](./managing-payments.md) -- Voeg opgeslagen betalingsmethoden toe of verwijder deze
+- [Donatiegeschiedenis](./donation-history.md) -- Bekijk je donatiesamenvatting en vorige donaties

@@ -1,5 +1,7 @@
 ---
-title: "Innsjekking"
+title: "Innsjekking i B1.church-medlemsportalen"
+sidebar_label: "Innsjekking"
+description: "Sjekk deg selv og husstanden inn på en gudstjeneste fra B1.church-medlemsportalen, uten kiosk, og tilordne grupper."
 ---
 
 # Innsjekking

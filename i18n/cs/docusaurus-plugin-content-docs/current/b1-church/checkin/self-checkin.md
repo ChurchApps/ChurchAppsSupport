@@ -1,5 +1,7 @@
 ---
-title: "Samoobslužné přihlášení"
+title: "Samoodbavení v členském portálu B1.church"
+sidebar_label: "Samoobslužné přihlášení"
+description: "Odbavte sebe a svou domácnost na bohoslužbu z členského portálu B1.church: vyberte časy a skupiny v několika rychlých krocích."
 ---
 
 # Samoobslužné přihlášení
@@ -45,7 +47,7 @@ Až vyberete skupiny pro všechny, kdo se účastní, klepněte na tlačítko ve
 
 Uvidíte potvrzení, že přihlášení proběhlo a vaše docházka byla uložena. Po chvíli se stránka vrátí na seznam bohoslužeb, připravená pro další přihlášení.
 
-Pokud váš kostel tiskne jmenovky na přihlašovacím stanovišti, zobrazí se místo toho **Jste přihlášeni!** spolu s QR kódem a bezpečnostním kódem. Ukažte kód na přihlašovacím stanovišti, aby se vytiskly jmenovky, a poté klepněte na **Hotovo**. Na kiosku B1 Checkin klepněte na **Naskenovat kód** a podržte QR kód před kamerou. Viz [Tisk štítků pro přihlášení telefonem](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Pokud váš kostel tiskne jmenovky na přihlašovacím stanovišti, zobrazí se místo toho **Jste přihlášeni!** spolu s QR kódem a bezpečnostním kódem. Ukažte kód na přihlašovacím stanovišti, aby se vytiskly jmenovky, a poté klepněte na **Hotovo**. Na kiosku B1 Checkin klepněte na **Naskenovat kód** a podržte QR kód před kamerou. Viz [Tisk štítků pro přihlášení telefonem](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Pokud je vaše domácnost již přihlášena na vybranou bohoslužbu, vedle nadpisu **Kdo je přítomen** se objeví odkaz **Zobrazit přihlašovací kód**. Klepnutím na něj znovu zobrazíte QR kód a bezpečnostní kód, například pokud jste stránku zavřeli dříve, než jste došli na přihlašovací stanoviště.
 

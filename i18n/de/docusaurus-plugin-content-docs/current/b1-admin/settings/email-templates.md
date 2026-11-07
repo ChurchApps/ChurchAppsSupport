@@ -1,5 +1,6 @@
 ---
 title: "E-Mail-Vorlagen"
+description: "E-Mail- und SMS-Vorlagen in B1 Admin einrichten, mit Platzhaltern, SMS-Optionen und Vorschau für Massenkommunikation."
 ---
 
 # E-Mail-Vorlagen

@@ -1,5 +1,6 @@
 ---
 title: "Validation des plans et notifications"
+description: "Vérifiez les plans dans B1 Admin : postes non pourvus, conflits d'horaire, bénévoles indisponibles, puis notifiez toute l'équipe en un clic."
 ---
 
 # Validation des plans et notifications aux bénévoles

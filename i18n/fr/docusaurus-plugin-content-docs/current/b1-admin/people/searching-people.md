@@ -1,5 +1,6 @@
 ---
 title: "Rechercher des personnes"
+description: "Recherchez dans le répertoire Personnes de B1 Admin par nom, triez et choisissez les colonnes en vue tableau, créez des filtres avec la recherche avancée et exportez les résultats en CSV."
 ---
 
 # Rechercher des personnes

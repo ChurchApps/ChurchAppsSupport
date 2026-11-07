@@ -1,5 +1,7 @@
 ---
-title: "Samostatné prihlásenie"
+title: "Samoprihlásenie z aplikácie B1 Mobile"
+sidebar_label: "Samostatné prihlásenie"
+description: "Prihláste seba a svoju domácnosť na bohoslužbu z aplikácie B1 Mobile vrátane výberu času bohoslužby a priradenia skupiny pre každú osobu."
 ---
 
 # Samostatné prihlásenie
@@ -13,7 +15,7 @@ Prihlásenie z aplikácie B1 Mobile je jednoduchý proces pozostávajúci z viac
 <div class="prereqs">
 <h4>Pred začatím</h4>
 
-- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing) a [prihláste sa](../getting-started/logging-in) do svojho účtu
+- [Nainštalujte aplikáciu B1 Mobile](../getting-started/installing.md) a [prihláste sa](../getting-started/logging-in.md) do svojho účtu
 - Uistite sa, že sú vaši [členovia domácnosti](../profile/household.md) nastavení vo vašom profile
 
 </div>

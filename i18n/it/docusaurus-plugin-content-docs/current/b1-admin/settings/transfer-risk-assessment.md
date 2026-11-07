@@ -1,5 +1,6 @@
 ---
 title: "Valutazione dei Rischi di Trasferimento"
+description: "Registro di conformità di ChurchApps per i trasferimenti di dati di chiesa da UK/SEE verso gli USA in B1 Admin: garanzie, sub-responsabili e controlli di accesso."
 ---
 
 # Valutazione dei Rischi di Trasferimento

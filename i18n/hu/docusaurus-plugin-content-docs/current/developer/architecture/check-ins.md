@@ -1,5 +1,6 @@
 ---
 title: "Bejelentkezések"
+description: "Hogyan működik a bejelentkezés a B1Checkin, a B1App és a B1 Admin között: a jelenléti adatmodell, a csoportok mint termek, a kapacitáskorlátok és az elvitelre vonatkozó biztonsági szabályok."
 ---
 
 # Bejelentkezések
@@ -216,7 +217,7 @@ A B1App `src/components/checkin/GuestRegister.tsx` a névtelen `GET /membership/
 
 ## Kapcsolódó oldalak
 
-- [Jelenléti végpontok](../api/endpoints/attendance) -- A teljes REST-felület a campusokhoz, szolgálatokhoz, szekciókhoz, látogatásokhoz és látogatási szekciókhoz
-- [Tagsági végpontok](../api/endpoints/membership) -- Személyek, háztartások és csoportok
-- [Webhookok](../api/webhooks) -- A `session.created`, `attendance.recorded` és `attendance.checkout` események
-- [Modulstruktúra](../api/module-structure) -- A jelenléti modul szervezése a szerveroldalon
+- [Jelenléti végpontok](../api/endpoints/attendance.md) -- A teljes REST-felület a campusokhoz, szolgálatokhoz, szekciókhoz, látogatásokhoz és látogatási szekciókhoz
+- [Tagsági végpontok](../api/endpoints/membership.md) -- Személyek, háztartások és csoportok
+- [Webhookok](../api/webhooks.md) -- A `session.created`, `attendance.recorded` és `attendance.checkout` események
+- [Modulstruktúra](../api/module-structure.md) -- A jelenléti modul szervezése a szerveroldalon

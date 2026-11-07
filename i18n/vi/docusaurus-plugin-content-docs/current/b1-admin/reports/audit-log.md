@@ -1,5 +1,6 @@
 ---
 title: "Nhật ký kiểm toán"
+description: "Xem nhật ký kiểm tra trong B1 Admin để biết ai đã đăng nhập, chỉnh sửa hồ sơ người hoặc thay đổi quyền, và xuất các mục đã lọc ra tệp CSV."
 ---
 
 # Nhật ký kiểm toán
@@ -78,6 +79,6 @@ Hãy xem xét nhật ký kiểm toán thường xuyên, đặc biệt sau khi ti
 
 ## Bài viết liên quan
 
-- [Vai trò & Quyền truy cập](../settings/roles-permissions) -- Quản lý ai có quyền truy cập vào những gì
-- [Bảo mật dữ liệu](../settings/data-security) -- Tìm hiểu cách dữ liệu của bạn được bảo vệ
+- [Vai trò & Quyền truy cập](../settings/roles-permissions.md) -- Quản lý ai có quyền truy cập vào những gì
+- [Bảo mật dữ liệu](../settings/data-security.md) -- Tìm hiểu cách dữ liệu của bạn được bảo vệ
 - [Tổng quan báo cáo](./index.md) -- Xem tất cả các báo cáo có sẵn

@@ -1,5 +1,7 @@
 ---
-title: "Treść"
+title: "Funkcje treści w aplikacji B1 Mobile"
+sidebar_label: "Treść"
+description: "Znajdź kazania, transmisje na żywo, czytania Biblii i Werset dnia w aplikacji B1 Mobile oraz zobacz, które funkcje treści są włączone w kościele."
 ---
 
 # Treść
@@ -30,20 +32,20 @@ Zobacz pięknie sformatowany obraz wersetu biblijnego, który zmienia się każd
 
 ### Lekcje (wycofane)
 
-Osadzony ekran Lekcji został zastąpiony przez **[FreePlay](/docs/freeplay/)** do odtwarzania w salach lekcyjnych oraz przez bezpośrednie odwiedzenie [Lessons.church](https://lessons.church) w celu przeglądania. Szczegóły znajdziesz na [stronie referencyjnej Lessons](./lessons).
+Osadzony ekran Lekcji został zastąpiony przez **[FreePlay](/docs/freeplay/)** do odtwarzania w salach lekcyjnych oraz przez bezpośrednie odwiedzenie [Lessons.church](https://lessons.church) w celu przeglądania. Szczegóły znajdziesz na [stronie referencyjnej Lessons](./lessons.md).
 
 ## Wyszukiwanie treści
 
 Funkcje treści są dostępne w menu bocznym aplikacji. Administrator Twojego kościoła decyduje, które funkcje treści są włączone, więc możesz nie widzieć wszystkich wymienionych wyżej opcji. Jeśli dana funkcja nie jest dostępna, Twój kościół może jeszcze jej nie skonfigurować.
 
 :::info
-Funkcje treści są konfigurowane przez administratora Twojego kościoła w [B1 Admin](../../b1-admin/). Jeśli nie widzisz funkcji, której się spodziewasz, skontaktuj się z biurem swojego kościoła.
+Funkcje treści są konfigurowane przez administratora Twojego kościoła w [B1 Admin](../../b1-admin/index.md). Jeśli nie widzisz funkcji, której się spodziewasz, skontaktuj się z biurem swojego kościoła.
 :::
 
 ## Następne kroki
 
-- [Kazania](./sermons) -- Przeglądaj i oglądaj nagrane kazania
-- [Transmisja na żywo](./live-streaming) -- Oglądaj transmisje na żywo
-- [Biblia](./bible) -- Czytaj Pismo Święte we wbudowanym czytniku
-- [Werset dnia](./verse-of-the-day) -- Zobacz dzisiejszy werset dnia
+- [Kazania](./sermons.md) -- Przeglądaj i oglądaj nagrane kazania
+- [Transmisja na żywo](./live-streaming.md) -- Oglądaj transmisje na żywo
+- [Biblia](./bible.md) -- Czytaj Pismo Święte we wbudowanym czytniku
+- [Werset dnia](./verse-of-the-day.md) -- Zobacz dzisiejszy werset dnia
 - [FreePlay](/docs/freeplay/) -- Odtwarzaj lekcje na telewizorach w salach lekcyjnych (zastępuje wycofany ekran Lekcji w aplikacji)

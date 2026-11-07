@@ -1,5 +1,6 @@
 ---
 title: "이벤트 및 방 요청하기"
+description: "B1.church 교인 포털에서 행사를 위한 공간이나 장비 예약을 요청하고, 내 요청에서 상태를 확인하며, 대기 중일 때 취소하세요."
 ---
 
 # 이벤트 및 방 요청하기
@@ -42,11 +43,11 @@ Me 페이지에서 **My Requests**를 엽니다. 각 요청에는 이벤트, 요
 요청이 아직 보류 중이라면 **Cancel request**로 철회할 수 있습니다(확인을 요청합니다. 취소는 되돌릴 수 없습니다).
 
 :::info
-요청은 교회 직원이 B1 Admin의 [승인 페이지](../../b1-admin/calendars/approvals)에서 검토합니다. 어떤 방과 자원에 승인이 필요한지는 교회가 정합니다. 자세한 내용은 [방 및 자원](../../b1-admin/calendars/rooms-resources)을 참조하세요.
+요청은 교회 직원이 B1 Admin의 [승인 페이지](../../b1-admin/calendars/approvals.md)에서 검토합니다. 어떤 방과 자원에 승인이 필요한지는 교회가 정합니다. 자세한 내용은 [방 및 자원](../../b1-admin/calendars/rooms-resources.md)을 참조하세요.
 :::
 
 ## 관련 문서
 
-- [Me 페이지](../getting-started/me-page) -- 요청 링크가 있는 곳
-- [달력 승인 (B1 Admin)](../../b1-admin/calendars/approvals) -- 직원이 요청을 검토하는 방법
-- [방 및 자원 (B1 Admin)](../../b1-admin/calendars/rooms-resources) -- 교회가 예약 가능한 공간을 설정하는 방법
+- [Me 페이지](../getting-started/me-page.md) -- 요청 링크가 있는 곳
+- [달력 승인 (B1 Admin)](../../b1-admin/calendars/approvals.md) -- 직원이 요청을 검토하는 방법
+- [방 및 자원 (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- 교회가 예약 가능한 공간을 설정하는 방법

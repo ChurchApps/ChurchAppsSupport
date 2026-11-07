@@ -1,5 +1,6 @@
 ---
 title: "Songs"
+description: "Manage your worship song library in B1 Admin: search and add songs, edit details, attach ChordPro lyrics and arrangements, and upload rehearsal audio."
 ---
 
 # Songs

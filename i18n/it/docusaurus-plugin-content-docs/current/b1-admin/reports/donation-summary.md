@@ -1,5 +1,6 @@
 ---
 title: "Riepilogo donazioni"
+description: "Esegui il Riepilogo donazioni in B1 Admin per vedere il totale delle offerte, il numero di donatori unici e gli importi per fondo in un intervallo di date."
 ---
 
 # Riepilogo donazioni

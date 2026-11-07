@@ -1,5 +1,6 @@
 ---
 title: "Odobritev sprememb profila"
+description: "Pregledujte in odobrite zahteve članov za spremembo profila v B1 Admin ter nastavite skupino za odobritve imenika, ki jih prejme."
 ---
 
 # Odobritev sprememb profila

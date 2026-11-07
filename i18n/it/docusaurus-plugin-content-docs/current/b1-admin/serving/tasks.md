@@ -1,5 +1,6 @@
 ---
 title: "Attività"
+description: "Crea, assegna e chiudi attività in B1 Admin, trovale in Serving > My Work e imposta promemoria per la scadenza così nessun seguito viene dimenticato."
 ---
 
 # Attività

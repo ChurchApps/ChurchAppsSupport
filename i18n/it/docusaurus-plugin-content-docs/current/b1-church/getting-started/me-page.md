@@ -1,5 +1,6 @@
 ---
 title: "La pagina Me"
+description: "Cosa mostra la pagina Me del portale membri B1App in una schermata: turni, eventi e iscrizioni, più nucleo familiare, gruppi, donazioni, moduli e presenze."
 ---
 
 # La pagina Me
@@ -31,7 +32,7 @@ Se non hai effettuato l'accesso, vedrai il messaggio "Accedi per vedere la tua s
 La sezione **In arrivo** elenca i tuoi prossimi tre elementi in ordine di data, ognuno con un'etichetta del tipo. Se ne hai di più, tocca **Tutti gli elementi in arrivo** per vedere l'elenco completo, e **Torna a Me** per tornare indietro.
 
 - **Servizio** -- I tuoi incarichi di volontariato nei piani di servizio in programma, con la data e l'orario di inizio del servizio in cui sei coinvolto (l'orario in cui il tuo team è richiesto quando il piano prevede più orari di servizio, oppure solo la data se il piano non ha orari). Tocca un elemento per aprire il piano.
-- **Iscrizione** -- Eventi a cui ti sei [iscritto](../events/registering). Tocca per andare alle tue [iscrizioni](../events/my-registrations).
+- **Iscrizione** -- Eventi a cui ti sei [iscritto](../events/registering.md). Tocca per andare alle tue [iscrizioni](../events/my-registrations.md).
 - **Evento** -- Eventi in programma dei gruppi di cui fai parte. Tocca un elemento per aprire gli eventi del gruppo.
 
 Se un evento o un'iscrizione ha una foto, una piccola miniatura compare all'inizio della riga.
@@ -66,7 +67,7 @@ La sezione **Richieste e iscrizioni** mostra quante iscrizioni a eventi hai, con
 
 Se la tua chiesa dispone di sale o risorse prenotabili, compaiono altri due link:
 
-- **Richiedi un evento** -- Chiedi di riservare un evento con le sale e le attrezzature di cui hai bisogno. Vedi [Richiedere eventi e sale](../events/requesting-events).
+- **Richiedi un evento** -- Chiedi di riservare un evento con le sale e le attrezzature di cui hai bisogno. Vedi [Richiedere eventi e sale](../events/requesting-events.md).
 - **Le mie richieste** -- Controlla lo stato delle tue richieste e annulla quelle in sospeso.
 
 Se la tua chiesa non ha configurato sale o risorse, questi link sono nascosti.
@@ -77,8 +78,8 @@ La sezione **Posta in arrivo** mostra le tue due notifiche più recenti, così p
 
 ## Articoli correlati
 
-- [Navigare in B1App](./navigating) -- La struttura del portale dei membri
-- [Richiedere eventi e sale](../events/requesting-events) -- Inviare e controllare le richieste di sale e risorse
-- [Le mie iscrizioni](../events/my-registrations) -- Gestire le tue iscrizioni agli eventi
-- [Iscrizione come volontario](../serving/volunteer-signup) -- Come funzionano gli incarichi di servizio
-- [Check-in self-service](../checkin/self-checkin) -- Come vengono registrate le tue presenze
+- [Navigare in B1App](./navigating.md) -- La struttura del portale dei membri
+- [Richiedere eventi e sale](../events/requesting-events.md) -- Inviare e controllare le richieste di sale e risorse
+- [Le mie iscrizioni](../events/my-registrations.md) -- Gestire le tue iscrizioni agli eventi
+- [Iscrizione come volontario](../serving/volunteer-signup.md) -- Come funzionano gli incarichi di servizio
+- [Check-in self-service](../checkin/self-checkin.md) -- Come vengono registrate le tue presenze

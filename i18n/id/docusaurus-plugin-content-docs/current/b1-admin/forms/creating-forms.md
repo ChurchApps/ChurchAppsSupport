@@ -1,5 +1,6 @@
 ---
 title: "Membuat Formulir"
+description: "Buat formulir kustom di B1 Admin untuk pendaftaran acara, survei, dan kartu pengunjung, lalu bagikan lewat tautan, kode QR, atau cetakan."
 ---
 
 # Membuat Formulir

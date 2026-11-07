@@ -1,5 +1,6 @@
 ---
 title: "Mga Bayad na Registration"
+description: "I-set up ang bayad na event registration sa B1 Admin: may presyong uri ng dadalo, add-on, discount code, waitlist, at pagbabayad sa iyong giving provider."
 ---
 
 # Mga Bayad na Registration
@@ -13,7 +14,7 @@ Maaaring higit pa sa simpleng bilang ng dadalo ang event registration. Maaari ka
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-enable muna ang registration sa event -- tingnan ang [Creating Calendars](creating-calendars#enabling-event-registration)
+- I-enable muna ang registration sa event -- tingnan ang [Creating Calendars](./creating-calendars.md#enabling-event-registration)
 - Para makolekta ang bayad online, kailangang [naka-configure ang online giving](../donations/online-giving-setup.md) ng iyong simbahan (Stripe, PayPal, o Kingdom Funding). Hindi kailangan ng giving setup ang mga libreng event. Kung walang online giving, gumagana pa rin ang mga bayad na registration, pero direktang magbabayad ang mga tao sa simbahan -- tingnan ang [Churches Without Online Giving](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Ipinapakita ng bawat code ang bilang na **Uses** para makita mo kung gaano kadal
 I-on ang **Enable Waitlist** sa Registration Settings card. Kapag naabot ng event ang capacity:
 
 - Ang mga bagong magpaparehistro ay iaalok ng puwesto sa waitlist sa halip na tanggihan. Kumpletuhin nila ang parehong sign-up (nilalaktawan ang bayad habang nasa waitlist).
-- Kapag may nagkansela, ang pinakamatandang waitlisted na registration ay **awtomatikong i-promote** at makakatanggap ng email na may nagbukas na puwesto. Kung may utang pa silang balanse, ang email ay magli-link sa kanila sa [My Registrations](../../b1-church/events/my-registrations) sa B1 site ng iyong simbahan, kung saan maaari nilang kumpletuhin ang bayad.
+- Kapag may nagkansela, ang pinakamatandang waitlisted na registration ay **awtomatikong i-promote** at makakatanggap ng email na may nagbukas na puwesto. Kung may utang pa silang balanse, ang email ay magli-link sa kanila sa [My Registrations](../../b1-church/events/my-registrations.md) sa B1 site ng iyong simbahan, kung saan maaari nilang kumpletuhin ang bayad.
 - Maaari mong i-promote nang manual ang sinuman anumang oras gamit ang aksyong **Promote** sa waitlisted na row -- kapaki-pakinabang pagkatapos mong taasan ang capacity ng event.
 
 :::info
@@ -75,7 +76,7 @@ Buksan ang event mula sa Registrations page para makita ang bawat registration. 
 
 - I-click ang details icon ng row para buksan ang dialog na **Registration Details** -- mga miyembro, selections, bayad/balanse, at isang table na **Payments** na naglilista ng bawat singil (halaga, paraan, petsa).
 - **Export CSV** ay nagda-download ng buong roster na may column para sa mga miyembro, attendee types, selections, paid/total/balance, status, at isang column bawat tanong sa registration.
-- **Add Attendee** ay nagre-record ng offline o telepono na sign-up para sa sinumang tao sa iyong simbahan. Piliin ang tao at, sa bayad na event, ang kanyang attendee type. Hindi siya sisingilin: ang bayad na registration ay sine-save bilang **pending** na may buong halaga bilang balanse. Kung may online giving ang iyong simbahan, maaaring bayaran ito ng tao mula sa [My Registrations](../../b1-church/events/my-registrations); kung hindi, kolektahin ito nang personal. Kailangan mo ang Registrations Edit permission para makapagdagdag ng dadalo.
+- **Add Attendee** ay nagre-record ng offline o telepono na sign-up para sa sinumang tao sa iyong simbahan. Piliin ang tao at, sa bayad na event, ang kanyang attendee type. Hindi siya sisingilin: ang bayad na registration ay sine-save bilang **pending** na may buong halaga bilang balanse. Kung may online giving ang iyong simbahan, maaaring bayaran ito ng tao mula sa [My Registrations](../../b1-church/events/my-registrations.md); kung hindi, kolektahin ito nang personal. Kailangan mo ang Registrations Edit permission para makapagdagdag ng dadalo.
 
 :::info
 Hindi pinoproseso ang refund sa loob ng B1. Kung kailangan mong i-refund ang nakanselang bayad na registration, gawin ang refund mula sa dashboard ng iyong giving provider (halimbawa, Stripe).
@@ -90,12 +91,12 @@ Dumadaan ang mga bayad sa parehong giving gateway na ginagamit na ng iyong simba
 Kung walang naka-set up na giving provider ang iyong simbahan, maaari pa ring tumanggap ng registration ang mga bayad na event. Sinasabi ng payment step sa mga magpaparehistro na hindi available ang online payment at maaari silang magbayad nang direkta sa simbahan, at ang butones na **Register and Pay Later** ang nagse-save ng registration. Sine-save ito bilang **pending** na may buong halaga bilang balanse, at lumalabas sa roster na may babala ng balanse. Kolektahin ang pera gaya ng karaniwang ginagawa ng iyong simbahan.
 
 :::info
-Walang paraan ang B1 para markahan ang offline na bayad bilang natanggap. Mananatili ang balanse sa roster at sa card ng [My Registrations](../../b1-church/events/my-registrations) ng magpaparehistro kahit makolekta mo na ito, kaya panatilihin ang sarili mong tala kung sino ang nagbayad.
+Walang paraan ang B1 para markahan ang offline na bayad bilang natanggap. Mananatili ang balanse sa roster at sa card ng [My Registrations](../../b1-church/events/my-registrations.md) ng magpaparehistro kahit makolekta mo na ito, kaya panatilihin ang sarili mong tala kung sino ang nagbayad.
 :::
 
 ## Mga Kaugnay na Artikulo
 
-- [Creating Calendars](creating-calendars#enabling-event-registration) -- i-enable ang registration at ang mga pangunahing setting
+- [Creating Calendars](./creating-calendars.md#enabling-event-registration) -- i-enable ang registration at ang mga pangunahing setting
 - [Online Giving Setup](../donations/online-giving-setup.md) -- i-configure ang payment gateway na ginagamit sa checkout
-- [Registering for Events](../../b1-church/events/registering) -- ano ang nakikita ng mga miyembro kapag nagpapatala
-- [My Registrations](../../b1-church/events/my-registrations) -- paano nagbabayad ng balanse at nag-eedit ng registration ang mga miyembro
+- [Registering for Events](../../b1-church/events/registering.md) -- ano ang nakikita ng mga miyembro kapag nagpapatala
+- [My Registrations](../../b1-church/events/my-registrations.md) -- paano nagbabayad ng balanse at nag-eedit ng registration ang mga miyembro

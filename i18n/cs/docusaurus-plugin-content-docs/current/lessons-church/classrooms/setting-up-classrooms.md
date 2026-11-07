@@ -1,5 +1,6 @@
 ---
 title: "Настavení"
+description: "Vytvářejte, přejmenovávejte a odstraňujte třídy v portálu Lessons.church, aby byla každá místnost nebo věková skupina připravena na týdenní plánování lekcí."
 ---
 
 <br />

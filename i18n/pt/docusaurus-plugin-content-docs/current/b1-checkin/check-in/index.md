@@ -1,5 +1,6 @@
 ---
 title: "Fluxo de Check-In"
+description: "Acompanhe o fluxo do quiosque B1 Church Checkin passo a passo, de escolher um culto ao check-out, e configure cultos, grupos e pessoas no B1 Admin antes."
 ---
 
 # Fluxo de Check-In
@@ -12,13 +13,13 @@ O processo de check-in no B1 Church Checkin segue um fluxo simples, passo a pass
 
 ## O Fluxo de Check-In em Resumo
 
-1. **[Selecione um culto](./selecting-service)** -- Escolha qual culto você está frequentando (por exemplo, domingo de manhã, domingo à noite, meio de semana).
-2. **[Procure sua família](./looking-up-members)** -- Pesquise por número de telefone ou sobrenome para se localizar no sistema.
-3. **[Revise sua família](./household-review)** -- Veja todos os membros da família e suas designações de grupo atuais.
-4. **[Designe grupos](./group-assignment)** -- Escolha qual classe ou grupo cada membro da família deve frequentar em cada horário de culto.
-5. **[Adicione convidados](./adding-guests)** (opcional) -- Adicione um visitante à sua família, se ele estiver com você.
-6. **[Conclua o check-in](./completing-checkin)** -- Toque no botão de check-in para enviar a presença e imprimir as etiquetas.
-7. **[Faça o checkout](./checking-out)** (estações com atendente) -- No momento da retirada, verifique o código de segurança e a pessoa responsável pela retirada, com listas de retirada confiáveis, chamada de pais e reimpressão de etiquetas.
+1. **[Selecione um culto](./selecting-service.md)** -- Escolha qual culto você está frequentando (por exemplo, domingo de manhã, domingo à noite, meio de semana).
+2. **[Procure sua família](./looking-up-members.md)** -- Pesquise por número de telefone ou sobrenome para se localizar no sistema.
+3. **[Revise sua família](./household-review.md)** -- Veja todos os membros da família e suas designações de grupo atuais.
+4. **[Designe grupos](./group-assignment.md)** -- Escolha qual classe ou grupo cada membro da família deve frequentar em cada horário de culto.
+5. **[Adicione convidados](./adding-guests.md)** (opcional) -- Adicione um visitante à sua família, se ele estiver com você.
+6. **[Conclua o check-in](./completing-checkin.md)** -- Toque no botão de check-in para enviar a presença e imprimir as etiquetas.
+7. **[Faça o checkout](./checking-out.md)** (estações com atendente) -- No momento da retirada, verifique o código de segurança e a pessoa responsável pela retirada, com listas de retirada confiáveis, chamada de pais e reimpressão de etiquetas.
 
 Depois que o check-in é concluído, o aplicativo exibe uma tela de sucesso e retorna automaticamente à tela de busca, pronto para a próxima família.
 
@@ -36,5 +37,5 @@ Certifique-se de que o seguinte esteja configurado no B1 Admin antes de usar o q
 - **Pessoas** foram adicionadas ao sistema com associações de família. Veja [adicionando pessoas](../../b1-admin/people/adding-people.md).
 
 :::info
-Se você ainda não configurou o quiosque em si, veja [Primeiros Passos](../getting-started/) para instruções de instalação, login e configuração de impressora.
+Se você ainda não configurou o quiosque em si, veja [Primeiros Passos](../getting-started/index.md) para instruções de instalação, login e configuração de impressora.
 :::

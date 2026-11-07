@@ -1,5 +1,7 @@
 ---
-title: "Gottesdienstablauf"
+title: "Gottesdienstablauf in der B1.church-App"
+sidebar_label: "Gottesdienstablauf"
+description: "Sehen Sie in der B1.church-App den Ablauf eines Plans mit fortlaufenden Zeiten, Liedtexten, Transposition und Vorschau der Lektionen für Ihr Team."
 ---
 
 # Gottesdienstablauf

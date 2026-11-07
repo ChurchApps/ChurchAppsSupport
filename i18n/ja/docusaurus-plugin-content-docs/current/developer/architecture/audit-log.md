@@ -1,5 +1,6 @@
 ---
 title: "監査ログと元に戻せるバッチ"
+description: "すべてのモジュールでユーザーの変更を記録する API の監査ログと、B1 Admin でインポートのバッチを行単位で取り消す方法を説明します。"
 ---
 
 # 監査ログと元に戻せるバッチ
@@ -155,6 +156,6 @@ membership データベースにある単一の `auditLogs` テーブルがす�
 
 ## 関連ページ
 
-- [モジュール構造](../api/module-structure) — membership 以外のコントローラーが `RepoManager` を通じて membership のリポジトリに到達する方法
-- [寄付](./giving) — 匿名であっても `sensitive` として監査される寄付の書き込み経路
-- [Membership エンドポイント](../api/endpoints/membership) — `X-Batch-Id` を扱い、`/auditlogs` と `/batches` を公開する REST の API
+- [モジュール構造](../api/module-structure.md) — membership 以外のコントローラーが `RepoManager` を通じて membership のリポジトリに到達する方法
+- [寄付](./giving.md) — 匿名であっても `sensitive` として監査される寄付の書き込み経路
+- [Membership エンドポイント](../api/endpoints/membership.md) — `X-Batch-Id` を扱い、`/auditlogs` と `/batches` を公開する REST の API

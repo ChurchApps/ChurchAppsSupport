@@ -1,5 +1,7 @@
 ---
-title: "Pagsisimula"
+title: "Pagsisimula sa B1 Mobile (Deprecated)"
+sidebar_label: "Pagsisimula"
+description: "I-set up ang B1 Mobile sa telepono: hanapin ang app, mag-log in gamit ang ChurchApps account, at piliin ang simbahan. Deprecated na ito; gamitin ang PWA."
 ---
 
 # Pagsisimula
@@ -25,10 +27,10 @@ Iyon na. Kapag pumili ka na ng iyong simbahan, ang app ay nag-load ng branding, 
 
 ## Sa Seksyong Ito
 
-- [Pag-install ng App](./installing) -- Saan mag-download ng B1 Mobile at mga requirement ng device.
-- [Pag-log In](./logging-in) -- Paano mag-sign in o lumikha ng bagong account.
-- [Pagpapalit ng Mga Simbahan](./switching-churches) -- Paano magpalit ng mga simbahan kung kabilang ka sa higit pa.
+- [Pag-install ng App](./installing.md) -- Saan mag-download ng B1 Mobile at mga requirement ng device.
+- [Pag-log In](./logging-in.md) -- Paano mag-sign in o lumikha ng bagong account.
+- [Pagpapalit ng Mga Simbahan](./switching-churches.md) -- Paano magpalit ng mga simbahan kung kabilang ka sa higit pa.
 
 :::tip
-Ang B1 Mobile ay gumagamit ng parehong ChurchApps account bilang lahat ng iba pang mga produkto ng ChurchApps. Kung mayroon ka na ng account mula sa [B1.church](../../b1-church/), B1 Admin, o Lessons.church, maaari mong gamitin ang parehong credentials upang mag-log in.
+Ang B1 Mobile ay gumagamit ng parehong ChurchApps account bilang lahat ng iba pang mga produkto ng ChurchApps. Kung mayroon ka na ng account mula sa [B1.church](../../b1-church/index.md), B1 Admin, o Lessons.church, maaari mong gamitin ang parehong credentials upang mag-log in.
 :::

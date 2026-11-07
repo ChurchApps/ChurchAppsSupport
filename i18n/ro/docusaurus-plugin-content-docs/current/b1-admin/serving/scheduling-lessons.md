@@ -1,5 +1,7 @@
 ---
-title: "Planificarea lecțiilor"
+title: "Programarea lecțiilor din Lessons.church în B1 Admin"
+sidebar_label: "Planificarea lecțiilor"
+description: "Conectează Lessons.church la B1 Admin, apoi programează lecții, o serie întreagă sau aplică un plan anual planurilor de slujbă ale unui departament."
 ---
 
 # Planificarea lecțiilor de pe Lessons.church

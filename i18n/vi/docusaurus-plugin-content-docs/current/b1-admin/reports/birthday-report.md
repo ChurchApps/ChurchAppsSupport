@@ -1,5 +1,6 @@
 ---
 title: "Danh sách sinh nhật & kỷ niệm"
+description: "Lập danh sách những người có sinh nhật hoặc kỷ niệm trong một tháng nhất định bằng bộ lọc tìm kiếm Người trong B1 Admin, sau đó xem hoặc xuất ngày tháng."
 ---
 
 # Danh sách sinh nhật & kỷ niệm

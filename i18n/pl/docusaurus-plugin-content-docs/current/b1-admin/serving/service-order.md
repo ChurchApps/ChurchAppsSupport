@@ -1,5 +1,7 @@
 ---
-title: "Porządek nabożeństwa"
+title: "Porządek nabożeństwa w B1 Admin"
+sidebar_label: "Porządek nabożeństwa"
+description: "Skonfiguruj porządek nabożeństwa w B1 Admin: dodawaj pieśni, lekcje i własne elementy, układaj je w sekcje i drukuj harmonogram dla prowadzących."
 ---
 
 # Porządek nabożeństwa

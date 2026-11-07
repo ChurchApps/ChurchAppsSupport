@@ -1,5 +1,6 @@
 ---
 title: "Proxy Caddy pro vlastní domény"
+description: "Sestavte a spusťte reverzní proxy Caddy, která obsluhuje vlastní domény církví pro weby B1.church, včetně certifikátů TLS, mapování hostitelů a úskalí."
 ---
 
 # Proxy Caddy pro vlastní domény
@@ -10,7 +11,7 @@ Vlastní domény církví (`mychurch.org` → webové stránky církve v B1) kon
 
 </div>
 
-Informace o tom, jak požadavek po dosažení B1App přiřadí církvi nebo webu, najdete v článku [Směrování webu a více webů](../architecture/websites).
+Informace o tom, jak požadavek po dosažení B1App přiřadí církvi nebo webu, najdete v článku [Směrování webu a více webů](../architecture/websites.md).
 
 ## Komponenty
 
@@ -87,5 +88,5 @@ Administrační API se váže pouze na `localhost:2019`. Starší režim za běh
 
 ## Související stránky
 
-- [Směrování webu a více webů](../architecture/websites). Jak se proxovaný požadavek v B1App přiřadí církvi nebo webu
-- [Nasazení API](./apis). Nasazení Membership API, které poskytuje `authorize` a `hostmap`
+- [Směrování webu a více webů](../architecture/websites.md). Jak se proxovaný požadavek v B1App přiřadí církvi nebo webu
+- [Nasazení API](./apis.md). Nasazení Membership API, které poskytuje `authorize` a `hostmap`

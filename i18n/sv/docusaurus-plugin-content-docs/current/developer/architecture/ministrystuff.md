@@ -33,7 +33,7 @@ Uppladdningar går från Api → `StorageResolver.forChurch` → leverantörens 
 
 Omfattningsnotering: leverantörsvalet gäller flödet för innehållets **filer och resurser**, där bulkmedia lagras. Uppladdningar av galleri, logotyp och foton stannar hos standardleverantören. De listar nycklar från lagringen och bygger webbadresser på klientsidan, så kyrkospecifik rotning gäller ännu inte.
 
-Samma gränssnitt driver också [Ta med egen lagring](./byos-storage). Där kan kyrkor koppla Google Drive, Dropbox, OneDrive eller sin egen S3-kompatibla bucket i stället för en MinistryStuff-plan.
+Samma gränssnitt driver också [Ta med egen lagring](./byos-storage.md). Där kan kyrkor koppla Google Drive, Dropbox, OneDrive eller sin egen S3-kompatibla bucket i stället för en MinistryStuff-plan.
 
 ## Fakturering
 

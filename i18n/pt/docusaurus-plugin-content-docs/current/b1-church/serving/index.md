@@ -1,5 +1,7 @@
 ---
-title: "Serviço"
+title: "Voluntariado e Inscrições no B1.church"
+sidebar_label: "Serviço"
+description: "Navegue por oportunidades de voluntariado no B1.church, inscreva-se em vagas abertas, veja suas atribuições e cancele inscrições antes do prazo."
 ---
 
 # Serviço
@@ -14,8 +16,8 @@ A seção Serviço no B1.church permite navegar pelas oportunidades de voluntari
 
 - **Explorar oportunidades de voluntariado** -- Veja os próximos planos de culto com posições abertas que precisam de voluntários.
 - **Inscrever-se em posições** -- Escolha uma posição e inscreva-se com um único clique.
-- **Ver seus planos** -- Veja suas [escalas de serviço](../plans/viewing-plans) futuras e passadas.
-- **Responder às escalas** -- Aceite ou recuse as posições para as quais foi escalado, pela página de Planos ou pela seção **Você está servindo** do Início. Se seus compromissos mudarem depois que você aceitar, pode [recusar uma escala aceita](../plans/viewing-plans#declining-an-accepted-assignment) até o término do culto.
+- **Ver seus planos** -- Veja suas [escalas de serviço](../plans/viewing-plans.md) futuras e passadas.
+- **Responder às escalas** -- Aceite ou recuse as posições para as quais foi escalado, pela página de Planos ou pela seção **Você está servindo** do Início. Se seus compromissos mudarem depois que você aceitar, pode [recusar uma escala aceita](../plans/viewing-plans.md#declining-an-accepted-assignment) até o término do culto.
 - **Remover inscrições** -- Cancele uma inscrição feita por você mesmo se seus compromissos mudarem (antes do prazo).
 
 ## Como Funciona
@@ -28,5 +30,5 @@ Somente as posições que o administrador da sua igreja habilitou para inscriç�
 
 ## Saiba Mais
 
-- [Inscrição de Voluntários](./volunteer-signup) -- Guia passo a passo para navegar e se inscrever em posições de voluntário
-- [Visualizando Planos](../plans/viewing-plans) -- Veja suas escalas de culto e as ordens de culto
+- [Inscrição de Voluntários](./volunteer-signup.md) -- Guia passo a passo para navegar e se inscrever em posições de voluntário
+- [Visualizando Planos](../plans/viewing-plans.md) -- Veja suas escalas de culto e as ordens de culto

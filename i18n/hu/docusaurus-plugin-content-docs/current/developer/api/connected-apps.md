@@ -1,12 +1,13 @@
 ---
 title: "Csatlakoztatott alkalmazások és OAuth"
+description: "Kösd össze harmadik fél alkalmazásait egy gyülekezet B1-adataival OAuth 2.0 hozzájárulással, megosztott jelszavak vagy API-kulcsok nélkül, és bármikor vond vissza a hozzáférést a B1 Admin beállításaiban."
 ---
 
 # Csatlakoztatott alkalmazások és OAuth
 
 <div class="article-intro">
 
-A B1 API támogatja az OAuth 2.0-t, így egy harmadik féltől származó alkalmazás minden gyülekezeti adminisztrátortól engedélyt kérhet az adataihoz való hozzáférésre, anélkül hogy a gyülekezet valaha jelszót vagy API-kulcsot osztana meg. A **csatlakoztatott alkalmazás** (Connected App) egy olyan OAuth-token, amelyet a gyülekezeti adminisztrátor jóváhagyott; visszavonása egyetlen kattintással megszünteti a harmadik féltől származó alkalmazás hozzáférését. Ezt az utat többbérlős SaaS-összekötőkhöz használja. Egyetlen gyülekezetet érintő integráció esetén inkább az [API-kulcsokat](./api-keys) részesítse előnyben.
+A B1 API támogatja az OAuth 2.0-t, így egy harmadik féltől származó alkalmazás minden gyülekezeti adminisztrátortól engedélyt kérhet az adataihoz való hozzáférésre, anélkül hogy a gyülekezet valaha jelszót vagy API-kulcsot osztana meg. A **csatlakoztatott alkalmazás** (Connected App) egy olyan OAuth-token, amelyet a gyülekezeti adminisztrátor jóváhagyott; visszavonása egyetlen kattintással megszünteti a harmadik féltől származó alkalmazás hozzáférését. Ezt az utat többbérlős SaaS-összekötőkhöz használja. Egyetlen gyülekezetet érintő integráció esetén inkább az [API-kulcsokat](./api-keys.md) részesítse előnyben.
 
 </div>
 
@@ -27,7 +28,7 @@ A B1 API támogatja az OAuth 2.0-t, így egy harmadik féltől származó alkalm
 | **Csatlakoztatott alkalmazás** | Egy konkrét `(kliens, gyülekezeti adminisztrátor)` pár, ahol az adminisztrátor hozzáférést adott a kliensnek. Minden csatlakoztatott alkalmazást egy OAuth-frissítő token támaszt alá. |
 | **Hozzáférési token** | Rövid élettartamú JWT (≈ 7 nap), amelyet a kliens API-hívásokhoz használ. Felépítése megegyezik a felhasználói JWT-vel: `Authorization: Bearer <jwt>`. |
 | **Frissítő token** | Hosszú élettartamú, átlátszatlan karakterlánc (≈ 90 nap), amellyel a kliens új hozzáférési tokeneket állít elő. |
-| **Hatókör** | Szűkíti, mit tehet a hozzáférési token. Lásd a [hatókörjegyzéket](./api-keys#scopes). |
+| **Hatókör** | Szűkíti, mit tehet a hozzáférési token. Lásd a [hatókörjegyzéket](./api-keys.md#scopes). |
 
 ## Engedélyezési folyamatok
 
@@ -162,7 +163,7 @@ A lista automatikusan kihagyja a lejárt tokeneket.
 
 ## Hatókörök és hozzájárulás
 
-A hatókör-karakterláncok ugyanazt a katalógust használják, mint az [API-kulcsok](./api-keys#scopes). Ajánlott gyakorlatok a kliensek számára:
+A hatókör-karakterláncok ugyanazt a katalógust használják, mint az [API-kulcsok](./api-keys.md#scopes). Ajánlott gyakorlatok a kliensek számára:
 
 - **Kérje a legszűkebb, működő hatóköröket.** A gyülekezetek észreveszik, ha `donations:write` jogot kér, miközben csak embereket kell olvasnia.
 - **Használjon frissítő tokent és rövid élettartamú hozzáférési tokeneket.** A hosszú élettartamú hozzáférési tokeneket nehezebb gyorsan visszavonni.
@@ -183,7 +184,7 @@ A regisztrált átirányítási URI-knak pontosan egyezniük kell a kérésben s
 
 ### Dinamikus kliensregisztráció
 
-A `POST /membership/oauth/register` (nyilvános, RFC 7591) lehetővé teszi, hogy egy kliens, például a claude.ai MCP-összekötője, maga regisztrálja magát. Ezt az API `/.well-known/oauth-authorization-server` dokumentuma hirdeti. Lásd [MCP-szerver → OAuth-felfedezés](./mcp#oauth-discovery).
+A `POST /membership/oauth/register` (nyilvános, RFC 7591) lehetővé teszi, hogy egy kliens, például a claude.ai MCP-összekötője, maga regisztrálja magát. Ezt az API `/.well-known/oauth-authorization-server` dokumentuma hirdeti. Lásd [MCP-szerver → OAuth-felfedezés](./mcp.md#oauth-discovery).
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ A B1Admin hozzájárulási oldalán az önregisztrált kliens értesítést kap 
 
 ## SDK-támogatás
 
-Az `@churchapps/integration-sdk` csomag minden OAuth-folyamatot típusos segédfüggvényekkel csomagol: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. A csomag README-jét és a [Webhookok](./webhooks#sdk-support) oldalt nézze meg egy végponttól végpontig tartó példáért.
+Az `@churchapps/integration-sdk` csomag minden OAuth-folyamatot típusos segédfüggvényekkel csomagol: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. A csomag README-jét és a [Webhookok](./webhooks.md#sdk-support) oldalt nézze meg egy végponttól végpontig tartó példáért.

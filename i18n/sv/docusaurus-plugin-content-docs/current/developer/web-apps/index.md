@@ -1,5 +1,6 @@
 ---
 title: "Webbappar"
+description: "Översikt över de tre ChurchApps-webbapparna (B1 Admin, B1.church, Lessons.church), deras gemensamma React- och MUI-stack, apphelper-paket och byggverktyg."
 ---
 
 # Webbappar
@@ -41,7 +42,7 @@ Apparna delar UI-komponenter och verktyg via paketfamiljen `@churchapps/apphelpe
 | `@churchapps/apphelper-website` | Komponenter för webbplats/CMS |
 
 :::tip
-Information om hur du utvecklar dessa delade paket lokalt finns i dokumentationen för [AppHelper](../shared-libraries/app-helper).
+Information om hur du utvecklar dessa delade paket lokalt finns i dokumentationen för [AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Postinstall-skript

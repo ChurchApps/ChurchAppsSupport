@@ -1,5 +1,7 @@
 ---
-title: "Sisäänkirjaus"
+title: "Itsepalvelu-sisäänkirjautuminen: B1 Checkin ja B1 Admin"
+sidebar_label: "Sisäänkirjaus"
+description: "Määritä itsepalvelu-sisäänkirjautuminen B1 Checkin -sovelluksella: laitteet, kioskitilit, aikataulut, brändäys ja QR-vieraskirjautuminen."
 ---
 
 # Sisäänkirjaus
@@ -99,7 +101,7 @@ Käytä lepotilaa näyttämään ilmoituksia, tulevia tapahtumia tai tervetulovi
 
 Sisäänkirjauskioski voi näyttää QR-koodin, jonka vierailijat skannaavat rekisteröidäkseen itsensä ja perheensä omalla puhelimellaan. Tämä nopeuttaa sisäänkirjausta ensikertalaisille vierailijoille.
 
-Kun vieras skannaa QR-koodin, hänet ohjataan [vierasrekisteröintisivulle](../../b1-church/checkin/guest-registration), jossa hän syöttää perheensä nimet ja muut tiedot, joita haluat kysyä. Vapaaehtoinen voi sitten etsiä hänet kioskilta ja kirjata hänet sisään.
+Kun vieras skannaa QR-koodin, hänet ohjataan [vierasrekisteröintisivulle](../../b1-church/checkin/guest-registration.md), jossa hän syöttää perheensä nimet ja muut tiedot, joita haluat kysyä. Vapaaehtoinen voi sitten etsiä hänet kioskilta ja kirjata hänet sisään.
 
 ### QR-vierasrekisteröinnin käyttöönotto
 

@@ -1,5 +1,7 @@
 ---
-title: "Prædikener"
+title: "Se prædikener i B1 Mobile"
+sidebar_label: "Prædikener"
+description: "Gennemse, søg i og se optagede prædikener og serier i B1 Mobile-appen, inklusive hvordan du når en livestream-nedtælling."
 ---
 
 # Prædikener
@@ -13,7 +15,7 @@ Skærmen Prædikener lader dig gennemse og se optagne prædikener fra din kirke.
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [log ind](../getting-started/logging-in) på din konto
+- [Installer B1 Mobile](../getting-started/installing.md) og [log ind](../getting-started/logging-in.md) på din konto
 - Din kirke skal have prækeniindhold konfigureret i deres administratorportal
 
 </div>
@@ -29,7 +31,7 @@ Skærmen Prædikener er organiseret i en fanseview med to hovedafsnit:
 
 ## Live stream nedtælling
 
-Når en [live stream](./live-streaming) nærmer sig inden for de næste 24 timer, vises en nedtællings timer på skærmen Prædikener. Dette lader dig vide, hvornår næste gudstjeneste vil streames, så du kan planlægge at se live.
+Når en [live stream](./live-streaming.md) nærmer sig inden for de næste 24 timer, vises en nedtællings timer på skærmen Prædikener. Dette lader dig vide, hvornår næste gudstjeneste vil streames, så du kan planlægge at se live.
 
 ## Se en prædiken
 
@@ -51,7 +53,7 @@ Hver prækenipost kan vise:
 - **Miniaturebillede** -- Et forhåndsvisningsbillede for prædikenen
 
 :::tip
-Hvis du ser en nedtælling på skærmen Prædikener, tryk på den for at springe lige til [live streamen](./live-streaming) når den starter.
+Hvis du ser en nedtælling på skærmen Prædikener, tryk på den for at springe lige til [live streamen](./live-streaming.md) når den starter.
 :::
 
 ## Tilgængelighed

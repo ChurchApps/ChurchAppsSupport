@@ -1,5 +1,7 @@
 ---
-title: "Başlangıç"
+title: "B1 Checkin ile Başlarken"
+sidebar_label: "Başlangıç"
+description: "Android tabletinde B1 Checkin kiosk uygulamasını kurun: yükleyin, oturum açın, kilisenizi seçin ve isteğe bağlı olarak bir etiket yazıcısı bağlayın."
 ---
 
 # B1 Church Checkin ile Başlangıç
@@ -27,9 +29,9 @@ B1 Church Checkin kurulumu yalnızca birkaç dakika sürer. Bu bölüm, uygulama
 
 Uygulamayı ilk kez açtığınızda üç adımdan geçeceksiniz:
 
-1. **[Oturum açın](./logging-in)** -- Kimliğinizi doğrulamak için e-posta adresinizi ve şifrenizi girin.
-2. **[Kilisenizi seçin](./logging-in)** -- Hesabınız birden fazla kiliseye bağlıysa, bu kioskun hizmet vereceği kiliseyi seçin.
-3. **[Yazıcı kurun](./printer-setup)** -- Etiket yazdırmak için bir ağ yazıcısı yapılandırın ya da etikete ihtiyacınız yoksa bu adımı atlayın.
+1. **[Oturum açın](./logging-in.md)** -- Kimliğinizi doğrulamak için e-posta adresinizi ve şifrenizi girin.
+2. **[Kilisenizi seçin](./logging-in.md)** -- Hesabınız birden fazla kiliseye bağlıysa, bu kioskun hizmet vereceği kiliseyi seçin.
+3. **[Yazıcı kurun](./printer-setup.md)** -- Etiket yazdırmak için bir ağ yazıcısı yapılandırın ya da etikete ihtiyacınız yoksa bu adımı atlayın.
 
 İlk oturum açmanın ardından uygulama kimlik bilgilerinizi ve kilise seçiminizi kaydeder. Sonraki açılışlarda doğrudan hizmetler ekranına geçer.
 
@@ -43,6 +45,6 @@ Kiosku kurmadan önce kilise yöneticinizin B1 Admin içinde hizmetleri, hizmet 
 
 ## Sonraki Adımlar
 
-- [Oturum Açma](./logging-in) -- Ayrıntılı oturum açma ve kilise seçimi talimatları.
-- [Yazıcı Kurulumu](./printer-setup) -- Etiket yazıcınızı nasıl bulacağınızı, seçeceğinizi ve test edeceğinizi öğrenin.
-- [Check-In İş Akışı](../check-in/) -- Kioskunuz kurulduktan sonra tüm check-in akışını öğrenin.
+- [Oturum Açma](./logging-in.md) -- Ayrıntılı oturum açma ve kilise seçimi talimatları.
+- [Yazıcı Kurulumu](./printer-setup.md) -- Etiket yazıcınızı nasıl bulacağınızı, seçeceğinizi ve test edeceğinizi öğrenin.
+- [Check-In İş Akışı](../check-in/index.md) -- Kioskunuz kurulduktan sonra tüm check-in akışını öğrenin.

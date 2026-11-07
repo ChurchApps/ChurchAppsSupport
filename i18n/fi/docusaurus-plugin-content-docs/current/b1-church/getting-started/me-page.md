@@ -1,5 +1,6 @@
 ---
 title: "Me-sivu"
+description: "B1App-jäsenportaalin Me-sivu yhdellä näytöllä: tulevat palvelut, tapahtumat ja ilmoittautumiset sekä perhe, ryhmät, lahjoitukset, lomakkeet, osallistumiset ja saapuneet."
 ---
 
 # Me-sivu
@@ -31,7 +32,7 @@ Jos olet kirjautunut ulos, näet tekstin „Kirjaudu sisään nähdäksesi viikk
 **Tulevat**-osio listaa seuraavat kolme kohdettasi päivämäärän mukaisessa järjestyksessä. Jokaisessa on tyyppimerkki. Jos kohteita on enemmän, napauta **Kaikki tulevat** nähdäksesi koko listan ja **Takaisin Me-sivulle** palataksesi.
 
 - **Palvelu** -- Tulevien palvelusuunnitelmien vapaaehtoistehtäväsi. Mukana on palvelun päivämäärä ja alkamisaika. Jos suunnitelmassa on useita palveluaikoja, näytetään aika, jolloin tiimisi tarvitaan. Jos suunnitelmassa ei ole aikoja, näytetään pelkkä päivämäärä. Napauta kohtaa avataksesi suunnitelman.
-- **Ilmoittautuminen** -- Tapahtumat, joihin olet [ilmoittautunut](../events/registering). Napauta siirtyäksesi [ilmoittautumisiisi](../events/my-registrations).
+- **Ilmoittautuminen** -- Tapahtumat, joihin olet [ilmoittautunut](../events/registering.md). Napauta siirtyäksesi [ilmoittautumisiisi](../events/my-registrations.md).
 - **Tapahtuma** -- Tulevat tapahtumat ryhmistä, joiden jäsen olet. Napauta kohtaa avataksesi ryhmän tapahtumat.
 
 Jos tapahtumalla tai ilmoittautumisella on kuva, sen pieni esikatselukuva näkyy rivin alussa.
@@ -66,7 +67,7 @@ Napauta riviä tai **Historia**-kohtaa avataksesi **Läsnäoloni**-sivun. Sivull
 
 Jos seurakunnallasi on varattavia tiloja tai resursseja, näkyy kaksi lisälinkkiä:
 
-- **Pyydä tapahtumaa** -- Pyydä tapahtuman järjestämistä tarvitsemillasi tiloilla ja laitteilla. Katso [Tapahtumien ja tilojen pyytäminen](../events/requesting-events).
+- **Pyydä tapahtumaa** -- Pyydä tapahtuman järjestämistä tarvitsemillasi tiloilla ja laitteilla. Katso [Tapahtumien ja tilojen pyytäminen](../events/requesting-events.md).
 - **Pyyntöni** -- Seuraa pyyntöjesi tilaa ja peruuta odottavat pyynnöt.
 
 Jos seurakuntasi ei ole määrittänyt tiloja tai resursseja, nämä linkit on piilotettu.
@@ -77,8 +78,8 @@ Jos seurakuntasi ei ole määrittänyt tiloja tai resursseja, nämä linkit on p
 
 ## Liittyvät artikkelit
 
-- [Navigointi B1Appissa](./navigating) -- Jäsenportaalin asettelu
-- [Tapahtumien ja tilojen pyytäminen](../events/requesting-events) -- Lähetä ja seuraa tila- ja resurssipyyntöjä
-- [Ilmoittautumiseni](../events/my-registrations) -- Hallinnoi tapahtumailmoittautumisiasi
-- [Vapaaehtoiseksi ilmoittautuminen](../serving/volunteer-signup) -- Näin palvelutehtävät toimivat
-- [Itsepalvelu-sisäänkirjautuminen](../checkin/self-checkin) -- Näin läsnäolosi kirjataan
+- [Navigointi B1Appissa](./navigating.md) -- Jäsenportaalin asettelu
+- [Tapahtumien ja tilojen pyytäminen](../events/requesting-events.md) -- Lähetä ja seuraa tila- ja resurssipyyntöjä
+- [Ilmoittautumiseni](../events/my-registrations.md) -- Hallinnoi tapahtumailmoittautumisiasi
+- [Vapaaehtoiseksi ilmoittautuminen](../serving/volunteer-signup.md) -- Näin palvelutehtävät toimivat
+- [Itsepalvelu-sisäänkirjautuminen](../checkin/self-checkin.md) -- Näin läsnäolosi kirjataan

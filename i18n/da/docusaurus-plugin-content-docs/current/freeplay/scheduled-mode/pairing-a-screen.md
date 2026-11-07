@@ -1,5 +1,6 @@
 ---
 title: "Parring af en skærm"
+description: "Par et FreePlay-tv med en skærmgruppes kalender i FreePlay Admin ved hjælp af firebogstavskoden på tv'et, så det selv afspiller planlagt indhold."
 ---
 
 # Parring af en skærm
@@ -13,9 +14,9 @@ Hvis du vil knytte en tv til en kalender, parrer du det med **FreePlay Admin**. 
 <div class="prereqs">
 <h4>Inden du begynder</h4>
 
-- Installer og start FreePlay på tv'et. Se [Kom i gang](../getting-started/)
+- Installer og start FreePlay på tv'et. Se [Kom i gang](../getting-started/index.md)
 - Hav et ChurchApps-login til din kirke, så du kan logge ind på FreePlay Admin
-- Valgfrit: [Opret en afspilningsliste](./building-playlists) og [planlæg den](./scheduling-the-calendar) først, så tv'et har noget at afspille med det samme
+- Valgfrit: [Opret en afspilningsliste](./building-playlists.md) og [planlæg den](./scheduling-the-calendar.md) først, så tv'et har noget at afspille med det samme
 
 </div>
 
@@ -38,7 +39,7 @@ Koden er gyldig i 15 minutter, og en nedtælling under den viser, hvor lang tid 
 5. Under **Tilstand** lader du **Planlagt** være valgt. Tv'et afspiller så efter gruppens kalender af sig selv.
 6. Klik på **Par**.
 
-Tv'et viser **Forbundet!** og derefter **Indlæser din plan...**. Det henter det planlagte indhold og begynder at afspille. Se [Planlagt afspilning på tv'et](./scheduled-playback).
+Tv'et viser **Forbundet!** og derefter **Indlæser din plan...**. Det henter det planlagte indhold og begynder at afspille. Se [Planlagt afspilning på tv'et](./scheduled-playback.md).
 
 :::info
 Hvis FreePlay Admin siger **Den kode matchede ikke et tv**, skal du kontrollere koden på skærmen. Hvis den er udløbet, skal du bruge den nye kode, som tv'et viser nu.
@@ -51,11 +52,11 @@ Indstillingen **Tilstand** har to valgmuligheder:
 - **Planlagt** - Afspiller efter gruppens kalender af sig selv. Ingen behøver at trykke på Start.
 - **Manuel** - En person vælger indhold med fjernbetjeningen. En manuel skærm vises stadig på din liste over **Skærme**, men den følger ikke en kalender, så feltet **Gruppe** er slået fra.
 
-Du kan senere ændre en skærms tilstand via **Rediger** på [siden Skærme](./managing-screens).
+Du kan senere ændre en skærms tilstand via **Rediger** på [siden Skærme](./managing-screens.md).
 
 ## Parring til en tjenesteplan i stedet
 
-Koden på skærmen **Par denne skærm** virker også i B1 Admin. Hvis du indtaster den dér og vælger en plantype under **Vis planer for**, følger tv'et den plantype i [Planlægningstilstand](../plan-mode/) i stedet for en kalender. Se [Parring af din enhed](../plan-mode/device-pairing).
+Koden på skærmen **Par denne skærm** virker også i B1 Admin. Hvis du indtaster den dér og vælger en plantype under **Vis planer for**, følger tv'et den plantype i [Planlægningstilstand](../plan-mode/index.md) i stedet for en kalender. Se [Parring af din enhed](../plan-mode/device-pairing.md).
 
 ## Ændring eller fjernelse af parring fra tv'et
 
@@ -79,6 +80,6 @@ Tv'et vender tilbage til at vise en parringskode. Par det igen, når du vil have
 
 ## Relaterede artikler
 
-- **[Administration af skærme og grupper](./managing-screens)** - Omdøb en skærm, flyt den til en anden gruppe, eller se dens downloads
-- **[Planlægning af kalenderen](./scheduling-the-calendar)** - Bestem, hvad gruppens skærme afspiller
-- **[Valg af parringstilstand](../getting-started/pairing-modes)** - Sammenlign Planlagt tilstand med Planlægningstilstand og gennemsøgning af udbydere selv
+- **[Administration af skærme og grupper](./managing-screens.md)** - Omdøb en skærm, flyt den til en anden gruppe, eller se dens downloads
+- **[Planlægning af kalenderen](./scheduling-the-calendar.md)** - Bestem, hvad gruppens skærme afspiller
+- **[Valg af parringstilstand](../getting-started/pairing-modes.md)** - Sammenlign Planlagt tilstand med Planlægningstilstand og gennemsøgning af udbydere selv

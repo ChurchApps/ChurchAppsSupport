@@ -1,5 +1,6 @@
 ---
 title: "Ulkoasu"
+description: "Aseta B1 Adminissa seurakuntasi verkkosivun värit, fontit, logo ja navigointi sekä widgetit, GA4-analytiikka, uudelleenohjaukset ja mukautettu CSS."
 ---
 
 # Ulkoasu
@@ -13,7 +14,7 @@ Ulkoasu-sivulla voit muokata verkkosivustosi yleistä ilmettä ja tuntua. Värei
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Suorita verkkosivustosi [alkuasetukset](initial-setup)
+- Suorita verkkosivustosi [alkuasetukset](./initial-setup.md)
 - Valmistele kirkkosi logo PNG-muodossa, läpinäkyvällä taustalla ja kuvasuhteella 4:1
 - Tiedä kirkkosi brändivärit (heksadesimaaliarvot), jos sinulla on olemassa oleva tyyliopas
 
@@ -98,7 +99,7 @@ Mukautettu CSS on tehokas, mutta väärin käytettynä se voi rikkoa sivustosi a
 :::
 
 :::info
-Sivustosi käyttää sisältöturvallisuuskäytäntöä (Content Security Policy), joka estää upotetut komentosarjat muista lähteistä. Tässä oleva **Mukautettu HTML** -kenttä ja yksittäisten sivujen [HTML-elementti](page-editor#using-the-html-element) ovat luotettuja poikkeuksia: tallentamasi koodi suoritetaan sellaisenaan, joten liitä komentosarjoja vain luotetuista lähteistä (analytiikkatagit, chat-widgetit ja vastaavat upotukset).
+Sivustosi käyttää sisältöturvallisuuskäytäntöä (Content Security Policy), joka estää upotetut komentosarjat muista lähteistä. Tässä oleva **Mukautettu HTML** -kenttä ja yksittäisten sivujen [HTML-elementti](./page-editor.md#using-the-html-element) ovat luotettuja poikkeuksia: tallentamasi koodi suoritetaan sellaisenaan, joten liitä komentosarjoja vain luotetuista lähteistä (analytiikkatagit, chat-widgetit ja vastaavat upotukset).
 :::
 
 ## Teematyylit
@@ -107,5 +108,5 @@ Jos haluat nopean lähtökohdan, **Ehdotetut paletit** Väripaletti-osiossa tarj
 
 ## Seuraavat vaiheet
 
-- [Sivujen hallinta](managing-pages) -- Rakenna ja järjestä verkkosivustosi sivut
-- [Tiedostot](files) -- Lataa sivustosi mediatiedostot
+- [Sivujen hallinta](./managing-pages.md) -- Rakenna ja järjestä verkkosivustosi sivut
+- [Tiedostot](./files.md) -- Lataa sivustosi mediatiedostot

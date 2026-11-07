@@ -1,5 +1,6 @@
 ---
 title: "planvalidering og meddelelser"
+description: "Tjek planer i B1 Admin for ubesatte positioner, kalenderkonflikter og blokerede frivillige, og send en push-besked til hele teamet med ét klik."
 ---
 
 # planvalidering og frivilligs meddelelser
@@ -59,5 +60,5 @@ frivillige skal have B1 Mobile app installeret og meddelelser aktiveret for at m
 ## Relaterede artikler
 
 - [tjenesteplaner](./plans.md)
-- [automatiseringer](./automations.md)
+- [automatiseringer](./workflows.md)
 - [B1 Mobile meddelelser](/docs/b1-mobile/community/notifications)

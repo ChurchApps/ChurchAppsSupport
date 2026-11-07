@@ -1,5 +1,6 @@
 ---
 title: "Listas de Cumpleaños y Aniversarios"
+description: "Crea una lista de todas las personas con cumpleaños o aniversario en un mes determinado usando los filtros de búsqueda de Personas en B1 Admin, y luego consulta o exporta las fechas."
 ---
 
 # Listas de Cumpleaños y Aniversarios

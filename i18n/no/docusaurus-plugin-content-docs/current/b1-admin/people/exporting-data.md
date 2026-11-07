@@ -1,5 +1,6 @@
 ---
 title: "Eksportere data"
+description: "Eksporter personer til CSV, medlemslister for grupper eller en full B1-databasesikkerhetskopi fra B1 Admin, og se hva B1 Export Zip inneholder."
 ---
 
 # Eksportere data

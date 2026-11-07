@@ -1,5 +1,7 @@
 ---
-title: "Initial Setup"
+title: "Getting Started with Your B1 Admin Website"
+sidebar_label: "Initial Setup"
+description: "Set up your B1 Admin church website: point a subdomain or custom domain, create your home page, pick brand colors and logo, and build navigation."
 ---
 
 # Initial Setup
@@ -45,7 +47,7 @@ If you do not see the Settings option, ask the person who set up your church acc
 6. After adding a section, click **Add Content** again to insert text, images, videos, cards, forms, and more by dragging them into your section.
 
 :::info
-For detailed instructions on working with pages and navigation, see [Managing Pages](managing-pages). For a full guide to the visual editor, see [Using the Page Editor](page-editor).
+For detailed instructions on working with pages and navigation, see [Managing Pages](./managing-pages.md). For a full guide to the visual editor, see [Using the Page Editor](./page-editor.md).
 :::
 
 ## Configuring Site Appearance
@@ -57,7 +59,7 @@ For detailed instructions on working with pages and navigation, see [Managing Pa
 5. Configure your **Site Footer** with your church's contact information and links.
 
 :::info
-Changes you make in Appearance apply across your entire website. See the [Appearance](appearance) page for detailed instructions on each setting.
+Changes you make in Appearance apply across your entire website. See the [Appearance](./appearance.md) page for detailed instructions on each setting.
 :::
 
 ## Setting Up Navigation
@@ -70,6 +72,6 @@ Your navigation links appear in the Website Pages view. To organize them:
 
 ## Next Steps
 
-- [Managing Pages](managing-pages) -- Learn how to work with pages and navigation in detail
-- [Appearance](appearance) -- Fine-tune your site's colors, fonts, and layout
-- [Files](files) -- Upload images and documents for your website
+- [Managing Pages](./managing-pages.md) -- Learn how to work with pages and navigation in detail
+- [Appearance](./appearance.md) -- Fine-tune your site's colors, fonts, and layout
+- [Files](./files.md) -- Upload images and documents for your website

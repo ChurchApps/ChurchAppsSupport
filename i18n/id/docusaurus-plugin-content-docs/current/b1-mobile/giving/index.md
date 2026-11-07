@@ -1,5 +1,7 @@
 ---
-title: "Pemberian"
+title: "Memberi di Aplikasi B1 Mobile"
+sidebar_label: "Pemberian"
+description: "Berikan persembahan lewat B1 Mobile, cek total tahun berjalan, dan kelola metode pembayaran tersimpan. Meliputi tab Ikhtisar, Donasi, Kelola, dan Riwayat."
 ---
 
 # Pemberian
@@ -24,7 +26,7 @@ Bagian pemberian diatur dalam empat tab:
 Semua donasi yang dibuat melalui B1 Mobile diproses dengan aman melalui **Stripe**. Informasi pembayaran Anda ditangani oleh infrastruktur aman Stripe dan tidak pernah disimpan di server ChurchApps. Anda dapat memberi dengan yakin karena detail keuangan Anda terlindungi.
 
 :::info
-Administrator gereja Anda mengatur dana yang tersedia dan pemrosesan pembayaran melalui [B1 Admin](../../b1-admin/). Jika Anda tidak melihat opsi pemberian di aplikasi, gereja Anda mungkin belum mengonfigurasi fitur ini.
+Administrator gereja Anda mengatur dana yang tersedia dan pemrosesan pembayaran melalui [B1 Admin](../../b1-admin/index.md). Jika Anda tidak melihat opsi pemberian di aplikasi, gereja Anda mungkin belum mengonfigurasi fitur ini.
 :::
 
 ## Yang Dapat Anda Lakukan
@@ -38,6 +40,6 @@ Berikut yang dapat Anda lakukan dari bagian pemberian:
 
 ## Langkah Selanjutnya
 
-- [Membuat Donasi](./making-donations) -- Pelajari cara memberi dari aplikasi
-- [Mengelola Metode Pembayaran](./managing-payments) -- Tambah atau hapus metode pembayaran yang tersimpan
-- [Riwayat Donasi](./donation-history) -- Lihat ringkasan pemberian dan donasi sebelumnya Anda
+- [Membuat Donasi](./making-donations.md) -- Pelajari cara memberi dari aplikasi
+- [Mengelola Metode Pembayaran](./managing-payments.md) -- Tambah atau hapus metode pembayaran yang tersimpan
+- [Riwayat Donasi](./donation-history.md) -- Lihat ringkasan pemberian dan donasi sebelumnya Anda

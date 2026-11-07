@@ -1,5 +1,6 @@
 ---
 title: "Inscripciones pagadas"
+description: "Configura inscripciones de pago en B1 Admin: tipos de asistente con precio, complementos, códigos de descuento, listas de espera y cobros con tu pasarela."
 ---
 
 # Inscripciones pagadas
@@ -13,7 +14,7 @@ La inscripción a eventos puede ir más allá de un simple conteo de asistentes.
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Habilite primero la inscripción en el evento: consulte [Creación de calendarios](creating-calendars#enabling-event-registration)
+- Habilite primero la inscripción en el evento: consulte [Creación de calendarios](./creating-calendars.md#enabling-event-registration)
 - Para cobrar pagos en línea, su iglesia necesita [tener configuradas las donaciones en línea](../donations/online-giving-setup.md) (Stripe, PayPal o Kingdom Funding). Los eventos gratuitos no requieren configuración de donaciones. Sin donaciones en línea, las inscripciones pagadas siguen funcionando, pero las personas pagan directamente a la iglesia; consulte [Iglesias sin donaciones en línea](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Cada código muestra un conteo de **Usos** para que vea cuántas veces se ha can
 Active **Habilitar lista de espera** en la tarjeta Configuración de inscripción. Cuando el evento alcanza su capacidad:
 
 - A los nuevos inscritos se les ofrece un lugar en la lista de espera en lugar de ser rechazados. Completan el mismo registro (el pago se omite mientras están en lista de espera).
-- Cuando alguien cancela, la inscripción en lista de espera más antigua se **promueve automáticamente** y recibe un correo electrónico avisando que se liberó un lugar. Si tiene un saldo pendiente, el correo lo lleva a [Mis inscripciones](../../b1-church/events/my-registrations) en el sitio B1 de su iglesia, donde puede completar el pago.
+- Cuando alguien cancela, la inscripción en lista de espera más antigua se **promueve automáticamente** y recibe un correo electrónico avisando que se liberó un lugar. Si tiene un saldo pendiente, el correo lo lleva a [Mis inscripciones](../../b1-church/events/my-registrations.md) en el sitio B1 de su iglesia, donde puede completar el pago.
 - Puede promover a alguien manualmente en cualquier momento con la acción **Promover** en una fila de lista de espera, lo cual es útil después de aumentar la capacidad del evento.
 
 :::info
@@ -75,7 +76,7 @@ Abra un evento desde la página de Inscripciones para ver todas las inscripcione
 
 - Haga clic en el ícono de detalles de una fila para abrir el cuadro de diálogo **Detalles de la inscripción**: miembros, selecciones, pagado/saldo y una tabla de **Pagos** con cada cargo (monto, método, fecha).
 - **Exportar CSV** descarga la lista completa con columnas para miembros, tipos de asistente, selecciones, pagado/total/saldo, estado y una columna por cada pregunta de inscripción.
-- **Agregar asistente** registra una inscripción sin conexión o por teléfono para cualquier persona de su iglesia. Elija a la persona y, en un evento de pago, su tipo de asistente. A su tarjeta no se le cobra nada: una inscripción de pago se guarda como **pendiente** con el monto total como saldo pendiente. Si su iglesia tiene donaciones en línea, la persona puede pagarlo desde [Mis inscripciones](../../b1-church/events/my-registrations); de lo contrario, cóbrelo en persona. Necesita el permiso de edición de Inscripciones para agregar asistentes.
+- **Agregar asistente** registra una inscripción sin conexión o por teléfono para cualquier persona de su iglesia. Elija a la persona y, en un evento de pago, su tipo de asistente. A su tarjeta no se le cobra nada: una inscripción de pago se guarda como **pendiente** con el monto total como saldo pendiente. Si su iglesia tiene donaciones en línea, la persona puede pagarlo desde [Mis inscripciones](../../b1-church/events/my-registrations.md); de lo contrario, cóbrelo en persona. Necesita el permiso de edición de Inscripciones para agregar asistentes.
 
 :::info
 Los reembolsos no se procesan dentro de B1. Si necesita reembolsar una inscripción de pago cancelada, emita el reembolso desde el panel de su proveedor de donaciones (por ejemplo, Stripe).
@@ -90,12 +91,12 @@ Los pagos pasan por la misma pasarela de donaciones que su iglesia ya usa: los d
 Si su iglesia no tiene configurado un proveedor de donaciones, los eventos de pago pueden seguir recibiendo inscripciones. El paso de pago informa a los inscritos que el pago en línea no está disponible y que pueden pagar directamente a la iglesia, y un botón **Inscribirse y pagar después** guarda la inscripción. Se guarda como **pendiente** con el monto total como saldo pendiente, y aparece en la lista con una advertencia de saldo. Cobre el dinero de la forma en que su iglesia normalmente lo hace.
 
 :::info
-B1 no tiene forma de marcar un pago fuera de línea como recibido. El saldo pendiente permanece en la lista y en la tarjeta de [Mis inscripciones](../../b1-church/events/my-registrations) del inscrito después de que usted lo cobre, así que lleve su propio registro de quién ha pagado.
+B1 no tiene forma de marcar un pago fuera de línea como recibido. El saldo pendiente permanece en la lista y en la tarjeta de [Mis inscripciones](../../b1-church/events/my-registrations.md) del inscrito después de que usted lo cobre, así que lleve su propio registro de quién ha pagado.
 :::
 
 ## Artículos relacionados
 
-- [Creación de calendarios](creating-calendars#enabling-event-registration) — habilitar la inscripción y la configuración básica
+- [Creación de calendarios](./creating-calendars.md#enabling-event-registration) — habilitar la inscripción y la configuración básica
 - [Configuración de donaciones en línea](../donations/online-giving-setup.md) — configurar la pasarela de pago que se usa al pagar
-- [Inscribirse a eventos](../../b1-church/events/registering) — lo que ven los miembros al registrarse
-- [Mis inscripciones](../../b1-church/events/my-registrations) — cómo los miembros pagan saldos y editan sus inscripciones
+- [Inscribirse a eventos](../../b1-church/events/registering.md) — lo que ven los miembros al registrarse
+- [Mis inscripciones](../../b1-church/events/my-registrations.md) — cómo los miembros pagan saldos y editan sus inscripciones

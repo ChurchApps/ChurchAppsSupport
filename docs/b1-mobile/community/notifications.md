@@ -1,5 +1,6 @@
 ---
 title: "Notifications"
+description: "Set up push alerts for the B1 Mobile app, then view, open, and clear your church notifications for messages, groups, and serving."
 ---
 
 # Notifications
@@ -13,7 +14,7 @@ B1 Mobile uses push notifications to keep you informed about what is happening a
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Allow notifications for B1 Mobile in your device settings
 
 </div>
@@ -22,8 +23,8 @@ B1 Mobile uses push notifications to keep you informed about what is happening a
 
 Notifications can cover a range of activity, including:
 
-- **Messages** -- When someone sends you a [private message](./messaging).
-- **Group activity** -- Updates, posts, and conversations from [groups](../groups/) you belong to.
+- **Messages** -- When someone sends you a [private message](./messaging.md).
+- **Group activity** -- Updates, posts, and conversations from [groups](../groups/index.md) you belong to.
 - **Serving assignments** -- When you are assigned to a [plan](../serving/viewing-plans.md) or when your assignment status changes.
 - **Other updates** -- General announcements and activity relevant to you.
 

@@ -1,5 +1,7 @@
 ---
-title: "Comunidad"
+title: "Directorio comunitario de miembros en B1.church"
+sidebar_label: "Comunidad"
+description: "Busca en el directorio de miembros de tu iglesia en B1.church por nombre o grupo, consulta perfiles y descubre dónde se encuentran ahora las actualizaciones de la antigua Línea de tiempo."
 ---
 
 # Comunidad
@@ -26,5 +28,5 @@ Los miembros y la información que puedes ver en el directorio dependen de la co
 :::
 
 :::tip
-Usa las funciones de comunidad junto con [Grupos](../groups/) para mantenerte involucrado con tu iglesia durante toda la semana.
+Usa las funciones de comunidad junto con [Grupos](../groups/index.md) para mantenerte involucrado con tu iglesia durante toda la semana.
 :::

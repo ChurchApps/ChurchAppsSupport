@@ -1,5 +1,7 @@
 ---
-title: "Canlı Yayın"
+title: "B1 Admin'de Canlı Yayın Saatleri ve Kurulumu"
+sidebar_label: "Canlı Yayın"
+description: "B1 Admin'de haftalık veya tek seferlik canlı yayın ibadetleri planlayın, sohbet ve erken video zamanlamasını ayarlayın, YouTube kanalı bağlayın ve gömme sorunlarını giderin."
 ---
 
 # Canlı Yayın
@@ -19,7 +21,7 @@ Canlı Yayın Saatleri sayfası, kilisenizin yayın programını yapılandırman
 
 - **contentApi.streamingServices.edit** iznine ihtiyacınız var. Erişiminiz yoksa [Roller ve İzinler](../settings/roles-permissions.md) bölümüne bakın.
 - Otomatik canlı yayın kullanmayı planlıyorsanız YouTube Kanal Kimliğinizi hazır bulundurun
-- Yayın kaynağı olarak kullanmak üzere en az bir [vaaz](managing-sermons) veya kalıcı canlı URL ekleyin
+- Yayın kaynağı olarak kullanmak üzere en az bir [vaaz](./managing-sermons.md) veya kalıcı canlı URL ekleyin
 
 </div>
 
@@ -80,13 +82,13 @@ YouTube Kanal Kimliğinizi bulmak için YouTube kanalınızın gelişmiş ayarla
 
 ## Renkleri ve Logoyu Özelleştirme
 
-Canlı yayın sayfanız web sitenizin [Görünüm](../website/appearance) ayarlarını kullanır:
+Canlı yayın sayfanız web sitenizin [Görünüm](../website/appearance.md) ayarlarını kullanır:
 
 - Koyu metinli **açık vurgu rengi** üst bilgi için kullanılır.
 - Açık metinli **koyu vurgu rengi** kenar çubuğu için kullanılır.
 - **Açık Arka Plan Logonuz** yayın sayfasında görünür. Şeffaf arka planlı ve 4:1 en-boy oranlı bir görsel kullanın.
 
-Bunları değiştirmek için **Web Sitesi** ardından **Görünüm** bölümüne gidin ve [Renk Paleti](../website/appearance#color-palette) ve [Logo](../website/appearance#logo-and-branding) ayarlarınızı güncelleyin.
+Bunları değiştirmek için **Web Sitesi** ardından **Görünüm** bölümüne gidin ve [Renk Paleti](../website/appearance.md#color-palette) ve [Logo](../website/appearance.md#logo-and-branding) ayarlarınızı güncelleyin.
 
 ## Yayın Sunucuları Ekleme
 
@@ -133,5 +135,5 @@ Kanalınızda birden fazla planlanmış veya geçmiş canlı yayın girişi oldu
 
 ## Sonraki Adımlar
 
-- [Vaazları Yönetme](managing-sermons) -- Kitaplığınıza vaaz ekleyin
-- [Oynatma Listeleri](playlists) -- Vaazları serilere düzenleyin
+- [Vaazları Yönetme](./managing-sermons.md) -- Kitaplığınıza vaaz ekleyin
+- [Oynatma Listeleri](./playlists.md) -- Vaazları serilere düzenleyin

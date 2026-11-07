@@ -1,5 +1,6 @@
 ---
 title: "Champs personnalisés"
+description: "Créez des champs personnalisés dans B1 Admin (date d'expiration d'un contrôle d'antécédents, taille de t-shirt) pour les rechercher et les filtrer."
 ---
 
 # Champs personnalisés

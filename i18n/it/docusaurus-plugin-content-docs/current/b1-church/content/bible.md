@@ -1,5 +1,7 @@
 ---
-title: "Bibbia"
+title: "Leggere la Bibbia su B1.church"
+sidebar_label: "Bibbia"
+description: "Leggi le Scritture nel lettore Bibbia di B1.church, con controlli di libro, capitolo e traduzione e una pagina Bibbia per la lettura quotidiana."
 ---
 
 # Bibbia

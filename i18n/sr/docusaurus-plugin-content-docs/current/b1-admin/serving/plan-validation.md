@@ -1,5 +1,6 @@
 ---
 title: "Provera plana i obaveštenja"
+description: "Проверите планове служења у B1 Admin за непопуњене позиције, сукобе у распореду и блокиране волонтере, па једним кликом обавестите цео тим."
 ---
 
 # Provera plana i obaveštenja volontera

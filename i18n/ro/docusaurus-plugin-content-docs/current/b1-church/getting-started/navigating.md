@@ -1,5 +1,6 @@
 ---
 title: "Navigarea în B1App"
+description: "Orientează-te în portalul de membri B1.church pe telefon sau calculator: panoul Home, bara de file de jos, pagina More și pagina Me."
 ---
 
 # Navigarea în B1App
@@ -92,7 +93,7 @@ Paginile cu detalii -- un grup, un plan, pagina ta Eu, ecranele Planuri și Dona
 
 ## Pagina Eu
 
-**Eu** (`/mobile/me`) este centrul tău personal. Afișează numele și fotografia ta, cu butoanele **Editează profilul** și **Setări** ([preferințele de notificare](./notification-preferences.md)), apoi ce urmează pentru tine -- atribuirile de slujire, înscrierile la evenimente și evenimentele grupurilor -- urmate de gospodăria ta, grupurile tale, [donațiile](../giving/) din acest an, formularele trimise, istoricul prezenței, [înscrierile](../events/my-registrations.md) tale și notificările și mesajele recente. Vezi [Pagina Eu](./me-page) pentru detalii.
+**Eu** (`/mobile/me`) este centrul tău personal. Afișează numele și fotografia ta, cu butoanele **Editează profilul** și **Setări** ([preferințele de notificare](./notification-preferences.md)), apoi ce urmează pentru tine -- atribuirile de slujire, înscrierile la evenimente și evenimentele grupurilor -- urmate de gospodăria ta, grupurile tale, [donațiile](../giving/index.md) din acest an, formularele trimise, istoricul prezenței, [înscrierile](../events/my-registrations.md) tale și notificările și mesajele recente. Vezi [Pagina Eu](./me-page.md) pentru detalii.
 
 Dacă ești deconectat, pagina Eu afișează în schimb un buton **Conectare**.
 

@@ -1,5 +1,6 @@
 ---
 title: "Žádosti o připojení ke skupině"
+description: "Schvalujte nebo zamítejte žádosti o přihlášení do skupiny v B1 Admin, najděte čekající žádosti jako vedoucí nebo administrátor a u zamítnutí uveďte důvod."
 ---
 
 # Žádosti o připojení ke skupině

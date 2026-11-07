@@ -1,5 +1,6 @@
 ---
 title: "Gids: Zondagvrijwilligers beheren"
+description: "Stel vrijwilligersteams, wekelijkse dienstplannen en zondagstaken in B1 Admin in, zodat vrijwilligers opdrachten zien op B1.church en in de mobiele app."
 ---
 
 # Zondagvrijwilligers beheren
@@ -75,7 +76,7 @@ Serviceorders zijn planspecifiek. Wijzigingen hier hebben geen gevolgen voor and
 
 Automatiseer wekelijkse verantwoordelijkheden zodat niets tussen wal en schip valt.
 
-Volg de gidsen [Taken](../serving/tasks.md) en [Automations](../serving/automations.md) om:
+Volg de gidsen [Taken](../serving/tasks.md) en [Automations](../serving/workflows.md) om:
 
 1. Maak automations voor wekelijkse terugkerende verantwoordelijkheden (bijv. "Bereiding communie-elementen", "Druk bulletins", "Stel geluidapparatuur in")
 2. Wijs elke automatisering toe aan de verantwoordelijke persoon of groep
@@ -94,7 +95,7 @@ Laat vrijwilligers zelf voor posities aanmelden in plaats van te wachten op behe
 3. Selecteer voor elke positie het selectievakje **Zelfbediening aanmelding toestaan** om het beschikbaar te maken voor zelfbediening.
 4. Voeg voor elke positie een **Beschrijving** toe zodat vrijwilligers weten wat de rol inhoudt.
 
-Zodra zelfbediening aanmeldingsposities zijn gemaakt, verschijnen zij automatisch op de vrijwilligersaanmeldingspagina's op [B1.church](../../b1-church/serving/volunteer-signup) en de [B1 Mobiele app](../../b1-mobile/serving/volunteer-signup). Leden kunnen open posities doorzoeken, zien hoeveel plaatsen er nog beschikbaar zijn en zich met één klik aanmelden.
+Zodra zelfbediening aanmeldingsposities zijn gemaakt, verschijnen zij automatisch op de vrijwilligersaanmeldingspagina's op [B1.church](../../b1-church/serving/volunteer-signup.md) en de [B1 Mobiele app](../../b1-mobile/serving/volunteer-signup.md). Leden kunnen open posities doorzoeken, zien hoeveel plaatsen er nog beschikbaar zijn en zich met één klik aanmelden.
 
 :::tip
 Meng beheerderstoewijzingen en zelfbediening aanmeldingsposities in dezelfde plan. Wijs bijvoorbeeld uw aanbiddinaleider rechtstreeks toe maar laat greeters en koffie servers zelf kiezen.
@@ -108,7 +109,7 @@ Toegewezen vrijwilligers zien hun plannen automatisch en kunnen reageren.
 2. Zij kunnen toewijzingen rechtstreeks van een van beide platforms accepteren of weigeren
 3. Zij kunnen blokkeerdata instellen voor weken waarop zij niet beschikbaar zijn
 4. Planen kunnen voor repetities worden afgedrukt of achter het podium worden geplaatst
-5. Vrijwilligers kunnen open posities via de [vrijwilligersaanmeldingspagina](../../b1-church/serving/volunteer-signup) doorzoeken en zich aanmelden
+5. Vrijwilligers kunnen open posities via de [vrijwilligersaanmeldingspagina](../../b1-church/serving/volunteer-signup.md) doorzoeken en zich aanmelden
 
 :::tip
 Push-meldingen op de mobiele app waarschuwen vrijwilligers wanneer zij nieuwe toewijzingen ontvangen of wanneer plannen veranderen.
@@ -126,8 +127,8 @@ Uw vrijwilligersbeheerssysteem is ingesteld. Elke week maakt u een nieuw plan, w
 - [Serviceorder](../serving/service-order.md) -- de stroom van een service bouwen
 - [Liederen](../serving/songs.md) -- uw aanbiddingsliedenebibliotheek beheren
 - [Taken](../serving/tasks.md) -- actiegegevens aan personen of groepen toewijzen
-- [Automations](../serving/automations.md) -- terugkerende taken automatiseren
+- [Automations](../serving/workflows.md) -- terugkerende taken automatiseren
 - [Plannen bekijken (web)](../../b1-church/plans/viewing-plans.md) -- hoe vrijwilligers plannen online zien
 - [Plannen bekijken (mobiel)](../../b1-mobile/serving/viewing-plans.md) -- hoe vrijwilligers plannen op mobiel zien
-- [Vrijwilligersaanmelding (web)](../../b1-church/serving/volunteer-signup) -- hoe leden vrijwilligersposities zelf selecteren
-- [Vrijwilligersaanmelding (mobiel)](../../b1-mobile/serving/volunteer-signup) -- vrijwilligerszelfbediening aanmelding op mobiel
+- [Vrijwilligersaanmelding (web)](../../b1-church/serving/volunteer-signup.md) -- hoe leden vrijwilligersposities zelf selecteren
+- [Vrijwilligersaanmelding (mobiel)](../../b1-mobile/serving/volunteer-signup.md) -- vrijwilligerszelfbediening aanmelding op mobiel

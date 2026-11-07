@@ -1,5 +1,6 @@
 ---
 title: "Palvelimen ylläpito"
+description: "Vain Server.Admin-käyttäjille: nollaa kaksivaiheinen kirjautuminen, esiinny käyttäjänä, moderoi Commonsia ja hyväksy seurakunnan sähköposti B1 Adminissa."
 ---
 
 # Palvelimen ylläpito

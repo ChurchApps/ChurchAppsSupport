@@ -1,5 +1,6 @@
 ---
 title: "Stripe-importálás"
+description: "Stripe-adományok importálása a B1 Admin-ba előzetes nézettel, amely minden tételt új, már importált vagy kihagyott állapottal jelöl a véglegesítés előtt."
 ---
 
 # Stripe-importálás

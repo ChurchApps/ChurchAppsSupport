@@ -1,5 +1,7 @@
 ---
-title: "Bible"
+title: "Reading the Bible in B1 Mobile"
+sidebar_label: "Bible"
+description: "Use the built-in Bible reader in the B1 Mobile app to open Scripture from the drawer menu, navigate books, chapters, and verses, and find your church's Bible option."
 ---
 
 # Bible
@@ -13,7 +15,7 @@ B1 Mobile includes a built-in Bible reader so you can read Scripture right from 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Your church must have the Bible feature enabled
 
 </div>
@@ -37,7 +39,7 @@ The embedded reader provides controls for moving through Scripture. You can:
 The reader fills the screen, giving you plenty of space to read comfortably on your device.
 
 :::tip
-Make the Bible screen part of your daily routine -- it is a quick way to read Scripture wherever you are. Pair it with the [Verse of the Day](./verse-of-the-day) for daily inspiration.
+Make the Bible screen part of your daily routine -- it is a quick way to read Scripture wherever you are. Pair it with the [Verse of the Day](./verse-of-the-day.md) for daily inspiration.
 :::
 
 ## Availability
@@ -46,6 +48,6 @@ The Bible screen is available when your church has enabled this feature. If you 
 
 ## Related Articles
 
-- [Verse of the Day](./verse-of-the-day) -- See a daily Bible verse
-- [Sermons](./sermons) -- Watch sermons that complement your Bible reading
+- [Verse of the Day](./verse-of-the-day.md) -- See a daily Bible verse
+- [Sermons](./sermons.md) -- Watch sermons that complement your Bible reading
 - [FreePlay](/docs/freeplay/) -- Play structured curriculum on classroom TVs (replaces the deprecated in-app Lessons screen)

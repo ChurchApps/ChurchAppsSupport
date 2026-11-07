@@ -1,5 +1,6 @@
 ---
 title: "Khóa API"
+description: "Tạo, phân quyền và thu hồi khóa API B1 trong B1 Admin cho script máy chủ và các kết nối Zapier, Make, hoặc Google Sheets, không cần luồng OAuth đầy đủ."
 ---
 
 # Khóa API
@@ -104,7 +105,7 @@ Khóa đã thu hồi sẽ mất hiệu lực ngay lập tức — không có th�
 
 ## Khác biệt so với OAuth
 
-Khóa API phù hợp khi **hội thánh của bạn là đơn vị duy nhất sử dụng tích hợp**. Với một công cụ kết nối cần truy cập nhiều hội thánh, mỗi hội thánh phải đồng ý rõ ràng — chẳng hạn một ứng dụng SaaS dùng chung trong cộng đồng B1 — hãy dùng [OAuth và Connected Apps](./connected-apps) thay thế.
+Khóa API phù hợp khi **hội thánh của bạn là đơn vị duy nhất sử dụng tích hợp**. Với một công cụ kết nối cần truy cập nhiều hội thánh, mỗi hội thánh phải đồng ý rõ ràng — chẳng hạn một ứng dụng SaaS dùng chung trong cộng đồng B1 — hãy dùng [OAuth và Connected Apps](./connected-apps.md) thay thế.
 
 | | Khóa API | OAuth |
 |---|---|---|

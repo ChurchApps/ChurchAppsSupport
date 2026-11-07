@@ -1,5 +1,7 @@
 ---
-title: "Skupine"
+title: "Zaslon Skupine v B1 Mobile"
+sidebar_label: "Skupine"
+description: "Poiščite skupine, katerim pripadate, na zaslonu Skupine v B1 Mobile: najbolj obiskana skupina je na vrhu, ostale skupine vaše cerkve pa spodaj."
 ---
 
 # Skupine
@@ -30,10 +32,10 @@ Na zaslonu Skupine lahko počnete naslednje:
 - **Ostanite povezani** -- Oglejte si, kaj delijo člani vaše skupine, spremljajte pogovore in sodelujte z vsebino skupine.
 
 :::tip
-Zaslon Skupine se prilagaja vaši uporabi, tako kot [nadzorna plošča](../dashboard/). Skupine, ki jih najpogosteje obiskujete, so premaknjene na vrh za hiter dostop.
+Zaslon Skupine se prilagaja vaši uporabi, tako kot [nadzorna plošča](../dashboard/index.md). Skupine, ki jih najpogosteje obiskujete, so premaknjene na vrh za hiter dostop.
 :::
 
 ## Naslednji koraki
 
-- [Podrobnosti skupine](./group-details) -- Preberite, kaj je na strani s podrobnostmi skupine
-- [Časovnica skupine](./group-timeline) -- Spoznajte združen pregled dejavnosti v vaših skupinah
+- [Podrobnosti skupine](./group-details.md) -- Preberite, kaj je na strani s podrobnostmi skupine
+- [Časovnica skupine](./group-timeline.md) -- Spoznajte združen pregled dejavnosti v vaših skupinah

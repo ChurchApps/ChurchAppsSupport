@@ -1,5 +1,6 @@
 ---
 title: "Mga RSVP sa Event"
+description: "Sagutin ang Pupunta, Siguro, o Hindi makakapunta sa mga event ng grupo sa B1.church, at tingnan kung ilan ang dadalo. Makikita rin ito ng mga lider."
 ---
 
 # Mga RSVP sa Event
@@ -30,14 +31,14 @@ Ang iyong RSVP ay nalalapat sa partikular na pangyayaring iyon -- para sa linggu
 ## Para sa Mga Lider ng Group
 
 - **Pagtingin sa mga tugon** -- Makikita ng mga lider ang link na **View responses** sa bawat event sa kalendaryo ng group (**All events**). Bubukas ito ng sheet na **Responses** na naglilista ng lahat ayon sa sagot -- Going, Maybe, at Can't go. Kung wala pang sumasagot, ipinapakita nito ang "No responses yet."
-- **Pag-on o pag-off ng RSVP** -- Kapag gumagawa o nag-e-edit ng event, gamitin ang switch na **Allow RSVPs**. Ang mga event na naka-off ang RSVP ay hindi nagpapakita ng mga button ng tugon. May parehong opsyon ang mga staff na gumagawa ng event nang maramihan mula sa B1 Admin -- tingnan ang [Group Calendar](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Pag-on o pag-off ng RSVP** -- Kapag gumagawa o nag-e-edit ng event, gamitin ang switch na **Allow RSVPs**. Ang mga event na naka-off ang RSVP ay hindi nagpapakita ng mga button ng tugon. May parehong opsyon ang mga staff na gumagawa ng event nang maramihan mula sa B1 Admin -- tingnan ang [Group Calendar](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Magaan na bilang lamang ang mga RSVP. Kung kailangan ng iyong event ng detalye sa pag-sign up, pamamahala ng kapasidad, o pagbabayad, gamitin ang [event registration](../events/registering) sa halip.
+Magaan na bilang lamang ang mga RSVP. Kung kailangan ng iyong event ng detalye sa pag-sign up, pamamahala ng kapasidad, o pagbabayad, gamitin ang [event registration](../events/registering.md) sa halip.
 :::
 
 ## Mga Kaugnay na Artikulo
 
 - [Group Details](./group-details.md) -- Lahat ng nasa pahina ng detalye ng group
-- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar) -- Paano pinamamahalaan ng mga staff at lider ang mga event at RSVP ng group
-- [Registering for Events](../events/registering) -- Buong event registration na may kapasidad at pagbabayad
+- [Group Calendar (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Paano pinamamahalaan ng mga staff at lider ang mga event at RSVP ng group
+- [Registering for Events](../events/registering.md) -- Buong event registration na may kapasidad at pagbabayad

@@ -1,5 +1,7 @@
 ---
-title: "Frivillig påmelding"
+title: "Frivillig påmelding i B1.church-medlemsportalen"
+sidebar_label: "Frivillig påmelding"
+description: "Bla gjennom ledige frivillige posisjoner etter kategori, meld deg på kommende gudstjenester eller fjern påmeldingen din på B1.church før fristen."
 ---
 
 # Frivillig påmelding
@@ -74,4 +76,4 @@ Sjekk frivilligsiden jevnlig, særlig tidlig i uken. Populære verv blir fylt ra
 ## Relaterte artikler
 
 - [Oversikt over tjeneste](./index.md) -- oversikt over tjenestefunksjonene på B1.church
-- [Se planer](../plans/viewing-plans) -- se dine tildelte planer og tjenesteordener
+- [Se planer](../plans/viewing-plans.md) -- se dine tildelte planer og tjenesteordener

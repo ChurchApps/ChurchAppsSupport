@@ -1,5 +1,6 @@
 ---
 title: "Appearance"
+description: "Set colors, fonts, spacing, logo, and navigation for your church website in B1 Admin, plus widgets, GA4 analytics, redirects, and custom CSS."
 ---
 
 # Appearance
@@ -13,7 +14,7 @@ The Appearance page lets you customize the overall look and feel of your church 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Complete the [Initial Setup](initial-setup) for your website
+- Complete the [Initial Setup](./initial-setup.md) for your website
 - Have your church logo ready in PNG format with a transparent background and a 4:1 aspect ratio
 - Know your church's brand colors (hex values) if you have an existing style guide
 
@@ -98,7 +99,7 @@ Custom CSS is powerful but can break your site's layout if used incorrectly. Mos
 :::
 
 :::info
-Your site enforces a Content Security Policy that blocks inline scripts from any other source. The **Custom HTML** field here, and the [HTML element](page-editor#using-the-html-element) on individual pages, are the trusted exceptions -- code you save there runs as-is, so only paste scripts from sources you trust (analytics tags, chat widgets, and similar embeds).
+Your site enforces a Content Security Policy that blocks inline scripts from any other source. The **Custom HTML** field here, and the [HTML element](./page-editor.md#using-the-html-element) on individual pages, are the trusted exceptions -- code you save there runs as-is, so only paste scripts from sources you trust (analytics tags, chat widgets, and similar embeds).
 :::
 
 ## Style Themes
@@ -107,5 +108,5 @@ If you want a quick starting point, the **Suggested Palettes** in the Color Pale
 
 ## Next Steps
 
-- [Managing Pages](managing-pages) -- Build and organize your website pages
-- [Files](files) -- Upload media assets for your site
+- [Managing Pages](./managing-pages.md) -- Build and organize your website pages
+- [Files](./files.md) -- Upload media assets for your site

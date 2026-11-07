@@ -1,5 +1,6 @@
 ---
 title: "Riproduzione programmata sulla TV"
+description: "Una TV associata scarica la settimana successiva e riproduce a orario, anche offline. Pannello info, tasti del telecomando e fissaggio di una playlist."
 ---
 
 # Riproduzione programmata sulla TV
@@ -13,8 +14,8 @@ Una volta che una TV è abbinata a un calendario, FreePlay la gestisce per te. S
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Abbina la TV a un calendario](./pairing-a-screen)
-- [Metti qualcosa nel calendario](./scheduling-the-calendar), oppure imposta un ciclo predefinito per il gruppo dello schermo
+- [Abbina la TV a un calendario](./pairing-a-screen.md)
+- [Metti qualcosa nel calendario](./scheduling-the-calendar.md), oppure imposta un ciclo predefinito per il gruppo dello schermo
 
 </div>
 
@@ -40,7 +41,7 @@ Il pannello ha anche tre pulsanti:
 
 - **Fissa questa playlist** - Mantiene in loop il contenuto attuale ignorando il calendario. Seleziona **Rimuovi fissaggio playlist** per tornare al programma
 - **Sfoglia contenuti** - Esce dal lettore programmato per sfogliare i tuoi fornitori collegati
-- **Impostazioni** - Apre le impostazioni di FreePlay, dove puoi [rimuovere l'abbinamento o abbinare a un altro calendario](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Impostazioni** - Apre le impostazioni di FreePlay, dove puoi [rimuovere l'abbinamento o abbinare a un altro calendario](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Per tornare al programma dopo aver sfogliato, premi **Indietro** sul telecomando dalla schermata **Fornitori di contenuti**, oppure apri **Impostazioni**, seleziona **Abbina a un calendario** e scegli **Torna al programma**. Una TV abbinata torna anche al lettore programmato ogni volta che FreePlay torna in primo piano, e si apre sempre sul lettore programmato.
@@ -77,6 +78,6 @@ Puoi anche riprodurre il calendario di uno schermo in un browser web. In FreePla
 
 ## Articoli correlati
 
-- **[Programmare il calendario](./scheduling-the-calendar)** - Decidi cosa viene riprodotto e cosa succede quando finisce in anticipo
-- **[Gestire schermi e gruppi](./managing-screens)** - Controlla i download di ogni schermo da FreePlay Admin
-- **[Riprodurre i contenuti](../content-providers/playing-content)** - Controlli del lettore quando riproduci i contenuti tu stesso
+- **[Programmare il calendario](./scheduling-the-calendar.md)** - Decidi cosa viene riprodotto e cosa succede quando finisce in anticipo
+- **[Gestire schermi e gruppi](./managing-screens.md)** - Controlla i download di ogni schermo da FreePlay Admin
+- **[Riprodurre i contenuti](../content-providers/playing-content.md)** - Controlli del lettore quando riproduci i contenuti tu stesso

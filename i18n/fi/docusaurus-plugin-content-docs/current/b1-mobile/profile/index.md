@@ -1,5 +1,7 @@
 ---
-title: "Profiili"
+title: "Profiili ja määrätyt kortit B1 Mobilessa"
+sidebar_label: "Profiili"
+description: "Hallitse nimeäsi, yhteystietojasi, kotitalouttasi ja yksityisyysasetuksiasi B1 Mobile -profiilissa sekä käsittele sinulle määrättyjä työkortteja ja tehtäviä."
 ---
 
 # Profiili
@@ -20,7 +22,7 @@ Profiilinäkymä on jaettu useisiin välilehtiin:
 
 ### Kotitalous
 
-**Kotitalous**-välilehdellä näkyvät perheenjäsenesi ja heidän roolinsa kotitaloudessasi. Näitä tietoja käytetään esimerkiksi [sisäänkirjautumisessa](../checkin/), jossa voit kirjata koko perheesi sisään kerralla.
+**Kotitalous**-välilehdellä näkyvät perheenjäsenesi ja heidän roolinsa kotitaloudessasi. Näitä tietoja käytetään esimerkiksi [sisäänkirjautumisessa](../checkin/index.md), jossa voit kirjata koko perheesi sisään kerralla.
 
 ### Näkyvyys
 
@@ -55,6 +57,6 @@ Napauta tavallista tehtävää nähdäksesi, keneltä se on, ketä se koskee ja 
 
 ## Seuraavat vaiheet
 
-- [Profiilin muokkaaminen](./editing-profile) -- Päivitä nimesi, yhteystietosi ja kuvasi
-- [Kotitalous](./household) -- Tarkastele ja hallitse perheenjäseniäsi
-- [Yksityisyysasetukset](./privacy-settings) -- Hallitse, mitä muut näkevät sinusta
+- [Profiilin muokkaaminen](./editing-profile.md) -- Päivitä nimesi, yhteystietosi ja kuvasi
+- [Kotitalous](./household.md) -- Tarkastele ja hallitse perheenjäseniäsi
+- [Yksityisyysasetukset](./privacy-settings.md) -- Hallitse, mitä muut näkevät sinusta

@@ -1,5 +1,6 @@
 ---
 title: "Alur Kerja"
+description: "Bangun papan gaya Kanban di B1 Admin untuk membimbing orang melalui langkah tindak lanjut dengan email, SMS, dan pemicu otomatis yang menambahkan orang secara otomatis."
 ---
 
 # Alur Kerja

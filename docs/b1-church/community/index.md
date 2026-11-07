@@ -1,5 +1,7 @@
 ---
-title: "Community"
+title: "Community Member Directory in B1.church"
+sidebar_label: "Community"
+description: "Search your church's member directory in B1.church by name or group, view profiles, and find where the retired Timeline updates now live."
 ---
 
 # Community
@@ -26,5 +28,5 @@ The members and information visible to you in the directory depend on your churc
 :::
 
 :::tip
-Use the community features alongside [Groups](../groups/) to stay engaged with your church throughout the week.
+Use the community features alongside [Groups](../groups/index.md) to stay engaged with your church throughout the week.
 :::

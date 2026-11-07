@@ -1,5 +1,6 @@
 ---
 title: "Mga Notification Preference"
+description: "Itakda ang notification channel, dalas ng email, quiet hours, at text opt-out para sa bawat uri ng notification sa B1 Admin at B1 app, sa iisang screen."
 ---
 
 # Mga Notification Preference
@@ -60,6 +61,6 @@ Ang mga notification na sensitibo sa oras -- gaya ng security alert o child chec
 
 ## Kaugnay
 
-- [Volunteer Sign-Up](../serving/volunteer-signup) -- Mga serving reminder at pagtugon sa mga kahilingan sa iskedyul
-- [Registering for Events](../events/registering) -- Mag-sign up sa mga event na nagpapadala ng reminder
-- [Installing the App](installing-pwa) -- Idagdag ang B1 sa iyong device upang makatanggap ng push notification
+- [Volunteer Sign-Up](../serving/volunteer-signup.md) -- Mga serving reminder at pagtugon sa mga kahilingan sa iskedyul
+- [Registering for Events](../events/registering.md) -- Mag-sign up sa mga event na nagpapadala ng reminder
+- [Installing the App](./installing-pwa.md) -- Idagdag ang B1 sa iyong device upang makatanggap ng push notification

@@ -1,5 +1,6 @@
 ---
 title: "Demográfiai adatok"
+description: "Gyülekezete kor-, nemi, tagsági, családi állapot és campus-összetételének megtekintése a B1 Admin interaktív diagramjain, bármely csoportba lefúrva."
 ---
 
 # Demográfiai adatok

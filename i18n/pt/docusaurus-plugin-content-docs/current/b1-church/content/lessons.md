@@ -1,5 +1,7 @@
 ---
-title: "Lições (Descontinuado)"
+title: "Aba Lessons Descontinuada no B1.church"
+sidebar_label: "Lições (Descontinuado)"
+description: "A aba Lessons do B1.church foi descontinuada. Encontre o currículo de lições no Lessons.church e reproduza-o em TVs de sala de aula com o FreePlay."
 ---
 
 # Lições (Descontinuado)
@@ -9,7 +11,7 @@ A guia incorporada de **Lições** no B1.church foi descontinuada. A reproduçã
 
 Para navegar, agendar ou editar currículo diretamente, acesse [Lessons.church](https://lessons.church) no seu navegador. Para reproduzir lições em uma TV de sala de aula, instale [FreePlay](/docs/freeplay/getting-started/) no seu dispositivo de TV.
 
-Os pais de grupos associados a um tipo de plano de lição no B1Admin veem **a lição desta semana** na página [detalhes do grupo](/docs/b1-church/groups/group-details.md) -- não nesta guia descontinuada.
+Os pais de grupos associados a um tipo de plano de lição no B1Admin veem **a lição desta semana** na página [detalhes do grupo](../groups/group-details.md) -- não nesta guia descontinuada.
 :::
 
 <div class="article-intro">

@@ -1,5 +1,6 @@
 ---
 title: "Guide: Administrer søndag frivillige"
+description: "Opsæt frivilligteams, ugentlige gudstjenesteplaner og søndagsopgaver i B1 Admin, så frivillige kan se og svare på opgaver på B1.church og i appen."
 ---
 
 # Administrer søndag frivillige
@@ -75,7 +76,7 @@ Tjeneste rækkefølger er planspecifikke. Ændringer her påvirker ikke andre pl
 
 Automatiser ugentlige ansvar, så intet falder gennem sprækker.
 
-Følg vejledningerne [Opgaver](../serving/tasks.md) og [Automatiseringer](../serving/automations.md) for at:
+Følg vejledningerne [Opgaver](../serving/tasks.md) og [Automatiseringer](../serving/workflows.md) for at:
 
 1. Opret automatiseringer for ugentlige tilbagevendende ansvar (f.eks. "Forbered kommunionelementer", "Print bulletiner", "Opsætning af lydudstyr")
 2. Tildel hver automatisering til den ansvarlige person eller gruppe
@@ -94,7 +95,7 @@ Lad frivillige selv tilmelde sig positioner i stedet for at vente på administra
 3. For hver position, markér **Tillad selvtilmelding** afkrydsningsboks for at gøre det tilgængeligt for selvbetjening.
 4. Tilføj en **Beskrivelse** til hver position, så frivillige ved hvad rollen indebærer.
 
-Når selvtilmeldingspositioner er oprettet, vises de automatisk på frivilligs tilmeldingssider på [B1.church](../../b1-church/serving/volunteer-signup) og [B1 Mobile app](../../b1-mobile/serving/volunteer-signup). Medlemmer kan gennemse åbne positioner, se hvor mange pladser der er tilbage, og tilmelde sig med et klik.
+Når selvtilmeldingspositioner er oprettet, vises de automatisk på frivilligs tilmeldingssider på [B1.church](../../b1-church/serving/volunteer-signup.md) og [B1 Mobile app](../../b1-mobile/serving/volunteer-signup.md). Medlemmer kan gennemse åbne positioner, se hvor mange pladser der er tilbage, og tilmelde sig med et klik.
 
 :::tip
 Mix administratoropgaver og selvtilmelding positioner i samme plan. For eksempel, tildel din lovsangsleder direkte, men lad greeters og kaffeservere selvvælge.
@@ -108,7 +109,7 @@ Tildelte frivillige ser automatisk deres planer og kan svare.
 2. De kan acceptere eller afslå opgaver direkte fra begge platforme
 3. De kan indstille blokkeringsdatoer for uger hvor de ikke er disponible
 4. Planer kan printes til øvelser eller sendes backstage
-5. Frivillige kan søge og tilmelde sig åbne positioner via [frivillig tilmeldingsside](../../b1-church/serving/volunteer-signup)
+5. Frivillige kan søge og tilmelde sig åbne positioner via [frivillig tilmeldingsside](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
 Push-notifikationer på mobilappen varsler frivillige når de modtager nye opgaver eller når planer ændres.
@@ -126,8 +127,8 @@ Dit frivillig administrationssystem er opsat. Hver uge, opret en ny plan, tildel
 - [Tjeneste rækkefølge](../serving/service-order.md) — byg strømmen af en service
 - [Sange](../serving/songs.md) — administrer dit lovsangsbibliotek
 - [Opgaver](../serving/tasks.md) — tildel handlingspunkter til personer eller grupper
-- [Automatiseringer](../serving/automations.md) — automatiser tilbagevendende opgaver
+- [Automatiseringer](../serving/workflows.md) — automatiser tilbagevendende opgaver
 - [Visning af planer (Web)](../../b1-church/plans/viewing-plans.md) — hvordan frivillige ser planer online
 - [Visning af planer (mobil)](../../b1-mobile/serving/viewing-plans.md) — hvordan frivillige ser planer på mobil
-- [Frivillig tilmelding (Web)](../../b1-church/serving/volunteer-signup) — hvordan medlemmer selv vælger frivilliges positioner
-- [Frivillig tilmelding (mobil)](../../b1-mobile/serving/volunteer-signup) — frivillig selvtilmelding på mobil
+- [Frivillig tilmelding (Web)](../../b1-church/serving/volunteer-signup.md) — hvordan medlemmer selv vælger frivilliges positioner
+- [Frivillig tilmelding (mobil)](../../b1-mobile/serving/volunteer-signup.md) — frivillig selvtilmelding på mobil

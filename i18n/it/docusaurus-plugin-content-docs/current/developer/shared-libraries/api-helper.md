@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Riferimento per @churchapps/apihelper, usato dalle API Express nel workspace Packages: build locale, test con Yarn portal e pubblicazione con changeset."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Il pacchetto `@churchapps/apihelper` fornisce utilità lato server per tutti gli
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- Installa **Node.js** e **Git** — vedi [Prerequisiti](../setup/prerequisites)
+- Installa **Node.js** e **Git** — vedi [Prerequisiti](../setup/prerequisites.md)
 - Familiarizzati con la configurazione del [workspace Packages](./index.md) e il flusso di rilascio
-- Questo pacchetto dipende da [`@churchapps/helpers`](./helpers) (come dipendenza peer) e lo re-esporta
+- Questo pacchetto dipende da [`@churchapps/helpers`](./helpers.md) (come dipendenza peer) e lo re-esporta
 
 </div>
 

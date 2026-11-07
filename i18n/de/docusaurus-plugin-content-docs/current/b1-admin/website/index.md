@@ -1,5 +1,6 @@
 ---
 title: "Website"
+description: "Überblick über den Website-Baukasten in B1 Admin: Seiten, Blog, Blöcke, Design, Dateien und Kalender, mit Links zu Anleitungen."
 ---
 
 # Website
@@ -22,7 +23,7 @@ Ihre Navigationslinks werden in einer Baumstruktur angezeigt. Sie können Links 
 
 ### Blog
 
-Veröffentlichen Sie Neuigkeiten, Updates und Andachten als Blogbeiträge unter `/blog` auf Ihrer Website, mit einem RSS-Feed. Siehe den [Blog](blog)-Leitfaden.
+Veröffentlichen Sie Neuigkeiten, Updates und Andachten als Blogbeiträge unter `/blog` auf Ihrer Website, mit einem RSS-Feed. Siehe den [Blog](./blog.md)-Leitfaden.
 
 ### Blöcke
 
@@ -30,24 +31,24 @@ Erstellen Sie wiederverwendbare Inhaltskomponenten, die Sie auf mehreren Seiten 
 
 ### Erscheinungsbild
 
-Passen Sie das Thema, die Farben, Schriftarten, das Logo und den Abstand Ihrer Website an. Sie können vordefinierte Stil-Themen für einen schnellen Start anwenden oder jedes Detail mit dem Farbpaletten-Editor, Typographie-Einstellungen und benutzerdefinierten CSS feinabstimmen. Siehe den [Erscheinungsbild](appearance)-Leitfaden für vollständige Details.
+Passen Sie das Thema, die Farben, Schriftarten, das Logo und den Abstand Ihrer Website an. Sie können vordefinierte Stil-Themen für einen schnellen Start anwenden oder jedes Detail mit dem Farbpaletten-Editor, Typographie-Einstellungen und benutzerdefinierten CSS feinabstimmen. Siehe den [Erscheinungsbild](./appearance.md)-Leitfaden für vollständige Details.
 
 ### Dateien
 
-Laden Sie alle Ihre Medien-Assets -- Bilder, Dokumente und andere Dateien -- an einem zentralen Ort hoch und verwalten Sie sie, und kopieren Sie Datei-Links zur Verwendung überall auf Ihrer Website. Siehe [Dateien](files) für weitere Informationen.
+Laden Sie alle Ihre Medien-Assets -- Bilder, Dokumente und andere Dateien -- an einem zentralen Ort hoch und verwalten Sie sie, und kopieren Sie Datei-Links zur Verwendung überall auf Ihrer Website. Siehe [Dateien](./files.md) für weitere Informationen.
 
 ### Kalender
 
 Veröffentlichen Sie Veranstaltungskalender auf Ihrer Website, sodass Besucher sehen können, was in Ihrer Kirche passiert. Erstellen Sie kuratierte Kalender, die Veranstaltungen von mehreren Gruppen in einer einzelnen Ansicht ziehen. Kalender haben einen eigenen Menüpunkt **Calendars** im B1 Admin-Menü, getrennt von **Website**.
 
 :::tip
-Beginnen Sie mit [Anfangseinrichtung](initial-setup), wenn Sie Ihre Website zum ersten Mal konfigurieren. Es führt Sie durch Domain-Setup, das Erstellen Ihrer ersten Seite und die Konfiguration des Erscheinungsbildes Ihrer Website.
+Beginnen Sie mit [Anfangseinrichtung](./initial-setup.md), wenn Sie Ihre Website zum ersten Mal konfigurieren. Es führt Sie durch Domain-Setup, das Erstellen Ihrer ersten Seite und die Konfiguration des Erscheinungsbildes Ihrer Website.
 :::
 
 ## Nächste Schritte
 
-- [Anfangseinrichtung](initial-setup) -- Richten Sie Ihre Website zum ersten Mal ein
-- [Seiten verwalten](managing-pages) -- Erfahren Sie, wie Sie Seiten und Navigation bearbeiten
-- [Verwendung des Seiten-Editors](page-editor) -- Erstellen und gestalten Sie Ihren Seiteninhalt mit dem visuellen Editor
-- [Erscheinungsbild](appearance) -- Passen Sie das Erscheinungsbild und das Verhalten Ihrer Website an
-- [Dateien](files) -- Laden Sie Mediendateien hoch und verwalten Sie sie
+- [Anfangseinrichtung](./initial-setup.md) -- Richten Sie Ihre Website zum ersten Mal ein
+- [Seiten verwalten](./managing-pages.md) -- Erfahren Sie, wie Sie Seiten und Navigation bearbeiten
+- [Verwendung des Seiten-Editors](./page-editor.md) -- Erstellen und gestalten Sie Ihren Seiteninhalt mit dem visuellen Editor
+- [Erscheinungsbild](./appearance.md) -- Passen Sie das Erscheinungsbild und das Verhalten Ihrer Website an
+- [Dateien](./files.md) -- Laden Sie Mediendateien hoch und verwalten Sie sie

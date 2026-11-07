@@ -1,5 +1,6 @@
 ---
 title: "Spausdinimo katalogas"
+description: "Sukurkite spausdinamą namų ūkiais sugrupuotą narių katalogą iš B1 Admin su nuotraukomis, kontaktais ir gimtadieniais, pritaikytą Letter formato popieriui."
 ---
 
 # Spausdinimo katalogas

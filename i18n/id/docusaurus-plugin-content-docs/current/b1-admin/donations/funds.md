@@ -1,5 +1,6 @@
 ---
 title: "Mengelola Dana"
+description: "Buat dan atur dana donasi di B1 Admin, tetapkan status pengurangan pajak dan visibilitas donatur, serta tinjau total dana dan riwayat pemberian untuk pelaporan."
 ---
 
 # Mengelola Dana

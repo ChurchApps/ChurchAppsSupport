@@ -1,5 +1,6 @@
 ---
 title: "Claude"
+description: "Conecta B1 Admin a Claude para preguntar sobre asistencia, donaciones y grupos en lenguaje natural, con inicio de sesión o una clave de permisos limitados."
 ---
 
 # Claude
@@ -199,4 +200,4 @@ Es la misma superficie `/membership/people`, `/giving/donations`, `/attendance/v
 
 - [Claves de API](/docs/developer/api/api-keys): referencia completa de ámbitos
 - [Servidor MCP (referencia para desarrolladores)](/docs/developer/api/mcp): detalles del protocolo y esquemas de herramientas
-- [ChatGPT](./chatgpt): la misma idea, para los modelos de OpenAI
+- [ChatGPT](./chatgpt.md): la misma idea, para los modelos de OpenAI

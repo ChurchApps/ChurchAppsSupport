@@ -1,5 +1,6 @@
 ---
 title: "Résumé des dons"
+description: "Lancez le Résumé des dons dans B1 Admin : total des dons, nombre de donateurs uniques et montants par fonds, pour la période de votre choix."
 ---
 
 # Résumé des dons

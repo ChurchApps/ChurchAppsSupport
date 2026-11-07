@@ -1,5 +1,7 @@
 ---
-title: "Registrácia na podujatia"
+title: "Registrácia na udalosť v B1.church"
+sidebar_label: "Registrácia na podujatia"
+description: "Registrujte sa na udalosť v B1.church: zadajte údaje, pridajte rodinu, vyberte možnosti, uplatnite zľavový kód a zaplaťte alebo sa zaraďte na čakaciu listinu."
 ---
 
 # Registrácia na podujatia
@@ -79,14 +81,14 @@ Zobrazí sa potvrdzovacia správa s údajmi o podujatí a zoznamom všetkých za
 
 ## Pridanie na čakaciu listinu
 
-Ak je podujatie plné a váš zbor zapol čakaciu listinu, prvý krok zobrazí správu: *„Podujatie je plné. Môžete sa pripojiť na čakaciu listinu a my vás upozorníme, ak sa uvoľní miesto."* Prihláste sa ako obvykle. Keď ste na čakacej listine, platba sa preskočí. Keď sa uvoľní miesto, dostanete e-mail; ak je potrebné zaplatiť, obsahuje odkaz na dokončenie platby. Svoj stav a platbu môžete skontrolovať aj v sekcii [Moje registrácie](./my-registrations).
+Ak je podujatie plné a váš zbor zapol čakaciu listinu, prvý krok zobrazí správu: *„Podujatie je plné. Môžete sa pripojiť na čakaciu listinu a my vás upozorníme, ak sa uvoľní miesto."* Prihláste sa ako obvykle. Keď ste na čakacej listine, platba sa preskočí. Keď sa uvoľní miesto, dostanete e-mail; ak je potrebné zaplatiť, obsahuje odkaz na dokončenie platby. Svoj stav a platbu môžete skontrolovať aj v sekcii [Moje registrácie](./my-registrations.md).
 
 ## Zmena alebo zrušenie registrácie
 
-Ak ste prihlásení, môžete svoju registráciu upraviť alebo zrušiť sami na stránke **Registrácie** v členskej zóne. Pozrite si [Moje registrácie](./my-registrations). Hostia by mali kontaktovať kancelársiu zboru a zamestnanci môžu zmenu vykonať na stránke registrácií v B1 Admin.
+Ak ste prihlásení, môžete svoju registráciu upraviť alebo zrušiť sami na stránke **Registrácie** v členskej zóne. Pozrite si [Moje registrácie](./my-registrations.md). Hostia by mali kontaktovať kancelársiu zboru a zamestnanci môžu zmenu vykonať na stránke registrácií v B1 Admin.
 
 ## Súvisiace články
 
 - [Prehľad podujatí](./index.md) -- Prehliadajte nadchádzajúce podujatia s registráciou
-- [Moje registrácie](./my-registrations) -- Zobrazte, upravte, uhraďte nedoplatky a zrušte svoje registrácie
-- [Darovanie](../giving/making-donations) -- Darujte spolu s účasťou na podujatí
+- [Moje registrácie](./my-registrations.md) -- Zobrazte, upravte, uhraďte nedoplatky a zrušte svoje registrácie
+- [Darovanie](../giving/making-donations.md) -- Darujte spolu s účasťou na podujatí

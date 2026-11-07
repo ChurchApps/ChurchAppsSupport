@@ -1,5 +1,6 @@
 ---
 title: "Content Commons"
+description: "Hur användarinskickade sånger, lektioner och mallar rör sig genom den delade modereringskön i B1 Admins Serveradministration, från inlämning till publicering."
 ---
 
 # Content Commons — Delat innehållsbibliotek och moderering

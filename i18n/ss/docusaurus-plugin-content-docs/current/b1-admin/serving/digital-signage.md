@@ -1,5 +1,6 @@
 ---
 title: "Isibonakaliso Sedijithali"
+description: "Thumela ticathulo tesifundvo kutilevishini yasendzaweni yekungena noma ye-hallway ku-B1 Admin ngelinki lelibonisa lihlelo lamanje, noma sebentisa FreePlay TVs."
 ---
 
 # Isibonakaliso Sedijithali
@@ -14,7 +15,7 @@ Thumela lokuqukethwe kwetifundvo lakho ku-TV yasetulo noma yasendleleni usebenzi
 <h4>Ngaphambi Kokuqala</h4>
 
 - Lungisa [luhlobo lwemacebo](./plans.md) ne-[Lessons.church](../../b1-church/content/lessons.md) noma lokuqukethwe kwetifundvo lolucondzisiwe
-- Nemphilo ye-[SignPresenter](https://www.signpresenter.com) nedivayisi lelungisiwe kutfola lokubonakalako, noma i-TV lesebenta nge-[FreePlay](../../freeplay/)
+- Nemphilo ye-[SignPresenter](https://www.signpresenter.com) nedivayisi lelungisiwe kutfola lokubonakalako, noma i-TV lesebenta nge-[FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Kutfola imiyalo yekusetha ngesinyatselo ku-SignPresenter, bona [umhlahlandlela w
 
 ## Kusebentisa ti-TV ye-FreePlay Esikhundleni
 
-Uma tiskrini takho tisebenta nge-[FreePlay](../../freeplay/), awudzingi i-URL yemtfombo. Idayalogi ye-**Digital Signage Feed** inelinki ye-**admin.freeplay.church/calendar**, lapho ungahlela khona luhlobo lwemacebo kuma-TV akho e-FreePlay:
+Uma tiskrini takho tisebenta nge-[FreePlay](../../freeplay/index.md), awudzingi i-URL yemtfombo. Idayalogi ye-**Digital Signage Feed** inelinki ye-**admin.freeplay.church/calendar**, lapho ungahlela khona luhlobo lwemacebo kuma-TV akho e-FreePlay:
 
 1. Cindzetela linki ye-**admin.freeplay.church/calendar** kudayalogi. I-FreePlay Admin isebentisa lolwati lwekungena lofanako ne-B1 Admin.
 2. Khetsa liqembu letiskrini lama-TV akho bese ucindzetela **Add schedule**.
 3. Ngaphansi kwe-**Play**, khetsa luhlobo lwakho lwemacebo kusuka ku-**Service plans**. Lumakwe ngi-**(current plan)**.
 4. Setsa emalanga netikhatsi, bese ucindzetela **Save**.
 
-Ama-TV adlala loluhlobo lwemacebo lwamanje ngavikhi ngavikhi, ngetikhatsi lotisetako. Lokhu kusebenta netifundvo te-Go Curriculum, kubandzakanya nemacebo lolawulisiwe. I-FreePlay ingena ngeakhawunti ye-Go Curriculum lehlanganiswe nalomsebenti ngaphansi kwe-**Content Providers** (bona [Kuhlela Tifundvo](./scheduling-lessons.md)), noma ngekuxhumana kwe-Go Curriculum kwebandla uma umsebenti ungenayo. Bona [Kuhlela Kalenda](../../freeplay/scheduled-mode/scheduling-the-calendar) ngetinketho letigcwele, kanye ne[Kubhanga Iskrini](../../freeplay/scheduled-mode/pairing-a-screen) kutsi ungengeta i-TV.
+Ama-TV adlala loluhlobo lwemacebo lwamanje ngavikhi ngavikhi, ngetikhatsi lotisetako. Lokhu kusebenta netifundvo te-Go Curriculum, kubandzakanya nemacebo lolawulisiwe. I-FreePlay ingena ngeakhawunti ye-Go Curriculum lehlanganiswe nalomsebenti ngaphansi kwe-**Content Providers** (bona [Kuhlela Tifundvo](./scheduling-lessons.md)), noma ngekuxhumana kwe-Go Curriculum kwebandla uma umsebenti ungenayo. Bona [Kuhlela Kalenda](../../freeplay/scheduled-mode/scheduling-the-calendar.md) ngetinketho letigcwele, kanye ne[Kubhanga Iskrini](../../freeplay/scheduled-mode/pairing-a-screen.md) kutsi ungengeta i-TV.
 
 :::note
 I-URL yemtfombo ayifaki imidiya ye-Go Curriculum, ngoba lokuqukethwe kudzinga lilogini ye-Go Curriculum yebandla lakho. Kuze ubonise lesifundvo se-Go Curriculum ku-TV yasetulo noma yasekilasini, sebentisa i-FreePlay.
@@ -53,4 +54,4 @@ I-URL yemtfombo ayifaki imidiya ye-Go Curriculum, ngoba lokuqukethwe kudzinga li
 
 - Phatsa emacebo lavelisa lesibonakaliso sedijithali likhasi le-[Emacebo](./plans.md)
 - Hlela lokuqukethwe nge-[Lessons.church](./scheduling-lessons.md)
-- Beka ti-TV ye-FreePlay kukhalenda nge-[Scheduled Mode](../../freeplay/scheduled-mode/)
+- Beka ti-TV ye-FreePlay kukhalenda nge-[Scheduled Mode](../../freeplay/scheduled-mode/index.md)

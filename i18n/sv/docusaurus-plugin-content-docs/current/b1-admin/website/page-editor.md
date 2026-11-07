@@ -1,5 +1,6 @@
 ---
 title: "Använda sidredigeraren"
+description: "Ställ in en sidredigerare i B1 Admin genom att lägga till sektioner och element, formatera dem, förhandsgranska på mobil och publicera utkast. Täcker även ångra och versionshistorik."
 ---
 
 # Använda sidredigeraren
@@ -17,8 +18,8 @@ B1:s sidredigerare är en visuell byggare med dra-och-släpp som låter dig utfo
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Slutför [Första inställningen](initial-setup) så att din webbplats är konfigurerad
-- Skapa minst en sida i [Hantera sidor](managing-pages)
+- Slutför [Första inställningen](./initial-setup.md) så att din webbplats är konfigurerad
+- Skapa minst en sida i [Hantera sidor](./managing-pages.md)
 - Du behöver behörigheten **content.edit** för att öppna redigeraren
 
 </div>
@@ -31,7 +32,7 @@ B1:s sidredigerare är en visuell byggare med dra-och-släpp som låter dig utfo
 Redigeraren öppnas i helskärmsläge. Den vänstra panelen visar sidans struktur och tillgängliga innehållselement. Det centrala området visar en livevisning av din sida.
 
 :::info
-Redigeraren visas alltid i ljust läge, oavsett vilket tema du valt i B1 Admin, och använder de rubrik- och brödtexttypsnitt du valt under [Utseende](appearance). Det säkerställer att förhandsvisningen stämmer överens med hur sidan ser ut för webbplatsens besökare.
+Redigeraren visas alltid i ljust läge, oavsett vilket tema du valt i B1 Admin, och använder de rubrik- och brödtexttypsnitt du valt under [Utseende](./appearance.md). Det säkerställer att förhandsvisningen stämmer överens med hur sidan ser ut för webbplatsens besökare.
 :::
 
 ## Sidstruktur: sektioner och element
@@ -61,7 +62,7 @@ Har du redan byggt en sektion men vill ha en annan struktur? Använd layoutväxl
    - **Bild** -- Ladda upp eller länka till ett foto
    - **Knapp** -- En klickbar uppmaning till handling
    - **Kort** -- En bild med en titel och en beskrivning
-   - **Formulär** -- Bädda in ett [formulär](../forms/creating-forms) direkt på sidan. Om formuläret har en [rubrikbild](../forms/creating-forms.md#adding-a-header-photo) visas den ovanför frågorna
+   - **Formulär** -- Bädda in ett [formulär](../forms/creating-forms.md) direkt på sidan. Om formuläret har en [rubrikbild](../forms/creating-forms.md#adding-a-header-photo) visas den ovanför frågorna
    - **Kalender** -- Visa en händelsekalender
    - **FAQ** -- Dragspelsliknande block med frågor och svar
    - **Video** -- Bädda in en video via en URL
@@ -79,7 +80,7 @@ Har du redan byggt en sektion men vill ha en annan struktur? Använd layoutväxl
    - **Karta** -- En inbäddad karta centrerad på kyrkans adress
    - **Tabell** -- Ett enkelt rutnät med rader och kolumner för tabellformat innehåll
    - **Text med foto** -- Text och en bild sida vid sida
-   - **Logotyp** -- Kyrkans logotyp, hämtad från [Utseende](appearance)
+   - **Logotyp** -- Kyrkans logotyp, hämtad från [Utseende](./appearance.md)
    - **Livesändning** -- Din livesändningsspelare, inbäddad direkt på sidan
    - **Podcast** -- En lista med avsnitt hämtade från en extern podcast-RSS-flödes-URL som du anger, med inställningar för hur många avsnitt som ska visas och om datum och beskrivningar ska visas. Varje avsnitt på den publicerade webbplatsen har en ljudspelare och en länk **Ladda ner** som sparar avsnittets ljudfil under avsnittets titel. Detta är till för att lyfta fram valfritt podcastflöde på din webbplats. Om du vill publicera dina egna predikningar som en podcast, se i stället [Hantera predikningar](../sermons/managing-sermons.md#your-podcast-feed)
    - **Gåva** -- En gåvoknapp eller ett inbäddat gåvoformulär
@@ -100,7 +101,7 @@ Om du bara klistrar in en webbadress (till exempel en bildlänk) i JavaScript-ru
 
 **Kalender**-elementet visar händelser från en av dina kalendrar:
 
-1. Under **Välj** väljer du **Gruppkalender** (händelserna för en grupp; listan visar de grupper du är medlem i) eller **Kuraterad kalender** (en kalender du skapat under **Kalendrar**; se [Kuraterad kalender](../calendars/curated-calendar)).
+1. Under **Välj** väljer du **Gruppkalender** (händelserna för en grupp; listan visar de grupper du är medlem i) eller **Kuraterad kalender** (en kalender du skapat under **Kalendrar**; se [Kuraterad kalender](../calendars/curated-calendar.md)).
 2. Under **Välj kalender** väljer du gruppen eller kalendern.
 3. Under **Visning** väljer du hur den ska visas:
    - **Månadskalender** -- Ett månadsrutnät som besökarna kan bläddra i.
@@ -133,7 +134,7 @@ Klicka på ett element för att öppna dess stilpanel. Vanliga alternativ är te
 För avancerad formatering har varje sektion och element ett fält **Anpassad CSS** där du kan skriva egna CSS-regler. Dessa gäller endast för det elementet, så de påverkar inte resten av sidan oavsiktligt.
 
 :::tip
-Om du behöver tillämpa stilar på hela din webbplats, till exempel ett eget typsnitt eller en global färg, använd inställningarna under [Utseende](appearance) i stället för anpassad CSS på enskilda sidor.
+Om du behöver tillämpa stilar på hela din webbplats, till exempel ett eget typsnitt eller en global färg, använd inställningarna under [Utseende](./appearance.md) i stället för anpassad CSS på enskilda sidor.
 :::
 
 ## Förhandsgranska din sida
@@ -188,7 +189,7 @@ Använd arbetsflödet för utkast och publicering när du vill förbereda en sid
 
 ## Relaterade artiklar
 
-- [Hantera sidor](managing-pages) -- Skapa sidor, ange webbadresser och hantera webbplatsens navigering
-- [Utseende](appearance) -- Ställ in webbplatsövergripande färger, typsnitt och grafisk profil
-- [Filer](files) -- Ladda upp bilder och dokument att använda i redigeraren
-- [Skapa formulär](../forms/creating-forms) -- Bygg formulär som du kan bädda in på sidor
+- [Hantera sidor](./managing-pages.md) -- Skapa sidor, ange webbadresser och hantera webbplatsens navigering
+- [Utseende](./appearance.md) -- Ställ in webbplatsövergripande färger, typsnitt och grafisk profil
+- [Filer](./files.md) -- Ladda upp bilder och dokument att använda i redigeraren
+- [Skapa formulär](../forms/creating-forms.md) -- Bygg formulär som du kan bädda in på sidor

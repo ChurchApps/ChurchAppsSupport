@@ -1,5 +1,6 @@
 ---
 title: "Todennus ja käyttöoikeudet"
+description: "Viiteopas ChurchApps-API:n JWT-kirjautumiseen, kaksivaiheiseen tunnistautumiseen, OAuth 2.0 -virtauksiin ja käyttöoikeusmalliin integraatioita rakentaville kehittäjille."
 ---
 
 # Todennus ja käyttöoikeudet
@@ -244,7 +245,7 @@ Laitteille ilman selainta (TV-sovellukset, infopisteet):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Hae asiakas asiakastunnuksella (salaisuus piilotettu) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Luo tai päivitä asiakas |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Poista asiakas |
-| POST | `/membership/oauth/register` | Julkinen | — | Dynaaminen asiakasrekisteröinti (RFC 7591) julkisille asiakkaille, kuten MCP-liittimille. Katso [Yhdistetyt sovellukset](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Julkinen | — | Dynaaminen asiakasrekisteröinti (RFC 7591) julkisille asiakkaille, kuten MCP-liittimille. Katso [Yhdistetyt sovellukset](../connected-apps.md#dynamic-client-registration) |
 
 ### Laitehyväksynnän päätepisteet
 
@@ -265,5 +266,5 @@ Tämän dokumentaation päätepistetaulukoissa nämä merkitään Todennus-sarak
 
 ## Aiheeseen liittyvät sivut
 
-- [Moduulirakenne](../module-structure): Kuinka kontrollerit, repositoriot ja mallit on järjestetty
-- [Paikallinen asennus](../local-setup): API:n ajaminen paikallisesti kehitystä varten
+- [Moduulirakenne](../module-structure.md): Kuinka kontrollerit, repositoriot ja mallit on järjestetty
+- [Paikallinen asennus](../local-setup.md): API:n ajaminen paikallisesti kehitystä varten

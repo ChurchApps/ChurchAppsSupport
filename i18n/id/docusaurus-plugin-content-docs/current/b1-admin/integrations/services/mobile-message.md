@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Hubungkan acara B1 Admin ke Mobile Message, API SMS asal Australia, menggunakan webhook Zapier atau Make untuk mengirim SMS selamat datang, donasi, dan pengingat."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Endpoint `/v1/messages` milik Mobile Message menerima hingga 10.000 pesan per pa
 
 ### Alternatif Make
 
-Jika Anda lebih suka Make, tambahkan modul **HTTP — Make a request** setelah trigger B1 Watch Events, lalu konfigurasikan dengan cara yang sama (POST, Basic Auth, body JSON). Lihat [ikhtisar Make](../make) untuk sisi B1.
+Jika Anda lebih suka Make, tambahkan modul **HTTP — Make a request** setelah trigger B1 Watch Events, lalu konfigurasikan dengan cara yang sama (POST, Basic Auth, body JSON). Lihat [ikhtisar Make](../make.md) untuk sisi B1.
 
 ## Batasan & Catatan
 
@@ -102,6 +103,6 @@ Jika Anda lebih suka Make, tambahkan modul **HTTP — Make a request** setelah t
 
 ## Lihat Juga
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): penyedia SMS alternatif dengan aplikasi Zapier native (tidak memerlukan langkah Webhooks by Zapier)
-- [Zapier (ikhtisar)](../zapier): sisi B1 untuk setiap resep Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): penyedia SMS alternatif dengan aplikasi Zapier native (tidak memerlukan langkah Webhooks by Zapier)
+- [Zapier (ikhtisar)](../zapier.md): sisi B1 untuk setiap resep Zapier
 - [Dokumentasi API Mobile Message](https://mobilemessage.com.au/api-documentation)

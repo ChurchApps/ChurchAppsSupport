@@ -1,5 +1,6 @@
 ---
 title: "Endpoint-uri Doing"
+description: "Referință de endpoint-uri pentru API-ul Doing din spatele planurilor de slujire, al alocărilor de voluntariat, sarcinilor și automatizărilor din B1 Admin, cu căi, autentificare și permisiuni."
 ---
 
 # Endpoint-uri Doing
@@ -278,6 +279,6 @@ Redirecționează cererile către furnizorii externi de conținut (de exemplu, P
 
 ## Pagini conexe
 
-- [Endpoint-uri Membership](./membership) — Persoane, grupuri, roluri și permisiuni
-- [Endpoint-uri Attendance](./attendance) — Urmărirea serviciilor și a vizitelor
-- [Structura modulului](../module-structure) — Modele de organizare a codului
+- [Endpoint-uri Membership](./membership.md) — Persoane, grupuri, roluri și permisiuni
+- [Endpoint-uri Attendance](./attendance.md) — Urmărirea serviciilor și a vizitelor
+- [Structura modulului](../module-structure.md) — Modele de organizare a codului

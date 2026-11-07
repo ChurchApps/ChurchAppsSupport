@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "12 以上のプロバイダーから、無料で年齢別に構成されたレッスンを閲覧、スケジュール、提示できます。教室、会場、FreePlay や B1 との連携機能を備えています。"
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church は、コンテンツを届けるために他の ChurchApps ツ�
 
 ## ドキュメントのセクション
 
-- [はじめに](./getting-started/) -- アカウントを作成し、基本を学びます
-- [コンテンツの閲覧](./browsing/) -- プログラム、学習シリーズ、レッスンを探します
-- [クラス](./classrooms/) -- クラスを設定し、レッスンを予定します
-- [カスタマイズ](./customization/) -- 教会に合わせてレッスンを調整します
-- [発表](./presenting/) -- プレゼンターモードを使って授業でレッスンを提示します
-- [管理](./admin/) -- 管理者としてプログラム、学習シリーズ、レッスンを管理します
+- [はじめに](./getting-started/index.md) -- アカウントを作成し、基本を学びます
+- [コンテンツの閲覧](./browsing/index.md) -- プログラム、学習シリーズ、レッスンを探します
+- [クラス](./classrooms/index.md) -- クラスを設定し、レッスンを予定します
+- [カスタマイズ](./customization/index.md) -- 教会に合わせてレッスンを調整します
+- [発表](./presenting/index.md) -- プレゼンターモードを使って授業でレッスンを提示します
+- [管理](./admin/index.md) -- 管理者としてプログラム、学習シリーズ、レッスンを管理します
 - [信仰告白](./statement-of-faith.md) -- 中核的な信仰とカリキュラムのガイドライン
 
 サポートが必要な場合は、[support@churchapps.org](mailto:support@churchapps.org) までメールでお問い合わせください。

@@ -1,5 +1,6 @@
 ---
 title: "Pridávanie osôb"
+description: "Pridajte osobu do databázy zboru v B1 Admin, vyplňte jej údaje a prepojte členov rodiny do domácností pre check-in a výkazy."
 ---
 
 # Pridávanie osôb

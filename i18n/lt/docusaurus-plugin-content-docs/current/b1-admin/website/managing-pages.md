@@ -1,5 +1,6 @@
 ---
 title: "Puslapių tvarkymas"
+description: "Kurkite, redaguokite ir tvarkykite puslapius bei navigaciją B1 Admin puslapių rodinyje: puslapio nustatymus, nukreipimus ir šablonus."
 ---
 
 # Puslapių tvarkymas
@@ -13,13 +14,13 @@ Svetainės puslapių rodinys yra jūsų pagrindinė vieta, kur kuriate, redaguoj
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Atlikite [pradinę sąranką](initial-setup), kad sukonfigūruotumėte savo domeną ir pagrindinius svetainės nustatymus
-- Turėkite paruoštą turinį ir nuotraukas. Pirmiausia įkelkite medijos failus naudodami [failų](files) tvarkyklę.
+- Atlikite [pradinę sąranką](./initial-setup.md), kad sukonfigūruotumėte savo domeną ir pagrindinius svetainės nustatymus
+- Turėkite paruoštą turinį ir nuotraukas. Pirmiausia įkelkite medijos failus naudodami [failų](./files.md) tvarkyklę.
 
 </div>
 
 :::info
-Jei jūsų bažnyčia turi daugiau nei vieną svetainę (pavyzdžiui, atskiras svetaines kiekvienai filialui), naudokite svetainių perjungiklį, esantį viršuje, Svetainės puslapių rodinyje, kad greitai pereitumėte tarp jų. Kiekviena svetainė turi savo puslapius, navigaciją ir [išvaizdos](appearance) nustatymus.
+Jei jūsų bažnyčia turi daugiau nei vieną svetainę (pavyzdžiui, atskiras svetaines kiekvienai filialui), naudokite svetainių perjungiklį, esantį viršuje, Svetainės puslapių rodinyje, kad greitai pereitumėte tarp jų. Kiekviena svetainė turi savo puslapius, navigaciją ir [išvaizdos](./appearance.md) nustatymus.
 :::
 
 ## Puslapių tipų supratimas
@@ -35,7 +36,7 @@ Bet kurį automatiškai sugeneruotą puslapį galite paversti tinkintu, jei nori
 
 1. Spustelėkite mygtuką **Pridėti puslapį**, esantį viršutiniame dešiniajame Svetainės puslapių rodinio kampe.
 2. Pasirinkite puslapio tipą (tuščią arba šabloną) ir suteikite jam pavadinimą.
-3. Spustelėkite **Redaguoti turinį** šalia bet kurio puslapio, kad atidarytumėte [puslapio redaktorių](page-editor), kur galite pridėti skyrius, tekstą, nuotraukas ir kitus elementus.
+3. Spustelėkite **Redaguoti turinį** šalia bet kurio puslapio, kad atidarytumėte [puslapio redaktorių](./page-editor.md), kur galite pridėti skyrius, tekstą, nuotraukas ir kitus elementus.
 4. Spustelėkite **Puslapio nustatymai** šalia puslapio, kad atnaujintumėte puslapio pavadinimą, URL kelią ir kitus metaduomenis.
 5. Spustelėkite puslapio kelią stulpelyje **Kelias**, kad atidarytumėte tiesioginį puslapį naujame skirtuke ir pamatytumėte, kaip jis atrodys lankytojams.
 
@@ -112,10 +113,10 @@ Jei kuriate savo svetainę nuo nulio, galite ją pradėti naudodami **Svetainės
 3. Kai rasite tinkamą, spustelėkite **Taikyti šabloną**.
 4. Puslapiai, kurių dar nėra, bus sukurti ir pridėti prie jūsų navigacijos. Esami puslapiai paliekami nepakeisti.
 
-Pritaikę šabloną, atidarykite kiekvieną puslapį [puslapio redaktoriuje](page-editor) ir pakeiskite vietos rezervavimo tekstą bei nuotraukas tikru savo bažnyčios turiniu.
+Pritaikę šabloną, atidarykite kiekvieną puslapį [puslapio redaktoriuje](./page-editor.md) ir pakeiskite vietos rezervavimo tekstą bei nuotraukas tikru savo bažnyčios turiniu.
 
 :::info
-Svetainės šablonai sukuria puslapių struktūrą ir navigaciją. Jie nepakeičia jūsų svetainės spalvų schemos ar šriftų -- jais valdo [Išvaizda](appearance).
+Svetainės šablonai sukuria puslapių struktūrą ir navigaciją. Jie nepakeičia jūsų svetainės spalvų schemos ar šriftų -- jais valdo [Išvaizda](./appearance.md).
 :::
 
 ## Nuotraukų peržiūra (lightbox)
@@ -124,7 +125,7 @@ Kai lankytojai spusteli nuotrauką jūsų svetainėje, ji atsiveria per visame e
 
 ## Kiti žingsniai
 
-- [Pradinė sąranka](initial-setup) -- Pirmojo paleidimo sąrankos instrukcijos
-- [Puslapio redaktoriaus naudojimas](page-editor) -- Sužinokite, kaip kurti ir stilizuoti puslapio turinį
-- [Išvaizda](appearance) -- Pritaikykite savo svetainės vizualinę temą
-- [Failai](files) -- Įkelkite ir tvarkykite medijos išteklius savo puslapiams
+- [Pradinė sąranka](./initial-setup.md) -- Pirmojo paleidimo sąrankos instrukcijos
+- [Puslapio redaktoriaus naudojimas](./page-editor.md) -- Sužinokite, kaip kurti ir stilizuoti puslapio turinį
+- [Išvaizda](./appearance.md) -- Pritaikykite savo svetainės vizualinę temą
+- [Failai](./files.md) -- Įkelkite ir tvarkykite medijos išteklius savo puslapiams

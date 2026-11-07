@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea metodelor de plată"
+description: "Adăugați, verificați și eliminați cardurile salvate din fila Gestionează a secțiunii de donații din B1 Mobile, pentru ca donațiile repetate să fie mai rapide fără reintroducerea datelor cardului."
 ---
 
 # Gestionarea metodelor de plată
@@ -13,7 +14,7 @@ Fila **Gestionare** din secțiunea de donații vă permite să vizualizați și 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Instalați B1 Mobile](../getting-started/installing) și [autentificați-vă](../getting-started/logging-in) în contul dumneavoastră
+- [Instalați B1 Mobile](../getting-started/installing.md) și [autentificați-vă](../getting-started/logging-in.md) în contul dumneavoastră
 
 </div>
 
@@ -31,7 +32,7 @@ Pentru a adăuga un card nou:
 4. Introduceți datele cardului. Informațiile sunt trimise în siguranță către **Stripe** pentru procesare.
 5. Odată salvat, noul card va apărea în lista dumneavoastră de metode de plată.
 
-Cardul salvat va fi disponibil ca opțiune de plată data viitoare când [faceți o donație](./making-donations) din fila **Donează**.
+Cardul salvat va fi disponibil ca opțiune de plată data viitoare când [faceți o donație](./making-donations.md) din fila **Donează**.
 
 ## Eliminarea unei metode de plată
 
@@ -44,7 +45,7 @@ Dacă nu mai doriți ca un card să fie salvat, îl puteți elimina din fila **G
 Cardul nu va mai apărea ca opțiune de plată când faceți o donație.
 
 :::info
-Eliminarea unei metode de plată nu afectează donațiile anterioare. [Istoricul donațiilor](./donation-history) dumneavoastră rămâne neschimbat.
+Eliminarea unei metode de plată nu afectează donațiile anterioare. [Istoricul donațiilor](./donation-history.md) dumneavoastră rămâne neschimbat.
 :::
 
 :::tip
@@ -53,5 +54,5 @@ Păstrați cel puțin o metodă de plată salvată pentru donații rapide. Astfe
 
 ## Articole similare
 
-- [Efectuarea unei donații](./making-donations) -- Aflați cum să faceți o donație folosind o metodă de plată salvată
-- [Istoricul donațiilor](./donation-history) -- Vizualizați rezumatul donațiilor și donațiile anterioare
+- [Efectuarea unei donații](./making-donations.md) -- Aflați cum să faceți o donație folosind o metodă de plată salvată
+- [Istoricul donațiilor](./donation-history.md) -- Vizualizați rezumatul donațiilor și donațiile anterioare

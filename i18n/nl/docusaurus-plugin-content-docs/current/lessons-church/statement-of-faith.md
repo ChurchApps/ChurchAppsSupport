@@ -1,5 +1,6 @@
 ---
 title: Geloofsverklaring
+description: "Wat ChurchApps gelooft over God, Jezus, de Heilige Geest, de Bijbel, verlossing en de kerk: de maatstaf voor het beoordelen van Lessons.church-curriculum."
 ---
 
 # Geloofsverklaring

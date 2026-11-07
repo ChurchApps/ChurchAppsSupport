@@ -1,5 +1,6 @@
 ---
 title: "A háztartás áttekintése"
+description: "Háztartás átnézése a B1 Checkinben: csoportok hozzárendelése időpontonként, vendégek vagy önkéntesek jelölése bejelentkezés előtt."
 ---
 
 # A háztartás áttekintése
@@ -13,8 +14,8 @@ Miután kiválasztja a személyt a keresési eredmények közül, az alkalmazás
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Válasszon szolgáltatást](./selecting-service) a szolgáltatások képernyőn
-- [Keressen meg egy tagot](./looking-up-members), és válassza ki a keresési eredmények közül
+- [Válasszon szolgáltatást](./selecting-service.md) a szolgáltatások képernyőn
+- [Keressen meg egy tagot](./looking-up-members.md), és válassza ki a keresési eredmények közül
 
 </div>
 
@@ -35,9 +36,9 @@ Koppintson a tag kártyájára a kibontáshoz. Kibontott állapotban minden **is
 - A **kínált csoportokat** az időpont neve alatt felsorolva (például „Nursery, Preschool, Adult Bible Class”), hogy a választás előtt láthassa, mely foglalkozások érhetők el
 - Egy **gombot**, amely a jelenleg hozzárendelt csoportot mutatja, vagy a „Select Group” feliratot, ha még nincs csoport hozzárendelve
 
-Ha egy istentiszteleti időponthoz tartozik [bejelentkezési ütemezés](../../b1-admin/attendance/setup#setting-a-check-in-schedule), és annak időablaka éppen zárva van, a sor gomb helyett a **Closed** feliratot mutatja. Ha van következő nyitási időpont, az is megjelenik, például **Closed · opens Sun 9:30 AM**. Ha a személy már be van jelentkezve az adott istentiszteleti időpontra, a sor helyette a csoportját pipajellel mutatja (például **Kids Room 1 · Checked in**), így akkor is látja, hol van, ha az időablak már lezárult.
+Ha egy istentiszteleti időponthoz tartozik [bejelentkezési ütemezés](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), és annak időablaka éppen zárva van, a sor gomb helyett a **Closed** feliratot mutatja. Ha van következő nyitási időpont, az is megjelenik, például **Closed · opens Sun 9:30 AM**. Ha a személy már be van jelentkezve az adott istentiszteleti időpontra, a sor helyette a csoportját pipajellel mutatja (például **Kids Room 1 · Checked in**), így akkor is látja, hol van, ha az időablak már lezárult.
 
-Koppintson a csoport gombra, hogy a [csoportválasztó képernyőre](./group-assignment) jusson, ahol kiválaszthatja vagy módosíthatja a személy csoportját az adott istentiszteleti időpontra.
+Koppintson a csoport gombra, hogy a [csoportválasztó képernyőre](./group-assignment.md) jusson, ahol kiválaszthatja vagy módosíthatja a személy csoportját az adott istentiszteleti időpontra.
 
 A kibontott kártya a **Member**, **Guest** és **Volunteer** címkéket is megjeleníti. Koppintson egyre, hogy megadja, hogyan jelentkezik be ez a személy. Alapértelmezés szerint a Member. A típusnak van jelentősége a gyermekszobáknál: az önkéntesek beleszámítanak a szoba önkéntes–gyermek arányába, a vendégek pedig beleszámítanak az egyházában beállított vendégkapacitásba.
 
@@ -51,9 +52,9 @@ Nem kell minden családtagot csoportba osztania. A főistentiszteleten részt ve
 
 A háztartás-áttekintő képernyőn három lehetősége van:
 
-- **Bontsa ki a tagot**, és koppintson egy istentiszteleti időpont gombjára, hogy [csoportot rendeljen hozzá vagy módosítson](./group-assignment).
-- **Koppintson az Add Guest gombra** a tagok listája alatt, hogy [vendéget adjon](./adding-guests) a háztartásához.
-- **Koppintson a Check-in gombra** a képernyő alján, hogy [befejezze a bejelentkezést](./completing-checkin) mindenki számára a háztartásban.
+- **Bontsa ki a tagot**, és koppintson egy istentiszteleti időpont gombjára, hogy [csoportot rendeljen hozzá vagy módosítson](./group-assignment.md).
+- **Koppintson az Add Guest gombra** a tagok listája alatt, hogy [vendéget adjon](./adding-guests.md) a háztartásához.
+- **Koppintson a Check-in gombra** a képernyő alján, hogy [befejezze a bejelentkezést](./completing-checkin.md) mindenki számára a háztartásban.
 
 :::info
 A korábbi, ugyanarra a szolgáltatásra szóló bejelentkezések csoportbeosztásai automatikusan betöltődnek. Ha gyermekei minden héten ugyanabba a csoportba járnak, lehet, hogy semmit sem kell módosítania, csak ellenőrizze és jelentkezzen be.
@@ -61,6 +62,6 @@ A korábbi, ugyanarra a szolgáltatásra szóló bejelentkezések csoportbeoszt�
 
 ## Következő lépések
 
-- [Rendeljen csoportot](./group-assignment) azoknak a családtagoknak, akiket egy adott osztályba vagy programba kell bejelentkeztetni.
-- [Adjon hozzá vendéget](./adding-guests), ha valaki a családjával érkezik.
-- [Fejezze be a bejelentkezést](./completing-checkin), ha mindenki beosztása megfelelőnek tűnik.
+- [Rendeljen csoportot](./group-assignment.md) azoknak a családtagoknak, akiket egy adott osztályba vagy programba kell bejelentkeztetni.
+- [Adjon hozzá vendéget](./adding-guests.md), ha valaki a családjával érkezik.
+- [Fejezze be a bejelentkezést](./completing-checkin.md), ha mindenki beosztása megfelelőnek tűnik.

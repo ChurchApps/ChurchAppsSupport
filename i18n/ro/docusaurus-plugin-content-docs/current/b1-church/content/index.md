@@ -1,5 +1,7 @@
 ---
-title: "Conținut"
+title: "Funcții de conținut în portalul de membri B1.church"
+sidebar_label: "Conținut"
+description: "Vezi ce conținut activează biserica ta în portalul de membri B1.church, apoi răsfoiește predici, transmisiuni live, citire biblică și lecții."
 ---
 
 # Conținut

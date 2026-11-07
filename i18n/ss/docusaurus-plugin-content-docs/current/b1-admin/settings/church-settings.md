@@ -1,5 +1,6 @@
 ---
 title: "Tilungiselelo teLibandla"
+description: "Setela ligama, likheli, subdomain, sikhatsi sendzawo, indlela yetinombolo, umhlinzeki wetemilayezo, nekugcinwa kwemafayela ekhasini lelitekwe lelisheni le-B1 Admin."
 ---
 
 # Tilungiselelo teLibandla

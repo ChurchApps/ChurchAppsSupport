@@ -1,5 +1,6 @@
 ---
 title: "Tilungiselelo"
+description: "Tfola indlela yakho ku-Tilungiselelo te-B1 Admin: ulwati lwesonto, sitayela, emakamu, tinkhundla letitimiselwe, tindzima tebasebenti, nelitalo le-navigation ye-B1.church."
 ---
 
 # Tilungiselelo

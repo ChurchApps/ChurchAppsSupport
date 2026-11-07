@@ -1,5 +1,6 @@
 ---
 title: "Panoramica del portale"
+description: "Tour del portale Lessons.church: aule, lezioni programmate, link ai feed, e accesso a External Providers e agli strumenti Admin."
 ---
 
 # Panoramica del portale

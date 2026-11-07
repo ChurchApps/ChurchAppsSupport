@@ -1,5 +1,7 @@
 ---
-title: "Ver planes"
+title: "Sus planes de servicio en el portal de miembros de B1.church"
+sidebar_label: "Ver planes"
+description: "Revise sus asignaciones de planes de servicio en B1.church, acepte o rechace solicitudes, establezca fechas de no disponibilidad y consulte su historial de servicio pasado."
 ---
 
 # Ver planes

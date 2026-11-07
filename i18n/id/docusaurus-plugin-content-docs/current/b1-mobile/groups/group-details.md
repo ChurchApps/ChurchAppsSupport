@@ -1,5 +1,7 @@
 ---
-title: "Detail Grup"
+title: "Detail Grup di Aplikasi B1 Mobile"
+sidebar_label: "Detail Grup"
+description: "Lihat isi halaman detail grup di B1 Mobile, termasuk info grup, postingan, dan anggota, serta cara membukanya dari layar Grup."
 ---
 
 # Detail Grup
@@ -13,7 +15,7 @@ Saat Anda mengetuk grup dari layar Grup, Anda akan dibawa ke halaman detail grup
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- [Instal B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Instal B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Buka layar [Grup](./index.md)
 
 </div>
@@ -46,5 +48,5 @@ Grup yang paling sering Anda kunjungi muncul sebagai kartu utama di bagian atas 
 
 ## Artikel Terkait
 
-- [Linimasa Grup](./group-timeline) -- Pelajari tentang umpan aktivitas terpadu di semua grup Anda
+- [Linimasa Grup](./group-timeline.md) -- Pelajari tentang umpan aktivitas terpadu di semua grup Anda
 - [Pesan](../community/messaging.md) -- Kirim pesan pribadi kepada anggota grup

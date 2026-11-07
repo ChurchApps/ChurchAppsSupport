@@ -1,5 +1,6 @@
 ---
 title: "Používání editoru stránek"
+description: "Nastavte editor stránek v B1 Admin: přidávejte sekce a prvky, upravujte jejich styl, zobrazte náhled na mobilu a publikujte koncepty. Včetně historie verzí."
 ---
 
 # Používání editoru stránek
@@ -17,8 +18,8 @@ Editor stránek B1 je vizuální nástroj pro tvorbu přetahováním, který vá
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Dokončete [počáteční nastavení](initial-setup), aby byl váš web nakonfigurovaný
-- Vytvořte alespoň jednu stránku v části [Správa stránek](managing-pages)
+- Dokončete [počáteční nastavení](./initial-setup.md), aby byl váš web nakonfigurovaný
+- Vytvořte alespoň jednu stránku v části [Správa stránek](./managing-pages.md)
 - K otevření editoru potřebujete oprávnění **content.edit**
 
 </div>
@@ -31,7 +32,7 @@ Editor stránek B1 je vizuální nástroj pro tvorbu přetahováním, který vá
 Editor se otevře na celou obrazovku. Levý panel zobrazuje strukturu stránky a dostupné obsahové prvky; střední oblast zobrazuje živý náhled stránky.
 
 :::info
-Editor se vždy zobrazuje v světlém režimu bez ohledu na nastavení motivu v B1 Admin a používá nadpisové a textové písmo, které jste zvolili v části [Vzhled](appearance). Tím je zajištěno, že náhled přesně odpovídá tomu, jak bude stránka vypadat pro návštěvníky webu.
+Editor se vždy zobrazuje v světlém režimu bez ohledu na nastavení motivu v B1 Admin a používá nadpisové a textové písmo, které jste zvolili v části [Vzhled](./appearance.md). Tím je zajištěno, že náhled přesně odpovídá tomu, jak bude stránka vypadat pro návštěvníky webu.
 :::
 
 ## Struktura stránky: sekce a prvky
@@ -61,7 +62,7 @@ Sekci už máte hotovou, ale chcete jiné uspořádání? Použijte přepínač 
    - **Image** -- Nahrání nebo odkaz na fotografii
    - **Button** -- Klikatelný odkaz typu výzvy k akci
    - **Card** -- Obrázek s nadpisem a popisem
-   - **Form** -- Vložení [formuláře](../forms/creating-forms) přímo na stránku. Pokud má formulář [hlavní fotografii](../forms/creating-forms.md#adding-a-header-photo), zobrazí se nad otázkami
+   - **Form** -- Vložení [formuláře](../forms/creating-forms.md) přímo na stránku. Pokud má formulář [hlavní fotografii](../forms/creating-forms.md#adding-a-header-photo), zobrazí se nad otázkami
    - **Calendar** -- Zobrazení kalendáře událostí
    - **FAQ** -- Bloky otázek a odpovědí ve stylu akordeonu
    - **Video** -- Vložení videa podle URL
@@ -79,7 +80,7 @@ Sekci už máte hotovou, ale chcete jiné uspořádání? Použijte přepínač 
    - **Map** -- Vložená mapa vycentrovaná na adresu vašeho sboru
    - **Table** -- Jednoduchá mřížka řádků a sloupců pro tabulková data
    - **Text with Photo** -- Text a obrázek vedle sebe
-   - **Logo** -- Logo vašeho sboru načtené z části [Vzhled](appearance)
+   - **Logo** -- Logo vašeho sboru načtené z části [Vzhled](./appearance.md)
    - **Live Stream** -- Přehrávač vašeho živého přenosu vložený přímo na stránku
    - **Podcast** -- Seznam epizod načtený z externí adresy RSS kanálu podcastu, který zadáte, s nastavením počtu zobrazených epizod a toho, zda zobrazovat data a popisy. Každá epizoda na živém webu má audio přehrávač a odkaz **Download**, který uloží zvukový soubor epizody pod názvem epizody. Slouží k zobrazení libovolného podcastového kanálu na vašem webu; pokud chcete vlastní kázání publikovat jako podcast, podívejte se místo toho do části [Správa kázání](../sermons/managing-sermons.md#your-podcast-feed)
    - **Donation** -- Tlačítko pro dary nebo vložený formulář pro dary
@@ -100,7 +101,7 @@ Pokud do pole JavaScript vložíte pouze webovou adresu (například odkaz na ob
 
 Prvek **Calendar** zobrazuje události z jednoho z vašich kalendářů:
 
-1. V části **Select** zvolte **Group Calendar** (události jedné skupiny -- seznam obsahuje skupiny, jejichž jste členem) nebo **Curated Calendar** (kalendář, který jste vytvořili v části **Calendars**; viz [Kurátorský kalendář](../calendars/curated-calendar)).
+1. V části **Select** zvolte **Group Calendar** (události jedné skupiny -- seznam obsahuje skupiny, jejichž jste členem) nebo **Curated Calendar** (kalendář, který jste vytvořili v části **Calendars**; viz [Kurátorský kalendář](../calendars/curated-calendar.md)).
 2. V části **Select Calendar** vyberte skupinu nebo kalendář.
 3. V části **Display** zvolte způsob zobrazení:
    - **Month calendar** -- Měsíční mřížka, kterou návštěvníci mohou přepínat mezi měsíci.
@@ -133,7 +134,7 @@ Kliknutím na libovolný prvek otevřete jeho panel stylů. Mezi běžné možno
 Pro pokročilé úpravy vzhledu má každá sekce a každý prvek pole **Custom CSS**, kam můžete napsat vlastní pravidla CSS. Ta jsou omezena na daný prvek, takže nemohou neúmyslně ovlivnit zbytek stránky.
 
 :::tip
-Pokud potřebujete použít styly na celý web -- například vlastní písmo nebo globální barvu -- použijte nastavení v části [Vzhled](appearance) místo vlastního CSS na jednotlivých stránkách.
+Pokud potřebujete použít styly na celý web -- například vlastní písmo nebo globální barvu -- použijte nastavení v části [Vzhled](./appearance.md) místo vlastního CSS na jednotlivých stránkách.
 :::
 
 ## Náhled stránky
@@ -188,7 +189,7 @@ Pracovní postup konceptu a publikování použijte, když chcete stránku přip
 
 ## Související články
 
-- [Správa stránek](managing-pages) -- Vytváření stránek, nastavení URL a správa navigace webu
-- [Vzhled](appearance) -- Nastavení barev, písem a značky pro celý web
-- [Soubory](files) -- Nahrávání obrázků a dokumentů pro použití v editoru
-- [Vytváření formulářů](../forms/creating-forms) -- Vytvářejte formuláře, které můžete vkládat na stránky
+- [Správa stránek](./managing-pages.md) -- Vytváření stránek, nastavení URL a správa navigace webu
+- [Vzhled](./appearance.md) -- Nastavení barev, písem a značky pro celý web
+- [Soubory](./files.md) -- Nahrávání obrázků a dokumentů pro použití v editoru
+- [Vytváření formulářů](../forms/creating-forms.md) -- Vytvářejte formuláře, které můžete vkládat na stránky

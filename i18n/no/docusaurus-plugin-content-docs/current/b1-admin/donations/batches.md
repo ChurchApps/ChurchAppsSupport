@@ -1,5 +1,6 @@
 ---
 title: "Gavebunter"
+description: "Samle gaver i innsamlingsbunter i B1 Admin, og lukk, skriv ut eller eksporter hver enkelt, slik at summene stemmer med banken."
 ---
 
 # Gavebunter

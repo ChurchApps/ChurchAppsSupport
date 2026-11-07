@@ -1,5 +1,6 @@
 ---
 title: "Gestionarea profilului tău"
+description: "Actualizați contul ChurchApps în B1 Admin: modificați numele, e-mailul și parola, activați autentificarea în doi pași, alegeți tema sau ștergeți contul."
 ---
 
 # Gestionarea profilului tău

@@ -1,5 +1,6 @@
 ---
 title: "Moje prijave"
+description: "V portalu članov B1 Church preverite stanje prijave, plačajte neporavnano, uredite udeležence ali dodatke oziroma prekličite prijavo na dogodek."
 ---
 
 # Moje prijave
@@ -14,7 +15,7 @@ Stran **Prijave** v portalu za člane je vaše osrednje mesto za vse dogodke, na
 <h4>Preden začnete</h4>
 
 - Prijavljeni morate biti [v sistem](../getting-started/logging-in.md) — prijave gostov se tukaj ne prikažejo
-- Potrebujete vsaj eno prijavo na dogodek. Glejte [Prijava na dogodke](./registering).
+- Potrebujete vsaj eno prijavo na dogodek. Glejte [Prijava na dogodke](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Vaše mesto se takoj sprosti. Če ima dogodek čakalni seznam, se naslednja oseb
 
 ## Sorodni članki
 
-- [Prijava na dogodke](./registering) -- Postopek prijave, vključno s plačilom in čakalnimi seznami
+- [Prijava na dogodke](./registering.md) -- Postopek prijave, vključno s plačilom in čakalnimi seznami
 - [Pregled dogodkov](./index.md) -- Brskanje po prihajajočih dogodkih

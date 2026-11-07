@@ -386,13 +386,13 @@
     "message": "B1 Mobil"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobil alkalmazás egyházi tagoknak iOS és Android rendszeren."
+    "message": "Régi tagi alkalmazás iOS-re és Androidra, amelyet mostantól a B1.church webalkalmazás vált fel."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Bejelentkezés"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Önkiszolgáló bejelentkezési kioszk alkalmazás Android táblákhoz."
+    "message": "Önkiszolgáló bejelentkeztető alkalmazás iPad- és Android-táblagépekre."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Speciálisan egyházi munkafolyamatokhoz tervezve – nem általános eszköz, amely ministeriumhoz alkalmazkodott."
   },
   "homepage.title": {
-    "message": "Kezdőoldal"
+    "message": "Súgó a B1.church, a Lessons.church és a FreePlay termékekhez"
   },
   "homepage.description": {
-    "message": "ChurchApps támogató dokumentáció – ingyenes és nyílt forráskódú eszközök egyházirányításhoz."
+    "message": "A ChurchApps ingyenes, nyílt forráskódú egyházi szoftvereinek útmutatói és dokumentációja: a B1.church egyházkezelés, bejelentkeztetés, adakozás és weboldalak, a Lessons.church tananyagok és a FreePlay."
   },
   "homepage.products.heading": {
     "message": "Válassza a termékét"

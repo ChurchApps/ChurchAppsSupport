@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Spuštění aplikace B1 Mobile (React Native/Expo) lokálně, nastavení koncových bodů API a sestavení pro Android nebo iOS. Pozor: B1 Mobile je zastaralá."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile je primární mobilní aplikace ChurchApps pro členy sboru, vytvořen
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nainstalujte **Node.js** a **Expo CLI** -- viz [Předpoklady](../setup/prerequisites)
+- Nainstalujte **Node.js** a **Expo CLI** -- viz [Předpoklady](../setup/prerequisites.md)
 - Nainstalujte **Android Studio** (pro emulátor Androidu) nebo **Xcode** (pro simulátor iOS)
-- Nastavte cílové API (demo nebo lokální) -- viz [Proměnné prostředí](../setup/environment-variables)
+- Nastavte cílové API (demo nebo lokální) -- viz [Proměnné prostředí](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Aktualizace OTA jsou ideální pro změny pouze v JavaScriptu. Pokud upravíte n
 
 ## Související články
 
-- **[Nasazení mobilní aplikace](../deployment/mobile)** -- Kompletní průvodce sestavením, odesláním a nasazením mobilních aplikací
-- **[Proměnné prostředí](../setup/environment-variables)** -- Úplný přehled konfigurace prostředí pro mobilní aplikaci
+- **[Nasazení mobilní aplikace](../deployment/mobile.md)** -- Kompletní průvodce sestavením, odesláním a nasazením mobilních aplikací
+- **[Proměnné prostředí](../setup/environment-variables.md)** -- Úplný přehled konfigurace prostředí pro mobilní aplikaci

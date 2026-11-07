@@ -1,5 +1,6 @@
 ---
 title: "Aprobarea modificărilor de profil"
+description: "Revizuiți și aprobați cererile de modificare a profilului membrilor în B1 Admin și configurați grupul Directory Approval Group care le primește."
 ---
 
 # Aprobarea modificărilor de profil

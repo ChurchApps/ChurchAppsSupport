@@ -1,5 +1,6 @@
 ---
 title: "Arhitectura constructorului de site-uri"
+description: "Harta pentru dezvoltatori a constructorului de site-uri B1: arborele de conținut, catalogul comun de elemente, pipeline-ul de randare și generarea de pagini cu AI în B1 Admin și B1.church."
 ---
 
 # Arhitectura constructorului de site-uri
@@ -82,7 +83,7 @@ Randatoarele se află în `Packages/apphelper/src/website/components/elementType
 
 ### Formularele editorului (B1Admin)
 
-Formularele de setări pe tip din editor se află în `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` trimite către o componentă dedicată (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) sau către un constructor de câmpuri inline pentru fiecare tip. Oglinda acestui catalog destinată AI-ului este instrumentul MCP `describe_page_builder` al API-ului (vezi [Serverul MCP](../api/mcp)).
+Formularele de setări pe tip din editor se află în `B1Admin/src/site/admin/elements/` — `ElementEdit.tsx` trimite către o componentă dedicată (`GalleryEdit`, `TestimonialEdit`, `StatsEdit`, …) sau către un constructor de câmpuri inline pentru fiecare tip. Oglinda acestui catalog destinată AI-ului este instrumentul MCP `describe_page_builder` al API-ului (vezi [Serverul MCP](../api/mcp.md)).
 
 Previzualizarea editorului montează aceeași `Theme` ca site-ul live, care setează variabilele CSS `--headingFont` / `--bodyFont` din stilurile globale ale bisericii. B1App aplică aceste variabile prin `pages.css`, pe care B1Admin nu le poate importa, așa că `ContentEditor.tsx` injectează `EDITOR_PAGE_FONT_CSS` (`src/site/admin/editorCss.ts`) pentru a le aplica textului corpului `.page` și titlurilor `h1`–`h6`. Fără el, previzualizarea afișa titlurile cu fontul din admin.
 
@@ -155,7 +156,7 @@ Toate acestea sunt randate de B1App peste datele ContentApi — API-ul stocheaz�
 |---------|--------------|
 | Meta descrieri | `pages.metaDescription` (≤300 de caractere) ajunge prin `MetaHelper.getMetaData()` în `Metadata` din Next.js (description + Open Graph) pe fiecare rută randată de constructor. Setările paginii din B1Admin includ un buton AI „Generate" (vezi mai jos) |
 | Redirecționări | Rânduri `redirects` per biserică, administrate la `/content/redirects` (`content.edit`, limită de 200 de rânduri, căi normalizate). La o potențială 404, ruta paginii din B1App rezolvă calea față de `GET /content/redirects/public/:churchId` și emite un HTTP 308 prin `permanentRedirect` din Next; căile nepotrivite ajung la `notFound()` |
-| 404 cu brandul bisericii | `not-found.tsx` randează `BrandedNotFound` cu logo-ul, numele și tema bisericii, în loc de o eroare generică. Căile necunoscute `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` și `/volunteer/[planId]` returnează un 404 real, la fel ca subdomeniile necunoscute și slug-urile de pagină malformate (vezi [Rutare site-uri și multi-site](./websites)) |
+| 404 cu brandul bisericii | `not-found.tsx` randează `BrandedNotFound` cu logo-ul, numele și tema bisericii, în loc de o eroare generică. Căile necunoscute `/register/[eventId]`, `/events/[eventId]`, `/stream/[pageSlug]` și `/volunteer/[planId]` returnează un 404 real, la fel ca subdomeniile necunoscute și slug-urile de pagină malformate (vezi [Rutare site-uri și multi-site](./websites.md)) |
 | Date structurate | JSON-LD `BlogPosting` pe postările de blog; `VideoObject` pe paginile fiecărei predici (`/{sdSlug}/sermons/[sermonId]`) și pe paginile care conțin un element `sermons`; `Event` din elementele de calendar/evenimente de pe paginile constructorului și pe fiecare pagină `/{sdSlug}/events/[eventId]` (următoarea apariție, cu fotografia evenimentului ca `image`); `Event` schema.org din elementul `serviceTimes` |
 | Pagini de predici | Fiecare predică publică primește o pagină indexabilă la `/sermons/[sermonId]`, cu metadate complete — predicile nu mai sunt blocate în browser-ul din partea clientului |
 | Analitică | Setarea publică `ga4MeasurementId` (administrată lângă redirecționări, în B1Admin) injectează un gtag GA4 specific bisericii prin `next/script`. Aplicația B1 (`/{sdSlug}/mobile`) trimite și ea vizualizările de pagină către acest ID, alături de tag-ul propriu ChurchApps, când este un ID `G-` valid (ID-urile containerelor GTM rămân doar pe site-urile web). Fiecare `gtag('config')` poartă un `display_mode` de `installed` sau `browser`, pe baza `navigator.standalone` sau a interogării media `(display-mode: standalone)` (`B1App/src/helpers/mobileAnalytics.ts`) |
@@ -203,7 +204,7 @@ Butonul de rescriere din `SectionToolbar` și butonul „Generate Site" din list
 | `POST /website/generateAltText` | Apel de viziune pentru până la 20 de URL-uri de imagini; returnează un text alternativ concis (≤125 de caractere, fără prefixele „photo of") |
 | `POST /website/generateMetaDescription` | O meta descriere SEO (≤155 de caractere) din conținutul textual al paginii — conectată la butonul Generate din setările paginii din B1Admin |
 
-Prompturile acestor endpoint-uri sunt fișiere markdown din `AskApi/config/instructions/`, inclusiv catalogul de elemente din care generează modelul. Două decizii de design mențin catalogul onest: clientul transmite `availableElementTypes` în fiecare cerere (promptul poate folosi doar tipuri din această listă — serverul nu fixează niciodată setul complet), iar instrumentul MCP `describe_page_builder` al API-ului conține același ghid pentru agenții AI care lucrează prin [MCP](../api/mcp). Modelele sunt Anthropic Claude prin OpenRouter — 3.5 Haiku pentru conținutul secțiunilor (latență), 3.5 Sonnet pentru schițe, planuri de site și viziune — cu un fallback OpenAI când nu este configurată o cheie OpenRouter.
+Prompturile acestor endpoint-uri sunt fișiere markdown din `AskApi/config/instructions/`, inclusiv catalogul de elemente din care generează modelul. Două decizii de design mențin catalogul onest: clientul transmite `availableElementTypes` în fiecare cerere (promptul poate folosi doar tipuri din această listă — serverul nu fixează niciodată setul complet), iar instrumentul MCP `describe_page_builder` al API-ului conține același ghid pentru agenții AI care lucrează prin [MCP](../api/mcp.md). Modelele sunt Anthropic Claude prin OpenRouter — 3.5 Haiku pentru conținutul secțiunilor (latență), 3.5 Sonnet pentru schițe, planuri de site și viziune — cu un fallback OpenAI când nu este configurată o cheie OpenRouter.
 
 ## Formulare conversaționale
 
@@ -228,8 +229,8 @@ Controller-ele care fac bump: pagini (salvare, ștergere, duplicare, publicare, 
 
 ## Pagini conexe
 
-- [Rutare site-uri și multi-site](./websites) — cum se rezolvă o cerere către o biserică sau un site și cum se rutează domeniile personalizate
-- [Endpoint-uri de conținut](../api/endpoints/content) — suprafața REST completă pentru pagini, secțiuni, elemente, blocuri, postări, redirecționări și setări
-- [AppHelper](../shared-libraries/app-helper) — pachetul npm care livrează randatoarele, registrul, separatoarele și widget-urile
-- [Serverul MCP](../api/mcp) — inclusiv instrumentul de ghid `describe_page_builder`
+- [Rutare site-uri și multi-site](./websites.md) — cum se rezolvă o cerere către o biserică sau un site și cum se rutează domeniile personalizate
+- [Endpoint-uri de conținut](../api/endpoints/content.md) — suprafața REST completă pentru pagini, secțiuni, elemente, blocuri, postări, redirecționări și setări
+- [AppHelper](../shared-libraries/app-helper.md) — pachetul npm care livrează randatoarele, registrul, separatoarele și widget-urile
+- [Serverul MCP](../api/mcp.md) — inclusiv instrumentul de ghid `describe_page_builder`
 - [Editorul de pagini (utilizator final)](/docs/b1-admin/website/page-editor) — documentația editorului pentru personalul bisericii

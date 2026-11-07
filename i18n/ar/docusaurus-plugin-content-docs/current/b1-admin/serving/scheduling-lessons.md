@@ -1,5 +1,7 @@
 ---
-title: "جدولة الدروس"
+title: "جدولة الدروس من Lessons.church في B1 Admin"
+sidebar_label: "جدولة الدروس"
+description: "اربط Lessons.church بـ B1 Admin، ثم جدوِل الدروس، أو جدوِل سلسلة كاملة دفعة واحدة، أو طبّق خطة السنة على خطط خدمة إحدى الخدمات."
 ---
 
 # جدولة الدروس من Lessons.church

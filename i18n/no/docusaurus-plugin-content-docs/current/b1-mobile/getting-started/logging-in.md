@@ -1,5 +1,7 @@
 ---
-title: "Pålogging"
+title: "Logge inn i B1 Mobile"
+sidebar_label: "Pålogging"
+description: "Logg inn i B1 Mobile-appen med din ChurchApps-konto, registrer en ny konto, eller gjenopprett et glemt passord med en 6-sifret kode."
 ---
 
 # Pålogging
@@ -13,7 +15,7 @@ B1 Mobil bruker samme ChurchApps-konto som du bruker på B1.church og andre Chur
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobil](./installing) på iOS eller Android-enheten
+- [Installer B1 Mobil](./installing.md) på iOS eller Android-enheten
 
 </div>
 
@@ -24,7 +26,7 @@ B1 Mobil bruker samme ChurchApps-konto som du bruker på B1.church og andre Chur
 3. Oppgi **e-postadressen** og **passord**.
 4. Trykk **Logg på**.
 
-Etter pålogging vil du bli tatt til [instrumentbordet](../dashboard/). Hvis du ikke har valgt en kirke ennå, blir du bedt om å søke etter og velge en.
+Etter pålogging vil du bli tatt til [instrumentbordet](../dashboard/index.md). Hvis du ikke har valgt en kirke ennå, blir du bedt om å søke etter og velge en.
 
 ## Opprettelse av ny konto
 

@@ -1,5 +1,6 @@
 ---
 title: "B1.church"
+description: "Tìm hiểu trang B1.church của nhà thờ dành cho thành viên có những gì, từ cổng thành viên và nhóm đến quyên góp, sự kiện, phục vụ và điểm danh."
 ---
 
 # B1.church
@@ -27,15 +28,15 @@ Khi thành viên truy cập trang B1.church của nhà thờ, họ sẽ thấy t
 
 ## Tìm hiểu thêm
 
-- [Bắt đầu](./getting-started/) -- Tạo tài khoản, đăng nhập và tìm hiểu cách điều hướng B1.church.
-- [Nhóm](./groups/) -- Tham gia và tương tác với các nhóm của nhà thờ.
-- [Quyên góp](./giving/) -- Quyên góp và quản lý việc quyên góp của bạn.
-- [Sự kiện](./events/) -- Duyệt và đăng ký các sự kiện sắp tới của nhà thờ.
-- [Phục vụ](./serving/) -- Xem kế hoạch và đăng ký các vị trí tình nguyện.
-- [Kế hoạch](./plans/) -- Xem kế hoạch buổi lễ và các vị trí tình nguyện của bạn.
-- [Điểm danh](./checkin/) -- Điểm danh cho các buổi lễ, sự kiện và đăng ký khách.
-- [Danh bạ cộng đồng](./community/) -- Tìm và kết nối với các thành viên khác.
-- [Nội dung](./content/) -- Bài giảng, Kinh Thánh, câu Kinh Thánh trong ngày và phát trực tiếp. (Việc phát nội dung giáo trình đã chuyển sang [FreePlay](/docs/freeplay/).)
+- [Bắt đầu](./getting-started/index.md) -- Tạo tài khoản, đăng nhập và tìm hiểu cách điều hướng B1.church.
+- [Nhóm](./groups/index.md) -- Tham gia và tương tác với các nhóm của nhà thờ.
+- [Quyên góp](./giving/index.md) -- Quyên góp và quản lý việc quyên góp của bạn.
+- [Sự kiện](./events/index.md) -- Duyệt và đăng ký các sự kiện sắp tới của nhà thờ.
+- [Phục vụ](./serving/index.md) -- Xem kế hoạch và đăng ký các vị trí tình nguyện.
+- [Kế hoạch](./plans/index.md) -- Xem kế hoạch buổi lễ và các vị trí tình nguyện của bạn.
+- [Điểm danh](./checkin/index.md) -- Điểm danh cho các buổi lễ, sự kiện và đăng ký khách.
+- [Danh bạ cộng đồng](./community/index.md) -- Tìm và kết nối với các thành viên khác.
+- [Nội dung](./content/index.md) -- Bài giảng, Kinh Thánh, câu Kinh Thánh trong ngày và phát trực tiếp. (Việc phát nội dung giáo trình đã chuyển sang [FreePlay](/docs/freeplay/).)
 
 :::info
 B1.church hoàn toàn miễn phí cho nhà thờ và thành viên. Quản trị viên nhà thờ thiết lập và tùy chỉnh trang web thông qua B1 Admin. Với tư cách là thành viên, bạn chỉ cần truy cập địa chỉ B1.church của nhà thờ để bắt đầu.

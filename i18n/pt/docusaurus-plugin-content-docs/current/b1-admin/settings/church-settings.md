@@ -1,5 +1,6 @@
 ---
 title: "Configurações da igreja"
+description: "Defina nome, endereço, subdomínio, fuso horário, formato regional, provedor de SMS e armazenamento de arquivos na página Church Settings do B1 Admin."
 ---
 
 # Configurações da igreja

@@ -1,5 +1,6 @@
 ---
 title: "Valg af en servin"
+description: "Vælg den gudstjeneste du deltager i på B1 Checkins skærm for tjenester. Det fastsætter gudstjenestetiderne og grupperne i resten af check-in-flowet."
 ---
 
 # Valg af en servin
@@ -13,7 +14,7 @@ Det første trin i hver check-in er at vælge hvilken servin du deltager i. Serv
 <div class="prereqs">
 <h4>Før du starter</h4>
 
-- [Log ind](../getting-started/logging-in) på B1 Church Checkin appen og vælg din kirke
+- [Log ind](../getting-started/logging-in.md) på B1 Church Checkin appen og vælg din kirke
 - Sørg for, at din kirke administrator har [konfigureret serviner og servin tider](../../b1-admin/attendance/setup.md) i B1 Admin
 
 </div>
@@ -24,7 +25,7 @@ Det første trin i hver check-in er at vælge hvilken servin du deltager i. Serv
 2. Du vil se en liste af alle serviner, som er konfigureret til din kirke. Hver servin vises som et kort, der viser servinen navn (f.eks. "Søndag morgen" eller "Onsdag aften").
 3. Tryk på den servin, du deltager i.
 
-Appen indlæser servin tiderne og grupperne forbundet med den servin og tager dig derefter til [medlems opslags skærmen](./looking-up-members).
+Appen indlæser servin tiderne og grupperne forbundet med den servin og tager dig derefter til [medlems opslags skærmen](./looking-up-members.md).
 
 :::info
 Serviner er konfigureret af din kirke administrator i B1 Admin under afsnittet Fremmøde. Hvis du ikke ser den servin, du forventer, bed din admin om at verificere den er oprettet i [fremmøde opsætningen](../../b1-admin/attendance/setup.md).
@@ -46,4 +47,4 @@ Hvis din kirke kun har en servin konfigureret, skal du stadig trykke på den for
 
 ## Næste trin
 
-Efter valg af en servin vil du [slå din familie op](./looking-up-members) efter telefonnummer eller navn.
+Efter valg af en servin vil du [slå din familie op](./looking-up-members.md) efter telefonnummer eller navn.

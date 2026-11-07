@@ -1,5 +1,6 @@
 ---
 title: "Điểm cuối Nội dung"
+description: "Tài liệu endpoint của Content API ChurchApps: trang web, bài blog, chuyển hướng, bài giảng, sự kiện, tệp, tra cứu Kinh Thánh và bài hát trong B1 Admin."
 ---
 
 # Điểm cuối Nội dung
@@ -133,7 +134,7 @@ Kế thừa CRUD chuẩn (POST `/`, DELETE `/:id` từ lớp cơ sở, với quy
 
 Đường dẫn gốc: `/content/posts`
 
-Bài viết blog là các hàng độc lập: `title`, `slug` (duy nhất trong mỗi nhà thờ), `excerpt`, `content` (nội dung markdown), `authorId`, `photoUrl`, `publishDate`, `category` và `tags`. Bài viết được xuất bản khi `publishDate` đã được thiết lập và nằm trong quá khứ. Các điểm cuối đọc sẽ bổ sung `authorName` cho mỗi bài viết, được lấy từ `authorId`. Xem [Kiến trúc Trình xây dựng Website](../../architecture/website-builder#blog).
+Bài viết blog là các hàng độc lập: `title`, `slug` (duy nhất trong mỗi nhà thờ), `excerpt`, `content` (nội dung markdown), `authorId`, `photoUrl`, `publishDate`, `category` và `tags`. Bài viết được xuất bản khi `publishDate` đã được thiết lập và nằm trong quá khứ. Các điểm cuối đọc sẽ bổ sung `authorName` cho mỗi bài viết, được lấy từ `authorId`. Xem [Kiến trúc Trình xây dựng Website](../../architecture/website-builder.md#blog).
 
 | Phương thức | Đường dẫn | Xác thực | Quyền | Mô tả |
 |--------|------|------|------|------|
@@ -458,8 +459,8 @@ Tích hợp với PraiseCharts để khám phá bài hát thờ phượng và t�
 
 ## Trang liên quan
 
-- [Kiến trúc Trình xây dựng Website](../../architecture/website-builder) -- Cách các trang, phần, thành phần, bài viết và chuyển hướng kết nối với nhau trên các ứng dụng
-- [Điểm cuối Thành viên](./membership) -- Người, nhà thờ, nhóm, vai trò, quyền
-- [Điểm cuối Điểm danh](./attendance) -- Theo dõi buổi nhóm và lượt viếng thăm
-- [Xác thực & Quyền](./authentication) -- Luồng đăng nhập, JWT, mô hình quyền
-- [Cấu trúc Mô-đun](../module-structure) -- Các mẫu tổ chức mã nguồn
+- [Kiến trúc Trình xây dựng Website](../../architecture/website-builder.md) -- Cách các trang, phần, thành phần, bài viết và chuyển hướng kết nối với nhau trên các ứng dụng
+- [Điểm cuối Thành viên](./membership.md) -- Người, nhà thờ, nhóm, vai trò, quyền
+- [Điểm cuối Điểm danh](./attendance.md) -- Theo dõi buổi nhóm và lượt viếng thăm
+- [Xác thực & Quyền](./authentication.md) -- Luồng đăng nhập, JWT, mô hình quyền
+- [Cấu trúc Mô-đun](../module-structure.md) -- Các mẫu tổ chức mã nguồn

@@ -1,5 +1,6 @@
 ---
 title: "Lokacije"
+description: "V B1 Admin nastavite lokacije, da spremljate, kateri kraj pripada vsaki osebi in skupini, nato pa osebe, udeležbo in demografske podatke filtrirajte po lokaciji."
 ---
 
 # Lokacije

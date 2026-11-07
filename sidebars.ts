@@ -214,6 +214,12 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Guides',
+          link: {
+            type: 'generated-index',
+            slug: '/b1-admin/guides',
+            title: 'B1 Admin Guides',
+            description: 'Step-by-step guides for common B1 Admin tasks: getting started, online giving, launching your website, children\'s check-in, volunteers, sermons, small groups, events, attendance and year-end giving statements.',
+          },
           items: [
             'b1-admin/guides/getting-started-b1',
             'b1-admin/guides/online-giving',

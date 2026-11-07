@@ -1,5 +1,7 @@
 ---
-title: "셀프 체크인"
+title: "B1.church 교인 포털에서 직접 체크인하기"
+sidebar_label: "셀프 체크인"
+description: "B1.church 교인 포털에서 몇 가지 간단한 단계로 예배 시간과 그룹을 고르며 본인과 가족을 예배에 체크인하세요."
 ---
 
 # 셀프 체크인
@@ -45,7 +47,7 @@ title: "셀프 체크인"
 
 체크인이 완료되었고 출석이 저장되었다는 확인 메시지가 표시됩니다. 잠시 뒤 페이지는 다음 체크인을 위해 예배 목록으로 돌아갑니다.
 
-교회가 체크인 스테이션에서 이름표를 인쇄한다면, 대신 **You're checked in!** 화면이 나타나며 QR 코드와 보안 코드가 표시됩니다. 체크인 스테이션에 이 코드를 보여 주어 이름표를 인쇄한 다음 **Done**을 누르세요. B1 Checkin 키오스크에서는 **Scan code**를 누르고 QR 코드를 카메라에 가져다 대세요. [휴대폰 체크인의 라벨 인쇄하기](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in)를 참고하세요.
+교회가 체크인 스테이션에서 이름표를 인쇄한다면, 대신 **You're checked in!** 화면이 나타나며 QR 코드와 보안 코드가 표시됩니다. 체크인 스테이션에 이 코드를 보여 주어 이름표를 인쇄한 다음 **Done**을 누르세요. B1 Checkin 키오스크에서는 **Scan code**를 누르고 QR 코드를 카메라에 가져다 대세요. [휴대폰 체크인의 라벨 인쇄하기](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in)를 참고하세요.
 
 선택한 예배에 가족이 이미 체크인되어 있다면, **Who's here** 제목 옆에 **Show check-in code** 링크가 나타납니다. 이를 누르면 QR 코드와 보안 코드를 다시 불러올 수 있습니다. 예를 들어 체크인 스테이션에 도착하기 전에 페이지를 닫았을 때 유용합니다.
 

@@ -1,5 +1,6 @@
 ---
 title: "Web Push-értesítések"
+description: "VAPID-kulcsok, a WebPushHelper-kliens és a service worker beállítása, hogy a B1.church és a B1 Admin böngészőben push-értesítéseket küldjön a tagoknak."
 ---
 
 # Web Push-értesítések
@@ -160,7 +161,7 @@ A `deepLinkFor` és a `clientMatchesTarget` fogyasztófüggő. A referenciaimple
 
 ## Kapcsolódó oldalak
 
-- [Értesítési architektúra](./architecture/notifications) -- A teljes alkalmazáson belüli, push- és e-mail-eszkalációs csatorna, valamint az emlékeztető-motor
-- [Valós idejű architektúra](./realtime) -- WebSocket-kézbesítés. A push most ugyanabból az alkalmazáson belüli csatornából indul, mint a socket-kézbesítés, ugyanabban a körben. Nem csak akkor lép életbe, ha a socket-kézbesítés nem ért célba.
-- [Messaging végpontok](./api/endpoints/messaging) -- Értesítések, eszközök és az üzenetküldési felület többi része
-- [AppHelper](./shared-libraries/app-helper) -- Az npm csomag, amely a `WebPushHelper`-t tartalmazza
+- [Értesítési architektúra](./architecture/notifications.md) -- A teljes alkalmazáson belüli, push- és e-mail-eszkalációs csatorna, valamint az emlékeztető-motor
+- [Valós idejű architektúra](./realtime.md) -- WebSocket-kézbesítés. A push most ugyanabból az alkalmazáson belüli csatornából indul, mint a socket-kézbesítés, ugyanabban a körben. Nem csak akkor lép életbe, ha a socket-kézbesítés nem ért célba.
+- [Messaging végpontok](./api/endpoints/messaging.md) -- Értesítések, eszközök és az üzenetküldési felület többi része
+- [AppHelper](./shared-libraries/app-helper.md) -- Az npm csomag, amely a `WebPushHelper`-t tartalmazza

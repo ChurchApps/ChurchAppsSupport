@@ -1,5 +1,6 @@
 ---
 title: "Aggiunta di Ospiti"
+description: "Aggiungi un bambino in visita, un parente o un amico a un nucleo familiare al chiosco B1 Checkin, poi assegna i gruppi e completa il check-in."
 ---
 
 # Aggiunta di Ospiti
@@ -13,8 +14,8 @@ Se qualcuno sta visitando la tua famiglia e ha bisogno di fare il check-in con i
 <div class="prereqs">
 <h4>Prima di Iniziare</h4>
 
-- [Cerca la tua famiglia](./looking-up-members) e seleziona un membro dai risultati di ricerca
-- Sii sulla [schermata di revisione del nucleo familiare](./household-review) dove puoi vedere i tuoi familiari
+- [Cerca la tua famiglia](./looking-up-members.md) e seleziona un membro dai risultati di ricerca
+- Sii sulla [schermata di revisione del nucleo familiare](./household-review.md) dove puoi vedere i tuoi familiari
 
 </div>
 
@@ -36,8 +37,8 @@ Se il nome dell'ospite corrisponde a qualcuno già presente nel sistema che non 
 
 Una volta che l'ospite appare nell'elenco del tuo nucleo familiare, puoi:
 
-- **Espandere la sua scheda** e [assegnargli un gruppo](./group-assignment), proprio come qualsiasi altro familiare.
-- **[Fare il check-in](./completing-checkin)** dell'intero nucleo familiare, ospite incluso.
+- **Espandere la sua scheda** e [assegnargli un gruppo](./group-assignment.md), proprio come qualsiasi altro familiare.
+- **[Fare il check-in](./completing-checkin.md)** dell'intero nucleo familiare, ospite incluso.
 
 ## Annullamento
 
@@ -49,4 +50,4 @@ Aggiungere un ospite al kiosk crea un record persona nel database della tua chie
 
 ## Passaggio Successivo
 
-Dopo aver aggiunto gli ospiti e [assegnato i gruppi](./group-assignment) secondo necessità, sei pronto per [completare il check-in](./completing-checkin).
+Dopo aver aggiunto gli ospiti e [assegnato i gruppi](./group-assignment.md) secondo necessità, sei pronto per [completare il check-in](./completing-checkin.md).

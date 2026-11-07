@@ -1,5 +1,6 @@
 ---
 title: "Pangangasiwa ng Server"
+description: "Para sa Server.Admin lang: i-reset ang two-factor sign-in, mag-impersonate ng account, mag-moderate ng Commons, at aprubahan ang church email sa B1 Admin."
 ---
 
 # Pangangasiwa ng Server

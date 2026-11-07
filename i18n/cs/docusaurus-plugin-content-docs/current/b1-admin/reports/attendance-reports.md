@@ -1,5 +1,6 @@
 ---
 title: "Přehledy docházky"
+description: "Přehled tří sestav docházky v B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance), co která ukazuje, a postup spuštění a exportu."
 ---
 
 # Přehledy docházky

@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Procházejte, plánujte a prezentujte bezplatné lekce podle věku od více než 12 poskytovatelů v Lessons.church, s třídami, místy a integracemi FreePlay nebo B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church spolupracuje s dalšími nástroji ChurchApps, které vám pomoho
 
 ## Sekce dokumentace
 
-- [Začínáme](./getting-started/) -- Vytvořte si účet a seznamte se se základy
-- [Procházení obsahu](./browsing/) -- Najděte programy, studie a lekce
-- [Třídy](./classrooms/) -- Nastavte třídy a plánujte lekce
-- [Přizpůsobení](./customization/) -- Přizpůsobte lekce vaší církvi
-- [Prezentování](./presenting/) -- Předávejte lekce ve třídě pomocí režimu prezentace
-- [Správa](./admin/) -- Spravujte programy, studie a lekce jako administrátor
+- [Začínáme](./getting-started/index.md) -- Vytvořte si účet a seznamte se se základy
+- [Procházení obsahu](./browsing/index.md) -- Najděte programy, studie a lekce
+- [Třídy](./classrooms/index.md) -- Nastavte třídy a plánujte lekce
+- [Přizpůsobení](./customization/index.md) -- Přizpůsobte lekce vaší církvi
+- [Prezentování](./presenting/index.md) -- Předávejte lekce ve třídě pomocí režimu prezentace
+- [Správa](./admin/index.md) -- Spravujte programy, studie a lekce jako administrátor
 - [Vyznání víry](./statement-of-faith.md) -- Základní přesvědčení a zásady pro učební materiály
 
 Pro podporu napište na [support@churchapps.org](mailto:support@churchapps.org).

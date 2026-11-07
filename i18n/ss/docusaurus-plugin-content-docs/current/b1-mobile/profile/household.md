@@ -1,5 +1,6 @@
 ---
 title: "Umndeni"
+description: "Bona kutsi ngubani eligumbini lakho nekutsi emalungu ahlanganiswa kanjani kuthebhu ye-Profile ye-B1 Mobile, lokuthembela kuyo kungena netinye tinsita."
 ---
 
 # Umndeni
@@ -13,7 +14,7 @@ Ithebhu ye-**Umndeni** esikrinini sakho seliphrofayela ikhombisa emalunga emnden
 <div class="prereqs">
 <h4>Ngaphambi Kwekucala</h4>
 
-- [Faka B1 Mobile](../getting-started/installing) futsi [ungene](../getting-started/logging-in) ku-akhawunti yakho
+- [Faka B1 Mobile](../getting-started/installing.md) futsi [ungene](../getting-started/logging-in.md) ku-akhawunti yakho
 
 </div>
 
@@ -33,7 +34,7 @@ Imininingwane yemndeni wakho isetjentiswa ticini letinyenti ku-B1 Mobile naku-Ch
 
 - **Kungena** -- Nawu[ngena](../checkin/self-checkin.md) enkonzweni nome emcimbini, ungangenisa umndeni wakho wonkhe kanyekanye esikhundleni sekungenisa muntfu ngamunye ngekwehlukana.
 - **Emarekhodi elibandla** -- Libandla lakho lisebentisa imininingwane yemndeni kute ligcine emarekhodi emndeni ahlelekile futsi litfumelelane nemndeni wakho njengelicembu.
-- **Luhlu lwemalunga** -- Lamanye emalunga angase abone imininingwane yemndeni wakho [eluhlwini lwemalunga elibandla](../community/member-directory.md), kuya ngetilungiselelo takho [tekubukwa](./privacy-settings).
+- **Luhlu lwemalunga** -- Lamanye emalunga angase abone imininingwane yemndeni wakho [eluhlwini lwemalunga elibandla](../community/member-directory.md), kuya ngetilungiselelo takho [tekubukwa](./privacy-settings.md).
 
 ## Kubuka Umndeni Wakho
 
@@ -47,10 +48,10 @@ Bulunga bemndeni buvamise kuphatswa ngumphatsi welibandla lakho. Nangabe udzinga
 
 ## Kugcina Imininingwane Ihlala Ilungile
 
-Nangabe imininingwane yelilunga lemndeni idzinga kubuyeketwa, bangahlela [iphrofayela yabo](./editing-profile), nome ungatsindzana nemphatsi welibandla lakho kute wente tinguquko. Kugcina imininingwane yemndeni ilungile kucinisekisa kutsi ticini letifana ne[kungena](../checkin/) tisebenta kahle kumndeni wakho wonkhe.
+Nangabe imininingwane yelilunga lemndeni idzinga kubuyeketwa, bangahlela [iphrofayela yabo](./editing-profile.md), nome ungatsindzana nemphatsi welibandla lakho kute wente tinguquko. Kugcina imininingwane yemndeni ilungile kucinisekisa kutsi ticini letifana ne[kungena](../checkin/index.md) tisebenta kahle kumndeni wakho wonkhe.
 
 ## Timibhalo Lehambelanako
 
 - [Kungena Kwakho](../checkin/self-checkin.md) -- Ngenisa emalunga emndeni wakho tinkonzweni
-- [Kuhlela Iphrofayela Yakho](./editing-profile) -- Buyeketa imininingwane yakho yebumunye
-- [Tilungiselelo Tekubukwa](./privacy-settings) -- Lawula loko labanye labangakubona ngemndeni wakho
+- [Kuhlela Iphrofayela Yakho](./editing-profile.md) -- Buyeketa imininingwane yakho yebumunye
+- [Tilungiselelo Tekubukwa](./privacy-settings.md) -- Lawula loko labanye labangakubona ngemndeni wakho

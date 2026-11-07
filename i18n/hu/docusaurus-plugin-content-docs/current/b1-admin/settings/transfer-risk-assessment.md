@@ -1,5 +1,6 @@
 ---
 title: "Átviteli kockázatértékelés"
+description: "ChurchApps megfelelőségi nyilvántartása az Egyesült Királyság/EGT és az USA közötti adattovábbításról: biztosítékok, alvállalkozók, hozzáférés."
 ---
 
 # Átviteli kockázatértékelés

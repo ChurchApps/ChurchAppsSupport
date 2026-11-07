@@ -1,5 +1,6 @@
 ---
 title: "Ücretli Kayıtlar"
+description: "B1 Admin'de ücretli etkinlik kaydı kurun: ücretli katılımcı türleri, ek seçenekler, indirim kodları, bekleme listeleri ve bağış sağlayıcınız üzerinden ödeme."
 ---
 
 # Ücretli Kayıtlar
@@ -17,7 +18,7 @@ Etkinlik kaydı basit bir katılımcı sayımının ötesine geçebilir. Yetişk
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Önce etkinlikte kaydı etkinleştirin — bkz. [Takvim Oluşturma](creating-calendars#enabling-event-registration)
+- Önce etkinlikte kaydı etkinleştirin — bkz. [Takvim Oluşturma](./creating-calendars.md#enabling-event-registration)
 - Çevrim içi ödeme almak için kilisenizde [çevrim içi bağış yapılandırılmış](../donations/online-giving-setup.md) olmalıdır (Stripe, PayPal veya Kingdom Funding). Ücretsiz etkinliklerin bağış kurulumuna ihtiyacı yoktur. Çevrim içi bağış olmadan ücretli kayıtlar yine çalışır, ancak kişiler doğrudan kiliseye öder — bkz. [Çevrim İçi Bağışı Olmayan Kiliseler](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Her kod, ne sıklıkla kullanıldığını görebilmeniz için bir **Kullanım**
 Kayıt Ayarları kartında **Bekleme Listesini Etkinleştir** seçeneğini açın. Etkinlik kapasiteye ulaştığında:
 
 - Yeni kayıt olanlara geri çevrilmek yerine bir bekleme listesi yeri önerilir. Aynı kayıt adımlarını tamamlarlar (bekleme listesindeyken ödeme atlanır).
-- Biri iptal ettiğinde, en eski bekleme listesi kaydı **otomatik olarak kayda alınır** ve yer açıldığını bildiren bir e-posta alır. Ödenmemiş bakiyeleri varsa e-posta, kilisenizin B1 sitesindeki [Kayıtlarım](../../b1-church/events/my-registrations) sayfasına bir bağlantı içerir; ödemeyi orada tamamlayabilirler.
+- Biri iptal ettiğinde, en eski bekleme listesi kaydı **otomatik olarak kayda alınır** ve yer açıldığını bildiren bir e-posta alır. Ödenmemiş bakiyeleri varsa e-posta, kilisenizin B1 sitesindeki [Kayıtlarım](../../b1-church/events/my-registrations.md) sayfasına bir bağlantı içerir; ödemeyi orada tamamlayabilirler.
 - Etkinlik kapasitesini artırdıktan sonra yararlı olabileceği gibi, bekleme listesindeki bir satırdaki **Kayda Al** işlemiyle istediğiniz zaman birini manuel olarak kayda alabilirsiniz.
 
 :::info
@@ -79,7 +80,7 @@ Tüm kayıtları görmek için Kayıtlar sayfasından bir etkinlik açın. Kart 
 
 - Bir satırın ayrıntılar simgesine tıklayarak **Kayıt Ayrıntıları** penceresini açın — katılımcılar, seçimler, ödenen/bakiye ve her ücreti (tutar, yöntem, tarih) listeleyen bir **Ödemeler** tablosu.
 - **CSV Dışa Aktar**, katılımcılar, katılımcı türleri, seçimler, ödenen/toplam/bakiye, durum ve her kayıt sorusu için bir sütun içeren tüm listeyi indirir.
-- **Katılımcı Ekle**, kilisenizdeki herhangi biri için çevrim dışı veya telefonla yapılan bir kaydı kaydeder. Kişiyi seçin ve ücretli bir etkinlikse katılımcı türünü belirleyin. Bu kişiden ücret alınmaz: ücretli bir kayıt, tüm tutarı ödenecek bakiye olarak gösterilerek **beklemede** kaydedilir. Kilisenizde çevrim içi bağış varsa kişi bu tutarı [Kayıtlarım](../../b1-church/events/my-registrations) sayfasından ödeyebilir; yoksa kişiden yüz yüze tahsil edin. Katılımcı eklemek için Kayıtlar Düzenleme iznine ihtiyacınız vardır.
+- **Katılımcı Ekle**, kilisenizdeki herhangi biri için çevrim dışı veya telefonla yapılan bir kaydı kaydeder. Kişiyi seçin ve ücretli bir etkinlikse katılımcı türünü belirleyin. Bu kişiden ücret alınmaz: ücretli bir kayıt, tüm tutarı ödenecek bakiye olarak gösterilerek **beklemede** kaydedilir. Kilisenizde çevrim içi bağış varsa kişi bu tutarı [Kayıtlarım](../../b1-church/events/my-registrations.md) sayfasından ödeyebilir; yoksa kişiden yüz yüze tahsil edin. Katılımcı eklemek için Kayıtlar Düzenleme iznine ihtiyacınız vardır.
 
 :::info
 B1 içinden iade işlemi yapılmaz. İptal edilmiş ücretli bir kaydı iade etmeniz gerekirse, iadeyi bağış sağlayıcınızın panelinden (ör. Stripe) yapın.
@@ -94,12 +95,12 @@ B1 içinden iade işlemi yapılmaz. İptal edilmiş ücretli bir kaydı iade etm
 Kilisenizde bir bağış sağlayıcısı kurulu değilse, ücretli etkinlikler yine de kayıt alabilir. Ödeme adımı, kayıt olanlara çevrim içi ödemenin kullanılamadığını ve doğrudan kiliseye ödeme yapabileceklerini bildirir; **Kaydol ve Sonra Öde** düğmesi ise kaydı kaydeder. Kayıt, tüm tutarı ödenecek bakiye olarak **beklemede** kaydedilir ve kayıt listesinde bakiye uyarısıyla görünür. Parayı kilisenizin normal yöntemiyle tahsil edin.
 
 :::info
-B1'de çevrim dışı bir ödemenin alındığını işaretlemenin bir yolu yoktur. Tahsil ettikten sonra ödenecek bakiye listede ve kayıt olanın [Kayıtlarım](../../b1-church/events/my-registrations) kartında kalır; bu nedenle kimin ödediğine dair kendi kaydınızı tutun.
+B1'de çevrim dışı bir ödemenin alındığını işaretlemenin bir yolu yoktur. Tahsil ettikten sonra ödenecek bakiye listede ve kayıt olanın [Kayıtlarım](../../b1-church/events/my-registrations.md) kartında kalır; bu nedenle kimin ödediğine dair kendi kaydınızı tutun.
 :::
 
 ## İlgili Makaleler
 
-- [Takvim Oluşturma](creating-calendars#enabling-event-registration) — kaydı ve temel ayarları etkinleştirin
+- [Takvim Oluşturma](./creating-calendars.md#enabling-event-registration) — kaydı ve temel ayarları etkinleştirin
 - [Çevrim İçi Bağış Kurulumu](../donations/online-giving-setup.md) — ödeme sırasında kullanılan ödeme ağ geçidini yapılandırın
-- [Etkinliklere Kayıt Olma](../../b1-church/events/registering) — üyelerin kayıt olurken gördükleri ekranlar
-- [Kayıtlarım](../../b1-church/events/my-registrations) — üyeler bakiyelerini nasıl öder ve kayıtlarını nasıl düzenler
+- [Etkinliklere Kayıt Olma](../../b1-church/events/registering.md) — üyelerin kayıt olurken gördükleri ekranlar
+- [Kayıtlarım](../../b1-church/events/my-registrations.md) — üyeler bakiyelerini nasıl öder ve kayıtlarını nasıl düzenler

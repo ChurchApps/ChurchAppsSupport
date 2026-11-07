@@ -1,5 +1,7 @@
 ---
-title: "圣经"
+title: "在 B1 Mobile 中阅读圣经"
+sidebar_label: "圣经"
+description: "使用 B1 Mobile 应用内置的圣经阅读器，从抽屉菜单打开经文，浏览卷、章、节，并找到教会提供的圣经选项。"
 ---
 
 # 圣经
@@ -13,7 +15,7 @@ B1 Mobile 内置圣经阅读器，让您可以直接在应用程序中阅读经�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 - 您的教会必须启用圣经功能
 
 </div>
@@ -37,7 +39,7 @@ B1 Mobile 内置圣经阅读器，让您可以直接在应用程序中阅读经�
 阅读器会填满整个屏幕，为您在设备上提供充足的阅读空间。
 
 :::tip
-将圣经界面作为您日常的一部分——无论您在哪里，都可以快速阅读经文。搭配[每日经文](./verse-of-the-day)获得每日灵感。
+将圣经界面作为您日常的一部分——无论您在哪里，都可以快速阅读经文。搭配[每日经文](./verse-of-the-day.md)获得每日灵感。
 :::
 
 ## 可用性
@@ -46,6 +48,6 @@ B1 Mobile 内置圣经阅读器，让您可以直接在应用程序中阅读经�
 
 ## 相关文章
 
-- [每日经文](./verse-of-the-day) -- 查看每日圣经经文
-- [讲道](./sermons) -- 观看与您圣经阅读相辅的讲道
-- [课程](./lessons) -- 访问结构化的课程和学习材料
+- [每日经文](./verse-of-the-day.md) -- 查看每日圣经经文
+- [讲道](./sermons.md) -- 观看与您圣经阅读相辅的讲道
+- [课程](./lessons.md) -- 访问结构化的课程和学习材料

@@ -1,5 +1,6 @@
 ---
 title: "配对屏幕"
+description: "在 FreePlay Admin 中使用电视上显示的四位代码，将 FreePlay 电视与屏幕组日历配对，使其能够自动播放定时内容。"
 ---
 
 # 配对屏幕
@@ -13,9 +14,9 @@ title: "配对屏幕"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在电视上安装并启动 FreePlay。参见[入门指南](../getting-started/)
+- 在电视上安装并启动 FreePlay。参见[入门指南](../getting-started/index.md)
 - 准备好教会的 ChurchApps 登录账号，以便登录 FreePlay Admin
-- 可选：先[创建播放列表](./building-playlists)并[安排日程](./scheduling-the-calendar)，这样电视可以立即播放内容
+- 可选：先[创建播放列表](./building-playlists.md)并[安排日程](./scheduling-the-calendar.md)，这样电视可以立即播放内容
 
 </div>
 
@@ -38,7 +39,7 @@ title: "配对屏幕"
 5. 在**模式**下，保持选中**定时**。电视会根据该组的日历自动播放。
 6. 点击**配对**。
 
-电视会先显示**已连接！**，然后显示**正在加载你的日程…**。它会下载已排期的内容并开始播放。参见[电视上的定时播放](./scheduled-playback)。
+电视会先显示**已连接！**，然后显示**正在加载你的日程…**。它会下载已排期的内容并开始播放。参见[电视上的定时播放](./scheduled-playback.md)。
 
 :::info
 如果 FreePlay Admin 提示**该代码与任何电视都不匹配**，请核对屏幕上显示的代码。如果代码已过期，请使用电视当前显示的新代码。
@@ -51,11 +52,11 @@ title: "配对屏幕"
 - **定时** —— 根据该组的日历自动播放，无需有人按下开始键。
 - **手动** —— 由人员使用遥控器选择内容。手动屏幕仍会出现在你的**屏幕**列表中，但它不跟随日历，因此**屏幕组**字段会被关闭。
 
-你之后可以在[屏幕页面](./managing-screens)上通过**编辑**来更改屏幕的模式。
+你之后可以在[屏幕页面](./managing-screens.md)上通过**编辑**来更改屏幕的模式。
 
 ## 改为与服务计划配对
 
-**配对此屏幕**界面上的代码也可以在 B1 Admin 中使用。如果你在那里输入该代码，并在**显示计划**下选择一种计划类型，电视将在[计划模式](../plan-mode/)中跟随该计划类型，而不是日历。参见[配对你的设备](../plan-mode/device-pairing)。
+**配对此屏幕**界面上的代码也可以在 B1 Admin 中使用。如果你在那里输入该代码，并在**显示计划**下选择一种计划类型，电视将在[计划模式](../plan-mode/index.md)中跟随该计划类型，而不是日历。参见[配对你的设备](../plan-mode/device-pairing.md)。
 
 ## 从电视上更改或取消配对 {#changing-or-unpairing-from-the-tv}
 
@@ -79,6 +80,6 @@ title: "配对屏幕"
 
 ## 相关文章
 
-- **[管理屏幕与屏幕组](./managing-screens)** —— 重命名屏幕、将其移至其他组，或查看其下载内容
-- **[安排日历](./scheduling-the-calendar)** —— 决定屏幕组播放的内容
-- **[选择配对模式](../getting-started/pairing-modes)** —— 比较定时模式与计划模式，以及自行浏览服务商
+- **[管理屏幕与屏幕组](./managing-screens.md)** —— 重命名屏幕、将其移至其他组，或查看其下载内容
+- **[安排日历](./scheduling-the-calendar.md)** —— 决定屏幕组播放的内容
+- **[选择配对模式](../getting-started/pairing-modes.md)** —— 比较定时模式与计划模式，以及自行浏览服务商

@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Bắt đầu sử dụng B1 cho nhà thờ của bạn"
+description: "Hướng dẫn thiết lập hội thánh mới trong B1 Admin: tạo tài khoản, cấu hình cài đặt, thêm vai trò, nhập thành viên và khởi chạy các tính năng cốt lõi."
 ---
 
 # Bắt đầu sử dụng B1 cho nhà thờ của bạn

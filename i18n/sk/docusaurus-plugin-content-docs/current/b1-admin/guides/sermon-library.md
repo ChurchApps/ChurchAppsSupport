@@ -1,5 +1,6 @@
 ---
 title: "Guía: Crear su biblioteca de sermones y transmisión en vivo"
+description: "Importujte kázne z YouTube alebo Vimeo, usporiadajte ich do playlistov a nastavte opakované živé vysielanie s chatom v B1 Admin pre váš web."
 ---
 
 Hmm, wait. The target language is Slovak (sk), not Spanish. Let me redo this properly.

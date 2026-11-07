@@ -1,5 +1,6 @@
 ---
 title: "批量导入"
+description: "将 YouTube 频道或 Vimeo 账户中的讲道视频批量导入 B1 Admin，然后将其整理到播放列表中。"
 ---
 
 # 批量导入
@@ -14,7 +15,7 @@ title: "批量导入"
 <h4>开始之前</h4>
 
 - 您需要具备 **contentApi.streamingServices.edit** 权限。如果您没有访问权限，请参阅[角色与权限](../settings/roles-permissions.md)。
-- 至少创建一个[播放列表](playlists)，用于导入您的讲道
+- 至少创建一个[播放列表](./playlists.md)，用于导入您的讲道
 - 准备好您的 YouTube 频道 ID 或 Vimeo 账户信息
 
 </div>
@@ -39,7 +40,7 @@ title: "批量导入"
 2. 点击 **Create First Playlist**（创建第一个播放列表），并填写名称、描述、发布日期和缩略图。
 3. 点击 **Save**（保存），然后点击 **Add Sermon**，选择 **Bulk Import**，返回批量导入页面。
 
-有关创建和管理播放列表的详细说明，请参阅[播放列表](playlists)。
+有关创建和管理播放列表的详细说明，请参阅[播放列表](./playlists.md)。
 
 ## 导入视频
 
@@ -54,11 +55,11 @@ title: "批量导入"
 您的视频将连同其全部详细信息一起导入，包括标题、描述、日期和缩略图。YouTube 标题和描述中的特殊字符（例如 `&`、撇号和引号）会按原样保留，而不会显示为 `&amp;` 之类的编码。
 
 :::info
-如果您正从其他平台迁移，批量导入非常适合用于入门。对于今后逐个添加的讲道，请改用[管理讲道](managing-sermons)页面。
+如果您正从其他平台迁移，批量导入非常适合用于入门。对于今后逐个添加的讲道，请改用[管理讲道](./managing-sermons.md)页面。
 :::
 
 ## 后续步骤
 
-- [管理讲道](managing-sermons)：编辑已导入的讲道详细信息
-- [播放列表](playlists)：创建和管理讲道系列
-- [直播](live-streaming)：为您的礼拜设置直播
+- [管理讲道](./managing-sermons.md)：编辑已导入的讲道详细信息
+- [播放列表](./playlists.md)：创建和管理讲道系列
+- [直播](./live-streaming.md)：为您的礼拜设置直播

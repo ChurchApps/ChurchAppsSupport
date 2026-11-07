@@ -1,5 +1,6 @@
 ---
 title: "ApiHelper"
+description: "Referenz für @churchapps/apihelper (Packages-Workspace): lokaler Build, Tests über ein Yarn-Portal und Veröffentlichung mit Changesets."
 ---
 
 # ApiHelper
@@ -13,9 +14,9 @@ Das Paket `@churchapps/apihelper` bietet Server-seitige Dienstprogramme für all
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Installieren Sie **Node.js** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites)
+- Installieren Sie **Node.js** und **Git** -- siehe [Voraussetzungen](../setup/prerequisites.md)
 - Machen Sie sich mit dem Setup und dem Release-Fluss des [Packages-Arbeitsbereichs](./index.md) vertraut
-- Dieses Paket hängt von [`@churchapps/helpers`](./helpers) (als Peer-Abhängigkeit) ab und exportiert es erneut
+- Dieses Paket hängt von [`@churchapps/helpers`](./helpers.md) (als Peer-Abhängigkeit) ab und exportiert es erneut
 
 </div>
 
@@ -65,6 +66,6 @@ Dieses Paket ist eine Abhängigkeit jeder ChurchApps API – die Core Api, AskAp
 
 ## Verwandte Artikel
 
-- **[Helpers](./helpers)** – Das Basis-Utility-Paket, von dem dieses Paket abhängt
-- **[Modulstruktur](../api/module-structure)** – Wie Controller und Auth-Middleware in API-Modulen verwendet werden
-- **[Lokales API-Setup](../api/local-setup)** – Setup der API für lokale Entwicklung
+- **[Helpers](./helpers.md)** – Das Basis-Utility-Paket, von dem dieses Paket abhängt
+- **[Modulstruktur](../api/module-structure.md)** – Wie Controller und Auth-Middleware in API-Modulen verwendet werden
+- **[Lokales API-Setup](../api/local-setup.md)** – Setup der API für lokale Entwicklung

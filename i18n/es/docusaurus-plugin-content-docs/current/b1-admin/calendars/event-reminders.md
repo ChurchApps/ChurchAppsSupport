@@ -1,21 +1,22 @@
 ---
 title: "Recordatorios de eventos"
+description: "Configura recordatorios de eventos en B1 Admin por notificación push, correo y SMS, eligiendo cuándo, a quién y con qué mensaje personalizado avisar."
 ---
 
 # Recordatorios de eventos
 
 <div class="article-intro">
 
-Los recordatorios de eventos notifican automáticamente a las personas indicadas antes de que un evento ocurra; por ejemplo, "¡No se lo pierda! El taller de salud comienza mañana a las 9:00 a. m.". Usted configura un recordatorio una vez en el evento, y B1 lo envía a tiempo mediante notificaciones push, correo electrónico y, si su iglesia tiene mensajes de texto configurados, mensajes de texto. Los miembros pueden controlar qué recordatorios reciben desde sus propias [Preferencias de notificación](../../b1-church/getting-started/notification-preferences).
+Los recordatorios de eventos notifican automáticamente a las personas indicadas antes de que un evento ocurra; por ejemplo, "¡No se lo pierda! El taller de salud comienza mañana a las 9:00 a. m.". Usted configura un recordatorio una vez en el evento, y B1 lo envía a tiempo mediante notificaciones push, correo electrónico y, si su iglesia tiene mensajes de texto configurados, mensajes de texto. Los miembros pueden controlar qué recordatorios reciben desde sus propias [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md).
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Cree el evento del que desea recordar a las personas (consulte [Creación de calendarios](creating-calendars))
-- Para llegar a los asistentes registrados, [habilite el registro](creating-calendars) en el evento
-- Para llegar a todo un grupo, asegúrese de que el evento pertenezca a un [grupo](../groups/creating-groups) con miembros
+- Cree el evento del que desea recordar a las personas (consulte [Creación de calendarios](./creating-calendars.md))
+- Para llegar a los asistentes registrados, [habilite el registro](./creating-calendars.md) en el evento
+- Para llegar a todo un grupo, asegúrese de que el evento pertenezca a un [grupo](../groups/creating-groups.md) con miembros
 
 </div>
 
@@ -57,21 +58,21 @@ Los invitados agregados solo por nombre (sin un registro de persona vinculado) n
 - Los eventos recurrentes se manejan automáticamente: cada ocurrencia próxima recibe su propio recordatorio.
 
 :::tip
-Los recordatorios se envían **primero por push, con el correo electrónico como respaldo**. Si un miembro tiene activadas las notificaciones push, recibirá una notificación push; si no, recibirá un correo electrónico. Los miembros eligen qué canales desean para cada tipo de notificación en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences).
+Los recordatorios se envían **primero por push, con el correo electrónico como respaldo**. Si un miembro tiene activadas las notificaciones push, recibirá una notificación push; si no, recibirá un correo electrónico. Los miembros eligen qué canales desean para cada tipo de notificación en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md).
 :::
 
 ## Recordatorios por mensaje de texto
 
 El canal **Texto** solo aparece cuando su iglesia tiene un proveedor de mensajes de texto conectado. Los textos se envían a través del proveedor de mensajes de su iglesia, y cada mensaje puede tener un costo para su iglesia. Se envían además de cualquier recordatorio push o por correo electrónico, y solo a las personas que:
 
-- Activaron **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences), y
+- Activaron **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md), y
 - Tienen un número de celular en su perfil.
 
 Cada mensaje comienza con el nombre de su iglesia, se mantiene en un solo mensaje de texto y termina con "Responda STOP para darse de baja." Quien responda STOP deja de recibir mensajes de texto de su iglesia. Para que las respuestas STOP lleguen a B1, pegue la **URL del webhook de STOP entrante** de su [configuración de mensajes de texto](../settings/church-settings.md#texting) en el webhook de mensajes entrantes de su proveedor.
 
 ## Lo que los miembros pueden controlar
 
-Los recordatorios siempre respetan las [Preferencias de notificación](../../b1-church/getting-started/notification-preferences) de cada miembro. Un miembro puede:
+Los recordatorios siempre respetan las [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md) de cada miembro. Un miembro puede:
 
 - Desactivar los **Recordatorios de eventos** para push, correo electrónico o texto, manteniendo activadas otras notificaciones.
 - Activar o desactivar los recordatorios por texto con **Mensajes de texto**.
@@ -81,10 +82,10 @@ No se puede anular la decisión de un miembro de darse de baja de los recordator
 
 ## Recordatorios de servicio
 
-Los voluntarios programados en un plan reciben un **recordatorio de servicio** por separado con los detalles del plan y, cuando aún no han respondido, botones de **Aceptar / Rechazar** directamente en el correo electrónico. Estos recordatorios se configuran en el tipo de plan y no en un evento del calendario, y también pueden enviarse por texto. Consulte [Recordatorios para voluntarios](../serving/plans#volunteer-reminders) y [Voluntarios del domingo](../guides/sunday-volunteers) para ver cómo funcionan la programación de voluntarios y sus recordatorios.
+Los voluntarios programados en un plan reciben un **recordatorio de servicio** por separado con los detalles del plan y, cuando aún no han respondido, botones de **Aceptar / Rechazar** directamente en el correo electrónico. Estos recordatorios se configuran en el tipo de plan y no en un evento del calendario, y también pueden enviarse por texto. Consulte [Recordatorios para voluntarios](../serving/plans.md#volunteer-reminders) y [Voluntarios del domingo](../guides/sunday-volunteers.md) para ver cómo funcionan la programación de voluntarios y sus recordatorios.
 
 ## Siguientes pasos
 
-- [Preferencias de notificación](../../b1-church/getting-started/notification-preferences): lo que los miembros pueden controlar
-- [Guía de registro de eventos](../guides/event-registration): configure el registro para que los recordatorios puedan llegar a los asistentes
-- [Creación de calendarios](creating-calendars): regrese a la configuración del calendario
+- [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md): lo que los miembros pueden controlar
+- [Guía de registro de eventos](../guides/event-registration.md): configure el registro para que los recordatorios puedan llegar a los asistentes
+- [Creación de calendarios](./creating-calendars.md): regrese a la configuración del calendario

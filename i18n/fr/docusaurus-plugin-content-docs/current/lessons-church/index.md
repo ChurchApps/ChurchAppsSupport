@@ -1,5 +1,6 @@
 ---
 title: "Lessons.church"
+description: "Parcourir, planifier et présenter des leçons gratuites par âge de plus de 12 fournisseurs : classes, lieux, intégrations FreePlay et B1."
 ---
 
 # Lessons.church
@@ -39,12 +40,12 @@ Lessons.church fonctionne avec d'autres outils ChurchApps pour vous aider à liv
 
 ## Sections de documentation
 
-- [Démarrage](./getting-started/) -- Créez votre compte et apprenez les bases
-- [Parcourir le contenu](./browsing/) -- Trouver des programmes, des études et des leçons
-- [Salles de classe](./classrooms/) -- Configurer les salles de classe et planifier les leçons
-- [Personnalisation](./customization/) -- Adapter les leçons à votre église
-- [Présentation](./presenting/) -- Livrer les leçons en classe en utilisant le mode présentateur
-- [Administration](./admin/) -- Gérer les programmes, les études et les leçons en tant qu'admin
+- [Démarrage](./getting-started/index.md) -- Créez votre compte et apprenez les bases
+- [Parcourir le contenu](./browsing/index.md) -- Trouver des programmes, des études et des leçons
+- [Salles de classe](./classrooms/index.md) -- Configurer les salles de classe et planifier les leçons
+- [Personnalisation](./customization/index.md) -- Adapter les leçons à votre église
+- [Présentation](./presenting/index.md) -- Livrer les leçons en classe en utilisant le mode présentateur
+- [Administration](./admin/index.md) -- Gérer les programmes, les études et les leçons en tant qu'admin
 - [Déclaration de foi](./statement-of-faith.md) -- Croyances fondamentales et directives du curriculum
 
 Pour obtenir de l'aide, envoyez un e-mail à [support@churchapps.org](mailto:support@churchapps.org).

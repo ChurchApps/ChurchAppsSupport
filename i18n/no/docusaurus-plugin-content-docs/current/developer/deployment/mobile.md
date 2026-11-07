@@ -1,5 +1,6 @@
 ---
 title: "Mobildistribusjon"
+description: "Gjennomgang av bygging av Android- og iOS-utgivelser av B1 Mobile-appen med Expo EAS, innsending til appbutikkene og publisering av OTA-oppdateringer."
 ---
 
 # Mobildistribusjon
@@ -13,7 +14,7 @@ ChurchApps mobilapper bygges og distribueres ved hjelp av **Expo EAS Build** og 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp mobilappen lokalt -- se [B1 Mobile](../mobile/b1-mobile)
+- Sett opp mobilappen lokalt -- se [B1 Mobile](../mobile/b1-mobile.md)
 - Installer og konfigurer [EAS CLI](https://docs.expo.dev/eas/)
 - Ha tilgang til Google Play Console (Android) og/eller Apple App Store Connect (iOS)
 
@@ -77,6 +78,6 @@ Før du oppretter en butikkbygging, må versjonsnumre oppdateres i flere filer:
 
 ## Relaterte artikler
 
-- **[B1 Mobile](../mobile/b1-mobile)** -- Lokalt oppsett og utviklingsguide
-- **[API-distribusjon](./apis)** -- Distribuere backend-API-ene
-- **[Webappdistribusjon](./web-apps)** -- Distribuere frontend-webapplikasjonene
+- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokalt oppsett og utviklingsguide
+- **[API-distribusjon](./apis.md)** -- Distribuere backend-API-ene
+- **[Webappdistribusjon](./web-apps.md)** -- Distribuere frontend-webapplikasjonene

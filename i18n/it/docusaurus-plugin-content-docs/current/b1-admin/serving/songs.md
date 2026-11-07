@@ -1,5 +1,6 @@
 ---
 title: "Canti"
+description: "Gestisci la libreria dei brani in B1 Admin: cerca e aggiungi canzoni, modifica i dettagli, allega testi e arrangiamenti ChordPro e carica le audio per le prove."
 ---
 
 # Canti

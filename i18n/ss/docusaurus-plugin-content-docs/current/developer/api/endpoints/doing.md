@@ -1,5 +1,6 @@
 ---
 title: "Ema-Endpoint E-Doing"
+description: "Incwadzi ye-Doing API yetinhlelo telunkhonzo, tabelo tebavolontiya, emisebenti, nemasistimu lazenzekelako ku-B1 Admin, netindlela, kugunyaza, nemvume."
 ---
 
 # Ema-Endpoint E-Doing
@@ -265,6 +266,6 @@ Idlulisela ticelo kubaniketi bekucuketfwe bangaphandle (sibonelo, ProPresenter, 
 
 ## Emakhasi Lahlobene
 
-- [Membership Endpoints](./membership) — Bantfu, emacembu, ema-role, kanye netimvumo
-- [Attendance Endpoints](./attendance) — Kulandzelela service kanye nekuvakasha
-- [Module Structure](../module-structure) — Sifanekiso sekuhlelwa kwekhodi
+- [Membership Endpoints](./membership.md) — Bantfu, emacembu, ema-role, kanye netimvumo
+- [Attendance Endpoints](./attendance.md) — Kulandzelela service kanye nekuvakasha
+- [Module Structure](../module-structure.md) — Sifanekiso sekuhlelwa kwekhodi

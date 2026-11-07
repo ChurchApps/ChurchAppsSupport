@@ -1,5 +1,6 @@
 ---
 title: "Gruppen zuweisen"
+description: "In B1 Checkin pro Gottesdienstzeit die Gruppe oder Klasse eines Familienmitglieds wählen, mit Kategorien, Altershinweisen und der Option Keine."
 ---
 
 # Gruppen zuweisen
@@ -13,7 +14,7 @@ Wenn Sie auf dem Bildschirm zur Haushaltsübersicht auf eine Schaltfläche für 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Überprüfen Sie Ihren Haushalt](./household-review) auf dem Bildschirm zur Haushaltsübersicht
+- [Überprüfen Sie Ihren Haushalt](./household-review.md) auf dem Bildschirm zur Haushaltsübersicht
 - Erweitern Sie das Mitglied, das Sie zuweisen möchten, und tippen Sie auf eine Schaltfläche für eine Gottesdienstzeit
 - Stellen Sie sicher, dass Ihr Kirchenverwalter [Gruppen erstellt](../../b1-admin/groups/creating-groups.md) und sie in B1 Admin mit Gottesdienstzeiten verknüpft hat
 
@@ -34,7 +35,7 @@ Tippen Sie auf eine Kategoriekarte, um sie zu erweitern und die einzelnen Gruppe
 2. Überprüfen Sie die Liste der Gruppen innerhalb dieser Kategorie. Jede Gruppe zeigt ihren Namen mit einem Auswahlsymbol auf der rechten Seite.
 3. Tippen Sie auf den **Gruppennamen**, den Sie zuweisen möchten.
 
-Die App speichert Ihre Auswahl und bringt Sie zurück zum [Bildschirm zur Haushaltsübersicht](./household-review). Die Schaltfläche für die Gottesdienstzeit dieses Mitglieds zeigt nun den Namen der ausgewählten Gruppe an.
+Die App speichert Ihre Auswahl und bringt Sie zurück zum [Bildschirm zur Haushaltsübersicht](./household-review.md). Die Schaltfläche für die Gottesdienstzeit dieses Mitglieds zeigt nun den Namen der ausgewählten Gruppe an.
 
 ## Hinweise zu Alter und Klassenstufe
 
@@ -52,7 +53,7 @@ Verwenden Sie die Option **Keine** für Erwachsene, die den Hauptgottesdienst be
 
 So ändern Sie eine bereits vorgenommene Gruppenzuweisung:
 
-1. Gehen Sie zurück zum [Bildschirm zur Haushaltsübersicht](./household-review).
+1. Gehen Sie zurück zum [Bildschirm zur Haushaltsübersicht](./household-review.md).
 2. Erweitern Sie das Mitglied, dessen Gruppe Sie ändern möchten.
 3. Tippen Sie auf die Schaltfläche für die Gottesdienstzeit (die nun den Namen der derzeit zugewiesenen Gruppe anzeigt).
 4. Wählen Sie eine andere Gruppe aus oder tippen Sie auf **Keine**.
@@ -63,8 +64,8 @@ Gruppen und Kategorien werden von Ihrem Kirchenverwalter in B1 Admin konfigurier
 
 ## Nächste Schritte
 
-Kehren Sie nach der Gruppenzuweisung zum [Bildschirm zur Haushaltsübersicht](./household-review) zurück, um:
+Kehren Sie nach der Gruppenzuweisung zum [Bildschirm zur Haushaltsübersicht](./household-review.md) zurück, um:
 
 - Weiteren Familienmitgliedern Gruppen zuzuweisen
-- [Einen Gast hinzuzufügen](./adding-guests), falls jemand Ihre Familie begleitet
-- [Den Check-in abzuschließen](./completing-checkin), sobald alle Zuweisungen bereit sind
+- [Einen Gast hinzuzufügen](./adding-guests.md), falls jemand Ihre Familie begleitet
+- [Den Check-in abzuschließen](./completing-checkin.md), sobald alle Zuweisungen bereit sind

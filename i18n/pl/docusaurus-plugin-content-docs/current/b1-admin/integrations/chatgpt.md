@@ -1,5 +1,6 @@
 ---
 title: "ChatGPT"
+description: "Połącz ChatGPT z danymi swojego kościoła w B1 kluczem API, aby zadawać zwykłe pytania o ludzi, darowizny i frekwencję w B1 Admin."
 ---
 
 # ChatGPT
@@ -26,7 +27,7 @@ Połącz ChatGPT z danymi swojego kościoła w B1 i zadawaj pytania zwykłym ję
 </div>
 
 :::tip Zalecane: najpierw wypróbuj Claude — jest bezpłatny
-[Claude](./claude) łączy się z B1 w **darmowym planie** i konfiguruje się w mniej niż 3 minuty — wystarczy dodać B1 jako konektor i zalogować się na swoje konto B1. Klucz nie jest potrzebny. To najprostszy sposób, aby Twój kościół mógł wypróbować AI z B1, zanim zapłaci za cokolwiek.
+[Claude](./claude.md) łączy się z B1 w **darmowym planie** i konfiguruje się w mniej niż 3 minuty — wystarczy dodać B1 jako konektor i zalogować się na swoje konto B1. Klucz nie jest potrzebny. To najprostszy sposób, aby Twój kościół mógł wypróbować AI z B1, zanim zapłaci za cokolwiek.
 :::
 
 ## Konfiguracja
@@ -254,5 +255,5 @@ Każdy, kto ma link, może zadawać pytania w języku naturalnym. Zakresy klucza
 
 - [Klucze API](/docs/developer/api/api-keys) — pełne zestawienie zakresów
 - [Serwer MCP (dokumentacja deweloperska)](/docs/developer/api/mcp) — szczegóły protokołu i schematy narzędzi
-- [Claude](./claude) — to samo rozwiązanie, dla modeli Anthropic
+- [Claude](./claude.md) — to samo rozwiązanie, dla modeli Anthropic
 - [Dokumentacja REST API](/docs/developer/api/endpoints) — każdy punkt końcowy, który może wywołać akcja niestandardowego GPT

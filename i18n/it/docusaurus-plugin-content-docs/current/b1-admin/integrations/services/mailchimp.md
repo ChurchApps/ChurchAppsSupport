@@ -1,5 +1,6 @@
 ---
 title: "Mailchimp"
+description: "Sincronizza persone e membri di gruppi o liste di B1 Admin con un pubblico Mailchimp tramite tag, incluse configurazione e risoluzione dei problemi."
 ---
 
 # Mailchimp
@@ -65,7 +66,7 @@ Facendo il carico iniziale attraverso l'importatore di Mailchimp ti mantiene il 
 
 ## Altre Ricette (Zapier / Make)
 
-Qualsiasi cosa oltre la sincronizzazione del pubblico — taggare i donatori su `donation.created`, una direzione inversa di Mailchimp → B1, o sincronizzare a una piattaforma di posta diversa completamente (Constant Contact, Brevo, ecc.) — è ancora disponibile tramite [Zapier](../zapier) o [Make](../make), che si attivano sugli stessi eventi webhook:
+Qualsiasi cosa oltre la sincronizzazione del pubblico — taggare i donatori su `donation.created`, una direzione inversa di Mailchimp → B1, o sincronizzare a una piattaforma di posta diversa completamente (Constant Contact, Brevo, ecc.) — è ancora disponibile tramite [Zapier](../zapier.md) o [Make](../make.md), che si attivano sugli stessi eventi webhook:
 
 - **Tag donatori:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Bidirezionale:** Mailchimp *New Subscriber* → B1 *Create Person*
@@ -83,4 +84,4 @@ Se precedentemente hai collegato la sincronizzazione di persona/gruppo tramite Z
 
 - [Webhooks (riferimento sviluppatore)](/docs/developer/api/webhooks) — il motore sottostante, catalogo degli eventi, semantica di consegna/ritentativo
 - [Liste Salvate](/docs/b1-admin/people/lists) — pubblici basati su regole che si mappano naturalmente sui tag di Mailchimp
-- [Zapier (panoramica)](../zapier) — per ricette oltre la sincronizzazione del pubblico
+- [Zapier (panoramica)](../zapier.md) — per ricette oltre la sincronizzazione del pubblico

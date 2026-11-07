@@ -1,5 +1,6 @@
 ---
 title: "Pesquisando pessoas"
+description: "Pesquise o diretório de Pessoas do B1 Admin por nome, ordene e escolha colunas na tabela, monte filtros com Busca Avançada e exporte resultados para CSV."
 ---
 
 # Pesquisando pessoas

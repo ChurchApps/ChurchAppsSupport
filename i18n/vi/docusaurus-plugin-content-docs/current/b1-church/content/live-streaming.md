@@ -1,5 +1,7 @@
 ---
-title: "Phát trực tiếp"
+title: "Xem phát trực tiếp trên B1.church"
+sidebar_label: "Phát trực tiếp"
+description: "Xem các buổi thờ phượng trực tiếp của hội thánh trên trang Phát trực tiếp của B1.church và tham gia trò chuyện cùng chương trình, không cần đăng nhập."
 ---
 
 # Phát trực tiếp

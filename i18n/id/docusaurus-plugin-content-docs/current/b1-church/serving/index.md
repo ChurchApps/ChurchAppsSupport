@@ -1,5 +1,7 @@
 ---
-title: "Pelayanan"
+title: "Pelayanan Sukarelawan dan Pendaftaran di B1.church"
+sidebar_label: "Pelayanan"
+description: "Jelajahi peluang sukarelawan di B1.church, daftar untuk posisi terbuka, lihat tugas pelayanan Anda, dan batalkan pendaftaran sebelum batas waktu."
 ---
 
 # Pelayanan
@@ -14,8 +16,8 @@ Bagian Pelayanan di B1.church memungkinkan Anda menelusuri peluang pelayanan suk
 
 - **Menelusuri peluang pelayanan** -- Lihat rencana ibadah yang akan datang dengan posisi yang masih terbuka dan membutuhkan relawan.
 - **Mendaftar untuk posisi** -- Pilih posisi dan daftarkan diri Anda sendiri hanya dengan satu klik.
-- **Melihat rencana Anda** -- Lihat [tugas pelayanan](../plans/viewing-plans) Anda yang akan datang maupun yang sudah lalu.
-- **Merespons tugas** -- Terima atau tolak posisi yang telah dijadwalkan untuk Anda, dari halaman Rencana atau bagian **Anda melayani** di Beranda. Jika rencana Anda berubah setelah Anda menerima, Anda dapat [menolak tugas yang sudah diterima](../plans/viewing-plans#declining-an-accepted-assignment) sampai layanan tersebut selesai.
+- **Melihat rencana Anda** -- Lihat [tugas pelayanan](../plans/viewing-plans.md) Anda yang akan datang maupun yang sudah lalu.
+- **Merespons tugas** -- Terima atau tolak posisi yang telah dijadwalkan untuk Anda, dari halaman Rencana atau bagian **Anda melayani** di Beranda. Jika rencana Anda berubah setelah Anda menerima, Anda dapat [menolak tugas yang sudah diterima](../plans/viewing-plans.md#declining-an-accepted-assignment) sampai layanan tersebut selesai.
 - **Membatalkan pendaftaran** -- Batalkan pendaftaran mandiri jika rencana Anda berubah (sebelum batas waktu).
 
 ## Cara Kerjanya
@@ -28,5 +30,5 @@ Hanya posisi yang telah diaktifkan oleh administrator gereja Anda untuk pendafta
 
 ## Pelajari Lebih Lanjut
 
-- [Pendaftaran Relawan](./volunteer-signup) -- Panduan langkah demi langkah untuk menelusuri dan mendaftar posisi relawan
-- [Melihat Rencana](../plans/viewing-plans) -- Lihat rencana pelayanan dan tata ibadah yang telah ditugaskan kepada Anda
+- [Pendaftaran Relawan](./volunteer-signup.md) -- Panduan langkah demi langkah untuk menelusuri dan mendaftar posisi relawan
+- [Melihat Rencana](../plans/viewing-plans.md) -- Lihat rencana pelayanan dan tata ibadah yang telah ditugaskan kepada Anda

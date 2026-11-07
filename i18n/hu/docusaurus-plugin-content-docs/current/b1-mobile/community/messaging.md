@@ -1,5 +1,6 @@
 ---
 title: "Üzenetküldés"
+description: "Indíts, olvass, szerkessz és törölj privát, egy az egyben beszélgetéseket gyülekezeti tagokkal a B1 Mobile alkalmazásban, valamint keress embereket a Tagkönyvtáron keresztül."
 ---
 
 # Üzenetküldés
@@ -13,7 +14,7 @@ A B1 Mobile alkalmazás privát üzenetküldést is tartalmaz, így közvetlenü
 <div class="prereqs">
 <h4>Mielőtt elkezdenéd</h4>
 
-- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing), és [jelentkezz be](../getting-started/logging-in) a fiókodba
+- [Telepítsd a B1 Mobile alkalmazást](../getting-started/installing.md), és [jelentkezz be](../getting-started/logging-in.md) a fiókodba
 
 </div>
 
@@ -25,7 +26,7 @@ A B1 Mobile alkalmazás privát üzenetküldést is tartalmaz, így közvetlenü
 ## Új beszélgetés indítása
 
 1. Az üzenetek képernyőn koppints az új beszélgetés indítására szolgáló lehetőségre.
-2. Használd a keresőmezőt a megüzenni kívánt tag megkereséséhez. A tagokat a [Tagjegyzék](./member-directory) segítségével is megtalálhatod.
+2. Használd a keresőmezőt a megüzenni kívánt tag megkereséséhez. A tagokat a [Tagjegyzék](./member-directory.md) segítségével is megtalálhatod.
 3. Válaszd ki a tagot a keresési találatok közül.
 4. Írd be az üzeneted, majd koppints a **Küldés** gombra.
 
@@ -52,11 +53,11 @@ Használd az üzenetküldést önkéntes társaiddal való egyeztetésre, a gyü
 :::
 
 :::info
-Engedélyezd a [push-értesítéseket](./notifications), hogy értesítést kapj, amikor valaki új üzenetet küld, akkor is, ha az alkalmazás nincs megnyitva.
+Engedélyezd a [push-értesítéseket](./notifications.md), hogy értesítést kapj, amikor valaki új üzenetet küld, akkor is, ha az alkalmazás nincs megnyitva.
 :::
 
 ## Kapcsolódó cikkek
 
-- [Tagjegyzék](./member-directory) -- Tagok keresése üzenetküldéshez
-- [Értesítések](./notifications) -- Értesítés kapása az új üzenetekről
-- [Csoportok](../groups/) -- Részvétel csoportos beszélgetésekben
+- [Tagjegyzék](./member-directory.md) -- Tagok keresése üzenetküldéshez
+- [Értesítések](./notifications.md) -- Értesítés kapása az új üzenetekről
+- [Csoportok](../groups/index.md) -- Részvétel csoportos beszélgetésekben

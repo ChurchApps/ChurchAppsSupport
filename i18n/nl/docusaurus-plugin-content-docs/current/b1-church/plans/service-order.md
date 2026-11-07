@@ -1,5 +1,7 @@
 ---
-title: "Dienst Volgorde"
+title: "Dienstvolgorde in de B1.church-app"
+sidebar_label: "Dienst Volgorde"
+description: "Bekijk de dienstvolgorde van een plan in de B1.church-app, met cumulatieve tijden, songteksten, toonsoortverschuiving en lespreviews voor je team."
 ---
 
 # Dienst Volgorde

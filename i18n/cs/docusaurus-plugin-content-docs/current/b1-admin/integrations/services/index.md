@@ -1,5 +1,6 @@
 ---
 title: "Připojené služby"
+description: "Propojte B1 Admin s Mailchimpem, Donorboxem, Subsplashem, VOMO, Clearstream a dalšími nástroji přes recepty Zapier nebo Make, s návody pro každý z nich."
 ---
 
 # Připojené služby
@@ -14,14 +15,14 @@ Nejrychlejším způsobem, jak propojit B1 s jiným nástrojem pro církevní te
 
 | Služba | Kategorie | Propojení | Co lze propojit |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | E-mail | Zapier nebo Make | Synchronizovat nové osoby a dárce z B1 do publika v Mailchimpu |
-| [Donorbox](./donorbox) | Dary | Zapier | Předávat dary a dárce z Donorboxu zpět do B1 |
-| [Subsplash](./subsplash) | Aplikace / dary | Zapier | Načítat dary a osoby ze Subsplash do B1 |
-| [VOMO](./vomo) | Dobrovolnictví | Zapier | Synchronizovat přihlášky dobrovolníků mezi skupinami B1 a projekty VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Spouštět z událostí B1 textovou zprávu přes Clearstream; přijímané odpovědi ukládat jako záznamy v B1 |
-| [Text In Church](./text-in-church) | SMS / pracovní postupy | Zapier | Spouštět pracovní postupy Text In Church z B1; přijímat data z Connect Card |
-| [Mobile Message](./mobile-message) | SMS (Austrálie) | Webhooks by Zapier nebo Make | Odesílat SMS z libovolné události B1 |
-| [Checkr](./checkr) | Bezúhonnostní prověrky | Make | Spustit bezúhonnostní prověrku, když se někdo připojí k servisnímu týmu |
+| [Mailchimp](./mailchimp.md) | E-mail | Zapier nebo Make | Synchronizovat nové osoby a dárce z B1 do publika v Mailchimpu |
+| [Donorbox](./donorbox.md) | Dary | Zapier | Předávat dary a dárce z Donorboxu zpět do B1 |
+| [Subsplash](./subsplash.md) | Aplikace / dary | Zapier | Načítat dary a osoby ze Subsplash do B1 |
+| [VOMO](./vomo.md) | Dobrovolnictví | Zapier | Synchronizovat přihlášky dobrovolníků mezi skupinami B1 a projekty VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Spouštět z událostí B1 textovou zprávu přes Clearstream; přijímané odpovědi ukládat jako záznamy v B1 |
+| [Text In Church](./text-in-church.md) | SMS / pracovní postupy | Zapier | Spouštět pracovní postupy Text In Church z B1; přijímat data z Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (Austrálie) | Webhooks by Zapier nebo Make | Odesílat SMS z libovolné události B1 |
+| [Checkr](./checkr.md) | Bezúhonnostní prověrky | Make | Spustit bezúhonnostní prověrku, když se někdo připojí k servisnímu týmu |
 
 ## Co mají všechny tyto služby společné
 
@@ -45,8 +46,8 @@ Záměrně jsme vynechali nástroje specifické pro Planning Center Services (hu
 
 ## Viz také
 
-- [Zapier (přehled)](../zapier): nastavení na straně B1 je u každého receptu Zapier stejné, tento dokument ho popisuje jednou
-- [Make (přehled)](../make): totéž pro scénáře v Make
-- [Slack a Discord](../slack-discord): oznámení v chatu bez jakéhokoli propojení
-- [Google Sheets](../google-sheets): exporty na vyžádání
+- [Zapier (přehled)](../zapier.md): nastavení na straně B1 je u každého receptu Zapier stejné, tento dokument ho popisuje jednou
+- [Make (přehled)](../make.md): totéž pro scénáře v Make
+- [Slack a Discord](../slack-discord.md): oznámení v chatu bez jakéhokoli propojení
+- [Google Sheets](../google-sheets.md): exporty na vyžádání
 - [Webhooky (referenční příručka pro vývojáře)](/docs/developer/api/webhooks): katalog událostí, na kterém se spoléhá každý recept

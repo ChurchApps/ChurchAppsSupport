@@ -1,5 +1,7 @@
 ---
-title: "Prihlásenie dobrovoľníkov"
+title: "Prihlásenie na dobrovoľníctvo na portáli členov B1.church"
+sidebar_label: "Prihlásenie dobrovoľníkov"
+description: "Prehliadajte voľné dobrovoľnícke pozície podľa kategórie a prihláste sa na nadchádzajúce bohoslužby alebo zrušte svoje prihlásenie na B1.church pred termínom."
 ---
 
 # Prihlásenie dobrovoľníkov
@@ -74,4 +76,4 @@ Stránku dobrovoľníkov pravidelne kontrolujte, najmä na začiatku týždňa. 
 ## Súvisiace články
 
 - [Prehľad služieb](./index.md) – Prehľad funkcií služieb na B1.church
-- [Zobrazenie plánov](../plans/viewing-plans) – Zobrazte si svoje priradené plány a poradie bohoslužieb
+- [Zobrazenie plánov](../plans/viewing-plans.md) – Zobrazte si svoje priradené plány a poradie bohoslužieb

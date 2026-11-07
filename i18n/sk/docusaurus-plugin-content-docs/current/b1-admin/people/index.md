@@ -1,5 +1,6 @@
 ---
 title: "Ľudia"
+description: "Vyhľadávajte, pridávajte a upravujte členov zboru v sekcii People v B1 Admin vrátane sledovania domácností, hromadných úprav a tlače a exportu adresára."
 ---
 
 # Ľudia

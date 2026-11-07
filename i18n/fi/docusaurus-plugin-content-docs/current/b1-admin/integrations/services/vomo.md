@@ -1,5 +1,6 @@
 ---
 title: "VOMO"
+description: "Yhdistä VOMO-vapaaehtoisilmoittautumiset ja kioskikirjautumiset B1 Adminin henkilöihin ja ryhmiin Zapierilla, API-avaimen oikeudet mukaan lukien."
 ---
 
 # VOMO
@@ -71,7 +72,7 @@ Kun VOMO-projekti päättyy, tyhjennä B1-ryhmä manuaalisesti tai yhdistä täm
 
 ### Lähetä ”kiitos ilmoittautumisesta” -tekstiviesti
 
-Ketjuta VOMO Participation → Clearstream Send Text tai Text In Church Send Message samassa Zapissa. Molemmilla on omat ensiluokkaiset Zapier-toimintonsa. Katso [Clearstream](./clearstream) ja [Text In Church](./text-in-church).
+Ketjuta VOMO Participation → Clearstream Send Text tai Text In Church Send Message samassa Zapissa. Molemmilla on omat ensiluokkaiset Zapier-toimintonsa. Katso [Clearstream](./clearstream.md) ja [Text In Church](./text-in-church.md).
 
 ### Tunnista poisjääminen
 
@@ -91,6 +92,6 @@ Aja päivittäinen Zapier *Schedule* -laukaisin, joka kutsuu VOMOssa Find Organi
 
 ## Katso myös
 
-- [Zapier (yleiskatsaus)](../zapier): B1:n puoli jokaisesta Zapier-reseptistä
-- [Clearstream](./clearstream), [Text In Church](./text-in-church): yhdistä vapaaehtoisten ilmoittautumiset tekstiviestivahvistuksiin
+- [Zapier (yleiskatsaus)](../zapier.md): B1:n puoli jokaisesta Zapier-reseptistä
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): yhdistä vapaaehtoisten ilmoittautumiset tekstiviestivahvistuksiin
 - [Webhookit (kehittäjän viiteohje)](/docs/developer/api/webhooks): tapahtumat, joilla VOMO voi käynnistyä

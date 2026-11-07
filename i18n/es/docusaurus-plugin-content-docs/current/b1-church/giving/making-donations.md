@@ -1,5 +1,7 @@
 ---
-title: "Hacer una donación"
+title: "Cómo hacer donativos en el portal de miembros de B1.church"
+sidebar_label: "Hacer una donación"
+description: "Haga un donativo único o recurrente a su iglesia a través de B1.church, con o sin cuenta, y revise su historial de donativos después."
 ---
 
 # Hacer una donación

@@ -1,5 +1,6 @@
 ---
 title: "Pastabos"
+description: "Peržiūrėkite ganytojiškos priežiūros pastabas, sekimus ir planus iš asmenų, grupių, renginių bei darbo eigos kortelių viename B1 Admin sąraše, naujausi viršuje."
 ---
 
 # Pastabos

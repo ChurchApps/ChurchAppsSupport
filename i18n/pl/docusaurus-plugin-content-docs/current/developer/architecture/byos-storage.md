@@ -1,5 +1,6 @@
 ---
 title: "Własna pamięć masowa (BYOS)"
+description: "Połącz własny Dysk Google, Dropbox, OneDrive lub bucket S3 w B1 Admin, aby przesyły plików kościoła omijały limit platformy 100 MB."
 ---
 
 # Własna pamięć masowa (BYOS)
@@ -8,7 +9,7 @@ Parafie otrzymują około 100 MB bezpłatnej hostowanej pamięci plików (powier
 
 ## Warstwa dostawców
 
-BYOS wykorzystuje warstwę pamięci przygotowaną dla [MinistryStuff](./ministrystuff): `IStorageProvider` (`Packages/apihelper`), rozwiązywany dla każdej parafii przez `StorageResolver` na podstawie tabeli `content.storageProviders`. W odróżnieniu od singletonowych dostawców `churchapps`/`ministrystuff`, dostawcy BYOS przechowują dane uwierzytelniające przypisane do parafii, dlatego `StorageResolver.forChurch` tworzy instancję dla każdego żądania na podstawie wiersza parafii. Implementacje znajdują się obok resolvera w `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` oraz `ByosAuth` (wymiana tokenów OAuth i odświeżanie w trybie single-flight — Dropbox rotuje tokeny odświeżania, więc odświeżenia są deduplikowane w ten sam sposób, co w `ProviderProxyController`).
+BYOS wykorzystuje warstwę pamięci przygotowaną dla [MinistryStuff](./ministrystuff.md): `IStorageProvider` (`Packages/apihelper`), rozwiązywany dla każdej parafii przez `StorageResolver` na podstawie tabeli `content.storageProviders`. W odróżnieniu od singletonowych dostawców `churchapps`/`ministrystuff`, dostawcy BYOS przechowują dane uwierzytelniające przypisane do parafii, dlatego `StorageResolver.forChurch` tworzy instancję dla każdego żądania na podstawie wiersza parafii. Implementacje znajdują się obok resolvera w `Api/src/modules/content/helpers/`: `GoogleDriveStorageProvider`, `DropboxStorageProvider`, `OneDriveStorageProvider`, `S3CompatibleStorageProvider` oraz `ByosAuth` (wymiana tokenów OAuth i odświeżanie w trybie single-flight — Dropbox rotuje tokeny odświeżania, więc odświeżenia są deduplikowane w ten sam sposób, co w `ProviderProxyController`).
 
 `storageProviders` przechowuje dane uwierzytelniające: `accessToken`/`refreshToken`/`tokenExpiresAt` (zaszyfrowane, trójka OAuth) lub `apiKey`/`apiSecret` oraz JSON `settings` (`{endpoint, region, bucket, publicBase}`, dla S3). Tokeny nigdy nie trafiają do klienta — `GET /content/storage/providers` ukrywa sekrety i zwraca wartość logiczną `connected`.
 

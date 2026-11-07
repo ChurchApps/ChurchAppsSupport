@@ -1,5 +1,6 @@
 ---
 title: "Události – potvrzení účasti"
+description: "Potvrďte účast na skupinových akcích v členském portálu B1.church: „Přijdu“, „Možná“ nebo „Nepřijdu“. Vedoucí mohou odpovědi zkontrolovat také."
 ---
 
 # Události – potvrzení účasti
@@ -30,14 +31,14 @@ Vaše odpověď platí pro konkrétní termín události – u týdenní schůzk
 ## Pro vedoucí skupin
 
 - **Zobrazení odpovědí** -- Vedoucí vidí u každé události v kalendáři skupiny (**Všechny události**) odkaz **Zobrazit odpovědi**. Otevře se list **Odpovědi** se seznamem všech lidí podle odpovědi – Přijdou, Možná a Nepřijdou. Pokud zatím nikdo neodpověděl, zobrazí se text „Zatím žádné odpovědi.“
-- **Zapnutí a vypnutí potvrzování účasti** -- Při vytváření nebo úpravě události použijte přepínač **Povolit potvrzení účasti**. U událostí s vypnutým potvrzováním se tlačítka odpovědí nezobrazují. Zaměstnanci, kteří vytvářejí události hromadně v B1 Admin, mají stejnou možnost – viz [Kalendář skupiny](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Zapnutí a vypnutí potvrzování účasti** -- Při vytváření nebo úpravě události použijte přepínač **Povolit potvrzení účasti**. U událostí s vypnutým potvrzováním se tlačítka odpovědí nezobrazují. Zaměstnanci, kteří vytvářejí události hromadně v B1 Admin, mají stejnou možnost – viz [Kalendář skupiny](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Potvrzení účasti slouží jako jednoduchý přehled počtu lidí. Pokud vaše událost vyžaduje údaje o přihlášení, řízení kapacity nebo platbu, použijte raději [registraci na událost](../events/registering).
+Potvrzení účasti slouží jako jednoduchý přehled počtu lidí. Pokud vaše událost vyžaduje údaje o přihlášení, řízení kapacity nebo platbu, použijte raději [registraci na událost](../events/registering.md).
 :::
 
 ## Související články
 
 - [Podrobnosti skupiny](./group-details.md) -- Vše na stránce s podrobnostmi skupiny
-- [Kalendář skupiny (B1 Admin)](../../b1-admin/groups/group-calendar) -- Jak zaměstnanci a vedoucí spravují události skupiny a potvrzení účasti
-- [Registrace na události](../events/registering) -- Úplná registrace na událost s kapacitou a platbami
+- [Kalendář skupiny (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Jak zaměstnanci a vedoucí spravují události skupiny a potvrzení účasti
+- [Registrace na události](../events/registering.md) -- Úplná registrace na událost s kapacitou a platbami

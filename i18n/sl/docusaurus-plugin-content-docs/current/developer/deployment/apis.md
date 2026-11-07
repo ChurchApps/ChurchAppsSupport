@@ -1,5 +1,6 @@
 ---
 title: "Razmestitev API-ja"
+description: "Namestitev API-ja ChurchApps v AWS Lambda s Serverless: gradnje, delovni tokovi za demo in produkcijo, migracije podatkovnih baz ter konfiguracija SSM."
 ---
 
 # Razmestitev API-ja
@@ -13,7 +14,7 @@ API-ji ChurchApps so razmeščeni kot funkcije AWS Lambda z uporabo ogrodja Serv
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Nastavite API lokalno -- glejte [Lokalna nastavitev API-ja](../api/local-setup)
+- Nastavite API lokalno -- glejte [Lokalna nastavitev API-ja](../api/local-setup.md)
 - Na svojem računalniku konfigurirajte poverilnice AWS
 - Preverite, ali imate dostop do ciljnega računa AWS
 
@@ -47,7 +48,7 @@ V praksi API razmešča GitHub Actions: **Deploy Demo** se zažene ob vsakem pot
 
 ## Migracije podatkovne baze
 
-**Deploy Prod** med razmestitvijo uporabi čakajoče migracije podatkovne baze. Produkcijske podatkovne baze sprejemajo povezave samo znotraj VPC, zato delovni tok takoj po `serverless deploy` zažene funkcijo Lambda `migrate` (`api-Prod-migrate`), ki izvede čakajoče migracije vseh modulov in vrne `{ ok, environment, modules }`. Če katerikoli modul ne uspe ali je zavrnjen (na primer podatkovna baza brez zgodovine migracij), opravilo ne uspe, tako da shema nikoli ne zaostane za kodo. **Rollback Prod** povrne samo kodo funkcije Lambda; migracije ostanejo uporabljene, zato jih pišite aditivno. Za preverjanje stanja ali ročno izvajanje migracij glejte [Skrbnik strežnika -- Migracije podatkovne baze](../server-admin#database-migrations).
+**Deploy Prod** med razmestitvijo uporabi čakajoče migracije podatkovne baze. Produkcijske podatkovne baze sprejemajo povezave samo znotraj VPC, zato delovni tok takoj po `serverless deploy` zažene funkcijo Lambda `migrate` (`api-Prod-migrate`), ki izvede čakajoče migracije vseh modulov in vrne `{ ok, environment, modules }`. Če katerikoli modul ne uspe ali je zavrnjen (na primer podatkovna baza brez zgodovine migracij), opravilo ne uspe, tako da shema nikoli ne zaostane za kodo. **Rollback Prod** povrne samo kodo funkcije Lambda; migracije ostanejo uporabljene, zato jih pišite aditivno. Za preverjanje stanja ali ročno izvajanje migracij glejte [Skrbnik strežnika -- Migracije podatkovne baze](../server-admin.md#database-migrations).
 
 ## Kaj se ustvari
 
@@ -75,6 +76,6 @@ Vsaka združitev v `main` najprej razmesti demo okolje. Pred zagonom Deploy Prod
 
 ## Sorodni članki
 
-- **[Lokalna nastavitev API-ja](../api/local-setup)** -- Nastavitev API-ja za razvoj
-- **[Struktura modulov](../api/module-structure)** -- Razumevanje arhitekture funkcij Lambda
-- **[Razmestitev spletnih aplikacij](./web-apps)** -- Razmestitev aplikacij za uporabniški vmesnik
+- **[Lokalna nastavitev API-ja](../api/local-setup.md)** -- Nastavitev API-ja za razvoj
+- **[Struktura modulov](../api/module-structure.md)** -- Razumevanje arhitekture funkcij Lambda
+- **[Razmestitev spletnih aplikacij](./web-apps.md)** -- Razmestitev aplikacij za uporabniški vmesnik

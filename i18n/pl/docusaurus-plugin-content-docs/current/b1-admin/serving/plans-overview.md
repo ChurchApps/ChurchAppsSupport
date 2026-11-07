@@ -1,5 +1,6 @@
 ---
 title: "Przegląd planów"
+description: "Zobacz przydziały wolontariuszy w wielu terminach w B1 Admin, wychwytuj wolne stanowiska i uzupełniaj obsadę lub wysyłaj e-maile do zespołu z jednej siatki."
 ---
 
 # Przegląd planów

@@ -1,5 +1,7 @@
 ---
-title: "Pridige"
+title: "Brskanje po pridigah na vaši spletni strani B1.church"
+sidebar_label: "Pridige"
+description: "Brskajte in gledajte posnete pridige iz knjižnice vaše cerkve na spletni strani B1.church, razvrščene v serije ali sezname predvajanja. Prijava ni potrebna."
 ---
 
 # Pridige

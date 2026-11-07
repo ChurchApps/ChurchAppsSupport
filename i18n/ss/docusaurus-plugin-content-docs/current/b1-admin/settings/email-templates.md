@@ -1,5 +1,6 @@
 ---
 title: "Timodeli Timeyili"
+description: "Setela tifomu temalitha netemilayezo ku-B1 Admin, netinkhondvo letitfotjeka, tinkhetho temilayezo yetemtsetfo, nekubukwa kwangaphambili kwekutfumela kwebantfu labanyenti."
 ---
 
 # Timodeli Timeyili

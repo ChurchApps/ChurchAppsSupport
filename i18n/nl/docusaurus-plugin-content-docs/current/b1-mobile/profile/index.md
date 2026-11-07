@@ -1,5 +1,7 @@
 ---
-title: "Profiel"
+title: "Profiel en toegewezen kaarten in B1 Mobile"
+sidebar_label: "Profiel"
+description: "Beheer je naam, contactgegevens, gezin en privacy in het B1 Mobile-profiel, en werk aan je toegewezen werkkaarten en taken."
 ---
 
 # Profiel
@@ -20,7 +22,7 @@ Het tabblad **Profiel** laat je je persoonlijke gegevens bekijken en bewerken, i
 
 ### Huishouden
 
-Het tabblad **Huishouden** toont je gezinsleden en hun rollen binnen je huishouden. Deze informatie wordt gebruikt voor functies zoals [check-in](../checkin/), waar je je hele gezin in één keer kunt inchecken.
+Het tabblad **Huishouden** toont je gezinsleden en hun rollen binnen je huishouden. Deze informatie wordt gebruikt voor functies zoals [check-in](../checkin/index.md), waar je je hele gezin in één keer kunt inchecken.
 
 ### Zichtbaarheid
 
@@ -42,6 +44,6 @@ Het tabblad **Account** geeft toegang tot je beveiligingsinstellingen.
 
 ## Volgende stappen
 
-- [Je profiel bewerken](./editing-profile) -- Werk je naam, contactgegevens en foto bij
-- [Huishouden](./household) -- Bekijk en beheer je gezinsleden
-- [Privacyinstellingen](./privacy-settings) -- Bepaal wat anderen over je kunnen zien
+- [Je profiel bewerken](./editing-profile.md) -- Werk je naam, contactgegevens en foto bij
+- [Huishouden](./household.md) -- Bekijk en beheer je gezinsleden
+- [Privacyinstellingen](./privacy-settings.md) -- Bepaal wat anderen over je kunnen zien

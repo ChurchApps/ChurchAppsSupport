@@ -1,5 +1,6 @@
 ---
 title: "Attendance Endpoints"
+description: "Reference for the attendance API in B1 Admin and B1 Checkin: campuses, services, service times, sessions, visits, check-in rules, and export endpoints."
 ---
 
 # Attendance Endpoints
@@ -270,6 +271,6 @@ Tracks attendance streaks for individuals -- consecutive weeks a person has atte
 
 ## Related Pages
 
-- [Membership Endpoints](./membership) — People, groups, roles, and church management
-- [Authentication & Permissions](./authentication) — Login flow, JWT, permission model
-- [Module Structure](../module-structure) — Code organization patterns
+- [Membership Endpoints](./membership.md) — People, groups, roles, and church management
+- [Authentication & Permissions](./authentication.md) — Login flow, JWT, permission model
+- [Module Structure](../module-structure.md) — Code organization patterns

@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "通过 Zapier 将 B1 Admin 与 Text In Church 连接：生成 API 密钥，创建从关联卡到 B1 的 Zap，并同步小组成员资格。"
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Text In Church 操作还包括 *发送文本消息*、*发送语音广播*、*�
 
 ## 另请参阅
 
-- [Clearstream](./clearstream) — 具有相似 Zapier 形状的替代短信平台
-- [Zapier（概览）](../zapier) — 每个 Zapier 方案的 B1 侧
+- [Clearstream](./clearstream.md) — 具有相似 Zapier 形状的替代短信平台
+- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
 - [Text In Church Zapier 指南](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration)（TIC 的文档）

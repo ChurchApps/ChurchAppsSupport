@@ -1,5 +1,6 @@
 ---
 title: "共享库"
+description: "B1 Admin、B1.church 和 API 共同使用的 @churchapps npm 包文档，并说明如何设置 Packages 工作区以及使用 changesets 发布版本。"
 ---
 
 # 共享库
@@ -14,9 +15,9 @@ ChurchApps 的共享代码以 `@churchapps/*` 作用域发布到 npm。所有共
 
 | 包 | 描述 | 使用者 |
 |---------|-------------|---------|
-| [`@churchapps/helpers`](./helpers) | 基础层：与框架无关的辅助函数，以及构成跨应用数据契约的共享 TypeScript 接口 | 所有项目 |
-| [`@churchapps/apihelper`](./api-helper) | 服务端 Express 工具：认证、基础控制器、数据库访问、AWS 与邮件集成 | 所有 API |
-| [`@churchapps/apphelper`](./app-helper) | 共享的 React 组件和功能模块（登录、捐赠、表单、Markdown、网站） | 所有 Web 应用 |
+| [`@churchapps/helpers`](./helpers.md) | 基础层：与框架无关的辅助函数，以及构成跨应用数据契约的共享 TypeScript 接口 | 所有项目 |
+| [`@churchapps/apihelper`](./api-helper.md) | 服务端 Express 工具：认证、基础控制器、数据库访问、AWS 与邮件集成 | 所有 API |
+| [`@churchapps/apphelper`](./app-helper.md) | 共享的 React 组件和功能模块（登录、捐赠、表单、Markdown、网站） | 所有 Web 应用 |
 | `@churchapps/content-providers` | 对第三方内容提供商的抽象（Lessons.church、Planning Center、Dropbox 等） | Api、B1Admin、B1App、FreePlay |
 | `@churchapps/integration-sdk` | 用于构建 B1.church 集成的工具包：webhook 验证、类型化 REST 客户端、OAuth 辅助工具 | 外部集成开发者 |
 | `@churchapps/texting` | 短信服务商抽象（Text In Church、Clearstream、Mutual Ministry、MinistryStuff、Nalo Solutions、Twilio） | Api |

@@ -1,5 +1,6 @@
 ---
 title: "Nastavenie dochádzky"
+description: "Nastavte kampusy, bohoslužby, časy a priradenie skupín v B1 Admin, aby sledovanie účasti a rozvrhy check-inu fungovali v celom zbore."
 ---
 
 # Nastavenie dochádzky

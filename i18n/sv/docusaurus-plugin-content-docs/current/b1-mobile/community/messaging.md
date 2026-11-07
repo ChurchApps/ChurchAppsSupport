@@ -1,5 +1,6 @@
 ---
 title: "Meddelanden"
+description: "Starta, läs, redigera och ta bort privata enskilda samtal med församlingsmedlemmar i B1 Mobile, och hitta personer via medlemskatalogen."
 ---
 
 # Meddelanden
@@ -13,7 +14,7 @@ B1 Mobile innehåller privata meddelanden så att du kan ha enskilda samtal med 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 
 </div>
 
@@ -25,7 +26,7 @@ B1 Mobile innehåller privata meddelanden så att du kan ha enskilda samtal med 
 ## Starta en ny konversation
 
 1. Tryck på alternativet för att starta en ny konversation på meddelandeskärmen.
-2. Använd sökfältet för att hitta medlemmen du vill skicka ett meddelande till. Du kan också hitta medlemmar via [Medlemskatalogen](./member-directory).
+2. Använd sökfältet för att hitta medlemmen du vill skicka ett meddelande till. Du kan också hitta medlemmar via [Medlemskatalogen](./member-directory.md).
 3. Välj medlemmen i sökresultaten.
 4. Skriv ditt meddelande och tryck på **Skicka**.
 
@@ -52,11 +53,11 @@ Använd meddelanden för att samordna med andra volontärer, följa upp med någ
 :::
 
 :::info
-Aktivera [pushnotiser](./notifications) för att få ett meddelande när någon skickar dig ett nytt meddelande, även när appen inte är öppen.
+Aktivera [pushnotiser](./notifications.md) för att få ett meddelande när någon skickar dig ett nytt meddelande, även när appen inte är öppen.
 :::
 
 ## Relaterade artiklar
 
-- [Medlemskatalogen](./member-directory) -- Hitta medlemmar att skicka meddelanden till
-- [Notiser](./notifications) -- Få avisering om nya meddelanden
-- [Grupper](../groups/) -- Delta i gruppkonversationer
+- [Medlemskatalogen](./member-directory.md) -- Hitta medlemmar att skicka meddelanden till
+- [Notiser](./notifications.md) -- Få avisering om nya meddelanden
+- [Grupper](../groups/index.md) -- Delta i gruppkonversationer

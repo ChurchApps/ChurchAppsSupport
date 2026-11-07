@@ -1,5 +1,6 @@
 ---
 title: "Stripe Import"
+description: "Pull Stripe donations into B1 Admin with a preview-first import that marks each charge as new, already imported, or skipped before you commit."
 ---
 
 # Stripe Import

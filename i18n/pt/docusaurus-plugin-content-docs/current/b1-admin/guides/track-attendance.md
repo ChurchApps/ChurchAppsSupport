@@ -1,5 +1,6 @@
 ---
 title: "Guia: Acompanhar a Frequência da Igreja"
+description: "Acompanhe a presença na igreja no B1 Admin configurando campi e horários, registrando manualmente ou por autoatendimento, e lendo os relatórios."
 ---
 
 # Acompanhar a Frequência da Igreja

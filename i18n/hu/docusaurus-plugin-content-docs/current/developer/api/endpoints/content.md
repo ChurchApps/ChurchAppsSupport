@@ -1,5 +1,6 @@
 ---
 title: "Tartalom végpontjai"
+description: "Végpontreferencia a ChurchApps Content API-hoz: weboldalak, blogbejegyzések, átirányítások, prédikációk, események, fájlok, bibliai keresések és énekek a B1 Adminban."
 ---
 
 # Tartalom végpontjai
@@ -133,7 +134,7 @@ Alap útvonal: `/content/pageHistory`
 
 Alap útvonal: `/content/posts`
 
-A blogbejegyzések önálló sorok: `title`, `slug` (templomonként egyedi), `excerpt`, `content` (markdown törzs), `authorId`, `photoUrl`, `publishDate`, `category` és `tags`. Egy bejegyzés akkor válik közzétetté, amikor a `publishDate` be van állítva és a múltban van. Az olvasó végpontok minden bejegyzést kiegészítenek az `authorId` alapján feloldott `authorName` mezővel. Lásd: [Weboldalépítő architektúra](../../architecture/website-builder#blog).
+A blogbejegyzések önálló sorok: `title`, `slug` (templomonként egyedi), `excerpt`, `content` (markdown törzs), `authorId`, `photoUrl`, `publishDate`, `category` és `tags`. Egy bejegyzés akkor válik közzétetté, amikor a `publishDate` be van állítva és a múltban van. Az olvasó végpontok minden bejegyzést kiegészítenek az `authorId` alapján feloldott `authorName` mezővel. Lásd: [Weboldalépítő architektúra](../../architecture/website-builder.md#blog).
 
 | Metódus | Útvonal | Hitelesítés | Jogosultság | Leírás |
 |--------|------|------|------|------|
@@ -458,8 +459,8 @@ Alap útvonal: `/content/support`
 
 ## Kapcsolódó oldalak
 
-- [Weboldalépítő architektúra](../../architecture/website-builder) -- Hogyan illeszkednek egymáshoz az oldalak, szakaszok, elemek, bejegyzések és átirányítások az alkalmazások között
-- [Tagsági végpontok](./membership) -- Személyek, gyülekezetek, csoportok, szerepkörök, jogosultságok
-- [Részvételi végpontok](./attendance) -- Istentiszteletek és látogatások követése
-- [Hitelesítés és jogosultságok](./authentication) -- Bejelentkezési folyamat, JWT, jogosultsági modell
-- [Modulstruktúra](../module-structure) -- Kódszervezési minták
+- [Weboldalépítő architektúra](../../architecture/website-builder.md) -- Hogyan illeszkednek egymáshoz az oldalak, szakaszok, elemek, bejegyzések és átirányítások az alkalmazások között
+- [Tagsági végpontok](./membership.md) -- Személyek, gyülekezetek, csoportok, szerepkörök, jogosultságok
+- [Részvételi végpontok](./attendance.md) -- Istentiszteletek és látogatások követése
+- [Hitelesítés és jogosultságok](./authentication.md) -- Bejelentkezési folyamat, JWT, jogosultsági modell
+- [Modulstruktúra](../module-structure.md) -- Kódszervezési minták

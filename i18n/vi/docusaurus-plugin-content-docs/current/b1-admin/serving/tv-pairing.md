@@ -1,5 +1,6 @@
 ---
 title: "Kết nối FreePlay với B1 Admin"
+description: "Kết nối TV lớp học chạy FreePlay với các bài học đã lên lịch trong B1 Admin, để giáo viên có thể phát chúng trên màn hình trong giờ học."
 ---
 
 # Kết nối TV lớp học với các bài học trong B1 Admin

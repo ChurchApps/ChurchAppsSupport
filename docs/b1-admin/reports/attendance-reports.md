@@ -1,5 +1,6 @@
 ---
 title: "Attendance Reports"
+description: "Get B1 Admin's three attendance reports (Attendance Trend, Group Attendance, Daily Group Attendance) and what each one shows, with steps to run and export them."
 ---
 
 # Attendance Reports

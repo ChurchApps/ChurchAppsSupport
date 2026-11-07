@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Ra mắt trang web nhà thờ của bạn"
+description: "Thiết lập website hội thánh trong B1 Admin: xây trang chủ, khớp màu sắc và logo, thêm trang chính, kết nối tên miền riêng và thêm biểu mẫu dâng hiến."
 ---
 
 # Ra mắt trang web nhà thờ của bạn

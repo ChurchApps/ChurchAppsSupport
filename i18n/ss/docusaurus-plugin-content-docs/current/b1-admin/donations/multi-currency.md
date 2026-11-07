@@ -1,5 +1,6 @@
 ---
 title: "Kwesekelwa Kwetinhlobo Letinyenti Temali"
+description: "Rekhoda nebike ngetiminikelo ngemalini ehlukene ku-B1 Admin, kuhlanganise ukungenisa ngesandla, nemininikelo yeStripe nekuguculwa kwetinani."
 ---
 
 # Kwesekelwa Kwetinhlobo Letinyenti Temali

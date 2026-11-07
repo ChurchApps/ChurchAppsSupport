@@ -1,5 +1,6 @@
 ---
 title: "Plan Mode"
+description: "Koppel een tv in FreePlay aan een kerkserviceplan uit B1 Admin, zodat die de lessen, presentaties en media van de huidige week in volgorde toont."
 ---
 
 # Plan Mode
@@ -12,7 +13,7 @@ Plan Mode verbindt uw TV met een kerkserviceplan. In plaats van inhoud op basis 
 
 ## Hoe Het Verschilt Van Classroom Mode
 
-- **[Classroom Mode](../scheduled-mode/)** haalt de les op die is gepland voor een specifieke kamer op een bepaalde datum
+- **[Classroom Mode](../scheduled-mode/index.md)** haalt de les op die is gepland voor een specifieke kamer op een bepaalde datum
 - **Plan Mode** haalt de inhoud op die aan een plantype is gekoppeld, wat lessen, providerpresentaties, add-ons en ander media in aangepaste volgorde kan bevatten
 
 Plan Mode is vooral nuttig wanneer uw serviceplan een mix van inhoud uit verschillende bronnen bevat, allemaal in één volgorde georganiseerd.
@@ -28,4 +29,4 @@ De TV blijft aan het plantype gekoppeld. Elke week pikt het automatisch het nieu
 
 ## In Dit Gedeelte
 
-- **[Pairing Your Device](./device-pairing)** - Hoe u de koppelingscode genereert en invoert
+- **[Pairing Your Device](./device-pairing.md)** - Hoe u de koppelingscode genereert en invoert

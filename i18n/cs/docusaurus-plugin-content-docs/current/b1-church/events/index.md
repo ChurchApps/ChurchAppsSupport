@@ -1,5 +1,7 @@
 ---
-title: "Události"
+title: "Události církve na B1.church: procházení a registrace"
+sidebar_label: "Události"
+description: "Procházejte nadcházející události církve na B1.church, kontrolujte stav registrace a přihlaste se nebo přidejte události do kalendáře."
 ---
 
 # Události
@@ -43,7 +45,7 @@ Pokud je událost obsazená, můžete být stále schopni se zapsat do **čekac�
 
 ## Další informace
 
-- [Registrace na události](./registering) -- Podrobný postup přihlášení na událost
-- [Moje registrace](./my-registrations) -- Zobrazení vašich registrací, úhrada zůstatků, úprava nebo zrušení
-- [Žádost o události a místnosti](./requesting-events) -- Požádejte o událost s místnostmi a zdroji, které potřebuje
-- [Self Check-In](../checkin/self-checkin) -- Přihlaste se při příchodu na událost
+- [Registrace na události](./registering.md) -- Podrobný postup přihlášení na událost
+- [Moje registrace](./my-registrations.md) -- Zobrazení vašich registrací, úhrada zůstatků, úprava nebo zrušení
+- [Žádost o události a místnosti](./requesting-events.md) -- Požádejte o událost s místnostmi a zdroji, které potřebuje
+- [Self Check-In](../checkin/self-checkin.md) -- Přihlaste se při příchodu na událost

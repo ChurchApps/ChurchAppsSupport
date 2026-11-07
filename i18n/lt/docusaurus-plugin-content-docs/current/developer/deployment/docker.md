@@ -1,12 +1,13 @@
 ---
 title: "Savarankiškas diegimas naudojant Docker"
+description: "Įdiekite privatų B1 Admin, narių portalo, API ir MySQL steką per Docker, tada atnaujinkite ir kurkite atsargines kopijas su b1 komanda."
 ---
 
 # Savarankiškas diegimas naudojant Docker
 
 <div class="article-intro">
 
-Paleiskite savo privačią B1 Admin, B1 narių portalo ir svetainės, API bei MySQL duomenų bazės kopiją bet kuriame kompiuteryje su Docker – namų serveryje, mažame VPS ar vietinėje įrangoje. Diegimui pakanka vienos komandos, atnaujinimui – vienos komandos, o prieš kiekvieną atnaujinimą automatiškai sukuriama atsarginė kopija. Jei nenorite patys valdyti serverio, žr. [Savarankiškas diegimas Railway platformoje](./railway-template) – tai valdomas alternatyvus variantas.
+Paleiskite savo privačią B1 Admin, B1 narių portalo ir svetainės, API bei MySQL duomenų bazės kopiją bet kuriame kompiuteryje su Docker – namų serveryje, mažame VPS ar vietinėje įrangoje. Diegimui pakanka vienos komandos, atnaujinimui – vienos komandos, o prieš kiekvieną atnaujinimą automatiškai sukuriama atsarginė kopija. Jei nenorite patys valdyti serverio, žr. [Savarankiškas diegimas Railway platformoje](./railway-template.md) – tai valdomas alternatyvus variantas.
 
 </div>
 
@@ -94,10 +95,10 @@ Jei diegėte `localhost` adresu ir vėliau norite viešos svetainės: nukreipkit
 
 Šie dalykai veikia lygiai taip pat kaip Railway platformoje – tie patys aplinkos kintamieji, tik nustatomi `.env` faile, o ne Railway valdymo skydelyje:
 
-- **[El. paštas / SMTP](./railway-template#1-email-highly-recommended)** – Resend, Brevo ir Gmail paslaugų teikėjų vadovai
-- **[Kelios svetainės](./railway-template#3-multi-site-multiple-churches-on-one-instance)** – neribotas bažnyčių skaičius viename egzemplioriuje. `/` rodo bažnyčią, kurios slug yra `DEFAULT_CHURCH_SLUG` (pirmoji bažnyčia turi `church`); papildomus domenus nukreipkite į serverį ir priskirkite juos B1Admin skiltyje **Settings → Domains**
-- **[Internetinis aukojimas](./railway-template#4-online-giving-stripe--paypal)** – konfigūruojamas kiekvienai bažnyčiai administravimo sąsajoje
-- **[Papildomos integracijos](./railway-template#6-optional-feature-integrations)** – `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[El. paštas / SMTP](./railway-template.md#1-email-highly-recommended)** – Resend, Brevo ir Gmail paslaugų teikėjų vadovai
+- **[Kelios svetainės](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)** – neribotas bažnyčių skaičius viename egzemplioriuje. `/` rodo bažnyčią, kurios slug yra `DEFAULT_CHURCH_SLUG` (pirmoji bažnyčia turi `church`); papildomus domenus nukreipkite į serverį ir priskirkite juos B1Admin skiltyje **Settings → Domains**
+- **[Internetinis aukojimas](./railway-template.md#4-online-giving-stripe--paypal)** – konfigūruojamas kiekvienai bažnyčiai administravimo sąsajoje
+- **[Papildomos integracijos](./railway-template.md#6-optional-feature-integrations)** – `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, `PEXELS_KEY`, `VIMEO_TOKEN`, `API_BIBLE_KEY`, `GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[Push pranešimai](#push-notifications)** – `WEB_PUSH_*`; diegimo programa šiuos laukus palieka tuščius, todėl push pranešimai išjungti, kol jų nepridėsite
 
 Kvietimai ir kitas bažnyčios siunčiamas el. paštas savarankiško diegimo egzemplioriuje įjungiami automatiškai (paslaugoje, kurią teikia kiti, tai daroma tik po rankinės peržiūros, siekiant apsaugoti siuntėjo reputaciją).
@@ -148,7 +149,7 @@ Visa būsena saugoma trijuose pavadintuose Docker tomuose:
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-Dideliems medijos failų kiekiams galite perjungti failų saugyklą į S3 – nustatykite `FILE_STORE=S3` ir `AWS_*` kintamuosius, aprašytus [Railway vadovo skyriuje apie failų saugyklą](./railway-template#5-file-storage). Duomenų bazės atsarginėse kopijose S3 objektų nėra; tiems objektams įjunkite bucket versioning.
+Dideliems medijos failų kiekiams galite perjungti failų saugyklą į S3 – nustatykite `FILE_STORE=S3` ir `AWS_*` kintamuosius, aprašytus [Railway vadovo skyriuje apie failų saugyklą](./railway-template.md#5-file-storage). Duomenų bazės atsarginėse kopijose S3 objektų nėra; tiems objektams įjunkite bucket versioning.
 
 ## Atnaujinimas
 
@@ -187,6 +188,6 @@ Vis dar nepavyksta? Sukurkite problemą adresu [github.com/ChurchApps/ChurchApps
 
 ## Susiję straipsniai
 
-- **[Savarankiškas diegimas Railway platformoje](./railway-template)** – valdomas talpinimo variantas ir bendri diegimo po paleidimo konfigūracijos vadovai
-- **[Pradinis sąrankos](../../getting-started/initial-setup)** – pirmieji žingsniai sukūrus bažnyčią
-- **[Vietinio API sąranka](../api/local-setup)** – tiesioginis visos sistemos paleidimas kūrimui
+- **[Savarankiškas diegimas Railway platformoje](./railway-template.md)** – valdomas talpinimo variantas ir bendri diegimo po paleidimo konfigūracijos vadovai
+- **[Pradinis sąrankos](../../getting-started/initial-setup.md)** – pirmieji žingsniai sukūrus bažnyčią
+- **[Vietinio API sąranka](../api/local-setup.md)** – tiesioginis visos sistemos paleidimas kūrimui

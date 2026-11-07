@@ -1,5 +1,6 @@
 ---
 title: "Brskanje po vsebini"
+description: "Kako brskati po brezplačni knjižnici kurikula Lessons.church brez računa: postavitev domače strani, brskanje po programih, iskanje in zunanji ponudniki."
 ---
 
 # Brskanje po vsebini

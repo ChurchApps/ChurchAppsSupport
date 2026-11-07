@@ -6,7 +6,7 @@ description: "교회가 소유하는 Twilio 연동 제안, 동의 모델, 구현
 # Twilio BYOK 연동 제안
 
 :::caution 제안 — 제공 중인 연동이 아님
-이 문서는 유지관리자 검토를 위한 설계안이며, 2026년 10월 22일에 검토한 공개 소스와 Twilio 문서를 바탕으로 합니다. 그 이후 기본 Twilio 제공업체가 출시되었습니다(`@churchapps/texting` 0.6.0과 B1 Admin **Settings > Texting**). 교회는 Account SID, Auth Token, From 번호를 입력합니다(제공업체는 `MG`로 시작하는 Messaging Service SID도 받지만, `fromNumber` 열은 여전히 `varchar(20)`이라 34자 SID를 저장하기에는 짧습니다). 문자는 수신자마다 한 번의 요청으로 Twilio Messages API를 통해 발송되며, STOP 응답은 기존 수신 웹훅을 통해 B1에 전달됩니다. 자세한 내용은 [교회 설정: 문자 메시지](../../b1-admin/settings/church-settings.md#texting)를 참고하세요. 아래의 동의 모델, Advanced Opt-Out 처리, 전달 상태, 설정 준비 상태 점검은 여전히 제안 단계이며, 출시된 동작이 아닙니다. 설정 제안과 교회별 예시가 담긴 [교회 온보딩 초안](./twilio-byok-onboarding-draft)도 함께 참고하세요.
+이 문서는 유지관리자 검토를 위한 설계안이며, 2026년 10월 22일에 검토한 공개 소스와 Twilio 문서를 바탕으로 합니다. 그 이후 기본 Twilio 제공업체가 출시되었습니다(`@churchapps/texting` 0.6.0과 B1 Admin **Settings > Texting**). 교회는 Account SID, Auth Token, From 번호를 입력합니다(제공업체는 `MG`로 시작하는 Messaging Service SID도 받지만, `fromNumber` 열은 여전히 `varchar(20)`이라 34자 SID를 저장하기에는 짧습니다). 문자는 수신자마다 한 번의 요청으로 Twilio Messages API를 통해 발송되며, STOP 응답은 기존 수신 웹훅을 통해 B1에 전달됩니다. 자세한 내용은 [교회 설정: 문자 메시지](../../b1-admin/settings/church-settings.md#texting)를 참고하세요. 아래의 동의 모델, Advanced Opt-Out 처리, 전달 상태, 설정 준비 상태 점검은 여전히 제안 단계이며, 출시된 동작이 아닙니다. 설정 제안과 교회별 예시가 담긴 [교회 온보딩 초안](./twilio-byok-onboarding-draft.md)도 함께 참고하세요.
 :::
 
 ## 권장 방향
@@ -38,7 +38,7 @@ ChurchApps가 소유하는 Twilio 상위 계정, 고객 하위 계정, 번호 �
 | [메시징 스키마](https://github.com/ChurchApps/Api/blob/82eda28b6803754548ce007bd52177a21700f118/tools/migrations/messaging/2026-04-03_initial_schema.ts) | `apiKey`, `apiSecret`, 20자 `fromNumber`를 저장합니다. 전달 로그는 즉시 성공/오류만 저장하며, 제공업체 ID나 최종 전달 상태는 저장하지 않습니다. | E.164 발신 번호는 맞지만, 34자 Messaging Service SID에는 별도의 필드가 필요합니다. 내구성 있는 제공업체 메시지/상태 저장소를 추가해야 합니다. |
 | [공개 양식 페이지](https://github.com/ChurchApps/B1App/blob/5ca19ee4ef947235b8ffba9fbb35af42d0dcb41d/src/app/%5BsdSlug%5D/%28public%29/%5BpageSlug%5D/%5Bid%5D/components/FormPage.tsx), [공유 양식 렌더러](https://github.com/ChurchApps/Packages/blob/68c93d610031d3ed56d3582055413e851c5cb2ee/apphelper/src/forms/components/QuestionEdit.tsx), [제출 컨트롤러](https://github.com/ChurchApps/Api/blob/82eda28b6803754548ce007bd52177a21700f118/src/modules/membership/controllers/FormSubmissionController.ts) | 비제한 양식과 선택형 체크박스가 있습니다. 설명은 일반 텍스트입니다. 제출은 답변을 보관하지만, 문자 발송 경로에는 캠페인별 동의 원장이 없습니다. | 구성 가능한 SMS 동의 컨트롤을 추가하고, 실제 정책 링크와 서버 측 증거 저장을 포함합니다. 일반 체크박스나 그룹 구성원 자격만으로 SMS가 자동 허용되어서는 안 됩니다. |
 
-[교회 설정 문서](../../b1-admin/settings/church-settings#texting)에서도 설명하듯, 현재 수신 거부(opt-out) 플래그는 디렉터리 공개 설정과 공유되어 있습니다. 이 결합은 출시 시 중요한 문제입니다. START 응답이 디렉터리 공개 여부를 절대 바꾸어서는 안 됩니다.
+[교회 설정 문서](../../b1-admin/settings/church-settings.md#texting)에서도 설명하듯, 현재 수신 거부(opt-out) 플래그는 디렉터리 공개 설정과 공유되어 있습니다. 이 결합은 출시 시 중요한 문제입니다. START 응답이 디렉터리 공개 여부를 절대 바꾸어서는 안 됩니다.
 
 ## 설정 및 자격 증명 설계
 

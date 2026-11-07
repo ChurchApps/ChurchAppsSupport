@@ -1,5 +1,6 @@
 ---
 title: "导入数据"
+description: "使用 B1 Transfer 工具将现有人员、小组、考勤和奉献记录导入 B1 Admin，或随时导出数据备份。"
 ---
 
 # 导入数据

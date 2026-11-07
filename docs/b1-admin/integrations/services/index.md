@@ -1,5 +1,6 @@
 ---
 title: "Connected Services"
+description: "Connect B1 Admin to Mailchimp, Donorbox, Subsplash, VOMO, Clearstream and other tools using Zapier or Make recipes, with setup guides for each."
 ---
 
 # Connected Services
@@ -14,14 +15,14 @@ The fastest way to connect B1 to another church-tech tool is usually a Zapier or
 
 | Service | Category | Bridge | What you can wire |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Email | Zapier or Make | Sync new B1 people / givers into a Mailchimp audience |
-| [Donorbox](./donorbox) | Donations | Zapier | Push Donorbox donations and donors back into B1 |
-| [Subsplash](./subsplash) | App / Donations | Zapier | Pull Subsplash giving and people into B1 |
-| [VOMO](./vomo) | Volunteering | Zapier | Sync volunteer signups between B1 groups and VOMO projects |
-| [Clearstream](./clearstream) | SMS | Zapier | Trigger a Clearstream text from B1 events; ingest replies as B1 records |
-| [Text In Church](./text-in-church) | SMS / Workflows | Zapier | Trigger Text In Church workflows from B1; receive Connect Card data |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier or Make | Send SMS from any B1 event |
-| [Checkr](./checkr) | Background checks | Make | Kick off a background check when someone joins a serving team |
+| [Mailchimp](./mailchimp.md) | Email | Zapier or Make | Sync new B1 people / givers into a Mailchimp audience |
+| [Donorbox](./donorbox.md) | Donations | Zapier | Push Donorbox donations and donors back into B1 |
+| [Subsplash](./subsplash.md) | App / Donations | Zapier | Pull Subsplash giving and people into B1 |
+| [VOMO](./vomo.md) | Volunteering | Zapier | Sync volunteer signups between B1 groups and VOMO projects |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Trigger a Clearstream text from B1 events; ingest replies as B1 records |
+| [Text In Church](./text-in-church.md) | SMS / Workflows | Zapier | Trigger Text In Church workflows from B1; receive Connect Card data |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier or Make | Send SMS from any B1 event |
+| [Checkr](./checkr.md) | Background checks | Make | Kick off a background check when someone joins a serving team |
 
 ## What All Of These Have In Common
 
@@ -45,8 +46,8 @@ We've also deliberately skipped Planning Center-Services-specific tools (music, 
 
 ## See Also
 
-- [Zapier (overview)](../zapier) — the B1 side of every Zapier recipe is identical; this doc covers it once
-- [Make (overview)](../make) — same for Make scenarios
-- [Slack & Discord](../slack-discord) — chat notifications without any bridge
-- [Google Sheets](../google-sheets) — on-demand exports
+- [Zapier (overview)](../zapier.md) — the B1 side of every Zapier recipe is identical; this doc covers it once
+- [Make (overview)](../make.md) — same for Make scenarios
+- [Slack & Discord](../slack-discord.md) — chat notifications without any bridge
+- [Google Sheets](../google-sheets.md) — on-demand exports
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — the event catalog every recipe relies on

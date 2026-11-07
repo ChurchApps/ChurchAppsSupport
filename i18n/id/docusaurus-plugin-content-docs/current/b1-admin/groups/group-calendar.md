@@ -1,5 +1,6 @@
 ---
 title: "Kalender Grup"
+description: "Rencanakan pertemuan dan acara berulang di kalender grup di B1 Admin dan B1.church, dengan penjadwalan massal, RSVP, dan langganan kalender."
 ---
 
 # Kalender Grup

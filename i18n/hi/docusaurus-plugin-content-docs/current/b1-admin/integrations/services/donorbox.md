@@ -1,5 +1,6 @@
 ---
 title: "Donorbox"
+description: "Zapier के साथ Donorbox को B1 Admin से जोड़ें, ताकि ऑनलाइन दान अपने-आप दान रिकॉर्ड और दानदाता प्रोफ़ाइल बनाएँ, मैन्युअल निर्यात की ज़रूरत नहीं।"
 ---
 
 # Donorbox
@@ -85,6 +86,6 @@ Donorbox का *New or Updated Donation* संपादनों पर भी
 
 ## इन्हें भी देखें
 
-- [Zapier (अवलोकन)](../zapier) — हर Zapier नुस्खे का B1 पक्ष
-- [Subsplash](./subsplash) — Zapier ऐप वाला एक और दान प्लेटफ़ॉर्म
-- [Mailchimp](./mailchimp) — "नए उपहार" को ईमेल टैग से जोड़ें
+- [Zapier (अवलोकन)](../zapier.md) — हर Zapier नुस्खे का B1 पक्ष
+- [Subsplash](./subsplash.md) — Zapier ऐप वाला एक और दान प्लेटफ़ॉर्म
+- [Mailchimp](./mailchimp.md) — "नए उपहार" को ईमेल टैग से जोड़ें

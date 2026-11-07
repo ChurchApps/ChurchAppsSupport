@@ -1,12 +1,13 @@
 ---
 title: "연결된 앱 및 OAuth"
+description: "OAuth 2.0 동의를 통해 제3자 앱을 교회의 B1 데이터에 연결하세요. 공유 비밀번호나 API 키가 필요 없으며, B1 Admin 설정에서 언제든 접근을 취소할 수 있습니다."
 ---
 
 # 연결된 앱 및 OAuth
 
 <div class="article-intro">
 
-B1 API는 OAuth 2.0을 지원하므로, 타사 애플리케이션은 교회가 비밀번호나 API 키를 공유하지 않고도 각 교회 관리자에게 데이터 접근 권한을 요청할 수 있습니다. **연결된 앱**은 교회 관리자가 승인한 OAuth 토큰이며, 이를 해지하면 클릭 한 번으로 타사 앱의 접근이 끊깁니다. 여러 교회를 대상으로 하는 SaaS 커넥터에 이 방식을 사용하세요. 단일 교회 연동에는 [API 키](./api-keys)를 권장합니다.
+B1 API는 OAuth 2.0을 지원하므로, 타사 애플리케이션은 교회가 비밀번호나 API 키를 공유하지 않고도 각 교회 관리자에게 데이터 접근 권한을 요청할 수 있습니다. **연결된 앱**은 교회 관리자가 승인한 OAuth 토큰이며, 이를 해지하면 클릭 한 번으로 타사 앱의 접근이 끊깁니다. 여러 교회를 대상으로 하는 SaaS 커넥터에 이 방식을 사용하세요. 단일 교회 연동에는 [API 키](./api-keys.md)를 권장합니다.
 
 </div>
 
@@ -27,7 +28,7 @@ B1 API는 OAuth 2.0을 지원하므로, 타사 애플리케이션은 교회가 �
 | **연결된 앱** | 특정 `(클라이언트, 교회 관리자)` 쌍으로, 관리자가 클라이언트에 접근을 허용한 상태입니다. 각 연결된 앱은 OAuth 갱신 토큰으로 뒷받침됩니다. |
 | **액세스 토큰** | 클라이언트가 API 호출에 사용하는 짧은 수명의 JWT(약 7일)입니다. 사용자 JWT와 같은 형태이며 `Authorization: Bearer <jwt>`로 전달합니다. |
 | **갱신 토큰** | 클라이언트가 새 액세스 토큰을 발급받는 데 사용하는 긴 수명의 불투명 문자열(약 90일)입니다. |
-| **범위(스코프)** | 액세스 토큰이 할 수 있는 일을 좁힙니다. [범위 목록](./api-keys#scopes)을 참고하세요. |
+| **범위(스코프)** | 액세스 토큰이 할 수 있는 일을 좁힙니다. [범위 목록](./api-keys.md#scopes)을 참고하세요. |
 
 ## 권한 부여 흐름
 
@@ -162,7 +163,7 @@ B1Admin에서 **설정 → 개발자 → 연결된 앱**에는 다음이 표시�
 
 ## 범위와 동의
 
-범위 문자열은 [API 키](./api-keys#scopes)와 같은 목록을 사용합니다. 클라이언트를 위한 권장 사항은 다음과 같습니다.
+범위 문자열은 [API 키](./api-keys.md#scopes)와 같은 목록을 사용합니다. 클라이언트를 위한 권장 사항은 다음과 같습니다.
 
 - **작동하는 범위 중 가장 좁은 범위를 요청하세요.** 사람 정보만 읽으면 되는데 `donations:write`를 요청하면 교회가 알아챕니다.
 - **갱신 토큰과 짧은 수명의 액세스 토큰을 함께 사용하세요.** 장기 액세스 토큰은 빠르게 해지하기 어렵습니다.
@@ -183,7 +184,7 @@ OAuth 클라이언트(타사 앱 자체)는 전역으로 등록됩니다. `clien
 
 ### 동적 클라이언트 등록
 
-`POST /membership/oauth/register`(공개, RFC 7591)는 claude.ai의 MCP 커넥터 같은 클라이언트가 스스로 등록할 수 있게 합니다. API의 `/.well-known/oauth-authorization-server` 문서에 광고되어 있습니다. [MCP 서버 → OAuth 디스커버리](./mcp#oauth-discovery)를 참고하세요.
+`POST /membership/oauth/register`(공개, RFC 7591)는 claude.ai의 MCP 커넥터 같은 클라이언트가 스스로 등록할 수 있게 합니다. API의 `/.well-known/oauth-authorization-server` 문서에 광고되어 있습니다. [MCP 서버 → OAuth 디스커버리](./mcp.md#oauth-discovery)를 참고하세요.
 
 ```http
 POST /membership/oauth/register
@@ -203,4 +204,4 @@ B1Admin 동의 페이지에서 자체 등록된 클라이언트에는 스스로 
 
 ## SDK 지원
 
-`@churchapps/integration-sdk` 패키지는 모든 OAuth 흐름을 타입이 지정된 헬퍼로 감쌉니다. `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`이 있습니다. 패키지 README와 [웹훅](./webhooks#sdk-support)의 종단 간 예제를 참고하세요.
+`@churchapps/integration-sdk` 패키지는 모든 OAuth 흐름을 타입이 지정된 헬퍼로 감쌉니다. `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`이 있습니다. 패키지 README와 [웹훅](./webhooks.md#sdk-support)의 종단 간 예제를 참고하세요.

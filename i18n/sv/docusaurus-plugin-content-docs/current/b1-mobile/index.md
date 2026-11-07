@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile (föråldrad)"
+description: "Förklarar att den inbyggda B1 Mobile-appen är utfasad och att medlemmar och administratörer i stället bör använda B1.church PWA, med äldre sidor kvar som referens."
 ---
 
 # B1 Mobile (föråldrad)
@@ -40,16 +41,16 @@ B1 Mobile stödde pushnotiser så att du inte missade viktiga uppdateringar frå
 
 ## Läs mer
 
-- [Komma igång](./getting-started/) -- Installera appen, skapa ett konto och välj din kyrka.
-- [Startsida](./dashboard/) -- Förstå din personliga startskärm.
-- [Grupper](./groups/) -- Håll kontakten med dina kyrkogrupper.
-- [Gåvor](./giving/) -- Ge bidrag från telefonen.
-- [Evenemang](./events/) -- Bläddra bland och anmäl dig till kommande kyrkoevenemang.
-- [Incheckning](./checkin/) -- Checka in till gudstjänster och evenemang.
-- [Tjänst](./serving/) -- Se dina tjänstplaner, uppdrag och volontärmöjligheter.
-- [Gemenskap](./community/) -- Bläddra i medlemskatalogen och skicka meddelanden.
-- [Innehåll](./content/) -- Predikningar, Bibeln, dagens vers och lektioner (lektionsskärmen är föråldrad, se [FreePlay](/docs/freeplay/)).
-- [Profil](./profile/) -- Hantera din profil och dina kontoinställningar.
+- [Komma igång](./getting-started/index.md) -- Installera appen, skapa ett konto och välj din kyrka.
+- [Startsida](./dashboard/index.md) -- Förstå din personliga startskärm.
+- [Grupper](./groups/index.md) -- Håll kontakten med dina kyrkogrupper.
+- [Gåvor](./giving/index.md) -- Ge bidrag från telefonen.
+- [Evenemang](./events/index.md) -- Bläddra bland och anmäl dig till kommande kyrkoevenemang.
+- [Incheckning](./checkin/index.md) -- Checka in till gudstjänster och evenemang.
+- [Tjänst](./serving/index.md) -- Se dina tjänstplaner, uppdrag och volontärmöjligheter.
+- [Gemenskap](./community/index.md) -- Bläddra i medlemskatalogen och skicka meddelanden.
+- [Innehåll](./content/index.md) -- Predikningar, Bibeln, dagens vers och lektioner (lektionsskärmen är föråldrad, se [FreePlay](/docs/freeplay/)).
+- [Profil](./profile/index.md) -- Hantera din profil och dina kontoinställningar.
 
 :::info
 B1 Mobile har ersatts av [B1.church-PWA:n](../b1-church/getting-started/installing-pwa.md). Nya installationer bör använda PWA:n, eftersom den inbyggda appen inte längre uppdateras.

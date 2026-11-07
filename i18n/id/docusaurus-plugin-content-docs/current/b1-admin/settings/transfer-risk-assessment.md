@@ -1,5 +1,6 @@
 ---
 title: "Penilaian Risiko Transfer"
+description: "Catatan kepatuhan ChurchApps untuk transfer data gereja dari UK/EEA ke AS di B1 Admin, mencakup pengamanan, sub-prosesor, dan kontrol akses."
 ---
 
 # Penilaian Risiko Transfer

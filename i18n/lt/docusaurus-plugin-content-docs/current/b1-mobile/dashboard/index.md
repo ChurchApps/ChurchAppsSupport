@@ -1,5 +1,6 @@
 ---
 title: "Skydelis"
+description: "Susipažinkite su B1 Mobile pradžios ekranu, kur jūsų dažniausiai naudojamos funkcijos rodomos didelėmis kortelėmis, o likusios – skyriuje Greiti veiksmai."
 ---
 
 # Skydelis
@@ -28,7 +29,7 @@ Po pagrindine kortele pamatysite iki dviejų **išskirtinių kortelių**, rodom�
 
 ## Greiti veiksmai
 
-Likusios funkcijos rodomos **Greitų veiksmų** tinkle, po išskirtinėmis kortelėmis. Kiekvienas elementas rodo piktogramą ir pavadinimą. Tai visos kitos bažnyčios sukonfigūruotos navigacijos nuorodos, suteikiančios prieigą prie visko: nuo [grupių](../groups/) ir [aukojimų](../giving/) iki [registracijos](../checkin/), [pamokslų](../content/sermons.md) ir kt.
+Likusios funkcijos rodomos **Greitų veiksmų** tinkle, po išskirtinėmis kortelėmis. Kiekvienas elementas rodo piktogramą ir pavadinimą. Tai visos kitos bažnyčios sukonfigūruotos navigacijos nuorodos, suteikiančios prieigą prie visko: nuo [grupių](../groups/index.md) ir [aukojimų](../giving/index.md) iki [registracijos](../checkin/index.md), [pamokslų](../content/sermons.md) ir kt.
 
 ## Kaip keičiasi išdėstymas
 
@@ -41,7 +42,7 @@ Skydelio išdėstymas pritaikomas pagal jūsų naudojimo įpročius. Kiekvieną 
 Jei programėle dar nesinaudojote, funkcijos rodomos numatyta tvarka, kurią sukonfigūravo jūsų bažnyčia. Laikui bėgant skydelis persidėlioja, atitikdamas jūsų įpročius.
 
 :::info
-Funkcijas, kurios rodomos jūsų skydelyje, konfigūruoja bažnyčios administratorius per [B1 Admin](../../b1-admin/). Jei nematote funkcijos, kurios tikėjotės, kreipkitės į savo bažnyčios raštinę.
+Funkcijas, kurios rodomos jūsų skydelyje, konfigūruoja bažnyčios administratorius per [B1 Admin](../../b1-admin/index.md). Jei nematote funkcijos, kurios tikėjotės, kreipkitės į savo bažnyčios raštinę.
 :::
 
 ## Skydelio atnaujinimas

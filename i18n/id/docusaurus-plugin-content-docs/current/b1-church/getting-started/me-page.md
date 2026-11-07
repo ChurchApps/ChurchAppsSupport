@@ -1,5 +1,6 @@
 ---
 title: "Halaman Saya"
+description: "Lihat apa yang ada di halaman Me portal anggota B1App dalam satu layar: pelayanan, acara, dan pendaftaran mendatang, serta rumah tangga, grup, dan kotak masuk."
 ---
 
 # Halaman Saya
@@ -31,7 +32,7 @@ Jika Anda belum masuk, Anda akan melihat tulisan "Sign in to see your week" dan 
 Bagian **Upcoming** menampilkan tiga item berikutnya Anda sesuai urutan tanggal, masing-masing diberi lencana jenis. Jika ada lebih banyak, ketuk **All upcoming** untuk melihat daftar lengkap, dan **Back to Me** untuk kembali.
 
 - **Serving** -- Posisi sukarelawan Anda pada rencana pelayanan yang akan datang, dengan tanggal dan waktu mulai ibadah tempat Anda melayani (waktu ketika tim Anda dibutuhkan jika rencana memiliki beberapa waktu ibadah, atau hanya tanggal jika rencana tidak memiliki waktu). Ketuk salah satu untuk membuka rencana.
-- **Registration** -- Acara yang Anda [daftari](../events/registering). Ketuk untuk membuka [pendaftaran](../events/my-registrations) Anda.
+- **Registration** -- Acara yang Anda [daftari](../events/registering.md). Ketuk untuk membuka [pendaftaran](../events/my-registrations.md) Anda.
 - **Event** -- Acara mendatang dari grup yang Anda ikuti. Ketuk salah satu untuk membuka acara grup tersebut.
 
 Jika sebuah acara atau pendaftaran memiliki foto, thumbnail kecilnya akan muncul di awal baris.
@@ -66,7 +67,7 @@ Bagian **Requests & registrations** menampilkan berapa banyak pendaftaran acara 
 
 Jika gereja Anda memiliki ruangan atau sumber daya yang dapat dipesan, dua tautan tambahan akan muncul:
 
-- **Request an Event** -- Ajukan permintaan untuk mengadakan acara dengan ruangan dan peralatan yang Anda butuhkan. Lihat [Mengajukan Acara & Ruangan](../events/requesting-events).
+- **Request an Event** -- Ajukan permintaan untuk mengadakan acara dengan ruangan dan peralatan yang Anda butuhkan. Lihat [Mengajukan Acara & Ruangan](../events/requesting-events.md).
 - **My Requests** -- Pantau status permintaan Anda dan batalkan yang masih menunggu.
 
 Jika gereja Anda belum menyiapkan ruangan atau sumber daya, tautan ini disembunyikan.
@@ -77,8 +78,8 @@ Bagian **Inbox** menampilkan dua notifikasi terbaru Anda agar Anda dapat mengiku
 
 ## Artikel Terkait
 
-- [Menavigasi B1App](./navigating) -- Tata letak portal anggota
-- [Mengajukan Acara & Ruangan](../events/requesting-events) -- Kirim dan pantau permintaan ruangan/sumber daya
-- [Pendaftaran Saya](../events/my-registrations) -- Kelola pendaftaran acara Anda
-- [Pendaftaran Sukarelawan](../serving/volunteer-signup) -- Cara kerja tugas pelayanan
-- [Check-In Mandiri](../checkin/self-checkin) -- Cara kehadiran Anda dicatat
+- [Menavigasi B1App](./navigating.md) -- Tata letak portal anggota
+- [Mengajukan Acara & Ruangan](../events/requesting-events.md) -- Kirim dan pantau permintaan ruangan/sumber daya
+- [Pendaftaran Saya](../events/my-registrations.md) -- Kelola pendaftaran acara Anda
+- [Pendaftaran Sukarelawan](../serving/volunteer-signup.md) -- Cara kerja tugas pelayanan
+- [Check-In Mandiri](../checkin/self-checkin.md) -- Cara kehadiran Anda dicatat

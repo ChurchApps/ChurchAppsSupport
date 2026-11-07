@@ -1,5 +1,6 @@
 ---
 title: "Plans"
+description: "Consultez les plans de service auxquels vous êtes affecté sur B1.church, vérifiez postes et dates, puis acceptez ou refusez depuis votre portail."
 ---
 
 # Plans

@@ -1,5 +1,6 @@
 ---
 title: "Lektionen ansehen"
+description: "Eine Lektion in Lessons.church öffnen, Abschnitte und Rollenaktionen lesen, Downloads finden und vor dem Unterricht zwischen Altersgruppen-Venues wechseln."
 ---
 
 # Lektionen ansehen

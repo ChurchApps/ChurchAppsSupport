@@ -1,5 +1,6 @@
 ---
 title: "Ghid: Urmărirea prezenței la biserică"
+description: "Urmăriți prezența în B1 Admin configurând campusuri și ore de servicii, înregistrând-o manual sau prin auto-check-in și citind rapoartele."
 ---
 
 # Urmărirea prezenței la biserică

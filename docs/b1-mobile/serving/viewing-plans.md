@@ -1,5 +1,7 @@
 ---
-title: "Viewing Plans"
+title: "Viewing Serving Plans in B1 Mobile"
+sidebar_label: "Viewing Plans"
+description: "Check your upcoming and past serving schedule in B1 Mobile, read plan details and service order, and print plans for rehearsals or backstage reference."
 ---
 
 # Viewing Plans
@@ -13,7 +15,7 @@ The plans screen in B1 Mobile gives you a complete picture of your serving sched
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- [Install B1 Mobile](../getting-started/installing) and [log in](../getting-started/logging-in) to your account
+- [Install B1 Mobile](../getting-started/installing.md) and [log in](../getting-started/logging-in.md) to your account
 - Be assigned to at least one serving plan by your church administrator
 
 </div>
@@ -61,4 +63,4 @@ You will receive [push notifications](../community/notifications.md) when you ar
 
 ## Related Articles
 
-- [Volunteer Signup](./volunteer-signup) -- Browse and sign up for open volunteer positions
+- [Volunteer Signup](./volunteer-signup.md) -- Browse and sign up for open volunteer positions

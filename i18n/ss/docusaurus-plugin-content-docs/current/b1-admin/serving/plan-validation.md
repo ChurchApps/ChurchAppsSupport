@@ -1,5 +1,6 @@
 ---
 title: "Kuhlolwa Kweluhlelo & Tatiso"
+description: "Hlola tihlelo tetinkonzo ku-B1 Admin kutfola tindzawo letingagcwaliswanga, tingquphaniso tesikhatsi nebasebenti labavinjwe, bese ulandza luhlu lonkhe ngekucindzetela kanye."
 ---
 
 # Kuhlolwa Kweluhlelo & Tatiso Tebavolontiya
@@ -59,5 +60,5 @@ Bavolontiya kufanele babe nendlela yekusebentisa B1.church efownini (i-PWA lefak
 ## Timibhalo Lehlobene
 
 - [Tinhlelo Tenkonzo](./plans.md)
-- [Kutitenzela](./automations.md)
+- [Kutitenzela](./workflows.md)
 - [Kufaka i-PWA ye-B1.church](/docs/b1-church/getting-started/installing-pwa)

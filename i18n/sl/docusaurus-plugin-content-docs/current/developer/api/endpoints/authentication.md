@@ -1,5 +1,6 @@
 ---
 title: "Avtentikacija in dovoljenja"
+description: "Referenca za prijavo JWT, dvostopenjsko prijavo, tokove OAuth 2.0 in model dovoljenj API-ja ChurchApps za razvijalce integracij."
 ---
 
 # Avtentikacija in dovoljenja
@@ -244,7 +245,7 @@ Za naprave brez brskalnika (aplikacije za televizorje, kiosk računalniki):
 | GET | `/membership/oauth/clients/clientId/:clientId` | JWT | — | Pridobi odjemalca po ID-ju odjemalca (skrivnost je skrita) |
 | POST | `/membership/oauth/clients` | JWT | Server.Admin | Ustvari ali posodobi odjemalca |
 | DELETE | `/membership/oauth/clients/:id` | JWT | Server.Admin | Izbriše odjemalca |
-| POST | `/membership/oauth/register` | Javno | — | Dinamična registracija odjemalca (RFC 7591) za javne odjemalce, kot so konektorji MCP. Glejte [Povezane aplikacije](../connected-apps#dynamic-client-registration) |
+| POST | `/membership/oauth/register` | Javno | — | Dinamična registracija odjemalca (RFC 7591) za javne odjemalce, kot so konektorji MCP. Glejte [Povezane aplikacije](../connected-apps.md#dynamic-client-registration) |
 
 ### Končne točke za odobritev naprav
 
@@ -265,5 +266,5 @@ V tabelah končnih točk v tej dokumentaciji so te oznake v stolpcu Avtentikacij
 
 ## Sorodne strani
 
-- [Struktura modulov](../module-structure) — Kako so organizirani krmilniki, repozitoriji in modeli
-- [Lokalna namestitev](../local-setup) — Zagon API-ja lokalno za razvoj
+- [Struktura modulov](../module-structure.md) — Kako so organizirani krmilniki, repozitoriji in modeli
+- [Lokalna namestitev](../local-setup.md) — Zagon API-ja lokalno za razvoj

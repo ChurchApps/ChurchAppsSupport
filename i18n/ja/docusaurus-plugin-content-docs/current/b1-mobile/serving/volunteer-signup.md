@@ -1,5 +1,7 @@
 ---
-title: "ボランティア登録"
+title: "B1 Mobile アプリでのボランティア申し込み"
+sidebar_label: "ボランティア登録"
+description: "B1 Mobile アプリで、今後の礼拝の空いているボランティア枠を探し、申し込みまたは申し込みの取り消しができます。締切と枠数の制限の仕組みも扱います。"
 ---
 
 # ボランティア登録
@@ -13,7 +15,7 @@ B1 Mobile から、募集中のボランティア枠を確認し、今後の礼�
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobile をインストール](../getting-started/installing)し、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobile をインストール](../getting-started/installing.md)し、アカウントに[ログイン](../getting-started/logging-in.md)してください
 - 教会の管理者が、少なくとも1つの枠で自己登録を有効にしている必要があります
 
 </div>
@@ -60,5 +62,5 @@ B1 Mobile から、募集中のボランティア枠を確認し、今後の礼�
 
 ## 関連記事
 
-- [プランを表示する](./viewing-plans) -- 自分に割り当てられたプランや礼拝の進行表を確認します
+- [プランを表示する](./viewing-plans.md) -- 自分に割り当てられたプランや礼拝の進行表を確認します
 - [通知](../community/notifications.md) -- 奉仕の担当に関する最新情報を受け取ります

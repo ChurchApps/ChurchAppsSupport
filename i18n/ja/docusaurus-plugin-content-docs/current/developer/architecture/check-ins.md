@@ -1,5 +1,6 @@
 ---
 title: "チェックイン"
+description: "B1Checkin、B1App、B1 Admin にまたがるチェックインの仕組みを説明します。出欠のデータモデル、部屋としてのグループ、定員制限、お迎え時の安全ルールを扱います。"
 ---
 
 # チェックイン
@@ -216,7 +217,7 @@ B1Appの`src/components/checkin/GuestRegister.tsx`は、匿名の`GET /membershi
 
 ## 関連ページ
 
-- [出席のエンドポイント](../api/endpoints/attendance) -- キャンパス、礼拝、セッション、訪問、訪問セッションのための完全なREST API
-- [会員のエンドポイント](../api/endpoints/membership) -- 人物、世帯、グループ
-- [Webhook](../api/webhooks) -- `session.created`、`attendance.recorded`、`attendance.checkout`のイベント
-- [モジュールの構成](../api/module-structure) -- 出席モジュールがサーバー側でどのように構成されているか
+- [出席のエンドポイント](../api/endpoints/attendance.md) -- キャンパス、礼拝、セッション、訪問、訪問セッションのための完全なREST API
+- [会員のエンドポイント](../api/endpoints/membership.md) -- 人物、世帯、グループ
+- [Webhook](../api/webhooks.md) -- `session.created`、`attendance.recorded`、`attendance.checkout`のイベント
+- [モジュールの構成](../api/module-structure.md) -- 出席モジュールがサーバー側でどのように構成されているか

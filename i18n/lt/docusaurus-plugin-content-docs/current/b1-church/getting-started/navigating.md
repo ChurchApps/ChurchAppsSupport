@@ -1,5 +1,6 @@
 ---
 title: "Naršymas B1App programėlėje"
+description: "Raskite kelią B1.church narių portale telefone ar kompiuteryje: pagrindinis skydelis, apatinė skirtukų juosta, puslapis Daugiau ir Me puslapis."
 ---
 
 # Naršymas B1App programėlėje
@@ -92,7 +93,7 @@ Išsamūs puslapiai -- grupė, planas, jūsų puslapis Aš, Planų ir Aukojimų 
 
 ## Puslapis Aš
 
-**Aš** (`/mobile/me`) yra jūsų asmeninis centras. Jame rodomas jūsų vardas ir nuotrauka su mygtukais **Redaguoti profilį** ir **Nustatymai** ([pranešimų nuostatos](./notification-preferences.md)), toliau -- kas jūsų laukia: tarnystės paskyrimai, renginių registracijos ir grupių renginiai. Po to rodomi jūsų namų ūkis, grupės, [aukojimai](../giving/) šiais metais, pateiktos formos, lankomumo istorija, [registracijos](../events/my-registrations.md) ir naujausi pranešimai bei žinutės. Išsamiau -- žr. [Puslapis Aš](./me-page).
+**Aš** (`/mobile/me`) yra jūsų asmeninis centras. Jame rodomas jūsų vardas ir nuotrauka su mygtukais **Redaguoti profilį** ir **Nustatymai** ([pranešimų nuostatos](./notification-preferences.md)), toliau -- kas jūsų laukia: tarnystės paskyrimai, renginių registracijos ir grupių renginiai. Po to rodomi jūsų namų ūkis, grupės, [aukojimai](../giving/index.md) šiais metais, pateiktos formos, lankomumo istorija, [registracijos](../events/my-registrations.md) ir naujausi pranešimai bei žinutės. Išsamiau -- žr. [Puslapis Aš](./me-page.md).
 
 Jei nesate prisijungę, puslapyje Aš vietoj to rodomas mygtukas **Prisijungti**.
 

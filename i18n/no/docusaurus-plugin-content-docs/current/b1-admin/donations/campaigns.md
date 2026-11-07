@@ -1,5 +1,6 @@
 ---
 title: "Kampanjer og løfter"
+description: "Opprett innsamlingskampanjer i B1 Admin, registrer løfter fra medlemmer, og følg fremdriften mot et mål basert på faktiske gaver til hvert fond."
 ---
 
 # Kampanjer og løfter
@@ -13,7 +14,7 @@ Kampanjer lar deg kjøre en innsamling mot et bestemt mål — et byggefond, en 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp [givingsfond](funds) — hver kampanje er knyttet til et fond
+- Sett opp [givingsfond](./funds.md) — hver kampanje er knyttet til et fond
 - Du trenger tilgang til Gaver-delen i B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Klikk **Rediger** på en kampanjerad (eller **Rediger kampanje** øverst i kampa
 
 ## Relaterte artikler
 
-- [Registrere gaver](recording-donations) — registrer de faktiske gavene som oppfyller løftene
-- [Fond](funds) — sett opp fondet som skal knyttes til en kampanje
-- [Gaverapporter](donation-reports) — rapportering av gaver etter fond
+- [Registrere gaver](./recording-donations.md) — registrer de faktiske gavene som oppfyller løftene
+- [Fond](./funds.md) — sett opp fondet som skal knyttes til en kampanje
+- [Gaverapporter](./donation-reports.md) — rapportering av gaver etter fond

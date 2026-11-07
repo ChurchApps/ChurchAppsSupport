@@ -1,5 +1,6 @@
 ---
 title: "Integracije"
+description: "Povežite B1 Admin s Slack, Discord, Zapier, Make, Google Preglednicami in pomočniki umetne inteligence, kot je Claude, z navodili in dovoljenji API ključa."
 ---
 
 # Integracije
@@ -14,21 +15,21 @@ B1 se poveže z orodji, ki jih vaša ekipa že uporablja. Povežite Slack ali Di
 
 | Integracija | Kaj počne | Smer | Napor za nastavitev |
 |---|---|---|---|
-| **[Slack](./slack-discord)** | Objavlja berljiva obvestila (novi ljudje, darovi, prijave, …) v Slack kanal | B1 → Slack | 2 minuti |
-| **[Discord](./slack-discord)** | Enako, v Discord kanal | B1 → Discord | 2 minuti |
-| **[Zapier](./zapier)** | Uporablja dogodke B1 kot sprožilce in dejanja B1 v katerikoli od več kot 7.000 aplikacij Zapierja | Obojesmerno | 5–10 min na Zap |
-| **[Make](./make)** | Enaka zamisel kot Zapier, v vizualnem graditelju scenarijev Make | Obojesmerno | 5–10 min na scenarij |
-| **[Google Sheets](./google-sheets)** | Na zahtevo izvozi Osebe / Darove / Skupine / Udeležbo v preglednico | B1 → Preglednica | 5 minut |
-| **[Claude](./claude)** | Postavljajte vprašanja Anthropicovemu Claudeu o podatkih vaše cerkve, omejeno na vaša dovoljenja. Brezplačno za preizkus, priporočeno | Obojesmerno | Manj kot 3 minute |
-| **[ChatGPT](./chatgpt)** | Enaka zamisel z OpenAI-jevim ChatGPT-jem (potrebuje plačljiv paket ChatGPT) | Obojesmerno | 10 minut |
-| **[Povezane storitve](./services/)** | Izbrani recepti za Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Različno | 5–10 min vsaka |
+| **[Slack](./slack-discord.md)** | Objavlja berljiva obvestila (novi ljudje, darovi, prijave, …) v Slack kanal | B1 → Slack | 2 minuti |
+| **[Discord](./slack-discord.md)** | Enako, v Discord kanal | B1 → Discord | 2 minuti |
+| **[Zapier](./zapier.md)** | Uporablja dogodke B1 kot sprožilce in dejanja B1 v katerikoli od več kot 7.000 aplikacij Zapierja | Obojesmerno | 5–10 min na Zap |
+| **[Make](./make.md)** | Enaka zamisel kot Zapier, v vizualnem graditelju scenarijev Make | Obojesmerno | 5–10 min na scenarij |
+| **[Google Sheets](./google-sheets.md)** | Na zahtevo izvozi Osebe / Darove / Skupine / Udeležbo v preglednico | B1 → Preglednica | 5 minut |
+| **[Claude](./claude.md)** | Postavljajte vprašanja Anthropicovemu Claudeu o podatkih vaše cerkve, omejeno na vaša dovoljenja. Brezplačno za preizkus, priporočeno | Obojesmerno | Manj kot 3 minute |
+| **[ChatGPT](./chatgpt.md)** | Enaka zamisel z OpenAI-jevim ChatGPT-jem (potrebuje plačljiv paket ChatGPT) | Obojesmerno | 10 minut |
+| **[Povezane storitve](./services/index.md)** | Izbrani recepti za Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Različno | 5–10 min vsaka |
 
 ## Kako izbrati
 
 - **Samo želite obvestilo v klepetu?** Uporabite **Slack** ali **Discord**. Ne potrebujete računa tretje osebe in ne Zapa za vzdrževanje. Nastavi se v celoti znotraj B1Admin.
 - **Želite nekaj avtomatizirati med aplikacijami** (npr. »ko nekdo daruje, ga dodaj na moj seznam v Mailchimpu in v Slack #darovi«)? Uporabite **Zapier** ali **Make**. Zapier je prijaznejši; Make je pri večjem obsegu cenejši in ima bolj prilagodljivo logiko.
 - **Potrebujete enkraten izvoz podatkov ali načrtovano poročilo?** Uporabite **Google Sheets**. V stransko vrstico dodatka prilepite API ključ in kliknite Export.
-- **Želite v preprostem jeziku postavljati vprašanja** (»koliko prvoobiskovalcev je bilo prejšnjo nedeljo?«, »povzemi darove v tem mesecu«)? Začnite s **[Claude](./claude)**. Preizkus je brezplačen in nastavitev traja manj kot 3 minute. **[ChatGPT](./chatgpt)** deluje tudi, s plačljivim paketom. Claude se poveže s prijavo z vašim B1 računom, ChatGPT pa uporablja B1 API ključ.
+- **Želite v preprostem jeziku postavljati vprašanja** (»koliko prvoobiskovalcev je bilo prejšnjo nedeljo?«, »povzemi darove v tem mesecu«)? Začnite s **[Claude](./claude.md)**. Preizkus je brezplačen in nastavitev traja manj kot 3 minute. **[ChatGPT](./chatgpt.md)** deluje tudi, s plačljivim paketom. Claude se poveže s prijavo z vašim B1 računom, ChatGPT pa uporablja B1 API ključ.
 - **Gradite lastno integracijo po meri?** Nič od zgoraj. Komunicirajte neposredno z [REST API-jem](/docs/developer/api) z [API ključem](/docs/developer/api/api-keys) ali naročite strežnik, ki ga nadzorujete, na [webhooke](/docs/developer/api/webhooks).
 
 ## Kaj imajo skupnega
@@ -59,10 +60,10 @@ ChurchApps je brezplačen in odprtokoden. Slack/Discord, [`@churchapps/integrati
 
 ## Naslednji koraki
 
-- [Slack in Discord](./slack-discord): objavljanje obvestil v klepetu
-- [Zapier](./zapier): povezava z več kot 7.000 aplikacijami
-- [Make](./make): vizualna avtomatizacija delovnih tokov
-- [Google Sheets](./google-sheets): izvoz v preglednice
-- [Claude](./claude): vprašanja o podatkih vaše cerkve z Anthropicovim Claudeom
-- [ChatGPT](./chatgpt): vprašanja o podatkih vaše cerkve z OpenAI-jevim ChatGPT-jem
-- [Povezane storitve](./services/): recepti za posamezne storitve (Mailchimp, Donorbox, Clearstream, …)
+- [Slack in Discord](./slack-discord.md): objavljanje obvestil v klepetu
+- [Zapier](./zapier.md): povezava z več kot 7.000 aplikacijami
+- [Make](./make.md): vizualna avtomatizacija delovnih tokov
+- [Google Sheets](./google-sheets.md): izvoz v preglednice
+- [Claude](./claude.md): vprašanja o podatkih vaše cerkve z Anthropicovim Claudeom
+- [ChatGPT](./chatgpt.md): vprašanja o podatkih vaše cerkve z OpenAI-jevim ChatGPT-jem
+- [Povezane storitve](./services/index.md): recepti za posamezne storitve (Mailchimp, Donorbox, Clearstream, …)

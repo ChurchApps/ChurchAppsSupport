@@ -1,5 +1,6 @@
 ---
 title: "Správa odpovědí z formulářů"
+description: "Prohlížejte, tiskněte a přiřazujte odeslané formuláře v B1 Admin, předávejte odpovědi správné osobě a navazujte na návštěvní karty a modlitební prosby."
 ---
 
 # Správa odpovědí z formulářů

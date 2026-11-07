@@ -1,5 +1,7 @@
 ---
-title: "Pierwsze kroki"
+title: "Pierwsze kroki z ChurchApps: pierwsze 15 minut"
+sidebar_label: "Pierwsze kroki"
+description: "Konfiguracja nowego konta ChurchApps w kilku krokach: dane kościoła, import osób do B1 Admin, zaproszenie zespołu i wybór pierwszego projektu."
 ---
 
 # Pierwsze kroki

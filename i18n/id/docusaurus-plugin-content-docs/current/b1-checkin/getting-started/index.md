@@ -1,5 +1,7 @@
 ---
-title: "Memulai"
+title: "Memulai dengan B1 Checkin"
+sidebar_label: "Memulai"
+description: "Atur aplikasi kiosk B1 Checkin di tablet Android: pasang, masuk, pilih gereja Anda, dan opsional hubungkan printer label."
 ---
 
 # Memulai dengan B1 Church Checkin
@@ -27,9 +29,9 @@ Menyiapkan B1 Church Checkin hanya memakan waktu beberapa menit. Bagian ini mema
 
 Saat pertama kali membuka aplikasi, Anda akan melewati tiga langkah:
 
-1. **[Masuk](./logging-in)** -- Masukkan email dan kata sandi Anda untuk melakukan autentikasi.
-2. **[Pilih gereja Anda](./logging-in)** -- Jika akun Anda terhubung ke beberapa gereja, pilih gereja yang akan dilayani kios ini.
-3. **[Atur printer](./printer-setup)** -- Konfigurasikan printer jaringan untuk mencetak label, atau lewati langkah ini jika Anda tidak memerlukan label.
+1. **[Masuk](./logging-in.md)** -- Masukkan email dan kata sandi Anda untuk melakukan autentikasi.
+2. **[Pilih gereja Anda](./logging-in.md)** -- Jika akun Anda terhubung ke beberapa gereja, pilih gereja yang akan dilayani kios ini.
+3. **[Atur printer](./printer-setup.md)** -- Konfigurasikan printer jaringan untuk mencetak label, atau lewati langkah ini jika Anda tidak memerlukan label.
 
 Setelah masuk pertama kali, aplikasi menyimpan kredensial dan pilihan gereja Anda. Pada peluncuran berikutnya, aplikasi akan langsung melewati ke layar layanan secara otomatis.
 
@@ -43,6 +45,6 @@ Pastikan administrator gereja Anda telah mengonfigurasi layanan, jadwal layanan,
 
 ## Langkah Selanjutnya
 
-- [Masuk](./logging-in) -- Instruksi detail untuk masuk dan memilih gereja.
-- [Pengaturan Printer](./printer-setup) -- Cara menemukan, memilih, dan menguji printer label Anda.
-- [Alur Check-In](../check-in/) -- Pelajari alur check-in lengkap setelah kios Anda diatur.
+- [Masuk](./logging-in.md) -- Instruksi detail untuk masuk dan memilih gereja.
+- [Pengaturan Printer](./printer-setup.md) -- Cara menemukan, memilih, dan menguji printer label Anda.
+- [Alur Check-In](../check-in/index.md) -- Pelajari alur check-in lengkap setelah kios Anda diatur.

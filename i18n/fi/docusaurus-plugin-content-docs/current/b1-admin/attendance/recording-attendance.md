@@ -1,5 +1,6 @@
 ---
 title: "Läsnäolon kirjaaminen"
+description: "Kirjaa läsnäolo jokaisesta ryhmäkokoontumisesta B1 Adminissa: luo istunto, merkitse osallistujat, tallenna muistiinpanot ja tulosta tai vie taulukkoon."
 ---
 
 # Läsnäolon kirjaaminen

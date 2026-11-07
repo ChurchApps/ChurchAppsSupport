@@ -1,5 +1,7 @@
 ---
-title: "Check-In"
+title: "Check-in în portalul de membri B1.church"
+sidebar_label: "Check-In"
+description: "Înregistrează-te pe tine și membrii gospodăriei la o slujbă din portalul de membri B1.church, fără chioșc, și alege grupele."
 ---
 
 # Check-In

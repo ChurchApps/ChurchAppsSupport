@@ -1,5 +1,6 @@
 ---
 title: "Styring af fonde"
+description: "Opret og organisér donationsfonde i B1 Admin, angiv skattefradrag og donorsynlighed, og gennemgå fondstotaler og gavehistorik til rapportering."
 ---
 
 # Styring af fonde

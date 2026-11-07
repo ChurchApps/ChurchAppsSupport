@@ -1,5 +1,6 @@
 ---
 title: "Phát Lại Theo Lịch Trên TV"
+description: "TV FreePlay đã ghép nối tải trước tuần tới và phát theo đồng hồ, kể cả khi ngoại tuyến. Gồm bảng thông tin, nút điều khiển và ghim danh sách phát."
 ---
 
 # Phát Lại Theo Lịch Trên TV
@@ -13,8 +14,8 @@ Khi TV đã được ghép nối với một lịch, FreePlay sẽ tự động 
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Ghép nối TV với một lịch](./pairing-a-screen)
-- [Thêm nội dung vào lịch](./scheduling-the-calendar), hoặc đặt một vòng lặp mặc định cho nhóm của màn hình
+- [Ghép nối TV với một lịch](./pairing-a-screen.md)
+- [Thêm nội dung vào lịch](./scheduling-the-calendar.md), hoặc đặt một vòng lặp mặc định cho nhóm của màn hình
 
 </div>
 
@@ -40,7 +41,7 @@ Bảng cũng có ba nút:
 
 - **Ghim Danh Sách Phát Này** - Giữ nội dung hiện tại phát lặp lại và bỏ qua lịch. Chọn **Unpin Playlist** để quay lại lịch
 - **Duyệt Nội Dung** - Rời trình phát theo lịch để duyệt các nhà cung cấp nội dung đã kết nối
-- **Cài đặt** - Mở cài đặt FreePlay, nơi bạn có thể [hủy ghép nối hoặc ghép nối với một lịch khác](./pairing-a-screen#changing-or-unpairing-from-the-tv)
+- **Cài đặt** - Mở cài đặt FreePlay, nơi bạn có thể [hủy ghép nối hoặc ghép nối với một lịch khác](./pairing-a-screen.md#changing-or-unpairing-from-the-tv)
 
 :::tip
 Để quay lại lịch sau khi duyệt, nhấn **Back** trên điều khiển từ màn hình **Content Providers**, hoặc mở **Cài đặt**, chọn **Pair to a calendar**, rồi chọn **Back to schedule**. TV đã ghép nối cũng sẽ trở về trình phát theo lịch mỗi khi FreePlay được đưa trở lại màn hình chính, và luôn mở ra trình phát theo lịch.
@@ -77,6 +78,6 @@ Bạn cũng có thể phát lịch của một màn hình trong trình duyệt w
 
 ## Bài Viết Liên Quan
 
-- **[Lập Lịch Nội Dung](./scheduling-the-calendar)** - Đặt nội dung sẽ phát và hành vi khi nội dung kết thúc sớm
-- **[Quản Lý Màn Hình và Nhóm](./managing-screens)** - Kiểm tra các tệp đã tải của từng màn hình từ FreePlay Admin
-- **[Phát Nội Dung](../content-providers/playing-content)** - Điều khiển trình phát khi bạn tự phát nội dung
+- **[Lập Lịch Nội Dung](./scheduling-the-calendar.md)** - Đặt nội dung sẽ phát và hành vi khi nội dung kết thúc sớm
+- **[Quản Lý Màn Hình và Nhóm](./managing-screens.md)** - Kiểm tra các tệp đã tải của từng màn hình từ FreePlay Admin
+- **[Phát Nội Dung](../content-providers/playing-content.md)** - Điều khiển trình phát khi bạn tự phát nội dung

@@ -1,5 +1,6 @@
 ---
 title: "rapporter"
+description: "Find og kør de indbyggede rapporter i B1 Admin for fødselsdage, fremmødetrends, donationstotaler og auditloggen, afhængigt af hvilket afsnit du er i."
 ---
 
 # rapporter
@@ -14,12 +15,12 @@ Rapporter siden giver dig hurtig adgang til forudbyggede rapporter som hjælper 
 
 Rapporter siden viser rapportskort for hver tilgængelig rapport. Klik enhver kort for at åbne rapporten med dets filtre.
 
-- **[fødselsdag rapport](./birthday-report)** -- Se kommende fødselsdage for dine menigheds medlemmer.
-- **[tilstedeværelse tendens](./attendance-reports)** -- Se hvordan tilstedeværelse mønstre ændres over tid på tværs af dine tjenester.
-- **[gruppe tilstedeværelse](./attendance-reports)** -- Se tilstedeværelse totaler efter gruppe til et valgt dato område.
-- **[daglig gruppe tilstedeværelse](./attendance-reports)** -- få en dag-for-dag opbrydning af gruppe tilstedeværelse data.
-- **[donationsoversigt](./donation-summary)** -- Gennemgå givning totaler og trends til økonomisk planlægning.
-- **[revision log](./audit-log)** -- Spor alle ændringer og handlinger på tværs af dit kirke administrationssystem (fundet under indstillinger > revision log).
+- **[fødselsdag rapport](./birthday-report.md)** -- Se kommende fødselsdage for dine menigheds medlemmer.
+- **[tilstedeværelse tendens](./attendance-reports.md)** -- Se hvordan tilstedeværelse mønstre ændres over tid på tværs af dine tjenester.
+- **[gruppe tilstedeværelse](./attendance-reports.md)** -- Se tilstedeværelse totaler efter gruppe til et valgt dato område.
+- **[daglig gruppe tilstedeværelse](./attendance-reports.md)** -- få en dag-for-dag opbrydning af gruppe tilstedeværelse data.
+- **[donationsoversigt](./donation-summary.md)** -- Gennemgå givning totaler og trends til økonomisk planlægning.
+- **[revision log](./audit-log.md)** -- Spor alle ændringer og handlinger på tværs af dit kirke administrationssystem (fundet under indstillinger > revision log).
 
 ## Brug rapporter
 
@@ -38,7 +39,7 @@ Rapport data afhænger af konsekvent dataangivelse. Sørg for at dit hold er [sp
 
 ## Lær mere
 
-- [fødselsdag rapport](./birthday-report) -- Find og brug fødselsdag data.
-- [tilstedeværelse rapporter](./attendance-reports) -- Forstå de tre tilstedeværelse rapporter.
-- [donationsoversigt](./donation-summary) -- Gennemgå givning data og økonomiske sammendrags.
-- [revision log](./audit-log) -- Sporing af system aktivitet og ændringer.
+- [fødselsdag rapport](./birthday-report.md) -- Find og brug fødselsdag data.
+- [tilstedeværelse rapporter](./attendance-reports.md) -- Forstå de tre tilstedeværelse rapporter.
+- [donationsoversigt](./donation-summary.md) -- Gennemgå givning data og økonomiske sammendrags.
+- [revision log](./audit-log.md) -- Sporing af system aktivitet og ændringer.

@@ -1,5 +1,7 @@
 ---
-title: "今日のみことば"
+title: "B1 Mobile の今日の聖句"
+sidebar_label: "今日のみことば"
+description: "B1 Mobile で今日の聖句画面を開くと、スマートフォンまたはタブレットの向きに合わせたサイズの画像で、その日の聖句が毎日更新されて表示されます。"
 ---
 
 # 今日のみことば
@@ -13,7 +15,7 @@ title: "今日のみことば"
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- [B1 Mobileをインストール](../getting-started/installing)して、アカウントに[ログイン](../getting-started/logging-in)してください
+- [B1 Mobileをインストール](../getting-started/installing.md)して、アカウントに[ログイン](../getting-started/logging-in.md)してください
 - 所属する教会で「今日のみことば」機能が有効になっている必要があります
 
 </div>
@@ -46,5 +48,5 @@ title: "今日のみことば"
 
 ## 関連記事
 
-- [聖書](./bible) — 内蔵のリーダーで聖書の箇所を通して読めます
-- [説教](./sermons) — 教会で録画された説教を視聴できます
+- [聖書](./bible.md) — 内蔵のリーダーで聖書の箇所を通して読めます
+- [説教](./sermons.md) — 教会で録画された説教を視聴できます

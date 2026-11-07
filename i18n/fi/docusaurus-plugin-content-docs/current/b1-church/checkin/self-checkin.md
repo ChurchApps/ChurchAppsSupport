@@ -1,5 +1,7 @@
 ---
-title: "Itsepalvelusisäänkirjautuminen"
+title: "Itsesisäänkirjautuminen B1.church-jäsenportaalissa"
+sidebar_label: "Itsepalvelusisäänkirjautuminen"
+description: "Kirjaa itsesi ja perheesi palveluun B1.church-jäsenportaalista: valitse palveluajat ja ryhmät muutamassa nopeassa vaiheessa."
 ---
 
 # Itsepalvelusisäänkirjautuminen
@@ -45,7 +47,7 @@ Kun olet valinnut ryhmät kaikille osallistuville, napauta sivun alareunan paini
 
 Näet vahvistuksen siitä, että sisäänkirjautuminen on valmis ja osallistumisesi on tallennettu. Hetken kuluttua sivu palaa jumalanpalvelusluetteloon, valmiina seuraavaa sisäänkirjautumista varten.
 
-Jos kirkkosi tulostaa nimilappuja sisäänkirjautumisasemalla, näet sen sijaan tekstin **Olet kirjautunut sisään!**, QR-koodin ja turvakoodin. Näytä koodi sisäänkirjautumisasemalla nimilappujen tulostamiseksi ja napauta sen jälkeen **Valmis**. B1 Checkin -kioskilla napauta **Skannaa koodi** ja pidä QR-koodia kameran edessä. Katso [Puhelimella tehtävän sisäänkirjautumisen tarrojen tulostaminen](../../b1-checkin/check-in/looking-up-members#printing-labels-for-a-phone-check-in).
+Jos kirkkosi tulostaa nimilappuja sisäänkirjautumisasemalla, näet sen sijaan tekstin **Olet kirjautunut sisään!**, QR-koodin ja turvakoodin. Näytä koodi sisäänkirjautumisasemalla nimilappujen tulostamiseksi ja napauta sen jälkeen **Valmis**. B1 Checkin -kioskilla napauta **Skannaa koodi** ja pidä QR-koodia kameran edessä. Katso [Puhelimella tehtävän sisäänkirjautumisen tarrojen tulostaminen](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 Jos taloutesi on jo kirjattu sisään valitsemallesi jumalanpalvelukselle, **Kuka on paikalla** -otsikon viereen ilmestyy linkki **Näytä sisäänkirjautumiskoodi**. Napauta sitä, jos haluat palauttaa QR-koodin ja turvakoodin näkyviin, esimerkiksi jos suljit sivun ennen kuin ehdit sisäänkirjautumisasemalle.
 

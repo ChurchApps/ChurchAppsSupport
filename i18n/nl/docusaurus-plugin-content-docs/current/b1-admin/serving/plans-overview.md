@@ -1,5 +1,6 @@
 ---
 title: "Planoverzicht"
+description: "Krijg een totaaloverzicht van vrijwilligersroosters over veel diensten in B1 Admin, zie onbezette posities en vul of mail je team vanuit één raster."
 ---
 
 # Planoverzicht

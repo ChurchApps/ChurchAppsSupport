@@ -1,5 +1,7 @@
 ---
-title: "Tinklaraštis"
+title: "Tinklaraščio naršymas B1.church ir RSS srautai"
+sidebar_label: "Tinklaraštis"
+description: "Naršykite ir filtruokite bažnyčios tinklaraštį B1.church pagal kategoriją ar žymą, peržiūrėkite senesnius įrašus arba sekite naujus per RSS srautus."
 ---
 
 # Tinklaraštis

@@ -1,5 +1,6 @@
 ---
 title: "Statistik"
+description: "Hitta nedladdningar per studie, se vilka kyrkor som använder dina resurser och var de finns i Lessons.church-statistiken, med filter för datumintervall."
 ---
 
 # Statistik

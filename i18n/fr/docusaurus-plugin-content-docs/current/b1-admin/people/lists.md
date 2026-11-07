@@ -1,5 +1,6 @@
 ---
 title: "Listes Enregistrées"
+description: "Enregistrez une recherche de personnes dans B1 Admin sous forme de liste nommée, puis rechargez-la en un clic. Les listes restent actives, donc les nouveaux membres correspondants apparaissent automatiquement."
 ---
 
 # Listes Enregistrées

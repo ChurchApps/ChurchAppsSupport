@@ -1,5 +1,6 @@
 ---
 title: "Plány"
+description: "Zistite, na ktoré servisné plány ste priradení v B1.church, skontrolujte svoje pozície a termíny a prijmite alebo odmietnite priradenia z portálu členov."
 ---
 
 # Plány

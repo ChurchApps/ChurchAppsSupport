@@ -1,5 +1,6 @@
 ---
 title: "创建日历"
+description: "在 B1 Admin 中创建日历，关联小组或导入 .ics 文件，并在一个地方管理其活动、报名和备注。"
 ---
 
 # 创建日历
@@ -61,7 +62,7 @@ title: "创建日历"
 :::
 
 :::info
-如果你希望创建一个从全教会多个小组汇集活动的单一日历，请参阅[精选日历](curated-calendar)，了解更简便的方法。
+如果你希望创建一个从全教会多个小组汇集活动的单一日历，请参阅[精选日历](./curated-calendar.md)，了解更简便的方法。
 :::
 
 ## 添加和编辑活动 {#adding-and-editing-events}
@@ -75,7 +76,7 @@ title: "创建日历"
 - **Start** 和 **End**（开始和结束）、**Repeats**（重复）以及 **Visibility**（可见性）（**Public**（公开）或 **Private**（私密））。
 - **Tags**（标签）—— 以逗号分隔的标签，例如 `youth, students`。网站上的日历元素可以设置为只显示带有特定标签的活动。这与活动报名设置中显示的 **Tags** 字段相同。
 - **Who can view notes**（谁可以查看备注）和 **Who can post notes**（谁可以发布备注）—— 决定哪些人可以阅读和添加活动备注（参见[活动备注](#event-notes)）。可选择 **Staff only**（仅工作人员）（默认）、**Group leaders**（小组负责人，即活动所属小组的负责人）或 **Group members**（小组成员，即活动所属小组中的所有人，包括负责人）。
-- **Rooms**（房间）和 **Resources**（资源）—— 为活动预留空间和设备。参见[房间、资源与排期](rooms-resources)。
+- **Rooms**（房间）和 **Resources**（资源）—— 为活动预留空间和设备。参见[房间、资源与排期](./rooms-resources.md)。
 
 点击 **Save**。如果活动是重复性的，B1 会要求你确认，因为保存时会更新该系列中的每一次发生。
 
@@ -101,12 +102,12 @@ title: "创建日历"
    - **Registration Closes**（报名截止）—— 报名结束的日期和时间。
    - **Tags**（标签）—— 以逗号分隔的标签（例如"youth, retreat, vbs"），用于对可报名的活动进行分类。
    - **Registration Questions**（报名问题）—— 可选择附加一个[表单](../forms/creating-forms.md)，使报名者在报名时回答额外的问题（饮食限制、T恤尺码、紧急联系人等）。选择 **None** 则跳过问题。
-   - **Enable Waitlist**（启用候补名单）—— 当活动名额已满时，允许更多报名者加入候补名单，而不是被拒绝。参见[付费报名](paid-registrations#waitlist)。
+   - **Enable Waitlist**（启用候补名单）—— 当活动名额已满时，允许更多报名者加入候补名单，而不是被拒绝。参见[付费报名](./paid-registrations.md#waitlist)。
 4. 保存活动。
 
-对于付费活动，同一设置页面还允许你定义带价格的 **Attendee Types**（参与者类型）、可选的 **Selections**（附加选项）以及 **Discount Codes**（折扣码），付款通过教会的捐赠服务商收取。完整说明请参见[付费报名](paid-registrations)。
+对于付费活动，同一设置页面还允许你定义带价格的 **Attendee Types**（参与者类型）、可选的 **Selections**（附加选项）以及 **Discount Codes**（折扣码），付款通过教会的捐赠服务商收取。完整说明请参见[付费报名](./paid-registrations.md)。
 
-开启报名后，成员在 [B1 网站](../../b1-church/events/registering)或 [B1 移动应用](../../b1-mobile/events/registering)上查看活动时，会看到 **Register for this Event** 按钮。如果你附加了表单，报名者在报名过程中会看到 **Questions** 步骤，他们的回答会与报名信息一同保存。
+开启报名后，成员在 [B1 网站](../../b1-church/events/registering.md)或 [B1 移动应用](../../b1-mobile/events/registering.md)上查看活动时，会看到 **Register for this Event** 按钮。如果你附加了表单，报名者在报名过程中会看到 **Questions** 步骤，他们的回答会与报名信息一同保存。
 
 :::info
 报名问题仅适用于**未**标记为受限（Restricted）的表单。受限表单在报名过程中会被自动跳过而不显示，因此在为活动附加问题时，请使用未受限的表单。
@@ -126,7 +127,7 @@ title: "创建日历"
    - 当名额空出时，**Promote**（转正）候补中的报名
    - **Export CSV**（导出 CSV）—— 下载所有报名信息，包括参与者类型、附加选项、付款金额和问题回答
 
-如果活动附加了报名问题，详情页还会显示 **Unanswered questions only**（仅显示未回答问题）筛选器，便于快速找到尚未提交回答的报名者；每条已回答的报名记录上还会有 **View Answers**（查看回答）按钮，用于查看其答复。付费活动会增加 **Type**（类型）列、**Paid / Total**（已付 / 总额）列、各类型的人数统计，以及付款详情对话框——参见[付费报名](paid-registrations#the-registration-roster)。
+如果活动附加了报名问题，详情页还会显示 **Unanswered questions only**（仅显示未回答问题）筛选器，便于快速找到尚未提交回答的报名者；每条已回答的报名记录上还会有 **View Answers**（查看回答）按钮，用于查看其答复。付费活动会增加 **Type**（类型）列、**Paid / Total**（已付 / 总额）列、各类型的人数统计，以及付款详情对话框——参见[付费报名](./paid-registrations.md#the-registration-roster)。
 
 :::tip
 使用名额进度条可以监控活动报名的满员速度。当活动达到或超过名额时，进度条会变为红色。
@@ -134,7 +135,7 @@ title: "创建日历"
 
 ## 下一步
 
-- [精选日历](curated-calendar) —— 创建一个从多个小组汇集活动的日历
-- [付费报名](paid-registrations) —— 参与者类型、附加选项、折扣码、付款和候补名单
-- [活动报名指南](../guides/event-registration) —— 设置活动报名的分步指南
-- [日历概览](./) —— 返回日历概览页面
+- [精选日历](./curated-calendar.md) —— 创建一个从多个小组汇集活动的日历
+- [付费报名](./paid-registrations.md) —— 参与者类型、附加选项、折扣码、付款和候补名单
+- [活动报名指南](../guides/event-registration.md) —— 设置活动报名的分步指南
+- [日历概览](./index.md) —— 返回日历概览页面

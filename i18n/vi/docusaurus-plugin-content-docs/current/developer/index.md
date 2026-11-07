@@ -1,5 +1,6 @@
 ---
 title: "Tài liệu dành cho nhà phát triển"
+description: "Tìm đường trong tài liệu nhà phát triển ChurchApps: thiết lập cục bộ, hướng dẫn API và web, thư viện dùng chung, bản di động và triển khai."
 ---
 
 # Tài liệu dành cho nhà phát triển
@@ -24,16 +25,16 @@ Các đặc điểm chính:
 
 ## Nội dung của mục này
 
-- **[Thiết lập](setup/)** -- Môi trường phát triển cục bộ, yêu cầu tiên quyết và cấu hình
-  - [Yêu cầu tiên quyết](setup/prerequisites) -- Các công cụ và phần mềm cần thiết
-  - [Tổng quan dự án](setup/project-overview) -- Tất cả các dự án trong một cái nhìn
-  - [Biến môi trường](setup/environment-variables) -- Cấu hình các tệp `.env`
-- **[API](api/)** -- Thiết lập API cốt lõi cục bộ, khởi tạo cơ sở dữ liệu và cấu trúc module
-- **[Ứng dụng web](web-apps/)** -- Chạy B1Admin, B1App và LessonsApp cục bộ
-- **[Ứng dụng di động](mobile/)** -- Xây dựng B1Mobile và các ứng dụng Expo khác
-- **[Thư viện dùng chung](shared-libraries/)** -- Làm việc với Helpers, ApiHelper và AppHelper
-- **[Triển khai](deployment/)** -- Triển khai API, ứng dụng web và ứng dụng di động
-- **[Nhà cung cấp nội dung FreePlay](freeplay-content-provider)** -- Tích hợp thư viện bài học của bạn với FreePlay
+- **[Thiết lập](./setup/index.md)** -- Môi trường phát triển cục bộ, yêu cầu tiên quyết và cấu hình
+  - [Yêu cầu tiên quyết](./setup/prerequisites.md) -- Các công cụ và phần mềm cần thiết
+  - [Tổng quan dự án](./setup/project-overview.md) -- Tất cả các dự án trong một cái nhìn
+  - [Biến môi trường](./setup/environment-variables.md) -- Cấu hình các tệp `.env`
+- **[API](./api/index.md)** -- Thiết lập API cốt lõi cục bộ, khởi tạo cơ sở dữ liệu và cấu trúc module
+- **[Ứng dụng web](./web-apps/index.md)** -- Chạy B1Admin, B1App và LessonsApp cục bộ
+- **[Ứng dụng di động](./mobile/index.md)** -- Xây dựng B1Mobile và các ứng dụng Expo khác
+- **[Thư viện dùng chung](./shared-libraries/index.md)** -- Làm việc với Helpers, ApiHelper và AppHelper
+- **[Triển khai](./deployment/index.md)** -- Triển khai API, ứng dụng web và ứng dụng di động
+- **[Nhà cung cấp nội dung FreePlay](./freeplay-content-provider.md)** -- Tích hợp thư viện bài học của bạn với FreePlay
 
 ## Cộng đồng và tài nguyên
 

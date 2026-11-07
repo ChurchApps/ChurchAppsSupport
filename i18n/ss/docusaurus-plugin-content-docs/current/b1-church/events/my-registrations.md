@@ -1,5 +1,6 @@
 ---
 title: "Kubhaliswa Kwami"
+description: "Hlola simo sekubhalisa, khokha imali lesele, hlela labatawuya noma tengeto letengeteke, noma ukhansele kubhalisa emcimbini ku-portal yelilungu le-B1 Church."
 ---
 
 # Kubhaliswa Kwami
@@ -14,7 +15,7 @@ Likhasi le-**Registrations** eliphothalini yemalungu yindzawo yakho lekhaya kwaw
 <h4>Ngaphambi Kwekucala</h4>
 
 - Kudzingeka kutsi [ube ungenile](../getting-started/logging-in.md) — kubhaliswa kwetivakashi akuveli lapha
-- Kudzingeka kutsi ube nekubhaliswa lokungenani okukodwa. Bona [Kubhalisela Imicimbi](./registering).
+- Kudzingeka kutsi ube nekubhaliswa lokungenani okukodwa. Bona [Kubhalisela Imicimbi](./registering.md).
 
 </div>
 
@@ -64,5 +65,5 @@ Sikhala sakho siyakhululwa ngco. Nangabe umcimbi unelinye luhlu lwekulindza, umu
 
 ## Imibhalo Lehlobene
 
-- [Kubhalisela Imicimbi](./registering) -- Inchubo yekubhalisa, kufaka inkhokhelo kanye netiluhlu tekulindza
+- [Kubhalisela Imicimbi](./registering.md) -- Inchubo yekubhalisa, kufaka inkhokhelo kanye netiluhlu tekulindza
 - [Simo Sonkhe Semicimbi](./index.md) -- Cwaninga imicimbi letako

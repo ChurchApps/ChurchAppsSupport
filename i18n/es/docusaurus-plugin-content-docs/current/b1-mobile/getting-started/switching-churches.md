@@ -1,5 +1,6 @@
 ---
 title: "Cambiar de Iglesia"
+description: "Cambie entre iglesias en la aplicación B1 Mobile eligiendo una iglesia reciente o buscando por nombre, todo con un solo inicio de sesión de ChurchApps."
 ---
 
 # Cambiar de Iglesia
@@ -13,7 +14,7 @@ Si eres miembro de más de una iglesia, B1 Mobile facilita el cambio entre ellas
 <div class="prereqs">
 <h4>Antes de Comenzar</h4>
 
-- [Instala B1 Mobile](./installing) e [inicia sesión](./logging-in) en tu cuenta
+- [Instala B1 Mobile](./installing.md) e [inicia sesión](./logging-in.md) en tu cuenta
 
 </div>
 
@@ -24,7 +25,7 @@ Si eres miembro de más de una iglesia, B1 Mobile facilita el cambio entre ellas
 3. Aparece la pantalla de **Búsqueda de Iglesias**. Tus iglesias visitadas recientemente se muestran en la parte superior para un acceso rápido.
 4. Toca una iglesia reciente para cambiar a ella, o escribe en el campo de búsqueda para encontrar una iglesia diferente.
 
-Cuando cambias de iglesia, la aplicación se recarga con la imagen, los enlaces de navegación y el contenido de esa iglesia. Tu [panel de inicio](../dashboard/), [grupos](../groups/) y otros datos reflejarán la iglesia recién seleccionada.
+Cuando cambias de iglesia, la aplicación se recarga con la imagen, los enlaces de navegación y el contenido de esa iglesia. Tu [panel de inicio](../dashboard/index.md), [grupos](../groups/index.md) y otros datos reflejarán la iglesia recién seleccionada.
 
 ## Buscar una Iglesia
 

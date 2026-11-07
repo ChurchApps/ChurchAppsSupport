@@ -1,5 +1,6 @@
 ---
 title: "Likhasi Lasekhaya"
+description: "Thola indlela yakho ekhaya le-B1 Mobile, lapho tindzawo letisetjentiswa kakhulu titfolakala njengemakhadi lamakhulu, kanti netinye tisekhona ku-Quick Actions."
 ---
 
 # Likhasi Lasekhaya
@@ -24,7 +25,7 @@ Ngaphansi kwelikhadi lelikhulu, utawubona emakhadi lamabili **lakhonjiswako** la
 
 ## Tento Letisheshako
 
-Letinye tici letisele tivela ku-**Grid Yetento Letisheshako** ngaphansi kwemakhadi lakhonjiswako. Sici ngasinye sikhombisa luphawu (icon) kanye nelibeleta. Lawa ngutinye tonkhe tixhumanisi tekuhamba lelibandla lakho lelikuhlele, likupha kufinyelela kuko konkhe kusukela [emacembu](../groups/) ne[kunikela](../giving/) kuya [ekungeneni](../checkin/), [tinshumayelo](../content/sermons.md), nakunye lokunyenti.
+Letinye tici letisele tivela ku-**Grid Yetento Letisheshako** ngaphansi kwemakhadi lakhonjiswako. Sici ngasinye sikhombisa luphawu (icon) kanye nelibeleta. Lawa ngutinye tonkhe tixhumanisi tekuhamba lelibandla lakho lelikuhlele, likupha kufinyelela kuko konkhe kusukela [emacembu](../groups/index.md) ne[kunikela](../giving/index.md) kuya [ekungeneni](../checkin/index.md), [tinshumayelo](../content/sermons.md), nakunye lokunyenti.
 
 ## Indlela Simo Sekubukeka Lesiguqukako Ngayo
 
@@ -37,7 +38,7 @@ Simo sekubukeka kwelikhasi lasekhaya siyeva ngendlela lawusebentisa ngayo i-app.
 Nangabe ungakaze usebentise i-app, tici tivela ngendlela levamile lelibandla lakho leliyihlele. Ngekuhamba kwesikhatsi, likhasi lasekhaya liyaphindze lihlelwe kabusha kute lihambisane nemikhuba yakho.
 
 :::info
-Tici letitfolakala kulikhasi lakho lasekhaya tihlelwa ngumphatsi welibandla lakho nge-[B1 Admin](../../b1-admin/). Nangabe ungasiboni sici losilindzele, tsintsana nelihhovisi lelibandla lakho.
+Tici letitfolakala kulikhasi lakho lasekhaya tihlelwa ngumphatsi welibandla lakho nge-[B1 Admin](../../b1-admin/index.md). Nangabe ungasiboni sici losilindzele, tsintsana nelihhovisi lelibandla lakho.
 :::
 
 ## Kuvuselela Likhasi Lasekhaya

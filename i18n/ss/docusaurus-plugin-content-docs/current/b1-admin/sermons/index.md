@@ -1,5 +1,7 @@
 ---
-title: "Tintshumayelo"
+title: "Tinkhulumo ku-B1 Admin"
+sidebar_label: "Tintshumayelo"
+description: "Setela futsi uphatse thala lwetinkhulumo ku-B1 Admin, luhlu lwemavidiyo, sikhatsi sekusakaza ngqo, nekungenisa ngobuningi kusuka ku-YouTube noma Vimeo."
 ---
 
 # Tintshumayelo
@@ -20,27 +22,27 @@ Sigaba se-Tintshumayelo sihlelwe tibe tindzawo letine letiyinhloko:
 
 ### Tintshumayelo
 
-Engeta futsi uphatse tibhalo tetintshumayelo nga ngayinye emtsamweni wakho. Intshumayelo nga yinye ingafaka ekhatsi sihloko, umshumayeli, lusuku, inchazelo, sitfombe lesincane, kanye netixhumanisi kukucuketfwe kwevidiyo nome ye-audio. Ungaxhumanisa tintshumayelo ku-YouTube, Vimeo, Facebook, nome tixhumanisi tevidiyo letitsite. Buka [Kuphatsa Tintshumayelo](managing-sermons) kute utfole imininingwane lengephi.
+Engeta futsi uphatse tibhalo tetintshumayelo nga ngayinye emtsamweni wakho. Intshumayelo nga yinye ingafaka ekhatsi sihloko, umshumayeli, lusuku, inchazelo, sitfombe lesincane, kanye netixhumanisi kukucuketfwe kwevidiyo nome ye-audio. Ungaxhumanisa tintshumayelo ku-YouTube, Vimeo, Facebook, nome tixhumanisi tevidiyo letitsite. Buka [Kuphatsa Tintshumayelo](./managing-sermons.md) kute utfole imininingwane lengephi.
 
 ### Tinhlu
 
-Hlela tintshumayelo takho tibe tichungechunge nome imitsamo. Tinhlu tenta kubelula libandla lakho kutsi liphequle chungechunge lwetintshumayelo ngendlela lelungile. Luhlu ngalunye lunelo ligama, inchazelo, kanye nesitfombe lesincane. Buka [Tinhlu](playlists) kute utfole imininingwane lengephi.
+Hlela tintshumayelo takho tibe tichungechunge nome imitsamo. Tinhlu tenta kubelula libandla lakho kutsi liphequle chungechunge lwetintshumayelo ngendlela lelungile. Luhlu ngalunye lunelo ligama, inchazelo, kanye nesitfombe lesincane. Buka [Tinhlu](./playlists.md) kute utfole imininingwane lengephi.
 
 ### Tikhatsi Tekusakaza Bukhoma
 
-Lungisa shedyuli yekusakaza bukhoma yelibandla lakho. Hlela emakhonzo lenyakelako lasonto naso wonkhe, nome imicimbi yekwenteka kanye kanye, uphatse tilungiselelo tekucoca netevidiyo, futsi ulawule ngesikhatsi lapho umsakazo wakho utawucala khona. Bavakashi batakubona sikhatsi lesilandzelako lesilungisiwe senkhonzo ekhasini lakho lekusakaza. Buka [Kusakaza Bukhoma](live-streaming) kute utfole imiyalo yekuwulungisa.
+Lungisa shedyuli yekusakaza bukhoma yelibandla lakho. Hlela emakhonzo lenyakelako lasonto naso wonkhe, nome imicimbi yekwenteka kanye kanye, uphatse tilungiselelo tekucoca netevidiyo, futsi ulawule ngesikhatsi lapho umsakazo wakho utawucala khona. Bavakashi batakubona sikhatsi lesilandzelako lesilungisiwe senkhonzo ekhasini lakho lekusakaza. Buka [Kusakaza Bukhoma](./live-streaming.md) kute utfole imiyalo yekuwulungisa.
 
 ### Kungeniswa Ngebuningi
 
-Gcwalisa ngekushesha umtsamo wakho wetintshumayelo ngekungenisa emavidiyo ngebuningi kusuka ku-YouTube nome Vimeo. Le yindlela lesheshako kakhulu yekutfutsela kucuketfwe kwakho kwetintshumayelo lokuselokhona kuye ku-B1. Buka [Kungeniswa Ngebuningi](bulk-import) kute ucale.
+Gcwalisa ngekushesha umtsamo wakho wetintshumayelo ngekungenisa emavidiyo ngebuningi kusuka ku-YouTube nome Vimeo. Le yindlela lesheshako kakhulu yekutfutsela kucuketfwe kwakho kwetintshumayelo lokuselokhona kuye ku-B1. Buka [Kungeniswa Ngebuningi](./bulk-import.md) kute ucale.
 
 :::tip
-Uma ulungisa tintshumayelo kwekucala, cala ngekwakha [luhlu](playlists), bese [wengeta tintshumayelo nga ngayinye](managing-sermons) nome [uwangenise ngebuningi](bulk-import) kusuka ku-YouTube nome Vimeo.
+Uma ulungisa tintshumayelo kwekucala, cala ngekwakha [luhlu](./playlists.md), bese [wengeta tintshumayelo nga ngayinye](./managing-sermons.md) nome [uwangenise ngebuningi](./bulk-import.md) kusuka ku-YouTube nome Vimeo.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Kuphatsa Tintshumayelo](managing-sermons) -- Engeta futsi uhlele tintshumayelo nga ngayinye
-- [Tinhlu](playlists) -- Hlela tintshumayelo tibe tichungechunge
-- [Kusakaza Bukhoma](live-streaming) -- Lungisa shedyuli netilungiselelo takho tekusakaza bukhoma
-- [Kungeniswa Ngebuningi](bulk-import) -- Ngenisa tintshumayelo kusuka ku-YouTube nome Vimeo
+- [Kuphatsa Tintshumayelo](./managing-sermons.md) -- Engeta futsi uhlele tintshumayelo nga ngayinye
+- [Tinhlu](./playlists.md) -- Hlela tintshumayelo tibe tichungechunge
+- [Kusakaza Bukhoma](./live-streaming.md) -- Lungisa shedyuli netilungiselelo takho tekusakaza bukhoma
+- [Kungeniswa Ngebuningi](./bulk-import.md) -- Ngenisa tintshumayelo kusuka ku-YouTube nome Vimeo

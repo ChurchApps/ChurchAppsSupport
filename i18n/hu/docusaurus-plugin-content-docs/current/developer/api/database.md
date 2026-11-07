@@ -1,5 +1,6 @@
 ---
 title: "Adatbázis"
+description: "Ismerd meg, hogyan osztja szét a ChurchApps API az adatokat hat MySQL-adatbázisra, modulonként egyre, valamint hogyan konfiguráld és inicializáld a kapcsolatokat."
 ---
 
 # Adatbázis
@@ -13,8 +14,8 @@ A ChurchApps API **modulonkénti adatbázis** architektúrát használ. Az öt a
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **MySQL 8.0+** verziót – lásd: [Előfeltételek](../setup/prerequisites)
-- Állítsa be az adatbázis-kapcsolati karakterláncokat a `.env` fájlban – lásd: [Környezeti változók](../setup/environment-variables)
+- Telepítse a **MySQL 8.0+** verziót – lásd: [Előfeltételek](../setup/prerequisites.md)
+- Állítsa be az adatbázis-kapcsolati karakterláncokat a `.env` fájlban – lásd: [Környezeti változók](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Fontos tervezési döntések
 
 - **Egy adatbázis modulonként** – Minden modul saját MySQL-adatbázist használ, dedikált kapcsolatkezelő készlettel (a `KyselyPool` kezeli). Ez függetlenné teszi a modulokat, és lehetővé teszi a sémák önálló fejlesztését.
-- **Kizárólagos tulajdonjog** – Egy modul táblái kizárólag az adott modul saját kódja által olvashatók és írhatók. Ha egy másik modulnak van szüksége ezekre az adatokra, a tulajdonos modul átjáróját (gateway) hívja meg, nem pedig közvetlenül a táblákat kérdezi le – lásd: [Modulok közötti kommunikáció](./module-structure#cross-module-communication).
+- **Kizárólagos tulajdonjog** – Egy modul táblái kizárólag az adott modul saját kódja által olvashatók és írhatók. Ha egy másik modulnak van szüksége ezekre az adatokra, a tulajdonos modul átjáróját (gateway) hívja meg, nem pedig közvetlenül a táblákat kérdezi le – lásd: [Modulok közötti kommunikáció](./module-structure.md#cross-module-communication).
 - **Repository-minta ORM nélkül** – Az összes adateléréssel repository-osztályokon keresztül dolgozunk, amelyek a Kysely lekérdezésépítővel, típusos SQL-t építenek a modul sémája ellen. Ez teljes kontrollt ad a lekérdezések teljesítménye és viselkedése felett.
 - **Több bérlős (multi-tenant) felépítés** – Minden lekérdezés `churchId` szerint szűrt. Minden tábla tartalmaz `churchId` oszlopot, a repository-réteg pedig automatikusan biztosítja a bérlők elkülönítését.
 
@@ -129,5 +130,5 @@ Ez a korlátozás teszi valósággá a modulhatárokat: minden séma önállóan
 
 ## Kapcsolódó cikkek
 
-- **[Modulstruktúra](./module-structure)** – Hogyan szerveződnek a vezérlők és a repository-k az egyes modulokon belül
-- **[Helyi API-beállítás](./local-setup)** – Teljes, lépésről lépésre haladó telepítési útmutató
+- **[Modulstruktúra](./module-structure.md)** – Hogyan szerveződnek a vezérlők és a repository-k az egyes modulokon belül
+- **[Helyi API-beállítás](./local-setup.md)** – Teljes, lépésről lépésre haladó telepítési útmutató

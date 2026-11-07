@@ -1,12 +1,13 @@
 ---
 title: "Verkkosivujen reititys ja monisivustot"
+description: "Miten B1.church yhdistää alidomainit ja mukautetut domainit oikeaan seurakuntaan tai toissijaiseen sivustoon sekä Caddy-reunapalvelin, joka hoitaa mukautettujen domainien TLS:n."
 ---
 
 # Verkkosivujen reititys ja monisivustot
 
 <div class="article-intro">
 
-Yksi seurakunta voi nyt palvella useampaa erillistä verkkosivustoa, ja jokainen voi sijaita `*.b1.church`-aliverkkotunnuksessa tai täysin mukautetussa, seurakunnan omistamassa verkkotunnuksessa. Tämä sivu kuvaa rakentajan *alla* olevan reititystason: miten saapuva pyyntö ratkaistaan seurakunnaksi **ja** tietyksi sivustoksi, monisivustojen tietomallin (`siteId`-vartija, joka pitää kaikki aiemmin olemassa olleet sivustot ennallaan) sekä oman verkkotunnuksen reunan. Reunalla on EC2:lla itse ylläpidettävä Caddy-välityspalvelin, joka päättää TLS-yhteyden ja kirjoittaa kunkin seurakunnan verkkotunnuksen uudelleen sen `*.b1.church`-ylävirtaan. Siitä, mitä renderöityy, kun pyyntö on ratkaistu, eli sivujen, osioiden ja elementtien puusta, katso [Verkkosivurakentaja](./website-builder).
+Yksi seurakunta voi nyt palvella useampaa erillistä verkkosivustoa, ja jokainen voi sijaita `*.b1.church`-aliverkkotunnuksessa tai täysin mukautetussa, seurakunnan omistamassa verkkotunnuksessa. Tämä sivu kuvaa rakentajan *alla* olevan reititystason: miten saapuva pyyntö ratkaistaan seurakunnaksi **ja** tietyksi sivustoksi, monisivustojen tietomallin (`siteId`-vartija, joka pitää kaikki aiemmin olemassa olleet sivustot ennallaan) sekä oman verkkotunnuksen reunan. Reunalla on EC2:lla itse ylläpidettävä Caddy-välityspalvelin, joka päättää TLS-yhteyden ja kirjoittaa kunkin seurakunnan verkkotunnuksen uudelleen sen `*.b1.church`-ylävirtaan. Siitä, mitä renderöityy, kun pyyntö on ratkaistu, eli sivujen, osioiden ja elementtien puusta, katso [Verkkosivurakentaja](./website-builder.md).
 
 </div>
 
@@ -201,7 +202,7 @@ WHERE d.domainName NOT LIKE '%www.%'
 
 ### Nykytila: staattinen konfiguraatio, ei ajonaikaista tilaa
 
-Kone (Windows-EC2 pysyvän Elastic IP:n takana) ajaa Caddya **staattisesta Caddyfile-tiedostosta**. Siinä on on-demand TLS, jonka `ask` osoittaa polkuun `/membership/domains/authorize`, sekä isäntä→ylävirta-kartoitustiedosto. Ajastettu tehtävä päivittää sen viiden minuutin välein polusta `/membership/domains/hostmap` ja lopettaa sen Caddyn sulavaan `caddy reload`-komentoon. Konfiguraatio säilyy uudelleenkäynnistyksissä ilman ajonaikaista tilaa, eikä sitä tarvitse alustaa uudelleen. Tuntematon SNI **hylätään TLS-tasolla** (varmennetta ei luoda isännälle, jonka `authorize` hylkää). Valtuutettu mutta vielä kartoittamaton isäntä (uusi verkkotunnus synkronointi-ikkunassa) saa puhtaan 404-vastauksen. Uudet verkkotunnukset reititetään noin viiden minuutin kuluessa tallennuksesta. Varmenteet luodaan ensimmäisellä pyynnöllä. Rakennus, asennus, operointi ja kenttätestatut sudenkuopat: [Caddy-oman-verkkotunnuksen välityspalvelin](../deployment/caddy-proxy).
+Kone (Windows-EC2 pysyvän Elastic IP:n takana) ajaa Caddya **staattisesta Caddyfile-tiedostosta**. Siinä on on-demand TLS, jonka `ask` osoittaa polkuun `/membership/domains/authorize`, sekä isäntä→ylävirta-kartoitustiedosto. Ajastettu tehtävä päivittää sen viiden minuutin välein polusta `/membership/domains/hostmap` ja lopettaa sen Caddyn sulavaan `caddy reload`-komentoon. Konfiguraatio säilyy uudelleenkäynnistyksissä ilman ajonaikaista tilaa, eikä sitä tarvitse alustaa uudelleen. Tuntematon SNI **hylätään TLS-tasolla** (varmennetta ei luoda isännälle, jonka `authorize` hylkää). Valtuutettu mutta vielä kartoittamaton isäntä (uusi verkkotunnus synkronointi-ikkunassa) saa puhtaan 404-vastauksen. Uudet verkkotunnukset reititetään noin viiden minuutin kuluessa tallennuksesta. Varmenteet luodaan ensimmäisellä pyynnöllä. Rakennus, asennus, operointi ja kenttätestatut sudenkuopat: [Caddy-oman-verkkotunnuksen välityspalvelin](../deployment/caddy-proxy.md).
 
 ### Vanha ajonaikainen työntö: palautusreitti, poisto odottaa
 
@@ -209,8 +210,8 @@ Kone (Windows-EC2 pysyvän Elastic IP:n takana) ajaa Caddya **staattisesta Caddy
 
 ## Liittyvät sivut
 
-- [Caddy-oman-verkkotunnuksen välityspalvelin](../deployment/caddy-proxy): itse reunakone, eli uuden koneen asennus, WinSW-palvelu, kartoituksen synkronointitehtävä ja käytännön sudenkuopat
-- [Verkkosivurakentaja](./website-builder): sivu-, osio- ja elementtipuu, renderöijät, blogi, SEO ja tekoälyn tuottama sisältö (eli se, mitä renderöityy, kun pyyntö on ratkaistu seurakunnaksi tai sivustoksi)
-- [Sisältöpäätepisteet](../api/endpoints/content): REST-rajapinta sivuille, lohkoille, linkeille ja globaaleille tyyleille, jotka kaikki ymmärtävät nyt `?siteId=`-parametrin
-- [B1App](../web-apps/b1-app): Next.js-sovellus, joka isännöi middlewarea ja `[sdSlug]`-reititystä
-- [Verkkosovellusten käyttöönotto](../deployment/web-apps): miten B1App otetaan käyttöön Vercelissä
+- [Caddy-oman-verkkotunnuksen välityspalvelin](../deployment/caddy-proxy.md): itse reunakone, eli uuden koneen asennus, WinSW-palvelu, kartoituksen synkronointitehtävä ja käytännön sudenkuopat
+- [Verkkosivurakentaja](./website-builder.md): sivu-, osio- ja elementtipuu, renderöijät, blogi, SEO ja tekoälyn tuottama sisältö (eli se, mitä renderöityy, kun pyyntö on ratkaistu seurakunnaksi tai sivustoksi)
+- [Sisältöpäätepisteet](../api/endpoints/content.md): REST-rajapinta sivuille, lohkoille, linkeille ja globaaleille tyyleille, jotka kaikki ymmärtävät nyt `?siteId=`-parametrin
+- [B1App](../web-apps/b1-app.md): Next.js-sovellus, joka isännöi middlewarea ja `[sdSlug]`-reititystä
+- [Verkkosovellusten käyttöönotto](../deployment/web-apps.md): miten B1App otetaan käyttöön Vercelissä

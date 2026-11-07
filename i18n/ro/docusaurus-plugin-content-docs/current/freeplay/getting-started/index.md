@@ -1,5 +1,7 @@
 ---
-title: "Primii pași"
+title: "Primii pași cu aplicația TV FreePlay"
+sidebar_label: "Primii pași"
+description: "Configurați FreePlay pe Android TV, Fire TV sau Apple TV: instalați aplicația, deschideți-o prima dată și aflați comenzile telecomenzii și bara laterală."
 ---
 
 # Primii pași cu FreePlay
@@ -42,7 +44,7 @@ FreePlay rulează pe Fire TV (inclusiv pe noile stick-uri cu Vega OS), pe casete
 
 Când deschizi FreePlay pentru prima dată, vei vedea un ecran de întâmpinare animat cu logo-ul FreePlay. Aplicația verifică dacă există furnizori de conținut conectați anterior. Dacă ai conectat deja un furnizor, te va duce direct la browserul de conținut al acelui furnizor. În caz contrar, va deschide ecranul **Furnizori de conținut**, unde te poți conecta la prima ta sursă de conținut.
 
-Dacă televizorul este asociat unui calendar în [Modul programat](../scheduled-mode/), FreePlay sare peste toți acești pași și se deschide direct în playerul programat.
+Dacă televizorul este asociat unui calendar în [Modul programat](../scheduled-mode/index.md), FreePlay sare peste toți acești pași și se deschide direct în playerul programat.
 
 ## Navigarea cu telecomanda TV
 
@@ -62,13 +64,13 @@ Bara laterală se restrânge la o fâșie îngustă de pictograme când navighez
 
 Bara laterală afișează, de sus în jos:
 
-- **Planul de azi** -- Apare când televizorul este asociat unui plan. Consultă [Modul plan](../plan-mode/)
-- **Anunțuri** -- Apare după ce ai ales un dosar de anunțuri. Consultă [Anunțuri](../content-providers/announcements)
-- **Răsfoiește** -- Fiecare furnizor de conținut conectat pe care îl poți răsfoi. Consultă [Răsfoirea și descărcarea conținutului](../content-providers/browsing-content)
-- **Setări** -- În partea de jos a barei laterale. Deschide **Asociază cu un calendar** (asociază acest televizor cu un calendar sau plan -- consultă [Alegerea modului de asociere](./pairing-modes)), **Descărcări** (redă sau șterge conținutul salvat pe acest dispozitiv) și **Furnizori** (conectează furnizorii de conținut și alege dosarul de anunțuri)
+- **Planul de azi** -- Apare când televizorul este asociat unui plan. Consultă [Modul plan](../plan-mode/index.md)
+- **Anunțuri** -- Apare după ce ai ales un dosar de anunțuri. Consultă [Anunțuri](../content-providers/announcements.md)
+- **Răsfoiește** -- Fiecare furnizor de conținut conectat pe care îl poți răsfoi. Consultă [Răsfoirea și descărcarea conținutului](../content-providers/browsing-content.md)
+- **Setări** -- În partea de jos a barei laterale. Deschide **Asociază cu un calendar** (asociază acest televizor cu un calendar sau plan -- consultă [Alegerea modului de asociere](./pairing-modes.md)), **Descărcări** (redă sau șterge conținutul salvat pe acest dispozitiv) și **Furnizori** (conectează furnizorii de conținut și alege dosarul de anunțuri)
 
 ## Ce urmează
 
-- **[Alegerea modului de asociere](./pairing-modes)** - Află despre modurile diferite de a-ți conecta televizorul
-- **[Modul programat](../scheduled-mode/)** - Programează televizoarele tale cu FreePlay Admin
-- **[Furnizori de conținut](../content-providers/)** - Conectează-te la Lessons.church, Bible Project și altele
+- **[Alegerea modului de asociere](./pairing-modes.md)** - Află despre modurile diferite de a-ți conecta televizorul
+- **[Modul programat](../scheduled-mode/index.md)** - Programează televizoarele tale cu FreePlay Admin
+- **[Furnizori de conținut](../content-providers/index.md)** - Conectează-te la Lessons.church, Bible Project și altele

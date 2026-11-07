@@ -1,5 +1,6 @@
 ---
 title: "Planovaný režim"
+description: "Nastavte FreePlay TV, aby podle kalendáře ve FreePlay Admin přehrávaly playlisty: obrazovky se samy spouští a zastaví a hrají i při výpadku Wi-Fi."
 ---
 
 # Planovaný režim
@@ -18,16 +19,16 @@ FreePlay Admin používá vaše přihlášení k ChurchApps, stejné, jaké pou�
 
 FreePlay Admin má čtyři hlavní stránky, uvedené v horní části webu:
 
-- **[Obrazovky](./managing-screens)** - TV, které jste spárovali, jejich stav a **skupiny obrazovek**, do kterých patří. Obrazovky ve skupině sdílejí jeden kalendář a jednu výchozí smyčku
-- **[Playlisty](./building-playlists)** - Smyčky obrázků a videí, které vyberete od svých poskytovatelů obsahu
-- **[Kalendář](./scheduling-the-calendar)** - Co každá skupina obrazovek přehrává a kdy
-- **[Poskytovatelé](./building-playlists#connecting-providers)** - Zdroje obsahu, ze kterých vaše playlisty čerpají. Každého z nich připojíte jednou pro celý sbor
+- **[Obrazovky](./managing-screens.md)** - TV, které jste spárovali, jejich stav a **skupiny obrazovek**, do kterých patří. Obrazovky ve skupině sdílejí jeden kalendář a jednu výchozí smyčku
+- **[Playlisty](./building-playlists.md)** - Smyčky obrázků a videí, které vyberete od svých poskytovatelů obsahu
+- **[Kalendář](./scheduling-the-calendar.md)** - Co každá skupina obrazovek přehrává a kdy
+- **[Poskytovatelé](./building-playlists.md#connecting-providers)** - Zdroje obsahu, ze kterých vaše playlisty čerpají. Každého z nich připojíte jednou pro celý sbor
 
 Když nic není naplánováno, obrazovky skupiny přehrávají její **výchozí smyčku**. Pokud skupina výchozí smyčku nemá, obrazovky zhasnou.
 
 ## Jak se liší od režimu plánu
 
-- **[Režim plánu](../plan-mode/)** sleduje jeden typ bohoslužebního plánu z B1 Admin. Někdo stiskne na TV **Spustit plán** a lekce se přehraje, až to udělá
+- **[Režim plánu](../plan-mode/index.md)** sleduje jeden typ bohoslužebního plánu z B1 Admin. Někdo stiskne na TV **Spustit plán** a lekce se přehraje, až to udělá
 - **Planovaný režim** sleduje kalendář. Obsah začíná a končí v časech, které nastavíte, takže se hodí pro signalizaci v hale, smyčky oznámení a učebny, kde má být lekce spuštěná dříve, než kdokoli vejde
 
 Položka v kalendáři může přehrát i bohoslužebný plán. Při přidávání rozvrhu vyberte typ plánu v sekci **Bohoslužebné plány** a obrazovka přehraje ten plán, který je v B1 Admin aktuální pro daný týden. Patří sem i lekce Go Curriculum, a to i ty, které jste v plánu upravili. Obrazovka používá přihlášení ke Go Curriculum propojené s služebním odvětvím typu plánu v B1 Admin, nebo připojení sboru ke Go Curriculum, pokud odvětví žádné nemá.
@@ -49,8 +50,8 @@ Stiskněte **Ctrl+K** (na Macu **⌘K**) nebo klikněte na vyhledávací pole v 
 
 ## V této sekci
 
-- **[Párování obrazovky](./pairing-a-screen)** - Zobrazte kód na TV a spárujte jej ve FreePlay Admin
-- **[Správa obrazovek a skupin](./managing-screens)** - Kontrolujte stav a stahování a řaďte obrazovky do skupin
-- **[Připojení poskytovatelů a sestavení playlistů](./building-playlists)** - Propojte zdroje obsahu a vytvořte smyčky obrázků a videí
-- **[Plánování kalendáře](./scheduling-the-calendar)** - Určete, co se kdy přehraje, a co se stane, když položka skončí dříve
-- **[Přehrávání podle plánu na TV](./scheduled-playback)** - Co TV dělá samo od sebe a jak používat dálkový ovladač během přehrávání
+- **[Párování obrazovky](./pairing-a-screen.md)** - Zobrazte kód na TV a spárujte jej ve FreePlay Admin
+- **[Správa obrazovek a skupin](./managing-screens.md)** - Kontrolujte stav a stahování a řaďte obrazovky do skupin
+- **[Připojení poskytovatelů a sestavení playlistů](./building-playlists.md)** - Propojte zdroje obsahu a vytvořte smyčky obrázků a videí
+- **[Plánování kalendáře](./scheduling-the-calendar.md)** - Určete, co se kdy přehraje, a co se stane, když položka skončí dříve
+- **[Přehrávání podle plánu na TV](./scheduled-playback.md)** - Co TV dělá samo od sebe a jak používat dálkový ovladač během přehrávání

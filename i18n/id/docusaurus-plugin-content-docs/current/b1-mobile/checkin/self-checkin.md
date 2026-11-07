@@ -1,5 +1,7 @@
 ---
-title: "Check-In Mandiri"
+title: "Check-In Mandiri dari Aplikasi B1 Mobile"
+sidebar_label: "Check-In Mandiri"
+description: "Check-in diri Anda dan keluarga ke sebuah ibadah dari aplikasi B1 Mobile, termasuk memilih waktu ibadah dan menetapkan grup setiap orang."
 ---
 
 # Check-In Mandiri
@@ -13,7 +15,7 @@ Melakukan check-in dari B1 Mobile adalah proses sederhana dengan beberapa langka
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Instal B1 Mobile](../getting-started/installing) dan [masuk](../getting-started/logging-in) ke akun Anda
+- [Instal B1 Mobile](../getting-started/installing.md) dan [masuk](../getting-started/logging-in.md) ke akun Anda
 - Pastikan [anggota rumah tangga](../profile/household.md) Anda sudah diatur di profil Anda
 
 </div>

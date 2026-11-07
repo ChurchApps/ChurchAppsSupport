@@ -1,5 +1,6 @@
 ---
 title: "Memilih Layanan"
+description: "Pilih ibadah yang Anda hadiri di layar layanan B1 Checkin, yang menentukan waktu ibadah dan grup yang ditampilkan untuk sisa alur check-in."
 ---
 
 # Memilih Layanan
@@ -13,7 +14,7 @@ Langkah pertama setiap check-in adalah memilih layanan yang akan Anda ikuti. Lay
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- [Masuk](../getting-started/logging-in) ke aplikasi B1 Church Checkin dan pilih gereja Anda
+- [Masuk](../getting-started/logging-in.md) ke aplikasi B1 Church Checkin dan pilih gereja Anda
 - Pastikan administrator gereja Anda telah [mengatur layanan dan waktu layanan](../../b1-admin/attendance/setup.md) di B1 Admin
 
 </div>
@@ -24,11 +25,11 @@ Langkah pertama setiap check-in adalah memilih layanan yang akan Anda ikuti. Lay
 2. Anda akan melihat daftar semua layanan yang telah diatur untuk gereja Anda. Setiap layanan ditampilkan sebagai kartu yang berisi nama layanan (misalnya "Minggu Pagi" atau "Rabu Malam").
 3. Ketuk layanan yang akan Anda ikuti.
 
-Aplikasi kemudian memuat waktu layanan dan grup yang terkait dengan layanan tersebut, lalu membawa Anda ke [layar pencarian anggota](./looking-up-members).
+Aplikasi kemudian memuat waktu layanan dan grup yang terkait dengan layanan tersebut, lalu membawa Anda ke [layar pencarian anggota](./looking-up-members.md).
 
 ## Saat Check-In Belum Dibuka
 
-Jika administrator Anda memberikan waktu layanan [jadwal check-in](../../b1-admin/attendance/setup#setting-a-check-in-schedule), aplikasi hanya memungkinkan keluarga memilih waktu layanan tersebut saat jendela check-in-nya terbuka. Waktu layanan yang jendela check-in-nya sedang tertutup tetap muncul di [layar keluarga](./household-review), tetapi ditandai **Tutup** (misalnya, **Tutup · dibuka Min 9:30 AM**) dan tidak menampilkan tombol grup.
+Jika administrator Anda memberikan waktu layanan [jadwal check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), aplikasi hanya memungkinkan keluarga memilih waktu layanan tersebut saat jendela check-in-nya terbuka. Waktu layanan yang jendela check-in-nya sedang tertutup tetap muncul di [layar keluarga](./household-review.md), tetapi ditandai **Tutup** (misalnya, **Tutup · dibuka Min 9:30 AM**) dan tidak menampilkan tombol grup.
 
 Jika setiap waktu layanan untuk layanan yang Anda ketuk sedang tertutup, aplikasi akan memberi tahu kapan check-in dibuka, misalnya **"Check-in untuk layanan ini dibuka Min 9:30 AM."** (Jika waktu pembukaan tidak dapat ditampilkan, aplikasi menampilkan **"Check-in untuk layanan ini belum dibuka saat ini."**) Ketuk **Kembali** untuk kembali ke daftar layanan dan memilih layanan lain, atau tunggu hingga jendela dibuka lalu coba lagi.
 
@@ -56,4 +57,4 @@ Jika gereja Anda hanya memiliki satu layanan yang diatur, Anda tetap perlu menge
 
 ## Langkah Berikutnya
 
-Setelah memilih layanan, Anda akan [mencari keluarga Anda](./looking-up-members) menggunakan nomor telepon atau nama.
+Setelah memilih layanan, Anda akan [mencari keluarga Anda](./looking-up-members.md) menggunakan nomor telepon atau nama.

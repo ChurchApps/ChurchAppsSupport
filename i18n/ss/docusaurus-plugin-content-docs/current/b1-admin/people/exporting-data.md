@@ -1,5 +1,6 @@
 ---
 title: "Kukhipha Imininingwane"
+description: "Khipha bantfu kuma-CSV, tuhlu temalungu eliqembu, noma sigcino sesisekelo sonkhe se-B1 ku-B1 Admin, bese ubona lokusemkhatsini we-B1 Export Zip."
 ---
 
 # Kukhipha Imininingwane

@@ -1,5 +1,7 @@
 ---
-title: "Serviceorder"
+title: "Dienstvolgorde in B1 Admin"
+sidebar_label: "Serviceorder"
+description: "Stel in B1 Admin een dienstvolgorde in voor een aanbiddingsdienst: voeg liederen, lessen en eigen items toe, rangschik ze in secties en print het draaiboek."
 ---
 
 # Serviceorder

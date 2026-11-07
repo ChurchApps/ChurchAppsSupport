@@ -1,5 +1,7 @@
 ---
-title: "Profil"
+title: "Profil és hozzárendelt kártyák a B1 Mobile alkalmazásban"
+sidebar_label: "Profil"
+description: "Kezeld nevedet, elérhetőségeidet, háztartásodat és adatvédelmi láthatóságodat a B1 Mobile profilban, valamint kezeld a neked hozzárendelt munkakártyákat és feladatokat."
 ---
 
 # Profil
@@ -20,7 +22,7 @@ A **Profil** fülön megtekintheted és szerkesztheted a személyes adataidat, t
 
 ### Háztartás
 
-A **Háztartás** fülön láthatod a családtagjaidat és a szerepüket a háztartásodban. Ezt az információt olyan funkciók használják, mint a [bejelentkezés](../checkin/), ahol egyszerre jelentkeztetheted be az egész családodat.
+A **Háztartás** fülön láthatod a családtagjaidat és a szerepüket a háztartásodban. Ezt az információt olyan funkciók használják, mint a [bejelentkezés](../checkin/index.md), ahol egyszerre jelentkeztetheted be az egész családodat.
 
 ### Láthatóság
 
@@ -55,6 +57,6 @@ Koppints egy egyszerű feladatra, hogy lásd, kitől származik, kire vonatkozik
 
 ## Következő lépések
 
-- [Profil szerkesztése](./editing-profile) -- Nevedet, elérhetőségeidet és fényképedet frissítheted
-- [Háztartás](./household) -- Megtekintheted és kezelheted a családtagjaidat
-- [Adatvédelmi beállítások](./privacy-settings) -- Szabályozhatod, hogy mit láthatnak rólad mások
+- [Profil szerkesztése](./editing-profile.md) -- Nevedet, elérhetőségeidet és fényképedet frissítheted
+- [Háztartás](./household.md) -- Megtekintheted és kezelheted a családtagjaidat
+- [Adatvédelmi beállítások](./privacy-settings.md) -- Szabályozhatod, hogy mit láthatnak rólad mások

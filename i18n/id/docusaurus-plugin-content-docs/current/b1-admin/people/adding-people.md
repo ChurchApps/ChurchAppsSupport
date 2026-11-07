@@ -1,5 +1,6 @@
 ---
 title: "Menambahkan Orang"
+description: "Tambahkan orang ke basis data gereja di B1 Admin, isi detailnya, dan hubungkan anggota keluarga ke dalam rumah tangga untuk check-in dan pelaporan."
 ---
 
 # Menambahkan Orang

@@ -1,5 +1,6 @@
 ---
 title: "Grup Sohbetleri"
+description: "B1.church grup sohbetinde mesaj gönderme, düzenleme, tepki verme ve yönetme; duyurular ve lider moderasyon araçları dahil öğrenin."
 ---
 
 # Grup Sohbetleri

@@ -1,5 +1,6 @@
 ---
 title: "Stripe İçe Aktarma"
+description: "Stripe bağışlarını B1 Admin'e önizleme tabanlı bir içe aktarmayla çekin; her ödemeyi kaydetmeden önce yeni, zaten içe aktarılmış ya da atlanmış olarak işaretleyin."
 ---
 
 # Stripe İçe Aktarma

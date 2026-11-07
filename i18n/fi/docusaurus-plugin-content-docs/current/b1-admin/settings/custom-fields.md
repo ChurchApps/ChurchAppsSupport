@@ -1,5 +1,6 @@
 ---
 title: "Mukautetut kentät"
+description: "Määritä B1 Adminissa omia kenttiä henkilötietoihin, kuten taustatarkistuksen vanhenemispäivä tai paitakoko, ja hae ja suodata niiden perusteella."
 ---
 
 # Mukautetut kentät

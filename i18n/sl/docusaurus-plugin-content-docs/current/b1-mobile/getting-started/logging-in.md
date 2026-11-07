@@ -1,5 +1,7 @@
 ---
-title: "Prijava"
+title: "Prijava v B1 Mobile"
+sidebar_label: "Prijava"
+description: "Prijavite se v aplikacijo B1 Mobile z računom ChurchApps, registrirajte nov račun ali obnovite pozabljeno geslo s 6-mestno kodo."
 ---
 
 # Prijava
@@ -13,7 +15,7 @@ Aplikacija B1 Mobile uporablja isti račun ChurchApps, ki ga uporabljate na B1.c
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Namestite B1 Mobile](./installing) na svojo napravo iOS ali Android
+- [Namestite B1 Mobile](./installing.md) na svojo napravo iOS ali Android
 
 </div>
 
@@ -24,7 +26,7 @@ Aplikacija B1 Mobile uporablja isti račun ChurchApps, ki ga uporabljate na B1.c
 3. Vnesite svoj **e-poštni naslov** in **geslo**.
 4. Tapnite **Prijava**.
 
-Po prijavi boste preusmerjeni na [nadzorno ploščo](../dashboard/). Če še niste izbrali cerkve, vas bo aplikacija pozvala, naj poiščete in izberete cerkev.
+Po prijavi boste preusmerjeni na [nadzorno ploščo](../dashboard/index.md). Če še niste izbrali cerkve, vas bo aplikacija pozvala, naj poiščete in izberete cerkev.
 
 ## Ustvarjanje novega računa
 

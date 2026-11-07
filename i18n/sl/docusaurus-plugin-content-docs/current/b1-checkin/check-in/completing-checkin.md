@@ -1,5 +1,6 @@
 ---
 title: "Dokončanje prijave"
+description: "Dokončajte prijavo družine na kiosku v B1 Checkin, vključno z omejitvami sob, tiskanjem nalepk, varnostnimi kodami za prevzem in naslednjim korakom aplikacije."
 ---
 
 # Dokončanje prijave
@@ -13,9 +14,9 @@ Ko pregledate svoje gospodinjstvo in po potrebi dodelite skupine, ste pripravlje
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Preglejte svoje gospodinjstvo](./household-review) na zaslonu za pregled gospodinjstva
-- [Dodelite skupine](./group-assignment) vsem družinskim članom, ki se morajo prijaviti v določen razred ali program
-- Po želji [dodajte goste](./adding-guests), ki so na obisku pri vaši družini
+- [Preglejte svoje gospodinjstvo](./household-review.md) na zaslonu za pregled gospodinjstva
+- [Dodelite skupine](./group-assignment.md) vsem družinskim članom, ki se morajo prijaviti v določen razred ali program
+- Po želji [dodajte goste](./adding-guests.md), ki so na obisku pri vaši družini
 
 </div>
 
@@ -28,10 +29,10 @@ To je vse, kar je potrebno. Udeležba vaše družine je zabeležena.
 
 ## Polne sobe in razmerja prostovoljcev
 
-Če je vaša cerkev na svojih sobah nastavila [varnostne omejitve](../../b1-admin/attendance/checkin-safety), jih strežnik preveri, preden shrani podatke:
+Če je vaša cerkev na svojih sobah nastavila [varnostne omejitve](../../b1-admin/attendance/checkin-safety.md), jih strežnik preveri, preden shrani podatke:
 
 - Če je izbrana soba **polna ali zaprta**, prijava ni uspešna in aplikacija navede sobo, da lahko izberete drugo.
-- Če ima termin bogoslužja [urnik prijav](../../b1-admin/attendance/setup#setting-a-check-in-schedule) in njegovo okno za prijavo trenutno ni odprto, je prijava v sobe tega termina prav tako zavrnjena. Zaslon **Prijava še ni mogoča** prikaže sobo z razlogom »prijava trenutno ni odprta«; dotaknite se **Spremeni sobe**, da izberete drugi termin ali skupino. (Termini, ki so že zaprti, so na [zaslonu za gospodinjstvo](./household-review) označeni kot **Zaprto** in jih ni mogoče izbrati, zato boste to običajno videli le, če se okno zapre med samo prijavo.)
+- Če ima termin bogoslužja [urnik prijav](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) in njegovo okno za prijavo trenutno ni odprto, je prijava v sobe tega termina prav tako zavrnjena. Zaslon **Prijava še ni mogoča** prikaže sobo z razlogom »prijava trenutno ni odprta«; dotaknite se **Spremeni sobe**, da izberete drugi termin ali skupino. (Termini, ki so že zaprti, so na [zaslonu za gospodinjstvo](./household-review.md) označeni kot **Zaprto** in jih ni mogoče izbrati, zato boste to običajno videli le, če se okno zapre med samo prijavo.)
 - Gospodinjstvo, ki se je prijavilo na prejšnji termin bogoslužja, se lahko kasneje vrne in doda odprt termin, tudi potem ko je prejšnje okno že zaprto. Njihove obstoječe prijave ostanejo shranjene in ne povzročijo, da bi bila nova prijava zavrnjena.
 - Če v otroški sobi za svoje razmerje zmanjkuje **prostovoljcev**, aplikacija bodisi prikaže opozorilo, ki ga lahko potrdi član osebja, da nadaljuje, bodisi prijavo popolnoma blokira – odvisno od tega, kako je vaša cerkev nastavila uveljavljanje razmerij.
 
@@ -49,7 +50,7 @@ Ista varnostna koda je navedena tako na otrokovi nalepki z imenom kot na starše
 Varnostna koda se ob vsaki prijavi ustvari na novo in vsebuje samo soglasnike in številke (samoglasniki so izključeni, da ne tvorijo neprimernih besed).
 
 :::warning
-Če se nalepke ne natisnejo, odprite nastavitve skrbnika tako, da se sedemkrat dotaknete **logotipa cerkve**, nato se dotaknite **Spremeni tiskalnik** in preverite povezavo s tiskalnikom. Korake za odpravljanje težav najdete v [namestitvi tiskalnika](../getting-started/printer-setup).
+Če se nalepke ne natisnejo, odprite nastavitve skrbnika tako, da se sedemkrat dotaknete **logotipa cerkve**, nato se dotaknite **Spremeni tiskalnik** in preverite povezavo s tiskalnikom. Korake za odpravljanje težav najdete v [namestitvi tiskalnika](../getting-started/printer-setup.md).
 :::
 
 ## Kaj se zgodi po prijavi

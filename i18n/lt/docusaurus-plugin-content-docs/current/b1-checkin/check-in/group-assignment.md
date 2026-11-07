@@ -1,5 +1,6 @@
 ---
 title: "Grupų priskyrimas"
+description: "Pasirinkite šeimos nario grupę ar klasę kiekvienam pamaldų laikui B1 Checkin: kategorijos, amžiaus gairės ir parinktis Nėra."
 ---
 
 # Grupų priskyrimas
@@ -13,7 +14,7 @@ Kai peržiūros ekrane paliečiate pamaldų laiko mygtuką, programa atidaro gru
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- [Peržiūrėkite savo šeimą](./household-review) šeimos peržiūros ekrane
+- [Peržiūrėkite savo šeimą](./household-review.md) šeimos peržiūros ekrane
 - Išskleiskite narį, kurį norite priskirti, ir palieskite pamaldų laiko mygtuką
 - Įsitikinkite, kad jūsų bažnyčios administratorius yra [sukūręs grupes](../../b1-admin/groups/creating-groups.md) ir susiejęs jas su pamaldų laikais B1 Admin sistemoje
 
@@ -34,7 +35,7 @@ Palieskite kategorijos kortelę, kad ją išskleistumėte ir pamatytumėte joje 
 2. Peržiūrėkite tos kategorijos grupių sąrašą. Prie kiekvienos grupės pavadinimo dešinėje rodoma pasirinkimo piktograma.
 3. Palieskite **grupės pavadinimą**, kurią norite priskirti.
 
-Programa išsaugo jūsų pasirinkimą ir grąžina jus į [šeimos peržiūros ekraną](./household-review). Tam nariui skirtas pamaldų laiko mygtukas dabar rodys jūsų pasirinktos grupės pavadinimą.
+Programa išsaugo jūsų pasirinkimą ir grąžina jus į [šeimos peržiūros ekraną](./household-review.md). Tam nariui skirtas pamaldų laiko mygtukas dabar rodys jūsų pasirinktos grupės pavadinimą.
 
 ## Amžiaus ir klasės gairės
 
@@ -52,7 +53,7 @@ Pasirinkimą **Nėra** naudokite suaugusiems, kurie lankys pagrindines pamaldas 
 
 Norėdami pakeisti jau atliktą grupės priskyrimą:
 
-1. Grįžkite į [šeimos peržiūros ekraną](./household-review).
+1. Grįžkite į [šeimos peržiūros ekraną](./household-review.md).
 2. Išskleiskite narį, kurio grupę norite pakeisti.
 3. Palieskite pamaldų laiko mygtuką (jame dabar rodomas šiuo metu priskirtos grupės pavadinimas).
 4. Pasirinkite kitą grupę arba palieskite **Nėra**.
@@ -63,8 +64,8 @@ Grupes ir kategorijas B1 Admin sistemoje konfigūruoja jūsų bažnyčios admini
 
 ## Kiti žingsniai
 
-Priskyrę grupes, grįžkite į [šeimos peržiūros ekraną](./household-review), kad:
+Priskyrę grupes, grįžkite į [šeimos peržiūros ekraną](./household-review.md), kad:
 
 - priskirtumėte grupes papildomiems šeimos nariams;
-- [pridėtumėte svečią](./adding-guests), jei kas nors atvyksta kartu su jūsų šeima;
-- [baigtumėte registraciją](./completing-checkin), kai visi priskyrimai paruošti.
+- [pridėtumėte svečią](./adding-guests.md), jei kas nors atvyksta kartu su jūsų šeima;
+- [baigtumėte registraciją](./completing-checkin.md), kai visi priskyrimai paruošti.

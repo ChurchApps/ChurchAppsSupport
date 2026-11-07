@@ -1,5 +1,7 @@
 ---
-title: "Itsepalveluna sisäänkirjautuminen"
+title: "Itsepalvelukirjautuminen B1 Mobile -sovelluksella"
+sidebar_label: "Itsepalveluna sisäänkirjautuminen"
+description: "Kirjaa itsesi ja perheesi palveluun B1 Mobile -sovelluksella, mukaan lukien palveluajan valinta ja kunkin henkilön ryhmän määrittäminen."
 ---
 
 # Itsepalveluna sisäänkirjautuminen
@@ -13,7 +15,7 @@ Sisäänkirjautuminen B1 Mobilesta on suoraviivainen, useita vaiheita sisältäv
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Varmista, että [kotitalouden jäsenet](../profile/household.md) on lisätty profiiliisi
 
 </div>

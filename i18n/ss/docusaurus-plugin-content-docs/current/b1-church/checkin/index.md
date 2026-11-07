@@ -1,5 +1,7 @@
 ---
-title: "Kungena"
+title: "Kungena ku-Portal Yelilungu le-B1.church"
+sidebar_label: "Kungena"
+description: "Ngena wena nemndeni wakho ku-tinkhonzo temasonto ku-portal yelilungu le-B1.church, udlule ku-kiosk futsi wabele emaqembu."
 ---
 
 # Kungena

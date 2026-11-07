@@ -1,5 +1,6 @@
 ---
 title: "Style nawigacji"
+description: "Dostosuj kolory pasków nawigacji witryny B1 Admin, zarówno pełnych, jak i przezroczystych, w tym stany linków, najechania i aktywny dla witryny kościoła."
 ---
 
 # Style nawigacji

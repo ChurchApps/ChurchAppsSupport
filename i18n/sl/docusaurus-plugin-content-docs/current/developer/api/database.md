@@ -1,5 +1,6 @@
 ---
 title: "Baza podatkov"
+description: "Spoznajte, kako API ChurchApps razdeli podatke na šest baz MySQL, po eno za vsak modul, ter kako nastaviti in inicializirati povezave."
 ---
 
 # Baza podatkov
@@ -13,8 +14,8 @@ API ChurchApps uporablja arhitekturo **baza-na-modul**. Vsak od šestih podatkov
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Namestite **MySQL 8.0+** -- glejte [Predpogoji](../setup/prerequisites)
-- Nastavite nize za povezavo z bazo podatkov v datoteki `.env` -- glejte [Okoljske spremenljivke](../setup/environment-variables)
+- Namestite **MySQL 8.0+** -- glejte [Predpogoji](../setup/prerequisites.md)
+- Nastavite nize za povezavo z bazo podatkov v datoteki `.env` -- glejte [Okoljske spremenljivke](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Ključne oblikovalske odločitve
 
 - **Ena baza na modul** -- Vsak modul vzdržuje svojo bazo MySQL z namenskim bazenom povezav (upravlja ga `KyselyPool`). To ohranja module neodvisne in omogoča samostojno razvijanje sheme.
-- **Izključna lastništva** -- Tabele modula berejo in pišejo izključno kode tega modula. Ko drug modul potrebuje podatke, pokliče prehod (gateway) lastniškega modula, namesto da bi sam poizvedoval po tabelah -- glejte [Komunikacija med moduli](./module-structure#cross-module-communication).
+- **Izključna lastništva** -- Tabele modula berejo in pišejo izključno kode tega modula. Ko drug modul potrebuje podatke, pokliče prehod (gateway) lastniškega modula, namesto da bi sam poizvedoval po tabelah -- glejte [Komunikacija med moduli](./module-structure.md#cross-module-communication).
 - **Vzorec repozitorija brez ORM** -- Ves dostop do podatkov poteka prek razredov repozitorijev, ki z gradnikom poizvedb Kysely sestavljajo tipizirane SQL-poizvedbe nad shemo modula. To omogoča popoln nadzor nad zmogljivostjo in vedenjem poizvedb.
 - **Zasnova za več najemnikov** -- Vsaka poizvedba je omejena na `churchId`. Vse tabele vsebujejo stolpec `churchId`, sloj repozitorijev pa samodejno uveljavlja ločenost najemnikov.
 
@@ -129,5 +130,5 @@ Ta omejitev naredi meje modulov resnične: vsaka shema se lahko razvija neodvisn
 
 ## Sorodni članki
 
-- **[Struktura modula](./module-structure)** -- Kako so krmilniki in repozitoriji organizirani znotraj vsakega modula
-- **[Lokalna namestitev API-ja](./local-setup)** -- Celoten korak za korakom vodnik za namestitev
+- **[Struktura modula](./module-structure.md)** -- Kako so krmilniki in repozitoriji organizirani znotraj vsakega modula
+- **[Lokalna namestitev API-ja](./local-setup.md)** -- Celoten korak za korakom vodnik za namestitev

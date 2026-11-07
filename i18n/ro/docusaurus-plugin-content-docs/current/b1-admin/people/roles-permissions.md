@@ -1,5 +1,6 @@
 ---
 title: "Atribuirea rolurilor"
+description: "Atribuiți roluri în B1 Admin pentru ca personalul și voluntarii să acceseze doar zonele de persoane, donații, prezență și grupuri de care au nevoie."
 ---
 
 # Atribuirea rolurilor

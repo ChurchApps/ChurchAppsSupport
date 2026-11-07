@@ -1,5 +1,7 @@
 ---
-title: "Werset dnia"
+title: "Werset dnia w B1 Mobile"
+sidebar_label: "Werset dnia"
+description: "Otwórz ekran Werset dnia w B1 Mobile, by zobaczyć dzisiejszy werset jako obraz dopasowany do orientacji telefonu lub tabletu, aktualizowany codziennie."
 ---
 
 # Werset dnia
@@ -13,7 +15,7 @@ Ekran Werset dnia wyświetla codzienny werset biblijny jako ładnie sformatowany
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Zainstaluj B1 Mobile](../getting-started/installing) i [zaloguj się](../getting-started/logging-in) do swojego konta
+- [Zainstaluj B1 Mobile](../getting-started/installing.md) i [zaloguj się](../getting-started/logging-in.md) do swojego konta
 - Twój kościół musi mieć włączoną funkcję Werset dnia
 
 </div>
@@ -46,5 +48,5 @@ Werset dnia to wbudowana funkcja treści aplikacji B1 Mobile. Jeśli nie widzisz
 
 ## Powiązane artykuły
 
-- [Biblia](./bible) -- Czytaj pełne fragmenty Pisma Świętego we wbudowanym czytniku
-- [Kazania](./sermons) -- Oglądaj nagrane kazania ze swojego kościoła
+- [Biblia](./bible.md) -- Czytaj pełne fragmenty Pisma Świętego we wbudowanym czytniku
+- [Kazania](./sermons.md) -- Oglądaj nagrane kazania ze swojego kościoła

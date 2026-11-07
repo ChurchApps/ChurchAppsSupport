@@ -1,5 +1,7 @@
 ---
-title: "Atlikti aukojimą"
+title: "Aukų teikimas B1.church narių portale"
+sidebar_label: "Atlikti aukojimą"
+description: "Aukokite bažnyčiai vienkartinę ar pasikartojančią auką per B1.church, su paskyra ar be jos, ir vėliau peržiūrėkite savo aukojimų istoriją."
 ---
 
 # Atlikti aukojimą

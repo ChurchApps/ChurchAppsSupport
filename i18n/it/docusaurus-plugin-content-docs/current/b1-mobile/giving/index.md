@@ -1,5 +1,7 @@
 ---
-title: "Offerte"
+title: "Offerte nell'app B1 Mobile"
+sidebar_label: "Offerte"
+description: "Fai un'offerta in B1 Mobile, controlla le donazioni dell'anno e gestisci i metodi di pagamento salvati. Schede: Panoramica, Dona, Gestisci e Storico."
 ---
 
 # Offerte
@@ -24,7 +26,7 @@ La sezione offerte è organizzata in quattro schede:
 Tutte le donazioni effettuate tramite B1 Mobile sono elaborate in modo sicuro attraverso **Stripe**. Le tue informazioni di pagamento sono gestite dall'infrastruttura sicura di Stripe e non vengono mai memorizzate sui server ChurchApps. Puoi donare con fiducia sapendo che i tuoi dati finanziari sono protetti.
 
 :::info
-L'amministratore della tua chiesa configura i fondi disponibili e l'elaborazione dei pagamenti tramite [B1 Admin](../../b1-admin/). Se non vedi un'opzione di offerta nell'app, la tua chiesa potrebbe non aver ancora configurato questa funzionalità.
+L'amministratore della tua chiesa configura i fondi disponibili e l'elaborazione dei pagamenti tramite [B1 Admin](../../b1-admin/index.md). Se non vedi un'opzione di offerta nell'app, la tua chiesa potrebbe non aver ancora configurato questa funzionalità.
 :::
 
 ## Cosa Puoi Fare
@@ -38,6 +40,6 @@ Ecco cosa puoi fare dalla sezione offerte:
 
 ## Prossimi Passi
 
-- [Effettuare una Donazione](./making-donations) -- Scopri come fare un'offerta dall'app
-- [Gestione dei Metodi di Pagamento](./managing-payments) -- Aggiungi o rimuovi metodi di pagamento salvati
-- [Cronologia Donazioni](./donation-history) -- Visualizza il riepilogo delle offerte e le donazioni passate
+- [Effettuare una Donazione](./making-donations.md) -- Scopri come fare un'offerta dall'app
+- [Gestione dei Metodi di Pagamento](./managing-payments.md) -- Aggiungi o rimuovi metodi di pagamento salvati
+- [Cronologia Donazioni](./donation-history.md) -- Visualizza il riepilogo delle offerte e le donazioni passate

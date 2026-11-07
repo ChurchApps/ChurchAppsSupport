@@ -1,5 +1,6 @@
 ---
 title: "Gruppers sundhed"
+description: "Tjek gruppers sundhed i B1 Admin med en 90-dages oversigt over medlemmer, tilgang, afgang, frafald og fremmøde for at finde grupper til opfølgning."
 ---
 
 # Gruppers sundhed
@@ -13,8 +14,8 @@ Dashboardet for gruppers sundhed giver dig et overblik over, hvordan alle dine g
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Du skal have mindst nogle få grupper med medlemmer for at se meningsfulde data. Se [Oprettelse af grupper](creating-groups).
-- Deltagelsesdata hentes fra registrerede sessioner. Se afsnittet [Deltagelse](../attendance/).
+- Du skal have mindst nogle få grupper med medlemmer for at se meningsfulde data. Se [Oprettelse af grupper](./creating-groups.md).
+- Deltagelsesdata hentes fra registrerede sessioner. Se afsnittet [Deltagelse](../attendance/index.md).
 
 </div>
 
@@ -48,6 +49,6 @@ Ved at klikke på et gruppenavn kommer du direkte til gruppens detaljeside, hvor
 
 ## Relaterede artikler
 
-- [Oprettelse af grupper](creating-groups) — opsæt grupper
-- [Gruppemedlemmer](group-members) — administrer gruppemedlemskab
-- [Registrering af deltagelse](../attendance/tracking-attendance) — registrer deltagelsessessioner, der fodrer dette dashboard
+- [Oprettelse af grupper](./creating-groups.md) — opsæt grupper
+- [Gruppemedlemmer](./group-members.md) — administrer gruppemedlemskab
+- [Registrering af deltagelse](../attendance/tracking-attendance.md) — registrer deltagelsessessioner, der fodrer dette dashboard

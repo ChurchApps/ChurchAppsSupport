@@ -1,5 +1,6 @@
 ---
 title: "Datasikkerhet"
+description: "Se hvordan ChurchApps beskytter menighetens data i B1 Admin, fra hashede passord og HTTPS til separate databaser og verktøy for GDPR-data."
 ---
 
 # Datasikkerhet

@@ -1,5 +1,6 @@
 ---
 title: "Dersleri Özelleştirme"
+description: "Bir Lessons.church dersinde bölümleri ve rolleri kaldırın, gizleyin veya yeniden sıralayın; değişikliklerin tek bir sınıfa mı yoksa tüm sınıflara mı uygulanacağını seçin."
 ---
 
 # Dersleri Özelleştirme

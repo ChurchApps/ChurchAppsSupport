@@ -1,5 +1,6 @@
 ---
 title: "创建你的账号"
+description: "在 B1.church 注册 ChurchApps 账户，验证电子邮件，并创建或加入教会，以便开始设置 B1 Admin。"
 ---
 
 # 创建你的账号

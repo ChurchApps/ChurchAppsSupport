@@ -1,5 +1,6 @@
 ---
 title: "Ghi chú"
+description: "Xem ghi chú chăm sóc mục vụ, việc theo dõi và kế hoạch từ người, nhóm, sự kiện và thẻ quy trình trong một danh sách B1 Admin, mới nhất trước."
 ---
 
 # Ghi chú

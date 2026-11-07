@@ -1,5 +1,6 @@
 ---
 title: "Upravljanje vašega profila"
+description: "Posodobite svoj račun ChurchApps v B1 Admin: uredite ime, e-pošto in geslo, vklopite dvostopenjsko prijavo, izberite temo ali izbrišite račun."
 ---
 
 # Upravljanje vašega profila

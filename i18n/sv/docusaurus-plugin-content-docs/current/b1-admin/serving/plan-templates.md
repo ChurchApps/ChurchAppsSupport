@@ -1,5 +1,6 @@
 ---
 title: "Planmallar"
+description: "Spara en gudstjänstplans ordning och positioner som en återanvändbar mall i B1 Admin och tillämpa den på kommande planer med ett klick."
 ---
 
 # Planmallar

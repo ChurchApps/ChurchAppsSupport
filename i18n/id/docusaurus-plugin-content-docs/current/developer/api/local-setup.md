@@ -1,5 +1,6 @@
 ---
 title: "Pengaturan API Lokal"
+description: "Atur API ChurchApps secara lokal: kloning repo, konfigurasi enam basis data MySQL, inisialisasi skema, dan jalankan server pengembangan hot-reload."
 ---
 
 # Pengaturan API Lokal
@@ -13,9 +14,9 @@ Panduan ini memandu Anda menyiapkan API ChurchApps untuk pengembangan lokal. And
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Instal **Node.js 24+**, **Git**, dan **MySQL 8.0+** -- lihat [Prasyarat](../setup/prerequisites)
+- Instal **Node.js 24+**, **Git**, dan **MySQL 8.0+** -- lihat [Prasyarat](../setup/prerequisites.md)
 - Buat pengguna MySQL dengan hak istimewa untuk membuat database
-- Tinjau referensi [Variabel Lingkungan](../setup/environment-variables) untuk konfigurasi API
+- Tinjau referensi [Variabel Lingkungan](../setup/environment-variables.md) untuk konfigurasi API
 
 </div>
 
@@ -82,7 +83,7 @@ API akan dimulai dengan hot reload di [http://localhost:8084](http://localhost:8
 
 ## Deployment
 
-Lingkungan staging sudah dihentikan. API di-deploy ke lingkungan demo pada setiap push ke `main`, dan ke produksi melalui alur kerja **Deploy Prod** secara manual, yang juga menerapkan migrasi database yang tertunda. Lihat [Deployment API](../deployment/apis) untuk detailnya.
+Lingkungan staging sudah dihentikan. API di-deploy ke lingkungan demo pada setiap push ke `main`, dan ke produksi melalui alur kerja **Deploy Prod** secara manual, yang juga menerapkan migrasi database yang tertunda. Lihat [Deployment API](../deployment/apis.md) untuk detailnya.
 
 ## Pengembangan Pustaka Lokal
 
@@ -98,10 +99,10 @@ yarn link ../Packages/helpers
 yarn unlink ../Packages/helpers && yarn install
 ```
 
-Cara ini memungkinkan Anda menguji perubahan pustaka terhadap API tanpa mempublikasikannya ke npm. Lihat [Pustaka Bersama](../shared-libraries/#local-development-against-a-consuming-app) untuk detailnya -- dan jangan pernah melakukan commit pada resolusi portal yang ditulis oleh tautan ke dalam `package.json`.
+Cara ini memungkinkan Anda menguji perubahan pustaka terhadap API tanpa mempublikasikannya ke npm. Lihat [Pustaka Bersama](../shared-libraries/index.md#local-development-against-a-consuming-app) untuk detailnya -- dan jangan pernah melakukan commit pada resolusi portal yang ditulis oleh tautan ke dalam `package.json`.
 
 ## Artikel Terkait
 
-- **[Database](./database)** -- Memahami arsitektur database-per-modul
-- **[Struktur Modul](./module-structure)** -- Cara controller, repository, dan model diatur
-- **[Pustaka Bersama](../shared-libraries/)** -- Bekerja dengan `@churchapps/helpers` dan `@churchapps/apihelper`
+- **[Database](./database.md)** -- Memahami arsitektur database-per-modul
+- **[Struktur Modul](./module-structure.md)** -- Cara controller, repository, dan model diatur
+- **[Pustaka Bersama](../shared-libraries/index.md)** -- Bekerja dengan `@churchapps/helpers` dan `@churchapps/apihelper`

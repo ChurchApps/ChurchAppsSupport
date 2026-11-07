@@ -1,5 +1,6 @@
 ---
 title: "Guía: Lanza tu Sitio Web de la Iglesia"
+description: "Configura la web de la iglesia en B1 Admin: página de inicio, colores y logotipo, páginas clave, dominio propio y formularios de donación."
 ---
 
 # Lanza tu Sitio Web de la Iglesia

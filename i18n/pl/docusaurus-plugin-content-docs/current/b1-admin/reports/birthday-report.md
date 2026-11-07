@@ -1,5 +1,6 @@
 ---
 title: "Listy urodzin i rocznic"
+description: "Utwórz w B1 Admin listę osób z urodzinami lub rocznicą w danym miesiącu, korzystając z filtrów wyszukiwania osób. Następnie wyświetl lub wyeksportuj daty."
 ---
 
 # Listy urodzin i rocznic

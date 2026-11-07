@@ -1,5 +1,6 @@
 ---
 title: "API"
+description: "Giải thích thiết kế monolith mô-đun của API ChurchApps, sáu module dữ liệu, công nghệ, cổng và hàm Lambda, kèm liên kết tới tài liệu thiết lập và endpoint."
 ---
 
 # API
@@ -52,8 +53,8 @@ Khi được triển khai lên AWS, API chạy dưới dạng sáu hàm Lambda:
 
 API phụ thuộc vào hai gói dùng chung của ChurchApps:
 
-- **[`@churchapps/helpers`](../shared-libraries/helpers)** -- Các tiện ích nền tảng (DateHelper, ApiHelper, v.v.)
-- **[`@churchapps/apihelper`](../shared-libraries/api-helper)** -- Tiện ích máy chủ Express, bao gồm xác thực, trợ giúp cơ sở dữ liệu và tích hợp AWS
+- **[`@churchapps/helpers`](../shared-libraries/helpers.md)** -- Các tiện ích nền tảng (DateHelper, ApiHelper, v.v.)
+- **[`@churchapps/apihelper`](../shared-libraries/api-helper.md)** -- Tiện ích máy chủ Express, bao gồm xác thực, trợ giúp cơ sở dữ liệu và tích hợp AWS
 
 :::info
 API sử dụng ES modules (`"type": "module"` trong `package.json`). Hãy đảm bảo các câu lệnh import của bạn dùng cú pháp ES module.
@@ -61,11 +62,11 @@ API sử dụng ES modules (`"type": "module"` trong `package.json`). Hãy đả
 
 ## Trong mục này
 
-- **[Thiết lập cục bộ](./local-setup)** -- Sao chép, cấu hình và chạy API trên máy của bạn
-- **[Cơ sở dữ liệu](./database)** -- Kiến trúc mỗi mô-đun một cơ sở dữ liệu, các script schema và mẫu truy cập dữ liệu
-- **[Cấu trúc mô-đun](./module-structure)** -- Controllers, repositories, models và xác thực
-- **[Khóa API](./api-keys)** -- Mã truy cập cá nhân cho các script và trình kết nối
-- **[Ứng dụng được kết nối (OAuth)](./connected-apps)** -- Luồng OAuth đa người thuê cho các ứng dụng bên thứ ba
-- **[Webhooks](./webhooks)** -- Đẩy thông báo sự kiện đến các hệ thống bên ngoài
-- **[Máy chủ MCP](./mcp)** -- Điểm cuối Model Context Protocol đưa API đến các trợ lý AI
-- **[Tài liệu tham chiếu endpoint](./endpoints/)** -- Tài liệu REST API đầy đủ cho tất cả các mô-đun
+- **[Thiết lập cục bộ](./local-setup.md)** -- Sao chép, cấu hình và chạy API trên máy của bạn
+- **[Cơ sở dữ liệu](./database.md)** -- Kiến trúc mỗi mô-đun một cơ sở dữ liệu, các script schema và mẫu truy cập dữ liệu
+- **[Cấu trúc mô-đun](./module-structure.md)** -- Controllers, repositories, models và xác thực
+- **[Khóa API](./api-keys.md)** -- Mã truy cập cá nhân cho các script và trình kết nối
+- **[Ứng dụng được kết nối (OAuth)](./connected-apps.md)** -- Luồng OAuth đa người thuê cho các ứng dụng bên thứ ba
+- **[Webhooks](./webhooks.md)** -- Đẩy thông báo sự kiện đến các hệ thống bên ngoài
+- **[Máy chủ MCP](./mcp.md)** -- Điểm cuối Model Context Protocol đưa API đến các trợ lý AI
+- **[Tài liệu tham chiếu endpoint](./endpoints/index.md)** -- Tài liệu REST API đầy đủ cho tất cả các mô-đun

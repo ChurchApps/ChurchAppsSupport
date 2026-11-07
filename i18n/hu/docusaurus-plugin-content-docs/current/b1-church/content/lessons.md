@@ -1,5 +1,7 @@
 ---
-title: "Lessons (elavult)"
+title: "Megszűnt Leckék fül a B1.church-ben"
+sidebar_label: "Lessons (elavult)"
+description: "A B1.church Leckék fülét kivezették. A leckék most a Lessons.church-ön érhetők el, és osztálytermi TV-ken FreePlay-jal játszhatók le."
 ---
 
 # Lessons (elavult)
@@ -9,7 +11,7 @@ A B1.church oldalon beágyazott **Lessons** fület elavultnak nyilvánították.
 
 A tananyagok közvetlen böngészéséhez, ütemezéséhez vagy szerkesztéséhez jelentkezzen be a böngészőjében a [Lessons.church](https://lessons.church) oldalra. Ha a leckéket osztálytermi TV-n szeretné lejátszani, telepítse a [FreePlay](/docs/freeplay/getting-started/) alkalmazást a TV-eszközére.
 
-A B1Admin-ban a lecketerv típusához kapcsolt csoportok szülei **a heti leckét** a [csoport részletei](/docs/b1-church/groups/group-details.md) oldalon látják, nem ezen az elavult fülön.
+A B1Admin-ban a lecketerv típusához kapcsolt csoportok szülei **a heti leckét** a [csoport részletei](../groups/group-details.md) oldalon látják, nem ezen az elavult fülön.
 :::
 
 <div class="article-intro">

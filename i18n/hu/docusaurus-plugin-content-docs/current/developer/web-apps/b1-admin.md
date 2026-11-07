@@ -1,5 +1,6 @@
 ---
 title: "B1 Admin"
+description: "B1 Admin helyi beállítása: a React/Vite-irányítópult klónozása, API-végpontok megadása a .env-ben, fejlesztői szerver indítása."
 ---
 
 # B1 Admin
@@ -13,8 +14,8 @@ A B1Admin az egyházi adminisztrációs vezérlőpult, egy React alapú egyoldal
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Telepítse a **Node.js 22+** verziót és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites)
-- Állítsa be az API célpontot (demo vagy helyi) -- lásd: [Környezeti változók](../setup/environment-variables)
+- Telepítse a **Node.js 22+** verziót és a **Git**-et -- lásd: [Előfeltételek](../setup/prerequisites.md)
+- Állítsa be az API célpontot (demo vagy helyi) -- lásd: [Környezeti változók](../setup/environment-variables.md)
 
 </div>
 
@@ -87,5 +88,5 @@ Az éles buildeket **S3 + CloudFront** szolgáltatásba helyezzük:
 3. CloudFront invalidációt indítunk, hogy az új verzió legyen kiszolgálva
 
 :::tip
-A részletes üzembe helyezési útmutatóért lásd a [Webalkalmazás üzembe helyezése](../deployment/web-apps) útmutatót.
+A részletes üzembe helyezési útmutatóért lásd a [Webalkalmazás üzembe helyezése](../deployment/web-apps.md) útmutatót.
 :::

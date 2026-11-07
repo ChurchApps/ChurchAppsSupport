@@ -1,5 +1,6 @@
 ---
 title: "Inscriptions payantes"
+description: "Configurez les inscriptions payantes aux événements dans B1 Admin : types de participants tarifés, options, codes de réduction, listes d'attente et encaissement via votre prestataire de dons."
 ---
 
 # Inscriptions payantes
@@ -13,7 +14,7 @@ L'inscription à un événement peut aller au-delà d'un simple décompte. Vous 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Activez d'abord l'inscription sur l'événement -- voir [Créer des calendriers](creating-calendars#enabling-event-registration)
+- Activez d'abord l'inscription sur l'événement -- voir [Créer des calendriers](./creating-calendars.md#enabling-event-registration)
 - Pour encaisser les paiements en ligne, votre église doit avoir [configuré les dons en ligne](../donations/online-giving-setup.md) (Stripe, PayPal ou Kingdom Funding). Les événements gratuits n'exigent aucune configuration de dons. Sans dons en ligne, les inscriptions payantes fonctionnent tout de même, mais les personnes paient directement l'église -- voir [Églises sans dons en ligne](#churches-without-online-giving).
 
 </div>
@@ -62,7 +63,7 @@ Chaque code affiche un compteur **Utilisations** pour que vous puissiez voir à 
 Activez **Activer la liste d'attente** dans la carte Paramètres d'inscription. Lorsque l'événement atteint sa capacité :
 
 - Les nouveaux inscrits se voient proposer une place sur la liste d'attente au lieu d'être refusés. Ils complètent la même inscription (le paiement est ignoré pendant qu'ils sont en attente).
-- Lorsqu'une personne annule, l'inscription la plus ancienne en liste d'attente est **promue automatiquement** et reçoit un courriel indiquant qu'une place s'est libérée. Si elle doit un solde, le courriel la dirige vers [Mes inscriptions](../../b1-church/events/my-registrations) sur le site B1 de votre église, où elle peut effectuer le paiement.
+- Lorsqu'une personne annule, l'inscription la plus ancienne en liste d'attente est **promue automatiquement** et reçoit un courriel indiquant qu'une place s'est libérée. Si elle doit un solde, le courriel la dirige vers [Mes inscriptions](../../b1-church/events/my-registrations.md) sur le site B1 de votre église, où elle peut effectuer le paiement.
 - Vous pouvez promouvoir quelqu'un manuellement à tout moment avec l'action **Promouvoir** sur une ligne en liste d'attente -- utile après avoir augmenté la capacité de l'événement.
 
 :::info
@@ -75,7 +76,7 @@ Ouvrez un événement depuis la page Inscriptions pour voir toutes les inscripti
 
 - Cliquez sur l'icône de détails d'une ligne pour ouvrir la boîte de dialogue **Détails de l'inscription** -- membres, options, payé/solde, et un tableau **Paiements** listant chaque transaction (montant, mode, date).
 - **Exporter en CSV** télécharge la liste complète avec des colonnes pour les membres, les types de participants, les options, le total payé/solde, le statut et une colonne par question d'inscription.
-- **Ajouter un participant** enregistre une inscription hors ligne ou par téléphone pour toute personne de votre église. Choisissez la personne et, pour un événement payant, son type de participant. Sa carte n'est pas débitée : une inscription payante est enregistrée comme **en attente** avec le montant total comme solde dû. Si votre église dispose de dons en ligne, la personne peut payer depuis [Mes inscriptions](../../b1-church/events/my-registrations) ; sinon, encaissez-le en personne. Vous devez avoir l'autorisation Modifier les inscriptions pour ajouter des participants.
+- **Ajouter un participant** enregistre une inscription hors ligne ou par téléphone pour toute personne de votre église. Choisissez la personne et, pour un événement payant, son type de participant. Sa carte n'est pas débitée : une inscription payante est enregistrée comme **en attente** avec le montant total comme solde dû. Si votre église dispose de dons en ligne, la personne peut payer depuis [Mes inscriptions](../../b1-church/events/my-registrations.md) ; sinon, encaissez-le en personne. Vous devez avoir l'autorisation Modifier les inscriptions pour ajouter des participants.
 
 :::info
 Les remboursements ne sont pas traités dans B1. Si vous devez rembourser une inscription payante annulée, émettez le remboursement depuis le tableau de bord de votre fournisseur de dons (par exemple Stripe).
@@ -90,12 +91,12 @@ Les paiements transitent par la même passerelle de dons que votre église utili
 Si votre église n'a pas de fournisseur de dons configuré, les événements payants peuvent tout de même accepter des inscriptions. L'étape de paiement indique aux inscrits que le paiement en ligne n'est pas disponible et qu'ils peuvent payer directement l'église, et un bouton **Inscrire et payer plus tard** enregistre l'inscription. Elle est enregistrée comme **en attente** avec le montant total comme solde dû, et apparaît dans la liste avec un avertissement de solde. Encaissez l'argent de la façon habituelle de votre église.
 
 :::info
-B1 n'a aucun moyen de marquer un paiement hors ligne comme reçu. Le solde dû reste dans la liste et sur la carte [Mes inscriptions](../../b1-church/events/my-registrations) de l'inscrit après que vous l'avez encaissé ; conservez donc votre propre registre de qui a payé.
+B1 n'a aucun moyen de marquer un paiement hors ligne comme reçu. Le solde dû reste dans la liste et sur la carte [Mes inscriptions](../../b1-church/events/my-registrations.md) de l'inscrit après que vous l'avez encaissé ; conservez donc votre propre registre de qui a payé.
 :::
 
 ## Articles connexes
 
-- [Créer des calendriers](creating-calendars#enabling-event-registration) — activer l'inscription et les paramètres de base
+- [Créer des calendriers](./creating-calendars.md#enabling-event-registration) — activer l'inscription et les paramètres de base
 - [Dons en ligne](../donations/online-giving-setup.md) — configurer la passerelle de paiement utilisée lors du paiement
-- [S'inscrire aux événements](../../b1-church/events/registering) — ce que voient les membres lorsqu'ils s'inscrivent
-- [Mes inscriptions](../../b1-church/events/my-registrations) — comment les membres paient leurs soldes et modifient leurs inscriptions
+- [S'inscrire aux événements](../../b1-church/events/registering.md) — ce que voient les membres lorsqu'ils s'inscrivent
+- [Mes inscriptions](../../b1-church/events/my-registrations.md) — comment les membres paient leurs soldes et modifient leurs inscriptions

@@ -1,5 +1,6 @@
 ---
 title: "Dosyalar"
+description: "B1 Admin'de kilise web siteniz için görselleri ve belgeleri yükleyin, göz atın ve yönetin; daha fazla alan için harici depolama bağlamayı da içerir."
 ---
 
 # Dosyalar
@@ -13,7 +14,7 @@ Dosyalar sayfası, kilise web sitenizde kullanılan tüm medya ve belgelerin mer
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Web siteniz için [İlk Kurulum](initial-setup) adımlarını tamamlayın
+- Web siteniz için [İlk Kurulum](./initial-setup.md) adımlarını tamamlayın
 - Sayfaların daha hızlı yüklenmesi için resimleri yüklemeden önce optimize edin
 - Dosyalarınızı yaygın web formatlarında (PNG, JPG, PDF vb.) hazırlayın
 
@@ -42,7 +43,7 @@ Dosya tablosunda yüklediğiniz her dosya, **Name** ve **Size** bilgileriyle lis
 3. Buraya yüklediğiniz dosyalar, web sitenizin tüm sayfalarında ve içerik bloklarında kullanılabilir.
 
 :::info
-[Sayfaları Yönetme](managing-pages) bölümünde sayfa oluştururken, buraya yüklediğiniz herhangi bir dosyaya URL'si üzerinden başvurabilirsiniz. Bu sayede tüm medyanız tek bir merkezi konumda düzenli kalır.
+[Sayfaları Yönetme](./managing-pages.md) bölümünde sayfa oluştururken, buraya yüklediğiniz herhangi bir dosyaya URL'si üzerinden başvurabilirsiniz. Bu sayede tüm medyanız tek bir merkezi konumda düzenli kalır.
 :::
 
 ## Dosyaları Silme
@@ -57,5 +58,5 @@ Silinen dosyalar geri getirilemez. Dosyayı kaldırmadan önce hiçbir sayfada k
 
 ## Sonraki Adımlar
 
-- [Sayfaları Yönetme](managing-pages) -- Yüklediğiniz dosyaları web sitesi sayfalarına ekleyin
-- [Görünüm](appearance) -- Sitenizin görsel temasını özelleştirin
+- [Sayfaları Yönetme](./managing-pages.md) -- Yüklediğiniz dosyaları web sitesi sayfalarına ekleyin
+- [Görünüm](./appearance.md) -- Sitenizin görsel temasını özelleştirin

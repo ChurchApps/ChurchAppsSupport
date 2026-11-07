@@ -1,5 +1,6 @@
 ---
 title: "Stripe 导入"
+description: "在 B1 Admin 中以预览优先的方式导入 Stripe 捐款，每笔款项会标记为新增、已导入或已跳过，确认后再提交。"
 ---
 
 # Stripe 导入

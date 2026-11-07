@@ -1,5 +1,6 @@
 ---
 title: "Kampanjat ja lupaukset"
+description: "Luo B1 Adminissa keräyskampanjoita, kirjaa jäsenten lupaukset ja seuraa edistymistä kohti tavoitetta suhteessa kunkin rahaston todellisiin lahjoituksiin."
 ---
 
 # Kampanjat ja lupaukset
@@ -13,7 +14,7 @@ Kampanjoiden avulla voit käynnistää varainkeruun kohti tiettyä tavoitetta, k
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Luo [lahjoitusrahastot](funds). Jokainen kampanja liitetään rahastoon.
+- Luo [lahjoitusrahastot](./funds.md). Jokainen kampanja liitetään rahastoon.
 - Tarvitset pääsyn B1 Adminin Lahjoitukset-osioon.
 
 </div>
@@ -66,6 +67,6 @@ Päivitä kampanjan nimi, tavoite, päivämäärät tai rahasto napsauttamalla k
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Lahjoitusten kirjaaminen](recording-donations): kirjaa lupauksia täyttävät todelliset lahjat
-- [Rahastot](funds): luo kampanjaan liitettävä rahasto
-- [Lahjoitusraportit](donation-reports): raportit lahjoituksista rahastoittain
+- [Lahjoitusten kirjaaminen](./recording-donations.md): kirjaa lupauksia täyttävät todelliset lahjat
+- [Rahastot](./funds.md): luo kampanjaan liitettävä rahasto
+- [Lahjoitusraportit](./donation-reports.md): raportit lahjoituksista rahastoittain

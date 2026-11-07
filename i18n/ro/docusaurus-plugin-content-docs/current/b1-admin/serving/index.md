@@ -1,5 +1,7 @@
 ---
-title: "Slujire"
+title: "Prezentare generală Serving în B1 Admin"
+sidebar_label: "Slujire"
+description: "Coordonează voluntarii și planifică slujbele în zona Serving din B1 Admin: departamente, echipe, planuri de slujbă, cântări și sarcini."
 ---
 
 # Slujire

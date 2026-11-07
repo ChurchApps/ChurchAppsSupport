@@ -1,5 +1,7 @@
 ---
-title: "Prédications"
+title: "Parcourir les prédications sur votre site B1.church"
+sidebar_label: "Prédications"
+description: "Parcourez et regardez les prédications enregistrées de votre église sur le site B1.church, regroupées en séries ou listes de lecture. Sans connexion."
 ---
 
 # Prédications

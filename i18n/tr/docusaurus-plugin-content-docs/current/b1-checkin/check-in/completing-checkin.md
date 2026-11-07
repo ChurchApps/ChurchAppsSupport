@@ -1,5 +1,6 @@
 ---
 title: "Check-In'i Tamamlama"
+description: "B1 Checkin'de bir ailenin kiosk check-in işlemini tamamlayın; oda sınırları, etiket yazdırma, teslim alma güvenlik kodları ve uygulamanın sonraki adımı kapsanır."
 ---
 
 # Check-In'i Tamamlama
@@ -13,9 +14,9 @@ Hane bilgilerinizi gözden geçirdikten ve gerekli grup atamalarını yaptıktan
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [Hanenizi gözden geçirin](./household-review) hane inceleme ekranında
-- Belirli bir sınıfa veya programa katılması gereken aile üyelerine [grup atayın](./group-assignment)
-- İsteğe bağlı olarak, aileniz ile gelen [misafirleri ekleyin](./adding-guests)
+- [Hanenizi gözden geçirin](./household-review.md) hane inceleme ekranında
+- Belirli bir sınıfa veya programa katılması gereken aile üyelerine [grup atayın](./group-assignment.md)
+- İsteğe bağlı olarak, aileniz ile gelen [misafirleri ekleyin](./adding-guests.md)
 
 </div>
 
@@ -28,10 +29,10 @@ Hepsi bu kadar. Ailenizin katılımı kaydedildi.
 
 ## Dolu Odalar ve Gönüllü Oranları
 
-Kilisenizin odaları için [güvenlik sınırları](../../b1-admin/attendance/checkin-safety) yapılandırdıysa, sunucu kaydetmeden önce bunları kontrol eder:
+Kilisenizin odaları için [güvenlik sınırları](../../b1-admin/attendance/checkin-safety.md) yapılandırdıysa, sunucu kaydetmeden önce bunları kontrol eder:
 
 - Seçilen bir oda **dolu veya kapalı** ise, check-in tamamlanmaz ve uygulama farklı bir oda seçebilmeniz için odanın adını gösterir.
-- Ayin saatinin bir [check-in programı](../../b1-admin/attendance/setup#setting-a-check-in-schedule) varsa ve check-in penceresi şu anda açık değilse, o ayin saatinin odalarına check-in de reddedilir. **Check-in henüz yapılamıyor** ekranı, odayı "check-in şu anda açık değil" nedeniyle listeler; farklı bir ayin saati veya grup seçmek için **Odaları Değiştir** düğmesine dokunun. (Zaten kapanmış ayin saatleri [hane ekranında](./household-review) **Kapalı** olarak gösterilir ve seçilemez; bu yüzden bu durumu genellikle yalnızca bir check-in sırasında pencere kapanırsa görürsünüz.)
+- Ayin saatinin bir [check-in programı](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) varsa ve check-in penceresi şu anda açık değilse, o ayin saatinin odalarına check-in de reddedilir. **Check-in henüz yapılamıyor** ekranı, odayı "check-in şu anda açık değil" nedeniyle listeler; farklı bir ayin saati veya grup seçmek için **Odaları Değiştir** düğmesine dokunun. (Zaten kapanmış ayin saatleri [hane ekranında](./household-review.md) **Kapalı** olarak gösterilir ve seçilemez; bu yüzden bu durumu genellikle yalnızca bir check-in sırasında pencere kapanırsa görürsünüz.)
 - Daha önce önceki bir ayin saati için check-in yapmış bir hane, önceki pencere kapandıktan sonra bile geri gelip açık bir ayin saati ekleyebilir. Mevcut check-in kayıtları korunur ve yeni check-in'in reddedilmesine neden olmaz.
 - Bir çocuk odasında gönüllü oranı için **yeterli gönüllü yoksa**, uygulama, kilisenizin oran zorlamasını nasıl yapılandırdığına bağlı olarak, devam etmek için bir personelin onaylayabileceği bir uyarı gösterir veya check-in'i tamamen engeller.
 
@@ -49,7 +50,7 @@ Aynı güvenlik kodu, çocuğun isim etiketinde ve ebeveynin teslim fişinde gö
 Güvenlik kodu her check-in için yeniden oluşturulur ve yalnızca ünsüz harfleri ve rakamları kullanır (uygunsuz kelimeler oluşmasın diye sesli harfler dışlanır).
 
 :::warning
-Etiketler yazdırılmıyorsa, **kilise logosuna** yedi kez dokunarak Yönetici Ayarları'nı açın, ardından yazıcı bağlantısını doğrulamak için **Yazıcıyı Değiştir** düğmesine dokunun. Sorun giderme adımları için [Yazıcı Kurulumu](../getting-started/printer-setup) bölümüne bakın.
+Etiketler yazdırılmıyorsa, **kilise logosuna** yedi kez dokunarak Yönetici Ayarları'nı açın, ardından yazıcı bağlantısını doğrulamak için **Yazıcıyı Değiştir** düğmesine dokunun. Sorun giderme adımları için [Yazıcı Kurulumu](../getting-started/printer-setup.md) bölümüne bakın.
 :::
 
 ## Check-In'den Sonra Ne Olur

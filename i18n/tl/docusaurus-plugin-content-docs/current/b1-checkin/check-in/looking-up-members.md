@@ -1,5 +1,6 @@
 ---
 title: "Paghahanap ng mga Miyembro"
+description: "Hanapin ang pamilya mo sa B1 Checkin kiosk sa pamamagitan ng digit ng telepono o pangalan, at magparehistro bilang bisita kung unang beses ka."
 ---
 
 # Paghahanap ng mga Miyembro
@@ -13,7 +14,7 @@ Pagkatapos pumili ng service, mapupunta ka sa screen ng paghahanap ng miyembro. 
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- [Pumili ng service](./selecting-service) mula sa screen ng mga service
+- [Pumili ng service](./selecting-service.md) mula sa screen ng mga service
 - Siguraing naidagdag na ang inyong sambahayan [sa system](../../b1-admin/people/adding-people.md) ng isang administrator ng simbahan
 
 </div>
@@ -45,7 +46,7 @@ Hinahanap ng app ang mga miyembrong tugma ang pangalan sa itinype mo.
 
 Lumalabas ang mga resulta ng paghahanap bilang mga card sa ibaba ng search field. Ipinapakita ng bawat card ang **pangalan** at **larawan** ng tao (kung mayroong nakatala).
 
-I-tap ang card ng tao para piliin siya. Ilo-load ng app ang lahat ng miyembro ng sambahayan ng taong iyon at dadalhin ka sa [screen ng pagrepaso ng sambahayan](./household-review).
+I-tap ang card ng tao para piliin siya. Ilo-load ng app ang lahat ng miyembro ng sambahayan ng taong iyon at dadalhin ka sa [screen ng pagrepaso ng sambahayan](./household-review.md).
 
 :::tip
 Ang paghahanap gamit ang huling 4 na digit ng numero ng telepono ang pinakamabilis na paraan para mahanap ang inyong pamilya. Himukin ang mga miyembro na gamitin ang paraang ito para mas mabilis ang check-in.
@@ -60,7 +61,7 @@ Kung walang makitang resulta, magpapakita ang app ng mensahe para ipaalam ito. S
 Kung naka-on ang QR guest registration ng inyong simbahan, lalabas ang link na **Register as guest** sa ibaba ng paghahanap sa lookup screen. Magagamit ito ng mga unang beses na bisita para maidagdag ang kanilang pamilya sa system ng simbahan bago mag-check in.
 
 1. I-tap ang **Register as guest**. Magbubukas ang isang window na may QR code at mensaheng "Scan to register as a guest."
-2. Piliin kung paano pupunan ang [form ng pagpaparehistro ng bisita](../../b1-church/checkin/guest-registration):
+2. Piliin kung paano pupunan ang [form ng pagpaparehistro ng bisita](../../b1-church/checkin/guest-registration.md):
    - **Sa iyong telepono** -- I-scan ang QR code, punan ang form sa iyong telepono, at i-tap ang **OK** para isara ang window.
    - **Sa kiosk** -- I-tap ang **Register here** para buksan ang parehong form mismo sa tablet. Punan ito at i-tap ang **Register**, pagkatapos ay i-tap ang **Done** (o ang back arrow) para bumalik sa lookup screen.
 3. Kapag nakarehistro na, hanapin ang inyong pamilya gamit ang pangalan o numero ng telepono para makapag-check in.
@@ -71,7 +72,7 @@ Nananatili sa pahina ng pagpaparehistro ng bisita ang form na binuksan gamit ang
 
 ## Pag-print ng mga Label para sa Check-In sa Telepono
 
-Ang mga pamilyang nag-check in na sa kanilang telepono sa pamamagitan ng [self check-in ng B1 Church](../../b1-church/checkin/self-checkin) ay maaaring i-print ang kanilang mga name tag sa kiosk nang hindi na kailangang hanapin ang sarili.
+Ang mga pamilyang nag-check in na sa kanilang telepono sa pamamagitan ng [self check-in ng B1 Church](../../b1-church/checkin/self-checkin.md) ay maaaring i-print ang kanilang mga name tag sa kiosk nang hindi na kailangang hanapin ang sarili.
 
 1. Sa lookup screen, i-tap ang button na **Scan code** (ang icon ng QR code).
 2. Itapat ang QR code mula sa iyong telepono sa camera. Kung humingi ang app ng access sa camera, i-tap ang **Allow Camera**. Ang front camera ang default na gamit; i-tap ang flip button para magpalit.
@@ -81,4 +82,4 @@ Mga label lang ang ipi-print ng pag-scan -- naitala na ang attendance noong nag-
 
 ## Susunod na Hakbang
 
-Pagkatapos pumili ng tao, [irerepaso mo ang iyong sambahayan](./household-review) at aayusin ang mga group assignment.
+Pagkatapos pumili ng tao, [irerepaso mo ang iyong sambahayan](./household-review.md) at aayusin ang mga group assignment.

@@ -1,5 +1,6 @@
 ---
 title: "Anpassade fält"
+description: "Definiera egna fält i B1 Admin för att spåra extra personuppgifter, till exempel utgångsdatum för registerkontroll eller tröjstorlek, och sedan söka och filtrera på dem."
 ---
 
 # Anpassade fält

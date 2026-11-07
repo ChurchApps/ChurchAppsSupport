@@ -1,5 +1,6 @@
 ---
 title: "Paghahanap ng Tao"
+description: "Maghanap sa People directory ng B1 Admin ayon sa pangalan, mag-sort ng column sa table view, mag-filter gamit ang Advanced Search, at i-export ang tugma sa CSV."
 ---
 
 # Paghahanap ng Tao

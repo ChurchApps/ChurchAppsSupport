@@ -1,5 +1,6 @@
 ---
 title: "Návod: Sledování docházky ve sboru"
+description: "Sledujte docházku v B1 Admin: nastavte pobočky a časy bohoslužeb, zapisujte ji ručně nebo přes samoobslužné odbavení a čtěte přehledy."
 ---
 
 # Sledování docházky ve sboru

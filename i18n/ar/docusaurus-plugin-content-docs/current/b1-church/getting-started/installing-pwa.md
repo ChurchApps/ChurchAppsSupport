@@ -1,5 +1,6 @@
 ---
 title: "التثبيت كتطبيق (PWA)"
+description: "ثبّت B1.church كتطبيق على iPhone أو Android من بوابة الأعضاء، وأضف أيقونته إلى شاشتك الرئيسية عبر Safari أو Chrome."
 ---
 
 # التثبيت كتطبيق (PWA)

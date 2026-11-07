@@ -1,5 +1,6 @@
 ---
 title: "Revisione delle richieste di eliminazione dell'account"
+description: "Approva o rifiuta in B1 Admin le richieste di cancellazione dell'account, instradale al Directory Approval Group e rispetta la scadenza GDPR di 30 giorni."
 ---
 
 # Revisione delle richieste di eliminazione dell'account

@@ -1,5 +1,6 @@
 ---
 title: "Providers koppelen en playlists maken"
+description: "Stel gekoppelde contentproviders in FreePlay Admin in, en bouw, rangschik en bekijk daarna playlists voor geplande tv-schermen."
 ---
 
 # Providers koppelen en playlists maken
@@ -107,6 +108,6 @@ Klik op **Afspelen** om de playlist op volledig scherm in je browser af te spele
 
 ## Gerelateerde artikelen
 
-- **[De kalender plannen](./scheduling-the-calendar)** - Zet je playlist op de kalender van een schermgroep
-- **[Schermen en groepen beheren](./managing-screens)** - Stel een playlist in als standaardlus van een groep
-- **[Contentproviders](../content-providers/)** - Providers die je op de tv zelf kunt koppelen
+- **[De kalender plannen](./scheduling-the-calendar.md)** - Zet je playlist op de kalender van een schermgroep
+- **[Schermen en groepen beheren](./managing-screens.md)** - Stel een playlist in als standaardlus van een groep
+- **[Contentproviders](../content-providers/index.md)** - Providers die je op de tv zelf kunt koppelen

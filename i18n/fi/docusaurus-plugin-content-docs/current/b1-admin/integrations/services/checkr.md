@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Yhdistä B1 Adminin vapaaehtoisilmoittautumiset Checkr-taustatarkastuksiin Make.comilla. Valinnaiset hälytykset turvallisuuskoordinaattorille."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Jos seurakuntasi käyttää B1-ryhmäjäsenyyttä pääsyn rajoittamiseen (esim.
 
 ## Katso myös
 
-- [Make (yleiskatsaus)](../make): B1:n puoli jokaisesta Make-skenaariosta
-- [Mobile Message](./mobile-message): SMS-palveluntarjoajille, joilla ei ole Zapier-sovellusta. Käyttää samaa Webhooks- ja HTTP-kaavaa kuin Checkrin Make-yhteys.
+- [Make (yleiskatsaus)](../make.md): B1:n puoli jokaisesta Make-skenaariosta
+- [Mobile Message](./mobile-message.md): SMS-palveluntarjoajille, joilla ei ole Zapier-sovellusta. Käyttää samaa Webhooks- ja HTTP-kaavaa kuin Checkrin Make-yhteys.
 - [Checkr API -dokumentaatio](https://docs.checkr.com/)

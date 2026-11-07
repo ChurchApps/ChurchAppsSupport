@@ -6,7 +6,7 @@ description: "Osnutek nastavitve Twilio računa v lasti B1 cerkve, javnih navodi
 # Osnutek uvajanja Twilio računa v lasti cerkve
 
 :::caution Osnutek za predlagano integracijo
-To je predlagani postopek. B1 zdaj ima osnovno možnost **Twilio** pod **Nastavitve > Sporočanje** (Account SID, Auth Token, From Number in webhook za dohodni STOP). Glejte [Nastavitve cerkve: Sporočanje](../../b1-admin/settings/church-settings.md#texting). Dodatne nastavitve B1, preslikava soglasij in koraki preverjanja spodaj so zahteve za prihodnjo izdajo, ne navodila za iskanje obstoječih nastavitev. Območje uporabe in odvisnosti preberite v [tehničnem predlogu](./twilio-byok-proposal). Viri Twilia so bili preverjeni 22. oktobra 2026; pred oddajo kampanje preverite trenutne zahteve.
+To je predlagani postopek. B1 zdaj ima osnovno možnost **Twilio** pod **Nastavitve > Sporočanje** (Account SID, Auth Token, From Number in webhook za dohodni STOP). Glejte [Nastavitve cerkve: Sporočanje](../../b1-admin/settings/church-settings.md#texting). Dodatne nastavitve B1, preslikava soglasij in koraki preverjanja spodaj so zahteve za prihodnjo izdajo, ne navodila za iskanje obstoječih nastavitev. Območje uporabe in odvisnosti preberite v [tehničnem predlogu](./twilio-byok-proposal.md). Viri Twilia so bili preverjeni 22. oktobra 2026; pred oddajo kampanje preverite trenutne zahteve.
 :::
 
 ## Priporočena ureditev
@@ -34,7 +34,7 @@ Za predlagani obrazec za prijavo na SMS:
 | Obstoječe avtomatizacije | Ne vpisujte vseh oddajateljev obrazcev ali članov skupin v delovni tok za sporočila. Samo predlagana preverjena preslikava soglasja lahko pooblasti ta program. |
 | Sporočilo po oddaji | Potrdite, da je bil obrazec prejet, ne da bi trdili, da je oseba prijavljena na SMS, kadar je polje zavrnjeno ali pa potrditev oziroma pregled še čakata. |
 
-Obstoječe potrditveno polje lahko ponazori obrazec, vendar B1 še vedno potrebuje evidenco soglasij in zaporne točke pred pošiljanjem. Trenutni skupni prikazovalnik obvestila prikazuje kot navadno besedilo; če v opis vpišete Markdown ali URL, to ne zagotavlja, da bodo povezave do politik klikabilne. Implementacija mora zagotoviti dostopno kontrolo soglasja z dejanskimi povezavami. Glejte [ustvarjanje obrazcev B1](../../b1-admin/forms/creating-forms) in [tehnični predlog](./twilio-byok-proposal#consent-and-suppression-are-required-release-work).
+Obstoječe potrditveno polje lahko ponazori obrazec, vendar B1 še vedno potrebuje evidenco soglasij in zaporne točke pred pošiljanjem. Trenutni skupni prikazovalnik obvestila prikazuje kot navadno besedilo; če v opis vpišete Markdown ali URL, to ne zagotavlja, da bodo povezave do politik klikabilne. Implementacija mora zagotoviti dostopno kontrolo soglasja z dejanskimi povezavami. Glejte [ustvarjanje obrazcev B1](../../b1-admin/forms/creating-forms.md) in [tehnični predlog](./twilio-byok-proposal.md#consent-and-suppression-are-required-release-work).
 
 Twilio zahteva prostovoljno in preverljivo privolitev. SMS ne vključujte v obvezne pogoje članstva, dovoljenja za e-pošto ali telefon, soglasje za darovanje ali prijavo na dogodek. Mobilna številka na kartici obiskovalca sama po sebi ni soglasje za SMS. Glejte Twilieve [zahteve za prostovoljno soglasje](https://www.twilio.com/docs/api/errors/30923) in [priporočila za kampanje](https://help.twilio.com/hc/en-us/articles/26149060902555-A2P-10DLC-Campaign-Registration-Recommendations).
 

@@ -1,5 +1,6 @@
 ---
 title: "管理年度计划"
+description: "在 Lessons.church 中创建每周课程的年度计划，将周次与复活节或圣诞节对齐，并发布供教会在 B1 Admin 中应用。"
 ---
 
 # 管理年度计划

@@ -1,5 +1,6 @@
 ---
 title: "Punkty końcowe modułu Membership"
+description: "Dokumentacja Membership API ChurchApps: osoby, gospodarstwa, grupy, role, formularze i ustawienia, z zasadami autoryzacji i uprawnień."
 ---
 
 # Punkty końcowe modułu Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Ścieżka bazowa: `/membership/users`
 
-Informacje o punktach końcowych logowania, rejestracji i zarządzania hasłami znajdziesz w sekcji [Uwierzytelnianie i uprawnienia](./authentication).
+Informacje o punktach końcowych logowania, rejestracji i zarządzania hasłami znajdziesz w sekcji [Uwierzytelnianie i uprawnienia](./authentication.md).
 
 | Metoda | Ścieżka | Uwierzytelnianie | Uprawnienie | Opis |
 |--------|---------|------------------|-------------|------|
@@ -342,6 +343,6 @@ Zarządza powiązaniem między użytkownikami a kościołami.
 
 ## Powiązane strony
 
-- [Uwierzytelnianie i uprawnienia](./authentication) — przepływ logowania, JWT, OAuth, model uprawnień
-- [Punkty końcowe frekwencji](./attendance) — śledzenie nabożeństw i wizyt
-- [Struktura modułów](../module-structure) — wzorce organizacji kodu
+- [Uwierzytelnianie i uprawnienia](./authentication.md) — przepływ logowania, JWT, OAuth, model uprawnień
+- [Punkty końcowe frekwencji](./attendance.md) — śledzenie nabożeństw i wizyt
+- [Struktura modułów](../module-structure.md) — wzorce organizacji kodu

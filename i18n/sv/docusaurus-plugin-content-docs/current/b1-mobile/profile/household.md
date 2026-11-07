@@ -1,5 +1,6 @@
 ---
 title: "Hushåll"
+description: "Se vem som ingår i ditt hushåll och hur medlemmar är kopplade till varandra i fliken Profil i B1 Mobile, vilket incheckning och andra funktioner förlitar sig på."
 ---
 
 # Hushåll
@@ -13,7 +14,7 @@ Fliken **Hushåll** på skärmen Profil visar dina familjemedlemmar. Här kan du
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Installera B1 Mobile](../getting-started/installing) och [logga in](../getting-started/logging-in) på ditt konto
+- [Installera B1 Mobile](../getting-started/installing.md) och [logga in](../getting-started/logging-in.md) på ditt konto
 
 </div>
 
@@ -33,7 +34,7 @@ Informationen om ditt hushåll används av flera funktioner i B1 Mobile och inom
 
 - **Incheckning** -- När du [checkar in](../checkin/self-checkin.md) till en gudstjänst eller ett evenemang kan du checka in hela ditt hushåll på en gång i stället för att checka in varje person separat.
 - **Kyrkans register** -- Din kyrka använder hushållsdata för att hålla familjeregistren ordnade och för att kommunicera med din familj som en enhet.
-- **Katalog** -- Andra medlemmar kan se din hushållsinformation i [medlemskatalogen](../community/member-directory.md), beroende på dina [integritetsinställningar](./privacy-settings).
+- **Katalog** -- Andra medlemmar kan se din hushållsinformation i [medlemskatalogen](../community/member-directory.md), beroende på dina [integritetsinställningar](./privacy-settings.md).
 
 ## Visa ditt hushåll
 
@@ -47,10 +48,10 @@ Hushållsmedlemskap hanteras vanligtvis av kyrkans administratör. Om du behöve
 
 ## Håll informationen uppdaterad
 
-Om en familjemedlems uppgifter behöver uppdateras kan de [redigera sin egen profil](./editing-profile), eller så kan du kontakta kyrkans administratör för att göra ändringar. Att hålla hushållsinformationen korrekt säkerställer att funktioner som [incheckning](../checkin/) fungerar smidigt för hela din familj.
+Om en familjemedlems uppgifter behöver uppdateras kan de [redigera sin egen profil](./editing-profile.md), eller så kan du kontakta kyrkans administratör för att göra ändringar. Att hålla hushållsinformationen korrekt säkerställer att funktioner som [incheckning](../checkin/index.md) fungerar smidigt för hela din familj.
 
 ## Relaterade artiklar
 
 - [Självincheckning](../checkin/self-checkin.md) -- Checka in dina hushållsmedlemmar till gudstjänster
-- [Redigera din profil](./editing-profile) -- Uppdatera din egen personliga information
-- [Integritetsinställningar](./privacy-settings) -- Styr vad andra kan se om ditt hushåll
+- [Redigera din profil](./editing-profile.md) -- Uppdatera din egen personliga information
+- [Integritetsinställningar](./privacy-settings.md) -- Styr vad andra kan se om ditt hushåll

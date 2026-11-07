@@ -1,5 +1,7 @@
 ---
-title: "Gemenskap"
+title: "Medlemskatalog i B1.church"
+sidebar_label: "Gemenskap"
+description: "Sök i din kyrkas medlemskatalog i B1.church efter namn eller grupp, visa profiler och hitta var de avvecklade Timeline-uppdateringarna nu finns."
 ---
 
 # Gemenskap
@@ -26,5 +28,5 @@ Vilka medlemmar och uppgifter du kan se i katalogen beror på din församlings i
 :::
 
 :::tip
-Använd gemenskapsfunktionerna tillsammans med [Grupper](../groups/) för att hålla dig engagerad i din församling under hela veckan.
+Använd gemenskapsfunktionerna tillsammans med [Grupper](../groups/index.md) för att hålla dig engagerad i din församling under hela veckan.
 :::

@@ -1,5 +1,6 @@
 ---
 title: "donationsoversigt"
+description: "Kør rapporten Donationsoversigt i B1 Admin for at se samlet giving, antal unikke donorer og beløb pr. fond for et valgfrit datointerval."
 ---
 
 # donationsoversigt

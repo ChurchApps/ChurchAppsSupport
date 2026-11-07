@@ -1,5 +1,6 @@
 ---
 title: "Prisijungimas prie teikėjų"
+description: "Prijunkite FreePlay prie turinio teikėjo naudodami QR kodą, el. pašto prisijungimą ar vieno paspaudimo prieigą; valdykite ar atjunkite ryšį nustatymuose."
 ---
 
 # Prisijungimas prie teikėjų
@@ -13,7 +14,7 @@ Prieš naršydami teikėjo turinį, turite prie jo prisijungti. Kai kuriems teik
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Įdiekite ir paleiskite FreePlay -- žr. [Pradžia](../getting-started/)
+- Įdiekite ir paleiskite FreePlay -- žr. [Pradžia](../getting-started/index.md)
 - Turėkite paruoštą televizoriaus pultelį naršymui
 - Jei teikėjui reikia prisijungimo, turėkite paruoštus paskyros prisijungimo duomenis
 
@@ -80,7 +81,7 @@ Pasirinkus teikėjo kortelę su žyma **Prijungta**, atsidaro jo ekranas **Teik�
 
 - **Naršyti biblioteką** -- rodyti arba slėpti šio teikėjo turinio biblioteką šoninėje juostoje
 - **Automatiškai atsisiųsti šiandienos pamoką** -- naudoti šį teikėją kaip šiandienos pamokos šaltinį ir iš anksto atsisiųsti jo failus (rodoma tik teikėjams, kurie siūlo dabartinę pamoką)
-- **Naudoti skelbimams** -- pasirinkti šio teikėjo aplanką, kurį rodyti ciklu šoninės juostos elemente **Skelbimai**. Žr. [Skelbimai](./announcements)
+- **Naudoti skelbimams** -- pasirinkti šio teikėjo aplanką, kurį rodyti ciklu šoninės juostos elemente **Skelbimai**. Žr. [Skelbimai](./announcements.md)
 - **Tikrinti skelbimų atnaujinimus** -- rodoma, kai pasirinktas skelbimų aplankas; atsisiunčiami nauji skaidrės ir pašalinamos ištrintos
 - **Atjungti** -- pašalinti ryšį
 
@@ -100,6 +101,6 @@ Atjungus teikėją, išsaugoti autentifikacijos duomenys pašalinami iš jūsų 
 
 ## Susiję straipsniai
 
-- **[Turinio naršymas ir atsisiuntimas](./browsing-content)** - Naršykite aplankus ir leiskite turinį prisijungę
-- **[Skelbimai](./announcements)** - Rodykite prijungto teikėjo aplanko skaidres ciklu
+- **[Turinio naršymas ir atsisiuntimas](./browsing-content.md)** - Naršykite aplankus ir leiskite turinį prisijungę
+- **[Skelbimai](./announcements.md)** - Rodykite prijungto teikėjo aplanko skaidres ciklu
 - **[Turinio teikėjų apžvalga](./index.md)** - Peržiūrėkite visus galimus teikėjus

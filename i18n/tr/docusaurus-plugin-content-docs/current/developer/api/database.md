@@ -1,5 +1,6 @@
 ---
 title: "Veritabanı"
+description: "ChurchApps API'nin verilerini modül başına bir olmak üzere altı MySQL veritabanına nasıl böldüğünü ve bağlantıların nasıl yapılandırılıp başlatılacağını öğrenin."
 ---
 
 # Veritabanı
@@ -13,8 +14,8 @@ ChurchApps API, **modül başına veritabanı** mimarisini kullanır. Altı veri
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- **MySQL 8.0+** kurun -- bkz. [Ön Koşullar](../setup/prerequisites)
-- Veritabanı bağlantı dizelerini `.env` dosyanızda yapılandırın -- bkz. [Ortam Değişkenleri](../setup/environment-variables)
+- **MySQL 8.0+** kurun -- bkz. [Ön Koşullar](../setup/prerequisites.md)
+- Veritabanı bağlantı dizelerini `.env` dosyanızda yapılandırın -- bkz. [Ortam Değişkenleri](../setup/environment-variables.md)
 
 </div>
 
@@ -33,7 +34,7 @@ Api
 ### Temel Tasarım Kararları
 
 - **Modül başına bir veritabanı** -- Her modül, ayrılmış bir bağlantı havuzuyla (`KyselyPool` tarafından yönetilir) kendi MySQL veritabanını tutar. Bu, modülleri birbirinden bağımsız tutar ve şema değişikliklerinin bağımsız şekilde ilerlemesine olanak tanır.
-- **Münhasır sahiplik** -- Bir modülün tablolarına yalnızca o modülün kendi kodu okuma ve yazma erişimine sahiptir. Başka bir modülün verisine ihtiyacı olduğunda, tabloları doğrudan sorgulamak yerine sahip modülün ağ geçidini çağırır -- bkz. [Modüller Arası İletişim](./module-structure#cross-module-communication).
+- **Münhasır sahiplik** -- Bir modülün tablolarına yalnızca o modülün kendi kodu okuma ve yazma erişimine sahiptir. Başka bir modülün verisine ihtiyacı olduğunda, tabloları doğrudan sorgulamak yerine sahip modülün ağ geçidini çağırır -- bkz. [Modüller Arası İletişim](./module-structure.md#cross-module-communication).
 - **ORM kullanmayan depo deseni** -- Tüm veri erişimi, modülün şemasına karşı Kysely sorgu oluşturucusu ile tipli SQL oluşturan depo sınıflarından geçer. Bu, sorgu performansı ve davranışı üzerinde tam denetim sağlar.
 - **Tasarımdan gelen çok kiracılılık** -- Her sorgu `churchId` ile kapsamlandırılır. Tüm tablolarda bir `churchId` sütunu bulunur ve depo katmanı kiracı izolasyonunu otomatik olarak uygular.
 
@@ -129,5 +130,5 @@ Bu kısıtlama, modül sınırlarını gerçek kılan şeydir: her şema bağım
 
 ## İlgili Makaleler
 
-- **[Modül Yapısı](./module-structure)** -- Denetleyicilerin ve depoların her modül içinde nasıl düzenlendiği
-- **[Yerel API Kurulumu](./local-setup)** -- Adım adım tam kurulum kılavuzu
+- **[Modül Yapısı](./module-structure.md)** -- Denetleyicilerin ve depoların her modül içinde nasıl düzenlendiği
+- **[Yerel API Kurulumu](./local-setup.md)** -- Adım adım tam kurulum kılavuzu

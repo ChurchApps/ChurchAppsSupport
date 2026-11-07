@@ -1,5 +1,6 @@
 ---
 title: "Przewodnik: generowanie rocznych raportów darowizn"
+description: "W B1 Admin zamknij roczne zapisy darowizn, sprawdź podatkowe ustawienia funduszy i wygeneruj zestawienia odliczalne od podatku dla wszystkich darczyńców."
 ---
 
 # Generowanie rocznych raportów darowizn

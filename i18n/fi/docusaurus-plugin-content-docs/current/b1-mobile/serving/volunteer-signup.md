@@ -1,5 +1,7 @@
 ---
-title: "Vapaaehtoisten ilmoittautuminen"
+title: "Vapaaehtoisilmoittautuminen B1 Mobile -sovelluksessa"
+sidebar_label: "Vapaaehtoisten ilmoittautuminen"
+description: "Löydä avoimet vapaaehtoistehtävät tuleviin jumalanpalveluksiin, ilmoittaudu tai poista ilmoittautumisesi B1 Mobile -sovelluksessa. Kattaa määräajat ja paikkarajoitukset."
 ---
 
 # Vapaaehtoisten ilmoittautuminen
@@ -13,7 +15,7 @@ Selaa avoimia vapaaehtoistehtäviä ja ilmoittaudu tuleviin jumalanpalveluksiin 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Seurakuntasi ylläpitäjän on pitänyt ottaa itseilmoittautuminen käyttöön vähintään yhdelle tehtävälle
 
 </div>
@@ -60,5 +62,5 @@ Ota [push-ilmoitukset](../community/notifications.md) käyttöön, niin pysyt aj
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Suunnitelmien tarkastelu](./viewing-plans) – Katso sinulle määritetyt suunnitelmat ja palvelujärjestykset
+- [Suunnitelmien tarkastelu](./viewing-plans.md) – Katso sinulle määritetyt suunnitelmat ja palvelujärjestykset
 - [Ilmoitukset](../community/notifications.md) – Pysy ajan tasalla palvelutehtäviesi osalta

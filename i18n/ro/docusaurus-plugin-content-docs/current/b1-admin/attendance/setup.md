@@ -1,5 +1,6 @@
 ---
 title: "Configurarea prezenței"
+description: "Configurați în B1 Admin campusuri, servicii, ore și grupuri, pentru ca urmărirea prezenței și programele de check-in să funcționeze în toată biserica."
 ---
 
 # Configurarea prezenței

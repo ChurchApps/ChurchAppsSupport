@@ -1,5 +1,6 @@
 ---
 title: "Webapps"
+description: "Oversigt over de tre ChurchApps-webapps (B1 Admin, B1.church, Lessons.church), deres fælles React- og MUI-stak, apphelper-pakker og build-værktøjer."
 ---
 
 # Webapps
@@ -41,7 +42,7 @@ Apperne deler UI-komponenter og værktøjer gennem `@churchapps/apphelper*`-pakk
 | `@churchapps/apphelper-website` | Websted/CMS-komponenter |
 
 :::tip
-For detaljer om udvikling af disse delte pakker lokalt, se [AppHelper](../shared-libraries/app-helper)-dokumentationen.
+For detaljer om udvikling af disse delte pakker lokalt, se [AppHelper](../shared-libraries/app-helper.md)-dokumentationen.
 :::
 
 ## Postinstall-script

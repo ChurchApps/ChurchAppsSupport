@@ -1,5 +1,6 @@
 ---
 title: "Profilinizi Yönetme"
+description: "B1 Admin'de ChurchApps hesabınızı güncelleyin: adınızı, e-postanızı ve şifrenizi düzenleyin, iki faktörlü oturum açmayı etkinleştirin, tema seçin ya da hesabınızı silin."
 ---
 
 # Profilinizi Yönetme

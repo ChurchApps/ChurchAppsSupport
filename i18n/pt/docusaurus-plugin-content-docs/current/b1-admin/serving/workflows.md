@@ -1,5 +1,6 @@
 ---
 title: "Fluxos de trabalho"
+description: "Crie quadros Kanban no B1 Admin para acompanhar pessoas por etapas, com e-mails, mensagens e gatilhos automáticos que incluem pessoas sozinhas."
 ---
 
 # Fluxos de trabalho

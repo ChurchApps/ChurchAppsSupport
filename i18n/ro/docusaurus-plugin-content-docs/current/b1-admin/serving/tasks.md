@@ -1,5 +1,6 @@
 ---
 title: "Sarcini"
+description: "Creează, atribuie și închide sarcini în B1 Admin, găsește-le în Serving > My Work și setează reamintiri pentru termene, ca urmările să nu fie uitate."
 ---
 
 # Sarcini

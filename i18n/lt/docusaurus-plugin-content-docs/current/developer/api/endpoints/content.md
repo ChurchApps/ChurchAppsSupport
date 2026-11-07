@@ -1,5 +1,6 @@
 ---
 title: "Turinio galutiniai taškai"
+description: "Galutinių taškų nuoroda ChurchApps Content API: svetainių puslapiai, tinklaraščio įrašai, nukreipimai, pamokslai, renginiai, failai, Biblijos paieška ir dainos B1 Admin."
 ---
 
 # Turinio galutiniai taškai
@@ -133,7 +134,7 @@ Bazinis kelias: `/content/pageHistory`
 
 Bazinis kelias: `/content/posts`
 
-Tinklaraščio įrašai yra savarankiškos eilutės: `title`, `slug` (unikalus kiekvienoje bažnyčioje), `excerpt`, `content` (Markdown tekstas), `authorId`, `photoUrl`, `publishDate`, `category` ir `tags`. Įrašas paskelbiamas, kai nustatyta `publishDate` ir ji yra praeityje. Skaitymo galutiniai taškai kiekvienam įrašui pridedą `authorName`, nustatytą pagal `authorId`. Žr. [Svetainės kūrėjo architektūra](../../architecture/website-builder#blog).
+Tinklaraščio įrašai yra savarankiškos eilutės: `title`, `slug` (unikalus kiekvienoje bažnyčioje), `excerpt`, `content` (Markdown tekstas), `authorId`, `photoUrl`, `publishDate`, `category` ir `tags`. Įrašas paskelbiamas, kai nustatyta `publishDate` ir ji yra praeityje. Skaitymo galutiniai taškai kiekvienam įrašui pridedą `authorName`, nustatytą pagal `authorId`. Žr. [Svetainės kūrėjo architektūra](../../architecture/website-builder.md#blog).
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
 |--------|------|------|------|-------------|
@@ -458,8 +459,8 @@ Bazinis kelias: `/content/support`
 
 ## Susiję puslapiai
 
-- [Svetainės kūrėjo architektūra](../../architecture/website-builder) -- Kaip puslapiai, skyriai, elementai, įrašai ir nukreipimai susiję tarp programų
-- [Narystės galutiniai taškai](./membership) -- Asmenys, bažnyčios, grupės, vaidmenys, leidimai
-- [Lankomumo galutiniai taškai](./attendance) -- Pamaldų ir apsilankymų sekimas
-- [Autentifikacija ir leidimai](./authentication) -- Prisijungimo eiga, JWT, leidimų modelis
-- [Modulio struktūra](../module-structure) -- Kodo organizavimo modeliai
+- [Svetainės kūrėjo architektūra](../../architecture/website-builder.md) -- Kaip puslapiai, skyriai, elementai, įrašai ir nukreipimai susiję tarp programų
+- [Narystės galutiniai taškai](./membership.md) -- Asmenys, bažnyčios, grupės, vaidmenys, leidimai
+- [Lankomumo galutiniai taškai](./attendance.md) -- Pamaldų ir apsilankymų sekimas
+- [Autentifikacija ir leidimai](./authentication.md) -- Prisijungimo eiga, JWT, leidimų modelis
+- [Modulio struktūra](../module-structure.md) -- Kodo organizavimo modeliai

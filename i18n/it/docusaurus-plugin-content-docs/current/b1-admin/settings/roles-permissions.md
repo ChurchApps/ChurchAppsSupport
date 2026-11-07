@@ -1,5 +1,6 @@
 ---
 title: "Ruoli e permessi"
+description: "Configura i ruoli in B1 Admin per decidere cosa staff e volontari possono vedere e modificare, dalle donazioni e presenze alle persone e ai gruppi."
 ---
 
 # Ruoli e permessi

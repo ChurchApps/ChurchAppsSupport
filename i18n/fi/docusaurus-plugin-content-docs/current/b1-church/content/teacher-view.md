@@ -1,5 +1,6 @@
 ---
 title: "Opettajanäkymä oppitunneille"
+description: "Avaa oppitunti koko näytön Opettajanäkymässä B1.churchin suunnitelmasta, siirry osioiden välillä, toista media ja lataa luokan materiaalit."
 ---
 
 # Opettajanäkymä oppitunneille

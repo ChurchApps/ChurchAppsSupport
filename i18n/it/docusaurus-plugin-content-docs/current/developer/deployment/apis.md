@@ -1,5 +1,6 @@
 ---
 title: "Deploy dell'API"
+description: "Distribuisci l'API ChurchApps su AWS Lambda con Serverless: build, workflow demo e produzione, migrazioni del database e configurazione SSM."
 ---
 
 # Deploy dell'API
@@ -13,7 +14,7 @@ Le API di ChurchApps vengono distribuite come funzioni AWS Lambda usando il Serv
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configura l'API in locale -- vedi [Configurazione locale dell'API](../api/local-setup)
+- Configura l'API in locale -- vedi [Configurazione locale dell'API](../api/local-setup.md)
 - Configura le credenziali AWS sulla tua macchina
 - Assicurati di avere accesso all'account AWS di destinazione
 
@@ -47,7 +48,7 @@ In pratica l'Api viene distribuita da GitHub Actions: **Deploy Demo** viene eseg
 
 ## Migrazioni del database
 
-**Deploy Prod** applica le migrazioni del database in sospeso come parte del deploy. I database di produzione accettano connessioni solo dall'interno della VPC, quindi subito dopo `serverless deploy` il workflow invoca la funzione Lambda `migrate` (`api-Prod-migrate`), che esegue le migrazioni in sospeso di ogni modulo e restituisce `{ ok, environment, modules }`. Se un modulo fallisce o viene rifiutato (ad esempio un database senza cronologia delle migrazioni), il job fallisce così lo schema non resta mai indietro rispetto al codice. **Rollback Prod** ripristina solo il codice Lambda; le migrazioni restano applicate, quindi scrivile in modo additivo. Vedi [Server Admin -- Migrazioni del database](../server-admin#database-migrations) per verificarne lo stato o eseguirle manualmente.
+**Deploy Prod** applica le migrazioni del database in sospeso come parte del deploy. I database di produzione accettano connessioni solo dall'interno della VPC, quindi subito dopo `serverless deploy` il workflow invoca la funzione Lambda `migrate` (`api-Prod-migrate`), che esegue le migrazioni in sospeso di ogni modulo e restituisce `{ ok, environment, modules }`. Se un modulo fallisce o viene rifiutato (ad esempio un database senza cronologia delle migrazioni), il job fallisce così lo schema non resta mai indietro rispetto al codice. **Rollback Prod** ripristina solo il codice Lambda; le migrazioni restano applicate, quindi scrivile in modo additivo. Vedi [Server Admin -- Migrazioni del database](../server-admin.md#database-migrations) per verificarne lo stato o eseguirle manualmente.
 
 ## Cosa viene creato
 
@@ -75,6 +76,6 @@ Ogni merge su `main` viene distribuito prima nell'ambiente demo. Verifica la tua
 
 ## Articoli correlati
 
-- **[Configurazione locale dell'API](../api/local-setup)** -- Configurare l'API per lo sviluppo
-- **[Struttura dei moduli](../api/module-structure)** -- Comprendere l'architettura delle funzioni Lambda
-- **[Deploy delle web app](./web-apps)** -- Distribuire le applicazioni frontend
+- **[Configurazione locale dell'API](../api/local-setup.md)** -- Configurare l'API per lo sviluppo
+- **[Struttura dei moduli](../api/module-structure.md)** -- Comprendere l'architettura delle funzioni Lambda
+- **[Deploy delle web app](./web-apps.md)** -- Distribuire le applicazioni frontend

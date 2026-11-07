@@ -1,5 +1,6 @@
 ---
 title: "Skupinové konverzace"
+description: "Naučte se psát, upravovat a reagovat na zprávy v chatu skupiny na B1.church, včetně oznámení a nástrojů pro moderování vedoucími."
 ---
 
 # Skupinové konverzace

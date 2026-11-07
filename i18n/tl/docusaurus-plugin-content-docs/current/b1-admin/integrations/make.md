@@ -1,5 +1,6 @@
 ---
 title: "Make"
+description: "Ikonekta ang B1 Admin sa Make para i-automate ang workflow: gumawa ng API key, i-set up ang B1.church trigger at action, at ayusin ang karaniwang error."
 ---
 
 # Make
@@ -110,6 +111,6 @@ Ang B1.church Make app ay open source — ang JSON definitions ay nabubuhay sa `
 
 ## Makita Din
 
-- [Zapier](./zapier) — parehong pattern na may mas simple na UI at mas malaking app catalog
-- [Slack & Discord](./slack-discord) — built-in chat notifications nang walang Make
+- [Zapier](./zapier.md) — parehong pattern na may mas simple na UI at mas malaking app catalog
+- [Slack & Discord](./slack-discord.md) — built-in chat notifications nang walang Make
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)

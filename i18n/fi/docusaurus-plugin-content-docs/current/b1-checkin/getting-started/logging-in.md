@@ -1,5 +1,7 @@
 ---
-title: "Kirjautuminen"
+title: "Kirjautuminen B1 Church Checkiniin"
+sidebar_label: "Kirjautuminen"
+description: "Kirjaudu B1 Church Checkin -kioskisovellukseen, valitse seurakuntasi ja opi automaattisen kirjautumisen, ylläpitoasetusten ja uloskirjautumisen käyttö."
 ---
 
 # Kirjautuminen
@@ -63,7 +65,7 @@ Järjestelmänvalvojan asetukset on piilotettu tarkoituksella, jotta infopistett
 2. Jos infopisteelle on asetettu PIN-koodi, anna se, kun sitä pyydetään.
 3. **Järjestelmänvalvojan asetukset** -näkymä avautuu seuraavilla vaihtoehdoilla:
    - **Change Service** (eli Vaihda palvelu): vaihda valittu palveluaika
-   - **Change Printer** (eli Vaihda tulostin): avaa [tulostimen asetukset](./printer-setup), joista voit etsiä ja valita tulostimen
+   - **Change Printer** (eli Vaihda tulostin): avaa [tulostimen asetukset](./printer-setup.md), joista voit etsiä ja valita tulostimen
    - **Set/Change PIN** (eli Aseta/vaihda PIN): aseta tai päivitä infopisteen PIN-koodi, joka suojaa järjestelmänvalvojan käytön
    - **Logout** (eli Kirjaudu ulos): kirjaudu ulos ja palaa kirjautumisnäkymään
 
@@ -73,4 +75,4 @@ Uloskirjautuminen poistaa kaikki tallennetut tunnukset ja seurakuntavalinnan. Si
 
 ## Seuraavat vaiheet
 
-Kun olet kirjautunut sisään, voit [määrittää tulostimen](./printer-setup) tai siirtyä suoraan [sisäänkirjautumisprosessiin](../check-in/).
+Kun olet kirjautunut sisään, voit [määrittää tulostimen](./printer-setup.md) tai siirtyä suoraan [sisäänkirjautumisprosessiin](../check-in/index.md).

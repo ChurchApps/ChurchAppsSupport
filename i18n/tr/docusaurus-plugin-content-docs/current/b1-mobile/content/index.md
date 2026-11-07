@@ -1,5 +1,7 @@
 ---
-title: "İçerik"
+title: "B1 Mobile Uygulamasında İçerik Özellikleri"
+sidebar_label: "İçerik"
+description: "B1 Mobile uygulamasında vaazları, canlı yayınları, İncil okumayı ve Günün Ayeti'ni bulun; kilisenizin açtığı içerik özelliklerini görün."
 ---
 
 # İçerik
@@ -30,20 +32,20 @@ Her gün değişen, güzel biçimlendirilmiş bir İncil ayeti görselini görü
 
 ### Dersler (Kullanımdan Kaldırıldı)
 
-Uygulama içindeki Dersler ekranı yerini sınıf oynatımı için **[FreePlay](/docs/freeplay/)** ve göz atmak için doğrudan [Lessons.church](https://lessons.church) adresine bırakmıştır. Ayrıntılar için [Dersler başvuru sayfasına](./lessons) bakın.
+Uygulama içindeki Dersler ekranı yerini sınıf oynatımı için **[FreePlay](/docs/freeplay/)** ve göz atmak için doğrudan [Lessons.church](https://lessons.church) adresine bırakmıştır. Ayrıntılar için [Dersler başvuru sayfasına](./lessons.md) bakın.
 
 ## İçerik Bulma
 
 İçerik özellikleri uygulamadaki çekmece menüsünden kullanılabilir. Hangi içerik özelliklerinin etkin olacağına kilise yöneticiniz karar verir; bu nedenle yukarıda listelenen seçeneklerin tümünü görmeyebilirsiniz. Belirli bir özellik eksikse, kilisenizin bunu henüz yapılandırmamış olabilir.
 
 :::info
-İçerik özellikleri, kilise yöneticiniz tarafından [B1 Admin](../../b1-admin/) üzerinden yapılandırılır. Beklediğiniz bir özelliği görmüyorsanız kilise ofisinizle iletişime geçin.
+İçerik özellikleri, kilise yöneticiniz tarafından [B1 Admin](../../b1-admin/index.md) üzerinden yapılandırılır. Beklediğiniz bir özelliği görmüyorsanız kilise ofisinizle iletişime geçin.
 :::
 
 ## Sonraki Adımlar
 
-- [Vaazlar](./sermons) -- Kaydedilmiş vaazlara göz atın ve izleyin
-- [Canlı Yayın](./live-streaming) -- Canlı yayınları izleyin
-- [İncil](./bible) -- Yerleşik okuyucuda Kutsal Yazıyı okuyun
-- [Günün Ayeti](./verse-of-the-day) -- Bugünkü günlük ayeti görün
+- [Vaazlar](./sermons.md) -- Kaydedilmiş vaazlara göz atın ve izleyin
+- [Canlı Yayın](./live-streaming.md) -- Canlı yayınları izleyin
+- [İncil](./bible.md) -- Yerleşik okuyucuda Kutsal Yazıyı okuyun
+- [Günün Ayeti](./verse-of-the-day.md) -- Bugünkü günlük ayeti görün
 - [FreePlay](/docs/freeplay/) -- Dersleri sınıf televizyonlarında oynatın (kullanımdan kaldırılan uygulama içi Dersler ekranının yerine geçer)

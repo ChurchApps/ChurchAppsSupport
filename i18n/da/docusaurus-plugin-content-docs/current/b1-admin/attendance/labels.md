@@ -1,5 +1,6 @@
 ---
 title: "Check-In Label-designer"
+description: "Tilpas navnebrik- og afhentningsskabeloner, der udskrives ved check-in i B1 Admin, med felter, placering og betingelser for fødselsdag eller noter."
 ---
 
 # Check-In Label-designer
@@ -13,8 +14,8 @@ Label-designeren lader dig oprette og tilpasse de navneskilte og afhentningsslip
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opsæt [Attendance](setup) og konfigurer mindst ét gudstjenestetidspunkt med check-in aktiveret
-- Opsæt [Check-In](check-in), så etiketterne bliver udskrevet
+- Opsæt [Attendance](./setup.md) og konfigurer mindst ét gudstjenestetidspunkt med check-in aktiveret
+- Opsæt [Check-In](./check-in.md), så etiketterne bliver udskrevet
 - Du skal have administratoradgang til Attendance-sektionen
 
 </div>
@@ -85,6 +86,6 @@ Lav en testudskrift efter at have redigeret en skabelon, så du kan kontrollere,
 
 ## Relaterede artikler
 
-- [Check-In Setup](setup) — konfigurer gudstjenester og grupper til check-in
-- [Gennemførelse af check-in](check-in) — check-in-forløbet for familier
-- [B1 Checkin kom i gang](../../b1-checkin/getting-started/) — Checkin-kioskappen
+- [Check-In Setup](./setup.md) — konfigurer gudstjenester og grupper til check-in
+- [Gennemførelse af check-in](./check-in.md) — check-in-forløbet for familier
+- [B1 Checkin kom i gang](../../b1-checkin/getting-started/index.md) — Checkin-kioskappen

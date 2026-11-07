@@ -1,5 +1,6 @@
 ---
 title: "Spletna stran"
+description: "Spoznajte gradnik spletne strani B1 Admin: strani, blog, bloke, videz, datoteke in koledarje, s povezavami do vodnikov za nastavitev in urejanje."
 ---
 
 # Spletna stran
@@ -22,7 +23,7 @@ Vaše navigacijske povezave so prikazane v drevesni strukturi. Povezave lahko pr
 
 ### Blog
 
-Novice, posodobitve in razmišljanja objavljajte kot objave na blogu na naslovu `/blog` na vaši strani, z RSS virom. Glejte vodnik [Blog](blog).
+Novice, posodobitve in razmišljanja objavljajte kot objave na blogu na naslovu `/blog` na vaši strani, z RSS virom. Glejte vodnik [Blog](./blog.md).
 
 ### Bloki
 
@@ -30,24 +31,24 @@ Ustvarjajte ponovno uporabne vsebinske komponente, ki jih lahko postavite na ve�
 
 ### Videz
 
-Prilagodite temo, barve, pisave, logotip in razmike vaše spletne strani. Za hiter začetek lahko uporabite vnaprej pripravljene sloge, za natančnejše prilagajanje vsake podrobnosti pa uporabite urejevalnik barvne palete, nastavitve tipografije in lastni CSS. Za vse podrobnosti glejte vodnik [Videz](appearance).
+Prilagodite temo, barve, pisave, logotip in razmike vaše spletne strani. Za hiter začetek lahko uporabite vnaprej pripravljene sloge, za natančnejše prilagajanje vsake podrobnosti pa uporabite urejevalnik barvne palete, nastavitve tipografije in lastni CSS. Za vse podrobnosti glejte vodnik [Videz](./appearance.md).
 
 ### Datoteke
 
-Naložite in upravljajte vse svoje medijske datoteke -- slike, dokumente in druge datoteke -- na enem središčnem mestu ter kopirajte povezave do datotek za uporabo kjerkoli na svoji strani. Za več informacij glejte [Datoteke](files).
+Naložite in upravljajte vse svoje medijske datoteke -- slike, dokumente in druge datoteke -- na enem središčnem mestu ter kopirajte povezave do datotek za uporabo kjerkoli na svoji strani. Za več informacij glejte [Datoteke](./files.md).
 
 ### Koledarji
 
 Na svoji spletni strani objavite koledarje dogodkov, da bodo obiskovalci lahko videli, kaj se dogaja v vaši cerkvi. Ustvarite izbrane koledarje, ki v en pogled združujejo dogodke iz več skupin. Koledarji imajo v meniju B1 Admin svojo postavko **Koledarji**, ločeno od **Spletne strani**.
 
 :::tip
-Če spletno stran nastavljate prvič, začnite z [Začetna nastavitev](initial-setup). Ta vas vodi skozi nastavitev domene, ustvarjanje prve strani in konfiguriranje videza vaše spletne strani.
+Če spletno stran nastavljate prvič, začnite z [Začetna nastavitev](./initial-setup.md). Ta vas vodi skozi nastavitev domene, ustvarjanje prve strani in konfiguriranje videza vaše spletne strani.
 :::
 
 ## Naslednji koraki
 
-- [Začetna nastavitev](initial-setup) -- Spletno stran prvič zaženite in odprite za obiskovalce
-- [Upravljanje strani](managing-pages) -- Naučite se ustvarjati in urejati svoje strani
-- [Uporaba urejevalnika strani](page-editor) -- Gradite in oblikujte vsebino strani z vizualnim urejevalnikom
-- [Videz](appearance) -- Prilagodite videz in občutek svoje spletne strani
-- [Datoteke](files) -- Naložite in upravljajte medijske datoteke
+- [Začetna nastavitev](./initial-setup.md) -- Spletno stran prvič zaženite in odprite za obiskovalce
+- [Upravljanje strani](./managing-pages.md) -- Naučite se ustvarjati in urejati svoje strani
+- [Uporaba urejevalnika strani](./page-editor.md) -- Gradite in oblikujte vsebino strani z vizualnim urejevalnikom
+- [Videz](./appearance.md) -- Prilagodite videz in občutek svoje spletne strani
+- [Datoteke](./files.md) -- Naložite in upravljajte medijske datoteke

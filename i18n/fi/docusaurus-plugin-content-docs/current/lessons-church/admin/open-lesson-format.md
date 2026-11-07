@@ -1,5 +1,6 @@
 ---
 title: "Avoin oppituntimuoto"
+description: "Muotomääritys ulkoisille opetussuunnitelmatarjoajille Lessons.churchissa: tarjoajapuu ja paikkasyötteen JSON-kentät, toiminnot ja mediatiedostot."
 ---
 
 # Avoin oppituntimuoto

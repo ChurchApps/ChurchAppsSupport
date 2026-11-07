@@ -1,5 +1,6 @@
 ---
 title: "Zusagen zu Veranstaltungen"
+description: "Antworten Sie auf Gruppentermine im Mitgliederportal mit Dabei, Vielleicht oder Nicht dabei und sehen Sie, wer sonst kommt. Leitende sehen alle Antworten."
 ---
 
 # Zusagen zu Veranstaltungen
@@ -30,14 +31,14 @@ Ihre Zusage gilt für genau diesen Termin. Bei einem wöchentlichen Treffen antw
 ## Für Gruppenleitungen
 
 - **Antworten einsehen** -- Leitungen sehen bei jeder Veranstaltung im Gruppenkalender (**Alle Veranstaltungen**) einen Link **Antworten anzeigen**. Er öffnet das Blatt **Antworten**, das alle nach ihrer Antwort auflistet: Dabei, Vielleicht und Nicht dabei. Hat noch niemand geantwortet, steht dort „Noch keine Antworten.“
-- **Zusagen ein- oder ausschalten** -- Beim Erstellen oder Bearbeiten einer Veranstaltung verwenden Sie den Schalter **Zusagen erlauben**. Veranstaltungen, bei denen Zusagen ausgeschaltet sind, zeigen keine Antwortschaltflächen. Mitarbeitende, die Veranstaltungen in B1 Admin in großer Zahl anlegen, haben dieselbe Option. Siehe [Gruppenkalender](../../b1-admin/groups/group-calendar#event-rsvps).
+- **Zusagen ein- oder ausschalten** -- Beim Erstellen oder Bearbeiten einer Veranstaltung verwenden Sie den Schalter **Zusagen erlauben**. Veranstaltungen, bei denen Zusagen ausgeschaltet sind, zeigen keine Antwortschaltflächen. Mitarbeitende, die Veranstaltungen in B1 Admin in großer Zahl anlegen, haben dieselbe Option. Siehe [Gruppenkalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Zusagen sind eine einfache Teilnehmerzählung. Wenn Ihre Veranstaltung Anmeldedaten, eine Begrenzung der Teilnehmerzahl oder Zahlungen benötigt, verwenden Sie stattdessen die [Veranstaltungsanmeldung](../events/registering).
+Zusagen sind eine einfache Teilnehmerzählung. Wenn Ihre Veranstaltung Anmeldedaten, eine Begrenzung der Teilnehmerzahl oder Zahlungen benötigt, verwenden Sie stattdessen die [Veranstaltungsanmeldung](../events/registering.md).
 :::
 
 ## Verwandte Artikel
 
 - [Gruppendetails](./group-details.md) -- Alles auf der Detailseite einer Gruppe
-- [Gruppenkalender (B1 Admin)](../../b1-admin/groups/group-calendar) -- Wie Mitarbeitende und Leitungen Gruppenveranstaltungen und Zusagen verwalten
-- [Anmeldung zu Veranstaltungen](../events/registering) -- Vollständige Veranstaltungsanmeldung mit Teilnehmerbegrenzung und Zahlungen
+- [Gruppenkalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Wie Mitarbeitende und Leitungen Gruppenveranstaltungen und Zusagen verwalten
+- [Anmeldung zu Veranstaltungen](../events/registering.md) -- Vollständige Veranstaltungsanmeldung mit Teilnehmerbegrenzung und Zahlungen

@@ -1,5 +1,6 @@
 ---
 title: "API-installation"
+description: "Deploy ChurchApps API til AWS Lambda med Serverless, med build-, demo- og prod-workflows, databasemigreringer og SSM-konfiguration."
 ---
 
 # API-installation
@@ -13,7 +14,7 @@ ChurchApps API'er implementeres som AWS Lambda-funktioner ved hjælp af Serverle
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Opsætning af API lokalt -- se [Lokalt API Setup](../api/local-setup)
+- Opsætning af API lokalt -- se [Lokalt API Setup](../api/local-setup.md)
 - Konfigurér AWS-legitimationsoplysninger på din maskine
 - Sørg for, at du har adgang til AWS-kontoen for målet
 
@@ -68,6 +69,6 @@ For at teste en installation uden at påvirke produktionen skal du altid install
 
 ## Relaterede artikler
 
-- **[Lokalt API-setup](../api/local-setup)** -- Opsætning af API'en til udvikling
-- **[Modulstruktur](../api/module-structure)** -- Forståelse af Lambda-funktionsarkitektur
-- **[Webapp-installation](./web-apps)** -- Installation af frontend-applikationer
+- **[Lokalt API-setup](../api/local-setup.md)** -- Opsætning af API'en til udvikling
+- **[Modulstruktur](../api/module-structure.md)** -- Forståelse af Lambda-funktionsarkitektur
+- **[Webapp-installation](./web-apps.md)** -- Installation af frontend-applikationer

@@ -1,5 +1,6 @@
 ---
 title: "Gids: Kerkabstentie bijhouden"
+description: "Registreer kerkaanwezigheid in B1 Admin door campussen en dienstijden in te stellen, handmatig of via zelfcheck-in te registreren en rapporten te lezen."
 ---
 
 # Kerkabstentie bijhouden

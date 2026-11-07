@@ -1,5 +1,6 @@
 ---
 title: "Platené registrácie"
+description: "Nastavte platené registrácie na udalosti v B1 Admin: účastnícke typy s cenou, doplnky, zľavové kódy, čakacie listiny a platby cez poskytovateľa darov."
 ---
 
 # Platené registrácie
@@ -17,7 +18,7 @@ Registrácia na podujatie môže byť viac než jednoduchý súpis účastníkov
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Najprv zapnite registráciu na podujatí — pozri [Vytváranie kalendárov](creating-calendars#enabling-event-registration)
+- Najprv zapnite registráciu na podujatí — pozri [Vytváranie kalendárov](./creating-calendars.md#enabling-event-registration)
 - Ak chcete prijímať online platby, vaša cirkev musí mať [nastavené online darovanie](../donations/online-giving-setup.md) (Stripe, PayPal alebo Kingdom Funding). Bezplatné podujatia nepotrebujú nastavenie darovania. Bez online darovania platené registrácie fungujú aj naďalej, ale ľudia platia cirkvi priamo — pozri [Cirkvi bez online darovania](#churches-without-online-giving).
 
 </div>
@@ -66,7 +67,7 @@ Každý kód zobrazuje počet **Použití**, aby ste videli, ako často bol upla
 Zapnite **Povoliť zoznam čakajúcich** v karte Nastavenia registrácie. Keď podujatie dosiahne kapacitu:
 
 - Noví registrujúci dostanú miesto v zozname čakajúcich namiesto odmietnutia. Dokončia rovnakú registráciu (počas čakania sa platba preskočí).
-- Keď niekto zruší účasť, najstaršia registrácia na zozname čakajúcich sa **automaticky zaradí** a dostane e-mail, že sa uvoľnilo miesto. Ak dlhujú sumu, e-mail ich prepojí na [Moje registrácie](../../b1-church/events/my-registrations) na webe B1 vašej cirkvi, kde môžu dokončiť platbu.
+- Keď niekto zruší účasť, najstaršia registrácia na zozname čakajúcich sa **automaticky zaradí** a dostane e-mail, že sa uvoľnilo miesto. Ak dlhujú sumu, e-mail ich prepojí na [Moje registrácie](../../b1-church/events/my-registrations.md) na webe B1 vašej cirkvi, kde môžu dokončiť platbu.
 - Kohokoľvek môžete kedykoľvek zaradiť manuálne akciou **Zaradiť** v riadku na zozname čakajúcich — to je užitočné po zvýšení kapacity podujatia.
 
 :::info
@@ -79,7 +80,7 @@ Otvorte podujatie zo stránky Registrácie a uvidíte všetky registrácie. Náz
 
 - Kliknutím na ikonu detailov v riadku otvoríte dialóg **Detaily registrácie** — členovia, výbery, zaplatené/dlh a tabuľku **Platby** so všetkými platbami (suma, spôsob, dátum).
 - **Exportovať CSV** stiahne úplný súpis so stĺpcami pre členov, typy účastníkov, výbery, zaplatené/celkom/dlh, stav a jeden stĺpec pre každú otázku registrácie.
-- **Pridať účastníka** zaznamená registráciu mimo systému alebo telefonicky pre ľubovoľnú osobu vo vašej cirkvi. Vyberte osobu a pri platenom podujatí aj jej typ účastníka. Jej karta sa nespoplatní: platená registrácia sa uloží ako **čakajúca** s celou sumou ako dlhom. Ak má vaša cirkev online darovanie, osoba môže platbu uhradiť cez [Moje registrácie](../../b1-church/events/my-registrations); inak ju vyberte osobne. Na pridávanie účastníkov potrebujete oprávnenie Upraviť registrácie.
+- **Pridať účastníka** zaznamená registráciu mimo systému alebo telefonicky pre ľubovoľnú osobu vo vašej cirkvi. Vyberte osobu a pri platenom podujatí aj jej typ účastníka. Jej karta sa nespoplatní: platená registrácia sa uloží ako **čakajúca** s celou sumou ako dlhom. Ak má vaša cirkev online darovanie, osoba môže platbu uhradiť cez [Moje registrácie](../../b1-church/events/my-registrations.md); inak ju vyberte osobne. Na pridávanie účastníkov potrebujete oprávnenie Upraviť registrácie.
 
 :::info
 Vrátenie platieb sa v B1 nespracúva. Ak potrebujete vrátiť platbu za zrušenú platenú registráciu, urobte to v administrácii vášho poskytovateľa darov (napr. Stripe).
@@ -94,12 +95,12 @@ Platby prebiehajú cez rovnakú bránu darovania, ktorú vaša cirkev už použ�
 Ak vaša cirkev nemá nastaveného poskytovateľa darovania, platené podujatia môžu prijímať registrácie aj naďalej. Krok platby informuje registrujúcich, že online platba nie je k dispozícii a že môžu zaplatiť cirkvi priamo; tlačidlo **Registrovať a zaplatiť neskôr** registráciu uloží. Uloží sa ako **čakajúca** s celou sumou ako dlhom a v súpise sa zobrazí s upozornením na dlh. Peniaze vyberte spôsobom, ktorý vaša cirkev zvyčajne používa.
 
 :::info
-B1 nemá spôsob, ako označiť offline platbu ako prijatú. Dlh zostáva v súpise aj na karte [Moje registrácie](../../b1-church/events/my-registrations) registrujúceho aj po tom, ako ho vyberiete, preto si veďte vlastný záznam o tom, kto zaplatil.
+B1 nemá spôsob, ako označiť offline platbu ako prijatú. Dlh zostáva v súpise aj na karte [Moje registrácie](../../b1-church/events/my-registrations.md) registrujúceho aj po tom, ako ho vyberiete, preto si veďte vlastný záznam o tom, kto zaplatil.
 :::
 
 ## Súvisiace články
 
-- [Vytváranie kalendárov](creating-calendars#enabling-event-registration) — zapnutie registrácie a základných nastavení
+- [Vytváranie kalendárov](./creating-calendars.md#enabling-event-registration) — zapnutie registrácie a základných nastavení
 - [Nastavenie online darovania](../donations/online-giving-setup.md) — konfigurácia platobnej brány použitej pri pokladni
-- [Registrácia na podujatia](../../b1-church/events/registering) — čo členovia vidia pri prihlasovaní
-- [Moje registrácie](../../b1-church/events/my-registrations) — ako členovia platia dlhy a upravujú registrácie
+- [Registrácia na podujatia](../../b1-church/events/registering.md) — čo členovia vidia pri prihlasovaní
+- [Moje registrácie](../../b1-church/events/my-registrations.md) — ako členovia platia dlhy a upravujú registrácie

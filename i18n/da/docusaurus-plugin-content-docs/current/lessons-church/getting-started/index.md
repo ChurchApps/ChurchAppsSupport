@@ -1,5 +1,7 @@
 ---
-title: "Introduktion"
+title: "Kom i gang med Lessons.church"
+sidebar_label: "Introduktion"
+description: "Opret din gratis Lessons.church-konto, forbind din kirke, opsæt klasseværelser og planlæg dine første lektioner. Ingen abonnement eller prøveperiode kræves."
 ---
 
 # Introduktion

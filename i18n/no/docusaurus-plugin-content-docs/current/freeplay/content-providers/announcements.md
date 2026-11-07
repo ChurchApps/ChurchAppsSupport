@@ -1,5 +1,6 @@
 ---
 title: "Kunngjøringer"
+description: "Gjenta en mappe med lysbilder på FreePlay TV til lobby- eller forhåndsklasse-kunngjøringer: velg en leverandørmappe, hold den synkronisert og slå den av når du er ferdig."
 ---
 
 # Kunngjøringer
@@ -13,7 +14,7 @@ FreePlay kan spille en mappe med kunngjøringslysbilder i loop på TV-en din —
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Koble til en innholdsleverandør](./connecting-providers) som har kunngjøringslysbildene dine, for eksempel Dropbox eller OneDrive
+- [Koble til en innholdsleverandør](./connecting-providers.md) som har kunngjøringslysbildene dine, for eksempel Dropbox eller OneDrive
 - Legg bildene eller videoene du vil ha i loop i én mappe hos den leverandøren
 
 </div>
@@ -37,7 +38,7 @@ Når lysbildene er lastet ned, vises et **Kunngjøringer**-element nær toppen a
 - Etter det siste lysbildet starter loopen på nytt fra det første
 - Hvis mappen har én enkelt video, gjentas den på stedet
 
-Loopen spilles fra filene som er lagret på enheten, så den fortsetter å kjøre uten internettforbindelse. Du kan bruke de samme fjernkontrollene som for alt annet innhold — se [Spille av innhold](./playing-content).
+Loopen spilles fra filene som er lagret på enheten, så den fortsetter å kjøre uten internettforbindelse. Du kan bruke de samme fjernkontrollene som for alt annet innhold — se [Spille av innhold](./playing-content.md).
 
 ## Oppdatere lysbildene
 
@@ -61,6 +62,6 @@ Hvis du kobler fra leverandøren, slås også kunngjøringer som kom fra den av.
 
 ## Relaterte artikler
 
-- **[Koble til leverandører](./connecting-providers)** - Koble til leverandøren som har lysbildene dine
-- **[Bla gjennom og last ned innhold](./browsing-content)** - Bla gjennom en leverandørs mapper og spill av innhold på forespørsel
-- **[Spille av innhold](./playing-content)** - Spillerkontroller for TV-fjernkontrollen din
+- **[Koble til leverandører](./connecting-providers.md)** - Koble til leverandøren som har lysbildene dine
+- **[Bla gjennom og last ned innhold](./browsing-content.md)** - Bla gjennom en leverandørs mapper og spill av innhold på forespørsel
+- **[Spille av innhold](./playing-content.md)** - Spillerkontroller for TV-fjernkontrollen din

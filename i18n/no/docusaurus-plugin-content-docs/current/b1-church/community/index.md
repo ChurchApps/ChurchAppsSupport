@@ -1,5 +1,7 @@
 ---
-title: "Fellesskap"
+title: "Medlemskatalog i B1.church"
+sidebar_label: "Fellesskap"
+description: "Søk i menighetens medlemskatalog i B1.church etter navn eller gruppe, se profiler, og finn hvor de avviklede Timeline-oppdateringene nå finnes."
 ---
 
 # Fellesskap
@@ -26,5 +28,5 @@ Medlemmene og informasjonen som er synlig for deg i katalogen avhenger av kirken
 :::
 
 :::tip
-Bruk fellesskapsfunksjonene sammen med [Grupper](../groups/) for å holde deg engasjert med kirken gjennom hele uken.
+Bruk fellesskapsfunksjonene sammen med [Grupper](../groups/index.md) for å holde deg engasjert med kirken gjennom hele uken.
 :::

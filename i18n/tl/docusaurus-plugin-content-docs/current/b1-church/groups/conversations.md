@@ -1,5 +1,6 @@
 ---
 title: "Mga Usapan ng Group"
+description: "Alamin kung paano magpost, mag-edit, mag-react, at mamahala ng mga mensahe sa group chat sa B1.church, kasama ang mga anunsyo at moderasyon ng lider."
 ---
 
 # Mga Usapan ng Group

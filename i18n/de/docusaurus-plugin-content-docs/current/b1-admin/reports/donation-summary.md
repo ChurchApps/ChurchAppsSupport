@@ -1,5 +1,6 @@
 ---
 title: "Spendenübersicht"
+description: "Den Bericht Donation Summary in B1 Admin ausführen: Gesamtspenden, Anzahl einzelner Spender und Beträge je Fonds für beliebige Zeiträume."
 ---
 
 # Spendenübersicht

@@ -1,5 +1,6 @@
 ---
 title: "接続サービス"
+description: "Zapier または Make のレシピを使い、B1 Admin を Mailchimp、Donorbox、Subsplash、VOMO、Clearstream などのツールに接続します。各ツールの設定ガイドがあります。"
 ---
 
 # 接続サービス
@@ -14,14 +15,14 @@ B1を他の教会テクノロジーツールと接続する最も手早い方法
 
 | サービス | カテゴリ | ブリッジ | 連携内容 |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | メール | ZapierまたはMake | 新しいB1の人物・献金者をMailchimpのオーディエンスに同期 |
-| [Donorbox](./donorbox) | 寄付 | Zapier | Donorboxの寄付とドナーをB1に送り返す |
-| [Subsplash](./subsplash) | アプリ / 寄付 | Zapier | Subsplashの献金と人物をB1に取り込む |
-| [VOMO](./vomo) | ボランティア | Zapier | B1のグループとVOMOのプロジェクトの間でボランティア登録を同期 |
-| [Clearstream](./clearstream) | SMS | Zapier | B1のイベントからClearstreamのテキストメッセージを送信し、返信をB1のレコードとして取り込む |
-| [Text In Church](./text-in-church) | SMS / ワークフロー | Zapier | B1からText In Churchのワークフローを起動し、コネクトカードのデータを受け取る |
-| [Mobile Message](./mobile-message) | SMS (オーストラリア) | Webhooks by ZapierまたはMake | B1の任意のイベントからSMSを送信 |
-| [Checkr](./checkr) | 身元調査 | Make | 奉仕チームに加わった人の身元調査を開始 |
+| [Mailchimp](./mailchimp.md) | メール | ZapierまたはMake | 新しいB1の人物・献金者をMailchimpのオーディエンスに同期 |
+| [Donorbox](./donorbox.md) | 寄付 | Zapier | Donorboxの寄付とドナーをB1に送り返す |
+| [Subsplash](./subsplash.md) | アプリ / 寄付 | Zapier | Subsplashの献金と人物をB1に取り込む |
+| [VOMO](./vomo.md) | ボランティア | Zapier | B1のグループとVOMOのプロジェクトの間でボランティア登録を同期 |
+| [Clearstream](./clearstream.md) | SMS | Zapier | B1のイベントからClearstreamのテキストメッセージを送信し、返信をB1のレコードとして取り込む |
+| [Text In Church](./text-in-church.md) | SMS / ワークフロー | Zapier | B1からText In Churchのワークフローを起動し、コネクトカードのデータを受け取る |
+| [Mobile Message](./mobile-message.md) | SMS (オーストラリア) | Webhooks by ZapierまたはMake | B1の任意のイベントからSMSを送信 |
+| [Checkr](./checkr.md) | 身元調査 | Make | 奉仕チームに加わった人の身元調査を開始 |
 
 ## これらすべてに共通すること
 
@@ -45,8 +46,8 @@ Tithe.ly、Pushpay、Vanco、PastorsLine、Gloo、Notebird、KidCheck、Ministry
 
 ## 関連項目
 
-- [Zapier（概要）](../zapier) — ZapierのレシピにおけるB1側の設定はすべて同じなので、このドキュメントで一度だけ説明しています
-- [Make（概要）](../make) — Makeのシナリオも同様です
-- [Slack & Discord](../slack-discord) — ブリッジなしでチャット通知を受け取れます
-- [Google Sheets](../google-sheets) — オンデマンドのエクスポート
+- [Zapier（概要）](../zapier.md) — ZapierのレシピにおけるB1側の設定はすべて同じなので、このドキュメントで一度だけ説明しています
+- [Make（概要）](../make.md) — Makeのシナリオも同様です
+- [Slack & Discord](../slack-discord.md) — ブリッジなしでチャット通知を受け取れます
+- [Google Sheets](../google-sheets.md) — オンデマンドのエクスポート
 - [Webhooks（開発者リファレンス）](/docs/developer/api/webhooks) — すべてのレシピが依存するイベントカタログ

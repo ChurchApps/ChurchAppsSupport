@@ -1,5 +1,7 @@
 ---
-title: "Lessons (Déprécié)"
+title: "Écran Leçons dans B1 Mobile (retiré)"
+sidebar_label: "Lessons (Déprécié)"
+description: "Page Leçons (obsolète) : pourquoi l’écran Leçons de B1 Mobile a été retiré et où trouver les programmes aujourd’hui (FreePlay ou Lessons.church)."
 ---
 
 # Lessons (Déprécié)

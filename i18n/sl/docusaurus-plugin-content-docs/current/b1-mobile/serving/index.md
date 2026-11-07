@@ -1,5 +1,7 @@
 ---
-title: "Služenje"
+title: "Urniki služenja v aplikaciji B1 Mobile"
+sidebar_label: "Služenje"
+description: "Oglejte si svoj urnik služenja, prihajajoče naloge in stanje položajev v aplikaciji B1 Mobile ter izvedite, kako se prijaviti na proste prostovoljske vloge."
 ---
 
 # Služenje
@@ -15,11 +17,11 @@ Razdelek **Služenje** v aplikaciji B1 Mobile vam omogoča hiter in enostaven pr
 - **Prihajajoče naloge** -- Na enem mestu si oglejte vse svoje prihodnje službene termine, da boste vedno vedeli, kdaj boste potrebni naslednjič.
 - **Zgodovina opravljenih služb** -- Preglejte službe, ki ste jih že opravili, in tako spremljajte svoje sodelovanje skozi čas.
 - **Dodelitve položajev** -- Vsaka naloga prikazuje položaj, ki ste ga dobili, ter njen trenutni status -- ali je zahtevan, potrjen ali čaka na vaš odgovor.
-- **Prostovoljne priložnosti** -- Brskajte po prostih položajih in se [sami prijavite](./volunteer-signup) na prihajajoče službe.
+- **Prostovoljne priložnosti** -- Brskajte po prostih položajih in se [sami prijavite](./volunteer-signup.md) na prihajajoče službe.
 
 ## Kako začeti
 
-Svoj razpored služenja si ogledate tako, da se v spodnji navigaciji aplikacije dotaknete **Služenje**. Za dostop do svojih nalog morate biti prijavljeni. Če niste prijavljeni, vas bomo najprej pozvali, da se [prijavite](../getting-started/logging-in).
+Svoj razpored služenja si ogledate tako, da se v spodnji navigaciji aplikacije dotaknete **Služenje**. Za dostop do svojih nalog morate biti prijavljeni. Če niste prijavljeni, vas bomo najprej pozvali, da se [prijavite](../getting-started/logging-in.md).
 
 :::info
 Videli boste samo načrte, na katere ste bili dodeljeni. Če ne vidite nobene naloge, to pomeni, da še niste dodani v nobeno službeno ekipo. Za sodelovanje se obrnite na cerkvenega administratorja ali vodjo službe.
@@ -27,5 +29,5 @@ Videli boste samo načrte, na katere ste bili dodeljeni. Če ne vidite nobene na
 
 ## Naslednji koraki
 
-- [Ogled načrtov](./viewing-plans) -- Naučite se brskati po prihajajočih in preteklih načrtih ter si ogledati podrobnosti posameznega
-- [Prijava za prostovoljstvo](./volunteer-signup) -- Brskajte po prostih položajih in se prijavite na prostovoljne priložnosti
+- [Ogled načrtov](./viewing-plans.md) -- Naučite se brskati po prihajajočih in preteklih načrtih ter si ogledati podrobnosti posameznega
+- [Prijava za prostovoljstvo](./volunteer-signup.md) -- Brskajte po prostih položajih in se prijavite na prostovoljne priložnosti

@@ -1,5 +1,6 @@
 ---
 title: "Eseményekre adott válaszok (RSVP)"
+description: "Válaszolj a B1.church tagi portálban a csoportesemények Részt veszek, Talán vagy Nem tudok részt venni lehetőségre, és lásd, hányan jönnek. A vezetők is áttekinthetik a válaszokat."
 ---
 
 # Eseményekre adott válaszok (RSVP)
@@ -30,14 +31,14 @@ Az RSVP-válaszod az adott eseményre vonatkozik — heti összejövetel esetén
 ## Csoportvezetőknek
 
 - **Válaszok megtekintése** -- A vezetők a csoport naptárában (**Összes esemény**) minden eseménynél látják a **Válaszok megtekintése** hivatkozást. Ez megnyitja a **Válaszok** panelt, amely válaszonként listázza a résztvevőket: Megyek, Talán és Nem megyek. Ha még senki sem válaszolt, a „Még nincs válasz” üzenet jelenik meg.
-- **RSVP bekapcsolása vagy kikapcsolása** -- Esemény létrehozásakor vagy szerkesztésekor használd az **RSVP engedélyezése** kapcsolót. A kikapcsolt RSVP-jű események nem mutatnak válaszgombokat. A B1 Adminból tömegesen eseményeket létrehozó munkatársak ugyanezt a beállítást kapják — lásd [Csoportnaptár](../../b1-admin/groups/group-calendar#event-rsvps).
+- **RSVP bekapcsolása vagy kikapcsolása** -- Esemény létrehozásakor vagy szerkesztésekor használd az **RSVP engedélyezése** kapcsolót. A kikapcsolt RSVP-jű események nem mutatnak válaszgombokat. A B1 Adminból tömegesen eseményeket létrehozó munkatársak ugyanezt a beállítást kapják — lásd [Csoportnaptár](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Az RSVP egy egyszerű létszámfelmérés. Ha az eseményhez jelentkezési adatok, létszámkorlát vagy fizetés kell, használd helyette az [eseményregisztrációt](../events/registering).
+Az RSVP egy egyszerű létszámfelmérés. Ha az eseményhez jelentkezési adatok, létszámkorlát vagy fizetés kell, használd helyette az [eseményregisztrációt](../events/registering.md).
 :::
 
 ## Kapcsolódó cikkek
 
 - [Csoport részletei](./group-details.md) -- Minden, ami a csoport részletes oldalán található
-- [Csoportnaptár (B1 Admin)](../../b1-admin/groups/group-calendar) -- Hogyan kezelik a munkatársak és a vezetők a csoporteseményeket és az RSVP-ket
-- [Regisztráció eseményekre](../events/registering) -- Teljes eseményregisztráció létszámkorláttal és fizetéssel
+- [Csoportnaptár (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Hogyan kezelik a munkatársak és a vezetők a csoporteseményeket és az RSVP-ket
+- [Regisztráció eseményekre](../events/registering.md) -- Teljes eseményregisztráció létszámkorláttal és fizetéssel

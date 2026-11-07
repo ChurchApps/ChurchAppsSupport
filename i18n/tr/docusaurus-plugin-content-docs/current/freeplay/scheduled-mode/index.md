@@ -1,5 +1,6 @@
 ---
 title: "Zamanlanmış Mod"
+description: "FreePlay Admin'de takvime göre oynatma listeleri çalan FreePlay TV'leri kurun; ekranlar kendiliğinden başlayıp durur ve Wi-Fi kesintilerinde de oynatmaya devam eder."
 ---
 
 # Zamanlanmış Mod
@@ -18,16 +19,16 @@ FreePlay Admin, B1 Admin'de kullandığınız ChurchApps girişini kullanır. Ol
 
 FreePlay Admin'in sitenin üst kısmında listelenen dört ana sayfası vardır:
 
-- **[Ekranlar](./managing-screens)** - Eşleştirdiğiniz TV'ler, durumları ve ait oldukları **ekran grupları**. Bir gruptaki ekranlar tek bir takvimi ve tek bir varsayılan döngüyü paylaşır
-- **[Oynatma Listeleri](./building-playlists)** - İçerik sağlayıcılarınızdan seçtiğiniz resim ve video döngüleri
-- **[Takvim](./scheduling-the-calendar)** - Her ekran grubunun ne zaman neyi oynattığı
-- **[Sağlayıcılar](./building-playlists#connecting-providers)** - Oynatma listelerinizin içerik çektiği kaynaklar. Her birini kilise genelinde yalnızca bir kez bağlarsınız
+- **[Ekranlar](./managing-screens.md)** - Eşleştirdiğiniz TV'ler, durumları ve ait oldukları **ekran grupları**. Bir gruptaki ekranlar tek bir takvimi ve tek bir varsayılan döngüyü paylaşır
+- **[Oynatma Listeleri](./building-playlists.md)** - İçerik sağlayıcılarınızdan seçtiğiniz resim ve video döngüleri
+- **[Takvim](./scheduling-the-calendar.md)** - Her ekran grubunun ne zaman neyi oynattığı
+- **[Sağlayıcılar](./building-playlists.md#connecting-providers)** - Oynatma listelerinizin içerik çektiği kaynaklar. Her birini kilise genelinde yalnızca bir kez bağlarsınız
 
 Hiçbir şey planlanmadığında, bir grubun ekranları **varsayılan döngüsünü** oynatır. Grubun varsayılan döngüsü yoksa ekranlar kararır.
 
 ## Plan Modu'ndan Farkı
 
-- **[Plan Modu](../plan-mode/)**, B1 Admin'deki tek bir ibadet planı türünü izler. Biri TV'de **Planı Başlat**'a basar ve ders de o anda oynamaya başlar
+- **[Plan Modu](../plan-mode/index.md)**, B1 Admin'deki tek bir ibadet planı türünü izler. Biri TV'de **Planı Başlat**'a basar ve ders de o anda oynamaya başlar
 - **Zamanlanmış Mod** bir takvimi izler. İçerik, belirlediğiniz saatlerde başlar ve durur; bu yüzden giriş holü tabelaları, duyuru döngüleri ve dersin herkes içeri girmeden önce ekranda olması gereken sınıflar için çok uygundur
 
 Takvim girişi yine de bir ibadet planı oynatabilir. Takvim eklerken **İbadet planları** altından plan türünü seçin; ekran, o hafta B1 Admin'de geçerli olan planı oynatır. Bu, planda özelleştirdiğiniz Go Curriculum derslerini de kapsar. Ekran, B1 Admin'de plan türünün hizmet alanına bağlı Go Curriculum girişini kullanır; hizmet alanının böyle bir girişi yoksa kilisenin Go Curriculum bağlantısını kullanır.
@@ -49,8 +50,8 @@ Komut paletini açmak için **Ctrl+K** (Mac'te **⌘K**) tuşlarına basın ya d
 
 ## Bu Bölümde
 
-- **[Ekran Eşleştirme](./pairing-a-screen)** - Kodu TV'de gösterin ve FreePlay Admin'de eşleştirin
-- **[Ekranları ve Grupları Yönetme](./managing-screens)** - Durumu ve indirmeleri kontrol edin, ekranları gruplara ayırın
-- **[Sağlayıcıları Bağlama ve Oynatma Listeleri Oluşturma](./building-playlists)** - İçerik kaynaklarını bağlayın ve resim ile videolardan döngüler oluşturun
-- **[Takvimi Planlama](./scheduling-the-calendar)** - Ne zaman neyin oynatılacağına karar verin ve bir içerik erken bittiğinde ne olacağını belirleyin
-- **[TV'de Zamanlanmış Oynatma](./scheduled-playback)** - TV'nin kendi kendine yaptıkları ve oynatma sırasında kumandanın nasıl kullanılacağı
+- **[Ekran Eşleştirme](./pairing-a-screen.md)** - Kodu TV'de gösterin ve FreePlay Admin'de eşleştirin
+- **[Ekranları ve Grupları Yönetme](./managing-screens.md)** - Durumu ve indirmeleri kontrol edin, ekranları gruplara ayırın
+- **[Sağlayıcıları Bağlama ve Oynatma Listeleri Oluşturma](./building-playlists.md)** - İçerik kaynaklarını bağlayın ve resim ile videolardan döngüler oluşturun
+- **[Takvimi Planlama](./scheduling-the-calendar.md)** - Ne zaman neyin oynatılacağına karar verin ve bir içerik erken bittiğinde ne olacağını belirleyin
+- **[TV'de Zamanlanmış Oynatma](./scheduled-playback.md)** - TV'nin kendi kendine yaptıkları ve oynatma sırasında kumandanın nasıl kullanılacağı

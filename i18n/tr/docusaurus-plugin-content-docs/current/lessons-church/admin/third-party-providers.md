@@ -1,5 +1,6 @@
 ---
 title: "Üçüncü Taraf Sağlayıcılar"
+description: "Üçüncü taraf sayfasından Lessons.church'e harici bir müfredat akışı ekleyin; ardından sağlayıcı bağlantılarını gerektiğinde görüntüleyin, güncelleyin veya kaldırın."
 ---
 
 # Üçüncü Taraf Sağlayıcılar

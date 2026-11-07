@@ -1,5 +1,6 @@
 ---
 title: "Maramihang Pag-import"
+description: "Mag-import nang maramihan ng sermon video mula sa YouTube channel o Vimeo account papunta sa B1 Admin, saka ayusin ang mga ito sa isang playlist."
 ---
 
 # Maramihang Pag-import
@@ -14,7 +15,7 @@ Hinahayaan ka ng pahinang Bulk Import na mabilis na punan ang iyong sermon libra
 <h4>Bago Ka Magsimula</h4>
 
 - Kailangan mo ang pahintulot na **contentApi.streamingServices.edit**. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) kung wala kang access.
-- Gumawa ng kahit isang [playlist](playlists) para doon i-import ang iyong mga sermon
+- Gumawa ng kahit isang [playlist](./playlists.md) para doon i-import ang iyong mga sermon
 - Ihanda ang iyong YouTube Channel ID o impormasyon ng iyong Vimeo account
 
 </div>
@@ -39,7 +40,7 @@ Bago mag-import ng mga video, kailangan mo ng kahit isang playlist para pagsamah
 2. I-click ang **Create First Playlist** at punan ang pangalan, paglalarawan, petsa ng paglalathala, at thumbnail.
 3. I-click ang **Save**, pagkatapos bumalik sa Bulk Import sa pamamagitan ng pag-click sa **Add Sermon** at pagpili sa **Bulk Import**.
 
-Tingnan ang [Playlists](playlists) para sa detalyadong tagubilin sa paggawa at pamamahala ng mga playlist.
+Tingnan ang [Playlists](./playlists.md) para sa detalyadong tagubilin sa paggawa at pamamahala ng mga playlist.
 
 ## Pag-import ng mga Video
 
@@ -54,11 +55,11 @@ Tingnan ang [Playlists](playlists) para sa detalyadong tagubilin sa paggawa at p
 Ii-import ang iyong mga video kasama ang lahat ng detalye nito, kabilang ang mga pamagat, paglalarawan, petsa, at thumbnail. Ang mga espesyal na character sa mga pamagat at paglalarawan sa YouTube, tulad ng `&`, apostrophe, at quotation mark, ay lumilitaw nang eksakto gaya ng pagkakasulat, sa halip na bilang mga code tulad ng `&amp;`.
 
 :::info
-Ang bulk import ay mainam para sa pagsisimula kapag lumilipat ka mula sa ibang platform. Para sa pagdaragdag ng indibidwal na sermon sa hinaharap, gamitin ang pahinang [Managing Sermons](managing-sermons) sa halip.
+Ang bulk import ay mainam para sa pagsisimula kapag lumilipat ka mula sa ibang platform. Para sa pagdaragdag ng indibidwal na sermon sa hinaharap, gamitin ang pahinang [Managing Sermons](./managing-sermons.md) sa halip.
 :::
 
 ## Mga Susunod na Hakbang
 
-- [Managing Sermons](managing-sermons) -- I-edit ang mga detalye ng sermon na na-import
-- [Playlists](playlists) -- Gumawa at pamahalaan ang mga sermon series
-- [Live Streaming](live-streaming) -- I-set up ang live streaming para sa iyong mga serbisyo
+- [Managing Sermons](./managing-sermons.md) -- I-edit ang mga detalye ng sermon na na-import
+- [Playlists](./playlists.md) -- Gumawa at pamahalaan ang mga sermon series
+- [Live Streaming](./live-streaming.md) -- I-set up ang live streaming para sa iyong mga serbisyo

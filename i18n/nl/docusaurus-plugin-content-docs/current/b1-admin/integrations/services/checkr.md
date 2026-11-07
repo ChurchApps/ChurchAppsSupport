@@ -1,5 +1,6 @@
 ---
 title: "Checkr"
+description: "Koppel vrijwilligersaanmeldingen in B1 Admin via Make.com aan Checkr-achtergrondcontroles, met optionele meldingen voor je veiligheidscoördinator."
 ---
 
 # Checkr
@@ -90,6 +91,6 @@ Als je kerk het lidmaatschap van B1-groepen gebruikt om toegang te beperken (bij
 
 ## Zie ook
 
-- [Make (overzicht)](../make): de B1-kant van elk Make-scenario
-- [Mobile Message](./mobile-message): voor sms-providers zonder Zapier-apps, met hetzelfde webhook- en HTTP-patroon als de Checkr-koppeling in Make
+- [Make (overzicht)](../make.md): de B1-kant van elk Make-scenario
+- [Mobile Message](./mobile-message.md): voor sms-providers zonder Zapier-apps, met hetzelfde webhook- en HTTP-patroon als de Checkr-koppeling in Make
 - [Checkr API-documentatie](https://docs.checkr.com/)

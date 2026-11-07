@@ -1,5 +1,6 @@
 ---
 title: "Meddelanden"
+description: "Loopa en mapp med bilder på FreePlay TV för meddelanden i lobbyn eller före lektionen: välj leverantörsmapp, håll den synkad och stäng av när du är klar."
 ---
 
 # Meddelanden
@@ -13,7 +14,7 @@ FreePlay kan spela upp en mapp med meddelandebilder på din TV, till exempel i e
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- [Anslut till en innehållsleverantör](./connecting-providers) som innehåller dina meddelandebilder, till exempel Dropbox eller OneDrive
+- [Anslut till en innehållsleverantör](./connecting-providers.md) som innehåller dina meddelandebilder, till exempel Dropbox eller OneDrive
 - Lägg de bilder eller videor du vill loopa i en gemensam mapp hos leverantören
 
 </div>
@@ -37,7 +38,7 @@ När bilderna har laddats ner visas ett **Meddelanden**-objekt nära toppen av s
 - Efter den sista bilden börjar loopen om från den första
 - Om mappen bara innehåller en video upprepas den på samma plats
 
-Loopen spelas upp från filerna som sparats på enheten, så den fortsätter att köra utan internetanslutning. Du kan använda samma fjärrkontroll som för allt annat innehåll. Se [Spela upp innehåll](./playing-content).
+Loopen spelas upp från filerna som sparats på enheten, så den fortsätter att köra utan internetanslutning. Du kan använda samma fjärrkontroll som för allt annat innehåll. Se [Spela upp innehåll](./playing-content.md).
 
 ## Uppdatera bilderna
 
@@ -61,6 +62,6 @@ Om du kopplar bort leverantören stängs även de meddelanden som kom från den 
 
 ## Relaterade artiklar
 
-- **[Ansluta till leverantörer](./connecting-providers)** - Anslut leverantören som innehåller dina bilder
-- **[Bläddra i och ladda ner innehåll](./browsing-content)** - Bläddra bland en leverantörs mappar och spela upp innehåll efter behov
-- **[Spela upp innehåll](./playing-content)** - Uppspelningskontroller för din TV-fjärrkontroll
+- **[Ansluta till leverantörer](./connecting-providers.md)** - Anslut leverantören som innehåller dina bilder
+- **[Bläddra i och ladda ner innehåll](./browsing-content.md)** - Bläddra bland en leverantörs mappar och spela upp innehåll efter behov
+- **[Spela upp innehåll](./playing-content.md)** - Uppspelningskontroller för din TV-fjärrkontroll

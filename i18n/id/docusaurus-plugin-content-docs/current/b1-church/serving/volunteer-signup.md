@@ -1,5 +1,7 @@
 ---
-title: "Pendaftaran Relawan"
+title: "Pendaftaran Sukarelawan di Portal Anggota B1.church"
+sidebar_label: "Pendaftaran Relawan"
+description: "Jelajahi posisi sukarelawan terbuka menurut kategori dan daftar untuk ibadah mendatang, atau hapus pendaftaran Anda di B1.church sebelum batas waktu."
 ---
 
 # Pendaftaran Relawan
@@ -74,4 +76,4 @@ Periksa halaman relawan secara rutin, terutama di awal minggu. Posisi yang popul
 ## Artikel Terkait
 
 - [Ikhtisar Pelayanan](./index.md) -- Ikhtisar fitur pelayanan di B1.church
-- [Melihat Rencana](../plans/viewing-plans) -- Lihat rencana dan urutan ibadah yang ditugaskan kepada Anda
+- [Melihat Rencana](../plans/viewing-plans.md) -- Lihat rencana dan urutan ibadah yang ditugaskan kepada Anda

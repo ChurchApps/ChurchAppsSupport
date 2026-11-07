@@ -1,5 +1,6 @@
 ---
 title: "Kuphatfwa Kwe-Server"
+description: "Ngabasebentisi be-Server.Admin kuphela: setfa kabusha kungena ngetindlela ntfo mbili, faka kuba ngabanye ema-akhawunti, lawula i-Commons, futsi vumela i-imeyili yetfulusi ku-B1 Admin."
 ---
 
 # Kuphatfwa Kwe-Server

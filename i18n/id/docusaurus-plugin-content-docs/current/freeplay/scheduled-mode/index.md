@@ -1,5 +1,6 @@
 ---
 title: "Mode Terjadwal"
+description: "Atur TV FreePlay agar memutar playlist sesuai kalender di FreePlay Admin: layar mulai dan berhenti sendiri, dan tetap berjalan saat Wi-Fi terputus."
 ---
 
 # Mode Terjadwal
@@ -18,16 +19,16 @@ FreePlay Admin menggunakan login ChurchApps Anda, yaitu login yang sama dengan y
 
 FreePlay Admin memiliki empat halaman utama, yang tercantum di bagian atas situs:
 
-- **[Screens](./managing-screens)** - TV yang sudah Anda pasangkan, statusnya, dan **grup layar** tempat TV tersebut tergabung. Layar dalam satu grup berbagi satu kalender dan satu loop default
-- **[Playlists](./building-playlists)** - Loop berisi gambar dan video yang Anda pilih dari penyedia konten Anda
-- **[Calendar](./scheduling-the-calendar)** - Apa yang diputar oleh setiap grup layar, dan kapan
-- **[Providers](./building-playlists#connecting-providers)** - Sumber konten yang menjadi asal playlist Anda. Anda menghubungkan setiap penyedia sekali saja untuk seluruh gereja
+- **[Screens](./managing-screens.md)** - TV yang sudah Anda pasangkan, statusnya, dan **grup layar** tempat TV tersebut tergabung. Layar dalam satu grup berbagi satu kalender dan satu loop default
+- **[Playlists](./building-playlists.md)** - Loop berisi gambar dan video yang Anda pilih dari penyedia konten Anda
+- **[Calendar](./scheduling-the-calendar.md)** - Apa yang diputar oleh setiap grup layar, dan kapan
+- **[Providers](./building-playlists.md#connecting-providers)** - Sumber konten yang menjadi asal playlist Anda. Anda menghubungkan setiap penyedia sekali saja untuk seluruh gereja
 
 Jika tidak ada jadwal, layar dalam grup akan memutar **loop default** grup tersebut. Jika grup tidak memiliki loop default, layar akan mati.
 
 ## Perbedaannya dengan Mode Rencana
 
-- **[Plan Mode](../plan-mode/)** (Mode Rencana) mengikuti satu jenis rencana ibadah dari B1 Admin. Seseorang menekan **Start Plan** di TV, dan pelajaran diputar saat tombol itu ditekan
+- **[Plan Mode](../plan-mode/index.md)** (Mode Rencana) mengikuti satu jenis rencana ibadah dari B1 Admin. Seseorang menekan **Start Plan** di TV, dan pelajaran diputar saat tombol itu ditekan
 - **Mode Terjadwal** mengikuti kalender. Konten dimulai dan berhenti pada waktu yang Anda tetapkan, sehingga cocok untuk tampilan informasi di lobi, loop pengumuman, dan ruang kelas yang pelajarannya perlu sudah tampil sebelum orang masuk
 
 Entri kalender tetap dapat memutar rencana ibadah. Pilih jenis rencana di bagian **Service plans** saat Anda menambahkan jadwal, dan layar akan memutar rencana yang aktif di B1 Admin pada minggu tersebut. Ini termasuk pelajaran Go Curriculum, bahkan yang sudah Anda sesuaikan dalam rencana. Layar menggunakan login Go Curriculum yang terhubung dengan jenis rencana di pelayanan B1 Admin, atau koneksi Go Curriculum gereja jika pelayanan tersebut tidak memilikinya.
@@ -49,8 +50,8 @@ Tekan **Ctrl+K** (**⌘K** di Mac), atau klik kotak pencarian di header, untuk m
 
 ## Dalam Bagian Ini
 
-- **[Pairing a Screen](./pairing-a-screen)** - Menampilkan kode di TV dan memasangkannya di FreePlay Admin
-- **[Managing Screens and Groups](./managing-screens)** - Memeriksa status dan unduhan, serta mengelompokkan layar
-- **[Connecting Providers and Building Playlists](./building-playlists)** - Menautkan sumber konten dan membuat loop gambar dan video
-- **[Scheduling the Calendar](./scheduling-the-calendar)** - Menentukan apa yang diputar kapan, dan apa yang terjadi saat pemutaran selesai lebih awal
-- **[Scheduled Playback on the TV](./scheduled-playback)** - Apa yang dilakukan TV secara otomatis, dan cara menggunakan remote selama pemutaran
+- **[Pairing a Screen](./pairing-a-screen.md)** - Menampilkan kode di TV dan memasangkannya di FreePlay Admin
+- **[Managing Screens and Groups](./managing-screens.md)** - Memeriksa status dan unduhan, serta mengelompokkan layar
+- **[Connecting Providers and Building Playlists](./building-playlists.md)** - Menautkan sumber konten dan membuat loop gambar dan video
+- **[Scheduling the Calendar](./scheduling-the-calendar.md)** - Menentukan apa yang diputar kapan, dan apa yang terjadi saat pemutaran selesai lebih awal
+- **[Scheduled Playback on the TV](./scheduled-playback.md)** - Apa yang dilakukan TV secara otomatis, dan cara menggunakan remote selama pemutaran

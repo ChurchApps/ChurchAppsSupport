@@ -1,5 +1,6 @@
 ---
 title: "Instrumentpanel"
+description: "Hitta dig fram på startskärmen i B1 Mobile, där dina mest använda funktioner visas som stora kort och resten finns under Snabbåtgärder."
 ---
 
 # Instrumentpanel
@@ -28,7 +29,7 @@ Under huvudkortet ser du upp till två **utvalda kort** bredvid varandra. Dessa 
 
 ## Snabbåtgärder
 
-Övriga funktioner visas i ett rutnät med **Snabbåtgärder** under de utvalda korten. Varje objekt visar en ikon och en etikett. Här finns alla andra navigeringslänkar som din kyrka har konfigurerat, så att du kommer åt allt från [grupper](../groups/) och [gåvor](../giving/) till [incheckning](../checkin/), [predikningar](../content/sermons.md) och mycket mer.
+Övriga funktioner visas i ett rutnät med **Snabbåtgärder** under de utvalda korten. Varje objekt visar en ikon och en etikett. Här finns alla andra navigeringslänkar som din kyrka har konfigurerat, så att du kommer åt allt från [grupper](../groups/index.md) och [gåvor](../giving/index.md) till [incheckning](../checkin/index.md), [predikningar](../content/sermons.md) och mycket mer.
 
 ## Så anpassar sig layouten
 
@@ -41,7 +42,7 @@ Layouten på instrumentpanelen är personlig och baseras på hur du använder ap
 Om du inte har använt appen ännu visas funktionerna i den standardordning som din kyrka har konfigurerat. Med tiden ordnas instrumentpanelen om så att den matchar dina vanor.
 
 :::info
-Vilka funktioner som finns på din instrumentpanel konfigureras av din kyrkas administratör i [B1 Admin](../../b1-admin/). Om du inte ser en funktion som du förväntar dig, kontakta din kyrkas kansli.
+Vilka funktioner som finns på din instrumentpanel konfigureras av din kyrkas administratör i [B1 Admin](../../b1-admin/index.md). Om du inte ser en funktion som du förväntar dig, kontakta din kyrkas kansli.
 :::
 
 ## Uppdatera instrumentpanelen

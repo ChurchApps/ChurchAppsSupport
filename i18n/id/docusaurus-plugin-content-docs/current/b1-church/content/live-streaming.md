@@ -1,5 +1,7 @@
 ---
-title: "Siaran Langsung"
+title: "Menonton Siaran Langsung di B1.church"
+sidebar_label: "Siaran Langsung"
+description: "Tonton ibadah langsung gereja Anda di halaman Stream B1.church dan ikut obrolan bersama siaran, tanpa perlu masuk."
 ---
 
 # Siaran Langsung

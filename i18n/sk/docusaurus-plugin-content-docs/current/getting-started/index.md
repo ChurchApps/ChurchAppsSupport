@@ -1,5 +1,7 @@
 ---
-title: "Začíname"
+title: "Začíname s ChurchApps: prvých 15 minút"
+sidebar_label: "Začíname"
+description: "Nastavenie nového účtu ChurchApps v niekoľkých krokoch: doplňte údaje o cirkvi, importujte ľudí do B1 Admin, pozvite tím a vyberte prvý projekt."
 ---
 
 # Začíname

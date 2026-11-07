@@ -1,5 +1,6 @@
 ---
 title: "Tinhlelo TeWebhu"
+description: "Kubukwa kwema-app lamatsatfu amatsatfu eweb e-ChurchApps (B1 Admin, B1.church, Lessons.church), i-stack yawo ye-React ne-MUI, emapakheji e-apphelper, nemathuluzi wekwakha."
 ---
 
 # Tinhlelo TeWebhu
@@ -41,7 +42,7 @@ Letinhlelo tabelana ngetincumo te-UI netisetjentiswa nge-lusendvo lwemaphakheji 
 | `@churchapps/apphelper-website` | Tincumo tewebhusayithi/CMS |
 
 :::tip
-Kuze utfole imininingwane yekutfuthukisa lamaphakheji lahlanganyelwe kwasekhaya, bona luchungechunge lwe-[AppHelper](../shared-libraries/app-helper).
+Kuze utfole imininingwane yekutfuthukisa lamaphakheji lahlanganyelwe kwasekhaya, bona luchungechunge lwe-[AppHelper](../shared-libraries/app-helper.md).
 :::
 
 ## Sikripthi Se-Postinstall

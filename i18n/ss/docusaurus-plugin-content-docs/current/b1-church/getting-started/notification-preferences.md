@@ -1,5 +1,6 @@
 ---
 title: "Tinketho Tetatiso"
+description: "Setela tindlela tesaziso, kuphindvwa kwe-imeyili, sikhatsi sekutfula, nekukhetsa kuphuma ngemilayezo kuyo yonkhe imitsetfo ku-B1 Admin ne-app ye-B1, konkhe esikrinini sinye."
 ---
 
 # Tinketho Tetatiso
@@ -53,6 +54,6 @@ Tatiso letiphutfumako -- njengesexwayiso sekuphepha nome umlayeto wekuphepha kwe
 
 ## Lokuhlotjaniswe
 
-- [Kubhalisa Kubavolontiya](../serving/volunteer-signup) -- Tikhumbuto tekukhonta nekuphendvula tetifiso teluhlelo
-- [Kubhalisela Imicimbi](../events/registering) -- Bhalisela imicimbi letfumela tikhumbuto
-- [Kufaka I-App](installing-pwa) -- Faka i-B1 edivayisini yakho kuze utfole tatiso letisunyelwako
+- [Kubhalisa Kubavolontiya](../serving/volunteer-signup.md) -- Tikhumbuto tekukhonta nekuphendvula tetifiso teluhlelo
+- [Kubhalisela Imicimbi](../events/registering.md) -- Bhalisela imicimbi letfumela tikhumbuto
+- [Kufaka I-App](./installing-pwa.md) -- Faka i-B1 edivayisini yakho kuze utfole tatiso letisunyelwako

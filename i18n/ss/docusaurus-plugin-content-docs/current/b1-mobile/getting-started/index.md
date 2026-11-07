@@ -1,5 +1,7 @@
 ---
-title: "Kucala"
+title: "Kuqala Nge-B1 Mobile (Iyaphelelwa Sikhatsi)"
+sidebar_label: "Kucala"
+description: "Setha i-B1 Mobile ku-foni yakho: thola i-app, ngena ngekhawunti yakho ye-ChurchApps, bese ukhetsa licawe lakho. Qaphela kutsi i-B1 Mobile ayisasebentiswa, kuphakanyiswa i-PWA."
 ---
 
 # Kucala
@@ -25,10 +27,10 @@ Nako-ke lokho. Ngemuva kwekutsi ukhetse libandla lakho, i-app iyalayisha luphawu
 
 ## Kulesi Sigaba
 
-- [Kufaka i-App](./installing) -- Kutsi ulande kuphi i-B1 Mobile kanye netidzingo temshini.
-- [Kungena](./logging-in) -- Indlela yekungena nome yekwenta i-akhawundi lensha.
-- [Kushintja Emabandla](./switching-churches) -- Indlela yekushintja emkhatsini wemabandla nangabe ungewelibandla lelingaphezu kwakunye.
+- [Kufaka i-App](./installing.md) -- Kutsi ulande kuphi i-B1 Mobile kanye netidzingo temshini.
+- [Kungena](./logging-in.md) -- Indlela yekungena nome yekwenta i-akhawundi lensha.
+- [Kushintja Emabandla](./switching-churches.md) -- Indlela yekushintja emkhatsini wemabandla nangabe ungewelibandla lelingaphezu kwakunye.
 
 :::tip
-I-B1 Mobile isebentisa i-akhawundi lefananako ye-ChurchApps njengato tonkhe letinye timphahla te-ChurchApps. Nangabe sewunayo i-akhawundi kusuka ku-[B1.church](../../b1-church/), B1 Admin, nome Lessons.church, ungasebentisa lawomanye emafuphi ekungena kute ungene.
+I-B1 Mobile isebentisa i-akhawundi lefananako ye-ChurchApps njengato tonkhe letinye timphahla te-ChurchApps. Nangabe sewunayo i-akhawundi kusuka ku-[B1.church](../../b1-church/index.md), B1 Admin, nome Lessons.church, ungasebentisa lawomanye emafuphi ekungena kute ungene.
 :::

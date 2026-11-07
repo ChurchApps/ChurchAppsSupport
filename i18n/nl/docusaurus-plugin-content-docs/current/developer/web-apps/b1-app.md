@@ -1,5 +1,6 @@
 ---
 title: "B1App"
+description: "Stel de B1App-ledenwebapp lokaal in met Next.js 22+, configureer de API-endpoints in .env en start de dev-server op poort 3301."
 ---
 
 # B1App
@@ -13,8 +14,8 @@ B1App is de publiek beschikbare kerkledapp gebouwd met Next.js. Het biedt de led
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Installeer **Node.js 22+** en **Git** -- zie [Prerequisites](../setup/prerequisites)
-- Configureer uw API-doel (staging of lokaal) -- zie [Environment Variables](../setup/environment-variables)
+- Installeer **Node.js 22+** en **Git** -- zie [Prerequisites](../setup/prerequisites.md)
+- Configureer uw API-doel (staging of lokaal) -- zie [Environment Variables](../setup/environment-variables.md)
 
 </div>
 
@@ -89,5 +90,5 @@ Productie-builds worden naar **S3 + CloudFront** geïmplementeerd:
 3. CloudFront-invalidatie wordt geactiveerd om de nieuwe versie te serveren
 
 :::tip
-Zie de [Web App Deployment](../deployment/web-apps)-gids voor gedetailleerde implementatie-instructies.
+Zie de [Web App Deployment](../deployment/web-apps.md)-gids voor gedetailleerde implementatie-instructies.
 :::

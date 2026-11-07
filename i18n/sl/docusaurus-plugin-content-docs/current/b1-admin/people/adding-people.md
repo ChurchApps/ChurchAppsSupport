@@ -1,5 +1,6 @@
 ---
 title: "Dodajanje oseb"
+description: "Dodajte osebo v bazo podatkov cerkve v B1 Admin, izpolnite podrobnosti in povežite družinske člane v gospodinjstva za prijavo in poročanje."
 ---
 
 # Dodajanje oseb

@@ -1,5 +1,6 @@
 ---
 title: "Müsaitlik Takvimi"
+description: "B1 Admin'de rezerve edilebilir oda ve ekipmanları kurun; takvime rezervasyon yapın, hazırlık sürelerini ekleyin ve tekrarlayan ya da onaylı rezervasyonları yönetin."
 ---
 
 # Müsaitlik Takvimi
@@ -13,7 +14,7 @@ Müsaitlik Takvimi, kilisenizdeki tüm oda ve kaynak rezervasyonlarına genel bi
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Oda ve Kaynaklar bölümünde en az bir [oda veya kaynak](rooms-resources) ayarlayın
+- Oda ve Kaynaklar bölümünde en az bir [oda veya kaynak](./rooms-resources.md) ayarlayın
 - B1 Admin içindeki Takvimler bölümünü düzenleme erişiminiz olmalıdır
 
 </div>
@@ -58,7 +59,7 @@ Takvimi tek bir oda veya kaynağa indirgemek için sol üstteki **Oda / Kaynak**
 6. Rezervasyonu göndermek için **Kaydet**'e tıklayın.
 
 :::info
-Oda veya kaynak için bir **Onay Grubu** yapılandırılmışsa, rezervasyon o grubun bir lideri onaylayana kadar **Beklemede** olarak görünür. Onay süreci için [Takvim Onayları](approvals) bölümüne bakın.
+Oda veya kaynak için bir **Onay Grubu** yapılandırılmışsa, rezervasyon o grubun bir lideri onaylayana kadar **Beklemede** olarak görünür. Onay süreci için [Takvim Onayları](./approvals.md) bölümüne bakın.
 :::
 
 :::tip
@@ -67,6 +68,6 @@ Takvim, kaydetmeden önce tüm çakışmaları vurgular. Bir çakışma uyarıs�
 
 ## İlgili Makaleler
 
-- [Odalar, Kaynaklar ve Planlama](rooms-resources) — rezerve edilebilir alanları ve ekipmanları ayarlayın
-- [Takvim Onayları](approvals) — rezervasyon taleplerini onaylayın veya reddedin
-- [Takvim Oluşturma](creating-calendars) — etkinlik takvimlerini yönetin
+- [Odalar, Kaynaklar ve Planlama](./rooms-resources.md) — rezerve edilebilir alanları ve ekipmanları ayarlayın
+- [Takvim Onayları](./approvals.md) — rezervasyon taleplerini onaylayın veya reddedin
+- [Takvim Oluşturma](./creating-calendars.md) — etkinlik takvimlerini yönetin

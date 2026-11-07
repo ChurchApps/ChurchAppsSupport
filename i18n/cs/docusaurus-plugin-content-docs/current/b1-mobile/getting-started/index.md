@@ -1,5 +1,7 @@
 ---
-title: "Začínáme"
+title: "Začínáme s B1 Mobile (zastaralé)"
+sidebar_label: "Začínáme"
+description: "Nastavte B1 Mobile v telefonu: najděte aplikaci, přihlaste se účtem ChurchApps a vyberte svou církev. B1 Mobile je zastaralý, nahrazen PWA."
 ---
 
 # Začínáme
@@ -25,10 +27,10 @@ To je vše. Jakmile vyberete svůj sbor, aplikace načte jeho branding, navigač
 
 ## V této sekci
 
-- [Instalace aplikace](./installing) -- Kde si aplikaci B1 Mobile stáhnout a jaké má zařízení požadavky.
-- [Přihlášení](./logging-in) -- Jak se přihlásit nebo vytvořit nový účet.
-- [Přepínání sborů](./switching-churches) -- Jak přepnout mezi sbory, pokud jste členem více než jednoho.
+- [Instalace aplikace](./installing.md) -- Kde si aplikaci B1 Mobile stáhnout a jaké má zařízení požadavky.
+- [Přihlášení](./logging-in.md) -- Jak se přihlásit nebo vytvořit nový účet.
+- [Přepínání sborů](./switching-churches.md) -- Jak přepnout mezi sbory, pokud jste členem více než jednoho.
 
 :::tip
-B1 Mobile používá stejný účet ChurchApps jako všechny ostatní produkty ChurchApps. Pokud již máte účet na [B1.church](../../b1-church/), B1 Admin nebo Lessons.church, můžete se k přihlášení použít stejné údaje.
+B1 Mobile používá stejný účet ChurchApps jako všechny ostatní produkty ChurchApps. Pokud již máte účet na [B1.church](../../b1-church/index.md), B1 Admin nebo Lessons.church, můžete se k přihlášení použít stejné údaje.
 :::

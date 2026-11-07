@@ -1,5 +1,7 @@
 ---
-title: "Gjøre en donasjon"
+title: "Gi en gave i B1 Mobile"
+sidebar_label: "Gjøre en donasjon"
+description: "Gi til menigheten din fra Gi-fanen i B1 Mobile: velg et fond, skriv inn beløp, betal med Stripe og gjenta tidligere gaver raskt."
 ---
 
 # Gjøre en donasjon
@@ -13,8 +15,8 @@ title: "Gjøre en donasjon"
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- [Installer B1 Mobile](../getting-started/installing) og [logg inn](../getting-started/logging-in) på kontoen din
-- Ha et kredittkort eller debetkort klart, eller [lagre en betalingsmetode](./managing-payments) på forhånd
+- [Installer B1 Mobile](../getting-started/installing.md) og [logg inn](../getting-started/logging-in.md) på kontoen din
+- Ha et kredittkort eller debetkort klart, eller [lagre en betalingsmetode](./managing-payments.md) på forhånd
 
 </div>
 
@@ -42,10 +44,10 @@ Dobbeltsjekk donasjonsbeløpet og fondet før du sender inn. Donasjoner behandle
 Hvis du ønsker å gi samme beløp som din siste donasjon, trenger du ikke gå gjennom hele donasjonsprosessen. Fanen **Overview** viser din siste gave sammen med en **Repeat**-knapp. Trykk på den for raskt å sende inn samme donasjon igjen.
 
 :::tip
-Hvis du planlegger å gi regelmessig, kan du lagre betalingsmetoden din i fanen **Manage**, slik at du kan donere enda raskere neste gang. Se [Administrere betalingsmetoder](./managing-payments) for detaljer.
+Hvis du planlegger å gi regelmessig, kan du lagre betalingsmetoden din i fanen **Manage**, slik at du kan donere enda raskere neste gang. Se [Administrere betalingsmetoder](./managing-payments.md) for detaljer.
 :::
 
 ## Relaterte artikler
 
-- [Administrere betalingsmetoder](./managing-payments) -- Lagre et kort for raskere gaver i fremtiden
-- [Donasjonshistorikk](./donation-history) -- Se oversikten over giving og tidligere donasjoner
+- [Administrere betalingsmetoder](./managing-payments.md) -- Lagre et kort for raskere gaver i fremtiden
+- [Donasjonshistorikk](./donation-history.md) -- Se oversikten over giving og tidligere donasjoner

@@ -1,5 +1,6 @@
 ---
 title: "Gestione dei programmi"
+description: "Creare e modificare programmi in Lessons.church: slug e miniature, raggruppamento degli studi in categorie e risorse a livello di programma."
 ---
 
 # Gestione dei programmi

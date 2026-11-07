@@ -1,5 +1,6 @@
 ---
 title: "Kampanjer och löften"
+description: "Skapa insamlingskampanjer i B1 Admin, registrera medlemmarnas löften och följ framsteg mot ett mål genom att jämföra med faktiska gåvor till varje fond."
 ---
 
 # Kampanjer och löften
@@ -13,7 +14,7 @@ Med kampanjer kan du driva en insamling mot ett specifikt mål — en byggfond, 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Skapa dina [gåvofonder](funds) — varje kampanj kopplas till en fond
+- Skapa dina [gåvofonder](./funds.md) — varje kampanj kopplas till en fond
 - Du behöver åtkomst till avsnittet Gåvor i B1 Admin
 
 </div>
@@ -66,6 +67,6 @@ Klicka på **Redigera** på valfri kampanjrad (eller på **Redigera kampanj** ö
 
 ## Relaterade artiklar
 
-- [Registrera gåvor](recording-donations) — registrera de faktiska gåvor som infriar löften
-- [Fonder](funds) — skapa fonden som ska kopplas till en kampanj
-- [Gåvorapporter](donation-reports) — rapportering av gåvor per fond
+- [Registrera gåvor](./recording-donations.md) — registrera de faktiska gåvor som infriar löften
+- [Fonder](./funds.md) — skapa fonden som ska kopplas till en kampanj
+- [Gåvorapporter](./donation-reports.md) — rapportering av gåvor per fond

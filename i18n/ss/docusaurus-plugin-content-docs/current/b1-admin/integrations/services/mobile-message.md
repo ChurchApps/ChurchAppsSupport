@@ -1,5 +1,6 @@
 ---
 title: "Mobile Message"
+description: "Xhuma timcimbi te-B1 Admin ku-Mobile Message, i-SMS API yase-Australia, nge-Zapier noma Make, utfumele imilayezo yekwemukela, yekunikela nesikhumbuzo."
 ---
 
 # Mobile Message
@@ -85,7 +86,7 @@ Indzawo ye-`/v1/messages` ye-Mobile Message yemukela kufika ku-10,000 emlayeto n
 
 ### Lenye indlela nge-Make
 
-Nangabe utsandza i-Make, faka i-module ye-**HTTP — Make a request** ngemuva kwesicalisi se-B1 Watch Events, uyilungisele ngendlela lefanako (POST, Basic Auth, umtimba we-JSON). Buka [Make overview](../make) yeluhlangotsi lwe-B1.
+Nangabe utsandza i-Make, faka i-module ye-**HTTP — Make a request** ngemuva kwesicalisi se-B1 Watch Events, uyilungisele ngendlela lefanako (POST, Basic Auth, umtimba we-JSON). Buka [Make overview](../make.md) yeluhlangotsi lwe-B1.
 
 ## Imikhawulo & Ematiko
 
@@ -102,6 +103,6 @@ Nangabe utsandza i-Make, faka i-module ye-**HTTP — Make a request** ngemuva kw
 
 ## Buka Nalokunye
 
-- [Clearstream](./clearstream), [Text In Church](./text-in-church) — labanye labaniketi be-SMS labanema-app aveleleko e-Zapier (akudzingeki sinyatselo se-Webhooks-by-Zapier)
-- [Zapier (kubuka konkhe)](../zapier) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — labanye labaniketi be-SMS labanema-app aveleleko e-Zapier (akudzingeki sinyatselo se-Webhooks-by-Zapier)
+- [Zapier (kubuka konkhe)](../zapier.md) — luhlangotsi lwe-B1 lweluseluko lonkhe lwe-Zapier
 - [Emaphepha e-API e-Mobile Message](https://mobilemessage.com.au/api-documentation)

@@ -1,5 +1,6 @@
 ---
 title: "Grup Oluşturma"
+description: "B1 Admin'de yeni bir grup kurun: kategori seçmekten ada, katılım politikası, etiketler, mesajlaşma ve yoklama ayarlarına kadar her şeyi yapılandırın."
 ---
 
 # Grup Oluşturma

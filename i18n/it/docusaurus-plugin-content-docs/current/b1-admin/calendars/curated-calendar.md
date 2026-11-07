@@ -1,5 +1,6 @@
 ---
 title: "Calendario curato"
+description: "Imposta in B1 Admin un calendario curato per tutta la chiesa con eventi di più gruppi, poi condividilo sul sito, tramite iscrizione ICS o come download."
 ---
 
 # Calendario curato
@@ -15,7 +16,7 @@ Un calendario curato raccoglie gli eventi di più gruppi in un'unica vista di ca
 
 - Configura i [gruppi](../groups/creating-groups.md) i cui eventi vuoi includere
 - Assicurati che i leader dei gruppi abbiano aggiunto gli eventi ai rispettivi gruppi
-- Familiarizza con le basi di [Creare calendari](creating-calendars)
+- Familiarizza con le basi di [Creare calendari](./creating-calendars.md)
 
 </div>
 
@@ -61,5 +62,5 @@ Solo gli eventi **pubblici** compaiono nel calendario curato sul tuo sito web e 
 
 ## Prossimi passi
 
-- [Creare calendari](creating-calendars) -- Impara le basi della creazione dei calendari
-- [Panoramica dei calendari](./) -- Torna alla panoramica dei calendari
+- [Creare calendari](./creating-calendars.md) -- Impara le basi della creazione dei calendari
+- [Panoramica dei calendari](./index.md) -- Torna alla panoramica dei calendari

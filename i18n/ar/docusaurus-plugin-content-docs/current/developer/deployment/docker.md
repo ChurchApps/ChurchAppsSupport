@@ -1,12 +1,13 @@
 ---
 title: "الاستضافة الذاتية باستخدام Docker"
+description: "ثبّت بيئة خاصة لـ B1 Admin وبوابة الأعضاء والواجهة البرمجية وقاعدة بيانات MySQL على جهازك باستخدام Docker، ثم حدّثها وانسخها احتياطياً بأمر b1."
 ---
 
 # الاستضافة الذاتية باستخدام Docker
 
 <div class="article-intro">
 
-شغّل نسختك الخاصة من B1 Admin وبوابة أعضاء B1 والموقع الإلكتروني وواجهة API وقاعدة بيانات MySQL على أي جهاز يعمل بـ Docker، سواء كان خادماً منزلياً أو خادماً افتراضياً صغيراً أو جهازاً داخلياً. يثبّته أمر واحد، ويحدّثه أمر واحد، وتأخذ كل عملية تحديث نسخة احتياطية أولاً. إذا كنت تفضّل ألّا تدير خادماً على الإطلاق، فراجع [الاستضافة الذاتية على Railway](./railway-template) كبديل مُدار.
+شغّل نسختك الخاصة من B1 Admin وبوابة أعضاء B1 والموقع الإلكتروني وواجهة API وقاعدة بيانات MySQL على أي جهاز يعمل بـ Docker، سواء كان خادماً منزلياً أو خادماً افتراضياً صغيراً أو جهازاً داخلياً. يثبّته أمر واحد، ويحدّثه أمر واحد، وتأخذ كل عملية تحديث نسخة احتياطية أولاً. إذا كنت تفضّل ألّا تدير خادماً على الإطلاق، فراجع [الاستضافة الذاتية على Railway](./railway-template.md) كبديل مُدار.
 
 </div>
 
@@ -94,10 +95,10 @@ SUPPORT_EMAIL=noreply@church.example.org
 
 تعمل هذه الميزات تماماً كما على Railway، بنفس متغيرات البيئة، لكن تُضبط في `.env` بدلاً من لوحة تحكم Railway:
 
-- **[البريد الإلكتروني / SMTP](./railway-template#1-email-highly-recommended)**: أدلة الإعداد لـ Resend وBrevo وGmail
-- **[تعدد المواقع](./railway-template#3-multi-site-multiple-churches-on-one-instance)**: عدد غير محدود من الكنائس في كل نسخة. يخدم `/` الكنيسة التي يطابق معرّفها `DEFAULT_CHURCH_SLUG` (الكنيسة الأولى معرّفها `church`). وجّه النطاقات الإضافية إلى الجهاز، ثم اربطها ضمن **الإعدادات ← النطاقات** في B1Admin
-- **[التبرعات عبر الإنترنت](./railway-template#4-online-giving-stripe--paypal)**: يُضبط لكل كنيسة من واجهة الإدارة
-- **[التكاملات الاختيارية](./railway-template#6-optional-feature-integrations)**: `OPENAI_API_KEY` و`YOUTUBE_API_KEY` و`PEXELS_KEY` و`VIMEO_TOKEN` و`API_BIBLE_KEY` و`GOOGLE_RECAPTCHA_SECRET_KEY`
+- **[البريد الإلكتروني / SMTP](./railway-template.md#1-email-highly-recommended)**: أدلة الإعداد لـ Resend وBrevo وGmail
+- **[تعدد المواقع](./railway-template.md#3-multi-site-multiple-churches-on-one-instance)**: عدد غير محدود من الكنائس في كل نسخة. يخدم `/` الكنيسة التي يطابق معرّفها `DEFAULT_CHURCH_SLUG` (الكنيسة الأولى معرّفها `church`). وجّه النطاقات الإضافية إلى الجهاز، ثم اربطها ضمن **الإعدادات ← النطاقات** في B1Admin
+- **[التبرعات عبر الإنترنت](./railway-template.md#4-online-giving-stripe--paypal)**: يُضبط لكل كنيسة من واجهة الإدارة
+- **[التكاملات الاختيارية](./railway-template.md#6-optional-feature-integrations)**: `OPENAI_API_KEY` و`YOUTUBE_API_KEY` و`PEXELS_KEY` و`VIMEO_TOKEN` و`API_BIBLE_KEY` و`GOOGLE_RECAPTCHA_SECRET_KEY`
 - **[إشعارات الدفع](#push-notifications)**: `WEB_PUSH_*`. يترك المثبّت هذه القيم فارغة، لذا تكون الإشعارات معطلة حتى تضيفها
 
 تُفعَّل الدعوات والرسائل الأخرى التي ترسلها الكنيسة تلقائياً على النسخة المستضافة ذاتياً (أما الخدمة المستضافة فتُخضع هذه الرسائل لمراجعة يدوية لحماية سمعة المرسل).
@@ -148,7 +149,7 @@ SUPPORT_EMAIL=noreply@church.example.org
 0 3 * * * cd /opt/b1church && ./deploy/b1 backup >> backups/backup.log 2>&1
 ```
 
-لمكتبات الوسائط الكبيرة يمكنك التحويل إلى تخزين الملفات على S3. اضبط `FILE_STORE=S3` مع متغيرات `AWS_*` الموضّحة في [قسم تخزين الملفات في دليل Railway](./railway-template#5-file-storage). النسخ الاحتياطية لقاعدة البيانات لا تشمل كائنات S3، لذا فعّل إصدارات الحاوية (bucket versioning) هناك.
+لمكتبات الوسائط الكبيرة يمكنك التحويل إلى تخزين الملفات على S3. اضبط `FILE_STORE=S3` مع متغيرات `AWS_*` الموضّحة في [قسم تخزين الملفات في دليل Railway](./railway-template.md#5-file-storage). النسخ الاحتياطية لقاعدة البيانات لا تشمل كائنات S3، لذا فعّل إصدارات الحاوية (bucket versioning) هناك.
 
 ## التحديث
 
@@ -187,6 +188,6 @@ docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build
 
 ## مقالات ذات صلة
 
-- **[الاستضافة الذاتية على Railway](./railway-template)**: بديل الاستضافة المُدارة، إضافة إلى أدلة الإعداد المشتركة بعد النشر
-- **[الإعداد الأولي](../../getting-started/initial-setup)**: الخطوات الأولى بعد إنشاء كنيستك
-- **[إعداد API المحلي](../api/local-setup)**: تشغيل المنظومة مباشرة للتطوير
+- **[الاستضافة الذاتية على Railway](./railway-template.md)**: بديل الاستضافة المُدارة، إضافة إلى أدلة الإعداد المشتركة بعد النشر
+- **[الإعداد الأولي](../../getting-started/initial-setup.md)**: الخطوات الأولى بعد إنشاء كنيستك
+- **[إعداد API المحلي](../api/local-setup.md)**: تشغيل المنظومة مباشرة للتطوير

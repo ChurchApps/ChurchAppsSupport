@@ -1,5 +1,6 @@
 ---
 title: "Luhla Lwema-Endpoint"
+description: "Thola yonkhe imaendpoint ye-ChurchApps API ngemodyuli, bone indlela ye-HTTP, ikheli, kugunyaza nemvume ngayinye, nemitsetfo yemaphutsa."
 ---
 
 # Luhla Lwema-Endpoint
@@ -89,10 +90,10 @@ Ema-parameter embiko adluliswa njengemanani e-query string (sibonelo `?startDate
 
 | Module | Umkhondvo Losisekelo | Incazelo |
 |--------|-----------|-------------|
-| [Authentication](./authentication) | `/membership/users`, `/membership/oauth` | Kungena, kubhaliswa, ema-token e-JWT, i-OAuth, timvumo |
-| [Membership](./membership) | `/membership/*` | Bantfu, emabandla, emacembu, emakhaya, ema-role, emafomu, tilungiselelo |
-| [Attendance](./attendance) | `/attendance/*` | Ema-campus, ema-service, ticgawu, kuvakasha, imibhalo yekungena |
-| [Content](./content) | `/content/*` | Emakhasi, tishumayelo, imicimbi, emafayela, ema-gallery, liBhayibheli, kusakaza |
-| [Giving](./giving) | `/giving/*` | Eminikelo, tikhwama, ema-gateway etinkhokhelo, ema-subscription |
-| [Messaging](./messaging) | `/messaging/*` | Tinkhulumo, tatiso, emadivayisi, i-SMS |
-| [Doing](./doing) | `/doing/*` | Ema-plan, imisebenti, kwabelwa, kuzenzakalela, kuhlelwa kwesikhatsi |
+| [Authentication](./authentication.md) | `/membership/users`, `/membership/oauth` | Kungena, kubhaliswa, ema-token e-JWT, i-OAuth, timvumo |
+| [Membership](./membership.md) | `/membership/*` | Bantfu, emabandla, emacembu, emakhaya, ema-role, emafomu, tilungiselelo |
+| [Attendance](./attendance.md) | `/attendance/*` | Ema-campus, ema-service, ticgawu, kuvakasha, imibhalo yekungena |
+| [Content](./content.md) | `/content/*` | Emakhasi, tishumayelo, imicimbi, emafayela, ema-gallery, liBhayibheli, kusakaza |
+| [Giving](./giving.md) | `/giving/*` | Eminikelo, tikhwama, ema-gateway etinkhokhelo, ema-subscription |
+| [Messaging](./messaging.md) | `/messaging/*` | Tinkhulumo, tatiso, emadivayisi, i-SMS |
+| [Doing](./doing.md) | `/doing/*` | Ema-plan, imisebenti, kwabelwa, kuzenzakalela, kuhlelwa kwesikhatsi |

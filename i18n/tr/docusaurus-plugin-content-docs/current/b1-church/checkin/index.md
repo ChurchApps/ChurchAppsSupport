@@ -1,5 +1,7 @@
 ---
-title: "Yoklama"
+title: "B1.church Üye Portalında Check-In"
+sidebar_label: "Yoklama"
+description: "B1.church üye portalından bir kilise ibadetine kendinizi ve hane üyelerinizi check-in yapın; kiosku atlayın ve grupları atayın."
 ---
 
 # Yoklama

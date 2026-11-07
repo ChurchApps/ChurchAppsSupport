@@ -386,13 +386,13 @@
     "message": "B1 Mobilusis"
   },
   "homepage.products.b1mobile.description": {
-    "message": "Mobilioji programa bažnyčios nariams iOS ir Android."
+    "message": "Pasenusi nario programėlė iOS ir Android sistemoms, dabar pakeista B1.church žiniatinklio programa."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Registracija"
   },
   "homepage.products.b1checkin.description": {
-    "message": "Savitarnos registracijos kiosko programa Android planšetėms."
+    "message": "Savitarnos registracijos kioskų programėlė iPad ir Android planšetėms."
   },
   "homepage.products.lessons.title": {
     "message": "Lessons.church"
@@ -425,10 +425,10 @@
     "message": "Specialiai sukurta bažnyčios darbo eigai, o ne bendroji priemonė, pritaikyta diakonijyje."
   },
   "homepage.title": {
-    "message": "Pradžia"
+    "message": "Pagalba: B1.church, Lessons.church ir FreePlay"
   },
   "homepage.description": {
-    "message": "ChurchApps palaikymo dokumentacija - nemokamos ir atvirojo kodo priemonės bažnyčios vadybai."
+    "message": "ChurchApps nemokamos, atvirojo kodo bažnyčios programinės įrangos vadovai ir dokumentacija: B1.church bažnyčios valdymas, registracija, aukos ir svetainės, Lessons.church mokymo programa ir FreePlay."
   },
   "homepage.products.heading": {
     "message": "Pasirinkite savo produktą"

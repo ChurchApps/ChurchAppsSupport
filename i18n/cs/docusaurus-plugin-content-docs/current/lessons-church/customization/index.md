@@ -1,5 +1,6 @@
 ---
 title: "Prilagodění"
+description: "Jak skrýt sekce, role nebo akce v lekci Lessons.church a přeřadit obsah, buď pro jednu třídu, nebo pro všechny třídy vaší církve."
 ---
 
 # Prilagodění

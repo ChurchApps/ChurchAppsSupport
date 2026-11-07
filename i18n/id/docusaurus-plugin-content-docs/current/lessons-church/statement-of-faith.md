@@ -1,5 +1,6 @@
 ---
 title: Pernyataan Iman
+description: "Apa yang diyakini ChurchApps tentang Allah, Yesus, Roh Kudus, Alkitab, keselamatan, dan gereja, sebagai standar peninjauan kurikulum Lessons.church."
 ---
 
 # Pernyataan Iman

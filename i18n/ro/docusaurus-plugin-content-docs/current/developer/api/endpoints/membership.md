@@ -1,5 +1,6 @@
 ---
 title: "Endpoint-uri pentru modulul Membership"
+description: "Referință de endpoint-uri pentru API-ul de membri ChurchApps: persoane, gospodării, grupuri, roluri, formulare și setări, cu reguli de autentificare și permisiuni."
 ---
 
 # Endpoint-uri pentru modulul Membership
@@ -75,7 +76,7 @@ Authorization: Bearer <token>
 
 Cale de bază: `/membership/users`
 
-Consultați [Autentificare și permisiuni](./authentication) pentru endpoint-urile de autentificare, înregistrare și gestionare a parolei.
+Consultați [Autentificare și permisiuni](./authentication.md) pentru endpoint-urile de autentificare, înregistrare și gestionare a parolei.
 
 | Metodă | Cale | Autentificare | Permisiune | Descriere |
 |--------|------|------|------------|-------------|
@@ -342,6 +343,6 @@ Cale de bază: `/membership/clientErrors`
 
 ## Pagini conexe
 
-- [Autentificare și permisiuni](./authentication) — Fluxul de autentificare, JWT, OAuth, modelul de permisiuni
-- [Endpoint-uri pentru prezență](./attendance) — Urmărirea serviciilor și a vizitelor
-- [Structura modulelor](../module-structure) — Modele de organizare a codului
+- [Autentificare și permisiuni](./authentication.md) — Fluxul de autentificare, JWT, OAuth, modelul de permisiuni
+- [Endpoint-uri pentru prezență](./attendance.md) — Urmărirea serviciilor și a vizitelor
+- [Structura modulelor](../module-structure.md) — Modele de organizare a codului

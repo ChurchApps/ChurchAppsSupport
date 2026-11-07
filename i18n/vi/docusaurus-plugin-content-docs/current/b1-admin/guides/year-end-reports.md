@@ -1,5 +1,6 @@
 ---
 title: "Hướng dẫn: Tạo báo cáo quyên góp cuối năm"
+description: "Trong B1 Admin, hoàn tất hồ sơ dâng hiến cuối năm, kiểm tra cài đặt thuế của quỹ và tạo sao kê dâng hiến được khấu trừ thuế cho mọi người dâng."
 ---
 
 # Tạo báo cáo quyên góp cuối năm

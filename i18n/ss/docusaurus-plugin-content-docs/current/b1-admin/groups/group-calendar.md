@@ -1,5 +1,6 @@
 ---
 title: "Likhalendari Leliqembu"
+description: "Hlela tinhlangano netemcimbi letiphindwako ekhalendeni leliqembu ku-B1 Admin ne-B1.church, nekuhlela ngobuningi, ekuphendvulweni, nekubhalisa ekhalendeni."
 ---
 
 # Likhalendari Leliqembu

@@ -1,5 +1,6 @@
 ---
 title: "Vai trò & Quyền hạn"
+description: "Thiết lập vai trò trong B1 Admin để kiểm soát những gì nhân viên và tình nguyện viên có thể xem và thay đổi, từ quyên góp và điểm danh đến người và nhóm."
 ---
 
 # Vai trò & Quyền hạn

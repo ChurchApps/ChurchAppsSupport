@@ -1,5 +1,6 @@
 ---
 title: "Services connectés"
+description: "Reliez B1 Admin à Mailchimp, Donorbox, Subsplash, VOMO, Clearstream et d'autres outils à l'aide des recettes Zapier ou Make, avec un guide de configuration pour chacun."
 ---
 
 # Services connectés
@@ -14,14 +15,14 @@ La façon la plus rapide de connecter B1 à un autre outil de technologie d'égl
 
 | Service | Catégorie | Pont | Ce que vous pouvez connecter |
 |---|---|---|---|
-| [Mailchimp](./mailchimp) | Email | Zapier ou Make | Synchroniser les nouvelles personnes B1 / donateurs dans une audience Mailchimp |
-| [Donorbox](./donorbox) | Donations | Zapier | Repousser les donations et donateurs Donorbox dans B1 |
-| [Subsplash](./subsplash) | App / Donations | Zapier | Tirer les donations et personnes Subsplash dans B1 |
-| [VOMO](./vomo) | Bénévolat | Zapier | Synchroniser les inscriptions de bénévoles entre les groupes B1 et les projets VOMO |
-| [Clearstream](./clearstream) | SMS | Zapier | Déclencher un texte Clearstream à partir des événements B1; ingérer les réponses en tant que dossiers B1 |
-| [Text In Church](./text-in-church) | SMS / Workflows | Zapier | Déclencher les workflows Text In Church à partir de B1; recevoir les données Connect Card |
-| [Mobile Message](./mobile-message) | SMS (AU) | Webhooks by Zapier ou Make | Envoyer des SMS à partir de n'importe quel événement B1 |
-| [Checkr](./checkr) | Vérifications d'antécédents | Make | Déclencher une vérification d'antécédents quand quelqu'un rejoint une équipe de service |
+| [Mailchimp](./mailchimp.md) | Email | Zapier ou Make | Synchroniser les nouvelles personnes B1 / donateurs dans une audience Mailchimp |
+| [Donorbox](./donorbox.md) | Donations | Zapier | Repousser les donations et donateurs Donorbox dans B1 |
+| [Subsplash](./subsplash.md) | App / Donations | Zapier | Tirer les donations et personnes Subsplash dans B1 |
+| [VOMO](./vomo.md) | Bénévolat | Zapier | Synchroniser les inscriptions de bénévoles entre les groupes B1 et les projets VOMO |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Déclencher un texte Clearstream à partir des événements B1; ingérer les réponses en tant que dossiers B1 |
+| [Text In Church](./text-in-church.md) | SMS / Workflows | Zapier | Déclencher les workflows Text In Church à partir de B1; recevoir les données Connect Card |
+| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier ou Make | Envoyer des SMS à partir de n'importe quel événement B1 |
+| [Checkr](./checkr.md) | Vérifications d'antécédents | Make | Déclencher une vérification d'antécédents quand quelqu'un rejoint une équipe de service |
 
 ## Ce que tous ces éléments ont en commun
 
@@ -45,8 +46,8 @@ Nous avons aussi délibérément ignoré les outils spécifiques à Planning Cen
 
 ## Voir aussi
 
-- [Zapier (aperçu)](../zapier) — le côté B1 de chaque recette Zapier est identique; ce doc le couvre une fois
-- [Make (aperçu)](../make) — idem pour les scénarios Make
-- [Slack & Discord](../slack-discord) — notifications de chat sans aucun pont
-- [Google Sheets](../google-sheets) — exports à la demande
+- [Zapier (aperçu)](../zapier.md) — le côté B1 de chaque recette Zapier est identique; ce doc le couvre une fois
+- [Make (aperçu)](../make.md) — idem pour les scénarios Make
+- [Slack & Discord](../slack-discord.md) — notifications de chat sans aucun pont
+- [Google Sheets](../google-sheets.md) — exports à la demande
 - [Webhooks (référence développeur)](/docs/developer/api/webhooks) — le catalogue d'événements sur lequel chaque recette s'appuie

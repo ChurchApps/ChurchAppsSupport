@@ -1,5 +1,6 @@
 ---
 title: "Planera kalendern"
+description: "Schemalägg spellistor, gudstjänstplaner eller leverantörsmappar på skärmgrupper i FreePlay Admins kalender, veckovis eller engångs, med standardloopar som reserv."
 ---
 
 # Planera kalendern
@@ -13,8 +14,8 @@ Sidan **Kalender** i FreePlay Admin styr vad varje skärmgrupp spelar och när. 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Skapa minst en skärmgrupp. Se [Hantera skärmar och grupper](./managing-screens#screen-groups)
-- [Bygg en spellista](./building-playlists), eller ha en plantyp uppsatt i B1 Admin
+- Skapa minst en skärmgrupp. Se [Hantera skärmar och grupper](./managing-screens.md#screen-groups)
+- [Bygg en spellista](./building-playlists.md), eller ha en plantyp uppsatt i B1 Admin
 
 </div>
 
@@ -82,11 +83,11 @@ Om två scheman överlappar visar formuläret en varning: **Överlappar ett anna
 
 ## Hur skärmarna plockar upp ändringar
 
-Parkopplade skärmar laddar ner allt som är schemalagt för de kommande 7 dagarna och kontrollerar själva om det finns ändringar. Du behöver inte röra TV-apparaten efter att du redigerat kalendern. För att se när en skärm har allt den behöver, kontrollera **Klar t.o.m.** på [Skärmsidan](./managing-screens).
+Parkopplade skärmar laddar ner allt som är schemalagt för de kommande 7 dagarna och kontrollerar själva om det finns ändringar. Du behöver inte röra TV-apparaten efter att du redigerat kalendern. För att se när en skärm har allt den behöver, kontrollera **Klar t.o.m.** på [Skärmsidan](./managing-screens.md).
 
 ## Relaterade artiklar
 
-- **[Bygga spellistor](./building-playlists)** - Skapa de spellistor du schemalägger
-- **[Schemalagd uppspelning på TV:n](./scheduled-playback)** - Hur lärarstyrda lektioner och fjärrkontrollen fungerar på TV:n
-- **[Hantera skärmar och grupper](./managing-screens)** - Lägg till grupper och kontrollera varje skärms nedladdningar
+- **[Bygga spellistor](./building-playlists.md)** - Skapa de spellistor du schemalägger
+- **[Schemalagd uppspelning på TV:n](./scheduled-playback.md)** - Hur lärarstyrda lektioner och fjärrkontrollen fungerar på TV:n
+- **[Hantera skärmar och grupper](./managing-screens.md)** - Lägg till grupper och kontrollera varje skärms nedladdningar
 - **[Behåll bara en del av varje lektion](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Trimma varje schemalagd lektion i en plantyp till de delar ditt rum spelar

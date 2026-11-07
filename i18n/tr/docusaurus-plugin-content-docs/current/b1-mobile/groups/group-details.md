@@ -1,5 +1,7 @@
 ---
-title: "Grup Ayrıntıları"
+title: "B1 Mobile Uygulamasında Grup Detayları"
+sidebar_label: "Grup Ayrıntıları"
+description: "B1 Mobile'da grup detay sayfasının neleri gösterdiğini; grup bilgisi, gönderiler ve üyeleri ve Gruplar ekranından nasıl açılacağını görün."
 ---
 
 # Grup Ayrıntıları
@@ -13,7 +15,7 @@ Gruplar ekranında bir gruba dokunduğunuzda, o grubun ayrıntı sayfasına yön
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [B1 Mobile'ı yükleyin](../getting-started/installing) ve hesabınıza [giriş yapın](../getting-started/logging-in)
+- [B1 Mobile'ı yükleyin](../getting-started/installing.md) ve hesabınıza [giriş yapın](../getting-started/logging-in.md)
 - [Gruplar](./index.md) ekranını açın
 
 </div>
@@ -46,5 +48,5 @@ En çok ziyaret ettiğiniz grup, Gruplar ekranının en üstünde öne çıkan k
 
 ## İlgili Makaleler
 
-- [Grup Zaman Çizelgesi](./group-timeline) -- Tüm gruplarınızdaki birleşik etkinlik akışı hakkında bilgi edinin
+- [Grup Zaman Çizelgesi](./group-timeline.md) -- Tüm gruplarınızdaki birleşik etkinlik akışı hakkında bilgi edinin
 - [Mesajlaşma](../community/messaging.md) -- Grup üyelerine özel mesaj gönderin

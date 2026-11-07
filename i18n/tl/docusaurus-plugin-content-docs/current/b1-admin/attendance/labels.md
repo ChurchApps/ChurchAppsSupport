@@ -1,5 +1,6 @@
 ---
 title: "Check-In Label Designer"
+description: "I-customize ang nametag at pickup slip template na ipinaprint sa check-in sa B1 Admin, kasama ang mga field, posisyon, at kondisyon ng kaarawan o tala."
 ---
 
 # Check-In Label Designer
@@ -13,8 +14,8 @@ Hinahayaan kayo ng Label Designer na lumikha at mag-customize ng mga template ng
 <div class="prereqs">
 <h4>Bago Magsimula</h4>
 
-- I-set up ang [Attendance](setup) at mag-configure ng kahit isang oras ng serbisyo na naka-enable ang check-in
-- I-set up ang [Check-In](check-in) para mag-print ang mga label
+- I-set up ang [Attendance](./setup.md) at mag-configure ng kahit isang oras ng serbisyo na naka-enable ang check-in
+- I-set up ang [Check-In](./check-in.md) para mag-print ang mga label
 - Kailangan ninyo ng administratibong access sa seksyong Attendance
 
 </div>
@@ -85,6 +86,6 @@ Mag-test print pagkatapos mag-edit ng template para matiyak na maayos ang layout
 
 ## Mga Kaugnay na Artikulo
 
-- [Check-In Setup](setup) — i-configure ang mga serbisyo at grupo para sa check-in
-- [Pagkumpleto ng Check-In](check-in) — ang proseso ng check-in para sa mga pamilya
-- [Pagsisimula sa B1 Checkin](../../b1-checkin/getting-started/) — ang Checkin kiosk app
+- [Check-In Setup](./setup.md) — i-configure ang mga serbisyo at grupo para sa check-in
+- [Pagkumpleto ng Check-In](./check-in.md) — ang proseso ng check-in para sa mga pamilya
+- [Pagsisimula sa B1 Checkin](../../b1-checkin/getting-started/index.md) — ang Checkin kiosk app

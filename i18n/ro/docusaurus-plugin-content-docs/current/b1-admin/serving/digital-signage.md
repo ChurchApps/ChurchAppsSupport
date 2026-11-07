@@ -1,5 +1,6 @@
 ---
 title: "Digitalna signalizacija"
+description: "Trimite conținutul lecțiilor pe un TV din hol cu un URL de flux pentru afișaj digital din B1 Admin, care arată mereu planul curent, sau folosește FreePlay TVs."
 ---
 
 # Digitalna signalizacija
@@ -14,7 +15,7 @@ Pošaljite sadržaj svoje lekcije na TV u predvorju ili hodniku pomoću feeda di
 <h4>Pre nego što počnete</h4>
 
 - Podesite [tip plana](./plans.md) sa [Lessons.church](../../b1-church/content/lessons.md) ili drugim sadržajem lekcija zakazanim
-- Imajte nalog za [SignPresenter](https://www.signpresenter.com) i uređaj podešen za njegov prikaz, ili TV sa [FreePlay](../../freeplay/)
+- Imajte nalog za [SignPresenter](https://www.signpresenter.com) i uređaj podešen za njegov prikaz, ili TV sa [FreePlay](../../freeplay/index.md)
 
 </div>
 
@@ -36,14 +37,14 @@ Za podešavanje korak po korak unutar SignPresenter-a pogledajte [SignPresenter-
 
 ## Umesto toga, korišćenje FreePlay TV-ova
 
-Ako su vaši ekrani na [FreePlay](../../freeplay/)-u, ne treba vam URL feeda. Dijalog **Digital Signage Feed** sadrži vezu ka **admin.freeplay.church/calendar**, gde možete zakazati ovaj tip plana na svojim FreePlay TV-ovima:
+Ako su vaši ekrani na [FreePlay](../../freeplay/index.md)-u, ne treba vam URL feeda. Dijalog **Digital Signage Feed** sadrži vezu ka **admin.freeplay.church/calendar**, gde možete zakazati ovaj tip plana na svojim FreePlay TV-ovima:
 
 1. Kliknite na vezu **admin.freeplay.church/calendar** u dijalogu. FreePlay Admin koristi istu prijavu kao B1 Admin.
 2. Izaberite grupu ekrana za svoje TV-ove i kliknite na **Add schedule**.
 3. Pod **Play**, izaberite svoj tip plana iz **Service plans**. Označen je sa **(current plan)**.
 4. Podesite dane i vremena, zatim kliknite na **Save**.
 
-TV-ovi svake nedelje prikazuju koji god plan je trenutno aktuelan za taj tip plana, u vremenima koja ste podesili. Ovo radi i sa lekcijama Go Curriculum, uključujući planove koje ste prilagodili. FreePlay se prijavljuje sa Go Curriculum nalogom povezanim sa službom pod **Content Providers** (pogledajte [Zakazivanje lekcija](./scheduling-lessons.md)), ili sa Go Curriculum vezom crkve ako služba nema sopstvenu. Pogledajte [Zakazivanje kalendara](../../freeplay/scheduled-mode/scheduling-the-calendar) za sve opcije i [Uparivanje ekrana](../../freeplay/scheduled-mode/pairing-a-screen) da dodate TV.
+TV-ovi svake nedelje prikazuju koji god plan je trenutno aktuelan za taj tip plana, u vremenima koja ste podesili. Ovo radi i sa lekcijama Go Curriculum, uključujući planove koje ste prilagodili. FreePlay se prijavljuje sa Go Curriculum nalogom povezanim sa službom pod **Content Providers** (pogledajte [Zakazivanje lekcija](./scheduling-lessons.md)), ili sa Go Curriculum vezom crkve ako služba nema sopstvenu. Pogledajte [Zakazivanje kalendara](../../freeplay/scheduled-mode/scheduling-the-calendar.md) za sve opcije i [Uparivanje ekrana](../../freeplay/scheduled-mode/pairing-a-screen.md) da dodate TV.
 
 :::note
 URL feeda ne uključuje medijske sadržaje Go Curriculum, jer taj sadržaj zahteva prijavu vaše crkve na Go Curriculum. Da biste prikazali lekciju Go Curriculum na TV-u u predvorju ili učionici, koristite FreePlay.
@@ -53,4 +54,4 @@ URL feeda ne uključuje medijske sadržaje Go Curriculum, jer taj sadržaj zahte
 
 - Upravljajte planovima koji napajaju ovaj prikaz digitalne signalizacije na stranici [Planovi](./plans.md)
 - Zakazujte sadržaj pomoću [Lessons.church](./scheduling-lessons.md)
-- Postavite FreePlay TV-ove na kalendar pomoću [Scheduled Mode](../../freeplay/scheduled-mode/)
+- Postavite FreePlay TV-ove na kalendar pomoću [Scheduled Mode](../../freeplay/scheduled-mode/index.md)

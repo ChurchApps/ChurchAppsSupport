@@ -1,5 +1,6 @@
 ---
 title: "Struktura modula"
+description: "Pojasni razporeditev modulov API-ja (krmilniki, repozitoriji, prehodi, preverjanja dovoljenj) ter šest funkcij Lambda, ki poganjajo kodo v okoljih B1."
 ---
 
 # Struktura modula
@@ -13,8 +14,8 @@ Vsak modul API-ja sledi dosledni notranji strukturi s krmilniki, repozitoriji, m
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Nastavite API lokalno -- glejte [Lokalna nastavitev API-ja](./local-setup)
-- Preglejte arhitekturo [baze podatkov](./database), da razumete plast za dostop do podatkov
+- Nastavite API lokalno -- glejte [Lokalna nastavitev API-ja](./local-setup.md)
+- Preglejte arhitekturo [baze podatkov](./database.md), da razumete plast za dostop do podatkov
 
 </div>
 
@@ -131,7 +132,7 @@ const people = await repos.person.loadAll(churchId);
 
 ## Komunikacija med moduli
 
-Vsak modul ima lastno podatkovno bazo (glejte [Baza podatkov](./database)), modul pa nikoli neposredno ne poizveduje po tabelah drugega modula. Kadar en modul potrebuje podatke, ki pripadajo drugemu -- na primer modul za delo, ki razreši osebe iz članstva -- to opravi prek **prehoda** (gateway) lastniškega modula v `src/shared/modules/`:
+Vsak modul ima lastno podatkovno bazo (glejte [Baza podatkov](./database.md)), modul pa nikoli neposredno ne poizveduje po tabelah drugega modula. Kadar en modul potrebuje podatke, ki pripadajo drugemu -- na primer modul za delo, ki razreši osebe iz članstva -- to opravi prek **prehoda** (gateway) lastniškega modula v `src/shared/modules/`:
 
 ```typescript
 import { getMembershipModuleGateway } from "../../../shared/modules/index.js";
@@ -200,6 +201,6 @@ Lokalno funkcija `web` teče na vratih 8084, funkcija `socket` pa na vratih 8087
 
 ## Sorodni članki
 
-- **[Baza podatkov](./database)** -- Nizi za povezavo, skripti sheme in vzorci dostopa do podatkov
-- **[Lokalna nastavitev API-ja](./local-setup)** -- Celoten vodnik za nastavitev korak za korakom
-- **[ApiHelper](../shared-libraries/api-helper)** -- Skupna knjižnica, ki ponuja `CustomBaseController` in vmesno programsko opremo za avtentikacijo
+- **[Baza podatkov](./database.md)** -- Nizi za povezavo, skripti sheme in vzorci dostopa do podatkov
+- **[Lokalna nastavitev API-ja](./local-setup.md)** -- Celoten vodnik za nastavitev korak za korakom
+- **[ApiHelper](../shared-libraries/api-helper.md)** -- Skupna knjižnica, ki ponuja `CustomBaseController` in vmesno programsko opremo za avtentikacijo

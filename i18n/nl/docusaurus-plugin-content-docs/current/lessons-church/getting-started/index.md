@@ -1,5 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Aan de slag met Lessons.church"
+sidebar_label: "Aan de slag"
+description: "Maak je gratis Lessons.church-account, koppel je kerk, stel klaslokalen in en plan je eerste lessen. Geen abonnement of proefperiode nodig."
 ---
 
 # Aan de slag

@@ -1,5 +1,6 @@
 ---
 title: "Plan Genel Bakışı"
+description: "B1 Admin'de birçok hizmet tarihi boyunca gönüllü atamalarına kuşbakışı bakın, doldurulmamış pozisyonları fark edin ve tek bir tablodan ekibinizi doldurun veya e-posta gönderin."
 ---
 
 # Plan Genel Bakışı

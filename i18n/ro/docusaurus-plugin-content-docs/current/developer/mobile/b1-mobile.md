@@ -1,5 +1,6 @@
 ---
 title: "B1 Mobile"
+description: "Configurați și rulați local aplicația B1 Mobile (React Native/Expo), setați endpoint-urile API și compilați pentru Android sau iOS. B1 Mobile este depreciată."
 ---
 
 # B1 Mobile
@@ -13,9 +14,9 @@ B1 Mobile este aplicația mobilă principală pentru membri a ChurchApps, constr
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Instalați **Node.js** și **Expo CLI** -- vezi [Cerințe prealabile](../setup/prerequisites)
+- Instalați **Node.js** și **Expo CLI** -- vezi [Cerințe prealabile](../setup/prerequisites.md)
 - Instalați **Android Studio** (pentru emulatorul Android) sau **Xcode** (pentru simulatorul iOS)
-- Configurați ținta API (demo sau locală) -- vezi [Variabile de mediu](../setup/environment-variables)
+- Configurați ținta API (demo sau locală) -- vezi [Variabile de mediu](../setup/environment-variables.md)
 
 </div>
 
@@ -109,5 +110,5 @@ Actualizările OTA sunt ideale pentru modificările doar în JavaScript. Dacă m
 
 ## Articole conexe
 
-- **[Implementarea aplicațiilor mobile](../deployment/mobile)** -- Ghid complet pentru compilarea, trimiterea și implementarea aplicațiilor mobile
-- **[Variabile de mediu](../setup/environment-variables)** -- Referință completă pentru configurarea mediului mobil
+- **[Implementarea aplicațiilor mobile](../deployment/mobile.md)** -- Ghid complet pentru compilarea, trimiterea și implementarea aplicațiilor mobile
+- **[Variabile de mediu](../setup/environment-variables.md)** -- Referință completă pentru configurarea mediului mobil

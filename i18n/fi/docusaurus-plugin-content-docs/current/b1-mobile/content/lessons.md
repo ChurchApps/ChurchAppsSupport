@@ -1,5 +1,7 @@
 ---
-title: "Lessons (vanhentunut)"
+title: "Oppitunnit-näkymä B1 Mobilessa (poistettu käytöstä)"
+sidebar_label: "Lessons (vanhentunut)"
+description: "Oppitunnit (vanhentunut) -sivu: miksi B1 Mobile -sovelluksen oppituntinäkymä poistettiin käytöstä ja mistä opetusmateriaali löytyy nyt (FreePlay tai Lessons.church)."
 ---
 
 # Lessons (vanhentunut)
@@ -19,7 +21,7 @@ Lessons-näkymä antoi sinulle pääsyn seurakuntasi opetussuunnitelmaan ja oppi
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Asenna B1 Mobile](../getting-started/installing) ja [kirjaudu sisään](../getting-started/logging-in) tilillesi
+- [Asenna B1 Mobile](../getting-started/installing.md) ja [kirjaudu sisään](../getting-started/logging-in.md) tilillesi
 - Seurakunnassasi on oltava opetussuunnitelma määritettynä Lessons.church-sivuston kautta
 
 </div>
@@ -54,5 +56,5 @@ Lessons-näkymä näkyy, kun seurakuntasi on määrittänyt opetussuunnitelman L
 
 - [FreePlayn yleiskatsaus](/docs/freeplay/) -- Korvaava TV-sovellus oppituntien toistoon luokkahuoneessa
 - [Lessons.church](/docs/lessons-church/) -- Selaa ja hallitse opetussisältöä suoraan
-- [Raamattu](./bible) -- Lue Pyhiä Kirjoituksia oppituntiesi rinnalla
-- [Saarnat](./sermons) -- Katso saarnoja, jotka täydentävät opintojasi
+- [Raamattu](./bible.md) -- Lue Pyhiä Kirjoituksia oppituntiesi rinnalla
+- [Saarnat](./sermons.md) -- Katso saarnoja, jotka täydentävät opintojasi

@@ -1,5 +1,6 @@
 ---
 title: "家庭成员"
+description: "在 B1 Mobile 的“个人资料”标签页中查看您的家庭成员及成员之间的关联，签到等功能依赖于此。"
 ---
 
 # 家庭成员
@@ -13,7 +14,7 @@ title: "家庭成员"
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- [安装 B1 Mobile](../getting-started/installing) 并[登录](../getting-started/logging-in)您的账户
+- [安装 B1 Mobile](../getting-started/installing.md) 并[登录](../getting-started/logging-in.md)您的账户
 
 </div>
 
@@ -33,7 +34,7 @@ title: "家庭成员"
 
 - **签到** -- 当您为礼拜或活动[签到](../checkin/self-checkin.md)时，可以一次为全家签到，无需逐个签到。
 - **教会记录** -- 教会使用家庭数据来组织家庭记录，并以家庭为单位与您的家人沟通。
-- **目录** -- 其他成员可能会在[教会目录](../community/member-directory.md)中看到您的家庭信息，具体取决于您的[隐私设置](./privacy-settings)。
+- **目录** -- 其他成员可能会在[教会目录](../community/member-directory.md)中看到您的家庭信息，具体取决于您的[隐私设置](./privacy-settings.md)。
 
 ## 查看家庭成员
 
@@ -47,10 +48,10 @@ title: "家庭成员"
 
 ## 保持信息更新
 
-如果家庭成员的信息需要更新，他们可以[编辑自己的资料](./editing-profile)，或者您可以联系教会管理员进行更改。保持家庭信息准确可以确保[签到](../checkin/)等功能为全家顺利运行。
+如果家庭成员的信息需要更新，他们可以[编辑自己的资料](./editing-profile.md)，或者您可以联系教会管理员进行更改。保持家庭信息准确可以确保[签到](../checkin/index.md)等功能为全家顺利运行。
 
 ## 相关文章
 
 - [自助签到](../checkin/self-checkin.md) -- 为家庭成员办理礼拜签到
-- [编辑个人资料](./editing-profile) -- 更新您自己的个人信息
-- [隐私设置](./privacy-settings) -- 控制其他人可以看到的关于您家庭的信息
+- [编辑个人资料](./editing-profile.md) -- 更新您自己的个人信息
+- [隐私设置](./privacy-settings.md) -- 控制其他人可以看到的关于您家庭的信息

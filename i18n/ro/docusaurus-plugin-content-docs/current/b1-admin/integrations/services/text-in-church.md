@@ -1,5 +1,6 @@
 ---
 title: "Text In Church"
+description: "Conectați B1 Admin și Text In Church prin Zapier: generați o cheie API, creați un Zap de la cardul de conectare la B1 și oglindiți apartenența la grupuri."
 ---
 
 # Text In Church
@@ -92,6 +93,6 @@ Activați Zap-ul. Următorul card de conectare trimis prin TIC ajunge automat î
 
 ## Vezi și
 
-- [Clearstream](./clearstream) — platformă SMS alternativă, cu o structură Zapier similară
-- [Zapier (prezentare generală)](../zapier) — partea B1 a fiecărei rețete Zapier
+- [Clearstream](./clearstream.md) — platformă SMS alternativă, cu o structură Zapier similară
+- [Zapier (prezentare generală)](../zapier.md) — partea B1 a fiecărei rețete Zapier
 - [Ghidul Zapier al Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (documentația TIC)

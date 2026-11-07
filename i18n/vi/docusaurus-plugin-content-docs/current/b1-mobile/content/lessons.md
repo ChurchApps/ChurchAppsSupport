@@ -1,5 +1,7 @@
 ---
-title: "Bài học (Đã ngừng sử dụng)"
+title: "Màn hình Bài học trong B1 Mobile (Đã gỡ bỏ)"
+sidebar_label: "Bài học (Đã ngừng sử dụng)"
+description: "Trang Bài học (Ngừng hỗ trợ): lý do màn hình Bài học trong B1 Mobile đã được gỡ bỏ và nơi tìm giáo trình hiện nay (FreePlay hoặc Lessons.church)."
 ---
 
 # Bài học (Đã ngừng sử dụng)
@@ -19,7 +21,7 @@ Màn hình Bài học giúp bạn truy cập giáo trình và tài liệu học 
 <div class="prereqs">
 <h4>Trước khi bắt đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Hội thánh của bạn phải đã thiết lập giáo trình thông qua Lessons.church
 
 </div>
@@ -54,5 +56,5 @@ Màn hình Bài học chỉ xuất hiện khi hội thánh đã thiết lập gi
 
 - [Tổng quan FreePlay](/docs/freeplay/) -- Ứng dụng TV thay thế để phát bài học trong lớp
 - [Lessons.church](/docs/lessons-church/) -- Duyệt và quản lý nội dung giáo trình trực tiếp
-- [Kinh Thánh](./bible) -- Đọc Kinh Thánh song song với các bài học của bạn
-- [Bài giảng](./sermons) -- Xem các bài giảng bổ trợ cho việc học của bạn
+- [Kinh Thánh](./bible.md) -- Đọc Kinh Thánh song song với các bài học của bạn
+- [Bài giảng](./sermons.md) -- Xem các bài giảng bổ trợ cho việc học của bạn

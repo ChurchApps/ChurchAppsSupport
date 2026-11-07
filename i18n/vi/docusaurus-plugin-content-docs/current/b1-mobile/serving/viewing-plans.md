@@ -1,5 +1,7 @@
 ---
-title: "Xem Kế Hoạch"
+title: "Xem kế hoạch phục vụ trong B1 Mobile"
+sidebar_label: "Xem Kế Hoạch"
+description: "Kiểm tra lịch phục vụ sắp tới và đã qua trong B1 Mobile, đọc chi tiết kế hoạch và thứ tự buổi lễ, và in kế hoạch để dùng khi tập dượt hoặc hậu trường."
 ---
 
 # Xem Kế Hoạch
@@ -13,7 +15,7 @@ Màn hình kế hoạch trong B1 Mobile cung cấp cho bạn cái nhìn toàn di
 <div class="prereqs">
 <h4>Trước Khi Bắt Đầu</h4>
 
-- [Cài đặt B1 Mobile](../getting-started/installing) và [đăng nhập](../getting-started/logging-in) vào tài khoản của bạn
+- [Cài đặt B1 Mobile](../getting-started/installing.md) và [đăng nhập](../getting-started/logging-in.md) vào tài khoản của bạn
 - Được quản trị viên của hội thánh phân công vào ít nhất một kế hoạch phục vụ
 
 </div>
@@ -61,4 +63,4 @@ Bạn sẽ nhận được [thông báo đẩy](../community/notifications.md) k
 
 ## Bài Viết Liên Quan
 
-- [Đăng Ký Tình Nguyện](./volunteer-signup) -- Xem và đăng ký các vị trí tình nguyện còn trống
+- [Đăng Ký Tình Nguyện](./volunteer-signup.md) -- Xem và đăng ký các vị trí tình nguyện còn trống
