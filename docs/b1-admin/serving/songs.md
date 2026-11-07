@@ -49,6 +49,8 @@ Your search results may also include a **WorshipCommons — free** section along
 
 Only songs that have passed WorshipCommons' review process appear here, so the selection may be smaller than the main song database.
 
+To browse the full WorshipCommons library, print charts, or export slides, see the [WorshipCommons docs](../../worship-commons/index.md).
+
 ## Deleting Songs
 
 Check the box next to one or more songs (or the box in the header to select every song shown), then click **Delete Selected** in the bar that appears and confirm. Click **Clear** to deselect.

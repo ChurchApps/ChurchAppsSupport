@@ -37,6 +37,8 @@ Members are grouped under letter headings (A, B, C, and so on) by the first lett
 
 Tap any member in the list to open their profile. The profile shows the member's name, photo, and membership status, with buttons to **Message** them, **Call** them, or send a **Text** when that information is available. Below that, the **Contact Information** section shows the details your church and the member have chosen to share, such as email, phone, and address, and **Household Members** lists the other people in their household.
 
+**Message** opens a private conversation with that person. You can make text bold or italic, or add a list, by highlighting it and using the toolbar that appears -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
+
 You can tap household members within a profile to navigate to their profiles as well. On your own profile, an **Edit profile** button takes you to [Editing Your Profile](../getting-started/editing-your-profile.md).
 
 :::info

@@ -30,8 +30,8 @@ curl -fsSL https://raw.githubusercontent.com/ChurchApps/B1Admin/main/deploy/inst
 
 完成后：
 
-1. 打开 **https://church.example.org/admin**（或 http://localhost/admin），并点击 **Register**（注册）。第一个账号会自动成为服务器管理员。
-2. 按照应用内的提示创建你的第一个教会。该教会的网站和成员门户将在创建后立即在 **https://church.example.org/** 上线。
+1. 打开 `https://church.example.org/admin`（或 http://localhost/admin），并点击 **Register**（注册）。第一个账号会自动成为服务器管理员。
+2. 按照应用内的提示创建你的第一个教会。该教会的网站和成员门户将在创建后立即在 `https://church.example.org/` 上线。
 
 所有内容都运行在同一个域名之后：
 

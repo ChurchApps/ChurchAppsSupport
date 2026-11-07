@@ -30,8 +30,8 @@ Izpustite `--domain`, če želite zagnati na `http://localhost`. Namestitveni pr
 
 Ko je namestitev končana:
 
-1. Odprite **https://church.example.org/admin** (ali http://localhost/admin) in kliknite **Registriraj se**. Prvi račun samodejno postane skrbnik strežnika.
-2. Sledite navodilom v aplikaciji za ustvarjanje prve cerkve. Njeno spletno mesto in portal za člane sta na voljo na **https://church.example.org/**, takoj ko je cerkev ustvarjena.
+1. Odprite `https://church.example.org/admin` (ali http://localhost/admin) in kliknite **Registriraj se**. Prvi račun samodejno postane skrbnik strežnika.
+2. Sledite navodilom v aplikaciji za ustvarjanje prve cerkve. Njeno spletno mesto in portal za člane sta na voljo na `https://church.example.org/`, takoj ko je cerkev ustvarjena.
 
 Vse deluje za eno domeno:
 

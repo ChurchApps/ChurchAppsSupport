@@ -31,7 +31,7 @@ Tap your profile photo in the top app bar, or tap **Edit Profile** at the top of
 
 These sections hold the information your church sees on your person record:
 
-- **Photo & name** — tap **Change Photo** to upload a new picture, and edit your First, Middle, and Last name.
+- **Photo & name** — tap **Change Photo** to upload a new picture, and edit your **Title**, First, Middle, and Last name. For **Title**, pick a suggestion (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor) or type your own, up to 10 characters.
 - **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, and your Address (street, city, state, and zip). If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
 
 Make your changes in the panel and tap **Save Changes**.
@@ -44,7 +44,16 @@ If your church requires approval for directory changes, the page says "Changes t
 
 The Household section shows the other people linked to your household, each with their household role (Head, Spouse, Child, and so on). Tap a household member to view their details.
 
-To add a family member who isn't in the system yet, tap **Add Family Member**, enter their first name, and tap **Add**. New family members are added to a pending list and are submitted along with your other profile changes for your church to review.
+To add a family member who isn't in the system yet:
+
+1. Tap **Add Family Member**.
+2. Enter their **First Name**. **Last Name** starts filled in with your last name; change it if theirs is different.
+3. Optionally add their **Title** and **Mobile Phone**.
+4. Pick their **Household Role**: **Head**, **Spouse**, **Child**, or **Other** (the default).
+5. Tap **Add**. They appear under **Pending Family Members** with their role; tap **Remove** to take someone off the list. Repeat for anyone else.
+6. Tap **Save Changes** (or **Submit for Approval**).
+
+If your church reviews directory changes, the new family members are submitted with your other changes for your church to approve. Otherwise they are added to your household as soon as you save.
 
 ## Account
 

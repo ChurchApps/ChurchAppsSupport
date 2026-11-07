@@ -152,6 +152,7 @@ const config: Config = {
               'https://b1.church/',
               'https://lessons.church/',
               'https://freeplay.church/',
+              'https://worshipcommons.org/',
             ],
           },
           {
@@ -225,6 +226,7 @@ const config: Config = {
             { label: 'B1 - Checkin', to: '/docs/b1-checkin/' },
             { label: 'Lessons.church', to: '/docs/lessons-church/' },
             { label: 'FreePlay', to: '/docs/freeplay/' },
+            { label: 'WorshipCommons', to: '/docs/worship-commons/' },
           ],
         },
         {

@@ -60,6 +60,8 @@ Even if your church hasn't set up online giving, you can still see the gifts it 
 
 Tap **Print Statement** at the top of the Giving page to open a printable giving statement covering the current calendar year (or the latest year your church has released) in a new tab. To print a different year, open **All history**, pick that year, and tap **Print Statement** next to the total.
 
+The statement is centered on the page and starts with your church's logo (when your church has uploaded one), the year, the period it covers (January 1 to December 31), and the date it was issued. Below that are your name and contact details beside your church's name and address, a summary with your total contributions and a total for each fund, and a table of every gift with its date, method, fund, and amount. At the bottom, a note confirms that the statement covers all contributions your church received from you that year, followed by a short disclaimer that the church is a registered non-profit and that no goods or services were provided in exchange for the gifts other than intangible religious benefits. Your church's giving note, if it has one, is printed after that.
+
 :::tip
 Print your statement early in the new year, before you need it for tax filing, while last year's donations are still fresh in your history.
 :::

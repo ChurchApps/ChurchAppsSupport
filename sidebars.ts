@@ -598,6 +598,20 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'WorshipCommons',
+      link: { type: 'doc', id: 'worship-commons/index' },
+      items: [
+        'worship-commons/finding-songs',
+        'worship-commons/song-page',
+        'worship-commons/presenting-and-exporting',
+        'worship-commons/service-plans',
+        'worship-commons/your-account',
+        'worship-commons/sharing-a-song',
+        'worship-commons/proposing-edits',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Developer',
       link: { type: 'doc', id: 'developer/index' },
       items: [

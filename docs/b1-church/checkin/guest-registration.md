@@ -31,12 +31,13 @@ The page opens with the title **Guest Registration**. If the church has added a 
 
 1. **Scan the QR code** at the check-in kiosk or open the guest registration link on your phone. (If you tapped **Register here** on the kiosk, the form is already open.)
 2. Fill in the **Primary Contact** card. **First Name** and **Last Name** are always required. Depending on what your church asks for, you may also see:
+   - **Title** (such as Mr, Mrs, Dr, or Pastor), in front of the name
    - **Email** and **Phone**
    - **Marital Status**
    - **Home Address** -- **Street Address**, **Address Line 2**, **City**, **State**, and **Zip**. This is shared by the whole family.
 3. The form starts with a second card for **Family Member 2**. Enter their first and last name, or tap the **X** in the card's corner to remove it if you're registering on your own.
 4. To add more people, tap **Add Family Member**. The new card fills in the primary contact's last name for you. You can register up to 10 people at once.
-5. If your church asks for them, each person's card may also include **Birth Date**, **Gender**, and **Grade**.
+5. If your church asks for them, each person's card may also include **Title**, **Phone**, **Birth Date**, **Gender**, and **Grade**. Every card after the primary contact may also ask for a **Household Role** -- **Spouse**, **Child**, or **Other** -- so the church knows how each person is related to the primary contact.
 6. If your church includes a **Comments** box below the family members, use it to share anything you'd like the church to know (up to 1,000 characters).
 7. Tap **Register** to submit.
 
@@ -49,7 +50,7 @@ Once you submit the form, a confirmation screen appears with the message: "Regis
 Your registration creates records in the church database:
 
 - A **household** is created using the primary contact's last name, with the primary contact as head of household.
-- **Person records** are created for each family member with a "Visitor" membership status.
+- **Person records** are created for each family member with a "Visitor" membership status. Each family member gets the household role you picked, or **Other** if none was asked for.
 - Any comments you entered are saved as a note on the primary contact's record for church staff to read.
 - If the church has chosen a group for new guests, your family is added to it. The church may also have your attendance recorded automatically if you register during one of that group's scheduled service times.
 - A church volunteer or administrator can then check your family in using the [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) kiosk.

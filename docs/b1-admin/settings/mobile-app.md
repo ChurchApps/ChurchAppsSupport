@@ -102,8 +102,10 @@ The **Home screen tiles** setting on the same Member portal page (`/mobile/b1-mo
 
 - **Grid** -- Two tiles per row (the default). When the number of tiles is odd, the first tile spans the full width.
 - **Scrolling row** -- One row of tiles that members swipe sideways.
-- **Scrolling (automatic)** -- The same sideways row, but it also moves on its own, advancing one tile about every four seconds and looping back to the start at the end. It pauses while a member touches, hovers over, or tabs into the row and picks up again a few seconds later. On devices set to reduce motion, the row stays still and works like **Scrolling row**.
+- **Scrolling (automatic)** -- The same sideways row, but it also moves on its own, advancing one tile about every four seconds and carrying on forward to the first tile again after the last one. It pauses while a member touches, hovers over, or tabs into the row and picks up again a few seconds later. On devices set to reduce motion, the row stays still and works like **Scrolling row**.
 - **List** -- A list with a small photo thumbnail next to each tab's name.
+
+In both scrolling layouts, when there are more tiles than fit across the screen, a row of dots appears under the tiles, one per tile, with the current tile's dot filled in. Members can tap a dot to jump to that tile.
 
 Click **Save** to apply.
 
@@ -120,7 +122,9 @@ Both are off by default. A section only appears for members who are signed in an
 
 The tabs you configure here are displayed in the **B1.church PWA** that your members install from any page on `https://yourchurchname.b1.church`. Changes you make on this page are reflected the next time a member opens the app.
 
-On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **More**; on a computer, the header shows up to five. Built-in screens (such as Sermons, Giving, or Groups) get those slots first, and **Internal Page** tabs fill any slots left over. **External URL** and **Verse of the Day** tabs never get a slot. Every tab, including those that don't fit, is listed on the app's **More** page. See [Navigating B1App](/docs/b1-church/getting-started/navigating) for what members see. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)
+On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **More**; on a computer, the header shows up to five. Built-in screens (such as Sermons, Giving, or Groups) get those slots first, and **Internal Page** tabs fill any slots left over. **External URL** and **Verse of the Day** tabs never get a slot. Every tab, including those that don't fit, is listed on the app's **More** page.
+
+Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](/docs/b1-church/getting-started/navigating) for what members see. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)
 
 ## Next Steps
 

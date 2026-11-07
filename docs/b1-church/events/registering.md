@@ -69,7 +69,7 @@ If your registration has a cost, the **Payment** step shows an **Order Summary**
 - **Logged-in members** can pay with a saved card or choose **Use a new card**.
 - **Guests** enter their card details directly and tick the **I'm not a robot** check before paying.
 
-Click **Pay & Register** to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
+Click the **Pay & Register** button, which shows your total (for example, **Pay $25.00 & Register**), to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
 
 Free registrations skip this step and go straight to confirmation.
 
@@ -78,6 +78,10 @@ If your church does not take payments online, the payment step says *"Online pay
 ## Step 6: Confirm
 
 A confirmation message appears with the event details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
+
+If you chose **Register and Pay Later**, the member portal shows **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due (for example, "Balance due $25.00 of $25.00").
+
+Once you're registered, the event's **Register** link on your group's page is replaced by your status (**Registered**, **Pending**, or **Waitlisted**), and the event appears under **Upcoming events** on your Home screen tagged **Registration**.
 
 ## Joining a Waitlist
 

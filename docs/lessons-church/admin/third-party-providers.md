@@ -1,41 +1,40 @@
 ---
 title: "Third-Party Providers"
-description: "Add an external curriculum feed to Lessons.church from the Third-Party admin page, then view, update, or remove provider connections as needed."
+description: "Add an Open Lesson Format curriculum feed on the Lessons.church External Providers page, then edit or delete it so your church can schedule its lessons."
 ---
 
 # Third-Party Providers
 
 <div class="article-intro">
 
-Lessons.church supports external curriculum providers through the Open Lesson Format. This means you can import content from other organizations and make it available alongside the built-in library, giving churches access to curriculum from multiple sources in one place.
+Lessons.church supports external curriculum providers through the Open Lesson Format. This means your church can connect curriculum from other organizations and schedule it for your classrooms right next to the built-in library, so your team has curriculum from multiple sources in one place.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Have admin permissions for Lessons.church (see the [Administration overview](./index.md))
-- Obtain the feed URL from the external provider you want to connect
+- Log in to Lessons.church with an account that can manage your church's classroom schedules
+- Get the feed URL from the external provider you want to connect. It must return lessons in the [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Adding a Provider
 
-1. Navigate to the **Admin** area.
-2. Open the **Third-Party** page.
-3. Click **Add Provider** (or the equivalent button to add a new connection).
-4. Enter the provider's **feed URL**. This is the URL where the provider publishes their curriculum data in the Open Lesson Format.
-5. Save the connection.
+1. Click **External Providers** in the Lessons.church navigation. The **External Lesson Providers** page opens.
+2. Click **Add Provider**. If you haven't added one yet, click **Add First Provider** instead.
+3. Enter a **Provider Name**. This is the name your team sees when picking the provider.
+4. Enter the **API URL**. This is the address where the provider publishes their curriculum in the Open Lesson Format.
+5. Click **Save**.
 
-Once saved, Lessons.church will import the provider's content. Their programs, studies, and lessons will appear in the curriculum library alongside your own content.
+The provider is added for your church only. It then appears as a choice under **Provider** when you [schedule a lesson](../classrooms/scheduling-lessons.md) for a classroom, and under **Source** when you build a [year plan](./managing-year-plans.md).
 
 ## Managing Providers
 
-From the **Third-Party** page, you can see all connected providers. For each provider, you can:
+The **External Lesson Providers** page lists every provider your church has added. To change one:
 
-- **View** the imported content to confirm it was pulled in correctly.
-- **Update** the feed URL if the provider changes their endpoint.
-- **Remove** a provider if you no longer want to include their content.
+- **Edit** -- Click the **Edit provider** (pencil) icon, change the **Provider Name** or **API URL**, and click **Save**.
+- **Delete** -- Click the **Edit provider** icon, then click the delete (trash can) icon and confirm.
 
 ## What Is the Open Lesson Format?
 
@@ -47,12 +46,12 @@ If you are a content provider interested in making your curriculum available thr
 
 - **More choices for churches** -- Churches can browse a wider variety of curriculum without leaving the platform.
 - **One place for everything** -- Volunteers and coordinators do not need to visit multiple websites to find and schedule lessons.
-- **Easy setup** -- Adding a provider takes only a feed URL. There is no manual data entry or file uploading involved.
+- **Easy setup** -- Adding a provider takes only a name and a feed URL. There is no manual data entry or file uploading involved.
 
 :::info
 Third-party content is managed by the external provider. If you notice missing or outdated content from a provider, the issue may need to be resolved on their end.
 :::
 
 :::tip
-For church-level external provider configuration (not admin-level), see the [External Providers](../browsing/external-providers.md) page in the Browsing section.
+To learn how lessons from an external provider look once they're scheduled, see [External Providers](../browsing/external-providers.md) in the Browsing section.
 :::

@@ -30,8 +30,8 @@ Udelad `--domain` for at køre på `http://localhost`. Installationsprogrammet o
 
 Når det er færdigt:
 
-1. Åbn **https://church.example.org/admin** (eller http://localhost/admin) og klik på **Register**. Den første konto bliver automatisk serveradministrator.
-2. Følg vejledningen i appen for at oprette din første kirke. Dens hjemmeside og medlemsportal er tilgængelige på **https://church.example.org/**, så snart den er oprettet.
+1. Åbn `https://church.example.org/admin` (eller http://localhost/admin) og klik på **Register**. Den første konto bliver automatisk serveradministrator.
+2. Følg vejledningen i appen for at oprette din første kirke. Dens hjemmeside og medlemsportal er tilgængelige på `https://church.example.org/`, så snart den er oprettet.
 
 Alt kører bag ét domæne:
 

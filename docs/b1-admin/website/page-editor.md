@@ -66,7 +66,8 @@ Already built out a section but want a different structure? Use the layout switc
    - **Calendar** -- Display an event calendar
    - **FAQ** -- Accordion-style question and answer blocks
    - **Video** -- Embed a video by URL
-   - **Groups Browser** -- A filterable directory of all church groups with optional search, category filter, and label filter
+   - **Groups Browser** -- A filterable directory of all church groups with optional search, category filter, and label filter. Its **Layout** can be **Grid** (the default) or **Scrolling (automatic)** -- see [Scrolling layouts](#scrolling-layouts)
+   - **Group List** -- Tiles for your public groups, optionally only the groups with a given label. Its **Layout** can be **Grid** (the default; up to three tiles per row) or **Scrolling (automatic)** -- see [Scrolling layouts](#scrolling-layouts)
    - **Icon Feature** -- An icon with a title and short description, for feature or ministry highlights
    - **Gallery** -- A multi-photo grid or masonry layout
    - **Testimonial** -- One or more quotes with author name, role, and photo
@@ -104,11 +105,21 @@ The **Calendar** element shows events from one of your calendars:
 1. Under **Select**, choose **Group Calendar** (one group's events -- the list shows groups you belong to) or **Curated Calendar** (a calendar you built under **Calendars**; see [Curated Calendar](../calendars/curated-calendar.md)).
 2. Under **Select Calendar**, pick the group or calendar.
 3. Under **Display**, choose how to show it:
-   - **Month calendar** -- A month grid that visitors can page through.
-   - **Upcoming events** -- A grid of tiles for the next 12 upcoming events, with a repeating event shown once on its next date. Each tile shows the event's photo (or its title on your theme's dark color when it has no photo), a date badge, the day and time, and the first line of its description. A **Subscribe** button above the tiles lets visitors copy the calendar's ICS link or download it. A **Layout** setting appears for this display: **Grid** (the default) or **Scrolling (automatic)**, which puts the tiles in a single row that scrolls along by itself.
+   - **Month calendar** -- A month grid that visitors can page through. Each event is colored by the group it belongs to, so a group's events have the same color on every calendar. B1 picks the colors automatically; there is nothing to set up.
+   - **Upcoming events** -- A grid of tiles for the next 12 upcoming events, with a repeating event shown once on its next date. Each tile shows the event's photo (or its title on your theme's dark color when it has no photo), a date badge, the day and time, and the first line of its description. A **Subscribe** button above the tiles lets visitors copy the calendar's ICS link or download it. A **Layout** setting appears for this display: **Grid** (the default) or **Scrolling (automatic)**, which puts the tiles in a single row that scrolls along by itself (see [Scrolling layouts](#scrolling-layouts)). For a **Curated Calendar**, turn on the **Group badge** setting to show each event's group name in the top-right corner of its tile, in that group's calendar color. Events from archived or confidential groups don't get a badge.
 4. To show only some events, type a tag in **Only events tagged** -- for example, `youth`. Only events whose **Tags** include that word appear. Leave it empty to show every event. Tags are set on each event; see [Adding and Editing Events](../calendars/creating-calendars.md#adding-and-editing-events).
 
 In either display, clicking an event opens its own page on your website. The event page shows the event photo, title, date and time, and description, plus a box with **When** (including the repeat pattern for a recurring event) and **Where** (the rooms booked for it). It also has a **Register for this Event** button when registration is turned on, and an **Add to my calendar** link that downloads the event as a calendar file. The page is set up so search engines can show the event's date and details in their results. Event pages from curated calendars shown on your pages (for events in the next six months) are also listed in your site's sitemap, so search engines can find them.
+
+### Scrolling layouts {#scrolling-layouts}
+
+The **Scrolling (automatic)** layout on the **Groups Browser**, **Group List**, and the Calendar element's **Upcoming events** display puts the tiles in one row instead of a grid. On a phone each tile fills the row; on a computer two tiles fit side by side. When there are more tiles than fit, the row:
+
+- Moves forward one tile about every four seconds, carrying on to the first tile again after the last one.
+- Pauses while a visitor hovers over, touches, or tabs into it, and picks up again a few seconds later.
+- Shows a row of dots underneath, one per tile, with the current tile's dot filled in. Visitors can click a dot to jump to that tile.
+
+On devices set to reduce motion, the row stays still and visitors swipe or scroll it themselves. If all the tiles fit, the row doesn't move and no dots appear.
 
 ### Reordering Content
 

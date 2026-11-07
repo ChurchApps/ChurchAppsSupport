@@ -32,7 +32,7 @@ There is nothing you need to do -- just visit the page and the current day's ver
 
 Below today's verse, a **This week** section shows recent days' verses:
 
-- On your church's website, the previous six days appear as a row of picture cards that slowly scrolls on its own (it pauses while you hover over or touch it).
+- On your church's website, the previous six days appear as a row of picture cards that slowly scrolls on its own, carrying on forward to the first card again after the last (it pauses while you hover over or touch it). When the cards don't all fit, a row of dots under them shows which card you're on; click a dot to jump to that card.
 - In the member portal (`/mobile`), the previous three days are listed with each verse's reference, date, and text.
 
 Click or tap any day to open it with its picture, full verse, and the same share and download buttons as today's verse.

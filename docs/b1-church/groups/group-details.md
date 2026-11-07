@@ -38,7 +38,7 @@ When you are a member, the group's header shows its name, meeting day, time, and
 
 The page is one sheet of sections. Each shows a short preview, and a link in the section's header opens the full view; tap **Back to** *group name* to return. The available sections are:
 
-- **Next event** -- The group's next upcoming event, with **Going** / **Maybe** / **Can't go** buttons (see [Event RSVPs](./event-rsvps.md)). Tap **All events** to open the group's calendar: use the arrows to move between months, and switch between **Calendar** (a month grid where you tap a day to see its events) and **List** (the month's events in date order, grouped by day). When you are looking at the current month, the list starts from today, so it only shows what's still coming up. If the group's events have tags, you can filter by tag.
+- **Next event** -- The group's next upcoming event, with **Going** / **Maybe** / **Can't go** buttons (see [Event RSVPs](./event-rsvps.md)). An event that takes registrations has a **Register** link; once you have registered, your status -- **Registered**, **Pending**, or **Waitlisted** -- shows in its place (on this card and in the full events list), and tapping it opens your [registrations](../events/my-registrations.md). Tap **All events** to open the group's calendar: use the arrows to move between months, and switch between **Calendar** (a month grid where you tap a day to see its events) and **List** (the month's events in date order, grouped by day). When you are looking at the current month, the list starts from today, so it only shows what's still coming up. If the group's events have tags, you can filter by tag.
 - **This week's lesson** -- If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, it appears under **Next event** (members only).
 - **Meetings** -- The group's recent meetings, newest first. Each one shows the date, how many people were there (for example, "8 of 12 there") or **Upcoming** for a future date, and the leader's note for that meeting, with any bold text, lists, and links kept. Tap **All meetings** to see them all. A meeting only appears once it has a note or attendance. See [Meeting Notes and Attendance](#meeting-notes-and-attendance) below.
 - **Leader notes** -- Visible to the group's leaders only. Shows the two newest leader notes; tap **Open notes** to read them all and post a new one. See [Leader Notes](#leader-notes) below.
@@ -84,7 +84,7 @@ If the date already has a note, it opens so you can edit it. The **Take attendan
 **Leader notes** is a private feed for the group's leaders -- for example, to keep track of follow-ups or pastoral concerns. Only the group's leaders can see it or post to it. Other members never see it, and neither do church staff unless they are also leaders of the group.
 
 1. In the **Leader notes** section, tap **Open notes** (or tap any note).
-2. Type your note in the box at the bottom and send it.
+2. Type your note in the box at the bottom and send it. Highlight text to make it bold or italic or turn it into a list -- see [Formatting Your Message](./conversations.md#formatting-your-message).
 
 Until someone posts, the feed shows "No notes yet" with the reminder "Only this group's leaders can see these notes." Leaders see the same notes on the group's page in B1 Admin -- see [Group Members](../../b1-admin/groups/group-members.md#leader-notes).
 

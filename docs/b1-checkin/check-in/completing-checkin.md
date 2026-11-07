@@ -27,6 +27,8 @@ Once you have reviewed your household and made any needed group assignments, you
 
 That is all it takes. Your family's attendance has been recorded.
 
+If anyone you selected already checked in for this service today, an **Already Checked In** window appears first and names them. Tap **Check In Again** to save their new group choices, or **Cancel** to go back to the household screen.
+
 ## Full Rooms and Volunteer Ratios
 
 If your church has configured [safety limits](../../b1-admin/attendance/checkin-safety.md) on its rooms, the server checks them before saving:
