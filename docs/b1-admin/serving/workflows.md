@@ -95,7 +95,7 @@ Automated actions run only when a card arrives through the normal flow -- when i
 
 ### Sending email
 
-Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}`, are filled in with the person's own details.
+Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}`, are filled in with the person's own details. If a **Donation · Created** trigger started the workflow, the gift fields `{{amount}}`, `{{giftDate}}`, `{{fund}}`, and `{{receipt}}` are filled in from that gift, even on steps that run after a Wait. See [Gift merge fields](../settings/email-templates.md#gift-merge-fields).
 
 When the email goes out, the card's history records **Email sent**. If it can't be sent -- for example, because your church's email isn't approved yet or the daily limit has been reached -- no "Email sent" entry is added.
 
@@ -117,7 +117,7 @@ Choose **Notify Person**, click **Pick person**, and optionally type a **Message
 
 ### Sending a text
 
-Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent.
+Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent. The **Amount**, **Gift Date**, **Fund**, and **Receipt** chips insert the gift fields, which fill in only when a **Donation · Created** trigger started the workflow. For example, `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
 
 - If the person has no mobile phone on file, no text is sent and the card's history records **Text skipped: no mobile phone**.
 - If the person has opted out, no text is sent and the card's history records **Text skipped: opted out**.
