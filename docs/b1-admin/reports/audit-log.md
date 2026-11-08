@@ -61,6 +61,17 @@ Each category is color-coded for quick identification:
 - **Forms** -- Orange chip. Tracks form submission activity.
 - **Settings** -- Yellow chip. Tracks configuration changes.
 
+## Note History on People and Groups
+
+If you can open the audit log, you also see a trace of changed notes right where the notes live, on a person's or group's **Notes** tab:
+
+1. An edited note shows **(edited · view history)** next to its date. Click it to open the audit log filtered to that person's or group's note history.
+2. A deleted note leaves a greyed **Deleted note** marker in its place, showing who wrote it, when it was posted, and when it was deleted. Click **View history** to open the same filtered log.
+3. In the filtered log, expand a **Note Updated** or **Note Deleted** entry to see the old text and the account that made the change. Click **Show all** to clear the filter.
+4. In the **Entity** column, the ID of a person or group note links back to that person's or group's notes.
+
+Staff who cannot open the audit log see the notes list without these markers.
+
 ## Exporting the Log
 
 When log entries are displayed, a **CSV download** button appears. Click it to export the current filtered results to a spreadsheet for offline review or record-keeping.
