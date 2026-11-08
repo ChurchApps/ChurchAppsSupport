@@ -233,6 +233,7 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/logo.png',
+    metadata: [{property: 'og:type', content: 'website'}],
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
