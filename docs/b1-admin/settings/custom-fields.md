@@ -27,6 +27,18 @@ description: "Define custom fields in B1 Admin to track extra person details, li
 
 In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Settings > Settings**, and click **Custom Fields** in the left-hand list to scroll to the **Custom Fields** section. You can also go straight there at **/settings/custom-fields**. You'll see a list of every field you've defined, showing its **Name** and **Field Type**. If you haven't created any yet, the panel reads *"No custom fields have been added yet."*
 
+## Titles
+
+The **Titles** card at the top of the Custom Fields section lists the titles offered in the **Title** box when someone adds or edits a person, in B1 Admin and in the B1 app (the profile editor and the guest registration form). The list starts as Mr, Mrs, Miss, Ms, Dr, Prof, Rev and Pastor.
+
+1. Type a title in **New title** (up to 10 characters), such as *Deacon* or *Elder*, and click **Add Title**.
+2. To take a title off the list, click the **×** on its chip.
+3. Click **Save**.
+
+:::tip
+The Title box still accepts typing, so staff and members can enter a title that is not listed. Removing a title from the list does not change people who already have it.
+:::
+
 ## Adding a Field
 
 1. Click **Add Field**.
