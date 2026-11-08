@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Selecione um produto para encontrar guias de configuração, documentação de recursos e artigos explicativos."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church é gratuito para todas as igrejas"
+  },
+  "productCta.b1.body": {
+    "message": "Pessoas, grupos, ofertas, check-in, voluntários e o site da sua igreja em um só lugar, sem taxas nem planos pagos."
+  },
+  "productCta.b1.button": {
+    "message": "Comece no B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Procurando o B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Os membros entram no site B1 da própria igreja. Líderes podem configurar o B1 gratuitamente em poucos minutos."
+  },
+  "productCta.b1app.button": {
+    "message": "Acesse o B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Currículo gratuito, pronto para ensinar"
+  },
+  "productCta.lessons.body": {
+    "message": "O Lessons.church tem mais de 1.100 aulas em vídeo prontas para ensinar, gratuitas para qualquer igreja, sem assinatura."
+  },
+  "productCta.lessons.button": {
+    "message": "Explore o Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Leve as lições para a TV de cada sala"
+  },
+  "productCta.freeplay.body": {
+    "message": "O FreePlay reproduz o seu currículo na Fire TV, Android TV e Apple TV, em uma programação ou pelo controle remoto, de graça."
+  },
+  "productCta.freeplay.button": {
+    "message": "Conheça o FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Encontre uma música para o domingo"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "O WorshipCommons tem hinos e canções de louvor gratuitos, com cifras em qualquer tom, letras e slides."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Abra o WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Link de produto"
   }
 }

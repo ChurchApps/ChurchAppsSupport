@@ -426,5 +426,53 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "productCta.b1.title": {
+    "message": "B1.church est gratuit pour toutes les églises"
+  },
+  "productCta.b1.body": {
+    "message": "Personnes, groupes, dons, enregistrement, bénévoles et site web de votre église réunis en un seul endroit, sans frais ni formules payantes."
+  },
+  "productCta.b1.button": {
+    "message": "Commencer sur B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Vous cherchez B1.church ?"
+  },
+  "productCta.b1app.body": {
+    "message": "Les membres se connectent sur le site B1 de leur propre église. Les responsables peuvent configurer B1 gratuitement en quelques minutes."
+  },
+  "productCta.b1app.button": {
+    "message": "Aller sur B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Un programme gratuit, prêt à enseigner"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church propose plus de 1 100 leçons vidéo prêtes à enseigner, gratuites pour toute église, sans abonnement."
+  },
+  "productCta.lessons.button": {
+    "message": "Parcourir Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Diffusez les leçons sur le téléviseur de chaque salle"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay diffuse votre programme sur Fire TV, Android TV et Apple TV, selon un horaire ou à la télécommande, gratuitement."
+  },
+  "productCta.freeplay.button": {
+    "message": "Obtenir FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Trouvez un chant pour dimanche"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons propose des cantiques et chants de louange gratuits, avec grilles d’accords dans toutes les tonalités, paroles et diapositives."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Ouvrir WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Lien vers le produit"
   }
 }

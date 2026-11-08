@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Pumili ng produkto upang makahanap ng mga gabay sa pag-setup, dokumentasyon ng mga feature, at mga artikulong nagpapaliwanag."
+  },
+  "productCta.b1.title": {
+    "message": "Libre ang B1.church para sa bawat simbahan"
+  },
+  "productCta.b1.body": {
+    "message": "Mga tao, grupo, handog, check-in, boluntaryo, at ang website ng iyong simbahan, lahat sa iisang lugar, walang bayad at walang bayad na antas."
+  },
+  "productCta.b1.button": {
+    "message": "Magsimula sa B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Hinahanap ang B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Nag-sa-sign in ang mga miyembro sa sariling B1 site ng kanilang simbahan. Maaaring mag-set up ng B1 nang libre ang mga lider ng simbahan sa loob ng ilang minuto."
+  },
+  "productCta.b1app.button": {
+    "message": "Pumunta sa B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Libreng kurikulum, handang ituro"
+  },
+  "productCta.lessons.body": {
+    "message": "Mayroong higit sa 1,100 handang ituro na video lesson ang Lessons.church, libre para sa anumang simbahan nang walang subscription."
+  },
+  "productCta.lessons.button": {
+    "message": "Tingnan ang Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Ilagay ang mga aralin sa bawat TV ng silid-aralan"
+  },
+  "productCta.freeplay.body": {
+    "message": "Ipinapalabas ng FreePlay ang iyong kurikulum sa Fire TV, Android TV, at Apple TV, ayon sa iskedyul o sa pamamagitan ng remote, nang libre."
+  },
+  "productCta.freeplay.button": {
+    "message": "Kunin ang FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Maghanap ng awit para sa Linggo"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "Mayroong libreng himno at awit ng pagsamba ang WorshipCommons, may chord chart sa anumang key, lyrics, at slides."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Buksan ang WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Link ng produkto"
   }
 }

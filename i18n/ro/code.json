@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Selectați un produs pentru a găsi ghiduri de configurare, documentație a caracteristicilor și articole explicative."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church este gratuit pentru fiecare biserică"
+  },
+  "productCta.b1.body": {
+    "message": "Persoane, grupuri, donații, check-in, voluntari și site-ul bisericii, toate într-un singur loc, fără taxe și fără planuri plătite."
+  },
+  "productCta.b1.button": {
+    "message": "Începe pe B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Cauți B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Membrii se conectează pe site-ul B1 al bisericii lor. Liderii bisericii pot configura B1 gratuit în câteva minute."
+  },
+  "productCta.b1app.button": {
+    "message": "Mergi la B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Curriculum gratuit, gata de predat"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church are peste 1.100 de lecții video gata de predat, gratuite pentru orice biserică, fără abonament."
+  },
+  "productCta.lessons.button": {
+    "message": "Explorează Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Pune lecțiile pe fiecare televizor din clasă"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay redă curriculumul tău pe Fire TV, Android TV și Apple TV, după program sau de la distanță, gratuit."
+  },
+  "productCta.freeplay.button": {
+    "message": "Obține FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Găsește un cântec pentru duminică"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons are imnuri și cântece de închinare gratuite, cu acorduri în orice tonalitate, versuri și slide-uri."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Deschide WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Link produs"
   }
 }

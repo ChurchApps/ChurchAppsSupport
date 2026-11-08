@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Chọn một sản phẩm để tìm hướng dẫn thiết lập, tài liệu tính năng và bài viết hướng dẫn."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church miễn phí cho mọi hội thánh"
+  },
+  "productCta.b1.body": {
+    "message": "Thành viên, nhóm, dâng hiến, điểm danh, tình nguyện viên và trang web hội thánh của bạn đều nằm trong một nơi, không phí và không có gói trả phí."
+  },
+  "productCta.b1.button": {
+    "message": "Bắt đầu tại B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Tìm B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Thành viên đăng nhập trên trang B1 riêng của hội thánh mình. Người lãnh đạo hội thánh có thể thiết lập B1 miễn phí chỉ trong vài phút."
+  },
+  "productCta.b1app.button": {
+    "message": "Đến B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Giáo án miễn phí, sẵn sàng giảng dạy"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church có hơn 1.100 bài học video sẵn sàng giảng dạy, miễn phí cho mọi hội thánh và không cần đăng ký."
+  },
+  "productCta.lessons.button": {
+    "message": "Duyệt Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Đưa bài học lên mọi TV trong lớp học"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay phát giáo án của bạn trên Fire TV, Android TV và Apple TV, theo lịch hoặc bằng điều khiển từ xa, hoàn toàn miễn phí."
+  },
+  "productCta.freeplay.button": {
+    "message": "Nhận FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Tìm bài hát cho Chúa Nhật"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons có thánh ca và bài hát thờ phượng miễn phí, kèm hợp âm ở mọi tông, lời bài hát và slide."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Mở WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Liên kết sản phẩm"
   }
 }

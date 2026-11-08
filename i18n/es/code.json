@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Selecciona un producto para encontrar guías de configuración, documentación de funciones y artículos explicativos."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church es gratis para cualquier iglesia"
+  },
+  "productCta.b1.body": {
+    "message": "Personas, grupos, donaciones, registro de entrada, voluntarios y el sitio web de tu iglesia en un solo lugar, sin tarifas ni planes de pago."
+  },
+  "productCta.b1.button": {
+    "message": "Comienza en B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "¿Buscas B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Los miembros inician sesión en el sitio B1 de su propia iglesia. Los líderes de la iglesia pueden configurar B1 gratis en unos minutos."
+  },
+  "productCta.b1app.button": {
+    "message": "Ir a B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Material gratuito, listo para enseñar"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church tiene más de 1.100 lecciones en video listas para enseñar, gratis para cualquier iglesia y sin suscripción."
+  },
+  "productCta.lessons.button": {
+    "message": "Explorar Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Pon las lecciones en el televisor de cada aula"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay reproduce tu material en Fire TV, Android TV y Apple TV, según un horario o con control remoto, gratis."
+  },
+  "productCta.freeplay.button": {
+    "message": "Obtener FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Encuentra una canción para el domingo"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons tiene himnos y canciones de adoración gratuitos, con cifrados en cualquier tono, letras y diapositivas."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Abrir WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Enlace de producto"
   }
 }

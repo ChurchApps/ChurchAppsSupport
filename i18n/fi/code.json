@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Valitse tuote löytääksesi asennusoppaita, ominaisuuksien dokumentaatiota ja selittäviä artikkeleita."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church on kaikille seurakunnille ilmainen"
+  },
+  "productCta.b1.body": {
+    "message": "Ihmiset, ryhmät, lahjoitukset, sisäänkirjautuminen, vapaaehtoiset ja seurakunnan verkkosivut yhdessä paikassa, ilman maksuja tai maksullisia tasoja."
+  },
+  "productCta.b1.button": {
+    "message": "Aloita B1.churchissa"
+  },
+  "productCta.b1app.title": {
+    "message": "Etsitkö B1.churchia?"
+  },
+  "productCta.b1app.body": {
+    "message": "Jäsenet kirjautuvat sisään oman seurakuntansa B1-sivustolla. Seurakunnan johtajat voivat ottaa B1:n käyttöön ilmaiseksi muutamassa minuutissa."
+  },
+  "productCta.b1app.button": {
+    "message": "Siirry B1.churchiin"
+  },
+  "productCta.lessons.title": {
+    "message": "Ilmainen opetusmateriaali, valmis opetettavaksi"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.churchissa on yli 1 100 valmista opetusvideota, jotka ovat ilmaisia kaikille seurakunnille ilman tilausta."
+  },
+  "productCta.lessons.button": {
+    "message": "Selaa Lessons.churchia"
+  },
+  "productCta.freeplay.title": {
+    "message": "Vie oppitunnit jokaisen luokkahuoneen televisioon"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay toistaa opetusmateriaalisi Fire TV:llä, Android TV:llä ja Apple TV:llä aikataulun mukaan tai kaukosäätimellä, ilmaiseksi."
+  },
+  "productCta.freeplay.button": {
+    "message": "Hanki FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Löydä laulu sunnuntaille"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommonsissa on ilmaisia virsiä ja ylistyslauluja sointukartoilla kaikissa sävellajeissa, sanoitukset ja diat."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Avaa WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Tuotelinkki"
   }
 }

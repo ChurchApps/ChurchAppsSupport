@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Válasszon egy terméket a telepítési útmutatók, funkciódokumentáció és magyarázó cikkek megkereséséhez."
+  },
+  "productCta.b1.title": {
+    "message": "A B1.church ingyenes minden gyülekezet számára"
+  },
+  "productCta.b1.body": {
+    "message": "Tagok, csoportok, adományok, bejelentkezés, önkéntesek és a gyülekezeti weboldal egy helyen, díjak és fizetős csomagok nélkül."
+  },
+  "productCta.b1.button": {
+    "message": "Kezdés a B1.church-en"
+  },
+  "productCta.b1app.title": {
+    "message": "A B1.church-et keresed?"
+  },
+  "productCta.b1app.body": {
+    "message": "A tagok a saját gyülekezetük B1 oldalán jelentkeznek be. A gyülekezeti vezetők néhány perc alatt, ingyen beállíthatják a B1-et."
+  },
+  "productCta.b1app.button": {
+    "message": "Irány a B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Ingyenes tananyag, azonnal tanítható"
+  },
+  "productCta.lessons.body": {
+    "message": "A Lessons.church több mint 1100 azonnal tanítható videós leckét kínál, ingyen, előfizetés nélkül bármely gyülekezet számára."
+  },
+  "productCta.lessons.button": {
+    "message": "Lessons.church böngészése"
+  },
+  "productCta.freeplay.title": {
+    "message": "Tegye a leckéket minden osztályterem TV-jére"
+  },
+  "productCta.freeplay.body": {
+    "message": "A FreePlay ingyen, ütemezés szerint vagy távirányítóval játssza le a tananyagot Fire TV-n, Android TV-n és Apple TV-n."
+  },
+  "productCta.freeplay.button": {
+    "message": "FreePlay letöltése"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Dal keresése vasárnapra"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "A WorshipCommons ingyenes himnuszokat és dicsőítő dalokat kínál akkordtáblázatokkal bármely hangnemben, szöveggel és diákkal."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "WorshipCommons megnyitása"
+  },
+  "productCta.ariaLabel": {
+    "message": "Termékhivatkozás"
   }
 }

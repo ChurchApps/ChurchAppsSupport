@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "製品を選択して、セットアップ ガイド、機能ドキュメント、および説明記事を見つけます。"
+  },
+  "productCta.b1.title": {
+    "message": "B1.church はすべての教会で無料"
+  },
+  "productCta.b1.body": {
+    "message": "人員、グループ、献金、チェックイン、ボランティア、教会のウェブサイトを一か所で管理できます。手数料や有料プランはありません。"
+  },
+  "productCta.b1.button": {
+    "message": "B1.church で始める"
+  },
+  "productCta.b1app.title": {
+    "message": "B1.church をお探しですか？"
+  },
+  "productCta.b1app.body": {
+    "message": "メンバーは、所属する教会の B1 サイトからサインインします。教会のリーダーは、数分で無料の B1 を設定できます。"
+  },
+  "productCta.b1app.button": {
+    "message": "B1.church へ"
+  },
+  "productCta.lessons.title": {
+    "message": "無料のカリキュラム、すぐに教えられます"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church には、すぐに教えられる動画レッスンが 1,100 本以上あります。サブスクリプションは不要で、どの教会でも無料です。"
+  },
+  "productCta.lessons.button": {
+    "message": "Lessons.church を見る"
+  },
+  "productCta.freeplay.title": {
+    "message": "すべての教室のテレビでレッスンを再生"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay は、カリキュラムを Fire TV、Android TV、Apple TV で、スケジュールに沿って、またはリモコンで再生します。無料です。"
+  },
+  "productCta.freeplay.button": {
+    "message": "FreePlay を入手"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "日曜日の賛美を見つける"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons には、任意のキーのコードチャート、歌詞、スライド付きの無料の賛美歌と賛美曲があります。"
+  },
+  "productCta.worshipcommons.button": {
+    "message": "WorshipCommons を開く"
+  },
+  "productCta.ariaLabel": {
+    "message": "製品へのリンク"
   }
 }

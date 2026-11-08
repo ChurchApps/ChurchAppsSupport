@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Selecteer een product om installatiegidsen, functiedocumentatie en uitlegartikelen te vinden."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church is gratis voor elke kerk"
+  },
+  "productCta.b1.body": {
+    "message": "Mensen, groepen, giften, check-in, vrijwilligers en je kerkwebsite op één plek, zonder kosten of betaalde pakketten."
+  },
+  "productCta.b1.button": {
+    "message": "Start bij B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Op zoek naar B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Leden loggen in op de eigen B1-site van hun kerk. Kerkleiders kunnen B1 gratis instellen in een paar minuten."
+  },
+  "productCta.b1app.button": {
+    "message": "Ga naar B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Gratis lesmateriaal, klaar om te gebruiken"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church heeft meer dan 1.100 kant-en-klare videolessen, gratis voor elke kerk zonder abonnement."
+  },
+  "productCta.lessons.button": {
+    "message": "Blader door Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Zet lessen op elk tv-scherm in de klas"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay speelt je lesmateriaal af op Fire TV, Android TV en Apple TV, volgens een schema of op afstand, gratis."
+  },
+  "productCta.freeplay.button": {
+    "message": "Haal FreePlay op"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Vind een lied voor zondag"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons heeft gratis hymnen en aanbiddingsliederen met akkoordschema's in elke toonsoort, teksten en dia's."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Open WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Productlink"
   }
 }

@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Pilih produk untuk menemukan panduan pengaturan, dokumentasi fitur, dan artikel penjelasan."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church gratis untuk setiap gereja"
+  },
+  "productCta.b1.body": {
+    "message": "Jemaat, kelompok, persembahan, check-in, relawan, dan situs web gereja Anda dalam satu tempat, tanpa biaya dan tanpa paket berbayar."
+  },
+  "productCta.b1.button": {
+    "message": "Mulai di B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Mencari B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Jemaat masuk melalui situs B1 milik gereja mereka sendiri. Pemimpin gereja dapat menyiapkan B1 secara gratis dalam beberapa menit."
+  },
+  "productCta.b1app.button": {
+    "message": "Buka B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Kurikulum gratis, siap diajarkan"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church memiliki lebih dari 1.100 pelajaran video siap pakai, gratis untuk setiap gereja tanpa langganan."
+  },
+  "productCta.lessons.button": {
+    "message": "Jelajahi Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Tayangkan pelajaran di setiap TV kelas"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay memutar kurikulum Anda di Fire TV, Android TV, dan Apple TV, sesuai jadwal atau dengan remote, secara gratis."
+  },
+  "productCta.freeplay.button": {
+    "message": "Dapatkan FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Temukan lagu untuk hari Minggu"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons menyediakan himne dan lagu pujian gratis dengan partitur akord dalam nada apa pun, lirik, dan slide."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Buka WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Tautan produk"
   }
 }

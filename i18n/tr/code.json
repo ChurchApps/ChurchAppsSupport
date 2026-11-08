@@ -430,5 +430,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Kurulum kılavuzları, özellik belgeleri ve nasıl yapılır makalelerini bulmak için bir ürün seçin."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church tüm kiliseler için ücretsiz"
+  },
+  "productCta.b1.body": {
+    "message": "Kişiler, gruplar, bağışlar, yoklama, gönüllüler ve kilise web siteniz tek bir yerde; ücret veya ücretli paket yok."
+  },
+  "productCta.b1.button": {
+    "message": "B1.church'te başlayın"
+  },
+  "productCta.b1app.title": {
+    "message": "B1.church'i mi arıyorsunuz?"
+  },
+  "productCta.b1app.body": {
+    "message": "Üyeler, kendi kilisesinin B1 sitesinde oturum açar. Kilise liderleri B1'i birkaç dakika içinde ücretsiz kurabilir."
+  },
+  "productCta.b1app.button": {
+    "message": "B1.church'e git"
+  },
+  "productCta.lessons.title": {
+    "message": "Ücretsiz müfredat, öğretmeye hazır"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church, abonelik gerektirmeden her kilise için ücretsiz, öğretmeye hazır 1.100'den fazla video ders içerir."
+  },
+  "productCta.lessons.button": {
+    "message": "Lessons.church'e göz atın"
+  },
+  "productCta.freeplay.title": {
+    "message": "Dersleri her sınıf televizyonuna getirin"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay, müfredatınızı Fire TV, Android TV ve Apple TV'de zamanlanmış olarak veya uzaktan kumandayla ücretsiz oynatır."
+  },
+  "productCta.freeplay.button": {
+    "message": "FreePlay'i edinin"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Pazar için bir ilahi bulun"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons, her tonda akor çizelgeleri, sözler ve slaytlarla ücretsiz ilahiler ve ibadet şarkıları sunar."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "WorshipCommons'ı açın"
+  },
+  "productCta.ariaLabel": {
+    "message": "Ürün bağlantısı"
   }
 }

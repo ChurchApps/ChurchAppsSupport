@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "选择一个产品，查找设置指南、功能文档和详解文章。"
+  },
+  "productCta.b1.title": {
+    "message": "B1.church 对每个教会都免费"
+  },
+  "productCta.b1.body": {
+    "message": "成员、小组、奉献、签到、志愿者和教会网站，全部集中在一个地方，没有费用，也没有付费版本。"
+  },
+  "productCta.b1.button": {
+    "message": "在 B1.church 开始使用"
+  },
+  "productCta.b1app.title": {
+    "message": "在找 B1.church 吗？"
+  },
+  "productCta.b1app.body": {
+    "message": "成员在自己教会的 B1 网站上登录。教会领袖只需几分钟即可免费设置 B1。"
+  },
+  "productCta.b1app.button": {
+    "message": "前往 B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "免费课程，随时可教"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church 提供超过 1,100 节随时可用的视频课程，对任何教会都免费，无需订阅。"
+  },
+  "productCta.lessons.button": {
+    "message": "浏览 Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "让每间教室的电视都播放课程"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay 可在 Fire TV、Android TV 和 Apple TV 上播放您的课程，可按时间表自动播放，也可用遥控器手动播放，免费使用。"
+  },
+  "productCta.freeplay.button": {
+    "message": "获取 FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "为主日找一首诗歌"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons 提供免费的赞美诗和敬拜诗歌，包含任意调的和弦谱、歌词和幻灯片。"
+  },
+  "productCta.worshipcommons.button": {
+    "message": "打开 WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "产品链接"
   }
 }
