@@ -12,6 +12,10 @@ The self check-in process lets you record attendance for yourself and your house
 
 </div>
 
+## Training Video
+
+<YouTube id="DIdLyuuAFqg" title="Checking In Your Family From Your Phone" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

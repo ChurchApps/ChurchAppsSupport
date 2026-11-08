@@ -12,6 +12,12 @@ The Plans page gives you a clear view of all the service plans you are assigned 
 
 </div>
 
+## Training Videos
+
+<YouTube id="gs_PWHQG5rU" title="Responding to a Serving Request in B1" next="Viewing Your Service Plan in B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
+
+<YouTube id="abM161B-QnA" title="Viewing Your Service Plan in B1" next="Registering for an Event in B1" nextUrl="/docs/b1-church/events/registering" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 

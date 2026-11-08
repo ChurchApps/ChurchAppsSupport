@@ -13,7 +13,7 @@ Your church's public groups page makes it easy to discover groups that interest 
 
 ## Training Video
 
-<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" />
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" next="Responding to a Serving Request in B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
