@@ -12,6 +12,10 @@ When your church enables registration for an event, you can sign up through a si
 
 </div>
 
+## Training Video
+
+<YouTube id="Akm3UXIHIbE" title="Registering for an Event in B1" next="Checking In Your Family From Your Phone" nextUrl="/docs/b1-church/checkin/self-checkin" />
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
