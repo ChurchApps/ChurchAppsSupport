@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Khetsa umkhicito kutfola tincwadzi tekulungisa, imibhalo yemisebenti, kanye netihloko letichazako."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church ihhala kubo bonkhe bebandla"
+  },
+  "productCta.b1.body": {
+    "message": "Bantfu, emaqembu, kuniketela, kubhalisa, emavolontiya, nawebhusayithi yebandla lakho endzaweni yinye, ngaphandle kwemalikhiyo noma emalunga akhokhelwako."
+  },
+  "productCta.b1.button": {
+    "message": "Qala ku-B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Ufuna B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Emalunga angena ngemvume kusayithi lebandla labo le-B1. Baholi bebandla bangasetsa i-B1 mahhala ngemizuzu embalwa."
+  },
+  "productCta.b1app.button": {
+    "message": "Yiya ku-B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Imfundvo lemahhala, ilungele kufundziswa"
+  },
+  "productCta.lessons.body": {
+    "message": "I-Lessons.church inemavidiyo lamabili lamakhulu lalungele kufundziswa, ahhala kunoma yibuphi bebandla ngaphandle kwemalunga."
+  },
+  "productCta.lessons.button": {
+    "message": "Hlola i-Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Faka tifundvo kuyo yonkhe i-TV yelikilasi"
+  },
+  "productCta.freeplay.body": {
+    "message": "I-FreePlay idlala imfundvo yakho ku-Fire TV, Android TV, ne-Apple TV, ngesikhatsi lesihleliwe noma ngesilawuli sekutali, ahhala."
+  },
+  "productCta.freeplay.button": {
+    "message": "Thola i-FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Thola sihloko sekuhlala ngeSonto"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "I-WorshipCommons inemahimno kanye netihlabelelo tekukhuleka ahhala, netichazo teengoma kunoma yikuphi kukhiye, emagama, nemabhulogo."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Vula i-WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Lixhumanisi lemkhiqizo"
   }
 }

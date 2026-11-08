@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "اختر منتجاً للعثور على أدلة الإعداد ووثائق الميزات والمقالات التوضيحية."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church مجاني لكل كنيسة"
+  },
+  "productCta.b1.body": {
+    "message": "الأشخاص والمجموعات والتبرعات وتسجيل الحضور والمتطوعون وموقع كنيستك في مكان واحد، دون رسوم أو باقات مدفوعة."
+  },
+  "productCta.b1.button": {
+    "message": "ابدأ مع B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "هل تبحث عن B1.church؟"
+  },
+  "productCta.b1app.body": {
+    "message": "يسجّل الأعضاء الدخول عبر موقع B1 الخاص بكنيستهم. ويمكن لقادة الكنيسة إعداد B1 مجانًا في دقائق قليلة."
+  },
+  "productCta.b1app.button": {
+    "message": "انتقل إلى B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "منهج مجاني جاهز للتدريس"
+  },
+  "productCta.lessons.body": {
+    "message": "يضم Lessons.church أكثر من 1,100 درس فيديو جاهز للتدريس، مجانًا لأي كنيسة دون اشتراك."
+  },
+  "productCta.lessons.button": {
+    "message": "تصفح Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "اعرض الدروس على شاشة كل فصل"
+  },
+  "productCta.freeplay.body": {
+    "message": "يعرض FreePlay منهجك على Fire TV وAndroid TV وApple TV، وفق جدول زمني أو بالتحكم عن بُعد، مجانًا."
+  },
+  "productCta.freeplay.button": {
+    "message": "احصل على FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "ابحث عن ترنيمة ليوم الأحد"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "يضم WorshipCommons ترانيم وأغاني عبادة مجانية مع نوتات بالأوتار بأي مقام، وكلمات، وشرائح عرض."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "افتح WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "رابط المنتج"
   }
 }

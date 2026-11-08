@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Одабери производ да пронађеш водиче за постављање, документацију функција и обучавајућих чланака."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church је бесплатан за сваку цркву"
+  },
+  "productCta.b1.body": {
+    "message": "Људи, групе, давања, пријава на догађаје, волонтери и ваш црквени сајт на једном месту, без накнада и плаћених пакета."
+  },
+  "productCta.b1.button": {
+    "message": "Почните на B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Тражите B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Чланови се пријављују на B1 сајт своје цркве. Црквени вође могу подесити B1 бесплатно за неколико минута."
+  },
+  "productCta.b1app.button": {
+    "message": "Идите на B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Бесплатан курикулум, спреман за наставу"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church има више од 1.100 видео лекција спремних за наставу, бесплатно за сваку цркву без претплате."
+  },
+  "productCta.lessons.button": {
+    "message": "Прегледајте Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Пустите лекције на сваком ТВ-у у учионици"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay пушта ваш курикулум на Fire TV, Android TV и Apple TV, по распореду или даљинским управљањем, бесплатно."
+  },
+  "productCta.freeplay.button": {
+    "message": "Преузмите FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Нађите песму за недељу"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons има бесплатне химне и песме за богослужење са акордима у било ком тоналитету, текстовима и слајдовима."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Отворите WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Веза до производа"
   }
 }

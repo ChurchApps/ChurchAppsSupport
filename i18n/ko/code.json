@@ -429,5 +429,53 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "productCta.b1.title": {
+    "message": "B1.church는 모든 교회에 무료입니다"
+  },
+  "productCta.b1.body": {
+    "message": "사람, 소그룹, 헌금, 체크인, 봉사자, 교회 웹사이트를 한곳에서 관리하세요. 수수료나 유료 요금제가 없습니다."
+  },
+  "productCta.b1.button": {
+    "message": "B1.church에서 시작하기"
+  },
+  "productCta.b1app.title": {
+    "message": "B1.church를 찾으시나요?"
+  },
+  "productCta.b1app.body": {
+    "message": "구성원은 자기 교회의 B1 사이트에서 로그인합니다. 교회 리더는 몇 분 안에 무료로 B1을 설정할 수 있습니다."
+  },
+  "productCta.b1app.button": {
+    "message": "B1.church로 이동"
+  },
+  "productCta.lessons.title": {
+    "message": "무료 교육 과정, 바로 가르칠 수 있습니다"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church에는 바로 가르칠 수 있는 1,100편이 넘는 영상 수업이 있습니다. 구독 없이 모든 교회가 무료로 이용할 수 있습니다."
+  },
+  "productCta.lessons.button": {
+    "message": "Lessons.church 둘러보기"
+  },
+  "productCta.freeplay.title": {
+    "message": "모든 교실 TV에서 수업을 재생하세요"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay는 Fire TV, Android TV, Apple TV에서 교육 과정을 일정에 맞추거나 리모컨으로 재생합니다. 무료입니다."
+  },
+  "productCta.freeplay.button": {
+    "message": "FreePlay 받기"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "주일에 부를 찬양 찾기"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons에는 어떤 조로도 옮길 수 있는 코드 악보, 가사, 슬라이드가 포함된 무료 찬송가와 경배 찬양이 있습니다."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "WorshipCommons 열기"
+  },
+  "productCta.ariaLabel": {
+    "message": "제품 링크"
   }
 }

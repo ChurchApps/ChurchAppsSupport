@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Wybierz produkt, aby znaleźć przewodniki konfiguracyjne, dokumentację funkcji i artykuły wyjaśniające."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church je zdarma pro každý kostel"
+  },
+  "productCta.b1.body": {
+    "message": "Lidé, skupiny, dary, check-in, dobrovolníci a webové stránky vašeho kostela na jednom místě, bez poplatků a placených tarifů."
+  },
+  "productCta.b1.button": {
+    "message": "Začít na B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Hledáte B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Členové se přihlašují na vlastní stránce B1 svého kostela. Vedoucí kostela může B1 zdarma nastavit během několika minut."
+  },
+  "productCta.b1app.button": {
+    "message": "Přejít na B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Bezplatné osnovy připravené k výuce"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church nabízí více než 1 100 video lekcí připravených k výuce, zdarma pro každý kostel bez předplatného."
+  },
+  "productCta.lessons.button": {
+    "message": "Prohlédnout Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Přehrávejte lekce na každé třídní televizi"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay přehrává vaše osnovy na Fire TV, Android TV a Apple TV, podle plánu nebo dálkovým ovladačem, zdarma."
+  },
+  "productCta.freeplay.button": {
+    "message": "Získat FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Najděte píseň na neděli"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons nabízí zdarma hymny a chvalozpěvy s akordovými listy v libovolné tónině, texty a prezentacemi."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Otevřít WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Odkaz na produkt"
   }
 }

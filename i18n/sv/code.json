@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Välj en produkt för att hitta inställningsguider, funktionsdokumentation och förklarande artiklar."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church är gratis för alla församlingar"
+  },
+  "productCta.b1.body": {
+    "message": "Personer, grupper, gåvor, incheckning, volontärer och din församlings webbplats på ett ställe, utan avgifter eller betalnivåer."
+  },
+  "productCta.b1.button": {
+    "message": "Kom igång på B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Letar du efter B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Medlemmar loggar in på sin församlings egna B1-webbplats. Ledare kan konfigurera B1 gratis på några minuter."
+  },
+  "productCta.b1app.button": {
+    "message": "Gå till B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Gratis läroplan, redo att undervisa"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church har fler än 1 100 färdiga videolektioner att undervisa med, gratis för alla församlingar utan prenumeration."
+  },
+  "productCta.lessons.button": {
+    "message": "Bläddra i Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Visa lektioner på varje klassrums-TV"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay spelar upp din läroplan på Fire TV, Android TV och Apple TV, enligt schema eller med fjärrkontroll, gratis."
+  },
+  "productCta.freeplay.button": {
+    "message": "Hämta FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Hitta en sång till söndagen"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons har gratis psalmer och lovsånger med ackordsbladen i valfri tonart, texter och bildspel."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Öppna WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Produktlänk"
   }
 }

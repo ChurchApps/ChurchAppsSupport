@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Выберите продукт, чтобы найти руководства по настройке, документацию по функциям и объяснительные статьи."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church бесплатен для каждой церкви"
+  },
+  "productCta.b1.body": {
+    "message": "Люди, группы, пожертвования, регистрация на встречи, волонтёры и сайт вашей церкви в одном месте, без комиссий и платных тарифов."
+  },
+  "productCta.b1.button": {
+    "message": "Начать на B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Ищете B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Участники входят на сайт B1 своей церкви. Руководители церкви могут настроить B1 бесплатно за несколько минут."
+  },
+  "productCta.b1app.button": {
+    "message": "Перейти на B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Бесплатные материалы, готовые к преподаванию"
+  },
+  "productCta.lessons.body": {
+    "message": "На Lessons.church более 1100 готовых видеоуроков. Они бесплатны для любой церкви, подписка не нужна."
+  },
+  "productCta.lessons.button": {
+    "message": "Смотреть Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Уроки на телевизоре в каждом классе"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay воспроизводит ваши материалы на Fire TV, Android TV и Apple TV по расписанию или с пульта, бесплатно."
+  },
+  "productCta.freeplay.button": {
+    "message": "Получить FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Найдите песню для воскресного служения"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "На WorshipCommons бесплатные гимны и песни поклонения с аккордами в любой тональности, текстами и слайдами."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Открыть WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Ссылка на продукт"
   }
 }

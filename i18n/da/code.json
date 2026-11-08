@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Vælg et produkt for at finde opsætningsvejledninger, funktionsdokumentation og forklarende artikler."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church er gratis for alle kirker"
+  },
+  "productCta.b1.body": {
+    "message": "Personer, grupper, donationer, check-in, frivillige og din kirkes hjemmeside samlet ét sted, uden gebyrer eller betalte niveauer."
+  },
+  "productCta.b1.button": {
+    "message": "Kom i gang på B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Leder du efter B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Medlemmer logger ind på deres kirkes egen B1-side. Kirkeledere kan opsætte B1 gratis på få minutter."
+  },
+  "productCta.b1app.button": {
+    "message": "Gå til B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Gratis undervisningsmateriale, klar til brug"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church har mere end 1.100 færdige videolektioner, gratis for enhver kirke uden abonnement."
+  },
+  "productCta.lessons.button": {
+    "message": "Se Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Vis lektioner på hvert klasseværelses tv"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay afspiller dit undervisningsmateriale på Fire TV, Android TV og Apple TV, efter en plan eller med fjernbetjening, gratis."
+  },
+  "productCta.freeplay.button": {
+    "message": "Hent FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Find en sang til søndag"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons har gratis salmer og lovsange med akkordark i enhver tonart, tekster og slides."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Åbn WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Produktlink"
   }
 }

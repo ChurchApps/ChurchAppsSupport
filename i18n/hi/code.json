@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "सेटअप गाइड, फीचर दस्तावेज़ और व्याख्यात्मक लेख खोजने के लिए एक उत्पाद चुनें।"
+  },
+  "productCta.b1.title": {
+    "message": "B1.church सभी चर्चों के लिए निःशुल्क है"
+  },
+  "productCta.b1.body": {
+    "message": "लोग, समूह, दान, चेक-इन, स्वयंसेवक और आपकी चर्च वेबसाइट, सब एक ही जगह। कोई शुल्क नहीं, कोई सशुल्क श्रेणी नहीं।"
+  },
+  "productCta.b1.button": {
+    "message": "B1.church पर शुरू करें"
+  },
+  "productCta.b1app.title": {
+    "message": "B1.church की तलाश है?"
+  },
+  "productCta.b1app.body": {
+    "message": "सदस्य अपने चर्च की अपनी B1 साइट पर साइन इन करते हैं। चर्च के नेता कुछ ही मिनटों में B1 को निःशुल्क सेट कर सकते हैं।"
+  },
+  "productCta.b1app.button": {
+    "message": "B1.church पर जाएँ"
+  },
+  "productCta.lessons.title": {
+    "message": "निःशुल्क पाठ्यक्रम, पढ़ाने के लिए तैयार"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church पर 1,100 से अधिक पढ़ाने के लिए तैयार वीडियो पाठ हैं, जो किसी भी चर्च के लिए बिना सदस्यता के निःशुल्क हैं।"
+  },
+  "productCta.lessons.button": {
+    "message": "Lessons.church देखें"
+  },
+  "productCta.freeplay.title": {
+    "message": "हर कक्षा के टीवी पर पाठ चलाएँ"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay आपके पाठ्यक्रम को Fire TV, Android TV और Apple TV पर शेड्यूल के अनुसार या रिमोट से निःशुल्क चलाता है।"
+  },
+  "productCta.freeplay.button": {
+    "message": "FreePlay प्राप्त करें"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "रविवार के लिए गीत खोजें"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons पर किसी भी कुंजी में कॉर्ड चार्ट, बोल और स्लाइड सहित निःशुल्क भजन और आराधना गीत हैं।"
+  },
+  "productCta.worshipcommons.button": {
+    "message": "WorshipCommons खोलें"
+  },
+  "productCta.ariaLabel": {
+    "message": "उत्पाद लिंक"
   }
 }

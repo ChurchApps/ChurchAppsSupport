@@ -429,5 +429,53 @@
   },
   "homepage.products.subtitle": {
     "message": "Pasirinkite produktą norėdami rasti sąrankos vadovus, savybių dokumentaciją ir aiškinamuosius straipsnius."
+  },
+  "productCta.b1.title": {
+    "message": "B1.church yra nemokama kiekvienai bažnyčiai"
+  },
+  "productCta.b1.body": {
+    "message": "Žmonės, grupės, aukos, registracija, savanoriai ir jūsų bažnyčios svetainė vienoje vietoje, be mokesčių ir mokamų planų."
+  },
+  "productCta.b1.button": {
+    "message": "Pradėti su B1.church"
+  },
+  "productCta.b1app.title": {
+    "message": "Ieškote B1.church?"
+  },
+  "productCta.b1app.body": {
+    "message": "Nariai prisijungia prie savo bažnyčios B1 svetainės. Bažnyčios vadovai gali nemokamai nusistatyti B1 per kelias minutes."
+  },
+  "productCta.b1app.button": {
+    "message": "Eiti į B1.church"
+  },
+  "productCta.lessons.title": {
+    "message": "Nemokama mokymo programa, paruošta mokyti"
+  },
+  "productCta.lessons.body": {
+    "message": "Lessons.church turi daugiau nei 1 100 paruoštų mokyti video pamokų, nemokamų bet kuriai bažnyčiai be prenumeratos."
+  },
+  "productCta.lessons.button": {
+    "message": "Naršyti Lessons.church"
+  },
+  "productCta.freeplay.title": {
+    "message": "Rodykite pamokas kiekvieno klasės televizoriuje"
+  },
+  "productCta.freeplay.body": {
+    "message": "FreePlay nemokamai rodo jūsų mokymo programą Fire TV, Android TV ir Apple TV, pagal tvarkaraštį arba nuotoliniu valdymu."
+  },
+  "productCta.freeplay.button": {
+    "message": "Gauti FreePlay"
+  },
+  "productCta.worshipcommons.title": {
+    "message": "Raskite giesmę sekmadieniui"
+  },
+  "productCta.worshipcommons.body": {
+    "message": "WorshipCommons turi nemokamų giesmių ir garbinimo dainų su akordų schemomis bet kuria tonacija, tekstais ir skaidrėmis."
+  },
+  "productCta.worshipcommons.button": {
+    "message": "Atidaryti WorshipCommons"
+  },
+  "productCta.ariaLabel": {
+    "message": "Produkto nuoroda"
   }
 }
