@@ -104,6 +104,8 @@ The **Home screen tiles** setting on the same Member portal page (`/mobile/b1-mo
 - **Scrolling row** -- One row of tiles that members swipe sideways.
 - **Scrolling (automatic)** -- The same sideways row, but it also moves on its own, advancing one tile about every four seconds and carrying on forward to the first tile again after the last one. It pauses while a member touches, hovers over, or tabs into the row and picks up again a few seconds later. On devices set to reduce motion, the row stays still and works like **Scrolling row**.
 - **List** -- A list with a small photo thumbnail next to each tab's name.
+- **Grid and list** -- The first three photo tabs as a grid, with the first tile spanning the full width, and the rest listed beneath with a small thumbnail beside each name. When there are more than three, the section heading shows an **All** link that opens the app's **More** page, which lists every tab.
+- **Scrolling (automatic) and list** -- The first three photo tabs in the self-advancing row described above, and the rest listed beneath, with the same **All** link.
 
 In both scrolling layouts, when there are more tiles than fit across the screen, a row of dots appears under the tiles, one per tile, with the current tile's dot filled in. Members can tap a dot to jump to that tile.
 
