@@ -1,79 +1,104 @@
 ---
-title: "Kuhlola Nekulayisha Kucuketfwe"
-description: "Hamba ethafeni lemtfombo wemhlinzeki lexhunyiwe nge-TV remote ku-FreePlay, bese uyalanda noma usakaze tifundziso netividiyo kutsi ziciniswe."
+title: "Kuphequlula Nekulanda Lokuqukethwe"
+description: "Hamba ngalo layibulali yemhlinzeki losemtselwe ngemuti wakho we-TV ku-FreePlay, bese ulanda noma usakaze tifundvo netividiyo kuze kudlalwe."
 ---
 
-# Kuhlola Nekulayisha Kucuketfwe
+# Kuphequlula Nekulanda Lokuqukethwe
 
 <div class="article-intro">
 
-Nawusuxhumene nemniketi wekucuketfwe, ungahlola inchubomlomo yakhe, ulayishe emafayela, futsi uwadlale ku-TV yakho. Sisebenti sekuhlola kucuketfwe siniketa luhlu lolubonakalako lwemafolda nemafayela lohamba kuwo nge-remote yakho ye-TV.
+Uma usuhlanganyele nemhlinzeki wemkhiqizo, ungakwazi kuphequlula layibulali yakhe, ulande timfayela, bese uzidlalela ku-TV yakho. Sisebenzi sekuphequlula sinika umbono wemakhadi emakhwama nemafayela, lokuhanjwa ngawo ngemuti wakho we-TV.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Xhumana nekungenani umniketi munye wekucuketfwe -- buka [Kuxhumana Nebaniketi](./connecting-providers.md)
-- Yiba ne-remote yakho ye-TV lulungele kuhamba
+- Xhumana nalomunye umhlinzeki wemkhiqizo -- bona [Kuxhumana Nebahlinzeki](./connecting-providers.md)
+- Ube nemuti wakho we-TV ulungele kuhamba
 
 </div>
 
-## Sisebenti Sekuhlola Kucuketfwe
+## Sisebenzi Sekuphequlula Lokuqukethwe
 
-Sisebenti sekuhlola kucuketfwe sibonisa tintfo eluhlwini lwemakhadi angu-3 wemakholomu. Likhadi ngalinye libonisa sitfombe lesincane nesihloko. Kunetinhlobo letimbili tetintfo:
+Sisebenzi sekuphequlula sibonisa tintfo ngelucwecwe lemigca lemi-3 yemakhadi. Lilinye ngalinye lemakhadi libonisa sithombe lesincane nesihloko. Kunetinhlobo letimbili tetintfo:
 
-- **Emafolda** - Amelwe sitfombe lesincane nome luphawu lwefolda. Khetsa ifolda kuze ubone lokungekhatsi kwayo.
-- **Emafayela** - Tintfo temidiya letodwa (emavidiyo nome titfombe). Emafayela emavidiyo abonisa siphawu sekudlala sembelwe etulu kwesitfombe sawo lesincane.
+- **Tikhwama** - Timelwe sithombe lesincane noma sitfwala lesikhwama. Khetsa ikhwama kuze ubone lokusikhatsaleni kwalo.
+- **Timfayela** - Tintfo letimbonakalo temidiya (tividiyo noma tetitfombe). Tividiyo tibonisa sitfwalo sekudlala phezu kwesithombe lesincane.
 
-Sihloko esitulu sesikrini sibonisa ligama lefolda yamanje, nome ligama lemniketi uma usebangeni lelicishe.
+Lunyiliso lelusephezulu lwesikrini libonisa libito lelikhwama lamanje, noma libito lemhlinzeki uma usemazingeni aphezulu.
 
-## Kuhamba Emafolda
+## Kuhamba Emakhwameni
 
-1. Sebentisa i-pad yenkambo ku-remote yakho kuze ukhombise ifolda
-2. Cindzetela **Select** kuze uyivule
-3. Sisebenti sekuhlola silayisha lokungekhatsi kwefolda, lokungaba emanye emafolda nome emafayela lakwatiwa kudlalwa
-4. Cindzetela **Back** ku-remote yakho kuze wenyuke ibanga linye
+1. Sebentisa inkinobho yekuhamba kumuti wakho ukukhanyisa ikhwama
+2. Cindzetela **Khetsa** ukuze ulivule
+3. Sisebenzi siyalayisha lokuqukethwe lelikhwama, lokungaba timakhwama noma timfayela letingadlalwa
+4. Cindzetela **Emuva** kumuti wakho ukuze ubuyele emazingeni lapho ngaphambili
 
-Ungangena ngekushona njengobe sakhiwo sekucuketfwe kwemniketi sikuvumela. Sisebenti sekuhlola sigcina umlandvo wendlela yakho yemafolda kuze ukwati kubuyela emuva ebangeni ngalinye.
+Ungahamba ujule kangangoba sakhiwo selokuqukethwe somhlinzeki sivumela. Sisebenzi silandzela indlela yemakhwama wakho, kuze ukwazi kubuyela emazingeni ngalinye.
 
-## Kulayisha Nekudlala Kucuketfwe
+## Kuphequlula Lessons.church
 
-Nawukhetsa ifolda leyicuketse emafayela lakwatiwa kudlalwa (nome ukhetsa lifayela lelilodwa), FreePlay iyahamba isikrinini sekulayisha:
+Layibulali ye-[Lessons.church](../../lessons-church/index.md) ihlelwe njengalokusewebhusayitini yayo. Ezingeni lalokusemkhatsini uzakubona timakhwama letimbili:
 
-1. Sihloko sekucuketfwe sibonakala esikrinini nesitfombe sesembozo lesisuka efoldeni lekhetsiwe
-2. Umudla wenchubo ubonisa **Downloading item X of Y** njengobe emafayela agcinwa kulidivayisi lakho
-3. Nasekuphelile kulayisha, inkhinobho ye-**Start** iyabonakala nesiphawu sekudlala
-4. Cindzetela **Select** kuze kucale kudlalwa
+- **Lessons** - Ngena ngo**luhlelo**, bese **sifundvo**, bese **sifundvo sekufundza**. Sifundvo ngasinye sibe sibhala **tindzawo** tasso, lokuyimibhalo yalesifundvo yeliqembu lelithile lemnyaka noma lesimo lesithile, njenge-Preschool noma i-Elementary. Khetsa indzawo kuze uvule sikrini sekulanda lenguquko yalesifundvo
+- **Add-Ons** - Tividiyo netinsita letengeziwe, ahlelwe ngetigaba
+
+Cindzetela **Emuva** kunoma yiliphi lizinga ukuze ubuyele emgogodleni wangaphambili.
+
+## Kuphequlula Go Curriculum
+
+Nakuba [ungena ngeakhawunti yakho ye-gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum ivula emaqembu eminyaka yayo, **Elementary** ne-**Preschool**. Ngena ngeliqembu leminyaka, bese ngeliqoqo, bese ngesifundvo, bese khetsa sifundvo kuze uvule sikrini sekulanda salo.
+
+Lokubonakalako kuncika ekutfolakaleni kwelilunga lakho le-Go:
+
+- Ta-qembu leminyaka lekutfolakala kuwo kuphela ayabhalwa. Uma ilogini yakho ingenalo lilunga le-Go, layibulali iyatsi
+- Letinye tividiyo titfolakala kumanga athile elilunga kuphela. Tividiyo lelilunga lakho lingakufaki ishiywa ngaphandle kwesifundvo
+
+## Kulanda Nekudlala Lokuqukethwe
+
+Uma ukhetsa ikhwama lelinetimfayela letingadlalwa (noma ukhetsa imfayela lilinye), FreePlay ibonisa libito lalokuqukethwe nesithombe lesimbonelo, nemikhetfo lemibili:
+
+- **Landa** - Gcina yonkhe imifayela ku-TV kucala, ukuze kudlala kungabi ncike ku-Wi-Fi. Umtfwalo wenkhulumo ugcwala njengoba imfayela ngayinye igcinwa. Lapho sekuphelile, inkinobho **Qala** iyavela ngesitfwalo sekudlala. Cindzetela **Khetsa** ukuze uqale kudlala
+- **Sakaza** - Qala kudlala masinyane ngaphandle kwekugcina timfayela
 
 :::tip
-Kucuketfwe lokulayishiwe kugcinwa ku-TV yakho. Uma udlala futsi kona kucuketfwe ngesikhatsi lesitako, kulayisha ngalokushesha ngaphandle kwekulayisha kabusha.
+Landa tifundvo ngaphambi kwekuseSonto ekuseni, nakuba sakhiwo sakho sinenethiwekhi lenamandla. Lokuqukethwe lokulandziwe kuyadlala nangaphandle kwenethiwekhi, futsi nangabe ukudlala kamuva kuyalayisha masinyane ngaphandle kokulanda futsi.
 :::
 
-## Kudlala Kucuketfwe Kwemniketi
+## Kuphatsa Tilandziwe
 
-Kudlalwa kusebenta ngendlela lefananako nekudlalwa kwetifundzo. Sebentisa lokulawulwa lokulandzelako:
+Vula **Tilungiselelo** ngaphansi kwesidzibhi, bese khetsa **Tilandziwe** ukuze ubone konkhe lokugcinwe kule TV:
 
-- **Umtimba longakwesekudla** - Intfo lelandzelako
-- **Umtimba longakwesencele** - Intfo lengaphambili
-- **Select / Play-Pause** - Misa nome cala kabusha ividiyo
-- **Umtimba longetulu** - Vula sikhetsi semilayeto kuze uyeke enteweni letsite
-- **Back** - Phuma uye esisebentini sekuhlola kucuketfwe
+- Khetsa kulandziwe kuze ukudlale
+- Khanyisa sitfwalo sekususa lapho sisecabini khona bese ucindzetela kuso ukuze ususe lelandziwe futsi ukhulule sitoreji
 
-Nawuphuma emdlalini, ubuyela esisebentini sekuhlola kucuketfwe ebangeni leliyimphandze lemniketi wamanje.
+Uma sikrini sitsi **Akukho tilandziwe njengamanje**, akukho lokugcinwe kule TV.
+
+## Kudlala Lokuqukethwe Komhlinzeki
+
+Sebentisa lawa malawulo ngesikhatsi sekudlala:
+
+- **Umcibisholo wangakwesekudla** - Lokulandzelako
+- **Umcibisholo wangakwesekhohlo** - Lokwangaphambili
+- **Khetsa / Dlala-Misa** - Misa noma uqalise kabusha lividiyo
+- **Umcibisholo wangaphezulu** - Vula sikhetsi semilayezo ukuze ufike kutintfo letitsite
+- **Emuva** - Phuma uye ku-sisebenzi sekuphequlula lokuqukethwe
+
+Uma uphuma kumdlali, ubuyela kusisebenzi sekuphequlula lokuqukethwe ezingeni lalokusemkhatsini lalomhlinzeki lamanje.
 
 :::info
-Kulwati loluphelele lwakho konkhe lokulawulwa kwemdlali, buka [Kudlalwa Kwetifundzo](./playing-content.md).
+Ngerefurensi ephelele yawo wonkhe malawulo emdlali, bona [Kudlala Lokuqukethwe](./playing-content.md).
 :::
 
-## Kushintjela Emkatsini Webaniketi
+## Kushintsha Phakatsi Kebahlinzeki
 
-Baniketi labaxhunyiwe babonakala njengetintfo encenyeni yaseceleni ngakwesencele. Kuze ushintjele kulomunye umniketi:
+Bahlinzeki labaxhunyiwe bavela njengetintfo ngaphansi kwesihloko **Phequlula** esidzibhini sesekhohlo. Ukuze ushintse kumhlinzeki lowehlukile:
 
-1. Cindzetela umtimba **longakwesencele** ku-remote yakho kuze wandzise incenye yaseceleni
-2. Khetsa umniketi lofuna kumhlola
-3. Sisebenti sekuhlola siyavuseleleka nge-inchubomlomo yalowo mniketi
+1. Cindzetela inkinobho **Ngakwesekhohlo** kumuti wakho ukuze uvule sidzibha
+2. Khetsa lomhlinzeki lofuna kuphequlula
+3. Sisebenzi sekuphequlula sivuselela layibulali yalomhlinzeki
 
 :::warning
-Uma ifolda ibonisa "No content available," umniketi akanato lutfo kuleyo ndzawo. Zama kuhamba kulenye ifolda nome ubuyele ngesikhatsi lesitako.
+Uma ikhwama likhombisa "Akukho lokuqukethwe lokutfolakalako," lomhlinzeki akanatintfo kulelizinga. Zama kuhamba kukhwama lelehlukile noma uphindze ubuyele ngemuva kwesikhatsi.
 :::

@@ -1,13 +1,13 @@
 ---
-title: "Útmutató: Éves adományozási jelentések készítése"
-description: "Az év adományrekordjainak lezárása a B1 Admin-ban, alapok adóbeállításainak ellenőrzése, és adólevonható adománykimutatások készítése minden adakozónak."
+title: "Útmutató: Éves adománykimutatások készítése"
+description: "A B1 Adminban zárja le az év adományrekordjait, ellenőrizze az alapok adózási beállításait, és készítsen adólevonható adománykimutatásokat minden adakozónak."
 ---
 
-# Éves adományozási jelentések készítése
+# Éves adománykimutatások készítése
 
 <div class="article-intro">
 
-Ez a útmutató végigvezeti az éves folyamaton: az adományi nyilvántartások lezárása, az alapok adóbeállításainak ellenőrzése, valamint minden adományozónak szóló, adólevonható adományigazolás elkészítése. Ezt általában januárban végzik az előző naptári évre vonatkozóan.
+Ez az útmutató végigvezeti az év végi folyamaton: lezárja az adományrekordokat, ellenőrzi az alapok beállításait, és adólevonható adománykimutatásokat készít minden adakozónak. Ezt általában januárban végzik el az előző naptári évre vonatkozóan.
 
 </div>
 
@@ -22,73 +22,73 @@ Ez a útmutató végigvezeti az éves folyamaton: az adományi nyilvántartások
 
 ## 1. lépés: Az utolsó Stripe-tranzakciók importálása
 
-Győződjön meg arról, hogy az év végi összes online adomány szerepel a rendszerben.
+Győződjön meg róla, hogy az év végi online adományok mind szerepelnek a rendszerben.
 
-Kövesse a [Stripe-import](../donations/stripe-import.md) útmutatót, hogy:
+Kövesse a [Stripe-import](../donations/stripe-import.md) útmutatót, amely lépései:
 
-1. Megnyissa az Adományok > Stripe-import menüpontot
-2. Kiválasszon egy dátumtartományt, amely az év végét lefedi (pl. december 1. – december 31.)
-3. Először kattintson az Előnézet gombra az áttekintéshez, majd a Hiányzók importálása gombra a véglegesítéshez
+1. Lépjen a Adományok > Stripe-import menüpontra
+2. Válasszon egy év végét lefedő dátumtartományt (pl. december 1. – december 31.)
+3. Kattintson először az Előnézet gombra az áttekintéshez, majd a Hiányzók importálása gombra a véglegesítéshez
 
 :::warning
-Ezt az importálást a kimutatások készítése előtt futtassa. Az az összes tranzakció, amelyet nem importált, nem fog megjelenni az adományozói igazolásokon.
+Futtassa ezt az importálást, mielőtt kimutatásokat készít. Ami nincs importálva, nem fog megjelenni az adakozói kimutatásokon.
 :::
 
-## 2. lépés: Az adománykimutatások áttekintése
+## 2. lépés: Az adományjelentések áttekintése
 
-Ellenőrizze, hogy a nyilvántartások pontosak-e, mielőtt elkészítené az igazolásokat.
+Mielőtt kimutatásokat készít, ellenőrizze, hogy a rekordok pontosak-e.
 
-Kövesse az [Adománykimutatások](../donations/donation-reports.md) útmutatót, hogy:
+Kövesse az [Adományjelentések](../donations/donation-reports.md) útmutatót, amely lépései:
 
-1. Ellenőrizze az éves összesítő oldalt
-2. Áttekintse az alapok szerinti összegeket, és hasonlítsa össze őket a banki kivonatokkal, hogy felfedezze az esetleges eltéréseket
-3. Szükség esetén kattintson egyes tételekre, hogy ellenőrizze az adományozói részleteket
+1. Ellenőrizze az egész évre vonatkozó adományösszesítő oldalt
+2. Tekintse át az alapok szerinti összegeket, és hasonlítsa össze őket a banki kivonatokkal, hogy kiszűrje az eltéréseket
+3. Szükség esetén kattintson az egyes tételekre, hogy ellenőrizze az adakozók szintű részleteket
 
-## 3. lépés: Az alapok adóstátuszának ellenőrzése
+## 3. lépés: Az alapok adózási státuszának ellenőrzése
 
-Győződjön meg arról, hogy minden alap adólevonhatósági beállítása helyes, hogy az igazolások pontosak legyenek.
+Győződjön meg róla, hogy minden alap adólevonhatósági beállítása helyes, hogy a kimutatások pontosak legyenek.
 
-Kövesse a [Alapok](../donations/funds.md) útmutatót, hogy:
+Kövesse az [Alapok](../donations/funds.md) útmutatót, amely lépése:
 
-1. Megnyisson minden alapot, és ellenőrizze, hogy az adólevonhatósági beállítás helyes-e
+1. Nyissa meg az egyes alapokat, és erősítse meg, hogy az adólevonhatósági beállítás helyes
 
 :::info
-Csak az adólevonhatónak megjelölt alapokba érkezett adományok jelennek meg az adományozói igazolásokon. Ha egy alapnak adólevonhatónak kellene lennie, de nincs annak megjelölve, frissítse, mielőtt elkészíti az igazolásokat.
+Csak az adólevonhatónak jelölt alapokba érkezett adományok jelennek meg az adakozói kimutatásokon. Ha egy alapnak adólevonhatónak kellene lennie, de nincs annak megjelölve, frissítse, mielőtt kimutatásokat készít.
 :::
 
-## 4. lépés: Adományozói igazolások készítése
+## 4. lépés: Adakozói kimutatások készítése
 
-Készítse el a hivatalos adományozói igazolásokat.
+Készítse el a hivatalos adakozói kimutatásokat.
 
-Kövesse a [Adományozói igazolások](../donations/giving-statements.md) útmutatót, hogy:
+Kövesse a [Adakozói kimutatások](../donations/giving-statements.md) útmutatót, amely lépései:
 
-1. Lépjen a **Adományok > Adományozói igazolások** menüpontra
+1. Lépjen az **Adományok > Adakozói kimutatások** menüpontra
 2. Válassza ki az évet a legördülő menüből, és tekintse át az összesítő statisztikákat
 3. Válassza ki a letöltési módot:
-   - **ZIP letöltése** — egyedi CSV-fájlok, adományozónként egy
-   - **Összes nyomtatása** — nyomtatható nézet, minden igazolás új oldalon, a tetején az Ön egyházi logójával (ha feltöltött egyet)
+   - **ZIP letöltése** — egyedi CSV-fájlok, adakozónként egy
+   - **Összes nyomtatása** — nyomtatható nézet, minden kimutatás új oldalon, a tetején az egyházi logójával (ha feltöltött egyet)
 
 :::tip
-Készítse el az igazolásokat januárban, amíg az adatok frissek. Így lesz ideje megoldani az esetleges problémákat, mielőtt postázza őket.
+Készítse el a kimutatásokat januárban, amíg az adatok frissek. Így lesz ideje javítani az esetleges hibákat, mielőtt postázza őket.
 :::
 
-## 5. lépés: Eljuttatás az adományozókhoz
+## 5. lépés: Kiküldés az adakozóknak
 
-Juttassa el az igazolásokat az adományozókhoz.
+Juttassa el a kimutatásokat az adakozókhoz.
 
-1. Nyomtassa ki és postázza az igazolásokat, vagy küldje el az egyes CSV-fájlokat e-mailben az adományozóknak
-2. A tagok a [B1.church](../../b1-church/giving/donation-history.md) oldalon és a [B1 Mobile alkalmazásban](../../b1-church/giving/donation-history.md) is megtekinthetik saját adománytörténetüket, és nyomtathatnak igazolásokat
+1. Nyomtassa ki és postázza a kimutatásokat, vagy küldje el az egyes CSV-fájlokat e-mailben az adakozóknak
+2. A tagok a [B1.church-on vagy a B1 App-ban](../../b1-church/giving/donation-history.md) is megtekinthetik saját adománytörténetüket, és nyomtathatnak kimutatásokat
 
 ## Készen van!
 
-Az éves adományozási jelentései elkészültek. Az adományozók megkapták adólevonható igazolásaikat, az Ön pénzügyi nyilvántartásai pedig lezárultak az évre.
+Az éves adománykimutatások elkészültek. Az adakozók megkapták adólevonható kimutatásaikat, a pénzügyi nyilvántartások pedig lezárultak az évre.
 
 ## Kapcsolódó cikkek
 
 - [Stripe-import](../donations/stripe-import.md) — online tranzakciók importálása
-- [Adománykimutatások](../donations/donation-reports.md) — adományozási trendek és összegek megtekintése
+- [Adományjelentések](../donations/donation-reports.md) — adományi trendek és összegek megtekintése
 - [Alapok](../donations/funds.md) — alapok és adólevonhatósági beállítások kezelése
-- [Adományozói igazolások](../donations/giving-statements.md) — éves igazolások készítése
-- [Adományok rögzítése](../donations/recording-donations.md) — készpénzes és csekkes adományok kézi rögzítése
-- [Adománytörténet (web)](../../b1-church/giving/donation-history.md) — a tagok önkiszolgáló nézete
+- [Adakozói kimutatások](../donations/giving-statements.md) — éves kimutatások készítése
+- [Adományok rögzítése](../donations/recording-donations.md) — készpénzes és csekkes adományok kézi bevitele
+- [Adománytörténet (webes)](../../b1-church/giving/donation-history.md) — tagok önkiszolgáló nézete
 - [Online adakozás beállítása útmutató](./online-giving.md) — a Stripe és az adakozás kezdeti beállítása

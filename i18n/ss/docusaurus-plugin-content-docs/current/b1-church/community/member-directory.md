@@ -1,61 +1,50 @@
 ---
-title: "Ulwati Lwamalungu ku-Portal Yelilungu le-B1.church"
-sidebar_label: "Luhlu Lwemalungu"
-description: "Sesha futsi ubone emalungu esonto ku-ulwati lwe-B1.church, bona emaphrofayili nemalungu emndeni, futsi ubone kutsi ngubani longakwazi kufinyelela ku-ulwati."
+title: "Ntsatfu Yemalunga Wetindlu Kwemalunga Wekwemtsi weB1.church"
+sidebar_label: "Ntsatfu Yemalunga"
+description: "Funa futsi utfole emalunga ekhishi Ntsatfu yemalunga ye-B1.church, bona tilwatiso tatsi netindlu talo, futsi ubone kutsi ngubani lotsatsa kufinyelela kuNtsatfu."
 ---
 
-# Luhlu Lwemalungu
+# Ntsatfu Yemalunga
 
 <div class="article-intro">
 
-Luhlu lwemalungu lukuvumela kutsi ucwaninge futsi ufune bantfu ebandleni lakho. Nome ufuna kutfola lilunga lelicembu lakini, nome ufuna kutfola umuntfu lomusha, luhlu lwenta kube lula kuxhumana nemndeni wakho webandla.
+Ntsatfu yemalunga ikuvumela kutsi ubhale futsi ufune bantfu lakhona ekhishi lakho. Noma udzinga kutfola lilunga leliqembu lakho noma ufuna mutsu losha, Ntsatfu yenta kube lula kutsi uhlanganise nemndeni wakho wekhishi.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Uce</h4>
+<h4>Ngaphambi Kwekutsi Uqale</h4>
 
-- Kufanele ube [ungenile](../getting-started/logging-in.md) ku-akhawunti yakho ye-B1.church.
+- Kufanele ube [ungene ngemvume](../getting-started/logging-in.md) kuakhawunti yakho ye-B1.church.
+- Kutsi ngubani lotsatsa kuvula Ntsatfu kulandzela sicondvo sekhishi lakho se **Kukhombisa KuNtsatfu**: **Bolawuli Kuphela**, **Emalunga Nalabephakeme** (lesisekelwe), **Bahambeli Labavamile Nalabephakeme**, noma **Bavakashi Nalabephakeme**. Bantfu labangaphansi kalelinga babona umlayetsi wekuthi "Emalunga Kuphela". Basebenti abanemvume ye-People > View bangavula Ntsatfu nanini, futsi nasicondvo se**Bolawuli Kuphela**, ngabo bodvwa labangakwenta loko -- nabantfu banesimo sekuba yisisebenti abangakwenti. Bantfu banesimo sekuba yisivakashi noma abasebenti abasasebenti abakwenti lokuvula. Bona [Ntsatfu Yemalunga Nekulawula Kwemiyalezo](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
-## Kufinyelela Eluhlwini
+## Kufinyelela Ntsatfu
 
-1. Chofota **Umphakatsi** ku-[kuzulazula kwebha yaseceleni](../getting-started/navigating.md).
-2. Luhlu luyavela nelusatelisa lwawo onkhe emalungu ebandla lakho lavelako, ngasesancele sekhasi.
+1. Thepha **Community** ku[bha yetitebhu noma kuluhla lweMore](../getting-started/navigating.md) (ikhishi lakho lingase linikete ligama lehlukile).
+2. **Directory** iyavula inemba yebantfu nelunyatselo lwawo wonkhe emalunga ekhishi labonakalako.
 
-## Kufuna Emalungu
+## Kusesha Emalunga
 
-Lelikhasi lisebentisa endlalelo lene luhlu nemininingwane. Ngasesancele, unetindlela letimbili tekufuna bantfu:
+Bhala ligama ebhokisini **Search Members** ngaphezulu kwaluhla. Luhlu luyahlungwa njengoba ubhala, futsi ingcenye yegama lelifanako iyagcanjiswa. Sula ibhokisi ukuze ubone Ntsatfu yonkhe futsi.
 
-### Funa Ngeligama
+## Kuhlola Ntsatfu
 
-1. Cinisekisa kutsi sihlungo se-**Bantfu** sikhetsiwe etulu esigcemeni sekufuna.
-2. Bhala ligama ebhokisini lekufuna.
-3. Chofota **Funa** nome ucindzetele **Enter** kute ubone imiphumela.
+Emalunga ahlelwa ngetinhlokweni temagama (A, B, C, njalo njalo) ngalonhlamvu lwekucala legama lakhe lekucala, futsi ahlelwe ngelibito lelicala ngaphakathi kwalonhlamvu ngalinye. Nakunje ngulonkhe lilunga libonisa sithombe salo, ligama lelibonakalako, nesimo salo sekuba lilunga, lokwenta kube lula kutsi uhlole luhlu.
 
-Nangabe ushiya libhokisi lekufuna lingenalutfo bese uchofota **Funa**, luhlu loluphelele lwemalungu luyavela.
+## Kubuka Tilwatiso Talilunga
 
-### Funa Ngelicembu
+Thepha noma yiliphi lilunga kuluhlu kutsi uvule tilwatiso talo. Tilwatiso titsi ligama lelilunga, sithombe, nesimo sekuba lilunga, nemacemba **Message**, **Call**, noma **Text** lapho lolwatfo lukhona. Ngaphansi kwalokho, sigaba **Contact Information** sikhombisa tinhlobonhlobo tekutsi sekhishi nelilunga sikhetsile kwabelana nato, njengemayili, lucingo, nekheli, futsi **Household Members** ilanda labanye bantfu emndenini walelilunga.
 
-1. Chofota sihlungo se-**Emacembu** etulu esigcemeni sekufuna.
-2. Khetsa licembu eluhlwini loluhlako.
-3. Chofota **Funa** kute ubone onkhe emalungu alelo cembu.
+**Message** ivula inkhulumiswano lemfihlekile nalomuntfu. Ungenta umbhalo ube bold noma italic, noma wengete luhlu, ngekutsi uwugcamise bese usebenta ibha yetinsita leyavela -- lenjengalokwenta kuchat yeliqembu ([group chat](../groups/conversations.md#formatting-your-message)).
 
-:::tip
-Kufuna ngelicembu yindlela lesheshako yekutfola umuntfu lowamhlangana [emhlanganweni welicembu](../groups/browsing-groups.md) kodvwa ungasakhumbuli ligama lakhe.
-:::
-
-## Kucwaninga Luhlu
-
-Emalungu ehlelwe ngoku-alfabhethi ngesibongo, futsi ahlelwe ngaphansi kwetihloko tetinhlamvu (A, B, C, njalonjalo). Lilunga ngalinye likhombisa sitfombe salo, ligama lelibonakalako, kanye neligama lemndeni, lokwenta kube lula kufundzela luhlu.
-
-## Kubuka Iphrofayela Yelilunga
-
-Chofota kunoma ngukuphi lilunga eluhlwini kute uvule iphrofayela yalo epanyeni yemininingwane ngasesokudla. Iphrofayela ikhombisa imininingwane yelilunga njengobe ihlelwe libandla lakho, lokungahlanganisa imininingwane yekutsintsana, emalungu emndeni, kanye nebulunga bemacembu.
-
-Ungachofota emalungu emndeni ngekhatsi kwephrofayela kute uye naku emaphrofayela awo.
+Ungathepha emalunga endlu ngaphakathi kwetilwatiso kutsi uyokufika nakutilwatiso talo. Kutilwatiso takho, inkinobho ye-**Edit profile** iyakuyisa ku[Kuhlela Tilwatiso Takho](../getting-started/editing-your-profile.md).
 
 :::info
-Imininingwane lebonakala kuphrofayela ngayinye iya ngetilungiselelo temfihlo neluhlu lwebandla lakho. Akusiwo onkhe emabala latawukhonjiswa kulo lonkhe lilunga.
+Lolulwatfo lubonakala kulilunga ngalinye luncike kutinhlelo tekucashisa netekutfola kwekhishi lakho. Akusikotsi kutsi tonkhe tinkhundla tikhonjiswe kuwo wonkhe emalunga.
+:::
+
+:::info
+Emalunga angaphansi kwe[lubudzala lelincane lekucala kwemiyalezo lemfihlekile](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) lekhishi lakho asalokhoni kuNtsatfu, kodvwa likhetsa lekutfumela umyalezo lemfihlekile alitfolakali.
 :::

@@ -1,51 +1,51 @@
 ---
 title: "Előfeltételek"
-description: "Node.js, npm, Git és platformeszközök beállítása a ChurchApps-projektek, például a B1 Admin, Lessons.church, FreePlay vagy az API helyi használata előtt."
+description: "Node.js, npm, Git és a platformfüggő eszközláncok telepítése a ChurchApps-projektek helyi fejlesztése előtt, például a B1 Admin, a Lessons.church, a FreePlay vagy az API esetében."
 ---
 
 # Előfeltételek
 
 <div class="article-intro">
 
-A szükséges eszközök attól függnek, hogy mely projekteken szeretne dolgozni. Ez az oldal fejlesztési területek szerint csoportosítva sorolja fel az összes szükséges szoftvert, az általános követelményektől a platformspecifikus eszközláncokig.
+A szükséges eszközök attól függenek, hogy mely projekteken szeretnél dolgozni. Ez az oldal fejlesztési terület szerint csoportosítva sorolja fel az összes szükséges szoftvert, az általános követelményektől a platformspecifikus eszközláncokig.
 
 </div>
 
 <div class="prereqs">
-<h4>Mielőtt elkezdi</h4>
+<h4>Mielőtt elkezdenéd</h4>
 
-- Tekintse át a [Projekt áttekintést](./project-overview.md), hogy eldöntse, mely projekteken szeretne dolgozni
-- Legyen rendszergazdai hozzáférése a fejlesztői gépén a szoftverek telepítéséhez
+- Tekintsd át a [Projektáttekintést](./project-overview.md), hogy eldöntsd, mely projekteken szeretnél dolgozni
+- Legyen adminisztrátori hozzáférésed a fejlesztőgépen a szoftverek telepítéséhez
 
 </div>
 
-## Összes projekt
+## Minden projekt
 
-Ezek minden projektnél szükségesek, függetlenül attól, hogy melyiken dolgozik:
+Ezek minden projekthez szükségesek, függetlenül attól, melyiken dolgozol:
 
 | Eszköz | Verzió | Megjegyzések |
 |------|---------|-------|
-| **Node.js** | 20+ | A 22+ verzió szükséges a B1App és a LessonsApp (Next.js 16) számára; a 24+ verzió szükséges az Api-hoz |
-| **npm** | A Node.js-szel együtt érkezik | Csomagkezelőként használatos minden projektben |
+| **Node.js** | 20+ | A B1App és a LessonsApp (Next.js 16) esetében 22+ verzió szükséges; az Api-hoz 24+ |
+| **npm** | A Node.js-szel együtt érkezik | A csomagkezelő minden projektben ezt használjuk |
 | **Git** | Legújabb | Minden projekt külön tárolóban található |
 
 :::tip
-Használjon Node-verziókezelőt, például [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) vagy [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) eszközt, hogy könnyen válthasson a Node-verziók között.
+A Node-verziók egyszerű váltásához használj verziókezelőt, például [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) vagy [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) eszközt.
 :::
 
 ## Backend API fejlesztés
 
-Ha az API-t helyben szeretné futtatni (ahelyett, hogy a demó API-kra mutatna):
+Ha az API-t helyben szeretnéd futtatni (a demó API-k helyett):
 
 | Eszköz | Verzió | Megjegyzések |
 |------|---------|-------|
 | **MySQL** | 8.0+ | Minden API-modul saját adatbázist használ |
 
-Az alapvető API-hoz hat adatbázisra van szüksége: `membership`, `attendance`, `content`, `giving`, `messaging` és `doing`. Az API tartalmaz szkripteket a séma inicializálásához – lásd az [API helyi beállítása](../api/local-setup.md) útmutatót.
+A alap API-hoz hat adatbázisra lesz szükséged: `membership`, `attendance`, `content`, `giving`, `messaging` és `doing`. Az API tartalmaz szkripteket a séma inicializálásához – lásd az [API helyi beállítása](../api/local-setup.md) útmutatót.
 
-## Mobilalkalmazás fejlesztés
+## Mobilalkalmazás-fejlesztés
 
-B1Mobile, B1Checkin, LessonsScreen vagy más React Native / Expo alkalmazások esetén:
+A B1Checkin, a LessonsScreen vagy más React Native / Expo alkalmazások esetében:
 
 | Eszköz | Verzió | Megjegyzések |
 |------|---------|-------|
@@ -54,18 +54,18 @@ B1Mobile, B1Checkin, LessonsScreen vagy más React Native / Expo alkalmazások e
 | **Xcode** | Legújabb | iOS-fejlesztéshez szükséges (csak macOS) |
 
 :::info
-Fizikai eszközön gyors teszteléshez használhatja az Expo Go alkalmazást Android Studio vagy Xcode nélkül. Az éles bináris fájlok építéséhez azonban a natív eszközláncok szükségesek.
+Gyors teszteléshez fizikai eszközön használhatod az Expo Go alkalmazást Android Studio vagy Xcode nélkül. Éles bináris fájlok készítéséhez azonban a natív eszközláncok szükségesek.
 :::
 
 ## FreeShow (asztali alkalmazás) fejlesztés
 
-A FreeShow további natív build-függőségekkel rendelkezik, mert natív Node-modulokat (például `canvas`) fordít:
+A FreeShow további natív build-függőségeket igényel, mert natív Node-modulokat (például a `canvas`-t) fordít:
 
 ### Minden platform
 
 | Eszköz | Verzió | Megjegyzések |
 |------|---------|-------|
-| **Python** | 3.12 | A `node-gyp` igényli a natív modulok fordításához |
+| **Python** | 3.12 | A `node-gyp` natív modulok fordításához igényli |
 | **setuptools** | Legújabb | Telepítés: `pip install setuptools` |
 
 ### Windows
@@ -73,16 +73,16 @@ A FreeShow további natív build-függőségekkel rendelkezik, mert natív Node-
 | Eszköz | Megjegyzések |
 |------|-------|
 | **Visual Studio** | A Community kiadás elegendő |
-| **"Desktop development with C++" munkaterhelés** | A Visual Studio telepítése során válassza ki |
-| **Windows 10 SDK** | A C++ munkaterhelésben található; győződjön meg róla, hogy be van jelölve |
+| **„Desktop development with C++” munkaterhelés** | A Visual Studio telepítése közben válaszd ki |
+| **Windows 10 SDK** | A C++ munkaterhelésben benne van; győződj meg róla, hogy be van jelölve |
 
-A Visual Studio build-eszközöket parancssorból is telepítheti:
+A Visual Studio build-eszközöket parancssorból is telepítheted:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-Vagy telepítse a Visual Studio Community kiadását, és a telepítés során válassza ki a "Desktop development with C++" munkaterhelést.
+Vagy telepítsd a Visual Studio Community kiadást, és telepítés közben válaszd ki a „Desktop development with C++” munkaterhelést.
 
 ### Linux
 
@@ -92,24 +92,24 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Az Xcode parancssori eszközei általában elegendők:
+Általában az Xcode parancssori eszközei elegendők:
 
 ```bash
 xcode-select --install
 ```
 
-## Telepítés ellenőrzése
+## A telepítés ellenőrzése
 
-Futtassa ezeket a parancsokat annak megerősítéséhez, hogy minden telepítve van:
+Futtasd ezeket a parancsokat, hogy megbizonyosodj róla, minden telepítve van:
 
 ```bash
-node --version    # Should print v20.x.x or higher
-npm --version     # Should print 10.x.x or higher
-git --version     # Should print git version 2.x.x
-mysql --version   # Only needed for local API development
+node --version    # v20.x.x vagy magasabb verziót kell kiírnia
+npm --version     # 10.x.x vagy magasabb verziót kell kiírnia
+git --version     # git version 2.x.x-et kell kiírnia
+mysql --version   # Csak helyi API-fejlesztéshez szükséges
 ```
 
 ## Következő lépések
 
-- **[Projekt áttekintés](./project-overview.md)** -- Tekintse meg az összes projektet és azok funkcióit
-- **[Környezeti változók](./environment-variables.md)** -- Konfigurálja a `.env` fájljait
+- **[Projektáttekintés](./project-overview.md)** -- Az összes projekt és azok funkcióinak áttekintése
+- **[Környezeti változók](./environment-variables.md)** -- A `.env` fájlok beállítása

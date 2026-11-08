@@ -1,76 +1,91 @@
 ---
 title: "Tilpasning af lektioner"
-description: "Fjern, skjul eller omarrangér sektioner og roller i en Lessons.church-lektion, og vælg om ændringerne gælder for ét klasseværelse eller for alle."
+description: "Fjern eller omarrangér afsnit, roller og handlinger i en Lessons.church-lektion, og vælg, om hver ændring skal gælde for ét klasselokale eller for alle."
 ---
 
 # Tilpasning af lektioner
 
 <div class="article-intro">
 
-Denne guide vejleder dig gennem tilpasning af en lektion til dit klasseværelse. Tilpasninger lader dig fjerne, skjule eller omarrangere indhold, så dine frivillige ser præcis, hvad de har brug for -- ikke mere, ikke mindre.
+Denne vejledning guider dig gennem tilpasningen af en lektion til dit klasselokale. Tilpasninger gør det muligt at fjerne eller omarrangere indhold, så dine frivillige præcis ser det, de har brug for – hverken mere eller mindre.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du går i gang</h4>
 
-- [Opsæt mindst ét klasseværelse](../classrooms/setting-up-classrooms.md) i portalen
-- [Planlæg en lektion](../classrooms/scheduling-lessons.md) til det klasseværelse, du vil tilpasse
-- Læs [Tilpasnings-oversigten](./index.md) for at forstå, hvad der kan tilpasses
+- [Opret mindst ét klasselokale](../classrooms/setting-up-classrooms.md) i portalen
+- [Planlæg en lektion](../classrooms/scheduling-lessons.md) til det klasselokale, du vil tilpasse
+- Læs [oversigten over tilpasning](./index.md) for at forstå, hvad der kan tilpasses
 
 </div>
 
 ## Åbning af tilpasningsvisningen
 
-1. Log ind, og naviger til din **Portal**.
-2. Vælg det **klasseværelse**, der har den lektion, du vil tilpasse.
-3. Klik på den **planlagte lektion** for at åbne den.
-4. Klik **Tilpas** for at gå ind i tilpasningsvisningen.
+1. Log ind og gå til din **Portal**.
+2. Vælg det **klasselokale**, der har den lektion, du vil tilpasse.
+3. Find lektionen i klasselokalets plan, og klik på **Tilpas** under dens navn.
 
-Du vil se det fulde lektionsindhold opdelt i sektioner, roller og handlinger.
+Siden **Tilpas lektion** viser lektionens afsnit, hvert afsnits roller og under hver rolle dens handlinger. Hver række har knapper til højre:
 
-## Fjernelse af sektioner
+- **Pil op** og **Pil ned** -- Flyt elementet ét sted op eller ned blandt sine naboer
+- **Slet** (papirkurv) -- Fjern elementet
 
-Hvis en sektion ikke gælder dit klasseværelse, kan du fjerne det helt. Dette er nyttigt, når en lektion inkluderer indhold til flere aldersgrupper, og du kun har brug for en. For eksempel, hvis en lektion har både en "Børnehave-aktivitet" og en "Grundskole-aktivitet" sektion, kan du fjerne den ene, som ikke passer dit rum.
+:::info
+**Tilpas** vises kun for Lessons.church-lektioner. Lektioner, der er planlagt via en ekstern udbyder, viser i stedet **Vis lektion** og kan ikke tilpasses.
+:::
 
-1. Find den sektion, du vil fjerne.
-2. Klik for at **fjerne** eller **skjule** sektionen.
-3. Sektionen vises ikke længere for frivillige, der ser denne lektion.
+## Valg af, hvor en ændring gælder
 
-## Skjulelse af roller eller handlinger
+Hver gang du klikker på en pil eller papirkurven, vises en menu med spørgsmålet **Anvend valgt tilpasning på:**
 
-Inden for en sektion kan du skjule specifikke roller eller handlinger. For eksempel, hvis en sektion inkluderer en "Tilbedelses-leder" rolle, men dit klasseværelse ikke har en, kan du skjule bare denne rolle uden at fjerne hele sektionen.
+- **Dette klasselokale** -- Ændringen gælder kun for det aktuelle klasselokale. Andre klasselokaler påvirkes ikke.
+- **Alle klasselokaler** -- Ændringen gælder for alle klasselokaler i din kirke.
 
-1. Udvid sektionen for at se dens roller og handlinger.
-2. Klik for at **skjule** enhver rolle eller handling, du ikke har brug for.
+Vælg én, og ændringen gemmes med det samme. Der er intet separat trin for at gemme.
+
+## Fjernelse af afsnit
+
+Hvis et afsnit ikke passer til dit klasselokale, kan du fjerne det helt. Det er nyttigt, når en lektion indeholder indhold til flere aldersgrupper, og du kun har brug for én. For eksempel, hvis en lektion har både et afsnit "Aktivitet for førskolebørn" og et "Aktivitet for børn i indskolingen", kan du fjerne det af de to, der ikke passer til dit lokale.
+
+1. Find det afsnit, du vil fjerne.
+2. Klik på dets **Slet**-knap (papirkurv).
+3. Vælg **Dette klasselokale** eller **Alle klasselokaler**.
+
+Afsnittet vises som fjernet sammen med alle dets roller og handlinger, og de frivillige vil ikke længere se det for denne lektion.
+
+## Fjernelse af roller eller handlinger
+
+Inden for et afsnit kan du fjerne bestemte roller eller handlinger. Hvis et afsnit for eksempel indeholder rollen "Lovsangsleder", men dit klasselokale ikke har en sådan, kan du fjerne netop den rolle uden at fjerne hele afsnittet.
+
+1. Find rollen eller handlingen i listen under sit afsnit.
+2. Klik på dens **Slet**-knap (papirkurv), og vælg, hvor ændringen skal gælde.
 
 ## Omarrangering af indhold
 
-Du kan omorganisere sektioner og handlinger for at matche det flow, du foretrækker:
+Du kan omarrangere afsnit, roller og handlinger, så de passer til den rækkefølge, du foretrækker:
 
-1. Træk sektioner eller handlinger for at flytte dem op eller ned i rækkefølgen.
-2. Den nye rækkefølge er, hvad dine frivillige vil se, når de ser lektionen.
+1. Klik på **Pil op** eller **Pil ned** ved det element, du vil flytte.
+2. Vælg, hvor ændringen skal gælde. Elementet bytter plads med sin nabo.
 
-## Gemmelses af din tilpasning
+Gentag, indtil elementerne står i den rækkefølge, du ønsker. Den nye rækkefølge er den, dine frivillige ser, når de åbner lektionen.
 
-Når du er færdig med at foretage ændringer, skal du gemme tilpasningen. Du vil blive bedt om at vælge, hvordan den gælder:
+## Fortrydelse af en fjernelse
 
-- **Kun dette klasseværelse** -- Ændringerne gælder kun det aktuelle klasseværelse. Andre klasseværelser påvirkes ikke.
-- **Alle klasseværelser** -- Ændringerne gælder for hvert klasseværelse på din kirke.
-- **Fjern tilpasning** -- Hvis du tidligere tilpassede denne lektion, og du vil tilbage til det originale indhold, vælg denne indstilling for at rydde dine ændringer.
+For at genskabe et element, du har fjernet, skal du klikke på dets **Slet**-knap igen. Menuen tilbyder nu også **Ingen**. Vælg **Ingen** for at ophæve fjernelsen og vise elementet igen, eller vælg den anden mulighed for at ændre, hvor fjernelsen gælder.
 
 :::tip
-Start med at tilpasse en enkelt lektion for et klasseværelse. Når du er fortrolig med processen, kan du anvende tilpasninger mere bredt på alle klasseværelser.
+Start med at tilpasse én enkelt lektion for ét klasselokale. Når du er fortrolig med processen, kan du anvende tilpasninger bredere på tværs af alle klasselokaler.
 :::
 
-## Hvornår skal jeg tilpasse?
+## Hvornår skal man tilpasse
 
-Tilpasning er mest nyttig når:
+Tilpasning er mest nyttig, når:
 
-- En lektion har indhold til flere aldersgrupper, og du vil vise kun de relevante dele.
-- Dit klasseværelse ikke bruger visse roller (som en dedikeret tilbedelses-leder eller tech-frivillig).
-- Du foretrækker en anden rækkefølge for lektionsflowet end det, som standard-indholdet giver.
+- En lektion har indhold til flere aldersgrupper, og du kun vil vise de relevante dele.
+- Dit klasselokale ikke bruger bestemte roller (som en dedikeret lovsangsleder eller teknikfrivillig).
+- Du foretrækker en anden rækkefølge for lektionsforløbet end den, der er angivet som standard.
 
 :::info
-Du behøver ikke at tilpasse hver lektion. Hvis indholdet fungerer som det er til dit klasseværelse, kan du springe dette trin over helt og gå direkte til [præsentation](../presenting/index.md).
+Du behøver ikke tilpasse alle lektioner. Hvis indholdet fungerer, som det er, for dit klasselokale, kan du springe dette trin over og gå direkte til [præsentation](../presenting/index.md).
 :::

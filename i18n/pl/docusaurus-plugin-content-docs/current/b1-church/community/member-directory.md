@@ -1,48 +1,50 @@
 ---
-title: "Katalog członków w portalu B1.church"
+title: "Katalog członków w portalu członka B1.church"
 sidebar_label: "Katalog członków"
-description: "Wyszukuj i przeglądaj członków kościoła w katalogu B1.church, oglądaj ich profile i członków gospodarstw domowych oraz sprawdź, kto ma dostęp do katalogu."
+description: "Wyszukuj i przeglądaj członków kościoła w katalogu B1.church, wyświetlaj ich profile i członków gospodarstwa domowego oraz sprawdź, kto ma dostęp do katalogu."
 ---
 
 # Katalog członków
 
 <div class="article-intro">
 
-Katalog członków pozwala przeglądać i wyszukiwać osoby w Twoim kościele. Czy szukasz członka swojej grupy, czy chcesz poznać kogoś nowego, katalog ułatwia nawiązanie kontaktu z rodziną kościelną.
+Katalog członków pozwala przeglądać i wyszukiwać osoby należące do Twojego kościoła. Czy potrzebujesz odnaleźć członka swojej grupy, czy poznać kogoś nowego, katalog ułatwia nawiązanie kontaktu z rodziną kościelną.
 
 </div>
 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Musisz być [zalogowany](../getting-started/logging-in.md) na swoim koncie B1.church.
-- Kto może otworzyć katalog, zależy od ustawienia kościoła **Pokaż w katalogu**: **Tylko administratorzy**, **Członkowie i wyżej** (ustawienie domyślne), **Regularni uczestnicy i wyżej** lub **Odwiedzający i wyżej**. Osoby poniżej tego poziomu zobaczą komunikat „Tylko dla członków”. Pracownicy z uprawnieniem People > View mogą zawsze otworzyć katalog, a przy ustawieniu **Tylko administratorzy** tylko oni — nawet osoby ze statusem członkostwa Pracownik nie mogą. Osoby ze statusem Gość lub Nieaktywny nigdy nie mają dostępu. Zobacz [Ustawienia katalogu członków i wiadomości](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
+- Musisz być [zalogowany](../getting-started/logging-in.md) na swoje konto B1.church.
+- Kto może otworzyć katalog, zależy od ustawienia kościoła **Pokaż w katalogu**: **Tylko administratorzy**, **Członkowie i wyżej** (ustawienie domyślne), **Regularni uczestnicy i wyżej** lub **Goście i wyżej**. Osoby poniżej tego poziomu zobaczą komunikat „Tylko dla członków”. Osoby z uprawnieniem People > View mogą zawsze otworzyć katalog, a przy ustawieniu **Tylko administratorzy** tylko one mogą to zrobić — nawet osoby ze statusem członkostwa Staff nie mają dostępu. Osoby ze statusem Guest lub Inactive nigdy nie mają dostępu. Zobacz [Ustawienia katalogu członków i wiadomości](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
 ## Otwieranie katalogu
 
-1. Stuknij **Społeczność** na [pasku zakładek lub na stronie Więcej](../getting-started/navigating.md) (Twój kościół mógł nadać jej inną nazwę).
-2. **Katalog** otworzy się z liczbą osób i listą wszystkich widocznych członków kościoła.
+1. Dotknij **Społeczność** w [pasku kart lub na stronie Więcej](../getting-started/navigating.md) (Twój kościół mógł nadać jej inną nazwę).
+2. Otworzy się **Katalog** z liczbą osób oraz listą wszystkich widocznych członków kościoła.
 
 ## Wyszukiwanie członków
 
-Wpisz imię w polu **Szukaj członków** u góry listy. Lista filtruje się w miarę pisania, a pasująca część każdego imienia zostaje wyróżniona. Wyczyść pole, aby ponownie zobaczyć pełny katalog.
+Wpisz imię lub nazwisko w polu **Szukaj członków** u góry listy. Lista filtruje się podczas pisania, a pasująca część każdego imienia zostaje wyróżniona. Wyczyść pole, aby ponownie zobaczyć pełny katalog.
 
 ## Przeglądanie katalogu
 
-Członkowie są pogrupowani pod nagłówkami liter (A, B, C itd.) według pierwszej litery imienia i posortowani według nazwiska w obrębie każdej litery. Każdy wpis pokazuje zdjęcie członka, wyświetlaną nazwę i status członkostwa, co ułatwia przeglądanie listy.
+Członkowie są pogrupowani pod nagłówkami liter (A, B, C itd.) według pierwszej litery imienia i sortowani według nazwiska w obrębie każdej litery. Każdy wpis pokazuje zdjęcie członka, wyświetlaną nazwę i status członkostwa, co ułatwia przeglądanie listy.
 
-## Przeglądanie profilu członka
+## Wyświetlanie profilu członka
 
-Stuknij dowolnego członka na liście, aby otworzyć jego profil. Profil pokazuje imię i nazwisko członka, zdjęcie oraz status członkostwa, wraz z przyciskami **Wiadomość**, **Zadzwoń** lub **SMS**, gdy te dane są dostępne. Poniżej sekcja **Dane kontaktowe** pokazuje informacje, które kościół i członek postanowili udostępnić, takie jak e-mail, telefon i adres, a **Członkowie gospodarstwa domowego** wymienia pozostałe osoby z jego gospodarstwa domowego.
+Dotknij dowolnego członka na liście, aby otworzyć jego profil. Profil pokazuje imię i nazwisko członka, zdjęcie oraz status członkostwa, a także przyciski **Wiadomość**, **Zadzwoń** lub wysłania **SMS-a**, gdy te dane są dostępne. Poniżej sekcja **Dane kontaktowe** pokazuje informacje, które kościół i członek postanowili udostępnić, na przykład e-mail, telefon i adres, a **Członkowie gospodarstwa domowego** wymienia pozostałe osoby z jego gospodarstwa.
 
-Możesz stuknąć członków gospodarstwa domowego w profilu, aby przejść także do ich profili. We własnym profilu przycisk **Edytuj profil** przenosi do [Edycji swojego profilu](../getting-started/editing-your-profile.md).
+**Wiadomość** otwiera prywatną rozmowę z tą osobą. Możesz pogrubić lub pochylić tekst albo dodać listę, zaznaczając go i korzystając z pojawiającego się paska narzędzi — tak samo jak w [czacie grupowym](../groups/conversations.md#formatting-your-message).
+
+W profilu możesz także dotknąć członków gospodarstwa domowego, aby przejść do ich profilów. Na swoim własnym profilu przycisk **Edytuj profil** prowadzi do [Edycji swojego profilu](../getting-started/editing-your-profile.md).
 
 :::info
 Informacje widoczne w każdym profilu zależą od ustawień prywatności i katalogu w Twoim kościele. Nie wszystkie pola mogą być widoczne dla każdego członka.
 :::
 
 :::info
-Członkowie poniżej [minimalnego wieku dla wiadomości prywatnych](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) kościoła pozostają widoczni w katalogu, ale opcja wysłania im wiadomości prywatnej jest niedostępna.
+Członkowie poniżej [minimalnego wieku dla prywatnych wiadomości](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) ustawionego przez kościół pozostają widoczni w katalogu, ale opcja wysłania im prywatnej wiadomości jest niedostępna.
 :::

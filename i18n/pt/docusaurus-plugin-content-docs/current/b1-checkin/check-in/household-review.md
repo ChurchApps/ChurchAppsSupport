@@ -1,20 +1,20 @@
 ---
 title: "Revisando sua família"
-description: "Revise sua família no B1 Checkin após escolher uma pessoa, atribua grupos para cada horário e marque visitantes ou voluntários antes do check-in."
+description: "Revise sua família no B1 Checkin depois de escolher uma pessoa e, em seguida, atribua grupos para cada horário de culto e marque visitantes ou voluntários antes de fazer o check-in."
 ---
 
 # Revisando sua família
 
 <div class="article-intro">
 
-Depois de selecionar uma pessoa nos resultados da busca, o aplicativo carrega toda a sua família e a exibe na tela de revisão da família. Este é o centro do processo de check-in, onde você pode ver todos da sua família e gerenciar as atribuições de grupo antes de fazer o check-in.
+Depois que você seleciona uma pessoa nos resultados da busca, o aplicativo carrega toda a sua família e a exibe na tela de revisão da família. Este é o centro do processo de check-in, onde você pode ver todos os membros da sua família e gerenciar suas atribuições de grupo antes de fazer o check-in.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- [Selecione um serviço](./selecting-service.md) na tela de serviços
+- [Selecione um culto](./selecting-service.md) na tela de cultos
 - [Busque um membro](./looking-up-members.md) e selecione-o nos resultados da busca
 
 </div>
@@ -23,29 +23,30 @@ Depois de selecionar uma pessoa nos resultados da busca, o aplicativo carrega to
 
 Cada membro da família aparece como um cartão com:
 
-- Sua **foto** (ou um ícone de marcador de posição, se não houver foto cadastrada)
+- Sua **foto** (ou um ícone de espaço reservado, se não houver foto cadastrada)
 - Seu **nome de exibição**
-- Um **resumo das atribuições de grupo atuais** (mostrado como pequenas etiquetas abaixo do nome quando o cartão está recolhido)
+- Um **resumo das atribuições de grupo atuais** (exibido como pequenas etiquetas abaixo do nome quando o cartão está recolhido)
+- Um distintivo **Já fez check-in** se a pessoa já tiver feito check-in neste culto hoje
 - Uma **seta de expandir/recolher** no lado direito
 
 ## Expandindo um membro
 
-Toque no cartão de um membro para expandi-lo. Quando expandido, você verá uma linha para cada **horário de culto** dentro do serviço selecionado, do mais cedo para o mais tarde. Os horários de culto são ordenados pelo dia e pela hora de início programados, quando definidos; caso contrário, pelo horário no nome (assim "9:00" vem antes de "10:30"). Horários de culto sem horário no nome aparecem por último, em ordem alfabética. Cada linha mostra:
+Toque no cartão de um membro para expandi-lo. Quando expandido, você verá uma linha para cada **horário de culto** dentro do culto selecionado, do mais cedo para o mais tarde. Os horários são ordenados pelo dia e pela hora de início programados, quando estiverem definidos; caso contrário, são ordenados pelo horário indicado no nome (por exemplo, "9:00 AM" vem antes de "10:30 AM"). Horários sem hora no nome aparecem por último, em ordem alfabética. Cada linha mostra:
 
-- O **nome do horário de culto** (por exemplo, "9:00" ou "11:00")
-- Os **grupos oferecidos** nesse horário de culto, listados abaixo do nome (por exemplo, "Berçário, Pré-escola, Classe bíblica de adultos"), para que você veja quais classes estão disponíveis antes de escolher
-- Um **botão** que mostra o grupo atualmente atribuído, ou "Selecionar grupo" se nenhum grupo tiver sido atribuído ainda
+- O **nome do horário de culto** (por exemplo, "9:00 AM" ou "11:00 AM")
+- Os **grupos oferecidos** nesse horário, listados abaixo do nome (por exemplo, "Berçário, Pré-escola, Classe Bíblica de Adultos"), para que você veja quais classes estão disponíveis antes de escolher
+- Um **botão** mostrando o grupo atualmente atribuído, ou "Selecionar grupo" se nenhum grupo tiver sido atribuído ainda
 
-Se um horário de culto tiver uma [programação de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) e a janela estiver fechada neste momento, a linha mostra **Encerrado** no lugar de um botão, com o próximo horário de abertura quando houver, como **Encerrado · abre dom 9:30**. Se a pessoa já tiver feito check-in naquele horário de culto, a linha mostra o grupo dela com um sinal de verificação (por exemplo, **Sala Kids 1 · Com check-in feito**), para que você veja onde ela está, mesmo que a janela já tenha fechado.
+Se um horário de culto tiver um [cronograma de check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) e a janela estiver fechada no momento, a linha mostra **Fechado** no lugar do botão, junto com o próximo horário de abertura quando houver um, como **Fechado · abre dom 9:30 AM**. Se a pessoa já tiver feito check-in nesse horário de culto, a linha mostra o grupo dela com um sinal de verificação (por exemplo, **Sala Kids 1 · Check-in feito**), para que você saiba onde ela está, mesmo com a janela já fechada.
 
-Toque no botão do grupo para ir à [tela de seleção de grupo](./group-assignment.md), onde você pode escolher ou alterar o grupo daquela pessoa e daquele horário de culto.
+Toque no botão do grupo para ir à [tela de seleção de grupo](./group-assignment.md), onde você pode escolher ou alterar o grupo daquela pessoa naquele horário de culto.
 
-O cartão expandido também mostra as etiquetas **Membro**, **Visitante** e **Voluntário**. Toque em uma delas para definir como esta pessoa está fazendo o check-in. Membro é o padrão. O tipo é importante para as salas infantis: voluntários contam para a proporção voluntário-criança da sala, e visitantes contam para qualquer limite de visitantes que a sua igreja tenha definido.
+O cartão expandido também mostra as etiquetas **Membro**, **Visitante** e **Voluntário**. Toque em uma delas para definir como essa pessoa está fazendo check-in. Membro é o padrão. O tipo é importante para as salas infantis: voluntários contam para a proporção voluntário-criança da sala, e visitantes contam para a capacidade de visitantes definida pela sua igreja.
 
-Toque no cartão do membro novamente para recolhê-lo.
+Toque novamente no cartão do membro para recolhê-lo.
 
 :::tip
-Você não precisa atribuir cada membro da família a um grupo. Adultos que estão participando do culto principal podem ficar sem atribuição de grupo. Atribua grupos apenas aos membros que precisam fazer check-in em uma classe ou programa específico.
+Você não precisa atribuir todos os membros da família a um grupo. Adultos que estão participando do culto principal podem ficar sem atribuição de grupo. Atribua grupos apenas aos membros que precisam fazer check-in em uma classe ou programa específico.
 :::
 
 ## Navegando a partir desta tela
@@ -57,7 +58,7 @@ Na tela de revisão da família, você tem três opções:
 - **Toque no botão Check-in** na parte inferior da tela para [concluir o check-in](./completing-checkin.md) de todos da família.
 
 :::info
-As atribuições de grupo de um check-in anterior para o mesmo serviço são pré-carregadas automaticamente. Se os seus filhos frequentam os mesmos grupos toda semana, talvez você não precise alterar nada; basta revisar e fazer o check-in.
+As atribuições de grupo de um check-in anterior para o mesmo culto são pré-carregadas automaticamente. Se seus filhos frequentam os mesmos grupos toda semana, talvez você não precise mudar nada. Basta revisar e fazer o check-in.
 :::
 
 ## Próximos passos

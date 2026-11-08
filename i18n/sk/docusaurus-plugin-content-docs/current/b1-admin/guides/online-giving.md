@@ -1,105 +1,104 @@
 ---
-title: "Sprievodca: Nastavenie online darovaní"
-description: "Nastavte online dávanie v B1 Admin: vytvorte fondy darov, pripojte Stripe a pridajte na web B1.church stránku Donate pre členov."
+title: "Guía: Configurar las donaciones en línea"
+description: "Configure las donaciones en línea en B1 Admin creando fondos de donación, conectando Stripe y añadiendo una página de Donar a su sitio web B1.church para los miembros."
 ---
 
-# Nastavenie online darovaní
+# Configurar las donaciones en línea
 
 <div class="article-intro">
 
-Prejdite si všetko, čo je potrebné na prijímanie online darov vo vašom kostole — od vytvorenia darovacích fondov, cez pripojenie služby Stripe na spracovanie platieb, až po zdieľanie stránky darovania so zborom. Keď budete hotoví, členovia budú môcť dávať online cez vašu webovú stránku a mobilnú aplikáciu.
+Repase todo lo necesario para aceptar donaciones en línea en su iglesia: desde crear los fondos de donación, hasta conectar Stripe para el procesamiento de pagos y compartir la página de ofrendas con su congregación. Al terminar, los miembros podrán dar en línea a través de su sitio web y de la aplicación móvil.
 
 </div>
 
 <div class="prereqs">
-<h4>Predtým, ako začnete</h4>
+<h4>Antes de comenzar</h4>
 
-- Účet B1 Admin s administrátorským prístupom — pozrite si [Roly a oprávnenia](../people/roles-permissions.md)
-- Účet Stripe (ak ho potrebujete, môžete si ho bezplatne vytvoriť na [stripe.com](https://stripe.com))
+- Cuenta de B1 Admin con acceso de administrador: consulte [Roles y permisos](../people/roles-permissions.md)
+- Una cuenta de Stripe (cree una gratis en [stripe.com](https://stripe.com) si la necesita)
 
 </div>
 
-## Krok 1: Vytvorenie darovacích fondov
+## Paso 1: Crear los fondos de donación
 
-Fondy sú kategórie, do ktorých môžu darcovia prispievať. Predtým, ako budete môcť prijímať dary, potrebujete aspoň jeden fond.
+Los fondos son las categorías a las que los donantes pueden dar. Necesita al menos un fondo antes de poder aceptar donaciones.
 
-Podľa sprievodcu [Fondy](../donations/funds.md) nastavte svoje kategórie darovania:
+Siga la guía de [Fondos](../donations/funds.md) para configurar sus categorías de ofrenda:
 
-1. Vytvorte si najbežnejšie fondy (napr. „Všeobecný fond", „Fond na stavbu", „Misie")
-2. Správne označte fondy, ktorých dary sú odpočítateľné z dane — to ovplyvňuje výpisy darov na konci roka
+1. Cree sus fondos más comunes (por ejemplo, "Fondo General", "Fondo de construcción", "Misiones")
+2. Marque adecuadamente los fondos deducibles de impuestos: esto afecta a los estados de donaciones de fin de año
 
 :::tip
-Ďalšie fondy môžete pridať kedykoľvek. Začnite s kategóriami darovania, ktoré sa najčastejšie využívajú.
+Puede añadir más fondos en cualquier momento. Empiece con sus categorías de ofrenda más comunes.
 :::
 
-## Krok 2: Pripojenie služby Stripe
+## Paso 2: Conectar Stripe
 
-Stripe zabezpečuje spracovanie všetkých platieb. Pripojíte svoj účet Stripe k aplikácii B1 Admin, aby dary smerovali na váš bankový účet.
+Stripe gestiona todo el procesamiento de pagos. Conectará su cuenta de Stripe a B1 Admin para que las donaciones lleguen a su cuenta bancaria.
 
-Podľa sprievodcu [Nastavenie online darovania](../donations/online-giving-setup.md) pripojte Stripe:
+Siga la guía de [Configuración de donaciones en línea](../donations/online-giving-setup.md) para conectar Stripe:
 
-1. Prihláste sa do svojho panela Stripe a získajte zverejnený kľúč (Publishable Key) a tajný kľúč (Secret Key)
-2. V aplikácii B1 Admin prejdite do Nastavení a zadajte oba kľúče
+1. Inicie sesión en su panel de Stripe y obtenga su clave publicable y su clave secreta
+2. En B1 Admin, vaya a Configuración e introduzca ambas claves
 
 :::warning
-Stripe zobrazí váš tajný kľúč (Secret Key) iba raz. Pred opustením panela Stripe ho skopírujte a uložte. Ak ho stratíte, budete musieť vygenerovať nový.
+Stripe muestra su clave secreta solo una vez. Cópiela y guárdela antes de salir del panel de Stripe. Si la pierde, tendrá que generar una nueva.
 :::
 
-## Krok 3: Pridanie stránky darovania na váš web
+## Paso 3: Añadir una página de ofrendas a su sitio web
 
-Sprístupnite darovanie pridaním stránky na darovanie na svoj web B1.
+Haga que la ofrenda sea accesible añadiendo una página de donaciones a su sitio web B1.
 
-Podľa sprievodcov [Nastavenie online darovania](../donations/online-giving-setup.md) a [Správa stránok](../website/managing-pages.md) postupujte takto:
+Siga las guías de [Configuración de donaciones en línea](../donations/online-giving-setup.md) y [Gestión de páginas](../website/managing-pages.md) para:
 
-1. Pridajte záložku „Darovať" na svoju stránku B1.church
-2. Vaša adresa URL pre darovanie bude: `https://yoursubdomain.b1.church/donate`
-3. Členovia môžu darovať bez prihlásenia (verejná stránka), alebo sa prihlásiť, aby mali uložené platobné metódy a históriu darov
+1. Añadir una pestaña "Donar" a su sitio B1.church
+2. Su URL de ofrendas será: `https://yoursubdomain.b1.church/donate`
+3. Los miembros pueden dar sin iniciar sesión (página pública) o iniciar sesión para guardar métodos de pago y consultar su historial de donaciones
 
-## Krok 4: Testovací dar
+## Paso 4: Realizar una donación de prueba
 
-Predtým, ako informujete svoj zbor, overte, že všetko funguje.
+Antes de anunciarlo a su congregación, verifique que todo funcione.
 
-1. Urobte malý testovací dar, aby ste overili celý postup od začiatku do konca
-2. Skontrolujte, či sa dar zobrazuje v aplikácii B1 Admin v časti Dary
+1. Realice una pequeña donación de prueba para comprobar que el proceso funciona de principio a fin
+2. Compruebe que la donación aparece en B1 Admin, en Donaciones
 
 :::tip
-Ak chcete overiť funkčnosť bez skutočných platieb, najprv použite testovací režim služby Stripe a až potom prepnite na ostrý režim, keď budete informovať svoj zbor.
+Use primero el modo de prueba de Stripe si quiere verificar sin cargos reales, y después cambie al modo en vivo antes de anunciarlo a su congregación.
 :::
 
-## Krok 5: Oznámenie zboru
+## Paso 5: Anunciarlo a su congregación
 
-Dajte vedieť, aby členovia vedeli, že môžu darovať online.
+Comunique la noticia para que los miembros sepan que pueden dar en línea.
 
-1. Zdieľajte adresu URL pre darovanie na svojej webovej stránke, v e-mailových newsletteroch, vo farských ohlasoch a na sociálnych sieťach
-2. Členovia môžu darovať aj cez [aplikáciu B1 Mobile](../../b1-church/giving/index.md) — funkcia darovania je v nej zabudovaná
+1. Comparta la URL de ofrendas a través de su sitio web, boletines por correo electrónico, boletines de la iglesia y redes sociales
+2. Los miembros también pueden dar a través de la [aplicación B1](../../b1-church/giving/index.md): la función de ofrendas está integrada
 
 :::info
-Prihlásení členovia si môžu uložiť platobné metódy, nastaviť opakované dary a zobraziť si históriu darov. Funguje aj anonymné darovanie — prihlásenie nie je potrebné.
+Los miembros que inicien sesión pueden guardar métodos de pago, configurar donaciones recurrentes y consultar su historial de ofrendas. También se admiten las ofrendas anónimas, sin necesidad de iniciar sesión.
 :::
 
-## Krok 6: Priebežná správa
+## Paso 6: Gestión continua
 
-Udržiavajte záznamy o daroch aktuálne a počas celého roka generujte prehľady.
+Mantenga sus registros de donaciones actualizados y genere informes a lo largo del año.
 
-1. [Importujte transakcie zo Stripe](../donations/stripe-import.md) pravidelne (týždenne alebo mesačne), aby boli vaše záznamy aktuálne
-2. [Zobrazte prehľady darov](../donations/donation-reports.md), aby ste sledovali trendy darovania a súčty podľa fondov
-3. [Vygenerujte výpisy darov na konci roka](../donations/giving-statements.md) pre daňové účely vašich darcov
+1. [Importe las transacciones de Stripe](../donations/stripe-import.md) con regularidad (semanal o mensualmente) para mantener sus registros al día
+2. [Consulte los informes de donaciones](../donations/donation-reports.md) para seguir las tendencias de ofrenda y los totales por fondo
+3. [Genere los estados de ofrendas de fin de año](../donations/giving-statements.md) para los registros fiscales de sus donantes
 
 :::tip
-Importujte transakcie zo Stripe aspoň raz mesačne, aby boli vaše záznamy aktuálne. Úplný postup na konci roka nájdete v sprievodcovi [Výročné správy](./year-end-reports.md).
+Ejecute las importaciones de Stripe al menos una vez al mes para que sus registros estén actualizados. Consulte la [Guía de informes de fin de año](./year-end-reports.md) para ver el proceso completo de cierre anual.
 :::
 
-## Hotovo!
+## ¡Ya está listo!
 
-Váš kostol teraz prijíma online dary. Členovia môžu darovať cez vašu webovú stránku, aplikáciu B1 Mobile alebo na akomkoľvek zariadení s webovým prehliadačom. Všetky dary sa automaticky evidujú v aplikácii B1 Admin.
+Su iglesia ya acepta donaciones en línea. Los miembros pueden dar a través de su sitio web, la aplicación B1 o cualquier dispositivo con navegador web. Todas las donaciones se registran automáticamente en B1 Admin.
 
-## Súvisiace články
+## Artículos relacionados
 
-- [Fondy](../donations/funds.md) — vytváranie a správa kategórií darovania
-- [Dávky](../donations/batches.md) — usporiadanie darov do skupín
-- [Zaznamenávanie darov](../donations/recording-donations.md) — manuálne zadanie hotovostných darov a darov šekom
-- [Import zo Stripe](../donations/stripe-import.md) — načítanie online transakcií do aplikácie B1 Admin
-- [Prehľady darov](../donations/donation-reports.md) — zobrazenie trendov a súčtov darovania
-- [Výpisy darov](../donations/giving-statements.md) — generovanie daňových výpisov na konci roka
-- [Darovanie (web)](../../b1-church/giving/making-donations.md) — skúsenosť členov s darovaním
-- [Darovanie (mobil)](../../b1-church/giving/making-donations.md) — darovanie z mobilnej aplikácie
+- [Fondos](../donations/funds.md): crear y gestionar categorías de donación
+- [Lotes](../donations/batches.md): organizar las donaciones en grupos
+- [Registrar donaciones](../donations/recording-donations.md): introducir manualmente donaciones en efectivo y con cheque
+- [Importación de Stripe](../donations/stripe-import.md): incorporar transacciones en línea a B1 Admin
+- [Informes de donaciones](../donations/donation-reports.md): consultar las tendencias y totales de ofrendas
+- [Estados de ofrendas](../donations/giving-statements.md): generar los estados fiscales de fin de año
+- [Realizar donaciones](../../b1-church/giving/making-donations.md): la experiencia de ofrenda de los miembros en B1.church y en la aplicación B1

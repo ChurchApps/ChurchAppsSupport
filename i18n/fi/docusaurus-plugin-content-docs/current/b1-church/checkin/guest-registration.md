@@ -1,69 +1,70 @@
 ---
-title: "Gästeregistrierung"
-description: "Rekisteröi itsesi ja perheesi ensikertalaisvieraiksi B1 Checkinin QR-lomakkeella, jotta vapaaehtoiset voivat kirjata sinut sisään saapuessasi."
+title: "Vierasrekisteröinti"
+description: "Rekisteröi itsesi ja perheesi ensikertalaisina vieraina B1 Checkinin QR-lomakkeella, jotta vapaaehtoiset voivat kirjata sinut sisään saapuessasi."
 ---
 
-# Gästeregistrierung
+# Vierasrekisteröinti
 
 <div class="article-intro">
 
-Wenn Sie eine Kirche zum ersten Mal besuchen, können Sie sich und Ihre Familie über die Gästeregistrierungsseite als Gäste registrieren. Dadurch wird ein Eintrag im System der Kirche erstellt, damit ehrenamtliche Mitarbeiter Sie bei Ihrer Ankunft einchecken können.
+Jos vierailet seurakunnassa ensimmäistä kertaa, voit rekisteröidä itsesi ja perheesi vieraiksi vierasrekisteröintisivulla. Tämä luo tietueen seurakunnan järjestelmään, jotta vapaaehtoiset voivat kirjata sinut sisään saapuessasi.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Ennen aloittamista</h4>
 
-- In Ihrer Kirche muss die QR-Gästeregistrierung aktiviert sein. Ist dies nicht der Fall, zeigt die Seite die Meldung „Gästeregistrierung ist für diese Kirche nicht aktiviert.“ an.
-- Scannen Sie den QR-Code, der am Check-in-Terminal angezeigt wird, tippen Sie am Terminal auf **Hier registrieren**, oder erhalten Sie einen Link von einem ehrenamtlichen Mitarbeiter
+- Seurakunnassa on oltava otettu käyttöön QR-vierasrekisteröinti. Jos se ei ole käytössä, sivulla näkyy teksti "Vierasrekisteröinti ei ole käytössä tälle seurakunnalle."
+- Skannaa seurakunnan sisäänkirjautumisautomaatissa näkyvä QR-koodi, napauta automaatissa **Rekisteröidy tässä** tai pyydä linkki seurakunnan vapaaehtoiselta
 
 </div>
 
-## So funktioniert die Gästeregistrierung
+## Miten vierasrekisteröinti toimii
 
-Die Gästeregistrierung ist für Besucher gedacht, die noch kein Konto haben. Tippen Sie am Check-in-Terminal der Kirche auf **Als Gast registrieren**, um einen QR-Code anzuzeigen, der zur Registrierungsseite führt. Den Link können Sie auch von einem ehrenamtlichen Mitarbeiter oder Empfangsmitarbeiter erhalten oder auf einem Flyer bzw. der Website der Kirche finden.
+Vierasrekisteröinti on suunniteltu vierailijoille, joilla ei vielä ole tiliä. Seurakunnan sisäänkirjautumisautomaatissa napauta **Rekisteröidy vieraana** näyttääksesi QR-koodin, joka vie rekisteröintisivulle. Voit myös saada linkin vapaaehtoiselta tai toivottajalta tai löytää sen mainoslehdeltä tai seurakunnan verkkosivuilta.
 
-Kein Telefon zur Hand? Tippen Sie im selben QR-Code-Fenster am Terminal auf **Hier registrieren**, um das Formular direkt am Terminal auszufüllen. Wie dies am Terminal funktioniert, erfahren Sie unter [Als Gast registrieren](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest).
+Eikö puhelin ole käden ulottuvilla? Napauta automaatin samassa QR-koodinäkymässä **Rekisteröidy tässä** täyttääksesi lomakkeen suoraan automaatilla. Katso [Rekisteröityminen vieraana](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest), jos haluat tietää, miten tämä toimii automaatilla.
 
-Die Seite öffnet sich mit dem Titel **Gästeregistrierung**. Wenn die Kirche ein Kopfbild hinzugefügt hat, erscheint es oben auf der Seite; andernfalls sehen Sie ein kleines Symbol.
+Sivu avautuu otsikolla **Vierasrekisteröinti**. Jos seurakunta on lisännyt otsikkokuvan, se näkyy sivun yläosassa. Muussa tapauksessa näet pienen kuvakkeen.
 
-## Ihre Familie registrieren
+## Perheesi rekisteröiminen
 
-1. **Scannen Sie den QR-Code** am Check-in-Terminal oder öffnen Sie den Link zur Gästeregistrierung auf Ihrem Telefon. (Wenn Sie am Terminal auf **Hier registrieren** getippt haben, ist das Formular bereits geöffnet.)
-2. Füllen Sie die Karte **Hauptkontakt** aus. **Vorname** und **Nachname** sind immer erforderlich. Je nachdem, was Ihre Kirche abfragt, sehen Sie möglicherweise zusätzlich:
-   - **E-Mail** und **Telefon**
-   - **Familienstand**
-   - **Wohnadresse** -- **Straße**, **Adresszusatz**, **Ort**, **Bundesland** und **PLZ**. Diese Angaben gelten für die gesamte Familie.
-3. Das Formular beginnt mit einer zweiten Karte für **Familienmitglied 2**. Geben Sie Vor- und Nachnamen ein, oder tippen Sie auf das **X** in der Ecke der Karte, um sie zu entfernen, wenn Sie sich allein registrieren.
-4. Um weitere Personen hinzuzufügen, tippen Sie auf **Familienmitglied hinzufügen**. Die neue Karte übernimmt automatisch den Nachnamen des Hauptkontakts. Sie können bis zu 10 Personen gleichzeitig registrieren.
-5. Falls Ihre Kirche diese Angaben abfragt, kann die Karte jeder Person auch **Geburtsdatum**, **Geschlecht** und **Klassenstufe** enthalten.
-6. Wenn Ihre Kirche unterhalb der Familienmitglieder ein Feld **Kommentare** vorsieht, nutzen Sie es, um alles mitzuteilen, was die Kirche wissen sollte (bis zu 1.000 Zeichen).
-7. Tippen Sie auf **Registrieren**, um Ihre Angaben abzusenden.
+1. **Skannaa QR-koodi** sisäänkirjautumisautomaatilla tai avaa vierasrekisteröinnin linkki puhelimellasi. (Jos napautit automaatilla **Rekisteröidy tässä**, lomake on jo auki.)
+2. Täytä **Ensisijainen yhteyshenkilö** -kortti. **Etunimi** ja **Sukunimi** ovat aina pakollisia. Seurakunnan pyynnöistä riippuen saatat nähdä myös seuraavat kentät:
+   - **Titteli** (esim. Mr, Mrs, Dr tai Pastor), nimen edessä
+   - **Sähköposti** ja **Puhelin**
+   - **Siviilisääty**
+   - **Kotiosoite** -- **Katuosoite**, **Osoiterivi 2**, **Kaupunki**, **Osavaltio** ja **Postinumero**. Tämä on koko perheen yhteinen osoite.
+3. Lomake alkaa toisella kortilla, **Perheenjäsen 2**. Anna tämän henkilön etu- ja sukunimi tai poista kortti napauttamalla kortin kulmassa olevaa **X**-painiketta, jos rekisteröidyt yksin.
+4. Lisätäksesi henkilöitä napauta **Lisää perheenjäsen**. Uuden kortin sukunimi täyttyy automaattisesti ensisijaisen yhteyshenkilön sukunimellä. Voit rekisteröidä enintään 10 henkilöä kerralla.
+5. Jos seurakunta pyytää niitä, jokaisen henkilön kortissa voi olla myös **Titteli**, **Puhelin**, **Syntymäaika**, **Sukupuoli** ja **Luokka**. Ensisijaisen yhteyshenkilön jälkeen jokaisessa kortissa voidaan myös kysyä **Kotitalouden rooli** -- **Puoliso**, **Lapsi** tai **Muu**, jotta seurakunta tietää, miten jokainen henkilö on sukua ensisijaiselle yhteyshenkilölle.
+6. Jos seurakunta on lisännyt **Kommentit**-kentän perheenjäsenten alapuolelle, käytä sitä kertoaksesi seurakunnalle mitä tahansa haluamasi (enintään 1 000 merkkiä).
+7. Lähetä lomake napauttamalla **Rekisteröidy**.
 
-Mit einem Sternchen (`*`) markierte Felder sind Pflichtfelder. Sind welche leer, zeigt das Formular die Meldung „Bitte füllen Sie alle Pflichtfelder aus.“ an, und es wird erst etwas gesendet, wenn Sie alle ausgefüllt haben.
+Kentät, joissa on tähti (`*`), ovat pakollisia. Jos joku niistä jää tyhjäksi, lomakkeelle ilmestyy teksti "Täytä kaikki pakolliset kentät." Lomaketta ei lähetetä ennen kuin täytät kentät.
 
-## Nach der Registrierung
+## Rekisteröinnin jälkeen
 
-Nachdem Sie das Formular abgesendet haben, erscheint ein Bestätigungsbildschirm mit der Meldung: „Registrierung abgeschlossen -- Alles erledigt! Ein Mitarbeiter wird Sie in Kürze einchecken.“
+Kun lähetät lomakkeen, näkyviin tulee vahvistusnäkymä, jossa lukee: "Rekisteröinti valmis -- kaikki on kunnossa! Henkilökunnan jäsen kirjaa sinut sisään pian."
 
-Ihre Registrierung legt Einträge in der Datenbank der Kirche an:
+Rekisteröintisi luo tietueita seurakunnan tietokantaan:
 
-- Ein **Haushalt** wird mit dem Nachnamen des Hauptkontakts angelegt, wobei der Hauptkontakt als Haushaltsvorstand eingetragen wird.
-- Für jedes Familienmitglied werden **Personendatensätze** mit dem Mitgliedschaftsstatus „Besucher“ angelegt.
-- Eventuelle Kommentare werden als Notiz im Datensatz des Hauptkontakts gespeichert, damit die Mitarbeiter der Kirche sie lesen können.
-- Hat die Kirche eine Gruppe für neue Gäste festgelegt, wird Ihre Familie dieser Gruppe hinzugefügt. Die Kirche kann Ihre Anwesenheit außerdem automatisch erfassen, wenn Sie sich während eines geplanten Gottesdienstzeitpunkts dieser Gruppe registrieren.
-- Ein ehrenamtlicher Mitarbeiter oder Administrator kann Ihre Familie anschließend über das [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md)-Terminal einchecken.
+- **Kotitalous** luodaan ensisijaisen yhteyshenkilön sukunimen perusteella, ja ensisijainen yhteyshenkilö merkitään kotitalouden päämieheksi.
+- Jokaiselle perheenjäsenelle luodaan **henkilötietue**, jonka jäsenyyden tila on "Vieras". Jokaiselle perheenjäsenelle annetaan valitsemasi kotitalouden rooli, tai roolina on **Muu**, jos roolia ei kysytty.
+- Kaikki antamasi kommentit tallennetaan muistiinpanona ensisijaisen yhteyshenkilön tietueeseen, jotta seurakunnan henkilökunta voi lukea ne.
+- Jos seurakunta on valinnut uusille vierailijoille ryhmän, perheesi lisätään siihen. Seurakunta saattaa myös kirjata osallistumisesi automaattisesti, jos rekisteröidyt jonkin tuon ryhmän säännöllisen jumalanpalveluksen aikana.
+- Seurakunnan vapaaehtoinen tai ylläpitäjä voi sitten kirjata perheesi sisään [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md) -automaatilla.
 
 :::info
-Wenn Sie sich erneut mit demselben Vornamen und derselben E-Mail-Adresse oder Telefonnummer registrieren, erkennen die Unterlagen der Kirche Sie und verwenden Ihr bestehendes Profil, anstatt ein Duplikat anzulegen. Alle anderen Personen werden als neue Einträge hinzugefügt. Wenn Sie sich bereits registriert haben, können Sie auch einfach Ihren Namen oder Ihre Telefonnummer am Terminal suchen.
+Jos rekisteröidyt uudelleen samalla etunimellä ja samalla sähköpostiosoitteella tai puhelinnumerolla, seurakunnan tietueet tunnistavat sinut ja käyttävät olemassa olevaa profiiliasi sen sijaan, että lisäisivät kaksoiskappaleen. Muut henkilöt lisätään uusina. Jos olet jo rekisteröitynyt, voit myös hakea nimeäsi tai puhelinnumeroasi automaatilta.
 :::
 
 :::tip
-Wenn das Formular nach Ihrer E-Mail-Adresse fragt, hilft deren Angabe der Kirche, sich nach Ihrem Besuch bei Ihnen zu melden.
+Jos lomake pyytää sähköpostiosoitettasi, sen antaminen auttaa seurakuntaa ottamaan sinuun yhteyttä vierailusi jälkeen.
 :::
 
-## Verwandte Artikel
+## Aiheeseen liittyvät artikkelit
 
-- [Selbst-Check-in](./self-checkin.md) -- Checken Sie sich nach der Registrierung selbst ein
-- [Gäste hinzufügen (Terminal)](../../b1-checkin/check-in/adding-guests.md) -- Wie ehrenamtliche Mitarbeiter am Terminal Gäste hinzufügen
-- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Wie Kirchenadministratoren die QR-Gästeregistrierung einrichten
+- [Itsesisäänkirjautuminen](./self-checkin.md) -- Kirjaa itsesi sisään rekisteröinnin jälkeen
+- [Vieraiden lisääminen (automaatti)](../../b1-checkin/check-in/adding-guests.md) -- Miten vapaaehtoiset lisäävät vieraita automaatilla
+- [Sisäänkirjautuminen](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Miten seurakunnan ylläpitäjät ottavat QR-vierasrekisteröinnin käyttöön

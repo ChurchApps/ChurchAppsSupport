@@ -1,47 +1,47 @@
 ---
-title: "Rendszergazda"
-description: "Áttekintés a Lessons.church adminfelületéről: programok, tanulmányok, leckék, források, statisztikák és külső tantervi szolgáltatók kezelése."
+title: "Adminisztráció"
+description: "A Lessons.church adminisztrációs felületének áttekintése a ChurchApps rendszerben: programok, tanulmányok, leckék, erőforrások, statisztikák és külső tananyag-szolgáltatók kezelése."
 ---
 
-# Rendszergazda
+# Adminisztráció
 
 <div class="article-intro">
 
-A Lessons.church rendszergazdai felülete az a hely, ahol a tartalomkészítők és adminisztrátorok kezelik a leckekönyvtárat. Innen építheti ki a tantervi struktúrát, tölthet fel erőforrásokat, tekintheti meg a használati statisztikákat, és csatlakoztathatja a harmadik féltől származó tartalomszolgáltatókat.
+A Lessons.church adminisztrációs felülete az a hely, ahol a tartalomkészítők és adminisztrátorok kezelik a leckekönyvtárat. Itt építheted ki a tananyag szerkezetét, tölthetsz fel erőforrásokat, tekintheted meg a használati statisztikákat, és csatlakoztathatod a külső tartalomszolgáltatókat.
 
 </div>
 
 :::warning
-A rendszergazdai felülethez megfelelő jogosultság szükséges. Ha nem látja az adminisztrációs lehetőségeket, forduljon egyházi adminisztrátorához a hozzáférés kéréséhez.
+Az adminisztrációs felülethez megfelelő jogosultság szükséges. Ha nem látod az adminisztrációs lehetőségeket, kérd a gyülekezeted adminisztrátorától a hozzáférést.
 :::
 
-## Mit tehet
+## Mit tehetsz?
 
-A rendszergazdai felület teljes körű irányítást biztosít a tartalom felett:
+Az adminisztrációs felület teljes körű irányítást biztosít a tartalmaid felett:
 
-- **Programok létrehozása és szerkesztése** -- Állítson be felső szintű tantervi sorozatokat nevekkel, leírásokkal, képekkel és slugokkal.
-- **Tanulmányok kezelése** -- Szervezze a kapcsolódó leckékből álló csoportokat minden program keretében.
-- **Leckék összeállítása** -- Adjon hozzá egyedi leckéket helyszínekkel, szakaszokkal, szerepkörökkel és műveletekkel.
-- **Erőforrások feltöltése** -- Csatoljon letölthető fájlokat (PDF-eket, foglalkozási lapokat, képeket) program, tanulmány vagy lecke szinten.
-- **Statisztikák megtekintése** -- Lássa, hogy mely tartalmakat töltik le, kik és honnan.
-- **Szolgáltatók beállítása** -- Csatlakoztasson külső tantervi szolgáltatókat, amelyek az Open Lesson Formatot használják.
-- **Évtervek** -- Tegyen közzé 1., 2., 3. hetes sorrendeket bármely tanterv számára. Az egyházak ezeket a B1 Adminban alkalmazzák.
+- **Programok létrehozása és szerkesztése** -- Állíts be legfelső szintű tananyag-sorozatokat névvel, leírással, képekkel és slugokkal.
+- **Tanulmányok kezelése** -- Rendezd csoportokba a kapcsolódó leckéket az egyes programokon belül.
+- **Leckék összeállítása** -- Adj hozzá egyedi leckéket helyszínekkel, szakaszokkal, szerepekkel és műveletekkel.
+- **Erőforrások feltöltése** -- Csatolj letölthető fájlokat (PDF-eket, feladatlapokat, képeket) program, tanulmány vagy lecke szinten.
+- **Statisztikák megtekintése** -- Nézd meg, melyik tartalmat töltik le, ki és hol.
+- **Szolgáltatók beállítása** -- Csatlakoztass külső tananyag-szolgáltatókat, amelyek az Open Lesson Format formátumot használják. Ez a **Külső szolgáltatók** oldalon történik, nem az adminisztrációs felületen.
+- **Évtervek** -- Tegyél közzé 1., 2., 3. … hetes sorozatokat bármely tananyaghoz. A gyülekezetek a B1 Adminban alkalmazzák ezeket.
 
-## A tartalom szerkezete
+## Tartalmi hierarchia
 
-Adminisztrátorként érdemes megértenie, hogyan épül fel a tartalom:
+Adminisztrátorként érdemes megértened, hogyan épül fel a tartalom:
 
-1. A **programok** egy vagy több tanulmányt tartalmaznak.
-2. A **tanulmányok** egy vagy több leckét tartalmaznak.
-3. A **leckék** egy vagy több helyszínt (korcsoportonkénti változatot) tartalmaznak.
-4. A **helyszínek** szakaszokat tartalmaznak, a szakaszok pedig szerepkör szerinti műveleteket.
+1. **Programok** egy vagy több tanulmányt tartalmaznak.
+2. **Tanulmányok** egy vagy több leckét tartalmaznak.
+3. **Leckék** egy vagy több helyszínt (korcsoportonkénti változatot) tartalmaznak.
+4. **Helyszínek** szakaszokat tartalmaznak, a szakaszok pedig szerepalapú műveleteket.
 
-Minden szintre csatolhatók saját letölthető erőforrások.
+Minden szinthez saját letölthető erőforrások csatolhatók.
 
 ## Következő lépések
 
 - [Programok kezelése](./managing-programs.md) -- Programok létrehozása és beállítása
 - [Tanulmányok kezelése](./managing-studies.md) -- Tanulmányok hozzáadása egy programon belül
 - [Leckék kezelése](./managing-lessons.md) -- Leckék összeállítása helyszínekkel, szakaszokkal és műveletekkel
-- [Statisztikák](./statistics.md) -- Letöltési és használati adatok megtekintése
-- [Harmadik féltől származó szolgáltatók](./third-party-providers.md) -- Külső tantervi források csatlakoztatása
+- [Statisztikák](./statistics.md) -- Letöltési és használati adatok áttekintése
+- [Harmadik féltől származó szolgáltatók](./third-party-providers.md) -- Külső tananyag-források csatlakoztatása

@@ -1,21 +1,21 @@
 ---
 title: "Personalizarea lecțiilor"
-description: "Eliminați, ascundeți sau reordonați secțiuni și roluri dintr-o lecție Lessons.church și alegeți dacă modificările se aplică unei clase sau tuturor."
+description: "Eliminați sau reordonați secțiuni, roluri și acțiuni dintr-o lecție Lessons.church și alegeți dacă fiecare modificare se aplică unei singure săli sau tuturor."
 ---
 
 # Personalizarea lecțiilor
 
 <div class="article-intro">
 
-Acest ghid vă arată cum să personalizați o lecție pentru clasa dumneavoastră. Personalizările vă permit să eliminați, să ascundeți sau să reordonați conținutul, astfel încât voluntarii să vadă exact ce au nevoie -- nici mai mult, nici mai puțin.
+Acest ghid vă ghidează în personalizarea unei lecții pentru sala dumneavoastră. Personalizările vă permit să eliminați sau să reordonați conținutul, astfel încât voluntarii să vadă exact ce au nevoie -- nimic mai mult, nimic mai puțin.
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Configurați cel puțin o clasă](../classrooms/setting-up-classrooms.md) în portal
-- [Programați o lecție](../classrooms/scheduling-lessons.md) pentru clasa pe care doriți să o personalizați
+- [Configurați cel puțin o sală](../classrooms/setting-up-classrooms.md) în portal
+- [Programați o lecție](../classrooms/scheduling-lessons.md) în sala pe care doriți să o personalizați
 - Citiți [prezentarea generală a personalizării](./index.md) pentru a înțelege ce poate fi personalizat
 
 </div>
@@ -23,44 +23,59 @@ Acest ghid vă arată cum să personalizați o lecție pentru clasa dumneavoastr
 ## Deschiderea vizualizării de personalizare
 
 1. Autentificați-vă și navigați la **Portal**.
-2. Selectați **clasa** care are lecția pe care doriți să o personalizați.
-3. Faceți clic pe **lecția programată** pentru a o deschide.
-4. Faceți clic pe **Personalizează** pentru a intra în vizualizarea de personalizare.
+2. Selectați **sala** care conține lecția pe care doriți să o personalizați.
+3. În programul sălii, găsiți lecția și faceți clic pe **Personalizează** de sub numele ei.
 
-Veți vedea conținutul complet al lecției, împărțit în secțiuni, roluri și acțiuni.
+Pagina **Personalizează lecția** listează secțiunile lecției, cu rolurile fiecărei secțiuni și acțiunile fiecărui rol afișate dedesubt. Fiecare rând are butoane în partea dreaptă:
+
+- **Săgeata în sus** și **Săgeata în jos** -- Mută elementul cu un loc în sus sau în jos față de vecinii săi
+- **Șterge** (coșul de gunoi) -- Elimină elementul
+
+:::info
+**Personalizează** apare doar pentru lecțiile Lessons.church. Lecțiile programate de la un furnizor extern afișează în schimb **Vezi lecția**, și nu pot fi personalizate.
+:::
+
+## Alegerea sferei de aplicare a unei modificări
+
+De fiecare dată când faceți clic pe o săgeată sau pe coșul de gunoi, un meniu vă întreabă **Aplică personalizarea selectată la:**
+
+- **Această sală** -- Modificarea se aplică doar sălii curente. Celelalte săli nu sunt afectate.
+- **Toate sălile** -- Modificarea se aplică în toate sălile din biserica dumneavoastră.
+
+Alegeți una dintre opțiuni, iar modificarea se salvează imediat. Nu există un pas separat de salvare.
 
 ## Eliminarea secțiunilor
 
-Dacă o secțiune nu se aplică clasei dumneavoastră, o puteți elimina complet. Acest lucru este util atunci când o lecție include conținut pentru mai multe grupe de vârstă, iar dumneavoastră aveți nevoie doar de una. De exemplu, dacă o lecție are atât o secțiune „Activitate pentru preșcolari", cât și o secțiune „Activitate pentru elevi de școală primară", puteți elimina pe cea care nu se potrivește clasei dumneavoastră.
+Dacă o secțiune nu se potrivește sălii dumneavoastră, o puteți elimina complet. Acest lucru este util atunci când o lecție include conținut pentru mai multe grupe de vârstă, iar dumneavoastră aveți nevoie doar de una. De exemplu, dacă o lecție are atât o secțiune „Activitate pentru preșcolari", cât și una „Activitate pentru elevi de școală primară", puteți elimina pe cea care nu se potrivește sălii dumneavoastră.
 
 1. Găsiți secțiunea pe care doriți să o eliminați.
-2. Faceți clic pentru a **elimina** sau a **ascunde** secțiunea.
-3. Secțiunea nu va mai apărea voluntarilor care vizualizează această lecție.
+2. Faceți clic pe butonul **Șterge** (coșul de gunoi).
+3. Alegeți **Această sală** sau **Toate sălile**.
 
-## Ascunderea rolurilor sau a acțiunilor
+Secțiunea este afișată ca eliminată, împreună cu toate rolurile și acțiunile sale, iar voluntarii nu o vor mai vedea pentru această lecție.
 
-În cadrul unei secțiuni, puteți ascunde roluri sau acțiuni specifice. De exemplu, dacă o secțiune include un rol de „Conducător al închinării", dar clasa dumneavoastră nu are unul, puteți ascunde doar acel rol, fără a elimina întreaga secțiune.
+## Eliminarea rolurilor sau acțiunilor
 
-1. Extindeți secțiunea pentru a vedea rolurile și acțiunile acesteia.
-2. Faceți clic pentru a **ascunde** orice rol sau acțiune de care nu aveți nevoie.
+În cadrul unei secțiuni, puteți elimina roluri sau acțiuni specifice. De exemplu, dacă o secțiune include rolul „Lider de închinare", dar sala dumneavoastră nu are unul, puteți elimina doar acest rol, fără a elimina întreaga secțiune.
+
+1. Găsiți rolul sau acțiunea din lista de sub secțiunea sa.
+2. Faceți clic pe butonul **Șterge** (coșul de gunoi) și alegeți sfera de aplicare a modificării.
 
 ## Reordonarea conținutului
 
-Puteți rearanja secțiunile și acțiunile pentru a le potrivi cu fluxul pe care îl preferați:
+Puteți rearanja secțiunile, rolurile și acțiunile pentru a se potrivi fluxului pe care îl preferați:
 
-1. Trageți secțiunile sau acțiunile pentru a le muta în sus sau în jos în ordine.
-2. Noua ordine este cea pe care o vor vedea voluntarii atunci când vizualizează lecția.
+1. Faceți clic pe **Săgeata în sus** sau **Săgeata în jos** de lângă elementul pe care doriți să îl mutați.
+2. Alegeți sfera de aplicare a modificării. Elementul schimbă locul cu vecinul său.
 
-## Salvarea personalizării
+Repetați până când elementele sunt în ordinea dorită. Noua ordine este cea pe care o vor vedea voluntarii atunci când vizualizează lecția.
 
-Când ați terminat de făcut modificările, salvați personalizarea. Vi se va cere să alegeți modul în care se aplică:
+## Anularea unei eliminări
 
-- **Doar această clasă** -- Modificările se aplică doar clasei curente. Celelalte clase nu sunt afectate.
-- **Toate clasele** -- Modificările se aplică tuturor claselor din biserica dumneavoastră.
-- **Eliminați personalizarea** -- Dacă ați personalizat anterior această lecție și doriți să reveniți la conținutul original, alegeți această opțiune pentru a șterge modificările.
+Pentru a readuce un element pe care l-ați eliminat, faceți din nou clic pe butonul **Șterge**. Meniul oferă acum și opțiunea **Niciuna**. Alegeți **Niciuna** pentru a anula eliminarea și a afișa din nou elementul sau alegeți cealaltă opțiune pentru a schimba sfera de aplicare a eliminării.
 
 :::tip
-Începeți prin a personaliza o singură lecție pentru o clasă. Odată ce vă simțiți confortabil cu procesul, puteți aplica personalizările mai larg, la toate clasele.
+Începeți prin a personaliza o singură lecție pentru o singură sală. Odată ce vă simțiți confortabil cu procesul, puteți aplica personalizările mai larg, în toate sălile.
 :::
 
 ## Când să personalizați
@@ -68,9 +83,9 @@ Când ați terminat de făcut modificările, salvați personalizarea. Vi se va c
 Personalizarea este cel mai util atunci când:
 
 - O lecție are conținut pentru mai multe grupe de vârstă, iar dumneavoastră doriți să afișați doar părțile relevante.
-- Clasa dumneavoastră nu folosește anumite roluri (cum ar fi un conducător al închinării dedicat sau un voluntar pentru tehnică).
-- Preferați o altă ordine a fluxului lecției față de cea implicită.
+- Sala dumneavoastră nu folosește anumite roluri (precum un lider de închinare dedicat sau un voluntar tehnic).
+- Preferați o altă ordine a fluxului lecției decât cea implicită.
 
 :::info
-Nu trebuie să personalizați fiecare lecție. Dacă, în forma sa actuală, conținutul funcționează pentru clasa dumneavoastră, puteți sări peste acest pas și puteți trece direct la [prezentare](../presenting/index.md).
+Nu este nevoie să personalizați fiecare lecție. Dacă and conținutul funcționează așa cum este pentru sala dumneavoastră, puteți sări peste acest pas și mergeți direct la [prezentare](../presenting/index.md).
 :::

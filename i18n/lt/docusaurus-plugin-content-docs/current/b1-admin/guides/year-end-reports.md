@@ -1,13 +1,13 @@
 ---
-title: "Guide: Generate Year-End Giving Reports"
-description: "Baikite metų aukų įrašus B1 Admin, patikrinkite fondų mokesčių nustatymus ir sukurkite mokestinėms lengvatoms tinkančias pažymas visiems aukotojams."
+title: "Guide: Generuoti metinius aukų pažymas"
+description: "B1 Admin sistemoje užbaikite metų aukų įrašus, patikrinkite fondų mokesčių nustatymus ir sugeneruokite mokesčių lengvatą suteikiančias aukų pažymas kiekvienam aukotojui."
 ---
 
-# Generate Year-End Giving Reports
+# Metinių aukų pažymų generavimas
 
 <div class="article-intro">
 
-Pratęskite metų pabaigos procesą: patikslinkite savo aukų įrašus, patikrinkite fondų nustatymus ir sugeneruokite kiekvienam aukotojui mokesčių lengvatą turinčias aukojimo ataskaitas. Tai paprastai daroma ankstyvą sausį už praėjusius kalendorinius metus.
+Peržiūrėkite metinį procesą: užbaikite aukų įrašus, patikrinkite fondų nustatymus ir sugeneruokite mokesčių lengvatą suteikiančias aukų pažymas kiekvienam aukotojui. Paprastai tai atliekama sausio pradžioje už praėjusius kalendorinius metus.
 
 </div>
 
@@ -15,80 +15,80 @@ Pratęskite metų pabaigos procesą: patikslinkite savo aukų įrašus, patikrin
 <h4>Prieš pradedant</h4>
 
 - B1 Admin paskyra su prieiga prie finansų
-- Aukos, įrašytos per visus metus (internetu per Stripe ir (arba) įvestos rankiniu būdu)
+- Aukos, įrašytos per metus (internetu per Stripe ir (arba) įvestos rankiniu būdu)
 - Prieiga prie jūsų Stripe paskyros, jei priimate internetines aukas
 
 </div>
 
-## Step 1: Import Final Stripe Transactions
+## 1 veiksmas: importuokite paskutines Stripe operacijas
 
 Įsitikinkite, kad visos metų pabaigos internetinės aukos yra jūsų sistemoje.
 
-Vadovaukitės [Stripe importo](../donations/stripe-import.md) vadovu, kad:
+Vadovaukitės [Stripe importavimo](../donations/stripe-import.md) instrukcijomis, kad:
 
 1. Eitumėte į Donations > Stripe Import
-2. Pasirinktumėte datų intervalą, apimantį metų pabaigą (pvz., gruodžio 1 – gruodžio 31)
-3. Spustelėtumėte Preview, kad pirmiausia peržiūrėtumėte, tada Import Missing, kad baigtumėte
+2. Pasirinktumėte datų intervalą, apimantį metų pabaigą (pvz., gruodžio 1 – gruodžio 31 d.)
+3. Spustelėkite Preview, kad pirmiausia peržiūrėtumėte, tada Import Missing, kad užbaigtumėte
 
 :::warning
-Prieš generuodami ataskaitas, atlikite šį importą. Visos transakcijos, kurių neimportavote, nebus rodomos aukotojų ataskaitose.
+Prieš generuodami pažymas, atlikite šį importavimą. Visos operacijos, kurių neimportavote, nebus rodomos aukotojų pažymose.
 :::
 
-## Step 2: Review Donation Reports
+## 2 veiksmas: peržiūrėkite aukų ataskaitas
 
-Prieš generuodami ataskaitas, patikrinkite, ar jūsų įrašai teisingi.
+Prieš generuodami pažymas, patikrinkite, ar įrašai teisingi.
 
-Vadovaukitės [Aukų ataskaitų](../donations/donation-reports.md) vadovu, kad:
+Vadovaukitės [Aukų ataskaitų](../donations/donation-reports.md) instrukcijomis, kad:
 
-1. Patikrintumėte aukų suvestinės puslapį už visus metus
-2. Peržiūrėtumėte sumas pagal fondą ir palygintumėte jas su banko išrašais, kad rastumėte neatitikimus
-3. Prireikus spustelėtumėte atskiras partijas, kad patikrintumėte duomenis apie kiekvieną aukotoją
+1. Patikrintumėte visų metų aukų suvestinės puslapį
+2. Peržiūrėtumėte sumas pagal fondą ir palygintumėte jas su banko išrašais, kad aptiktumėte neatitikimus
+3. Prireikus spustelėtumėte atskiras partijas, kad patikrintumėte duomenis pagal aukotoją
 
-## Step 3: Verify Fund Tax Status
+## 3 veiksmas: patikrinkite fondų mokestinį statusą
 
-Įsitikinkite, kad kiekvieno fondo mokesčių lengvatos nustatymas yra teisingas, kad ataskaitos būtų tikslios.
+Įsitikinkite, kad kiekvieno fondo nustatymas dėl mokesčių lengvatos yra teisingas, kad pažymos būtų tikslios.
 
-Vadovaukitės [Fondų](../donations/funds.md) vadovu, kad:
+Vadovaukitės [Fondų](../donations/funds.md) instrukcijomis, kad:
 
 1. Atidarytumėte kiekvieną fondą ir patvirtintumėte, kad nustatymas dėl mokesčių lengvatos yra teisingas
 
 :::info
-Aukų ataskaitose bus rodomos tik aukos fondams, pažymėtiems kaip turintiems mokesčių lengvatą. Jei fondas turėtų turėti mokesčių lengvatą, bet taip nepažymėtas, prieš generuodami ataskaitas atnaujinkite jį.
+Pažymose bus rodomos tik aukos fondams, pažymėtiems kaip mokesčių lengvatą suteikiantys. Jei fondas turėtų būti mokesčių lengvatą suteikiantis, bet taip nepažymėtas, prieš generuodami pažymas jį atnaujinkite.
 :::
 
-## Step 4: Generate Giving Statements
+## 4 veiksmas: sugeneruokite aukų pažymas
 
-Sukurkite oficialias aukojimo ataskaitas savo aukotojams.
+Sukurkite oficialias aukotojams skirtas aukų pažymas.
 
-Vadovaukitės [Aukojimo ataskaitų](../donations/giving-statements.md) vadovu, kad:
+Vadovaukitės [Aukų pažymų](../donations/giving-statements.md) instrukcijomis, kad:
 
 1. Eitumėte į **Donations > Giving Statements**
-2. Iš išskleidžiamojo sąrašo pasirinktumėte metus ir peržiūrėtumėte suvestinės statistiką
+2. Išskleidžiamajame sąraše pasirinktumėte metus ir peržiūrėtumėte suvestinės statistiką
 3. Pasirinktumėte atsisiuntimo būdą:
    - **Download ZIP** — atskiri CSV failai, po vieną kiekvienam aukotojui
-   - **Print All** — spausdinimui skirtas vaizdas, kiekviena ataskaita – naujame puslapyje, viršuje – jūsų bažnyčios logotipas (jei jį įkėlėte)
+   - **Print All** — spausdinimui skirtas vaizdas, kiekviena pažyma atskirame puslapyje, viršuje su jūsų bažnyčios logotipu (jei įkėlėte)
 
 :::tip
-Ataskaitas generuokite ankstyvą sausį, kol įrašai dar šviežūs. Tai suteiks laiko ištaisyti problemas prieš siunčiant jas paštu.
+Generuokite pažymas sausio pradžioje, kol įrašai dar šviežūs. Tai suteiks laiko pastebėti problemas prieš siunčiant pažymas.
 :::
 
-## Step 5: Distribute to Donors
+## 5 veiksmas: pateikite pažymas aukotojams
 
-Pateikite ataskaitas aukotojams.
+Pasirūpinkite, kad pažymos pasiektų aukotojus.
 
-1. Atspausdinkite ir išsiųskite ataskaitas paštu arba elektroniniu paštu atsiųskite atskirus CSV failus aukotojams
-2. Nariai taip pat gali peržiūrėti savo aukojimo istoriją ir spausdinti ataskaitas iš [B1.church](../../b1-church/giving/donation-history.md) ir [B1 Mobile programėlės](../../b1-church/giving/donation-history.md)
+1. Atspausdinkite ir išsiųskite pažymas paštu arba el. paštu išsiųskite atskirus CSV failus aukotojams
+2. Nariai taip pat gali peržiūrėti savo aukų istoriją ir atsispausdinti pažymas [B1.church arba B1 App](../../b1-church/giving/donation-history.md) programėlėse
 
-## You're Done!
+## Viskas atlikta!
 
-Jūsų metų pabaigos aukojimo ataskaitos paruoštos. Aukotojai gavo mokesčių lengvatą turinčias ataskaitas, o jūsų finansiniai įrašai už metus užbaigti.
+Jūsų metinės aukų ataskaitos baigtos. Aukotojai gavo mokesčių lengvatą suteikiančias pažymas, o jūsų finansiniai įrašai už metus užbaigti.
 
-## Related Articles
+## Susiję straipsniai
 
-- [Stripe importas](../donations/stripe-import.md) — importuoti internetines transakcijas
+- [Stripe importavimas](../donations/stripe-import.md) — importuoti internetines operacijas
 - [Aukų ataskaitos](../donations/donation-reports.md) — peržiūrėti aukojimo tendencijas ir sumas
 - [Fondai](../donations/funds.md) — tvarkyti fondus ir mokesčių lengvatos nustatymus
-- [Aukojimo ataskaitos](../donations/giving-statements.md) — generuoti metų pabaigos ataskaitas
-- [Aukų įrašymas](../donations/recording-donations.md) — rankiniu būdu įvesti grynųjų pinigų ar čekių aukas
-- [Aukų istorija (internetu)](../../b1-church/giving/donation-history.md) — narių savitarnos peržiūra
-- [Internetinio aukojimo nustatymo vadovas](./online-giving.md) — pradinis Stripe ir aukojimo nustatymas
+- [Aukų pažymos](../donations/giving-statements.md) — generuoti metines pažymas
+- [Aukų registravimas](../donations/recording-donations.md) — rankiniu būdu įvesti grynųjų ir čekių aukas
+- [Aukų istorija (žiniatinklis)](../../b1-church/giving/donation-history.md) — savitarnos vaizdas nariams
+- [Internetinių aukų nustatymo vadovas](./online-giving.md) — pradinis Stripe ir aukojimo nustatymas

@@ -1,105 +1,99 @@
 ---
-title: "PWA-ként telepítés (Progresszív webalkalmazás)"
-description: "Telepítse a B1.church-et alkalmazásként iPhone-ra vagy Androidra a tagi portálról, ikonját hozzáadva a kezdőképernyőhöz Safariban vagy Chrome-ban."
+title: "Instalace jako aplikace (PWA)"
+description: "Nainstalujte B1.church jako aplikaci na iPhone nebo Android z portálu členů a přidejte její ikonu na plochu v Safari nebo Chrome."
 ---
 
-# PWA-ként telepítés (Progresszív webalkalmazás)
+# Instalace jako aplikace (PWA)
 
 <div class="article-intro">
 
-A B1.church támogatja a Progresszív webalkalmazásként (PWA) való telepítést, amellyel egyházad tagi portálját a telefonod kezdőképernyőjére helyezheted, akárcsak egy natív alkalmazást. Ez teljes képernyős, alkalmazásszerű élményt nyújt anélkül, hogy az App Store-ból vagy a Google Play-ből kellene letöltened.
+B1.church podporuje instalaci jako progresivní webová aplikace (PWA), která vám umožní přidat portál členů vaší církve na plochu telefonu stejně jako nativní aplikaci. Získáte tak celoobrazovkový zážitek podobný aplikaci, a to bez nutnosti použít App Store nebo Google Play.
 
 </div>
 
 <div class="prereqs">
-<h4>Mielőtt elkezdenéd</h4>
+<h4>Než začnete</h4>
 
-- Szükséged lesz egyházad B1.church címére: `https://yourchurchname.b1.church`
-- Használj támogatott böngészőt: **Safari** iOS-en vagy **Chrome** Androidon
+- Potřebujete adresu B1.church vaší církve: `https://yourchurchname.b1.church`
+- Použijte podporovaný prohlížeč: **Safari** na iOS nebo **Chrome** na Androidu
 
 </div>
 
-## Mi az a PWA?
+## Co je PWA?
 
-A Progresszív webalkalmazás (PWA) olyan weboldal, amely telepíthető az eszközödre, és natív alkalmazásként viselkedik. Amikor a B1.churchöt PWA-ként telepíted, az alkalmazás:
+Progresivní webová aplikace (PWA) je webová stránka, kterou lze nainstalovat do zařízení a která se chová jako nativní aplikace. Když nainstalujete B1.church jako PWA, dojde k těmto změnám:
 
-- Böngészősáv nélkül, teljes képernyőn nyílik meg
-- Egyházad ikonjával és nevével jelenik meg a kezdőképernyőn
-- Zökkenőmentesen illeszkedik egyházad arculatához és színtémájához
+- Aplikace se otevře na celou obrazovku bez navigačních lišt prohlížeče
+- Na ploše se zobrazí ikona a název vaší církve
+- Hladce funguje s brandingem a barvami motivu vaší církve
 
 :::tip
-A PWA nagyszerű választás, ha nem szeretnél külön alkalmazást telepíteni az App Store-ból vagy a Google Play-ből. Ugyanazt a tagi portál-élményt nyújtja, mint a böngészőben, kényelmesebb formában.
+PWA je skvělá volba, pokud dáváte přednost tomu, nenainstalovat samostatnou aplikaci z App Store nebo Google Play. Nabízí stejný zážitek z portálu členů jako v prohlížeči, jen v pohodlnější podobě.
 :::
 
-## A telepítési oldal
+## Stránka pro instalaci
 
-A telepítés legegyszerűbb módja egyházad erre a célra szolgáló telepítési oldala:
+Nejjednodušší způsob instalace je speciální instalační stránka vaší církve:
 
 ```
 https://yourchurchname.b1.church/mobile/install
 ```
 
-Az oldal felismeri az eszközödet, és automatikusan megjeleníti a megfelelő útmutatást:
+Stránka automaticky rozpozná vaše zařízení a zobrazí správné pokyny:
 
-- **iPhone** — lépésenkénti Safari „Hozzáadás a kezdőképernyőhöz” útmutató
-- **Android** — egy gombnyomással használható **Telepítés a kezdőképernyőre** gomb a Chrome-ban
-- **Asztali gép** — QR-kód, amelyet telefonoddal beolvashatsz, hogy ott nyisd meg a telepítési oldalt
+- **iPhone** — krok za krokem pokyny v Safari k funkci „Přidat na plochu“
+- **Android** — tlačítko **Nainstalovat na plochu** v Chrome, stačí jeden dotyk
+- **Počítač** — QR kód, který můžete naskenovat telefonem a otevřít tak instalační stránku přímo tam
 
-A telepítési oldalt több módon is elérheted:
+K instalační stránce se můžete dostat několika způsoby:
 
-- Koppints a tagi portál **Továbbiak** menüpontjára, majd a **Fiók** alatt a **Alkalmazás telepítése** lehetőségre (ez az elem eltűnik, ha az alkalmazás már telepítve van)
-- Kövesd egyházad által SMS-ben, e-mailben vagy a vasárnapi kivetítőn megosztott hivatkozást
-- Írd be a címet közvetlenül a böngésződbe
+- Klepněte na **Více** v portálu členů a pod **Účet** klepněte na **Nainstalovat aplikaci** (tato položka se skryje, jakmile je aplikace nainstalovaná)
+- Otevřete odkaz, který vaše církev sdílí v textové zprávě, e-mailu nebo na promítání během nedělní bohoslužby
+- Zadejte adresu přímo do prohlížeče
 
-:::tip Egyházi munkatársaknak
-Oszd meg a telepítési oldal hivatkozását gyülekezeteddel — tedd a hírlevélbe, a hetilapba vagy egy diára. Az oldal minden tagot végigvezet a saját eszközéhez tartozó pontos lépéseken. A **Alkalmazás letöltése** gyorsműveleten keresztül is elérheted a B1Admin irányítópultodon.
+:::tip Pro zaměstnance církve
+Sdílejte odkaz na instalační stránku se sborem — vložte ho do věstníku, zpravodaje nebo na promítací snímek. Každého člena provede přesnými kroky pro jeho zařízení. Dostanete se na ni také z rychlé akce **Stáhnout aplikaci** na vašem přehledovém panelu B1Admin.
 :::
 
-A PWA-t kézzel is telepítheted a B1.church oldalad **bármelyik** oldaláról, az alábbi böngészőlépésekkel — a telepítési oldal csupán a vezetett út ehhez.
+PWA můžete nainstalovat ručně také z **libovolné stránky** webu vaší církve B1.church podle níže uvedených kroků v prohlížeči — instalační stránka je jen průvodce, jak to udělat.
 
-Amikor elindítod a telepített alkalmazást, az közvetlenül a tagi irányítópultodra nyílik meg, és készen áll a bejelentkezésre.
+Když spustíte nainstalovanou aplikaci, otevře se přímo na vašem přehledu člena, připraveném k přihlášení.
 
-## Telepítés iPhone-ra (iOS — Safari)
+## Instalace na iPhone (iOS — Safari)
 
-1. Nyisd meg a **Safari** alkalmazást iPhone-odon, és lépj erre a címre: `https://yourchurchname.b1.church/mobile/install` (cseréld le a `yourchurchname` részt egyházad URL-azonosítójára).
-2. Koppints a **Megosztás** gombra (a felfelé mutató nyilas doboz) a képernyő alján.
-3. Görgess le a megosztási lapon, és koppints a **Hozzáadás a kezdőképernyőhöz** lehetőségre.
-4. A név alapértelmezés szerint egyházad neve lesz. Koppints a jobb felső sarokban lévő **Hozzáadás** gombra.
+1. Otevřete **Safari** na svém iPhonu a přejděte na `https://yourchurchname.b1.church/mobile/install` (místo `yourchurchname` vložte identifikátor URL vaší církve).
+2. Klepněte na tlačítko **Sdílet** (čtvereček se šipkou směřující nahoru) v dolní části obrazovky.
+3. V nabídce sdílení přejděte dolů a klepněte na **Přidat na plochu**.
+4. Název se předvyplní podle názvu vaší církve. Klepněte na **Přidat** v pravém horním rohu.
 
-Az alkalmazás ikonja megjelenik a kezdőképernyődön. Koppints rá, hogy teljes képernyős módban megnyisd a tagi portált.
+Ikona aplikace se zobrazí na ploše. Klepnutím ji otevřete portál členů na celou obrazovku.
 
 :::info
-iOS-en a PWA telepítéséhez Safari szükséges. Ha iPhone-on Chrome-ot vagy más böngészőt használsz, előbb válts Safarira.
+Instalace PWA na iOS vyžaduje Safari. Pokud na iPhonu používáte Chrome nebo jiný prohlížeč, nejprve přejděte na Safari.
 :::
 
-## Telepítés Androidra (Chrome)
+## Instalace na Android (Chrome)
 
-1. Nyisd meg a **Chrome** alkalmazást Android-eszközödön, és lépj erre a címre: `https://yourchurchname.b1.church/mobile/install`.
-2. Koppints a **Telepítés a kezdőképernyőre** gombra. (Ha a gomb nem érhető el, koppints a jobb felső sarokban lévő három pontos menüre (⋮), és válaszd a **Hozzáadás a kezdőképernyőhöz** lehetőséget.)
-3. Amikor a rendszer kéri, koppints a **Hozzáadás** gombra.
+1. Otevřete na svém zařízení Android **Chrome** a přejděte na `https://yourchurchname.b1.church/mobile/install`.
+2. Klepněte na tlačítko **Nainstalovat na plochu**. (Pokud tlačítko není k dispozici, klepněte na nabídku se třemi tečkami (⋮) v pravém horním rohu a vyberte **Přidat na plochu**.)
+3. Až se zobrazí výzva, klepněte na **Přidat**.
 
-Az alkalmazás ikonja megjelenik a kezdőképernyődön. Koppints rá a tagi portál megnyitásához.
+Ikona aplikace se zobrazí na ploše. Klepnutím ji otevřete portál členů.
 
-## Telepítés után
+## Po instalaci
 
-A telepítés után a PWA közvetlenül a tagi portálba nyílik meg, egy külön teljes képernyős ablakban. Ezeket teheted:
+Po instalaci se PWA otevře přímo do portálu členů v samostatném celoobrazovkovém okně. Můžete:
 
-- Bejelentkezés meglévő ChurchApps-fiókoddal
-- Hozzáférés minden olyan tagi funkcióhoz, amelyet egyházad engedélyezett — csoportok, adakozás, bejelentkezés, szolgálati tervek és még sok más
-- Bármikor visszatérhetsz hozzá a kezdőképernyőn lévő ikonra koppintva
+- Přihlásit se pomocí svého stávajícího účtu ChurchApps
+- Využívat všechny funkce pro členy, které vaše církev zpřístupnila — skupiny, dary, check-in, plány služeb a další
+- Kdykoli se do aplikace vrátit klepnutím na ikonu na ploše
 
-Az alkalmazás ikonján **értesítési jelvény** (egy kis szám a sarokban) jelenik meg, ha olvasatlan üzeneted van, így egy pillantással láthatod, ha valami új vár rád.
+Ikona aplikace zobrazí **odznak s oznámením** (malé číslo), když máte nepřečtené zprávy, takže na první pohled uvidíte, zda na vás čeká něco nového.
 
 :::info
-A PWA internetkapcsolatot igényel. Egyes natív alkalmazásokkal ellentétben nem gyorsítótárazza az összes tartalmat offline használatra.
+PWA vyžaduje připojení k internetu. Na rozdíl od některých nativních aplikací neukládá veškerý obsah do mezipaměti pro práci offline.
 :::
 
-## Mi a helyzet a régi B1 Mobile alkalmazással?
+## Související články
 
-Az iOS-en és Androidon használt, natív **B1 Mobile** alkalmazás elavultnak minősül, és már nem frissül. A PWA a támogatott mód arra, hogy telefonon elérd a B1.church tagi portált, és lefedi mindazokat a tagi funkciókat, amelyeket a natív alkalmazás nyújtott. Ha korábban a natív alkalmazást telepítetted, válts a PWA-ra, amikor neked megfelel.
-
-Az elavult alkalmazás történeti dokumentációjáért lásd a [B1 Mobile referenciaoldalt](/docs/b1-church/index.md).
-
-## Kapcsolódó cikkek
-
-- [Bejelentkezés](./logging-in.md) — Hogyan jelentkezhetsz be B1.church-fiókodba
+- [Přihlášení](./logging-in.md) — Jak se přihlásit ke svému účtu B1.church

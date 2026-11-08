@@ -1,13 +1,13 @@
 ---
 title: "Portalo apžvalga"
-description: "Apžvalga Lessons.church portale: klasės, suplanuotos pamokos, srauto nuorodos, išoriniai teikėjai ir administravimo įrankiai."
+description: "Apžiūrėkite Lessons.church portalą, kad rastumėte klases, peržiūrėtumėte suplanuotas pamokas, nustatytumėte srautų nuorodas ir pasiektumėte išorinius teikėjus bei administravimo įrankius."
 ---
 
 # Portalo apžvalga
 
 <div class="article-intro">
 
-Prisijungę prie Lessons.church, patenkate į **Portalą** -- jūsų bažnyčios valdymo skydelį klasėms ir pamokų tvarkaraščiams tvarkyti. Čia praleisite daugiausiai laiko, kai rengsite bažnyčios mokymo programą.
+Prisijungę prie Lessons.church, būsite nukreipti į **Portalą** — jūsų bažnyčios valdymo skydelį klasėms ir pamokų tvarkaraščiams tvarkyti. Čia praleisite daugiausiai laiko, organizuodami savo bažnyčios mokymo programą.
 
 </div>
 
@@ -21,40 +21,40 @@ Prisijungę prie Lessons.church, patenkate į **Portalą** -- jūsų bažnyčios
 
 ## Ką matote
 
-Portalas suskirstytas į dvi pagrindines sritis:
+Portalas atsidaro **Klasių valdymo** puslapyje, kuris suskirstytas į dvi pagrindines sritis:
 
-- **Klasės** (dešinėje pusėje) -- Jūsų bažnyčios klasių sąrašas. Spustelėkite klasės pavadinimą, kad peržiūrėtumėte jai suplanuotas pamokas. Taip pat čia galite pridėti naujų klasių arba redaguoti esamas.
-- **Suplanuotos pamokos** (kairėje pusėje) -- Pasirinkus klasę, šioje srityje rodomos jai suplanuotos pamokos. Jei dar nesukūrėte nė vienos klasės, pamatysite nustatymo instrukcijų vaizdo įrašą, kuris padės pradėti.
+- **Klasės** (dešinėje) — jūsų bažnyčios klasių sąrašas. Spustelėkite klasės pavadinimą, kad peržiūrėtumėte jai suplanuotas pamokas. Taip pat čia galite pridėti naujų klasių arba redaguoti esamas.
+- **Pamokų tvarkaraštis** (kairėje) — kai pasirinksite klasę, čia rodomos jai suplanuotos pamokos. Jei dar nesate nustatę nė vienos klasės, pamatysite sąrankos instrukcijų vaizdo įrašą, kuris padės pradėti.
 
 ## Ką galite daryti portale
 
 Portale galite:
 
-1. **Tvarkyti klases** -- Pridėti, redaguoti ar šalinti klases. Kiekvieną klasę galima susieti su savanorių komanda (kad jie matytų artėjančias pamokas B1 programėlėje) ir tėvų / mokinių grupe (kad jie galėtų pasiekti naujausias pamokas). Bažnyčios, kurios vis dar naudoja šį klasių tvarkaraščio būdą, tėvai, norėdami pamatyti namų darbams skirtą medžiagą, atidaro klasės puslapį (be `?upcoming=1`). Bažnyčios, naudojančios B1Admin plano tipus, namų darbų kortelę mato B1 programėlėje, susietos grupės puslapyje.
-2. **Peržiūrėti ir tvarkyti suplanuotas pamokas** -- Žiūrėkite, kurios pamokos artėja kiekvienai klasei, ir prireikus atlikite pakeitimus.
-3. **Prenumeruoti klasių srautus** -- Spustelėkite srauto piktogramą šalia klasės, kad gautumėte grojaraščio srauto URL, kurį galite naudoti su suderinamomis programomis.
-4. **Pasiekti išorinius teikėjus** -- Naudokite puslapį **Išoriniai teikėjai**, kad sukonfigūruotumėte trečiųjų šalių turinio šaltinius, palaikančius Atvirojo pamokų formato standartą. Tai leidžia įtraukti pamokas iš kitų teikėjų, be įmontuotos Lessons.church bibliotekos.
-5. **Pasiekti administravimo sritį** -- Jei turite administratoriaus teises, navigacijoje matysite parinktį **Administravimas**. Administravimo srityje galite tvarkyti programas, studijas ir pamokas turinio lygmeniu.
+1. **Tvarkyti klases** — pridėti, redaguoti arba pašalinti klases. Kiekvieną klasę galima susieti su savanorių komanda (kad jie matytų artėjančias pamokas B1 programėlėje) ir su tėvų ar mokinių grupe (kad jie galėtų pasiekti naujausias pamokas). Bažnyčios, vis dar naudojančios šį klasių tvarkaraščio kelią: tėvai, norėdami pamatyti namų darbams skirtą turinį, atidaro klasės puslapį (be `?upcoming=1`). Bažnyčios, naudojančios B1Admin plano tipus, namų darbų kortelę mato B1 programėlėje, susietos grupės puslapyje.
+2. **Peržiūrėti ir tvarkyti suplanuotas pamokas** — žiūrėkite, kurios pamokos artėja kiekvienai klasei, ir atlikite reikalingus pakeitimus.
+3. **Prenumeruoti klasių srautus** — spustelėkite srauto piktogramą šalia klasės, kad gautumėte grojaraščio srauto URL, kurį galėsite naudoti su suderinamomis programėlėmis.
+4. **Pasiekti išorinius teikėjus** — naudokite **Išoriniai teikėjai** puslapį, kad sukonfigūruotumėte trečiųjų šalių turinio šaltinius, palaikančius Atviro pamokų formatą (Open Lesson Format). Taip galite įtraukti pamokas iš kitų teikėjų, be įmontuotos Lessons.church bibliotekos.
+5. **Pasiekti administravimo sritį** — jei turite administratoriaus teises, navigacijoje matysite **Administravimas** parinktį. Administravimo srityje galite tvarkyti programas, studijas ir pamokas turinio lygmeniu.
 
 ## Navigacija
 
-Portalo navigaciją sudaro:
+Portalo navigacija apima:
 
-- **Pradžia** -- Grįžkite į viešą Lessons.church pradžios puslapį turiniui naršyti.
-- **Tvarkaraščiai** -- Pagrindinis portalo vaizdas klasėms ir pamokų tvarkaraščiams tvarkyti.
-- **Išoriniai teikėjai** -- Sukonfigūruokite trečiųjų šalių pamokų teikėjus.
-- **Administravimas** -- Tvarkykite programas, studijas ir pamokų turinį (matoma tik turint administratoriaus teises).
+- **Pagrindinis** — grįžti į viešąjį Lessons.church pagrindinį puslapį turinio naršymui.
+- **Tvarkaraščiai** — pagrindinis portalo vaizdas klasėms ir pamokų tvarkaraščiams tvarkyti.
+- **Išoriniai teikėjai** — sukonfigūruoti trečiųjų šalių pamokų teikėjus.
+- **Administravimas** — tvarkyti programas, studijas ir pamokų turinį (matoma tik turint administratoriaus teises).
 
 :::info
-Parinktis **Administravimas** rodoma tik tada, jei jūsų paskyrai suteiktos turinio redagavimo teisės. Dauguma bažnyčios darbuotojų kasdieniam valdymui naudos puslapius **Tvarkaraščiai** ir **Išoriniai teikėjai**.
+**Administravimas** parinktis rodoma tik tuo atveju, jei jūsų paskyrai suteiktos turinio redagavimo teisės. Dauguma bažnyčios darbuotojų kasdieniam valdymui naudos **Tvarkaraščių** ir **Išorinių teikėjų** puslapius.
 :::
 
-## Pradžia
+## Darbo pradžia
 
-Jei pirmą kartą apsilankote portale ir dar nesukūrėte nė vienos klasės, pradėkite spustelėdami **Pridėti pirmą klasę** klasių skydelyje. Suteikite klasei pavadinimą (pavyzdžiui, „Ikimokyklinė“ arba „3–5 klasės“) ir išsaugokite. Toliau galite pradėti [planuoti pamokas](../classrooms/scheduling-lessons.md).
+Jei pirmą kartą apsilankote portale ir dar nesukūrėte jokių klasių, pradėkite spustelėdami **Pridėti pirmą klasę** klasių skydelyje. Suteikite klasei pavadinimą (pavyzdžiui, „Ikimokyklinė“ arba „3–5 klasė“) ir išsaugokite. Nuo čia galite pradėti [planuoti pamokas](../classrooms/scheduling-lessons.md).
 
 ## Susiję straipsniai
 
-- [Klasių nustatymas](../classrooms/setting-up-classrooms.md) -- Išsamus klasių kūrimo ir valdymo vadovas
-- [Turinio naršymas](../browsing/index.md) -- Raskite programas ir studijas, kurias galima suplanuoti
-- [Išoriniai teikėjai](../browsing/external-providers.md) -- Pridėkite trečiųjų šalių mokymo programos šaltinius
+- [Klasių nustatymas](../classrooms/setting-up-classrooms.md) — išsamus klasių kūrimo ir tvarkymo vadovas
+- [Turinio naršymas](../browsing/index.md) — raskite programas ir studijas, kurias galima suplanuoti
+- [Išoriniai teikėjai](../browsing/external-providers.md) — pridėkite trečiųjų šalių mokymo programos šaltinius

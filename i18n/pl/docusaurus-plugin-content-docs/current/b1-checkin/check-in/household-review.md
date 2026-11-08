@@ -1,20 +1,20 @@
 ---
-title: "Przegląd Twojego gospodarstwa domowego"
-description: "Sprawdź swoje gospodarstwo domowe w B1 Checkin po wybraniu osoby, przypisz grupy na każdą porę nabożeństwa i oznacz gości lub wolontariuszy przed zameldowaniem."
+title: "Przegląd gospodarstwa domowego"
+description: "Sprawdź swoje gospodarstwo domowe w B1 Checkin po wybraniu osoby, a następnie przypisz grupy dla każdego terminu nabożeństwa i oznacz gości lub wolontariuszy przed zameldowaniem."
 ---
 
-# Przegląd Twojego gospodarstwa domowego
+# Przegląd gospodarstwa domowego
 
 <div class="article-intro">
 
-Po wybraniu osoby z wyników wyszukiwania aplikacja wczytuje całe Twoje gospodarstwo domowe i wyświetla je na ekranie przeglądu gospodarstwa domowego. To centralny punkt procesu meldowania, na którym widzisz wszystkich członków rodziny i możesz zarządzać ich przypisaniami do grup przed zameldowaniem.
+Po wybraniu osoby z wyników wyszukiwania aplikacja wczytuje całe Twoje gospodarstwo domowe i wyświetla je na ekranie przeglądu gospodarstwa domowego. To centralny punkt procesu meldowania, w którym możesz zobaczyć wszystkich członków rodziny i zarządzać ich przypisaniami do grup przed zameldowaniem.
 
 </div>
 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- [Wybierz nabożeństwo](./selecting-service.md) na ekranie usług
+- [Wybierz usługę](./selecting-service.md) na ekranie usług
 - [Wyszukaj członka](./looking-up-members.md) i wybierz go z wyników wyszukiwania
 
 </div>
@@ -23,26 +23,27 @@ Po wybraniu osoby z wyników wyszukiwania aplikacja wczytuje całe Twoje gospoda
 
 Każdy członek gospodarstwa domowego pojawia się jako karta zawierająca:
 
-- Jego **zdjęcie** (lub ikonę zastępczą, jeśli nie ma zdjęcia)
-- Jego **nazwę wyświetlaną**
+- **Zdjęcie** (lub ikonę zastępczą, jeśli zdjęcie nie jest zapisane)
+- **Wyświetlaną nazwę**
 - **Podsumowanie bieżących przypisań do grup** (wyświetlane jako małe etykiety pod nazwą, gdy karta jest zwinięta)
+- Odznakę **Już zameldowany**, jeśli dana osoba zameldowała się już na tę usługę dzisiaj
 - **Strzałkę rozwijania/zwijania** po prawej stronie
 
-## Rozwijanie karty członka
+## Rozwijanie członka
 
-Dotknij karty członka, aby ją rozwinąć. Po rozwinięciu zobaczysz wiersz dla każdej **godziny nabożeństwa** w wybranym nabożeństwie, od najwcześniejszej. Godziny nabożeństw są uporządkowane według zaplanowanego dnia i godziny rozpoczęcia, jeśli są ustawione; w przeciwnym razie według godziny zapisanej w nazwie (więc „9:00 AM” jest przed „10:30 AM”). Godziny nabożeństw bez godziny w nazwie znajdują się na końcu, w kolejności alfabetycznej. Każdy wiersz zawiera:
+Stuknij kartę członka, aby ją rozwinąć. Po rozwinięciu zobaczysz wiersz dla każdego **terminu nabożeństwa** w wybranej usłudze, od najwcześniejszego. Terminy są uporządkowane według zaplanowanego dnia i godziny rozpoczęcia, jeśli są ustawione; w przeciwnym razie według godziny zawartej w nazwie (więc „9:00 AM” jest przed „10:30 AM”). Terminy bez godziny w nazwie są na końcu, w porządku alfabetycznym. Każdy wiersz pokazuje:
 
-- **Nazwę godziny nabożeństwa** (na przykład „9:00 AM” lub „11:00 AM”)
-- **Grupy oferowane** o tej godzinie, wymienione pod nazwą (na przykład „Żłobek, Przedszkole, Klasa biblijna dla dorosłych”), dzięki czemu widzisz, które zajęcia są dostępne, zanim dokonasz wyboru
-- **Przycisk** pokazujący aktualnie przypisaną grupę lub „Wybierz grupę”, jeśli żadna grupa nie została jeszcze przypisana
+- **Nazwę terminu nabożeństwa** (na przykład „9:00 AM” lub „11:00 AM”)
+- **Grupy oferowane** w tym terminie, wymienione pod nazwą (na przykład „Nursery, Preschool, Adult Bible Class”), dzięki czemu widzisz, jakie zajęcia są dostępne, zanim dokonasz wyboru
+- **Przycisk** pokazujący aktualnie przypisaną grupę lub „Wybierz grupę”, jeśli grupa nie została jeszcze przypisana
 
-Jeśli godzina nabożeństwa ma [harmonogram meldowania](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) i jej okno jest obecnie zamknięte, wiersz zamiast przycisku pokazuje **Zamknięte** -- wraz z najbliższą godziną otwarcia, jeśli taka istnieje, na przykład **Zamknięte · otwarcie: niedz. 9:30 AM**. Jeśli dana osoba jest już zameldowana na tę godzinę nabożeństwa, wiersz zamiast tego pokazuje jej grupę z symbolem ptaszka (na przykład **Sala dzieci 1 · Zameldowany**), dzięki czemu widzisz, gdzie się znajduje, mimo że okno jest zamknięte.
+Jeśli termin nabożeństwa ma [harmonogram meldowania](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) i jego okno jest teraz zamknięte, wiersz zamiast przycisku pokazuje **Zamknięte** — wraz z następnym czasem otwarcia, jeśli jest dostępny, na przykład **Zamknięte · otwiera się niedz. 9:30 AM**. Jeśli dana osoba jest już zameldowana na ten termin, wiersz zamiast tego pokazuje jej grupę ze znacznikiem wyboru (na przykład **Kids Room 1 · Zameldowany**), dzięki czemu widzisz, gdzie się znajduje, mimo że okno jest już zamknięte.
 
-Dotknij przycisku grupy, aby przejść do [ekranu wyboru grupy](./group-assignment.md), gdzie możesz wybrać lub zmienić grupę dla tej osoby i godziny nabożeństwa.
+Stuknij przycisk grupy, aby przejść do [ekranu wyboru grupy](./group-assignment.md), gdzie możesz wybrać lub zmienić grupę dla tej osoby i danego terminu nabożeństwa.
 
-Rozwinięta karta pokazuje także etykiety **Członek**, **Gość** i **Wolontariusz**. Dotknij jednej z nich, aby określić, jak ta osoba się melduje — domyślnie jest to Członek. Ma to znaczenie w salach dla dzieci: wolontariusze są wliczani do stosunku wolontariuszy do dzieci w sali, a goście są liczeni w ramach ewentualnego limitu gości ustawionego przez Twój kościół.
+Rozwinięta karta pokazuje też etykiety **Członek**, **Gość** i **Wolontariusz**. Stuknij jedną z nich, aby ustawić, w jaki sposób ta osoba się melduje — domyślnie jest to **Członek**. Typ ma znaczenie w pokojach dla dzieci: wolontariusze są wliczani do stosunku wolontariuszy do dzieci w pokoju, a goście są wliczani do ewentualnej pojemności dla gości ustawionej przez Twój kościół.
 
-Ponownie dotknij karty członka, aby ją zwinąć.
+Stuknij kartę członka ponownie, aby ją zwinąć.
 
 :::tip
 Nie musisz przypisywać każdego członka rodziny do grupy. Dorośli uczestniczący w głównym nabożeństwie mogą pozostać bez przypisania do grupy. Przypisuj grupy tylko tym członkom, którzy muszą zostać zameldowani na konkretne zajęcia lub program.
@@ -52,16 +53,16 @@ Nie musisz przypisywać każdego członka rodziny do grupy. Dorośli uczestnicz�
 
 Z ekranu przeglądu gospodarstwa domowego masz trzy opcje:
 
-- **Rozwiń członka** i dotknij przycisku godziny nabożeństwa, aby [przypisać lub zmienić grupę](./group-assignment.md).
-- **Dotknij przycisku Dodaj gościa** pod listą członków, aby [dodać gościa](./adding-guests.md) do swojego gospodarstwa domowego.
-- **Dotknij przycisku Zamelduj** na dole ekranu, aby [zakończyć meldowanie](./completing-checkin.md) dla wszystkich członków gospodarstwa domowego.
+- **Rozwiń członka** i stuknij przycisk terminu nabożeństwa, aby [przypisać lub zmienić grupę](./group-assignment.md).
+- **Stuknij przycisk Dodaj gościa** pod listą członków, aby [dodać gościa](./adding-guests.md) do swojego gospodarstwa domowego.
+- **Stuknij przycisk Zamelduj** na dole ekranu, aby [dokończyć meldowanie](./completing-checkin.md) dla wszystkich członków gospodarstwa domowego.
 
 :::info
-Wszelkie przypisania grup z poprzedniego meldowania na to samo nabożeństwo są wczytywane automatycznie. Jeśli Twoje dzieci co tydzień uczęszczają do tych samych grup, być może nie musisz nic zmieniać -- wystarczy sprawdzić i zameldować.
+Wszystkie przypisania grup z poprzedniego meldowania na to samo nabożeństwo są wczytywane automatycznie. Jeśli Twoje dzieci co tydzień uczęszczają do tych samych grup, być może nie musisz nic zmieniać — wystarczy sprawdzić i zameldować.
 :::
 
 ## Następne kroki
 
-- [Przypisz grupy](./group-assignment.md) członkom rodziny, którzy muszą zameldować się na konkretne zajęcia lub program.
-- [Dodaj gościa](./adding-guests.md), jeśli ktoś odwiedza kościół wraz z Twoją rodziną.
-- [Zakończ meldowanie](./completing-checkin.md), gdy przypisania dla wszystkich wyglądają poprawnie.
+- [Przypisz grupy](./group-assignment.md) członkom rodziny, którzy muszą zostać zameldowani na konkretne zajęcia lub program.
+- [Dodaj gościa](./adding-guests.md), jeśli ktoś odwiedza kościół razem z Twoją rodziną.
+- [Dokończ meldowanie](./completing-checkin.md), gdy wszystkie przypisania wyglądają poprawnie.

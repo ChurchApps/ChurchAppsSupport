@@ -1,13 +1,13 @@
 ---
 title: "Mobiilisovellukset"
-description: "Yleiskatsaus ChurchAppsin Expo- ja React Native -mobiilisovelluksiin (B1 Mobile, B1 Checkin, LessonsScreen) ja linkit yhteisen työkaluketjun asennusohjeeseen."
+description: "Yleiskatsaus ChurchAppsin Expo- ja React Native -mobiilisovelluksiin, B1 Checkiniin ja LessonsScreeniin sekä paikalliset asennusvaiheet yhteiselle Expo-työkaluketjulle."
 ---
 
 # Mobiilisovellukset
 
 <div class="article-intro">
 
-ChurchAppsin mobiilisovellukset on rakennettu **React Nativella** ja **Expolla**. Ne tarjoavat natiivin käyttökokemuksen Androidilla, iOS:llä ja Android TV:llä. Kaikki mobiilisovellukset käyttävät samaa Expo-pohjaista työkaluketjua, joten jos osaat rakentaa yhden, osaat rakentaa kaikki.
+ChurchAppsin mobiilisovellukset on rakennettu **React Nativella** ja **Expolla**, ja ne tarjoavat natiivikokemuksen Androidilla, iOS:llä ja Android TV:llä. Kaikki mobiilisovellukset käyttävät samaa Expo-pohjaista työkaluketjua, joten jos osaat rakentaa yhden, osaat rakentaa kaikki.
 
 </div>
 
@@ -15,22 +15,34 @@ ChurchAppsin mobiilisovellukset on rakennettu **React Nativella** ja **Expolla**
 
 | Sovellus | Tarkoitus | Alusta |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile.md) | Seurakunnan jäsenille suunnattu pääsovellus | Android, iOS |
-| B1 Checkin | Sisäänkirjautumisasemien kioskisovellus | Android, iOS |
-| LessonsScreen | Android TV -sovellus opetusmateriaalin näyttämiseen luokkahuoneissa | Android TV |
+| B1 Checkin | Kioskisovellus tarkastuspisteille | Android, iOS |
+| LessonsScreen | Android TV -sovellus oppituntien näyttämiseen luokkahuoneissa | Android TV |
 
-### B1 Mobile
-
-Seurakunnan pääsovellus jäsenille. Jäsenet voivat selata hakemistoja, tehdä lahjoituksia, merkitä läsnäoloa, vastaanottaa ilmoituksia ja olla vuorovaikutuksessa seurakuntayhteisönsä kanssa. Lisätietoja on [B1 Mobile -asennusoppaassa](./b1-mobile.md).
+:::info
+Jäsenille suunnattu sovellus on B1 App -- B1Appin `/mobile`-osio, jonka jäsenet asentavat progressiivisena web-sovelluksena. Se on web-sovellus, ei Expo-projekti. Katso [Web-sovellukset](../web-apps/index.md) sen paikallista ajamista varten.
+:::
 
 ### B1 Checkin
 
-Seurakuntien sisäänkirjautumisasemille suunniteltu kioskisovellus. Se tarjoaa yksinkertaisen, kosketusystävällisen käyttöliittymän, jonka avulla jäsenet voivat kirjata lapsia sisään ja merkitä läsnäolon jumalanpalveluksiin ja tapahtumiin.
+Tarkoitukseen rakennettu kioskisovellus, joka on suunniteltu seurakuntien tarkastuspisteisiin. Se tarjoaa yksinkertaisen, kosketusystävällisen käyttöliittymän, jonka avulla jäsenet voivat kirjata lapsia sisään ja merkitä läsnäolon jumalanpalveluksiin ja tapahtumiin.
 
 ### LessonsScreen
 
-Android TV -sovellus, joka näyttää opetusmateriaalia luokkahuoneissa. Opettajat voivat lähettää oppitunnin diat, videot ja tehtävät TV-ruudulle, mikä helpottaa opetussuunnitelman materiaalin esittämistä tuntien aikana.
+Android TV -sovellus, joka näyttää oppituntien sisältöä luokkahuoneissa. Opettajat voivat lähettää oppituntien diat, videot ja tehtävät TV-ruudulle, mikä helpottaa opetussuunnitelman materiaalin esittämistä tuntien aikana.
 
-:::info
-Kaikki mobiilisovellukset käyttävät samaa Expo-pohjaista työkaluketjua ja noudattavat samankaltaisia asennustapoja. [B1 Mobile -opas](./b1-mobile.md) toimii viitteenä yleisestä asennusprosessista kaikissa mobiiliprojekteissa.
-:::
+## Paikallinen asennus
+
+Kaikki mobiilisovellukset käyttävät samaa Expo-pohjaista työkaluketjua ja noudattavat samankaltaisia asennusmalleja. Esimerkkinä käytetään B1 Checkinia:
+
+1. Asenna **Node.js**, Android Studio (Android-emulaattoria varten) ja Xcode (iOS-simulaattoria varten, vain macOS). Katso [Esivaatimukset](../setup/prerequisites.md).
+2. Kloonaa repositorio ja asenna riippuvuudet (B1 Checkin käyttää Yarnia):
+
+   ```bash
+   git clone https://github.com/ChurchApps/B1Checkin.git
+   cd B1Checkin && yarn install
+   ```
+
+3. Kopioi `dotenv.sample.txt` tiedostoksi `.env` ja aseta ympäristö, johon sovelluksen tulee yhdistää (`dev` paikalliselle API:lle). Katso [Ympäristömuuttujat](../setup/environment-variables.md#b1checkin-react-native--expo).
+4. Käynnistä Expo-kehityspalvelin komennolla `yarn start` ja suorita sitten `yarn android` tai `yarn ios` sovelluksen käynnistämiseksi emulaattorissa tai laitteella.
+
+Katso [Mobiilijulkaisu](../deployment/mobile.md) julkaisuversioiden ja over-the-air-päivitysten osalta.

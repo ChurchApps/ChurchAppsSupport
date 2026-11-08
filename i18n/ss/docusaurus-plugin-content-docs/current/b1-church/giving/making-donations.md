@@ -1,64 +1,75 @@
 ---
-title: "Kwenta Tipho Ku-Iphothali Yelilungu le-B1.church"
-sidebar_label: "Kwenta Umnikelo"
-description: "Nikela ngetipho kulicawe lakho nge-B1.church, noma ungabi nekhawunti, bese ubuka umlandvo wetipho takho ngemuva kwaloko."
+title: "Kwenta Tinikelo Epharetweni Lelilungu le-B1.church"
+sidebar_label: "Kwenta Tinikelo"
+description: "Nikela ngesipho lesisodwa noma lesiphindzaphindzekako ebandleni lakho ngeB1.church, nangabe ungaba nakhawunti noma ungenayo, bese ubuka umlandvo wetinikelo takho ngemuva kwalokho."
 ---
 
-# Kwenta Umnikelo
+# Kwenta Tinikelo
 
 <div class="article-intro">
 
-Kunetindlela letimbili tekwenta umnikelo esayithini lelibandla lakini le-B1.church: likhasi lemnikelo lelivulekele wonkhe umuntfu (akudzingeki kungena) kanye nekhasi lemnikelo lemalungu (kudzingeka kungena). Kokubili kusebentisa liforomu lemnikelo leliphephile lelicutjwa yiStripe.
+Kukhona tindlela letimbili tekwenta tinikelo ngesive le-B1.church sebandla lakho: likhasi letinikelo lelivulekile (akudzingeki kungene ngekhawunti) nelikhasi letinikelo lelilungu (kudzingeka kungene ngekhawunti). Kokubili kusebentisa lifomu lelivikelekile letinikelo lelisekelwe yi-Stripe.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Kwemnikelo lovulekele wonkhe umuntfu, akudzingeki i-akhawunti -- vakashela nje likhasi le-**Donate** lelibandla lakini.
-- Kwemnikelo wemalungu lonemlandvo lolandzelwako netindlela tekukhokha letigciniwe, [ngena](../getting-started/logging-in.md) ku-akhawunti yakho kucala.
+- Ngetinikelo letivulekile, akudzingeki kube nakhawunti -- vele uvakashele likhasi **Nikela** lebandla lakho.
+- Ngetinikelo telilungu nemlandvo wetinikelo kanye netindlela tekukhokha letigciniwe, [ngena](../getting-started/logging-in.md) ekhawunti yakho kuqala.
 
 </div>
 
-## Likhasi Lemnikelo Lelivulekele Wonkhe Umuntfu (Akudzingeki Kungena)
+## Likhasi Letinikelo Letivulekile (Akudzingeki Kungena)
 
-Nome ngubani angenta umnikelo ngaphandle kwekudala i-akhawunti:
+Noma ngubani angenta tinikelo angakhashi khawunti:
 
-1. Yaka ekhasini le-**Donate** lelibandla lakini.
-2. Liforomu lemnikelo likhonjiswa ecaleni lesencele lekhasi. Khetsa **sikhwama** lofuna kunikela kuso.
-3. Faka imininingwane yakho yenkhokhelo kanye nenani lofuna kunikela lona.
-4. Tfumela liforomu kuze ucedzele umnikelo wakho.
+1. Yiya ekhasini **Nikela** lebandla lakho.
+2. Lifomu letinikelo libonakala ngasesobunxele lekhasi. Khetsa **sikhwama** lofuna kuniketela kuso.
+3. Faka imininingwane yakho yekukhokha kanye nalelinani lofuna kuniketela.
+4. Thumela lifomu kuze uphelelise tinikelo takho.
 
-Ecaleni lesekudla lekhasi, utawubona sixhumanisi se-**Instructions for ACH Payment** nangabe ukhetsa kunikela nge-tfululo lwebhange. Kukhona nenkhinobho ye-**Login** nangabe ufuna kungena kuze uzuze tinsiza letengetiwe njengomlandvo wemnikelo.
+Ngasesokudla lekhasi, uyakubona linki **Imiyalo Yekukhokha nge-ACH** uma ufuna kunikela ngekudlulisa imali ebhange. Kukhona futsi inkinobho **Ngena** uma ufuna kungena kuze ufinyelele tindzawo letengeziwe, njengemlandvo wetinikelo.
 
 :::tip
-Nangabe usungenile nawuvakashela likhasi lelivulekele lemnikelo, utawuphindzelwa ngekutentela ekhasini lemnikelo lemalungu lapho unekufinyelela emlandvweni wakho lophelele wemnikelo kanye netindlela tekukhokha letigciniwe.
+Uma sewungene ngekhawunti ngesikhatsi uvakashela likhasi letinikelo letivulekile, uyakushintshelwa ngekuzenta ekhasini letinikelo lelilungu, lapho unemlandvo wakho wetinikelo ngcwaca kanye netindlela tekukhokha letigciniwe.
 :::
 
-## Likhasi Lemnikelo Lemalungu (Ungenile)
+## Likhasi Letinikelo Lelilungu (Ungenile)
 
-Nawungenile, kuhlangenwe nako kwemnikelo kufaka tinsiza letengetiwe:
+Uma ungenile, likhasi **Kunikela** kuphothali yelilungu likhombisa inkinobho **Nikela** kanye nenkinobho **Phrinta Imbiko** phezulu, kulandzelwe yimigca lelandzelako:
 
-1. Chofoza i-tab ye-**Donate** (nome uye ku-**My Donations**).
-2. Utawubona iphaneli lenengcenye letintsatfu:
-   - **Give Now** -- Yenta umnikelo lonye nome loluphindzaphindzako.
-   - **History** -- Bona imnikelo yakho yangaphambili futsi ukhiphe emarekhodi.
-   - **Recurring Donations** -- Phatsa kunikela lokuhleliwe kanye netindlela tekukhokha.
-3. Khetsa **Give Now** kuze uvule liforomu lemnikelo.
-4. Khetsa **sikhwama** lofuna kunikela kuso bese ufaka inani lemnikelo wakho.
-5. Khetsa indlela lekukhokha lesele igciniwe nome ufake imininingwane lensha yenkhokhelo.
-6. Tfumela liforomu kuze ucedzele umnikelo wakho.
+- **Lonyaka** (lonyaka lwamanje) -- Inani lakho lekunikela kulonyaka kanye nenani letinikelo, kanye nelinki **Umlandvo Wonkhe**. Bona [Umlandvo Wetinikelo](./donation-history.md) ngetinkhulumo letengetiwe.
+- **Lobuphindzaphindzekako** -- Tinikelo takho letihlelwe, kanye nelinki **Lawula**.
+- **Umsebenti Lomsha** -- Tinikelo takho letimatima letitsatfu letisedlule, kanye nelinki **Phindzaphinda linikelo lekugcina**, lelivula lifomu letinikelo.
+- **Tindlela Tekukhokha** -- Tikhadi takho letigciniwe kanye netikhawunti tebhange, kanye nelinki **Lawula** kute wengeze, ususe, noma usethe lokuzenta kuvamile.
+- Likhadi lenchubekelo yemkhankaso, uma bandla lakho linemkhankaso lolusebenta.
 
-Ngemuva kwekutsi umnikelo wakho ucutjwe, umlayeto wekuphumelela utawuvela futsi umnikelo wakho utawuvela ku[mlandvo wakho wemnikelo](./donation-history.md).
+Kuze unikele:
+
+1. Vula likhasi lekunikela ngetabhu yebandla lakho **Nikela**, ngenkinobho **Nikela** esigabeni **Kunikela** ku[Ikhasi Lekuhlola](../getting-started/navigating.md#home), noma ngetabhu **Umlandvo** esigabeni **Kunikela** ku[Likhasi Lami](../getting-started/me-page.md). Ekhasini lekunikela, tfwesa **Nikela** kuvula lifomu letinikelo.
+2. Khetsa **sikhwama** lofuna kuniketela kuso bese ufaka inani lotinikelako. Lolu luhlu lubonisa kuphela tikhwama letinikelo letivulelekile kubanikeli, nakuba ungumsebenti losebenta ngaphakathi kwemtfolamabhizinisi lobona tikhwama letinye ku-B1 Admin.
+3. Khetsa indlela yekukhokha lesigciniwe lesikhona noma ufake imininingwane mitsha yekukhokha.
+4. Thumela lifomu kuze uphelelise tinikelo takho.
+
+Nekucedzwa kwekunikela kwakho, kuyakuvela umyalezo wemphumelelo bese tinikelo takho tiyakubonakala [emlandvweni wetinikelo](./donation-history.md) wakho.
+
+:::info
+Uma tinikelo lotinikelile tirekhodwe ngetinhlobo letehlukene tetimali, inani lakho lonyaka kanye nesiphetfo somlandvo weHistory tiguculwa kuba ngemali yebandla lakho, kulandzelwa umbhalo lothi **Kuguculwe ngemitengo yemali yamanje**. Tinikelo letisemlandvweni wakho tisakhombisa imali yato yekuqala.
+:::
 
 ## Tindlela Tekukhokha
 
-Imnikelo icutjwa ngekuphepha kusebentisa **Stripe**. Ungakhokha ngelikhadi lekukweleta, likhadi lekukhokha ngco, nome uhlele inkhokhelo yebhange nge-ACH. Nawungenile, tindlela takho tekukhokha tingagcinwa kutsi utisebentise futsi ngesikhatsi lesitako, lokwenta kube ngcono kunikela ngesikhatsi lesilandzelako.
+Tinikelo tiphatfwa ngekuphepha nge-**Stripe**. Ungakhokha ngekhadi lesikweletu, ikhadi lemalini, noma usethe sikhokhelo se-ACH ngebhange. Uma sewungene ngekhawunti, tindlela takho tekukhokha tingagcinwa kuze tisetfwe nakulesikhatsi lesilandzelako, lokwenta kutsi kube lula kunikela futsi.
+
+:::info Kunikela ngebhange ungangeni
+Uma unikela njengesihambi (ungangeni) ngeakhawunti yebhange, ikhawunti kudzingeka icinisekiswe masinyane ngekungena ebhangeni lakho. Uma ingeke icinisekiswe, uyakubona umyalezo lotsi: "Lelikhawunti yebhange alikwati kucinisekiswa masinyane. Nceda unikele ngelikhadi, noma ungene uphindze ungeze ikhawunti yebhange ngaphansi kweprofayili yakho yetinikelo." Tikhawunti tebhange letidzinga emalanga lambalwa kuze ticinisekiswe tingangezwa kuphela uma sewungene.
+:::
 
 :::warning
-Nangabe umnikelo wakho ungaphumeleli, hlola kabusha imininingwane yakho yenkhokhelo bese uphindze uzame futsi. Nangabe inkinga isaqhubeka, tsintsana nehhovisi lelibandla lakini kuze utfole lusito.
+Uma tinikelo takho tingaphumeleli, hlola kahle imininingwane yakho yekukhokha bese uphindza uzama. Uma inkinga ihlala, xhumana nehhovisi lebandla lakho kuze ukusekelwe.
 :::
 
 ## Tinyatselo Letilandzelako
 
-- [Umlandvo Wemnikelo](./donation-history.md) -- Bona imnikelo yakho yangaphambili futsi unyatselise tincwadzi tekunikela
+- [Umlandvo Wetinikelo](./donation-history.md) -- Buka tinikelo takho letidlule futsi uphrinte timbiko tetinikelo

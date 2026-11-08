@@ -1,77 +1,79 @@
 ---
-title: "Historia darowizn i zestawienia w B1.church"
-sidebar_label: "Historial de donaciones"
-description: "Przeglądaj swoje dawne darowizny, filtruj według roku i drukuj zestawienia do rozliczenia podatkowego na stronie Darowizny w portalu B1.church."
+title: "Dary i historia wpłat w B1.church"
+sidebar_label: "Historia darowizn"
+description: "Przeglądaj swoje dawne darowizny, filtruj je według roku i drukuj zaświadczenia o wpłatach do rozliczenia podatkowego ze strony Darowizny w portalu członka B1.church."
 ---
 
-# Historial de donaciones
+# Historia darowizn
 
 <div class="article-intro">
 
-Cuando haya iniciado sesión, puede consultar un registro completo de sus donaciones anteriores y generar comprobantes de donación para fines fiscales. Su historial de donaciones está disponible en la página **Donaciones** del portal de miembros.
+Po zalogowaniu możesz przeglądać pełny zapis swoich dawnych darowizn i generować zaświadczenia o wpłatach do celów podatkowych. Historia darowizn jest dostępna na stronie **Darowizny** portalu członka.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Zanim zaczniesz</h4>
 
-- Debe [iniciar sesión](../getting-started/logging-in.md) en su cuenta de B1.church.
-- Debe haber realizado al menos una donación. Consulte [Realizar una donación](./making-donations.md) para empezar.
+- Musisz być [zalogowany](../getting-started/logging-in.md) do swojego konta B1.church.
+- Musisz mieć co najmniej jedną wpłatę. Aby zacząć, zobacz [Składanie darowizny](./making-donations.md).
 
 </div>
 
-## Ver su historial
+## Przeglądanie historii
 
-1. Inicie sesión en su cuenta de B1.church.
-2. Abra la página **Donaciones** (la pestaña **Donar** de su iglesia) o toque **Historial** en la sección **Donaciones** de su [panel de inicio](../getting-started/navigating.md#home).
-3. Toque **Todo el historial** para ver sus donaciones anteriores. (El enlace **Historial** del inicio abre esta vista directamente).
+1. Zaloguj się do swojego konta B1.church.
+2. Otwórz stronę **Darowizny** (zakładka **Przekaż** twojego kościoła) albo dotknij **Historia** w sekcji **Darowizny** na [pulpicie głównym](../getting-started/navigating.md#home).
+3. Dotknij **Cała historia**, aby zobaczyć swoje dawne darowizny. (Odnośnik **Historia** na pulpicie głównym otwiera ten widok bezpośrednio).
 
-En la parte superior, elija un año (o **Todos**) para ver su total de ese periodo, cuántas donaciones incluye y cuántas siguen pendientes. Si las donaciones de ese periodo se hicieron en más de una moneda, el total se convierte a la moneda de su iglesia y aparece debajo una nota que indica **Convertido con los tipos de cambio actuales**.
+Na górze wybierz rok (lub **Wszystkie**), aby zobaczyć sumę za dany okres, liczbę zawartych w nim darowizn oraz liczbę tych, które wciąż są w toku. Jeśli darowizny z tego okresu zostały przekazane w więcej niż jednej walucie, suma zostanie przeliczona na walutę twojego kościoła, a pod nią pojawi się notka **Przeliczono według bieżących kursów wymiany**.
 
-Debajo del total, sus donaciones están agrupadas por mes, y cada una muestra:
+Poniżej sumy darowizny są pogrupowane według miesięcy, a każda pozycja pokazuje:
 
-- **Fondo**: el fondo al que se dirigió la donación (por ejemplo, Fondo General, Fondo de Construcción).
-- **Fecha** y **Método**: cuándo se realizó la donación y cómo pagó (por ejemplo, "Tarjeta - Visa" o "Banco - ACH").
-- **Importe**: el importe de la donación, en la moneda en que se dio.
+- **Fundusz** -- na jaki fundusz została przeznaczona darowizna (na przykład Fundusz ogólny, Fundusz budowy).
+- **Data** i **Metoda** -- kiedy dokonano darowizny i jak płaciłeś (na przykład „Karta - Visa” lub „Przelew - ACH”).
+- **Kwota** -- wysokość darowizny w walucie, w jakiej została przekazana.
 
 :::info
-Las donaciones que todavía se están procesando muestran una etiqueta **Pendiente** debajo del importe.
+Darowizny, które są wciąż przetwarzane, pokazują znaczek **Oczekuje** pod kwotą.
 :::
 
-Toque **Volver a Donaciones** para regresar a la página de Donaciones.
+Dotknij **Wróć do Darowizn**, aby powrócić na stronę Darowizny.
 
-## Si su iglesia limita el historial de donaciones
+## Gdy kościół ogranicza historię darowizn
 
-Su iglesia decide cuánto historial de donaciones pueden ver los miembros; consulte [Comprobantes de donación](../../b1-admin/donations/giving-statements.md#what-members-see-in-b1church):
+Twój kościół decyduje, ile historii darowizn mogą zobaczyć członkowie -- zob. [Zaświadczenia o wpłatach](../../b1-admin/donations/giving-statements.md#what-members-see-in-b1church):
 
-- **Todos los años** (la opción predeterminada): todo lo de esta página está disponible.
-- **Hasta un año determinado**: las donaciones posteriores a ese año no aparecen en su historial, totales ni comprobantes, y la página de Donaciones muestra el total de ese año en lugar del año en curso. Las iglesias suelen hacer esto para retener el año en curso mientras terminan las correcciones.
-- **Oculto**: el total anual, **Actividad reciente**, **Todo el historial** e **Imprimir comprobante** se eliminan de la página de Donaciones. Aun así, puede dar, gestionar sus donaciones recurrentes y sus métodos de pago.
+- **Wszystkie lata** (domyślnie) -- Wszystko na tej stronie jest dostępne.
+- **Do określonego roku** -- Wpłaty po tym roku nie pojawiają się w historii, sumach ani zaświadczeniach, a strona Darowizny pokazuje sumę za ten rok zamiast za bieżący. Kościoły często tak robią, aby wstrzymać bieżący rok, dopóki nie zakończą korekt.
+- **Ukryta** -- Roczna suma, **Ostatnia aktywność**, **Cała historia** i **Drukuj zaświadczenie** są usunięte ze strony Darowizny. Nadal możesz przekazywać darowizny i zarządzać cyklicznymi wpłatami oraz metodami płatności.
 
-Si abre un comprobante de un año que su iglesia no ha publicado, verá el mensaje "Este comprobante de donación no está disponible. Póngase en contacto con su iglesia para obtener una copia".
+Jeśli otworzysz zaświadczenie za rok, którego kościół jeszcze nie udostępnił, zobaczysz komunikat: „To zaświadczenie o wpłatach nie jest dostępne. Skontaktuj się z kościołem, aby uzyskać kopię”.
 
-Su iglesia también puede añadir una **nota de donación**, un breve mensaje como su política de reembolsos. Aparece en la parte superior de la página de Donaciones, del formulario de donación y de **Todo el historial**, y se imprime al final de sus comprobantes de donación.
+Twój kościół może także dodać **notkę o darowiznach** -- krótką wiadomość, na przykład o polityce zwrotów. Pojawia się ona na górze strony Darowizny, w formularzu przekazania oraz w **Całej historii**, a na dole zaświadczeń o wpłatach jest drukowana.
 
-## Si su iglesia no ofrece donaciones en línea
+## Gdy kościół nie oferuje darowizn online
 
-Incluso si su iglesia no ha configurado las donaciones en línea, puede ver las donaciones que ha registrado para usted, como las donaciones en efectivo y con cheque. Abra la página de Donaciones con la sesión iniciada y verá la nota "Las donaciones en línea aún no están configuradas para esta iglesia. Sus donaciones registradas y comprobantes están a continuación". Su total anual, **Actividad reciente**, **Todo el historial** e **Imprimir comprobante** funcionan con normalidad. No se muestran el botón **Dar**, **Repetir la última donación** ni las secciones **Recurrentes** y **Métodos de pago**. La sección **Donaciones** de su panel de inicio también muestra su total y el enlace **Historial**, pero sin el botón **Dar**.
+Nawet jeśli twój kościół nie skonfigurował darowizn online, nadal możesz zobaczyć wpłaty, które zostały dla ciebie zapisane, na przykład gotówkę i czeki. Otwórz stronę Darowizny będąc zalogowanym, a zobaczysz komunikat: „Darowizny online nie są jeszcze skonfigurowane dla tego kościoła. Poniżej znajdują się twoje zapisane wpłaty i zaświadczenia”. Twoja roczna suma, **Ostatnia aktywność**, **Cała historia** i **Drukuj zaświadczenie** działają jak zwykle. Przycisk **Przekaż**, **Powtórz ostatnią wpłatę** oraz sekcje **Cykliczne** i **Metody płatności** nie są wyświetlane. Sekcja **Darowizny** na pulpicie głównym pokazuje również twoją sumę i odnośnik **Historia**, bez przycisku **Przekaż**.
 
-## Exportar e imprimir comprobantes
+## Eksportowanie i drukowanie zaświadczeń
 
-Toque **Imprimir comprobante** en la parte superior de la página de Donaciones para abrir en una pestaña nueva un comprobante de donación imprimible que cubre el año natural en curso (o el último año publicado por su iglesia). Para imprimir otro año, abra **Todo el historial**, seleccione ese año y toque **Imprimir comprobante** junto al total.
+Dotknij **Drukuj zaświadczenie** na górze strony Darowizny, aby w nowej karcie otworzyć zaświadczenie do wydruku, obejmujące bieżący rok kalendarzowy (lub najnowszy rok udostępniony przez twój kościół). Aby wydrukować inny rok, otwórz **Całą historię**, wybierz ten rok i dotknij **Drukuj zaświadczenie** obok sumy.
+
+Zaświadczenie jest wyśrodkowane na stronie i zaczyna się od logo twojego kościoła (jeśli kościół je wgrał), roku, okresu, którego dotyczy (1 stycznia do 31 grudnia), oraz daty wystawienia. Poniżej znajdują się twoje imię i nazwisko oraz dane kontaktowe obok nazwy i adresu kościoła, podsumowanie z łączną kwotą wpłat i sumą dla każdego funduszu, a także tabela wszystkich darowizn z datą, metodą, funduszem i kwotą. Na dole notka potwierdza, że zaświadczenie obejmuje wszystkie wpłaty, jakie kościół otrzymał od ciebie w danym roku, a następnie krótkie zastrzeżenie, że kościół jest zarejestrowaną organizacją non-profit i że w zamian za darowizny nie zostały dostarczone żadne towary ani usługi, z wyjątkiem niematerialnych korzyści religijnych. Notka o darowiznach kościoła, jeśli ją ma, jest drukowana po tym.
 
 :::tip
-Imprima su comprobante a principios del nuevo año, antes de necesitarlo para la declaración de impuestos, mientras las donaciones del año anterior todavía están recientes en su historial.
+Wydrukuj zaświadczenie wcześnie w nowym roku, zanim będzie potrzebne do rozliczenia podatku, dopóki darowizny z poprzedniego roku są wciąż widoczne w historii.
 :::
 
-## Donaciones recurrentes
+## Darowizny cykliczne
 
-Si tiene donaciones programadas, la sección **Recurrentes** de la página de Donaciones muestra cada una con su importe, fondo, periodicidad y método de pago. Toque **Gestionar** para abrir **Donaciones recurrentes y métodos de pago**, donde puede modificarlas.
+Jeśli masz zaplanowane jakiekolwiek wpłaty cykliczne, sekcja **Cykliczne** na stronie Darowizny wymienia każdą z nich wraz z kwotą, funduszem, interwałem i metodą płatności. Dotknij **Zarządzaj**, aby otworzyć **Cykliczne wpłaty i metody płatności**, gdzie możesz je zmienić.
 
-Si una donación recurrente se cobra a través de **Stripe**, puede **pausarla** en lugar de cancelarla: haga clic en el icono de pausa junto a la donación y confírmelo. Las donaciones se detienen hasta que haga clic en el mismo icono para **reanudarla**; una donación pausada aparece marcada como **Pausada** en la lista. Las donaciones recurrentes a través de otros proveedores de pago todavía pueden editarse o cancelarse, pero no pausarse.
+Jeśli darowizna cykliczna jest pobierana przez **Stripe**, możesz ją **wstrzymać** zamiast anulować -- kliknij ikonę pauzy obok darowizny i potwierdź. Wpłaty są wstrzymane, dopóki nie klikniesz tej samej ikony, aby **wznowić**; wstrzymana darowizna jest oznaczona na liście jako **Wstrzymana**. Darowizny cykliczne od innych dostawców płatności nadal można edytować lub anulować, ale nie można ich wstrzymać.
 
-Para añadir, eliminar o cambiar sus métodos de pago guardados, toque **Gestionar** en la sección **Métodos de pago**.
+Aby dodać, usunąć lub zmienić zapisane metody płatności, dotknij **Zarządzaj** w sekcji **Metody płatności**.
 
-## Próximos pasos
+## Kolejne kroki
 
-- [Realizar una donación](./making-donations.md): aprenda a hacer una donación única o recurrente
+- [Składanie darowizny](./making-donations.md) -- Dowiedz się, jak złożyć jednorazową lub cykliczną wpłatę

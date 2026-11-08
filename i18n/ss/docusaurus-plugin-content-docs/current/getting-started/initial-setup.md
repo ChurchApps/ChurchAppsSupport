@@ -1,72 +1,72 @@
 ---
-title: "Kusetfwa Kwekucala Kwelibandla Ku-B1 Admin"
-sidebar_label: "Kulungiswa Kwasekucaleni"
-description: "Hamba ngekusetfwa kwekucala kwelibandla lelisha ku-B1 Admin: tinhlobonhlobo temininingwane, tinkhangiso, tindzima, nendlela lenconywa yekusetfa bantfu, emaqembu, kuhamba, nekunikela."
+title: "Kusetfwa Kwekucala Kwechachi Ku-B1 Admin"
+sidebar_label: "Kusetfwa Kwekucala"
+description: "Hamba ngekucocekile ekusetfweni kwekucala kwechachi lensha ku-B1 Admin: lwati lwechachi, umtsetfo, emadvuna, nalelunconywa lolulandzelako lekusetfwa kwebantfu, emaqembu, kuba khona, nekunikela."
 ---
 
-# Kulungiswa Kwasekucaleni
+# Kusetfwa Kwekucala
 
 <div class="article-intro">
 
-Ngemuva kwekudala i-akhawunti yakho nebandla, kunetinyatselo letimbalwa letibalulekile lekufanele utilungise ngaphambi kwekumema licembu lakho. Lolucwadzi lukuhambisa endleleni leyincomekile yekulungisa kuze ibandla lakho likulungele kusukela ngelilanga lekucala.
+Ngemuva kwekudala i-akhawunti yakho nechachi yakho, kukhona tinyatselo letimbalwa letibalulekile kufanele tilungiswe ngaphambi kwekumemetela ikhaya lakho lebasebenti. Lomhlahlandlela uyakuhamba nawe ngalolulandzelako lolunconywa lekusetfwa, kutsi chachi yakho ibe lilungele kusukela ilanga lekucala.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- [Dala i-akhawunti yakho](./create-account.md) futsi ubhalise ibandla lakho
-- Yiba nelogo yebandla lakho netintfo teluphawu tikulungele (akusiwo simiso kepha kuyancomeka)
+- [Dala i-akhawunti yakho](./create-account.md) futsi ubhalise chachi yakho
+- Lungisa lilogo nemphahla yemtsetfo wechachi yakho (akudingeki kodvwa kuyancomeka)
 
 </div>
 
-## Sinyatselo 1: Lungisa Imininingwane Yebandla Lakho
+## Sinyatselo 1: Lungisa Lwati Lwechachi Yakho
 
-1. Iya ku-**Settings** ku-sidebar lengakwesencele.
-2. Chofota **Edit Settings**.
-3. Faka **libito** lebandla lakho, **likheli**, nemininingwane **yekutsintsana**.
-4. Chofota **Save** kute usebentise shintjo lakho.
+1. Vula [Jump menu](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (indzawo yekufuna lephezulu ngesenhla-sebunxele kwe-B1 Admin), nweba **Settings**, bese ucindzetela **Settings**.
+2. Esigabeni se**Church Information**, cindzetela **Edit**.
+3. Faka **ligama** lechachi yakho, **subdomain** kanye nekheli.
+4. Cindzetela **Save** kutsi usebentise tishintsho takho.
 
-## Sinyatselo 2: Setha Luphawu Lwakho
+## Sinyatselo 2: Lungisa Umtsetfo Wakho
 
-1. Kusuka ku-**Dashboard**, iya ku-**Website**, bese ukhetsa **Appearance**.
-2. Layisha **ilogo yebandla** lakho.
-3. Lungisa nome ngutiphi tinketfo teluphawu letengetiwe letifana nemibala netitfombe.
-4. Luphawu lwakho lutawubonakala kuwebusayithi yakho ye-B1.church nakuhlelo lwelucingo lwe-B1 Mobile.
+1. Ku-Jump menu, khetsa **Website > Appearance**.
+2. Layisha **logo yechachi** yakho.
+3. Lungisa netinye tinketfo temtsetfo, njengemibala nemifanekiso.
+4. Umtsetfo wakho uyakuvela kuwebhusayithi yakho ye-B1.church nakuB1 App.
 
 :::tip
-Kuba nelogo yakho neluphawu lukulungele ngaphambi kwekumema emalunga elicembu kunika simo lesihle sekucala nabangena.
+Kuba nelogo nemtsetfo lilungele ngaphambi kwekumemetela bahlomi bakho kunika umbono lohlanganisekile lokucala labangena ngawo.
 :::
 
-## Sinyatselo 3: Lungisa Tindzima Bese Umema Licembu Lakho
+## Sinyatselo 3: Lungisa Emadvuna Futsi Umemetele Bahlomi Bakho
 
-1. Chofota **Roles** kusuka ekhasini le-**Settings**.
-2. Dala tindzima telicembu lakho (sibonelo, "Mfundisi", "Unobhala", "Umgcinimali").
-3. Nika imvumo letifanele kuyo yonkhe indzima.
-4. Ngeta emalunga elicembu ngekusesha ema-akhawunti wawo bese uwafaka etindzimeni.
+1. Ku-Jump menu, khetsa **Settings > Roles**.
+2. Dala emadvuna ebasebenti bakho (njengesibonelo, "Umfundzisi", "Umbhali", "Umphatsi Wetimali").
+3. Nika ilungelo lelifanele ngalinye ledvuna.
+4. Engeta bahlomi ngekufuna ema-akhawunti abo bese ubabeka emadvunweni.
 
-## Sinyatselo 4: Setha Tigodzi Takho Letibalulekile
+## Sinyatselo 4: Lungisa Tindzawo Takho Letibalulekile
 
-Nase unelicembu lakho selikhona, cala kwakha tigodzi letiyinhloko te-B1 Admin:
+Nasewunebasebenti bakho, qala kwakha tindzawo letibalulekile te-B1 Admin:
 
-1. **People** -- Ngeta emalunga kudirectory yebandla lakho. Lesi sisekelo saso sonkhe lokunye, ngako cala lapha. Ungangeta bantfu ngesandla nome usebentise lithulusi le-**Import** kusuka ku-**Settings**.
-2. **Groups** -- Dala emacembu emacembu lamancane, emacembu emkhonzo, emakilasi, kanye nemihlangano lenye.
-3. **Attendance** -- Lungisa ema-campus akho, iminkhonzo, nesikhatsi seminkhonzo kuze kulandzelelwe kuba khona.
-4. **Donations** -- Setha timali temnikelo bese uxhuma i-payment gateway yakho (Stripe) kuze wemukele imnikelo nge-inthanethi.
-5. **Website** -- Yakha iwebusayithi yakho yebandla lomphakatsi usebentisa i-website builder ye-B1.church.
+1. **People** -- Engeta emalunga ohlelo lwechachi yakho. Lesi sisekelo salokuseleko konkhe, ngako qala lapha. Ungangeta bantfu ngesandla noma usebentise sitfuli se**Import/Export** kusuka ku**Settings**.
+2. **Groups** -- Dala emaqembu emancane, emaqembu emasevisi, emakilasi, nemanye emahlangano.
+3. **Attendance** -- Lungisa emakamu akho, emasevisi, nesikhatsi semasevisi kutsi ulandzele kutfola kwebantfu.
+4. **Donations** -- Setsa emaphrojekthi ekunikela nexhume lilitfobela lekukhokha (Stripe) kutemukela kunikela ngelinethi.
+5. **Website** -- Akha iwebhusayithi yakho yomphakatsi usebentisa umakhi we-B1.church.
 
 :::info
-Awudzingi kusetha sonkhe sigodzi kanyekanye. Emabandla lamanyenti acala nge-**People** kanye ne-**Groups**, bese angeta i-**Attendance** ne-**Donations** njengobe atfokota ngekusebentisa lipulatifomu.
+Awudzingi kusetfa tonkhe tindzawo ngesikhatsi sinye. Emacheche amaningi aqala nge**People** nge**Groups**, bese engeta **Attendance** nekunikela **Donations** njengoba sebatfola lilwati nalolusetfo.
 :::
 
-## Luhlelo Loluncometiwe
+## Lulandzelano Lolunconywa
 
-Kuze utfole kuhlela lokushelela kangcono, sincoma lolulandzelo:
+Kutsi kube nelulumko lolucocekile lwekusetfwa, sicela lolulandzelako:
 
-1. **People** -- Ngeta emalunga akho nalabo lababakhona njalo kucala.
-2. **Groups** -- Hlela bantfu emacenjini lanenchazelo.
-3. **Attendance** -- Cala kulandzelela kutsi ngubani lophumako yonkhe liviki.
-4. **Donations** -- Setha kunikela nase bantfu bakho sebasesistemeni.
-5. **Website** -- Yakha sayithi yakho lebonakala emphakatsini ekugcineni, ngemuva kwekutsi imininingwane yakho seyisendzaweni.
+1. **People** -- Engeta emalunga akho nebantfu labavamile kuvela kucala.
+2. **Groups** -- Hlela bantfu emaqembu labanemalungelo.
+3. **Attendance** -- Qala kulandzela kutsi ngubani lovela ngalelisonto ngalelisonto.
+4. **Donations** -- Setsa kunikela kutsi bantfu bakho sebasesistimini.
+5. **Website** -- Akha iwebhusayithi lebonakala emphakatsini ekugcineni, ngemuva kwekutsi lwati lwakho lusendzaweni.
 
-Nase seucedzile letinyatselo, ibandla lakho selikulungele. Hlola incwadzi ye-[B1 Admin](/docs/b1-admin/) kuze utfole imihlahlandlela lenemininingwane ngesigodzi ngasinye.
+Nasewuchedzile lesinyatselo, chachi yakho ilungele kusetjentiswa. Hlola [B1 Admin](/docs/b1-admin/) kutsi utfole emahlahlandlela lacocekile ngasi sifundvo.

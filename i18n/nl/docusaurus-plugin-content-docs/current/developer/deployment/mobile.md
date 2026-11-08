@@ -1,22 +1,22 @@
 ---
-title: "Mobile Deployment"
-description: "Doorloopt het bouwen van Android- en iOS-releases van de B1 Mobile-app met Expo EAS, het indienen bij de appstores en het pushen van OTA-updates."
+title: "Mobiele deployment"
+description: "Doorloop het bouwen van Android- en iOS-releases van Expo-apps zoals B1 Checkin, het indienen daarvan bij de app-stores en het publiceren van OTA-updates met EAS."
 ---
 
-# Mobile Deployment
+# Mobiele deployment
 
 <div class="article-intro">
 
-ChurchApps mobiele apps worden gebouwd en geïmplementeerd met behulp van **Expo EAS Build** en verdeeld via de app-stores. Deze pagina behandelt het bouwen, indienen en pushen van over-the-air-updates voor zowel Android als iOS.
+De Expo-mobiele apps van ChurchApps, zoals B1 Checkin, worden gebouwd met **Expo EAS Build** of een lokale Gradle-build en via de app-stores verspreid. Deze pagina behandelt het bouwen, indienen en publiceren van over-the-air-updates voor zowel Android als iOS, met B1 Checkin als voorbeeld.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
-- Stel de mobiele app lokaal in -- zie [B1 Mobile](../mobile/b1-mobile.md)
+- Stel de app lokaal in -- zie [Mobiele apps](../mobile/index.md#local-setup)
 - Installeer en configureer de [EAS CLI](https://docs.expo.dev/eas/)
-- Hebben toegang tot Google Play Console (Android) en/of Apple App Store Connect (iOS)
+- Zorg dat je toegang hebt tot de Google Play Console (Android) en/of Apple App Store Connect (iOS)
 
 </div>
 
@@ -24,21 +24,31 @@ ChurchApps mobiele apps worden gebouwd en geïmplementeerd met behulp van **Expo
 
 ### Android
 
+Android-releasebuilds worden lokaal uitgevoerd en ondertekend met de releasekeystore van EAS. Download deze eenmalig met `npx eas-cli credentials -p android` (kies **credentials.json: Download credentials from EAS**) en voer daarna uit:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+De Google Play-bundel wordt geschreven naar `android/app/build/outputs/bundle/release/app-release.aab`. Wil je in plaats daarvan op EAS bouwen, voer dan `yarn build:android:eas` uit.
 
 ### iOS
 
+iOS-builds worden altijd op EAS uitgevoerd:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Indienen bij App-Stores
+## Indienen bij app-stores
 
 ### Android -- Google Play Store
 
-Na een succesvolle EAS-build wordt het Android-binaire bestand (AAB) via de Play Console ingediend in Google Play Store.
+Upload de AAB via de Play Console, of dien hem in met EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## OTA-updates
 
-Voor JavaScript-only-wijzigingen waarvoor geen app-store-beoordeling vereist is, gebruikt u over-the-air (OTA)-updates:
+Gebruik voor wijzigingen die alleen JavaScript betreffen en geen beoordeling door de app-store vereisen over-the-air (OTA)-updates:
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Dit gebruikt EAS Update om wijzigingen rechtstreeks naar gebruikers te pushen zonder volledige store-indiening.
+Dit gebruikt EAS Update om wijzigingen zonder volledige store-indiening direct naar gebruikers te sturen.
 
 :::tip
-OTA-updates zijn aanzienlijk sneller dan store-builds -- wijzigingen kunnen gebruikers in minuten bereiken in plaats van dagen. Gebruik ze voor bugfixes, kopiewijzigingen en kleine UI-updates die geen wijzigingen in native code inhouden.
+OTA-updates zijn aanzienlijk sneller dan store-builds -- wijzigingen kunnen gebruikers binnen minuten bereiken in plaats van dagen. Gebruik ze voor bugfixes, tekstwijzigingen en kleine UI-aanpassingen die geen native code-wijzigingen vereisen.
 :::
 
 ## Versienummers
 
-Voordat u een store-build maakt, moeten versienummers in meerdere bestanden worden bijgewerkt:
+Voordat je een store-build maakt, moeten de versienummers in meerdere bestanden worden bijgewerkt:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` en `versionCode`)
+
+Het iOS-buildnummer wordt automatisch door EAS verhoogd.
 
 :::warning
-Het vergeten om versienummers in alle bestanden bij te werken, veroorzaakt bouwfouten of afwijzing door app-store. Controleer voordien elk bovenstaand bestand voordat u een productiebuild start.
+Als je de versienummers in alle bestanden niet bijwerkt, leidt dit tot buildfouten of afwijzing door de app-store. Controleer elk van de hierboven genoemde bestanden nogmaals voordat je een productiebuild start.
 :::
 
-## Gerelateerde Artikelen
+## Gerelateerde artikelen
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokale setup- en ontwikkelingsgids
-- **[API Deployment](./apis.md)** -- De backend-API's implementeren
-- **[Web App Deployment](./web-apps.md)** -- De frontend web-applicaties implementeren
+- **[Mobiele apps](../mobile/index.md)** -- Handleiding voor lokale installatie en ontwikkeling
+- **[API-deployment](./apis.md)** -- De backend-API's uitrollen
+- **[Webapp-deployment](./web-apps.md)** -- De frontend-webapplicaties uitrollen

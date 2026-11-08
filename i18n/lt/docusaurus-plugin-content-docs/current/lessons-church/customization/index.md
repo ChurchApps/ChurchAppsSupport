@@ -1,41 +1,41 @@
 ---
 title: "Prilagodymas"
-description: "Sužinokite, kaip paslėpti skyrius, vaidmenis ar veiksmus Lessons.church pamokoje ir pertvarkyti turinį, vienai klasei arba visoms bažnyčios klasėms."
+description: "Sužinokite, kaip paslėpti skyrius, vaidmenis ar veiksmus Lessons.church pamokoje ir pertvarkyti turinį – arba vienai klasei, arba visoms jūsų bažnyčios klasėms."
 ---
 
 # Prilagodymas
 
 <div class="article-intro">
 
-Lessons.church siūlo paruoštos pamokų medžiagos biblioteką, tačiau kiekviena bažnyčia yra skirtinga. Prilagodymo funkcijos leidžia pritaikyti pamokų turinį jūsų konkrečioms klasėms, mokymo stiliui ir amžiaus grupėms, kad savanoriai matytų tik tai, kas jiems aktualu.
+Lessons.church siūlo paruoštų pamokų turinio biblioteką, tačiau kiekviena bažnyčia yra skirtinga. Prilagodymo funkcijos leidžia pritaikyti pamokų turinį jūsų konkrečioms klasėms, mokymo stiliui ir amžiaus grupėms, kad savanoriai matytų tik jiems aktualią medžiagą.
 
 </div>
 
-## Kodėl prilagoti?
+## Kodėl reikia prilagoti?
 
-Lessons.church pamokų turinys sukurtas taip, kad būtų lankstus. Viena pamoka gali apimti kelių amžiaus grupių skyrius, papildomas veiklas ar vaidmenis, kurie netinka kiekvienai klasei. Vietoj to, kad savanoriai patys turėtų mintyse praleisti netinkamas dalis, galite pritaikyti pamoką taip, kad jie matytų tik jiems aktualią medžiagą.
+Lessons.church pamokų turinys sukurtas taip, kad būtų lankstus. Viena pamoka gali apimti skyrius skirtingoms amžiaus grupėms, pasirenkamas veiklas ar vaidmenis, kurie netinka visoms klasėms. Vietoj to, kad savanoriai patys mintyse praleistų nereikalingas dalis, galite pritaikyti pamoką taip, kad jie matytų tik jiems svarbią medžiagą.
 
-Pavyzdžiui, pamokoje gali būti kūrybinė veikla, kuri puikiai tinka ikimokyklinukams, bet nėra tinkama penktos klasės mokiniams. Prilagodę turinį, galite paslėpti šį skyrių vyresniajai grupei, tačiau palikti jaunesniajai.
+Pavyzdžiui, pamokoje gali būti rankdarbių veikla, kuri puikiai tinka ikimokyklinukams, bet nelabai tinka penktoje klasėje. Prilagodę turinį, galite paslėpti tą skyrių vyresniajai grupei, paliekant jį jaunesniajai.
 
-## Ką galite pritaikyti
+## Ką galite pritaikyti?
 
-- **Pašalinti skyrius** -- Paslėpkite visus pamokos skyrius, kurie netinka konkrečiai klasei ar amžiaus grupei.
-- **Paslėpti vaidmenis ar veiksmus** -- Pašalinkite atskirus vaidmenis ar veiksmus skyriuje, jei jų nereikia.
-- **Pertvarkyti turinį** -- Perstumkite skyrius ir veiksmus, kad jie atitiktų jūsų klasei patogesnį eigą.
+- **Pašalinti skyrius** -- Pašalinkite visus pamokos skyrius, kurie netinka konkrečiai klasei ar amžiaus grupei.
+- **Pašalinti vaidmenis ar veiksmus** -- Pašalinkite atskirus vaidmenis ar veiksmus skyriuje, jei jie nereikalingi.
+- **Pertvarkyti turinį** -- Perkelkite skyrius ir veiksmus taip, kad jie atitiktų jūsų klasei norimą eigą.
 
-## Konkrečiai klasei ar visoms klasėms
+## Tik šiai klasei ar visoms klasėms
 
-Išsaugodami prilagodymą, pasirenkate, kiek plačiai jis taikomas:
+Kiekvieną kartą atlikdami pakeitimą, pasirenkate, kiek plačiai jis taikomas:
 
-- **Viena klasė** -- Prilagodymas veikia tik dabartinę klasę. Kitos klasės mato originalų turinį.
-- **Visos klasės** -- Prilagodymas taikomas visoms klasėms jūsų bažnyčioje.
+- **Ši klasė** -- Pakeitimas paveikia tik dabartinę klasę. Kitos klasės mato pradinį turinį.
+- **Visos klasės** -- Pakeitimas taikomas visoms klasėms jūsų bažnyčioje.
 
-Dėl šio lankstumo tą pačią pamoką galite pateikti skirtingai skirtingoms amžiaus grupėms arba atlikti pakeitimą, kuris iš karto taikomas visur.
+Toks lankstumas leidžia sukurti skirtingus tos pačios pamokos variantus skirtingoms amžiaus grupėms arba iš karto atlikti pakeitimą visur.
 
 :::tip
-Jei prilagodymas jums naujas, pradėkite nuo vienos klasės, kad pamatytumėte, kaip tai veikia, prieš taikydami pakeitimus visoms klasėms.
+Jei prilaikymą naudojate pirmą kartą, pradėkite nuo vienos klasės, kad pamatytumėte, kaip tai veikia, prieš taikydami pakeitimus visoms klasėms.
 :::
 
 ## Kiti žingsniai
 
-- [Pamokų prilagodymas](./customizing-lessons.md) -- Vadovaukitės žingsnis po žingsnio instrukcijomis ir prilagykite pirmąją pamoką
+- [Pamokų prilaikymas](./customizing-lessons.md) -- Vadovaukitės žingsnis po žingsnio pateikiamu aprašymu ir pritaikykite savo pirmąją pamoką

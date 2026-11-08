@@ -1,66 +1,66 @@
 ---
-title: "Odobravanie zmian profilu"
-description: "Przeglądaj i zatwierdzaj wnioski członków o zmianę profilu w B1 Admin oraz skonfiguruj Directory Approval Group, która je otrzymuje."
+title: "Zatwierdzanie zmian profilu"
+description: "Przeglądaj i zatwierdzaj wnioski o zmianę profilu członka w B1 Admin oraz konfiguruj grupę zatwierdzającą Directory Approval Group, która je otrzymuje."
 ---
 
-# Odobravanie zmian profilu
+# Zatwierdzanie zmian profilu
 
 <div class="article-intro">
 
-Ak vaša cirkev vyžaduje schválenie správcom pre aktualizácie profilu, členovia odosielajú svoje zmeny cez aplikáciu B1 Mobile a tieto žiadosti sa zobrazujú ako úlohy v B1 Admin. Tento návod vysvetľuje, ako ich skontrolovať a schváliť.
+Jeśli Twój kościół wymaga zatwierdzenia przez administratora aktualizacji profilu, członkowie przesyłają swoje zmiany za pośrednictwem aplikacji B1 App, a wnioski pojawiają się jako zadania w B1 Admin. Ten przewodnik wyjaśnia, jak je przeglądać i zatwierdzać.
 
 </div>
 
 <div class="prereqs">
-<h4>Pred začiatkom</h4>
+<h4>Zanim zaczniesz</h4>
 
-- Musíte byť členom skupiny určenej ako **Skupina na schvaľovanie adresára** v sekcii **Mobile &rarr; Member portal**
-- Ak nie je nakonfigurovaná žiadna skupina na schvaľovanie, zmeny profilu sa uplatnia okamžite bez kontroly
+- Musisz być członkiem grupy wyznaczonej jako **Directory Approval Group** w sekcji **Mobile &rarr; Member portal**
+- Jeśli nie skonfigurowano żadnej grupy zatwierdzającej, zmiany profilu są stosowane natychmiast, bez przeglądu
 
 </div>
 
-## Kde nájsť čakajúce žiadosti
+## Gdzie znaleźć oczekujące wnioski
 
-Keď člen odošle zmenu profilu, zobrazí sa ako úloha priradená vašej schvaľovacej skupine. Nájdete ju na dvoch miestach:
+Gdy członek przesyła zmianę profilu, pojawia się ona jako zadanie przypisane do Twojej grupy zatwierdzającej. Znajdziesz je w dwóch miejscach:
 
-**Z panela (vašej domovskej stránky):**
-1. Prihláste sa do B1 Admin — panel sa načíta automaticky.
-2. V sekcii **My tasks** kliknite na **All tasks**. (My tasks zobrazuje iba otvorené úlohy priradené priamo vám.)
-3. Kliknite na záložku **Assigned to My Groups**. Všetky čakajúce žiadosti o zmenu profilu sa zobrazia tam.
+**Z poziomu pulpitu (strony głównej):**
+1. Zaloguj się do B1 Admin — pulpit ładuje się automatycznie.
+2. W sekcji **My tasks** kliknij **All tasks**. (My tasks wyświetla tylko otwarte zadania przypisane bezpośrednio do Ciebie).
+3. Kliknij kartę **Assigned to My Groups**. Wszystkie oczekujące wnioski o zmianę profilu będą tam widoczne.
 
-**Zo sekcie Serving &rarr; My Work:**
-1. Otvorte [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (vyhľadávací panel v ľavom hornom rohu B1 Admin) a rozbaľte **Serving**.
-2. Kliknite na **My Work**.
-3. V časti Tasks kliknite na záložku **Assigned to My Groups**.
+**Z poziomu Serving &rarr; My Work:**
+1. Otwórz [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (pole wyszukiwania w lewym górnym rogu B1 Admin) i rozwiń **Serving**.
+2. Kliknij **My Work**.
+3. W sekcji zadań kliknij kartę **Assigned to My Groups**.
 
-## Kontrola a schválenie žiadosti
+## Przeglądanie i zatwierdzanie wniosku
 
-1. Kliknutím na úlohu **Profile Update** ju otvorte.
-2. V časti **Requested Changes** uvidíte každé pole, ktoré člen chce aktualizovať, spolu s novou hodnotou, ktorú odoslal.
-3. Skontrolujte zmeny.
-4. Kliknutím na **Apply** schváľte a uložte zmeny do jeho profilu.
+1. Kliknij zadanie **Profile Update**, aby je otworzyć.
+2. W sekcji **Requested Changes** zobaczysz każde pole, które członek chce zaktualizować, wraz z nową wartością, którą podał.
+3. Sprawdź zmiany.
+4. Kliknij **Apply**, aby zatwierdzić i zapisać zmiany w jego profilu.
 
-Úloha sa automaticky uzatvorí, akonáhle sa zmeny uplatnia.
+Zadanie zostanie zamknięte automatycznie po zastosowaniu zmian.
 
-## Nastavenie schvaľovacej skupiny
+## Konfigurowanie grupy zatwierdzającej
 
-Ak vaša cirkev chce, aby zmeny profilu vyžadovali schválenie, najprv je potrebné nakonfigurovať skupinu na schvaľovanie adresára.
+Jeśli Twój kościół chce, aby zmiany profilu wymagały zatwierdzenia, najpierw należy skonfigurować grupę Directory Approval Group.
 
-1. Otvorte Jump menu a rozbaľte **Mobile**.
-2. Kliknite na **Member portal** (stránka „Portal settings“).
-3. V časti **Directory Approval Group** vyberte skupinu, ktorej členovia majú kontrolovať žiadosti o zmenu profilu.
-4. Kliknite na **Save**.
+1. Otwórz menu Jump i rozwiń **Mobile**.
+2. Kliknij **Member portal** (strona „Portal settings”).
+3. W sekcji **Directory Approval Group** wybierz grupę, której członkowie mają przeglądać wnioski o zmianę profilu.
+4. Kliknij **Save**.
 
-Každý člen tejto skupiny uvidí prichádzajúce žiadosti o zmenu profilu v časti **Assigned to My Groups** na svojom paneli.
+Każdy członek tej grupy zobaczy przychodzące wnioski o zmianę profilu w sekcji **Assigned to My Groups** na swoim pulpicie.
 
-Tá istá skupina na schvaľovanie adresára kontroluje aj **žiadosti o zrušenie účtu** — pozrite [Kontrola žiadostí o zrušenie účtu](./account-deletion.md).
+Ta sama grupa Directory Approval Group przegląda również **wnioski o usunięcie konta** — zobacz [Przeglądanie wniosków o usunięcie konta](./account-deletion.md).
 
 :::tip
-Uistite sa, že vaši schvaľovatelia sú skutočne členmi nakonfigurovanej skupiny — žiadosti uvidia iba členovia skupiny.
+Upewnij się, że osoby zatwierdzające są rzeczywiście członkami skonfigurowanej grupy — tylko członkowie grupy zobaczą wnioski.
 :::
 
-## Súvisiace články
+## Powiązane artykuły
 
-- [Správa vášho profilu](./managing-profile.md) — Úprava nastavení vášho vlastného účtu
-- [Kontrola žiadostí o zrušenie účtu](./account-deletion.md) — Rovnaký postup kontroly v schvaľovacej skupine pre zrušenie účtu
-- [Nastavenia B1 Mobile](../../b1-church/getting-started/editing-your-profile.md) — Čo členovia vidia pri odoslaní zmeny profilu
+- [Zarządzanie profilem](./managing-profile.md) — Edycja ustawień własnego konta
+- [Przeglądanie wniosków o usunięcie konta](./account-deletion.md) — Ten sam proces przeglądu przez grupę zatwierdzającą dla usuwania kont
+- [Edycja profilu](../../b1-church/getting-started/editing-your-profile.md) — Co członkowie widzą po przesłaniu zmiany profilu

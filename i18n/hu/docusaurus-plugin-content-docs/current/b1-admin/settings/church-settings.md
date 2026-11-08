@@ -1,193 +1,193 @@
 ---
-title: "Egyházi beállítások"
-description: "Egyháza neve, címe, aldomainje, időzónája, régióformátuma, SMS-szolgáltatója és fájltárhelye a B1 Admin Egyházi beállítások oldalán."
+title: "Gyülekezeti beállítások"
+description: "Állítsa be gyülekezete nevét, címét, aldomainjét, időzónáját, régióformátumát, SMS-szolgáltatóját és fájltárolását a B1 Admin Gyülekezeti beállítások oldalán."
 ---
 
-# Egyházi beállítások
+# Gyülekezeti beállítások
 
 <div class="article-intro">
 
-Az Egyházi beállítások oldalon adhatja meg egyháza alapvető adatait, elérhetőségeit és arculatát. Ezeket az adatokat a ChurchApps minden eszköze használja, beleértve a B1.church weboldalát és a B1 Mobile alkalmazást is.
+A Gyülekezeti beállítások oldalon adhatja meg gyülekezete alapvető adatait, elérhetőségeit és arculati elemeit. Ezek az adatok minden ChurchApps eszközben megjelennek, beleértve a B1.church webhelyet és a B1 App alkalmazást.
 
 </div>
 
 ## Oktatóvideó
 
-<YouTube id="634zSbzDkYA" title="Egyházi adatok és arculat beállítása a B1-ben" next="Szerepkörök, jogosultságok és csapattagok meghívása a B1-ben" nextUrl="/docs/b1-admin/settings/roles-permissions" />
+<YouTube id="634zSbzDkYA" title="Gyülekezeti adatok és arculat beállítása a B1-ben" next="Szerepkörök, jogosultságok és csapattagok meghívása a B1-ben" nextUrl="/docs/b1-admin/settings/roles-permissions" />
 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Szüksége van az „Egyházi beállítások szerkesztése” jogosultságra. Ha nincs hozzáférése, olvassa el a [Szerepkörök és jogosultságok](./roles-permissions.md) részt.
-- Készítse elő egyháza címét, elérhetőségeit és logóját
+- Szüksége van a „Gyülekezeti beállítások szerkesztése” jogosultságra. Ha nincs hozzáférése, olvassa el a [Szerepkörök és jogosultságok](./roles-permissions.md) oldalt.
+- Készítse elő gyülekezete címét, elérhetőségeit és logóját.
 
 </div>
 
-## Az egyházi adatok szerkesztése
+## A gyülekezet adatainak szerkesztése
 
-1. A B1 Adminban nyissa meg az [Ugrás menüt](../introduction.md#getting-around-with-the-jump-menu) (a bal felső sarokban lévő keresősávot), bontsa ki a **Beállítások** menüpontot, majd kattintson a **Beállítások** gombra.
-2. A **Egyházi információk** szakaszban (az oldal tetején) kattintson a **Szerkesztés** gombra.
-3. Módosítsa a következő mezők bármelyikét:
-   - **Egyház neve** -- Ez a név jelenik meg a ChurchApps termékek mindegyikében.
-   - **Cím** -- Egyháza fizikai címe.
+1. A B1 Adminban nyissa meg az [Ugrás menüt](../introduction.md#getting-around-with-the-jump-menu) (a keresősáv a bal felső sarokban), bontsa ki a **Beállítások** menüpontot, majd kattintson a **Beállítások** gombra.
+2. A **Gyülekezeti információk** szakaszban (az oldal tetején) kattintson a **Szerkesztés** gombra.
+3. Módosítsa az alábbi mezők bármelyikét:
+   - **Gyülekezet neve** -- Ez a név jelenik meg minden ChurchApps terméken.
+   - **Cím** -- Gyülekezete fizikai címe.
    - **Elérhetőségek** -- Telefonszám, e-mail-cím és egyéb kapcsolattartási adatok.
-   - **Időzóna** -- Egyháza időzónája. Lásd lentebb: [Időzóna](#time-zone).
-4. Kattintson a **Mentés** gombra a módosítások alkalmazásához.
+   - **Időzóna** -- Gyülekezete időzónája. Lásd alább: [Időzóna](#time-zone).
+4. A módosítások mentéséhez kattintson a **Mentés** gombra.
 
-## Az aldomain beállítása
+## Aldomain beállítása
 
-Egyháza ingyenes aldomaint kap a **yourchurch.1.church** címen. Ezen a webcímen érhetik el a tagok és a látogatók egyháza online jelenlétét.
+Gyülekezete ingyenes aldomaint kap a **gyulekezetneve.1.church** címen. Ezen a webcímen érhetik el a tagok és a látogatók gyülekezete online jelenlétét.
 
-1. A Beállítások oldalon kattintson az **Egyházi információk** szakaszban a **Szerkesztés** gombra, és keresse meg az **Aldomain** mezőt.
+1. A Beállítások oldalon kattintson a **Gyülekezeti információk** szakaszban a **Szerkesztés** gombra, majd keresse meg az **Aldomain** mezőt.
 2. Adja meg a kívánt aldomaint (például „gracechurch” a gracechurch.1.church címhez).
 3. Mentse a módosításokat.
 
 :::info
-Az aldomainnek egyedinek kell lennie az összes ChurchApps-egyház között. Ha a kívánt név már foglalt, adja hozzá városa vagy állama nevét (például „gracechurch-dallas”).
+Az aldomainnek egyedinek kell lennie az összes ChurchApps gyülekezet között. Ha a kívánt név foglalt, próbálja meg hozzáadni a város vagy az állam nevét (például „gracechurch-dallas”).
 :::
 
-Ha azt szeretné, hogy a látogatók saját domainjén érjék el oldalukat (például **`www.gracechurch.org`**), olvassa el az [Egyéni domain](./custom-domain.md) részt.
+Ha azt szeretné, hogy a látogatók saját domainjén érjék el a webhelyét (például **`www.gracechurch.org`**), olvassa el az [Egyedi domain](./custom-domain.md) oldalt.
 
 ## Arculat beállítása
 
-Adja meg, hogyan jelenjen meg egyháza a ChurchApps eszközeiben:
+Testreszabhatja, hogyan jelenik meg gyülekezete az összes ChurchApps eszközben:
 
-1. Töltse fel az **egyházi logót** a logó területére kattintva, majd válasszon egy képfájlt.
-2. Adjon hozzá további **egyházi képeket**, amelyeket a weboldalán és a [mobilalkalmazásban](./mobile-app.md) használ.
+1. Töltse fel a **gyülekezeti logót** a logóterületre kattintva, majd válasszon ki egy képfájlt.
+2. Adjon hozzá további **gyülekezeti képeket**, amelyeket a webhelyén és a [mobilalkalmazásban](./mobile-app.md) használhat.
 
 :::tip
-A legjobb eredmény érdekében átlátszó hátterű PNG formátumú logót használjon. Így világos és sötét háttéren egyaránt jól néz ki.
+A legjobb eredmény érdekében használjon PNG formátumú, átlátszó hátterű logót. Így mindkét, világos és sötét hátterű felületen jól fog kinézni.
 :::
 
 ## A hét első napja
 
-Válassza ki, melyik napon kezdődjenek a naptárai. Az Egyházi információk szakaszban található **A hét első napja** legördülő menü alapértelmezés szerint **vasárnap**, de bármelyik napra állítható. A módosítás után a B1 Adminban és a B1.church tagi portálon megjelenő naptárrácsok is a kiválasztott napon kezdik a hetet. Ez vonatkozik a csoportnaptárakra, a kurátorált naptárakra és az eseményszerkesztőre is.
+Válassza ki, melyik napon kezdődjenek a naptárai. A Gyülekezeti információk szakasz **A hét első napja** legördülő menüjében alapértelmezetten a **vasárnap** van beállítva, de bármelyik napra módosítható. A módosítás után a B1 Adminban és a B1.church tagi portálon a naptárrácsok is ezzel a nappal kezdődnek: a csoportnaptárak, a szerkesztett naptárak és az eseményszerkesztő is a kiválasztott napon kezdi a heteket.
 
 ## Időzóna
 
-Az Egyházi információk szakaszban található **Időzóna** legördülő menüben állíthatja be egyháza időzónáját (például *America/Chicago*). Ha üresen szeretné hagyni, válassza a **Nincs** lehetőséget. Mentés után az időzóna megjelenik az Egyházi információk összefoglalójában.
+A Gyülekezeti információk szakasz **Időzóna** legördülő menüje állítja be gyülekezete időzónáját (például *America/Chicago*). Ha üresen szeretné hagyni, válassza a **Nincs** lehetőséget. Mentés után az időzóna megjelenik a Gyülekezeti információk összefoglalójában.
 
-A B1 ezt az időzónát használja az egyházszintű időpontokhoz, például az eseményemlékeztetőkhöz és a [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md) tévéken megjelenő menetrendekhez. A [bejelentkezési menetrendek](../attendance/setup.md#setting-a-check-in-schedule) időpontjait először az istentisztelet [gyülekezeti helyének](./campuses.md) időzónája szerint számolja, és csak akkor használja az egyház időzónáját, ha a gyülekezeti helynek nincs saját időzónája. Ha összes gyülekezeti helye egy időzónában van, állítsa be az időzónát az egyházon és minden gyülekezeti helyen is.
+A B1 ezt az időzónát használja a gyülekezet egészére érvényes időpontokhoz, például az eseményemlékeztetőkhöz és a [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md) televíziókon megjelenő beosztásokhoz. A [bejelentkezési időpontok](../attendance/setup.md#setting-a-check-in-schedule) mérésénél először az istentisztelet [gyülekezeti helyszínének](./campuses.md) időzónáját veszi figyelembe, és csak akkor használja a gyülekezet időzónáját, ha a helyszínnek nincs saját időzónája. Ha összes helyszíne ugyanabban az időzónában van, állítsa be a gyülekezetnél és minden helyszínnél is.
 
-## Régió (dátum- és telefonszám-formátum)
+## Régió (dátum- és telefonformátum)
 
-A **Régió** beállítás határozza meg, hogyan jelennek meg a dátumok és időpontok a B1-ben. Alapértelmezés szerint az Egyesült Államok formátumát használja (például „Sep 28, 2026” és „9/28/2026”). Az Egyesült Államokon kívüli egyházak áttérhetnek saját formátumukra. Ha például az angol (Egyesült Királyság) lehetőséget választja, a dátumok „28 Sept 2026” és „28/09/2026” formában jelennek meg.
+A **Régió** beállítás határozza meg, hogyan jelennek meg a dátumok és az időpontok az egész B1-ben. Alapértelmezetten az Egyesült Államok formátumát használja a rendszer (például „Sep 28, 2026” és „9/28/2026”). Az Egyesült Államokon kívüli gyülekezetek átválthatnak saját formátumukra. Ha például az angol (Egyesült Királyság) lehetőséget választja, a dátumok „28 Sept 2026” és „28/09/2026” alakban jelennek meg.
 
 1. A Beállítások oldalon kattintson a bal oldali listában a **Régió** menüpontra, majd a **Régió** szakaszban a **Szerkesztés** gombra.
-2. Válassza ki régióját a **Régió** legördülő menüből. Minden lehetőség mellett egy mintadátum látható, így pontosan láthatja, hogyan fognak megjelenni a dátumok.
+2. Válassza ki régióját a **Régió** legördülő menüből. Minden lehetőség mutat egy mintadátumot, így pontosan láthatja, hogyan fognak megjelenni a dátumok.
 3. Kattintson a **Mentés** gombra.
 
-A Régió szakasz ezután megjeleníti a kiválasztott régiót, a **Dátumformátum** mintáját és a **Telefonszámok** formátumát.
+A Régió szakasz ezután megmutatja a kiválasztott régiót, a **Dátumformátum** mintáját és a **Telefonszámok** formátumát.
 
-### Telefonszám-formátum
+### Telefonszámok formátuma
 
-Ugyanebben a Régió szakaszban található a **Telefonszámok** beállítás, amely azt határozza meg, hogyan kell a telefonszámokat megadni a személyek adatlapjain:
+Ugyanebben a Régió szakaszban található a **Telefonszámok** beállítás, amely azt szabályozza, hogyan lehet telefonszámokat megadni a személyek adatlapjain:
 
-- **Nemzetközi (országkóddal)** -- Ez az alapértelmezett. A telefonmezőkben zászlóválasztó jelenik meg, és a számok országkóddal mentődnek (például +1 918 555 1234).
-- **Helyi (ahogy be van írva)** -- A telefonmezők egyszerű szövegmezőkké válnak, és a számokat pontosan úgy mentik, ahogy beírja őket, országkód hozzáadása nélkül (például 0701 234 5678). Ezt válassza, ha egyháza helyi formátumban írja a számokat, és nem szeretné, hogy a B1 országkódot adjon hozzá.
+- **Nemzetközi (országkóddal)** -- Ez az alapértelmezett beállítás. A telefonmezőkben országzászló-választó jelenik meg, és a számok országkóddal mentődnek (például +1 918 555 1234).
+- **Helyi (ahogy beírja)** -- A telefonmezők egyszerű szövegmezőkké válnak, és a számokat pontosan úgy mentik, ahogy beírja, országkód hozzáadása nélkül (például 0701 234 5678). Ezt válassza, ha gyülekezete helyi formátumban írja a számokat, és nem szeretné, hogy a B1 országkódot adjon hozzájuk.
 
 Ha a **Helyi** lehetőség van kiválasztva, a Régió szakasz a régió neve mellett a „Helyi telefonszámok” feliratot is megjeleníti.
 
 :::tip
-A SMS-küldés akkor működik a legjobban, ha a számok tartalmazzák az országkódot. Ha a B1-ből küld üzeneteket, tartsa meg a **Nemzetközi** formátumot, vagy gondoskodjon arról, hogy a Helyi módban megadott számok is tartalmazzák az országkódot.
+Az SMS-küldés akkor működik a legjobban, ha a számok tartalmazzák az országkódot. Ha a B1-ből küld szöveges üzeneteket, tartsa meg a **Nemzetközi** formátumot, vagy gondoskodjon arról, hogy a Helyi módban megadott számok tartalmazzák az országkódot.
 :::
 
-A régió beállítása a B1 Adminban, valamint a B1.church weboldalon és a tagi portálon is érvényes a dátumokra és időpontokra. Ez vonatkozik az igehirdetésekre, a blogbejegyzésekre, a csoportnaptárakra és a szolgálati tervekre is, így a tagok ugyanabban a formátumban látják a dátumokat, mint a munkatársak.
+A régió beállítása a B1 Adminban és a B1.church webhelyen és tagi portálon is érvényes a dátumokra és időpontokra, beleértve az igehirdetéseket, a blogbejegyzéseket, a csoportnaptárakat és a szolgálati terveket. Így a tagok ugyanabban a formátumban látják a dátumokat, mint a munkatársak.
 
 ## SMS-küldés {#texting}
 
-Csatlakoztasson SMS-szolgáltatót, hogy a B1 Adminból egy személynek vagy egy teljes csoportnak üzenetet küldhessen. Az üzeneteket az Ön saját szolgáltatói fiókján keresztül küldi el a rendszer, így a szolgáltató díjai és korlátai érvényesek rájuk.
+Csatlakoztasson SMS-szolgáltatót, hogy a B1 Adminból egy személynek vagy egy teljes csoportnak küldhessen SMS-üzeneteket. Az üzeneteket az Ön saját szolgáltatói fiókján keresztül küldi a rendszer, ezért a szolgáltató díjai és korlátai érvényesek rájuk.
 
 1. A Beállítások oldalon kattintson a bal oldali listában az **SMS-küldés** menüpontra, majd az **SMS-küldés** szakaszban a **Szerkesztés** gombra.
-2. Válasszon egy **Szolgáltatót**:
-   - **Clearstream** -- Adja meg az **API-kulcsot**. Ezt a Clearstream fiókbeállításaiban hozhatja létre az API-kulcsok alatt.
-   - **Text In Church** -- Adja meg az **API-kulcsot**. Először kérjen fejlesztői API-hozzáférést a Text In Church ügyfélszolgálatától, majd hozzon létre egy kulcsot a fiókbeállítások **Developer API** részében.
-   - **Nalo Solutions** (Ghána) -- Adja meg a Nalo Solutions fiókjából származó hitelesítési kulcsot **API-kulcsként**, valamint a Nalo által Önnek jóváhagyott **Feladóazonosítót** (legfeljebb 11 karakter).
-   - **Twilio** -- Használja egyháza saját Twilio-fiókját; a Twilio közvetlenül Önnek számláz. Másolja ki az **Account SID** és az **Auth Token** értékeket a [Twilio konzolból](https://console.twilio.com), és adja meg a **Feladó számot** -- ez egy A2P 10DLC-re regisztrált Twilio-telefonszám, például `+15551234567` formátumban. Mentés után illessze be a bejövő üzenetek webhook-URL-jét (lásd lentebb) a számhoz tartozó **Érkezik üzenet** webhookba a Twilióban, hogy a STOP válaszok a B1-ben is rögzítésre kerüljenek.
+2. Válasszon **Szolgáltatót**:
+   - **Clearstream** -- Adja meg az **API-kulcsot**. A kulcsot a Clearstream fiókbeállításaiban hozhatja létre, az API-kulcsok alatt.
+   - **Text In Church** -- Adja meg az **API-kulcsot**. Először kérjen fejlesztői API-hozzáférést a Text In Church ügyfélszolgálatától, majd a fiókbeállításokban, a Fiók beállítások > Fejlesztői API szakaszban hozzon létre egy kulcsot.
+   - **Nalo Solutions** (Ghána) -- Adja meg a Nalo Solutions fiókjához tartozó hitelesítési kulcsot **API-kulcsként**, valamint egy **Feladó azonosítót** (legfeljebb 11 karakter), amelyet a Nalo jóváhagyott az Ön számára.
+   - **Twilio** -- Használja gyülekezete saját Twilio-fiókját. A Twilio közvetlenül Önnek számláz. Másolja ki a **Fiókazonosítót (Account SID)** és a **Hitelesítési tokent (Auth Token)** a [Twilio konzolról](https://console.twilio.com), és adjon meg egy **Küldő számot (From Number)**. Ez egy A2P 10DLC-re regisztrált Twilio telefonszám legyen, például `+15551234567` formátumban. Mentés után illessze be a bejövő webhook URL-t (lásd lent) a szám **Üzenet érkezésekor (A message comes in)** webhookjába a Twilio-ban, hogy a STOP válaszok a B1-ben is rögzüljenek.
 3. Kattintson a **Mentés** gombra.
 
-Az SMS-küldés leállításához állítsa a **Szolgáltatót** **Nincs** értékre, majd mentsen. Ez eltávolítja a mentett szolgáltatót.
+Az SMS-küldés leállításához állítsa a **Szolgáltató** mezőt **Nincs** értékre, majd mentse. Ez eltávolítja a mentett szolgáltatót.
 
-### A STOP választ küldők leiratkoztatása
+### Leiratkoztatás azoknál, akik STOP üzenettel válaszolnak
 
-Miután elmentett egy szolgáltatót, nyissa meg újra az SMS-küldés szakaszt a **Szerkesztés** gombbal. A szolgáltatóbeállítások alatt egy csak olvasható **Bejövő (STOP) webhook URL** mező jelenik meg, amely egyháza számára egyedi webcímet mutat. Kattintson a mezőre a cím kijelöléséhez, másolja ki, és illessze be a szolgáltatója bejövő üzenetekhez (válaszokhoz) tartozó webhook-beállításába. Ez a fenti szolgáltatók közül mindazokkal működik, amelyek továbbítani tudják a bejövő válaszokat webhookra.
+Miután elmentett egy szolgáltatót, nyissa meg újra az SMS-küldés szakaszt a **Szerkesztés** gombbal. A szolgáltató beállításai alatt egy csak olvasható **Bejövő (STOP) webhook URL** mező jelenik meg, amely gyülekezetére egyedi webcímet mutat. Kattintson a mezőre a cím kijelöléséhez, másolja ki, majd illessze be a szolgáltatója bejövő üzenet (válasz) webhook-beállításába. Ez a fent felsorolt szolgáltatók közül bármelyikkel működik, amely továbbítani tudja a beérkező válaszokat webhookra.
 
-Ezután, ha valaki a üzenetei egyikére **STOP** (vagy STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT vagy REVOKE) választ küld, a B1 megkeresi az összes olyan személyt, akinek a mobilszáma egyezik, leiratkozottként jelöli meg őket, és kikapcsolja a szöveges emlékeztetőiket. Ezután kimaradnak a csoportos üzenetekből. A többi választ a rendszer figyelmen kívül hagyja.
+Ezt követően, ha valaki a küldött üzenetei egyikére **STOP** (vagy STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT vagy REVOKE) választ küld, a B1 megkeresi az összes olyan személyt, akinek a mobilszáma egyezik, megjelöli őket leiratkozottként, és kikapcsolja az SMS-emlékeztetőiket. Ezután kimaradnak a csoportos SMS-üzenetekből. A többi válasz figyelmen kívül marad.
 
 :::info
-Ez ugyanazt a leiratkozási beállítást használja, mint a **Rejtsen el a tagjegyzékből** opció, így a STOP választ küldők profilján is a **Elrejtve a tagjegyzékből** felirat jelenik meg. A mező csak akkor látszik, ha a mentett szolgáltató van kiválasztva. Ha a legördülő menüben másik szolgáltatóra vált, előbb mentsen, hogy újra megjelenjen az URL.
+Ez ugyanazt a leiratkozási beállítást használja, mint a **Rejtse el a tagmappából** beállítás, ezért a STOP választ küldő személyek profilján is a **Elrejtve a tagmappából** felirat jelenik meg. Ez a mező csak akkor látszik, ha a mentett szolgáltató van kiválasztva. Ha egy másik szolgáltatóra vált a legördülő menüben, előbb mentse a módosítást, hogy újra megjelenjen az URL.
 :::
 
-Ha van csatlakoztatott szolgáltató, a küldési jogosultsággal rendelkező munkatársak a csoport oldalán (**Csoport üzenetküldése**) és a mobiltelefonszámmal rendelkező személy oldalán (**SMS küldése**) látni fognak egy **Üzenet** gombot. Írja be üzenetét, majd kattintson a **Küldés** gombra. A párbeszédablak számolja a karaktereket és az SMS-szegmenseket. Csoport esetében a küldés előtt megjeleníti, hány tag kapja meg az üzenetet:
+Ha egy szolgáltató már csatlakoztatva van, az SMS-küldési jogosultsággal rendelkező munkatársak a csoport oldalán a **SMS küldése** gombot (**SMS küldése ennek a csoportnak**), a mobiltelefonszámmal rendelkező személy oldalán pedig a **Szöveges üzenet küldése** gombot (**Szöveges üzenet küldése**) látják. Írja be az üzenetet, majd kattintson a **Küldés** gombra. A párbeszédablak számolja a karaktereket és az SMS-szegmenseket. Csoport esetén a küldés előtt megmutatja, hány tag fogja megkapni az üzenetet:
 
 - A mobiltelefonszám nélküli tagok kimaradnak.
-- Azok a tagok, akik a **Rejtsen el a tagjegyzékből** opciót választották, leiratkozottnak számítanak, és kimaradnak.
+- Azok a tagok, akik a **Rejtse el a tagmappából** beállítást választották, leiratkozottnak számítanak, és kimaradnak.
 - Azok a családtagok, akik ugyanazt a mobilszámot használják, csak egyszer kapják meg az üzenetet.
 
-### Az üzenetek személyre szabása összevonási mezőkkel {#personalizing-texts-with-merge-fields}
+### Üzenetek személyre szabása összevonó mezőkkel {#personalizing-texts-with-merge-fields}
 
-Az üzenetmező alatt az üzenetablak helyettesítő címkéket jelenít meg: **Keresztnév**, **Vezetéknév**, **Megjelenített név** és **Egyház neve**. Kattintson egy címkére, hogy a helyettesítő szöveg (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` vagy `{{churchName}}`) a kurzor helyére kerüljön. Küldéskor minden helyettesítő szöveget az adott címzett adataival cserél le a rendszer, így például a `Hi {{firstName}}, see you Sunday!` típusú csoportos üzenet mindenki számára a saját nevével érkezik meg. A helyettesítő mezők csoportos üzeneteknél és egy személynek küldött üzeneteknél is működnek. A csoportnak szóló üzeneteknél megjelenik a **Csoport neve** címke is (`{{groupName}}`), amelyet a csoport nevével helyettesít a rendszer.
+Az üzenetmező alatt a szöveges üzenet párbeszédablak helyőrző-címkéket jelenít meg: **Keresztnév**, **Vezetéknév**, **Megjelenített név** és **Gyülekezet neve**. Kattintson egy címkére, hogy a helyőrzőt (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` vagy `{{churchName}}`) a kurzor helyére illessze. Küldéskor minden helyőrzőt az adott címzett adataira cserél a rendszer, így egy ilyen csoportos üzenet: `Hi {{firstName}}, see you Sunday!` mindenkinek a saját nevével érkezik. A helyőrzők csoportos és egyéni üzeneteknél is működnek. A csoportos üzenetek esetében elérhető a **Csoport neve** címke (`{{groupName}}`) is, amelyet a csoport nevével helyettesít a rendszer.
 
-Ha szeretne újra felhasználni egy üzenetet, mentse el [szöveges sablonként](./email-templates.md#text-templates) (olyan e-mail-sablonként, amelynek kategóriája **Szöveg**), majd az üzenetablak tetején lévő **Sablon betöltése (opcionális)** menüből válassza ki.
+Ha újra szeretne használni egy üzenetet, mentse el [szöveges sablonként](./email-templates.md#text-templates) (e-mail sablonként, a **Szöveg** kategóriával), majd válassza ki a **Sablon betöltése (opcionális)** mezőből a Szöveges üzenet ablak tetején.
 
 :::info
-Az 1600 karakteres korlát a beírt üzenetre vonatkozik. A helyettesítő mezők kitöltése után minden 1600 karakternél hosszabb szöveg ezen a hosszon lesz levágva.
+Az 1600 karakteres korlát arra az üzenetre vonatkozik, amelyet gépel. A helyőrzők kitöltése után az 1600 karakternél hosszabb szöveg ezen a hosszon lesz levágva.
 :::
 
-Az üzenetek egy [munkafolyamat](../serving/workflows.md#sending-a-text) lépéseként is automatikusan kiküldhetők a **Szöveg küldése** művelettel. Ez ugyanazt a szolgáltatót és ugyanazokat a helyettesítő mezőket használja.
+Az üzenetek a [munkafolyamat](../serving/workflows.md#sending-a-text) egy lépéseként is automatikusan kiküldhetők a **Szöveges üzenet küldése** művelettel. Ez ugyanazt a szolgáltatót és ugyanazokat a helyőrzőket használja.
 
 ## Fájltárolás
 
-Alapértelmezés szerint a weboldalára (a [Fájlok](../website/files.md) menüponton keresztül) és más tartalmi területekre feltöltött fájlok a B1 ingyenes, tárhelyezett tárolóját használják, legfeljebb 100 MB-ig. Ha több helyre van szüksége, csatlakoztathatja saját felhőtárhelyét. Az új feltöltések ekkor közvetlenül az Ön fiókjába kerülnek, platformkorlát nélkül.
+Alapértelmezetten a webhelyére feltöltött fájlok ([Fájlok](../website/files.md)) és más tartalomterületek a B1 ingyenes, tárhelyezett tárolóját használják, legfeljebb 100 MB-ig. Ha több helyre van szüksége, csatlakoztathatja saját felhőtárhelyét. Ebben az esetben az új feltöltések közvetlenül az Ön fiókjába kerülnek, platformkorlát nélkül.
 
 1. A Beállítások oldalon kattintson a bal oldali listában a **Fájltárolás** menüpontra, majd a **Fájltárolás** szakaszban a **Szerkesztés** gombra.
-2. Válasszon szolgáltatót: **Google Drive**, **Dropbox**, **OneDrive** vagy egy **S3-kompatibilis tárolót** (AWS S3, Cloudflare R2, Backblaze B2 stb.).
-3. Google Drive, Dropbox vagy OneDrive esetén kattintson a **Csatlakozás** gombra, és jelentkezzen be a hozzáférés engedélyezéséhez. S3-kompatibilis tároló esetén adja meg a hozzáférési kulcsot, a titkos kulcsot, a tárolónevet és a nyilvános URL alapot.
+2. Válasszon szolgáltatót: **Google Drive**, **Dropbox**, **OneDrive** vagy **S3-kompatibilis tároló** (AWS S3, Cloudflare R2, Backblaze B2 stb.).
+3. Google Drive, Dropbox vagy OneDrive esetén kattintson a **Csatlakozás** gombra, majd jelentkezzen be a hozzáférés engedélyezéséhez. S3-kompatibilis tároló esetén adja meg a hozzáférési kulcsot, a titkos kulcsot, a tároló nevét és a nyilvános URL alapot.
 4. Kattintson a **Mentés** gombra.
 
 :::info
-Ez csak a weboldalának Fájljaiba és a hasonló tartalmi területekre érkező új feltöltéseket érinti. A galériaképek, a bélyegképek, a logók és a személyek fotói mindig a B1 alapértelmezett tárolóján maradnak.
+Ez csak a webhelye Fájlok részébe és a hasonló tartalomterületekre érkező új feltöltésekre vonatkozik. A galéria képei, bélyegképei, logói és a személyek fotói mindig a B1 alapértelmezett tárolóján maradnak.
 :::
 
-## Évfolyam-léptetés
+## Évfolyam-előrelépés
 
-Ha a gyermekek és a tanulók **Évfolyamát** követi nyilvántartásában, a B1 automatikusan egy évfolyammal feljebb léptetheti mindenkit a Ön által megadott napon (például augusztus 1-jén). Így nem kell minden profilt kézzel szerkesztenie.
+Ha a gyermekek és tanulók **évfolyamát** nyilvántartja, a B1 automatikusan egy évfolyammal feljebb léptetheti mindenkit az Ön által megadott napon (például augusztus 1-jén). Így nem kell minden profilt kézzel szerkesztenie. A 12. évfolyamosok ilyenkor **Végzett** státuszt kapnak.
 
-1. A Beállítások oldalon kattintson a bal oldali listában az **Évfolyam-léptetés** menüpontra, majd az **Évfolyam-léptetés** szakaszban a **Szerkesztés** gombra.
-2. Kapcsolja be a kapcsolót (a felirat **Engedélyezve** lesz), és válassza ki azt a **Hónapot** és **Napot**, amikor évente léptetni kell az évfolyamokat. Ezen a napon minden évfolyamba sorolt személy egy évfolyammal feljebb lép, a 12. évfolyamosok pedig **Végzett** státuszt kapnak.
+1. A Beállítások oldalon kattintson a bal oldali listában az **Évfolyam-előrelépés** menüpontra, majd az **Évfolyam-előrelépés** szakaszban a **Szerkesztés** gombra.
+2. Kapcsolja be a kapcsolót (ha bekapcsolt, az **Engedélyezve** felirat látszik), és válassza ki azt a **hónapot** és **napot**, amikor évente az évfolyamok léptetése történik. Ezen a napon mindenki, akinek van évfolyama, egy évfolyammal feljebb lép, a 12. évfolyamosok pedig **Végzett** státuszt kapnak.
 3. Mentse a módosításokat.
 
-Az automatikus léptetés kikapcsolásához állítsa a kapcsolót **Letiltva** állapotba, majd mentsen. A léptetési dátum törlődik, és az évfolyamok nem fognak többé maguktól változni.
+Az automatikus léptetés leállításához kapcsolja ki a kapcsolót, hogy a **Letiltva** felirat jelenjen meg, majd mentse. A léptetés dátuma törlődik, és az évfolyamok többé nem változnak automatikusan.
 
 ## Önkéntes jelentkezés {#volunteer-signup}
 
-Alapértelmezés szerint azok a tagok, akik megnézik a [önkéntes jelentkezéseket](../../b1-church/serving/volunteer-signup.md), minden olyan közelgő hetet látnak, amelyhez van szabad pozíció. Ha ez a lista túl hosszú lenne, megjelenítheti csak az egyes tervtípusok következő hetét.
+Alapértelmezetten a tagok, akik böngészik az [önkéntes jelentkezéseket](../../b1-church/serving/volunteer-signup.md), minden olyan közelgő hetet látnak, amelyre van szabad pozíció. Ha ez a lista túl hosszú lenne, megjelenítheti csak minden tervtípus következő hetét.
 
 1. A Beállítások oldalon kattintson a bal oldali listában az **Önkéntes jelentkezés** menüpontra, majd az **Önkéntes jelentkezés** szakaszban a **Szerkesztés** gombra.
-2. Kapcsolja be a **Csak az egyes tervtípusok következő hetének megjelenítése** opciót.
+2. Kapcsolja be a **Csak az egyes tervtípusok következő hetét mutassa** beállítást.
 3. Mentse a módosításokat.
 
-Ha ez be van kapcsolva, minden tervtípusnál csak a következő közelgő terv látszik. A következő hét a dátum elmúltával jelenik meg. A szakasz **Megjelenített hetek** sora a **Csak az egyes tervtípusok következő hete** vagy az **Összes közelgő hét** szöveget mutatja.
+Ha ez be van kapcsolva, minden tervtípusnál csak a következő közelgő terv jelenik meg. A következő hét akkor látszik, amikor az aktuális dátum elmúlt. A szakasz **Megjelenített hetek** sora a **Csak minden tervtípus következő hete** vagy az **Összes közelgő hét** feliratot mutatja.
 
-## Adakozási adatvédelem {#giving-privacy}
+## Adományozási adatvédelem {#giving-privacy}
 
-Az adakozási jogosultsággal rendelkezők általában látják egy személy adakozási összesítőit a [személyi adatlapján](../people/adding-people.md#editing-details). Ha nem szeretné, hogy az összegek minden adatlap megnyitásakor a képernyőn legyenek, elrejtheti őket, amíg valaki kifejezetten kéri.
+Az adományozási jogosultsággal rendelkező személyek általában látják a személyek adatlapján szereplő adománytotálokat ([személyi adatlap](../people/adding-people.md#editing-details)). Ha nem szeretné, hogy minden alkalommal megjelenjenek az összegek, amikor valaki megnyit egy adatlapot, elrejtheti őket addig, amíg valaki kifejezetten nem kéri.
 
-1. A Beállítások oldalon kattintson a bal oldali listában az **Adakozási adatvédelem** menüpontra, majd az **Adakozási adatvédelem** szakaszban a **Szerkesztés** gombra.
-2. Kapcsolja be a **Adakozás elrejtése a személyi adatlapokon, amíg rá nem kattintanak** opciót.
+1. A Beállítások oldalon kattintson a bal oldali listában az **Adományozási adatvédelem** menüpontra, majd az **Adományozási adatvédelem** szakaszban a **Szerkesztés** gombra.
+2. Kapcsolja be a **Adományok elrejtése a személyi adatlapokon, amíg rá nem kattintanak** beállítást.
 3. Mentse a módosításokat.
 
-Ha ez be van kapcsolva, a személyi adatlap adakozási kártyáján ez a felirat jelenik meg: „Az adakozás a személyi adatlapokon el van rejtve.” Kattintson a **Adakozás megjelenítése** gombra, hogy betöltse és megjelenítse az adott személy adakozását. Ez újra elrejtésre kerül, amikor egy másik személy adatlapját nyitja meg. Az adakozást látók köre nem változik: a kártyát továbbra is csak az adakozási jogosultsággal rendelkezők látják.
+Ha ez be van kapcsolva, a személyi adatlap adománykártyáján ez a felirat jelenik meg: „Az adományok el vannak rejtve a személyi adatlapokon.” A személy adományainak betöltéséhez és megjelenítéséhez kattintson a **Adományok megjelenítése** gombra. Más személy megnyitásakor újra elrejtődnek. Az adományok megtekintésének jogosultsága nem változik: a kártyát továbbra is csak azok látják, akiknek van adományozási hozzáférésük.
 
 ## Importálás és exportálás
 
-A Beállítások oldalon egyháza neve alatt található **Importálás/Exportálás** hivatkozás egy külön eszközt nyit meg új böngészőablakban. Ezzel:
+A Beállítások oldalon, a gyülekezet neve alatt található **Importálás/Exportálás** hivatkozás egy külön eszközt nyit meg új böngészőablakban. Ezzel:
 
-- importálhat tagadatokat egy másik egyházkezelő rendszerből;
-- exportálhatja ChurchApps-adatait biztonsági mentés vagy átköltöztetés céljából.
+- importálhat tagadatokat egy másik egyházkezelő rendszerből,
+- exportálhatja ChurchApps-adatait biztonsági mentés vagy adatátvitel céljából.
 
-Ez különösen hasznos, ha most állítja be egyházát, és a meglévő nyilvántartásokat át kell vinnie a ChurchApps-be.
+Ez különösen hasznos, amikor most állítja be a gyülekezetét, és a meglévő nyilvántartásokat át kell vinnie a ChurchApps-be.
 
 :::warning
-Adatok importálása előtt mindig készítsen biztonsági mentést a meglévő nyilvántartásairól. Az importálási műveletek adatokat adnak a rendszerhez, és ha többször futtatja őket, duplikált bejegyzéseket hozhatnak létre.
+Adatok importálása előtt mindig készítsen biztonsági mentést a meglévő nyilvántartásokról. Az importálási műveletek adatokat adnak a rendszerhez, és többszöri futtatás esetén duplikált bejegyzéseket hozhatnak létre.
 :::

@@ -1,45 +1,45 @@
 ---
-title: "Kılavuz: Sermon Kitaplığınızı ve Canlı Yayınınızı Oluşturun"
-description: "YouTube veya Vimeo vaazlarınızı içe aktarın, oynatma listelerine düzenleyin ve B1 Admin'de sohbetli tekrarlayan canlı yayınlar kurun; web siteniz için."
+title: "Kılavuz: Vaaz Kitaplığınızı Oluşturun ve Canlı Yayın Yapın"
+description: "YouTube veya Vimeo vaazlarınızı içe aktarın, bunları oynatma listelerine düzenleyin ve web siteniz için B1 Admin'de sohbetli yinelenen canlı yayınlar ayarlayın."
 ---
 
-# Sermon Kitaplığınızı ve Canlı Yayınınızı Oluşturun
+# Vaaz Kitaplığınızı Oluşturun ve Canlı Yayın Yapın
 
 <div class="article-intro">
 
-Sermon arşivinizi çevrimiçi hale getirin ve canlı yayın yayınını kurun — mevcut YouTube veya Vimeo kitaplığınızı içe aktarmaktan, etkileşimli sohbetli tekrarlayan canlı ibadetleri planlamaya kadar. Bu sonunda, cemaatiniz web sitenizde ve mobil uygulamanızda geçmiş sermonları izleyebilir ve canlı ibadetlere katılabilir.
+Vaaz arşivinizi çevrim içi hale getirin ve canlı yayın yapmayı ayarlayın — mevcut YouTube veya Vimeo kitaplığınızı içe aktarmaktan, etkileşimli sohbetli yinelenen canlı ibadetleri planlamaya kadar. Tamamlandığında, cemaatiniz geçmiş vaazları izleyebilir ve web sitenizde ile mobil uygulamanızda canlı ibadetlere katılabilir.
 
 </div>
 
 ## Eğitim Videosu
 
-<YouTube id="b3B3A25g2Sk" title="B1'de Sermon Kitaplığınızı Oluşturma" next="B1'de Canlı Yayın Kurulumu" nextUrl="/docs/b1-admin/sermons/live-streaming" />
+<YouTube id="b3B3A25g2Sk" title="B1'de Vaaz Kitaplığınızı Oluşturma" next="B1'de Canlı Yayın Ayarlama" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
 - İçerik yönetimi iznine sahip bir B1 Admin hesabı
-- Sermon videoları içeren bir YouTube veya Vimeo kanalı (arşivinizi içe aktarmak için)
+- Vaaz videolarına sahip bir YouTube veya Vimeo kanalı (arşivinizi içe aktarmak için)
 - YouTube Kanal Kimliği (canlı yayın için — YouTube Studio ayarlarınızda bulabilirsiniz)
 
 </div>
 
-## Adım 1: Sermon Oynatma Listeleri Oluşturun
+## Adım 1: Vaaz Oynatma Listeleri Oluşturun
 
-Oynatma listeleri, sermonlarınızı kolay gezinme için seri ve koleksiyonlara ayırır.
+Oynatma listeleri, vaazlarınızı kolay gezinme için seriler ve koleksiyonlar halinde düzenler.
 
 Şunları yapmak için [Oynatma Listeleri](../sermons/playlists.md) kılavuzunu izleyin:
 
-1. "2024 Pazar Mesajları", "Evlilik Serisi", "Noel Ayinleri" gibi seriler/koleksiyonlar oluşturun
+1. "2024 Pazar Vaazları", "Evlilik Serisi", "Noel Ayinleri" gibi seriler/koleksiyonlar oluşturun
 2. Her oynatma listesi için bir ad, açıklama, yayın tarihi ve küçük resim ekleyin
 
 :::tip
-Sermonları eklemeden önce oynatma listelerini oluşturun. Bu, sermonları eklerken doğru serilere düzenlemeyi kolaylaştırır.
+Vaazları eklemeden önce oynatma listelerini oluşturun. Bu, vaazları eklerken doğru serilere düzenlemeyi kolaylaştırır.
 :::
 
-## Adım 2: Mevcut Sermonlarınızı İçe Aktarın
+## Adım 2: Mevcut Vaazlarınızı İçe Aktarın
 
-YouTube veya Vimeo'da zaten sermon videolarınız varsa, bunların hepsini tek seferde içe aktarabilirsiniz.
+Zaten YouTube veya Vimeo'da vaaz videolarınız varsa, hepsini bir kerede içe aktarabilirsiniz.
 
 Şunları yapmak için [Toplu İçe Aktarma](../sermons/bulk-import.md) kılavuzunu izleyin:
 
@@ -47,60 +47,59 @@ YouTube veya Vimeo'da zaten sermon videolarınız varsa, bunların hepsini tek s
 2. Hangi videoların içe aktarılacağını görmek için içe aktarmayı önizleyin
 3. Hepsini bir kerede eklemek için İçe Aktar'a tıklayın
 
-## Adım 3: Tek Tek Sermon Ekleyin
+## Adım 3: Tek Tek Vaaz Ekleyin
 
-Tek seferlik eklemeler veya toplu içe aktarmanın parçası olmayan sermonlar için bunları tek tek ekleyin.
+Tek seferlik eklemeler veya toplu içe aktarmanın parçası olmayan vaazlar için, bunları tek tek ekleyin.
 
-Şunları yapmak için [Sermonları Yönetme](../sermons/managing-sermons.md) kılavuzunu izleyin:
+Şunları yapmak için [Vaazları Yönetme](../sermons/managing-sermons.md) kılavuzunu izleyin:
 
 1. Bir video URL'si yapıştırın (YouTube, Vimeo veya Facebook)
-2. Başlık, açıklama, küçük resim ve süre video üst verilerinden otomatik olarak doldurulur
-3. Sermonu bir oynatma listesine atayın
+2. Başlık, açıklama, küçük resim ve süre video meta verilerinden otomatik doldurulur
+3. Vaazı bir oynatma listesine atayın
 
-## Adım 4: Canlı Yayını Kurun
+## Adım 4: Canlı Yayını Ayarlayın
 
-B1 sitenizin canlı yayınınızı otomatik olarak algılaması için YouTube kanalınızı bağlayın.
+YouTube kanalınızı bağlayın, böylece B1 siteniz canlı yayınınızı otomatik olarak algılasın.
 
 Şunları yapmak için [Canlı Yayın](../sermons/live-streaming.md) kılavuzunu izleyin:
 
 1. Yayın ayarlarına YouTube Kanal Kimliğinizi girin
-2. Tekrarlayan ibadet programınızı yapılandırın (ör. Pazarları saat 10:00)
-3. **Sermonlar > Ayarlar** sayfasında yayın sayfası sekmelerini (Sohbet, Dua istekleri ve özel bağlantılar) özelleştirin
+2. Yinelenen ibadet programınızı yapılandırın (ör. Pazar günleri saat 10:00)
+3. **Vaazlar > Ayarlar** sayfasında yayın sayfası sekmelerini (Sohbet, Dua talepleri ve özel bağlantılar) özelleştirin
 
 :::info
 YouTube'da canlı yayına geçtiğinizde, B1 yayın sayfası yayını otomatik olarak algılar. Pazar sabahı ek bir adım gerekmez.
 :::
 
-## Adım 5: Web Sitenizde Gösterin
+## Adım 5: Web Sitenizde Görüntüleyin
 
-Sermon kitaplığınızı ve canlı yayınınızı ziyaretçiler için kolayca erişilebilir hale getirin.
+Vaaz kitaplığınızı ve canlı yayınınızı ziyaretçiler için kolayca erişilebilir hale getirin.
 
 Şunları yapmak için [Sayfaları Yönetme](../website/managing-pages.md) kılavuzunu izleyin:
 
-1. Ziyaretçilerin kitaplığınıza göz atabilmesi için B1 web sitenize bir Sermonlar bölümü ekleyin
+1. Ziyaretçilerin kitaplığınıza göz atabilmesi için B1 web sitenize bir Vaazlar bölümü ekleyin
 2. Canlı izleme deneyimi için bir Canlı Yayın bölümü ekleyin
 
 ## Adım 6: Mobil Erişim
 
-Üyeler sermonlara ve canlı ibadetlere herhangi bir cihazdan erişebilir.
+Üyeler vaazlara ve canlı ibadetlere herhangi bir cihazdan erişebilir.
 
-1. Üyeler sermonları [B1 Mobile uygulamasında](../../b1-church/content/sermons.md) ve [B1.church](../../b1-church/content/sermons.md) üzerinde izleyebilir
-2. Sohbetli canlı yayın her iki platformda da çalışır
+1. Üyeler vaazları [B1.church ve B1 App üzerinden](../../b1-church/content/sermons.md) izleyebilir
+2. Sohbetli canlı yayın, telefonda ve bilgisayarda aynı şekilde çalışır
 
 :::info
-Canlı sohbet özelliği, çevrimiçi cemaatinizin tıpkı salonda olduğu gibi gerçek zamanlı olarak katılmasını sağlar.
+Canlı sohbet özelliği, çevrim içi cemaatinizin tıpkı salonda olduğu gibi gerçek zamanlı katılım göstermesini sağlar.
 :::
 
 ## Tamamlandı!
 
-Sermon kitaplığınız çevrimiçi ve canlı yayınınız yapılandırılmış durumda. Üyeler geçmiş sermonlara istedikleri zaman yetişebilir ve canlı ibadetlere her yerden katılabilir. Yeni sermon yüklemeleri otomatik olarak senkronize edilebilir.
+Vaaz kitaplığınız çevrim içi ve canlı yayınınız yapılandırıldı. Üyeler istedikleri zaman geçmiş vaazlara yetişebilir ve her yerden canlı ibadetlere katılabilir. Yeni vaaz yüklemeleri otomatik olarak senkronize edilebilir.
 
 ## İlgili Makaleler
 
-- [Oynatma Listeleri](../sermons/playlists.md) — sermonları serilere düzenleyin
+- [Oynatma Listeleri](../sermons/playlists.md) — vaazları serilere göre düzenleyin
 - [Toplu İçe Aktarma](../sermons/bulk-import.md) — YouTube veya Vimeo'dan içe aktarın
-- [Sermonları Yönetme](../sermons/managing-sermons.md) — tek tek sermon ekleyin ve düzenleyin
+- [Vaazları Yönetme](../sermons/managing-sermons.md) — tek tek vaaz ekleyin ve düzenleyin
 - [Canlı Yayın](../sermons/live-streaming.md) — canlı ibadetleri yapılandırın
-- [Sermonlar (Web)](../../b1-church/content/sermons.md) — üyelerin sermon izleme deneyimi
-- [Canlı Yayın (Web)](../../b1-church/content/live-streaming.md) — üyelerin canlı yayın deneyimi
-- [Sermonlar (Mobil)](../../b1-church/content/sermons.md) — mobil uygulamada sermonlar
+- [Vaazlar (Üyeler)](../../b1-church/content/sermons.md) — üyelerin vaaz izleme deneyimi
+- [Canlı Yayın (Üyeler)](../../b1-church/content/live-streaming.md) — üyelerin canlı yayın deneyimi

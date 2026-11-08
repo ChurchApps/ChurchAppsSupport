@@ -1,88 +1,88 @@
 ---
-title: "Umhlahlandlela: Setinga Kubhalisa Kwemcimbi"
-description: "Setfula ifomu lekubhalisa temcimbi ku-B1 Admin kutfola tincobo tebantfu nemalivo langeketiwe, ulifake ewebhusayitini yebandla, bese uhlola lababhalisile."
+title: "Umhlahlandlela: Setha Ukubhalisa Kwemcimbi"
+description: "Setha lifomu lekubhalisa kwemcimbi ku-B1 Admin ukuze uqoqe lolwazi lwemhlanganyeli netikhokhelo letikhetfwako, uyifake kuwebhusayithi yesonto lakho, futsi ulandzele labo abasebhalisile."
 ---
 
-# Setinga Kubhalisa Kwemcimbi
+# Setha Ukubhalisa Kwemcimbi
 
 <div class="article-intro">
 
-Yakha ifomu lekubhalisa kwemcimbi, buthelela imininingwane yalabo labatawuba khona kanye netinkhokhelo, uyifake kuwebhusayithi welibandla lakho, bese uphatsa kubhaliswa njengoba kungena. Nasekugcineni, utawuba nelikhasi lekubhalisa lelingabelaniswa nabo nome ngukuphi umcimbi welibandla.
+Dala lifomu lekubhalisa kwemcimbi, qoqa lolwazi lwemhlanganyeli netikhokhelo letikhetfwako, uyifake kuwebhusayithi yesonto lakho, futsi uphatse tibhalisi njengoba tifika. Ekugcineni, uyawuba nelikhasi lekubhalisa lelingabelwana nalo ngemcimbi wonkhe wesonto.
 
 </div>
 
 :::info
-**Tindlela letimbili tekuphatsa kubhaliswa kwemcimbi:** Lomhlahlandlela ukhulumela **kubhalisa lokusekelwe emafomini**, lokukupha kulawula lokugcwele emabaleni lakhetsekile netinkhokhelo. Kwemicimbi lelula lapho udzinga nje kulandzelela kutsi ngubani lotawuba khona, sebentisa **kubhalisa lokungumdabu kwemcimbi** lokwakhelwe ekhalendeni — buka [Kudala Emakhalenda](../calendars/creating-calendars.md#enabling-event-registration) kutfola tinyatselo tekuhlela. Kubhalisa lokungumdabu kuvumela emalunga kutsi abhalise ngco kusuka [ku-website ye-B1](../../b1-church/events/registering.md) na [ku-app yeselula](../../b1-church/events/registering.md) kanye nekulandzelela linani, tikhatsi telusuku, kanye netincomo te-imeyili.
+**Tindlela letimbili tekuphatsa kubhalisa kwemcimbi:** Lomhlahlandlela ugcwalisa **kubhalisa ngelifomu**, lonika ulawulo lolugcwele tinkhundla letikhethekile nekuqoqwa kwetikhokhelo. Kumicimbi lelula lapho udzinga kuphela kulandzela labo abeta, sebentisa **kubhalisa kwemcimbi lokwakhiwe ngekwemvelo** lokukhona kukhalenda -- bona [Kwakha Tikhalenda](../calendars/creating-calendars.md#enabling-event-registration) ngetemiyalo yekusetha. Kubhalisa ngekwemvelo kuvumela emalungu kutibhalisela ngqo kusuka ku-[B1.church noma ku-B1 App](../../b1-church/events/registering.md) nekulandzelwa kwemtsamo, tinsuku letitsatfwa kanye netingcaciso letifika ku-imeyili.
 :::
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- I-akhawunti ye-B1 Admin lenekufinyelela kwemphatsi
-- Kutfola tinkhokhelo: [Stripe kudzinga kuhleleka](../donations/online-giving-setup.md) kucala
+- I-akhawunti ye-B1 Admin enelungelo lokungena njengomphatsi
+- Ekukhokheni: [i-Stripe kufanele isetiwe](../donations/online-giving-setup.md) kuqala
 
 </div>
 
-## Sinyatselo 1: Yakha Ifomu Lelizimele
+## Sitfombe 1: Dala Lifomu Le-Stand Alone
 
-Emafomu lalizimele anelikhasi lawo le-URL lelingafinyelelwa nangubani — kulungele kahle kubhalisa kwemcimbi.
+Lifomu Le-Stand Alone linekheli lalo lomphakathi lelingafinyelelwa yinoma ngubani -- linelungele kakhulu kubhalisa kumcimbi.
 
-Landzela umhlahlandlela we-[Kudala Emafomu](../forms/creating-forms.md) kute:
+Landzela umhlahlandlela [Kwakha Tifomu](../forms/creating-forms.md) ukuze:
 
-1. Yiya ku-Emafomu bese uchofota Ngeta Ifomu
-2. Khetsa luhlobo "Lelizimele" — loku kunika ifomu lakho i-URL yalo yemphakatsi
-3. Lipha libito lelihambisana nemcimbi (sib., "Kubhaliswa Kwelicembu Lemadvodza", "Kubhaliswa Kwe-VBS")
+1. Uye ku-Forms bese ucindzetela Add Form
+2. Khetsa luhlobo lwe "Stand Alone" -- loku kunika lifomu lakho ikheli lalo lomphakathi
+3. Liniketele ngemcimbi (njengo "Men's Retreat Registration", "VBS Sign-Up")
 
-## Sinyatselo 2: Faka Imibuto
+## Sitfombe 2: Engeza Imibuto
 
-Yakha emabala ladzingekako kute uthole imininingwane kulabo labhalisako.
+Akha tinkhundla letidzingekako ekuqoqeni lolwazi kubhalisi.
 
-Landzela umhlahlandlela we-[Kudala Emafomu](../forms/creating-forms.md#adding-questions) kute ufake imibuto yakho:
+Landzela umhlahlandlela [Kwakha Tifomu](../forms/creating-forms.md#adding-questions) ukuze wengeze imibuto yakho:
 
-1. Yiya kuthebhu yeMibuto bese ufaka emabala emininingwane leyidzingako: libito, i-imeyili, luhlonga, kunconywa kwekudla, sayizi yeliteshirt, umuntfu longashaywa nakukhona sidzukudzuku, njalonjalo
-2. Sebentisa Kukhetsa Lokuninginigi kwetintfo letinjengekukhetsa kwekudla nobe kukhetsa kwemasesihni
+1. Yiya ku-Questions bese wengeza tinkhundla letitsite lolwazi lodzingako: libito, imeyili, fowuni, tidzingo tekudla, saisi ye-T-shirt, locingiswa ngesimo lesiphuthumako, njll.
+2. Sebentisa Multiple Choice etinketfweni letifana netikhetho temalambu noma tikhetho tetiketfo
 
 :::warning
-Luhlobo lwelibala Lenkhokhelo ludzinga kutsi i-Stripe ihleleke. Nangabe ungakayihleli imnikelo yekuku-inthanethi, buka [Kuhlela Imnikelo Ye-Inthanethi](../donations/online-giving-setup.md) ngembi kwekufaka emabala enkhokhelo.
+Inkhundla yekukhokha idzinga kutsi i-Stripe isetiwe. Uma ungakasetsi kukhokha ngaintanetini, bona [Kusetha Kukhokha Ngaintanetini](../donations/online-giving-setup.md) ngaphambi kwekwengeta tinkhundla tekukhokha.
 :::
 
-## Sinyatselo 3: Hlela Tilungiselelo Tefomu
+## Sitfombe 3: Setha Tilungiselelo Telifomu
 
-Lawula kutsi nini futsi njani ifomu lakho lekubhalisa litfolakala.
+Lawula kutsi lifomu lekubhalisa litfolakala nini nakuphi.
 
-1. Setinga tikhatsi tekutfolakala nangabe kubhaliswa kufanele kuvulwe sikhashana nje
-2. Kopisha i-URL yemphakatsi — ungayabelana ngco
-3. Faka emalunga efomu latekele Emphatsi nobe imvumo Yekubuka Kuphela kute akusite ekuphatseni kubhaliswa
+1. Setha tinsuku tekutfolakala uma kubhalisa kufanele kuvulekele sikhatsi lesitsite
+2. Kopisha ikheli lomphakathi -- ungalabelana nalo ngqo
+3. Engeza emalungu elifomu anemalungelo we-Admin noma View Only kuze asite ekuphateni tibhalisi
 
-## Sinyatselo 4: Yifake Kuwebhusayithi Yakho
+## Sitfombe 4: Fake Kuwebhusayithi Yakho
 
-Yenta ifomu lekubhalisa litfolakale kalula ngekuyifaka kuwebhusayithi welibandla lakho.
+Yenta lifomu lekubhalisa litfolakale kalula ngekulingisa kuwebhusayithi yesonto lakho.
 
-Landzela umhlahlandlela we-[Kuphatsa Emakhasi](../website/managing-pages.md) kute:
+Landzela umhlahlandlela [Kuphatsa Emakhasi](../website/managing-pages.md) ukuze:
 
-1. Ku-sihleli sewebhusayithi ye-B1, faka incenye lensha ekhasini bese ukhetsa i-elementi ye-Fomu
-3. Khetsa ifomu lakho lekubhalisa kuluhlu
+1. Ku-website editor ye-B1 yakho, engeza sigaba lesisha ekhasini bese ukhetsa Form element
+2. Khetsa lifomu lakho lekubhalisa kuluhlu
 
 :::tip
-Yabelana nge-URL lelizimele ngeimeyili, ku-social media, nasetincwadzini talibandla nako — kutolibonakala tindzawo letinyenti, kutosiba lokungenani lokutakuvela.
+Abelana nekheli le-standalone ngemeyili, kumidlalo yakho yemtfombo, nasetincwadzini temasonto futsi. Lapho livela khona kakhulu, ngaloko kutawuba nebantfu labavakashele lilifomu labatawubhalisa.
 :::
 
-## Sinyatselo 5: Phatsa Kubhaliswa
+## Sitfombe 5: Phatsa Tibhalisi
 
-Landzelela kubhalisa njengoba kungena bese usohla imininingwane nawuyidzinga.
+Landzelela tibhalisi njengoba tifika futsi uphumeledatha lapho udzinga khona.
 
-Landzela umhlahlandlela we-[Kuphatsa Kubhaliswa](../forms/managing-submissions.md) kute:
+Landzela umhlahlandlela [Kuphatsa Tibhalisi](../forms/managing-submissions.md) ukuze:
 
-1. Buka timphendvulo njengoba tingena kuthebhu yeKubhaliswa
-2. Sohla ku-CSV kwema-spreadsheet, kulandzelela linani, nobe kwabelana nebahleli bemcimbi
+1. Bona tiphendvulo njengoba tifika kuthebhu ye-Submissions
+2. Dlulisela ku-CSV ngetiprogramu temasipredishithi, kulandzela inani labantfu, noma kwabelana nakubaphatsi bemicimbi
 
-## Usucedzile!
+## Uphelile!
 
-Kubhalisa kwemcimbi wakho sekusebenta. Yabelana ngelinki, uyifake kuwebhusayithi yakho, ulandzelele kubhaliswa kusuka ku-B1 Admin. Nakusiphelile umcimbi, sohla luhlu lwekugcina lwemarekhodi akho.
+Kubhalisa kwakho kwemcimbi sekuvulekile. Abelana nelinki, uyifake kuwebhusayithi yakho, futsi ulandzelele tibhalisi ku-B1 Admin. Lapho umcimbi uphelile, khipha lolwati lokugcina ukuze ube nalo lirekhodi.
 
-## Tihloko Letihlobene
+## Tindzaba Letihlobene
 
-- [Kudala Emafomu](../forms/creating-forms.md) — yakha emafomu ngetinhlobo temabala letehlukene
-- [Kuphatsa Kubhaliswa](../forms/managing-submissions.md) — buka bese usohla timphendvulo temafomu
-- [Kuphatsa Emakhasi](../website/managing-pages.md) — faka emafomu kuwebhusayithi yakho
-- [Kuhlela Imnikelo Ye-Inthanethi](../donations/online-giving-setup.md) — kudzingekile emabaleni enkhokhelo
+- [Kwakha Tifomu](../forms/creating-forms.md) — akha tifomu ngetinhlobo letehlukene tetinkhundla
+- [Kuphatsa Tibhalisi](../forms/managing-submissions.md) — buka futsi uphume tiphendvulo temafomu
+- [Kuphatsa Emakhasi](../website/managing-pages.md) — fake tifomu kuwebhusayithi yakho
+- [Kusetha Kukhokha Ngaintanetini](../donations/online-giving-setup.md) — kuyadingeka etinkhundleni tekukhokha

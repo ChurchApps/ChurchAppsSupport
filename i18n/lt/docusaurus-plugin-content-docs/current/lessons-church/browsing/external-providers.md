@@ -1,58 +1,60 @@
 ---
-title: "Externe anbieter"
-description: "Sužinokite, kaip trečiųjų šalių mokymo teikėjai pateikia turinį Lessons.church pagal Open Lesson Format, ir kaip prijungti teikėją per portalą."
+title: "Zewnętrzni dostawcy"
+description: "Jak zewnętrzni dostawcy programów nauczania udostępniają lekcje w formacie Open Lesson Format oraz jak Twój kościół dodaje dostawcę w Lessons.church i planuje jego lekcje."
 ---
 
-# Externe anbieter
+# Zewnętrzni dostawcy
 
 <div class="article-intro">
 
-Lessons.church nėra apribotas tik savo mokymo programa. Trečiųjų šalių mokymo programų teikėjai gali skelbti savo turinį per **Atvirą pamokų formatą**, o šis turinys rodomas kartu su Lessons.church įtaisytomis programomis, kad naršymas būtų vieningas.
+Lessons.church nie ogranicza się do własnego programu nauczania. Zewnętrzni dostawcy programów nauczania mogą publikować swoje treści w formacie **Open Lesson Format**. Po dodaniu dostawcy przez Twój kościół możesz planować jego lekcje dla swoich klas obok biblioteki Lessons.church.
 
 </div>
 
 <div class="prereqs">
-<h4>Prieš pradedant</h4>
+<h4>Zanim zaczniesz</h4>
 
-- Susipažinkite, kaip organizuojamas turinys, perskaitę [Programos ir studijos](./programs-and-studies.md)
-- Norint pridėti teikėjo ryšį, reikia [Lessons.church paskyros](../getting-started/creating-account.md), turinčios prieigą prie jūsų bažnyčios portalo
+- Zapoznaj się z organizacją treści, czytając [Programy i studia](./programs-and-studies.md)
+- Aby dodać połączenie z dostawcą, potrzebujesz [konta Lessons.church](../getting-started/creating-account.md) z dostępem do harmonogramów klas Twojego kościoła
 
 </div>
 
-## Kas yra išoriniai teikėjai?
+## Czym są zewnętrzni dostawcy?
 
-Išorinis teikėjas – tai bet kuri organizacija, skelbianti bažnyčios mokymo programą naudodama Atvirą pamokų formatą – standartą, leidžiantį bendrinti pamokų turinį tarp platformų. Kai teikėjas savo turinį pateikia šiuo formatu, Lessons.church gali jį įtraukti ir rodyti taip pat, kaip ir savo programas.
+Zewnętrzny dostawca to dowolna organizacja, która publikuje program nauczania dla kościołów w formacie Open Lesson Format -- standardzie umożliwiającym udostępnianie treści lekcji na różnych platformach. Gdy dostawca udostępnia swoje treści w tym formacie, Lessons.church może je odczytać i wyświetlić jego lekcje w takim samym układzie jak własne.
 
-Tai reiškia, kad galite naudotis platesniu mokymo medžiagos pasirinkimu nelankydami kelių svetainių.
+Dzięki temu masz dostęp do szerszego wyboru programów nauczania bez konieczności odwiedzania wielu stron internetowych.
 
-## Išorinio turinio naršymas
+## Dodawanie połączeń z dostawcami
 
-Išorinio teikėjo turinys veikia visiškai taip pat kaip įtaisytas turinys:
+Jeśli Twój kościół korzysta z dostawcy programu nauczania, który obsługuje format Open Lesson Format:
 
-1. Išorinių teikėjų programos rodomos Lessons.church pagrindiniame puslapyje kartu su kitomis programomis.
-2. Spustelėkite **programą**, kad pamatytumėte jos studijas.
-3. Spustelėkite **studiją**, kad pamatytumėte jos pamokas.
-4. Pamokas peržiūrėkite tuo pačiu išdėstymu – skyriai, vaidmenys, veiksmai, vaizdo įrašai ir atsisiunčiama medžiaga.
+1. Zaloguj się na swoje konto Lessons.church.
+2. Kliknij **External Providers** w nawigacji.
+3. Kliknij **Add Provider**, wpisz **Provider Name** oraz **API URL** dostawcy, a następnie kliknij **Save**.
 
-Išoriniam turiniui nėra jokio ypatingo proceso ar atskiro skyriaus. Viskas integruota į vieną biblioteką, kad naršyti būtų patogu.
-
-## Teikėjų ryšių pridėjimas
-
-Jei jūsų bažnyčia naudoja mokymo programos teikėją, palaikantį Atvirą pamokų formatą, ir norite, kad jo turinys būtų prieinamas jūsų Lessons.church portale:
-
-1. Prisijunkite prie savo Lessons.church paskyros.
-2. Portale eikite į puslapį **Išoriniai teikėjai**.
-3. Įveskite išorinio teikėjo ryšio URL.
-4. Jo programos ir studijos taps prieinamos jūsų bažnyčiai naršyti, planuoti ir naudoti klasėse.
+Pełną instrukcję znajdziesz w artykule [Dostawcy zewnętrzni](../admin/third-party-providers.md).
 
 :::info
-Išorinio teikėjo ryšys pridedamas per Lessons.church portalą ir reikalauja prisijungimo prie paskyros. Naršyti turinį, kurį platforma jau yra pridėjusi, paskyros nereikia.
+Zewnętrzny dostawca jest dodawany wyłącznie dla Twojego kościoła. Jego programy nie pojawiają się na publicznej stronie głównej Lessons.church ani w wynikach wyszukiwania.
 :::
 
-## Turinio kūrėjams
+## Korzystanie z treści zewnętrznych
 
-Jei esate mokymo programos leidėjas ir norite, kad jūsų turinys būtų prieinamas Lessons.church, Atvirasis pamokų formatas suteikia standartizuotą būdą bendrinti savo programas, studijas ir pamokas. Susisiekite su Lessons.church komanda arba apsilankykite kūrėjų dokumentacijoje, kur rasite integravimo informaciją.
+Po dodaniu dostawcy jego programy, studia i lekcje są dostępne podczas planowania:
+
+1. Gdy [dodajesz lekcję do harmonogramu klasy](../classrooms/scheduling-lessons.md), wybierz dostawcę w polu **Provider**.
+2. Wybierz **Program**, **Study**, **Lesson** oraz **Venue** w taki sam sposób, jak w przypadku lekcji Lessons.church.
+3. W harmonogramie klasy kliknij **View Lesson** przy zaplanowanej zewnętrznej lekcji, aby ją otworzyć. Ma ona taki sam układ jak wbudowane lekcje -- sekcje, role, działania, filmy oraz materiały do pobrania.
+
+:::note
+Lekcji od zewnętrznych dostawców nie można [dostosowywać](../customization/customizing-lessons.md). Odnośnik **Customize** pojawia się wyłącznie przy lekcjach Lessons.church.
+:::
+
+## Dla twórców treści
+
+Jeśli jesteś wydawcą programów nauczania i chcesz udostępnić swoje treści w Lessons.church, format Open Lesson Format zapewnia standardowy sposób udostępniania programów, studiów i lekcji. Skontaktuj się z zespołem Lessons.church lub odwiedź dokumentację dla deweloperów, aby poznać szczegóły integracji.
 
 :::tip
-Jei esate administratorius ir valdote trečiųjų šalių teikėjų srautus platformos lygmeniu, žr. [Trečiųjų šalių teikėjai](../admin/third-party-providers.md) Administravimo skyriuje.
+Instrukcje krok po kroku dotyczące dodawania, edytowania i usuwania dostawcy znajdziesz w artykule [Dostawcy zewnętrzni](../admin/third-party-providers.md).
 :::

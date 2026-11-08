@@ -1,68 +1,73 @@
 ---
-title: "Itsesisäänkirjautuminen B1.church-jäsenportaalissa"
-sidebar_label: "Itsepalvelusisäänkirjautuminen"
-description: "Kirjaa itsesi ja perheesi palveluun B1.church-jäsenportaalista: valitse palveluajat ja ryhmät muutamassa nopeassa vaiheessa."
+title: "Itsepalvelu sisäänkirjautuminen B1.church jäsenportaalissa"
+sidebar_label: "Itsepalvelu sisäänkirjautuminen"
+description: "Kirjaa itsesi ja perheesi jumalanpalvelukseen B1.church jäsenportaalista muutamalla nopealla vaiheella, valiten palveluajat ja ryhmät."
 ---
 
-# Itsepalvelusisäänkirjautuminen
+# Itsepalvelu sisäänkirjautuminen
 
 <div class="article-intro">
 
-Itsepalvelusisäänkirjautumisen avulla voit kirjata osallistumisen itsellesi ja talouteesi kuuluville muutamassa vaiheessa. Se on nopea vaihtoehto kirkon fyysisen kioskin käytölle.
+Itsepalvelu sisäänkirjautumisen avulla voit kirjata itsesi ja perheesi osallistumisen muutamalla vaiheella. Se on nopea vaihtoehto seurakunnan fyysisen kioskin käytölle.
 
 </div>
 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Sinun täytyy [kirjautua sisään](../getting-started/logging-in.md) B1.church-tilillesi.
-- Talouteesi kuuluvat jäsenet täytyy olla linkitetty tiliisi. Jos perheenjäsen puuttuu, pyydä kirkkosi ylläpitäjää lisäämään hänet talouteesi.
+- Sinun täytyy [olla kirjautunut sisään](../getting-started/logging-in.md) B1.church-tilillesi.
+- Perheenjäsenesi täytyy olla liitettynä tiliisi. Jos perheenjäsen puuttuu, pyydä seurakunnan ylläpitäjää lisäämään hänet talouteesi.
 
 </div>
 
 ## Sisäänkirjautumisen kulku
 
-Sisäänkirjautuminen etenee kolmen yksinkertaisen vaiheen mukaan. Aloita avaamalla **Sisäänkirjautuminen** [välilehtipalkista tai Lisää-sivulta](../getting-started/navigating.md).
+Sisäänkirjautuminen etenee kolmen vaiheen yksinkertaisen prosessin mukaan. Aloita avaamalla **Check-In** [välilehtipalkista tai Lisää-sivulta](../getting-started/navigating.md).
 
-### Vaihe 1: Valitse jumalanpalvelus
+### Vaihe 1: Valitse palvelu
 
-Kun avaat sisäänkirjautumissivun, näet luettelon saatavilla olevista jumalanpalveluksista (esimerkiksi "Sunnuntaiaamu" tai "Keskiviikkoilta"). Jokainen jumalanpalveluskortti näyttää palvelun nimen ja seurakuntayksikön, jos kirkollasi on useita toimipisteitä.
+Kun avaat sisäänkirjautumissivun, näet luettelon saatavilla olevista palveluista (esimerkiksi „Sunnuntaiaamu” tai „Keskiviikkoilta”). Jokainen palvelukortti näyttää palvelun nimen ja seurakuntapaikan, jos seurakunnallasi on useita toimipisteitä.
 
-Valitse jumalanpalvelus napsauttamalla sitä, jolloin siirryt seuraavaan vaiheeseen.
+Valitse palvelu napsauttamalla sitä ja siirry seuraavaan vaiheeseen.
 
-### Vaihe 2: Valitse taloutesi jäsenet ja ryhmät
+### Vaihe 2: Valitse talouden jäsenet ja ryhmät
 
-Kun olet valinnut jumalanpalveluksen, näet taloutesi jäsenet kohdassa **Kuka on paikalla**. Jokaisen osallistuvan henkilön kohdalla:
+Kun olet valinnut palvelun, näet talouden jäsenet otsikon **Who's here** alla. Jokaiselle paikalla olevalle henkilölle:
 
-1. Napauta talouden jäsentä laajentaaksesi hänen merkintänsä.
-2. Näet valitsemasi jumalanpalveluksen käytettävissä olevat **jumalanpalveluksen ajat**. Jos kirkkosi on asettanut sisäänkirjautumisaikataulun jumalanpalveluksen ajalle, voit valita sen vain, kun sisäänkirjautuminen siihen on auki (esimerkiksi 30 minuuttia ennen jumalanpalvelusta ja hetken sen päättymisen jälkeen). Tuon ajan ulkopuolella jumalanpalveluksen aika näkyy merkintänä **Suljettu**, ja siinä kerrotaan myös avautumisaika, jos se tiedetään, esimerkiksi **Suljettu · avautuu su klo 9.30**.
-3. Napauta **Valitse ryhmä** jumalanpalveluksen ajan vieressä valitaksesi, mihin ryhmään henkilö kirjataan (esimerkiksi "Pääjumalanpalvelus", "Lastenhuone 1" tai "Nuorisoryhmä").
-4. Toista vaiheet jokaiselle osallistuvalle talouden jäsenelle.
+1. Napauta talouden jäsentä laajentaaksesi hänen tietonsa.
+2. Näet valitsemasi palvelun saatavilla olevat **palveluajat**. Jos seurakuntasi on asettanut palveluajalle sisäänkirjautumisaikataulun, voit valita sen vain silloin, kun sisäänkirjautuminen siihen on auki (esimerkiksi 30 minuuttia ennen palvelua ja hetken sen päättymisen jälkeen). Tämän ikkunan ulkopuolella palveluaika näkyy tilassa **Closed**, ja mikäli avautumisaika tiedetään, sen kanssa – esimerkiksi **Closed · opens Sun 9:30 AM**.
+3. Napauta palveluajan vieressä olevaa **Select Group** -painiketta valitaksesi ryhmän, johon henkilö kirjataan (kuten „Main Worship”, „Kids Room 1” tai „Youth Group”).
+4. Toista jokaiselle paikalla olevalle talouden jäsenelle.
 
-Sinun ei tarvitse kirjata sisään jokaista talouden jäsentä. Laajenna ja määritä ryhmät vain niille henkilöille, jotka ovat todella paikalla.
+Sinun ei tarvitse kirjata sisään jokaista talouden jäsentä – laajenna ja valitse ryhmät vain niille henkilöille, jotka ovat todella paikalla.
+
+Jokaisen henkilön nimen vieressä näkyy merkki **Already Checked In**, jos hän on jo kirjautunut tähän palveluun tänään.
 
 ### Vaihe 3: Vahvistus
 
-Kun olet valinnut ryhmät kaikille osallistuville, napauta sivun alareunan painiketta. Se laskee valitsemasi henkilöt, esimerkiksi **Kirjaa sisään 1 henkilö** tai **Kirjaa sisään 3 henkilöä**.
+Kun olet valinnut ryhmät kaikille paikalla oleville, napauta sivun alareunan painiketta. Se laskee valitsemasi henkilöt – esimerkiksi **Check in 1 person** tai **Check in 3 people**.
 
-Näet vahvistuksen siitä, että sisäänkirjautuminen on valmis ja osallistumisesi on tallennettu. Hetken kuluttua sivu palaa jumalanpalvelusluetteloon, valmiina seuraavaa sisäänkirjautumista varten.
+Jos joku valitsemistasi henkilöistä on jo kirjautunut tähän palveluun tänään, ikkuna **Already Checked In** mainitsee heidät ensin. Napauta **Check In Again** päivittääksesi heidän ryhmänsä tai **Cancel** palataksesi takaisin.
 
-Jos kirkkosi tulostaa nimilappuja sisäänkirjautumisasemalla, näet sen sijaan tekstin **Olet kirjautunut sisään!**, QR-koodin ja turvakoodin. Näytä koodi sisäänkirjautumisasemalla nimilappujen tulostamiseksi ja napauta sen jälkeen **Valmis**. B1 Checkin -kioskilla napauta **Skannaa koodi** ja pidä QR-koodia kameran edessä. Katso [Puhelimella tehtävän sisäänkirjautumisen tarrojen tulostaminen](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+Näet vahvistuksen siitä, että sisäänkirjautumisesi on valmis ja osallistumisesi on tallennettu. Hetken kuluttua sivu palaa palvelulistaan ja on valmis seuraavaa sisäänkirjautumista varten.
 
-Jos taloutesi on jo kirjattu sisään valitsemallesi jumalanpalvelukselle, **Kuka on paikalla** -otsikon viereen ilmestyy linkki **Näytä sisäänkirjautumiskoodi**. Napauta sitä, jos haluat palauttaa QR-koodin ja turvakoodin näkyviin, esimerkiksi jos suljit sivun ennen kuin ehdit sisäänkirjautumisasemalle.
+Jos seurakuntasi tulostaa nimilaput sisäänkirjautumispisteessä, näet sen sijaan tekstin **You're checked in!**, QR-koodin ja turvakoodin. Näytä koodi sisäänkirjautumispisteessä nimilappujen tulostamiseksi ja napauta sitten **Done**. B1 Checkin -kioskilla napauta **Scan code** ja pidä QR-koodia kameran edessä – katso [Tulostetarrojen tulostaminen puhelimella tehtävää sisäänkirjautumista varten](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+
+Jos talouteesi on jo kirjautunut sisään valitsemasi palvelun aikana, otsikon **Who's here** viereen ilmestyy linkki **Show check-in code**. Napauta sitä, jos haluat palauttaa QR-koodin ja turvakoodin näkyviin – esimerkiksi jos suljit sivun ennen kuin ehdit sisäänkirjautumispisteeseen.
 
 :::tip
-Jos haluat muuttaa ryhmävalintaa ennen sisäänkirjautumisen päättämistä, napauta jumalanpalveluksen ajan vieressä olevaa painiketta **Muuta** ja valitse toinen ryhmä.
+Jos haluat muuttaa ryhmävalintaa ennen sisäänkirjautumisen viimeistelyä, napauta minkä tahansa palveluajan vieressä olevaa painiketta **Change** ja valitse toinen ryhmä.
 :::
 
 ## Hyvä tietää
 
-- Voit kirjata sisään vain sellaisia talouden jäseniä, jotka on linkitetty tiliisi. Jos perheenjäsen puuttuu, pyydä kirkkosi ylläpitäjää lisäämään hänet talouteesi.
-- Jos sisäänkirjautumissivulla ei näy yhtään jumalanpalvelusta, kirkollasi ei ehkä ole tällä hetkellä määritettyjä jumalanpalveluksia sisäänkirjautumista varten.
-- Jos valitset jumalanpalveluksen ja näet viestin, kuten "Sisäänkirjautuminen avautuu su klo 9.30." (tai "Sisäänkirjautuminen ei ole tälle jumalanpalvelukselle auki juuri nyt."), mikään tämän jumalanpalveluksen ajoista ei ole tällä hetkellä sisäänkirjautumisaikansa sisällä. Yritä uudelleen, kun sisäänkirjautuminen avautuu.
-- Jos talouttasi on kirjattu sisään aiempaan jumalanpalveluksen aikaan, voit palata ja kirjautua myöhempään jumalanpalveluksen aikaan, kun se avautuu, vaikka aiempi aika olisi jo päättynyt.
-- Jos valitsemasi huone on täynnä tai suljettu, näet viestin "Valitsemasi huone on täynnä tai suljettu sisäänkirjautumiselle. Ole hyvä ja käy vapaaehtoisen luona."
+- Voit kirjata sisään vain tiliisi liitettyjä talouden jäseniä. Jos perheenjäsen puuttuu, pyydä seurakunnan ylläpitäjää lisäämään hänet talouteesi.
+- Jos sisäänkirjautumissivulla ei näy yhtään palvelua, seurakunnallasi ei ehkä ole tällä hetkellä yhtään palvelua määritettynä sisäänkirjautumiseen.
+- Jos valitset palvelun ja näet viestin, kuten „Check-in opens Sun 9:30 AM.” (tai „Check-in isn't open for this service right now.”), mikään tämän palvelun ajoista ei ole tällä hetkellä sisäänkirjautumisikkunassaan. Yritä uudelleen, kun sisäänkirjautuminen avautuu.
+- Jos talouteesi kirjattiin sisään aiemmalle palveluajalle, voit palata ja kirjautua myöhemmälle palveluajalle, kun se avautuu – vaikka aiempi aika olisi jo päättynyt.
+- Jos valitsemasi huone on täynnä tai suljettu, näet viestin „A room you picked is full or closed for check-in. Please see a volunteer.”
+- Jos lastenhuoneessa ei ole tarpeeksi sisäänkirjautuneita vapaaehtoisia toisen lapsen kirjaamiseen, näet huoneen nimen mainitsevan viestin – esimerkiksi „Kids Room 1 doesn't have enough volunteers for another child right now. Please pick a different room or see a volunteer.”
 
 :::warning
-Sisäänkirjautuminen on käytettävissä vain, kun kirkkoosi on määritetty aktiivisia jumalanpalveluksia. Jos et näe listattuja jumalanpalveluksia, tarkista kirkkosi toimistosta, onko itsepalvelusisäänkirjautuminen käytössä.
+Sisäänkirjautuminen on käytettävissä vain, kun seurakunnallasi on aktiivisia palveluja määritettynä. Jos et näe yhtään palvelua listassa, tarkista seurakunnan toimistosta, onko itsepalvelu sisäänkirjautuminen käytössä.
 :::

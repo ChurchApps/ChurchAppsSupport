@@ -1,105 +1,99 @@
 ---
-title: "ऐप के रूप में Install करना (PWA)"
-description: "सदस्य पोर्टल से B1.church को iPhone या Android पर ऐप के रूप में इंस्टॉल करें, Safari या Chrome में इसका आइकन अपनी होम स्क्रीन पर जोड़ें।"
+title: "PWA के रूप में ऐप इंस्टॉल करना"
+description: "मेंबर पोर्टल से iPhone या Android पर B1.church को ऐप की तरह इंस्टॉल करें, Safari या Chrome में इसके आइकन को अपनी होम स्क्रीन पर जोड़ें।"
 ---
 
-# ऐप के रूप में Install करना (PWA)
+# PWA के रूप में ऐप इंस्टॉल करना
 
 <div class="article-intro">
 
-B1.church Progressive Web App (PWA) के रूप में installation का समर्थन करता है, जिससे आप अपने church के member portal को अपने phone की home screen पर बिल्कुल native app की तरह जोड़ सकते हैं। App Store या Google Play से गुज़रे बिना आपको पूर्ण-स्क्रीन, app जैसा अनुभव मिलता है।
+B1.church को Progressive Web App (PWA) के रूप में इंस्टॉल करने की सुविधा है, जिससे आप अपने चर्च के मेंबर पोर्टल को अपने फ़ोन की होम स्क्रीन पर ठीक वैसे ही जोड़ सकते हैं जैसे कोई नेटिव ऐप। इससे App Store या Google Play से गुज़रे बिना पूरी स्क्रीन वाला, ऐप जैसा अनुभव मिलता है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको अपने church का B1.church URL चाहिए: `https://yourchurchname.b1.church`
-- एक समर्थित browser उपयोग करें: iOS पर **Safari** या Android पर **Chrome**
+- आपको अपने चर्च का B1.church URL चाहिए: `https://yourchurchname.b1.church`
+- एक समर्थित ब्राउज़र उपयोग करें: iOS पर **Safari** या Android पर **Chrome**
 
 </div>
 
 ## PWA क्या है?
 
-Progressive Web App (PWA) एक website है जिसे आपके device पर install किया जा सकता है और जो native app की तरह व्यवहार करती है। जब आप B1.church को PWA के रूप में install करते हैं, तो वह:
+Progressive Web App (PWA) एक ऐसी वेबसाइट है जिसे आपके डिवाइस पर इंस्टॉल किया जा सकता है और यह नेटिव ऐप की तरह व्यवहार करती है। जब आप B1.church को PWA के रूप में इंस्टॉल करते हैं, तो वह:
 
-- browser के navigation bars के बिना पूर्ण-स्क्रीन खुलता है
-- आपके church के icon और नाम के साथ आपकी home screen पर दिखता है
-- आपके church की branding और theme colors के साथ सहजता से काम करता है
+- ब्राउज़र के नेविगेशन बार के बिना पूरी स्क्रीन पर खुलता है
+- आपके चर्च के आइकन और नाम के साथ होम स्क्रीन पर दिखता है
+- आपके चर्च की ब्रांडिंग और थीम के रंगों के साथ सहजता से काम करता है
 
 :::tip
-यदि आप App Store या Google Play से अलग app install नहीं करना चाहते, तो PWA एक बेहतरीन विकल्प है। यह browser में मिलने वाला वही member portal अनुभव अधिक सुविधाजनक रूप में देता है।
+PWA एक बेहतरीन विकल्प है यदि आप App Store या Google Play से अलग ऐप इंस्टॉल नहीं करना चाहते। यह ब्राउज़र में मिलने वाला वही मेंबर पोर्टल अनुभव अधिक सुविधाजनक रूप में देता है।
 :::
 
-## Install Page
+## इंस्टॉल पेज
 
-install करने का सबसे आसान तरीका आपके church का समर्पित install page है:
+इंस्टॉल करने का सबसे आसान तरीका अपने चर्च का समर्पित इंस्टॉल पेज है:
 
 ```
 https://yourchurchname.b1.church/mobile/install
 ```
 
-यह page आपके device को पहचानता है और अपने-आप सही निर्देश दिखाता है:
+पेज आपके डिवाइस को पहचानता है और अपने-आप सही निर्देश दिखाता है:
 
-- **iPhone** — चरण-दर-चरण Safari "Add to Home Screen" निर्देश
-- **Android** — Chrome में एक-tap **Install on Home Screen** button
-- **Desktop** — एक QR code, जिसे आप अपने phone से scan करके वहीं install page खोल सकते हैं
+- **iPhone** — Safari में "Add to Home Screen" के चरण-दर-चरण निर्देश
+- **Android** — Chrome में एक-टैप वाला **Install on Home Screen** बटन
+- **Desktop** — एक QR कोड जिसे आप अपने फ़ोन से स्कैन करके वहीं इंस्टॉल पेज खोल सकते हैं
 
-install page तक कई तरीकों से पहुंचा जा सकता है:
+आप कई तरीकों से इंस्टॉल पेज तक पहुँच सकते हैं:
 
-- member portal में **More** पर tap करें और **Account** के अंतर्गत **Install App** पर tap करें (ऐप पहले से install होने पर यह item छिप जाता है)
-- आपके church द्वारा text, email, या Sunday screen से साझा किया गया link फॉलो करें
-- URL सीधे अपने browser में टाइप करें
+- मेंबर पोर्टल में **More** पर टैप करें और **Account** के अंतर्गत **Install App** पर टैप करें (ऐप पहले से इंस्टॉल होने पर यह विकल्प छिप जाता है)
+- आपके चर्च द्वारा टेक्स्ट, ईमेल, या Sunday screen से साझा किए गए लिंक का अनुसरण करें
+- URL को सीधे अपने ब्राउज़र में टाइप करें
 
-:::tip church staff के लिए
-install page का link अपने congregation के साथ साझा करें -- इसे अपने bulletin, newsletter, या किसी slide पर लगाएं। यह हर सदस्य को उसके device के लिए सटीक चरणों से गुज़ारता है। आप इसे अपने B1Admin dashboard के **Download the App** quick action से भी खोल सकते हैं।
+:::tip चर्च स्टाफ़ के लिए
+इंस्टॉल पेज का लिंक अपनी मंडली के साथ साझा करें — इसे अपनी बुलेटिन, न्यूज़लेटर, या किसी स्लाइड पर डालें। यह हर सदस्य को उसके डिवाइस के लिए सटीक चरण बताता है। आप अपने B1Admin डैशबोर्ड पर **Download the App** क्विक एक्शन से भी इस तक पहुँच सकते हैं।
 :::
 
-आप नीचे दिए browser चरणों का उपयोग करके अपने church की B1.church site के **किसी भी page** से भी PWA को मैन्युअली install कर सकते हैं -- install page बस इसे करने का निर्देशित तरीका है।
+आप नीचे दिए गए ब्राउज़र चरणों का उपयोग करके अपने चर्च की B1.church साइट के **किसी भी पेज** से भी PWA को मैन्युअली इंस्टॉल कर सकते हैं — इंस्टॉल पेज तो बस निर्देशित तरीका है।
 
-जब आप install किया हुआ ऐप खोलते हैं, तो वह सीधे आपके member dashboard पर खुलता है, जहां आप log in कर सकते हैं।
+जब आप इंस्टॉल किया हुआ ऐप खोलते हैं, तो वह सीधे आपके मेंबर डैशबोर्ड पर खुलता है, जहाँ आप लॉग इन करने के लिए तैयार होते हैं।
 
-## iPhone पर Install करना (iOS — Safari)
+## iPhone पर इंस्टॉल करना (iOS — Safari)
 
-1. अपने iPhone पर **Safari** खोलें और `https://yourchurchname.b1.church/mobile/install` पर जाएं (`yourchurchname` को अपने church के URL slug से बदलें)।
-2. स्क्रीन के नीचे **Share** button (ऊपर की ओर इशारा करता तीर वाला box) पर tap करें।
-3. share sheet में नीचे scroll करें और **Add to Home Screen** पर tap करें।
-4. नाम अपने-आप आपके church का नाम होगा। ऊपर-दाईं ओर **Add** पर tap करें।
+1. अपने iPhone पर **Safari** खोलें और `https://yourchurchname.b1.church/mobile/install` पर जाएँ (`yourchurchname` को अपने चर्च के URL स्लग से बदलें)।
+2. स्क्रीन के नीचे मौजूद **Share** बटन (ऊपर की ओर इशारा करते तीर वाला बॉक्स) पर टैप करें।
+3. शेयर शीट में नीचे स्क्रॉल करें और **Add to Home Screen** पर टैप करें।
+4. नाम डिफ़ॉल्ट रूप से आपके चर्च का नाम होगा। ऊपर-दाएँ कोने में **Add** पर टैप करें।
 
-ऐप का icon आपकी home screen पर दिखेगा। member portal को पूर्ण-स्क्रीन मोड में खोलने के लिए उस पर tap करें।
+ऐप का आइकन आपकी होम स्क्रीन पर दिखेगा। फ़ुल-स्क्रीन मोड में मेंबर पोर्टल खोलने के लिए उस पर टैप करें।
 
 :::info
-iOS पर PWA installation के लिए Safari आवश्यक है। यदि आप iPhone पर Chrome या कोई अन्य browser उपयोग कर रहे हैं, तो पहले Safari पर जाएं।
+iOS पर PWA इंस्टॉल करने के लिए Safari आवश्यक है। यदि आप iPhone पर Chrome या कोई और ब्राउज़र उपयोग कर रहे हैं, तो पहले Safari पर जाएँ।
 :::
 
-## Android पर Install करना (Chrome)
+## Android पर इंस्टॉल करना (Chrome)
 
-1. अपने Android device पर **Chrome** खोलें और `https://yourchurchname.b1.church/mobile/install` पर जाएं।
-2. **Install on Home Screen** button पर tap करें। (यदि button उपलब्ध नहीं है, तो ऊपर-दाईं ओर तीन-बिंदु वाला menu (⋮) tap करें और **Add to Home screen** चुनें।)
-3. पूछे जाने पर **Add** पर tap करें।
+1. अपने Android डिवाइस पर **Chrome** खोलें और `https://yourchurchname.b1.church/mobile/install` पर जाएँ।
+2. **Install on Home Screen** बटन पर टैप करें। (यदि बटन उपलब्ध न हो, तो ऊपर-दाएँ कोने में तीन-बिंदु मेनू (⋮) पर टैप करें और **Add to Home screen** चुनें।)
+3. पूछे जाने पर **Add** पर टैप करें।
 
-ऐप का icon आपकी home screen पर दिखेगा। member portal खोलने के लिए उस पर tap करें।
+ऐप का आइकन आपकी होम स्क्रीन पर दिखेगा। मेंबर पोर्टल खोलने के लिए उस पर टैप करें।
 
-## Install करने के बाद
+## इंस्टॉल करने के बाद
 
-एक बार install हो जाने पर, PWA एक समर्पित पूर्ण-स्क्रीन window में सीधे member portal खोलता है। आप:
+इंस्टॉल होने के बाद, PWA एक समर्पित फ़ुल-स्क्रीन विंडो में सीधे मेंबर पोर्टल खोलता है। आप यह कर सकते हैं:
 
-- अपने मौजूदा ChurchApps account से log in कर सकते हैं
-- आपके church द्वारा सक्षम सभी member features तक पहुंच सकते हैं -- groups, giving, check-in, serving plans, और बहुत कुछ
-- home screen पर icon पर tap करके कभी भी वापस आ सकते हैं
+- अपने मौजूदा ChurchApps खाते से लॉग इन करें
+- आपके चर्च द्वारा सक्षम की गई सभी मेंबर सुविधाओं तक पहुँचें — ग्रुप, गिविंग, चेक-इन, सर्विंग प्लान, और भी बहुत कुछ
+- होम स्क्रीन पर आइकन पर टैप करके कभी भी वापस आएँ
 
-जब आपके पास न पढ़े गए messages होते हैं, तो ऐप के icon पर **notification badge** (एक छोटी संख्या वाला badge) दिखता है, ताकि आप एक नज़र में देख सकें कि आपके लिए कुछ नया है या नहीं।
+जब आपके पास न पढ़े गए संदेश होंगे, तो ऐप आइकन पर **नोटिफ़िकेशन बैज** (एक छोटा नंबर बैज) दिखेगा, ताकि आप एक नज़र में देख सकें कि आपके लिए कुछ नया है या नहीं।
 
 :::info
-PWA को internet connection की आवश्यकता होती है। कुछ native apps के विपरीत, यह offline उपयोग के लिए सारी content cache नहीं करता।
+PWA को इंटरनेट कनेक्शन की आवश्यकता होती है। कुछ नेटिव ऐप्स के विपरीत, यह ऑफ़लाइन उपयोग के लिए सारी सामग्री कैश नहीं करता।
 :::
-
-## पुराने B1 Mobile ऐप का क्या?
-
-iOS और Android पर पुराना native **B1 Mobile** app deprecated हो चुका है और अब उसे update नहीं किया जा रहा है। आगे से phone पर B1.church member portal तक पहुंचने का समर्थित तरीका PWA है, और यह native app द्वारा दी गई हर member-facing feature को कवर करता है। यदि आपने पहले native app install किया था, तो अपनी सुविधानुसार PWA पर स्विच कर लें।
-
-deprecated app के ऐतिहासिक documentation के लिए [B1 Mobile reference page](/docs/b1-church/index.md) देखें।
 
 ## संबंधित लेख
 
-- [Logging In](./logging-in.md) — अपने B1.church account में sign in कैसे करें
+- [लॉग इन करना](./logging-in.md) — अपने B1.church खाते में साइन इन करने का तरीका

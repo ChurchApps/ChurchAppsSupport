@@ -1,78 +1,82 @@
 ---
-title: "Autentificare în B1 Church Checkin"
-sidebar_label: "Prijavljivanje"
-description: "Conectează-te la aplicația chioșcului B1 Church Checkin, alege biserica și înțelege autentificarea automată, setările admin și deconectarea."
+title: "Conectarea la B1 Church Checkin"
+sidebar_label: "Conectare"
+description: "Conectați-vă la aplicația kiosk B1 Church Checkin, alegeți biserica și aflați despre conectarea automată, setările de administrare și deconectarea de pe tableta de check-in."
 ---
 
-# Prijavljivanje
+# Conectare
 
 <div class="article-intro">
 
-Prije nego što se kiosk može koristiti za prijavu, potrebno je da se prijavite s ChurchApps računom koji ima pristup vašoj crkvi. Ova stranica obuhvata postupak prvog prijavljivanja, odabir crkve, ponašanje automatske prijave i odjavu.
+Înainte ca kioscul să poată fi folosit pentru check-in, trebuie să vă conectați cu un cont ChurchApps care are acces la biserica dumneavoastră. Această pagină acoperă procesul de conectare la prima utilizare, selectarea bisericii, comportamentul conectării automate și modul de deconectare.
 
 </div>
 
 <div class="prereqs">
-<h4>Prije nego što počnete</h4>
+<h4>Înainte de a începe</h4>
 
-- Instalirajte B1 Church Checkin na svoj Android tablet (pogledajte [Početak rada](./index.md))
-- Pripremite e-adresu i lozinku za svoj ChurchApps račun
-- Račun mora imati dozvolu **Checkin** (ili **Edit Attendance**) u vašoj crkvi. Administrator je dodaje u B1 Admin pod **Settings > Roles** — pogledajte [Računi za kiosk za prijavu](../../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts)
+- Instalați B1 Church Checkin pe tableta dumneavoastră Android (consultați [Noțiuni de bază](./index.md))
+- Pregătiți adresa de e-mail și parola contului ChurchApps
+- Contul trebuie să aibă permisiunea **Checkin** (sau **Editare prezență**) la biserica dumneavoastră. Un administrator o adaugă în B1 Admin, la **Setări > Roluri** — consultați [Conturi pentru kiosc de check-in](../../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts)
 
 </div>
 
-## Prvo prijavljivanje
+## Prima conectare
 
-1. Otvorite aplikaciju B1 Church Checkin. Nakon ekrana za pokretanje vidjet ćete ekran za prijavu s logotipom B1 Church Checkin.
-2. Unesite svoju **e-adresu** u prvo polje.
-3. Unesite svoju **lozinku** u drugo polje.
-4. Dodirnite dugme **Login**.
+1. Deschideți aplicația B1 Church Checkin. După ecranul de pornire, veți vedea ecranul de autentificare cu logo-ul B1 Church Checkin.
+2. Introduceți **adresa de e-mail** în primul câmp.
+3. Introduceți **parola** în al doilea câmp.
+4. Atingeți butonul **Autentificare**.
 
-Aplikacija provjerava vaše podatke i prijavljuje vas. Ako su e-adresa ili lozinka netočne, na dnu ekrana ćete vidjeti poruku o grešci.
+Aplicația verifică datele dumneavoastră de conectare și vă autentifică. Dacă adresa de e-mail sau parola sunt incorecte, veți vedea un mesaj de eroare în partea de jos a ecranului.
 
-Ako je za račun uključena [dvostepena prijava](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), aplikacija tada traži kod. Unesite 6-cifreni kod iz aplikacije za autentifikaciju vlasnika računa ili jedan od njegovih rezervnih kodova, pa ponovo dodirnite **Login**. Kod je potreban samo za ovu prvu prijavu; nakon toga kiosk ostaje prijavljen.
+Dacă pentru cont este activată [autentificarea în doi pași](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), aplicația va cere apoi un cod. Introduceți codul de 6 cifre din aplicația de autentificare a proprietarului contului sau unul dintre codurile sale de rezervă și atingeți din nou **Autentificare**. Aveți nevoie de cod doar la această primă conectare; după aceea, kioscul rămâne conectat.
 
 :::info
-Ovo su ista e-adresa i lozinka koje koristite za B1 Admin ili bilo koji drugi ChurchApps proizvod. Za kiosk za prijavu ne trebate poseban račun.
+Aceasta este aceeași adresă de e-mail și aceeași parolă pe care le folosiți pentru B1 Admin sau pentru orice alt produs ChurchApps. Nu aveți nevoie de un cont separat pentru kioscul de check-in.
 :::
 
-## Odabir crkve
+## Selectarea bisericii
 
-Nakon uspješne prijave, aplikacija učitava crkve u kojima vaš račun ima dozvolu **Checkin** ili **Edit Attendance**. Crkve u kojima imate samo druge dozvole se izostavljaju. Ako nijedna ne ostane, aplikacija prikazuje poruku **No check-in access** i traži da vaš administrator crkve doda dozvolu Checkin jednoj od vaših uloga. Svaka crkva prikazana je kao kartica s nazivom crkve i logotipom (ako je konfigurisan u B1 Admin).
+După o conectare reușită, aplicația încarcă bisericile în care contul dumneavoastră are permisiunea **Checkin** sau **Editare prezență**. Bisericile în care aveți doar alte permisiuni nu sunt incluse. Dacă nu rămâne niciuna, aplicația afișează **Fără acces la check-in** și vă cere să îi rugați administratorul bisericii să adauge permisiunea Checkin la unul dintre rolurile dumneavoastră. Fiecare biserică este afișată ca o carte care arată numele bisericii și logo-ul (dacă a fost configurat în B1 Admin).
 
-- Ako je vaš račun povezan **samo s jednom crkvom**, i dalje ćete vidjeti ekran za odabir. Dodirnite svoju crkvu da nastavite.
-- Ako je vaš račun povezan s **više crkava**, dodirnite crkvu kojoj želite da ovaj kiosk služi.
+- Dacă contul dumneavoastră este asociat cu **o singură biserică**, veți vedea totuși ecranul de selecție. Atingeți biserica dumneavoastră pentru a continua.
+- Dacă contul dumneavoastră este asociat cu **mai multe biserici**, atingeți biserica pe care doriți să o servească acest kiosc.
 
-Nakon što odaberete crkvu, aplikacija učitava postavke brendiranja i izgleda te crkve. Logotip vaše crkve pojavit će se u zaglavlju na svim sljedećim ekranima.
+Odată ce selectați o biserică, aplicația încarcă identitatea vizuală și setările de aspect ale acelei biserici. Logo-ul bisericii dumneavoastră va apărea în antet pe toate ecranele următoare.
 
-## Automatska prijava pri ponovnim posjetama
+## Conectarea automată la vizitele ulterioare
 
-Nakon prve uspješne prijave, aplikacija na tabletu čuva sigurni token za prijavu i odabranu crkvu. Ne čuva vašu lozinku. Pri narednim pokretanjima:
+După prima conectare reușită, aplicația păstrează pe tabletă un token de autentificare securizat și biserica selectată. Nu stochează parola dumneavoastră. La lansările următoare:
 
-- Aplikacija vas ponovo prijavljuje sačuvanim tokenom.
-- Ako ste ranije odabrali crkvu, vraća taj odabir i odmah vas vodi na **ekran službi**.
-- Ako sačuvana prijava više nije važeća, aplikacija vraća ekran za prijavu kako biste se ponovo prijavili.
+- Aplicația vă reconectează automat cu tokenul salvat.
+- Dacă ați selectat anterior o biserică, aceasta este restaurată și veți fi dus direct la **ecranul serviciilor**.
+- Dacă autentificarea salvată nu mai este valabilă, aplicația revine la ecranul de autentificare, ca să vă puteți conecta din nou.
 
 :::tip
-Budući da se kiosk automatski prijavljuje, podatke trebate unijeti samo jednom tokom početnog podešavanja. Nakon toga tablet se može uključiti i bit će spreman za rad.
+Deoarece kioscul se conectează automat, trebuie să introduceți datele de conectare doar o singură dată, în timpul configurării inițiale. După aceea, tableta poate fi pornită și va fi gata de utilizare.
 :::
 
-## Postavke administratora
+## Setările de administrare
 
-Postavke administratora namjerno su skrivene kako članovi crkve koji koriste kiosk slučajno ne bi promijenili konfiguraciju. Da biste im pristupili:
+Setările de administrare sunt ascunse intenționat, pentru ca membrii bisericii care folosesc kioscul să nu poată modifica din greșeală configurația. Pentru a le accesa:
 
-1. Dodirnite **logotip crkve** u zaglavlju **sedam puta** zaredom (u roku od dvije sekunde).
-2. Ako je postavljen PIN za kiosk, unesite PIN kada se to zatraži.
-3. Otvoriće se ekran **Admin Settings** sa sljedećim opcijama:
-   - **Change Service** — promijenite odabrano vrijeme službe
-   - **Change Printer** — otvorite [postavke štampača](./printer-setup.md) za pretragu i odabir štampača
-   - **Set/Change PIN** — postavite ili ažurirajte PIN za kiosk koji štiti pristup administratora
-   - **Logout** — odjavite se i vratite na ekran za prijavu
+1. Atingeți **logo-ul bisericii** din antet de **șapte ori**, în succesiune rapidă (în interval de două secunde).
+2. Dacă a fost setat un PIN pentru kiosc, introduceți PIN-ul când vi se cere.
+3. Se va deschide ecranul **Setări de administrare**, cu următoarele opțiuni:
+   - **Schimbă serviciul** — comutați ora serviciului selectat
+   - **Schimbă imprimanta** — deschideți [setările imprimantei](./printer-setup.md) pentru a căuta și selecta o imprimantă
+   - **Setează PIN-ul de administrare** (sau **Schimbă PIN-ul de administrare** după ce a fost setat unul) — setați sau actualizați PIN-ul kioscului care protejează accesul de administrare
+   - **Transmitere de urgență** — trimiteți mesaje text tutorilor fiecărei gospodării care a fost înregistrată (consultați [Transmitere de urgență](../check-in/checking-out.md#emergency-broadcast))
+   - **Modul stație gestionată** — un comutator care adaugă la această stație check-out, apel, retipărire și editarea profilurilor (consultați [Efectuarea check-out-ului](../check-in/checking-out.md))
+   - **Deconectare** — ieșiți din cont și reveniți la ecranul de autentificare
+
+   Atingeți **Înapoi la kiosc** pentru a reveni la check-in.
 
 :::warning
-Odjava briše sve sačuvane podatke za prijavu i odabir crkve. Da biste ponovo koristili kiosk, morat ćete ponovo unijeti svoju e-adresu i lozinku. Odjavite se samo kada trebate promijeniti račun ili ponovo konfigurisati kiosk.
+Deconectarea șterge toate datele de conectare salvate și selecția bisericii. Va trebui să introduceți din nou adresa de e-mail și parola pentru a folosi din nou kioscul. Deconectați-vă doar atunci când trebuie să schimbați contul sau să reconfigurați kioscul.
 :::
 
-## Sljedeći koraci
+## Pașii următori
 
-Nakon prijave možete [podesiti štampač](./printer-setup.md) ili direktno otići na [tok prijave](../check-in/index.md).
+Odată conectat, puteți [configura o imprimantă](./printer-setup.md) sau puteți merge direct la [fluxul de lucru pentru check-in](../check-in/index.md).

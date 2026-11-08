@@ -1,58 +1,57 @@
 ---
 title: "Penyedia Pihak Ketiga"
-description: "Tambahkan feed kurikulum eksternal ke Lessons.church dari halaman admin Third-Party, lalu lihat, perbarui, atau hapus koneksi penyedia sesuai kebutuhan."
+description: "Tambahkan feed kurikulum Open Lesson Format di halaman External Providers Lessons.church, lalu ubah atau hapus feed tersebut agar gereja Anda dapat menjadwalkan pelajarannya."
 ---
 
 # Penyedia Pihak Ketiga
 
 <div class="article-intro">
 
-Lessons.church mendukung penyedia kurikulum eksternal melalui Open Lesson Format. Artinya, Anda dapat mengimpor konten dari organisasi lain dan menyediakannya bersama pustaka bawaan, sehingga gereja memiliki akses ke kurikulum dari berbagai sumber di satu tempat.
+Lessons.church mendukung penyedia kurikulum eksternal melalui Open Lesson Format. Artinya, gereja Anda dapat menghubungkan kurikulum dari organisasi lain dan menjadwalkannya untuk ruang kelas Anda tepat di samping pustaka bawaan, sehingga tim Anda memiliki kurikulum dari berbagai sumber di satu tempat.
 
 </div>
 
 <div class="prereqs">
 <h4>Sebelum Anda Mulai</h4>
 
-- Miliki izin admin untuk Lessons.church (lihat [Ikhtisar Administrasi](./index.md))
-- Dapatkan URL feed dari penyedia eksternal yang ingin Anda hubungkan
+- Masuk ke Lessons.church dengan akun yang dapat mengelola jadwal ruang kelas gereja Anda
+- Dapatkan URL feed dari penyedia eksternal yang ingin Anda hubungkan. Feed tersebut harus mengembalikan pelajaran dalam [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Menambahkan Penyedia
 
-1. Buka area **Admin**.
-2. Buka halaman **Third-Party**.
-3. Klik **Add Provider** (atau tombol yang setara untuk menambahkan koneksi baru).
-4. Masukkan **URL feed** penyedia. Ini adalah URL tempat penyedia mempublikasikan data kurikulum mereka dalam Open Lesson Format.
-5. Simpan koneksi.
+1. Klik **External Providers** di navigasi Lessons.church. Halaman **External Lesson Providers** akan terbuka.
+2. Klik **Add Provider**. Jika Anda belum pernah menambahkan penyedia, klik **Add First Provider** sebagai gantinya.
+3. Masukkan **Provider Name**. Ini adalah nama yang akan dilihat tim Anda saat memilih penyedia.
+4. Masukkan **API URL**. Ini adalah alamat tempat penyedia mempublikasikan kurikulum mereka dalam Open Lesson Format.
+5. Klik **Save**.
 
-Setelah disimpan, Lessons.church akan mengimpor konten penyedia. Program, studi, dan pelajaran mereka akan muncul di pustaka kurikulum bersama konten Anda sendiri.
+Penyedia tersebut hanya ditambahkan untuk gereja Anda. Setelah itu, penyedia akan muncul sebagai pilihan di **Provider** saat Anda [menjadwalkan pelajaran](../classrooms/scheduling-lessons.md) untuk ruang kelas, dan di **Source** saat Anda menyusun [rencana tahunan](./managing-year-plans.md).
 
 ## Mengelola Penyedia
 
-Dari halaman **Third-Party**, Anda dapat melihat semua penyedia yang terhubung. Untuk setiap penyedia, Anda dapat:
+Halaman **External Lesson Providers** mencantumkan setiap penyedia yang telah ditambahkan gereja Anda. Untuk mengubah salah satu penyedia:
 
-- **Melihat** konten yang diimpor untuk memastikan konten tersebut berhasil diambil dengan benar.
-- **Memperbarui** URL feed jika penyedia mengubah endpoint mereka.
-- **Menghapus** penyedia jika Anda tidak ingin lagi menyertakan kontennya.
+- **Edit** -- Klik ikon **Edit provider** (pensil), ubah **Provider Name** atau **API URL**, lalu klik **Save**.
+- **Delete** -- Klik ikon **Edit provider**, lalu klik ikon hapus (tempat sampah) dan konfirmasi.
 
 ## Apa Itu Open Lesson Format?
 
-Open Lesson Format adalah skema standar yang menggambarkan konten kurikulum -- program, studi, pelajaran, lokasi, bagian, dan tindakan -- dengan cara yang terstruktur. Organisasi mana pun yang mempublikasikan kontennya menggunakan format ini dapat ditambahkan sebagai penyedia di Lessons.church.
+Open Lesson Format adalah skema standar yang menjelaskan konten kurikulum -- program, studi, pelajaran, lokasi, bagian, dan tindakan -- dengan cara yang terstruktur. Organisasi mana pun yang mempublikasikan kontennya menggunakan format ini dapat ditambahkan sebagai penyedia di Lessons.church.
 
-Jika Anda adalah penyedia konten yang ingin membuat kurikulum Anda tersedia melalui Lessons.church, Anda dapat menemukan dokumentasi skema lengkap dalam panduan [Open Lesson Format](./open-lesson-format.md).
+Jika Anda adalah penyedia konten yang ingin menjadikan kurikulum Anda tersedia melalui Lessons.church, Anda dapat menemukan dokumentasi skema lengkapnya dalam panduan [Open Lesson Format](./open-lesson-format.md).
 
 ## Mengapa Menggunakan Penyedia Pihak Ketiga?
 
-- **Lebih banyak pilihan untuk gereja** -- Gereja dapat menelusuri beragam kurikulum tanpa meninggalkan platform.
-- **Satu tempat untuk semuanya** -- Relawan dan koordinator tidak perlu mengunjungi banyak situs web untuk mencari dan menjadwalkan pelajaran.
-- **Pengaturan yang mudah** -- Menambahkan penyedia hanya memerlukan URL feed. Tidak ada entri data manual atau pengunggahan file yang terlibat.
+- **Lebih banyak pilihan untuk gereja** -- Gereja dapat menelusuri berbagai kurikulum tanpa meninggalkan platform.
+- **Satu tempat untuk semuanya** -- Relawan dan koordinator tidak perlu mengunjungi banyak situs web untuk menemukan dan menjadwalkan pelajaran.
+- **Pengaturan yang mudah** -- Menambahkan penyedia hanya membutuhkan nama dan URL feed. Tidak ada entri data manual atau unggah file yang diperlukan.
 
 :::info
-Konten pihak ketiga dikelola oleh penyedia eksternal. Jika Anda menemukan konten dari penyedia yang hilang atau sudah usang, masalahnya mungkin perlu diselesaikan di pihak mereka.
+Konten pihak ketiga dikelola oleh penyedia eksternal. Jika Anda menemukan konten dari penyedia yang hilang atau sudah usang, masalah tersebut mungkin perlu diselesaikan di pihak mereka.
 :::
 
 :::tip
-Untuk konfigurasi penyedia eksternal di tingkat gereja (bukan tingkat admin), lihat halaman [Penyedia Eksternal](../browsing/external-providers.md) di bagian Browsing.
+Untuk mempelajari seperti apa pelajaran dari penyedia eksternal setelah dijadwalkan, lihat [Penyedia Eksternal](../browsing/external-providers.md) di bagian Menjelajah.
 :::

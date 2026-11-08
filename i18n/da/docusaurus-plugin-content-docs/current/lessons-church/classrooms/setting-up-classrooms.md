@@ -1,50 +1,50 @@
 ---
-title: "Opsætning af klasseværelser"
-description: "Opret, omdøb og fjern klasseværelser i Lessons.church-portalen, så hvert lokale eller aldersgruppe er klar til ugentlig planlægning af lektioner."
+title: "Opsætning af klasselokaler"
+description: "Opret, omdøb og fjern klasselokaler i Lessons.church-portalen, så hvert lokale eller aldersgruppe er klar til ugentlig planlægning af lektioner."
 ---
 
-# Opsætning af klasseværelser
+# Opsætning af klasselokaler
 
 <div class="article-intro">
 
-Før du kan planlægge lektioner, skal du oprette klasseværelser, der repræsenterer dine undervisningsmiljøer. Denne guide vejleder dig gennem oprettelse, navngivning og administration af klasseværelser i Lessons.church-portalen.
+Før du kan planlægge lektioner, skal du oprette de klasselokaler, der repræsenterer dine undervisningsmiljøer. Denne vejledning guider dig gennem oprettelse, navngivning og administration af klasselokaler i Lessons.church-portalen.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynder</h4>
 
-- [Opret en konto](../getting-started/creating-account.md) og forbind til din kirke
-- Gør dig selv fortrolig med [Portal oversigt](../getting-started/portal-overview.md)
+- [Opret en konto](../getting-started/creating-account.md) og forbind den til din kirke
+- Sæt dig ind i [portaloversigten](../getting-started/portal-overview.md)
 
 </div>
 
-## Oprettelse af et klasseværelse
+## Oprettelse af et klasselokale
 
 1. Log ind på din konto på [Lessons.church](https://lessons.church).
-2. Naviger til din **Portal**. Dette er din kirkes centrale hub for at administrere klasseværelser og planer.
-3. Klik **Tilføj klasseværelse**.
-4. Indtast et navn for dit klasseværelse. Vælg noget beskrivende, som dine frivillige vil genkende -- for eksempel "Børnehave," "Grundskole K-2," eller "Mellemskole."
-5. Gem dit nye klasseværelse. Det vises på dit portal-dashboard med det samme.
+2. Gå til din **Portal**. Dette er din kirkes centrale udgangspunkt for administration af klasselokaler og skemaer.
+3. Klik på **Tilføj** i boksen **Klasselokaler**. Hvis du endnu ikke har nogen klasselokaler, skal du i stedet klikke på **Tilføj første klasselokale**.
+4. Indtast et **Navn på klasselokale**. Vælg noget beskrivende, som dine frivillige vil genkende -- for eksempel "Børnehave", "Indskoling 0.-2. klasse" eller "Mellemtrin".
+5. Klik på **Gem**. Dit nye klasselokale vises med det samme på listen **Klasselokaler**.
 
-Gentag disse trin for hvert rum eller aldersgruppe på din kirke. Du kan oprette så mange klasseværelser, som du har brug for.
+Gentag disse trin for hvert lokale eller hver aldersgruppe i din kirke. Du kan oprette så mange klasselokaler, som du har brug for.
 
-## Første gangs opsætning
+## Første opsætning
 
-Hvis du ikke endnu har opsat nogle klasseværelser, viser din portal en opsætnings-video for at vejlede dig gennem processen. Denne video dækker det grundlæggende ved oprettelse af klasseværelser og planlægning af dine første lektioner. Det er et godt udgangspunkt, hvis du er ny for Lessons.church.
+Hvis du endnu ikke har oprettet nogen klasselokaler, viser din portal en opsætningsvideo, der guider dig gennem processen. Videoen dækker det grundlæggende i at oprette klasselokaler og planlægge dine første lektioner. Det er et godt udgangspunkt, hvis du er ny til Lessons.church.
 
 :::tip
-Navngiv dine klasseværelser for at matche, hvordan dine frivillige allerede tænker på dine stuer. Hvis alle kalder det "pre-K-stuen," skal du give den navn "Pre-K" snarere end noget formelt som "Tidlig-barndom uddannelses værelse 101."
+Navngiv dine klasselokaler, så de passer til, hvordan dine frivillige allerede tænker om jeres lokaler. Hvis alle kalder det "børnehavelokalet", så navngiv det "Børnehave" i stedet for noget formelt som "Lokale 101, tidlig børneundervisning".
 :::
 
-## Administration af klasseværelser
+## Administration af klasselokaler
 
-Dine klasseværelser vises på portal-dashboardet, hvor du kan administrere dem når som helst. Herfra kan du:
+Dine klasselokaler vises på portalens betjeningspanel, hvor du til enhver tid kan administrere dem. Herfra kan du:
 
-- **Omdøb et klasseværelse** -- Opdater navnet, hvis dine stuer eller aldersgrupper ændres.
-- **Fjern et klasseværelse** -- Slet klasseværelser, du ikke længere har brug for.
-- **Se planen** -- Klik på ethvert klasseværelse for at se dets lektionsplan.
+- **Omdøbe et klasselokale** -- Klik på blyantsikonet **Rediger klasselokale** ved siden af det, skift **Navn på klasselokale**, og klik på **Gem**.
+- **Fjerne et klasselokale** -- Klik på **Rediger klasselokale**, klik derefter på papirkurvsikonet **Slet klasselokale** og bekræft.
+- **Se skemaet** -- Klik på et vilkårligt klasselokale for at se dets lektionsskema.
 
-## Hvad er næste trin?
+## Næste skridt
 
-Når dine klasseværelser er opsættet, er du klar til at begynde [planlægning af lektioner](./scheduling-lessons.md), så dine frivillige ved, hvad de skal undervise hver uge.
+Når dine klasselokaler er oprettet, er du klar til at begynde at [planlægge lektioner](./scheduling-lessons.md), så dine frivillige ved, hvad de skal undervise i hver uge.

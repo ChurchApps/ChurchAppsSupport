@@ -1,13 +1,13 @@
 ---
-title: "Asennus sovellukseksi (PWA)"
-description: "Asenna B1.church iPhone- tai Android-laitteeseen sovelluksena jäsenportaalista ja lisää sen kuvake aloitusnäytölle Safarissa tai Chromessa."
+title: "Asentaminen sovelluksena (PWA)"
+description: "Asenna B1.church sovelluksena iPhonelle tai Androidille jäsenportaalista ja lisää sen kuvake laitteesi aloitusnäytölle Safarissa tai Chromessa."
 ---
 
-# Asennus sovellukseksi (PWA)
+# Asentaminen sovelluksena (PWA)
 
 <div class="article-intro">
 
-B1.church tukee asennusta progressiivisena web-sovelluksena (PWA). Sen avulla voit lisätä seurakuntasi jäsenportaalin puhelimesi aloitusnäytölle aivan kuten natiivisovelluksen. Näin saat koko näytön kokoisen sovellusmaisen käyttökokemuksen ilman App Storea tai Google Playta.
+B1.church tukee asentamista progressiivisena verkkosovelluksena (PWA). Sen avulla voit lisätä seurakuntasi jäsenportaalin puhelimesi aloitusnäytölle aivan kuten natiivisovelluksen. Näin saat koko näytön kokoisen, sovelluksen kaltaisen käyttökokemuksen ilman App Storea tai Google Playta.
 
 </div>
 
@@ -15,20 +15,20 @@ B1.church tukee asennusta progressiivisena web-sovelluksena (PWA). Sen avulla vo
 <h4>Ennen aloittamista</h4>
 
 - Tarvitset seurakuntasi B1.church-osoitteen: `https://yourchurchname.b1.church`
-- Käytä tuettua selainta: **Safari** iOS-laitteessa tai **Chrome** Androidissa
+- Käytä tuettua selainta: **Safari** iOS-laitteissa tai **Chrome** Androidissa
 
 </div>
 
 ## Mikä PWA on?
 
-Progressiivinen web-sovellus (PWA) on verkkosivusto, joka voidaan asentaa laitteeseen ja joka toimii kuten natiivisovellus. Kun asennat B1.churchin PWA:na, se:
+Progressiivinen verkkosovellus (PWA) on verkkosivusto, jonka voi asentaa laitteelle ja joka toimii kuten natiivisovellus. Kun asennat B1.churchin PWA:na, se:
 
 - Avautuu koko näytön kokoisena ilman selaimen navigointipalkkeja
-- Näkyy aloitusnäytölläsi seurakuntasi kuvakkeella ja nimellä
-- Toimii sujuvasti seurakuntasi brändin ja teemavärien kanssa
+- Näkyy aloitusnäytöllä seurakuntasi kuvakkeella ja nimellä
+- Toimii saumattomasti seurakuntasi brändäyksen ja teemavärien kanssa
 
 :::tip
-PWA on hyvä vaihtoehto, jos et halua asentaa erillistä sovellusta App Storesta tai Google Playsta. Se tarjoaa saman jäsenportaalin kokemuksen kuin selaimessa, mutta kätevämmässä muodossa.
+PWA on hyvä vaihtoehto, jos et halua asentaa erillistä sovellusta App Storesta tai Google Playsta. Se tarjoaa saman jäsenportaalin kokemuksen kuin selaimessa, mutta mukavammassa muodossa.
 :::
 
 ## Asennussivu
@@ -41,65 +41,59 @@ https://yourchurchname.b1.church/mobile/install
 
 Sivu tunnistaa laitteesi ja näyttää automaattisesti oikeat ohjeet:
 
-- **iPhone** — vaiheittaiset Safari-ohjeet kohdan "Lisää aloitusnäyttöön" käyttämiseen
-- **Android** — yhden napautuksen **Asenna aloitusnäyttöön** -painike Chromessa
-- **Tietokone** — QR-koodi, jonka voit skannata puhelimellasi avataksesi asennussivun siellä
+- **iPhone**: vaiheittaiset Safarin "Lisää Koti-valikkoon" -ohjeet
+- **Android**: yhdellä napautuksella toimiva **Asenna aloitusnäytölle** -painike Chromessa
+- **Tietokone**: QR-koodi, jonka voit skannata puhelimellasi avataksesi asennussivun siellä
 
-Asennussivulle pääset useilla tavoilla:
+Asennussivulle pääsee useilla tavoilla:
 
-- Napauta jäsenportaalissa **Lisää** ja napauta kohdassa **Tili** kohtaa **Asenna sovellus** (kohta piilotetaan, kun sovellus on jo asennettu)
-- Avaa linkki, jonka seurakuntasi jakaa tekstiviestillä, sähköpostilla tai sunnuntain näytöltä
+- Napauta jäsenportaalissa **Lisää** ja napauta kohtaa **Asenna sovellus** kohdassa **Tili** (kohta piilotetaan, kun sovellus on jo asennettu)
+- Seuraa linkkiä, jonka seurakuntasi jakaa tekstiviestillä, sähköpostitse tai sunnuntain näytöltä
 - Kirjoita osoite suoraan selaimeesi
 
-:::tip Seurakunnan henkilökunnalle
-Jaa asennussivun linkki seurakuntalaisillesi. Lisää se seurakuntatiedotteeseen, uutiskirjeeseen tai diaan. Sivu opastaa jokaisen jäsenen oman laitteen vaiheet tarkasti. Pääset siihen myös B1Adminin kojelaudan pikatoiminnosta **Lataa sovellus**.
+:::tip Seurakunnan työntekijöille
+Jaa asennussivun linkki seurakuntalaisillesi. Lisää se kirkkotiedotteeseen, uutiskirjeeseen tai diaan. Sivu opastaa jokaisen jäsenen laitteelle sopivat vaiheet. Pääset siihen myös B1Admin-hallintanäkymäsi pikatoiminnosta **Lataa sovellus**.
 :::
 
-Voit asentaa PWA:n myös manuaalisesti mistä tahansa seurakuntasi B1.church-sivuston sivusta alla olevien selainvaiheiden avulla. Asennussivu on vain opastettu tapa tehdä se.
+Voit myös asentaa PWA:n käsin mistä tahansa seurakuntasi B1.church-sivuston sivusta alla olevien selainvaiheiden avulla. Asennussivu on vain ohjattu tapa tehdä se.
 
-Kun avaat asennetun sovelluksen, se aukeaa suoraan jäsenkojelautaasi, ja voit kirjautua sisään.
+Kun avaat asennetun sovelluksen, se avautuu suoraan jäsenen etusivulle, jossa voit kirjautua sisään.
 
-## Asentaminen iPhoneen (iOS — Safari)
+## Asentaminen iPhoneen (iOS, Safari)
 
-1. Avaa **Safari** iPhonessasi ja siirry osoitteeseen `https://yourchurchname.b1.church/mobile/install` (korvaa `yourchurchname` seurakuntasi osoitteen tunnisteella).
-2. Napauta **Jaa**-painiketta (laatikko, jonka päästä osoittaa nuoli ylös) näytön alareunassa.
-3. Vieritä jakovalikossa alas ja napauta **Lisää aloitusnäyttöön**.
+1. Avaa **Safari** iPhonessasi ja siirry osoitteeseen `https://yourchurchname.b1.church/mobile/install` (korvaa `yourchurchname` seurakuntasi osoitteen tunnuksella).
+2. Napauta **Jaa**-painiketta (laatikko, jonka päästä osoittaa nuoli ylöspäin) näytön alareunassa.
+3. Vieritä jakovalikossa alas ja napauta **Lisää Koti-valikkoon**.
 4. Nimeksi tulee oletuksena seurakuntasi nimi. Napauta oikeassa yläkulmassa **Lisää**.
 
-Sovelluskuvake ilmestyy aloitusnäytölle. Napauta sitä avataksesi jäsenportaalin koko näytön tilassa.
+Sovelluksen kuvake ilmestyy aloitusnäytölle. Napauta sitä avataksesi jäsenportaalin koko näytön tilassa.
 
 :::info
-PWA:n asentaminen iOS-laitteeseen edellyttää Safaria. Jos käytät iPhonessa Chromea tai jotakin muuta selainta, vaihda ensin Safariin.
+PWA:n asentaminen iOS-laitteisiin vaatii Safarin. Jos käytät iPhonessa Chromea tai jotakin muuta selainta, vaihda ensin Safariin.
 :::
 
 ## Asentaminen Androidiin (Chrome)
 
-1. Avaa **Chrome** Android-laitteessasi ja siirry osoitteeseen `https://yourchurchname.b1.church/mobile/install`.
-2. Napauta **Asenna aloitusnäyttöön** -painiketta. (Jos painiketta ei ole, napauta oikeassa yläkulmassa olevaa kolmen pisteen valikkoa (⋮) ja valitse **Lisää aloitusnäyttöön**.)
-3. Napauta kehotettaessa **Lisää**.
+1. Avaa **Chrome** Android-laitteellasi ja siirry osoitteeseen `https://yourchurchname.b1.church/mobile/install`.
+2. Napauta **Asenna aloitusnäytölle** -painiketta. (Jos painiketta ei ole, napauta oikeassa yläkulmassa olevaa kolmen pisteen valikkoa (⋮) ja valitse **Lisää aloitusnäytölle**.)
+3. Napauta **Lisää**, kun sitä pyydetään.
 
-Sovelluskuvake ilmestyy aloitusnäytölle. Napauta sitä avataksesi jäsenportaalin.
+Sovelluksen kuvake ilmestyy aloitusnäytölle. Napauta sitä avataksesi jäsenportaalin.
 
 ## Asennuksen jälkeen
 
-Kun sovellus on asennettu, PWA avautuu suoraan jäsenportaaliin omassa koko näytön ikkunassaan. Voit:
+Kun sovellus on asennettu, se avautuu suoraan jäsenportaaliin omassa koko näytön ikkunassaan. Voit:
 
 - Kirjautua sisään olemassa olevalla ChurchApps-tililläsi
-- Käyttää kaikkia jäsenominaisuuksia, jotka seurakuntasi on ottanut käyttöön — ryhmät, lahjoitukset, sisäänkirjautuminen, palvelusuunnitelmat ja muut
-- Palata siihen milloin tahansa napauttamalla kuvaketta aloitusnäytölläsi
+- Käyttää kaikkia seurakuntasi käyttöön ottamia jäsenominaisuuksia, kuten ryhmiä, lahjoituksia, sisäänkirjautumista, palvelusuunnitelmia ja muita
+- Palata sovellukseen milloin tahansa napauttamalla aloitusnäytön kuvaketta
 
-Sovelluskuvakkeessa näkyy **ilmoitusmerkki** (pieni numeromerkki), kun sinulla on lukemattomia viestejä. Näet siis yhdellä silmäyksellä, onko sinulle uutta.
+Sovelluksen kuvakkeessa näkyy **ilmoitusmerkki** (pieni numeromerkki), kun sinulla on lukemattomia viestejä. Näin näet yhdellä silmäyksellä, onko jotain uutta odottamassa.
 
 :::info
-PWA edellyttää internet-yhteyttä. Toisin kuin jotkin natiivisovellukset, se ei tallenna kaikkea sisältöä välimuistiin käytettäväksi offline-tilassa.
+PWA vaatii internetyhteyden. Toisin kuin jotkin natiivisovellukset, se ei tallenna kaikkea sisältöä välimuistiin käytettäväksi offline-tilassa.
 :::
 
-## Entä vanha B1 Mobile -sovellus?
+## Liittyvät artikkelit
 
-iOS:n ja Androidin vanha natiivi **B1 Mobile** -sovellus on poistettu käytöstä, eikä sitä enää päivitetä. PWA on tästedes tuettu tapa käyttää B1.churchin jäsenportaalia puhelimella, ja se kattaa kaikki jäsenille suunnatut ominaisuudet, joita natiivisovellus tarjosi. Jos olet aiemmin asentanut natiivisovelluksen, siirry PWA:han omaan tahtiisi.
-
-Katso poistetun sovelluksen historiallinen dokumentaatio [B1 Mobile -viitesivulta](/docs/b1-church/index.md).
-
-## Aiheeseen liittyvät artikkelit
-
-- [Kirjautuminen](./logging-in.md) — Kuinka kirjaudut sisään B1.church-tilillesi
+- [Kirjautuminen](./logging-in.md) — Miten kirjaudut sisään B1.church-tilillesi

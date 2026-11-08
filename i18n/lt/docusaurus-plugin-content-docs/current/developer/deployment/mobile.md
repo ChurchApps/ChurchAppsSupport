@@ -1,20 +1,20 @@
 ---
-title: "Mobiliosios programėlės diegimas"
-description: "Vadovas, kaip sukurti B1 Mobile programėlės Android ir iOS versijas su Expo EAS, pateikti jas programėlių parduotuvėms ir skelbti OTA atnaujinimus."
+title: "Mobiliųjų programėlių diegimas"
+description: "Vadovas, kaip sukurti Android ir iOS versijas Expo programėlėms, tokioms kaip B1 Checkin, pateikti jas programėlių parduotuvėms ir skelbti OTA atnaujinimus naudojant EAS."
 ---
 
-# Mobiliosios programėlės diegimas
+# Mobiliųjų programėlių diegimas
 
 <div class="article-intro">
 
-ChurchApps mobiliosios programėlės kuriamos ir diegiamos naudojant **Expo EAS Build** ir platinamos per programėlių parduotuves. Šiame puslapyje aprašoma, kaip kurti, pateikti ir siųsti per orą (OTA) atnaujinimus tiek Android, tiek iOS platformoms.
+ChurchApps Expo mobiliosios programėlės, pavyzdžiui B1 Checkin, kuriamos naudojant **Expo EAS Build** arba vietinį Gradle kūrimą, o platinamos per programėlių parduotuves. Šiame puslapyje aprašoma, kaip kurti, pateikti ir skelbti oro (OTA) atnaujinimus tiek Android, tiek iOS platformoms, pavyzdžiui naudojant B1 Checkin.
 
 </div>
 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Nustatykite mobiliąją programėlę vietiniame kompiuteryje -- žr. [B1 Mobile](../mobile/b1-mobile.md)
+- Nustatykite programėlę vietiniame kompiuteryje – žr. [Mobiliosios programėlės](../mobile/index.md#local-setup)
 - Įdiekite ir sukonfigūruokite [EAS CLI](https://docs.expo.dev/eas/)
 - Turėkite prieigą prie Google Play Console (Android) ir (arba) Apple App Store Connect (iOS)
 
@@ -24,21 +24,31 @@ ChurchApps mobiliosios programėlės kuriamos ir diegiamos naudojant **Expo EAS 
 
 ### Android
 
+Android išleidimo versijos kuriamos vietiniame kompiuteryje ir pasirašomos išleidimo raktų saugykla iš EAS. Ją atsisiųskite vieną kartą naudodami `npx eas-cli credentials -p android` (pasirinkite **credentials.json: Download credentials from EAS**), tada paleiskite:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Google Play paketas įrašomas į `android/app/build/outputs/bundle/release/app-release.aab`. Norėdami kurti per EAS, vietoj to paleiskite `yarn build:android:eas`.
 
 ### iOS
 
+iOS versijos visada kuriamos EAS platformoje:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
 ## Pateikimas programėlių parduotuvėms
 
 ### Android -- Google Play Store
 
-Po sėkmingo EAS kūrimo Android dvejetainis failas (AAB) pateikiamas Google Play parduotuvei per Play Console.
+Įkelkite AAB failą per Play Console arba pateikite jį naudodami EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
@@ -50,16 +60,16 @@ eas submit --platform ios
 
 ## OTA atnaujinimai
 
-Pakeitimams, kurie apima tik JavaScript ir nereikalauja programėlių parduotuvės peržiūros, naudokite per orą (OTA) atnaujinimus:
+Pakeitimams, kurie susiję tik su JavaScript ir nereikalauja programėlių parduotuvės peržiūros, naudokite oro (OTA) atnaujinimus:
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Tai naudoja EAS Update, kad pakeitimai būtų perduoti naudotojams tiesiogiai, be pilno pateikimo parduotuvei.
+Tam naudojamas EAS Update, kuris pakeitimus tiesiogiai pateikia naudotojams be pilno pateikimo programėlių parduotuvei.
 
 :::tip
-OTA atnaujinimai yra gerokai greitesni nei parduotuvės versijos -- pakeitimai gali pasiekti naudotojus per kelias minutes, o ne per dienas. Naudokite juos klaidoms taisyti, tekstams keisti ir nedideliems sąsajos pakeitimams, kurie nekeičia vietinio kodo.
+OTA atnaujinimai žymiai greitesni nei parduotuvės versijos – pakeitimai gali pasiekti naudotojus per kelias minutes, o ne per dienas. Naudokite juos klaidų taisymams, teksto pakeitimams ir nedideliems sąsajos atnaujinimams, kurie nekeičia vietinio kodo.
 :::
 
 ## Versijų numeriai
@@ -67,17 +77,17 @@ OTA atnaujinimai yra gerokai greitesni nei parduotuvės versijos -- pakeitimai g
 Prieš kuriant parduotuvės versiją, versijų numeriai turi būti atnaujinti keliuose failuose:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` ir `versionCode`)
+
+iOS versijos numerį EAS padidina automatiškai.
 
 :::warning
-Jei neatnaujinsite versijų numerių visuose failuose, kūrimas nepavyks arba programėlė bus atmesta parduotuvėje. Prieš pradėdami gamybinį kūrimą, dar kartą patikrinkite kiekvieną aukščiau išvardytą failą.
+Jei pamiršite atnaujinti versijų numerius visuose failuose, kūrimas nepavyks arba programėlę gali atmesti parduotuvė. Prieš kurdami gamybinę versiją dar kartą patikrinkite kiekvieną aukščiau nurodytą failą.
 :::
 
 ## Susiję straipsniai
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Vietinio nustatymo ir kūrimo vadovas
+- **[Mobiliosios programėlės](../mobile/index.md)** -- Vietinio nustatymo ir kūrimo vadovas
 - **[API diegimas](./apis.md)** -- Backend API diegimas
-- **[Žiniatinklio programėlių diegimas](./web-apps.md)** -- Frontend žiniatinklio programėlių diegimas
+- **[Interneto programėlių diegimas](./web-apps.md)** -- Frontend interneto programėlių diegimas

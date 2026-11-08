@@ -1,76 +1,91 @@
 ---
 title: "Personalizar lecciones"
-description: "Elimina, oculta o reordena secciones y roles en una lección de Lessons.church, y elige si los cambios se aplican a un aula o a todas."
+description: "Elimina o reordena secciones, roles y acciones en una lección de Lessons.church, y elige si cada cambio se aplica a un solo aula o a todas."
 ---
 
 # Personalizar lecciones
 
 <div class="article-intro">
 
-Esta guía le muestra cómo personalizar una lección para su aula. Las personalizaciones le permiten eliminar, ocultar o reordenar contenido para que sus voluntarios vean exactamente lo que necesitan, ni más ni menos.
+Esta guía te explica cómo personalizar una lección para tu aula. Las personalizaciones te permiten eliminar o reordenar el contenido para que tus voluntarios vean exactamente lo que necesitan: ni más, ni menos.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Configure al menos un aula](../classrooms/setting-up-classrooms.md) en el portal
-- [Programe una lección](../classrooms/scheduling-lessons.md) en el aula que desea personalizar
-- Lea la [descripción general de Personalización](./index.md) para comprender lo que se puede personalizar
+- [Configura al menos un aula](../classrooms/setting-up-classrooms.md) en el portal
+- [Programa una lección](../classrooms/scheduling-lessons.md) para el aula que quieres personalizar
+- Lee la [descripción general de personalización](./index.md) para entender qué se puede personalizar
 
 </div>
 
 ## Abrir la vista de personalización
 
-1. Inicie sesión y navegue a su **Portal**.
-2. Seleccione el **aula** que tiene la lección que desea personalizar.
-3. Haga clic en la **lección programada** para abrirla.
-4. Haga clic en **Personalizar** para entrar en la vista de personalización.
+1. Inicia sesión y ve a tu **Portal**.
+2. Selecciona el **aula** que tiene la lección que quieres personalizar.
+3. En el calendario del aula, busca la lección y haz clic en **Personalizar** debajo de su nombre.
 
-Verá el contenido completo de la lección desglosado en secciones, roles y acciones.
+La página **Personalizar lección** muestra las secciones de la lección, con los roles de cada sección y las acciones de cada rol debajo. Cada fila tiene botones a la derecha:
+
+- **Flecha arriba** y **Flecha abajo** -- Mueve el elemento un lugar hacia arriba o hacia abajo entre sus elementos vecinos
+- **Eliminar** (ícono de papelera) -- Quita el elemento
+
+:::info
+**Personalizar** solo aparece en las lecciones de Lessons.church. Las lecciones programadas desde un proveedor externo muestran **Ver lección** en su lugar y no se pueden personalizar.
+:::
+
+## Elegir dónde se aplica un cambio
+
+Cada vez que haces clic en una flecha o en la papelera, aparece un menú que pregunta **Aplicar la personalización seleccionada a:**
+
+- **Este aula** -- El cambio se aplica solo al aula actual. Las demás aulas no se ven afectadas.
+- **Todas las aulas** -- El cambio se aplica a todas las aulas de tu iglesia.
+
+Al elegir una opción, el cambio se guarda de inmediato. No hay un paso aparte para guardar.
 
 ## Eliminar secciones
 
-Si una sección no aplica a su aula, puede eliminarla por completo. Esto es útil cuando una lección incluye contenido para múltiples grupos de edad y solo necesita uno. Por ejemplo, si una lección tiene tanto una sección de "Actividad de preescolar" como una de "Actividad de primaria", puede eliminar la que no se ajuste a su salón.
+Si una sección no corresponde a tu aula, puedes eliminarla por completo. Esto es útil cuando una lección incluye contenido para varios grupos de edad y solo necesitas uno. Por ejemplo, si una lección tiene las secciones "Actividad para preescolar" y "Actividad para primaria", puedes eliminar la que no encaje en tu salón.
 
-1. Encuentre la sección que desea eliminar.
-2. Haga clic para **eliminar** u **ocultar** la sección.
-3. La sección ya no aparecerá para los voluntarios que vean esta lección.
+1. Busca la sección que quieres eliminar.
+2. Haz clic en su botón **Eliminar** (ícono de papelera).
+3. Elige **Este aula** o **Todas las aulas**.
 
-## Ocultar roles o acciones
+La sección se muestra como eliminada, junto con todos sus roles y acciones, y los voluntarios ya no la verán en esta lección.
 
-Dentro de una sección, puede ocultar roles o acciones específicas. Por ejemplo, si una sección incluye un rol de "Líder de adoración" pero su aula no tiene uno, puede ocultar solo ese rol sin eliminar toda la sección.
+## Eliminar roles o acciones
 
-1. Expanda la sección para ver sus roles y acciones.
-2. Haga clic para **ocultar** cualquier rol o acción que no necesite.
+Dentro de una sección, puedes eliminar roles o acciones específicos. Por ejemplo, si una sección incluye el rol "Líder de alabanza" pero tu aula no tiene ese rol, puedes eliminar solo ese rol sin quitar toda la sección.
 
-## Reordenar contenido
+1. Busca el rol o la acción en la lista bajo su sección.
+2. Haz clic en su botón **Eliminar** (ícono de papelera) y elige dónde se aplica el cambio.
 
-Puede reorganizar las secciones y acciones para que coincidan con el flujo que prefiera:
+## Reordenar el contenido
 
-1. Arrastre las secciones o acciones para moverlas hacia arriba o hacia abajo en el orden.
-2. El nuevo orden es lo que sus voluntarios verán cuando vean la lección.
+Puedes reorganizar secciones, roles y acciones para que sigan el flujo que prefieras:
 
-## Guardar su personalización
+1. Haz clic en la **Flecha arriba** o **Flecha abajo** del elemento que quieres mover.
+2. Elige dónde se aplica el cambio. El elemento intercambia su lugar con el vecino.
 
-Cuando termine de hacer cambios, guarde la personalización. Se le pedirá que elija cómo se aplica:
+Repite el proceso hasta que los elementos estén en el orden que quieres. El nuevo orden es el que verán tus voluntarios al revisar la lección.
 
-- **Solo esta aula** -- Los cambios se aplican solo al aula actual. Las demás aulas no se ven afectadas.
-- **Todas las aulas** -- Los cambios se aplican en todas las aulas de su iglesia.
-- **Eliminar personalización** -- Si previamente personalizó esta lección y desea volver al contenido original, elija esta opción para borrar sus cambios.
+## Deshacer una eliminación
+
+Para recuperar un elemento que eliminaste, haz clic de nuevo en su botón **Eliminar**. El menú ahora también ofrece la opción **Ninguno**. Elige **Ninguno** para cancelar la eliminación y volver a mostrar el elemento, o elige la otra opción para cambiar dónde se aplica la eliminación.
 
 :::tip
-Comience personalizando una sola lección para un aula. Una vez que se sienta cómodo con el proceso, puede aplicar personalizaciones más ampliamente en todas las aulas.
+Empieza personalizando una sola lección para un aula. Cuando te sientas cómodo con el proceso, puedes aplicar las personalizaciones de forma más amplia en todas las aulas.
 :::
 
 ## Cuándo personalizar
 
 La personalización es más útil cuando:
 
-- Una lección tiene contenido para múltiples grupos de edad y desea mostrar solo las partes relevantes.
-- Su aula no utiliza ciertos roles (como un líder de adoración dedicado o un voluntario técnico).
-- Prefiere un orden diferente para el flujo de la lección al que se proporciona por defecto.
+- Una lección tiene contenido para varios grupos de edad y quieres mostrar solo las partes relevantes.
+- Tu aula no usa ciertos roles (como un líder de alabanza dedicado o un voluntario de tecnología).
+- Prefieres un orden distinto para el flujo de la lección al que viene por defecto.
 
 :::info
-No necesita personalizar cada lección. Si el contenido funciona tal como está para su aula, puede omitir este paso por completo e ir directamente a la [presentación](../presenting/index.md).
+No necesitas personalizar todas las lecciones. Si el contenido funciona tal como está para tu aula, puedes omitir este paso y pasar directamente a [presentar](../presenting/index.md).
 :::

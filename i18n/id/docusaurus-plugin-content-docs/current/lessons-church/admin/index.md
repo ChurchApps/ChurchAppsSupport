@@ -1,6 +1,6 @@
 ---
 title: "Administrasi"
-description: "Ikhtisar area admin Lessons.church di ChurchApps: cara mengelola program, studi, pelajaran, sumber daya, statistik, dan penyedia kurikulum eksternal."
+description: "Ikhtisar area admin Lessons.church di ChurchApps, mencakup cara mengelola program, studi, pelajaran, sumber daya, statistik, dan penyedia kurikulum eksternal."
 ---
 
 # Administrasi
@@ -19,29 +19,29 @@ Akses admin memerlukan izin yang sesuai. Jika Anda tidak melihat opsi admin, hub
 
 Area admin memberi Anda kendali penuh atas konten Anda:
 
-- **Membuat dan mengedit program** -- Siapkan seri kurikulum tingkat atas dengan nama, deskripsi, gambar, dan slug.
-- **Mengelola studi** -- Atur kelompok pelajaran terkait dalam setiap program.
-- **Membangun pelajaran** -- Tambahkan pelajaran individual dengan venue, bagian, peran, dan tindakan.
-- **Mengunggah sumber daya** -- Lampirkan berkas yang dapat diunduh (PDF, lembar kegiatan, gambar) di tingkat program, studi, atau pelajaran.
-- **Melihat statistik** -- Lihat konten mana yang diunduh, oleh siapa, dan dari mana.
-- **Mengonfigurasi penyedia** -- Hubungkan penyedia kurikulum eksternal yang menggunakan Open Lesson Format.
-- **Rencana tahunan** -- Terbitkan urutan minggu 1, 2, 3… untuk kurikulum apa pun. Gereja menerapkannya di B1 Admin.
+- **Membuat dan mengedit program** -- Menyiapkan seri kurikulum tingkat atas dengan nama, deskripsi, gambar, dan slug.
+- **Mengelola studi** -- Mengatur kelompok pelajaran terkait dalam setiap program.
+- **Membangun pelajaran** -- Menambahkan pelajaran individual dengan venue, bagian, peran, dan tindakan.
+- **Mengunggah sumber daya** -- Melampirkan berkas yang dapat diunduh (PDF, lembar aktivitas, gambar) di tingkat program, studi, atau pelajaran.
+- **Melihat statistik** -- Melihat konten apa yang diunduh, oleh siapa, dan dari mana.
+- **Mengonfigurasi penyedia** -- Menghubungkan penyedia kurikulum eksternal yang menggunakan Open Lesson Format. Ini dilakukan dari halaman **External Providers**, bukan dari area admin.
+- **Rencana tahunan** -- Menerbitkan urutan minggu 1, 2, 3… untuk kurikulum apa pun. Gereja menerapkannya di B1 Admin.
 
 ## Hierarki Konten
 
-Sebagai admin, penting untuk memahami bagaimana konten disusun:
+Sebagai admin, akan membantu jika Anda memahami bagaimana konten disusun:
 
-1. **Program** berisi satu atau lebih studi.
-2. **Studi** berisi satu atau lebih pelajaran.
-3. **Pelajaran** berisi satu atau lebih venue (variasi kelompok usia).
+1. **Program** berisi satu atau beberapa studi.
+2. **Studi** berisi satu atau beberapa pelajaran.
+3. **Pelajaran** berisi satu atau beberapa venue (variasi kelompok usia).
 4. **Venue** berisi bagian, dan bagian berisi tindakan berbasis peran.
 
 Setiap tingkat dapat memiliki sumber daya yang dapat diunduh sendiri.
 
 ## Langkah Selanjutnya
 
-- [Mengelola Program](./managing-programs.md) -- Buat dan konfigurasi program
-- [Mengelola Studi](./managing-studies.md) -- Tambahkan studi dalam sebuah program
-- [Mengelola Pelajaran](./managing-lessons.md) -- Bangun pelajaran dengan venue, bagian, dan tindakan
-- [Statistik](./statistics.md) -- Tinjau data unduhan dan penggunaan
-- [Penyedia Pihak Ketiga](./third-party-providers.md) -- Hubungkan umpan kurikulum eksternal
+- [Mengelola Program](./managing-programs.md) -- Membuat dan mengonfigurasi program
+- [Mengelola Studi](./managing-studies.md) -- Menambahkan studi dalam sebuah program
+- [Mengelola Pelajaran](./managing-lessons.md) -- Membangun pelajaran dengan venue, bagian, dan tindakan
+- [Statistik](./statistics.md) -- Meninjau data unduhan dan penggunaan
+- [Penyedia Pihak Ketiga](./third-party-providers.md) -- Menghubungkan umpan kurikulum eksternal

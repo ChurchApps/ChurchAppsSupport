@@ -1,58 +1,57 @@
 ---
-title: "Fornitori di terze parti"
-description: "Aggiungere un feed di curricula esterno a Lessons.church dalla pagina Third-Party admin, poi visualizzare, aggiornare o rimuovere la connessione."
+title: "Provider di terze parti"
+description: "Aggiungi un feed di curriculum in Open Lesson Format nella pagina Provider esterni di Lessons.church, poi modificalo o eliminalo, così la tua chiesa può pianificare le sue lezioni."
 ---
 
-# Fornitori di terze parti
+# Provider di terze parti
 
 <div class="article-intro">
 
-Lessons.church supporta fornitori di programmi didattici esterni attraverso l'Open Lesson Format. Questo significa che puoi importare contenuti da altre organizzazioni e renderli disponibili insieme alla libreria integrata, dando alle chiese accesso a materiale didattico da molteplici fonti in un unico posto.
+Lessons.church supporta provider di curriculum esterni tramite l'Open Lesson Format. Questo significa che la tua chiesa può collegare curriculum di altre organizzazioni e pianificarlo per le tue classi accanto alla libreria integrata, così il tuo team dispone di curriculum da più fonti in un unico posto.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Disponi dei permessi di amministratore per Lessons.church (vedi la [Panoramica dell'amministrazione](./index.md))
-- Ottieni l'URL del feed dal fornitore esterno che desideri collegare
+- Accedi a Lessons.church con un account che può gestire le pianificazioni delle classi della tua chiesa
+- Ottieni l'URL del feed dal provider esterno che vuoi collegare. Deve restituire lezioni nel formato [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
-## Aggiunta di un fornitore
+## Aggiungere un provider
 
-1. Vai all'area **Amministrazione**.
-2. Apri la pagina **Terze parti**.
-3. Clicca su **Aggiungi fornitore** (o il pulsante equivalente per aggiungere una nuova connessione).
-4. Inserisci l'**URL del feed** del fornitore. Questo è l'URL in cui il fornitore pubblica i propri dati didattici nell'Open Lesson Format.
-5. Salva la connessione.
+1. Fai clic su **External Providers** nella navigazione di Lessons.church. Si apre la pagina **External Lesson Providers**.
+2. Fai clic su **Add Provider**. Se non ne hai ancora aggiunto nessuno, fai clic invece su **Add First Provider**.
+3. Inserisci un **Provider Name**. Questo è il nome che il tuo team vede quando sceglie il provider.
+4. Inserisci l'**API URL**. Questo è l'indirizzo in cui il provider pubblica il suo curriculum nell'Open Lesson Format.
+5. Fai clic su **Save**.
 
-Una volta salvato, Lessons.church importerà i contenuti del fornitore. I loro programmi, studi e lezioni appariranno nella libreria didattica insieme ai tuoi contenuti.
+Il provider viene aggiunto solo per la tua chiesa. Appare poi come opzione in **Provider** quando [pianifichi una lezione](../classrooms/scheduling-lessons.md) per una classe, e in **Source** quando crei un [piano annuale](./managing-year-plans.md).
 
-## Gestione dei fornitori
+## Gestire i provider
 
-Dalla pagina **Terze parti**, puoi vedere tutti i fornitori collegati. Per ogni fornitore, puoi:
+La pagina **External Lesson Providers** elenca tutti i provider che la tua chiesa ha aggiunto. Per modificarne uno:
 
-- **Visualizzare** i contenuti importati per confermare che siano stati acquisiti correttamente.
-- **Aggiornare** l'URL del feed se il fornitore cambia il proprio endpoint.
-- **Rimuovere** un fornitore se non desideri più includere i suoi contenuti.
+- **Modifica** -- Fai clic sull'icona **Edit provider** (matita), cambia il **Provider Name** o l'**API URL**, quindi fai clic su **Save**.
+- **Elimina** -- Fai clic sull'icona **Edit provider**, poi fai clic sull'icona di eliminazione (cestino) e conferma.
 
-## Cos'è l'Open Lesson Format?
+## Che cos'è l'Open Lesson Format?
 
-L'Open Lesson Format è uno schema standardizzato che descrive i contenuti didattici -- programmi, studi, lezioni, ambienti, sezioni e azioni -- in modo strutturato. Qualsiasi organizzazione che pubblica i propri contenuti utilizzando questo formato può essere aggiunta come fornitore su Lessons.church.
+L'Open Lesson Format è uno schema standardizzato che descrive i contenuti del curriculum -- programmi, studi, lezioni, sedi, sezioni e azioni -- in modo strutturato. Qualsiasi organizzazione che pubblica i propri contenuti in questo formato può essere aggiunta come provider in Lessons.church.
 
-Se sei un fornitore di contenuti interessato a rendere il tuo materiale didattico disponibile attraverso Lessons.church, puoi trovare la documentazione completa dello schema nel repository [Open Lesson Schema](./open-lesson-format.md).
+Se sei un fornitore di contenuti interessato a rendere disponibile il tuo curriculum tramite Lessons.church, puoi trovare la documentazione completa dello schema nella guida [Open Lesson Format](./open-lesson-format.md).
 
-## Perché utilizzare fornitori di terze parti?
+## Perché usare i provider di terze parti?
 
-- **Più scelta per le chiese** -- Le chiese possono sfogliare una maggiore varietà di materiale didattico senza lasciare la piattaforma.
-- **Tutto in un unico posto** -- Volontari e coordinatori non devono visitare più siti web per trovare e programmare le lezioni.
-- **Configurazione semplice** -- Aggiungere un fornitore richiede solo un URL del feed. Non è necessario alcun inserimento manuale di dati o caricamento di file.
+- **Più scelta per le chiese** -- Le chiese possono consultare una gamma più ampia di curriculum senza uscire dalla piattaforma.
+- **Un unico posto per tutto** -- Volontari e coordinatori non devono visitare più siti web per trovare e pianificare le lezioni.
+- **Configurazione semplice** -- Aggiungere un provider richiede solo un nome e un URL del feed. Non è necessario inserire dati manualmente né caricare file.
 
 :::info
-I contenuti di terze parti sono gestiti dal fornitore esterno. Se noti contenuti mancanti o non aggiornati da un fornitore, il problema potrebbe dover essere risolto dalla loro parte.
+I contenuti di terze parti sono gestiti dal provider esterno. Se noti contenuti mancanti o non aggiornati di un provider, il problema potrebbe dover essere risolto da parte loro.
 :::
 
 :::tip
-Per la configurazione dei fornitori esterni a livello di chiesa (non a livello amministrativo), vedi la pagina [Fornitori esterni](../browsing/external-providers.md) nella sezione Navigazione.
+Per scoprire come appaiono le lezioni di un provider esterno una volta pianificate, consulta [Provider esterni](../browsing/external-providers.md) nella sezione Browsing.
 :::

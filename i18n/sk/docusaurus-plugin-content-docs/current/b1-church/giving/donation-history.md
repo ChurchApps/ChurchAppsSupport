@@ -1,37 +1,37 @@
 ---
-title: "História darov a výpisy v B1.church"
+title: "Výpisy a história darov v B1.church"
 sidebar_label: "História darov"
-description: "Prezerajte si minulé dary, filtrujte podľa roka a tlačte výpisy darov na daňové účely na stránke Dary v členskom portáli B1.church."
+description: "Zobrazte si svoje minulé dary, filtrujte ich podľa roka a tlačte výpisy darov na daňové účely zo stránky Dary v členskom portáli B1.church."
 ---
 
 # História darov
 
 <div class="article-intro">
 
-Po prihlásení si môžete pozrieť úplný záznam svojich predchádzajúcich darov a vytvoriť výpisy darov na daňové účely. Históriu darov nájdete na stránke **Dary** v portáli člena.
+Po prihlásení si môžete zobraziť úplný záznam svojich minulých darov a vygenerovať výpisy darov na daňové účely. História darov je dostupná na stránke **Dary** v členskom portáli.
 
 </div>
 
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Musíte byť [prihlásený](../getting-started/logging-in.md) do svojho účtu B1.church.
-- Musíte mať aspoň jeden uskutočnený dar. Ako začať, si pozrite v článku [Ako poslať dar](./making-donations.md).
+- Musíte sa [prihlásiť](../getting-started/logging-in.md) do svojho účtu B1.church.
+- Musíte mať aspoň jeden uskutočnený dar. Ak chcete začať, pozrite si [Ako dať dar](./making-donations.md).
 
 </div>
 
 ## Zobrazenie vašej histórie
 
 1. Prihláste sa do svojho účtu B1.church.
-2. Otvorte stránku **Dary** (karta **Darovať** vašej cirkvi) alebo klepnite na **História** v sekcii **Dary** na [domovskej obrazovke](../getting-started/navigating.md#home).
-3. Klepnutím na **Celá história** zobrazíte svoje predchádzajúce dary. (Odkaz **História** na domovskej obrazovke otvára toto zobrazenie priamo.)
+2. Otvorte stránku **Dary** (karta **Darovať** vašej cirkvi) alebo klepnite na **História** v sekcii **Dary** na vašom [domovskom paneli](../getting-started/navigating.md#home).
+3. Klepnite na **Celá história**, čím zobrazíte svoje minulé dary. (Odkaz **História** na domovskom paneli otvára priamo tento pohľad.)
 
-V hornej časti vyberte rok (alebo **Všetky**), aby ste videli celkovú sumu za dané obdobie, počet darov, ktoré obsahuje, a koľko ich ešte čaká na spracovanie. Ak boli dary v danom období poskytnuté vo viacerých menách, celková suma sa prepočíta na menu vašej cirkvi a pod ňou sa zobrazí poznámka **Prepočítané podľa aktuálnych výmenných kurzov**.
+Na vrchu si vyberte rok (alebo **Všetky**), aby ste videli svoj celkový súčet za dané obdobie, počet darov, ktoré zahŕňa, a koľko z nich ešte čaká na spracovanie. Ak boli dary v danom období poskytnuté vo viacerých menách, celková suma sa prepočíta na menu vašej cirkvi a pod ňou sa zobrazí poznámka **Prepočítané podľa aktuálnych výmenných kurzov**.
 
 Pod celkovou sumou sú vaše dary zoskupené podľa mesiacov. Každý záznam zobrazuje:
 
-- **Fond** -- Fond, ktorému bol dar určený (napríklad Všeobecný fond, Fond na stavbu).
-- **Dátum** a **Spôsob** -- Kedy bol dar poskytnutý a ako ste platili (napríklad „Karta - Visa“ alebo „Bankový prevod - ACH“).
+- **Fond** -- Fond, pre ktorý bol dar určený (napríklad Všeobecný fond, Stavebný fond).
+- **Dátum** a **Spôsob** -- Kedy bol dar poskytnutý a akým spôsobom ste platili (napríklad „Karta - Visa“ alebo „Banka - ACH“).
 - **Suma** -- Suma daru v mene, v ktorej bol poskytnutý.
 
 :::info
@@ -42,36 +42,38 @@ Klepnutím na **Späť na Dary** sa vrátite na stránku Dary.
 
 ## Ak vaša cirkev obmedzuje históriu darov
 
-Vaša cirkev rozhoduje, koľko histórie darov môžu členovia vidieť. Pozrite si článok [Výpisy darov](../../b1-admin/donations/giving-statements.md#what-members-see-in-b1church):
+Vaša cirkev určuje, koľko histórie darov môžu členovia vidieť -- pozrite si [Výpisy darov](../../b1-admin/donations/giving-statements.md#what-members-see-in-b1church):
 
-- **Všetky roky** (predvolené nastavenie) -- Všetko na tejto stránke je dostupné.
-- **Do určitého roku** -- Dary po tomto roku sa nezobrazia vo vašej histórii, súhrnoch ani výpisoch a stránka Dary zobrazuje celkovú sumu za tento rok namiesto aktuálneho roka. Cirkvi to často robia, aby mohli zadržať údaje za aktuálny rok, kým dokončia opravy.
-- **Skryté** -- Ročná celková suma, **Nedávna aktivita**, **Celá história** a **Vytlačiť výpis** sú zo stránky Dary odstránené. Stále môžete darovať a spravovať opakované dary a spôsoby platby.
+- **Všetky roky** (predvolené) -- Všetko na tejto stránke je dostupné.
+- **Do určeného roka** -- Dary po tomto roku sa nezobrazia vo vašej histórii, súčtoch ani výpisoch a stránka Dary zobrazuje súčet za tento rok namiesto súčtu za aktuálny rok. Cirkvi to často robia, aby pozdržali aktuálny rok, kým dokončia opravy.
+- **Skryté** -- Ročný súčet, **Nedávna aktivita**, **Celá história** a **Tlačiť výpis** sú zo stránky Dary odstránené. Stále môžete darovať a spravovať pravidelné dary a spôsoby platby.
 
-Ak otvoríte výpis za rok, ktorý vaša cirkev ešte nesprístupnila, zobrazí sa správa: „Tento výpis darov nie je dostupný. Kontaktujte svoju cirkev, aby vám poskytla kópiu.“
+Ak otvoríte výpis za rok, ktorý vaša cirkev nesprístupnila, zobrazí sa správa: „Tento výpis darov nie je dostupný. Kontaktujte svoju cirkev a požiadajte o kópiu.“
 
-Vaša cirkev môže tiež pridať **poznámku k darom** -- krátku správu, napríklad o svojich zásadách vrátenia. Zobrazí sa v hornej časti stránky Dary, vo formulári na darovanie a v **Celej histórii** a vytlačí sa na spodok vašich výpisov darov.
+Vaša cirkev môže pridať aj **poznámku k darom** -- krátku správu, napríklad o svojich pravidlách pre vrátenie darov. Zobrazí sa na vrchu stránky Dary, vo formulári na darovanie a na stránke **Celá história** a na spodku vašich výpisov darov sa vytlačí.
 
 ## Ak vaša cirkev neponúka online darovanie
 
-Aj keď vaša cirkev nenastavila online darovanie, stále môžete vidieť dary, ktoré pre vás zaznamenala, napríklad hotovosť a šeky. Keď ste prihlásený, otvorte stránku Dary a uvidíte poznámku: „Online darovanie pre túto cirkev ešte nie je nastavené. Vaše zaznamenané dary a výpisy sú uvedené nižšie.“ Vaša ročná celková suma, **Nedávna aktivita**, **Celá história** a **Vytlačiť výpis* fungujú ako obvykle. Tlačidlo **Darovať**, **Zopakovať posledný dar** a sekcie **Opakované** a **Spôsoby platby** sa nezobrazujú. Sekcia **Dary** na vašej domovskej obrazovke tiež zobrazuje vašu celkovú sumu a odkaz **História**, ale bez tlačidla **Darovať**.
+Aj keď vaša cirkev nenastavila online darovanie, stále môžete vidieť dary, ktoré pre vás zaznamenala, napríklad hotovosť a šeky. Keď ste prihlásení a otvoríte stránku Dary, zobrazí sa poznámka: „Online darovanie pre túto cirkev ešte nie je nastavené. Vaše zaznamenané dary a výpisy sú uvedené nižšie.“ Ročný súčet, **Nedávna aktivita**, **Celá história** a **Tlačiť výpis** fungujú ako obvykle. Tlačidlo **Darovať**, **Zopakovať posledný dar** a sekcie **Pravidelné** a **Spôsoby platby** sa nezobrazujú. Sekcia **Dary** na vašom domovskom paneli zobrazuje tiež váš súčet a odkaz **História**, bez tlačidla **Darovať**.
 
 ## Export a tlač výpisov
 
-Klepnutím na **Vytlačiť výpis** v hornej časti stránky Dary otvoríte výpis darov pripravený na tlač za aktuálny kalendárny rok (alebo za najnovší rok, ktorý vaša cirkev sprístupnila) v novej karte. Ak chcete vytlačiť výpis za iný rok, otvorte **Celá história**, vyberte tento rok a klepnite na **Vytlačiť výpis** vedľa celkovej sumy.
+Klepnutím na **Tlačiť výpis** na vrchu stránky Dary otvoríte v novej karte výpis darov určený na tlač, ktorý pokrýva aktuálny kalendárny rok (alebo najnovší rok, ktorý vaša cirkev sprístupnila). Ak chcete vytlačiť iný rok, otvorte **Celá história**, vyberte požadovaný rok a klepnite na **Tlačiť výpis** vedľa celkovej sumy.
+
+Výpis je na stránke vycentrovaný a začína logom vašej cirkvi (ak ho cirkev nahrala), rokom, obdobím, ktoré pokrýva (1. január až 31. december), a dátumom vydania. Pod tým sú vaše meno a kontaktné údaje vedľa názvu a adresy vašej cirkvi, súhrn s celkovými príspevkami a súčtom za každý fond a tabuľka všetkých darov s dátumom, spôsobom, fondom a sumou. Na spodku poznámka potvrdzuje, že výpis zahŕňa všetky príspevky, ktoré vaša cirkev od vás za daný rok prijala, a nasleduje krátke vyhlásenie, že cirkev je registrovaná neziskovaná organizácia a že za dary neboli poskytnuté žiadne tovary ani služby, okrem nehmotných náboženských výhod. Ak má vaša cirkev poznámku k darom, vytlačí sa za týmto vyhlásením.
 
 :::tip
-Vytlačte si výpis skoro na začiatku nového roka, ešte pred daňovým priznaním, kým sú údaje z minulého roka vo vašej histórii stále dostupné.
+Výpis si vytlačte včas na začiatku nového roka, ešte predtým, než ho budete potrebovať na daňové priznanie, kým sú údaje o minuloročných darov vo vašej histórii stále čerstvé.
 :::
 
-## Opakované dary
+## Pravidelné dary
 
-Ak máte naplánované nejaké opakované dary, sekcia **Opakované** na stránke Dary uvádza každý z nich s jeho sumou, fondom, intervalom a spôsobom platby. Klepnutím na **Spravovať** otvoríte **Opakované dary a spôsoby platby**, kde ich môžete zmeniť.
+Ak máte naplánované pravidelné dary, sekcia **Pravidelné** na stránke Dary uvádza každý z nich so sumou, fondom, intervalom a spôsobom platby. Klepnutím na **Spravovať** otvoríte **Pravidelné dary a spôsoby platby**, kde ich môžete upraviť.
 
-Ak sa opakovaný dar platí cez **Stripe**, môžete ho namiesto zrušenia **pozastaviť** -- kliknite na ikonu pozastavenia vedľa daru a potvrďte. Darovanie sa zastaví, kým na tú istú ikonu neklíknete a dar **neobnovíte**; pozastavený dar je v zozname označený ako **Pozastavené**. Opakované dary cez iných poskytovateľov platieb možno stále upravovať alebo rušiť, ale nie pozastaviť.
+Ak sa pravidelný dar strhával cez **Stripe**, môžete ho **pozastaviť** namiesto zrušenia -- kliknite na ikonu pozastavenia vedľa daru a potvrďte. Darovanie sa zastaví, kým na tú istú ikonu neklepnete na **obnovenie**; pozastavený dar je v zozname označený ako **Pozastavený**. Pravidelné dary cez iných poskytovateľov platieb možno stále upraviť alebo zrušiť, ale nie pozastaviť.
 
 Na pridanie, odstránenie alebo zmenu uložených spôsobov platby klepnite na **Spravovať** v sekcii **Spôsoby platby**.
 
 ## Ďalšie kroky
 
-- [Ako poslať dar](./making-donations.md) -- Naučte sa, ako poslať jednorazový alebo opakovaný dar
+- [Ako dať dar](./making-donations.md) -- Naučte sa, ako dať jednorazový alebo pravidelný dar

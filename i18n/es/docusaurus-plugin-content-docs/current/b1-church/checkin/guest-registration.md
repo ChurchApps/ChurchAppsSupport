@@ -1,69 +1,70 @@
 ---
 title: "Registro de invitados"
-description: "Regístrate tú y tu familia como visitantes por primera vez con el formulario QR de B1 Checkin para que los voluntarios puedan registrar tu entrada al llegar."
+description: "Regístrate tú y tu familia como visitantes nuevos con el formulario QR de B1 Checkin para que los voluntarios puedan registrar tu llegada cuando llegues."
 ---
 
 # Registro de invitados
 
 <div class="article-intro">
 
-Si visita una iglesia por primera vez, puede registrarse usted y a su familia como invitados mediante la página de registro de invitados. Esto crea un registro en el sistema de la iglesia para que los voluntarios puedan registrar su entrada cuando llegue.
+Si visitas una iglesia por primera vez, puedes registrarte tú y tu familia como invitados usando la página de registro de invitados. Esto crea un registro en el sistema de la iglesia para que los voluntarios puedan registrar tu llegada cuando llegues.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Su iglesia debe tener activado el registro de invitados por código QR. Si no lo está, la página muestra "El registro de invitados no está habilitado para esta iglesia."
-- Escanee el código QR que se muestra en el quiosco de registro de entrada, toque **Regístrese aquí** en el quiosco, o reciba un enlace de un voluntario de la iglesia
+- Tu iglesia debe tener habilitado el registro de invitados por código QR. Si no lo está, la página muestra "El registro de invitados no está habilitado para esta iglesia."
+- Escanea el código QR que aparece en el kiosco de registro, toca **Regístrese aquí** en el kiosco o recibe un enlace de un voluntario de la iglesia
 
 </div>
 
 ## Cómo funciona el registro de invitados
 
-El registro de invitados está diseñado para visitantes que todavía no tienen una cuenta. En el quiosco de registro de entrada de la iglesia, toque **Registrarse como invitado** para mostrar un código QR que enlaza con la página de registro. También puede recibir el enlace de un voluntario o de un recibidor, o encontrarlo en un volante o en el sitio web de la iglesia.
+El registro de invitados está diseñado para visitantes que todavía no tienen una cuenta. En el kiosco de registro de la iglesia, toca **Registrarse como invitado** para mostrar un código QR que enlaza a la página de registro. También puedes recibir el enlace de un voluntario o de una persona que da la bienvenida, o encontrarlo en un folleto o en el sitio web de la iglesia.
 
-¿No tiene el teléfono a la mano? En la misma ventana del código QR del quiosco, toque **Regístrese aquí** para llenar el formulario en el propio quiosco. Consulte [Registrarse como invitado](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) para ver cómo funciona en el quiosco.
+¿No tienes el teléfono a mano? En la misma ventana del código QR del kiosco, toca **Regístrese aquí** para completar el formulario directamente en el kiosco. Consulta [Registrarse como invitado](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) para ver cómo funciona esto en el kiosco.
 
-La página se abre con el título **Registro de invitados**. Si la iglesia agregó una foto de encabezado, aparece en la parte superior de la página; de lo contrario, verá un pequeño ícono.
+La página se abre con el título **Registro de invitados**. Si la iglesia ha añadido una foto de encabezado, aparecerá en la parte superior de la página; de lo contrario, verás un pequeño ícono.
 
-## Registrar a su familia
+## Registrar a tu familia
 
-1. **Escanee el código QR** del quiosco de registro de entrada, o abra el enlace de registro de invitados en su teléfono. (Si tocó **Regístrese aquí** en el quiosco, el formulario ya está abierto).
-2. Complete la tarjeta de **Contacto principal**. **Nombre** y **Apellido** siempre son obligatorios. Según lo que pida su iglesia, también puede ver:
+1. **Escanea el código QR** en el kiosco de registro o abre el enlace de registro de invitados en tu teléfono. (Si tocaste **Regístrese aquí** en el kiosco, el formulario ya está abierto).
+2. Completa la tarjeta de **Contacto principal**. **Nombre** y **Apellido** siempre son obligatorios. Según lo que pida tu iglesia, también podrías ver:
+   - **Título** (como Sr., Sra., Dr. o Pastor), delante del nombre
    - **Correo electrónico** y **Teléfono**
    - **Estado civil**
-   - **Dirección de casa**: **Calle y número**, **Línea de dirección 2**, **Ciudad**, **Estado** y **Código postal**. Se comparte por toda la familia.
-3. El formulario comienza con una segunda tarjeta para el **Miembro de familia 2**. Escriba su nombre y apellido, o toque la **X** de la esquina de la tarjeta para quitarla si se está registrando solo.
-4. Para agregar más personas, toque **Agregar miembro de familia**. La nueva tarjeta completa automáticamente el apellido del contacto principal. Puede registrar hasta 10 personas a la vez.
-5. Si su iglesia lo pide, la tarjeta de cada persona también puede incluir **Fecha de nacimiento**, **Género** y **Grado**.
-6. Si su iglesia incluye un cuadro de **Comentarios** debajo de los miembros de la familia, úselo para compartir lo que quiera que la iglesia sepa (hasta 1,000 caracteres).
-7. Toque **Registrar** para enviar.
+   - **Domicilio** -- **Calle**, **Línea de dirección 2**, **Ciudad**, **Estado** y **Código postal**. Esta información es compartida por toda la familia.
+3. El formulario comienza con una segunda tarjeta para el **Miembro de familia 2**. Introduce su nombre y apellido, o toca la **X** en la esquina de la tarjeta para eliminarla si te estás registrando solo.
+4. Para añadir más personas, toca **Añadir miembro de familia**. La nueva tarjeta completa automáticamente el apellido del contacto principal. Puedes registrar hasta 10 personas a la vez.
+5. Si tu iglesia lo solicita, la tarjeta de cada persona también puede incluir **Título**, **Teléfono**, **Fecha de nacimiento**, **Género** y **Grado**. Cada tarjeta posterior al contacto principal también puede pedir un **Rol en el hogar** -- **Cónyuge**, **Hijo/a** u **Otro** -- para que la iglesia sepa cómo se relaciona cada persona con el contacto principal.
+6. Si tu iglesia incluye un cuadro de **Comentarios** debajo de los miembros de la familia, úsalo para compartir lo que quieras que la iglesia sepa (hasta 1,000 caracteres).
+7. Toca **Registrar** para enviar el formulario.
 
-Los campos marcados con un asterisco (`*`) son obligatorios. Si alguno queda en blanco, el formulario muestra "Complete todos los campos obligatorios." y no se envía nada hasta que los llene.
+Los campos marcados con un asterisco (`*`) son obligatorios. Si alguno queda en blanco, el formulario muestra "Por favor, completa todos los campos obligatorios." y no se envía nada hasta que los completes.
 
-## Después de registrarse
+## Después de registrarte
 
-Una vez enviado el formulario, aparece una pantalla de confirmación con el mensaje: "Registro completo: ¡Listo! Un miembro del personal registrará su entrada en breve."
+Una vez que envíes el formulario, aparecerá una pantalla de confirmación con el mensaje: "Registro completado -- ¡Todo listo! Un miembro del personal te registrará en breve."
 
-Su registro crea registros en la base de datos de la iglesia:
+Tu registro crea registros en la base de datos de la iglesia:
 
-- Se crea un **hogar** con el apellido del contacto principal, y el contacto principal como jefe de hogar.
-- Se crean **registros de persona** para cada miembro de la familia, con el estado de membresía "Visitante".
-- Los comentarios que ingresó se guardan como una nota en el registro del contacto principal para que el personal de la iglesia los lea.
-- Si la iglesia eligió un grupo para los invitados nuevos, su familia se agrega a él. Además, la iglesia puede registrar su asistencia automáticamente si se registra durante uno de los horarios de servicio programados de ese grupo.
-- Un voluntario o administrador de la iglesia puede registrar ahora la entrada de su familia en el quiosco de [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
+- Se crea un **hogar** usando el apellido del contacto principal, con el contacto principal como jefe de hogar.
+- Se crean **registros de personas** para cada miembro de la familia con el estado de membresía "Visitante". Cada miembro de la familia recibe el rol en el hogar que elegiste, o **Otro** si no se solicitó ninguno.
+- Los comentarios que escribiste se guardan como una nota en el registro del contacto principal para que el personal de la iglesia la lea.
+- Si la iglesia ha elegido un grupo para los invitados nuevos, tu familia se añade a él. Es posible que la iglesia también registre tu asistencia automáticamente si te registras durante uno de los horarios de servicio programados de ese grupo.
+- Un voluntario o administrador de la iglesia puede registrar la llegada de tu familia usando el kiosco de [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
-Si se registra de nuevo con el mismo nombre y el mismo correo electrónico o teléfono, los registros de la iglesia lo reconocen y reutilizan su perfil existente en lugar de crear un duplicado. Cualquier otra persona se agrega como nueva. Si ya se registró, también puede buscar su nombre o su número de teléfono en el quiosco.
+Si te registras de nuevo con el mismo nombre y el mismo correo electrónico o número de teléfono, los registros de la iglesia te reconocerán y reutilizarán tu perfil existente en lugar de crear un duplicado. Cualquier otra persona se añade como nueva. Si ya te registraste antes, también puedes simplemente buscar tu nombre o número de teléfono en el kiosco.
 :::
 
 :::tip
-Si el formulario le pide su correo electrónico, proporcionarlo ayuda a la iglesia a dar seguimiento después de su visita.
+Si el formulario te pide tu correo electrónico, proporcionarlo ayuda a la iglesia a dar seguimiento después de tu visita.
 :::
 
 ## Artículos relacionados
 
-- [Registro de entrada propio](./self-checkin.md): registre su propia entrada después de registrarse
-- [Agregar invitados (quiosco)](../../b1-checkin/check-in/adding-guests.md): cómo los voluntarios agregan invitados en el quiosco
-- [Registro de entrada](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code): cómo los administradores de la iglesia configuran el registro de invitados por código QR
+- [Autoregistro](./self-checkin.md) -- Regístrate tú mismo después de inscribirte
+- [Agregar invitados (kiosco)](../../b1-checkin/check-in/adding-guests.md) -- Cómo los voluntarios agregan invitados en el kiosco
+- [Registro de llegada](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Cómo los administradores de la iglesia configuran el registro de invitados por código QR

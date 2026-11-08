@@ -1,13 +1,13 @@
 ---
 title: "Mobilne aplikacije"
-description: "Pregled mobilnih aplikacij ChurchApps na Expo in React Native: B1 Mobile, B1 Checkin in LessonsScreen, s povezavo do vodnika za skupno orodje."
+description: "Pregled mobilnih aplikacij ChurchApps, ki temeljijo na Expo in React Native, B1 Checkin in LessonsScreen, ter lokalni koraki namestitve za njuno skupno orodje Expo."
 ---
 
 # Mobilne aplikacije
 
 <div class="article-intro">
 
-Mobilne aplikacije ChurchApps so zgrajene z **React Native** in **Expo**, ponujajo pa domača doživetja na Androidu, iOS-u in Android TV. Vse mobilne aplikacije uporabljajo enako orodje na osnovi Expo, zato, če lahko zgradite eno, lahko zgradite vse.
+Mobilne aplikacije ChurchApps so zgrajene z **React Native** in **Expo** ter ponujajo nativno izkušnjo na Androidu, iOS-u in Android TV. Vse mobilne aplikacije uporabljajo isto orodje, ki temelji na Expo, zato če znate zgraditi eno, znate zgraditi vse.
 
 </div>
 
@@ -15,22 +15,34 @@ Mobilne aplikacije ChurchApps so zgrajene z **React Native** in **Expo**, ponuja
 
 | Aplikacija | Namen | Platforma |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile.md) | Glavna aplikacija za člane cerkve | Android, iOS |
-| B1 Checkin | Aplikacija za kiosk na prijavnih postajah | Android, iOS |
+| B1 Checkin | Samostojna aplikacija (kiosk) za prijavne postaje | Android, iOS |
 | LessonsScreen | Aplikacija za Android TV za prikaz lekcij v učilnicah | Android TV |
 
-### B1 Mobile
-
-Glavna aplikacija za člane cerkve. Člani lahko pregledujejo imenike, dostopajo do darovanj, preverjajo udeležbo, prejemajo obvestila in sodelujejo s svojo cerkveno skupnostjo. Podrobnosti najdete v [vodniku za nastavitev aplikacije B1 Mobile](./b1-mobile.md).
+:::info
+Aplikacija za člane je B1 App -- razdelek `/mobile` v B1App, ki ga člani namestijo kot Progressive Web App (PWA). Gre za spletno aplikacijo, ne za projekt Expo; za lokalni zagon glejte [Spletne aplikacije](../web-apps/index.md).
+:::
 
 ### B1 Checkin
 
-Namensko zasnovana aplikacija za kiosk na prijavnih postajah v cerkvah. Ponuja preprost vmesnik, prijazen dotiku, s katerim člani prijavijo otroke in zabeležijo udeležbo na bogoslužjih ter dogodkih.
+Namensko zasnovana aplikacija za samostojno prijavo (kiosk) na prijavnih postajah v cerkvah. Ponuja preprost vmesnik, prilagojen dotiku, ki članom omogoča prijavo otrok in beleženje udeležbe na bogoslužjih in dogodkih.
 
 ### LessonsScreen
 
-Aplikacija za Android TV, ki v učilnicah prikazuje vsebino lekcij. Učitelji lahko na zaslon televizorja pošljejo diapozitive lekcij, videoposnetke in aktivnosti, zaradi česar je predstavitev učnega gradiva med urami preprosta.
+Aplikacija za Android TV, ki prikazuje vsebino lekcij v učilnicah. Učitelji lahko na zaslon televizorja pošljejo diapozitive lekcij, videoposnetke in aktivnosti, kar omogoča enostavno predstavitev učnega gradiva med urami.
 
-:::info
-Vse mobilne aplikacije uporabljajo enako orodje na osnovi Expo in sledijo podobnim vzorcem nastavitve. Vodnik [B1 Mobile](./b1-mobile.md) je referenca za splošni postopek nastavitve v vseh mobilnih projektih.
-:::
+## Lokalna namestitev
+
+Vse mobilne aplikacije uporabljajo isto orodje, ki temelji na Expo, in sledijo podobnim vzorcem namestitve. Na primeru B1 Checkin:
+
+1. Namestite **Node.js**, Android Studio (za emulator Androida) in Xcode (za simulator iOS-a, samo na macOS-u) -- glejte [Predpogoji](../setup/prerequisites.md).
+2. Klonirajte repozitorij in namestite odvisnosti (B1 Checkin uporablja Yarn):
+
+   ```bash
+   git clone https://github.com/ChurchApps/B1Checkin.git
+   cd B1Checkin && yarn install
+   ```
+
+3. Skopirajte `dotenv.sample.txt` v `.env` in nastavite okolje (stage), s katerim naj se aplikacija poveže (`dev` za lokalni API) -- glejte [Spremenljivke okolja](../setup/environment-variables.md#b1checkin-react-native--expo).
+4. Zaženite razvojni strežnik Expo z ukazom `yarn start`, nato pa z ukazom `yarn android` ali `yarn ios` zaženite aplikacijo na emulatorju ali napravi.
+
+Za izdaje (release builds) in posodobitve prek zraka (OTA) glejte [Namestitev mobilnih aplikacij](../deployment/mobile.md).

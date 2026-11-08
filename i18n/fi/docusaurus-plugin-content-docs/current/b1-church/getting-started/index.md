@@ -1,60 +1,56 @@
 ---
-title: "Aloitus B1.church-jäsenportaalin kanssa"
+title: "Aloitus B1.church-jäsenportaalin käyttöön"
 sidebar_label: "Aloitus"
-description: "Löydä seurakuntasi B1.church-sivusto, luo jäsentili ja tutustu portaalin tarjontaan: ryhmät, lahjoitukset, sisäänkirjautuminen ja suunnitelmat."
+description: "Etsi seurakuntasi B1.church-sivusto, luo jäsentilisi ja tutustu portaalin tarjontaan ryhmistä ja lahjoituksista sisäänkirjautumiseen ja suunnitelmiin."
 ---
 
 # Aloitus B1.churchin kanssa
 
 <div class="article-intro">
 
-B1.church on seurakuntasi verkkokoti. Sen kautta pysyt yhteydessä seurakuntalaisiin, näet ajankohtaisia tietoja, voit antaa lahjoituksia verkossa, kirjautua palveluihin ja paljon muuta. Tämä osio opastaa sinut jäsenportaalin käytön ja käyttöönoton perusteissa.
+B1.church on seurakuntasi verkkokoti. Sen kautta pysyt yhteydessä seurakuntalaisiin, näet ajankohtaisia tietoja, teet lahjoituksia verkossa, kirjaudut sisään jumalanpalveluksiin ja paljon muuta. Tämä osio opastaa sinua jäsenportaalin käytön perusteissa.
 
 </div>
 
 ## Seurakuntasi sivuston avaaminen
 
-Seurakunnallasi on oma B1.church-osoite, yleensä muodossa `https://yourchurchname.b1.church`. Voit avata tämän osoitteen millä tahansa selaimella tietokoneella, tabletilla tai puhelimella. Seurakuntasi johto tai tervetuloatiimi voi antaa sinulle tarkan osoitteen.
+Seurakunnallasi on oma B1.church-osoite, yleensä muodossa `https://seurakuntanimi.b1.church`. Voit avata tämän osoitteen millä tahansa selaimella tietokoneella, tabletilla tai puhelimella. Seurakuntasi johto tai tervetuloatiimi antaa sinulle tarkan osoitteen.
 
-Kun avaat sivuston ensimmäisen kerran, näet seurakuntasi julkisen verkkosivun omine brändeineen, navigaatiovalikkoineen ja sisältösivuineen.
+Kun avaat sivuston ensimmäistä kertaa, näet seurakuntasi julkisen verkkosivun omalla ulkoasullaan, valikoillaan ja sisältösivuillaan.
 
 ## Tilin luominen
 
-Päästäksesi jäsenportaaliin ja sen toimintoihin tarvitset ChurchApps-tilin.
+Jäsenportaaliin ja sen toimintoihin pääsyyn tarvitset ChurchApps-tilin.
 
 1. Avaa seurakuntasi B1.church-osoite.
-2. Klikkaa sivun oikeassa yläkulmassa olevaa **Kirjaudu**-painiketta.
-3. Valitse kirjautumisnäytöltä vaihtoehto **Rekisteröi** uusi tili.
+2. Napsauta sivun oikeassa yläkulmassa olevaa **Kirjaudu**-painiketta.
+3. Valitse kirjautumisnäytöltä vaihtoehto **Rekisteröidy**, jotta voit luoda uuden tilin.
 4. Syötä **etunimesi**, **sukunimesi**, **sähköpostiosoitteesi** ja valitse **salasana**.
 5. Täytä rekisteröintilomake loppuun.
 
-Rekisteröinnin jälkeen voit kirjautua sisään ja käyttää jäsenportaalia kaikkine työkaluineen.
+Rekisteröidyttyäsi voit kirjautua sisään ja käyttää jäsenportaalia kaikkine työkaluineen.
 
 :::tip
-Jos seurakuntasi on jo lisännyt sinut järjestelmäänsä, käytä samaa sähköpostiosoitetta, joka heillä on tallennettuna. Tämä yhdistää tilisi olemassa olevaan seurakuntaprofiiliisi.
+Jos seurakuntasi on jo lisännyt sinut järjestelmäänsä, käytä samaa sähköpostiosoitetta, joka heillä on tallennettuna. Näin tilisi liittyy olemassa olevaan seurakuntaprofiiliisi.
 :::
 
-## Mihin voit käyttää sivustoa
+## Mitä voit tehdä
 
 Kun olet kirjautunut sisään, jäsenportaali antaa sinulle pääsyn seuraaviin:
 
-- **Etusivu**-kojelauta, jossa on esikatselut palveluistasi, ryhmistäsi ja lahjoituksistasi, sekä **Minä**-sivu, jolla näet tulevat tapahtumasi
+- **Etusivu**-näkymä, jossa on esikatselu palveluksistasi, ryhmistäsi ja lahjoituksistasi, sekä **Minä**-sivu, jossa näet sinua koskevat tulevat asiat
 - Ryhmät, joihin kuulut, mukaan lukien keskustelut ja tapahtumat
-- Verkossa tapahtuva **lahjoittaminen**
-- **Suunnitelmat**, joissa näet vapaaehtoisvuorosi ja palvelun tiedot
-- **Check-In** palveluihin ja tapahtumiin
-- **Yhteisö**-hakemisto, josta löydät muita jäseniä ja voit ottaa heihin yhteyttä
+- **Lahjoitukset** verkossa
+- **Suunnitelmat**, joissa näet vapaaehtoisvuorosi ja palvelun yksityiskohdat
+- **Check-In** jumalanpalveluksiin ja tapahtumiin
+- **Yhteisö**-hakemisto, josta löydät muita jäseniä ja otat heihin yhteyttä
 
 ## Käyttö puhelimella
 
-B1.church toimii millä tahansa mobiiliselaimella. Sovellusmaisempaa kokemusta varten voit asentaa seurakuntasi jäsenportaalin **progressiiviseksi web-sovellukseksi (PWA)**. Avaa `https://yourchurchname.b1.church/mobile/install` saadaksesi ohjeet laitteellesi, tai lisää sivusto suoraan aloitusnäytölle Safarista tai Chromesta. Sovelluskauppaa ei tarvita. Ohjeet löydät kohdasta [Sovelluksen asentaminen (PWA)](./installing-pwa.md).
-
-:::info
-Vanhentunut natiivi B1 Mobile -sovellus on poistettu käytöstä. Jatkossa PWA on tuettu tapa käyttää B1.churchia puhelimella. Historiallista dokumentaatiota löydät [B1 Mobile -viitesivulta](/docs/b1-church/index.md).
-:::
+B1.church toimii millä tahansa mobiiliselaimella. Sovellusmaisempaa kokemusta varten voit asentaa seurakuntasi jäsenportaalin **progressiivisena web-sovelluksena (PWA)**. Avaa osoite `https://seurakuntanimi.b1.church/mobile/install` saadaksesi laitekohtaiset ohjeet tai lisää sivu suoraan kotinäytölle Safarista tai Chromesta. Sovelluskauppaa ei tarvita. Ohjeet löytyvät kohdasta [Asentaminen sovelluksena (PWA)](./installing-pwa.md).
 
 ## Seuraavat vaiheet
 
 - [Kirjautuminen](./logging-in.md) -- Opi kirjautumaan sisään ja hallitsemaan istuntoasi.
-- [B1Appin selaaminen](./navigating.md) -- Löydä tiesi jäsenportaalissa.
-- [Sovelluksen asentaminen (PWA)](./installing-pwa.md) -- Lisää B1.church puhelimesi aloitusnäytölle.
+- [B1App-sovelluksen käyttö](./navigating.md) -- Löydä tiesi jäsenportaalissa.
+- [Asentaminen sovelluksena (PWA)](./installing-pwa.md) -- Lisää B1.church puhelimesi kotinäytölle.

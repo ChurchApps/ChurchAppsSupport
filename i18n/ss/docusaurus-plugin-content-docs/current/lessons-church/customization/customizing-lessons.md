@@ -1,76 +1,91 @@
 ---
-title: "Kulungisela Tifundzo"
-description: "Susa, fihla, noma uhlele kabusha tingcenye netindzima kulifundziso le-Lessons.church, bese ukhetsa kutsi tinguquko zisebente kukilasi linye noma kuwo wonkhe emakilasi."
+title: "Kwenta Tifundvo Ngendlela Yakho"
+description: "Susa noma uhlele kabusha tingcenye, tindzima, nemisebenti kuleseni ye-Lessons.church, bese ukhetsa nje lushintsho lusebenta likilasi elilodvwa noma wonkhe emakilasini."
 ---
 
-# Kulungisela Tifundzo
+# Kwenta Tifundvo Ngendlela Yakho
 
 <div class="article-intro">
 
-Lomhlahlandlela ukuhambisa ekulungiseleni sifundzo kwelikilasi lakho. Kulungisela kukuvumela kususa, kufihla, nobe kuhlela kabusha lokucuketfwe kuze emavolontiya akho abone kuphela loko lokudzingekako -- akukho lokungetiwe, akukho lokushiywako.
+Lencwadzi itakuhambisa ekwenteni lesifundvo sibe sesikilasi sakho. Kwenta ngendlela kukuvumela kususa noma uhlele kabusha lokuqukethwe ukuze emavolontiya akho abone lokudzingekako kuphela -- lokungaphezu kwaloko, lokungaphansi kwaloko.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- [Sungula tenani likilasi linye](../classrooms/setting-up-classrooms.md) eliphothalini
-- [Hlela sifundzo](../classrooms/scheduling-lessons.md) elikilasini lofuna kulilungisela
-- Fundza [Kubuka konkhe kwekulungiselwa](./index.md) kute ucondze kutsi yini lengalungiselwa
+- [Setha nalilodvwa likilasi](../classrooms/setting-up-classrooms.md) ku-portal
+- [Hlela sifundvo](../classrooms/scheduling-lessons.md) likilasi lofuna kulenta ngendlela
+- Funda [Inchazelo yekwenta ngendlela](./index.md) ukuze uchaze lokungenteka kwenteke ngako
 
 </div>
 
-## Kuvula Kubuka Kwekulungiselwa
+## Kuvula Umbono Wekwenta Ngendlela
 
-1. Ngena futsi uye **Eliphothalini** lakho.
-2. Khetsa **likilasi** lelinesifundzo lofuna kusilungisela.
-3. Chofota **sifundzo lesihleliwe** kute usivule.
-4. Chofota **Lungisela** kute ungene ekubukeni kwekulungiselwa.
+1. Ngena bese uya ku-**Portal** yakho.
+2. Khetsa **likilasi** lelinesifundvo lofuna kusilungisa.
+3. Esikhathini sesikilasi, tfola sifundvo bese ucindzetela **Customize** ngaphansi kwelibito laso.
 
-Utawubona lonkhe lucuketfwe lwesifundzo luhlukaniswe tincenye, tindzima, netento.
+Ikhasi **Customize Lesson** likhombisa tingcenye tesifundvo, ngayinye inetindzima tayo, nemisebenti yalotindzima ngaphansi kwayo. Umugca ngamunye unetinkinobho ngakwesokudla:
 
-## Kususa Tincenye
-
-Nangabe incenye ingasebenti kulelikilasi lakho, ungayisusa ngalokuphelele. Loku kuyasita nangabe sifundzo sinelokucuketfwe kwemacembu eminyaka lamanyenti futsi udzinga munye kuphela. Sibonelo, nangabe sifundzo sinencenye ye-"Umsebenti Wesikolo Lesincane" ne-"Umsebenti Wesikolo Lesiphansi," ungasusa nakukuphi lokungahambisani nekilasi lakho.
-
-1. Tfola incenye lofuna kuyisusa.
-2. Chofota kute **ususe** nobe **ufihle** incenye.
-3. Incenye ngeke isaba khona kubomavolontiya labaphatsa lesifundzo.
-
-## Kufihla Tindzima nobe Tento
-
-Ngekhatsi kwencenye, ungafihla tindzima nobe tento letitsite. Sibonelo, nangabe incenye ihlanganisa indzima ye-"Umholi Wekukhonta," kodvwa likilasi lakho alinayo, ungafihla loyo mdzimo ngaphandle kwekususa yonkhe incenye.
-
-1. Vula incenye kute ubone tindzima netento tayo.
-2. Chofota kute **ufihle** nobe yiphi indzima nobe sento longasidzingi.
-
-## Kuhlela Kabusha Lokucuketfwe
-
-Ungaguqula tincenye netento kuze kuhambisane nemgudvu lowutsandzako:
-
-1. Hudula tincenye nobe tento kute utihambise ngenhla nobe ngentasi ekulandzelaneni.
-2. Kulandzelana lokusha kuyilokho emavolontiya akho batakubona nabahlola sifundzo.
-
-## Kugcina Kulungiselwa Kwakho
-
-Nawusucedzile kwenta tinguculo, gcina kulungiselwa. Utawubuzwa kutsi kufanele kusebenta njani:
-
-- **Lelikilasi lodvwa** -- Tinguculo tisebenta kulelikilasi kuphela. Lamanye emakilasi awatsintfwa.
-- **Wonkhe emakilasi** -- Tinguculo tisebenta kuwo onkhe emakilasi ebandleni lakho.
-- **Susa kulungiselwa** -- Nangabe wake walungisela lesifundzo kadze futsi ufuna kubuyela kulokucuketfwe kwangempela, khetsa lesikhetso kute ususe tinguculo takho.
-
-:::tip
-Cala ngekulungisela sifundzo sinye kwelikilasi linye. Nase sewukhululekile ngalenchubo, ungasebentisa kulungiselwa ngalokubanti kuwo onkhe emakilasi.
-:::
-
-## Nini Kulungisela
-
-Kulungisela kusita kakhulu nangabe:
-
-- Sifundzo sinelokucuketfwe kwemacembu eminyaka lamanyenti futsi ufuna kukhombisa tincenye letihambelanako kuphela.
-- Likilasi lakho alisebentisi tindzima letitsite (njengemholi wekukhonta lokhetsiwe nobe ivolontiya letekhono).
-- Utsandza kulandzelana lokwahlukile kwemgudvu wesifundzo kunaloko lokunikwa ngekwehluleka.
+- **Up arrow** ne **Down arrow** -- Yandzisa nje lencenye phezulu noma phansi phakathi kwemakhelwane alo
+- **Delete** (ingcembe yemfucuto) -- Susa lencenye
 
 :::info
-Awudzingi kulungisela sifundzo ngasinye. Nangabe lokucuketfwe kusebenta njengobe kunjalo kwelikilasi lakho, ungayeka lelinyatselo ngalokuphelele futsi uye ngco [ekwetfuleni](../presenting/index.md).
+**Customize** ivela kuphela kwemifundvo ye-Lessons.church. Tifundvo letihlelwe kusuka kumhlinzeki wangaphandle ikhombisa **View Lesson** esikhundleni salokho, futsi tingeke tikwentwe ngendlela.
+:::
+
+## Kukhetsa Lapho Lushintsho Lusebenta Khona
+
+Ngalesikhatsi ucindzetela umcibisholo noma ingcembe yemfucuto, imenyu ibuta **Apply selected customization to:**
+
+- **This Classroom** -- Lushintsho lusebenta kuphela likilasi lamanje. Emanye emakilasi awathinteki.
+- **All the Classrooms** -- Lushintsho lusebenta emakilasini onkhe esontfweni lakho.
+
+Khetsa kunye bese lushintsho lulondvolotwa masinyane. Akukho sinyatselo lesihlukile sekulondvolota.
+
+## Kususa Tingcenye
+
+Uma ingcenye ingasebenti likilasi lakho, ungayisusa ngokuphelele. Lokhu kuwusizo lapho sifundvo sinelokuqukethwe kumaqembu ebudzala lahlukene futsi udzinga lilodvwa. Njengesibonelo, uma sifundvo sinetingcenye ze-"Preschool Activity" ne-"Elementary Activity", ungasusa leyo lengeke ilingane negumbi lakho.
+
+1. Tfola ingcenye ofuna kuyisusa.
+2. Cindzetela inkinobho yayo ye-**Delete** (ingcembe yemfucuto).
+3. Khetsa **This Classroom** noma **All the Classrooms**.
+
+Ingcenye ikhombisa njengelisusiwe, kanye netindzima tayo tonkhe nemisebenti yayo, futsi emavolontiya ngeke asaliboni lelo sifundvo.
+
+## Kususa Tindzima Noma Temisebenti
+
+Ngaphakathi kwengcenye, ungasusa tindzima noma temisebenti letitsite. Njengesibonelo, uma ingcenye ibandlula indzima ye-"Worship Leader" kodvwa likilasi lakho lingayinaki, ungasusa lendzima kuphela ngaphandle kwekususa lingcenye yonkhe.
+
+1. Tfola indzima noma umsebenti ohlwini lwaphansi kwengcenye yawo.
+2. Cindzetela inkinobho yawo ye-**Delete** (ingcembe yemfucuto) bese ukhetsa lapho lushintsho lusebenta khona.
+
+## Kuhlela Kabusha Lokuqukethwe
+
+Ungahlela kabusha tingcenye, tindzima, nemisebenti kuze kufanane nalendlela lofuna ngayo:
+
+1. Cindzetela **Up arrow** noma **Down arrow** kulencenye ofuna kuyihambisa.
+2. Khetsa lapho lushintsho lusebenta khona. Lencenye itawushintshana ndzawo nemakhelwane alo.
+
+Phinda kuze tincenye tibe ngalolandzelano lofuna. Lolandzelano lusha yilo lemavolontiya akho atawulubona lapho alibuka sifundvo.
+
+## Kuhlehlisa Kususwa
+
+Kuze ubuyisele lencenye losuse, cindzetela inkinobho yayo ye-**Delete** futsi. Imenyu manje ikhoma ne-**None**. Khetsa **None** ukucisha kususwa bese lencenye iyavela futsi, noma khetsa lenye indlela ukushintsha lapho kususwa khona.
+
+:::tip
+Qala ngekwenta sifundvo lesisodvwa likilasi linye. Uma usuvele ujabulela inkhuba, ungasebentisa lushintsho emakilasini onkhe ngendlela lebanti.
+:::
+
+## Nini Kufanele Kwentiwe Ngendlela
+
+Kwenta ngendlela kuwusizo kakhulu lapho:
+
+- Sifundvo sinelokuqukethwe kumaqembu ebudzala lahlukene futsi ufuna kukhombisa lengcenye lebalulekile kuphela.
+- Likilasi lakho alisebenti tindzima letithile (njengomholi wekukhulekela noma umvolontiya wetekhinoloji lolodvwa).
+- Ufuna lolandzelano lehlukile lwekuhamba kwesifundvo kunaloko lenikezwe ngokuzenzakalelako.
+
+:::info
+Awudzingi kwenta ngendlela yonkhe tifundvo. Uma lokuqukethwe kusebenta njengoko kunjalo likilasi lakho, ungakweshiya lesinyatselo ungaya ngqo [kwetfula](../presenting/index.md).
 :::

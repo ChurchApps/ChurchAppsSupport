@@ -1,94 +1,98 @@
 ---
-title: "Eseményregisztráció a B1.church-en"
-sidebar_label: "Eseményekre való regisztráció"
-description: "Eseményregisztráció a B1.church-en: adatok megadása, családtagok felvétele, lehetőségek kiválasztása, kedvezménykódok, fizetés vagy várólista."
+title: "Eseményregisztráció a B1.church-ben"
+sidebar_label: "Regisztráció eseményekre"
+description: "Regisztráljon egyházi eseményre a B1.church-ben: adja meg adatait, vegyen fel családtagokat, válasszon lehetőségeket, alkalmazzon kedvezménykódot, majd fizessen vagy csatlakozzon a várólistához."
 ---
 
-# Eseményekre való regisztráció
+# Regisztráció eseményekre
 
 <div class="article-intro">
 
-Ha a gyülekezete engedélyezi a regisztrációt egy eseményre, egyszerű, lépésenkénti folyamaton keresztül jelentkezhet. Regisztrálhatja magát és családtagjait, akár van fiókja, akár vendégként érkezik. Fizetős eseményeknél kiválasztja a résztvevő típusát, hozzáadhat opcionális extrákat, beválthat egy kedvezménykódot, és a végén biztonságosan fizethet.
+Ha egyháza engedélyezi az eseményre való regisztrációt, egyszerű, lépésenkénti folyamat során jelentkezhet. Magát és családtagjait is regisztrálhatja, akár van fiókja, akár vendégként érkezik. Fizetős események esetén kiválasztja a résztvevő típusát, hozzáadhat opcionális extrákat, alkalmazhat kedvezménykódot, a végén pedig biztonságosan fizethet.
 
 </div>
 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- A gyülekezetének engedélyeznie kell a regisztrációt az eseményre
-- A regisztrációs időszaknak nyitva kell lennie (a rendszergazda által megadott nyitási és zárási dátum között)
+- Egyházának engedélyeznie kell az eseményre való regisztrációt
+- A regisztrációs időszaknak nyitva kell lennie (az adminisztrátor által megadott nyitási és zárási dátum között)
 
 </div>
 
-## 1. lépés: Adja meg az adatait
+## 1. lépés: Adatai megadása
 
-1. A gyülekezeti naptárból nyissa meg a regisztrálni kívánt eseményt, és kattintson a **Regisztráció erre az eseményre** gombra.
-2. A regisztrációs oldal betöltődik, és megjeleníti az esemény címét, leírását és dátumát. A több napos események kezdő és záró dátumát is mutatja.
-3. Ha **be van jelentkezve**, az űrlap megjeleníti a nevét, és megerősíti, hogy a fiókjához tartozó regisztrációt végez.
-4. Ha **vendég** (nincs bejelentkezve), töltse ki a következőket:
+1. A egyházi naptárból nyissa meg a regisztrálni kívánt eseményt, majd kattintson a **Regisztráció erre az eseményre** gombra.
+2. Megjelenik a regisztrációs oldal, amely az esemény címét, leírását és dátumát mutatja. Több napos eseménynél a kezdő- és a záró dátum is látszik.
+3. Ha **be van jelentkezve**, az űrlap megjeleníti a nevét, és megerősíti, hogy fiókjához tartozóan regisztrál.
+4. Ha **vendégként** (bejelentkezés nélkül) regisztrál, töltse ki a következőket:
    - **Keresztnév** (kötelező)
    - **Vezetéknév** (kötelező)
    - **E-mail-cím** (kötelező)
    - **Telefonszám** (opcionális)
-5. Ha az eseménynek vannak résztvevő-típusai (például felnőtt és gyermek, eltérő árakkal), válassza ki **a regisztrációs típusát**. Minden típus megmutatja az árát, a elfogyott típusok pedig **Elfogyott** felirattal jelennek meg.
+5. Ha az eseménynek vannak résztvevői típusai (például felnőtt és gyermek, eltérő árakkal), válassza ki **a regisztrációs típusát**. Minden típus megjeleníti az árát, a elfogyott típusok pedig **Elfogyott** felirattal látszanak.
 
 :::info
-Ha az eseménynek van létszámkorlátja, egy folyamatjelző sáv mutatja, hány hely maradt. Ha az esemény betelt, és a gyülekezete engedélyezte a várólistát, akkor is befejezheti a jelentkezést, hogy csatlakozzon a várólistához – lásd lentebb: [Csatlakozás a várólistához](#joining-a-waitlist).
+Ha az eseménynek van létszámkorlátja, egy folyamatjelző sáv mutatja, hány hely maradt. Ha az esemény betelt, és egyháza engedélyezte a várólistát, akkor is befejezheti a jelentkezést, és csatlakozhat a várólistához. Lásd lentebb: [Csatlakozás a várólistához](#joining-a-waitlist).
 :::
 
 ## 2. lépés: Családtagok hozzáadása
 
 1. Ha további családtagokat szeretne regisztrálni, adja meg mindegyikük **keresztnevét** és **vezetéknevét**.
-2. Ha az eseménynek vannak résztvevő-típusai, válasszon típust minden hozzáadott személynek.
-3. A **Tag hozzáadása** gombra kattintva további személyeket adhat hozzá (összesen legfeljebb 10 főt).
-4. Bármely tag mellett lévő eltávolítás gombra kattintva eltávolíthat egy személyt a regisztrációból.
+2. Ha az eseménynek vannak résztvevői típusai, minden hozzáadott személynek válasszon típust.
+3. A **Tag hozzáadása** gombra kattintva további személyeket vehet fel (összesen legfeljebb 10 főt).
+4. Bármely tag mellett lévő eltávolító gombra kattintva törölheti az illetőt a regisztrációból.
 5. Ha csak saját magát regisztrálja, ezt a lépést kihagyhatja.
 
-## 3. lépés: Opciók és választások kiválasztása (ha elérhető)
+## 3. lépés: Opciók és választások (ha elérhetők)
 
-Egyes események opcionális, díjköteles kiegészítőket kínálnak – pólókat, ételeket, tevékenységi bővítéseket.
+Egyes események opcionális, díjköteles kiegészítőket kínálnak, például pólókat, étkezéseket vagy programfrissítéseket.
 
-1. Ha az eseménynél vannak választható elemek, megjelenik az **Opciók és választások** lépés.
-2. A mennyiségi léptetőkkel válassza ki, hogy az egyes elemekből hányat szeretne. Az ingyenes opciók **Ingyenes** felirattal jelennek meg, a korlátozott opcióknál pedig látszik, hány darab maradt.
-3. Kattintson a **Folytatás** gombra.
+1. Ha az eseménynek vannak választási lehetőségei, megjelenik az **Opciók és választások** lépés.
+2. A mennyiségi léptetőkkel válassza ki, hogy az egyes tételekből hányat szeretne. Az ingyenes opciók **Ingyenes** felirattal, a korlátozott készletű opciók pedig a még elérhető darabszámmal jelennek meg.
+3. Kattintson a **Tovább** gombra.
 
 ## 4. lépés: Kérdések megválaszolása (ha szerepelnek)
 
-Egyes események néhány további kérdést tesznek fel a regisztrálóknak – étkezési szükségletek, pólóméret, vészhelyzeti kapcsolattartó és hasonló adatok.
+Egyes események néhány kiegészítő kérdést tesznek fel a regisztrálóknak, például étkezési korlátozásokról, pólóméretről, vészhelyzeti kapcsolattartóról vagy hasonló adatokról.
 
-1. Ha az eseményhez kérdések tartoznak, ezután megjelenik a **Kérdések** lépés.
+1. Ha az eseményhez kérdések tartoznak, a következő lépés a **Kérdések** lesz.
 2. Töltse ki a válaszait, majd folytassa.
 
 Ha az eseményhez nem tartoznak kérdések, ez a lépés automatikusan kimarad.
 
 ## 5. lépés: Fizetés (fizetős események)
 
-Ha a regisztrációja díjköteles, a **Fizetés** lépésben megjelenik a **Rendelés összesítése**, amely felsorolja az egyes résztvevőket, minden választást, az esetleges kedvezményt és a **Végösszeget**.
+Ha a regisztrációja költséggel jár, a **Fizetés** lépésben megjelenik a **Rendelési összesítő**, amely felsorolja az egyes résztvevőket, az egyes választásokat, az esetleges kedvezményt és a **Végösszeget**.
 
-- **Kedvezménykód** – Ha a gyülekezete adott Önnek egy kódot, írja be, majd kattintson az **Alkalmaz** gombra. A kedvezmény azonnal megjelenik, és egyértelmű üzenetet kap, ha a kód lejárt, még nem érvényes, vagy több résztvevőt igényel.
-- **Bejelentkezett tagok** mentett kártyával fizethetnek, vagy választhatják az **Új kártya használata** lehetőséget.
-- **Vendégek** közvetlenül megadják a kártyaadataikat, és a fizetés előtt bejelölik a **Nem vagyok robot** négyzetet.
+- **Kedvezménykód** – Ha egyháza adott Önnek kódot, írja be, majd kattintson az **Alkalmaz** gombra. A kedvezmény azonnal érvényesül. Ha a kód lejárt, még nem érvényes, vagy több résztvevőt igényel, egyértelmű üzenet jelzi.
+- **Bejelentkezett tagok** mentett bankkártyával fizethetnek, vagy választhatják az **Új kártya használata** lehetőséget.
+- **Vendégek** közvetlenül megadják a bankkártya adataikat, és fizetés előtt bejelölik a **Nem vagyok robot** négyzetet.
 
-A **Fizetés és regisztráció** gombra kattintva egy lépésben fejezheti be a fizetést és a regisztrációt. A kártyaadatai közvetlenül a gyülekezet fizetésszolgáltatójához kerülnek, és a B1 soha nem tárolja azokat.
+Kattintson a **Fizetés és regisztráció** gombra, amely megjeleníti a végösszeget (például: **Fizetés és regisztráció: $25.00**). Ezzel egy lépésben befejezheti a fizetést és a regisztrációt. Bankkártya adatai közvetlenül az egyház fizetésszolgáltatójához jutnak, és a B1 soha nem tárolja azokat.
 
-Az ingyenes regisztrációknál ez a lépés kimarad, és közvetlenül a megerősítéshez jut.
+Az ingyenes regisztrációk kihagyják ezt a lépést, és azonnal a visszaigazoláshoz jutnak.
 
-Ha a gyülekezete nem fogad el online fizetést, a fizetési lépésben ez olvasható: *„Az online fizetés nem érhető el ehhez az eseményhez. Most is regisztrálhat, és közvetlenül a gyülekezetnek fizethet.”* A befejezéshez kattintson a **Regisztráció és fizetés később** gombra. A regisztrációja a megjelenített összeggel, fizetendő egyenlegként kerül mentésre, amelyet közvetlenül a gyülekezetnek fizet ki.
+Ha egyháza nem fogad el online fizetést, a fizetési lépésben ez a szöveg látszik: *„Ehhez az eseményhez nem érhető el online fizetés. Most is regisztrálhat, és a fizetést közvetlenül az egyháznak teheti meg."* A befejezéshez kattintson a **Regisztráció és fizetés később** gombra. A regisztrációja a megjelenített összeggel, fennálló egyenlegként kerül mentésre, amelyet közvetlenül az egyháznak fizet meg.
 
 ## 6. lépés: Megerősítés
 
-Megjelenik egy megerősítő üzenet az esemény adataival és azoknak a listájával, akiket regisztrált. Emellett egy **megerősítő e-mailt** is kap a fiókjához társított e-mail-címre (vagy vendégként megadott e-mail-címre).
+Megjelenik egy visszaigazoló üzenet az esemény részleteivel, valamint a regisztrált személyek listájával. Fiókjához tartozó e-mail-címre (vagy vendégként megadott címre) **visszaigazoló e-mailt** is kap.
+
+Ha a **Regisztráció és fizetés később** lehetőséget választotta, a tagi portál helyette a **Regisztráció függőben** állapotot jeleníti meg, **Függőben** jelvénnyel, a „Helyét fenntartjuk erre az eseményre:" szöveggel, valamint a fennálló egyenleggel (például: „Fennálló egyenleg: $25.00 / $25.00").
+
+Miután regisztrált, az eseményhez tartozó **Regisztráció** hivatkozást a csoportja oldalán az Ön állapota váltja fel (**Regisztrálva**, **Függőben** vagy **Várólistán**). Az esemény ezenkívül megjelenik a kezdőképernyő **Közelgő események** részében, **Regisztráció** címkével.
 
 ## Csatlakozás a várólistához
 
-Ha az esemény betelt, és a gyülekezete engedélyezte a várólistát, az első lépésben ez jelenik meg: *„Az esemény betelt. Csatlakozhat a várólistához, és értesítjük, ha felszabadul egy hely.”* A jelentkezést a szokásos módon fejezze be – a várólistán lévők fizetési lépése kimarad. Amikor felszabadul egy hely, e-mailt kap; ha fizetés esedékes, az e-mail tartalmaz egy linket a fizetés befejezéséhez. A státuszát és a fizetést a [Regisztrációim](./my-registrations.md) oldalon is ellenőrizheti.
+Ha az esemény betelt, és egyháza engedélyezte a várólistát, az első lépésben ez a szöveg jelenik meg: *„Az esemény betelt. Csatlakozhat a várólistához, és értesítjük, ha felszabadul egy hely."* A jelentkezést szokásos módon fejezze be. Várólistán lévő státusz mellett a fizetés kimarad. Amikor felszabadul egy hely, e-mailt kap. Ha fizetni kell, az e-mail tartalmazza a fizetéshez vezető hivatkozást. Állapotát és a fizetést a [Regisztrációim](./my-registrations.md) oldalon is ellenőrizheti.
 
 ## Regisztráció módosítása vagy lemondása
 
-Ha be van jelentkezve, a tagi felületen a **Regisztrációk** oldalon saját maga módosíthatja vagy lemondhatja a regisztrációját – lásd: [Regisztrációim](./my-registrations.md). A vendégeknek a gyülekezeti irodával kell kapcsolatba lépniük, a munkatársak pedig a B1 Admin regisztrációs oldalán végezhetik el a módosítást.
+Ha be van jelentkezve, a tagi portál **Regisztrációk** oldalán saját maga is módosíthatja vagy lemondhatja regisztrációját. Lásd: [Regisztrációim](./my-registrations.md). A vendégeknek az egyházi irodával kell kapcsolatba lépniük. A munkatársak a B1 Admin regisztrációs oldalán végezhetik el a módosítást.
 
 ## Kapcsolódó cikkek
 
-- [Események áttekintése](./index.md) – Regisztrációval elérhető közelgő események böngészése
-- [Regisztrációim](./my-registrations.md) – Regisztrációinak megtekintése, módosítása, egyenlegek kifizetése és lemondása
-- [Adományozás](../giving/making-donations.md) – Adomány küldése az eseményen való részvétel mellett
+- [Események áttekintése](./index.md) – Regisztrációval rendelkező közelgő események böngészése
+- [Regisztrációim](./my-registrations.md) – Regisztrációk megtekintése, módosítása, egyenlegek kifizetése és lemondása
+- [Adományozás](../giving/making-donations.md) – Adományozás az eseményen való részvétel mellett

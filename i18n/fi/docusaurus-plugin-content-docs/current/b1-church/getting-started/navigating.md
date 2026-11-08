@@ -1,110 +1,114 @@
 ---
-title: "B1Appin käyttö"
-description: "Löydä tiesi B1.church-jäsenportaalissa puhelimella tai tietokoneella: Koti-kojelauta, alavälilehtipalkki, Lisää-sivu ja Me-sivu."
+title: "B1Appissa liikkuminen"
+description: "Löydä tiesi B1.church-jäsenportaalissa puhelimella tai tietokoneella: Etusivun kojelauta, alareunan välilehtipalkki, Lisää-sivu ja Minä-sivu."
 ---
 
-# B1Appin käyttö
+# B1Appissa liikkuminen
 
 <div class="article-intro">
 
-Jäsenportaali B1.churchissa on puhelimelle suunniteltu verkkosovellus, joka toimii polun `/mobile` alla. Se toimii millä tahansa selaimella, ja sen voi asentaa kotinäytölle. Tämä sivu kertoo etusivun koontinäytöstä, alareunan välilehtipalkista, Lisää-sivusta ja Minä-sivusta.
+B1.churchin jäsenportaali on puhelimella käytettävä verkkosovellus, joka sijaitsee polun `/mobile` alla. Se toimii millä tahansa selaimella, ja sen voi asentaa kotinäytölle. Tämä sivu selittää Etusivun kojelaudan, alareunan välilehtipalkin, Lisää-sivun ja Minä-sivun.
 
 </div>
 
 ## Esittelyvideo
 
-<YouTube id="8XKRZvvAbXg" title="Kierros B1.church-jäsensovelluksessa" next="Kierros B1 Check-Inissä" nextUrl="/docs/b1-checkin" />
+<YouTube id="8XKRZvvAbXg" title="Esittely: B1.churchin jäsensovellus" next="Esittely: B1 Check-In" nextUrl="/docs/b1-checkin" />
 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Sinun täytyy [kirjautua sisään](./logging-in.md), jotta näet henkilökohtaiset tietosi. Kirjautumattomat kävijät voivat silti selata julkista sisältöä, ja jos jokin toiminto vaatii tilin, heille näytetään **Kirjaudu sisään** -painike.
+- Sinun täytyy [kirjautua sisään](./logging-in.md) nähdäksesi henkilökohtaiset tietosi. Kirjautumattomat vierailijat voivat silti selata julkista sisältöä, ja kohdissa, joissa ominaisuus vaatii tilin, heille näytetään **Kirjaudu sisään** -painike.
 
 </div>
 
 ## Etusivu {#home}
 
-Kun avaat osoitteen `https://yourchurchname.b1.church/mobile`, pääset **Etusivu**-koontinäytölle osoitteeseen `/mobile/dashboard`. Etusivu on jäsenportaalin aloitussivu. Sen alussa on tervehdys ("Hyvää huomenta", "Hyvää päivää" tai "Hyvää iltaa" etunimesi kanssa) ja tämänpäivän päivämäärä. Sen jälkeen tulevat osiot, jotka näkyvät vain silloin, kun ne ovat ajankohtaisia:
+Kun avaat osoitteen `https://yourchurchname.b1.church/mobile`, pääset **Etusivulle** osoitteessa `/mobile/dashboard`. Etusivu on jäsenportaalin aloitussivu. Se alkaa tervehdyksellä ("Hyvää huomenta", "Hyvää päivää" tai "Hyvää iltaa" etunimesi kanssa) ja tämän päivän päivämäärällä. Sen jälkeen tulevat osiot, jotka näkyvät vain silloin, kun ne ovat ajankohtaisia:
 
-- **Kuvalaatat** -- seurakuntasi antamat kuvavälilehdet (mukaan lukien Päivän jae) näkyvät kuvalaattoina seurakuntasi nimen alla. Seurakuntasi valinnasta riippuen ne ovat kaksisarakkeisena ruudukkona, vaakasuuntaan pyyhkäistävänä rivinä (joka voi myös liikkua itsekseen) tai listana, jossa on pieni pikkukuva nimen vieressä. Katso [Kotinäytön laatat](../../b1-admin/settings/mobile-app.md#home-screen-tiles). Jokainen kuvavälilehti näkyy täällä, myös sellainen, jolla on oma paikkansa välilehtipalkissa.
+- **Kuvalaatat** -- seurakuntasi antamat kuvalliset välilehdet (mukaan lukien Päivän jae) näkyvät kuvalaattoina seurakuntasi nimen alla. Seurakuntasi valinnasta riippuen ne on asetettu kaksisarakkeiseksi ruudukoksi, vaakasuoraan pyyhkäistäväksi riviksi (joka voi myös liikkua itsestään) tai listaksi, jossa jokaisen nimen vieressä on pieni esikatselukuva -- katso [Kotinäytön laatat](../../b1-admin/settings/mobile-app.md#home-screen-tiles). Kun vaakasuora rivi sisältää enemmän laattoja kuin mahtuu näytölle, rivin alla oleva pisterivi osoittaa, missä kohdassa olet. Napauttamalla pistettä pääset suoraan kyseiseen laattaan. Rivi jatkuu eteenpäin ja alkaa uudelleen ensimmäisestä laatasta viimeisen jälkeen. Kaikki kuvalliset välilehdet näkyvät täällä, myös ne, joilla on myös paikka välilehtipalkissa.
 - **Viimeisin saarna** -- seurakuntasi uusin saarna, ja linkki **Kaikki saarnat**
-- **Päivän jae** -- tämän päivän jae. Napauta sitä, niin avautuu koko [Päivän jae](../content/verse-of-the-day.md) -sivu.
-- **Palvelet** -- seuraavat tulevat palvelutehtäväsi ja linkki **Kaikki suunnitelmat**. Jos jokin tehtävä odottaa vastaustasi, ne näytetään ensin merkin **Vastaus tarvitaan** kanssa sekä painikkeilla **Hyväksy** ja **Hylkää**, jolloin voit vastata suoraan Etusivulta (**Hylkää** pyytää ensin vahvistuksen). Muuten seuraavissa tehtävissäsi näkyy merkki **Hyväksytty** tai **Vahvistettu**. Napauta tehtävää, niin avautuu sen suunnitelma.
+- **Päivän jae** -- tämän päivän jae. Napauta sitä avataksesi koko [Päivän jae](../content/verse-of-the-day.md) -sivun.
+- **Palvelet** -- seuraavat tulevat palvelutehtäväsi, ja linkki **Kaikki suunnitelmat**. Jos jokin tehtävä vaatii vielä vastauksesi, ne näytetään ensin merkinnällä **Vastaus tarvitaan** sekä painikkeilla **Hyväksy** ja **Hylkää**, jolloin voit vastata suoraan Etusivulta (**Hylkää** pyytää ensin vahvistuksen). Muuten seuraavat tehtäväsi näyttävät merkinnän **Hyväksytty** tai **Vahvistettu**. Napauta tehtävää avataksesi sen suunnitelman.
 - **Ryhmäsi** -- enintään kolme ryhmääsi kokoontumisaikoineen ja -paikkoineen sekä linkki **Kaikki ryhmät**
-- **Tulevat tapahtumat** -- kun olet kirjautunut sisään, näet seuraavat kolme tulevaa tapahtumaa ryhmistä, joihin kuulut. Jokaisessa on päivämäärä ja kellonaika (sekä pikkukuva, jos tapahtumassa on kuva). Napauta tapahtumaa, niin avautuu sen ryhmän tapahtumat. Napauta **Kaikki tulevat tapahtumat**, niin avautuu koko tulevien tapahtumien luettelo [Minä-sivullasi](./me-page.md#upcoming). Se sisältää myös palvelutehtäväsi ja ilmoittautumisesi.
-- **Osallistumiseni** ja **Lomakkeeni** -- jos seurakuntasi on ottanut ne käyttöön, näet kuinka monta kertaa olet osallistunut viimeisten 90 päivän aikana, kaksi viimeisintä käyntiäsi sekä kaksi viimeisintä lomakkeen lähetystäsi. Niissä on linkit koko luetteloihin. Nämä näkyvät aina myös [Minä-sivullasi](./me-page.md) riippumatta asetuksesta. Katso [Kotinäytön osiot](../../b1-admin/settings/mobile-app.md#home-screen-sections).
-- **Lahjoitukset** -- kuinka paljon olet lahjoittanut tänä vuonna (”Lahjoitettu” kuluvan vuoden osalta), **Lahjoita**-painike (näkyy vain, jos seurakuntasi tarjoaa verkkolahjoituksia) ja **Historia**-linkki [lahjoitushistoriaasi](../giving/donation-history.md) varten. Osio on piilotettu, jos seurakuntasi on rajoittanut jäsenten lahjoitushistorian aiempaan vuoteen tai piilottanut sen. Tällöin seurakuntasi lahjoitustyökalu näkyy painikkeena kohdassa **Lisää kohteesta**.
-- **Lisää kohteesta** *seurakuntasi* -- painikkeet muille työkaluille, jotka seurakuntasi on ottanut käyttöön eivätkä ole jo välilehtipalkissa tai yllä näkyvinä. Eniten käyttämäsi työkalut siirtyvät ensimmäisiksi.
+- **Tulevat tapahtumat** -- kun olet kirjautunut sisään, seuraavat kolme tulevaa ryhmätapahtumaasi ja tapahtumailmoittautumistasi yhdessä päivämääräjärjestyksessä. Jokaisessa on päivämäärä ja kellonaika (ja esikatselukuva, jos tapahtumalla on kuva). Jokaisen rivin merkintä on **Tapahtuma** (ryhmästä, johon kuulut) tai **Ilmoittautuminen** (tapahtuma, johon olet [ilmoittautunut](../events/registering.md)). Tapahtuma, johon olet ilmoittautunut, näkyy vain kerran, ilmoittautumisena. Napauta tapahtumaa avataksesi sen ryhmän tapahtumat, tai ilmoittautumista avataksesi [ilmoittautumisesi](../events/my-registrations.md). Napauta **Kaikki tulevat tapahtumat** avataksesi koko tulevien tapahtumien luettelon [Minä-sivullasi](./me-page.md#upcoming). Se sisältää myös palvelutehtäväsi ja ilmoittautumisesi.
+- **Oma osallistuminen** ja **Omat lomakkeet** -- jos seurakuntasi on ottanut ne käyttöön, näet, kuinka monta kertaa olet osallistunut viimeisen 90 päivän aikana, sekä kaksi viimeisintä käyntiäsi, ja kaksi viimeisintä lomakelähetystäsi linkkeineen täysiin luetteloihin. Nämä näkyvät aina [Minä-sivullasi](./me-page.md) riippumatta asetuksesta -- katso [Kotinäytön osiot](../../b1-admin/settings/mobile-app.md#home-screen-sections).
+- **Lahjoitukset** -- kuinka paljon olet lahjoittanut tänä vuonna ("Lahjoitettu" kuluvalta vuodelta), **Lahjoita**-painike (näkyy vain, jos seurakuntasi tarjoaa verkkolahjoituksia) ja linkki **Historia** [lahjoitushistoriaasi](../giving/donation-history.md). Osio on piilotettu, jos seurakuntasi on rajoittanut jäsenten lahjoitushistorian aiempaan vuoteen tai piilottanut sen. Tällöin seurakuntasi lahjoitustyökalu näkyy painikkeena kohdassa **Lisää seurakunnalta**.
+- **Lisää seurakunnalta** *seurakuntasi* -- painikkeet muille työkaluille, jotka seurakuntasi on ottanut käyttöön eivätkä ole jo välilehtipalkissa tai yllä näkyvinä. Useimmin käyttämäsi siirtyvät ensimmäisiksi.
 
-Palvelu-, ryhmä-, osallistumis-, lomake- ja lahjoitusosiot näkyvät vain, kun olet kirjautunut sisään, seurakuntasi on ottanut kyseisen työkalun käyttöön ja sinulla on näytettävää. Esimerkiksi tulevan palvelutehtävän tai vähintään yhden ryhmän tulisi olla olemassa. Tietokoneella Etusivu on jaettu kahteen sarakkeeseen.
+Palvelu-, ryhmä-, osallistumis-, lomake- ja lahjoitusosiot näkyvät vain, kun olet kirjautunut sisään, seurakuntasi on ottanut kyseisen työkalun käyttöön ja sinulla on jotain näytettävää -- esimerkiksi tuleva palvelutehtävä tai vähintään yksi ryhmä. Tietokoneella Etusivu on jaettu kahteen sarakkeeseen.
 
-Jos et ole kirjautunut sisään, Etusivulla näkyy otsikon **Tervetuloa** sijaan tervehdyksen tilalla lyhyt kehotus ("Kirjaudu sisään nähdäksesi ryhmäsi, lahjoituksesi ja muuta.") sekä **Kirjaudu sisään** -painike. Kehotus näkyy myös silloin, kun seurakuntasi ei ole vielä määrittänyt Etusivulle muuta sisältöä. Seurakuntasi voi muotoilla tekstin uudelleen tai piilottaa sen. Katso [Mobiilisovelluksen asetukset](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Kun kehotus on piilotettu, voit silti kirjautua sisään **Lisää**-sivulta tai **Minä**-sivulta.
+Jos et ole kirjautunut sisään, Etusivulla näkyy tervehdyksen sijaan **Tervetuloa**-otsikko, lyhyt kehote ("Kirjaudu sisään nähdäksesi ryhmäsi, lahjoituksesi ja muuta.") sekä **Kirjaudu sisään** -painike. Kehote näkyy myös silloin, kun seurakuntasi ei ole vielä määrittänyt Etusivulle muuta sisältöä. Seurakuntasi voi muotoilla tämän kehotteen uudelleen tai piilottaa sen -- katso [Mobiilisovelluksen asetukset](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Kun kehote on piilotettu, voit silti kirjautua sisään **Lisää**-sivulta tai **Minä**-sivulta.
 
 ## Alareunan välilehtipalkki
 
-Puhelimessa välilehtipalkki on kiinnitetty ruudun alareunaan:
+Puhelimella välilehtipalkki on kiinnitetty näytön alareunaan:
 
-- **Etusivu** -- aina ensimmäisenä välilehtenä
+- **Etusivu** -- aina ensimmäinen välilehti
 - Enintään kolme seurakuntasi määrittämää välilehteä
 - **Lisää** -- avaa Lisää-sivun
 
-Sisäänrakennetut näytöt (kuten Ryhmät, Lahjoitukset tai Suunnitelmat) saavat välilehtipaikat ensin. Vapaana olevat paikat menevät seurakuntasi omille sivuille. Ulkoisiin verkkosivuihin johtavat linkit ja Päivän jae eivät koskaan saa omaa välilehteä. Jos seurakuntasi on määrittänyt enemmän välilehtiä kuin mahtuu, loput eivät katoa: ne näkyvät **Lisää**-sivulla ja Etusivun osiossa **Lisää kohteesta**. Seurakunnan ylläpitäjät asettavat välilehtien järjestyksen B1 Adminissa kohdassa **Mobiili → Navigaatio**.
+Sisäänrakennetut näytöt (kuten Ryhmät, Lahjoitukset tai Suunnitelmat) saavat välilehtipaikat ensin. Vapaana jäävät paikat menevät seurakuntasi omille sivuille. Pelkät linkit ulkoisille verkkosivuille ja Päivän jae eivät koskaan saa välilehteä. Jos seurakuntasi on määrittänyt enemmän välilehtiä kuin mahtuu, loput eivät katoa: ne näkyvät **Lisää**-sivulla ja Etusivun osiossa **Lisää seurakunnalta**. Seurakunnan ylläpitäjät asettavat välilehtien järjestyksen B1 Adminissa kohdassa **Mobiili → Navigointi**.
+
+### Kansiovälilehdet {#folder-tabs}
+
+Seurakuntasi voi ryhmitellä useita välilehtiä **kansioon**. Kansio näkyy kuten mikä tahansa muu välilehti -- välilehtipalkissa, Lisää-sivulla tai kuvalaattana Etusivulla. Kun napautat sitä, avautuu näyttö, jonka otsikkona on kansion nimi ja jolla luetellaan kansion sisältämät välilehdet. Jos kaikilla kansion välilehdillä on kuva, ne näytetään kuvalaatoina; muuten ne näytetään listana. Kansion ulkoiset verkkosivulinkit avautuvat uuteen selainvälilehteen. Kansion sisällä olevat välilehdet näkyvät vain kansion omalla näytöllä, eivät välilehtipalkissa tai Lisää-sivulla. Kansio, jossa ei ole mitään näkyvää sinulle, on piilotettu.
 
 ## Tietokoneella
 
-Laajemmalla näytöllä, kuten tietokoneella tai suurella tabletilla, alareunan välilehtipalkin tilalla on ruudun yläreunassa seurakuntasi väreissä oleva otsikkopalkki. Siinä näkyvät seurakuntasi logo tai nimi, jos logoa ei ole asetettu (napsauttamalla pääset takaisin Etusivulle), **Etusivu**, enintään viisi seurakuntasi määrittämää välilehteä ja **Lisää**. Oikealla näkyvät kellokuvake ja profiilikuvasi. Kun avaat yksityiskohtanäytön, sivun sisällön yläpuolelle ilmestyy **Takaisin**-linkki.
+Laajemmalla näytöllä, kuten tietokoneella tai suurella tabletilla, alareunan välilehtipalkki korvataan näytön yläreunan palkilla seurakuntasi väreissä. Siinä näkyy seurakuntasi logo tai nimi, jos logoa ei ole asetettu (napsauttamalla pääset takaisin Etusivulle), **Etusivu**, enintään viisi seurakuntasi määrittämää välilehteä sekä **Lisää**. Oikealla ovat kello ja profiilikuvasi. Kun avaat yksityiskohtaisen näytön, sivun sisällön yläpuolelle ilmestyy **Takaisin**-linkki.
 
 ## Lisää-sivu
 
-Kun napautat **Lisää**, avautuu Lisää-sivu osoitteeseen `/mobile/more`. Sivulla on:
+Napauttamalla **Lisää** avaat Lisää-sivun osoitteessa `/mobile/more`. Sivulla on:
 
 - Nimesi ja kuvasi sekä linkki **Muokkaa profiilia** -- katso [Profiilin muokkaaminen](./editing-your-profile.md)
-- Kaikki seurakuntasi määrittämät välilehdet järjestyksessä seurakuntasi nimen alla. Ulkoisiin verkkosivuihin johtavat linkit avautuvat uudessa selainvälilehdessä.
+- Kaikki seurakuntasi määrittämät välilehdet järjestyksessä seurakuntasi nimen alla. Ulkoiset verkkosivulinkit avautuvat uuteen selainvälilehteen.
 - **Tili**-osio, jossa on:
   - **Minä** -- henkilökohtainen sivusi (vain kirjautuneille)
-  - **Ulkoasu** -- vaihda tilojen **Vaalea tila** ja **Tumma tila** välillä
-  - **Ylläpitoportaali** -- näkyy vain, jos sinulla on seurakunnassasi ylläpitäjän oikeudet. Se avaa B1 Adminin uuteen välilehteen.
-  - **Asenna sovellus** -- avaa [asennusohjeet](./installing-pwa.md) osoitteessa `/mobile/install`. Painike piilotetaan, kun sovellus on asennettu.
-- **Kirjaudu ulos**, tai **Kirjaudu sisään** -painike, jos et ole kirjautunut sisään
+  - **Ulkoasu** -- vaihda **Vaalea tila** ja **Tumma tila** välillä
+  - **Hallintaportaali** -- näkyy vain, jos sinulla on seurakunnassasi ylläpitäjän oikeudet. Se avaa B1 Adminin uuteen välilehteen.
+  - **Asenna sovellus** -- avaa [asennusohjeet](./installing-pwa.md) osoitteessa `/mobile/install` (piilotettu, kun sovellus on asennettu)
+- **Kirjaudu ulos** tai **Kirjaudu sisään** -painike, jos et ole kirjautunut sisään
 - Seurakuntasi nimi ja linkki tietosuojakäytäntöön
 
 ## Sovelluspalkki
 
-Puhelimessa jokaisen näytön yläreunassa oleva palkki näyttää seuraavat:
+Puhelimella jokaisen näytön yläreunassa oleva palkki näyttää:
 
-- Seurakuntasi logon (tai nimen, jos seurakunta ei ole ladannut logoa) Etusivulla ja muilla pääsivuilla tai takaisin-nuolen, kun olet siirtynyt yksityiskohtanäytölle. Näytön otsikko näkyy itse sivun yläosassa.
-- **Kellokuvakkeen** ilmoituksia ja viestejä varten. Lukemattomat kohteet näkyvät merkkinä. Katso [Ilmoitukset ja viestit](#notifications-and-messages) alempana.
+- Seurakuntasi logon (tai nimen, jos seurakunta ei ole ladannut logoa) Etusivulla ja muilla pääsivuilla, tai takaisin-nuolen, kun olet siirtynyt yksityiskohtaiselle näytölle. Näytön otsikko näkyy itse sivun yläosassa.
+- **kellon**-kuvakkeen ilmoituksia ja viestejä varten, ja lukemattomien kohteiden merkin -- katso [Ilmoitukset ja viestit](#notifications-and-messages) alla
 - **Profiilikuvasi**, joka avaa profiilisi osoitteessa `/mobile/profileEdit` -- katso [Profiilin muokkaaminen](./editing-your-profile.md)
 
-Kellokuvake ja profiilikuva näkyvät vain, kun olet kirjautunut sisään.
+Kello ja profiilikuva näkyvät vain, kun olet kirjautunut sisään.
 
 ## Ilmoitukset ja viestit
 
-Kun napautat kellokuvaketta, avautuu paneeli, jossa on kaksi osiota:
+Kun napautat kelloa, avautuu paneeli, jossa on kaksi osiota:
 
-- **Viestit** -- uusimmat yksityiset keskustelusi, ja linkki **Uusi viesti** uuden keskustelun aloittamiseksi
-- **Ilmoitukset** -- uusimmat ilmoituksesi, ja lukemattomissa on merkki **Uusi**. Napauta ilmoitusta, niin pääset ryhmään, suunnitelmaan tai keskusteluun, josta se tuli.
+- **Viestit** -- viimeisimmät yksityiset keskustelusi sekä linkki **Uusi viesti**, jolla voit aloittaa uuden
+- **Ilmoitukset** -- viimeisimmät ilmoituksesi, ja lukemattomissa on merkki **Uusi**. Napauta ilmoitusta siirtyäksesi ryhmään, suunnitelmaan tai keskusteluun, josta se tuli.
 
-Kummassakin osiossa näkyy, montako lukematonta kohdetta siinä on. Napauta alareunan **Näytä kaikki** -linkkiä, niin avautuu koko postilaatikkosi osoitteessa `/mobile/notifications`.
+Kussakin osiossa näkyy, montako lukematonta kohdetta siinä on. Napauta alareunassa olevaa **Näytä kaikki** avataksesi koko postilaatikkosi osoitteessa `/mobile/notifications`.
 
-## Osioja sisältävät sivut
+## Sivut, joissa on osioita
 
-Yksityiskohtasivut, eli ryhmä, suunnitelma, Minä-sivu sekä Suunnitelmat- ja Lahjoitukset-näytöt, on jaettu osioiksi välilehtien sijaan. Jokainen osio näyttää lyhyen esikatselun. Osion otsikon linkki (kuten **Kaikki jäsenet**, **Kaikki tapahtumat** tai **Koko jumalanpalveluksen järjestys**) avaa koko luettelon. Näkymän yläreunassa oleva **Takaisin kohtaan** -linkki vie sinut takaisin sivulle, josta tulit.
+Yksityiskohtaiset sivut -- ryhmä, suunnitelma, Minä-sivusi sekä Suunnitelmat- ja Lahjoitukset-näytöt -- on jäsennelty yhdeksi sivuksi osioita, ei välilehtiä. Jokainen osio näyttää lyhyen esikatselun, ja osion otsikossa oleva linkki (kuten **Kaikki jäsenet**, **Kaikki tapahtumat** tai **Koko palvelujärjestys**) avaa täyden luettelon. Tämän näkymän yläreunassa oleva **Takaisin**-linkki vie sinut sivulle, josta tulit.
 
 ## Minä-sivu
 
-**Minä** (`/mobile/me`) on henkilökohtainen keskuksesi. Siinä näkyvät nimesi ja kuvasi painikkeineen **Muokkaa profiilia** ja **Asetukset** ([ilmoitusasetukset](./notification-preferences.md)). Sen jälkeen tulevat sinua odottavat asiat: palvelutehtävät, tapahtumailmoittautumiset ja ryhmätapahtumat. Seuraavaksi ovat taloutesi, ryhmäsi, tämän vuoden [lahjoituksesi](../giving/index.md), lähettämäsi lomakkeet, osallistumishistoriasi, [ilmoittautumisesi](../events/my-registrations.md) sekä viimeisimmät ilmoituksesi ja viestisi. Katso lisätietoja kohdasta [Minä-sivu](./me-page.md).
+**Minä** (`/mobile/me`) on henkilökohtainen keskuksesi. Se näyttää nimesi ja kuvasi sekä painikkeet **Muokkaa profiilia** ja **Asetukset** ([ilmoitusasetukset](./notification-preferences.md)). Sen jälkeen näkyy, mitä sinulle on tulossa: palvelutehtävät, tapahtumailmoittautumiset ja ryhmätapahtumat. Lisäksi näkyvät talouskuntasi, ryhmäsi, tämän vuoden [lahjoituksesi](../giving/index.md), lähettämäsi lomakkeet, osallistumishistoriasi, [ilmoittautumisesi](../events/my-registrations.md) sekä viimeisimmät ilmoituksesi ja viestisi. Lisätietoja on kohdassa [Minä-sivu](./me-page.md).
 
 Jos et ole kirjautunut sisään, Minä-sivulla näkyy sen sijaan **Kirjaudu sisään** -painike.
 
 ## Asentaminen kotinäytölle
 
-Jäsenportaali on progressiivinen verkkosovellus (PWA). Avaa osoite `/mobile/install` tai valitse Lisää-sivulta **Asenna sovellus** saadaksesi laitteellesi sopivat vaiheittaiset ohjeet. Kun sovellus on asennettu, se avautuu koko näytön tilassa kotinäytöltäsi ilman selaimen työkalupalkkeja. Katso [Sovelluksen asentaminen (PWA)](./installing-pwa.md).
+Jäsenportaali on progressiivinen verkkosovellus (PWA). Avaa `/mobile/install` (tai valitse Lisää-sivulta **Asenna sovellus**) saadaksesi laitteellesi vaiheittaiset ohjeet. Asennuksen jälkeen sovellus avautuu kotinäytöltäsi koko näytön tilassa ilman selaimen työkaluja. Katso [Sovelluksen asentaminen (PWA)](./installing-pwa.md).
 
 ## Seurakuntasi julkinen verkkosivusto
 
-Jäsenportaalin ulkopuolella seurakuntasi julkisella verkkosivustolla on oma ylänavigaationsa, jossa on ylläpitäjiesi määrittämiä linkkejä. Mukana ovat sivut kuten [saarnat](../content/sermons.md), [Raamattu](../content/bible.md), [suoratoisto](../content/live-streaming.md) ja julkinen ryhmäluettelo. Puhelimessa nämä linkit ovat otsikon oikeassa yläkulmassa olevan hampurilaiskuvakkeen takana.
+Jäsenportaalin ulkopuolella seurakuntasi julkisella verkkosivustolla on oma yläreunan navigointi. Siinä on ylläpitäjiesi määrittämiä linkkejä sivuille, kuten [saarnat](../content/sermons.md), [Raamattu](../content/bible.md), [suoratoisto](../content/live-streaming.md) ja julkinen ryhmäluettelo. Puhelimella nämä linkit ovat headerin oikeassa yläkulmassa olevan hampurilaisvalikon takana.
 
 :::info
-Näkyvät välilehdet ja työkalut vaihtelevat seurakunnittain. Ylläpitäjät säätelevät B1 Adminin kautta, mitkä osiot jäsenet näkevät. Jos et näe tässä kuvattua toimintoa, seurakuntasi ei ehkä ole ottanut sitä käyttöön.
+Näkemäsi välilehdet ja työkalut vaihtelevat seurakunnittain. Ylläpitäjät päättävät B1 Adminissa, mitkä osiot jäsenet näkevät. Jos et näe tässä kuvattua ominaisuutta, seurakuntasi ei ehkä ole ottanut sitä käyttöön.
 :::

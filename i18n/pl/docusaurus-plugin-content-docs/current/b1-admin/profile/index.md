@@ -1,43 +1,43 @@
 ---
 title: "Ustawienia profilu i urządzenia w B1 Admin"
 sidebar_label: "Profil"
-description: "Zaktualizuj imię, e-mail, hasło, logowanie dwuskładnikowe, motyw i połączone urządzenia w profilu B1 Admin oraz zatwierdzaj zmiany profili członków."
+description: "Zaktualizuj swoje imię, adres e-mail, hasło, logowanie dwuskładnikowe, motyw i połączone urządzenia w swoim profilu B1 Admin oraz zatwierdzaj zmiany profilu członków."
 ---
 
 # Profil
 
 <div class="article-intro">
 
-Im Bereich Profil verwalten Sie Ihre persönlichen Kontoeinstellungen in ChurchApps. Ihr Profil wird über alle ChurchApps-Tools hinweg geteilt. Änderungen, die Sie hier vornehmen, gelten daher überall – von B1 Admin bis zur B1 Mobile App.
+Sekcja Profil pozwala zarządzać ustawieniami osobistego konta w ChurchApps. Twój profil jest wspólny dla wszystkich narzędzi ChurchApps, więc zmiany wprowadzone tutaj obowiązują wszędzie — od B1 Admin po aplikację B1 App.
 
 </div>
 
-## Was Sie tun können
+## Co możesz zrobić
 
-Im Bereich Profil können Sie:
+W sekcji Profil możesz:
 
-- **Name und E-Mail-Adresse aktualisieren** -- Halten Sie Ihre Kontaktdaten aktuell.
-- **Passwort ändern** -- Legen Sie ein neues Passwort für Ihr Konto fest.
-- **Zwei-Faktor-Anmeldung aktivieren** -- Verlangen Sie bei der Anmeldung einen Code aus einer Authenticator-App. Siehe [Zwei-Faktor-Anmeldung](./managing-profile.md#two-factor-sign-in).
-- **Design wechseln** -- Wechseln Sie über das Benutzermenü (klicken Sie oben rechts auf Ihr Profilbild) zwischen hellem und dunklem Modus.
-- **Verbundene Geräte verwalten** -- Sehen Sie ein, welche ChurchAppsPlayer-Geräte mit Ihrem Konto verknüpft sind, und steuern Sie diese.
-- **Verknüpfte Konten anzeigen** -- Sehen und verwalten Sie externe Dienste, die mit Ihrem ChurchApps-Konto verbunden sind.
-- **Profiländerungsanfragen genehmigen** -- Prüfen und übernehmen Sie Aktualisierungen, die Mitglieder eingereicht haben.
+- **Zaktualizować imię i adres e-mail** -- Utrzymuj swoje dane kontaktowe w aktualnym stanie.
+- **Zmienić hasło** -- Ustaw nowe hasło do swojego konta.
+- **Włączyć logowanie dwuskładnikowe** -- Wymagaj kodu z aplikacji uwierzytelniającej przy logowaniu. Zobacz [Logowanie dwuskładnikowe](./managing-profile.md#two-factor-sign-in).
+- **Przełączać motywy** -- Przełączaj między jasnym a ciemnym trybem z menu użytkownika (kliknij zdjęcie profilowe w prawym górnym rogu).
+- **Zarządzać połączonymi urządzeniami** -- Przeglądaj i kontroluj, które urządzenia ChurchAppsPlayer są powiązane z Twoim kontem.
+- **Przeglądać połączone konta** -- Zobacz i zarządzaj zewnętrznymi usługami połączonymi z Twoim kontem ChurchApps.
+- **Zatwierdzać prośby o zmianę profilu** -- Przeglądaj i stosuj aktualizacje przesłane przez członków.
 
-## Unterbereiche des Profils
+## Podsekcje profilu
 
-Der Bereich Profil umfasst die folgenden Seiten:
+Obszar Profil zawiera następujące strony:
 
-1. **[Ihr Profil verwalten](./managing-profile.md)** -- Bearbeiten Sie Ihre persönlichen Daten, ändern Sie Ihr Passwort, verwalten Sie verknüpfte Konten, aktivieren Sie die Zwei-Faktor-Anmeldung, passen Sie Designeinstellungen an und löschen Sie gegebenenfalls Ihr Konto.
-2. **[Profiländerungen genehmigen](./approving-profile-changes.md)** -- Prüfen und genehmigen Sie Profiländerungsanfragen, die Mitglieder über B1 Mobile eingereicht haben.
-3. **[Geräte verwalten](./devices.md)** -- Sehen Sie ChurchAppsPlayer-Geräte ein, die mit Ihrem Konto gekoppelt sind, fügen Sie Geräte hinzu und verwalten Sie sie.
+1. **[Zarządzanie profilem](./managing-profile.md)** -- Edytuj swoje dane osobowe, zmieniaj hasło, zarządzaj połączonymi kontami, włączaj logowanie dwuskładnikowe, dostosowuj preferencje motywu i obsługuj usuwanie konta.
+2. **[Zatwierdzanie zmian profilu](./approving-profile-changes.md)** -- Przeglądaj i zatwierdzaj prośby o aktualizację profilu przesłane przez członków za pośrednictwem aplikacji B1 App.
+3. **[Zarządzanie urządzeniami](./devices.md)** -- Przeglądaj, dodawaj i zarządzaj urządzeniami ChurchAppsPlayer sparowanymi z Twoim kontem.
 
 :::tip
-Halten Sie Ihre E-Mail-Adresse aktuell. Sie wird für die Kontowiederherstellung und für wichtige Benachrichtigungen Ihrer Gemeinde verwendet.
+Zadbaj o aktualność swojego adresu e-mail. Jest on używany do odzyskiwania konta oraz do ważnych powiadomień od Twojego kościoła.
 :::
 
-## Nächste Schritte
+## Kolejne kroki
 
-- [Ihr Profil verwalten](./managing-profile.md) -- Bearbeiten Sie Ihre persönlichen Einstellungen
-- [Profiländerungen genehmigen](./approving-profile-changes.md) -- Prüfen Sie Profiländerungsanfragen von Mitgliedern
-- [Geräte verwalten](./devices.md) -- Verwalten Sie verbundene Geräte
+- [Zarządzanie profilem](./managing-profile.md) -- Edytuj swoje ustawienia osobiste
+- [Zatwierdzanie zmian profilu](./approving-profile-changes.md) -- Przeglądaj prośby o zmiany profilu członków
+- [Zarządzanie urządzeniami](./devices.md) -- Zarządzaj połączonymi urządzeniami

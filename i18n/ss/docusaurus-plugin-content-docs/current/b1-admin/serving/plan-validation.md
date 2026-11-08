@@ -1,64 +1,72 @@
 ---
-title: "Kuhlolwa Kweluhlelo & Tatiso"
-description: "Hlola tihlelo tetinkonzo ku-B1 Admin kutfola tindzawo letingagcwaliswanga, tingquphaniso tesikhatsi nebasebenti labavinjwe, bese ulandza luhlu lonkhe ngekucindzetela kanye."
+title: "Kuhlola Tinhlelo & Tesaziso"
+description: "Hlola tinhlelo tetinkonzo ku-B1 Admin kutsi utfole tikhundla letingakagcwaliswa, tingqubuko temasikhathi, kanye nabasebenti labavimbele lusuku, bese utsatsa tesaziso kuleqembu lakho lonkhe ngenkinobho inye."
 ---
 
-# Kuhlolwa Kweluhlelo & Tatiso Tebavolontiya
+# Kuhlola Tinhlelo & Tesaziso Kubasebenti Bevolontiya
 
 <div class="article-intro">
 
-B1 Admin ihlola tinhlelo takho ngekutigcina kutfola tinkinga ngaphambi kweliSontfo — tikhundla letingakagcwaliswa, kungahambelani kwetikhatsi, kanye nebavolontiya labavimbe lolo lilanga. Nakukonkhe kubukeka kulungile, ungatisa licembu lakho lonkhe ngekucindzetela inkhinobho yinye.
+B1 Admin ihlola ngekhenkethe tinhlelo takho ngaphambi kweSonto: tikhundla letingakagcwaliswa, tingqubuko temasikhathi, kanye nabasebenti labavimbele lusuku. Uma konkhe kubukeka kulungile, ungatsatsa tesaziso kuleqembu lakho lonkhe ngekuchofoza kanye.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Yakha [luhlelo lwenkonzo](./plans.md) bese wabela bavolontiya etikhundleni
-- Engeta [tikhatsi tenkonzo](./plans.md) eluhlelweni kute kuhlolwa kwekungahambelani kukhone kuhlola kufingana
-- Cinisekisa kutsi bavolontiya banayo i-app ye-B1 Mobile lefakiwe kute batfole tatiso letitfunyelwa efownini
+- Yenta [inhlelo yetinkonzo](./plans.md) bese ubela basebenti emakhundleni
+- Engeta [tikhatsi tetinkonzo](./plans.md) ekuhlelweni kutsi kuhlolwe kutsi kukhona yini kuhlangana kwetikhatsi
+- Qinisekisa kutsi basebenti bafake [B1 App](../../b1-church/getting-started/installing-pwa.md) kutsi batfole tesaziso letisheshako
 
 </div>
 
-## Iphaneli Yekuhlolwa
+## Iphaneli Yekuhlola
 
-Lonkhe luhlelo lunayo iphaneli ye-**Kuhlolwa** lesebenta ngekutigcina njengoba ulwakha. Ihlola tintfo letintsatfu:
+Yonkhe inhlelo inephaneli ye-**Kuhlola** leshayako ngekuzenekelako njengoba uyakha yona. Ihlola tintfo letintsatfu:
 
 ### Tikhundla Letingakagcwaliswa
-Nangabe sikhundla sidzinga bantfu labanyenti kunalabo lebasesabelwe kwamanje, iphaneli yekuhlolwa ikhomba kahle kutsi yini lokusele idzingeka — sibonelo, *"Sound Tech: 1 more person needed."* Ungabona ngekushesha kutsi luhlelo lwakho selugcwele yini bantfu ngaphambi kwekufika kweliviki.
+Uma sikhundla sidinga bantfu labatsetfwe ngaphezu kwaleso sekutsi sebasetfwe, iphaneli yekuhlola ibhala kahle loku kudzingeka, njengasesibonelweni *"Sound Tech: kudzingeka umuntfu longu-1 lowengetelako."* Ungabona ngekushesha kutsi inhlelo yakho isigcwele yini ngaphambi kwaleviki.
 
-### Kungahambelani Kwetikhatsi
-Nangabe umvolontiya asabelwe tikhundla letimbili letifingana ngesikhatsi kuluhlelo lunye, iphaneli yekuhlolwa iyakhomba lokungahambelani — sibonelo, *"Jane Smith: time conflict between Worship Leader and Children's Check-in during Sunday Service."* Loku kubamba kusabelwa kabili ngaphambi kwekutsi kube yinkinga ngeliSontfo ekuseni.
+### Tingqubuko Temasikhathi
+Uma umsebenti asetfelwe emakhundleni amabili lahlanganako ngesikhatsi kulenhlelo lefanako, iphaneli yekuhlola iyayibhala lengquubuko, njengasesibonelweni *"Jane Smith: lengquubuko yesikhatsi phakathi kwe-Worship Leader kanye ne-Children's Check-in ngeSunday Service."* Loku kukusita ubone kuphindzaphindzeka kwemabhuku ngaphambi kutsi kube yinkinga ngeSonto ekuseni.
 
-### Emalanga Lavinjelwe
-Bavolontiya bangasetha emalanga labangeke batfolakale ngawo ku-B1 Mobile. Nangabe umuntfu asabelwe eluhlelweni lolungena kulelinye lemalanga akhe lavinjelwe, iphaneli yekuhlolwa ikhomba lokungahambelani ngekutigcina kute ukhone kutfola umuntfu lotawuhlomula.
+### Tinsuku Letingakatfolakali
+Basebenti bangasetsa emalanga lapho bengakatfolakali ngawo ku-B1 App. Uma umuntfu asetfelwe kuhlelo lwetinkonzo lwelilanga lelivimbelekile kuye, iphaneli yekuhlola iyabonakala ngekutsi ibone kuphikisana loku, kutsi ukwazi kufuna lotawufaka endzaweni yakhe.
 
-### Kungahambelani Emkhatsini Wetinhlelo
-Kuhlolwa kuphindze kuhlole kuwo onkhe tinhlelo takho kanyekanye. Nangabe lomunye umvolontiya asabelwe kuletinhlelo letimbili letihlukene letifingana ngesikhatsi — sibonelo, inkonzo ya-9am kanye nenkonzo ye-10am lezimbili tigijima kuze kube ngu-10:30am — B1 Admin itawukhomba loyo muntfu njengalosabelwe kabili emkhatsini wetinhlelo.
+### Tingqubuko Phakathi Kwetinhlelo
+Kuhlola futsi kuhlola tonkhe tinhlelo takho ngesikhatsi sinye. Uma umuntfu lofanako asetfelwe kutinhlelo letimbili letehlukene letihlanganako ngesikhatsi, njengesevisi yeHora lesi-9 nesevisi yeHora lesi-10 letiphela ngehora lesi-10:30, B1 Admin itawubhala lomuntfu njengolokhetfwe kabili.
 
 :::tip
-Awudzingi kwenta lutfo kute kuhlolwa kusebente — kutentekela ngekutigcina njalo nawengeta nobe ushintja sabelo. Cinisa emehlo kuphaneli njengoba wakha luhlelo.
+Akudzingeki wente lutfo kuze kusebente kuhlola. Iyavuselelwa ngekuzenekelako njalo lapho wengeta noma wenta shintsho ekutfolakaleni. Gcina uliphaphela iphaneli njengoba wakha inhlelo.
 :::
 
-## Kwatisa Bavolontiya
+## Kutsatsa Basebenti Bevolontiya
 
-Nasekusetiwe luhlelo lwakho, ungatisa bonkhe bavolontiya labasabelwe kanyekanye ngekusuka kuphaneli yekuhlolwa.
+Inhlelo yakho ikulungele, ungatsatsa tesaziso kubo bonkhe basebenti labasetfwe ngekuchofoza kanye kusuka ephaneli yekuhlola.
 
-1. Vula luhlelo bese uya phansi kuphaneli ye-**Kuhlolwa**
-2. Nangabe kukhona bavolontiya labangakatiswa, utawubona sixhumanisi lesikhombisa bangaki labadzinga kutiswa (sib. *"Notify 8 volunteers"*)
-3. Cindzetela sixhumanisi kute utfumele tatiso letitfunyelwa efownini kubo bonkhe labangakatiswa
-4. Bavolontiya batotfola satiso efownini labo lesibatisa kutsi sebasabelwe futsi sibacela kutsi bacinisekise sabelo sabo
+1. Vula inhlelo bese uskrola uye ephaneli ye-**Kuhlola**
+2. Uma kunebasebenti labangakatsatseki tesaziso, uyawubona sixhumanisi lesitsi kutsi bangaki labadzingeka kutsi batsatsewe tesaziso (njengasesibonelweni *"Notify 8 volunteers"*)
+3. Chofoza sixhumanisi kutsi uyatsatsa tesaziso letisheshako kubo bonkhe labangakatsatseki
+4. Basebenti batfola sisaziso etilifoneni labo bese bayatsatseka kutsi basetfwe, futsi bacelwa kutsi baciniseke umsebenti wabo
 
 :::info
-Kuphela bavolontiya labangakatiswa ngulabo labatawufakwa. Nangabe wengeta lomunye umuntfu eluhlelweni ngemuva kwaloko, sixhumanisi sitawuphindza sivele kute ukhone kutisa loyo muntfu lomusha ngaphandle kwekutisa kabusha lonkhe licembu.
+Kuphela basebenti labangakatsatseki tesaziso bayakufakwa. Uma wengeta umuntfu enhlelweni kamuva, sixhumanisi sitawubuyela kutsi ukwazi kutsatsa tesaziso kulowo lengeziwe ngaphandle kwekuphindza utsatse labanye bonkhe.
 :::
+
+### Tinhlelo Letinenkambu Yekuciniseka
+
+Uma tilungiselelo tehlelo tichaza [inkambu yekuciniseka kwemsebenti](./workflows.md#serving-assignment-confirmations), iphaneli ibonisa *"Tikhumbo letisha tisebentisa inkambu yekuciniseka. Texwayiso te-app tisasebenta. Tilandzelo tiyayeka nasicelo ngasinye samukelwa noma senqatshwa."* Kulesimo:
+
+- Sixhumanisi sesaziso sibala kuphela basebenti labangakatsatseki tesaziso futsi labangakaphendzuli.
+- Ukuchofoza kutsi kuthumele sexwayiso lesijwayelekile se-app bese kuvula ikhadi linye ngalasicelo ebhodini lenkambu. Inkambu bese ithumela tilandzelo te-imeyili ne-SMS, futsi uma kudzingeka, inikeze lesicelo kumuntfu lotawubiza.
+- Inhlelo kufanele ishicilelwe (ingabi yimbhalo lenkhulu nje ngepensela) futsi inkambu kufanele isebente. Nangabe kungenjalo, iphaneli ibonisa *"Tikhumbo tingakahambi. Hlola kutsi inkambu lekhetfwe iyasebenta kutsi inhlelo ishicilelwe, bese uphindza uzame futsi."*
 
 :::warning
-Bavolontiya kufanele babe nendlela yekusebentisa B1.church efownini (i-PWA lefakwe ekhaya lwesikrini, nobe i-app yendzala ye-B1 Mobile lengasasetjentiswa kulabo labaseninayo) kanye netatiso letivuliwe kute batfole tatiso letitfunyelwa efownini. Bona [Kufaka njenge-App (PWA)](/docs/b1-church/getting-started/installing-pwa) kute utfole imiyalo yekusetha.
+Basebenti kufanele bafake B1 App esikrinini sabo sasekhaya futsi tetesaziso vulekile kutsi batfole tesaziso letisheshako. Bona [Kufakwa njengohlelo (PWA)](../../b1-church/getting-started/installing-pwa.md) kutsi utfole imiyalelo yekusetsa.
 :::
 
-## Timibhalo Lehlobene
+## Tihlobo Letihlobene
 
-- [Tinhlelo Tenkonzo](./plans.md)
-- [Kutitenzela](./workflows.md)
-- [Kufaka i-PWA ye-B1.church](/docs/b1-church/getting-started/installing-pwa)
+- [Tinhlelo Tetinkonzo](./plans.md)
+- [Tinkambu Temsebenti](./workflows.md)
+- [Kufaka i-B1.church PWA](/docs/b1-church/getting-started/installing-pwa)

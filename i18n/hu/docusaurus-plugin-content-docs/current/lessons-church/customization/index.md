@@ -1,41 +1,41 @@
 ---
-title: "Személyre szabás"
-description: "Szakaszok, szerepkörök vagy műveletek elrejtése és a tartalom átrendezése egy Lessons.church-leckében, egy vagy minden osztályteremre."
+title: "Testreszabás"
+description: "Ismerje meg, hogyan rejthet el szakaszokat, szerepköröket vagy műveleteket egy Lessons.church leckében, és hogyan rendezheti át a tartalmat, akár egy osztályteremre, akár a gyülekezete összes osztatermére."
 ---
 
-# Személyre szabás
+# Testreszabás
 
 <div class="article-intro">
 
-A Lessons.church azonnal használható leckekönyvtárat kínál, de minden gyülekezet más. A személyre szabási funkciókkal a leckeanyagot a saját osztálytermeidhez, tanítási stílusodhoz és korcsoportjaidhoz igazíthatod, hogy az önkénteseid csak a számukra releváns tartalmat lássák.
+A Lessons.church kész, azonnal használható leckéket kínál, de minden gyülekezet más. A testreszabási funkciókkal a leckék tartalmát a saját osztermeihez, tanítási stílusához és korcsoportjaihoz igazíthatja, így önkéntesei csak a számukra releváns részeket látják.
 
 </div>
 
-## Miért érdemes személyre szabni?
+## Miért érdemes testreszabni?
 
-A Lessons.church leckéi rugalmasra vannak tervezve. Egy-egy lecke tartalmazhat több korcsoportnak szóló részt, opcionális tevékenységeket vagy olyan szerepköröket, amelyek nem minden osztályteremben alkalmazhatók. Ahelyett, hogy az önkénteseidnek kellene fejben kihagyniuk a számukra nem releváns részeket, a leckét úgy szabhatod személyre, hogy csak a rájuk vonatkozó tartalmat lássák.
+A Lessons.church leckéi rugalmasságra lettek tervezve. Egy leckében előfordulhatnak több korcsoportnak szóló szakaszok, opcionális tevékenységek vagy olyan szerepkörök, amelyek nem minden osztályteremre vonatkoznak. Ahelyett, hogy önkénteseinek kellene gondolatban átugrani a nem releváns részeket, a leckét úgy testreszabhatja, hogy csak a számukra fontos tartalmat lássák.
 
-Például egy lecke tartalmazhat egy kézműves tevékenységet, amely óvodásoknak remek, de az ötödikes osztályban nem illik. A személyre szabással elrejtheted ezt a részt a nagyobbak elől, miközben a kisebbeknek megmarad.
+Például egy leckében szerepelhet egy kézműves foglalkozás, amely óvodásoknak remekül működik, de az ötödikes osztályban nem illik. A testreszabással elrejtheti ezt a szakaszt a nagyobbaknak, miközben a kisebbeknek megmarad.
 
-## Mit szabhatsz személyre?
+## Mit testreszabhat?
 
-- **Szakaszok eltávolítása** -- Egy lecke olyan szakaszainak elrejtése, amelyek egy adott osztályteremre vagy korcsoportra nem vonatkoznak.
-- **Szerepkörök vagy tevékenységek elrejtése** -- Egy szakaszon belüli egyes szerepkörök vagy tevékenységek eltávolítása, ha nincs rájuk szükség.
-- **Tartalom átrendezése** -- A szakaszok és tevékenységek sorrendjének átrendezése, hogy az az osztályterem számára kívánt menetet kövesse.
+- **Szakaszok eltávolítása** -- Távolítsa el a lecke azon szakaszait, amelyek egy adott osztályteremre vagy korcsoportra nem vonatkoznak.
+- **Szerepkörök vagy műveletek eltávolítása** -- Távolítsa el az egyes szerepköröket vagy műveleteket egy szakaszon belül, ha nincs rájuk szükség.
+- **Tartalom átrendezése** -- Rendezze át a szakaszokat és a műveleteket, hogy az osztálya számára az Ön által preferált sorrendet kapják.
 
-## Osztályteremre szóló vagy általános
+## Csak az adott osztályteremre vagy globálisan
 
-A személyre szabás mentésekor megadhatod, hogy mennyire széles körben érvényesüljön:
+Minden módosításnál Ön dönti el, mennyire széles körben érvényes:
 
-- **Egyetlen osztályterem** -- A személyre szabás csak az aktuális osztályteremre hat. A többi osztályterem az eredeti tartalmat látja.
-- **Minden osztályterem** -- A személyre szabás a gyülekezet összes osztálytermére érvényes.
+- **Ez az osztályterem** -- A módosítás csak a jelenlegi osztályteremre vonatkozik. A többi osztályterem az eredeti tartalmat látja.
+- **Minden osztályterem** -- A módosítás a gyülekezet összes osztermére érvényes.
 
-Ez a rugalmasság lehetővé teszi, hogy ugyanazon lecke különböző nézeteit állítsd be a különböző korcsoportok számára, vagy egyetlen módosítást alkalmazz mindenhol egyszerre.
+Ez a rugalmasság lehetővé teszi, hogy ugyanazon lecke különböző nézeteit állítsa be a különböző korcsoportok számára, vagy olyan módosítást hajtson végre, amely egyszerre mindenhol érvényesül.
 
 :::tip
-Ha most ismerkedsz a személyre szabással, kezdd egyetlen osztályteremmel, hogy lásd, hogyan működik, mielőtt minden osztályteremre alkalmaznád a módosításokat.
+Ha még nem ismeri a testreszabást, kezdje egyetlen osztályteremmel, hogy lássa, hogyan működik, mielőtt minden osztályteremre alkalmazná a módosításokat.
 :::
 
 ## Következő lépések
 
-- [Leckék személyre szabása](./customizing-lessons.md) -- Kövesd a lépésenkénti útmutatót, és szabd személyre az első leckédet
+- [Leckék testreszabása](./customizing-lessons.md) -- Kövesse a lépésenkénti útmutatót az első lecke testreszabásához

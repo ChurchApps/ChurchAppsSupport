@@ -1,13 +1,13 @@
 ---
 title: "Pamokų pritaikymas"
-description: "Šalinkite, slėpkite ar keiskite skyrių ir vaidmenų tvarką Lessons.church pamokoje ir pasirinkite, ar pakeitimai taikomi vienai klasei, ar visoms."
+description: "Pašalinkite arba pertvarkykite skyrius, vaidmenis ir veiksmus Lessons.church pamokoje ir pasirinkite, ar kiekvienas pakeitimas taikomas vienai klasei, ar visoms."
 ---
 
 # Pamokų pritaikymas
 
 <div class="article-intro">
 
-Šiame vadove parodysime, kaip pritaikyti pamoką savo klasei. Pritaikymas leidžia pašalinti, paslėpti ar pertvarkyti turinį, kad savanoriai matytų tik tai, ko jiems reikia: nei daugiau, nei mažiau.
+Šiame vadove paaiškinama, kaip pritaikyti pamoką savo klasei. Pritaikymas leidžia pašalinti arba pertvarkyti turinį, kad savanoriai matytų tik tai, ko jiems reikia -- nei daugiau, nei mažiau.
 
 </div>
 
@@ -24,53 +24,68 @@ description: "Šalinkite, slėpkite ar keiskite skyrių ir vaidmenų tvarką Les
 
 1. Prisijunkite ir eikite į savo **Portalą**.
 2. Pasirinkite **klasę**, kurioje yra pamoka, kurią norite pritaikyti.
-3. Spustelėkite **suplanuotą pamoką**, kad ją atidarytumėte.
-4. Spustelėkite **Pritaikyti**, kad įeitumėte į pritaikymo rodinį.
+3. Klasės tvarkaraštyje raskite pamoką ir spustelėkite **Pritaikyti** po jos pavadinimu.
 
-Pamatysite visą pamokos turinį, suskirstytą į skyrius, vaidmenis ir veiksmus.
+Puslapyje **Pamokos pritaikymas** išvardyti pamokos skyriai, o po kiekvienu skyriumi -- jo vaidmenys, o po vaidmenimis -- veiksmai. Kiekvienoje eilutėje dešinėje yra mygtukai:
+
+- **Rodyklė aukštyn** ir **Rodyklė žemyn** -- perkelia elementą vienu žingsniu aukštyn arba žemyn tarp jo kaimynų
+- **Šalinti** (šiukšlių dėžė) -- pašalina elementą
+
+:::info
+Mygtukas **Pritaikyti** rodomas tik Lessons.church pamokoms. Pamokos, suplanuotos iš išorinio teikėjo, vietoj jo rodo **Peržiūrėti pamoką** ir negali būti pritaikytos.
+:::
+
+## Kur taikomas pakeitimas
+
+Kiekvieną kartą spustelėjus rodyklę ar šiukšlių dėžę atsidaro meniu **Taikyti pasirinktą pritaikymą:**
+
+- **Šiai klasei** -- pakeitimas taikomas tik dabartinei klasei. Kitos klasės nepaveikiamos.
+- **Visoms klasėms** -- pakeitimas taikomas visoms jūsų bažnyčios klasėms.
+
+Pasirinkus vieną iš variantų, pakeitimas iš karto išsaugomas. Atskiro išsaugojimo žingsnio nėra.
 
 ## Skyrių šalinimas
 
-Jei skyrius netinka jūsų klasei, galite jį visiškai pašalinti. Tai naudinga, kai pamoka skirta kelioms amžiaus grupėms, o jums reikia tik vienos. Pavyzdžiui, jei pamokoje yra ir skyrius „Ikimokyklinė veikla“, ir skyrius „Pradinukų veikla“, galite pašalinti tą, kuris jūsų kambariui netinka.
+Jei skyrius jūsų klasei netinka, galite jį visiškai pašalinti. Tai naudinga, kai pamoka skirta kelioms amžiaus grupėms, o jums reikia tik vienos. Pavyzdžiui, jei pamokoje yra ir skyrius „Ikimokyklinės veikla“, ir skyrius „Pradinukų veikla“, galite pašalinti tą, kuris jūsų kambariui netinka.
 
 1. Raskite skyrių, kurį norite pašalinti.
-2. Spustelėkite, kad **pašalintumėte** arba **paslėptumėte** skyrių.
-3. Skyrius nebebus rodomas savanoriams, peržiūrintiems šią pamoką.
+2. Spustelėkite jo mygtuką **Šalinti** (šiukšlių dėžę).
+3. Pasirinkite **Šiai klasei** arba **Visoms klasėms**.
 
-## Vaidmenų ar veiksmų slėpimas
+Skyrius bus pažymėtas kaip pašalintas kartu su visais jo vaidmenimis ir veiksmais, o savanoriai šios pamokos metu jo nebematys.
 
-Skyriaus viduje galite paslėpti konkrečius vaidmenis ar veiksmus. Pavyzdžiui, jei skyriuje yra vaidmuo „Pamaldų vadovas“, bet jūsų klasėje tokio vaidmens nėra, galite paslėpti tik tą vaidmenį, nepašalindami viso skyriaus.
+## Vaidmenų ar veiksmų šalinimas
 
-1. Išskleiskite skyrių, kad pamatytumėte jo vaidmenis ir veiksmus.
-2. Spustelėkite, kad **paslėptumėte** bet kurį nereikalingą vaidmenį ar veiksmą.
+Skyriaus viduje galite pašalinti konkrečius vaidmenis ar veiksmus. Pavyzdžiui, jei skyriuje yra vaidmuo „Pamaldų vadovas“, bet jūsų klasėje tokio vaidmens nėra, galite pašalinti tik jį, nepašalindami viso skyriaus.
+
+1. Raskite vaidmenį ar veiksmą sąraše po jo skyriumi.
+2. Spustelėkite jo mygtuką **Šalinti** (šiukšlių dėžę) ir pasirinkite, kur taikomas pakeitimas.
 
 ## Turinio pertvarkymas
 
-Galite pertvarkyti skyrius ir veiksmus, kad jie atitiktų jums patogesnę eigą:
+Skyrius, vaidmenis ir veiksmus galite perstumdyti taip, kad jie atitiktų jums patogiausią eigą:
 
-1. Vilkite skyrius ar veiksmus, kad perkeltumėte juos aukštyn ar žemyn.
-2. Nauja tvarka bus ta, kurią savanoriai matys peržiūrėdami pamoką.
+1. Spustelėkite **Rodyklę aukštyn** arba **Rodyklę žemyn** ant elemento, kurį norite perkelti.
+2. Pasirinkite, kur taikomas pakeitimas. Elementas sukeisis vietomis su savo kaimynu.
 
-## Pritaikymo išsaugojimas
+Kartokite, kol elementai bus tokia tvarka, kokios norite. Nauja tvarka bus ta, kurią savanoriai matys peržiūrėdami pamoką.
 
-Baigę keisti, išsaugokite pritaikymą. Būsite paprašyti pasirinkti, kaip jis bus taikomas:
+## Pašalinimo atšaukimas
 
-- **Tik šiai klasei** -- Pakeitimai taikomi tik dabartinei klasei. Kitos klasės nepaveikiamos.
-- **Visoms klasėms** -- Pakeitimai taikomi visoms klasėms jūsų bažnyčioje.
-- **Pašalinti pritaikymą** -- Jei anksčiau pritaikėte šią pamoką ir norite grįžti prie originalaus turinio, pasirinkite šią parinktį, kad išvalytumėte savo pakeitimus.
+Norėdami grąžinti pašalintą elementą, dar kartą spustelėkite jo mygtuką **Šalinti**. Meniu dabar taip pat siūlo variantą **Nėra**. Pasirinkite **Nėra**, kad panaikintumėte pašalinimą ir vėl parodytumėte elementą, arba pasirinkite kitą variantą, kad pakeistumėte, kur taikomas pašalinimas.
 
 :::tip
-Pradėkite pritaikydami vieną pamoką vienai klasei. Kai įpratote prie proceso, galite plačiau taikyti pritaikymus visoms klasėms.
+Pradėkite pritaikydami vieną pamoką vienai klasei. Kai įprasite prie proceso, galėsite taikyti pritaikymus plačiau visoms klasėms.
 :::
 
 ## Kada pritaikyti
 
-Pritaikymas naudingiausias, kai:
+Pritaikymas ypač naudingas, kai:
 
-- Pamoka skirta kelioms amžiaus grupėms, o jūs norite rodyti tik aktualias dalis.
+- Pamoka skirta kelioms amžiaus grupėms, o jums reikia rodyti tik aktualias dalis.
 - Jūsų klasėje nenaudojami tam tikri vaidmenys (pavyzdžiui, atskiras pamaldų vadovas ar techninis savanoris).
 - Norite kitokios pamokos eigos tvarkos nei numatytoji.
 
 :::info
-Nebūtina pritaikyti kiekvienos pamokos. Jei turinys jūsų klasei tinka tokį, koks yra, galite praleisti šį žingsnį ir iš karto pereiti prie [pristatymo](../presenting/index.md).
+Nebūtina pritaikyti kiekvienos pamokos. Jei turinys jūsų klasei tinka tokį, koks yra, galite šį žingsnį visiškai praleisti ir pereiti tiesiai prie [pristatymo](../presenting/index.md).
 :::

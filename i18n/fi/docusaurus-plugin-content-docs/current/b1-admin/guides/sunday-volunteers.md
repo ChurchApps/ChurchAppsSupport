@@ -1,13 +1,13 @@
 ---
 title: "Opas: Sunnuntain vapaaehtoisten hallinta"
-description: "Määritä B1 Adminissa vapaaehtoistiimit, viikkosuunnitelmat, jumalanpalvelusjärjestys ja sunnuntain tehtävät, jotta vapaaehtoiset näkevät tehtävänsä B1.churchissa."
+description: "Määritä vapaaehtoistiimit, viikoittaiset palvelusuunnitelmat, palvelun järjestykset ja sunnuntain tehtävät B1 Adminissa, jotta vapaaehtoiset näkevät tehtävänsä B1.church-sivustolla ja mobiilisovelluksessa ja voivat vastata niihin."
 ---
 
 # Sunnuntain vapaaehtoisten hallinta
 
 <div class="article-intro">
 
-Luo vapaaehtoistiimit, tee viikoittaiset palvelusuunnitelmat, määritä tehtävät, rakenna palvelun järjestys ylistyslauluineen ja jaa sunnuntain tehtävät. Kun olet valmis, vapaaehtoiset näkevät tehtävänsä B1-verkkosivustolla ja mobiilisovelluksessa ja voivat hyväksyä tai hylätä ne suoraan.
+Määritä vapaaehtoistiimisi, luo viikoittaiset palvelusuunnitelmat, anna positiot, rakenna palvelun järjestys ylistyslauluineen ja määritä sunnuntain tehtävät. Lopuksi vapaaehtoisesi näkevät tehtävänsä B1-sivustolla ja mobiilisovelluksessa ja voivat hyväksyä tai hylätä ne suoraan.
 
 </div>
 
@@ -15,7 +15,7 @@ Luo vapaaehtoistiimit, tee viikoittaiset palvelusuunnitelmat, määritä tehtäv
 <h4>Ennen aloittamista</h4>
 
 - B1 Admin -tili, jolla on ylläpitäjän oikeudet
-- Vapaaehtoiset [lisättynä henkilöluetteloon](../people/adding-people.md)
+- Vapaaehtoiset, jotka on [lisätty henkilöluetteloon](../people/adding-people.md)
 
 </div>
 
@@ -23,113 +23,111 @@ Luo vapaaehtoistiimit, tee viikoittaiset palvelusuunnitelmat, määritä tehtäv
 
 Järjestä vapaaehtoiset tiimeihin, jotta voit hallita tehtäviä palvelualueittain.
 
-Noudata ohjeita [Ryhmien luominen](../groups/creating-groups.md) ja [Ryhmän jäsenet](../groups/group-members.md) ja tee seuraavasti:
+Noudata ohjeita [Ryhmien luominen](../groups/creating-groups.md) ja [Ryhmän jäsenet](../groups/group-members.md):
 
-1. Luo kategoria (esimerkiksi "Sunnuntaiaamun tiimit")
-2. Luo ryhmiä, kuten "Ylistystiimi", "Ääni ja media", "Tervehtijät" tai "Lastentyön vapaaehtoiset"
-3. Lisää vapaaehtoiset kuhunkin ryhmään hakemalla heidän nimensä ja klikkaamalla **Lisää**
+1. Luo kategoria (esim. „Sunnuntaiaamun tiimit")
+2. Luo ryhmiä, kuten „Ylistystiimi", „Ääni ja media", „Tervehtijät" tai „Lastenohjauksen vapaaehtoiset"
+3. Lisää vapaaehtoiset kuhunkin ryhmään etsimällä heidän nimensä ja napsauttamalla **Lisää**
 
 :::tip
-Nimeä tiimin johtajat ryhmän jäsenluettelossa tähti-kuvakkeella (**Tee johtajaksi**). Avaa jäsenluettelo klikkaamalla ryhmän sivulla **Kaikki jäsenet**. Johtajat voivat hallita oman ryhmänsä kalenteria ja koordinoida tiimiään.
+Nimeä tiimien johtajat ryhmän jäsenluettelon tähtikuvakkeella (**Tee johtajaksi**). Avaa ensin ryhmän sivulla **Kaikki jäsenet**. Johtajat voivat hallita oman ryhmänsä kalenteria ja koordinoida tiimiään.
 :::
 
-## Vaihe 2: Rakenna laulukirjastosi
+## Vaihe 2: Rakenna laulukirjasto
 
-Lisää ylistyslauluja, jotta voit liittää ne palvelusuunnitelmiin joka viikko.
+Lisää ylistyslauluja, jotta voit liittää ne viikoittaisiin palvelusuunnitelmiin.
 
-Noudata [Laulut](../serving/songs.md)-ohjetta ja tee seuraavasti:
+Noudata ohjetta [Laulut](../serving/songs.md):
 
-1. Lisää ylistyslauluja, joihin kuuluvat nimi, esittäjä ja kesto
-2. Lisää jokaiseen lauluun sovituksia, joihin kuuluvat sanat ja sävellajit
+1. Lisää ylistyslauluja nimineen, esittäjineen ja kestoineen
+2. Lisää jokaiselle laululle sovituksia sanoineen ja sävellajeineen
 3. Lisää ulkoisia linkkejä YouTube-esityksiin, sointukarttoihin tai nuottiin
 
 :::info
-Tänne lisättyjä lauluja voi myöhemmin liittää mihin tahansa palvelusuunnitelmaan. Rakenna kirjasto kerran ja käytä sitä uudelleen joka viikko.
+Tänne lisätyt laulut voidaan myöhemmin liittää mihin tahansa palvelusuunnitelmaan. Rakenna kirjasto kerran ja käytä sitä uudelleen joka viikko.
 :::
 
 ## Vaihe 3: Luo palvelusuunnitelma
 
 Suunnitelmat ovat viikoittaisia tehtävänjakoja, jotka kertovat vapaaehtoisille, missä heitä tarvitaan.
 
-Noudata [Suunnitelmat](../serving/plans.md)-ohjetta ja tee seuraavasti:
+Noudata ohjetta [Suunnitelmat](../serving/plans.md):
 
-1. Siirry kohtaan **Palvelu**, valitse oma palvelualueesi välilehti ja avaa suunnitelmatyyppi
-2. Klikkaa **Uusi suunnitelma** ja valitse palvelun päivämäärä. Jos haluat luoda useita sunnuntaita kerralla, kopioi edellinen suunnitelma ja anna kenttään **Suunnitelmien määrä** haluamasi määrä
-3. Lisää suunnitelman osioon **Palvelutiimin tehtävät** paikat ja määritä niihin vapaaehtoiset
-4. Vapaaehtoiset näkevät tehtävänsä tilan (Pyydetty, Vahvistettu, Odottaa)
-5. Ota suunnitelmatyypille käyttöön [vapaaehtoisten muistutukset](../serving/plans.md#volunteer-reminders), jotta vapaaehtoiset muistutetaan push-ilmoituksella, sähköpostilla tai tekstiviestillä ennen jokaista palvelua
+1. Siirry kohtaan Palveleminen, valitse ministeriösi välilehti ja avaa suunnitelmatyyppisi
+2. Napsauta **Uusi suunnitelma** ja valitse palvelupäivä. Jos haluat määrittää useita sunnuntaita kerralla, kopioi edellinen suunnitelma ja syötä kenttään **Suunnitelmien määrä** haluamasi lukumäärä.
+3. Lisää suunnitelman osiossa **Palvelutiimin tehtävät** positiot ja määritä niihin vapaaehtoiset
+4. Vapaaehtoiset näkevät tehtävänsä tilan (Pyydetty, Vahvistettu tai Odottaa)
+5. Ota suunnitelmatyypille käyttöön [vapaaehtoismuistutukset](../serving/plans.md#volunteer-reminders), jotta vapaaehtoiset muistutetaan push-ilmoituksella, sähköpostitse tai tekstiviestillä ennen jokaista palvelua
 
 ## Vaihe 4: Rakenna palvelun järjestys
 
-Suunnittele palvelun kulku alusta loppuun.
+Hahmottele palvelun kulku alusta loppuun.
 
-Noudata [Palvelun järjestys](../serving/service-order.md)-ohjetta ja tee seuraavasti:
+Noudata ohjetta [Palvelun järjestys](../serving/service-order.md):
 
-1. Avaa suunnitelma ja etsi osio **Jumalanpalveluksen järjestys** sivun yläosasta
-2. Lisää elementtejä klikkaamalla **Lisää**: ylistyslauluja (kirjastostasi), rukouksia, raamatunlukuja, ilmoituksia, saarna, kolehti ja päätös
-3. Järjestä kohdat uudelleen vetämällä ja pudottamalla
-
-:::info
-Palvelun järjestys on kohtainen suunnitelmalle. Muutokset eivät vaikuta muihin suunnitelmiin tai pääkirjastoon.
-:::
-
-## Vaihe 5: Jaa sunnuntain tehtävät
-
-Seuraa kertaluonteisia sunnuntain tehtäviä, jotta mikään ei jää hoitamatta.
-
-Noudata [Tehtävät](../serving/tasks.md)-ohjetta ja tee seuraavasti:
-
-1. Luo tehtäviä vastuualueille, kuten "Valmistele ehtoollisvälineet", "Tulosta kirkkokahvit" tai "Asenna äänilaitteet"
-2. Osoita kukin tehtävä vastuuhenkilölle tai ryhmälle
-3. Tehtävät näkyvät kohdassa **Palvelu > Omat työt**, vastuuhenkilön etusivulla ja mobiilisovelluksessa
+1. Avaa suunnitelmasi ja etsi osio **Palvelun järjestys** yläreunasta
+2. Lisää elementtejä napsauttamalla **Lisää**: ylistyslauluja (kirjastostasi), rukouksia, raamatunlukuja, ilmoituksia, saarna, kokoelma ja päätös
+3. Vedä ja pudota kohteita uuteen järjestykseen
 
 :::info
-B1 Admin ei enää luo toistuvia tehtäviä aikataulun mukaan. Toistuviin prosesseihin, joissa ihmiset etenevät vaiheittain, käytä [Työnkulkuja](../serving/workflows.md) aikatriggerillä.
+Palvelun järjestys on kohtaiskohtainen. Muutokset eivät vaikuta muihin suunnitelmiin eivätkä päälaulukirjastoon.
 :::
 
-## Vaihe 6: Ota käyttöön itse-ilmoittautuminen (valinnainen)
+## Vaihe 5: Määritä sunnuntain tehtävät
 
-Anna vapaaehtoisten ilmoittautua tehtäviin itse sen sijaan, että odottavat ylläpidon määritystä.
+Seuraa kertaluonteisia sunnuntain vastuita, jotta mikään ei jää hoitamatta.
 
-1. Kun luot tai muokkaat suunnitelmaa, aseta **Ilmoittautumisen määräaika** (tuntia ennen palvelua), jolloin itse-ilmoittautuminen päättyy. Tunnit lasketaan taaksepäin suunnitelman ensimmäisestä palveluajasta. Jätä tyhjäksi, jos määräaikaa ei tarvita. Uudet suunnitelmat saavat edellisen suunnitelman määräajan.
+Noudata ohjetta [Tehtävät](../serving/tasks.md):
+
+1. Luo tehtäviä vastuille, kuten „Valmistele ehtoollisvälineet", „Tulosta kaavat" tai „Aseta äänilaitteet"
+2. Määritä kukin tehtävä vastuuhenkilölle tai ryhmälle
+3. Tehtävät näkyvät kohdassa **Palveleminen > Minun työni**, vastuuhenkilön kojelaudalla ja mobiilisovelluksessa
+
+:::info
+B1 Admin ei enää luo tehtäviä toistuvasti aikataulun mukaan. Toistuviin prosesseihin, jotka vievät ihmisiä vaiheiden läpi, käytä [Työnkulkuja](../serving/workflows.md) aikatriggerillä.
+:::
+
+## Vaihe 6: Ota käyttöön itsepalveluilmoittautuminen (valinnainen)
+
+Anna vapaaehtoisten ilmoittautua positioihin itse sen sijaan, että odottaisivat ylläpitäjän määritystä.
+
+1. Luo tai muokkaa suunnitelmaa ja aseta **Ilmoittautumisen määräaika** (tunteja ennen palvelua), jolla hallitset, milloin itseilmoittautuminen päättyy. Tunnit lasketaan taaksepäin suunnitelman ensimmäisestä palveluajasta. Jätä tyhjäksi, jos määräaikaa ei tarvita. Uudet suunnitelmat saavat edellisen suunnitelman määräajan.
 2. Halutessasi ota käyttöön **Näytä vapaaehtoisten nimet ilmoittautumissivulla**, jolloin vapaaehtoiset näkevät, ketkä muut ovat ilmoittautuneet.
-3. Valitse kullekin paikalle **Salli itse-ilmoittautuminen** -valintaruutu, jotta paikka on itse valittavissa.
-4. Lisää jokaiselle paikalle **Kuvaus**, jotta vapaaehtoiset tietävät, mihin tehtävään kuuluu.
+3. Valitse kussakin positiossa ruutu **Salli itseilmoittautuminen**, jotta positio on itsepalvelulla saatavilla.
+4. Lisää kuhunkin positioon **Kuvaus**, jotta vapaaehtoiset tietävät, mitä tehtävä sisältää.
 
-Kun itse-ilmoittautumispaikat on luotu, ne näkyvät automaattisesti vapaaehtoisten ilmoittautumissivuilla [B1.church](../../b1-church/serving/volunteer-signup.md)-sivustolla ja [B1-mobiilisovelluksessa](../../b1-church/serving/volunteer-signup.md). Jäsenet voivat selata avoimia paikkoja, nähdä jäljellä olevien paikkojen määrän ja ilmoittautua yhdellä klikkauksella.
+Kun itseilmoittautumispositiot on luotu, ne näkyvät automaattisesti vapaaehtoisten ilmoittautumissivuilla [B1.church-sivustolla ja B1-sovelluksessa](../../b1-church/serving/volunteer-signup.md). Jäsenet voivat selata avoimia positioita, nähdä jäljellä olevien paikkojen määrän ja ilmoittautua yhdellä napsautuksella.
 
 :::tip
-Yhdistä samaan suunnitelmaan ylläpidon määräämiä ja itse-ilmoittautuvia paikkoja. Voit esimerkiksi määrätä ylistysjohtajan suoraan, mutta antaa tervehtijöiden ja kahvitarjoilijoiden valita paikkansa itse.
+Yhdistä ylläpitäjän määräämät ja itseilmoittautumispositiot samaan suunnitelmaan. Määrää esimerkiksi ylistysjohtaja suoraan, mutta anna tervehtijöiden ja kahvitarjoilijoiden valita itse.
 :::
 
 ## Vaihe 7: Kerro vapaaehtoisille
 
-Määrätyt vapaaehtoiset näkevät suunnitelmansa automaattisesti ja voivat vastata niihin.
+Määritetyt vapaaehtoiset näkevät suunnitelmansa automaattisesti ja voivat vastata niihin.
 
-1. Vapaaehtoiset näkevät suunnitelmansa [B1.church](../../b1-church/plans/viewing-plans.md)-sivustolla ja [B1-mobiilisovelluksessa](../../b1-church/plans/viewing-plans.md)
-2. He voivat hyväksyä tai hylätä tehtävät suoraan kummassa tahansa palvelussa
-3. He voivat merkitä estopäiviä viikoille, joina eivät ole käytettävissä
-4. Suunnitelmat voi tulostaa harjoituksia varten tai kiinnittää takahuoneeseen
-5. Vapaaehtoiset voivat selata avoimia paikkoja ja ilmoittautua niihin [vapaaehtoisten ilmoittautumissivulla](../../b1-church/serving/volunteer-signup.md)
+1. Vapaaehtoiset näkevät suunnitelmansa [B1.church-sivustolla ja B1-sovelluksessa](../../b1-church/plans/viewing-plans.md)
+2. He voivat hyväksyä tai hylätä tehtävät suoraan puhelimestaan tai tietokoneeltaan
+3. He voivat merkitä estopäiviä viikoille, jolloin eivät ole käytettävissä
+4. Suunnitelmat voidaan tulostaa harjoituksia varten tai ripustaa takahuoneeseen
+5. Vapaaehtoiset voivat selata avoimia positioita ja ilmoittautua niihin [vapaaehtoisten ilmoittautumissivun](../../b1-church/serving/volunteer-signup.md) kautta
 
 :::tip
-Mobiilisovelluksen push-ilmoitukset kertovat vapaaehtoisille, kun heille on määrätty uusia tehtäviä tai suunnitelmat muuttuvat.
+B1-sovelluksen push-ilmoitukset hälyttävät vapaaehtoisia, kun heille annetaan uusia tehtäviä tai suunnitelmat muuttuvat.
 :::
 
-## Valmista!
+## Olet valmis!
 
-Vapaaehtoistoiminnan hallintasi on nyt määritetty. Luo joka viikko uusi suunnitelma, määritä paikat, ja tiimisi näkee kaiken puhelimellaan tai tietokoneellaan.
+Vapaaehtoistoiminnan hallintajärjestelmäsi on pystytetty. Luo joka viikko uusi suunnitelma, anna positiot, ja tiimisi näkee kaiken puhelimellaan tai tietokoneellaan.
 
 ## Aiheeseen liittyvät artikkelit
 
-- [Ryhmien luominen](../groups/creating-groups.md): luo tiimit ja kategoriat
-- [Ryhmän jäsenet](../groups/group-members.md): lisää ja hallitse tiimin jäseniä
-- [Suunnitelmat](../serving/plans.md): luo ja hallitse palvelusuunnitelmia
-- [Palvelun järjestys](../serving/service-order.md): rakenna palvelun kulku
-- [Laulut](../serving/songs.md): hallitse ylistyslaulukirjastoasi
-- [Tehtävät](../serving/tasks.md): osoita toimintatehtäviä henkilöille tai ryhmille
-- [Työnkulut](../serving/workflows.md): ohjaa ihmiset toistuvien prosessien läpi triggerien ja automaattisten vaiheiden avulla
-- [Suunnitelmien katselu (verkko)](../../b1-church/plans/viewing-plans.md): miten vapaaehtoiset näkevät suunnitelmat verkossa
-- [Suunnitelmien katselu (mobiili)](../../b1-church/plans/viewing-plans.md): miten vapaaehtoiset näkevät suunnitelmat mobiilissa
-- [Vapaaehtoisten ilmoittautuminen (verkko)](../../b1-church/serving/volunteer-signup.md): miten jäsenet valitsevat vapaaehtoispaikkoja itse
-- [Vapaaehtoisten ilmoittautuminen (mobiili)](../../b1-church/serving/volunteer-signup.md): vapaaehtoisten itse-ilmoittautuminen mobiilissa
+- [Ryhmien luominen](../groups/creating-groups.md) — tiimien ja kategorioiden perustaminen
+- [Ryhmän jäsenet](../groups/group-members.md) — tiimin jäsenten lisääminen ja hallinta
+- [Suunnitelmat](../serving/plans.md) — palvelusuunnitelmien luominen ja hallinta
+- [Palvelun järjestys](../serving/service-order.md) — palvelun kulun rakentaminen
+- [Laulut](../serving/songs.md) — ylistyslaulukirjaston hallinta
+- [Tehtävät](../serving/tasks.md) — toimintatehtävien määrittäminen henkilöille tai ryhmille
+- [Työnkulut](../serving/workflows.md) — toistuvien prosessien käsittely triggereillä ja automaattisilla vaiheilla
+- [Suunnitelmien tarkastelu](../../b1-church/plans/viewing-plans.md) — näin vapaaehtoiset näkevät suunnitelmansa
+- [Vapaaehtoisilmoittautuminen](../../b1-church/serving/volunteer-signup.md) — näin jäsenet valitsevat vapaaehtoispositioita itse

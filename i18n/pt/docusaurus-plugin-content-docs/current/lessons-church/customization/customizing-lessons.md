@@ -1,76 +1,91 @@
 ---
 title: "Personalizando Lições"
-description: "Remova, oculte ou reordene seções e funções em uma lição do Lessons.church e escolha se as mudanças valem para uma sala ou para todas."
+description: "Remova ou reordene seções, funções e ações em uma lição do Lessons.church, e escolha se cada alteração se aplica a uma sala ou a todas."
 ---
 
 # Personalizando Lições
 
 <div class="article-intro">
 
-Este guia orienta você na personalização de uma lição para sua sala de aula. As personalizações permitem remover, ocultar ou reordenar conteúdo para que seus voluntários vejam exatamente o que precisam -- nada mais, nada menos.
+Este guia mostra como personalizar uma lição para a sua sala. As personalizações permitem remover ou reordenar o conteúdo para que os seus voluntários vejam exatamente o que precisam: nem mais, nem menos.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Configure pelo menos uma sala de aula](../classrooms/setting-up-classrooms.md) no portal
-- [Agende uma lição](../classrooms/scheduling-lessons.md) na sala de aula que deseja personalizar
-- Leia a [visão geral de Personalização](./index.md) para entender o que pode ser personalizado
+- [Configure pelo menos uma sala](../classrooms/setting-up-classrooms.md) no portal
+- [Agende uma lição](../classrooms/scheduling-lessons.md) para a sala que você deseja personalizar
+- Leia a [visão geral de personalização](./index.md) para entender o que pode ser personalizado
 
 </div>
 
-## Abrindo a Visualização de Personalização
+## Abrindo a Tela de Personalização
 
-1. Faça login e navegue até seu **Portal**.
-2. Selecione a **sala de aula** que tem a lição que deseja personalizar.
-3. Clique na **lição agendada** para abri-la.
-4. Clique em **Personalizar** para entrar na visualização de personalização.
+1. Faça login e acesse o seu **Portal**.
+2. Selecione a **sala** que tem a lição que você deseja personalizar.
+3. Na programação da sala, encontre a lição e clique em **Personalizar** abaixo do nome dela.
 
-Você verá o conteúdo completo da lição dividido em seções, funções e ações.
+A página **Personalizar Lição** lista as seções da lição, com as funções de cada seção e as ações de cada função logo abaixo. Cada linha tem botões à direita:
+
+- **Seta para cima** e **Seta para baixo** -- Move o item uma posição para cima ou para baixo entre os seus vizinhos
+- **Excluir** (ícone de lixeira) -- Remove o item
+
+:::info
+**Personalizar** aparece apenas para lições do Lessons.church. Lições agendadas por um provedor externo mostram **Ver Lição** no lugar e não podem ser personalizadas.
+:::
+
+## Escolhendo Onde uma Alteração Se Aplica
+
+Sempre que você clicar em uma seta ou no ícone de lixeira, um menu pergunta **Aplicar a personalização selecionada a:**
+
+- **Esta Sala** -- A alteração se aplica apenas à sala atual. As outras salas não são afetadas.
+- **Todas as Salas** -- A alteração se aplica a todas as salas da sua igreja.
+
+Ao escolher uma opção, a alteração é salva imediatamente. Não há uma etapa separada para salvar.
 
 ## Removendo Seções
 
-Se uma seção não se aplica à sua sala de aula, você pode removê-la inteiramente. Isso é útil quando uma lição inclui conteúdo para múltiplas faixas etárias e você precisa apenas de uma. Por exemplo, se uma lição tem uma seção "Atividade Pré-escolar" e uma "Atividade Fundamental", você pode remover a que não se encaixa na sua sala.
+Se uma seção não se aplica à sua sala, você pode removê-la por completo. Isso é útil quando uma lição inclui conteúdo para várias faixas etárias e você precisa de apenas uma. Por exemplo, se a lição tiver as seções "Atividade para Pré-escolares" e "Atividade para Crianças", você pode remover a que não se encaixa na sua sala.
 
 1. Encontre a seção que deseja remover.
-2. Clique para **remover** ou **ocultar** a seção.
-3. A seção não aparecerá mais para os voluntários que visualizarem esta lição.
+2. Clique no botão **Excluir** (ícone de lixeira) dela.
+3. Escolha **Esta Sala** ou **Todas as Salas**.
 
-## Ocultando Funções ou Ações
+A seção é exibida como removida, junto com todas as suas funções e ações, e os voluntários não a verão mais nesta lição.
 
-Dentro de uma seção, você pode ocultar funções ou ações específicas. Por exemplo, se uma seção inclui uma função de "Líder de Louvor" mas sua sala de aula não tem um, você pode ocultar apenas essa função sem remover a seção inteira.
+## Removendo Funções ou Ações
 
-1. Expanda a seção para ver suas funções e ações.
-2. Clique para **ocultar** qualquer função ou ação que não seja necessária.
+Dentro de uma seção, você pode remover funções ou ações específicas. Por exemplo, se uma seção incluir a função "Líder de Louvor", mas a sua sala não tiver esse papel, você pode remover apenas essa função sem excluir a seção inteira.
 
-## Reordenando Conteúdo
+1. Encontre a função ou ação na lista abaixo da seção.
+2. Clique no botão **Excluir** (ícone de lixeira) dela e escolha onde a alteração se aplica.
 
-Você pode reorganizar seções e ações para corresponder ao fluxo que preferir:
+## Reordenando o Conteúdo
 
-1. Arraste seções ou ações para movê-las para cima ou para baixo na ordem.
-2. A nova ordem é o que seus voluntários verão quando visualizarem a lição.
+Você pode reorganizar seções, funções e ações para seguir a sequência que preferir:
 
-## Salvando Sua Personalização
+1. Clique na **Seta para cima** ou na **Seta para baixo** do item que deseja mover.
+2. Escolha onde a alteração se aplica. O item troca de lugar com o vizinho.
 
-Quando terminar de fazer alterações, salve a personalização. Será solicitado que você escolha como ela se aplica:
+Repita até que os itens estejam na ordem desejada. A nova ordem é a que os seus voluntários verão ao visualizar a lição.
 
-- **Apenas esta sala de aula** -- As alterações se aplicam apenas à sala de aula atual. Outras salas de aula não são afetadas.
-- **Todas as salas de aula** -- As alterações se aplicam a todas as salas de aula da sua igreja.
-- **Remover personalização** -- Se você personalizou esta lição anteriormente e quer voltar ao conteúdo original, escolha esta opção para limpar suas alterações.
+## Desfazendo uma Remoção
+
+Para restaurar um item que você removeu, clique novamente no botão **Excluir** dele. O menu agora também oferece a opção **Nenhum**. Escolha **Nenhum** para cancelar a remoção e exibir o item novamente, ou selecione a outra opção para alterar onde a remoção se aplica.
 
 :::tip
-Comece personalizando uma única lição para uma sala de aula. Quando estiver confortável com o processo, pode aplicar personalizações de forma mais ampla em todas as salas de aula.
+Comece personalizando uma única lição para uma sala. Quando você se sentir confortável com o processo, pode aplicar as personalizações de forma mais ampla, em todas as salas.
 :::
 
 ## Quando Personalizar
 
 A personalização é mais útil quando:
 
-- Uma lição tem conteúdo para múltiplas faixas etárias e você quer mostrar apenas as partes relevantes.
-- Sua sala de aula não usa certas funções (como um líder de louvor dedicado ou voluntário de tecnologia).
-- Você prefere uma ordem diferente para o fluxo da lição do que o fornecido por padrão.
+- Uma lição tem conteúdo para várias faixas etárias e você quer mostrar apenas as partes relevantes.
+- A sua sala não usa certas funções (como um líder de louvor ou um voluntário de tecnologia dedicado).
+- Você prefere uma ordem diferente para o fluxo da lição em relação à padrão.
 
 :::info
-Você não precisa personalizar todas as lições. Se o conteúdo funciona como está para sua sala de aula, pode pular esta etapa completamente e ir direto para a [apresentação](../presenting/index.md).
+Você não precisa personalizar todas as lições. Se o conteúdo funciona do jeito que está para a sua sala, pode pular esta etapa e ir direto para [apresentando](../presenting/index.md).
 :::

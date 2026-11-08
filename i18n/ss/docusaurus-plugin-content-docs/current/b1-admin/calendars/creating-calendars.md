@@ -1,102 +1,141 @@
 ---
-title: "Kudala Emakhalenda"
-description: "Dala ikhalendari ku-B1 Admin, xhuma emaqembu noma ngenisa emafayili .ics, bese uphatha tiketimenti, kubhalisa, nemanothi indzawo munye."
+title: "Ukwakha Emakhalenda"
+description: "Kha ikhalenda ku-B1 Admin, xhuma emaqembu noma ngenisa emafayela .ics, bese uphatsa imicimbi, kubhalisa, nemanothi ayo endzaweni munye."
 ---
 
-# Kudala Emakhalenda
+# Ukwakha Emakhalenda
 
 <div class="article-intro">
 
-Kudala ikhalenda ku-B1 Admin kukuvumela kwakha kubuka lokuhlelwe kwemicimbi ngekuhlanganisa licembu linye nome lamanyenti. Imicimbi iphatfwa baholi bemacembu ngekhatsi kwemacembu abo, futsi ikhalenda lakho liveta lemicimbi endzaweni yinye. Ngisho nemphatsi we-domain akakwati kwengeta nome kuhlela imicimbi ngalokucondzile esigabeni sekhalenda ngaphandle kwekutsi abengumholi welicembu lemicimbi ihlobene nalo.
+Ukwakha ikhalenda ku-B1 Admin kukuvumela wakhe umbono lolucondziwe wemicimbi ngekuxhuma liqembu linye noma emaqembu lamaningi. Imicimbi ilawulwa tiholi temaqembu ngaphakathi kwemaqembu abo, futsi ikhalenda lakho livetisa leyo micimbi endzaweni munye. Bahlalisi lanelungelo lekuhlela bangangeta noma bahlele imicimbi yanoma iliphi liqembu. Tiholi temaqembu langesibo bahlalisi tingaphatsa imicimbi yemaqembu lawaholako kuphela.
 
 </div>
+
+## Ividiyo Yekufundza
+
+<YouTube id="Ko3kgsCSLFs" title="Ukwakha Emakhalenda, Imicimbi, Nekubhukha Tindzawo ku-B1" next="Kubhalisa Emcimbini Nemicimbi Lekhokhelwako ku-B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
-<h4>Ngembikwe Kucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Hlela [emacembu](../groups/creating-groups.md) lofuna imicimbi yawo ifakwe kikhalenda lakho
-- Udzinga kufinyelela kwebuphatsi ku-Calendars ku-B1 Admin
+- Setela [emaqembu](../groups/creating-groups.md) lemicimbi yawo ufuna kuyifaka ekhalendeni lakho
+- Udzinga kufinyelela kwemaphatsi esigaba Sekhalenda ku-B1 Admin
 
 </div>
 
-## Kudala Ikhalenda Lelisha
+## Kwakha Ikhalenda Lelitsha
 
-1. Ku-B1 Admin, hamba uye ku-**Website**, bese uya esigabeni se-**Calendars**.
-2. Chofota **Add Calendar**.
-3. Faka **ligama** lekhalenda lakho (sibonelo, "Imicimbi Yekukhonza Bantfu Labasha" nome "Ikhalenda Lelikhulu Lebandla").
-4. Engeta **sichachiso** lesikhetsekako kusita licembu lakho kucondza kutsi leli khalenda lentelwani.
-5. Chofota **Create** kusindza ikhalenda lakho lelisha.
+1. Ku-B1 Admin, vula [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (indzawo yekufuna ngaphezulu kwesikhatsi sencele lesekhoneni lesikhatsi), nweba **Calendars**, bese ucindzetela **Calendars**.
+2. Cindzetela **Add Calendar** phezulu kwelikhasi. Lifomu lelitsha lekhalenda livula ngaphansi kohlu lwemakhalenda.
+3. Faka **ligama** lekhalenda lakho (njengesibonelo, "Youth Ministry Events" noma "Main Church Calendar").
+4. Engeta **incazelo** lencane yekusita ilungu lethimba lakho kutsi liyati kutsi ikhalenda lalelo linjani.
+5. Cindzetela **Create** kulondvolota ikhalenda lakho lelitsha.
 
-## Likhasi Lemininingwane Yekhalenda
+## Ikhasi Lemininingwane Yekhalenda
 
-Ngemva kwekudala ikhalenda, lichofote kuze uvule likhasi lemininingwane. Leli khasi linetindzawo letimbili letinkhulu:
+Emva kokwakha ikhalenda, cindzetela **Manage Events** emugceni walo kuvula ikhasi lemininingwane. Leli khasi linetindzawo letimbili letikhulu:
 
-- **Insika yesencele** -- Kubuka kwekhalenda leliveta imicimbi lebutswe kusuka emacenjini lahlanganisiwe.
-- **Insika yesekudla** -- Luhlu lwemacembu lahlobene. Yindzawo lapho uphatsa khona kutsi ngutuphi emacembu lafakwe kuleli khalenda.
+- **Ikholomu yesobunxele** -- Ligama lekhalenda nemaciko alo (**New Event**, **Edit**, **Import .ics**, kanye **Print**), kulandzelwe luhlu lwe**Groups in Calendar** lolubonisa emaqembu lafakiwe kuleli khalenda. Cindzetela **Remove** ngaseceleni kweliqembu kutsi ulisuse ekhalendeni.
+- **Indzawo lenkhulu** -- Umbono we**Calendar Events** lobonisa imicimbi lelethwe kusuka emaqembini laxhunyiwe, nemaciko **Subscribe** kanye **Add Group** phezulu kwawo.
 
-## Kuhlanganisa Emacembu
+## Kuxhuma Emaqembu
 
-Emacembu lanemicimbi ekhalendeni avela ngalokutentekelako eluhlwini lwemacembu ngesekudla likhasi lemininingwane.
+Emaqembu anemicimbi ekhalendeni avela ngekutimela kuhlu lwe**Groups in Calendar** ngesobunxele kwelikhasi lemininingwane.
 
-1. Chofota **Add** esigabeni semacembu kuhlanganisa licembu nekhalenda lakho.
-2. Khetsa licembu ku-dropdown.
-3. Khetsa kutsi ufaka **yonkhe imicimbi** yalelocembu nome **imicimbi lecondzile kuphela**.
-4. Chofota **Save**.
+1. Cindzetela **Add Group** phezulu kwekhalenda kutsi uhlanganise liqembu nekhalenda lakho.
+2. Khetsa liqembu kusuka kulucashe lwekukhetsa. Luhlu lulandzisa wonkhe emaqembu alecawe lakho, hhayi emaqembu lowaphatselwe kuwo kuphela.
+3. Khetsa kutsi ufake **all events** kusuka kuleliqembu yini noma **specific events** kuphela.
+4. Cindzetela **Save**.
+
+Umcimbi ngamunye uvela ekhalendeni kanye nje. Uma ungeta liqembu lonkhe, noma imicimbi leyengetwa ngayinye ngayinye ihlanganiswa ngaphansi kwelitfupha leliqembu, futsi kukhetsa imicimbi ethile kuliqembu lelisevele likhalendeni akwengeti lutfo lolusha. Emaqembu angetwa lonkhe kuphela ayabhalwa ku-**Groups in Calendar**.
+
+### Kungenisa Lifayela le-.ics
+
+Cindzetela **Import .ics** kutsi uletse imicimbi kusuka kwelinye ikhalenda. Khetsa **Group** kufanele imicimbi ibe yaleliqembu, bese ucindzetela **Choose .ics file** noma unamatele lokuphakatfwe kwelifayela, bese ucindzetela **Import**. Imicimbi idalwa kuleliqembu, bese liqembu lengetwa ekhalendeni lowatsatsa kulo, kutsi imicimbi ibonakale khona ngekushesha.
+
+### Kususa Umcimbi Ekhalendeni
+
+Cindzetela umcimbi ekhalendeni, bese ucindzetela **Remove from Calendar**. Lokhu kususa umcimbi kuleli khalenda kuphela -- umcimbi uhlala use liqembu lawo. Uma umcimbi usekhalendeni ngobe liqembu lonkhe lengetwa, kususa wona kususa yonkhe imicimbi yaleliqembu kuleli khalenda (imicimbi isahlala kuliqembu). Kutsi ulibulale umcimbi ngalokusalela, susa kusuka ku[khalenda yeliqembu](../groups/group-calendar.md).
 
 :::tip
-Kuhlanganisa emacembu nekhalenda lakho yindlela lenemandla yekubutsa imicimbi ngalokutentekelako. Nangabe umholi welicembu engeta umcimbi [elicenjini](../groups/creating-groups.md) lakhe, ungangena ekhalendeni lakho lelimele libandla lonkhe ngaphandle kwemsebenti lowengetiwe kuwe.
+Kuxhuma emaqembu ekhalendeni lakho kuyindlela lenemandla yekuhlanganisa imicimbi ngekuzenta. Lapho tiholi temaqembu lingeta umcimbi kuliqembu lawo [lelingumqembu](../groups/creating-groups.md), ungavela ekhalendeni lakho lelimelela lonkhe licawe ngaphandle kwemsebenti lowengeziwe kuwe.
 :::
 
 :::info
-Nangabe ufuna kudala ikhalenda linye lelibutsa imicimbi emacenjini lamanyenti kulo lonkhe libandla lakho, buka [Ikhalenda Lelihlelwe](./curated-calendar.md) kutfola indlela lelula.
+Uma ufuna kwakha ikhalenda linye lelitfola imicimbi kusuka emaqembini lamaningi kulo lonkhe licawe lakho, bheka [Ikhalenda Lelicoseliwe](./curated-calendar.md) kutsi ubone indlela lelula.
 :::
 
-## Kuvula Kubhalisela Umcimbi {#enabling-event-registration}
+## Kwengeta Nekuhlela Imicimbi {#adding-and-editing-events}
 
-Ungakwati kuvula kubhalisa kunoma ngumuphi umcimbi wekhalenda kuze emalunga akwati kubhalisa ngekusebentisa iwebusayithi ye-B1 nome i-app yeselula.
+Cindzetela **New Event** ekhasini lemininingwane yekhalenda kutsi uyengete umcimbi, noma cindzetela umcimbi ekhalendeni bese ucindzetela **Edit** kutsi uwushintshe. Lifomu le**New Event** / **Edit Event** linemasimu alandzelako:
 
-1. Chofota umcimbi lokhona nakadze nome udale lomusha.
-2. Ku-event editor, vula **Registration** kuyivule.
-3. Hlela tinhlelo tekubhalisa:
-   - **Capacity** (lokhetsekako) -- Hlela linani lelikhulu lelivumelekile lekubhalisa. Yekela ingene ize kutsi kungabi nemkhawulo.
-   - **Registration Opens** -- Lusuku nesikhatsi lapho kubhalisa kutfolakala khona.
-   - **Registration Closes** -- Lusuku nesikhatsi lapho kubhalisa kuphela khona.
-   - **Tags** -- Emagama lahlukaniswe ngemakhoma (sib. "labasha, luhambo, vbs") kusita kuhlukanisa imicimbi lengabhaliselwa.
-   - **Registration Questions** -- Ungakwati kuhlanganisa [ifomu](../forms/creating-forms.md) kuze labhalisile baphendvule imibuto lengetiwe (tinhlobo tekudla, linani lehembe le-T-shirt, umuntfu wekushaya kuye ngesikhatsi sengoti, njalonjalo) njengencenye yekubhalisa. Khetsa **None** kweqa imibuto.
-   - **Enable Waitlist** -- Nangabe umcimbi ugcwala, vumela labhalisile labengetiwe bangenele luhlu lwekulindza esikhundleni sekutalwa. Buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md#waitlist).
-4. Sindza umcimbi.
+- **Group** -- Liqembu lomcimbi lowaphatselwe kuwo. Uma licawe lakho linetemplate temicimbi, ungakhetsa futsi **Template** kutsi ugcwalise lifomu.
+- **Title** -- Sihloko somcimbi.
+- **Event photo** -- Cindzetela **Add Photo** (noma libhokisi lelingenalo lesithombe) kutsi ukhetse noma ulayishe lisithombe, lesicoseliwe kube yimo ye-16:9 lebanti. Cindzetela **Change Photo** kutsi ushintse lesithombe. Lesithombe sibonakala phezulu kwelikhasi lomcimbi kuwebhusayithi lakho nasitfwelwa njengetayili yaso lapho Element yeKhalenda ibonisa **Upcoming events** (bheka [Kubonisa Imicimbi Kuwebhusayithi Yakho](#showing-events-on-your-website)).
+- **Description** -- Ibonakala ekhasini lomcimbi kuwebhusayithi lakho. Umbhalo lobhalwe ngebold, tuluhlu, nemakhonkho kuyasekelwa.
+- **Start** kanye **End**, **Repeats**, kanye **Visibility** (**Public** noma **Private**).
+- **Tags** -- Tincenye letihlukaniswa ngekhoma, njengo `youth, students`. Element yeKhalenda kuwebhusayithi lakho ingasetwa kutsi ibonise kuphela imicimbi lenetag lelitsite. Le ndzawo ifanana nensimu ye**Tags** ekutilungiselelweni kwekubhalisa komcimbi.
+- **Who can view notes** kanye **Who can post notes** -- Ngubani lotfola kufundza futsi angange etinhlamvu temcimbi (bheka [Tinhlamvu Temicimbi](#event-notes)). Khetsa **Staff only** (lokuzenekelako), **Group leaders** (tiholi temcimbi), noma **Group members** (wonkhe emalungu aleliqembu, kubandlulula netiholi tawo).
+- **Rooms** kanye **Resources** -- Bopha indzawo nemitfombo yomcimbi. Bheka [Emakamelo, Tinsita Nekuhlelwa Kwesikhatsi](./rooms-resources.md).
 
-Kwimicimbi lekhokhelwako, likhasi lelifanako letinhlelo likuvumela kuchaza **Attendee Types** letinemtsengo, **Selections** letikhetsekako (tintfo letengetiwe), ne-**Discount Codes**, kukhokha kubuthwa ngekusebentisa umniki-msebenti wemnikelo webandla lakho. Buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md) kutfola inchubo lengagcwele.
+Cindzetela **Save**. Uma umcimbi uphindvuka, B1 iyakubuta kutsi uyawuqinisekisa, ngobe kulondvolota kubuyekeza yonkhe imicimbi lekulandzelana kuleyo ndzandvo.
 
-Nangabe kubhalisa sekuvuliwe, emalunga atawubona inkinobho ye-**Register for this Event** nababuka umcimbi ku-[webusayithi ye-B1](../../b1-church/events/registering.md) nome ku-[app ye-B1 Mobile](../../b1-church/events/registering.md). Nangabe uhlanganise ifomu, labhalisile babona sinyatselo se-**Questions** ngesikhatsi sekubhalisa futsi timphendvulo tabo tiyagcinwa nekubhalisa kwabo.
+### Tinhlamvu Temicimbi {#event-notes}
+
+Umcimbi ngamunye unelithuluzi lawo letinhlamvu lelisetfwe kuhlelo nekulandzela. Cindzetela umcimbi ekhasini lemininingwane yekhalenda; incocisho ibonisa tinemininingwane temcimbi, tesikhumbuzo, kanye ne**Notes** ngaphansi kwato. Bhala inothi bese uyipostha kutsi uyengete kulolucingo lwemilayezo.
+
+Bahlalisi lanelungelo lekuhlela lokuh lekuphatsa emakhalenda bangafundza futsi bangange tinhlamvu temicimbi njalo. Tilungiselelo le**Who can view notes** kanye le**Who can post notes** etimcimbini tincapha kutsi tiholi temcimbi noma emalungu alo nawo angenta njalo.
+
+### Kubonisa Imicimbi Kuwebhusayithi Yakho {#showing-events-on-your-website}
+
+Kutsi ufake ikhalenda kuwebhusayithi yakho, engeta **Calendar** element ekhasini bese ukhetsa leli khalenda. Element ingabonisa ikhalenda lenyanga noma gidi yetithombe temicimbi letseta, futsi ingabekwa kutsi ibonise kuphela imicimbi lenetag linye. Bavakashi labacindzetela umcimbi bavula likhasi lomcimbi walo. Bheka [Kusebentisa element yeKhalenda](../website/page-editor.md#using-the-calendar-element).
+
+## Kuvumela Kubhalisa Emcimbini {#enabling-event-registration}
+
+Ungavumela kubhalisa kunoma yimuphi umcimbi wekhalenda kutsi emalungu akwazi kubhalisa kusuka kuwebhusayithi ye-B1 noma kuhlelo lwekusebentisa lwemucu.
+
+1. Cindzetela umcimbi losuvele ukhona noma wakha lowusha.
+2. Ku-event editor, shintsha **Registration** kutsi kuvuleke.
+3. Lungisa tilungiselelo tekubhalisa:
+   - **Capacity** (ingasetfwa) -- Setela inombolo lenkhulu yetibhalisi. Shiya ingenalutfo uma kungenamkhawulo.
+   - **Registration Opens** -- Lilanga nesikhatsi lapho kubhalisa kuba khona.
+   - **Registration Closes** -- Lilanga nesikhatsi lapho kubhalisa kuvalwa.
+   - **Tags** -- Tincenye letihlukaniswa ngekhoma (njengo "youth, retreat, vbs") kusita ekuhlukaniseni imicimbi lebhalisekako.
+   - **Registration Questions** -- Ungahlanganisa [lifomu](../forms/creating-forms.md) kutsi labhalisako baphendvule imibuto lengetelelako (tidla letikhetfwako, saizi yemabhalasi, nemuntfu wekusheshisa wekusiza, njll.) njengengxenye yekubhalisa. Khetsa **None** kutsi ushiye imibuto.
+   - **Enable Waitlist** -- Umcimbi uma ugcwele, vumela labanye labhalisako bajoyine luhlu lwekulindza kunekutsi bagcinwe ngaphandle. Bheka [Kubhalisa Lokukhokhelwako](./paid-registrations.md#waitlist).
+4. Gcina umcimbi.
+
+Kumicimbi lekhokhelwako, leli khasi letilungiselelo lesingeta kuchaza **Attendee Types** lanemitengo, **Selections** (tingengiso letingeteleko) lengatfolakala, kanye ne**Discount Codes**, nekukhokhelwa kwemali ngemhlinzeko yelicawe lakho lekuniketa. Bheka [Kubhalisa Lokukhokhelwako](./paid-registrations.md) kutfola incenye lephelele.
+
+Lapho sekuvuliwe kubhalisa, emalungu bayawubona inkinobho **Register for this Event** lapho babuka umcimbi ku-[B1.church noma ku-B1 App](../../b1-church/events/registering.md). Uma unamatisele lifomu, labhalisako bayawubona sinyatelo se**Questions** ngesikhatsi sekubhalisa, nekuphendvula kwabo kugcinwa kanye nekubhalisa kwabo.
 
 :::info
-Registration Questions isebenta kuphela nemafomu **langakaphawulwa** njenge Restricted. Ifomu leliphawulwe njenge Restricted liyaeqiwa ngalokutentekelako ngesikhatsi sekubhalisa esikhundleni sekuvezwa, ngako sebentisa ifomu lelingakaphawulwa nawuhlanganisa imibuto kumcimbi.
+Imibuto Yekubhalisa isebenta kuphela ngamafomu **angamakwa** Restricted. Lifomu lelivinjelwako liyadlulwa ngekuzenta ngesikhatsi sekubhalisa kunekutsi likhonjiswe, ngako sebentisa lifomu lelingavinjelwa uma unamatisa imibuto emcimbini.
 :::
 
 ### Kuphatsa Kubhalisa
 
-Kubuka nekuphatsa kubhalisa kwemicimbi yakho:
+Kutsi ubone futsi uphatse kubhalisa kwetimicimbi takho:
 
-1. Hamba uye ekhasini le-**Registrations** ku-B1 Admin.
-2. Utawubona ithebula yayo yonkhe imicimbi lene-registration levuliwe, leveta sihloko somcimbi, lusuku, linani lekubhalisa lwamanje kuhlangana nelinani lelivumelekile, kanye netiTags.
-3. Chofota emcimbini kubona luhlu loluphelele lwekubhalisa, kufaka ekhatsi emagama, linani lemalunga, tinhlobo talabatakubakhona, simo sekukhokha, kanye nelusuku lwekubhalisa.
-4. Kusuka likhasi lemininingwane, ungakwati:
-   - **Add Attendee** -- Bhalisa ngesandla umuntfu lobhalise ngaphandle kwe-online nome ngefoni.
-   - **Kukhansela** kubhalisa ngakunye
-   - **Kususa** kubhalisa unomphelo
-   - **Kunyusa** kubhalisa lokusekulindzeni nangabe sikhala sivuliwe
-   - **Export CSV** -- Layisha konkhe kubhalisa, kufaka ekhatsi tinhlobo talabatakubakhona, tikhetso, tilinganiso tekukhokha, kanye netimphendvulo temibuto
+1. Ku-Jump menu, khetsa **Calendars > Registrations**.
+2. Uyawubona tafula letinayo yonkhe imicimbi lenekubhalisa lekuvuliwe, libonisa ligama lemcimbi, lilanga, inani lamanje labhalisako kanye nelinani lelikhulu, nemake.
+3. Cindzetela umcimbi kutsi ubone luhlu lwaleso sonkhe sabhalisako, kubandlulula emagama, inani lemalungu, tinhlobo tabaphambili, simo sekukhokha, nelilanga lekubhalisa.
+4. Kusuka ekhasini lemininingwane, ungenta:
+   - **Add Attendee** -- Bhalisa umuntfu ngekumfaka ngesandla lowetfwe ngelucingo noma ngaphandle kwe-inthanethi.
+   - **Cancel** kubhalisa ngakunye
+   - **Delete** kubhalisa ngekuphelela
+   - **Promote** labhalisela luhlu lwekulindza lapho sekuvulekile sikhala
+   - **Export CSV** -- Layisha wonkhe emabhalisela, kubandlulula tinhlobo tabaphambili, tikhetso, tinani tekukhokha, kanye netimphendvulo temibuto
 
-Nangabe umcimbi une-Registration Questions lehlanganisiwe, likhasi lemininingwane libuye liveta i-**Unanswered questions only** filter kutfola ngekushesha labhalisile labangakafaki timphendvulo, kanye nenkinobho ye-**View Answers** kukubhalisa ngakunye lokuphenduliwe kubona timphendvulo tabo. Imicimbi lekhokhelwako yengeta insika ye-**Type**, insika ye-**Paid / Total**, tibalo temaluhlobo ngamunye, ne-dialog yemininingwane yekukhokha -- buka [Kubhalisa Lokukhokhelwako](./paid-registrations.md#the-registration-roster).
+Uma umcimbi unemibuto yekubhalisa lenamatisiwe, ikhasi lemininingwane liphindza libonise sihlungo se**Unanswered questions only** kutsi kufunyanwe kalula labhalisako labangakaphendvuli, kanye nenkinobho **View Answers** ngalowo nalowo lobhalisako losephendvulile kutsi kubonakale timphendvulo tabo. Imicimbi lekhokhelwako yengeta ikholomu **Type**, ikholomu **Paid / Total**, tinani ngetinhlobo, kanye nebhokisi lemininingwane yetikhokho -- bheka [Kubhalisa Lokukhokhelwako](./paid-registrations.md#the-registration-roster).
 
 :::tip
-Sebentisa i-progress bar yelinani lelivumelekile kulandzelela kutsi imicimbi igcwala ngasiphi lisivinini. Le-bar ishintja ibe bomvu nangabe umcimbi usekulinganini nome ngetulu kwalo.
+Sebentisa ibha yenkhulisekelo yekugcwala kutsi ubone kutsi imicimbi igcwala ngakuphi ngekushesha. Ibha iba bomvu lapho umcimbi ufinyelela noma udlula kulinani lelikhulu.
 :::
 
-## Tinyatselo Letilandzelako
+## Tinyatelo Letilandzelako
 
-- [Ikhalenda Lelihlelwe](./curated-calendar.md) -- Dala ikhalenda lelibutsa kusuka emacenjini lamanyenti
-- [Kubhalisa Lokukhokhelwako](./paid-registrations.md) -- Tinhlobo talabatakubakhona, tikhetso letengetiwe, emakhodi esaphulelo, kukhokha, kanye netiluhlu tekulindza
-- [Umhlahlandlela Wekubhalisela Umcimbi](../guides/event-registration.md) -- Umhlahlandlela wenyatselo ngenyatselo wekuhlela kubhalisela umcimbi
-- [Kubuka Konkhe Emakhalenda](./index.md) -- Buyela ekubukeni konkhe kwemakhalenda
+- [Ikhalenda Lelicoseliwe](./curated-calendar.md) -- Kwakha ikhalenda lelitfola emaqembini lamaningi
+- [Kubhalisa Lokukhokhelwako](./paid-registrations.md) -- Tinhlobo tabaphambili, tikhetso letingeteleko, tikhodi tetinciphiso, tikhokho, nemalistelo ekulindza
+- [Umhlahlandlela Wekubhalisa Emcimbini](../guides/event-registration.md) -- Umhlahlandlela ngesinyatelo ngesinyatelo wekusetsa kubhalisa emcimbini
+- [Umbono Jikelele Wemakhalenda](./index.md) -- Buyela ekubukweni jikelele kwemakhalenda

@@ -1,13 +1,13 @@
 ---
 title: "Cerințe preliminare"
-description: "Instalați Node.js, npm, Git și uneltele platformei înainte de a lucra local la proiecte ChurchApps precum B1 Admin, Lessons.church, FreePlay sau API-ul."
+description: "Configurați Node.js, npm, Git și instrumentele specifice platformei înainte de a lucra local la proiectele ChurchApps, precum B1 Admin, Lessons.church, FreePlay sau API-ul."
 ---
 
 # Cerințe preliminare
 
 <div class="article-intro">
 
-Instrumentele de care aveți nevoie depind de proiectele la care plănuiți să lucrați. Această pagină enumeră tot software-ul necesar, organizat pe domenii de dezvoltare, de la cerințele comune tuturor până la lanțurile de instrumente specifice fiecărei platforme.
+Instrumentele de care aveți nevoie depind de proiectele la care intenționați să lucrați. Această pagină enumeră tot software-ul necesar, organizat pe domenii de dezvoltare, de la cerințele comune până la instrumentele specifice fiecărei platforme.
 
 </div>
 
@@ -15,7 +15,7 @@ Instrumentele de care aveți nevoie depind de proiectele la care plănuiți să 
 <h4>Înainte de a începe</h4>
 
 - Consultați [Prezentarea generală a proiectelor](./project-overview.md) pentru a stabili la ce proiecte doriți să lucrați
-- Aveți nevoie de acces de administrator pe computerul de dezvoltare pentru a instala software-ul
+- Aveți nevoie de drepturi de administrator pe computerul de dezvoltare pentru a instala software-ul
 
 </div>
 
@@ -26,26 +26,26 @@ Acestea sunt necesare indiferent de proiectul la care lucrați:
 | Instrument | Versiune | Observații |
 |------|---------|-------|
 | **Node.js** | 20+ | Versiunea 22+ este necesară pentru B1App și LessonsApp (Next.js 16); versiunea 24+ este necesară pentru Api |
-| **npm** | Vine odată cu Node.js | Folosit ca gestionar de pachete în toate proiectele |
+| **npm** | Vine odată cu Node.js | Utilizat ca manager de pachete în toate proiectele |
 | **Git** | Ultima versiune | Fiecare proiect este un depozit separat |
 
 :::tip
-Folosiți un manager de versiuni Node, precum [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) sau [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows), pentru a comuta cu ușurință între versiunile Node.
+Folosiți un manager de versiuni Node, precum [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) sau [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows), pentru a comuta ușor între versiunile Node.
 :::
 
 ## Dezvoltarea API-ului backend
 
-Dacă intenționați să rulați API-ul local (în loc să folosiți API-urile demonstrative):
+Dacă intenționați să rulați API-ul local (în loc să folosiți API-urile demo):
 
 | Instrument | Versiune | Observații |
 |------|---------|-------|
-| **MySQL** | 8.0+ | Fiecare modul al API-ului folosește propria bază de date |
+| **MySQL** | 8.0+ | Fiecare modul al API-ului utilizează propria bază de date |
 
-Veți avea nevoie de șase baze de date pentru API-ul de bază: `membership`, `attendance`, `content`, `giving`, `messaging` și `doing`. API-ul include scripturi pentru inițializarea schemei -- consultați ghidul [configurarea locală a API-ului](../api/local-setup.md).
+Pentru API-ul de bază veți avea nevoie de șase baze de date: `membership`, `attendance`, `content`, `giving`, `messaging` și `doing`. API-ul include scripturi pentru inițializarea schemei -- consultați ghidul [Configurarea locală a API-ului](../api/local-setup.md).
 
 ## Dezvoltarea aplicațiilor mobile
 
-Pentru B1Mobile, B1Checkin, LessonsScreen sau alte aplicații React Native / Expo:
+Pentru B1Checkin, LessonsScreen sau alte aplicații React Native / Expo:
 
 | Instrument | Versiune | Observații |
 |------|---------|-------|
@@ -54,7 +54,7 @@ Pentru B1Mobile, B1Checkin, LessonsScreen sau alte aplicații React Native / Exp
 | **Xcode** | Ultima versiune | Necesar pentru dezvoltarea iOS (doar macOS) |
 
 :::info
-Puteți folosi aplicația Expo Go pe un dispozitiv fizic pentru testare rapidă, fără Android Studio sau Xcode. Totuși, pentru a construi fișiere binare de producție este necesar lanțul de instrumente nativ.
+Puteți folosi aplicația Expo Go pe un dispozitiv fizic pentru testare rapidă, fără Android Studio sau Xcode. Totuși, generarea de binare pentru producție necesită instrumentele native.
 :::
 
 ## Dezvoltarea FreeShow (aplicația desktop)
@@ -65,7 +65,7 @@ FreeShow are dependențe suplimentare de compilare nativă, deoarece compilează
 
 | Instrument | Versiune | Observații |
 |------|---------|-------|
-| **Python** | 3.12 | Necesar de `node-gyp` pentru compilarea modulelor native |
+| **Python** | 3.12 | Necesar pentru `node-gyp`, la compilarea modulelor native |
 | **setuptools** | Ultima versiune | Instalare prin `pip install setuptools` |
 
 ### Windows
@@ -73,16 +73,16 @@ FreeShow are dependențe suplimentare de compilare nativă, deoarece compilează
 | Instrument | Observații |
 |------|-------|
 | **Visual Studio** | Ediția Community este suficientă |
-| **Pachetul de lucru „Desktop development with C++"** | Selectați-l în timpul instalării Visual Studio |
-| **Windows 10 SDK** | Inclus în pachetul C++; asigurați-vă că este bifat |
+| **Sarcina de lucru „Desktop development with C++”** | Selectați-o în timpul instalării Visual Studio |
+| **Windows 10 SDK** | Inclus în sarcina de lucru C++; asigurați-vă că este bifat |
 
-Puteți instala uneltele de compilare Visual Studio din linia de comandă:
+Puteți instala instrumentele de compilare Visual Studio din linia de comandă:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-Sau instalați Visual Studio Community și selectați pachetul de lucru „Desktop development with C++" în timpul instalării.
+Sau instalați Visual Studio Community și selectați sarcina de lucru „Desktop development with C++” în timpul instalării.
 
 ### Linux
 
@@ -92,7 +92,7 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Uneltele de linie de comandă Xcode sunt, de obicei, suficiente:
+De obicei, sunt suficiente Xcode Command Line Tools:
 
 ```bash
 xcode-select --install
@@ -103,8 +103,8 @@ xcode-select --install
 Rulați aceste comenzi pentru a confirma că totul este instalat:
 
 ```bash
-node --version    # Ar trebui să afișeze v20.x.x sau mai mare
-npm --version     # Ar trebui să afișeze 10.x.x sau mai mare
+node --version    # Ar trebui să afișeze v20.x.x sau o versiune superioară
+npm --version     # Ar trebui să afișeze 10.x.x sau o versiune superioară
 git --version     # Ar trebui să afișeze git version 2.x.x
 mysql --version   # Necesar doar pentru dezvoltarea locală a API-ului
 ```

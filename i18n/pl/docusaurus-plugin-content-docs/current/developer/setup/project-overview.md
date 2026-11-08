@@ -1,13 +1,13 @@
 ---
 title: "Przegląd projektu"
-description: "Mapa repozytoriów ChurchApps według kategorii: frameworki, porty, bazy danych i połączenia współdzielonych pakietów @churchapps."
+description: "Zapoznaj się z wszystkimi repozytoriami ChurchApps pogrupowanymi według kategorii, z frameworkami, portami deweloperskimi, bazami danych oraz sposobem połączenia współdzielonych pakietów @churchapps w dokumentacji konfiguracji środowiska dla programistów."
 ---
 
 # Przegląd projektu
 
 <div class="article-intro">
 
-ChurchApps składa się z około 20 niezależnych repozytoriów, z których każde jest publikowane w [organizacji ChurchApps na GitHubie](https://github.com/ChurchApps). Ta strona zawiera pełny spis wszystkich projektów pogrupowanych według kategorii, wraz z ich frameworkami, portami i powiązaniami.
+ChurchApps składa się z około 20 niezależnych repozytoriów, każde opublikowane w [organizacji ChurchApps na GitHubie](https://github.com/ChurchApps). Ta strona zawiera pełny spis wszystkich projektów uporządkowanych według kategorii, wraz z ich frameworkami, portami i powiązaniami.
 
 </div>
 
@@ -20,16 +20,16 @@ ChurchApps składa się z około 20 niezależnych repozytoriów, z których każ
 
 ## Backendowe API
 
-Wszystkie API są zbudowane w Node.js, Express i TypeScript i są wdrażane w AWS Lambda za pomocą Serverless Framework.
+Wszystkie API są zbudowane w oparciu o Node.js, Express i TypeScript i są wdrażane w AWS Lambda za pomocą Serverless Framework.
 
 | Projekt | Przeznaczenie | Port deweloperski | Baza danych |
 |---------|---------------|-------------------|-------------|
-| **[Api](https://github.com/ChurchApps/Api)** | Główny modularny monolit obejmujący członkostwo, frekwencję, treści, dary, komunikację i zadania | 8084 | Oddzielna baza MySQL dla każdego modułu (łącznie 6) |
+| **[Api](https://github.com/ChurchApps/Api)** | Główny modularny monolit obejmujący członkostwo, frekwencję, treści, dary, komunikację i zadania | 8084 | Osobna baza MySQL dla każdego modułu (łącznie 6) |
 | **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Backend Lessons.church | -- | Pojedyncza baza MySQL `lessons` |
 | **[AskApi](https://github.com/ChurchApps/AskApi)** | Narzędzie do zapytań AI oparte na OpenAI | -- | -- |
 
 :::info
-Główny projekt **Api** jest modularnym monolitem. Każdy moduł (membership, attendance, content, giving, messaging, doing) ma własną bazę danych i jest dostępny pod podścieżką, na przykład `/membership` lub `/giving`. W środowisku produkcyjnym są one udostępniane jako osobne funkcje Lambda za API Gateway.
+Główny projekt **Api** to modularny monolit. Każdy moduł (membership, attendance, content, giving, messaging, doing) ma własną bazę danych i jest dostępny pod podścieżką, np. `/membership` lub `/giving`. W środowisku produkcyjnym są one udostępniane jako osobne funkcje Lambda za API Gateway.
 :::
 
 ## Aplikacje webowe
@@ -40,7 +40,7 @@ Główny projekt **Api** jest modularnym monolitem. Każdy moduł (membership, a
 | **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | Publiczna aplikacja dla członków kościoła |
 | **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Frontend Lessons.church |
 | **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Narzędzie do importu i eksportu danych |
-| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Statyczna | -- | Statyczne strony internetowe kościołów z materiałami informacyjnymi |
+| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Statyczny | -- | Statyczne strony internetowe kościołów w formie broszur |
 
 ## Aplikacje mobilne
 
@@ -48,11 +48,10 @@ Wszystkie aplikacje mobilne korzystają z React Native z Expo.
 
 | Projekt | Przeznaczenie | Kluczowe wersje |
 |---------|---------------|-----------------|
-| **[B1Mobile](https://github.com/ChurchApps/B1Mobile)** | Aplikacja dla członków kościoła na iOS i Androida | Expo 54, React Native 0.81 |
-| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Aplikacja kiosku do meldowania się | Expo |
-| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Wyświetlacz lekcji na Android TV | Expo |
+| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Aplikacja kiosku do zameldowania | Expo |
+| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Wyświetlanie lekcji na Android TV | Expo |
 | **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Odtwarzanie treści (w tym na systemach TV) | Expo |
-| **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Mobilny pilot do FreeShow | Expo |
+| **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Mobilny pilot zdalnego sterowania dla FreeShow | Expo |
 
 ## Aplikacje desktopowe
 
@@ -67,24 +66,24 @@ Współdzielony kod jest publikowany w npm w zakresie `@churchapps` i jest używ
 | Pakiet | Przeznaczenie | Używany przez |
 |--------|---------------|---------------|
 | `@churchapps/helpers` | Podstawowe narzędzia i współdzielone interfejsy TypeScript (DateHelper, ApiHelper, CurrencyHelper itd.) | Wszystkie projekty |
-| `@churchapps/apihelper` | Narzędzia serwera Express (uwierzytelnianie, kontrolery bazowe, dostęp do bazy danych, integracje z AWS) | Wszystkie API |
-| `@churchapps/apphelper` | Biblioteka komponentów React z podmodułami do logowania, darowizn, formularzy, markdown i tworzenia stron | Wszystkie aplikacje webowe |
+| `@churchapps/apihelper` | Narzędzia serwera Express (uwierzytelnianie, kontrolery bazowe, dostęp do bazy danych, integracje AWS) | Wszystkie API |
+| `@churchapps/apphelper` | Biblioteka komponentów React z podmodułami dla logowania, darowizn, formularzy, markdown i tworzenia stron internetowych | Wszystkie aplikacje webowe |
 | `@churchapps/content-providers` | Abstrakcja dostawców treści zewnętrznych (Lessons.church, Planning Center, Dropbox i inni) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | Zestaw narzędzi integracyjnych B1.church: webhooki, klient REST, OAuth | Zewnętrzni twórcy integracji |
+| `@churchapps/integration-sdk` | Zestaw narzędzi do integracji B1.church: webhooki, klient REST, OAuth | Zewnętrzni deweloperzy integracji |
 | `@churchapps/texting` | Abstrakcja dostawców SMS | Api |
 
-Informacje o konfiguracji workspace i procesie wydawania znajdziesz w sekcji [Biblioteki współdzielone](../shared-libraries/index.md).
+Informacje o konfiguracji workspace i procesie wydawania znajdziesz w [Biblioteki współdzielone](../shared-libraries/index.md).
 
 ## Powiązania między projektami
 
 ```
-Frontend Apps              Shared Libraries           Backend APIs
---------------             ----------------           ------------
+Aplikacje frontendowe      Biblioteki współdzielone   Backendowe API
+---------------------      ------------------------   --------------
 B1Admin      ──────┐
 B1App        ──────┤       @churchapps/helpers ◄───── Api
 LessonsApp   ──────┼──►    @churchapps/apphelper      LessonsApi
-B1Mobile     ──────┤                                   AskApi
-FreeShow     ──────┘       @churchapps/apihelper ◄────┘
+FreeShow     ──────┘                                   AskApi
+                           @churchapps/apihelper ◄────┘
 ```
 
 Wszystkie aplikacje frontendowe zależą od `@churchapps/helpers`. Aplikacje webowe dodatkowo zależą od pakietów `@churchapps/apphelper`. Wszystkie backendowe API zależą zarówno od `@churchapps/helpers`, jak i `@churchapps/apihelper`.

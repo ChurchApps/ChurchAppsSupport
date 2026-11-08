@@ -1,21 +1,21 @@
 ---
-title: "Požymiai"
-description: "Įdiekite Node.js, npm, Git ir platformų įrankius prieš dirbdami su ChurchApps projektais, pvz., B1 Admin, Lessons.church, FreePlay ar API vietoje."
+title: "Požiūris"
+description: "Nustatykite Node.js, npm, Git ir platformos įrankius prieš dirbdami su ChurchApps projektais, tokiais kaip B1 Admin, Lessons.church, FreePlay ar API, lokaliai."
 ---
 
-# Požymiai
+# Požiūris
 
 <div class="article-intro">
 
-Įrankiai, kurių jums reikės, priklauso nuo to, su kuriais projektais planuojate dirbti. Šiame puslapyje pateikiama visa reikalinga programinė įranga, suskirstyta pagal kūrimo sritis – nuo bendrųjų reikalavimų iki platformai skirtų įrankių rinkinių.
+Įrankiai, kurių jums reikia, priklauso nuo to, su kuriais projektais planuojate dirbti. Šiame puslapyje pateikiama visa reikalinga programinė įranga, sugrupuota pagal kūrimo sritis: nuo bendrųjų reikalavimų iki platformai specifinių įrankių grandinių.
 
 </div>
 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Peržiūrėkite [Projektų apžvalgą](./project-overview.md), kad nustatytumėte, su kuriais projektais norite dirbti
-- Savo kūrimo kompiuteryje turėkite administratoriaus teises programinei įrangai įdiegti
+- Peržiūrėkite [Projekto apžvalgą](./project-overview.md), kad nustatytumėte, su kuriais projektais norite dirbti
+- Savo kompiuteryje turėkite administratoriaus teises programinei įrangai įdiegti
 
 </div>
 
@@ -25,56 +25,56 @@ description: "Įdiekite Node.js, npm, Git ir platformų įrankius prieš dirbdam
 
 | Įrankis | Versija | Pastabos |
 |------|---------|-------|
-| **Node.js** | 20+ | B1App ir LessonsApp (Next.js 16) reikalauja 22+ versijos; Api – 24+ versijos |
+| **Node.js** | 20+ | Versija 22+ reikalinga B1App ir LessonsApp (Next.js 16); 24+ reikalinga Api |
 | **npm** | Pateikiamas kartu su Node.js | Naudojamas kaip paketų tvarkyklė visuose projektuose |
 | **Git** | Naujausia | Kiekvienas projektas yra atskira saugykla |
 
 :::tip
-Norėdami lengvai perjungti Node versijas, naudokite versijų tvaldymo įrankį, pvz., [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) arba [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows).
+Naudokite Node versijų tvaldymo įrankį, pvz., [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) arba [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows), kad patogiai perjungtumėte Node versijas.
 :::
 
 ## Backend API kūrimas
 
-Jei planuojate vietoje paleisti API (o ne nukreipti į demonstracinius API):
+Jei planuojate paleisti API lokaliai (o ne naudoti demonstracinius API):
 
 | Įrankis | Versija | Pastabos |
 |------|---------|-------|
 | **MySQL** | 8.0+ | Kiekvienas API modulis naudoja savo duomenų bazę |
 
-Pagrindiniam API jums reikės šešių duomenų bazių: `membership`, `attendance`, `content`, `giving`, `messaging` ir `doing`. API yra skriptų, skirtų schemai inicializuoti – žr. vadovą [API vietinis diegimas](../api/local-setup.md).
+Pagrindiniam API jums reikės šešių duomenų bazių: `membership`, `attendance`, `content`, `giving`, `messaging` ir `doing`. API yra skriptų, skirtų schemai inicializuoti – žr. [API lokalaus nustatymo](../api/local-setup.md) vadovą.
 
-## Mobiliųjų programėlių kūrimas
+## Mobiliosios programėlės kūrimas
 
-B1Mobile, B1Checkin, LessonsScreen ar kitoms React Native / Expo programėlėms:
+B1Checkin, LessonsScreen ar kitoms React Native / Expo programėlėms:
 
 | Įrankis | Versija | Pastabos |
 |------|---------|-------|
 | **Expo CLI** | Naujausia | Įdiegti globaliai: `npm install -g expo-cli` |
-| **Android Studio** | Naujausia | Reikalingas Android kūrimui (apima Android SDK) |
-| **Xcode** | Naujausia | Reikalingas iOS kūrimui (tik macOS) |
+| **Android Studio** | Naujausia | Reikalinga Android kūrimui (apima Android SDK) |
+| **Xcode** | Naujausia | Reikalinga iOS kūrimui (tik macOS) |
 
 :::info
-Greitam testavimui galite naudoti Expo Go programėlę fiziniame įrenginyje, be Android Studio ar Xcode. Tačiau gamybinių versijų kūrimui reikalingi native įrankių rinkiniai.
+Greitam testavimui fiziniame įrenginyje galite naudoti Expo Go programėlę, be Android Studio ar Xcode. Tačiau produkcinių versijų kūrimui reikalingos vietinės įrankių grandinės.
 :::
 
-## FreeShow (darbalaukio programa) kūrimas
+## FreeShow (darbalaukio programėlės) kūrimas
 
-FreeShow turi papildomų native kūrimo priklausomybių, nes kompiliuoja native Node modulius (pvz., `canvas`):
+FreeShow turi papildomų vietinių kūrimo priklausomybių, nes kompiliuoja vietinius Node modulius (pvz., `canvas`):
 
 ### Visos platformos
 
 | Įrankis | Versija | Pastabos |
 |------|---------|-------|
-| **Python** | 3.12 | Reikalingas `node-gyp` native moduliams kompiliuoti |
-| **setuptools** | Naujausia | Įdiegti per `pip install setuptools` |
+| **Python** | 3.12 | Reikalinga `node-gyp` vietinių modulių kompiliavimui |
+| **setuptools** | Naujausia | Įdiekite per `pip install setuptools` |
 
 ### Windows
 
 | Įrankis | Pastabos |
 |------|-------|
 | **Visual Studio** | Pakanka Community leidimo |
-| **„Desktop development with C++“ darbo krūvis** | Pasirinkite diegiant Visual Studio |
-| **Windows 10 SDK** | Įtrauktas į C++ darbo krūvį; įsitikinkite, kad jis pažymėtas |
+| **„Desktop development with C++“ darbo apkrova** | Pasirinkite diegiant Visual Studio |
+| **Windows 10 SDK** | Įtraukta į C++ darbo apkrovą; įsitikinkite, kad pažymėta |
 
 Visual Studio kūrimo įrankius galite įdiegti per komandinę eilutę:
 
@@ -82,7 +82,7 @@ Visual Studio kūrimo įrankius galite įdiegti per komandinę eilutę:
 npm install --global windows-build-tools
 ```
 
-Arba įdiekite Visual Studio Community ir diegimo metu pasirinkite „Desktop development with C++“ darbo krūvį.
+Arba įdiekite Visual Studio Community ir diegimo metu pasirinkite „Desktop development with C++“ darbo apkrovą.
 
 ### Linux
 
@@ -92,7 +92,7 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Paprastai pakanka Xcode Command Line Tools:
+Paprastai pakanka Xcode komandinės eilutės įrankių:
 
 ```bash
 xcode-select --install
@@ -106,10 +106,10 @@ Paleiskite šias komandas, kad įsitikintumėte, jog viskas įdiegta:
 node --version    # Turėtų išvesti v20.x.x arba aukštesnę
 npm --version     # Turėtų išvesti 10.x.x arba aukštesnę
 git --version     # Turėtų išvesti git version 2.x.x
-mysql --version   # Reikalinga tik vietiniam API kūrimui
+mysql --version   # Reikalinga tik lokaliam API kūrimui
 ```
 
 ## Kiti žingsniai
 
-- **[Projektų apžvalga](./project-overview.md)** -- Peržiūrėkite visus projektus ir jų paskirtį
+- **[Projekto apžvalga](./project-overview.md)** -- Peržiūrėkite visus projektus ir jų paskirtį
 - **[Aplinkos kintamieji](./environment-variables.md)** -- Sukonfigūruokite savo `.env` failus

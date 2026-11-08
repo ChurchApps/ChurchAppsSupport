@@ -1,20 +1,20 @@
 ---
 title: "项目概览"
-description: "按类别梳理 ChurchApps 的所有代码仓库，列出框架、开发端口和数据库，并说明共享 @churchapps 包如何将它们连接起来。位于开发者设置文档中。"
+description: "按类别列出所有 ChurchApps 代码仓库，包括框架、开发端口、数据库，以及共享 @churchapps 包如何将它们连接起来，见开发者环境搭建文档。"
 ---
 
 # 项目概览
 
 <div class="article-intro">
 
-ChurchApps 由大约 20 个独立的仓库组成，全部发布在 [ChurchApps GitHub 组织](https://github.com/ChurchApps) 下。本页面提供按类别组织的所有项目的完整清单，以及它们的框架、端口和关系。
+ChurchApps 由大约 20 个独立的代码仓库组成，每个仓库都发布在 [ChurchApps GitHub 组织](https://github.com/ChurchApps)下。本页按类别完整列出所有项目，并说明它们的框架、端口及相互关系。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 为您想要参与的项目类别安装 [前提条件](./prerequisites.md)
+- 安装您想要参与的项目类别所需的[前置条件](./prerequisites.md)
 
 </div>
 
@@ -24,12 +24,12 @@ ChurchApps 由大约 20 个独立的仓库组成，全部发布在 [ChurchApps G
 
 | 项目 | 用途 | 开发端口 | 数据库 |
 |---------|---------|----------|----------|
-| **[Api](https://github.com/ChurchApps/Api)** | 涵盖 membership、attendance、content、giving、messaging 和 doing 的核心模块化单体 | 8084 | 每个模块一个独立的 MySQL 数据库（共 6 个） |
+| **[Api](https://github.com/ChurchApps/Api)** | 核心模块化单体，涵盖会员、考勤、内容、奉献、消息和事工 | 8084 | 每个模块使用独立的 MySQL 数据库（共 6 个） |
 | **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Lessons.church 后端 | -- | 单个 `lessons` MySQL 数据库 |
-| **[AskApi](https://github.com/ChurchApps/AskApi)** | 由 OpenAI 驱动的 AI 查询工具 | -- | -- |
+| **[AskApi](https://github.com/ChurchApps/AskApi)** | 基于 OpenAI 的 AI 查询工具 | -- | -- |
 
 :::info
-核心 **Api** 项目是一个模块化单体。每个模块（membership、attendance、content、giving、messaging、doing）都有自己的数据库，可通过子路径（如 `/membership` 或 `/giving`）访问。在生产环境中，它们作为 API Gateway 后面的独立 Lambda 函数公开。
+核心 **Api** 项目是一个模块化单体。每个模块（会员、考勤、内容、奉献、消息、事工）都有自己的数据库，并可通过 `/membership` 或 `/giving` 等子路径访问。在生产环境中，这些模块以独立的 Lambda 函数形式部署，并位于 API Gateway 之后。
 :::
 
 ## Web 应用
@@ -40,21 +40,20 @@ ChurchApps 由大约 20 个独立的仓库组成，全部发布在 [ChurchApps G
 | **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | 面向公众的教会成员应用 |
 | **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Lessons.church 前端 |
 | **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | 数据导入/导出工具 |
-| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | 静态 | -- | 教会静态宣传网站 |
+| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | 静态 | -- | 静态教会宣传册网站 |
 
 ## 移动应用
 
-所有移动应用使用 React Native 配合 Expo。
+所有移动应用均使用 React Native 与 Expo 构建。
 
 | 项目 | 用途 | 关键版本 |
 |---------|---------|--------------|
-| **[B1Mobile](https://github.com/ChurchApps/B1Mobile)** | iOS 和 Android 教会成员应用 | Expo 54、React Native 0.81 |
-| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | 签到亭应用 | Expo |
-| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Android TV 课程显示 | Expo |
-| **[FreePlay](https://github.com/ChurchApps/FreePlay)** | 内容播放（包括 TV OS） | Expo |
+| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | 签到自助终端应用 | Expo |
+| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Android TV 课程展示 | Expo |
+| **[FreePlay](https://github.com/ChurchApps/FreePlay)** | 内容播放（包括电视操作系统） | Expo |
 | **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | FreeShow 的移动遥控器 | Expo |
 
-## 桌面
+## 桌面应用
 
 | 项目 | 技术栈 | 用途 |
 |---------|-------|---------|
@@ -62,34 +61,34 @@ ChurchApps 由大约 20 个独立的仓库组成，全部发布在 [ChurchApps G
 
 ## 共享库
 
-共享代码发布到 npm 的 `@churchapps` 作用域下，并由上述项目作为常规 npm 依赖项使用。所有共享包位于单个仓库中——[Packages](https://github.com/ChurchApps/Packages)——作为 Yarn 工作区管理并使用 changesets 发布。
+共享代码以 `@churchapps` 作用域发布到 npm，并作为常规 npm 依赖被上述项目使用。所有共享包都位于同一个代码仓库 —— [Packages](https://github.com/ChurchApps/Packages) 中，该仓库以 Yarn workspace 方式管理，并通过 changesets 发布。
 
 | 包 | 用途 | 使用者 |
-|---------|---------|---------|
-| `@churchapps/helpers` | 基础工具和共享 TypeScript 接口（DateHelper、ApiHelper、CurrencyHelper 等） | 所有项目 |
+|---------|---------|--------------|
+| `@churchapps/helpers` | 基础工具和共享的 TypeScript 接口（DateHelper、ApiHelper、CurrencyHelper 等） | 所有项目 |
 | `@churchapps/apihelper` | Express 服务器工具（认证、基础控制器、数据库访问、AWS 集成） | 所有 API |
-| `@churchapps/apphelper` | React 组件库，包含用于登录、捐赠、表单、markdown 和网站构建的子路径模块 | 所有 Web 应用 |
-| `@churchapps/content-providers` | 第三方内容提供商抽象（Lessons.church、Planning Center、Dropbox 等） | Api、B1Admin、B1App、FreePlay |
+| `@churchapps/apphelper` | React 组件库，包含用于登录、捐赠、表单、Markdown 和网站构建的子路径模块 | 所有 Web 应用 |
+| `@churchapps/content-providers` | 第三方内容提供方抽象层（Lessons.church、Planning Center、Dropbox 等） | Api、B1Admin、B1App、FreePlay |
 | `@churchapps/integration-sdk` | B1.church 集成工具包：Webhook、REST 客户端、OAuth | 外部集成开发者 |
-| `@churchapps/texting` | SMS 提供商抽象 | Api |
+| `@churchapps/texting` | 短信服务提供方抽象层 | Api |
 
-参阅 [共享库](../shared-libraries/index.md) 了解工作区设置和发布工作流程。
+有关工作区设置和发布流程，请参阅[共享库](../shared-libraries/index.md)。
 
 ## 项目关系
 
 ```
-前端应用              共享库                  后端 API
---------------        ----------------       -----------
+前端应用                   共享库                     后端 API
+--------------             ----------------           ------------
 B1Admin      ──────┐
-B1App        ──────┤   @churchapps/helpers ◄─── Api
-LessonsApp   ──────┼──► @churchapps/apphelper    LessonsApi
-B1Mobile     ──────┤                             AskApi
-FreeShow     ──────┘   @churchapps/apihelper ◄──┘
+B1App        ──────┤       @churchapps/helpers ◄───── Api
+LessonsApp   ──────┼──►    @churchapps/apphelper      LessonsApi
+FreeShow     ──────┘                                   AskApi
+                           @churchapps/apihelper ◄────┘
 ```
 
-所有前端应用依赖于 `@churchapps/helpers`。Web 应用还额外依赖于 `@churchapps/apphelper` 包。所有后端 API 同时依赖于 `@churchapps/helpers` 和 `@churchapps/apihelper`。
+所有前端应用都依赖 `@churchapps/helpers`。Web 应用还额外依赖 `@churchapps/apphelper` 包。所有后端 API 都同时依赖 `@churchapps/helpers` 和 `@churchapps/apihelper`。
 
 ## 后续步骤
 
-- **[环境变量](./environment-variables.md)** ——配置您的 `.env` 文件以连接到 API
-- **[API 本地设置](../api/local-setup.md)** ——在本地设置后端 API
+- **[环境变量](./environment-variables.md)** -- 配置您的 `.env` 文件以连接 API
+- **[API 本地搭建](../api/local-setup.md)** -- 在本地设置后端 API

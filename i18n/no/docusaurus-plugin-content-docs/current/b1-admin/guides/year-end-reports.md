@@ -1,94 +1,94 @@
 ---
-title: "Veiledning: Generer årsavslutningsdonasjonsrapporter"
-description: "Avslutt årets gaveregistreringer i B1 Admin, kontroller skatteinnstillinger for fond, og lag skattefradragsberettigede giverbekreftelser for alle givere."
+title: "Veiledning: Generer årsoppgaver for gaver"
+description: "I B1 Admin fullfører du årets gaveregistreringer, kontrollerer skatteinnstillingene for fondene og genererer skattefradragsberettigede gaveoppgaver for hver giver."
 ---
 
-# Generer årsavslutningsdonasjonsrapporter
+# Generer årsoppgaver for gaver
 
 <div class="article-intro">
 
-Gå gjennom årsavslutningsprosessen med å avsluttende dine donasjonsposter, verifisere fondinnstillinger, og generer skattemessig fradragsberettigede donasjonserklæringer for hver donor. Dette gjøres vanligvis tidlig i januar for forrige kalenderår.
+Gå gjennom årsprosessen med å fullføre gaveregistreringene, kontrollere fondsinnstillingene og generere skattefradragsberettigede gaveoppgaver for hver giver. Dette gjøres vanligvis tidlig i januar for forrige kalenderår.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- B1 Admin-konto med finanstilgang
-- Donasjoner registrert gjennom året (online via Stripe og/eller manuelt lagt inn)
-- Tilgang til Stripe-kontoen din hvis du godtar online donasjoner
+- B1 Admin-konto med tilgang til økonomi
+- Gaver registrert gjennom året (online via Stripe og/eller manuelt registrert)
+- Tilgang til din Stripe-konto hvis du tar imot online-gaver
 
 </div>
 
-## Trinn 1: Importer endelige Stripe-transaksjoner
+## Steg 1: Importer siste Stripe-transaksjoner
 
-Sørg for at alle online donasjoner fra slutten av året er i systemet ditt.
+Sørg for at alle online-gaver fra slutten av året er i systemet ditt.
 
-Følg [Stripe-import](../donations/stripe-import.md)-veiledningen for å:
+Følg veiledningen [Stripe-import](../donations/stripe-import.md) for å:
 
 1. Gå til Donasjoner > Stripe-import
-2. Velg et datoområde som dekker slutten av året (f.eks. 1. desember - 31. desember)
-3. Klikk Forhåndsvis først for å gjennomgå, deretter Importer manglende for å fullføre
+2. Velg en datoperiode som dekker slutten av året (f.eks. 1. desember – 31. desember)
+3. Klikk på Forhåndsvis først for å gjennomgå, og deretter på Importer manglende for å fullføre
 
 :::warning
-Kjør denne importen før du genererer erklæringer. Eventuelle transaksjoner som du ikke har importert, vil ikke vises på donatorerklæringer.
+Kjør denne importen før du genererer oppgavene. Transaksjoner du ikke har importert, vil ikke vises på giveroppgavene.
 :::
 
-## Trinn 2: Se over donasjonrapporter
+## Steg 2: Gjennomgå gaverapporter
 
-Verifiser at postene dine er nøyaktige før du genererer erklæringer.
+Kontroller at registreringene dine er korrekte før du genererer oppgavene.
 
-Følg [Donasjonrapporter](../donations/donation-reports.md)-veiledningen for å:
+Følg veiledningen [Gaverapporter](../donations/donation-reports.md) for å:
 
-1. Sjekk donasjonsoversiktssiden for hele året
-2. Se over totaler etter fond og sammenlign med bankkontoutskrifter for å fange eventuelle avvik
-3. Klikk inn i individuelle batcher for å verifisere donator-nivådetaljer hvis nødvendig
+1. Sjekk sammendragssiden for hele året
+2. Gå gjennom summene per fond og sammenlign dem med banksaldoen din for å finne eventuelle avvik
+3. Klikk inn på enkelte batcher for å kontrollere detaljer per giver ved behov
 
-## Trinn 3: Verifiser fondskattestatus
+## Steg 3: Kontroller skattestatus for fond
 
-Sørg for at hver fonds skattemessig fradragsberettigede innstilling er korrekt slik at erklæringer er nøyaktige.
+Sørg for at skattefradragsinnstillingen for hvert fond er riktig, slik at oppgavene blir korrekte.
 
-Følg [Fond](../donations/funds.md)-veiledningen for å:
+Følg veiledningen [Fond](../donations/funds.md) for å:
 
-1. Åpne hvert fond og bekreft at den skattemessig fradragsberettigede innstillingen er korrekt
+1. Åpne hvert fond og bekreft at innstillingen for skattefradrag er riktig
 
 :::info
-Bare donasjoner til fond merket som skattemessig fradragsberettiget vises på donasjonserklæringer. Hvis et fond burde være skattemessig fradragsberettiget, men ikke er merket på den måten, oppdater det før du genererer erklæringer.
+Bare gaver til fond som er merket som skattefradragsberettigede, vises på gaveoppgavene. Hvis et fond skulle vært skattefradragsberettiget, men ikke er merket slik, oppdater det før du genererer oppgavene.
 :::
 
-## Trinn 4: Generer donasjonserklæringer
+## Steg 4: Generer gaveoppgaver
 
-Opprett de offisielle donasjonserklæringene for donatorene dine.
+Lag de offisielle gaveoppgavene for giverne dine.
 
-Følg [Donasjonserklæringer](../donations/giving-statements.md)-veiledningen for å:
+Følg veiledningen [Gaveoppgaver](../donations/giving-statements.md) for å:
 
-1. Gå til **Donasjoner > Donasjonserklæringer**
-2. Velg året fra rullegardinmenyen og se over oppsummeringsstatistikken
+1. Gå til **Donasjoner > Gaveoppgaver**
+2. Velg året i nedtrekkslisten og gjennomgå oppsummeringstallene
 3. Velg nedlastingsmetode:
-   - **Last ned ZIP** -- individuelle CSV-filer, en per donor
-   - **Skriv ut alt** -- utskrivbar visning med hver erklæring på en ny side, med menighetens logo øverst (hvis du har lastet den opp)
+   - **Last ned ZIP** — individuelle CSV-filer, én per giver
+   - **Skriv ut alle** — utskriftsvisning med hver oppgave på en egen side, med kirkens logo øverst (hvis du har lastet opp en)
 
 :::tip
-Generer erklæringer tidlig i januar mens postene er friske. Dette gir deg tid til å fange eventuelle problemer før du sender dem ut.
+Generer oppgavene tidlig i januar mens registreringene er ferske. Da har du tid til å fange opp eventuelle problemer før de sendes ut.
 :::
 
-## Trinn 5: Distribuer til donatorer
+## Steg 5: Distribuer til givere
 
-Få erklæringene i donatorenes hender.
+Sørg for at oppgavene kommer frem til giverne.
 
-1. Skriv ut og send per post erklæringer, eller send e-post individuelle CSV-er til donatorer
-2. Medlemmer kan også vise sin egen donasjonhistorie og skrive ut erklæringer fra [B1.church](../../b1-church/giving/donation-history.md) og [B1-mobilappen](../../b1-church/giving/donation-history.md)
+1. Skriv ut og send oppgavene med post, eller send individuelle CSV-filer på e-post til giverne
+2. Medlemmer kan også se sin egen gavehistorikk og skrive ut oppgaver på [B1.church eller i B1 App](../../b1-church/giving/donation-history.md)
 
 ## Du er ferdig!
 
-Årsavslutningsdonasjonrapportene dine er fullstendige. Donatorer har sine skattemessig fradragsberettigede erklæringer, og dine finansielle poster er avsluttende for året.
+Årets gaverapporter er fullført. Giverne har sine skattefradragsberettigede oppgaver, og de økonomiske registreringene dine er avsluttet for året.
 
 ## Relaterte artikler
 
-- [Stripe-import](../donations/stripe-import.md) -- importer online transaksjoner
-- [Donasjonrapporter](../donations/donation-reports.md) -- vis donasjontrender og totaler
-- [Fond](../donations/funds.md) -- administrer fond og skattemessig fradragsberettigede innstillinger
-- [Donasjonserklæringer](../donations/giving-statements.md) -- generer årsavslutningserklæringer
-- [Registrer donasjoner](../donations/recording-donations.md) -- manuelt skriv inn kontant-/sjekkdonasjoner
-- [Donasjonhistorie (nett)](../../b1-church/giving/donation-history.md) -- medlem selvbetjeningsvisning
-- [Sett opp online donasjonsveiledning](./online-giving.md) -- innledende Stripe og donasjonoppsett
+- [Stripe-import](../donations/stripe-import.md) — importer online-transaksjoner
+- [Gaverapporter](../donations/donation-reports.md) — se gavetrender og summer
+- [Fond](../donations/funds.md) — administrer fond og skattefradragsinnstillinger
+- [Gaveoppgaver](../donations/giving-statements.md) — generer årsoppgaver for gaver
+- [Registrer gaver](../donations/recording-donations.md) — registrer kontant- og sjekkgaver manuelt
+- [Gavehistorikk (web)](../../b1-church/giving/donation-history.md) — selvbetjeningsvisning for medlemmer
+- [Veiledning: Sett opp online-giving](./online-giving.md) — første oppsett av Stripe og gaver

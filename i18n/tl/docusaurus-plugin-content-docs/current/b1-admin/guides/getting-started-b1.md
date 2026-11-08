@@ -1,21 +1,21 @@
 ---
 title: "Gabay: Simulan ang Iyong Simbahan sa B1"
-description: "Gabay sa pag-set up ng bagong simbahan sa B1 Admin: account, settings, role, pag-import ng miyembro, at paglunsad ng mga pangunahing feature."
+description: "Gabayan ka sa pag-set up ng bagong simbahan sa B1 Admin: gumawa ng iyong account, i-configure ang mga setting, magdagdag ng mga tungkulin, mag-import ng mga miyembro, at ilunsad ang mga pangunahing feature."
 ---
 
 # Simulan ang Iyong Simbahan sa B1
 
 <div class="article-intro">
 
-Isang kumpletong gabay sa onboarding para sa mga bagong simbahan — mula sa paggawa ng iyong account hanggang sa pag-import ng iyong member directory at pag-configure ng iyong mga unang feature. Sundin ang mga hakbang na ito nang sunud-sunod para mapatakbo ang iyong simbahan sa B1.
+Isang kumpletong gabay sa pagsisimula para sa mga bagong simbahan — mula sa paggawa ng iyong account hanggang sa pag-import ng direktoryo ng iyong mga miyembro at pag-configure ng iyong unang mga feature. Sundin ang mga hakbang na ito nang sunud-sunod upang maging handa at gumagana ang iyong simbahan sa B1.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Isang valid na email address
-- Logo ng iyong simbahan at mga branding asset (mga kulay, imahe) — inirerekomenda ngunit hindi kinakailangan para makapagsimula
+- Isang wastong email address
+- Ang logo at mga branding asset ng iyong simbahan (mga kulay, larawan) — inirerekomenda ngunit hindi kailangan para makapagsimula
 
 </div>
 
@@ -23,85 +23,85 @@ Isang kumpletong gabay sa onboarding para sa mga bagong simbahan — mula sa pag
 
 Irehistro ang iyong simbahan at maging unang administrator.
 
-Sundin ang gabay na [Gumawa ng Account](../../getting-started/create-account.md) para:
+Sundin ang gabay na [Create Account](../../getting-started/create-account.md) upang:
 
-1. Pumunta sa b1.church at magrehistro gamit ang iyong email
+1. Pumunta sa b1.church at magparehistro gamit ang iyong email
 2. I-verify ang iyong email address
-3. Piliin ang "Gumawa ng bagong simbahan" at ilagay ang pangalan ng iyong simbahan
-4. Awtomatiko kang magiging Domain Admin na may buong access sa lahat
+3. Piliin ang "Create a new church" at ilagay ang pangalan ng iyong simbahan
+4. Awtomatiko kang magiging Domain Admin na may buong access sa lahat ng bagay
 
-## Hakbang 2: I-configure ang mga Setting ng Simbahan
+## Hakbang 2: I-configure ang Mga Setting ng Simbahan
 
 Ilagay ang pangunahing impormasyon at branding ng iyong simbahan.
 
-Sundin ang gabay na [Mga Setting ng Simbahan](../settings/church-settings.md) para:
+Sundin ang gabay na [Church Settings](../settings/church-settings.md) upang:
 
-1. Ilagay ang pangalan ng simbahan, address, numero ng telepono, at email
-2. I-set ang iyong subdomain (ito ay magiging iyongsimbahan.b1.church)
-3. I-upload ang logo at mga imahe ng iyong simbahan
+1. Ilagay ang pangalan, address, numero ng telepono, at email ng iyong simbahan
+2. Itakda ang iyong subdomain (ito ay magiging yourchurch.b1.church)
+3. I-upload ang logo at mga larawan ng iyong simbahan
 
 :::tip
-Ang iyong subdomain ay lumalabas sa URL ng iyong website at sa giving page URL, kaya pumili ng maikling at madaling kilalanin (hal., "biyaya" para sa Biyaya Community Church).
+Lumalabas ang iyong subdomain sa URL ng iyong website at sa URL ng pahina ng pag-aabuloy, kaya pumili ng something maikli at madaling matandaan (halimbawa, "grace" para sa Grace Community Church).
 :::
 
-## Hakbang 3: Mag-set Up ng mga Tungkulin at Imbitahan ang Iyong Team
+## Hakbang 3: Mag-set Up ng mga Tungkulin at Mag-imbita ng Iyong Koponan
 
-Kontrolin kung sino ang may access sa ano at isama ang iyong team.
+Kontrolin kung sino ang may access sa ano at isama ang iyong koponan.
 
-Sundin ang gabay na [Mga Tungkulin at Pahintulot](../settings/roles-permissions.md) para:
+Sundin ang gabay na [Roles & Permissions](../settings/roles-permissions.md) upang:
 
-1. Gumawa ng mga tungkulin para sa iyong team (hal., "Pastor", "Office Admin", "Finance Team", "Worship Leader")
-2. Mag-assign ng mga partikular na pahintulot sa bawat tungkulin para makita lang ng mga tao ang kailangan nila
-3. Imbitahan ang mga miyembro ng team sa pamamagitan ng pagdagdag sa kanila at pag-assign ng mga tungkulin
+1. Gumawa ng mga tungkulin para sa iyong koponan (halimbawa, "Pastor", "Office Admin", "Finance Team", "Worship Leader")
+2. Magtalaga ng partikular na pahintulot sa bawat tungkulin upang makita lamang ng mga tao ang kailangan nila
+3. Mag-imbita ng mga miyembro ng koponan sa pamamagitan ng pagdaragdag sa kanila at pagtatalaga ng tungkulin
 
 :::info
-Hindi mo kailangang gawin ang lahat mag-isa. Imbitahan ang iyong office staff, mga pastor, at mga ministry leader nang maaga para matulungan ka nilang i-set up ang kanilang mga lugar.
+Hindi mo kailangang gawin ang lahat nang mag-isa. Imbitahan nang maaga ang iyong mga kawani sa opisina, mga pastor, at mga lider ng ministeryo upang matulungan ka nilang i-set up ang kanilang mga bahagi.
 :::
 
 ## Hakbang 4: I-import ang Iyong mga Tao
 
-Dalhin ang iyong kasalukuyang member directory sa B1.
+Dalhin ang umiiral mong direktoryo ng miyembro sa B1.
 
-Sundin ang gabay na [Pag-import ng Data](../people/importing-data.md). Mayroon kang dalawang opsyon:
+Sundin ang gabay na [Importing Data](../people/importing-data.md). Mayroon kang dalawang pagpipilian:
 
-1. **CSV Upload** — i-export mula sa iyong kasalukuyang sistema o spreadsheet, i-format bilang CSV, i-upload sa B1
-2. **Breeze Migration** — one-click import na nagdadala ng mga tao, larawan, grupo, donasyon, at attendance
+1. **CSV Upload** — i-export mula sa kasalukuyan mong sistema o spreadsheet, i-format bilang CSV, at i-upload sa B1
+2. **Breeze Migration** — isang-click na import na naglilipat ng mga tao, larawan, grupo, donasyon, at attendance
 
 :::tip
-Lumilipat mula sa Breeze? Dadalhin ng import tool ang lahat sa isang hakbang — mga tao, larawan, grupo, donasyon, at kasaysayan ng attendance. Ito ang pinakamabilis na paraan para makapagsimula.
+Lilipat ka mula sa Breeze? Dinadala ng import tool ang lahat sa isang hakbang lamang — mga tao, larawan, grupo, donasyon, at kasaysayan ng attendance. Ito ang pinakamabilis na paraan para makapagsimula.
 :::
 
 ## Hakbang 5: I-configure ang Mobile App
 
-I-customize ang karanasan sa B1 Mobile app para sa iyong kongregasyon.
+I-customize ang karanasan ng B1 App para sa iyong kongregasyon.
 
-Sundin ang gabay na [Mga Setting ng Mobile App](../settings/mobile-app.md) para:
+Sundin ang gabay na [Mobile App Settings](../settings/mobile-app.md) upang:
 
-1. I-customize kung aling mga tab ang lalabas sa B1 Mobile app para sa iyong mga miyembro
-2. I-set ang mga pangalan ng tab, icon, at uri (Bible, Live Stream, Donation, Website, atbp.)
+1. I-customize kung aling mga tab ang lalabas sa B1 App para sa iyong mga miyembro
+2. Itakda ang mga pangalan, icon, at uri ng tab (Bible, Live Stream, Donation, Website, atbp.)
 3. Kontrolin kung aling mga feature ang makikita ng iyong kongregasyon
 
-## Hakbang 6: Simulang I-set Up ang mga Feature
+## Hakbang 6: Simulan ang Pag-set Up ng mga Feature
 
-Ngayon na handa na ang pundasyon, sundin ang mga gabay na ito para i-set up ang mga partikular na feature:
+Ngayong nakalatag na ang pundasyon, sundin ang mga gabay na ito upang i-set up ang mga partikular na feature:
 
-- [I-set Up ang Online Giving](./online-giving.md) — tumanggap ng mga donasyon sa pamamagitan ng iyong website at app
-- [Ilunsad ang Website ng Iyong Simbahan](./launch-website.md) — buuin ang website ng iyong simbahan
-- [Magpatakbo ng mga Small Group](./small-groups.md) — mag-organisa ng mga grupo, Bible study, at mga ministeryo
-- [I-set Up ang Children's Check-In](./childrens-checkin.md) — kiosk check-in para sa kids ministry
-- [Pamahalaan ang mga Boluntaryong Pang-Linggo](./sunday-volunteers.md) — i-coordinate ang iyong mga serving team
-- [Buuin ang Iyong Sermon Library](./sermon-library.md) — ilagay ang mga sermon online at i-set up ang live streaming
-- [Subaybayan ang Attendance](./track-attendance.md) — subaybayan kung sino ang pumupunta sa mga serbisyo at grupo
+- [Set Up Online Giving](./online-giving.md) — tumanggap ng donasyon sa pamamagitan ng iyong website at app
+- [Launch Your Church Website](./launch-website.md) — gumawa ng website ng iyong simbahan
+- [Run Small Groups](./small-groups.md) — mag-organisa ng mga grupo, pag-aaral ng Bibliya, at mga ministeryo
+- [Set Up Children's Check-In](./childrens-checkin.md) — kiosk check-in para sa ministeryo ng mga bata
+- [Manage Sunday Volunteers](./sunday-volunteers.md) — i-coordinate ang mga koponan ng paglilingkod
+- [Build Your Sermon Library](./sermon-library.md) — ilagay online ang mga sermon at i-set up ang live streaming
+- [Track Attendance](./track-attendance.md) — subaybayan kung sino ang dumadalo sa mga serbisyo at grupo
 
 ## Tapos Ka Na!
 
-Naka-set up na ang iyong simbahan sa B1. May access na ang iyong team, na-import na ang iyong mga tao, at handa ka nang simulang gamitin ang mga feature na pinakamahalaga sa iyong ministeryo. I-explore ang mga feature guide sa itaas para i-set up ang bawat lugar.
+Naka-set up na ang iyong simbahan sa B1. May access na ang iyong koponan, na-import na ang iyong mga tao, at handa ka nang gamitin ang mga feature na pinakamahalaga sa iyong ministeryo. Tuklasin ang mga gabay sa feature sa itaas upang i-set up ang bawat bahagi.
 
 ## Mga Kaugnay na Artikulo
 
-- [Gumawa ng Account](../../getting-started/create-account.md) — pagpaparehistro ng account
-- [Paunang Setup](../../getting-started/initial-setup.md) — pangkalahatang-ideya ng guided onboarding
-- [Mga Setting ng Simbahan](../settings/church-settings.md) — impormasyon at branding ng simbahan
-- [Mga Tungkulin at Pahintulot](../settings/roles-permissions.md) — kontrolin ang access ng team
-- [Pag-import ng Data](../people/importing-data.md) — bulk na pag-import ng data
-- [Mga Setting ng Mobile App](../settings/mobile-app.md) — i-customize ang member app
+- [Create Account](../../getting-started/create-account.md) — pagrehistro ng account
+- [Initial Setup](../../getting-started/initial-setup.md) — pangkalahatang-ideya ng guided onboarding
+- [Church Settings](../settings/church-settings.md) — impormasyon at branding ng simbahan
+- [Roles & Permissions](../settings/roles-permissions.md) — kontrol sa access ng koponan
+- [Importing Data](../people/importing-data.md) — malawakang pag-import ng datos
+- [Mobile App Settings](../settings/mobile-app.md) — i-customize ang app ng miyembro

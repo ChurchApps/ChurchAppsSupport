@@ -1,36 +1,36 @@
 ---
 title: "Forutsetninger"
-description: "Sett opp Node.js, npm, Git og plattformverktøykjeder før du jobber med ChurchApps-prosjekter som B1 Admin, Lessons.church, FreePlay eller API-et lokalt."
+description: "Sett opp Node.js, npm, Git og plattformverktøy før du arbeider lokalt med ChurchApps-prosjekter som B1 Admin, Lessons.church, FreePlay eller API-et."
 ---
 
 # Forutsetninger
 
 <div class="article-intro">
 
-Verktøyene du trenger avhenger av hvilke prosjekter du planlegger å jobbe med. Denne siden lister all nødvendig programvare, organisert etter utviklingsområde, fra de universelle kravene til plattformspesifikke verktøykjeder.
+Verktøyene du trenger avhenger av hvilke prosjekter du planlegger å jobbe med. Denne siden lister all nødvendig programvare, organisert etter utviklingsområde, fra de generelle kravene til plattformspesifikke verktøykjeder.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Gå gjennom [prosjektoversikten](./project-overview.md) for å avgjøre hvilke prosjekter du vil jobbe med
+- Se gjennom [Prosjektoversikten](./project-overview.md) for å finne ut hvilke prosjekter du vil jobbe med
 - Ha administratortilgang på utviklingsmaskinen din for å installere programvare
 
 </div>
 
 ## Alle prosjekter
 
-Disse kreves uansett hvilket prosjekt du jobber med:
+Disse kreves uavhengig av hvilket prosjekt du jobber med:
 
 | Verktøy | Versjon | Merknader |
 |------|---------|-------|
-| **Node.js** | 20+ | Versjon 22+ kreves for B1App og LessonsApp (Next.js 16); 24+ kreves for Api-et |
+| **Node.js** | 20+ | Versjon 22+ kreves for B1App og LessonsApp (Next.js 16); 24+ kreves for Api |
 | **npm** | Følger med Node.js | Brukes som pakkehåndterer på tvers av alle prosjekter |
-| **Git** | Nyeste | Hvert prosjekt er et eget repository |
+| **Git** | Nyeste | Hvert prosjekt er et eget repositorium |
 
 :::tip
-Bruk en Node-versjonshåndterer som [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) eller [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) for å bytte mellom Node-versjoner enkelt.
+Bruk en Node-versjonshåndterer som [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) eller [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) for å enkelt bytte mellom Node-versjoner.
 :::
 
 ## Utvikling av backend-API
@@ -41,11 +41,11 @@ Hvis du planlegger å kjøre API-et lokalt (i stedet for å peke mot demo-API-en
 |------|---------|-------|
 | **MySQL** | 8.0+ | Hver API-modul bruker sin egen database |
 
-Du trenger seks databaser for kjerne-API-et: `membership`, `attendance`, `content`, `giving`, `messaging` og `doing`. API-et inkluderer skript for å initialisere skjemaet — se veiledningen [lokalt API-oppsett](../api/local-setup.md).
+Du trenger seks databaser for kjerne-API-et: `membership`, `attendance`, `content`, `giving`, `messaging` og `doing`. API-et inneholder skript for å initialisere skjemaet -- se veiledningen [lokalt oppsett av API](../api/local-setup.md).
 
-## Utvikling av mobilapper
+## Utvikling av mobilapp
 
-For B1Mobile, B1Checkin, LessonsScreen eller andre React Native / Expo-apper:
+For B1Checkin, LessonsScreen eller andre React Native- / Expo-apper:
 
 | Verktøy | Versjon | Merknader |
 |------|---------|-------|
@@ -54,29 +54,29 @@ For B1Mobile, B1Checkin, LessonsScreen eller andre React Native / Expo-apper:
 | **Xcode** | Nyeste | Kreves for iOS-utvikling (kun macOS) |
 
 :::info
-Du kan bruke Expo Go-appen på en fysisk enhet for rask testing uten Android Studio eller Xcode. Å bygge produksjonsbinærfiler krever imidlertid de native verktøykjedene.
+Du kan bruke Expo Go-appen på en fysisk enhet til rask testing uten Android Studio eller Xcode. For å bygge produksjonsversjoner kreves imidlertid de native verktøykjedene.
 :::
 
 ## Utvikling av FreeShow (skrivebordsapp)
 
-FreeShow har flere native byggeavhengigheter fordi det kompilerer native Node-moduler (som `canvas`):
+FreeShow har flere native byggeavhengigheter fordi den kompilerer native Node-moduler (som `canvas`):
 
 ### Alle plattformer
 
 | Verktøy | Versjon | Merknader |
 |------|---------|-------|
 | **Python** | 3.12 | Kreves av `node-gyp` for kompilering av native moduler |
-| **setuptools** | Nyeste | Installer med `pip install setuptools` |
+| **setuptools** | Nyeste | Installeres med `pip install setuptools` |
 
 ### Windows
 
 | Verktøy | Merknader |
 |------|-------|
 | **Visual Studio** | Community-utgaven er tilstrekkelig |
-| **Arbeidsbelastningen «Desktop development with C++»** | Velg under installasjon av Visual Studio |
+| **Arbeidsbelastningen «Desktop development with C++»** | Velges under installasjon av Visual Studio |
 | **Windows 10 SDK** | Inkludert i C++-arbeidsbelastningen; sørg for at den er avkrysset |
 
-Du kan installere Visual Studio-byggeverktøyene fra kommandolinjen:
+Du kan installere Visual Studio-byggeverktøyene via kommandolinjen:
 
 ```bash
 npm install --global windows-build-tools
@@ -112,4 +112,4 @@ mysql --version   # Kun nødvendig for lokal API-utvikling
 ## Neste steg
 
 - **[Prosjektoversikt](./project-overview.md)** -- Se alle prosjekter og hva de gjør
-- **[Miljøvariabler](./environment-variables.md)** -- Konfigurer `.env`-filene dine
+- **[Miljøvariabler](./environment-variables.md)** -- Konfigurer dine `.env`-filer

@@ -1,22 +1,22 @@
 ---
-title: "Kufakwa Kwetinhlelo Teselula"
-description: "Chaza kwakhiwa kwemakhephu e-Android ne-iOS e-B1 Mobile nge-Expo EAS, kuwafake ngetinhlelo letitolo, nekuphusha kuvuselelwa kwe-OTA."
+title: "Kusetfwa Kwetinhlelo Tefoni"
+description: "Ichaza kwakhiwa kwetifakelo te-Android ne-iOS te-Expo apps njenge-B1 Checkin, kutfumelwa kwato ku-app stores, nekutfumela tibuyekezo te-OTA nge-EAS."
 ---
 
-# Kufakwa Kwetinhlelo Teselula
+# Kusetfwa Kwetinhlelo Tefoni
 
 <div class="article-intro">
 
-Tinhlelo teselula te-ChurchApps takhiwa futsi tifakwa kusetjentiswa i-**Expo EAS Build** futsi tisatjalaliswe ngetitolo tetinhlelo. Lelikhasi likhuluma ngekwakha, ngekutfumela (submitting), kanye nekutfumela ema-update la-over-the-air ku-Android nase-iOS.
+Tinhlelo te-Expo te-ChurchApps, njenge-B1 Checkin, takhiwa nge-**Expo EAS Build** noma nge-Gradle lekwakhiwa endzaweni, futsi tifinyelela basebenzisi ngetitolo tetinhlelo. Leli tsatfu lichaza kwakhiwa, kutfumelwa, nekutfumela tibuyekezo te-over-the-air (OTA) ku-Android ne-iOS, kusebentisa B1 Checkin njengesibonelo.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Hlela uhlelo lweselula ngasekhaya -- bona [B1 Mobile](../mobile/b1-mobile.md)
-- Faka futsi uhlele i-[EAS CLI](https://docs.expo.dev/eas/)
-- Yiba nemfinyelelo ku-Google Play Console (Android) kanye/nome i-Apple App Store Connect (iOS)
+- Setha app endzaweni -- bona [Tinhlelo Tefoni](../mobile/index.md#local-setup)
+- Faka futsi ulungise i-[EAS CLI](https://docs.expo.dev/eas/)
+- Ube nemvume ye-Google Play Console (Android) and/or Apple App Store Connect (iOS)
 
 </div>
 
@@ -24,60 +24,70 @@ Tinhlelo teselula te-ChurchApps takhiwa futsi tifakwa kusetjentiswa i-**Expo EAS
 
 ### Android
 
+Tifakelo te-Android letikhiwa endzaweni tisayinwa ngekhiye lekuphepha le-release leliphuma ku-EAS. Liwunilode kanye nga `npx eas-cli credentials -p android` (khetsa **credentials.json: Download credentials from EAS**), bese uyasebentisa:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Igciwo le-Google Play libhalwa ku-`android/app/build/outputs/bundle/release/app-release.aab`. Kuze wakhe ku-EAS, sebentisa `yarn build:android:eas`.
 
 ### iOS
 
+Takhiwo te-iOS tihamba njalo ku-EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Kutfumela Etitolo Tetinhlelo
+## Kutfumelwa Ku-App Stores
 
-### Android -- I-Google Play Store
+### Android -- Google Play Store
 
-Ngemuva kwekwakha lokuphumelele kwe-EAS, i-binary ye-Android (AAB) itfunyelwa ku-Google Play Store ngeluhambo lwe-Play Console.
+Layisha i-AAB ngaku-Play Console, noma utfumele nge-EAS:
 
-### iOS -- I-Apple App Store
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
-Tfumela lokwakhiwe kwe-iOS ngco ngeluhambo lwe-EAS:
+### iOS -- Apple App Store
+
+Tfumela kakhulu kwakha kwe-iOS nge-EAS:
 
 ```bash
 eas submit --platform ios
 ```
 
-## Ema-Update la-OTA
+## Tibuyekezo te-OTA
 
-Kutishintjo letiyi-JavaScript kuphela letingadzingi kubuywa (review) yitolo lelinhlelo, sebentisa ema-update la-over-the-air (OTA):
+Ku-tinguquko te-JavaScript kuphela letingadzingi kubuyekezwa kwesitolo se-app, sebentisa tibuyekezo te-over-the-air (OTA):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Loku kusebentisa i-EAS Update kutfumela shintjo ngco kubasebentisi ngaphandle kwekutfumela lokugcwele kwitolo.
+Lokhu kusebentisa i-EAS Update kutfumela tinguquko ngqo kubasebenzisi ngaphandle kwekutfumela ku-store ngakhatsi.
 
 :::tip
-Ema-update la-OTA asheshe kakhulu kunelokwakhiwa kwitolo -- lushintjo lungafinyelela kubasebentisi ngemaminithi esikhundleni semalanga. Asebentise ekulungiseni tibhagi (bugs), kushintja kwembhalo, kanye nekushintja lokuncane kwe-UI lokungahlanganisi kushintjwa kwe-code yendabuko.
+Tibuyekezo te-OTA tisheshe kakhulu kunetakhiwo te-store -- tinguquko tingafinyelela basebenzisi emaminithini kunasemalanga. Tisebentise tibuyekezo te-kulungisa tiphazamiso, tinguquko temagama, nemashintsho amancane e-UI langadzingi tinguquko te-native code.
 :::
 
-## Tinombolo Tevasyini
+## Tinombolo Tekuguquka
 
-Ngaphambi kwekwakha lokutakwitolo, tinombolo tevasyini kufanele tibuyekwetwe emafayeleni lamanyenti:
+Ngaphambi kokwakha ibhilidi ye-store, tinombolo tekuguquka kufanele tibuyekezwe kuwo wonkhe emafayela:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` ne `versionCode`)
+
+Inombolo yebhilidi ye-iOS ikhuphuka ngekuzenta nga-EAS.
 
 :::warning
-Kukhohlwa kubuyeketa tinombolo tevasyini kuwo onkhe emafayela kutokwenta kwehluleke kwakha kumbe kwaliwe yitolo lelinhlelo. Chaka kabili onkhe emafayela lakhonjiswe ngetulu ngaphambi kwekucala kwakha kwe-production.
+Kukhohlwa kubuyekeza tinombolo tekuguquka kuwo wonkhe emafayela kuyobangela kwahluleka kwebhilidi noma kwenqatfwa kwe-app ku-store. Hlola kabili yonkhe imafayela ledzandzisiwe ngenhla ngaphambi kokuqala ibhilidi yekukhiqiza.
 :::
 
-## Emahloko Lahlobene
+## Tindzatjana Letihlobene
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Umhlahlandlela wekuhlelwa nekutfutfukiswa kwasekhaya
-- **[Kufakwa Kwe-API](./apis.md)** -- Kufaka ema-backend API
-- **[Kufakwa Kwe-Web App](./web-apps.md)** -- Kufaka tinhlelo te-frontend te-web
+- **[Tinhlelo Tefoni](../mobile/index.md)** -- Kusetfwa endzaweni nemhlahlandlela wekuthuthukisa
+- **[Kusetfwa Kwe-API](./apis.md)** -- Kusetfwa kwetinsita te-backend
+- **[Kusetfwa Kwetinhlelo Tewebhu](./web-apps.md)** -- Kusetfwa kwetinhlelo tewebhu letingemuva

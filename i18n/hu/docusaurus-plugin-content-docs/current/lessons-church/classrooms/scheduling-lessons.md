@@ -1,14 +1,14 @@
 ---
-title: "Osztályteremi leckék ütemezése a portálon"
-sidebar_label: "Foglalkozások ütemezése"
-description: "Lessons.church-leckék ütemezése osztálytermi naptárban a B1 Admin portálon: program, tanulmány, lecke és korspecifikus helyszín minden dátumhoz."
+title: "Órák ütemezése osztálytermekhez a portálon"
+sidebar_label: "Órák ütemezése"
+description: "Lessons.church-órák ütemezése osztálytermi naptárban a B1 Admin portálon: minden dátumhoz program, tanulmány, óra és korcsoportnak megfelelő helyszín kiválasztásával."
 ---
 
-# Foglalkozások ütemezése
+# Órák ütemezése
 
 <div class="article-intro">
 
-Miután beállította az osztálytermeket, a következő lépés a foglalkozások ütemezése, hogy az önkéntesei pontosan tudják, mit és mikor tanítsanak. Az ütemezés összeköti a Lessons.church tartalmát az osztályterem naptárával.
+Miután beállította az osztálytermeit, a következő lépés az órák ütemezése, hogy az önkéntesei pontosan tudják, mit és mikor kell tanítaniuk. Az ütemezés összeköti a Lessons.church órai tartalmát az osztálytermi naptárral.
 
 </div>
 
@@ -16,46 +16,47 @@ Miután beállította az osztálytermeket, a következő lépés a foglalkozáso
 <h4>Mielőtt elkezdi</h4>
 
 - [Állítson be legalább egy osztatermet](./setting-up-classrooms.md) a portálon
-- [Böngéssze a tartalomtárat](../browsing/index.md), hogy megtalálja azt a programot és tanulmányt, amelyet tanítani szeretne
+- [Böngéssze a tartalomtárat](../browsing/index.md), hogy megtalálja a tanítani kívánt programot és tanulmányt
 
 </div>
 
-## Az osztályterem ütemezésének megtekintése
+## Osztálytermi ütemezés megtekintése
 
-1. Jelentkezzen be, és lépjen a **Portál** oldalra.
-2. Kattintson arra az **osztateremre**, amelyet ütemezni szeretne.
-3. Az ütemezési nézet a **utolsó 4 lezajlott foglalkozást** és a **következő 4 közelgő foglalkozást** jeleníti meg. Így gyorsan áttekintheti, mi volt a közelmúltban, és mi következik.
+1. Jelentkezzen be, és lépjen a **Portálra**.
+2. Kattintson arra az **osztályteremre**, amelyhez ütemezni szeretne.
+3. Az **Óraütemezés** doboz felsorolja az adott osztályteremhez ütemezett összes órát, a legújabb dátummal kezdve. Mindegyik címkét kap: **Közelgő**, **Ma** vagy **Korábbi**, így egy pillantással láthatja, mi volt a közelmúltban és mi következik.
 
-## Foglalkozás hozzáadása az ütemezéshez
+## Óra hozzáadása az ütemezéshez
 
-1. Az osztályterem ütemezési nézetében kattintson az új foglalkozás hozzáadására.
-2. Válassza ki a foglalkozás **dátumát**.
-3. Válassza ki a tanítani kívánt **programot** (például „Bibliai történetek gyerekeknek”).
-4. Válassza ki a **tanulmányt** a programon belül (például „Teremtés és korai történetek”).
-5. Válassza ki az ütemezni kívánt konkrét **foglalkozást**.
-6. Válassza ki az osztályterem megfelelő **változatát**. A változatok a foglalkozás korcsoportonkénti verzióit jelentik (például „Óvodás” vagy „Általános iskolás”). A megfelelő változat kiválasztása biztosítja, hogy az önkéntesei az osztályterem korcsoportjának megfelelő tartalmat lássák.
-7. Mentse el az ütemezett foglalkozást.
+1. Az **Óraütemezés** dobozban kattintson az **Ütemezés hozzáadása** gombra. Ha az osztályteremhez még nincs ütemezés, helyette kattintson az **Első ütemezés hozzáadása** gombra.
+2. Adja meg az óra **Ütemezési dátumát**.
+3. Ha hozzáadott [külső szolgáltatókat](../admin/third-party-providers.md), válasszon **Szolgáltatót**. Hagyja a **Lessons.church** értéken, ha a Lessons.church tartalomtárából szeretne ütemezni.
+4. Válassza ki a programot, amelyből tanítani szeretne (például „Bible Stories for Kids").
+5. Válassza ki a **Tanulmányt** az adott programon belül (például „Creation and Early Stories").
+6. Válassza ki az ütemezni kívánt konkrét **Órát**.
+7. Válassza ki az osztályteremhez megfelelő **Helyszínt**. A helyszínek a tartalom korcsoportonkénti változatait jelentik (például „Preschool" vagy „Elementary"). A megfelelő helyszín kiválasztása biztosítja, hogy az önkéntesei az osztályterem korcsoportjához igazított tartalmat lássanak.
+8. Kattintson a **Mentés** gombra. Ha előbb meg szeretné nézni az órát, kattintson az **Előnézet / Nyomtatás** gombra, amely új lapon nyitja meg.
 
-A foglalkozás ezután megjelenik az osztályterem ütemezésében az adott dátumnál.
+Az óra ezután megjelenik az osztályterem ütemezésében a megadott dátumnál.
 
 :::info
-A programok, tanulmányok és foglalkozások a Lessons.church tartalmi hierarchiáját alkotják. Egy program több tanulmányt tartalmaz, és minden tanulmány egyedi foglalkozásokból áll. A változatok ugyanannak a foglalkozásnak korcsoportonkénti eltérő verzióit biztosítják. A teljes magyarázatért lásd: [Programok és tanulmányok](../browsing/programs-and-studies.md).
+A programok, tanulmányok és órák alkotják a Lessons.church tartalmi hierarchiáját. Egy program több tanulmányt tartalmaz, és minden tanulmány egyedi órákból áll. A helyszínek ugyanazon óra korcsoportonkénti változatai. A teljes magyarázatért lásd: [Programok és tanulmányok](../browsing/programs-and-studies.md).
 :::
 
 ## Hogyan használják az önkéntesek az ütemezést
 
-Miután ütemezte a foglalkozásokat, az önkéntesei megnyithatják a portált, kiválaszthatják az osztatermüket, és azonnal láthatják, mi következik. Előre átnézhetik a foglalkozás tartalmát, letölthetik a szükséges anyagokat, és felkészülten érkezhetnek. Nem kell találgatniuk, mit tanítsanak legközelebb.
+Miután ütemezte az órákat, az önkéntesei megnyithatják a portált, kiválaszthatják az osztálytermüket, és azonnal láthatják, mi következik. Előre átnézhetik az órai tartalmat, letölthetik a szükséges anyagokat, és felkészülten érkezhetnek. Nincs több találgatás arról, mit kell legközelebb tanítani.
 
 ## Tippek az ütemezéshez
 
-- **Tervezzen előre** -- A gyülekezetek a [B1 Admin](../../b1-admin/serving/scheduling-lessons.md) felületen ütemezik az osztálytermi foglalkozásokat, beleértve a közzétett éves terv alkalmazását is.
-- **Legyen következetes** -- Egy program sorrendben követése segít a gyerekeknek abban, hogy az előző héten tanultakra építsenek.
-- **Nézze meg az előzményeket** -- Használja a lezajlott foglalkozások listáját, hogy elkerülje a véletlen ismétlést.
+- **Tervezzen előre** -- A gyülekezetek a [B1 Adminban](../../b1-admin/serving/scheduling-lessons.md) ütemezik az osztálytermi órákat, beleértve a közzétett éves terv alkalmazását is.
+- **Legyen következetes** -- Egy program sorrendben követése segít abban, hogy a gyerekek a múlt héten tanultakra építhessenek.
+- **Nézze meg az előzményeket** -- A korábbi órák listájával ellenőrizze, hogy véletlenül ne ismételjen tartalmat.
 
 :::warning
-Ügyeljen rá, hogy az osztályterme korcsoportjához megfelelő változatot válassza ki. A rossz változat kiválasztása azt jelenti, hogy az önkéntesei a más korosztálynak készült tartalmat fogják látni.
+Mindenképpen a megfelelő helyszínt válassza az osztályterem korcsoportjához. A rossz helyszín kiválasztása azt jelenti, hogy az önkéntesei más korosztálynak szánt tartalmat látnak majd.
 :::
 
-## Mi következik
+## Következő lépések
 
-A foglalkozások ütemezése után érdemes lehet [testreszabnia a foglalkozás tartalmát](../customization/customizing-lessons.md) bizonyos osztálytermekhez, hogy illeszkedjen a tanítási stílusához és a korcsoport igényeihez. Amikor eljön a tanítás ideje, tudjon meg többet a [Bemutatásról](../presenting/index.md), hogy hatékonyan adhassa át a foglalkozásokat.
+Az órák ütemezése után érdemes lehet [testreszabni az órai tartalmat](../customization/customizing-lessons.md) bizonyos osztálytermekhez, hogy illeszkedjen a tanítási stílushoz és a korcsoport igényeihez. Amikor eljön a tanítás ideje, ismerkedjen meg a [Bemutatás](../presenting/index.md) fejezettel, hogy hatékonyan adhassa elő az órákat.

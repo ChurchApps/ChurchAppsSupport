@@ -1,94 +1,94 @@
 ---
-title: "Guía: Generar Reportes de Donaciones de Fin de Año"
-description: "En B1 Admin, cierra los registros de donaciones del año, revisa la configuración fiscal de los fondos y genera extractos deducibles para cada donante."
+title: "Guía: Generar informes anuales de donaciones"
+description: "En B1 Admin, finalice los registros de donaciones del año, revise la configuración fiscal de los fondos y genere los certificados de donaciones deducibles de impuestos para cada donante."
 ---
 
-# Generar Reportes de Donaciones de Fin de Año
+# Generar informes anuales de donaciones
 
 <div class="article-intro">
 
-Camina a través del proceso de fin de año de finalizar tus registros de donación, verificar configuraciones de fondos y generar declaraciones de donación deducible de impuestos para cada donante. Esto generalmente se hace en enero de cada año para el año calendario anterior.
+Siga el proceso de cierre de fin de año para finalizar los registros de donaciones, verificar la configuración de los fondos y generar los certificados de donaciones deducibles de impuestos para cada donante. Normalmente, esto se hace a principios de enero para el año calendario anterior.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
 - Cuenta de B1 Admin con acceso financiero
-- Donaciones registradas durante todo el año (en línea a través de Stripe y/o ingresadas manualmente)
-- Acceso a tu cuenta de Stripe si aceptas donaciones en línea
+- Donaciones registradas durante el año (en línea a través de Stripe y/o ingresadas manualmente)
+- Acceso a su cuenta de Stripe si acepta donaciones en línea
 
 </div>
 
-## Paso 1: Importar Transacciones Finales de Stripe
+## Paso 1: Importar las transacciones finales de Stripe
 
-Asegúrate de que todas las donaciones en línea del final del año estén en tu sistema.
+Asegúrese de que todas las donaciones en línea de finales de año estén en su sistema.
 
-Sigue la guía [Importación de Stripe](../donations/stripe-import.md) para:
+Siga la guía [Importación de Stripe](../donations/stripe-import.md) para:
 
-1. Navega a Donaciones > Importación de Stripe
-2. Selecciona un rango de fechas que cubra el final del año (por ejemplo, 1 de diciembre - 31 de diciembre)
-3. Haz clic en Vista Previa primero para revisar, luego en Importar Faltantes para finalizar
+1. Ir a Donaciones > Importación de Stripe
+2. Seleccionar un rango de fechas que cubra el final del año (por ejemplo, del 1 al 31 de diciembre)
+3. Hacer clic en Vista previa para revisar y luego en Importar faltantes para finalizar
 
 :::warning
-Ejecuta esta importación antes de generar declaraciones. Cualquier transacción que no hayas importado no aparecerá en las declaraciones de donantes.
+Realice esta importación antes de generar los certificados. Las transacciones que no haya importado no aparecerán en los certificados de los donantes.
 :::
 
-## Paso 2: Revisar Reportes de Donación
+## Paso 2: Revisar los informes de donaciones
 
-Verifica que tus registros sean precisos antes de generar declaraciones.
+Verifique que sus registros sean correctos antes de generar los certificados.
 
-Sigue la guía [Reportes de Donación](../donations/donation-reports.md) para:
+Siga la guía [Informes de donaciones](../donations/donation-reports.md) para:
 
-1. Verifica la página de resumen de donaciones para el año completo
-2. Revisa los totales por fondo y compara contra tus extractos bancarios para detectar discrepancias
-3. Haz clic en lotes individuales para verificar detalles a nivel de donante si es necesario
+1. Revisar la página de resumen de donaciones del año completo
+2. Revisar los totales por fondo y compararlos con sus estados de cuenta bancarios para detectar cualquier discrepancia
+3. Hacer clic en cada lote para verificar los detalles por donante, si es necesario
 
-## Paso 3: Verificar Estado Fiscal de Fondos
+## Paso 3: Verificar el estado fiscal de los fondos
 
-Asegúrate de que la configuración deducible de impuestos de cada fondo sea correcta para que las declaraciones sean precisas.
+Asegúrese de que la configuración de deducibilidad fiscal de cada fondo sea correcta para que los certificados sean precisos.
 
-Sigue la guía [Fondos](../donations/funds.md) para:
+Siga la guía [Fondos](../donations/funds.md) para:
 
-1. Abre cada fondo y confirma que la configuración deducible de impuestos sea correcta
+1. Abrir cada fondo y confirmar que la configuración de deducibilidad fiscal sea correcta
 
 :::info
-Solo las donaciones a fondos marcados como deducibles de impuestos aparecerán en las declaraciones de donación. Si un fondo debe ser deducible de impuestos pero no está marcado de esa manera, actualízalo antes de generar declaraciones.
+Solo las donaciones a fondos marcados como deducibles de impuestos aparecerán en los certificados de donaciones. Si un fondo debería ser deducible de impuestos pero no está marcado así, actualícelo antes de generar los certificados.
 :::
 
-## Paso 4: Generar Declaraciones de Donación
+## Paso 4: Generar los certificados de donaciones
 
-Crea las declaraciones oficiales de donación para tus donantes.
+Cree los certificados oficiales de donaciones para sus donantes.
 
-Sigue la guía [Declaraciones de Donación](../donations/giving-statements.md) para:
+Siga la guía [Certificados de donaciones](../donations/giving-statements.md) para:
 
-1. Navega a **Donaciones > Declaraciones de Donación**
-2. Selecciona el año del menú desplegable y revisa las estadísticas de resumen
-3. Elige tu método de descarga:
-   - **Descargar ZIP** -- archivos CSV individuales, uno por donante
-   - **Imprimir Todo** -- vista imprimible con cada declaración en una página nueva, con el logotipo de su iglesia en la parte superior (si ha subido uno)
+1. Ir a **Donaciones > Certificados de donaciones**
+2. Seleccionar el año en el menú desplegable y revisar las estadísticas de resumen
+3. Elija su método de descarga:
+   - **Descargar ZIP**: archivos CSV individuales, uno por donante
+   - **Imprimir todo**: vista imprimible con cada certificado en una página nueva, con el logotipo de su iglesia en la parte superior (si ha subido uno)
 
 :::tip
-Genera declaraciones a principios de enero mientras los registros están frescos. Esto te da tiempo para detectar cualquier problema antes de enviarlos por correo.
+Genere los certificados a principios de enero, mientras los registros están recientes. Así tendrá tiempo para corregir cualquier problema antes de enviarlos por correo.
 :::
 
-## Paso 5: Distribuir a Donantes
+## Paso 5: Distribuir a los donantes
 
-Entrega las declaraciones a tus donantes.
+Haga llegar los certificados a manos de sus donantes.
 
-1. Imprime y envía declaraciones por correo, o envía CSVs individuales por correo electrónico a donantes
-2. Los miembros también pueden ver su propio historial de donaciones e imprimir declaraciones desde [B1.church](../../b1-church/giving/donation-history.md) y la [aplicación móvil B1](../../b1-church/giving/donation-history.md)
+1. Imprima y envíe los certificados por correo, o envíe los archivos CSV individuales por correo electrónico a los donantes
+2. Los miembros también pueden ver su propio historial de donaciones e imprimir certificados en [B1.church o en la App B1](../../b1-church/giving/donation-history.md)
 
 ## ¡Listo!
 
-Tus reportes de donaciones de fin de año están completos. Los donantes tienen sus declaraciones deducibles de impuestos y tus registros financieros están finalizados para el año.
+Sus informes anuales de donaciones están completos. Los donantes tienen sus certificados deducibles de impuestos, y sus registros financieros quedan cerrados para el año.
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [Importación de Stripe](../donations/stripe-import.md) -- importar transacciones en línea
-- [Reportes de Donación](../donations/donation-reports.md) -- ver tendencias de donación y totales
-- [Fondos](../donations/funds.md) -- administrar fondos y configuraciones deducibles de impuestos
-- [Declaraciones de Donación](../donations/giving-statements.md) -- generar declaraciones de fin de año
-- [Registro de Donaciones](../donations/recording-donations.md) -- ingresar manualmente donaciones en efectivo/cheque
-- [Historial de Donaciones (Web)](../../b1-church/giving/donation-history.md) -- vista de autoservicio de miembro
-- [Guía de Configuración de Donaciones en Línea](./online-giving.md) -- configuración inicial de Stripe y donaciones
+- [Importación de Stripe](../donations/stripe-import.md): importar transacciones en línea
+- [Informes de donaciones](../donations/donation-reports.md): ver tendencias y totales de donaciones
+- [Fondos](../donations/funds.md): administrar fondos y la configuración de deducibilidad fiscal
+- [Certificados de donaciones](../donations/giving-statements.md): generar los certificados de fin de año
+- [Registrar donaciones](../donations/recording-donations.md): ingresar manualmente donaciones en efectivo o cheque
+- [Historial de donaciones (web)](../../b1-church/giving/donation-history.md): vista de autoservicio para miembros
+- [Guía para configurar donaciones en línea](./online-giving.md): configuración inicial de Stripe y donaciones

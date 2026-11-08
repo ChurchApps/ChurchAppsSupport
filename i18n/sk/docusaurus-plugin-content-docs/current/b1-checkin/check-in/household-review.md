@@ -1,67 +1,68 @@
 ---
-title: "Pregled vašeg domaćinstva"
-description: "Skontrolujte domácnosť v B1 Checkin po výbere osoby, priraďte skupiny pre každý čas bohoslužby a pred prihlásením označte hostí alebo dobrovoľníkov."
+title: "Kontrola vašej domácnosti"
+description: "Skontrolujte svoju domácnosť v B1 Checkin po výbere osoby, potom priraďte skupiny pre každý čas bohoslužby a označte hostí alebo dobrovoľníkov pred odbavením."
 ---
 
-# Pregled vašeg domaćinstva
+# Kontrola vašej domácnosti
 
 <div class="article-intro">
 
-Nakon što izaberete osobu iz rezultata pretrage, aplikacija učitava cijelo vaše domaćinstvo i prikazuje ga na ekranu za pregled domaćinstva. Ovo je središnje mjesto procesa prijave u kojem možete vidjeti sve članove svoje obitelji i upravljati njihovim dodjelama grupa prije prijave.
+Po výbere osoby zo zoznamu výsledkov vyhľadávania aplikácia načíta celú vašu domácnosť a zobrazí ju na obrazovke kontroly domácnosti. Toto je centrum procesu odbavenia, kde môžete vidieť všetkých členov rodiny a spravovať ich priradenia do skupín pred odbavením.
 
 </div>
 
 <div class="prereqs">
-<h4>Prije nego počnete</h4>
+<h4>Pred začatím</h4>
 
-- [Odaberite uslugu](./selecting-service.md) na ekranu usluga
-- [Potražite člana](./looking-up-members.md) i odaberite ga iz rezultata pretrage
+- [Vyberte službu](./selecting-service.md) na obrazovke služieb
+- [Vyhľadajte člena](./looking-up-members.md) a vyberte ho zo zoznamu výsledkov vyhľadávania
 
 </div>
 
-## Pregled članova domaćinstva
+## Zobrazenie členov domácnosti
 
-Svaki član domaćinstva prikazan je kao kartica sa:
+Každý člen domácnosti sa zobrazuje ako karta s:
 
-- Njegovom **fotografijom** (ili ikonom zamjenskog sadržaja ako fotografija nije pohranjena)
-- Njegovim **prikaznim imenom**
-- **Sažetkom trenutnih dodjela grupa** (prikazanim kao male oznake ispod imena kada je kartica sažeta)
-- **Strelicom za proširivanje/sažimanje** na desnoj strani
+- Jeho **fotografiou** (alebo zástupnou ikonou, ak nie je k dispozícii žiadna fotografia)
+- Jeho **zobrazovaným menom**
+- **Súhrnom aktuálnych priradení do skupín** (zobrazeným ako malé štítky pod menom, keď je karta zbalená)
+- Odznakom **Už odbavený**, ak sa dnes už odbavil na túto službu
+- **Šípkou na rozbalenie/zbalenie** na pravej strane
 
-## Proširivanje člana
+## Rozbalenie člena
 
-Dodirnite karticu člana da je proširite. Kada je proširena, vidjet ćete redak za svaki **termin usluge** unutar odabrane usluge, od najranijeg prema najkasnijem. Termini usluga poredani su prema zakazanom danu i vremenu početka kada je postavljen, inače prema vremenu u njihovom nazivu (tako da "9:00" dolazi prije "10:30"); termini usluga bez vremena u nazivu nalaze se na kraju, abecednim redom. Svaki redak prikazuje:
+Klepnutím na kartu člena ju rozbalíte. Po rozbalení uvidíte riadok pre každý **čas bohoslužby** v rámci vybranej služby, od najskoršieho. Časy služieb sa radia podľa naplánovaného dňa a času začiatku, ak je nastavený; inak podľa času uvedeného v ich názve (takže „9:00 AM“ je pred „10:30 AM“). Časy služieb bez času v názve sú na konci, zoradené abecedne. Každý riadok zobrazuje:
 
-- **Naziv termina usluge** (na primjer, "9:00" ili "11:00")
-- **Grupe koje se nude** u tom terminu usluge, navedene ispod naziva (na primjer, "Jaslice, Predškolska grupa, Biblijski razred za odrasle"), kako biste prije odabira mogli vidjeti koji su razredi dostupni
-- **Gumb** koji prikazuje trenutno dodijeljenu grupu ili "Odaberi grupu" ako grupa još nije dodijeljena
+- **Názov času služby** (napríklad „9:00 AM“ alebo „11:00 AM“)
+- **Ponúkané skupiny** v danom čase služby, uvedené pod názvom (napríklad „Detská izba, Predškoláci, Biblická trieda pre dospelých“), aby ste mohli vidieť, ktoré triedy sú k dispozícii, skôr než si vyberiete
+- **Tlačidlo** zobrazujúce aktuálne priradenú skupinu alebo „Vybrať skupinu“, ak ešte nebola priradená žiadna skupina
 
-Ako termin usluge ima [raspored prijave](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) i njegov je prozor trenutno zatvoren, redak umjesto gumba prikazuje **Zatvoreno** -- uz sljedeće vrijeme otvaranja kada ono postoji, na primjer **Zatvoreno · otvara se ned 9:30**. Ako je osoba već prijavljena u taj termin usluge, redak umjesto toga prikazuje njezinu grupu s kvačicom (na primjer, **Soba za djecu 1 · Prijavljen**), tako da možete vidjeti gdje se nalazi, iako je prozor zatvoren.
+Ak má čas služby [harmonogram odbavenia](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho časové okno je práve zatvorené, namiesto tlačidla sa v riadku zobrazí **Zatvorené** – spolu s časom ďalšieho otvorenia, ak existuje, napríklad **Zatvorené · otvorí sa ned 9:30 AM**. Ak je osoba už odbavená na tento čas služby, namiesto toho sa v riadku zobrazí jej skupina so značkou začiarknutia (napríklad **Izba 1 pre deti · Odbavený**), aby ste videli, kde sa nachádza, aj keď je časové okno zatvorené.
 
-Dodirnite gumb grupe da biste otišli na [ekran za odabir grupe](./group-assignment.md) gdje možete odabrati ili promijeniti grupu za tu osobu i termin usluge.
+Klepnutím na tlačidlo skupiny prejdete na [obrazovku výberu skupiny](./group-assignment.md), kde môžete zvoliť alebo zmeniť skupinu pre danú osobu a čas služby.
 
-Prošireni karticu prikazuje i oznake **Član**, **Gost** i **Volonter**. Dodirnite jednu da odredite kako se ova osoba prijavljuje -- Član je zadana opcija. Vrsta je važna za dječje sobe: volonteri se ubrajaju u omjer volontera i djece u sobi, a gosti se ubrajaju u svaki kapacitet za goste koji je vaša crkva postavila.
+Rozbalená karta tiež zobrazuje štítky **Člen**, **Hosť** a **Dobrovoľník**. Klepnutím na jeden z nich nastavíte, ako sa daná osoba odbavuje. Predvolená hodnota je Člen. Typ je dôležitý pre detské miestnosti: dobrovoľníci sa započítavajú do pomeru dobrovoľníkov k deťom v miestnosti a hostia sa započítavajú do akejkoľvek kapacity pre hostí, ktorú váš kostol nastavil.
 
-Ponovno dodirnite karticu člana da je sažmete.
+Kartu člena zbalíte opätovným klepnutím na ňu.
 
 :::tip
-Nije potrebno dodijeliti svakog člana obitelji grupi. Odrasli koji sudjeluju na glavnom bogoslužju mogu ostati bez dodjele grupe. Dodjelu grupa treba napraviti samo za članove koje treba prijaviti u određeni razred ili program.
+Nemusíte priradiť každého člena rodiny do skupiny. Dospelí, ktorí sa zúčastňujú hlavnej bohoslužby, môžu zostať bez priradenia do skupiny. Priraďte skupiny len členom, ktorí sa musia odbaviť do konkrétnej triedy alebo programu.
 :::
 
-## Navigacija s ovog ekrana
+## Navigácia z tejto obrazovky
 
-S ekrana za pregled domaćinstva imate tri mogućnosti:
+Z obrazovky kontroly domácnosti máte tri možnosti:
 
-- **Proširite člana** i dodirnite gumb terminа usluge da biste [dodijelili ili promijenili grupu](./group-assignment.md).
-- **Dodirnite gumb Dodaj gosta** ispod popisa članova da [dodate gosta](./adding-guests.md) u svoje domaćinstvo.
-- **Dodirnite gumb Prijava** na dnu ekrana da [dovršite prijavu](./completing-checkin.md) za sve članove domaćinstva.
+- **Rozbaľte člena** a klepnite na tlačidlo času služby, aby ste [priradili alebo zmenili skupinu](./group-assignment.md).
+- **Klepnite na tlačidlo Pridať hosťa** pod zoznamom členov a [pridajte hosťa](./adding-guests.md) do svojej domácnosti.
+- **Klepnite na tlačidlo Odbaviť** v dolnej časti obrazovky a [dokončite odbavenie](./completing-checkin.md) pre všetkých v domácnosti.
 
 :::info
-Sve dodjele grupa iz prethodne prijave na istu uslugu automatski se unaprijed učitavaju. Ako vaša djeca svaki tjedan pohađaju iste grupe, možda ne morate ništa mijenjati -- samo pregledajte i prijavite.
+Akékoľvek priradenia do skupín z predchádzajúceho odbavenia na tú istú službu sa načítajú automaticky. Ak vaše deti chodia každý týždeň do rovnakých skupín, možno nebude nutné nič meniť – stačí skontrolovať a odbaviť.
 :::
 
-## Sljedeći koraci
+## Ďalšie kroky
 
-- [Dodijelite grupe](./group-assignment.md) članovima obitelji koji se trebaju prijaviti u određeni razred ili program.
-- [Dodajte gosta](./adding-guests.md) ako netko dolazi s vašom obitelji.
-- [Dovršite prijavu](./completing-checkin.md) kada dodjele za sve izgledaju ispravno.
+- [Priraďte skupiny](./group-assignment.md) členom rodiny, ktorí sa musia odbaviť do konkrétnej triedy alebo programu.
+- [Pridajte hosťa](./adding-guests.md), ak niekto prichádza s vašou rodinou na návštevu.
+- [Dokončite odbavenie](./completing-checkin.md), keď sú priradenia pre všetkých v poriadku.

@@ -1,81 +1,80 @@
 ---
-title: "Simo Sonkhe Semaphrojekthi"
-description: "Hlola wonkhe emarepositori e-ChurchApps ngetigaba, nemarhabe, emaporti etindlu tedatha, nekutsi tincwadzi letisemagama @churchapps ticinisa kanjani kutinhlelo, kumadokhumenti wekusetfwa."
+title: "Isibukeli Sephrojekthi"
+description: "Hlola yonkhe imitfombo ye-ChurchApps ngetigaba, nemarhwebu, tiphoti tekuthuthukisa, tidatabhesi, nendlela timabhuku ta-@churchapps ahlanganisa ngayo, ekhasini lemiyalelo yekuseta kwabatfuntsi."
 ---
 
-# Simo Sonkhe Semaphrojekthi
+# Isibukeli Sephrojekthi
 
 <div class="article-intro">
 
-I-ChurchApps yakheke nga-emaphrojekthi lacishe abe ngu-20 latimele, ngamunye ushicilelwe ngaphansi kwe-[ChurchApps GitHub organization](https://github.com/ChurchApps). Lelikhasi linika luhla lolugcwele lwawo onkhe emaphrojekthi, ahlelwe ngesigaba, kanye netinsimbi (frameworks), ema-port, kanye nebudlelwane bawo.
+I-ChurchApps inemitfombo lecishe ibe ngu-20 leyizimele, ngayinye ishicilelwe ngaphansi kwenhlangano ye-[ChurchApps GitHub](https://github.com/ChurchApps). Leli phepha liniketa lu lwati lugcwele lwemaprojekthi wonkhe lohlelwe ngetigaba, kanye netimfanelo tawo, tiphoti, nemavelelwano.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Faka [tidzingo tekucala](./prerequisites.md) tesigaba seliphrojekthi lofuna kusebenta kulo
+- Faka [imitsetfo lesidzingekako](./prerequisites.md) yaleligoso lemaprojekthi lofuna kusebentela
 
 </div>
 
-## Ema-Backend API
+## Ama-API Angemuva
 
-Onkhe ema-API akheke nge-Node.js, Express, ne-TypeScript, futsi afakwa ku-AWS Lambda ngendlela ye-Serverless Framework.
+Yonkhe ama-API akhiwe nge-Node.js, Express, ne-TypeScript, futsi ahlelwa ku-AWS Lambda ngesikhatsi se-Serverless Framework.
 
-| Liphrojekthi | Injongo | I-Dev Port | I-Database |
-|---------|---------|----------|----------|
-| **[Api](https://github.com/ChurchApps/Api)** | I-modular monolith lesemcatjini lembatako i-membership, attendance, content, giving, messaging, ne-doing | 8084 | I-database ye-MySQL lehlukene kuya nga-module (tisitfupha sonkhe) |
-| **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | I-backend ye-Lessons.church | -- | I-database yinye ye-MySQL, i-`lessons` |
-| **[AskApi](https://github.com/ChurchApps/AskApi)** | Insimbi yembuto (query tool) lesebentisa i-AI, legcwetjwa yi-OpenAI | -- | -- |
+| Iphrojekthi | Inhloso | Iphothi Yentfutfuko | Idatabhesi |
+|-------------|---------|---------------------|------------|
+| **[Api](https://github.com/ChurchApps/Api)** | Imodyuli lesisekelo ehlanganisa ubulungu, kuba khona, lokuqukethwe, kunikela, kuchuma, nemsebenti | 8084 | Idatabhesi ye-MySQL leyehlukile ngayo ngayo imodyuli (6 yonkhe) |
+| **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Lusebentelo lwangemuva lwe-Lessons.church | -- | Idatabhesi ye-MySQL yinye ye`lessons` |
+| **[AskApi](https://github.com/ChurchApps/AskApi)** | Ithuluzi lemibuto le-AI elisebentisa i-OpenAI | -- | -- |
 
 :::info
-Liphrojekthi le-core **Api** ngu-modular monolith. Ngamunye we-module (membership, attendance, content, giving, messaging, doing) unayo i-database yakhe futsi iyatfolakala endleleni encane (subpath) njenge-`/membership` kumbe `/giving`. Ku-production, letimodyuli tembulwa njengemisebenti yeLambda lehlukene ngemuva kwe-API Gateway.
+Iphrojekthi ye-**Api** yimodyuli lesisekelo. Ngayo ngayo imodyuli (ubulungu, kuba khona, lokuqukethwe, kunikela, kuchuma, nemsebenti) inedatabhesi yayo futsi iyatfolakala ku-subpath lefana ne`/membership` noma `/giving`. Ekusebentiseni kwangempela, lezi tikhishwa njengetinsebenti letihlukile te-Lambda ngemuva kwe-API Gateway.
 :::
 
-## Tinhlelo Te-Web
+## Ama-App Eweb
 
-| Liphrojekthi | Insimbi (Framework) | I-Dev Port | Injongo |
-|---------|-----------|----------|---------|
-| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Ideshibhodi yekuphatsa libandla |
-| **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | Uhlelo lwelibandla lolubukelwa ngemalungu emphakatsi |
-| **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | I-frontend ye-Lessons.church |
-| **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Insimbi yekungenisa/kukhipha imininingwane |
-| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Lemile (Static) | -- | Ema-website emancane ebandla lamile |
+| Iphrojekthi | Framework | Iphothi Yentfutfuko | Inhloso |
+|-------------|-----------|---------------------|---------|
+| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Ideshibhodi yekuphatfwa kwebandla |
+| **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | I-app yelilungu lebandla leyibonakala kubantfu |
+| **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Lusebentelo lwangaphambili lwe-Lessons.church |
+| **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Ithuluzi lekungenisa nekuphumisa idatha |
+| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Lingashintjeki | -- | Iwebhusayithi lemabrochure lebandla lalingashintjeki |
 
-## Tinhlelo Teselula
+## Ama-App Eselula
 
-Tonkhe tinhlelo teselula tisebentisa i-React Native ne-Expo.
+Yonkhe ama-app eselula asebentisa React Native ne-Expo.
 
-| Liphrojekthi | Injongo | Tivasyini Letibalulekile |
-|---------|---------|--------------|
-| **[B1Mobile](https://github.com/ChurchApps/B1Mobile)** | Uhlelo lwemalungu ebandla kuma-iOS ne-Android | Expo 54, React Native 0.81 |
-| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Uhlelo lwe-kiosk yekungena (check-in) | Expo |
-| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Kubonisa tifundvo ku-Android TV | Expo |
-| **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Kudlala kwekucuketfwe (content playback) (kuhlanganisa ne-TV OS) | Expo |
-| **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Kulawula i-FreeShow ngeselula | Expo |
+| Iphrojekthi | Inhloso | Tinguquko Letibalulekile |
+|-------------|---------|--------------------------|
+| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | I-app yekubhalisa ku-kiosk | Expo |
+| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Kuboniswa kwemfundziso ku-Android TV | Expo |
+| **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Kudlala lokuqukethwe (kuhlanganisa ne-TV OS) | Expo |
+| **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Lawulo lwekude lweselula lwe-FreeShow | Expo |
 
-## Desktop
+## Idesktop
 
-| Liphrojekthi | Situlo (Stack) | Injongo |
-|---------|-------|---------|
-| **[FreeShow](https://github.com/ChurchApps/FreeShow)** | Electron 37 + Svelte 3 + Vite | Software yekwetfulwa (presentation) nekukhonta |
+| Iphrojekthi | Sitaki | Inhloso |
+|-------------|--------|---------|
+| **[FreeShow](https://github.com/ChurchApps/FreeShow)** | Electron 37 + Svelte 3 + Vite | Softhiwe yetinkhulumo netinkonzo |
 
-## Emaraybhulari Lasabelwanako
+## Tilabhurari Letabelanako
 
-I-code lesabelwanako ishicilelwa ku-npm ngaphansi kwe-scope ye-`@churchapps` futsi isetjentiswa njengetincumo (dependencies) tejwayelekile te-npm ngemaphrojekthi langetulu. Onkhe emaphakheji lasabelwanako ahlala ku-repository yinye -- [Packages](https://github.com/ChurchApps/Packages) -- lephatfwa njenge-Yarn workspace futsi ikhishwa nge-changesets.
+Likhodi lelabelanako lishicilelwa ku-npm ngaphansi kwe-scope ye`@churchapps` futsi lisetfwa njengetincike letijwayelekile te-npm ngemaprojekthi lasejwayelekile langenhla. Tonkhe tiphakheji letabelanako titsatsa endzaweni yinye -- [Packages](https://github.com/ChurchApps/Packages) -- ilawulwa njengesikhala se-Yarn workspace futsi ikhishwa ngetinguquko (changesets).
 
-| Liphakheji | Injongo | Isetjentiswa Ngu- |
-|---------|---------|---------|
-| `@churchapps/helpers` | Tinsimbi tesisekelo kanye netincazelo (interfaces) te-TypeScript letisabelwanako (DateHelper, ApiHelper, CurrencyHelper, njll.) | Onkhe emaphrojekthi |
-| `@churchapps/apihelper` | Tinsimbi te-Express server (auth, base controllers, kufinyelela ku-database, kuhlanganiswa ne-AWS) | Onkhe ema-API |
-| `@churchapps/apphelper` | Layibrali yeti-component te-React lenema-subpath module ekungena (login), tipho, ema-fomu, i-markdown, nekwakha website | Tonkhe tinhlelo te-web |
-| `@churchapps/content-providers` | Kucedvwa kwekuniketa kucuketfwe kwesitsatfu (Lessons.church, Planning Center, Dropbox, nalokunye) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | Insimbi yekuhlanganisa ye-B1.church: ema-webhook, i-REST client, i-OAuth | Bantfu labatfutfukisa kuhlanganiswa kwangaphandle |
-| `@churchapps/texting` | Kucedvwa kweniketi we-SMS | Api |
+| Iphakheji | Inhloso | Isetfwa Ngu- |
+|-----------|---------|--------------|
+| `@churchapps/helpers` | Tisebenti letisisekelo kanye netincazelo te-TypeScript letabelanako (DateHelper, ApiHelper, CurrencyHelper, njll.) | Yonkhe emaprojekthi |
+| `@churchapps/apihelper` | Tisebenti te-Express server (kugunyaza, tilawuli letisisekelo, kufinyelela kudatabhesi, kuhlanganiswa ne-AWS) | Yonkhe ama-API |
+| `@churchapps/apphelper` | Laybrari yetingchenye ze-React lenemamojula etisubpath yekungena, tiniveko, tifomo, i-markdown, nekwakhiwa kwewebhusayithi | Yonkhe ama-app eweb |
+| `@churchapps/content-providers` | Kukhishwa kwebhalansi lokuqukethwe kubahlinzeki besithathu (Lessons.church, Planning Center, Dropbox, nabanye) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Tilungiselelo tekuhlanganisa ne-B1.church: ama-webhook, ikhasimende le-REST, OAuth | Abatfuntsi bekuhlanganisa labangaphandle |
+| `@churchapps/texting` | Kukhishwa kwemhlinzeki we-SMS | Api |
 
-Bona [Emaraybhulari Lasabelwanako](../shared-libraries/index.md) kute utfole kuhlelwa kwe-workspace kanye nendlela yekukhishwa (release workflow).
+Bona [Tilabhurari Letabelanako](../shared-libraries/index.md) ngekusetwa kwesikhala sekusebenta nendlela yekukhishwa.
 
-## Bubudlelwane Bemaphrojekthi
+## Ubudlelwane Phakathi Kwemaprojekthi
 
 ```
 Frontend Apps              Shared Libraries           Backend APIs
@@ -83,13 +82,13 @@ Frontend Apps              Shared Libraries           Backend APIs
 B1Admin      ──────┐
 B1App        ──────┤       @churchapps/helpers ◄───── Api
 LessonsApp   ──────┼──►    @churchapps/apphelper      LessonsApi
-B1Mobile     ──────┤                                   AskApi
-FreeShow     ──────┘       @churchapps/apihelper ◄────┘
+FreeShow     ──────┘                                   AskApi
+                           @churchapps/apihelper ◄────┘
 ```
 
-Tonkhe tinhlelo te-frontend titincike ku-`@churchapps/helpers`. Tinhlelo te-web tengeta ngekutincika ku-`@churchapps/apphelper` emaphakheji. Onkhe ema-backend API atincike kubo bobabili `@churchapps/helpers` ne-`@churchapps/apihelper`.
+Yonkhe ama-app asekuphambeni ancike ku`@churchapps/helpers`. Ama-app eweb ancike futsi kuma-phakheji e`@churchapps/apphelper`. Yonkhe ama-API asemuva ancike kokubili ku`@churchapps/helpers` ne`@churchapps/apihelper`.
 
 ## Tinyatselo Letilandzelako
 
-- **[Emavariyebuli Endzawo](./environment-variables.md)** -- Hlela emafayela akho e-`.env` kute uxhume ku-ema-API
-- **[API Local Setup](../api/local-setup.md)** -- Hlela i-backend API ngasekhaya
+- **[Tinguquko Temvelo](./environment-variables.md)** -- Lungiselela emafayela wakho `.env` ukuze uxhumane ne-API
+- **[Kusetfwa Kwendzawo Kwe-API](../api/local-setup.md)** -- Seta i-API yemuva endzaweni

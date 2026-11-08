@@ -1,21 +1,21 @@
 ---
-title: "Mobilalkalmazás telepítése"
-description: "Végigvezet a B1 Mobile alkalmazás Android- és iOS-kiadásainak elkészítésén az Expo EAS-szel, az áruházakba való beküldésen és az OTA-frissítések közzétételén."
+title: "Mobilalkalmazás-telepítés"
+description: "Végigvezet az Expo-alkalmazások, például a B1 Checkin Android- és iOS-kiadásainak elkészítésén, az áruházakba történő feltöltésen, valamint az EAS-szal végzett OTA-frissítések közzétételén."
 ---
 
-# Mobilalkalmazás telepítése
+# Mobilalkalmazás-telepítés
 
 <div class="article-intro">
 
-A ChurchApps mobilalkalmazásait az **Expo EAS Build** segítségével építjük és telepítjük, az alkalmazásboltokon keresztül terjesztjük. Ez az oldal az Android és iOS verziók építésével, beküldésével és az over-the-air (OTA) frissítések közzétételével foglalkozik.
+A ChurchApps Expo alapú mobilalkalmazásait, például a B1 Checkint, **Expo EAS Build** segítségével vagy helyi Gradle-buildgel készítjük, és alkalmazásáruházakon keresztül terjesztjük. Ez az oldal az Android- és iOS-építés, a beküldés és az over-the-air (OTA) frissítések közzétételének lépéseit mutatja be, a B1 Checkint használva példaként.
 
 </div>
 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Állítsa be a mobilalkalmazást helyileg – lásd: [B1 Mobile](../mobile/b1-mobile.md)
-- Telepítse és állítsa be az [EAS CLI](https://docs.expo.dev/eas/) eszközt
+- Állítsa be az alkalmazást helyileg -- lásd: [Mobilalkalmazások](../mobile/index.md#local-setup)
+- Telepítse és konfigurálja az [EAS CLI-t](https://docs.expo.dev/eas/)
 - Legyen hozzáférése a Google Play Console-hoz (Android) és/vagy az Apple App Store Connect-hez (iOS)
 
 </div>
@@ -24,25 +24,35 @@ A ChurchApps mobilalkalmazásait az **Expo EAS Build** segítségével építjü
 
 ### Android
 
+Az Android kiadási buildek helyben futnak, és az EAS-ból letöltött kiadási kulcstárolóval vannak aláírva. Töltse le egyszer a `npx eas-cli credentials -p android` paranccsal (válassza a **credentials.json: Download credentials from EAS** lehetőséget), majd futtassa:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+A Google Play-csomag az `android/app/build/outputs/bundle/release/app-release.aab` helyre kerül. Ha inkább az EAS-on szeretne buildelni, futtassa a `yarn build:android:eas` parancsot.
 
 ### iOS
 
+Az iOS-buildek mindig az EAS-on futnak:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Beküldés az alkalmazásboltokba
+## Beküldés az alkalmazásáruházakba
 
-### Android – Google Play Store
+### Android -- Google Play Áruház
 
-Sikeres EAS-építés után az Android bináris fájl (AAB) a Play Console-on keresztül kerül beküldésre a Google Play Store-ba.
+Töltse fel az AAB-fájlt a Play Console-on keresztül, vagy küldje be az EAS-szal:
 
-### iOS – Apple App Store
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
-Az iOS-építést közvetlenül az EAS-en keresztül küldje be:
+### iOS -- Apple App Store
+
+Küldje be közvetlenül az iOS-buildet az EAS-on keresztül:
 
 ```bash
 eas submit --platform ios
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## OTA-frissítések
 
-Olyan, csak JavaScriptet érintő módosításokhoz, amelyekhez nincs szükség az alkalmazásbolti áttekintésre, használja az over-the-air (OTA) frissítéseket:
+Csak JavaScript-változások esetén, amelyekhez nincs szükség áruházi felülvizsgálatra, használja az over-the-air (OTA) frissítéseket:
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Ez az EAS Update segítségével közvetlenül juttatja el a módosításokat a felhasználókhoz, teljes alkalmazásbolti beküldés nélkül.
+Ez az EAS Update segítségével teljes áruházi beküldés nélkül juttatja el a változásokat a felhasználókhoz.
 
 :::tip
-Az OTA-frissítések lényegesen gyorsabbak, mint az alkalmazásbolti építések – a módosítások percek alatt eljuthatnak a felhasználókhoz, nem napok alatt. Használja őket hibajavításokhoz, szövegmódosításokhoz és kisebb felületi változtatásokhoz, amelyek nem érintenek natív kódot.
+Az OTA-frissítések lényegesen gyorsabbak az áruházi buildeknél -- a változások percek alatt eljuthatnak a felhasználókhoz, nem napok alatt. Használja őket hibajavításokhoz, szövegmódosításokhoz és kisebb felületi változtatásokhoz, amelyek nem érintik a natív kódot.
 :::
 
 ## Verziószámok
 
-Az éles építés létrehozása előtt több fájlban is frissíteni kell a verziószámokat:
+Mielőtt áruházi buildet hozna létre, a verziószámokat több fájlban is frissíteni kell:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` és `versionCode`)
+
+Az iOS-buildszámot az EAS automatikusan növeli.
 
 :::warning
-Ha nem frissíti a verziószámokat az összes fájlban, az építés hibára fut, vagy az alkalmazást visszautasítja az alkalmazásbolt. Az éles építés megkezdése előtt ellenőrizze kétszer a fent felsorolt összes fájlt.
+Ha bármelyik fenti fájlban elfelejti frissíteni a verziószámot, a build meghiúsulhat, vagy az alkalmazást elutasíthatja az áruház. Éles build indítása előtt ellenőrizze kétszer a felsorolt fájlok mindegyikét.
 :::
 
 ## Kapcsolódó cikkek
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** – Helyi beállítás és fejlesztési útmutató
-- **[API-telepítés](./apis.md)** – A háttérrendszeri API-k telepítése
-- **[Webalkalmazás-telepítés](./web-apps.md)** – A frontend webalkalmazások telepítése
+- **[Mobilalkalmazások](../mobile/index.md)** -- Helyi telepítés és fejlesztési útmutató
+- **[API-telepítés](./apis.md)** -- A háttérszolgáltatások (API-k) telepítése
+- **[Webalkalmazás-telepítés](./web-apps.md)** -- A frontend webalkalmazások telepítése

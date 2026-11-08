@@ -1,13 +1,13 @@
 ---
 title: "Suunnitelman tarkistus ja ilmoitukset"
-description: "Tarkista B1 Adminin palvelusuunnitelmat täyttämättömien paikkojen, aikataulukonfliktien ja estettyjen vapaaehtoisten varalta ja ilmoita koko tiimille."
+description: "Tarkista B1 Adminissa palvelusuunnitelmat täyttämättömien tehtävien, aikataulukonfliktien ja poissaolevien vapaaehtoisten varalta ja lähetä push-ilmoitus koko tiimillesi yhdellä napsautuksella."
 ---
 
-# Suunnitelman tarkistus ja vapaaehtoisten ilmoitukset
+# Suunnitelman tarkistus ja vapaaehtoisten ilmoittaminen
 
 <div class="article-intro">
 
-B1 Admin tarkistaa suunnitelmasi automaattisesti ennen sunnuntaita ja etsii niistä ongelmia: täyttämättömiä tehtäviä, aikataulun päällekkäisyyksiä ja vapaaehtoisia, jotka ovat merkinneet päivän estetyksi. Kun kaikki on kunnossa, voit ilmoittaa koko tiimille yhdellä napsautuksella.
+B1 Admin tarkistaa suunnitelmasi automaattisesti ennen sunnuntaita ongelmien varalta: täyttämättömät tehtävät, aikataulukonfliktit ja vapaaehtoiset, jotka ovat merkinneet päivän poissaolokseen. Kun kaikki on kunnossa, voit ilmoittaa koko tiimillesi yhdellä napsautuksella.
 
 </div>
 
@@ -15,54 +15,54 @@ B1 Admin tarkistaa suunnitelmasi automaattisesti ennen sunnuntaita ja etsii niis
 <h4>Ennen aloittamista</h4>
 
 - Luo [palvelusuunnitelma](./plans.md) ja määritä vapaaehtoiset tehtäviin
-- Lisää suunnitelmaan [palveluajat](./plans.md), jotta päällekkäisyyksien tarkistus voi havaita limittymiset
-- Varmista, että vapaaehtoisilla on B1 Mobile -sovellus asennettuna, jotta he voivat vastaanottaa push-ilmoituksia
+- Lisää suunnitelmaan [palveluajat](./plans.md), jotta konfliktien tunnistus voi tarkistaa päällekkäisyydet
+- Varmista, että vapaaehtoisilla on [B1 App asennettuna](../../b1-church/getting-started/installing-pwa.md), jotta he voivat vastaanottaa push-ilmoituksia
 
 </div>
 
-## Tarkistuspaneeli
+## Tarkistusnäkymä
 
-Jokaisessa suunnitelmassa on **Tarkistus**-paneeli, joka käynnistyy automaattisesti suunnitelmaa rakentaessasi. Se tarkistaa kolme asiaa:
+Jokaisessa suunnitelmassa on **Tarkistus**-paneeli, joka käy suunnitelman automaattisesti läpi sitä rakentaessasi. Se tarkistaa kolme asiaa:
 
 ### Täyttämättömät tehtävät
-Jos tehtävään tarvitaan enemmän henkilöitä kuin siihen on tällä hetkellä määritetty, tarkistuspaneeli luettelee tarkalleen, mitä vielä tarvitaan, esimerkiksi *„Äänitekniikko: tarvitaan vielä 1 henkilö.”* Näet yhdellä silmäyksellä, onko suunnitelma täysin miehitetty ennen viikon alkua.
+Jos tehtävä vaatii enemmän ihmisiä kuin tällä hetkellä on määritetty, tarkistuspaneeli listaa tarkalleen, mitä vielä tarvitaan, esimerkiksi *"Äänitekniikko: 1 henkilö lisää tarvitaan."* Näet yhdellä silmäyksellä, onko suunnitelma täysin miehitetty ennen viikon alkua.
 
-### Aikataulun päällekkäisyydet
-Jos vapaaehtoinen on määritetty kahteen tehtävään, jotka menevät ajallisesti päällekkäin saman suunnitelman sisällä, tarkistuspaneeli merkitsee ristiriidan, esimerkiksi *„Jane Smith: aikaristiriita tehtävien Ylistysjohtaja ja Lastenkirkon sisäänkirjautuminen välillä sunnuntain jumalanpalveluksessa.”* Tämä huomaa kaksoisvarauksen ennen kuin siitä tulee ongelma sunnuntaiaamuna.
+### Aikataulukonfliktit
+Jos vapaaehtoinen on määritetty kahteen samassa suunnitelmassa ajallisesti päällekkäiseen tehtävään, tarkistuspaneeli merkitsee konfliktin, esimerkiksi *"Jane Smith: aikaristiriita tehtävien Ylistysjohtaja ja Lasten sisäänkirjaus välillä sunnuntain jumalanpalveluksen aikana."* Tämä paljastaa kaksoisvarauksen ennen kuin siitä tulee ongelma sunnuntaiaamuna.
 
-### Estopäivät
-Vapaaehtoiset voivat asettaa B1 Mobilessa päivät, jolloin he eivät ole käytettävissä. Jos joku on määritetty suunnitelmaan, joka osuu yhteen hänen estopäivistään, tarkistuspaneeli nostaa ristiriidan automaattisesti esiin, jotta voit etsiä korvaajan.
+### Poissaolopäivät
+Vapaaehtoiset voivat asettaa B1 Appissa päivät, jolloin he eivät ole käytettävissä. Jos joku on määritetty suunnitelmaan, joka osuu yhteen hänen poissaolopäiviensä kanssa, tarkistuspaneeli nostaa konfliktin automaattisesti esiin, jotta voit löytää korvaajan.
 
-### Suunnitelmien väliset päällekkäisyydet
-Tarkistus kattaa myös kaikki suunnitelmasi kerralla. Jos sama vapaaehtoinen on määritetty kahteen eri suunnitelmaan, jotka menevät ajallisesti päällekkäin, esimerkiksi klo 9 ja klo 10 alkavat jumalanpalvelukset, jotka molemmat kestävät klo 10.30 asti, B1 Admin merkitsee henkilön kaksoisvaratuksi suunnitelmien välillä.
+### Konfliktit eri suunnitelmien välillä
+Tarkistus katsoo kaikkia suunnitelmiasi kerralla. Jos sama vapaaehtoinen on määritetty kahteen eri suunnitelmaan, jotka menevät ajallisesti päällekkäin, esimerkiksi aamun kello 9 ja 10 jumalanpalvelukseen, jotka molemmat kestävät kello 10.30 asti, B1 Admin merkitsee henkilön kaksoisvaratuksi suunnitelmien välillä.
 
 :::tip
-Tarkistuksen käynnistämiseen ei tarvitse tehdä mitään. Se päivittyy automaattisesti aina, kun lisäät tehtäväjakoon tai muutat sitä. Pidä vain paneelia silmällä suunnitelmaa rakentaessasi.
+Tarkistuksen käynnistämiseksi sinun ei tarvitse tehdä mitään. Se päivittyy automaattisesti aina, kun lisäät tai muutat tehtäviä. Seuraa vain paneelia suunnitelmaa rakentaessasi.
 :::
 
-## Vapaaehtoisille ilmoittaminen
+## Vapaaehtoisten ilmoittaminen
 
 Kun suunnitelma on valmis, voit ilmoittaa kaikille määritetyille vapaaehtoisille kerralla suoraan tarkistuspaneelista.
 
 1. Avaa suunnitelma ja vieritä **Tarkistus**-paneeliin
-2. Jos ilmoittamattomia vapaaehtoisia on, näet linkin, joka kertoo, kuinka moneen henkilöön ilmoitusta ei ole vielä lähetetty (esim. *„Ilmoita 8 vapaaehtoiselle”*)
-3. Napsauta linkkiä lähettääksesi push-ilmoitukset kaikille, joille ilmoitusta ei ole vielä lähetetty
-4. Vapaaehtoiset saavat puhelimeensa ilmoituksen, jonka mukaan heidät on aikataulutettu, ja se pyytää heitä vahvistamaan tehtävänsä
+2. Jos ilmoittamattomia vapaaehtoisia on, näet linkin, joka kertoo, kuinka monelle ilmoitus pitää vielä lähettää (esim. *"Ilmoita 8 vapaaehtoiselle"*)
+3. Napsauta linkkiä lähettääksesi push-ilmoituksen kaikille, joille ei ole vielä ilmoitettu
+4. Vapaaehtoiset saavat puhelimeensa ilmoituksen, jossa kerrotaan, että heidät on aikataulutettu, ja pyydetään vahvistamaan tehtävänsä
 
 :::info
-Mukaan otetaan vain vapaaehtoiset, joille ilmoitusta ei ole vielä lähetetty. Jos lisäät suunnitelmaan jonkun myöhemmin, linkki ilmestyy uudelleen, jotta voit ilmoittaa uudelle henkilölle ilman, että muille lähetetään ilmoitus uudelleen.
+Mukaan otetaan vain vapaaehtoiset, joille ei ole vielä ilmoitettu. Jos lisäät suunnitelmaan jonkun myöhemmin, linkki ilmestyy uudelleen, jotta voit ilmoittaa uudelle henkilölle ilman, että muille ilmoitetaan uudelleen.
 :::
 
-### Suunnitelmat, joissa on vahvistusprosessi
+### Suunnitelmat vahvistusprosessilla
 
-Jos suunnitelman asetuksissa on määritetty [vahvistusprosessi](./workflows.md#serving-assignment-confirmations), paneelissa näkyy *„Uudet pyynnöt käyttävät vahvistusprosessia. Sovellushälytykset pysyvät käytössä. Muistutukset loppuvat, kun kukin pyyntö hyväksytään tai hylätään.”* Tällöin:
+Jos suunnitelman asetuksissa on määritetty [vahvistusprosessi](./workflows.md#serving-assignment-confirmations), paneelissa näkyy teksti *"Uudet pyynnöt käyttävät vahvistusprosessia. Sovellushälytykset pysyvät käytössä. Muistutukset loppuvat, kun kukin pyyntö hyväksytään tai hylätään."* Tässä tapauksessa:
 
-- Ilmoituslinkki laskee vain ne vapaaehtoiset, joille ilmoitusta ei ole vielä lähetetty eivätkä ole vastanneet.
-- Linkin napsauttaminen lähettää tavallisen sovellushälytyksen ja luo prosessin taululle yhden kortin jokaista pyyntöä kohden. Prosessi lähettää sen jälkeen sähköposti- ja tekstiviestimuistutukset ja tarvittaessa siirtää pyynnön jollekin soitettavaksi.
-- Suunnitelman on oltava julkaistu (ei luonnos) ja prosessin aktiivinen. Muuten paneelissa näkyy *„Pyyntöjä ei voitu lähettää. Tarkista, että valittu prosessi on aktiivinen ja suunnitelma julkaistu, ja yritä uudelleen.”*
+- Ilmoituslinkki laskee vain ne vapaaehtoiset, joille ei ole vielä ilmoitettu eikä jotka ole vielä vastanneet.
+- Linkin napsauttaminen lähettää tavanomaisen sovellushälytyksen ja luo prosessin taululle yhden kortin jokaista pyyntöä kohden. Prosessi lähettää sen jälkeen sähköposti- ja tekstiviestimuistutukset ja tarvittaessa siirtää pyynnön jollekulle soitettavaksi.
+- Suunnitelman täytyy olla julkaistu (ei luonnos) ja prosessin täytyy olla aktiivinen. Muuten paneelissa näkyy teksti *"Pyyntöjä ei voitu lähettää. Tarkista, että valittu prosessi on aktiivinen ja suunnitelma julkaistu, ja yritä uudelleen."*
 
 :::warning
-Vapaaehtoisilla on oltava B1.church-mobiilikokemus asennettuna (PWA kotinäytölle tai vanhentunut B1 Mobile -natiivisovellus niille, joilla se vielä on), ja ilmoitukset on otettava käyttöön, jotta he voivat vastaanottaa push-ilmoituksia. Katso asennusohjeet kohdasta [Sovelluksen asentaminen (PWA)](/docs/b1-church/getting-started/installing-pwa).
+Vapaaehtoisilla täytyy olla B1 App asennettuna kotinäytölleen ja ilmoitukset käytössä, jotta he voivat vastaanottaa push-ilmoituksia. Katso asennusohjeet kohdasta [Asentaminen sovelluksena (PWA)](../../b1-church/getting-started/installing-pwa.md).
 :::
 
 ## Aiheeseen liittyvät artikkelit

@@ -1,88 +1,88 @@
 ---
-title: "Predpoklady"
-description: "Inštalácia Node.js, npm, Gitu a nástrojov pre platformu pred prácou na projektoch ChurchApps ako B1 Admin, Lessons.church, FreePlay alebo lokálne API."
+title: "Předpoklady"
+description: "Nastavte Node.js, npm, Git a platformové nástroje před prací na projektech ChurchApps, ako sú B1 Admin, Lessons.church, FreePlay alebo API, lokálne."
 ---
 
-# Predpoklady
+# Předpoklady
 
 <div class="article-intro">
 
-Nástroje, ktoré potrebujete, závisia od toho, na ktorých projektoch plánujete pracovať. Táto stránka uvádza všetok požadovaný softvér usporiadaný podľa oblasti vývoja, od všeobecných požiadaviek až po nástroje špecifické pre jednotlivé platformy.
+Nástroje, které potřebujete, závisí na tom, na kterých projektech plánujete pracovat. Tato stránka uvádí veškerý požadovaný software seřazený podle oblasti vývoje, od univerzálních požadavků až po platformová vývojová prostředí.
 
 </div>
 
 <div class="prereqs">
-<h4>Skôr než začnete</h4>
+<h4>Než začnete</h4>
 
-- Prečítajte si [Prehľad projektov](./project-overview.md) a rozhodnite sa, na ktorých projektoch chcete pracovať
-- Na inštaláciu softvéru potrebujete na svojom vývojovom počítači správcovský (administrátorský) prístup
+- Přečtěte si [Přehled projektů](./project-overview.md), abyste určili, na kterých projektech chcete pracovat
+- Na vašem vývojovém počítači potřebujete oprávnění správce pro instalaci softwaru
 
 </div>
 
-## Všetky projekty
+## Všechny projekty
 
-Tieto nástroje sú potrebné bez ohľadu na to, na ktorom projekte pracujete:
+Tyto nástroje jsou vyžadovány bez ohledu na to, na kterém projektu pracujete:
 
-| Nástroj | Verzia | Poznámky |
+| Nástroj | Verze | Poznámky |
 |------|---------|-------|
-| **Node.js** | 20+ | Verzia 22+ je potrebná pre B1App a LessonsApp (Next.js 16); verzia 24+ je potrebná pre Api |
-| **npm** | Súčasť Node.js | Používa sa ako správca balíkov vo všetkých projektoch |
-| **Git** | Najnovšia | Každý projekt je samostatný repozitár |
+| **Node.js** | 20+ | Verze 22+ je vyžadována pro B1App a LessonsApp (Next.js 16); 24+ pro Api |
+| **npm** | Dodává se s Node.js | Používá se jako správce balíčků ve všech projektech |
+| **Git** | Nejnovější | Každý projekt je samostatný repozitář |
 
 :::tip
-Na jednoduché prepínanie medzi verziami Node použite správcu verzií Node, ako je [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) alebo [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows).
+Pro snadné přepínání mezi verzemi Node použijte správce verzí Node, jako je [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) nebo [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows).
 :::
 
-## Vývoj backend API
+## Vývoj backendového API
 
-Ak plánujete spúšťať API lokálne (namiesto pripojenia k demo API):
+Pokud plánujete spouštět API lokálně (namísto připojení k demo API):
 
-| Nástroj | Verzia | Poznámky |
+| Nástroj | Verze | Poznámky |
 |------|---------|-------|
-| **MySQL** | 8.0+ | Každý modul API používa vlastnú databázu |
+| **MySQL** | 8.0+ | Každý modul API používá vlastní databázi |
 
-Pre základné API budete potrebovať šesť databáz: `membership`, `attendance`, `content`, `giving`, `messaging` a `doing`. API obsahuje skripty na inicializáciu schémy -- pozrite si návod [Lokálne nastavenie API](../api/local-setup.md).
+Pro základní API budete potřebovat šest databází: `membership`, `attendance`, `content`, `giving`, `messaging` a `doing`. API obsahuje skripty pro inicializaci schématu – viz průvodce [lokální nastavení API](../api/local-setup.md).
 
-## Vývoj mobilnej aplikácie
+## Vývoj mobilní aplikace
 
-Pre B1Mobile, B1Checkin, LessonsScreen alebo iné aplikácie React Native / Expo:
+Pro B1Checkin, LessonsScreen nebo jiné aplikace React Native / Expo:
 
-| Nástroj | Verzia | Poznámky |
+| Nástroj | Verze | Poznámky |
 |------|---------|-------|
-| **Expo CLI** | Najnovšia | Inštalácia globálne: `npm install -g expo-cli` |
-| **Android Studio** | Najnovšia | Potrebné pre vývoj na Android (obsahuje Android SDK) |
-| **Xcode** | Najnovšia | Potrebné pre vývoj na iOS (iba macOS) |
+| **Expo CLI** | Nejnovější | Instalace globálně: `npm install -g expo-cli` |
+| **Android Studio** | Nejnovější | Vyžadováno pro vývoj na Androidu (obsahuje Android SDK) |
+| **Xcode** | Nejnovější | Vyžadováno pro vývoj na iOS (pouze macOS) |
 
 :::info
-Na rýchle testovanie môžete použiť aplikáciu Expo Go na fyzickom zariadení bez Android Studio alebo Xcode. Na zostavenie produkčných binárnych súborov však potrebujete natívne nástroje.
+Pro rychlé testování na fyzickém zařízení můžete použít aplikaci Expo Go bez Android Studia nebo Xcode. Pro sestavení produkčních binárních souborů však potřebujete nativní nástroje.
 :::
 
-## Vývoj FreeShow (desktopová aplikácia)
+## Vývoj FreeShow (desktopová aplikace)
 
-FreeShow má ďalšie závislosti pre natívne zostavenie, pretože kompiluje natívne moduly Node (ako `canvas`):
+FreeShow vyžaduje další nativní závislosti pro sestavení, protože kompiluje nativní moduly Node (například `canvas`):
 
-### Všetky platformy
+### Všechny platformy
 
-| Nástroj | Verzia | Poznámky |
+| Nástroj | Verze | Poznámky |
 |------|---------|-------|
-| **Python** | 3.12 | Vyžaduje ho `node-gyp` na kompiláciu natívnych modulov |
-| **setuptools** | Najnovšia | Inštalácia cez `pip install setuptools` |
+| **Python** | 3.12 | Vyžaduje `node-gyp` pro kompilaci nativních modulů |
+| **setuptools** | Nejnovější | Instalace pomocí `pip install setuptools` |
 
 ### Windows
 
 | Nástroj | Poznámky |
 |------|-------|
-| **Visual Studio** | Stačí Community edícia |
-| **Pracovná záťaž „Desktop development with C++“** | Vyberte počas inštalácie Visual Studio |
-| **Windows 10 SDK** | Súčasť pracovnej záťaže C++; uistite sa, že je zaškrtnutý |
+| **Visual Studio** | Stačí edice Community |
+| **Pracovní zátěž „Vývoj pro desktop v C++“** | Vyberte během instalace Visual Studia |
+| **Windows 10 SDK** | Součástí pracovní zátěže C++; ujistěte se, že je zaškrtnuté |
 
-Nástroje na zostavenie pre Visual Studio môžete nainštalovať z príkazového riadku:
+Nástroje pro sestavení Visual Studia můžete nainstalovat z příkazového řádku:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-Alebo nainštalujte Visual Studio Community a počas inštalácie vyberte pracovnú záťaž „Desktop development with C++“.
+Nebo nainstalujte Visual Studio Community a během instalace vyberte pracovní zátěž „Vývoj pro desktop v C++“.
 
 ### Linux
 
@@ -92,24 +92,24 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Zvyčajne postačujú nástroje príkazového riadku Xcode:
+Obvykle postačují nástroje příkazového řádku Xcode:
 
 ```bash
 xcode-select --install
 ```
 
-## Overenie inštalácie
+## Ověření instalace
 
-Spustite tieto príkazy, aby ste potvrdili, že je všetko nainštalované:
+Spuštěním těchto příkazů ověřte, že je vše nainstalováno:
 
 ```bash
-node --version    # Malo by vypísať v20.x.x alebo vyššie
-npm --version     # Malo by vypísať 10.x.x alebo vyššie
-git --version     # Malo by vypísať git version 2.x.x
-mysql --version   # Potrebné iba pre lokálny vývoj API
+node --version    # Mělo by vypsat v20.x.x nebo vyšší
+npm --version     # Mělo by vypsat 10.x.x nebo vyšší
+git --version     # Mělo by vypsat git version 2.x.x
+mysql --version   # Potřebné pouze pro lokální vývoj API
 ```
 
-## Ďalšie kroky
+## Další kroky
 
-- **[Prehľad projektov](./project-overview.md)** -- Pozrite si všetky projekty a to, čo robia
-- **[Premenné prostredia](./environment-variables.md)** -- Nastavte svoje súbory `.env`
+- **[Přehled projektů](./project-overview.md)** -- Přehled všech projektů a jejich funkcí
+- **[Proměnné prostředí](./environment-variables.md)** -- Nastavení souborů `.env`

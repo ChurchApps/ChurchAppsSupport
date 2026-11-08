@@ -1,58 +1,57 @@
 ---
-title: "Poskytovatelé třetích stran"
-description: "Přidejte externí kurikulární kanál do Lessons.church na stránce Third-Party; připojení poskytovatelů pak můžete zobrazit, upravit nebo odebrat."
+title: "Externí poskytovatelé"
+description: "Přidejte kanál kurikula ve formátu Open Lesson Format na stránce Externí poskytovatelé na Lessons.church a poté jej upravte nebo smažte, aby váš sbor mohl plánovat jeho lekce."
 ---
 
-# Poskytovatelé třetích stran
+# Externí poskytovatelé
 
 <div class="article-intro">
 
-Lessons.church podporuje externí poskytovatele kurikula prostřednictvím formátu Open Lesson Format. Můžete tak importovat obsah od jiných organizací a zpřístupnit ho vedle vestavěné knihovny. Církve díky tomu získají přístup ke kurikulu z více zdrojů na jednom místě.
+Lessons.church podporuje externí poskytovatele kurikul prostřednictvím formátu Open Lesson Format. To znamená, že váš sbor může připojit kurikulum jiných organizací a naplánovat ho pro své třídy přímo vedle vestavěné knihovny, takže váš tým bude mít kurikulum z více zdrojů na jednom místě.
 
 </div>
 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Mít administrátorská oprávnění pro Lessons.church (viz [Přehled administrace](./index.md))
-- Získat adresu zdroje (feed URL) od externího poskytovatele, se kterým se chcete propojit
+- Přihlaste se do Lessons.church pomocí účtu, který může spravovat rozvrhy tříd vašeho sboru
+- Získejte URL kanálu od externího poskytovatele, ke kterému se chcete připojit. Musí vracet lekce ve formátu [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Přidání poskytovatele
 
-1. Přejděte do sekce **Admin**.
-2. Otevřete stránku **Poskytovatelé třetích stran**.
-3. Klikněte na **Přidat poskytovatele** (nebo na odpovídající tlačítko pro přidání nového propojení).
-4. Zadejte **adresu zdroje** (feed URL) poskytovatele. Je to adresa, na které poskytovatel zveřejňuje data svého kurikula ve formátu Open Lesson Format.
-5. Uložte propojení.
+1. Klikněte v navigaci Lessons.church na **Externí poskytovatelé**. Otevře se stránka **Externí poskytovatelé lekcí**.
+2. Klikněte na **Přidat poskytovatele**. Pokud jste ještě žádného nepřidali, klikněte místo toho na **Přidat prvního poskytovatele**.
+3. Zadejte **Název poskytovatele**. Toto je název, který uvidí váš tým při výběru poskytovatele.
+4. Zadejte **API URL**. Toto je adresa, na které poskytovatel zveřejňuje své kurikulum ve formátu Open Lesson Format.
+5. Klikněte na **Uložit**.
 
-Po uložení Lessons.church importuje obsah poskytovatele. Jeho programy, studie a lekce se objeví v knihovně kurikula vedle vašeho vlastního obsahu.
+Poskytovatel je přidán pouze pro váš sbor. Poté se zobrazí jako volba pod **Poskytovatel**, když [naplánujete lekci](../classrooms/scheduling-lessons.md) pro třídu, a pod **Zdroj**, když vytváříte [roční plán](./managing-year-plans.md).
 
 ## Správa poskytovatelů
 
-Na stránce **Poskytovatelé třetích stran** vidíte všechny připojené poskytovatele. U každého z nich můžete:
+Na stránce **Externí poskytovatelé lekcí** je seznam všech poskytovatelů, které váš sbor přidal. Chcete-li některého z nich změnit:
 
-- **Zobrazit** importovaný obsah a ověřit, že se načetl správně.
-- **Upravit** adresu zdroje, pokud poskytovatel změní svůj koncový bod.
-- **Odebrat** poskytovatele, pokud již nechcete jeho obsah zobrazovat.
+- **Upravit** -- Klikněte na ikonu **Upravit poskytovatele** (tužka), změňte **Název poskytovatele** nebo **API URL** a klikněte na **Uložit**.
+- **Smazat** -- Klikněte na ikonu **Upravit poskytovatele**, poté na ikonu smazání (koš) a potvrďte.
 
 ## Co je formát Open Lesson Format?
 
-Open Lesson Format je standardizované schéma, které strukturovaným způsobem popisuje obsah kurikula -- programy, studie, lekce, místa konání, sekce a akce. Jakákoli organizace, která publikuje svůj obsah v tomto formátu, může být přidána jako poskytovatel do Lessons.church.
+Open Lesson Format je standardizované schéma, které popisuje obsah kurikula -- programy, studie, lekce, místa konání, sekce a akce -- strukturovaným způsobem. Jakákoli organizace, která zveřejňuje svůj obsah v tomto formátu, může být přidána jako poskytovatel v Lessons.church.
 
 Pokud jste poskytovatel obsahu a máte zájem zpřístupnit své kurikulum prostřednictvím Lessons.church, najdete úplnou dokumentaci schématu v příručce [Open Lesson Format](./open-lesson-format.md).
 
 ## Proč používat externí poskytovatele?
 
-- **Více možností pro církve** -- Církve mohou procházet širší nabídku kurikula, aniž by musely opustit platformu.
+- **Více možností pro sbory** -- Sbory mohou procházet širší nabídku kurikul, aniž by musely opustit platformu.
 - **Vše na jednom místě** -- Dobrovolníci a koordinátoři nemusejí navštěvovat více webů, aby našli a naplánovali lekce.
-- **Snadné nastavení** -- Přidání poskytovatele vyžaduje pouze adresu zdroje. Není potřeba ruční zadávání dat ani nahrávání souborů.
+- **Snadné nastavení** -- Přidání poskytovatele vyžaduje pouze název a URL kanálu. Není potřeba ruční zadávání dat ani nahrávání souborů.
 
 :::info
-Obsah třetích stran spravuje externí poskytovatel. Pokud si všimnete chybějícího nebo zastaralého obsahu od poskytovatele, problém může být nutné vyřešit na jeho straně.
+Obsah od třetích stran spravuje externí poskytovatel. Pokud si všimnete chybějícího nebo zastaralého obsahu od poskytovatele, může být nutné problém vyřešit na jeho straně.
 :::
 
 :::tip
-Nastavení externích poskytovatelů na úrovni církve (nikoli na úrovni administrace) najdete na stránce [Externí poskytovatelé](../browsing/external-providers.md) v sekci Procházení.
+Informace o tom, jak lekce od externího poskytovatele vypadají po naplánování, najdete v části [Externí poskytovatelé](../browsing/external-providers.md) v sekci Procházení.
 :::

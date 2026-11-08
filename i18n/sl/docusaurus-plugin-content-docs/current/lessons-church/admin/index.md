@@ -1,47 +1,47 @@
 ---
 title: "Administracija"
-description: "Pregled upravne površine Lessons.church v ChurchApps: upravljanje programov, študij, ur, virov, statistike in zunanjih ponudnikov kurikula."
+description: "Pregled upravne površine Lessons.church v okviru ChurchApps, z opisom upravljanja programov, študij, lekcij, virov, statistik in zunanjih ponudnikov kurikuluma."
 ---
 
 # Administracija
 
 <div class="article-intro">
 
-Administracijsko območje v Lessons.church je mesto, kjer ustvarjalci vsebin in administratorji upravljajo knjižnico lekcij. Tukaj lahko oblikujete strukturo učnega načrta, nalagate gradiva, pregledujete statistiko uporabe in povežete zunanje ponudnike vsebin.
+Upravna površina v Lessons.church je mesto, kjer ustvarjalci vsebin in skrbniki upravljajo knjižnico lekcij. Od tod lahko oblikujete strukturo kurikuluma, nalagate vire, pregledujete statistike uporabe in povežete zunanje ponudnike vsebin.
 
 </div>
 
 :::warning
-Dostop do administracije zahteva ustrezna dovoljenja. Če ne vidite administratorskih možnosti, se obrnite na cerkvenega administratorja in zaprosite za dostop.
+Dostop do upravne površine zahteva ustrezna dovoljenja. Če ne vidite možnosti za upravljanje, se obrnite na skrbnika vaše cerkve in zaprosite za dostop.
 :::
 
 ## Kaj lahko počnete
 
-Administracijsko območje vam omogoča popolen nadzor nad vsebino:
+Upravna površina vam omogoča popoln nadzor nad vašimi vsebinami:
 
-- **Ustvarjanje in urejanje programov** -- Nastavite učne serije na najvišji ravni z imeni, opisi, slikami in oznakami (slug).
+- **Ustvarjanje in urejanje programov** -- Nastavite kurikularne serije najvišje ravni z imeni, opisi, slikami in oznakami URL.
 - **Upravljanje študij** -- Organizirajte skupine sorodnih lekcij znotraj vsakega programa.
-- **Gradnja lekcij** -- Dodajte posamezne lekcije z mesti izvedbe, razdelki, vlogami in dejanji.
-- **Nalaganje gradiv** -- Priložite datoteke za prenos (PDF-je, delovne liste, slike) na ravni programa, študije ali lekcije.
-- **Ogled statistike** -- Preglejte, katera vsebina se prenaša, kdo jo prenaša in od kod.
-- **Konfiguriranje ponudnikov** -- Povežite zunanje ponudnike učnih načrtov, ki uporabljajo format Open Lesson Format.
-- **Letni načrti** -- Objavite zaporedja tednov 1, 2, 3 … za poljuben učni načrt. Cerkve jih uporabijo v aplikaciji B1 Admin.
+- **Oblikovanje lekcij** -- Dodajajte posamezne lekcije s prizorišči, razdelki, vlogami in dejanji.
+- **Nalaganje virov** -- Priložite datoteke za prenos (PDF-je, delovne liste, slike) na ravni programa, študije ali lekcije.
+- **Ogled statistik** -- Oglejte si, katere vsebine se prenašajo, kdo jih prenaša in od kod.
+- **Nastavitev ponudnikov** -- Povežite zunanje ponudnike kurikuluma, ki uporabljajo Open Lesson Format. To se naredi na strani **Zunanji ponudniki**, ne v upravni površini.
+- **Načrti za leto** -- Objavite zaporedja 1., 2., 3. tedna za poljuben kurikulum. Cerkve jih uveljavijo v B1 Admin.
 
-## Hierarhija vsebine
+## Hierarhija vsebin
 
-Kot administrator je koristno razumeti, kako je vsebina strukturirana:
+Kot skrbnik vam pomaga razumevanje, kako so vsebine strukturirane:
 
 1. **Programi** vsebujejo eno ali več študij.
 2. **Študije** vsebujejo eno ali več lekcij.
-3. **Lekcije** vsebujejo eno ali več mest izvedbe (različice za starostne skupine).
-4. **Mesta izvedbe** vsebujejo razdelke, razdelki pa vsebujejo dejanja, odvisna od vlog.
+3. **Lekcije** vsebujejo eno ali več prizorišč (različice za starostne skupine).
+4. **Prizorišča** vsebujejo razdelke, razdelki pa vsebujejo dejanja, odvisna od vlog.
 
-Vsaka raven lahko ima priložena lastna gradiva za prenos.
+Vsaka raven ima lahko priložene lastne vire za prenos.
 
 ## Naslednji koraki
 
-- [Upravljanje programov](./managing-programs.md) -- Ustvarjanje in konfiguriranje programov
+- [Upravljanje programov](./managing-programs.md) -- Ustvarjanje in nastavitev programov
 - [Upravljanje študij](./managing-studies.md) -- Dodajanje študij znotraj programa
-- [Upravljanje lekcij](./managing-lessons.md) -- Gradnja lekcij z mesti izvedbe, razdelki in dejanji
-- [Statistika](./statistics.md) -- Pregled podatkov o prenosih in uporabi
-- [Zunanji ponudniki](./third-party-providers.md) -- Povezava zunanjih virov učnih načrtov
+- [Upravljanje lekcij](./managing-lessons.md) -- Oblikovanje lekcij s prizorišči, razdelki in dejanji
+- [Statistike](./statistics.md) -- Pregled podatkov o prenosih in uporabi
+- [Tretji ponudniki](./third-party-providers.md) -- Povezava zunanjih virov kurikuluma

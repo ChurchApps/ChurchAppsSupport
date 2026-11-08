@@ -1,77 +1,86 @@
 ---
-title: "Dokončování check-inu"
-description: "Zakończ zameldowanie rodziny na kiosku w B1 Checkin: limity sal, drukowanie etykiet, kody bezpieczeństwa przy odbiorze i to, co aplikacja robi dalej."
+title: "Dokončení přihlášení"
+description: "Dokončete přihlášení rodiny na kiosku v B1 Checkin, včetně limitů místností, tisku štítků, bezpečnostních kódů pro vyzvednutí a toho, co aplikace udělá dál."
 ---
 
-# Dokončování check-inu
+Chyba: tento soubor je polský, ne český. Níže je správný překlad do polštiny.
+
+---
+title: "Finalizacja zameldowania"
+description: "Dokończ zameldowanie rodziny na kiosku w B1 Checkin, obejmuje limity pomieszczeń, drukowanie etykiet, kody bezpieczeństwa do odbioru dzieci i to, co aplikacja robi dalej."
+---
+
+# Finalizacja zameldowania
 
 <div class="article-intro">
 
-Jakmile zkontrolujete svou domácnost a provedete případná přiřazení ke skupinám, jste připraveni check-in dokončit. Toto je poslední krok v pracovním postupu kiosku -- aplikace odešle docházku, vytiskne štítky a resetuje se pro další rodinu.
+Gdy sprawdzisz swoje gospodarstwo domowe i przypiszesz grupy, jeśli jest to potrzebne, możesz zakończyć zameldowanie. To ostatni krok w przepływie na kiosku — aplikacja zapisuje frekwencję, drukuje etykiety i resetuje się dla następnej rodziny.
 
 </div>
 
 <div class="prereqs">
-<h4>Než začnete</h4>
+<h4>Zanim zaczniesz</h4>
 
-- [Zkontrolujte svou domácnost](./household-review.md) na obrazovce kontroly domácnosti
-- [Přiřaďte skupiny](./group-assignment.md) všem členům rodiny, kteří se mají přihlásit do konkrétní třídy nebo programu
-- Volitelně [přidejte hosty](./adding-guests.md), kteří jsou s vaší rodinou na návštěvě
+- [Sprawdź swoje gospodarstwo domowe](./household-review.md) na ekranie przeglądu gospodarstwa domowego
+- [Przypisz grupy](./group-assignment.md) członkom rodziny, którzy mają zameldować się w konkretnej klasie lub programie
+- Opcjonalnie [dodaj gości](./adding-guests.md), którzy odwiedzają wraz z twoją rodziną
 
 </div>
 
-## Jak se přihlásit
+## Jak się zameldować
 
-1. Na **obrazovce kontroly domácnosti** klepněte na tlačítko **Check-in** ve spodní části obrazovky.
-2. Aplikace odešle údaje o docházce na server a zobrazí **obrazovku úspěchu** se zeleným zaškrtnutím a uvítací zprávou.
+1. Na **ekranie przeglądu gospodarstwa domowego** dotknij przycisku **Zamelduj** u dołu ekranu.
+2. Aplikacja wysyła dane o frekwencji na serwer i pokazuje **ekran sukcesu** z zieloną ikoną wyboru oraz powitalną wiadomością.
 
-To je vše. Docházka vaší rodiny byla zaznamenána.
+To wszystko. Frekwencja twojej rodziny została zapisana.
 
-## Plné místnosti a poměry dobrovolníků
+Jeśli ktoś z wybranych osób już zameldował się na dzisiejsze nabożeństwo, najpierw pojawi się okno **Już zameldowany**, które podaje ich imiona. Dotknij **Zamelduj ponownie**, aby zapisać nowe wybory grup, lub **Anuluj**, aby wrócić do ekranu gospodarstwa domowego.
 
-Pokud má váš sbor na místnostech nastavené [bezpečnostní limity](../../b1-admin/attendance/checkin-safety.md), server je před uložením zkontroluje:
+## Pełne pomieszczenia i proporcje wolontariuszy
 
-- Pokud je vybraná místnost **plná nebo uzavřená**, check-in neproběhne a aplikace název místnosti zobrazí, abyste mohli vybrat jinou.
-- Pokud má termín bohoslužby [rozvrh check-inu](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho okno pro check-in právě není otevřené, check-in do místností tohoto termínu bohoslužby je rovněž odmítnut. Obrazovka **Zatím nelze přihlásit** uvádí místnost s důvodem „check-in právě není otevřený“; klepnutím na **Změnit místnosti** vyberte jiný termín bohoslužby nebo skupinu. (Termíny bohoslužeb, které jsou již uzavřené, jsou na [obrazovce domácnosti](./household-review.md) zobrazeny jako **Uzavřeno** a nelze je vybrat, takže tuto zprávu uvidíte obvykle jen tehdy, pokud okno skončí během přihlašování.)
-- Domácnost, která se přihlásila na dřívější termín bohoslužby, se může vrátit později a přidat otevřený termín bohoslužby, a to i poté, co dřívější okno uzavřelo. Jejich stávající přihlášení zůstanou zachována a nebrání novému check-inu.
-- Pokud je v dětské místnosti **nedostatek dobrovolníků** oproti stanovenému poměru, aplikace buď zobrazí upozornění, které může člen personálu potvrdit a pokračovat, nebo check-in zcela zablokuje -- podle toho, jak váš sbor nastavil vynucování poměrů.
+Jeśli twój kościół ustawił [limity bezpieczeństwa](../../b1-admin/attendance/checkin-safety.md) dla swoich pomieszczeń, serwer sprawdza je przed zapisem:
 
-## Tisk štítků
+- Jeśli wybrane pomieszczenie jest **pełne lub zamknięte**, zameldowanie nie zostaje zakończone, a aplikacja podaje nazwę pomieszczenia, abyś mógł wybrać inne.
+- Jeśli pora nabożeństwa ma [harmonogram zameldowania](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule), a okno zameldowania nie jest obecnie otwarte, zameldowanie do pomieszczeń tej pory również zostaje odrzucone. Ekran **Nie można jeszcze się zameldować** wyświetla pomieszczenie z powodem „zameldowanie nie jest obecnie otwarte”; dotknij **Zmień pomieszczenia**, aby wybrać inną porę nabożeństwa lub grupę. (Pory nabożeństw, które są już zamknięte, są oznaczone jako **Zamknięte** na [ekranie gospodarstwa domowego](./household-review.md) i nie można ich wybrać, więc zwykle zobaczysz ten komunikat tylko wtedy, gdy okno zamknie się w trakcie zameldowania).
+- Gospodarstwo domowe, które zameldowało się na wcześniejszą porę nabożeństwa, może wrócić później i dodać otwartą porę, nawet po zamknięciu wcześniejszego okna. Ich dotychczasowe zameldowania są zachowane i nie powodują odrzucenia nowego zameldowania.
+- Jeśli w pomieszczeniu dla dzieci **brakuje wolontariuszy** do ustalonej proporcji, aplikacja albo wyświetli ostrzeżenie, które członek personelu może potwierdzić, aby kontynuować, albo całkowicie zablokuje zameldowanie — w zależności od tego, jak twój kościół skonfigurował egzekwowanie proporcji.
 
-Pokud je nakonfigurována síťová tiskárna, aplikace po check-inu automaticky vytiskne štítky:
+## Drukowanie etykiet
 
-- **Jmenovky** se tisknou pro každou osobu přiřazenou do skupiny, u které je zapnuto nastavení **Tisknout jmenovku**. Jmenovka obsahuje jméno osoby, její přiřazení ke skupině a případné informace o alergiích nebo poznámky, pokud jsou k dispozici.
-- **Lístky pro vyzvednutí rodiči** se tisknou, pokud je některá přihlášená osoba ve skupině s nastavením **Vyzvednutí rodiči**. Osoby přihlášené jako **Dobrovolník** se přeskakují, takže pečovatel, který slouží v místnosti pro vyzvednutí rodiči, lístek nedostane. Lístek pro vyzvednutí uvádí děti, jejich přiřazení ke skupinám a jedinečný **bezpečnostní kód o 4 znacích**.
+Jeśli skonfigurowano drukarkę sieciową, aplikacja automatycznie drukuje etykiety po zameldowaniu:
+
+- **Etykiety z imionami** są drukowane dla każdej osoby przypisanej do grupy, w której włączono ustawienie **Drukuj identyfikator**. Etykiety zawierają imię i nazwisko osoby, przypisaną grupę oraz informacje o alergiach lub uwagach, jeśli takie są zapisane.
+- **Kwitki do odbioru dziecka** są drukowane, gdy zameldowana osoba należy do grupy z włączonym ustawieniem **Odbiór przez rodzica**. Osoby zameldowane jako **Wolontariusz** są pomijane, więc opiekun dzieci obsługujący pomieszczenie z odbiorem przez rodzica nie otrzymuje kwitka. Kwitek zawiera listę dzieci, ich przypisane grupy oraz unikalny **4-znakowy kod bezpieczeństwa**.
 
 :::info
-Stejný bezpečnostní kód se objeví jak na jmenovce dítěte, tak na lístku pro vyzvednutí rodiče. Při vyzvedávání dobrovolníci kódy porovnají, aby ověřili, že každé dítě vyzvedává správný dospělý.
+Ten sam kod bezpieczeństwa pojawia się zarówno na etykiecie dziecka, jak i na kwitku rodzica. Podczas odbioru wolontariusze porównują kody, aby sprawdzić, czy dane dziecko odbiera właściwy dorosły.
 :::
 
-Bezpečnostní kód se pro každý check-in generuje znovu a používá pouze souhlásky a číslice (samohlásky jsou vynechány, aby nevznikala nevhodná slova).
+Kod bezpieczeństwa jest generowany od nowa przy każdym zameldowaniu i zawiera wyłącznie spółgłoski oraz cyfry (samogłoski są wykluczone, aby nie tworzyć niestosownych słów).
 
 :::warning
-Pokud se štítky netisknou, otevřete nastavení správce klepnutím na **logo sboru** sedmkrát a poté klepněte na **Změnit tiskárnu**, abyste ověřili připojení tiskárny. Kroky pro řešení potíží najdete v části [Nastavení tiskárny](../getting-started/printer-setup.md).
+Jeśli etykiety nie są drukowane, otwórz Ustawienia administratora, dotykając **logo kościoła** siedem razy, a następnie dotknij **Zmień drukarkę**, aby sprawdzić połączenie z drukarką. Kroki rozwiązywania problemów znajdziesz w [Konfiguracja drukarki](../getting-started/printer-setup.md).
 :::
 
-## Co se děje po check-inu
+## Co dzieje się po zameldowaniu
 
-- Pokud je tiskárna nakonfigurována, aplikace vytiskne všechny štítky a poté se automaticky vrátí na **obrazovku vyhledávání**, připravenou pro další rodinu.
-- Pokud tiskárna nakonfigurována není, aplikace se rovněž automaticky vrátí na **obrazovku vyhledávání**.
+- Jeśli drukarka jest skonfigurowana, aplikacja drukuje wszystkie etykiety, a następnie automatycznie wraca do **ekranu wyszukiwania**, gotowa dla następnej rodziny.
+- Jeśli drukarka nie jest skonfigurowana, aplikacja również automatycznie wraca do **ekranu wyszukiwania**.
 
-V každém případě zůstane obrazovka úspěchu zobrazena alespoň 6 sekund od chvíle, kdy se objeví (8 sekund, pokud oslavuje milník docházky některé osoby), aby rodiny viděly, že check-in proběhl. Pokud tisk trvá déle, aplikace se vrátí přibližně o jeden a půl sekundy po dokončení tisku.
+W obu przypadkach ekran sukcesu pozostaje widoczny przez co najmniej 6 sekund od chwili pojawienia się (8 sekund, gdy świętuje osiągnięcie kamienia milowego frekwencji), aby rodziny mogły zobaczyć, że zameldowanie się powiodło. Jeśli drukowanie trwa dłużej, aplikacja wraca około półtorej sekundy po zakończeniu drukowania.
 
-Nemusíte klepat na nic, abyste se vrátili na obrazovku vyhledávání -- aplikace přechod zvládne automaticky. Jakmile je obrazovka chvíli zobrazena, můžete na ni klepnout a vrátit se okamžitě; klepnutí v prvních jeden a půl sekundy je ignorováno, takže rychlé dvojité klepnutí na **Check-in** obrazovku nepřeskočí.
+Nie musisz nic dotykać, aby wrócić do ekranu wyszukiwania — aplikacja obsługuje przejście automatycznie. Gdy ekran wyświetla się przez chwilę, możesz go dotknąć, aby wrócić od razu; dotknięcie w pierwszej półtorej sekundy jest ignorowane, więc szybkie podwójne dotknięcie przycisku **Zamelduj** nie spowoduje pominięcia ekranu.
 
 :::tip
-Aplikace se po každém check-inu zcela resetuje, takže nehrozí, že by jedna rodina uviděla údaje jiné rodiny.
+Aplikacja resetuje się całkowicie po każdym zameldowaniu, więc nie ma ryzyka, że jedna rodzina zobaczy informacje innej rodziny.
 :::
 
-## Co se zaznamenává
+## Co zostaje zapisane
 
-Když klepnete na **Check-in**, aplikace odešle na server pro každého člena domácnosti, který má přiřazenou skupinu, následující údaje:
+Gdy dotkniesz **Zamelduj**, aplikacja wysyła na serwer następujące dane dla każdego członka gospodarstwa domowego, który ma przypisaną grupę:
 
-- **osobu**, která se přihlašuje
-- **bohoslužbu**, které se účastní
-- **termín bohoslužby** a **skupinu**, ke kterým je přiřazena
+- **Osobę**, która się melduje
+- **Nabożeństwo**, na które przychodzi
+- **Porę nabożeństwa** i **grupę**, do których jest przypisana
 
-Tyto údaje se zobrazují v aplikaci B1 Admin v sekci Docházka, kde správci vašeho sboru mohou docházkové záznamy prohlížet a spravovat. Podrobnosti najdete v [průvodci správou check-inu](../../b1-admin/attendance/check-in.md).
+Te dane pojawiają się w B1 Admin w sekcji Frekwencja, gdzie administratorzy kościoła mogą przeglądać i zarządzać rekordami frekwencji. Szczegóły znajdziesz w [przewodniku administracyjnym zameldowania](../../b1-admin/attendance/check-in.md).

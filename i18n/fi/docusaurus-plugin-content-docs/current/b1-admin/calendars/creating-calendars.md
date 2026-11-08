@@ -1,13 +1,13 @@
 ---
 title: "Kalenterien luominen"
-description: "Luo kalenteri B1 Adminissa, yhdistä ryhmät tai tuo .ics-tiedostoja ja hallitse tapahtumia, ilmoittautumisia ja muistiinpanoja yhdestä paikasta."
+description: "Luo kalenteri B1 Adminissa, yhdistä ryhmiä tai tuo .ics-tiedostoja ja hallitse sen tapahtumia, ilmoittautumisia ja muistiinpanoja yhdestä paikasta."
 ---
 
 # Kalenterien luominen
 
 <div class="article-intro">
 
-Kalenterin luominen B1 Adminissa mahdollistaa tapahtumien kootun näkymän rakentamisen yhdistämällä yhden tai useamman ryhmän. Ryhmäjohtajat hallinnoivat tapahtumia omissa ryhmissään, ja kalenterisi näyttää nämä tapahtumat yhdessä paikassa. Muokkausoikeudet omaavat ylläpitäjät voivat lisätä tai muokata tapahtumia mille tahansa ryhmälle. Ryhmäjohtajat, jotka eivät ole ylläpitäjiä, voivat hallita tapahtumia vain johtamissaan ryhmissä.
+Kalenterin luominen B1 Adminissa mahdollistaa tapahtumien koostenäkymän rakentamisen yhdistämällä yhden tai useamman ryhmän. Ryhmien johtajat hallitsevat tapahtumia omissa ryhmissään, ja kalenterisi näyttää nämä tapahtumat yhdessä paikassa. Muokkausoikeuden omaavat ylläpitäjät voivat lisätä tai muokata tapahtumia mihin tahansa ryhmään. Ei-ylläpitäjät ryhmänjohtajat voivat hallita tapahtumia vain johtamissaan ryhmissä.
 
 </div>
 
@@ -25,117 +25,117 @@ Kalenterin luominen B1 Adminissa mahdollistaa tapahtumien kootun näkymän raken
 
 ## Uuden kalenterin luominen
 
-1. Avaa B1 Adminissa [Hyppyvalikko](../introduction.md#getting-around-with-the-jump-menu) (hakupalkki vasemmassa yläkulmassa), laajenna **Kalenterit** ja napsauta **Kalenterit**.
+1. Avaa B1 Adminissa [Siirry-valikko](../introduction.md#getting-around-with-the-jump-menu) (hakupalkki vasemmassa yläkulmassa), laajenna **Kalenterit** ja napsauta **Kalenterit**.
 2. Napsauta sivun yläosassa **Lisää kalenteri**. Uusi kalenterilomake avautuu kalenteriluettelon alapuolelle.
-3. Anna kalenterillesi **nimi** (esimerkiksi „Nuorisotyön tapahtumat” tai „Pääseurakunnan kalenteri”).
+3. Anna kalenterillesi **nimi** (esimerkiksi "Nuorisotyön tapahtumat" tai "Pääseurakunnan kalenteri").
 4. Lisää halutessasi **kuvaus**, joka auttaa tiimiäsi ymmärtämään, mihin tätä kalenteria käytetään.
-5. Tallenna uusi kalenteri napsauttamalla **Luo**.
+5. Tallenna uusi kalenterisi napsauttamalla **Luo**.
 
 ## Kalenterin tietosivu
 
-Kalenterin luomisen jälkeen napsauta sen rivillä **Hallinnoi tapahtumia** avataksesi tietosivun. Sivulla on kaksi pääaluetta:
+Kun olet luonut kalenterin, avaa tietosivu napsauttamalla sen rivillä **Hallitse tapahtumia**. Tällä sivulla on kaksi pääaluetta:
 
-- **Vasen sarake** -- Kalenterin nimi ja sen toiminnot (**Uusi tapahtuma**, **Muokkaa**, **Tuo .ics** ja **Tulosta**), minkä jälkeen on **Kalenterin ryhmät** -luettelo, josta näkyy, mitkä ryhmät kuuluvat tähän kalenteriin. Poista ryhmä kalenterista napsauttamalla sen vieressä olevaa **Poista**-painiketta.
-- **Päänäkymä** -- **Kalenteritapahtumat**-näkymä, jossa näkyvät liitettyjen ryhmien tapahtumat, ja sen yläpuolella **Tilaa** ja **Lisää ryhmä** -painikkeet.
+- **Vasen sarake** -- Kalenterin nimi ja sen toiminnot (**Uusi tapahtuma**, **Muokkaa**, **Tuo .ics** ja **Tulosta**), minkä jälkeen on **Ryhmät kalenterissa** -luettelo, joka näyttää kalenteriin kuuluvat ryhmät. Poista ryhmä kalenterista napsauttamalla sen vieressä **Poista**.
+- **Päänäkymä** -- **Kalenterin tapahtumat** -näkymä, jossa näkyvät yhdistettyjen ryhmien tapahtumat, ja sen yläpuolella **Tilaa** ja **Lisää ryhmä** -painikkeet.
 
-## Ryhmien liittäminen
+## Ryhmien yhdistäminen
 
-Ryhmät, joilla on tapahtumia kalenterissa, näkyvät automaattisesti tietosivun vasemmalla puolella olevassa **Kalenterin ryhmät** -luettelossa.
+Ryhmät, joissa on kalenterin tapahtumia, näkyvät automaattisesti tietosivun vasemmalla puolella olevassa **Ryhmät kalenterissa** -luettelossa.
 
 1. Napsauta kalenterin yläpuolella **Lisää ryhmä** liittääksesi ryhmän kalenteriisi.
-2. Valitse ryhmä pudotusvalikosta. Luettelossa on kaikki seurakuntasi ryhmät, ei vain ne, joihin kuulut.
-3. Valitse, sisällytetäänkö ryhmän **kaikki tapahtumat** vai vain **tietyt tapahtumat**.
+2. Valitse ryhmä pudotusvalikosta. Luettelossa ovat kaikki seurakuntasi ryhmät, eivät vain ne, joihin kuulut.
+3. Valitse, sisällytetäänkö ryhmästä **kaikki tapahtumat** vai vain **tietyt tapahtumat**.
 4. Napsauta **Tallenna**.
 
-Jokainen tapahtuma näkyy kalenterissa vain kerran. Jos lisäät koko ryhmän, kaikki sen tapahtumat, jotka olit jo lisännyt yksitellen, yhdistetään ryhmämerkintään. Jo kalenterissa olevan ryhmän tiettyjen tapahtumien valitseminen ei lisää mitään uutta. Kalenterin ryhmät -luetteloon merkitään vain kokonaisena lisätyt ryhmät.
+Jokainen tapahtuma näkyy kalenterissa vain kerran. Jos lisäät koko ryhmän, kaikki sen tapahtumat, jotka olet jo lisännyt yksitellen, yhdistyvät ryhmämerkintään. Jos valitset tiettyjä tapahtumia ryhmästä, joka on jo kalenterissa, mitään uutta ei lisätä. Ryhmien luettelossa **Ryhmät kalenterissa** näkyvät vain kokonaisina lisätyt ryhmät.
 
 ### .ics-tiedoston tuominen
 
-Napsauta **Tuo .ics** tuodaksesi tapahtumia toisesta kalenterista. Valitse **Ryhmä**, johon tapahtumien tulisi kuulua, napsauta sitten **Valitse .ics-tiedosto** tai liitä tiedoston sisältö ja napsauta **Tuo**. Tapahtumat luodaan kyseiseen ryhmään, ja ryhmä lisätään kalenteriin, josta tuot tapahtumat, jolloin tapahtumat näkyvät siellä heti.
+Napsauta **Tuo .ics** tuodaksesi tapahtumia toisesta kalenterista. Valitse **Ryhmä**, johon tapahtumien tulisi kuulua, napsauta sitten **Valitse .ics-tiedosto** tai liitä tiedoston sisältö ja napsauta **Tuo**. Tapahtumat luodaan kyseiseen ryhmään, ja ryhmä lisätään kalenteriin, josta tuot, joten tapahtumat näkyvät siellä heti.
 
 ### Tapahtuman poistaminen kalenterista
 
-Napsauta kalenterin tapahtumaa ja napsauta sitten **Poista kalenterista**. Tämä poistaa tapahtuman vain tästä kalenterista -- tapahtuma itse pysyy ryhmässään. Jos tapahtuma on kalenterissa, koska koko ryhmä on lisätty, sen poistaminen poistaa kaikki kyseisen ryhmän tapahtumat tästä kalenterista (tapahtumat pysyvät silti ryhmässä). Poistaaksesi tapahtuman lopullisesti, poista se [ryhmän kalenterista](../groups/group-calendar.md).
+Napsauta kalenterin tapahtumaa ja napsauta sitten **Poista kalenterista**. Tämä poistaa tapahtuman vain tästä kalenterista -- itse tapahtuma säilyy ryhmässään. Jos tapahtuma on kalenterissa, koska koko ryhmä on lisätty, sen poistaminen poistaa kaikki kyseisen ryhmän tapahtumat tästä kalenterista (tapahtumat säilyvät silti ryhmässä). Jos haluat poistaa tapahtuman pysyvästi, poista se [ryhmän kalenterista](../groups/group-calendar.md).
 
 :::tip
-Ryhmien liittäminen kalenteriisi on tehokas tapa koota tapahtumat automaattisesti. Kun ryhmäjohtaja lisää tapahtuman omaan [ryhmäänsä](../groups/creating-groups.md), se voi siirtyä seurakuntasi koko seurakunnan kalenteriin ilman ylimääräistä työtä sinulta.
+Ryhmien yhdistäminen kalenteriisi on tehokas tapa koota tapahtumat automaattisesti. Kun ryhmänjohtaja lisää tapahtuman omaan [ryhmäänsä](../groups/creating-groups.md), se voi siirtyä koko seurakunnan kalenteriin ilman sinulta lisätyötä.
 :::
 
 :::info
-Jos haluat luoda yhden kalenterin, joka kokoaa tapahtumia monista seurakuntasi ryhmistä, katso [Kuratoitu kalenteri](./curated-calendar.md) yksinkertaisempaa tapaa varten.
+Jos haluat luoda yhden kalenterin, joka hakee tapahtumia monista seurakuntasi ryhmistä, katso [Kuratoitu kalenteri](./curated-calendar.md) -- siinä on sujuvampi tapa.
 :::
 
 ## Tapahtumien lisääminen ja muokkaaminen {#adding-and-editing-events}
 
-Lisää tapahtuma napsauttamalla **Uusi tapahtuma** kalenterin tietosivulla, tai muokkaa tapahtumaa napsauttamalla kalenterin tapahtumaa ja sitten **Muokkaa**. **Uusi tapahtuma** / **Muokkaa tapahtumaa** -lomakkeella on seuraavat kentät:
+Lisää tapahtuma napsauttamalla kalenterin tietosivulla **Uusi tapahtuma**, tai muokkaa tapahtumaa napsauttamalla sitä kalenterissa ja sen jälkeen **Muokkaa**. **Uusi tapahtuma** / **Muokkaa tapahtumaa** -lomakkeessa on seuraavat kentät:
 
-- **Ryhmä** -- Ryhmä, johon tapahtuma kuuluu. Jos seurakunnassasi on tapahtumapohjia, voit myös valita **Pohja** täyttääksesi lomakkeen.
+- **Ryhmä** -- Ryhmä, johon tapahtuma kuuluu. Jos seurakunnallasi on tapahtumapohjia, voit myös valita **Pohja** lomakkeen täyttämiseksi.
 - **Otsikko**
-- **Tapahtuman kuva** -- Napsauta **Lisää kuva** (tai tyhjää kuvaruutua) valitaksesi tai lähettääksesi kuvan, joka rajataan leveään 16:9-muotoon. Napsauta **Vaihda kuva** korvataksesi sen. Kuva näkyy tapahtuman sivun yläosassa verkkosivustollasi ja sen laattana, kun Kalenteri-elementti näyttää **Tulevat tapahtumat** (katso [Tapahtumien näyttäminen verkkosivustollasi](#showing-events-on-your-website)).
+- **Tapahtuman kuva** -- Napsauta **Lisää kuva** (tai tyhjää kuvaruutua) valitaksesi tai lataaksesi kuvan, joka rajataan leveään 16:9-muotoon. Napsauta **Vaihda kuva** korvataksesi sen. Kuva näkyy tapahtuman sivun yläosassa verkkosivustollasi ja tapahtuman ruutuna, kun Kalenteri-elementti näyttää **Tulevat tapahtumat** (katso [Tapahtumien näyttäminen verkkosivustollasi](#showing-events-on-your-website)).
 - **Kuvaus** -- Näkyy tapahtuman sivulla verkkosivustollasi. Lihavointi, luettelot ja linkit ovat tuettuja.
-- **Alkaa** ja **Päättyy**, **Toistuu** ja **Näkyvyys** (**Julkinen** tai **Yksityinen**).
-- **Tunnisteet** -- Pilkulla erotetut tunnisteet, kuten `youth, students`. Verkkosivustosi Kalenteri-elementti voidaan asettaa näyttämään vain tietyllä tunnisteella varustetut tapahtumat. Tämä on sama **Tunnisteet**-kenttä, joka näkyy tapahtuman ilmoittautumisasetuksissa.
-- **Ketkä voivat nähdä muistiinpanot** ja **Ketkä voivat lisätä muistiinpanoja** -- Kuka voi lukea ja lisätä tapahtuman muistiinpanoja (katso [Tapahtuman muistiinpanot](#event-notes)). Valitse **Vain henkilökunta** (oletus), **Ryhmäjohtajat** (tapahtuman ryhmän johtajat) tai **Ryhmän jäsenet** (kaikki tapahtuman ryhmän jäsenet, johtajat mukaan lukien).
-- **Huoneet** ja **Resurssit** -- Varaa tila ja laitteet tapahtumalle. Katso [Huoneet, resurssit ja ajoitus](./rooms-resources.md).
+- **Alkaa** ja **Päättyy**, **Toistuu** sekä **Näkyvyys** (**Julkinen** tai **Yksityinen**).
+- **Tunnisteet** -- Pilkuilla erotetut nimilaput, kuten `nuoret, opiskelijat`. Verkkosivustollasi oleva Kalenteri-elementti voidaan asettaa näyttämään vain tietyllä tunnisteella varustetut tapahtumat. Tämä on sama **Tunnisteet**-kenttä, joka näkyy tapahtuman ilmoittautumisasetuksissa.
+- **Kuka voi nähdä muistiinpanot** ja **Kuka voi lisätä muistiinpanoja** -- Kuka voi lukea ja lisätä tapahtuman muistiinpanoja (katso [Tapahtuman muistiinpanot](#event-notes)). Valitse **Vain henkilökunta** (oletus), **Ryhmänjohtajat** (tapahtuman ryhmän johtajat) tai **Ryhmän jäsenet** (kaikki tapahtuman ryhmän jäsenet, johtajat mukaan lukien).
+- **Huoneet** ja **Resurssit** -- Varaa tila ja välineet tapahtumalle. Katso [Huoneet, resurssit ja ajoitus](./rooms-resources.md).
 
-Napsauta **Tallenna**. Jos tapahtuma toistuu, B1 pyytää vahvistuksen, koska tallennus päivittää kaikki sarjan esiintymät.
+Napsauta **Tallenna**. Jos tapahtuma toistuu, B1 pyytää vahvistusta, koska tallennus päivittää kaikki sarjan esiintymät.
 
 ### Tapahtuman muistiinpanot {#event-notes}
 
-Jokaisella tapahtumalla on oma muistiinpanoketju suunnittelua ja jatkotoimia varten. Napsauta kalenterin tietosivulla tapahtumaa. Valintaikkuna näyttää tapahtuman tiedot, muistutukset ja sen **Muistiinpanot**-osion. Kirjoita muistiinpano ja lähetä se lisätäksesi sen ketjuun.
+Jokaisella tapahtumalla on oma muistiinpanoketju suunnittelua ja seurantaa varten. Napsauta kalenterin tietosivulla tapahtumaa; valintaikkuna näyttää tapahtuman tiedot, muistutukset ja **Muistiinpanot** sen alapuolella. Kirjoita muistiinpano ja lähetä se lisätäksesi sen ketjuun.
 
-Henkilökunta, jolla on oikeus muokata sisältöä tai hallinnoida kalentereita, voi aina lukea ja lähettää tapahtumamuistiinpanoja. Tapahtuman asetukset **Ketkä voivat nähdä muistiinpanot** ja **Ketkä voivat lisätä muistiinpanoja** määrittävät, voivatko myös tapahtuman ryhmän johtajat tai jäsenet tehdä niin.
+Henkilökunta, jolla on oikeus muokata sisältöä tai hallita kalentereita, voi aina lukea ja lisätä tapahtuman muistiinpanoja. Tapahtuman asetukset **Kuka voi nähdä muistiinpanot** ja **Kuka voi lisätä muistiinpanoja** määrittävät, voivatko myös tapahtuman ryhmän johtajat tai jäsenet tehdä niin.
 
 ### Tapahtumien näyttäminen verkkosivustollasi {#showing-events-on-your-website}
 
-Lisätäksesi kalenterin verkkosivustollesi, lisää sivulle **Kalenteri**-elementti ja valitse tämä kalenteri. Elementti voi näyttää kuukausikalenterin tai ruudukon tulevien tapahtumien laatoista, ja se voidaan rajata näyttämään vain yhdellä tunnisteella varustetut tapahtumat. Kävijät, jotka napsauttavat tapahtumaa, avaavat sen oman tapahtumasivunsa. Katso [Kalenteri-elementin käyttäminen](../website/page-editor.md#using-the-calendar-element).
+Jos haluat näyttää kalenterin verkkosivustollasi, lisää sivulle **Kalenteri**-elementti ja valitse tämä kalenteri. Elementti voi näyttää kuukausikalenterin tai ruudukon tulevista tapahtumista, ja sen voi rajata näyttämään vain yhdellä tunnisteella varustetut tapahtumat. Kävijät, jotka napsauttavat tapahtumaa, avaavat sen oman tapahtumasivun. Katso [Kalenteri-elementin käyttäminen](../website/page-editor.md#using-the-calendar-element).
 
 ## Tapahtumailmoittautumisen ottaminen käyttöön {#enabling-event-registration}
 
 Voit ottaa ilmoittautumisen käyttöön mille tahansa kalenteritapahtumalle, jotta jäsenet voivat ilmoittautua B1-verkkosivuston tai mobiilisovelluksen kautta.
 
 1. Napsauta olemassa olevaa tapahtumaa tai luo uusi.
-2. Ota tapahtumaeditorissa käyttöön **Ilmoittautuminen**-kytkin.
+2. Ota tapahtuman muokkausnäkymässä **Ilmoittautuminen** käyttöön kytkimellä.
 3. Määritä ilmoittautumisasetukset:
-   - **Kapasiteetti** (valinnainen) -- Aseta ilmoittautumisten enimmäismäärä. Jätä tyhjäksi rajoittamatonta määrää varten.
-   - **Ilmoittautuminen alkaa** -- Päivämäärä ja kellonaika, jolloin ilmoittautuminen tulee saataville.
-   - **Ilmoittautuminen päättyy** -- Päivämäärä ja kellonaika, jolloin ilmoittautuminen päättyy.
-   - **Tunnisteet** -- Pilkulla erotetut tunnisteet (esim. „nuoret, retriitti, VBS”) auttavat luokittelemaan ilmoittautumiseen liittyviä tapahtumia.
-   - **Ilmoittautumiskysymykset** -- Voit halutessasi liittää [lomakkeen](../forms/creating-forms.md), jotta ilmoittautujat vastaavat lisäkysymyksiin (ruokavalio, T-paidan koko, hätäyhteystieto jne.) osana ilmoittautumista. Valitse **Ei mitään**, jos haluat ohittaa kysymykset.
-   - **Ota jonotuslista käyttöön** -- Kun tapahtuma täyttyy, anna lisäilmoittautujien liittyä jonotuslistalle sen sijaan, että heidät torjuttaisiin. Katso [Maksulliset ilmoittautumiset](./paid-registrations.md#waitlist).
+   - **Kapasiteetti** (valinnainen) -- Aseta ilmoittautumisten enimmäismäärä. Jätä tyhjäksi, jos määrää ei rajoiteta.
+   - **Ilmoittautuminen alkaa** -- Päivämäärä ja kellonaika, jolloin ilmoittautuminen avautuu.
+   - **Ilmoittautuminen päättyy** -- Päivämäärä ja kellonaika, jolloin ilmoittautuminen sulkeutuu.
+   - **Tunnisteet** -- Pilkuilla erotetut nimilaput (esim. "nuoret, leiri, VBS"), jotka auttavat luokittelemaan ilmoittauduttavat tapahtumat.
+   - **Ilmoittautumiskysymykset** -- Voit halutessasi liittää [lomakkeen](../forms/creating-forms.md), jotta ilmoittautujat vastaavat lisäkysymyksiin (ruokavalio, T-paidan koko, hätäyhteystiedot jne.) ilmoittautumisen yhteydessä. Valitse **Ei mitään**, jos et halua kysymyksiä.
+   - **Ota odotuslista käyttöön** -- Kun tapahtuma täyttyy, lisäilmoittautujat voivat liittyä odotuslistalle sen sijaan, että heidät torjuttaisiin. Katso [Maksulliset ilmoittautumiset](./paid-registrations.md#waitlist).
 4. Tallenna tapahtuma.
 
-Maksullisten tapahtumien osalta sama asetussivu mahdollistaa hinnoiteltujen **Osallistujatyyppien**, valinnaisten **Valintojen** (lisäpalvelut) ja **Alennuskoodien** määrittämisen. Maksut kerätään seurakuntasi lahjoituspalvelun kautta. Katso koko ohje sivulta [Maksulliset ilmoittautumiset](./paid-registrations.md).
+Maksullisten tapahtumien kohdalla samalta asetussivulta voit määrittää hinnoitellut **Osallistujatyypit**, valinnaiset **Valinnat** (lisäpalvelut) ja **Alennuskoodit**. Maksut kerätään seurakuntasi lahjoituspalvelun kautta. Katso koko ohje sivulta [Maksulliset ilmoittautumiset](./paid-registrations.md).
 
-Kun ilmoittautuminen on otettu käyttöön, jäsenet näkevät painikkeen **Ilmoittaudu tähän tapahtumaan**, kun he katsovat tapahtumaa [B1-verkkosivustolla](../../b1-church/events/registering.md) tai [B1-mobiilisovelluksessa](../../b1-church/events/registering.md). Jos liität lomakkeen, ilmoittautujat näkevät ilmoittautumisen aikana **Kysymykset**-vaiheen, ja heidän vastauksensa tallennetaan ilmoittautumisen yhteydessä.
+Kun ilmoittautuminen on käytössä, jäsenet näkevät painikkeen **Ilmoittaudu tapahtumaan**, kun he katsovat tapahtumaa [B1.church-sivustolla tai B1-sovelluksessa](../../b1-church/events/registering.md). Jos liitit lomakkeen, ilmoittautujat näkevät ilmoittautumisen aikana vaiheen **Kysymykset**, ja heidän vastauksensa tallennetaan ilmoittautumisen yhteydessä.
 
 :::info
-Ilmoittautumiskysymykset toimivat vain lomakkeilla, joita **ei** ole merkitty rajoitetuiksi. Rajoitettu lomake ohitetaan automaattisesti ilmoittautumisen aikana eikä sitä näytetä, joten käytä rajoittamatonta lomaketta, kun liität kysymyksiä tapahtumaan.
+Ilmoittautumiskysymykset toimivat vain lomakkeilla, joita **ei** ole merkitty rajoitetuiksi. Rajoitettu lomake ohitetaan ilmoittautumisen aikana automaattisesti eikä sitä näytetä, joten käytä rajoittamatonta lomaketta, kun liität kysymyksiä tapahtumaan.
 :::
 
 ### Ilmoittautumisten hallinta
 
-Ilmoittautumisten katsominen ja hallinta tapahtumillesi:
+Ilmoittautumisten katseleminen ja hallinta tapahtumillesi:
 
-1. Valitse Hyppyvalikosta **Kalenterit > Ilmoittautumiset**.
-2. Näet taulukon kaikista tapahtumista, joissa ilmoittautuminen on käytössä. Taulukossa näkyvät tapahtuman otsikko, päivämäärä, nykyinen ilmoittautumismäärä suhteessa kapasiteettiin sekä tunnisteet.
-3. Napsauta tapahtumaa nähdäksesi kaikki ilmoittautumiset, mukaan lukien nimet, jäsenmäärä, osallistujatyypit, maksutilanne ja ilmoittautumispäivä.
+1. Avaa Siirry-valikko ja valitse **Kalenterit > Ilmoittautumiset**.
+2. Näet taulukon kaikista tapahtumista, joissa ilmoittautuminen on käytössä. Taulukossa näkyvät tapahtuman nimi, päivämäärä, nykyinen ilmoittautumismäärä suhteessa kapasiteettiin sekä tunnisteet.
+3. Napsauta tapahtumaa nähdäksesi täydellisen ilmoittautujaluettelon, mukaan lukien nimet, jäsenmäärä, osallistujatyypit, maksutilanne ja ilmoittautumispäivä.
 4. Tietosivulta voit:
-   - **Lisää osallistuja** -- Lisää henkilö käsin, jos hän ilmoittautui paikan päällä tai puhelimitse.
+   - **Lisää osallistuja** -- Lisää henkilö manuaalisesti, jos hän ilmoittautui paikan päällä tai puhelimitse.
    - **Peruuta** yksittäisiä ilmoittautumisia
    - **Poista** ilmoittautumisia pysyvästi
-   - **Siirrä ylös** jonotuslistalla olevia ilmoittautumisia, kun paikka vapautuu
+   - **Siirrä** odotuslistalla olevia ilmoittautumisia, kun paikka vapautuu
    - **Vie CSV** -- Lataa kaikki ilmoittautumiset, mukaan lukien osallistujatyypit, valinnat, maksusummat ja kysymysten vastaukset
 
-Jos tapahtumaan on liitetty ilmoittautumiskysymyksiä, tietosivulla näkyy myös suodatin **Vain vastaamattomat kysymykset**, jolla löydät nopeasti ilmoittautujat, jotka eivät ole vielä lähettäneet vastauksia. Jokaisessa vastatussa ilmoittautumisessa on myös **Näytä vastaukset** -painike vastausten katsomista varten. Maksulliset tapahtumat lisäävät **Tyyppi**-sarakkeen, **Maksettu / Yhteensä** -sarakkeen, tyyppikohtaiset määrät ja maksutietojen valintaikkunan. Katso [Maksulliset ilmoittautumiset](./paid-registrations.md#the-registration-roster).
+Jos tapahtumaan on liitetty ilmoittautumiskysymyksiä, tietosivulla näkyy myös suodatin **Vain vastaamattomat kysymykset**, jolla löydät nopeasti ilmoittautujat, jotka eivät ole vielä vastanneet, sekä painike **Näytä vastaukset** jokaisen vastanneen ilmoittautumisen kohdalla. Maksullisissa tapahtumissa on lisäksi sarake **Tyyppi**, sarake **Maksettu / Yhteensä**, tyyppikohtaiset määrät ja maksujen tarkempi valintaikkuna -- katso [Maksulliset ilmoittautumiset](./paid-registrations.md#the-registration-roster).
 
 :::tip
-Käytä kapasiteettipalkkia seurataksesi, kuinka nopeasti tapahtumat täyttyvät. Palkki muuttuu punaiseksi, kun tapahtuma on täynnä tai ylittää kapasiteetin.
+Käytä kapasiteetin edistymispalkkia seurataksesi, kuinka nopeasti tapahtumat täyttyvät. Palkki muuttuu punaiseksi, kun tapahtuma on kapasiteetin tasolla tai sen yli.
 :::
 
 ## Seuraavat vaiheet
 
 - [Kuratoitu kalenteri](./curated-calendar.md) -- Luo kalenteri, joka hakee tapahtumia useista ryhmistä
-- [Maksulliset ilmoittautumiset](./paid-registrations.md) -- Osallistujatyypit, lisävalinnat, alennuskoodit, maksut ja jonotuslistat
-- [Tapahtumailmoittautumisen opas](../guides/event-registration.md) -- Vaiheittainen opas tapahtumailmoittautumisen määrittämiseen
+- [Maksulliset ilmoittautumiset](./paid-registrations.md) -- Osallistujatyypit, lisävalinnat, alennuskoodit, maksut ja odotuslistat
+- [Tapahtumailmoittautumisen opas](../guides/event-registration.md) -- Vaiheittainen ohje tapahtumailmoittautumisen määrittämiseen
 - [Kalenterien yleiskatsaus](./index.md) -- Palaa kalenterien yleiskatsaukseen

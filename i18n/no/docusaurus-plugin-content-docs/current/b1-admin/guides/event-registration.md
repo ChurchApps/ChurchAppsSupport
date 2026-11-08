@@ -1,88 +1,88 @@
 ---
-title: "Veiledning: Sett opp hendelsesregistrering"
-description: "Sett opp et påmeldingsskjema i B1 Admin for å samle inn deltakerdetaljer og eventuelle betalinger, legg det inn på nettsiden, og følg påmeldingene."
+title: "Veiledning: Sett opp arrangementspåmelding"
+description: "Sett opp et påmeldingsskjema for arrangementer i B1 Admin for å samle inn deltakeropplysninger og eventuelle betalinger, bygg det inn på menighetens nettside og følg med på påmeldingene."
 ---
 
-# Sett opp hendelsesregistrering
+# Sett opp arrangementspåmelding
 
 <div class="article-intro">
 
-Opprett et registreringsskjema for hendelser, samle informasjon om deltakere og valgfrie betalinger, embed det på nettstedet ditt, og administrer innleveringer når de kommer inn. På slutten vil du ha en delbar registreringsside for enhver kirkehendelse.
+Lag et påmeldingsskjema for arrangementer, samle inn deltakeropplysninger og eventuelle betalinger, bygg skjemaet inn på menighetens nettside, og håndter påmeldinger etter hvert som de kommer inn. Når du er ferdig, har du en delbar påmeldingsside for alle menighetens arrangementer.
 
 </div>
 
 :::info
-**To måter å håndtere hendelsesregistrering:** Denne veiledningen dekker **skjemabasert registrering**, som gir deg full kontroll over egendefinerte felt og betalingsinnsamling. For enklere hendelser der du bare må spore hvem som kommer, bruk **innebygd hendelsesregistrering** som er innebygd i kalenderen -- se [Opprettelse av kalendere](../calendars/creating-calendars.md#enabling-event-registration) for oppsettsanvisninger. Innebygd registrering lar medlemmer melde seg på direkte fra [B1-nettstedet](../../b1-church/events/registering.md) og [mobilappen](../../b1-church/events/registering.md) med kapasitetssporing, datovinduet og e-postbekreftelser.
+**To måter å håndtere arrangementspåmelding på:** Denne veiledningen dekker **skjemabasert påmelding**, som gir deg full kontroll over egendefinerte felt og innsamling av betalinger. For enklere arrangementer der du bare trenger å holde oversikt over hvem som kommer, kan du bruke **innebygd arrangementspåmelding** i kalenderen. Se [Opprette kalendere](../calendars/creating-calendars.md#enabling-event-registration) for oppsettsinstruksjoner. Med innebygd påmelding kan medlemmer melde seg på direkte fra [B1.church eller B1 App](../../b1-church/events/registering.md), med kapasitetsoversikt, datovinduer og e-postbekreftelser.
 :::
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- B1 Admin-konto med administrasjonstilgang
-- For å samle betalinger: [Stripe må være konfigurert](../donations/online-giving-setup.md) først
+- B1 Admin-konto med administratortilgang
+- For innsamling av betalinger: [Stripe må være konfigurert](../donations/online-giving-setup.md) først
 
 </div>
 
-## Trinn 1: Opprett et frittstående skjema
+## Steg 1: Lag et frittstående skjema
 
-Frittstående skjemaer har sin egen offentlige URL som alle kan få tilgang til -- perfekt for hendelsesregistrering.
+Frittstående skjemaer har sin egen offentlige nettadresse som alle kan åpne, og er derfor perfekte for arrangementspåmelding.
 
-Følg veiledningen [Opprettelse av skjemaer](../forms/creating-forms.md) for å:
+Følg veiledningen [Opprette skjemaer](../forms/creating-forms.md) for å:
 
-1. Gå til Skjemaer og klikk Legg til skjema
-2. Velg "Frittstående" type -- dette gir skjemaet ditt sin egen offentlige URL
-3. Navngi det etter hendelsen (f.eks. "Registrering av mennenes retirett", "VBS-påmelding")
+1. Gå til Skjemaer og klikk på Legg til skjema
+2. Velg typen «Frittstående». Da får skjemaet sin egen offentlige nettadresse
+3. Gi skjemaet et navn etter arrangementet (for eksempel «Påmelding til menns retreat» eller «Påmelding til ferieskole»)
 
-## Trinn 2: Legg til spørsmål
+## Steg 2: Legg til spørsmål
 
-Bygg ut feltene du trenger for å samle inn fra deltakere.
+Bygg opp feltene du trenger å samle inn fra deltakerne.
 
-Følg veiledningen [Opprettelse av skjemaer](../forms/creating-forms.md#adding-questions) for å legge til spørsmålene dine:
+Følg veiledningen [Opprette skjemaer](../forms/creating-forms.md#adding-questions) for å legge til spørsmålene dine:
 
-1. Gå til Spørsmål-fanen og legg til felt for informasjonen du trenger: navn, e-post, telefon, kostholdsrestriksjoner, T-skjortstørrelse, nødkontakt osv.
-2. Bruk Flervalg for alternativer som måltidsvalg eller sesjonvalg
+1. Gå til fanen Spørsmål og legg til felt for informasjonen du trenger: navn, e-post, telefon, kosthensyn, T-skjortestørrelse, nødkontakt osv.
+2. Bruk Flervalg for alternativer som måltidspreferanser eller valg av økter
 
 :::warning
-Betalingsfelttypen krever at Stripe er konfigurert. Hvis du ikke har satt opp nettgiving ennå, se [Nettgivingsoppsett](../donations/online-giving-setup.md) før du legger til betalingsfelt.
+Feltet for betaling krever at Stripe er konfigurert. Hvis du ikke har satt opp nettbasert giving ennå, se [Oppsett av nettbasert giving](../donations/online-giving-setup.md) før du legger til betalingsfelt.
 :::
 
-## Trinn 3: Konfigurer skjemainnstillinger
+## Steg 3: Konfigurer skjemainnstillinger
 
-Kontroller når og hvordan registreringsskjemaet ditt er tilgjengelig.
+Bestem når og hvordan påmeldingsskjemaet skal være tilgjengelig.
 
-1. Angi tilgjengelighetsdatoer hvis registreringen bare skal være åpen for en begrenset tid
-2. Kopier den offentlige URL-adressen -- du kan dele denne direkte
-3. Legg til skjemamedlemmer med Admin- eller Bare visning-roller for å hjelpe til med å administrere innleveringer
+1. Angi tilgjengelighetsdatoer hvis påmeldingen bare skal være åpen i en begrenset periode
+2. Kopier den offentlige nettadressen. Du kan dele den direkte
+3. Legg til skjemamedlemmer med rollen Admin eller Kun visning for å hjelpe til med å håndtere påmeldinger
 
-## Trinn 4: Embed på nettstedet ditt
+## Steg 4: Bygg det inn på nettsiden din
 
-Gjør registreringsskjemaet enkelt å finne ved å legge det til på kirkens nettsted.
+Gjør det enkelt å finne påmeldingsskjemaet ved å legge det til på menighetens nettside.
 
-Følg veiledningen [Håndtering av sider](../website/managing-pages.md) for å:
+Følg veiledningen [Administrere sider](../website/managing-pages.md) for å:
 
-1. I B1 nettstedsredigereren, legg til en ny del til en side og velg Form-elementet
-2. Velg registreringsskjemaet fra listen
+1. I redigeringsverktøyet for din B1-nettside legger du til en ny seksjon på en side og velger elementet Skjema
+2. Velg påmeldingsskjemaet ditt fra listen
 
 :::tip
-Del den frittstående URL-adressen via e-post, sosiale medier og kirkebulletiner også -- jo flere steder den er synlig, jo flere påmeldinger får du.
+Del også den frittstående nettadressen via e-post, sosiale medier og kirkeblader. Jo flere steder den er synlig, desto flere påmeldinger får du.
 :::
 
-## Trinn 5: Administrer innleveringer
+## Steg 5: Håndter påmeldinger
 
-Spor registreringer når de kommer inn og eksporter data når du trenger det.
+Følg med på påmeldingene etter hvert som de kommer inn, og eksporter data når du trenger det.
 
-Følg veiledningen [Håndtering av innleveringer](../forms/managing-submissions.md) for å:
+Følg veiledningen [Håndtere innsendinger](../forms/managing-submissions.md) for å:
 
-1. Gjennomgå svar når de kommer inn på Innleveringer-fanen
-2. Eksporter til CSV for regneark, persontelling eller deling med hendelseskoordinatorer
+1. Gjennomgå svarene etter hvert som de kommer inn, på fanen Innsendinger
+2. Eksporter til CSV for regneark, opptelling av deltakere eller deling med arrangementskoordinatorer
 
-## Du er ferdig!
+## Ferdig!
 
-Hendelsesregistreringen din er live. Del lenken, embed den på nettstedet ditt og spor påmeldinger fra B1 Admin. Når hendelsen er over, eksporter den endelige listen for posteriteten.
+Påmeldingen til arrangementet er nå aktiv. Del lenken, bygg den inn på nettsiden din, og følg med på påmeldingene fra B1 Admin. Når arrangementet er over, eksporterer du den endelige listen for arkivet ditt.
 
 ## Relaterte artikler
 
-- [Opprettelse av skjemaer](../forms/creating-forms.md) -- bygg skjemaer med ulike felttyper
-- [Håndtering av innleveringer](../forms/managing-submissions.md) -- gjennomgå og eksporter skjemaresponser
-- [Håndtering av sider](../website/managing-pages.md) -- embed skjemaer på nettstedet
-- [Nettgivingsoppsett](../donations/online-giving-setup.md) -- nødvendig for betalingsfelt
+- [Opprette skjemaer](../forms/creating-forms.md) — bygg skjemaer med ulike feltyper
+- [Håndtere innsendinger](../forms/managing-submissions.md) — gjennomgå og eksporter skjemasvar
+- [Administrere sider](../website/managing-pages.md) — bygg inn skjemaer på nettsiden din
+- [Oppsett av nettbasert giving](../donations/online-giving-setup.md) — kreves for betalingsfelt

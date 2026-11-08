@@ -1,61 +1,62 @@
 ---
 title: "Klaslessen plannen in het portaal"
-sidebar_label: "Scheduling Lessons"
-description: "Plan Lessons.church-lessen in de agenda van een klaslokaal in het B1 Admin-portaal: kies per datum een programma, studie, les en leeftijdsspecifieke locatie."
+sidebar_label: "Lessen plannen"
+description: "Plan Lessons.church-lessen in de kalender van een klas in het B1 Admin-portaal door voor elke datum een programma, studie, les en leeftijdsspecifieke locatie te kiezen."
 ---
 
-# Scheduling Lessons
+# Lessen plannen
 
 <div class="article-intro">
 
-Zodra uw klaslokalen zijn ingesteld, volgt de volgende stap: het plannen van lessen zodat uw vrijwilligers precies weten wat en wanneer onderwijs wordt gegeven. Planning verbindt de lesseninhoud van Lessons.church met uw klaslokaalkalender.
+Zodra je klassen zijn ingesteld, is de volgende stap het plannen van lessen, zodat je vrijwilligers precies weten wat ze wanneer moeten onderwijzen. Met het plannen koppel je de lesinhoud van Lessons.church aan de kalender van je klas.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
-- [Stel minstens één klaslokaal in](./setting-up-classrooms.md) in de portal
-- [Bladeren door de inhoudsbibliotheek](../browsing/index.md) om een programma en study te vinden die u wilt onderwijzen
+- [Stel minstens één klas in](./setting-up-classrooms.md) in het portaal
+- [Blader door de contentbibliotheek](../browsing/index.md) om een programma en een studie te vinden die je wilt onderwijzen
 
 </div>
 
-## Een Klaslokaalschema Weergeven
+## Een klasrooster bekijken
 
-1. Log in en navigeer naar uw **Portal**.
-2. Klik op het **classroom** dat u wilt plannen.
-3. De schemaweergave geeft de **last 4 past lessons** en de **next 4 upcoming lessons** weer. Dit geeft u een snelle blik op wat onlangs is onderwezen en wat er aankomt.
+1. Log in en ga naar je **Portaal**.
+2. Klik op de **klas** die je wilt plannen.
+3. In het vak **Lesrooster** staan alle lessen die voor die klas zijn gepland, met de nieuwste datum bovenaan. Elke les heeft het label **Aankomend**, **Vandaag** of **Verleden**, zodat je in één oogopslag ziet wat er recent is behandeld en wat eraan komt.
 
-## Een Les Aan Het Schema Toevoegen
+## Een les aan het rooster toevoegen
 
-1. Klik vanuit de weergave van het klaslokaalschema om een nieuwe les toe te voegen.
-2. Selecteer de **date** voor de les.
-3. Kies het **program** waaruit u onderwijs wilt geven (bijvoorbeeld "Bible Stories for Kids").
-4. Selecteer de **study** binnen dat programma (bijvoorbeeld "Creation and Early Stories").
-5. Kies de specifieke **lesson** die u wilt plannen.
-6. Kies de passende **venue** voor dit klaslokaal. Venues vertegenwoordigen leeftijdsgroepspecifieke versies van de lesseninhoud (bijvoorbeeld "Preschool" of "Elementary"). Het kiezen van de juiste plaats zorgt ervoor dat uw vrijwilligers inhoud zien die op hun klaslokaals leeftijdsgroep is afgestemd.
-7. Sla de geplande les op.
+1. Klik in het vak **Lesrooster** op **Planning toevoegen**. Als de klas nog niets gepland heeft, klik dan in plaats daarvan op **Eerste planning toevoegen**.
+2. Vul de **Datum van planning** voor de les in.
+3. Als je [externe aanbieders](../admin/third-party-providers.md) hebt toegevoegd, kies dan een **Aanbieder**. Laat deze op **Lessons.church** staan om te plannen vanuit de Lessons.church-bibliotheek.
+4. Kies het **Programma** dat je wilt onderwijzen (bijvoorbeeld "Bijbelverhalen voor kinderen").
+5. Selecteer de **Studie** binnen dat programma (bijvoorbeeld "Schepping en vroege verhalen").
+6. Kies de specifieke **Les** die je wilt plannen.
+7. Kies de juiste **Locatie** voor deze klas. Locaties vertegenwoordigen leeftijdsgroepspecifieke versies van de lesinhoud (bijvoorbeeld "Peuters" of "Basisschool"). Door de juiste locatie te kiezen, zien je vrijwilligers inhoud die is afgestemd op de leeftijdsgroep van hun klas.
+8. Klik op **Opslaan**. Wil je de les eerst controleren, klik dan op **Voorbeeld / Afdrukken** om deze in een nieuw tabblad te openen.
 
-De les verschijnt nu op het schema van het klaslokaal voor die datum.
+De les verschijnt nu op het rooster van de klas voor die datum.
 
 :::info
-Programma's, studies en lessen zijn de inhoudshiërarchie op Lessons.church. Een programma bevat meerdere studies, en elke study bevat individuele lessen. Venues bieden leeftijdsspecifieke variaties van dezelfde les. Zie [Programs and Studies](../browsing/programs-and-studies.md) voor een volledige uitleg.
+Programma's, studies en lessen vormen de inhoudshiërarchie op Lessons.church. Een programma bevat meerdere studies, en elke studie bevat afzonderlijke lessen. Locaties bieden leeftijdsspecifieke varianten van dezelfde les. Zie [Programma's en studies](../browsing/programs-and-studies.md) voor een volledige uitleg.
 :::
 
-## Hoe Vrijwilligers Het Schema Gebruiken
+## Hoe vrijwilligers het rooster gebruiken
 
-Zodra u lessen hebt gepland, kunnen uw vrijwilligers de portal openen, hun klaslokaal selecteren en onmiddellijk zien wat eraan komt. Ze kunnen de lesseninhoud van tevoren controleren, alle benodigde materialen downloaden en voorbereid aankomen. Geen giswerk meer over wat vervolgens onderwezen moet worden.
+Zodra je lessen hebt gepland, kunnen je vrijwilligers het portaal openen, hun klas selecteren en meteen zien wat eraan komt. Ze kunnen de lesinhoud van tevoren bekijken, het materiaal downloaden dat ze nodig hebben en goed voorbereid aankomen. Geen giswerk meer over wat ze hierna moeten onderwijzen.
 
-## Tips Voor Planning
+## Tips voor het plannen
 
-- **Plan van tevoren** -- Plan verschillende weken lessen tegelijk zodat uw team zich van tevoren kan voorbereiden.
-- **Blijf consistent** -- Een programma opeenvolgend volgen helpt kinderen voort te bouwen op wat zij de vorige week hebben geleerd.
-- **Controleer de geschiedenis** -- Gebruik de voorbije lessenlijst om ervoor te zorgen dat u inhoud niet per ongeluk herhaalt.
+- **Plan vooruit** -- Kerken plannen klaslessen in [B1 Admin](../../b1-admin/serving/scheduling-lessons.md), inclusief het toepassen van een gepubliceerd jaarplan.
+- **Blijf consistent** -- Een programma in volgorde volgen helpt kinderen voort te bouwen op wat ze de week ervoor hebben geleerd.
+- **Controleer de geschiedenis** -- Gebruik de lijst met eerdere lessen om te voorkomen dat je per ongeluk inhoud herhaalt.
 
 :::warning
-Zorg ervoor dat u de juiste plaats voor de leeftijdsgroep van uw klaslokaal selecteert. Het kiezen van de verkeerde plaats betekent dat uw vrijwilligers inhoud zien die voor een ander leeftijdsniveau is ontworpen.
+Zorg ervoor dat je de juiste locatie kiest voor de leeftijdsgroep van je klas. Een verkeerde locatie betekent dat je vrijwilligers inhoud zien die voor een ander leeftijdsniveau is bedoeld.
 :::
 
-## Wat Volgt
+## Wat volgt
 
-Na het plannen van lessen, wilt u mogelijk [de lesseninhoud aanpassen](../customization/customizing-lessons.md) voor specifieke klaslokalen om aan uw onderwijsstijl en leeftijdsgroep behoeften tegemoet te komen. Wanneer het tijd is om les te geven, leert u over [Presenting](../presenting/index.md) om lessen effectief af te leveren.
+Na het plannen van lessen wil je misschien [de lesinhoud aanpassen](../customization/customizing-lessons.md) voor specifieke klassen, zodat die aansluit bij je onderwijsstijl en de behoeften van de leeftijdsgroep. Wanneer het tijd is om les te geven, lees dan meer over [Presenteren](../presenting/index.md) om lessen effectief over te brengen.

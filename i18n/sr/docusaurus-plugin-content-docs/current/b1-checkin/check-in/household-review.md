@@ -1,67 +1,68 @@
 ---
-title: "Преглед вашег домаћинства"
-description: "Прегледајте домаћинство у B1 Checkin након избора особе, па доделите групе за сваки термин службе и означите госте или волонтере пре пријаве."
+title: "Pregled vašeg domaćinstva"
+description: "Pregledajte svoje domaćinstvo u aplikaciji B1 Checkin nakon što izaberete osobu, zatim dodelite grupe za svako vreme službe i označite goste ili volontere pre prijave."
 ---
 
-# Преглед вашег домаћинства
+# Pregled vašeg domaćinstva
 
 <div class="article-intro">
 
-Након што изаберете особу из резултата претраге, апликација учитава цело ваше домаћинство и приказује га на екрану за преглед домаћинства. Ово је централно место процеса пријаве, где можете видети све чланове своје породице и управљати њиховим распоредима по групама пре пријаве.
+Nakon što izaberete osobu iz rezultata pretrage, aplikacija učitava celo vaše domaćinstvo i prikazuje ga na ekranu za pregled domaćinstva. Ovo je središnje mesto procesa prijave, gde možete videti sve članove porodice i upravljati njihovim dodelama grupa pre prijave.
 
 </div>
 
 <div class="prereqs">
-<h4>Пре почетка</h4>
+<h4>Pre nego što počnete</h4>
 
-- [Изаберите службу](./selecting-service.md) на екрану служби
-- [Потražite člana](./looking-up-members.md) и изаберите га из резултата претраге
+- [Izaberite službu](./selecting-service.md) na ekranu službi
+- [Potražite člana](./looking-up-members.md) i izaberite ga iz rezultata pretrage
 
 </div>
 
-## Преглед чланова домаћинства
+## Pregled članova domaćinstva
 
-Сваки члан домаћинства приказан је као картица са:
+Svaki član domaćinstva prikazan je kao kartica sa:
 
-- Њиховом **фотографијом** (или иконом места за фотографију ако фотографија није сачувана)
-- Њиховим **приказаним именом**
-- **Сажетком њихових тренутних додела група** (приказаном као мале ознаке испод имена када је картица скупљена)
-- **Стрелицом за проширивање/скупљање** на десној страни
+- Njegovom **fotografijom** (ili ikonicom za mesto ako fotografija nije sačuvana)
+- Njegovim **prikazanim imenom**
+- **Sažetkom trenutnih dodela grupa** (prikazan kao mali čipovi ispod imena kada je kartica sažeta)
+- Oznakom **Već prijavljen** ako se već prijavio na ovu službu danas
+- **Strelicom za proširivanje i sažimanje** na desnoj strani
 
-## Проширивање члана
+## Proširivanje člana
 
-Додирните картицу члана да бисте је проширили. Када је проширена, видећете ред за сваки **термин службе** унутар изабране службе, почевши од најранијег. Термини служби се уређују према заказаном дану и времену почетка када је то подешено, у супротном према времену у њиховом називу (тако да се "9:00 AM" појављује пре "10:30 AM"); термини служби без времена у називу иду на крај, абецедно. Сваки ред приказује:
+Dodirnite karticu člana da je proširite. Kada je proširena, videćete red za svako **vreme službe** unutar izabrane službe, počev od najranijeg. Vremena službe poređana su prema zakazanom danu i vremenu početka, ako je ono postavljeno; u suprotnom prema vremenu u njihovom nazivu (tako da "9:00 AM" dolazi pre "10:30 AM"). Vremena službe bez vremena u nazivu nalaze se na kraju, po abecedi. Svaki red prikazuje:
 
-- **Назив термина службе** (на пример, "9:00 AM" или "11:00 AM")
-- **Групе које се нуде** у том термину службе, наведене испод назива (на пример, "Nursery, Preschool, Adult Bible Class"), тако да можете видети које су часови доступни пре него што изаберете
-- **Дугме** које приказује тренутно додељену групу, или "Select Group" ако група још није додељена
+- **Naziv vremena službe** (na primer, "9:00 AM" ili "11:00 AM")
+- **Grupe koje se nude** u tom vremenu službe, navedene ispod naziva (na primer, "Nursery, Preschool, Adult Bible Class"), kako biste videli koji su časovi dostupni pre nego što izaberete
+- **Dugme** koje prikazuje trenutno dodeljenu grupu, ili "Izaberite grupu" ako grupa još nije dodeljena
 
-Ако термин службе има [распоред пријава](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) и његов прозор је тренутно затворен, ред уместо дугмета приказује **Затворено** -- са следећим временом отварања када оно постоји, на пример **Затворено · отвара се нед 9:30 AM**. Ако је особа већ пријављена на тај термин службе, ред уместо тога приказује њихову групу са знаком за потврду (на пример, **Дечја соба 1 · Пријављен**), тако да можете видети где се налазе чак и када је прозор већ затворен.
+Ako vreme službe ima [raspored prijave](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) i njegov prozor je trenutno zatvoren, red umesto dugmeta prikazuje **Zatvoreno** -- uz sledeće vreme otvaranja kada ono postoji, na primer **Zatvoreno · otvara se ned 9:30 AM**. Ako je osoba već prijavljena na to vreme službe, red umesto toga prikazuje njenu grupu sa znakom za potvrdu (na primer, **Kids Room 1 · Prijavljen**), tako da možete videti gde se nalazi, čak i kada je prozor zatvoren.
 
-Додирните дугме групе да бисте отишли на [екран за избор групе](./group-assignment.md), где можете изабрати или променити групу за ту особу и термин службе.
+Dodirnite dugme grupe da biste otvorili [ekran za izbor grupe](./group-assignment.md), gde možete izabrati ili promeniti grupu za tu osobu i vreme službe.
 
-Проширена картица такође приказује ознаке **Члан**, **Гост** и **Волонтер**. Додирните једну да бисте подесили како ова особа се пријављује -- Члан је подразумевано. Тип је важан за дечје собе: волонтери се рачунају у однос волонтера и деце у соби, а гости се рачунају у све капацитете за госте које је ваша црква поставила.
+Proširena kartica takođe prikazuje čipove **Član**, **Gost** i **Volonter**. Dodirnite jedan da podesite kako se ova osoba prijavljuje -- Član je podrazumevano. Tip je važan za dečje sobe: volonteri se računaju u odnos volontera i dece u sobi, a gosti se računaju u bilo koji kapacitet za goste koji je vaša crkva postavila.
 
-Додирните картицу члана поново да бисте је скупили.
+Dodirnite karticu člana ponovo da je sažmete.
 
 :::tip
-Не морате да додељујете сваког члана породице групи. Одрасли који присуствују главној богослужбеној служби могу остати без доделе групе. Додељујте групе само члановима који треба да се пријаве на одређени час или програм.
+Ne morate svakog člana porodice dodeliti grupi. Odrasli koji prisustvuju glavnoj bogoslužbi mogu ostati bez dodele grupe. Dodelite grupe samo članovima kojima je potrebna prijava u određeni čas ili program.
 :::
 
-## Навигација са овог екрана
+## Kretanje sa ovog ekrana
 
-Са екрана за преглед домаћинства имате три могућности:
+Sa ekrana za pregled domaćinstva imate tri opcije:
 
-- **Проширите члана** и додирните дугме термина службе да бисте [доделили или променили групу](./group-assignment.md).
-- **Додирните дугме Додај госта** испод листе чланова да бисте [додали госта](./adding-guests.md) у своје домаћинство.
-- **Додирните дугме Пријава** на дну екрана да бисте [завршили пријаву](./completing-checkin.md) за све у домаћинству.
+- **Proširite člana** i dodirnite dugme vremena službe da [dodelite ili promenite grupu](./group-assignment.md).
+- **Dodirnite dugme Dodaj gosta** ispod liste članova da [dodate gosta](./adding-guests.md) svom domaćinstvu.
+- **Dodirnite dugme Prijava** na dnu ekrana da [završite prijavu](./completing-checkin.md) za sve članove domaćinstva.
 
 :::info
-Све доделе група из претходне пријаве за исту службу се аутоматски учитавају унапред. Ако ваша деца иду у исте групе сваке недеље, можда нећете морати ништа да мењате -- само прегледајте и пријавите се.
+Sve dodele grupa iz prethodne prijave na istu službu učitavaju se automatski unapred. Ako vaša deca redovno idu u iste grupe, možda ništa ne morate menjati -- samo pregledajte i prijavite.
 :::
 
-## Следећи кораци
+## Sledeći koraci
 
-- [Доделите групе](./group-assignment.md) члановима породице који треба да се пријаве на одређени час или програм.
-- [Додајте госта](./adding-guests.md) ако неко долази са вашом породицом.
-- [Завршите пријаву](./completing-checkin.md) када су сви распореди тачни.
+- [Dodelite grupe](./group-assignment.md) članovima porodice kojima je potrebna prijava u određeni čas ili program.
+- [Dodajte gosta](./adding-guests.md) ako neko dolazi sa vašom porodicom.
+- [Završite prijavu](./completing-checkin.md) kada dodele svih izgledaju ispravno.

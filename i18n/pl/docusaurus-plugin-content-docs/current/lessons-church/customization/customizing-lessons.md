@@ -1,76 +1,91 @@
 ---
-title: "Dostosowywanie lekcji"
-description: "Usuwanie, ukrywanie i zmiana kolejności sekcji oraz ról w lekcji Lessons.church, z wyborem: zmiana dla jednej sali czy wszystkich."
+title: "Prilagođavanje lekcija"
+description: "Uklonite ili preuredite odjeljke, uloge i radnje u lekciji Lessons.church i odaberite hoće li se svaka promjena primijeniti na jednu učionicu ili na sve."
 ---
 
-# Dostosowywanie lekcji
+# Prilagođavanje lekcija
 
 <div class="article-intro">
 
-Ten przewodnik przeprowadzi Cię przez dostosowywanie lekcji do potrzeb Twojej sali. Dostosowania pozwalają usunąć, ukryć lub zmienić kolejność treści, dzięki czemu wolontariusze zobaczą dokładnie to, czego potrzebują -- ani mniej, ani więcej.
+Ovaj vodič vas vodi kroz prilagođavanje lekcije za vašu učionicu. Prilagodbe vam omogućuju uklanjanje ili preuređivanje sadržaja kako bi volonteri vidjeli upravo ono što im treba -- ništa više, ništa manje.
 
 </div>
 
 <div class="prereqs">
-<h4>Zanim zaczniesz</h4>
+<h4>Prije nego što počnete</h4>
 
-- [Skonfiguruj co najmniej jedną salę](../classrooms/setting-up-classrooms.md) w portalu
-- [Zaplanuj lekcję](../classrooms/scheduling-lessons.md) do sali, którą chcesz dostosować
-- Przeczytaj [przegląd dostosowań](./index.md), aby zrozumieć, co można dostosować
+- [Postavite barem jednu učionicu](../classrooms/setting-up-classrooms.md) na portalu
+- [Zakažite lekciju](../classrooms/scheduling-lessons.md) za učionicu koju želite prilagoditi
+- Pročitajte [pregled prilagodbi](./index.md) kako biste razumjeli što se može prilagoditi
 
 </div>
 
-## Otwieranie widoku dostosowywania
+## Otvaranje prikaza za prilagodbu
 
-1. Zaloguj się i przejdź do **Portalu**.
-2. Wybierz **salę**, w której znajduje się lekcja, którą chcesz dostosować.
-3. Kliknij **zaplanowaną lekcję**, aby ją otworzyć.
-4. Kliknij **Dostosuj**, aby przejść do widoku dostosowywania.
+1. Prijavite se i idite na svoj **Portal**.
+2. Odaberite **učionicu** u kojoj se nalazi lekcija koju želite prilagoditi.
+3. U rasporedu učionice pronađite lekciju i kliknite **Customize** ispod njezina naziva.
 
-Zobaczysz pełną treść lekcji podzieloną na sekcje, role i działania.
+Stranica **Customize Lesson** prikazuje odjeljke lekcije, a ispod svakog odjeljka njegove uloge, a ispod svake uloge njezine radnje. Svaki redak ima gumbe s desne strane:
 
-## Usuwanie sekcji
-
-Jeśli sekcja nie dotyczy Twojej sali, możesz ją całkowicie usunąć. Jest to przydatne, gdy lekcja zawiera treści dla kilku grup wiekowych, a potrzebujesz tylko jednej. Na przykład, jeśli lekcja ma sekcje „Aktywność dla przedszkolaków" i „Aktywność dla dzieci szkolnych", możesz usunąć tę, która nie pasuje do Twojej sali.
-
-1. Znajdź sekcję, którą chcesz usunąć.
-2. Kliknij, aby **usunąć** lub **ukryć** sekcję.
-3. Sekcja nie będzie już widoczna dla wolontariuszy przeglądających tę lekcję.
-
-## Ukrywanie ról lub działań
-
-W obrębie sekcji możesz ukrywać konkretne role lub działania. Na przykład, jeśli sekcja zawiera rolę „Prowadzący uwielbienie", a Twoja sala jej nie potrzebuje, możesz ukryć samą tę rolę, nie usuwając całej sekcji.
-
-1. Rozwiń sekcję, aby zobaczyć jej role i działania.
-2. Kliknij, aby **ukryć** każdą rolę lub działanie, którego nie potrzebujesz.
-
-## Zmiana kolejności treści
-
-Możesz przestawiać sekcje i działania, aby dopasować przebieg, jaki preferujesz:
-
-1. Przeciągnij sekcje lub działania, aby przesunąć je w górę lub w dół na liście.
-2. Nowa kolejność jest tym, co zobaczą Twoi wolontariusze podczas przeglądania lekcji.
-
-## Zapisywanie dostosowania
-
-Gdy skończysz wprowadzać zmiany, zapisz dostosowanie. Zostaniesz poproszony o wybór, jak ma ono obowiązywać:
-
-- **Tylko ta sala** -- Zmiany dotyczą wyłącznie bieżącej sali. Inne sale pozostają bez zmian.
-- **Wszystkie sale** -- Zmiany obowiązują we wszystkich salach w Twoim kościele.
-- **Usuń dostosowanie** -- Jeśli wcześniej dostosowałeś tę lekcję i chcesz wrócić do oryginalnej treści, wybierz tę opcję, aby wyczyścić swoje zmiany.
-
-:::tip
-Zacznij od dostosowania jednej lekcji dla jednej sali. Gdy poczujesz się pewnie w tym procesie, możesz stosować dostosowania szerzej, we wszystkich salach.
-:::
-
-## Kiedy dostosowywać
-
-Dostosowywanie jest najbardziej przydatne, gdy:
-
-- Lekcja zawiera treści dla kilku grup wiekowych, a chcesz pokazać tylko odpowiednie części.
-- Twoja sala nie korzysta z niektórych ról (jak dedykowany prowadzący uwielbienie lub wolontariusz techniczny).
-- Wolisz inną kolejność przebiegu lekcji niż domyślna.
+- **Strelica prema gore** i **Strelica prema dolje** -- Pomiču stavku za jedno mjesto gore ili dolje među susjednim stavkama
+- **Delete** (ikona kante za smeće) -- Uklanja stavku
 
 :::info
-Nie musisz dostosowywać każdej lekcji. Jeśli treść sprawdza się w obecnej postaci w Twojej sali, możesz pominąć ten krok i przejść od razu do [prowadzenia](../presenting/index.md).
+**Customize** se prikazuje samo za lekcije Lessons.church. Lekcije zakazane kod vanjskog pružatelja umjesto toga prikazuju **View Lesson** i ne mogu se prilagođavati.
+:::
+
+## Odabir mjesta primjene promjene
+
+Svaki put kad kliknete strelicu ili ikonu kante za smeće, izbornik pita **Apply selected customization to:** (Primijeni odabranu prilagodbu na:).
+
+- **This Classroom** -- Promjena se primjenjuje samo na trenutačnu učionicu. Ostale učionice nisu zahvaćene.
+- **All the Classrooms** -- Promjena se primjenjuje na sve učionice u vašoj crkvi.
+
+Odaberite jednu opciju i promjena se odmah sprema. Ne postoji zaseban korak spremanja.
+
+## Uklanjanje odjeljaka
+
+Ako odjeljak ne odgovara vašoj učionici, možete ga potpuno ukloniti. To je korisno kada lekcija sadrži sadržaj za više uzrasnih skupina, a vama treba samo jedna. Na primjer, ako lekcija ima odjeljke "Preschool Activity" i "Elementary Activity", možete ukloniti onaj koji ne odgovara vašoj prostoriji.
+
+1. Pronađite odjeljak koji želite ukloniti.
+2. Kliknite gumb **Delete** (ikona kante za smeće).
+3. Odaberite **This Classroom** ili **All the Classrooms**.
+
+Odjeljak se prikazuje kao uklonjen, zajedno sa svim svojim ulogama i radnjama, a volonteri ga za ovu lekciju više neće vidjeti.
+
+## Uklanjanje uloga ili radnji
+
+Unutar odjeljka možete ukloniti određene uloge ili radnje. Na primjer, ako odjeljak uključuje ulogu "Worship Leader", a vaša učionica je nema, možete ukloniti samo tu ulogu bez uklanjanja cijelog odjeljka.
+
+1. Pronađite ulogu ili radnju na popisu ispod njezina odjeljka.
+2. Kliknite gumb **Delete** (ikona kante za smeće) i odaberite mjesto primjene promjene.
+
+## Preuređivanje sadržaja
+
+Odjeljke, uloge i radnje možete preurediti kako biste ih uskladili s tokom koji vam odgovara:
+
+1. Kliknite **strelicu prema gore** ili **strelicu prema dolje** na stavci koju želite premjestiti.
+2. Odaberite mjesto primjene promjene. Stavka mijenja mjesto sa svojim susjedom.
+
+Ponavljajte dok stavke ne budu u željenom redoslijedu. Novi redoslijed je ono što će vaši volonteri vidjeti kada pregledavaju lekciju.
+
+## Poništavanje uklanjanja
+
+Da biste vratili stavku koju ste uklonili, ponovno kliknite njezin gumb **Delete**. Izbornik sada nudi i opciju **None**. Odaberite **None** da biste poništili uklanjanje i ponovno prikazali stavku ili odaberite drugu opciju kako biste promijenili mjesto primjene uklanjanja.
+
+:::tip
+Počnite tako da prilagodite jednu lekciju za jednu učionicu. Kada se budete osjećali sigurno u postupku, prilagodbe možete primijeniti šire, na sve učionice.
+:::
+
+## Kada prilagođavati
+
+Prilagodba je najkorisnija kada:
+
+- lekcija ima sadržaj za više uzrasnih skupina i želite prikazati samo relevantne dijelove.
+- vaša učionica ne koristi određene uloge (poput namjenskog voditelja bogoslužja ili tehničkog volontera).
+- želite drugačiji redoslijed toka lekcije od zadanog.
+
+:::info
+Ne morate prilagođavati svaku lekciju. Ako sadržaj vaši učionici odgovara kakav jest, ovaj korak možete preskočiti i odmah prijeći na [predstavljanje](../presenting/index.md).
 :::

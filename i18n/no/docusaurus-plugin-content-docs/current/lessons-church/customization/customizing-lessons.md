@@ -1,13 +1,13 @@
 ---
 title: "Tilpasse leksjoner"
-description: "Fjern, skjul eller endre rekkefølgen på seksjoner og roller i en Lessons.church-leksjon, og velg om endringene gjelder for ett klasserom eller alle."
+description: "Fjern eller endre rekkefølgen på seksjoner, roller og handlinger i en Lessons.church-leksjon, og velg om hver endring skal gjelde for ett klasserom eller alle."
 ---
 
 # Tilpasse leksjoner
 
 <div class="article-intro">
 
-Denne guiden veileder deg gjennom å tilpasse en leksjon for klasserommet ditt. Tilpasninger lar deg fjerne, skjule eller omorganisere innhold slik at de frivillige ser nøyaktig det de trenger -- verken mer eller mindre.
+Denne veiledningen viser deg hvordan du tilpasser en leksjon til klasserommet ditt. Med tilpasninger kan du fjerne eller endre rekkefølgen på innhold, slik at frivillige ser akkurat det de trenger -- verken mer eller mindre.
 
 </div>
 
@@ -15,62 +15,77 @@ Denne guiden veileder deg gjennom å tilpasse en leksjon for klasserommet ditt. 
 <h4>Før du begynner</h4>
 
 - [Sett opp minst ett klasserom](../classrooms/setting-up-classrooms.md) i portalen
-- [Planlegg en leksjon](../classrooms/scheduling-lessons.md) til klasserommet du vil tilpasse
-- Les [Tilpasningsoversikten](./index.md) for å forstå hva som kan tilpasses
+- [Planlegg en leksjon](../classrooms/scheduling-lessons.md) for klasserommet du vil tilpasse
+- Les [oversikten over tilpasning](./index.md) for å forstå hva som kan tilpasses
 
 </div>
 
 ## Åpne tilpasningsvisningen
 
-1. Logg inn og naviger til **Portalen** din.
+1. Logg inn og gå til **Portal**.
 2. Velg **klasserommet** som har leksjonen du vil tilpasse.
-3. Klikk på den **planlagte leksjonen** for å åpne den.
-4. Klikk **Tilpass** for å gå inn i tilpasningsvisningen.
+3. Finn leksjonen i klasserommets plan, og klikk på **Tilpass** under navnet.
 
-Du vil se det fullstendige leksjonsinnholdet delt inn i seksjoner, roller og handlinger.
+Siden **Tilpass leksjon** viser seksjonene i leksjonen, med rollene i hver seksjon og handlingene for hver rolle under seg. Hver rad har knapper til høyre:
+
+- **Pil opp** og **Pil ned** -- Flytt elementet ett hakk opp eller ned blant naboene
+- **Slett** (søppelbøtte) -- Fjern elementet
+
+:::info
+**Tilpass** vises bare for Lessons.church-leksjoner. Leksjoner som er planlagt fra en ekstern leverandør viser i stedet **Vis leksjon**, og de kan ikke tilpasses.
+:::
+
+## Velge hvor en endring gjelder
+
+Hver gang du klikker på en pil eller søppelbøtta, vises en meny med spørsmålet **Bruk valgt tilpasning på:**
+
+- **Dette klasserommet** -- Endringen gjelder bare for det nåværende klasserommet. Andre klasserom påvirkes ikke.
+- **Alle klasserommene** -- Endringen gjelder for alle klasserom i menigheten din.
+
+Velg ett alternativ, så lagres endringen med én gang. Det finnes ikke noe eget lagringstrinn.
 
 ## Fjerne seksjoner
 
-Hvis en seksjon ikke gjelder for klasserommet ditt, kan du fjerne den helt. Dette er nyttig når en leksjon inkluderer innhold for flere aldersgrupper og du bare trenger én. For eksempel, hvis en leksjon har både en «Småbarnsaktivitet» og en «Barneskoleaktivitet»-seksjon, kan du fjerne den som ikke passer for rommet ditt.
+Hvis en seksjon ikke passer for klasserommet ditt, kan du fjerne den helt. Dette er nyttig når en leksjon har innhold for flere aldersgrupper, og du bare trenger én av dem. Hvis en leksjon for eksempel har både en «Førskoleaktivitet» og en «Barneskoleaktivitet», kan du fjerne den som ikke passer til rommet ditt.
 
 1. Finn seksjonen du vil fjerne.
-2. Klikk for å **fjerne** eller **skjule** seksjonen.
-3. Seksjonen vil ikke lenger vises for frivillige som ser denne leksjonen.
+2. Klikk på **Slett**-knappen (søppelbøtta).
+3. Velg **Dette klasserommet** eller **Alle klasserommene**.
 
-## Skjule roller eller handlinger
+Seksjonen vises som fjernet, sammen med alle rollene og handlingene i den, og frivillige vil ikke lenger se den for denne leksjonen.
 
-Innenfor en seksjon kan du skjule spesifikke roller eller handlinger. For eksempel, hvis en seksjon inkluderer en «Lovsangsleder»-rolle men klasserommet ditt ikke har en, kan du skjule bare den rollen uten å fjerne hele seksjonen.
+## Fjerne roller eller handlinger
 
-1. Utvid seksjonen for å se dens roller og handlinger.
-2. Klikk for å **skjule** enhver rolle eller handling du ikke trenger.
+Innenfor en seksjon kan du fjerne bestemte roller eller handlinger. Hvis en seksjon for eksempel har en rolle som «Tilbedelsesleder», men klasserommet ditt ikke har en slik rolle, kan du fjerne bare den rollen uten å fjerne hele seksjonen.
 
-## Omorganisere innhold
+1. Finn rollen eller handlingen i listen under seksjonen.
+2. Klikk på **Slett**-knappen (søppelbøtta), og velg hvor endringen skal gjelde.
 
-Du kan omorganisere seksjoner og handlinger for å samsvare med flyten du foretrekker:
+## Endre rekkefølgen på innhold
 
-1. Dra seksjoner eller handlinger for å flytte dem opp eller ned i rekkefølgen.
-2. Den nye rekkefølgen er det de frivillige vil se når de ser leksjonen.
+Du kan flytte om på seksjoner, roller og handlinger slik at de følger den flyten du foretrekker:
 
-## Lagre tilpasningen din
+1. Klikk på **Pil opp** eller **Pil ned** ved elementet du vil flytte.
+2. Velg hvor endringen skal gjelde. Elementet bytter plass med naboen sin.
 
-Når du er ferdig med endringene, lagre tilpasningen. Du vil bli bedt om å velge hvordan den gjelder:
+Gjenta til elementene står i den rekkefølgen du vil ha. Den nye rekkefølgen er den frivillige ser når de går gjennom leksjonen.
 
-- **Kun dette klasserommet** -- Endringene gjelder bare for gjeldende klasserom. Andre klasserom påvirkes ikke.
-- **Alle klasserom** -- Endringene gjelder for alle klasserom i menigheten din.
-- **Fjern tilpasning** -- Hvis du tidligere har tilpasset denne leksjonen og ønsker å gå tilbake til det opprinnelige innholdet, velg dette alternativet for å fjerne endringene dine.
+## Angre en fjerning
+
+For å få tilbake et element du har fjernet, klikk på **Slett**-knappen igjen. Menyen tilbyr nå også **Ingen**. Velg **Ingen** for å oppheve fjerningen og vise elementet igjen, eller velg et av de andre alternativene for å endre hvor fjerningen gjelder.
 
 :::tip
-Start med å tilpasse en enkelt leksjon for ett klasserom. Når du er komfortabel med prosessen, kan du anvende tilpasninger bredere på tvers av alle klasserom.
+Start med å tilpasse én enkelt leksjon for ett klasserom. Når du er trygg på prosessen, kan du bruke tilpasningene bredere på tvers av alle klasserommene.
 :::
 
 ## Når du bør tilpasse
 
 Tilpasning er mest nyttig når:
 
-- En leksjon har innhold for flere aldersgrupper og du vil vise bare de relevante delene.
-- Klasserommet ditt ikke bruker visse roller (som en dedikert lovsangsleder eller teknisk frivillig).
-- Du foretrekker en annen rekkefølge for leksjonsflyten enn det som er gitt som standard.
+- En leksjon har innhold for flere aldersgrupper, og du vil vise bare de delene som er relevante.
+- Klasserommet ditt ikke bruker bestemte roller (for eksempel en egen tilbedelsesleder eller teknisk frivillig).
+- Du foretrekker en annen rekkefølge på leksjonsforløpet enn standardoppsettet.
 
 :::info
-Du trenger ikke tilpasse hver leksjon. Hvis innholdet fungerer som det er for klasserommet ditt, kan du hoppe over dette steget helt og gå rett til [presentasjon](../presenting/index.md).
+Du trenger ikke tilpasse hver leksjon. Hvis innholdet fungerer slik det er for klasserommet ditt, kan du hoppe over dette trinnet og gå rett til [å presentere](../presenting/index.md).
 :::

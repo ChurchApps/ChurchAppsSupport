@@ -1,95 +1,94 @@
 ---
-title: "Обзор проектов"
-description: "Все репозитории ChurchApps по категориям: фреймворки, порты, базы данных и связи общих пакетов @churchapps в документации по настройке."
+title: "Обзор проекта"
+description: "Карта всех репозиториев ChurchApps по категориям: фреймворки, порты для разработки, базы данных и связи между общими пакетами @churchapps в документации по настройке среды разработки."
 ---
 
-# Обзор проектов
+# Обзор проекта
 
 <div class="article-intro">
 
-ChurchApps состоит из примерно 20 независимых репозиториев, опубликованных в [организации ChurchApps на GitHub](https://github.com/ChurchApps). Эта страница содержит полный перечень всех проектов, организованных по категориям, с указанием их фреймворков, портов и взаимосвязей.
+ChurchApps состоит примерно из 20 независимых репозиториев, каждый из которых опубликован в [организации ChurchApps на GitHub](https://github.com/ChurchApps). На этой странице приведён полный перечень всех проектов по категориям, а также их фреймворки, порты и взаимосвязи.
 
 </div>
 
 <div class="prereqs">
-<h4>Прежде чем начать</h4>
+<h4>Перед началом работы</h4>
 
-- Установите [предварительные требования](./prerequisites.md) для категории проекта, над которой хотите работать
+- Установите [необходимые компоненты](./prerequisites.md) для категории проектов, с которой хотите работать
 
 </div>
 
-## Бэкенд-API
+## Бэкенд API
 
-Все API построены на Node.js, Express и TypeScript и развёрнуты в AWS Lambda через Serverless Framework.
+Все API построены на Node.js, Express и TypeScript и развёртываются в AWS Lambda с помощью Serverless Framework.
 
-| Проект | Назначение | Dev-порт | База данных |
+| Проект | Назначение | Порт для разработки | База данных |
 |---------|---------|----------|----------|
-| **[Api](https://github.com/ChurchApps/Api)** | Основной модульный монолит, охватывающий membership, attendance, content, giving, messaging и doing | 8084 | Отдельная MySQL БД на модуль (6 всего) |
-| **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Бэкенд Lessons.church | -- | Единая MySQL БД `lessons` |
-| **[AskApi](https://github.com/ChurchApps/AskApi)** | AI-инструмент запросов на базе OpenAI | -- | -- |
+| **[Api](https://github.com/ChurchApps/Api)** | Основной модульный монолит, охватывающий членство, посещаемость, контент, пожертвования, сообщения и служение | 8084 | Отдельная база MySQL для каждого модуля (всего 6) |
+| **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Бэкенд Lessons.church | -- | Единая база MySQL `lessons` |
+| **[AskApi](https://github.com/ChurchApps/AskApi)** | Инструмент для AI-запросов на основе OpenAI | -- | -- |
 
 :::info
-Основной проект **Api** — это модульный монолит. Каждый модуль (membership, attendance, content, giving, messaging, doing) имеет собственную базу данных и доступен по подпути, например `/membership` или `/giving`. В продакшене они представлены как отдельные Lambda-функции за API Gateway.
+Основной проект **Api** представляет собой модульный монолит. Каждый модуль (membership, attendance, content, giving, messaging, doing) имеет собственную базу данных и доступен по подпути, например `/membership` или `/giving`. В продакшене они открыты как отдельные функции Lambda за API Gateway.
 :::
 
 ## Веб-приложения
 
-| Проект | Фреймворк | Dev-порт | Назначение |
+| Проект | Фреймворк | Порт для разработки | Назначение |
 |---------|-----------|----------|---------|
-| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Панель управления церковью |
-| **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | Публичное приложение для членов церкви |
+| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Панель администрирования церкви |
+| **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | Публичное приложение для прихожан |
 | **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Фронтенд Lessons.church |
-| **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Утилита импорта/экспорта данных |
-| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Static | -- | Статические рекламные сайты церквей |
+| **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Утилита импорта и экспорта данных |
+| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Статические сайты | -- | Статические брошюрные сайты церквей |
 
 ## Мобильные приложения
 
-Все мобильные приложения используют React Native с Expo.
+Все мобильные приложения построены на React Native с использованием Expo.
 
 | Проект | Назначение | Ключевые версии |
-|---------|---------|--------------|
-| **[B1Mobile](https://github.com/ChurchApps/B1Mobile)** | Приложение для членов церкви для iOS и Android | Expo 54, React Native 0.81 |
-| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Приложение-киоск для регистрации | Expo |
+|---------|--------------|---------------|
+| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Приложение киоска для регистрации прихода | Expo |
 | **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Отображение уроков на Android TV | Expo |
 | **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Воспроизведение контента (включая TV OS) | Expo |
-| **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Мобильный пульт управления для FreeShow | Expo |
+| **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Мобильный пульт дистанционного управления для FreeShow | Expo |
 
-## Десктоп
+## Десктопное приложение
 
 | Проект | Стек | Назначение |
 |---------|-------|---------|
-| **[FreeShow](https://github.com/ChurchApps/FreeShow)** | Electron 37 + Svelte 3 + Vite | ПО для презентаций и богослужений |
+| **[FreeShow](https://github.com/ChurchApps/FreeShow)** | Electron 37 + Svelte 3 + Vite | Программное обеспечение для презентаций и богослужений |
 
 ## Общие библиотеки
 
-Общий код публикуется в npm под областью `@churchapps` и потребляется как обычные npm-зависимости вышеуказанными проектами. Все общие пакеты находятся в одном репозитории — [Packages](https://github.com/ChurchApps/Packages) — управляется как рабочее пространство Yarn и выпускается с помощью changesets.
+Общий код публикуется в npm в области `@churchapps` и используется перечисленными выше проектами как обычные npm-зависимости. Все общие пакеты находятся в одном репозитории — [Packages](https://github.com/ChurchApps/Packages), который управляется как рабочее пространство Yarn и выпускается с помощью changesets.
 
-| Пакет | Назначение | Используется |
+| Пакет | Назначение | Используется в |
 |---------|---------|---------|
-| `@churchapps/helpers` | Базовые утилиты и общие интерфейсы TypeScript (DateHelper, ApiHelper, CurrencyHelper и т.д.) | Все проекты |
-| `@churchapps/apihelper` | Утилиты Express-сервера (аутентификация, базовые контроллеры, доступ к базе данных, интеграции AWS) | Все API |
-| `@churchapps/apphelper` | Библиотека React-компонентов с подпутями модулей для входа, пожертвований, форм, markdown и создания веб-сайтов | Все веб-приложения |
-| `@churchapps/content-providers` | Абстракция провайдера контента третьих сторон (Lessons.church, Planning Center, Dropbox и другие) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | Набор инструментов интеграции B1.church: вебхуки, REST клиент, OAuth | Разработчики внешних интеграций |
-| `@churchapps/texting` | Абстракция провайдера SMS | Api |
+| `@churchapps/helpers` | Базовые утилиты и общие интерфейсы TypeScript (DateHelper, ApiHelper, CurrencyHelper и др.) | Все проекты |
+| `@churchapps/apihelper` | Утилиты сервера Express (аутентификация, базовые контроллеры, доступ к базе данных, интеграции с AWS) | Все API |
+| `@churchapps/apphelper` | Библиотека React-компонентов с подмодулями для входа, пожертвований, форм, Markdown и создания сайтов | Все веб-приложения |
+| `@churchapps/content-providers` | Абстракция для сторонних поставщиков контента (Lessons.church, Planning Center, Dropbox и другие) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Набор инструментов интеграции B1.church: вебхуки, REST-клиент, OAuth | Внешние разработчики интеграций |
+| `@churchapps/texting` | Абстракция для провайдеров SMS | Api |
 
-См. [Общие библиотеки](../shared-libraries/index.md) для настройки рабочего пространства и рабочего процесса выпуска.
+Настройку рабочего пространства и процесс выпуска см. в разделе [Общие библиотеки](../shared-libraries/index.md).
 
-## Взаимосвязи проектов
+## Связи между проектами
 
 ```
-Frontend Apps              Shared Libraries           Backend APIs
+Фронтенд-приложения        Общие библиотеки           Бэкенд API
 --------------             ----------------           ------------
 B1Admin      ──────┐
 B1App        ──────┤       @churchapps/helpers ◄───── Api
 LessonsApp   ──────┼──►    @churchapps/apphelper      LessonsApi
-B1Mobile     ──────┤                                   AskApi
-FreeShow     ──────┘       @churchapps/apihelper ◄────┘
+FreeShow     ──────┘                                   AskApi
+                           @churchapps/apihelper ◄────┘
 ```
 
-Все фронтенд-приложения зависят от `@churchapps/helpers`. Веб-приложения дополнительно зависят от пакетов `@churchapps/apphelper`. Все бэкенд-API зависят как от `@churchapps/helpers`, так и от `@churchapps/apihelper`.
+Все фронтенд-приложения зависят от `@churchapps/helpers`. Веб-приложения дополнительно зависят от пакетов `@churchapps/apphelper`. Все бэкенд API зависят как от `@churchapps/helpers`, так и от `@churchapps/apihelper`.
 
 ## Следующие шаги
 
-- **[Переменные окружения](./environment-variables.md)** — настройте файлы `.env` для подключения к API
-- **[Локальная установка API](../api/local-setup.md)** — настройте бэкенд-API локально
+- **[Переменные окружения](./environment-variables.md)** -- Настройте файлы `.env` для подключения к API
+- **[Локальная настройка API](../api/local-setup.md)** -- Запустите бэкенд API локально

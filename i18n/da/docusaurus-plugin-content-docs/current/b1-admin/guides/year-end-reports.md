@@ -1,94 +1,94 @@
 ---
-title: "Guide: Generer år-slutrapporter"
-description: "Afslut årets donationsregistreringer i B1 Admin, kontrollér fondenes skatteindstillinger, og generér skattefradragsberettigede årsopgørelser for alle givere."
+title: "Vejledning: Generer årsopgørelser over gaver"
+description: "I B1 Admin afslutter du årets donationsregistreringer, kontrollerer skatteindstillingerne for fonde og genererer skattefradragsberettigede gaveopgørelser til hver donor."
 ---
 
-# Generer år-slutrapporter
+# Generer årsopgørelser over gaver
 
 <div class="article-intro">
 
-Gå gennem år-slutprocessen med at afslutte dine donationsregistreringer, verificere fondsindstillinger og generere skattefradrag givning sætninger for hver donor. Dette gøres typisk i tidlig januar for det foregående kalenderår.
+Gennemgå processen for at afslutte årets donationsregistreringer, kontrollere fondsindstillinger og generere skattefradragsberettigede gaveopgørelser til hver donor. Dette gøres typisk i begyndelsen af januar for det foregående kalenderår.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- B1 Admin-konto med økonomisk adgang
-- Donationer registreret hele året (online via Stripe og/eller manuelt anført)
-- Adgang til din Stripe-konto hvis du accepterer online donationer
+- B1 Admin-konto med adgang til økonomi
+- Donationer registreret i løbet af året (online via Stripe og/eller manuelt indtastet)
+- Adgang til din Stripe-konto, hvis du modtager online-donationer
 
 </div>
 
-## Trin 1: Importér slutlige Stripe transaktioner
+## Trin 1: Importér de endelige Stripe-transaktioner
 
-Sørg for at alle online donationer fra årets slutning er i dit system.
+Sørg for, at alle online-donationer fra slutningen af året er i dit system.
 
-Følg vejledningen [Stripe import](../donations/stripe-import.md) for at:
+Følg vejledningen [Stripe-import](../donations/stripe-import.md) for at:
 
-1. Gå til donationer > batches > Stripe import
-2. Vælg en dato område der dækker årets slutning (f.eks. december 1 - december 31)
-3. Klik forhåndsvisning først til at gennemgå, derefter importér manglende til at afslutte
+1. Gå til Donationer > Stripe-import
+2. Vælg en datoperiode, der dækker slutningen af året (f.eks. 1. december - 31. december)
+3. Klik på Forhåndsvisning først for at gennemgå, og derefter på Importér manglende for at færdiggøre
 
 :::warning
-Kør denne import før generering af sætninger. Enhver transaktioner du ikke har importeret vil ikke vises på donor sætninger.
+Kør denne import, før du genererer opgørelserne. Transaktioner, du ikke har importeret, vises ikke på donorernes opgørelser.
 :::
 
 ## Trin 2: Gennemgå donationsrapporter
 
-Verificer dine registreringer er nøjagtige før generering af sætninger.
+Kontrollér, at dine registreringer er korrekte, før du genererer opgørelserne.
 
 Følg vejledningen [Donationsrapporter](../donations/donation-reports.md) for at:
 
-1. Kontrollér donationsoversigts siden for hele året
-2. Gennemgå samlinger efter fond og sammenlign mod dine bankopgørelser for at finde fejl
-3. Klik ind i individuelle batches for at verificere donor-niveau detaljer hvis nødvendigt
+1. Kontrollere donationsoversigten for hele året
+2. Gennemgå totalerne pr. fond og sammenligne dem med dine kontoudtog for at finde eventuelle uoverensstemmelser
+3. Klik ind på de enkelte batches for at kontrollere donorspecifikke oplysninger, hvis det er nødvendigt
 
-## Trin 3: Verificer fondsskatstatus
+## Trin 3: Kontrollér fondenes skattestatus
 
-Sørg for at hver fonds skattefradrag indstilling er korrekt så sætninger er nøjagtige.
+Sørg for, at hvert fonds skattefradragsindstilling er korrekt, så opgørelserne er præcise.
 
 Følg vejledningen [Fonde](../donations/funds.md) for at:
 
-1. Åbn hver fond og bekræft skattefradrag indstillingen er korrekt
+1. Åbne hvert fond og bekræfte, at indstillingen for skattefradrag er korrekt
 
 :::info
-Kun donationer til fonde markeret som skattefradrag vil vises på givnings sætninger. Hvis en fond burde være skattefradrag men ikke er markeret sådan, opdater det før generering af sætninger.
+Kun donationer til fonde, der er markeret som skattefradragsberettigede, vises på gaveopgørelserne. Hvis et fond skulle være skattefradragsberettiget, men ikke er markeret sådan, skal du opdatere det, før du genererer opgørelserne.
 :::
 
-## Trin 4: Generer givnings sætninger
+## Trin 4: Generer gaveopgørelser
 
-Opret den officielle givnings sætninger for dine donorer.
+Opret de officielle gaveopgørelser til dine donorer.
 
-Følg vejledningen [Givnings sætninger](../donations/giving-statements.md) for at:
+Følg vejledningen [Gaveopgørelser](../donations/giving-statements.md) for at:
 
-1. Gå til donationer > sætninger
-2. Vælg året fra rullemenuen og gennemgå oversigts statistikker
-3. Vælg din download metode:
-   - **Download ZIP** — individuelle CSV filer, en pr. donor
-   - **Print alt** — udskrivelig visning med hver sætning på en ny side
+1. Gå til **Donationer > Gaveopgørelser**
+2. Vælg året i rullemenuen, og gennemgå oversigtsstatistikkerne
+3. Vælg din downloadmetode:
+   - **Download ZIP** — individuelle CSV-filer, én pr. donor
+   - **Udskriv alle** — udskriftsvenlig visning med hver opgørelse på en ny side og dit kirkelogo øverst (hvis du har uploadet et)
 
 :::tip
-Generer sætninger tidlig i januar mens registreringer er friske. Dette giver dig tid til at finde problemer før du sender dem ud.
+Generer opgørelserne tidligt i januar, mens registreringerne stadig er friske. Så har du tid til at rette eventuelle problemer, før de sendes ud.
 :::
 
-## Trin 5: Distribuér til donorer
+## Trin 5: Distribuer til donorerne
 
-Få sætningerne ind i dine donorers hænder.
+Sørg for, at opgørelserne kommer frem til dine donorer.
 
-1. Print og mail sætninger eller email individuelle CSV-filer til donorer
-2. Medlemmer kan også se deres egen givnings historie og print sætninger fra [B1.church](../../b1-church/giving/donation-history.md) og [B1 Mobile app](../../b1-church/giving/donation-history.md)
+1. Udskriv og send opgørelserne med posten, eller send de individuelle CSV-filer til donorerne via e-mail
+2. Medlemmer kan også se deres egen gavehistorik og udskrive opgørelser på [B1.church eller i B1 App](../../b1-church/giving/donation-history.md)
 
-## Du er færdig!
+## Så er du færdig!
 
-Dine år-slutrapporter er fuldførte. Donorer har deres skattefradrag sætninger og dine økonomiske registreringer er afsluttet for året.
+Dine årsopgørelser over gaver er nu færdige. Donorerne har fået deres skattefradragsberettigede opgørelser, og dine økonomiske registreringer for året er afsluttet.
 
 ## Relaterede artikler
 
-- [Stripe import](../donations/stripe-import.md) — importér online transaktioner
-- [Donationsrapporter](../donations/donation-reports.md) — se givning trends og samlinger
-- [Fonde](../donations/funds.md) — administrer fonde og skattefradrag indstillinger
-- [Givnings sætninger](../donations/giving-statements.md) — generer år-slut sætninger
-- [Registrering af donationer](../donations/recording-donations.md) — manuelt anført kontant/check donationer
-- [Givnings historie (Web)](../../b1-church/giving/donation-history.md) — medlemmers selvbetjening visning
-- [Opsætning af online givning vejledning](./online-giving.md) — oprindelig Stripe og givning opsætning
+- [Stripe-import](../donations/stripe-import.md) — importér online-transaktioner
+- [Donationsrapporter](../donations/donation-reports.md) — se udviklinger og totaler for gaver
+- [Fonde](../donations/funds.md) — administrér fonde og indstillinger for skattefradrag
+- [Gaveopgørelser](../donations/giving-statements.md) — generer årsopgørelser
+- [Registrering af donationer](../donations/recording-donations.md) — indtast kontant- og checkdonationer manuelt
+- [Donationshistorik (web)](../../b1-church/giving/donation-history.md) — selvbetjeningsvisning for medlemmer
+- [Vejledning: Opsæt online-gaver](./online-giving.md) — indledende opsætning af Stripe og gaver

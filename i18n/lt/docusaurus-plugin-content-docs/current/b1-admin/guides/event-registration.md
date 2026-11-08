@@ -1,88 +1,88 @@
 ---
-title: "Vodič: Podešavanje registracije na događaj"
-description: "Nustatykite renginio registracijos formą B1 Admin dalyvių duomenims ir pasirinktinai mokėjimams rinkti, įdėkite ją į bažnyčios svetainę ir sekite registracijas."
+title: "Vadovas: renginio registracijos nustatymas"
+description: "Nustatykite renginio registracijos formą B1 Admin, kad galėtumėte rinkti dalyvių duomenis ir pasirinktinius mokėjimus, įdėti ją į savo bažnyčios svetainę ir sekti registracijas."
 ---
 
-# Podešavanje registracije na događaj
+# Renginio registracijos nustatymas
 
 <div class="article-intro">
 
-Kreirajte obrazac za registraciju na događaj, prikupljajte podatke o učesnicima i opcionalne uplate, ugradite ga na svoj crkveni veb-sajt i upravljajte prijavama kako stižu. Na kraju ćete imati stranicu za registraciju koju možete podeliti za bilo koji crkveni događaj.
+Sukurkite renginio registracijos formą, rinkite dalyvių informaciją ir pasirinktinius mokėjimus, įdėkite ją į savo bažnyčios svetainę ir tvarkykite gautas registracijas. Baigę šį vadovą turėsite bendrinamą registracijos puslapį bet kokiam bažnyčios renginiui.
 
 </div>
 
 :::info
-**Dva načina za registraciju na događaje:** Ovaj vodič obrađuje **registraciju putem obrazaca**, koja vam daje punu kontrolu nad prilagođenim poljima i prikupljanjem uplata. Za jednostavnije događaje na kojima samo treba da pratite ko dolazi, koristite **izvornu registraciju na događaje** ugrađenu u kalendar -- uputstva za podešavanje potražite u odeljku [Kreiranje kalendara](../calendars/creating-calendars.md#enabling-event-registration). Izvorna registracija omogućava članovima da se prijave direktno preko [B1 veb-sajta](../../b1-church/events/registering.md) i [mobilne aplikacije](../../b1-church/events/registering.md), uz praćenje kapaciteta, vremenske periode za prijavu i potvrde putem e-pošte.
+**Du renginių registracijos būdai:** Šis vadovas aprašo **formomis pagrįstą registraciją**, kuri suteikia visišką kontrolę su pasirinktiniais laukais ir mokėjimų rinkimu. Paprastiems renginiams, kai tiesiog reikia sekti, kas dalyvauja, naudokite **vietinę renginio registraciją**, įtaisytą kalendoriuje – nustatymo instrukcijas rasite [Kalendorių kūrimas](../calendars/creating-calendars.md#enabling-event-registration). Vietinė registracija leidžia nariams prisiregistruoti tiesiogiai per [B1.church arba B1 App](../../b1-church/events/registering.md), su dalyvių skaičiaus riba, datų langais ir el. pašto patvirtinimais.
 :::
 
 <div class="prereqs">
-<h4>Pre nego što počnete</h4>
+<h4>Prieš pradedant</h4>
 
-- B1 Admin nalog sa administratorskim pristupom
-- Za prikupljanje uplata: prvo [morate podesiti Stripe](../donations/online-giving-setup.md)
+- B1 Admin paskyra su administratoriaus prieiga
+- Mokėjimams rinkti pirmiausia turi būti [sukonfigūruotas Stripe](../donations/online-giving-setup.md)
 
 </div>
 
-## Korak 1: Kreirajte samostalni obrazac
+## 1 žingsnis: Sukurkite atskirą formą
 
-Samostalni obrasci imaju sopstvenu javnu adresu kojoj može pristupiti bilo ko -- savršeno za registraciju na događaje.
+Atskiros formos turi savo viešą URL, kurį gali pasiekti bet kas – puikiai tinka renginio registracijai.
 
-Pratite vodič [Kreiranje obrazaca](../forms/creating-forms.md) da biste:
+Vadovaukitės [Formų kūrimas](../forms/creating-forms.md) vadovu, kad:
 
-1. Otišli na Forms i kliknuli na Add Form
-2. Izabrali tip "Stand Alone" -- time vaš obrazac dobija sopstvenu javnu adresu
-3. Dali mu ime po događaju (npr. "Registracija za muški duhovni vikend", "Prijava za VBS")
+1. Eitumėte į Forms ir spustelėtumėte Add Form
+2. Pasirinktumėte „Stand Alone“ tipą – tai suteiks jūsų formai savo viešą URL
+3. Pavadintumėte ją pagal renginį (pvz., „Vyrų stovyklos registracija“, „Vaikų vasaros stovyklos registracija“)
 
-## Korak 2: Dodajte pitanja
+## 2 žingsnis: Pridėkite klausimus
 
-Napravite polja koja su vam potrebna za prikupljanje podataka od prijavljenih.
+Sukurkite laukus, kuriuos reikia surinkti iš registruojamųjų.
 
-Pratite vodič [Kreiranje obrazaca](../forms/creating-forms.md#adding-questions) da biste dodali pitanja:
+Vadovaukitės [Formų kūrimas](../forms/creating-forms.md#adding-questions) vadovu, kad pridėtumėte klausimus:
 
-1. Idite na karticu Questions i dodajte polja za podatke koji su vam potrebni: ime, e-poštu, telefon, ishranu, veličinu majice, kontakt za hitne slučajeve itd.
-2. Koristite Multiple Choice za opcije poput izbora obroka ili sesija
+1. Eikite į Questions skirtuką ir pridėkite laukus, reikalingą informacijai: vardas, el. paštas, telefonas, mitybos apribojimai, marškinėlių dydis, avarinis kontaktas ir pan.
+2. Naudokite Multiple Choice pasirinkimams, pvz., maitinimosi pageidavimams ar sesijų pasirinkimams
 
 :::warning
-Polje tipa Payment zahteva da je Stripe podešen. Ako još niste podesili online davanje, pogledajte [Podešavanje online davanja](../donations/online-giving-setup.md) pre nego što dodate polja za plaćanje.
+Mokėjimo lauko tipui reikia, kad būtų sukonfigūruotas Stripe. Jei dar nenustatėte internetinių aukų, prieš pridedant mokėjimo laukus žr. [Internetinių aukų nustatymas](../donations/online-giving-setup.md).
 :::
 
-## Korak 3: Podesite postavke obrasca
+## 3 žingsnis: Sukonfigūruokite formos nustatymus
 
-Kontrolišite kada i kako je vaš obrazac za registraciju dostupan.
+Valdykite, kada ir kaip jūsų registracijos forma yra prieinama.
 
-1. Podesite datume dostupnosti ako registracija treba da bude otvorena samo ograničeno vreme
-2. Kopirajte javnu adresu -- možete je direktno podeliti
-3. Dodajte članove obrasca sa ulogama Admin ili View Only da pomognu u upravljanju prijavama
+1. Nustatykite prieinamumo datas, jei registracija turi būti atvira tik ribotą laiką
+2. Nukopijuokite viešą URL – galite jį tiesiogiai bendrinti
+3. Pridėkite formos narius su Admin arba View Only vaidmenimis, kad padėtų tvarkyti registracijas
 
-## Korak 4: Ugradite na svoj veb-sajt
+## 4 žingsnis: Įdėkite į savo svetainę
 
-Olakšajte pronalaženje obrasca za registraciju dodavanjem na svoj crkveni veb-sajt.
+Padarykite registracijos formą lengvai randamą, pridėdami ją į savo bažnyčios svetainę.
 
-Pratite vodič [Upravljanje stranicama](../website/managing-pages.md) da biste:
+Vadovaukitės [Puslapių tvarkymas](../website/managing-pages.md) vadovu, kad:
 
-1. U uređivaču B1 veb-sajta dodali novi odeljak na stranicu i izabrali element Form
-2. Izabrali obrazac za registraciju sa liste
+1. Savo B1 svetainės redaktoriuje pridėtumėte naują skyrių puslapiui ir pasirinktumėte Form elementą
+2. Pasirinktumėte savo registracijos formą iš sąrašo
 
 :::tip
-Podelite samostalnu adresu i putem e-pošte, društvenih mreža i crkvenih biltena -- što je više mesta na kojima je vidljiva, to ćete dobiti više prijava.
+Atskirą URL bendrinkite ir el. paštu, socialiniuose tinkluose bei bažnyčios biuleteniuose – kuo daugiau vietų jis matomas, tuo daugiau registracijų gausite.
 :::
 
-## Korak 5: Upravljajte prijavama
+## 5 žingsnis: Tvarkykite registracijas
 
-Pratite registracije kako stižu i izvezite podatke kada su vam potrebni.
+Sekite registracijas, kai jos gaunamos, ir eksportuokite duomenis, kai jų prireikia.
 
-Pratite vodič [Upravljanje prijavama](../forms/managing-submissions.md) da biste:
+Vadovaukitės [Registracijų tvarkymas](../forms/managing-submissions.md) vadovu, kad:
 
-1. Pregledali odgovore kako stižu na kartici Submissions
-2. Izvezli u CSV za tabele, praćenje broja učesnika ili deljenje sa koordinatorima događaja
+1. Peržiūrėtumėte gautus atsakymus Submissions skirtuke
+2. Eksportuotumėte į CSV failą skaičiuoklėms, dalyvių skaičiaus sekimui ar dalijimuisi su renginio koordinatoriais
 
-## Gotovo je!
+## Viskas!
 
-Vaša registracija na događaj je aktivna. Podelite link, ugradite ga na svoj veb-sajt i pratite prijave iz B1 Admin-a. Kada se događaj završi, izvezite konačnu listu za svoju evidenciju.
+Jūsų renginio registracija veikia. Bendrinkite nuorodą, įdėkite ją į savo svetainę ir sekite registracijas iš B1 Admin. Pasibaigus renginiui, eksportuokite galutinį sąrašą savo įrašams.
 
-## Povezani članci
+## Susiję straipsniai
 
-- [Kreiranje obrazaca](../forms/creating-forms.md) -- pravljenje obrazaca sa različitim tipovima polja
-- [Upravljanje prijavama](../forms/managing-submissions.md) -- pregled i izvoz odgovora na obrasce
-- [Upravljanje stranicama](../website/managing-pages.md) -- ugrađivanje obrazaca na veb-sajt
-- [Podešavanje online davanja](../donations/online-giving-setup.md) -- potrebno za polja za plaćanje
+- [Formų kūrimas](../forms/creating-forms.md) — kurkite formas su skirtingais lauko tipais
+- [Registracijų tvarkymas](../forms/managing-submissions.md) — peržiūrėkite ir eksportuokite formos atsakymus
+- [Puslapių tvarkymas](../website/managing-pages.md) — įdėkite formas į savo svetainę
+- [Internetinių aukų nustatymas](../donations/online-giving-setup.md) — reikalingas mokėjimų laukams

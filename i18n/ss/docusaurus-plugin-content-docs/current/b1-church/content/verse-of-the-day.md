@@ -1,47 +1,68 @@
 ---
-title: "Ivesi Lelilanga ku-Webhusayithi ne-Portal ye-B1.church"
-sidebar_label: "Ivesi Lelanga"
-description: "Phepha ivesi lelilanga lelikhombisa sitfombe nemavesi lakudala, bese wabelane noma ulandvo kusuka ewebhusayithini yakho ye-B1.church noma kuportal kunoma yisiphi sikrini."
+title: "Livesi Lelisha Langa Ku-webhusayithi Ne-Portal Ye-B1.church"
+sidebar_label: "Livesi Lelisha Langa"
+description: "Hlola sitfombe selivesi leliBhayibheli lelilanga ngalinye netivesi letindzala, bese utfumela noma ulandze kusuka kuwebhusayithi yakho ye-B1.church noma kuportal yelilungu kunoma yisiphi isikrini."
 ---
 
-# Ivesi Lelanga
+# Livesi Lelisha Langa
 
 <div class="article-intro">
 
-Likhasi le-Verse of the Day likhombisa ivesi leliBhayibheli lelanga ngalinye njengesitfombe lesakhiwe ngalokuhle. Yindlela lelula yekucala lilanga lakho ngeliBhayibheli noma yekutfola sikhutsalo ngesikhatsi seviki.
+Likhasi Levesi Lelisha Langa libonisa livesi leliBhayibheli lelilanga ngalinye njengesithombe lesakhiwe kahle. Ilindlela lelula yekuqala ngalo lilanga ngeSibhalo noma kutfola kukhutsateka phakatsi kwesonto.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Akudzingeki kungena (login) kuze ubone i-Verse of the Day. Lelikhasi liyatfolakala emphakatsini wonkhe.
-- Libandla lakho kufanele libe selifake likhasi le-Verse of the Day ku-navigation yesayithi salo.
+- Akudzingeki kungena ngemvume ukuze ubone Livesi Lelisha Langa. Likhasi liyatfolakala emphakatsini.
+- Livekela lakho kufanele lingenise likhasi Levesi Lelisha Langa ku-navigation yesayithi yalo.
 
 </div>
 
-## Kubuka Ivesi
+## Kubona Livesi
 
-1. Yendlulela ekhasini le-**Verse of the Day** kusuka ku-navigation yesayithi lebandla lakho.
-2. Lelikhasi likhombisa ivesi lalamuhla njengesitfombe.
-3. Ivesi lensha ivela ngokutenzekela mihla ngemihla.
+1. Ngena ku likhasi **Livesi Lelisha Langa** kusuka ku-navigation yesayithi yalivekela lakho.
+2. Likhasi libonisa livesi lanamuhla njengesithombe, kanye nemtfwalo welivesi, sitfupho salo, kanye nelilanga lanamuhla ngaseceleni noma ngaphansi kwalo.
+3. Livesi lelisha livela ngekhatsi ngalilanga ngalinye.
 
-Akukho lokudzingekako kutsi wenta -- vakashela nje lelikhasi bese ivesi lelanga lalamuhla liyakubonakala.
+Akukho lokudzingeka ukuba wente lutfo -- vele uvakashele likhasi, livesi lalelilanga lizobonakala.
 
-## Kubonakala Lokuhambelana Nesikrini (Responsive Display)
+## Tivesi Letindzala
 
-Sitfombe sevesi sitiguqula ngokutenzekela kute sihambelane nesikrini sakho. Kuya ngendlela yedivayisi yakho nebukhulu befasitela, uyawubona lolunye lwaletindlela letintsatfu:
+Ngaphansi kwelivesi lanamuhla, sigaba **Leliviki** sibonisa tivesi tetinsuku letindzala:
 
-- **Widescreen (16:9)** -- Kungcono kakhulu emakhompyutheni edeskthophu netilaptop
-- **Skwele (1:1)** -- Kufanele emafasitelweni lasikhulu njengetableti
-- **Portrait (9:16)** -- Kulungiselwe emafonini lacutjwe ngalokuma
+- Ewebhusayithini yakho levekela, tinsuku letisitfupha letindzala tivela njengemugca wemakhadi etisithombe lahamba ngekhatsi ngawo ngaloku wawodwa, bese ibuyela ekhadini lekucala emva kwalokuhlanganyelwe (iyame uma umisa umbhoshongo noma uthinta). Lapho emakhadi angakwati kulingana, umugca wetichudvu ngaphansi kwawo ukhombisa ukuthi ukuphi; cofa ichudvu kuze ufike kuleKhadi.
+- Kuportal yelilungu (`/mobile`), tinsuku letintsatfu letindzala tiyaphawulwa, nesitfupho sivesi ngalinye, lilanga, kanye nemtfwalo.
 
-Lelikhasi litfola bukhulu besikrini sakho bese likhetsa indlela lengcono, kute ivesi ihlale ibukeka kahle nomakunini kutsi uyibukelaphi. Nangabe uguqula bukhulu befasitela lebrawuza yakho, sitfombe siyawuguculwa kute sihambelane nebukhulu lobusha.
+Cofa noma uthinte noma yiliphi lilanga kuvula livesi lalo ngesithombe, livesi laphelele, kanye netinkinobho tekwabelana nekulandza letifanana nalaleLanamuhla.
+
+Cofa **Tivesi Letindzala** kubona livesi lalilanga ngalinye kusuka ngi-1 kuJanuwari yalo nyaka kuya kulelanga ngaphambi kwelanamuhla, ihlelwe ngetinyanga netitsa letisha kakhulu kuqala. Ewebhusayithini lolu luhlu luvulwa ngaphansi komugca **Leliviki** (cofa **Tivesi Letindzala** futsi kute kufihle); kuportal yelilungu luvulwa esikrinini sayo sodvwa nenkhomba yekubuyela emuva. Cofa noma ngusiphi lusuku kuvula livesi lalelilanga.
+
+## Kubonakala Kuhambisana Nesikrini
+
+Sithombe selivesi siyati lilungisa ngekuzenta lilingane nesikrini sakho. Kuncike ekudivayisini kwakho nakubukhulu besikrini, uyawubona enye yetifomethi letintsatfu:
+
+- **Ibhayisikhobho (16:9)** -- Ilungele tikhompiyutha letideskithophu netilaphethophu
+- **Sikwele (1:1)** -- Lifanele tikrini tetithebulethi
+- **Lilanga lelinde (9:16)** -- Lilungiselelwe iifoni lebhekile
+
+Likhasi liyati tibona tilinganiso tesikrini sakho bese likhetsa lifomethi lelihle kakhulu, kuze livesi lihlale libukeka kahle nobe ngabe uyibuka ngaluphi luhlobo. Uma uchuba iwindo lebhulawuza, sithombe siyohlaziya sihambisane nalobukhulu lobusha. Ewebhusayithini yakho levekela, ifoni lelide lisibonisa sithombe sesikwele esikhundleni salesilanga lelinde, kuze livesi lingacindzetelwa ekhonweni lelincane.
+
+## Kwabelana Ngelivesi
+
+Livesi lanamuhla, nanoma yiliphi lilanga lelidlule lovulako, linetinkinobho letintsatfu:
+
+- **Yabelana** -- yabelana ngetemsebenti levesi, sitfupho, kanye nelinki lesithombe selivesi. Uma ledivayisi yakho ingenayo imenyu yekwabelana, lombhalo nelinki kukopishelwa kubhodi lakho lekukopisha.
+- **Yabelana ngesithombe** -- yabelana ngesithombe selivesi ngako, kuze ukwati kupostwa noma kutfumelwe emilayezweni. Kumadivayisi angakwati kwabelana ngemafayela (njengalawo ambalwa webhulawuza yedeskithophu), sithombe siyolandzwa esikhundleni.
+- **Landza** -- londvolota sithombe selivesi kudivayisi yakho.
+
+Ewebhusayithini yakho levekela, lezinkinobho zihlale zisebentisa sithombe sebhayisikhobho (16:9). Kuportal yelilungu zisebentisa umumo lofanele sikrini sakho.
 
 :::tip
-Yenta kube ngumkhuba wemihla ngemihla kubukela i-Verse of the Day, bese uhlola lomBhalo kabanti [ku-Bible reader](./bible.md).
+Yenta kube yinjwayelo yansuku ngalinye kuhlola Livesi Lelisha Langa, bese uphindze uhlole lesigatjana ngekujulile ku-[Umfundi WeBhayibheli](./bible.md).
 :::
 
-## Kutfolakala
+## Kutfola Kwalo
 
-I-Verse of the Day sisici lesakhiwe ngekhatsi se-B1.church. Nangabe ungayiboni ku-navigation yesayithi lebandla lakho, kungenteka umphatsi webandla lakho akakayifaki ku-menu yesayithi. Tsintsana nemphatsi webandla lakho kutsi umcele ayifake.
+Livesi Lelisha Langa yinchubo yekuqukatsa lenakhiwe ngaphakathi ku-B1.church. Uma ungakayiboni ku-navigation yalivekela lakho, umphatsi walivekela lakho mhlawumbe akakayingenisi ku-menyu yesayithi. Cela umphatsi walivekela lakho ukuthi ayingenise.

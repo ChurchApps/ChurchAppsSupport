@@ -1,7 +1,7 @@
 ---
 title: "B1.church Üye Portalında Bağış Yapma"
 sidebar_label: "Bağış Yapma"
-description: "B1.church üzerinden hesap açmadan veya hesapla, kiliseniz için tek seferlik ya da yinelenen bağış yapın ve ardından bağış geçmişinizi inceleyin."
+description: "B1.church üzerinden hesabınızla veya hesapsız olarak kiliseniize tek seferlik ya da düzenli bağış yapın ve daha sonra bağış geçmişinizi görüntüleyin."
 ---
 
 # Bağış Yapma
@@ -15,8 +15,8 @@ Kilisenizin B1.church sitesi üzerinden bağış yapmanın iki yolu vardır: her
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Herkese açık bağışlar için hesap gerekmez; yalnızca kilisenizin **Bağış Yap** sayfasını ziyaret etmeniz yeterlidir.
-- Bağış geçmişini takip etmek ve kayıtlı ödeme yöntemlerini kullanmak istiyorsanız, önce hesabınıza [giriş yapın](../getting-started/logging-in.md).
+- Herkese açık bağışlar için hesap gerekmez -- yalnızca kilisenizin **Bağış Yap** sayfasını ziyaret edin.
+- Bağış geçmişi takibi ve kayıtlı ödeme yöntemleriyle üye bağışları için önce hesabınıza [giriş yapın](../getting-started/logging-in.md).
 
 </div>
 
@@ -29,7 +29,7 @@ Hesap oluşturmadan herkes bağış yapabilir:
 3. Ödeme bilgilerinizi ve bağışlamak istediğiniz tutarı girin.
 4. Bağışınızı tamamlamak için formu gönderin.
 
-Banka havalesiyle bağış yapmayı tercih ederseniz, sayfanın sağ tarafında **ACH Ödemesi Talimatları** bağlantısını göreceksiniz. Bağış geçmişi gibi ek özelliklere erişmek istiyorsanız oturum açmak için bir **Giriş Yap** düğmesi de bulunur.
+Banka havalesiyle bağış yapmayı tercih ederseniz sayfanın sağ tarafında **ACH Ödeme Talimatları** bağlantısını göreceksiniz. Bağış geçmişi gibi ek özelliklere erişmek için oturum açmak istiyorsanız **Giriş Yap** düğmesi de bulunur.
 
 :::tip
 Herkese açık bağış sayfasını ziyaret ettiğinizde zaten oturum açmışsanız, tam bağış geçmişinize ve kayıtlı ödeme yöntemlerinize erişebildiğiniz üye bağış sayfasına otomatik olarak yönlendirilirsiniz.
@@ -37,37 +37,37 @@ Herkese açık bağış sayfasını ziyaret ettiğinizde zaten oturum açmışsa
 
 ## Üye Bağış Sayfası (Oturum Açıkken)
 
-Oturum açtığınızda, üye portalındaki **Bağışlar** sayfasının en üstünde bir **Bağış Yap** düğmesi ve bir **Ekstre Yazdır** düğmesi görünür. Bunların altında şu bölümler yer alır:
+Oturum açtığınızda üye portalındaki **Bağışlar** sayfasının en üstünde bir **Bağış Yap** düğmesi ve bir **Ekstre Yazdır** düğmesi görünür. Bunların altında şu bölümler yer alır:
 
-- **Bu yıl** (geçerli yıl başlığıyla) -- Yıl başından bu yana toplam bağış tutarınız ve bağış sayınız, ayrıca bir **Tüm geçmiş** bağlantısı. Ayrıntılar için [Bağış Geçmişi](./donation-history.md) bölümüne bakın.
-- **Yinelenen** -- Planlanmış bağışlarınız ve bir **Yönet** bağlantısı.
+- **Bu yıl** (geçerli yılı içeren başlık) -- Yıl başından bu yana toplam bağış tutarınız ve bağış sayısınız, ayrıca bir **Tüm geçmiş** bağlantısı. Ayrıntılar için [Bağış Geçmişi](./donation-history.md) bölümüne bakın.
+- **Düzenli** -- Planlanmış bağışlarınız ve bir **Yönet** bağlantısı.
 - **Son Etkinlik** -- Son üç bağışınız ve bağış formunu açan bir **Son bağışı tekrarla** bağlantısı.
 - **Ödeme yöntemleri** -- Kayıtlı kartlarınız ve banka hesaplarınız; ekleme, kaldırma veya varsayılan olarak ayarlama için bir **Yönet** bağlantısı.
-- Kilisenizin aktif bir kampanyası varsa, kampanya ilerleme kartı.
+- Kilisenizin aktif bir kampanyası varsa kampanya ilerleme kartı.
 
 Bağış yapmak için:
 
-1. Bağış sayfasını, kilisenizin **Bağış Yap** sekmesinden, [Ana Sayfa panelinizdeki](../getting-started/navigating.md#home) **Bağışlar** bölümündeki **Bağış Yap** düğmesinden veya [Ben sayfanızdaki](../getting-started/me-page.md) **Bağışlar** bölümündeki **Geçmiş** bağlantısından açın. Bağışlar sayfasında, bağış formunu açmak için **Bağış Yap** öğesine dokunun.
-2. Bağış yapmak istediğiniz **fonu** seçin ve bağış tutarınızı girin.
-3. Kayıtlı bir ödeme yöntemi seçin veya yeni ödeme bilgilerinizi girin.
+1. Bağışlar sayfasını kilisenizin **Bağış** sekmesinden, [Ana Sayfa panelinizdeki](../getting-started/navigating.md#home) **Bağışlar** bölümündeki **Bağış Yap** düğmesinden veya [Ben sayfanızdaki](../getting-started/me-page.md) **Bağışlar** bölümündeki **Geçmiş** bağlantısından açın. Bağışlar sayfasında bağış formunu açmak için **Bağış Yap** düğmesine dokunun.
+2. Bağış yapmak istediğiniz **fonu** seçin ve bağış tutarını girin. Liste yalnızca kilisenizin bağışçılara sunduğu fonları gösterir; B1 Admin'de diğer fonları görebilen bir personel üyesi olsanız bile durum değişmez.
+3. Kayıtlı bir ödeme yöntemi seçin veya yeni ödeme bilgileri girin.
 4. Bağışınızı tamamlamak için formu gönderin.
 
 Bağışınız işlendikten sonra bir başarı mesajı görüntülenir ve bağışınız [bağış geçmişinizde](./donation-history.md) görünür.
 
 :::info
-Yaptığınız bağışlar birden fazla para biriminde kaydedilmişse, yıl başından bu yana toplam tutarınız ve Geçmiş toplamınız kilisenizin para birimine çevrilir ve altında **Güncel döviz kurlarıyla çevrildi** notu gösterilir. Geçmişinizdeki bireysel bağışlar yine de özgün para biriminde görüntülenir.
+Yaptığınız bağışlar birden fazla para biriminde kaydedildiyse, yıl başından bu yana toplam tutarınız ve Geçmiş toplamınız kilisenizin para birimine çevrilir ve altında **Güncel döviz kurlarıyla çevrildi** notu görüntülenir. Geçmişinizdeki bireysel bağışlar yine de özgün para birimlerini gösterir.
 :::
 
 ## Ödeme Yöntemleri
 
-Bağışlar **Stripe** üzerinden güvenli bir şekilde işlenir. Kredi kartı, banka kartı ile ödeme yapabilir veya ACH banka ödemesi kurabilirsiniz. Oturum açtığınızda ödeme yöntemleriniz gelecekte kullanılmak üzere kaydedilebilir; bu da bir dahaki sefere bağış yapmayı daha hızlı hale getirir.
+Bağışlar **Stripe** üzerinden güvenli bir şekilde işlenir. Kredi kartı, banka kartı ile ödeme yapabilir veya ACH banka ödemesi ayarlayabilirsiniz. Oturum açtığınızda ödeme yöntemleriniz sonraki kullanımlar için kaydedilebilir ve bir dahaki bağışta işlemi daha hızlı hale getirir.
 
 :::info Oturum açmadan banka hesabıyla bağış yapma
-Misafir olarak (oturum açmadan) banka hesabıyla bağış yaparsanız, hesabın bankanızda oturum açarak anında doğrulanması gerekir. Bu doğrulama yapılamazsa, "Bu banka hesabı anında doğrulanamadı. Lütfen kartla bağış yapın veya oturum açıp banka hesabını bağış profilinize ekleyin." uyarısını görürsünüz. Doğrulamasının birkaç gün süren banka hesapları yalnızca oturum açtıktan sonra eklenebilir.
+Misafir olarak (oturum açmadan) banka hesabıyla bağış yapıyorsanız, hesabın bankanıza giriş yaparak anında doğrulanması gerekir. Doğrulanamazsa şu mesajı görürsünüz: "Bu banka hesabı anında doğrulanamadı. Lütfen kartla bağış yapın veya oturum açıp banka hesabını bağış profilinize ekleyin." Birkaç gün doğrulama gerektiren banka hesapları yalnızca oturum açtıktan sonra eklenebilir.
 :::
 
 :::warning
-Bağışınız gerçekleşmezse, ödeme bilgilerinizi kontrol edip tekrar deneyin. Sorun devam ederse, yardım için kilisenizin ofisiyle iletişime geçin.
+Bağışınız gerçekleşmezse ödeme bilgilerinizi iki kez kontrol edip tekrar deneyin. Sorun devam ederse yardım için kilise ofisinize başvurun.
 :::
 
 ## Sonraki Adımlar

@@ -1,50 +1,50 @@
 ---
-title: "Kusungula Emakilasi"
-description: "Dala, tetfula, futsi ususe emakilasi ku-portal ye-Lessons.church ukuze ikilasi ngalinye noma iqembu leminyaka lilungele kuhlelwa kwetifundziso temasonto."
+title: "Ukusetfwa Kwetigumbi Lekufundzisa"
+description: "Dala, tshintsha igama, uphindze uyesuse tigumbi ku-portal ye-Lessons.church, kuze kutfole ligumbi noma likarabha ngalinye sekulungele kuhlelwa kwetifundzo letisemkhatsini wetonto."
 ---
 
-# Kusungula Emakilasi
+# Ukusetfwa Kwetigumbi Lekufundzisa
 
 <div class="article-intro">
 
-Ngaphambi kwekutsi uhlele tifundzo, kufanele usungule emakilasi lamela tizinda takho tekufundzisa. Lomhlahlandlela ukuhambisa ekusunguleni, ekubuniseni, nasekuphatseni emakilasi eliphothalini le-Lessons.church.
+Ngaphambi kwekuba uhlele tifundzo, udzinga kudala tigumbi letimelela tindzawo lotifundzisela kuto. Lencwadzi ikuhambisa ekudaleni, ekutfolemgcugcu, nasekuphatseni tigumbi ku-portal ye-Lessons.church.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- [Sungula i-akhawunti](../getting-started/creating-account.md) futsi utihlanganise nelibandla lakho
-- Tijwayeze [Kubuka Konkhe Liphothali](../getting-started/portal-overview.md)
+- [Dala ti-akhawunti](../getting-started/creating-account.md) uphindze uxhumane nebandla lakho
+- Ati nge [Ngevelaphi Ye-Portal](../getting-started/portal-overview.md)
 
 </div>
 
-## Kusungula Likilasi
+## Kudala Ligumbi
 
-1. Ngena ku-akhawunti yakho ku- [Lessons.church](https://lessons.church).
-2. Yiya **Eliphothalini** lakho. Lena yindzawo lesemkhatsini yelibandla lakho yekuphatsa emakilasi netinhlelo.
-3. Chofota **Ngeta Likilasi**.
-4. Faka libito lelikilasi lakho. Khetsa lelinye lelicacisako lelitawatiwa emavolontiya akho -- sibonelo, "Sikolo Lesincane," "Sikolo Lesiphansi K-2," nobe "Sikolo Lesimake."
-5. Gcina likilasi lakho lelisha. Litawuvela ku-dashboard yeliphothali lakho ngalesosikhatsi.
+1. Ngena ku-akhawunti yakho ku-[Lessons.church](https://lessons.church).
+2. Yana ku-**Portal** yakho. Lapha ngulapho bandla lakho lihlanganisa khona tigumbi netihlelo.
+3. Ku-bhokisi le-**Classrooms**, tfwala **Add**. Uma ungakabi natigumbi, tfwala **Add First Classroom** esikhundleni salokhulu.
+4. Faka **Classroom Name**. Khetsa lilebhu lelichazako futsi lelitawutsatfwa ngebavolontiyeli bakho -- njengalesi sibonelo, "Preschool," "Elementary K-2," noma "Middle School."
+5. Tfwala **Save**. Ligumbi lakho lelisha livela ohlwini lwe-**Classrooms** masinyane.
 
-Phindza letinyatselo kwelinye nelinye ligumbi nobe liqembu leminyaka ebandleni lakho. Ungasungula emakilasi lamanyenti njengobe uwadzinga.
+Phindzaphindza lesinyatselo ngaligumbi nangalinye noma ngeliqembu lemnyaka ebandleni lakho. Ungadala tigumbi letiningi longadzinga tona.
 
-## Kusungula Kwekucala
+## Kusetfwa Kwekucala
 
-Nangabe ungakaze usungule nelinye likilasi, liphothali lakho litawukhombisa vidiyo yekusungula kute ikuhambise kuyo yonkhe inchubo. Le vidiyo icoca ngemisuka yekusungula emakilasi nekuhlela tifundzo takho tekucala. Yindzawo lenhle yekucala nangabe umutjha ku-Lessons.church.
+Uma ungakasetfi tigumbi letikhona, i-portal yakho itawutfola sivakashi sekusetfwa esikuhambisa kuleli nqubo. Lesivakashi sichaza tisekelo tekudala tigumbi nekuhlela tifundzo takho takuqala. Kuyindzawo lenhle yekuqala uma usha ku-Lessons.church.
 
 :::tip
-Bunisa emakilasi akho kuze ahambisane naloko emavolontiya akho asebafanisa ngemagumbi akho. Nangabe wonkhe umuntfu alibita ngekutsi "ligumbi le-Pre-K," libunise "Pre-K" kunekulisebentisa libito lelisemtsetfweni njenge "Ligumbi Lekufundza Kwebantfwana Labancane 101."
+Taya emagama etigumbi takho ahambisana nendlela bavolontiyeli bakho lebacabanga ngayo ngetigumbi takho. Uma bonkhe bambiza kutsi "ligumbi le-Pre-K," ligumbi lichazwe kutsi "Pre-K" kunekutsi kube lichazwe ngendlela lesemtsetfweni njenge "Early Childhood Education Room 101."
 :::
 
-## Kuphatsa Emakilasi
+## Kuphatsa Tigumbi
 
-Emakilasi akho avela ku-dashboard yeliphothali lapho ungawaphatsa nobe ngasiphi sikhatsi. Kusukela lapha ungakwati:
+Tigumbi takho titawuvela ku-dashibhodi ye-portal lapho ungatiphatsa khona nanoma nini. Kusuka lapha ungenta:
 
-- **Kubunisa kabusha likilasi** -- Guqula libito nangabe emagumbi akho nobe emacembu eminyaka aguculekile.
-- **Kususa likilasi** -- Cishe emakilasi longasadzingi wona.
-- **Kubuka luhlelo** -- Chofota nelinye likilasi kute ubone luhlelo lwaso lwetifundzo.
+- **Tshintsha ligama leligumbi** -- Tfwala **Edit classroom** (ikhonkho lepensela) eseceleni kwaleligumbi, shintja **Classroom Name**, uphindze utfwale **Save**.
+- **Susa ligumbi** -- Tfwala **Edit classroom**, bese utfwala ikhonkho le-**Delete classroom** (ikhonkho lemkhakhandvo) uphindze uyeseke.
+- **Bheka sihlelo** -- Tfwala noma yiliphi ligumbi kuze ubone sihlelo salo setifundzo.
 
-## Loko Lokulandzelako
+## Lokulandzelako
 
-Nase emakilasi akho asengiwe, sewulungele kucala [kuhlela tifundzo](./scheduling-lessons.md) kuze emavolontiya akho atati loko lokufanele bakufundzise liviki nelilinye.
+Nasetigumbi takho sesikusetfwe, usulungele kuqala [kuhlela tifundzo](./scheduling-lessons.md) kuze bavolontiyeli bakho batsi kufundziswani sonkhe sonkhe lesontfo.

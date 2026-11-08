@@ -1,50 +1,50 @@
 ---
 title: "Configurarea claselor"
-description: "Creați, redenumiți și ștergeți clase în portalul Lessons.church, ca fiecare sală sau grupă să fie gata pentru programarea săptămânală."
+description: "Creați, redenumiți și ștergeți clase în portalul Lessons.church, astfel încât fiecare sală sau grupă de vârstă să fie pregătită pentru programarea lecțiilor săptămânale."
 ---
 
 # Configurarea claselor
 
 <div class="article-intro">
 
-Înainte să poți programa lecții, trebuie să creezi clase care reprezintă spațiile tale de predare. Acest ghid te ghidează pas cu pas prin crearea, denumirea și gestionarea claselor în portalul Lessons.church.
+Înainte de a putea programa lecții, trebuie să creați clasele care reprezintă spațiile dumneavoastră de predare. Acest ghid vă ghidează prin crearea, denumirea și gestionarea claselor în portalul Lessons.church.
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Creează un cont](../getting-started/creating-account.md) și conectează-l la biserica ta
-- Familiarizează-te cu [Prezentarea generală a portalului](../getting-started/portal-overview.md)
+- [Creați un cont](../getting-started/creating-account.md) și conectați-vă la biserica dumneavoastră
+- Familiarizați-vă cu [Prezentarea generală a portalului](../getting-started/portal-overview.md)
 
 </div>
 
 ## Crearea unei clase
 
-1. Autentifică-te în contul tău la [Lessons.church](https://lessons.church).
-2. Accesează **Portalul**. Acesta este centrul principal al bisericii tale pentru gestionarea claselor și a programelor.
-3. Apasă pe **Adaugă clasă**.
-4. Introdu un nume pentru clasa ta. Alege ceva descriptiv, pe care voluntarii tăi îl vor recunoaște, de exemplu „Preșcolari”, „Elementar K-2” sau „Gimnaziu”.
-5. Salvează noua clasă. Aceasta va apărea imediat pe tabloul de bord al portalului.
+1. Autentificați-vă în contul dumneavoastră la [Lessons.church](https://lessons.church).
+2. Accesați **Portalul**. Acesta este centrul principal al bisericii dumneavoastră pentru gestionarea claselor și a programelor.
+3. În caseta **Clase**, faceți clic pe **Adaugă**. Dacă nu aveți încă nicio clasă, faceți clic în schimb pe **Adaugă prima clasă**.
+4. Introduceți un **Nume al clasei**. Alegeți un nume descriptiv, pe care voluntarii dumneavoastră îl vor recunoaște -- de exemplu, „Preșcolari", „Elementar K-2" sau „Gimnaziu".
+5. Faceți clic pe **Salvează**. Noua clasă apare imediat în lista **Clase**.
 
-Repetă acești pași pentru fiecare cameră sau grupă de vârstă din biserica ta. Poți crea câte clase ai nevoie.
+Repetați acești pași pentru fiecare sală sau grupă de vârstă din biserica dumneavoastră. Puteți crea câte clase aveți nevoie.
 
 ## Configurarea inițială
 
-Dacă nu ai configurat încă nicio clasă, portalul tău va afișa un videoclip de configurare care te va ghida prin proces. Videoclipul acoperă elementele de bază ale creării claselor și programării primelor lecții. Este un punct de plecare excelent dacă ești nou în Lessons.church.
+Dacă nu ați configurat încă nicio clasă, portalul dumneavoastră va afișa un videoclip de configurare care vă va ghida prin proces. Acest videoclip acoperă elementele de bază ale creării claselor și ale programării primelor lecții. Este un punct de plecare excelent dacă sunteți nou în Lessons.church.
 
 :::tip
-Denumește clasele tale astfel încât să corespundă modului în care voluntarii tăi deja se gândesc la camerele lor. Dacă toată lumea o numește „camera pentru grădiniță”, denumește-o „Grădiniță” în loc de ceva formal precum „Sala de educație timpurie 101”.
+Denumiți clasele în concordanță cu modul în care voluntarii dumneavoastră se referă deja la sălile bisericii. Dacă toată lumea o numește „sala Pre-K", denumiți-o „Pre-K" în loc de ceva formal precum „Sala 101 de educație a copiilor mici".
 :::
 
 ## Gestionarea claselor
 
-Clasele tale apar pe tabloul de bord al portalului, de unde le poți gestiona oricând. De aici poți:
+Clasele dumneavoastră apar pe panoul de control al portalului, de unde le puteți gestiona oricând. De aici puteți:
 
-- **Redenumi o clasă** — Actualizează numele dacă se schimbă camerele sau grupele de vârstă.
-- **Șterge o clasă** — Elimină clasele de care nu mai ai nevoie.
-- **Vizualizează programul** — Apasă pe orice clasă pentru a vedea programul ei de lecții.
+- **Redenumi o clasă** -- Faceți clic pe pictograma **Editează clasa** (creion) de lângă ea, modificați **Numele clasei** și faceți clic pe **Salvează**.
+- **Șterge o clasă** -- Faceți clic pe **Editează clasa**, apoi faceți clic pe pictograma **Șterge clasa** (coș de gunoi) și confirmați.
+- **Vizualizați programul** -- Faceți clic pe orice clasă pentru a vedea programul său de lecții.
 
 ## Ce urmează
 
-Odată ce clasele tale sunt configurate, ești gata să începi [programarea lecțiilor](./scheduling-lessons.md), ca voluntarii tăi să știe ce să predea în fiecare săptămână.
+Odată ce clasele sunt configurate, sunteți gata să începeți [programarea lecțiilor](./scheduling-lessons.md), astfel încât voluntarii dumneavoastră să știe ce au de predat în fiecare săptămână.

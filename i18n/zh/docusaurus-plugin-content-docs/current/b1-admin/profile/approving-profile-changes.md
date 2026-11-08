@@ -1,66 +1,66 @@
 ---
-title: "批准资料更改"
-description: "在 B1 Admin 中审核并批准会员的个人资料变更请求，并设置接收这些请求的目录审批小组。"
+title: "批准个人资料更改"
+description: "在 B1 Admin 中审核并批准成员的个人资料更改请求，并设置接收这些请求的目录审批组。"
 ---
 
-# 批准资料更改
+# 批准个人资料更改
 
 <div class="article-intro">
 
-当您的教会要求管理员批准资料更新时，成员通过 B1 Mobile 应用提交更改，这些请求在 B1 Admin 中显示为任务。本指南说明如何查看和批准这些请求。
+当贵教会要求管理员批准个人资料更新时，成员会通过 B1 App 提交更改，这些请求会以任务的形式出现在 B1 Admin 中。本指南将说明如何审核和批准这些请求。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 您必须是在 **Mobile &rarr; Member portal** 中指定为 **Directory Approval Group** 的群组成员
-- 如果尚未配置批准群组，资料更改会立即应用，无需审查
+- 您必须是 **Mobile &rarr; Member portal** 中指定为 **Directory Approval Group** 的组的成员
+- 如果尚未配置审批组，个人资料更改将立即生效，无需审核
 
 </div>
 
-## 查找待处理请求
+## 在哪里查看待处理的请求
 
-当成员提交资料更改时，它会显示为分配给您批准群组的任务。您可以在两个位置找到它：
+当成员提交个人资料更改时，该请求会以任务的形式分配给您的审批组。您可以在以下两个位置找到它：
 
 **从仪表板（您的主页）：**
-1. 登录 B1 Admin -- 仪表板会自动加载。
+1. 登录 B1 Admin，仪表板将自动加载。
 2. 在 **My tasks** 部分，点击 **All tasks**。（My tasks 仅列出分配给您个人的未完成任务。）
-3. 点击 **Assigned to My Groups** 标签页。任何待处理的资料更改请求都会列在那里。
+3. 点击 **Assigned to My Groups** 选项卡。所有待处理的个人资料更改请求都会列在这里。
 
 **从 Serving &rarr; My Work：**
-1. 打开 [Jump 菜单](../introduction.md#getting-around-with-the-jump-menu)（B1 Admin 左上角的搜索栏）并展开 **Serving**。
+1. 打开 [跳转菜单](../introduction.md#getting-around-with-the-jump-menu)（B1 Admin 左上角的搜索栏），然后展开 **Serving**。
 2. 点击 **My Work**。
-3. 点击 Tasks 下的 **Assigned to My Groups** 标签页。
+3. 在 Tasks 下点击 **Assigned to My Groups** 选项卡。
 
-## 审查和批准请求
+## 审核并批准请求
 
 1. 点击 **Profile Update** 任务以打开它。
-2. 在 **Requested Changes** 下，您将看到成员想要更新的每个字段以及他们提交的新值。
-3. 审查这些更改。
-4. 点击 **Apply** 以批准并将更改保存到他们的资料。
+2. 在 **Requested Changes** 下，您会看到成员希望更新的每个字段及其提交的新值。
+3. 检查这些更改。
+4. 点击 **Apply** 以批准并将更改保存到其个人资料中。
 
-任务会在应用更改后自动关闭。
+更改应用后，任务将自动关闭。
 
-## 设置批准群组
+## 设置审批组
 
-如果您的教会希望资料更改需要批准，则必须首先配置目录批准群组。
+如果贵教会希望个人资料更改需要审批，则必须先配置目录审批组。
 
-1. 打开 Jump 菜单并展开 **Mobile**。
+1. 打开跳转菜单并展开 **Mobile**。
 2. 点击 **Member portal**（"Portal settings" 页面）。
-3. 在 **Directory Approval Group** 下，选择其成员应审查资料更改请求的群组。
+3. 在 **Directory Approval Group** 下，选择应审核个人资料更改请求的成员所在的组。
 4. 点击 **Save**。
 
-该群组的任何成员将在其仪表板上的 **Assigned to My Groups** 下看到传入的资料更改请求。
+该审批组的任何成员都会在仪表板的 **Assigned to My Groups** 下看到新的个人资料更改请求。
 
-同一目录批准群组也审查 **账户删除请求** -- 参见 [审查账户删除请求](./account-deletion.md)。
+同一个目录审批组也负责审核**账户删除请求**——请参阅[审核账户删除请求](./account-deletion.md)。
 
 :::tip
-确保您的批准人实际上是已配置群组的成员 -- 仅群组成员才能看到请求。
+请确保审批人确实是已配置组的成员——只有组成员才能看到这些请求。
 :::
 
 ## 相关文章
 
-- [管理您的资料](./managing-profile.md) -- 编辑您自己的账户设置
-- [审查账户删除请求](./account-deletion.md) -- 相同的批准群组审查流程用于账户删除
-- [B1 Mobile 设置](../../b1-church/getting-started/editing-your-profile.md) -- 成员在提交资料更改时看到的内容
+- [管理您的个人资料](./managing-profile.md) — 编辑您自己的账户设置
+- [审核账户删除请求](./account-deletion.md) — 账户删除的同一套审批组审核流程
+- [编辑您的个人资料](../../b1-church/getting-started/editing-your-profile.md) — 成员提交个人资料更改后所看到的内容

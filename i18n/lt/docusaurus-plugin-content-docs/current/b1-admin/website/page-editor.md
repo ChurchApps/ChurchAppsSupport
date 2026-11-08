@@ -1,195 +1,206 @@
 ---
-title: "Puslapių redaktoriaus naudojimas"
-description: "Redaguokite B1 Admin puslapius: pridėkite skyrius ir elementus, stilizuokite, peržiūrėkite mobiliajame ir skelbkite juodraščius, su versijų istorija."
+title: "Puslapio redaktoriaus naudojimas"
+description: "Nustatykite puslapio redaktorių B1 Admin, pridėdami skyrius ir elementus, juos stilizuodami, peržiūrėdami mobiliajame įrenginyje ir publikuodami juodraščius. Taip pat aprašomas atšaukimas ir versijų istorija."
 ---
 
-# Puslapių redaktoriaus naudojimas
+# Puslapio redaktoriaus naudojimas
 
 <div class="article-intro">
 
-B1 puslapių redaktorius – tai vizualus vilkimo ir nuleidimo kūrimo įrankis, leidžiantis kurti bažnyčios svetainės puslapius nerašant jokio kodo. Galite pridėti skyrius ir turinio blokus, keisti stilius, peržiūrėti savo darbą ir atšaukti pakeitimus – viską tiesiai naršyklėje.
+B1 puslapio redaktorius yra vizualinis įrankis, leidžiantis vilkti ir kurti elementus, o tai leidžia suprojektuoti bažnyčios svetainės puslapius nerašant jokio kodo. Galite pridėti skyrius ir turinio blokus, pritaikyti stilius, peržiūrėti savo darbą ir atšaukti pakeitimus -- viską tiesiai naršyklėje.
 
 </div>
 
 ## Mokomasis vaizdo įrašas
 
-<YouTube id="m2B_JxmfFm4" title="Puslapių ir navigacijos redagavimas B1 sistemoje" next="Pasirinktinio domeno prijungimas B1 sistemoje" nextUrl="/docs/b1-admin/settings/custom-domain" />
+<YouTube id="m2B_JxmfFm4" title="Puslapių ir navigacijos redagavimas B1" next="Pasirinktinio domeno prijungimas B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
 
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Atlikite [Pradinis nustatymas](./initial-setup.md), kad sukonfigūruotumėte savo svetainę
-- Sukurkite bent vieną puslapį skyriuje [Puslapių valdymas](./managing-pages.md)
-- Norint pasiekti redaktorių, reikia **content.edit** leidimo
+- Atlikite [Pradinę sąranką](./initial-setup.md), kad sukonfigūruotumėte savo svetainę
+- Sukurkite bent vieną puslapį skiltyje [Puslapių tvarkymas](./managing-pages.md)
+- Norint pasiekti redaktorių, reikia leidimo **content.edit**
 
 </div>
 
 ## Redaktoriaus atidarymas
 
-1. B1 Admin sistemoje atidarykite [Greitąjį meniu](../introduction.md#getting-around-with-the-jump-menu) (paieškos juostą viršutiniame kairiajame kampe), išskleiskite **Website** ir spustelėkite **Pages**.
-2. Puslapių lentelėje raskite puslapį, kurį norite redaguoti, ir spustelėkite **Edit Content**.
+1. B1 Admin programoje atidarykite [Greitosios navigacijos meniu](../introduction.md#getting-around-with-the-jump-menu) (paieškos juosta viršuje kairėje), išskleiskite **Svetainė** ir spustelėkite **Puslapiai**.
+2. Puslapių lentelėje raskite puslapį, kurį norite redaguoti, ir spustelėkite **Redaguoti turinį**.
 
-Redaktorius atsidaro visame ekrane. Kairiajame skydelyje rodoma jūsų puslapio struktūra ir galimi turinio elementai; centrinėje srityje rodoma tiesioginė puslapio peržiūra.
+Redaktorius atsidaro viso ekrano režimu. Kairiajame skydelyje rodoma jūsų puslapio struktūra ir turimi turinio elementai; centrinėje srityje rodoma tiesioginė puslapio peržiūra.
 
 :::info
-Redaktorius visada rodomas šviesiame režime, neatsižvelgiant į jūsų B1 Admin temos nustatymą, ir naudoja antraštių bei pagrindinio teksto šriftus, kuriuos pasirinkote skiltyje [Appearance](./appearance.md). Taip peržiūra tiksliai atitinka tai, kaip puslapis atrodys svetainės lankytojams.
+Redaktorius visada rodomas šviesiame režime, neatsižvelgiant į jūsų B1 Admin temos nustatymą, ir naudoja antraštės bei pagrindinio teksto šriftus, pasirinktus skiltyje [Išvaizda](./appearance.md). Taip peržiūra tiksliai atitinka tai, kaip puslapis atrodys svetainės lankytojams.
 :::
 
 ## Puslapio struktūra: skyriai ir elementai
 
 Kiekvienas puslapis sudarytas iš dviejų lygmenų:
 
-- **Skyriai** – aukščiausio lygmens konteineriai, kurie puslapį padalija į horizontalias juostas (pavyzdžiui, pagrindinis baneris, turinio blokas ar poraštės juosta). Prieš pridedant turinį, kiekviename puslapyje turi būti bent vienas skyrius.
-- **Elementai** – atskiri turinio fragmentai, įdėti į skyrių, pavyzdžiui, tekstas, nuotraukos, mygtukai, kortelės, formos ir kalendoriai.
+- **Skyriai** -- aukščiausio lygio konteineriai, kurie padalija puslapį į horizontalias juostas (pvz., antraštės skyrius, turinio blokas ar poraštės juosta). Prieš pridedant turinį, kiekviename puslapyje turi būti bent vienas skyrius.
+- **Elementai** -- atskiri turinio gabalėliai, įdėti į skyrių, pavyzdžiui, tekstas, nuotraukos, mygtukai, kortelės, formos ir kalendoriai.
 
 ### Skyriaus pridėjimas
 
 1. Spustelėkite **Pridėti skyrių** (arba mygtuką **+** kairiojo skydelio viršuje).
 2. Pasirinkite, kaip pradėti:
-   - **Iš šablono** – naršykite skyrių šablonų galeriją, surūšiuotą pagal kategorijas (Hero, About, Services, Giving ir kt.), ir spustelėkite vieną, kad įterptumėte jį kaip visiškai suformatuotą, iš anksto užpildytą skyrių. Po įterpimo galite pakeisti bet ką.
-   - **Tuščias skyrius** – pasirinkite stulpelių išdėstymą (vienas stulpelis, du stulpeliai, trys stulpeliai ir kt.) ir kurkite nuo nulio.
-3. Naujas skyrius atsiranda peržiūroje. Spustelėkite jį, kad jį pažymėtumėte, ir sukonfigūruotumėte fono spalvą, vidinius tarpus bei kitus stiliaus nustatymus.
+   - **Iš šablono** -- naršykite skyrių šablonų galeriją, sugrupuotą pagal kategorijas (Antraštė, Apie, Paslaugos, Aukojimas ir kt.), ir spustelėkite vieną, kad įterptumėte jį kaip visiškai stilizuotą, iš anksto užpildytą skyrių. Po pridėjimo galite viską pritaikyti.
+   - **Tuščias skyrius** -- pasirinkite stulpelių išdėstymą (vienas stulpelis, du stulpeliai, trys stulpeliai ir pan.) ir kurkite nuo nulio.
+3. Naujas skyrius atsiranda peržiūroje. Spustelėkite jį, kad pasirinktumėte ir sukonfigūruotumėte jo fono spalvą, užpildą bei kitas stiliaus parinktis.
 
 ### Skyriaus išdėstymo keitimas
 
-Jei skyrius jau sukurtas, bet norite kitokios struktūros? Naudokite to skyriaus išdėstymo keitiklį, kad pakeistumėte stulpelių išdėstymą į kitą iš galerijos, išlaikydami esamą turinį ir elementus.
+Jau sukūrėte skyrių, bet norite kitokios struktūros? Naudokite to skyriaus išdėstymo keitiklį, kad pakeistumėte stulpelių išdėstymą į kitą iš galerijos, išlaikydami esamą turinį ir elementus.
 
 ### Elementų pridėjimas į skyrių
 
-1. Peržiūroje spustelėkite skyriaus vidų, kad jį pažymėtumėte.
-2. Spustelėkite **Pridėti turinį** ir iš sąrašo pasirinkite elemento tipą:
-   - **Tekstas** – antraštės, pastraipos ir formatuotas tekstas
-   - **Nuotrauka** – įkelkite nuotrauką arba nurodykite jos nuorodą
-   - **Mygtukas** – spustelėjamas raginimo veikti (call-to-action) nuorodos mygtukas
-   - **Kortelė** – nuotrauka su pavadinimu ir aprašymu
-   - **Forma** – įterpkite [formą](../forms/creating-forms.md) tiesiai į puslapį. Jei formai pridėta [antraštės nuotrauka](../forms/creating-forms.md#adding-a-header-photo), ji rodoma virš klausimų
-   - **Kalendorius** – rodo renginių kalendorių
-   - **DUK** – akordeono tipo klausimų ir atsakymų blokai
-   - **Video** – įterpkite vaizdo įrašą pagal URL
-   - **Grupių katalogas** – filtruojamas visų bažnyčios grupių katalogas su pasirenkama paieška, kategorijos ir žymos filtrais
-   - **Funkcijos piktograma** – piktograma su pavadinimu ir trumpu aprašymu, skirta funkcijoms ar tarnystėms pabrėžti
-   - **Galerija** – tinklelis iš kelių nuotraukų arba masonry išdėstymas
-   - **Liudijimas** – viena ar daugiau citatų su autoriaus vardu, pareigomis ir nuotrauka
-   - **Socialinių tinklų piktogramos** – nuorodų piktogramos į bažnyčios socialinių tinklų profilius: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo ir Podcast. Įveskite nuorodą kiekvienam norimam rodyti tinklui; **WhatsApp** atveju naudokite `https://wa.me/` nuorodą su savo numeriu arba grupės kvietimo nuorodą
-   - **Laikrodis** – laikmatis, skaičiuojantis iki datos ar įprasto tarnystės laiko
-   - **Statistika** – eilutė didelių skaičių su žymėmis (nariai, metai, filialai)
-   - **Kampanijos eiga** – tiesioginė eigos juosta aukojimų kampanijai, rodanti surinktą sumą nuo fondo tikslo
-   - **Personalo tinklelis** – grupės narių nuotraukų kortelės; grupei turi būti įjungta parinktis **viešas sąrašas**
-   - **Tarnystių laikai** – jūsų filialų tarnystių tvarkaraštis, automatiškai paimtas iš lankomumo nustatymų
-   - **Pamokslai** – jūsų pamokslų biblioteka, pateikiama kaip visas naršyklės vaizdas arba tinklelio, sąrašo ar paryškinto naujausio pamokslo išdėstymu
-   - **Žemėlapis** – įterptas žemėlapis, centruotas pagal bažnyčios adresą
-   - **Lentelė** – paprastas eilučių ir stulpelių tinklelis lentelių duomenims
-   - **Tekstas su nuotrauka** – tekstas ir nuotrauka šalia vienas kito
-   - **Logotipas** – jūsų bažnyčios logotipas, paimtas iš skilties [Appearance](./appearance.md)
-   - **Tiesioginė transliacija** – jūsų tiesioginės transliacijos grotuvas, įterptas tiesiai į puslapį
-   - **Podkastas** – epizodų sąrašas, paimtas iš jūsų nurodyto išorinio podkasto RSS srauto URL, su nustatymais, kiek epizodų rodyti ir ar rodyti datas bei aprašymus. Kiekvienas epizodas gyvoje svetainėje turi garso grotuvą ir **Download** nuorodą, kuri išsaugo epizodo garso failą pavadinimu pagal epizodo pavadinimą. Tai skirta bet kokio podkasto srautui rodyti svetainėje; jei norite publikuoti savo pamokslus kaip podkastą, žr. [Pamokslų valdymas](../sermons/managing-sermons.md#your-podcast-feed)
-   - **Auka** – aukojimo mygtukas arba įterpta aukojimo forma
-   - **HTML** – jūsų pačių neapdorotas HTML kodas, skirtas pažengusiam naudojimui, pavyzdžiui, trečiosios šalies valdiklio įterpimui (žr. [HTML elemento naudojimas](#using-the-html-element))
-   - **iFrame** – įterpkite išorinį turinį pagal URL
-3. Sukonfigūruokite elementą naudodami atsidarantį nustatymų skydelį.
+1. Spustelėkite skyrių peržiūroje, kad jį pasirinktumėte.
+2. Spustelėkite **Pridėti turinį** ir pasirinkite elemento tipą iš sąrašo:
+   - **Tekstas** -- antraštės, pastraipos ir praturtintas tekstas
+   - **Nuotrauka** -- įkelkite nuotrauką arba nurodykite nuorodą į ją
+   - **Mygtukas** -- paspaudžiama raginimo veikti nuoroda
+   - **Kortelė** -- nuotrauka su pavadinimu ir aprašymu
+   - **Forma** -- įterpkite [formą](../forms/creating-forms.md) tiesiai į puslapį. Jei formai pridėta [antraštės nuotrauka](../forms/creating-forms.md#adding-a-header-photo), ji rodoma virš klausimų
+   - **Kalendorius** -- rodo renginių kalendorių
+   - **DUK** -- akordeono tipo klausimų ir atsakymų blokai
+   - **Vaizdo įrašas** -- įterpkite vaizdo įrašą pagal URL
+   - **Grupių naršyklė** -- filtruojamas visų bažnyčios grupių katalogas su pasirinktine paieška, kategorijos ir žymos filtrais. Jo **Išdėstymas** gali būti **Tinklelis** (numatytasis) arba **Slenkama (automatiškai)** -- žr. [Slenkami išdėstymai](#scrolling-layouts)
+   - **Grupių sąrašas** -- jūsų viešųjų grupių plytelės, pasirinktinai tik grupės su tam tikra žyma. Jo **Išdėstymas** gali būti **Tinklelis** (numatytasis; iki trijų plytelių eilutėje) arba **Slenkama (automatiškai)** -- žr. [Slenkami išdėstymai](#scrolling-layouts)
+   - **Piktogramos funkcija** -- piktograma su pavadinimu ir trumpu aprašymu, skirta funkcijų ar tarnysčių akcentams
+   - **Galerija** -- kelių nuotraukų tinklelis arba mozaikinis išdėstymas
+   - **Atsiliepimas** -- viena ar daugiau citatų su autoriaus vardu, pareigomis ir nuotrauka
+   - **Socialinių tinklų piktogramos** -- susietos piktogramos bažnyčios socialinių tinklų profiliams: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo ir Podcast. Įveskite nuorodą kiekvienai, kurią norite rodyti; **WhatsApp** atveju naudokite `https://wa.me/` nuorodą su jūsų numeriu arba grupės kvietimo nuorodą
+   - **Atgalinis skaitiklis** -- laikmatis, skaičiuojantis iki datos ar savaitinio pamaldų laiko
+   - **Statistika** -- eilutė didelių skaičių su etiketėmis (nariai, metai, filialai)
+   - **Kampanijos eiga** -- gyva progreso juosta aukojimų kampanijai, rodanti bendrą sumą, surinktą iki fondo tikslo
+   - **Darbuotojų tinklelis** -- nuotraukų kortelės grupės nariams; grupei turi būti įjungta parinktis **viešas sąrašas**
+   - **Pamaldų laikai** -- jūsų filialų pamaldų tvarkaraštis, automatiškai paimtas iš lankomumo nustatymų
+   - **Pamokslai** -- jūsų pamokslų biblioteka kaip pilnas naršyklės rodinys arba tinklelio, sąrašo ar išskirto naujausio pamokslo išdėstymas
+   - **Žemėlapis** -- įterptas žemėlapis, centruotas pagal jūsų bažnyčios adresą
+   - **Lentelė** -- paprastas eilučių ir stulpelių tinklelis lentelių turiniui
+   - **Tekstas su nuotrauka** -- tekstas ir nuotrauka greta
+   - **Logotipas** -- jūsų bažnyčios logotipas, paimtas iš [Išvaizdos](./appearance.md)
+   - **Tiesioginė transliacija** -- jūsų tiesioginės transliacijos grotuvas, įterptas tiesiai į puslapį
+   - **Podcast** -- epizodų sąrašas, paimtas iš jūsų nurodyto išorinio podcast RSS srauto URL, su nustatymais, kiek epizodų rodyti ir ar rodyti datas bei aprašymus. Kiekvienas epizodas tiesioginėje svetainėje turi garso grotuvą ir **Atsisiųsti** nuorodą, kuri išsaugo epizodo garso failą pagal epizodo pavadinimą. Tai skirta bet kokiam podcast srautui pateikti savo svetainėje; norėdami savo pamokslus publikuoti kaip podcast, žr. [Pamokslų tvarkymas](../sermons/managing-sermons.md#your-podcast-feed)
+   - **Auka** -- aukojimo mygtukas arba įterpta aukojimo forma
+   - **HTML** -- jūsų pačių neapdorotas HTML, pažengusiems naudojimo atvejams, pavyzdžiui, trečiosios šalies valdiklio įterpimui (žr. [HTML elemento naudojimas](#using-the-html-element))
+   - **iFrame** -- įterpkite išorinį turinį pagal URL
+3. Sukonfigūruokite elementą naudodami atsidariusį nustatymų skydelį.
 
 ### HTML elemento naudojimas
 
 **HTML** elementas turi du laukus:
 
-- **HTML turinys** – žymėjimas, rodomas puslapyje. Visi čia įdėti `<script>` žymės veikia jūsų gyvoje svetainėje.
-- **JavaScript (be script žymės)** – scenarijaus kodas, kuris vykdomas įkeliant puslapį. Čia taip pat galite įklijuoti tiekėjo įterpimo fragmentą su `<script>` žymėmis, ir jis veiks gyvoje svetainėje.
+- **HTML turinys** -- žymėjimas, rodomas puslapyje. Visos čia įtrauktos `<script>` žymės veikia jūsų tiesioginėje svetainėje.
+- **JavaScript (be script žymės)** -- scenarijaus kodas, vykdomas įkeliant puslapį. Čia taip pat galite įklijuoti tiekėjo įterpimo fragmentą su jo `<script>` žymėmis, ir jis bus vykdomas tiesioginėje svetainėje.
 
-Jei į JavaScript lauką įklijuosite tik interneto adresą (pavyzdžiui, paveikslėlio nuorodą), laukas paraudonuos su įspėjimu *„Tai yra interneto adresas, o ne JavaScript.“* Adresas tame lauke neveiks. Norėdami parodyti paveikslėlį, naudokite **Nuotrauka** elementą arba įdėkite `<img src="...">` į **HTML turinys** lauką.
+Jei į JavaScript laukelį įklijuosite tik interneto adresą (pavyzdžiui, nuotraukos nuorodą), laukelis paraudonuos su įspėjimu *„Tai interneto adresas, o ne JavaScript.“* Adresas tame laukelyje nieko nedaro. Norėdami parodyti paveikslėlį, naudokite **Nuotrauka** elementą arba įdėkite `<img src="...">` į **HTML turinys** lauką.
 
 ### Kalendoriaus elemento naudojimas {#using-the-calendar-element}
 
 **Kalendorius** elementas rodo renginius iš vieno iš jūsų kalendorių:
 
-1. Skiltyje **Select** pasirinkite **Group Calendar** (vienos grupės renginiai – sąraše rodomos grupės, kuriose esate narys) arba **Curated Calendar** (kalendorius, kurį sukūrėte skiltyje **Calendars**; žr. [Curated Calendar](../calendars/curated-calendar.md)).
-2. Skiltyje **Select Calendar** pasirinkite grupę ar kalendorių.
-3. Skiltyje **Display** pasirinkite rodymo būdą:
-   - **Month calendar** – mėnesio tinklelis, kurį lankytojai gali peržiūrėti puslapis po puslapio.
-   - **Upcoming events** – artimiausių 12 renginių plytelių tinklelis; pasikartojantis renginys rodomas kartą, su artimiausia data. Kiekvienoje plytelėje rodoma renginio nuotrauka (arba jo pavadinimas temos tamsiu spalvos fonu, jei nuotraukos nėra), datos ženklelis, diena ir laikas bei pirmoji aprašymo eilutė. Virš plytelių esantis mygtukas **Subscribe** leidžia lankytojams nukopijuoti kalendoriaus ICS nuorodą arba jį atsisiųsti. Šiam rodymui atsiranda nustatymas **Layout**: **Grid** (numatytasis) arba **Scrolling (automatic)**, kai plytelės išdėstomos vienoje eilėje ir automatiškai slenka.
-4. Norėdami rodyti tik kai kuriuos renginius, įveskite žymą lauke **Only events tagged** – pavyzdžiui, `youth`. Rodomi tik tie renginiai, kurių **Tags** apima šį žodį. Palikite tuščią, kad būtų rodomi visi renginiai. Žymos nustatomos kiekvienam renginiui; žr. [Renginių pridėjimas ir redagavimas](../calendars/creating-calendars.md#adding-and-editing-events).
+1. Skiltyje **Pasirinkti** pasirinkite **Grupės kalendorius** (vienos grupės renginiai -- sąraše rodomos grupės, kurioms priklausote) arba **Kuruotas kalendorius** (kalendorius, kurį sukūrėte skiltyje **Kalendoriai**; žr. [Kuruotas kalendorius](../calendars/curated-calendar.md)).
+2. Skiltyje **Pasirinkti kalendorių** pasirinkite grupę ar kalendorių.
+3. Skiltyje **Rodymas** pasirinkite, kaip jį rodyti:
+   - **Mėnesio kalendorius** -- mėnesio tinklelis, per kurį lankytojai gali naršyti. Kiekvienas renginys nudažomas grupės, kuriai jis priklauso, spalva, todėl grupės renginiai turi tą pačią spalvą kiekviename kalendoriuje. B1 spalvas parenka automatiškai; nieko nereikia konfigūruoti.
+   - **Artėjantys renginiai** -- plytelių tinklelis artimiausiems 12 renginių, o pasikartojantis renginys rodomas vieną kartą su artimiausia data. Kiekvienoje plytelėje rodoma renginio nuotrauka (arba jo pavadinimas jūsų temos tamsiojoje spalvoje, jei nuotraukos nėra), datos ženkliukas, diena ir laikas bei pirmoji aprašymo eilutė. Virš plytelių esantis mygtukas **Prenumeruoti** leidžia lankytojams nukopijuoti kalendoriaus ICS nuorodą arba ją atsisiųsti. Šiam rodiniui atsiranda nustatymas **Išdėstymas**: **Tinklelis** (numatytasis) arba **Slenkama (automatiškai)**, kuris išdėsto plyteles viena eilute, slenkančia savaime (žr. [Slenkami išdėstymai](#scrolling-layouts)). Kuruotam kalendoriui įjunkite nustatymą **Grupės ženkliukas**, kad kiekvienos plytelės viršutiniame dešiniajame kampe būtų rodomas renginio grupės pavadinimas tos grupės kalendoriaus spalva. Renginiai iš archyvuotų ar konfidencialių grupių ženkliuko negauna.
+4. Norėdami rodyti tik kai kuriuos renginius, įveskite žymą laukelyje **Rodyti tik renginius su žyma** -- pavyzdžiui, `youth`. Rodomi tik tie renginiai, kurių **Žymos** apima šį žodį. Palikite tuščią, kad būtų rodomi visi renginiai. Žymos nustatomos kiekvienam renginiui; žr. [Renginių pridėjimas ir redagavimas](../calendars/creating-calendars.md#adding-and-editing-events).
 
-Abiem atvejais spustelėjus renginį atsidaro jo puslapis jūsų svetainėje. Renginio puslapyje rodoma renginio nuotrauka, pavadinimas, data ir laikas bei aprašymas, taip pat langelis su **When** (įskaitant pasikartojimo tvarkaraštį pasikartojančiam renginiui) ir **Where** (renginiui rezervuotos patalpos). Jei įjungta registracija, rodomas mygtukas **Register for this Event**, o nuoroda **Add to my calendar** atsisiunčia renginį kaip kalendoriaus failą. Puslapis sukurtas taip, kad paieškos sistemos galėtų rodyti renginio datą ir informaciją savo rezultatuose. Renginių puslapiai iš jūsų puslapiuose rodomų kuruojamų kalendorių (renginiams artimiausiais šešiais mėnesiais) taip pat įtraukiami į svetainės svetainės žemėlapį (sitemap), kad paieškos sistemos galėtų juos rasti.
+Bet kuriuo atveju, spustelėjus renginį, atsidaro jo puslapis jūsų svetainėje. Renginio puslapyje rodoma renginio nuotrauka, pavadinimas, data ir laikas bei aprašymas, taip pat langelis su **Kada** (įskaitant pasikartojimo šabloną pasikartojančiam renginiui) ir **Kur** (šiam renginiui rezervuoti kambariai). Jei įjungta registracija, rodomas ir mygtukas **Registruotis į šį renginį**, o nuoroda **Pridėti į mano kalendorių** atsisiunčia renginį kaip kalendoriaus failą. Puslapis sukonfigūruotas taip, kad paieškos sistemos galėtų rodyti renginio datą ir informaciją savo rezultatuose. Jūsų puslapiuose rodomų kuruotų kalendorių renginių puslapiai (artimiausių šešių mėnesių renginiams) taip pat įtraukiami į jūsų svetainės žemėlapį, kad paieškos sistemos galėtų juos rasti.
 
-### Turinio perrikiavimas
+### Slenkami išdėstymai {#scrolling-layouts}
 
-Vilkite skyrius ar elementus, naudodami rankenėlės piktogramą (šeši taškai) kiekvieno elemento kairėje, kad pakeistumėte jų tvarką. Elementus galite vilkti skyriaus viduje arba perkelti tarp skyrių.
+**Slenkama (automatiškai)** išdėstymas, skirtas **Grupių naršyklei**, **Grupių sąrašui** ir kalendoriaus elemento rodiniui **Artėjantys renginiai**, plyteles išdėsto viena eilute, o ne tinkleliu. Telefone kiekviena plytelė užpildo eilutę; kompiuteryje telpa dvi plytelės greta. Kai plytelių yra daugiau, nei telpa, eilutė:
+
+- Maždaug kas keturias sekundes pereina į kitą plytelę, o po paskutinės vėl grįžta prie pirmosios.
+- Sustoja, kai lankytojas užveda pelę, paliečia ar pereina į ją klaviatūra (Tab), ir vėl pradeda po kelių sekundžių.
+- Po eilute rodo taškų eilutę, po vieną kiekvienai plytelei, o dabartinės plytelės taškas yra užpildytas. Lankytojai gali spustelėti tašką, kad pereitų prie tos plytelės.
+
+Įrenginiuose, kuriuose įjungtas sumažinto judesio režimas, eilutė nejuda, o lankytojai ją patys perbraukia ar slenka. Jei visos plytelės telpa, eilutė nejuda ir taškai nerodomi.
+
+### Turinio perkėlimas
+
+Vilkite skyrius ar elementus, naudodami rankenėlės piktogramą (šeši taškai) kairėje kiekvieno elemento pusėje, kad pakeistumėte jų tvarką. Galite vilkti elementus skyriaus viduje arba perkelti juos tarp skyrių.
 
 ## Puslapio stilizavimas
 
-### Skyrių stiliai
+### Skyriaus stiliai
 
 Spustelėkite bet kurį skyrių, kad atidarytumėte jo stiliaus skydelį. Galite nustatyti:
 
-- **Background** – vientisa spalva, gradientas ar nuotrauka. Naudojant nuotrauką kaip foną, **Focal Point** parinktis leidžia spustelėti ir nustatyti, kuri nuotraukos dalis lieka centre, kai skyrius keičia dydį. Parinktis **Overlay** leidžia uždėti pusiau permatomą atspalvį ant nuotraukos, kad tekstas būtų geriau įskaitomas.
-- **Padding** – viršutinis ir apatinis tarpas skyriaus viduje
-- **Width** – visas plotis arba centruotas / ribotas plotis
-- **Dividers** – dekoratyvios formos skyriklių (banga, įstrižas, lanko, trikampis ir kt.) skyriaus viršutiniame ar apatiniame krašte, su spalvos, aukščio ir apvertimo parinktimis
+- **Fonas** -- vientisa spalva, gradientas ar nuotrauka. Naudojant nuotraukos foną, **Fokusinis taškas** parinkiklis leidžia spustelėti, kad nustatytumėte, kuri nuotraukos dalis lieka centre skyriui keičiant mastelį, o parinktis **Uždanga** leidžia pridėti pusiau permatomą atspalvį virš nuotraukos, kad tekstas būtų geriau įskaitomas.
+- **Užpildas** -- viršutinis ir apatinis tarpas skyriaus viduje
+- **Plotis** -- visas plotis arba centruotas / ribotas
+- **Atskyrikliai** -- dekoratyvios formos atskyrikliai (banga, įstrižainė, kreivė, trikampis ir kt.) skyriaus viršutiniame ar apatiniame krašte su spalvos, aukščio ir apvertimo parinktimis
 
 ### Elementų stiliai
 
-Spustelėkite bet kurį elementą, kad atidarytumėte jo stiliaus skydelį. Dažniausios parinktys – šrifto dydis, spalva, lygiavimas, paraštės ir vidiniai tarpai. Nuotraukoms galite nustatyti alternatyvųjį tekstą (alt) ir nuorodų tikslus.
+Spustelėkite bet kurį elementą, kad atidarytumėte jo stiliaus skydelį. Įprastos parinktys apima šrifto dydį, spalvą, lygiavimą, paraštes ir užpildą. Nuotraukoms galite nustatyti alternatyvųjį tekstą ir nuorodų paskirties vietas.
 
 ### Pasirinktinis CSS
 
-Pažengusiam stilizavimui kiekvienas skyrius ir elementas turi lauką **Custom CSS**, kuriame galite rašyti savo CSS taisykles. Jos taikomos tik tam elementui, todėl nepaveiks kitų puslapio dalių.
+Pažengusiam stilizavimui kiekvienas skyrius ir elementas turi lauką **Pasirinktinis CSS**, kuriame galite rašyti savo CSS taisykles. Jos taikomos tik tam elementui, todėl jos neturi netyčia paveikti kitų puslapio dalių.
 
 :::tip
-Jei norite taikyti stilius visai svetainei – pavyzdžiui, pasirinktinį šriftą ar bendrą spalvą – naudokite [Appearance](./appearance.md) nustatymus, o ne pasirinktinį CSS atskiruose puslapiuose.
+Jei reikia pritaikyti stilius visai svetainei -- pavyzdžiui, pasirinktinį šriftą ar bendrą spalvą -- naudokite [Išvaizdos](./appearance.md) nustatymus, o ne pasirinktinį CSS atskiruose puslapiuose.
 :::
 
 ## Puslapio peržiūra
 
-Naudokite peržiūros valdiklius įrankių juostoje, kad patikrintumėte, kaip puslapis atrodo skirtingo dydžio ekranuose:
+Naudokite peržiūros valdiklius įrankių juostoje, kad patikrintumėte, kaip puslapis atrodo skirtingų dydžių ekranuose:
 
-- **Desktop** – visas naršyklės plotis
-- **Mobile** – siauras telefono dydžio vaizdas
+- **Kompiuteris** -- visas naršyklės plotis
+- **Mobilusis** -- siauras telefono dydžio vaizdas
 
-Telefonuose stulpeliai eilutėje sustoja vienas po kito visu plotiu, nebent eilutės nustatymuose nustatysite **Mobile Width**. Pamokslų ir podkastų sąrašuose kiekvieno epizodo tekstas telefonuose taip pat rodomas po miniatiūra.
+Telefonuose eilutės stulpeliai sustoja vienas ant kito visu pločiu, nebent eilutės nustatymuose nustatėte jiems **Mobilųjį plotį**. Pamokslų ir podcast sąrašai telefonuose taip pat rodo kiekvieno epizodo tekstą po miniatiūra.
 
-Norėdami pamatyti gyvą puslapį tiksliai taip, kaip jį matys lankytojai, grįžkite į puslapių sąrašą ir spustelėkite puslapio kelią. Jis atsidarys naujame naršyklės skirtuke.
+Norėdami pamatyti tiesioginį puslapį tiksliai taip, kaip jį matys lankytojai, grįžkite į puslapių sąrašą ir spustelėkite puslapio kelią. Jis atsidarys naujame naršyklės skirtuke.
 
 ## Prieinamumo tikrinimas
 
-Spustelėkite **Accessibility** piktogramą įrankių juostoje, kad greitai patikrintumėte dažniausias problemas – nuotraukas be alternatyviojo teksto, prastą spalvų kontrastą ar antraštes netinkamoje eilės tvarkoje. Kiekviena problema tiesiogiai nukreipia į elementą, kurį reikia pataisyti, todėl galite ją ištaisyti vietoje.
+Spustelėkite įrankių juostos **Prieinamumas** piktogramą, kad atliktumėte greitą patikrinimą dėl dažnų problemų -- trūkstamo nuotraukų alternatyviojo teksto, prasto spalvų kontrasto ar neteisingos antraščių eilės. Kiekviena problema tiesiogiai nukreipia į elementą, kurį reikia pataisyti, kad galėtumėte ją ištaisyti vietoje.
 
 ## Pakeitimų atšaukimas
 
-Redaktorius automatiškai seka jūsų redagavimo istoriją. Naudokite įrankių juostos mygtukus arba klaviatūros sparčiuosius klavišus:
+Redaktorius automatiškai seka jūsų redagavimo istoriją. Naudokite įrankių juostos mygtukus arba klaviatūros trumpinius naršymui:
 
-- **Undo** (Ctrl+Z / Cmd+Z) – atšaukti paskutinį veiksmą
-- **Redo** (Ctrl+Shift+Z arba Ctrl+Y / Cmd+Shift+Z) – pakartoti atšauktą veiksmą
+- **Atšaukti** (Ctrl+Z / Cmd+Z) -- grąžina paskutinį jūsų veiksmą
+- **Pakartoti** (Ctrl+Shift+Z arba Ctrl+Y / Cmd+Shift+Z) -- vėl pritaiko atšauktą veiksmą
 
-Taip pat galite atkurti puslapį į ankstesnę būseną. Spustelėkite **View history** įrankių juostoje, kad pamatytumėte išsaugotų momentinių kopijų sąrašą su aprašymais, ir spustelėkite bet kurį įrašą, kad grįžtumėte į tą būseną.
+Taip pat galite atkurti puslapį į ankstesnę momentinę kopiją. Spustelėkite **Peržiūrėti istoriją** įrankių juostoje, kad pamatytumėte išsaugotų momentinių kopijų sąrašą su aprašymais, ir spustelėkite bet kurį įrašą, kad grįžtumėte į tą būseną.
 
 :::warning
-Atkūrus momentinę kopiją, dabartinis puslapio turinys pakeičiamas momentinės kopijos versija. Tai negalima atšaukti standartiniu mygtuku **Undo**. Jei norite išlaikyti galimybę grįžti, prieš atkurdami seną versiją išsaugokite dabartinės būsenos momentinę kopiją.
+Momentinės kopijos atkūrimas pakeičia dabartinį puslapio turinį momentinės kopijos versija. Tai negalima atšaukti įprastu atšaukimo mygtuku. Jei norite išlaikyti galimybę grįžti, prieš atkurdami seną momentinę kopiją išsaugokite dabartinės būsenos momentinę kopiją.
 :::
 
 ## Išsaugojimas ir publikavimas
 
-Pakeitimai išsaugomi automatiškai, kai dirbate. Būsenos indikatorius įrankių juostoje rodo, ar jūsų pakeitimai išsaugoti.
+Pakeitimai išsaugomi automatiškai, kai dirbate. Įrankių juostoje esantis būsenos indikatorius rodo, ar jūsų pakeitimai išsaugoti.
 
 ### Juodraščio ir publikuotos būsenos
 
-Puslapiai gali būti **published** (publikuoti) būsenos, kuri nusako, kada lankytojai mato jūsų pakeitimus. Įrankių juostoje rodomas būsenos žymeklis:
+Puslapiai gali turėti **publikuotą** būseną, kuri nustato, kada lankytojai mato jūsų pakeitimus. Įrankių juostoje rodomas būsenos žymeklis su dabartine būsena:
 
-- **Live on save** – puslapis nenaudoja publikavimo eigos. Kiekvienas išsaugotas pakeitimas iš karto tampa matomas svetainėje. Tai numatytasis nustatymas naujiems puslapiams.
-- **Unpublished changes** – puslapis jau buvo publikuotas anksčiau, bet nuo paskutinio publikavimo padarėte pakeitimų. Lankytojai dar mato ankstesnę publikuotą versiją.
-- **Published** – puslapis yra gyvas, o jūsų išsaugotas turinys sutampa su tuo, ką mato lankytojai.
+- **Gyvai išsaugojus** -- puslapis nenaudoja publikavimo eigos. Kiekvienas išsaugotas pakeitimas iš karto tampa matomas. Tai numatytasis nustatymas naujiems puslapiams.
+- **Nepublikuoti pakeitimai** -- puslapis jau buvo publikuotas anksčiau, bet nuo paskutinio publikavimo padarėte pakeitimų. Lankytojai vis dar mato anksčiau publikuotą versiją.
+- **Publikuota** -- puslapis yra gyvas, o jūsų išsaugotas turinys atitinka tai, ką mato lankytojai.
 
-Norėdami publikuoti pakeitimus, spustelėkite mygtuką **Publish** įrankių juostoje. Puslapis iš karto tampa gyvas.
+Norėdami publikuoti pakeitimus, spustelėkite mygtuką **Publikuoti** įrankių juostoje. Puslapis iš karto tampa matomas.
 
-Norėdami grįžti prie paskutinės publikuotos versijos, nepaveikdami to, ką mato lankytojai, atidarykite papildomą meniu (⋮) ir spustelėkite **Discard unpublished changes**.
+Norėdami grįžti prie paskutinės publikuotos versijos, neveikiant to, ką mato lankytojai, atidarykite papildomą meniu (⋮) ir spustelėkite **Atmesti nepublikuotus pakeitimus**.
 
-Norėdami nebenaudoti publikavimo eigos, atidarykite papildomą meniu ir spustelėkite **Turn off publishing**. Tada redagavimai vėl iš karto tampa gyvi.
+Norėdami nebenaudoti publikavimo eigos, atidarykite papildomą meniu ir spustelėkite **Išjungti publikavimą**. Tada redagavimai vėl iš karto tampa matomi.
 
 :::tip
-Naudokite juodraščio / publikavimo eigą, kai norite paruošti puslapį – pavyzdžiui, artėjančiam renginiui – ir padaryti jį gyvą tinkamu momentu. Sukurkite ir peržiūrėkite puslapį, o kai būsite pasiruošę, spustelėkite Publish.
+Naudokite juodraščio / publikavimo eigą, kai norite paruošti puslapį -- pavyzdžiui, artėjančiam renginiui -- ir padaryti jį matomą tinkamu momentu. Sukurkite ir peržiūrėkite puslapį, tada, kai būsite pasiruošę, spustelėkite Publikuoti.
 :::
 
 ## Susiję straipsniai
 
-- [Puslapių valdymas](./managing-pages.md) – kurkite puslapius, nustatykite URL ir tvarkykite svetainės navigaciją
-- [Appearance](./appearance.md) – nustatykite visos svetainės spalvas, šriftus ir prekinį ženklą
-- [Failai](./files.md) – įkelkite nuotraukas ir dokumentus, kuriuos norite naudoti redaktoriuje
-- [Formų kūrimas](../forms/creating-forms.md) – kurkite formas, kurias galite įterpti į puslapius
+- [Puslapių tvarkymas](./managing-pages.md) -- kurkite puslapius, nustatykite URL ir tvarkykite svetainės navigaciją
+- [Išvaizda](./appearance.md) -- nustatykite visos svetainės spalvas, šriftus ir prekės ženklą
+- [Failai](./files.md) -- įkelkite nuotraukas ir dokumentus, kad galėtumėte naudoti redaktoriuje
+- [Formų kūrimas](../forms/creating-forms.md) -- kurkite formas, kurias galite įterpti į puslapius

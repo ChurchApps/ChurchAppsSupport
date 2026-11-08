@@ -1,20 +1,20 @@
 ---
-title: "Configurando Salas de Aula"
-description: "Crie, renomeie e remova salas no portal do Lessons.church para que cada sala ou faixa etária esteja pronta para o agendamento semanal de lições."
+title: "Configurar as Salas de Aula"
+description: "Crie, renomeie e remova salas de aula no portal do Lessons.church para que cada sala ou faixa etária esteja pronta para o agendamento semanal de lições."
 ---
 
-# Configurando Salas de Aula
+# Configurar as Salas de Aula
 
 <div class="article-intro">
 
-Antes de poder agendar lições, você precisa criar salas de aula que representem seus ambientes de ensino. Este guia orienta você na criação, nomeação e gerenciamento de salas de aula no portal do Lessons.church.
+Antes de agendar as lições, você precisa criar as salas de aula que representam os seus ambientes de ensino. Este guia mostra como criar, nomear e gerenciar salas de aula no portal do Lessons.church.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- [Crie uma conta](../getting-started/creating-account.md) e conecte-se à sua igreja
+- [Crie uma conta](../getting-started/creating-account.md) e conecte-a à sua igreja
 - Familiarize-se com a [Visão Geral do Portal](../getting-started/portal-overview.md)
 
 </div>
@@ -22,29 +22,29 @@ Antes de poder agendar lições, você precisa criar salas de aula que represent
 ## Criando uma Sala de Aula
 
 1. Faça login na sua conta em [Lessons.church](https://lessons.church).
-2. Navegue até seu **Portal**. Este é o hub central da sua igreja para gerenciar salas de aula e cronogramas.
-3. Clique em **Adicionar Sala de Aula**.
-4. Insira um nome para sua sala de aula. Escolha algo descritivo que seus voluntários reconhecerão -- por exemplo, "Pré-escolar", "Fundamental 1-2" ou "Ensino Médio".
-5. Salve sua nova sala de aula. Ela aparecerá no painel do portal imediatamente.
+2. Acesse o seu **Portal**. Este é o centro da sua igreja para o gerenciamento de salas de aula e cronogramas.
+3. No quadro **Classrooms**, clique em **Add**. Se você ainda não tiver nenhuma sala de aula, clique em **Add First Classroom**.
+4. Digite um **Classroom Name**. Escolha um nome descritivo, que seus voluntários reconheçam -- por exemplo, "Pré-escola", "Fundamental I (1º ao 3º ano)" ou "Ensino Médio".
+5. Clique em **Save**. A nova sala de aula aparecerá imediatamente na lista **Classrooms**.
 
-Repita esses passos para cada sala ou faixa etária na sua igreja. Você pode criar quantas salas de aula precisar.
+Repita estes passos para cada sala ou faixa etária da sua igreja. Você pode criar quantas salas de aula forem necessárias.
 
-## Configuração Inicial
+## Primeira Configuração
 
-Se você ainda não configurou nenhuma sala de aula, seu portal exibirá um vídeo de configuração para guiá-lo pelo processo. Este vídeo abrange os conceitos básicos de criação de salas de aula e agendamento das suas primeiras lições. É um ótimo ponto de partida se você é novo no Lessons.church.
+Se você ainda não configurou nenhuma sala de aula, o seu portal exibirá um vídeo de configuração para orientá-lo no processo. Este vídeo explica o básico sobre como criar salas de aula e agendar as primeiras lições. É um ótimo ponto de partida se você está começando no Lessons.church.
 
 :::tip
-Nomeie suas salas de aula de acordo com a forma como seus voluntários já pensam sobre suas salas. Se todos chamam de "sala do pré", nomeie como "Pré" em vez de algo formal como "Sala de Educação Infantil 101".
+Dê às suas salas de aula nomes que correspondam à forma como seus voluntários já se referem a elas. Se todos chamam de "a sala do Maternal", use esse nome em vez de algo formal como "Sala 101 de Educação Infantil".
 :::
 
-## Gerenciando Salas de Aula
+## Gerenciando as Salas de Aula
 
-Suas salas de aula aparecem no painel do portal onde você pode gerenciá-las a qualquer momento. A partir daqui, você pode:
+As suas salas de aula aparecem no painel do portal, onde você pode gerenciá-las a qualquer momento. A partir daí, você pode:
 
-- **Renomear uma sala de aula** -- Atualize o nome se suas salas ou faixas etárias mudarem.
-- **Remover uma sala de aula** -- Exclua salas de aula que você não precisa mais.
-- **Visualizar o cronograma** -- Clique em qualquer sala de aula para ver o cronograma de lições.
+- **Renomear uma sala de aula** -- Clique no ícone **Edit classroom** (lápis) ao lado dela, altere o **Classroom Name** e clique em **Save**.
+- **Remover uma sala de aula** -- Clique em **Edit classroom** e, em seguida, no ícone **Delete classroom** (lixeira) e confirme.
+- **Ver o cronograma** -- Clique em qualquer sala de aula para ver o seu cronograma de lições.
 
-## O Que Vem a Seguir
+## Próximos Passos
 
-Uma vez que suas salas de aula estejam configuradas, você está pronto para começar a [agendar lições](./scheduling-lessons.md) para que seus voluntários saibam o que ensinar a cada semana.
+Depois de configurar as suas salas de aula, você estará pronto para começar a [agendar as lições](./scheduling-lessons.md), para que seus voluntários saibam o que ensinar a cada semana.

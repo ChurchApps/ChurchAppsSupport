@@ -1,61 +1,73 @@
 ---
-title: "Kuzingena Yodvwa ku-Portal Yelilungu le-B1.church"
-sidebar_label: "Kungena Wedvwa"
-description: "Zingena wena nemndeni wakho ekusebenteni kusuka ku-portal yelilungu le-B1.church, ukhetse sikhatsi sesevisi namaqembu ngetinyatselo letimbalwa letisheshako."
+title: "Kuzibhalisa Ekufikeni Ngalokwakho Ekhasini Lamalungu le-B1.church"
+sidebar_label: "Kuzibhalisa Ngalokwakho"
+description: "Zibhalise wena nemndeni wakho ekuhambeni kwenkhonzo ngekusebentisa ikhasi lelilungu le-B1.church, ukhetsa tikhatsi temkhonzo netiqembu ngetinyatselo letimbalwa letisheshako."
 ---
 
-# Kungena Wedvwa
+# Kuzibhalisa Ngalokwakho
 
 <div class="article-intro">
 
-Inchubo yekutingenisa wedvwa ikuvumela kutsi ubhalise kubakhona kwakho nekwelikhaya lakho ngetinyatselo letimbalwa nje. Yindlela lesheshako yekusebentisa esikhundleni se-kiosk lebonakalako elibandleni.
+Inkambu yekuzibhalisa ekufikeni ikuvumela kutsi ubhalise kufika kwakho nemndeni wakho ngetinyatselo letimbalwa nje. Iyindlela lesheshako yekusebentisa ikhiyosiki lelikhona esontweni.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Kufanele ube [ungenile](../getting-started/logging-in.md) ku-akhawunti yakho ye-B1.church.
-- Emalunga elikhaya lakho kufanele axhunyaniswe ne-akhawunti yakho. Nangabe kunelilunga lemndeni lelingekho, cela umphatsi welibandla lakho kutsi alengete elikhaya lakho.
+- Kufanele ube [ungenele](../getting-started/logging-in.md) ku-akhawunti yakho ye-B1.church.
+- Emalungu emndeni wakho kufanele abe ahlanganiswe ne-akhawunti yakho. Uma lilungu lemndeni lingekho, cela umphathi wesonto akufake emndenini wakho.
 
 </div>
 
-## Inchubo Yekungena
+## Indlela Yekubhalisa
 
-Kungena kulandzela inchubo lelula yetinyatselo letintsatfu. Yendzela ku-tab ye-**Kungena** ku-[sidebar](../getting-started/navigating.md) kuze ucale.
+Kubhalisa kulandzela inkhinyeto lelula lenetinyatselo letintsatfu. Vula **Kubhalisa** kusuka ku-[ibha yetabhu noma likhasi Lokunye](../getting-started/navigating.md) kuze uqale.
 
-### Nyatselo 1: Khetsa Umsebenti
+### Inyatselo 1: Khetsa Inkhonzo
 
-Nawuvula likhasi lekungena, utawubona luhlu lwemisebenti lekhona (sibonelo, "Sonto Ekuseni" kumbe "Lesine Ntsambama"). Ikhadi ngalinye lemsebenti likhombisa ligama lemsebenti kanye nekhampasi nangabe libandla lakho linetindzawo letinyenti.
+Lapho uvula likhasi lekubhalisa, uyawubona lutfutfu lwetinkhonzo letitfolakalako (njengo "Sekuseni NgeliSonto" noma "Kusihlwa NgeLitfupha"). Ikhadi ngalinye lenkhonzo likhombisa ligama lenkhonzo nendzawo, uma sonto lakho linetindzawo letimbalwa.
 
-Cindzetela emsebentini kuze uwukhetse bese uya enyatselweni lelandzelako.
+Thepha inkhonzo ukuze uyikhetse uye kulinyatselo lelilandzelako.
 
-### Nyatselo 2: Khetsa Emalunga Elikhaya Nemacembu
+### Inyatselo 2: Khetsa Emalungu Emndeni Netiqembu
 
-Ngemuva kwekukhetsa umsebenti, utawubona luhlu lwemalunga elikhaya lakho. Kumuntfu ngamunye lotakhona:
+Nakhetsa inkhonzo, uyawubona emalungu emndeni wakho ngaphansi kwesihloko **Ukhona ubani?** Kulowo nalowo lotawuba khona:
 
-1. Cindzetela lilunga lelikhaya kuze wandzise umbhalo walo.
-2. Utawubona **tikhatsi temsebenti** letikhona temsebenti lowukhetsile.
-3. Cindzetela **Khetsa Licembu** eceleni kwesikhatsi semsebenti kuze ukhetse kutsi ngumuphi licembu lelifanele lomuntfu angeniswe kulo (njengalokungaba "Kukhonta Lokukhulu," "Ligumbi Lebantfwana 1," kumbe "Licembu Lebasha").
-4. Phindza loku kulo lonkhe lilunga lelikhaya lelitakhona.
+1. Thepha lilungu lemndeni ukuze uvule lifomu lalo.
+2. Uyawubona **tikhatsi temkhonzo** letitfolakalako lenkhonzo lokhetsile. Uma sonto lakho sewusetelele inkhinyeto yekubhalisa ngetikhatsi temkhonzo, ungakhetsa sikhatsi kuphela uma kubhalisa kwaso sekuvulekile (njengekusukela emaminithini langu-30 ngaphambi kwenkhonzo kuze kube sikhashana ngemuva kwekuphela kwayo). Ngaphandle kwaleso sikhatsi, tikhatsi temkhonzo tibhalwa njengo **Kuvaliwe**, nalapho sitawuvulwa khona uma sati, njengo **Kuvaliwe · kuvulwa Lisontfo 9:30 AM**.
+3. Thepha **Khetsa Liqembu** eceleni kwesikhatsi temkhonzo ukuze ukhetse liqembu lelilungelwe kubhalisa lelilungu (njengo "Kukhulekela Lenkhulu," "Ligumbi Lebantfwana 1," noma "Liqembu Lebusha").
+4. Phindza lesinyatselo kulelilungu ngalinye lemndeni lolokhona.
 
-Akudzingeki kutsi ungenise wonkhe malunga elikhaya -- vula futsi wabele emacembu kubantfu labakhona ngempela.
+Awudzingi kubhalisa wonkhe emalungu emndeni wakho -- hlola kuphela futsi ukhetse emaqembu alabo labakhona ngempela.
 
-### Nyatselo 3: Kucinisekisa
+Umuntfu lowabhalisa kale kule nkhonzo namuhla uyawubonakala nelibheji **Sekubhalisiwe Kale** ngaseceleni kwegama lakhe.
 
-Nasewukhetsile emacembu kubo bonkhe labatakhona, cindzetela inkhinobho **Cedza Kungena** ngentasi kwelikhasi.
+### Inyatselo 3: Kuqedza Kubhalisa
 
-Utawubona sikrini sekucinisekisa lesinemlayeto lotsi "Kungena Kuphelele!" kanye nendzaba yekutsi kubakhona kwakho kugcinwe. Cindzetela **Buyela Kulikhasi Lami** kuze ubuyele ku-[timeline](../community/timeline.md).
+Nasewukhetse emaqembu wonkhe labakhonako, thepha inkinobho lesengaphansi kwelikhasi. Iyabala bantfu labakhetsile, njengo **Bhalisa umuntfu 1** noma **Bhalisa bantfu 3**.
+
+Uma umuntfu lowakhetsile sewubhalisiwe kule nkhonzo namuhla, lifasitele **Sekubhalisiwe Kale** litawubhala emagama abo kucala. Thepha **Bhalisa Futsi** ukuze uvuselele emaqembu abo, noma **Khansela** ukuze ubuyele emuva.
+
+Uyawubona sitfuniso sekutsi kubhalisa kwakho sekuphelile nekutsi kufika kwakho sekugcinwe. Emahora lamancane kamuva likhasi liyabuyela kulutfutfu lwetinkhonzo, lilungele kubhalisa lokulandzelako.
+
+Uma sonto lakho linetibhajhi tebantfu esiteshini sekubhalisa, uyawubona **Ubhalisiwe!** nelikhodi ye-QR nekhodi yekuvikela. Kukhombise likhodi esiteshini sekubhalisa kuze kuphrintwe tibhajhi takho tetigama, bese uthepha **Kwenziwe**. Ku-kiyosiki ye-B1 Checkin, thepha **Skena likhodi** uphakamise likhodi ye-QR ekhamera -- bona [Kuphrinta Tilebula Ekubhalisweni Ngefoni](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+
+Uma umndeni wakho sewubhalisiwe kunkhonzo okhetsile, ilinki **Khombisa likhodi yekubhalisa** iyavela eceleni kwesihloko **Ukhona ubani?** Thepha ukuze ubuyisele likhodi ye-QR nekhodi yekuvikela -- njengalapho uvale likhasi ngaphambi kwekufika esiteshini sekubhalisa.
 
 :::tip
-Nangabe udzinga kuguculula lekukhetsa kwelicembu ngaphambi kwekucedza kungena, cindzetela inkhinobho **Guculula** eceleni kwanoma nguyiphi sikhatsi semsebenti kuze ukhetse lelinye licembu.
+Uma ufuna kushintsha ikhetho leliqembu ngaphambi kwekuqedza kubhalisa, thepha inkinobho **Shintsha** eceleni kwanoma iyiphi ikhatsi temkhonzo ukuze ukhetse liqembu lelehlukile.
 :::
 
-## Tintfo Lekufanele Utati
+## Lokufanele Ukwati
 
-- Ungangenisa kuphela emalunga elikhaya laxhunyaniswe ne-akhawunti yakho. Nangabe kunelilunga lemndeni lelingekho, cela umphatsi welibandla lakho kutsi alengete elikhaya lakho.
-- Nangabe kute imisebenti lebonakala ekhasini lekungena, kungenteka libandla lakho lingakabi nayo imisebenti lehleliwe yekungena ngalesikhatsi.
+- Ungabhalisa kuphela emalungu emndeni lahlanganiswe ne-akhawunti yakho. Uma lilungu lemndeni lingekho, cela umphathi wesonto akufake emndenini wakho.
+- Uma likhasi lekubhalisa lingakavelisi tinkhonzo, sonto lakho lingase lingabi natinkhonzo letilungiselelwe kubhalisa.
+- Uma ukhetsa inkhonzo bese ubona umlayeto lofana nalo "Kubhalisa kuvulwa Lisontfo 9:30 AM." (noma "Kubhalisa akuvulekile kule nkhonzo njengamanje."), akukho tikhatsi talenkhonzo letisesikhatsini sekubhalisa njengamanje. Zama futsi nakuvulwa kubhalisa.
+- Uma umndeni wakho ubhalisile ngesikhatsi sangaphambili senkhonzo, ungabuya ubhalise ngesikhatsi lesilandzelako nakuvulwa, noma sangaphambili sesiphelile.
+- Uma ligumbi lolikhethile ligcwele noma livaliwe, uyawubona: "Ligumbi lolikhethile ligcwele noma livaliwe kubhalisa. Sicela ubone umsebenti."
+- Uma lamagumbi ebantfwana angenabasebenti abanele kubhalisa lomunye umntfwana, uyawubona umlayeto lobita ligumbi, njengo "Ligumbi Lebantfwana 1 alinabasebenti abanele kubhalisa lomunye umntfwana njengamanje. Sicela ukhetse ligumbi lelehlukile noma ubone umsebenti."
 
 :::warning
-Kungena kutfolakala kuphela nangabe libandla lakho line-misebenti lesebentako lehleliwe. Nangabe ungaboni imisebenti lekhona, tsindzeza ehhovisi lelibandla kuze ucinisekise kutsi kungena wedvwa kuvuliwe yini.
+Kubhalisa kutfolakala kuphela uma sonto lakho linetinkhonzo letisebentako letilungiselelwe. Uma ungaboni tinkhonzo letilulwe, hlola nehhovisi lesonto kutsi kuvulekile yini kuzibhalisa ngalokwakho.
 :::

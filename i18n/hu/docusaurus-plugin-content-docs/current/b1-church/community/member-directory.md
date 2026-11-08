@@ -1,48 +1,50 @@
 ---
 title: "Tagjegyzék a B1.church tagi portálon"
-sidebar_label: "Tagok névjegyzéke"
-description: "Keressen és böngésszen a B1.church tagjegyzékében, tekintse meg tagok profiljait és háztartási tagjait, és nézze meg, kik férhetnek hozzá a jegyzékhez."
+sidebar_label: "Tagjegyzék"
+description: "Keressen és böngésszen a gyülekezeti tagok között a B1.church jegyzékben, tekintse meg profiljukat és háztartási tagjaikat, és lássa, ki férhet hozzá a jegyzékhez."
 ---
 
-# Tagok névjegyzéke
+# Tagjegyzék
 
 <div class="article-intro">
 
-A tagok névjegyzéke lehetővé teszi, hogy böngésszen és keressen a gyülekezete tagjai között. Akár egy csoporttag adatait keresi, akár új embereket szeretne megismerni, a névjegyzék segítségével könnyen kapcsolatba léphet gyülekezeti családjával.
+A tagjegyzékben böngészhet és kereshet a gyülekezete tagjai között. Akár egy csoporttársát keresi, akár új embert szeretne megismerni, a jegyzék segít, hogy kapcsolatba léphessen gyülekezeti családjával.
 
 </div>
 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Be kell jelentkeznie [a B1.church-fiókjába](../getting-started/logging-in.md).
-- A névjegyzéket megnyithatja, az a gyülekezete **Megjelenítés a névjegyzékben** beállításától függ: **Csak adminisztrátorok**, **Tagok és feljebb** (alapértelmezett), **Rendszeres látogatók és feljebb** vagy **Vendégek és feljebb**. Aki ennél alacsonyabb szinten van, a „Csak tagoknak” üzenetet látja. A **Személyek > Megtekintés** jogosultsággal rendelkező munkatársak mindig megnyithatják, a **Csak adminisztrátorok** beállítás mellett pedig csak ők – még azok sem, akiknek munkatársi tagsági státuszuk van. Vendég vagy inaktív státuszú személyek soha nem nyithatják meg. Lásd: [Tagok névjegyzéke és üzenetküldési beállítások](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
+- Be kell jelentkeznie a [B1.church fiókjába](../getting-started/logging-in.md).
+- Hogy ki nyithatja meg a jegyzéket, a gyülekezete **Megjelenítés a jegyzékben** beállításától függ: **Csak adminisztrátorok**, **Tagok és feljebb** (alapértelmezett), **Rendszeres látogatók és feljebb** vagy **Vendégek és feljebb**. Aki ezen a szinten alul van, „Csak tagoknak” üzenetet lát. Az **Emberek > Megtekintés** jogosultsággal rendelkező munkatársak mindig megnyithatják, a **Csak adminisztrátorok** beállítás mellett pedig csak ők – még akkor is, ha munkatárs tagsági állapotúak sem férhetnek hozzá. Vendég vagy inaktív állapotú személyek soha nem nyithatják meg. Lásd: [Tagjegyzék és üzenetküldési beállítások](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
-## A névjegyzék megnyitása
+## A jegyzék megnyitása
 
-1. Koppintson a **Közösség** elemre a [navigációs sávban vagy a További oldalon](../getting-started/navigating.md) (gyülekezete ettől eltérő nevet is adhatott neki).
-2. A **Névjegyzék** megnyílik, megjelenítve a személyek számát és a látható gyülekezeti tagok teljes listáját.
+1. Koppintson a **Közösség** elemre a [tálcán vagy a Továbbiak oldalon](../getting-started/navigating.md) (gyülekezete ezt másként is nevezheti).
+2. A **Jegyzék** megnyílik, megjelenítve a látható személyek számát és a gyülekezeti tagok teljes listáját.
 
 ## Tagok keresése
 
-Írjon be egy nevet a lista tetején lévő **Tagok keresése** mezőbe. A lista gépelés közben szűrődik, és minden névben a találatnak megfelelő rész kiemelődik. Törölje a mező tartalmát, hogy újra a teljes névjegyzéket lássa.
+Írjon be egy nevet a lista tetején lévő **Tagok keresése** mezőbe. A lista a gépelés közben szűkül, és minden névnek az egyező része kiemelésre kerül. A teljes jegyzék újbóli megtekintéséhez törölje a mező tartalmát.
 
-## Böngészés a névjegyzékben
+## Böngészés a jegyzékben
 
-A tagok betűjelű fejlécek alá vannak csoportosítva (A, B, C stb.) a keresztnevük kezdőbetűje szerint, és minden betűn belül vezetéknév szerint vannak rendezve. Minden bejegyzés mutatja a tag fényképét, megjelenített nevét és tagsági státuszát, így könnyen átnézhető a lista.
+A tagok betűjelek alatt csoportosulnak (A, B, C stb.) a keresztnevük kezdőbetűje szerint, és minden betűn belül vezetéknév szerint vannak rendezve. Minden bejegyzés megmutatja a tag fényképét, megjelenítendő nevét és tagsági állapotát, így a lista könnyen áttekinthető.
 
 ## Tagprofil megtekintése
 
-Koppintson bármelyik tagra a listában a profiljának megnyitásához. A profil mutatja a tag nevét, fényképét és tagsági státuszát, valamint gombokat az **Üzenet** küldéséhez, a **Hívás** kezdeményezéséhez vagy egy **SMS** küldéséhez, ha ezek az adatok elérhetők. Ez alatt az **Elérhetőség** szakasz mutatja azokat az adatokat, amelyeket a gyülekezet és a tag megosztani választott, például e-mail-címet, telefonszámot és lakcímet, a **Háztartás tagjai** pedig felsorolja a háztartásban élő többi személyt.
+Koppintson a lista bármely tagjára profiljának megnyitásához. A profil megmutatja a tag nevét, fényképét és tagsági állapotát, valamint gombokat a **Üzenet**, a **Hívás** vagy – ha az adat rendelkezésre áll – a **SMS** küldéséhez. Ez alatt a **Elérhetőségek** szakasz mutatja azokat az adatokat, amelyeket a gyülekezet és a tag megosztani döntött, például e-mail-cím, telefonszám és lakcím, a **Háztartási tagok** pedig felsorolja a háztartás többi tagját.
 
-A profilon belül a háztartás tagjaira koppintva azok profiljára is eljuthat. Saját profilján a **Profil szerkesztése** gomb a [Profil szerkesztése](../getting-started/editing-your-profile.md) oldalra visz.
+Az **Üzenet** privát beszélgetést nyit meg az adott személlyel. A szöveget félkövérré vagy dőltté teheti, illetve listát adhat hozzá úgy, hogy kijelöli, majd a megjelenő eszköztárat használja – ugyanúgy, mint a [csoportos csevegésben](../groups/conversations.md#formatting-your-message).
+
+A profilon belül a háztartási tagok koppintásával szintén az ő profiljukra navigálhat. Saját profilján az **Profil szerkesztése** gomb a [Profil szerkesztése](../getting-started/editing-your-profile.md) oldalra visz.
 
 :::info
-Az egyes profilokon látható információk a gyülekezete adatvédelmi és névjegyzéki beállításaitól függenek. Nem minden mező jelenik meg minden tagnál.
+Az egyes profilokban látható információk gyülekezete adatvédelmi és jegyzékbeállításaitól függnek. Nem minden mező jelenik meg minden tag esetén.
 :::
 
 :::info
-A gyülekezete [privát üzenetekhez szükséges minimális életkora](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) alatti tagok továbbra is láthatók a névjegyzékben, de a privát üzenet küldésének lehetősége nem elérhető.
+A gyülekezete [privát üzenetek minimális életkorán](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) aluli tagok továbbra is láthatók a jegyzékben, de számukra nem érhető el a privát üzenet küldésének lehetősége.
 :::

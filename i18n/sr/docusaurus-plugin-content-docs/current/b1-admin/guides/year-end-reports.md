@@ -1,94 +1,94 @@
 ---
-title: "Водич: Генерисање годишњих извештаја о давању"
-description: "У B1 Admin завршите годишње евиденције донација, проверите пореске поставке фондова и направите изводе за порески одбитак за све донаторе."
+title: "Vodič: Generisanje godišnjih izveštaja o donacijama"
+description: "U B1 Admin-u završite evidenciju donacija za godinu, proverite poreska podešavanja fondova i generišite potvrde o donacijama za poreski odbitak za svakog donatora."
 ---
 
-# Генерисање годишњих извештаја о давању
+# Generisanje godišnjih izveštaja o donacijama
 
 <div class="article-intro">
 
-Прођите кроз годишњи процес завршавања евиденције о донацијама, провере подешавања фондова и генерисања извештаја о донацијама који се могу одбити од пореза за сваког донатора. Ово се обично ради почетком јануара за претходну календарску годину.
+Prođite kroz godišnji proces finalizovanja evidencije donacija, proveravanja podešavanja fondova i generisanja potvrda o donacijama za poreski odbitak za svakog donatora. Ovo se obično radi početkom januara za prethodnu kalendarsku godinu.
 
 </div>
 
 <div class="prereqs">
-<h4>Пре почетка</h4>
+<h4>Pre nego što počnete</h4>
 
-- B1 Admin налог са финансијским приступом
-- Донације евидентиране током године (онлајн преко Stripe-а и/или ручно унете)
-- Приступ вашем Stripe налогу ако прихватате онлајн донације
+- Nalog B1 Admin sa finansijskim pristupom
+- Donacije evidentirane tokom godine (onlajn preko Stripe-a i/ili ručno unete)
+- Pristup vašem Stripe nalogu ako primate onlajn donacije
 
 </div>
 
-## Корак 1: Увоз финалних Stripe трансакција
+## Korak 1: Uvezite poslednje Stripe transakcije
 
-Уверите се да су све онлајн донације са краја године у вашем систему.
+Proverite da su sve onlajn donacije sa kraja godine u vašem sistemu.
 
-Пратите водич [Stripe увоз](../donations/stripe-import.md) да:
+Pratite vodič [Stripe uvoz](../donations/stripe-import.md) da biste:
 
-1. Идете на Донације > Stripe увоз
-2. Изаберете временски опсег који обухвата крај године (нпр. 1. децембар – 31. децембар)
-3. Кликнете на Преглед да прегледате, па на Увези недостајуће да финализујете
+1. Otišli na Donations > Stripe Import
+2. Izabrali period koji pokriva kraj godine (npr. 1. decembar – 31. decembar)
+3. Kliknuli na Preview da pregledate, a zatim na Import Missing da završite uvoz
 
 :::warning
-Покрените овај увоз пре генерисања извештаја. Све трансакције које не увезете неће се појавити у извештајима донатора.
+Pokrenite ovaj uvoz pre generisanja potvrda. Transakcije koje niste uvezli neće se pojaviti na potvrdama donatora.
 :::
 
-## Корак 2: Прегледајте извештаје о донацијама
+## Korak 2: Pregledajte izveštaje o donacijama
 
-Проверите да су ваши подаци тачни пре генерисања извештаја.
+Proverite da su vaši podaci tačni pre generisanja potvrda.
 
-Пратите водич [Извештаји о донацијама](../donations/donation-reports.md) да:
+Pratite vodič [Izveštaji o donacijama](../donations/donation-reports.md) da biste:
 
-1. Проверите преглед донација за целу годину
-2. Прегледајте укупне износе по фонду и упоредите их са банковним изводима да бисте уочили неслагања
-3. Ако је потребно, кликните на појединачне серије да проверите детаље по донатору
+1. Proverili stranicu sa pregledom donacija za celu godinu
+2. Pregledali ukupne iznose po fondu i uporedili ih sa izvodima iz banke kako biste uočili eventualna odstupanja
+3. Po potrebi kliknuli na pojedinačne serije (batches) da proverite podatke o donacijama po donatorima
 
-## Корак 3: Проверите порески статус фондова
+## Korak 3: Proverite poreski status fondova
 
-Уверите се да је порески одбитни подешај сваког фонда исправан како би извештаји били тачни.
+Uverite se da je poreska podešenost svakog fonda ispravna kako bi potvrde bile tačne.
 
-Пратите водич [Фондови](../donations/funds.md) да:
+Pratite vodič [Fondovi](../donations/funds.md) da biste:
 
-1. Отворите сваки фонд и потврдите да је подешавање пореског одбитка исправно
+1. Otvorili svaki fond i potvrdili da je podešavanje poreskog odbitka ispravno
 
 :::info
-На изводима о давању појавиће се само донације фондовима označenim kao porески одбитни. Ако фонд треба да буде порески одбитан, а није тако обележен, ажурирајте га пре генерисања извештаја.
+Na potvrdama o donacijama pojaviće se samo donacije namenjene fondovima označenim kao poreski odbitni. Ako fond treba da bude poreski odbitan, a nije tako označen, ažurirajte ga pre generisanja potvrda.
 :::
 
-## Корак 4: Генеришите изводе о давању
+## Korak 4: Generišite potvrde o donacijama
 
-Направите званичне изводе о давању за своје донаторе.
+Kreirajte zvanične potvrde o donacijama za svoje donatore.
 
-Пратите водич [Изводи о давању](../donations/giving-statements.md) да:
+Pratite vodič [Potvrde o donacijama](../donations/giving-statements.md) da biste:
 
-1. Идете на **Донације > Изводи о давању**
-2. Изаберите годину из падајућег менија и прегледајте сумарну статистику
-3. Изаберите начин преузимања:
-   - **Преузми ZIP** — појединачне CSV датотеке, по једна за сваког донатора
-   - **Штампај све** — приказ за штампу са сваким изводом на новој страни, са логотипом ваше цркве на врху (ако сте га отпремили)
+1. Otišli na **Donations > Giving Statements**
+2. Izabrali godinu iz padajućeg menija i pregledali sumarne statistike
+3. Izabrali način preuzimanja:
+   - **Download ZIP** — pojedinačne CSV datoteke, jedna po donatoru
+   - **Print All** — prikaz za štampu sa svakom potvrdom na novoj strani, uz logo vaše crkve na vrhu (ako ste ga otpremili)
 
 :::tip
-Генеришите изводе рано у јануару док су евиденције свеже. Тако имате времена да уочите проблеме пре слања.
+Generišite potvrde početkom januara dok su podaci sveži. Tako imate vremena da otklonite eventualne probleme pre slanja.
 :::
 
-## Корак 5: Доставите донаторима
+## Korak 5: Dostavite donatorima
 
-Доставите изводе вашим донаторима.
+Obezbedite da potvrde stignu do vaših donatora.
 
-1. Одштампајте и пошаљите изводе поштом или пошаљите појединачне CSV датотеке имејлом донаторима
-2. Чланови могу и сами да прегледају своју историју давања и штампају изводе преко [B1.church](../../b1-church/giving/donation-history.md) и [B1 мобилне апликације](../../b1-church/giving/donation-history.md)
+1. Odštampajte i pošaljite potvrde poštom ili pojedinačne CSV datoteke pošaljite donatorima e-poštom
+2. Članovi takođe mogu pregledati sopstvenu istoriju donacija i štampati potvrde na [B1.church ili u B1 App-u](../../b1-church/giving/donation-history.md)
 
-## Готово!
+## Gotovo!
 
-Ваши годишњи извештаји о давању су завршени. Донатори су добили своје изводе за порески одбитак, а ваша финансијска евиденција је финализована за ту годину.
+Vaši godišnji izveštaji o donacijama su završeni. Donatori imaju potvrde za poreski odbitak, a vaša finansijska evidencija za godinu je finalizovana.
 
-## Повезани чланци
+## Povezani članci
 
-- [Stripe увоз](../donations/stripe-import.md) — увоз онлајн трансакција
-- [Извештаји о донацијама](../donations/donation-reports.md) — преглед трендова давања и укупних износа
-- [Фондови](../donations/funds.md) — управљање фондовима и подешавањима пореског одбитка
-- [Изводи о давању](../donations/giving-statements.md) — генерисање годишњих извода
-- [Евидентирање донација](../donations/recording-donations.md) — ручни унос готовинских и чековних донација
-- [Историја донација (веб)](../../b1-church/giving/donation-history.md) — приказ за самосталну употребу за чланове
-- [Водич за подешавање онлајн давања](./online-giving.md) — почетно подешавање Stripe-а и давања
+- [Stripe uvoz](../donations/stripe-import.md) — uvoz onlajn transakcija
+- [Izveštaji o donacijama](../donations/donation-reports.md) — pregled trendova i ukupnih iznosa donacija
+- [Fondovi](../donations/funds.md) — upravljanje fondovima i podešavanjima poreskog odbitka
+- [Potvrde o donacijama](../donations/giving-statements.md) — generisanje godišnjih potvrda
+- [Evidentiranje donacija](../donations/recording-donations.md) — ručni unos gotovinskih i čekovnih donacija
+- [Istorija donacija (veb)](../../b1-church/giving/donation-history.md) — samoposluga za članove
+- [Vodič za podešavanje onlajn davanja](./online-giving.md) — početno podešavanje Stripe-a i davanja

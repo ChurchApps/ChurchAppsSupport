@@ -1,61 +1,50 @@
 ---
-title: "Ledenlijst in het ledenportaal van B1.church"
-sidebar_label: "Lidmapenboek"
-description: "Zoek en blader door kerkleden in de B1.church-ledenlijst, bekijk profielen en gezinsleden, en zie wie toegang heeft tot de ledenlijst."
+title: "Ledenmap in het B1.church-ledenportaal"
+sidebar_label: "Ledenmap"
+description: "Zoek en blader door kerkleden in de B1.church-ledenmap, bekijk hun profielen en gezinsleden, en zie wie toegang heeft tot de ledenmap."
 ---
 
-# Lidmapenboek
+# Ledenmap
 
 <div class="article-intro">
 
-In het lidmapenboek kun je leden van je kerk zoeken en doorzoeken. Of je nu een medegruplid op wilt zoeken of iemand nieuws wilt ontmoeten, het gids maakt het makkelijk om verbinding te maken met je kerkhengel.
+Met de ledenmap kun je bladeren door en zoeken naar mensen in je kerk. Of je nu een medelid van een groep wilt opzoeken of iemand nieuws wilt vinden, de ledenmap maakt het eenvoudig om contact te leggen met je kerkfamilie.
 
 </div>
 
 <div class="prereqs">
-<h4>Voorbepaling</h4>
+<h4>Voordat je begint</h4>
 
 - Je moet [ingelogd](../getting-started/logging-in.md) zijn op je B1.church-account.
+- Wie de ledenmap kan openen, hangt af van de instelling **Tonen in ledenmap** van je kerk: **Alleen beheerders**, **Leden en hoger** (de standaard), **Reguliere bezoekers en hoger** of **Bezoekers en hoger**. Personen onder dat niveau zien in plaats daarvan het bericht "Alleen voor leden". Medewerkers met de rechten People > View kunnen de ledenmap altijd openen, en bij **Alleen beheerders** zijn zij de enigen die dit kunnen, zelfs personen met de ledenstatus Medewerker kunnen dat niet. Personen met de status Gast of Inactief kunnen de ledenmap nooit openen. Zie [Instellingen voor ledenmap en berichten](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
-## Het gids openen
+## Toegang tot de ledenmap
 
-1. Klik op **Gemeenschap** in de [navigatiebalk in het zijpaneel](../getting-started/navigating.md).
-2. Het gids laadt met een lijst van alle zichtbare kerkleden aan de linkerkant van de pagina.
+1. Tik op **Gemeenschap** in de [tabbalk of op de pagina Meer](../getting-started/navigating.md) (je kerk heeft deze mogelijk een andere naam gegeven).
+2. De **Ledenmap** opent met een aantal personen en een lijst van alle zichtbare kerkleden.
 
 ## Leden zoeken
 
-De pagina gebruikt een master-detail indeling. Aan de linkerkant heb je twee manieren om mensen te vinden:
+Typ een naam in het vak **Leden zoeken** bovenaan de lijst. De lijst filtert terwijl je typt, en het overeenkomende deel van elke naam wordt gemarkeerd. Wis het vak om de volledige ledenmap weer te zien.
 
-### Zoeken op naam
+## Bladeren door de ledenmap
 
-1. Zorg ervoor dat het **Personen**-filter boven aan het zoekgebied geselecteerd is.
-2. Typ een naam in het zoekvak.
-3. Klik op **Zoeken** of druk op **Enter** om resultaten te zien.
+Leden zijn gegroepeerd onder letterkoppen (A, B, C, enzovoort) op basis van de eerste letter van hun voornaam, en per letter gesorteerd op achternaam. Elke vermelding toont de foto, weergavenaam en ledenstatus van het lid, zodat je de lijst eenvoudig kunt doorlopen.
 
-Als je het zoekvak leeg laat en op **Zoeken** klikt, wordt de volledige gidslijst weergegeven.
+## Een ledenprofiel bekijken
 
-### Zoeken op groep
+Tik op een lid in de lijst om het profiel te openen. Het profiel toont de naam, foto en ledenstatus van het lid, met knoppen om een **Bericht** te sturen, **Bellen** of een **Tekstbericht** te sturen wanneer die informatie beschikbaar is. Daaronder toont de sectie **Contactgegevens** de gegevens die je kerk en het lid hebben gedeeld, zoals e-mail, telefoonnummer en adres, en onder **Gezinsleden** staan de andere personen uit hun gezin.
 
-1. Klik op het **Groepen**-filter boven aan het zoekgebied.
-2. Selecteer een groep uit de vervolgkeuzelijst.
-3. Klik op **Zoeken** om alle leden van die groep te zien.
+Met **Bericht** open je een privégesprek met die persoon. Je kunt tekst vet of cursief maken, of een lijst toevoegen, door de tekst te selecteren en de werkbalk te gebruiken die verschijnt. Dit werkt op dezelfde manier als in de [groepschat](../groups/conversations.md#formatting-your-message).
 
-:::tip
-Zoeken op groep is een snelle manier om iemand te vinden die je hebt ontmoet bij een [groepsbijeenkomst](../groups/browsing-groups.md) maar wiens naam je niet meer weet.
-:::
-
-## Door het gids bladeren
-
-Leden worden alfabetisch op achternaam vermeld en gegroepeerd onder letterkopjes (A, B, C, enzovoort). Elk item toont de foto van het lid, weergavenaam en huishoudnaam, zodat je gemakkelijk door de lijst kunt scannen.
-
-## Het profiel van een lid bekijken
-
-Klik op een lid in de lijst om hun profiel in het detailvenster aan de rechterkant te openen. Het profiel toont de informatie van het lid zoals geconfigureerd door je kerk, wat contactgegevens, leden van het huishouden en groepslidmaatschappen kan omvatten.
-
-Je kunt op leden van het huishouden in een profiel klikken om ook naar hun profielen te navigeren.
+Je kunt ook op gezinsleden in een profiel tikken om naar hun profielen te gaan. Op je eigen profiel breng je met de knop **Profiel bewerken** je naar [Je profiel bewerken](../getting-started/editing-your-profile.md).
 
 :::info
-De informatie die zichtbaar is in elk profiel hangt af van de privacyinstellingen en gidssinstellingen van je kerk. Niet alle velden kunnen voor elk lid worden weergegeven.
+Welke informatie zichtbaar is in elk profiel, hangt af van de privacy- en ledenmapinstellingen van je kerk. Niet bij elk lid worden alle velden getoond.
+:::
+
+:::info
+Leden die jonger zijn dan de [minimumleeftijd voor privéberichten](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) van je kerk, blijven zichtbaar in de ledenmap, maar de optie om hen een privébericht te sturen is niet beschikbaar.
 :::

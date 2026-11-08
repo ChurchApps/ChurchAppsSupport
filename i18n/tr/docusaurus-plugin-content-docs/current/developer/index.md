@@ -1,13 +1,13 @@
 ---
 title: "Geliştirici Dokümantasyonu"
-description: "ChurchApps geliştirici dokümanlarında yol bulun: yerel kurulum, API ve web uygulaması rehberleri, paylaşılan kütüphaneler, mobil derlemeler ve açık kaynaklı projelerin dağıtımı."
+description: "ChurchApps geliştirici dokümanlarında yolunuzu bulun: yerel kurulum, API ve web uygulaması kılavuzları, paylaşılan kütüphaneler, mobil derlemeler ve açık kaynaklı projeler için dağıtım."
 ---
 
 # Geliştirici Dokümantasyonu
 
 <div class="article-intro">
 
-ChurchApps, birlikte eksiksiz bir kilise yönetim platformu sunan yaklaşık 20 açık kaynaklı projenin bir koleksiyonudur. Projeler arka uç API'lerini, web uygulamalarını, mobil uygulamaları, bir masaüstü uygulamasını ve paylaşılan kütüphaneleri kapsar; hepsi TypeScript ile yazılmıştır. Bu bölüm, yerel bir geliştirme ortamı kurmanız ve katkıda bulunmaya başlamanız için ihtiyacınız olan her şeyi içerir.
+ChurchApps, birlikte eksiksiz bir kilise yönetim platformu sunan yaklaşık 20 açık kaynaklı projeden oluşan bir koleksiyondur. Projeler; arka uç API'leri, web uygulamaları, mobil uygulamalar, bir masaüstü uygulaması ve paylaşılan kütüphaneleri kapsar ve hepsi TypeScript ile yazılmıştır. Bu bölüm, yerel bir geliştirme ortamı kurmanız ve katkıda bulunmaya başlamanız için ihtiyacınız olan her şeyi içerir.
 
 </div>
 
@@ -27,14 +27,14 @@ Temel özellikler:
 
 - **[Kurulum](./setup/index.md)** -- Yerel geliştirme ortamı, ön koşullar ve yapılandırma
   - [Ön Koşullar](./setup/prerequisites.md) -- Gerekli araçlar ve yazılımlar
-  - [Proje Genel Bakış](./setup/project-overview.md) -- Tüm projelere hızlı bakış
-  - [Ortam Değişkenleri](./setup/environment-variables.md) -- `.env` dosyalarını yapılandırma
-- **[API](./api/index.md)** -- Çekirdek API yerel kurulumu, veritabanı başlatma ve modül yapısı
+  - [Proje Genel Bakışı](./setup/project-overview.md) -- Tüm projelere tek bakışta
+  - [Ortam Değişkenleri](./setup/environment-variables.md) -- `.env` dosyalarının yapılandırılması
+- **[API](./api/index.md)** -- Ana API'nin yerel kurulumu, veritabanı başlatma ve modül yapısı
 - **[Web Uygulamaları](./web-apps/index.md)** -- B1Admin, B1App ve LessonsApp'i yerel olarak çalıştırma
-- **[Mobil Uygulamalar](./mobile/index.md)** -- B1Mobile ve diğer Expo uygulamalarını derleme
+- **[Mobil Uygulamalar](./mobile/index.md)** -- B1Checkin ve diğer Expo uygulamalarını derleme
 - **[Paylaşılan Kütüphaneler](./shared-libraries/index.md)** -- Helpers, ApiHelper ve AppHelper ile çalışma
 - **[Dağıtım](./deployment/index.md)** -- API'leri, web uygulamalarını ve mobil uygulamaları dağıtma
-- **[FreePlay İçerik Sağlayıcısı](./freeplay-content-provider.md)** -- Ders kitaplığınızı FreePlay ile entegre etme
+- **[FreePlay İçerik Sağlayıcısı](./freeplay-content-provider.md)** -- Ders kütüphanenizi FreePlay ile entegre etme
 
 ## Topluluk ve Kaynaklar
 
@@ -45,5 +45,5 @@ Temel özellikler:
 | Slack Topluluğu | [Slack'e Katıl](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
 
 :::tip
-Katkıda bulunmaya başlamanın en hızlı yolu, bir web uygulaması (B1Admin gibi) seçmek, onu paylaşılan **demo API'lerine** yönlendirmek ve ön yüz değişikliklerini yapmaya başlamaktır. Veritabanı veya API kurulumu gerekmez.
+Katkıda bulunmaya başlamanın en hızlı yolu, bir web uygulaması seçmek (örneğin B1Admin), onu paylaşılan **demo API'lerine** yönlendirmek ve ön yüz değişikliklerine başlamaktır. Veritabanı veya API kurulumu gerekmez.
 :::

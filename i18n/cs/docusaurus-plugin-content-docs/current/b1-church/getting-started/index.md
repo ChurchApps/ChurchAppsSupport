@@ -1,60 +1,56 @@
 ---
-title: "Začínáme s členským portálem B1.church"
+title: "Začínáme s portálem členů B1.church"
 sidebar_label: "Začínáme"
-description: "Najděte web vaší církve na B1.church, vytvořte si členský účet a zjistěte, co portál nabízí: od skupin a darů po odbavení a plány."
+description: "Najděte web svého sboru na B1.church, vytvořte si účet člena a seznamte se s možnostmi portálu, od skupin a darování až po check-in a plány."
 ---
 
 # Začínáme s B1.church
 
 <div class="article-intro">
 
-B1.church je online domov vaší církve. Slouží k tomu, abyste zůstali ve spojení se sborem, sledovali novinky, online přispívali, přihlašovali se na bohoslužby a mnoho dalšího. Tato část vás provede základy přístupu k členskému portálu a jeho používání.
+B1.church je online domov vašeho sboru. Tady zůstáváte ve spojení s věřícími, prohlížíte aktuality, online přispíváte, přihlašujete se na bohoslužby a mnohem více. Tato sekce vás provede základy přístupu k portálu členů a jeho používáním.
 
 </div>
 
-## Přístup na web vaší církve
+## Přístup na web vašeho sboru
 
-Vaše církev má vlastní adresu B1.church, obvykle ve tvaru `https://yourchurchname.b1.church`. Tuto adresu můžete otevřít v libovolném webovém prohlížeči na počítači, tabletu nebo telefonu. Přesnou adresu vám sdělí vedení církve nebo uvítací tým.
+Váš sbor má vlastní adresu B1.church, obvykle ve formátu `https://nazevvasehosboru.b1.church`. Tuto adresu můžete otevřít v libovolném webovém prohlížeči na počítači, tabletu nebo telefonu. Přesnou adresu vám poskytne vedení sboru nebo uvítací tým.
 
-Když web poprvé navštívíte, uvidíte veřejné webové stránky vaší církve s jejím vlastním vzhledem, navigačními nabídkami a obsahovými stránkami.
+Když web poprvé navštívíte, uvidíte veřejné webové stránky svého sboru s vlastním vzhledem, navigačními menu a obsahovými stránkami.
 
 ## Vytvoření účtu
 
-Pro přístup k členskému portálu a jeho funkcím potřebujete účet ChurchApps.
+Pro přístup k portálu členů a jeho funkcím potřebujete účet ChurchApps.
 
-1. Otevřete adresu B1.church vaší církve.
+1. Otevřete adresu B1.church svého sboru.
 2. V pravém horním rohu stránky klikněte na tlačítko **Přihlásit se**.
 3. Na přihlašovací obrazovce zvolte možnost **Registrovat** nový účet.
 4. Zadejte své **křestní jméno**, **příjmení**, **e-mailovou adresu** a zvolte **heslo**.
-5. Dokončete registrační formulář.
+5. Vyplňte registrační formulář.
 
-Po registraci se můžete přihlásit a používat členský portál se všemi jeho nástroji.
+Po registraci se můžete přihlásit a používat portál členů se všemi jeho nástroji.
 
 :::tip
-Pokud vás vaše církev již přidala do svého systému, použijte stejnou e-mailovou adresu, kterou mají u sebe evidovanou. Váš účet se tak propojí s vaším stávajícím profilem v církvi.
+Pokud vás sbor již zaevidoval ve svém systému, použijte stejnou e-mailovou adresu, kterou mají u sebe uloženou. Váš účet se tak propojí s vaším stávajícím profilem ve sboru.
 :::
 
 ## Co můžete dělat
 
-Po přihlášení vám členský portál nabízí:
+Jakmile se přihlásíte, portál členů vám poskytne přístup k těmto funkcím:
 
-- **Domovskou** nástěnku s přehledem vaší služby, skupin a darování a stránku **Já** s tím, co vás čeká
+- Přehledovou stránku **Domů** s náhledy vaší služby, skupin a darů a stránku **Já** s tím, co vás čeká
 - **Skupiny**, do kterých patříte, včetně konverzací a akcí
-- Online **Dary** pro příspěvky
-- **Plány**, které zobrazují váš rozpis dobrovolnických služeb a podrobnosti o bohoslužbách
-- **Check-In** pro bohoslužby a akce
-- Adresář **Komunity**, kde najdete ostatní členy a navážete s nimi kontakt
+- Online **darování** pro příspěvky
+- **Plány** zobrazující váš rozpis dobrovolnictví a podrobnosti o bohoslužbách
+- **Check-in** na bohoslužby a akce
+- Adresář **Komunita**, kde najdete ostatní členy a navážete s nimi kontakt
 
 ## Přístup z telefonu
 
-B1.church funguje v libovolném mobilním prohlížeči. Pro zážitek podobný aplikaci nainstalujte členský portál vaší církve jako **progresivní webovou aplikaci (PWA)**. Návod podle typu vašeho zařízení najdete na adrese `https://yourchurchname.b1.church/mobile/install`, nebo můžete web přidat na plochu přímo z Safari či Chrome. Není potřeba žádný obchod s aplikacemi. Postup najdete v článku [Instalace jako aplikace (PWA)](./installing-pwa.md).
-
-:::info
-Starší nativní aplikace B1 Mobile byla zastaralá. Do budoucna je pro používání B1.church v telefonu podporována PWA. Historickou dokumentaci najdete na stránce [Referenční stránka B1 Mobile](/docs/b1-church/index.md).
-:::
+B1.church funguje v libovolném mobilním prohlížeči. Pro zážitek podobný aplikaci můžete portál členů svého sboru nainstalovat jako **progresivní webovou aplikaci (PWA)**. Navštivte `https://nazevvasehosboru.b1.church/mobile/install` a získáte návod přizpůsobený vašemu zařízení, nebo přidejte web přímo na plochu ze Safari či Chrome. Obchod s aplikacemi není potřeba. Postup najdete v článku [Instalace jako aplikace (PWA)](./installing-pwa.md).
 
 ## Další kroky
 
-- [Přihlášení](./logging-in.md) -- Naučte se, jak se přihlásit a spravovat svou relaci.
-- [Orientace v B1App](./navigating.md) -- Zjistěte, jak se v členském portálu orientovat.
-- [Instalace jako aplikace (PWA)](./installing-pwa.md) -- Přidejte B1.church na plochu svého telefonu.
+- [Přihlášení](./logging-in.md) -- Naučte se, jak se přihlásit a spravovat relaci.
+- [Orientace v B1App](./navigating.md) -- Najděte se v portálu členů.
+- [Instalace jako aplikace (PWA)](./installing-pwa.md) -- Přidejte B1.church na plochu telefonu.

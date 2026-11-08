@@ -1,44 +1,54 @@
 ---
-title: "Mobilna namestitev"
-description: "Vodnik za gradnjo izdaj B1 Mobile za Android in iOS z Expo EAS, za oddajo v trgovine z aplikacijami in za potiskanje posodobitev OTA."
+title: "Objava mobilnih aplikacij"
+description: "Vodnik za izdelavo izdaj za Android in iOS za Expo aplikacije, kot je B1 Checkin, za oddajo v trgovine z aplikacijami in za pošiljanje posodobitev OTA z EAS."
 ---
 
-# Mobilna namestitev
+# Objava mobilnih aplikacij
 
 <div class="article-intro">
 
-Mobilne aplikacije ChurchApps se gradijo in namestijo z uporabo **Expo EAS Build** ter se distribuirajo prek trgovin z aplikacijami. Ta stran opisuje gradnjo, oddajo in potiskanje posodobitev OTA (over-the-air) za Android in iOS.
+Expo mobilne aplikacije podjetja ChurchApps, na primer B1 Checkin, so zgrajene z **Expo EAS Build** ali lokalno gradnjo z Gradle in se distribuirajo prek trgovin z aplikacijami. Ta stran opisuje izdelavo, oddajo in pošiljanje posodobitev OTA (over-the-air) za Android in iOS, pri čemer je za primer uporabljen B1 Checkin.
 
 </div>
 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Lokalno nastavite mobilno aplikacijo -- glejte [B1 Mobile](../mobile/b1-mobile.md)
-- Namestite in nastavite [EAS CLI](https://docs.expo.dev/eas/)
+- Lokalno nastavite aplikacijo -- glejte [Mobilne aplikacije](../mobile/index.md#local-setup)
+- Namestite in konfigurirajte [EAS CLI](https://docs.expo.dev/eas/)
 - Imejte dostop do Google Play Console (Android) in/ali Apple App Store Connect (iOS)
 
 </div>
 
-## Gradnja
+## Izdelava
 
 ### Android
 
+Izdaje za Android se izvajajo lokalno in so podpisane z izdajnim ključnikom (keystore) iz EAS. Prenesite ga enkrat z ukazom `npx eas-cli credentials -p android` (izberite **credentials.json: Prenesi poverilnice iz EAS**), nato zaženite:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Paket za Google Play je zapisan v `android/app/build/outputs/bundle/release/app-release.aab`. Za gradnjo na EAS namesto tega zaženite `yarn build:android:eas`.
 
 ### iOS
 
+Gradnje za iOS se vedno izvajajo na EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
 ## Oddaja v trgovine z aplikacijami
 
 ### Android -- Google Play Store
 
-Po uspešni gradnji EAS se binarna datoteka za Android (AAB) odda v Google Play Store prek Play Console.
+Naložite AAB prek Play Console ali ga oddajte z EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## Posodobitve OTA
 
-Za spremembe, ki vsebujejo samo JavaScript in ne zahtevajo pregleda v trgovini z aplikacijami, uporabite posodobitve OTA (over-the-air):
+Za spremembe samo v JavaScriptu, ki ne zahtevajo pregleda v trgovini z aplikacijami, uporabite posodobitve OTA (over-the-air):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-To uporablja EAS Update za neposredno potiskanje sprememb uporabnikom brez celotne oddaje v trgovino.
+To prek EAS Update pošlje spremembe neposredno uporabnikom brez celotne oddaje v trgovino.
 
 :::tip
-Posodobitve OTA so bistveno hitrejše od gradenj za trgovine -- spremembe lahko dosežejo uporabnike v nekaj minutah namesto v nekaj dneh. Uporabite jih za popravke napak, spremembe besedil in manjše spremembe uporabniškega vmesnika, ki ne vključujejo sprememb nativne kode.
+Posodobitve OTA so bistveno hitrejše od gradenj za trgovine -- spremembe lahko dosežejo uporabnike v nekaj minutah namesto v dneh. Uporabite jih za popravke napak, spremembe besedil in manjše spremembe uporabniškega vmesnika, ki ne vključujejo sprememb nativne kode.
 :::
 
 ## Številke različic
 
-Pred ustvarjanjem gradnje za trgovino morate številke različic posodobiti v več datotekah:
+Pred ustvarjenjem gradnje za trgovino je treba številke različic posodobiti v več datotekah:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` in `versionCode`)
+
+Številko gradnje za iOS samodejno poveča EAS.
 
 :::warning
-Če pozabite posodobiti številke različic v vseh datotekah, bo prišlo do napak pri gradnji ali zavrnitve v trgovini z aplikacijami. Pred začetkom produkcijske gradnje dvakrat preverite vsako zgoraj naštето datoteko.
+Če pozabite posodobiti številke različic v vseh datotekah, bo to povzročilo napake pri gradnji ali zavrnitev v trgovini z aplikacijami. Pred začetkom produkcijske gradnje dvakrat preverite vsako zgoraj navedeno datoteko.
 :::
 
 ## Sorodni članki
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokalna nastavitev in vodnik za razvoj
-- **[API Deployment](./apis.md)** -- Namestitev zaledniških API-jev
-- **[Web App Deployment](./web-apps.md)** -- Namestitev spletnih aplikacij na sprednjem delu
+- **[Mobilne aplikacije](../mobile/index.md)** -- Lokalna nastavitev in vodnik za razvoj
+- **[Objava API](./apis.md)** -- Objava zalednih API-jev
+- **[Objava spletnih aplikacij](./web-apps.md)** -- Objava spletnih aplikacij za uporabniški vmesnik (frontend)

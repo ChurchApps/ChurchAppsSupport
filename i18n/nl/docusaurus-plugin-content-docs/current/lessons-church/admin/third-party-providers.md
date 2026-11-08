@@ -1,58 +1,57 @@
 ---
-title: "Third-Party Providers"
-description: "Voeg een externe curriculumfeed toe aan Lessons.church via de Third-Party-beheerpagina, en bekijk, bewerk of verwijder providerkoppelingen wanneer nodig."
+title: "Externe aanbieders"
+description: "Voeg een Open Lesson Format-lesrooster toe op de pagina Externe aanbieders van Lessons.church, en bewerk of verwijder het daarna zodat uw kerk de lessen kan inplannen."
 ---
 
-# Third-Party Providers
+# Externe aanbieders
 
 <div class="article-intro">
 
-Lessons.church ondersteunt externe lessenproviders via het Open Lesson Format. Dit betekent dat u inhoud van andere organisaties kunt importeren en deze naast de ingebouwde bibliotheek beschikbaar stellen, waardoor kerken toegang krijgen tot onderwijs van meerdere bronnen op één plek.
+Lessons.church ondersteunt externe lesmateriaalaanbieders via het Open Lesson Format. Dit betekent dat uw kerk lesmateriaal van andere organisaties kan koppelen en voor uw klaslokalen kan inplannen, naast de ingebouwde bibliotheek. Zo heeft uw team lesmateriaal uit meerdere bronnen op één plek.
 
 </div>
 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- Hebt u beheerdersmachtigingen voor Lessons.church (zie het [Administration overview](./index.md))
-- Verkrijg de feed-URL van de externe provider die u wilt verbinden
+- Log in op Lessons.church met een account waarmee u de klaslokaalplanningen van uw kerk kunt beheren
+- Haal de feed-URL op bij de externe aanbieder die u wilt koppelen. Deze moet lessen teruggeven in het [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
-## Een Provider Toevoegen
+## Een aanbieder toevoegen
 
-1. Ga naar het **Admin**-gebied.
-2. Open de **Third-Party**-pagina.
-3. Klik op **Add Provider** (of de equivalente knop om een nieuwe verbinding toe te voegen).
-4. Voer de **feed URL** van de provider in. Dit is de URL waar de provider hun lessengegevens in het Open Lesson Format publiceert.
-5. Sla de verbinding op.
+1. Klik in de navigatie van Lessons.church op **Externe aanbieders**. De pagina **Externe lesaanbieders** wordt geopend.
+2. Klik op **Aanbieder toevoegen**. Als u nog geen aanbieder heeft toegevoegd, klikt u in plaats daarvan op **Eerste aanbieder toevoegen**.
+3. Voer een **Naam aanbieder** in. Dit is de naam die uw team ziet wanneer het een aanbieder kiest.
+4. Voer de **API-URL** in. Dit is het adres waar de aanbieder zijn lesmateriaal in het Open Lesson Format publiceert.
+5. Klik op **Opslaan**.
 
-Zodra opgeslagen, zal Lessons.church de inhoud van de provider importeren. Hun programma's, studies en lessen verschijnen in de lessenbibliotheek naast uw eigen inhoud.
+De aanbieder wordt alleen voor uw kerk toegevoegd. Daarna verschijnt hij als keuze onder **Aanbieder** wanneer u een [les inplant](../classrooms/scheduling-lessons.md) voor een klaslokaal, en onder **Bron** wanneer u een [jaarplan](./managing-year-plans.md) opstelt.
 
-## Providers Beheren
+## Aanbieders beheren
 
-Vanaf de **Third-Party**-pagina kunt u alle verbonden providers zien. Voor elke provider kunt u:
+Op de pagina **Externe lesaanbieders** staan alle aanbieders die uw kerk heeft toegevoegd. Om er een te wijzigen:
 
-- **De geïmporteerde inhoud weergeven** om te bevestigen dat deze correct is opgehaald.
-- **De feed-URL bijwerken** als de provider hun eindpunt wijzigt.
-- **Een provider verwijderen** als u hun inhoud niet langer wilt opnemen.
+- **Bewerken** -- Klik op het pictogram **Aanbieder bewerken** (potlood), wijzig de **Naam aanbieder** of de **API-URL** en klik op **Opslaan**.
+- **Verwijderen** -- Klik op het pictogram **Aanbieder bewerken**, klik daarna op het pictogram voor verwijderen (prullenbak) en bevestig.
 
-## Wat Is The Open Lesson Format?
+## Wat is het Open Lesson Format?
 
-The Open Lesson Format is een gestandaardiseerd schema dat lesseninhoud -- programma's, studies, lessen, plaatsen, secties en acties -- op een gestructureerde manier beschrijft. Elke organisatie die haar inhoud in deze indeling publiceert, kan als provider in Lessons.church worden toegevoegd.
+Het Open Lesson Format is een gestandaardiseerd schema dat lesmateriaal -- programma's, studies, lessen, locaties, secties en acties -- op een gestructureerde manier beschrijft. Elke organisatie die haar inhoud in dit formaat publiceert, kan als aanbieder aan Lessons.church worden toegevoegd.
 
-Als u een inhoudsprovider bent die uw onderwijs beschikbaar wilt stellen via Lessons.church, vindt u de volledige schema-documentatie in de [Open Lesson Format](./open-lesson-format.md)-gids.
+Bent u een contentaanbieder die uw lesmateriaal beschikbaar wilt maken via Lessons.church? Dan vindt u de volledige schemadocumentatie in de handleiding [Open Lesson Format](./open-lesson-format.md).
 
-## Waarom Insteekproviders Gebruiken?
+## Waarom externe aanbieders gebruiken?
 
-- **Meer keuzes voor kerken** -- Kerken kunnen een bredere selectie onderwijs doorbladeren zonder het platform te verlaten.
-- **Één plek voor alles** -- Vrijwilligers en coördinatoren hoeven niet meerdere websites te bezoeken om lessen te zoeken en in te plannen.
-- **Gemakkelijke setup** -- Het toevoegen van een provider vereist alleen een feed-URL. Er is geen handmatige gegevensinvoer of bestandsupload betrokken.
+- **Meer keuze voor kerken** -- Kerken kunnen een breder aanbod lesmateriaal bekijken zonder het platform te verlaten.
+- **Alles op één plek** -- Vrijwilligers en coördinatoren hoeven niet meerdere websites te bezoeken om lessen te vinden en in te plannen.
+- **Eenvoudige installatie** -- Een aanbieder toevoegen vraagt alleen een naam en een feed-URL. Er is geen handmatige invoer of bestandsupload nodig.
 
 :::info
-Externe inhoud wordt beheerd door de externe provider. Als u merkt dat inhoud ontbreekt of verouderd is van een provider, kan het probleem aan hun kant moeten worden opgelost.
+Inhoud van derden wordt beheerd door de externe aanbieder. Als u ontbrekende of verouderde inhoud van een aanbieder opmerkt, moet het probleem mogelijk aan hun kant worden opgelost.
 :::
 
 :::tip
-Voor configuratie van externe providers op kerkniveau (niet op beheerniveau), zie de pagina [External Providers](../browsing/external-providers.md) in de Browsing-sectie.
+Wilt u weten hoe lessen van een externe aanbieder eruitzien zodra ze zijn ingepland? Zie dan [Externe aanbieders](../browsing/external-providers.md) in het gedeelte Bladeren.
 :::

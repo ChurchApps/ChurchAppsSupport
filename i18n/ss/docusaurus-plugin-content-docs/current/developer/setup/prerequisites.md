@@ -1,88 +1,88 @@
 ---
-title: "Tidzingo Tekucala"
-description: "Setfa i-Node.js, i-npm, i-Git, nemathuluzi wetinhlelo letisebenta kulomkhakha ngaphambi kwekusebenta kumaprojekthi e-ChurchApps njenge-B1 Admin, Lessons.church, FreePlay, noma i-API endzaweni."
+title: "Ntfutfumelo"
+description: "Lungisa i-Node.js, i-npm, i-Git, kanye nemasistimu ye-platform ngaphambi kokusebenta kumaphrojekthi e-ChurchApps njenge-B1 Admin, Lessons.church, FreePlay, noma i-API endzaweni yakho."
 ---
 
-# Tidzingo Tekucala
+# Ntfutfumelo
 
 <div class="article-intro">
 
-Tinsimbi lotidzingako kuya ngekutsi ngumaphi emaphrojekthi lohlose kuwasebentela. Lelikhasi lilalisa sonkhe simiselo lesidzingekako, sihlelwe ngendzawo yekutfutfukisa, kusuka etidzingweni letijwayelekile kuya etinsimbini letikhetsekile ngekwe-platform.
+Ematuluzi lodzingekako ancike kutsi ngumaphrojekthi aphi lotfuna kusebenta kiwo. Leli khasi likhombisa wonkhe softhiwe lodzingekako lehlelwe ngekutfola kwemsebenti wekuthuthukisa, kusukela kulokudzingekako wonkhe kuya kumatulusi lokumele kuhlelelwe ngawo.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Bukisisa [Simo Sonkhe Semaphrojekthi](./project-overview.md) kute ukhombe kutsi ngimaphi emaphrojekthi lofuna kuwasebentela
-- Yiba nemvumo yebaphatsi (administrator access) kumshini wakho wekutfutfukisa kute ukwati kufaka i-software
+- Buka [Ngekwehluka Kwephrojekthi](./project-overview.md) ukuze uncume ukuthi ngumaphrojekthi aphi lofuna kusebenta kiwo
+- Kufanele une-akhawunti yomphatsi kulikhompyutha lakho lekuthuthukisa kuze ufake softhiwe
 
 </div>
 
-## Onkhe Emaphrojekthi
+## Wonkhe Emaphrojekthi
 
-Loku kudzingeka kungakhatsaliseki kutsi usebenta liphi liphrojekthi:
+Lokhu kudzingeka nakuba ngumaphrojekthi aphi losebentisa:
 
-| Insimbi | Vasyini | Emanotsi |
+| Ithuluzi | Inguqulo | Tinkhomba |
 |------|---------|-------|
-| **Node.js** | 20+ | Vasyini 22+ iyadzingeka ku-B1App nase-LessonsApp (Next.js 16) |
-| **npm** | Iveta ne-Node.js | Isetjentiswa njengemphatsi wemaphakheji kuwo onkhe emaphrojekthi |
-| **Git** | Lokusha kakhulu | Ngalinye liphrojekthi liyi-repository lelizimele |
+| **Node.js** | 20+ | Inguqulo 22+ idzingeka ye-B1App ne-LessonsApp (Next.js 16); 24+ idzingeka ye-Api |
+| **npm** | Iyeta ne-Node.js | Isetfwa njengesiphatsi sematfuba kuwo wonkhe emaphrojekthi |
+| **Git** | Lokusha kakhulu | Ngulokunye lephrojekthi ngurepositori lehlukile |
 
 :::tip
-Sebentisa umphatsi wevasyini ye-Node njenge-[nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) kumbe [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) kute ukwati kushintjashintja emkatsi kwetivasyini te-Node ngalula.
+Sebentisa umphatsi wenguqulo ye-Node njenge-[nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) noma i-[nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) ukuze ushintshe phakathi kweminguqulo ye-Node ngekusheshisa.
 :::
 
-## Kutfutfukiswa Kwe-Backend API
+## Ntfutfumelo Yekuthuthukisa Kwe-Backend API
 
-Nangabe uhlose kugijimisa i-API ngasekhaya (esikhundleni sekukhomba ku-staging):
+Uma uhlela kusebentisa i-API endzaweni yakho (hhayi kusebentisa ama-API ledemo):
 
-| Insimbi | Vasyini | Emanotsi |
+| Ithuluzi | Inguqulo | Tinkhomba |
 |------|---------|-------|
-| **MySQL** | 8.0+ | Ngamunye we-module ye-API isebentisa i-database yayo |
+| **MySQL** | 8.0+ | Ililinga ngalinye le-API lisebentisa idatabhesi yalo |
 
-Utodzinga tidatabase letisitfupha kuma-core API: `membership`, `attendance`, `content`, `giving`, `messaging`, ne-`doing`. I-API ihlanganisa ema-script ekucalisa i-schema -- bona umhlahlandlela we-[API local setup](../api/local-setup.md).
+Utawudzingeka emadatabhesi lasitfupha ye-API lenkhulu: `membership`, `attendance`, `content`, `giving`, `messaging`, kanye ne-`doing`. I-API iletfwa emascriptsi ekuqalisa i-schema -- bheka kugcwaliswa kwe-[API local setup](../api/local-setup.md).
 
-## Kutfutfukiswa Kwetinhlelo Teselula
+## Ntfutfumelo Yesifakeli Se-Mobile
 
-Kuma-B1Mobile, B1Checkin, LessonsScreen, kumbe letinye tinhlelo te-React Native / Expo:
+Ye-B1Checkin, LessonsScreen, noma amanye ama-app e-React Native / Expo:
 
-| Insimbi | Vasyini | Emanotsi |
+| Ithuluzi | Inguqulo | Tinkhomba |
 |------|---------|-------|
-| **Expo CLI** | Lokusha kakhulu | Faka kabanti (globally): `npm install -g expo-cli` |
-| **Android Studio** | Lokusha kakhulu | Iyadzingeka ekutfutfukisweni kwe-Android (ihlanganisa i-Android SDK) |
-| **Xcode** | Lokusha kakhulu | Iyadzingeka ekutfutfukisweni kwe-iOS (macOS kuphela) |
+| **Expo CLI** | Lokusha kakhulu | Fakela ngekubanti: `npm install -g expo-cli` |
+| **Android Studio** | Lokusha kakhulu | Idzingeka ekuthuthukiseni i-Android (ifaka ne-Android SDK) |
+| **Xcode** | Lokusha kakhulu | Idzingeka ekuthuthukiseni i-iOS (ye-macOS kuphela) |
 
 :::info
-Ungasebentisa uhlelo lwe-Expo Go kudivayisi lelibambekako kute uhlole ngekushesha ngaphandle kwe-Android Studio nome i-Xcode. Nomakunjalo, kwakha ema-binary elikhulu (production binaries) kudzinga tinsimbi tendabuko (native toolchains).
+Ungasebentisa i-app ye-Expo Go kudivayisi lebonakalako kuze uhlole ngekusheshisa ngaphandle kwe-Android Studio noma i-Xcode. Nakuba kunjalo, kwakha tinhlelo letikhiqizwako kudzinga emathuluzi lendzawo.
 :::
 
-## Kutfutfukiswa Kwe-FreeShow (Uhlelo Lwe-Desktop)
+## Ukuthuthukisa I-FreeShow (Softhiwe Yedeskithophu)
 
-I-FreeShow inetidzingo letengetiwe tekwakha lokwendabuko ngobe ihlanganisa ema-module e-Node lendabuko (njenge-`canvas`):
+I-FreeShow inetindzawo letingeniwe letidzingekako lapho yakha khona timodyuli te-native (njenge-`canvas`):
 
-### Onkhe Ema-Platform
+### Wonkhe Emaplatifomu
 
-| Insimbi | Vasyini | Emanotsi |
+| Ithuluzi | Inguqulo | Tinkhomba |
 |------|---------|-------|
-| **Python** | 3.12 | Iyadzingwa yi-`node-gyp` ekuhlanganisweni kwema-module endabuko |
-| **setuptools** | Lokusha kakhulu | Faka nge-`pip install setuptools` |
+| **Python** | 3.12 | Idzingeka ye-`node-gyp` ekuhlanganiseni timodyuli te-native |
+| **setuptools** | Lokusha kakhulu | Fakela ngi `pip install setuptools` |
 
 ### Windows
 
-| Insimbi | Emanotsi |
+| Ithuluzi | Tinkhomba |
 |------|-------|
-| **Visual Studio** | I-Community edition iyanele |
-| **"Desktop development with C++" workload** | Khetsa ngesikhatsi sekufakwa kwe-Visual Studio |
-| **Windows 10 SDK** | Ihlanganisiwe ku-C++ workload; caphela kutsi ikhethiwe |
+| **Visual Studio** | Inguqulo ye-Community iyanele |
+| **Umsebenti "Desktop development with C++"** | Khetha ngesikhatsi sekufakwa kwe-Visual Studio |
+| **Windows 10 SDK** | Ifakwe ku-workload ye-C++; netsa kutsi iyachekwa |
 
-Ungafaka tinsimbi tekwakha te-Visual Studio nge-command line:
+Ungafaka ematuluzi wekwakha we-Visual Studio ngomugca wemilayeni:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-Kumbe faka i-Visual Studio Community bese ukhetsa i-"Desktop development with C++" workload ngesikhatsi sekufakwa.
+Noma ufake i-Visual Studio Community bese ukhetha umsebenti "Desktop development with C++" ngesikhatsi sekufaka.
 
 ### Linux
 
@@ -92,24 +92,24 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Ema-Xcode Command Line Tools ngalokuvamile ayanele:
+Ematuluzi emugca wemilayeni we-Xcode ngalokuvamile ayanele:
 
 ```bash
 xcode-select --install
 ```
 
-## Chaka Kutsi Konkhe Kufakiwe Kahle
+## Hlola Kufakwa Kwakho
 
-Gijimisa lemiyalo kute uchake kutsi konkhe kufakiwe:
+Gijima layo myalelo ukuze uciniseke kutsi konkhe kufakiwe:
 
 ```bash
-node --version    # Kufanele kucindzetele v20.x.x kumbe ngetulu
-npm --version     # Kufanele kucindzetele 10.x.x kumbe ngetulu
-git --version     # Kufanele kucindzetele git version 2.x.x
-mysql --version   # Kudzingeka kuphela ekutfutfukisweni kwe-API yasekhaya
+node --version    # Kufanele iprinte v20.x.x noma ngaphezulu
+npm --version     # Kufanele iprinte 10.x.x noma ngaphezulu
+git --version     # Kufanele iprinte git version 2.x.x
+mysql --version   # Idzingeka kuphela ekuthuthukisweni kwe-API endzaweni
 ```
 
-## Tinyatselo Letilandzelako
+## Tinyatelo Letilandzelako
 
-- **[Simo Sonkhe Semaphrojekthi](./project-overview.md)** -- Bona onkhe emaphrojekthi nekutsi enta ini
-- **[Emavariyebuli Endzawo](./environment-variables.md)** -- Hlela emafayela akho e-`.env`
+- **[Ngekwehluka Kwephrojekthi](./project-overview.md)** -- Bona wonkhe emaphrojekthi nekutsi yenta ini
+- **[Tinguquko Temvelo](./environment-variables.md)** -- Lungisa emafayela akho `.env`

@@ -1,13 +1,13 @@
 ---
-title: "Guía: Gestionar grupos pequeños"
-description: "Configura grupos pequeños, estudios bíblicos y equipos de ministerio en B1 Admin, y publica un calendario general y una sección de grupos en tu web de B1."
+title: "Guía: Administrar grupos pequeños"
+description: "Configure grupos pequeños, estudios bíblicos y equipos de ministerio en B1 Admin, y luego publique un calendario general de la iglesia y una sección de grupos en su sitio web de B1."
 ---
 
-# Gestionar grupos pequeños
+# Administrar grupos pequeños
 
 <div class="article-intro">
 
-Configura grupos pequeños, estudios bíblicos o equipos de ministerio con gestión de miembros, calendarios de grupo y conversaciones. Publica un calendario de eventos de toda la iglesia en tu sitio web para que los visitantes puedan ver lo que sucede y los miembros puedan mantenerse conectados a través del portal web y la aplicación móvil.
+Configure grupos pequeños, estudios bíblicos o equipos de ministerio con gestión de miembros, calendarios de grupo y conversaciones. Publique un calendario de eventos general de la iglesia en su sitio web para que los visitantes vean lo que está sucediendo y los miembros se mantengan conectados a través del portal web y la aplicación móvil.
 
 </div>
 
@@ -15,62 +15,62 @@ Configura grupos pequeños, estudios bíblicos o equipos de ministerio con gesti
 <h4>Antes de comenzar</h4>
 
 - Cuenta de B1 Admin con acceso de administrador
-- [Personas agregadas a tu directorio](../people/adding-people.md) (los miembros del grupo deben existir primero)
+- [Personas agregadas a su directorio](../people/adding-people.md) (los miembros del grupo deben existir primero)
 
 </div>
 
 ## Paso 1: Crear categorías y grupos
 
-Organiza tus grupos en categorías para que los miembros puedan encontrar fácilmente lo que buscan.
+Organice sus grupos en categorías para que los miembros puedan encontrar fácilmente lo que buscan.
 
-Sigue la guía [Crear grupos](../groups/creating-groups.md) para:
+Siga la guía [Creación de grupos](../groups/creating-groups.md) para:
 
-1. Crear categorías para organizar tus grupos (por ejemplo, "Grupos Pequeños", "Estudios Bíblicos", "Equipos de Ministerio", "Comités")
-2. Crear grupos dentro de cada categoría (por ejemplo, "Grupo de Hombres del Martes por la Noche", "Estudio Bíblico de Mujeres", "Ministerio Juvenil")
-3. Agregar una descripción y horario de reunión para cada grupo
+1. Crear categorías para organizar sus grupos (por ejemplo, "Grupos pequeños", "Estudios bíblicos", "Equipos de ministerio", "Comités")
+2. Crear grupos dentro de cada categoría (por ejemplo, "Grupo de hombres de los martes por la noche", "Estudio bíblico de mujeres", "Ministerio de jóvenes")
+3. Agregar una descripción y un horario de reunión para cada grupo
 
 ## Paso 2: Agregar miembros y líderes
 
-Llena tus grupos con miembros y designa líderes que puedan gestionar sus propios equipos.
+Llene sus grupos con miembros y designe líderes que puedan administrar sus propios equipos.
 
-Sigue la guía [Miembros del grupo](../groups/group-members.md) para:
+Siga la guía [Miembros del grupo](../groups/group-members.md) para:
 
 1. Buscar personas y agregarlas a los grupos correspondientes
-2. Designar líderes de grupo usando el icono de estrella (**Make Leader**) — los líderes obtienen permisos adicionales
+2. Designar líderes de grupo usando el ícono de estrella (**Hacer líder**): los líderes tienen permisos adicionales
 
 :::tip
-Los líderes de grupo pueden gestionar el calendario de su propio grupo, publicar conversaciones y coordinar eventos sin necesitar acceso completo de administrador.
+Los líderes de grupo pueden administrar el calendario de su propio grupo, publicar conversaciones y coordinar eventos sin necesidad de acceso completo de administrador.
 :::
 
-## Paso 3: Configurar calendarios de grupo
+## Paso 3: Configurar los calendarios de grupo
 
-Dale a cada grupo su propio calendario para reuniones y eventos.
+Asigne a cada grupo su propio calendario para reuniones y eventos.
 
-Sigue la guía [Calendario del grupo](../groups/group-calendar.md) para:
+Siga la guía [Calendario de grupo](../groups/group-calendar.md) para:
 
-1. Agregar reuniones recurrentes (por ejemplo, "Cada martes a las 7 PM") y eventos únicos (por ejemplo, "Parrillada del Grupo - 15 de marzo")
-2. Los líderes de grupo pueden agregar y gestionar eventos de su propio grupo
+1. Agregar reuniones recurrentes (por ejemplo, "Todos los martes a las 7 p. m.") y eventos únicos (por ejemplo, "Parrillada del grupo - 15 de marzo")
+2. Los líderes de grupo pueden agregar y administrar eventos para su propio grupo
 
-## Paso 4: Crear un calendario de toda la iglesia
+## Paso 4: Crear un calendario general de la iglesia
 
-Agrupa eventos de todos tus grupos en un calendario unificado para toda la iglesia.
+Reúna los eventos de todos sus grupos en un solo calendario para toda la iglesia.
 
-Sigue las guías [Crear calendarios](../calendars/creating-calendars.md) y [Calendario curado](../calendars/curated-calendar.md) para:
+Siga las guías [Creación de calendarios](../calendars/creating-calendars.md) y [Calendario curado](../calendars/curated-calendar.md) para:
 
-1. Crear un calendario curado que reúna eventos de múltiples grupos en una vista unificada
-2. Compartir el enlace de suscripción ICS para que los miembros puedan agregar eventos a sus aplicaciones de calendario personales (Google Calendar, Apple Calendar, Outlook)
+1. Crear un calendario curado que reúna eventos de varios grupos en una sola vista unificada
+2. Compartir el enlace de suscripción ICS para que los miembros puedan agregar eventos a las aplicaciones de calendario de su teléfono o computadora (Google Calendar, Apple Calendar, Outlook)
 
 :::info
-Un calendario curado agrega automáticamente eventos de los grupos que conectes. Cuando un líder de grupo agrega un evento, también aparece en el calendario de la iglesia.
+Un calendario curado reúne automáticamente los eventos de los grupos que usted conecte. Cuando un líder de grupo agrega un evento, este también aparece en el calendario de la iglesia.
 :::
 
-## Paso 5: Publicar en tu sitio web
+## Paso 5: Publicar en su sitio web
 
-Haz que tus grupos y calendario sean visibles para visitantes y miembros en tu sitio web B1.
+Haga que sus grupos y su calendario sean visibles para los visitantes y miembros en su sitio web de B1.
 
-Sigue la guía [Gestionar páginas](../website/managing-pages.md) para:
+Siga la guía [Administrar páginas](../website/managing-pages.md) para:
 
-1. Agregar una sección de Calendario a tu sitio web B1 para mostrar el calendario curado
+1. Agregar una sección de Calendario a su sitio web de B1 para mostrar el calendario curado
 2. Agregar una sección de Grupos para que los visitantes puedan explorar los grupos disponibles y aprender cómo unirse
 
 ## Paso 6: Experiencia del miembro
@@ -78,24 +78,24 @@ Sigue la guía [Gestionar páginas](../website/managing-pages.md) para:
 Los miembros pueden descubrir, unirse y participar en grupos desde su teléfono o computadora.
 
 1. Los miembros exploran y se unen a grupos en [B1.church](../../b1-church/groups/browsing-groups.md)
-2. Los miembros del grupo pueden ver detalles, calendarios y publicar en [conversaciones](../../b1-church/groups/conversations.md)
-3. Todas las funciones de grupos también están disponibles en la [aplicación B1 Mobile](../../b1-church/groups/index.md)
+2. Los miembros del grupo pueden ver los detalles, los calendarios y publicar en las [conversaciones](../../b1-church/groups/conversations.md)
+3. Todas las funciones de grupo también están disponibles en la [aplicación B1](../../b1-church/groups/index.md)
 
 :::info
-Los miembros ven sus grupos, próximos eventos y conversaciones del grupo tanto en web como en móvil — todo se mantiene sincronizado.
+Los miembros ven sus grupos, los próximos eventos y las conversaciones de grupo tanto en la web como en el móvil; todo se mantiene sincronizado.
 :::
 
 ## ¡Listo!
 
-Tus grupos pequeños están configurados y conectados. Los miembros pueden descubrir grupos, ver eventos y mantenerse conectados a través de conversaciones — todo en tu sitio web y aplicación móvil. Los líderes de grupo pueden gestionar sus propios equipos de forma independiente.
+Sus grupos pequeños están configurados y conectados. Los miembros pueden descubrir grupos, ver eventos y mantenerse conectados mediante conversaciones, todo desde su sitio web y su aplicación móvil. Los líderes de grupo pueden administrar sus propios equipos de forma independiente.
 
 ## Artículos relacionados
 
-- [Crear grupos](../groups/creating-groups.md) — configurar categorías y grupos
-- [Miembros del grupo](../groups/group-members.md) — agregar miembros y designar líderes
-- [Calendario del grupo](../groups/group-calendar.md) — gestionar eventos del grupo
-- [Crear calendarios](../calendars/creating-calendars.md) — configurar calendarios de ministerio
-- [Calendario curado](../calendars/curated-calendar.md) — crear un calendario unificado de la iglesia
-- [Explorar grupos (Web)](../../b1-church/groups/browsing-groups.md) — cómo los miembros encuentran grupos
-- [Conversaciones del grupo (Web)](../../b1-church/groups/conversations.md) — discusiones del grupo
-- [Grupos (Móvil)](../../b1-church/groups/index.md) — grupos en la aplicación móvil
+- [Creación de grupos](../groups/creating-groups.md): configurar categorías y grupos
+- [Miembros del grupo](../groups/group-members.md): agregar miembros y designar líderes
+- [Calendario de grupo](../groups/group-calendar.md): administrar eventos del grupo
+- [Creación de calendarios](../calendars/creating-calendars.md): configurar calendarios de ministerio
+- [Calendario curado](../calendars/curated-calendar.md): crear un calendario unificado de la iglesia
+- [Explorar grupos (web)](../../b1-church/groups/browsing-groups.md): cómo los miembros encuentran grupos
+- [Conversaciones de grupo (web)](../../b1-church/groups/conversations.md): debates de grupo
+- [Grupos](../../b1-church/groups/index.md): grupos en la aplicación B1

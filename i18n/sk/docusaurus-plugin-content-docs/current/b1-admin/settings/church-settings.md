@@ -1,193 +1,193 @@
 ---
 title: "Nastavenia cirkvi"
-description: "Nastavte názov, adresu, subdoménu, časové pásmo, formát regiónu, poskytovateľa SMS a úložisko súborov pre váš zbor na stránke Nastavenia cirkvi v B1 Admin."
+description: "Nastavte názov, adresu, subdoménu, časové pásmo, formát regiónu, poskytovateľa SMS správ a úložisko súborov pre svoju cirkev na stránke Nastavenia cirkvi v B1 Admin."
 ---
 
 # Nastavenia cirkvi
 
 <div class="article-intro">
 
-Na stránke Nastavenia cirkvi nastavujete základné údaje o vašej cirkvi, kontaktné údaje a branding. Tieto údaje sa používajú vo všetkých nástrojoch ChurchApps vrátane vašej webovej stránky B1.church a aplikácie B1 Mobile.
+Stránka Nastavenia cirkvi slúži na konfiguráciu základných informácií o vašej cirkvi, kontaktných údajov a brandingu. Tieto údaje sa používajú vo všetkých nástrojoch ChurchApps, vrátane vašej webovej stránky B1.church a aplikácie B1 App.
 
 </div>
 
-## Výukové video
+## Video o školení
 
-<YouTube id="634zSbzDkYA" title="Nastavenie údajov o cirkvi a brandingu v B1" next="Roly, oprávnenia a pozvanie tímu v B1" nextUrl="/docs/b1-admin/settings/roles-permissions" />
+<YouTube id="634zSbzDkYA" title="Nastavenie informácií o cirkvi a brandingu v B1" next="Roly, oprávnenia a pozvanie tímu v B1" nextUrl="/docs/b1-admin/settings/roles-permissions" />
 
 <div class="prereqs">
 <h4>Predtým, ako začnete</h4>
 
-- Potrebujete oprávnenie „Upraviť nastavenia cirkvi“. Ak nemáte prístup, pozrite si [Roly a oprávnenia](./roles-permissions.md).
-- Pripravte si adresu, kontaktné údaje a logo vašej cirkvi
+- Potrebujete oprávnenie „Edit Church Settings“ (Upraviť nastavenia cirkvi). Ak nemáte prístup, pozrite si [Roly a oprávnenia](./roles-permissions.md).
+- Pripravte si adresu svojej cirkvi, kontaktné informácie a logo
 
 </div>
 
 ## Úprava informácií o cirkvi
 
-1. V aplikácii B1 Admin otvorte [ponuku Jump](../introduction.md#getting-around-with-the-jump-menu) (vyhľadávací panel v ľavom hornom rohu), rozbaľte položku **Settings** a kliknite na **Settings**.
-2. V sekcii **Church Information** (v hornej časti stránky) kliknite na **Edit**.
-3. Upravte ktorékoľvek z nasledujúcich polí:
-   - **Church Name** -- Názov zobrazený vo všetkých produktoch ChurchApps.
-   - **Address** -- Fyzická adresa vašej cirkvi.
-   - **Contact Information** -- Telefónne číslo, e-mail a ďalšie kontaktné údaje.
-   - **Time Zone** -- Časové pásmo vašej cirkvi. Pozri nižšie [Časové pásmo](#time-zone).
-4. Kliknutím na **Save** uložte zmeny.
+1. V B1 Admin otvorte [ponuku Jump](../introduction.md#getting-around-with-the-jump-menu) (vyhľadávacie pole v ľavom hornom rohu), rozbaľte **Settings** (Nastavenia) a kliknite na **Settings** (Nastavenia).
+2. V sekcii **Church Information** (Informácie o cirkvi) v hornej časti stránky kliknite na **Edit** (Upraviť).
+3. Aktualizujte ktorékoľvek z nasledujúcich polí:
+   - **Church Name** (Názov cirkvi) -- názov, ktorý sa zobrazuje vo všetkých produktoch ChurchApps.
+   - **Address** (Adresa) -- fyzická adresa vašej cirkvi.
+   - **Contact Information** (Kontaktné informácie) -- telefónne číslo, e-mail a ďalšie kontaktné údaje.
+   - **Time Zone** (Časové pásmo) -- časové pásmo vašej cirkvi. Pozrite si nižšie [Časové pásmo](#time-zone).
+4. Kliknutím na **Save** (Uložiť) použijte zmeny.
 
 ## Nastavenie subdomény
 
-Vaša cirkev dostane bezplatnú subdoménu **yourchurch.1.church**. Je to webová adresa, na ktorej môžu členovia a návštevníci nájsť online prezentáciu vašej cirkvi.
+Vaša cirkev dostane bezplatnú subdoménu **yourchurch.1.church**. Na tejto webovej adrese môžu členovia a návštevníci nájsť online prezentáciu vašej cirkvi.
 
-1. Na stránke Settings kliknite v sekcii **Church Information** na **Edit** a nájdite pole **Subdomain**.
+1. Na stránke Settings (Nastavenia) kliknite na **Edit** (Upraviť) v sekcii **Church Information** (Informácie o cirkvi) a nájdite pole **Subdomain** (Subdoména).
 2. Zadajte požadovanú subdoménu (napríklad „gracechurch“ pre gracechurch.1.church).
 3. Uložte zmeny.
 
 :::info
-Subdoména musí byť jedinečná medzi všetkými cirkvami v ChurchApps. Ak je váš požadovaný názov obsadený, skúste pridať názov mesta alebo štátu (napríklad „gracechurch-dallas“).
+Vaša subdoména musí byť jedinečná medzi všetkými cirkvami ChurchApps. Ak je požadovaný názov obsadený, skúste pridať názov mesta alebo štátu (napríklad „gracechurch-dallas“).
 :::
 
 Ak chcete, aby návštevníci našli váš web na vlastnej doméne (napríklad **`www.gracechurch.org`**), pozrite si [Vlastná doména](./custom-domain.md).
 
 ## Nastavenie brandingu
 
-Prispôsobte si, ako sa vaša cirkev zobrazuje vo všetkých nástrojoch ChurchApps:
+Prispôsobte, ako sa vaša cirkev zobrazuje vo všetkých nástrojoch ChurchApps:
 
 1. Nahrajte **logo cirkvi** kliknutím na oblasť loga a výberom obrázka.
 2. Pridajte ďalšie **obrázky cirkvi**, ktoré sa používajú na vašej webovej stránke a v [mobilnej aplikácii](./mobile-app.md).
 
 :::tip
-Najlepšie výsledky dosiahnete, ak použijete logo vo formáte PNG s priehľadným pozadím. Vďaka tomu bude vyzerať dobre na svetlom aj tmavom pozadí.
+Najlepšie výsledky dosiahnete s logom vo formáte PNG s priehľadným pozadím. Vďaka tomu bude vyzerať dobre na svetlom aj tmavom pozadí.
 :::
 
 ## Prvý deň v týždni
 
-Vyberte, ktorým dňom sa majú začínať vaše kalendáre. Rozbaľovací zoznam **First Day of Week** v sekcii Church Info je predvolene nastavený na **Sunday**, ale môžete zvoliť ľubovoľný deň. Po zmene sa tento deň použije v kalendárových mriežkach v aplikácii B1 Admin a na portáli členov B1.church. Kalendáre skupín, kurátorské kalendáre aj editor udalostí budú týždne zobrazovať od vami zvoleného dňa.
+Vyberte, ktorý deň má začínať váš kalendár. Rozbaľovacia ponuka **First Day of Week** (Prvý deň v týždni) v sekcii Church Info (Informácie o cirkvi) je predvolene nastavená na **Sunday** (nedeľu), ale môžete zvoliť ľubovoľný deň. Po zmene sa táto voľba uplatní v kalendárnych mriežkach v B1 Admin aj v portáli členov B1.church. Kalendáre skupín, kurátorské kalendáre a editor udalostí budú týždne zobrazovať od vami zvoleného dňa.
 
 ## Časové pásmo
 
-Rozbaľovací zoznam **Time Zone** v sekcii **Church Information** nastavuje časové pásmo vašej cirkvi (napríklad *America/Chicago*). Ak chcete pole ponechať prázdne, vyberte **None**. Po uložení sa časové pásmo zobrazí v súhrne Church Information.
+Rozbaľovacia ponuka **Time Zone** (Časové pásmo) v sekcii **Church Information** (Informácie o cirkvi) nastavuje časové pásmo vašej cirkvi (napríklad *America/Chicago*). Ak chcete pole ponechať prázdne, vyberte **None** (Žiadne). Po uložení sa pásmo zobrazí v súhrne informácií o cirkvi.
 
-B1 používa toto časové pásmo pre celocirkevné časy, napríklad pre pripomienky udalostí a rozpisy na vašich televízoroch [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md). [Rozpisy prihlasovania](../attendance/setup.md#setting-a-check-in-schedule) sa najprv merajú v časovom pásme [pobočky](./campuses.md), ktorej bohoslužba patrí, a časové pásmo cirkvi sa použije, iba ak pobočka žiadne nemá. Ak sú všetky vaše pobočky v jednom časovom pásme, nastavte ho na cirkvi aj na každej pobočke.
+B1 používa toto časové pásmo pre časy platné pre celú cirkev, napríklad pri pripomienkach udalostí a pri rozvrhoch na vašich televízoroch [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md). [Rozvrhy odbavenia](../attendance/setup.md#setting-a-check-in-schedule) sa najprv merajú v časovom pásme [kampusu](./campuses.md), v ktorom sa bohoslužba koná. Časové pásmo cirkvi použije len vtedy, ak kampus žiadne nemá. Ak sú všetky vaše kampusy v jednom časovom pásme, nastavte ho pre cirkev aj pre každý kampus.
 
 ## Región (formát dátumu a telefónneho čísla)
 
-Nastavenie **Region** určuje, ako sa v celom B1 zapisujú dátumy a časy. Predvolene sa dátumy zobrazujú vo formáte Spojených štátov (napríklad „Sep 28, 2026“ a „9/28/2026“). Cirkvi mimo USA môžu prepnúť na svoj vlastný formát. Ak si napríklad zvolíte English (United Kingdom), zobrazí sa „28 Sept 2026“ a „28/09/2026“.
+Nastavenie **Region** určuje, ako sa dátumy a časy zapisujú v celom B1. Predvolene sa dátumy zobrazujú vo formáte Spojených štátov (napríklad „Sep 28, 2026“ a „9/28/2026“). Cirkvi mimo USA môžu prepnúť na vlastný formát. Ak si napríklad zvolíte English (United Kingdom), zobrazia sa dátumy ako „28 Sept 2026“ a „28/09/2026“.
 
-1. Na stránke Settings kliknite v ľavom zozname na **Region** a potom v sekcii **Region** kliknite na **Edit**.
-2. Z rozbaľovacieho zoznamu **Region** vyberte svoj región. Každá možnosť zobrazuje ukážkový dátum, aby ste presne videli, ako budú dátumy vyzerať.
-3. Kliknite na **Save**.
+1. Na stránke Settings (Nastavenia) kliknite v ľavom zozname na **Region** a potom v sekcii **Region** kliknite na **Edit** (Upraviť).
+2. V rozbaľovacej ponuke **Region** vyberte svoj región. Každá možnosť zobrazuje ukážkový dátum, aby ste presne videli, ako budú dátumy vyzerať.
+3. Kliknite na **Save** (Uložiť).
 
-Sekcia Region potom zobrazí vami zvolený región, ukážku **Date format** a formát **Phone numbers**.
+Sekcia Region potom zobrazí vybraný región, ukážku formátu v poli **Date format** (Formát dátumu) a formát v poli **Phone numbers** (Telefónne čísla).
 
 ### Formát telefónnych čísel
 
-V rovnakej sekcii Region je nastavenie **Phone numbers**, ktoré určuje, ako sa telefónne čísla zadávajú v zázname osoby:
+V rovnakej sekcii Region nájdete nastavenie **Phone numbers** (Telefónne čísla), ktoré určuje, ako sa telefónne čísla zadávajú v zázname osoby:
 
-- **International (with country code)** -- predvolená možnosť. Telefónne polia zobrazujú výber vlajky krajiny a čísla ukladajú s predvoľbou krajiny (napríklad +1 918 555 1234).
-- **Local (as typed)** -- telefónne polia sa zmenia na obyčajné textové polia a čísla sa ukladajú presne tak, ako ich zadáte, bez pridania predvoľby krajiny (napríklad 0701 234 5678). Túto možnosť zvoľte, ak vaša cirkev zapisuje čísla v miestnom formáte a nechce, aby B1 pridával predvoľbu krajiny.
+- **International (with country code)** (Medzinárodný, s predvoľbou krajiny) -- predvolená možnosť. Telefónne polia zobrazia výber vlajky krajiny a čísla ukladajú s predvoľbou krajiny (napríklad +1 918 555 1234).
+- **Local (as typed)** (Miestny, tak ako sa zadá) -- telefónne polia sa zmenia na jednoduché textové polia a čísla sa uložia presne tak, ako ich zadáte, bez pridania predvoľby krajiny (napríklad 0701 234 5678). Zvoľte túto možnosť, ak vaša cirkev zapisuje čísla v miestnom formáte a nechce, aby B1 pridával predvoľbu krajiny.
 
-Ak je vybrané **Local**, sekcia Region vedľa vášho regiónu zobrazí aj text „Local phone numbers“.
+Ak je vybraná možnosť **Local**, sekcia Region vedľa vášho regiónu zobrazí aj „Local phone numbers“ (Miestne telefónne čísla).
 
 :::tip
-Textové správy fungujú najlepšie, keď čísla obsahujú predvoľbu krajiny. Ak posielate správy z B1, ponechajte formát **International** alebo sa uistite, že čísla zadané v režime Local obsahujú predvoľbu krajiny.
+Posielanie SMS správ funguje najlepšie, keď čísla obsahujú predvoľbu krajiny. Ak posielate SMS správy z B1, ponechajte formát **International** (Medzinárodný) alebo sa uistite, že čísla zadané v režime Local obsahujú predvoľbu krajiny.
 :::
 
-Váš región sa uplatní na dátumy a časy v aplikácii B1 Admin, na webovej stránke B1.church a v portáli členov vrátane kázní, blogových príspevkov, kalendárov skupín a plánov služieb. Členovia tak vidia dátumy vo formáte, ktorý používajú vaši zamestnanci.
+Váš región sa uplatňuje na dátumy a časy v B1 Admin, na vašej webovej stránke B1.church a v portáli členov, vrátane kázní, blogových príspevkov, kalendárov skupín a plánov služieb. Členovia tak vidia dátumy vo rovnakom formáte ako vaši zamestnanci.
 
-## Textové správy {#texting}
+## Posielanie SMS správ {#texting}
 
-Pripojte poskytovateľa textových správ, aby ste z aplikácie B1 Admin mohli posielať SMS správy jednej osobe alebo celej skupine. Správy sa odosielajú cez váš vlastný účet u poskytovateľa, preto sa uplatňujú jeho ceny a limity.
+Pripojte poskytovateľa SMS služieb, aby ste z B1 Admin mohli posielať SMS správy jednotlivcovi alebo celej skupine. Správy sa odosielajú cez váš vlastný účet u poskytovateľa, takže sa na ne vzťahujú jeho ceny a limity.
 
-1. Na stránke Settings kliknite v ľavom zozname na **Texting** a potom v sekcii **Texting** kliknite na **Edit**.
-2. Vyberte **Provider**:
-   - **Clearstream** -- zadajte **API Key**. Kľúč vytvoríte v nastaveniach svojho účtu Clearstream v časti API Keys.
-   - **Text In Church** -- zadajte **API Key**. Najprv požiadajte podporu Text In Church o prístup k vývojárskemu API a potom kľúč vytvorte v sekcii Account Settings > Developer API.
-   - **Nalo Solutions** (Ghana) -- ako **API Key** zadajte autentifikačný kľúč z vášho účtu Nalo Solutions a ako **Sender ID** zadajte identifikátor odosielateľa (až 11 znakov), ktorý vám Nalo schválilo.
-   - **Twilio** -- použite vlastný účet Twilio vašej cirkvi. Twilio vám účtuje priamo. Skopírujte **Account SID** a **Auth Token** z [Twilio Console](https://console.twilio.com) a zadajte **From Number** -- telefónne číslo Twilio zaregistrované pre A2P 10DLC v tvare podobnom `+15551234567`. Po uložení vložte URL adresu prichádzajúceho webhooku (pozri nižšie) do nastavenia **A message comes in** webhook v Twilio, aby sa odpovede STOP zaznamenali aj v B1.
-3. Kliknite na **Save**.
+1. Na stránke Settings (Nastavenia) kliknite v ľavom zozname na **Texting** (Posielanie SMS) a potom v sekcii **Texting** kliknite na **Edit** (Upraviť).
+2. Vyberte **Provider** (Poskytovateľa):
+   - **Clearstream** -- zadajte **API Key** (Kľúč API). Kľúč vytvoríte v nastaveniach účtu Clearstream v časti API Keys.
+   - **Text In Church** -- zadajte **API Key** (Kľúč API). Najprv požiadajte podporu Text In Church o prístup k vývojárskemu API a potom vytvorte kľúč v sekcii Account Settings > Developer API.
+   - **Nalo Solutions** (Ghana) -- ako **API Key** zadajte autorizačný kľúč z vášho účtu Nalo Solutions a ako **Sender ID** (ID odosielateľa) zadajte identifikátor (až 11 znakov), ktorý vám Nalo schválilo.
+   - **Twilio** -- použite vlastný účet Twilio vašej cirkvi; Twilio vám účtuje priamo. Skopírujte **Account SID** a **Auth Token** z [Twilio Console](https://console.twilio.com) a zadajte **From Number** (Odosielacie číslo) -- telefónne číslo Twilio zaregistrované pre A2P 10DLC v tvare ako `+15551234567`. Po uložení vložte webhook URL pre prichádzajúce správy (pozri nižšie) do poľa **A message comes in** (Správa prichádza) v nastaveniach čísla v Twilio, aby sa odpovede STOP zaznamenávali aj v B1.
+3. Kliknite na **Save** (Uložiť).
 
-Ak chcete prestať posielať textové správy, nastavte **Provider** na **None** a uložte. Tým sa uložený poskytovateľ odstráni.
+Ak chcete posielanie SMS zastaviť, nastavte **Provider** na **None** (Žiadny) a uložte. Uložený poskytovateľ sa tým odstráni.
 
-### Odhlásenie ľudí, ktorí odpovedajú STOP
+### Odhlásenie osôb, ktoré odpovedia STOP
 
-Keď je poskytovateľ uložený, znova otvorte sekciu Texting pomocou **Edit**. Pod nastaveniami poskytovateľa sa zobrazuje pole **Inbound (STOP) webhook URL** iba na čítanie, ktoré obsahuje webovú adresu jedinečnú pre vašu cirkev. Kliknutím na pole adresu označte, skopírujte ju a vložte do nastavenia prichádzajúcich správ (odpovedí) webhooku u vášho poskytovateľa. Funguje to s každým z uvedených poskytovateľov, ktorý dokáže preposielať prichádzajúce odpovede na webhook.
+Keď je poskytovateľ uložený, znova otvorte sekciu Texting pomocou **Edit** (Upraviť). Pod nastaveniami poskytovateľa sa zobrazí pole **Inbound (STOP) webhook URL** len na čítanie. Obsahuje webovú adresu jedinečnú pre vašu cirkev. Kliknutím na pole adresu označte, skopírujte ju a vložte do nastavenia webhooku pre prichádzajúce správy (odpovede) u vášho poskytovateľa SMS. Funguje to so všetkými vyššie uvedenými poskytovateľmi, ktorí dokážu presmerovať prichádzajúce odpovede na webhook.
 
-Keď potom niekto odpovie **STOP** (alebo STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT alebo REVOKE) na jednu z vašich správ, B1 nájde všetkých ľudí s takýmto mobilným číslom, označí ich ako odhlásených a vypne im textové pripomienky. Potom ich preskočia skupinové správy. Ostatné odpovede sa ignorujú.
+Potom, keď niekto odpovie **STOP** (alebo STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT alebo REVOKE) na jednu z vašich správ, B1 nájde všetkých, ktorých mobilné číslo sa zhoduje, označí ich ako odhlásených a vypne im pripomienky cez SMS. Pri skupinových správach sa potom preskočia. Ostatné odpovede sa ignorujú.
 
 :::info
-Používa sa to isté nastavenie odhlásenia ako pri možnosti **Hide me from the member directory**, takže ľudia, ktorí odpovedajú STOP, sa na svojom profile zobrazia aj ako **Skryté v adresári**. Pole sa zobrazí iba vtedy, keď je vybraný uložený poskytovateľ. Ak v rozbaľovacom zozname prepnete na iného poskytovateľa, najprv uložte zmeny, aby sa URL adresa znova zobrazila.
+Toto používa rovnaké nastavenie odhlásenia ako **Hide me from the member directory** (Skryť ma v adresári členov), takže osoby, ktoré odpovedali STOP, sa na svojom profile zobrazia aj ako **Hidden from directory** (Skryté v adresári). Pole sa zobrazí iba vtedy, keď je vybraný uložený poskytovateľ. Ak v rozbaľovacej ponuke prepnete na iného poskytovateľa, najprv uložte zmeny, aby ste URL znova videli.
 :::
 
-Keď je poskytovateľ pripojený, používatelia s oprávnením na odosielanie správ uvidia tlačidlo **Text** na stránke skupiny (**Text this group**) a na stránke osoby s mobilným telefónom (**Send text message**). Napíšte správu a kliknite na **Send**. Dialógové okno počíta znaky a segmenty SMS. Pri skupine pred odoslaním zobrazí, koľko členov správu dostane:
+Keď je poskytovateľ pripojený, zamestnanci s oprávnením posielať správy uvidia na stránke skupiny tlačidlo **Text** (**Text this group** -- Poslať správu tejto skupine) a na stránke osoby s mobilným telefónom tlačidlo **Send text message** (Odoslať SMS). Napíšte správu a kliknite na **Send** (Odoslať). Dialógové okno počíta znaky a segmenty SMS. Pri skupine pred odoslaním zobrazí, koľko členov správu dostane:
 
-- Členovia bez mobilného telefónneho čísla v evidencii sú preskočení.
-- Členovia, ktorí zvolili **Hide me from the member directory**, sa počítajú ako odhlásení a sú preskočení.
-- Členovia rodiny, ktorí zdieľajú jedno mobilné číslo, dostanú správu iba raz.
+- Členovia, ktorí nemajú uložené mobilné číslo, sú preskočení.
+- Členovia, ktorí zvolili **Hide me from the member directory** (Skryť ma v adresári členov), sa počítajú ako odhlásení a sú preskočení.
+- Členovia rodiny, ktorí zdieľajú mobilné číslo, dostanú správu iba raz.
 
-### Personalizácia správ pomocou zlúčených polí {#personalizing-texts-with-merge-fields}
+### Personalizácia správ pomocou zástupných polí {#personalizing-texts-with-merge-fields}
 
-Pod textovým poľom dialógové okno Text zobrazuje tlačidlá s označením zástupných polí: **First Name**, **Last Name**, **Display Name** a **Church Name**. Kliknutím na tlačidlo vložíte jeho zástupný text (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` alebo `{{churchName}}`) na miesto kurzora. Pri odoslaní správy sa každý zástupný text nahradí údajmi príjemcu, takže skupinová správa ako `Hi {{firstName}}, see you Sunday!` oslovuje každého člena jeho menom. Zástupné polia fungujú pri skupinových správach aj pri správach jednotlivcom. Správy pre skupinu ponúkajú aj tlačidlo **Group Name** (`{{groupName}}`), ktoré sa nahradí názvom skupiny.
+Pod poľom so správou dialógové okno Text zobrazuje štítky zástupných polí: **First Name** (Meno), **Last Name** (Priezvisko), **Display Name** (Zobrazované meno) a **Church Name** (Názov cirkvi). Kliknutím na štítok vložíte jeho zástupný znak (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` alebo `{{churchName}}`) na miesto kurzora. Pri odoslaní sa každý zástupný znak nahradí údajmi konkrétneho príjemcu. Skupinová správa ako `Ahoj {{firstName}}, uvidíme sa v nedeľu!` sa tak dostane ku každému členovi s jeho menom. Zástupné polia fungujú pre skupinové správy aj pre správy jednotlivcom. Správy skupine majú navyše štítok **Group Name** (Názov skupiny) (`{{groupName}}`), ktorý sa nahradí názvom skupiny.
 
-Ak chcete správu znovu použiť, uložte ju ako [šablónu textovej správy](./email-templates.md#text-templates) (šablóna e-mailu s kategóriou **Text**) a vyberte ju v poli **Load Template (optional)** v hornej časti okna Text.
+Ak chcete správu znova použiť, uložte ju ako [šablónu SMS](./email-templates.md#text-templates) (šablóna e-mailu s kategóriou **Text**) a vyberte ju v poli **Load Template (optional)** (Načítať šablónu, voliteľné) v hornej časti okna Text.
 
 :::info
-Limit 1 600 znakov sa uplatňuje na správu, ako ju píšete. Po vyplnení zástupných polí sa každý text dlhší ako 1 600 znakov skráti na túto dĺžku.
+Limit 1 600 znakov platí pre správu v momente písania. Po doplnení zástupných polí sa každý text dlhší ako 1 600 znakov skráti na túto dĺžku.
 :::
 
-Správy sa môžu odosielať aj automaticky ako krok [workflow](../serving/workflows.md#sending-a-text) s akciou **Send Text**. Používa rovnakého poskytovateľa a zástupné polia.
+Správy sa môžu odosielať aj automaticky v kroku [pracovného postupu](../serving/workflows.md#sending-a-text) s akciou **Send Text** (Odoslať SMS). Ten používa rovnakého poskytovateľa a rovnaké zástupné polia.
 
 ## Úložisko súborov
 
-Súbory, ktoré nahrávate na svoju webovú stránku (cez [Files](../website/files.md)) a do ďalších obsahových oblastí, sa predvolene ukladajú v bezplatnom hostingovom úložisku B1 s kapacitou až 100 MB. Ak potrebujete viac miesta, môžete pripojiť vlastné cloudové úložisko. Nové nahrávky potom idú priamo do vášho účtu bez limitu platformy.
+Súbory, ktoré nahrávate na svoju webovú stránku (cez [Súbory](../website/files.md)), a iný obsah používajú predvolene bezplatné hostované úložisko B1 až do 100 MB. Ak potrebujete viac miesta, môžete pripojiť vlastné cloudové úložisko. Nové nahrávky potom idú priamo na váš účet bez limitu platformy.
 
-1. Na stránke Settings kliknite v ľavom zozname na **File Storage** a potom v sekcii **File Storage** kliknite na **Edit**.
-2. Vyberte poskytovateľa: **Google Drive**, **Dropbox**, **OneDrive** alebo **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2 a podobne).
-3. Pri Google Drive, Dropbox alebo OneDrive kliknite na **Connect** a prihláste sa, aby ste udelili prístup. Pri úložisku typu S3-compatible bucket zadajte prístupový kľúč, tajný kľúč, názov bucketu a základ verejnej URL adresy.
-4. Kliknite na **Save**.
+1. Na stránke Settings (Nastavenia) kliknite v ľavom zozname na **File Storage** (Úložisko súborov) a potom v sekcii **File Storage** kliknite na **Edit** (Upraviť).
+2. Vyberte poskytovateľa: **Google Drive**, **Dropbox**, **OneDrive** alebo **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2 a pod.).
+3. Pri Google Drive, Dropboxe alebo OneDrive kliknite na **Connect** (Pripojiť) a prihláste sa, aby ste udelili prístup. Pri úložisku S3 zadajte prístupový kľúč, tajný kľúč, názov bucketu a základnú verejnú URL.
+4. Kliknite na **Save** (Uložiť).
 
 :::info
-Toto ovplyvňuje iba nové nahrávky na súbory vašej webovej stránky a podobné obsahové oblasti. Obrázky galérie, miniatúry, logá a fotografie osôb vždy zostávajú v predvolenom úložisku B1.
+Toto ovplyvňuje iba nové nahrávky na súbory vašej webovej stránky a podobné oblasti obsahu. Obrázky z galérie, miniatúry, logá a fotografie osôb vždy zostávajú v predvolenom úložisku B1.
 :::
 
-## Postup do vyššieho ročníka
+## Povyšovanie ročníkov
 
-Ak u detí a študentov evidujete **Grade** (ročník), B1 môže v určený dátum (napríklad 1. augusta) automaticky posunúť všetkých o ročník vyššie. Nemusíte tak ručne upravovať každý profil.
+Ak sledujete **Grade** (Ročník) detí a študentov, B1 môže všetkých automaticky posunúť o ročník k dátumu, ktorý zvolíte (napríklad 1. augusta). Nemusíte tak upravovať každý profil ručne.
 
-1. Na stránke Settings kliknite v ľavom zozname na **Grade Promotion** a potom v sekcii **Grade Promotion** kliknite na **Edit**.
-2. Zapnite prepínač (zobrazí **Enabled**) a vyberte **Month** a **Day**, kedy sa majú ročníky každý rok posúvať. V tento dátum sa každý s ročníkom posunie o jeden ročník vyššie a žiaci 12. ročníka sa zmenia na **Graduated**.
+1. Na stránke Settings (Nastavenia) kliknite v ľavom zozname na **Grade Promotion** (Povyšovanie ročníkov) a potom v sekcii **Grade Promotion** kliknite na **Edit** (Upraviť).
+2. Zapnite prepínač (zobrazí sa **Enabled** -- Zapnuté) a vyberte **Month** (Mesiac) a **Day** (Deň), kedy sa ročníky každý rok povýšia. V tento deň sa každý s ročníkom posunie o jeden ročník nahor a žiaci 12. ročníka získajú stav **Graduated** (Absolvent).
 3. Uložte zmeny.
 
-Ak chcete automatický postup vypnúť, prepínač prepnite tak, aby zobrazoval **Disabled**, a uložte. Dátum postupu sa odstráni a ročníky sa už nebudú meniť samy.
+Ak chcete automatické povyšovanie vypnúť, prepnite prepínač na **Disabled** (Vypnuté) a uložte. Dátum povýšenia sa odstráni a ročníky sa už nebudú meniť automaticky.
 
-## Registrácia dobrovoľníkov {#volunteer-signup}
+## Prihlasovanie na dobrovoľnícke služby {#volunteer-signup}
 
-Členovia, ktorí prezerajú [registrácie dobrovoľníkov](../../b1-church/serving/volunteer-signup.md), predvolene vidia každý nadchádzajúci týždeň s voľnými pozíciami. Ak je tento zoznam dlhý, môžete zobraziť iba najbližší týždeň pre každý typ plánu.
+Členovia, ktorí si prezerajú [prihlasovanie na dobrovoľnícke služby](../../b1-church/serving/volunteer-signup.md), predvolene vidia každý nadchádzajúci týždeň, v ktorom sú voľné miesta. Ak je tento zoznam dlhý, môžete zobraziť iba najbližší týždeň pre každý typ plánu.
 
-1. Na stránke Settings kliknite v ľavom zozname na **Volunteer Signup** a potom v sekcii **Volunteer Signup** kliknite na **Edit**.
-2. Zapnite možnosť **Show only the next week of each plan type**.
+1. Na stránke Settings (Nastavenia) kliknite v ľavom zozname na **Volunteer Signup** (Prihlasovanie na dobrovoľnícke služby) a potom v sekcii **Volunteer Signup** kliknite na **Edit** (Upraviť).
+2. Zapnite možnosť **Show only the next week of each plan type** (Zobraziť iba najbližší týždeň pre každý typ plánu).
 3. Uložte zmeny.
 
-Po zapnutí sa pri každom type plánu zobrazí iba jeho najbližší nadchádzajúci plán. Ďalší týždeň sa zobrazí, až keď tento dátum minie. Riadok **Weeks shown** v sekcii ukazuje buď **Only the next week of each plan type**, alebo **All upcoming weeks**.
+Po zapnutí sa pri každom type plánu zobrazí iba jeho najbližší nadchádzajúci plán. Ďalší týždeň sa zobrazí, keď tento dátum uplynie. Riadok **Weeks shown** (Zobrazené týždne) v sekcii ukazuje buď **Only the next week of each plan type** (Iba najbližší týždeň pre každý typ plánu), alebo **All upcoming weeks** (Všetky nadchádzajúce týždne).
 
-## Súkromie darov {#giving-privacy}
+## Ochrana súkromia darov {#giving-privacy}
 
-Ľudia s prístupom k darom zvyčajne vidia súhrny darov osoby na jej [zázname osoby](../people/adding-people.md#editing-details). Ak nechcete, aby sa sumy zobrazovali pri každom otvorení záznamu, môžete ich skryť, kým ich niekto nevyžiada.
+Osoby s prístupom k darom zvyčajne vidia súhrny darov osoby na jej [karte osoby](../people/adding-people.md#editing-details). Ak nechcete, aby sa sumy zobrazovali pri každom otvorení karty, môžete ich skryť, kým ich niekto nevyžiada.
 
-1. Na stránke Settings kliknite v ľavom zozname na **Giving privacy** a potom v sekcii **Giving privacy** kliknite na **Edit**.
-2. Zapnite možnosť **Hide giving on person records until clicked**.
+1. Na stránke Settings (Nastavenia) kliknite v ľavom zozname na **Giving privacy** (Ochrana súkromia darov) a potom v sekcii **Giving privacy** kliknite na **Edit** (Upraviť).
+2. Zapnite možnosť **Hide giving on person records until clicked** (Skryť dary na kartách osôb, kým sa neklikne).
 3. Uložte zmeny.
 
-Po zapnutí karta darov na zázname osoby zobrazuje text „Giving is hidden on person records.“ Kliknutím na **Show giving** sa načíta a zobrazí dary danej osoby. Pri otvorení inej osoby sa znovu skryjú. Nemení sa tým, kto môže dary vidieť: kartu vidia iba ľudia s prístupom k darom.
+Po zapnutí karta darov na karte osoby zobrazí text „Giving is hidden on person records“ (Dary sú na kartách osôb skryté). Kliknutím na **Show giving** (Zobraziť dary) načítate a zobrazíte dary danej osoby. Keď otvoríte inú osobu, zobrazenie sa opäť skryje. Nemení sa tým, kto môže dary vidieť: karta sa zobrazuje iba osobám s prístupom k darom.
 
 ## Import a export
 
-Odkaz **Import/Export** pod názvom vašej cirkvi na stránke Settings otvorí samostatný nástroj v novom okne prehliadača. Pomocou neho môžete:
+Odkaz **Import/Export** pod názvom vašej cirkvi na stránke Settings (Nastavenia) otvorí samostatný nástroj v novom okne prehliadača. Pomocou neho môžete:
 
 - Importovať údaje o členoch z iného systému na správu cirkvi.
 - Exportovať svoje údaje ChurchApps na zálohovanie alebo migráciu.
 
-Je to najmä užitočné pri prvom nastavení cirkvi, keď potrebujete preniesť existujúce záznamy do ChurchApps.
+Táto funkcia je veľmi užitočná, keď cirkev len nastavujete a potrebujete preniesť existujúce záznamy do ChurchApps.
 
 :::warning
-Pred importom údajov si vždy zálohujte existujúce záznamy. Importy pridávajú údaje do systému a pri opakovanom spustení môžu vytvoriť duplicitné záznamy.
+Pri importe dát si vždy najprv zálohujte existujúce záznamy. Importy pridávajú dáta do systému a pri opakovanom spustení môžu vytvoriť duplicitné záznamy.
 :::

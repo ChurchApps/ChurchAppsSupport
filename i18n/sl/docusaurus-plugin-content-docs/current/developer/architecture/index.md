@@ -1,19 +1,19 @@
 ---
 title: "Arhitektura"
-description: "Sistemski zemljevidi, ki prikazujejo, kako darovanje, prijave, obvestila in spletna mesta delujejo v B1 Admin, B1.church in API-ju, preden jih spremenite."
+description: "Sistemske karte čez več repozitorijev, ki prikazujejo, kako delujejo darovanja, prijave, obvestila in spletna mesta v B1 Admin, B1.church in Api, preden jih spremenite."
 ---
 
 # Arhitektura
 
 <div class="article-intro">
 
-Te strani so sistemski zemljevidi, ki segajo čez več repozitorijev. Opisujejo, kako ključni sistemi ChurchApps delujejo od začetka do konca, prek aplikacij, API modulov in skupnih knjižnic, ne pa, kako je nastavljen posamezen projekt. Preberite jih, preden spremenite delovanje sistema. Za zagon projekta preberite [Nastavitev](../setup/index.md), za podrobno referenco končnih točk pa [razdelek API](../api/index.md).
+Te strani so sistemske karte čez več repozitorijev: opisujejo, kako deluje ključni sistem ChurchApps od začetka do konca – čez aplikacije, module API-ja in skupne knjižnice – ne pa, kako je nastavljen posamezen projekt. Preberite jih, preden spremenite vedenje sistema; če želite zagnati projekt, preberite [Nastavitev](../setup/index.md), za podrobnosti o končnih točkah pa [razdelek o API-ju](../api/index.md).
 
 </div>
 
 ## Ekosistem na prvi pogled
 
-ChurchApps obsega približno 20 neodvisnih repozitorijev (ne monorepo). Odjemalske aplikacije prek HTTPS in WebSocket komunicirajo z majhnim naborom zalednih API-jev, kodo pa si delijo prek npm paketov, objavljenih pod imenskim prostorom `@churchapps`.
+ChurchApps je ~20 neodvisnih repozitorijev (ne monorepo). Odjemalske aplikacije komunicirajo z manjšim naborom zalednih API-jev prek HTTPS in WebSocket, kodo pa si delijo prek paketov npm, objavljenih pod obsegom `@churchapps`.
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
@@ -23,7 +23,7 @@ ChurchApps obsega približno 20 neodvisnih repozitorijev (ne monorepo). Odjemals
 │  B1App      member portal +    │ ─────────▶ │   giving        messaging     doing          │
 │             church websites    │            │                                              │
 │  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   one MySQL database per module (6 total)    │
-│  B1Mobile   (maintenance-only) │            └──────────────────────────────────────────────┘
+│                                │            └──────────────────────────────────────────────┘
 │  FreePlay   TV content player  │            ┌──────────────────────────────────────────────┐
 └───────────────┬────────────────┘            │  LessonsApi — Lessons.church backend         │
                 │                             └──────────────────────────────────────────────┘
@@ -34,36 +34,36 @@ ChurchApps obsega približno 20 neodvisnih repozitorijev (ne monorepo). Odjemals
 
 Dve strukturni pravili oblikujeta vse, kar je dokumentirano v tem razdelku:
 
-1. **Moduli so izolirani.** Vsak modul API-ja upravlja s svojo podatkovno bazo in tabelami. Drugi moduli in aplikacije do njegovih podatkov dostopajo le prek njegovih REST končnih točk. Glejte [Struktura modula](../api/module-structure.md).
-2. **Skupna koda se distribuira kot npm paketi.** Aplikacije nikoli ne uvažajo izvorne kode druga druge. Vse, kar se ponovno uporablja, prečka meje repozitorijev prek `@churchapps/helpers`, `@churchapps/apphelper` ali `@churchapps/apihelper`. Glejte [Skupne knjižnice](../shared-libraries/index.md).
+1. **Moduli so med seboj izolirani.** Vsak modul API-ja je lastnik svoje baze podatkov in svojih tabel; drugi moduli in aplikacije do njegovih podatkov dostopajo le prek njegovih REST končnih točk. Glejte [Zgradba modula](../api/module-structure.md).
+2. **Skupna koda je dostavljena kot paketi npm.** Aplikacije nikoli ne uvažajo izvorne kode druga druge; vse, kar se ponovno uporablja, prečka meje repozitorijev prek `@churchapps/helpers`, `@churchapps/apphelper` ali `@churchapps/apihelper`. Glejte [Skupne knjižnice](../shared-libraries/index.md).
 
-## Sistemski zemljevidi
+## Sistemske karte
 
 | Stran | Kaj zajema | Obsega |
 |------|----------------|-------|
-| [Obvestila in opomniki](./notifications.md) | Kako sistem komu sporoči informacijo: dve vstopni točki za pošiljanje, veriga eskalacije kanalov in motor opomnikov | Api (messaging), B1Admin, B1App |
-| [Arhitektura v realnem času](../realtime.md) | Ogrodje za dostavo prek WebSocket, na katerem temeljita klepet in prisotnost ter dostava znotraj aplikacije | Api (messaging), vse spletne aplikacije |
-| [Potisna obvestila v brskalniku](../web-push.md) | Kanal potisnih obvestil v brskalniku: VAPID ključi, shranjevanje naročnin, dostava | Api (messaging), vse spletne aplikacije |
-| [Darovanja](./giving.md) | Ponudniki plačil in prehodi, tokovi donacij, skladi in serije, webhooki prehodov | Api (giving), apphelper, B1App, B1Admin |
-| [Prijave na dogodke](./registrations.md) | Model prijav na dogodke: vrste udeležencev, izbire, kode popustov, plačila prek prehoda za darovanja ter čakalna lista | Api (content + giving), B1App, B1Admin |
-| [Prijave](./check-ins.md) | Prijava na kiosku in samoprijava, podatkovni model prisotnosti, usmerjanje po sobah, plast za varnost otrok, tiskanje nalepk | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
-| [Gradnik spletnih strani](./website-builder.md) | Drevo strani, razdelkov in elementov, pogodba o tipih elementov in upodabljalniki, blog, strani z omejenim dostopom, SEO in generiranje z AI | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
-| [Usmerjanje spletnih strani in več spletnih mest](./websites.md) | Kako zahteva doseže cerkev in določeno spletno mesto, podatkovni model več spletnih mest z `siteId` ter robni strežnik Caddy za domene po meri | B1App, Api (membership + content), B1Admin |
-| [Integracije](./integrations.md) | Razširitvena površina: OAuth, API ključi, webhooki, ponudniki vsebin, MCP | Api, skupne knjižnice, zunanje aplikacije |
-| [Dnevnik sprememb in razveljavljive serije](./audit-log.md) | Privzeto vključeno beleženje vsake spremembe na nadzorni točki krmilnika ter plast serij, ki omogoča razveljavitev uvozov in množičnih dejanj | Api (vsi moduli), B1Admin, B1Transfer |
-| [MinistryStuff](./ministrystuff.md) | Plačljiva storitev shranjevanja in kreditov za SMS: identiteta prek deljenega JWT, S2S prek servisnih ključev, vmesniki ponudnikov za SMS in shranjevanje, obračunavanje prek Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), paketi texting/apihelper, B1Admin |
-| [Lastno shranjevanje (BYOS)](./byos-storage.md) | Cerkve povežejo Google Drive, Dropbox, OneDrive ali S3-združljiv bucket za nalaganja nad brezplačnih 100 MB: povezava OAuth, oblike nalaganja po ponudnikih, javna preusmeritev prenosov | Api (content + membership), paketi helpers/apphelper, B1Admin, B1App |
-| [Skupna vsebina](./commons.md) | Skupna hrbtenica sredstev in prispevkov, na kateri temelji uporabniško ustvarjena vsebina med izdelki, ter ena sama čakalna vrsta za moderiranje, dostopna samo osebju v B1Admin Server Admin | Api (modul commons), B1Admin, WorshipCommons, Lessons.church, FreeShow |
+| [Obvestila in opomniki](./notifications.md) | Kako nekaj sporoči osebi: dva načina pošiljanja, veriga stopnjevanja kanalov in mehanizem opomnikov | Api (messaging), B1Admin, B1App |
+| [Arhitektura v realnem času](../realtime.md) | Ogrodje za dostavo prek WebSocket, na katerem temeljijo klepet, prisotnost in dostava znotraj aplikacije | Api (messaging), vse spletne aplikacije |
+| [Potisna obvestila v brskalniku](../web-push.md) | Kanal potisnih obvestil v brskalniku: ključi VAPID, shranjevanje naročnin, dostava | Api (messaging), vse spletne aplikacije |
+| [Darovanja](./giving.md) | Ponudniki plačil in plačilni prehodi, tokovi donacij, skladi in serije, webhooki plačilnih prehodov | Api (giving), apphelper, B1App, B1Admin |
+| [Prijave na dogodke](./registrations.md) | Model poslovanja pri prijavah: vrste udeležencev, izbire, kode za popust, plačila prek plačilnega prehoda za darovanja ter čakalni seznam | Api (content + giving), B1App, B1Admin |
+| [Prijave (check-in)](./check-ins.md) | Kioskna in samopostrežna prijava, podatkovni model obiskov, usmerjanje po sobah, plast za varnost otrok, tiskanje nalepk | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
+| [Gradnik spletnih strani](./website-builder.md) | Drevo strani, razdelkov in elementov, pogodba za tipe elementov in upodabljalniki, blog, strani z omejenim dostopom, SEO ter generiranje z umetno inteligenco | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Usmerjanje spletnih mest in več mest](./websites.md) | Kako zahtevek preide do cerkve in določenega mesta, podatkovni model več mest s `siteId` ter robni sloj za domene po meri v Caddyju | B1App, Api (membership + content), B1Admin |
+| [Integracije](./integrations.md) | Površina za razširitve: OAuth, ključi API, webhooki, ponudniki vsebin, MCP | Api, skupne knjižnice, zunanje aplikacije |
+| [Dnevnik revizij in serije, ki jih je mogoče razveljaviti](./audit-log.md) | Privzeto vklopljeno revidiranje vsake spremembe na kontrolni točki krmilnika ter plast serij, ki omogoča razveljavitev uvozov in množičnih dejanj | Api (all modules), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff.md) | Plačana storitev shranjevanja in kreditov za pošiljanje sporočil: identiteta s skupnim JWT-jem, S2S s storitvenimi ključi, ponudniška mesta za sporočila in shranjevanje, obračunavanje prek Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), paketi texting/apihelper, B1Admin |
+| [Lastna shramba (BYOS)](./byos-storage.md) | Cerkve povežejo Google Drive, Dropbox, OneDrive ali vedro, združljivo s S3, za nalaganja, ki presegajo brezplačnih 100 MB: povezava OAuth, oblika nalaganja po ponudnikih, javna preusmeritev prenosa | Api (content + membership), paketi helpers/apphelper, B1Admin, B1App |
+| [Skupna vsebina](./commons.md) | Skupna osnova za sredstva in predloge, ki podpira uporabniško ustvarjeno vsebino čez izdelke, ter enotna čakalna vrsta za moderiranje, dostopna samo osebju v Server Admin v B1Admin | Api (commons module), B1Admin, WorshipCommons, Lessons.church, FreeShow |
 
 :::tip
-Ko sprememba spremeni delovanje enega od teh sistemov, ne le strani znotraj ene aplikacije, je treba ustrezen sistemski zemljevid tukaj posodobiti v istem delu. Tako ostane ta razdelek zanesljiv prvi vir za nove sodelavce.
+Ko sprememba spremeni delovanje enega od teh sistemov – ne le strani znotraj ene aplikacije –, je treba ustrezno sistemsko karto tukaj posodobiti v istem delu. Tako ostane ta razdelek zanesljiv prvi vir za nove sodelavce.
 :::
 
 ## Predlogi
 
-Ti dokumenti opisujejo predlagano delo za pregled, ne razpoložljivega delovanja izdelka.
+Ti dokumenti opisujejo predlagano delo za pregled, ne pa obstoječega delovanja izdelka.
 
 | Predlog | Kaj zajema |
 |---|---|
-| [Twilio BYOK](./twilio-byok-proposal.md) | Cerkveni račun, ključi, storitev in telefonska številka; obseg integracije, soglasje, dostava, ocene in preverjanja pred izdajo |
-| [Osnutek uvajanja cerkva v Twilio](./twilio-byok-onboarding-draft.md) | Predlagane nastavitve obrazca za prijavo v B1, primeri kampanij za posamezne cerkve ter kontrolni seznami za odobritev in delovanje |
+| [Twilio BYOK](./twilio-byok-proposal.md) | Račun v lasti cerkve, ključi, storitev in telefonska številka; obseg integracije, soglasje, dostava, ocene in preverjanja pred izdajo |
+| [Osnutek uvajanja cerkva v Twilio](./twilio-byok-onboarding-draft.md) | Predlagane nastavitve prijavnega obrazca B1, primeri kampanj, specifičnih za cerkve, ter kontrolni seznami za odobritev in delovanje |

@@ -1,40 +1,40 @@
 ---
-title: "Guide: Ställ in onlinegivande"
-description: "Ställ in onlinegivande i B1 Admin genom att skapa gåvofonder, koppla Stripe och lägga till en sida för gåvor på din B1.church-webbplats för medlemmarna."
+title: "Guide: Konfigurera onlinegivande"
+description: "Konfigurera onlinegivande i B1 Admin genom att skapa gåvofonder, ansluta Stripe och lägga till en Ge-sida på din B1.church-webbplats för medlemmar."
 ---
 
-# Ställ in onlinegivande
+# Konfigurera onlinegivande
 
 <div class="article-intro">
 
-Gå igenom allt du behöver för att ta emot onlinedonationer i din församling, från att skapa donationsfonder till att koppla Stripe för betalningshantering och dela givarsidan med din församling. När du är klar kan medlemmarna ge online via din webbplats och mobilapp.
+Gå igenom allt som behövs för att ta emot onlinegåvor i din kyrka, från att skapa gåvofonder till att ansluta Stripe för betalningshantering och dela givandesidan med din församling. När du är klar kan medlemmarna ge online via din webbplats och mobilapp.
 
 </div>
 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Ett B1 Admin-konto med administratörsbehörighet, se [Roller och behörigheter](../people/roles-permissions.md)
+- B1 Admin-konto med administratörsbehörighet – se [Roller och behörigheter](../people/roles-permissions.md)
 - Ett Stripe-konto (skapa ett gratis på [stripe.com](https://stripe.com) om du inte har något)
 
 </div>
 
-## Steg 1: Skapa donationsfonder
+## Steg 1: Skapa gåvofonder
 
-Fonder är de kategorier som givare kan ge till. Du behöver minst en fond innan du kan ta emot donationer.
+Fonder är de kategorier som givare kan ge till. Du behöver minst en fond innan du kan ta emot gåvor.
 
-Följ guiden [Fonder](../donations/funds.md) för att skapa dina givarkategorier:
+Följ guiden [Fonder](../donations/funds.md) för att skapa dina givandekategorier:
 
-1. Skapa de fonder som används mest, till exempel "Allmän fond", "Byggfond" och "Missionsfond"
-2. Markera skattemässigt avdragsgilla fonder på rätt sätt, eftersom detta påverkar årsbesked för gåvor
+1. Skapa dina vanligaste fonder (t.ex. "Allmänna fonden", "Byggfonden", "Mission")
+2. Markera skattemässigt avdragsgilla fonder på rätt sätt – detta påverkar årsvisa gåvobesked
 
 :::tip
-Du kan lägga till fler fonder när som helst. Börja med de givarkategorier som används mest.
+Du kan lägga till fler fonder när som helst. Börja med dina vanligaste givandekategorier.
 :::
 
 ## Steg 2: Anslut Stripe
 
-Stripe hanterar all betalningshantering. Du kopplar ditt Stripe-konto till B1 Admin så att donationer hamnar på ditt bankkonto.
+Stripe sköter all betalningshantering. Du kopplar ditt Stripe-konto till B1 Admin så att gåvor går direkt till ditt bankkonto.
 
 Följ guiden [Konfigurera onlinegivande](../donations/online-giving-setup.md) för att ansluta Stripe:
 
@@ -42,64 +42,63 @@ Följ guiden [Konfigurera onlinegivande](../donations/online-giving-setup.md) f�
 2. Gå till Inställningar i B1 Admin och ange båda nycklarna
 
 :::warning
-Stripe visar din hemliga nyckel bara en gång. Kopiera och spara den innan du lämnar Stripe-instrumentpanelen. Om du tappar bort den behöver du skapa en ny.
+Stripe visar din hemliga nyckel (Secret Key) endast en gång. Kopiera och spara den innan du lämnar Stripe-instrumentpanelen. Om du tappar bort den behöver du skapa en ny.
 :::
 
-## Steg 3: Lägg till en givarsida på din webbplats
+## Steg 3: Lägg till en givandesida på din webbplats
 
-Gör det enkelt att ge genom att lägga till en donationssida på din B1-webbplats.
+Gör det enkelt för medlemmarna att ge genom att lägga till en gåvosida på din B1-webbplats.
 
 Följ guiderna [Konfigurera onlinegivande](../donations/online-giving-setup.md) och [Hantera sidor](../website/managing-pages.md) för att:
 
-1. Lägga till en flik "Donera" på din B1.church-webbplats
-2. Din givar-URL blir: `https://dinsubdomän.b1.church/donate`
-3. Medlemmar kan ge utan att logga in (offentlig sida), eller logga in för att spara betalningsmetoder och se sin donationshistorik
+1. Lägga till en flik "Ge" på din B1.church-webbplats
+2. Din givande-webbadress blir: `https://dinsubdomän.b1.church/donate`
+3. Medlemmar kan ge utan att logga in (offentlig sida) eller logga in för att använda sparade betalningsmetoder och se sin gåvohistorik
 
-## Steg 4: Gör en testdonation
+## Steg 4: Gör en testgåva
 
-Innan du meddelar din församling bör du kontrollera att allt fungerar.
+Innan du meddelar din församling, kontrollera att allt fungerar.
 
-1. Gör en liten testdonation för att kontrollera att flödet fungerar från början till slut
-2. Kontrollera att donationen visas i B1 Admin under Donationer
+1. Gör en liten testgåva för att kontrollera att flödet fungerar från början till slut
+2. Kontrollera att gåvan visas i B1 Admin under Gåvor
 
 :::tip
-Använd Stripes testläge först om du vill kontrollera utan riktiga betalningar. Byt sedan till liveläge innan du meddelar din församling.
+Använd Stripes testläge först om du vill kontrollera utan verkliga debiteringar, och växla sedan till livelläge innan du meddelar din församling.
 :::
 
 ## Steg 5: Meddela din församling
 
-Sprid budskapet så att medlemmarna vet att de kan ge online.
+Sprid informationen så att medlemmarna vet att de kan ge online.
 
-1. Dela givar-URL:en via din webbplats, e-postnyhetsbrev, programblad och sociala medier
-2. Medlemmar kan också ge via [B1 Mobile-appen](../../b1-church/giving/index.md). Funktionen för givande finns redan inbyggd.
+1. Dela givande-webbadressen via din webbplats, e-postnyhetsbrev, programblad och sociala medier
+2. Medlemmar kan även ge via [B1-appen](../../b1-church/giving/index.md) – funktionen för gåvor är inbyggd
 
 :::info
-Medlemmar som loggar in kan spara betalningsmetoder, ställa in återkommande donationer och se sin givarhistorik. Anonymt givande fungerar också, utan att man behöver logga in.
+Medlemmar som loggar in kan spara betalningsmetoder, ställa in återkommande gåvor och se sin gåvohistorik. Anonyma gåvor fungerar också – ingen inloggning krävs.
 :::
 
 ## Steg 6: Löpande förvaltning
 
-Håll dina donationsregister uppdaterade och skapa rapporter under hela året.
+Håll dina gåvoregister uppdaterade och skapa rapporter under hela året.
 
-1. [Importera Stripe-transaktioner](../donations/stripe-import.md) regelbundet (varje vecka eller månad) för att hålla dina register aktuella
-2. [Visa donationsrapporter](../donations/donation-reports.md) för att följa givartrender och summor per fond
-3. [Skapa årsbesked för gåvor](../donations/giving-statements.md) till dina givare för deras skatteredovisning
+1. [Importera Stripe-transaktioner](../donations/stripe-import.md) regelbundet (varje vecka eller varje månad) för att hålla dina register uppdaterade
+2. [Visa gåvorapporter](../donations/donation-reports.md) för att följa givandetrender och summor per fond
+3. [Skapa årsvisa gåvobesked](../donations/giving-statements.md) för dina givares skatteredovisning
 
 :::tip
-Kör Stripe-importer minst en gång i månaden så att dina register hålls uppdaterade. Se [Guide för årsrapporter](./year-end-reports.md) för hela årsavslutningsprocessen.
+Kör Stripe-importer minst en gång i månaden så att dina register hålls uppdaterade. Se [Guiden för årsrapporter](./year-end-reports.md) för hela årsavslutningsprocessen.
 :::
 
 ## Klart!
 
-Din församling tar nu emot onlinedonationer. Medlemmar kan ge via din webbplats, B1 Mobile-appen eller vilken enhet som helst med en webbläsare. Alla donationer registreras automatiskt i B1 Admin.
+Din kyrka tar nu emot onlinegåvor. Medlemmar kan ge via din webbplats, B1-appen eller valfri enhet med en webbläsare. Alla gåvor spåras automatiskt i B1 Admin.
 
 ## Relaterade artiklar
 
-- [Fonder](../donations/funds.md): skapa och hantera donationskategorier
-- [Batcher](../donations/batches.md): organisera donationer i grupper
-- [Registrera donationer](../donations/recording-donations.md): manuellt registrera kontant- och checkdonationer
-- [Stripe-import](../donations/stripe-import.md): hämta onlinetransaktioner till B1 Admin
-- [Donationsrapporter](../donations/donation-reports.md): visa givartrender och summor
-- [Årsbesked för gåvor](../donations/giving-statements.md): skapa årsbesked för skatteändamål
-- [Ge donationer (webb)](../../b1-church/giving/making-donations.md): givarupplevelsen för medlemmar
-- [Ge donationer (mobil)](../../b1-church/giving/making-donations.md): ge via mobilappen
+- [Fonder](../donations/funds.md) – skapa och hantera givandekategorier
+- [Batcher](../donations/batches.md) – organisera gåvor i grupper
+- [Registrera gåvor](../donations/recording-donations.md) – registrera kontant- och checkgåvor manuellt
+- [Stripe-import](../donations/stripe-import.md) – hämta onlinetransaktioner till B1 Admin
+- [Gåvorapporter](../donations/donation-reports.md) – visa givandetrender och summor
+- [Gåvobesked](../donations/giving-statements.md) – skapa årsvisa skatteunderlag
+- [Ge gåvor](../../b1-church/giving/making-donations.md) – medlemmarnas upplevelse av att ge på B1.church och i B1-appen

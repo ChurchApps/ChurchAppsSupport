@@ -1,41 +1,41 @@
 ---
-title: "Customization"
-description: "Leer onderdelen, rollen of acties in een Lessons.church-les verbergen en de inhoud herschikken, voor één klaslokaal of voor alle klaslokalen van je kerk."
+title: "Aanpassing"
+description: "Leer hoe je secties, rollen of acties in een Lessons.church-les verbergt en inhoud herordent, either voor één klaslokaal of voor alle klaslokalen in je kerk."
 ---
 
-# Customization
+# Aanpassing
 
 <div class="article-intro">
 
-Lessons.church biedt een bibliotheek van kant-en-klare lesseninhoud, maar elke kerk is anders. Met de aanpassingsfuncties kunt u lesseninhoud aanpassen aan uw specifieke klaslokalen, onderwijsstijl en leeftijdsgroepen, zodat uw vrijwilligers alleen zien wat relevant is voor hen.
+Lessons.church biedt een bibliotheek met kant-en-klare lesinhoud, maar elke kerk is anders. Met de aanpassingsfuncties kun je lesinhoud afstemmen op je specifieke klaslokalen, onderwijsstijl en leeftijdsgroepen, zodat je vrijwilligers alleen zien wat voor hen relevant is.
 
 </div>
 
-## Waarom Aanpassen?
+## Waarom aanpassen?
 
-Lesseninhoud op Lessons.church is ontworpen om flexibel te zijn. Een enkele les kan secties voor meerdere leeftijdsgroepen, optionele activiteiten of rollen bevatten die niet op elk klaslokaal van toepassing zijn. In plaats van uw vrijwilligers mentaal onderdelen te laten overslaan die niet van toepassing zijn, kunt u de les aanpassen zodat ze alleen zien wat relevant is.
+Lesinhoud op Lessons.church is ontworpen om flexibel te zijn. Een enkele les kan secties bevatten voor meerdere leeftijdsgroepen, optionele activiteiten of rollen die niet voor elk klaslokaal gelden. In plaats van je vrijwilligers te vragen delen die niet van toepassing zijn in gedachten over te slaan, kun je de les aanpassen zodat ze alleen zien wat voor hen relevant is.
 
-Een les kan bijvoorbeeld een handwerk-activiteit bevatten die geweldig werkt voor peuters maar niet goed past bij uw vijfde-klas klaslokaal. Met aanpassing kunt u deze sectie voor de oudere groep verbergen, terwijl u deze voor de jongere groep behoudt.
+Een les kan bijvoorbeeld een knutselactiviteit bevatten die goed werkt voor peuters, maar niet past bij je klas van groep 8. Met aanpassing kun je die sectie voor de oudere groep verbergen en voor de jongere groep laten staan.
 
-## Wat U Kunt Aanpassen
+## Wat je kunt aanpassen
 
-- **Remove sections** -- Verberg hele secties van een les die niet van toepassing zijn op een bepaald klaslokaal of leeftijdsgroep.
-- **Hide roles or actions** -- Verwijder individuele rollen of acties binnen een sectie als deze niet nodig zijn.
-- **Reorder content** -- Herschik secties en acties zodat ze passen bij de stroom die u voor uw klaslokaal verkiest.
+- **Secties verwijderen** -- Verwijder volledige secties van een les die niet van toepassing zijn op een specifiek klaslokaal of een specifieke leeftijdsgroep.
+- **Rollen of acties verwijderen** -- Verwijder afzonderlijke rollen of acties binnen een sectie als ze niet nodig zijn.
+- **Inhoud herordenen** -- Rangschik secties en acties opnieuw zodat ze aansluiten bij de volgorde die je voor je klaslokaal prefereert.
 
-## Klaslokaalspecifiek Of Globaal
+## Klaslokaalspecifiek of globaal
 
-Wanneer u een aanpassing opslaat, kiest u hoe breed deze van toepassing is:
+Bij elke wijziging kies je hoe breed deze van toepassing is:
 
-- **Single classroom** -- De aanpassing heeft alleen invloed op het huidige klaslokaal. Andere klaslokalen zien de originele inhoud.
-- **All classrooms** -- De aanpassing is van toepassing op elk klaslokaal in uw kerk.
+- **Dit klaslokaal** -- De wijziging heeft alleen invloed op het huidige klaslokaal. Andere klaslokalen zien de oorspronkelijke inhoud.
+- **Alle klaslokalen** -- De wijziging geldt voor elk klaslokaal in je kerk.
 
-Deze flexibiliteit betekent dat u verschillende weergaven van dezelfde les voor verschillende leeftijdsgroepen kunt instellen, of dat u een wijziging overal tegelijk kunt toepassen.
+Dankzij deze flexibiliteit kun je verschillende weergaven van dezelfde les instellen voor verschillende leeftijdsgroepen, of een wijziging doorvoeren die overal tegelijk geldt.
 
 :::tip
-Als u nieuw bent voor aanpassingen, begint u met een enkel klaslokaal om te zien hoe het werkt voordat u wijzigingen op alle klaslokalen toepast.
+Als je nieuw bent met aanpassen, begin dan met één klaslokaal om te zien hoe het werkt voordat je wijzigingen op alle klaslokalen toepast.
 :::
 
-## Volgende Stappen
+## Volgende stappen
 
-- [Customizing Lessons](./customizing-lessons.md) -- Volg de stap-voor-stap gids om uw eerste les aan te passen
+- [Lessen aanpassen](./customizing-lessons.md) -- Volg de stapsgewijze handleiding om je eerste les aan te passen

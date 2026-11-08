@@ -1,56 +1,56 @@
 ---
 title: "Переменные окружения"
-description: "Настройка .env для проектов ChurchApps: общий demo API или локальный API, переменные для B1 Admin, B1.church, B1 Mobile, Lessons.church и других."
+description: "Настройте файлы .env для проектов ChurchApps, выберите общий demo API или локальный API и заполните переменные для B1 Admin, B1.church, B1 Checkin и других."
 ---
 
 # Переменные окружения
 
 <div class="article-intro">
 
-Каждый проект ChurchApps использует файл `.env` для локальной конфигурации. Каждый проект включает пример файла, который вы копируете и настраиваете. На этой странице описаны переменные окружения для API, веб-приложений и мобильных приложений, включая выбор между демо-API и локальным API.
+Каждый проект ChurchApps использует файл `.env` для локальной настройки. В каждом проекте есть пример файла, который вы копируете и изменяете. На этой странице описаны переменные окружения для API, веб-приложений и мобильных приложений, а также то, как выбрать между demo и локальным API.
 
 </div>
 
 <div class="prereqs">
-<h4>Перед началом</h4>
+<h4>Перед началом работы</h4>
 
 - Установите [предварительные требования](./prerequisites.md) для вашего проекта
-- Клонируйте репозиторий проекта, над которым хотите работать
-- Ознакомьтесь с [Обзором проектов](./project-overview.md), чтобы понять, какие модули API нужны вашему проекту
+- Клонируйте репозиторий проекта, с которым хотите работать
+- Ознакомьтесь с [обзором проекта](./project-overview.md), чтобы понять, какие модули API нужны вашему проекту
 
 </div>
 
-## Общая схема
+## Общий порядок действий
 
 1. Найдите `dotenv.sample.txt` или `.env.sample` в корне проекта.
 2. Скопируйте его в `.env`.
-3. Измените значения по необходимости.
+3. При необходимости измените значения.
 
 ```bash
-# Example for a project with .env.sample
+# Пример для проекта с .env.sample
 cp .env.sample .env
 
-# Example for a project with dotenv.sample.txt
+# Пример для проекта с dotenv.sample.txt
 cp dotenv.sample.txt .env
 ```
 
 :::warning
-**Никогда не коммитьте файлы `.env` в систему контроля версий.** Они содержат секреты, такие как учётные данные базы данных, ключи API и секреты JWT. Все проекты ChurchApps включают `.env` в `.gitignore`, но всегда перепроверяйте перед коммитом.
+**Никогда не добавляйте файлы `.env` в систему контроля версий.** Они содержат секреты, такие как учетные данные базы данных, API-ключи и JWT-секреты. Все проекты ChurchApps включают `.env` в `.gitignore`, но всегда проверяйте перед коммитом.
 :::
 
 ## Выбор цели API
 
-Самое важное решение — куда ваш фронтенд отправляет запросы к API. Есть два варианта:
+Самое важное решение — куда будет обращаться фронтенд для вызовов API. Есть два варианта:
 
-### Вариант 1: демо-API (рекомендуется для разработки фронтенда)
+### Вариант 1: demo API (рекомендуется для разработки фронтенда)
 
-Используйте общую демо-среду. Не нужны ни локальный API, ни настройка базы данных. Она работает на последней версии кода из `main`, а её демонстрационные данные обновляются каждую ночь.
+Используйте общее demo-окружение. Локальный API и настройка базы данных не требуются. Оно работает на последнем коде из `main`, а его тестовые данные обновляются каждую ночь.
 
 ```bash
-# Base URL pattern
+# Шаблон базового URL
 https://api.demo.churchapps.org/{module}
 
-# Example module URLs
+# Примеры URL модулей
 https://api.demo.churchapps.org/membership
 https://api.demo.churchapps.org/attendance
 https://api.demo.churchapps.org/content
@@ -60,18 +60,18 @@ https://api.demo.churchapps.org/doing
 ```
 
 :::warning
-Тестовая среда (`api.staging.churchapps.org`, `api.staging.lessons.church` и связанные хосты) выведена из эксплуатации. Некоторые примеры файлов `.env` могут всё ещё содержать URL тестовой среды; замените их демо- или локальными значениями, указанными на этой странице. Общего непроизводственного API Lessons нет -- запустите [LessonsApi](https://github.com/ChurchApps/LessonsApi) локально (он слушает порт `8090`), если он вам нужен.
+Тестовое окружение (`api.staging.churchapps.org`, `api.staging.lessons.church` и связанные хосты) выведено из эксплуатации. Некоторые примеры файлов `.env` могут всё ещё содержать URL тестового окружения; замените их значениями demo или локального API, показанными на этой странице. Общего непроизводственного API Lessons больше нет — если он вам нужен, запустите [LessonsApi](https://github.com/ChurchApps/LessonsApi) локально (он слушает порт `8090`).
 :::
 
 ### Вариант 2: локальный API
 
-Запустите проект Api на своей машине. Требуется MySQL 8.0+ с базами данных, созданными для каждого модуля. См. руководство [Локальная настройка API](../api/local-setup.md).
+Запустите проект Api на своем компьютере. Требуется MySQL 8.0+ с базами данных, созданными для каждого модуля. См. руководство [локальной настройке API](../api/local-setup.md).
 
 ```bash
-# Base URL pattern
+# Шаблон базового URL
 http://localhost:8084/{module}
 
-# Example module URLs
+# Примеры URL модулей
 http://localhost:8084/membership
 http://localhost:8084/attendance
 http://localhost:8084/content
@@ -84,7 +84,7 @@ http://localhost:8084/doing
 
 ## Переменные окружения API
 
-Основной проект **Api** (`.env.sample`) имеет самую обширную конфигурацию. Вот ключевые переменные:
+В основном проекте **Api** (`.env.sample`) больше всего настроек. Вот ключевые переменные:
 
 ### Общие настройки
 
@@ -95,18 +95,18 @@ http://localhost:8084/doing
 | `ENCRYPTION_KEY` | 192-битный ключ шифрования для конфиденциальных данных | `aSecretKeyOfExactly192BitsLength` |
 | `JWT_SECRET` | Секрет для подписи JSON Web Tokens | `jwt-secret-dev` |
 | `FILE_STORE` | Где хранить загруженные файлы (`disk` или `s3`) | `disk` |
-| `CORS_ORIGIN` | Разрешённые источники CORS (`*` для локальной разработки) | `*` |
+| `CORS_ORIGIN` | Разрешенные источники CORS (`*` для локальной разработки) | `*` |
 
 ### Подключение к базе данных
 
-Один базовый URL указывает API на MySQL. API создаёт отдельную базу данных для каждого модуля (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`) на основе этого базового URL.
+Один базовый URL указывает API на MySQL. API создает отдельную базу данных для каждого модуля (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`) на основе этого базового URL.
 
 | Переменная | Пример |
 |----------|---------|
 | `API_DATABASE_URL` | `mysql://root:password@localhost:3306` |
 
 :::tip
-Замените `root:password` на ваши реальные учётные данные MySQL. Каждая база данных модуля должна существовать до запуска API. Используйте `npm run initdb`, чтобы создать схему для всех модулей, или `npm run initdb:membership` для одного модуля.
+Замените `root:password` на ваши реальные учетные данные MySQL. Каждая база данных модуля должна существовать до запуска API. Используйте `npm run initdb`, чтобы создать схему для всех модулей, или `npm run initdb:membership` для одного модуля.
 :::
 
 ### Настройки WebSocket
@@ -114,7 +114,7 @@ http://localhost:8084/doing
 | Переменная | Описание | Пример |
 |----------|-------------|---------|
 | `SOCKET_PORT` | Порт сервера WebSocket | `8087` |
-| `SOCKET_URL` | URL WebSocket для подключения клиентов | `ws://localhost:8087` |
+| `SOCKET_URL` | URL WebSocket, к которому подключаются клиенты | `ws://localhost:8087` |
 
 ---
 
@@ -122,15 +122,15 @@ http://localhost:8084/doing
 
 ### B1Admin (React + Vite)
 
-Файл-образец: `.env.sample`
+Файл-пример: `.env.sample`
 
-| Переменная | Описание | Пример (демо) |
+| Переменная | Описание | Пример (Demo) |
 |----------|-------------|----------------|
-| `REACT_APP_STAGE` | Название среды | `demo` |
+| `REACT_APP_STAGE` | Название окружения | `demo` |
 | `PORT` | Порт сервера разработки | `3101` |
 | `REACT_APP_API_BASE` | Единый базовый URL для всех API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` добавляются автоматически) | `https://api.demo.churchapps.org` |
 | `REACT_APP_CONTENT_ROOT` | URL доставки контента | `https://democontent.churchapps.org` |
-| `REACT_APP_GOOGLE_ANALYTICS` | ID Google Analytics (необязательно) | `UA-123456789-1` |
+| `REACT_APP_GOOGLE_ANALYTICS` | Идентификатор Google Analytics (необязательно) | `UA-123456789-1` |
 
 Для разработки с локальным API укажите базовый URL на ваш локальный стек:
 
@@ -140,13 +140,13 @@ REACT_APP_API_BASE=http://localhost:8084
 
 ### B1App (Next.js)
 
-Файл-образец: `.env.sample`
+Файл-пример: `.env.sample`
 
-| Переменная | Описание | Пример (демо) |
+| Переменная | Описание | Пример (Demo) |
 |----------|-------------|----------------|
 | `NEXT_PUBLIC_API_BASE` | Единый базовый URL для всех API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` добавляются автоматически) | `https://api.demo.churchapps.org` |
 | `NEXT_PUBLIC_CONTENT_ROOT` | URL доставки контента | `https://democontent.churchapps.org` |
-| `NEXT_PUBLIC_GOOGLE_ANALYTICS` | ID Google Analytics (необязательно) | `UA-123456789-1` |
+| `NEXT_PUBLIC_GOOGLE_ANALYTICS` | Идентификатор Google Analytics (необязательно) | `UA-123456789-1` |
 
 :::info
 Next.js требует префикс `NEXT_PUBLIC_` для любой переменной окружения, которая должна быть доступна в браузере. Переменные, используемые только на сервере, этот префикс не требуют.
@@ -154,45 +154,42 @@ Next.js требует префикс `NEXT_PUBLIC_` для любой пере�
 
 ### LessonsApp (Next.js)
 
-Файл-образец: `dotenv.sample.txt`
+Файл-пример: `dotenv.sample.txt`
 
 | Переменная | Описание | Пример (локальный LessonsApi) |
 |----------|-------------|----------------------------|
-| `STAGE` | Стадия среды (оставьте неустановленной или `dev` для локальной разработки) | `dev` |
+| `STAGE` | Стадия окружения (оставьте неустановленной или `dev` для локальной разработки) | `dev` |
 | `NEXT_PUBLIC_LESSONS_API` | URL API Lessons | `http://localhost:8090` |
 | `NEXT_PUBLIC_CONTENT_ROOT` | URL доставки контента | `http://localhost:8090/content` |
-| `NEXT_PUBLIC_API_BASE` | Базовый URL API ChurchApps для входа (учитывается только если `STAGE` не задан или равен `dev`) | `https://api.demo.churchapps.org` |
+| `NEXT_PUBLIC_API_BASE` | Базовый URL API ChurchApps, используемый для входа (учитывается только если `STAGE` не задан или равен `dev`) | `https://api.demo.churchapps.org` |
 
 ---
 
 ## Переменные окружения мобильных приложений
 
-### B1Mobile (React Native / Expo)
+### B1Checkin (React Native / Expo)
 
-Файл-образец: `dotenv.sample.txt`
+Файл-пример: `dotenv.sample.txt`
 
-| Переменная | Описание | Пример (демо) |
-|----------|-------------|----------------|
-| `STAGE` | Название среды | `dev` |
-| `MEMBERSHIP_API`, `ATTENDANCE_API`, `GIVING_API`, `DOING_API`, `MESSAGING_API`, `CONTENT_API` | Один URL на каждый модуль API ChurchApps (каждый по умолчанию указывает на производственную среду, если не задан) | `https://api.demo.churchapps.org/membership` |
-| `LESSONS_API` | API Lessons (отдельный хост; общего непроизводственного нет) | `https://api.lessons.church` |
-| `CONTENT_ROOT` | URL доставки контента | `https://democontent.churchapps.org` |
-| `LESSONS_ROOT` | URL сайта Lessons | `https://lessons.church` |
+| Переменная | Описание | Пример |
+|----------|-------------|---------|
+| `EXPO_PUBLIC_STAGE` | Выбирает набор API, к которому подключается приложение: `dev` (локальный API по адресу `http://127.0.0.1:8084`), `staging` или `prod` (по умолчанию, если не задано) | `dev` |
+
+B1Checkin использует только модули API Membership и Attendance, а также URL доставки контента; их адреса для каждой стадии задаются в `src/helpers/EnvironmentHelper.ts`.
 
 :::info
-Мобильные приложения не используют префиксы `REACT_APP_` или `NEXT_PUBLIC_`. Доступ к переменным окружения обеспечивается конфигурацией Expo.
+Expo встраивает в бандл приложения только переменные с префиксом `EXPO_PUBLIC_`. После изменения `.env` перезапустите сервер разработки командой `yarn start --reset-cache`.
 :::
 
 ---
 
-## Краткий справочник: расположение файлов-образцов
+## Краткая справка: расположение файлов-примеров
 
-| Проект | Файл-образец |
+| Проект | Файл-пример |
 |---------|-------------|
 | Api | `.env.sample` |
 | B1Admin | `.env.sample` |
 | B1App | `.env.sample` |
-| B1Mobile | `dotenv.sample.txt` |
 | B1Checkin | `dotenv.sample.txt` |
 | LessonsApp | `dotenv.sample.txt` |
 | AskApi | `dotenv.sample.txt` |

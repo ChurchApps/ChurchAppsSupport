@@ -1,58 +1,60 @@
 ---
 title: "Külső szolgáltatók"
-description: "Hogyan adnak hozzá harmadik féltől származó szolgáltatók tartalmat a Lessons.churchhez a Nyílt Lecke Formátummal, és hogyan csatlakoztathat egyet."
+description: "Hogyan osztják meg a harmadik fél tantervi szolgáltatói a leckéket a Nyílt Leckeformátumon keresztül, és hogyan adja hozzá a gyülekezete a Lessons.church-ben, majd ütemezze a leckéit."
 ---
 
 # Külső szolgáltatók
 
 <div class="article-intro">
 
-A Lessons.church nincs korlátozva a saját tananyagára. Harmadik féltől származó tananyag-szolgáltatók a tartalmaikat a **Nyílt Lecke Formátumban** tehetik közzé, és ez a tartalom a Lessons.church beépített programjai mellett jelenik meg, egységes böngészési élményt nyújtva.
+A Lessons.church nincs saját tantervre korlátozva. Harmadik fél tantervi szolgáltatói a tartalmukat a **Nyílt Leckeformátumon** keresztül tehetik közzé. Miután a gyülekezete hozzáadott egy szolgáltatót, a lecke­sorozatait a Lessons.church könyvtára mellett ütemezheti a foglalkozótermeihez.
 
 </div>
 
 <div class="prereqs">
-<h4>Mielőtt elkezdené</h4>
+<h4>Mielőtt elkezdi</h4>
 
 - Ismerje meg, hogyan szerveződik a tartalom a [Programok és tanulmányok](./programs-and-studies.md) oldal elolvasásával
-- Szolgáltató-kapcsolat hozzáadásához szükség van egy [Lessons.church-fiókra](../getting-started/creating-account.md), amely hozzáfér a gyülekezete portáljához
+- Szolgáltatókapcsolat hozzáadásához szükséges egy [Lessons.church-fiók](../getting-started/creating-account.md), amely hozzáférést biztosít a gyülekezete foglalkozótermeinek ütemezéseihez
 
 </div>
 
 ## Mik a külső szolgáltatók?
 
-A külső szolgáltató bármely olyan szervezet, amely a Nyílt Lecke Formátumot használva tesz közzé gyülekezeti tananyagot – ez egy szabvány, amely lehetővé teszi a leckék tartalmának platformok közötti megosztását. Amikor egy szolgáltató ebben a formátumban teszi elérhetővé tartalmát, a Lessons.church be tudja húzni, és ugyanúgy meg tudja jeleníteni, mint a saját programjait.
+A külső szolgáltató bármely olyan szervezet, amely a Nyílt Leckeformátumot használva tesz közzé gyülekezeti tantervet – ez egy szabvány, amely lehetővé teszi, hogy a leckék tartalma platformok között megosztható legyen. Amikor egy szolgáltató ebben a formátumban teszi elérhetővé a tartalmát, a Lessons.church képes azt beolvasni, és ugyanazzal az elrendezéssel jeleníti meg a leckéit, mint a saját leckéit.
 
-Ez azt jelenti, hogy több tananyag-választékhoz férhet hozzá anélkül, hogy több weboldalt kellene felkeresnie.
+Ez azt jelenti, hogy több tantervi választékhoz fér hozzá anélkül, hogy több weboldalt kellene felkeresnie.
 
-## Külső tartalom böngészése
+## Szolgáltatókapcsolatok hozzáadása
 
-A külső szolgáltatók tartalma pontosan úgy működik, mint a beépített tartalom:
-
-1. A külső szolgáltatók programjai a Lessons.church főoldalán jelennek meg a többi program mellett.
-2. Kattintson egy **programra**, hogy lássa a hozzá tartozó tanulmányokat.
-3. Kattintson egy **tanulmányra**, hogy lássa a leckéit.
-4. A leckéket ugyanazzal az elrendezéssel tekintheti meg – szakaszok, szerepkörök, műveletek, videók és letölthető anyagok.
-
-A külső tartalomhoz nincs külön eljárás vagy különálló szakasz. Minden egy közös könyvtárban található, a könnyű böngészés érdekében.
-
-## Szolgáltató-kapcsolatok hozzáadása
-
-Ha gyülekezete olyan tananyag-szolgáltatót használ, amely támogatja a Nyílt Lecke Formátumot, és szeretné, hogy a tartalma elérhető legyen a Lessons.church portálján:
+Ha a gyülekezete olyan tantervi szolgáltatót használ, amely támogatja a Nyílt Leckeformátumot:
 
 1. Jelentkezzen be a Lessons.church-fiókjába.
-2. Navigáljon a portál **Külső szolgáltatók** oldalára.
-3. Adja meg a külső szolgáltató kapcsolati URL-címét.
-4. Programjaik és tanulmányaik ezután elérhetővé válnak gyülekezete számára a böngészéshez, ütemezéshez és a termekben (classrooms) való felhasználáshoz.
+2. Kattintson a navigációban a **Külső szolgáltatók** elemre.
+3. Kattintson az **Szolgáltató hozzáadása** gombra, adja meg a **Szolgáltató neve** mezőt és a szolgáltató **API URL-jét**, majd kattintson a **Mentés** gombra.
+
+A teljes lépéseket lásd a [Harmadik fél szolgáltatói](../admin/third-party-providers.md) oldalon.
 
 :::info
-Külső szolgáltató-kapcsolatot a Lessons.church portálon keresztül lehet hozzáadni, bejelentkezett fiókot igényel. A platform által már hozzáadott tartalom böngészéséhez nincs szükség fiókra.
+A külső szolgáltatót csak az Ön gyülekezete számára adja hozzá. Programjai nem jelennek meg a nyilvános Lessons.church főoldalon vagy a keresésben.
+:::
+
+## Külső tartalom használata
+
+Miután egy szolgáltató hozzá lett adva, programjai, tanulmányai és leckéi ütemezéskor elérhetők lesznek:
+
+1. Amikor [lecke hozzáadása egy foglalkozóterem ütemezéséhez](../classrooms/scheduling-lessons.md), válassza ki a szolgáltatót a **Szolgáltató** alatt.
+2. A **Program**, a **Tanulmány**, a **Lecke** és a **Helyszín** mezőt ugyanúgy válassza ki, mint egy Lessons.church-leckénél.
+3. A foglalkozóterem ütemezésében kattintson az ütemezett külső lecke alatti **Lecke megtekintése** gombra a megnyitásához. Ugyanazt az elrendezést használja, mint a beépített leckék – szakaszok, szerepek, műveletek, videók és letölthető anyagok.
+
+:::note
+A külső szolgáltatók leckéi nem [testreszabhatók](../customization/customizing-lessons.md). Csak a Lessons.church-leckék jelenítik meg a **Testreszabás** hivatkozást.
 :::
 
 ## Tartalomkészítőknek
 
-Ha tananyag-kiadóként szeretné tartalmát elérhetővé tenni a Lessons.church-en, a Nyílt Lecke Formátum szabványos módot kínál programjai, tanulmányai és leckéi megosztására. Vegye fel a kapcsolatot a Lessons.church csapatával, vagy tekintse meg a fejlesztői dokumentációt az integráció részleteiért.
+Ha tantervi kiadóként szeretné elérhetővé tenni tartalmát a Lessons.church-en, a Nyílt Leckeformátum szabványos módot kínál programjai, tanulmányai és leckéi megosztására. Az integrációs részletekért vegye fel a kapcsolatot a Lessons.church csapatával, vagy keresse fel a fejlesztői dokumentációt.
 
 :::tip
-Ha platformszinten harmadik féltől származó szolgáltatói forrásokat kezel adminisztrátorként, tekintse meg a [Harmadik féltől származó szolgáltatók](../admin/third-party-providers.md) oldalt a Rendszergazdai szakaszban.
+A szolgáltató hozzáadásának, szerkesztésének és törlésének lépésenkénti útmutatását lásd a [Harmadik fél szolgáltatói](../admin/third-party-providers.md) oldalon.
 :::

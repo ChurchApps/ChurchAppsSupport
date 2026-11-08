@@ -1,66 +1,66 @@
 ---
-title: "프로필 변경 승인"
-description: "B1 Admin에서 교인의 프로필 변경 요청을 검토하고 승인하며, 이 요청을 받는 디렉터리 승인 그룹을 설정합니다."
+title: "프로필 변경 승인하기"
+description: "B1 Admin에서 구성원의 프로필 변경 요청을 검토하고 승인하며, 이러한 요청을 받는 디렉터리 승인 그룹을 설정합니다."
 ---
 
-# 프로필 변경 승인
+# 프로필 변경 승인하기
 
 <div class="article-intro">
 
-교회에서 프로필 업데이트에 대한 관리자 승인이 필요한 경우, 회원들이 B1 Mobile 앱을 통해 변경사항을 제출하고 이러한 요청은 B1 Admin의 작업으로 나타납니다. 이 가이드는 이들을 검토하고 승인하는 방법을 설명합니다.
+교회에서 프로필 업데이트에 관리자 승인을 요구하는 경우, 구성원은 B1 App을 통해 변경 사항을 제출하고 그 요청은 B1 Admin에 작업으로 나타납니다. 이 가이드에서는 이러한 요청을 검토하고 승인하는 방법을 설명합니다.
 
 </div>
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- **Mobile → Member portal**에서 **Directory Approval Group**으로 지정된 그룹의 멤버여야 합니다.
-- 승인 그룹이 구성되지 않은 경우, 프로필 변경사항이 검토 없이 즉시 적용됩니다.
+- **Mobile &rarr; Member portal**에서 **디렉터리 승인 그룹**으로 지정된 그룹의 구성원이어야 합니다
+- 승인 그룹이 설정되지 않은 경우, 프로필 변경 사항은 검토 없이 즉시 적용됩니다
 
 </div>
 
-## 보류 중인 요청 찾기
+## 처리 대기 중인 요청 찾기
 
-회원이 프로필 변경을 제출하면, 승인 그룹에 할당된 작업으로 나타납니다. 두 곳에서 찾을 수 있습니다:
+구성원이 프로필 변경을 제출하면, 승인 그룹에 할당된 작업으로 나타납니다. 다음 두 곳에서 찾을 수 있습니다:
 
-**Dashboard(홈 페이지)에서:**
-1. B1 Admin에 로그인하세요 -- Dashboard가 자동으로 로드됩니다.
-2. **My tasks** 섹션에서 **All tasks**를 클릭하세요. (My tasks에는 나에게 할당된 열린 작업만 나열됩니다.)
-3. **Assigned to My Groups** 탭을 클릭하세요. 보류 중인 프로필 변경 요청이 나열됩니다.
+**대시보드(홈 페이지)에서:**
+1. B1 Admin에 로그인합니다 — 대시보드가 자동으로 로드됩니다.
+2. **내 작업** 섹션에서 **모든 작업**을 클릭합니다. (내 작업에는 나에게 개별적으로 할당된 열린 작업만 표시됩니다.)
+3. **내 그룹에 할당됨** 탭을 클릭합니다. 처리 대기 중인 프로필 변경 요청이 여기에 나열됩니다.
 
-**Serving → My Work에서:**
-1. B1 Admin의 왼쪽 상단에 있는 검색 모음인 [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu)를 열고 **Serving**을 확장하세요.
-2. **My Work**를 클릭하세요.
-3. Tasks 아래의 **Assigned to My Groups** 탭을 클릭하세요.
+**Serving &rarr; My Work에서:**
+1. [Jump 메뉴](../introduction.md#getting-around-with-the-jump-menu)(B1 Admin 왼쪽 상단의 검색창)를 열고 **Serving**을 펼칩니다.
+2. **My Work**를 클릭합니다.
+3. 작업 아래의 **내 그룹에 할당됨** 탭을 클릭합니다.
 
-## 요청 검토 및 승인
+## 요청 검토 및 승인하기
 
-1. **Profile Update** 작업을 클릭하여 열으세요.
-2. **Requested Changes** 아래에서 회원이 업데이트하려는 각 필드와 제출한 새 값을 볼 수 있습니다.
-3. 변경사항을 검토하세요.
-4. **Apply**를 클릭하여 변경사항을 승인하고 프로필에 저장하세요.
+1. **Profile Update** 작업을 클릭하여 엽니다.
+2. **요청된 변경 사항** 아래에서 구성원이 업데이트하려는 각 필드와 제출한 새 값을 확인할 수 있습니다.
+3. 변경 사항을 검토합니다.
+4. **적용**을 클릭하여 변경 사항을 승인하고 해당 구성원의 프로필에 저장합니다.
 
-작업은 변경사항이 적용되면 자동으로 닫힙니다.
+변경 사항이 적용되면 작업은 자동으로 닫힙니다.
 
-## 승인 그룹 설정
+## 승인 그룹 설정하기
 
-교회에서 프로필 변경에 승인이 필요하도록 하려면, 먼저 Directory Approval Group이 구성되어야 합니다.
+교회에서 프로필 변경에 승인이 필요하도록 하려면, 먼저 디렉터리 승인 그룹을 설정해야 합니다.
 
-1. Jump 메뉴를 열고 **Mobile**을 확장하세요.
-2. **Member portal**("Portal settings" 페이지)를 클릭하세요.
-3. **Directory Approval Group** 아래에서 프로필 변경 요청을 검토해야 하는 그룹을 선택하세요.
-4. **Save**를 클릭하세요.
+1. Jump 메뉴를 열고 **Mobile**을 펼칩니다.
+2. **Member portal**(“Portal settings” 페이지)을 클릭합니다.
+3. **디렉터리 승인 그룹** 아래에서 프로필 변경 요청을 검토할 구성원이 속한 그룹을 선택합니다.
+4. **저장**을 클릭합니다.
 
-해당 그룹의 모든 멤버는 Dashboard의 **Assigned to My Groups** 아래에서 들어오는 프로필 변경 요청을 볼 수 있습니다.
+해당 그룹의 구성원은 대시보드의 **내 그룹에 할당됨** 아래에서 들어오는 프로필 변경 요청을 보게 됩니다.
 
-같은 Directory Approval Group은 **계정 삭제 요청**도 검토합니다 -- [Reviewing Account Deletion Requests](./account-deletion.md)를 참고하세요.
+같은 디렉터리 승인 그룹이 **계정 삭제 요청**도 검토합니다 — [계정 삭제 요청 검토하기](./account-deletion.md)를 참조하세요.
 
 :::tip
-승인자가 실제로 구성된 그룹의 멤버인지 확인하세요 -- 그룹 멤버만 요청을 볼 수 있습니다.
+승인자가 실제로 설정된 그룹의 구성원인지 확인하세요 — 그룹 구성원만 요청을 볼 수 있습니다.
 :::
 
 ## 관련 문서
 
-- [Managing Your Profile](./managing-profile.md) -- 자신의 계정 설정 편집
-- [Reviewing Account Deletion Requests](./account-deletion.md) -- 계정 삭제에 대한 동일한 승인 그룹 검토 흐름
-- [B1 Mobile Settings](../../b1-church/getting-started/editing-your-profile.md) -- 회원이 프로필 변경을 제출할 때 보는 내용
+- [프로필 관리하기](./managing-profile.md) — 본인의 계정 설정 편집
+- [계정 삭제 요청 검토하기](./account-deletion.md) — 계정 삭제에 대한 동일한 승인 그룹 검토 절차
+- [프로필 편집하기](../../b1-church/getting-started/editing-your-profile.md) — 구성원이 프로필 변경을 제출했을 때 보게 되는 화면

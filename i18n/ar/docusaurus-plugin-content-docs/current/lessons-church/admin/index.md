@@ -1,47 +1,47 @@
 ---
-title: "Administración"
-description: "نظرة عامة على منطقة إدارة Lessons.church في ChurchApps، وتشمل إدارة البرامج والدراسات والدروس والموارد والإحصائيات ومزودي المناهج الخارجيين."
+title: "الإدارة"
+description: "نظرة عامة على منطقة إدارة Lessons.church ضمن ChurchApps، وتشمل كيفية إدارة البرامج والدراسات والدروس والموارد والإحصائيات ومزودي المناهج الخارجيين."
 ---
 
-# Administración
+# الإدارة
 
 <div class="article-intro">
 
-El área de administración en Lessons.church es donde los creadores de contenido y los administradores gestionan la biblioteca de lecciones. Desde aquí puedes construir la estructura de tu currículo, subir recursos, revisar las estadísticas de uso y conectar proveedores de contenido de terceros.
+منطقة الإدارة في Lessons.church هي المكان الذي يدير فيه منشئو المحتوى والمسؤولون مكتبة الدروس. من هنا يمكنك بناء هيكل المنهج الخاص بك، ورفع الموارد، ومراجعة إحصائيات الاستخدام، وربط مزودي المحتوى الخارجيين.
 
 </div>
 
 :::warning
-El acceso de administrador requiere los permisos correspondientes. Si no ves las opciones de administración, comunícate con el administrador de tu iglesia para solicitar acceso.
+يتطلب الوصول إلى الإدارة صلاحيات مناسبة. إذا لم تظهر لك خيارات الإدارة، فتواصل مع مسؤول كنيستك لطلب الوصول.
 :::
 
-## Qué puedes hacer
+## ما يمكنك القيام به
 
-El área de administración te da control total sobre tu contenido:
+تمنحك منطقة الإدارة تحكمًا كاملًا في محتواك:
 
-- **Crear y editar programas** -- Configura series curriculares de nivel superior con nombres, descripciones, imágenes y slugs.
-- **Gestionar estudios** -- Organiza grupos de lecciones relacionadas dentro de cada programa.
-- **Crear lecciones** -- Agrega lecciones individuales con venues, secciones, roles y acciones.
-- **Subir recursos** -- Adjunta archivos descargables (PDF, hojas de actividades, imágenes) a nivel de programa, estudio o lección.
-- **Ver estadísticas** -- Consulta qué contenido se descarga, quién lo descarga y desde dónde.
-- **Configurar proveedores** -- Conecta proveedores de currículo externos que utilicen el Open Lesson Format.
-- **Planes anuales** -- Publica secuencias de semana 1, 2, 3… para cualquier currículo. Las iglesias los aplican en B1 Admin.
+- **إنشاء البرامج وتعديلها** -- إعداد سلاسل المناهج الرئيسية بأسمائها وأوصافها وصورها ومعرّفاتها النصية (slugs).
+- **إدارة الدراسات** -- تنظيم مجموعات الدروس المرتبطة داخل كل برنامج.
+- **بناء الدروس** -- إضافة دروس فردية مع الأماكن والأقسام والأدوار والإجراءات.
+- **رفع الموارد** -- إرفاق ملفات قابلة للتنزيل (ملفات PDF، وأوراق الأنشطة، والصور) على مستوى البرنامج أو الدراسة أو الدرس.
+- **عرض الإحصائيات** -- معرفة المحتوى الذي يتم تنزيله، ومن قام بتنزيله، وأين.
+- **إعداد المزودين** -- ربط مزودي المناهج الخارجيين الذين يستخدمون تنسيق الدروس المفتوحة (Open Lesson Format). يتم ذلك من صفحة **المزودون الخارجيون**، وليس من منطقة الإدارة.
+- **خطط السنة** -- نشر تسلسلات الأسبوع 1 و2 و3… لأي منهج. تطبّقها الكنائس في B1 Admin.
 
-## Jerarquía del contenido
+## هيكل المحتوى
 
-Como administrador, conviene entender cómo está estructurado el contenido:
+بصفتك مسؤولًا، من المفيد أن تفهم كيفية تنظيم المحتوى:
 
-1. **Los programas** contienen uno o más estudios.
-2. **Los estudios** contienen una o más lecciones.
-3. **Las lecciones** contienen uno o más venues (variaciones por grupo de edad).
-4. **Los venues** contienen secciones, y las secciones contienen acciones basadas en roles.
+1. **البرامج** تحتوي على دراسة واحدة أو أكثر.
+2. **الدراسات** تحتوي على درس واحد أو أكثر.
+3. **الدروس** تحتوي على مكان واحد أو أكثر (تنويعات حسب الفئة العمرية).
+4. **الأماكن** تحتوي على أقسام، والأقسام تحتوي على إجراءات مرتبطة بالأدوار.
 
-Cada nivel puede tener sus propios recursos descargables adjuntos.
+يمكن أن يكون لكل مستوى موارده القابلة للتنزيل الخاصة به.
 
-## Próximos pasos
+## الخطوات التالية
 
-- [Gestionar programas](./managing-programs.md) -- Crear y configurar programas
-- [Gestionar estudios](./managing-studies.md) -- Agregar estudios dentro de un programa
-- [Gestionar lecciones](./managing-lessons.md) -- Construir lecciones con venues, secciones y acciones
-- [Estadísticas](./statistics.md) -- Revisar los datos de descargas y uso
-- [Proveedores de terceros](./third-party-providers.md) -- Conectar fuentes de currículo externas
+- [إدارة البرامج](./managing-programs.md) -- إنشاء البرامج وإعدادها
+- [إدارة الدراسات](./managing-studies.md) -- إضافة دراسات داخل برنامج
+- [إدارة الدروس](./managing-lessons.md) -- بناء الدروس مع الأماكن والأقسام والإجراءات
+- [الإحصائيات](./statistics.md) -- مراجعة بيانات التنزيل والاستخدام
+- [المزودون الخارجيون](./third-party-providers.md) -- ربط مصادر المناهج الخارجية

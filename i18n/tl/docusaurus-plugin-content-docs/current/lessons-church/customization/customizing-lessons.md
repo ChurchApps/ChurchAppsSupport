@@ -1,76 +1,91 @@
 ---
 title: "Pag-customize ng mga Aralin"
-description: "Alisin, itago, o ayusin ang sections at roles sa aralin ng Lessons.church, at piliin kung ang pagbabago ay para sa isang classroom o lahat ng classroom."
+description: "Mag-alis o mag-ayos muli ng mga seksyon, tungkulin, at aksyon sa isang aralin ng Lessons.church, at piliin kung ang bawat pagbabago ay ilalapat sa isang silid-aralan o sa lahat ng silid-aralan."
 ---
 
 # Pag-customize ng mga Aralin
 
 <div class="article-intro">
 
-Ginagabayan ka ng gabay na ito sa pag-customize ng isang aralin para sa iyong silid-aralan. Ang mga customization ay nagbibigay-daan sa iyo na alisin, itago, o ayusin muli ang nilalaman upang makita ng iyong mga boluntaryo ang eksaktong kailangan nila -- wala nang labis, wala nang kulang.
+Ginagabayan ka ng gabay na ito sa pag-customize ng isang aralin para sa iyong silid-aralan. Pinapayagan ka ng mga customization na mag-alis o mag-ayos muli ng nilalaman upang makita ng iyong mga boluntaryo ang eksaktong kailangan nila -- wala nang higit, wala nang kulang.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- [Mag-set up ng hindi bababa sa isang silid-aralan](../classrooms/setting-up-classrooms.md) sa portal
-- [Mag-iskedyul ng aralin](../classrooms/scheduling-lessons.md) sa silid-aralan na gusto mong i-customize
-- Basahin ang [Pangkalahatang-tanaw ng Pag-customize](./index.md) upang maunawaan kung ano ang maaaring i-customize
+- [I-set up ang kahit isang silid-aralan](../classrooms/setting-up-classrooms.md) sa portal
+- [Mag-iskedyul ng aralin](../classrooms/scheduling-lessons.md) sa silid-aralang nais mong i-customize
+- Basahin ang [Pangkalahatang-ideya ng customization](./index.md) upang maunawaan kung ano ang maaaring i-customize
 
 </div>
 
-## Pagbukas ng Customization View
+## Pagbubukas ng Customization View
 
-1. Mag-log in at mag-navigate sa iyong **Portal**.
-2. Piliin ang **silid-aralan** na may aralin na gusto mong i-customize.
-3. Mag-click sa **naka-iskedyul na aralin** upang buksan ito.
-4. I-click ang **Customize** upang pumasok sa customization view.
+1. Mag-log in at pumunta sa iyong **Portal**.
+2. Piliin ang **silid-aralan** na may aralin na nais mong i-customize.
+3. Sa iskedyul ng silid-aralan, hanapin ang aralin at i-click ang **Customize** sa ibaba ng pangalan nito.
 
-Makikita mo ang buong nilalaman ng aralin na nahahati sa mga seksyon, tungkulin, at aksyon.
+Inilalista ng pahinang **Customize Lesson** ang mga seksyon ng aralin, kasama ang tungkulin ng bawat seksyon at ang mga aksyon ng bawat tungkulin sa ilalim nito. May mga button sa kanan ng bawat hanay:
+
+- **Up arrow** at **Down arrow** -- Ilipat ang item ng isang puwesto pataas o pababa sa mga katabi nito
+- **Delete** (trash can) -- Alisin ang item
+
+:::info
+Lumalabas lamang ang **Customize** para sa mga aralin ng Lessons.church. Ang mga aralin na naka-iskedyul mula sa panlabas na provider ay nagpapakita ng **View Lesson** sa halip at hindi maaaring i-customize.
+:::
+
+## Pagpili Kung Saan Ilalapat ang Pagbabago
+
+Sa tuwing mag-click ka ng arrow o ng trash can, magtatanong ang isang menu ng **Apply selected customization to:**
+
+- **This Classroom** -- Ilalapat ang pagbabago sa kasalukuyang silid-aralan lamang. Hindi maaapektuhan ang iba pang silid-aralan.
+- **All the Classrooms** -- Ilalapat ang pagbabago sa bawat silid-aralan sa iyong simbahan.
+
+Pumili ng isa at agad na mase-save ang pagbabago. Walang hiwalay na hakbang ng pag-save.
 
 ## Pag-alis ng mga Seksyon
 
-Kung ang isang seksyon ay hindi naaangkop sa iyong silid-aralan, maaari mo itong alisin nang buo. Ito ay kapaki-pakinabang kapag ang isang aralin ay may kasamang nilalaman para sa maraming grupo ng edad at isa lang ang kailangan mo. Halimbawa, kung ang isang aralin ay may parehong "Preschool Activity" at "Elementary Activity" na seksyon, maaari mong alisin ang hindi angkop sa iyong silid.
+Kung hindi angkop ang isang seksyon sa iyong silid-aralan, maaari mo itong ganap na alisin. Kapaki-pakinabang ito kapag may nilalaman ang aralin para sa maraming pangkat ng edad at isa lamang ang kailangan mo. Halimbawa, kung may parehong seksyong "Preschool Activity" at "Elementary Activity" ang isang aralin, maaari mong alisin ang alinman na hindi akma sa iyong silid.
 
-1. Hanapin ang seksyon na gusto mong alisin.
-2. Mag-click upang **alisin** o **itago** ang seksyon.
-3. Ang seksyon ay hindi na lalabas para sa mga boluntaryo na tumitingin ng aralin na ito.
+1. Hanapin ang seksyong nais mong alisin.
+2. I-click ang button na **Delete** (trash can) nito.
+3. Piliin ang **This Classroom** o **All the Classrooms**.
 
-## Pagtago ng mga Tungkulin o Aksyon
+Ipapakitang tinanggal na ang seksyon, kasama ang lahat ng tungkulin at aksyon nito, at hindi na ito makikita ng mga boluntaryo para sa aralin na ito.
 
-Sa loob ng isang seksyon, maaari mong itago ang mga partikular na tungkulin o aksyon. Halimbawa, kung ang isang seksyon ay may kasamang tungkuling "Worship Leader" ngunit wala ang iyong silid-aralan nito, maaari mong itago lang ang tungkulin na iyon nang hindi inaalis ang buong seksyon.
+## Pag-alis ng mga Tungkulin o Aksyon
 
-1. Palawakin ang seksyon upang makita ang mga tungkulin at aksyon nito.
-2. Mag-click upang **itago** ang anumang tungkulin o aksyon na hindi mo kailangan.
+Sa loob ng isang seksyon, maaari mong alisin ang mga partikular na tungkulin o aksyon. Halimbawa, kung may tungkuling "Worship Leader" ang isang seksyon ngunit walang ganoong tungkulin ang iyong silid-aralan, maaari mo lamang alisin ang tungkuling iyon nang hindi inaalis ang buong seksyon.
+
+1. Hanapin ang tungkulin o aksyon sa listahan sa ilalim ng seksyon nito.
+2. I-click ang button na **Delete** (trash can) nito at piliin kung saan ilalapat ang pagbabago.
 
 ## Pag-aayos Muli ng Nilalaman
 
-Maaari mong ayusin muli ang mga seksyon at aksyon upang tumugma sa daloy na gusto mo:
+Maaari mong ayusin muli ang mga seksyon, tungkulin, at aksyon upang tumugma sa daloy na gusto mo:
 
-1. I-drag ang mga seksyon o aksyon upang ilipat ang mga ito pataas o pababa sa pagkakasunud-sunod.
-2. Ang bagong pagkakasunud-sunod ang makikita ng iyong mga boluntaryo kapag tinitingnan nila ang aralin.
+1. I-click ang **Up arrow** o **Down arrow** sa item na nais mong ilipat.
+2. Piliin kung saan ilalapat ang pagbabago. Magpapalit ng puwesto ang item at ang katabi nito.
 
-## Pag-save ng Iyong Customization
+Ulitin hanggang maayos ang mga item ayon sa nais mong pagkakasunod-sunod. Ang bagong pagkakasunod-sunod ang makikita ng iyong mga boluntaryo kapag tinitingnan nila ang aralin.
 
-Kapag tapos ka nang gumawa ng mga pagbabago, i-save ang customization. Tatanungin ka kung paano ito maaangkop:
+## Pagbawi ng Pagtanggal
 
-- **Sa silid-aralan na ito lamang** -- Ang mga pagbabago ay naaangkop sa kasalukuyang silid-aralan lamang. Ang ibang mga silid-aralan ay hindi maaapektuhan.
-- **Sa lahat ng silid-aralan** -- Ang mga pagbabago ay naaangkop sa bawat silid-aralan sa iyong simbahan.
-- **Alisin ang customization** -- Kung dati mong na-customize ang aralin na ito at gusto mong bumalik sa orihinal na nilalaman, piliin ang opsyon na ito upang i-clear ang iyong mga pagbabago.
+Upang maibalik ang item na inalis mo, i-click muli ang button nitong **Delete**. Idaragdag na rin ng menu ang opsyong **None**. Piliin ang **None** upang alisin ang pagtanggal at ipakitang muli ang item, o pumili ng isa pang opsyon upang baguhin kung saan ilalapat ang pagtanggal.
 
 :::tip
-Magsimula sa pag-customize ng isang aralin para sa isang silid-aralan. Kapag kumportable ka na sa proseso, maaari kang mag-apply ng mga customization nang mas malawak sa lahat ng silid-aralan.
+Magsimula sa pag-customize ng isang aralin para sa isang silid-aralan. Kapag sanay ka na sa proseso, maaari mo nang ilapat ang mga customization nang mas malawak sa lahat ng silid-aralan.
 :::
 
 ## Kailan Mag-customize
 
-Ang customization ay pinakakapaki-pakinabang kapag:
+Pinakakapaki-pakinabang ang customization kapag:
 
-- Ang isang aralin ay may nilalaman para sa maraming grupo ng edad at gusto mong ipakita lang ang mga nauugnay na bahagi.
-- Ang iyong silid-aralan ay hindi gumagamit ng ilang tungkulin (tulad ng isang dedicated na worship leader o tech volunteer).
-- Mas gusto mo ng ibang pagkakasunud-sunod para sa daloy ng aralin kaysa sa ibinigay bilang default.
+- May nilalaman ang aralin para sa maraming pangkat ng edad at gusto mong ipakita lamang ang mga bahaging may kaugnayan.
+- Hindi gumagamit ang iyong silid-aralan ng ilang tungkulin (tulad ng nakalaang worship leader o tech volunteer).
+- Mas gusto mo ang ibang pagkakasunod-sunod ng daloy ng aralin kaysa sa default.
 
 :::info
-Hindi mo kailangang i-customize ang bawat aralin. Kung ang nilalaman ay gumagana as-is para sa iyong silid-aralan, maaari mong laktawan ang hakbang na ito at direktang pumunta sa [pagpapahayag](../presenting/index.md).
+Hindi mo kailangang i-customize ang bawat aralin. Kung angkop na ang nilalaman para sa iyong silid-aralan, maaari mong laktawan ang hakbang na ito at dumiretso sa [pagpresenta](../presenting/index.md).
 :::

@@ -1,101 +1,101 @@
 ---
-title: "Průvodce: Správa malých skupin"
-description: "Nastavte malé skupiny, biblické studium a služební týmy v B1 Admin a poté na web B1 zveřejněte kalendář a sekci skupin pro celý sbor."
+title: "Guía: Administrar grupos pequeños"
+description: "Configure grupos pequeños, estudios bíblicos y equipos de ministerio en B1 Admin, y luego publique un calendario general de la iglesia y una sección de grupos en su sitio web de B1."
 ---
 
-# Správa malých skupin
+# Administrar grupos pequeños
 
 <div class="article-intro">
 
-Nastavte malé skupiny, biblická studia nebo služební týmy se správou členů, skupinovými kalendáři a konverzacemi. Zveřejněte na svém webu kalendář akcí celého sboru, aby návštěvníci viděli, co se děje, a členové zůstali v kontaktu prostřednictvím webového portálu a mobilní aplikace.
+Configure grupos pequeños, estudios bíblicos o equipos de ministerio con gestión de miembros, calendarios de grupo y conversaciones. Publique un calendario de eventos de toda la iglesia en su sitio web para que los visitantes vean qué sucede y los miembros puedan mantenerse conectados a través del portal web y la aplicación móvil.
 
 </div>
 
 <div class="prereqs">
-<h4>Než začnete</h4>
+<h4>Antes de comenzar</h4>
 
-- Účet B1 Admin s přístupem správce
-- [Lidé přidaní do adresáře](../people/adding-people.md) (členové skupin nejprve musí existovat)
+- Cuenta de B1 Admin con acceso de administrador
+- [Personas agregadas a su directorio](../people/adding-people.md) (los miembros del grupo deben existir primero)
 
 </div>
 
-## Krok 1: Vytvoření kategorií skupin a skupin
+## Paso 1: Crear categorías y grupos
 
-Uspořádejte skupiny do kategorií, aby je členové snadno našli.
+Organice sus grupos en categorías para que los miembros puedan encontrar fácilmente lo que buscan.
 
-Podle průvodce [Vytváření skupin](../groups/creating-groups.md) proveďte tyto kroky:
+Siga la guía [Creación de grupos](../groups/creating-groups.md) para:
 
-1. Vytvořte kategorie pro uspořádání skupin (např. „Malé skupiny“, „Biblická studia“, „Služební týmy“, „Výbory“)
-2. Vytvořte skupiny v rámci každé kategorie (např. „Úterní mužská skupina“, „Ženské biblické studium“, „Mládežnická služba“)
-3. Ke každé skupině přidejte popis a čas setkání
+1. Crear categorías para organizar sus grupos (por ejemplo, "Grupos pequeños", "Estudios bíblicos", "Equipos de ministerio", "Comités")
+2. Crear grupos dentro de cada categoría (por ejemplo, "Grupo de hombres del martes por la noche", "Estudio bíblico de mujeres", "Ministerio de jóvenes")
+3. Agregar una descripción y un horario de reunión para cada grupo
 
-## Krok 2: Přidání členů a vedoucích
+## Paso 2: Agregar miembros y líderes
 
-Naplňte skupiny členy a určete vedoucí, kteří mohou spravovat své vlastní týmy.
+Llene sus grupos con miembros y designe líderes que puedan administrar sus propios equipos.
 
-Podle průvodce [Členové skupiny](../groups/group-members.md) proveďte tyto kroky:
+Siga la guía [Miembros del grupo](../groups/group-members.md) para:
 
-1. Vyhledejte osoby a přidejte je do příslušných skupin
-2. Určete vedoucí skupiny pomocí ikony hvězdičky (**Jmenovat vedoucím**) — vedoucí získají dodatečná oprávnění
+1. Buscar personas y agregarlas a los grupos correspondientes
+2. Designar líderes de grupo usando el ícono de estrella (**Hacer líder**): los líderes tienen permisos adicionales
 
 :::tip
-Vedoucí skupiny mohou spravovat kalendář své skupiny, zveřejňovat konverzace a koordinovat akce bez potřeby plného přístupu správce.
+Los líderes de grupo pueden administrar el calendario de su grupo, publicar conversaciones y coordinar eventos sin necesidad de acceso completo de administrador.
 :::
 
-## Krok 3: Nastavení skupinových kalendářů
+## Paso 3: Configurar los calendarios de grupo
 
-Každá skupina by měla mít vlastní kalendář pro schůzky a akce.
+Asigne a cada grupo su propio calendario para reuniones y eventos.
 
-Podle průvodce [Skupinový kalendář](../groups/group-calendar.md) proveďte tyto kroky:
+Siga la guía [Calendario de grupo](../groups/group-calendar.md) para:
 
-1. Přidejte opakující se schůzky (např. „Každé úterý v 19:00“) a jednorázové akce (např. „Skupinové grilování – 15. března“)
-2. Vedoucí skupiny mohou přidávat a spravovat akce pro svou vlastní skupinu
+1. Agregar reuniones recurrentes (por ejemplo, "Todos los martes a las 7 PM") y eventos únicos (por ejemplo, "Parrillada del grupo - 15 de marzo")
+2. Los líderes de grupo pueden agregar y administrar eventos para su propio grupo
 
-## Krok 4: Vytvoření kalendáře pro celý sbor
+## Paso 4: Crear un calendario general de la iglesia
 
-Sloučte akce ze všech skupin do jednoho společného kalendáře pro celý sbor.
+Reúna los eventos de todos sus grupos en un solo calendario para toda la iglesia.
 
-Podle průvodců [Vytváření kalendářů](../calendars/creating-calendars.md) a [Kurátorovaný kalendář](../calendars/curated-calendar.md) proveďte tyto kroky:
+Siga las guías [Creación de calendarios](../calendars/creating-calendars.md) y [Calendario curado](../calendars/curated-calendar.md) para:
 
-1. Vytvořte kurátorovaný kalendář, který stáhne akce z více skupin do jednoho společného zobrazení
-2. Sdílejte odkaz na předplatné ICS, aby si členové mohli přidat akce do svých osobních kalendářových aplikací (Google Kalendář, Kalendář Apple, Outlook)
+1. Crear un calendario curado que tome eventos de varios grupos en una sola vista unificada
+2. Compartir el enlace de suscripción ICS para que los miembros puedan agregar eventos a las aplicaciones de calendario personal (Google Calendar, Apple Calendar, Outlook)
 
 :::info
-Kurátorovaný kalendář automaticky shromažďuje akce z propojených skupin. Když vedoucí skupiny přidá akci, zobrazí se i v kalendáři sboru.
+Un calendario curado reúne automáticamente los eventos de los grupos que usted conecte. Cuando un líder de grupo agrega un evento, este también aparece en el calendario de la iglesia.
 :::
 
-## Krok 5: Zveřejnění na webu
+## Paso 5: Publicar en su sitio web
 
-Zpřístupněte skupiny a kalendář návštěvníkům i členům na svém webu B1.
+Haga que sus grupos y su calendario sean visibles para los visitantes y miembros en su sitio web de B1.
 
-Podle průvodce [Správa stránek](../website/managing-pages.md) proveďte tyto kroky:
+Siga la guía [Administrar páginas](../website/managing-pages.md) para:
 
-1. Přidejte na web B1 sekci Kalendář, která zobrazí kurátorovaný kalendář
-2. Přidejte sekci Skupiny, aby návštěvníci mohli procházet dostupné skupiny a zjistit, jak se připojit
+1. Agregar una sección de Calendario a su sitio web de B1 para mostrar el calendario curado
+2. Agregar una sección de Grupos para que los visitantes puedan explorar los grupos disponibles y aprender cómo unirse
 
-## Krok 6: Zkušenost člena
+## Paso 6: Experiencia del miembro
 
-Členové mohou objevovat skupiny, připojovat se k nim a zapojit se z telefonu nebo počítače.
+Los miembros pueden descubrir, unirse y participar en grupos desde su teléfono o computadora.
 
-1. Členové si mohou prohlížet a připojovat skupiny na [B1.church](../../b1-church/groups/browsing-groups.md)
-2. Členové skupiny mohou zobrazit podrobnosti, kalendáře a přidávat příspěvky do [konverzací](../../b1-church/groups/conversations.md)
-3. Všechny funkce skupin jsou dostupné také v [mobilní aplikaci B1 Mobile](../../b1-church/groups/index.md)
+1. Los miembros exploran y se unen a grupos en [B1.church](../../b1-church/groups/browsing-groups.md)
+2. Los miembros del grupo pueden ver detalles, calendarios y publicar en las [conversaciones](../../b1-church/groups/conversations.md)
+3. Todas las funciones de grupo también están disponibles en la [aplicación B1](../../b1-church/groups/index.md)
 
 :::info
-Členové vidí své skupiny, nadcházející akce a skupinové konverzace na webu i v mobilu — vše zůstává synchronizované.
+Los miembros ven sus grupos, próximos eventos y conversaciones de grupo tanto en la web como en el móvil; todo se mantiene sincronizado.
 :::
 
-## Hotovo!
+## ¡Listo!
 
-Vaše malé skupiny jsou nastaveny a propojeny. Členové mohou objevovat skupiny, prohlížet akce a zůstat v kontaktu prostřednictvím konverzací — vše na vašem webu a v mobilní aplikaci. Vedoucí skupin mohou spravovat své týmy samostatně.
+Sus grupos pequeños están configurados y conectados. Los miembros pueden descubrir grupos, ver eventos y mantenerse conectados a través de las conversaciones, todo desde su sitio web y su aplicación móvil. Los líderes de grupo pueden administrar sus propios equipos de forma independiente.
 
-## Související články
+## Artículos relacionados
 
-- [Vytváření skupin](../groups/creating-groups.md) — nastavení kategorií a skupin
-- [Členové skupiny](../groups/group-members.md) — přidávání členů a určování vedoucích
-- [Skupinový kalendář](../groups/group-calendar.md) — správa akcí skupiny
-- [Vytváření kalendářů](../calendars/creating-calendars.md) — nastavení kalendářů služebních týmů
-- [Kurátorovaný kalendář](../calendars/curated-calendar.md) — vytvoření společného kalendáře sboru
-- [Procházení skupin (web)](../../b1-church/groups/browsing-groups.md) — jak členové najdou skupiny
-- [Skupinové konverzace (web)](../../b1-church/groups/conversations.md) — diskuse ve skupině
-- [Skupiny (mobil)](../../b1-church/groups/index.md) — skupiny v mobilní aplikaci
+- [Creación de grupos](../groups/creating-groups.md): configurar categorías y grupos
+- [Miembros del grupo](../groups/group-members.md): agregar miembros y designar líderes
+- [Calendario de grupo](../groups/group-calendar.md): administrar eventos del grupo
+- [Creación de calendarios](../calendars/creating-calendars.md): configurar calendarios de ministerio
+- [Calendario curado](../calendars/curated-calendar.md): crear un calendario unificado de la iglesia
+- [Explorar grupos (web)](../../b1-church/groups/browsing-groups.md): cómo los miembros encuentran grupos
+- [Conversaciones de grupo (web)](../../b1-church/groups/conversations.md): debates del grupo
+- [Grupos](../../b1-church/groups/index.md): grupos en la aplicación B1

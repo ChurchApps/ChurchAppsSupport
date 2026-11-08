@@ -1,50 +1,50 @@
 ---
-title: "Configurar aulas"
-description: "Crea, renombra y elimina aulas en el portal de Lessons.church para que cada sala o grupo de edad esté lista para programar lecciones semanales."
+title: "Configuración de las aulas"
+description: "Crea, renombra y elimina aulas en el portal de Lessons.church para que cada sala o grupo de edad esté lista para la programación semanal de lecciones."
 ---
 
-# Configurar aulas
+# Configuración de las aulas
 
 <div class="article-intro">
 
-Antes de poder programar lecciones, necesita crear aulas que representen sus entornos de enseñanza. Esta guía le muestra cómo crear, nombrar y gestionar aulas en el portal de Lessons.church.
+Antes de programar lecciones, necesitas crear las aulas que representan tus espacios de enseñanza. Esta guía te explica paso a paso cómo crear, nombrar y administrar aulas en el portal de Lessons.church.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- [Cree una cuenta](../getting-started/creating-account.md) y conéctese a su iglesia
-- Familiarícese con la [Descripción general del portal](../getting-started/portal-overview.md)
+- [Crea una cuenta](../getting-started/creating-account.md) y conéctala a tu iglesia
+- Familiarízate con la [Descripción general del portal](../getting-started/portal-overview.md)
 
 </div>
 
-## Crear un aula
+## Cómo crear un aula
 
-1. Inicie sesión en su cuenta en [Lessons.church](https://lessons.church).
-2. Navegue a su **Portal**. Este es el centro principal de su iglesia para gestionar aulas y horarios.
-3. Haga clic en **Agregar aula**.
-4. Ingrese un nombre para su aula. Elija algo descriptivo que sus voluntarios reconozcan, por ejemplo, "Preescolar", "Primaria K-2" o "Secundaria".
-5. Guarde su nueva aula. Aparecerá en el panel de su portal inmediatamente.
+1. Inicia sesión en tu cuenta en [Lessons.church](https://lessons.church).
+2. Ve a tu **Portal**. Este es el centro principal de tu iglesia para administrar aulas y horarios.
+3. En el cuadro **Aulas**, haz clic en **Agregar**. Si todavía no tienes aulas, haz clic en **Agregar primera aula** en su lugar.
+4. Escribe un **Nombre del aula**. Elige algo descriptivo que tus voluntarios reconozcan; por ejemplo, "Preescolar", "Primaria K-2" o "Secundaria".
+5. Haz clic en **Guardar**. Tu nueva aula aparecerá de inmediato en la lista **Aulas**.
 
-Repita estos pasos para cada salón o grupo de edad en su iglesia. Puede crear tantas aulas como necesite.
+Repite estos pasos para cada sala o grupo de edad de tu iglesia. Puedes crear tantas aulas como necesites.
 
 ## Configuración inicial
 
-Si aún no ha configurado ningún aula, su portal mostrará un video de configuración para guiarle a través del proceso. Este video cubre los aspectos básicos de crear aulas y programar sus primeras lecciones. Es un excelente punto de partida si es nuevo en Lessons.church.
+Si todavía no has configurado ninguna aula, tu portal mostrará un video de configuración que te guiará en el proceso. Este video cubre lo básico de la creación de aulas y la programación de tus primeras lecciones. Es un excelente punto de partida si eres nuevo en Lessons.church.
 
 :::tip
-Nombre sus aulas de la misma forma en que sus voluntarios ya se refieren a los salones. Si todos lo llaman "el salón de Pre-K", nómbrelo "Pre-K" en lugar de algo formal como "Sala de Educación Infantil 101".
+Nombra tus aulas de acuerdo con la forma en que tus voluntarios ya se refieren a las salas. Si todos la llaman "la sala de Prekínder", nómbrala "Prekínder" en lugar de algo formal como "Sala 101 de Educación de la Primera Infancia".
 :::
 
-## Gestionar aulas
+## Administración de aulas
 
-Sus aulas aparecen en el panel del portal donde puede gestionarlas en cualquier momento. Desde aquí puede:
+Tus aulas aparecen en el panel del portal, desde donde puedes administrarlas en cualquier momento. Desde allí puedes:
 
-- **Renombrar un aula** -- Actualice el nombre si sus salones o grupos de edad cambian.
-- **Eliminar un aula** -- Borre las aulas que ya no necesite.
-- **Ver el horario** -- Haga clic en cualquier aula para ver su horario de lecciones.
+- **Renombrar un aula** -- Haz clic en el icono de **Editar aula** (lápiz) junto a ella, cambia el **Nombre del aula** y haz clic en **Guardar**.
+- **Eliminar un aula** -- Haz clic en **Editar aula** y luego en el icono de **Eliminar aula** (bote de basura), y confirma.
+- **Ver el horario** -- Haz clic en cualquier aula para ver su calendario de lecciones.
 
-## Qué sigue
+## Siguientes pasos
 
-Una vez que sus aulas estén configuradas, está listo para comenzar a [programar lecciones](./scheduling-lessons.md) para que sus voluntarios sepan qué enseñar cada semana.
+Una vez que tus aulas estén configuradas, estarás listo para empezar a [programar lecciones](./scheduling-lessons.md) para que tus voluntarios sepan qué enseñar cada semana.

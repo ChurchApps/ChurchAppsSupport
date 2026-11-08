@@ -1,13 +1,13 @@
 ---
 title: "Arkitektur"
-description: "Tværgående systemkort over givning, check-ins, notifikationer og hjemmesider på tværs af B1 Admin, B1.church og API'et, før du ændrer noget."
+description: "Systemkort på tværs af repositories, der viser, hvordan donationer, check-ins, notifikationer og hjemmesider fungerer på tværs af B1 Admin, B1.church og Api, før du ændrer dem."
 ---
 
 # Arkitektur
 
 <div class="article-intro">
 
-Disse sider er tværgående systemkort: de beskriver, hvordan et centralt ChurchApps-system fungerer fra start til slut på tværs af apps, API-moduler og delte biblioteker, i stedet for hvordan et enkelt projekt er sat op. Læs dem, før du ændrer et systems adfærd. Læs [Opsætning](../setup/index.md) for at få et projekt til at køre, og [API-afsnittet](../api/index.md) for referencer på endpoint-niveau.
+Disse sider er systemkort på tværs af repositories: de dokumenterer, hvordan et centralt ChurchApps-system fungerer fra start til slut — på tværs af apps, API-moduler og delte biblioteker — snarere end hvordan et enkelt projekt er opsat. Læs dem, før du ændrer et systems adfærd. Læs [Opsætning](../setup/index.md) for at få et projekt i gang, og [API-sektionen](../api/index.md) for referencer på endpoint-niveau.
 
 </div>
 
@@ -17,53 +17,53 @@ ChurchApps består af ca. 20 uafhængige repositories (ikke et monorepo). Klient
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
-│  Clients                       │            │  Api — core modular monolith (AWS Lambda)    │
+│  Klienter                      │            │  Api — kernemodulær monolit (AWS Lambda)     │
 │                                │            │                                              │
-│  B1Admin    staff dashboard    │   HTTPS    │   membership    attendance    content        │
-│  B1App      member portal +    │ ─────────▶ │   giving        messaging     doing          │
-│             church websites    │            │                                              │
-│  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   one MySQL database per module (6 total)    │
-│  B1Mobile   (maintenance-only) │            └──────────────────────────────────────────────┘
-│  FreePlay   TV content player  │            ┌──────────────────────────────────────────────┐
-└───────────────┬────────────────┘            │  LessonsApi — Lessons.church backend         │
+│  B1Admin    personaleportal    │   HTTPS    │   membership    attendance    content        │
+│  B1App      medlemsportal +    │ ─────────▶ │   giving        messaging     doing          │
+│             kirkehjemmesider   │            │                                              │
+│  B1Checkin  check-in-kiosk     │ ◀───WS───▶ │   én MySQL-database pr. modul (6 i alt)      │
+│                                │            └──────────────────────────────────────────────┘
+│  FreePlay   tv-indholdsafspiller│           ┌──────────────────────────────────────────────┐
+└───────────────┬────────────────┘            │  LessonsApi — Lessons.church-backend         │
                 │                             └──────────────────────────────────────────────┘
-                │  shared code via npm (@churchapps/*)
+                │  delt kode via npm (@churchapps/*)
                 ▼
-   helpers (cross-app interfaces) · apphelper (React components) · apihelper (Express/server utilities)
+   helpers (tværgående grænseflader) · apphelper (React-komponenter) · apihelper (Express/server-hjælpefunktioner)
 ```
 
-To strukturelle regler former alt det, der dokumenteres i dette afsnit:
+To strukturelle regler former alt, der dokumenteres i denne sektion:
 
-1. **Moduler er isolerede.** Hvert Api-modul ejer sin database og sine tabeller. Andre moduler og apps får kun adgang til dets data via dets REST-endpoints. Se [Modulstruktur](../api/module-structure.md).
-2. **Delt kode distribueres som npm-pakker.** Apps importerer aldrig hinandens kildekode. Alt, der genbruges, krydser repository-grænser via `@churchapps/helpers`, `@churchapps/apphelper` eller `@churchapps/apihelper`. Se [Delte biblioteker](../shared-libraries/index.md).
+1. **Moduler er isolerede.** Hvert Api-modul ejer sin database og sine tabeller; andre moduler og apps får kun adgang til dets data via dets REST-endpoints. Se [Modulstruktur](../api/module-structure.md).
+2. **Delt kode udgives som npm-pakker.** Apps importerer aldrig hinandens kildekode; alt, der genbruges, krydser repository-grænser via `@churchapps/helpers`, `@churchapps/apphelper` eller `@churchapps/apihelper`. Se [Delte biblioteker](../shared-libraries/index.md).
 
 ## Systemkort
 
 | Side | Hvad den dækker | Omfatter |
 |------|----------------|-------|
-| [Notifikationer og påmindelser](./notifications.md) | Hvordan noget giver en person besked: de to afsendelsesindgange, eskaleringskæden for kanaler og motoren for påmindelser | Api (messaging), B1Admin, B1App |
-| [Realtidsarkitektur](../realtime.md) | WebSocket-leveringsrammeværket bag chat, tilstedeværelse og levering i appen | Api (messaging), alle webapps |
-| [Web push-notifikationer](../web-push.md) | Browserens push-kanal: VAPID-nøgler, lagring af abonnementer, levering | Api (messaging), alle webapps |
-| [Donationer](./giving.md) | Betalingsudbydere og gateways, donationsflows, fonde/batcher, webhooks fra gateways | Api (giving), apphelper, B1App, B1Admin |
-| [Tilmeldinger til begivenheder](./registrations.md) | Tilmeldingernes handelsmodel: deltagertyper, valg, rabatkoder, betalinger via donations-gatewayen og venteliste | Api (content + giving), B1App, B1Admin |
-| [Check-ins](./check-ins.md) | Check-in ved kiosk og selvbetjent check-in, datamodellen for fremmøde, rumrouting, børnesikkerhedslaget, udskrivning af etiketter | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
-| [Hjemmesidebygger](./website-builder.md) | Side-, sektion- og elementtræet, kontrakten for elementtyper og renderere, blog, adgangsstyrede sider, SEO og AI-generering | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
-| [Routing af hjemmesider og flere sites](./websites.md) | Hvordan en anmodning kobles til en kirke og et bestemt site, datamodellen for flere sites med `siteId`, og Caddy-kanten for egne domæner | B1App, Api (membership + content), B1Admin |
+| [Notifikationer & påmindelser](./notifications.md) | Hvordan noget fortæller en person noget: de to afsendelsesindgange, eskaleringskæden for kanaler og påmindelsesmotoren | Api (messaging), B1Admin, B1App |
+| [Realtidsarkitektur](../realtime.md) | WebSocket-leveringsrammeværket bag chat, tilstedeværelse og levering i appen | Api (messaging), alle web-apps |
+| [Web push-notifikationer](../web-push.md) | Browserens push-kanal: VAPID-nøgler, lagring af abonnementer, levering | Api (messaging), alle web-apps |
+| [Donationer](./giving.md) | Betalingsudbydere og gateways, donationsflows, fonde/batches, gateway-webhooks | Api (giving), apphelper, B1App, B1Admin |
+| [Eventregistreringer](./registrations.md) | Registreringsmodellen for kommercielle transaktioner: deltagertyper, valg, rabatkoder, betalinger via donationsgatewayen og venteliste | Api (content + giving), B1App, B1Admin |
+| [Check-ins](./check-ins.md) | Kiosk- og selvbetjent check-in, datamodellen for fremmøde, rumrouting, børnesikkerhedslaget, udskrivning af etiketter | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
+| [Hjemmesidebygger](./website-builder.md) | Side-/sektion-/elementtræet, kontrakten for elementtyper og renderere, blog, adgangsstyrede sider, SEO og AI-generering | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Hjemmesideroutning & multi-site](./websites.md) | Hvordan en forespørgsel løses til en kirke og et specifikt site, datamodellen for multi-site `siteId` og Caddy-kanten til egne domæner | B1App, Api (membership + content), B1Admin |
 | [Integrationer](./integrations.md) | Udvidelsesfladen: OAuth, API-nøgler, webhooks, indholdsudbydere, MCP | Api, delte biblioteker, eksterne apps |
-| [Revisionslog og batcher, der kan fortrydes](./audit-log.md) | Automatisk revision af alle ændringer ved controllerens kontrolpunkt, og batchlaget, der gør import og massehandlinger reversible | Api (alle moduler), B1Admin, B1Transfer |
-| [MinistryStuff](./ministrystuff.md) | Den betalte tjeneste for lagerplads og sms-kreditter: identitet via delt JWT, service-key S2S, sms- og lagringsudbyderes integrationspunkter, Stripe-fakturering | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), pakkerne texting/apihelper, B1Admin |
-| [Egen lagring (Bring-Your-Own Storage)](./byos-storage.md) | Kirker kan forbinde Google Drive, Dropbox, OneDrive eller en S3-kompatibel bucket til uploads over den gratis grænse på 100 MB: OAuth-forbindelse, uploadformater pr. udbyder, offentlig omdirigering ved download | Api (content + membership), pakkerne helpers/apphelper, B1Admin, B1App |
-| [Content Commons](./commons.md) | Den delte spine for aktiver og indsendelser bag brugergenereret indhold på tværs af produkter, og den ene modkøe for moderation, som kun medarbejdere har adgang til i B1Admin Server Admin | Api (commons-modulet), B1Admin, WorshipCommons, Lessons.church, FreeShow |
+| [Revisionslog & fortrydelige batches](./audit-log.md) | Standardaktiveret revision af alle ændringer på controller-niveau, og batch-laget der gør import og masseoperationer fortrydelige | Api (alle moduler), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff.md) | Den betalte lagrings- og sms-kredittjeneste: identitet via delt JWT, service-key S2S, sms- og lagringsudbyder-sømme, Stripe-fakturering | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), texting/apihelper-pakker, B1Admin |
+| [Egen lagring (BYOS)](./byos-storage.md) | Kirker kan forbinde Google Drive, Dropbox, OneDrive eller en S3-kompatibel bucket til uploads ud over de gratis 100 MB: OAuth-forbindelse, upload-format pr. udbyder, den offentlige download-omdirigering | Api (content + membership), helpers/apphelper-pakker, B1Admin, B1App |
+| [Content Commons](./commons.md) | Det delte aktiv- og indsendelseslag bag tværprodukt-brugergenereret indhold og den ene modereringskø for kun medarbejdere i B1Admin Server Admin | Api (commons-modul), B1Admin, WorshipCommons, Lessons.church, FreeShow |
 
 :::tip
-Når en ændring ændrer, hvordan et af disse systemer fungerer, og ikke kun en side i en enkelt app, bør det tilsvarende systemkort her opdateres i samme arbejde. Det holder dette afsnit pålideligt som første holdepunkt for nye bidragydere.
+Når en ændring ændrer, hvordan et af disse systemer fungerer — ikke blot en side i en enkelt app — skal det tilsvarende systemkort her opdateres i samme arbejde. Det holder denne sektion troværdig som det første holdepunkt for nye bidragydere.
 :::
 
 ## Forslag
 
 Disse dokumenter beskriver foreslået arbejde til gennemgang og ikke tilgængelig produktadfærd.
 
-| Forslag | Hvad den dækker |
+| Forslag | Hvad det dækker |
 |---|---|
-| [Twilio BYOK](./twilio-byok-proposal.md) | Kirkeejet konto, nøgler, tjeneste og telefonnummer; integrationens omfang, samtykke, levering, estimater og udgivelseskontroller |
-| [Udkast til Twilio-onboarding for kirker](./twilio-byok-onboarding-draft.md) | Foreslåede indstillinger for B1-tilmeldingsformularen, kirkespecifikke eksempler på kampagner og tjeklister for godkendelse og drift |
+| [Twilio BYOK](./twilio-byok-proposal.md) | Kirkeejet konto, nøgler, tjeneste og telefonnummer; integrationsomfang, samtykke, levering, estimater og udgivelsestjek |
+| [Udkast til Twilio-onboarding for kirker](./twilio-byok-onboarding-draft.md) | Foreslåede indstillinger for B1-tilmeldingsformularen, kirkespecifikke kampagneeksempler og godkendelses- og driftstjeklister |

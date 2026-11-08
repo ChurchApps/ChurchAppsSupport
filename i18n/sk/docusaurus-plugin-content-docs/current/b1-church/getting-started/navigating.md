@@ -1,13 +1,13 @@
 ---
-title: "Orientácia v aplikácii B1App"
-description: "Orientujte sa v členskom portáli B1.church na telefóne alebo počítači: domovský panel, spodný panel kariet, stránka Viac a stránka Ja."
+title: "Orientácia v B1App"
+description: "Nájdite cestu v členskom portáli B1.church na telefóne alebo počítači: domovská obrazovka, dolná lišta s kartami, stránka Viac a stránka Ja."
 ---
 
-# Orientácia v aplikácii B1App
+# Orientácia v B1App
 
 <div class="article-intro">
 
-Členský portál na B1.church je webová aplikácia optimalizovaná pre telefóny, ktorá sa nachádza pod cestou `/mobile`. Funguje v ľubovoľnom prehliadači a dá sa nainštalovať na domovskú obrazovku. Táto stránka vysvetľuje prehľad Domov, spodný panel záložiek, stránku Viac a stránku Ja.
+Členský portál v B1.church je webová aplikácia optimalizovaná pre telefón, ktorá sa nachádza pod adresou `/mobile`. Funguje v ľubovoľnom prehliadači a dá sa nainštalovať na domovskú obrazovku. Táto stránka vysvetľuje domovský panel, dolnú lištu s kartami, stránku Viac a stránku Ja.
 
 </div>
 
@@ -18,93 +18,97 @@ description: "Orientujte sa v členskom portáli B1.church na telefóne alebo po
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Aby ste videli svoje osobné údaje, musíte byť [prihlásení](./logging-in.md). Návštevníci bez prihlásenia si môžu prezerať verejný obsah a tam, kde funkcia vyžaduje účet, sa im zobrazí tlačidlo **Prihlásiť sa**.
+- Musíte sa [prihlásiť](./logging-in.md), aby ste videli svoje osobné údaje. Návštevníci, ktorí nie sú prihlásení, si môžu stále prezerať verejný obsah a tam, kde funkcia vyžaduje účet, sa im zobrazí tlačidlo **Prihlásiť sa**.
 
 </div>
 
 ## Domov {#home}
 
-Otvorenie adresy `https://yourchurchname.b1.church/mobile` vás presmeruje na prehľad **Domov** na adrese `/mobile/dashboard`. Domov je úvodná stránka členského portálu. Začína pozdravom („Dobré ráno", „Dobrý deň" alebo „Dobrý večer" s vaším krstným menom) a dnešným dátumom, nasledujú sekcie, ktoré sa zobrazujú len vtedy, keď sú relevantné:
+Otvorením adresy `https://yourchurchname.b1.church/mobile` sa dostanete na domovský panel **Domov** na adrese `/mobile/dashboard`. Domov je úvodná stránka členského portálu. Začína pozdravom („Dobré ráno", „Dobré popoludnie" alebo „Dobrý večer" s vaším krstným menom) a dnešným dátumom, za ktorými nasledujú sekcie, ktoré sa zobrazia len vtedy, keď sú relevantné:
 
-- **Dlaždice s fotografiami** – karty, ktoré vaša cirkev priradila fotografiu (vrátane Verša dňa), sa zobrazia ako dlaždice s fotografiami pod názvom vašej cirkvi. Podľa nastavenia vašej cirkvi sú usporiadané do dvojstĺpcovej mriežky, do riadka, ktorý sa posúva do strán (môže sa aj automaticky posúvať), alebo do zoznamu s malým náhľadom pri každom názve – pozri [Dlaždice na domovskej obrazovke](../../b1-admin/settings/mobile-app.md#home-screen-tiles). Každá karta s fotografiou sa zobrazí tu, aj keď má miesto aj na spodnom paneli záložiek.
-- **Posledné kázanie** – najnovšie kázanie vašej cirkvi s odkazom **Všetky kázne**
-- **Verš dňa** – dnešný verš; ak naň ťuknete, otvorí sa celá stránka [Verš dňa](../content/verse-of-the-day.md)
-- **Slúžite** – vaše najbližšie nadchádzajúce služobné úlohy s odkazom **Všetky plány**. Ak niektorá úloha ešte čaká na vašu odpoveď, zobrazí sa ako prvá so štítkom **Vyžaduje odpoveď** a tlačidlami **Prijať** / **Odmietnuť**, takže môžete odpovedať priamo z Domova (**Odmietnuť** vás najprv požiada o potvrdenie). Inak sa vaše najbližšie úlohy zobrazia so štítkom **Prijaté** alebo **Potvrdené**. Ak ťuknete na úlohu, otvorí sa jej plán.
-- **Vaše skupiny** – až tri z vašich skupín s časom stretnutia a miestom konania a odkaz **Všetky skupiny**
-- **Nadchádzajúce udalosti** – keď ste prihlásení, zobrazí sa najbližšie tri nadchádzajúce udalosti zo skupín, do ktorých patríte, každá s dátumom a časom (a s miniatúrou, ak má udalosť fotografiu). Ak ťuknete na udalosť, otvoria sa udalosti jej skupiny. Ak ťuknete na **Všetky nadchádzajúce udalosti**, otvorí sa úplný zoznam nadchádzajúcich udalostí na vašej [stránke Ja](./me-page.md#upcoming), ktorý zahŕňa aj vaše služobné úlohy a registrácie.
-- **Moja účasť** a **Moje formuláre** – ak ich vaša cirkev zapne, zobrazí sa počet vašich návštev za posledných 90 dní spolu s vašimi dvoma najnovšími návštevami a vaše dve najnovšie odoslané formuláre s odkazmi na úplné zoznamy. Tieto položky sa vždy zobrazujú aj na vašej [stránke Ja](./me-page.md), bez ohľadu na nastavenie – pozri [Sekcie domovskej obrazovky](../../b1-admin/settings/mobile-app.md#home-screen-sections).
-- **Darovanie** – koľko ste v tomto roku darovali („Darované v" aktuálnom roku), tlačidlo **Darovať** (zobrazuje sa len vtedy, ak vaša cirkev ponúka online darovanie) a odkaz **História** na vašu [históriu darov](../giving/donation-history.md). Skryté, ak vaša cirkev obmedzila históriu darov členov na skorší rok alebo ju skryla. V takom prípade sa nástroj na darovanie vašej cirkvi zobrazí ako tlačidlo pod nadpisom **Ďalšie od**
-- **Ďalšie od** *vašej cirkvi* – tlačidlá pre ostatné nástroje, ktoré vaša cirkev zapla a ktoré sa ešte nenachádzajú na spodnom paneli záložiek ani vyššie. Tie, ktoré používate najčastejšie, sa presunú na začiatok.
+- **Obrázkové dlaždice** -- karty, ktoré vaša cirkev priradila k fotografii (vrátane Verše dňa), sa zobrazia ako obrázkové dlaždice pod názvom vašej cirkvi. Podľa nastavenia vašej cirkvi sú usporiadané do dvojstĺpcovej mriežky, do riadku, ktorý sa posúva bočne (môže sa pohybovať aj automaticky), alebo do zoznamu s malou miniatúrou pri každom názve -- pozrite si [Domovské dlaždice obrazovky](../../b1-admin/settings/mobile-app.md#home-screen-tiles). Keď má bočný riadok viac dlaždíc, než sa zmestia na obrazovku, pod ním sa zobrazí rad bodiek, ktoré ukazujú, kde sa nachádzate; klepnutím na bodku prejdete na danú dlaždicu. Riadok sa posúva ďalej a po poslednej dlaždici znova začína od prvej. Tu sa zobrazí každá karta s fotografiou, aj tá, ktorá má zároveň miesto na lište s kartami.
+- **Najnovšie kázanie** -- najnovšie kázanie vašej cirkvi s odkazom **Všetky kázania**
+- **Verš dňa** -- dnešný verš; klepnutím otvoríte celú stránku [Verš dňa](../content/verse-of-the-day.md)
+- **Slúžite** -- vaše najbližšie nadchádzajúce služobné úlohy s odkazom **Všetky plány**. Ak ešte niektorá úloha čaká na vašu odpoveď, zobrazia sa ako prvé s označením **Čaká na odpoveď** a tlačidlami **Prijať** / **Odmietnuť**, aby ste mohli odpovedať priamo z domovskej obrazovky (**Odmietnuť** vyžaduje najprv potvrdenie); inak vaše najbližšie úlohy zobrazia označenie **Prijaté** alebo **Potvrdené**. Klepnutím na úlohu otvoríte jej plán.
+- **Vaše skupiny** -- až tri z vašich skupín s časom a miestom stretnutia a odkazom **Všetky skupiny**
+- **Nadchádzajúce udalosti** -- keď ste prihlásení, vaše najbližšie tri nadchádzajúce udalosti skupín a registrácie na udalosti spolu, v poradí podľa dátumu, každá s dátumom a časom (a miniatúrou, ak má udalosť fotografiu). Každý riadok má štítok **Udalosť** (udalosť zo skupiny, do ktorej patríte) alebo **Registrácia** (udalosť, na ktorú ste sa [zaregistrovali](../events/registering.md)); udalosť, na ktorú ste registrovaní, sa zobrazí len raz, ako registrácia. Klepnutím na udalosť otvoríte udalosti jej skupiny, alebo klepnutím na registráciu otvoríte svoje [registrácie](../events/my-registrations.md). Klepnutím na **Všetky nadchádzajúce udalosti** otvoríte úplný zoznam nadchádzajúcich na svojej [stránke Ja](./me-page.md#upcoming), ktorý zahŕňa aj vaše služobné úlohy a registrácie.
+- **Moja účasť** a **Moje formuláre** -- ak ich vaša cirkev zapne, koľkokrát ste sa zúčastnili za posledných 90 dní spolu s vašimi dvoma najnovšími návštevami, a vaše dve najnovšie odoslané formuláre, s odkazmi na úplné zoznamy. Tieto sa vždy zobrazia na vašej [stránke Ja](./me-page.md) bez ohľadu na to -- pozrite si [Sekcie domovskej obrazovky](../../b1-admin/settings/mobile-app.md#home-screen-sections).
+- **Darovanie** -- koľko ste darovali tento rok (s označením „Darované v" a aktuálnym rokom), tlačidlo **Darovať** (zobrazí sa len vtedy, ak vaša cirkev ponúka online darovanie) a odkaz **História** na vašu [históriu darov](../giving/donation-history.md). Skryté, ak vaša cirkev obmedzila históriu darovania členov na skorší rok alebo ju skryla; v tom prípade sa nástroj cirkvi na darovanie zobrazí ako tlačidlo pod **Viac od**.
+- **Viac od** *vašej cirkvi* -- tlačidlá pre ostatné nástroje, ktoré vaša cirkev zapla a ktoré už nie sú na dolnej lište ani zobrazené vyššie. Tie, ktoré používate najčastejšie, sa presunú dopredu.
 
-Sekcie pre služby, skupiny, účasť, formuláre a darovanie sa zobrazia len vtedy, keď ste prihlásení, vaša cirkev má daný nástroj zapnutý a máte čo zobraziť – napríklad nadchádzajúcu úlohu alebo aspoň jednu skupinu. Na počítači je Domov rozdelený do dvoch stĺpcov.
+Sekcie služieb, skupín, účasti, formulárov a darovania sa zobrazia len vtedy, keď ste prihlásení, vaša cirkev má danú funkciu zapnutú a máte čo zobraziť -- napríklad nadchádzajúcu úlohu alebo aspoň jednu skupinu. Na počítači je domovská obrazovka rozdelená do dvoch stĺpcov.
 
-Ak nie ste prihlásení, namiesto pozdravu sa na Domove zobrazí nadpis **Vitajte**, krátka výzva („Prihláste sa a zobrazte svoje skupiny, darovanie a ďalšie.") a tlačidlo **Prihlásiť sa**. Výzva sa zobrazí aj vtedy, keď vaša cirkev na Domove ešte nenastavila nič iné. Vaša cirkev môže túto výzvu preformulovať alebo skryť – pozri [Nastavenia mobilnej aplikácie](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Keď je skrytá, môžete sa stále prihlásiť zo stránky **Viac** alebo zo stránky **Ja**.
+Ak ste odhlásení, domovská obrazovka namiesto pozdravu zobrazuje nadpis **Vitajte**, krátku výzvu („Prihláste sa a zobrazte svoje skupiny, darovanie a ďalšie.") a tlačidlo **Prihlásiť sa**. Výzva sa zobrazí aj vtedy, keď vaša cirkev zatiaľ na domovskej obrazovke nič iné nenastavila. Vaša cirkev môže túto výzvu preformulovať alebo skryť -- pozrite si [Nastavenia mobilnej aplikácie](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Keď je skrytá, stále sa môžete prihlásiť na stránke **Viac** alebo **Ja**.
 
-## Spodný panel záložiek
+## Dolná lišta s kartami
 
-Na telefóne je panel záložiek pevne ukotvený na spodnej časti obrazovky:
+Na telefóne je lišta s kartami pevne ukotvená v dolnej časti obrazovky:
 
-- **Domov** – vždy prvá záložka
-- Až tri zo záložiek, ktoré vaša cirkev nastavila
-- **Viac** – otvorí stránku Viac
+- **Domov** -- vždy prvá karta
+- Až tri karty, ktoré vaša cirkev nakonfigurovala
+- **Viac** -- otvorí stránku Viac
 
-Vstavané obrazovky (napríklad Skupiny, Darovanie alebo Plány) dostávajú miesta na záložky ako prvé. Voľné miesta získavajú vlastné stránky vašej cirkvi. Odkazy na externé webové stránky a Verš dňa nikdy nedostanú vlastnú záložku. Ak vaša cirkev nastavila viac záložiek, než sa zmestí, ostatné nestratíte: zobrazia sa na stránke **Viac** a v sekcii **Ďalšie od** na Domove. Poradie záložiek nastavujú správcovia cirkvi v aplikácii B1 Admin v časti **Mobil → Navigácia**.
+Vstavané obrazovky (napríklad Skupiny, Darovanie alebo Plány) dostávajú miesta na karty ako prvé; všetky voľné miesta pripadnú vlastným stránkam vašej cirkvi. Odkazy na externé webové stránky a Verš dňa nikdy nedostanú kartu. Ak vaša cirkev nakonfigurovala viac kariet, než sa zmestí, ostatné sa nestratia: zobrazia sa na stránke **Viac** a v sekcii **Viac od** na domovskej obrazovke. Správcovia cirkvi nastavujú poradie kariet v B1 Admin v časti **Mobile → Navigation**.
+
+### Priečinky kariet {#folder-tabs}
+
+Vaša cirkev môže zoskupiť niekoľko kariet do **priečinka**. Priečinok sa zobrazí ako ktorákoľvek iná karta -- na lište s kartami, na stránke **Viac** alebo ako obrázková dlaždica na domovskej obrazovke -- a klepnutím na neho sa otvorí obrazovka s názvom priečinka, ktorá vypíše karty v ňom. Ak má každá karta v priečinku fotografiu, zobrazia sa ako obrázkové dlaždice; inak sa zobrazia ako zoznam. Odkazy na externé webové stránky v priečinku sa otvoria na novej karte prehliadača. Karty vnútri priečinka sa zobrazia len na obrazovke priečinka, nie na lište s kartami ani na stránke **Viac**. Priečinok bez nič viditeľného pre vás je skrytý.
 
 ## Na počítači
 
-Na širšej obrazovke, napríklad na počítači alebo na veľkom tablete, je spodný panel záložiek nahradený hlavičkou v hornej časti obrazovky vo farbe vašej cirkvi. Zobrazuje logo vašej cirkvi, alebo jej názov, ak logo nie je nastavené (kliknutím naň sa vrátite na Domov), odkaz **Domov**, až päť záložiek, ktoré vaša cirkev nastavila, a **Viac**. Vpravo sú zvonček a vaša profilová fotografia. Keď otvoríte podrobnú obrazovku, nad obsahom stránky sa zobrazí odkaz **Späť**.
+Na širšej obrazovke, ako je počítač alebo veľký tablet, je dolná lišta s kartami nahradená hlavičkou v hornej časti obrazovky vo farbe vašej cirkvi. Zobrazuje logo vašej cirkvi, alebo jej názov, ak logo nie je nastavené (kliknutím sa vrátite na domovskú obrazovku), **Domov**, až päť kariet, ktoré vaša cirkev nakonfigurovala, a **Viac**, vpravo zvonček a vašu profilovú fotografiu. Keď otvoríte detailnú obrazovku, nad obsahom stránky sa zobrazí odkaz **Späť**.
 
 ## Stránka Viac
 
-Ak ťuknete na **Viac**, otvorí sa stránka Viac na adrese `/mobile/more`. Obsahuje:
+Klepnutím na **Viac** otvoríte stránku Viac na adrese `/mobile/more`. Obsahuje:
 
-- Vaše meno a fotografiu s odkazom **Upraviť profil** – pozri [Úprava profilu](./editing-your-profile.md)
-- Všetky záložky, ktoré vaša cirkev nastavila, v poradí, pod názvom vašej cirkvi. Odkazy na externé webové stránky sa otvoria na novej karte prehliadača.
-- Sekciu **Účet** s položkami:
-  - **Ja** – vaša osobná stránka (len pre prihlásených)
-  - **Vzhľad** – prepínanie medzi **Svetlým režimom** a **Tmavým režimom**
-  - **Správcovský portál** – zobrazí sa len vtedy, ak máte v cirkvi správcovské oprávnenia; otvorí aplikáciu B1 Admin na novej karte
-  - **Nainštalovať aplikáciu** – otvorí [pokyny na inštaláciu](./installing-pwa.md) na adrese `/mobile/install` (po nainštalovaní aplikácie sa skryje)
-- **Odhlásiť sa**, alebo tlačidlo **Prihlásiť sa**, ak nie ste prihlásení
+- Vaše meno a fotografiu s odkazom **Upraviť profil** -- pozrite si [Úprava profilu](./editing-your-profile.md)
+- Všetky karty, ktoré vaša cirkev nakonfigurovala, v poradí, pod názvom vašej cirkvi. Odkazy na externé webové stránky sa otvoria na novej karte prehliadača.
+- Sekciu **Účet** s:
+  - **Ja** -- vaša osobná stránka (len pre prihlásených)
+  - **Vzhľad** -- prepínanie medzi **Svetlý režim** a **Tmavý režim**
+  - **Správcovský portál** -- zobrazí sa len vtedy, ak máte v cirkvi správcovské oprávnenia; otvorí B1 Admin na novej karte
+  - **Nainštalovať aplikáciu** -- otvorí [pokyny na inštaláciu](./installing-pwa.md) na adrese `/mobile/install` (skryté po nainštalovaní aplikácie)
+- **Odhlásiť sa**, alebo tlačidlo **Prihlásiť sa**, ak ste odhlásení
 - Názov vašej cirkvi a odkaz na zásady ochrany osobných údajov
 
-## Lišta aplikácie
+## Horná lišta aplikácie
 
 Na telefóne lišta v hornej časti každej obrazovky zobrazuje:
 
-- Logo vašej cirkvi (alebo jej názov, ak cirkev nenahrala logo) na Domove a ostatných hlavných obrazovkách, alebo šípku späť, keď ste sa dostali na podrobnú obrazovku. Názov obrazovky sa zobrazuje na začiatku samotnej stránky.
-- Ikonu **zvončeka** pre upozornenia a správy so znakom neprečítaných položiek – pozri [Upozornenia a správy](#notifications-and-messages) nižšie
-- Vašu **profilovú fotografiu**, ktorá otvorí váš profil na adrese `/mobile/profileEdit` – pozri [Úprava profilu](./editing-your-profile.md)
+- Logo vašej cirkvi (alebo jej názov, ak cirkev nenahrala logo) na domovskej a ostatných hlavných obrazovkách, alebo šípku späť, keď ste prešli do detailnej obrazovky. Názov obrazovky sa zobrazí v hornej časti samotnej stránky.
+- Ikonu **zvončeka** pre upozornenia a správy so štítkom neprečítaných položiek -- pozrite si [Upozornenia a správy](#notifications-and-messages) nižšie
+- Vašu **profilovú fotografiu**, ktorá otvorí váš profil na adrese `/mobile/profileEdit` -- pozrite si [Úprava profilu](./editing-your-profile.md)
 
 Zvonček a profilová fotografia sa zobrazia len vtedy, keď ste prihlásení.
 
 ## Upozornenia a správy
 
-Ak ťuknete na zvonček, otvorí sa panel s dvoma sekciami:
+Klepnutím na zvonček otvoríte panel s dvoma sekciami:
 
-- **Správy** – vaše najnovšie súkromné konverzácie s odkazom **Nová správa** na začatie novej
-- **Upozornenia** – vaše najnovšie upozornenia s označením **Nové** pri neprečítaných. Ak ťuknete na upozornenie, prejdete do skupiny, plánu alebo konverzácie, z ktorej pochádza.
+- **Správy** -- vaše najnovšie súkromné konverzácie s odkazom **Nová správa** na začatie novej
+- **Upozornenia** -- vaše najnovšie upozornenia s označením **Nové** pri neprečítaných. Klepnutím na upozornenie prejdete do skupiny, plánu alebo konverzácie, z ktorých pochádza.
 
-Každá sekcia zobrazuje počet neprečítaných položiek. Ak ťuknete na **Zobraziť všetko** v dolnej časti, otvorí sa vaša úplná schránka na adrese `/mobile/notifications`.
+Každá sekcia ukazuje, koľko neprečítaných položiek obsahuje. Klepnutím na **Zobraziť všetko** dole otvoríte celú schránku na adrese `/mobile/notifications`.
 
 ## Stránky so sekciami
 
-Podrobné stránky – skupina, plán, vaša stránka Ja, obrazovky Plány a Darovanie – sú usporiadané ako jedna stránka so sekciami namiesto záložiek. Každá sekcia zobrazuje krátky náhľad a odkaz v hlavičke sekcie (napríklad **Všetci členovia**, **Všetky udalosti** alebo **Celý program bohoslužby**) otvorí úplný zoznam. Odkaz **Späť na** v hornej časti tohto zobrazenia vás vráti na stránku, z ktorej ste prišli.
+Detailné stránky -- skupina, plán, vaša stránka Ja, obrazovky Plány a Darovanie -- sú usporiadané ako jedna stránka sekcií namiesto kariet. Každá sekcia zobrazuje krátky náhľad a odkaz v hlavičke sekcie (napríklad **Všetci členovia**, **Všetky udalosti** alebo **Celý poriadok služby**) otvorí úplný zoznam. Odkaz **Späť na** v hornej časti tohto zobrazenia vás vráti na stránku, z ktorej ste prišli.
 
 ## Stránka Ja
 
-**Ja** (`/mobile/me`) je vaše osobné centrum. Zobrazuje vaše meno a fotografiu s tlačidlami **Upraviť profil** a **Nastavenia** ([predvoľby upozornení](./notification-preferences.md)). Potom zobrazuje, čo máte nadchádzajúce – služobné úlohy, registrácie na udalosti a udalosti skupín – nasleduje vaša domácnosť, vaše skupiny, vaše [darovanie](../giving/index.md) v tomto roku, formuláre, ktoré ste odoslali, história vašej účasti, vaše [registrácie](../events/my-registrations.md) a vaše posledné upozornenia a správy. Podrobnosti nájdete v časti [Stránka Ja](./me-page.md).
+**Ja** (`/mobile/me`) je vaše osobné centrum. Zobrazuje vaše meno a fotografiu s tlačidlami **Upraviť profil** a **Nastavenia** ([predvoľby upozornení](./notification-preferences.md)), potom to, čo je pre vás nadchádzajúce -- služobné úlohy, registrácie na udalosti a udalosti skupín -- nasledované vašou domácnosťou, vašimi skupinami, vaším [darovaním](../giving/index.md) tento rok, formulármi, ktoré ste odoslali, históriou účasti, vašimi [registráciami](../events/my-registrations.md) a nedávnymi upozorneniami a správami. Podrobnosti nájdete v časti [Stránka Ja](./me-page.md).
 
-Ak nie ste prihlásení, namiesto toho stránka Ja zobrazuje tlačidlo **Prihlásiť sa**.
+Ak ste odhlásení, stránka Ja namiesto toho zobrazí tlačidlo **Prihlásiť sa**.
 
 ## Inštalácia na domovskú obrazovku
 
-Členský portál je progresívna webová aplikácia (PWA). Otvorte `/mobile/install` (alebo vyberte **Nainštalovať aplikáciu** na stránke Viac) a nájdete postup krok za krokom pre vaše zariadenie. Po nainštalovaní sa aplikácia spúšťa na celú obrazovku z domovskej obrazovky bez rozhrania prehliadača. Pozri [Inštalácia ako aplikácia (PWA)](./installing-pwa.md).
+Členský portál je Progresívna webová aplikácia (PWA). Otvorte `/mobile/install` (alebo vyberte **Nainštalovať aplikáciu** na stránke Viac) pre krok za krokom pokyny pre vaše zariadenie. Po inštalácii sa spustí na celú obrazovku z domovskej obrazovky bez prvkov prehliadača. Pozrite si [Inštalácia ako aplikácia (PWA)](./installing-pwa.md).
 
 ## Verejná webová stránka vašej cirkvi
 
-Mimo členského portálu má verejná webová stránka vašej cirkvi vlastnú hlavnú navigáciu s odkazmi, ktoré nastavili vaši správcovia – stránky ako [kázne](../content/sermons.md), [Biblia](../content/bible.md), [živé vysielanie](../content/live-streaming.md) a verejný zoznam skupín. Na telefóne sú tieto odkazy ukryté za ikonou hamburgera v pravom hornom rohu hlavičky.
+Mimo členského portálu má verejná webová stránka vašej cirkvi vlastnú navigáciu v hlavičke s odkazmi, ktoré nastavili vaši správcovia -- stránky ako [kázania](../content/sermons.md), [Biblia](../content/bible.md), [živé vysielanie](../content/live-streaming.md) a verejný zoznam skupín. Na telefóne sú tieto odkazy za ikonou hamburgera v pravom hornom rohu hlavičky.
 
 :::info
-Záložky a nástroje, ktoré vidíte, sa líšia podľa cirkvi. Správcovia prostredníctvom aplikácie B1 Admin určujú, ktoré sekcie sú členom viditeľné, takže ak nevidíte funkciu, ktorá je tu opísaná, vaša cirkev ju pravdepodobne nemá zapnutú.
+Karty a nástroje, ktoré vidíte, sa líšia podľa cirkvi. Správcovia ovládajú, ktoré sekcie sú členom viditeľné, cez B1 Admin, takže ak nevidíte funkciu opísanú tu, vaša cirkev ju možno nezapla.
 :::

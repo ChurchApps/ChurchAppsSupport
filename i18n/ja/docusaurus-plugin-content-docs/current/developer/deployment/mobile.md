@@ -1,22 +1,22 @@
 ---
-title: "モバイルのデプロイ"
-description: "Expo EAS で B1 Mobile アプリの Android 版と iOS 版をビルドし、ストアに提出して、OTA アップデートを配信する手順を説明します。"
+title: "モバイルアプリのデプロイ"
+description: "B1 Checkin などの Expo アプリの Android および iOS リリースをビルドし、ストアに提出して、EAS で OTA アップデートを配信する手順を説明します。"
 ---
 
-# モバイルのデプロイ
+# モバイルアプリのデプロイ
 
 <div class="article-intro">
 
-ChurchApps のモバイルアプリは **Expo EAS Build** を使ってビルドされ、アプリストア経由で配布されます。このページでは、Android と iOS の両方について、ビルド、提出、そして OTA（Over-the-Air）アップデートの配信方法を説明します。
+B1 Checkin などの ChurchApps の Expo モバイルアプリは、**Expo EAS Build** またはローカルの Gradle ビルドでビルドし、アプリストアを通じて配布します。このページでは、B1 Checkin を例に、Android と iOS の両方についてビルド、提出、OTA（Over-the-Air）アップデートの配信方法を説明します。
 
 </div>
 
 <div class="prereqs">
 <h4>始める前に</h4>
 
-- ローカルでモバイルアプリをセットアップする -- [B1 Mobile](../mobile/b1-mobile.md) を参照
-- [EAS CLI](https://docs.expo.dev/eas/) をインストールして設定する
-- Google Play Console（Android）および／または Apple App Store Connect（iOS）にアクセスできること
+- アプリをローカルにセットアップします -- [モバイルアプリ](../mobile/index.md#local-setup)を参照してください
+- [EAS CLI](https://docs.expo.dev/eas/) をインストールして設定します
+- Google Play Console（Android）および/または Apple App Store Connect（iOS）へのアクセス権を用意します
 
 </div>
 
@@ -24,25 +24,35 @@ ChurchApps のモバイルアプリは **Expo EAS Build** を使ってビルド�
 
 ### Android
 
+Android のリリースビルドはローカルで実行され、EAS から取得したリリース用キーストアで署名されます。最初に一度だけ `npx eas-cli credentials -p android` を実行してダウンロードし（**credentials.json: Download credentials from EAS** を選択）、その後次のコマンドを実行します:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Google Play 用のバンドルは `android/app/build/outputs/bundle/release/app-release.aab` に出力されます。代わりに EAS でビルドする場合は、`yarn build:android:eas` を実行します。
 
 ### iOS
 
+iOS のビルドは常に EAS で実行されます:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
 ## アプリストアへの提出
 
 ### Android -- Google Play ストア
 
-EAS ビルドが成功すると、Android のバイナリ（AAB）が Play Console を通じて Google Play ストアに提出されます。
+AAB を Play Console からアップロードするか、EAS で提出します:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
-iOS のビルドは EAS から直接提出します：
+次のコマンドで、iOS のビルドを EAS から直接提出します:
 
 ```bash
 eas submit --platform ios
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## OTA アップデート
 
-ストアの審査を必要としない JavaScript のみの変更には、OTA（Over-the-Air）アップデートを使用します：
+ストアの審査を必要としない JavaScript のみの変更には、OTA アップデートを使用します:
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-これは EAS Update を使って、ストアへの完全な提出を行わずに変更をユーザーへ直接配信します。
+これは EAS Update を使用して、ストアへの提出を経ずに変更をユーザーへ直接配信します。
 
 :::tip
-OTA アップデートはストアへのビルドより大幅に速く、変更は数日ではなく数分でユーザーに届きます。ネイティブコードの変更を含まないバグ修正、文言の変更、軽微な UI の調整に使用してください。
+OTA アップデートはストアのビルドよりはるかに速く、変更は数日ではなく数分でユーザーに届きます。ネイティブコードの変更を伴わないバグ修正、文言の変更、軽微な UI の調整に使用してください。
 :::
 
 ## バージョン番号
 
-ストア向けのビルドを作成する前に、複数のファイルでバージョン番号を更新する必要があります：
+ストア向けのビルドを作成する前に、複数のファイルでバージョン番号を更新する必要があります:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle`（`versionName` と `versionCode`）
+
+iOS のビルド番号は EAS が自動的に増分します。
 
 :::warning
-上記のすべてのファイルでバージョン番号を更新し忘れると、ビルドの失敗やアプリストアでの審査リジェクトの原因になります。本番ビルドを開始する前に、上記のファイルを一つずつ必ず確認してください。
+すべてのファイルでバージョン番号を更新し忘れると、ビルドの失敗やアプリストアでの審査落ちの原因になります。本番用のビルドを開始する前に、上記のファイルをすべて再確認してください。
 :::
 
 ## 関連記事
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- ローカルでのセットアップと開発ガイド
+- **[モバイルアプリ](../mobile/index.md)** -- ローカルのセットアップと開発ガイド
 - **[API のデプロイ](./apis.md)** -- バックエンド API のデプロイ
 - **[Web アプリのデプロイ](./web-apps.md)** -- フロントエンドの Web アプリケーションのデプロイ
