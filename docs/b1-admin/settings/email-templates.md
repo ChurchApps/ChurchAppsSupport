@@ -40,12 +40,21 @@ Click a merge field chip above the Subject or Body to insert it at your cursor -
 - `{{email}}` -- The recipient's email address
 - `{{churchName}}` -- Your church's name
 
+### Gift merge fields
+
+These fields fill in only when the email is sent by a [workflow](../serving/workflows.md#sending-email) that a **Donation · Created** trigger started. In any other email they are left blank.
+
+- `{{amount}}` -- The amount of the gift, such as $50.00
+- `{{giftDate}}` -- The date of the gift
+- `{{fund}}` -- The fund or funds the gift went to
+- `{{receipt}}` -- A gift summary: the date and method, a row for each fund with its amount, and the total. Use it to send the donor a receipt in the same email as your thank-you. It is only offered for the body, not the subject.
+
 ## Text Templates
 
 A template with the **Text** category is a plain-text message for texting rather than an email:
 
 - It has no subject. The rich text editor is replaced with a plain **Text Message** box that holds up to 1,600 characters.
-- The merge field chips above the box insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, or `{{churchName}}` at your cursor.
+- The merge field chips above the box insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`, or the [gift merge fields](#gift-merge-fields) at your cursor. In a text, `{{receipt}}` becomes one line, such as *$50.00 to General Fund on Nov 8, 2026*.
 - Text templates show up in the **Load Template (optional)** picker of the Text window for a [group](../groups/group-members.md#texting-group-members) or a single person. Picking one fills in the message, and you can still edit it before you send.
 - They are left out of the email template pickers, including the workflow **Send email** action.
 
