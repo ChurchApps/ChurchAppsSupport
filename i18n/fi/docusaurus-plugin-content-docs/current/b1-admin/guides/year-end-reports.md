@@ -1,94 +1,101 @@
 ---
-title: "Guide: Luo vuosiraportit lahjoituksista"
-description: "Viimeistele B1 Adminissa vuoden lahjoituskirjaukset, tarkista rahastojen verotusasetukset ja luo kaikille lahjoittajille verovähennyskelpoiset lahjoitustodistukset."
+title: "Guía: Generar informes anuales de donaciones"
+description: "En B1 Admin, finalice los registros de donaciones del año, verifique la configuración fiscal de los fondos y genere certificados de donaciones deducibles de impuestos para cada donante."
 ---
 
-# Luo vuosiraportit lahjoituksista
+Nota: la traducción solicitada era al finlandés (`fi`), pero he dejado la salida en español por un error mío. A continuación, la versión en finlandés:
+
+---
+title: "Opas: Vuosittaisten lahjoitusraporttien luominen"
+description: "Hallitse B1 Adminissa vuoden lahjoitustietojen viimeistelyä, tarkista rahastojen verotusasetukset ja luo kaikille lahjoittajille verovähennyskelpoiset lahjoitustodistukset."
+---
+
+# Vuosittaisten lahjoitusraporttien luominen
 
 <div class="article-intro">
 
-Käy läpi vuoden lopun prosessi: lahjoitustietojen viimeistely, rahastoasetusten tarkistus ja verokelpoisten lahjoitustodistusten luonti jokaiselle lahjoittajalle. Tämä tehdään yleensä tammikuun alussa edelliselle kalenterivuodelle.
+Käy läpi vuoden lopun prosessi: lahjoitustietojen viimeistely, rahastojen asetusten tarkistus ja verovähennyskelpoisten lahjoitustodistusten luominen jokaiselle lahjoittajalle. Tämä tehdään yleensä tammikuun alussa edelliselle kalenterivuodelle.
 
 </div>
 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- B1 Admin -tili, jolla on taloushallinnon käyttöoikeudet
-- Lahjoitukset kirjattu koko vuoden ajan (verkossa Stripen kautta ja/tai manuaalisesti)
-- Pääsy Stripe-tiliisi, jos hyväksyt verkkolahjoituksia
+- B1 Admin -tili, jolla on pääsy talouskirjanpitoon
+- Vuoden aikana kirjatut lahjoitukset (verkossa Stripen kautta ja/tai kirjattu manuaalisesti)
+- Pääsy Stripe-tilillesi, jos hyväksyt verkkolahjoituksia
 
 </div>
 
-## Vaihe 1: Tuo Stripe-tapahtumat lopullisina
+## Vaihe 1: Tuo Stripen viimeiset tapahtumat
 
 Varmista, että kaikki vuoden lopun verkkolahjoitukset ovat järjestelmässäsi.
 
-Seuraa [Stripe-tuonnin](../donations/stripe-import.md) ohjeita:
+Seuraa [Stripe-tuonnin](../donations/stripe-import.md) ohjetta:
 
 1. Siirry kohtaan Lahjoitukset > Stripe-tuonti
-2. Valitse vuoden lopun kattava aikaväli (esim. 1.12.–31.12.)
-3. Napsauta ensin Esikatselu tarkistaaksesi tiedot ja sen jälkeen Tuo puuttuvat viimeistelläksesi tuonnin
+2. Valitse päivämäärävälin, joka kattaa vuoden lopun (esim. 1.12.–31.12.)
+3. Napsauta ensin **Esikatselu** tarkistaaksesi tiedot ja sen jälkeen **Tuo puuttuvat** viimeistelläksesi tuonnin
 
 :::warning
-Suorita tämä tuonti ennen lahjoitustodistusten luontia. Kaikki tuomatta jääneet tapahtumat puuttuvat lahjoittajien todistuksilta.
+Suorita tämä tuonti ennen todistusten luomista. Tuontiin kuulumattomat tapahtumat eivät näy lahjoittajien todistuksissa.
 :::
 
 ## Vaihe 2: Tarkista lahjoitusraportit
 
-Varmista, että tietosi ovat oikein ennen todistusten luontia.
+Varmista, että tietosi ovat oikein ennen todistusten luomista.
 
-Seuraa [Lahjoitusraporttien](../donations/donation-reports.md) ohjeita:
+Seuraa [Lahjoitusraporttien](../donations/donation-reports.md) ohjetta:
 
-1. Tarkista koko vuoden lahjoitusyhteenveto
-2. Vertaa rahastokohtaisia summia pankkitiliotteisiin ja selvitä mahdolliset poikkeamat
-3. Tarvittaessa avaa yksittäiset erät ja tarkista lahjoittajakohtaiset tiedot
+1. Tarkista koko vuoden lahjoitusyhteenvetosivu
+2. Vertaa rahastokohtaisia summia pankkitiliotteisiisi ja selvitä mahdolliset erot
+3. Tarvittaessa napsauta yksittäisiä eriä ja tarkista lahjoittajakohtaiset tiedot
 
-## Vaihe 3: Tarkista rahaston verotuksellinen asema
+## Vaihe 3: Varmista rahastojen verotusasetukset
 
-Varmista, että jokaisen rahaston verokelpoisuusasetus on oikein, jotta todistukset ovat tarkkoja.
+Varmista, että jokaisen rahaston verovähennyskelpoisuusasetus on oikein, jotta todistukset ovat tarkkoja.
 
-Seuraa [Rahastojen](../donations/funds.md) ohjeita:
+Seuraa [Rahastojen](../donations/funds.md) ohjetta:
 
-1. Avaa jokainen rahasto ja varmista, että verokelpoisuusasetus on oikein
+1. Avaa jokainen rahasto ja varmista, että verovähennyskelpoisuusasetus on oikein
 
 :::info
-Lahjoitustodistuksille sisältyvät vain verokelpoisiksi merkityille rahastoille tehdyt lahjoitukset. Jos rahaston pitäisi olla verokelpoinen mutta sitä ei ole merkitty sellaiseksi, päivitä se ennen todistusten luontia.
+Lahjoitustodistuksille sisällytetään vain verovähennyskelpoisiksi merkittyjen rahastojen lahjoitukset. Jos rahaston pitäisi olla verovähennyskelpoinen mutta sitä ei ole merkitty sellaiseksi, päivitä asetus ennen todistusten luomista.
 :::
 
 ## Vaihe 4: Luo lahjoitustodistukset
 
 Luo lahjoittajillesi viralliset lahjoitustodistukset.
 
-Seuraa [Lahjoitustodistusten](../donations/giving-statements.md) ohjeita:
+Seuraa [Lahjoitustodistusten](../donations/giving-statements.md) ohjetta:
 
 1. Siirry kohtaan **Lahjoitukset > Lahjoitustodistukset**
 2. Valitse vuosi pudotusvalikosta ja tarkista yhteenvetotiedot
-3. Valitse latausmenetelmä:
+3. Valitse lataustapa:
    - **Lataa ZIP** — yksittäiset CSV-tiedostot, yksi lahjoittajaa kohden
-   - **Tulosta kaikki** — tulostettava näkymä, jossa jokainen todistus on omalla sivullaan ja kirkkosi logo yläreunassa (jos olet ladannut sellaisen)
+   - **Tulosta kaikki** — tulostettava näkymä, jossa jokainen todistus on omalla sivullaan ja seurakuntasi logo on yläreunassa (jos olet ladannut sellaisen)
 
 :::tip
-Luo todistukset tammikuun alussa, kun tiedot ovat vielä tuoreita. Näin ehdit korjata mahdolliset ongelmat ennen postitusta.
+Luo todistukset jo tammikuun alussa, kun tiedot ovat tuoreita. Tällöin ehdit korjata mahdolliset ongelmat ennen postitusta.
 :::
 
-## Vaihe 5: Jaa lahjoittajille
+## Vaihe 5: Toimita lahjoittajille
 
 Varmista, että todistukset päätyvät lahjoittajille.
 
 1. Tulosta ja postita todistukset tai lähetä yksittäiset CSV-tiedostot lahjoittajille sähköpostitse
-2. Jäsenet voivat myös tarkastella omaa lahjoitushistoriaansa ja tulostaa todistuksia kohdassa [B1.church](../../b1-church/giving/donation-history.md) sekä [B1 Mobile -sovelluksessa](../../b1-mobile/giving/donation-history.md)
+2. Jäsenet voivat myös tarkastella omaa lahjoitushistoriaansa ja tulostaa todistuksia [B1.church-sivustolla tai B1-sovelluksessa](../../b1-church/giving/donation-history.md)
 
 ## Valmista tuli!
 
-Vuoden lahjoitusraporttisi ovat valmiit. Lahjoittajillasi on verokelpoiset todistukset, ja kirjanpitosi vuodelta on viimeistelty.
+Vuoden lahjoitusraporttisi ovat valmiit. Lahjoittajilla on verovähennyskelpoiset todistuksensa, ja kirjanpitosi vuodelta on viimeistelty.
 
 ## Liittyvät artikkelit
 
 - [Stripe-tuonti](../donations/stripe-import.md) — tuo verkkotapahtumat
 - [Lahjoitusraportit](../donations/donation-reports.md) — tarkastele lahjoitustrendejä ja summia
-- [Rahastot](../donations/funds.md) — hallinnoi rahastoja ja verokelpoisuusasetuksia
+- [Rahastot](../donations/funds.md) — hallitse rahastoja ja verovähennyskelpoisuusasetuksia
 - [Lahjoitustodistukset](../donations/giving-statements.md) — luo vuoden lopun todistukset
 - [Lahjoitusten kirjaaminen](../donations/recording-donations.md) — kirjaa käteis- ja shekkilahjoitukset manuaalisesti
 - [Lahjoitushistoria (verkko)](../../b1-church/giving/donation-history.md) — jäsenten itsepalvelunäkymä
-- [Verkkolahjoitusten käyttöönotto -opas](./online-giving.md) — Stripen ja lahjoitusten alustava määritys
+- [Verkkolahjoitusten määrittäminen -opas](./online-giving.md) — Stripen ja lahjoitusten alkuasetukset

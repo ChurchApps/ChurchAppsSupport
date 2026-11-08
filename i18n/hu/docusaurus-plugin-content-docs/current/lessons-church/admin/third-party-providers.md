@@ -1,58 +1,57 @@
 ---
 title: "Harmadik féltől származó szolgáltatók"
-description: "Külső tantervi feed hozzáadása a Lessons.churchhez a harmadik féltől származó szolgáltatók oldalán; kapcsolatok megtekintése, frissítése, törlése."
+description: "Adjon hozzá Open Lesson Format tananyag-forrást a Lessons.church Külső szolgáltatók oldalán, majd szerkessze vagy törölje, hogy gyülekezete ütemezhesse a leckéit."
 ---
 
 # Harmadik féltől származó szolgáltatók
 
 <div class="article-intro">
 
-A Lessons.church támogatja a külső tanmenet-szolgáltatókat a Nyílt Lecke Formátumon (Open Lesson Format) keresztül. Ez azt jelenti, hogy más szervezetek tartalmait importálhatja, és a beépített könyvtár mellett is elérhetővé teheti őket, így a gyülekezetek több forrásból származó tananyagokhoz férhetnek hozzá egy helyen.
+A Lessons.church támogatja a külső tananyag-szolgáltatókat az Open Lesson Format segítségével. Ez azt jelenti, hogy gyülekezete más szervezetek tananyagait is csatlakoztathatja, és közvetlenül a beépített könyvtár mellett ütemezheti őket az osztálytermeihez. Így csapata több forrásból származó tananyagot találhat egy helyen.
 
 </div>
 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- Rendelkezzen adminisztrátori jogosultsággal a Lessons.church-ben (lásd: [Adminisztráció áttekintése](./index.md))
-- Szerezze be a csatlakoztatni kívánt külső szolgáltató hírcsatorna URL-jét
+- Jelentkezzen be a Lessons.church oldalra olyan fiókkal, amellyel kezelheti gyülekezete osztálytermi beosztásait
+- Szerezze be a csatlakoztatni kívánt külső szolgáltató hírcsatorna URL-jét. Az URL-nek [Open Lesson Format](./open-lesson-format.md) szerinti leckéket kell visszaadnia
 
 </div>
 
 ## Szolgáltató hozzáadása
 
-1. Lépjen az **Admin** területre.
-2. Nyissa meg a **Harmadik fél** oldalt.
-3. Kattintson a **Szolgáltató hozzáadása** gombra (vagy egy új kapcsolat hozzáadására szolgáló egyenértékű gombra).
-4. Adja meg a szolgáltató **hírcsatorna URL-jét**. Ez az a cím, ahol a szolgáltató közzéteszi tananyagadatait a Nyílt Lecke Formátumban.
-5. Mentse a kapcsolatot.
+1. Kattintson a **Külső szolgáltatók** elemre a Lessons.church navigációs sávjában. Megnyílik a **Külső leckeszolgáltatók** oldal.
+2. Kattintson a **Szolgáltató hozzáadása** gombra. Ha még nem adott hozzá szolgáltatót, helyette az **Első szolgáltató hozzáadása** gombra kattintson.
+3. Adja meg a **Szolgáltató neve** mezőt. Ez a név jelenik meg a csapata számára, amikor kiválasztja a szolgáltatót.
+4. Adja meg az **API URL** mezőt. Ez az a cím, ahol a szolgáltató közzéteszi tananyagát Open Lesson Format formátumban.
+5. Kattintson a **Mentés** gombra.
 
-Mentés után a Lessons.church importálja a szolgáltató tartalmát. Programjai, tanulmányai és leckéi megjelennek a tananyagkönyvtárban, a saját tartalmai mellett.
+A szolgáltató csak az Ön gyülekezetének jelenik meg. Ezután választható lesz a **Szolgáltató** mezőnél, amikor [leckét ütemez](../classrooms/scheduling-lessons.md) egy osztályteremhez, valamint a **Forrás** mezőnél, amikor [éves tervet](./managing-year-plans.md) állít össze.
 
 ## Szolgáltatók kezelése
 
-A **Harmadik fél** oldalon láthatja az összes csatlakoztatott szolgáltatót. Minden szolgáltatónál a következőket teheti:
+A **Külső leckeszolgáltatók** oldalon látható minden szolgáltató, amelyet gyülekezete hozzáadott. Egy szolgáltató módosításához:
 
-- **Megtekintés**: az importált tartalom megnézése, hogy megbizonyosodjon róla, helyesen került-e be.
-- **Frissítés**: a hírcsatorna URL-jének módosítása, ha a szolgáltató megváltoztatja a végpontját.
-- **Eltávolítás**: egy szolgáltató eltávolítása, ha már nem szeretné tartalmát használni.
+- **Szerkesztés** -- Kattintson a **Szolgáltató szerkesztése** (ceruza) ikonra, módosítsa a **Szolgáltató neve** vagy az **API URL** mezőt, majd kattintson a **Mentés** gombra.
+- **Törlés** -- Kattintson a **Szolgáltató szerkesztése** ikonra, majd a törlés (kuka) ikonra, és erősítse meg a műveletet.
 
-## Mi az a Nyílt Lecke Formátum?
+## Mi az Open Lesson Format?
 
-A Nyílt Lecke Formátum egy szabványosított séma, amely a tananyagtartalmakat – programokat, tanulmányokat, leckéket, helyszíneket, szakaszokat és tevékenységeket – strukturált módon írja le. Bármely szervezet, amely tartalmát ezen a formátumon teszi közzé, szolgáltatóként hozzáadható a Lessons.church-hez.
+Az Open Lesson Format egy szabványosított séma, amely strukturált módon írja le a tananyag-tartalmakat: programokat, tanulmányokat, leckéket, helyszíneket, szakaszokat és műveleteket. Bármely szervezet, amely ebben a formátumban teszi közzé tartalmát, szolgáltatóként hozzáadható a Lessons.church oldalon.
 
-Ha tartalomszolgáltatóként szeretné elérhetővé tenni tananyagát a Lessons.church-en keresztül, a teljes séma-dokumentációt a [Nyílt Lecke Formátum](./open-lesson-format.md) útmutatóban találja.
+Ha tartalomszolgáltatóként szeretné elérhetővé tenni tananyagát a Lessons.church oldalon, a teljes sémadokumentáció az [Open Lesson Format](./open-lesson-format.md) útmutatóban található.
 
 ## Miért érdemes harmadik féltől származó szolgáltatókat használni?
 
-- **Több választási lehetőség a gyülekezetek számára**: A gyülekezetek a platform elhagyása nélkül böngészhetnek szélesebb körű tananyagok között.
-- **Minden egy helyen**: Az önkénteseknek és koordinátoroknak nem kell több weboldalt felkeresniük a leckék megtalálásához és ütemezéséhez.
-- **Egyszerű beállítás**: Szolgáltató hozzáadásához csak egy hírcsatorna URL-re van szükség. Nincs szükség kézi adatbevitelre vagy fájlfeltöltésre.
+- **Több választási lehetőség a gyülekezetek számára** -- A gyülekezetek a platform elhagyása nélkül böngészhetnek szélesebb körű tananyagok között.
+- **Minden egy helyen** -- Az önkénteseknek és koordinátoroknak nem kell több weboldalt felkeresniük a leckék megkereséséhez és ütemezéséhez.
+- **Egyszerű beállítás** -- Szolgáltató hozzáadásához csak egy név és egy hírcsatorna URL szükséges. Nincs kézi adatbevitel vagy fájlfeltöltés.
 
 :::info
-A harmadik féltől származó tartalmakat a külső szolgáltató kezeli. Ha egy szolgáltatótól hiányzó vagy elavult tartalmat észlel, a problémát valószínűleg az ő oldalukon kell megoldani.
+A harmadik féltől származó tartalmakat a külső szolgáltató kezeli. Ha hiányzó vagy elavult tartalmat tapasztal egy szolgáltatónál, a problémát lehet, hogy az ő oldalukon kell megoldani.
 :::
 
 :::tip
-A gyülekezeti szintű külső szolgáltató-beállításokról (nem adminisztrátori szinten) a Böngészés szakasz [Külső szolgáltatók](../browsing/external-providers.md) oldalán olvashat.
+Ha szeretné megtudni, hogyan néznek ki a külső szolgáltatótól származó leckék az ütemezés után, olvassa el a [Külső szolgáltatók](../browsing/external-providers.md) oldalt a Böngészés részben.
 :::

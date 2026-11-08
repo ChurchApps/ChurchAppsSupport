@@ -1,58 +1,60 @@
 ---
 title: "Proveedores externos"
-description: "Cómo los proveedores externos de currículo agregan contenido a Lessons.church con el Open Lesson Format y cómo conectar uno desde el portal."
+description: "Cómo los proveedores de currículo de terceros comparten lecciones a través del Formato de Lección Abierta, y cómo tu iglesia agrega uno en Lessons.church y programa sus lecciones."
 ---
 
 # Proveedores externos
 
 <div class="article-intro">
 
-Lessons.church no se limita a su propio currículo. Los proveedores de currículo de terceros pueden publicar su contenido a través del **Formato Abierto de Lecciones**, y ese contenido aparece junto con los programas integrados de Lessons.church para una experiencia de exploración unificada.
+Lessons.church no se limita a su propio currículo. Los proveedores de currículo de terceros pueden publicar su contenido mediante el **Formato de Lección Abierta**. Una vez que tu iglesia agrega un proveedor, puedes programar sus lecciones para tus salones junto a la biblioteca de Lessons.church.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Comprenda cómo está organizado el contenido leyendo [Programas y estudios](./programs-and-studies.md)
-- Para agregar una conexión de proveedor, necesita una [cuenta de Lessons.church](../getting-started/creating-account.md) con acceso al portal de su iglesia
+- Comprende cómo se organiza el contenido leyendo [Programas y estudios](./programs-and-studies.md)
+- Para agregar una conexión con un proveedor, necesitas una [cuenta de Lessons.church](../getting-started/creating-account.md) con acceso a los horarios de los salones de tu iglesia
 
 </div>
 
 ## ¿Qué son los proveedores externos?
 
-Un proveedor externo es cualquier organización que publica currículo para iglesias utilizando el Formato Abierto de Lecciones, un estándar que permite compartir contenido de lecciones entre plataformas. Cuando un proveedor hace que su contenido esté disponible en este formato, Lessons.church puede importarlo y mostrarlo de la misma manera que sus propios programas.
+Un proveedor externo es cualquier organización que publica currículo para iglesias usando el Formato de Lección Abierta, un estándar que permite compartir el contenido de las lecciones entre plataformas. Cuando un proveedor pone su contenido a disposición en este formato, Lessons.church puede leerlo y mostrar sus lecciones con el mismo diseño que usa para su propio contenido.
 
-Esto significa que obtiene acceso a una selección más amplia de currículo sin tener que visitar múltiples sitios web.
+Esto significa que tienes acceso a una selección más amplia de currículos sin tener que visitar varios sitios web.
 
-## Explorar contenido externo
+## Cómo agregar conexiones con proveedores
 
-El contenido de proveedores externos funciona exactamente igual que el contenido integrado:
+Si tu iglesia usa un proveedor de currículo que admite el Formato de Lección Abierta:
 
-1. Los programas de proveedores externos aparecen en la página de inicio de Lessons.church junto con otros programas.
-2. Haga clic en un **programa** para ver sus estudios.
-3. Haga clic en un **estudio** para ver sus lecciones.
-4. Vea las lecciones con el mismo diseño: secciones, roles, acciones, videos y materiales descargables.
+1. Inicia sesión en tu cuenta de Lessons.church.
+2. Haz clic en **Proveedores externos** en la navegación.
+3. Haz clic en **Agregar proveedor**, escribe un **Nombre del proveedor** y la **URL de la API** del proveedor, y haz clic en **Guardar**.
 
-No hay un proceso especial ni una sección separada para el contenido externo. Todo está integrado en una sola biblioteca para una exploración sencilla.
-
-## Agregar conexiones de proveedores
-
-Si su iglesia utiliza un proveedor de currículo que admite el Formato Abierto de Lecciones y desea que su contenido esté disponible en su portal de Lessons.church:
-
-1. Inicie sesión en su cuenta de Lessons.church.
-2. Navegue a la página de **Proveedores Externos** en el portal.
-3. Agregue la URL de conexión del proveedor externo.
-4. Sus programas y estudios estarán disponibles para que su iglesia los explore, programe y utilice en las aulas.
+Consulta [Proveedores de terceros](../admin/third-party-providers.md) para ver los pasos completos.
 
 :::info
-Agregar una conexión de proveedor externo se realiza a través del portal de Lessons.church y requiere una cuenta con sesión iniciada. Explorar contenido que ya ha sido agregado por la plataforma no requiere una cuenta.
+Un proveedor externo se agrega únicamente para tu iglesia. Sus programas no aparecen en la página principal pública de Lessons.church ni en las búsquedas.
+:::
+
+## Cómo usar el contenido externo
+
+Una vez que se agrega un proveedor, sus programas, estudios y lecciones están disponibles al programar:
+
+1. Cuando [agregues una lección al horario de un salón](../classrooms/scheduling-lessons.md), elige el proveedor en **Proveedor**.
+2. Selecciona el **Programa**, el **Estudio**, la **Lección** y el **Lugar** de la misma manera que lo harías para una lección de Lessons.church.
+3. En el horario del salón, haz clic en **Ver lección** debajo de una lección externa programada para abrirla. Usa el mismo diseño que las lecciones integradas: secciones, roles, acciones, videos y materiales descargables.
+
+:::note
+Las lecciones de proveedores externos no se pueden [personalizar](../customization/customizing-lessons.md). Solo las lecciones de Lessons.church muestran el enlace **Personalizar**.
 :::
 
 ## Para creadores de contenido
 
-Si usted es un editor de currículo interesado en hacer que su contenido esté disponible en Lessons.church, el Formato Abierto de Lecciones proporciona una forma estandarizada de compartir sus programas, estudios y lecciones. Contacte al equipo de Lessons.church o visite la documentación para desarrolladores para obtener detalles de integración.
+Si eres un editor de currículo interesado en poner tu contenido a disposición en Lessons.church, el Formato de Lección Abierta ofrece una manera estandarizada de compartir tus programas, estudios y lecciones. Comunícate con el equipo de Lessons.church o visita la documentación para desarrolladores para conocer los detalles de la integración.
 
 :::tip
-Si es un administrador que gestiona fuentes de proveedores externos a nivel de plataforma, consulte [Proveedores de terceros](../admin/third-party-providers.md) en la sección de Administración.
+Para ver instrucciones paso a paso sobre cómo agregar, editar y eliminar un proveedor, consulta [Proveedores de terceros](../admin/third-party-providers.md).
 :::

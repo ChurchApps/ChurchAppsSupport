@@ -1,13 +1,13 @@
 ---
 title: "Miljøvariabler"
-description: "Opsæt .env-filen til ChurchApps-projekter, vælg mellem den delte demo-API og en lokal API, og udfyld variablerne til B1 Admin, B1.church, B1 Mobile, Lessons.church m.fl."
+description: "Opsæt .env-filer til ChurchApps-projekter, vælg den delte demo-API eller en lokal API, og udfyld variablerne for B1 Admin, B1.church, B1 Checkin og flere."
 ---
 
 # Miljøvariabler
 
 <div class="article-intro">
 
-Hvert ChurchApps-projekt bruger en `.env`-fil til lokal konfiguration. Hvert projekt inkluderer en sampelfil, som du kopierer og tilpasser. Denne side dækker miljøvariablerne for API'er, webapps og mobilapps, herunder hvordan du vælger mellem staging- og lokale API-mål.
+Alle ChurchApps-projekter bruger en `.env`-fil til lokal konfiguration. Hvert projekt indeholder en eksempelfil, som du kopierer og tilpasser. Denne side beskriver miljøvariablerne for API'er, webapps og mobilapps, herunder hvordan du vælger mellem demo- og lokale API-mål.
 
 </div>
 
@@ -15,59 +15,63 @@ Hvert ChurchApps-projekt bruger en `.env`-fil til lokal konfiguration. Hvert pro
 <h4>Før du begynder</h4>
 
 - Installer [forudsætningerne](./prerequisites.md) for dit projekt
-- Klon det projekt-lager, du vil arbejde på
+- Klon det projektrepository, du vil arbejde på
 - Gennemgå [Projektoversigten](./project-overview.md) for at forstå, hvilke API-moduler dit projekt har brug for
 
 </div>
 
 ## Generelt mønster
 
-1. Se efter `dotenv.sample.txt` eller `.env.sample` i projektrodet.
-2. Kopier det til `.env`.
+1. Find `dotenv.sample.txt` eller `.env.sample` i projektets rodmappe.
+2. Kopiér den til `.env`.
 3. Rediger værdierne efter behov.
 
 ```bash
-# Eksempel på et projekt med .env.sample
+# Eksempel for et projekt med .env.sample
 cp .env.sample .env
 
-# Eksempel på et projekt med dotenv.sample.txt
+# Eksempel for et projekt med dotenv.sample.txt
 cp dotenv.sample.txt .env
 ```
 
 :::warning
-**Commit aldrig `.env`-filer til versionkontrol.** De indeholder hemmeligheder såsom databaselegitimationsoplysninger, API-nøgler og JWT-hemmeligheder. Alle ChurchApps-projekter inkluderer `.env` i `.gitignore`, men dobbeltkontroller altid før du committer.
+**Commit aldrig `.env`-filer til versionsstyring.** De indeholder hemmeligheder såsom databaselegitimationsoplysninger, API-nøgler og JWT-secrets. Alle ChurchApps-projekter har `.env` med i `.gitignore`, men kontrollér altid dobbelt, før du committer.
 :::
 
 ## Valg af API-mål
 
-Den vigtigste beslutning er, hvor din frontend peger for API-kald. Der er to muligheder:
+Den vigtigste beslutning er, hvor dit frontend sender API-kald hen. Der er to muligheder:
 
-### Option 1: Staging API'er (anbefalet til frontend-udvikling)
+### Mulighed 1: Demo-API'er (anbefales til frontend-udvikling)
 
-Brug det delte staging-miljø. Ingen lokal API- eller databaseopsætning påkrævet.
+Brug det delte demomiljø. Der kræves ingen lokal API- eller databaseopsætning. Det kører den nyeste kode fra `main`, og dets eksempeldata genindlæses hver nat.
 
 ```bash
-# Basis URL-mønster
-https://api.staging.churchapps.org/{module}
+# Grundmønster for basis-URL
+https://api.demo.churchapps.org/{module}
 
-# Eksempel modul URL'er
-https://api.staging.churchapps.org/membership
-https://api.staging.churchapps.org/attendance
-https://api.staging.churchapps.org/content
-https://api.staging.churchapps.org/giving
-https://api.staging.churchapps.org/messaging
-https://api.staging.churchapps.org/doing
+# Eksempler på modul-URL'er
+https://api.demo.churchapps.org/membership
+https://api.demo.churchapps.org/attendance
+https://api.demo.churchapps.org/content
+https://api.demo.churchapps.org/giving
+https://api.demo.churchapps.org/messaging
+https://api.demo.churchapps.org/doing
 ```
 
-### Option 2: Lokale API
+:::warning
+Staging-miljøet (`api.staging.churchapps.org`, `api.staging.lessons.church` og relaterede værter) er blevet udfaset. Nogle eksempel-`.env`-filer indeholder muligvis stadig staging-URL'er; erstat dem med demo- eller lokale værdier vist på denne side. Der findes ingen delt ikke-produktions-Lessons-API -- kør [LessonsApi](https://github.com/ChurchApps/LessonsApi) lokalt (den lytter på port `8090`), når du har brug for en.
+:::
 
-Kør Api-projektet på din maskine. Kræver MySQL 8.0+ med databaser oprettet for hvert modul. Se vejledningen [Lokalt API-setup](../api/local-setup.md).
+### Mulighed 2: Lokal API
+
+Kør Api-projektet på din maskine. Kræver MySQL 8.0+ med databaser oprettet for hvert modul. Se guiden [lokal opsætning af API'en](../api/local-setup.md).
 
 ```bash
-# Basis URL-mønster
+# Grundmønster for basis-URL
 http://localhost:8084/{module}
 
-# Eksempel modul URL'er
+# Eksempler på modul-URL'er
 http://localhost:8084/membership
 http://localhost:8084/attendance
 http://localhost:8084/content
@@ -80,136 +84,112 @@ http://localhost:8084/doing
 
 ## API-miljøvariabler
 
-Kerneprojektet **Api** (`.env.sample`) har den mest konfiguration. Her er vigtige variabler:
+Det centrale **Api**-projekt (`.env.sample`) har mest konfiguration. Her er de vigtigste variabler:
 
-### Delte indstillinger
+### Fælles indstillinger
 
-| Variable | Beskrivelse | Eksempel |
-|----------|-------------|---------|
-| `ENVIRONMENT` | Køretid miljø | `dev` |
-| `SERVER_PORT` | HTTP-port til lokal dev-server | `8084` |
+| Variabel | Beskrivelse | Eksempel |
+|----------|-------------|----------|
+| `ENVIRONMENT` | Kørselsmiljø | `dev` |
+| `SERVER_PORT` | HTTP-port for den lokale udviklingsserver | `8084` |
 | `ENCRYPTION_KEY` | 192-bit krypteringsnøgle til følsomme data | `aSecretKeyOfExactly192BitsLength` |
-| `JWT_SECRET` | Hemmelighed til signing af JSON Web Tokens | `jwt-secret-dev` |
-| `FILE_STORE` | Hvor uploadede filer skal gemmes (`disk` eller `s3`) | `disk` |
-| `CORS_ORIGIN` | Tilladte CORS-kilder (`*` til lokal dev) | `*` |
+| `JWT_SECRET` | Hemmelighed til signering af JSON Web Tokens | `jwt-secret-dev` |
+| `FILE_STORE` | Hvor uploadede filer gemmes (`disk` eller `s3`) | `disk` |
+| `CORS_ORIGIN` | Tilladte CORS-oprindelser (`*` til lokal udvikling) | `*` |
 
-### Databaseforbindelser
+### Databaseforbindelse
 
-Hvert API-modul har sin egen MySQL-database og forbindelsesstreng:
+En enkelt basis-URL peger API'en mod MySQL. API'en udleder én database pr. modul (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`) ud fra denne basis.
 
-| Variable | Database |
+| Variabel | Eksempel |
 |----------|----------|
-| `MEMBERSHIP_CONNECTION_STRING` | `mysql://root:password@localhost:3306/membership` |
-| `ATTENDANCE_CONNECTION_STRING` | `mysql://root:password@localhost:3306/attendance` |
-| `CONTENT_CONNECTION_STRING` | `mysql://root:password@localhost:3306/content` |
-| `GIVING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/giving` |
-| `MESSAGING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/messaging` |
-| `DOING_CONNECTION_STRING` | `mysql://root:password@localhost:3306/doing` |
+| `API_DATABASE_URL` | `mysql://root:password@localhost:3306` |
 
 :::tip
-Opdater `root:password` med dine faktiske MySQL-legitimationsoplysninger. Hver database skal oprettes før kørsel af API'en. Brug `npm run initdb` til at oprette skemaet for alle moduler, eller `npm run initdb:membership` til et enkelt modul.
+Opdatér `root:password` med dine faktiske MySQL-legitimationsoplysninger. Hver database pr. modul skal findes, før API'en køres. Brug `npm run initdb` til at oprette skemaet for alle moduler, eller `npm run initdb:membership` for et enkelt modul.
 :::
 
 ### WebSocket-indstillinger
 
-| Variable | Beskrivelse | Eksempel |
-|----------|-------------|---------|
-| `SOCKET_PORT` | Port til WebSocket-serveren | `8087` |
-| `SOCKET_URL` | WebSocket-URL til klientforbindelse | `ws://localhost:8087` |
+| Variabel | Beskrivelse | Eksempel |
+|----------|-------------|----------|
+| `SOCKET_PORT` | Port for WebSocket-serveren | `8087` |
+| `SOCKET_URL` | WebSocket-URL, som klienter forbinder til | `ws://localhost:8087` |
 
 ---
 
-## Webapplikations miljøvariabler
+## Miljøvariabler for webapps
 
 ### B1Admin (React + Vite)
 
-Sampelfil: `.env.sample`
+Eksempelfil: `.env.sample`
 
-| Variable | Beskrivelse | Eksempel (Staging) |
-|----------|-------------|-------------------|
+| Variabel | Beskrivelse | Eksempel (demo) |
+|----------|-------------|-----------------|
 | `REACT_APP_STAGE` | Miljønavn | `demo` |
-| `PORT` | Dev-serverport | `3101` |
-| `REACT_APP_MEMBERSHIP_API` | Medlemskabs API-URL | `https://api.staging.churchapps.org/membership` |
-| `REACT_APP_ATTENDANCE_API` | Deltagelses API-URL | `https://api.staging.churchapps.org/attendance` |
-| `REACT_APP_GIVING_API` | Giving API-URL | `https://api.staging.churchapps.org/giving` |
-| `REACT_APP_CONTENT_ROOT` | Indholdsleverings-URL | `https://content.staging.churchapps.org` |
-| `REACT_APP_GOOGLE_ANALYTICS` | Google Analytics ID (valgfrit) | `UA-123456789-1` |
+| `PORT` | Port for udviklingsserveren | `3101` |
+| `REACT_APP_API_BASE` | Enkelt basis-URL for alle ChurchApps-API'er (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` tilføjes automatisk) | `https://api.demo.churchapps.org` |
+| `REACT_APP_CONTENT_ROOT` | URL til indholdslevering | `https://democontent.churchapps.org` |
+| `REACT_APP_GOOGLE_ANALYTICS` | Google Analytics-ID (valgfrit) | `UA-123456789-1` |
 
-For lokal API-udvikling skal du kommentere ud og bruge `localhost`-varianterne:
+Til lokal API-udvikling skal basis-URL'en pege på din lokale stak:
 
 ```bash
-REACT_APP_MEMBERSHIP_API=http://localhost:8084/membership
-REACT_APP_ATTENDANCE_API=http://localhost:8084/attendance
-REACT_APP_GIVING_API=http://localhost:8084/giving
-REACT_APP_CONTENT_API=http://localhost:8084/content
-REACT_APP_DOING_API=http://localhost:8084/doing
-REACT_APP_MESSAGING_API=http://localhost:8084/messaging
+REACT_APP_API_BASE=http://localhost:8084
 ```
 
 ### B1App (Next.js)
 
-Sampelfil: `.env.sample`
+Eksempelfil: `.env.sample`
 
-| Variable | Beskrivelse | Eksempel (Staging) |
-|----------|-------------|-------------------|
-| `NEXT_PUBLIC_MEMBERSHIP_API` | Medlemskabs API-URL | `https://api.staging.churchapps.org/membership` |
-| `NEXT_PUBLIC_ATTENDANCE_API` | Deltagelses API-URL | `https://api.staging.churchapps.org/attendance` |
-| `NEXT_PUBLIC_GIVING_API` | Giving API-URL | `https://api.staging.churchapps.org/giving` |
-| `NEXT_PUBLIC_MESSAGING_API` | Messaging API-URL | `https://api.staging.churchapps.org/messaging` |
-| `NEXT_PUBLIC_CONTENT_API` | Indhold API-URL | `https://api.staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | Indholdsleverings-URL | `https://staging.churchapps.org/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | ChurchApps basis-URL | `https://staging.churchapps.org` |
-| `NEXT_PUBLIC_GOOGLE_ANALYTICS` | Google Analytics ID (valgfrit) | `UA-123456789-1` |
+| Variabel | Beskrivelse | Eksempel (demo) |
+|----------|-------------|-----------------|
+| `NEXT_PUBLIC_API_BASE` | Enkelt basis-URL for alle ChurchApps-API'er (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` tilføjes automatisk) | `https://api.demo.churchapps.org` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL til indholdslevering | `https://democontent.churchapps.org` |
+| `NEXT_PUBLIC_GOOGLE_ANALYTICS` | Google Analytics-ID (valgfrit) | `UA-123456789-1` |
 
 :::info
-Next.js kræver `NEXT_PUBLIC_` præfiket for enhver miljøvariabel, der skal være tilgængelig i browseren. Server-kun variabler behøver ikke dette præfiks.
+Next.js kræver præfikset `NEXT_PUBLIC_` for enhver miljøvariabel, der skal være tilgængelig i browseren. Variabler, der kun bruges på serveren, behøver ikke dette præfiks.
 :::
 
 ### LessonsApp (Next.js)
 
-Sampelfil: `dotenv.sample.txt`
+Eksempelfil: `dotenv.sample.txt`
 
-| Variable | Beskrivelse | Eksempel (Staging) |
-|----------|-------------|-------------------|
-| `STAGE` | Miljøscene | `staging` |
-| `NEXT_PUBLIC_LESSONS_API` | Lessons API-URL | `https://api.staging.lessons.church` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | Indholdsleverings-URL | `https://api.staging.lessons.church/content` |
-| `NEXT_PUBLIC_CHURCH_APPS_URL` | ChurchApps basis-URL | `https://staging.churchapps.org` |
+| Variabel | Beskrivelse | Eksempel (lokal LessonsApi) |
+|----------|-------------|-----------------------------|
+| `STAGE` | Miljøtrin (lad være uudfyldt eller sæt til `dev` til lokal udvikling) | `dev` |
+| `NEXT_PUBLIC_LESSONS_API` | URL til Lessons-API'en | `http://localhost:8090` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL til indholdslevering | `http://localhost:8090/content` |
+| `NEXT_PUBLIC_API_BASE` | Basis-URL for ChurchApps-API'en, der bruges til login (kun brugt, når `STAGE` er uudfyldt eller `dev`) | `https://api.demo.churchapps.org` |
 
 ---
 
-## Mobil-app miljøvariabler
+## Miljøvariabler for mobilapps
 
-### B1Mobile (React Native / Expo)
+### B1Checkin (React Native / Expo)
 
-Sampelfil: `dotenv.sample.txt`
+Eksempelfil: `dotenv.sample.txt`
 
-| Variable | Beskrivelse | Eksempel (Staging) |
-|----------|-------------|-------------------|
-| `STAGE` | Miljønavn | `dev` |
-| `MEMBERSHIP_API` | Medlemskabs API-URL | `https://api.staging.churchapps.org/membership` |
-| `MESSAGING_API` | Messaging API-URL | `https://api.staging.churchapps.org/messaging` |
-| `ATTENDANCE_API` | Deltagelses API-URL | `https://api.staging.churchapps.org/attendance` |
-| `GIVING_API` | Giving API-URL | `https://api.staging.churchapps.org/giving` |
-| `DOING_API` | Doing API-URL | `https://api.staging.churchapps.org/doing` |
-| `CONTENT_API` | Indhold API-URL | `https://api.churchapps.org/content` |
-| `CONTENT_ROOT` | Indholdsleverings-URL | `https://content.staging.churchapps.org` |
-| `LESSONS_ROOT` | Lessons site-URL | `https://staging.lessons.church` |
+| Variabel | Beskrivelse | Eksempel |
+|----------|-------------|----------|
+| `EXPO_PUBLIC_STAGE` | Vælger det API-sæt, appen forbinder til: `dev` (lokal API på `http://127.0.0.1:8084`), `staging` eller `prod` (standard, når ikke sat) | `dev` |
+
+B1Checkin bruger kun modulerne Membership og Attendance i API'en samt URL'en til indholdslevering; deres adresser for hvert trin er angivet i `src/helpers/EnvironmentHelper.ts`.
 
 :::info
-Mobilapps bruger ikke `REACT_APP_` eller `NEXT_PUBLIC_` præfiktet. Miljøvariabel adgang håndteres af Expo-konfigurationen.
+Expo inkluderer kun variabler med præfikset `EXPO_PUBLIC_` i app-bundlen. Genstart udviklingsserveren med `yarn start --reset-cache`, efter du har ændret `.env`.
 :::
 
 ---
 
-## Hurtigreferance: Sampelfil lokaliteter
+## Hurtig reference: placering af eksempelfiler
 
-| Project | Sampelfil |
+| Projekt | Eksempelfil |
 |---------|-------------|
 | Api | `.env.sample` |
 | B1Admin | `.env.sample` |
 | B1App | `.env.sample` |
-| B1Mobile | `dotenv.sample.txt` |
 | B1Checkin | `dotenv.sample.txt` |
 | LessonsApp | `dotenv.sample.txt` |
 | AskApi | `dotenv.sample.txt` |

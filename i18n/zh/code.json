@@ -377,16 +377,10 @@
     "message": "教会管理仪表盘，用于人员、小组、考勤、捐赠等管理。"
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Website"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "教会公共网站和会友门户。"
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "适用于 iOS 和 Android 的旧版成员应用，现已由 B1.church 网页应用取代。"
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"

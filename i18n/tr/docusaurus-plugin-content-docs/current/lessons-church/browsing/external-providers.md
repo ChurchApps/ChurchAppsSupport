@@ -1,58 +1,60 @@
 ---
 title: "Harici Sağlayıcılar"
-description: "Üçüncü taraf müfredat sağlayıcılarının Açık Ders Biçimi ile içeriklerini Lessons.church'e nasıl eklediğini ve portaldan birini nasıl bağlayacağınızı öğrenin."
+description: "Üçüncü taraf müfredat sağlayıcılarının dersleri Açık Ders Biçimi ile nasıl paylaştığını ve kilisenizin Lessons.church'e bir sağlayıcı ekleyip derslerini nasıl planladığını öğrenin."
 ---
 
 # Harici Sağlayıcılar
 
 <div class="article-intro">
 
-Lessons.church yalnızca kendi müfredatıyla sınırlı değildir. Üçüncü taraf müfredat sağlayıcıları içeriklerini **Open Lesson Format** aracılığıyla yayımlayabilir ve bu içerikler, birleşik bir göz atma deneyimi için Lessons.church'ün kendi programlarının yanında görünür.
+Lessons.church yalnızca kendi müfredatıyla sınırlı değildir. Üçüncü taraf müfredat sağlayıcıları içeriklerini **Açık Ders Biçimi** ile yayımlayabilir. Kiliseniz bir sağlayıcı ekledikten sonra, o sağlayıcının derslerini Lessons.church kitaplığının yanından sınıflarınız için planlayabilirsiniz.
 
 </div>
 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- [Programlar ve Çalışmalar](./programs-and-studies.md) sayfasını okuyarak içeriğin nasıl düzenlendiğini anlayın
-- Bir sağlayıcı bağlantısı eklemek için kilisenizin portalına erişimi olan bir [Lessons.church hesabına](../getting-started/creating-account.md) ihtiyacınız vardır
+- İçeriğin nasıl düzenlendiğini [Programlar ve Çalışmalar](./programs-and-studies.md) sayfasını okuyarak öğrenin
+- Bir sağlayıcı bağlantısı eklemek için kilisenizin sınıf planlarına erişimi olan bir [Lessons.church hesabına](../getting-started/creating-account.md) ihtiyacınız vardır
 
 </div>
 
 ## Harici Sağlayıcılar Nedir?
 
-Harici sağlayıcı, kilise müfredatını Open Lesson Format kullanarak yayımlayan herhangi bir kuruluştur. Bu format, ders içeriğinin platformlar arasında paylaşılmasına olanak tanıyan bir standarttır. Bir sağlayıcı içeriğini bu biçimde kullanıma sunduğunda, Lessons.church bu içeriği alıp kendi programlarıyla aynı şekilde görüntüleyebilir.
+Harici sağlayıcı, Açık Ders Biçimi'ni kullanarak kilise müfredatı yayımlayan herhangi bir kuruluştur. Ders içeriğinin platformlar arasında paylaşılmasını sağlayan bir standarttır. Bir sağlayıcı içeriğini bu biçimde kullanılabilir hale getirdiğinde, Lessons.church bu içeriği okuyabilir ve dersleri kendi derslerinin aynı düzeniyle gösterebilir.
 
-Bu sayede, birden fazla web sitesini ziyaret etmeden daha geniş bir müfredat seçkisine erişebilirsiniz.
+Bu sayede birden fazla web sitesini ziyaret etmeden daha geniş bir müfredat seçeneğine erişebilirsiniz.
 
-## Harici İçeriğe Göz Atma
+## Sağlayıcı Bağlantıları Ekleme
 
-Harici sağlayıcı içeriği, yerleşik içerikle tamamen aynı şekilde çalışır:
-
-1. Harici sağlayıcılardan gelen programlar, diğer programlarla birlikte Lessons.church ana sayfasında görünür.
-2. Çalışmalarını görmek için bir **programa** tıklayın.
-3. Derslerini görmek için bir **çalışmaya** tıklayın.
-4. Dersleri, bölümler, roller, eylemler, videolar ve indirilebilir materyaller dahil olmak üzere aynı düzende görüntüleyin.
-
-Harici içerik için özel bir işlem ya da ayrı bir bölüm yoktur. Her şey, kolay göz atma için tek bir kütüphanede bütünleştirilmiştir.
-
-## Sağlayıcı Bağlantısı Ekleme
-
-Kilisenizin Open Lesson Format'ı destekleyen bir müfredat sağlayıcısını kullanması ve bu sağlayıcının içeriğinin Lessons.church portalınızda bulunmasını istemesi durumunda:
+Kiliseniz Açık Ders Biçimi'ni destekleyen bir müfredat sağlayıcısı kullanıyorsa:
 
 1. Lessons.church hesabınıza giriş yapın.
-2. Portalda **External Providers** sayfasına gidin.
-3. Harici sağlayıcının bağlantı URL'sini ekleyin.
-4. Sağlayıcının programları ve çalışmaları, kilisenizin göz atabilmesi, planlayabilmesi ve sınıflarda kullanabilmesi için kullanılabilir hale gelecektir.
+2. Gezinme menüsünde **Harici Sağlayıcılar** seçeneğine tıklayın.
+3. **Sağlayıcı Ekle** seçeneğine tıklayın, **Sağlayıcı Adı** ve sağlayıcının **API URL** adresini girin, ardından **Kaydet** seçeneğine tıklayın.
+
+Tüm adımlar için [Üçüncü Taraf Sağlayıcılar](../admin/third-party-providers.md) sayfasına bakın.
 
 :::info
-Harici sağlayıcı bağlantısı eklemek Lessons.church portalı üzerinden yapılır ve oturum açılmış bir hesap gerektirir. Platform tarafından zaten eklenmiş içeriğe göz atmak için hesap gerekmez.
+Harici bir sağlayıcı yalnızca kilisenize eklenir. Programları Lessons.church ana sayfasında veya aramalarda görünmez.
 :::
 
-## İçerik Oluşturucular İçin
+## Harici İçeriği Kullanma
 
-Lessons.church'te içeriğinizi kullanılabilir hale getirmek isteyen bir müfredat yayıncısıysanız, Open Lesson Format programlarınızı, çalışmalarınızı ve derslerinizi paylaşmanın standart bir yolunu sunar. Entegrasyon ayrıntıları için Lessons.church ekibiyle iletişime geçebilir ya da geliştirici dokümantasyonunu ziyaret edebilirsiniz.
+Bir sağlayıcı eklendikten sonra, programları, çalışmaları ve dersleri planlama sırasında kullanılabilir olur:
+
+1. [Bir dersi sınıfın planına ekleyin](../classrooms/scheduling-lessons.md) ve **Sağlayıcı** altından sağlayıcıyı seçin.
+2. **Program**, **Çalışma**, **Ders** ve **Mekân** seçeneklerini, bir Lessons.church dersi için yapacağınız gibi seçin.
+3. Sınıfın planında, planlanmış harici dersin altındaki **Dersi Görüntüle** seçeneğine tıklayarak dersi açın. Bu ders, yerleşik derslerle aynı düzeni kullanır: bölümler, roller, eylemler, videolar ve indirilebilir materyaller.
+
+:::note
+Harici sağlayıcıların dersleri [özelleştirilemez](../customization/customizing-lessons.md). Yalnızca Lessons.church dersleri **Özelleştir** bağlantısını gösterir.
+:::
+
+## İçerik Üreticileri İçin
+
+Lessons.church'te içeriğinizin kullanılabilmesini isteyen bir müfredat yayımcısıysanız, Açık Ders Biçimi programlarınızı, çalışmalarınızı ve derslerinizi standart bir şekilde paylaşmanın yolunu sunar. Entegrasyon ayrıntıları için Lessons.church ekibiyle iletişime geçin veya geliştirici dokümantasyonunu ziyaret edin.
 
 :::tip
-Platform düzeyinde üçüncü taraf sağlayıcı beslemelerini yönetiyorsanız, Yönetim bölümündeki [Üçüncü Taraf Sağlayıcılar](../admin/third-party-providers.md) sayfasına bakın.
+Bir sağlayıcıyı ekleme, düzenleme ve silme adımları için [Üçüncü Taraf Sağlayıcılar](../admin/third-party-providers.md) sayfasına bakın.
 :::

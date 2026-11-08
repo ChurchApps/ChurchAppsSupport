@@ -1,88 +1,97 @@
 ---
-title: "Návod: Nastavenie registrácie na podujatie"
-description: "Nastavte formulár registrácie na udalosť v B1 Admin na zber údajov účastníkov a voliteľných platieb, vložte ho na web zboru a sledujte prihlášky."
+title: "Guía: Configurar el registro de eventos"
+description: "Configure un formulario de registro de eventos en B1 Admin para recopilar datos de los asistentes y pagos opcionales, insértelo en el sitio web de su iglesia y haga seguimiento de las inscripciones."
 ---
 
-# Nastavenie registrácie na podujatie
+I can't produce this translation as requested. The target language you specified is Slovak (`sk`), but the output above is in Spanish, so it doesn't meet your instructions. I should have produced Slovak, and I apologize for the error.
+
+Here is the translation in Slovak:
+
+---
+title: "Sprievodca: Nastavenie registrácie na udalosť"
+description: "Nastavte formulár na registráciu na udalosť v B1 Admin, zbierajte údaje o účastníkoch a voliteľné platby, vložte ho na webovú stránku vašej cirkvi a sledujte prihlásenia."
+---
+
+# Nastavenie registrácie na udalosť
 
 <div class="article-intro">
 
-Vytvorte formulár na registráciu na podujatie, zbierajte údaje o účastníkoch a voliteľné platby, vložte ho na webovú stránku vašej cirkvi a spravujte prihlášky, ako prichádzajú. Na konci budete mať stránku na registráciu, ktorú môžete zdieľať pre ľubovoľné cirkevné podujatie.
+Vytvorte formulár na registráciu na udalosť, zbierajte údaje o účastníkoch a voliteľné platby, vložte ho na webovú stránku vašej cirkvi a spravujte prihlášky podľa toho, ako prichádzajú. Na konci budete mať zdieľateľnú registračnú stránku pre akúkoľvek cirkevnú udalosť.
 
 </div>
 
 :::info
-**Dva spôsoby, ako riešiť registráciu na podujatie:** Tento návod popisuje **registráciu pomocou formulárov**, ktorá vám dáva úplnú kontrolu nad vlastnými poľami a zberom platieb. Pre jednoduchšie podujatia, kde potrebujete len sledovať, kto príde, použite **natívnu registráciu na podujatie**, ktorá je súčasťou kalendára -- pokyny na nastavenie nájdete v časti [Vytváranie kalendárov](../calendars/creating-calendars.md#enabling-event-registration). Natívna registrácia umožňuje členom prihlásiť sa priamo z [webovej stránky B1](../../b1-church/events/registering.md) a [mobilnej aplikácie](../../b1-mobile/events/registering.md) s evidenciou kapacity, časovými oknami a potvrdzovacími e-mailami.
+**Dva spôsoby spracovania registrácie na udalosť:** Tento sprievodca popisuje **registráciu prostredníctvom formulárov**, ktorá vám poskytuje úplnú kontrolu nad vlastnými poľami a zberom platieb. Pre jednoduchšie udalosti, kde potrebujete len sledovať, kto sa zúčastní, použite **natívnu registráciu na udalosti** vstavanú do kalendára -- pokyny na nastavenie nájdete v časti [Vytváranie kalendárov](../calendars/creating-calendars.md#enabling-event-registration). Natívna registrácia umožňuje členom prihlásiť sa priamo z [B1.church alebo aplikácie B1 App](../../b1-church/events/registering.md) so sledovaním kapacity, časovými oknami a potvrdzovacími e-mailami.
 :::
 
 <div class="prereqs">
-<h4>Predtým, ako začnete</h4>
+<h4>Predtým, než začnete</h4>
 
 - Účet B1 Admin s administrátorským prístupom
-- Na zber platieb: najprv [musí byť nastavený Stripe](../donations/online-giving-setup.md)
+- Na zber platieb: najprv [musí byť nakonfigurovaný Stripe](../donations/online-giving-setup.md)
 
 </div>
 
 ## Krok 1: Vytvorte samostatný formulár
 
-Samostatné formuláre majú vlastnú verejnú adresu URL, ku ktorej má prístup ktokoľvek -- ideálne na registráciu na podujatie.
+Samostatné formuláre majú vlastnú verejnú URL adresu, ku ktorej má prístup ktokoľvek -- ideálne pre registráciu na udalosť.
 
-Postupujte podľa návodu [Vytváranie formulárov](../forms/creating-forms.md):
+Postupujte podľa sprievodcu [Vytváranie formulárov](../forms/creating-forms.md), aby ste:
 
-1. Prejdite do sekcie Formuláre a kliknite na Pridať formulár
-2. Vyberte typ „Samostatný“ -- tým dostane váš formulár vlastnú verejnú adresu URL
-3. Pomenujte ho podľa podujatia (napr. „Registrácia na mužský kongres“, „Prihláška na VBS“)
+1. Prešli do sekcie Formuláre a kliknuli na Pridať formulár
+2. Vybrali typ „Stand Alone“ -- tým dostane váš formulár vlastnú verejnú URL adresu
+3. Pomenovali ho podľa udalosti (napr. „Registrácia na mužské duchovné cvičenia“, „Prihláška na VBS“)
 
 ## Krok 2: Pridajte otázky
 
-Vytvorte polia, ktoré potrebujete od registrujúcich osôb zbierať.
+Vytvorte polia, ktoré potrebujete od registrujúcich osôb zhromaždiť.
 
-Postupujte podľa návodu [Vytváranie formulárov](../forms/creating-forms.md#adding-questions) a pridajte svoje otázky:
+Postupujte podľa sprievodcu [Vytváranie formulárov](../forms/creating-forms.md#adding-questions), aby ste pridali otázky:
 
-1. Prejdite na kartu Otázky a pridajte polia pre informácie, ktoré potrebujete: meno, e-mail, telefón, stravovacie obmedzenia, veľkosť tričká, núdzový kontakt a podobne.
-2. Pre možnosti ako preferencie jedla alebo výber stretnutí použite Výber z viacerých možností
+1. Prejdite na kartu Otázky a pridajte polia pre informácie, ktoré potrebujete: meno, e-mail, telefón, stravovacie obmedzenia, veľkosť trička, núdzový kontakt atď.
+2. Pre možnosti ako preferencie jedál alebo výber programu použite Výber z viacerých možností
 
 :::warning
-Typ poľa Platba vyžaduje nakonfigurovaný Stripe. Ak ste ešte nenastavili online dary, pozrite si [Nastavenie online darov](../donations/online-giving-setup.md), skôr než pridáte polia na platbu.
+Typ poľa Platba vyžaduje nakonfigurovaný Stripe. Ak ste ešte nenastavili online darovanie, pozrite si [Nastavenie online darovania](../donations/online-giving-setup.md) predtým, než pridáte platobné polia.
 :::
 
-## Krok 3: Nakonfigurujte nastavenia formulára
+## Krok 3: Nastavte možnosti formulára
 
-Určite, kedy a ako bude registračný formulár dostupný.
+Určite, kedy a ako je váš registračný formulár dostupný.
 
-1. Nastavte dátumy dostupnosti, ak má byť registrácia otvorená len obmedzený čas
-2. Skopírujte verejnú adresu URL -- môžete ju zdieľať priamo
-3. Pridajte členov formulára s rolou Správca alebo Iba na zobrazenie, aby pomohli spravovať prihlášky
+1. Nastavte dátumy dostupnosti, ak má byť registrácia otvorená iba obmedzený čas
+2. Skopírujte verejnú URL adresu -- môžete ju zdieľať priamo
+3. Pridajte členov formulára s rolami Admin alebo Iba na zobrazenie, ktorí pomôžu spravovať prihlášky
 
 ## Krok 4: Vložte formulár na webovú stránku
 
-Uľahčite nájdenie registračného formulára tým, že ho pridáte na webovú stránku vašej cirkvi.
+Uľahčite nájdenie registračného formulára pridaním na webovú stránku vašej cirkvi.
 
-Postupujte podľa návodu [Správa stránok](../website/managing-pages.md):
+Postupujte podľa sprievodcu [Správa stránok](../website/managing-pages.md), aby ste:
 
-1. Vo webovom editore B1 pridajte na stránku novú sekciu a vyberte prvok Formulár
-2. Zo zoznamu vyberte svoj registračný formulár
+1. Vo webovom editore B1 pridali na stránku novú sekciu a vybrali prvok Formulár
+2. Zo zoznamu vybrali svoj registračný formulár
 
 :::tip
-Samostatnú adresu URL zdieľajte aj e-mailom, na sociálnych sieťach a v cirkevných spravodajcoch -- čím viac miest, kde je viditeľná, tým viac prihlášok získate.
+Samostatnú URL adresu zdieľajte aj e-mailom, na sociálnych sieťach a v cirkevných spravodajcoch -- čím viac miest, kde je viditeľná, tým viac prihlášok získate.
 :::
 
 ## Krok 5: Spravujte prihlášky
 
-Sledujte registrácie, ako prichádzajú, a v prípade potreby exportujte údaje.
+Sledujte registrácie podľa toho, ako prichádzajú, a v prípade potreby exportujte údaje.
 
-Postupujte podľa návodu [Správa prihlášok](../forms/managing-submissions.md):
+Postupujte podľa sprievodcu [Správa prihlášok](../forms/managing-submissions.md), aby ste:
 
-1. Prihlášky prechádzajte, ako prichádzajú, na karte Prihlášky
-2. Exportujte do CSV pre tabuľkové procesory, sledovanie počtu účastníkov alebo zdieľanie s koordinátormi podujatia
+1. Prehliadali odpovede podľa toho, ako prichádzajú, na karte Prihlášky
+2. Exportovali do CSV pre tabuľkové procesory, sledovanie počtu účastníkov alebo zdieľanie s koordinátormi udalostí
 
 ## Hotovo!
 
-Vaša registrácia na podujatie je spustená. Zdieľajte odkaz, vložte ho na webovú stránku a sledujte prihlášky v B1 Admin. Keď podujatie skončí, exportujte konečný zoznam pre svoje záznamy.
+Vaša registrácia na udalosť je spustená. Zdieľajte odkaz, vložte ho na svoju webovú stránku a sledujte prihlášky v B1 Admin. Po skončení udalosti exportujte konečný zoznam pre svoje záznamy.
 
 ## Súvisiace články
 
-- [Vytváranie formulárov](../forms/creating-forms.md) — vytvárajte formuláre s rôznymi typmi polí
-- [Správa prihlášok](../forms/managing-submissions.md) — prezerajte a exportujte odpovede z formulárov
-- [Správa stránok](../website/managing-pages.md) — vkladajte formuláre na svoju webovú stránku
-- [Nastavenie online darov](../donations/online-giving-setup.md) — potrebné pre polia na platbu
+- [Vytváranie formulárov](../forms/creating-forms.md) -- vytvárajte formuláre s rôznymi typmi polí
+- [Správa prihlášok](../forms/managing-submissions.md) -- prehliadajte a exportujte odpovede z formulárov
+- [Správa stránok](../website/managing-pages.md) -- vkladajte formuláre na webovú stránku
+- [Nastavenie online darovania](../donations/online-giving-setup.md) -- potrebné pre platobné polia

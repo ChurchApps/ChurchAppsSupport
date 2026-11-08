@@ -1,46 +1,46 @@
 ---
 title: "Yönetim"
-description: "ChurchApps'teki Lessons.church yönetim alanına genel bakış: programları, çalışmaları, dersleri, kaynakları, istatistikleri ve harici müfredat sağlayıcılarını yönetme."
+description: "ChurchApps içindeki Lessons.church yönetim alanına genel bakış; programların, çalışmaların, derslerin, kaynakların, istatistiklerin ve harici müfredat sağlayıcılarının nasıl yönetileceğini kapsar."
 ---
 
 # Yönetim
 
 <div class="article-intro">
 
-Lessons.church'deki yönetim alanı, içerik oluşturucuların ve yöneticilerin ders kütüphanesini yönettiği yerdir. Buradan müfredat yapınızı oluşturabilir, kaynak yükleyebilir, kullanım istatistiklerini inceleyebilir ve üçüncü taraf içerik sağlayıcılarını bağlayabilirsiniz.
+Lessons.church'teki yönetim alanı, içerik oluşturucuların ve yöneticilerin ders kütüphanesini yönettiği yerdir. Buradan müfredat yapınızı oluşturabilir, kaynak yükleyebilir, kullanım istatistiklerini inceleyebilir ve üçüncü taraf içerik sağlayıcılarını bağlayabilirsiniz.
 
 </div>
 
 :::warning
-Yönetim erişimi için uygun izinlere sahip olmanız gerekir. Yönetim seçeneklerini görmüyorsanız, erişim talebinde bulunmak için kilise yöneticinizle iletişime geçin.
+Yönetim erişimi için uygun izinlere sahip olmanız gerekir. Yönetici seçeneklerini görmüyorsanız, erişim talep etmek için kilise yöneticinizle iletişime geçin.
 :::
 
 ## Neler Yapabilirsiniz
 
-Yönetim alanı içeriğinizin tamamı üzerinde tam kontrol sağlar:
+Yönetim alanı, içeriğinizin tamamı üzerinde tam denetim sağlar:
 
-- **Program oluşturma ve düzenleme** -- Adları, açıklamaları, görselleri ve slug'ları olan üst düzey müfredat serileri oluşturun.
-- **Çalışmaları yönetme** -- Her programın içinde ilgili ders gruplarını düzenleyin.
-- **Dersler oluşturma** -- Mekânlar, bölümler, roller ve eylemlerle bireysel dersler ekleyin.
+- **Program oluşturma ve düzenleme** -- Adları, açıklamaları, görselleri ve kısa adları (slug) olan üst düzey müfredat serilerini ayarlayın.
+- **Çalışmaları yönetme** -- Her programın içinde birbiriyle ilişkili ders gruplarını düzenleyin.
+- **Ders oluşturma** -- Mekânlar, bölümler, roller ve eylemlerle tek tek dersler ekleyin.
 - **Kaynak yükleme** -- Program, çalışma veya ders düzeyinde indirilebilir dosyalar (PDF'ler, etkinlik sayfaları, görseller) ekleyin.
 - **İstatistikleri görüntüleme** -- Hangi içeriklerin, kim tarafından ve nerede indirildiğini görün.
-- **Sağlayıcıları yapılandırma** -- Açık Ders Formatını kullanan harici müfredat sağlayıcılarını bağlayın.
-- **Yıllık planlar** -- Herhangi bir müfredat için 1., 2., 3. hafta... dizilerini yayımlayın. Kiliseler bunları B1 Admin'de uygular.
+- **Sağlayıcıları yapılandırma** -- Open Lesson Format kullanan harici müfredat sağlayıcılarını bağlayın. Bu işlem yönetim alanından değil, **Harici Sağlayıcılar** sayfasından yapılır.
+- **Yıllık planlar** -- Herhangi bir müfredat için 1., 2., 3. hafta… dizilerini yayımlayın. Kiliseler bunları B1 Admin içinde uygular.
 
 ## İçerik Hiyerarşisi
 
-Yönetici olarak içeriğin nasıl yapılandırıldığını anlamak faydalı olacaktır:
+Yönetici olarak içeriğin nasıl yapılandırıldığını anlamak faydalıdır:
 
 1. **Programlar** bir veya daha fazla çalışma içerir.
 2. **Çalışmalar** bir veya daha fazla ders içerir.
-3. **Dersler** bir veya daha fazla mekân (yaş grubuna göre değişen versiyonlar) içerir.
-4. **Mekânlar** bölümler içerir ve bölümler rol tabanlı eylemler içerir.
+3. **Dersler** bir veya daha fazla mekân (yaş grubuna göre uyarlamalar) içerir.
+4. **Mekânlar** bölümleri içerir ve bölümler rol tabanlı eylemleri içerir.
 
-Her düzey kendi indirilebilir kaynaklarına sahip olabilir.
+Her düzeyin kendine ait indirilebilir kaynakları olabilir.
 
 ## Sonraki Adımlar
 
-- [Programları Yönetme](./managing-programs.md) -- Programları oluşturma ve yapılandırma
+- [Programları Yönetme](./managing-programs.md) -- Program oluşturma ve yapılandırma
 - [Çalışmaları Yönetme](./managing-studies.md) -- Bir program içinde çalışma ekleme
 - [Dersleri Yönetme](./managing-lessons.md) -- Mekânlar, bölümler ve eylemlerle dersler oluşturma
 - [İstatistikler](./statistics.md) -- İndirme ve kullanım verilerini inceleme

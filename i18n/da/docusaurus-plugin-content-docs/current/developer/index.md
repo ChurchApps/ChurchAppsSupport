@@ -1,48 +1,49 @@
 ---
-title: "Udvikler-dokumentation"
-description: "Find rundt i ChurchApps' udviklerdokumentation: lokal opsætning, guides til API og webapps, delte biblioteker, mobilbygninger og udrulning af open source-projekterne."
+title: "Udviklerdokumentation"
+description: "Find rundt i ChurchApps' udviklerdokumentation: lokal opsætning, guides til API og webapp, delte biblioteker, mobilbygs og udrulning af de open source-projekter."
 ---
 
-# Udvikler-dokumentation
+# Udviklerdokumentation
 
 <div class="article-intro">
 
-ChurchApps er en samling af cirka 20 open-source-projekter, der sammen leverer en fuldstændig kirkestyringsplatform. Projekterne spænder over backend API'er, webapplikationer, mobilapps, en skrivebordsprogram og delte biblioteker -- alt sammen skrevet i TypeScript. Dette afsnit giver alt, hvad du har brug for til at opsætte et lokalt udvikling miljø og begynde at bidrage.
+ChurchApps er en samling af cirka 20 open source-projekter, der til sammen udgør en komplet platform til kirkeadministration. Projekterne omfatter backend-API'er, webapplikationer, mobilapps, et desktopprogram og delte biblioteker -- alle skrevet i TypeScript. Denne sektion indeholder alt, hvad du skal bruge for at opsætte et lokalt udviklingsmiljø og begynde at bidrage.
 
 </div>
 
-## Arkitektur i et øjeblik
+## Arkitektur i korte træk
 
-Projekterne er **uafhængige lagre** (ikke et monorepo). Delt kode udgives til npm under `@churchapps/*` scope og forbruges som almindelige afhængigheder. Dette betyder, at du kan arbejde på et enkelt projekt uden at klone hele økosystemet.
+Projekterne er **uafhængige repositories** (ikke et monorepo). Delt kode udgives til npm under `@churchapps/*`-scopet og bruges som almindelige afhængigheder. Det betyder, at du kan arbejde på ét enkelt projekt uden at klone hele økosystemet.
 
-Vigtige karakteristika:
+Vigtige kendetegn:
 
-- **Sprog:** TypeScript gennem hele projektet
-- **Backend:** Node.js / Express API'er implementeret til AWS Lambda via Serverless Framework
+- **Sprog:** TypeScript overalt
+- **Backend:** Node.js/Express-API'er, udrullet til AWS Lambda via Serverless Framework
 - **Web:** React 19 (Vite og Next.js), Material-UI 7
 - **Mobil:** React Native med Expo
-- **Database:** MySQL 8.0, en database pr. API-modul
+- **Database:** MySQL 8.0, én database pr. API-modul
 
-## Hvad dette afsnit dækker
+## Hvad denne sektion dækker
 
-- **[Setup](./setup/index.md)** -- Lokalt udvikling miljø, forudsætninger og konfiguration
-  - [Forudsætninger](./setup/prerequisites.md) -- Påkrævet værktøj og software
-  - [Projektoversigt](./setup/project-overview.md) -- Alle projekter på et øjeblik
-  - [Miljøvariabler](./setup/environment-variables.md) -- Konfigurering af `.env`-filer
-- **[API](./api/index.md)** -- Kerne API lokalt setup, databaseinitialisering og modulstruktur
-- **[Webapps](./web-apps/index.md)** -- Kørsel af B1Admin, B1App og LessonsApp lokalt
-- **[Mobilapps](./mobile/index.md)** -- Byggeri af B1Mobile og andre Expo-apps
+- **[Opsætning](./setup/index.md)** -- Lokalt udviklingsmiljø, forudsætninger og konfiguration
+  - [Forudsætninger](./setup/prerequisites.md) -- Nødvendige værktøjer og software
+  - [Projektoversigt](./setup/project-overview.md) -- Alle projekter i overblik
+  - [Miljøvariabler](./setup/environment-variables.md) -- Konfiguration af `.env`-filer
+- **[API](./api/index.md)** -- Lokal opsætning af kerne-API'et, initialisering af database og modulstruktur
+- **[Webapps](./web-apps/index.md)** -- Sådan kører du B1Admin, B1App og LessonsApp lokalt
+- **[Mobilapps](./mobile/index.md)** -- Bygning af B1Checkin og andre Expo-apps
 - **[Delte biblioteker](./shared-libraries/index.md)** -- Arbejde med Helpers, ApiHelper og AppHelper
-- **[Installation](./deployment/index.md)** -- Installation af API'er, webapps og mobilapps
+- **[Udrulning](./deployment/index.md)** -- Udrulning af API'er, webapps og mobilapps
+- **[FreePlay-indholdsudbyder](./freeplay-content-provider.md)** -- Integration af dit lektionsbibliotek med FreePlay
 
 ## Fællesskab og ressourcer
 
 | Ressource | Link |
 |----------|------|
 | GitHub-organisation | [github.com/ChurchApps](https://github.com/ChurchApps) |
-| Problem-tracker | [ChurchAppsSupport-problemer](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
-| Slack-fællesskab | [Slut Slack-gruppe](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
+| Issue-tracker | [ChurchAppsSupport Issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
+| Slack-fællesskab | [Tilslut dig Slack](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
 
 :::tip
-Den hurtigste måde at begynde at bidrage på er at vælge en webapp (som B1Admin), pege den på **staging API'erne** og begynde at foretage frontend-ændringer. Ingen database- eller API-setup påkrævet.
+Den hurtigste måde at begynde at bidrage på er at vælge en webapp (f.eks. B1Admin), pege den mod de fælles **demo-API'er** og begynde at lave ændringer i frontend. Der kræves hverken database eller API-opsætning.
 :::

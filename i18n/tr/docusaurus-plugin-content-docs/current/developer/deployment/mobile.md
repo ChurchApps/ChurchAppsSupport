@@ -1,21 +1,21 @@
 ---
 title: "Mobil Dağıtım"
-description: "B1 Mobile uygulamasının Android ve iOS sürümlerini Expo EAS ile derlemeyi, uygulama mağazalarına göndermeyi ve OTA güncellemeleri göndermeyi adım adım anlatır."
+description: "Expo tabanlı uygulamaların (ör. B1 Checkin) Android ve iOS sürümlerinin nasıl oluşturulacağını, uygulama mağazalarına nasıl gönderileceğini ve EAS ile OTA güncellemelerinin nasıl yayımlanacağını adım adım anlatır."
 ---
 
 # Mobil Dağıtım
 
 <div class="article-intro">
 
-ChurchApps mobil uygulamaları **Expo EAS Build** ile derlenir ve uygulama mağazaları aracılığıyla dağıtılır. Bu sayfa, hem Android hem de iOS için derleme, gönderme ve over-the-air (OTA) güncellemelerini yayınlama adımlarını kapsar.
+ChurchApps'in Expo mobil uygulamaları, örneğin B1 Checkin, **Expo EAS Build** ile veya yerel bir Gradle derlemesiyle oluşturulur ve uygulama mağazaları aracılığıyla dağıtılır. Bu sayfa, B1 Checkin'i örnek alarak hem Android hem de iOS için derleme, gönderme ve over-the-air (OTA) güncellemesi yayımlama işlemlerini kapsar.
 
 </div>
 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Mobil uygulamayı yerel olarak kurun -- bkz. [B1 Mobile](../mobile/b1-mobile.md)
-- [EAS CLI](https://docs.expo.dev/eas/) aracını kurun ve yapılandırın
+- Uygulamayı yerel olarak kurun -- bkz. [Mobil Uygulamalar](../mobile/index.md#local-setup)
+- [EAS CLI](https://docs.expo.dev/eas/) aracını kurup yapılandırın
 - Google Play Console (Android) ve/veya Apple App Store Connect (iOS) erişiminiz olsun
 
 </div>
@@ -24,21 +24,31 @@ ChurchApps mobil uygulamaları **Expo EAS Build** ile derlenir ve uygulama mağa
 
 ### Android
 
+Android sürüm derlemeleri yerel olarak çalışır ve EAS'ten alınan sürüm anahtar deposu (keystore) ile imzalanır. Bunu bir kez `npx eas-cli credentials -p android` komutuyla indirin (**credentials.json: Download credentials from EAS** seçeneğini seçin), ardından çalıştırın:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Google Play paketi `android/app/build/outputs/bundle/release/app-release.aab` konumuna yazılır. Bunun yerine EAS üzerinde derlemek için `yarn build:android:eas` komutunu çalıştırın.
 
 ### iOS
 
+iOS derlemeleri her zaman EAS üzerinde çalışır:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Uygulama Mağazalarına Gönderme
+## Mağazalara Gönderme
 
 ### Android -- Google Play Store
 
-EAS derlemesi başarıyla tamamlandıktan sonra Android ikili dosyası (AAB), Play Console üzerinden Google Play Store'a gönderilir.
+AAB dosyasını Play Console üzerinden yükleyin ya da EAS ile gönderin:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
@@ -53,13 +63,13 @@ eas submit --platform ios
 Mağaza incelemesi gerektirmeyen yalnızca JavaScript değişiklikleri için over-the-air (OTA) güncellemelerini kullanın:
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Bu, tam bir mağaza gönderimi yapmadan değişiklikleri doğrudan kullanıcılara iletmek için EAS Update'i kullanır.
+Bu, tam bir mağaza gönderimi yapmadan EAS Update ile değişiklikleri doğrudan kullanıcılara iletir.
 
 :::tip
-OTA güncellemeleri mağaza derlemelerinden önemli ölçüde daha hızlıdır -- değişiklikler günler yerine dakikalar içinde kullanıcılara ulaşabilir. Yerel kod değişikliği içermeyen hata düzeltmeleri, metin değişiklikleri ve küçük arayüz güncellemeleri için bunları kullanın.
+OTA güncellemeleri mağaza derlemelerinden belirgin biçimde hızlıdır -- değişiklikler günler yerine dakikalar içinde kullanıcılara ulaşabilir. Yerel kod değişikliği içermeyen hata düzeltmeleri, metin değişiklikleri ve küçük arayüz güncellemeleri için bunları kullanın.
 :::
 
 ## Sürüm Numaraları
@@ -67,17 +77,17 @@ OTA güncellemeleri mağaza derlemelerinden önemli ölçüde daha hızlıdır -
 Mağaza derlemesi oluşturmadan önce, sürüm numaraları birden fazla dosyada güncellenmelidir:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` ve `versionCode`)
+
+iOS derleme numarası EAS tarafından otomatik olarak artırılır.
 
 :::warning
-Sürüm numaralarını tüm dosyalarda güncellemeyi unutmak derleme hatalarına veya uygulama mağazası reddine yol açar. Üretim derlemesine başlamadan önce yukarıda listelenen her dosyayı iki kez kontrol edin.
+Sürüm numaralarını tüm dosyalarda güncellemeyi unutmak derleme hatalarına veya uygulama mağazası tarafından reddedilmeye yol açar. Üretim derlemesi başlatmadan önce yukarıda listelenen her dosyayı iki kez kontrol edin.
 :::
 
 ## İlgili Makaleler
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Yerel kurulum ve geliştirme kılavuzu
+- **[Mobil Uygulamalar](../mobile/index.md)** -- Yerel kurulum ve geliştirme kılavuzu
 - **[API Dağıtımı](./apis.md)** -- Arka uç API'lerinin dağıtımı
 - **[Web Uygulaması Dağıtımı](./web-apps.md)** -- Ön yüz web uygulamalarının dağıtımı

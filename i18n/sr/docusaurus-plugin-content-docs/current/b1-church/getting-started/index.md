@@ -1,60 +1,56 @@
 ---
-title: "Почетак рада са порталом за чланове B1.church"
+title: "Начало рада са B1.church порталом за чланове"
 sidebar_label: "Почетак рада"
-description: "Пронађите сајт B1.church ваше цркве, направите налог за чланове и погледајте шта портал нуди, од група и давања до пријаве и планова."
+description: "Пронађите веб-сајт вашe цркве на B1.church, направите налог за чланство и погледајте шта портал нуди, од група и донација до пријаве и планова."
 ---
 
-# Почетак рада са B1.church
+# Начало рада са B1.church
 
 <div class="article-intro">
 
-B1.church је онлајн дом ваше цркве. Ту се повезујете са заједницом, пратите новости, дајете онлајн, пријављујете се за службе и још много тога. Овај одељак вас води кроз основе приступа и коришћења портала за чланове.
+B1.church је онлајн дом ваше цркве. Ту долазите да останете повезани са заједницом, прегледате новости, даhere donirate putem interneta, prijavite se za službe i još mnogo toga. Ovaj odeljak vas vodi kroz osnove pristupa i korišćenja portala za članove.
 
 </div>
 
-## Приступ сајту ваше цркве
+## Pristup sajtu vaše crkve
 
-Ваша црква има сопствену B1.church адресу, обично у формату `https://yourchurchname.b1.church`. Ову адресу можете отворити у било ком веб прегледачу на рачунару, таблету или телефону. Црквено руководство или тим за добродошлицу може вам дати тачну адресу.
+Vaša crkva ima sopstvenu B1.church adresu, obično u formatu `https://yourchurchname.b1.church`. Ovu adresu možete otvoriti u bilo kom internet pregledaču na računaru, tabletu ili telefonu. Crkveno rukovodstvo ili tim za dobrodošlicu može vam dati tačnu adresu.
 
-Када први пут посетите сајт, видећете јавну страницу ваше цркве са прилагођеним брендингом, менијима за навигацију и садржајем.
+Kada prvi put posetite sajt, videćete javni veb-sajt vaše crkve sa prilagođenim izgledom, navigacionim menijima i stranicama sa sadržajem.
 
-## Креирање налога
+## Kreiranje naloga
 
-Да бисте приступили порталу за чланове и његовим функцијама, потребан вам је ChurchApps налог.
+Da biste pristupili portalu za članove i njegovim funkcijama, potreban vam je ChurchApps nalog.
 
-1. Посетите B1.church адресу ваше цркве.
-2. Кликните на дугме **Login** у горњем десном углу странице.
-3. На екрану за пријаву изаберите опцију да **региструјете** нови налог.
-4. Унесите своје **име**, **презиме**, **имејл адресу** и изаберите **лозинку**.
-5. Попуните образац за регистрацију.
+1. Posetite B1.church adresu vaše crkve.
+2. Kliknite na dugme **Пријава** u gornjem desnom uglu stranice.
+3. Na ekranu za prijavu izaberite opciju **Регистрација** novog naloga.
+4. Unesite svoje **ime**, **prezime**, **adresu e-pošte** i izaberite **лозинку**.
+5. Popunite obrazac za registraciju.
 
-Након регистрације можете се пријавити и приступити порталу за чланове са свим његовим алаткама.
+Nakon registracije možete se prijaviti i pristupiti portalu za članove sa svim alatima.
 
 :::tip
-Ако вас је ваша црква већ додала у свој систем, користите исту имејл адресу коју они имају у евиденцији. Тако ће се ваш налог повезати са вашим постојећим црквеним профилом.
+Ако вас је ваша црква већ додала у свој систем, користите исту адресу е-поште коју имају у евиденцији. Тако ће се ваш налог повезати са постојећим профилом у цркви.
 :::
 
-## Шта можете да радите
+## Šta možete da radite
 
-Када се пријавите, портал за чланове вам омогућава следеће:
+Kada se prijavite, portal za članove vam omogućava pristup:
 
-- Почетну табелу **Home** са прегледом вашег служења, група и давања, и страницу **Me** са предстојећим активностима за вас
-- **Групе** којима припадате, укључујући разговоре и догађаје
-- Онлајн **давање** за донације
-- **Plans**, где видите свој распоред волонтирања и детаље о службама
-- **Check-In** за службе и догађаје
-- Именик **Community** за проналажење и повезивање са другим члановима
+- Почетној табли са прегледом ваших служби, група и донација, и страници **Ја** са оним što je predstojeće za vas
+- **Групама** којима припадате, укључујући разговоре и догађаје
+- Онлајн **донацијама**
+- **Плановима** који приказују ваш распоред волонтирања и детаље службе
+- **Пријави** за службе и догађаје
+- **Заједници**, директоријуму у коме можете пронаћи и повезати се са другим члановима
 
-## Приступ са телефона
+## Pristup sa telefona
 
-B1.church ради у било ком мобилном прегледачу. За искуство које више личи на апликацију, инсталирајте портал за чланове ваше цркве као **прогресивну веб апликацију (PWA)**. Посетите `https://yourchurchname.b1.church/mobile/install` за упутства прилагођена вашем уређају или је додајте directly на почетни екран из Safari-ја или Chrome-а. Није потребна продавница апликација. Упутства погледајте у одељку [Инсталирање као апликација (PWA)](./installing-pwa.md).
+B1.church radi u svakom mobilnom pregledaču. Za iskustvo sličnije aplikaciji, instalirajte portal za članove vaše crkve kao **Progressive Web App (PWA)**. Posetite `https://yourchurchname.b1.church/mobile/install` za uputstva prilagođena vašem uređaju ili dodajte aplikaciju na početni ekran direktno iz Safari ili Chrome pregledača. Nije potrebna prodavnica aplikacija. Pogledajte [Инсталирање као апликације (PWA)](./installing-pwa.md) za detaljna uputstva.
 
-:::info
-Старија нативна апликација B1 Mobile је укинута. PWA је подржан начин коришћења B1.church-а на телефону. Историјску документацију погледајте на страници [B1 Mobile референце](/docs/b1-mobile/).
-:::
+## Sledeći koraci
 
-## Следећи кораци
-
-- [Пријава](./logging-in.md) -- Научите како да се пријавите и управљате сесијом.
-- [Кретање кроз B1App](./navigating.md) -- Снађите се у порталу за чланове.
-- [Инсталирање као апликација (PWA)](./installing-pwa.md) -- Додајте B1.church на почетни екран телефона.
+- [Пријава](./logging-in.md) -- Naučite kako da se prijavite i upravljate sesijom.
+- [Кретање kroz B1App](./navigating.md) -- Snađite se u portalu za članove.
+- [Инсталирање као апликације (PWA)](./installing-pwa.md) -- Dodajte B1.church na početni ekran telefona.

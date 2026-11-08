@@ -1,83 +1,99 @@
 ---
-title: "Kufaka Njenge-App (PWA)"
-description: "Faka i-B1.church njenge-app ku-iPhone noma ku-Android kusuka ku-portal yelilungu, ungeze sithonjana sayo esikrinini sakho sekuqala nge-Safari noma i-Chrome."
+title: "Ukufakwa njengohlelo lwe-app (PWA)"
+description: "Faka i-B1.church njengohlelo ku-iPhone noma ku-Android kusuka ku-member portal, ufake isithonjana sayo esikrinini sakho sasekhaya nge-Safari noma i-Chrome."
 ---
 
-# Kufaka Njenge-App (PWA)
+# Ukufakwa njengohlelo lwe-app (PWA)
 
 <div class="article-intro">
 
-I-B1.church iyaseketela kufakwa njenge-Progressive Web App (PWA), lokukuvumela kutsi ufake iphothali yemalungu lelibandla lakini ekhasini lekucala lelucingo lakho njengalokufana ne-app yendabuko. Loku kukunika buchawe lobugcwele lesikhrini kanye nemuva lelifana ne-app ngaphandle kwekutsi udzinge kuchamuka ku-App Store nome ku-Google Play.
+I-B1.church isekela ukufakwa njengohlelo lwe-Progressive Web App (PWA), olukuvumela ukuthi wengeze i-member portal yebandla lakho esikrinini sasekhaya sefoni yakho njengesicelo esijwayelekile. Lokhu kukunika isipiliyoni esigcwele isikrini, esifana ne-app, ngaphandle kokudlula ku-App Store noma ku-Google Play.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Udzinga likheli le-B1.church lelibandla lakini: `https://yourchurchname.b1.church`
-- Sebentisa umcwayisi loseketelwako: **Safari** ku-iOS nome **Chrome** ku-Android
+- Udinga i-URL yebandla lakho ye-B1.church: `https://yourchurchname.b1.church`
+- Sebenzisa isiphequluli esisekelwayo: **Safari** ku-iOS noma **Chrome** ku-Android
 
 </div>
 
-## Yini I-PWA?
+## Yini i-PWA?
 
-I-Progressive Web App (PWA) yisayithi le-inthanethi lengafakwa kudivayisi yakho bese isebenta njenge-app yendabuko. Nawufaka i-B1.church njenge-PWA, iyakwenta loku:
+I-Progressive Web App (PWA) iwebhusayithi ongayifaka kudivayisi yakho futhi iziphatha njengohlelo lwendabuko. Lapho ufaka i-B1.church njenge-PWA, iyo:
 
-- Ivula ngebuchawe lobugcwele lesikhrini ngaphandle kwemibhandzela yekuhambisa yemcwayisi
-- Ivela ekhasini lekucala lelucingo lakho nge-icon nelibito lelibandla lakini
-- Isebenta kahle nemphawu welibandla lakini nemibala yayo lekhethiwe
+- Ivula igcwele isikrini ngaphandle kwamabha okuhambisa esiphequluleni
+- Ivela esikrinini sasekhaya nesithonjana negama lebandla lakho
+- Isebenza kahle nombala nesitayela sebandla lakho
 
 :::tip
-I-PWA yindlela lenhle nangabe awutsandzi kufaka i-app lehlukene kusuka ku-App Store nome Google Play. Inika kuhlangenwe nako lokufanako naloko lokutfolwa emcwayisini, kepha ngendlela lekahle kakhulu.
+I-PWA iyinketho enhle uma ukhetha ukungafaki i-app ehlukile ku-App Store noma ku-Google Play. Inikeza isipiliyoni esifanayo se-member portal oyithola esiphequluleni, ngendlela elula kakhulu.
 :::
 
-## Lapho Ungayifaka Khona
+## Ikhasi Lokufaka
 
-Ungafaka i-PWA kusuka **kunoma ngukuphi likhasi** sesayithi lelibandla lakini le-B1.church — likhasi lelivulekele wonkhe umuntfu, likhasi lentshumayelo, likhasi lekungena, nome nome kuphi ngekhatsi kweliphothali yemalungu. Akukho "likheli lekufaka" lelihlukile lelidzingekako kutsi ulikhumbule; nangabe ungavakashela lelibandla lakini ku-inthanethi, ungayifaka i-app kuleyo ndzawo.
+Indlela elula yokufaka iyikhasi lokufaka elikhethekile lebandla lakho:
 
-Nawuvula i-app leseyifakiwe, ivula ngco ku-dashbhodi yakho yemalungu, ilungele kutsi ungene.
+```
+https://yourchurchname.b1.church/mobile/install
+```
 
-## Kufaka ku-iPhone (iOS — Safari)
+Ikhasi libona idivayisi yakho futhi likhombisa imiyalelo efanele ngokuzenzakalelayo:
 
-1. Vula **Safari** ku-iPhone yakho bese uya ku-`https://yourchurchname.b1.church` (bese ushintja `yourchurchname` ngelikheli lelibandla lakini).
-2. Chofoza inkhinobho ye-**Share** (libhokisi lelinemcibisholo lokhomba etulu) esekoneni lesephansi lesikhrini.
-3. Skrola phansi ku-share sheet bese uchofoza **Add to Home Screen**.
-4. Libito litawuba lelibandla lakini ngekuzenzekela. Chofoza **Add** esekoneni lesekudla etulu.
+- **iPhone** — imiyalelo ye-Safari "Engeza Esikrinini Sasekhaya" ngesinyathelo ngesinyathelo
+- **Android** — inkinobho eyodwa **Faka Esikrinini Sasekhaya** ku-Chrome
+- **Ikhompyutha** — ikhodi ye-QR ongayiskena ngefoni yakho ukuze uvule ikhasi lokufaka lapho
 
-I-icon ye-app itawuvela ekhasini lekucala lelucingo lakho. Yichofote kuze uvule iphothali yemalungu ngebuchawe lobugcwele lesikhrini.
+Ungafinyelela ikhasi lokufaka ngezindlela eziningana:
+
+- Thepha **More** ku-member portal bese uthepha **Install App** ngaphansi kwe-**Account** (leli khetho liyafihleka uma i-app sele ifakiwe)
+- Landela isixhumanisi ebandla lakho elisabelana ngaso ngomlayezo, nge-imeyili, noma kusikrini sangeSonto
+- Bhala i-URL ngqo esiphequluleni sakho
+
+:::tip Kubasebenzi bebandla
+Yabelana ngesixhumanisi sekhasi lokufaka nebandla lakho — sibeke ebhuletinini, emagazini wezindaba, noma ku-slide. Sihola ilungu ngalinye ngezinyathelo ezichazwe ngokucacile zedivayisi yalo. Ungafinyelela kuphinde kusuka ku-quick action **Download the App** kudashibhodi yakho ye-B1Admin.
+:::
+
+Ungafaka i-PWA ngesandla nakanjani kusuka **kunoma yikuphi ikhasi** esiteshini se-B1.church sebandla lakho usebenzisa izinyathelo zesiphequluli ngezansi — ikhasi lokufaka iyindlela eqondisiwe nje yokukwenza lokho.
+
+Lapho uvula i-app efakiwe, ivula ngqo idashibhodi yakho yelungu, ilungele ukuthi ungene ngemvume.
+
+## Ukufaka ku-iPhone (iOS — Safari)
+
+1. Vula **Safari** ku-iPhone yakho bese uya ku `https://yourchurchname.b1.church/mobile/install` (faka esikhundleni se-`yourchurchname` isiqu-sisilinganiso se-URL yebandla lakho).
+2. Thepha inkinobho **Share** (ibhokisi elinomcibisholo ophakamela phezulu) ngaphansi kwesikrini.
+3. Skrola phansi kwe-share sheet bese uthepha **Add to Home Screen**.
+4. Igama lizozenzakalelayo libe igama lebandla lakho. Thepha **Add** ekhoneni eliphezulu kwesokudla.
+
+Isithonjana se-app sizovela esikrinini sakho sasekhaya. Thepha kuso ukuze uvule i-member portal igcwele isikrini.
 
 :::info
-Kufaka i-PWA ku-iOS kudzinga Safari. Nangabe usebentisa Chrome nome lomunye umcwayisi ku-iPhone, shintja kucala uye ku-Safari.
+Ukufakwa kwe-PWA ku-iOS kudinga i-Safari. Uma usebenzisa i-Chrome noma esinye isiphequluli ku-iPhone, shintshela ku-Safari kuqala.
 :::
 
-## Kufaka ku-Android (Chrome)
+## Ukufaka ku-Android (Chrome)
 
-1. Vula **Chrome** kudivayisi yakho ye-Android bese uya ku-`https://yourchurchname.b1.church`.
-2. I-Chrome itawukhombisa ngekutentela lisango lelitsi **"Add to Home screen"** esekoneni lesephansi lesikhrini, nome uchofoze imenyu yemachashaza lamatsatfu (⋮) esekoneni lesekudla etulu bese ukhetsa **Add to Home screen**.
-3. Chofoza **Add** nawubuzwa.
+1. Vula **Chrome** kudivayisi yakho ye-Android bese uya ku `https://yourchurchname.b1.church/mobile/install`.
+2. Thepha inkinobho **Install on Home Screen**. (Uma inkinobho ingatholakali, thepha imenyu yamachashazi amathathu (⋮) ekhoneni eliphezulu kwesokudla bese ukhetha **Add to Home screen**.)
+3. Thepha **Add** uma kuvela isicelo.
 
-I-icon ye-app itawuvela ekhasini lekucala lelucingo lakho. Yichofote kuze uvule iphothali yemalungu.
+Isithonjana se-app sizovela esikrinini sakho sasekhaya. Thepha kuso ukuze uvule i-member portal.
 
-## Ngemuva Kwekufaka
+## Emva Kokufaka
 
-Nasesifakiwe, i-PWA ivula ngco eliphothalini yemalungu ewindini lelitsite lelinebuchawe lobugcwele lesikhrini. Ungakwati:
+Lapho sesifakiwe, i-PWA ivula ngqo i-member portal ewindini elikhethekile eligcwele isikrini. Ungenza:
 
-- Ngena nge-akhawunti yakho lesele ikhona ye-ChurchApps
-- Ufinyelele tonkhe tintfo temalungu lelibandla lakini selivumele — emacembu, kunikela, kubhalisa ekufikeni, tinhlelo temsebenti, nalokunye
-- Ubuyele kuyo nome ngasiphi sikhatsi ngekuchofoza i-icon ekhasini lekucala lelucingo lakho
+- Ngena ngemvume nge-akhawunti yakho ye-ChurchApps ekhona
+- Finyelela zonke izici zelungu ebandla lakho elizivumele — amaqembu, ukunikela, ukungena, amapulani okukhonza, nokunye
+- Buyela kuyo noma nini ngokuthepha isithonjana esikrinini sakho sasekhaya
 
-I-icon ye-app itawukhombisa **badge yesatiso** (badge lenenani lelincane) nawunemilayeto lengakafundwa, kuze ubone ngekushesha nangabe kukhona lokusha lokukulindzile.
+Isithonjana se-app sizobonisa **ibheji lesaziso** (inombolo encane ebhejini) uma unemilayezo engakafundwa, ukuze ubone ngokushesha uma kukhona okusha okulindele.
 
 :::info
-I-PWA idzinga kuxhumana ne-inthanethi. Ngalokungafani netinye ta-app tendabuko, ayigcini yonkhe inshila kutsi isebente nawungekho ku-inthanethi.
+I-PWA idinga ukuxhumeka ku-inthanethi. Ngokungafani nezinye izinhlelo ezisebenza ngqo, ayigcini bonke okuqukethwe ukuze isetshenziswe ngaphandle kokuxhumeka.
 :::
 
-## Kutsiwani Nge-App Yendabuko Ye-B1 Mobile?
+## Izihloko Ezihlobene
 
-I-app yendabuko yendabuko **B1 Mobile** ku-iOS nase-Android seyiyekiwe kusetjentiswa futsi ayisakwentiwa. I-PWA yindlela leyeseketwako yekufinyelela iphothali yemalungu ye-B1.church elucingweni kusukela manje kuya embili, futsi imbandzakanya wonkhe umsebenti lokhombiswa emalungu leyayikhona ku-app yendabuko. Nangabe wake wafaka i-app yendabuko, shintjela ku-PWA nome nini nawulungele.
-
-Bona [likhasi lekubhekiswa kwe-B1 Mobile](/docs/b1-mobile/) kutfola imibhalo yayo yasendulo yale-app leseyiyekiwe.
-
-## Imibhalo Lehlobene
-
-- [Kungena](./logging-in.md) — Kutsi ungangena njani ku-akhawunti yakho ye-B1.church
+- [Ukungena](./logging-in.md) — Indlela yokungena ku-akhawunti yakho ye-B1.church

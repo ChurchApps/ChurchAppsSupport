@@ -1,101 +1,101 @@
 ---
-title: "Umhlahlandlela: Sebenta Nemacembu Lamancane"
-description: "Setfula emaqembu emancane, tifundvo te-Bhayibheli nemaqembu emsebenti ku-B1 Admin, bese ushicilela ikhalendari yebandla nemaqembu ewebhusayitini ye-B1."
+title: "Mhlahlandlela: Hlela Emaqembu Lamancane"
+description: "Setha emaqembu lamancane, tifundvo tetiBhayibheli, nemaqembu emsebenti kuB1 Admin, bese upapasha ikhalenda yonkhe lecawe nesigaba semaqembu kuwebhusayithi yakho ye-B1."
 ---
 
-# Sebenta Nemacembu Lamancane
+# Hlela Emaqembu Lamancane
 
 <div class="article-intro">
 
-Hlela emacembu lamancane, tifundvo teLibhayibheli, nobe emacembu emisebenti ngekuphatsa emalunga, emakhalenda emacembu, kanye netincoco. Shicilela likhalenda lelibandla lonkhe kuwebhusayithi yakho kute bavakashi babone kutsi kwentekani emalunga futsi ahlale axhumene nge-web portal ne-app yeselula.
+Setha emaqembu lamancane, tifundvo tetiBhayibheli, noma emaqembu emsebenti ngekuphatha emalungu, emakhalenda emaqembu, nemingcingo. Papasha ikhalenda yemicimbi yonkhe lecawe kuwebhusayithi yakho ukuze bavakashi bakwazi kubona lokwenteka, nemalungu abe nxusano ngekusebenzisa ipotali yewebhu kanye ne-app yefoni.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- I-akhawunti ye-B1 Admin lenekufinyelela kwemphatsi
-- [Bantfu labafakwe kuluhlu lwakho](../people/adding-people.md) (emalunga elicembu kudzingeka abekhona kucala)
+- I-akhawunti ye-B1 Admin enelungelo lokuphatha
+- [Abantu abengeziwe ohlwini lwakho lwabantu](../people/adding-people.md) (emalungu eqembu kufanele abe khona kuqala)
 
 </div>
 
-## Sinyatselo 1: Yakha Tigaba Temacembu & Emacembu
+## Isinyathelo 1: Dala Izigaba Zemaqembu Namaqembu
 
-Hlela emacembu akho kutigaba kute emalunga akwati kutfola kalula lokufunako.
+Hlela amaqembu akho ngezigaba ukuze amalungu akwazi kalula ukuthola lokufunayo.
 
-Landzela umhlahlandlela we-[Kudala Emacembu](../groups/creating-groups.md) kute:
+Landela umhlahlandlela [Ukudala Amaqembu](../groups/creating-groups.md) ukuze:
 
-1. Yakha tigaba tekuhlela emacembu akho (sib., "Emacembu Lamancane", "Tifundvo TeLibhayibheli", "Emacembu Emisebenti", "Emakomiti")
-2. Yakha emacembu ngekhatsi kwesigaba ngasinye (sib., "Licembu Lemadvodza LaseLoBusuku Ngolwesibili", "Sifundvo SeLibhayibheli Sebafati", "Umsebenti Wetintsha")
-3. Faka incazelo nesikhatsi sekuhlangana kulicembu ngalinye
+1. Udale izigaba zokuhlela amaqembu akho (isib., "Emaqembu Amancane", "Tifundvo TeBhayibheli", "Amaqembu Emsebenti", "Likomidi")
+2. Udale amaqembu ngaphakathi kwesigaba ngasinye (isib., "Iqembu Lamadoda LangeLesine Kusihlwa", "Tifundvo TeBhayibheli Tabafazi", "Umnyango Wentsha")
+3. Engeza incazelo nesikhathi sokuhlangana seqembu ngalinye
 
-## Sinyatselo 2: Faka Emalunga & Baholi
+## Isinyathelo 2: Engeza Amalungu Nabaholi
 
-Gcwalisa emacembu akho ngemalunga bese ukhomba baholi labangaphatsa emacembu abo.
+Gcwalisa amaqembu akho ngamalungu bese unikeza abaholi abangaphatha amaqembu abo.
 
-Landzela umhlahlandlela we-[Emalunga Elicembu](../groups/group-members.md) kute:
+Landela umhlahlandlela [Amalungu Eqembu](../groups/group-members.md) ukuze:
 
-1. Sesha bantfu bese uwafaka emacembeni lafanele
-2. Khomba baholi belicembu usebentisa luphawu lwesihluthulelo lolutfotfombe — baholi batfola imvumo lengetiwe
+1. Sesha abantu bese ungeza emaqembwini afanele
+2. Nikeza abaholi beqembu usebenzisa isithonjana senkanyezi (**Yenza Umholi**) — abaholi bathola amalungelo engeziwe
 
 :::tip
-Baholi belicembu bangaphatsa likhalenda lelicembu labo, bashicilele tincoco, futsi bahlanganise emicimbi ngaphandle kwekudzinga kufinyelela lokugcwele kwemphatsi.
+Abaholi beqembu bangaphatha ikhalenda yeqembu labo, bashicilele izingxoxo, bahlele imicimbi ngaphandle kokudinga ilungelo eliphelele lokuphatha.
 :::
 
-## Sinyatselo 3: Setinga Emakhalenda Emacembu
+## Isinyathelo 3: Setha Amakhalenda Amaqembu
 
-Nika licembu ngalinye likhalenda lalo lekuhlangana nemicimbi.
+Nika eqembu ngalinye ikhalenda yalo yokuhlangana nemicimbi.
 
-Landzela umhlahlandlela we-[Likhalenda Lelicembu](../groups/group-calendar.md) kute:
+Landela umhlahlandlela [Ikhalenda Yeqembu](../groups/group-calendar.md) ukuze:
 
-1. Faka kuhlangana lokuphindaphindako (sib., "NgaloLwesibili Ngalinye Nga-7 Kusihlwa") kanye nemicimbi yalinye lisikhatsi (sib., "Kudla-Nyama Kwelicembu - Mashi 15")
-2. Baholi belicembu bangafaka baphatse emicimbi welicembu labo
+1. Engeza ukuhlangana okuphindaphindwayo (isib., "Njalo ngoLwesibili ngo-7 PM") nemicimbi yesikhathi esisodwa (isib., "Ukudla Kwasemini Eqenjini - Mashi 15")
+2. Abaholi beqembu bangangeza baphathe imicimbi yeqembu labo
 
-## Sinyatselo 4: Yakha Likhalenda Lelibandla Lonkhe
+## Isinyathelo 4: Dala Ikhalenda Yonkhe Lecawe
 
-Hlanganisa emicimbi kuvela kuwo onkhe emacembu akho kulikhalenda linye lelihlangene kwelibandla lonkhe.
+Hlanganisa imicimbi evela kuwo wonke amaqembu ibe yikhalenda eyodwa yonkhe lecawe.
 
-Landzela imihlahlandlela ye-[Kudala Emakhalenda](../calendars/creating-calendars.md) ne-[Likhalenda Lelihlelwe](../calendars/curated-calendar.md) kute:
+Landela imihlahlandlela [Ukudala Amakhalenda](../calendars/creating-calendars.md) kanye [Ikhalenda Ehleliwe](../calendars/curated-calendar.md) ukuze:
 
-1. Yakha likhalenda lelihlelwe leludvonsa emicimbi kuvela kumacembu lamanyenti kuya endzaweni yinye lehlangene
-2. Yabelana ngelinki lekubhalisa le-ICS kute emalunga akwati kufaka emicimbi ku-app yawo yelikhalenda lemuntfu ngamunye (Google Calendar, Apple Calendar, Outlook)
+1. Dala ikhalenda ehleliwe edonsa imicimbi kumaqembu amaningi ibe yibonakalo eyodwa
+2. Yabelana ngesixhumanisi se-ICS ukuze amalungu engeze imicimbi ezinhlelweni zawo zekhalenda zomshini (Google Calendar, Apple Calendar, Outlook)
 
 :::info
-Likhalenda lelihlelwe lihlanganisa ngekutinelela emicimbi kuvela emacembeni lawaxhumene nawo. Nangabe umholi welicembu efaka umcimbi, uvela nakulikhalenda lelibandla nako.
+Ikhalenda ehleliwe ihlanganisa ngokuzenzakalelayo imicimbi evela kumaqembu owaxhumanisa. Uma umholi weqembu engeza umcimbi, uvela nakukhalenda yecawe.
 :::
 
-## Sinyatselo 5: Shicilela Kuwebhusayithi Yakho
+## Isinyathelo 5: Shicilela Kuwebhusayithi Yakho
 
-Yenta emacembu akho kanye nelikhalenda kubonakale kubavakashi nasemalungeni ewebhusayithi yakho ye-B1.
+Yenza amaqembu akho nekhalenda kubonakale kubavakashi nakumalungu kuwebhusayithi yakho ye-B1.
 
-Landzela umhlahlandlela we-[Kuphatsa Emakhasi](../website/managing-pages.md) kute:
+Landela umhlahlandlela [Ukuphatha Amakhasi](../website/managing-pages.md) ukuze:
 
-1. Faka incenye Yelikhalenda kuwebhusayithi yakho ye-B1 kute uboniswe likhalenda lelihlelwe
-2. Faka incenye Yemacembu kute bavakashi bakwati kubhonga emacembu latfolakalako futsi bafundze kutsi bangajoyina njani
+1. Engeza isigaba sekhalenda kuwebhusayithi yakho ye-B1 ukuze kubonise ikhalenda ehleliwe
+2. Engeza isigaba samaqembu ukuze bavakashi bakwazi ukuhlola amaqembu atholakalayo nokufunda ukuthi bangajoyina kanjani
 
-## Sinyatselo 6: Kuhlangenwe Nako Kwelilunga
+## Isinyathelo 6: Umuzwa Womlungu
 
-Emalunga angatfola, ajoyine, futsi abambe icandzi emacembeni kusuka kulucingo lwabo nobe kucomputer.
+Amalungu angathola, ajoyine, abe yingxenye yamaqembu kusuka efonini noma ekhompyutheni yawo.
 
-1. Emalunga abhonga futsi ajoyine emacembu ku-[B1.church](../../b1-church/groups/browsing-groups.md)
-2. Emalunga elicembu angabuka imininingwane, emakhalenda, futsi ashicilele [etincocweni](../../b1-church/groups/conversations.md)
-3. Tonkhe tici temacembu tikhona nako [ku-app ye-B1 Mobile](../../b1-mobile/groups/index.md)
+1. Amalungu aphenya futhi ajoyine amaqembu kuthi [B1.church](../../b1-church/groups/browsing-groups.md)
+2. Amalungu eqembu angabona imininingwane, amakhalenda, futhi ashicilele kuthi [izingxoxo](../../b1-church/groups/conversations.md)
+3. Zonke izici zamaqembu zitholakala nakuthi [B1 App](../../b1-church/groups/index.md)
 
 :::info
-Emalunga abona emacembu awo, emicimbi letako, netincoco temacembu kokubili ku-web nakwiselula — konkhe kuhlala kuhambisana.
+Amalungu abona amaqembu awo, imicimbi ezayo, nezingxoxo zamaqembu kokubili kuwebhu nakufoni — konke kuhlala kuhambisana.
 :::
 
-## Usucedzile!
+## Usuqedile!
 
-Emacembu akho lamancane ahleliwe futsi axhumene. Emalunga angatfola emacembu, abuke emicimbi, futsi ahlale axhumene ngetincoco — konkhe kuwebhusayithi yakho na kwi-app yeselula. Baholi belicembu bangaphatsa emacembu abo ngekutimela.
+Amaqembu akho emancane asethiwe futhi axhunyiwe. Amalungu angathola amaqembu, abone imicimbi, bahlale bexhumene ngezingxoxo — konke kuwebhusayithi yakho nasku-app yefoni. Abaholi beqembu bangaphatha amaqembu abo ngokuzimela.
 
-## Tihloko Letihlobene
+## Izihloko Ezihlobene
 
-- [Kudala Emacembu](../groups/creating-groups.md) — hlela tigaba nemacembu
-- [Emalunga Elicembu](../groups/group-members.md) — faka emalunga bese ukhomba baholi
-- [Likhalenda Lelicembu](../groups/group-calendar.md) — phatsa emicimbi yelicembu
-- [Kudala Emakhalenda](../calendars/creating-calendars.md) — hlela emakhalenda emisebenti
-- [Likhalenda Lelihlelwe](../calendars/curated-calendar.md) — yakha likhalenda lelihlangene lelibandla
-- [Kubhonga Emacembu (Web)](../../b1-church/groups/browsing-groups.md) — indlela emalunga latfola ngayo emacembu
-- [Tincoco Temacembu (Web)](../../b1-church/groups/conversations.md) — tinkulumo temacembu
-- [Emacembu (Mobile)](../../b1-mobile/groups/index.md) — emacembu ku-app yeselula
+- [Ukudala Amaqembu](../groups/creating-groups.md) — setha izigaba namaqembu
+- [Amalungu Eqembu](../groups/group-members.md) — engeza amalungu futhi unikeze abaholi
+- [Ikhalenda Yeqembu](../groups/group-calendar.md) — phatha imicimbi yeqembu
+- [Ukudala Amakhalenda](../calendars/creating-calendars.md) — setha amakhalenda emisebenzi yecawe
+- [Ikhalenda Ehleliwe](../calendars/curated-calendar.md) — akha ikhalenda eyodwa yecawe
+- [Ukuphenya Amaqembu (Iwebhu)](../../b1-church/groups/browsing-groups.md) — indlela amalungu athola ngayo amaqembu
+- [Izingxoxo Zamaqembu (Iwebhu)](../../b1-church/groups/conversations.md) — izingxoxo zamaqembu
+- [Amaqembu](../../b1-church/groups/index.md) — amaqembu ku-B1 App

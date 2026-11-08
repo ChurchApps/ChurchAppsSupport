@@ -1,14 +1,14 @@
 ---
-title: "Configuración del autorregistro con B1 Checkin y B1 Admin"
+title: "Configuración del autoservicio de registro de entrada con B1 Checkin y B1 Admin"
 sidebar_label: "Registro de entrada"
-description: "Configura el autorregistro en los servicios con B1 Checkin en B1 Admin: dispositivos, quioscos, horarios, marca y registro de visitantes por QR."
+description: "Configura el autoservicio de registro de entrada en los servicios con la app B1 Checkin en B1 Admin, incluyendo dispositivos, cuentas de quiosco, horarios, personalización visual y registro de visitantes mediante código QR."
 ---
 
 # Registro de entrada
 
 <div class="article-intro">
 
-B1 Admin permite el autorregistro de entrada en los servicios mediante la aplicación complementaria **B1 Checkin**. Los miembros pueden registrarse ellos mismos y a sus familias en quioscos o dispositivos dedicados al llegar, lo que hace el proceso más rápido y reduce la carga de trabajo de sus voluntarios. Cada registro de entrada se guarda automáticamente como asistencia.
+B1 Admin permite el autoservicio de registro de entrada en los servicios mediante la app complementaria **B1 Checkin**. Los miembros pueden registrarse a sí mismos y a sus familias en quioscos o dispositivos dedicados al llegar, lo que agiliza el proceso y reduce la carga de trabajo de sus voluntarios. Cada registro de entrada se guarda automáticamente como asistencia.
 
 </div>
 
@@ -16,65 +16,65 @@ B1 Admin permite el autorregistro de entrada en los servicios mediante la aplica
 <h4>Antes de comenzar</h4>
 
 - Sus campus, horarios de servicio y grupos deben estar configurados en [Configuración de asistencia](setup.md).
-- Necesita [personas en su base de datos](../people/adding-people.md) con [hogares](../people/adding-people.md#managing-households) configurados para que las familias puedan registrar su entrada juntas.
-- Necesitará una tableta y, opcionalmente, una impresora de etiquetas Brother (vea las [recomendaciones de hardware](#recommended-hardware) más abajo).
+- Necesita [personas en su base de datos](../people/adding-people.md) con [hogares](../people/adding-people.md#managing-households) configurados para que las familias puedan registrarse juntas.
+- Necesitará una tableta y, opcionalmente, una impresora de etiquetas Brother (consulte las [recomendaciones de hardware](#recommended-hardware) más abajo).
 
 </div>
 
 ## Cómo funciona
 
-La aplicación B1 Checkin se conecta a su configuración de asistencia de B1 Admin. Cuando un miembro registra su entrada, la asistencia se guarda automáticamente en el campus, horario de servicio y grupo correctos. No necesita ingresar la asistencia manualmente para quienes usan el sistema de registro de entrada.
+La app B1 Checkin se conecta con la configuración de asistencia de B1 Admin. Cuando un miembro se registra, su asistencia se guarda automáticamente en el campus, el horario de servicio y el grupo correctos. No necesita introducir la asistencia manualmente para quienes usan el sistema de registro de entrada.
 
 ## Configuración del registro de entrada
 
-1. **Configure primero su estructura de asistencia.** En B1 Admin, vaya a **Personas > Asistencia** y haga clic en **Configuración** para asegurarse de que sus campus, horarios de servicio y grupos estén listos. La aplicación de registro depende de esta configuración. Opcionalmente, asigne a cada horario de servicio un [horario de registro](setup.md#setting-a-check-in-schedule) para que el registro se abra y cierre automáticamente cada semana. Los horarios usan la zona horaria del campus del servicio, o la zona horaria de su iglesia si el campus no tiene una configurada. El quiosco muestra como **Cerrado** los horarios de servicio cuya ventana está cerrada e informa a las familias cuándo se abre el registro. Consulte [Configuración de asistencia](setup.md) para más detalles.
-2. **Instale la aplicación B1 Checkin** en los dispositivos que planea usar. La aplicación está disponible en las siguientes plataformas:
-   - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
+1. **Configure primero la estructura de asistencia.** En B1 Admin, vaya a **Personas > Asistencia** y haga clic en **Configuración** para asegurarse de que sus campus, horarios de servicio y grupos estén listos. La app de registro depende de esta configuración. Opcionalmente, asigne a cada horario de servicio un [horario de registro](setup.md#setting-a-check-in-schedule) para que el registro se abra y cierre automáticamente cada semana. Los horarios usan la zona horaria del campus del servicio o, si el campus no tiene una definida, la zona horaria de su iglesia. El quiosco muestra como **Cerrado** los horarios de servicio cuya ventana está cerrada e informa a las familias cuándo se abrirá el registro. Consulte [Configuración de asistencia](setup.md) para más detalles.
+2. **Instale la app B1 Checkin** en los dispositivos que planea usar. La app está disponible en las siguientes plataformas:
+   - **iPad/iOS:** [App Store de Apple](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Tabletas Android/Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
-   - **Tabletas Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Inicie sesión en la aplicación B1 Checkin** con una cuenta que tenga el permiso de asistencia **Checkin** (o **Editar asistencia**). Consulte [Cuentas de quiosco de registro de entrada](../settings/roles-permissions.md#check-in-kiosk-accounts).
+   - **Tabletas Amazon Fire:** [Tienda de aplicaciones de Amazon](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
+3. **Inicie sesión en la app B1 Checkin** con una cuenta que tenga el permiso de asistencia **Checkin** (o **Editar asistencia**). Consulte [Cuentas de quiosco para el registro de entrada](../settings/roles-permissions.md#check-in-kiosk-accounts).
 4. **Seleccione el campus y el horario de servicio** de la reunión actual.
-5. Ahora los miembros pueden buscar su nombre en el dispositivo y registrar su entrada.
+5. Ahora los miembros pueden buscar su nombre en el dispositivo y registrarse.
 
 :::tip
-Coloque los dispositivos de registro en lugares visibles y de fácil acceso, como las entradas del vestíbulo o los mostradores de bienvenida. Un breve anuncio durante los servicios ayuda a que los miembros sepan que esta opción está disponible.
+Coloque los dispositivos de registro en lugares visibles y de fácil acceso, como las entradas del vestíbulo o las mesas de bienvenida. Un breve anuncio durante los servicios ayuda a que los miembros sepan que esta opción está disponible.
 :::
 
 :::tip
-Si su iglesia tiene varios campus, deberá repetir la configuración para cada campus en [Configuración de asistencia](setup.md). Cada dispositivo de registro puede configurarse para un campus diferente.
+Si su iglesia tiene varios campus, deberá repetir la configuración para cada uno en [Configuración de asistencia](setup.md). Cada dispositivo de registro puede configurarse para un campus diferente.
 :::
 
-## Hardware recomendado {#recommended-hardware}
+## Hardware recomendado
 
-**Tabletas:** cualquiera de estas funciona bien con la aplicación:
+**Tabletas**: cualquiera de estas funciona bien con la app:
 
 - **Compacta:** Samsung Galaxy Tab A7 Lite 8.7"
 - **Pantalla grande:** Samsung Galaxy Tab A8 10.5"
 - **Económica:** Amazon Fire HD 10
 
-**Impresoras:** los registros de entrada funcionan con impresoras de etiquetas Brother para imprimir gafetes:
+**Impresoras**: el registro de entrada funciona con impresoras de etiquetas Brother para imprimir gafetes:
 
-- **La mejor:** Brother QL-1110NWB (admite varias tabletas mediante Bluetooth y WiFi)
-- **Buena:** Brother QL-810W (admite varias tabletas mediante WiFi)
+- **Mejor opción:** Brother QL-1110NWB (admite varias tabletas mediante Bluetooth y WiFi)
+- **Buena opción:** Brother QL-810W (admite varias tabletas mediante WiFi)
 - **Económica:** Brother QL-1100 (solo WiFi)
 
 **Etiquetas:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Solo las impresoras de etiquetas Brother son compatibles con la aplicación B1 Checkin. Las impresoras de otras marcas no funcionarán para imprimir gafetes.
+Solo las impresoras de etiquetas Brother son compatibles con la app B1 Checkin. Las impresoras de otras marcas no funcionarán para imprimir gafetes.
 :::
 
 :::info
-Siga las instrucciones de configuración de su impresora para conectarla a la misma red WiFi que su tableta. Puede encontrar los controladores y guías de configuración de impresoras Brother en el [sitio de soporte de Brother](https://support.brother.com).
+Siga las instrucciones de configuración de su impresora para conectarla a la misma red WiFi que su tableta. Puede encontrar los controladores y las guías de configuración de las impresoras Brother en el [sitio de soporte de Brother](https://support.brother.com).
 :::
 
-## Personalización de la apariencia del quiosco
+## Personalización del aspecto del quiosco
 
-Puede personalizar el aspecto de la aplicación B1 Checkin para que coincida con la identidad visual de su iglesia. En B1 Admin, vaya a **Móvil > B1 CheckIn** y use la tarjeta **Tema del quiosco** para configurar:
+Puede personalizar el aspecto de la app B1 Checkin para que coincida con la identidad visual de su iglesia. En B1 Admin, vaya a **Móvil > B1 CheckIn** y use la tarjeta **Tema del quiosco** para configurar:
 
 ### Colores
 
-Personalice ocho opciones de color para que coincidan con la identidad visual de su iglesia:
+Personalice ocho colores para que coincidan con la identidad visual de su iglesia:
 
 - **Principal** y **Contraste principal** -- Color principal de la marca y su color de texto.
 - **Secundario** y **Contraste secundario** -- Color de acento y su color de texto.
@@ -85,95 +85,97 @@ Personalice ocho opciones de color para que coincidan con la identidad visual de
 
 Suba una imagen de fondo opcional para las pantallas de bienvenida y búsqueda del quiosco. El tamaño recomendado es de 1920x1080 píxeles.
 
-### Pantalla de reposo / Protector de pantalla
+### Pantalla de inactividad / Protector de pantalla
 
-Configure un protector de pantalla que se active después de un periodo de inactividad:
+Configure un protector de pantalla que se active después de un período de inactividad:
 
-1. Active o desactive la pantalla de reposo.
-2. Establezca el **tiempo de espera** (cuántos segundos de inactividad pasan antes de que inicie el protector de pantalla, mínimo 10 segundos).
-3. Agregue una o más **diapositivas** -- cada diapositiva tiene una imagen y una duración de visualización (mínimo 3 segundos).
+1. Active o desactive la pantalla de inactividad.
+2. Defina el **tiempo de espera** (cuántos segundos de inactividad deben pasar antes de que inicie el protector, con un mínimo de 10 segundos).
+3. Agregue una o más **diapositivas**: cada diapositiva tiene una imagen y un tiempo de visualización (mínimo 3 segundos).
 
 :::tip
-Use la pantalla de reposo para mostrar anuncios, próximos eventos o mensajes de bienvenida cuando el quiosco no se esté usando activamente.
+Use la pantalla de inactividad para mostrar anuncios, próximos eventos o mensajes de bienvenida cuando el quiosco no se esté usando.
 :::
 
-## Registro de invitados mediante código QR {#guest-registration-via-qr-code}
+## Registro de visitantes mediante código QR
 
-El quiosco de registro de entrada puede mostrar un código QR que los visitantes escanean para registrarse ellos mismos y a su familia desde su propio teléfono. Esto agiliza el proceso de registro de entrada para los invitados que llegan por primera vez.
+El quiosco de registro de entrada puede mostrar un código QR que los visitantes escanean para registrarse ellos mismos y a su familia desde su propio teléfono. Esto agiliza el proceso de registro de entrada para los visitantes que llegan por primera vez.
 
-Cuando un invitado escanea el código QR, se le lleva a una [página de registro de invitados](../../b1-church/checkin/guest-registration.md) donde ingresa los nombres de su familia y los demás datos que usted decida solicitar. Luego, un voluntario puede buscarlo en el quiosco y registrar su entrada.
+Cuando un visitante escanea el código QR, se le lleva a una [página de registro de visitantes](../../b1-church/checkin/guest-registration.md) donde introduce los nombres de su familia y los demás datos que usted decida solicitar. Después, un voluntario puede buscarlo en el quiosco y registrar su entrada.
 
-### Activación del registro de invitados mediante QR
+### Activación del registro de visitantes con QR
 
 Para activar la visualización del código QR:
 
-1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda) y expanda **Móvil**.
+1. En B1 Admin, abra el [menú de navegación rápida](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda) y expanda **Móvil**.
 2. Haga clic en **B1 CheckIn**.
-3. Active **Registro de invitados por QR** y haga clic en **Guardar**.
+3. Active **Registro de visitantes con QR** y haga clic en **Guardar**.
 
 :::note
-Esta configuración está en **Móvil > B1 CheckIn** (la misma página que la tarjeta **Tema del quiosco**), no en Asistencia. La acción **Quiosco** de la página de Asistencia tiene un enlace a esta página.
+Esta configuración se encuentra en **Móvil > B1 CheckIn** (la misma página que la tarjeta **Tema del quiosco**), no en Asistencia. La acción **Quiosco** de la página de Asistencia tiene un enlace a esta página.
 :::
 
-Una vez activado el interruptor, las demás opciones que se describen a continuación aparecen en la misma tarjeta **Registro de invitados por QR**. Haga clic en **Guardar** en la tarjeta después de cambiar cualquiera de ellas.
+Una vez activado el interruptor, las demás opciones aparecen en la misma tarjeta **Registro de visitantes con QR**. Haga clic en **Guardar** en la tarjeta después de cambiar cualquiera de ellas.
 
-### Selección de campos de registro
+### Elección de los campos de registro
 
-La lista de **Campos de registro** controla lo que pide el formulario de registro. **Nombre** y **Apellido** siempre están en el formulario y siempre son obligatorios para cada miembro de la familia. Para cada uno de los demás campos, active **Incluir** para agregarlo al formulario y, después, active **Obligatorio** si los invitados deben completarlo. **Obligatorio** solo puede activarse para un campo incluido, y al desactivar **Incluir** se borra.
+La lista **Campos de registro** controla lo que pide el formulario de registro. **Nombre** y **Apellido** siempre aparecen en el formulario y siempre son obligatorios para cada miembro de la familia. Para cada uno de los demás campos, active **Incluir** para agregarlo al formulario y, después, active **Obligatorio** si los visitantes deben completarlo. **Obligatorio** solo puede activarse para un campo incluido, y desactivar **Incluir** lo borra.
 
 | Campo | Se solicita | Incluido por defecto |
 |-------|-------------|----------------------|
+| **Tratamiento** | A cada miembro de la familia, como lista desplegable delante del nombre (Sr., Sra., Srta., Dr., Dra., Prof., Rev., Pastor) | No |
 | **Correo electrónico** | Solo al contacto principal | Sí (opcional) |
-| **Teléfono** | Solo al contacto principal | Sí (opcional) |
-| **Dirección de casa** | Una vez para la familia -- calle, línea de dirección 2, ciudad, estado y código postal. Cuando es obligatorio, todo excepto la línea de dirección 2 debe completarse. La dirección se guarda en cada miembro de la familia. | No |
-| **Fecha de nacimiento** | Cada miembro de la familia | No |
-| **Género** | Cada miembro de la familia | No |
+| **Teléfono** | A cada miembro de la familia. Si es obligatorio, solo el contacto principal debe completarlo. | Sí (opcional) |
+| **Rol en el hogar** | A cada miembro de la familia después del contacto principal: Cónyuge, Hijo/a u Otro. El contacto principal es el jefe de un nuevo hogar. Quien no tenga rol se guarda como Otro. | Sí (opcional) |
+| **Dirección particular** | Una vez para toda la familia: calle, línea de dirección 2, ciudad, estado y código postal. Si es obligatoria, todo debe completarse excepto la línea de dirección 2. La dirección se guarda en cada miembro de la familia. | No |
+| **Fecha de nacimiento** | A cada miembro de la familia | No |
+| **Género** | A cada miembro de la familia | No |
 | **Estado civil** | Solo al contacto principal | No |
-| **Grado** | Cada miembro de la familia (de PreK a 12, o Graduado) | No |
+| **Grado** | A cada miembro de la familia (de PreK a 12, o Graduado) | No |
 | **Comentarios** | Una vez, en un cuadro debajo de los miembros de la familia (hasta 1,000 caracteres) | No |
 
-Los campos que desactive nunca se guardan, aunque alguien los envíe al registro por otro medio. Los comentarios se guardan como una nota en el registro del contacto principal (publicada como "Registro de invitado"), para que pueda leerlos en la sección **Notas** de su perfil.
+Los campos que desactive nunca se guardan, aunque alguien los envíe de otra manera al formulario. Los comentarios se guardan como una nota en el registro del contacto principal (publicada como «Registro de visitante»), para que pueda leerlos en la sección **Notas** de su perfil.
 
-### Agregar invitados a un grupo
+### Agregar visitantes a un grupo
 
-Use **Agregar nuevos invitados al grupo** para colocar automáticamente a todas las personas que se registren en uno de sus grupos, por ejemplo, un grupo de "Recién llegados" o un grupo para el evento de este fin de semana. Elija **Ninguno** (el valor predeterminado) para omitir esta opción. Los invitados nunca ven ni eligen el grupo; solo se configura aquí. Cámbielo antes de cada evento para dar seguimiento a los invitados de ese evento en conjunto.
+Use **Agregar nuevos visitantes al grupo** para incluir automáticamente a todas las personas que se registren en uno de sus grupos, por ejemplo, un grupo de «Recién llegados» o un grupo para el evento de este fin de semana. Elija **Ninguno** (la opción predeterminada) para omitir este paso. Los visitantes nunca ven ni eligen el grupo; solo se asigna aquí. Cámbielo antes de cada evento para poder hacer seguimiento a los visitantes de ese evento en conjunto.
 
 ### Registro de asistencia
 
-Cuando se selecciona un grupo, aparece un interruptor **Registrar también la asistencia**. Actívelo para marcar a los invitados como presentes en el momento en que se registran, para que no tenga que registrarles la entrada por separado.
+Cuando se selecciona un grupo, aparece el interruptor **Registrar también la asistencia**. Actívelo para marcar a los visitantes como presentes en el momento en que se registran, de modo que no tenga que registrar su entrada por separado.
 
 La asistencia solo se registra cuando el registro ocurre durante uno de los horarios de servicio **programados** del grupo seleccionado:
 
-- El grupo debe estar vinculado a uno o más horarios de servicio, y esos horarios de servicio deben tener un [horario de registro](setup.md#setting-a-check-in-schedule) (un **Día** y una **Hora de inicio**).
-- "Durante" significa dentro de la ventana de registro de ese horario de servicio -- desde los minutos de **Abrir registro** antes del inicio hasta los minutos de **Cerrar registro** después del final (o después del inicio, si no se configuró una hora de fin), en la misma zona horaria que usa el horario de registro.
+- El grupo debe estar vinculado a uno o más horarios de servicio, y esos horarios deben tener un [horario de registro](setup.md#setting-a-check-in-schedule) (un **Día** y una **Hora de inicio**).
+- «Durante» significa dentro de la ventana de registro de ese horario de servicio: desde los minutos de **Abrir registro** antes del inicio hasta los minutos de **Cerrar registro** después del final (o después del inicio, si no hay hora de finalización; si no hay hora de finalización ni minutos de cierre, hasta el final de ese día), en la misma zona horaria que usa el horario de registro.
 - Cada miembro de la familia se marca como presente en el grupo para cada uno de sus horarios de servicio que esté abierto en ese momento, en la fecha de hoy.
-- Los registros en cualquier otro momento, o para un grupo cuyos horarios de servicio no tienen horario, se agregan al grupo pero no se cuentan como asistentes.
+- Los registros en cualquier otro momento, o para un grupo cuyos horarios de servicio no tengan horario de registro, se agregan al grupo pero no se cuentan como asistencia.
 
 ### Foto de encabezado
 
-En **Foto de encabezado**, haga clic en **Cambiar foto** para elegir o subir una imagen (recortada a una forma de 16:9) que se mostrará en la parte superior de la página de registro en lugar del ícono predeterminado. Haga clic en **Quitar** para volver al ícono.
+En **Foto de encabezado**, haga clic en **Cambiar foto** para elegir o subir una imagen (recortada en formato 16:9) que se mostrará en la parte superior de la página de registro en lugar del ícono predeterminado. Haga clic en **Quitar** para volver al ícono.
 
 ### Compartir el enlace de registro
 
-Una vez que el registro de invitados por QR esté activado, aparece una sección **Compartir código QR de registro** al final de la tarjeta. Esto le ofrece dos formas de llevar a los invitados al formulario de registro, además del código QR del quiosco:
+Una vez activado el registro de visitantes con QR, aparece una sección **Compartir código QR de registro** en la parte inferior de la tarjeta. Esto le ofrece dos formas de llevar a los visitantes al formulario de registro, además del código QR del quiosco:
 
-- **Copiar enlace** -- copia la URL de registro para que pueda pegarla en el sitio web de su iglesia, en correos electrónicos o en cualquier lugar en línea.
-- **Descargar PNG** -- descarga el código QR como una imagen que puede imprimir en volantes, boletines o letreros.
+- **Copiar enlace**: copia la URL de registro para que pueda pegarla en el sitio web de su iglesia, en correos electrónicos o en cualquier lugar en línea.
+- **Descargar PNG**: descarga el código QR como imagen para imprimirlo en volantes, boletines o señalización.
 
 :::tip
-Agregue el enlace de registro a la página "Planee su visita" o "Soy nuevo" del sitio web de su iglesia para que los invitados puedan registrarse incluso antes de llegar.
+Agregue el enlace de registro a la página «Planee su visita» o «Soy nuevo» del sitio web de su iglesia para que los visitantes puedan registrarse incluso antes de llegar.
 :::
 
-### Qué sucede después de que un invitado se registra
+### Qué sucede después de que un visitante se registra
 
-B1 primero busca personas que ya estén en **Personas**. Un miembro de la familia se relaciona con una persona existente cuando exactamente una persona tiene el mismo nombre y el mismo correo electrónico o teléfono. Un niño ingresado sin correo electrónico ni teléfono se relaciona por nombre dentro del hogar que sí coincidió. Las personas relacionadas se reutilizan tal como están -- el registro nunca cambia sus datos ni su estado de membresía -- y cualquier persona nueva se une al hogar relacionado.
+B1 primero busca personas que ya estén en **Personas**. Un miembro de la familia se vincula con una persona existente cuando exactamente una persona tiene el mismo nombre y el mismo correo electrónico o teléfono. Un niño ingresado sin correo electrónico ni teléfono se vincula por nombre dentro del hogar que se haya vinculado. Las personas vinculadas se reutilizan tal como están: el registro nunca cambia sus datos ni su estado de membresía, y cualquier persona nueva se une al hogar vinculado.
 
-Cuando nadie coincide, el registro crea un nuevo hogar con el apellido del contacto principal, con un registro de persona para cada miembro de la familia. Todas las personas nuevas se agregan a **Personas** con el estado de membresía **Visitante**, y el contacto principal como jefe de hogar.
+Cuando nadie coincide, el registro crea un nuevo hogar con el apellido del contacto principal, junto con un registro de persona para cada miembro de la familia. Todas las personas nuevas se agregan a **Personas** con el estado de membresía **Visitante**, y el contacto principal es el jefe del hogar.
 
-Tanto las personas relacionadas como las nuevas se agregan al grupo que eligió (si aún no están en él) y se registra su asistencia cuando esa opción está activada. Los comentarios se guardan como una nota en el contacto principal.
+Las personas vinculadas y las nuevas se agregan al grupo que usted eligió (si aún no están en él) y se les registra la asistencia cuando esa opción está activada. Los comentarios se guardan como una nota en el contacto principal.
 
-Para dar seguimiento automáticamente, agregue un [disparador de flujo de trabajo](../serving/workflows.md#triggers) como **Persona · Creada** con la condición *Estado de membresía es Visitante*, o **Grupo · Miembro se unió** para el grupo que eligió arriba.
+Para hacer seguimiento automáticamente, agregue un [disparador de flujo de trabajo](../serving/workflows.md#triggers) como **Persona · Creada** con la condición *Estado de membresía es Visitante*, o **Grupo · Miembro unido** para el grupo que eligió arriba.
 
 ## Qué se registra
 
-Cada registro de entrada crea un registro de asistencia en B1 Admin. Puede ver estos registros en la página de [Asistencia](tracking-attendance.md) y en las sesiones de cada [grupo](../groups/group-members.md), igual que la asistencia ingresada manualmente. No hay diferencia en la forma en que se muestran los datos: ambos métodos alimentan los mismos informes.
+Cada registro de entrada crea un registro de asistencia en B1 Admin. Puede ver estos registros en la página de [Asistencia](tracking-attendance.md) y en las sesiones de cada [grupo](../groups/group-members.md), igual que la asistencia introducida manualmente. No hay diferencia en la forma en que se muestran los datos: ambos métodos alimentan los mismos informes.

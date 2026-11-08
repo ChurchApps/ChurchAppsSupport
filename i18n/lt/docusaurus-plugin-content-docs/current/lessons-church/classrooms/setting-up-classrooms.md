@@ -1,13 +1,13 @@
 ---
-title: "Klasių nustatymas"
-description: "Kurkite, pervardykite ir šalinkite klases Lessons.church portale, kad kiekvienas kambarys ar amžiaus grupė būtų paruošta savaitinei pamokų tvarkai."
+title: "Klasių kambarių nustatymas"
+description: "Kurkite, pervardykite ir šalinkite klases Lessons.church portale, kad kiekvienas kambarys ar amžiaus grupė būtų paruošti savaitiniam pamokų planavimui."
 ---
 
-# Klasių nustatymas
+# Klasių kambarių nustatymas
 
 <div class="article-intro">
 
-Prieš planuodami pamokas, turite sukurti klases, kurios atspindi jūsų mokymo aplinkas. Šiame vadove paaiškinama, kaip kurti, pervardyti ir tvarkyti klases Lessons.church portale.
+Prieš planuodami pamokas, turite sukurti klasių kambarius, atitinkančius jūsų mokymo erdves. Šiame vadove pateikiama instrukcija, kaip kurti, pavadinti ir tvarkyti klasių kambarius Lessons.church portale.
 
 </div>
 
@@ -19,32 +19,32 @@ Prieš planuodami pamokas, turite sukurti klases, kurios atspindi jūsų mokymo 
 
 </div>
 
-## Klasės kūrimas
+## Klasių kambario kūrimas
 
 1. Prisijunkite prie savo paskyros [Lessons.church](https://lessons.church).
-2. Eikite į savo **Portalą**. Tai yra jūsų bažnyčios centrinis taškas klasių ir tvarkaraščių valdymui.
-3. Spustelėkite **Pridėti klasę**.
-4. Įveskite klasės pavadinimą. Pasirinkite aprašomąjį pavadinimą, kurį atpažins jūsų savanoriai, – pavyzdžiui, „Ikimokyklinukai“, „Pradinė K-2“ arba „Vidurinė mokykla“.
-5. Išsaugokite naują klasę. Ji iš karto pasirodys jūsų portalo valdymo skydelyje.
+2. Eikite į savo **Portalą**. Tai yra jūsų bažnyčios centrinis centras klasių kambariams ir tvarkaraščiams valdyti.
+3. Lange **Classrooms** spustelėkite **Add**. Jei dar neturite nė vieno klasių kambario, vietoj to spustelėkite **Add First Classroom**.
+4. Įveskite **Classroom Name**. Pasirinkite aprašomąjį pavadinimą, kurį jūsų savanoriai lengvai atpažins, pavyzdžiui, „Ikimokyklinis“, „Pradinė K–2“ arba „Vidurinė mokykla“.
+5. Spustelėkite **Save**. Naujas klasių kambarys iš karto pasirodys sąraše **Classrooms**.
 
-Pakartokite šiuos veiksmus kiekvienam bažnyčios kambariui ar amžiaus grupei. Galite sukurti tiek klasių, kiek jums reikia.
+Pakartokite šiuos veiksmus kiekvienam jūsų bažnyčios kambariui ar amžiaus grupei. Galite sukurti tiek klasių kambarių, kiek jums reikia.
 
 ## Pirmasis nustatymas
 
-Jei dar nesate nustatę nė vienos klasės, jūsų portale bus rodomas nustatymo vaizdo įrašas, kuris padės atlikti procesą. Šiame vaizdo įraše aptariami klasių kūrimo pagrindai ir pirmųjų pamokų planavimas. Tai puikus pradžios taškas, jei esate naujas Lessons.church naudotojas.
+Jei dar nesate nustatę nė vieno klasių kambario, jūsų portale bus rodomas nustatymo vaizdo įrašas, kuris padės atlikti procesą. Šiame vaizdo įraše aptariami klasių kambarių kūrimo ir pirmųjų pamokų planavimo pagrindai. Tai puikus pradžios taškas, jei esate naujas Lessons.church vartotojas.
 
 :::tip
-Pavadinkite klases taip, kaip jūsų savanoriai jau įvardija savo kambarius. Jei visi vadina jį „Pre-K kambariu“, pavadinkite jį „Pre-K“, o ne formaliai, pavyzdžiui, „Ankstyvojo ugdymo kambarys 101“.
+Pavadinkite klasių kambarius taip, kaip jūsų savanoriai jau vadina savo erdves. Jei visi vadina jį „Pre-K kambariu“, pavadinkite jį „Pre-K“, o ne formaliai, pavyzdžiui, „Ankstyvojo ugdymo kambarys 101“.
 :::
 
-## Klasių tvarkymas
+## Klasių kambarių tvarkymas
 
-Jūsų klasės rodomos portalo valdymo skydelyje, kur galite jas tvarkyti bet kada. Čia galite:
+Jūsų klasių kambariai rodomi portalo skydelyje, kuriame galite bet kada juos tvarkyti. Čia galite:
 
-- **Pervardyti klasę** – atnaujinkite pavadinimą, jei jūsų kambariai ar amžiaus grupės pasikeičia.
-- **Pašalinti klasę** – ištrinkite klases, kurių nebereikia.
-- **Peržiūrėti tvarkaraštį** – spustelėkite bet kurią klasę, kad pamatytumėte jos pamokų tvarkaraštį.
+- **Pervardyti klasių kambarį** -- Spustelėkite šalia jo esančią piktogramą **Edit classroom** (pieštukas), pakeiskite **Classroom Name** ir spustelėkite **Save**.
+- **Pašalinti klasių kambarį** -- Spustelėkite **Edit classroom**, tada spustelėkite **Delete classroom** (šiukšliadėžės) piktogramą ir patvirtinkite.
+- **Peržiūrėti tvarkaraštį** -- Spustelėkite bet kurį klasių kambarį, kad pamatytumėte jo pamokų tvarkaraštį.
 
 ## Kas toliau
 
-Kai klasės bus nustatytos, galėsite pradėti [planuoti pamokas](./scheduling-lessons.md), kad jūsų savanoriai žinotų, ką dėstyti kiekvieną savaitę.
+Kai klasių kambariai bus nustatyti, galėsite pradėti [planuoti pamokas](./scheduling-lessons.md), kad jūsų savanoriai žinotų, ką mokyti kiekvieną savaitę.

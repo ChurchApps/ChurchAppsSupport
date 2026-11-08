@@ -1,46 +1,47 @@
 ---
 title: "Kuphatsa"
-description: "Kubukwa kwendzawo yekulawula ye-Lessons.church kuChurchApps, kuhlanganisa kulawula tinhlelo, tifundvo, tifundziso, tincenye, tinsita, nemahlinzeki emakharikhulamu angaphandle."
+description: "Ukubuka konke mayelana nendzawo yekuphatsa ye-Lessons.church kuma-ChurchApps, lapho kuchazwa kutsi ungaphatsa kanjani tinhlelo, izifundvo, tifundvo, tinsita, tinkomba, kanye nebahlinzeki bemacembo langaphandle."
 ---
 
 # Kuphatsa
 
 <div class="article-intro">
 
-Indzawo yekuphatsa ku-Lessons.church yindzawo lapho labachami bekontenti nebaphatsi baphatsa khona umtapo wetifundzo. Kusukela lapha ungakha sakhiwo sekufundzisa kwakho, ulayishe tinsizakalo, uhlole tibalo tekusetjentiswa, futsi uxhume kubanikeli bangaphandle bekontenti.
+Indzawo yekuphatsa e-Lessons.church yindzawo lapho bakhiqi bemkhicito nebaphatsi bephatsa khona inhlanganisela yemafundvo. Lapha ungakha sakhiwo selikharikhulamu lakho, ulayishe tincenye, ubuke tinkomba tekusetjentiswa, futsi uxhumanise bahlinzeki bemkhicito labangaphandle.
 
 </div>
 
 :::warning
-Kufinyelela endzaweni yekuphatsa kudzinga imvumo lefanele. Nangabe ungayiboni imikhawulo yekuphatsa, tsintsana nemphatsi welibandla lakho kutsi ucele imvumo.
+Kudzingeka kutsi ube nemvume lefanele yekufinyelela kuphatsa. Uma ungaboni tinketulo tekuphatsa, xhumana nemphatsi wesonto lakho ukuze ucele kufinyelela.
 :::
 
-## Yini Longayenta
+## Lokungenteka Nawukwenta
 
-Indzawo yekuphatsa ikunika lawulo lolugcwele phetsi kwekontenti yakho:
+Indzawo yekuphatsa ikunika kulawula lokuphelele kumkhicito wakho:
 
-- **Kwakha nekuhlela tinhlelo** -- Setjenta tichungechunge tekufundzisa taphakeme ngemagama, tincazelo, titfombe, netincam (slugs).
-- **Kuphatsa tifundvo** -- Hlela emacembu etifundzo letihlobene ngekhatsi kwelinhlelo ngalinye.
-- **Kwakha tifundzo** -- Ngeza tifundzo letitsite letinemindzawo (venues), tigaba, tindzima, netento.
-- **Kulayisha tinsizakalo** -- Namatsela emafayela langalandwa (ema-PDF, emakhasi emisebenti, titfombe) kulinga lelinhlelo, sifundvo, nome sifundzo.
-- **Kubona tibalo** -- Bona kutsi ngukuphi kontenti lelandwako, ngubani, nakuphi.
-- **Kulungisa banikeli** -- Xhuma nebanikeli bangaphandle bekufundzisa labasebentisa i-Open Lesson Format.
+- **Kwakha nekuhlela tinhlelo** -- Setfula tinhlelo letikhulu ngemagama, tincazelo, tifanekiso, nemagama lamafutsane (slugs).
+- **Kuphatsa izifundvo** -- Hlela emaqembu etifundvo letihlobene ngaphakathi kwenhlelo ngalinye.
+- **Kwakha tifundvo** -- Engeta tifundvo letisemuntfu nemabhodlo, tincenye, tindzima, nemisebenti.
+- **Kulayisha tincenye** -- Hambisa emafayela lakhipheleka (ama-PDF, emaphepha emisebenti, tifanekiso) ezingeni lenhlelo, lesifundvo, noma lelifundvo.
+- **Kubuka tinkomba** -- Bona kutsi ngumuphi umkhicito lolandvwa, ngubani, nekutsi kuphi.
+- **Kulungisa bahlinzeki** -- Xhumanisa bahlinzeki bemacembo langaphandle labasebenzisa i-Open Lesson Format. Lokhu kwenteka eliphepheni le-**External Providers**, hhayi endzaweni yekuphatsa.
+- **Tinhlelo temnyaka** -- Shicilela kulandzelana kwemaviki 1, 2, 3… nanoma yiliphi likharikhulamu. Tikhatsi tisebentisa tona i-B1 Admin.
 
-## Sakhiwo Sekontenti
+## Sakhiwo Lemkhicito
 
-Njengemphatsi, kuyasita kucondzisisa kutsi kontenti yakhiwe kanjani:
+Njengomphatsi, kuyasiza kuwati kutsi emkhicito wakhiwe kanjani:
 
-1. **Tinhlelo** tiba nesifundvo lesisodvwa nome ngetulu.
-2. **Tifundvo** tiba nesifundzo lesisodvwa nome ngetulu.
-3. **Tifundzo** tiba ne-venue lelinye nome ngetulu (kwehlukana ngeliciniso lemadvuna).
-4. **Ema-venue** aba netigaba, futsi tigaba tiba netento letisekelwe etindzimeni.
+1. **Tinhlelo** tiphatsa izifundvo ezisodvwa noma ngetulu.
+2. **Izifundvo** tiphatsa tifundvo ezisodvwa noma ngetulu.
+3. **Tifundvo** tiphatsa tindzawo ezisodvwa noma ngetulu (tinhlobo letehlukene temakhulu).
+4. **Tindzawo** tiphatsa tincenye, futsi tincenye tiphatsa imisebenti letisekelwe etindzimeni.
 
-Lilinga ngalinye lingaba netinsizakalo talo letingalandwa letinamatselwe kulo.
+Ilinga ngalinye lingaba nemacembo lalo lalayishwako.
 
 ## Tinyatselo Letilandzelako
 
-- [Kuphatsa Tinhlelo](./managing-programs.md) -- Kwakha nekulungisa tinhlelo
-- [Kuphatsa Tifundvo](./managing-studies.md) -- Ngeza tifundvo ngekhatsi kwelinhlelo
-- [Kuphatsa Tifundzo](./managing-lessons.md) -- Kwakha tifundzo nge-venue, tigaba, netento
-- [Tibalo](./statistics.md) -- Buyeketa imininingwane yekulandwa nekusetjentiswa
-- [Banikeli Bangaphandle](./third-party-providers.md) -- Xhuma tifidi tekufundzisa tangaphandle
+- [Kuphatsa Tinhlelo](./managing-programs.md) -- Dala futsi ulungise tinhlelo
+- [Kuphatsa Izifundvo](./managing-studies.md) -- Engeta izifundvo ngaphakathi kwenhlelo
+- [Kuphatsa Tifundvo](./managing-lessons.md) -- Akha tifundvo ngetindzawo, tincenye, nemisebenti
+- [Tinkomba](./statistics.md) -- Buka idatha yekulayisha nekusetjentiswa
+- [Bahlinzeki Bangaphandle](./third-party-providers.md) -- Xhumanisa emacembo langaphandle

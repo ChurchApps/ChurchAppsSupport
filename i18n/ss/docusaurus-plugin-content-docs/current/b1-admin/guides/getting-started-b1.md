@@ -1,107 +1,107 @@
 ---
-title: "Umhlahlandlela: Calisa Libandla Lakho nge-B1"
-description: "Hamba ngetinyatselo tekusetfula libandla lelisha ku-B1 Admin: dala akhawunti, lungisa tilungiselelo, engeta tindzima, ngenisa emalungu, uvule tinsita."
+title: "Guide: Get Your Church Started with B1"
+description: "Walk through setting up a new church in B1 Admin: create your account, configure settings, add roles, import members, and launch core features."
 ---
 
-# Calisa Libandla Lakho nge-B1
+# Yunivesi Yakho Yenkhonti Nge-B1
 
 <div class="article-intro">
 
-Umhlahlandlela logcwele wekucalisa emabandla lamasha — kusukela ekwakheni i-akhawunti yakho, kuya ekungeniseni luhlu lwemalunga akho, kuya ekuhleleni tici takho tekucala. Landzela letinyatselo ngelandzelana kute libandla lakho lisebente kahle ku-B1.
+Umhlahlandlela wekungena ngaphakathi wemabandla amasha — kusukela ekwakheni i-akhawunti yakho kuya ekungeniseni ikhathalogi yamalungu akho nasekulungiseleleni izici zakho zokuqala. Landela lezi zinyathelo ngokulandelana ukuze ibandla lakho liqale ukusebenza ku-B1.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- I-imeyili lesebentako
-- Ilogo yelibandla lakho kanye netintfo tebrendi (imibala, titfombe) — kuncomekile kepha akudzingekile kucala
+- Ikheli le-imeyili elisebenzayo
+- Ilogo yakho yebandla kanye nezinsiza zesimo (imibala, izithombe) — kuyanconywa kodwa akudingekile ukuqala
 
 </div>
 
-## Sinyatselo 1: Yakha I-Akhawunti Yakho
+## Isinyathelo 1: Dala I-akhawunti Yakho
 
-Bhalisa libandla lakho bese uba ngumphatsi wekucala.
+Bhalisa ibandla lakho ube ngumlawuli wokuqala.
 
-Landzela umhlahlandlela we-[Yakha I-Akhawunti](../../getting-started/create-account.md) kute:
+Landela umhlahlandlela we-[Create Account](../../getting-started/create-account.md) ukuze:
 
-1. Yiya ku-b1.church bese ubhalisa nge-imeyili yakho
-2. Cinisekisa i-imeyili yakho
-3. Khetsa "Yakha libandla lelisha" bese ufaka libito lelibandla lakho
-4. Utaba nguMphatsi Wedomeni ngekutinelela unemvumo lengcwele ekutseni konkhe
+1. Uye ku-b1.church ubhalise ngeimeyili yakho
+2. Qinisekisa ikheli lakho le-imeyili
+3. Khetha "Create a new church" ufake igama lebandla lakho
+4. Uzoba ngokuzenzakalelayo yiDomain Admin enelungelo eligcwele kuyo yonke into
 
-## Sinyatselo 2: Hlela Tilungiselelo Telibandla
+## Isinyathelo 2: Lungiselela Izilungiselelo Zebandla
 
-Faka imininingwane yesisekelo yelibandla lakho kanye nebrendi.
+Faka ulwazi lwesisekelo lwebandla lakho nesimo salo.
 
-Landzela umhlahlandlela we-[Tilungiselelo Telibandla](../settings/church-settings.md) kute:
+Landela umhlahlandlela we-[Church Settings](../settings/church-settings.md) ukuze:
 
-1. Faka libito lelibandla lakho, likheli, inombolo yelucingo, ne-imeyili
-2. Setinga i-subdomain yakho (loku kutoba yourchurch.b1.church)
-3. Layisha ilogo yelibandla lakho netitfombe
+1. Faka igama lebandla lakho, ikheli, inombolo yocingo, ne-imeyili
+2. Setha i-subdomain yakho (lokhu kuba yiyourchurch.b1.church)
+3. Layisha ilogo yakho yebandla nezithombe
 
 :::tip
-I-subdomain yakho ivela ku-URL yewebhusayithi yakho naku-URL yekhasi lemnikelo, ngako-ke khetsa lokufishane futsi lokwatiwako (sib., "grace" kwe-Grace Community Church).
+I-subdomain yakho ivela ekheleni lwewebhusayithi yakho nekheli lephepha lokunikela, ngakho khetha okufushane futhi okulula ukukhumbula (isibonelo, "grace" ye-Grace Community Church).
 :::
 
-## Sinyatselo 3: Hlela Tindzima & Umeme Licembu Lakho
+## Isinyathelo 3: Setha Izindima Nomqeqesho Wakho
 
-Lawula kutsi ngubani lonemvumo yani bese uletsa licembu lakho.
+Lawula ukuthi ubani onelungelo lokufinyelela yini, bese ufaka ithimba lakho.
 
-Landzela umhlahlandlela we-[Tindzima & Imvumo](../settings/roles-permissions.md) kute:
+Landela umhlahlandlela we-[Roles & Permissions](../settings/roles-permissions.md) ukuze:
 
-1. Yakha tindzima kulicembu lakho (sib., "Umfundisi", "Umphatsi Wehhovisi", "Licembu Letimali", "Umholi Wekukhulekela")
-2. Nika imvumo lekhetsekile kuyo yonkhe indzima kute bantfu babone lokudzingako kuphela
-3. Meme emalunga elicembu ngekuwafaka bese uwanika tindzima
+1. Dala izindima zethimba lakho (isibonelo, "Pastor", "Office Admin", "Finance Team", "Worship Leader")
+2. Abele izimvume ezithile kwindima ngayinye ukuze abantu babone okudingayo kuphela
+3. Mema amalungu ethimba ngokuwangeza nokuwabela izindima
 
 :::info
-Awudzingi kwenta konkhe wedvwana. Meme sitafu sakho sehhovisi, bafundisi, nebaholi bemakonzo kusenesikhatsi kute bakusite ekuhleleni tindzawo tabo.
+Akudingeki wenze yonke into wedwa. Mema abasebhodweni lakho, abefundisi, nabaholi bezinkonzo ngokushesha ukuze basize ekusetheni izindawo zabo.
 :::
 
-## Sinyatselo 4: Ngenisa Bantfu Bakho
+## Isinyathelo 4: Ngenisa Abantu Bakho
 
-Letsa luhlu lwakho lwemalunga lolukhona ku-B1.
+Letha inkomba yakho yamalungu akhona ku-B1.
 
-Landzela umhlahlandlela we-[Kungenisa Imininingwane](../people/importing-data.md). Unekukhetsa lokubili:
+Landela umhlahlandlela we-[Importing Data](../people/importing-data.md). Unezinketho ezimbili:
 
-1. **Kulayisha nge-CSV** — sohla kusuka kuluhlelo lwakho lwamanje nobe ku-spreadsheet, ulungise kube yi-CSV, uyilayishe ku-B1
-2. **Kudzimula Kusuka ku-Breeze** — kungenisa ngesigcotjo sinye lokuletsa bantfu, titfombe, emacembu, imnikelo, nekubakhona
+1. **Ukulayisha i-CSV** — khipha kusistimu yakho yamanje noma kusipredishithi, lungisa njenge-CSV, bese ulayisha ku-B1
+2. **Ukufuduswa kwe-Breeze** — ukungenisa ngokuchofoza kanye okuletha abantu, izithombe, amaqembu, izipho, nokuba khona
 
 :::tip
-Uyadzimula kusuka ku-Breeze? Lithulusi lekungenisa liletsa konkhe ngesigcotjo sinye — bantfu, titfombe, emacembu, imnikelo, kanye nemlandvo wekubakhona. Yindlela lesheshako yekucala.
+Ufuduka usuka ku-Breeze? Ithuluzi lokungenisa lilethe konke ngesinyathelo esisodwa — abantu, izithombe, amaqembu, izipho, nomlando wokuba khona. Yindlela esheshayo kakhulu yokuqala.
 :::
 
-## Sinyatselo 5: Hlela I-App Yeselula
+## Isinyathelo 5: Lungiselela I-App Yeselula
 
-Lungisa lokutfolakala kwe-app ye-B1 Mobile kulibandla lakho.
+Yenza ngokwezifiso amava we-B1 App ebandleni lakho.
 
-Landzela umhlahlandlela we-[Tilungiselelo Te-App Yeselula](../settings/mobile-app.md) kute:
+Landela umhlahlandlela we-[Mobile App Settings](../settings/mobile-app.md) ukuze:
 
-1. Lungisa kutsi ngubani emathebu lavela ku-app ye-B1 Mobile kumalunga akho
-2. Setinga emabito emathebu, timfanekiso, netinhlobo (Libhayibheli, Kusakata Bukhona, Umnikelo, Iwebhusayithi, njalonjalo)
-3. Lawula kutsi ngutiphi tici letibonakala kulicembu lakho
+1. Yenza ngokwezifiso ukuthi yimaphi amathebhu avela ku-B1 App kumalungu akho
+2. Setha amagama wamathebhu, izithonjana, nezinhlobo (Bible, Live Stream, Donation, Website, njll.)
+3. Lawula ukuthi yimaphi amasici abonakala ebandleni lakho
 
-## Sinyatselo 6: Cala Kuhlela Tici
+## Isinyathelo 6: Qala Ukusetha Izici
 
-Njengoba sekunesisekelo, landzela lemihlahlandlela kute uhlele tici letitsite:
+Manje njengoba isisekelo sakho sesilungile, landela lezi zihlahlandlela ukuze usethe izici ezithile:
 
-- [Setinga Imnikelo Ye-Inthanethi](./online-giving.md) — yemukela imnikelo ngewebhusayithi ne-app yakho
-- [Casisa Iwebhusayithi Yelibandla Lakho](./launch-website.md) — yakha iwebhusayithi yelibandla lakho
-- [Sebenta Nemacembu Lamancane](./small-groups.md) — hlela emacembu, tifundvo teLibhayibheli, nemakonzo
-- [Setinga Kungena Kwebantfwana](./childrens-checkin.md) — kungena kwe-kiosk kwemakonzo ebantfwana
-- [Phatsa Emavolontiya EliSontfo](./sunday-volunteers.md) — hlanganisa emacembu akho lasebentako
-- [Yakha Luhla Lwetintshumayelo](./sermon-library.md) — faka tintshumayelo ku-inthanethi bese uhlela kusakata bukhona
-- [Landzelela Kubakhona](./track-attendance.md) — landzelela labeta emakonzweni nasemacembeni
+- [Set Up Online Giving](./online-giving.md) — amukela izipho ngewebhusayithi nangeapp yakho
+- [Launch Your Church Website](./launch-website.md) — akha iwebhusayithi yebandla lakho
+- [Run Small Groups](./small-groups.md) — hlela amaqembu, izifundo zeBhayibheli, nezinhlangano
+- [Set Up Children's Check-In](./childrens-checkin.md) — ukungena ngesikhwama sokuzikhethela sezingane
+- [Manage Sunday Volunteers](./sunday-volunteers.md) — hlanganisa amaqembu akho okusebenza
+- [Build Your Sermon Library](./sermon-library.md) — faka izinkulumo zakho ku-inthanethi futhi usethe ukusakaza ngqo
+- [Track Attendance](./track-attendance.md) — qapha ukuthi ubani ofika emikhosini nasemaqenjini
 
-## Usucedzile!
+## Usuphelile!
 
-Libandla lakho selihleliwe ku-B1. Licembu lakho linekufinyelela, bantfu bakho bangenisiwe, futsi usukulungele kucala kusebentisa tici letibaluleke kakhulu enkonzweni yakho. Hlola lemihlahlandlela yetici lengetulu kute uhlele indzawo yonkhe.
+Ibandla lakho selisethiwe ku-B1. Ithimba lakho linelungelo lokufinyelela, abantu bakho sebengeniswe, futhi usulungele ukuqala ukusebenzisa izici ezibaluleke kakhulu emsebenzini wakho. Hlola izihlahlandlela zezici ezingenhla ukuze usethe Ingxenye ngayinye.
 
-## Tihloko Letihlobene
+## Izihloko Ezihlobene
 
-- [Yakha I-Akhawunti](../../getting-started/create-account.md) — kubhaliswa kwe-akhawunti
-- [Kuhlela Kwekucala](../../getting-started/initial-setup.md) — luncedvo lwekucala loluholiwe
-- [Tilungiselelo Telibandla](../settings/church-settings.md) — imininingwane yelibandla nebrendi
-- [Tindzima & Imvumo](../settings/roles-permissions.md) — kulawulwa kwekufinyelela kwelicembu
-- [Kungenisa Imininingwane](../people/importing-data.md) — kungenisa imininingwane lenyenti
-- [Tilungiselelo Te-App Yeselula](../settings/mobile-app.md) — lungisa i-app yemalunga
+- [Create Account](../../getting-started/create-account.md) — ukubhalisa i-akhawunti
+- [Initial Setup](../../getting-started/initial-setup.md) — ukubuka konke ukungeniswa okuqondisiwe
+- [Church Settings](../settings/church-settings.md) — ulwazi lwebandla nesimo
+- [Roles & Permissions](../settings/roles-permissions.md) — ukulawula ukufinyelela kwethimba
+- [Importing Data](../people/importing-data.md) — ukungenisa idatha ngobuningi
+- [Mobile App Settings](../settings/mobile-app.md) — yenza ngokwezifiso i-app yamalungu

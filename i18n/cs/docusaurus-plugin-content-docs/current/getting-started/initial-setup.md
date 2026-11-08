@@ -1,72 +1,72 @@
 ---
 title: "Úvodní nastavení církve v B1 Admin"
-sidebar_label: "Počáteční nastavení"
-description: "Projděte první konfigurací nové církve v B1 Admin: údaje o církvi, branding, role a doporučené pořadí nastavení lidí, skupin, docházky a darů."
+sidebar_label: "Úvodní nastavení"
+description: "Průvodce prvním nastavením nové církve v B1 Admin: informace o církvi, vizuální styl, role a doporučené pořadí nastavení lidí, skupin, docházky a darů."
 ---
 
-# Počáteční nastavení
+# Úvodní nastavení
 
 <div class="article-intro">
 
-Po vytvoření účtu a sboru je před pozváním týmu potřeba nastavit několik důležitých věcí. Tento návod vás provede doporučeným pořadím kroků, aby byl váš sbor připraven k použití hned od prvního dne.
+Po vytvoření účtu a církve je před pozváním týmu potřeba nastavit několik důležitých položek. Tento průvodce vás provede doporučeným pořadím nastavení, aby byla vaše církev připravena k používání od prvního dne.
 
 </div>
 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- [Vytvořte si účet](./create-account.md) a zaregistrujte svůj sbor
-- Připravte si logo sboru a grafické podklady (nepovinné, ale doporučené)
+- [Vytvořte si účet](./create-account.md) a zaregistrujte svou církev
+- Připravte si logo církve a podklady pro vizuální styl (nepovinné, ale doporučené)
 
 </div>
 
-## Krok 1: Nastavte informace o sboru
+## Krok 1: Nastavte informace o církvi
 
-1. Otevřete [rychlou nabídku](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (vyhledávací pole vlevo nahoře v B1 Admin), rozbalte **Nastavení** a klikněte na **Nastavení**.
-2. V sekci **Informace o sboru** klikněte na **Upravit**.
-3. Zadejte **název** sboru, **subdoménu** a **adresu**.
-4. Kliknutím na **Uložit** změny použijte.
+1. Otevřete [nabídku Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (vyhledávací pole v levém horním rohu B1 Admin), rozbalte **Settings** a klikněte na **Settings**.
+2. V sekci **Church Information** klikněte na **Edit**.
+3. Zadejte **název** církve, **subdoménu** a **adresu**.
+4. Klikněte na **Save**, čímž se změny uloží.
 
-## Krok 2: Nastavte vzhled
+## Krok 2: Nastavte vizuální styl
 
-1. V rychlé nabídce vyberte **Web > Vzhled**.
-2. Nahrajte **logo sboru**.
-3. Nakonfigurujte další možnosti vzhledu, například barvy a obrázky.
-4. Váš vzhled se zobrazí na webu B1.church i v aplikaci B1 Mobile.
+1. V nabídce Jump zvolte **Website > Appearance**.
+2. Nahrajte **logo církve**.
+3. Nastavte další možnosti vizuálního stylu, například barvy a obrázky.
+4. Váš vizuální styl se zobrazí na vašem webu B1.church a v aplikaci B1 App.
 
 :::tip
-Mít logo a grafické podklady připravené ještě před pozváním členů týmu vytváří profesionální první dojem, až se přihlásí.
+Připravením loga a vizuálního stylu před pozváním členů týmu vytvoříte profesionální první dojem, až se budou přihlašovat.
 :::
 
 ## Krok 3: Nastavte role a pozvěte tým
 
-1. V rychlé nabídce vyberte **Nastavení > Role**.
-2. Vytvořte role pro svůj tým (například „Pastor“, „Sekretář“, „Pokladník“).
-3. Každé roli přiřaďte odpovídající oprávnění.
-4. Přidejte členy týmu tak, že vyhledáte jejich účty a přiřadíte je k rolím.
+1. V nabídce Jump zvolte **Settings > Roles**.
+2. Vytvořte role pro svůj tým (například „Pastor“, „Sekretářka“, „Pokladník“).
+3. Každé roli přiřaďte vhodná oprávnění.
+4. Přidejte členy týmu vyhledáním jejich účtů a přiřaďte je k rolím.
 
 ## Krok 4: Nastavte klíčové oblasti
 
-Až bude váš tým na svém místě, začněte budovat základní oblasti v B1 Admin:
+Až bude váš tým na svém místě, začněte budovat základní oblasti B1 Admin:
 
-1. **Lidé** – Přidejte členy do adresáře sboru. Je to základ pro všechno ostatní, proto začněte právě zde. Osoby můžete přidávat ručně, nebo použít nástroj **Import/Export** v sekci **Nastavení**.
-2. **Skupiny** – Vytvořte skupiny pro malé skupinky, služební týmy, třídy a další setkání.
-3. **Docházka** – Nastavte své sbory, bohoslužby a časy bohoslužeb pro sledování účasti.
-4. **Dary** – Nastavte dárcovské fondy a připojte platební bránu (Stripe), abyste mohli přijímat online dary.
-5. **Web** – Vytvořte svůj veřejný web sboru pomocí tvůrce webových stránek B1.church.
+1. **People** -- Přidejte členy do adresáře církve. Je to základ pro všechno ostatní, proto začněte právě zde. Osoby můžete přidat ručně, nebo použít nástroj **Import/Export** v části **Settings**.
+2. **Groups** -- Vytvořte skupiny pro malé skupinky, týmy služeb, třídy a další setkání.
+3. **Attendance** -- Nastavte pobočky, bohoslužby a časy bohoslužeb pro sledování docházky.
+4. **Donations** -- Nastavte fondy darů a připojte platební bránu (Stripe), abyste mohli přijímat online dary.
+5. **Website** -- Vytvořte svůj veřejný web církve pomocí tvůrce webových stránek B1.church.
 
 :::info
-Není nutné nastavit všechny oblasti najednou. Mnoho sborů začíná s **Lidmi** a **Skupinami** a přidává **Docházku** a **Dary**, jakmile si na platformu zvyknou.
+Nemusíte nastavovat všechny oblasti najednou. Mnoho církví začíná s **People** a **Groups** a poté přidává **Attendance** a **Donations**, jakmile se na platformě zorientují.
 :::
 
 ## Doporučené pořadí
 
-Pro co nejplynulejší nastavení doporučujeme tento postup:
+Pro co nejplynulejší nastavení doporučujeme toto pořadí:
 
-1. **Lidé** – Nejprve přidejte své členy a pravidelné návštěvníky.
-2. **Skupiny** – Rozdělte lidi do smysluplných skupin.
-3. **Docházka** – Začněte sledovat, kdo každý týden přichází.
-4. **Dary** – Nastavte darování, jakmile jsou lidé v systému.
-5. **Web** – Veřejný web vytvořte jako poslední, až budou vaše data na svém místě.
+1. **People** -- Nejprve přidejte své členy a pravidelné návštěvníky.
+2. **Groups** -- Zařaďte lidi do smysluplných skupin.
+3. **Attendance** -- Začněte sledovat, kdo se každý týden účastní.
+4. **Donations** -- Nastavte dary, jakmile jsou lidé v systému.
+5. **Website** -- Veřejný web vytvořte jako poslední, až budou vaše data na místě.
 
-Jakmile dokončíte tyto kroky, je váš sbor připraven k provozu. Podrobné návody k jednotlivým oblastem najdete v dokumentaci [B1 Admin](/docs/b1-admin/).
+Jakmile dokončíte tyto kroky, je vaše církev připravena k používání. Podrobné návody k jednotlivým oblastem najdete v dokumentaci [B1 Admin](/docs/b1-admin/).

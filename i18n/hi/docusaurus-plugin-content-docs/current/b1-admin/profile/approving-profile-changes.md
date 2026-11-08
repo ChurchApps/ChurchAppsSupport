@@ -1,66 +1,66 @@
 ---
-title: "प्रोफाइल परिवर्तनों को approve करना"
-description: "B1 Admin में सदस्य प्रोफ़ाइल बदलाव अनुरोधों की समीक्षा करके स्वीकृत करें, और वह Directory Approval Group सेट करें जो उन्हें प्राप्त करता है।"
+title: "प्रोफ़ाइल परिवर्तनों को स्वीकृत करना"
+description: "B1 Admin में सदस्यों के प्रोफ़ाइल परिवर्तन अनुरोधों की समीक्षा और स्वीकृति करें, और वह डायरेक्टरी अनुमोदन समूह सेट करें जो उन्हें प्राप्त करता है।"
 ---
 
-# प्रोफाइल परिवर्तनों को approve करना
+# प्रोफ़ाइल परिवर्तनों को स्वीकृत करना
 
 <div class="article-intro">
 
-जब आपका चर्च profile updates के लिए administrator approval की आवश्यकता करता है, तो सदस्य B1 Mobile app के माध्यम से अपने परिवर्तन submit करते हैं और वे requests B1 Admin में tasks के रूप में दिखाई देते हैं। यह guide बताता है कि कैसे उन्हें review और approve करना है।
+जब आपका चर्च प्रोफ़ाइल अपडेट के लिए प्रशासक की स्वीकृति आवश्यक रखता है, तब सदस्य B1 App के माध्यम से अपने परिवर्तन जमा करते हैं और वे अनुरोध B1 Admin में कार्यों के रूप में दिखाई देते हैं। यह मार्गदर्शिका बताती है कि इनकी समीक्षा और स्वीकृति कैसे करें।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- आप उस group के एक सदस्य होने चाहिए जिसे **Mobile → Member portal** में **Directory Approval Group** के रूप में designate किया गया है
-- यदि कोई approval group configure नहीं किया गया है, तो profile changes review के बिना तुरंत apply किए जाते हैं
+- आप **Mobile &rarr; Member portal** में **Directory Approval Group** के रूप में नामित समूह के सदस्य होने चाहिए
+- यदि कोई अनुमोदन समूह कॉन्फ़िगर नहीं किया गया है, तो प्रोफ़ाइल परिवर्तन बिना समीक्षा के तुरंत लागू हो जाते हैं
 
 </div>
 
-## Pending Requests को कहां खोजें
+## लंबित अनुरोध कहाँ खोजें
 
-जब एक सदस्य profile change submit करता है, तो यह आपके approval group को एक task के रूप में assigned दिखाई देता है। आप इसे दो जगह खोज सकते हैं:
+जब कोई सदस्य प्रोफ़ाइल परिवर्तन जमा करता है, तो वह आपके अनुमोदन समूह को सौंपे गए कार्य के रूप में दिखाई देता है। आप इसे दो स्थानों पर पा सकते हैं:
 
-**Dashboard से (आपका home page):**
-1. B1 Admin में लॉगिन करें — Dashboard automatically load होगा।
-2. **My tasks** section में, **All tasks** पर क्लिक करें। (My tasks में केवल वे खुले कार्य सूचीबद्ध होते हैं जो आपको व्यक्तिगत रूप से सौंपे गए हैं।)
-3. **Assigned to My Groups** tab पर क्लिक करें। कोई भी pending profile change requests वहां listed होंगे।
+**डैशबोर्ड से (आपका होम पेज):**
+1. B1 Admin में लॉग इन करें — डैशबोर्ड स्वतः लोड हो जाता है।
+2. **My tasks** अनुभाग में **All tasks** पर क्लिक करें। (My tasks में केवल वे खुले कार्य सूचीबद्ध होते हैं जो व्यक्तिगत रूप से आपको सौंपे गए हैं।)
+3. **Assigned to My Groups** टैब पर क्लिक करें। कोई भी लंबित प्रोफ़ाइल परिवर्तन अनुरोध वहाँ सूचीबद्ध होंगे।
 
-**Serving → My Work से:**
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपरी-बाएं में खोज बार) और **Serving** को expand करें।
+**Serving &rarr; My Work से:**
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के शीर्ष-बाएँ कोने पर खोज बार) और **Serving** का विस्तार करें।
 2. **My Work** पर क्लिक करें।
-3. Tasks के अंतर्गत **Assigned to My Groups** tab पर क्लिक करें।
+3. Tasks के अंतर्गत **Assigned to My Groups** टैब पर क्लिक करें।
 
-## एक Request को Review और Approve करना
+## अनुरोध की समीक्षा और स्वीकृति
 
-1. **Profile Update** task पर क्लिक करें इसे खोलने के लिए।
-2. **Requested Changes** के तहत, आप हर field को देखेंगे जिसे सदस्य update करना चाहता है उस नए value के साथ जिसे उन्होंने submit किया है।
-3. परिवर्तनों को review करें।
-4. परिवर्तनों को approve और save करने के लिए उनके profile में **Apply** पर क्लिक करें।
+1. **Profile Update** कार्य खोलने के लिए उस पर क्लिक करें।
+2. **Requested Changes** के अंतर्गत आपको वह हर फ़ील्ड दिखेगा जिसे सदस्य अपडेट करना चाहता है, साथ में उसका जमा किया गया नया मान भी।
+3. परिवर्तनों की समीक्षा करें।
+4. परिवर्तनों को स्वीकृत करके उनके प्रोफ़ाइल में सहेजने के लिए **Apply** पर क्लिक करें।
 
-Task automatically close हो जाएगा एक बार जब changes apply हो जाएं।
+परिवर्तन लागू होते ही कार्य स्वतः बंद हो जाएगा।
 
-## Approval Group को Setup करना
+## अनुमोदन समूह सेट करना
 
-यदि आपका चर्च चाहता है कि profile changes को approval की आवश्यकता हो, तो एक Directory Approval Group को पहले configure किया जाना चाहिए।
+यदि आपका चर्च चाहता है कि प्रोफ़ाइल परिवर्तनों के लिए स्वीकृति आवश्यक हो, तो पहले Directory Approval Group कॉन्फ़िगर करना होगा।
 
-1. Jump menu को खोलें और **Mobile** को expand करें।
-2. **Member portal** पर क्लिक करें ("Portal settings" page)।
-3. **Directory Approval Group** के तहत, वह group चुनें जिसके सदस्यों को profile change requests को review करना चाहिए।
+1. Jump menu खोलें और **Mobile** का विस्तार करें।
+2. **Member portal** पर क्लिक करें (“Portal settings” पृष्ठ)।
+3. **Directory Approval Group** के अंतर्गत वह समूह चुनें जिसके सदस्य प्रोफ़ाइल परिवर्तन अनुरोधों की समीक्षा करें।
 4. **Save** पर क्लिक करें।
 
-उस group के कोई भी सदस्य अपने Dashboard पर **Assigned to My Groups** के अंतर्गत incoming profile change requests को देखेंगे।
+उस समूह का कोई भी सदस्य अपने डैशबोर्ड पर **Assigned to My Groups** के अंतर्गत आने वाले प्रोफ़ाइल परिवर्तन अनुरोध देखेगा।
 
-समान Directory Approval Group भी **account deletion requests** को review करता है — [Reviewing Account Deletion Requests](./account-deletion.md) देखें।
+वही Directory Approval Group **खाता हटाने के अनुरोधों** की भी समीक्षा करता है — देखें [खाता हटाने के अनुरोधों की समीक्षा करना](./account-deletion.md)।
 
 :::tip
-सुनिश्चित करें कि आपके approvers actually configured group के सदस्य हैं — केवल group members को requests दिखाई देंगे।
+सुनिश्चित करें कि आपके स्वीकृतकर्ता वास्तव में कॉन्फ़िगर किए गए समूह के सदस्य हैं — केवल समूह के सदस्य ही अनुरोध देख पाएँगे।
 :::
 
 ## संबंधित लेख
 
-- [अपने Profile को प्रबंधित करना](./managing-profile.md) — अपनी खुद की account settings को edit करें
-- [Account Deletion Requests को Review करना](./account-deletion.md) — account deletion के लिए समान approval-group review flow
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — जो सदस्य देखते हैं जब वे profile change submit करते हैं
+- [अपनी प्रोफ़ाइल प्रबंधित करना](./managing-profile.md) — अपनी खाता सेटिंग्स संपादित करें
+- [खाता हटाने के अनुरोधों की समीक्षा करना](./account-deletion.md) — खाता हटाने के लिए वही अनुमोदन-समूह समीक्षा प्रक्रिया
+- [अपनी प्रोफ़ाइल संपादित करना](../../b1-church/getting-started/editing-your-profile.md) — प्रोफ़ाइल परिवर्तन जमा करने पर सदस्य क्या देखते हैं

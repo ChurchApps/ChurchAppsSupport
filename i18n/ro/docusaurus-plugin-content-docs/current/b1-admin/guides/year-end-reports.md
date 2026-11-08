@@ -1,13 +1,13 @@
 ---
-title: "Ghid: Generarea rapoartelor de donații pentru sfârșitul anului"
-description: "În B1 Admin, finalizați donațiile anului, verificați setările fiscale ale fondurilor și generați extrasele deductibile pentru fiecare donator."
+title: "Ghid: Generarea rapoartelor anuale de donații"
+description: "În B1 Admin, finalizați înregistrările de donații ale anului, verificați setările fiscale ale fondurilor și generați extrase de donații deductibile fiscal pentru fiecare donator."
 ---
 
-# Generarea rapoartelor de donații pentru sfârșitul anului
+# Generarea rapoartelor anuale de donații
 
 <div class="article-intro">
 
-Parcurgeți procesul de sfârșit de an: finalizarea înregistrărilor de donații, verificarea setărilor fondurilor și generarea extraselor de donații deductibile fiscal pentru fiecare donator. Această operațiune se face, de obicei, la începutul lunii ianuarie, pentru anul calendaristic precedent.
+Parcurgeți procesul de sfârșit de an: finalizarea înregistrărilor de donații, verificarea setărilor fondurilor și generarea extraselor de donații deductibile fiscal pentru fiecare donator. Acest lucru se face, de regulă, la începutul lunii ianuarie, pentru anul calendaristic precedent.
 
 </div>
 
@@ -22,7 +22,7 @@ Parcurgeți procesul de sfârșit de an: finalizarea înregistrărilor de donaț
 
 ## Pasul 1: Importați tranzacțiile finale Stripe
 
-Asigurați-vă că toate donațiile online din sfârșitul anului se află în sistemul dvs.
+Asigurați-vă că toate donațiile online de la sfârșitul anului se află în sistemul dvs.
 
 Urmați ghidul [Import Stripe](../donations/stripe-import.md) pentru a:
 
@@ -40,9 +40,9 @@ Verificați dacă înregistrările sunt corecte înainte de a genera extrasele.
 
 Urmați ghidul [Rapoarte de donații](../donations/donation-reports.md) pentru a:
 
-1. Verifica pagina de sumar a donațiilor pentru întregul an
+1. Verifica pagina cu rezumatul donațiilor pentru întregul an
 2. Analiza totalurile pe fond și a le compara cu extrasele bancare, pentru a identifica eventualele neconcordanțe
-3. Face clic pe loturile individuale pentru a verifica detaliile donatorilor, dacă este necesar
+3. Face clic pe loturile individuale pentru a verifica detaliile fiecărui donator, dacă este necesar
 
 ## Pasul 3: Verificați statutul fiscal al fondurilor
 
@@ -53,7 +53,7 @@ Urmați ghidul [Fonduri](../donations/funds.md) pentru a:
 1. Deschide fiecare fond și confirma că setarea de deductibilitate fiscală este corectă
 
 :::info
-Pe extrasele de donații vor apărea doar donațiile făcute către fonduri marcate ca deductibile fiscal. Dacă un fond ar trebui să fie deductibil fiscal, dar nu este marcat astfel, actualizați-l înainte de a genera extrasele.
+Pe extrasele de donații vor apărea doar donațiile făcute către fondurile marcate ca deductibile fiscal. Dacă un fond ar trebui să fie deductibil fiscal, dar nu este marcat astfel, actualizați-l înainte de a genera extrasele.
 :::
 
 ## Pasul 4: Generați extrasele de donații
@@ -63,25 +63,25 @@ Creați extrasele oficiale de donații pentru donatorii dvs.
 Urmați ghidul [Extrase de donații](../donations/giving-statements.md) pentru a:
 
 1. Accesa **Donations > Giving Statements**
-2. Selecta anul din lista derulantă și analiza statisticile sumare
+2. Selecta anul din meniul derulant și a analiza statisticile sumare
 3. Alegeți metoda de descărcare:
    - **Download ZIP** — fișiere CSV individuale, câte unul pentru fiecare donator
-   - **Print All** — vizualizare pentru imprimare, cu fiecare extras pe o pagină nouă și cu sigla bisericii dvs. în partea de sus (dacă ați încărcat una)
+   - **Print All** — vizualizare pentru imprimare, cu fiecare extras pe o pagină nouă și cu logo-ul bisericii dvs. în partea de sus (dacă ați încărcat unul)
 
 :::tip
-Generați extrasele la începutul lunii ianuarie, cât timp înregistrările sunt proaspete. Astfel, aveți timp să rezolvați eventualele probleme înainte de a le trimite prin poștă.
+Generați extrasele la începutul lunii ianuarie, cât timp datele sunt proaspete. Astfel, aveți timp să remediați eventualele probleme înainte de a le trimite.
 :::
 
-## Pasul 5: Distribuiți extrasele donatorilor
+## Pasul 5: Distribuiți extrasele către donatori
 
-Asigurați-vă că extrasele ajung la donatorii dvs.
+Asigurați-vă că extrasele ajung la donatori.
 
 1. Imprimați și trimiteți extrasele prin poștă sau trimiteți prin e-mail fișierele CSV individuale către donatori
-2. Membrii își pot vedea și ei istoricul donațiilor și pot imprima extrasele din [B1.church](../../b1-church/giving/donation-history.md) și din [aplicația B1 Mobile](../../b1-mobile/giving/donation-history.md)
+2. Membrii își pot vedea și ei istoricul donațiilor și pot imprima extrasele pe [B1.church sau în aplicația B1 App](../../b1-church/giving/donation-history.md)
 
 ## Ați terminat!
 
-Rapoartele de donații pentru sfârșitul anului sunt finalizate. Donatorii au primit extrasele deductibile fiscal, iar evidențele financiare ale anului sunt închise.
+Rapoartele anuale de donații sunt finalizate. Donatorii au primit extrasele deductibile fiscal, iar evidențele financiare pentru anul respectiv sunt încheiate.
 
 ## Articole conexe
 
@@ -90,5 +90,5 @@ Rapoartele de donații pentru sfârșitul anului sunt finalizate. Donatorii au p
 - [Fonduri](../donations/funds.md) — gestionați fondurile și setările de deductibilitate fiscală
 - [Extrase de donații](../donations/giving-statements.md) — generați extrasele de sfârșit de an
 - [Înregistrarea donațiilor](../donations/recording-donations.md) — introduceți manual donațiile în numerar sau prin cec
-- [Istoricul donațiilor (web)](../../b1-church/giving/donation-history.md) — vizualizarea de către membri, în regim de autoservire
+- [Istoricul donațiilor (web)](../../b1-church/giving/donation-history.md) — vizualizarea de tip self-service pentru membri
 - [Ghid de configurare a donațiilor online](./online-giving.md) — configurarea inițială a Stripe și a donațiilor

@@ -1,66 +1,66 @@
 ---
-title: "Aprobación de Cambios de Perfil"
-description: "Revisa y aprueba en B1 Admin las solicitudes de cambio de perfil de los miembros, y configura el Grupo de Aprobación del Directorio que las recibe."
+title: "Aprobación de cambios de perfil"
+description: "Revise y apruebe las solicitudes de cambio de perfil de los miembros en B1 Admin, y configure el Grupo de aprobación del directorio que las recibe."
 ---
 
-# Aprobación de Cambios de Perfil
+# Aprobación de cambios de perfil
 
 <div class="article-intro">
 
-Cuando tu iglesia requiere aprobación del administrador para actualizaciones de perfil, los miembros envían sus cambios a través de la aplicación B1 Mobile y esas solicitudes aparecen como tareas en B1 Admin. Esta guía explica cómo revisarlas y aprobarlas.
+Cuando su iglesia requiere la aprobación de un administrador para las actualizaciones de perfil, los miembros envían sus cambios a través de la B1 App y esas solicitudes aparecen como tareas en B1 Admin. Esta guía explica cómo revisarlas y aprobarlas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Debes ser miembro del grupo designado como el **Directory Approval Group** en **Mobile → Member portal**
-- Si no se ha configurado ningún grupo de aprobación, los cambios de perfil se aplican inmediatamente sin revisión
+- Debe ser miembro del grupo designado como **Grupo de aprobación del directorio** en **Móvil &rarr; Portal de miembros**
+- Si no se ha configurado ningún grupo de aprobación, los cambios de perfil se aplican de inmediato sin revisión
 
 </div>
 
-## Dónde Encontrar Solicitudes Pendientes
+## Dónde encontrar las solicitudes pendientes
 
-Cuando un miembro envía un cambio de perfil, aparece como una tarea asignada a tu grupo de aprobación. Puedes encontrarlo en dos lugares:
+Cuando un miembro envía un cambio de perfil, aparece como una tarea asignada a su grupo de aprobación. Puede encontrarla en dos lugares:
 
-**Desde el Dashboard (tu página de inicio):**
-1. Inicia sesión en B1 Admin -- el Dashboard se carga automáticamente.
-2. En la sección **My tasks**, haz clic en **All tasks**. (My tasks solo muestra las tareas abiertas asignadas personalmente a ti.)
-3. Haz clic en la pestaña **Assigned to My Groups**. Las solicitudes de cambio de perfil pendientes se enumerarán allí.
+**Desde el Panel de control (su página de inicio):**
+1. Inicie sesión en B1 Admin. El Panel de control se carga automáticamente.
+2. En la sección **Mis tareas**, haga clic en **Todas las tareas**. (Mis tareas solo muestra las tareas abiertas asignadas personalmente a usted).
+3. Haga clic en la pestaña **Asignadas a mis grupos**. Allí aparecerán las solicitudes de cambio de perfil pendientes.
 
-**Desde Serving → My Work:**
-1. Abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin) y expande **Serving**.
-2. Haz clic en **My Work**.
-3. Haz clic en la pestaña **Assigned to My Groups** bajo Tasks.
+**Desde Servicio &rarr; Mi trabajo:**
+1. Abra el [Menú de salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin) y expanda **Servicio**.
+2. Haga clic en **Mi trabajo**.
+3. Haga clic en la pestaña **Asignadas a mis grupos** en Tareas.
 
-## Revisar y Aprobar una Solicitud
+## Revisión y aprobación de una solicitud
 
-1. Haz clic en la tarea **Profile Update** para abrirla.
-2. Bajo **Requested Changes**, verás cada campo que el miembro desea actualizar junto con el nuevo valor que envió.
-3. Revisa los cambios.
-4. Haz clic en **Apply** para aprobar y guardar los cambios en su perfil.
+1. Haga clic en la tarea **Actualización de perfil** para abrirla.
+2. En **Cambios solicitados**, verá cada campo que el miembro desea actualizar junto con el nuevo valor que envió.
+3. Revise los cambios.
+4. Haga clic en **Aplicar** para aprobar y guardar los cambios en el perfil del miembro.
 
-La tarea se cerrará automáticamente una vez que se apliquen los cambios.
+La tarea se cerrará automáticamente una vez aplicados los cambios.
 
-## Configurar el Grupo de Aprobación
+## Configuración del grupo de aprobación
 
-Si tu iglesia desea que los cambios de perfil requieran aprobación, primero debe configurarse un Directory Approval Group.
+Si su iglesia desea que los cambios de perfil requieran aprobación, primero debe configurarse un Grupo de aprobación del directorio.
 
-1. Abre el Menú Jump y expande **Mobile**.
-2. Haz clic en **Member portal** (la página "Portal settings").
-3. Bajo **Directory Approval Group**, selecciona el grupo cuyos miembros deben revisar las solicitudes de cambio de perfil.
-4. Haz clic en **Save**.
+1. Abra el Menú de salto y expanda **Móvil**.
+2. Haga clic en **Portal de miembros** (la página "Configuración del portal").
+3. En **Grupo de aprobación del directorio**, seleccione el grupo cuyos miembros deben revisar las solicitudes de cambio de perfil.
+4. Haga clic en **Guardar**.
 
-Cualquier miembro de ese grupo verá las solicitudes entrantes de cambio de perfil bajo **Assigned to My Groups** en su Dashboard.
+Cualquier miembro de ese grupo verá las solicitudes de cambio de perfil entrantes en **Asignadas a mis grupos** en su Panel de control.
 
-El mismo Directory Approval Group también revisa **solicitudes de eliminación de cuenta** -- consulta [Reviewing Account Deletion Requests](./account-deletion.md).
+El mismo Grupo de aprobación del directorio también revisa las **solicitudes de eliminación de cuentas**. Consulte [Revisión de solicitudes de eliminación de cuentas](./account-deletion.md).
 
 :::tip
-Asegúrate de que tus aprobadores sean realmente miembros del grupo configurado -- solo los miembros del grupo verán las solicitudes.
+Asegúrese de que los aprobadores sean miembros del grupo configurado. Solo los miembros del grupo verán las solicitudes.
 :::
 
-## Artículos Relacionados
+## Artículos relacionados
 
-- [Managing Your Profile](./managing-profile.md) -- Edita tus propias configuraciones de cuenta
-- [Reviewing Account Deletion Requests](./account-deletion.md) -- El mismo flujo de revisión de grupo de aprobación para eliminación de cuenta
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) -- Lo que los miembros ven cuando envían un cambio de perfil
+- [Administración de su perfil](./managing-profile.md): edite la configuración de su propia cuenta
+- [Revisión de solicitudes de eliminación de cuentas](./account-deletion.md): el mismo flujo de revisión por grupo de aprobación para la eliminación de cuentas
+- [Edición de su perfil](../../b1-church/getting-started/editing-your-profile.md): lo que ven los miembros cuando envían un cambio de perfil

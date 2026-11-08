@@ -1,94 +1,94 @@
 ---
-title: "Gids: Jaar-eindgifrapporten genereren"
-description: "Rond in B1 Admin de giftenadministratie van het jaar af, controleer fiscale fondsinstellingen en maak fiscaal aftrekbare overzichten voor elke donor."
+title: "Gids: jaaroverzichten van giften genereren"
+description: "Rond in B1 Admin de donatiegegevens van het jaar af, controleer de belastinginstellingen van de fondsen en genereer belastingaftrekbare giftenoverzichten voor elke donateur."
 ---
 
-# Jaar-eindgifrapporten genereren
+# Jaaroverzichten van giften genereren
 
 <div class="article-intro">
 
-Loop door het jaar-eindproces van het finaliseren van uw donatiegegevens, het verifiëren van fonds instellingen en het genereren van aftrekbare giftverklaringen voor elke donor. Dit wordt normaal gesproken in begin januari voor het voorgaande kalenderjaar gedaan.
+Doorloop het jaarlijkse proces om je donatiegegevens af te ronden, de fondsinstellingen te controleren en belastingaftrekbare giftenoverzichten voor elke donateur te genereren. Dit wordt doorgaans begin januari gedaan voor het voorgaande kalenderjaar.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
-- B1 Admin-account met financiële toegang
-- Donaties geregistreerd gedurende het jaar (online via Stripe en/of handmatig ingevoerd)
-- Toegang tot uw Stripe-account als u online donaties accepteert
+- B1 Admin-account met toegang tot financiën
+- Donaties die het hele jaar door zijn vastgelegd (online via Stripe en/of handmatig ingevoerd)
+- Toegang tot je Stripe-account als je online donaties accepteert
 
 </div>
 
-## Stap 1: Importeer eindtransacties van Stripe
+## Stap 1: Definitieve Stripe-transacties importeren
 
-Zorg ervoor dat alle online donaties van het einde van het jaar in uw systeem staan.
+Zorg ervoor dat alle online donaties van het einde van het jaar in je systeem staan.
 
-Volg de gids [Stripe Import](../donations/stripe-import.md) om:
+Volg de handleiding [Stripe Import](../donations/stripe-import.md) om:
 
-1. Navigeer naar Donaties > Batches > Stripe Import
-2. Selecteer een datumbereik dat het einde van het jaar omvat (bijv. 1 december - 31 december)
-3. Klik eerst op Voorbeeld om te controleren, en dan op Ontbrekende importeren om af te ronden
+1. Naar Donaties > Stripe Import te navigeren
+2. Een datumbereik te selecteren dat het einde van het jaar omvat (bijv. 1 december t/m 31 december)
+3. Klik eerst op Voorvertoning om te controleren en daarna op Ontbrekende importeren om het af te ronden
 
 :::warning
-Voer deze import uit voordat u verklaringen genereert. Transacties die u niet hebt geïmporteerd, verschijnen niet op donorverklaringen.
+Voer deze import uit voordat je de overzichten genereert. Transacties die je niet hebt geïmporteerd, verschijnen niet op de giftenoverzichten van donateurs.
 :::
 
-## Stap 2: Controleer donatierapporten
+## Stap 2: Donatierapporten controleren
 
-Controleer of uw gegevens nauwkeurig zijn voordat u verklaringen genereert.
+Controleer of je gegevens correct zijn voordat je overzichten genereert.
 
-Volg de gids [Donatie-rapporten](../donations/donation-reports.md) om:
+Volg de handleiding [Donatierapporten](../donations/donation-reports.md) om:
 
-1. Controleer de samenvattingspagina voor donaties voor het volledige jaar
-2. Controleer totalen per fonds en vergelijk met uw bankafschriften om discrepanties op te vangen
-3. Klik op afzonderlijke batches om donordetails te verifiëren, indien nodig
+1. De samenvatting van donaties voor het hele jaar te bekijken
+2. Totalen per fonds na te lopen en ze te vergelijken met je bankafschriften om eventuele afwijkingen op te sporen
+3. Indien nodig op individuele batches te klikken om gegevens per donateur te controleren
 
-## Stap 3: Controleer fonds belastingstatus
+## Stap 3: Belastingstatus van fondsen controleren
 
-Zorg ervoor dat de aftrekbare instelling van elk fonds correct is zodat verklaringen nauwkeurig zijn.
+Zorg dat de instelling voor belastingaftrek van elk fonds correct is, zodat de overzichten juist zijn.
 
-Volg de gids [Fondsen](../donations/funds.md) om:
+Volg de handleiding [Fondsen](../donations/funds.md) om:
 
-1. Open elk fonds en bevestig dat de aftrekbare instelling correct is
+1. Elk fonds te openen en te bevestigen dat de instelling voor belastingaftrek correct is
 
 :::info
-Alleen donaties aan fondsen die als aftrekbaar zijn gemarkeerd, verschijnen op giftverklaringen. Als een fonds aftrekbaar moet zijn, maar niet als zodanig is gemarkeerd, werk het bij voordat u verklaringen genereert.
+Alleen donaties aan fondsen die als belastingaftrekbaar zijn gemarkeerd, verschijnen op giftenoverzichten. Als een fonds belastingaftrekbaar zou moeten zijn maar dat niet is aangemerkt, werk het dan bij voordat je de overzichten genereert.
 :::
 
-## Stap 4: Genereer giftverklaringen
+## Stap 4: Giftenoverzichten genereren
 
-Maak de officiële giftverklaringen voor uw donoren.
+Maak de officiële giftenoverzichten voor je donateurs.
 
-Volg de gids [Giftverklaringen](../donations/giving-statements.md) om:
+Volg de handleiding [Giftenoverzichten](../donations/giving-statements.md) om:
 
-1. Navigeer naar Donaties > Verklaringen
-2. Selecteer het jaar uit de vervolgkeuzelijst en controleer de samenvattingsstatistieken
-3. Kies uw downloadmethode:
-   - **Download ZIP** -- afzonderlijke CSV-bestanden, één per donor
-   - **Alles afdrukken** -- afdrukbare weergave met elke verklaring op een nieuwe pagina
+1. Naar **Donaties > Giftenoverzichten** te navigeren
+2. Het jaar te selecteren in de keuzelijst en de samenvattende statistieken te bekijken
+3. Je downloadmethode te kiezen:
+   - **ZIP downloaden**: afzonderlijke CSV-bestanden, één per donateur
+   - **Alles afdrukken**: afdrukweergave met elk overzicht op een nieuwe pagina, met je kerklogo bovenaan (als je er een hebt geüpload)
 
 :::tip
-Genereer verklaringen in begin januari terwijl gegevens vers zijn. Dit geeft u tijd om problemen op te vangen voordat u ze verzendt.
+Genereer de overzichten begin januari, terwijl de gegevens nog vers zijn. Zo heb je tijd om eventuele problemen op te lossen voordat ze worden verstuurd.
 :::
 
-## Stap 5: Distribueer naar donoren
+## Stap 5: Verspreiden naar donateurs
 
-Zorg dat de verklaringen uw donoren bereiken.
+Zorg dat de overzichten bij je donateurs terechtkomen.
 
-1. Druk en verzend verklaringen per post, of e-mail individuele CSV's naar donoren
-2. Leden kunnen ook hun eigen gifthistorie bekijken en verklaringen afdrukken van [B1.church](../../b1-church/giving/donation-history.md) en de [B1 Mobiele app](../../b1-mobile/giving/donation-history.md)
+1. Print de overzichten en verstuur ze per post, of stuur de afzonderlijke CSV's per e-mail naar donateurs
+2. Leden kunnen hun eigen giftengeschiedenis ook bekijken en overzichten afdrukken op [B1.church of in de B1 App](../../b1-church/giving/donation-history.md)
 
-## U bent klaar!
+## Klaar!
 
-Uw jaar-eindgifrapporten zijn voltooid. Donoren hebben hun aftrekbare verklaringen en uw financiële gegevens zijn voor het jaar afgerond.
+Je jaaroverzichten van giften zijn compleet. Donateurs hebben hun belastingaftrekbare overzichten ontvangen en je financiële administratie is voor het jaar afgerond.
 
 ## Gerelateerde artikelen
 
-- [Stripe Import](../donations/stripe-import.md) -- online transacties importeren
-- [Donatie-rapporten](../donations/donation-reports.md) -- giftendtrends en totalen bekijken
-- [Fondsen](../donations/funds.md) -- fondsen beheren en aftrekbare instellingen
-- [Giftverklaringen](../donations/giving-statements.md) -- jaar-eindverklaringen genereren
-- [Donaties registreren](../donations/recording-donations.md) -- handmatig contanten/cheque-donaties invoeren
-- [Gifthistorie (web)](../../b1-church/giving/donation-history.md) -- zelfbediening-weergave voor leden
-- [Online geven instellen Gids](./online-giving.md) -- initiële Stripe en geven instellingen
+- [Stripe Import](../donations/stripe-import.md): online transacties importeren
+- [Donatierapporten](../donations/donation-reports.md): giftentrends en totalen bekijken
+- [Fondsen](../donations/funds.md): fondsen en instellingen voor belastingaftrek beheren
+- [Giftenoverzichten](../donations/giving-statements.md): jaaroverzichten genereren
+- [Donaties registreren](../donations/recording-donations.md): contant- en chequedonaties handmatig invoeren
+- [Donatiegeschiedenis (web)](../../b1-church/giving/donation-history.md): zelfbedieningsweergave voor leden
+- [Gids: online giften instellen](./online-giving.md): eerste Stripe- en giftenconfiguratie

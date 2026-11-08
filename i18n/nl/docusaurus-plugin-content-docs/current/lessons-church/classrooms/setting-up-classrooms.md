@@ -1,50 +1,50 @@
 ---
-title: "Setting Up Classrooms"
-description: "Maak, hernoem en verwijder klaslokalen in het Lessons.church-portaal, zodat elke ruimte of leeftijdsgroep klaar is voor wekelijkse lesplanning."
+title: "Klaslokalen instellen"
+description: "Maak, hernoem en verwijder klaslokalen in het Lessons.church-portaal, zodat elke ruimte of leeftijdsgroep klaar is voor het wekelijks plannen van lessen."
 ---
 
-# Setting Up Classrooms
+# Klaslokalen instellen
 
 <div class="article-intro">
 
-Voordat u lessen kunt plannen, moet u klaslokalen maken die uw onderwijsomgevingen vertegenwoordigen. Deze gids helpt u bij het maken, benoemen en beheren van klaslokalen in de Lessons.church-portal.
+Voordat u lessen kunt plannen, moet u klaslokalen aanmaken die uw onderwijsruimtes vertegenwoordigen. Deze gids leidt u door het aanmaken, benoemen en beheren van klaslokalen in het Lessons.church-portaal.
 
 </div>
 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- [Maak een account](../getting-started/creating-account.md) en maak verbinding met uw kerk
-- Maak jezelf vertrouwd met het [Portal Overview](../getting-started/portal-overview.md)
+- [Maak een account aan](../getting-started/creating-account.md) en koppel deze aan uw kerk
+- Maak uzelf vertrouwd met het [Overzicht van het portaal](../getting-started/portal-overview.md)
 
 </div>
 
-## Een Klaslokaal Maken
+## Een klaslokaal aanmaken
 
-1. Log in op uw account op [Lessons.church](https://lessons.church).
-2. Navigeer naar uw **Portal**. Dit is de centrale hub van uw kerk voor het beheren van klaslokalen en schema's.
-3. Klik op **Add Classroom**.
-4. Voer een naam in voor uw klaslokaal. Kies iets beschrijvends wat uw vrijwilligers herkennen -- bijvoorbeeld "Preschool", "Elementary K-2" of "Middle School".
-5. Sla uw nieuw klaslokaal op. Het verschijnt onmiddellijk op uw portaldashboard.
+1. Meld u aan bij uw account op [Lessons.church](https://lessons.church).
+2. Ga naar uw **Portaal**. Dit is het centrale knooppunt van uw kerk voor het beheren van klaslokalen en schema's.
+3. Klik in het vak **Klaslokalen** op **Toevoegen**. Als u nog geen klaslokalen heeft, klikt u in plaats daarvan op **Eerste klaslokaal toevoegen**.
+4. Voer een **Naam van het klaslokaal** in. Kies een beschrijvende naam die uw vrijwilligers herkennen -- bijvoorbeeld "Peuters", "Basisschool groep 1-2" of "Middelbare school".
+5. Klik op **Opslaan**. Uw nieuwe klaslokaal verschijnt meteen in de lijst **Klaslokalen**.
 
-Herhaal deze stappen voor elke kamer of leeftijdsgroep in uw kerk. U kunt zoveel klaslokalen maken als u nodig hebt.
+Herhaal deze stappen voor elke ruimte of leeftijdsgroep in uw kerk. U kunt zoveel klaslokalen aanmaken als u nodig heeft.
 
-## Eerste Keer Setup
+## Eerste keer instellen
 
-Als u nog geen klaslokalen hebt ingesteld, geeft uw portal een setupvideo weer waarmee u door het proces wordt geleid. Deze video behandelt de basisprincipes van het maken van klaslokalen en het plannen van uw eerste lessen. Dit is een geweldig startpunt als u nieuw bent voor Lessons.church.
+Als u nog geen klaslokalen heeft ingesteld, toont uw portaal een instructievideo die u door het proces leidt. Deze video behandelt de basisprincipes van het aanmaken van klaslokalen en het plannen van uw eerste lessen. Het is een goed startpunt als u nieuw bent bij Lessons.church.
 
 :::tip
-Geef uw klaslokalen een naam die overeenkomt met hoe uw vrijwilligers al over uw kamers denken. Als iedereen het "the Pre-K room" noemt, noem het "Pre-K" in plaats van iets formelers zoals "Early Childhood Education Room 101".
+Geef uw klaslokalen namen die aansluiten bij de manier waarop uw vrijwilligers al over uw ruimtes denken. Als iedereen het "de peuterruimte" noemt, geef het lokaal dan de naam "Peuters" in plaats van iets formeels als "Lokaal 101 Vroegkinderlijk Onderwijs".
 :::
 
-## Klaslokalen Beheren
+## Klaslokalen beheren
 
-Uw klaslokalen verschijnen op het portaldashboard waar u ze op elk moment kunt beheren. Vanaf hier kunt u:
+Uw klaslokalen verschijnen op het dashboard van het portaal, waar u ze op elk moment kunt beheren. Vanaf hier kunt u:
 
-- **Rename a classroom** -- Werk de naam bij als uw kamers of leeftijdsgroepen veranderen.
-- **Remove a classroom** -- Verwijder klaslokalen die u niet meer nodig hebt.
-- **View the schedule** -- Klik op elk klaslokaal om het schema ervan te zien.
+- **Een klaslokaal hernoemen** -- Klik op het potloodpictogram **Klaslokaal bewerken** ernaast, wijzig de **Naam van het klaslokaal** en klik op **Opslaan**.
+- **Een klaslokaal verwijderen** -- Klik op **Klaslokaal bewerken**, klik vervolgens op het prullenbakpictogram **Klaslokaal verwijderen** en bevestig.
+- **Het schema bekijken** -- Klik op een klaslokaal om het lesrooster ervan te bekijken.
 
-## Wat Volgt
+## Wat volgt
 
-Zodra uw klaslokalen zijn ingesteld, bent u klaar om te beginnen met het [plannen van lessen](./scheduling-lessons.md) zodat uw vrijwilligers weten wat elke week onderwezen moet worden.
+Zodra uw klaslokalen zijn ingesteld, kunt u beginnen met [het plannen van lessen](./scheduling-lessons.md), zodat uw vrijwilligers weten wat ze elke week moeten onderwijzen.

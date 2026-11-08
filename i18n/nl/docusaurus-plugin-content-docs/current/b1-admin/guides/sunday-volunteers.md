@@ -1,13 +1,13 @@
 ---
-title: "Gids: Zondagvrijwilligers beheren"
-description: "Stel vrijwilligersteams, wekelijkse dienstplannen en zondagstaken in B1 Admin in, zodat vrijwilligers opdrachten zien op B1.church en in de mobiele app."
+title: "Gids: Zondagsvrijwilligers beheren"
+description: "Stel vrijwilligersteams, wekelijkse dienstplannen, dienstorden en zondagstaken in B1 Admin in, zodat vrijwilligers hun opdrachten zien en erop reageren op B1.church en in de mobiele app."
 ---
 
-# Zondagvrijwilligers beheren
+# Zondagsvrijwilligers beheren
 
 <div class="article-intro">
 
-Stel uw vrijwilligersteams in, maak wekelijkse serviceplanning, wijs posities toe, bouw serviceorders met aanbiddingsliederen en automatiseer terugkerende taken. Aan het einde zien uw vrijwilligers hun toewijzingen op de B1-website en mobiele app en kunnen zij rechtstreeks accepteren of weigeren.
+Stel uw vrijwilligersteams in, maak wekelijkse dienstplannen aan, wijs posities toe, stel dienstorden samen met aanbiddingsliederen en wijs zondagstaken toe. Aan het eind zien uw vrijwilligers hun opdrachten op de B1-website en in de mobiele app, en kunnen ze die rechtstreeks accepteren of weigeren.
 
 </div>
 
@@ -15,120 +15,119 @@ Stel uw vrijwilligersteams in, maak wekelijkse serviceplanning, wijs posities to
 <h4>Voordat u begint</h4>
 
 - B1 Admin-account met beheerdersrechten
-- Vrijwilligers [toegevoegd aan uw pelvingsdirectorybestanden](../people/adding-people.md)
+- Vrijwilligers [toegevoegd aan uw ledenregister](../people/adding-people.md)
 
 </div>
 
-## Stap 1: Maak vrijwilligersteams
+## Stap 1: vrijwilligersteams aanmaken
 
-Organiseer uw vrijwilligers in teams zodat u toewijzingen per ministerigebied kunt beheren.
+Orden uw vrijwilligers in teams, zodat u opdrachten per dienstgebied kunt beheren.
 
-Volg de gidsen [Groepen maken](../groups/creating-groups.md) en [Groepsleden](../groups/group-members.md) om:
+Volg de handleidingen [Groepen aanmaken](../groups/creating-groups.md) en [Groepsleden](../groups/group-members.md) om:
 
-1. Maak een categorie (bijv. "Zondagmorgen teams")
-2. Maak groepen zoals "Aanbiddingsteam", "Geluid & Media", "Greeters", "Kinderministerie Vrijwilligers"
-3. Voeg vrijwilligers aan elke groep toe door hun naam te zoeken en op Toevoegen te klikken
+1. Een categorie aan te maken (bijvoorbeeld "Zondagochtendteams")
+2. Groepen aan te maken zoals "Aanbiddingsteam", "Geluid & Media", "Welkomstteam", "Vrijwilligers Kinderwerk"
+3. Vrijwilligers aan elke groep toe te voegen door hun naam te zoeken en op **Toevoegen** te klikken
 
 :::tip
-Wijs teamleiders aan met het groene sleutelpictogram op het tabblad Leden. Leiders kunnen hun eigen groepsagenda beheren en hun team coördineren.
+Wijs teamleiders aan met het sterpictogram (**Make Leader**) in de ledenlijst van de groep (klik op de pagina van de groep op **All members**). Leiders kunnen de groepskalender beheren en hun team coördineren.
 :::
 
-## Stap 2: Bouw uw liedenbibliotheek
+## Stap 2: uw liederenbibliotheek opbouwen
 
-Voeg aanbiddingsliederen toe zodat u ze elke week in serviceplanning kunt halen.
+Voeg aanbiddingsliederen toe, zodat u ze elke week in dienstplannen kunt opnemen.
 
-Volg de gids [Liederen](../serving/songs.md) om:
+Volg de handleiding [Liederen](../serving/songs.md) om:
 
-1. Voeg aanbiddingsliederen toe met titels, artiesten en duur
-2. Voeg voor elk lied arrangementen toe met tekstboeken en sleutelbeschrijvingen
-3. Voeg externe links toe naar YouTube-optredens, akkoorddiagrammen of bladmuziek
+1. Aanbiddingsliederen toe te voegen met titels, artiesten en duur
+2. Voor elk lied arrangementen toe te voegen met teksten en toonaanduidingen
+3. Externe links toe te voegen naar YouTube-uitvoeringen, akkoordenschema's of bladmuziek
 
 :::info
-Liederen die hier zijn toegevoegd, kunnen later in elk serviceplan worden opgehaald. Bouw uw bibliotheek eenmaal, hergebruik het elke week.
+Liederen die hier worden toegevoegd, kunnen later in elk dienstplan worden opgenomen. Bouw uw bibliotheek één keer op en gebruik die elke week opnieuw.
 :::
 
-## Stap 3: Maak een serviceplan
+## Stap 3: een dienstplan aanmaken
 
-Planen zijn de wekelijkse toewijzingen die vrijwilligers vertellen waar zij nodig zijn.
+Plannen zijn de wekelijkse opdrachten die vrijwilligers laten zien waar ze nodig zijn.
 
-Volg de gids [Planen](../serving/plans.md) om:
+Volg de handleiding [Plannen](../serving/plans.md) om:
 
-1. Navigeer naar Serving, selecteer uw ministeriachtabblad
-2. Klik op "Plan toevoegen" en selecteer de servicedatum
-3. Op het tabblad Toewijzingen kunt u elk team uitvouwen en vrijwilligers aan hun posities toewijzen
-4. Vrijwilligers zien hun toewijzingsstatus (Aangevraagd, Bevestigd, In afwachting)
+1. Naar Serving te gaan, het tabblad van uw dienstgebied te selecteren en uw plantype te openen
+2. Op **New Plan** te klikken en de datum van de dienst te kiezen. Om meerdere zondagen tegelijk in te stellen, kopieert u het vorige plan en vult u het aantal in bij **Number of plans**
+3. In de sectie **Serving Team Assignments** van het plan posities toe te voegen en er vrijwilligers aan toe te wijzen
+4. Vrijwilligers zien hun toewijzingsstatus (Requested, Confirmed, Pending)
+5. [Herinneringen voor vrijwilligers](../serving/plans.md#volunteer-reminders) in te schakelen voor het plantype, zodat vrijwilligers vóór elke dienst een pushmelding, e-mail of sms krijgen
 
-## Stap 4: Bouw de serviceorder
+## Stap 4: de dienstorde samenstellen
 
-Leg de stroom van uw service van begin tot eind uit.
+Leg de volgorde van uw dienst vast, van begin tot eind.
 
-Volg de gids [Serviceorder](../serving/service-order.md) om:
+Volg de handleiding [Dienstorde](../serving/service-order.md) om:
 
-1. Schakel over naar het tabblad "Serviceorder" in uw plan
-2. Klik op "Item toevoegen" om elementen toe te voegen: aanbiddingsliederen (van uw bibliotheek), gebeden, schriftuurlezingen, aankondigingen, preek, collecte, afsluiting
-3. Sleep en zet items om de servicestroom opnieuw in te delen
+1. Uw plan te openen en de sectie **Order of Service** bovenaan te zoeken
+2. Op **Add** te klikken om onderdelen toe te voegen: aanbiddingsliederen (uit uw bibliotheek), gebeden, schriftlezingen, mededelingen, preek, collecte en slot
+3. Onderdelen te slepen om de volgorde van de dienst aan te passen
 
 :::info
-Serviceorders zijn planspecifiek. Wijzigingen hier hebben geen gevolgen voor andere plannen of de hoofdliedenbibliotheek.
+Dienstorden zijn plangebonden. Wijzigingen hier hebben geen invloed op andere plannen of op de hoofdbibliotheek met liederen.
 :::
 
-## Stap 5: Stel terugkerende taken in
+## Stap 5: zondagstaken toewijzen
 
-Automatiseer wekelijkse verantwoordelijkheden zodat niets tussen wal en schip valt.
+Houd eenmalige zondagsverantwoordelijkheden bij, zodat er niets tussen wal en schip valt.
 
-Volg de gidsen [Taken](../serving/tasks.md) en [Automations](../serving/workflows.md) om:
+Volg de handleiding [Taken](../serving/tasks.md) om:
 
-1. Maak automations voor wekelijkse terugkerende verantwoordelijkheden (bijv. "Bereiding communie-elementen", "Druk bulletins", "Stel geluidapparatuur in")
-2. Wijs elke automatisering toe aan de verantwoordelijke persoon of groep
-3. Taken verschijnen automatisch op hun B1-dashboard en mobiele app
+1. Taken aan te maken voor verantwoordelijkheden zoals "Avondmaalselementen klaarzetten", "Liturgieën printen" of "Geluidsapparatuur opstellen"
+2. Elke taak toe te wijzen aan de verantwoordelijke persoon of groep
+3. Taken te laten verschijnen onder **Serving > My Work**, op het dashboard van de persoon aan wie de taak is toegewezen, en in de mobiele app
+
+:::info
+B1 Admin maakt niet langer taken op een herhalend schema aan. Voor terugkerende processen waarin mensen stappen doorlopen, gebruikt u [Workflows](../serving/workflows.md) met een schematrigger.
+:::
+
+## Stap 6: zelfinschrijving inschakelen (optioneel)
+
+Laat vrijwilligers zichzelf voor posities inschrijven in plaats van te wachten op toewijzingen door een beheerder.
+
+1. Stel bij het aanmaken of bewerken van een plan een **Signup Deadline** in (aantal uren vóór de dienst) om te bepalen wanneer zelfinschrijving sluit. De uren worden teruggerekend vanaf het tijdstip van de eerste dienst van het plan. Laat het veld leeg voor geen deadline. Nieuwe plannen nemen de deadline van het vorige plan over.
+2. Schakel desgewenst **Show volunteer names on signup page** in, zodat vrijwilligers kunnen zien wie zich nog meer heeft ingeschreven.
+3. Vink voor elke positie het selectievakje **Allow Self-Signup** aan om die beschikbaar te maken voor zelfinschrijving.
+4. Voeg voor elke positie een **Description** toe, zodat vrijwilligers weten wat de rol inhoudt.
+
+Zodra de posities voor zelfinschrijving zijn aangemaakt, verschijnen ze automatisch op de inschrijfpagina's voor vrijwilligers op [B1.church en in de B1 App](../../b1-church/serving/volunteer-signup.md). Leden kunnen openstaande posities bekijken, zien hoeveel plaatsen er nog vrij zijn en zich met één klik inschrijven.
 
 :::tip
-Stel automations in op Inactief tijdens vakantiedagen of speciale seizoenen, activeer deze vervolgens opnieuw wanneer u klaar bent. Geen noodzaak om te verwijderen en opnieuw te maken.
+Combineer in hetzelfde plan posities die door een beheerder worden toegewezen met posities voor zelfinschrijving. Wijs bijvoorbeeld uw worship leader rechtstreeks toe, maar laat gastheren en koffiemedewerkers zichzelf kiezen.
 :::
 
-## Stap 6: Schakel zelfbediening aanmelding in (optioneel)
+## Stap 7: vrijwilligers op de hoogte brengen
 
-Laat vrijwilligers zelf voor posities aanmelden in plaats van te wachten op beheerderstoewijzingen.
+Toegewezen vrijwilligers zien hun plannen automatisch en kunnen erop reageren.
 
-1. Stel bij het bewerken van een plan een **Inschrijvingsuiterste datum** in (uren voor service) om te bepalen wanneer zelfbediening sluit. Laat leeg voor geen uiterste datum.
-2. Zet optioneel **Vrijwilligersnamen weergeven op aanmeldingspagina** aan zodat vrijwilligers kunnen zien wie anders zich heeft aangemeld.
-3. Selecteer voor elke positie het selectievakje **Zelfbediening aanmelding toestaan** om het beschikbaar te maken voor zelfbediening.
-4. Voeg voor elke positie een **Beschrijving** toe zodat vrijwilligers weten wat de rol inhoudt.
-
-Zodra zelfbediening aanmeldingsposities zijn gemaakt, verschijnen zij automatisch op de vrijwilligersaanmeldingspagina's op [B1.church](../../b1-church/serving/volunteer-signup.md) en de [B1 Mobiele app](../../b1-mobile/serving/volunteer-signup.md). Leden kunnen open posities doorzoeken, zien hoeveel plaatsen er nog beschikbaar zijn en zich met één klik aanmelden.
+1. Vrijwilligers zien hun plannen op [B1.church en in de B1 App](../../b1-church/plans/viewing-plans.md)
+2. Ze kunnen opdrachten rechtstreeks vanaf hun telefoon of computer accepteren of weigeren
+3. Ze kunnen blokkeerdata instellen voor weken waarin ze niet beschikbaar zijn
+4. Plannen kunnen worden afgedrukt voor repetities of achter het podium worden opgehangen
+5. Vrijwilligers kunnen via de [inschrijfpagina voor vrijwilligers](../../b1-church/serving/volunteer-signup.md) openstaande posities bekijken en zich ervoor inschrijven
 
 :::tip
-Meng beheerderstoewijzingen en zelfbediening aanmeldingsposities in dezelfde plan. Wijs bijvoorbeeld uw aanbiddinaleider rechtstreeks toe maar laat greeters en koffie servers zelf kiezen.
+Pushmeldingen in de B1 App waarschuwen vrijwilligers wanneer ze een nieuwe opdracht krijgen of wanneer een plan wordt gewijzigd.
 :::
 
-## Stap 7: Laat vrijwilligers het weten
+## Klaar!
 
-Toegewezen vrijwilligers zien hun plannen automatisch en kunnen reageren.
-
-1. Vrijwilligers zien hun plannen op [B1.church](../../b1-church/plans/viewing-plans.md) en de [B1 Mobiele app](../../b1-mobile/serving/viewing-plans.md)
-2. Zij kunnen toewijzingen rechtstreeks van een van beide platforms accepteren of weigeren
-3. Zij kunnen blokkeerdata instellen voor weken waarop zij niet beschikbaar zijn
-4. Planen kunnen voor repetities worden afgedrukt of achter het podium worden geplaatst
-5. Vrijwilligers kunnen open posities via de [vrijwilligersaanmeldingspagina](../../b1-church/serving/volunteer-signup.md) doorzoeken en zich aanmelden
-
-:::tip
-Push-meldingen op de mobiele app waarschuwen vrijwilligers wanneer zij nieuwe toewijzingen ontvangen of wanneer plannen veranderen.
-:::
-
-## U bent klaar!
-
-Uw vrijwilligersbeheerssysteem is ingesteld. Elke week maakt u een nieuw plan, wijst u posities toe en ziet uw team alles op hun telefoon of computer. Terugkerende taken verwerken het routineonderhoud automatisch.
+Uw systeem voor vrijwilligersbeheer is ingesteld. Maak elke week een nieuw plan aan, wijs de posities toe, en uw team ziet alles op hun telefoon of computer.
 
 ## Gerelateerde artikelen
 
-- [Groepen maken](../groups/creating-groups.md) -- teams en categorieën instellen
-- [Groepsleden](../groups/group-members.md) -- teamleden toevoegen en beheren
-- [Planen](../serving/plans.md) -- serviceplanning maken en beheren
-- [Serviceorder](../serving/service-order.md) -- de stroom van een service bouwen
-- [Liederen](../serving/songs.md) -- uw aanbiddingsliedenebibliotheek beheren
-- [Taken](../serving/tasks.md) -- actiegegevens aan personen of groepen toewijzen
-- [Automations](../serving/workflows.md) -- terugkerende taken automatiseren
-- [Plannen bekijken (web)](../../b1-church/plans/viewing-plans.md) -- hoe vrijwilligers plannen online zien
-- [Plannen bekijken (mobiel)](../../b1-mobile/serving/viewing-plans.md) -- hoe vrijwilligers plannen op mobiel zien
-- [Vrijwilligersaanmelding (web)](../../b1-church/serving/volunteer-signup.md) -- hoe leden vrijwilligersposities zelf selecteren
-- [Vrijwilligersaanmelding (mobiel)](../../b1-mobile/serving/volunteer-signup.md) -- vrijwilligerszelfbediening aanmelding op mobiel
+- [Groepen aanmaken](../groups/creating-groups.md): teams en categorieën instellen
+- [Groepsleden](../groups/group-members.md): teamleden toevoegen en beheren
+- [Plannen](../serving/plans.md): dienstplannen aanmaken en beheren
+- [Dienstorde](../serving/service-order.md): de opbouw van een dienst samenstellen
+- [Liederen](../serving/songs.md): uw bibliotheek met aanbiddingsliederen beheren
+- [Taken](../serving/tasks.md): actiepunten toewijzen aan personen of groepen
+- [Workflows](../serving/workflows.md): mensen door herhaalbare processen leiden met triggers en geautomatiseerde stappen
+- [Plannen bekijken](../../b1-church/plans/viewing-plans.md): hoe vrijwilligers hun plannen zien
+- [Inschrijven als vrijwilliger](../../b1-church/serving/volunteer-signup.md): hoe leden zelf vrijwilligersposities kiezen

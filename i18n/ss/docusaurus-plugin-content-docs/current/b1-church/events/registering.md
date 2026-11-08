@@ -1,92 +1,98 @@
 ---
-title: "Kubhalisa Emcimbini ku-B1.church"
-sidebar_label: "Kubhalisela Imicimbi"
-description: "Bhalisa emcimbini wesonto ku-B1.church: faka imininingwane yakho, engeta emalungu emndeni, khetsa tinketho, sebentisa likhodi lesaphulo, bese ukhokha noma ujoyine uhlu lolindzako."
+title: "Ukubhalisa Emcimbini ku-B1.church"
+sidebar_label: "Ukubhalisa Emacimbini"
+description: "Bhalisela umcimbi wesonto ku-B1.church: faka tinkhulumo takho, engeze emalunga emindeni, khetha tinketho, sebentisa tikhodi tesaphula, bese ukhokha noma ujoyine uhlu lokulindzela."
 ---
 
-# Kubhalisela Imicimbi
+# Ukubhalisa Emacimbini
 
 <div class="article-intro">
 
-Nawulibandla lakini livumela kubhaliswa kwemcimbi, ungabhalisela ngenchubo lelula yenyatselo ngayinye. Ungatibhalisela wena futsi wengete emalunga emndeni, nome unayo nome ungenayo i-akhawunti, nome uvakashela njengesivakashi. Kwemicimbi lekhokhelwako, ukhetsa luhlobo lwesamukeli, wengete tintfo letitengetiwe letingakhethwa, usebentise likhodi lesaphulelo, bese ukhokha ngekuphepha ekugcineni.
+Uma sonto lakho livula ukubhalisa emcimbini, ungabhalisa ngalenqubo lelula ngemanyatselo. Ungabhalisa wena uqobe futsi ungengeza emalunga emndeni, kungaba unayo i-akhawunti noma uvakashela njengesihambi. Emicimbini lekhokhelwako, ukhetha luhlobo lwemuntfu, ungengeza tinketho letikhetsekako, usebentise likhodi lesaphula, bese ukhokha ngeluphephelo ekugcineni.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Lelibandla lakini kudzingeka kutsi livumele kubhaliswa kwalomcimbi
-- Sikhatsi sekubhalisa kudzingeka kutsi sivuliwe (emkhatsini welilanga lekuvula nelekuvala lelibekwe ngumphatsi)
+- Sonto lakho kufanele livule ukubhalisa emcimbini
+- Sikhatsi sekubhalisa kufanele sivulekile (phakathi kwetinsuku letivulako netivalako letimiselwe ngumphatsi)
 
 </div>
 
-## Sinyatselo 1: Faka Imininingwane Yakho
+## Sinyatselo 1: Faka Lolwazi Lwakho
 
-1. Kusuka ekhalendeni lelibandla, vula umcimbi lofuna kubhalisela wona bese uchofoza **Register for this Event**.
-2. Likhasi lekubhalisa liyalayisha likhombisa sihloko semcimbi, sichasiso, kanye nelilanga.
-3. Nangabe **ungenile**, liforomu likhombisa libito lakho futsi licinisekisa kutsi ubhalisa ngaphansi kwe-akhawunti yakho.
-4. Nangabe **usisivakashi** (ungakangeni), gcwalisa:
-   - **Libito Lekucala** (kudzingekile)
-   - **Sibongo** (kudzingekile)
-   - **I-imeyili** (kudzingekile)
-   - **Ucingo** (akudzingekile)
-5. Nangabe umcimbi unetinhlobo tesamukeli (sibonelo, Muntfu Lomdzala kanye neMntfwana kumanani lahlukene), khetsa **luhlobo lwakho lwekubhalisa**. Luhlobo ngalunye lukhombisa lenani lalo, futsi tinhlobo letiseleteme tikhonjiswa nge-**Sold out**.
+1. Ku-khalenda yesonto, vula umcimbi ofuna ukubhalisela bese uchofoza **Bhalisela lumcimbi**.
+2. Likhasi lekubhalisa liyalayisha, likhombise sihloko semcimbi, incazelo, nelusuku. Umcimbi lowenta emalanga lamaningi ukhombisa lusuku lwekucala nekuphela.
+3. Uma **ungenile**, lifomu likhombisa ligama lakho futsi likusiguca kutsi uyabhalisa ngaleyo akhawunti yakho.
+4. Uma uyisihambi (ungenile), gcwalisa:
+   - **Ligama Lekucala** (kuyadingeka)
+   - **Lisibongo** (kuyadingeka)
+   - **I-imeyili** (kuyadingeka)
+   - **Ucingo** (akudingeki)
+5. Uma umcimbi unetinhlobo tetemuntfu (njengaBadzala nebantfwana ngetintsengo letehlukene), khetha **luhlobo lwakho lwekubhalisa**. Luhlobo ngalunye lukhombisa intengo yalo, futsi tinhlobo letiphelile zichazwa njenge-**Tiphelile**.
 
 :::info
-Nangabe umcimbi unemkhawulo webungako, bha lenkhombisa inchubo ikhombisa kutsi maka malini lasaseleko. Nangabe umcimbi sewugcwele futsi lelibandla lakini livumele luhlu lwekulindza, ungakwati kucedza kubhalisa kuze ungene eluhlwini lwekulindza — bona [Kungena Eluhlwini Lwekulindza](#joining-a-waitlist) ngentasi.
+Uma umcimbi unemkhawulo wetinhlanganyelo, ibha lenkhulumo likhombisa kutsi kusele tindzawu lingakhi. Uma umcimbi ugcwele futsi sonto lakho liniketa uhlu lokulindzela, ungasaphetsa kubhalisa ukuze ujoyine uhlu lokulindzela — bona [Kujoyina Uhlu Lokulindzela](#joining-a-waitlist) lapha ngezansi.
 :::
 
-## Sinyatselo 2: Wengeta Emalunga Emndeni
+## Sinyatselo 2: Engeza Emalunga Emndeni
 
-1. Nangabe ufuna kubhalisa emalunga engetiwe emndeni, faka **Libito Lekucala** ne**Sibongo** salowo nalowo muntfu.
-2. Nangabe umcimbi unetinhlobo tesamukeli, khetsa luhlobo kumuntfu ngamunye lomengetako.
-3. Chofoza **Add Member** kuze wengete labanye bantfu (kuze kufike kulishumi ngalokuphelele).
-4. Chofoza inkhinobho yekususa ecaleni kwanome ngubani lilunga kuze umsuse ekubhaliseni.
-5. Nangabe ubhalisa wena wedvwa, ungasishiya lesi sinyatselo.
+1. Uma ufuna kubhalisa emalunga emndeni langenginyana, faka **Ligama Lekucala** nelisibongo lalo ngamunye.
+2. Uma umcimbi unetinhlobo tetemuntfu, khetha luhlobo lwemuntfu ngamunye lolengeziwe.
+3. Chofoza **Engeza Lilunga** ukuze wengeze bantfu labanyenti (kufika ku-10 sonkhe).
+4. Chofoza inkinobho yekususa seceleni kwanoma yiliphi lilunga ukuze ulisuse ekubhalisweni.
+5. Uma ubhalisa wena kuphela, ungadlula lesinyatselo.
 
-## Sinyatselo 3: Khetsa Tikhetho Netikhethiwe (Nangabe Tikhona)
+## Sinyatselo 3: Khetha Tinketho Nekukhetsa (Uma Tinikwa)
 
-Leminye imicimbi inikela ngetintfo letikhethiwe letinemanani lengetekile — emahembe, kudla, kutfutfukiswa kwemicimbi.
+Emicimbini lemitsi itinikela tinketho letikhokhelwako letingeziwe — ticiciso temabhilingi, emadla, nekuphakanyiswa kwemisebenti.
 
-1. Nangabe umcimbi unetikhethiwe, sinyatselo se-**Options & Selections** siyavela.
-2. Sebentisa tinombolo tekwengeta/kususa kuze ukhetse bungakhi lwaleyo naleyo lofuna yona. Tikhetho letingakhokhelwa tikhonjiswa nge-**Free**, kantsi tikhetho letinemkhawulo tikhombisa kutsi bungakhi losaseleko.
-3. Chofoza **Continue**.
+1. Uma umcimbi unekukhetsa, sinyatselo **Tinketho Nekukhetsa** siyavela.
+2. Sebentisa tinkinobho tekwenyuka nekwehla ukukhetsa kutsi ufuna kangaki kwalokunye nalokunye. Tinketho letingenaholo tibonakala njenge-**Ngaphandle Kwentengo**, futsi tinketho letilinganiselwe tikhombisa kutsi kusele kangaki.
+3. Chofoza **Chubeka**.
 
-## Sinyatselo 4: Phendvula Imibuto (Nangabe Ibutwe)
+## Sinyatselo 4: Phendvula Imibuto (Uma Ibuntjwa)
 
-Leminye imicimbi icela lababhalisako kutsi baphendvule imibuto lengetiwe -- kudla lokungadliwa, sayizi yehembe, umuntfu longatsintsana naye esimeni sesiphuthumako, nalokunye lokufanako.
+Emicimbini lemitsi ibuta labo labhalisako kutsi baphendvule imibuto lmincane — tindlela tekudla letingasetiwa, ubukhulu be-T-shirt, lilungu lekuxhumana nalo lesimo sesimo, nemininingwane lefanako.
 
-1. Nangabe umcimbi unemibuto lehlotjaniswe nawo, sinyatselo se-**Questions** siyavela.
-2. Gcwalisa timphendvulo takho bese uyachubeka.
+1. Uma umcimbi unemibuto, sinyatselo **Imibuto** siyavela lapho.
+2. Gcwalisa tiphendvulo takho bese uchubeka.
 
-Nangabe umcimbi awunayo imibuto lehlotjaniswe nawo, lesi sinyatselo siyatjentjulwa ngekutentela.
+Uma umcimbi ungenayo imibuto, lesinyatselo siyadlulwa ngekuzenzekela.
 
-## Sinyatselo 5: Khokha (Kwemicimbi Lekhokhelwako)
+## Sinyatselo 5: Khokha (Emicimbini Lekhokhelwako)
 
-Nangabe kubhalisa kwakho kunelinani, sinyatselo se-**Payment** sikhombisa **Order Summary** lelusa yonkhe umsamukeli, njalo nalokukhethiwe, nome yini lesaphuliwe, kanye **neTotal**.
+Uma kubhalisa kwakho kunentengo, sinyatselo **Kukhokha** sikhombisa **Lwatiso Lwemali** lolulanda lilunga ngalinye, sinketho ngasinye, nanoma yisiphi sesaphula, nesibalo **Sonkhe**.
 
-- **Likhodi lesaphulelo** -- Nangabe lelibandla lakini lakunika likhodi, lifake bese uchofoza **Apply**. Lesaphulelo sibonakala ngco, futsi utawubona umlayeto locondzile nangabe likhodi seliphelelwe sikhatsi, lingakacali, nome lidzinga bantfu labanyenti.
-- **Emalungu lasengenile** angakhokha ngelikhadi lelisele ligciniwe nome akhetse **Use a new card**.
-- **Tivakashi** tifaka imininingwane yekhadi ngco.
+- **Likhodi lesaphula** -- Uma sonto lakho likunikete likhodi, yifake bese uchofoza **Sebenta**. Lesaphula liyabonakala masinyane, futsi uyawubona umlayeto locacile uma likhodi liphelelwe yisikhatsi, lingakaqali, noma lidinga tilungu letengetiwe.
+- **Emalunga lacondzile** angakhokha ngekhadi lelilondvolotiwe noma akhetse **Sebenta likhadi lelisha**.
+- **Bantfu labangenile** bangangenisa emininingwane yemakhadi abo bese batsintsa **Angiyo irobhothi** ngaphambi kwekukhokha.
 
-Chofoza **Pay & Register** kuze ucedzele inkhokhelo nekubhalisa ngesinyatselo sinye. Imininingwane yekhadi lakho iya ngco kumcutji wenkhokhelo welibandla futsi ayikagcinwa yiB1.
+Chofoza inkinobho **Khokha & Bhalisa**, leyenta sibalo sakho sonkhe sibonakale (njengesibonelo, **Khokha $25.00 & Bhalisa**), ukuze ugcwalise inkhokhelo nekubhalisa ngesinyatselo sinye. Emininingwane yekhadi lakho iya ngqo kumnikezi wekukhokha wesonto futsi ayigcinwa yi-B1.
 
-Kubhaliswa lokungakhokhelwako kuyawelisa lesi sinyatselo bese kuya ngco ekucinisekiseni.
+Ukubhalisa lokungenayo imali kuyadlula lesinyatselo kuye ngqo ekuqinisekisweni.
 
-## Sinyatselo 6: Cinisekisa
+Uma sonto lakho lingemukeli tinkhokhelo ku-inthanethi, umlayeto wesinyatselo sekukhokha uthi *"Inkhokhelo ku-inthanethi ayitfolakali kulomcimbi. Ungabhalisa manje bese ukhokha sonto ngqo."* Chofoza **Bhalisa Bese Ukhokha Kamuva** ukuze uphelise. Kubhalisa kwakho kugcinwa nemali lebonakala njengelibalansi lelisele lekufanele ukhokhwe kusonto ngqo.
 
-Umlayeto wekucinisekisa uyavela nemininingwane yemcimbi kanye neluhlu lwabo bonkhe lobabhalisele. Utawutfola nga**imeyili yekucinisekisa** kulikheli le-imeyili lelihlotjaniswe ne-akhawunti yakho (nome i-imeyili loyinike njengesivakashi).
+## Sinyatselo 6: Qinisekisa
 
-## Kungena Eluhlwini Lwekulindza
+Umlayeto wekuqinisekisa uvela nemininingwane yemcimbi nelutfo lwabo bonkhe lobhalise. Futsi uyakutfola **i-imeyili yekuqinisekisa** ku-imeyili lehlobene nakhawunti yakho (noma i-imeyili lowayinike njengesihambi).
 
-Nangabe umcimbi sewugcwele futsi lelibandla lakini livumele luhlu lwekulindza, sinyatselo sekucala sikhombisa: *"This event is full. You can join the waitlist and we will notify you if a spot opens."* Cedzela kubhalisa njengalokujwayelekile — inkhokhelo iyawelwa ngesikhatsi ulindzile eluhlwini. Nasekuvula lisikhala, utawutfola i-imeyili; nangabe kunenkhokhelo ledzingekako, ifaka sixhumanisi sekucedzela yona. Ungahlola nesimo sakho futsi ukhokhe kusuka [Kubhaliswa Kwami](./my-registrations.md).
+Uma ukhetse **Bhalisa Bese Ukhokha Kamuva**, ipoludi lelilunga likhombisa **Kubhalisa Kuyalindzela** kuncandvo, nelebhajhi **Kuyalindzela**, "Sikhala sakho sibanjelwe" umcimbi, nelibalansi lelikhokhwako (njengesibonelo, "Libalansi lelikhokhwako $25.00 kwe-$25.00").
 
-## Kushintja nome Kukhansela Kubhaliswa
+Uma usubhalisile, linki lekutfola **Bhalisa** ekhasini lelilunga lakho liyashintjwa ngesimo sakho (**Ubhalisile**, **Kuyalindzela**, noma **Ulindzele Uhlu**), futsi umcimbi uvela ngaphansi kwe-**Imicimbi Lezayo** esikrinini sakho sasekhaya utfulwe **Kubhalisa**.
 
-Nangabe ungenile, ungahlela nome ukhansele kubhaliswa kwakho wena ngekwakho kusuka ekhasini le-**Registrations** eliphothalini yemalungu — bona [Kubhaliswa Kwami](./my-registrations.md). Tivakashi kufanele titsintsane nehhovisi lelibandla, futsi bebasebenti bangenta lutjintjo kusuka ekhasini lekubhaliswa le-B1 Admin.
+## Kujoyina Uhlu Lokulindzela
 
-## Imibhalo Lehlobene
+Uma umcimbi ugcwele futsi sonto lakho linike uhlu lokulindzela, sinyatselo sekucala simbonisa: *"Umcimbi uyagcwala. Ungajoyina uhlu lokulindzela futsi sitakwatisa uma kuvuleka sikhala."* Qedela kubhalisa njengejwayelekile — inkhokhelo iyadlulwa uma usohlwini lokulindzela. Uma sikhala sivuleka, uyakutfola i-imeyili; uma inkhokhelo ifuneka, iyakubandakanya lixhumanisi lekuyiphetsa. Ungabuka simo sakho futsi ukhokhe kusuka ku-[Kubhalisa Kwami](./my-registrations.md).
 
-- [Simo Sonkhe Semicimbi](./index.md) -- Cwaninga imicimbi letako lenekubhaliswa
-- [Kubhaliswa Kwami](./my-registrations.md) -- Bona, hlela, khokha imali losele wonelwe yona, futsi ukhansele kubhaliswa kwakho
-- [Kwenta Imnikelo](../giving/making-donations.md) -- Yenta umnikelo kanye nekubamba incenye emcimbini
+## Kushintja Noma Kukhansela Kubhalisa
+
+Uma ungenile, ungashintja noma ukhansele kubhalisa kwakho ngekwakho esikhashini se-**Kubhalisa** se-member portal — bona [Kubhalisa Kwami](./my-registrations.md). Tisihambi kufanele tiyoxhumana nelihhovisi lesonto, futsi basebenti bangenta lolushintjo kusikhasi sekubhalisa se-B1 Admin.
+
+## Tihloko Letihambisanako
+
+- [Umbukiso Wemicimbi](./index.md) -- Hlola emicimbi lelayo lenekubhalisa
+- [Kubhalisa Kwami](./my-registrations.md) -- Bona, hlela, khokha tibalansi, futsi khansela kubhalisa kwakho
+- [Ukwenta Tinikelo](../giving/making-donations.md) -- Nikela ngemali ngesikhatsi sekubamba iqhaza emcimbini

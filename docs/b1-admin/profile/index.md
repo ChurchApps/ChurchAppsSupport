@@ -8,7 +8,7 @@ description: "Update your name, email, password, two-factor sign-in, theme, and 
 
 <div class="article-intro">
 
-The Profile section lets you manage your personal account settings in ChurchApps. Your profile is shared across all ChurchApps tools, so changes you make here apply everywhere -- from B1 Admin to the B1 Mobile app.
+The Profile section lets you manage your personal account settings in ChurchApps. Your profile is shared across all ChurchApps tools, so changes you make here apply everywhere -- from B1 Admin to the B1 App.
 
 </div>
 
@@ -29,7 +29,7 @@ From the Profile section, you can:
 The Profile area has the following pages:
 
 1. **[Managing Your Profile](./managing-profile.md)** -- Edit your personal information, change your password, manage linked accounts, turn on two-factor sign-in, adjust theme preferences, and handle account deletion.
-2. **[Approving Profile Changes](./approving-profile-changes.md)** -- Review and approve profile update requests submitted by members through B1 Mobile.
+2. **[Approving Profile Changes](./approving-profile-changes.md)** -- Review and approve profile update requests submitted by members through the B1 App.
 3. **[Managing Devices](./devices.md)** -- View, add, and manage ChurchAppsPlayer devices paired with your account.
 
 :::tip

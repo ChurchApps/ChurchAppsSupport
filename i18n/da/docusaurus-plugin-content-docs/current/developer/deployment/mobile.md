@@ -1,48 +1,58 @@
 ---
-title: "Mobilinstallation"
-description: "Gennemgå opbygning af Android- og iOS-udgivelser af B1 Mobile-appen med Expo EAS, indsendelse til appbutikkerne og udrulning af OTA-opdateringer."
+title: "Mobildistribution"
+description: "Gennemgang af hvordan du bygger Android- og iOS-udgivelser af Expo-apps såsom B1 Checkin, indsender dem til app-butikkerne og udgiver OTA-opdateringer med EAS."
 ---
 
-# Mobilinstallation
+# Mobildistribution
 
 <div class="article-intro">
 
-ChurchApps mobilapps bygges og implementeres ved hjælp af **Expo EAS Build** og distribueres gennem app-butikkerne. Denne side dækker byggeri, indlevering og pushing af over-the-air-opdateringer til både Android og iOS.
+ChurchApps' Expo-mobilapps, såsom B1 Checkin, bygges med **Expo EAS Build** eller en lokal Gradle-build og distribueres via app-butikkerne. Denne side dækker opbygning, indsendelse og udgivelse af over-the-air-opdateringer til både Android og iOS, med B1 Checkin som eksempel.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du begynder</h4>
+<h4>Før du starter</h4>
 
-- Opsætning af mobilapp lokalt -- se [B1 Mobile](../mobile/b1-mobile.md)
-- Installer og konfigurér [EAS CLI](https://docs.expo.dev/eas/)
+- Opsæt appen lokalt -- se [Mobilapps](../mobile/index.md#local-setup)
+- Installér og konfigurér [EAS CLI](https://docs.expo.dev/eas/)
 - Har adgang til Google Play Console (Android) og/eller Apple App Store Connect (iOS)
 
 </div>
 
-## Bygger
+## Opbygning
 
 ### Android
 
+Android-udgivelsesbuilds køres lokalt og signeres med udgivelsesnøglen fra EAS. Hent den én gang med `npx eas-cli credentials -p android` (vælg **credentials.json: Download credentials from EAS**), og kør derefter:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Google Play-bundlen skrives til `android/app/build/outputs/bundle/release/app-release.aab`. Vil du i stedet bygge på EAS, kører du `yarn build:android:eas`.
 
 ### iOS
 
+iOS-builds kører altid på EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Indsend til App Stores
+## Indsendelse til app-butikkerne
 
 ### Android -- Google Play Store
 
-Efter en vellykket EAS-build indsends Android-binæren (AAB) til Google Play Store gennem Play Console.
+Upload AAB-filen via Play Console, eller indsend den med EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
-Indsend iOS-bygget direkte via EAS:
+Indsend iOS-buildet direkte via EAS:
 
 ```bash
 eas submit --platform ios
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## OTA-opdateringer
 
-For JavaScript-kun-ændringer, der ikke kræver app store-gennemsyn, skal du bruge over-the-air (OTA) opdateringer:
+Til ændringer af kun JavaScript, som ikke kræver gennemgang i app-butikken, bruger du over-the-air-opdateringer (OTA):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Dette bruger EAS Update til at skubbe ændringer direkte til brugerne uden en fuld butikindsendelse.
+Dette bruger EAS Update til at sende ændringer direkte til brugerne uden en fuld indsendelse til butikken.
 
 :::tip
-OTA-opdateringer er betydeligt hurtigere end butiksbyg -- ændringer kan nå brugerne på få minutter i stedet for dage. Brug dem til fejlrettelser, kopieringsændringer og mindre brugergrænsefladeændringer, der ikke involverer native code-ændringer.
+OTA-opdateringer er betydeligt hurtigere end butiksbuilds -- ændringer kan nå brugerne på få minutter i stedet for dage. Brug dem til fejlrettelser, tekstændringer og mindre UI-justeringer, som ikke involverer ændringer i native kode.
 :::
 
 ## Versionsnumre
 
-Før oprettelse af en butiksbygging skal versionsnumre opdateres i flere filer:
+Før du opretter en butiksbuild, skal versionsnumrene opdateres i flere filer:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` og `versionCode`)
+
+iOS-buildnummeret forhøjes automatisk af EAS.
 
 :::warning
-Hvis du glemmer at opdatere versionsnumre i alle filer, vil det forårsage bygnefejl eller afvisning af app store. Dobbeltkontroller hver fil, der er anført ovenfor, før du starter en produktionsbyg.
+Hvis du glemmer at opdatere versionsnumrene i alle filer, vil det medføre buildfejl eller afvisning fra app-butikken. Tjek hver fil på listen igen, før du starter en produktionsbuild.
 :::
 
 ## Relaterede artikler
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Lokalt setup og udviklingsvejledning
-- **[API-installation](./apis.md)** -- Installation af backend-API'erne
-- **[Webapp-installation](./web-apps.md)** -- Installation af frontend-webapplikationer
+- **[Mobilapps](../mobile/index.md)** -- Lokal opsætning og udviklingsguide
+- **[API-distribution](./apis.md)** -- Udrulning af backend-API'erne
+- **[Webapp-distribution](./web-apps.md)** -- Udrulning af frontend-webapplikationerne

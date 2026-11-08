@@ -1,41 +1,41 @@
 ---
 title: "Tilpasning"
-description: "Lær hvordan du skjuler seksjoner, roller eller handlinger i en Lessons.church-leksjon og endrer rekkefølgen på innholdet, enten for ett klasserom eller for alle klasserommene i kirken din."
+description: "Lær hvordan du skjuler seksjoner, roller eller handlinger i en Lessons.church-leksjon og endrer rekkefølgen på innholdet, enten for én klasse eller for alle klasser i menigheten din."
 ---
 
 # Tilpasning
 
 <div class="article-intro">
 
-Lessons.church tilbyr et bibliotek med ferdig leksjonsinnhold, men hver menighet er forskjellig. Tilpasningsfunksjonene lar deg skreddersy leksjonsinnhold for å passe dine spesifikke klasserom, undervisningsstil og aldersgrupper slik at de frivillige bare ser det som er relevant for dem.
+Lessons.church tilbyr et bibliotek med ferdige leksjonsressurser, men hver menighet er forskjellig. Tilpasningsfunksjonene lar deg skreddersy leksjonsinnholdet slik at det passer til dine spesifikke klasserom, undervisningsstil og aldersgrupper, slik at frivillige bare ser det som er relevant for dem.
 
 </div>
 
 ## Hvorfor tilpasse?
 
-Leksjonsinnhold på Lessons.church er designet for å være fleksibelt. En enkelt leksjon kan inkludere seksjoner for flere aldersgrupper, valgfrie aktiviteter eller roller som ikke gjelder for alle klasserom. I stedet for å be de frivillige om å mentalt hoppe over deler som ikke gjelder, kan du tilpasse leksjonen slik at de bare ser det som er relevant for dem.
+Leksjonsinnholdet på Lessons.church er laget for å være fleksibelt. En enkelt leksjon kan inneholde seksjoner for flere aldersgrupper, valgfrie aktiviteter eller roller som ikke gjelder for alle klasserom. I stedet for at frivillige må hoppe over deler som ikke passer, kan du tilpasse leksjonen slik at de bare ser det som er relevant for dem.
 
-For eksempel kan en leksjon inkludere en hobbyaktivitet som fungerer utmerket for småbarn, men som ikke passer for femteklassinger. Med tilpasning kan du skjule den seksjonen for den eldre gruppen mens du beholder den for den yngre.
+For eksempel kan en leksjon inneholde en håndverksaktivitet som fungerer godt for førskolebarn, men som ikke passer for femteklassingene dine. Med tilpasning kan du skjule den seksjonen for den eldre gruppen og beholde den for den yngre.
 
 ## Hva du kan tilpasse
 
-- **Fjerne seksjoner** -- Skjul hele seksjoner av en leksjon som ikke gjelder for et spesifikt klasserom eller aldersgruppe.
-- **Skjule roller eller handlinger** -- Fjern individuelle roller eller handlinger innenfor en seksjon hvis de ikke trengs.
-- **Omorganisere innhold** -- Omordne seksjoner og handlinger for å samsvare med flyten du foretrekker for klasserommet ditt.
+- **Fjerne seksjoner** -- Fjern hele seksjoner av en leksjon som ikke gjelder for et bestemt klasserom eller en aldersgruppe.
+- **Fjerne roller eller handlinger** -- Fjern enkeltroller eller handlinger innenfor en seksjon hvis de ikke er nødvendige.
+- **Endre rekkefølgen på innholdet** -- Flytt om på seksjoner og handlinger slik at de følger den flyten du foretrekker for klasserommet ditt.
 
-## Klasseromsspesifikk eller global
+## For én klasse eller globalt
 
-Når du lagrer en tilpasning, velger du hvor bredt den gjelder:
+Hver gang du gjør en endring, velger du hvor bredt den skal gjelde:
 
-- **Enkelt klasserom** -- Tilpasningen påvirker bare gjeldende klasserom. Andre klasserom ser det opprinnelige innholdet.
-- **Alle klasserom** -- Tilpasningen gjelder for alle klasserom i menigheten din.
+- **Denne klassen** -- Endringen gjelder bare for det gjeldende klasserommet. Andre klasserom ser det opprinnelige innholdet.
+- **Alle klassene** -- Endringen gjelder for alle klasserom i menigheten din.
 
-Denne fleksibiliteten betyr at du kan sette opp ulike visninger av samme leksjon for ulike aldersgrupper, eller gjøre en endring som gjelder overalt på en gang.
+Denne fleksibiliteten gjør at du kan sette opp ulike visninger av den samme leksjonen for ulike aldersgrupper, eller gjøre en endring som gjelder overalt samtidig.
 
 :::tip
-Hvis du er ny med tilpasning, start med et enkelt klasserom for å se hvordan det fungerer før du anvender endringer på tvers av alle klasserom.
+Hvis du er ny på tilpasning, start med ett enkelt klasserom for å se hvordan det fungerer, før du bruker endringer på alle klasserom.
 :::
 
 ## Neste steg
 
-- [Tilpasse leksjoner](./customizing-lessons.md) -- Følg trinn-for-trinn-guiden for å tilpasse din første leksjon
+- [Tilpasse leksjoner](./customizing-lessons.md) -- Følg den trinnvise veiledningen for å tilpasse din første leksjon

@@ -1,14 +1,14 @@
 ---
-title: "B1.church Üye Portalında Kendi Kendine Check-In"
+title: "B1.church Üye Portalında Self Check-In"
 sidebar_label: "Self Check-In"
-description: "B1.church üye portalından kendinizi ve ailenizi birkaç hızlı adımda, ibadet saatlerini ve grupları seçerek bir hizmete check-in yapın."
+description: "B1.church üye portalından birkaç hızlı adımda kendinizi ve hane halkınızı bir ibadete check-in yapın, ibadet saatlerini ve grupları seçin."
 ---
 
-# Kendi Kendine Yoklama
+# Self Check-In
 
 <div class="article-intro">
 
-Kendi kendine yoklama işlemi, birkaç adımda kendiniz ve hane halkınız için katılımı kaydetmenizi sağlar. Kilisedeki fiziksel bir kiosk kullanmanın hızlı bir alternatifidir.
+Self check-in süreci, birkaç adımda kendiniz ve hane halkınız için katılımı kaydetmenizi sağlar. Kilisedeki fiziksel bir kiosk kullanmaya hızlı bir alternatiftir.
 
 </div>
 
@@ -16,53 +16,58 @@ Kendi kendine yoklama işlemi, birkaç adımda kendiniz ve hane halkınız için
 <h4>Başlamadan Önce</h4>
 
 - B1.church hesabınıza [giriş yapmış](../getting-started/logging-in.md) olmanız gerekir.
-- Hane halkı üyelerinizin hesabınıza bağlı olması gerekir. Bir aile üyesi eksikse, kilise yöneticinizden onu hane halkınıza eklemesini isteyin.
+- Hane halkınızın üyeleri hesabınıza bağlı olmalıdır. Bir aile üyesi eksikse, kilise yöneticinizden onu hane halkınıza eklemesini isteyin.
 
 </div>
 
-## Yoklama Akışı
+## Check-In Akışı
 
-Yoklama üç adımlı basit bir süreci izler. Başlamak için [sekme çubuğundan veya Daha Fazla sayfasından](../getting-started/navigating.md) **Yoklama**'yı açın.
+Check-in, basit üç adımlı bir süreci izler. Başlamak için [sekme çubuğundan veya Daha Fazla sayfasından](../getting-started/navigating.md) **Check-In**'i açın.
 
 ### Adım 1: Bir Ibadet Seçin
 
-Yoklama sayfasını açtığınızda, mevcut ibadetlerin bir listesini göreceksiniz (örneğin "Pazar Sabahı" veya "Çarşamba Akşamı"). Her ibadet kartı, kiliseniz birden fazla yerleşkeye sahipse ibadet adını ve yerleşkeyi gösterir.
+Check-in sayfasını açtığınızda, mevcut ibadetlerin bir listesini görürsünüz (örneğin "Pazar Sabahı" veya "Çarşamba Akşamı"). Her ibadet kartı, ibadet adını ve kiliseniz birden fazla şubeye sahipse kampüsü gösterir.
 
-Bir ibadeti seçmek ve bir sonraki adıma geçmek için ibadete tıklayın.
+Bir ibadeti seçmek ve sonraki adıma geçmek için ibadete tıklayın.
 
 ### Adım 2: Hane Halkı Üyelerini ve Grupları Seçin
 
-Bir ibadet seçtikten sonra, **Burada olanlar** başlığı altında hane halkı üyelerinizi göreceksiniz. Katılan her kişi için:
+Bir ibadet seçtikten sonra, **Kim burada?** başlığı altında hane halkı üyelerinizi görürsünüz. Katılan her kişi için:
 
-1. Kaydını genişletmek için bir hane halkı üyesine dokunun.
-2. Seçtiğiniz ibadet için mevcut **ibadet saatlerini** göreceksiniz. Kiliseniz bir ibadet saati için bir yoklama programı belirlediyse, yalnızca o saat için yoklama açıkken seçebilirsiniz (örneğin, ibadetten 30 dakika öncesinden bitiminden kısa bir süre sonrasına kadar). Bu süre dışında ibadet saati **Kapalı** olarak listelenir ve biliniyorsa ne zaman açılacağı da belirtilir. Örneğin, **Kapalı · Paz 09:30 açılır**.
-3. Kişinin hangi gruba yoklamasının yapılacağını seçmek için bir ibadet saatinin yanındaki **Grup Seç**'e dokunun (örneğin "Ana Ibadet," "Çocuk Odası 1" veya "Genç Grup").
+1. Girişini genişletmek için bir hane halkı üyesine dokunun.
+2. Seçtiğiniz ibadet için mevcut **ibadet saatlerini** görürsünüz. Kiliseniz bir ibadet saati için bir check-in programı belirlediyse, yalnızca o saat için check-in açıkken seçebilirsiniz (örneğin, ibadetten 30 dakika öncesinden bitiminden kısa bir süre sonrasına kadar). Bu aralık dışında ibadet saati **Kapalı** olarak listelenir ve biliniyorsa ne zaman açılacağı da belirtilir -- örneğin **Kapalı · Paz 09:30 açılır**.
+3. Kişinin hangi gruba check-in yapılacağını seçmek için bir ibadet saatinin yanındaki **Grup Seç**'e dokunun (örneğin "Ana Ibadet," "Çocuk Odası 1" veya "Gençlik Grubu").
 4. Katılan her hane halkı üyesi için tekrarlayın.
 
-Her hane halkı üyesini yoklamanız gerekmez. Yalnızca gerçekten orada bulunan kişiler için genişletmeniz ve grup atamanız yeterlidir.
+Hane halkınızın her üyesinin check-in yapması gerekmez -- yalnızca gerçekten burada olan kişiler için genişletin ve grup atayın.
+
+Bugün bu ibadet için zaten check-in yapmış olan herkesin adının yanında bir **Zaten Check-In Yapıldı** rozeti görünür.
 
 ### Adım 3: Onay
 
-Katılan herkes için grupları seçtikten sonra, sayfanın altındaki düğmeye dokunun. Düğme, seçtiğiniz kişi sayısını gösterir. Örneğin, **1 kişi için yoklama yap** veya **3 kişi için yoklama yap**.
+Katılan herkes için grupları seçtikten sonra, sayfanın altındaki düğmeye dokunun. Seçtiğiniz kişileri sayar -- örneğin **1 kişi için check-in yap** veya **3 kişi için check-in yap**.
 
-Yoklamanızın tamamlandığını ve katılımınızın kaydedildiğini gösteren bir onay göreceksiniz. Kısa bir süre sonra sayfa ibadet listesine döner ve bir sonraki yoklama için hazır olur.
+Seçtiğiniz biri bu ibadet için bugün zaten check-in yaptıysa, **Zaten Check-In Yapıldı** penceresi önce onları adlandırır. Gruplarını güncellemek için **Yeniden Check-In Yap**'a, geri dönmek için **İptal**'e dokunun.
 
-Kiliseniz bir yoklama istasyonunda isim etiketleri yazdırıyorsa, bunun yerine bir QR kodu ve bir güvenlik kodu ile birlikte **Yoklamanız yapıldı!** mesajını görürsünüz. İsim etiketlerinizi yazdırmak için kodu bir yoklama istasyonunda gösterin, ardından **Bitti**'ye dokunun. Bir B1 Checkin kioskunda **Kodu tara**'ya dokunun ve QR kodunu kameraya tutun. Bkz. [Telefonla Yoklama için Etiket Yazdırma](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+Check-in'inizin tamamlandığını ve katılımınızın kaydedildiğini gösteren bir onay görürsünüz. Kısa bir süre sonra sayfa ibadet listesine döner ve bir sonraki check-in için hazır olur.
 
-Seçtiğiniz ibadet için hane halkınız zaten yoklanmışsa, **Burada olanlar** başlığının yanında bir **Yoklama kodunu göster** bağlantısı görünür. Bu bağlantıya dokunarak QR kodunu ve güvenlik kodunu tekrar görüntüleyebilirsiniz. Örneğin, bir yoklama istasyonuna ulaşmadan sayfayı kapattıysanız bu işe yarar.
+Kiliseniz bir check-in istasyonunda isim etiketleri yazdırıyorsa, bunun yerine bir QR kodu ve bir güvenlik kodu ile **Check-in yaptınız!** mesajını görürsünüz. İsim etiketlerinizi yazdırmak için kodu bir check-in istasyonunda gösterin, ardından **Tamam**'a dokunun. B1 Checkin kiosk'ta **Kodu tara**'ya dokunun ve QR kodunu kameraya tutun -- bkz. [Telefonla Check-In İçin Etiket Yazdırma](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+
+Hane halkınız seçtiğiniz ibadet için zaten check-in yaptıysa, **Kim burada?** başlığının yanında bir **Check-in kodunu göster** bağlantısı belirir. QR kodunu ve güvenlik kodunu yeniden getirmek için dokunun -- örneğin, bir check-in istasyonuna ulaşmadan sayfayı kapattıysanız.
 
 :::tip
-Yoklamayı tamamlamadan önce bir grup seçimini değiştirmeniz gerekiyorsa, herhangi bir ibadet saatinin yanındaki **Değiştir** düğmesine dokunarak farklı bir grup seçebilirsiniz.
+Check-in'i tamamlamadan önce bir grup seçimini değiştirmeniz gerekiyorsa, farklı bir grup seçmek için herhangi bir ibadet saatinin yanındaki **Değiştir** düğmesine dokunun.
 :::
 
 ## Bilmeniz Gerekenler
 
-- Yalnızca hesabınıza bağlı hane halkı üyelerini yoklayabilirsiniz. Bir aile üyesi eksikse, kilise yöneticinizden onu hane halkınıza eklemesini isteyin.
-- Yoklama sayfasında hiçbir ibadet görünmüyorsa, kiliseniz şu anda yoklama için yapılandırılmış bir ibadet bulundurmuyor olabilir.
-- Bir ibadet seçtiğinizde "Yoklama Paz 09:30'da açılır." (veya "Bu ibadet için yoklama şu anda açık değil.") gibi bir mesaj görürseniz, o ibadetin hiçbir saati şu anda yoklama süresi içinde değildir. Yoklama açıldığında tekrar deneyin.
-- Hane halkınız daha erken bir ibadet saati için yoklandıysa, daha sonraki bir ibadet saati açıldığında, erken saat kapanmış olsa bile geri dönüp o saat için yoklama yapabilirsiniz.
-- Seçtiğiniz bir oda doluysa veya yoklama için kapalıysa, "Seçtiğiniz oda dolu veya yoklama için kapalı. Lütfen bir gönüllüye başvurun." mesajını görürsünüz.
+- Yalnızca hesabınıza bağlı hane halkı üyelerine check-in yapabilirsiniz. Bir aile üyesi eksikse, kilise yöneticinizden onu hane halkınıza eklemesini isteyin.
+- Check-in sayfasında hiç ibadet görünmüyorsa, kiliseniz şu anda check-in için yapılandırılmış bir ibadet olmayabilir.
+- Bir ibadet seçip "Check-in Paz 09:30'da açılır." (veya "Bu ibadet için check-in şu anda açık değil.") gibi bir mesaj görürseniz, o ibadetin saatlerinin hiçbiri şu anda check-in aralığında değildir. Check-in açıldığında tekrar deneyin.
+- Hane halkınız daha erken bir ibadet saati için check-in yaptıysa, daha sonraki bir ibadet saati açıldığında, önceki saat kapanmış olsa bile geri dönüp check-in yapabilirsiniz.
+- Seçtiğiniz bir oda doluysa veya kapalıysa, "Seçtiğiniz bir oda dolu veya check-in için kapalı. Lütfen bir gönüllüye başvurun." mesajını görürsünüz.
+- Bir çocuk odasında başka bir çocuk için şu anda yeterli sayıda check-in yapmış gönüllü yoksa, odayı adlandıran bir mesaj görürsünüz -- örneğin, "Çocuk Odası 1'de şu anda başka bir çocuk için yeterli gönüllü yok. Lütfen farklı bir oda seçin veya bir gönüllüye başvurun."
 
 :::warning
-Yoklama yalnızca kiliseniz etkin ibadetler yapılandırdığında kullanılabilir. Hiçbir ibadet listelenmiyorsa, kendi kendine yoklamanın etkin olup olmadığını öğrenmek için kilise ofisinizle iletişime geçin.
+Check-in yalnızca kiliseniz etkin ibadetler yapılandırdığında kullanılabilir. Hiçbir ibadet listelenmiyorsa, self check-in'in etkin olup olmadığını öğrenmek için kilise ofisinizle iletişime geçin.
 :::

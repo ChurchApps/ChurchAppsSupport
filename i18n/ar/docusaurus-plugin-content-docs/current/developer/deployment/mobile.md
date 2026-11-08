@@ -1,22 +1,22 @@
 ---
-title: "نشر تطبيق الجوال"
-description: "يشرح بناء إصدارات Android وiOS لتطبيق B1 Mobile باستخدام Expo EAS، وإرسالها إلى متاجر التطبيقات، ودفع تحديثات OTA."
+title: "نشر تطبيقات الجوال"
+description: "يشرح كيفية بناء إصدارات Android و iOS لتطبيقات Expo مثل B1 Checkin، ورفعها إلى متاجر التطبيقات، ودفع تحديثات OTA باستخدام EAS."
 ---
 
-# نشر تطبيق الجوال
+# نشر تطبيقات الجوال
 
 <div class="article-intro">
 
-تُبنى تطبيقات ChurchApps للجوال وتُنشر باستخدام **Expo EAS Build**، وتُوزَّع عبر متاجر التطبيقات. تغطي هذه الصفحة بناء التطبيقات وتقديمها وإرسال تحديثات OTA (عبر الهواء) لكل من Android وiOS.
+تُبنى تطبيقات Expo للجوال من ChurchApps، مثل B1 Checkin، باستخدام **Expo EAS Build** أو بناء Gradle محلي، وتُوزَّع عبر متاجر التطبيقات. تغطي هذه الصفحة بناء الإصدارات ورفعها ودفع تحديثات عبر الهواء (OTA) لكل من Android و iOS، مع استخدام B1 Checkin كمثال.
 
 </div>
 
 <div class="prereqs">
 <h4>قبل أن تبدأ</h4>
 
-- إعداد تطبيق الجوال محليًا — راجع [B1 Mobile](../mobile/b1-mobile.md)
-- تثبيت [EAS CLI](https://docs.expo.dev/eas/) وإعداده
-- الحصول على صلاحية الوصول إلى Google Play Console (لنظام Android) و/أو Apple App Store Connect (لنظام iOS)
+- جهّز التطبيق محلياً -- راجع [تطبيقات الجوال](../mobile/index.md#local-setup)
+- ثبّت [EAS CLI](https://docs.expo.dev/eas/) وأعدّه
+- تأكد من امتلاكك صلاحية الوصول إلى Google Play Console (لنظام Android) و/أو Apple App Store Connect (لنظام iOS)
 
 </div>
 
@@ -24,25 +24,35 @@ description: "يشرح بناء إصدارات Android وiOS لتطبيق B1 Mob
 
 ### Android
 
+تُنفَّذ إصدارات Android النهائية محلياً وتُوقَّع بمفتاح التوقيع الإصدار من EAS. نزّله مرة واحدة باستخدام `npx eas-cli credentials -p android` (اختر **credentials.json: Download credentials from EAS**)، ثم شغّل:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+يُكتب حزمة Google Play في المسار `android/app/build/outputs/bundle/release/app-release.aab`. للبناء على EAS بدلاً من ذلك، شغّل `yarn build:android:eas`.
 
 ### iOS
 
+تُنفَّذ إصدارات iOS دائماً على EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## تقديم التطبيق إلى متاجر التطبيقات
+## الرفع إلى متاجر التطبيقات
 
-### Android — متجر Google Play
+### Android -- متجر Google Play
 
-بعد نجاح بناء EAS، يُقدَّم ملف Android الثنائي (AAB) إلى متجر Google Play عبر Play Console.
+ارفع ملف AAB عبر Play Console، أو أرسله باستخدام EAS:
 
-### iOS — App Store من Apple
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
-قدِّم بناء iOS مباشرةً عبر EAS:
+### iOS -- متجر Apple App Store
+
+أرسل إصدار iOS مباشرة عبر EAS:
 
 ```bash
 eas submit --platform ios
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## تحديثات OTA
 
-للتغييرات المقتصرة على JavaScript والتي لا تتطلب مراجعة من متجر التطبيقات، استخدم تحديثات OTA (عبر الهواء):
+للتغييرات المتعلقة بجافاسكربت فقط، والتي لا تتطلب مراجعة متجر التطبيقات، استخدم تحديثات عبر الهواء (OTA):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-يستخدم هذا الأمر EAS Update لدفع التغييرات مباشرةً إلى المستخدمين دون الحاجة إلى تقديم كامل للمتجر.
+يستخدم هذا الأمر EAS Update لإرسال التغييرات مباشرة إلى المستخدمين دون الحاجة إلى رفع كامل إلى المتجر.
 
 :::tip
-تحديثات OTA أسرع بكثير من بناءات المتجر، إذ قد تصل التغييرات إلى المستخدمين خلال دقائق بدلًا من أيام. استخدمها لإصلاح الأخطاء وتعديلات النصوص وتحسينات واجهة المستخدم البسيطة التي لا تتضمن تغييرات في الكود الأصلي.
+تحديثات OTA أسرع بكثير من إصدارات المتاجر، إذ يمكن أن تصل التغييرات إلى المستخدمين في دقائق بدلاً من أيام. استخدمها لإصلاح الأخطاء وتعديلات النصوص والتحسينات البسيطة في الواجهة التي لا تتضمن تغييرات في الكود الأصلي.
 :::
 
 ## أرقام الإصدارات
 
-قبل إنشاء بناء جديد للمتجر، يجب تحديث أرقام الإصدارات في عدة ملفات:
+قبل إنشاء إصدار للمتجر، يجب تحديث أرقام الإصدارات في عدة ملفات:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` و`versionCode`)
+
+يُزاد رقم بناء iOS تلقائياً بواسطة EAS.
 
 :::warning
-إن نسيان تحديث أرقام الإصدارات في جميع الملفات سيؤدي إلى فشل البناء أو رفض التطبيق من متجر التطبيقات. تحقّق مرتين من كل ملف مذكور أعلاه قبل بدء بناء الإنتاج.
+إن نسيان تحديث أرقام الإصدارات في جميع الملفات سيؤدي إلى فشل البناء أو رفض التطبيق من متجر التطبيقات. تحقق مرة أخرى من كل ملف مذكور أعلاه قبل بدء بناء الإنتاج.
 :::
 
 ## مقالات ذات صلة
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** — دليل الإعداد المحلي والتطوير
-- **[API Deployment](./apis.md)** — نشر واجهات برمجة التطبيقات الخلفية
-- **[Web App Deployment](./web-apps.md)** — نشر تطبيقات الويب الأمامية
+- **[تطبيقات الجوال](../mobile/index.md)** -- دليل الإعداد المحلي والتطوير
+- **[نشر واجهات برمجة التطبيقات](./apis.md)** -- نشر الواجهات الخلفية
+- **[نشر تطبيقات الويب](./web-apps.md)** -- نشر تطبيقات الواجهة الأمامية للويب

@@ -1,39 +1,43 @@
 ---
-title: "Tilungiselelo Tephrofayili Nemidivayisi ku-B1 Admin"
-sidebar_label: "Iphrofayela"
-description: "Vuselela ligama, imeyili, liphasiwedi, kuqinisekisa kabili, sitayela, nemidivayisi exhunyiwe kuphrofayili yakho ye-B1 Admin, nekuvuma tishintjo tetiprofayili."
+title: "Tilungiselelo Tephrofayili Netintfo Letisetjentiswa Ku-B1 Admin"
+sidebar_label: "Iphrofayili"
+description: "Vuselela ligama lakho, i-imeyili, liphasiwedi, kungena ngemagama amabili, litimu, kanye netintfo letixhunyiwe kuphrofayili yakho ye-B1 Admin, futsi uvume tinguquko tephrofayili letitsatfelwe ngemalungu."
 ---
 
-# Iphrofayela
+# Iphrofayili
 
 <div class="article-intro">
 
-Incenye ye-Profile ikuvumela kutsi uphatse tilungiselelo tekhawunti yakho lomuntfu ku-ChurchApps. Iphrofayela yakho yabelwana kuto tonkhe tithulusi te-ChurchApps, ngako tutjintjo lotenta lapha tisebenta yonkhe indzawo -- kusuka ku-B1 Admin kuya ku-B1 Mobile app.
+Umhlaba wePhrofayili uvumela kuphatsa tilungiselelo takho talomuntfu te-akhawunti kuChurchApps. Iphrofayili yakho yabelwana kuzo zonkhe tikhelo te-ChurchApps, ngako tinguquko letenta lapha tisebenta kukho konkhe -- kusukela ku-B1 Admin kuya ku-B1 App.
 
 </div>
 
-## Yini Longayenta
+## Loungakwenta Ngako
 
-Kusuka encenyeni ye-Profile, ungakwati:
+Kusuka emhlabeni wePhrofayili, ungakwenta:
 
-- **Kubuyeketa libito nemeyili yakho** -- Gcina imininingwane yakho yekuxhumana ihlala ilungile.
-- **Kutjintja iphasiwedi** -- Misa iphasiwedi lensha ye-akhawunti yakho.
-- **Kutjintja tithimu** -- Shintjanisa emkhatsini we-light ne-dark mode kute kuhambisane nentsandvo yakho.
-- **Kuphatsa emadivayisi lahlanganisiwe** -- Buka futsi ulawule kutsi ngutiphi tidivayisi te-ChurchAppsPlayer letihlanganiswe ne-akhawunti yakho.
-- **Kubuka ema-akhawunti lahlanganisiwe** -- Buka futsi uphatse noma ngutiphi tinsita tangaphandle letihlanganiswe ne-akhawunti yakho ye-ChurchApps.
+- **Vuselela ligama lakho ne-imeyili** -- Gcina lulwazi lwakho lolunxusene nawe lusha.
+- **Shintja liphasiwedi lakho** -- Setela liphasiwedi lelisha le-akhawunti yakho.
+- **Vula kungena ngemagama amabili** -- Dinga likhodi lelivela kuhlelo lwe-authenticator nawungena. Bona [Kungena Ngemagama Amabili](./managing-profile.md#two-factor-sign-in).
+- **Shintsha litimu** -- Shintsha phakathi kwemodi yekukhanya nemnyama kusuka kumenyu yemsebenzisi (tfwebela esithombeni sakho sephrofayili ekhoneni lelingenhla lesekhoneni).
+- **Phatsa tintfo letixhunyiwe** -- Bona nelawula ti-ChurchAppsPlayer letibhangqwe ne-akhawunti yakho.
+- **Bona ti-akhawunti letihlanganisiwe** -- Bona nelawula tinsita letingaphandle letixhunyiwe ne-akhawunti yakho ye-ChurchApps.
+- **Vuma ticelo tekushintja liphrofayili** -- Hlola nensa tinguquko letitsatfelwe ngemalungu.
 
-## Tincenye Letincane Te-Profile
+## Tikhasi Tetiphrofayili
 
-Indzawo ye-Profile inemakhasi lalandzelako:
+Indzawo yephrofayili inemakhasi alandzelako:
 
-1. **[Managing Your Profile](./managing-profile.md)** -- Hlela imininingwane yakho lomuntfu, tjintja iphasiwedi yakho, phatsa ema-akhawunti lahlanganisiwe, lungisa tintsandvo tethimu, futsi ulawule kususwa kwe-akhawunti.
-2. **[Managing Devices](./devices.md)** -- Buka, wengete, futsi uphatse emadivayisi e-ChurchAppsPlayer lahlanganiswe ne-akhawunti yakho.
+1. **[Kuphatsa Iphrofayili Yakho](./managing-profile.md)** -- Hlela tintfo takho talomuntfu, shintja liphasiwedi, phatsa ti-akhawunti letihlanganisiwe, vula kungena ngemagama amabili, lungisa tintsandvo tetimo, nelphatsa kususwa kwe-akhawunti.
+2. **[Kuvuma Tinguquko Tephrofayili](./approving-profile-changes.md)** -- Hlola nevume ticelo tekuvuselela iphrofayili letitsatfelwe ngemalungu ngeB1 App.
+3. **[Kuphatsa Tintfo Letisetjentiswa](./devices.md)** -- Bona, engeta, nephatsa ti-ChurchAppsPlayer letibhangqwe ne-akhawunti yakho.
 
 :::tip
-Gcina i-imeyili yakho ihlala ilungile. Isetjentiselwa kubuyisela i-akhawunti kanye netatiso letibalulekile letivela ebandleni lakho.
+Gcina i-imeyili yakho isha. Iyasetjentiswa ekutfoleni i-akhawunti nasemaciniweni lavelele kusuka ebandleni lakho.
 :::
 
-## Tinyatselo Letilandzelako
+## Tinyatelo Letilandzelako
 
-- [Managing Your Profile](./managing-profile.md) -- Hlela tilungiselelo takho tomuntfu
-- [Managing Devices](./devices.md) -- Phatsa emadivayisi lahlanganisiwe
+- [Kuphatsa Iphrofayili Yakho](./managing-profile.md) -- Hlela tilungiselelo takho talomuntfu
+- [Kuvuma Tinguquko Tephrofayili](./approving-profile-changes.md) -- Hlola ticelo tetinguquko temalungu ephrofayili
+- [Kuphatsa Tintfo Letixhunyiwe](./devices.md) -- Phatsa tintfo letixhunyiwe

@@ -1,128 +1,132 @@
 ---
-title: "Mobilní aplikace – nastavení"
-description: "A B1.church tagi alkalmazás füleinek, kezdőképernyő-csempéinek, bejelentkezési kérésének és tagjegyzék-adatvédelmének beállítása a B1 Adminban."
+title: "Mobilalkalmazás beállításai"
+description: "A B1 Adminban a B1.church tagi alkalmazás navigációs füleinek, a főoldali csempéknek, a bejelentkezési felszólításnak és a tagjegyzék adatvédelmi beállításainak konfigurálása."
 ---
 
-# Mobilní aplikace – nastavení
+# Mobilalkalmazás beállításai
 
 <div class="article-intro">
 
-Na stránce Nastavení mobilní aplikace můžete upravit navigační karty, které se zobrazují ve **mobilní verzi B1.church (PWA)** pro členy vašeho sboru. Určujete, které karty jsou viditelné, kam odkazují a jak se zobrazují.
+A Mobilalkalmazás beállításai oldalon konfigurálhatja a **B1.church mobil felületén (PWA)** a gyülekezeti tagok számára megjelenő navigációs füleket. Szabályozhatja, hogy mely fülek legyenek láthatók, mire mutassanak, és hogyan jelenjenek meg.
 
 </div>
 
-## Výukové video
+## Oktatóvideó
 
-<YouTube id="ydY7WGK16fE" title="Přizpůsobení aplikace pro členy vašeho sboru v B1" />
+<YouTube id="ydY7WGK16fE" title="A gyülekezete tagi alkalmazásának testreszabása a B1-ben" />
 
-:::info Nativní aplikace B1 Mobile je zastaralá
-Karty nastavené zde se doručují prostřednictvím [progresivní webové aplikace (PWA) B1.church](/docs/b1-church/getting-started/installing-pwa), která nahradila nativní aplikaci B1 Mobile. Členům sdílejte stránku pro instalaci vašeho sboru — `https://yourchurchname.b1.church/mobile/install`. Provede je instalací aplikace do jejich zařízení bez nutnosti stahování z App Store nebo Google Play.
+:::info
+Az itt beállított fülek a B1 Appban jelennek meg, amelyet a tagok [Progresszív webalkalmazásként (PWA) is telepíthetnek](../../b1-church/getting-started/installing-pwa.md). Ossza meg a tagokkal a gyülekezete telepítési oldalát — `https://yourchurchname.b1.church/mobile/install` —, amely lépésről lépésre végigvezeti őket az alkalmazás telepítésén az eszközükre, App Store vagy Google Play letöltés nélkül.
 :::
 
 <div class="prereqs">
-<h4>Než začnete</h4>
+<h4>Mielőtt elkezdi</h4>
 
-- Potřebujete oprávnění „Upravit nastavení sboru“. Pokud k němu nemáte přístup, podívejte se na [Role a oprávnění](./roles-permissions.md).
-- Nejprve nastavte [Nastavení sboru](./church-settings.md), včetně názvu sboru a vzhledu
+- Szüksége van a „Gyülekezeti beállítások szerkesztése” jogosultságra. Ha nincs hozzáférése, tekintse meg a [Szerepkörök és jogosultságok](./roles-permissions.md) oldalt.
+- Először állítsa be a [Gyülekezeti beállításokat](./church-settings.md), beleértve a gyülekezet nevét és arculatát
 
 </div>
 
-## Přístup k nastavení navigace
+## A navigációs beállítások elérése
 
-1. V aplikaci B1 Admin otevřete [nabídku Jump](../introduction.md#getting-around-with-the-jump-menu) (vyhledávací pole vlevo nahoře) a rozbalte položku **Mobile**.
-2. Klikněte na **Navigace** (`/mobile/navigation`).
-3. Stránka Navigace zobrazuje vaše aktuální karty aplikace.
+1. A B1 Adminban nyissa meg az [Ugrás menüt](../introduction.md#getting-around-with-the-jump-menu) (a bal felső sarokban lévő keresősáv), majd bontsa ki a **Mobil** pontot.
+2. Kattintson a **Navigáció** elemre (`/mobile/navigation`).
+3. A Navigáció oldalon látja az alkalmazás jelenlegi füleit.
 
-## Přidání nové karty
+## Új fül hozzáadása
 
-1. Klikněte na tlačítko **Přidat kartu** v horní části stránky.
-2. Vyplňte údaje o kartě:
-   - **Název** -- Popisek, který se zobrazí na kartě (například „Kázání“ nebo „Dary“).
-   - **Ikona** -- Kliknutím na výběr ikony zvolte ikonu pro kartu.
-   - **Obrázek** -- Kliknutím na **Vybrat obrázek** (nebo **Změnit obrázek**) přiřadíte kartě fotografii. Karty s fotografií se na domovské obrazovce aplikace zobrazí jako dlaždice s fotkou -- viz [Dlaždice domovské obrazovky](#home-screen-tiles).
-   - **Typ karty** -- Vyberte z možností, jako je Bible, Živý přenos, Dar, Webová stránka a další.
-   - **URL** -- Zadejte webovou adresu, na kterou má karta odkazovat.
-   - **Viditelnost** -- Určete, kdo kartu uvidí (všichni, pouze členové atd.). U karty **Adresář členů** tato volba řídí pouze to, kdo kartu vidí. Kdo může adresář otevřít, nastavuje položka **Zobrazit v adresáři** na stránce Portál členů (viz [Nastavení adresáře členů a zpráv](#member-directory--messaging-settings)).
-3. Kliknutím na **Uložit kartu** přidáte kartu do aplikace.
+1. Kattintson az oldal tetején lévő **Fül hozzáadása** gombra.
+2. Töltse ki a fül adatait:
+   - **Név** -- Az a felirat, amely a fülön megjelenik (például „Igehirdetések” vagy „Adakozás”).
+   - **Ikon** -- Kattintson az ikonválasztóra, és válasszon ikont a füléhez.
+   - **Kép** -- Kattintson a **Kép kiválasztása** (vagy **Kép cseréje**) gombra, és adjon a fülnek fotót. A fotóval rendelkező fülek fotócsempeként jelennek meg az alkalmazás főoldalán -- lásd: [Főoldali csempék](#home-screen-tiles).
+   - **Fül típusa** -- Válasszon a lehetőségek közül, például Biblia, Élő közvetítés, Adomány, Weboldal és további típusok.
+   - **URL** -- Adja meg azt a webcímet, amelyre a fül mutasson.
+   - **Láthatóság** -- Szabályozza, hogy ki láthatja a fület (mindenki, csak tagok stb.). A **Tagjegyzék** fül esetében ez csak azt határozza meg, ki láthatja maga a fület; a jegyzéket megnyitni tudókat a Tagi portál oldalon a **Megjelenítés a jegyzékben** beállítás határozza meg (lásd: [Tagjegyzék és üzenetküldés beállításai](#member-directory--messaging-settings)).
+3. Kattintson a **Fül mentése** gombra, hogy a fül hozzáadódjon az alkalmazásához.
 
-## Úprava existující karty
+## Meglévő fül szerkesztése
 
-1. Klikněte na libovolnou existující kartu v seznamu **Karty aplikace**.
-2. Upravte název, ikonu, URL, typ nebo nastavení viditelnosti.
-3. Kliknutím na **Uložit kartu** změny použijete.
+1. Kattintson bármelyik meglévő fülre az **Alkalmazásfülek** listájában.
+2. Módosítsa a fül nevét, ikonját, URL-jét, típusát vagy láthatósági beállításait.
+3. A módosítások alkalmazásához kattintson a **Fül mentése** gombra.
 
-## Změna pořadí karet
+## Fülek sorrendjének módosítása
 
-Pořadí karet v mobilní aplikaci můžete změnit. Karty přetáhněte v seznamu myší a uspořádejte je. Pořadí zobrazené na této stránce odpovídá pořadí, které uvidí vaši členové v aplikaci.
+Megváltoztathatja, hogy a fülek milyen sorrendben jelenjenek meg a mobilalkalmazásban. A sorrend módosításához húzza a füleket a listában a kívánt helyre. Az oldalon látható sorrend megegyezik azzal a sorrenddel, amelyet a tagjai az alkalmazásban látnak majd.
 
 :::info
-Některé karty se mohou zobrazit automaticky, když nastanou určité podmínky -- například karta Živý přenos se může objevit, když je přenos aktivní. Ručně přidané karty vám dávají plnou kontrolu nad tím, co členové vidí neustále.
+Egyes fülek automatikusan megjelenhetnek, ha bizonyos feltételek teljesülnek -- például az Élő közvetítés fül akkor jelenhet meg, amikor van aktív közvetítés. A kézzel hozzáadott fülek teljes kontrollt adnak arról, mit látnak a tagjai bármikor.
 :::
 
 :::tip
-Udržujte počet karet přehledný. Pro většinu sborů je ideální tři až pět karet. Příliš mnoho karet může členům navigaci ztěžovat.
+Tartsa kezelhető számban a füleket. A legtöbb gyülekezetnek három-öt fül a legmegfelelőbb. Túl sok fül zavarossá teheti a navigációt a tagjai számára.
 :::
 
-## Nastavení adresáře členů a zpráv
+## Tagjegyzék és üzenetküldés beállításai
 
-Položka **Portál členů** v téže části Mobile obsahuje nastavení, která řídí adresář členů a soukromé zprávy v prostředí B1.church:
+A Mobil szakasz **Tagi portál** pontja tartalmazza azokat a beállításokat, amelyek a B1.church felületen a tagjegyzéket és a privát üzenetküldést szabályozzák:
 
-- **Skupina pro schvalování adresáře** -- Skupina, která kontroluje aktualizace adresáře členů a [žádosti o smazání účtu](../profile/account-deletion.md), než nabydou účinnosti.
-- **Zobrazit v adresáři** -- Kdo může adresář členů otevřít a kdo v něm bude uveden: **Pouze správci**, **Členové a výše** (výchozí), **Pravidelní návštěvníci a výše** nebo **Hosté a výše**. Lidé, jejichž stav členství je pod úrovní, kterou zvolíte, adresář neuvidí a nebudou v něm uvedeni. Volba **Pouze správci** zavře adresář všem kromě zaměstnanců s oprávněním People &gt; View (samotný stav členství Staff nestačí). Ti mohou adresář vždy otevřít a vidí všechny členy bez ohledu na toto nastavení. Hosté se nikdy nezahrnují, protože každý, kdo se registruje online, začíná jako host.
-- **Předvolba viditelnosti** -- Výchozí nastavení pro celý sbor pro členy, kteří si ještě nezvolili vlastní. **Adresa**, **Telefonní číslo** a **E-mail** mají každý vlastní rozbalovací nabídku se stejnými pěti úrovněmi, které jsou dostupné všude, kde se viditelnost nastavuje:
-  - **Všichni** -- Viditelné pro kohokoli, včetně anonymních návštěvníků
-  - **Členové** -- Viditelné pouze pro osoby se záznamem Člen nebo Zaměstnanec
-  - **Pouze skupiny** -- Viditelné pouze pro osoby, které sdílejí skupinu s touto osobou, a pro zaměstnance
-  - **Vedoucí mých skupin a zaměstnanci** -- Viditelné pouze pro vedoucí skupiny, do které tato osoba patří, a pro zaměstnance
-  - **Pouze zaměstnanci** -- Viditelné pouze pro zaměstnance (kohokoli se stavem členství Staff nebo s oprávněním People &gt; View) a pro danou osobu samotnou
+- **Jóváhagyó csoport a jegyzékhez** -- Az a csoport, amely a tagjegyzékben végrehajtott módosításokat, valamint a [fiók törlési kérelmeket](../profile/account-deletion.md) felülvizsgálja, mielőtt hatályba lépnek.
+- **Megjelenítés a jegyzékben** -- Ki nyithatja meg a tagjegyzéket, és kik szerepelnek benne: **Csak adminisztrátorok**, **Tagok és feljebb** (alapértelmezett), **Rendszeres látogatók és feljebb** vagy **Vendégek és feljebb**. Akik tagsági státusza a kiválasztott szint alatt van, nem látják a jegyzéket, és nem szerepelnek benne. A **Csak adminisztrátorok** beállítás esetén a jegyzék a Személyek > Megtekintés jogosultsággal rendelkező munkatársak kivételével mindenki számára zárva marad (a Munkatárs tagsági státusz önmagában nem elég), akik a beállítástól függetlenül mindig megnyithatják a jegyzéket, és mindenkit láthatnak. A vendégek soha nem szerepelnek benne, mivel az online regisztrálók kezdetben vendégként kerülnek be.
+- **Láthatósági beállítás** -- A gyülekezet szintjén meghatározza az alapértelmezést azoknak a tagoknak, akik még nem választottak saját beállítást. A **Lakcím**, a **Telefonszám** és az **E-mail** mindegyikének saját legördülő menüje van, ugyanazzal az öt szinttel, amely mindenhol elérhető, ahol láthatóság állítható be:
+  - **Mindenki** -- bárki számára látható, beleértve a névtelen látogatókat is
+  - **Tagok** -- csak Tag vagy Munkatárs nyilvántartással rendelkező személyek számára látható
+  - **Csak csoporttagok** -- csak azok számára látható, akik ugyanabban a csoportban vannak az adott személlyel, valamint a munkatársak számára
+  - **A csoportvezetőim és a munkatársak** -- csak azoknak a csoportvezetőknek látható, akiknek a csoportjában az adott személy tag, valamint a munkatársak számára
+  - **Csak munkatársak** -- csak a munkatársaknak (akiknek tagsági státusza Munkatárs, vagy akik rendelkeznek a Személyek > Megtekintés jogosultsággal), valamint magának az érintett személynek látható
 
-  „Zaměstnanec“ na těchto úrovních znamená kohokoli se stavem členství Staff nebo s oprávněním People &gt; View. Změny skupin se projeví okamžitě: někdo, kdo se připojí ke skupině nebo se stane vedoucím skupiny, uvidí odpovídající údaje členů této skupiny s úrovní **Pouze skupiny** nebo **Vedoucí mých skupin a zaměstnanci**, aniž by se musel odhlásit a znovu přihlásit.
+  A „munkatárs” ezekben a szintekben azt jelenti, aki tagsági státusza Munkatárs, vagy akinek van Személyek > Megtekintés jogosultsága. A csoportokkal kapcsolatos változások azonnal érvénybe lépnek: akik csatlakoznak egy csoporthoz, vagy csoportvezetővé válnak, a csoport tagjainak megfelelő **Csak csoporttagok** vagy **A csoportvezetőim és a munkatársak** szintű adatait kijelentkezés és újbóli bejelentkezés nélkül is láthatják.
 
-  Členové mohou tyto výchozí hodnoty přepsat pro svůj vlastní záznam na kartě **Soukromí** ve svém profilu v PWA B1.church -- viz [Úprava vašeho profilu](/docs/b1-church/getting-started/me-page).
-- **Minimální věk pro soukromé zprávy** -- Ochrana dětí. B1 neotevře **novou** konverzaci se soukromými zprávami, pokud je některá ze dvou osob mladší tohoto věku, a to podle data narození (pokud není datum narození uvedeno, použije se role v domácnosti). Lidé mladší tohoto věku zůstávají v adresáři plně viditelní -- blokováno je pouze přímé posílání zpráv, a to **v obou směrech**, pro všechny, včetně zaměstnanců. Skupinové konverzace a zprávy rodičům dítěte stále fungují. Na výběr jsou možnosti Vypnuto, 13, 16 nebo 18; výchozí je **18**. Stávající konverzace tímto nejsou dotčeny.
+  A tagok a B1.church PWA-ban a profiljuk **Adatvédelem** lapján felülbírálhatják ezeket az alapértelmezéseket a saját adataikra -- lásd: [Profil szerkesztése](/docs/b1-church/getting-started/me-page).
+- **Privát üzenetek minimális életkora** -- Gyermekvédelmi beállítás. A B1 nem nyit **új** privát üzenetváltást, ha valamelyik fél a születési dátuma alapján a megadott kor alatt van (születési dátum hiányában a háztartásbeli szerep szolgál alapul). A megadott kor alatti személyek a jegyzékben továbbra is teljesen láthatók -- csak a közvetlen üzenetküldés tiltott, **mindkét irányban**, mindenki számára, beleértve a munkatársakat is. A csoportos beszélgetések és a gyermek szüleinek üzenetküldése továbbra is működik. A lehetőségek: Ki, 13, 16 vagy 18; az alapértelmezett a **18**. A meglévő beszélgetéseket ez nem érinti.
 
 :::tip
-Protože kontrola minimálního věku se opírá o data narození, ujistěte se, že jsou u dětí ve vašem sboru vyplněna. Toto nastavení patří do stejné skupiny ochrany dětí jako [bezpečnostní opatření při přihlašování](../attendance/checkin-safety.md).
+Mivel a minimális életkor ellenőrzése a születési dátumokon alapul, gondoskodjon arról, hogy a gyülekezetében lévő gyermekek születési dátuma ki legyen töltve. Ez a beállítás ugyanahhoz a gyermekvédelmi beállítás-családhoz tartozik, mint a [bejelentkezési biztonsági beállítások](../attendance/checkin-safety.md).
 :::
 
-### Výzva k přihlášení na domovské obrazovce
+### Bejelentkezési felszólítás a főoldalon
 
-Návštěvníci, kteří otevřou [domovskou obrazovku](/docs/b1-church/getting-started/navigating#home) aplikace bez přihlášení, uvidí krátkou výzvu -- ve výchozím nastavení *„Přihlaste se a zobrazte své skupiny, dary a další.“* -- vedle tlačítka **Přihlásit se**. Nastavení **Výzvy k přihlášení na domovské obrazovce** na stejné stránce Portál členů (`/mobile/b1-mobile`) umožňuje její úpravu:
+Azok a látogatók, akik bejelentkezés nélkül nyitják meg az alkalmazás [főoldalát](/docs/b1-church/getting-started/navigating#home), egy rövid felszólítást látnak -- alapértelmezés szerint: *„Jelentkezzen be, hogy lássa a csoportjait, adakozásait és további információkat.”* -- egy **Bejelentkezés** gomb mellett. A **Bejelentkezési felszólítás a főoldalon** beállításai ugyanezen a Tagi portál oldalon (`/mobile/b1-mobile`) lehetővé teszik a szöveg módosítását:
 
-- **Zobrazit výzvu k přihlášení na domovské obrazovce aplikace** -- Vypnutím skryjete výzvu i tlačítko **Přihlásit se** z domovské obrazovky. Návštěvníci se mohou přihlásit i z nabídky aplikace.
-- **Text výzvy k přihlášení** -- Nahraďte výchozí znění vlastní zprávou (až 150 znaků). Pokud pole necháte prázdné, použije se výchozí text. Toto pole je zakázáno, dokud je výzva vypnutá.
+- **Bejelentkezési felszólítás megjelenítése az alkalmazás főoldalán** -- Ezt kikapcsolva a felszólítás és a **Bejelentkezés** gomb is eltűnik a főoldalról. A látogatók a alkalmazás menüjéből továbbra is be tudnak jelentkezni.
+- **Bejelentkezési felszólítás szövege** -- Cserélje le az alapértelmezett szöveget a saját üzenetére (legfeljebb 150 karakter). Hagyja üresen, ha az alapértelmezettet szeretné használni. Ez a mező letiltott, amíg a felszólítás ki van kapcsolva.
 
-Kliknutím na **Uložit** změny použijete. Zpráva **Uloženo** potvrdí změnu. Uložení obnoví mezipaměť nastavení aplikace, takže se změna projeví při příštím načtení domovské obrazovky.
+A módosítások alkalmazásához kattintson a **Mentés** gombra. A **Mentve** üzenet visszaigazolja a változtatást. A mentés frissíti az alkalmazás gyorsítótárazott beállításait, így a változás a főoldal legközelebbi betöltésekor látszik.
 
-### Dlaždice domovské obrazovky
+### Főoldali csempék
 
-Karty s fotografií (viz **Obrázek** v části [Přidání nové karty](#adding-a-new-tab)) se na [domovské obrazovce](/docs/b1-church/getting-started/navigating#home) aplikace zobrazí jako dlaždice s fotkou v sekci nadepsané názvem vašeho sboru. Patří sem i karta Text dne, pokud jí přiřadíte fotografii. Karty s fotografií se zobrazují i na liště karet.
+Azok a fülek, amelyekhez tartozik fotó (lásd: **Kép** a [Új fül hozzáadása](#adding-a-new-tab) részben), fotócsempeként jelennek meg az alkalmazás [főoldalán](/docs/b1-church/getting-started/navigating#home), a gyülekezete nevét viselő szakaszban. Ide tartozik a Napi ige fül is, ha adott neki fotót. A fotóval rendelkező fülek a fülsávban is megjelennek.
 
-Nastavení **Dlaždice domovské obrazovky** na stejné stránce Portál členů (`/mobile/b1-mobile`) řídí rozvržení těchto dlaždic. Vyberte **Rozvržení**:
+A ugyanezen a Tagi portál oldalon (`/mobile/b1-mobile`) található **Főoldali csempék** beállítás szabályozza ezeknek a csempéknek az elrendezését. Válasszon **Elrendezést**:
 
-- **Mřížka** -- Dvě dlaždice v řádku (výchozí). Pokud je počet dlaždic lichý, první dlaždice zabere celou šířku.
-- **Posouvací řádek** -- Jeden řádek dlaždic, který členové posouvají do stran.
-- **Posouvání (automatické)** -- Stejný vodorovný řádek, ale posouvá se sám od sebe, přibližně každé čtyři sekundy posune o jednu dlaždici a na konci se vrátí na začátek. Pozastaví se, když se člen řádku dotkne, najede na něj kurzorem nebo se na něj přepne klávesou Tab, a po několika sekundách pokračuje. Na zařízeních s omezeným pohybem řádek zůstává nehybný a funguje jako **Posouvací řádek**.
-- **Seznam** -- Seznam s malým náhledem fotografie vedle názvu každé karty.
+- **Rács** -- Soronként két csempe (alapértelmezés). Ha a csempék száma páratlan, az első csempe teljes szélességben jelenik meg.
+- **Görgethető sor** -- Egy sor csempe, amelyet a tagok oldalirányban húznak.
+- **Görgethető (automatikus)** -- Ugyanaz az oldalirányú sor, de magától is mozog: körülbelül négymásodpercenként egy csempével továbblép, az utolsó után pedig újra az elsőnél folytatódik. Szünetel, amikor a tag megérinti, fölé viszi az egeret vagy a sorba lép a billentyűzettel, majd néhány másodperc múlva újra elindul. Azokon az eszközökön, ahol a mozgáscsökkentés be van kapcsolva, a sor mozdulatlan marad, és a **Görgethető sor** módon működik.
+- **Lista** -- Lista, amelyben minden fül neve mellett egy kis fotó-bélyegkép található.
 
-Kliknutím na **Uložit** změny použijete.
+Mindkét görgethető elrendezésnél, ha több csempe van, mint amennyi a képernyő szélességébe fér, a csempék alatt pöttyök sora jelenik meg, csempénként egy, az aktuális csempéhez tartozó pötty kitöltve. A tagok a pöttyökre koppintva a megfelelő csempéhez ugorhatnak.
 
-### Sekce domovské obrazovky
+A módosítások alkalmazásához kattintson a **Mentés** gombra.
 
-Přihlášení členové vždy vidí svou historii docházky a odeslané formuláře na [stránce Já](/docs/b1-church/getting-started/me-page). Přepínače **Sekce domovské obrazovky** na stejné stránce Portál členů (`/mobile/b1-mobile`) je mohou zobrazit i na domovské obrazovce:
+### Főoldali szakaszok
 
-- **Zobrazit Moji docházku na domovské obrazovce** -- Přidá sekci **Moje docházka** s počtem návštěv člena za posledních 90 dní, jeho dvěma posledními návštěvami a odkazem **Historie** na úplný seznam docházky.
-- **Zobrazit Moje formuláře na domovské obrazovce** -- Přidá sekci **Moje formuláře** se dvěma posledními odeslanými formuláři člena a odkazem **Všechny formuláře**.
+A bejelentkezett tagok mindig látják a saját látogatási előzményeiket és a beküldött űrlapjaikat a [Saját oldalon](/docs/b1-church/getting-started/me-page). A ugyanezen a Tagi portál oldalon (`/mobile/b1-mobile`) található **Főoldali szakaszok** kapcsolók segítségével ezeket a főoldalon is megjelenítheti:
 
-Obě možnosti jsou ve výchozím nastavení vypnuté. Sekce se zobrazí pouze přihlášeným členům, kteří mají alespoň jeden záznam k zobrazení. Kliknutím na **Uložit** změny použijete.
+- **Saját részvétel megjelenítése a főoldalon** -- Egy **Saját részvétel** szakaszt ad hozzá, amely megmutatja, hány alkalommal vett részt a tag az elmúlt 90 napban, a két legutóbbi látogatását, valamint egy **Előzmények** hivatkozást a teljes részvételi listájához.
+- **Saját űrlapok megjelenítése a főoldalon** -- Egy **Saját űrlapok** szakaszt ad hozzá, amely a tag két legutóbbi űrlapbeküldését és egy **Összes űrlap** hivatkozást tartalmaz.
 
-## Kde se karty zobrazují
+Mindkettő alapértelmezés szerint ki van kapcsolva. A szakasz csak azoknak a bejelentkezett tagoknak jelenik meg, akiknek legalább egy megjeleníthető rekordjuk van. A módosítások alkalmazásához kattintson a **Mentés** gombra.
 
-Karty, které zde nastavíte, se zobrazují v **PWA B1.church**, kterou si vaši členové nainstalují z libovolné stránky na `https://yourchurchname.b1.church`. Změny na této stránce se projeví při příštím otevření aplikace členem.
+## Hol jelennek meg ezek a fülek
 
-Na telefonu zobrazuje spodní lišta karet položky **Domů**, až tři vaše karty a **Více**; na počítači záhlaví zobrazuje až pět karet. Vestavěné obrazovky (například Kázání, Dary nebo Skupiny) dostávají místa přednostně a karty **Interní stránka** vyplní všechna zbývající volná místa. Karty **Externí URL** a **Text dne** místo na liště nikdy nezískají. Každá karta, včetně těch, které se na lištu nevejdou, je uvedena na stránce **Více** v aplikaci. Co členové vidí, popisuje článek [Navigace v aplikaci B1](/docs/b1-church/getting-started/navigating). (Karty se také vykreslují v zastaralé [nativní aplikaci B1 Mobile](/docs/b1-mobile/) pro členy, kteří ji ještě používají, ale tato aplikace je zastaralá a už se neaktualizuje.)
+Az itt beállított füleket a **B1.church PWA** jeleníti meg, amelyet a tagjai a `https://yourchurchname.b1.church` bármelyik oldaláról telepítenek. Az ezen az oldalon végzett módosítások a tag legközelebbi alkalmazásmegnyitásakor érvényesülnek.
 
-## Další kroky
+Telefonon az alsó fülsávban a **Főoldal**, legfeljebb három saját füle és a **Továbbiak** látható; számítógépen a fejléc legfeljebb öt fület jelenít meg. A beépített képernyők (például Igehirdetések, Adakozás vagy Csoportok) kapják meg elsőként a helyeket, a **Belső oldal** típusú fülek pedig a fennmaradó helyeket töltik ki. Az **Külső URL** és a **Napi ige** típusú fülek soha nem kapnak helyet a fülsávban. Minden fül, beleértve azokat is, amelyek nem férnek el, szerepel az alkalmazás **Továbbiak** oldalán.
 
-- [Nastavení sboru](./church-settings.md) -- Nastavte informace o sboru a jeho vzhled
-- [Role a oprávnění](./roles-permissions.md) -- Spravujte přístup pro svůj tým
+Kivételt képeznek a **Mappa** fülbe helyezett fülek: ezek csak a mappa saját képernyőjén jelennek meg, amelyet a tagok a mappára koppintva nyitnak meg. Ez a képernyő fotócsempeként mutatja a füleket, ha mindegyiknek van képe, egyéb esetben listaként. Az a mappa, amely nem tartalmaz olyan füleket, amelyeket az adott tag láthat, el van rejtve az illető elől. Lásd: [Mappa fülek](../../b1-church/getting-started/navigating.md#folder-tabs). A tagok által látottakról lásd: [A B1App használata](../../b1-church/getting-started/navigating.md).
+
+## Következő lépések
+
+- [Gyülekezeti beállítások](./church-settings.md) -- A gyülekezet adatainak és arculatának beállítása
+- [Szerepkörök és jogosultságok](./roles-permissions.md) -- A csapat hozzáféréseinek kezelése

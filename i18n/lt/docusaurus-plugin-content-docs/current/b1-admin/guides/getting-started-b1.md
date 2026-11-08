@@ -1,13 +1,13 @@
 ---
-title: "Vadovas: pradėkite savo bažnyčios darbą su B1"
-description: "Pereikite per naujos bažnyčios sąranką B1 Admin: paskyra, nustatymai, vaidmenys, narių importas ir pagrindinių funkcijų paleidimas."
+title: "Vodas: Tavo bažnyčios pradžia su B1"
+description: "Žingsnis po žingsnio: kaip nustatyti naują bažnyčią B1 Admin – sukurti paskyrą, sukonfigūruoti nustatymus, pridėti vaidmenis, importuoti narius ir paleisti pagrindines funkcijas."
 ---
 
-# Pradėkite savo bažnyčios darbą su B1
+# Tavo bažnyčios pradžia su B1
 
 <div class="article-intro">
 
-Išsamus įvedimo vadovas naujoms bažnyčioms: nuo paskyros sukūrimo iki narių katalogo importavimo ir pirmųjų funkcijų nustatymo. Atlikite šiuos veiksmus eilės tvarka, kad jūsų bažnyčia pradėtų veikti B1 platformoje.
+Išsamus įvadinis vadovas naujoms bažnyčioms – nuo paskyros sukūrimo iki narių katalogo importavimo ir pirmųjų funkcijų sukonfigūravimo. Atlik šiuos veiksmus nurodyta tvarka, kad tavo bažnyčia pradėtų veikti B1 sistemoje.
 
 </div>
 
@@ -15,93 +15,93 @@ Išsamus įvedimo vadovas naujoms bažnyčioms: nuo paskyros sukūrimo iki nari�
 <h4>Prieš pradedant</h4>
 
 - Galiojantis el. pašto adresas
-- Jūsų bažnyčios logotipas ir prekinio ženklo medžiaga (spalvos, vaizdai). Rekomenduojama, bet pradžiai nebūtina
+- Tavo bažnyčios logotipas ir prekinio ženklo medžiaga (spalvos, paveikslėliai) – rekomenduojama, bet pradžiai nebūtina
 
 </div>
 
-## 1 žingsnis: sukurkite savo paskyrą
+## 1 žingsnis: sukurk paskyrą
 
-Užregistruokite savo bažnyčią ir tapkite pirmuoju administratoriumi.
+Užregistruok savo bažnyčią ir tapk pirmuoju administratoriumi.
 
-Vadovaukitės [Paskyros sukūrimo](../../getting-started/create-account.md) vadovu, kad:
+Vadovaukis [Paskyros kūrimo](../../getting-started/create-account.md) vadovu, kad:
 
-1. Eitumėte į b1.church ir užsiregistruotumėte naudodami savo el. pašto adresą
-2. Patvirtintumėte savo el. pašto adresą
-3. Pasirinktumėte „Sukurti naują bažnyčią“ ir įvestumėte savo bažnyčios pavadinimą
-4. Automatiškai tapsite Domeno administratoriumi su visiška prieiga prie visų funkcijų
+1. Eitum į b1.church ir užsiregistruotum naudodamas savo el. pašto adresą
+2. Patvirtintum savo el. pašto adresą
+3. Pasirinktum „Sukurti naują bažnyčią“ ir įvestum savo bažnyčios pavadinimą
+4. Automatiškai taptum Domeno administratoriumi su visiška prieiga prie visko
 
-## 2 žingsnis: sukonfigūruokite bažnyčios nustatymus
+## 2 žingsnis: sukonfigūruok bažnyčios nustatymus
 
-Įveskite pagrindinę savo bažnyčios informaciją ir prekinio ženklo duomenis.
+Įvesk pagrindinę savo bažnyčios informaciją ir prekinio ženklo duomenis.
 
-Vadovaukitės [Bažnyčios nustatymų](../settings/church-settings.md) vadovu, kad:
+Vadovaukis [Bažnyčios nustatymų](../settings/church-settings.md) vadovu, kad:
 
-1. Įvestumėte savo bažnyčios pavadinimą, adresą, telefono numerį ir el. pašto adresą
-2. Nustatytumėte savo subdomeną (ji taps yourchurch.b1.church)
-3. Įkeltumėte savo bažnyčios logotipą ir vaizdus
+1. Įvestum savo bažnyčios pavadinimą, adresą, telefono numerį ir el. pašto adresą
+2. Nustatytum savo subdomeną (ji taps yourchurch.b1.church)
+3. Įkeltum savo bažnyčios logotipą ir paveikslėlius
 
 :::tip
-Jūsų subdomenas rodomas jūsų svetainės ir aukojimų puslapio URL, todėl pasirinkite ką nors trumpa ir lengvai atpažįstamą (pvz., „grace“ bažnyčiai Grace Community Church).
+Tavo subdomenas rodomas svetainės ir aukų puslapio adrese, todėl pasirink trumpą ir lengvai atpažįstamą pavadinimą (pvz., „malone“ bažnyčiai „Malone Community Church“).
 :::
 
-## 3 žingsnis: sukurkite vaidmenis ir pakvieskite savo komandą
+## 3 žingsnis: nustatyk vaidmenis ir pakviesk komandą
 
-Kontroliuokite, kas kokią prieigą turi, ir įtraukite savo komandą.
+Kontroliuok, kas ką mato ir gali daryti, ir įtrauk savo komandą.
 
-Vadovaukitės [Vaidmenų ir leidimų](../settings/roles-permissions.md) vadovu, kad:
+Vadovaukis [Vaidmenų ir leidimų](../settings/roles-permissions.md) vadovu, kad:
 
-1. Sukurtumėte savo komandos vaidmenis (pvz., „Pastorius“, „Biuro administratorius“, „Finansų komanda“, „Garbinimo vadovas“)
-2. Priskirtumėte konkrečius leidimus kiekvienam vaidmeniui, kad žmonės matytų tik tai, ko jiems reikia
-3. Pakviestumėte komandos narius pridėdami juos ir priskirdami vaidmenis
+1. Sukurtum vaidmenis savo komandai (pvz., „Pastorius“, „Biuro administratorius“, „Finansų komanda“, „Pagyrimo vadovas“)
+2. Kiekvienam vaidmeniui priskirtum konkrečius leidimus, kad žmonės matytų tik tai, ko jiems reikia
+3. Pakviestum komandos narius jį pridėdamas ir priskirdamas vaidmenį
 
 :::info
-Nereikia visko daryti patiems. Kuo anksčiau pakvieskite biuro darbuotojus, pastorius ir tarnystių vadovus, kad jie galėtų padėti nustatyti savo sritis.
+Visko nereikia daryti pačiam. Kuo anksčiau pakviesk biuro darbuotojus, pastorius ir tarnystių vadovus, kad jie galėtų padėti sukonfigūruoti savo sritis.
 :::
 
-## 4 žingsnis: importuokite savo narius
+## 4 žingsnis: importuok savo žmones
 
-Perkelkite esamą narių katalogą į B1.
+Perkelk esamą narių katalogą į B1.
 
-Vadovaukitės [Duomenų importavimo](../people/importing-data.md) vadovu. Turite dvi galimybes:
+Vadovaukis [Duomenų importavimo](../people/importing-data.md) vadovu. Turi du pasirinkimus:
 
-1. **CSV įkėlimas**: eksportuokite duomenis iš dabartinės sistemos ar skaičiuoklės, suformatuokite juos kaip CSV ir įkelkite į B1
-2. **Breeze migracija**: importavimas vienu paspaudimu, perkeliantis asmenis, nuotraukas, grupes, aukas ir lankomumą
+1. **CSV failo įkėlimas** – eksportuok duomenis iš dabartinės sistemos ar skaičiuoklės, suformatuok juos kaip CSV ir įkelk į B1
+2. **Breeze perkėlimas** – vienu paspaudimu importuoti žmones, nuotraukas, grupes, aukas ir lankomumo duomenis
 
 :::tip
-Perkeliate iš Breeze? Importavimo įrankis perkelia viską vienu žingsniu: asmenis, nuotraukas, grupes, aukas ir lankomumo istoriją. Tai greičiausias būdas pradėti.
+Perkeli iš Breeze? Importavimo įrankis perkelia viską vienu žingsniu – žmones, nuotraukas, grupes, aukas ir lankomumo istoriją. Tai greičiausias būdas pradėti.
 :::
 
-## 5 žingsnis: sukonfigūruokite mobiliąją programėlę
+## 5 žingsnis: sukonfigūruok mobiliąją programėlę
 
-Pritaikykite B1 Mobile programėlės patirtį savo bendruomenei.
+Pritaikyk B1 programėlės patirtį savo bendruomenei.
 
-Vadovaukitės [Mobiliosios programėlės nustatymų](../settings/mobile-app.md) vadovu, kad:
+Vadovaukis [Mobiliosios programėlės nustatymų](../settings/mobile-app.md) vadovu, kad:
 
-1. Pritaikytumėte, kurie skirtukai rodomi jūsų nariams B1 Mobile programėlėje
-2. Nustatytumėte skirtukų pavadinimus, piktogramas ir tipus (Biblija, tiesioginė transliacija, auka, svetainė ir kt.)
-3. Kontroliuotumėte, kurias funkcijas mato jūsų bendruomenė
+1. Pritaikytum, kurie skirtukai rodomi tavo nariams B1 programėlėje
+2. Nustatytum skirtukų pavadinimus, piktogramas ir tipus (Biblija, tiesioginė transliacija, aukojimas, svetainė ir kt.)
+3. Kontroliuotum, kurias funkcijas mato tavo bendruomenė
 
-## 6 žingsnis: pradėkite nustatyti funkcijas
+## 6 žingsnis: pradėk nustatyti funkcijas
 
-Dabar, kai pagrindas paruoštas, vadovaukitės šiais vadovais, kad nustatytumėte konkrečias funkcijas:
+Dabar, kai pagrindas paruoštas, vadovaukis šiais vadovais, kad nustatytum konkrečias funkcijas:
 
-- [Nustatykite internetinius aukojimus](./online-giving.md): priimkite aukas per savo svetainę ir programėlę
-- [Paleiskite savo bažnyčios svetainę](./launch-website.md): sukurkite savo bažnyčios svetainę
-- [Vykdykite mažąsias grupes](./small-groups.md): organizuokite grupes, Biblijos studijas ir tarnystes
-- [Nustatykite vaikų registraciją](./childrens-checkin.md): registracija vaikų tarnystei per kioską
-- [Tvarkykite sekmadienio savanorius](./sunday-volunteers.md): koordinuokite savo tarnavimo komandas
-- [Sukurkite savo pamokslų biblioteką](./sermon-library.md): pasiekite pamokslus internete ir nustatykite tiesioginę transliaciją
-- [Sekite lankomumą](./track-attendance.md): stebėkite, kas ateina į pamaldas ir grupes
+- [Nustatyk internetinį aukojimą](./online-giving.md) – priimk aukas per savo svetainę ir programėlę
+- [Paleisk savo bažnyčios svetainę](./launch-website.md) – sukurk savo bažnyčios svetainę
+- [Organizuok mažąsias grupes](./small-groups.md) – tvarkyk grupes, Biblijos studijas ir tarnystes
+- [Nustatyk vaikų registraciją](./childrens-checkin.md) – registracija vaikų tarnystei per savitarnos terminalą
+- [Tvarkyk sekmadienio savanorius](./sunday-volunteers.md) – koordinuok savo tarnystės komandas
+- [Sukurk savo pamokslų biblioteką](./sermon-library.md) – įkelk pamokslus į internetą ir nustatyk tiesioginę transliaciją
+- [Sek lankomumą](./track-attendance.md) – stebėk, kas ateina į pamaldas ir grupes
 
 ## Viskas paruošta!
 
-Jūsų bažnyčia nustatyta B1 platformoje. Jūsų komanda turi prieigą, jūsų nariai importuoti, ir galite pradėti naudoti funkcijas, kurios svarbiausios jūsų tarnystei. Kiekvienai sričiai nustatyti naudokite aukščiau pateiktus funkcijų vadovus.
+Tavo bažnyčia nustatyta B1 sistemoje. Tavo komanda turi prieigą, žmonės importuoti, ir tu esi pasiruošęs naudoti funkcijas, svarbiausias tavo tarnystei. Kiekvienai sričiai nustatyti naudok aukščiau pateiktus funkcijų vadovus.
 
 ## Susiję straipsniai
 
-- [Paskyros sukūrimas](../../getting-started/create-account.md): paskyros registracija
-- [Pradinis nustatymas](../../getting-started/initial-setup.md): vedamos įvedimo apžvalga
-- [Bažnyčios nustatymai](../settings/church-settings.md): bažnyčios informacija ir prekinis ženklas
-- [Vaidmenys ir leidimai](../settings/roles-permissions.md): komandos prieigos valdymas
-- [Duomenų importavimas](../people/importing-data.md): masinis duomenų importavimas
-- [Mobiliosios programėlės nustatymai](../settings/mobile-app.md): narių programėlės pritaikymas
+- [Paskyros kūrimas](../../getting-started/create-account.md) – paskyros registracija
+- [Pradinis nustatymas](../../getting-started/initial-setup.md) – įvadinio vedimo apžvalga
+- [Bažnyčios nustatymai](../settings/church-settings.md) – bažnyčios informacija ir prekinis ženklas
+- [Vaidmenys ir leidimai](../settings/roles-permissions.md) – komandos prieigos valdymas
+- [Duomenų importavimas](../people/importing-data.md) – masinis duomenų importavimas
+- [Mobiliosios programėlės nustatymai](../settings/mobile-app.md) – narių programėlės pritaikymas

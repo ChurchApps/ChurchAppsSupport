@@ -48,7 +48,6 @@ All mobile apps use React Native with Expo.
 
 | Project | Purpose | Key Versions |
 |---------|---------|--------------|
-| **[B1Mobile](https://github.com/ChurchApps/B1Mobile)** | Church member app for iOS and Android | Expo 54, React Native 0.81 |
 | **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Check-in kiosk app | Expo |
 | **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Android TV lesson display | Expo |
 | **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Content playback (including TV OS) | Expo |
@@ -83,8 +82,8 @@ Frontend Apps              Shared Libraries           Backend APIs
 B1Admin      ──────┐
 B1App        ──────┤       @churchapps/helpers ◄───── Api
 LessonsApp   ──────┼──►    @churchapps/apphelper      LessonsApi
-B1Mobile     ──────┤                                   AskApi
-FreeShow     ──────┘       @churchapps/apihelper ◄────┘
+FreeShow     ──────┘                                   AskApi
+                           @churchapps/apihelper ◄────┘
 ```
 
 All frontend apps depend on `@churchapps/helpers`. Web apps additionally depend on `@churchapps/apphelper` packages. All backend APIs depend on both `@churchapps/helpers` and `@churchapps/apihelper`.

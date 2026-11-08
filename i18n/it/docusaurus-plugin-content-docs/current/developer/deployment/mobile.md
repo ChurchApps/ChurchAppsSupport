@@ -1,48 +1,58 @@
 ---
-title: "Distribuzione Mobile"
-description: "Guida alla creazione di release Android e iOS dell'app B1 Mobile con Expo EAS, alla pubblicazione sugli store e al rilascio di aggiornamenti OTA."
+title: "Distribuzione dell'app mobile"
+description: "Guida alla creazione delle versioni Android e iOS delle app Expo come B1 Checkin, alla loro pubblicazione negli store e all'invio di aggiornamenti OTA con EAS."
 ---
 
-# Distribuzione Mobile
+# Distribuzione dell'app mobile
 
 <div class="article-intro">
 
-Le applicazioni mobile di ChurchApps vengono compilate e distribuite utilizzando **Expo EAS Build** e distribuite tramite gli app store. Questa pagina copre la compilazione, l'invio e il push degli aggiornamenti over-the-air sia per Android che per iOS.
+Le app mobile Expo di ChurchApps, come B1 Checkin, vengono compilate con **Expo EAS Build** oppure con una build Gradle locale e distribuite tramite gli store delle app. Questa pagina spiega come compilare, inviare e pubblicare aggiornamenti over-the-air sia per Android sia per iOS, usando B1 Checkin come esempio.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Configura l'app mobile in locale -- vedi [B1 Mobile](../mobile/b1-mobile.md)
+- Configura l'app in locale -- vedi [App mobile](../mobile/index.md#local-setup)
 - Installa e configura la [EAS CLI](https://docs.expo.dev/eas/)
-- Avere accesso alla Google Play Console (Android) e/o Apple App Store Connect (iOS)
+- Assicurati di avere accesso a Google Play Console (Android) e/o App Store Connect di Apple (iOS)
 
 </div>
 
-## Compilazione
+## Creazione della build
 
 ### Android
 
+Le build di rilascio per Android vengono eseguite in locale e firmate con il keystore di rilascio fornito da EAS. Scaricalo una sola volta con `npx eas-cli credentials -p android` (scegli **credentials.json: Download credentials from EAS**), quindi esegui:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Il bundle per Google Play viene salvato in `android/app/build/outputs/bundle/release/app-release.aab`. Per creare la build su EAS, esegui invece `yarn build:android:eas`.
 
 ### iOS
 
+Le build iOS vengono sempre eseguite su EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Invio agli App Store
+## Invio agli store delle app
 
 ### Android -- Google Play Store
 
-Dopo una compilazione EAS riuscita, il binario Android (AAB) viene inviato al Google Play Store tramite la Play Console.
+Carica il file AAB tramite Play Console oppure invialo con EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
-Invia la build iOS direttamente tramite EAS:
+Invia direttamente la build iOS tramite EAS:
 
 ```bash
 eas submit --platform ios
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## Aggiornamenti OTA
 
-Per le modifiche solo JavaScript che non richiedono la revisione dell'app store, utilizza gli aggiornamenti over-the-air (OTA):
+Per le modifiche che riguardano solo JavaScript e non richiedono la revisione dello store, usa gli aggiornamenti over-the-air (OTA):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Questo utilizza EAS Update per inviare le modifiche direttamente agli utenti senza un invio completo allo store.
+Questo comando usa EAS Update per inviare le modifiche direttamente agli utenti, senza un invio completo allo store.
 
 :::tip
-Gli aggiornamenti OTA sono significativamente più veloci delle build per lo store -- le modifiche possono raggiungere gli utenti in minuti anziché giorni. Utilizzali per correzioni di bug, modifiche ai testi e aggiornamenti minori dell'interfaccia utente che non coinvolgono modifiche al codice nativo.
+Gli aggiornamenti OTA sono molto più rapidi delle build per gli store: le modifiche possono raggiungere gli utenti in pochi minuti anziché in giorni. Usali per correzioni di bug, modifiche al testo e piccoli interventi sull'interfaccia che non coinvolgono codice nativo.
 :::
 
-## Numeri di Versione
+## Numeri di versione
 
 Prima di creare una build per lo store, i numeri di versione devono essere aggiornati in più file:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` e `versionCode`)
+
+Il numero di build iOS viene incrementato automaticamente da EAS.
 
 :::warning
-Dimenticare di aggiornare i numeri di versione in tutti i file causerà errori di compilazione o il rifiuto da parte dell'app store. Controlla due volte ogni file elencato sopra prima di avviare una build di produzione.
+Dimenticare di aggiornare i numeri di versione in tutti i file causerà errori di build o il rifiuto dell'app da parte dello store. Controlla attentamente ogni file elencato sopra prima di avviare una build di produzione.
 :::
 
-## Articoli Correlati
+## Articoli correlati
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Guida alla configurazione locale e allo sviluppo
-- **[Distribuzione delle API](./apis.md)** -- Distribuzione delle API backend
-- **[Distribuzione delle Applicazioni Web](./web-apps.md)** -- Distribuzione delle applicazioni web frontend
+- **[App mobile](../mobile/index.md)** -- Guida alla configurazione locale e allo sviluppo
+- **[Distribuzione delle API](./apis.md)** -- Distribuzione delle API di backend
+- **[Distribuzione delle app web](./web-apps.md)** -- Distribuzione delle applicazioni web frontend

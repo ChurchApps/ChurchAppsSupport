@@ -1,58 +1,60 @@
 ---
-title: "Banikeli Bangaphandle"
-description: "Funda kutsi bahlinzeki bemakharikhulamu langaphandle bengeza kanjani lokuqukethwe kwabo ku-Lessons.church besebenticisa i-Open Lesson Format, nendlela yekuxhuma umhlinzeki kusuka ku-portal."
+title: "Labahlinzeki Bangaphandle"
+description: "Indlela labahlinzeki bemakharikhulamu labangewona bebandla labahlanganisa ngayo timfundvo nge-Open Lesson Format, nendlela licembu lakho lapho lingeta ngayo lihlinzeki lelisha ku-Lessons.church bese lihlela timfundvo tayo."
 ---
 
-# Banikeli Bangaphandle
+# Labahlinzeki Bangaphandle
 
 <div class="article-intro">
 
-I-Lessons.church ayikhawulwa kukufundzisa kwayo. Banikeli bekufundzisa bangaphandle bangashicilela kontenti yabo nge-**Open Lesson Format**, futsi lekontenti ivela kanye netinhlelo temgceka te-Lessons.church kutfola umuzwa munye wekuphequlula.
+Lessons.church ayicinisekiswa kuhlelo lwayo lwemakharikhulamu yodvwa. Labahlinzeki bemakharikhulamu bangaphandle bangashicilela lokuqukethwe kwabo nge-**Open Lesson Format**. Nasengeta umhlinzeki, ungahlela timfundvo takhe emakilasini akho ngaseceleni kwelaybrari ye-Lessons.church.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Condzisisa kutsi kontenti ihlelwe njani ngekufundza [Tinhlelo Netifundvo](./programs-and-studies.md)
-- Kwengeta luxhumano lwemnikeli, udzinga [i-akhawunti ye-Lessons.church](../getting-started/creating-account.md) lenekufinyelela kusango lelibandla lakho
+- Qonda indlela lokuhlelwe ngayo lokuqukethwe ngekufundza [Programs and Studies](./programs-and-studies.md)
+- Kuze ungeta lixhumano lomhlinzeki, udzinga [i-akhawunti ye-Lessons.church](../getting-started/creating-account.md) lene-access kuhlelo lwetikilasi temhlangano wakho
 
 </div>
 
-## Bangubani Banikeli Bangaphandle?
+## Labahlinzeki Bangaphandle Ngubani?
 
-Umnikeli wangaphandle ngiyo nome ngukuphi inhlangano leshicilela kufundzisa kwelibandla isebentisa i-Open Lesson Format -- luhlobo lolusekela imininingwane yesifundzo kwabelwana etikwato nema-platform. Nangabe umnikeli enta kontenti yakhe itfolakale ngalolusayo luhlobo, i-Lessons.church iyakwati kuyingenisa iyibonise njengetinhlelo tayo.
+Labahlinzeki bangaphandle yinoma yiyiphi inhlangano lepapatisa makharikhulamu webandla isebentisa i-Open Lesson Format -- ludzaluko lolwenta kutsi lokuqukethwe kwemfundvo kwabelwane etiphatfweni letehlukene. Nalomhlinzeki akhipha lokuqukethwe kwakhe kulesimo, i-Lessons.church ingakufundza futsi ikhombise timfundvo tayo ngalesakhiwo lesifanako nesetimfundvo tayo.
 
-Loku kusho kutsi utfola kufinyelela kukukhetsa lokubanti kwekufundzisa ngaphandle kwekuvakashela emawebhusayithi lamanyenti.
+Lokusho kutsi uyakwazi kufinyelela kukhetho lolukhulu lwemakharikhulamu ngaphandle kwekutsi uvakashele emawebhusayithi lamaningi.
 
-## Kuphequlula Kontenti Yangaphandle
+## Kungeta Labahlinzeki Labangaphandle
 
-Kontenti yemnikeli wangaphandle isebenta nakanjani kufana nekontenti yemgceka:
-
-1. Tinhlelo letivela kubanikeli bangaphandle tivela ekhasini lasekhaya le-Lessons.church kanye naletinye tinhlelo.
-2. Chofota **luhlelo** kubona tifundvo talo.
-3. Chofota **sifundvo** kubona tifundzo taso.
-4. Buka tifundzo ngesakhiwo lesifanako -- tigaba, tindzima, tento, emavidiyo, nemibhalo langalandwa.
-
-Akukho inchubo lekhetsekile nome ingeniso lehlukene yekontenti yangaphandle. Konkhe kuhlanganiswe emtapeni munye kutfola kuphequlula lokulula.
-
-## Kwengeta Luxhumano Lwabanikeli
-
-Nangabe libandla lakho lisebentisa umnikeli wekufundzisa losekela i-Open Lesson Format futsi ufuna kontenti yakhe itfolakale esangweni lakho le-Lessons.church:
+Nasebandla lakho lisebentisa umhlinzeki wemakharikhulamu losekela i-Open Lesson Format:
 
 1. Ngena ku-akhawunti yakho ye-Lessons.church.
-2. Yaphuma uye ekhasini le-**External Providers** esangweni.
-3. Ngeza i-URL yeluxhumano lwemnikeli wangaphandle.
-4. Tinhlelo netifundvo tabo tizawukwati kutfolakala kutsi libandla lakho liphequlule, lihlele, futsi lisebentise emakilasini.
+2. Chofoza **External Providers** kunavigheshini.
+3. Chofoza **Add Provider**, faka **Provider Name** ne-**API URL** yalomhlinzeki, bese uchofoza **Save**.
+
+Bona [Labahlinzeki Besitsatfu](../admin/third-party-providers.md) ngetinyatselo letigcweleko.
 
 :::info
-Kwengeta luxhumano lwemnikeli wangaphandle kwentiwa ngesango le-Lessons.church futsi kudzinga i-akhawunti lengenile. Kuphequlula kontenti lesivele yengetiwe yi-platform akudzingi i-akhawunti.
+Umhlinzeki longephandle ungeniswa bebandla lakho kuphela. Tihlelo takhe atikaveli ekhasini lekucala le-Lessons.church loluvulekile noma ekusesheni.
 :::
 
-## Kubachami Bekontenti
+## Kusebentisa Lokuqukethwe Kwangaphandle
 
-Nangabe ungumshiceleli wekufundzisa lonentsandvo yekwenta kontenti yakho itfolakale nge-Lessons.church, i-Open Lesson Format inikeza indlela lejwayelekile yekwabelana ngetinhlelo, tifundvo, netifundzo takho. Tsintsana neliciko le-Lessons.church nome uvakashele umbhalo webachami betekwakha kutfola imininingwane yekuhlanganiswa.
+Nasengeta umhlinzeki, tihlelo, tifundo, netimfundvo takhe titfolakala nawuhlela:
+
+1. Nawungeta [timfundvo ekuhleleni kwemakilasi](../classrooms/scheduling-lessons.md), khetsa umhlinzeki ku-**Provider**.
+2. Khetsa i-**Program**, i-**Study**, i-**Lesson**, ne-**Venue** ngalendlela ofanele ngayo timfundvo te-Lessons.church.
+3. Ekuhleleni kwemakilasi, chofoza **View Lesson** ngaphansi kwemfundvo yangaphandle lehleliwe ukuze uyivule. Isebentisa lesakhiwo lesifanako naletimfundvo letakhiwe ngaphakathi -- tingcaphuno, tindzima, tencenye, tividiyo, nezintfo letingakhipha.
+
+:::note
+Timfundvo tebahlinzeki bangaphandle ayikwazi [kwenteka ngendlela yakho](../customization/customizing-lessons.md). Timfundvo te-Lessons.church kuphela letikhombisa linki le-**Customize**.
+:::
+
+## Kubakhi Bekuqukethwe
+
+Nawungumshicileli wemakharikhulamu lofuna kwenta lokuqukethwe kwakho kutfolakale ku-Lessons.church, i-Open Lesson Format inikeka indlela lelinganiselwe yekwabelana ngetinhlelo, tifundo, netimfundvo takho. Thintana neliqembu le-Lessons.church noma vakashela imibhalo yabathuthukisi ngemininingwane yekuhlanganiswa.
 
 :::tip
-Nangabe ungumphatsi lophatsa tifidi tebanikeli bangaphandle ngeliciniso le-platform, bona [Banikeli Bangaphandle](../admin/third-party-providers.md) esigabeni Sekuphatsa.
+Ngetinyatselo letigcweleko tekungeta, kuhlela, nekususa umhlinzeki, bona [Labahlinzeki Besitsatfu](../admin/third-party-providers.md).
 :::

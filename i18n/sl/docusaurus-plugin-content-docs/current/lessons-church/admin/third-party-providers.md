@@ -1,58 +1,57 @@
 ---
 title: "Zunanji ponudniki"
-description: "Dodaj zunanji vir kurikula v Lessons.church na strani Third-Party v upravi, nato po potrebi ogledaj, posodobi ali odstrani povezave ponudnikov."
+description: "Dodajte vir učnega načrta v formatu Open Lesson Format na strani Zunanji ponudniki v Lessons.church, nato ga uredite ali izbrišite, da bo vaša cerkev lahko načrtovala njegove lekcije."
 ---
 
 # Zunanji ponudniki
 
 <div class="article-intro">
 
-Lessons.church podpira zunanje ponudnike učnih načrtov prek formata Open Lesson Format. To pomeni, da lahko uvozite vsebino drugih organizacij in jo dasta na voljo poleg vgrajene knjižnice. Tako imajo cerkve na enem mestu dostop do učnih načrtov iz več virov.
+Lessons.church podpira zunanje ponudnike učnih načrtov prek formata Open Lesson Format. To pomeni, da lahko vaša cerkev poveže učne načrte drugih organizacij in jih načrtuje za svoje razrede tik ob vgrajeni knjižnici, tako da ima vaša ekipa učne načrte iz več virov na enem mestu.
 
 </div>
 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Imeti skrbniška dovoljenja za Lessons.church (glejte [pregled skrbništva](./index.md))
-- Pridobiti URL vira (feed URL) pri zunanjem ponudniku, s katerim se želite povezati
+- Prijavite se v Lessons.church z računom, ki lahko upravlja urnike razredov vaše cerkve
+- Pridobite URL vira od zunanjega ponudnika, ki ga želite povezati. Vir mora vračati lekcije v [formatu Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Dodajanje ponudnika
 
-1. Pojdite na območje **Skrbništvo**.
-2. Odprite stran **Zunanji ponudniki**.
-3. Kliknite **Dodaj ponudnika** (ali enakovredni gumb za dodajanje nove povezave).
-4. Vnesite **URL vira** ponudnika. To je naslov, na katerem ponudnik objavlja podatke o svojem učnem načrtu v formatu Open Lesson Format.
-5. Shranite povezavo.
+1. Kliknite **Zunanji ponudniki** v navigaciji Lessons.church. Odpre se stran **Zunanji ponudniki lekcij**.
+2. Kliknite **Dodaj ponudnika**. Če še nobenega niste dodali, namesto tega kliknite **Dodaj prvega ponudnika**.
+3. Vnesite **Ime ponudnika**. To je ime, ki ga vaša ekipa vidi, ko izbere ponudnika.
+4. Vnesite **API URL**. To je naslov, na katerem ponudnik objavlja svoj učni načrt v formatu Open Lesson Format.
+5. Kliknite **Shrani**.
 
-Ko shranite povezavo, bo Lessons.church uvozil vsebino ponudnika. Njegovi programi, študije in lekcije se bodo prikazale v knjižnici učnih načrtov poleg vaše lastne vsebine.
+Ponudnik je dodan samo za vašo cerkev. Nato se prikaže kot izbira pod **Ponudnik**, ko [načrtujete lekcijo](../classrooms/scheduling-lessons.md) za razred, in pod **Vir**, ko ustvarjate [letni načrt](./managing-year-plans.md).
 
 ## Upravljanje ponudnikov
 
-Na strani **Zunanji ponudniki** lahko vidite vse povezane ponudnike. Za vsakega ponudnika lahko:
+Stran **Zunanji ponudniki lekcij** prikazuje vse ponudnike, ki jih je dodala vaša cerkev. Za spremembo:
 
-- **Ogledate** uvoženo vsebino, da preverite, ali je bila pravilno uvožena.
-- **Posodobite** URL vira, če ponudnik spremeni svoj naslov.
-- **Odstranite** ponudnika, če ne želite več vključevati njegove vsebine.
+- **Uredi** -- Kliknite ikono **Uredi ponudnika** (svinčnik), spremenite **Ime ponudnika** ali **API URL** in kliknite **Shrani**.
+- **Izbriši** -- Kliknite ikono **Uredi ponudnika**, nato kliknite ikono za brisanje (koš) in potrdite.
 
 ## Kaj je format Open Lesson Format?
 
-Open Lesson Format je standardizirana shema, ki na strukturiran način opisuje vsebino učnih načrtov – programe, študije, lekcije, prizorišča, razdelke in dejanja. Vsaka organizacija, ki objavlja svojo vsebino v tem formatu, jo lahko doda kot ponudnika v Lessons.church.
+Open Lesson Format je standardizirana shema, ki na strukturiran način opisuje vsebino učnih načrtov -- programe, študije, lekcije, prizorišča, razdelke in dejanja. Vsaka organizacija, ki objavlja svojo vsebino v tem formatu, se lahko doda kot ponudnik v Lessons.church.
 
-Če ste ponudnik vsebine in želite svoj učni načrt narediti dostopen prek Lessons.church, lahko celotno dokumentacijo sheme najdete v vodniku [Open Lesson Format](./open-lesson-format.md).
+Če ste ponudnik vsebine in želite svoj učni načrt narediti dostopen prek Lessons.church, si lahko celotno dokumentacijo sheme preberete v vodniku [Open Lesson Format](./open-lesson-format.md).
 
 ## Zakaj uporabljati zunanje ponudnike?
 
 - **Več izbire za cerkve** -- Cerkve lahko brskajo po širši izbiri učnih načrtov, ne da bi zapustile platformo.
-- **Vse na enem mestu** -- Prostovoljci in koordinatorji ne potrebujejo več obiskovanja več spletnih strani, da bi našli in načrtovali lekcije.
-- **Enostavna nastavitev** -- Dodajanje ponudnika zahteva le URL vira. Ni ročnega vnašanja podatkov ali nalaganja datotek.
+- **Vse na enem mestu** -- Prostovoljci in koordinatorji ni treba obiskovati več spletnih strani, da bi našli in načrtovali lekcije.
+- **Enostavna nastavitev** -- Dodajanje ponudnika zahteva le ime in URL vira. Ni ročnega vnašanja podatkov ali nalaganja datotek.
 
 :::info
-Vsebino zunanjih ponudnikov upravlja zunanji ponudnik. Če opazite manjkajočo ali zastarelo vsebino ponudnika, bo težavo morda treba rešiti na njihovi strani.
+Vsebino zunanjih ponudnikov upravlja ponudnik sam. Če opazite manjkajočo ali zastarelo vsebino ponudnika, bo morda težavo treba odpraviti na njihovi strani.
 :::
 
 :::tip
-Za nastavitve zunanjih ponudnikov na ravni cerkve (ne na skrbniški ravni) glejte stran [Zunanji ponudniki](../browsing/external-providers.md) v razdelku Brskanje.
+Če želite izvedeti, kako lekcije zunanjega ponudnika izgledajo, ko so načrtovane, glejte [Zunanji ponudniki](../browsing/external-providers.md) v razdelku Brskanje.
 :::

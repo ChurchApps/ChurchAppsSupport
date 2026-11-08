@@ -1,6 +1,6 @@
 ---
 title: "Environment Variables"
-description: "Set up the .env file for ChurchApps projects, choose between the shared demo API and a local API, and fill in variables for B1 Admin, B1.church, B1 Mobile, Lessons.church, and more."
+description: "Set up .env files for ChurchApps projects, pick the shared demo API or a local one, and fill in variables for B1 Admin, B1.church, B1 Checkin, and more."
 ---
 
 # Environment Variables
@@ -167,20 +167,18 @@ Sample file: `dotenv.sample.txt`
 
 ## Mobile App Environment Variables
 
-### B1Mobile (React Native / Expo)
+### B1Checkin (React Native / Expo)
 
 Sample file: `dotenv.sample.txt`
 
-| Variable | Description | Example (Demo) |
-|----------|-------------|----------------|
-| `STAGE` | Environment name | `dev` |
-| `MEMBERSHIP_API`, `ATTENDANCE_API`, `GIVING_API`, `DOING_API`, `MESSAGING_API`, `CONTENT_API` | One URL per ChurchApps API module (each defaults to production when unset) | `https://api.demo.churchapps.org/membership` |
-| `LESSONS_API` | Lessons API (separate host; there is no shared non-production one) | `https://api.lessons.church` |
-| `CONTENT_ROOT` | Content delivery URL | `https://democontent.churchapps.org` |
-| `LESSONS_ROOT` | Lessons site URL | `https://lessons.church` |
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `EXPO_PUBLIC_STAGE` | Picks the API set the app connects to: `dev` (local API at `http://127.0.0.1:8084`), `staging`, or `prod` (the default when unset) | `dev` |
+
+B1Checkin uses only the Membership and Attendance API modules plus the content delivery URL; their addresses for each stage are set in `src/helpers/EnvironmentHelper.ts`.
 
 :::info
-Mobile apps do not use the `REACT_APP_` or `NEXT_PUBLIC_` prefix. Environment variable access is handled by the Expo configuration.
+Expo inlines only variables prefixed with `EXPO_PUBLIC_` into the app bundle. Restart the dev server with `yarn start --reset-cache` after changing `.env`.
 :::
 
 ---
@@ -192,7 +190,6 @@ Mobile apps do not use the `REACT_APP_` or `NEXT_PUBLIC_` prefix. Environment va
 | Api | `.env.sample` |
 | B1Admin | `.env.sample` |
 | B1App | `.env.sample` |
-| B1Mobile | `dotenv.sample.txt` |
 | B1Checkin | `dotenv.sample.txt` |
 | LessonsApp | `dotenv.sample.txt` |
 | AskApi | `dotenv.sample.txt` |

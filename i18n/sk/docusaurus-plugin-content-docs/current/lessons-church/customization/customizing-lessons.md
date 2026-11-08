@@ -1,22 +1,22 @@
 ---
 title: "Prispôsobenie lekcií"
-description: "Odstránenie, skrytie alebo zmena poradia sekcií a rolí v lekcii Lessons.church a výber, či sa zmeny použijú pre jednu triedu alebo pre všetky."
+description: "Odstráňte alebo preraďte sekcie, roly a akcie v lekcii Lessons.church a vyberte, či sa každá zmena použije iba pre jednu triedu alebo pre všetky."
 ---
 
 # Prispôsobenie lekcií
 
 <div class="article-intro">
 
-Tento návod vás prevedie prispôsobením lekcie pre vašu triedu. Úpravy vám umožnia odstrániť, skryť alebo zmeniť poradie obsahu, aby vaši dobrovoľníci videli presne to, čo potrebujú – nič viac, nič menej.
+Tento návod vás prevedie prispôsobením lekcie pre vašu triedu. Prispôsobenia vám umožnia odstrániť alebo preradiť obsah tak, aby vaši dobrovoľníci videli presne to, čo potrebujú – nič viac, nič menej.
 
 </div>
 
 <div class="prereqs">
-<h4>Skôr, ako začnete</h4>
+<h4>Predtým, než začnete</h4>
 
 - [Nastavte aspoň jednu triedu](../classrooms/setting-up-classrooms.md) v portáli
 - [Naplánujte lekciu](../classrooms/scheduling-lessons.md) do triedy, ktorú chcete prispôsobiť
-- Prečítajte si [prehľad prispôsobenia](./index.md), aby ste pochopili, čo všetko možno upraviť
+- Prečítajte si [prehľad prispôsobení](./index.md), aby ste pochopili, čo všetko možno prispôsobiť
 
 </div>
 
@@ -24,53 +24,68 @@ Tento návod vás prevedie prispôsobením lekcie pre vašu triedu. Úpravy vám
 
 1. Prihláste sa a prejdite do svojho **Portálu**.
 2. Vyberte **triedu**, ktorá obsahuje lekciu, ktorú chcete prispôsobiť.
-3. Kliknite na **naplánovanú lekciu**, aby sa otvorila.
-4. Kliknutím na **Prispôsobiť** vstúpite do zobrazenia prispôsobenia.
+3. V harmonograme triedy nájdite lekciu a kliknite na **Prispôsobiť** pod jej názvom.
 
-Uvidíte celý obsah lekcie rozdelený na sekcie, roly a akcie.
+Stránka **Prispôsobenie lekcie** zobrazuje sekcie lekcie, pričom pod každou sekciou sú jej roly a pod každou rolou jej akcie. Každý riadok má na pravej strane tlačidlá:
 
-## Odstraňovanie sekcií
+- **Šípka nahor** a **Šípka nadol** -- Presunie položku o jedno miesto nahor alebo nadol medzi jej susedmi
+- **Odstrániť** (ikona koša) -- Odstráni položku
 
-Ak sa sekcia na vašu triedu nehodí, môžete ju úplne odstrániť. Je to užitočné, keď lekcia obsahuje materiál pre viacero vekových skupín a vy potrebujete len jednu. Napríklad ak lekcia obsahuje sekciu „Aktivita pre predškolákov“ aj sekciu „Aktivita pre školákov“, môžete odstrániť tú, ktorá nezodpovedá vašej miestnosti.
+:::info
+Tlačidlo **Prispôsobiť** sa zobrazuje iba pri lekciách Lessons.church. Lekcie naplánované z externého poskytovateľa namiesto toho zobrazujú **Zobraziť lekciu** a nedajú sa prispôsobiť.
+:::
+
+## Výber, kde sa zmena použije
+
+Pri každom kliknutí na šípku alebo ikonu koša sa zobrazí ponuka **Použiť vybrané prispôsobenie na:**
+
+- **Túto triedu** -- Zmena sa použije iba pre aktuálnu triedu. Ostatné triedy nebudú ovplyvnené.
+- **Všetky triedy** -- Zmena sa použije na každú triedu vo vašom kostole.
+
+Vyberte jednu možnosť a zmena sa hneď uloží. Neexistuje žiadny samostatný krok ukladania.
+
+## Odstránenie sekcií
+
+Ak sekcia nezodpovedá vašej triede, môžete ju úplne odstrániť. Toto je užitočné, keď lekcia obsahuje obsah pre viaceré vekové skupiny a vy potrebujete len jednu. Napríklad, ak lekcia obsahuje sekcie „Aktivita pre predškolákov" aj „Aktivita pre školákov", môžete odstrániť tú, ktorá nezodpovedá vašej miestnosti.
 
 1. Nájdite sekciu, ktorú chcete odstrániť.
-2. Kliknutím sekciu **odstráňte** alebo **skryte**.
-3. Sekcia sa už nebude zobrazovať dobrovoľníkom, ktorí si túto lekciu pozerajú.
+2. Kliknite na jej tlačidlo **Odstrániť** (ikona koša).
+3. Vyberte **Túto triedu** alebo **Všetky triedy**.
 
-## Skrývanie rolí alebo akcií
+Sekcia sa zobrazí ako odstránená spolu so všetkými jej rolami a akciami a dobrovoľníci ju pre túto lekciu už neuvidia.
 
-V rámci sekcie môžete skryť konkrétne roly alebo akcie. Napríklad ak sekcia obsahuje rolu „Vedúci chvál“, ale vaša trieda takú rolu nemá, môžete skryť len túto rolu bez odstránenia celej sekcie.
+## Odstránenie rolí alebo akcií
 
-1. Rozbaľte sekciu, aby ste videli jej roly a akcie.
-2. Kliknutím **skryte** každú rolu alebo akciu, ktorú nepotrebujete.
+V rámci sekcie môžete odstrániť konkrétne roly alebo akcie. Napríklad, ak sekcia obsahuje rolu „Vedúci chvál", ale vaša trieda ju nemá, môžete odstrániť iba túto rolu bez odstránenia celej sekcie.
+
+1. Nájdite rolu alebo akciu v zozname pod jej sekciou.
+2. Kliknite na jej tlačidlo **Odstrániť** (ikona koša) a vyberte, kde sa zmena použije.
 
 ## Zmena poradia obsahu
 
-Sekcie a akcie môžete preusporiadať podľa toho, aký tok lekcie preferujete:
+Sekcie, roly a akcie môžete preusporiadať tak, aby zodpovedali vami preferovanému toku:
 
-1. Presúvajte sekcie alebo akcie myšou nahor alebo nadol, aby ste zmenili ich poradie.
-2. Nové poradie je to, čo uvidia vaši dobrovoľníci pri zobrazení lekcie.
+1. Kliknite na **Šípku nahor** alebo **Šípku nadol** pri položke, ktorú chcete presunúť.
+2. Vyberte, kde sa zmena použije. Položka si vymení miesto so svojim susedom.
 
-## Uloženie prispôsobenia
+Opakujte, kým položky nebudú v poradí, aké chcete. Nové poradie uvidia vaši dobrovoľníci pri zobrazení lekcie.
 
-Keď dokončíte úpravy, uložte prispôsobenie. Zobrazí sa výzva, aby ste vybrali, ako sa má uplatniť:
+## Vrátenie odstránenia
 
-- **Iba táto trieda** -- Zmeny sa uplatnia len na aktuálnu triedu. Ostatné triedy nebudú ovplyvnené.
-- **Všetky triedy** -- Zmeny sa uplatnia vo všetkých triedach vo vašom kostole.
-- **Odstrániť prispôsobenie** -- Ak ste túto lekciu už predtým prispôsobili a chcete sa vrátiť k pôvodnému obsahu, zvoľte túto možnosť a vaše zmeny sa vymažú.
+Ak chcete obnoviť položku, ktorú ste odstránili, kliknite znova na jej tlačidlo **Odstrániť**. Ponuka teraz ponúka aj možnosť **Žiadne**. Vyberte **Žiadne**, aby ste odstránenie zrušili a položku znova zobrazili, alebo zvoľte inú možnosť a zmeňte, kde sa odstránenie použije.
 
 :::tip
-Začnite prispôsobením jednej lekcie pre jednu triedu. Keď si postup osvojíte, môžete prispôsobenia uplatňovať širšie vo všetkých triedach.
+Začnite prispôsobením jednej lekcie pre jednu triedu. Keď sa s postupom zoznámite, môžete prispôsobenia použiť širšie naprieč všetkými triedami.
 :::
 
-## Kedy prispôsobovať
+## Kedy prispôsobiť
 
 Prispôsobenie je najužitočnejšie vtedy, keď:
 
-- Lekcia obsahuje materiál pre viacero vekových skupín a chcete zobraziť len relevantné časti.
+- Lekcia obsahuje obsah pre viaceré vekové skupiny a chcete zobraziť iba relevantné časti.
 - Vaša trieda nepoužíva niektoré roly (napríklad vyhradeného vedúceho chvál alebo technického dobrovoľníka).
 - Preferujete iné poradie toku lekcie, než aké je predvolené.
 
 :::info
-Nemusíte prispôsobovať každú lekciu. Ak obsah vyhovuje vašej triede bez úprav, tento krok môžete preskočiť a rovno prejsť na [prezentovanie](../presenting/index.md).
+Nemusíte prispôsobovať každú lekciu. Ak obsah vyhovuje vašej triede tak, ako je, tento krok môžete úplne preskočiť a prejsť priamo na [prezentovanie](../presenting/index.md).
 :::

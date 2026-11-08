@@ -1,41 +1,41 @@
 ---
 title: "Prilagajanje"
-description: "Spoznaj, kako v uri Lessons.church skriti sklope, vloge ali dejanja ter preurediti vsebino, bodisi za eno učilnico bodisi za vse učilnice v cerkvi."
+description: "Naučite se skrivati razdelke, vloge ali dejanja v lekciji na Lessons.church ter spreminjati vrstni red vsebine, bodisi za en razred bodisi za vse razrede v vaši cerkvi."
 ---
 
 # Prilagajanje
 
 <div class="article-intro">
 
-Lessons.church ponuja knjižnico pripravljenih vsebin za lekcije, vendar je vsaka cerkev drugačna. Funkcije prilagajanja vam omogočajo, da vsebino lekcij prilagodite vašim razredom, načinu poučevanja in starostnim skupinam, tako da vaši prostovoljci vidijo samo tisto, kar je zanje pomembno.
+Lessons.church ponuja knjižnico pripravljenih vsebin za lekcije, vsaka cerkev pa je drugačna. Funkcije za prilagajanje vam omogočajo, da vsebino lekcije prilagodite svojim specifičnim razredom, načinu poučevanja in starostnim skupinam, tako da prostovoljci vidijo samo tisto, kar je zanje relevantno.
 
 </div>
 
 ## Zakaj prilagajati?
 
-Vsebina lekcij na Lessons.church je zasnovana tako, da je prilagodljiva. Ena sama lekcija lahko vključuje razdelke za več starostnih skupin, neobvezne dejavnosti ali vloge, ki ne veljajo za vsak razred. Namesto da bi morali prostovoljci sami preskakovati dele, ki zanje niso relevantni, lahko lekcijo prilagodite tako, da vidijo samo tisto, kar jim je namenjeno.
+Vsebina lekcij na Lessons.church je zasnovana tako, da je prilagodljiva. Ena sama lekcija lahko vključuje razdelke za več starostnih skupin, izbirne dejavnosti ali vloge, ki ne veljajo za vsak razred. Namesto da bi se prostovoljci morali sami izogibati delom, ki zanje niso pomembni, lahko lekcijo prilagodite tako, da vidijo samo tisto, kar je zanje relevantno.
 
-Na primer, lekcija lahko vključuje ustvarjalno dejavnost, ki je odlična za predšolske otroke, vendar ni primerna za peti razred. S prilagajanjem lahko ta razdelek skrijete za starejšo skupino, medtem ko ga za mlajšo ohranite.
+Na primer, lekcija lahko vključuje ustvarjalno dejavnost, ki je odlična za predšolske otroke, vendar ni primerna za vaš razred petošolcev. S prilagajanjem lahko ta razdelek skrijete za starejšo skupino, medtem ko ga za mlajšo ohranite.
 
-## Kaj lahko prilagodite
+## Kaj lahko prilagajate
 
-- **Odstranjevanje razdelkov** -- Skrijte celotne razdelke lekcije, ki ne veljajo za določen razred ali starostno skupino.
-- **Skrivanje vlog ali dejavnosti** -- Odstranite posamezne vloge ali dejavnosti znotraj razdelka, če niso potrebne.
-- **Preurejanje vsebine** -- Razporedite razdelke in dejavnosti tako, da bodo ustrezali potku, ki ga želite v svojem razredu.
+- **Odstranjevanje razdelkov** -- Odstranite cele razdelke lekcije, ki ne veljajo za določen razred ali starostno skupino.
+- **Odstranjevanje vlog ali dejanj** -- Odstranite posamezne vloge ali dejanja znotraj razdelka, če niso potrebna.
+- **Spreminjanje vrstnega reda vsebine** -- Preuredite razdelke in dejanja tako, da ustrezajo poteku, ki ga želite za svoj razred.
 
-## Za posamezen razred ali za vse
+## Za en razred ali za vse
 
-Ko shranite prilagoditev, izberete, kako široko naj velja:
+Vsakič, ko naredite spremembo, izberete, kako široko se uporablja:
 
-- **En razred** -- Prilagoditev vpliva samo na trenutni razred. Drugi razredi vidijo prvotno vsebino.
-- **Vsi razredi** -- Prilagoditev velja za vse razrede v vaši cerkvi.
+- **Ta razred** -- Sprememba velja samo za trenutni razred. Drugi razredi vidijo izvirno vsebino.
+- **Vsi razredi** -- Sprememba velja za vse razrede v vaši cerkvi.
 
 Ta prilagodljivost pomeni, da lahko za različne starostne skupine nastavite različne poglede na isto lekcijo ali pa spremembo uveljavite povsod hkrati.
 
 :::tip
-Če se s prilagajanjem šele seznanjate, najprej preizkusite spremembo na enem razredu, preden jo uveljavite za vse razrede.
+Če s prilagajanjem še niste seznanjeni, začnite z enim razredom, da vidite, kako deluje, preden spremembe uveljavite za vse razrede.
 :::
 
 ## Naslednji koraki
 
-- [Prilagajanje lekcij](./customizing-lessons.md) -- Sledite podrobnemu vodniku in prilagodite svojo prvo lekcijo
+- [Prilagajanje lekcij](./customizing-lessons.md) -- Sledite navodilom po korakih za prilagoditev vaše prve lekcije

@@ -1,195 +1,206 @@
 ---
-title: "Korzystanie z edytora stron"
-description: "Skonfiguruj edytor stron w B1 Admin: dodawaj sekcje i elementy, stylizuj je, sprawdzaj podgląd na telefonie i publikuj wersje robocze. Obejmuje też cofanie zmian i historię wersji."
+title: "Používání editoru stránek"
+description: "Nastavte editor stránek v B1 Admin přidáváním sekcí a prvků, jejich stylováním, náhledem na mobilu a publikováním konceptů. Popisuje také vrácení změn a historii verzí."
 ---
 
-# Korzystanie z edytora stron
+# Používání editoru stránek
 
 <div class="article-intro">
 
-Edytor stron B1 to wizualny kreator typu przeciągnij i upuść, który pozwala projektować strony witryny kościoła bez pisania kodu. Możesz dodawać sekcje i bloki treści, dostosowywać style, podglądać swoją pracę i cofać zmiany -- wszystko w przeglądarce.
+Editor stránek B1 je vizuální nástroj pro tvorbu typu přetáhnout a pustit, který vám umožňuje navrhovat stránky vašeho církevního webu bez psaní jakéhokoli kódu. Můžete přidávat sekce a obsahové bloky, upravovat styly, prohlížet náhled své práce a vracet změny zpět – to vše přímo v prohlížeči.
 
 </div>
 
-## Film szkoleniowy
+## Video s návodem
 
-<YouTube id="m2B_JxmfFm4" title="Edytowanie stron i nawigacji w B1" next="Podłączanie domeny niestandardowej w B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
+<YouTube id="m2B_JxmfFm4" title="Úprava stránek a navigace v B1" next="Připojení vlastní domény v B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
 
 <div class="prereqs">
-<h4>Zanim zaczniesz</h4>
+<h4>Než začnete</h4>
 
-- Wykonaj [Wstępną konfigurację](./initial-setup.md), aby skonfigurować swoją witrynę
-- Utwórz co najmniej jedną stronę w sekcji [Zarządzanie stronami](./managing-pages.md)
-- Aby otworzyć edytor, potrzebujesz uprawnienia **content.edit**
+- Dokončete [počáteční nastavení](./initial-setup.md), abyste měli web nakonfigurovaný
+- Vytvořte alespoň jednu stránku v části [Správa stránek](./managing-pages.md)
+- Pro přístup k editoru potřebujete oprávnění **content.edit**
 
 </div>
 
-## Otwieranie edytora
+## Otevření editoru
 
-1. W B1 Admin otwórz [menu Przejdź do](../introduction.md#getting-around-with-the-jump-menu) (pasek wyszukiwania w lewym górnym rogu), rozwiń **Witryna** i kliknij **Strony**.
-2. Znajdź stronę, którą chcesz edytować, w tabeli stron i kliknij **Edytuj treść**.
+1. V B1 Admin otevřete [nabídku Jump](../introduction.md#getting-around-with-the-jump-menu) (vyhledávací pole v levém horním rohu), rozbalte položku **Website** a klikněte na **Pages**.
+2. V tabulce stránek najděte stránku, kterou chcete upravit, a klikněte na **Edit Content**.
 
-Edytor otworzy się w trybie pełnoekranowym. Lewy panel pokazuje strukturę strony i dostępne elementy treści, a środkowy obszar -- podgląd strony na żywo.
+Editor se otevře na celou obrazovku. Levý panel zobrazuje strukturu stránky a dostupné obsahové prvky; střední oblast zobrazuje živý náhled vaší stránky.
 
 :::info
-Edytor zawsze wyświetla się w jasnym motywie, niezależnie od ustawienia motywu w B1 Admin, i używa czcionek nagłówków oraz tekstu, które wybrano w sekcji [Wygląd](./appearance.md). Dzięki temu podgląd dokładnie odpowiada temu, jak strona będzie wyglądać dla odwiedzających witrynę.
+Editor se vždy zobrazuje v úsporném světlém režimu bez ohledu na nastavení motivu v B1 Admin a používá nadpisové a textové písmo, které jste zvolili v části [Vzhled](./appearance.md). Díky tomu náhled přesně odpovídá tomu, jak bude stránka vypadat pro návštěvníky webu.
 :::
 
-## Struktura strony: sekcje i elementy
+## Struktura stránky: sekce a prvky
 
-Każda strona składa się z dwóch poziomów:
+Každá stránka je vytvořena ze dvou úrovní:
 
-- **Sekcje** -- Najwyższe kontenery, które dzielą stronę na poziome pasy (na przykład sekcja główna, blok treści lub pasek stopki). Zanim dodasz treść, każda strona musi mieć co najmniej jedną sekcję.
-- **Elementy** -- Pojedyncze fragmenty treści umieszczone w sekcji, takie jak tekst, obrazy, przyciski, karty, formularze i kalendarze.
+- **Sekce** – Nejvyšší kontejnery, které rozdělují stránku na vodorovné pásy (například hlavní úvodní blok, obsahový blok nebo pruh zápatí). Než budete moci přidat obsah, musí mít každá stránka alespoň jednu sekci.
+- **Prvky** – Jednotlivé obsahové části umístěné uvnitř sekce, například text, obrázky, tlačítka, karty, formuláře a kalendáře.
 
-### Dodawanie sekcji
+### Přidání sekce
 
-1. Kliknij **Dodaj sekcję** (lub przycisk **+** u góry lewego panelu).
-2. Wybierz sposób rozpoczęcia:
-   - **Z szablonu** -- przeglądaj galerię szablonów sekcji pogrupowanych według kategorii (Sekcja główna, O nas, Usługi, Darowizny itd.) i kliknij wybrany, aby wstawić gotową, w pełni stylizowaną sekcję. Po dodaniu możesz dostosować wszystko.
-   - **Pusta sekcja** -- wybierz układ kolumn (jedna, dwie, trzy kolumny itd.) i twórz od podstaw.
-3. Nowa sekcja pojawi się w podglądzie. Kliknij ją, aby ją zaznaczyć, i skonfiguruj jej kolor tła, odstępy wewnętrzne oraz inne opcje stylu.
+1. Klikněte na **Add Section** (nebo na tlačítko **+** v horní části levého panelu).
+2. Vyberte, jak začít:
+   - **Ze šablony** – Procházejte galerii šablon sekcí rozdělenou do kategorií (Hero, About, Services, Giving atd.) a kliknutím vložte jednu z nich jako plně stylizovanou sekci s předvyplněným obsahem. Vše můžete po přidání upravit.
+   - **Prázdná sekce** – Zvolte rozvržení sloupců (jeden sloupec, dva sloupce, tři sloupce atd.) a začněte od nuly.
+3. Nová sekce se zobrazí v náhledu. Kliknutím ji vyberete a nastavíte barvu pozadí, odsazení a další možnosti stylu.
 
-### Zmiana układu sekcji
+### Změna rozvržení sekce
 
-Masz już gotową sekcję, ale chcesz inną strukturę? Użyj przełącznika układu w tej sekcji, aby zamienić jej układ kolumn na inny z galerii, zachowując dotychczasową treść i elementy.
+Máte sekci hotovou, ale chcete jiné uspořádání? Použijte přepínač rozvržení u této sekce a vyměňte uspořádání sloupců za jiné z galerie, přičemž vaše stávající obsahy a prvky zůstanou zachovány.
 
-### Dodawanie elementów do sekcji
+### Přidání prvků do sekce
 
-1. Kliknij wewnątrz sekcji w podglądzie, aby ją zaznaczyć.
-2. Kliknij **Dodaj treść** i wybierz typ elementu z listy:
-   - **Tekst** -- Nagłówki, akapity i tekst sformatowany
-   - **Obraz** -- Prześlij zdjęcie lub podaj do niego link
-   - **Przycisk** -- Klikalny link wzywający do działania
-   - **Karta** -- Obraz z tytułem i opisem
-   - **Formularz** -- Osadź [formularz](../forms/creating-forms.md) bezpośrednio na stronie. Jeśli formularz ma [zdjęcie nagłówkowe](../forms/creating-forms.md#adding-a-header-photo), wyświetli się ono nad pytaniami
-   - **Kalendarz** -- Wyświetl kalendarz wydarzeń
-   - **FAQ** -- Bloki pytań i odpowiedzi w formie akordeonu
-   - **Wideo** -- Osadź wideo na podstawie adresu URL
-   - **Przeglądarka grup** -- Katalog wszystkich grup kościelnych z opcjonalnym wyszukiwaniem, filtrem kategorii i filtrem etykiet
-   - **Wyróżnienie z ikoną** -- Ikona z tytułem i krótkim opisem, do prezentowania cech lub obszarów służby
-   - **Galeria** -- Siatka lub układ murowany z wieloma zdjęciami
-   - **Opinia** -- Jeden lub więcej cytatów z imieniem autora, rolą i zdjęciem
-   - **Ikony mediów społecznościowych** -- Ikony z linkami do profili kościoła w mediach społecznościowych: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo i Podcast. Wpisz link dla każdej platformy, którą chcesz pokazać; w przypadku **WhatsApp** użyj linku `https://wa.me/` z numerem telefonu lub linkiem zaproszenia do grupy
-   - **Odliczanie** -- Licznik odliczający czas do daty lub cotygodniowego nabożeństwa
-   - **Statystyki** -- Rząd dużych liczb z opisami (członkowie, lata, filie)
-   - **Postęp kampanii** -- Pasek postępu na żywo dla kampanii zbiórki, pokazujący łączną kwotę zebraną na cel funduszu
-   - **Siatka zespołu** -- Karty ze zdjęciami członków grupy; grupa musi mieć włączoną opcję **publicznej listy**
-   - **Godziny nabożeństw** -- Harmonogram nabożeństw w Twoich filiach, pobierany automatycznie z konfiguracji frekwencji
-   - **Kazania** -- Biblioteka kazań w pełnym przeglądarce lub w układzie siatki, listy albo wyróżnionego najnowszego
-   - **Mapa** -- Osadzona mapa wyśrodkowana na adresie kościoła
-   - **Tabela** -- Prosta siatka wierszy i kolumn do danych tabelarycznych
-   - **Tekst ze zdjęciem** -- Tekst i obraz obok siebie
-   - **Logo** -- Logo kościoła, pobierane z sekcji [Wygląd](./appearance.md)
-   - **Transmisja na żywo** -- Odtwarzacz transmisji na żywo, osadzony bezpośrednio na stronie
-   - **Podcast** -- Lista odcinków pobrana z zewnętrznego kanału RSS podcastu, którego adres podajesz, z ustawieniami liczby wyświetlanych odcinków oraz tego, czy pokazywać daty i opisy. Każdy odcinek na działającej witrynie ma odtwarzacz audio oraz link **Pobierz**, który zapisuje plik audio odcinka pod tytułem odcinka. Ten element służy do prezentowania dowolnego kanału podcastu na Twojej witrynie; aby opublikować własne kazania jako podcast, zobacz [Zarządzanie kazaniami](../sermons/managing-sermons.md#your-podcast-feed)
-   - **Darowizna** -- Przycisk darowizny lub osadzony formularz darowizn
-   - **HTML** -- Własny kod HTML do zaawansowanych zastosowań, na przykład osadzenia widgetu innej firmy (zobacz [Korzystanie z elementu HTML](#using-the-html-element))
-   - **iFrame** -- Osadź zewnętrzną treść na podstawie adresu URL
-3. Skonfiguruj element za pomocą panelu ustawień, który się pojawi.
+1. Klikněte v náhledu dovnitř sekce, abyste ji vybrali.
+2. Klikněte na **Add Content** a z seznamu zvolte typ prvku:
+   - **Text** – Nadpisy, odstavce a formátovaný text
+   - **Image** – Nahrajte nebo propojte fotografii
+   - **Button** – Klikatelný odkaz typu výzva k akci
+   - **Card** – Obrázek s titulkem a popisem
+   - **Form** – Vložte [formulář](../forms/creating-forms.md) přímo na stránku. Pokud má formulář [záhlavní fotografii](../forms/creating-forms.md#adding-a-header-photo), zobrazí se nad otázkami
+   - **Calendar** – Zobrazí kalendář akcí
+   - **FAQ** – Otázky a odpovědi v podobě rozbalovacích bloků (akordeon)
+   - **Video** – Vložte video pomocí URL adresy
+   - **Groups Browser** – Filtrovatelný adresář všech církevních skupin s volitelným vyhledáváním, filtrem kategorií a filtrem štítků. Jeho **Layout** může být **Grid** (výchozí) nebo **Scrolling (automatic)** – viz [Posuvná rozvržení](#scrolling-layouts)
+   - **Group List** – Dlaždice vašich veřejných skupin, volitelně pouze skupin s daným štítkem. Jeho **Layout** může být **Grid** (výchozí; až tři dlaždice v řadě) nebo **Scrolling (automatic)** – viz [Posuvná rozvržení](#scrolling-layouts)
+   - **Icon Feature** – Ikona s titulkem a krátkým popisem, vhodná pro zvýraznění funkcí nebo služeb
+   - **Gallery** – Mřížka více fotografií nebo rozvržení typu masonry
+   - **Testimonial** – Jedna nebo více citací s jménem autora, funkcí a fotografií
+   - **Social Icons** – Odkazované ikony vašich profilů na sociálních sítích: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo a Podcast. Vyplňte odkaz pro každou síť, kterou chcete zobrazit; u **WhatsApp** použijte odkaz `https://wa.me/` s vaším číslem nebo pozvánkový odkaz do skupiny
+   - **Countdown** – Odpočet do data nebo do pravidelného času bohoslužby
+   - **Stats** – Řada velkých čísel s popisky (členové, roky, pobočky)
+   - **Campaign Progress** – Živý ukazatel průběhu sbírkové kampaně, který zobrazuje celkovou částku vybranou na cíl fondu
+   - **Staff Grid** – Fotografické karty členů skupiny; skupina musí mít zapnutou možnost **public roster**
+   - **Service Times** – Rozvrh bohoslužeb vašich poboček, načítaný automaticky z nastavení docházky
+   - **Sermons** – Vaše knihovna kázání, jako úplný prohlížeč nebo v rozvržení mřížky, seznamu či se zvýrazněným nejnovějším kázáním
+   - **Map** – Vložená mapa vycentrovaná na adresu vašeho kostela
+   - **Table** – Jednoduchá mřížka řádků a sloupců pro tabulková data
+   - **Text with Photo** – Text a obrázek vedle sebe
+   - **Logo** – Logo vašeho kostela, převzaté z části [Vzhled](./appearance.md)
+   - **Live Stream** – Přehrávač vašeho živého přenosu vložený přímo na stránku
+   - **Podcast** – Seznam epizod načtený z externí RSS adresy podcastu, kterou zadáte, s nastavením počtu zobrazených epizod a toho, zda se mají zobrazovat data a popisy. Každá epizoda na živém webu má audio přehrávač a odkaz **Download**, který uloží zvukový soubor epizody pod jejím názvem. Slouží k představení libovolného podcastového kanálu na vašem webu; pokud chcete publikovat vlastní kázání jako podcast, použijte místo toho [Správa kázání](../sermons/managing-sermons.md#your-podcast-feed)
+   - **Donation** – Tlačítko pro dar nebo vložený formulář pro dary
+   - **HTML** – Vlastní surový HTML kód pro pokročilé použití, například vložení widgetu třetí strany (viz [Použití prvku HTML](#using-the-html-element))
+   - **iFrame** – Vložení externího obsahu podle URL adresy
+3. Prvek nastavte pomocí panelu nastavení, který se zobrazí.
 
-### Korzystanie z elementu HTML
+### Použití prvku HTML
 
-Element **HTML** ma dwa pola:
+Prvek **HTML** má dvě pole:
 
-- **Zawartość HTML** -- Kod, który ma być wyświetlany na stronie. Wszystkie znaczniki `<script>` umieszczone tutaj będą działać na działającej witrynie.
-- **JavaScript (bez znacznika script)** -- Kod skryptu uruchamiany po załadowaniu strony. Możesz też wkleić tutaj fragment osadzenia od dostawcy wraz ze znacznikami `<script>`, a zostanie on uruchomiony na działającej witrynie.
+- **HTML Content** – Značkování, které se má na stránce zobrazit. Všechny značky `<script>`, které sem vložíte, se spustí na vašem živém webu.
+- **JavaScript (exclude script tag)** – Skriptový kód, který se spustí při načtení stránky. Sem můžete také vložit vložený kód (snippet) od dodavatele včetně jeho značek `<script>` a spustí se na živém webu.
 
-Jeśli wkleisz do pola JavaScript sam adres internetowy (na przykład link do obrazu), pole zmieni kolor na czerwony z ostrzeżeniem *„To jest adres internetowy, a nie JavaScript."* Sam adres w tym polu nic nie robi. Aby wyświetlić obraz, użyj elementu **Obraz** lub wstaw `<img src="...">` do pola **Zawartość HTML**.
+Pokud do pole JavaScript vložíte pouze webovou adresu (například odkaz na obrázek), pole zčervená s varováním *„This is a web address, not JavaScript.“* Samotná adresa v tomto poli nic neudělá. Chcete-li zobrazit obrázek, použijte prvek **Image** nebo vložte `<img src="...">` do pole **HTML Content**.
 
-### Korzystanie z elementu Kalendarz {#using-the-calendar-element}
+### Použití prvku Calendar {#using-the-calendar-element}
 
-Element **Kalendarz** pokazuje wydarzenia z jednego z Twoich kalendarzy:
+Prvek **Calendar** zobrazuje události z jednoho z vašich kalendářů:
 
-1. W sekcji **Wybierz** wybierz **Kalendarz grupy** (wydarzenia jednej grupy -- lista pokazuje grupy, do których należysz) lub **Wyselekcjonowany kalendarz** (kalendarz, który utworzyłeś w sekcji **Kalendarze**; zobacz [Wyselekcjonowany kalendarz](../calendars/curated-calendar.md)).
-2. W sekcji **Wybierz kalendarz** wskaż grupę lub kalendarz.
-3. W sekcji **Wyświetlanie** wybierz sposób prezentacji:
-   - **Kalendarz miesięczny** -- Siatka miesiąca, po której odwiedzający mogą się przełączać.
-   - **Nadchodzące wydarzenia** -- Siatka kafelków z kolejnymi 12 wydarzeniami; wydarzenie cykliczne pokazywane jest raz, przy najbliższej dacie. Każdy kafelek pokazuje zdjęcie wydarzenia (lub jego tytuł na ciemnym kolorze motywu, jeśli wydarzenie nie ma zdjęcia), znacznik daty, dzień i godzinę oraz pierwszy wiersz opisu. Przycisk **Subskrybuj** nad kafelkami pozwala odwiedzającym skopiować link ICS kalendarza lub go pobrać. Dla tej opcji pojawia się ustawienie **Układ**: **Siatka** (domyślnie) lub **Przewijanie (automatyczne)**, które układa kafelki w jednym rzędzie przewijanym samoczynnie.
-4. Aby pokazać tylko niektóre wydarzenia, wpisz tag w polu **Tylko wydarzenia z tagiem** -- na przykład `młodzież`. Pojawią się tylko wydarzenia, których **Tagi** zawierają to słowo. Pozostaw pole puste, aby pokazać wszystkie wydarzenia. Tagi ustawia się przy każdym wydarzeniu; zobacz [Dodawanie i edytowanie wydarzeń](../calendars/creating-calendars.md#adding-and-editing-events).
+1. V části **Select** zvolte **Group Calendar** (události jedné skupiny – seznam zobrazuje skupiny, jejichž jste členem) nebo **Curated Calendar** (kalendář, který jste vytvořili v části **Calendars**; viz [Kurátorovaný kalendář](../calendars/curated-calendar.md)).
+2. V části **Select Calendar** vyberte skupinu nebo kalendář.
+3. V části **Display** zvolte způsob zobrazení:
+   - **Month calendar** – Měsíční mřížka, kterou mohou návštěvníci procházet. Každá událost je obarvena podle skupiny, ke které patří, takže události skupiny mají stejnou barvu v každém kalendáři. B1 barvy vybírá automaticky; nic nemusíte nastavovat.
+   - **Upcoming events** – Mřížka dlaždic pro nejbližších 12 nadcházejících událostí, přičemž opakující se událost je zobrazena jednou u jejího nejbližšího termínu. Každá dlaždice zobrazuje fotografii události (nebo její název na tmavé barvě vašeho motivu, pokud fotografie nemá), štítek s datem, den a čas a první řádek popisu. Tlačítko **Subscribe** nad dlaždicemi umožňuje návštěvníkům zkopírovat odkaz ICS na kalendář nebo jej stáhnout. Pro toto zobrazení se objeví nastavení **Layout**: **Grid** (výchozí) nebo **Scrolling (automatic)**, které umístí dlaždice do jediné řady, jež se sama posouvá (viz [Posuvná rozvržení](#scrolling-layouts)). U **Curated Calendar** zapněte nastavení **Group badge**, které zobrazí název skupiny každé události v pravém horním rohu její dlaždice barvou kalendáře dané skupiny. Události z archivovaných nebo důvěrných skupin odznak nedostanou.
+4. Chcete-li zobrazit pouze některé události, zadejte štítek do pole **Only events tagged** – například `youth`. Zobrazí se pouze události, jejichž **Tags** obsahují toto slovo. Pokud pole necháte prázdné, zobrazí se všechny události. Štítky se nastavují u každé události; viz [Přidávání a úprava událostí](../calendars/creating-calendars.md#adding-and-editing-events).
 
-W obu trybach kliknięcie wydarzenia otwiera jego własną stronę w Twojej witrynie. Strona wydarzenia pokazuje zdjęcie, tytuł, datę i godzinę oraz opis, a także ramkę z informacjami **Kiedy** (w tym wzorzec powtarzania dla wydarzenia cyklicznego) i **Gdzie** (zarezerwowane sale). Gdy zapisy są włączone, pojawia się też przycisk **Zapisz się na to wydarzenie**, a link **Dodaj do mojego kalendarza** pobiera wydarzenie jako plik kalendarza. Strona jest przygotowana tak, aby wyszukiwarki mogły pokazywać datę i szczegóły wydarzenia w wynikach. Strony wydarzeń z wyselekcjonowanych kalendarzy, wyświetlane na Twoich stronach (dla wydarzeń w ciągu najbliższych sześciu miesięcy), są też umieszczane w mapie witryny, dzięki czemu wyszukiwarki mogą je znaleźć.
+V obou zobrazeních se po kliknutí na událost otevře její vlastní stránka na vašem webu. Stránka události zobrazuje fotografii události, název, datum a čas a popis, a také box s údaji **When** (včetně opakovacího vzorce u opakující se události) a **Where** (rezervované místnosti). Pokud je zapnuta registrace, objeví se také tlačítko **Register for this Event**, a odkaz **Add to my calendar**, který stáhne událost jako soubor kalendáře. Stránka je nastavena tak, aby vyhledávače mohly ve výsledcích zobrazit datum a podrobnosti události. Stránky událostí z kurátorovaných kalendářů zobrazených na vašich stránkách (pro události v následujících šesti měsících) jsou také uvedeny v mapě stránek vašeho webu, aby je vyhledávače mohly najít.
 
-### Zmiana kolejności treści
+### Posuvná rozvržení {#scrolling-layouts}
 
-Przeciągaj sekcje lub elementy za uchwyt (sześć kropek) po lewej stronie każdego z nich, aby zmienić ich kolejność. Elementy możesz przeciągać w obrębie sekcji lub przenosić między sekcjami.
+Rozvržení **Scrolling (automatic)** u **Groups Browser**, **Group List** a u zobrazení **Upcoming events** prvku Calendar uspořádá dlaždice do jedné řady místo mřížky. Na telefonu každá dlaždice vyplní celou řadu; na počítači se vedle sebe vejdou dvě dlaždice. Pokud je dlaždic více, než se vejde, řada:
 
-## Stylizacja strony
+- Přejde na další dlaždici přibližně každé čtyři sekundy a po poslední dlaždici se vrátí na první.
+- Pozastaví se, když návštěvník najede kurzorem, dotkne se jí nebo se do ní přepne klávesou Tab, a po několika sekundách pokračuje dál.
+- Pod řadou zobrazí řadu teček, jedna pro každou dlaždici, přičemž tečka aktuální dlaždice je vyplněná. Návštěvník může kliknutím na tečku přejít na danou dlaždici.
 
-### Style sekcji
+Na zařízeních s nastavením omezeného pohybu řada zůstává nehybná a návštěvníci ji posouvají sami gestem nebo rolováním. Pokud se všechny dlaždice vejdou, řada se nehýbe a tečky se nezobrazí.
 
-Kliknij dowolną sekcję, aby otworzyć jej panel stylów. Możesz ustawić:
+### Změna pořadí obsahu
 
-- **Tło** -- Jednolity kolor, gradient lub obraz. Przy tle obrazowym wybierz **Punkt ostrości**, klikając w obraz, aby wskazać, która jego część ma pozostać na środku przy skalowaniu sekcji, a opcja **Nakładka** pozwala nałożyć półprzezroczysty kolor na obraz, poprawiając czytelność tekstu.
-- **Odstępy wewnętrzne** -- Odstęp górny i dolny wewnątrz sekcji
-- **Szerokość** -- Pełna szerokość lub wyśrodkowana/ograniczona
-- **Separatory** -- Dekoracyjne kształty przejścia (fala, skos, łuk, trójkąt i inne) na górnej lub dolnej krawędzi sekcji, z ustawieniami koloru, wysokości i odbicia
+Sekce nebo prvky přetáhněte pomocí ikony úchytu (šest teček) na levé straně každé položky a změňte jejich pořadí. Prvky můžete přetahovat uvnitř sekce nebo je přesouvat mezi sekcemi.
 
-### Style elementów
+## Stylování stránky
 
-Kliknij dowolny element, aby otworzyć jego panel stylów. Typowe opcje to rozmiar czcionki, kolor, wyrównanie, margines i odstępy wewnętrzne. Dla obrazów możesz ustawić tekst alternatywny oraz cel linku.
+### Styly sekcí
 
-### Własny CSS
+Kliknutím na libovolnou sekci otevřete její panel stylů. Můžete nastavit:
 
-Do zaawansowanego stylowania każda sekcja i każdy element ma pole **Własny CSS**, w którym możesz napisać własne reguły CSS. Działają one tylko w zakresie danego elementu, więc nie wpłyną przypadkowo na resztę strony.
+- **Background** – Plná barva, přechod nebo obrázek. Při použití obrazového pozadí vám výběr **Focal Point** umožní kliknutím určit, která část obrázku zůstane vycentrovaná při změně velikosti sekce, a možnost **Overlay** vám umožní přidat přes obrázek poloprůhledný barevný nátěr pro lepší čitelnost textu.
+- **Padding** – Horní a dolní mezera uvnitř sekce
+- **Width** – Na celou šířku nebo vycentrovaná/omezená šířka
+- **Dividers** – Dekorativní tvarové oddělovače (vlna, šikmý řez, oblouk, trojúhelník a další) na horní nebo dolní hraně sekce, s nastavením barvy, výšky a převrácení
+
+### Styly prvků
+
+Kliknutím na libovolný prvek otevřete jeho panel stylů. Mezi běžné možnosti patří velikost písma, barva, zarovnání, okraj (margin) a odsazení (padding). U obrázků můžete nastavit alternativní text a cíle odkazů.
+
+### Vlastní CSS
+
+Pro pokročilé úpravy vzhledu má každá sekce a každý prvek pole **Custom CSS**, kam můžete napsat vlastní pravidla CSS. Ta jsou omezena na daný prvek, takže nemohou neúmyslně ovlivnit zbytek stránky.
 
 :::tip
-Jeśli chcesz zastosować style w całej witrynie -- na przykład własną czcionkę lub globalny kolor -- użyj ustawień [Wygląd](./appearance.md) zamiast własnego CSS na poszczególnych stronach.
+Pokud potřebujete použít styly na celý web – například vlastní písmo nebo globální barvu – použijte místo vlastního CSS na jednotlivých stránkách nastavení [Vzhled](./appearance.md).
 :::
 
-## Podgląd strony
+## Náhled stránky
 
-Użyj narzędzi podglądu na pasku narzędzi, aby sprawdzić, jak strona wygląda przy różnych rozmiarach ekranu:
+Pomocí ovládacích prvků náhledu na panelu nástrojů si ověřte, jak stránka vypadá při různých velikostech obrazovky:
 
-- **Komputer** -- Widok przeglądarki na pełną szerokość
-- **Telefon** -- Widok w wąskim formacie telefonu
+- **Desktop** – Zobrazení na celou šířku prohlížeče
+- **Mobile** – Úzké zobrazení ve velikosti telefonu
 
-Na telefonach kolumny w wierszu układają się jedna nad drugą na pełnej szerokości, chyba że w ustawieniach wiersza ustawisz dla nich **Szerokość na telefonie**. Listy kazań i podcastów również układają tekst każdego odcinka pod miniaturą na telefonach.
+Na telefonech se sloupce v řadě skládají pod sebe na celou šířku, pokud v nastavení řady nenastavíte pro ně **Mobile Width**. Seznamy kázání a podcastů také na telefonech zobrazují text každé epizody pod jejím náhledovým obrázkem.
 
-Aby zobaczyć działającą stronę dokładnie tak, jak zobaczą ją odwiedzający, wróć do listy Stron i kliknij ścieżkę strony. Otworzy się ona w nowej karcie przeglądarki.
+Chcete-li vidět živou stránku přesně tak, jak ji uvidí návštěvníci, vraťte se na seznam stránek a klikněte na cestu (path) stránky. Otevře se v nové záložce prohlížeče.
 
-## Sprawdzanie dostępności
+## Kontrola přístupnosti
 
-Kliknij ikonę **Dostępność** na pasku narzędzi, aby uruchomić szybkie sprawdzenie najczęstszych problemów -- obrazów bez tekstu alternatywnego, niskiego kontrastu kolorów lub nagłówków w złej kolejności. Każdy problem prowadzi bezpośrednio do elementu, który wymaga uwagi, dzięki czemu możesz go poprawić na miejscu.
+Kliknutím na ikonu **Accessibility** na panelu nástrojů spustíte rychlou kontrolu běžných problémů – chybějící alternativní text obrázků, nízký barevný kontrast nebo nesprávné pořadí nadpisů. Každý problém odkazuje přímo na prvek, který vyžaduje pozornost, takže jej můžete opravit přímo na místě.
 
-## Cofanie zmian
+## Vrácení změn
 
-Edytor automatycznie zapisuje historię edycji. Użyj przycisków na pasku narzędzi lub skrótów klawiszowych:
+Editor automaticky sleduje historii úprav. K pohybu v ní použijte tlačítka na panelu nástrojů nebo klávesové zkratky:
 
-- **Cofnij** (Ctrl+Z / Cmd+Z) -- Cofa ostatnią czynność
-- **Ponów** (Ctrl+Shift+Z lub Ctrl+Y / Cmd+Shift+Z) -- Ponawia cofniętą czynność
+- **Undo** (Ctrl+Z / Cmd+Z) – Vrátí vaši poslední akci zpět
+- **Redo** (Ctrl+Shift+Z nebo Ctrl+Y / Cmd+Shift+Z) – Znovu použije vrácenou akci
 
-Możesz też przywrócić stronę do wcześniejszej migawki. Kliknij **Wyświetl historię** na pasku narzędzi, aby zobaczyć listę zapisanych migawek z opisami, a następnie kliknij dowolny wpis, aby przywrócić stan z tego momentu.
+Stránku můžete také obnovit do dřívějšího snímku. Kliknutím na **View history** na panelu nástrojů zobrazíte seznam uložených snímků s popisy a kliknutím na libovolnou položku se vrátíte do daného stavu.
 
 :::warning
-Przywrócenie migawki zastępuje bieżącą treść strony wersją z migawki. Nie można tego cofnąć standardowym przyciskiem Cofnij. Jeśli chcesz mieć możliwość powrotu, zapisz migawkę bieżącego stanu, zanim przywrócisz starszą.
+Obnovení snímku nahradí váš aktuální obsah stránky verzí ze snímku. Tuto akci nelze vrátit standardním tlačítkem Undo. Pokud si chcete ponechat možnost návratu, uložte si před obnovením starého snímku snímek svého aktuálního stavu.
 :::
 
-## Zapisywanie i publikowanie
+## Ukládání a publikování
 
-Zmiany są zapisywane automatycznie w trakcie pracy. Wskaźnik stanu na pasku narzędzi pokazuje, czy Twoje zmiany zostały zapisane.
+Změny se ukládají automaticky během práce. Stavový indikátor na panelu nástrojů ukazuje, zda byly vaše změny uloženy.
 
-### Stan roboczy i opublikowany
+### Stav konceptu a publikování
 
-Strony mogą mieć stan **opublikowany**, który określa, kiedy odwiedzający zobaczą Twoje zmiany. Pasek narzędzi wyświetla znacznik ze stanem strony:
+Stránky mohou mít stav **published**, který určuje, kdy návštěvníci uvidí vaše změny. Panel nástrojů zobrazuje štítek se stavem:
 
-- **Publikowana od razu po zapisaniu** -- Strona nie korzysta z procesu publikacji. Każda zapisana zmiana od razu staje się widoczna. To domyślne ustawienie nowych stron.
-- **Niepublikowane zmiany** -- Strona była już wcześniej opublikowana, ale wprowadziłeś zmiany od ostatniej publikacji. Odwiedzający nadal widzą poprzednio opublikowaną wersję.
-- **Opublikowana** -- Strona jest na żywo, a zapisana treść odpowiada temu, co widzą odwiedzający.
+- **Live on save** – Stránka nepoužívá pracovní postup publikování. Každá uložená změna se okamžitě zveřejní. Toto je výchozí nastavení pro nové stránky.
+- **Unpublished changes** – Stránka byla již dříve publikována, ale od posledního publikování jste provedli změny. Návštěvníci stále vidí předchozí publikovanou verzi.
+- **Published** – Stránka je živá a váš uložený obsah odpovídá tomu, co vidí návštěvníci.
 
-Aby opublikować zmiany, kliknij przycisk **Opublikuj** na pasku narzędzi. Strona staje się widoczna od razu.
+Pro publikování změn klikněte na tlačítko **Publish** na panelu nástrojů. Stránka se okamžitě zveřejní.
 
-Aby cofnąć zmiany do ostatniej opublikowanej wersji bez wpływu na to, co widzą odwiedzający, otwórz menu rozwijane (⋮) i kliknij **Odrzuć niepublikowane zmiany**.
+Chcete-li se vrátit k poslední publikované verzi, aniž by to ovlivnilo, co vidí návštěvníci, otevřete nabídku přetečení (⋮) a klikněte na **Discard unpublished changes**.
 
-Aby przestać korzystać z procesu publikacji, otwórz menu rozwijane i kliknij **Wyłącz publikowanie**. Od tej pory edycje znów będą od razu widoczne.
+Chcete-li přestat používat pracovní postup publikování, otevřete nabídku přetečení a klikněte na **Turn off publishing**. Úpravy se pak opět okamžitě zveřejňují.
 
 :::tip
-Korzystaj z przepływu roboczego i publikacji, gdy chcesz przygotować stronę -- na przykład na nadchodzące wydarzenie -- i udostępnić ją dopiero we właściwym momencie. Zbuduj stronę i sprawdź podgląd, a gdy będziesz gotowy, kliknij Opublikuj.
+Pracovní postup konceptu a publikování použijte tehdy, když chcete stránku připravit – například pro nadcházející událost – a zveřejnit ji až ve správný okamžik. Stránku sestavte a zkontrolujte v náhledu a poté klikněte na Publish, až budete připraveni.
 :::
 
-## Powiązane artykuły
+## Související články
 
-- [Zarządzanie stronami](./managing-pages.md) -- Tworzenie stron, ustawianie adresów URL i zarządzanie nawigacją witryny
-- [Wygląd](./appearance.md) -- Ustawianie kolorów, czcionek i wizerunku marki dla całej witryny
-- [Pliki](./files.md) -- Przesyłanie obrazów i dokumentów do użycia w edytorze
-- [Tworzenie formularzy](../forms/creating-forms.md) -- Budowanie formularzy, które możesz osadzać na stronach
+- [Správa stránek](./managing-pages.md) – Vytváření stránek, nastavování URL adres a správa navigace webu
+- [Vzhled](./appearance.md) – Nastavení barev, písem a branding celého webu
+- [Soubory](./files.md) – Nahrávání obrázků a dokumentů pro použití v editoru
+- [Vytváření formulářů](../forms/creating-forms.md) – Tvorba formulářů, které můžete vložit na stránky

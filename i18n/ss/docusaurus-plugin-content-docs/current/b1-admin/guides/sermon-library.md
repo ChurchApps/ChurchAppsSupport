@@ -1,102 +1,105 @@
 ---
-title: "Umhlahlandlela: Yakha Luhla Lwakho Lwetintshumayelo & Kusakata Bukhona"
-description: "Ngenisa tinkhulumo takho te-YouTube noma Vimeo, uzihlele kuyi-playlist, bese usetfula tinhlangano letiphilile netingcoco ku-B1 Admin ngewebhusayitini yebandla."
+title: "Umhlahlandlela: Akha Laibhulari Yemishwalo Yesonto Kanye Nesitfombe Lesiphilako"
+description: "Ngenisa tividiyo tesonto takho ku-YouTube noma Vimeo, uzihlele kuma-uhlu lwemavidiyo, bese usetela tisitfombe letiphilako letiphindwayo ne-chat ku-B1 Admin kuwebhusayithi yakho yesonto."
 ---
 
-# Yakha Luhla Lwakho Lwetintshumayelo & Kusakata Bukhona
+# Akha Laibhulari Yemishwalo Yesonto Kanye Nesitfombe Lesiphilako
 
 <div class="article-intro">
 
-Faka luhla lwakho lwetintshumayelo ku-inthanethi bese uhlela kusakata bukhona — kusukela ekungeniseni luhla lwakho lolukhona lwe-YouTube nobe Vimeo kuya ekuhleleni tinkonzo letiphindaphindako letikhona nge-bukhona letinencoco lephenduliwako. Nasekugcineni, licembu lakho lingabuka tintshumayelo tangaphambili futsi lijoyine tinkonzo letikhona kusuka kuwebhusayithi ne-app yeselula yakho.
+Yenta lilambu lakho lemishwalo yesonto litfolakale ku-inthanethi futsi useta sitfombe lesiphilako — kusukela ekungeniseni laibhulari yakho yekhala ye-YouTube noma Vimeo kuya ekuhleleni tinsitfombe letiphilako letiphindwayo netinkhulumisano letisebenta. Ekugcineni, libandla lakho lingabukela imishwalo yasendulo futsi lijoyine tinsitfombe letiphilako kuwebhusayithi yakho nakuhlelo lwe-mobile.
 
 </div>
+
+## Ividiyo Yekufundza
+
+<YouTube id="b3B3A25g2Sk" title="Kwakha Laibhulari Yemishwalo Yesonto ku-B1" next="Kusetela Sitfombe Lesiphilako ku-B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- I-akhawunti ye-B1 Admin lenemvumo yekuphatsa lokucuketfwe
-- Sichanaleli se-YouTube nobe Vimeo lesinemavidiyo etintshumayelo (kwekungenisa luhla lwakho lolukhona)
-- I-YouTube Channel ID (kwekusakata bukhona — uyitfola kuTilungiselelo te-YouTube Studio yakho)
+- I-akhawunti ye-B1 Admin enelungelo lokuphatsa lokuqukethwe
+- Ichanels ye-YouTube noma Vimeo enetividiyo tesonto (lokungeniselwa lilambu lakho lasendulo)
+- I-YouTube Channel ID (yesitfombe lesiphilako — yitfole kutilungiselelo te-YouTube Studio)
 
 </div>
 
-## Sinyatselo 1: Yakha Luhla Lwetintshumayelo
+## Sinyatelo 1: Akha Uhlu Lwemavidiyo Yesonto
 
-Emahla ahlela tintshumayelo takho kuletindzatjana nemaluhla kute kubhonga kube lula.
+Uhlu lwemavidiyo lwehlela imishwalo yakho ibe ngemasiriyali kanye nemabuthanelo lakulula kutfola.
 
-Landzela umhlahlandlela we-[Emahla](../sermons/playlists.md) kute:
+Landzela umhlahlandlela [Uhlu Lwemavidiyo](../sermons/playlists.md) ukuze:
 
-1. Yakha letindzatjana/emaluhla lafana na "Imilayeto YeLiSontfo 2024", "Letindzatjana Temshado", "Tinkonzo TeKhisimusi"
-2. Faka libito, incazelo, lusuku lwekushicilela, nemfanekiso wakusengaphambili kuhla ngalunye
+1. Wakhe emasiriyali/emabuthanelo afana ne-"Imiyalezo Yesontfo YangeSonto ka-2024", "Siriyali Yemshado", "Emasonto Ekhisimusi"
+2. Engetela ligama, incazelo, lusuku lokushicilelwa, kanye nesithombe sekuncoma sauhlu ngalunye lwemavidiyo
 
 :::tip
-Yakha emahla ngembi kwekufaka tintshumayelo. Loku kwenta kube lula kuhlela tintshumayelo kuhla lolufanele njengoba utifaka.
+Akha uhlu lwemavidiyo ngaphambi kokungeniselwa tishumayelo. Lokhu kuyenta kube lula kuhlela tishumayelo etindzaweni letifanele njengoba utingeniselwa.
 :::
 
-## Sinyatselo 2: Ngenisa Tintshumayelo Takho Letikhona
+## Sinyatelo 2: Ngenisa Tishumayelo Takho Letikhona
 
-Nangabe sewunemavidiyo etintshumayelo ku-YouTube nobe Vimeo, ungawangenisa onkhe kanyekanye.
+Uma usevele unetividiyo tesonto ku-YouTube noma Vimeo, ungazi ngekusheshako ngesikhatsi sinye.
 
-Landzela umhlahlandlela we-[Kungenisa Lokunyenti](../sermons/bulk-import.md) kute:
+Landzela umhlahlandlela [Ukungenisa Ngebhaki](../sermons/bulk-import.md) ukuze:
 
-1. Faka i-URL yesichanaleli sakho se-YouTube nobe Vimeo
-2. Buka kucala kungenisa kute ubone kutsi ngutiphi emavidiyo latakungeniswa
-3. Chofota Ngenisa kute uwafake wonkhe kanyekanye
+1. Ngenisa i-URL yechanels yakho ye-YouTube noma Vimeo
+2. Bukela kuqala ukungenisa kuze ubone tividiyo letitawungenisa
+3. Chofoza Import kuze ungeniselwe tonkhe tonkhe ngesikhatsi sinye
 
-## Sinyatselo 3: Faka Tintshumayelo Nge-nye-Nye
+## Sinyatelo 3: Engeta Tishumayelo Ngetinye
 
-Kwekungeta kwalinye linye nobe tintshumayelo letingekho encenyeni yekungenisa lokunyenti, tifake nge-nye-nye.
+Kwetingeniso letinye noma tishumayelo letingekho ekungeniseni ngebhaki, zingeniselwe ngetinye.
 
-Landzela umhlahlandlela we-[Kuphatsa Tintshumayelo](../sermons/managing-sermons.md) kute:
+Landzela umhlahlandlela [Kuphatsa Tishumayelo](../sermons/managing-sermons.md) ukuze:
 
-1. Namathisela i-URL yevidiyo (YouTube, Vimeo, nobe Facebook)
-2. Sihloko, incazelo, umfanekiso wakusengaphambili, nesikhatsi kugcwaliswa ngekutinelela kusuka kuvidiyo
-3. Nika intshumayelo luhla
+1. Namatela i-URL yevidiyo (YouTube, Vimeo, noma Facebook)
+2. Sihloko, incazelo, sithombe sekuncoma, kanye nesikhatsi sevidiyo kuzigcwalisa kusuka kulwati lwevidiyo ngekwayo
+3. Bopha umshwalo kulu-uhlu lwemavidiyo
 
-## Sinyatselo 4: Hlela Kusakata Bukhona
+## Sinyatelo 4: Setela Sitfombe Lesiphilako
 
-Xhumana nesichanaleli sakho se-YouTube kute isayithi yakho ye-B1 idvonse ngekutinelela kusakata kwakho bukhona.
+Xhuma i-chanels yakho ye-YouTube kuze iwebhusayithi yakho ye-B1 itfole sitfombe sakho lesiphilako ngekuzenzekelako.
 
-Landzela umhlahlandlela we-[Kusakata Bukhona](../sermons/live-streaming.md) kute:
+Landzela umhlahlandlela [Sitfombe Lesiphilako](../sermons/live-streaming.md) ukuze:
 
-1. Faka i-YouTube Channel ID yakho kutilungiselelo tekusakata
-2. Hlela luhlelo lwakho lwenkonzo lolwphindaphindako (sib., ngeliSontfo nga-10:00 Ekuseni)
-3. Lungisa emathebu ekhasi lekusakata: Tincoco, Titfombo Temithandazo, kanye nemalinki lakhetsekile
+1. Faka i-YouTube Channel ID kutilungiselelo tesitfombe
+2. Lungisa sikhatsi lesiphindwayo semisebenti yesonto (njengo-Sonto ngehora le-10:00 ekuseni)
+3. Lungisa emathebhu wekhasi lesitfombe (i-Chat, Ticelo Temthandazo, netixhumanisi letikhetsiwe) ekhasini le-**Sermons > Settings**
 
 :::info
-Nawusaba khona ku-YouTube, likhasi lekusakata le-B1 lidvonsa ngekutinelela kusakata. Akukho tinyatselo letingetiwe letidzingekako ngeliSontfo ekuseni.
+Nawuvele uphume ku-YouTube, ikhasi lesitfombe le-B1 litfola sitfombe kuzenzekelako. Akudzingeki tinyatelo letengeziwe ngeSonto ekuseni.
 :::
 
-## Sinyatselo 5: Boniswa Kuwebhusayithi Yakho
+## Sinyatelo 5: Veta Ku-Webhusayithi Yakho
 
-Yenta luhla lwakho lwetintshumayelo nekusakata bukhona kutfolakale kalula kubavakashi.
+Yenta laibhulari yakho yemishwalo kanye nesitfombe lesiphilako kutfolakale kalula kubavakashi.
 
-Landzela umhlahlandlela we-[Kuphatsa Emakhasi](../website/managing-pages.md) kute:
+Landzela umhlahlandlela [Kuphatsa Emakhasi](../website/managing-pages.md) ukuze:
 
-1. Faka incenye Yetintshumayelo kuwebhusayithi yakho ye-B1 kute bavakashi bakwati kubhonga luhla lwakho
-2. Faka incenye Yekusakata Bukhona kwekuhlangenwe nako kwekubuka lokukhona
+1. Engeta sigaba sema-Sermons kuwebhusayithi yakho ye-B1 kuze bavakashi bakwazi kuhlola laibhulari yakho
+2. Engeta sigaba se-Live Stream kuze kube nemuva lekubukela sitfombe lesiphilako
 
-## Sinyatselo 6: Kufinyelela Nge-Mobile
+## Sinyatelo 6: Kufinyeleleka Ku-Mobile
 
-Emalunga angafinyelela tintshumayelo netinkonzo letikhona kusuka kunome ngukuphi luchungechunge.
+Emalunga angafinyelela tishumayelo kanye netinsitfombe letiphilako kusuka kunoma yimuphi umshini.
 
-1. Emalunga angabuka tintshumayelo ku-[app ye-B1 Mobile](../../b1-mobile/content/sermons.md) naku-[B1.church](../../b1-church/content/sermons.md)
-2. Kusakata bukhona nencoco kuyasebenta kuletincenye tobabili
+1. Emalunga angabukela tishumayelo ku-[B1.church nase-B1 App](../../b1-church/content/sermons.md)
+2. Sitfombe lesiphilako nge-chat sisebenta kuma-foni kanye nakumakhompiyutha ngalokufanako
 
 :::info
-Sici sencoco lekhona sivumela licembu lakho lelisebentisa inthanethi kutsi libambe icandzi ngesikhatsi lesiyiso, njengekungatsi bakhona endlini.
+Imphilo ye-chat ivumela libandla lakho lelisemtfonjeni kuba lingene ngesikhatsi lesifanako, njengalokuba lisesakhiweni.
 :::
 
-## Usucedzile!
+## Usukile!
 
-Luhla lwakho lwetintshumayelo lusesikhatsini sonkhe ku-inthanethi futsi kusakata kwakho bukhona kuhleliwe. Emalunga angabhalela tintshumayelo takudzala nanini futsi ajoyine tinkonzo letikhona kunome ngukuphi indzawo. Kulayishwa lokusha kwetintshumayelo kungahambisana ngekutinelela.
+Laibhulari yakho yemishwalo yesonto itfolakala ku-inthanethi futsi sitfombe sakho lesiphilako sesilungisiwe. Emalunga angabukela imishwalo yasendulo nanoma nini futsi ajoyine tinsitfombe letiphilako nanoma ngabe ngaphi. Tikhweyo temishwalo lemisha tingavumelanisa kuzenzekelako.
 
-## Tihloko Letihlobene
+## Tindzatjana Letihambisanako
 
-- [Emahla](../sermons/playlists.md) — hlela tintshumayelo kutindzatjana
-- [Kungenisa Lokunyenti](../sermons/bulk-import.md) — ngenisa kusuka ku-YouTube nobe Vimeo
-- [Kuphatsa Tintshumayelo](../sermons/managing-sermons.md) — faka bese ulungise tintshumayelo nge-nye-nye
-- [Kusakata Bukhona](../sermons/live-streaming.md) — hlela tinkonzo letikhona
-- [Tintshumayelo (Web)](../../b1-church/content/sermons.md) — kuhlangenwe nako kwelilunga kwekubuka intshumayelo
-- [Kusakata Bukhona (Web)](../../b1-church/content/live-streaming.md) — kuhlangenwe nako kwelilunga kwekusakata bukhona
-- [Tintshumayelo (Mobile)](../../b1-mobile/content/sermons.md) — tintshumayelo ku-app yeselula
+- [Uhlu Lwemavidiyo](../sermons/playlists.md) — hlela tishumayelo ibe ngemasiriyali
+- [Ukungenisa Ngebhaki](../sermons/bulk-import.md) — ngenisa kusuka ku-YouTube noma Vimeo
+- [Kuphatsa Tishumayelo](../sermons/managing-sermons.md) — engeta futsi uhlele tishumayelo ngetinye
+- [Sitfombe Lesiphilako](../sermons/live-streaming.md) — lungisa tinsitfombe letiphilako
+- [Tishumayelo (Emalunga)](../../b1-church/content/sermons.md) — umuhlango wekubukela tishumayelo kumalunga
+- [Sitfombe Lesiphilako (Emalunga)](../../b1-church/content/live-streaming.md) — umuhlango wesitfombe lesiphilako kumalunga

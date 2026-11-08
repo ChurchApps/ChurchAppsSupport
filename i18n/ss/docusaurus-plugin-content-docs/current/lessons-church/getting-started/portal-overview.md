@@ -1,60 +1,60 @@
 ---
-title: "Kubuka Konkhe Liphothali"
-description: "Hamba ngeportal ye-Lessons.church ufumane emakilasi, ubuke tifundziso letihleliwe, usete tixhumanisi tefidi, bese ufinyelela ku-External Providers netimfanelo te-Admin."
+title: "Kubukeka Jikelele Kwephotali"
+description: "Hamba uhambele iphotali ye-Lessons.church uyotfola emakilasi, ubuke tifundvo letihleliwe, ulungise tixhumanisi tetifundvo, bese ufinyelela Bahlinzeki Bangaphandle kanye netinhlelo temaadmin."
 ---
 
-# Kubuka Konkhe Liphothali
+# Kubukeka Jikelele Kwephotali
 
 <div class="article-intro">
 
-Ngemuva kwekungena ku-Lessons.church, uyiswa **Eliphothalini** -- i-dashboard yelibandla lakho yekuphatsa emakilasi netinhlelo tetifundzo. Lapha nguke lapho utawuchitsa sikhatsi lesinyenti khona nawuhlela tifundzo telibandla lakho.
+Ngemva kokungena ku-Lessons.church, uyatfutselwa ku-**Photali** -- ideshibhodi yencusa lakho yekuphatsa emakilasi nemashedulo wetifundvo. Lapha yilapho uyoba khona sikhatsi lesikhulu uhlela imfundvo yencusa lakho.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekutsi Ucale</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- [Sungula i-akhawunti](./creating-account.md) futsi utihlanganise nelibandla lakho
-- Ngena ku- [Lessons.church](https://lessons.church)
+- [Dala i-akhawunti](./creating-account.md) bese uyahlanganisa nencusa lakho
+- Ngena ku-[Lessons.church](https://lessons.church)
 
 </div>
 
-## Loko Lokubonako
+## Lokutsi Ubona
 
-Liphothali lihlelwe tindzawo letimbili letiyinhloko:
+Iphotali livula ikhasi **Kuphatsa Emakilasi**, lelihlelwe ngetindzawo letimbili letikhulu:
 
-- **Emakilasi** (uhlangotsi lwesekudla) -- Luhlu lwemakilasi elibandla lakho. Chofota libito lelikilasi kute ubone tifundzo talo letihleliwe. Ungangeta nemakilasi lamasha nobe ulungise lakhona kusukela lapha.
-- **Tifundzo Letihleliwe** (uhlangotsi lwesencele) -- Nase sewukhetsile likilasi, lendzawo ikhombisa tifundzo letihlelelwe lona. Nangabe ungakaze usungule nelinye likilasi, utawubona vidiyo yemiyalo yekusungula kute ikusite kucala.
+- **Emakilasi** (ngalehlangothini lwesokudla) -- Luhlu lwemakilasi encusa lakho. Chofoza ligama lemakilasi kuze ubone tifundvo letihleliwe kuwo. Futsi ungangeta emakilasi lamasha noma uhlele lakhona kusuka lapha.
+- **Umshedulo Wetifundvo** (ngalehlangothini lwesobunxele) -- Uma sewukhethile likilasi, lendzawo itfola tifundvo letihleliwe kulo. Uma ungakasetfwa emakilasi, uyoveta lividiyo lemiyalo yekusetfwa kuze ukusite kutsi uqale.
 
-## Loko Longakwenta Liphothali
+## Lokungenta Kusuka Ephotali
 
-Kusukela eliphothalini, ungakwati:
+Kusuka ephotali, ungenta:
 
-1. **Kuphatsa emakilasi** -- Ngeta, lungisa, nobe ususe emakilasi. Likilasi ngalinye lingahlanganiswa neliqembu levolontiya (kute babone tifundzo letitako ku-app ye-B1) neliqembu labatali/bafundzi (kute bafinyelele tifundzo letisandza kubakhona).
-2. **Kubuka nekuphatsa tifundzo letihleliwe** -- Bona kutsi ngutiphi tifundzo letitako kuwo onkhe emakilasi futsi wente tinguculo njengobe kudzingeka.
-3. **Kubhalisela emafidi emakilasi** -- Chofota luphawu lwe-fidi lelisecaleni kwelikilasi kute utfole i-URL yefidi ye-playlist longayisebentisa netinsakatiselo letihambisanako.
-4. **Kufinyelela Bahlinzeki Bangaphandle** -- Sebentisa likhasi le- **Bahlinzeki Bangaphandle** kute ulungise imitfombo yelokucuketfwe yebangaphandle lesekela i-Open Lesson Format. Loku kukuvumela kungenisa tifundzo letivela kubanye bahlinzeki ngale kwemtapo lowakhelwe ngekhatsi we-Lessons.church.
-5. **Kufinyelela Indzawo Yemphatsi** -- Nangabe unemalungelo emphatsi, utawubona sikhetso se- **Mphatsi** ekuzulazuleni. Indzawo yemphatsi ikuvumela kuphatsa tinhlelo, tifundvo, netifundzo esigabeni selokucuketfwe.
+1. **Kuphatsa emakilasi** -- Engeta, hlela, noma susa emakilasi. Ilikilasi ngalinye lingahlanganiswa nelikhosi lemavolontiya (kuze babone tifundvo letilandzelako ku-B1 App) kanye nelikhosi lemzali/umfundzi (kuze bakwati kufinyelela tifundvo letisanda kufundzwa). Emakilasi asebenta kuhlelo lwemakilasi lolu: bazali bavula likhasi lemakilasi (ngaphandle kwe-`?upcoming=1`) kuze babone lokuvela ekhaya. Emacembu asebenta ngetinhlobo tetinhlelo te-B1Admin babona likhadi lekukhipha ekhasini lelicembu lelihlanganisiwe ku-B1.
+2. **Kubuka nekuphatsa tifundvo letihleliwe** -- Bona tifundvo letisolo kuhamba emakilasini ngamanye bese wenta tinguquko lotidzingako.
+3. **Batisela tifidi temakilasi** -- Chofoza sitfombe sefidi ecaleni kwelikilasi kuze utfole ikheli lefidi lemculo lowungasebenta nemasebenti ahambisanako.
+4. **Finyelela Bahlinzeki Bangaphandle** -- Sebentisa likhasi **Bahlinzeki Bangaphandle** kulungisa emitfombo yetifundvo yangaphandle lesekela i-Open Lesson Format. Lokukhona kukuvumela kutsi ulande tifundvo kubahlinzeki labanye ngaphandle kwelabhulali yakwa-Lessons.church.
+5. **Finyelela indzawo ye-Admin** -- Uma unetimvume temlawuli, uyoticabangela inketulo **Admin** kumtfombo. Indzawo ye-admin ikuvumela kutsi uphatse tihlelo, tifundvo, nemafundvo ngelinga lelisemkhatsini.
 
-## Kuzulazula
+## Umtfombo
 
-Kuzulazula kweliphothali kuhlanganisa:
+Umtfombo weliphotali uhlanganisa:
 
-- **Ekhaya** -- Buyela ekhasini lelisemtsetfweni le-Lessons.church kute uhlolisise lokucuketfwe.
-- **Tinhlelo Tesikhatsi** -- Kubuka lokuyinhloko kweliphothali kwekuphatsa emakilasi netinhlelo tetifundzo.
-- **Bahlinzeki Bangaphandle** -- Lungisa bahlinzeki betifundzo bebangaphandle.
-- **Mphatsi** -- Phatsa tinhlelo, tifundvo, nelokucuketfwe kwesifundzo (kubonakala kuphela nangabe unemalungelo emphatsi).
+- **Likhaya** -- Buyela kukhasi lasekhaya le-Lessons.church kuze ubuke lokuqukethwe.
+- **Umshedulo** -- Likhasi lelikhulu lephotali lekuphatsa emakilasi nemashedulo wetifundvo.
+- **Bahlinzeki Bangaphandle** -- Lungisa bahlinzeki betifundvo labangaphandle.
+- **Admin** -- Phatsa tihlelo, tifundvo, nelokuqukethwe kwetifundvo (kubonakala kuphela uma unetimvume temlawuli).
 
 :::info
-Sikhetso se- **Mphatsi** sivela kuphela nangabe i-akhawunti yakho inikwe emalungelo ekuhlela lokucuketfwe. Sitafu lesinyenti selibandla sisebentisa emakhasi e- **Tinhlelo Tesikhatsi** kanye ne- **Bahlinzeki Bangaphandle** kuphatso lwemihla ngemihla.
+Inketulo **Admin** iveta kuphela uma i-akhawunti yakho inikwe timvume tekuhlela lokuqukethwe. Bantfu besikhulu labasebentela cusa bavame kusebentisa emakhasi **Umshedulo** kanye **Bahlinzeki Bangaphandle** ekuphatseni kwensuku nensuku.
 :::
 
-## Kucala
+## Kuqala
 
-Nangabe uvakashela liphothali kwekucala futsi ungakaze usungule nelinye likilasi, cala ngekuchofota **Ngeta Likilasi Lekucala** ku-paneli yemakilasi. Nika likilasi lakho libito (sibonelo, "Sikolo Lesincane" nobe "Libanga Lesitsatfu kuya Kwesihlanu") futsi ulingcine. Kusukela lapho, ungacala [kuhlela tifundzo](../classrooms/scheduling-lessons.md).
+Uma uvakashela iphotali kokuqala futsi awukadali emakilasi, qala ngekuchofoza **Engeta Ilikilasi Lekuqala** esigabeni semakilasi. Nika ilikilasi lakho ligama (njengalesi "Preschool" noma "Libanga 3-5") bese ulilondvolota. Kusuka lapho, ungaqala [kuhlela tifundvo](../classrooms/scheduling-lessons.md).
 
-## Imibhalo Lehlobene
+## Tihlobo Letihlobene
 
-- [Kusungula Emakilasi](../classrooms/setting-up-classrooms.md) -- Umhlahlandlela lonemininingwane wekusungula nekuphatsa emakilasi
-- [Kuhlolisisa Lokucuketfwe](../browsing/index.md) -- Tfola tinhlelo netifundvo kute utihlele
-- [Bahlinzeki Bangaphandle](../browsing/external-providers.md) -- Ngeta imitfombo yetifundzo yebangaphandle
+- [Kusetfwa Kwemakilasi](../classrooms/setting-up-classrooms.md) -- Umhlahlandlela lobanti wekwakha nekuphatsa emakilasi
+- [Kuphenya Lokuqukethwe](../browsing/index.md) -- Thola tihlelo netifundvo kute uhlele
+- [Bahlinzeki Bangaphandle](../browsing/external-providers.md) -- Engeta imitfombo yekufundza yangaphandle

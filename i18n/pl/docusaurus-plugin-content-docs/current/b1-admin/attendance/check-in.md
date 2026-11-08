@@ -1,58 +1,58 @@
 ---
-title: "Samodzielne meldowanie w B1 Checkin i B1 Admin"
-sidebar_label: "Zameldowanie"
-description: "Skonfiguruj samodzielne meldowanie na nabożeństwa w B1 Checkin: urządzenia, konta kiosków, harmonogramy, branding i rejestrację gości kodem QR."
+title: "Konfiguracja samoobsługowego check-in z B1 Checkin i B1 Admin"
+sidebar_label: "Check-In"
+description: "Skonfiguruj samoobsługowe zameldowanie na nabożeństwach za pomocą aplikacji B1 Checkin w B1 Admin, obejmujące urządzenia, konta kiosków, harmonogramy, branding i rejestrację gości przez kod QR."
 ---
 
-# Zameldowanie
+# Check-In
 
 <div class="article-intro">
 
-B1 Admin obsługuje samodzielne zameldowanie na nabożeństwach za pośrednictwem towarzyszącej aplikacji **B1 Checkin**. Członkowie wspólnoty mogą zameldować siebie i swoje rodziny przy kioskach lub na dedykowanych urządzeniach po przybyciu, co przyspiesza cały proces i zmniejsza obciążenie wolontariuszy. Każde zameldowanie jest automatycznie zapisywane jako obecność.
+B1 Admin obsługuje samoobsługowe zameldowanie na nabożeństwach za pośrednictwem towarzyszącej aplikacji **B1 Checkin**. Członkowie zboru mogą sami zameldować siebie i swoje rodziny przy kioskach lub na dedykowanych urządzeniach po przybyciu, co przyspiesza cały proces i zmniejsza obciążenie wolontariuszy. Każde zameldowanie jest automatycznie zapisywane jako obecność.
 
 </div>
 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Twoje kampusy, godziny nabożeństw i grupy muszą być skonfigurowane w [Konfiguracji obecności](setup.md).
-- Potrzebujesz [osób w bazie danych](../people/adding-people.md) z [gospodarstwami domowymi](../people/adding-people.md#managing-households), aby rodziny mogły meldować się razem.
+- Twoje zbory lokalne, godziny nabożeństw i grupy muszą być skonfigurowane w [Konfiguracji obecności](setup.md).
+- Potrzebujesz [osób w bazie danych](../people/adding-people.md) z ustawionymi [gospodarstwami domowymi](../people/adding-people.md#managing-households), aby rodziny mogły meldować się razem.
 - Będziesz potrzebować tabletu i opcjonalnie drukarki etykiet Brother (zobacz [zalecany sprzęt](#recommended-hardware) poniżej).
 
 </div>
 
 ## Jak to działa
 
-Aplikacja B1 Checkin łączy się z konfiguracją obecności w B1 Admin. Gdy członek wspólnoty się melduje, jego obecność jest automatycznie zapisywana przy właściwym kampusie, godzinie nabożeństwa i grupie. Nie musisz ręcznie wprowadzać obecności osób, które korzystają z systemu zameldowania.
+Aplikacja B1 Checkin łączy się z konfiguracją obecności w B1 Admin. Gdy członek zboru się melduje, jego obecność jest automatycznie zapisywana we właściwym zborze lokalnym, godzinie nabożeństwa i grupie. Nie musisz ręcznie wprowadzać obecności osób korzystających z systemu zameldowania.
 
 ## Konfiguracja zameldowania
 
-1. **Najpierw skonfiguruj strukturę obecności.** W B1 Admin przejdź do **Ludzie > Obecność** i kliknij **Konfiguracja**, aby upewnić się, że kampusy, godziny nabożeństw i grupy są ustawione. Aplikacja zameldowania opiera się na tej konfiguracji. Opcjonalnie przypisz każdej godzinie nabożeństwa [harmonogram zameldowania](setup.md#setting-a-check-in-schedule), dzięki czemu zameldowanie będzie się automatycznie otwierać i zamykać co tydzień. Harmonogramy używają strefy czasowej kampusu, do którego należy nabożeństwo, lub strefy czasowej Twojego kościoła, jeśli kampus nie ma ustawionej strefy. Kiosk oznacza godziny nabożeństw, których okno jest zamknięte, jako **Zamknięte**, i informuje rodziny, kiedy zameldowanie się otworzy. Szczegóły znajdziesz w [Konfiguracji obecności](setup.md).
-2. **Zainstaluj aplikację B1 Checkin** na urządzeniach, których zamierzasz używać. Aplikacja jest dostępna na następujących platformach:
+1. **Najpierw skonfiguruj strukturę obecności.** W B1 Admin przejdź do **Osoby > Obecność** i kliknij **Konfiguracja**, aby upewnić się, że zbory lokalne, godziny nabożeństw i grupy są ustawione. Aplikacja zameldowania opiera się na tej konfiguracji. Opcjonalnie przypisz każdej godzinie nabożeństwa [harmonogram zameldowania](setup.md#setting-a-check-in-schedule), dzięki czemu zameldowanie otwiera się i zamyka automatycznie co tydzień. Harmonogramy używają strefy czasowej zboru lokalnego, do którego należy nabożeństwo, lub strefy czasowej Twojego kościoła, jeśli zbór lokalny nie ma ustawionej strefy. Kiosk wyświetla godziny nabożeństw, których okno jest zamknięte, jako **Zamknięte** i informuje rodziny, kiedy zameldowanie się otworzy. Szczegóły znajdziesz w [Konfiguracji obecności](setup.md).
+2. **Zainstaluj aplikację B1 Checkin** na urządzeniach, których zamierzasz użyć. Aplikacja jest dostępna na następujących platformach:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Tablety Android/Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Tablety Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Zaloguj się w aplikacji B1 Checkin** przy użyciu konta z uprawnieniem **Zameldowanie** do obecności (lub **Edycja obecności**). Zobacz [Konta kiosków zameldowania](../settings/roles-permissions.md#check-in-kiosk-accounts).
-4. **Wybierz kampus i godzinę nabożeństwa** dla bieżącego spotkania.
+3. **Zaloguj się do aplikacji B1 Checkin**, używając konta z uprawnieniem do obecności **Checkin** (lub **Edycja obecności**). Zobacz [Konta kiosków zameldowania](../settings/roles-permissions.md#check-in-kiosk-accounts).
+4. **Wybierz zbór lokalny i godzinę nabożeństwa** dla bieżącego zgromadzenia.
 5. Członkowie mogą teraz wyszukać swoje imię na urządzeniu i się zameldować.
 
 :::tip
-Umieść urządzenia do zameldowania w widocznych, łatwo dostępnych miejscach, takich jak wejścia do holu lub stoliki powitalne. Krótka zapowiedź podczas nabożeństw pomaga członkom wspólnoty dowiedzieć się, że ta opcja istnieje.
+Umieszczaj urządzenia do zameldowania w widocznych i łatwo dostępnych miejscach, na przykład przy wejściach do holu lub przy stolikach powitalnych. Krótkie ogłoszenie podczas nabożeństw pomaga członkom wiedzieć, że ta opcja jest dostępna.
 :::
 
 :::tip
-Jeśli Twój kościół ma wiele kampusów, musisz powtórzyć konfigurację dla każdego kampusu w [Konfiguracji obecności](setup.md). Każde urządzenie do zameldowania może być skonfigurowane dla innego kampusu.
+Jeśli Twój kościół ma wiele zborów lokalnych, musisz powtórzyć konfigurację dla każdego z nich w [Konfiguracji obecności](setup.md). Każde urządzenie do zameldowania może być skonfigurowane dla innego zboru lokalnego.
 :::
 
 ## Zalecany sprzęt
 
-**Tablety** — każdy z poniższych dobrze sprawdza się z aplikacją:
+**Tablety** — każdy z poniższych dobrze współpracuje z aplikacją:
 
-- **Kompaktowy:** Samsung Galaxy Tab A7 Lite 8.7"
-- **Duży ekran:** Samsung Galaxy Tab A8 10.5"
+- **Kompaktowy:** Samsung Galaxy Tab A7 Lite 8,7"
+- **Duży ekran:** Samsung Galaxy Tab A8 10,5"
 - **Budżetowy:** Amazon Fire HD 10
 
-**Drukarki** — zameldowanie współpracuje z drukarkami etykiet Brother do drukowania plakietek z imionami:
+**Drukarki** — zameldowania działają z drukarkami etykiet Brother do drukowania plakietek z imionami:
 
 - **Najlepsza:** Brother QL-1110NWB (obsługuje wiele tabletów przez Bluetooth i WiFi)
 - **Dobra:** Brother QL-810W (obsługuje wiele tabletów przez WiFi)
@@ -61,37 +61,37 @@ Jeśli Twój kościół ma wiele kampusów, musisz powtórzyć konfigurację dla
 **Etykiety:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Tylko drukarki etykiet Brother są kompatybilne z aplikacją B1 Checkin. Drukarki innych marek nie będą działać przy drukowaniu plakietek.
+Tylko drukarki etykiet Brother są kompatybilne z aplikacją B1 Checkin. Drukarki innych marek nie będą działać przy drukowaniu plakietek z imionami.
 :::
 
 :::info
-Postępuj zgodnie z instrukcją konfiguracji drukarki, aby podłączyć ją do tej samej sieci WiFi co tablet. Sterowniki i przewodniki konfiguracji drukarek Brother znajdziesz na [stronie wsparcia Brother](https://support.brother.com).
+Postępuj zgodnie z instrukcjami konfiguracji drukarki, aby połączyć ją z tą samą siecią WiFi, do której podłączony jest tablet. Sterowniki drukarek Brother oraz przewodniki konfiguracji znajdziesz na [stronie wsparcia Brother](https://support.brother.com).
 :::
 
 ## Dostosowywanie wyglądu kiosku
 
-Możesz dostosować wygląd aplikacji B1 Checkin do identyfikacji wizualnej Twojego kościoła. W B1 Admin przejdź do **Mobilne > B1 CheckIn** i użyj karty **Motyw kiosku**, aby skonfigurować:
+Możesz dostosować wygląd aplikacji B1 Checkin, aby pasował do brandingu Twojego kościoła. W B1 Admin przejdź do **Mobile > B1 CheckIn** i użyj karty **Motyw kiosku**, aby skonfigurować:
 
 ### Kolory
 
-Dostosuj osiem ustawień kolorów do identyfikacji wizualnej kościoła:
+Dostosuj osiem ustawień kolorów, aby pasowały do brandingu kościoła:
 
-- **Główny** i **Kontrast głównego** -- Główny kolor marki i jego kolor tekstu.
-- **Drugorzędny** i **Kontrast drugorzędnego** -- Kolor akcentu i jego kolor tekstu.
-- **Tło nagłówka** i **Tło podnagłówka** -- Kolory obszarów nagłówka kiosku.
-- **Tło przycisków** i **Tekst przycisków** -- Kolory przycisków interaktywnych.
+- **Główny** i **Kontrast główny** — główny kolor marki i kolor jej tekstu.
+- **Drugorzędny** i **Kontrast drugorzędny** — kolor akcentu i kolor jego tekstu.
+- **Tło nagłówka** i **Tło podnagłówka** — kolory obszarów nagłówka kiosku.
+- **Tło przycisku** i **Tekst przycisku** — kolory przycisków interaktywnych.
 
 ### Obraz tła
 
-Prześlij opcjonalny obraz tła dla ekranów powitalnych i wyszukiwania w kiosku. Zalecany rozmiar to 1920x1080 pikseli.
+Prześlij opcjonalny obraz tła dla ekranów powitalnego i wyszukiwania w kiosku. Zalecany rozmiar to 1920x1080 pikseli.
 
-### Ekran bezczynności / wygaszacz
+### Ekran bezczynności / wygaszacz ekranu
 
-Skonfiguruj wygaszacz ekranu, który uruchamia się po okresie bezczynności:
+Skonfiguruj wygaszacz ekranu, który uruchomi się po okresie bezczynności:
 
 1. Włącz lub wyłącz ekran bezczynności.
-2. Ustaw **limit czasu** (ile sekund bezczynności, zanim uruchomi się wygaszacz; minimum 10 sekund).
-3. Dodaj jeden lub więcej **slajdów** -- każdy slajd ma obraz i czas wyświetlania (minimum 3 sekundy).
+2. Ustaw **limit czasu** (ile sekund bezczynności, zanim wygaszacz się uruchomi; minimum 10 sekund).
+3. Dodaj jeden lub więcej **slajdów** — każdy slajd ma obraz i czas wyświetlania (minimum 3 sekundy).
 
 :::tip
 Używaj ekranu bezczynności do wyświetlania ogłoszeń, nadchodzących wydarzeń lub wiadomości powitalnych, gdy kiosk nie jest aktywnie używany.
@@ -99,81 +99,83 @@ Używaj ekranu bezczynności do wyświetlania ogłoszeń, nadchodzących wydarze
 
 ## Rejestracja gości przez kod QR
 
-Kiosk zameldowania może wyświetlać kod QR, który goście skanują, aby samodzielnie zarejestrować siebie i swoją rodzinę na własnym telefonie. Przyspiesza to proces zameldowania pierwszych gości.
+Kiosk do zameldowania może wyświetlać kod QR, który odwiedzający skanuje, aby samodzielnie zarejestrować siebie i swoją rodzinę na własnym telefonie. Przyspiesza to proces zameldowania w przypadku gości, którzy przychodzą po raz pierwszy.
 
-Gdy gość zeskanuje kod QR, trafia na [stronę rejestracji gości](../../b1-church/checkin/guest-registration.md), gdzie wpisuje imiona członków swojej rodziny i inne dane, o które zdecydujesz się poprosić. Wolontariusz może następnie wyszukać go na kiosku i go zameldować.
+Gdy gość zeskanuje kod QR, zostanie przekierowany na [stronę rejestracji gości](../../b1-church/checkin/guest-registration.md), gdzie wpisze imiona członków swojej rodziny oraz inne dane, o które zdecydujesz się zapytać. Wolontariusz może następnie wyszukać go na kiosku i zameldować.
 
-### Włączanie rejestracji gości przez QR
+### Włączanie rejestracji gości przez kod QR
 
 Aby włączyć wyświetlanie kodu QR:
 
-1. W B1 Admin otwórz [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (pasek wyszukiwania w lewym górnym rogu) i rozwiń **Mobilne**.
+1. W B1 Admin otwórz [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (pasek wyszukiwania w lewym górnym rogu) i rozwiń **Mobile**.
 2. Kliknij **B1 CheckIn**.
-3. Przełącz **Rejestracja gości QR** na włączone i kliknij **Zapisz**.
+3. Włącz przełącznik **Rejestracja gości QR** i kliknij **Zapisz**.
 
 :::note
-To ustawienie znajduje się w **Mobilne > B1 CheckIn** (na tej samej stronie co karta **Motyw kiosku**), a nie w sekcji Obecność. Akcja **Kiosk** na stronie Obecność ma łącze do tej strony.
+To ustawienie znajduje się w **Mobile > B1 CheckIn** (na tej samej stronie co karta **Motyw kiosku**), a nie w sekcji Obecność. Akcja **Kiosk** na stronie Obecność zawiera link do tej strony.
 :::
 
-Gdy przełącznik jest włączony, pozostałe opcje poniżej pojawiają się na tej samej karcie **Rejestracja gości QR**. Po zmianie dowolnej z nich kliknij **Zapisz** na karcie.
+Gdy przełącznik jest włączony, pozostałe opcje poniżej pojawią się na tej samej karcie **Rejestracja gości QR**. Po zmianie dowolnej z nich kliknij **Zapisz** na karcie.
 
 ### Wybór pól formularza
 
-Lista **Pola formularza** określa, o co pyta formularz rejestracji. **Imię** i **Nazwisko** są zawsze w formularzu i zawsze wymagane dla każdego członka rodziny. Dla każdego innego pola włącz **Uwzględnij**, aby dodać je do formularza, a następnie włącz **Wymagane**, jeśli goście muszą je wypełnić. **Wymagane** można włączyć tylko dla uwzględnionego pola, a wyłączenie **Uwzględnij** je czyści.
+Lista **Pola formularza rejestracji** określa, o co pyta formularz rejestracji. **Imię** i **Nazwisko** są zawsze obecne w formularzu i zawsze wymagane dla każdego członka rodziny. Dla każdego innego pola włącz **Uwzględnij**, aby dodać je do formularza, a następnie włącz **Wymagane**, jeśli goście muszą je wypełnić. Opcję **Wymagane** można włączyć tylko dla uwzględnionego pola, a wyłączenie **Uwzględnij** ją czyści.
 
-| Pole | Pytane o | Domyślnie uwzględnione |
+| Pole | O co pytane | Domyślnie uwzględnione |
 |-------|-----------|---------------------|
-| **E-mail** | Tylko osobę kontaktową główną | Tak (opcjonalne) |
-| **Telefon** | Tylko osobę kontaktową główną | Tak (opcjonalne) |
-| **Adres domowy** | Raz dla rodziny -- ulica, adres (linia 2), miasto, stan i kod pocztowy. Gdy pole jest wymagane, wszystko oprócz linii 2 adresu musi być wypełnione. Adres jest zapisywany u każdego członka rodziny. | Nie |
-| **Data urodzenia** | Każdego członka rodziny | Nie |
-| **Płeć** | Każdego członka rodziny | Nie |
-| **Stan cywilny** | Tylko osobę kontaktową główną | Nie |
-| **Klasa** | Każdego członka rodziny (od przedszkola do 12. klasy lub Absolwent) | Nie |
-| **Komentarze** | Raz, w polu pod członkami rodziny (do 1000 znaków) | Nie |
+| **Tytuł** | Każdy członek rodziny, jako lista rozwijana przed imieniem (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | Nie |
+| **E-mail** | Tylko osoba kontaktowa | Tak (opcjonalnie) |
+| **Telefon** | Każdy członek rodziny. Gdy pole jest wymagane, tylko osoba kontaktowa musi je wypełnić. | Tak (opcjonalnie) |
+| **Rola w gospodarstwie** | Każdy członek rodziny po osobie kontaktowej — Małżonek, Dziecko lub Inne. Osoba kontaktowa jest głową nowego gospodarstwa. Osoba bez roli jest zapisywana jako Inne. | Tak (opcjonalnie) |
+| **Adres zamieszkania** | Raz dla rodziny — ulica, linia adresu 2, miasto, województwo i kod pocztowy. Gdy pole jest wymagane, wszystko oprócz linii adresu 2 musi być wypełnione. Adres jest zapisywany u każdego członka rodziny. | Nie |
+| **Data urodzenia** | Każdy członek rodziny | Nie |
+| **Płeć** | Każdy członek rodziny | Nie |
+| **Stan cywilny** | Tylko osoba kontaktowa | Nie |
+| **Klasa** | Każdy członek rodziny (od przedszkola do 12 klasy lub Ukończona szkoła) | Nie |
+| **Uwagi** | Raz, w polu pod członkami rodziny (do 1000 znaków) | Nie |
 
-Wyłączone pola nigdy nie są zapisywane, nawet jeśli ktoś przesłał je do rejestracji w inny sposób. Komentarze są zapisywane jako notatka w rekordzie osoby kontaktowej głównej (oznaczona jako „Rejestracja gościa”), dzięki czemu możesz je przeczytać w sekcji **Notatki** jej profilu.
+Pola, które wyłączysz, nigdy nie są zapisywane, nawet jeśli ktoś prześle je do rejestracji w inny sposób. Uwagi są zapisywane jako notatka w rekordzie osoby kontaktowej (opublikowana jako „Rejestracja gościa”), dzięki czemu możesz je przeczytać w sekcji **Notatki** jej profilu.
 
 ### Dodawanie gości do grupy
 
-Użyj **Dodaj nowych gości do grupy**, aby automatycznie przypisać wszystkie osoby, które się zarejestrują, do jednej z Twoich grup — na przykład grupy „Nowi” lub grupy na wydarzenie w tym tygodniu. Wybierz **Brak** (domyślnie), aby pominąć tę opcję. Goście nigdy nie widzą ani nie wybierają grupy; jest ona ustawiana tylko tutaj. Zmieniaj ją przed każdym wydarzeniem, abyś mógł razem śledzić gości danego wydarzenia.
+Użyj opcji **Dodaj nowych gości do grupy**, aby automatycznie przypisać wszystkich rejestrujących się do jednej z Twoich grup — na przykład grupy „Nowi” lub grupy na wydarzenie w tym tygodniu. Wybierz **Brak** (domyślnie), aby pominąć tę opcję. Goście nigdy nie widzą ani nie wybierają grupy; jest ona ustawiana wyłącznie tutaj. Zmieniaj ją przed każdym wydarzeniem, abyś mógł razem kontynuować kontakt z gośćmi danego wydarzenia.
 
 ### Rejestrowanie obecności
 
-Gdy wybrana jest grupa, pojawia się przełącznik **Również zapisz obecność**. Włącz go, aby oznaczyć gości jako obecnych w momencie rejestracji, dzięki czemu nie musisz meldować ich osobno.
+Gdy wybrana jest grupa, pojawia się przełącznik **Zapisz również obecność**. Włącz go, aby oznaczyć gości jako obecnych w chwili rejestracji, dzięki czemu nie musisz meldować ich osobno.
 
 Obecność jest zapisywana tylko wtedy, gdy rejestracja odbywa się w jednej z **zaplanowanych** godzin nabożeństw wybranej grupy:
 
-- Grupa musi być powiązana z co najmniej jedną godziną nabożeństwa, a te godziny muszą mieć [harmonogram zameldowania](setup.md#setting-a-check-in-schedule) (**Dzień** i **Godzinę rozpoczęcia**).
-- „W trakcie” oznacza okno zameldowania danej godziny nabożeństwa — od liczby minut **Otwarcie zameldowania** przed rozpoczęciem do liczby minut **Zamknięcie zameldowania** po zakończeniu (lub po rozpoczęciu, jeśli nie ustawiono godziny zakończenia; jeśli nie ma ani godziny zakończenia, ani minut zamknięcia, to do końca tego dnia), w tej samej strefie czasowej, której używa harmonogram zameldowania.
-- Każdy członek rodziny jest oznaczany jako obecny w grupie dla każdej z jej godzin nabożeństw, które są otwarte w tym momencie, z dzisiejszą datą.
+- Grupa musi być powiązana z co najmniej jedną godziną nabożeństwa, a te godziny muszą mieć [harmonogram zameldowania](setup.md#setting-a-check-in-schedule) (**Dzień** i **Godzina rozpoczęcia**).
+- „Podczas” oznacza wewnątrz okna zameldowania tej godziny nabożeństwa — od liczby minut **Otwarcie zameldowania** przed rozpoczęciem do liczby minut **Zamknięcie zameldowania** po zakończeniu (albo po rozpoczęciu, jeśli nie ustawiono godziny zakończenia; a jeśli nie ma ani godziny zakończenia, ani minut zamknięcia — do końca tego dnia), w tej samej strefie czasowej, której używa harmonogram zameldowania.
+- Każdy członek rodziny jest oznaczany jako obecny w grupie dla każdej z jej godzin nabożeństw, która jest w tym momencie otwarta, na dzisiejszą datę.
 - Rejestracje w innym czasie lub dla grupy, której godziny nabożeństw nie mają harmonogramu, są dodawane do grupy, ale nie są liczone jako obecność.
 
 ### Zdjęcie nagłówka
 
-W sekcji **Zdjęcie nagłówka** kliknij **Zmień zdjęcie**, aby wybrać lub przesłać obraz (przycięty do proporcji 16:9), który ma być wyświetlany u góry strony rejestracji zamiast domyślnej ikony. Kliknij **Usuń**, aby wrócić do ikony.
+W sekcji **Zdjęcie nagłówka** kliknij **Zmień zdjęcie**, aby wybrać lub przesłać obraz (przycięty do proporcji 16:9), który będzie wyświetlany na górze strony rejestracji zamiast domyślnej ikony. Kliknij **Usuń**, aby wrócić do ikony.
 
 ### Udostępnianie linku do rejestracji
 
-Po włączeniu rejestracji gości przez QR na dole karty pojawia się sekcja **Udostępnij kod QR rejestracji**. Daje ona dwa sposoby, aby przekierować gości do formularza rejestracji poza kodem QR na kiosku:
+Po włączeniu rejestracji gości QR na dole karty pojawi się sekcja **Udostępnij kod QR rejestracji**. Daje ona dwa sposoby na dotarcie gości do formularza rejestracji poza kodem QR w kiosku:
 
-- **Kopiuj link** — kopiuje adres URL rejestracji, abyś mógł wkleić go na stronę internetową kościoła, do wiadomości e-mail lub gdziekolwiek online.
-- **Pobierz PNG** — pobiera kod QR jako obraz, który możesz wydrukować na ulotkach, w biuletynach lub na szyldach.
+- **Kopiuj link** — kopiuje adres URL rejestracji, dzięki czemu możesz wkleić go na stronie internetowej kościoła, w wiadomościach e-mail lub w dowolnym miejscu w sieci.
+- **Pobierz PNG** — pobiera kod QR jako obraz, który możesz wydrukować na ulotkach, w biuletynach lub na tablicach informacyjnych.
 
 :::tip
-Dodaj link do rejestracji na stronę internetową kościoła, np. na podstronę „Zaplanuj wizytę” lub „Jestem nowy”, aby goście mogli się zarejestrować jeszcze przed przybyciem.
+Dodaj link do rejestracji na stronie internetowej kościoła, np. na stronie „Zaplanuj wizytę” lub „Jestem nowy”, aby goście mogli się zarejestrować jeszcze przed przyjściem.
 :::
 
-### Co się dzieje po rejestracji gościa
+### Co dzieje się po rejestracji gościa
 
-B1 najpierw szuka osób, które są już w **Ludziach**. Członek rodziny jest dopasowany do istniejącej osoby, gdy dokładnie jedna osoba ma takie samo imię i ten sam e-mail lub numer telefonu. Dziecko wpisane bez e-maila ani telefonu jest dopasowywane po imieniu w obrębie dopasowanego gospodarstwa domowego. Dopasowane osoby są używane ponownie bez zmian — rejestracja nigdy nie zmienia ich danych ani statusu członkostwa — a każda nowa osoba dołącza do dopasowanego gospodarstwa domowego.
+B1 najpierw szuka osób, które już znajdują się w **Osobach**. Członek rodziny jest dopasowywany do istniejącej osoby, gdy dokładnie jedna osoba ma takie samo imię i ten sam e-mail lub telefon. Dziecko wpisane bez e-maila lub telefonu jest dopasowywane po imieniu w obrębie dopasowanego gospodarstwa domowego. Dopasowane osoby są używane ponownie w niezmienionej formie — rejestracja nigdy nie zmienia ich danych ani statusu członkostwa — a każda nowa osoba dołącza do dopasowanego gospodarstwa domowego.
 
-Gdy nikt nie pasuje, rejestracja tworzy nowe gospodarstwo domowe nazwane od nazwiska osoby kontaktowej głównej, z rekordem osoby dla każdego członka rodziny. Wszystkie nowe osoby są dodawane do **Ludzi** ze statusem członkostwa **Odwiedzający**, a osoba kontaktowa główna jako głowa gospodarstwa domowego.
+Gdy nikt nie zostanie dopasowany, rejestracja tworzy nowe gospodarstwo domowe, nazwane od nazwiska osoby kontaktowej, z rekordem osoby dla każdego członka rodziny. Wszystkie nowe osoby są dodawane do **Osób** ze statusem członkostwa **Odwiedzający**, a osoba kontaktowa jest głową gospodarstwa domowego.
 
-Zarówno dopasowane, jak i nowe osoby są dodawane do wybranej przez Ciebie grupy (jeśli jeszcze w niej nie są) i mają zapisywaną obecność, gdy ta opcja jest włączona. Komentarze są zapisywane jako notatka u osoby kontaktowej głównej.
+Zarówno dopasowane, jak i nowe osoby są dodawane do wybranej przez Ciebie grupy (jeśli nie są jeszcze w niej) i mają zapisywaną obecność, gdy ta opcja jest włączona. Uwagi są zapisywane jako notatka u osoby kontaktowej.
 
-Aby automatycznie śledzić kontakt, dodaj [wyzwalacz przepływu pracy](../serving/workflows.md#triggers), np. **Osoba · Utworzona** z warunkiem *Status członkostwa to Odwiedzający*, lub **Grupa · Członek dołączył** dla wybranej przez Ciebie grupy.
+Aby automatycznie kontaktować się z nowymi osobami, dodaj [wyzwalacz przepływu pracy](../serving/workflows.md#triggers), na przykład **Osoba · Utworzona** z warunkiem *Status członkostwa to Odwiedzający*, lub **Grupa · Członek dołączył** dla wybranej przez Ciebie grupy.
 
 ## Co jest zapisywane
 
-Każde zameldowanie tworzy rekord obecności w B1 Admin. Te rekordy możesz zobaczyć na stronie [Obecność](tracking-attendance.md) oraz w [sesjach każdej grupy](../groups/group-members.md), tak jak w przypadku obecności wprowadzonej ręcznie. Nie ma różnicy w sposobie wyświetlania danych — obie metody zasilają te same raporty.
+Każde zameldowanie tworzy rekord obecności w B1 Admin. Możesz przeglądać te rekordy na stronie [Obecność](tracking-attendance.md) oraz w [sesjach każdej grupy](../groups/group-members.md), tak samo jak obecność wprowadzoną ręcznie. Dane wyglądają identycznie — obie metody zasilają te same raporty.

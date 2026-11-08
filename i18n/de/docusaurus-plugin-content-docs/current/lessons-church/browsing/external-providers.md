@@ -1,58 +1,60 @@
 ---
 title: "Externe Anbieter"
-description: "Erfahren Sie, wie Lehrplananbieter ihre Inhalte mit dem Open Lesson Format in Lessons.church einbringen und wie Sie einen Anbieter im Portal verbinden."
+description: "Wie Drittanbieter von Lehrplänen Lektionen über das Open Lesson Format bereitstellen und wie Ihre Gemeinde einen Anbieter in Lessons.church hinzufügt und dessen Lektionen plant."
 ---
 
 # Externe Anbieter
 
 <div class="article-intro">
 
-Lessons.church ist nicht auf seinen eigenen Lehrplan beschränkt. Drittanbieter von Lehrplänen können ihre Inhalte über das **Open Lesson Format** veröffentlichen, und diese Inhalte erscheinen neben den integrierten Programmen von Lessons.church für ein einheitliches Sucherlebnis.
+Lessons.church beschränkt sich nicht auf den eigenen Lehrplan. Drittanbieter von Lehrplänen können ihre Inhalte über das **Open Lesson Format** veröffentlichen. Sobald Ihre Gemeinde einen Anbieter hinzugefügt hat, können Sie dessen Lektionen für Ihre Klassenräume direkt neben der Lessons.church-Bibliothek planen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Verstehen Sie, wie Inhalte organisiert sind, indem Sie [Programme und Studienreihen](./programs-and-studies.md) lesen
-- Um eine Anbieterverbindung hinzuzufügen, benötigen Sie ein [Lessons.church-Konto](../getting-started/creating-account.md) mit Zugang zum Portal Ihrer Gemeinde
+- Lesen Sie [Programme und Studien](./programs-and-studies.md), um zu verstehen, wie Inhalte gegliedert sind
+- Um eine Anbieterverbindung hinzuzufügen, benötigen Sie ein [Lessons.church-Konto](../getting-started/creating-account.md) mit Zugriff auf die Klassenraumpläne Ihrer Gemeinde
 
 </div>
 
 ## Was sind externe Anbieter?
 
-Ein externer Anbieter ist jede Organisation, die Gemeinde-Lehrpläne im Open Lesson Format veröffentlicht -- einem Standard, der es ermöglicht, Lektionsinhalte plattformübergreifend zu teilen. Wenn ein Anbieter seine Inhalte in diesem Format verfügbar macht, kann Lessons.church sie einlesen und genauso wie seine eigenen Programme anzeigen.
+Ein externer Anbieter ist jede Organisation, die Gemeindelehrpläne im Open Lesson Format veröffentlicht – einem Standard, der es ermöglicht, Lektionsinhalte plattformübergreifend zu teilen. Wenn ein Anbieter seine Inhalte in diesem Format bereitstellt, kann Lessons.church sie einlesen und die Lektionen im selben Layout wie die eigenen anzeigen.
 
-Das bedeutet, dass Sie Zugang zu einer breiteren Auswahl an Lehrplänen haben, ohne mehrere Webseiten besuchen zu müssen.
-
-## Externe Inhalte durchsuchen
-
-Inhalte externer Anbieter funktionieren genauso wie integrierte Inhalte:
-
-1. Programme externer Anbieter erscheinen auf der Lessons.church-Startseite neben anderen Programmen.
-2. Klicken Sie auf ein **Programm**, um dessen Studienreihen zu sehen.
-3. Klicken Sie auf eine **Studienreihe**, um deren Lektionen zu sehen.
-4. Betrachten Sie Lektionen mit demselben Layout -- Abschnitte, Rollen, Aktionen, Videos und herunterladbare Materialien.
-
-Es gibt keinen speziellen Prozess oder separaten Bereich für externe Inhalte. Alles ist in eine einzige Bibliothek integriert, die einfach durchsucht werden kann.
+Auf diese Weise erhalten Sie Zugang zu einer größeren Auswahl an Lehrmaterial, ohne mehrere Websites besuchen zu müssen.
 
 ## Anbieterverbindungen hinzufügen
 
-Wenn Ihre Gemeinde einen Lehrplananbieter nutzt, der das Open Lesson Format unterstützt, und Sie dessen Inhalte in Ihrem Lessons.church-Portal verfügbar haben möchten:
+Wenn Ihre Gemeinde einen Lehrplananbieter nutzt, der das Open Lesson Format unterstützt:
 
 1. Melden Sie sich bei Ihrem Lessons.church-Konto an.
-2. Navigieren Sie zur Seite **External Providers** im Portal.
-3. Fügen Sie die Verbindungs-URL des externen Anbieters hinzu.
-4. Dessen Programme und Studienreihen werden für Ihre Gemeinde zum Durchsuchen, Planen und Verwenden in Klassenzimmern verfügbar.
+2. Klicken Sie in der Navigation auf **Externe Anbieter**.
+3. Klicken Sie auf **Anbieter hinzufügen**, geben Sie einen **Anbieternamen** und die **API-URL** des Anbieters ein und klicken Sie auf **Speichern**.
+
+Die vollständigen Schritte finden Sie unter [Drittanbieter](../admin/third-party-providers.md).
 
 :::info
-Das Hinzufügen einer externen Anbieterverbindung erfolgt über das Lessons.church-Portal und erfordert ein angemeldetes Konto. Das Durchsuchen von Inhalten, die bereits von der Plattform hinzugefügt wurden, erfordert kein Konto.
+Ein externer Anbieter wird nur für Ihre Gemeinde hinzugefügt. Dessen Programme erscheinen weder auf der öffentlichen Startseite von Lessons.church noch in der Suche.
+:::
+
+## Externe Inhalte verwenden
+
+Sobald ein Anbieter hinzugefügt ist, stehen seine Programme, Studien und Lektionen bei der Planung zur Verfügung:
+
+1. Wenn Sie [eine Lektion zum Plan eines Klassenraums hinzufügen](../classrooms/scheduling-lessons.md), wählen Sie unter **Anbieter** den Anbieter aus.
+2. Wählen Sie **Programm**, **Studie**, **Lektion** und **Veranstaltungsort** genauso aus, wie Sie es bei einer Lessons.church-Lektion tun würden.
+3. Klicken Sie im Plan des Klassenraums unter einer geplanten externen Lektion auf **Lektion anzeigen**, um sie zu öffnen. Sie verwendet dasselbe Layout wie die integrierten Lektionen – mit Abschnitten, Rollen, Aktionen, Videos und herunterladbaren Materialien.
+
+:::note
+Lektionen externer Anbieter können nicht [angepasst](../customization/customizing-lessons.md) werden. Nur Lessons.church-Lektionen zeigen den Link **Anpassen** an.
 :::
 
 ## Für Inhaltsersteller
 
-Wenn Sie ein Lehrplanherausgeber sind und Ihre Inhalte auf Lessons.church verfügbar machen möchten, bietet das Open Lesson Format eine standardisierte Möglichkeit, Ihre Programme, Studienreihen und Lektionen zu teilen. Kontaktieren Sie das Lessons.church-Team oder besuchen Sie die Entwicklerdokumentation für Integrationsdetails.
+Wenn Sie als Herausgeber von Lehrmaterial Ihre Inhalte auf Lessons.church verfügbar machen möchten, bietet das Open Lesson Format eine standardisierte Möglichkeit, Ihre Programme, Studien und Lektionen zu teilen. Wenden Sie sich an das Lessons.church-Team oder besuchen Sie die Entwicklerdokumentation für Details zur Integration.
 
 :::tip
-Wenn Sie ein Administrator sind, der Drittanbieter-Feeds auf Plattformebene verwaltet, siehe [Drittanbieter](../admin/third-party-providers.md) im Abschnitt „Administration".
+Eine Schritt-für-Schritt-Anleitung zum Hinzufügen, Bearbeiten und Löschen eines Anbieters finden Sie unter [Drittanbieter](../admin/third-party-providers.md).
 :::

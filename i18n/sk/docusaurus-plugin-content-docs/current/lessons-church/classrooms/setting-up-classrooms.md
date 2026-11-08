@@ -1,20 +1,20 @@
 ---
 title: "Nastavenie tried"
-description: "Vytváranie, premenovanie a odstraňovanie tried v portáli Lessons.church, aby bola každá miestnosť alebo vekové skupina pripravená na týždenné plánovanie lekcií."
+description: "Vytvárajte, premenúvajte a odstraňujte triedy v portáli Lessons.church, aby každá miestnosť alebo vekové skupina bola pripravená na týždenné plánovanie lekcií."
 ---
 
 # Nastavenie tried
 
 <div class="article-intro">
 
-Skôr než budete môcť plánovať lekcie, musíte vytvoriť triedy, ktoré zodpovedajú vašim vyučovacím priestorom. Tento návod vás prevedie vytváraním, pomenovávaním a správou tried na portáli Lessons.church.
+Skôr než budete môcť plánovať lekcie, potrebujete vytvoriť triedy, ktoré zodpovedajú vašim vyučovacím priestorom. Tento návod vás prevedie vytváraním, pomenovávaním a správou tried v portáli Lessons.church.
 
 </div>
 
 <div class="prereqs">
 <h4>Skôr než začnete</h4>
 
-- [Vytvorte si účet](../getting-started/creating-account.md) a prepojte ho so svojou cirkvou
+- [Vytvorte si účet](../getting-started/creating-account.md) a pripojte sa k svojej cirkvi
 - Oboznámte sa s [prehľadom portálu](../getting-started/portal-overview.md)
 
 </div>
@@ -22,29 +22,29 @@ Skôr než budete môcť plánovať lekcie, musíte vytvoriť triedy, ktoré zod
 ## Vytvorenie triedy
 
 1. Prihláste sa do svojho účtu na stránke [Lessons.church](https://lessons.church).
-2. Prejdite do svojho **Portálu**. Je to centrálne miesto vašej cirkvi na správu tried a rozvrhov.
-3. Kliknite na **Pridať triedu**.
-4. Zadajte názov triedy. Zvoľte niečo výstižné, čo vaši dobrovoľníci spoznajú – napríklad „Predškolská“, „Prvý stupeň 1.–2. ročník“ alebo „Druhý stupeň“.
-5. Uložte novú triedu. Hneď sa zobrazí na vašom domovskom paneli portálu.
+2. Prejdite do svojho **Portálu**. Je to centrálne miesto vašej cirkvi na správu tried a plánov.
+3. V boxe **Triedy** kliknite na **Pridať**. Ak zatiaľ nemáte žiadne triedy, namiesto toho kliknite na **Pridať prvú triedu**.
+4. Zadajte **Názov triedy**. Zvoľte výstižný názov, ktorý dobrovoľníci spoznajú – napríklad „Predškoláci“, „Základná škola 1. – 2. ročník“ alebo „Stredná škola“.
+5. Kliknite na **Uložiť**. Nová trieda sa hneď objaví v zozname **Triedy**.
 
-Tieto kroky zopakujte pre každú miestnosť alebo vekovú skupinu vo vašej cirkvi. Triedy môžete vytvoriť koľkokrát potrebujete.
+Tieto kroky zopakujte pre každú miestnosť alebo vekovú skupinu vo vašej cirkvi. Triedy môžete vytvoriť koľko potrebujete.
 
-## Prvé nastavenie
+## Prvotné nastavenie
 
-Ak ste ešte nenastavili žiadne triedy, portál vám zobrazí úvodné video, ktoré vás prevedie celým procesom. Video vysvetľuje základy vytvárania tried a plánovania prvých lekcií. Je to skvelý začiatok, ak ste na Lessons.church noví.
+Ak ešte nemáte nastavené žiadne triedy, váš portál zobrazí inštruktážne video, ktoré vás prevedie procesom. Video vysvetľuje základy vytvárania tried a plánovania prvých lekcií. Je to skvelý východiskový bod, ak ste na Lessons.church noví.
 
 :::tip
-Pomenujte triedy tak, aby zodpovedali tomu, ako o svojich miestnostiach už premýšľajú vaši dobrovoľníci. Ak každý hovorí „miestnosť pre predškolákov“, pomenujte ju „Predškoláci“ namiesto formálneho názvu ako „Miestnosť 101 – Predškolská výchova“.
+Pomenujte triedy tak, aby zodpovedali tomu, ako o svojich miestnostiach už rozmýšľajú vaši dobrovoľníci. Ak všetci hovoria „miestnosť pre predškolákov“, pomenujte ju „Predškoláci“, a nie formálnym názvom ako „Miestnosť 101 – Predprimárna výchova“.
 :::
 
 ## Správa tried
 
-Vaše triedy sa zobrazujú na domovskom paneli portálu, kde ich môžete kedykoľvek spravovať. Odtiaľto môžete:
+Vaše triedy sa zobrazujú na úvodnej stránke portálu, kde ich môžete kedykoľvek spravovať. Odtiaľto môžete:
 
-- **Premenovať triedu** – Aktualizujte názov, ak sa zmenia vaše miestnosti alebo vekové skupiny.
-- **Odstrániť triedu** – Vymažte triedy, ktoré už nepotrebujete.
+- **Premenovať triedu** – Kliknite na ikonu **Upraviť triedu** (ceruzka) vedľa nej, zmeňte **Názov triedy** a kliknite na **Uložiť**.
+- **Odstrániť triedu** – Kliknite na **Upraviť triedu**, potom na ikonu **Odstrániť triedu** (kôš) a potvrďte.
 - **Zobraziť rozvrh** – Kliknutím na ľubovoľnú triedu zobrazíte jej rozvrh lekcií.
 
 ## Čo ďalej
 
-Keď máte triedy nastavené, môžete začať [plánovať lekcie](./scheduling-lessons.md), aby vaši dobrovoľníci vedeli, čo majú každý týždeň učiť.
+Keď máte triedy nastavené, môžete začať [plánovať lekcie](./scheduling-lessons.md), aby vedeli vaši dobrovoľníci, čo majú každý týždeň vyučovať.

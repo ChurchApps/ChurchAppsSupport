@@ -107,7 +107,7 @@ You can enable registration for any calendar event so members can sign up throug
 
 For paid events, the same settings page lets you define priced **Attendee Types**, optional **Selections** (add-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](./paid-registrations.md) for the full walkthrough.
 
-Once registration is enabled, members will see a **Register for this Event** button when they view the event on the [B1 website](../../b1-church/events/registering.md) or [B1 Mobile app](../../b1-mobile/events/registering.md). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
+Once registration is enabled, members will see a **Register for this Event** button when they view the event on [B1.church or in the B1 App](../../b1-church/events/registering.md). If you attached a form, registrants see a **Questions** step during registration and their answers are saved with their registration.
 
 :::info
 Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions to an event.

@@ -377,16 +377,10 @@
     "message": "んаплата управљања црквом за особе, групе, присуство, донације и више."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Веб страница"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Јавна веб страница цркве и портал за чланове."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Мобилна"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Наслеђена апликација за чланове за iOS и Android, сада замењена B1.church веб апликацијом."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Регистрација"

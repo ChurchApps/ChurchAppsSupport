@@ -12,16 +12,10 @@
     "message": "Tableau de bord de gestion d'église pour les personnes, groupes, présences, dons et plus encore."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Site web"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Site web public de l'église et portail des membres."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Ancienne application membre pour iOS et Android, désormais remplacée par l'application web B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Pointage"

@@ -1,13 +1,13 @@
 ---
 title: "Přizpůsobení lekcí"
-description: "Odstraňte, skryjte nebo přeřaďte sekce a role v lekci Lessons.church a vyberte, zda se změny použijí pro jednu třídu, nebo pro všechny."
+description: "Odeberte nebo přeřaďte sekce, role a akce v lekci Lessons.church a zvolte, zda se každá změna použije jen v jedné třídě, nebo ve všech."
 ---
 
 # Přizpůsobení lekcí
 
 <div class="article-intro">
 
-Tento návod vás provede přizpůsobením lekce pro vaši třídu. Úpravy vám umožní odebrat, skrýt nebo přeuspořádat obsah tak, aby vaši dobrovolníci viděli přesně to, co potřebují: nic víc, nic míň.
+Tento návod vás provede přizpůsobením lekce pro vaši třídu. Přizpůsobení vám umožní odebrat nebo přeřadit obsah tak, aby vaši dobrovolníci viděli přesně to, co potřebují -- ani více, ani méně.
 
 </div>
 
@@ -22,55 +22,70 @@ Tento návod vás provede přizpůsobením lekce pro vaši třídu. Úpravy vám
 
 ## Otevření zobrazení přizpůsobení
 
-1. Přihlaste se a přejděte do svého **Portálu**.
+1. Přihlaste se a přejděte do své **Portálu**.
 2. Vyberte **třídu**, která obsahuje lekci, kterou chcete přizpůsobit.
-3. Klikněte na **naplánovanou lekci**, abyste ji otevřeli.
-4. Klikněte na **Přizpůsobit**, čímž vstoupíte do zobrazení přizpůsobení.
+3. V rozvrhu třídy najděte lekci a klikněte na **Přizpůsobit** pod jejím názvem.
 
-Uvidíte celý obsah lekce rozdělený na sekce, role a akce.
+Stránka **Přizpůsobit lekci** zobrazuje sekce lekce, přičemž pod každou sekcí jsou její role a pod každou rolí její akce. Každý řádek má na pravé straně tlačítka:
+
+- **Šipka nahoru** a **Šipka dolů** -- Posune položku o jedno místo nahoru nebo dolů mezi jejími sousedy
+- **Smazat** (koš) -- Odebere položku
+
+:::info
+Tlačítko **Přizpůsobit** se zobrazuje pouze u lekcí Lessons.church. Lekce naplánované u externího poskytovatele místo toho zobrazují **Zobrazit lekci** a nelze je přizpůsobit.
+:::
+
+## Volba, kde se změna použije
+
+Při každém kliknutí na šipku nebo koš se zobrazí nabídka **Použít vybrané přizpůsobení na:**
+
+- **Tato třída** -- Změna se použije jen na aktuální třídu. Ostatní třídy zůstanou beze změny.
+- **Všechny třídy** -- Změna se použije ve všech třídách ve vašem sboru.
+
+Zvolte jednu možnost a změna se hned uloží. Není k dispozici žádný samostatný krok pro uložení.
 
 ## Odebírání sekcí
 
-Pokud se sekce na vaši třídu nevztahuje, můžete ji zcela odebrat. To se hodí, když lekce obsahuje materiály pro více věkových skupin a potřebujete jen jednu z nich. Pokud má například lekce sekci „Aktivita pro předškoláky“ i sekci „Aktivita pro školáky“, můžete odebrat tu, která se do vaší místnosti nehodí.
+Pokud sekce na vaši třídu neplatí, můžete ji zcela odebrat. To se hodí, když lekce obsahuje materiál pro více věkových skupin a potřebujete jen jednu z nich. Pokud má například lekce sekce „Aktivita pro předškoláky“ i „Aktivita pro školáky“, můžete odebrat tu, která se do vaší místnosti nehodí.
 
 1. Najděte sekci, kterou chcete odebrat.
-2. Klikněte na **odebrat** nebo **skrýt** sekci.
-3. Sekce se již nebude zobrazovat dobrovolníkům, kteří tuto lekci prohlížejí.
+2. Klikněte na tlačítko **Smazat** (koš).
+3. Zvolte **Tato třída** nebo **Všechny třídy**.
 
-## Skrývání rolí nebo akcí
+Sekce se zobrazí jako odebraná spolu se všemi svými rolemi a akcemi a dobrovolníci ji u této lekce už neuvidí.
 
-V rámci sekce můžete skrýt konkrétní role nebo akce. Pokud například sekce obsahuje roli „Vedoucí chvály“, ale vaše třída ji nemá, můžete skrýt pouze tuto roli, aniž byste odstranili celou sekci.
+## Odebírání rolí nebo akcí
 
-1. Rozbalte sekci, abyste viděli její role a akce.
-2. Klikněte na **skrýt** kteroukoli roli nebo akci, kterou nepotřebujete.
+V rámci sekce můžete odebrat konkrétní role nebo akce. Pokud sekce obsahuje roli „Vedoucí chvály“, ale vaše třída žádnou takovou roli nemá, můžete odebrat jen tuto roli, aniž byste odstranili celou sekci.
 
-## Změna pořadí obsahu
+1. Najděte roli nebo akci v seznamu pod její sekcí.
+2. Klikněte na tlačítko **Smazat** (koš) a zvolte, kde se změna použije.
 
-Sekce a akce můžete přeuspořádat tak, aby odpovídaly průběhu, který preferujete:
+## Přeřazování obsahu
 
-1. Přetažením sekcí nebo akcí je posunete nahoru nebo dolů v pořadí.
-2. Nové pořadí je to, co uvidí vaši dobrovolníci při prohlížení lekce.
+Sekce, role a akce můžete přeskupit tak, aby odpovídaly vámi preferovanému průběhu:
 
-## Uložení přizpůsobení
+1. Klikněte na **šipku nahoru** nebo **šipku dolů** u položky, kterou chcete přesunout.
+2. Zvolte, kde se změna použije. Položka si vymění místo se svým sousedem.
 
-Až budete s úpravami hotovi, přizpůsobení uložte. Budete vyzváni, abyste zvolili, jak se má použít:
+Opakujte, dokud nebudou položky v pořadí, které chcete. Nové pořadí uvidí vaši dobrovolníci, když si lekci prohlédnou.
 
-- **Pouze tato třída** -- Změny se použijí jen pro aktuální třídu. Ostatní třídy zůstanou nezměněny.
-- **Všechny třídy** -- Změny se použijí napříč všemi třídami ve vašem sboru.
-- **Odebrat přizpůsobení** -- Pokud jste tuto lekci dříve přizpůsobili a chcete se vrátit k původnímu obsahu, zvolte tuto možnost a vaše změny se vymažou.
+## Vrácení odebrání
+
+Chcete-li odebranou položku obnovit, klikněte znovu na její tlačítko **Smazat**. Nabídka nyní nabízí také možnost **Žádné**. Zvolte **Žádné**, čímž odebrání zrušíte a položku znovu zobrazíte, nebo zvolte jinou možnost a změňte, kde se odebrání použije.
 
 :::tip
-Začněte přizpůsobením jediné lekce pro jednu třídu. Až si postup osvojíte, můžete přizpůsobení uplatnit širším způsobem napříč všemi třídami.
+Začněte přizpůsobením jediné lekce pro jednu třídu. Až si postup osvojíte, můžete přizpůsobení použít široce napříč všemi třídami.
 :::
 
 ## Kdy přizpůsobovat
 
 Přizpůsobení je nejužitečnější, když:
 
-- lekce obsahuje materiály pro více věkových skupin a chcete zobrazit jen relevantní části
-- vaše třída nepoužívá některé role (například vyhrazeného vedoucího chvály nebo technického dobrovolníka)
-- dáváte přednost jinému pořadí průběhu lekce, než jaké je předvoleno
+- Lekce obsahuje materiál pro více věkových skupin a chcete zobrazit jen relevantní části.
+- Vaše třída nepoužívá některé role (například vyhrazeného vedoucího chvály nebo technického dobrovolníka).
+- Dáváte přednost jinému pořadí průběhu lekce, než je výchozí.
 
 :::info
-Není nutné přizpůsobovat každou lekci. Pokud obsah vyhovuje vaší třídě tak, jak je, tento krok můžete přeskočit a rovnou přejít k [prezentování](../presenting/index.md).
+Není nutné přizpůsobovat každou lekci. Pokud obsah ve vaší třídě funguje tak, jak je, tento krok můžete přeskočit a rovnou přejít k [prezentování](../presenting/index.md).
 :::

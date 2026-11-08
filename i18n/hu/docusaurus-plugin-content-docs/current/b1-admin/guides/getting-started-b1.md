@@ -1,107 +1,107 @@
 ---
-title: "Útmutató: Egyházad elindítása a B1-gyel"
-description: "Új gyülekezet beállítása a B1 Admin-ban: fiók létrehozása, beállítások, szerepkörök, tagok importálása és az alapfunkciók elindítása."
+title: "Útmutató: Gyülekezete indítása a B1-gyel"
+description: "Lépésről lépésre végigvezet egy új gyülekezet beállításán a B1 Adminban: fiók létrehozása, beállítások konfigurálása, szerepkörök hozzáadása, tagok importálása és a főbb funkciók elindítása."
 ---
 
-# Egyházad elindítása a B1-gyel
+# Gyülekezete indítása a B1-gyel
 
 <div class="article-intro">
 
-Teljes bevezető útmutató új egyházaknak – a fiók létrehozásától a tagnyilvántartás importálásáig és az első funkciók beállításáig. Kövesd ezeket a lépéseket sorrendben, hogy egyházad működőképes legyen a B1-en.
+Teljes körű bevezető útmutató új gyülekezeteknek – a fiók létrehozásától a tagnyilvántartás importálásáig és az első funkciók beállításáig. Kövesse ezeket a lépéseket sorrendben, hogy gyülekezete működésbe lendüljön a B1-en.
 
 </div>
 
 <div class="prereqs">
-<h4>Mielőtt elkezdenéd</h4>
+<h4>Mielőtt elkezdené</h4>
 
-- Érvényes e-mail-cím
-- Egyházad logója és arculati anyagai (színek, képek) – ajánlott, de az induláshoz nem kötelező
+- Egy érvényes e-mail-cím
+- A gyülekezet logója és arculati elemei (színek, képek) – ajánlott, de az induláshoz nem kötelező
 
 </div>
 
 ## 1. lépés: Fiók létrehozása
 
-Regisztráld egyházadat, és te légy az első rendszergazda.
+Regisztrálja gyülekezetét, és legyen Ön az első adminisztrátor.
 
-Kövesd a [Fiók létrehozása](../../getting-started/create-account.md) útmutatót, hogy:
+Kövesse a [Fiók létrehozása](../../getting-started/create-account.md) útmutatót, hogy:
 
-1. Eljuss a b1.church oldalra, és regisztrálj az e-mail-címeddel
-2. Megerősítsd az e-mail-címedet
-3. Válaszd az „Új egyház létrehozása” lehetőséget, és add meg egyházad nevét
-4. Automatikusan Domain Admin lesz belőled, teljes hozzáféréssel mindenhez
+1. Látogasson el a b1.church oldalra, és regisztráljon az e-mail-címével
+2. Ellenőrizze e-mail-címét
+3. Válassza a „Új gyülekezet létrehozása” lehetőséget, és adja meg gyülekezete nevét
+4. Ön automatikusan a Domain Admin szerepkört kapja, teljes hozzáféréssel mindenhez
 
-## 2. lépés: Egyházi beállítások megadása
+## 2. lépés: A gyülekezet beállításainak megadása
 
-Add meg egyházad alapvető adatait és arculatát.
+Adja meg gyülekezete alapvető adatait és arculatát.
 
-Kövesd az [Egyházi beállítások](../settings/church-settings.md) útmutatót, hogy:
+Kövesse a [Gyülekezeti beállítások](../settings/church-settings.md) útmutatót, hogy:
 
-1. Megadd egyházad nevét, címét, telefonszámát és e-mail-címét
-2. Beállítsd az aldomaint (ez lesz a yourchurch.b1.church)
-3. Feltöltsd egyházad logóját és képeit
+1. Megadja gyülekezete nevét, címét, telefonszámát és e-mail-címét
+2. Beállítsa az aldomaint (ez lesz a yourchurch.b1.church)
+3. Feltöltse gyülekezete logóját és képeit
 
 :::tip
-Az aldomain megjelenik a weboldalad és az adakozási oldal címében, ezért válassz rövid és felismerhető nevet (például „grace” a Grace Community Church esetében).
+Az aldomain megjelenik a weboldala és az adománygyűjtő oldala címében, ezért válasszon rövid, könnyen felismerhető nevet (pl. „grace” a Grace Community Church esetében).
 :::
 
 ## 3. lépés: Szerepkörök beállítása és a csapat meghívása
 
-Szabályozd, ki mihez férhet hozzá, és vond be csapatodat.
+Szabályozza, ki mihez fér hozzá, és vonja be csapatát.
 
-Kövesd a [Szerepkörök és jogosultságok](../settings/roles-permissions.md) útmutatót, hogy:
+Kövesse a [Szerepkörök és jogosultságok](../settings/roles-permissions.md) útmutatót, hogy:
 
-1. Létrehozz szerepköröket a csapatodnak (például „Lelkész”, „Irodai adminisztrátor”, „Pénzügyi csapat”, „Dicsőítésvezető”)
-2. Minden szerepkörhöz konkrét jogosultságokat rendelj, hogy az emberek csak azt lássák, amire szükségük van
-3. Meghívd a csapattagokat úgy, hogy hozzáadod őket, és szerepköröket rendelsz hozzájuk
+1. Létrehozzon szerepköröket csapata számára (pl. „Lelkipásztor”, „Irodai adminisztrátor”, „Pénzügyi csapat”, „Dicsőítésvezető”)
+2. Minden szerepkörhöz külön jogosultságokat rendeljen, hogy az emberek csak a számukra szükséges dolgokat lássák
+3. Csapattagokat hívjon meg úgy, hogy hozzáadja őket, és szerepkört rendel hozzájuk
 
 :::info
-Nem kell mindent egyedül elvégezned. Hívd meg korán az irodai munkatársaidat, a lelkészeket és a szolgálatvezetőket, hogy segíthessenek saját területeik beállításában.
+Nem kell mindent egyedül elvégeznie. Hívja meg korán irodai munkatársait, lelkipásztorait és szolgálatvezetőit, hogy segíthessenek saját területük beállításában.
 :::
 
-## 4. lépés: Tagjaid importálása
+## 4. lépés: Tagjainak importálása
 
-Vidd át a meglévő tagnyilvántartásodat a B1-be.
+Vigye át a meglévő tagnyilvántartását a B1-be.
 
-Kövesd az [Adatimportálás](../people/importing-data.md) útmutatót. Két lehetőséged van:
+Kövesse az [Adatok importálása](../people/importing-data.md) útmutatót. Két lehetőség közül választhat:
 
-1. **CSV-feltöltés** – exportáld az adatokat a jelenlegi rendszeredből vagy táblázatodból, formázd CSV-formátumba, majd töltsd fel a B1-be
+1. **CSV-feltöltés** – exportálja adatait a jelenlegi rendszeréből vagy táblázatából, formázza CSV-fájllá, majd töltse fel a B1-be
 2. **Breeze-migráció** – egykattintásos importálás, amely átviszi a személyeket, fényképeket, csoportokat, adományokat és jelenléti adatokat
 
 :::tip
-Breeze-ről váltasz? Az importáló eszköz egy lépésben mindent átvisz: a személyeket, fényképeket, csoportokat, adományokat és a jelenléti előzményeket. Ez a leggyorsabb módja az indulásnak.
+Breeze-ről tér át? Az importáló eszköz egy lépésben mindent átvisz: a személyeket, fényképeket, csoportokat, adományokat és a jelenléti előzményeket. Ez a leggyorsabb módja az indulásnak.
 :::
 
 ## 5. lépés: A mobilalkalmazás beállítása
 
-Testreszabhatod a B1 Mobile alkalmazás élményét a gyülekezeted számára.
+Testreszabhatja a B1 App élményét gyülekezete számára.
 
-Kövesd a [Mobilalkalmazás beállításai](../settings/mobile-app.md) útmutatót, hogy:
+Kövesse a [Mobilalkalmazás beállításai](../settings/mobile-app.md) útmutatót, hogy:
 
-1. Testreszabd, mely fülek jelenjenek meg a B1 Mobile alkalmazásban a tagjaid számára
-2. Beállítsd a fülek nevét, ikonját és típusát (Biblia, élő közvetítés, adomány, weboldal stb.)
-3. Szabályozd, mely funkciók legyenek láthatók a gyülekezeted számára
+1. Testreszabja, mely fülek jelenjenek meg a B1 Appban a tagjai számára
+2. Beállítsa a fülek neveit, ikonjait és típusait (Biblia, élő közvetítés, adomány, weboldal stb.)
+3. Szabályozza, mely funkciók legyenek láthatók gyülekezete számára
 
-## 6. lépés: Funkciók beállításának megkezdése
+## 6. lépés: A funkciók beállításának megkezdése
 
-Most, hogy az alapok megvannak, kövesd ezeket az útmutatókat egyes funkciók beállításához:
+Most, hogy az alapok készen állnak, kövesse ezeket az útmutatókat egyes funkciók beállításához:
 
-- [Online adakozás beállítása](./online-giving.md) – adományok fogadása a weboldaladon és az alkalmazásban
-- [Egyházi weboldal indítása](./launch-website.md) – egyházi weboldalad elkészítése
-- [Kiscsoportok vezetése](./small-groups.md) – csoportok, bibliatanulmányok és szolgálatok szervezése
-- [Gyermekek bejelentkezésének beállítása](./childrens-checkin.md) – önkiszolgáló bejelentkezés a gyermekszolgálathoz
-- [Vasárnapi önkéntesek kezelése](./sunday-volunteers.md) – szolgálócsoportjaid koordinálása
-- [Igehirdetési könyvtár felépítése](./sermon-library.md) – igehirdetések online elérhetővé tétele és élő közvetítés beállítása
-- [Jelenlét követése](./track-attendance.md) – annak nyomon követése, ki jár istentiszteletekre és csoportokba
+- [Online adománygyűjtés beállítása](./online-giving.md) – adományok fogadása weboldalán és alkalmazásán keresztül
+- [Gyülekezeti weboldal indítása](./launch-website.md) – gyülekezeti weboldal készítése
+- [Kiscsoportok működtetése](./small-groups.md) – csoportok, bibliatanulmányok és szolgálatok szervezése
+- [Gyermekbejelentkezés beállítása](./childrens-checkin.md) – öntjékoztató bejelentkezés a gyermekszolgálat számára
+- [Vasárnapi önkéntesek kezelése](./sunday-volunteers.md) – szolgálati csapatok koordinálása
+- [Igehirdetés-könyvtár felépítése](./sermon-library.md) – igehirdetések online elérhetővé tétele és élő közvetítés beállítása
+- [Jelenlét nyomon követése](./track-attendance.md) – annak figyelése, ki jár istentiszteletekre és csoportokba
 
-## Készen vagy!
+## Kész is!
 
-Egyházad be van állítva a B1-en. A csapatod hozzáfér, a tagjaid importálva vannak, és készen állsz arra, hogy használd azokat a funkciókat, amelyek szolgálatodban a legfontosabbak. Az egyes területek beállításához nézd meg a fenti funkciós útmutatókat.
+Gyülekezete beállítása a B1-en elkészült. Csapata hozzáférést kapott, tagjai importálva vannak, és készen áll a szolgálata szempontjából legfontosabb funkciók használatára. Az egyes területek beállításához használja a fenti funkcióútmutatókat.
 
 ## Kapcsolódó cikkek
 
-- [Fiók létrehozása](../../getting-started/create-account.md) – fiókregisztráció
-- [Kezdeti beállítás](../../getting-started/initial-setup.md) – vezetett üdvözlő áttekintés
-- [Egyházi beállítások](../settings/church-settings.md) – egyházi adatok és arculat
+- [Fiók létrehozása](../../getting-started/create-account.md) – regisztráció
+- [Kezdeti beállítás](../../getting-started/initial-setup.md) – vezetett bevezetés áttekintése
+- [Gyülekezeti beállítások](../settings/church-settings.md) – gyülekezeti adatok és arculat
 - [Szerepkörök és jogosultságok](../settings/roles-permissions.md) – csapat hozzáférés-szabályozása
-- [Adatimportálás](../people/importing-data.md) – tömeges adatimportálás
+- [Adatok importálása](../people/importing-data.md) – tömeges adatimportálás
 - [Mobilalkalmazás beállításai](../settings/mobile-app.md) – a tagok alkalmazásának testreszabása

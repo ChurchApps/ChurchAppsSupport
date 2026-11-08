@@ -1,102 +1,105 @@
 ---
-title: "Vejledning: Byg dit prædikenbibliothek og live stream"
-description: "Importér dine YouTube- eller Vimeo-prædikener, organisér dem i playlister, og opsæt tilbagevendende livestreams med chat i B1 Admin til dit website."
+title: "Guide: Opbyg dit prædikenarkiv og din live-stream"
+description: "Importér dine YouTube- eller Vimeo-prædikener, organisér dem i afspilningslister, og opsæt tilbagevendende live-streams med chat i B1 Admin til din kirkes hjemmeside."
 ---
 
-# Byg dit prædikenbibliothek og live stream
+# Opbyg dit prædikenarkiv og din live-stream
 
 <div class="article-intro">
 
-Få dit prædikenbibliothek online og opsæt live streaming -- fra import af dit eksisterende YouTube eller Vimeo-bibliotek til planlægning af tilbagevendende live-tjenester med interaktiv chat. Til slutningen kan din menighed se tidligere prædikener og deltage i live-tjenester på dit websted og din mobilapp.
+Gør dit prædikenarkiv tilgængeligt online og opsæt live-streaming – fra import af dit eksisterende YouTube- eller Vimeo-bibliotek til planlægning af tilbagevendende live-gudstjenester med interaktiv chat. Når du er færdig, kan din menighed se tidligere prædikener og deltage i live-gudstjenester på din hjemmeside og i din mobilapp.
 
 </div>
+
+## Træningsvideo
+
+<YouTube id="b3B3A25g2Sk" title="Opbyg dit prædikenarkiv i B1" next="Opsætning af live-streaming i B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Inden du begynder</h4>
 
-- B1 Admin-konto med indholdssstyringstilladelse
-- YouTube eller Vimeo-kanal med prædikenvideoer (for import af dit arkiv)
-- YouTube Channel ID (for live streaming -- find det i dine YouTube Studio-indstillinger)
+- B1 Admin-konto med tilladelse til indholdsadministration
+- YouTube- eller Vimeo-kanal med prædikenvideoer (til import af dit arkiv)
+- YouTube-kanal-ID (til live-streaming – find det i indstillingerne for YouTube Studio)
 
 </div>
 
-## Trin 1: Opret prædikenaflaylister
+## Trin 1: Opret prædikenplaylister
 
-Afspilningslister organiserer dine prædikener i serier og samlinger for nem browsing.
+Afspilningslister organiserer dine prædikener i serier og samlinger, så de er nemme at gennemse.
 
 Følg vejledningen [Afspilningslister](../sermons/playlists.md) for at:
 
-1. Opret serier/samlinger som "2024 søndagsmeddelelser", "Ægteskabsserie", "juletjenester"
-2. Tilføj et navn, beskrivelse, publicsingsdato og miniaturebillede til hver afspilningsliste
+1. Oprette serier/samlinger som „2024 søndagsprædikener“, „Ægteskabsserien“, „Juregudstjenester“
+2. Tilføje et navn, en beskrivelse, en udgivelsesdato og et miniaturebillede til hver afspilningsliste
 
 :::tip
-Opret afspilningslister, før du tilføjer prædikener. Dette gør det lettere at organisere prædikener i den rigtige serie, når du tilføjer dem.
+Opret afspilningslister, før du tilføjer prædikener. Det gør det lettere at placere prædikenerne i de rigtige serier, når du tilføjer dem.
 :::
 
 ## Trin 2: Importér dine eksisterende prædikener
 
-Hvis du allerede har prædikenvideoer på YouTube eller Vimeo, kan du trække dem alle på engang.
+Hvis du allerede har prædikenvideoer på YouTube eller Vimeo, kan du hente dem alle på én gang.
 
-Følg vejledningen [Bulk Import](../sermons/bulk-import.md) for at:
+Følg vejledningen [Massimport](../sermons/bulk-import.md) for at:
 
-1. Angiv dit YouTube eller Vimeo-kanal-URL
-2. Forhåndsvis importen for at se, hvilke videoer der vil blive hentet
-3. Klik Importér for at tilføje dem alle på engang
+1. Indtaste din YouTube- eller Vimeo-kanals URL
+2. Se en forhåndsvisning af importen for at se, hvilke videoer der bliver hentet
+3. Klikke på Importér for at tilføje dem alle på én gang
 
-## Trin 3: Tilføj individuelle prædikener
+## Trin 3: Tilføj enkelte prædikener
 
-For en-off tilføjelser eller prædikener, der ikke er del af en bulk import, tilføj dem individuelt.
+Til enkeltstående tilføjelser eller prædikener, der ikke er en del af en massimport, kan du tilføje dem enkeltvis.
 
-Følg vejledningen [Styring af prædikener](../sermons/managing-sermons.md) for at:
+Følg vejledningen [Administration af prædikener](../sermons/managing-sermons.md) for at:
 
-1. Indsæt et videoURL (YouTube, Vimeo eller Facebook)
-2. Titel, beskrivelse, miniaturebillede og varighed autofyld fra videometadataene
-3. Tildel prædikenen til en afspilningsliste
+1. Indsætte en video-URL (YouTube, Vimeo eller Facebook)
+2. Få titel, beskrivelse, miniaturebillede og varighed udfyldt automatisk fra videoens metadata
+3. Tildele prædikenen til en afspilningsliste
 
-## Trin 4: Opsæt live streaming
+## Trin 4: Opsæt live-streaming
 
-Forbind din YouTube-kanal, så dit B1-websted automatisk henter din live stream.
+Forbind din YouTube-kanal, så din B1-hjemmeside automatisk henter din live-stream.
 
-Følg vejledningen [Live streaming](../sermons/live-streaming.md) for at:
+Følg vejledningen [Live-streaming](../sermons/live-streaming.md) for at:
 
-1. Angiv dit YouTube Channel ID i streamingindstillingerne
-2. Konfigurer din tilbagevendende serviceskema (f.eks. søndage kl. 10:00)
-3. Tilpas streamingsiden-faner: Chat, bønheanmodelser og brugerdefinerede links
-
-:::info
-Når du går live på YouTube, henter B1-streamingsiden automatisk streamen. Ingen ekstra trin på søndagens morgen.
-:::
-
-## Trin 5: Visning på dit websted
-
-Gør dit prædikenbibliothek og live stream let tilgængeligt for besøgende.
-
-Følg vejledningen [Styring af sider](../website/managing-pages.md) for at:
-
-1. Tilføj en Prædikener-sektion til dit B1-websted, så besøgende kan gennemse dit bibliotek
-2. Tilføj en Live Stream-sektion til live-visningsoplevelsen
-
-## Trin 6: Mobiladgang
-
-Medlemmer kan få adgang til prædikener og live-tjenester fra enhver enhed.
-
-1. Medlemmer kan se prædikener i [B1 Mobile-appen](../../b1-mobile/content/sermons.md) og på [B1.church](../../b1-church/content/sermons.md)
-2. Live streaming med chat og bønheanmodelser virker på begge platforme
+1. Indtaste dit YouTube-kanal-ID i streamingindstillingerne
+2. Konfigurere din tilbagevendende gudstjenesteplan (f.eks. søndage kl. 10:00)
+3. Tilpasse fanerne på streamingsiden (Chat, Bønneanmodninger og brugerdefinerede links) på siden **Prædikener > Indstillinger**
 
 :::info
-Live chat- og bønheanmodelsesfeaturerne lader din onlinemenighed deltage i realtid, ligesom at være i rummet.
+Når du går live på YouTube, henter B1-streamingsiden automatisk streamen. Der er ingen ekstra trin om søndagsmorgenen.
 :::
 
-## Du er færdig!
+## Trin 5: Vis på din hjemmeside
 
-Dit prædikenbibliothek er online og din live stream er konfigureret. Medlemmer kan få fat på tidligere prædikener anytime og deltage i live-tjenester fra hvor som helst. Nye prædiken-uploads kan synkroniseres automatisk.
+Gør dit prædikenarkiv og din live-stream nemt tilgængelige for besøgende.
+
+Følg vejledningen [Administration af sider](../website/managing-pages.md) for at:
+
+1. Tilføje en Prædikensektion til din B1-hjemmeside, så besøgende kan gennemse arkivet
+2. Tilføje en Live-stream-sektion til oplevelsen af live-visning
+
+## Trin 6: Adgang fra mobil
+
+Medlemmer kan få adgang til prædikener og live-gudstjenester fra alle enheder.
+
+1. Medlemmer kan se prædikener på [B1.church og i B1 App](../../b1-church/content/sermons.md)
+2. Live-streaming med chat fungerer lige så godt på telefoner som på computere
+
+:::info
+Live-chatfunktionen giver din online-menighed mulighed for at deltage i realtid, ligesom man var til stede i rummet.
+:::
+
+## Så er du færdig!
+
+Dit prædikenarkiv er online, og din live-stream er konfigureret. Medlemmer kan indhente tidligere prædikener når som helst og deltage i live-gudstjenester fra hvor som helst. Nye prædikenuploads kan synkroniseres automatisk.
 
 ## Relaterede artikler
 
-- [Afspilningslister](../sermons/playlists.md) -- organiser prædikener i serier
-- [Bulk Import](../sermons/bulk-import.md) -- importér fra YouTube eller Vimeo
-- [Styring af prædikener](../sermons/managing-sermons.md) -- tilføj og rediger individuelle prædikener
-- [Live streaming](../sermons/live-streaming.md) -- konfigurer live-tjenester
-- [Prædikener (Web)](../../b1-church/content/sermons.md) -- medlemmernes prædikenvisningserfaring
-- [Live streaming (Web)](../../b1-church/content/live-streaming.md) -- medlemmernes live stream-erfaring
-- [Prædikener (Mobil)](../../b1-mobile/content/sermons.md) -- prædikener på mobilappen
+- [Afspilningslister](../sermons/playlists.md) — organisér prædikener i serier
+- [Massimport](../sermons/bulk-import.md) — importér fra YouTube eller Vimeo
+- [Administration af prædikener](../sermons/managing-sermons.md) — tilføj og redigér enkelte prædikener
+- [Live-streaming](../sermons/live-streaming.md) — konfigurér live-gudstjenester
+- [Prædikener (medlemmer)](../../b1-church/content/sermons.md) — medlemmernes oplevelse af prædikener
+- [Live-streaming (medlemmer)](../../b1-church/content/live-streaming.md) — medlemmernes oplevelse af live-stream

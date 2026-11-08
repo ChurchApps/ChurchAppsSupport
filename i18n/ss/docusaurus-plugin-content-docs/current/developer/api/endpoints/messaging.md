@@ -1,36 +1,52 @@
 ---
-title: "Ema-Endpoint E-Messaging"
-description: "Incwadzi yemaendpoint e-ChurchApps messaging: tinkhulumo, imitsetfo yekufinyelela kumanothi, imiyalezo yocingo, tifomu temaimeyili, tisaziso, nemadivayisi."
+title: "Tindzawo Temilayezo"
+description: "Incwadzi yetindzawo te-API yemilayezo ye-ChurchApps: tingcoco, kufinyeleleka kwemanothi, kutfumela ma-SMS, timodeli teimeyili, tesatfiso, nemadivayisi."
 ---
 
-# Ema-Endpoint E-Messaging
+# Tindzawo Temilayezo
 
 <div class="article-intro">
 
-I-module ye-Messaging iphatsa tinkhulumo tesikhatsi lesiphila, imilayeto ye-chat, tatiso letiphushiwe, kuletfulwa kwe-SMS/imeyili, kuxhumana kwe-WebSocket, imilayeto lengasese, kubhaliswa kwemadivayisi, kanye nabaniketi bekutfumela imiyalo. Iniketa lulwandle lwekukhulumisana losetjentiswa kuwo wonkhe ema-app e-ChurchApps kokubili kwe-chat yekusakaza lokuphila kanye netatiso letingakahambisani.
+Module yemilayezo ilawula tingcoco letisheshako, imilayezo yencoco, tesatfiso, kulethwa kwe-SMS/imeyili, kuxhumana nge-WebSocket, imilayezo yangasese, kubhalisa madivayisi, nemahhovisi etitfumelo temabhalasi. Inika umtsetfo wekuxhumana losetjentiswa kuyo yonkhe imitsetfo yeChurchApps, kokubili kusakaza lokuphilako kwencoco kanye nesatfiso lesingasiyo lesikhatsi.
 
 </div>
 
-**Umkhondvo Losisekelo:** `/messaging`
+**Indzawo yekucala:** `/messaging`
 
-## Tinkhulumo
+## Tingcoco
 
-Umkhondvo losisekelo: `/messaging/conversations`
+Indzawo yekucala: `/messaging/conversations`
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Layisha tinkhulumo nge-ID letihlukaniswe ngekhoma kanye nemilayeto yekucala/yekugcina |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Layisha tinkhulumo tekucuketfwe netimilayeto letihlukaniswe ngemakhasi (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Tfola tinkhulumo tesimo se-post temacembu emsebentisi wanyalo |
-| GET | `/posts/group/:groupId` | JWT | — | Tfola tinkhulumo tesimo se-post telicembu lelitsite |
-| GET | `/current/:churchId/:contentType/:contentId` | Ngeyeveleni | — | Tfola nobe wakhe inkhulumo yanyalo yekucuketfwe (izisombulula i-contentId ngekutentekela) |
-| GET | `/:churchId/:contentType/:contentId` | Ngeyeveleni | — | Layisha tinkhulumo nge-luhlobo lwekucuketfwe kanye ne-ID |
-| GET | `/:churchId/:id` | Ngeyeveleni | — | Layisha inkhulumo linye nge-ID |
-| POST | `/` | JWT | — | Akha nobe buyeketa tinkhulumo (batch) |
-| POST | `/start` | JWT | — | Cala inkhulumo lensha ngeliphimbo lemcijana lekucala |
-| DELETE | `/:churchId/:id` | JWT | — | Sula inkhulumo |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/timeline/ids?ids=` | JWT | — | Layisha tingcoco ngema-ID lahlukaniswe ngekhoma, nemilayezo yekucala nelokugcina |
+| GET | `/messages/:contentType/:contentId` | JWT | — | Layisha tingcoco talokuqukethwe nemilayezo lehlukaniswe emakhasini (`?page=&limit=`) |
+| GET | `/posts` | JWT | — | Tfola tingcoco letinhlobo le-post temaqembu emsebenti wamanje |
+| GET | `/posts/group/:groupId` | JWT | — | Tfola tingcoco letinhlobo le-post temqembu locacile |
+| GET | `/notes/feed?section=&limit=&before=` | JWT | — | Manothi lamasha kuwo wonkhe emarekhodi wekhasi lemanothi le-B1 Admin. `section` ibe ngu-`people`, `groups`, `events` noma `workflows` (400 uma kungenjalo); `limit` ibe ngu-25 ngekuzenzekelako (lingu-100 kakhulu); `before` ngumcelo wekhasi langaphambili. Lincwadzi ngalinye lisadlula emtsetfweni wohlobo lwalo (imvume ye-People Edit / manothi lamfihlekile, bahholi bemqembu, labobona emicimbini, labobona emakhadi emsebenti), ngako bantfu bayabona kuphela manothi labangawavula. Umbhalo wemanothi unciphiswa ku-300 wemanani
+| GET | `/current/:churchId/:contentType/:contentId` | Public | — | Tfola noma yakha ingcoco yamanje yalokuqukethwe (ivula contentId ngekuzenzekelako) |
+| GET | `/:churchId/:contentType/:contentId` | Public | — | Layisha tingcoco ngohlobo lwalokuqukethwe nangeID |
+| GET | `/:churchId/:id` | Public | — | Layisha ingcoco yinye ngeID |
+| POST | `/` | JWT | — | Yakha noma uvuselele tingcoco (ngekwenhlanganisela) |
+| POST | `/start` | JWT | — | Qala ingcoco lensha nemlayezo wekucala wekuphawula |
+| DELETE | `/:churchId/:id` | JWT | — | Susa ingcoco |
 
-### Sibonelo: Cala Inkhulumo
+### Kuvikeleka kwemanothi omuntfu
+
+Tingcoco letinohlobo `contentType: "person"` (ithebhu yeManothi ekurekhodeni komuntfu) noma `contentType: "personConfidential"` (sigaba seManothi Lamfihlekile) bavikelekile kuyo yonkhe indlela yekufunda nekubhala, kubandzakanya nendlela letitsite letingenhla, letibuyisa `401` kulolohlobo lwalokuqukethwe. `person` idinga imvume ye-MembershipApi **People / Edit**; `personConfidential` idinga **People / View Confidential Notes**. Ngemakhiyi e-API anemikhawulo, `people:write` ihlanganisa tonkhe letimbili letenzo (umsebenti wemakhiyi kumelwe ube nemvume yendzima yendzima ngaphansi kwaleyo).
+
+### Kuvikeleka kwemanothi emaqembu nemicimbi {#group-and-event-notes-access-control}
+
+Kunetinhlobo letimbili letengetiwe temanothi, avikelekile ngendlela lefanako kuyo yonkhe indlela yekufunda nekubhala (kubandzakanya netindlela letitsite letingenhla), futsi akucale kuvulelwa labangakwaziwa kutfumela:
+
+- **`groupNote`** (`contentId` = ID yemqembu) -- **Amanothi abaholi** esikhatsini semqembu. Bahholi balelo qembu (`leaderGroupIds` ku-JWT) kuphela abangafunda noma baphose. Ayikho imvume yetisebenti leyanikela mvume, kubandzakanya `content.edit` nemvume yetilungu temqembu.
+- **`eventNote`** (`contentId` = ID yemcimbi) -- manothi emcimbini wekhalenda. Tisebenti letinelungelo le-`content.edit` noma **Calendars / Admin** njalo bangafunda bayaphosta. Lokunye kulandzela `notesViewRole` yemcimbi (kufunda) ne-`notesPostRole` (kuphosta): `staff` (lokuzenzekelako, uma lenkhundla ingu-`null`) akavumeli muntfu lomunye, `leaders` ivumela bahholi bemqembu wemcimbi, `members` ivumela emalungu nebahholi bemqembu wemcimbi. Umcimbi longenaso `groupId` ungowetisebenti kuphela.
+
+### Kuvikeleka kwemanothi wekhadi lemsebenti
+
+Tingcoco letinohlobo `contentType: "workflowCard"` (manothi ekhadini lemsebenti, lapho `contentId` ingu-ID yemsebenti yekhadi) zifundzeka zibhalwe kuphela ngulowo longavula lelikhadi: umsebenti lonemvume ye-DoingApi **Tasks / View**, noma umuntfu noma iqembu lelikhadi lelabelwe kubo, lelakhiwe nabo, noma lelibhekisele kubo. Labanye bonkhe batfola `401` kuyo yonkhe indlela yekufunda, kubandzakanya netindlela letitsite letingenhla. Ingcoco yekhadi inamathiselwa ngalo khadi ngokwalo nge-`POST /doing/tasks/:id/conversation` (umtimba `{ "conversationId": "..." }`; ingcoco yekucala leyamanjiswa iyanqoba), lebitwa ngabahleli bekhadi nangumuntfu lelabelwe.
+
+### Sibonelo: Qala Ingcoco
 
 ```
 POST /messaging/conversations/start
@@ -59,21 +75,33 @@ Authorization: Bearer <token>
 }
 ```
 
-## Imilayeto
+## Imilayezo
 
-Umkhondvo losisekelo: `/messaging/messages`
+Indzawo yekucala: `/messaging/messages`
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/conversation/:conversationId` | JWT | — | Layisha yonkhe imilayeto yenkhulumo |
-| GET | `/catchup/:churchId/:conversationId` | Ngeyeveleni | — | Layisha yonkhe imilayeto yenkhulumo (kubamba lokwendlulile kweveleni ye-chat lesiphila) |
-| GET | `/:churchId/:id` | Ngeyeveleni | — | Layisha umlayeto linye nge-ID |
-| POST | `/` | JWT | — | Gcina imilayeto (batch). Ithumela kubuyeketwa kwesikhatsi lesiphila futsi ivusa tatiso |
-| POST | `/send` | Ngeyeveleni | — | Tfumela imilayeto (batch, yeveleni). Ithumela kubuyeketwa kwesikhatsi lesiphila nge-WebSocket futsi ivusa tatiso |
-| POST | `/setCallout` | JWT | — | (yakadzeni) Sakaza umlayeto wemcijana ngesikhatsi lesiphila. Akukho client losebentako; chat yekusakaza lokuphila ayisakhombisi ema-callout |
-| DELETE | `/:churchId/:id` | JWT | — | Sula umlayeto futsi usakaze kususwa ngesikhatsi lesiphila |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/conversation/:conversationId` | JWT | — | Layisha yonkhe imilayezo yencoco |
+| GET | `/catchup/:churchId/:conversationId` | Public | — | Layisha yonkhe imilayezo yencoco (ukulandzelela kwesikhatsi lokuphilako kwencoco ngesikhatsi sangempela) |
+| GET | `/:churchId/:id` | Public | — | Layisha umlayezo munye ngeID |
+| POST | `/` | JWT | — | Gcina imilayezo (ngekwenhlanganisela). Itfumela tibuyekezo tesikhatsi sangempela futsi ivusa tesatfiso. Kuvuselela umlayezo lokhona kudzinga kutsi ube ngumbhali walo noma ube nemvume ye-`content.edit`; umbhali logcinwe akakwazi kushintjwa |
+| POST | `/send` | Public | — | Tfumela imilayezo (ngekwenhlanganisela, ngumuntfu longavula). Itfumela tibuyekezo tesikhatsi sangempela nge-WebSocket futsi ivusa tesatfiso |
+| POST | `/setCallout` | JWT | — | (lelidzala) Sakaza umlayezo wesimemo ngesikhatsi sangempela. Akukho klayenti lelisebenta; kusakaza lokuphilako akusenti tesimemo |
+| DELETE | `/:churchId/:id` | JWT | — | Susa umlayezo futsi usakaze kususwa kwawo ngesikhatsi sangempela. Bona [Kuphathwa kwemilayezo](#message-moderation) |
 
-### Sibonelo: Tfumela Umlayeto
+### Kuphathwa kwemilayezo
+
+Kususa umlayezo kuvunyelwe kula:
+
+- umbhali womlayezo;
+- tisebenti letinemvume ye-`content.edit` (kuyo yonkhe i-church);
+- **bahholi bemaqembu**, kutingcoco lenohlobo `group` noma `groupAnnouncement` lapho `contentId` kuyi-ID yemqembu labaholako (`leaderGroupIds` ku-JWT).
+
+Tingcoco temanothi omuntfu (`person` / `personConfidential`) atikaphatfwa ngabaholi -- kusetjentiswa timvume temanothi (`people.edit`, `people.viewConfidentialNotes`) kuwo.
+
+Bahholi batfola kususa kuphela, hhayi kuhlela: kulungisa umlayezo womunye umunti kuhlala kukhawulelwe kumbhali nakutisebenti letinemvume ye-`content.edit`.
+
+### Sibonelo: Tfumela Umlayezo
 
 ```
 POST /messaging/messages/send
@@ -105,36 +133,36 @@ POST /messaging/messages/send
 ]
 ```
 
-## Imilayeto Lengasese
+## Imilayezo Yangasese
 
-Umkhondvo losisekelo: `/messaging/privatemessages`
+Indzawo yekucala: `/messaging/privatemessages`
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Layisha yonkhe imilayeto lengasese yemsebentisi wanyalo (ifaka umlayeto wekugcina wenkhulumo ngayinye, iphawula konkhe njengekufundzwe) |
-| GET | `/existing/:personId` | JWT | — | Fumana inkhulumo lengasese lesele ikhona nemuntfu lotsite |
-| GET | `/:id` | JWT | — | Layisha umlayeto longasese nge-ID (ususa satiso nangabe utfunyelwe kumsebentisi wanyalo) |
-| POST | `/` | JWT | — | Tfumela imilayeto lengasese (batch). Ivusa satiso lesiphushiwe kumemukeli |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/` | JWT | — | Layisha yonkhe imilayezo yangasese yemsebenti wamanje (ifaka umlayezo wekugcina ngencoco ngayinye, ichaza yonkhe njengeyefundzwe) |
+| GET | `/existing/:personId` | JWT | — | Funa ingcoco yangasese lekhona nemuntfu locacile |
+| GET | `/:id` | JWT | — | Layisha umlayezo wangasese ngeID (usule tesatfiso uma ukhombisela umsebenti wamanje) |
+| POST | `/` | JWT | — | Tfumela imilayezo yangasese (ngekwenhlanganisela). Ivusa tesatfiso letitfumelwa kumamukeli |
 
-## Tatiso
+## Tesatfiso
 
-Umkhondvo losisekelo: `/messaging/notifications`
+Indzawo yekucala: `/messaging/notifications`
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/unreadCount` | JWT | — | Tfola sibalo satatiso letingakafundzwa temsebentisi wanyalo |
-| GET | `/my` | JWT | — | Layisha tonkhe tatiso temsebentisi wanyalo (iphawula konkhe njengekufundzwe) |
-| GET | `/tmpEmail` | Ngeyeveleni | — | Vusa i-digest yatatiso te-imeyili langa nga langa (endpoint yekuhlola/cron) |
-| GET | `/:churchId/person/:personId` | JWT | — | Layisha tatiso temuntfu lotsite |
-| GET | `/:churchId/:id` | JWT | — | Layisha satiso nge-ID |
-| POST | `/` | JWT | — | Akha nobe buyeketa tatiso (batch) |
-| POST | `/create` | JWT | — | Akha tatiso kubantfu labanyenti. Umtimba: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Phawula tonkhe tatiso njengekufundzwe kumuntfu |
-| POST | `/sendTest` | JWT | — | Tfumela satiso sekuhlola lesiphushiwe. Umtimba: `{ personId, title }` |
-| POST | `/ping` | Ngeyeveleni | — | Akha satiso kusuka kumvuseli wangaphandle. Umtimba: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
-| DELETE | `/:churchId/:id` | JWT | — | Sula satiso |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/unreadCount` | JWT | — | Tfola inani tesatfiso letingakafundwa tsomsebenti wamanje |
+| GET | `/my` | JWT | — | Layisha tonkhe tesatfiso temsebenti wamanje (tiyachithwa tonkhe njengetifundziwe) |
+| GET | `/tmpEmail` | Public | — | Qala lisumnikwa lelusuku lwetesatfiso temeyili (indlela yokulungisa iphutsa/yecron) |
+| GET | `/:churchId/person/:personId` | JWT | — | Layisha tesatfiso temuntfu locacile |
+| GET | `/:churchId/:id` | JWT | — | Layisha satfiso ngeID |
+| POST | `/` | JWT | — | Yakha noma uvuselele tesatfiso (ngekwenhlanganisela) |
+| POST | `/create` | JWT | — | Yakha tesatfiso tebantfu labanyenti. Umtimba: `{ peopleIds, contentType, contentId, message, link }` |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Chaza tonkhe tesatfiso temuntfu njengetifundziwe |
+| POST | `/sendTest` | JWT | — | Tfumela satfiso sekuhlola sokusindza. Umtimba: `{ personId, title }` |
+| POST | `/ping` | Public | — | Yakha satfiso kusuka kulesibangako sangaphandle. Umtimba: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
+| DELETE | `/:churchId/:id` | JWT | — | Susa satfiso |
 
-### Sibonelo: Akha Tatiso
+### Sibonelo: Yakha Tesatfiso
 
 ```
 POST /messaging/notifications/create
@@ -149,48 +177,47 @@ Authorization: Bearer <token>
 }
 ```
 
-## Tikhetselo Tatatiso
+## Tikhetho Tetesatfiso
 
-Umkhondvo losisekelo: `/messaging/notificationpreferences`
+Indzawo yekucala: `/messaging/notificationpreferences`
 
-Yandzisa i-CRUD levamile. I-base class iniketa i-POST `/` (akha nobe buyeketa, akukho mvumo ledzingekako).
-
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | Akha nobe buyeketa tikhetselo tatatiso (kusuka ku-CRUD base class) |
-| GET | `/my` | JWT | — | Layisha tikhetselo tatatiso temsebentisi wanyalo (izenzakalelisa lokwentiwa ngekwentiwa nangabe kute lokukhona) |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/categories` | JWT | — | Lolota tigaba tetesatfiso netindlela letingenteka netetivamelekile ngekuzenzekelako |
+| GET | `/my` | JWT | — | Layisha tikhetho tetesatfiso temsebenti wamanje (ayidala tikhetho letivamelekile uma ngabe tingekho) |
+| POST | `/` | JWT | — | Gcina tikhetho temsebenti wamanje. Umtimba: nanoma yiliphi lelitsi `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, kanye ne-`overrides: [{ categoryKey, channel, optedIn }]` lekhetheni (`channel` ingaba `push`, `email`, `in_app`, noma `sms`; tigaba letikhiyiwe atihlolwa). `allowSms` ngukuvuma kwelilunga kwetesikhumbuzo temyalezo-mfushane. Umtimba lowakhiwe ngemigca lowakhiwe ngendlela lendala uyemukelwa njalo |
 
 ## Kuxhumana
 
-Umkhondvo losisekelo: `/messaging/connections`
+Indzawo yekucala: `/messaging/connections`
 
-Iphatsa kuxhumana kwe-WebSocket/sikhatsi lesiphila kwe-chat, tinkhulumo temacembu, imilayeto lengasese, kanye nekusakaza lokuphila. Buka [Real-time Architecture](../../realtime.md) kuprotocol lephelele.
+Iphatha tuxhumano te-WebSocket/lwesikhatsi sangempela setingcoco, tingcoco temaqembu, timiyalezo yangasese, nekusakaza lokuphilako. Bona [Kwakheka kwesikhatsi sangempela](../../realtime.md) ngemtsetfo wonkhe wekuxhumana.
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/:churchId/:conversationId` | Ngeyeveleni | — | Layisha konkhe kuxhumana kwenkhulumo |
-| POST | `/` | Ngeyeveleni | — | Bhalisa kuxhumana (batch). Ivusa kusakaza kwekubakhona enkhulumeni. Titfo temtimba: `{ churchId, conversationId, socketId, displayName?, personId? }` |
-| POST | `/setName` | Ngeyeveleni | — | Buyeketa ligama lekukhombisa lekuxhumana nge-socket ID. Umtimba: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Ngeyeveleni | — | Wisa kuxhumana enkhulumeni. Ivusa kusakaza kwekubakhona |
-| POST | `/tmpSendAlert` | Ngeyeveleni | — | Tfumela satiso semcijana kukuxhumana komuntfu. Umtimba: `{ churchId, personId }` |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/:churchId/:conversationId` | Public | — | Layisha tonkhe tuxhumano tencoco |
+| POST | `/` | Public | — | Bhalisa tuxhumano (ngekwenhlanganisela). Iyavusa kusakazwa kwekutfola ekhasini lencoco. Tintfo temtimba: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/setName` | Public | — | Vuselela ligama lekuboniswa kuxhumano ngesimo se-socket. Umtimba: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Public | — | Susa uxhumano kusuka encocweni. Iyavusa kusakazwa kwekutfola ekhasini |
+| POST | `/tmpSendAlert` | Public | — | Tfumela sexwayiso sesatfiso kutuxhumano temuntfu. Umtimba: `{ churchId, personId }` |
 
-## Emadivayisi
+## Madivayisi
 
-Umkhondvo losisekelo: `/messaging/devices`
+Indzawo yekucala: `/messaging/devices`
 
-Iphatsa kubhaliswa kwemadivayisi tatiso letiphushiwe kanye nekuhlanganiswa kwekucuketfwe (sibonelo, i-app ye-Lessons kuma-TV screen).
+Iphatha kubhalisa madivayisi etesatfiso netekuhlanganisa emaconthi (njengohlelo lwe-Lessons ekhompyutha yeTV).
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| POST | `/enroll` | JWT | — | Bhalisa nobe buyeketa idivayisi (kubhaliswa kwe-push yaseluleni). Ilingane nge-FCM token nobe device ID |
-| POST | `/enrollAnon` | Ngeyeveleni | — | Bhalisa idivayisi lengaziwa futsi ukhicite khodi yekuhlanganisa lenetinhlamvu leti-4 |
-| POST | `/` | Ngeyeveleni | — | Gcina emadivayisi (batch) |
-| GET | `/pair/:pairingCode` | JWT | — | Hlanganisa idivayisi nge-khodi yayo yekuhlanganisa. `?contentType=&contentId=` kungakhetsi kwabela kucuketfwe |
-| GET | `/status/:deviceId` | Ngeyeveleni | — | Hlola simo sekuhlanganiswa kwedivayisi |
-| GET | `/:churchId` | JWT | — | Layisha onkhe emadivayisi elibandla |
-| GET | `/:churchId/person/:personId` | JWT | — | Layisha onkhe emadivayisi emuntfu |
-| GET | `/:churchId/:id` | JWT | — | Layisha idivayisi nge-ID |
-| DELETE | `/:churchId/:id` | JWT | — | Sula idivayisi |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| POST | `/enroll` | JWT | — | Bhalisa noma uvuselele idivayisi (kubhalisa kwesatfiso sefoni). Iyafanisa ngethokheni ye-FCM noma nge-ID yedivayisi |
+| POST | `/enrollAnon` | Public | — | Bhalisa idivayisi engaziwa futsi yakhe likhodi lekuhlanganisa lelinemagama ali-4 |
+| POST | `/` | Public | — | Gcina emadivayisi (ngekwenhlanganisela) |
+| GET | `/pair/:pairingCode` | JWT | — | Hlanganisa idivayisi ngelikhodi lekuhlanganisa. `?contentType=&contentId=` lokukhetfwako kunikela lokuqukethwe |
+| GET | `/status/:deviceId` | Public | — | Hlola simo sekuhlanganiswa kwedivayisi |
+| GET | `/:churchId` | JWT | — | Layisha tonkhe tidivayisi te-church |
+| GET | `/:churchId/person/:personId` | JWT | — | Layisha tonkhe tidivayisi temuntfu |
+| GET | `/:churchId/:id` | JWT | — | Layisha idivayisi ngeID |
+| DELETE | `/:churchId/:id` | JWT | — | Susa idivayisi |
 
 ### Sibonelo: Bhalisa Idivayisi
 
@@ -200,7 +227,7 @@ Authorization: Bearer <token>
 
 {
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "deviceInfo": "iOS 17, iPhone 15"
 }
@@ -211,43 +238,46 @@ Authorization: Bearer <token>
   "id": "device-001",
   "churchId": "church-789",
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "registrationDate": "2026-02-17T10:00:00.000Z",
   "lastActiveDate": "2026-02-17T10:00:00.000Z"
 }
 ```
 
-## Kucuketfwe Kwemadivayisi
+## Emaconthi Emadivayisi
 
-Umkhondvo losisekelo: `/messaging/devicecontents`
+Indzawo yekucala: `/messaging/devicecontents`
 
-Iphatsa kwabelwa kwekucuketfwe kumadivayisi lahlanganisiwe (sibonelo, kutsi yisiphi sifundvo lesikhonjiswa ku-TV).
+Iphatha tibelethelo tekuqukethwe kumadivayisi ahlanganisiwe (njengokuthi ngabe yiphi Lesson ibonakala kutelevishini).
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/deviceId/:deviceId` | JWT | — | Layisha kwabelwa kwekucuketfwe kwedivayisi |
-| POST | `/` | JWT | — | Gcina kwabelwa kwekucuketfwe kwemadivayisi (batch) |
-| DELETE | `/:id` | JWT | — | Sula kwabelwa kwekucuketfwe kwedivayisi |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/deviceId/:deviceId` | JWT | — | Layisha tibelethelo tekuqukethwe kwedivayisi |
+| POST | `/` | JWT | — | Gcina tibelethelo tekuqukethwe kwedivayisi (ngekwenhlanganisela) |
+| DELETE | `/:id` | JWT | — | Susa lesibelethelo sekuqukethwe kwedivayisi |
 
-## Kutfumela Imiyalo (Texting)
+## Kutfumela Ma-SMS
 
-Umkhondvo losisekelo: `/messaging/texting`
+Indzawo yekucala: `/messaging/texting`
 
-Iphatsa baniketi be-SMS, kutfumela imiyalo yelicembu, kanye nekulandzelela kuletfulwa.
+Iphatha emahhovisi etitfumelo te-SMS, kutfumela kumaqembu, nekulandzela kulethwa.
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/providers` | JWT | — | Layisha baniketi bekutfumela imiyalo belibandla (ema-credential afihliwe) |
-| GET | `/preview/:groupId` | JWT | — | Bukela ngaphambili bemukeli belicembu (sibalo lesikahle, lesitephulile, lesingenaselula) |
-| GET | `/sent` | JWT | — | Layisha yonkhe imibhalo yemiyalo letfunyelwe yelibandla |
-| GET | `/sent/:id/details` | JWT | — | Layisha umyalo lotfunyelwe kanye nemibhalo yekuletfulwa yemukeli ngamunye |
-| POST | `/providers` | JWT | — | Gcina baniketi bekutfumela imiyalo (batch). Ifihla ema-credential e-API |
-| POST | `/send` | JWT | — | Tfumela i-SMS kuwo onkhe emalunga lakufaneleko elicembu. Umtimba: `{ groupId, message }` |
-| POST | `/sendPerson` | JWT | — | Tfumela i-SMS kumuntfu munye. Umtimba: `{ personId, phoneNumber, message }` |
-| DELETE | `/providers/:id` | JWT | — | Sula umniketi wekutfumela imiyalo |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/providers` | JWT | — | Layisha emahhovisi etitfumelo te-church (tigunya tifihlwe) |
+| GET | `/status` | JWT | — | `{ enabled }` -- kutsi i-church ine-hhovisi lelisebentako letitfumelo. Nanoma ngubani lovele ungenile ku-church; isetjentiswa kukhombisa tikhetho te-**Text** kuphela lapho kungatfunyelwa temyalezo |
+| GET | `/inboundUrl` | JWT | `texting.send` noma `settings.edit` | `{ url }` -- ikheli le-webhook lekufika (STOP) le-church lokufanele likhiphelwe kuhhovisi letitfumelo |
+| POST | `/inbound/:churchId/:token` | Public | — | Webhook yemilayezo lefika kuhhovisi letitfumelo. `token` ingu-HMAC ye-ID ye-church. Impendulo lefanana kahle namagamaokumisa (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) imaka bonkhe labafanako njenge-`optedOut` futsi icima i-`allowSms` yabo. Ibuyisa `{ optedOut: <count> }`; ezinye timpendulo zibuyisa `{ optedOut: 0 }` |
+| GET | `/preview/:groupId` | JWT | — | Bukela ngaphambili labemukelako lemyalezo yeqembu (labafanelekile, labaphumile, nemanani labangenayo ifoni) |
+| GET | `/sent` | JWT | — | Layisha tonkhe timrekhodi temyalezo-mfushane letitfumeleke ye-church |
+| GET | `/sent/:id/details` | JWT | — | Layisha umyalezo-mfushane lothunyelwe nemarekhodi ekulethwa ngemunye umuntfu |
+| POST | `/providers` | JWT | — | Gcina emahhovisi etitfumelo (ngekwenhlanganisela). Ifihla tigunya te-API |
+| POST | `/send` | JWT | — | Tfumela i-SMS kubo bonkhe labafanelekile emalungwini eqembu. Umtimba: `{ groupId, message }`. Tinkhundla letihlanganisiwe (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) ayatfolakala ngemuntfu ngamunye |
+| POST | `/sendPerson` | JWT | — | Tfumela i-SMS kumuntfu munye. Umtimba: `{ personId, phoneNumber, message }`. Tinkhundla letihlanganisiwe ayatfolakala, futsi umbhalo lolungisiwe yilowo lolotfusha |
+| DELETE | `/providers/:id` | JWT | — | Susa lihhovisi letitfumelo |
 
-### Sibonelo: Tfumela Umyalo Welicembu
+### Sibonelo: Tfumela Umyalezo Weqembu
 
 ```
 POST /messaging/texting/send
@@ -270,22 +300,24 @@ Authorization: Bearer <token>
 }
 ```
 
-## Ema-Template E-Imeyili
+## Timodeli Teimeyili
 
-Umkhondvo losisekelo: `/messaging/emailTemplates`
+Indzawo yekucala: `/messaging/emailTemplates`
 
-Iphatsa ema-template e-imeyili lasetjentiswa kaningi kanye nekutfumela imeyili letakhiwe ngale-template kumacembu.
+Iphatha timodeli teimeyili letisetjentiswa njalo nekutfumela imeyili yetimodeli emaqembini.
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/` | JWT | — | Layisha onkhe ema-template e-imeyili elibandla |
-| GET | `/:id` | JWT | — | Layisha template linye nge-ID |
-| GET | `/preview/:groupId` | JWT | — | Bukela ngaphambili kuletfulwa kwe-imeyili yelicembu (sibalo lemukeli lokahle, emalunga langenayo imeyili) |
-| POST | `/` | JWT | — | Akha nobe buyeketa ema-template e-imeyili (batch) |
-| POST | `/send` | JWT | — | Tfumela i-imeyili letakhiwe ngale-template kuwo onkhe emalunga elicembu. Umtimba: `{ groupId, subject, htmlContent }` |
-| DELETE | `/:id` | JWT | — | Sula template ye-imeyili |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/` | JWT | — | Layisha tonkhe timodeli teimeyili te-church |
+| GET | `/:id` | JWT | — | Layisha timodeli teimeyili ngeID |
+| GET | `/sendStatus` | JWT | `groupMembers.edit` noma `tasks.admin` | Simo semeyili yeqembu ye-church: `{ approved, paused, remaining, requested }`. Ingxoxo ye-B1Admin ye-Send Email nesenzo se-workflow **Send email**iyasisebenzisa kwexwayisa uma imeyili ingeke iphume |
+| POST | `/requestApproval` | JWT | `groupMembers.edit` | Cela kusekela ukuba i-churchivunywe ngemeyili yeqembu (kanye nje ngeviki ngayinye nge-church) |
+| GET | `/preview/:groupId` | JWT | — | Bukela ngaphambili kulethwa kwemeyili yeqembu (inani labemukelako labafanelekile, emalungu langenayo imeyili) |
+| POST | `/` | JWT | — | Yakha noma uvuselele timodeli teimeyili (ngekwenhlanganisela) |
+| POST | `/send` | JWT | — | Tfumela imeyili yetimodeli kubo bonkhe emalungwini eqembu. Umtimba: `{ groupId, subject, htmlContent }` |
+| DELETE | `/:id` | JWT | — | Susa timodeli teimeyili |
 
-### Sibonelo: Tfumela Imeyili Kulicembu
+### Sibonelo: Tfumela Imeyili Kuliqembu
 
 ```
 POST /messaging/emailTemplates/send
@@ -293,8 +325,8 @@ Authorization: Bearer <token>
 
 {
   "groupId": "group-123",
-  "subject": "This Week's Update - `{{churchName}}`",
-  "htmlContent": "<p>Hello `{{firstName}}`,</p><p>Here's what's happening this week...</p>"
+  "subject": "This Week's Update - {{churchName}}",
+  "htmlContent": "<p>Hello {{firstName}},</p><p>Here's what's happening this week...</p>"
 }
 ```
 
@@ -308,37 +340,37 @@ Authorization: Bearer <token>
 }
 ```
 
-**Emabalisi Lasesekelwe Ekuhlanganisweni:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
+**Emasimu lasekelwako:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
-## Ema-IP Lavinjelwe
+## Ma-IP Avinjiwe
 
-Umkhondvo losisekelo: `/messaging/blockedips`
+Indzawo yekucala: `/messaging/blockedips`
 
-(yakadzeni) Kuvimbela ema-IP kuchat yekusakaza lokuphila. I-client ye-B1App ayisayibiti i-`POST /` — kuvimbela ema-IP kususiwe ku-migration yekuletfulwa lokuhlangene. Umkhondvo we-`/clear` usabitwa ku-server nge-`StreamingServiceController` nangabe ema-service ekusakaza agciniwe.
+(lelidzala) Kuvinjelwa kwe-IP kwekuxoxa lokuphilako. Iklayenti le-B1App ayisasebentisi `POST /` -- kuvinjelwa kwe-IP kwasuswa ekutfutfukisweni kwekulethwa kwemanje. Indlela `/clear` isabitwa ngumsebenti-kuya-msebenti yi-`StreamingServiceController` lapho tinsita letisakazwa setigciniwe.
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| POST | `/` | JWT | — | (yakadzeni) Gcina ema-IP lavinjelwe (batch). Akukho client losebentako |
-| POST | `/clear` | JWT | — | Sula onkhe ema-IP lavinjelwe kuma-service lakhetsekile. Umtimba: `[{ serviceId, churchId }]` |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| POST | `/` | JWT | — | (lelidzala) Gcina ma-IP avinjiwe (ngekwenhlanganisela). Akukho klayenti lelisebentako |
+| POST | `/clear` | JWT | — | Susa tonkhe ma-IP avinjiwe kutinsita letitsite. Umtimba: `[{ serviceId, churchId }]` |
 
-## Emabhalo Ekuletfulwa
+## Emarekhodi Ekulethwa
 
-Umkhondvo losisekelo: `/messaging/deliverylogs`
+Indzawo yekucala: `/messaging/deliverylogs`
 
-Ilandzelela simo sekuletfulwa kwemilayeto letfunyelwe (SMS, tatiso letiphushiwe, imeyili).
+Ilandzela simo sekulethwa kwemilayezo lethunyeleweko (SMS, tesatfiso tefoni, imeyili).
 
-| Inchubo | Umkhondvo | Kutivakalisa | Imvumo | Incazelo |
-|--------|------|------|------------|-------------|
-| GET | `/content/:contentType/:contentId` | JWT | — | Layisha emabhalo ekuletfulwa nge-luhlobo lwekucuketfwe kanye ne-ID |
-| GET | `/person/:personId` | JWT | — | Layisha emabhalo ekuletfulwa emuntfu. `?startDate=&endDate=` kungakhetsi kucenga |
-| GET | `/recent` | JWT | — | Layisha emabhalo ekuletfulwa lasandza elibandla. `?limit=` kungakhetsi (ngekwentiwa ngu-100) |
-| GET | `/:id` | JWT | — | Layisha umbhalo wekuletfulwa nge-ID |
+| Method | Path | Auth | Permission | Incazelo |
+|--------|------|------|------------|----------|
+| GET | `/content/:contentType/:contentId` | JWT | — | Layisha emarekhodi ekulethwa ngohlobo lwalokuqukethwe nangeID |
+| GET | `/person/:personId` | JWT | — | Layisha emarekhodi ekulethwa somuntfu. `?startDate=&endDate=` lokukhetfwako kuyawahlunga |
+| GET | `/recent` | JWT | — | Layisha emarekhodi ekulethwa lamasha ye-church. `?limit=` lokukhetfwako (ivamile ingu-100) |
+| GET | `/:id` | JWT | — | Layisha irekhodi lekulethwa ngeID |
 
 ## Emakhasi Lahlobene
 
-- [Real-time Architecture](../../realtime.md) -- Protocol ye-WebSocket, kubhaliswa kwemakamelo, kanye nesifanekiso lesihlangene sekuletfulwa
-- [Web Push Notifications](../../web-push.md) -- Kubhaliswa kwe-push yewebhu kanye nekuletfulwa
-- [Membership Endpoints](./membership.md) -- Bantfu, emacembu, ema-role, kanye nebunikati basisekelo
-- [Attendance Endpoints](./attendance.md) -- Kulandzelela service kanye nekuvakasha
-- [Authentication & Permissions](./authentication.md) -- Inchubo yekungena, JWT, OAuth, sifanekiso semvumo
-- [Module Structure](../module-structure.md) -- Sifanekiso sekuhlelwa kwekhodi
+- [Kwakheka kwesikhatsi sangempela](../../realtime.md) -- protokholi ye-WebSocket, kubhalisa emakamelo, nendlela yekulethwa ehlanganisiwe
+- [Tesatfiso temawebhu](../../web-push.md) -- kubhalisa nekulethwa kwetesatfiso kusiphequluli
+- [Tindzawo Temalungu](./membership.md) -- Bantfu, emaqembu, tindzima, nekuzazisa okusisekelo
+- [Tindzawo Tekubonakala](./attendance.md) -- Kulandzela tinsita nemavakashi
+- [Kugunyaza nemvume](./authentication.md) -- Inkqubo yekungena, JWT, OAuth, nemodeli yemvume
+- [Sakhiwo se-module](../module-structure.md) -- Tindlela tekuhlela ikhodi

@@ -1,84 +1,93 @@
 ---
-title: "Urejanje profila v portalu članov B1.church"
-sidebar_label: "Uređivanje vašeg profila"
-description: "V portalu članov B1.church posodobite svoje kontaktne podatke, člane gospodinjstva, e-poštni naslov za prijavo, geslo in nastavitve zasebnosti."
+title: "Urejanje vašega profila v portalu članov B1.church"
+sidebar_label: "Urejanje vašega profila"
+description: "Posodobite svoje kontaktne podatke, člane gospodinjstva, e-poštni naslov za prijavo in geslo ter nastavitve zasebnosti v portalu članov B1.church."
 ---
 
-# Uređivanje vašeg profila
+# Urejanje vašega profila
 
 <div class="article-intro">
 
-Stranica vašeg profila u portalu za članove omogućuje vam ažuriranje kontaktnih podataka, upravljanje domaćinstvom, promjenu e-adrese i lozinke za račun te kontrolu toga tko može vidjeti vašu adresu, broj telefona i e-adresu.
+Stran s profilom v portalu članov vam omogoča, da posodobite svoje kontaktne podatke, upravljate svoje gospodinjstvo, spremenite e-poštni naslov računa in geslo ter nadzorujete, kdo lahko vidi vaš naslov, telefonsko številko in e-poštni naslov.
 
 </div>
 
-## Videozapis o obuci
+## Video za usposabljanje
 
-<YouTube id="SKqr2A_jdRQ" title="Ažuriranje vašeg profila i obavijesti" next="Pridruživanje grupi i razgovor u njoj" nextUrl="/docs/b1-church/groups/browsing-groups" />
+<YouTube id="SKqr2A_jdRQ" title="Posodabljanje vašega profila in obvestil" next="Joining a Group and Chatting With It" nextUrl="/docs/b1-church/groups/browsing-groups" />
 
 <div class="prereqs">
-<h4>Prije početka</h4>
+<h4>Preden začnete</h4>
 
-- Morate biti [prijavljeni](./logging-in.md) — uređivanje profila zahtijeva račun
+- Prijavljeni morate biti [v sistem](./logging-in.md) — urejanje profila zahteva račun
 
 </div>
 
-## Otvaranje vašeg profila
+## Odpiranje vašega profila
 
-Dodirnite fotografiju profila u gornjoj traci aplikacije ili dodirnite **Uredi profil** na vrhu stranice **Više** ili na vašoj [stranici Ja](./me-page.md) kako biste otvorili **Vaš profil** na `/mobile/profileEdit`. Stranica se sastoji od jednog niza odjeljaka -- **Fotografija i ime**, **Kontakt**, **Domaćinstvo**, **Račun** i **Privatnost** -- od kojih svaki prikazuje vaše trenutačne podatke s poveznicom **Uredi** (ili **Dodaj člana obitelji** / **Promijeni**) koja otvara panel u kojem unosite izmjene.
+Tapnite svojo fotografijo profila v zgornji orodni vrstici ali tapnite **Uredi profil** na vrhu strani **Več** ali na vaši [strani Me](./me-page.md), da odprete **Vaš profil** na `/mobile/profileEdit`. Stran je en sam list z razdelki -- **Fotografija in ime**, **Stik**, **Gospodinjstvo**, **Račun** in **Zasebnost**. Vsak razdelek prikazuje vaše trenutne podatke s povezavo **Uredi** (ali **Dodaj družinskega člana** / **Spremeni**), ki odpre okno, kjer naredite spremembe.
 
-## Fotografija i ime te kontakt
+## Fotografija, ime in stik
 
-Ti odjeljci sadrže podatke koje vaša crkva vidi na vašem zapisu osobe:
+Ti razdelki vsebujejo podatke, ki jih vaša cerkev vidi na vašem zapisu osebe:
 
-- **Fotografija i ime** — dodirnite **Promijeni fotografiju** kako biste prenijeli novu sliku te uredili ime, srednje ime i prezime.
-- **Kontakt** — e-adresa, broj mobilnog telefona, broj kućnog telefona, broj poslovnog telefona, datum rođenja i vaša adresa (ulica, grad, država i poštanski broj). Ako uključite tekstualne podsjetnike u [Postavkama obavijesti](./notification-preferences.md), oni će se slati na vaš mobilni broj.
+- **Fotografija in ime** — tapnite **Spremeni fotografijo**, da naložite novo sliko, in uredite svoj **Naziv**, ime, srednje ime in priimek. Za **Naziv** izberite predlog (Mr, Mrs, Miss, Ms, Dr, Prof, Rev ali Pastor) ali vnesite svojega, do 10 znakov.
+- **Stik** — e-pošta, mobilni telefon, domači telefon, službeni telefon, datum rojstva in vaš naslov (ulica, mesto, regija in poštna številka). Če v [nastavitvah obvestil](./notification-preferences.md) vklopite opomnike po SMS-u, bodo poslani na vašo mobilno številko.
 
-Unesite izmjene u panelu i dodirnite **Spremi promjene**.
+Spremembe naredite v oknu in tapnite **Shrani spremembe**.
 
 :::info
-Ako vaša crkva zahtijeva odobrenje za izmjene u imeniku, stranica će prikazati poruku „Promjene vašeg profila idu crkvenom osoblju na odobrenje.” a gumb će glasiti **Pošalji na odobrenje** -- vaše izmjene šalju se kao zahtjev umjesto da se odmah primjenjuju. Pogledajte [Odobravanje izmjena profila](/docs/b1-admin/profile/approving-profile-changes) za informacije o tome kako vaša crkva pregledava te izmjene.
+Če vaša cerkev zahteva odobritev sprememb v imeniku, stran prikaže sporočilo „Spremembe vašega profila gredo k cerkvenemu osebju v odobritev.“ in gumb se glasi **Pošlji v odobritev** -- vaše spremembe se pošljejo kot zahteva namesto takojšnjega uveljavljanja. Glejte [Odobritev sprememb profila](/docs/b1-admin/profile/approving-profile-changes), kako vaša cerkev pregleda te spremembe.
 :::
 
-## Domaćinstvo
+## Gospodinjstvo
 
-Odjeljak Domaćinstvo prikazuje ostale osobe povezane s vašim domaćinstvom, svaku s njezinom ulogom u domaćinstvu (glava domaćinstva, supružnik, dijete itd.). Dodirnite člana domaćinstva kako biste vidjeli njegove pojedinosti.
+Razdelek Gospodinjstvo prikazuje druge osebe, povezane z vašim gospodinjstvom, vsako z njihovo vlogo v gospodinjstvu (Glava, Zakonec, Otrok ipd.). Tapnite člana gospodinjstva, da si ogledate njegove podrobnosti.
 
-Da biste dodali člana obitelji koji još nije u sustavu, dodirnite **Dodaj člana obitelji**, unesite njegovo ime i dodirnite **Dodaj**. Novi članovi obitelji dodaju se na popis na čekanju i šalju se zajedno s ostalim izmjenama profila kako bi ih vaša crkva pregledala.
+Za dodajanje družinskega člana, ki še ni v sistemu:
+
+1. Tapnite **Dodaj družinskega člana**.
+2. Vnesite njegovo **Ime**. **Priimek** je na začetku izpolnjen z vašim priimkom; spremenite ga, če je njegov drugačen.
+3. Po želji dodajte njegov **Naziv** in **Mobilni telefon**.
+4. Izberite njegovo **Vlogo v gospodinjstvu**: **Glava**, **Zakonec**, **Otrok** ali **Drugo** (privzeto).
+5. Tapnite **Dodaj**. Prikazal se bo pod **Čakajoči družinski člani** z njegovo vlogo; tapnite **Odstrani**, da ga odstranite s seznama. Ponovite za vse ostale.
+6. Tapnite **Shrani spremembe** (ali **Pošlji v odobritev**).
+
+Če vaša cerkev pregleduje spremembe imenika, bodo novi družinski člani poslani skupaj z vašimi drugimi spremembami v odobritev cerkvi. Sicer bodo dodani v vaše gospodinjstvo takoj, ko shranite.
 
 ## Račun
 
-Odjeljak Račun upravlja vašom prijavom, a ne vašim profilom u crkvi. Dodirnite **Uredi** kako biste ga otvorili:
+Razdelek Račun upravlja vašo prijavo, ne pa vašega cerkvenega profila. Tapnite **Uredi**, da ga odprete:
 
-- **Prikazno ime** — ime i prezime prikazano uz vašu prijavu (odvojeno od imena na vašem profilu u crkvi).
-- **Promijeni e-adresu** — ažurirajte e-adresu koju koristite za prijavu.
-- **Promijeni lozinku** — unesite trenutačnu lozinku, a zatim novu lozinku dvaput. Nova lozinka mora imati najmanje 8 znakova.
+- **Prikazno ime** — ime in priimek, prikazano pri vaši prijavi (ločeno od imena v vašem cerkvenem profilu).
+- **Spremeni e-pošto** — posodobite e-poštni naslov, ki ga uporabljate za prijavo.
+- **Spremeni geslo** — vnesite trenutno geslo, nato novo geslo dvakrat. Novo geslo mora imeti vsaj 8 znakov.
 
-Svaki dio ima vlastiti gumb **Spremi**.
+Vsak del ima svoj gumb **Shrani**.
 
-## Privatnost
+## Zasebnost
 
-Odjeljak Privatnost prikazuje tko može vidjeti vaše kontaktne podatke u svim ChurchApps aplikacijama. Dodirnite **Promijeni** kako biste otvorili **Postavke vidljivosti**:
+Razdelek Zasebnost prikazuje, kdo lahko vidi vaše kontaktne podatke v ChurchApps. Tapnite **Spremeni**, da odprete **Nastavitve vidnosti**:
 
-- **Sakrij me iz imenika članova** — prekidač koji vas u potpunosti uklanja iz [imenika članova](../community/member-directory.md).
-- **Vidljivost adrese**, **Vidljivost telefona** i **Vidljivost e-adrese** — svaka ima vlastiti padajući izbornik, pa tako možete, primjerice, podijeliti e-adresu sa cijelom crkvom, a adresu zadržati privatnijom. Dostupne su sljedeće razine:
+- **Skrij me iz imenika članov** — stikalo, ki vas popolnoma odstrani iz [imenika članov](../community/member-directory.md).
+- **Vidnost naslova**, **Vidnost telefona** in **Vidnost e-pošte** — vsaka ima svoj spustni meni, tako da lahko na primer e-pošto delite z vso cerkvijo, naslov pa imate bolj zasebno. Možnosti so:
 
-| Razina | Tko može vidjeti |
+| Raven | Kdo lahko to vidi |
 |---|---|
-| **Svi** | Vidljivo svakome tko može pregledavati imenik. |
-| **Samo članovi** | Vidljivo ostalim prijavljenim članovima crkve. |
-| **Samo moje grupe** | Vidljivo samo članovima grupa kojima vi pripadate. |
-| **Samo moje voditelji grupa i osoblje** | Vidljivo samo crkvenom osoblju i voditeljima grupa kojima vi pripadate. |
-| **Samo osoblje** | Vidljivo samo crkvenom osoblju (osobama sa statusom članstva Osoblje ili dopuštenjem Pregled osoba). |
+| **Vsi** | Vidno vsakomur, ki lahko vidi imenik. |
+| **Samo člani** | Vidno drugim prijavljenim članom cerkve. |
+| **Samo moje skupine** | Vidno le članom skupin, katerih član ste. |
+| **Samo moji vodje skupin in osebje** | Vidno le cerkvenemu osebju in vodjem skupin, katerih član ste. |
+| **Samo osebje** | Vidno le cerkvenemu osebju (osebam s statusom članstva „Staff“ ali dovoljenjem People view). |
 
-Dodirnite **Spremi** kako biste primijenili svoje odabire. Vaša crkva postavlja zadanu vrijednost za svako od ta tri polja -- pogledajte [Postavke mobilne aplikacije](/docs/b1-admin/settings/mobile-app) -- ali ono što ovdje odaberete nadjačava tu zadanu vrijednost za vaš vlastiti zapis.
+Tapnite **Shrani**, da uveljavite svoje izbire. Vaša cerkev nastavi privzeto vrednost za vsa tri polja — glejte [Nastavitve mobilne aplikacije](/docs/b1-admin/settings/mobile-app) —, vendar kar tukaj izberete, preglasi to privzeto vrednost za vaš lastni zapis.
 
 :::tip
-Uvijek vidite svoje podatke bez obzira na ove postavke, a osoblje s dopuštenjem Pregled osoba uvijek ih također može vidjeti.
+Vedno vidite svoje podatke ne glede na te nastavitve, osebje z dovoljenjem People view pa jih lahko vedno vidi tudi.
 :::
 
-## Povezani članci
+## Sorodni članki
 
-- [Stranica Ja](./me-page.md) — Vaša osobna nadzorna ploča
-- [Imenik članova](../community/member-directory.md) — Pregledavanje ostalih članova
-- [Odobravanje izmjena profila](/docs/b1-admin/profile/approving-profile-changes) — Kako vaša crkva pregledava poslane izmjene
+- [Stran Me](./me-page.md) — Vaša osebna nadzorna plošča
+- [Imenik članov](../community/member-directory.md) — Brskanje po drugih članih
+- [Odobritev sprememb profila](/docs/b1-admin/profile/approving-profile-changes) — Kako vaša cerkev pregleda poslane spremembe

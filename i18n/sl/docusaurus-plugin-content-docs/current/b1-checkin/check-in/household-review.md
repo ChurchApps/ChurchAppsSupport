@@ -1,13 +1,13 @@
 ---
 title: "Pregled vašega gospodinjstva"
-description: "Po izbiri osebe v B1 Checkin preglejte svoje gospodinjstvo, nato za vsak čas bogoslužja dodelite skupine ter pred prijavo označite goste ali prostovoljce."
+description: "Po izbiri osebe pregledajte svoje gospodinjstvo v aplikaciji B1 Checkin ter nato dodelite skupine za vsak termin bogoslužja in označite goste ali prostovoljce pred prijavo."
 ---
 
 # Pregled vašega gospodinjstva
 
 <div class="article-intro">
 
-Ko izberete osebo iz rezultatov iskanja, aplikacija naloži vaše celotno gospodinjstvo in ga prikaže na zaslonu za pregled gospodinjstva. To je središčna točka postopka prijave, kjer lahko vidite vse člane družine in upravljate njihove dodelitve skupinam, preden se prijavite.
+Ko iz rezultatov iskanja izberete osebo, aplikacija naloži celotno vaše gospodinjstvo in ga prikaže na zaslonu za pregled gospodinjstva. To je osrednje mesto postopka prijave, kjer lahko vidite vse člane svoje družine in upravljate njihove dodelitve skupin, preden se prijavite.
 
 </div>
 
@@ -21,47 +21,48 @@ Ko izberete osebo iz rezultatov iskanja, aplikacija naloži vaše celotno gospod
 
 ## Ogled članov gospodinjstva
 
-Vsak član gospodinjstva se prikaže kot kartica z:
+Vsak član gospodinjstva je prikazan kot kartica z:
 
-- Njegovo **fotografijo** (ali ikono nadomestne slike, če fotografija ni shranjena)
-- Njegovim **prikaznim imenom**
-- **Povzetkom trenutnih dodelitev skupinam** (prikazan kot majhne značke pod imenom, ko je kartica strnjena)
-- **Puščico za razširitev/strnitev** na desni strani
+- svojo **fotografijo** (ali ikono nadomestne slike, če fotografija ni shranjena)
+- svojim **prikaznim imenom**
+- **povzetkom trenutnih dodelitev skupin** (prikazan kot majhne značke pod imenom, ko je kartica strnjena)
+- značko **Že prijavljen**, če je ta oseba že danes prijavljena na to storitev
+- **puščico za razširitev/strnitev** na desni strani
 
 ## Razširitev člana
 
-Dotaknite se kartice člana, da jo razširite. Ko je razširjena, boste videli vrstico za vsak **čas storitve** znotraj izbrane storitve, od najzgodnejšega. Časi storitev so razvrščeni po načrtovanem dnevu in začetnem času, če je nastavljen, sicer po času v njihovem imenu (tako da je „9:00 AM“ pred „10:30 AM“). Časi storitev brez časa v imenu so na koncu, po abecedi. Vsaka vrstica prikazuje:
+Tapnite kartico člana, da jo razširite. Ko je razširjena, boste videli vrstico za vsak **termin bogoslužja** znotraj izbrane storitve, od najzgodnejšega proti poznejšemu. Termini so urejeni po načrtovanem dnevu in začetnem času, če je ta nastavljen, sicer po času v njihovem imenu (tako da je „9:00 AM“ pred „10:30 AM“). Termini brez časa v imenu so na koncu, po abecedi. Vsaka vrstica prikazuje:
 
-- **Ime časa storitve** (na primer „9:00 AM“ ali „11:00 AM“)
-- **Skupine, ki so ponujene ob tem času storitve**, navedene pod imenom (na primer „Otroška soba, Predšolski, Odrasli biblijski razred“), da lahko pred izbiro vidite, kateri razredi so na voljo
-- **Gumb**, ki prikazuje trenutno dodeljeno skupino, ali „Izberi skupino“, če skupina še ni dodeljena
+- **ime termina bogoslužja** (na primer „9:00 AM“ ali „11:00 AM“)
+- **skupine, ki so na voljo** ob tem terminu, navedene pod imenom (na primer „Jaslice, Predšolski, Biblijski razred za odrasle“), da lahko pred izbiro vidite, kateri razredi so na voljo
+- **gumb**, ki prikazuje trenutno dodeljeno skupino, ali „Izberi skupino“, če skupina še ni dodeljena
 
-Če ima čas storitve [urnik prijave](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) in je njegovo časovno okno trenutno zaprto, vrstica namesto gumba prikaže **Zaprto** -- in, če obstaja, naslednji čas odprtja, na primer **Zaprto · odpre ned 9:30 AM**. Če je oseba že prijavljena na ta čas storitve, vrstica namesto tega prikaže njeno skupino s kljukico (na primer **Otroška soba 1 · Prijavljen**), da lahko vidite, kje je, tudi če je okno že zaprto.
+Če termin bogoslužja ima [urnik prijave](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) in je njegovo okno trenutno zaprto, vrstica namesto gumba prikaže **Zaprto**, pri čemer je navedeno naslednje odprtje, če obstaja, na primer **Zaprto · odpre se ned 9:30 AM**. Če je oseba že prijavljena na ta termin bogoslužja, vrstica namesto tega prikaže njeno skupino s kljukico (na primer **Soba za otroke 1 · Prijavljen**), tako da vidite, kje se nahaja, tudi če je okno že zaprto.
 
-Dotaknite se gumba skupine, da odprete [zaslon za izbiro skupine](./group-assignment.md), kjer lahko izberete ali spremenite skupino za to osebo in čas storitve.
+Tapnite gumb skupine, da odprete [zaslon za izbiro skupine](./group-assignment.md), kjer lahko izberete ali spremenite skupino za to osebo in ta termin bogoslužja.
 
-Razširjena kartica prikazuje tudi značke **Član**, **Gost** in **Prostovoljec**. Dotaknite se ene, da določite, kako se ta oseba prijavlja -- Član je privzeto. Vrsta je pomembna za otroške sobe: prostovoljci se štejejo v razmerje med prostovoljci in otroki v sobi, gostje pa se štejejo v morebitno kapaciteto za goste, ki jo je določila vaša cerkev.
+Razširjena kartica prikazuje tudi značke **Član**, **Gost** in **Prostovoljec**. Tapnite eno od njih, da nastavite, kako se ta oseba prijavlja. Član je privzeta izbira. Vrsta je pomembna za otroške sobe: prostovoljci se štejejo v razmerje med prostovoljci in otroki v sobi, gosti pa se štejejo v morebitno omejitev števila gostov, ki jo je nastavila vaša cerkev.
 
-Dotaknite se kartice člana še enkrat, da jo strnete.
+Znova tapnite kartico člana, da jo strnete.
 
 :::tip
-Ni vam treba dodeliti vsakega družinskega člana skupini. Odrasli, ki obiskujejo glavno bogoslužje, lahko ostanejo brez dodelitve skupine. Skupine dodelite samo članom, ki se morajo prijaviti v določen razred ali program.
+Ni nujno, da vsakega člana družine dodelite v skupino. Odrasli, ki obiskujejo glavno bogoslužje, so lahko brez dodelitve skupine. Skupine dodeljujte samo članom, ki jih je treba prijaviti v določen razred ali program.
 :::
 
-## Krmarjenje z tega zaslona
+## Krmarjenje z521 tega zaslona
 
 Na zaslonu za pregled gospodinjstva imate tri možnosti:
 
-- **Razširite člana** in se dotaknite gumba časa storitve, da [dodelite ali spremenite skupino](./group-assignment.md).
-- **Dotaknite se gumba Dodaj gosta** pod seznamom članov, da [dodate gosta](./adding-guests.md) v svoje gospodinjstvo.
-- **Dotaknite se gumba Prijava** na dnu zaslona, da [dokončate prijavo](./completing-checkin.md) za vse v gospodinjstvu.
+- **Razširite člana** in tapnite gumb termina bogoslužja, da [dodelite ali spremenite skupino](./group-assignment.md).
+- **Tapnite gumb Dodaj gosta** pod seznamom članov, da [dodate gosta](./adding-guests.md) v svoje gospodinjstvo.
+- **Tapnite gumb Prijava** na dnu zaslona, da [dokončate prijavo](./completing-checkin.md) za vse člane gospodinjstva.
 
 :::info
-Vse dodelitve skupin iz prejšnje prijave na isto storitev so samodejno vnaprej naložene. Če vaši otroci vsak teden obiskujejo iste skupine, vam morda ni treba ničesar spremeniti -- samo preglejte in se prijavite.
+Vse dodelitve skupin iz prejšnje prijave na isto storitev so samodejno vnaprej naložene. Če vaši otroci vsak teden obiskujejo iste skupine, vam morda ni treba ničesar spremeniti. Dovolj je, da pregledate in se prijavite.
 :::
 
 ## Naslednji koraki
 
-- [Dodelite skupine](./group-assignment.md) družinskim članom, ki se morajo prijaviti v določen razred ali program.
-- [Dodajte gosta](./adding-guests.md), če nekdo obiskuje skupaj z vašo družino.
-- [Dokončajte prijavo](./completing-checkin.md), ko so dodelitve vseh videti pravilne.
+- [Dodelite skupine](./group-assignment.md) članom družine, ki se morajo prijaviti v določen razred ali program.
+- [Dodajte gosta](./adding-guests.md), če z vašo družino obiskuje še nekdo.
+- [Dokončajte prijavo](./completing-checkin.md), ko so vse dodelitve pravilne.

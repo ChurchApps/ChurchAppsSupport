@@ -1,82 +1,96 @@
 ---
-title: "Tingcoco Telicembu"
-description: "Funda kutfumela, kuhlela, kuphendvula, nekuphatsa imiyalezo kuxoxo lweliqembu ku-B1.church, kuhlanganisa timemo nemathuluzi ekulawula kwemaholi."
+title: "Kuxoxisana Kweliqembu"
+description: "Funda indlela yekuthumela, kuhlela, kusabela kanye nekuphatha imiyalezo kuxoxo lweliqembu le-B1.church, kuhlanganise nezaziso nematulusi ekuphatsa webaholi."
 ---
 
-# Tingcoco Telicembu
+# Kuxoxisana Kweliqembu
 
 <div class="article-intro">
 
-Ithebhu yeTingcoco ekhasini lelicembu lakho yindzawo lapho emalunga elicembu angatfumela khona imilayeto futsi asebentisane khona. Sebentisa tingcoco kuze ucoce ngetihloko, wabelane ngemininingwane lemisha, futsi uhlale uxhumene nelicembu lakho emkhatsini wemihlangano.
+Kuxoxo lweliqembu yindzawo lapho emalungu eliqembu angathumela khona imiyalezo futsi asebentisane. Sebentisa kuxoxa ukuze uxoxe ngetindzaba, wabelane ngetibuyekezo, futsi uhlale uhlangene neliqembu lakho phakatsi kwemihlangano.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngaphambi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- Kufanele [ube ungenile](../getting-started/logging-in.md) ku-akhawundi yakho ye-B1.church.
-- Kufanele ube lilunga lelicembu kuze ufinyelele ithebhu yeTingcoco. Buka [Imininingwane Yelicembu](./group-details.md) kutsi ungenela njani licembu.
+- Kufanele ube [ungenile](../getting-started/logging-in.md) ku-akhawunti yakho ye-B1.church.
+- Kufanele ube lilungu leliqembu kuze ufinyelele kuxoxo lweliqembu. Bheka [Tinkcukacha Teliqembu](./group-details.md) ngendlela yekujoyina liqembu.
 
 </div>
 
-## Kufinyelela Tingcoco
+## Kufinyelela Kuxoxo
 
-1. Yendlulela ekhasini lelinemininingwane yelicembu ngekuchofota licembu kusuka [ekhasini lemacembu](./browsing-groups.md).
-2. Cinisekisa kutsi ungenile.
-3. Chofota ithebhu ye-**Tingcoco** eceleni.
+1. Yiya ekhasini letinkcukacha teliqembu ngekuchofoza liqembu kusuka ku[khasi lemaqembu](./browsing-groups.md).
+2. Qinisekisa kutsi uyangeniswe.
+3. Chofoza **Vula kuxoxo** ngaphansi kwelibito leliqembu, noma endzimeni **Imiyalezo**, lapho kubonakala khona imiyalezo yakamuva. Kuxoxo livula ngesikrini sonkhe; chofoza ntolo yekubuyela emuva kuze ubuyele eliqenjini.
 
-## Tingcoco Netimemetelo
+## Tingcingco Kanye Nezaziso
 
-Ithebhu yeTingcoco ingakhombisa emathebhu lamabili lamancane:
+Kuxoxo lweliqembu lungaba nemanyuvelo emabili, kuncike kutsi yini lebandla lakho lilivulile kuleliqembu. Ilebula lelisendzaweni ngaphezulu kwelibito leliqembu esiphelweni sekuxoxa likhombisa kutsi ungaphakatsi kwalelinye yini:
 
-- **Tingcoco** -- Indzawo lapho nome ngubani lelilunga lelicembu angatfumela imilayeto futsi aphendvule labanye. Loku kuwukubuka lokujwayelekile futsi kuhlala kutfolakala.
-- **Timemetelo** -- Imilayeto letfunyelwe baholi belicembu lebalulekile kutsi wonkhe emalunga awabone. Emalunga lajwayelekile angafundza timemetelo kodvwa baholi kuphela labangazakha.
+- **Kuxoxa** -- Tingcingco, lapho noyephi lilungu leliqembu angathumela khona imiyalezo afake nemphendvulo kwabanye.
+- **Izaziso** -- Imiyalezo lethunyelwe ngubaholi beliqembu lebalulekile kutsi wonkhe emalungu awubone. Emalungu ajwayelekile angafunda izaziso asabele kuzo, kodvwa baholi kuphela abangathumela. Esikhundleni sebhokisi lemiyalezo, emalungu ajwayelekile abona "Baholi beliqembu kuphela abangathumela izaziso."
 
-Nangabe kute timemetelo futsi wena awusiye umholi, utawubona kuphela kubuka Tingcoco ngaphandle kwebha yethebhu.
+Uma kokubili emanyuvelo avuliwe, **sitiphu sesaziso** esiphezulu kwekuxoxa sikhombisa isaziso sakamuva. Chofoza **Zonkhe izaziso** kuze uvule umnyuvelo wezaziso, futsi **Buyela ekuxoxeni** kuze ubuyele etingcingweni. (Emalungu abona sitiphu kuphela uma liqembu linesaziso esisodvwa noma ngaphezulu.)
 
-## Kutfumela Umlayeto
+Uma lebandla lakho livulile enye yalawo manyuvelo kuleliqembu kuphela, kuxoxo kuvula ngqo kulelo nyuvelo. Uma kokubili kuvalekile, liqembu alinakho kuxoxo futsi alinayo indzawo ye **Imiyalezo**.
 
-1. Vula ithebhu ye-**Tingcoco** ekhasini lelicembu lakho.
-2. Cinisekisa kutsi usethebhini ye-**Tingcoco** (nangabe ibha yethebhu iyabonakala).
-3. Bhala umlayeto wakho ensimini yembhalo.
-4. Tfumela umlayeto wakho kuze wabelane ngawo nelicembu.
+## Kuthumela Umyalezo
 
-Umlayeto wakho utawubonakala kuwo onkhe emalunga elicembu.
+1. Chofoza **Vula kuxoxo** ekhasini leliqembu lakho.
+2. Qinisekisa kutsi usemnyuvelweni **Kuxoxa** (chofoza **Buyela ekuxoxeni** uma ufunda izaziso).
+3. Bhala umyalezo wakho ebhokisini **Thumela umyalezo…**.
+4. Chofoza inkinobho yekuthumela kuze wabelane nawo neliqembu. Kumakhompyutha esandla noma ethebhulethi, inkinobho ye-Return iqala umugca lomusha; ekhompyutheni, **Enter** iyathumela futsi **Shift+Enter** iqala umugca lomusha.
 
-## Kuhlela nobe Kususa Imilayeto Yakho
+Umyalezo wakho uyabonakala kuwo wonkhe emalungu eliqembu. Umyalezo ngamunye ukhombisa lapho utfumelwe khona: sikhatsi semiyalezo yanamuhla, "izolo" nesikhatsi, noma lusuku nesikhatsi kwemidzala.
 
-Ungahlela nobe ususe nawuphi umlayeto lowawutfumele:
+## Kwakha Umyalezo Wakho {#formatting-your-message}
 
-1. Beka umouse etikwemlayeto wakho (nobe uwuchofote nakusesiseliphoni) kuze uveze inkhinobho yeka **letinye tikhetfo** (⋮).
-2. Chofota inkhinobho kuze uvule imenyu yemlayeto.
-3. Khetsa **Hlela** kuze ushintshe umbhalo womlayeto, nobe **Susa** kuze uwususe.
-   - Nawuhlela, umbhalo wemlayeto uyangena futsi ensimini yekufaka. Yenta lushintjo lwakho bese utfumela kuze ugcine.
-   - Nawususa, kuvela ibhokisi lekucinisekisa. Chofota **Cinisekisa** kuze ususe umlayeto ngalokuphelele.
+Ungengeta umbhalo lomkhulu, lolubhalwe ngetinhlobo letehlukene, kanye nohlu emyalezweni wakho:
+
+1. Bhala umyalezo wakho, bese ukhetsa emagama noma emigca ofuna kuwakhela.
+2. Ibha lemisebenzi lincane livela ngaphezulu kwebhokisi lemiyalezo linemakinobho ye **Bold**, **Italic**, **Uhlu lwemaphoyinti**, nye **Uhlu lwenombolo**. Chofoza enye kuze uyisebentise. Chofoza inkinobho lefanako futsi umbhalo ukhethiwe kuze uyisuse.
+3. Thumela umyalezo njengalokuvamile.
+
+Ekhompyutheni ungacindezela futsi **Ctrl+B** (noma **Cmd+B** kuMac) ukuze wente bold, nakuba **Ctrl+I** (**Cmd+I**) ukuze wente italic.
+
+Ibha lemisebenzi lengeta i-markdown lelula emtsetfweni wakho: `**bold**`, `_italic_`, `- ` ekuqaleni kwemugca wohlu lwemaphoyinti, kanye ne`1. ` wohlu lwenombolo. Ungabhala lawa mabhalwa ngalokwakho nawo. Wonkhe umuntu esitingcingweni ubona umyalezo lofomethiwe, tixhumanisi tewebhu tisasebenta, futsi emigcu yemitsetfo iyagcinwa. Lokufanana kusebenta kuzaziso, [tinkumbulo tebaholi](./group-details.md#leader-notes), nakumiyalezo yangasese.
+
+## Kuhlela Noma Kusuka Imiyalezo Yakho
+
+Ungahlela nomaususe noyephi umyalezo lowuthumele:
+
+1. Chofoza inkinobho ye**tinketfo letengeziwe** (⋮) ngaphansi komyalezo wakho kuze uvule lilistha lemiyalezo.
+2. Khetsa **Hlela** kuze uchinte umbhalo womyalezo, noma **Susa** kuze uwususe.
+   - Uma uhlela, umbhalo womyalezo ubuyela ebhokisini lekubhala nesaziso se**Kuhlelwa komyalezo** ngaphezulu kwawo (chofoza **Khansela** kuze uyeke kuhlela). Yenta tishintsho bese uyathumela kuze uzigcine.
+   - Uma ususa, kuvela sisho sekuqinisekisa se**Susa umyalezo?** Chofoza **Susa** kuze uwususe ngalokuphelele kuwo wonkhe umuntu kuxoxo.
 
 :::info
-Ungahlela nobe ususe kuphela imilayeto yakho. Imilayeto letfunyelwe lamanye emalunga ayikhombisi tikhetfo tekuhlela/kususa.
+Ungahlela imiyalezo yakho kuphela. Baholi beliqembu bangasusa nemiyalezo yemanye emalungu; emalungu ajwayelekile abona tinketfo temiyalezo yawo kuphela.
 :::
 
-## Kuphendvula Imilayeto
+## Kusabela Kumiyalezo
 
-Encoceni yelicembu, ungaphendvula nawuphi umlayeto nge-emoji:
+Kukuxoxo lweliqembu, ungasabela kunoma yimuphi umyalezo ngemoji:
 
-1. Chofota nobe ubeke umouse etikwemlayeto bese ukhetsa **Yengeta Simphendvulo**.
-2. Khetsa lokunye kwema-emoji lasitfupha: 👍 ❤️ 😂 🎉 🙏 😮.
+1. Chofoza inkinobho **Engeta kusabela** ngaphansi komyalezo.
+2. Khetsa enye yemoji lesitfupha: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Timphendvulo tibonakala njengetichibi letincane ngaphansi kwemlayeto tinenani lekutsi bangaki labasebentise leyo naleyo. Simphendvulo sakho siyakhanya — chofota sichibi (nobe ukhetse le-emoji lefananako futsi) kuze ususe, nobe ukhetse lenye i-emoji kuze wengete lenye. Timphendvulo tibonakala ngesikhatsi lesifananako kubo bonkhe labasengcocweni.
+Kusabela kuvela njengetitikhi letincane ngaphansi komyalezo, nenani labantu labasebentise ngalinye. Kusabela kwakho kuyaboniswa ngekukhanya — chofoza titikhi (noma khetsa lemoji lefanako futsi) kuze uyisuse, noma khetsa lenye moji kuze wengete lenye. Kusabela kuvela ngesikhatsi sangempela kubo bonkhe kuxoxo.
 
 :::tip
-Tingcoco temacembu futsi tibonakala ku-[Tayimilayini](../community/timeline.md) yakho, kuze ukwati kuhlala uphusile ngetingcoco ngaphandle kwekuvakashela licembu ngalinye ngasodvwana.
+Kuxoxo lweliqembu luhlala kuxoxo lweliqembu ngalinye -- umnyuvelo lowawuhlanganisiwe we[Umugca wesikhatsi](../community/timeline.md) lusuketwe. Umsebenti ladzinga kunakekelwa kwakho uvela njengesaziso ngaphansi kwesithombe se**sigubhu** ebhande lelingaphezulu lwesicelo.
 :::
 
-## Emakhono Emholi
+## Tici Tebaholi
 
-Nangabe ungumholi welicembu, unemakhono lengetiwe ethebhini yeTingcoco:
+Uma uyinhloko yeliqembu, unemandla lengetelelako kukuxoxo lweliqembu:
 
-- **Tfumela timemetelo** -- Shintshela kuthebhu lemancane ye-**Timemetelo** bese utfumela imilayeto lonkhe emalunga elicembu angayifundza.
-- **Tfumela tingcoco** -- Ungaphindze ubambe incenye etingcotweni letijwayelekile njengalelinye lilunga.
+- **Thumela izaziso** -- Chofoza **Zonkhe izaziso** (noma vula kuxoxo uma izaziso kuphela livuliwe) bese uthumela imiyalezo lengafundwa wonkhe emalungu eliqembu.
+- **Susa imiyalezo** -- Susa noyephi umyalezo womuntfu kusuka kulilistha lemiyalezo (⋮).
+- **Thumela tingcingco** -- Ungabamba iphi kutingcingco letijwayelekile njengakunoma yiliphi lilungu.
 
 :::info
-Tingcoco tikhetsekile kulicembu ngalinye. Imilayeto loyitfumela kulelinye licembu ayiveli kutingcoco talelinye licembu.
+Tingcingco tichaza liqembu ngalinye. Imiyalezo lotfumela eliqenjini linye ayiyikuvela etingcingweni teliqembu lelinye.
 :::

@@ -1,22 +1,22 @@
 ---
 title: "Nasazení mobilní aplikace"
-description: "Postup sestavení verzí Android a iOS aplikace B1 Mobile pomocí Expo EAS, jejich odeslání do obchodů s aplikacemi a nahrání OTA aktualizací."
+description: "Popisuje sestavení verzí Androidu a iOS pro aplikace Expo, jako je B1 Checkin, jejich odeslání do obchodů s aplikacemi a nasazení aktualizací OTA pomocí EAS."
 ---
 
 # Nasazení mobilní aplikace
 
 <div class="article-intro">
 
-Mobilní aplikace ChurchApps se sestavují a nasazují pomocí **Expo EAS Build** a distribuují se přes obchody s aplikacemi. Tato stránka popisuje sestavení, odeslání a nasazení aktualizací přes vzduch (OTA) pro Android i iOS.
+Mobilní aplikace ChurchApps založené na Expo, například B1 Checkin, se sestavují pomocí **Expo EAS Build** nebo lokálního sestavení Gradle a distribuují se přes obchody s aplikacemi. Tato stránka popisuje sestavení, odeslání a nasazení aktualizací přes vzduch (OTA) pro Android i iOS na příkladu aplikace B1 Checkin.
 
 </div>
 
 <div class="prereqs">
 <h4>Než začnete</h4>
 
-- Nastavte mobilní aplikaci lokálně – viz [B1 Mobile](../mobile/b1-mobile.md)
+- Nastavte aplikaci lokálně – viz [Mobilní aplikace](../mobile/index.md#local-setup)
 - Nainstalujte a nakonfigurujte [EAS CLI](https://docs.expo.dev/eas/)
-- Mějte přístup ke Google Play Console (Android) a/nebo Apple App Store Connect (iOS)
+- Mějte přístup do Google Play Console (Android) a/nebo Apple App Store Connect (iOS)
 
 </div>
 
@@ -24,21 +24,31 @@ Mobilní aplikace ChurchApps se sestavují a nasazují pomocí **Expo EAS Build*
 
 ### Android
 
+Release verze pro Android se sestavují lokálně a podepisují se release klíčem z EAS. Stáhněte si jej jednou příkazem `npx eas-cli credentials -p android` (zvolte **credentials.json: Download credentials from EAS**) a poté spusťte:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Balíček pro Google Play se zapíše do souboru `android/app/build/outputs/bundle/release/app-release.aab`. Chcete-li sestavení provést na EAS, spusťte `yarn build:android:eas`.
 
 ### iOS
 
+Sestavení pro iOS se vždy provádějí na EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
 ## Odeslání do obchodů s aplikacemi
 
 ### Android – Google Play Store
 
-Po úspěšném sestavení EAS se binární soubor pro Android (AAB) odešle do Google Play Store prostřednictvím Play Console.
+Nahrajte soubor AAB přes Play Console, nebo jej odešlete pomocí EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS – Apple App Store
 
@@ -50,16 +60,16 @@ eas submit --platform ios
 
 ## Aktualizace OTA
 
-U změn pouze v JavaScriptu, které nevyžadují schválení v obchodě s aplikacemi, použijte aktualizace přes vzduch (OTA):
+U změn pouze v JavaScriptu, které nevyžadují kontrolu v obchodě s aplikacemi, použijte aktualizace přes vzduch (OTA):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Tím EAS Update odešle změny přímo uživatelům bez úplného odeslání do obchodu.
+Tento příkaz pomocí EAS Update odešle změny přímo uživatelům bez úplného odeslání do obchodu.
 
 :::tip
-Aktualizace OTA jsou výrazně rychlejší než sestavení pro obchody – změny se mohou k uživatelům dostat během několika minut místo dnů. Používejte je pro opravy chyb, změny textů a drobné úpravy uživatelského rozhraní, které nezasahují do nativního kódu.
+Aktualizace OTA jsou výrazně rychlejší než sestavení pro obchody – změny se mohou k uživatelům dostat během několika minut místo dnů. Používejte je pro opravy chyb, úpravy textů a drobné změny uživatelského rozhraní, které nezahrnují změny nativního kódu.
 :::
 
 ## Čísla verzí
@@ -67,17 +77,17 @@ Aktualizace OTA jsou výrazně rychlejší než sestavení pro obchody – změn
 Před vytvořením sestavení pro obchod je nutné aktualizovat čísla verzí v několika souborech:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` a `versionCode`)
+
+Číslo sestavení pro iOS zvyšuje EAS automaticky.
 
 :::warning
-Pokud nezaktualizujete čísla verzí ve všech souborech, sestavení selže nebo aplikaci obchod zamítne. Před zahájením produkčního sestavení si každý výše uvedený soubor pečlivě zkontrolujte.
+Pokud zapomenete aktualizovat čísla verzí ve všech souborech, dojde k selhání sestavení nebo k zamítnutí aplikace v obchodě. Před zahájením produkčního sestavení si zkontrolujte každý výše uvedený soubor.
 :::
 
 ## Související články
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** – Průvodce místním nastavením a vývojem
+- **[Mobilní aplikace](../mobile/index.md)** – Průvodce lokálním nastavením a vývojem
 - **[Nasazení API](./apis.md)** – Nasazení backendových API
 - **[Nasazení webových aplikací](./web-apps.md)** – Nasazení frontendových webových aplikací

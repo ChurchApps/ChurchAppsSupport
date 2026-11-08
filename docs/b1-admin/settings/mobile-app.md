@@ -15,8 +15,8 @@ The Mobile App Settings page lets you configure the navigation tabs that appear 
 
 <YouTube id="ydY7WGK16fE" title="Customizing Your Church's Member App in B1" />
 
-:::info The native B1 Mobile app is deprecated
-Tabs configured here are delivered through the [B1.church Progressive Web App (PWA)](/docs/b1-church/getting-started/installing-pwa), which has replaced the native B1 Mobile app. Share your church's install page — `https://yourchurchname.b1.church/mobile/install` — with members; it walks them through installing the app on their device, with no App Store or Google Play download required.
+:::info
+Tabs configured here appear in the B1 App, which members can [install as a Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). Share your church's install page — `https://yourchurchname.b1.church/mobile/install` — with members; it walks them through installing the app on their device, with no App Store or Google Play download required.
 :::
 
 <div class="prereqs">
@@ -124,7 +124,7 @@ The tabs you configure here are displayed in the **B1.church PWA** that your mem
 
 On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **More**; on a computer, the header shows up to five. Built-in screens (such as Sermons, Giving, or Groups) get those slots first, and **Internal Page** tabs fill any slots left over. **External URL** and **Verse of the Day** tabs never get a slot. Every tab, including those that don't fit, is listed on the app's **More** page.
 
-Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](/docs/b1-church/getting-started/navigating) for what members see. (Tabs are also rendered by the legacy [B1 Mobile native app](/docs/b1-mobile/) for any members still running it, but that app is deprecated and no longer being updated.)
+Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](../../b1-church/getting-started/navigating.md) for what members see.
 
 ## Next Steps
 

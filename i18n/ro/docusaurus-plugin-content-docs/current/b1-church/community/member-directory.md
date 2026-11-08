@@ -1,48 +1,50 @@
 ---
-title: "Directorul de membri în portalul B1.church"
-sidebar_label: "Director de membri"
-description: "Caută și răsfoiește membrii bisericii în directorul B1.church, vezi profilurile și membrii gospodăriei și află cine are acces la director."
+title: "Directorul membrilor din portalul pentru membri B1.church"
+sidebar_label: "Director membri"
+description: "Căutați și răsfoiți membrii bisericii în directorul B1.church, vizualizați profilurile și membrii gospodăriei lor și aflați cine poate accesa directorul."
 ---
 
-# Director de membri
+# Director membri
 
 <div class="article-intro">
 
-Directorul de membri îți permite să răsfoiești și să cauți persoanele din biserica ta. Fie că ai nevoie să cauți un coleg din grup sau să găsești pe cineva nou, directorul te ajută să te conectezi cu familia bisericii tale.
+Directorul membrilor vă permite să răsfoiți și să căutați persoane din biserica dumneavoastră. Fie că trebuie să găsiți un coleg din grupul dumneavoastră, fie că doriți să descoperiți o persoană nouă, directorul vă ajută să rămâneți în legătură cu familia bisericii.
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Trebuie să fii [autentificat](../getting-started/logging-in.md) în contul tău B1.church.
-- Cine poate deschide directorul depinde de setarea **Show in Directory** a bisericii tale: **Admins Only**, **Members and Above** (implicit), **Regular Attendees and Above** sau **Visitors and Above**. Persoanele care se află sub acest nivel văd în schimb un mesaj „Members Only”. Membrii personalului cu permisiunea People > View pot deschide întotdeauna directorul, iar cu setarea **Admins Only** sunt singurii care îl pot deschide -- nici persoanele cu statut de membru al personalului nu pot. Persoanele cu statut Guest sau Inactive nu pot deschide niciodată directorul. Vezi [Setările directorului de membri și ale mesageriei](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
+- Trebuie să fiți [autentificat](../getting-started/logging-in.md) în contul dumneavoastră B1.church.
+- Cine poate deschide directorul depinde de setarea **Afișare în director** a bisericii dumneavoastră: **Doar administratori**, **Membri și superiori** (implicit), **Participanți obișnuiți și superiori** sau **Vizitatori și superiori**. Persoanele cu un nivel inferior văd un mesaj „Doar pentru membri”. Membrii personalului cu permisiunea Persoane > Vizualizare pot deschide mereu directorul, iar în cazul setării **Doar administratori** sunt singurii care îl pot deschide — chiar și persoanele cu statutul de membru al personalului nu pot. Persoanele cu statutul de Oaspete sau Inactiv nu pot accesa niciodată directorul. Consultați [Setări pentru director membri și mesagerie](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
 ## Accesarea directorului
 
-1. Atinge **Community** în [bara de file sau pe pagina More](../getting-started/navigating.md) (biserica ta ar putea să-i fi dat un alt nume).
-2. **Directory** se deschide cu un număr de persoane și cu o listă a tuturor membrilor bisericii vizibili.
+1. Atingeți **Comunitate** în [bara de file sau pe pagina Mai multe](../getting-started/navigating.md) (biserica dumneavoastră le poate fi dat un alt nume).
+2. **Directorul** se deschide, afișând numărul de persoane și lista tuturor membrilor bisericii vizibili.
 
 ## Căutarea membrilor
 
-Scrie un nume în caseta **Search Members** din partea de sus a listei. Lista se filtrează pe măsură ce scrii, iar partea potrivită din fiecare nume este evidențiată. Golește caseta pentru a vedea din nou întregul director.
+Introduceți un nume în caseta **Căutare membri** din partea de sus a listei. Lista se filtrează pe măsură ce scrieți, iar partea potrivită din fiecare nume este evidențiată. Goliți caseta pentru a vedea din nou întregul director.
 
 ## Răsfoirea directorului
 
-Membrii sunt grupați sub titluri cu litere (A, B, C și așa mai departe), după prima literă a prenumelui, și sortați după numele de familie în cadrul fiecărei litere. Fiecare intrare afișează fotografia membrului, numele afișat și statutul de membru, ceea ce face ușoară parcurgerea listei.
+Membrii sunt grupați sub titluri cu litere (A, B, C etc.), după prima literă a prenumelui, și sortați după nume de familie în cadrul fiecărei litere. Fiecare intrare afișează fotografia membrului, numele afișat și statutul de membru, ceea ce facilitează parcurgerea rapidă a listei.
 
 ## Vizualizarea profilului unui membru
 
-Atinge orice membru din listă pentru a-i deschide profilul. Profilul arată numele, fotografia și statutul de membru, cu butoane pentru **Message**, **Call** sau pentru a trimite un **Text**, atunci când aceste informații sunt disponibile. Mai jos, secțiunea **Contact Information** arată detaliile pe care biserica și membrul le-au ales să le împărtășească, cum ar fi e-mailul, telefonul și adresa, iar **Household Members** enumeră ceilalți membri ai gospodăriei.
+Atingeți orice membru din listă pentru a deschide profilul acestuia. Profilul afișează numele, fotografia și statutul de membru al persoanei, cu butoane pentru a-i trimite **Mesaj**, a-i face un **Apel** sau a trimite un **SMS**, atunci când aceste informații sunt disponibile. Mai jos, secțiunea **Informații de contact** afișează detaliile pe care biserica și membrul le-au ales să le împărtășească, cum ar fi adresa de e-mail, telefonul și adresa, iar **Membrii gospodăriei** enumeră celelalte persoane din gospodăria acestuia.
 
-Poți atinge membrii gospodăriei din cadrul unui profil pentru a naviga și către profilurile lor. Pe propriul profil, un buton **Edit profile** te duce la [Editarea profilului tău](../getting-started/editing-your-profile.md).
+**Mesaj** deschide o conversație privată cu persoana respectivă. Puteți aplica text îngroșat sau cursiv ori adăuga o listă, selectând textul și folosind bara de instrumente care apare — în același mod ca în [conversația de grup](../groups/conversations.md#formatting-your-message).
+
+De asemenea, puteți atinge membrii gospodăriei dintr-un profil pentru a naviga la profilurile lor. Pe propriul profil, butonul **Editați profilul** vă duce la [Editarea profilului dumneavoastră](../getting-started/editing-your-profile.md).
 
 :::info
-Informațiile vizibile în fiecare profil depind de setările de confidențialitate și de director ale bisericii tale. Este posibil ca nu toate câmpurile să fie afișate pentru fiecare membru.
+Informațiile vizibile în fiecare profil depind de setările de confidențialitate și de director ale bisericii dumneavoastră. Nu toate câmpurile pot fi afișate pentru fiecare membru.
 :::
 
 :::info
-Membrii aflați sub [vârsta minimă pentru mesaje private](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) a bisericii tale rămân vizibili în director, dar opțiunea de a le trimite un mesaj privat nu este disponibilă.
+Membrii sub vârsta minimă a bisericii dumneavoastră pentru [mesajele private](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) rămân vizibili în director, dar opțiunea de a le trimite un mesaj privat nu este disponibilă.
 :::

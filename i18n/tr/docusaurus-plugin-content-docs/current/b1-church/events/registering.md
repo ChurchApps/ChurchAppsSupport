@@ -1,94 +1,98 @@
 ---
 title: "B1.church'te Etkinlik Kaydı"
-sidebar_label: "Etkinliklere Kayıt Olma"
-description: "B1.church'te bir kilise etkinliğine kayıt olun: bilgilerinizi girin, aile üyeleri ekleyin, seçenekleri belirleyin, indirim kodlarını uygulayın ve ödeme yapın veya bekleme listesine katılın."
+sidebar_label: "Etkinliklere Kaydolma"
+description: "B1.church'te bir kilise etkinliğine kaydolun: bilgilerinizi girin, aile üyelerini ekleyin, seçenekleri belirleyin, indirim kodlarını uygulayın ve ödeme yapın ya da bekleme listesine katılın."
 ---
 
-# Etkinliklere Kayıt Olma
+# Etkinliklere Kaydolma
 
 <div class="article-intro">
 
-Kilisenizde bir etkinlik için kayıt özelliği etkinleştirildiğinde, basit ve adım adım bir süreçle kayıt olabilirsiniz. Bir hesabınız olsun ya da misafir olarak ziyaret ediyor olun, kendinizi ve aile üyelerinizi ekleyebilirsiniz. Ücretli etkinliklerde bir katılımcı türü seçer, isteğe bağlı ek seçenekleri ekler, bir indirim kodu uygulayabilir ve en sonda güvenli bir şekilde ödeme yapabilirsiniz.
+Kilisenizde bir etkinlik için kayıt açıldığında, basit ve adım adım ilerleyen bir süreçle kaydolabilirsiniz. Bir hesabınız olsun ya da olmasın, kendinizi ve aile üyelerinizi kaydedebilirsiniz. Ücretli etkinliklerde bir katılımcı türü seçer, varsa isteğe bağlı ek seçenekleri ekler, indirim kodunu uygularsınız ve en sonunda güvenli bir şekilde ödeme yaparsınız.
 
 </div>
 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Kilisenizin bu etkinlik için kayıt özelliğini etkinleştirmiş olması gerekir
+- Kilisenizde bu etkinlik için kayıt özelliğinin açık olması gerekir
 - Kayıt süresi açık olmalıdır (yönetici tarafından belirlenen açılış ve kapanış tarihleri arasında)
 
 </div>
 
-## Adım 1: Bilgilerinizi Girin
+## 1. Adım: Bilgilerinizi Girin
 
-1. Kilise takviminden kayıt olmak istediğiniz etkinliği açın ve **Bu Etkinlik için Kayıt Ol** düğmesine tıklayın.
-2. Kayıt sayfası, etkinliğin başlığını, açıklamasını ve tarihini gösterecek şekilde yüklenir. Birkaç gün süren bir etkinlikte hem başlangıç hem de bitiş tarihleri görüntülenir.
-3. **Giriş yapmış** durumdaysanız form adınızı gösterir ve hesabınız üzerinden kayıt olduğunuzu onaylar.
-4. **Misafir** iseniz (giriş yapmamışsanız) şunları doldurun:
+1. Kilise takvimini açın, kaydolmak istediğiniz etkinliğe tıklayın ve **Bu Etkinliğe Kaydol** düğmesine basın.
+2. Kayıt sayfası, etkinliğin başlığını, açıklamasını ve tarihini gösterir. Birkaç güne yayılan bir etkinlikte hem başlangıç hem de bitiş tarihi görünür.
+3. **Giriş yapmışsanız**, form adınızı gösterir ve hesabınız üzerinden kaydolduğunuzu doğrular.
+4. **Misafir** olarak kaydoluyorsanız (giriş yapmadan), şunları doldurun:
    - **Ad** (zorunlu)
    - **Soyad** (zorunlu)
    - **E-posta** (zorunlu)
    - **Telefon** (isteğe bağlı)
-5. Etkinliğin katılımcı türleri varsa (örneğin farklı fiyatlarla Yetişkin ve Çocuk), **kayıt türünüzü** seçin. Her tür fiyatını gösterir; kontenjanı dolmuş türler **Tükendi** olarak görünür.
+5. Etkinliğin katılımcı türleri varsa (örneğin, farklı fiyatlara sahip Yetişkin ve Çocuk), **kayıt türünüzü** seçin. Her türün fiyatı gösterilir ve kontenjanı dolan türler **Tükendi** olarak görünür.
 
 :::info
-Etkinliğin bir kapasite sınırı varsa, kalan yerlerin sayısını gösteren bir ilerleme çubuğu görüntülenir. Etkinlik doluysa ve kiliseniz bekleme listesini etkinleştirmişse, yine de kaydı tamamlayarak bekleme listesine katılabilirsiniz — aşağıdaki [Bekleme Listesine Katılma](#joining-a-waitlist) bölümüne bakın.
+Etkinliğin bir kontenjan sınırı varsa, kalan yerleri gösteren bir ilerleme çubuğu görünür. Etkinlik doluysa ve kiliseniz bekleme listesini etkinleştirmişse, yine de kaydınızı tamamlayarak bekleme listesine katılabilirsiniz — aşağıdaki [Bekleme Listesine Katılma](#joining-a-waitlist) bölümüne bakın.
 :::
 
-## Adım 2: Aile Üyelerini Ekleyin
+## 2. Adım: Aile Üyelerini Ekleyin
 
-1. Ek aile üyeleri için kayıt yaptırmak istiyorsanız, her kişi için **Ad** ve **Soyad** bilgilerini girin.
+1. Başka aile üyelerini de kaydetmek istiyorsanız, her kişi için **Ad** ve **Soyad** bilgilerini girin.
 2. Etkinliğin katılımcı türleri varsa, eklediğiniz her kişi için bir tür seçin.
 3. Daha fazla kişi eklemek için **Üye Ekle** düğmesine tıklayın (toplamda en fazla 10 kişi).
-4. Kayıttan çıkarmak istediğiniz herhangi bir üyenin yanındaki kaldırma düğmesine tıklayın.
+4. Bir üyeyi kayıttan çıkarmak için o üyenin yanındaki kaldır düğmesine tıklayın.
 5. Yalnızca kendinizi kaydettiriyorsanız bu adımı atlayabilirsiniz.
 
-## Adım 3: Seçenek ve Tercihleri Belirleyin (Sunulmuşsa)
+## 3. Adım: Seçenekler ve Tercihler (Varsa)
 
-Bazı etkinlikler ücretli isteğe bağlı ek seçenekler sunar — tişörtler, yemekler, etkinlik yükseltmeleri gibi.
+Bazı etkinlikler, ücretli isteğe bağlı ek hizmetler sunar — tişörtler, yemekler, etkinlik yükseltmeleri gibi.
 
 1. Etkinlikte seçenekler varsa **Seçenekler ve Tercihler** adımı görünür.
-2. Her birinden kaç tane istediğinizi seçmek için miktar artırma/azaltma düğmelerini kullanın. Ücretsiz seçenekler **Ücretsiz** olarak görünür, sınırlı seçenekler ise kalan adet sayısını gösterir.
+2. Her seçenekten kaç adet istediğinizi belirlemek için miktar artırma-azaltma düğmelerini kullanın. Ücretsiz seçenekler **Ücretsiz** olarak gösterilir, sınırlı sayıdaki seçenekler ise kalan adedi gösterir.
 3. **Devam** düğmesine tıklayın.
 
-## Adım 4: Soruları Yanıtlayın (Soruluyorsa)
+## 4. Adım: Soruları Yanıtlayın (Varsa)
 
-Bazı etkinliklerde kayıt olanlardan birkaç ek soruyu yanıtlamaları istenir — beslenme kısıtlamaları, tişört bedeni, acil durum iletişim kişisi ve benzeri ayrıntılar.
+Bazı etkinlikler, kayıt olanlardan birkaç ek soruyu yanıtlamasını ister — beslenme kısıtlamaları, tişört bedeni, acil durum iletişim kişisi ve benzeri ayrıntılar gibi.
 
-1. Etkinliğe sorular eklenmişse, bir **Sorular** adımı hemen ardından görünür.
+1. Etkinliğe bağlı sorular varsa, bir sonraki adım olarak **Sorular** adımı görünür.
 2. Yanıtlarınızı doldurun ve devam edin.
 
-Etkinliğe hiç soru eklenmemişse, bu adım otomatik olarak atlanır.
+Etkinliğe bağlı soru yoksa, bu adım otomatik olarak atlanır.
 
-## Adım 5: Ödeme Yapın (Ücretli Etkinlikler)
+## 5. Adım: Ödeme Yapın (Ücretli Etkinlikler)
 
-Kaydınızın bir maliyeti varsa, **Ödeme** adımında her katılımcıyı, her seçeneği, varsa indirimi ve **Toplam** tutarı listeleyen bir **Sipariş Özeti** görüntülenir.
+Kaydınızın bir ücreti varsa, **Ödeme** adımında her katılımcıyı, her seçeneği, varsa indirimi ve **Toplam** tutarı listeleyen bir **Sipariş Özeti** görünür.
 
-- **İndirim kodu** -- Kilisenizden bir kod aldıysanız, kodu girin ve **Uygula** düğmesine tıklayın. İndirim hemen yansır; kodun süresi dolmuşsa, henüz başlamamışsa veya daha fazla katılımcı gerektiriyorsa açık bir mesaj görürsünüz.
-- **Giriş yapmış üyeler** kayıtlı bir kartla ödeme yapabilir veya **Yeni kart kullan** seçeneğini seçebilir.
-- **Misafirler** kart bilgilerini doğrudan girer ve ödeme yapmadan önce **Ben robot değilim** kutusunu işaretler.
+- **İndirim kodu** — Kilise size bir kod verdiyse, kodu girin ve **Uygula** düğmesine tıklayın. İndirim hemen yansır. Kodun süresi dolmuşsa, henüz başlamamışsa ya da daha fazla katılımcı gerektiriyorsa açık bir mesaj görürsünüz.
+- **Giriş yapmış üyeler**, kayıtlı bir kartla ödeme yapabilir veya **Yeni kart kullan** seçeneğini seçebilir.
+- **Misafirler** kart bilgilerini doğrudan girer ve ödeme yapmadan önce **Ben robot değilim** kutucuğunu işaretler.
 
-Ödemeyi ve kaydı tek adımda tamamlamak için **Öde ve Kaydol** düğmesine tıklayın. Kart bilgileriniz doğrudan kilisenin ödeme sağlayıcısına gider ve B1 tarafından asla saklanmaz.
+Toplam tutarınızı gösteren **Öde ve Kaydol** düğmesine tıklayın (örneğin, **$25.00 Öde ve Kaydol**). Bu işlem, ödemeyi ve kaydı tek adımda tamamlar. Kart bilgileriniz doğrudan kilisenin ödeme sağlayıcısına gönderilir ve B1 tarafından asla saklanmaz.
 
-Ücretsiz kayıtlarda bu adım atlanır ve doğrudan onay ekranına geçilir.
+Ücretsiz kayıtlar bu adımı atlar ve doğrudan onay ekranına geçer.
 
-Kiliseniz çevrimiçi ödeme almıyorsa, ödeme adımında şu mesaj görünür: *"Bu etkinlik için çevrimiçi ödeme kullanılamıyor. Şimdi kayıt olabilir ve ödemeyi doğrudan kiliseye yapabilirsiniz."* Tamamlamak için **Kaydol ve Daha Sonra Öde** düğmesine tıklayın. Kaydınız, gösterilen tutar ödenmemiş bakiye olarak kaydedilir ve bu bakiyeyi doğrudan kiliseye ödersiniz.
+Kiliseniz çevrim içi ödeme kabul etmiyorsa, ödeme adımında *"Bu etkinlik için çevrim içi ödeme kullanılamıyor. Şimdi kaydolabilir ve ödemeyi doğrudan kiliseye yapabilirsiniz."* mesajı görünür. İşlemi tamamlamak için **Kaydol ve Sonra Öde** düğmesine tıklayın. Kaydınız, gösterilen tutarın ödenecek bakiye olarak kaydedilmesiyle tamamlanır ve bu tutarı doğrudan kiliseye ödersiniz.
 
-## Adım 6: Onaylayın
+## 6. Adım: Onaylayın
 
-Etkinlik ayrıntılarını ve kayıt yaptırdığınız herkesin listesini içeren bir onay mesajı görünür. Ayrıca, hesabınızla ilişkili e-posta adresine (veya misafir olarak verdiğiniz e-postaya) bir **onay e-postası** alacaksınız.
+Etkinlik ayrıntılarını ve kaydettirdiğiniz herkesin listesini içeren bir onay mesajı görünür. Ayrıca, hesabınızla ilişkili e-posta adresinize (ya da misafir olarak verdiğiniz e-postaya) bir **onay e-postası** alırsınız.
+
+**Kaydol ve Sonra Öde** seçeneğini seçtiyseniz, üye portalında bunun yerine **Kayıt Beklemede** ibaresi, **Beklemede** rozeti, etkinlik için "Yeriniz şu süre için ayrılmıştır" ifadesi ve ödenecek bakiye (örneğin, "Ödenecek bakiye 25.00 $ / 25.00 $") görünür.
+
+Kaydolduktan sonra, grup sayfanızdaki etkinlik **Kayıt** bağlantısı yerine durumunuz gösterilir (**Kayıtlı**, **Beklemede** veya **Bekleme listesinde**). Etkinlik ise Ana ekranınızdaki **Yaklaşan etkinlikler** bölümünde **Kayıt** etiketiyle görünür.
 
 ## Bekleme Listesine Katılma
 
-Etkinlik doluysa ve kilisiniz bekleme listesini etkinleştirmişse, ilk adımda şu mesaj görünür: *"Bu etkinlik dolu. Bekleme listesine katılabilirsiniz; bir yer açılırsa size haber vereceğiz."* Kaydı normal şekilde tamamlayın — bekleme listesindeyken ödeme adımı atlanır. Bir yer açıldığında bir e-posta alırsınız; ödeme gerekiyorsa, e-postada ödemeyi tamamlamak için bir bağlantı bulunur. Durumunuzu kontrol etmek ve ödeme yapmak için [Kayıtlarım](./my-registrations.md) sayfasını da kullanabilirsiniz.
+Etkinlik doluysa ve kiliseniz bekleme listesini etkinleştirmişse, ilk adımda şu mesaj görünür: *"Bu etkinlik dolu. Bekleme listesine katılabilirsiniz; bir yer açılırsa size haber vereceğiz."* Kaydınızı normal şekilde tamamlayın — bekleme listesindeyken ödeme adımı atlanır. Bir yer açıldığında size bir e-posta gönderilir; ödeme gerekiyorsa, e-postada ödemeyi tamamlamak için bir bağlantı bulunur. Durumunuzu kontrol edebilir ve ödemenizi [Kayıtlarım](./my-registrations.md) sayfasından yapabilirsiniz.
 
 ## Kaydı Değiştirme veya İptal Etme
 
-Giriş yapmışsanız, üye portalındaki **Kayıtlar** sayfasından kaydınızı kendiniz düzenleyebilir veya iptal edebilirsiniz — bkz. [Kayıtlarım](./my-registrations.md). Misafirler kilise ofisiyle iletişime geçmelidir; personel ise değişikliği B1 Admin kayıtlar sayfasından yapabilir.
+Giriş yapmışsanız, üye portalındaki **Kayıtlar** sayfasından kaydınızı kendiniz düzenleyebilir veya iptal edebilirsiniz — bkz. [Kayıtlarım](./my-registrations.md). Misafirler kilise ofisiyle iletişime geçmelidir. Personel ise değişikliği B1 Admin kayıtlar sayfasından yapabilir.
 
 ## İlgili Makaleler
 
-- [Etkinlikler Genel Bakış](./index.md) -- Kayıt alan yaklaşan etkinlikleri inceleyin
-- [Kayıtlarım](./my-registrations.md) -- Kayıtlarınızı görüntüleyin, düzenleyin, bakiye ödeyin ve iptal edin
-- [Bağış Yapma](../giving/making-donations.md) -- Etkinliğe katılımınızla birlikte bağış yapın
+- [Etkinliklere Genel Bakış](./index.md) — Kayıt seçeneği olan yaklaşan etkinlikleri inceleyin
+- [Kayıtlarım](./my-registrations.md) — Kayıtlarınızı görüntüleyin, düzenleyin, bakiye ödeyin ve iptal edin
+- [Bağış Yapma](../giving/making-donations.md) — Etkinliğe katılımınızla birlikte bağış yapın

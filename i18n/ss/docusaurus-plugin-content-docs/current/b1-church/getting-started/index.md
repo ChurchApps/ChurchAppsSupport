@@ -1,60 +1,56 @@
 ---
-title: "Kuqala Ngeportal Yelilungu le-B1.church"
-sidebar_label: "Kucala"
-description: "Fumana sayithi yesonto lakho ye-B1.church, dala i-akhawunti yakho yelilungu, bese ubona lokutfolakalako ku-portal, kusukela emaqembuni nekunikela kuya ekungeneni nemacebo."
+title: "Kuqala nge-B1.church Member Portal"
+sidebar_label: "Kuqala"
+description: "Thola iwebhusayithi ye-B1.church yebandla lakho, bhalisa i-akhawunti yakho yelilunga, bone lokutfolakala kuliphothali, kusukela emaqembu nekunikela kuya ekuchekeni nakutinhlelo."
 ---
 
-# Kucala nge-B1.church
+# Kuqala nge-B1.church
 
 <div class="article-intro">
 
-I-B1.church likhaya lakini lelibandla ku-inthanethi. Yindzawo lohamba kuyo kuze uhlale uxhumene nebandla lakini, ubone tibikoletisha, unikele nge-inthanethi, ubhalise ekufikeni emitsi, kanye netinye tintfo letinyenti. Lengcenye ikuhambisa kancane kancane kutsi ungayifinyelela futsi uyisebentise njani iphothali yemalungu.
+B1.church ngumuva wakho wekutfutfukisa lapho ungakhona khona. Ngulapho ungahlala uhlanganyela kanye nebandla lakho, ubone tibikelo letisha, unikele ngeintelnethi, ucheke kutinkhonzo, nakuningi lokunye. Lesigaba sikuhamba ngetinhlobo letisisekelo tekufinyelela nekusebentisa liphothali lelilunga.
 
 </div>
 
-## Kufinyelela Kusayithi Lelibandla Lakini
+## Kufinyelela Iwebhusayithi Yebandla Lakho
 
-Lelibandla lakini linelikheli lalo le-B1.church, ngalokuvamile lisenhlobo ye-`https://yourchurchname.b1.church`. Ungangena kulelikheli nakuwuphi umcwayisi we-inthanethi ekhompyutheni yakho, kuthebulethi, nome kucingo lakho. Bacwepheshe belibandla lakini nome licembu lekwemukela bangakunika likheli lelicondzile.
+Bandla lakho linelikheli le-B1.church layo, ngalokuvamile linesimo lesi `https://yourchurchname.b1.church`. Ungavakashela leli kheli kuso sonkhe sisilawuli sewebhu, kuthebhulethi noma kuselfoni yakho. Ubuholi bebandla noma leqembu lekwamukela lingakunika likheli lelicacile.
 
-Nawuvakashela sayithi kokucala, utawubona sayithi lelibandla lakini lelivulekele wonkhe umuntfu, kanye netimpawu talo letikhetsekile, imenyu yekuhamba, kanye nemakhasi enshila.
+Uma sekuqala ukuvakashela lesayithi, uyakubona iwebhusayithi levulekile yebandla lakho nemtfombo wayo wekwehluka, emenyu yekuhamba, kanye namakhasi elwati.
 
 ## Kudala I-Akhawunti
 
-Kuze ufinyelele iphothali yemalungu kanye netintfo letikuyo, udzinga i-akhawunti ye-ChurchApps.
+Kuze ufinyelele kuliphothali lelilunga kanye netimphawu talo, udzinga i-akhawunti ye-ChurchApps.
 
-1. Vakashela likheli le-B1.church lelibandla lakini.
-2. Chofoza inkhinobho **Ngena** lesekoneni lesekudla etulu ekhasini.
-3. Ekhasini lekungena, khetsa lokukhethiwe kuze **Ubhalise** i-akhawunti lensha.
-4. Faka **libito lakho lekucala**, **sibongo sakho**, **likheli lakho le-imeyili**, futsi ukhetse **liphasiwedi**.
-5. Cedzela liforomu lekubhalisa.
+1. Vakashela likheli le-B1.church lebandla lakho.
+2. Chofoza inkinobho **Ngena** ngekhona lephezulu kwekhona kwesikrini.
+3. Esikrinini sekungena, khetsa lenketfo yekubhalisa i-akhawunti lensha.
+4. Faka **umvubo wakho**, **sibongo sakho**, **likheli le-imeyili** bese ukhetsa **siphepho** sakho.
+5. Qedela ifomu lekubhalisa.
 
-Ngemuva kwekubhalisa, ungangena futsi ufinyelele iphothali yemalungu kanye nato tonkhe tinsiza tayo.
+Ngemuva kwekubhalisa, ungangena bese ufinyelela kuliphothali lelilunga nato tonkhe tithulusi talo.
 
 :::tip
-Nangabe lelibandla lakini selikwengezile esimeni salo, sebentisa lelikheli le-imeyili lelifanako nalelo lelinalo. Loku kutakuhlanganisa i-akhawunti yakho neprofayela lakho lelisemvakwelo lelibandla lelisekhona.
+Uma bandla lakho sekukhona lakufakele esistimini yalo, sebentisa likheli le-imeyili lafanako labo labakugcinele lona. Lokhu kuyakuhlanganisa i-akhawunti yakho nalemphrofayili yakho yebandla lesivele likhona.
 :::
 
-## Loko Longakwenta
+## Lokungakwenta
 
-Nawusesungenile, iphothali yemalungu ikunika kufinyelela ku:
+Ngemuva kwekungena, liphothali lelilunga likuvumela kufinyelela:
 
-- **I-Timeline** yakho yemuntfu ngamunye lene tibiko letisuka emacenjini akho nasebandleni
-- **Emacembu** lawulunga kuwo, kufaka etikhulumo netimicimbi
-- **Kunikela** nge-inthanethi kwemnikelo
-- **Tinhlelo** letikhombisa luhlelo lwakho lwekukhonta netimininingwane temsebenti
-- **Kubhalisa Ekufikeni** emitsi netimicimbini
-- Luhlu lwe**Mphakatsi** kuze utfole futsi uxhumane nalamanye emalungu
+- Ideshibhodi **Ekhaya** lenemibukeko yekukhonta kwakho, emaqembu, nekunikela, kanye nekhasi **Mina** lelitfola lokuzayo kuwe
+- **Emaqembu** lolilunga kiwo, kuhlanganisa tingcingciso netimcimbi
+- **Kunikela** ngeintelnethi ngetipho
+- **Tinhlelo** letikhombisa tikhatsi takho tekusebentela kanye nemininingwane yekukhonta
+- **Kuchekwa** kutinkhonzo netimcimbi
+- **Umphakathi** wekufuna nekutfola letinye temalunga
 
-## Kufinyelela Ngelucingo Lakho
+## Kufinyelela Ngeselfoni Yakho
 
-I-B1.church isebenta kuwuphi umcwayisi we-inthanethi yelucingo. Kuze utfole live lelifana kakhulu ne-app, faka iphothali yemalungu lelibandla lakini njenge-**Progressive Web App (PWA)** — uyifake ekhasini lekucala lelucingo lakho ngco kusuka ku-Safari nome Chrome, kungadzingeki i-app store. Bona [Kufaka Njenge-App (PWA)](./installing-pwa.md) kutfola imiyalo.
-
-:::info
-I-app leyekucala yendabuko ye-B1 Mobile seyiyekiwe kusetjentiswa. I-PWA yindlela leyeseketwako yekusebentisa i-B1.church elucingweni kusukela manje kuya embili — bona [likhasi lekubhekiswa kwe-B1 Mobile](/docs/b1-mobile/) kutfola imibhalo yayo yasendulo.
-:::
+B1.church isebenta kunoma yiliphi sisilawuli sefoni. Ngekuhlangenela okufanako nalesisebenta ngetohlelo lekusebenta, faka liphothali lelilunga lebandla lakho njenge **Progressive Web App (PWA)** — vakashela `https://yourchurchname.b1.church/mobile/install` ngetinyatselo letitfolakala kuwe ngemodeli yefoni yakho, noma ungeta kusikrini sakho sekhaya ngekuqondile kuSafari noma Chrome. Kadzingeki isitolo setinhlelo. Bona [Ukufaka njenge-App (PWA)](./installing-pwa.md) ngetimiyalo.
 
 ## Tinyatselo Letilandzelako
 
-- [Kungena](./logging-in.md) -- Fundza kutsi ungangena futsi uphatse njani sikhatsi sakho sekungena.
-- [Kuhamba nge-B1App](./navigating.md) -- Tfola indlela yakho ephothalini yemalungu.
-- [Kufaka Njenge-App (PWA)](./installing-pwa.md) -- Faka i-B1.church ekhasini lekucala lelucingo lakho.
+- [Kungena](./logging-in.md) -- Funda kutsi ungena kanjani uphindze uphatse sikhatsi sakho semsebenti.
+- [Kuhamba ku-B1App](./navigating.md) -- Thola indlela eliphothali lelilunga.
+- [Ukufaka njenge-App (PWA)](./installing-pwa.md) -- Faka B1.church esikrinini sekhaya sefoni yakho.

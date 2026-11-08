@@ -1,39 +1,39 @@
 ---
-title: "Menginstal sebagai Aplikasi (PWA)"
-description: "Pasang B1.church sebagai aplikasi di iPhone atau Android dari portal anggota, menambahkan ikonnya ke layar utama lewat Safari atau Chrome."
+title: "Memasang sebagai Aplikasi (PWA)"
+description: "Pasang B1.church sebagai aplikasi di iPhone atau Android dari portal anggota, dengan menambahkan ikonnya ke layar utama lewat Safari atau Chrome."
 ---
 
-# Menginstal sebagai Aplikasi (PWA)
+# Memasang sebagai Aplikasi (PWA)
 
 <div class="article-intro">
 
-B1.church mendukung instalasi sebagai Progressive Web App (PWA), yang memungkinkan Anda menambahkan portal anggota gereja ke layar utama ponsel, sama seperti aplikasi native. Dengan cara ini, Anda mendapatkan pengalaman layar penuh seperti aplikasi tanpa perlu mengunduh dari App Store atau Google Play.
+B1.church mendukung pemasangan sebagai Progressive Web App (PWA), yang memungkinkan Anda menambahkan portal anggota gereja ke layar utama ponsel, seperti aplikasi biasa. Dengan cara ini Anda mendapatkan pengalaman layar penuh yang mirip aplikasi, tanpa harus mengunduh dari App Store atau Google Play.
 
 </div>
 
 <div class="prereqs">
 <h4>Sebelum Memulai</h4>
 
-- Anda memerlukan URL B1.church gereja Anda: `https://yourchurchname.b1.church`
-- Gunakan peramban yang didukung: **Safari** di iOS atau **Chrome** di Android
+- Anda memerlukan alamat B1.church gereja Anda: `https://yourchurchname.b1.church`
+- Gunakan browser yang didukung: **Safari** di iOS atau **Chrome** di Android
 
 </div>
 
 ## Apa itu PWA?
 
-Progressive Web App (PWA) adalah situs web yang dapat diinstal di perangkat Anda dan berperilaku seperti aplikasi native. Ketika Anda menginstal B1.church sebagai PWA, aplikasi ini:
+Progressive Web App (PWA) adalah situs web yang dapat dipasang di perangkat Anda dan berperilaku seperti aplikasi biasa. Saat Anda memasang B1.church sebagai PWA, aplikasi ini:
 
-- Terbuka dalam layar penuh tanpa bilah navigasi peramban
+- Terbuka layar penuh tanpa bilah navigasi browser
 - Muncul di layar utama dengan ikon dan nama gereja Anda
 - Menyesuaikan dengan identitas visual dan warna tema gereja Anda
 
 :::tip
-PWA adalah pilihan yang baik jika Anda lebih suka tidak menginstal aplikasi terpisah dari App Store atau Google Play. PWA memberikan pengalaman portal anggota yang sama seperti di peramban, dalam bentuk yang lebih praktis.
+PWA adalah pilihan yang baik jika Anda lebih suka tidak memasang aplikasi terpisah dari App Store atau Google Play. PWA memberikan pengalaman portal anggota yang sama seperti di browser, dengan cara yang lebih praktis.
 :::
 
-## Halaman Instalasi
+## Halaman Pemasangan
 
-Cara termudah untuk menginstal adalah melalui halaman instalasi khusus gereja Anda:
+Cara termudah untuk memasang adalah melalui halaman pemasangan khusus gereja Anda:
 
 ```
 https://yourchurchname.b1.church/mobile/install
@@ -41,65 +41,59 @@ https://yourchurchname.b1.church/mobile/install
 
 Halaman ini secara otomatis mendeteksi perangkat Anda dan menampilkan petunjuk yang sesuai:
 
-- **iPhone** — petunjuk langkah demi langkah "Tambahkan ke Layar Utama" dengan Safari
-- **Android** — tombol **Instal di Layar Utama** satu ketuk di Chrome
-- **Desktop** — kode QR yang dapat Anda pindai dengan ponsel untuk membuka halaman instalasi di sana
+- **iPhone** — petunjuk langkah demi langkah "Add to Home Screen" di Safari
+- **Android** — tombol **Install on Home Screen** di Chrome yang cukup ditekan sekali
+- **Desktop** — kode QR yang dapat Anda pindai dengan ponsel untuk membuka halaman pemasangan di sana
 
-Anda dapat membuka halaman instalasi dengan beberapa cara:
+Anda dapat membuka halaman pemasangan dengan beberapa cara:
 
-- Ketuk **Lainnya** di portal anggota, lalu ketuk **Instal Aplikasi** di bagian **Akun** (item ini disembunyikan setelah aplikasi terpasang)
-- Ikuti tautan yang dibagikan gereja Anda melalui pesan teks, email, atau dari layar ibadah Minggu
-- Ketik URL langsung di peramban Anda
+- Ketuk **More** di portal anggota, lalu ketuk **Install App** di bawah **Account** (item ini disembunyikan setelah aplikasi terpasang)
+- Ikuti tautan yang dibagikan gereja Anda lewat pesan teks, email, atau dari layar ibadah Minggu
+- Ketik alamat URL langsung di browser Anda
 
 :::tip Untuk staf gereja
-Bagikan tautan halaman instalasi kepada jemaat Anda. Letakkan di buletin, newsletter, atau di slide. Halaman ini memandu setiap anggota melalui langkah-langkah yang tepat untuk perangkat mereka. Anda juga dapat mengaksesnya dari tindakan cepat **Unduh Aplikasi** di dasbor B1Admin Anda.
+Bagikan tautan halaman pemasangan kepada jemaat — cantumkan di buletin, newsletter, atau pada slide. Halaman ini memandu setiap anggota melalui langkah-langkah yang tepat untuk perangkatnya. Anda juga dapat membukanya dari aksi cepat **Download the App** di dasbor B1Admin.
 :::
 
-Anda juga dapat menginstal PWA secara manual dari **halaman mana pun** di situs B1.church gereja Anda menggunakan langkah-langkah peramban di bawah ini. Halaman instalasi hanyalah cara terpandu untuk melakukannya.
+Anda juga dapat memasang PWA secara manual dari **halaman mana pun** di situs B1.church gereja Anda dengan mengikuti langkah-langkah browser di bawah ini — halaman pemasangan hanyalah cara yang dipandu untuk melakukannya.
 
-Ketika Anda membuka aplikasi yang sudah terinstal, aplikasi akan langsung menuju dasbor anggota Anda, siap untuk Anda masuk.
+Saat Anda membuka aplikasi yang sudah terpasang, aplikasi akan langsung menampilkan dasbor anggota Anda, siap untuk Anda masuk.
 
-## Menginstal di iPhone (iOS — Safari)
+## Memasang di iPhone (iOS — Safari)
 
 1. Buka **Safari** di iPhone Anda dan kunjungi `https://yourchurchname.b1.church/mobile/install` (ganti `yourchurchname` dengan slug URL gereja Anda).
-2. Ketuk tombol **Bagikan** (kotak dengan panah mengarah ke atas) di bagian bawah layar.
-3. Gulir ke bawah di lembar bagikan dan ketuk **Tambahkan ke Layar Utama**.
-4. Nama akan otomatis diisi dengan nama gereja Anda. Ketuk **Tambah** di pojok kanan atas.
+2. Ketuk tombol **Share** (kotak dengan panah mengarah ke atas) di bagian bawah layar.
+3. Gulir ke bawah pada menu berbagi dan ketuk **Add to Home Screen**.
+4. Nama akan otomatis terisi dengan nama gereja Anda. Ketuk **Add** di pojok kanan atas.
 
-Ikon aplikasi akan muncul di layar utama Anda. Ketuk ikon tersebut untuk membuka portal anggota dalam mode layar penuh.
+Ikon aplikasi akan muncul di layar utama. Ketuk ikon tersebut untuk membuka portal anggota dalam mode layar penuh.
 
 :::info
-Instalasi PWA di iOS memerlukan Safari. Jika Anda menggunakan Chrome atau peramban lain di iPhone, beralihlah ke Safari terlebih dahulu.
+Pemasangan PWA di iOS memerlukan Safari. Jika Anda menggunakan Chrome atau browser lain di iPhone, beralihlah ke Safari terlebih dahulu.
 :::
 
-## Menginstal di Android (Chrome)
+## Memasang di Android (Chrome)
 
 1. Buka **Chrome** di perangkat Android Anda dan kunjungi `https://yourchurchname.b1.church/mobile/install`.
-2. Ketuk tombol **Instal di Layar Utama**. (Jika tombol tidak tersedia, ketuk menu tiga titik (⋮) di pojok kanan atas dan pilih **Tambahkan ke layar utama**.)
-3. Ketuk **Tambah** saat diminta.
+2. Ketuk tombol **Install on Home Screen**. (Jika tombol tidak tersedia, ketuk menu tiga titik (⋮) di pojok kanan atas lalu pilih **Add to Home screen**.)
+3. Ketuk **Add** saat diminta.
 
-Ikon aplikasi akan muncul di layar utama Anda. Ketuk ikon tersebut untuk membuka portal anggota.
+Ikon aplikasi akan muncul di layar utama. Ketuk ikon tersebut untuk membuka portal anggota.
 
-## Setelah Instalasi
+## Setelah Memasang
 
-Setelah terinstal, PWA akan langsung membuka portal anggota dalam jendela layar penuh tersendiri. Anda dapat:
+Setelah terpasang, PWA langsung membuka portal anggota dalam jendela layar penuh tersendiri. Anda dapat:
 
-- Masuk dengan akun ChurchApps yang sudah ada
-- Mengakses semua fitur anggota yang diaktifkan gereja Anda, seperti kelompok, persembahan, check-in, rencana pelayanan, dan lainnya
-- Kembali ke aplikasi kapan saja dengan mengetuk ikon di layar utama Anda
+- Masuk dengan akun ChurchApps yang sudah Anda miliki
+- Mengakses semua fitur anggota yang diaktifkan gereja Anda — kelompok, persembahan, check-in, rencana pelayanan, dan lainnya
+- Kembali kapan saja dengan mengetuk ikonnya di layar utama
 
-Ikon aplikasi akan menampilkan **lencana notifikasi** (lencana angka kecil) ketika Anda memiliki pesan yang belum dibaca, sehingga Anda dapat melihat sekilas jika ada sesuatu yang baru untuk Anda.
+Ikon aplikasi akan menampilkan **lencana notifikasi** (lencana angka kecil) saat Anda memiliki pesan yang belum dibaca, sehingga Anda dapat melihat sekilas jika ada sesuatu yang baru.
 
 :::info
-PWA memerlukan koneksi internet. Berbeda dengan beberapa aplikasi native, PWA tidak menyimpan semua konten untuk digunakan secara offline.
+PWA memerlukan koneksi internet. Berbeda dengan beberapa aplikasi native, PWA tidak menyimpan seluruh konten untuk digunakan secara offline.
 :::
-
-## Bagaimana dengan Aplikasi B1 Mobile Lama?
-
-Aplikasi native **B1 Mobile** lama untuk iOS dan Android sudah tidak digunakan lagi dan tidak lagi diperbarui. PWA adalah cara resmi untuk mengakses portal anggota B1.church di ponsel ke depannya, dan PWA mencakup setiap fitur yang dulu ditawarkan aplikasi native untuk anggota. Jika sebelumnya Anda sudah menginstal aplikasi native, silakan beralih ke PWA kapan saja Anda siap.
-
-Lihat [Halaman referensi B1 Mobile](/docs/b1-mobile/) untuk dokumentasi historis tentang aplikasi yang sudah tidak digunakan lagi.
 
 ## Artikel Terkait
 
-- [Masuk ke Akun](./logging-in.md) — Cara masuk ke akun B1.church Anda
+- [Logging In](./logging-in.md) — Cara masuk ke akun B1.church Anda

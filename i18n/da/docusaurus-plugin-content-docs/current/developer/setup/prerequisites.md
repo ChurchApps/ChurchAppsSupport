@@ -1,80 +1,80 @@
 ---
 title: "Forudsætninger"
-description: "Opsæt Node.js, npm, Git og platformsværktøjer, før du arbejder lokalt på ChurchApps-projekter som B1 Admin, Lessons.church, FreePlay eller API'et."
+description: "Installer Node.js, npm, Git og platformsspecifikke værktøjer, før du arbejder med ChurchApps-projekter som B1 Admin, Lessons.church, FreePlay eller API'et lokalt."
 ---
 
 # Forudsætninger
 
 <div class="article-intro">
 
-De værktøjer, du har brug for, afhænger af, hvilke projekter du planlægger at arbejde på. Denne side viser alle påkrævede software organiseret efter udviklingsfelt, fra universelle krav til platform-specifikke værktøjskæder.
+De værktøjer, du har brug for, afhænger af, hvilke projekter du vil arbejde på. Denne side viser al påkrævet software, opdelt efter udviklingsområde, fra de generelle krav til de platformsspecifikke værktøjer.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynder</h4>
 
-- Gennemgå [Projektoversigt](./project-overview.md) for at bestemme, hvilke projekter du vil arbejde på
-- Har administratoradgang på din udviklingsmaskine til installation af software
+- Gennemgå [Projektoversigten](./project-overview.md) for at finde ud af, hvilke projekter du vil arbejde på
+- Du skal have administratoradgang på din udviklingsmaskine for at installere software
 
 </div>
 
 ## Alle projekter
 
-Disse er påkrævede uanset, hvilket projekt du arbejder på:
+Disse er påkrævet, uanset hvilket projekt du arbejder på:
 
-| Tool | Version | Notes |
+| Værktøj | Version | Noter |
 |------|---------|-------|
-| **Node.js** | 20+ | Version 22+ påkrævet for B1App og LessonsApp (Next.js 16) |
-| **npm** | Kommer med Node.js | Bruges som package manager på tværs af alle projekter |
-| **Git** | Seneste | Hvert projekt er et separat lager |
+| **Node.js** | 20+ | Version 22+ kræves til B1App og LessonsApp (Next.js 16); 24+ kræves til Api'et |
+| **npm** | Følger med Node.js | Bruges som pakkehåndtering på tværs af alle projekter |
+| **Git** | Seneste | Hvert projekt er et separat repository |
 
 :::tip
-Brug en Node version manager som [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) eller [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) til let at skifte mellem Node-versioner.
+Brug en Node-versionshåndtering som [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) eller [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) for nemt at skifte mellem Node-versioner.
 :::
 
-## Backend API-udvikling
+## Udvikling af backend-API
 
-Hvis du planlægger at køre API'en lokalt (i stedet for at pege på staging):
+Hvis du vil køre API'et lokalt (i stedet for at pege på demo-API'erne):
 
-| Tool | Version | Notes |
+| Værktøj | Version | Noter |
 |------|---------|-------|
 | **MySQL** | 8.0+ | Hvert API-modul bruger sin egen database |
 
-Du får brug for seks databaser for kerne-API'en: `membership`, `attendance`, `content`, `giving`, `messaging` og `doing`. API'en indeholder scripter til initialisering af skemaet -- se vejledningen [Lokalt API Setup](../api/local-setup.md).
+Du skal bruge seks databaser til kerne-API'et: `membership`, `attendance`, `content`, `giving`, `messaging` og `doing`. API'et indeholder scripts, der initialiserer skemaet -- se guiden [API lokal opsætning](../api/local-setup.md).
 
-## Mobil-app udvikling
+## Udvikling af mobilapp
 
-For B1Mobile, B1Checkin, LessonsScreen eller andre React Native / Expo-apps:
+Til B1Checkin, LessonsScreen eller andre React Native / Expo-apps:
 
-| Tool | Version | Notes |
+| Værktøj | Version | Noter |
 |------|---------|-------|
 | **Expo CLI** | Seneste | Installer globalt: `npm install -g expo-cli` |
-| **Android Studio** | Seneste | Påkrævet til Android-udvikling (inkluderer Android SDK) |
-| **Xcode** | Seneste | Påkrævet til iOS-udvikling (kun macOS) |
+| **Android Studio** | Seneste | Kræves til Android-udvikling (inkluderer Android SDK) |
+| **Xcode** | Seneste | Kræves til iOS-udvikling (kun macOS) |
 
 :::info
-Du kan bruge Expo Go-appen på en fysisk enhed til hurtig test uden Android Studio eller Xcode. Dog kræver byggeri af produktionsbinære filer de oprindelige værktøjskæder.
+Du kan bruge Expo Go-appen på en fysisk enhed til hurtig test uden Android Studio eller Xcode. Til at bygge produktionsbinære filer kræves dog de native værktøjskæder.
 :::
 
-## FreeShow (Desktop App) Udvikling
+## Udvikling af FreeShow (desktopapp)
 
-FreeShow har yderligere native build-afhængigheder, fordi den kompilerer native Node-moduler (som `canvas`):
+FreeShow har yderligere native byggeafhængigheder, fordi det kompilerer native Node-moduler (som `canvas`):
 
 ### Alle platforme
 
-| Tool | Version | Notes |
+| Værktøj | Version | Noter |
 |------|---------|-------|
-| **Python** | 3.12 | Påkrævet af `node-gyp` til kompilering af native moduler |
-| **setuptools** | Seneste | Installer via `pip install setuptools` |
+| **Python** | 3.12 | Kræves af `node-gyp` til kompilering af native moduler |
+| **setuptools** | Seneste | Installeres via `pip install setuptools` |
 
 ### Windows
 
-| Tool | Notes |
+| Værktøj | Noter |
 |------|-------|
-| **Visual Studio** | Community edition er tilstrækkelig |
-| **"Skrivebordudvikling med C++"-arbejdsbelastning** | Vælg under Visual Studio-installation |
-| **Windows 10 SDK** | Inkluderet i C++-arbejdsbelastningen; sørg for, at den er markeret |
+| **Visual Studio** | Community-udgaven er tilstrækkelig |
+| **"Desktop development with C++"-arbejdsbyrde** | Vælg under installationen af Visual Studio |
+| **Windows 10 SDK** | Inkluderet i C++-arbejdsbyrden; sørg for, at den er markeret |
 
 Du kan installere Visual Studio build tools via kommandolinjen:
 
@@ -82,7 +82,7 @@ Du kan installere Visual Studio build tools via kommandolinjen:
 npm install --global windows-build-tools
 ```
 
-Eller installer Visual Studio Community og vælg "Skrivebordudvikling med C++"-arbejdsbelastningen under installationen.
+Eller installer Visual Studio Community og vælg arbejdsbyrden "Desktop development with C++" under installationen.
 
 ### Linux
 
@@ -92,7 +92,7 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Xcode Command Line Tools er typisk tilstrækkelig:
+Xcode Command Line Tools er normalt tilstrækkelige:
 
 ```bash
 xcode-select --install
@@ -100,16 +100,16 @@ xcode-select --install
 
 ## Bekræft din installation
 
-Kør disse kommandoer for at bekræfte, at alt er installeret:
+Kør disse kommandoer for at kontrollere, at alt er installeret:
 
 ```bash
 node --version    # Bør udskrive v20.x.x eller højere
 npm --version     # Bør udskrive 10.x.x eller højere
 git --version     # Bør udskrive git version 2.x.x
-mysql --version   # Kun påkrævet til lokal API-udvikling
+mysql --version   # Kun nødvendig til lokal API-udvikling
 ```
 
 ## Næste trin
 
-- **[Projektoversigt](./project-overview.md)** -- Se alle projekter og hvad de gør
-- **[Miljøvariabler](./environment-variables.md)** -- Konfigurér dine `.env`-filer
+- **[Projektoversigt](./project-overview.md)** -- Se alle projekter, og hvad de gør
+- **[Miljøvariabler](./environment-variables.md)** -- Konfigurer dine `.env`-filer

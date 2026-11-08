@@ -377,16 +377,10 @@
     "message": "人、グループ、出席、寄付などのための教会管理ダッシュボード。"
   },
   "homepage.products.b1website.title": {
-    "message": "B1 ウェブサイト"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "公開教会ウェブサイトとメンバーポータル。"
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 モバイル"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "iOS と Android 向けの従来のメンバーアプリ。現在は B1.church のWebアプリに置き換えられています。"
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 チェックイン"

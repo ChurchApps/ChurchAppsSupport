@@ -1,58 +1,57 @@
 ---
 title: "Üçüncü Taraf Sağlayıcılar"
-description: "Üçüncü taraf sayfasından Lessons.church'e harici bir müfredat akışı ekleyin; ardından sağlayıcı bağlantılarını gerektiğinde görüntüleyin, güncelleyin veya kaldırın."
+description: "Lessons.church Harici Sağlayıcılar sayfasında bir Açık Ders Formatı müfredat akışı ekleyin; ardından kilisenizin dersleri planlayabilmesi için bunu düzenleyin veya silin."
 ---
 
 # Üçüncü Taraf Sağlayıcılar
 
 <div class="article-intro">
 
-Lessons.church, Açık Ders Formatı aracılığıyla harici müfredat sağlayıcılarını destekler. Bu, diğer kuruluşlardan içerik içe aktarabileceğiniz ve bunları yerleşik kütüphanenin yanında kullanıma sunabileceğiniz anlamına gelir. Böylece kiliselerin birden fazla kaynaktan gelen müfredata tek bir yerden erişmesi sağlanır.
+Lessons.church, Açık Ders Formatı aracılığıyla harici müfredat sağlayıcılarını destekler. Bu sayede kiliseniz, başka kuruluşların müfredatını bağlayabilir ve bunu yerleşik kütüphanenin yanındaki sınıflarınız için planlayabilir. Böylece ekibiniz farklı kaynaklardan gelen müfredatı tek bir yerde bulabilir.
 
 </div>
 
 <div class="prereqs">
 <h4>Başlamadan Önce</h4>
 
-- Lessons.church için yönetici izinlerinizin olması gerekir (bkz. [Yönetim genel bakış](./index.md))
-- Bağlanmak istediğiniz harici sağlayıcıdan besleme URL'sini edinmiş olmanız gerekir
+- Kilisenizin sınıf programlarını yönetebilen bir hesapla Lessons.church'e giriş yapın
+- Bağlamak istediğiniz harici sağlayıcıdan akış URL'sini alın. Bu URL, dersleri [Açık Ders Formatı](./open-lesson-format.md) ile döndürmelidir
 
 </div>
 
 ## Sağlayıcı Ekleme
 
-1. **Yönetici** alanına gidin.
-2. **Üçüncü Taraf** sayfasını açın.
-3. **Sağlayıcı Ekle** düğmesine tıklayın (veya yeni bir bağlantı eklemek için eşdeğer düğme).
-4. Sağlayıcının **besleme URL'sini** girin. Bu, sağlayıcının müfredat verilerini Açık Ders Formatında yayımladığı URL'dir.
-5. Bağlantıyı kaydedin.
+1. Lessons.church gezinme menüsünde **Harici Sağlayıcılar**'a tıklayın. **Harici Ders Sağlayıcıları** sayfası açılır.
+2. **Sağlayıcı Ekle**'ye tıklayın. Henüz hiç sağlayıcı eklemediyseniz, bunun yerine **İlk Sağlayıcıyı Ekle**'ye tıklayın.
+3. **Sağlayıcı Adı** alanına bir ad girin. Ekibiniz sağlayıcıyı seçerken bu adı görür.
+4. **API URL** alanına adresi girin. Bu, sağlayıcının müfredatını Açık Ders Formatında yayımladığı adrestir.
+5. **Kaydet**'e tıklayın.
 
-Kaydedildikten sonra Lessons.church, sağlayıcının içeriğini içe aktarmaya başlayacaktır. Programları, çalışmaları ve dersleri, kendi içeriğinizin yanında müfredat kütüphanesinde görünecektir.
+Sağlayıcı yalnızca kiliseniz için eklenir. Bir sınıf için [ders planlarken](../classrooms/scheduling-lessons.md) **Sağlayıcı** seçeneklerinde ve bir [yıllık plan](./managing-year-plans.md) oluştururken **Kaynak** seçeneklerinde görünür.
 
 ## Sağlayıcıları Yönetme
 
-**Üçüncü Taraf** sayfasında bağlı tüm sağlayıcıları görebilirsiniz. Her sağlayıcı için şunları yapabilirsiniz:
+**Harici Ders Sağlayıcıları** sayfası, kilisenizin eklediği tüm sağlayıcıları listeler. Bir sağlayıcıyı değiştirmek için:
 
-- İçeriğin doğru şekilde alındığını doğrulamak için içe aktarılan içeriği **görüntüleyin**.
-- Sağlayıcı uç noktasını değiştirirse besleme URL'sini **güncelleyin**.
-- Artık içeriklerini dahil etmek istemiyorsanız bir sağlayıcıyı **kaldırın**.
+- **Düzenle** -- **Sağlayıcıyı düzenle** (kalem) simgesine tıklayın, **Sağlayıcı Adı** veya **API URL** alanını değiştirin ve **Kaydet**'e tıklayın.
+- **Sil** -- **Sağlayıcıyı düzenle** simgesine tıklayın, ardından sil (çöp kutusu) simgesine tıklayıp onaylayın.
 
 ## Açık Ders Formatı Nedir?
 
-Açık Ders Formatı; programlar, çalışmalar, dersler, mekanlar, bölümler ve eylemler gibi müfredat içeriğini yapılandırılmış bir biçimde tanımlayan standartlaştırılmış bir şemadır. Bu formatı kullanarak içeriğini yayımlayan herhangi bir kuruluş, Lessons.church'te sağlayıcı olarak eklenebilir.
+Açık Ders Formatı, müfredat içeriğini -- programları, çalışmaları, dersleri, mekânları, bölümleri ve eylemleri -- yapılandırılmış bir biçimde tanımlayan standart bir şemadır. Bu formatı kullanarak içeriğini yayımlayan herhangi bir kuruluş, Lessons.church'te sağlayıcı olarak eklenebilir.
 
-Müfredatınızı Lessons.church aracılığıyla kullanıma sunmakla ilgileniyorsanız, tam şema belgelerine [Açık Ders Formatı](./open-lesson-format.md) kılavuzundan ulaşabilirsiniz.
+Müfredatınızı Lessons.church üzerinden kullanılabilir hale getirmek istiyorsanız, tam şema belgelerini [Açık Ders Formatı](./open-lesson-format.md) kılavuzunda bulabilirsiniz.
 
-## Üçüncü Taraf Sağlayıcıları Neden Kullanmalısınız?
+## Üçüncü Taraf Sağlayıcılar Neden Kullanılır?
 
-- **Kiliseler için daha fazla seçenek** -- Kiliseler, platformdan ayrılmadan daha geniş bir müfredat çeşitliliğine göz atabilir.
+- **Kiliseler için daha fazla seçenek** -- Kiliseler, platformdan ayrılmadan çok daha geniş bir müfredat yelpazesine göz atabilir.
 - **Her şey tek bir yerde** -- Gönüllülerin ve koordinatörlerin dersleri bulmak ve planlamak için birden fazla web sitesini ziyaret etmesi gerekmez.
-- **Kolay kurulum** -- Bir sağlayıcı eklemek yalnızca bir besleme URL'si gerektirir. Manuel veri girişi veya dosya yükleme gerekmez.
+- **Kolay kurulum** -- Sağlayıcı eklemek yalnızca bir ad ve akış URL'si gerektirir. Manuel veri girişi veya dosya yükleme gerekmez.
 
 :::info
-Üçüncü taraf içeriği harici sağlayıcı tarafından yönetilir. Bir sağlayıcıdan eksik veya güncel olmayan içerik fark ederseniz, sorunun sağlayıcının tarafında çözülmesi gerekebilir.
+Üçüncü taraf içerik, harici sağlayıcı tarafından yönetilir. Bir sağlayıcıdan eksik veya güncel olmayan içerik fark ederseniz, sorunun sağlayıcının tarafında çözülmesi gerekebilir.
 :::
 
 :::tip
-Kilise düzeyindeki harici sağlayıcı yapılandırması (yönetici düzeyinde olmayan) için, Göz Atma bölümündeki [Harici Sağlayıcılar](../browsing/external-providers.md) sayfasına bakın.
+Harici bir sağlayıcının derslerinin, planlandıktan sonra nasıl göründüğünü öğrenmek için Tarayıcılar bölümündeki [Harici Sağlayıcılar](../browsing/external-providers.md) sayfasına bakın.
 :::

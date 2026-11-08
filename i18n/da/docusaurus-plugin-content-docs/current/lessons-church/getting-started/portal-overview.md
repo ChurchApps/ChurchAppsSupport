@@ -1,18 +1,18 @@
 ---
-title: "Portal oversigt"
-description: "Tag en rundtur i Lessons.church-portalen for at finde klasseværelser, gennemse planlagte lektioner, opsæt feedlinks og komme til eksterne udbydere og admin-værktøjer."
+title: "Portaloversigt"
+description: "Se rundt i Lessons.church-portalen for at finde klasselokaler, gennemgå planlagte lektioner, opsætte feed-links og komme til eksterne udbydere og administrationsværktøjer."
 ---
 
-# Portal oversigt
+# Portaloversigt
 
 <div class="article-intro">
 
-Efter login til Lessons.church bliver du taget til **Portalen** -- dit kirkes dashboard til administrering af klasseværelser og lektionsplaner. Dette er, hvor du vil bruge det meste af din tid, når du organiserer undervisningsplan til din kirke.
+Når du har logget ind på Lessons.church, kommer du til **Portalen** -- din kirkes dashboard til administration af klasselokaler og lektionsplaner. Det er her, du kommer til at bruge det meste af din tid, når du tilrettelægger undervisningsmaterialet til din kirke.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du går i gang</h4>
 
 - [Opret en konto](./creating-account.md) og forbind til din kirke
 - Log ind på [Lessons.church](https://lessons.church)
@@ -21,40 +21,40 @@ Efter login til Lessons.church bliver du taget til **Portalen** -- dit kirkes da
 
 ## Hvad du ser
 
-Portalen er organiseret i to hovedområder:
+Portalen åbner på siden **Klasseadministration**, som er opdelt i to hovedområder:
 
-- **Klasseværelser** (højre side) -- En liste over dine kirkes klasseværelser. Klik på et klasseværelsesnavn for at se dets planlagte lektioner. Du kan også tilføje nye klasseværelser eller redigere eksisterende fra her.
-- **Planlagte lektioner** (venstre side) -- Når du vælger et klasseværelse, viser dette område de lektioner, der er planlagt til det. Hvis du ikke endnu har opsat nogle klasseværelser, vil du se en opsætnings-instruktions-video for at hjælpe dig i gang.
+- **Klasselokaler** (til højre) -- En liste over din kirkes klasselokaler. Klik på et klasselokales navn for at se dets planlagte lektioner. Herfra kan du også tilføje nye klasselokaler eller redigere eksisterende.
+- **Lektionsplan** (til venstre) -- Når du har valgt et klasselokale, viser dette område de lektioner, der er planlagt til det. Hvis du endnu ikke har oprettet nogen klasselokaler, ser du en opsætningsvideo, der hjælper dig i gang.
 
 ## Hvad du kan gøre fra portalen
 
 Fra portalen kan du:
 
-1. **Administrer klasseværelser** -- Tilføj, rediger eller fjern klasseværelser. Hvert klasseværelse kan linkes til et frivillig-hold (så de ser kommende lektioner i B1-appen) og en forælder/studie-gruppe (så de kan få adgang til nylige lektioner).
-2. **Se og administrer planlagte lektioner** -- Se, hvilke lektioner der kommer til hver klasseværelse, og foretag ændringer efter behov.
-3. **Abonnér på klasseværelses-feeds** -- Klik feed-ikonet ud for et klasseværelse for at få en afspillingslist feed-URL, du kan bruge med kompatible apps.
-4. **Adgang til eksterne udgivere** -- Brug siden **Eksterne udgivere** for at konfigurere tredjepartsindhold-kilder, der understøtter Open Lesson Format. Dette lader dig bringe lektioner fra andre udgivere ud over det indbyggede Lessons.church-bibliotek.
-5. **Adgang til Admin-området** -- Hvis du har admin-tilladelser, vil du se en **Admin**-option i navigationen. Admin-området lader dig administrere programmer, studier og lektioner på et indholds-niveau.
+1. **Administrere klasselokaler** -- Tilføje, redigere eller fjerne klasselokaler. Hvert klasselokale kan knyttes til et frivilligt team (så de kan se kommende lektioner i B1-appen) og til en forældre- eller elevgruppe (så de kan få adgang til nylige lektioner). Kirker, der stadig bruger denne klasseplan, åbner klasselokalesiden (uden `?upcoming=1`) for at se hjemmeopgaveindhold. Kirker, der bruger B1Admin-planstyper, ser i stedet hjemmeopgavekortet på den tilknyttede gruppes side i B1.
+2. **Se og administrere planlagte lektioner** -- Se, hvilke lektioner der kommer op for hvert klasselokale, og foretag ændringer efter behov.
+3. **Abonnere på klasselokalefeeds** -- Klik på feed-ikonet ved siden af et klasselokale for at få en afspilningslisteadresse, som du kan bruge i kompatible apps.
+4. **Få adgang til eksterne udbydere** -- Brug siden **Eksterne udbydere** til at konfigurere tredjepartsindholdskilder, der understøtter Open Lesson Format. Det gør det muligt at hente lektioner fra andre udbydere ud over Lessons.churchs indbyggede bibliotek.
+5. **Få adgang til administrationsområdet** -- Hvis du har administratorrettigheder, ser du en mulighed for **Admin** i navigationen. Administrationsområdet giver dig mulighed for at administrere programmer, studier og lektioner på indholdsniveau.
 
 ## Navigation
 
-Portal-navigationen inkluderer:
+Portalens navigation indeholder:
 
-- **Hjem** -- Vend tilbage til den offentlige Lessons.church-hjemmeside for at browse indhold.
-- **Planer** -- Hoved-portal-visningen til administrering af klasseværelser og lektionsplaner.
-- **Eksterne udgivere** -- Konfigurer tredjepartslektion-udgivere.
-- **Admin** -- Administrer programmer, studier og lektionsindhold (synligt kun, hvis du har admin-tilladelser).
+- **Hjem** -- Gå tilbage til Lessons.churchs offentlige startside for at gennemse indhold.
+- **Skemaer** -- Hovedvisningen i portalen til administration af klasselokaler og lektionsplaner.
+- **Eksterne udbydere** -- Konfigurer tredjeparts lektionsudbydere.
+- **Admin** -- Administrer programmer, studier og lektionsindhold (kun synlig, hvis du har administratorrettigheder).
 
 :::info
-**Admin**-muligheden vises kun, hvis din konto er blevet givet indhold-redigeringstilladelser. De fleste kirkemedarbejdere bruger siderne **Planer** og **Eksterne udgivere** til daglig administration.
+Muligheden **Admin** vises kun, hvis din konto har fået tilladelse til at redigere indhold. De fleste medarbejdere i kirken vil bruge siderne **Skemaer** og **Eksterne udbydere** til den daglige administration.
 :::
 
-## Introduktion
+## Kom i gang
 
-Hvis du besøger portalen for første gang og ikke endnu har opret nogle klasseværelser, start med at klikke **Tilføj første klasseværelse** i klasseværelses-panelet. Giv dit klasseværelse et navn (for eksempel "Børnehave" eller "3.-5. klasse") og gem det. Derfra kan du begynde [planlægning af lektioner](../classrooms/scheduling-lessons.md).
+Hvis du besøger portalen for første gang og endnu ikke har oprettet nogen klasselokaler, skal du starte med at klikke på **Tilføj første klasselokale** i klasselokalepanelet. Giv dit klasselokale et navn (for eksempel „Børnehave" eller „3.-5. klasse") og gem det. Derfra kan du begynde at [planlægge lektioner](../classrooms/scheduling-lessons.md).
 
 ## Relaterede artikler
 
-- [Opsætning af klasseværelser](../classrooms/setting-up-classrooms.md) -- Detaljeret guide til oprettelse og administration af klasseværelser
-- [Browsing af indhold](../browsing/index.md) -- Find programmer og studier at planlægge
-- [Eksterne udgivere](../browsing/external-providers.md) -- Tilføj tredjepartsundervisningsplan-kilder
+- [Opsætning af klasselokaler](../classrooms/setting-up-classrooms.md) -- Detaljeret vejledning til oprettelse og administration af klasselokaler
+- [Gennemse indhold](../browsing/index.md) -- Find programmer og studier at planlægge
+- [Eksterne udbydere](../browsing/external-providers.md) -- Tilføj kilder til tredjeparts undervisningsmateriale

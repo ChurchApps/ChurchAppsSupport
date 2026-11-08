@@ -1,64 +1,68 @@
 ---
-title: "Kubuyeketa Umndeni Wakho"
-description: "Bhala kabusha umndeni wakho ku-B1 Checkin emva kwekukhetsa umuntfu, bese ukhetsa emaqembu sikhatsi ngasinye sekukhonta, bese uphawula kutsi ngabakhenti noma tisebenti ngaphambi kwekungena."
+title: "Kubuyekeza Umndeni Wakho"
+description: "Buyekeza umndeni wakho ku-B1 Checkin ngemva kokukhetha umuntu, bese ubela amaqembu ngesikhathi ngasinye senkonzo bese uchaza abavakashi noma abavolontiya ngaphambi kokungena."
 ---
 
-# Kubuyeketa Umndeni Wakho
+# Kubuyekeza Umndeni Wakho
 
 <div class="article-intro">
 
-Ngemuva kwekutsi ukhetse umuntfu kutiphumela tekufuna, i-app iyalayisha wonkhe umndeni wakho bese iwukhombisa eskrinini sekubuyeketa umndeni. Lena yindzawo lesemkhatsini yeluchungechunge lwekubhalisa lapho ungabona khona bonkhe emndenini wakho bese ulawula kwabelwa kwabo kwemacembu ngembi kwekubhalisa.
+Ngemva kokukhetha umuntu kumphumela wokusesha, uhlelo lulayisha umndeni wakho wonke bese luwubonisa esikrinini sokubuyekeza umndeni. Lesi yisikhungo senqubo yokungena lapho ungabona khona wonke umndeni wakho futhi uphathe ukwabiwa kwawo emaqenjini ngaphambi kokungena.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- [Khetsa inkhonzo](./selecting-service.md) kuskrini setinkhonzo
-- [Funa lilunga](./looking-up-members.md) bese ulikhetsa kutiphumela tekufuna
+- [Khetha inkonzo](./selecting-service.md) kusikrini sezinkonzo
+- [Sesha ilungu](./looking-up-members.md) bese uliKhetha emphumeleni wokusesha
 
 </div>
 
-## Kubuka Emalunga Emndeni
+## Ukubuka Amalungu Omndeni
 
-Lilunga ngalinye lemndeni livela njengekhadi lelinaloku:
+Ilungu ngalinye lomndeni livela njengekhadi elinalo:
 
-- **Sitfombe** sabo (nobe luphawu lwendzawo yesitfombe nangabe kute sitfombe lesigciniwe)
-- **Ligama** labo lelikhonjiswako
-- **Sifingqo sekwabelwa kwabo kwamanje kwemacembu** (sikhonjiswa njengemabhola lamancane ngaphansi kweligama nekhadi lisonyiwe)
-- **Luphawu lwekuvula/kusonta** ngasesandleni sesekudla
+- Isithombe salo (noma isithonjana sesithombe uma kungekho sithombe esigciniwe)
+- Igama lalo lokubonisa
+- Isifinyezo samaqembu alo amanje (abonakala njengamachips amancane ngaphansi kwegama lapho ikhadi libhalwe ngaphansi)
+- Ibhajji ethi **Sekungenile** uma selungenile kule nkonzo namuhla
+- Umcibisholo wokuvula/wokuvala ngakwesokudla
 
-## Kuvula Lilunga
+## Ukuvula Ilungu
 
-Cindzetela likhadi lelunga kute ulivule. Nasivuliwe, utawubona umugca ngasinye **sikhatsi senkhonzo** ngasinye ngekhatsi kwenkhonzo lekhetsiwe. Umugca ngamunye ukhombisa:
+Thepha ikhadi lelungu ukuzeulivule. Uma livuliwe, uzobona umugqa ngamunye we-**isikhathi senkonzo** ngaphakathi kwenkonzo ekhethiwe, okuqala kuqala. Izikhathi zenkonzo zihlelwa ngosuku nangesikhathi sokuqala esimisiwe uma sekusethiwe, kungenjalo ngesikhathi esisegameni lazo (ngakho "9:00 AM" iza ngaphambi kwe-"10:30 AM"). Izikhathi zenkonzo ezingenaso isikhathi segama lazo ziza ekugcineni, ngokwe-alfabhethi. Umugqa ngamunye ubonisa:
 
-- **Ligama lesikhatsi senkhonzo** (sibonelo, "9:00 ekuseni" nobe "11:00 ekuseni")
-- **Inkinobho** lekhombisa licembu lelabelwe kwamanje, nobe "Khetsa Licembu" nangabe kute licembu leselabelwe
+- **Igama lesikhathi senkonzo** (njengo "9:00 AM" noma "11:00 AM")
+- **Amaqembu atholakalayo** kulesi sikhathi senkonzo, abhalwe ngaphansi kwegama (njengo "Nursery, Preschool, Adult Bible Class"), ukuze ubone amakilasi atholakalayo ngaphambi kokukhetha
+- **Inkinobho** ebonisa iqembu elibelwe njengamanje, noma "Khetha Iqembu" uma iqembu lingakabelwa
 
-Cindzetela inkinobho yelicembu kute uye [kuskrini sekukhetsa licembu](./group-assignment.md) lapho ungakhetsa nobe ushintje khona licembu lalomuntfu kanye nesikhatsi senkhonzo.
+Uma isikhathi senkonzo sinohlelo lokungena ([check-in schedule](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule)) futhi ifasitela laso livaliwe njengamanje, umugqa ubonisa **Ivaliwe** esikhundleni senkinobho, kanye nesikhathi sokuvulwa esilandelayo uma sikhona, njengo **Ivaliwe · ivula Sun 9:30 AM**. Uma umuntu esevele engenile kulesi sikhathi senkonzo, umugqa ubonisa iqembu lakhe kanye nophawu lokuhlola esikhundleni (njengo **Kids Room 1 · Ungenile**), ukuze ubone lapho ekhona nakuba ifasitela livaliwe.
 
-Likhadi lelivuliwe likhombisa nemabhola latsi **Member**, **Guest**, ne**Volunteer**. Cindzetela linye kute uhlele kutsi lomuntfu ubhalisa njani -- Member yindlela lesetjentiswa ngekwehluleka. Lolusayina lubalulekile emakamelweni etingane: bavolontiya babalwa etilinganisweni tebavolontiya nengane, futsi tivakashi tibalwa emandleni etivakashi lawahlelwe libandla lakho.
+Thepha inkinobho yeqembu ukuze uye ku[sikrini sokukhetha iqembu](./group-assignment.md) lapho ungakhetha noma ushintshe iqembu lalo muntu kulesi sikhathi senkonzo.
 
-Cindzetela likhadi lelunga futsi kute ulisonte.
+Ikhadi elivuliwe futhi libonisa amachips **Ilungu**, **Isivakashi**, no **Umvolontiya**. Thepha enye ukuze usethe ukuthi lo muntu ungena kanjani. Ilungu yisimo sokuzenzela. Uhlobo luyabaluleka emakamelweni ezingane: abavolontiya babalwa ekulinganiseni kwabavolontiya nezingane zegumbi, futhi abavakashi babalwa kumkhawulo wabavakashi obeke ibandla lakho.
+
+Thepha ikhadi lelungu futhi ukuze uliwele.
 
 :::tip
-Awudzingi kwabela lilunga ngalinye lemndeni licembu. Bantfu labadzala labatawuya enkhonzweni lenkhulu bangashiywa bangenalo licembu lelabelwe. Yabela emacembu kuphela emalungeni ladzinga kubhaliswa kulikilasi nobe kuluhlelo lolutsite.
+Akudingeki ukuthi wabele wonke amalungu omndeni eqembu. Abantu abadala abaseceleni kwenkonzo yokukhonza enkulu bangashiywa ngaphandle kokubelwa iqembu. Beka amaqembu kuphela kumalungu adinga ukungena esigabeni noma ohlelweni oluthile.
 :::
 
-## Kuhamba Kusuka Kulesi Skrini
+## Ukuzula Kulesi Sikrini
 
-Kusukela eskrinini sekubuyeketa umndeni, unetikhetso letintsatfu:
+Kusikrini sokubuyekeza umndeni, unezinketho ezintathu:
 
-- **Vula lilunga** bese ucindzetele inkinobho yesikhatsi senkhonzo kute [uyabele nobe ushintje licembu](./group-assignment.md).
-- **Cindzetela inkinobho letsi Add Guest** ngaphansi kweluhlu lwemalunga kute [wengete sivakashi](./adding-guests.md) emndenini wakho.
-- **Cindzetela inkinobho letsi Check-in** ngaphansi kweskrini kute [ucedze kubhalisa](./completing-checkin.md) kwabo bonkhe lasemndenini.
+- **Vula ilungu** bese uthepha inkinobho yesikhathi senkonzo ukuze [ubele noma ushintshe iqembu](./group-assignment.md).
+- **Thepha inkinobho Engeza Isivakashi** ngaphansi kohlu lwamalungu ukuze [wengeze isivakashi](./adding-guests.md) emndenini wakho.
+- **Thepha inkinobho Ngena** ngaphansi kwesikrini ukuze [uqedele ukungena](./completing-checkin.md) kubo bonke abamndeni.
 
 :::info
-Nakuphi kwabelwa kwelicembu lokusuka ekubhaliseni lokwendlulile enkhonzweni lefanako kulayishwa ngekutentela. Nangabe tingane takho tiya emacenjini lafanako viki nga viki, kungenteka kutsi ungabi nesidzingo sekushintja lutfo -- vele ubuyekete bese ubhalise.
+Noma yiziphi izabiwo zamaqembu avela ekungeneni kwangaphambili kule nkonzo yefanayo ziyalayishwa ngokuzenzakalelayo. Uma izingane zakho zihlala emaqenjini afanayo ngesonto ngalinye, kungenzeka ungadingi ukushintsha lutho. Buyekeza nje bese ungena.
 :::
 
-## Tinyatselo Letilandzelako
+## Izinyathelo Ezilandelayo
 
-- [Yabela emacembu](./group-assignment.md) kumalunga emndeni ladzinga kubhaliswa kulikilasi nobe kuluhlelo lolutsite.
-- [Engeta sivakashi](./adding-guests.md) nangabe kukhona lophindzelako nemndeni wakho.
-- [Cedza kubhalisa](./completing-checkin.md) nase konkhe kwabelwa kwemalunga kulungile.
+- [Bela amaqembu](./group-assignment.md) emalungwini omndeni adinga ukungena esigabeni noma ohlelweni oluthile.
+- [Engeza isivakashi](./adding-guests.md) uma umuntu evakashela umndeni wakho.
+- [Qedela ukungena](./completing-checkin.md) lapho zonke izabiwo zibonakala zilungile.

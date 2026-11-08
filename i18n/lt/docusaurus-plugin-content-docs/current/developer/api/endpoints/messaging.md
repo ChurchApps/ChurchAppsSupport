@@ -1,13 +1,13 @@
 ---
-title: "Žinučių galutiniai taškai"
-description: "Nuoroda į ChurchApps žinučių API galutinius taškus: pokalbiai, užrašų prieigos taisyklės, SMS, el. laiškų šablonai, pranešimai ir įrenginiai."
+title: "Pranešimų galutiniai taškai"
+description: "ChurchApps pranešimų API galutinių taškų žinynas: pokalbiai, pastabų prieigos taisyklės, teksto žinutės, el. laiškų šablonai, pranešimai ir įrenginiai."
 ---
 
-# Žinučių galutiniai taškai
+# Pranešimų galutiniai taškai
 
 <div class="article-intro">
 
-Žinučių modulis valdo tiesioginius pokalbius, pokalbių žinutes, įrenginių pranešimus, SMS ir el. laiškų siuntimą, WebSocket ryšius, privačias žinutes, įrenginių registraciją ir SMS paslaugų teikėjus. Jis teikia ryšio sluoksnį, kurį visos ChurchApps programėlės naudoja tiek tiesioginiam transliacijos pokalbiui, tiek asinchroniniams pranešimams.
+Pranešimų modulis valdo realaus laiko pokalbius, žinutes, push pranešimus, SMS ir el. laiškų siuntimą, WebSocket ryšius, privačias žinutes, įrenginių registraciją ir teksto siuntimo tiekėjus. Jis teikia komunikacijos sluoksnį, naudojamą visose ChurchApps programose tiek tiesioginio transliacijos pokalbiams, tiek asinchroniniams pranešimams.
 
 </div>
 
@@ -18,33 +18,33 @@ description: "Nuoroda į ChurchApps žinučių API galutinius taškus: pokalbiai
 Bazinis kelias: `/messaging/conversations`
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/timeline/ids?ids=` | JWT | — | Įkelia pokalbius pagal kableliais atskirtus ID su pirmąja ir paskutine žinute |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Įkelia turiniui priskirtus pokalbius su puslapiais žinučių (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Gauna dabartinio vartotojo grupių įrašų tipo pokalbius |
-| GET | `/posts/group/:groupId` | JWT | — | Gauna konkrečios grupės įrašų tipo pokalbius |
-| GET | `/notes/feed?section=&limit=&before=` | JWT | — | Naujausios pastabos iš visų įrašų B1 Admin pastabų puslapiui. `section` gali būti `people`, `groups`, `events` arba `workflows` (kitu atveju 400); `limit` pagal numatytuosius yra 25 (daugiausia 100); `before` yra ankstesnio puslapio žymeklis. Kiekviena pastaba vis dar tikrinama pagal savo tipo taisyklę (asmenų redagavimo / konfidencialių pastabų leidimas, grupės vadovai, renginių peržiūrėtojai, darbo eigos kortelių peržiūrėtojai), todėl iškvietėjai mato tik tas pastabas, kurias galėtų atidaryti. Pastabos tekstas sutrumpinamas iki 300 simbolių |
-| GET | `/current/:churchId/:contentType/:contentId` | Viešas | — | Gauna arba sukuria dabartinį turinio pokalbį (automatiškai iššifruoja contentId) |
-| GET | `/:churchId/:contentType/:contentId` | Viešas | — | Įkelia pokalbius pagal turinio tipą ir ID |
-| GET | `/:churchId/:id` | Viešas | — | Įkelia vieną pokalbį pagal ID |
-| POST | `/` | JWT | — | Sukuria arba atnaujina pokalbius (paketu) |
-| POST | `/start` | JWT | — | Pradeda naują pokalbį su pirmine komentaro žinute |
-| DELETE | `/:churchId/:id` | JWT | — | Ištrina pokalbį |
+|--------|------|------------|------------|-------------|
+| GET | `/timeline/ids?ids=` | JWT | — | Įkelti pokalbius pagal kableliais atskirtus ID su pirma ir paskutine žinute |
+| GET | `/messages/:contentType/:contentId` | JWT | — | Įkelti turinio pokalbius su puslapiuojamomis žinutėmis (`?page=&limit=`) |
+| GET | `/posts` | JWT | — | Gauti einamojo vartotojo grupių įrašų tipo pokalbius |
+| GET | `/posts/group/:groupId` | JWT | — | Gauti konkrečios grupės įrašų tipo pokalbius |
+| GET | `/notes/feed?section=&limit=&before=` | JWT | — | Naujausios pastabos iš visų įrašų B1 Admin pastabų puslapiui. `section` yra `people`, `groups`, `events` arba `workflows` (kitu atveju 400); `limit` pagal numatytuosius 25 (maks. 100); `before` yra ankstesnio puslapio žymeklis. Kiekviena pastaba vis tiek atitinka savo tipo taisyklę (People Edit / konfidencialių pastabų leidimas, grupės vadovai, renginių peržiūrėtojai, darbo eigos kortelių peržiūrėtojai), todėl iškviečiantieji mato tik tas pastabas, kurias galėtų atverti. Pastabos tekstas sutrumpinamas iki 300 simbolių |
+| GET | `/current/:churchId/:contentType/:contentId` | Viešas | — | Gauti arba sukurti dabartinį turinio pokalbį (automatiškai iššifruoja contentId) |
+| GET | `/:churchId/:contentType/:contentId` | Viešas | — | Įkelti pokalbius pagal turinio tipą ir ID |
+| GET | `/:churchId/:id` | Viešas | — | Įkelti vieną pokalbį pagal ID |
+| POST | `/` | JWT | — | Sukurti arba atnaujinti pokalbius (paketu) |
+| POST | `/start` | JWT | — | Pradėti naują pokalbį su pradine komentaro žinute |
+| DELETE | `/:churchId/:id` | JWT | — | Ištrinti pokalbį |
 
-### Asmenų pastabų prieigos valdymas
+### Asmens pastabų prieigos valdymas
 
-Pokalbiai su `contentType: "person"` (skirtukas Pastabos asmens įraše) arba `contentType: "personConfidential"` (skyrius Konfidencialios pastabos) yra kontroliuojami kiekviename skaitymo ir rašymo kelyje, įskaitant aukščiau nurodytus viešus maršrutus, kurie šiems turinio tipams grąžina `401`. `person` reikalauja MembershipApi leidimo **People / Edit** (Asmenys / Redagavimas); `personConfidential` reikalauja **People / View Confidential Notes** (Asmenys / Peržiūrėti konfidencialias pastabas). Ribotų API raktų atveju `people:write` apima abu veiksmus (raktui priskirtas vartotojas vis tiek turi turėti pagrindinį vaidmens leidimą).
+Pokalbiai su `contentType: "person"` (skirtukas Pastabos asmens įraše) arba `contentType: "personConfidential"` (skyrius Konfidencialios pastabos) yra apriboti kiekviename skaitymo ir rašymo kelyje, įskaitant aukščiau nurodytus viešus maršrutus, kurie šiems turinio tipams grąžina `401`. `person` reikalauja MembershipApi leidimo **People / Edit**; `personConfidential` reikalauja **People / View Confidential Notes**. Apribotiesiems API raktams `people:write` apima abu veiksmus (rakto vartotojas vis tiek turi turėti pagrindinį vaidmens leidimą).
 
 ### Grupės ir renginio pastabų prieigos valdymas {#group-and-event-notes-access-control}
 
-Dar du pastabų turinio tipai kontroliuojami taip pat, kiekviename skaitymo ir rašymo kelyje (įskaitant aukščiau nurodytus viešus maršrutus), ir niekada nėra atviri anoniminiam rašymui:
+Dar du pastabų turinio tipai apribojami tokiu pačiu būdu kiekviename skaitymo ir rašymo kelyje (įskaitant aukščiau nurodytus viešus maršrutus) ir niekada neatviri anoniminiam skelbimui:
 
-- **`groupNote`** (`contentId` = grupės ID) -- grupės **Vadovų pastabų** srautas. Tik tos grupės vadovai (`leaderGroupIds` JWT) gali skaityti arba rašyti. Jokie personalo leidimai nesuteikia prieigos, įskaitant `content.edit` ir grupės narystės leidimus.
-- **`eventNote`** (`contentId` = renginio ID) -- kalendoriaus renginio pastabos. Personalas su `content.edit` arba **Calendars / Admin** (Kalendoriai / Administravimas) visada gali skaityti ir rašyti. Kitais atvejais prieiga priklauso nuo renginio `notesViewRole` (skaitymas) ir `notesPostRole` (rašymas): `staff` (numatytasis, naudojamas, kai laukas yra `null`) neleidžia niekam kitam, `leaders` leidžia renginio grupės vadovams, o `members` leidžia renginio grupės nariams ir vadovams. Renginys be `groupId` yra prieinamas tik personalui.
+- **`groupNote`** (`contentId` = grupės ID) -- grupės **Vadovų pastabų** srautas. Skaityti arba skelbti gali tik tos grupės vadovai (`leaderGroupIds` JWT). Jokia personalo teisė nesuteikia prieigos, įskaitant `content.edit` ir grupių narystės leidimus.
+- **`eventNote`** (`contentId` = renginio ID) -- pastabos kalendoriaus renginyje. Personalas su `content.edit` arba **Calendars / Admin** visada gali skaityti ir skelbti. Kitais atvejais prieiga priklauso nuo renginio `notesViewRole` (skaitymui) ir `notesPostRole` (skelbimui): `staff` (numatytoji, naudojama, kai laukas yra `null`) neleidžia niekam kitam, `leaders` leidžia renginio grupės vadovams, o `members` leidžia renginio grupės nariams ir vadovams. Renginys be `groupId` pasiekiamas tik personalui.
 
-### Darbo eigos kortelių pastabų prieigos valdymas
+### Darbo eigos kortelės pastabų prieigos valdymas
 
-Pokalbius su `contentType: "workflowCard"` (darbo eigos kortelės pastabos, kur `contentId` yra kortelės užduoties ID) gali skaityti ir rašyti tik tas, kas gali atidaryti tą kortelę: vartotojas su DoingApi leidimu **Tasks / View** (Užduotys / Peržiūra), arba asmuo ar grupė, kuriems kortelė priskirta, kurią sukūrė arba apie kurią ji yra. Visi kiti gauna `401` kiekviename skaitymo kelyje, įskaitant aukščiau nurodytus viešus maršrutus. Kortelės pokalbis prijungiamas per pačią kortelę su `POST /doing/tasks/:id/conversation` (turinys `{ "conversationId": "..." }`; pirmasis prijungtas pokalbis lieka), ir tai gali iškviesti kortelės redaktoriai bei jos vykdytojas.
+Pokalbius su `contentType: "workflowCard"` (darbo eigos kortelės pastabos, kur `contentId` yra kortelės užduoties ID) gali skaityti ir redaguoti tik tie, kurie gali atverti tą kortelę: vartotojas, turintis DoingApi leidimą **Tasks / View**, arba asmuo ar grupė, kuriai kortelė priskirta, kurią sukūrė arba kuri su ja susijusi. Visi kiti gauna `401` kiekviename skaitymo kelyje, įskaitant aukščiau nurodytus viešus maršrutus. Kortelės pokalbis pridedamas per pačią kortelę su `POST /doing/tasks/:id/conversation` (turinys `{ "conversationId": "..." }`; pirmasis pridėtas pokalbis lieka), ir tai gali iškviesti kortelės redaktoriai bei jos vykdytojas.
 
 ### Pavyzdys: pradėti pokalbį
 
@@ -80,26 +80,26 @@ Authorization: Bearer <token>
 Bazinis kelias: `/messaging/messages`
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/conversation/:conversationId` | JWT | — | Įkelia visas pokalbio žinutes |
-| GET | `/catchup/:churchId/:conversationId` | Viešas | — | Įkelia visas pokalbio žinutes (viešas atsiliepimas tiesioginiam pokalbiui) |
-| GET | `/:churchId/:id` | Viešas | — | Įkelia vieną žinutę pagal ID |
-| POST | `/` | JWT | — | Išsaugo žinutes (paketu). Siunčia atnaujinimus realiuoju laiku ir inicijuoja pranešimus. Esamos žinutės atnaujinimui reikia būti jos autoriumi arba turėti `content.edit`; išsaugotas autorius niekada negali būti pakeistas |
-| POST | `/send` | Viešas | — | Siunčia žinutes (paketu, viešai). Siunčia atnaujinimus realiuoju laiku per WebSocket ir inicijuoja pranešimus |
-| POST | `/setCallout` | JWT | — | (pasenęs) Transliuoja pastabos žinutę realiuoju laiku. Nėra aktyvaus kliento; tiesioginės transliacijos pokalbis nebeatvaizduoja pastabų |
-| DELETE | `/:churchId/:id` | JWT | — | Ištrina žinutę ir realiuoju laiku transliuoja trynimą. Žr. [Pranešimų moderavimas](#message-moderation) |
+|--------|------|------------|------------|-------------|
+| GET | `/conversation/:conversationId` | JWT | — | Įkelti visas pokalbio žinutes |
+| GET | `/catchup/:churchId/:conversationId` | Viešas | — | Įkelti visas pokalbio žinutes (viešas atsivijimas tiesioginiam pokalbiui) |
+| GET | `/:churchId/:id` | Viešas | — | Įkelti vieną žinutę pagal ID |
+| POST | `/` | JWT | — | Išsaugoti žinutes (paketu). Siunčia realaus laiko atnaujinimus ir paleidžia pranešimus. Esamos žinutės atnaujinimui reikia būti jos autoriumi arba turėti `content.edit`; saugomo autoriaus negalima perskirti |
+| POST | `/send` | Viešas | — | Siųsti žinutes (paketu, viešai). Siunčia realaus laiko atnaujinimus per WebSocket ir paleidžia pranešimus |
+| POST | `/setCallout` | JWT | — | (pasenęs) Transliuoti iškėlimo žinutę realiuoju laiku. Nėra aktyvaus kliento; tiesioginio transliavimo pokalbis nebeatvaizduoja iškėlimų |
+| DELETE | `/:churchId/:id` | JWT | — | Ištrinti žinutę ir realiuoju laiku transliuoti ištrynimą. Žr. [Žinučių moderavimas](#message-moderation) |
 
-### Pranešimų moderavimas
+### Žinučių moderavimas
 
 Žinutę galima ištrinti:
 
 - žinutės autoriui;
-- personalui su `content.edit` (bet kur bažnyčioje);
-- **grupių vadovams**, pokalbiams, kurių `contentType` yra `group` arba `groupAnnouncement` ir kurių `contentId` yra grupė, kuriai jie vadovauja (`leaderGroupIds` JWT).
+- personalui su `content.edit` (visoje bažnyčioje);
+- **grupių vadovams** pokalbiams, kurių `contentType` yra `group` arba `groupAnnouncement` ir kurių `contentId` yra grupė, kurią jie vadovauja (`leaderGroupIds` JWT).
 
-Asmenų pastabų pokalbiai (`person` / `personConfidential`) niekada nemoderuojami vadovų -- jiems taikomi pastabų leidimai (`people.edit`, `people.viewConfidentialNotes`).
+Asmens pastabų pokalbių (`person` / `personConfidential`) vadovai nemoderuoja — jiems taikomi pastabų leidimai (`people.edit`, `people.viewConfidentialNotes`).
 
-Vadovai gali tik ištrinti, o ne redaguoti: kito nario žinutės perrašymas lieka apribotas autoriui ir personalui su `content.edit`.
+Vadovai gali tik ištrinti, bet ne redaguoti: kito nario žinutės perrašymas lieka apribotas autoriui ir `content.edit` personalui.
 
 ### Pavyzdys: išsiųsti žinutę
 
@@ -138,29 +138,29 @@ POST /messaging/messages/send
 Bazinis kelias: `/messaging/privatemessages`
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/` | JWT | — | Įkelia visas dabartinio vartotojo privačias žinutes (įskaitant paskutinę žinutę kiekviename pokalbyje, pažymi visas kaip perskaitytas) |
-| GET | `/existing/:personId` | JWT | — | Suranda esamą privatų pokalbį su konkrečiu asmeniu |
-| GET | `/:id` | JWT | — | Įkelia privačią žinutę pagal ID (panaikina pranešimą, jei ji adresuota dabartiniam vartotojui) |
-| POST | `/` | JWT | — | Siunčia privačias žinutes (paketu). Gavėjui inicijuoja įrenginio pranešimą |
+|--------|------|------------|------------|-------------|
+| GET | `/` | JWT | — | Įkelti visas einamojo vartotojo privačias žinutes (įtraukia paskutinę žinutę kiekviename pokalbyje, visas pažymi kaip perskaitytas) |
+| GET | `/existing/:personId` | JWT | — | Rasti esamą privatų pokalbį su konkrečiu asmeniu |
+| GET | `/:id` | JWT | — | Įkelti privačią žinutę pagal ID (išvalo pranešimą, jei adresuota einamajam vartotojui) |
+| POST | `/` | JWT | — | Siųsti privačias žinutes (paketu). Paleidžia push pranešimą gavėjui |
 
 ## Pranešimai
 
 Bazinis kelias: `/messaging/notifications`
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/unreadCount` | JWT | — | Gauna neperskaitytų pranešimų skaičių dabartiniam vartotojui |
-| GET | `/my` | JWT | — | Įkelia visus dabartinio vartotojo pranešimus (pažymi visus kaip perskaitytus) |
-| GET | `/tmpEmail` | Viešas | — | Inicijuoja kasdienį el. laiškų pranešimų apibendrinimą (derinimo / cron galutinis taškas) |
-| GET | `/:churchId/person/:personId` | JWT | — | Įkelia konkretaus asmens pranešimus |
-| GET | `/:churchId/:id` | JWT | — | Įkelia pranešimą pagal ID |
-| POST | `/` | JWT | — | Sukuria arba atnaujina pranešimus (paketu) |
-| POST | `/create` | JWT | — | Sukuria pranešimus keliems asmenims. Turinys: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Pažymi visus asmens pranešimus kaip perskaitytus |
-| POST | `/sendTest` | JWT | — | Siunčia bandomąjį įrenginio pranešimą. Turinys: `{ personId, title }` |
-| POST | `/ping` | Viešas | — | Sukuria pranešimą iš išorinio paleidiklio. Turinys: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
-| DELETE | `/:churchId/:id` | JWT | — | Ištrina pranešimą |
+|--------|------|------------|------------|-------------|
+| GET | `/unreadCount` | JWT | — | Gauti neperskaitytų pranešimų skaičių einamajam vartotojui |
+| GET | `/my` | JWT | — | Įkelti visus einamojo vartotojo pranešimus (visus pažymi kaip perskaitytus) |
+| GET | `/tmpEmail` | Viešas | — | Paleisti kasdienę el. pašto pranešimų apžvalgą (derinimo / cron galutinis taškas) |
+| GET | `/:churchId/person/:personId` | JWT | — | Įkelti konkretaus asmens pranešimus |
+| GET | `/:churchId/:id` | JWT | — | Įkelti pranešimą pagal ID |
+| POST | `/` | JWT | — | Sukurti arba atnaujinti pranešimus (paketu) |
+| POST | `/create` | JWT | — | Sukurti pranešimus keliems asmenims. Turinys: `{ peopleIds, contentType, contentId, message, link }` |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Pažymėti visus asmens pranešimus kaip perskaitytus |
+| POST | `/sendTest` | JWT | — | Siųsti bandomąjį push pranešimą. Turinys: `{ personId, title }` |
+| POST | `/ping` | Viešas | — | Sukurti pranešimą iš išorinio paleidiklio. Turinys: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
+| DELETE | `/:churchId/:id` | JWT | — | Ištrinti pranešimą |
 
 ### Pavyzdys: sukurti pranešimus
 
@@ -177,49 +177,49 @@ Authorization: Bearer <token>
 }
 ```
 
-## Pranešimų nustatymai
+## Pranešimų nuostatos
 
 Bazinis kelias: `/messaging/notificationpreferences`
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/categories` | JWT | — | Išvardija pranešimų kategorijas su jų numatytaisiais ir leidžiamais kanalais |
-| GET | `/my` | JWT | — | Įkelia dabartinio vartotojo pranešimų nustatymus (automatiškai sukuria numatytuosius, jei jų nėra) |
-| POST | `/` | JWT | — | Išsaugo dabartinio vartotojo nustatymus. Turinys: bet kuris iš `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, plius pasirinktinis `overrides: [{ categoryKey, channel, optedIn }]` (kanalas gali būti `push`, `email`, `in_app` arba `sms`; užrakintos kategorijos ignoruojamos). `allowSms` yra nario sutikimas gauti teksto priminimus. Vis dar priimamas senas eilučių masyvo turinys |
+|--------|------|------------|------------|-------------|
+| GET | `/categories` | JWT | — | Išvardyti pranešimų kategorijas su jų numatytaisiais ir leidžiamais kanalais |
+| GET | `/my` | JWT | — | Įkelti einamojo vartotojo pranešimų nuostatas (automatiškai sukuria numatytąsias, jei jų nėra) |
+| POST | `/` | JWT | — | Išsaugoti einamojo vartotojo nuostatas. Turinys: bet kuris iš `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, be to, neprivaloma `overrides: [{ categoryKey, channel, optedIn }]` (kanalas gali būti `push`, `email`, `in_app` arba `sms`; užrakintos kategorijos ignoruojamos). `allowSms` yra nario sutikimas gauti tekstinius priminimus. Vis dar priimamas senasis eilučių masyvo turinys |
 
 ## Ryšiai
 
 Bazinis kelias: `/messaging/connections`
 
-Valdo WebSocket / realaus laiko ryšius pokalbiams, grupių pokalbiams, privačioms žinutėms ir tiesioginei transliacijai. Visą protokolą žr. [Realaus laiko architektūra](../../realtime.md).
+Valdo WebSocket / realaus laiko ryšius pokalbiams, grupių pokalbiams, privačioms žinutėms ir tiesioginiam transliavimui. Visą protokolą žr. [Realaus laiko architektūra](../../realtime.md).
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/:churchId/:conversationId` | Viešas | — | Įkelia visus pokalbio ryšius |
-| POST | `/` | Viešas | — | Registruoja ryšius (paketu). Inicijuoja lankomumo transliaciją pokalbyje. Turinio elementai: `{ churchId, conversationId, socketId, displayName?, personId? }` |
-| POST | `/setName` | Viešas | — | Atnaujina ryšio rodomą vardą pagal socket ID. Turinys: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Viešas | — | Pašalina ryšį iš pokalbio. Inicijuoja lankomumo transliaciją |
-| POST | `/tmpSendAlert` | Viešas | — | Siunčia pranešimo įspėjimą asmens ryšiams. Turinys: `{ churchId, personId }` |
+|--------|------|------------|------------|-------------|
+| GET | `/:churchId/:conversationId` | Viešas | — | Įkelti visus pokalbio ryšius |
+| POST | `/` | Viešas | — | Registruoti ryšius (paketu). Paleidžia dalyvavimo transliaciją pokalbyje. Turinio elementai: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/setName` | Viešas | — | Atnaujinti ryšio rodomą vardą pagal socket ID. Turinys: `{ socketId, name }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Viešas | — | Pašalinti ryšį iš pokalbio. Paleidžia dalyvavimo transliaciją |
+| POST | `/tmpSendAlert` | Viešas | — | Siųsti pranešimo įspėjimą asmens ryšiams. Turinys: `{ churchId, personId }` |
 
 ## Įrenginiai
 
 Bazinis kelias: `/messaging/devices`
 
-Valdo įrenginių registraciją įrenginių pranešimams ir turinio susiejimui (pvz., Lessons programėlė TV ekranuose).
+Valdo įrenginių registraciją push pranešimams ir turinio susiejimą (pvz., Lessons programėlę televizijos ekranuose).
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| POST | `/enroll` | JWT | — | Registruoja arba atnaujina įrenginį (mobiliojo įrenginio pranešimų registracija). Atitikimas pagal FCM žetoną arba įrenginio ID |
-| POST | `/enrollAnon` | Viešas | — | Registruoja anoniminį įrenginį ir sugeneruoja 4 simbolių susiejimo kodą |
-| POST | `/` | Viešas | — | Išsaugo įrenginius (paketu) |
-| GET | `/pair/:pairingCode` | JWT | — | Susieja įrenginį naudojant jo susiejimo kodą. Pasirinktinis `?contentType=&contentId=` turiniui priskirti |
-| GET | `/status/:deviceId` | Viešas | — | Patikrina įrenginio susiejimo būseną |
-| GET | `/:churchId` | JWT | — | Įkelia visus bažnyčios įrenginius |
-| GET | `/:churchId/person/:personId` | JWT | — | Įkelia visus asmens įrenginius |
-| GET | `/:churchId/:id` | JWT | — | Įkelia įrenginį pagal ID |
-| DELETE | `/:churchId/:id` | JWT | — | Ištrina įrenginį |
+|--------|------|------------|------------|-------------|
+| POST | `/enroll` | JWT | — | Įtraukti arba atnaujinti įrenginį (mobiliojo push registracija). Atitinka pagal FCM žetoną arba įrenginio ID |
+| POST | `/enrollAnon` | Viešas | — | Įtraukti anonimišką įrenginį ir sugeneruoti 4 simbolių susiejimo kodą |
+| POST | `/` | Viešas | — | Išsaugoti įrenginius (paketu) |
+| GET | `/pair/:pairingCode` | JWT | — | Susieti įrenginį naudojant jo susiejimo kodą. Neprivalomi `?contentType=&contentId=` turiniui priskirti |
+| GET | `/status/:deviceId` | Viešas | — | Patikrinti įrenginio susiejimo būseną |
+| GET | `/:churchId` | JWT | — | Įkelti visus bažnyčios įrenginius |
+| GET | `/:churchId/person/:personId` | JWT | — | Įkelti visus asmens įrenginius |
+| GET | `/:churchId/:id` | JWT | — | Įkelti įrenginį pagal ID |
+| DELETE | `/:churchId/:id` | JWT | — | Ištrinti įrenginį |
 
-### Pavyzdys: registruoti įrenginį
+### Pavyzdys: įtraukti įrenginį
 
 ```
 POST /messaging/devices/enroll
@@ -227,7 +227,7 @@ Authorization: Bearer <token>
 
 {
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "deviceInfo": "iOS 17, iPhone 15"
 }
@@ -238,46 +238,46 @@ Authorization: Bearer <token>
   "id": "device-001",
   "churchId": "church-789",
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "registrationDate": "2026-02-17T10:00:00.000Z",
   "lastActiveDate": "2026-02-17T10:00:00.000Z"
 }
 ```
 
-## Įrenginių turinys
+## Įrenginio turinys
 
 Bazinis kelias: `/messaging/devicecontents`
 
-Valdo turinio priskyrimus susietiems įrenginiams (pvz., kuri pamoka rodoma TV).
+Valdo turinio priskyrimus susietiems įrenginiams (pvz., kuri pamoka rodoma televizoriuje).
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/deviceId/:deviceId` | JWT | — | Įkelia įrenginio turinio priskyrimus |
-| POST | `/` | JWT | — | Išsaugo įrenginio turinio priskyrimus (paketu) |
-| DELETE | `/:id` | JWT | — | Ištrina įrenginio turinio priskyrimą |
+|--------|------|------------|------------|-------------|
+| GET | `/deviceId/:deviceId` | JWT | — | Įkelti įrenginio turinio priskyrimus |
+| POST | `/` | JWT | — | Išsaugoti įrenginio turinio priskyrimus (paketu) |
+| DELETE | `/:id` | JWT | — | Ištrinti įrenginio turinio priskyrimą |
 
-## SMS žinutės
+## Teksto žinutės
 
 Bazinis kelias: `/messaging/texting`
 
-Valdo SMS paslaugų teikėjus, grupinį teksto siuntimą ir pristatymo sekimą.
+Valdo SMS teksto siuntimo tiekėjus, grupinių tekstinių žinučių siuntimą ir pristatymo sekimą.
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/providers` | JWT | — | Įkelia bažnyčios SMS teikėjus (prisijungimo duomenys paslepiami) |
-| GET | `/status` | JWT | — | `{ enabled }` -- ar bažnyčia turi įjungtą SMS teikėją. Bet kuris prisijungęs bažnyčios vartotojas; naudojama rodyti **Tekstas** parinktims tik tada, kai žinutes galima siųsti |
-| GET | `/inboundUrl` | JWT | `texting.send` arba `settings.edit` | `{ url }` -- bažnyčios gaunamųjų (STOP) webhook URL, kurį reikia įklijuoti teikėjui |
-| POST | `/inbound/:churchId/:token` | Viešas | — | Teikėjo gaunamų žinučių webhook. `token` yra bažnyčios ID HMAC. Atsakymas, kuris yra tiksliai stabdymo žodis (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), pažymi kiekvieną atitinkamą asmenį `optedOut` ir išjungia jų `allowSms`. Grąžina `{ optedOut: <count> }`; kiti atsakymai grąžina `{ optedOut: 0 }` |
-| GET | `/preview/:groupId` | JWT | — | Peržiūri grupės teksto gavėjus (tinkami, atsisakę, be telefono numerio skaičiai) |
-| GET | `/sent` | JWT | — | Įkelia visus bažnyčios išsiųstų teksto žinučių įrašus |
-| GET | `/sent/:id/details` | JWT | — | Įkelia išsiųstą tekstą su kiekvieno gavėjo pristatymo žurnalais |
-| POST | `/providers` | JWT | — | Išsaugo SMS teikėjus (paketu). Šifruoja API prisijungimo duomenis |
-| POST | `/send` | JWT | — | Siunčia SMS visiems tinkamiems grupės nariams. Turinys: `{ groupId, message }`. Sujungimo laukai (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) išsprendžiami kiekvienam gavėjui |
-| POST | `/sendPerson` | JWT | — | Siunčia SMS vienam asmeniui. Turinys: `{ personId, phoneNumber, message }`. Sujungimo laukai išsprendžiami, o išspręstas tekstas įrašomas į žurnalą |
-| DELETE | `/providers/:id` | JWT | — | Ištrina SMS teikėją |
+|--------|------|------------|------------|-------------|
+| GET | `/providers` | JWT | — | Įkelti bažnyčios teksto siuntimo tiekėjus (prisijungimo duomenys paslepiami) |
+| GET | `/status` | JWT | — | `{ enabled }` — ar bažnyčia turi įjungtą teksto siuntimo tiekėją. Bet kuris prisijungęs bažnyčios vartotojas; naudojama rodyti **Tekstas** parinktis tik tada, kai žinutes galima siųsti |
+| GET | `/inboundUrl` | JWT | `texting.send` arba `settings.edit` | `{ url }` — bažnyčios gaunamųjų (STOP) webhook URL, kurį įklijuoti į tiekėjo nustatymus |
+| POST | `/inbound/:churchId/:token` | Viešas | — | Tiekėjo gaunamųjų žinučių webhook. `token` yra bažnyčios ID HMAC. Atsakymas, kuris tiksliai yra atsisakymo žodis (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`), pažymi visus atitinkamus asmenis kaip `optedOut` ir išjungia jų `allowSms`. Grąžina `{ optedOut: <count> }`; kiti atsakymai grąžina `{ optedOut: 0 }` |
+| GET | `/preview/:groupId` | JWT | — | Peržiūrėti grupinės žinutės gavėjus (tinkami, atsisakiusieji, be telefono numerio skaičiai) |
+| GET | `/sent` | JWT | — | Įkelti visus bažnyčios išsiųstų tekstinių žinučių įrašus |
+| GET | `/sent/:id/details` | JWT | — | Įkelti išsiųstą tekstinę žinutę su kiekvieno gavėjo pristatymo žurnalais |
+| POST | `/providers` | JWT | — | Išsaugoti teksto siuntimo tiekėjus (paketu). Šifruoja API prisijungimo duomenis |
+| POST | `/send` | JWT | — | Siųsti SMS visiems tinkamiems grupės nariams. Turinys: `{ groupId, message }`. Jungimo laukai (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) išsprendžiami kiekvienam gavėjui |
+| POST | `/sendPerson` | JWT | — | Siųsti SMS vienam asmeniui. Turinys: `{ personId, phoneNumber, message }`. Jungimo laukai išsprendžiami, o į žurnalą įrašomas išspręstas tekstas |
+| DELETE | `/providers/:id` | JWT | — | Ištrinti teksto siuntimo tiekėją |
 
-### Pavyzdys: siųsti grupinę žinutę
+### Pavyzdys: siųsti grupinę tekstinę žinutę
 
 ```
 POST /messaging/texting/send
@@ -304,18 +304,18 @@ Authorization: Bearer <token>
 
 Bazinis kelias: `/messaging/emailTemplates`
 
-Valdo daugkartinio naudojimo el. laiškų šablonus ir šablonų laiškų siuntimą grupėms.
+Valdo pakartotinai naudojamus el. laiškų šablonus ir šablonais grįstą el. laiškų siuntimą grupėms.
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/` | JWT | — | Įkelia visus bažnyčios el. laiškų šablonus |
-| GET | `/:id` | JWT | — | Įkelia vieną el. laiškų šabloną pagal ID |
-| GET | `/sendStatus` | JWT | `groupMembers.edit` arba `tasks.admin` | Bažnyčios grupės el. laiškų būsena: `{ approved, paused, remaining, requested }`. B1Admin dialogo Siųsti el. laišką ir darbo eigos veiksmas **Siųsti el. laišką** ją naudoja, kad įspėtų, kai laiškas nebus išsiųstas |
-| POST | `/requestApproval` | JWT | `groupMembers.edit` | Prašo palaikymo komandos patvirtinti bažnyčią grupių el. laiškams (ne daugiau kaip kartą per savaitę kiekvienai bažnyčiai) |
-| GET | `/preview/:groupId` | JWT | — | Peržiūri grupės el. laiškų pristatymą (tinkamų gavėjų skaičius, nariai be el. pašto) |
-| POST | `/` | JWT | — | Sukuria arba atnaujina el. laiškų šablonus (paketu) |
-| POST | `/send` | JWT | — | Siunčia šabloninį el. laišką visiems grupės nariams. Turinys: `{ groupId, subject, htmlContent }` |
-| DELETE | `/:id` | JWT | — | Ištrina el. laiškų šabloną |
+|--------|------|------------|------------|-------------|
+| GET | `/` | JWT | — | Įkelti visus bažnyčios el. laiškų šablonus |
+| GET | `/:id` | JWT | — | Įkelti vieną el. laiško šabloną pagal ID |
+| GET | `/sendStatus` | JWT | `groupMembers.edit` arba `tasks.admin` | Bažnyčios grupių el. laiškų būsena: `{ approved, paused, remaining, requested }`. B1Admin dialogas Siųsti el. laišką ir darbo eigos veiksmas **Siųsti el. laišką** ją naudoja, kad įspėtų, kai el. laiškas nebus išsiųstas |
+| POST | `/requestApproval` | JWT | `groupMembers.edit` | Prašyti palaikymo komandos patvirtinti bažnyčią grupių el. laiškams (ne dažniau kaip kartą per savaitę vienai bažnyčiai) |
+| GET | `/preview/:groupId` | JWT | — | Peržiūrėti grupės el. laiškų pristatymą (tinkamų gavėjų skaičius, nariai be el. pašto) |
+| POST | `/` | JWT | — | Sukurti arba atnaujinti el. laiškų šablonus (paketu) |
+| POST | `/send` | JWT | — | Siųsti šablonu grįstą el. laišką visiems grupės nariams. Turinys: `{ groupId, subject, htmlContent }` |
+| DELETE | `/:id` | JWT | — | Ištrinti el. laiško šabloną |
 
 ### Pavyzdys: siųsti el. laišką grupei
 
@@ -340,36 +340,36 @@ Authorization: Bearer <token>
 }
 ```
 
-**Palaikomi sujungimo laukai:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
+**Palaikomi jungimo laukai:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
-## Užblokuoti IP adresai
+## Užblokuoti IP
 
 Bazinis kelias: `/messaging/blockedips`
 
-(pasenęs) IP blokavimas tiesioginiam transliacijos pokalbiui. B1App klientas nebeiškviečia `POST /` -- IP blokavimas buvo pašalintas vienoje pristatymo migracijoje. Maršrutą `/clear` serveris į serverį vis dar iškviečia `StreamingServiceController`, kai išsaugomos transliacijos paslaugos.
+(pasenęs) IP blokavimas tiesioginio transliavimo pokalbiams. B1App klientas nebeiškviečia `POST /` — IP blokavimas buvo pašalintas vieningos pristatymo migracijos metu. Maršrutą `/clear` vis dar serverių tarpusavio ryšiu iškviečia `StreamingServiceController`, kai išsaugomos transliacijos paslaugos.
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| POST | `/` | JWT | — | (pasenęs) Išsaugo užblokuotus IP adresus (paketu). Nėra aktyvaus kliento |
-| POST | `/clear` | JWT | — | Išvalo visus užblokuotus IP adresus konkrečioms paslaugoms. Turinys: `[{ serviceId, churchId }]` |
+|--------|------|------------|------------|-------------|
+| POST | `/` | JWT | — | (pasenęs) Išsaugoti užblokuotus IP (paketu). Nėra aktyvaus kliento |
+| POST | `/clear` | JWT | — | Išvalyti visus užblokuotus IP konkrečioms paslaugoms. Turinys: `[{ serviceId, churchId }]` |
 
 ## Pristatymo žurnalai
 
 Bazinis kelias: `/messaging/deliverylogs`
 
-Seka išsiųstų žinučių (SMS, įrenginių pranešimų, el. laiškų) pristatymo būseną.
+Seka išsiųstų žinučių (SMS, push pranešimų, el. laiškų) pristatymo būseną.
 
 | Metodas | Kelias | Autentifikacija | Leidimas | Aprašymas |
-|--------|------|------|------|------|
-| GET | `/content/:contentType/:contentId` | JWT | — | Įkelia pristatymo žurnalus pagal turinio tipą ir ID |
-| GET | `/person/:personId` | JWT | — | Įkelia asmens pristatymo žurnalus. Pasirinktiniai filtrai `?startDate=&endDate=` |
-| GET | `/recent` | JWT | — | Įkelia bažnyčios naujausius pristatymo žurnalus. Pasirinktinis `?limit=` (numatytasis 100) |
-| GET | `/:id` | JWT | — | Įkelia pristatymo žurnalą pagal ID |
+|--------|------|------------|------------|-------------|
+| GET | `/content/:contentType/:contentId` | JWT | — | Įkelti pristatymo žurnalus pagal turinio tipą ir ID |
+| GET | `/person/:personId` | JWT | — | Įkelti asmens pristatymo žurnalus. Neprivalomi `?startDate=&endDate=` filtrai |
+| GET | `/recent` | JWT | — | Įkelti naujausius bažnyčios pristatymo žurnalus. Neprivalomas `?limit=` (numatytasis 100) |
+| GET | `/:id` | JWT | — | Įkelti pristatymo žurnalą pagal ID |
 
 ## Susiję puslapiai
 
-- [Realaus laiko architektūra](../../realtime.md) -- WebSocket protokolas, kambarių prenumeratos ir vieningas pristatymo sistemos karkasas
-- [Web Push pranešimai](../../web-push.md) -- Naršyklės pranešimų registracija ir pristatymas
+- [Realaus laiko architektūra](../../realtime.md) -- WebSocket protokolas, kambarių prenumeratos ir vieningos pristatymo sistema
+- [Web Push pranešimai](../../web-push.md) -- Naršyklės push registracija ir pristatymas
 - [Narystės galutiniai taškai](./membership.md) -- Asmenys, grupės, vaidmenys ir pagrindinė tapatybė
 - [Lankomumo galutiniai taškai](./attendance.md) -- Pamaldų ir apsilankymų sekimas
 - [Autentifikacija ir leidimai](./authentication.md) -- Prisijungimo srautas, JWT, OAuth, leidimų modelis

@@ -63,9 +63,9 @@
     "message": "Vejledninger",
     "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Website": {
-    "message": "B1 - Website",
-    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.B1 - App": {
+    "message": "B1 - App",
+    "description": "The label for category 'B1 - App' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.church-getting-started": {
     "message": "Kom i gang",
@@ -94,10 +94,6 @@
   "sidebar.docsSidebar.category.church-content": {
     "message": "Indhold",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Mobil",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Kom i gang",
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Tjeneste",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobil (forældet)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Begivenheder",

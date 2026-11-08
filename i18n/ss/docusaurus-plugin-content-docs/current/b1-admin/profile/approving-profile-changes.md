@@ -1,66 +1,66 @@
 ---
-title: "Kuphasisa Tinguquko Temaprofayili"
-description: "Bheka uphinde uvume ticelo tekushintja iprofayili yelungu ku-B1 Admin, uphinde usethe iQembu Lekuvuma Imininingwane lelitfola tona."
+title: "Kwemukela Tinguquko Temaprofayili"
+description: "Hlola futsi wemukele ticelo temalunga tetinguquko temaprofayili ku-B1 Admin, uphindze ulungise i-Directory Approval Group letemukela tona."
 ---
 
-# Kuphasisa Tinguquko Temaprofayili
+# Kwemukela Tinguquko Temaprofayili
 
 <div class="article-intro">
 
-Uma livhubo lakho lidinga kuphasiswa ngumphatsi kutinguquko temaprofayili, emalungu atfumela tinguquko tawo ngesisetjentiswa se-B1 Mobile, futsi leticelo letinguquko tivela njengetimsebenti ku-B1 Admin. Lolu lulwatiso luchaza indlela yekuhlola nekuphasisa tona.
+Uma ibandla lakho lidinga kwemukelwa ngumphatsi tinguquko temaprofayili, emalunga afaka tinguquko takhe ngaku-B1 App, futsi leticelo tivela njengemisebenti ku-B1 Admin. Lesihloko sichaza kutsi ungazihlola kanjani futsi uzemukele kanjani.
 
 </div>
 
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- Kufanele ube lilungu leliqembu lelichazwe njenge **Directory Approval Group** ku-**Mobile &rarr; Member portal**
-- Uma kungakamiswa liqembu lekuphasiswa, tinguquko temaprofayili tisebenta ngekushesha ngaphandle kwekuhlolwa
+- Kufanele ube lilunga leliqembu lelicutfwe njenge **Directory Approval Group** ku-**Mobile &rarr; Member portal**
+- Uma kungakalungiswa iqembu lekwemukela, tinguquko temaprofayili tiyasebenta ngaphandle kwekuhlolwa
 
 </div>
 
-## Indzawo Yekutfola Ticelo Letilindile
+## Kutfola Ticelo Letisalindzile
 
-Lapho lilungu lifaka tinguquko temaprofayili, kuvela njengemsebenti lobekwe kuliqembu lakho lekuphasiswa. Ungawutfola ngetindzawo letimbili:
+Umalunga lapho afaka tinguquko temaprofayili, sicelo lesi sivela njengemsebenti lobekwe kuliqembu lakho lekwemukela. Ungawutfola kulezindzawo ezimbili:
 
 **Kusukela ku-Dashboard (likhasi lakho lekucala):**
 1. Ngena ku-B1 Admin — i-Dashboard iyalayisha ngekuzenzekelako.
-2. Ku-sigaba se-**My tasks**, chofoza **All tasks**. (My tasks ibhala kuphela timsebenti letivulekile letibekwe kuwena siqu.)
-3. Chofoza ithebhu ethi **Assigned to My Groups**. Tonkhe ticelo letilindile tinguquko temaprofayili titawubhalwa lapho.
+2. Ku-sigaba se-**My tasks**, chofoza **All tasks**. (My tasks ibhala kuphela temsebenti lovulekile lobekwe wena ngqo.)
+3. Chofoza ithebhu **Assigned to My Groups**. Tonkhe ticelo tetinguquko temaprofayili letisalindzile tibhalwe lapho.
 
 **Kusukela ku-Serving &rarr; My Work:**
-1. Vula [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (indzawo yekusesha ngaphezulu kwesandla sekhohlo se-B1 Admin) bese unwebeta **Serving**.
+1. Vula [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ibha yekufuna ngentasa yesandla sekhohlo se-B1 Admin) bese unwebeta **Serving**.
 2. Chofoza **My Work**.
-3. Chofoza ithebhu ethi **Assigned to My Groups** ngaphansi kwe-Tasks.
+3. Chofoza ithebhu **Assigned to My Groups** ngaphansi kwe-Tasks.
 
-## Kuhlola Nekuphasisa Sicelo
+## Kuhlola Nekwemukela Sicelo
 
-1. Chofoza umsebenti othi **Profile Update** ukuze uwuvule.
-2. Ngaphansi kwe-**Requested Changes**, uyawubona tinkhundla ngetinkhundla letilungu lelifuna kutilungisa, kanye nalelinani lelisha lelilethwe.
+1. Chofoza umsebenti **Profile Update** ukuze uwuvule.
+2. Ngaphansi kwe-**Requested Changes**, uyawubona umtsetfo ngamunye lelifuna lilungise kuwo, kanye nalelinani lelisha lelilifakile.
 3. Hlola tinguquko.
-4. Chofoza **Apply** ukuze uphasise futsi ulondvolotse tinguquko emaprofayilini alo.
+4. Chofoza **Apply** ukuze wemukele futsi ulondvolote tinguquko eprofayilini yalo.
 
-Umsebenti uyavala ngekuzenzekelako kutsi tinguquko setitfolakale.
+Umsebenti uyavalwa ngekuzenzekelako nasetinguquko setisebentile.
 
-## Kumisa Liqembu Lekuphasiswa
+## Kumisa Iqembu Lekwemukela
 
-Uma livhubo lakho lifuna kutsi tinguquko temaprofayili tidzinge tiphasiswe, i-Directory Approval Group kufanele ikhonfigurwe kucala.
+Uma ibandla lakho lifuna kutsi tinguquko temaprofayili tidinga kwemukelwa, i-Directory Approval Group kufanele ilungiswe kuqala.
 
 1. Vula i-Jump menu bese unwebeta **Mobile**.
 2. Chofoza **Member portal** (likhasi le-"Portal settings").
-3. Ngaphansi kwe-**Directory Approval Group**, khetsa liqembu lamalungu lafanele ahlole ticelo tekutinguquka temaprofayili.
+3. Ngaphansi kwe-**Directory Approval Group**, khetsa iqembu lemalunga lakho kufanele abuke ticelo tetinguquko temaprofayili.
 4. Chofoza **Save**.
 
-Noma yiliphi lilungu laleliqembu lizobona ticelo letingena tekutinguquka temaprofayili ngaphansi kwe-**Assigned to My Groups** ku-Dashboard yalo.
+Noma ngubani lolilunga leliqembu uyawubona ticelo letitsatsekako tetinguquko temaprofayili ngaphansi kwe-**Assigned to My Groups** ku-Dashboard yakhe.
 
-Liqembu lelifanako le-Directory Approval Group futsi lihlola **ticelo tekususa ma-akhawunti** — bona [Kuhlola Ticelo Tekususa I-Akhawunti](./account-deletion.md).
+I-Directory Approval Group lefanako futsi iyahlola **ticelo tekususa ticondvo** — bona [Kuhlola Ticelo Tekususa Ticondvo](./account-deletion.md).
 
 :::tip
-Qinisekisa kutsi labaphasisi bakho bayili emalungwini aliqembu lelichaziwe — kuphela emalungwini aliqembu ayobona ticelo.
+Qinisekisa kutsi labakhetsiwe bayalilunga leliqembu lelicutfwe — ngulamalunga aleliqembu kuphela latawubona ticelo.
 :::
 
-## Tinkhombandlela Letihlobene
+## Tihlobene Netindzaba
 
-- [Kuphatsa Iprofayili Yakho](./managing-profile.md) — Hlela tilungiselelo takho te-akhawunti
-- [Kuhlola Ticelo Tekususa I-Akhawunti](./account-deletion.md) — Inkambu yekuhlola efanako yekususa i-akhawunti
-- [Tilungiselelo te-B1 Mobile](../../b1-mobile/profile/editing-profile.md) — Lesikubonako emalungwini lapho afaka khona tinguquko temaprofayili
+- [Kuphatsa Iprofayili Yakho](./managing-profile.md) — Hlela tilungiselelo tekuticondvo takho
+- [Kuhlola Ticelo Tekususa Ticondvo](./account-deletion.md) — Inqubo lefanako yekuhlola iqembu lekwemukela ngekususa ticondvo
+- [Kuhlela Iprofayili Yakho](../../b1-church/getting-started/editing-your-profile.md) — Lokubonwa ngemalunga lapho afaka tinguquko temaprofayili

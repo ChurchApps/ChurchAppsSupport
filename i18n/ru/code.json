@@ -377,16 +377,10 @@
     "message": "Панель управления церковью для учёта людей, групп, посещаемости, пожертвований и многого другого."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Website"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Публичный сайт церкви и портал для прихожан."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Устаревшее приложение для участников на iOS и Android, которое теперь заменено веб-приложением B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"

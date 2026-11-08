@@ -1,14 +1,14 @@
 ---
 title: "Nastavení profilu a zařízení v B1 Admin"
 sidebar_label: "Profil"
-description: "Upravte své jméno, e-mail, heslo, dvoufaktorové přihlášení, motiv a připojená zařízení v profilu B1 Admin a schvalujte změny profilů členů."
+description: "Aktualizujte své jméno, e-mail, heslo, dvoufázové přihlášení, motiv a připojená zařízení ve svém profilu B1 Admin a schvalujte změny profilů členů."
 ---
 
 # Profil
 
 <div class="article-intro">
 
-Sekce Profil umožňuje spravovat osobní nastavení účtu v ChurchApps. Váš profil je sdílen napříč všemi nástroji ChurchApps, takže změny, které zde provedete, se projeví všude – od B1 Admin až po aplikaci B1 Mobile.
+Sekce Profil vám umožňuje spravovat nastavení vašeho osobního účtu v ChurchApps. Váš profil je sdílen mezi všemi nástroji ChurchApps, takže změny, které zde provedete, se projeví všude – od B1 Admin až po B1 App.
 
 </div>
 
@@ -18,19 +18,19 @@ V sekci Profil můžete:
 
 - **Aktualizovat jméno a e-mail** -- Udržujte své kontaktní údaje aktuální.
 - **Změnit heslo** -- Nastavte nové heslo pro svůj účet.
-- **Zapnout dvoufázové přihlášení** -- Vyžadovat kód z aplikace pro ověřování při přihlášení. Viz [Dvoufázové přihlášení](./managing-profile.md#two-factor-sign-in).
-- **Přepínat motivy** -- Přepínejte mezi světlým a tmavým režimem v uživatelské nabídce (klikněte na svou profilovou fotku v pravém horním rohu).
-- **Spravovat připojená zařízení** -- Zobrazit a řídit, která zařízení ChurchAppsPlayer jsou propojena s vaším účtem.
-- **Zobrazit propojené účty** -- Zobrazit a spravovat externí služby připojené k vašemu účtu ChurchApps.
-- **Schvalovat žádosti o změnu profilu** -- Kontrolovat a použít aktualizace, které odeslali členové.
+- **Zapnout dvoufázové přihlášení** -- Vyžadujte kód z aplikace pro autentizaci při přihlašování. Viz [Dvoufázové přihlášení](./managing-profile.md#two-factor-sign-in).
+- **Přepínat motivy** -- Přepínejte mezi světlým a tmavým režimem v uživatelské nabídce (klikněte na svůj profilový obrázek v pravém horním rohu).
+- **Spravovat připojená zařízení** -- Zobrazujte a ovládejte, která zařízení ChurchAppsPlayer jsou propojena s vaším účtem.
+- **Zobrazit propojené účty** -- Prohlížejte a spravujte externí služby připojené k vašemu účtu ChurchApps.
+- **Schvalovat žádosti o změnu profilu** -- Kontrolujte a používejte aktualizace, které odeslali členové.
 
-## Podstránky profilu
+## Podsekce profilu
 
 Oblast Profil obsahuje tyto stránky:
 
-1. **[Správa vašeho profilu](./managing-profile.md)** -- Úprava osobních údajů, změna hesla, správa propojených účtů, zapnutí dvoufázového přihlášení, nastavení motivu a smazání účtu.
-2. **[Schvalování změn profilu](./approving-profile-changes.md)** -- Kontrola a schvalování žádostí o aktualizaci profilu, které členové odeslali přes B1 Mobile.
-3. **[Správa zařízení](./devices.md)** -- Zobrazit, přidávat a spravovat zařízení ChurchAppsPlayer spárovaná s vaším účtem.
+1. **[Správa vašeho profilu](./managing-profile.md)** -- Upravte své osobní údaje, změňte heslo, spravujte propojené účty, zapněte dvoufázové přihlášení, upravte nastavení motivu a řešte smazání účtu.
+2. **[Schvalování změn profilu](./approving-profile-changes.md)** -- Kontrolujte a schvalujte žádosti o aktualizaci profilu, které členové odeslali prostřednictvím B1 App.
+3. **[Správa zařízení](./devices.md)** -- Zobrazujte, přidávejte a spravujte zařízení ChurchAppsPlayer spárovaná s vaším účtem.
 
 :::tip
 Udržujte svou e-mailovou adresu aktuální. Používá se k obnovení účtu a k důležitým oznámením od vaší církve.
@@ -38,6 +38,6 @@ Udržujte svou e-mailovou adresu aktuální. Používá se k obnovení účtu a 
 
 ## Další kroky
 
-- [Správa vašeho profilu](./managing-profile.md) -- Úprava osobního nastavení
-- [Schvalování změn profilu](./approving-profile-changes.md) -- Kontrola žádostí členů o změnu profilu
-- [Správa zařízení](./devices.md) -- Správa připojených zařízení
+- [Správa vašeho profilu](./managing-profile.md) -- Upravte své osobní nastavení
+- [Schvalování změn profilu](./approving-profile-changes.md) -- Kontrolujte žádosti členů o změnu profilu
+- [Správa zařízení](./devices.md) -- Spravujte připojená zařízení

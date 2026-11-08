@@ -1,58 +1,60 @@
 ---
-title: "Eksterne udgivere"
-description: "Lær hvordan tredjepartsudbydere af curriculum tilføjer deres indhold til Lessons.church med Open Lesson Format, og hvordan du forbinder en udbyder fra portalen."
+title: "Eksterne udbydere"
+description: "Hvordan tredjepartsudbydere af undervisningsmateriale deler lektioner via Open Lesson Format, og hvordan din kirke tilføjer en udbyder i Lessons.church og planlægger dens lektioner."
 ---
 
-# Eksterne udgivere
+# Eksterne udbydere
 
 <div class="article-intro">
 
-Lessons.church er ikke begrænset til sin egen undervisningsplan. Tredjepartsundervisningsplan-udgivere kan udgive deres indhold gennem **Open Lesson Format**, og dette indhold vises sammen med Lessons.church's indbyggede programmer for en samlet browsing-oplevelse.
+Lessons.church er ikke begrænset til sit eget undervisningsmateriale. Tredjepartsudbydere af undervisningsmateriale kan udgive deres indhold via **Open Lesson Format**. Når din kirke har tilføjet en udbyder, kan du planlægge dens lektioner til dine klasseværelser lige ved siden af Lessons.church-biblioteket.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynder</h4>
 
-- Forstå, hvordan indhold er organiseret ved at læse [Programmer og studier](./programs-and-studies.md)
-- For at tilføje en udbyder-forbindelse skal du have en [Lessons.church-konto](../getting-started/creating-account.md) med adgang til din kirkes portal
+- Forstå hvordan indhold er organiseret ved at læse [Programmer og studier](./programs-and-studies.md)
+- For at tilføje en udbyderforbindelse skal du have en [Lessons.church-konto](../getting-started/creating-account.md) med adgang til din kirkes klasseplaner
 
 </div>
 
-## Hvad er eksterne udgivere?
+## Hvad er eksterne udbydere?
 
-En ekstern udbyder er enhver organisation, der udgiver kirkeundervisningsplan ved hjælp af Open Lesson Format -- en standard, der tillader lektionsindhold at blive delt på tværs af platforme. Når en udbyder gør deres indhold tilgængeligt i dette format, kan Lessons.church trække det ind og vise det, ligesom sine egne programmer.
+En ekstern udbyder er enhver organisation, der udgiver kirkeligt undervisningsmateriale ved hjælp af Open Lesson Format -- en standard, der gør det muligt at dele lektionsindhold på tværs af platforme. Når en udbyder gør sit indhold tilgængeligt i dette format, kan Lessons.church læse det og vise dets lektioner med samme layout som sine egne.
 
-Dette betyder, at du får adgang til et bredere udvalg af undervisningsplan uden at skulle besøge flere websteder.
+Det betyder, at du får adgang til et bredere udvalg af undervisningsmateriale, uden at du skal besøge flere websteder.
 
-## Browsing af eksternt indhold
+## Tilføjelse af udbyderforbindelser
 
-Eksternt udbyder-indhold fungerer på samme måde som indbygget indhold:
-
-1. Programmer fra eksterne udgivere vises på Lessons.church-hjemmesiden sammen med andre programmer.
-2. Klik på et **program** for at se dets studier.
-3. Klik på et **studie** for at se dets lektioner.
-4. Se lektioner med samme layout -- sektioner, roller, handlinger, videoer og downloadbare materialer.
-
-Der er ingen særlig proces eller separat sektion for eksternt indhold. Alt er integreret i et enkelt bibliotek for nem browsing.
-
-## Tilføjelse af udbyder-forbindelser
-
-Hvis din kirke bruger en undervisningsplan-udbyder, der understøtter Open Lesson Format, og du vil have deres indhold tilgængeligt i din Lessons.church-portal:
+Hvis din kirke bruger en undervisningsudbyder, der understøtter Open Lesson Format:
 
 1. Log ind på din Lessons.church-konto.
-2. Naviger til siden **Eksterne udgivere** i portalen.
-3. Tilføj den eksterne udbyders forbindelses-URL.
-4. Deres programmer og studier bliver tilgængelige for din kirke at browse, planlægge og bruge i klasseværelser.
+2. Klik på **Eksterne udbydere** i navigationen.
+3. Klik på **Tilføj udbyder**, indtast et **Udbydernavn** og udbyderens **API-URL**, og klik på **Gem**.
+
+Se [Tredjepartsudbydere](../admin/third-party-providers.md) for de fulde trin.
 
 :::info
-Tilføjelse af en ekstern udbyder-forbindelse sker gennem Lessons.church-portalen og kræver en logget-ind konto. Browsing af indhold, der allerede er tilføjet af platformen, kræver ikke en konto.
+En ekstern udbyder tilføjes kun for din kirke. Dens programmer vises ikke på den offentlige Lessons.church-startside eller i søgning.
 :::
 
-## For indholdskabere
+## Brug af eksternt indhold
 
-Hvis du er en undervisningsplan-udgiver interesseret i at gøre dit indhold tilgængeligt på Lessons.church, giver Open Lesson Format en standardiseret måde at dele dine programmer, studier og lektioner. Kontakt Lessons.church-teamet eller besøg udvikler-dokumentationen for integreringsdetaljer.
+Når en udbyder er tilføjet, er dens programmer, studier og lektioner tilgængelige, når du planlægger:
+
+1. Når du [tilføjer en lektion til et klasseværelses plan](../classrooms/scheduling-lessons.md), skal du vælge udbyderen under **Udbyder**.
+2. Vælg **Program**, **Studie**, **Lektion** og **Lokale** på samme måde, som du ville gøre for en Lessons.church-lektion.
+3. I klasseværelsets plan skal du klikke på **Se lektion** under en planlagt ekstern lektion for at åbne den. Den bruger samme layout som indbyggede lektioner -- afsnit, roller, handlinger, videoer og downloadbart materiale.
+
+:::note
+Lektioner fra eksterne udbydere kan ikke [tilpasses](../customization/customizing-lessons.md). Kun Lessons.church-lektioner viser linket **Tilpas**.
+:::
+
+## For indholdsskabere
+
+Hvis du er en udgiver af undervisningsmateriale, der er interesseret i at gøre dit indhold tilgængeligt på Lessons.church, giver Open Lesson Format en standardiseret måde at dele dine programmer, studier og lektioner på. Kontakt Lessons.church-teamet, eller besøg udviklerdokumentationen for integrationsdetaljer.
 
 :::tip
-Hvis du er en admin, der administrerer tredjepartsudgiver-feeds på platformen-niveau, se [Tredjepartsudgivere](../admin/third-party-providers.md) i administrationsektionen.
+For trin-for-trin-vejledning i at tilføje, redigere og slette en udbyder, se [Tredjepartsudbydere](../admin/third-party-providers.md).
 :::

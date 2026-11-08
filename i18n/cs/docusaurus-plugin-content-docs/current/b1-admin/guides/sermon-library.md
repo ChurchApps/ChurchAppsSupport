@@ -1,106 +1,105 @@
 ---
-title: "Guide: Vytvořte si knihovnu kázání a živý přenos"
-description: "Importujte kázání z YouTube nebo Vimeo do B1 Admin, uspořádejte je do playlistů a nastavte opakované živé přenosy s chatem pro web sboru."
+title: "Guía: Crea tu biblioteca de sermones y transmisión en vivo"
+description: "Importa tus sermones de YouTube o Vimeo, organízalos en listas de reproducción y configura transmisiones en vivo recurrentes con chat en B1 Admin para tu sitio web de iglesia."
 ---
 
-# Vytvořte si knihovnu kázání a živý přenos
+# Crea tu biblioteca de sermones y transmisión en vivo
 
 <div class="article-intro">
 
-Zpřístupněte svůj archiv kázání online a nastavte živé přenosy — od importu vaší stávající knihovny na YouTube nebo Vimeo až po plánování pravidelných živých bohoslužeb s interaktivním chatem. Na konci bude váš sbor moci sledovat minulá kázání a připojit se k živým bohoslužbám na vašem webu i v mobilní aplikaci.
+Pon tu archivo de sermones en línea y configura las transmisiones en vivo: desde importar tu biblioteca existente de YouTube o Vimeo hasta programar servicios en vivo recurrentes con chat interactivo. Al terminar, tu congregación podrá ver sermones anteriores y unirse a los servicios en vivo desde tu sitio web y tu aplicación móvil.
 
 </div>
 
-## Video s návodem
+## Video de capacitación
 
-<YouTube id="b3B3A25g2Sk" title="Vytvoření knihovny kázání v B1" next="Nastavení živého přenosu v B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
+<YouTube id="b3B3A25g2Sk" title="Crea tu biblioteca de sermones en B1" next="Configurar la transmisión en vivo en B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
-<h4>Než začnete</h4>
+<h4>Antes de comenzar</h4>
 
-- Účet B1 Admin s oprávněním ke správě obsahu
-- Kanál na YouTube nebo Vimeo s videy kázání (pro import vašeho archivu)
-- ID kanálu YouTube (pro živý přenos — najdete ho v nastavení YouTube Studio)
+- Cuenta de B1 Admin con permiso para gestionar contenido
+- Canal de YouTube o Vimeo con videos de sermones (para importar tu archivo)
+- ID del canal de YouTube (para la transmisión en vivo; lo encuentras en la configuración de YouTube Studio)
 
 </div>
 
-## Krok 1: Vytvořte seznamy kázání
+## Paso 1: Crea listas de reproducción de sermones
 
-Seznamy (playlisty) uspořádají vaše kázání do řad a kolekcí, aby se v nich snadno procházelo.
+Las listas de reproducción organizan tus sermones en series y colecciones para facilitar la navegación.
 
-Podle návodu [Seznamy](../sermons/playlists.md) můžete:
+Sigue la guía de [Listas de reproducción](../sermons/playlists.md) para:
 
-1. Vytvořit řady/kolekce, například „Nedělní kázání 2024", „Série o manželství", „Vánoční bohoslužby"
-2. Pro každý seznam přidat název, popis, datum zveřejnění a miniaturu
+1. Crear series o colecciones como "Mensajes del domingo 2024", "Serie sobre el matrimonio" o "Servicios de Navidad"
+2. Agregar un nombre, una descripción, una fecha de publicación y una miniatura para cada lista de reproducción
 
 :::tip
-Vytvořte seznamy dřív, než přidáte kázání. Usnadní vám to zařazování kázání do správné řady, jak je budete přidávat.
+Crea las listas de reproducción antes de agregar sermones. Así será más fácil organizar cada sermón en la serie correspondiente a medida que lo agregas.
 :::
 
-## Krok 2: Importujte stávající kázání
+## Paso 2: Importa tus sermones existentes
 
-Pokud už máte videa s kázáními na YouTube nebo Vimeo, můžete je všechna naimportovat najednou.
+Si ya tienes videos de sermones en YouTube o Vimeo, puedes importarlos todos a la vez.
 
-Podle návodu [Hromadný import](../sermons/bulk-import.md) můžete:
+Sigue la guía de [Importación masiva](../sermons/bulk-import.md) para:
 
-1. Zadat URL vašeho kanálu na YouTube nebo Vimeo
-2. Zobrazit náhled importu, abyste viděli, která videa budou naimportována
-3. Kliknout na Importovat a přidat je všechna najednou
+1. Ingresar la URL de tu canal de YouTube o Vimeo
+2. Previsualizar la importación para ver qué videos se incluirán
+3. Hacer clic en Importar para agregarlos todos de una vez
 
-## Krok 3: Přidejte jednotlivá kázání
+## Paso 3: Agrega sermones individuales
 
-Pro jednorázová přidání nebo kázání, která nejsou součástí hromadného importu, je přidejte jednotlivě.
+Para agregar sermones puntuales o que no formen parte de una importación masiva, agrégalos uno por uno.
 
-Podle návodu [Správa kázání](../sermons/managing-sermons.md) můžete:
+Sigue la guía de [Administración de sermones](../sermons/managing-sermons.md) para:
 
-1. Vložit URL videa (YouTube, Vimeo nebo Facebook)
-2. Název, popis, miniatura a délka se automaticky vyplní z metadat videa
-3. Přiřadit kázání k seznamu
+1. Pegar la URL de un video (YouTube, Vimeo o Facebook)
+2. Dejar que el título, la descripción, la miniatura y la duración se completen automáticamente a partir de los metadatos del video
+3. Asignar el sermón a una lista de reproducción
 
-## Krok 4: Nastavte živý přenos
+## Paso 4: Configura la transmisión en vivo
 
-Propojte svůj kanál na YouTube, aby váš web B1 automaticky převzal váš živý přenos.
+Conecta tu canal de YouTube para que tu sitio de B1 detecte automáticamente tu transmisión en vivo.
 
-Podle návodu [Živý přenos](../sermons/live-streaming.md) můžete:
+Sigue la guía de [Transmisión en vivo](../sermons/live-streaming.md) para:
 
-1. Zadat ID kanálu YouTube v nastavení přenosu
-2. Nakonfigurovat pravidelný rozvrh bohoslužeb (např. neděle v 10:00)
-3. Upravit záložky stránky přenosu (Chat, Modlitební prosby a vlastní odkazy) na stránce **Kázání > Nastavení**
+1. Ingresar el ID de tu canal de YouTube en la configuración de transmisión
+2. Configurar el horario de tus servicios recurrentes (por ejemplo, los domingos a las 10:00 a. m.)
+3. Personalizar las pestañas de la página de transmisión (Chat, Peticiones de oración y enlaces personalizados) en la página **Sermones > Configuración**
 
 :::info
-Když spustíte živý přenos na YouTube, stránka přenosu v B1 ho automaticky převezme. V neděli ráno nemusíte dělat nic navíc.
+Cuando inicies la transmisión en YouTube, la página de transmisión de B1 la detectará automáticamente. No necesitas hacer nada más el domingo por la mañana.
 :::
 
-## Krok 5: Zobrazte na svém webu
+## Paso 5: Muestra la biblioteca en tu sitio web
 
-Zajistěte, aby byla vaše knihovna kázání i živý přenos pro návštěvníky snadno dostupné.
+Haz que tu biblioteca de sermones y tu transmisión en vivo sean fáciles de encontrar para los visitantes.
 
-Podle návodu [Správa stránek](../website/managing-pages.md) můžete:
+Sigue la guía de [Administración de páginas](../website/managing-pages.md) para:
 
-1. Přidat na svůj web B1 sekci Kázání, aby návštěvníci mohli procházet vaši knihovnu
-2. Přidat sekci Živý přenos pro sledování živě
+1. Agregar una sección de Sermones a tu sitio de B1 para que los visitantes puedan explorar tu biblioteca
+2. Agregar una sección de Transmisión en vivo para la experiencia de visualización en directo
 
-## Krok 6: Přístup z mobilu
+## Paso 6: Acceso desde dispositivos móviles
 
-Členové mohou získat přístup ke kázáním a živým bohoslužbám z jakéhokoli zařízení.
+Los miembros pueden acceder a los sermones y a los servicios en vivo desde cualquier dispositivo.
 
-1. Členové mohou sledovat kázání v [mobilní aplikaci B1](../../b1-mobile/content/sermons.md) i na [B1.church](../../b1-church/content/sermons.md)
-2. Živý přenos s chatem funguje na obou platformách
+1. Los miembros pueden ver los sermones en [B1.church y en la aplicación B1](../../b1-church/content/sermons.md)
+2. La transmisión en vivo con chat funciona igual de bien en teléfonos y computadoras
 
 :::info
-Funkce živého chatu umožňuje vašemu online sboru zapojit se v reálném čase, stejně jako by byl v místnosti.
+La función de chat en vivo permite que tu congregación en línea participe en tiempo real, como si estuviera presente en el lugar.
 :::
 
-## Hotovo!
+## ¡Listo!
 
-Vaše knihovna kázání je online a živý přenos je nastaven. Členové mohou kdykoli dohánět minulá kázání a připojit se k živým bohoslužbám odkudkoli. Nová nahraná kázání se mohou synchronizovat automaticky.
+Tu biblioteca de sermones está en línea y tu transmisión en vivo está configurada. Los miembros pueden ponerse al día con sermones anteriores en cualquier momento y unirse a los servicios en vivo desde cualquier lugar. Las nuevas cargas de sermones pueden sincronizarse automáticamente.
 
-## Související články
+## Artículos relacionados
 
-- [Seznamy](../sermons/playlists.md) — uspořádání kázání do řad
-- [Hromadný import](../sermons/bulk-import.md) — import z YouTube nebo Vimeo
-- [Správa kázání](../sermons/managing-sermons.md) — přidávání a úprava jednotlivých kázání
-- [Živý přenos](../sermons/live-streaming.md) — nastavení živých bohoslužeb
-- [Kázání (web)](../../b1-church/content/sermons.md) — prohlížení kázání pro členy
-- [Živý přenos (web)](../../b1-church/content/live-streaming.md) — sledování živého přenosu pro členy
-- [Kázání (mobil)](../../b1-mobile/content/sermons.md) — kázání v mobilní aplikaci
+- [Listas de reproducción](../sermons/playlists.md) — organiza los sermones en series
+- [Importación masiva](../sermons/bulk-import.md) — importa desde YouTube o Vimeo
+- [Administración de sermones](../sermons/managing-sermons.md) — agrega y edita sermones individuales
+- [Transmisión en vivo](../sermons/live-streaming.md) — configura los servicios en vivo
+- [Sermones (miembros)](../../b1-church/content/sermons.md) — experiencia de visualización de sermones para los miembros
+- [Transmisión en vivo (miembros)](../../b1-church/content/live-streaming.md) — experiencia de transmisión en vivo para los miembros

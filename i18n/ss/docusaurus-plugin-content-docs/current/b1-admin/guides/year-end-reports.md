@@ -1,94 +1,94 @@
 ---
-title: "Umhlahlandlela: Yenta Imibiko Yemnikelo Yelicala Lomnyaka"
-description: "Ku-B1 Admin, qeda emarekhodi etiminikelo temnyaka, hlola tilungiselelo tetintela temalunga, bese wakhipha titatimende letikhokhelwa tintela kubo bonkhe."
+title: "Umhlahlandlela: Kwakha Tincwadi Tekunikela Tekuphetsa Lonyaka"
+description: "Kuma-B1 Admin, phetsa emarekhodi emanikelo, hlola tinsetho tetimali, bese wakha tincwadi temanikelo letinciphisa intela kuwo wonkhe banikeli."
 ---
 
-# Yenta Imibiko Yemnikelo Yelicala Lomnyaka
+# Kwakha Tincwadi Tekunikela Tekuphetsa Lonyaka
 
 <div class="article-intro">
 
-Hamba enchubeni yelicala lomnyaka yekugcilisa emarekhodi akho emnikelo, kucinisekisa tilungiselelo tesikhwama, kanye nekwenta tincwadzi temnikelo letikhululekile entelweni kubasunikeli bonkhe. Loku kuvamise kwentiwa ekucaleni kwaJanuwari kwelicala lomnyaka lowendlulile.
+Hamba ngalenkhathi yekuphetsa emarekhodi akho emanikelo, uhlole tinsetho temali, bese wakha tincwadi temanikelo letinciphisa intela kuwo wonkhe banikeli. Lokhu ngalokuvamile kwenteka ekuqaleni kweJanuwari ngenyanga yemnyaka lodlule.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- I-akhawunti ye-B1 Admin lenekufinyelela kwetimali
-- Imnikelo lebhaliwe unyaka wonkhe (nge-inthanethi nge-Stripe na/nobe lefakwe ngesandla)
-- Kufinyelela ku-akhawunti yakho ye-Stripe nangabe wemukela imnikelo ye-inthanethi
+- I-akhawunti ye-B1 Admin lenelilungelo lekufinyelela kwezezimali
+- Tinikelo letirekhodwe nged'emnyakeni wonkhe (ku-inthanethi nge-Stripe和/noma ngesandla)
+- Kufinyelela ku-akhawunti yakho ye-Stripe uma wemukela tinikelo ku-inthanethi
 
 </div>
 
-## Sinyatselo 1: Ngenisa Tinkhokhelo Te-Stripe Tekugcina
+## Sinyatelo 1: Ngenisa Tinkhokhelo Letimbalwa Te-Stripe
 
-Cinisekisa kutsi yonkhe imnikelo ye-inthanethi kusukela ekugcineni komnyaka isiluhlelweni lwakho.
+Qinisekisa kutsi tonkhe tinikelo ku-inthanethi letisuka ekuphelisweni kwemnyaka sitfolakala kuhlelo lwakho.
 
-Landzela umhlahlandlela we-[Kungenisa Kwe-Stripe](../donations/stripe-import.md) kute:
+Landzela umhlahlandlela we-[Stripe Import](../donations/stripe-import.md) ukuze:
 
-1. Yiya kuMnikelo > Emacembu > Kungenisa Kwe-Stripe
-2. Khetsa sikhatsi lesihlanganisa ekugcineni komnyaka (sib., Disemba 1 - Disemba 31)
-3. Chofota Buka Kucala kucala, bese uchofota Ngenisa Lokusalako kute kucedzeleke
+1. Yani ku-Donations > Stripe Import
+2. Khetsa sikhatsi lesihlanganisa ekuphelisweni kwemnyaka (njengo-Disemba 1 - Disemba 31)
+3. Cofa Preview kuqala ukuze uhlole, bese ucofa Import Missing ukuze uqedele
 
 :::warning
-Yenta lokungena ngembi kwekwenta tincwadzi. Nome ngutiphi tinkhokhelo longakatingenisi angeke tivele etincwadzini tebasunikeli.
+Yenta lokungenisa ngaphambi kokukhiqiza tincwadi temanikelo. Noma yiliphi liphepha lemanikelo lote lingakangeniswa ngeke livele etincwadini temanikelo labanikeli.
 :::
 
-## Sinyatselo 2: Buka Imibiko Yemnikelo
+## Sinyatelo 2: Hlola Imibiko Yetinikelo
 
-Cinisekisa kutsi emarekhodi akho aliciniso ngembi kwekwenta tincwadzi.
+Qinisekisa kutsi emarekhodi akho alungile ngaphambi kokwakha tincwadi.
 
-Landzela umhlahlandlela we-[Imibiko Yemnikelo](../donations/donation-reports.md) kute:
+Landzela umhlahlandlela we-[Donation Reports](../donations/donation-reports.md) ukuze:
 
-1. Hlolisa likhasi lesifingqo semnikelo kwemnyaka wonkhe
-2. Buka emitamba ngesikhwama bese uyicatsanisa netincwadzi tebhange kute utfole nome ngutiphi tehlukano
-3. Ngena ecenyeni ngayinye yemacembu kute ucinisekise imininingwane yebasunikeli nangabe kudzingeka
+1. Hlola likhasi lemfingo yetinikelo lalonkhe lonyaka
+2. Hlola tingcenye ngemali ngayinye uyiqhathanise nemabhange akho ukuze utfole noma yiliphi libhadla
+3. Cofa etinkhomishini letimbalwa uhlole imininingwane yomnikeli ngamunye uma kudzingeka
 
-## Sinyatselo 3: Cinisekisa Simo Sentela Sesikhwama
+## Sinyatelo 3: Hlola Simo Setintela Temali
 
-Cinisekisa kutsi tilungiselelo tekukhululeka entelweni yesikhwama ngasinye tiliciniso kute tincwadzi tibe liciniso.
+Qinisekisa kutsi kusetelwa kwentela kwemali ngayinye kulungile, kuze tincwadi tibe nemininingwane lechemeke.
 
-Landzela umhlahlandlela we-[Tikhwama](../donations/funds.md) kute:
+Landzela umhlahlandlela we-[Funds](../donations/funds.md) ukuze:
 
-1. Vula sikhwama ngasinye bese ucinisekisa kutsi silungiselelo sekukhululeka entelweni siliciniso
+1. Vula imali ngayinye uciniseke kutsi kusetelwa kwentela kulungile
 
 :::info
-Imnikelo kuphela leya kutikhwama letimakiwe njengetikhululekile entelweni yitovela etincwadzini temnikelo. Nangabe sikhwama kufanele sibe sikhululekile entelweni kepha singamakiwe kanjalo, sibuyeketse ngembi kwekwenta tincwadzi.
+Kuphela tinikelo letiya kumali lemakhiwe njengeletintela ngeke tivele etincwadini temanikelo. Uma imali kufanele ibe neintela kodvwa ingamakiwe kanjalo, yibuyekeze ngaphambi kokwakha tincwadi.
 :::
 
-## Sinyatselo 4: Yenta Tincwadzi Temnikelo
+## Sinyatelo 4: Kwakha Tincwadi Temanikelo
 
-Yakha tincwadzi temnikelo letisemtsetfweni kubasunikeli bakho.
+Dala tincwadi letisemtsetfweni temanikelo labanikeli bakho.
 
-Landzela umhlahlandlela we-[Tincwadzi Temnikelo](../donations/giving-statements.md) kute:
+Landzela umhlahlandlela we-[Giving Statements](../donations/giving-statements.md) ukuze:
 
-1. Yiya kuMnikelo > Tincwadzi
-2. Khetsa umnyaka kuluhlu bese ubuka titjaliso tesifingqo
-3. Khetsa indlela yakho yekusohla:
-   - **Sohla i-ZIP** — emafayela e-CSV lahlukene, linye ngasinikeli
-   - **Shicilela Konkhe** — sibukelo lesingashicilelwa ngencwadzi ngayinye ekhasini lelisha
+1. Yani ku-**Donations > Giving Statements**
+2. Khetsa umnyaka kusuka kulukhetso lwekwehla bese ubuka tinombolo letifingiwe
+3. Khetsa indlela yakho yekulanda:
+   - **Download ZIP** — tincwadi letihlukene te-CSV, letilinye ngomnikeli ngamunye
+   - **Print All** — inkhombandlela lelungele kushicilelwa, lapho incwadi ngayinye itfolakala ekhasini layo, nelogo yebandla lakho phezulu (uma usuyilayishile)
 
 :::tip
-Yenta tincwadzi ekucaleni kwaJanuwari ngesikhatsi emarekhodi asesha. Loku kukupha sikhatsi sekubona tinkinga nome ngutiphi ngembi kwekutitfumela ngeposi.
+Kwakha tincwadi ekuqaleni kweJanuwari, ngesikhatsi emarekhodi asha. Lokhu kukunika sikhatsi sekutfola tinkinga ngaphambi kokuyitfumela.
 :::
 
-## Sinyatselo 5: Sabalalisa Kubasunikeli
+## Sinyatelo 5: Hambisa Kubanikeli
 
-Faka tincwadzi etandleni tebasunikeli bakho.
+Fika tincwadi etandleni tabanikeli bakho.
 
-1. Shicilela bese utfumela tincwadzi ngeposi, nobe utfumele ema-CSV lahlukene ngeimeyili kubasunikeli
-2. Emalunga angabuka nako umlandvo wawo wemnikelo bese ashicilela tincwadzi kusuka ku-[B1.church](../../b1-church/giving/donation-history.md) naku-[app ye-B1 Mobile](../../b1-mobile/giving/donation-history.md)
+1. Shicilela utfumele tincwadi ngeposi, noma utfumelele banikeli ema-CSV ngamunye ngemtfwalo
+2. Emalungu futsi angabona umlandvo wawo wetinikelo naku shicilela tincwadi kwe-[B1.church noma ku-B1 App](../../b1-church/giving/donation-history.md)
 
-## Usucedzile!
+## Usephelile!
 
-Imibiko yakho yemnikelo yelicala lomnyaka isicedzelekile. Basunikeli banetincwadzi tabo letikhululekile entelweni, futsi emarekhodi akho etimali asegcilisiwe kulomnyaka.
+Imibiko yakho yetinikelo yekuphetsa lonyaka isiphelile. Banikeli bakho sebatfole tincwadi tabo letinciphisa intela, futsi emarekhodi akho emali asuke aphelile ngalonyaka.
 
 ## Tihloko Letihlobene
 
-- [Kungenisa Kwe-Stripe](../donations/stripe-import.md) — ngenisa tinkhokhelo tenthanethi
-- [Imibiko Yemnikelo](../donations/donation-reports.md) — buka tinjani nemitamba yemnikelo
-- [Tikhwama](../donations/funds.md) — phatsa tikhwama netilungiselelo tekukhululeka entelweni
-- [Tincwadzi Temnikelo](../donations/giving-statements.md) — yenta tincwadzi telicala lomnyaka
-- [Kubhala Imnikelo](../donations/recording-donations.md) — faka imali/emasheke ngesandla
-- [Umlandvo Wemnikelo (Web)](../../b1-church/giving/donation-history.md) — kubukwa ngumsunikeli ngekutimela
-- [Umhlahlandlela Wekuhlela Imnikelo Ye-Inthanethi](./online-giving.md) — kuhlela kwekucala kwe-Stripe nemnikelo
+- [Stripe Import](../donations/stripe-import.md) — ngenisa tinkhokhelo letisuka ku-inthanethi
+- [Donation Reports](../donations/donation-reports.md) — buka tindlela netinombolo tetinikelo
+- [Funds](../donations/funds.md) — phatsa timali netinsetho tentela
+- [Giving Statements](../donations/giving-statements.md) — kwakha tincwadi temnyaka wekuphetsa
+- [Recording Donations](../donations/recording-donations.md) — ngesandla ngenisa tinikelo tetimali/tiseke
+- [Donation History (Web)](../../b1-church/giving/donation-history.md) — umbono wemalungu wekubona umlandvo wawo
+- [Set Up Online Giving Guide](./online-giving.md) — kusetwa kwekucala kwe-Stripe nekunikela ku-inthanethi

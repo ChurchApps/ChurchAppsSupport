@@ -45,7 +45,7 @@ You will need six databases for the core API: `membership`, `attendance`, `conte
 
 ## Mobile App Development
 
-For B1Mobile, B1Checkin, LessonsScreen, or other React Native / Expo apps:
+For B1Checkin, LessonsScreen, or other React Native / Expo apps:
 
 | Tool | Version | Notes |
 |------|---------|-------|

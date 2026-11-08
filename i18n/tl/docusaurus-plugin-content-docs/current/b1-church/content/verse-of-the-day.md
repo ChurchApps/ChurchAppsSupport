@@ -1,68 +1,68 @@
 ---
-title: "Talata ng Araw sa Website at Portal ng B1.church"
-sidebar_label: "Talata ng Araw"
-description: "Tingnan ang larawan ng talata ng araw at mga nakaraang talata, saka ibahagi o i-download mula sa website o portal ng B1.church sa anumang laki ng screen."
+title: "Talatang Pang-araw-araw sa Website at Portal ng B1.church"
+sidebar_label: "Talatang Pang-araw-araw"
+description: "Tingnan ang larawan ng talatang Bibliya ng bawat araw at ang mga nakaraang talata, at ibahagi o i-download ang mga ito mula sa iyong website o member portal ng B1.church sa anumang laki ng screen."
 ---
 
-# Talata ng Araw
+# Talatang Pang-araw-araw
 
 <div class="article-intro">
 
-Ipinapakita ng pahina ng Talata ng Araw ang isang talata sa Bibliya bilang magandang na-format na larawan. Isa itong simpleng paraan para simulan ang iyong araw sa Kasulatan o makahanap ng pampalakas-loob sa buong linggo.
+Ipinapakita ng pahina ng Talatang Pang-araw-araw ang talata ng Bibliya para sa araw na iyon bilang isang magandang pagkakaayos na larawan. Ito ay isang simpleng paraan upang simulan ang iyong araw sa Kasulatan o makahanap ng pampalakas-loob sa buong linggo.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Hindi kailangan ng login para makita ang Talata ng Araw. Pampubliko ang pahina.
-- Dapat naidagdag na ng iyong simbahan ang pahina ng Talata ng Araw sa site navigation nito.
+- Hindi kailangan ng pag-login upang tingnan ang Talatang Pang-araw-araw. Bukas sa publiko ang pahina.
+- Dapat nang naidagdag ng iyong simbahan ang pahina ng Talatang Pang-araw-araw sa nabigasyon ng kanilang site.
 
 </div>
 
 ## Pagtingin sa Talata
 
-1. Pumunta sa pahinang **Verse of the Day** mula sa site navigation ng iyong simbahan.
-2. Ipinapakita ng pahina ang talata ngayong araw bilang larawan, kasama ang teksto ng talata, ang reperensya nito, at ang petsa ngayon sa tabi o sa ibaba nito.
+1. Pumunta sa pahinang **Talatang Pang-araw-araw** mula sa nabigasyon ng site ng iyong simbahan.
+2. Ipinapakita ng pahina ang talata ngayong araw bilang larawan, kasama ang teksto ng talata, ang sanggunian nito, at ang petsa ngayon sa tabi o ibaba nito.
 3. Awtomatikong lumalabas ang bagong talata tuwing araw.
 
-Wala kang kailangang gawin -- bisitahin lang ang pahina at ipapakita ang talata ng kasalukuyang araw.
+Wala kang kailangang gawin. Bisitahin lamang ang pahina at ipapakita ang talata para sa kasalukuyang araw.
 
 ## Mga Nakaraang Talata
 
-Sa ilalim ng talata ngayon, may seksyong **This week** na nagpapakita ng mga talata ng mga nakaraang araw:
+Sa ibaba ng talata ngayong araw, may seksyong **Ngayong linggo** na nagpapakita ng mga talata ng mga nakaraang araw:
 
-- Sa website ng iyong simbahan, lumalabas ang nakaraang anim na araw bilang hilera ng mga picture card na dahan-dahang gumagalaw nang kusa (humihinto ito habang nakaturo ka o nakahawak dito).
-- Sa member portal (`/mobile`), nakalista ang nakaraang tatlong araw kasama ang reperensya, petsa, at teksto ng bawat talata.
+- Sa website ng iyong simbahan, lumalabas ang nakaraang anim na araw bilang hanay ng mga card na may larawan na dahan-dahang gumagalaw nang mag-isa, at pagkatapos ng huling card ay bumabalik sa unang card (humihinto ito habang nakaturo o hinahawakan mo ito). Kapag hindi magkakasya ang lahat ng card, may hanay ng mga tuldok sa ilalim ng mga ito na nagpapakita kung aling card ang kasalukuyan mong nakikita; i-click ang isang tuldok upang lumipat sa card na iyon.
+- Sa member portal (`/mobile`), nakalista ang nakaraang tatlong araw kasama ang sanggunian, petsa, at teksto ng bawat talata.
 
-Mag-click o mag-tap sa alinmang araw para buksan ito kasama ang larawan, buong talata, at ang parehong share at download buttons gaya ng sa talata ngayon.
+I-click o pindutin ang alinmang araw upang buksan ito kasama ang larawan nito, buong talata, at ang parehong mga pindutan ng pagbabahagi at pag-download na nasa talata ngayong araw.
 
-Mag-click sa **Past verses** para makita ang talata ng bawat araw mula Enero 1 ngayong taon hanggang kahapon, nakapangkat ayon sa buwan at pinakabago muna. Sa website, bumubukas ang listahan sa ilalim ng hilera na **This week** (mag-click ulit sa **Past verses** para itago ito); sa member portal, bumubukas ito sa sarili nitong screen na may back link. Mag-click sa anumang petsa para buksan ang talata ng araw na iyon.
+I-click ang **Mga nakaraang talata** upang makita ang talata ng bawat araw mula Enero 1 ng taong ito hanggang kahapon, nakapangkat ayon sa buwan at ang pinakabago ang nasa itaas. Sa website, bumubukas ang listahan sa ibaba ng hanay na **Ngayong linggo** (i-click muli ang **Mga nakaraang talata** upang itago ito); sa member portal, bumubukas ito sa sarili nitong screen na may link pabalik. I-click ang alinmang petsa upang buksan ang talata ng araw na iyon.
 
-## Responsive na Display
+## Pagpapakita sa Iba't Ibang Laki ng Screen
 
-Awtomatikong umaayon ang larawan ng talata sa laki ng iyong screen. Depende sa iyong device at laki ng window, makikita mo ang isa sa tatlong format:
+Awtomatikong nag-aayon ang larawan ng talata upang magkasya sa iyong screen. Depende sa iyong device at laki ng window, makikita mo ang isa sa tatlong format:
 
-- **Widescreen (16:9)** -- Pinakamainam para sa desktop monitor at laptop
-- **Square (1:1)** -- Angkop para sa mga screen na kasing-laki ng tablet
-- **Portrait (9:16)** -- Ginawa para sa teleponong hawak nang patayo
+- **Malapad (16:9)** -- Pinakamainam para sa desktop monitor at laptop
+- **Parisukat (1:1)** -- Angkop para sa mga screen na kasing laki ng tablet
+- **Patayo (9:16)** -- Ina-optimize para sa mga telepono na hawak nang patayo
 
-Tinutukoy ng pahina ang sukat ng iyong screen at pinipili ang pinakamahusay na format, kaya laging maganda ang talata anuman ang paraan mo ng pagtingin. Kapag binago mo ang laki ng browser window, aayon ang larawan sa bagong sukat. Sa website ng iyong simbahan, ang matangkad na screen ng telepono ay nagpapakita ng square na larawan sa halip na portrait, para hindi maipit ang talata sa makitid na guhit.
+Tinutukoy ng pahina ang sukat ng iyong screen at pinipili ang pinakamainam na format, kaya laging maganda ang talata anuman ang paraan mo ng pagtingin dito. Kapag binago mo ang laki ng window ng iyong browser, mag-a-update ang larawan upang tumugma sa bagong sukat. Sa website ng iyong simbahan, ipinapakita ng matangkad na screen ng telepono ang parisukat na larawan sa halip na patayong larawan, upang hindi maipit ang talata sa makitid na guhit.
 
 ## Pagbabahagi ng Talata
 
-Ang talata ngayon, at alinmang nakaraang araw na bubuksan mo, ay may tatlong button:
+Ang talata ngayong araw, at alinmang nakaraang araw na bubuksan mo, ay may tatlong pindutan:
 
-- **Share** -- Ibinabahagi ang teksto ng talata, reperensya, at link sa larawan ng talata. Kung walang share menu ang iyong device, kokopyahin ang teksto at link sa clipboard.
-- **Share image** -- Ibinabahagi mismo ang larawan ng talata para maipost mo ito o maipadala sa mensahe. Sa mga device na hindi kayang magbahagi ng file (tulad ng karamihan sa desktop browser), dina-download na lang ang larawan.
-- **Download** -- Sine-save ang larawan ng talata sa iyong device.
+- **Ibahagi** -- ibinabahagi ang teksto ng talata, sanggunian, at link sa larawan ng talata. Kung walang menu ng pagbabahagi ang iyong device, kokopyahin ang teksto at link sa iyong clipboard.
+- **Ibahagi ang larawan** -- ibinabahagi ang mismong larawan ng talata, upang maipost mo ito o maipadala sa mensahe. Sa mga device na hindi kayang magbahagi ng file (gaya ng karamihan sa desktop browser), dina-download na lang ang larawan.
+- **I-download** -- sine-save ang larawan ng talata sa iyong device.
 
-Sa website ng iyong simbahan, palaging widescreen (16:9) na larawan ang ginagamit ng mga ito. Sa member portal, ginagamit nila ang hugis na akma sa iyong screen.
+Sa website ng iyong simbahan, palaging malapad (16:9) na larawan ang ginagamit ng mga ito. Sa member portal, ginagamit nila ang hugis na angkop sa iyong screen.
 
 :::tip
-Gawing pang-araw-araw na gawi ang pagtingin sa Talata ng Araw, at pagkatapos ay tuklasin pa ang talata sa [Bible reader](./bible.md).
+Gawin mong pang-araw-araw na gawi ang pagtingin sa Talatang Pang-araw-araw, at pagkatapos ay tuklasin pa ang talata sa [Bible reader](./bible.md).
 :::
 
 ## Availability
 
-Ang Talata ng Araw ay isang built-in na tampok ng nilalaman ng B1.church. Kung hindi mo ito makita sa navigation ng iyong simbahan, maaaring hindi ito naidagdag ng iyong church administrator sa site menu. Makipag-ugnayan sa iyong church administrator para hilingin ito.
+Ang Talatang Pang-araw-araw ay isang nakalakip na tampok ng nilalaman ng B1.church. Kung hindi mo ito nakikita sa nabigasyon ng iyong simbahan, maaaring hindi pa ito naidagdag ng administrator ng iyong simbahan sa menu ng site. Makipag-ugnayan sa administrator ng iyong simbahan upang hilingin ito.

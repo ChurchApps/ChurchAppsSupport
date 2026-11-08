@@ -1,88 +1,88 @@
 ---
-title: "Prerequisites"
-description: "Installeer Node.js, npm, Git en de platformtoolchains voordat je aan ChurchApps-projecten zoals B1 Admin, Lessons.church, FreePlay of de API lokaal werkt."
+title: "Vereisten"
+description: "Installeer Node.js, npm, Git en de platformspecifieke toolchains voordat je lokaal werkt aan ChurchApps-projecten zoals B1 Admin, Lessons.church, FreePlay of de API."
 ---
 
-# Prerequisites
+# Vereisten
 
 <div class="article-intro">
 
-De tools die u nodig hebt, zijn afhankelijk van welke projecten u wilt gebruiken. Deze pagina bevat alle vereiste software ingedeeld op ontwikkelinggebied, van de universele vereisten tot platform-specifieke toolchains.
+Welke tools je nodig hebt, hangt af van de projecten waaraan je wilt werken. Deze pagina somt alle benodigde software op, gegroepeerd per ontwikkelgebied, van de algemene vereisten tot de platformspecifieke toolchains.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
-- Lees het [Project Overview](./project-overview.md) om te bepalen welke projecten u wilt gebruiken
-- Hebt u beheerdersrechten op uw ontwikkelmachine voor softwareinstallatie
+- Bekijk het [Projectoverzicht](./project-overview.md) om te bepalen aan welke projecten je wilt werken
+- Zorg dat je beheerdersrechten hebt op je ontwikkelmachine om software te kunnen installeren
 
 </div>
 
-## Alle Projecten
+## Alle projecten
 
-Dit is vereist, ongeacht welk project u gebruikt:
+Deze zijn vereist, ongeacht aan welk project je werkt:
 
-| Tool | Version | Notes |
+| Tool | Versie | Opmerkingen |
 |------|---------|-------|
-| **Node.js** | 20+ | Versie 22+ vereist voor B1App en LessonsApp (Next.js 16) |
-| **npm** | Comes with Node.js | Gebruikt als pakketbeheerder in alle projecten |
-| **Git** | Latest | Elk project is een aparte repository |
+| **Node.js** | 20+ | Versie 22+ vereist voor B1App en LessonsApp (Next.js 16); 24+ vereist voor de Api |
+| **npm** | Wordt meegeleverd met Node.js | Wordt als pakketbeheerder gebruikt voor alle projecten |
+| **Git** | Nieuwste | Elk project is een afzonderlijke repository |
 
 :::tip
-Gebruik een Node versie-manager als [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) of [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) om gemakkelijk tussen Node-versies te schakelen.
+Gebruik een Node-versiebeheertool zoals [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) of [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) om eenvoudig tussen Node-versies te wisselen.
 :::
 
-## Backend API-Ontwikkeling
+## Backend-API-ontwikkeling
 
-Als u van plan bent om de API lokaal uit te voeren (in plaats van naar staging te wijzen):
+Als je de API lokaal wilt draaien (in plaats van naar de demo-API's te verwijzen):
 
-| Tool | Version | Notes |
+| Tool | Versie | Opmerkingen |
 |------|---------|-------|
-| **MySQL** | 8.0+ | Elke API-module gebruikt zijn eigen database |
+| **MySQL** | 8.0+ | Elke API-module gebruikt een eigen database |
 
-U hebt zes databases nodig voor de kern-API: `membership`, `attendance`, `content`, `giving`, `messaging` en `doing`. De API bevat scripts om het schema te initialiseren -- zie de [API lokale setup](../api/local-setup.md)-gids.
+Voor de kern-API heb je zes databases nodig: `membership`, `attendance`, `content`, `giving`, `messaging` en `doing`. De API bevat scripts om het schema te initialiseren -- zie de handleiding [API lokale installatie](../api/local-setup.md).
 
-## Mobiele App-Ontwikkeling
+## Mobiele app-ontwikkeling
 
-Voor B1Mobile, B1Checkin, LessonsScreen of andere React Native / Expo-apps:
+Voor B1Checkin, LessonsScreen of andere React Native- / Expo-apps:
 
-| Tool | Version | Notes |
+| Tool | Versie | Opmerkingen |
 |------|---------|-------|
-| **Expo CLI** | Latest | Installeer globaal: `npm install -g expo-cli` |
-| **Android Studio** | Latest | Vereist voor Android-ontwikkeling (inclusief Android SDK) |
-| **Xcode** | Latest | Vereist voor iOS-ontwikkeling (alleen macOS) |
+| **Expo CLI** | Nieuwste | Installeer globaal: `npm install -g expo-cli` |
+| **Android Studio** | Nieuwste | Vereist voor Android-ontwikkeling (bevat de Android SDK) |
+| **Xcode** | Nieuwste | Vereist voor iOS-ontwikkeling (alleen macOS) |
 
 :::info
-U kunt de Expo Go-app op een fysiek apparaat gebruiken voor snelle tests zonder Android Studio of Xcode. Het bouwen van productie-binaries vereist echter native toolchains.
+Je kunt de Expo Go-app op een fysiek apparaat gebruiken voor snelle tests zonder Android Studio of Xcode. Het bouwen van productiebinaries vereist echter de native toolchains.
 :::
 
-## FreeShow (Desktop App)-Ontwikkeling
+## FreeShow (desktopapp)-ontwikkeling
 
-FreeShow heeft aanvullende native build-afhankelijkheden omdat het native Node-modules compileert (zoals `canvas`):
+FreeShow heeft extra native build-afhankelijkheden, omdat het native Node-modules (zoals `canvas`) compileert:
 
-### Alle Platforms
+### Alle platforms
 
-| Tool | Version | Notes |
+| Tool | Versie | Opmerkingen |
 |------|---------|-------|
-| **Python** | 3.12 | Vereist door `node-gyp` voor native module-compilatie |
-| **setuptools** | Latest | Installeer via `pip install setuptools` |
+| **Python** | 3.12 | Vereist door `node-gyp` voor het compileren van native modules |
+| **setuptools** | Nieuwste | Installeer via `pip install setuptools` |
 
 ### Windows
 
-| Tool | Notes |
+| Tool | Opmerkingen |
 |------|-------|
-| **Visual Studio** | Community-editie is voldoende |
-| **"Desktop development with C++" workload** | Selecteer tijdens Visual Studio-installatie |
-| **Windows 10 SDK** | Opgenomen in C++ workload; zorg dat dit is ingeschakeld |
+| **Visual Studio** | De Community-editie is voldoende |
+| **Workload "Desktopontwikkeling met C++"** | Selecteer dit tijdens de installatie van Visual Studio |
+| **Windows 10 SDK** | Inbegrepen in de C++-workload; zorg dat deze is aangevinkt |
 
-U kunt de Visual Studio build-tools installeren via de commandoregel:
+Je kunt de Visual Studio-buildtools via de opdrachtregel installeren:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-Of installeer Visual Studio Community en selecteer de "Desktop development with C++"-workload tijdens installatie.
+Of installeer Visual Studio Community en selecteer tijdens de installatie de workload "Desktopontwikkeling met C++".
 
 ### Linux
 
@@ -92,24 +92,24 @@ sudo apt-get install libfontconfig1-dev
 
 ### macOS
 
-Xcode Command Line Tools zijn meestal voldoende:
+De Xcode Command Line Tools zijn doorgaans voldoende:
 
 ```bash
 xcode-select --install
 ```
 
-## Controleer Uw Installatie
+## Controleer je installatie
 
-Voer deze commando's uit om alles in te stellen:
+Voer deze opdrachten uit om te controleren of alles is geïnstalleerd:
 
 ```bash
-node --version    # Should print v20.x.x or higher
-npm --version     # Should print 10.x.x or higher
-git --version     # Should print git version 2.x.x
-mysql --version   # Only needed for local API development
+node --version    # Zou v20.x.x of hoger moeten tonen
+npm --version     # Zou 10.x.x of hoger moeten tonen
+git --version     # Zou git version 2.x.x moeten tonen
+mysql --version   # Alleen nodig voor lokale API-ontwikkeling
 ```
 
-## Volgende Stappen
+## Volgende stappen
 
-- **[Project Overview](./project-overview.md)** -- Bekijk alle projecten en wat ze doen
-- **[Environment Variables](./environment-variables.md)** -- Configureer uw `.env`-bestanden
+- **[Projectoverzicht](./project-overview.md)** -- Bekijk alle projecten en wat ze doen
+- **[Omgevingsvariabelen](./environment-variables.md)** -- Configureer je `.env`-bestanden

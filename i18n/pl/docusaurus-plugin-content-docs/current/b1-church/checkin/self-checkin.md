@@ -1,68 +1,73 @@
 ---
-title: "Samodzielne meldowanie w portalu B1.church"
+title: "Samodzielne zameldowanie w portalu członka B1.church"
 sidebar_label: "Samodzielne zameldowanie"
-description: "Zamelduj siebie i swoje gospodarstwo domowe na nabożeństwie z portalu członka B1.church, wybierając godziny i grupy w kilku szybkich krokach."
+description: "Zamelduj siebie i swoje gospodarstwo domowe na nabożeństwie z portalu członka B1.church, wybierając godziny nabożeństw i grupy w kilku szybkich krokach."
 ---
 
 # Samodzielne zameldowanie
 
 <div class="article-intro">
 
-Samodzielne zameldowanie pozwala zarejestrować własną obecność oraz obecność członków gospodarstwa domowego w kilku prostych krokach. To szybka alternatywa dla korzystania z fizycznego kiosku w kościele.
+Samodzielne meldowanie pozwala zarejestrować obecność własną i członków swojego gospodarstwa domowego w zaledwie kilku krokach. To szybka alternatywa dla korzystania z fizycznego kiosku w kościele.
 
 </div>
 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Musisz być [zalogowany](../getting-started/logging-in.md) na swoje konto B1.church.
-- Członkowie Twojego gospodarstwa domowego muszą być powiązani z Twoim kontem. Jeśli brakuje któregoś członka rodziny, poproś administratora kościoła, aby dodał go do Twojego gospodarstwa domowego.
+- Musisz być [zalogowany](../getting-started/logging-in.md) do swojego konta B1.church.
+- Członkowie Twojego gospodarstwa domowego muszą być powiązani z Twoim kontem. Jeśli brakuje członka rodziny, poproś administratora kościoła o dodanie go do Twojego gospodarstwa domowego.
 
 </div>
 
-## Przebieg zameldowania
+## Przebieg meldowania
 
-Zameldowanie składa się z trzech prostych kroków. Aby rozpocząć, otwórz **Zameldowanie** z [paska kart lub strony Więcej](../getting-started/navigating.md).
+Meldowanie składa się z prostego, trzyetapowego procesu. Aby rozpocząć, otwórz **Meldowanie** z [paska kart lub strony Więcej](../getting-started/navigating.md).
 
 ### Krok 1: Wybierz nabożeństwo
 
-Po otwarciu strony zameldowania zobaczysz listę dostępnych nabożeństw (na przykład „Niedzielne nabożeństwo poranne” lub „Środowe nabożeństwo wieczorne”). Każda karta nabożeństwa pokazuje jego nazwę oraz zbór, jeśli Twój kościół ma kilka lokalizacji.
+Gdy otworzysz stronę meldowania, zobaczysz listę dostępnych nabożeństw (na przykład „Niedzielne poranne” lub „Środowy wieczór”). Każda karta nabożeństwa pokazuje jego nazwę oraz kampus, jeśli Twój kościół ma wiele lokalizacji.
 
 Kliknij nabożeństwo, aby je wybrać i przejść do następnego kroku.
 
 ### Krok 2: Wybierz członków gospodarstwa domowego i grupy
 
-Po wybraniu nabożeństwa zobaczysz członków swojego gospodarstwa domowego w sekcji **Kto jest tutaj**. Dla każdej osoby, która uczestniczy:
+Po wybraniu nabożeństwa zobaczysz członków swojego gospodarstwa domowego w sekcji **Kto jest tutaj**. Dla każdej osoby biorącej udział:
 
 1. Dotknij członka gospodarstwa domowego, aby rozwinąć jego wpis.
-2. Zobaczysz dostępne **godziny nabożeństwa** dla wybranego nabożeństwa. Jeśli Twój kościół ustawił harmonogram zameldowania dla danej godziny nabożeństwa, możesz ją wybrać tylko wtedy, gdy zameldowanie na nią jest otwarte (na przykład od 30 minut przed nabożeństwem do krótko po jego zakończeniu). Poza tym przedziałem czasowym godzina nabożeństwa jest oznaczona jako **Zamknięte**, wraz z informacją o tym, kiedy się otworzy, jeśli jest znana -- na przykład **Zamknięte · otwarte w niedzielę o 9:30**.
-3. Dotknij **Wybierz grupę** obok godziny nabożeństwa, aby wybrać grupę, do której dana osoba ma się zameldować (na przykład „Główne nabożeństwo”, „Pokój dla dzieci 1” lub „Grupa młodzieżowa”).
-4. Powtórz te czynności dla każdego członka gospodarstwa domowego, który uczestniczy.
+2. Zobaczysz dostępne **godziny nabożeństw** dla wybranego nabożeństwa. Jeśli Twój kościół ustawił harmonogram meldowania dla danej godziny nabożeństwa, możesz ją wybrać tylko wtedy, gdy meldowanie na nią jest otwarte (na przykład od 30 minut przed nabożeństwem do krótko po jego zakończeniu). Poza tym oknem godzina nabożeństwa jest oznaczona jako **Zamknięte**, wraz z informacją o godzinie otwarcia, jeśli jest znana, na przykład **Zamknięte · otwiera się niedz. 9:30**.
+3. Dotknij **Wybierz grupę** obok godziny nabożeństwa, aby wybrać grupę, do której osoba ma zostać zameldowana (na przykład „Główne uwielbienie”, „Pokój dzieci 1” lub „Grupa młodzieżowa”).
+4. Powtórz to dla każdego członka gospodarstwa domowego, który uczestniczy.
 
-Nie musisz meldować wszystkich członków gospodarstwa domowego -- rozwiń wpisy i przypisz grupy tylko tym osobom, które są faktycznie obecne.
+Nie musisz meldować każdego członka gospodarstwa domowego. Rozwijaj i przydzielaj grupy tylko dla osób, które faktycznie są obecne.
+
+Każda osoba, która została już dziś zameldowana na to nabożeństwo, ma odznakę **Już zameldowany** obok swojego imienia.
 
 ### Krok 3: Potwierdzenie
 
-Gdy wybierzesz grupy dla wszystkich uczestniczących osób, dotknij przycisku na dole strony. Pokazuje on liczbę wybranych osób -- na przykład **Zamelduj 1 osobę** lub **Zamelduj 3 osoby**.
+Gdy wybierzesz grupy dla wszystkich uczestniczących osób, dotknij przycisku na dole strony. Przycisk pokazuje liczbę wybranych osób, na przykład **Zamelduj 1 osobę** lub **Zamelduj 3 osoby**.
 
-Zobaczysz potwierdzenie, że zameldowanie zostało ukończone, a Twoja obecność została zapisana. Po chwili strona wróci do listy nabożeństw, gotowa na kolejne zameldowanie.
+Jeśli ktoś, kogo wybrałeś, został już dziś zameldowany na to nabożeństwo, najpierw pojawi się okno **Już zameldowany**, które wymienia te osoby. Dotknij **Zamelduj ponownie**, aby zaktualizować ich grupy, lub **Anuluj**, aby wrócić.
 
-Jeśli Twój kościół drukuje naklejki z imionami przy stanowisku zameldowania, zamiast tego zobaczysz komunikat **Jesteś zameldowany!** wraz z kodem QR i kodem bezpieczeństwa. Pokaż kod na stanowisku zameldowania, aby wydrukować naklejki z imionami, a następnie dotknij **Gotowe**. Na kiosku B1 Checkin dotknij **Skanuj kod** i przytrzymaj kod QR przed kamerą -- zobacz [Drukowanie etykiet przy zameldowaniu telefonicznym](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+Zobaczysz potwierdzenie, że meldowanie zostało zakończone, a Twoja obecność została zapisana. Po chwili strona wraca do listy nabożeństw, gotowa na kolejne meldowanie.
 
-Jeśli Twoje gospodarstwo domowe jest już zameldowane na wybrane nabożeństwo, obok nagłówka **Kto jest tutaj** pojawi się link **Pokaż kod zameldowania**. Dotknij go, aby ponownie wyświetlić kod QR i kod bezpieczeństwa -- na przykład wtedy, gdy zamknąłeś stronę przed dotarciem do stanowiska zameldowania.
+Jeśli Twój kościół drukuje identyfikatory przy stanowisku meldowania, zamiast tego zobaczysz komunikat **Jesteś zameldowany!** z kodem QR i kodem bezpieczeństwa. Pokaż kod na stanowisku meldowania, aby wydrukować identyfikatory, a następnie dotknij **Gotowe**. Na kiosku B1 Checkin dotknij **Skanuj kod** i przytrzymaj kod QR przed kamerą. Zobacz [Drukowanie etykiet przy meldowaniu telefonem](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+
+Jeśli Twoje gospodarstwo domowe jest już zameldowane na wybrane nabożeństwo, obok nagłówka **Kto jest tutaj** pojawi się łącze **Pokaż kod meldowania**. Dotknij go, aby ponownie wyświetlić kod QR i kod bezpieczeństwa, na przykład jeśli zamknąłeś stronę przed dotarciem do stanowiska meldowania.
 
 :::tip
-Jeśli chcesz zmienić wybór grupy przed zakończeniem zameldowania, dotknij przycisku **Zmień** obok dowolnej godziny nabożeństwa, aby wybrać inną grupę.
+Jeśli przed zakończeniem meldowania chcesz zmienić wybór grupy, dotknij przycisku **Zmień** obok dowolnej godziny nabożeństwa, aby wybrać inną grupę.
 :::
 
 ## Warto wiedzieć
 
-- Możesz meldować tylko członków gospodarstwa domowego powiązanych z Twoim kontem. Jeśli brakuje któregoś członka rodziny, poproś administratora kościoła, aby dodał go do Twojego gospodarstwa domowego.
-- Jeśli na stronie zameldowania nie widać żadnych nabożeństw, Twój kościół może nie mieć obecnie skonfigurowanych nabożeństw do zameldowania.
-- Jeśli wybierzesz nabożeństwo i zobaczysz komunikat, na przykład „Zameldowanie otwiera się w niedzielę o 9:30.” (lub „Zameldowanie na to nabożeństwo nie jest teraz otwarte.”), żadna z godzin tego nabożeństwa nie mieści się obecnie w oknie zameldowania. Spróbuj ponownie, gdy zameldowanie zostanie otwarte.
-- Jeśli Twoje gospodarstwo domowe zameldowało się na wcześniejszą godzinę nabożeństwa, możesz wrócić i zameldować się na późniejszą godzinę, gdy się otworzy, nawet po zamknięciu wcześniejszej.
-- Jeśli wybrany pokój jest pełny lub zamknięty, zobaczysz komunikat: „Wybrany pokój jest pełny lub zamknięty dla zameldowania. Zwróć się do wolontariusza.”
+- Możesz meldować tylko członków gospodarstwa domowego powiązanych z Twoim kontem. Jeśli brakuje członka rodziny, poproś administratora kościoła o dodanie go do Twojego gospodarstwa domowego.
+- Jeśli na stronie meldowania nie widać żadnych nabożeństw, być może Twój kościół nie ma obecnie skonfigurowanych nabożeństw do meldowania.
+- Jeśli wybierzesz nabożeństwo i zobaczysz komunikat, na przykład „Meldowanie otwiera się niedz. 9:30.” (lub „Meldowanie na to nabożeństwo nie jest obecnie otwarte.”), żadna z godzin tego nabożeństwa nie mieści się obecnie w oknie meldowania. Spróbuj ponownie, gdy meldowanie zostanie otwarte.
+- Jeśli Twoje gospodarstwo domowe zameldowało się na wcześniejszą godzinę nabożeństwa, możesz wrócić i zameldować się na późniejszą godzinę, gdy tylko się otworzy, nawet po zamknięciu wcześniejszej.
+- Jeśli wybrany przez Ciebie pokój jest pełny lub zamknięty, zobaczysz komunikat: „Wybrany pokój jest pełny lub zamknięty dla meldowania. Zgłoś się do wolontariusza.”
+- Jeśli pokój dla dzieci nie ma wystarczającej liczby zameldowanych wolontariuszy dla kolejnego dziecka, zobaczysz komunikat z nazwą pokoju, na przykład „Pokój dzieci 1 nie ma obecnie wystarczającej liczby wolontariuszy dla kolejnego dziecka. Wybierz inny pokój lub zgłoś się do wolontariusza.”
 
 :::warning
-Zameldowanie jest dostępne tylko wtedy, gdy Twój kościół ma skonfigurowane aktywne nabożeństwa. Jeśli nie widzisz żadnych nabożeństw, skontaktuj się z biurem kościoła, aby sprawdzić, czy samodzielne zameldowanie jest włączone.
+Meldowanie jest dostępne tylko wtedy, gdy Twój kościół ma skonfigurowane aktywne nabożeństwa. Jeśli nie widzisz żadnych nabożeństw na liście, sprawdź w biurze kościoła, czy samodzielne meldowanie jest włączone.
 :::

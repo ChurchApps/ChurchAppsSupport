@@ -377,16 +377,10 @@
     "message": "Kerkverwaltingsdashboard voor personen, groepen, aanwezigheid, donaties en meer."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Website"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Openbare kerkwebsite en ledenportaal."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobiel"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Verouderde ledenapp voor iOS en Android, nu vervangen door de B1.church-webapp."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Incheckservice"

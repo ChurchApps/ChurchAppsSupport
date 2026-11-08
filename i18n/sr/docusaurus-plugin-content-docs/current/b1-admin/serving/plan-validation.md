@@ -1,72 +1,72 @@
 ---
-title: "Provera plana i obaveštenja"
-description: "Проверите планове служења у B1 Admin за непопуњене позиције, сукобе у распореду и блокиране волонтере, па једним кликом обавестите цео тим."
+title: "Провера плана и обавештења"
+description: "Проверите сервисне планове у B1 Admin за непопуњена места, сукобе у распореду и волонтере који су блокирали датум, а затим push обавештењем одмах обавестите цео тим, једним кликом."
 ---
 
-# Provera plana i obaveštenja volontera
+# Провера плана и обавештавање волонтера
 
 <div class="article-intro">
 
-B1 Admin automatski proverava vaše planove pre nedelje i traži probleme: nepopunjene pozicije, sukobe u rasporedu i volontere koji su označili da taj datum ne mogu. Kada je sve u redu, celom timu možete poslati obaveštenje jednim klikom.
+B1 Admin аутоматски проверава ваше планове пре недеље: непопуњена места, сукобе у распореду и волонтере који су блокирали тај датум. Када је све у реду, можете обавестити цео тим једним кликом.
 
 </div>
 
 <div class="prereqs">
-<h4>Pre nego što počnete</h4>
+<h4>Пре почетка</h4>
 
-- Kreirajte [plan službe](./plans.md) i dodelite volontere pozicijama
-- Dodajte [termine službi](./plans.md) u plan kako bi provera sukoba mogla da otkrije preklapanja
-- Proverite da su volonteri instalirali aplikaciju B1 Mobile kako bi mogli da primaju push obaveštenja
+- Направите [сервисни план](./plans.md) и додělите волонтере позицијама
+- Додајте [термине служби](./plans.md) у план како би провера сукоба могла да пронађе преклапања
+- Уверите се да волонтери имају [инсталисану B1 App](../../b1-church/getting-started/installing-pwa.md) како би примали push обавештења
 
 </div>
 
-## Panel za proveru
+## Панел за проверу
 
-Svaki plan ima panel **Validation** (Provera) koji se pokreće automatski dok pravite plan. Proverava tri stvari:
+Сваки план има панел **Validation** (Провера) који се извршава аутоматски док састављате план. Проверава три ствари:
 
-### Nepopunjene pozicije
-Ako pozicija zahteva više ljudi nego što je trenutno dodeljeno, panel za proveru navodi tačno koliko je još potrebno, na primer: *„Tonski tehničar: potrebna je još 1 osoba.“* Na prvi pogled vidite da li je plan potpuno popunjen pre nego što stigne nedelja.
+### Непопуњене позиције
+Ако позицији треба више особа него што је тренутно додељено, панел за проверу тачно наводи шта још недостаје, на пример: *„Звучни техничар: потребна је још 1 особа.“* Одмах видите да ли је план потпуно попуњен пре него што дође недеља.
 
-### Sukobi u rasporedu
-Ako je volonter dodeljen na dve pozicije koje se u istom planu vremenski preklapaju, panel za proveru označava sukob, na primer: *„Jana Smit: vremenski sukob između vođe bogosluženja i prijave dece tokom nedeljne službe.“* Ovo sprečava dvostruko zakazivanje pre nego što postane problem tokom nedeljnog jutra.
+### Сукоби у распореду
+Ако је волонтер распоређен на две позиције које се временски преклапају у оквиру истог плана, панел за проверу означава сукоб, на пример: *„Jane Smith: временски сукоб између Водитеља богослужења и Пријаве деце током недељне службе.“* Ово хвата двоструко заказивање пре него што постане проблем у недељу ујутро.
 
-### Datumi nedostupnosti
-Volonteri mogu u aplikaciji B1 Mobile da podese datume kada nisu dostupni. Ako je neko dodeljen planu koji pada u jedan od tih datuma, panel za proveru automatski prikazuje sukob kako biste mogli da pronađete zamenu.
+### Датуми недоступности
+Волонтери могу у B1 App подесити датуме када нису доступни. Ако је неко распоређен у план који пада у једном од тих датума, панел за проверу аутоматски приказује сукоб како бисте могли да пронађете замену.
 
-### Sukobi među planovima
-Provera takođe obuhvata sve vaše planove odjednom. Ako je isti volonter dodeljen u dva različita plana koja se vremenski preklapaju, na primer u službi u 9 časova i službi u 10 časova koje traju do 10:30, B1 Admin će tu osobu označiti kao dvostruko zakazanu među planovima.
+### Сукоби између планова
+Провера такође упоређује све ваше планове истовремено. Ако је исти волонтер распоређен у два различита плана која се временски преклапају, на пример служба у 9 и служба у 10 часова које трају до 10:30, B1 Admin ће означити ту особу као двоструко заказану у различитим плановима.
 
 :::tip
-Ne morate ništa posebno da radite da biste pokrenuli proveru. Ona se ažurira automatski svaki put kada dodate ili promenite dodelu. Samo pratite panel dok pravite plan.
+Не морате ништа да урадите да бисте покренули проверу. Ажурира се аутоматски сваки пут када додате или промените распоред. Само пратите панел док састављате план.
 :::
 
-## Obaveštavanje volontera
+## Обавештавање волонтера
 
-Kada je plan gotov, možete odjednom obavestiti sve dodeljene volontere direktno iz panela za proveru.
+Када је план постављен, можете обавестити све распоређене волонтере одмах из панела за проверу.
 
-1. Otvorite plan i pomerite se do panela **Validation** (Provera)
-2. Ako postoje volonteri koji nisu obavešteni, videćete link sa brojem onih kojima treba poslati obaveštenje (na primer: *„Obavesti 8 volontera“*)
-3. Kliknite na link da biste poslali push obaveštenja svima kojima još nije poslato
-4. Volonteri na telefonu dobijaju obaveštenje da su raspoređeni i da treba da potvrde svoju dodelu
+1. Отворите план и померите се до панела **Validation** (Провера)
+2. Ако постоје волонтери који нису обавештени, видећете везу са бројем оних којима треба послати обавештење (нпр. *„Обавести 8 волонтера“*)
+3. Кликните на везу да бисте послали push обавештења свима који још нису обавештени
+4. Волонтери на телефону добијају обавештење да су распоређени и позив да потврде своје учешће
 
 :::info
-Uključuju se samo volonteri koji još nisu obavešteni. Ako kasnije dodate nekoga u plan, link će se ponovo pojaviti kako biste mogli da obavestite tu novu osobu bez ponovnog obaveštavanja ostatka tima.
+Укључују се само волонтери који још нису обавештени. Ако касније додате некога у план, веза се поново појављује како бисте могли да обавестите новог члана без поновног обавештавања осталих у тиму.
 :::
 
-### Planovi sa tokom potvrde
+### Планови са током потврђивања
 
-Ako podešavanja plana navode [tok potvrde](./workflows.md#serving-assignment-confirmations), panel prikazuje: *„Nови zahtevi koriste tok potvrde. Upozorenja u aplikaciji ostaju uključena. Podsetnici se zaustavljaju kada se svaki zahtev prihvati ili odbije.“* U tom slučaju:
+Ако подешавања плана наводе [ток рада за потврђивање](./workflows.md#serving-assignment-confirmations), панел приказује: *„Нови захтеви користе ток рада за потврђивање. Обавештења у апликацији остају укључена. Подсетници се прекидају када се сваки захтев прихвати или одбије.“* У том случају:
 
-- Link za obaveštavanje broji samo volontere kojima nije poslato obaveštenje i koji još nisu odgovorili.
-- Klikom na link šalje se uobičajeno upozorenje u aplikaciji i kreira po jedna kartica za svaki zahtev na tabli toka. Tok zatim šalje podsetnike putem e-pošte i SMS-a i, ako je potrebno, dodeljuje zahtev nekome ko će volontera pozvati telefonom.
-- Plan mora biti objavljen (a ne samo privremeno zakazan), a tok mora biti aktivan. U suprotnom panel prikazuje: *„Zahtevi nisu mogli da budu poslati. Proverite da je izabrani tok aktivan i da je plan objavljen, pa pokušajte ponovo.“*
+- Веза за обавештавање рачуна само волонтере који још нису обавештени и нису одговорили.
+- Клик на њу шаље уобичајено обавештење у апликацији и отвара по једну картицу за сваки захтев на табли тока рада. Ток рада затим шаље подсетнике путем е-поште и SMS-а и, ако је потребно, предаје захтев некоме да позове волонтера.
+- План мора бити објављен (а не привремен), а ток рада мора бити активан. У супротном, панел приказује: *„Захтеви нису могли бити послати. Проверите да ли је изабрани ток рада активан и да ли је план објављен, па покушајте поново.“*
 
 :::warning
-Volonteri moraju imati instaliran B1.church mobilni doživljaj (PWA na početnom ekranu ili zastarelu nativnu aplikaciju B1 Mobile za korisnike koji je još koriste), uz uključena obaveštenja, kako bi primali push obaveštenja. Uputstva za podešavanje potražite u članku [Instaliranje kao aplikacije (PWA)](/docs/b1-church/getting-started/installing-pwa).
+Волонтери морају имати инсталисану B1 App на почетном екрану и укључена обавештења да би примали push обавештења. Упутство за подешавање потражите у одељку [Инсталација као апликација (PWA)](../../b1-church/getting-started/installing-pwa.md).
 :::
 
-## Povezani članci
+## Повезани чланци
 
-- [Planovi službi](./plans.md)
-- [Tokovi rada](./workflows.md)
-- [Instaliranje B1.church PWA aplikacije](/docs/b1-church/getting-started/installing-pwa)
+- [Сервисни планови](./plans.md)
+- [Токови рада](./workflows.md)
+- [Инсталација B1.church PWA](/docs/b1-church/getting-started/installing-pwa)

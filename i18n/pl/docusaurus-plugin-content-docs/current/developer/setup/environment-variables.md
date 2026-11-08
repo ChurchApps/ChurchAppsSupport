@@ -1,56 +1,56 @@
 ---
-title: "Zmienne środowiskowe"
-description: "Konfiguracja pliku .env w projektach ChurchApps: wspólne demo API lub lokalne API oraz zmienne dla B1 Admin, B1.church, B1 Mobile, Lessons.church i innych."
+title: "Premenné prostredia"
+description: "Nastavte súbory .env pre projekty ChurchApps, vyberte zdieľané demo API alebo lokálne API a vyplňte premenné pre B1 Admin, B1.church, B1 Checkin a ďalšie."
 ---
 
-# Zmienne środowiskowe
+# Premenné prostredia
 
 <div class="article-intro">
 
-Każdy projekt ChurchApps korzysta z pliku `.env` do lokalnej konfiguracji. Każdy projekt zawiera przykładowy plik, który kopiujesz i dostosowujesz. Ta strona opisuje zmienne środowiskowe dla interfejsów API, aplikacji webowych i mobilnych, w tym sposób wyboru między demonstracyjnym a lokalnym API.
+Každý projekt ChurchApps používa súbor `.env` na lokálnu konfiguráciu. Každý projekt obsahuje vzorový súbor, ktorý skopírujete a upravíte. Táto stránka popisuje premenné prostredia pre API, webové aplikácie a mobilné aplikácie vrátane toho, ako vybrať medzi cieľom demo a lokálnym API.
 
 </div>
 
 <div class="prereqs">
-<h4>Zanim zaczniesz</h4>
+<h4>Skôr než začnete</h4>
 
-- Zainstaluj [wymagania wstępne](./prerequisites.md) dla swojego projektu
-- Sklonuj repozytorium projektu, nad którym chcesz pracować
-- Zapoznaj się z [Przeglądem projektu](./project-overview.md), aby dowiedzieć się, których modułów API wymaga Twój projekt
+- Nainštalujte [predpoklady](./prerequisites.md) pre váš projekt
+- Naklonujte repozitár projektu, s ktorým chcete pracovať
+- Prečítajte si [Prehľad projektu](./project-overview.md), aby ste pochopili, ktoré moduly API váš projekt potrebuje
 
 </div>
 
-## Ogólny schemat
+## Všeobecný postup
 
-1. Poszukaj pliku `dotenv.sample.txt` lub `.env.sample` w głównym katalogu projektu.
-2. Skopiuj go do pliku `.env`.
-3. W razie potrzeby zmodyfikuj wartości.
+1. V koreňovom adresári projektu vyhľadajte `dotenv.sample.txt` alebo `.env.sample`.
+2. Skopírujte ho do súboru `.env`.
+3. Podľa potreby upravte hodnoty.
 
 ```bash
-# Przykład dla projektu z plikiem .env.sample
+# Príklad pre projekt so súborom .env.sample
 cp .env.sample .env
 
-# Przykład dla projektu z plikiem dotenv.sample.txt
+# Príklad pre projekt so súborom dotenv.sample.txt
 cp dotenv.sample.txt .env
 ```
 
 :::warning
-**Nigdy nie zatwierdzaj plików `.env` w systemie kontroli wersji.** Zawierają one wrażliwe dane, takie jak dane logowania do bazy danych, klucze API i sekrety JWT. Wszystkie projekty ChurchApps mają plik `.env` wpisany w `.gitignore`, mimo to zawsze sprawdź to przed zatwierdzeniem zmian.
+**Nikdy neodovzdávajte súbory `.env` do systému na správu verzií.** Obsahujú citlivé údaje, ako sú prihlasovacie údaje k databáze, API kľúče a tajomstvá JWT. Všetky projekty ChurchApps majú `.env` uvedený v `.gitignore`, no pred každým commitom si to vždy skontrolujte.
 :::
 
-## Wybór celu API
+## Výber cieľa API
 
-Najważniejsza decyzja dotyczy tego, dokąd frontend kieruje wywołania API. Dostępne są dwie opcje:
+Najdôležitejšie rozhodnutie spočíva v tom, kam má váš frontend smerovať volania API. Existujú dve možnosti:
 
-### Opcja 1: Demonstracyjne API (zalecane do programowania frontendu)
+### Možnosť 1: Demo API (odporúčané pre vývoj frontendu)
 
-Skorzystaj ze wspólnego środowiska demonstracyjnego. Nie wymaga ono lokalnego API ani konfiguracji bazy danych. Działa na najnowszym kodzie z gałęzi `main`, a jego dane przykładowe są odnawiane co noc.
+Použite zdieľané demo prostredie. Nie je potrebné nastavovať lokálne API ani databázu. Beží na najnovšom kóde z vetvy `main` a jeho vzorové dáta sa každú noc obnovujú.
 
 ```bash
-# Schemat adresu bazowego
+# Vzor základnej URL
 https://api.demo.churchapps.org/{module}
 
-# Przykładowe adresy modułów
+# Príklady URL modulov
 https://api.demo.churchapps.org/membership
 https://api.demo.churchapps.org/attendance
 https://api.demo.churchapps.org/content
@@ -60,18 +60,18 @@ https://api.demo.churchapps.org/doing
 ```
 
 :::warning
-Środowisko staging (`api.staging.churchapps.org`, `api.staging.lessons.church` i powiązane hosty) zostało wycofane. Niektóre przykładowe pliki `.env` mogą nadal zawierać adresy staging; zastąp je wartościami demonstracyjnymi lub lokalnymi pokazanymi na tej stronie. Nie ma wspólnego środowiska nieprodukcyjnego dla Lessons API — jeśli go potrzebujesz, uruchom [LessonsApi](https://github.com/ChurchApps/LessonsApi) lokalnie (nasłuchuje na porcie `8090`).
+Staging prostredie (`api.staging.churchapps.org`, `api.staging.lessons.church` a súvisiace hostiteľské servery) bolo vyradené z prevádzky. Niektoré vzorové súbory `.env` môžu stále obsahovať staging URL adresy; nahraďte ich demo alebo lokálnymi hodnotami uvedenými na tejto stránke. Zdieľané API pre Lessons mimo produkcie už neexistuje -- ak ho potrebujete, spustite [LessonsApi](https://github.com/ChurchApps/LessonsApi) lokálne (počúva na porte `8090`).
 :::
 
-### Opcja 2: Lokalne API
+### Možnosť 2: Lokálne API
 
-Uruchom projekt Api na swoim komputerze. Wymaga to MySQL 8.0+ z bazami danych utworzonymi dla każdego modułu. Zobacz przewodnik [Lokalna konfiguracja API](../api/local-setup.md).
+Spustite projekt Api na svojom počítači. Vyžaduje MySQL 8.0+ s databázami vytvorenými pre každý modul. Pozrite si príručku [Lokálne nastavenie API](../api/local-setup.md).
 
 ```bash
-# Schemat adresu bazowego
+# Vzor základnej URL
 http://localhost:8084/{module}
 
-# Przykładowe adresy modułów
+# Príklady URL modulov
 http://localhost:8084/membership
 http://localhost:8084/attendance
 http://localhost:8084/content
@@ -82,57 +82,57 @@ http://localhost:8084/doing
 
 ---
 
-## Zmienne środowiskowe API
+## Premenné prostredia API
 
-Główny projekt **Api** (`.env.sample`) ma najwięcej opcji konfiguracji. Oto najważniejsze zmienne:
+Hlavný projekt **Api** (`.env.sample`) má najviac konfigurácie. Tu sú kľúčové premenné:
 
-### Ustawienia wspólne
+### Zdieľané nastavenia
 
-| Zmienna | Opis | Przykład |
-|----------|-------------|---------|
-| `ENVIRONMENT` | Środowisko uruchomieniowe | `dev` |
-| `SERVER_PORT` | Port HTTP lokalnego serwera deweloperskiego | `8084` |
-| `ENCRYPTION_KEY` | Klucz szyfrowania 192-bitowy dla danych wrażliwych | `aSecretKeyOfExactly192BitsLength` |
-| `JWT_SECRET` | Sekret do podpisywania tokenów JSON Web Token | `jwt-secret-dev` |
-| `FILE_STORE` | Miejsce przechowywania przesyłanych plików (`disk` lub `s3`) | `disk` |
-| `CORS_ORIGIN` | Dozwolone źródła CORS (`*` dla lokalnego programowania) | `*` |
+| Premenná | Popis | Príklad |
+|----------|-------|---------|
+| `ENVIRONMENT` | Runtime prostredie | `dev` |
+| `SERVER_PORT` | HTTP port pre lokálny vývojový server | `8084` |
+| `ENCRYPTION_KEY` | 192-bitový šifrovací kľúč pre citlivé údaje | `aSecretKeyOfExactly192BitsLength` |
+| `JWT_SECRET` | Tajomstvo na podpisovanie JSON Web Tokenov | `jwt-secret-dev` |
+| `FILE_STORE` | Kam ukladať nahrané súbory (`disk` alebo `s3`) | `disk` |
+| `CORS_ORIGIN` | Povolené CORS pôvody (`*` pre lokálny vývoj) | `*` |
 
-### Połączenie z bazą danych
+### Pripojenie k databáze
 
-Jeden adres bazowy wskazuje API na MySQL. API na jego podstawie wyznacza osobną bazę danych dla każdego modułu (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`).
+Jedna základná URL nasmeruje API na MySQL. API z nej odvodí jednu databázu pre každý modul (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting`).
 
-| Zmienna | Przykład |
+| Premenná | Príklad |
 |----------|---------|
 | `API_DATABASE_URL` | `mysql://root:password@localhost:3306` |
 
 :::tip
-Zaktualizuj `root:password` swoimi rzeczywistymi danymi logowania do MySQL. Każda baza danych modułu musi istnieć przed uruchomieniem API. Użyj `npm run initdb`, aby utworzyć schemat dla wszystkich modułów, lub `npm run initdb:membership` dla pojedynczego modułu.
+Nahraďte `root:password` skutočnými prihlasovacími údajmi k MySQL. Každá databáza modulu musí existovať pred spustením API. Na vytvorenie schémy pre všetky moduly použite `npm run initdb`, alebo `npm run initdb:membership` pre jeden modul.
 :::
 
-### Ustawienia WebSocket
+### Nastavenia WebSocket
 
-| Zmienna | Opis | Przykład |
-|----------|-------------|---------|
-| `SOCKET_PORT` | Port serwera WebSocket | `8087` |
-| `SOCKET_URL` | Adres URL WebSocket, z którym łączą się klienci | `ws://localhost:8087` |
+| Premenná | Popis | Príklad |
+|----------|-------|---------|
+| `SOCKET_PORT` | Port pre WebSocket server | `8087` |
+| `SOCKET_URL` | WebSocket URL, ku ktorej sa klienti pripájajú | `ws://localhost:8087` |
 
 ---
 
-## Zmienne środowiskowe aplikacji webowych
+## Premenné prostredia webových aplikácií
 
 ### B1Admin (React + Vite)
 
-Plik przykładowy: `.env.sample`
+Vzorový súbor: `.env.sample`
 
-| Zmienna | Opis | Przykład (demo) |
-|----------|-------------|----------------|
-| `REACT_APP_STAGE` | Nazwa środowiska | `demo` |
-| `PORT` | Port serwera deweloperskiego | `3101` |
-| `REACT_APP_API_BASE` | Jeden adres bazowy dla wszystkich API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` są dołączane automatycznie) | `https://api.demo.churchapps.org` |
-| `REACT_APP_CONTENT_ROOT` | Adres URL dostarczania treści | `https://democontent.churchapps.org` |
-| `REACT_APP_GOOGLE_ANALYTICS` | Identyfikator Google Analytics (opcjonalny) | `UA-123456789-1` |
+| Premenná | Popis | Príklad (Demo) |
+|----------|-------|----------------|
+| `REACT_APP_STAGE` | Názov prostredia | `demo` |
+| `PORT` | Port vývojového servera | `3101` |
+| `REACT_APP_API_BASE` | Jedna základná URL pre všetky API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` sa pridávajú automaticky) | `https://api.demo.churchapps.org` |
+| `REACT_APP_CONTENT_ROOT` | URL doručovania obsahu | `https://democontent.churchapps.org` |
+| `REACT_APP_GOOGLE_ANALYTICS` | ID Google Analytics (voliteľné) | `UA-123456789-1` |
 
-Przy lokalnym programowaniu API skieruj adres bazowy na swój lokalny zestaw usług:
+Pri vývoji s lokálnym API nasmerujte základnú URL na svoj lokálny stack:
 
 ```bash
 REACT_APP_API_BASE=http://localhost:8084
@@ -140,59 +140,56 @@ REACT_APP_API_BASE=http://localhost:8084
 
 ### B1App (Next.js)
 
-Plik przykładowy: `.env.sample`
+Vzorový súbor: `.env.sample`
 
-| Zmienna | Opis | Przykład (demo) |
-|----------|-------------|----------------|
-| `NEXT_PUBLIC_API_BASE` | Jeden adres bazowy dla wszystkich API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` są dołączane automatycznie) | `https://api.demo.churchapps.org` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | Adres URL dostarczania treści | `https://democontent.churchapps.org` |
-| `NEXT_PUBLIC_GOOGLE_ANALYTICS` | Identyfikator Google Analytics (opcjonalny) | `UA-123456789-1` |
+| Premenná | Popis | Príklad (Demo) |
+|----------|-------|----------------|
+| `NEXT_PUBLIC_API_BASE` | Jedna základná URL pre všetky API ChurchApps (`/membership`, `/attendance`, `/content`, `/giving`, `/messaging`, `/doing`, `/reporting` sa pridávajú automaticky) | `https://api.demo.churchapps.org` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL doručovania obsahu | `https://democontent.churchapps.org` |
+| `NEXT_PUBLIC_GOOGLE_ANALYTICS` | ID Google Analytics (voliteľné) | `UA-123456789-1` |
 
 :::info
-Next.js wymaga prefiksu `NEXT_PUBLIC_` dla każdej zmiennej środowiskowej, która ma być dostępna w przeglądarce. Zmienne przeznaczone wyłącznie dla serwera nie potrzebują tego prefiksu.
+Next.js vyžaduje prefix `NEXT_PUBLIC_` pre každú premennú prostredia, ktorá má byť dostupná v prehliadači. Premenné určené len pre server tento prefix nepotrebujú.
 :::
 
 ### LessonsApp (Next.js)
 
-Plik przykładowy: `dotenv.sample.txt`
+Vzorový súbor: `dotenv.sample.txt`
 
-| Zmienna | Opis | Przykład (lokalne LessonsApi) |
-|----------|-------------|----------------------------|
-| `STAGE` | Etap środowiska (pozostaw nieustawione lub `dev` do lokalnego programowania) | `dev` |
-| `NEXT_PUBLIC_LESSONS_API` | Adres URL Lessons API | `http://localhost:8090` |
-| `NEXT_PUBLIC_CONTENT_ROOT` | Adres URL dostarczania treści | `http://localhost:8090/content` |
-| `NEXT_PUBLIC_API_BASE` | Bazowy adres API ChurchApps używany do logowania (uwzględniany tylko wtedy, gdy `STAGE` nie jest ustawione lub ma wartość `dev`) | `https://api.demo.churchapps.org` |
+| Premenná | Popis | Príklad (lokálne LessonsApi) |
+|----------|-------|------------------------------|
+| `STAGE` | Názov fázy prostredia (ponechajte nenastavené alebo `dev` pre lokálny vývoj) | `dev` |
+| `NEXT_PUBLIC_LESSONS_API` | URL API Lessons | `http://localhost:8090` |
+| `NEXT_PUBLIC_CONTENT_ROOT` | URL doručovania obsahu | `http://localhost:8090/content` |
+| `NEXT_PUBLIC_API_BASE` | Základ API ChurchApps používaný na prihlásenie (rešpektuje sa len vtedy, ak je `STAGE` nenastavené alebo `dev`) | `https://api.demo.churchapps.org` |
 
 ---
 
-## Zmienne środowiskowe aplikacji mobilnych
+## Premenné prostredia mobilných aplikácií
 
-### B1Mobile (React Native / Expo)
+### B1Checkin (React Native / Expo)
 
-Plik przykładowy: `dotenv.sample.txt`
+Vzorový súbor: `dotenv.sample.txt`
 
-| Zmienna | Opis | Przykład (demo) |
-|----------|-------------|----------------|
-| `STAGE` | Nazwa środowiska | `dev` |
-| `MEMBERSHIP_API`, `ATTENDANCE_API`, `GIVING_API`, `DOING_API`, `MESSAGING_API`, `CONTENT_API` | Jeden adres URL dla każdego modułu API ChurchApps (każdy domyślnie wskazuje na środowisko produkcyjne, gdy nie jest ustawiony) | `https://api.demo.churchapps.org/membership` |
-| `LESSONS_API` | Lessons API (osobny host; nie ma wspólnego środowiska nieprodukcyjnego) | `https://api.lessons.church` |
-| `CONTENT_ROOT` | Adres URL dostarczania treści | `https://democontent.churchapps.org` |
-| `LESSONS_ROOT` | Adres URL strony Lessons | `https://lessons.church` |
+| Premenná | Popis | Príklad |
+|----------|-------|---------|
+| `EXPO_PUBLIC_STAGE` | Vyberá sadu API, ku ktorým sa aplikácia pripája: `dev` (lokálne API na `http://127.0.0.1:8084`), `staging` alebo `prod` (predvolená hodnota, ak nie je nastavená) | `dev` |
+
+B1Checkin používa iba moduly API Membership a Attendance spolu s URL doručovania obsahu; ich adresy pre jednotlivé fázy sú nastavené v `src/helpers/EnvironmentHelper.ts`.
 
 :::info
-Aplikacje mobilne nie używają prefiksu `REACT_APP_` ani `NEXT_PUBLIC_`. Dostęp do zmiennych środowiskowych jest obsługiwany przez konfigurację Expo.
+Expo do balíka aplikácie zahŕňa iba premenné s prefixom `EXPO_PUBLIC_`. Po zmene `.env` reštartujte vývojový server príkazom `yarn start --reset-cache`.
 :::
 
 ---
 
-## Szybki przegląd: lokalizacje plików przykładowych
+## Rýchly prehľad: umiestnenia vzorových súborov
 
-| Projekt | Plik przykładowy |
-|---------|-----------------|
+| Projekt | Vzorový súbor |
+|---------|---------------|
 | Api | `.env.sample` |
 | B1Admin | `.env.sample` |
 | B1App | `.env.sample` |
-| B1Mobile | `dotenv.sample.txt` |
 | B1Checkin | `dotenv.sample.txt` |
 | LessonsApp | `dotenv.sample.txt` |
 | AskApi | `dotenv.sample.txt` |

@@ -1,66 +1,66 @@
 ---
-title: "Profiländerungen genehmigen"
-description: "Prüfen und genehmigen Sie in B1 Admin Änderungsanfragen zu Mitgliederprofilen und richten Sie die Gruppe Verzeichnisfreigabe ein, die sie erhält."
+title: "Genehmigung von Profiländerungen"
+description: "Prüfen und genehmigen Sie Profiländerungsanfragen von Mitgliedern in B1 Admin und richten Sie die Verzeichnis-Genehmigungsgruppe ein, die diese Anfragen erhält."
 ---
 
-# Profiländerungen genehmigen
+# Genehmigung von Profiländerungen
 
 <div class="article-intro">
 
-Wenn Ihre Kirche die Genehmigung durch den Administrator für Profilaktualisierungen erfordert, senden Mitglieder ihre Änderungen über die B1 Mobile-App ein und diese Anforderungen werden als Aufgaben in B1 Admin angezeigt. In diesem Leitfaden wird erläutert, wie Sie diese überprüfen und genehmigen.
+Wenn Ihre Gemeinde für Profilaktualisierungen die Genehmigung durch einen Administrator verlangt, reichen Mitglieder ihre Änderungen über die B1 App ein, und diese Anfragen erscheinen als Aufgaben in B1 Admin. Diese Anleitung erklärt, wie Sie sie prüfen und genehmigen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie müssen Mitglied der Gruppe sein, die als **Verzeichnisgenehmigungsgruppe** in **Mobile → Mitgliederportal** bestimmt ist
-- Wenn keine Genehmigungsgruppe konfiguriert wurde, werden Profiländerungen sofort ohne Überprüfung angewendet
+- Sie müssen Mitglied der Gruppe sein, die unter **Mobil &rarr; Mitgliederportal** als **Verzeichnis-Genehmigungsgruppe** festgelegt ist
+- Wenn keine Genehmigungsgruppe konfiguriert wurde, werden Profiländerungen sofort ohne Prüfung übernommen
 
 </div>
 
-## Ausstehende Anforderungen suchen
+## Wo Sie ausstehende Anfragen finden
 
-Wenn ein Mitglied eine Profiländerung übermittelt, wird dies als Aufgabe angezeigt, die Ihrer Genehmigungsgruppe zugewiesen ist. Sie können es an zwei Stellen finden:
+Wenn ein Mitglied eine Profiländerung einreicht, erscheint sie als Aufgabe, die Ihrer Genehmigungsgruppe zugewiesen ist. Sie finden sie an zwei Stellen:
 
-**Vom Dashboard (Ihre Startseite):**
-1. Melden Sie sich bei B1 Admin an -- das Dashboard wird automatisch geladen.
-2. Klicken Sie im Bereich **My tasks** (Meine Aufgaben) auf **All tasks** (Alle Aufgaben). (My tasks zeigt nur offene Aufgaben, die Ihnen persönlich zugewiesen sind.)
-3. Klicken Sie auf die Registerkarte **Meinen Gruppen zugewiesen**. Alle ausstehenden Profiänderungsanforderungen werden dort aufgelistet.
+**Über das Dashboard (Ihre Startseite):**
+1. Melden Sie sich bei B1 Admin an – das Dashboard wird automatisch geladen.
+2. Klicken Sie im Bereich **Meine Aufgaben** auf **Alle Aufgaben**. (Meine Aufgaben zeigt nur offene Aufgaben, die Ihnen persönlich zugewiesen sind.)
+3. Klicken Sie auf den Reiter **Meinen Gruppen zugewiesen**. Dort werden alle ausstehenden Profiänderungsanfragen aufgelistet.
 
-**Von Serving → Meine Arbeit:**
-1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin) und erweitern Sie **Serving**.
+**Über Dienst &rarr; Meine Arbeit:**
+1. Öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links in B1 Admin) und klappen Sie **Dienst** auf.
 2. Klicken Sie auf **Meine Arbeit**.
-3. Klicken Sie unter „Aufgaben" auf die Registerkarte **Meinen Gruppen zugewiesen**.
+3. Klicken Sie unter Aufgaben auf den Reiter **Meinen Gruppen zugewiesen**.
 
-## Anforderung überprüfen und genehmigen
+## Anfrage prüfen und genehmigen
 
-1. Klicken Sie auf die Aufgabe **Profilupdate**, um sie zu öffnen.
+1. Klicken Sie auf die Aufgabe **Profilaktualisierung**, um sie zu öffnen.
 2. Unter **Angeforderte Änderungen** sehen Sie jedes Feld, das das Mitglied aktualisieren möchte, zusammen mit dem neuen Wert, den es eingereicht hat.
-3. Überprüfen Sie die Änderungen.
-4. Klicken Sie auf **Anwenden**, um die Änderungen zu genehmigen und in seinem Profil zu speichern.
+3. Prüfen Sie die Änderungen.
+4. Klicken Sie auf **Anwenden**, um die Änderungen zu genehmigen und im Profil des Mitglieds zu speichern.
 
-Die Aufgabe wird automatisch geschlossen, sobald die Änderungen angewendet werden.
+Die Aufgabe wird automatisch geschlossen, sobald die Änderungen übernommen wurden.
 
 ## Genehmigungsgruppe einrichten
 
-Wenn Ihre Kirche möchte, dass Profiländerungen genehmigt werden, muss zunächst eine Verzeichnisgenehmigungsgruppe konfiguriert werden.
+Wenn Ihre Gemeinde möchte, dass Profiländerungen einer Genehmigung bedürfen, muss zuerst eine Verzeichnis-Genehmigungsgruppe konfiguriert werden.
 
-1. Öffnen Sie das Jump-Menü und erweitern Sie **Mobile**.
-2. Klicken Sie auf **Mitgliederportal** (die Seite „Portaleinstellungen").
-3. Wählen Sie unter **Verzeichnisgenehmigungsgruppe** die Gruppe aus, deren Mitglieder Anforderungen zu Profiländerungen überprüfen sollten.
+1. Öffnen Sie das Sprungmenü und klappen Sie **Mobil** auf.
+2. Klicken Sie auf **Mitgliederportal** (die Seite „Portaleinstellungen“).
+3. Wählen Sie unter **Verzeichnis-Genehmigungsgruppe** die Gruppe aus, deren Mitglieder Profiänderungsanfragen prüfen sollen.
 4. Klicken Sie auf **Speichern**.
 
-Alle Mitglieder dieser Gruppe sehen eingehende Anforderungen zu Profiländerungen unter **Meinen Gruppen zugewiesen** auf ihrem Dashboard.
+Jedes Mitglied dieser Gruppe sieht eingehende Profiänderungsanfragen unter **Meinen Gruppen zugewiesen** auf seinem Dashboard.
 
-Die gleiche Verzeichnisgenehmigungsgruppe überprüft auch **Kontolöschanforderungen** -- weitere Informationen finden Sie unter [Kontolöschanforderungen überprüfen](./account-deletion.md).
+Dieselbe Verzeichnis-Genehmigungsgruppe prüft auch **Anfragen zur Kontolöschung** – siehe [Anfragen zur Kontolöschung prüfen](./account-deletion.md).
 
 :::tip
-Stellen Sie sicher, dass Ihre Genehmiger tatsächlich Mitglieder der konfigurierten Gruppe sind -- nur Gruppenmitglieder sehen die Anforderungen.
+Stellen Sie sicher, dass Ihre Genehmigenden tatsächlich Mitglieder der konfigurierten Gruppe sind – nur Gruppenmitglieder sehen die Anfragen.
 :::
 
 ## Verwandte Artikel
 
-- [Profil verwalten](./managing-profile.md) -- Bearbeiten Sie Ihre eigenen Kontoeinstellungen
-- [Kontolöschanforderungen überprüfen](./account-deletion.md) -- Der gleiche Genehmigungsgruppenüberprüfungsablauf für die Kontolöschung
-- [B1 Mobile-Einstellungen](../../b1-mobile/profile/editing-profile.md) -- Was Mitglieder sehen, wenn sie eine Profiländerung absenden
+- [Ihr Profil verwalten](./managing-profile.md) — Bearbeiten Sie Ihre eigenen Kontoeinstellungen
+- [Anfragen zur Kontolöschung prüfen](./account-deletion.md) — Derselbe Prüfablauf der Genehmigungsgruppe für Kontolöschungen
+- [Ihr Profil bearbeiten](../../b1-church/getting-started/editing-your-profile.md) — Was Mitglieder sehen, wenn sie eine Profiländerung einreichen

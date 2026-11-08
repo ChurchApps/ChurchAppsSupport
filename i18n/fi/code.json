@@ -377,16 +377,10 @@
     "message": "Kirkon hallintapaneeli ihmisille, ryhmille, osallistumiselle, lahjoituksille ja paljon muulle."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 - Verkkosivusto"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Kirkon julkinen verkkosivusto ja jäsenten portaali."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 - Mobiili"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Vanhempi jäsensovellus iOS- ja Android-laitteille, jonka on nyt korvannut B1.church-verkkosovellus."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 - Check-In"

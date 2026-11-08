@@ -1,58 +1,60 @@
 ---
 title: "Externí poskytovatelia"
-description: "Ako externí poskytovatelia kurikula pridávajú svoj obsah do Lessons.church pomocou Open Lesson Format a ako jedného pripojiť z portálu."
+description: "Ako externí poskytovatelia učebných osnov zdieľajú lekcie cez Open Lesson Format a ako ich váš kostol pridá do Lessons.church a naplánuje ich lekcie."
 ---
 
 # Externí poskytovatelia
 
 <div class="article-intro">
 
-Lessons.church nie je obmedzený na vlastné osnovy. Poskytovatelia osnov tretích strán môžu publikovať svoj obsah prostredníctvom **formátu Open Lesson Format** a tento obsah sa zobrazuje spolu s vstavanými programami Lessons.church, a to pre jednotný zážitok z prehliadania.
+Lessons.church nie je obmedzený len na vlastné učebné osnovy. Externí poskytovatelia učebných osnov môžu publikovať svoj obsah prostredníctvom **Open Lesson Format**. Keď váš kostol pridá poskytovateľa, môžete naplánovať jeho lekcie pre svoje triedy priamo vedľa knižnice Lessons.church.
 
 </div>
 
 <div class="prereqs">
-<h4>Skôr než začnete</h4>
+<h4>Pred začatím</h4>
 
-- Pochopte, ako je obsah organizovaný, prečítaním si článku [Programy a štúdiá](./programs-and-studies.md)
-- Na pridanie pripojenia poskytovateľa potrebujete [účet Lessons.church](../getting-started/creating-account.md) s prístupom k portálu vašej cirkvi
+- Pochopte, ako je obsah organizovaný, prečítaním si [Programy a štúdiá](./programs-and-studies.md)
+- Na pridanie pripojenia poskytovateľa potrebujete [účet Lessons.church](../getting-started/creating-account.md) s prístupom k rozvrhom tried vášho kostola
 
 </div>
 
 ## Čo sú externí poskytovatelia?
 
-Externý poskytovateľ je akákoľvek organizácia, ktorá publikuje cirkevné osnovy pomocou formátu Open Lesson Format -- štandardu, ktorý umožňuje zdieľanie obsahu lekcií naprieč platformami. Keď poskytovateľ sprístupní svoj obsah v tomto formáte, Lessons.church ho môže načítať a zobraziť rovnako ako vlastné programy.
+Externý poskytovateľ je akákoľvek organizácia, ktorá publikuje učebné osnovy pre kostoly pomocou Open Lesson Format -- štandardu, ktorý umožňuje zdieľanie obsahu lekcií naprieč platformami. Keď poskytovateľ sprístupní svoj obsah v tomto formáte, Lessons.church ho dokáže načítať a zobraziť jeho lekcie s rovnakým rozložením ako vlastné lekcie.
 
-Vďaka tomu získate prístup k širšiemu výberu osnov bez toho, aby ste museli navštevovať viacero webových stránok.
-
-## Prehliadanie externého obsahu
-
-Obsah externých poskytovateľov funguje presne rovnako ako vstavaný obsah:
-
-1. Programy od externých poskytovateľov sa zobrazujú na domovskej stránke Lessons.church spolu s ostatnými programami.
-2. Kliknutím na **program** zobrazíte jeho štúdiá.
-3. Kliknutím na **štúdium** zobrazíte jeho lekcie.
-4. Lekcie si pozriete s rovnakým rozložením -- sekcie, role, akcie, videá a materiály na stiahnutie.
-
-Pre externý obsah neexistuje žiadny osobitný postup ani samostatná sekcia. Všetko je integrované do jednej knižnice pre pohodlné prehliadanie.
+To znamená, že máte prístup k širšiemu výberu učebných materiálov bez toho, aby ste museli navštíviť viacero webových stránok.
 
 ## Pridávanie pripojení poskytovateľov
 
-Ak vaša cirkev používa poskytovateľa osnov, ktorý podporuje formát Open Lesson Format, a chcete, aby bol jeho obsah dostupný v portáli Lessons.church:
+Ak váš kostol používa poskytovateľa učebných osnov, ktorý podporuje Open Lesson Format:
 
 1. Prihláste sa do svojho účtu Lessons.church.
-2. Prejdite na stránku **Externí poskytovatelia** v portáli.
-3. Pridajte webovú adresu pripojenia externého poskytovateľa.
-4. Jeho programy a štúdiá budú dostupné pre prehliadanie, plánovanie a používanie vo vašej cirkvi v triedach.
+2. Kliknite na **Externí poskytovatelia** v navigácii.
+3. Kliknite na **Pridať poskytovateľa**, zadajte **Názov poskytovateľa** a **API URL** poskytovateľa a kliknite na **Uložiť**.
+
+Úplné kroky nájdete v článku [Poskytovatelia tretích strán](../admin/third-party-providers.md).
 
 :::info
-Pridanie pripojenia externého poskytovateľa sa vykonáva prostredníctvom portálu Lessons.church a vyžaduje prihlásený účet. Prehliadanie obsahu, ktorý už platforma pridala, prihlásenie nevyžaduje.
+Externý poskytovateľ je pridaný len pre váš kostol. Jeho programy sa nezobrazujú na verejnej domovskej stránke Lessons.church ani vo vyhľadávaní.
+:::
+
+## Používanie externého obsahu
+
+Keď je poskytovateľ pridaný, jeho programy, štúdiá a lekcie sú k dispozícii pri plánovaní:
+
+1. Keď [pridáte lekciu do rozvrhu triedy](../classrooms/scheduling-lessons.md), v časti **Poskytovateľ** vyberte poskytovateľa.
+2. Vyberte **Program**, **Štúdium**, **Lekciu** a **Miesto konania** rovnakým spôsobom, ako by ste to urobili pri lekcii Lessons.church.
+3. V rozvrhu triedy kliknite na **Zobraziť lekciu** pod naplánovanou externou lekciou, aby ste ju otvorili. Používa rovnaké rozloženie ako vstavané lekcie -- sekcie, roly, akcie, videá a materiály na stiahnutie.
+
+:::note
+Lekcie od externých poskytovateľov nie je možné [prispôsobiť](../customization/customizing-lessons.md). Odkaz **Prispôsobiť** sa zobrazuje len pri lekciách Lessons.church.
 :::
 
 ## Pre tvorcov obsahu
 
-Ak ste autorom osnov a máte záujem sprístupniť svoj obsah na Lessons.church, formát Open Lesson Format poskytuje štandardizovaný spôsob zdieľania vašich programov, štúdií a lekcií. Kontaktujte tím Lessons.church alebo navštívte dokumentáciu pre vývojárov, kde nájdete podrobnosti o integrácii.
+Ak ste vydavateľ učebných osnov a máte záujem sprístupniť svoj obsah na Lessons.church, Open Lesson Format poskytuje štandardizovaný spôsob zdieľania vašich programov, štúdií a lekcií. Kontaktujte tím Lessons.church alebo navštívte vývojársku dokumentáciu, kde nájdete podrobnosti o integrácii.
 
 :::tip
-Ak ako správca spravujete kanály tretích poskytovateľov na úrovni platformy, pozrite si článok [Poskytovatelia tretích strán](../admin/third-party-providers.md) v sekcii Správa.
+Podrobné pokyny na pridanie, úpravu a odstránenie poskytovateľa nájdete v článku [Poskytovatelia tretích strán](../admin/third-party-providers.md).
 :::

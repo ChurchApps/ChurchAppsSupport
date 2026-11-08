@@ -1,77 +1,79 @@
 ---
-title: "Check-inin viimeistely"
-description: "Viimeistele perheen sisäänkirjautuminen kioskilla B1 Checkinissä: huonemäärärajat, tarratulostus, noutokoodit ja sovelluksen seuraava vaihe."
+title: "Check-in-n viimeistely"
+description: "Viimeistele perheen kioskikirjautuminen B1 Checkin -sovelluksessa: huoneiden rajat, nimilappujen tulostus, noutoturvakoodit ja sovelluksen seuraava vaihe."
 ---
 
-# Check-inin viimeistely
+# Check-in-n viimeistely
 
 <div class="article-intro">
 
-Kun olet tarkistanut perheesi tiedot ja tehnyt tarvittavat ryhmämääritykset, olet valmis viimeistelemään check-inin. Tämä on viimeinen vaihe kioskityönkulussa: sovellus lähettää läsnäolotiedot, tulostaa tarrat ja palautuu valmiiksi seuraavaa perhettä varten.
+Kun olet tarkistanut taloudesi ja tehnyt tarvittavat ryhmämääritykset, olet valmis viimeistelemään check-inin. Tämä on kioskityönkulun viimeinen vaihe: sovellus lähettää osallistumistiedot, tulostaa tarrat ja nollaantuu seuraavaa perhettä varten.
 
 </div>
 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- [Tarkista perheesi](./household-review.md) perheen tarkistusnäytöllä
-- [Määritä ryhmät](./group-assignment.md) perheenjäsenille, jotka tarvitsevat kirjautumisen tiettyyn luokkaan tai ohjelmaan
-- Halutessasi [lisää vieraat](./adding-guests.md), jotka tulevat perheesi mukana
+- [Tarkista talouden tiedot](./household-review.md) talouden tarkistusnäytöllä
+- [Määritä ryhmät](./group-assignment.md) niille perheenjäsenille, jotka tarvitsevat kirjautumisen tiettyyn luokkaan tai ohjelmaan
+- Valinnaisesti [lisää vieraat](./adding-guests.md), jotka vierailevat perheesi kanssa
 
 </div>
 
-## Näin teet check-inin
+## Check-in-prosessi
 
-1. Napauta **perheen tarkistusnäytön** alareunassa olevaa **Check-in**-painiketta.
-2. Sovellus lähettää läsnäolotiedot palvelimelle ja näyttää **onnistumisnäytön**, jossa on vihreä rasti ja tervetulotoivotus.
+1. Napauta **talouden tarkistusnäytöltä** näytön alareunassa olevaa **Check-in**-painiketta.
+2. Sovellus lähettää osallistumistiedot palvelimelle ja näyttää **onnistumisnäytön**, jossa on vihreä rasti ja tervetulotoivotus.
 
-Siinä kaikki. Perheesi läsnäolo on kirjattu.
+Siinä kaikki. Perheesi osallistuminen on kirjattu.
 
-## Täydet huoneet ja suhdeluvut
+Jos joku valitsemistasi henkilöistä on jo kirjautunut tämän jumalanpalveluksen tai tilaisuuden osalta tänään, ensin avautuu ikkuna **Already Checked In**, joka nimeää kyseiset henkilöt. Napauta **Check In Again** tallentaaksesi heidän uudet ryhmävalintansa tai **Cancel** palataksesi talouden näytölle.
 
-Jos seurakuntasi on asettanut [turvarajoitukset](../../b1-admin/attendance/checkin-safety.md) huoneilleen, palvelin tarkistaa ne ennen tallennusta:
+## Täydet huoneet ja vapaaehtoisten suhdeluvut
+
+Jos seurakuntasi on määrittänyt huoneilleen [turvarajat](../../b1-admin/attendance/checkin-safety.md), palvelin tarkistaa ne ennen tallennusta:
 
 - Jos valittu huone on **täynnä tai suljettu**, check-in ei onnistu ja sovellus nimeää huoneen, jotta voit valita toisen.
-- Jos jumalanpalveluksella on [check-in-aikataulu](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) ja sen check-in-ikkuna ei ole juuri nyt auki, check-in kyseisen palveluajan huoneisiin evätään myös. **Check-in ei vielä mahdollinen** -näyttö listaa huoneen syynä "check-in ei ole juuri nyt auki". Napauta **Vaihda huoneita** valitaksesi toisen palveluajan tai ryhmän. (Jo suljetut palveluajat näkyvät [perheen näytöllä](./household-review.md) merkinnällä **Suljettu**, eikä niitä voi valita. Tämän näet yleensä vain, jos ikkuna sulkeutuu kesken check-inin.)
-- Perhe, joka teki check-inin aiemmalle palveluajalle, voi palata myöhemmin ja lisätä avoimen palveluajan, vaikka aiemman ikkunan aukiolo olisi päättynyt. Heidän aiemmat check-innsä säilyvät, eivätkä ne estä uutta check-iniä.
-- Jos lasten huoneessa on **liian vähän vapaaehtoisia** suhdelukuun nähden, sovellus joko näyttää varoituksen, jonka henkilökunnan jäsen voi vahvistaa jatkaakseen, tai estää check-inin kokonaan. Tämä riippuu siitä, miten seurakuntasi on määrittänyt suhdelukujen valvonnan.
+- Jos tilaisuusajalla on [check-in-aikataulu](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) ja sen check-in-ikkuna ei ole juuri nyt auki, check-in kyseisen tilaisuusajan huoneisiin evätään myös. Näyttö **Can't check in yet** luettelee huoneen syynä "check-in isn't open right now"; napauta **Change Rooms** valitaksesi toisen tilaisuusajan tai ryhmän. (Jo suljetut tilaisuusajat näkyvät **Closed**-merkintänä [talouden näytöllä](./household-review.md) eikä niitä voi valita, joten tämän näkeminen tapahtuu yleensä vain, jos ikkuna sulkeutuu kesken check-inin.)
+- Talous, joka on kirjautunut aiempaan tilaisuusaikaan, voi palata myöhemmin ja lisätä avoinna olevan tilaisuusajan, vaikka aiempi ikkuna olisi jo sulkeutunut. Heidän olemassa olevat kirjautumisensa säilyvät eivätkä estä uutta check-iniä.
+- Jos lasten huoneessa on **vapaaehtoisia liian vähän** suhdelukuun nähden, sovellus joko näyttää varoituksen, jonka henkilökunnan jäsen voi vahvistaa jatkaakseen, tai estää check-inin kokonaan. Tämä riippuu siitä, miten seurakuntasi on määrittänyt suhdeluvun valvonnan.
 
 ## Tarrojen tulostus
 
 Jos verkkotulostin on määritetty, sovellus tulostaa tarrat automaattisesti check-inin jälkeen:
 
-- **Nimitarrat** tulostetaan jokaiselle henkilölle, joka on määritetty ryhmään, jolla on **Tulosta nimilappu** -asetus käytössä. Nimitarrassa on henkilön nimi, hänen ryhmämääryksensä sekä mahdolliset allergia- ja muistiinpanotiedot.
-- **Vanhempien noutolaput** tulostetaan, kun jokin sisäänkirjautunut henkilö kuuluu ryhmään, jolla on **Vanhempien nouto** -asetus käytössä. **Vapaaehtoisena** sisäänkirjautuneet ohitetaan, joten lastenhoitaja, joka palvelee Vanhempien nouto -huoneessa, ei saa noutolappua. Noutolapussa on lasten nimet, heidän ryhmämääryksensä ja yksilöllinen **4-merkkinen turvakoodi**.
+- **Nimilaput** tulostetaan jokaiselle henkilölle, joka on määritetty ryhmään, jossa **Print Nametag** -asetus on käytössä. Nimilaput sisältävät henkilön nimen, ryhmämäärityksen sekä mahdolliset allergia- ja muistiinpanotiedot.
+- **Vanhempien noutolaput** tulostetaan, kun jokainen kirjautunut henkilö on ryhmässä, jossa **Parent Pickup** -asetus on käytössä. Henkilöt, jotka on kirjattu **Volunteer**-rooliin, ohitetaan, joten Parent Pickup -huoneessa palvelevaa lastenhoitajaa ei tulosteta noutolappua. Noutolapussa luetellaan lapset, heidän ryhmämääritykset ja yksilöllinen **4-merkkinen turvakoodi**.
 
 :::info
-Sama turvakoodi esiintyy sekä lapsen nimitarrassa että vanhemman noutolapussa. Noutohetkellä vapaaehtoiset vertaavat koodeja varmistaakseen, että oikea aikuinen hakee kunkin lapsen.
+Sama turvakoodi esiintyy sekä lapsen nimilapussa että vanhemman noutolapussa. Noutohetkellä vapaaehtoiset vertaavat koodeja varmistaakseen, että oikea aikuinen hakee kunkin lapsen.
 :::
 
-Turvakoodi luodaan uudelleen jokaisen check-inin yhteydessä, ja se käyttää vain konsonantteja ja numeroita. Vokaalit on jätetty pois, jotta koodeista ei muodostu sopimattomia sanoja.
+Turvakoodi luodaan jokaisella check-inillä uudelleen, ja se koostuu vain konsonanteista ja numeroista (vokaaleja ei käytetä, jotta vältetään sopimattomien sanojen muodostuminen).
 
 :::warning
-Jos tarrat eivät tulostu, avaa hallintoasetukset napauttamalla **seurakunnan logoa** seitsemän kertaa ja napauta sitten **Vaihda tulostin** tarkistaaksesi tulostinyhteyden. Vianmääritysohjeet löydät kohdasta [Tulostimen asennus](../getting-started/printer-setup.md).
+Jos tarrat eivät tulostu, avaa ylläpitoasetukset napauttamalla **seurakunnan logoa** seitsemän kertaa ja napauta sitten **Change Printer** tarkistaaksesi tulostinyhteyden. Vianmääritysohjeet löydät kohdasta [Tulostimen asennus](../getting-started/printer-setup.md).
 :::
 
-## Mitä check-inin jälkeen tapahtuu
+## Mitä tapahtuu check-inin jälkeen
 
-- Jos tulostin on määritetty, sovellus tulostaa kaikki tarrat ja palaa sen jälkeen automaattisesti **hakunäytölle**, valmiina seuraavaa perhettä varten.
+- Jos tulostin on määritetty, sovellus tulostaa kaikki tarrat ja palaa sen jälkeen automaattisesti **hakunäytölle** valmiina seuraavaa perhettä varten.
 - Jos tulostinta ei ole määritetty, sovellus palaa myös automaattisesti **hakunäytölle**.
 
-Kummassakin tapauksessa onnistumisnäyttö pysyy näkyvissä vähintään 6 sekuntia sen ilmestymisestä (8 sekuntia, kun se juhlistaa jonkun läsnäolotavoitteen saavuttamista), jotta perheet näkevät check-inin onnistuneen. Jos tulostaminen kestää pidempään, sovellus palaa noin puolentoista sekunnin kuluttua tulostuksen päättymisestä.
+Molemmissa tapauksissa onnistumisnäyttö pysyy auki vähintään 6 sekuntia sen ilmestymisestä (8 sekuntia, kun juhlitaan jonkun osallistumistavoitetta), jotta perheet näkevät check-inin onnistuneen. Jos tulostus kestää tätä pidempään, sovellus palaa noin puolitoista sekuntia tulostuksen päättymisen jälkeen.
 
-Hakunäytölle palaamiseen ei tarvitse napauttaa mitään, sillä sovellus hoitaa siirtymän automaattisesti. Kun näyttö on ollut auki hetken, voit napauttaa sitä palataksesi heti. Napautus ensimmäisen puolentoista sekunnin aikana jätetään huomiotta, joten nopea kaksoisnapautus **Check-in**-painikkeeseen ei ohita näyttöä.
+Hakunäytölle palaamiseen sinun ei tarvitse napauttaa mitään, sillä sovellus hoitaa siirtymän automaattisesti. Kun näyttö on ollut auki hetken, voit napauttaa sitä palataksesi heti; napautus ensimmäisen puolentoista sekunnin aikana ohitetaan, joten nopea kaksoisnapautus **Check-in**-painikkeeseen ei ohita näyttöä.
 
 :::tip
-Sovellus nollautuu kokonaan jokaisen check-inin jälkeen, joten ei ole vaaraa, että yksi perhe näkisi toisen perheen tietoja.
+Sovellus nollautuu täysin jokaisen check-inin jälkeen, joten ei ole vaaraa, että yksi perhe näkisi toisen perheen tietoja.
 :::
 
 ## Mitä tallennetaan
 
-Kun napautat **Check-in**-painiketta, sovellus lähettää palvelimelle seuraavat tiedot jokaisesta perheenjäsenestä, jolla on ryhmämääritys:
+Kun napautat **Check-in**-painiketta, sovellus lähettää palvelimelle seuraavat tiedot jokaisesta talouden jäsenestä, jolla on ryhmämääritys:
 
-- Check-inin kohteena oleva **henkilö**
-- **Palvelu**, johon hän osallistuu
-- **Palveluaika** ja **ryhmä**, joihin hänet on määritetty
+- **Henkilö**, joka kirjataan sisään
+- **Tilaisuus**, johon hän osallistuu
+- **Tilaisuusaika** ja **ryhmä**, johon hänet on määritetty
 
-Nämä tiedot näkyvät B1 Adminissa Läsnäolo-osiossa, jossa seurakunnan ylläpitäjät voivat tarkastella ja hallita läsnäolotietoja. Lisätietoja on [check-inin hallintaohjeissa](../../b1-admin/attendance/check-in.md).
+Nämä tiedot näkyvät B1 Adminissa Attendance-osiossa, jossa seurakunnan ylläpitäjät voivat tarkastella ja hallita osallistumistietoja. Lisätietoja on [check-in-ylläpito-oppaassa](../../b1-admin/attendance/check-in.md).

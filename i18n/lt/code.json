@@ -377,16 +377,10 @@
     "message": "Bažnyčios vadybos prietaisų skydelis žmonėms, grupėms, dalyvavimui, aukomis ir dar daugiau."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Svetainė"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Viešoji bažnyčios svetainė ir narių portalas."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobilusis"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Pasenusi nario programėlė iOS ir Android sistemoms, dabar pakeista B1.church žiniatinklio programa."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Registracija"

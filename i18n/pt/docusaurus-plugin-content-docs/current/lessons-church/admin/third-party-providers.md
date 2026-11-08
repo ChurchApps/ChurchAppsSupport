@@ -1,50 +1,57 @@
 ---
-title: "Provedores de Terceiros"
-description: "Adicione um feed externo de currículo ao Lessons.church pela página Third-Party e depois visualize, atualize ou remova conexões de provedores."
+title: "Provedores Externos"
+description: "Adicione um feed de currículo no formato Open Lesson Format na página de Provedores Externos do Lessons.church e, depois, edite ou exclua-o para que sua igreja possa agendar as lições."
 ---
 
-# Provedores de Terceiros
+# Provedores Externos
 
 <div class="article-intro">
 
-Lessons.church suporta provedores de currículo externos através do Open Lesson Format. Isso significa que você pode importar conteúdo de outras organizações e torná-lo disponível junto com a biblioteca integrada, oferecendo às igrejas acesso a currículo de múltiplas fontes em um único lugar.
+O Lessons.church oferece suporte a provedores externos de currículo por meio do Open Lesson Format. Isso significa que sua igreja pode conectar currículos de outras organizações e agendá-los para suas classes ao lado da biblioteca integrada, para que sua equipe tenha currículos de várias fontes em um só lugar.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Tenha permissões de admin para Lessons.church
-- Obtenha a URL de feed do provedor externo que você quer conectar
+- Faça login no Lessons.church com uma conta que possa gerenciar as programações das classes da sua igreja
+- Obtenha a URL do feed do provedor externo que você deseja conectar. Ela deve retornar lições no [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Adicionando um Provedor
 
-1. Navegue até a área **Admin**.
-2. Abra a página **Third-Party**.
-3. Clique em **Add Provider** (ou o botão equivalente para adicionar uma nova conexão).
-4. Insira a **feed URL** do provedor. Esta é a URL onde o provedor publica seus dados de currículo no Open Lesson Format.
-5. Salve a conexão.
+1. Clique em **External Providers** na navegação do Lessons.church. A página **External Lesson Providers** será aberta.
+2. Clique em **Add Provider**. Se ainda não tiver adicionado nenhum, clique em **Add First Provider**.
+3. Digite um **Provider Name**. Este é o nome que sua equipe verá ao escolher o provedor.
+4. Digite a **API URL**. Este é o endereço onde o provedor publica seu currículo no Open Lesson Format.
+5. Clique em **Save**.
 
-Depois de salvo, Lessons.church importará o conteúdo do provedor. Seus programas, estudos e aulas aparecerão na biblioteca de currículo junto com seu próprio conteúdo.
+O provedor é adicionado apenas para a sua igreja. Ele passa a aparecer como opção em **Provider** quando você [agenda uma lição](../classrooms/scheduling-lessons.md) para uma classe, e em **Source** quando você cria um [plano anual](./managing-year-plans.md).
 
 ## Gerenciando Provedores
 
-Na página **Third-Party**, você pode ver todos os provedores conectados. Para cada provedor, você pode:
+A página **External Lesson Providers** lista todos os provedores que sua igreja adicionou. Para alterar um deles:
 
-- **View** o conteúdo importado para confirmar que foi puxado corretamente.
-- **Update** a URL de feed se o provedor muda seu endpoint.
-- **Remove** um provedor se você não quer mais incluir seu conteúdo.
+- **Editar** -- Clique no ícone **Edit provider** (lápis), altere o **Provider Name** ou a **API URL** e clique em **Save**.
+- **Excluir** -- Clique no ícone **Edit provider**, depois clique no ícone de exclusão (lixeira) e confirme.
 
-## O Que É o Open Lesson Format?
+## O Que é o Open Lesson Format?
 
-O Open Lesson Format é um schema padronizado que descreve conteúdo de currículo -- programas, estudos, aulas, venues, seções e ações -- de forma estruturada. Qualquer organização que publica seu conteúdo usando este formato pode ser adicionada como um provedor em Lessons.church.
+O Open Lesson Format é um esquema padronizado que descreve o conteúdo do currículo -- programas, estudos, lições, locais, seções e ações -- de forma estruturada. Qualquer organização que publique seu conteúdo nesse formato pode ser adicionada como provedor no Lessons.church.
 
-Se você é um provedor de conteúdo interessado em tornar seu currículo disponível através de Lessons.church, você pode encontrar a documentação completa de schema no guia [Open Lesson Format](./open-lesson-format.md).
+Se você é um provedor de conteúdo interessado em disponibilizar seu currículo pelo Lessons.church, pode encontrar a documentação completa do esquema no guia [Open Lesson Format](./open-lesson-format.md).
 
-## Por Que Usar Provedores de Terceiros?
+## Por Que Usar Provedores Externos?
 
-- **Mais escolhas para igrejas** -- Igrejas podem procurar uma variedade mais ampla de currículo sem deixar a plataforma.
-- **Um lugar para tudo** -- Voluntários e coordenadores não precisam visitar múltiplos websites para encontrar e agendar aulas.
-- **Setup fácil** -- Adicionar um provedor leva apenas uma URL de feed. Não há entrada de dados manual ou upload de arquivo envolvido.
+- **Mais opções para igrejas** -- As igrejas podem navegar por uma variedade maior de currículos sem sair da plataforma.
+- **Um só lugar para tudo** -- Voluntários e coordenadores não precisam visitar vários sites para encontrar e agendar lições.
+- **Configuração simples** -- Adicionar um provedor exige apenas um nome e uma URL de feed. Não há entrada manual de dados nem envio de arquivos.
+
+:::info
+O conteúdo de terceiros é gerenciado pelo provedor externo. Se você notar conteúdo ausente ou desatualizado de um provedor, o problema pode precisar ser resolvido do lado dele.
+:::
+
+:::tip
+Para saber como são as lições de um provedor externo depois de agendadas, consulte [Provedores Externos](../browsing/external-providers.md) na seção Navegação.
+:::

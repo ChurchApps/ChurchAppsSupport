@@ -1,58 +1,57 @@
 ---
-title: "Tredjeparts-leverandører"
-description: "Legg til en ekstern læreplanfeed i Lessons.church fra siden for tredjepartsleverandører, og vis, oppdater eller fjern leverandørtilkoblinger etter behov."
+title: "Tredjepartsleverandører"
+description: "Legg til en kurrikulumfeed i Open Lesson Format på siden for eksterne leverandører i Lessons.church, og rediger eller slett den slik at menigheten din kan planlegge leksjonene sine."
 ---
 
-# Tredjeparts-leverandører
+# Tredjepartsleverandører
 
 <div class="article-intro">
 
-Lessons.church støtter eksterne læreplanleverandører gjennom Open Lesson Format. Dette betyr at du kan importere innhold fra andre organisasjoner og gjøre det tilgjengelig sammen med det innebygde biblioteket, noe som gir kirker tilgang til læreplan fra flere kilder på ett sted.
+Lessons.church støtter eksterne kurrikulumleverandører gjennom Open Lesson Format. Det betyr at menigheten din kan koble til kurrikulum fra andre organisasjoner og planlegge det for klasserommene dine rett ved siden av det innebygde biblioteket. Teamet ditt får dermed kurrikulum fra flere kilder samlet på ett sted.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Ha administratortillatelse for Lessons.church (se [Administration-oversikten](./index.md))
-- Få feed-URL-en fra den eksterne leverandøren du vil koble
+- Logg inn på Lessons.church med en konto som kan administrere menighetens klasseromsplaner
+- Hent feed-URL-en fra den eksterne leverandøren du vil koble til. Den må returnere leksjoner i [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Legge til en leverandør
 
-1. Gå til **Admin**-området.
-2. Åpne **Tredjeparts**-siden.
-3. Klikk **Legg til leverandør** (eller tilsvarende knapp for å legge til en ny forbindelse).
-4. Oppgi leverandørens **feed-URL**. Dette er URL-adressen hvor leverandøren publiserer læreplansdataene i Open Lesson Format.
-5. Lagre forbindelsen.
+1. Klikk på **External Providers** i navigasjonen i Lessons.church. Siden **External Lesson Providers** åpnes.
+2. Klikk på **Add Provider**. Hvis du ikke har lagt til noen ennå, klikk på **Add First Provider** i stedet.
+3. Skriv inn et **Provider Name**. Dette er navnet teamet ditt ser når de velger leverandør.
+4. Skriv inn **API URL**. Dette er adressen der leverandøren publiserer kurrikulumet sitt i Open Lesson Format.
+5. Klikk på **Save**.
 
-Når den er lagret, vil Lessons.church importere leverandørens innhold. Programmene, studiene og leksjonene vil vises i læreplansbiblioteket sammen med ditt eget innhold.
+Leverandøren legges kun til for menigheten din. Den vises deretter som et valg under **Provider** når du [planlegger en leksjon](../classrooms/scheduling-lessons.md) for et klasserom, og under **Source** når du lager en [årsplan](./managing-year-plans.md).
 
-## Håndtering av leverandører
+## Administrere leverandører
 
-Fra **Tredjeparts**-siden kan du se alle tilkoblede leverandører. For hver leverandør kan du:
+Siden **External Lesson Providers** viser alle leverandørene menigheten din har lagt til. Slik endrer du en leverandør:
 
-- **Vise** det importerte innholdet for å bekrefte at det ble trukket inn korrekt.
-- **Oppdatere** feed-URL-en hvis leverandøren endrer sluttpunktet.
-- **Fjerne** en leverandør hvis du ikke lenger vil inkludere innholdet.
+- **Rediger** -- Klikk på ikonet **Edit provider** (blyant), endre **Provider Name** eller **API URL**, og klikk på **Save**.
+- **Slett** -- Klikk på ikonet **Edit provider**, klikk deretter på søppelbøtteikonet for sletting, og bekreft.
 
 ## Hva er Open Lesson Format?
 
-Open Lesson Format er et standardisert skjema som beskriver læreplaninnhold -- programmer, studier, leksjoner, steder, seksjoner og handlinger -- på en strukturert måte. Enhver organisasjon som publiserer innholdet sitt ved hjelp av dette formatet kan legges til som en leverandør i Lessons.church.
+Open Lesson Format er en standardisert skjemadefinisjon som beskriver kurrikuluminnhold -- programmer, studier, leksjoner, steder, seksjoner og handlinger -- på en strukturert måte. Enhver organisasjon som publiserer innholdet sitt i dette formatet, kan legges til som leverandør i Lessons.church.
 
-Hvis du er en innholdsleverandør som er interessert i å gjøre læreplanen tilgjengelig gjennom Lessons.church, kan du finne den fullstendige schemadokumentasjonen i [Open Lesson Format](./open-lesson-format.md)-guiden.
+Hvis du er en innholdsleverandør og ønsker å gjøre kurrikulumet ditt tilgjengelig via Lessons.church, finner du den fullstendige skjemadokumentasjonen i veiledningen [Open Lesson Format](./open-lesson-format.md).
 
-## Hvorfor bruke tredjeparts-leverandører?
+## Hvorfor bruke tredjepartsleverandører?
 
-- **Flere valg for kirker** -- Kirker kan bla gjennom et større utvalg av læreplan uten å forlate plattformen.
-- **Ett sted for alt** -- Frivillige og koordinatorer trenger ikke besøke flere nettsider for å finne og planlegge leksjoner.
-- **Enkelt oppsett** -- Å legge til en leverandør tar bare en feed-URL. Det er ingen manuell dataregistrering eller filoppinning involvert.
+- **Flere valg for menigheter** -- Menigheter kan bla gjennom et bredere utvalg av kurrikulum uten å forlate plattformen.
+- **Ett sted for alt** -- Frivillige og koordinatorer trenger ikke besøke flere nettsteder for å finne og planlegge leksjoner.
+- **Enkelt oppsett** -- Det er bare et navn og en feed-URL som skal til for å legge til en leverandør. Det kreves ingen manuell dataregistrering eller filopplasting.
 
 :::info
-Tredjeparts-innhold administreres av den eksterne leverandøren. Hvis du merker manglende eller foreldet innhold fra en leverandør, kan problemet trenge å løses på deres slutt.
+Tredjepartsinnhold administreres av den eksterne leverandøren. Hvis du oppdager manglende eller utdatert innhold fra en leverandør, må problemet kanskje løses hos dem.
 :::
 
 :::tip
-For kirke-nivå ekstern leverandørkonfigurasjon (ikke admin-nivå), se [Ekstern leverandør](../browsing/external-providers.md)-siden i Blaiserings-delen.
+For å lære hvordan leksjoner fra en ekstern leverandør ser ut når de er planlagt, se [Eksterne leverandører](../browsing/external-providers.md) i avsnittet Bla gjennom.
 :::

@@ -1,39 +1,57 @@
 ---
 title: "Fournisseurs tiers"
-description: "Ajouter un flux de curriculum externe à Lessons.church depuis la page Fournisseurs tiers, puis consulter, mettre à jour ou supprimer les connexions."
+description: "Ajoutez un flux de programmes au format Open Lesson sur la page Fournisseurs externes de Lessons.church, puis modifiez-le ou supprimez-le afin que votre église puisse planifier ses leçons."
 ---
 
 # Fournisseurs tiers
 
 <div class="article-intro">
 
-Lessons.church s'intègre avec d'autres fournisseurs de curriculum populaires pour vous donner accès à une bibliothèque étendue de contenu pédagogique.
+Lessons.church prend en charge les fournisseurs de programmes externes grâce au format Open Lesson. Votre église peut ainsi connecter des programmes proposés par d'autres organisations et les planifier pour vos classes, à côté de la bibliothèque intégrée. Votre équipe dispose ainsi de programmes provenant de plusieurs sources au même endroit.
 
 </div>
 
-## Fournisseurs disponibles
+<div class="prereqs">
+<h4>Avant de commencer</h4>
 
-Lessons.church s'intègre avec plusieurs fournisseurs de curriculum :
+- Connectez-vous à Lessons.church avec un compte autorisé à gérer les plannings des classes de votre église
+- Obtenez l'URL du flux auprès du fournisseur externe que vous souhaitez connecter. Ce flux doit renvoyer des leçons au [format Open Lesson](./open-lesson-format.md)
 
-- **Bible Stories for Kids** — Curriculum biblique basé sur les histoires bibliques
-- **Other Popular Providers** — De nombreux autres fournisseurs populaires
+</div>
 
-## Activation d'un fournisseur
+## Ajouter un fournisseur
 
-1. Ouvrez Lessons.church
-2. Allez à **Paramètres** > **Fournisseurs de contenu**
-3. Cliquez sur le fournisseur que vous souhaitez activer
-4. Suivez les instructions de connexion ou d'authentification
-5. Une fois connecté, le contenu du fournisseur sera disponible pour planifier
+1. Cliquez sur **Fournisseurs externes** dans la navigation de Lessons.church. La page **Fournisseurs de leçons externes** s'ouvre.
+2. Cliquez sur **Ajouter un fournisseur**. Si vous n'en avez encore ajouté aucun, cliquez plutôt sur **Ajouter le premier fournisseur**.
+3. Saisissez un **Nom du fournisseur**. C'est le nom que votre équipe verra lorsqu'elle choisira le fournisseur.
+4. Saisissez l'**URL de l'API**. C'est l'adresse à laquelle le fournisseur publie ses programmes au format Open Lesson.
+5. Cliquez sur **Enregistrer**.
 
-## Utilisation du contenu du fournisseur
+Le fournisseur n'est ajouté que pour votre église. Il apparaît ensuite comme un choix sous **Fournisseur** lorsque vous [planifiez une leçon](../classrooms/scheduling-lessons.md) pour une classe, et sous **Source** lorsque vous créez un [plan annuel](./managing-year-plans.md).
 
-1. Dans B1 Admin, allez à **Service** > **Plans**
-2. Lorsque vous planifiez une leçon, le fournisseur connecté apparaîtra dans la liste
-3. Sélectionnez le fournisseur et parcourez le contenu disponible
-4. Planifiez la leçon pour votre classe
+## Gérer les fournisseurs
 
-## Articles connexes
+La page **Fournisseurs de leçons externes** répertorie tous les fournisseurs ajoutés par votre église. Pour en modifier un :
 
-- [Planification des leçons](../../b1-admin/serving/scheduling-lessons.md) — Guide de planification dans B1 Admin
-- [Aperçu de Lessons.church](../index.md) — Vue d'ensemble générale
+- **Modifier** -- Cliquez sur l'icône **Modifier le fournisseur** (crayon), modifiez le **Nom du fournisseur** ou l'**URL de l'API**, puis cliquez sur **Enregistrer**.
+- **Supprimer** -- Cliquez sur l'icône **Modifier le fournisseur**, puis sur l'icône de suppression (corbeille) et confirmez.
+
+## Qu'est-ce que le format Open Lesson ?
+
+Le format Open Lesson est un schéma normalisé qui décrit le contenu des programmes (programmes, études, leçons, lieux, sections et actions) de manière structurée. Toute organisation qui publie son contenu selon ce format peut être ajoutée comme fournisseur dans Lessons.church.
+
+Si vous êtes un fournisseur de contenu et souhaitez rendre vos programmes disponibles sur Lessons.church, vous trouverez la documentation complète du schéma dans le guide [Format Open Lesson](./open-lesson-format.md).
+
+## Pourquoi utiliser des fournisseurs tiers ?
+
+- **Plus de choix pour les églises** -- Les églises peuvent parcourir une plus grande variété de programmes sans quitter la plateforme.
+- **Un seul endroit pour tout** -- Les bénévoles et les coordinateurs n'ont pas besoin de consulter plusieurs sites pour trouver et planifier des leçons.
+- **Une configuration simple** -- Ajouter un fournisseur ne demande qu'un nom et une URL de flux. Aucune saisie manuelle de données ni import de fichiers n'est nécessaire.
+
+:::info
+Le contenu tiers est géré par le fournisseur externe. Si vous remarquez qu'un contenu d'un fournisseur est manquant ou obsolète, le problème doit peut-être être résolu de son côté.
+:::
+
+:::tip
+Pour savoir à quoi ressemblent les leçons d'un fournisseur externe une fois planifiées, consultez [Fournisseurs externes](../browsing/external-providers.md) dans la section Consultation.
+:::

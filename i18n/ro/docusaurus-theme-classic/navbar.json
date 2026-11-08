@@ -27,13 +27,9 @@
     "message": "B1 - Admin",
     "description": "Navbar item with label B1 - Admin"
   },
-  "item.label.B1 - Website": {
-    "message": "B1 - Site Web",
-    "description": "Navbar item with label B1 - Website"
-  },
-  "item.label.B1 - Mobile": {
-    "message": "B1 - Mobil",
-    "description": "Navbar item with label B1 - Mobile"
+  "item.label.B1 - App": {
+    "message": "B1 - App",
+    "description": "Navbar item with label B1 - App"
   },
   "item.label.B1 - Checkin": {
     "message": "B1 - Înregistrare",

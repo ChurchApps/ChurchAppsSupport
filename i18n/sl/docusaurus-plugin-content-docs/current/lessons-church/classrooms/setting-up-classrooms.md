@@ -1,13 +1,13 @@
 ---
-title: "Postavitev učilnic"
-description: "Ustvari, preimenuj in odstrani učilnice v portalu Lessons.church, da je vsak prostor ali starostna skupina pripravljen za tedensko načrtovanje ur."
+title: "Priprava učilnic"
+description: "Ustvarjajte, preimenujte in odstranjujte učilnice v portalu Lessons.church, da bo vsak prostor ali starostna skupina pripravljena za tedensko načrtovanje lekcij."
 ---
 
-# Postavitev učilnic
+# Priprava učilnic
 
 <div class="article-intro">
 
-Preden lahko načrtujete ure, morate ustvariti učilnice, ki predstavljajo vaša učna okolja. Ta vodnik vas bo vodil skozi ustvarjanje, poimenovanje in upravljanje učilnic v portalu Lessons.church.
+Preden lahko načrtujete lekcije, morate ustvariti učilnice, ki predstavljajo vaše učne prostore. Ta vodnik vas bo popeljal skozi ustvarjanje, poimenovanje in upravljanje učilnic v portalu Lessons.church.
 
 </div>
 
@@ -22,29 +22,29 @@ Preden lahko načrtujete ure, morate ustvariti učilnice, ki predstavljajo vaša
 ## Ustvarjanje učilnice
 
 1. Prijavite se v svoj račun na [Lessons.church](https://lessons.church).
-2. Pojdite na svoj **Portal**. To je osrednje mesto vaše cerkve za upravljanje učilnic in urnikov.
-3. Kliknite **Dodaj učilnico**.
-4. Vnesite ime za svojo učilnico. Izberite nekaj opisnega, kar bodo prostovoljci prepoznali -- na primer »Predšolski«, »Osnovna K-2« ali »Srednja šola«.
-5. Shranite novo učilnico. Takoj se bo prikazala na nadzorni plošči vašega portala.
+2. Pojdite v svoj **Portal**. To je osrednje mesto vaše cerkve za upravljanje učilnic in urnikov.
+3. V polju **Učilnice** kliknite **Dodaj**. Če še nimate nobene učilnice, namesto tega kliknite **Dodaj prvo učilnico**.
+4. Vnesite **Ime učilnice**. Izberite opisno ime, ki ga bodo prostovoljci prepoznali, na primer "Predšolski otroci", "Osnovna šola 1.–2. razred" ali "Starejši osnovnošolci".
+5. Kliknite **Shrani**. Vaša nova učilnica se takoj prikaže na seznamu **Učilnice**.
 
-Ponovite te korake za vsako sobo ali starostno skupino v vaši cerkvi. Ustvarite lahko toliko učilnic, kolikor jih potrebujete.
+Ponovite te korake za vsak prostor ali starostno skupino v vaši cerkvi. Ustvarite lahko toliko učilnic, kolikor jih potrebujete.
 
-## Nastavitev ob prvi uporabi
+## Prva nastavitev
 
-Če še nimate nastavljenih učilnic, bo vaš portal prikazal videoposnetek z navodili za nastavitev. Ta videoposnetek pokriva osnove ustvarjanja učilnic in načrtovanja prvih ur. Je odlično izhodišče, če ste novi v Lessons.church.
+Če še niste nastavili nobene učilnice, bo vaš portal prikazal videoposnetek za nastavitev, ki vas bo vodil skozi postopek. Video predstavi osnove ustvarjanja učilnic in načrtovanja prvih lekcij. Je odlično izhodišče, če ste novi v Lessons.church.
 
 :::tip
-Poimenujte svoje učilnice tako, kot prostovoljci že razmišljajo o vaših prostorih. Če vsi temu rečejo »soba za predšolske«, jo poimenujte »Predšolski« namesto nečesa uradnega, kot je »Učilnica 101 za zgodnjo otroško vzgojo«.
+Poimenujte učilnice tako, kot vaši prostovoljci že razmišljajo o vaših prostorih. Če vsi temu pravijo "soba za predšolske", jo poimenujte "Predšolska", ne pa z uradnim imenom, kot je "Soba 101 za zgodnjo vzgojo".
 :::
 
 ## Upravljanje učilnic
 
-Vaše učilnice se prikažejo na nadzorni plošči portala, kjer jih lahko kadarkoli upravljate. Od tu lahko:
+Vaše učilnice so prikazane na nadzorni plošči portala, kjer jih lahko kadar koli upravljate. Tu lahko:
 
-- **Preimenujete učilnico** -- Posodobite ime, če se vaše sobe ali starostne skupine spremenijo.
-- **Odstranite učilnico** -- Izbrišite učilnice, ki jih ne potrebujete več.
-- **Ogledate si urnik** -- Kliknite katero koli učilnico, da vidite njen urnik ur.
+- **Preimenujete učilnico** -- Kliknite ikono **Uredi učilnico** (svinčnik) ob njej, spremenite **Ime učilnice** in kliknite **Shrani**.
+- **Odstranite učilnico** -- Kliknite **Uredi učilnico**, nato kliknite ikono **Izbriši učilnico** (koš za smeti) in potrdite.
+- **Oglejte si urnik** -- Kliknite katero koli učilnico, da si ogledate njen urnik lekcij.
 
 ## Kaj sledi
 
-Ko so vaše učilnice nastavljene, ste pripravljeni, da začnete [načrtovati ure](./scheduling-lessons.md), da bodo vaši prostovoljci vedeli, kaj poučevati vsak teden.
+Ko so vaše učilnice nastavljene, ste pripravljeni na [načrtovanje lekcij](./scheduling-lessons.md), da bodo vaši prostovoljci vedeli, kaj naj poučujejo vsak teden.

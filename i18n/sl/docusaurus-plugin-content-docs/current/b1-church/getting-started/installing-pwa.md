@@ -1,39 +1,39 @@
 ---
 title: "Instalacija kot aplikacija (PWA)"
-description: "Namestite B1.church kot aplikacijo na iPhone ali Android prek portala članov, tako da ikono dodate na začetni zaslon v brskalniku Safari ali Chrome."
+description: "Namestite B1.church kot aplikacijo na iPhone ali Android iz portala za člane tako, da njeno ikono dodate na začetni zaslon v Safariju ali Chromu."
 ---
 
 # Instalacija kot aplikacija (PWA)
 
 <div class="article-intro">
 
-B1.church podpira namestitev kot progresivno spletno aplikacijo (PWA), kar vam omogoča, da portal članov vaše cerkve dodate na začetni zaslon telefona, točno kot pravo aplikacijo. To vam ponuja celozaslonsko izkušnjo, podobno aplikaciji, brez prenosa iz trgovine App Store ali Google Play.
+B1.church podpira namestitev kot progresivna spletna aplikacija (PWA), ki vam omogoča, da portal za člane vaše cerkve dodate na začetni zaslon telefona, tako kot katero koli nativno aplikacijo. Tako dobite celozaslonsko izkušnjo, podobno aplikaciji, ne da bi morali obiskati App Store ali Google Play.
 
 </div>
 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Potrebujete spletni naslov vaše cerkve na B1.church: `https://yourchurchname.b1.church`
+- Potrebovate URL vaše cerkve na B1.church: `https://yourchurchname.b1.church`
 - Uporabite podprt brskalnik: **Safari** na iOS ali **Chrome** na Androidu
 
 </div>
 
 ## Kaj je PWA?
 
-Progresivna spletna aplikacija (PWA) je spletna stran, ki jo lahko namestite v napravo in se obnaša kot pravo aplikacija. Ko namestite B1.church kot PWA, se:
+Progresivna spletna aplikacija (PWA) je spletno mesto, ki ga lahko namestite v napravo in se obnaša kot nativna aplikacija. Ko namestite B1.church kot PWA, se:
 
-- odpre čez cel zaslon brez navigacijskih vrstic brskalnika
-- na začetnem zaslonu prikaže z ikono in imenom vaše cerkve
-- lepo ujema z blagovno znamko in barvami teme vaše cerkve
+- odpre čez celoten zaslon brez navigacijskih vrstic brskalnika
+- prikaže na začetnem zaslonu z ikono in imenom vaše cerkve
+- lepo prilagodi videzu in barvam vaše cerkve
 
 :::tip
-PWA je odlična možnost, če raje ne namestite ločene aplikacije iz trgovine App Store ali Google Play. Ponuja enako izkušnjo portala za člane kot v brskalniku, a v bolj priročni obliki.
+PWA je odlična možnost, če ne želite nameščati ločene aplikacije iz App Store ali Google Play. Ponuja enako izkušnjo portala za člane, kot jo imate v brskalniku, a v bolj priročni obliki.
 :::
 
 ## Stran za namestitev
 
-Najlažji način namestitve je namenska stran za namestitev vaše cerkve:
+Najlažji način namestitve je posebna stran za namestitev vaše cerkve:
 
 ```
 https://yourchurchname.b1.church/mobile/install
@@ -41,64 +41,58 @@ https://yourchurchname.b1.church/mobile/install
 
 Stran samodejno zazna vašo napravo in prikaže ustrezna navodila:
 
-- **iPhone** — navodila po korakih za Safari »Dodaj na začetni zaslon«
-- **Android** — gumb **Namesti na začetni zaslon** v Chromu, ki ga pritisnete enkrat
-- **Namizni računalnik** — QR-koda, ki jo lahko optično preberete s telefonom in odprete stran za namestitev tam
+- **iPhone** — navodila po korakih za »Dodaj na začetni zaslon« v Safariju
+- **Android** — gumb **Namesti na začetni zaslon** v Chromu, ki ga obkljukate z enim dotikom
+- **Namizni računalnik** — QR koda, ki jo lahko optično preberete s telefonom in tako odprete stran za namestitev tam
 
 Na stran za namestitev lahko pridete na več načinov:
 
-- Na portalu za člane pritisnite **Več** in pod **Račun** pritisnite **Namesti aplikacijo** (ta možnost je skrita, ko je aplikacija že nameščena)
-- Sledite povezavi, ki jo vaša cerkev deli po sporočilu, e-pošti ali z nedeljskega zaslona
-- Naslov vtipkajte neposredno v brskalnik
+- Tapnite **Več** v portalu za člane in pod **Račun** tapnite **Namesti aplikacijo** (postavka je skrita, ko je aplikacija že nameščena)
+- Sledite povezavi, ki jo vaša cerkev deli po SMS-u, e-pošti ali na nedeljskem zaslonu
+- URL vtipkajte neposredno v brskalnik
 
-:::tip Za zaposlene v cerkvi
-Povezavo do strani za namestitev delite z občino — dodajte jo v cerkveni bilten, glasilo ali na diapozitiv. Vsakega člana po korakih vodi skozi natančen postopek za njegovo napravo. Do nje lahko pridete tudi prek hitrega dejanja **Prenesi aplikacijo** na nadzorni plošči v B1 Admin.
+:::tip Za osebje cerkve
+Povezavo do strani za namestitev delite s svojo skupnostjo — objavite jo v biltenu, informativnem glasilu ali na diapozitivu. Stran vsakega člana vodi skozi natančne korake za njegovo napravo. Do nje lahko pridete tudi prek hitrega dejanja **Prenesi aplikacijo** na nadzorni plošči B1Admin.
 :::
 
-PWA lahko namestite ročno tudi s katere koli **strani** na spletnem mestu vaše cerkve B1.church, po spodnjih korakih v brskalniku — stran za namestitev je le vodeni način za to.
+PWA lahko namestite ročno tudi z **katere koli strani** na spletnem mestu vaše cerkve B1.church, po spodnjih korakih brskalnika — stran za namestitev je zgolj vodeni način za to.
 
-Ko zaženete nameščeno aplikacijo, se neposredno odpre na vaši nadzorni plošči člana, pripravljeni za prijavo.
+Ko zaženete nameščeno aplikacijo, se neposredno odpre vaša nadzorna plošča za člane, pripravljena za prijavo.
 
 ## Namestitev na iPhone (iOS — Safari)
 
-1. Na iPhonu odprite **Safari** in pojdite na `https://yourchurchname.b1.church/mobile/install` (namesto `yourchurchname` vpišite okrajšavo naslova vaše cerkve).
-2. Pritisnite gumb **Deli** (okvirček s puščico, usmerjeno navzgor) na dnu zaslona.
-3. Pomaknite se navzdol v listu za deljenje in pritisnite **Dodaj na začetni zaslon**.
-4. Ime bo privzeto ime vaše cerkve. Pritisnite **Dodaj** v zgornjem desnem kotu.
+1. Na iPhonu odprite **Safari** in pojdite na `https://yourchurchname.b1.church/mobile/install` (namesto `yourchurchname` vpišite kratico URL-ja vaše cerkve).
+2. Na dnu zaslona tapnite gumb **Deli** (okvirček s puščico, usmerjeno navzgor).
+3. V listu za skupno rabo se pomaknite navzdol in tapnite **Dodaj na začetni zaslon**.
+4. Ime bo privzeto ime vaše cerkve. Tapnite **Dodaj** v zgornjem desnem kotu.
 
-Ikona aplikacije se bo prikazala na začetnem zaslonu. Pritisnite jo, da odprete portal za člane v celozaslonskem načinu.
+Ikona aplikacije se bo prikazala na začetnem zaslonu. Tapnite jo, da odprete portal za člane v celozaslonskem načinu.
 
 :::info
-Namestitev PWA na iOS zahteva Safari. Če na iPhonu uporabljate Chrome ali drug brskalnik, najprej preklopite na Safari.
+Namestitev PWA v sistemu iOS zahteva Safari. Če uporabljate Chrome ali drug brskalnik na iPhonu, najprej preklopite na Safari.
 :::
 
 ## Namestitev na Android (Chrome)
 
 1. Na napravi Android odprite **Chrome** in pojdite na `https://yourchurchname.b1.church/mobile/install`.
-2. Pritisnite gumb **Namesti na začetni zaslon**. (Če gumb ni na voljo, pritisnite meni s tremi pikami (⋮) v zgornjem desnem kotu in izberite **Dodaj na začetni zaslon**.)
-3. Ko se prikaže poziv, pritisnite **Dodaj**.
+2. Tapnite gumb **Namesti na začetni zaslon**. (Če gumb ni na voljo, tapnite meni s tremi pikami (⋮) v zgornjem desnem kotu in izberite **Dodaj na začetni zaslon**.)
+3. Ko se prikaže poziv, tapnite **Dodaj**.
 
-Ikona aplikacije se bo prikazala na začetnem zaslonu. Pritisnite jo, da odprete portal za člane.
+Ikona aplikacije se bo prikazala na začetnem zaslonu. Tapnite jo, da odprete portal za člane.
 
 ## Po namestitvi
 
-Ko je aplikacija nameščena, se PWA odpre neposredno v portal za člane v namenskem celozaslonskem oknu. Lahko:
+Ko je PWA nameščena, se odpre neposredno v portalu za člane v namenskem celozaslonskem oknu. Lahko:
 
-- se prijavite s svojim obstoječim računom ChurchApps
-- dostopate do vseh funkcij za člane, ki jih je vaša cerkev omogočila — skupine, darovanja, prijave, načrte služenja in še več
-- se kadar koli vrnete z dotikom ikone na začetnem zaslonu
+- se prijavite z obstoječim računom ChurchApps
+- dostopate do vseh funkcij za člane, ki jih je vaša cerkev omogočila — skupine, darovanja, prijave, načrte služenja in drugo
+- se kadarkoli vrnete tako, da tapnete ikono na začetnem zaslonu
 
-Ikona aplikacije bo prikazala **značko z obvestili** (majhno številko), ko imate neprebrana sporočila, da na prvi pogled vidite, če vas čaka kaj novega.
+Ikona aplikacije bo prikazala **značko z obvestilom** (majhno številko), ko imate neprebrana sporočila, da na prvi pogled vidite, ali vas čaka kaj novega.
 
 :::info
-PWA zahteva internetno povezavo. Za razliko od nekaterih pravih aplikacij ne predpomni vse vsebine za uporabo brez povezave.
+PWA potrebuje internetno povezavo. Za razliko od nekaterih nativnih aplikacij ne shranjuje vse vsebine za uporabo brez povezave.
 :::
-
-## Kaj pa stara aplikacija B1 Mobile?
-
-Stara domača aplikacija **B1 Mobile** za iOS in Android je zastarela in se ne posodablja več. PWA je podprt način dostopa do portala za člane B1.church na telefonu, saj pokriva vse funkcije za člane, ki jih je ponujala domača aplikacija. Če ste prej namestili domačo aplikacijo, preklopite na PWA, ko vam ustreza.
-
-Zgodovinsko dokumentacijo o zastareli aplikaciji najdete na [strani z referenco B1 Mobile](/docs/b1-mobile/).
 
 ## Sorodni članki
 

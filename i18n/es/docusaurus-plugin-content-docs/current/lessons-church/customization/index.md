@@ -1,39 +1,39 @@
 ---
 title: "Personalización"
-description: "Cómo ocultar secciones, roles o acciones en una lección de Lessons.church y reordenar el contenido, para un aula o para todas tus aulas."
+description: "Aprenda a ocultar secciones, roles o acciones en una lección de Lessons.church y a reordenar el contenido, ya sea para un solo salón o para todos los salones de su iglesia."
 ---
 
 # Personalización
 
 <div class="article-intro">
 
-Lessons.church proporciona una biblioteca de contenido de lecciones listo para usar, pero cada iglesia es diferente. Las funciones de personalización le permiten adaptar el contenido de las lecciones para que se ajuste a sus aulas específicas, estilo de enseñanza y grupos de edad, de modo que sus voluntarios vean solo lo que es relevante para ellos.
+Lessons.church ofrece una biblioteca de contenido de lecciones listo para usar, pero cada iglesia es diferente. Las funciones de personalización le permiten adaptar el contenido de las lecciones a sus salones específicos, su estilo de enseñanza y sus grupos de edad, para que sus voluntarios vean únicamente lo que es relevante para ellos.
 
 </div>
 
 ## ¿Por qué personalizar?
 
-El contenido de las lecciones en Lessons.church está diseñado para ser flexible. Una sola lección puede incluir secciones para múltiples grupos de edad, actividades opcionales o roles que no aplican a todas las aulas. En lugar de pedirle a sus voluntarios que salten mentalmente las partes que no aplican, puede personalizar la lección para que solo vean lo que es relevante para ellos.
+El contenido de las lecciones en Lessons.church está diseñado para ser flexible. Una sola lección puede incluir secciones para varios grupos de edad, actividades opcionales o roles que no aplican a todos los salones. En lugar de pedirles a sus voluntarios que omitan mentalmente las partes que no les corresponden, puede personalizar la lección para que vean solo lo que es relevante para ellos.
 
-Por ejemplo, una lección puede incluir una actividad de manualidades que funciona muy bien para preescolares pero no es adecuada para su aula de quinto grado. Con la personalización, puede ocultar esa sección para el grupo mayor mientras la mantiene para el más pequeño.
+Por ejemplo, una lección puede incluir una actividad de manualidades que funciona muy bien con los preescolares, pero que no es adecuada para su salón de quinto grado. Con la personalización, puede ocultar esa sección para el grupo mayor mientras la mantiene para el menor.
 
-## Lo que puede personalizar
+## Qué puede personalizar
 
-- **Eliminar secciones** -- Oculte secciones completas de una lección que no apliquen a un aula o grupo de edad específico.
-- **Ocultar roles o acciones** -- Elimine roles o acciones individuales dentro de una sección si no son necesarios.
-- **Reordenar contenido** -- Reorganice las secciones y acciones para que coincidan con el flujo que prefiera para su aula.
+- **Eliminar secciones** -- Quite secciones completas de una lección que no apliquen a un salón o grupo de edad específico.
+- **Eliminar roles o acciones** -- Quite roles o acciones individuales dentro de una sección si no son necesarios.
+- **Reordenar el contenido** -- Reorganice las secciones y acciones para que sigan el flujo que prefiera en su salón.
 
-## Específico del aula o global
+## Específico del salón o global
 
-Cuando guarda una personalización, elige qué tan ampliamente se aplica:
+Cada vez que realiza un cambio, usted elige qué tan amplio será su alcance:
 
-- **Un solo aula** -- La personalización solo afecta al aula actual. Las demás aulas ven el contenido original.
-- **Todas las aulas** -- La personalización se aplica en todas las aulas de su iglesia.
+- **Este salón** -- El cambio solo afecta al salón actual. Los demás salones ven el contenido original.
+- **Todos los salones** -- El cambio se aplica a todos los salones de su iglesia.
 
-Esta flexibilidad significa que puede configurar diferentes vistas de la misma lección para diferentes grupos de edad, o hacer un cambio que se aplique en todas partes a la vez.
+Esta flexibilidad le permite configurar distintas versiones de la misma lección para diferentes grupos de edad, o hacer un cambio que se aplique a todos los salones al mismo tiempo.
 
 :::tip
-Si es nuevo en la personalización, comience con un solo aula para ver cómo funciona antes de aplicar cambios en todas las aulas.
+Si es nuevo en la personalización, comience con un solo salón para ver cómo funciona antes de aplicar cambios en todos los salones.
 :::
 
 ## Próximos pasos

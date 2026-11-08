@@ -96,7 +96,7 @@ Let volunteers sign up for positions themselves instead of waiting for admin ass
 3. For each position, check the **Allow Self-Signup** checkbox to make it available for self-service.
 4. Add a **Description** to each position so volunteers know what the role involves.
 
-Once self-signup positions are created, they automatically appear on the volunteer signup pages on [B1.church](../../b1-church/serving/volunteer-signup.md) and the [B1 Mobile app](../../b1-mobile/serving/volunteer-signup.md). Members can browse open positions, see how many spots remain, and sign up with one click.
+Once self-signup positions are created, they automatically appear on the volunteer signup pages on [B1.church and in the B1 App](../../b1-church/serving/volunteer-signup.md). Members can browse open positions, see how many spots remain, and sign up with one click.
 
 :::tip
 Mix admin-assigned and self-signup positions in the same plan. For example, assign your worship leader directly but let greeters and coffee servers self-select.
@@ -106,14 +106,14 @@ Mix admin-assigned and self-signup positions in the same plan. For example, assi
 
 Assigned volunteers automatically see their plans and can respond.
 
-1. Volunteers see their plans on [B1.church](../../b1-church/plans/viewing-plans.md) and the [B1 Mobile app](../../b1-mobile/serving/viewing-plans.md)
-2. They can accept or decline assignments directly from either platform
+1. Volunteers see their plans on [B1.church and in the B1 App](../../b1-church/plans/viewing-plans.md)
+2. They can accept or decline assignments directly from their phone or computer
 3. They can set blockout dates for weeks they're unavailable
 4. Plans can be printed for rehearsals or posted backstage
 5. Volunteers can browse and sign up for open positions via the [volunteer signup page](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
-Push notifications on the mobile app alert volunteers when they receive new assignments or when plans change.
+Push notifications in the B1 App alert volunteers when they receive new assignments or when plans change.
 :::
 
 ## You're Done!
@@ -129,7 +129,5 @@ Your volunteer management system is set up. Each week, create a new plan, assign
 - [Songs](../serving/songs.md) — manage your worship song library
 - [Tasks](../serving/tasks.md) — assign action items to people or groups
 - [Workflows](../serving/workflows.md) — move people through repeatable processes with triggers and automated steps
-- [Viewing Plans (Web)](../../b1-church/plans/viewing-plans.md) — how volunteers see plans online
-- [Viewing Plans (Mobile)](../../b1-mobile/serving/viewing-plans.md) — how volunteers see plans on mobile
-- [Volunteer Signup (Web)](../../b1-church/serving/volunteer-signup.md) — how members self-select volunteer positions
-- [Volunteer Signup (Mobile)](../../b1-mobile/serving/volunteer-signup.md) — volunteer self-signup on mobile
+- [Viewing Plans](../../b1-church/plans/viewing-plans.md) — how volunteers see their plans
+- [Volunteer Signup](../../b1-church/serving/volunteer-signup.md) — how members self-select volunteer positions

@@ -1,95 +1,104 @@
 ---
 title: "Inhalte durchsuchen und herunterladen"
-description: "Bibliothek eines verbundenen Anbieters in FreePlay mit der TV-Fernbedienung durchsuchen und Lektionen oder Videos zum Abspielen laden oder streamen."
+description: "Navigieren Sie mit Ihrer TV-Fernbedienung in FreePlay durch die Bibliothek eines verbundenen Anbieters und laden Sie Lektionen und Videos herunter oder streamen Sie sie zur Wiedergabe."
 ---
 
 # Inhalte durchsuchen und herunterladen
 
 <div class="article-intro">
 
-Sobald Sie mit einem Inhaltsanbieter verbunden sind, können Sie dessen Bibliothek durchsuchen, Dateien herunterladen und sie auf Ihrem Fernseher abspielen. Der Inhaltsbrowser zeigt ein visuelles Raster aus Ordnern und Dateien, durch das Sie mit der Fernbedienung navigieren.
+Sobald Sie mit einem Inhaltsanbieter verbunden sind, können Sie dessen Bibliothek durchsuchen, Dateien herunterladen und sie auf Ihrem Fernseher abspielen. Der Inhaltsbrowser zeigt ein visuelles Raster aus Ordnern und Dateien, durch das Sie mit Ihrer TV-Fernbedienung navigieren.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Verbinden Sie sich mit mindestens einem Inhaltsanbieter. Siehe [Verbindung zu Anbietern herstellen](./connecting-providers.md)
-- Halten Sie Ihre Fernbedienung für die Navigation bereit
+- Verbinden Sie sich mit mindestens einem Inhaltsanbieter – siehe [Verbinden mit Anbietern](./connecting-providers.md)
+- Halten Sie Ihre TV-Fernbedienung zur Navigation bereit
 
 </div>
 
 ## Der Inhaltsbrowser
 
-Der Inhaltsbrowser zeigt Elemente in einem Raster aus 3 Spalten mit Karten. Jede Karte zeigt ein Vorschaubild und einen Titel. Es gibt zwei Arten von Elementen:
+Der Inhaltsbrowser zeigt Elemente in einem Raster aus 3 Spalten mit Karten an. Jede Karte zeigt ein Vorschaubild und einen Titel. Es gibt zwei Arten von Elementen:
 
-- **Ordner**: Dargestellt durch ein Vorschaubild oder ein Ordnersymbol. Wählen Sie einen Ordner aus, um seinen Inhalt anzuzeigen.
-- **Dateien**: Einzelne Medienelemente (Videos oder Bilder). Videodateien zeigen auf ihrem Vorschaubild ein Play-Symbol.
+- **Ordner** – Dargestellt durch ein Vorschaubild oder ein Ordnersymbol. Wählen Sie einen Ordner aus, um seinen Inhalt anzuzeigen.
+- **Dateien** – Einzelne Medienelemente (Videos oder Bilder). Videodateien zeigen ein Play-Symbol über ihrem Vorschaubild.
 
-Die Kopfzeile oben auf dem Bildschirm zeigt den Namen des aktuellen Ordners oder, auf der obersten Ebene, den Namen des Anbieters.
+Die Kopfzeile oben auf dem Bildschirm zeigt den Namen des aktuellen Ordners an oder den Namen des Anbieters, wenn Sie sich auf der obersten Ebene befinden.
 
-## Ordner durchsuchen
+## Durch Ordner navigieren
 
-1. Markieren Sie mit dem Steuerkreuz Ihrer Fernbedienung einen Ordner.
-2. Drücken Sie **Auswählen**, um ihn zu öffnen.
-3. Der Browser lädt den Inhalt des Ordners, bei dem es sich um weitere Ordner oder abspielbare Dateien handeln kann.
-4. Drücken Sie **Zurück** auf Ihrer Fernbedienung, um eine Ebene nach oben zu gehen.
+1. Verwenden Sie das Richtungskreuz Ihrer Fernbedienung, um einen Ordner zu markieren
+2. Drücken Sie **Auswählen**, um ihn zu öffnen
+3. Der Browser lädt den Inhalt des Ordners, bei dem es sich um weitere Ordner oder abspielbare Dateien handeln kann
+4. Drücken Sie **Zurück** auf Ihrer Fernbedienung, um eine Ebene nach oben zu gelangen
 
-Sie können so tief navigieren, wie es die Struktur der Inhalte des Anbieters zulässt. Der Browser merkt sich Ihren Ordnerpfad, sodass Sie durch jede Ebene zurückgehen können.
+Sie können so tief navigieren, wie es die Inhaltsstruktur des Anbieters zulässt. Der Browser speichert Ihren Ordnerpfad, damit Sie sich durch jede Ebene zurücknavigieren können.
 
 ## Lessons.church durchsuchen
 
-Die Bibliothek von [Lessons.church](../../lessons-church/index.md) ist genauso aufgebaut wie die Website. Auf der obersten Ebene finden Sie zwei Ordner:
+Die Bibliothek von [Lessons.church](../../lessons-church/index.md) ist genauso aufgebaut wie die Website. Auf der obersten Ebene sehen Sie zwei Ordner:
 
-- **Lessons**: Gehen Sie nach **Programm**, dann **Studie**, dann **Lektion**. Jede Lektion listet anschließend ihre **Varianten** auf. Das sind Fassungen der Lektion für eine bestimmte Altersgruppe oder einen bestimmten Rahmen, zum Beispiel Vorschule oder Grundschule. Wählen Sie eine Variante, um den Download-Bildschirm für diese Fassung der Lektion zu öffnen.
-- **Add-Ons**: Zusätzliche Videos und Materialien, nach Kategorien geordnet.
+- **Lektionen** – Navigieren Sie nach **Programm**, dann **Studie**, dann **Lektion**. Jede Lektion listet anschließend ihre **Varianten** auf, also Versionen der Lektion für eine bestimmte Altersgruppe oder einen bestimmten Kontext, z. B. Vorschule oder Grundschule. Wählen Sie eine Variante aus, um den Download-Bildschirm für diese Version der Lektion zu öffnen.
+- **Add-Ons** – Zusätzliche Videos und Ressourcen, nach Kategorie gruppiert
 
-Drücken Sie auf jeder Ebene **Zurück**, um einen Schritt nach oben zu gehen.
+Drücken Sie auf einer beliebigen Ebene **Zurück**, um einen Schritt nach oben zu gelangen.
+
+## Go Curriculum durchsuchen
+
+Nachdem Sie sich [mit Ihrem gocurriculum.com-Konto angemeldet haben](./connecting-providers.md#phone-sign-in-qr-code-only), öffnet sich Go Curriculum mit seinen Altersgruppen **Grundschule** und **Vorschule**. Navigieren Sie nach Altersgruppe, dann nach Sammlung, dann nach Lektion, und wählen Sie eine Lektion aus, um deren Download-Bildschirm zu öffnen.
+
+Was Sie sehen, hängt von Ihrer Go-Mitgliedschaft ab:
+
+- Es werden nur die Altersgruppen aufgelistet, die Ihre Mitgliedschaft abdeckt. Hat Ihr Login keine Go-Mitgliedschaft, ist die Bibliothek leer
+- Einige Videos sind nur für bestimmte Mitgliedschaftsstufen verfügbar. Videos, die in Ihrer Mitgliedschaft nicht enthalten sind, werden aus der Lektion ausgelassen
 
 ## Inhalte herunterladen und abspielen
 
-Wenn Sie einen Ordner mit abspielbaren Dateien wählen (oder eine einzelne Datei), zeigt FreePlay den Titel des Inhalts mit einem Titelbild und zwei Möglichkeiten:
+Wenn Sie einen Ordner auswählen, der abspielbare Dateien enthält (oder eine einzelne Datei), zeigt FreePlay den Inhaltstitel mit einem Titelbild und zwei Optionen an:
 
-- **Herunterladen**: Speichert alle Dateien zuerst auf dem Fernseher, sodass die Wiedergabe nicht vom WLAN abhängt. Ein Fortschrittsbalken füllt sich, während jede Datei gespeichert wird. Ist er fertig, erscheint die Schaltfläche **Start** mit einem Play-Symbol. Drücken Sie **Auswählen**, um die Wiedergabe zu starten.
-- **Streamen**: Startet die Wiedergabe sofort über das Internet, ohne die Dateien zu speichern.
+- **Herunterladen** – Speichert zuerst alle Dateien auf dem Fernseher, sodass die Wiedergabe nicht von WLAN abhängt. Ein Fortschrittsbalken füllt sich, während jede Datei gespeichert wird. Wenn er vollständig ist, erscheint die Schaltfläche **Starten** mit einem Play-Symbol. Drücken Sie **Auswählen**, um die Wiedergabe zu beginnen
+- **Streamen** – Startet die Wiedergabe sofort über das Internet, ohne die Dateien zu speichern
 
 :::tip
-Laden Sie Lektionen vor dem Sonntagmorgen herunter, solange Ihr Gebäude eine starke Internetverbindung hat. Heruntergeladene Inhalte lassen sich offline abspielen. Wenn Sie sie später erneut abspielen, starten sie sofort, ohne erneut heruntergeladen zu werden.
+Laden Sie Lektionen vor dem Sonntagmorgen herunter, solange Ihr Gebäude eine starke Internetverbindung hat. Nach dem Herunterladen lässt sich der Inhalt offline abspielen, und wenn Sie ihn später erneut abspielen, lädt er sofort, ohne erneut heruntergeladen zu werden.
 :::
 
 ## Downloads verwalten
 
-Öffnen Sie unten in der Seitenleiste **Einstellungen** und wählen Sie **Downloads**, um alles zu sehen, was auf diesem Fernseher gespeichert ist:
+Öffnen Sie **Einstellungen** unten in der Seitenleiste und wählen Sie dann **Downloads**, um alles anzuzeigen, was auf diesem Fernseher gespeichert ist:
 
-- Wählen Sie einen Download aus, um ihn abzuspielen.
-- Markieren Sie einen Download und wählen Sie das Löschsymbol in seiner Ecke, um ihn zu entfernen und Speicherplatz freizugeben.
+- Wählen Sie einen Download aus, um ihn abzuspielen
+- Markieren Sie einen Download und wählen Sie das Löschsymbol in seiner Ecke, um ihn zu entfernen und Speicherplatz freizugeben
 
-Zeigt der Bildschirm **Noch keine Downloads**, ist auf diesem Fernseher nichts gespeichert.
+Wenn auf dem Bildschirm **Noch keine Downloads** steht, wurde auf diesem Fernseher nichts gespeichert.
 
 ## Anbieterinhalte abspielen
 
-Diese Steuerelemente sind während der Wiedergabe verfügbar:
+Verwenden Sie während der Wiedergabe diese Steuerungen:
 
-- **Pfeil rechts**: Nächstes Element
-- **Pfeil links**: Vorheriges Element
-- **Auswählen / Wiedergabe-Pause**: Video pausieren oder fortsetzen
-- **Pfeil oben**: Die Nachrichtenauswahl öffnen, um zu einem bestimmten Element zu springen
-- **Zurück**: Zurück zum Inhaltsbrowser
+- **Rechtspfeil** – Nächstes Element
+- **Linkspfeil** – Vorheriges Element
+- **Auswählen / Play-Pause** – Video anhalten oder fortsetzen
+- **Aufwärtspfeil** – Öffnet die Nachrichtenauswahl, um zu einem bestimmten Element zu springen
+- **Zurück** – Beendet die Wiedergabe und kehrt zum Inhaltsbrowser zurück
 
-Wenn Sie den Player verlassen, kehren Sie zum Inhaltsbrowser auf der obersten Ebene des aktuellen Anbieters zurück.
+Wenn Sie den Player beenden, kehren Sie zum Inhaltsbrowser auf der obersten Ebene des aktuellen Anbieters zurück.
 
 :::info
-Eine vollständige Übersicht aller Player-Steuerelemente finden Sie unter [Inhalte abspielen](./playing-content.md).
+Eine vollständige Referenz aller Player-Steuerungen finden Sie unter [Inhalte abspielen](./playing-content.md).
 :::
 
 ## Zwischen Anbietern wechseln
 
-Verbundene Anbieter erscheinen in der Seitenleiste links unter der Überschrift **Durchsuchen** als Einträge. So wechseln Sie zu einem anderen Anbieter:
+Verbundene Anbieter erscheinen als Einträge unter der Überschrift **Durchsuchen** in der Seitenleiste links. Um zu einem anderen Anbieter zu wechseln:
 
-1. Drücken Sie auf der Fernbedienung die Pfeiltaste **links**, um die Seitenleiste zu öffnen.
-2. Wählen Sie den Anbieter, den Sie durchsuchen möchten.
-3. Der Inhaltsbrowser lädt die Bibliothek dieses Anbieters neu.
+1. Drücken Sie auf Ihrer Fernbedienung den **Linkspfeil**, um die Seitenleiste zu öffnen
+2. Wählen Sie den Anbieter aus, dessen Bibliothek Sie durchsuchen möchten
+3. Der Inhaltsbrowser aktualisiert sich und zeigt die Bibliothek dieses Anbieters an
 
 :::warning
-Wenn bei einem Ordner „Keine Inhalte verfügbar“ steht, enthält der Anbieter auf dieser Ebene keine Elemente. Wechseln Sie zu einem anderen Ordner oder schauen Sie später noch einmal nach.
+Wenn ein Ordner „Keine Inhalte verfügbar“ anzeigt, hat der Anbieter auf dieser Ebene keine Elemente. Navigieren Sie zu einem anderen Ordner oder schauen Sie später noch einmal nach.
 :::

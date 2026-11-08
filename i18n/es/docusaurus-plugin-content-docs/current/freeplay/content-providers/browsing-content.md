@@ -1,21 +1,21 @@
 ---
 title: "Explorar y descargar contenido"
-description: "Navega por la biblioteca de un proveedor conectado con el control de tu TV en FreePlay y descarga o transmite lecciones y videos para reproducirlos."
+description: "Navega por la biblioteca de un proveedor conectado con el control remoto de tu TV en FreePlay, y luego descarga o transmite lecciones y videos para reproducirlos."
 ---
 
 # Explorar y descargar contenido
 
 <div class="article-intro">
 
-Una vez que se ha conectado a un proveedor de contenido, puede explorar su biblioteca, descargar archivos y reproducirlos en su televisor. El explorador de contenido ofrece una cuadrícula visual de carpetas y archivos que se navega con el control remoto del televisor.
+Una vez que te hayas conectado a un proveedor de contenido, puedes explorar su biblioteca, descargar archivos y reproducirlos en tu TV. El explorador de contenido muestra una cuadrícula visual de carpetas y archivos que navegas con el control remoto de tu TV.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Conéctese al menos a un proveedor de contenido; consulte [Conectar con proveedores](./connecting-providers.md)
-- Tenga a mano el control remoto del televisor para navegar
+- Conéctate a al menos un proveedor de contenido -- consulta [Conectarse a proveedores](./connecting-providers.md)
+- Ten a mano el control remoto de tu TV para navegar
 
 </div>
 
@@ -23,73 +23,82 @@ Una vez que se ha conectado a un proveedor de contenido, puede explorar su bibli
 
 El explorador de contenido muestra los elementos en una cuadrícula de 3 columnas de tarjetas. Cada tarjeta muestra una imagen en miniatura y un título. Hay dos tipos de elementos:
 
-- **Carpetas**: se representan con una miniatura o un icono de carpeta. Seleccione una carpeta para ver su contenido.
-- **Archivos**: elementos multimedia individuales (videos o imágenes). Los archivos de video muestran un icono de reproducción sobre su miniatura.
+- **Carpetas**: Se representan con una miniatura o un ícono de carpeta. Selecciona una carpeta para ver su contenido.
+- **Archivos**: Elementos multimedia individuales (videos o imágenes). Los archivos de video muestran un ícono de reproducción superpuesto en su miniatura.
 
-El encabezado en la parte superior de la pantalla muestra el nombre de la carpeta actual, o el nombre del proveedor si está en el nivel raíz.
+El encabezado en la parte superior de la pantalla muestra el nombre de la carpeta actual o el nombre del proveedor si estás en el nivel raíz.
 
 ## Navegar por las carpetas
 
-1. Use el control direccional de su control remoto para resaltar una carpeta
-2. Presione **Seleccionar** para abrirla
+1. Usa la cruceta direccional del control remoto para resaltar una carpeta
+2. Presiona **Seleccionar** para abrirla
 3. El explorador carga el contenido de la carpeta, que puede incluir más carpetas o archivos reproducibles
-4. Presione **Atrás** en su control remoto para subir un nivel
+4. Presiona **Atrás** en el control remoto para subir un nivel
 
-Puede profundizar tanto como lo permita la estructura de contenido del proveedor. El explorador lleva la cuenta de la ruta de carpetas para que pueda volver atrás por cada nivel.
+Puedes avanzar hasta el nivel más profundo que permita la estructura de contenido del proveedor. El explorador lleva un registro de la ruta de carpetas para que puedas volver atrás por cada nivel.
 
 ## Explorar Lessons.church
 
-La biblioteca de [Lessons.church](../../lessons-church/index.md) está organizada igual que su sitio web. En el nivel superior verá dos carpetas:
+La biblioteca de [Lessons.church](../../lessons-church/index.md) está organizada de la misma manera que su sitio web. En el nivel superior verás dos carpetas:
 
-- **Lessons**: profundice por **programa**, luego por **estudio** y después por **lección**. Cada lección muestra después sus **venues**, que son versiones de la lección para un grupo de edad o un entorno en particular, como Preescolar o Primaria. Seleccione un venue para abrir la pantalla de descarga de esa versión de la lección
-- **Add-Ons**: videos y recursos adicionales, agrupados por categoría
+- **Lessons**: Avanza por **programa**, luego por **estudio** y después por **lección**. Cada lección enumera sus **venues**, que son versiones de la lección para un grupo de edad o contexto particular, como Preescolar o Primaria. Selecciona un venue para abrir la pantalla de descarga de esa versión de la lección
+- **Add-Ons**: Videos y recursos adicionales, agrupados por categoría
 
-Presione **Atrás** en cualquier nivel para subir un paso.
+Presiona **Atrás** en cualquier nivel para subir un paso.
+
+## Explorar Go Curriculum
+
+Después de [iniciar sesión con tu cuenta de gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum abre sus grupos de edad, **Elementary** y **Preschool**. Avanza por grupo de edad, luego por colección y después por lección, y selecciona una lección para abrir su pantalla de descarga.
+
+Lo que ves depende de tu membresía de Go:
+
+- Solo aparecen los grupos de edad que cubre tu membresía. Si tu inicio de sesión no tiene una membresía de Go, la biblioteca estará vacía
+- Algunos videos solo están disponibles para ciertos niveles de membresía. Los videos que tu membresía no incluye se omiten de la lección
 
 ## Descargar y reproducir contenido
 
-Cuando selecciona una carpeta que contiene archivos reproducibles (o selecciona un archivo individual), FreePlay muestra el título del contenido con una imagen de portada y dos opciones:
+Cuando seleccionas una carpeta que contiene archivos reproducibles (o seleccionas un archivo individual), FreePlay muestra el título del contenido con una imagen de portada y dos opciones:
 
-- **Descargar**: guarda todos los archivos en el televisor primero, para que la reproducción no dependa del Wi-Fi. Una barra de progreso se llena a medida que se guarda cada archivo. Cuando termina, aparece el botón **Iniciar** con un icono de reproducción. Presione **Seleccionar** para comenzar la reproducción
-- **Transmitir**: empieza a reproducir de inmediato por internet sin guardar los archivos
+- **Descargar**: Guarda todos los archivos en el TV primero, para que la reproducción no dependa del Wi-Fi. Una barra de progreso se llena a medida que se guarda cada archivo. Cuando termina, aparece el botón **Iniciar** con un ícono de reproducción. Presiona **Seleccionar** para comenzar la reproducción
+- **Transmitir**: Comienza a reproducir de inmediato por internet sin guardar los archivos
 
 :::tip
-Descargue las lecciones antes del domingo por la mañana, mientras su edificio tiene una conexión a internet buena. Una vez descargado, el contenido se reproduce sin conexión, y si lo vuelve a reproducir más adelante, carga al instante sin volver a descargarlo.
+Descarga las lecciones antes del domingo por la mañana, mientras tu edificio tenga una buena conexión a internet. Una vez descargado, el contenido se reproduce sin conexión, y si lo reproduces más tarde, se carga al instante sin volver a descargarlo.
 :::
 
 ## Administrar descargas
 
-Abra **Configuración** en la parte inferior de la barra lateral y seleccione **Descargas** para ver todo lo guardado en este televisor:
+Abre **Configuración** en la parte inferior de la barra lateral y luego selecciona **Descargas** para ver todo lo que se guardó en este TV:
 
-- Seleccione una descarga para reproducirla
-- Resalte una descarga y seleccione el icono de eliminar en su esquina para quitarla y liberar espacio
+- Selecciona una descarga para reproducirla
+- Resalta una descarga y selecciona el ícono de eliminar en su esquina para quitarla y liberar espacio de almacenamiento
 
-Si la pantalla dice **Aún no hay descargas**, no se ha guardado nada en este televisor.
+Si la pantalla dice **Aún no hay descargas**, significa que no se ha guardado nada en este TV.
 
-## Reproducir contenido de proveedores
+## Reproducir contenido del proveedor
 
-Use estos controles durante la reproducción:
+Usa estos controles durante la reproducción:
 
-- **Flecha derecha**: elemento siguiente
-- **Flecha izquierda**: elemento anterior
-- **Seleccionar / Reproducir-Pausar**: pausar o reanudar el video
-- **Flecha arriba**: abrir el selector de mensajes para saltar a un elemento específico
-- **Atrás**: salir al explorador de contenido
+- **Flecha derecha**: Elemento siguiente
+- **Flecha izquierda**: Elemento anterior
+- **Seleccionar / Reproducir-Pausa**: Pausa o reanuda el video
+- **Flecha arriba**: Abre el selector de mensajes para saltar a un elemento específico
+- **Atrás**: Sale al explorador de contenido
 
-Cuando sale del reproductor, vuelve al explorador de contenido en el nivel raíz del proveedor actual.
+Cuando sales del reproductor, vuelves al explorador de contenido en el nivel raíz del proveedor actual.
 
 :::info
-Para ver una referencia completa de todos los controles del reproductor, consulte [Reproducir contenido](./playing-content.md).
+Para ver una referencia completa de todos los controles del reproductor, consulta [Reproducir contenido](./playing-content.md).
 :::
 
-## Cambiar de proveedor
+## Cambiar entre proveedores
 
-Los proveedores conectados aparecen como elementos bajo el encabezado **Explorar** en la barra lateral izquierda. Para cambiar a un proveedor diferente:
+Los proveedores conectados aparecen como elementos bajo el encabezado **Explorar** en la barra lateral izquierda. Para cambiar a otro proveedor:
 
-1. Presione la flecha **Izquierda** de su control remoto para expandir la barra lateral
-2. Seleccione el proveedor que desea explorar
+1. Presiona la flecha **Izquierda** en el control remoto para expandir la barra lateral
+2. Selecciona el proveedor que quieres explorar
 3. El explorador de contenido se actualiza con la biblioteca de ese proveedor
 
 :::warning
-Si una carpeta muestra "No hay contenido disponible", el proveedor no tiene elementos en ese nivel. Intente navegar a otra carpeta o vuelva a consultar más tarde.
+Si una carpeta muestra "No hay contenido disponible", el proveedor no tiene elementos en ese nivel. Intenta navegar a otra carpeta o vuelve a revisar más tarde.
 :::

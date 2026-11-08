@@ -1,150 +1,206 @@
 ---
-title: "Kusebentisa Umhleli Wekhasi"
-description: "Setela umhleleli wekhasi ku-B1 Admin ngekwengeta tigaba netinhlobo, kulungisa kwato, kubukwa ngefoni, nekushicilela imisebenti. Ihlanganisa ne-undo nelandvo lekuhleleka."
+title: "Kusebenta Umhleli Wekhasi"
+description: "Setha umhleli wekhasi ku-B1 Admin ngekungeta tingingo netindzawo, kutfola kubukeka kwazo, kubona kubukeka kufoni, nekushicilela emaseketulo. Iphindza futsi ikhombise kuhlehlisa tinguquko nemlandvo wetinguquko."
 ---
 
-# Kusebentisa Umhleli Wekhasi
+# Kusebenta Umhleli Wekhasi
 
 <div class="article-intro">
 
-Umhleli wekhasi we-B1 sisakhi se-visual drag-and-drop lesikuvumela kutsi wakle emakhasi eliwebhusayithi lelibandla lakho ngaphandle kwekubhala noma nguyiphi ikhodi. Ungangeta tigaba naticenye tekucuketfwa, uhlele tinhlobo tekubukeka, ubuke umsebenti wakho, futsi ubuyisele emuva tinshintjo -- konkhe kusuka ku-browser yakho.
+Umhleli wekhasi le-B1 ngumakhi lolukhona lokuvumela kutsi wakhe emakhasi ewebhusayithi yakho yebandla ngaphandle kokubhala ikhodi. Ungangeta tingingo netinkhatsi tekuqukatfwa, ulungise tindlela tekubukeka, ubone kubukeka kwemsebenti wakho, nekuhlehlisa tinguquko -- konkhe lokusuka ngaphakathi kwesiphequluli sakho.
 
 </div>
 
-<div class="prereqs">
-<h4>Before You Begin</h4>
+## Ividiyo Yekufundzisa
 
-- Cedza [Initial Setup](./initial-setup.md) kute uphetse kulungisa liwebhusayithi lakho
-- Dala likhasi lelilodvwa nakukanyeti ku- [Managing Pages](./managing-pages.md)
-- Udzinga imvumo ye- **content.edit** kute ufinyelele kumhleli
+<YouTube id="m2B_JxmfFm4" title="Kuhlela Emakhasi Nekuhamba Ku-B1" next="Kuxhuma Idomeni Lencuntsekile Ku-B1" nextUrl="/docs/b1-admin/settings/custom-domain" />
+
+<div class="prereqs">
+<h4>Ngaphambi Kokuqala</h4>
+
+- Qedzela [Initial Setup](./initial-setup.md) ukuze websayithi yakho isetfwe
+- Dala nasikhasi linye kuya ku-[Managing Pages](./managing-pages.md)
+- Udzinga imvume ye-**content.edit** ukuze ufinyelele umhleli
 
 </div>
 
 ## Kuvula Umhleli
 
-1. Ku-B1 Admin, chofota **Website** kumenyu wangesencele.
-2. Tfola likhasi lofuna kulihlela kulitafula le-Pages bese uchofota **Edit**.
+1. Ku-B1 Admin, vula [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ibha yekufuna ngephezulu kwesobunxele), nweba **Website**, bese uchofoza **Pages**.
+2. Fica ikhasi lolifuna kuhlela etafuleni le-Pages bese uchofoza **Edit Content**.
 
-Umhleli uvuleka kusimo se-full-screen. Iphaneli yangesencele ikhombisa sakhiwo sekhasi lakho kanye naticenye tekucuketfwa letikhona; indzawo lesekudla ikhombisa kubukisa lokuphilako kwelikhasi lakho.
+Umhleli uvula ngesikhala sonkhe sesikrini. Ipanele lesobunxele likhombisa sakhiwo sekhasi lakho netindzawo letitfolakalako; indzawo ephakathi ikhombisa kubukeka lokuphilako kwekhasi lakho.
 
 :::info
-Umhleli uhlala ubonisa ku-light mode, kungakhatsaliseki simo se-theme ye-B1 Admin yakho. Loku kucinisekisa kutsi kubukiswa lokuphilako kuhambelana ncamashi nendlela likhasi lakho leliyakubukeka ngayo kutivakashi telisayithi.
+Umhleli uhlala uvela ngemodi yekukhanya, nanyana sethingi yakho yetimo le-B1 Admin ingenjalo, futsi usebentisa emagama ekhanda nemagama emtfwalo lowakhetsa ku-[Appearance](./appearance.md). Loku kuciniseka kutsi kubukeka kwekhasi kufana nalokuseceleni kwebavakashi bewebhusayithi.
 :::
 
-## Sakhiwo Sekhasi: Tigaba Naticenye
+## Sakhiwo Lekhasi: Tingingo Netindzawo
 
-Likhasi ngalinye lakhiwe ngemazinga lamabili:
+Ikhasi ngalinye lakhiwe ngemazinga lamabili:
 
-- **Sections** -- Tinhlaka letikhulu letehlukanisa likhasi lakho tibe tigaba letihamba emgceleni (sibonelo, sigaba se-hero, incenye yekucuketfwa, nome umgceletane wekhwaba). Likhasi ngalinye kufanele libe ne-section linye kucala ngaphambi kwekutsi ungete kucuketfwa.
-- **Elements** -- Ticenye ngatinye tekucuketfwa letifakwe ngekhatsi kwesigaba, njengembhalo, titfombe, tinkinobho, emakhadi, emafomu, kanye nemakhalendha.
+- **Tingingo (Sections)** -- Titsiya letiphezulu letihlukanisa ikhasi lakho ibe tibhande letingetulu nasezansi (njengesigaba sekuqala, sakhiwo sekuqukatfwa, noma sitsitsa sekuphetsa). Ikhasi ngalinye kufanele libe nengingo leyodvwa ngaphambi kwekutsi ungeta lokuqukatfwa.
+- **Tindzawo (Elements)** -- Tincenye letihlukene tekuqukatfwa letibekwe ngaphakathi kwengingo, njengetemtsetfo, tifanekiso, tinkinobho, tikhadi, emafomu, nemakhalenda.
 
-### Kungeta Sigaba
+### Kwengeta Ingingo
 
-1. Chofota **Add Section** (nome inkinobho le- **+** engetulu kwephaneli yangesencele).
+1. Chofoza **Add Section** (noma inkinobho **+** ngephezulu kwepanele lesobunxele).
 2. Khetsa indlela yekucala:
-   - **From a template** — hamba emtapweni wema-template esigaba lahlelwe ngetigaba (Hero, About, Services, Giving, njll.) bese uchofota lelinye kute ulingenise njengesigaba lesesihlotjisiwe ngalokugcwele futsi lesisagcwalisiwe. Ungahlela konkhe ngemuva kwekutsi kungetiwe.
-   - **Blank section** — khetsa sakhiwo se-koloma (linye, tikoloma letimbili, letintsatfu, njll.) bese wakha kusuka ekucaleni.
-3. Sigaba lesisha sivela kubukiso. Sichofote kute usikhetse futsi ulungise umbala waso wesizinda, i-padding, kanye naletinye tinketfo tekubukeka.
+   - **From a template** -- Hlola ilabhulali yetimo tengingo ehlelwe ngetigaba (Hero, About, Services, Giving, njll.) bese uchofoza lenye kuze iyengetwe njengengingo lehlobisiwe ngokuphelele. Ungakulungisa konkhe ngemuva kwekutsi iyengetwe.
+   - **Blank section** -- Khetsa sakhiwo sekholomu (sinye, sibili, setintsatfu, njll.) bese wakha kusukela ekuqaleni.
+3. Ingingo lenmatsha itfolakala kutfoloko. Chofoza kuyo kuyikhetsa bese ucusa umbala wayo wemuva, kugcwala, nanoma yiphi enye imikhetsho yemimo.
 
-### Kungeta Ticenye Esigabeni
+### Kushintja Sakhiwo Sengingo
 
-1. Chofota ngekhatsi kwesigaba kubukiso kute usikhetse.
-2. Chofota **Add Content** bese ukhetsa luhlobo lwencenye kuluhlu:
-   - **Text** -- Tihloko, indzima, kanye nembhalo lohlotjisiwe
-   - **Image** -- Layisha nome ukhomba sitfombe
-   - **Button** -- Linki lelingachofotwa lelicelela sento (call-to-action)
-   - **Card** -- Sitfombe lesinesihloko nesichazo
-   - **Form** -- Faka [ifomu](../forms/creating-forms.md) ngco kulikhasi
-   - **Calendar** -- Khombisa likhalenda letehlakalo
-   - **FAQ** -- Ticenye temibuto nemiphendvulo yesakhiwo se-accordion
-   - **Video** -- Faka vidiyo nge-URL
-   - **Groups Browser** -- Direkthri lengahlungeka yato tonkhe ticgele telibandla, lenekusesha lokukhetsekile, sihlungi setigaba, kanye nesihlungi setilebula
-   - **Icon Feature** -- I-icon lenesihloko nesichazo lesifisha, yekukhombisa tici nome imisebenti yekukhonta
-   - **Gallery** -- Uhlu lwetitfombe letinyenti nome indlela ye-masonry layout
-   - **Testimonial** -- Buciniso lobubodvwa nome lobunyenti nekubunemibhalo negama lombhali, sikhundla, kanye nesitfombe
-   - **Social Icons** -- Ema-icon lakhonjiwe kuma-akhawunti emedia yenhlalonhlangano yelibandla lakho
-   - **Countdown** -- Sikhatsi lesibalako sesehla kuya kulilanga nome sikhatsi senkonzo yeviki
-   - **Stats** -- Umgca wemanani lamakhulu anemilebula (emalunga, iminyaka, emakhampasi)
-   - **Campaign Progress** -- Bha lengeva yenchubeko lephilako yemkhankaso wekunikela, lekhombisa sitotali lesicoshiwe kuya enhlosweni yesitfundvo
-   - **Staff Grid** -- Emakhadi etitfombe temalunga esicgele; sicgele kufanele sibe ne-inketfo yaso ye **public roster** ivuliwe
-   - **Service Times** -- Luhlu lwesikhatsi senkonzo temakhampasi akho, luchotshwa ngekutentekela kusuka kulungiselelo lwe-attendance
-   - **Sermons** -- Umtapo wakho wetinkulumo, njengembukisi lophelele nome indlela ye-grid, luhlu, nome sakhiwo se-featured-latest
-3. Lungisa incenye ngekusebentisa iphaneli yetilungiselelo levelako.
+Usewakhe ingingo kodvwa ufuna sakhiwo lehlukile? Sebentisa sishintji sesakhiwo kuleyo ngingo kuze usishintjele kulokunye lokukhetsiwe kulilabhulali, usagcina lokuqukatfwa nemitfombe yakho lekhona.
 
-### Kuhlela Kabusha Kucuketfwa
+### Kungeta Tindzawo Engingeni
 
-Dvonsa tigaba nome ticenye ngekusebentisa i-icon yekubamba (emachashazi lasitfupha) ngesencele setintfo ngasinye kute utihlele kabusha. Ungadvonsa ticenye ngekhatsi kwesigaba nome utihambise emkhatsini wetigaba.
+1. Chofoza ngaphakathi kwengingo ekutfoloko kuze uyikhetse.
+2. Chofoza **Add Content** bese ukhetsa luhlobo lwesakhi kuluhlu:
+   - **Text** -- Tihloko, tindzima, nemtfwalo wekubhala locebile
+   - **Image** -- Layisha noma unike lixhumanisi lesitfombe
+   - **Button** -- Lixhumanisi lelicofiwako lekucela lesenta
+   - **Card** -- Sitfombe nesihloko nencazelo
+   - **Form** -- Faka [sifomu](../forms/creating-forms.md) ngqo ekhasini. Uma sifomu linesithombe sesihloko ([header photo](../forms/creating-forms.md#adding-a-header-photo)), siyakhombisa ngenhla kwemibuzo
+   - **Calendar** -- Khombisa ikhalenda lemicimbi
+   - **FAQ** -- Tindzawo letinemibuzo nemphendvulo letibonakala njengetindzawo letivulekako
+   - **Video** -- Faka ividiyo ngelikheli
+   - **Groups Browser** -- Lidayrektri lelihlungiwe lemaqembu wonkhe ebandla, nesifuna lesikhethekile, sihlungo lesigaba, nesihlungo selilebula. Its **Layout** ingaba **Grid** (lokuzenzekelako) noma **Scrolling (automatic)** -- bona [Scrolling layouts](#scrolling-layouts)
+   - **Group List** -- Titeshi temaqembu wakho lavulekile, ngetulu kwekutsi kuphela emaqembu lanelilebula lelinikiwe. Its **Layout** ingaba **Grid** (lokuzenzekelako; kuze kube tintsatfu titeshi ngalinye umugca) noma **Scrolling (automatic)** -- bona [Scrolling layouts](#scrolling-layouts)
+   - **Icon Feature** -- Sithonjana nesihloko nencazelo lemfushane, yetimphawu tensimu noma temsebenti
+   - **Gallery** -- Sakhiwo lesinetitfombe letinyenti sigridi noma sicoshelwe
+   - **Testimonial** -- Tincoko letinyenti namagama lasebenti, indzima, nesithombe
+   - **Social Icons** -- Tithonjana letilinkiwe tetiprofayili temidlalo yetimitfumbo yebandla lakho: Facebook, Instagram, WhatsApp, YouTube, X, TikTok, Vimeo, nePodcast. Faka lixhumanisi lalinye nalinye lofuna kukhombisa; ku-**WhatsApp**, sebentisa lixhumanisi le-`https://wa.me/` nenombolo yakho noma lixhumanisi lekumemetela leliqembu
+   - **Countdown** -- Sikhalo lesibala ngemuva kwelusuku noma sikhatsi selikhonzo lesiphindzaphindzekako sesonto
+   - **Stats** -- Umugca wetinombolo letinkhulu netilebula (emalunga, iminyaka, emahhovisi)
+   - **Campaign Progress** -- Ibha yekuchubeka lephilako yemkhankaso wekunikela, lebonisa imali lepheleleke lesiyiphokelele ngenhloso yemnotfo
+   - **Staff Grid** -- Tikhadi temitfombe yetilungu temqembu; iqembu kufanele livulele khetsa lakhe le-**public roster**
+   - **Service Times** -- Sikhatsi sekukhonta semabandla akho, lesitfolwa ngekuzenzekelako kusukela ekusetfweni kwekuvakasha
+   - **Sermons** -- Ilabhulali yakho yetinkhulumo, njengesisekeli lesigcwele, noma sakhiwo segridi, lutfo, noma sakamuva lesikhethekile
+   - **Map** -- Imephu lefakiwe lemaphakathi nelikheli lebandla lakho
+   - **Table** -- Gridi lelula yemigca nemakholomu yelwati letinemigca
+   - **Text with Photo** -- Umbhalo nesithombe ngasecaleni kwelinye
+   - **Logo** -- Logo yebandla lakho, itfolwa kusuka ku-[Appearance](./appearance.md)
+   - **Live Stream** -- Umdlali wakho wekusakaza lokuphilako, lofakiwe ngqo ekhasini
+   - **Podcast** -- Lutfo lweticigcino letitfolwa kusuka kulikheli le-RSS lepodcast yangaphandle lolinikeza wena, linemisetelo yenombolo yeticigcino letikhombisiwako nekutsi kufanele kukhonjiswe yini emadethi netincazelo. Ngalinye ligcino etikhasini letiphilako linemdlali womsindvo ne**Download** lixhumanisi lelonga lifayela lemsindvo welicigcino ngaphansi kwelitsi lelicigcino. Loku kuhlose kukhombisa noma yiliphi lipodcast ekhasini lakho; kuze upapashe tinkhulumo takho njengepodcast, bona [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) esikhundleni salokho.
+   - **Donation** -- Inkinobho yekunikela noma sifomu sekunikela lesifakiwe
+   - **HTML** -- I-HTML yakho lengahlelwanga, yekusebentisa lokuthuthukile, njengekufaka i-widget yemuntfu wesitsatfu (bona [Using the HTML element](#using-the-html-element))
+   - **iFrame** -- Faka lokuqukatfwa lokuphuma ngelikheli
+3. Lungisa indzawo usebentisa ipanele lemisetelo lelivela.
 
-## Kuhlela Kubukeka Kwekhasi Lakho
+### Kusebentisa Indzawo ye-HTML
 
-### Tinhlobo Tesigaba
+Indzawo ye-**HTML** ine mabhokisi lamabili:
 
-Chofota noma ngusiphi sigaba kute uvule iphaneli yaso yekubukeka. Ungasimisa:
+- **HTML Content** -- Markup lobonakala ekhasini. Noma yithegi `<script>` lofaka lapha itawusebenta ewebhusayithini yakho lephilako.
+- **JavaScript (exclude script tag)** -- Ikhodi ye-script lesebentako ikhasi lilayisha. Ungaphindza unamathisele umfaki wemsakhi wemphakeli nemathegi ayo e`<script>`, kutsi isebente kuwebhusayithi lephilako.
 
-- **Background** -- Umbala locinile, i-gradient, nome sitfombe. Nakusetjentiswa sitfombe njengesizinda, sikhetsi se- **Focal Point** sikuvumela kutsi uchofote kute usimise kutsi yincenye yiphi yesitfombe lehlala emkhatsini nakukhula sigaba, futsi inketfo ye- **Overlay** yembala ikuvumela kutsi ungete umbala longacondzeki kancane phezu kwesitfombe kute kutfutfukiswe kufundzeka kwembhalo.
-- **Padding** -- Indzawo lengetulu nasengasi ngekhatsi kwesigaba
-- **Width** -- Bubanti lobugcwele nome lobubotjelwe/lobungekhatsi
-- **Dividers** -- Tehlukanisi tesakhiwo tekuhlobisa (liphaphe, kutsengama, kugoba, unxantathu, nakunye lokunyenti) engoshweni lengetulu nome lengasi yesigaba, letinemibala, buhlolo, nemakhono ekugucula
+Uma unamathisela ikheli lewebhu kuphela (njengelikheli lesitfombe) kubhokisi le-JavaScript, libhokisi liba bomvu bese kuvela sixwayiso lesitsi *"This is a web address, not JavaScript."* Ikheli lilodvwa kulelo bhokisi alenti lutfo. Kuze ukhombise sitfombe, sebentisa indzawo ye-**Image** noma ufake `<img src="...">` ku-**HTML Content**.
 
-### Tinhlobo Tencenye
+### Kusebentisa Indzawo Yekhalenda {#using-the-calendar-element}
 
-Chofota noma ngayiphi incenye kute uvule iphaneli yayo yekubukeka. Tinketfo letivamile tifaka ekhatsi sayizi yembhalo, umbala, kuhlelwa, i-margin, ne-padding. Kutitfombe, ungasimisa alt text kanye netindzawo tetilinki (link targets).
+Indzawo ye-**Calendar** ikhombisa tigcigcino kusuka kenye yemakhalenda akho:
 
-### I-CSS Lekhetsile
+1. Ngaphansi kwe-**Select**, khetsa **Group Calendar** (tigcigcino temqembu lilodvwa -- luhlu lukhombisa emaqembu lolulilungu lawo) noma **Curated Calendar** (ikhalenda lolakhile ngaphansi kwe-**Calendars**; bona [Curated Calendar](../calendars/curated-calendar.md)).
+2. Ngaphansi kwe-**Select Calendar**, khetsa liqembu noma ikhalenda.
+3. Ngaphansi kwe-**Display**, khetsa indlela yekukhombisa:
+   - **Month calendar** -- Gridi yenyanga bavakashi labangayicheka ngemasayidi. Ngalinye ligcigcigo linemibala ngekweliqembu lalo, kotsi tigcigcino temaqembu tibe nemibala lefanako kuwo wonkhe emakhalenda. B1 ikhetsa imibala ngekuzenzekelako; kute lapho kudzingeka kutsi ulungise lutfo.
+   - **Upcoming events** -- Gridi yetikhasi letingu-12 letilandzelako, kanye nekutsi ligcigcigo lelipheta litfolakala kanye kanye ngelusuku lwalo lolulandzelako. Ikhasi ngalinye likhombisa sitfombe secigcigo (noma sihloko saso ngemibala lemnyama yetimo takho lapho lingenaso sitfombe), ibheji yelusuku, lusuku nesikhatsi, nemugca wekucala wencazelo. Inkinobho ye-**Subscribe** lephezulu kwetikhasi ivumela bavakashi kutsi bakopishe lixhumanisi le-ICS lekhalenda noma balilandse. Sethingi ye-**Layout** itfolakala kulesi sikhombisi: **Grid** (lokuzenzekelako) noma **Scrolling (automatic)**, lekhombisa tikhasi emugceni lodvwa lohamba ngekwawo (bona [Scrolling layouts](#scrolling-layouts)). Ngekhalenda lelakhethekile, vula sethingi ye-**Group badge** kuze kukhonjiswe libito leliqembu lecigcigo ngekona lekhona lekukhanya ngetulu kwesikhwama sekhasi, ngemibala yekhalenda yaleliqembu. Tigcigcigo temaqembu lagcinwe noma letiyimfihlo akatfoli libito.
+4. Kuze ukhombise tigcigcigo letimbalwa kuphela, bhala ithegi ku-**Only events tagged** -- njenge `youth`. Kuvela kuphela tigcigcigo lamathegi awo **Tags** aqukatse lelo gama. Shiya lelibhokisi lingenalutfo kuze kukhonjiswe tonkhe tigcigcigo. Amathegi asetfwa ngalinye ligcigcigo; bona [Adding and Editing Events](../calendars/creating-calendars.md#adding-and-editing-events).
 
-Ekuhleleni lokutfutfukile, sigaba nencenye ngayinye inesikhala se- **Custom CSS** lapho ungabhala khona imitsetfo yakho ye-CSS. Lena ibotjelwe kuleyo ncenye, ngako ayisoze yatsintsa lokunye kwelikhasi ngaphandle kwekufuna kwakho.
+Kuso sonkhe lamabili emadisplei, kuchofoza ligcigcigo kuvula likhasi lalo lelicala ewebhusayithini yakho. Likhasi lecigcigo likhombisa sitfombe secigcigo, sihloko, lusuku nesikhatsi, nencazelo, kanye nebhokisi lelinetithi **When** (kuhlanganisa nendlela yekuphindvuselwa kwecigcigo lelipheta) ne**Where** (emagumbi labhukhishwe ngawo). Futsi linenkinobho ye-**Register for this Event** lapho kuvulwe kubhalisa, nelikheli le-**Add to my calendar** lelilanda ligcigcigo njengelifayela lekhalenda. Likhasi lakhiwe kutsi emasevha wekufuna akhombise lusuku nemininingwane yecigcigo emiphumeleni yawo. Emakhasi emicimbi avela emakhalendeni lakhethekile lakhonjiswa ekhasini lakho (emicimbini yetinyanga letisitfupha lelandzelako) futsi ayalotwa emapheni wesayithi wewebhusayithi yakho, kuze emasevha wekufuna ativeke.
+
+### Sakhiwo Lokuskrola {#scrolling-layouts}
+
+Sakhiwo se-**Scrolling (automatic)** ku-**Groups Browser**, ku-**Group List**, nasekukhombisweni kwe-**Upcoming events** kwe-Calendar element, libeka tikhasi emugceni kunekutsi libe ligridi. Emafonini ikhasi ngalinye ligcwalisa umugca wonkhe, kuyoba ngekutsi kumakhompiyutha tikhasi letimbili tinwebe ngekucaleni. Lapho kunetikhasi letinyenti kunaleto lingenela, umugca:
+
+- Uhamba ngekhasi linye phambili cishe njalo ngemasekhondi lamane, uye ekulandzelako, bese ubuyela ekucaleni ngemuva kwaleyo lekugcina.
+- Uyima ngesikhatsi bavakashi bahamba ngetulu kwawo, bawuthinta, noma bawungena ngetab, bese uphindza ngemasekhondi lambalwa ngemuva kwaloko.
+- Ukhombisa umugca wemachaza ngaphansi, linye ngalinye lekhasi, lelikhasi lamanje limachaza lalo ligcwele. Bavakashi bangacofa imachaza kuze bayofika ekhasini lelikhethiwe.
+
+Kumadivayisi lasetfwe kutsi anciphise kunyakaza, umugca uhlala ungahambi, bavakashi babhadla bawuswayipha noma bawuskrola bona. Uma tonkhe tikhasi tinwebeka, umugca awuhambi futsi awukho machaza avela.
+
+### Kuhlela Kabusha Lokuqukatfwa
+
+Hudula tingingo noma tindzawo usebentisa sibambo lesifaniswa netinhlamvu letisitfupha esohlangothini lwesobunxele lweticoshwana ngasinye ukuze utishintjise kuhleleka. Ungadudulela tindzawo engingeni lenye noma uyidlulisele kutingingo letehlukene.
+
+## Kulungisa Kubukeka Kwekhasi Lakho
+
+### Tindlela Tengingo
+
+Chofoza noma yiphi ingingo kuvula ipanele layo lemimo. Ungasetsa:
+
+- **Background** -- Umbala lolingana, umbala lotfolwa lotsi nekukhula, noma sitfombe. Uma usebentisa sitfombe njengemuva, sikhetsi se-**Focal Point** sikuvumela kutsi uchofoze kutsi ngusiphi sicoco sesitfombe lesihlala siphakathi ngesikhatsi ingingo ikhula, futsi sikhetsi se-**Overlay** sikuvumela kutsi wengete umbala lolumelako ngetulu kwesitfombe kuze kusitfutfukiswe kufundeka kwemagama.
+- **Padding** -- Sikhala lesingetulu nalesingentasi ngaphakathi kwengingo
+- **Width** -- Ububanti bonkhe noma lokuphakathi/lolulinganiselwe
+- **Dividers** -- Emabhodi lehlobisiwe ngemumo (emacembu, emacembu lacishe ahlangane, emavolovolo, netinye) ngetulu noma ngasezansi kwengingo, anemibala, abukhulu, netikhetso tekuguculwa
+
+### Tindlela Tindzawo
+
+Chofoza noma yiphi indzawo kuvula ipanele layo lemimo. Tikhetso letivamile tibandlule kusayizi wemagama, umbala, kuhlelwa, umkhawulo, nekugcwala. Kutifanekiso, ungasetsa umbhalo we-alt nemakheli lalapho lixhumanisi khona.
+
+### CSS Lencuntsekile
+
+Kulungisa lokujulile, ngalinye lengingo nendzawo linenkundla ye-**Custom CSS** lapho ungabhala khona imitsetfo yakho ye-CSS. Lemitsetfo ilinganiselwe kuleyo ndzawo, kotsi ngeke ithinte lokunye kwekhasi ngekungakhonti.
 
 :::tip
-Uma udzinga kusebentisa tinhlobo kulo lonkhe lisayithi lakho -- njenge fonti lekhetsile nome umbala lohlangene -- sebentisa tilungiselelo te- [Appearance](./appearance.md) esikhundleni se-custom CSS emakhasini lodvwa lodvwa.
+Uma udzinga kufaka imimo kuwo wonkhe lewebhusayithi yakho -- njengemagama lencuntsekile noma umbala lovamile -- sebentisa imisetfo ye-[Appearance](./appearance.md) esikhundleni se-CSS lencuntsekile kumakhasi lamanye.
 :::
 
-## Kubuka Likhasi Lakho
+## Kubona Kubukeka Kwekhasi Lakho
 
-Sebentisa tilawuli tekubuka ku-toolbar kute uhlole kutsi likhasi lakho libukeka njani kusayizi yesikrini letehlukene:
+Sebentisa tilawulo tekubona kuleto ibha yemsebenti kuze uhlole kutsi ikhasi lakho libukeka kanjani ngetikhatsi temasayizi wesikrini lehlukene:
 
-- **Desktop** -- Kubuka kwe-browser kobubanti lobugcwele
-- **Mobile** -- Kubuka kwesayizi yefoni lencane
+- **Desktop** -- Kubukeka kwesiphequluli lesigcwele ububanti
+- **Mobile** -- Kubukeka kwefoni lelincane
 
-Chofota **Preview** kute uvule inguqulo lephilako yelikhasi kuthebhu lensha ye-browser, ncamashi njengobe tivakashi tiyakulibona.
+Emafonini, tikholomu tesigaba sinye tiyakhomba etulu nasezansi kwelinye sigcwele ububanti, uma ungakhetsanga **Mobile Width** kuto kusethingi yemugca. Lutfo lweticigcino netipodcast nalo lubeka umbhalo wetigcigo ngaphansi kwesithombe sawo emafoneni.
 
-## Kubuyisela Emuva Tinshintjo
+Kuze ubone ikhasi lephilako njengalokubonwa bavakashi, buyela kulutfo lwemakhasi bese uchofoza indlela yekhasi. Iyavulwa ethebhu lensha yesiphequluli.
 
-Umhleli ulandzelela umlandvo wakho wekuhlela ngekutentekela. Sebentisa emankinobho e-toolbar nome emakhono ekhibhodi kute uhambe:
+## Kuhlola Kufinyeleleka
 
-- **Undo** (Ctrl+Z / Cmd+Z) -- Buyisela emuva sento sakho sekugcina
-- **Redo** (Ctrl+Y / Cmd+Y) -- Sebentisa kabusha sento lesibuyiselwe emuva
+Chofoza sithonjana se-**Accessibility** kuleto ibha yemsebenti kuze wente kuhlolwa lokusheshako kwetinkinga letivamile -- tifanekiso letingenalo umbhalo we-alt, kukhanya lokuphansi kwemibala, noma tihloko letingalandzelani kuhleleka. Ngalinye sinkinga sixhuma ngqo nendzawo ledzinga kunakwa, kuze uyilungise khona.
 
-Ungakwati futsi kubuyisela likhasi esimeni salo sangaphambilini. Chofota **History** ku-toolbar kute ubone luhlu lwetimo letigciniwe letinetichazo, bese uchofota noma ngasiphi sento kute ubuyisele kuleso sikhatsi.
+## Kuhlehlisa Tinguquko
+
+Umhleli ulandzela umlandvo wekuhlela ngekuzenzekelako. Sebentisa tinkinobho letisebenta ebhodleni noma tinkinobho tekutfutfukisa kuze uhambe:
+
+- **Undo** (Ctrl+Z / Cmd+Z) -- Buyisela sencumo sakho lesiphelile emuva
+- **Redo** (Ctrl+Shift+Z noma Ctrl+Y / Cmd+Shift+Z) -- Phindzela sencumo lesihlehliswe
+
+Ungabuyela futsi ekhasini kulokusindzisiwe ngaphambilini. Chofoza **View history** kuleto ibha yemsebenti kuze ubone luhlu lwemfanekiso lolugciniwe ngetincazelo, bese uchofoza noma yiliphi ligama kuze ubuyele kuleyo ndzawo.
 
 :::warning
-Kubuyisela isimo (snapshot) kutsatsela kucuketfwa kwelikhasi lakho lwanyalo ngenguqulo yaleso sikhatsi. Loku akukwati kubuyiselwa nge-undo lejwayelekile. Gcina isimo sesimo sakho sanyalo ngaphambi kwekubuyisela lesendzala uma ufuna kuhlala unenketfo yekubuyela emuva.
+Kubuyisela imfanekiso kushintja lokuqukatfwa kwakho lwamanje ngalokuvela kumfanekiso. Loku ngeke kuhlehliswe ngenkinobho yekuhlehlisa lejwayelekile. Gcina imfanekiso yalokwamanje ngaphambi kokubuyisela lendala uma ufuna kuba nekutsi ubuyele kulokwamanje.
 :::
 
 ## Kugcina Nekushicilela
 
-Tinshintjo tiyagcinwa ngekutentekela njengobe usebenta. Sikhombisi sesimo ku-toolbar sikhombisa kutsi tinshintjo takho sekugciniwe yini.
+Tinguquko tigcinwa ngekuzenzekelako lapho usebenta. Sikhombisi sesimo kuleto ibha yemsebenti sikhombisa kutsi tinguquko takho tigcinwe yini.
 
-### Simo Se-Draft Nese-Published
+### Simo Lesidrafti Nelesishicilelwe
 
-Emakhasi angaba nesimo se- **published**, lesilawula kutsi tivakashi tibona nini tinshintjo takho. I-toolbar ikhombisa i-chip yesimo lekhombisa simo lesikhona:
+Emakhasi angaba nesimo se-**published**, lesilawula nini bavakashi batfola tinguquko takho. Ibha yemsebenti ikhombisa ithegi lesimo lesikhona:
 
-- **Live on Save** -- Likhasi alisebentisi luhlelo lwekushicilela. Lutjintjo ngalunye logciniwe luyahamba ngco. Loku kujwayelekile emakhasini lamasha.
-- **Unpublished Changes** -- Likhasi selike lashicilelwa ngaphambilini, kodvwa wentile tinshintjo kusukela ekushicilelweni kokugcina. Tivakashi tisabona inguqulo leyayishicilelwe ngaphambilini.
-- **Published** -- Likhasi liyaphila futsi kucuketfwa kwakho lokugciniwe kuyafana naloko tivakashi letikubonako.
+- **Live on save** -- Ikhasi alisebentisi inkambu yekushicilela. Ngalokugcinwa ngalinye kuyavela kwasebenta ngekushesha. Lokuzenzekelako emakhasini lamasha.
+- **Unpublished changes** -- Ikhasi sewashicilelwa ngaphambilini, kodvwa usenta tinguquko kusukela ekushicilelweni lokugcina. Bavakashi basabona inguquko lishicilelwe ngaphambilini.
+- **Published** -- Ikhasi liyasebenta futsi lokuqukatfwa lokugcinwe kuyafana nalokubonwa bavakashi.
 
-Kute ushicilele tinshintjo takho, chofota inkinobho le- **Publish** ku-toolbar. Likhasi liyahamba ngco ngalesikhatsi lesincane.
+Kuze ushicilele tinguquko takho, chofoza inkinobho ye-**Publish** kuleto ibha yemsebenti. Ikhasi liyavela kwasebenta ngekushesha.
 
-Kute ubuyisele enguqulweni yekugcina leyayishicilelwe ngaphandle kwekutsintsa loko tivakashi tikubonako, vula i-menyu ye-overflow (⋮) bese uchofota **Discard Changes**.
+Kuze ubuyele kunguquko lwekugcina lolushicilelwe ngaphandle kwekuthinta lokubonwa bavakashi, vula imenyu lenamachaza (⋮) bese uchofoza **Discard unpublished changes**.
 
-Kute utsatse likhasi lisuke ku-inthanethi ngalokuphelele, vula i-menyu ye-overflow bese uchofota **Unpublish**. Tivakashi atisayikuliboni lelo khasi kuze kubuye kushicilelwe futsi.
+Kuze uyeke kusebentisa inkambu yekushicilela, vula imenyu lenamachaza bese uchofoza **Turn off publishing**. Kuhlela kutawuvela kwasebenta ngekushesha futsi.
 
 :::tip
-Sebentisa luhlelo lwe-draft/publish nawufuna kulungisela likhasi -- sibonelo, semcimbi lotako -- bese ulenta libe liphilako ngesikhatsi lesifanele kuphela. Yakha bese ubuka likhasi, bese uchofote Publish nasewukulungele.
+Sebentisa inkambu yedrafti/yekushicilela uma ufuna kulungisa ikhasi -- njengelicigcigo lelisondzelako -- futsi ulenze liphila ngesikhatsi lesifanele kuphela. Akha bese ubona ikhasi, bese uchofoza Publish uma usulungile.
 :::
 
-## Imibhalo Lehlobene
+## Tindzatfo Letihlobene
 
-- [Managing Pages](./managing-pages.md) -- Dala emakhasi, misa ema-URL, futsi uphatse i-navigation yelisayithi
-- [Appearance](./appearance.md) -- Misa imibala, imibhalo, kanye ne-branding yelo lonkhe lisayithi
-- [Files](./files.md) -- Layisha titfombe nemibhalo kute utisebentise kumhleli
-- [Creating Forms](../forms/creating-forms.md) -- Yakha emafomu longawafaka emakhasini
+- [Managing Pages](./managing-pages.md) -- Dala emakhasi, setha emakheli, uphatse kuhamba kwewebhusayithi
+- [Appearance](./appearance.md) -- Setha imibala, emagama, nekubhalwa kwewebhusayithi yonkhe
+- [Files](./files.md) -- Layisha tifanekiso netincwadi kuze usebentise kumhleli
+- [Creating Forms](../forms/creating-forms.md) -- Akha emafomu ongawafaka emakhasini

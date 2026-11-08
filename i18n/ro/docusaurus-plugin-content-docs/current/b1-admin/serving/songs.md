@@ -1,98 +1,100 @@
 ---
 title: "Cântece"
-description: "Administrează cântările din B1 Admin: caută și adaugă piese, editează detaliile, atașează versuri ChordPro, aranjamente și audio pentru repetiții."
+description: "Gestionați biblioteca de cântece de laudă din B1 Admin: căutați și adăugați cântece, editați detaliile, atașați versuri ChordPro și aranjamente și încărcați audio pentru repetiții."
 ---
 
 # Cântece
 
 <div class="article-intro">
 
-Pagina Cântece gestionează biblioteca ta de cântări de închinare. Păstrează toate detaliile cântecelor, textele și aranjamentele într-un singur loc, astfel încât echipa de închinare să se poată pregăti cu ușurință pentru slujbele viitoare și să mențină un repertoriu coerent.
+Pagina Cântece gestionează biblioteca de cântece de laudă. Păstrați toate detaliile cântecelor, versurile și aranjamentele într-un singur loc, astfel încât echipa de laudă să se poată pregăti cu ușurință pentru slujbele viitoare și să mențină un repertoriu consecvent.
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- În [meniul Jump](../introduction.md#getting-around-with-the-jump-menu) din B1 Admin, alege **Serving > Cântece** pentru a accesa pagina Cântece
-- Opțional, configurează [planurile de slujbă](./plans.md) pentru a putea adăuga cântece direct în [ordinea slujbei](./service-order.md)
+- În [meniul Jump](../introduction.md#getting-around-with-the-jump-menu) din B1 Admin, alegeți **Serving > Songs** pentru a accesa pagina Cântece
+- Opțional, configurați [planurile de slujbă](./plans.md), pentru a putea adăuga cântece direct în [ordinea slujbei](./service-order.md)
 
 </div>
 
 ## Răsfoirea bibliotecii de cântece
 
-Când deschizi pagina **Cântece**, cântecele tale sunt listate într-un tabel. Fiecare rând arată imaginea miniatură a cântecului, titlul, artistul și durata. Folosește comenzile de paginare de sub listă pentru a parcurge o bibliotecă mare sau caută ceea ce ai nevoie.
+Când deschideți pagina **Cântece**, cântecele dvs. sunt afișate într-un tabel. Fiecare rând arată miniatura, titlul, artistul și durata cântecului. Folosiți controalele de paginare de sub listă pentru a parcurge o bibliotecă mare sau căutați ceea ce aveți nevoie.
 
 ## Căutarea cântecelor
 
-1. Fă clic în caseta **Caută cântece** din partea de sus a paginii Cântece.
-2. Scrie **titlul** unui cântec sau numele **artistului**.
-3. Lista se filtrează pe măsură ce scrii, arătând cântecele care se potrivesc din biblioteca ta și câte rezultate au fost găsite. Fă clic pe **Șterge** pentru a afișa din nou toate cântecele.
+1. Faceți clic în caseta **Search Songs** din partea de sus a paginii Cântece.
+2. Tastați **titlul** cântecului sau numele **artistului**.
+3. Lista se filtrează pe măsură ce tastați, afișând cântecele care corespund din biblioteca dvs. și numărul de rezultate. Faceți clic pe **Clear** pentru a afișa din nou toate cântecele.
 
 ## Adăugarea unui cântec
 
-1. Fă clic pe **Adaugă cântec** din partea de sus a paginii Cântece.
-2. În **Caută un cântec**, caută în baza de date externă de cântece după **Titlu sau Artist**.
-3. Selectează cântecul pe care dorești să-l adaugi sau fă clic pe **Creează manual** dacă nu-l găsești.
-4. Cântecul va fi adăugat în biblioteca ta, cu detaliile de bază completate automat.
+1. Faceți clic pe **Add Song** din partea de sus a paginii Cântece.
+2. În **Search for a Song**, căutați în baza de date externă de cântece după **Title or Artist**.
+3. Selectați cântecul pe care doriți să îl adăugați sau faceți clic pe **Create Manually** dacă nu îl găsiți.
+4. Cântecul va fi adăugat în biblioteca dvs., cu detaliile de bază completate automat.
 
 :::tip
-După ce adaugi un cântec, fă clic pe el pentru a verifica și actualiza detaliile, a adăuga aranjamente sau a atașa linkuri externe, cum ar fi videoclipuri YouTube sau fișe de acorduri.
+După adăugarea unui cântec, faceți clic pe el pentru a verifica și actualiza detaliile, a adăuga aranjamente sau a atașa linkuri externe, cum ar fi videoclipuri YouTube sau partituri cu acorduri.
 :::
 
 ### Cântece gratuite de la WorshipCommons
 
-Rezultatele căutării pot include și o secțiune **WorshipCommons — gratuit** alături de rezultatele obișnuite. Acestea sunt cântece pregătite pentru slujbă de la [WorshipCommons](https://worshipcommons.org), care au fost verificate și licențiate pentru utilizare în închinare. Fiecare rezultat afișează o insignă de licență -- **Gratuit pentru închinare** sau **Domeniu public** -- astfel încât să cunoști condițiile înainte de a-l adăuga.
+Rezultatele căutării pot include și o secțiune **WorshipCommons — free**, alături de rezultatele obișnuite. Acestea sunt cântece pregătite pentru duminică, de la [WorshipCommons](https://worshipcommons.org), care au fost verificate și licențiate pentru utilizare în cadrul slujbelor. Fiecare rezultat afișează o insignă de licență — **Free for worship** sau **Public domain** — pentru a ști ce condiții se aplică înainte de a-l adăuga.
 
-- Fă clic pe un rezultat WorshipCommons pentru a-l adăuga în biblioteca ta, la fel ca pentru orice rezultat de căutare obișnuit.
-- Fă clic pe **Vezi pe WorshipCommons** pentru a deschide anunțul original într-un tab nou.
+- Faceți clic pe un rezultat WorshipCommons pentru a-l adăuga în biblioteca dvs., exact ca pe un rezultat de căutare obișnuit.
+- Faceți clic pe **View on WorshipCommons** pentru a deschide anunțul original într-o filă nouă.
 
-Aici apar doar cântecele care au trecut procesul de verificare WorshipCommons, așa că selecția poate fi mai mică decât baza principală de cântece.
+Apar aici doar cântecele care au trecut procesul de verificare WorshipCommons, deci selecția poate fi mai mică decât baza principală de date cu cântece.
+
+Pentru a răsfoi întreaga bibliotecă WorshipCommons, a tipări partituri sau a exporta slide-uri, consultați [documentația WorshipCommons](../../worship-commons/index.md).
 
 ## Ștergerea cântecelor
 
-Bifează caseta de lângă unul sau mai multe cântece (sau caseta din antet pentru a selecta toate cântecele afișate), apoi fă clic pe **Șterge selectate** în bara care apare și confirmă. Fă clic pe **Șterge** pentru a deselecta.
+Bifați caseta de lângă unul sau mai multe cântece (sau caseta din antet pentru a selecta toate cântecele afișate), apoi faceți clic pe **Delete Selected** în bara care apare și confirmați. Faceți clic pe **Clear** pentru a anula selecția.
 
 ## Vizualizarea și editarea unui cântec
 
-Fă clic pe titlul unui cântec pentru a deschide pagina lui de detalii. Titlul, artistul și detaliile precum albumul, tonalitatea, durata, BPM-ul și metrul apar în stânga, împreună cu aranjamentele și linkurile externe. De aici poți:
+Faceți clic pe titlul unui cântec pentru a deschide pagina sa de detalii. Titlul, artistul și detaliile precum albumul, tonalitatea, durata, BPM-ul și metrica apar în stânga, împreună cu aranjamentele și linkurile externe. De aici puteți:
 
-- **Editează detaliile cântecului** -- Fă clic pe **Editează** pentru a actualiza titlul, artistul, durata și alte metadate. Fă clic pe **Gata** când ai terminat. Pentru a elimina cântecul din bibliotecă, fă clic pe **Editează**, apoi pe **Șterge cântecul**.
-- **Gestionează aranjamentele** -- Fiecare cântec poate avea mai multe aranjamente (de exemplu, tonalități sau versiuni diferite). Fă clic pe **Adaugă aranjament** pentru a crea unul nou și fă clic pe numele unui aranjament din secțiunea **Aranjamente** pentru a-l deschide.
-- **Adaugă texte** -- Introdu sau actualizează textul pentru fiecare aranjament folosind notația ChordPro (de exemplu, `[G]Amazing grace`). O previzualizare live lângă editor afișează fișa de acorduri formatată pe măsură ce scrii, astfel încât să vezi exact ce va vedea echipa ta.
-- **Stabilește tonalitatea** -- Specifică tonalitatea muzicală pentru fiecare aranjament folosind selectorul de tonalitate de lângă text. Selectorul listează tonalitățile așa cum le scriu de obicei muzicienii (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Schimbarea tonalității transpune imediat acordurile afișate, atât pe pagina aranjamentului, cât și atunci când deschizi cântecul dintr-un plan de slujbă, astfel încât echipa vede mereu acordurile în tonalitatea în care cântă de fapt. Acordurile sunt scrise în acord cu tonalitatea: tonalitățile cu bemoli, precum Bb sau Eb, afișează nume de acorduri cu bemol (Bb, Eb, Ab), în loc de diezi.
-- **Adaugă linkuri externe** -- Atașează linkuri către resurse precum videoclipuri YouTube, fișe de acorduri sau partituri găzduite în altă parte.
+- **Editarea detaliilor cântecului** -- Faceți clic pe **Edit** pentru a actualiza titlul, artistul, durata și alte metadate. Faceți clic pe **Done** când ați terminat. Pentru a elimina cântecul din bibliotecă, faceți clic pe **Edit**, apoi pe **Delete song**.
+- **Gestionarea aranjamentelor** -- Fiecare cântec poate avea mai multe aranjamente (de exemplu, tonalități sau versiuni diferite). Faceți clic pe **Add Arrangement** pentru a crea unul nou și faceți clic pe numele unui aranjament sub **Arrangements** pentru a-l deschide.
+- **Adăugarea versurilor** -- Introduceți sau actualizați versurile pentru fiecare aranjament folosind notația ChordPro (de exemplu, `[G]Amazing grace`). O previzualizare live lângă editor afișează tabelul de acorduri formatat pe măsură ce tastați, astfel încât să vedeți exact ce va vedea echipa dvs.
+- **Stabilirea tonalității** -- Specificați tonalitatea muzicală pentru fiecare aranjament folosind selectorul de tonalitate de lângă versuri. Selectorul listează tonalitățile așa cum le notează de obicei muzicienii (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Schimbarea tonalității transpune imediat acordurile afișate, atât pe pagina aranjamentului, cât și atunci când deschideți cântecul dintr-un plan de slujbă, astfel încât echipa dvs. vede întotdeauna acordurile în tonalitatea în care cântă de fapt. Acordurile sunt scrise în concordanță cu tonalitatea: tonalitățile cu bemoluri, precum Bb sau Eb, afișează nume de acorduri cu bemol (Bb, Eb, Ab) în loc de diezi.
+- **Adăugarea linkurilor externe** -- Atașați linkuri către resurse precum videoclipuri YouTube, tabele de acorduri sau partituri găzduite în altă parte.
 
 ## Aranjamente
 
-Un aranjament reprezintă o versiune distinctă a unui cântec -- de exemplu, o versiune modernă mai rapidă față de o versiune acustică mai lentă sau același cântec într-o altă tonalitate pentru o altă echipă. Fiecare aranjament al aceluiași cântec împarte titlul și artistul cu celelalte, dar are propriile setări independente:
+Un aranjament reprezintă o versiune distinctă a unui cântec, de exemplu o versiune modernă mai rapidă față de o interpretare acustică mai lentă sau același cântec într-o tonalitate diferită pentru o altă echipă. Fiecare aranjament al aceluiași cântec împarte titlul și artistul cântecului, dar are propriile setări independente:
 
-- **Tonalitate** -- tonalitatea muzicală în care este interpretat aranjamentul
-- **BPM** -- tempoul, în bătăi pe minut
-- **Durată** -- durata, în secunde
-- **Metru** -- măsura muzicală (de exemplu, 4/4, 3/4, 6/8)
-- **Secvență** -- structura de acorduri și secțiuni (de exemplu, Intro → Strofă → Refren → Punte)
-- **Texte** -- pentru afișare sau proiecție
-- **Linkuri externe** -- fișe de acorduri, înregistrări YouTube, partituri sau alte resurse
+- **Tonalitate** — tonalitatea muzicală în care se interpretează aranjamentul
+- **BPM** — tempoul, în bătăi pe minut
+- **Durată** — durata, în secunde
+- **Metrică** — măsura muzicală (de exemplu, 4/4, 3/4, 6/8)
+- **Secvență** — structura acordurilor și a secțiunilor (de exemplu, Intro → Verse → Chorus → Bridge)
+- **Versuri** — pentru afișare sau proiecție
+- **Linkuri externe** — tabele de acorduri, înregistrări YouTube, partituri sau alte resurse
 
-Când adaugi un cântec la o [ordine a slujbei](./service-order.md), poți alege ce aranjament să folosești pentru acea slujbă specifică, astfel încât echipa să repete și să cânte mereu versiunea potrivită.
+Când adăugați un cântec în [Ordinea slujbei](./service-order.md), puteți alege ce aranjament să folosiți pentru acea slujbă specifică, astfel încât echipa dvs. să repete și să cânte întotdeauna versiunea corectă.
 
-### Audio pentru repetiție
+### Audio pentru repetiții
 
-Administratorii de închinare pot atașa o înregistrare audio de repetiție la un aranjament, pentru ca echipa să o poată asculta înainte de repetiție:
+Administratorii de laudă pot atașa o înregistrare audio de repetiție la un aranjament, pentru ca echipa să o poată asculta înainte de repetiție:
 
-1. Deschide cântecul și selectează aranjamentul.
-2. Fă clic pe **Încarcă audio**.
-3. Alege un fișier MP3, M4A sau AAC (de până la 25 MB -- fișierele WAV nu sunt acceptate, pentru a economisi spațiul de stocare).
-4. Salvează. Înregistrarea se redă direct oriunde apare aranjamentul -- pe pagina aranjamentului din B1 Admin și în planul de slujbă, atunci când un membru al echipei o deschide în portalul de membri B1.church. Elementele de plan cu audio afișează o pictogramă de notă muzicală în loc de miniatură.
+1. Deschideți cântecul și selectați aranjamentul.
+2. Faceți clic pe **Upload Audio**.
+3. Alegeți un fișier MP3, M4A sau AAC (de până la 25 MB — fișierele WAV nu sunt acceptate, pentru a limita consumul de spațiu de stocare).
+4. Salvați. Înregistrarea se redă direct oriunde apare acel aranjament — pe pagina aranjamentului din B1 Admin și în planul de slujbă, atunci când un membru al echipei îl deschide în portalul de membri B1.church. Elementele de plan care au audio afișează o pictogramă de notă muzicală în locul miniaturii.
 
 Ștergerea aranjamentului elimină și fișierul audio încărcat.
 
 :::info
-Cântecele din biblioteca ta pot fi adăugate direct la o [ordine a slujbei](./service-order.md) din cadrul unui plan, legând detaliile cântecului și aranjamentul ales de acea slujbă specifică.
+Cântecele din biblioteca dvs. pot fi adăugate direct în [Ordinea slujbei](./service-order.md) dintr-un plan, asociind detaliile cântecului și aranjamentul ales cu acea slujbă specifică.
 :::
 
 ## Pașii următori
 
-- Adaugă cântece în [ordinea slujbei](./service-order.md) atunci când construiești un [plan de slujbă](./plans.md)
-- Coordonează-te cu echipa de închinare folosind [Sarcinile](./tasks.md) pentru pregătirea și repetarea cântecelor
+- Adăugați cântece în [Ordinea slujbei](./service-order.md) atunci când construiți un [plan de slujbă](./plans.md)
+- Coordonați-vă cu echipa de laudă folosind [Sarcini](./tasks.md) pentru pregătirea și repetarea cântecelor

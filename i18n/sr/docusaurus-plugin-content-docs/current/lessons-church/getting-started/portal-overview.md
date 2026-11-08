@@ -1,60 +1,60 @@
 ---
-title: "Преглед портала"
-description: "Обилазак Lessons.church портала: учионице, заказане лекције, линкови фида, External Providers и административни алати."
+title: "Pregled portala"
+description: "Pregledajte portal Lessons.church da biste pronašli učionice, pregledali zakazane lekcije, podesili linkove za feed i pristupili spoljnim provajderima i alatkama administracije."
 ---
 
-# Преглед портала
+# Pregled portala
 
 <div class="article-intro">
 
-Након пријаве на Lessons.church, бићете преусмерени на **портал** -- ваш црквени контролни панел за управљање учионицама и распоредима лекција. Ту ћете највише времена проводити када организујете наставни програм за своју цркву.
+Nakon prijavljivanja na Lessons.church, bićete preusmereni na **Portal** -- kontrolnu tablu vaše crkve za upravljanje učionicama i rasporedima lekcija. Ovde ćete provoditi najviše vremena kada organizujete nastavni program za svoju crkvu.
 
 </div>
 
 <div class="prereqs">
-<h4>Пре почетка</h4>
+<h4>Pre nego što počnete</h4>
 
-- [Креирајте налог](./creating-account.md) и повежите се са својом црквом
-- Пријавите се на [Lessons.church](https://lessons.church)
+- [Kreirajte nalog](./creating-account.md) i povežite se sa svojom crkvom
+- Prijavite se na [Lessons.church](https://lessons.church)
 
 </div>
 
-## Шта видите
+## Šta vidite
 
-Портал је организован у две главне области:
+Portal se otvara na stranici **Upravljanje učionicama**, koja je podeljena u dve glavne oblasti:
 
-- **Учионице** (десна страна) -- Списак учионица ваше цркве. Кликните на назив учионице да бисте прегледали заказане лекције. Одавде можете и додавати нове учионице или уређивати постојеће.
-- **Заказане лекције** (лева страна) -- Када изаберете учионицу, ова област приказује лекције заказане за њу. Ако још нисте подесили ниједну учионицу, видећете видео са упутствима за подешавање који ће вам помоћи да почнете.
+- **Učionice** (desna strana) -- Spisak učionica vaše crkve. Kliknite na naziv učionice da biste videli njene zakazane lekcije. Ovde takođe možete dodavati nove učionice ili menjati postojeće.
+- **Raspored lekcija** (leva strana) -- Kada izaberete učionicu, ova oblast prikazuje lekcije zakazane za nju. Ako još niste podesili nijednu učionicu, videćete video sa uputstvima za podešavanje koji će vam pomoći da počnete.
 
-## Шта можете да радите из портала
+## Šta možete da radite u portalu
 
-Из портала можете:
+U portalu možete:
 
-1. **Управљати учионицама** -- Додавати, уређивати или уклањати учионице. Свака учионица може бити повезана са тимом волонтера (тако да они виде предстојеће лекције у B1 апликацији) и са групом родитеља или ученика (тако да могу да приступе недавним лекцијама). Цркве које још користе овај начин распореда учионица: родитељи отварају страницу учионице (без `?upcoming=1`) да би видели садржај за понети кући. Цркве које користе типове планова B1Admin уместо тога виде картицу за понети кући на страници повезане групе у B1 апликацији.
-2. **Прегледати и управљати заказаним лекцијама** -- Погледајте које лекције долазе за сваку учионицу и правите измене по потреби.
-3. **Претплатити се на фидове учионица** -- Кликните на икону фида поред учионице да бисте добили URL адресу плејлист фида коју можете користити са компатибилним апликацијама.
-4. **Приступити спољним провајдерима** -- Користите страницу **Спољни провајдери** да бисте подесили изворе садржаја трећих страна који подржавају формат отворене лекције (Open Lesson Format). Ово вам омогућава да уносите лекције и од других провајдера, поред уграђене библиотеке Lessons.church.
-5. **Приступити административној области** -- Ако имате административна овлашћења, видећете опцију **Администрација** у навигацији. Административна област вам омогућава да управљате програмима, студијама и лекцијама на нивоу садржаја.
+1. **Upravljati učionicama** -- Dodavati, menjati ili uklanjati učionice. Svaka učionica može biti povezana sa timom volontera (tako da vide predstojeće lekcije u B1 aplikaciji) i sa grupom roditelja/učenika (tako da mogu da pristupe nedavnim lekcijama). Crkve koje još uvek koriste ovaj put rasporeda učionica: roditelji otvaraju stranicu učionice (bez `?upcoming=1`) da vide sadržaj za kući. Crkve koje koriste tipove planova B1Admin umesto toga vide karticu za sadržaj za kući na stranici povezane grupe u B1.
+2. **Pregledati i upravljati zakazanim lekcijama** -- Pogledajte koje su lekcije predstojeće za svaku učionicu i po potrebi pravite izmene.
+3. **Pretplatiti se na feedove učionica** -- Kliknite na ikonicu feeda pored učionice da biste dobili URL plejliste koji možete koristiti sa kompatibilnim aplikacijama.
+4. **Pristupiti spoljnim provajderima** -- Koristite stranicu **Spoljni provajderi** da podesite izvore sadržaja trećih strana koji podržavaju Open Lesson Format. Ovo vam omogućava da uvezete lekcije od drugih provajdera, pored ugrađene biblioteke Lessons.church.
+5. **Pristupiti oblasti administracije** -- Ako imate administratorske dozvole, u navigaciji ćete videti opciju **Administracija**. Oblast administracije omogućava upravljanje programima, studijama i lekcijama na nivou sadržaja.
 
-## Навигација
+## Navigacija
 
-Навигација портала укључује:
+Navigacija portala obuhvata:
 
-- **Почетна** -- Вратите се на јавну почетну страницу Lessons.church да бисте прегледали садржај.
-- **Распореди** -- Главни приказ портала за управљање учионицама и распоредима лекција.
-- **Спољни провајдери** -- Подесите провајдере лекција трећих страна.
-- **Администрација** -- Управљајте програмима, студијама и садржајем лекција (видљиво само ако имате административна овлашћења).
+- **Početna** -- Vraća vas na javnu početnu stranicu Lessons.church da biste pregledali sadržaj.
+- **Rasporedi** -- Glavni prikaz portala za upravljanje učionicama i rasporedima lekcija.
+- **Spoljni provajderi** -- Podesite provajdere lekcija trećih strana.
+- **Administracija** -- Upravljajte programima, studijama i sadržajem lekcija (vidljivo samo ako imate administratorske dozvole).
 
 :::info
-Опција **Администрација** се појављује само ако је вашем налогу додељена дозвола за уређивање садржаја. Већина запослених у цркви ће користити странице **Распореди** и **Спољни провајдери** за свакодневно управљање.
+Opcija **Administracija** se pojavljuje samo ako je vašem nalogu dodeljena dozvola za uređivanje sadržaja. Većina crkvenog osoblja koristiće stranice **Rasporedi** i **Spoljni provajderi** za svakodnevno upravljanje.
 :::
 
-## Први кораци
+## Početak rada
 
-Ако први пут посећујете портал и још нисте креирали ниједну учионицу, почните тако што ћете кликнути на **Додај прву учионицу** у панелу учионица. Дајте својој учионици назив (на пример, "Предшколци" или "3.–5. разред") и сачувајте га. Одатле можете почети са [заказивањем лекција](../classrooms/scheduling-lessons.md).
+Ako prvi put posećujete portal i još niste kreirali nijednu učionicu, počnite klikom na **Dodaj prvu učionicu** u panelu učionica. Dajte učionici naziv (na primer, "Predškolci" ili "3–5. razred") i sačuvajte je. Odatle možete početi sa [zakazivanjem lekcija](../classrooms/scheduling-lessons.md).
 
-## Повезани чланци
+## Povezani članci
 
-- [Подешавање учионица](../classrooms/setting-up-classrooms.md) -- Детаљан водич за креирање и управљање учионицама
-- [Прегледање садржаја](../browsing/index.md) -- Пронађите програме и студије за заказивање
-- [Спољни провајдери](../browsing/external-providers.md) -- Додајте изворе наставног програма трећих страна
+- [Podešavanje učionica](../classrooms/setting-up-classrooms.md) -- Detaljan vodič za kreiranje i upravljanje učionicama
+- [Pregledanje sadržaja](../browsing/index.md) -- Pronađite programe i studije za zakazivanje
+- [Spoljni provajderi](../browsing/external-providers.md) -- Dodajte izvore nastavnog programa trećih strana

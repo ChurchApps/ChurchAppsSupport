@@ -1,102 +1,105 @@
 ---
-title: "Gids: Uw prekenbibliotheek en live streaming bouwen"
-description: "Importeer je YouTube- of Vimeo-preken, zet ze in afspeellijsten en stel terugkerende livestreams met chat in B1 Admin in voor je website."
+title: "Gids: Bouw uw preekbibliotheek en livestream"
+description: "Importeer uw YouTube- of Vimeo-preken, organiseer ze in afspeellijsten en stel terugkerende livestreams in met chat in B1 Admin voor uw kerkwebsite."
 ---
 
-# Uw prekenbibliotheek en live streaming bouwen
+# Bouw uw preekbibliotheek en livestream
 
 <div class="article-intro">
 
-Zet uw prekenarchief online en stel live streaming in -- van het importeren van uw bestaande YouTube- of Vimeo-bibliotheek tot het plannen van terugkerende live services met interactieve chat. Aan het einde kan uw gemeente eerdere preken bekijken en live services op uw website en mobiele app bijwonen.
+Zet uw preekarchief online en stel livestreaming in — van het importeren van uw bestaande YouTube- of Vimeo-bibliotheek tot het plannen van terugkerende livediensten met interactieve chat. Aan het eind kan uw gemeente op uw website en mobiele app eerdere preken bekijken en deelnemen aan livediensten.
 
 </div>
+
+## Trainingsvideo
+
+<YouTube id="b3B3A25g2Sk" title="Uw preekbibliotheek bouwen in B1" next="Livestreaming instellen in B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
 <div class="prereqs">
 <h4>Voordat u begint</h4>
 
-- B1 Admin-account met inhoudsbeheersmachtiging
-- YouTube- of Vimeo-kanaal met prekenvideos's (voor het importeren van uw archief)
-- YouTube Channel ID (voor live streaming -- vind het in uw YouTube Studio-instellingen)
+- B1 Admin-account met machtiging voor contentbeheer
+- YouTube- of Vimeo-kanaal met preekvideo's (voor het importeren van uw archief)
+- YouTube-kanaal-ID (voor livestreaming — vindt u in de instellingen van YouTube Studio)
 
 </div>
 
-## Stap 1: Maak prekenplaylijsten
+## Stap 1: Maak preekafspeellijsten
 
-Playlisten organiseren uw preken in series en verzamelingen voor gemakkelijk bladeren.
+Afspeellijsten ordenen uw preken in reeksen en collecties, zodat ze gemakkelijk te doorzoeken zijn.
 
-Volg de gids [Playlisten](../sermons/playlists.md) om:
+Volg de gids [Afspeellijsten](../sermons/playlists.md) om:
 
-1. Maak series/verzamelingen zoals "2024 Sunday Messages", "Huwelijksseries", "Kerstservices"
-2. Voeg voor elke playlist een naam, beschrijving, publicatiedatum en miniatuurtje toe
+1. Reeksen/collecties aan te maken, zoals "Zondagse preken 2024", "Huwelijksreeks", "Kerstdiensten"
+2. Een naam, beschrijving, publicatiedatum en miniatuurafbeelding toe te voegen voor elke afspeellijst
 
 :::tip
-Maak playlisten voordat u preken toevoegt. Dit maakt het gemakkelijker om preken in de juiste series in te delen wanneer u ze toevoegt.
+Maak afspeellijsten aan voordat u preken toevoegt. Zo is het eenvoudiger om preken tijdens het toevoegen in de juiste reeks te plaatsen.
 :::
 
 ## Stap 2: Importeer uw bestaande preken
 
-Als u al preken videos op YouTube of Vimeo hebt, kunt u deze allemaal in één keer ophalen.
+Als u al preekvideo's op YouTube of Vimeo heeft staan, kunt u ze in één keer allemaal importeren.
 
 Volg de gids [Bulkimport](../sermons/bulk-import.md) om:
 
-1. Voer uw YouTube- of Vimeo-kanaal-URL in
-2. Bekijk het importeren om te zien welke video's worden opgehaald
-3. Klik op Importeren om ze allemaal in één keer toe te voegen
+1. De URL van uw YouTube- of Vimeo-kanaal in te voeren
+2. Een voorbeeld van de import te bekijken om te zien welke video's worden opgehaald
+3. Op Importeren te klikken om ze allemaal tegelijk toe te voegen
 
 ## Stap 3: Voeg afzonderlijke preken toe
 
-Voor eenmalige toevoegingen of preken die geen deel uitmaken van een bulkimport, voeg ze afzonderlijk toe.
+Voor incidentele toevoegingen of preken die niet onderdeel zijn van een bulkimport, voegt u ze afzonderlijk toe.
 
 Volg de gids [Preken beheren](../sermons/managing-sermons.md) om:
 
-1. Plak een video-URL (YouTube, Vimeo of Facebook)
-2. Titel, beschrijving, miniatuurtje en duur vullen automatisch in op basis van videometadata
-3. Wijs de preek toe aan een afspeellijst
+1. Een video-URL te plakken (YouTube, Vimeo of Facebook)
+2. Titel, beschrijving, miniatuur en duur worden automatisch ingevuld op basis van de videometadata
+3. De preek aan een afspeellijst toe te wijzen
 
-## Stap 4: Stel live streaming in
+## Stap 4: Livestreaming instellen
 
-Verbind uw YouTube-kanaal zodat uw B1-site automatisch uw live stream ophaalt.
+Koppel uw YouTube-kanaal zodat uw B1-site uw livestream automatisch oppikt.
 
-Volg de gids [Live streaming](../sermons/live-streaming.md) om:
+Volg de gids [Livestreaming](../sermons/live-streaming.md) om:
 
-1. Voer uw YouTube Channel ID in de streaming-instellingen in
-2. Configureer uw terugkerende serviceschema (bijv. zondags om 10:00 uur)
-3. Pas de tabbladen van de streamingpagina aan: chat, gebedsverzoeken en aangepaste links
+1. Uw YouTube-kanaal-ID in de streaminginstellingen in te voeren
+2. Uw terugkerende dienstschema te configureren (bijvoorbeeld zondags om 10:00)
+3. De tabbladen van de streamingpagina (Chat, Gebedsverzoeken en aangepaste links) aan te passen op de pagina **Preken > Instellingen**
 
 :::info
-Wanneer u live op YouTube gaat, haalt de B1-streamingpagina automatisch de stream op. Geen extra stappen nodig op zondagmorgen.
+Zodra u op YouTube live gaat, pikt de B1-streamingpagina de stream automatisch op. Op zondagochtend zijn geen extra stappen nodig.
 :::
 
-## Stap 5: Voeg op uw website weer
+## Stap 5: Weergeven op uw website
 
-Maak uw prekenbibliotheek en live streaming gemakkelijk toegankelijk voor bezoekers.
+Maak uw preekbibliotheek en livestream gemakkelijk toegankelijk voor bezoekers.
 
 Volg de gids [Pagina's beheren](../website/managing-pages.md) om:
 
-1. Voeg een preekgedeelte toe aan uw B1-website zodat bezoekers uw bibliotheek kunnen doorzoeken
-2. Voeg een live streamgedeelte toe voor de live kijkervaring
+1. Een sectie Preken aan uw B1-website toe te voegen, zodat bezoekers de bibliotheek kunnen doorbladeren
+2. Een sectie Livestream toe te voegen voor de ervaring van live meekijken
 
-## Stap 6: Mobiele toegang
+## Stap 6: Toegang via mobiel
 
-Leden hebben vanaf elk apparaat toegang tot preken en live services.
+Leden kunnen vanaf elk apparaat preken en livediensten bekijken.
 
-1. Leden kunnen preken bekijken in de [B1 Mobiele app](../../b1-mobile/content/sermons.md) en op [B1.church](../../b1-church/content/sermons.md)
-2. Live streaming met chat en gebedsverzoeken werkt op beide platforms
+1. Leden kunnen preken bekijken op [B1.church en in de B1 App](../../b1-church/content/sermons.md)
+2. Livestreaming met chat werkt net zo goed op telefoons als op computers
 
 :::info
-Met de live chat- en gebedsvraagfuncties kan uw online gemeente in realtime deelnemen, net alsof zij in de kamer zijn.
+Met de livechatfunctie kan uw online gemeente in realtime meedoen, net alsof ze in de zaal zitten.
 :::
 
-## U bent klaar!
+## Klaar!
 
-Uw prekenbibliotheek is online en uw live stream is geconfigureerd. Leden kunnen op elk moment eerdere preken inhalen en live services van overal bijwonen. Nieuwe preken-uploads kunnen automatisch synchroniseren.
+Uw preekbibliotheek staat online en uw livestream is ingesteld. Leden kunnen zich op elk moment inhalen met eerdere preken en vanaf overal deelnemen aan livediensten. Nieuwe preekuploads kunnen automatisch worden gesynchroniseerd.
 
 ## Gerelateerde artikelen
 
-- [Playlisten](../sermons/playlists.md) -- organiseer preken in series
-- [Bulkimport](../sermons/bulk-import.md) -- importeren van YouTube of Vimeo
-- [Preken beheren](../sermons/managing-sermons.md) -- afzonderlijke preken toevoegen en bewerken
-- [Live streaming](../sermons/live-streaming.md) -- live services configureren
-- [Preken (web)](../../b1-church/content/sermons.md) -- ervaring met prekenweergave voor leden
-- [Live streaming (web)](../../b1-church/content/live-streaming.md) -- ervaring met live streaming voor leden
-- [Preken (mobiel)](../../b1-mobile/content/sermons.md) -- preken op de mobiele app
+- [Afspeellijsten](../sermons/playlists.md) — preken ordenen in reeksen
+- [Bulkimport](../sermons/bulk-import.md) — importeren vanuit YouTube of Vimeo
+- [Preken beheren](../sermons/managing-sermons.md) — afzonderlijke preken toevoegen en bewerken
+- [Livestreaming](../sermons/live-streaming.md) — livediensten configureren
+- [Preken (leden)](../../b1-church/content/sermons.md) — ervaring van preken bekijken voor leden
+- [Livestreaming (leden)](../../b1-church/content/live-streaming.md) — ervaring van livestream voor leden

@@ -1,47 +1,47 @@
 ---
-title: "Administrācija"
-description: "Lessons.church administravimo srities apžvalga ChurchApps: programų, mokymų, pamokų, išteklių, statistikos ir išorinių mokymo programų teikėjų valdymas."
+title: "Administravimas"
+description: "Lessons.church administravimo srities apžvalga ChurchApps platformoje: programų, studijų, pamokų, išteklių, statistikos ir išorinių turinio teikėjų valdymas."
 ---
 
-# Administrācija
+# Administravimas
 
 <div class="article-intro">
 
-Administratora sadaļa Lessons.church vietnē ir vieta, kur satura veidotāji un administratori pārvalda mācību materiālu bibliotēku. No šejienes var veidot mācību programmas struktūru, augšupielādēt resursus, skatīt lietošanas statistiku un pievienot trešo pušu satura sniedzējus.
+Lessons.church administravimo sritis yra vieta, kur turinio kūrėjai ir administratoriai tvarko pamokų biblioteką. Čia galite kurti mokymo programos struktūrą, įkelti išteklius, peržiūrėti naudojimo statistiką ir prijungti trečiųjų šalių turinio teikėjus.
 
 </div>
 
 :::warning
-Administratora piekļuvei nepieciešamas atbilstošas atļaujas. Ja neredzat administratora opcijas, sazinieties ar savas draudzes administratoru, lai pieprasītu piekļuvi.
+Prieiga prie administravimo srities reikalauja atitinkamų leidimų. Jei nematote administravimo parinkčių, kreipkitės į savo bažnyčios administratorių, kad gautumėte prieigą.
 :::
 
-## Ko varat darīt
+## Ką galite daryti
 
-Administratora sadaļa dod pilnu kontroli pār jūsu saturu:
+Administravimo sritis suteikia visišką kontrolę įvairiems turiniui:
 
-- **Veidot un rediģēt programmas** -- Izveidot augstākā līmeņa mācību sērijas ar nosaukumiem, aprakstiem, attēliem un slugiem.
-- **Pārvaldīt pētījumus** -- Organizēt saistītu stundu grupas katrā programmā.
-- **Veidot stundas** -- Pievienot atsevišķas stundas ar vietām, sadaļām, lomām un darbībām.
-- **Augšupielādēt resursus** -- Pievienot lejupielādējamus failus (PDF, aktivitāšu lapas, attēlus) programmas, pētījuma vai stundas līmenī.
-- **Skatīt statistiku** -- Redzēt, kāds saturs tiek lejupielādēts, kas to dara un kur.
-- **Konfigurēt sniedzējus** -- Pieslēgt ārējos mācību materiālu sniedzējus, kas izmanto Open Lesson Format.
-- **Gada plāni** -- Publicēt 1., 2., 3. nedēļas… secības jebkurai mācību programmai. Draudzes tās piemēro B1 Admin.
+- **Kurti ir redaguoti programas** -- Sukurkite aukščiausio lygio mokymo programos serijas su pavadinimais, aprašymais, paveikslėliais ir nuorodų pavadinimais (slug).
+- **Tvarkyti studijas** -- Organizuokite susijusių pamokų grupes kiekvienoje programoje.
+- **Kurti pamokas** -- Pridėkite atskiras pamokas su vietomis (venue), skyriais, vaidmenimis ir veiksmais.
+- **Įkelti išteklius** -- Pridėkite atsisiunčiamus failus (PDF, veiklų lapus, paveikslėlius) programos, studijos ar pamokos lygiu.
+- **Peržiūrėti statistiką** -- Sužinokite, koks turinys atsisiunčiamas, kas ir iš kur tai daro.
+- **Konfigūruoti teikėjus** -- Prijunkite išorinius mokymo programos teikėjus, naudojančius Open Lesson Format. Tai atliekama puslapyje **External Providers**, o ne administravimo srityje.
+- **Metiniai planai** -- Paskelbkite 1, 2, 3… savaičių seką bet kuriai mokymo programai. Bažnyčios ją taiko programoje B1 Admin.
 
-## Satura hierarhija
+## Turinio hierarchija
 
-Administratoram ir noderīgi saprast, kā saturs ir strukturēts:
+Kaip administratorius, verta suprasti, kaip struktūruojamas turinys:
 
-1. **Programmas** satur vienu vai vairākus pētījumus.
-2. **Pētījumi** satur vienu vai vairākas stundas.
-3. **Stundas** satur vienu vai vairākas vietas (dažādas vecuma grupām paredzētas versijas).
-4. **Vietas** satur sadaļas, un sadaļas satur lomām paredzētas darbības.
+1. **Programos** apima vieną ar daugiau studijų.
+2. **Studijos** apima vieną ar daugiau pamokų.
+3. **Pamokos** apima vieną ar daugiau vietų (amžiaus grupių variantų).
+4. **Vietos** apima skyrius, o skyriai apima vaidmenimis pagrįstus veiksmus.
 
-Katrā līmenī var pievienot savus lejupielādējamos resursus.
+Kiekvienas lygis gali turėti savo atsisiunčiamus išteklius.
 
-## Nākamie soļi
+## Kiti žingsniai
 
-- [Programmu pārvaldība](./managing-programs.md) -- Programmu izveide un konfigurēšana
-- [Pētījumu pārvaldība](./managing-studies.md) -- Pētījumu pievienošana programmā
-- [Stundu pārvaldība](./managing-lessons.md) -- Stundu veidošana ar vietām, sadaļām un darbībām
-- [Statistika](./statistics.md) -- Lejupielādes un lietošanas datu pārskatīšana
-- [Trešo pušu sniedzēji](./third-party-providers.md) -- Ārējo mācību materiālu plūsmu pieslēgšana
+- [Programų tvarkymas](./managing-programs.md) -- Kurkite ir konfigūruokite programas
+- [Studijų tvarkymas](./managing-studies.md) -- Pridėkite studijas programoje
+- [Pamokų tvarkymas](./managing-lessons.md) -- Kurkite pamokas su vietomis, skyriais ir veiksmais
+- [Statistika](./statistics.md) -- Peržiūrėkite atsisiuntimų ir naudojimo duomenis
+- [Trečiųjų šalių teikėjai](./third-party-providers.md) -- Prijunkite išorinius mokymo programos šaltinius

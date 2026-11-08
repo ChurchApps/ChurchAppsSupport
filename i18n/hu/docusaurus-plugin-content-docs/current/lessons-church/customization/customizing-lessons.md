@@ -1,76 +1,91 @@
 ---
-title: "Oktatások testreszabása"
-description: "Szakaszok és szerepkörök eltávolítása, elrejtése vagy átrendezése egy Lessons.church-leckében; a változás egy vagy minden osztályteremre vonatkozik."
+title: "Lessons-ürasok testreszabása"
+description: "Szakaszok, szerepkörök és műveletek eltávolítása vagy átrendezése egy Lessons.church-leckében, valamint annak eldöntése, hogy a módosítás egy termet vagy mindet érintse."
 ---
 
-# Oktatások testreszabása
+# Lessons-ürasok testreszabása
 
 <div class="article-intro">
 
-Ez az útmutató végigvezeti Önt az oktatás testreszabásán az osztályterme számára. A testreszabással eltávolíthat, elrejthet vagy átrendezhet tartalmat, hogy az önkéntesei pontosan azt lássák, amire szükségük van -- sem többet, sem kevesebbet.
+Ez az útmutató végigvezet a lecke termének megfelelő testreszabásán. A testreszabással eltávolíthatja vagy átrendezheti a tartalmat, így az önkéntesei pontosan azt látják, amire szükségük van – sem többet, sem kevesebbet.
 
 </div>
 
 <div class="prereqs">
 <h4>Mielőtt elkezdi</h4>
 
-- [Állítson be legalább egy osztálytermet](../classrooms/setting-up-classrooms.md) a portálon
-- [Ütemezzen egy oktatást](../classrooms/scheduling-lessons.md) arra az osztályteremre, amelyet testre szeretne szabni
-- Olvassa el a [testreszabás áttekintését](./index.md), hogy megértse, mi szabható testre
+- [Állítson be legalább egy termet](../classrooms/setting-up-classrooms.md) a portálon
+- [Ütemezzen egy leckét](../classrooms/scheduling-lessons.md) arra a terem, amelyet testre szeretne szabni
+- Olvassa el a [testreszabási áttekintést](./index.md), hogy megértse, mit lehet testreszabni
 
 </div>
 
 ## A testreszabási nézet megnyitása
 
-1. Jelentkezzen be, és lépjen a **Portál**-ra.
-2. Válassza ki azt az **osztálytermet**, amelyben az oktatás van, amelyet testre szeretne szabni.
-3. Kattintson az **ütemezett oktatásra**, hogy megnyissa.
-4. Kattintson a **Testreszabás** gombra a testreszabási nézetbe lépéshez.
+1. Jelentkezzen be, és navigáljon a **Portálra**.
+2. Válassza ki azt a **termet**, amelyben a testreszabni kívánt lecke található.
+3. A terem ütemezésében keresse meg a leckét, és kattintson a neve alatt lévő **Testreszabás** gombra.
 
-Az oktatás teljes tartalmát szakaszokra, szerepkörökre és műveletekre bontva fogja látni.
+A **Lecke testreszabása** oldal felsorolja a lecke szakaszait, az egyes szakaszok szerepköreit, és minden szerepkör alatt annak műveleteit. Minden sor jobb oldalán gombok találhatók:
+
+- **Felfelé nyíl** és **Lefelé nyíl** – Az elemet eggyel feljebb vagy lejjebb mozgatja a szomszédai között
+- **Törlés** (szemetes kosár) – Eltávolítja az elemet
+
+:::info
+A **Testreszabás** gomb csak a Lessons.church-leckéknél jelenik meg. Külső szolgáltatótól ütemezett leckéknél helyette a **Lecke megtekintése** látható, és ezek nem testreszabhatók.
+:::
+
+## Annak eldöntése, hol érvényesüljön a módosítás
+
+Minden alkalommal, amikor a nyilakra vagy a szemetes kosárra kattint, megjelenik egy menü, amely a következőt kérdezi: **A kiválasztott testreszabás alkalmazása:**
+
+- **Ez a terem** – A módosítás csak az aktuális termet érinti. A többi terem nem változik.
+- **Minden terem** – A módosítás a templom összes termére érvényes.
+
+Válasszon egyet, és a módosítás azonnal mentésre kerül. Külön mentési lépés nincs.
 
 ## Szakaszok eltávolítása
 
-Ha egy szakasz nem vonatkozik az osztálytermére, teljesen eltávolíthatja. Ez akkor hasznos, ha egy oktatás több korosztálynak szóló tartalmat tartalmaz, és csak az egyikre van szüksége. Például, ha egy oktatásban szerepel egy „Óvodás tevékenység” és egy „Általános iskolás tevékenység” szakasz, eltávolíthatja azt, amelyik nem illik a termébe.
+Ha egy szakasz nem illik a termébe, teljesen eltávolíthatja. Ez akkor hasznos, ha a lecke több korosztálynak szóló tartalmat tartalmaz, Önnek pedig csak az egyikre van szüksége. Például ha egy leckében szerepel egy „Óvodás foglalkozás” és egy „Általános iskolás foglalkozás” szakasz, eltávolíthatja azt, amelyik nem illik a termébe.
 
 1. Keresse meg az eltávolítani kívánt szakaszt.
-2. Kattintson a szakasz **eltávolítása** vagy **elrejtése** gombra.
-3. A szakasz többé nem jelenik meg az oktatást megtekintő önkéntesek számára.
+2. Kattintson a szakasz **Törlés** (szemetes kosár) gombjára.
+3. Válassza a **Ez a terem** vagy a **Minden terem** lehetőséget.
 
-## Szerepkörök vagy műveletek elrejtése
+A szakasz eltávolítottként jelenik meg, az összes szerepkörével és műveletével együtt, és az önkéntesek már nem látják azt ennél a leckénél.
 
-Egy szakaszon belül elrejthet konkrét szerepköröket vagy műveleteket. Például, ha egy szakasz tartalmaz egy „Dicsőítésvezető” szerepkört, de az osztályteremben nincs ilyen, csak ezt a szerepkört rejtheti el anélkül, hogy az egész szakaszt eltávolítaná.
+## Szerepkörök vagy műveletek eltávolítása
 
-1. Bontsa ki a szakaszt, hogy lássa a szerepköreit és műveleteit.
-2. Kattintson minden olyan szerepkör vagy művelet **elrejtése** gombra, amelyre nincs szüksége.
+Egy szakaszon belül konkrét szerepköröket vagy műveleteket is eltávolíthat. Ha például egy szakaszban szerepel egy „Istentiszteleti vezető” szerepkör, de a termében nincs ilyen, csak azt a szerepkört távolíthatja el, a teljes szakaszt megtartva.
 
-## Tartalom átrendezése
+1. Keresse meg a szerepkört vagy műveletet a szakasza alatti listában.
+2. Kattintson a **Törlés** (szemetes kosár) gombjára, és válassza ki, hol érvényesüljön a módosítás.
 
-A szakaszokat és műveleteket az Ön által preferált sorrendbe rendezheti:
+## A tartalom átrendezése
 
-1. Húzza a szakaszokat vagy műveleteket felfelé vagy lefelé a sorrendben.
-2. Az új sorrend az, amit az önkéntesei látni fognak, amikor megtekintik az oktatást.
+A szakaszokat, szerepköröket és műveleteket Ön igényei szerint átrendezheti:
 
-## A testreszabás mentése
+1. Kattintson a mozgatni kívánt elemen a **Felfelé nyílra** vagy a **Lefelé nyílra**.
+2. Válassza ki, hol érvényesüljön a módosítás. Az elem felcserélődik a szomszédjával.
 
-Amikor végzett a módosításokkal, mentse el a testreszabást. Meg fogja kérdezni, hogyan szeretné alkalmazni:
+Ismételje addig, amíg az elemek a kívánt sorrendbe nem kerülnek. Az új sorrend az, amit az önkéntesei látnak, amikor megtekintik a leckét.
 
-- **Csak ez az osztályterem** -- A módosítások csak a jelenlegi osztályteremre vonatkoznak. A többi osztályterem nem változik.
-- **Minden osztályterem** -- A módosítások a gyülekezete összes osztálytermére vonatkoznak.
-- **Testreszabás eltávolítása** -- Ha korábban testre szabta ezt az oktatást, és vissza szeretne térni az eredeti tartalomhoz, válassza ezt a lehetőséget a módosítások törléséhez.
+## Eltávolítás visszavonása
+
+Ha vissza szeretne hozni egy eltávolított elemet, kattintson újra annak **Törlés** gombjára. A menü most már a **Nincs** lehetőséget is felajánlja. Válassza a **Nincs** lehetőséget az eltávolítás törléséhez és az elem újbóli megjelenítéséhez, vagy válassza a másik lehetőséget, ha az eltávolítás hatókörét szeretné megváltoztatni.
 
 :::tip
-Kezdje egyetlen oktatás testreszabásával egy osztályteremben. Amint már kényelmesen használja a folyamatot, szélesebb körben is alkalmazhatja a testreszabásokat az összes osztályteremben.
+Kezdje egy lecke testreszabásával egyetlen termen. Amint kényelmesen használja a folyamatot, a testreszabásokat szélesebb körben is alkalmazhatja az összes teremre.
 :::
 
-## Mikor érdemes testreszabni
+## Mikor érdemes testreszabni?
 
-A testreszabás leginkább akkor hasznos, ha:
+A testreszabás akkor a leghasznosabb, ha:
 
-- Egy oktatás több korosztálynak szóló tartalmat tartalmaz, és csak a releváns részeket szeretné megjeleníteni.
-- Az osztályterme nem használ bizonyos szerepköröket (például külön dicsőítésvezetőt vagy technikai önkéntest).
-- Az alapértelmezettnél más sorrendet szeretne az oktatás menetében.
+- A leckében több korosztálynak szóló tartalom van, és csak a releváns részeket szeretné megjeleníteni.
+- A termében bizonyos szerepkörök nincsenek használatban (például külön istentiszteleti vezető vagy technikai önkéntes).
+- Az alapértelmezettől eltérő sorrendet szeretne a lecke menetéhez.
 
 :::info
-Nem kell minden oktatást testreszabnia. Ha a tartalom módosítás nélkül megfelel az osztálytermének, kihagyhatja ezt a lépést, és egyenesen a [bemutatáshoz](../presenting/index.md) léphet.
+Nem kell minden leckét testreszabnia. Ha a tartalom változtatás nélkül megfelel a termének, kihagyhatja ezt a lépést, és egyenesen a [bemutatáshoz](../presenting/index.md) léphet.
 :::

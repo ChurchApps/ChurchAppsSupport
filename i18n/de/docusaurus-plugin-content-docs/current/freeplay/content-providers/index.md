@@ -1,51 +1,51 @@
 ---
-title: "Inhaltsanbieter"
-description: "Lektionsmaterial, Videos und Bilder von Lessons.church, Dropbox, OneDrive und anderen Anbietern in der FreePlay-TV-App durchsuchen und herunterladen."
+title: "Inhalte-Anbieter"
+description: "Durchsuchen und Herunterladen von Lehrmaterialien, Videos und Bildern von Lessons.church, Dropbox, OneDrive und anderen Anbietern in der FreePlay TV-App."
 ---
 
-# Inhaltsanbieter
+# Inhalte-Anbieter
 
 <div class="article-intro">
 
-Inhaltsanbieter sind externe Dienste, die Unterrichtsmaterial, Videos und Bilder für die Wiedergabe auf Ihrem Fernseher liefern. FreePlay unterstützt mehrere Anbieter, sodass Sie Inhalte aus verschiedenen Quellen in einer einzigen App durchsuchen und herunterladen können.
+Inhalte-Anbieter sind externe Dienste, die Lehrmaterialien, Videos und Bilder für die Wiedergabe auf Ihrem Fernseher bereitstellen. FreePlay unterstützt mehrere Anbieter, sodass Sie Inhalte aus verschiedenen Quellen in einer einzigen App durchsuchen und herunterladen können.
 
 </div>
 
 ## Verfügbare Anbieter
 
-FreePlay enthält derzeit folgende Anbieter:
+FreePlay umfasst derzeit folgende Anbieter:
 
-- **[Lessons.church](../../lessons-church/index.md)** – Kostenloser, quelloffener Lehrplan für die Kinderarbeit
-- **Bible Project** – Videos und Materialien, die die Bibel erschließen
-- **SignPresenter** – Präsentations- und Beschilderungsinhalte für Kirchen
-- **B1.church** – Inhalte aus Ihrer eigenen B1-Kircheneinrichtung
-- **Go Curriculum** – Lehrplan von gocurriculum.com, geordnet nach Sammlung und Lektion
-- **Dropbox** – Bilder und Videos aus Ihrer eigenen Dropbox durchsuchen und abspielen
-- **Jesus Film Project** – Filme und Videoausschnitte des Jesus Film Project
-- **OneDrive** – Bilder, Videos und Audiodateien aus Ihrem eigenen Microsoft OneDrive durchsuchen und abspielen
+- **[Lessons.church](../../lessons-church/index.md)** - Kostenloser, quelloffener Lehrplan für die Kinderarbeit
+- **Bible Project** - Videos und Materialien zur Erkundung der Bibel
+- **SignPresenter** - Präsentations- und Beschilderungsinhalte für Kirchen
+- **B1.church** - Inhalte aus Ihrer eigenen B1-Kirchen-Einrichtung
+- **Go Curriculum** - Lehrplan von gocurriculum.com, geordnet nach Altersgruppen (**Elementary** und **Preschool**), dann nach Sammlung und Lektion. Sie sehen nur die Altersgruppen und Videos, die in Ihrer Go-Mitgliedschaft enthalten sind
+- **Dropbox** - Bilder und Videos aus Ihrer eigenen Dropbox durchsuchen und abspielen
+- **Jesus Film Project** - Filme und Videoclips des Jesus Film Project
+- **OneDrive** - Bilder, Videos und Audiodateien aus Ihrem eigenen Microsoft OneDrive durchsuchen und abspielen
 
 :::note
-Google Drive und FreeShow werden in der FreePlay-TV-App nicht mehr angezeigt. Um Google-Drive-Inhalte auf Ihren Fernsehern zu verwenden, verbinden Sie es in [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), fügen Sie die Dateien einer Playlist hinzu und planen Sie diese Playlist.
+Google Drive und FreeShow werden in der FreePlay TV-App nicht mehr angezeigt. Um Google Drive-Inhalte auf Ihren Fernsehern zu verwenden, verbinden Sie es in [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), fügen Sie die Dateien einer Playlist hinzu und planen Sie diese Playlist.
 :::
 
 :::info
-Einige Anbieter werden noch hinzugefügt. Wenn eine Anbieterkarte „Demnächst verfügbar“ anzeigt, ist sie noch nicht für eine Verbindung verfügbar.
+Einige Anbieter werden noch hinzugefügt. Wenn eine Anbieterkarte „Coming Soon“ anzeigt, ist sie noch nicht für die Verbindung verfügbar.
 :::
 
 ## So funktionieren Anbieter
 
-Jeder Anbieter hat seine eigene Inhaltsbibliothek, die in Ordnern und Dateien organisiert ist. Sobald Sie mit einem Anbieter verbunden sind, erscheinen seine Inhalte in einem Ordner-Browser, in dem Sie in Kategorien hineinsehen, Elemente auswählen und sie zur Wiedergabe herunterladen können.
+Jeder Anbieter hat eine eigene Inhaltsbibliothek, die in Ordnern und Dateien organisiert ist. Sobald Sie mit einem Anbieter verbunden sind, erscheinen seine Inhalte in einer Ordneransicht, in der Sie in Kategorien navigieren, Elemente auswählen und sie zur Wiedergabe herunterladen können.
 
-Verbundene Anbieter erscheinen in der Seitenleiste links unter der Überschrift **Durchsuchen**. Sie können zwischen Anbietern wechseln, indem Sie sie in der Seitenleiste auswählen. So springen Sie während der Einrichtung leicht zwischen Inhaltsquellen hin und her.
+Verbundene Anbieter werden in der Seitenleiste auf der linken Seite des Bildschirms unter der Überschrift **Browse** angezeigt. Sie können zwischen Anbietern wechseln, indem Sie sie in der Seitenleiste auswählen. So lässt sich während der Einrichtung leicht zwischen den Inhaltsquellen wechseln.
 
-Sie können außerdem den Ordner eines verbundenen Anbieters auswählen, um ihn auf Ihrem Fernseher als [Ankündigungen](./announcements.md) in einer Schleife abzuspielen.
+Sie können außerdem einen Ordner von einem beliebigen verbundenen Anbieter auswählen, um ihn als [Ankündigungen](./announcements.md) auf Ihrem Fernseher in einer Schleife abzuspielen.
 
 :::tip
-Anbieter, die Sie direkt am Fernseher verbinden, gelten nur für diesen Fernseher. Wenn Sie den [Geplanten Modus](../scheduled-mode/index.md) verwenden, verbinden Sie Anbieter stattdessen einmal in FreePlay Admin. Dann kann jeder geplante Bildschirm Inhalte aus diesen Anbietern abspielen.
+Anbieter, die Sie am Fernseher verbinden, gelten nur für diesen Fernseher. Wenn Sie den [Geplanten Modus](../scheduled-mode/index.md) verwenden, verbinden Sie Anbieter stattdessen einmal in FreePlay Admin. Dann kann jeder geplante Bildschirm Inhalte von ihnen abspielen.
 :::
 
-## Im Abschnitt enthalten
+## In diesem Abschnitt
 
-- **[Mit Anbietern verbinden](./connecting-providers.md)** – Wie Sie sich authentifizieren und verbinden
-- **[Inhalte durchsuchen und herunterladen](./browsing-content.md)** – Ordner durchsuchen, Dateien herunterladen und Inhalte abspielen
-- **[Ankündigungen](./announcements.md)** – Einen Ordner mit Folien eines Anbieters in einer Schleife abspielen
+- **[Anbieter verbinden](./connecting-providers.md)** - So authentifizieren und verbinden Sie sich
+- **[Inhalte durchsuchen und herunterladen](./browsing-content.md)** - Ordner durchsuchen, Dateien herunterladen und Inhalte abspielen
+- **[Ankündigungen](./announcements.md)** - Eine Ordnerfolge von Anbietern in einer Schleife abspielen

@@ -1,88 +1,88 @@
 ---
-title: "Vejledning: Opsætning af begivenhedsregistrering"
-description: "Opsæt en tilmeldingsformular i B1 Admin til deltageroplysninger og evt. betalinger, indlejr den på hjemmesiden og følg tilmeldingerne."
+title: "Guide: Opsæt tilmelding til begivenheder"
+description: "Opsæt en tilmeldingsformular til begivenheder i B1 Admin for at indsamle deltageroplysninger og eventuelle betalinger, indlejre den på din kirkes hjemmeside og følge tilmeldinger."
 ---
 
-# Opsætning af begivenhedsregistrering
+# Opsæt tilmelding til begivenheder
 
 <div class="article-intro">
 
-Opret en begivenhedsregistreringsformular, saml deltageroplysninger og valgfri betalinger, integrer den på dit kirkewebsted, og administrer indsendelser, når de kommer ind. Til sidst vil du have en deleligt registreringsside for enhver kirkebgivenhed.
+Opret en tilmeldingsformular til begivenheder, indsaml deltageroplysninger og eventuelle betalinger, indlejr den på din kirkes hjemmeside, og håndter indsendelser, efterhånden som de kommer ind. Til sidst har du en delbar tilmeldingsside til enhver kirkebegivenhed.
 
 </div>
 
 :::info
-**To måder at håndtere begivenhedsregistrering:** Denne vejledning dækker **formularbaseret registrering**, som giver dig fuld kontrol over brugerdefinerede felter og betalingindsamling. For enklere begivenheder, hvor du kun skal spore, hvem der kommer, skal du bruge **indfødt begivenhedsregistrering** bygget ind i kalenderen -- se [Oprettelse af kalendere](../calendars/creating-calendars.md#enabling-event-registration) for opsætningsinstruktioner. Indfødt registrering lader medlemmer tilmelde sig direkte fra [B1-webstedet](../../b1-church/events/registering.md) og [mobilappen](../../b1-mobile/events/registering.md) med kapacitetssporing, datovindue og e-mailbekræftelser.
+**To måder at håndtere tilmelding til begivenheder på:** Denne vejledning dækker **formularbaseret tilmelding**, som giver dig fuld kontrol over tilpassede felter og indsamling af betalinger. Til enklere begivenheder, hvor du blot skal holde styr på, hvem der kommer, kan du bruge **indbygget tilmelding til begivenheder** i kalenderen -- se [Opret kalendere](../calendars/creating-calendars.md#enabling-event-registration) for opsætningsvejledning. Indbygget tilmelding gør det muligt for medlemmer at tilmelde sig direkte fra [B1.church eller B1 App](../../b1-church/events/registering.md) med kapacitetsopfølgning, datovinduer og e-mailbekræftelser.
 :::
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynder</h4>
 
 - B1 Admin-konto med administratoradgang
-- For at indsamle betalinger: [Stripe skal være konfigureret](../donations/online-giving-setup.md) først
+- Til indsamling af betalinger: [Stripe skal være konfigureret](../donations/online-giving-setup.md) først
 
 </div>
 
 ## Trin 1: Opret en selvstændig formular
 
-Selvstændige formularer har deres eget offentlige URL, som hvem som helst kan få adgang til -- perfekt til begivenhedsregistrering.
+Selvstændige formularer har deres egen offentlige URL, som alle kan tilgå. Det er perfekt til tilmelding til begivenheder.
 
-Følg vejledningen [Oprettelse af formularer](../forms/creating-forms.md) for at:
+Følg vejledningen [Opret formularer](../forms/creating-forms.md) for at:
 
-1. Gå til Formularer og klik Tilføj formular
-2. Vælg "Selvstændig" type -- dette giver din formular sit eget offentlige URL
-3. Navngiv det efter begivenheden (f.eks. "Mænds tilbagetrækning registrering", "VBS tilmeldelse")
+1. Gå til Formularer og klik på Tilføj formular
+2. Vælg typen "Stand Alone" -- det giver din formular sin egen offentlige URL
+3. Giv den et navn efter begivenheden (f.eks. "Mændenes retræte-tilmelding", "VBS-tilmelding")
 
 ## Trin 2: Tilføj spørgsmål
 
-Byg de felter, du skal bruge for at indsamle fra tilmeldingsdeltagere.
+Opbyg de felter, du skal indsamle fra deltagerne.
 
-Følg vejledningen [Oprettelse af formularer](../forms/creating-forms.md#adding-questions) for at tilføje dine spørgsmål:
+Følg vejledningen [Opret formularer](../forms/creating-forms.md#adding-questions) for at tilføje dine spørgsmål:
 
-1. Gå til fanen Spørgsmål og tilføj felter til de oplysninger, du skal bruge: navn, email, telefon, diætbegrænsninger, T-shirt-størrelse, nødsituationen kontakt osv.
-2. Brug flere valg til muligheder som måltidspræferencer eller session-valg
+1. Gå til fanen Spørgsmål og tilføj felter til de oplysninger, du har brug for: navn, e-mail, telefon, kostrestriktioner, T-shirtstørrelse, nødkontakt osv.
+2. Brug Flervalg til valgmuligheder som måltidspræferencer eller sessionsvalg
 
 :::warning
-Betalingsfelttypeen kræver, at Stripe er konfigureret. Hvis du ikke har opsat online giving endnu, skal du se [Online Giving Setup](../donations/online-giving-setup.md), før du tilføjer betalingsfelter.
+Felttypen Betaling kræver, at Stripe er konfigureret. Hvis du endnu ikke har opsat online-giving, se [Opsætning af online-giving](../donations/online-giving-setup.md), før du tilføjer betalingsfelter.
 :::
 
 ## Trin 3: Konfigurer formularindstillinger
 
-Kontroller, hvornår og hvordan din registreringsformular er tilgængelig.
+Styr, hvornår og hvordan din tilmeldingsformular er tilgængelig.
 
-1. Indstil tilgængelighedsdatoer, hvis registreringen kun skal være åben i en begrænset tid
-2. Kopier det offentlige URL -- du kan dele dette direkte
-3. Tilføj formularmedlemmer med Admin- eller Kun visning-roller for at hjælpe med at administrere indsendelser
+1. Angiv tilgængelighedsdatoer, hvis tilmeldingen kun skal være åben i en begrænset periode
+2. Kopiér den offentlige URL -- du kan dele den direkte
+3. Tilføj formularmedlemmer med rollerne Admin eller Kun visning for at hjælpe med at håndtere indsendelser
 
-## Trin 4: Integrer på dit websted
+## Trin 4: Indlejr på din hjemmeside
 
-Gør registreringsformularen nemt at finde ved at tilføje den til dit kirkewebsted.
+Gør det nemt at finde tilmeldingsformularen ved at tilføje den til din kirkes hjemmeside.
 
-Følg vejledningen [Styring af sider](../website/managing-pages.md) for at:
+Følg vejledningen [Administrer sider](../website/managing-pages.md) for at:
 
-1. I din B1-websteditor skal du tilføje en ny sektion til en side og vælge Form-elementet
-2. Vælg din registreringsformular fra listen
+1. Tilføj en ny sektion til en side i din B1-webstededitor, og vælg elementet Formular
+2. Vælg din tilmeldingsformular fra listen
 
 :::tip
-Del URL'et blandt også via e-mail, sociale medier og kirkebulleter -- jo flere steder det er synligt, desto flere tilmeldinger får du.
+Del også den selvstændige URL via e-mail, sociale medier og kirkens ugeblade -- jo flere steder den er synlig, desto flere tilmeldinger får du.
 :::
 
-## Trin 5: Administrer indsendelser
+## Trin 5: Håndter indsendelser
 
-Spor registreringer, når de kommer ind, og eksportér data, når du har behov for det.
+Følg tilmeldinger, efterhånden som de kommer ind, og eksportér data, når du har brug for det.
 
-Følg vejledningen [Styring af indsendelser](../forms/managing-submissions.md) for at:
+Følg vejledningen [Håndter indsendelser](../forms/managing-submissions.md) for at:
 
-1. Gennemse svar, når de kommer ind på fanen Indsendelser
-2. Eksportér til CSV for regneark, headcount-sporing eller deling med begivenhedkoordinatorer
+1. Gennemgå svar, efterhånden som de kommer ind, under fanen Indsendelser
+2. Eksportér til CSV til regneark, optælling af deltagere eller deling med eventkoordinatorer
 
 ## Du er færdig!
 
-Din begivenhedsregistrering er live. Del linket, integrer det på dit websted, og spor tilmeldinger fra B1 Admin. Når begivenheden er slut, eksportér finallisten til dine records.
+Din tilmelding til begivenheden er nu aktiv. Del linket, indlejr det på din hjemmeside, og følg tilmeldinger fra B1 Admin. Når begivenheden er slut, eksportér den endelige liste til dine arkiver.
 
 ## Relaterede artikler
 
-- [Oprettelse af formularer](../forms/creating-forms.md) -- byg formularer med forskellige felttyper
-- [Styring af indsendelser](../forms/managing-submissions.md) -- gennemgå og eksportér formularresponser
-- [Styring af sider](../website/managing-pages.md) -- integrer formularer på dit websted
-- [Online Giving Setup](../donations/online-giving-setup.md) -- påkrævet for betalingsfelter
+- [Opret formularer](../forms/creating-forms.md) — byg formularer med forskellige felttyper
+- [Håndter indsendelser](../forms/managing-submissions.md) — gennemgå og eksportér formularsvar
+- [Administrer sider](../website/managing-pages.md) — indlejr formularer på din hjemmeside
+- [Opsætning af online-giving](../donations/online-giving-setup.md) — kræves for betalingsfelter

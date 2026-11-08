@@ -377,16 +377,10 @@
     "message": "Bảng điều khiển quản lý nhà thờ cho mọi người, nhóm, tham dự, đóng góp, v.v."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Trang web"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Trang web công khai của nhà thờ và cổng thông tin cho các thành viên."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Di động"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Ứng dụng thành viên cũ cho iOS và Android, nay đã được thay thế bằng ứng dụng web B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Đăng ký"

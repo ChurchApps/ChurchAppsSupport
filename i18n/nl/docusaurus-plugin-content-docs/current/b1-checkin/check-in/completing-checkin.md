@@ -1,66 +1,79 @@
 ---
-title: "Aanmelden voltooien"
-description: "Rond het inchecken bij de kiosk af in B1 Checkin: capaciteitslimieten, labels printen, ophaal-beveiligingscodes en wat de app daarna doet."
+title: "Check-in afronden"
+description: "Rond de kioskcheck-in van een gezin af in B1 Checkin, met informatie over zaalcapaciteit, labelafdruk, beveiligingscodes voor ophalen en wat de app daarna doet."
 ---
 
-# Aanmelden voltooien
+# Check-in afronden
 
 <div class="article-intro">
 
-Zodra u uw huishouden hebt beoordeeld en de nodige groepstoewijzingen hebt aangebracht, bent u klaar om de aanmelding af te ronden. Dit is de laatste stap in de kioskworkflow -- de app dient aanwezigheid in, drukt etiketten af en herstelt voor de volgende familie.
+Zodra je het huishouden hebt nagekeken en eventuele groepstoewijzingen hebt gedaan, ben je klaar om de check-in af te ronden. Dit is de laatste stap in de kioskworkflow -- de app verstuurt de aanwezigheid, drukt labels af en maakt zich klaar voor het volgende gezin.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
-- [Bekijk uw huishouden](./household-review.md) op het scherm voor huishoudhoofddeling
-- [Wijs groepen toe](./group-assignment.md) aan gezinsleden die zich moeten aanmelden voor een specifieke klas of programma
-- Voeg optioneel [gasten toe](./adding-guests.md) die uw familie bezoeken
+- [Controleer je huishouden](./household-review.md) op het scherm voor huishoudcontrole
+- [Wijs groepen toe](./group-assignment.md) aan gezinsleden die moeten inchecken voor een specifieke klas of programma
+- Voeg eventueel [gasten toe](./adding-guests.md) die met je gezin meekomen
 
 </div>
 
-## Hoe aanmelden
+## Inchecken
 
-1. Tik op het scherm **huishoudhoofddeling** op de knop **Aanmelden** onderaan het scherm.
-2. De app dient de aanwezigheidsgegevens in bij de server en toont een **succesbericht** met een groen vinkje en welkomstbericht.
+1. Tik op het scherm voor huishoudcontrole op de knop **Check-in** onderaan het scherm.
+2. De app stuurt de aanwezigheidsgegevens naar de server en toont een **successcherm** met een groen vinkje en een welkomstbericht.
 
-Dat is alles wat nodig is. De aanwezigheid van uw familie is vastgelegd.
+Meer is er niet voor nodig. De aanwezigheid van je gezin is geregistreerd.
 
-## Etiketafdrukken
+Als iemand die je hebt geselecteerd vandaag al voor deze dienst is ingecheckt, verschijnt eerst een venster **Al ingecheckt** met hun namen. Tik op **Opnieuw inchecken** om hun nieuwe groepskeuzes op te slaan, of op **Annuleren** om terug te gaan naar het huishoudscherm.
 
-Als een netwerkprinter is geconfigureerd, drukt de app automatisch etiketten af na aanmelding:
+## Volle zalen en vrijwilligersratio's
 
-- **Naamsetiketten** worden afgedrukt voor elke persoon die is toegewezen aan een groep waarvoor de instelling **Naamplaatje afdrukken** is ingeschakeld. Naamsetiketten bevatten de naam van de persoon, hun groepstoewijzing en allergie-/notitie-informatie indien aanwezig.
-- **Ophaalslips voor ouders** worden afgedrukt wanneer een aangemelde persoon zich in een groep bevindt waarvoor de instelling **Ouderlijke ophaaling** is ingeschakeld. De ophaalslip geeft de kinderen, hun groepstoewijzingen en een unieke **4-tekenige veiligheidscode**.
+Als je kerk [veiligheidslimieten](../../b1-admin/attendance/checkin-safety.md) heeft ingesteld voor zalen, controleert de server die voordat er wordt opgeslagen:
+
+- Als een geselecteerde zaal **vol of gesloten** is, gaat de check-in niet door en noemt de app de zaal, zodat je een andere kunt kiezen.
+- Als het dienstmoment een [check-inschema](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) heeft en het check-invenster op dit moment niet open is, wordt inchecken in de zalen van dat dienstmoment ook geweigerd. Het scherm **Kan nog niet inchecken** toont de zaal met de reden "inchecken is nu niet open". Tik op **Zalen wijzigen** om een ander dienstmoment of een andere groep te kiezen. (Dienstmomenten die al gesloten zijn, worden op het [huishoudscherm](./household-review.md) als **Gesloten** weergegeven en kunnen niet worden gekozen. Je ziet dit dus meestal alleen als een venster sluit terwijl een check-in bezig is.)
+- Een huishouden dat eerder voor een dienstmoment is ingecheckt, kan later terugkomen en een open dienstmoment toevoegen, zelfs nadat het eerdere venster is gesloten. Hun bestaande check-ins blijven behouden en zorgen er niet voor dat de nieuwe check-in wordt geweigerd.
+- Als een kinderzaal **te weinig vrijwilligers** heeft voor de ratio, toont de app ofwel een waarschuwing die een medewerker kan bevestigen om door te gaan, ofwel blokkeert ze de check-in volledig. Wat er gebeurt, hangt af van hoe je kerk het handhaven van de ratio heeft ingesteld.
+
+## Labelafdruk
+
+Als een netwerkprinter is ingesteld, drukt de app na de check-in automatisch labels af:
+
+- **Naamlabels** worden afgedrukt voor elke persoon die is toegewezen aan een groep waarvoor de instelling **Naamlabel afdrukken** is ingeschakeld. Naamlabels bevatten de naam van de persoon, de groepstoewijzing en eventuele allergie- of opmerkingeninformatie die is vastgelegd.
+- **Ophaalbriefjes voor ouders** worden afgedrukt wanneer een ingecheckte persoon in een groep zit waarvoor de instelling **Ophalen door ouders** is ingeschakeld. Personen die als **Vrijwilliger** zijn ingecheckt, worden overgeslagen. Een kinderoppasser die dient in een zaal met Ophalen door ouders krijgt dus geen ophaalbriefje. Het ophaalbriefje vermeldt de kinderen, hun groepstoewijzingen en een unieke **beveiligingscode van 4 tekens**.
 
 :::info
-Dezelfde veiligheidscode verschijnt op zowel het naamsetiket van het kind als de ophaalslip van de ouder. Bij ophaaltijd passen vrijwilligers de codes aan om te verifiëren dat de juiste volwassene elk kind ophaalt.
+Dezelfde beveiligingscode staat op het naamlabel van het kind en op het ophaalbriefje van de ouder. Bij het ophalen vergelijken vrijwilligers de codes om te controleren of de juiste volwassene elk kind ophaalt.
 :::
 
-De veiligheidscode wordt vers gegenereerd voor elke aanmelding en gebruikt alleen medeklinkers en cijfers (klinkers worden uitgesloten om het vormen van ongepaste woorden te voorkomen).
+De beveiligingscode wordt bij elke check-in opnieuw gegenereerd en bevat alleen medeklinkers en cijfers. Klinkers zijn uitgesloten om te voorkomen dat er ongepaste woorden ontstaan.
 
 :::warning
-Als etiketten niet afdrukken, opent u de instellingen van Admin door zeven keer op het **kerklogo** te tikken en vervolgens op **Printer wijzigen** te tikken om de printerverbinding te controleren. Zie [Printerinstellingen](../getting-started/printer-setup.md) voor stappen voor probleemoplossing.
+Als de labels niet worden afgedrukt, open dan de beheerinstellingen door zeven keer op het **kerklogo** te tikken. Tik vervolgens op **Printer wijzigen** om de printerverbinding te controleren. Zie [Printerinstallatie](../getting-started/printer-setup.md) voor stappen bij het oplossen van problemen.
 :::
 
-## Wat gebeurt er na aanmelding
+## Wat er na de check-in gebeurt
 
-- Als een printer is geconfigureerd, drukt de app alle etiketten af en keert automatisch terug naar het **zoekscherm**, klaar voor de volgende familie.
-- Als geen printer is geconfigureerd, geeft het succesbericht enkele seconden weer en keert automatisch terug naar het **zoekscherm**.
+- Als er een printer is ingesteld, drukt de app alle labels af en keert daarna automatisch terug naar het **zoekscherm**, klaar voor het volgende gezin.
+- Als er geen printer is ingesteld, keert de app eveneens automatisch terug naar het **zoekscherm**.
 
-U hoeft niets aan te tikken om terug te gaan naar het zoekscherm -- de app handelt de overgang automatisch af.
+In beide gevallen blijft het successcherm minstens 6 seconden staan vanaf het moment dat het verschijnt (8 seconden wanneer het de mijlpaal van iemands aanwezigheid viert), zodat gezinnen kunnen zien dat de check-in is gelukt. Als afdrukken langer duurt, keert de app ongeveer anderhalve seconde na het afdrukken terug.
+
+Je hoeft niets aan te tikken om terug te gaan naar het zoekscherm; de app regelt de overgang automatisch. Zodra het scherm even zichtbaar is geweest, kun je erop tikken om meteen terug te gaan. Een tik in de eerste anderhalve seconde wordt genegeerd, zodat een snelle dubbeltik op **Check-in** het scherm niet overslaat.
 
 :::tip
-De app wordt volledig hersteld na elke aanmelding, dus er is geen risico dat de ene familie informatie van een andere familie ziet.
+De app wordt na elke check-in volledig gereset, dus er bestaat geen risico dat het ene gezin de gegevens van een ander gezin ziet.
 :::
 
-## Wat wordt vastgelegd
+## Wat er wordt vastgelegd
 
-Wanneer u op **Aanmelden** tikt, stuurt de app het volgende naar de server voor elk gezinslid dat een groepstoewijzing heeft:
+Wanneer je op **Check-in** tikt, stuurt de app het volgende naar de server voor elk huishoudlid met een groepstoewijzing:
 
-- De **persoon** die wordt aangemeld
-- De **dienst** die zij bijwonen
-- De **diensttijd** en **groep** waartoe zij zijn toegewezen
+- De **persoon** die wordt ingecheckt
+- De **dienst** die die persoon bezoekt
+- Het **dienstmoment** en de **groep** waaraan die persoon is toegewezen
 
-Deze gegevens verschijnen in B1 Admin onder de sectie Aanwezigheid, waar uw kerkbeheerders aanwezigheidsgegevens kunnen bekijken en beheren. Zie de [gids voor aanmeldingsbeheer](../../b1-admin/attendance/check-in.md) voor details.
+Deze gegevens verschijnen in B1 Admin onder de sectie Aanwezigheid, waar beheerders van je kerk aanwezigheidsregistraties kunnen bekijken en beheren. Zie de [handleiding voor check-inbeheer](../../b1-admin/attendance/check-in.md) voor meer details.

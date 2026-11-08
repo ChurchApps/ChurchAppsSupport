@@ -1,75 +1,75 @@
 ---
-title: "Göra donationer i B1.church medlemsportal"
-sidebar_label: "Göra en gåva"
-description: "Gör en engångsgåva eller en återkommande gåva till din församling via B1.church, med eller utan konto, och granska din givarhistorik efteråt."
+title: "Att göra donationer i B1.church medlemsportal"
+sidebar_label: "Att göra en donation"
+description: "Ge en engångs- eller återkommande gåva till din församling via B1.church, med eller utan konto, och granska din givhistorik efteråt."
 ---
 
-# Göra en gåva
+# Att göra en donation
 
 <div class="article-intro">
 
-Det finns två sätt att göra en gåva via din kyrkas B1.church-webbplats: den offentliga donationssidan (ingen inloggning krävs) och medlemmarnas donationssida (inloggning krävs). Båda använder ett säkert donationsformulär som drivs av Stripe.
+Det finns två sätt att göra en donation via din församlings B1.church-webbplats: den offentliga donationssidan (ingen inloggning krävs) och medlemmarnas donationssida (inloggning krävs). Båda använder ett säkert donationsformulär som drivs av Stripe.
 
 </div>
 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- För offentliga gåvor behövs inget konto. Besök bara din kyrkas sida **Donera**.
-- För medlemsgåvor med gåvohistorik och sparade betalningsmetoder, [logga in](../getting-started/logging-in.md) på ditt konto först.
+- För offentliga donationer behövs inget konto. Besök helt enkelt din församlings sida **Donera**.
+- För medlemsdonationer med historik och sparade betalningsmetoder, [logga in](../getting-started/logging-in.md) på ditt konto först.
 
 </div>
 
 ## Offentlig donationssida (ingen inloggning krävs)
 
-Vem som helst kan göra en gåva utan att skapa ett konto:
+Vem som helst kan göra en donation utan att skapa ett konto:
 
-1. Gå till din kyrkas sida **Donera**.
+1. Gå till din församlings sida **Donera**.
 2. Donationsformuläret visas på vänster sida av sidan. Välj den **fond** du vill ge till.
 3. Ange dina betalningsuppgifter och det belopp du vill ge.
-4. Skicka formuläret för att slutföra din gåva.
+4. Skicka formuläret för att slutföra din donation.
 
-På höger sida av sidan ser du en länk till **Instruktioner för ACH-betalning** om du hellre vill ge via banköverföring. Det finns också en knapp **Logga in** om du vill logga in för att använda extra funktioner, som gåvohistorik.
+På höger sida av sidan ser du en länk till **Instruktioner för ACH-betalning** om du föredrar att ge via banköverföring. Det finns också en knapp **Logga in** om du vill logga in för att använda extra funktioner, till exempel donationshistorik.
 
 :::tip
-Om du redan är inloggad när du besöker den offentliga donationssidan omdirigeras du automatiskt till medlemmarnas donationssida, där du har tillgång till hela din gåvohistorik och sparade betalningsmetoder.
+Om du redan är inloggad när du besöker den offentliga donationssidan skickas du automatiskt vidare till medlemmarnas donationssida, där du har tillgång till hela din givhistorik och dina sparade betalningsmetoder.
 :::
 
 ## Medlemmarnas donationssida (inloggad)
 
-När du är inloggad visar sidan **Gåvor** i medlemsportalen knapparna **Ge** och **Skriv ut kontoutdrag** överst, följt av dessa avsnitt:
+När du är inloggad visar sidan **Gåvor** i medlemsportalen en knapp **Ge** och en knapp **Skriv ut kontoutdrag** högst upp, följt av dessa avsnitt:
 
-- **I år** (rubriken anger innevarande år) -- Din summa för året hittills och antalet gåvor, med en länk till **Hela historiken**. Se [Gåvohistorik](./donation-history.md) för detaljer.
-- **Återkommande** -- Dina schemalagda gåvor, med en länk till **Hantera**.
-- **Senaste aktivitet** -- Dina tre senaste gåvor, med en länk till **Upprepa senaste gåvan** som öppnar donationsformuläret.
-- **Betalningsmetoder** -- Dina sparade kort och bankkonton, med en länk till **Hantera** för att lägga till, ta bort eller ange en standard.
-- Ett kampanjkort med framstegsindikator, om din kyrka har en aktiv kampanj.
+- **I år** (med det aktuella året som rubrik) -- Din summa för året hittills och antal gåvor, med en länk **All historik**. Se [Donationshistorik](./donation-history.md) för mer information.
+- **Återkommande** -- Dina schemalagda gåvor, med en länk **Hantera**.
+- **Senaste aktivitet** -- Dina tre senaste gåvor, med en länk **Upprepa senaste gåvan** som öppnar donationsformuläret.
+- **Betalningsmetoder** -- Dina sparade kort och bankkonton, med en länk **Hantera** för att lägga till, ta bort eller ange en standardmetod.
+- Ett kort med kampanjens framsteg, om din församling har en aktiv kampanj.
 
 Så här ger du:
 
-1. Öppna sidan för gåvor från fliken **Donera** i din kyrka, från knappen **Ge** i avsnittet **Gåvor** på din [startsida](../getting-started/navigating.md#home), eller från **Historik** i avsnittet **Gåvor** på [Min sida](../getting-started/me-page.md). På sidan Gåvor trycker du på **Ge** för att öppna donationsformuläret.
-2. Välj den **fond** du vill ge till och ange ditt gåvobelopp.
+1. Öppna sidan för gåvor från fliken **Donera** i din församling, från knappen **Ge** i avsnittet **Gåvor** på din [startpanel](../getting-started/navigating.md#home), eller från **Historik** i avsnittet **Gåvor** på din [Me-sida](../getting-started/me-page.md). På sidan Gåvor trycker du på **Ge** för att öppna donationsformuläret.
+2. Välj den **fond** du vill ge till och ange ditt donationsbelopp. Listan visar endast de fonder som din församling erbjuder givare, även om du är en medarbetare som kan se andra fonder i B1 Admin.
 3. Välj en befintlig sparad betalningsmetod eller ange nya betalningsuppgifter.
-4. Skicka formuläret för att slutföra din gåva.
+4. Skicka formuläret för att slutföra din donation.
 
-När din gåva har behandlats visas ett meddelande om att den lyckades, och din gåva syns i din [gåvohistorik](./donation-history.md).
+När din donation har behandlats visas ett meddelande om att den lyckats, och din donation syns i din [donationshistorik](./donation-history.md).
 
 :::info
-Om gåvor du har gett registrerades i mer än en valuta, omvandlas din summa för året hittills och summan i historiken till din kyrkas valuta, med en notering under den: **Omvandlat till aktuella växelkurser**. Enskilda gåvor i din historik visar fortfarande sin ursprungliga valuta.
+Om gåvor du har gett registrerats i fler än en valuta, omvandlas din summa för året hittills och summan i historiken till din församlings valuta, med en anteckning **Omvandlat till aktuella växelkurser** under. Enskilda donationer i din historik visar fortfarande sin ursprungliga valuta.
 :::
 
 ## Betalningsmetoder
 
-Gåvor behandlas säkert via **Stripe**. Du kan betala med kreditkort, betalkort eller ställa in en ACH-banköverföring. När du är inloggad kan dina betalningsmetoder sparas för framtida användning, vilket gör det snabbare att ge nästa gång.
+Donationer behandlas säkert via **Stripe**. Du kan betala med kreditkort, betalkort eller ställa in en ACH-banköverföring. När du är inloggad kan dina betalningsmetoder sparas för framtida bruk, vilket gör det snabbare att ge nästa gång.
 
-:::info Ge med bankkonto utan att logga in
-Om du ger som gäst (utan att logga in) med ett bankkonto måste kontot verifieras direkt genom att du loggar in på din bank. Om det inte går ser du meddelandet: "Det här bankkontot kunde inte verifieras direkt. Ge med kort, eller logga in och lägg till bankkontot under din givarprofil." Bankkonton som behöver några dagars verifiering kan bara läggas till efter att du har loggat in.
+:::info Ge via bankkonto utan att logga in
+Om du ger som gäst (utan att logga in) via bankkonto måste kontot verifieras direkt genom att du loggar in på din bank. Om det inte går visas meddelandet "Det här bankkontot kunde inte verifieras direkt. Ge med kort, eller logga in och lägg till bankkontot under din givarprofil." Bankkonton som behöver några dagars verifiering kan bara läggas till när du har loggat in.
 :::
 
 :::warning
-Om din gåva inte går igenom, kontrollera dina betalningsuppgifter och försök igen. Om problemet kvarstår, kontakta din kyrkas kansli för hjälp.
+Om din donation inte går igenom, kontrollera dina betalningsuppgifter och försök igen. Om problemet kvarstår, kontakta din församlings kontor för hjälp.
 :::
 
 ## Nästa steg
 
-- [Gåvohistorik](./donation-history.md) -- Visa dina tidigare gåvor och skriv ut gåvokontoutdrag
+- [Donationshistorik](./donation-history.md) -- Visa dina tidigare donationer och skriv ut kontoutdrag för gåvor

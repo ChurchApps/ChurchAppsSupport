@@ -1,14 +1,14 @@
 ---
 title: "Profilio redagavimas B1.church narių portale"
 sidebar_label: "Profilio redagavimas"
-description: "Atnaujinkite kontaktinius duomenis, namų ūkio narius, prisijungimo el. paštą ir slaptažodį bei privatumo nustatymus B1.church narių portale."
+description: "Atnaujinkite kontaktinius duomenis, šeimos narius, prisijungimo el. paštą ir slaptažodį bei privatumo nustatymus B1.church narių portale."
 ---
 
 # Profilio redagavimas
 
 <div class="article-intro">
 
-Jūsų profilio puslapis nario portale leidžia atnaujinti kontaktinę informaciją, tvarkyti savo namų ūkį, keisti paskyros el. pašto adresą ir slaptažodį bei nustatyti, kas gali matyti jūsų adresą, telefono numerį ir el. pašto adresą.
+Jūsų profilio puslapis narių portale leidžia atnaujinti kontaktinę informaciją, tvarkyti šeimos narius, keisti paskyros el. pašto adresą ir slaptažodį bei kontroliuoti, kas gali matyti jūsų adresą, telefono numerį ir el. pašto adresą.
 
 </div>
 
@@ -19,66 +19,75 @@ Jūsų profilio puslapis nario portale leidžia atnaujinti kontaktinę informaci
 <div class="prereqs">
 <h4>Prieš pradedant</h4>
 
-- Turite būti [prisijungę](./logging-in.md) – profilio redagavimui reikalinga paskyra
+- Turite [prisijungti](./logging-in.md) — profilio redagavimui reikalinga paskyra
 
 </div>
 
 ## Profilio atidarymas
 
-Palieskite savo profilio nuotrauką viršutinėje programos juostoje arba palieskite **Redaguoti profilį** puslapio **Daugiau** viršuje ar savo [Mano puslapyje](./me-page.md), kad atidarytumėte **Jūsų profilis** adresu `/mobile/profileEdit`. Puslapį sudaro skyrių sąrašas – **Nuotrauka ir vardas**, **Kontaktai**, **Namų ūkis**, **Paskyra** ir **Privatumas** – kiekvienas rodo jūsų dabartinę informaciją su nuoroda **Redaguoti** (arba **Pridėti šeimos narį** / **Keisti**), kuri atidaro skydelį pakeitimams atlikti.
+Viršutinėje programos juostoje palieskite savo profilio nuotrauką arba puslapio **Daugiau** viršuje ar savo [Mano puslapyje](./me-page.md) palieskite **Redaguoti profilį**, kad atidarytumėte **Jūsų profilis** adresu `/mobile/profileEdit`. Puslapis – tai vienas lapas su skyriais – **Nuotrauka ir vardas**, **Kontaktai**, **Šeima**, **Paskyra** ir **Privatumas** – kiekvienas rodo jūsų dabartinę informaciją ir turi nuorodą **Redaguoti** (arba **Pridėti šeimos narį** / **Keisti**), kuri atidaro skydelį pakeitimams atlikti.
 
-## Nuotrauka ir vardas bei Kontaktai
+## Nuotrauka, vardas ir kontaktai
 
 Šiuose skyriuose pateikiama informacija, kurią jūsų bažnyčia mato jūsų asmens įraše:
 
-- **Nuotrauka ir vardas** – palieskite **Keisti nuotrauką**, kad įkeltumėte naują paveikslėlį, ir redaguokite savo vardą, antrąjį vardą ir pavardę.
-- **Kontaktai** – el. paštas, mobilusis telefonas, namų telefonas, darbo telefonas, gimimo data ir adresas (gatvė, miestas, valstija ir pašto kodas). Jei įjungiate teksto pranešimus [Pranešimų nuostatose](./notification-preferences.md), jie siunčiami į jūsų mobilųjį numerį.
+- **Nuotrauka ir vardas** — palieskite **Keisti nuotrauką**, kad įkeltumėte naują paveikslėlį, ir redaguokite **Titulą**, vardą, antrąjį vardą ir pavardę. Titului pasirinkite vieną iš siūlomų variantų (Mr, Mrs, Miss, Ms, Dr, Prof, Rev arba Pastor) arba įveskite savo, iki 10 simbolių.
+- **Kontaktai** — el. paštas, mobilusis telefonas, namų telefonas, darbo telefonas, gimimo data ir jūsų adresas (gatvė, miestas, valstija ir pašto kodas). Jei įjungiate teksto žinutes [Pranešimų nustatymuose](./notification-preferences.md), jos bus siunčiamos į jūsų mobilųjį numerį.
 
 Atlikite pakeitimus skydelyje ir palieskite **Išsaugoti pakeitimus**.
 
 :::info
-Jei jūsų bažnyčia reikalauja patvirtinti katalogo pakeitimus, puslapyje rodomas tekstas „Pakeitimai jūsų profilyje siunčiami bažnyčios darbuotojams patvirtinti.“, o mygtuke rašoma **Pateikti patvirtinti** – jūsų pakeitimai pateikiami kaip prašymas, o ne taikomi iš karto. Kaip jūsų bažnyčia šiuos pakeitimus peržiūri, žr. [Profilio pakeitimų patvirtinimas](/docs/b1-admin/profile/approving-profile-changes).
+Jei jūsų bažnyčia reikalauja patvirtinimo katalogo pakeitimams, puslapyje rodomas tekstas „Profilio pakeitimai siunčiami bažnyčios darbuotojams patvirtinti.“, o mygtukas vadinasi **Pateikti patvirtinimui** – jūsų pakeitimai pateikiami kaip prašymas, o ne taikomi iš karto. Kaip jūsų bažnyčia tai peržiūri, žr. [Profilio pakeitimų patvirtinimas](/docs/b1-admin/profile/approving-profile-changes).
 :::
 
-## Namų ūkis
+## Šeima
 
-Skyriuje Namų ūkis rodomi kiti žmonės, susieti su jūsų namų ūkiu, kiekvienas su savo namų ūkio vaidmeniu (Galva, Sutuoktinis, Vaikas ir pan.). Palieskite namų ūkio narį, kad peržiūrėtumėte jo informaciją.
+Skyriuje **Šeima** rodomi kiti jūsų šeimai priskirti asmenys, kiekvienas su savo šeimos vaidmeniu (Galva, Sutuoktinis, Vaikas ir pan.). Palieskite šeimos narį, kad peržiūrėtumėte jo duomenis.
 
-Norėdami pridėti šeimos narį, kurio sistemoje dar nėra, palieskite **Pridėti šeimos narį**, įveskite jo vardą ir palieskite **Pridėti**. Nauji šeimos nariai įtraukiami į laukiančiųjų sąrašą ir kartu su kitais profilio pakeitimais pateikiami bažnyčiai peržiūrėti.
+Norėdami pridėti šeimos narį, kurio sistemoje dar nėra:
+
+1. Palieskite **Pridėti šeimos narį**.
+2. Įveskite jo **Vardą**. **Pavardė** iš pradžių užpildoma jūsų pavarde; pakeiskite ją, jei jo pavardė kitokia.
+3. Neprivaloma įrašykite jo **Titulą** ir **Mobilųjį telefoną**.
+4. Pasirinkite jo **Šeimos vaidmenį**: **Galva**, **Sutuoktinis**, **Vaikas** arba **Kita** (numatytasis).
+5. Palieskite **Pridėti**. Jie atsiras sąraše **Laukiantys šeimos nariai** su nurodytu vaidmeniu; norėdami pašalinti asmenį iš sąrašo, palieskite **Pašalinti**. Pakartokite kiekvienam kitam asmeniui.
+6. Palieskite **Išsaugoti pakeitimus** (arba **Pateikti patvirtinimui**).
+
+Jei jūsų bažnyčia peržiūri katalogo pakeitimus, nauji šeimos nariai pateikiami kartu su kitais jūsų pakeitimais, kad bažnyčia juos patvirtintų. Priešingu atveju jie priskiriami jūsų šeimai iš karto, kai išsaugote.
 
 ## Paskyra
 
-Skyriuje Paskyra tvarkomas jūsų prisijungimas, o ne bažnyčios profilis. Palieskite **Redaguoti**, kad jį atidarytumėte:
+Skyrius **Paskyra** tvarko jūsų prisijungimą, o ne bažnyčios profilį. Norėdami jį atidaryti, palieskite **Redaguoti**:
 
-- **Rodomas vardas** – vardas ir pavardė, rodomi jūsų prisijungimo paskyroje (skiriasi nuo vardo bažnyčios profilyje).
-- **Keisti el. paštą** – atnaujinkite el. pašto adresą, kurį naudojate prisijungimui.
-- **Keisti slaptažodį** – įveskite dabartinį slaptažodį, tada naują slaptažodį du kartus. Naujas slaptažodis turi būti bent 8 simbolių ilgio.
+- **Rodomas vardas** — vardas ir pavardė, rodomi jūsų prisijungimo duomenyse (atskirai nuo vardo bažnyčios profilyje).
+- **Keisti el. paštą** — atnaujinkite el. pašto adresą, kurį naudojate prisijungimui.
+- **Keisti slaptažodį** — įveskite dabartinį slaptažodį, tada naują slaptažodį du kartus. Naujas slaptažodis turi būti bent 8 simbolių ilgio.
 
 Kiekviena dalis turi savo mygtuką **Išsaugoti**.
 
 ## Privatumas
 
-Skyriuje Privatumas rodoma, kas gali matyti jūsų kontaktinę informaciją visose ChurchApps programose. Palieskite **Keisti**, kad atidarytumėte **Matomumo nuostatas**:
+Skyriuje **Privatumas** rodoma, kas gali matyti jūsų kontaktinę informaciją visose ChurchApps programose. Palieskite **Keisti**, kad atidarytumėte **Matomumo nustatymus**:
 
-- **Paslėpti mane nario kataloge** – jungiklis, kuris visiškai pašalina jus iš [nario katalogo](../community/member-directory.md).
-- **Adreso matomumas**, **Telefono matomumas** ir **El. pašto matomumas** – kiekvienas turi savo išskleidžiamąjį sąrašą, todėl, pavyzdžiui, galite leisti visai bažnyčiai matyti savo el. paštą, o adresą laikyti labiau privačiu. Pasirinkimai tokie:
+- **Paslėpti mane nuo narių katalogo** — jungiklis, kuris visiškai pašalina jus iš [narių katalogo](../community/member-directory.md).
+- **Adreso matomumas**, **Telefono matomumas** ir **El. pašto matomumas** — kiekvienas turi savo išskleidžiamąjį sąrašą, todėl, pavyzdžiui, galite dalytis el. paštu su visa bažnyčia, o adresą laikyti labiau privatų. Galimi pasirinkimai:
 
 | Lygis | Kas gali matyti |
 |---|---|
 | **Visi** | Matoma visiems, kurie gali peržiūrėti katalogą. |
 | **Tik nariams** | Matoma kitiems prisijungusiems bažnyčios nariams. |
-| **Tik mano grupėms** | Matoma tik grupių, kurių esate narys, nariams. |
-| **Mano grupių vadovai ir darbuotojai** | Matoma tik bažnyčios darbuotojams ir grupių, kurių esate narys, vadovams. |
-| **Tik darbuotojams** | Matoma tik bažnyčios darbuotojams (asmenims su „Staff“ narystės statusu arba „People“ peržiūros leidimu). |
+| **Tik mano grupių** | Matoma tik grupių, kuriose esate, nariams. |
+| **Mano grupių vadovams ir darbuotojams** | Matoma tik bažnyčios darbuotojams ir grupių, kuriose esate, vadovams. |
+| **Tik darbuotojams** | Matoma tik bažnyčios darbuotojams (asmenims, turintiems narystės statusą „Staff“ arba teisę peržiūrėti žmones). |
 
-Palieskite **Išsaugoti**, kad pritaikytumėte pasirinkimus. Jūsų bažnyčia nustato numatytąją reikšmę kiekvienam iš šių trijų laukų – žr. [Mobiliosios programos nustatymai](/docs/b1-admin/settings/mobile-app) – tačiau tai, ką pasirenkate čia, pakeičia šią numatytąją reikšmę jūsų įrašui.
+Palieskite **Išsaugoti**, kad pritaikytumėte pasirinkimus. Jūsų bažnyčia nustato numatytąjį nustatymą kiekvienam iš šių trijų laukų – žr. [Mobiliosios programos nustatymai](/docs/b1-admin/settings/mobile-app) – tačiau tai, ką pasirinksite čia, pakeičia šį numatytąjį nustatymą jūsų asmeniniam įrašui.
 
 :::tip
-Savo informaciją visada matote nepriklausomai nuo šių nuostatų, o darbuotojai, turintys „People“ peržiūros leidimą, ją visada gali matyti.
+Visada matote savo informaciją neatsižvelgdami į šiuos nustatymus, o darbuotojai, turintys teisę peržiūrėti žmones, ją visada gali matyti taip pat.
 :::
 
 ## Susiję straipsniai
 
-- [Mano puslapis](./me-page.md) – jūsų asmeninė suvestinė
-- [Nario katalogas](../community/member-directory.md) – kitų narių naršymas
-- [Profilio pakeitimų patvirtinimas](/docs/b1-admin/profile/approving-profile-changes) – kaip jūsų bažnyčia peržiūri pateiktus pakeitimus
+- [Mano puslapis](./me-page.md) — Jūsų asmeninis valdymo skydas
+- [Narių katalogas](../community/member-directory.md) — Kitų narių naršymas
+- [Profilio pakeitimų patvirtinimas](/docs/b1-admin/profile/approving-profile-changes) — Kaip bažnyčia peržiūri pateiktus pakeitimus

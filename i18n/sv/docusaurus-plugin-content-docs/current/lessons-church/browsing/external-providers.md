@@ -1,58 +1,60 @@
 ---
 title: "Externa leverantörer"
-description: "Så lägger tredjepartsleverantörer av läroplaner till sitt innehåll i Lessons.church med Open Lesson Format och hur du ansluter en från portalen."
+description: "Hur tredjepartsleverantörer av läroplaner delar lektioner via Open Lesson Format, och hur din församling lägger till en leverantör i Lessons.church och schemalägger deras lektioner."
 ---
 
 # Externa leverantörer
 
 <div class="article-intro">
 
-Lessons.church är inte begränsad till sitt eget läroplansmaterial. Läroplansleverantörer från tredje part kan publicera sitt innehåll i **Open Lesson Format**, och det innehållet visas tillsammans med Lessons.church egna program för en enhetlig surfupplevelse.
+Lessons.church är inte begränsat till sin egen läroplan. Tredjepartsleverantörer av läroplaner kan publicera sitt innehåll via **Open Lesson Format**. När din församling har lagt till en leverantör kan du schemalägga deras lektioner för dina klassrum precis bredvid Lessons.church-biblioteket.
 
 </div>
 
 <div class="prereqs">
 <h4>Innan du börjar</h4>
 
-- Läs om hur innehållet är organiserat i [Program och studier](./programs-and-studies.md)
-- För att lägga till en leverantörsanslutning behöver du ett [Lessons.church-konto](../getting-started/creating-account.md) med åtkomst till din kyrkas portal
+- Förstå hur innehållet är organiserat genom att läsa [Program och studier](./programs-and-studies.md)
+- För att lägga till en leverantörsanslutning behöver du ett [Lessons.church-konto](../getting-started/creating-account.md) med åtkomst till din församlings klassrumsscheman
 
 </div>
 
 ## Vad är externa leverantörer?
 
-En extern leverantör är en organisation som publicerar kyrklig läroplan i Open Lesson Format -- en standard som gör det möjligt att dela lektionsinnehåll mellan plattformar. När en leverantör gör sitt innehåll tillgängligt i det här formatet kan Lessons.church hämta in det och visa det precis som sina egna program.
+En extern leverantör är varje organisation som publicerar kyrklig läroplan med Open Lesson Format -- en standard som gör det möjligt att dela lektionsinnehåll mellan plattformar. När en leverantör gör sitt innehåll tillgängligt i det här formatet kan Lessons.church läsa det och visa dess lektioner med samma layout som de egna.
 
-Det innebär att du får tillgång till ett större urval av läroplaner utan att behöva besöka flera webbplatser.
-
-## Bläddra bland externt innehåll
-
-Externt leverantörsinnehåll fungerar exakt likadant som inbyggt innehåll:
-
-1. Program från externa leverantörer visas på Lessons.churchs startsida tillsammans med andra program.
-2. Klicka på ett **program** för att se dess studier.
-3. Klicka på en **studie** för att se dess lektioner.
-4. Visa lektionerna med samma layout -- avsnitt, roller, åtgärder, videor och nedladdningsbara material.
-
-Det finns ingen särskild process eller separat sektion för externt innehåll. Allt är integrerat i ett enda bibliotek för enkel surfning.
+Det innebär att du får tillgång till ett bredare urval av läroplaner utan att behöva besöka flera webbplatser.
 
 ## Lägga till leverantörsanslutningar
 
-Om din kyrka använder en läroplansleverantör som stöder Open Lesson Format och du vill att deras innehåll ska finnas tillgängligt i din Lessons.church-portal:
+Om din församling använder en läroplansleverantör som stöder Open Lesson Format:
 
 1. Logga in på ditt Lessons.church-konto.
-2. Gå till sidan **Externa leverantörer** i portalen.
-3. Lägg till leverantörens anslutnings-URL.
-4. Deras program och studier blir tillgängliga för din kyrka att bläddra bland, schemalägga och använda i klassrum.
+2. Klicka på **Externa leverantörer** i navigeringen.
+3. Klicka på **Lägg till leverantör**, ange ett **Leverantörsnamn** och leverantörens **API-URL**, och klicka sedan på **Spara**.
+
+Se [Tredjepartsleverantörer](../admin/third-party-providers.md) för de fullständiga stegen.
 
 :::info
-Att lägga till en extern leverantörsanslutning görs via Lessons.church-portalen och kräver ett inloggat konto. Att bläddra bland innehåll som redan har lagts till av plattformen kräver inget konto.
+En extern leverantör läggs till endast för din församling. Dess program visas inte på den publika startsidan för Lessons.church eller i sökningar.
+:::
+
+## Använda externt innehåll
+
+När en leverantör har lagts till är dess program, studier och lektioner tillgängliga när du schemalägger:
+
+1. När du [lägger till en lektion i ett klassrums schema](../classrooms/scheduling-lessons.md), välj leverantören under **Leverantör**.
+2. Välj **Program**, **Studie**, **Lektion** och **Plats** på samma sätt som du skulle göra för en Lessons.church-lektion.
+3. I klassrummets schema klickar du på **Visa lektion** under en schemalagd extern lektion för att öppna den. Den använder samma layout som inbyggda lektioner -- avsnitt, roller, åtgärder, videor och nedladdningsbart material.
+
+:::note
+Lektioner från externa leverantörer kan inte [anpassas](../customization/customizing-lessons.md). Endast Lessons.church-lektioner visar länken **Anpassa**.
 :::
 
 ## För innehållsskapare
 
-Om du är läroplansutgivare och är intresserad av att göra ditt innehåll tillgängligt på Lessons.church erbjuder Open Lesson Format ett standardiserat sätt att dela dina program, studier och lektioner. Kontakta Lessons.church-teamet eller besök utvecklardokumentationen för integrationsdetaljer.
+Om du är en läroplanspublicist som är intresserad av att göra ditt innehåll tillgängligt på Lessons.church, ger Open Lesson Format ett standardiserat sätt att dela dina program, studier och lektioner. Kontakta Lessons.church-teamet eller besök utvecklardokumentationen för integrationsdetaljer.
 
 :::tip
-Om du är administratör och hanterar flöden från tredjepartsleverantörer på plattformsnivå, se [Tredjepartsleverantörer](../admin/third-party-providers.md) i avsnittet Administration.
+För steg-för-steg-instruktioner om hur du lägger till, redigerar och tar bort en leverantör, se [Tredjepartsleverantörer](../admin/third-party-providers.md).
 :::

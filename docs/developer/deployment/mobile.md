@@ -1,20 +1,20 @@
 ---
 title: "Mobile Deployment"
-description: "Walks through building Android and iOS releases of the B1 Mobile app with Expo EAS, submitting them to the app stores, and pushing OTA updates."
+description: "Walks through building Android and iOS releases of Expo apps such as B1 Checkin, submitting them to the app stores, and pushing OTA updates with EAS."
 ---
 
 # Mobile Deployment
 
 <div class="article-intro">
 
-ChurchApps mobile apps are built and deployed using **Expo EAS Build** and distributed through the app stores. This page covers building, submitting, and pushing over-the-air updates for both Android and iOS.
+ChurchApps' Expo mobile apps, such as B1 Checkin, are built with **Expo EAS Build** or a local Gradle build and distributed through the app stores. This page covers building, submitting, and pushing over-the-air updates for both Android and iOS, using B1 Checkin as the example.
 
 </div>
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up the mobile app locally -- see [B1 Mobile](../mobile/b1-mobile.md)
+- Set up the app locally -- see [Mobile Apps](../mobile/index.md#local-setup)
 - Install and configure the [EAS CLI](https://docs.expo.dev/eas/)
 - Have access to the Google Play Console (Android) and/or Apple App Store Connect (iOS)
 
@@ -24,21 +24,31 @@ ChurchApps mobile apps are built and deployed using **Expo EAS Build** and distr
 
 ### Android
 
+Android release builds run locally and are signed with the release keystore from EAS. Download it once with `npx eas-cli credentials -p android` (choose **credentials.json: Download credentials from EAS**), then run:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+The Google Play bundle is written to `android/app/build/outputs/bundle/release/app-release.aab`. To build on EAS instead, run `yarn build:android:eas`.
 
 ### iOS
 
+iOS builds always run on EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
 ## Submitting to App Stores
 
 ### Android -- Google Play Store
 
-After a successful EAS build, the Android binary (AAB) is submitted to the Google Play Store through the Play Console.
+Upload the AAB through the Play Console, or submit it with EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
@@ -53,7 +63,7 @@ eas submit --platform ios
 For JavaScript-only changes that do not require app store review, use over-the-air (OTA) updates:
 
 ```bash
-npm run update:production
+yarn update
 ```
 
 This uses EAS Update to push changes directly to users without a full store submission.
@@ -67,10 +77,10 @@ OTA updates are significantly faster than store builds -- changes can reach user
 Before creating a store build, version numbers must be updated in multiple files:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` and `versionCode`)
+
+The iOS build number is incremented automatically by EAS.
 
 :::warning
 Forgetting to update version numbers in all files will cause build failures or app store rejection. Double-check every file listed above before starting a production build.
@@ -78,6 +88,6 @@ Forgetting to update version numbers in all files will cause build failures or a
 
 ## Related Articles
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Local setup and development guide
+- **[Mobile Apps](../mobile/index.md)** -- Local setup and development guide
 - **[API Deployment](./apis.md)** -- Deploying the backend APIs
 - **[Web App Deployment](./web-apps.md)** -- Deploying the frontend web applications

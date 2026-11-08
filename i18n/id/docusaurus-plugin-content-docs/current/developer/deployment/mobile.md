@@ -1,20 +1,20 @@
 ---
-title: "Penerapan Aplikasi Seluler"
-description: "Panduan membangun rilis Android dan iOS aplikasi B1 Mobile dengan Expo EAS, mengirimkannya ke toko aplikasi, dan mendorong pembaruan OTA."
+title: "Penerapan Aplikasi Mobile"
+description: "Panduan membangun rilis Android dan iOS untuk aplikasi Expo seperti B1 Checkin, mengirimkannya ke toko aplikasi, dan mendorong pembaruan OTA dengan EAS."
 ---
 
-# Penerapan Aplikasi Seluler
+# Penerapan Aplikasi Mobile
 
 <div class="article-intro">
 
-Aplikasi seluler ChurchApps dibangun dan diterapkan menggunakan **Expo EAS Build** serta didistribusikan melalui toko aplikasi. Halaman ini membahas cara membangun, mengirimkan, dan mendorong pembaruan over-the-air (OTA) untuk Android maupun iOS.
+Aplikasi mobile Expo milik ChurchApps, seperti B1 Checkin, dibangun dengan **Expo EAS Build** atau build Gradle lokal, lalu didistribusikan melalui toko aplikasi. Halaman ini membahas cara membangun, mengirimkan, dan mendorong pembaruan over-the-air (OTA) untuk Android dan iOS, dengan B1 Checkin sebagai contoh.
 
 </div>
 
 <div class="prereqs">
-<h4>Sebelum Anda Mulai</h4>
+<h4>Sebelum Memulai</h4>
 
-- Siapkan aplikasi seluler secara lokal -- lihat [B1 Mobile](../mobile/b1-mobile.md)
+- Siapkan aplikasi secara lokal -- lihat [Aplikasi Mobile](../mobile/index.md#local-setup)
 - Pasang dan konfigurasikan [EAS CLI](https://docs.expo.dev/eas/)
 - Pastikan Anda memiliki akses ke Google Play Console (Android) dan/atau Apple App Store Connect (iOS)
 
@@ -24,21 +24,31 @@ Aplikasi seluler ChurchApps dibangun dan diterapkan menggunakan **Expo EAS Build
 
 ### Android
 
+Build rilis Android dijalankan secara lokal dan ditandatangani dengan keystore rilis dari EAS. Unduh sekali saja dengan `npx eas-cli credentials -p android` (pilih **credentials.json: Download credentials from EAS**), lalu jalankan:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Bundle Google Play akan ditulis ke `android/app/build/outputs/bundle/release/app-release.aab`. Untuk membangun di EAS sebagai gantinya, jalankan `yarn build:android:eas`.
 
 ### iOS
 
+Build iOS selalu dijalankan di EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
 ## Mengirimkan ke Toko Aplikasi
 
 ### Android -- Google Play Store
 
-Setelah build EAS berhasil, berkas Android (AAB) dikirimkan ke Google Play Store melalui Play Console.
+Unggah AAB melalui Play Console, atau kirimkan dengan EAS:
+
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
 ### iOS -- Apple App Store
 
@@ -50,34 +60,34 @@ eas submit --platform ios
 
 ## Pembaruan OTA
 
-Untuk perubahan yang hanya menyangkut JavaScript dan tidak memerlukan tinjauan toko aplikasi, gunakan pembaruan over-the-air (OTA):
+Untuk perubahan yang hanya berupa JavaScript dan tidak memerlukan tinjauan toko aplikasi, gunakan pembaruan over-the-air (OTA):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
 Perintah ini menggunakan EAS Update untuk mendorong perubahan langsung ke pengguna tanpa pengiriman penuh ke toko aplikasi.
 
 :::tip
-Pembaruan OTA jauh lebih cepat dibandingkan build toko -- perubahan bisa sampai ke pengguna dalam hitungan menit, bukan hari. Gunakan untuk perbaikan bug, perubahan teks, dan penyesuaian antarmuka kecil yang tidak melibatkan perubahan kode native.
+Pembaruan OTA jauh lebih cepat daripada build toko -- perubahan bisa sampai ke pengguna dalam hitungan menit, bukan hari. Gunakan untuk perbaikan bug, perubahan teks, dan penyesuaian UI kecil yang tidak melibatkan perubahan kode native.
 :::
 
 ## Nomor Versi
 
-Sebelum membuat build untuk toko, nomor versi harus diperbarui di beberapa berkas sekaligus:
+Sebelum membuat build untuk toko, nomor versi harus diperbarui di beberapa file:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` dan `versionCode`)
+
+Nomor build iOS ditambah secara otomatis oleh EAS.
 
 :::warning
-Jika lupa memperbarui nomor versi di semua berkas, build akan gagal atau aplikasi bisa ditolak oleh toko aplikasi. Periksa ulang setiap berkas di atas sebelum memulai build produksi.
+Jika lupa memperbarui nomor versi di semua file, build akan gagal atau aplikasi ditolak oleh toko aplikasi. Periksa ulang setiap file di atas sebelum memulai build produksi.
 :::
 
 ## Artikel Terkait
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** -- Panduan penyiapan lokal dan pengembangan
-- **[Penerapan API](./apis.md)** -- Menerapkan layanan backend API
+- **[Aplikasi Mobile](../mobile/index.md)** -- Panduan pengaturan lokal dan pengembangan
+- **[Penerapan API](./apis.md)** -- Menerapkan API backend
 - **[Penerapan Aplikasi Web](./web-apps.md)** -- Menerapkan aplikasi web frontend

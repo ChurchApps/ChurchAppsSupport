@@ -377,16 +377,10 @@
     "message": "Administrasjonspanel for kirkeforvaltning av personer, grupper, oppmote, donasjoner og mer."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Nettsted"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Offentlig kirkenettsted og medlemsportal."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobil"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Eldre medlemsapp for iOS og Android, nå erstattet av B1.church-nettappen."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Innsjekking"

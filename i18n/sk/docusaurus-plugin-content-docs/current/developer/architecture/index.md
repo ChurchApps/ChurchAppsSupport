@@ -1,19 +1,19 @@
 ---
 title: "Architektúra"
-description: "Systémové mapy naprieč repozitármi ukazujúce, ako darovanie, prihlasovanie, oznámenia a weby fungujú naprieč B1 Admin, B1.church a API, skôr ako ich začnete meniť."
+description: "Systémové mapy naprieč repozitármi, ktoré ukazujú, ako fungujú dary, check-iny, oznámenia a webové stránky v B1 Admin, B1.church a Api, skôr než ich zmeníte."
 ---
 
 # Architektúra
 
 <div class="article-intro">
 
-Tieto stránky sú systémové prehľady naprieč repozitármi. Popisujú, ako základné systémy ChurchApps fungujú od začiatku do konca, naprieč aplikáciami, modulmi API a zdieľanými knižnicami. Nepopisujú, ako nastaviť jeden konkrétny projekt. Pred zmenou správania systému si ich prečítajte. Ak chcete spustiť projekt, pozrite si [Inštalácia](../setup/index.md), a ak hľadáte referenciu na úrovni endpointov, pozrite si [sekciu API](../api/index.md).
+Tieto stránky sú systémové mapy naprieč repozitármi: dokumentujú, ako základný systém ChurchApps funguje od začiatku do konca, naprieč aplikáciami, modulmi API a zdieľanými knižnicami, a nie to, ako je nastavený jeden konkrétny projekt. Prečítajte si ich predtým, ako zmeníte správanie systému. Ak chcete spustiť projekt, prečítajte si [Nastavenie](../setup/index.md), a pre referenciu na úrovni endpointov [sekciu API](../api/index.md).
 
 </div>
 
 ## Ekosystém na prvý pohľad
 
-ChurchApps má približne 20 nezávislých repozitárov (nejde o monorepo). Klientské aplikácie komunikujú s malou sadou backendových API cez HTTPS a WebSocket a zdieľajú kód prostredníctvom npm balíkov publikovaných pod rozsahom `@churchapps`.
+ChurchApps tvorí približne 20 nezávislých repozitárov (nie monorepo). Klientske aplikácie komunikujú s malou sadou backendových API cez HTTPS a WebSocket a zdieľajú kód prostredníctvom npm balíkov publikovaných v rozsahu `@churchapps`.
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
@@ -23,7 +23,7 @@ ChurchApps má približne 20 nezávislých repozitárov (nejde o monorepo). Klie
 │  B1App      member portal +    │ ─────────▶ │   giving        messaging     doing          │
 │             church websites    │            │                                              │
 │  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   one MySQL database per module (6 total)    │
-│  B1Mobile   (maintenance-only) │            └──────────────────────────────────────────────┘
+│                                │            └──────────────────────────────────────────────┘
 │  FreePlay   TV content player  │            ┌──────────────────────────────────────────────┐
 └───────────────┬────────────────┘            │  LessonsApi — Lessons.church backend         │
                 │                             └──────────────────────────────────────────────┘
@@ -32,38 +32,38 @@ ChurchApps má približne 20 nezávislých repozitárov (nejde o monorepo). Klie
    helpers (cross-app interfaces) · apphelper (React components) · apihelper (Express/server utilities)
 ```
 
-Dve štrukturálne pravidlá určujú všetko, čo je v tejto sekcii zdokumentované:
+Dve štruktúrne pravidlá formujú všetko, čo je v tejto sekcii zdokumentované:
 
-1. **Moduly sú izolované.** Každý modul Api vlastní svoju databázu a svoje tabuľky. Ostatné moduly a aplikácie sa k jeho dátam dostanú len cez jeho REST endpointy. Pozri [Štruktúra modulu](../api/module-structure.md).
-2. **Zdieľaný kód sa distribuuje ako npm balíky.** Aplikácie nikdy neimportujú zdrojový kód jedna druhej. Všetko, čo sa opätovne používa, prechádza hranicami repozitárov cez `@churchapps/helpers`, `@churchapps/apphelper` alebo `@churchapps/apihelper`. Pozri [Zdieľané knižnice](../shared-libraries/index.md).
+1. **Moduly sú izolované.** Každý modul Api vlastní svoju databázu a svoje tabuľky. Ostatné moduly a aplikácie sa k jeho dátam dostanú iba cez jeho REST endpointy. Pozri [Štruktúra modulu](../api/module-structure.md).
+2. **Zdieľaný kód sa dodáva ako npm balíky.** Aplikácie nikdy neimportujú zdrojový kód jedna druhej. Čokoľvek opätovne použité prechádza hranicami repozitárov cez `@churchapps/helpers`, `@churchapps/apphelper` alebo `@churchapps/apihelper`. Pozri [Zdieľané knižnice](../shared-libraries/index.md).
 
-## Systémové prehľady
+## Systémové mapy
 
 | Stránka | Čo pokrýva | Zasahuje |
 |------|----------------|-------|
-| [Oznámenia a pripomienky](./notifications.md) | Ako sa človeku niečo oznámi: dva odosielacie vstupy, reťaz eskalácie kanálov a motor pripomienok | Api (messaging), B1Admin, B1App |
-| [Architektúra v reálnom čase](../realtime.md) | Framework doručovania cez WebSocket, na ktorom stoja chat, prítomnosť a doručovanie v aplikácii | Api (messaging), všetky webové aplikácie |
-| [Webové push oznámenia](../web-push.md) | Push kanál v prehliadači: kľúče VAPID, ukladanie odberov a doručovanie | Api (messaging), všetky webové aplikácie |
+| [Oznámenia a pripomienky](./notifications.md) | Ako niečo informuje človeka: dva odosielacie vstupy, reťaz eskalácie kanálov a motor pripomienok | Api (messaging), B1Admin, B1App |
+| [Architektúra reálneho času](../realtime.md) | Framework doručovania cez WebSocket za chatom, prítomnosťou a doručovaním v aplikácii | Api (messaging), všetky webové aplikácie |
+| [Webové push notifikácie](../web-push.md) | Kanál webových push notifikácií v prehliadači: kľúče VAPID, ukladanie predplatných, doručovanie | Api (messaging), všetky webové aplikácie |
 | [Dary](./giving.md) | Poskytovatelia platieb a brány, toky darov, fondy a dávky, webhooky brán | Api (giving), apphelper, B1App, B1Admin |
-| [Registrácie na podujatia](./registrations.md) | Model obchodovania s registráciami: typy účastníkov, výbery, zľavové kódy, platby cez bránu darov a čakacia listina | Api (content + giving), B1App, B1Admin |
-| [Check-in](./check-ins.md) | Check-in na kiosku a samoobslužný check-in, dátový model účasti, smerovanie do miestností, vrstva ochrany detí, tlač štítkov | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
-| [Tvorca webových stránok](./website-builder.md) | Strom stránok, sekcií a prvkov, zmluva typov prvkov a renderery, blog, stránky s prístupovým obmedzením, SEO a generovanie pomocou AI | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
-| [Smerovanie webu a viac webov](./websites.md) | Ako sa požiadavka priradí k cirkvi a konkrétnej webovej stránke, dátový model viacerých webov so `siteId` a okrajová vrstva Caddy pre vlastné domény | B1App, Api (membership + content), B1Admin |
+| [Registrácie na udalosti](./registrations.md) | Model obchodovania s registráciami: typy účastníkov, výbery, zľavové kódy, platby cez bránu darov a čakacia listina | Api (content + giving), B1App, B1Admin |
+| [Check-iny](./check-ins.md) | Kiosk a samoobslužný check-in, dátový model účasti, smerovanie do miestností, vrstva ochrany detí, tlač štítkov | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
+| [Tvorca webov](./website-builder.md) | Strom stránok, sekcií a prvkov, zmluva o type prvku a renderery, blog, stránky s prístupom, SEO a generovanie pomocou AI | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Smerovanie webov a viacero stránok](./websites.md) | Ako sa požiadavka priradí k cirkvi a konkrétnej stránke, dátový model viacerých stránok so `siteId` a okrajová vrstva Caddy pre vlastné domény | B1App, Api (membership + content), B1Admin |
 | [Integrácie](./integrations.md) | Rozširujúca plocha: OAuth, API kľúče, webhooky, poskytovatelia obsahu, MCP | Api, zdieľané knižnice, externé aplikácie |
-| [Auditný záznam a dávky s možnosťou vrátenia](./audit-log.md) | Predvolene zapnutý audit každej zmeny v kontrolnom bode radiča a vrstva dávok, vďaka ktorej sa importy a hromadné akcie dajú vrátiť späť | Api (všetky moduly), B1Admin, B1Transfer |
-| [MinistryStuff](./ministrystuff.md) | Platená služba úložiska a kreditov na SMS: identita cez zdieľaný JWT, S2S so servisným kľúčom, rozhrania poskytovateľov SMS a úložiska, fakturácia cez Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), balíky texting/apihelper, B1Admin |
-| [Vlastné úložisko](./byos-storage.md) | Cirkvi môžu pripojiť Google Drive, Dropbox, OneDrive alebo S3-kompatibilný bucket na nahrávanie súborov nad bezplatný limit 100 MB: pripojenie cez OAuth, nahrávanie pre jednotlivých poskytovateľov, verejné presmerovanie na stiahnutie | Api (content + membership), balíky helpers/apphelper, B1Admin, B1App |
-| [Content Commons](./commons.md) | Zdieľaná kostra aktív a odoslaní, na ktorej stojí používateľský obsah naprieč produktmi, a jediný moderátorský front pre zamestnancov v B1Admin Server Admin | Api (modul commons), B1Admin, WorshipCommons, Lessons.church, FreeShow |
+| [Auditný záznam a vratné dávky](./audit-log.md) | Predvolené auditovanie každej mutácie na kontrolnom bode kontrolérov a vrstva dávok, vďaka ktorej sú importy a hromadné akcie vratné | Api (všetky moduly), B1Admin, B1Transfer |
+| [MinistryStuff](./ministrystuff.md) | Platená služba úložiska a kreditov na SMS: identita cez zdieľaný JWT, S2S cez service-key, rozhrania poskytovateľov SMS a úložiska, fakturácia cez Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), balíky texting/apihelper, B1Admin |
+| [Vlastné úložisko (BYOS)](./byos-storage.md) | Cirkvi prepájajú Google Drive, Dropbox, OneDrive alebo S3-kompatibilný bucket pre nahrávanie nad bezplatných 100 MB: pripojenie OAuth, tvary nahrávania pre jednotlivých poskytovateľov, verejné presmerovanie na stiahnutie | Api (content + membership), balíky helpers/apphelper, B1Admin, B1App |
+| [Zdieľaný obsah (Content Commons)](./commons.md) | Zdieľaná chrbtica assetov a príspevkov pre používateľský obsah naprieč produktmi a jediný moderačný front len pre zamestnancov v B1Admin Server Admin | Api (modul commons), B1Admin, WorshipCommons, Lessons.church, FreeShow |
 
 :::tip
-Keď zmena mení spôsob fungovania niektorého z týchto systémov, nielen stránky v jednej aplikácii, mal by sa v rovnakom kroku aktualizovať aj zodpovedajúci systémový prehľad. Tak táto sekcia zostane dôveryhodným prvým zdrojom pre nových prispievateľov.
+Keď zmena mení, ako funguje jeden z týchto systémov, a nie len stránka v jednej aplikácii, príslušná systémová mapa sa má aktualizovať v rovnakom kroku. Tak zostane táto sekcia dôveryhodným prvým zdrojom pre nových prispievateľov.
 :::
 
 ## Návrhy
 
-Tieto dokumenty opisujú navrhovanú prácu na posúdenie, nie dostupné správanie produktu.
+Tieto dokumenty opisujú navrhovanú prácu na posúdenie, a nie dostupné správanie produktu.
 
 | Návrh | Čo pokrýva |
 |---|---|
-| [Twilio BYOK](./twilio-byok-proposal.md) | Účet vo vlastníctve cirkvi, kľúče, služba a telefónne číslo; rozsah integrácie, súhlas, doručovanie, odhady a kontroly pred vydaním |
-| [Návrh onboardingu Twilio pre cirkvi](./twilio-byok-onboarding-draft.md) | Navrhované nastavenia prihlasovacieho formulára B1, príklady kampaní pre konkrétne cirkvi a kontrolné zoznamy na schvaľovanie a prevádzku |
+| [Twilio BYOK](./twilio-byok-proposal.md) | Účet, kľúče, služba a telefónne číslo vo vlastníctve cirkvi; rozsah integrácie, súhlas, doručovanie, odhady a kontroly pred vydaním |
+| [Návrh zavedenia cirkví pre Twilio](./twilio-byok-onboarding-draft.md) | Navrhované nastavenia registračného formulára B1, príklady kampaní pre konkrétne cirkvi a kontrolné zoznamy schválenia a prevádzky |

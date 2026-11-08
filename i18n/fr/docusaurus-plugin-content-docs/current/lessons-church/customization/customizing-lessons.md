@@ -1,76 +1,91 @@
 ---
 title: "Personnaliser les leçons"
-description: "Retirer, masquer ou réordonner sections et rôles d'une leçon Lessons.church, et choisir si les modifications s'appliquent à une classe ou à toutes."
+description: "Supprimez ou réorganisez les sections, les rôles et les actions d'une leçon Lessons.church, et choisissez si chaque modification s'applique à une seule classe ou à toutes."
 ---
 
 # Personnaliser les leçons
 
 <div class="article-intro">
 
-Ce guide vous accompagne dans la personnalisation d'une leçon pour votre salle de classe. Les personnalisations vous permettent de supprimer, masquer ou réorganiser le contenu afin que vos bénévoles voient exactement ce dont ils ont besoin -- ni plus, ni moins.
+Ce guide vous explique comment personnaliser une leçon pour votre classe. Les personnalisations vous permettent de supprimer ou de réorganiser le contenu afin que vos bénévoles voient exactement ce dont ils ont besoin, ni plus, ni moins.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- [Configurez au moins une salle de classe](../classrooms/setting-up-classrooms.md) dans le portail
-- [Planifiez une leçon](../classrooms/scheduling-lessons.md) pour la salle de classe que vous souhaitez personnaliser
-- Lisez l'[Aperçu de la personnalisation](./index.md) pour comprendre ce qui peut être personnalisé
+- [Configurez au moins une classe](../classrooms/setting-up-classrooms.md) dans le portail
+- [Planifiez une leçon](../classrooms/scheduling-lessons.md) pour la classe que vous souhaitez personnaliser
+- Lisez l'[aperçu des personnalisations](./index.md) pour comprendre ce qui peut être personnalisé
 
 </div>
 
 ## Ouvrir la vue de personnalisation
 
 1. Connectez-vous et accédez à votre **Portail**.
-2. Sélectionnez la **salle de classe** qui contient la leçon que vous souhaitez personnaliser.
-3. Cliquez sur la **leçon planifiée** pour l'ouvrir.
-4. Cliquez sur **Personnaliser** pour accéder à la vue de personnalisation.
+2. Sélectionnez la **classe** qui contient la leçon que vous souhaitez personnaliser.
+3. Dans le calendrier de la classe, repérez la leçon et cliquez sur **Personnaliser** sous son nom.
 
-Vous verrez l'intégralité du contenu de la leçon décomposé en sections, rôles et actions.
+La page **Personnaliser la leçon** affiche les sections de la leçon, avec les rôles de chaque section et les actions de chaque rôle en dessous. Chaque ligne comporte des boutons à droite :
+
+- **Flèche vers le haut** et **Flèche vers le bas** -- Déplace l'élément d'une place vers le haut ou vers le bas parmi ses voisins
+- **Supprimer** (icône de corbeille) -- Retire l'élément
+
+:::info
+Le bouton **Personnaliser** n'apparaît que pour les leçons Lessons.church. Les leçons planifiées à partir d'un fournisseur externe affichent plutôt **Voir la leçon** et ne peuvent pas être personnalisées.
+:::
+
+## Choisir où s'applique une modification
+
+Chaque fois que vous cliquez sur une flèche ou sur l'icône de corbeille, un menu vous demande **Appliquer la personnalisation sélectionnée à :**
+
+- **Cette classe** -- La modification ne s'applique qu'à la classe actuelle. Les autres classes ne sont pas affectées.
+- **Toutes les classes** -- La modification s'applique à toutes les classes de votre église.
+
+Faites votre choix et la modification est enregistrée immédiatement. Il n'y a pas d'étape d'enregistrement distincte.
 
 ## Supprimer des sections
 
-Si une section ne s'applique pas à votre salle de classe, vous pouvez la supprimer entièrement. Cela est utile lorsqu'une leçon inclut du contenu pour plusieurs groupes d'âge et que vous n'en avez besoin que d'un seul. Par exemple, si une leçon comporte à la fois une section « Activité préscolaire » et une section « Activité élémentaire », vous pouvez supprimer celle qui ne correspond pas à votre salle.
+Si une section ne convient pas à votre classe, vous pouvez la supprimer complètement. Cela est utile lorsqu'une leçon comprend du contenu pour plusieurs tranches d'âge et que vous n'en avez besoin que d'une seule. Par exemple, si une leçon contient à la fois une section « Activité pour la maternelle » et une section « Activité pour le primaire », vous pouvez supprimer celle qui ne convient pas à votre salle.
 
-1. Trouvez la section que vous souhaitez supprimer.
-2. Cliquez pour **supprimer** ou **masquer** la section.
-3. La section n'apparaîtra plus pour les bénévoles qui consultent cette leçon.
+1. Repérez la section que vous souhaitez supprimer.
+2. Cliquez sur son bouton **Supprimer** (icône de corbeille).
+3. Choisissez **Cette classe** ou **Toutes les classes**.
 
-## Masquer des rôles ou des actions
+La section est affichée comme supprimée, ainsi que tous ses rôles et actions, et les bénévoles ne la verront plus pour cette leçon.
 
-Au sein d'une section, vous pouvez masquer des rôles ou des actions spécifiques. Par exemple, si une section inclut un rôle « Responsable de la louange » mais que votre salle de classe n'en a pas, vous pouvez masquer uniquement ce rôle sans supprimer la section entière.
+## Supprimer des rôles ou des actions
 
-1. Développez la section pour voir ses rôles et actions.
-2. Cliquez pour **masquer** tout rôle ou action dont vous n'avez pas besoin.
+Au sein d'une section, vous pouvez supprimer des rôles ou des actions spécifiques. Par exemple, si une section comprend un rôle « Responsable de louange » mais que votre classe n'en a pas, vous pouvez supprimer uniquement ce rôle sans supprimer toute la section.
+
+1. Repérez le rôle ou l'action dans la liste sous sa section.
+2. Cliquez sur son bouton **Supprimer** (icône de corbeille) et choisissez où la modification s'applique.
 
 ## Réorganiser le contenu
 
-Vous pouvez réorganiser les sections et les actions pour correspondre au déroulement que vous préférez :
+Vous pouvez réorganiser les sections, les rôles et les actions pour obtenir l'enchaînement que vous préférez :
 
-1. Faites glisser les sections ou les actions pour les déplacer vers le haut ou vers le bas dans l'ordre.
-2. Le nouvel ordre est celui que vos bénévoles verront lorsqu'ils consulteront la leçon.
+1. Cliquez sur la **flèche vers le haut** ou la **flèche vers le bas** de l'élément que vous souhaitez déplacer.
+2. Choisissez où la modification s'applique. L'élément échange sa place avec son voisin.
 
-## Enregistrer votre personnalisation
+Répétez l'opération jusqu'à ce que les éléments soient dans l'ordre souhaité. Ce nouvel ordre est celui que vos bénévoles verront lorsqu'ils consulteront la leçon.
 
-Lorsque vous avez terminé vos modifications, enregistrez la personnalisation. Il vous sera demandé de choisir comment elle s'applique :
+## Annuler une suppression
 
-- **Cette salle de classe uniquement** -- Les modifications s'appliquent uniquement à la salle de classe actuelle. Les autres salles de classe ne sont pas affectées.
-- **Toutes les salles de classe** -- Les modifications s'appliquent à toutes les salles de classe de votre église.
-- **Supprimer la personnalisation** -- Si vous avez précédemment personnalisé cette leçon et souhaitez revenir au contenu original, choisissez cette option pour effacer vos modifications.
+Pour rétablir un élément que vous avez supprimé, cliquez de nouveau sur son bouton **Supprimer**. Le menu propose désormais aussi l'option **Aucun**. Choisissez **Aucun** pour annuler la suppression et afficher de nouveau l'élément, ou sélectionnez l'autre option pour modifier l'endroit où s'applique la suppression.
 
 :::tip
-Commencez par personnaliser une seule leçon pour une salle de classe. Une fois que vous êtes à l'aise avec le processus, vous pouvez appliquer les personnalisations plus largement à toutes les salles de classe.
+Commencez par personnaliser une seule leçon pour une seule classe. Une fois à l'aise avec le processus, vous pourrez appliquer des personnalisations plus largement, à toutes les classes.
 :::
 
 ## Quand personnaliser
 
 La personnalisation est particulièrement utile lorsque :
 
-- Une leçon contient du contenu pour plusieurs groupes d'âge et vous souhaitez n'afficher que les parties pertinentes.
-- Votre salle de classe n'utilise pas certains rôles (comme un responsable de la louange dédié ou un bénévole technique).
-- Vous préférez un ordre différent pour le déroulement de la leçon par rapport à ce qui est proposé par défaut.
+- Une leçon contient du contenu pour plusieurs tranches d'âge et que vous souhaitez n'afficher que les parties pertinentes.
+- Votre classe n'utilise pas certains rôles (comme un responsable de louange ou un bénévole technique dédié).
+- Vous préférez un ordre différent pour le déroulement de la leçon par rapport à celui proposé par défaut.
 
 :::info
-Vous n'avez pas besoin de personnaliser chaque leçon. Si le contenu convient tel quel à votre salle de classe, vous pouvez ignorer cette étape et passer directement à la [présentation](../presenting/index.md).
+Vous n'avez pas besoin de personnaliser chaque leçon. Si le contenu convient tel quel à votre classe, vous pouvez ignorer cette étape et passer directement à la [présentation](../presenting/index.md).
 :::

@@ -1,107 +1,107 @@
 ---
-title: "Gids: Aan de slag met B1 voor uw kerk"
-description: "Doorloop het instellen van een nieuwe kerk in B1 Admin: maak je account, configureer instellingen, voeg rollen toe, importeer leden en start kernfuncties."
+title: "Gids: Je kerk met B1 op gang brengen"
+description: "Doorloop de instelling van een nieuwe kerk in B1 Admin: maak je account aan, configureer instellingen, voeg rollen toe, importeer leden en start de kernfuncties."
 ---
 
-# Aan de slag met B1 voor uw kerk
+# Je kerk met B1 op gang brengen
 
 <div class="article-intro">
 
-Een volledige onboarding-gids voor nieuwe kerken -- van het aanmaken van uw account tot het importeren van uw ledenmap en het configureren van uw eerste functies. Volg deze stappen in volgorde om uw kerk op B1 aan de slag te krijgen.
+Een complete onboardinggids voor nieuwe kerken — van het aanmaken van je account tot het importeren van je ledenlijst en het configureren van je eerste functies. Volg deze stappen in volgorde om je kerk op B1 aan de slag te krijgen.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
 - Een geldig e-mailadres
-- Uw kerklogo en branding-assets (kleuren, afbeeldingen) -- aanbevolen maar niet vereist om te beginnen
+- Het logo en de huisstijlmaterialen van je kerk (kleuren, afbeeldingen) — aanbevolen, maar niet vereist om te beginnen
 
 </div>
 
-## Stap 1: Maak uw account aan
+## Stap 1: Maak je account aan
 
-Registreer uw kerk en word de eerste beheerder.
+Registreer je kerk en word de eerste beheerder.
 
 Volg de gids [Account aanmaken](../../getting-started/create-account.md) om:
 
-1. Ga naar b1.church en registreer u met uw e-mail
-2. Controleer uw e-mailadres
-3. Kies "Een nieuwe kerk aanmaken" en voer uw kerknaam in
-4. U wordt automatisch domeinbeheerder met volledige toegang
+1. Ga naar b1.church en registreer je met je e-mailadres
+2. Verifieer je e-mailadres
+3. Kies "Een nieuwe kerk aanmaken" en voer de naam van je kerk in
+4. Je wordt automatisch de Domeinbeheerder met volledige toegang tot alles
 
-## Stap 2: Configureer kerkinstellingen
+## Stap 2: Configureer de kerkinstellingen
 
-Voer de basisinformatie en branding van uw kerk in.
+Voer de basisgegevens en huisstijl van je kerk in.
 
 Volg de gids [Kerkinstellingen](../settings/church-settings.md) om:
 
-1. Voer uw kerknaam, adres, telefoonnummer en e-mail in
-2. Stel uw subdomein in (dit wordt yourchurch.b1.church)
-3. Upload uw kerklogo en afbeeldingen
+1. Voer de naam, het adres, het telefoonnummer en het e-mailadres van je kerk in
+2. Stel je subdomein in (dit wordt yourchurch.b1.church)
+3. Upload het logo en de afbeeldingen van je kerk
 
 :::tip
-Uw subdomein wordt weergegeven in uw website-URL en giftpagina-URL, dus kies iets korts en herkenbaars (bijvoorbeeld "grace" voor Grace Community Church).
+Je subdomein verschijnt in de URL van je website en van je givingpagina, dus kies iets korts en herkenbaars (bijvoorbeeld "grace" voor Grace Community Church).
 :::
 
-## Stap 3: Stel rollen en teamuitnodigingen in
+## Stap 3: Stel rollen in en nodig je team uit
 
-Bepaal wie toegang tot wat heeft en breng uw team aan boord.
+Bepaal wie toegang heeft tot wat, en betrek je team erbij.
 
-Volg de gids [Rollen en machtigingen](../settings/roles-permissions.md) om:
+Volg de gids [Rollen en rechten](../settings/roles-permissions.md) om:
 
-1. Maak rollen voor uw team aan (bijvoorbeeld "Dominee", "Kantooradministrator", "Financieel team", "Aanbiddingsleider")
-2. Wijs specifieke machtigingen toe aan elke rol zodat personen alleen zien wat zij nodig hebben
-3. Nodig teamleden uit door hen toe te voegen en rollen toe te wijzen
+1. Maak rollen aan voor je team (bijvoorbeeld "Predikant", "Kantoorbeheerder", "Financieel team", "Muziekleider")
+2. Wijs specifieke rechten toe aan elke rol, zodat mensen alleen zien wat ze nodig hebben
+3. Nodig teamleden uit door ze toe te voegen en een rol toe te kennen
 
 :::info
-U hoeft niet alles zelf te doen. Nodig uw kantoorpersoneel, pastores en ministeriële leiders vroeg uit, zodat zij hun gebieden kunnen helpen instellen.
+Je hoeft niet alles zelf te doen. Nodig je kantoormedewerkers, predikanten en ministerieleiders vroeg uit, zodat zij kunnen helpen bij het inrichten van hun eigen taken.
 :::
 
-## Stap 4: Importeer uw personen
+## Stap 4: Importeer je mensen
 
-Breng uw bestaande ledenmap naar B1.
+Breng je bestaande ledenlijst naar B1.
 
-Volg de gids [Gegevens importeren](../people/importing-data.md). U hebt twee opties:
+Volg de gids [Gegevens importeren](../people/importing-data.md). Je hebt twee opties:
 
-1. **CSV-upload** -- exporteer uit uw huidig systeem of spreadsheet, maak opmaak als CSV, upload naar B1
-2. **Breeze Migration** -- eenmalige import die personen, foto's, groepen, donaties en aanwezigheid overneemt
+1. **CSV-upload** — exporteer uit je huidige systeem of spreadsheet, zet het om naar CSV en upload het naar B1
+2. **Breeze-migratie** — import met één klik waarmee personen, foto's, groepen, giften en aanwezigheid worden overgezet
 
 :::tip
-Migreren van Breeze? Met het importgereedschap kunt u alles in één stap overbrengen -- personen, foto's, groepen, donaties en aanwezigheidsgeschiedenis. Dit is de snelste manier om aan de slag te gaan.
+Overstappen vanuit Breeze? Het importhulpmiddel zet alles in één stap over: personen, foto's, groepen, giften en de aanwezigheidsgeschiedenis. Het is de snelste manier om te beginnen.
 :::
 
-## Stap 5: Configureer de mobiele app
+## Stap 5: Configureer de app
 
-Pas de B1 Mobile-app ervaring voor uw gemeente aan.
+Pas de B1 App-ervaring aan voor je gemeente.
 
-Volg de gids [Instellingen mobiele app](../settings/mobile-app.md) om:
+Volg de gids [Instellingen van de mobiele app](../settings/mobile-app.md) om:
 
-1. Pas aan welke tabbladen in de B1 Mobile-app voor uw leden verschijnen
-2. Stel tabnamen, pictogrammen en typen in (Bijbel, Live Stream, Donatie, Website, enz.)
-3. Bepaal welke functies zichtbaar zijn voor uw gemeente
+1. Bepaal welke tabbladen in de B1 App voor je leden zichtbaar zijn
+2. Stel tabbladnamen, pictogrammen en typen in (Bijbel, Livestream, Giften, Website, enzovoort)
+3. Bepaal welke functies zichtbaar zijn voor je gemeente
 
 ## Stap 6: Begin met het instellen van functies
 
-Nu uw basis op zijn plaats is, volgt u deze gidsen om specifieke functies in te stellen:
+Nu de basis is gelegd, volg je deze gidsen om specifieke functies in te stellen:
 
-- [Online geven instellen](./online-giving.md) -- accepteer donaties via uw website en app
-- [Uw kerkwebsite starten](./launch-website.md) -- bouw uw kerkwebsite
-- [Kleine groepen uitvoeren](./small-groups.md) -- organiseer groepen, Bijbelstudies en ministeries
-- [Kinderninchecking instellen](./childrens-checkin.md) -- kiosk-inchecking voor kinderministerium
-- [Zondagsvrijwilligers beheren](./sunday-volunteers.md) -- coördineer uw dienstteams
-- [Uw prekenbibliotheek bouwen](./sermon-library.md) -- zorg voor online preken en stel livestreaming in
-- [Aanwezigheid bijhouden](./track-attendance.md) -- bewaken wie naar services en groepen komt
+- [Online geven instellen](./online-giving.md) — ontvang giften via je website en app
+- [Start je kerkwebsite](./launch-website.md) — bouw je kerkwebsite
+- [Kleine groepen beheren](./small-groups.md) — organiseer groepen, bijbelstudies en ministeries
+- [Kinderincheck instellen](./childrens-checkin.md) — kioskincheck voor de kinderwerkgroep
+- [Zondagse vrijwilligers beheren](./sunday-volunteers.md) — coördineer je dienstteams
+- [Bouw je preekbibliotheek](./sermon-library.md) — zet preken online en stel livestreaming in
+- [Aanwezigheid bijhouden](./track-attendance.md) — houd bij wie naar diensten en groepen komt
 
-## U bent klaar!
+## Klaar!
 
-Uw kerk is op B1 ingesteld. Uw team heeft toegang, uw personen zijn geïmporteerd en u bent klaar om te beginnen met het gebruik van de functies die het meest belangrijk zijn voor uw ministerium. Verken de functiegidsen hierboven om elk gebied in te stellen.
+Je kerk is ingesteld op B1. Je team heeft toegang, je mensen zijn geïmporteerd en je kunt beginnen met de functies die voor jouw bediening het belangrijkst zijn. Bekijk de functiegidsen hierboven om elk onderdeel in te stellen.
 
 ## Gerelateerde artikelen
 
-- [Account aanmaken](../../getting-started/create-account.md) -- accountregistratie
-- [Initiële instellingen](../../getting-started/initial-setup.md) -- geleide onboarding-overzicht
-- [Kerkinstellingen](../settings/church-settings.md) -- kerkinfo en branding
-- [Rollen en machtigingen](../settings/roles-permissions.md) -- teamtoegangsbeheer
-- [Gegevens importeren](../people/importing-data.md) -- bulk gegevensimport
-- [Instellingen mobiele app](../settings/mobile-app.md) -- pas de leden-app aan
+- [Account aanmaken](../../getting-started/create-account.md) — accountregistratie
+- [Eerste instellingen](../../getting-started/initial-setup.md) — overzicht van de begeleide onboarding
+- [Kerkinstellingen](../settings/church-settings.md) — kerkgegevens en huisstijl
+- [Rollen en rechten](../settings/roles-permissions.md) — toegangsbeheer voor het team
+- [Gegevens importeren](../people/importing-data.md) — massale gegevensimport
+- [Instellingen van de mobiele app](../settings/mobile-app.md) — de ledenapp aanpassen

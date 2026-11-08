@@ -377,16 +377,10 @@
     "message": "Ibhodi yekuphatsa libandla yebantfu, emacembu, kuya enkontsini, iminikelo, nakunye lokunyenti."
   },
   "homepage.products.b1website.title": {
-    "message": "Sayithi ye-B1"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Sayithi yelibandla lelucwaningo kanye nendlela yekungena yemalunga."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Iselula"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Uhlelo lwemalunga lwasendulo lwe-iOS ne-Android, lapho selushintjwe yi-app yeweb ye-B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Kungena"

@@ -7,30 +7,45 @@ description: "Gennemse og download lektionsmateriale, videoer og billeder fra Le
 
 <div class="article-intro">
 
-Indholdsudbydere er eksterne tjenester, der leverer lektionsmaterialer, videoer og billeder til afspilning på dit TV. FreePlay understøtter flere udbydere, hvilket giver dig mulighed for at gennemse og downloade indhold fra forskellige kilder, alt i én app.
+Indholdsudbydere er eksterne tjenester, der leverer lektionsmateriale, videoer og billeder til afspilning på dit TV. FreePlay understøtter flere udbydere, så du kan gennemse og downloade indhold fra forskellige kilder, alt sammen i én app.
 
 </div>
 
 ## Tilgængelige udbydere
 
-FreePlay inkluderer i øjeblikket følgende udbydere:
+FreePlay indeholder i øjeblikket følgende udbydere:
 
-- **[Lessons.church](../../lessons-church/index.md)** - Gratis, open-source børneminister læreplan
-- **Bible Project** - Videoer og ressourcer om Bibelen
-- **SignPresenter** - Præsentations- og signage indhold til kirker
-- **B1.church** - Indhold fra din egen B1 kirkeopsætning
+- **[Lessons.church](../../lessons-church/index.md)** - Gratis, open source-læseplan til børnearbejdet
+- **Bible Project** - Videoer og ressourcer, der udforsker Bibelen
+- **SignPresenter** - Præsentations- og skiltningsindhold til kirker
+- **B1.church** - Indhold fra din egen B1-kirkeopsætning
+- **Go Curriculum** - Læseplan fra gocurriculum.com, opdelt efter aldersgruppe (**Elementary** og **Preschool**), derefter samling og lektion. Du ser kun de aldersgrupper og videoer, som dit Go-medlemskab omfatter
+- **Dropbox** - Gennemse og afspil billeder og videoer fra din egen Dropbox
+- **Jesus Film Project** - Film og videoklip fra Jesus Film Project
+- **OneDrive** - Gennemse og afspil billeder, videoer og lyd fra din egen Microsoft OneDrive
 
-:::info
-Nogle udbydere er stadig under tilføjelse. Hvis et udbyderkort viser "Kommer snart", er det ikke endnu tilgængeligt for forbindelse.
+:::note
+Google Drive og FreeShow vises ikke længere i FreePlay TV-appen. For at bruge indhold fra Google Drive på dine TV'er skal du forbinde det i [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), tilføje filerne til en afspilningsliste og planlægge den pågældende afspilningsliste.
 :::
 
-## Hvordan udbydere fungerer
+:::info
+Nogle udbydere tilføjes stadig. Hvis et udbyderkort viser "Coming Soon", kan det endnu ikke forbindes.
+:::
 
-Hver udbyder har sit eget indholdsbibliotek organiseret i mapper og filer. Når du forbinder til en udbyder, vises dens indhold i en mappe browser, hvor du kan bore dig ind i kategorier, vælge varer og downloade dem til afspilning.
+## Sådan fungerer udbydere
 
-Forbundne udbydere vises i sidelinjen på venstre side af skærmen. Du kan skifte mellem udbydere ved at vælge dem i sidelinjen, hvilket gør det nemt at hoppe mellem indholdskilder under opsætning.
+Hver udbyder har sit eget indholdsbibliotek, organiseret i mapper og filer. Når du har forbundet til en udbyder, vises dens indhold i en mappevisning, hvor du kan navigere i kategorier, vælge elementer og downloade dem til afspilning.
 
-## I dette afsnit
+Forbundne udbydere vises i sidepanelet til venstre på skærmen under overskriften **Browse**. Du kan skifte mellem udbydere ved at vælge dem i sidepanelet, hvilket gør det nemt at hoppe mellem indholdskilder under opsætningen.
 
-- **[Forbindelse til udbydere](./connecting-providers.md)** - Hvordan man godkender og forbinder
-- **[Browsing og download af indhold](./browsing-content.md)** - Naviger mapper, download filer og afspil indhold
+Du kan også vælge en mappe fra en forbundet udbyder og lade den løbe i loop som [annonceringer](./announcements.md) på dit TV.
+
+:::tip
+Udbydere, du forbinder på TV'et, gælder kun for dette TV. Hvis du bruger [Scheduled Mode](../scheduled-mode/index.md), skal du i stedet forbinde udbydere én gang i FreePlay Admin, så alle planlagte skærme kan afspille indhold fra dem.
+:::
+
+## I denne sektion
+
+- **[Tilslutning til udbydere](./connecting-providers.md)** - Sådan godkender og forbinder du
+- **[Gennemse og download af indhold](./browsing-content.md)** - Naviger i mapper, download filer og afspil indhold
+- **[Annonceringer](./announcements.md)** - Lad en mappe med slides fra en udbyder køre i loop

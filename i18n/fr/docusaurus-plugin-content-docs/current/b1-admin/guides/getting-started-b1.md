@@ -1,13 +1,13 @@
 ---
-title: "Guide : Démarrer avec B1 pour votre église"
-description: "Suivez les étapes de configuration d'une nouvelle église dans B1 Admin : créez votre compte, configurez les paramètres, ajoutez des rôles, importez les membres et lancez les fonctions essentielles."
+title: "Guide : Lancer votre église sur B1"
+description: "Suivez les étapes de configuration d'une nouvelle église dans B1 Admin : créez votre compte, configurez les paramètres, ajoutez des rôles, importez les membres et lancez les fonctionnalités essentielles."
 ---
 
-# Démarrer avec B1 pour votre église
+# Lancer votre église sur B1
 
 <div class="article-intro">
 
-Un guide d'intégration complet pour les nouvelles églises -- de la création de votre compte à l'importation de votre répertoire de membres et à la configuration de vos premières fonctionnalités. Suivez ces étapes dans l'ordre pour mettre votre église en route sur B1.
+Un guide d'accueil complet pour les nouvelles églises, de la création de votre compte à l'importation de votre répertoire de membres et à la configuration de vos premières fonctionnalités. Suivez ces étapes dans l'ordre pour mettre votre église en service sur B1.
 
 </div>
 
@@ -15,7 +15,7 @@ Un guide d'intégration complet pour les nouvelles églises -- de la création d
 <h4>Avant de commencer</h4>
 
 - Une adresse e-mail valide
-- Le logo de votre église et vos éléments de marque (couleurs, images) -- recommandés mais pas indispensables pour commencer
+- Le logo et les éléments graphiques de votre église (couleurs, images) : recommandés mais non obligatoires pour démarrer
 
 </div>
 
@@ -25,10 +25,10 @@ Enregistrez votre église et devenez le premier administrateur.
 
 Suivez le guide [Créer un compte](../../getting-started/create-account.md) pour :
 
-1. Aller sur b1.church et vous inscrire avec votre adresse e-mail
+1. Accéder à b1.church et vous inscrire avec votre adresse e-mail
 2. Vérifier votre adresse e-mail
-3. Choisir « Créer une nouvelle église » et entrer le nom de votre église
-4. Vous devenez automatiquement l'administrateur de domaine avec un accès complet à toutes les fonctionnalités
+3. Choisir « Créer une nouvelle église » et saisir le nom de votre église
+4. Devenir automatiquement l'administrateur de domaine, avec un accès complet à toutes les fonctionnalités
 
 ## Étape 2 : Configurer les paramètres de l'église
 
@@ -36,72 +36,72 @@ Saisissez les informations de base et l'identité visuelle de votre église.
 
 Suivez le guide [Paramètres de l'église](../settings/church-settings.md) pour :
 
-1. Entrer le nom, l'adresse, le numéro de téléphone et l'e-mail de votre église
-2. Définir votre sous-domaine (qui deviendra votreeglise.b1.church)
-3. Télécharger le logo et les images de votre église
+1. Saisir le nom, l'adresse, le numéro de téléphone et l'adresse e-mail de votre église
+2. Définir votre sous-domaine (il deviendra votreeglise.b1.church)
+3. Téléverser le logo et les images de votre église
 
 :::tip
-Votre sous-domaine apparaît dans l'URL de votre site web et dans l'URL de votre page de dons, alors choisissez quelque chose de court et reconnaissable (par ex. « grace » pour Grace Community Church).
+Votre sous-domaine apparaît dans l'URL de votre site web et de votre page de dons. Choisissez donc un nom court et facile à reconnaître (par exemple « grace » pour l'Église Grace Community).
 :::
 
 ## Étape 3 : Configurer les rôles et inviter votre équipe
 
 Contrôlez qui a accès à quoi et intégrez votre équipe.
 
-Suivez le guide [Rôles et permissions](../settings/roles-permissions.md) pour :
+Suivez le guide [Rôles et autorisations](../settings/roles-permissions.md) pour :
 
-1. Créer des rôles pour votre équipe (par ex. « Pasteur », « Administrateur du bureau », « Équipe finances », « Responsable de louange »)
-2. Attribuer des permissions spécifiques à chaque rôle afin que chacun ne voie que ce dont il a besoin
-3. Inviter les membres de l'équipe en les ajoutant et en leur attribuant des rôles
+1. Créer des rôles pour votre équipe (par exemple « Pasteur », « Administration du bureau », « Équipe financière », « Responsable de la louange »)
+2. Attribuer des autorisations précises à chaque rôle, afin que chacun ne voie que ce dont il a besoin
+3. Inviter les membres de l'équipe en les ajoutant et en leur attribuant un rôle
 
 :::info
-Vous n'avez pas à tout faire vous-même. Invitez votre personnel administratif, vos pasteurs et vos responsables de ministère dès le début afin qu'ils puissent aider à configurer leurs domaines respectifs.
+Vous n'avez pas à tout faire seul. Invitez tôt le personnel administratif, les pasteurs et les responsables de ministères afin qu'ils puissent contribuer à la configuration de leurs domaines.
 :::
 
-## Étape 4 : Importer vos contacts
+## Étape 4 : Importer vos membres
 
-Intégrez votre répertoire de membres existant dans B1.
+Intégrez à B1 votre répertoire de membres existant.
 
 Suivez le guide [Importation de données](../people/importing-data.md). Vous avez deux options :
 
-1. **Import CSV** -- exportez depuis votre système actuel ou votre tableur, formatez en CSV, et téléchargez dans B1
-2. **Migration Breeze** -- import en un clic qui récupère les personnes, les photos, les groupes, les dons et les présences
+1. **Importation CSV** : exportez depuis votre système actuel ou votre tableur, formatez le fichier en CSV, puis téléversez-le dans B1
+2. **Migration depuis Breeze** : importation en un clic qui transfère les personnes, les photos, les groupes, les dons et les présences
 
 :::tip
-Vous migrez depuis Breeze ? L'outil d'importation récupère tout en une seule étape -- personnes, photos, groupes, dons et historique de présences. C'est le moyen le plus rapide de démarrer.
+Vous migrez depuis Breeze ? L'outil d'importation transfère tout en une seule étape : les personnes, les photos, les groupes, les dons et l'historique de présence. C'est le moyen le plus rapide de démarrer.
 :::
 
 ## Étape 5 : Configurer l'application mobile
 
-Personnalisez l'expérience de l'application B1 Mobile pour votre assemblée.
+Personnalisez l'expérience de l'application B1 pour votre assemblée.
 
 Suivez le guide [Paramètres de l'application mobile](../settings/mobile-app.md) pour :
 
-1. Personnaliser les onglets qui apparaissent dans l'application B1 Mobile pour vos membres
-2. Définir les noms, icônes et types d'onglets (Bible, Diffusion en direct, Don, Site web, etc.)
+1. Choisir les onglets qui apparaissent dans l'application B1 pour vos membres
+2. Définir le nom, l'icône et le type de chaque onglet (Bible, diffusion en direct, don, site web, etc.)
 3. Contrôler les fonctionnalités visibles par votre assemblée
 
-## Étape 6 : Commencer à configurer les fonctionnalités
+## Étape 6 : Configurer les fonctionnalités
 
-Maintenant que les bases sont en place, suivez ces guides pour configurer des fonctionnalités spécifiques :
+Maintenant que les bases sont en place, suivez ces guides pour configurer des fonctionnalités précises :
 
-- [Configurer les dons en ligne](./online-giving.md) -- accepter des dons via votre site web et votre application
-- [Lancer le site web de votre église](./launch-website.md) -- créer le site web de votre église
-- [Gérer les petits groupes](./small-groups.md) -- organiser des groupes, des études bibliques et des ministères
-- [Configurer l'enregistrement des enfants](./childrens-checkin.md) -- enregistrement sur borne pour le ministère des enfants
-- [Gérer les bénévoles du dimanche](./sunday-volunteers.md) -- coordonner vos équipes de service
-- [Créer votre bibliothèque de sermons](./sermon-library.md) -- mettre les sermons en ligne et configurer la diffusion en direct
-- [Suivre les présences](./track-attendance.md) -- surveiller qui vient aux cultes et aux groupes
+- [Configurer les dons en ligne](./online-giving.md) : acceptez les dons via votre site web et votre application
+- [Lancer le site web de votre église](./launch-website.md) : créez le site web de votre église
+- [Gérer les petits groupes](./small-groups.md) : organisez les groupes, les études bibliques et les ministères
+- [Configurer l'enregistrement des enfants](./childrens-checkin.md) : borne d'enregistrement pour le ministère jeunesse et enfance
+- [Gérer les bénévoles du dimanche](./sunday-volunteers.md) : coordonnez vos équipes de service
+- [Constituer votre bibliothèque de prédications](./sermon-library.md) : mettez les prédications en ligne et configurez la diffusion en direct
+- [Suivre les présences](./track-attendance.md) : suivez qui assiste aux cultes et aux groupes
 
-## C'est terminé !
+## Vous avez terminé !
 
-Votre église est configurée sur B1. Votre équipe a accès, vos contacts sont importés, et vous êtes prêt à utiliser les fonctionnalités les plus importantes pour votre ministère. Explorez les guides de fonctionnalités ci-dessus pour configurer chaque domaine.
+Votre église est configurée sur B1. Votre équipe a accès à l'outil, vos membres sont importés et vous êtes prêt à utiliser les fonctionnalités les plus importantes pour votre ministère. Consultez les guides ci-dessus pour configurer chaque domaine.
 
 ## Articles connexes
 
-- [Créer un compte](../../getting-started/create-account.md) -- inscription au compte
-- [Configuration initiale](../../getting-started/initial-setup.md) -- aperçu de l'intégration guidée
-- [Paramètres de l'église](../settings/church-settings.md) -- informations et identité visuelle de l'église
-- [Rôles et permissions](../settings/roles-permissions.md) -- contrôle d'accès de l'équipe
-- [Importation de données](../people/importing-data.md) -- importation de données en masse
-- [Paramètres de l'application mobile](../settings/mobile-app.md) -- personnaliser l'application des membres
+- [Créer un compte](../../getting-started/create-account.md) : inscription du compte
+- [Configuration initiale](../../getting-started/initial-setup.md) : présentation de l'accompagnement initial
+- [Paramètres de l'église](../settings/church-settings.md) : informations et identité visuelle de l'église
+- [Rôles et autorisations](../settings/roles-permissions.md) : contrôle d'accès de l'équipe
+- [Importation de données](../people/importing-data.md) : importation groupée de données
+- [Paramètres de l'application mobile](../settings/mobile-app.md) : personnaliser l'application des membres

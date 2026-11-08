@@ -377,16 +377,10 @@
     "message": "Panel zarządzania kościołem dla osób, grup, frekwencji, darowizn i innych."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Strona Internetowa"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Publiczna strona internetowa kościoła i portal dla członków."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobilna"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Starsza aplikacja dla członków na iOS i Android, obecnie zastąpiona aplikacją internetową B1.church."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Rejestracja"

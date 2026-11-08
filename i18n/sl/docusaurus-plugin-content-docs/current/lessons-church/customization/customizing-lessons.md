@@ -1,76 +1,91 @@
 ---
 title: "Prilagajanje lekcij"
-description: "Odstrani, skrij ali preuredi sklope in vloge v uri Lessons.church ter izberi, ali spremembe veljajo za eno učilnico ali za vse."
+description: "Odstranite ali preuredite razdelke, vloge in dejanja v lekciji Lessons.church ter izberite, ali se vsaka sprememba uporabi za en razred ali za vse."
 ---
 
 # Prilagajanje lekcij
 
 <div class="article-intro">
 
-Ta vodnik vas vodi skozi prilagajanje lekcije za vaš razred. S prilagoditvami lahko odstranite, skrijete ali preuredite vsebino, da vaši prostovoljci vidijo točno to, kar potrebujejo -- nič več, nič manj.
+Ta vodnik vas popelje skozi prilagajanje lekcije za vaš razred. Prilagoditve vam omogočajo, da odstranite ali preuredite vsebino, tako da vaši prostovoljci vidijo prav tisto, kar potrebujejo – nič več, nič manj.
 
 </div>
 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- [Nastavite vsaj en razred](../classrooms/setting-up-classrooms.md) v portalu
+- [Nastavite vsaj en razred](../classrooms/setting-up-classrooms.md) na portalu
 - [Načrtujte lekcijo](../classrooms/scheduling-lessons.md) za razred, ki ga želite prilagoditi
-- Preberite [pregled prilagajanja](./index.md), da boste razumeli, kaj je mogoče prilagoditi
+- Preberite [pregled prilagoditev](./index.md), da boste razumeli, kaj je mogoče prilagoditi
 
 </div>
 
 ## Odpiranje pogleda za prilagajanje
 
-1. Prijavite se in pojdite na svoj **Portal**.
-2. Izberite **razred**, ki ima lekcijo, ki jo želite prilagoditi.
-3. Kliknite **načrtovano lekcijo**, da jo odprete.
-4. Kliknite **Prilagodi**, da vstopite v pogled za prilagajanje.
+1. Prijavite se in se pomaknite na svoj **Portal**.
+2. Izberite **razred**, v katerem je lekcija, ki jo želite prilagoditi.
+3. V urniku razreda poiščite lekcijo in kliknite **Prilagodi** pod njenim imenom.
 
-Prikazana je celotna vsebina lekcije, razdeljena na odseke, vloge in dejanja.
+Stran **Prilagodi lekcijo** prikazuje razdelke lekcije, pod vsakim pa vloge in pod vsako vlogo dejanja. Vsaka vrstica ima na desni gumbe:
 
-## Odstranjevanje odsekov
+- **Puščica navzgor** in **puščica navzdol** – premaknite element za eno mesto gor ali dol med sosednjimi elementi
+- **Izbriši** (koš za smeti) – odstranite element
 
-Če odsek ne ustreza vašemu razredu, ga lahko popolnoma odstranite. To je uporabno, kadar lekcija vključuje vsebino za več starostnih skupin, vi pa potrebujete samo eno. Če lekcija na primer vsebuje odsek "Dejavnost za predšolske" in odsek "Dejavnost za osnovnošolce", lahko odstranite tistega, ki ne ustreza vaši sobi.
+:::info
+**Prilagodi** se prikaže samo pri lekcijah Lessons.church. Lekcije, načrtovane pri zunanjem ponudniku, namesto tega prikazujejo **Ogled lekcije** in jih ni mogoče prilagoditi.
+:::
 
-1. Poiščite odsek, ki ga želite odstraniti.
-2. Kliknite, da **odstranite** ali **skrijete** odsek.
-3. Odsek se ne bo več prikazoval prostovoljcem, ki si ogledujejo to lekcijo.
+## Izbira, kje se sprememba uporabi
 
-## Skrivanje vlog ali dejanj
+Vsakič, ko kliknete puščico ali koš za smeti, se prikaže meni z vprašanjem **Uporabi izbrano prilagoditev za:**
 
-Znotraj odseka lahko skrijete določene vloge ali dejanja. Če na primer odsek vključuje vlogo "Vodja bogoslužja", vaš razred pa te vloge nima, lahko skrijete samo to vlogo, ne da bi odstranili celoten odsek.
+- **Ta razred** – Sprememba se uporabi samo za trenutni razred. Drugi razredi ostanejo nespremenjeni.
+- **Vse razrede** – Sprememba se uporabi za vse razrede v vaši cerkvi.
 
-1. Razširite odsek, da vidite njegove vloge in dejanja.
-2. Kliknite, da **skrijete** vsako vlogo ali dejanje, ki ga ne potrebujete.
+Ko izberete eno možnost, se sprememba takoj shrani. Ločenega koraka shranjevanja ni.
 
-## Preurejanje vsebine
+## Odstranjevanje razdelkov
 
-Odseke in dejanja lahko preuredite tako, da ustrezajo toku, ki ga raje imate:
+Če razdelek ne ustreza vašemu razredu, ga lahko v celoti odstranite. To je uporabno, kadar lekcija vključuje vsebino za več starostnih skupin, vi pa potrebujete le eno. Če ima na primer lekcija razdelka »Dejavnost za predšolske otroke« in »Dejavnost za osnovnošolce«, lahko odstranite tistega, ki ne ustreza vaši sobi.
 
-1. Povlecite odseke ali dejanja, da jih premaknete gor ali dol v vrstnem redu.
-2. Novi vrstni red je tisto, kar bodo vaši prostovoljci videli, ko si bodo ogledali lekcijo.
+1. Poiščite razdelek, ki ga želite odstraniti.
+2. Kliknite gumb **Izbriši** (koš za smeti).
+3. Izberite **Ta razred** ali **Vse razrede**.
 
-## Shranjevanje prilagoditve
+Razdelek je prikazan kot odstranjen skupaj z vsemi svojimi vlogami in dejanji, prostovoljci pa ga pri tej lekciji ne bodo več videli.
 
-Ko končate s spremembami, shranite prilagoditev. Vprašali vas bodo, kako naj se uporabi:
+## Odstranjevanje vlog ali dejanj
 
-- **Samo ta razred** -- Spremembe veljajo samo za trenutni razred. Drugi razredi ostanejo nespremenjeni.
-- **Vsi razredi** -- Spremembe veljajo za vse razrede v vaši cerkvi.
-- **Odstrani prilagoditev** -- Če ste to lekcijo prej prilagodili in se želite vrniti na prvotno vsebino, izberite to možnost, da počistite svoje spremembe.
+Znotraj razdelka lahko odstranite posamezne vloge ali dejanja. Če na primer razdelek vključuje vlogo »Vodja bogoslužja«, vaš razred pa je nimate, lahko odstranite samo to vlogo, ne pa celotnega razdelka.
+
+1. Poiščite vlogo ali dejanje na seznamu pod njegovim razdelkom.
+2. Kliknite gumb **Izbriši** (koš za smeti) in izberite, kje se sprememba uporabi.
+
+## Spreminjanje vrstnega reda vsebine
+
+Razdelke, vloge in dejanja lahko preurejate, da ustrezajo tokom, ki ga raje imate:
+
+1. Kliknite **puščico navzgor** ali **puščico navzdol** pri elementu, ki ga želite premakniti.
+2. Izberite, kje se sprememba uporabi. Element zamenja mesto s svojim sosedom.
+
+Ponavljajte, dokler elementi niso v želenem vrstnem redu. Novi vrstni red je tisto, kar bodo vaši prostovoljci videli, ko si bodo ogledali lekcijo.
+
+## Razveljavitev odstranitve
+
+Če želite obnoviti element, ki ste ga odstranili, ponovno kliknite njegov gumb **Izbriši**. Meni zdaj ponuja tudi možnost **Brez**. Izberite **Brez**, če želite odstranitev počistiti in element znova prikazati, ali izberite drugo možnost, če želite spremeniti, kje se odstranitev uporablja.
 
 :::tip
-Začnite s prilagajanjem ene lekcije za en razred. Ko se boste s postopkom udobno seznanili, lahko prilagoditve uporabite širše, za vse razrede.
+Začnite s prilagajanjem ene same lekcije za en razred. Ko se boste s postopkom udomačili, lahko prilagoditve uporabite širše za vse razrede.
 :::
 
 ## Kdaj prilagajati
 
-Prilagajanje je najbolj uporabno, kadar:
+Prilagajanje je najbolj koristno, kadar:
 
-- Lekcija vsebuje vsebino za več starostnih skupin, vi pa želite prikazati samo ustrezne dele.
-- Vaš razred ne uporablja nekaterih vlog (na primer namenskega vodje bogoslužja ali tehničnega prostovoljca).
-- Raje imate drugačen vrstni red toka lekcije, kot je privzeti.
+- lekcija vsebuje vsebino za več starostnih skupin, vi pa želite prikazati le ustrezne dele,
+- vaš razred ne uporablja določenih vlog (na primer namenskega vodje bogoslužja ali tehničnega prostovoljca),
+- raje imate drugačen vrstni red poteka lekcije, kot je privzeti.
 
 :::info
-Vsake lekcije vam ni treba prilagajati. Če vsebina za vaš razred deluje tako, kot je, lahko ta korak preskočite in preidete naravnost na [predstavljanje](../presenting/index.md).
+Vsake lekcije vam ni treba prilagajati. Če vsebina v takšni obliki ustreza vašemu razredu, lahko ta korak preskočite in preidete neposredno na [predstavljanje](../presenting/index.md).
 :::

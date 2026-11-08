@@ -1,76 +1,91 @@
 ---
-title: "Personalizzazione delle lezioni"
-description: "Rimuovere, nascondere o riordinare sezioni e ruoli in una lezione di Lessons.church, scegliendo se le modifiche valgono per una sola aula o per tutte."
+title: "Personalizzare le lezioni"
+description: "Rimuovi o riordina sezioni, ruoli e azioni in una lezione di Lessons.church, e scegli se ogni modifica si applica a una sola aula o a tutte."
 ---
 
-# Personalizzazione delle lezioni
+# Personalizzare le lezioni
 
 <div class="article-intro">
 
-Questa guida ti accompagna nella personalizzazione di una lezione per la tua classe. Le personalizzazioni ti permettono di rimuovere, nascondere o riordinare i contenuti così i tuoi volontari vedono esattamente ciò di cui hanno bisogno -- niente di più, niente di meno.
+Questa guida ti accompagna nella personalizzazione di una lezione per la tua aula. Le personalizzazioni ti permettono di rimuovere o riordinare i contenuti, in modo che i tuoi volontari vedano esattamente ciò che serve loro: né più, né meno.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- [Configura almeno una classe](../classrooms/setting-up-classrooms.md) nel portale
-- [Programma una lezione](../classrooms/scheduling-lessons.md) nella classe che vuoi personalizzare
-- Leggi la [Panoramica della personalizzazione](./index.md) per capire cosa può essere personalizzato
+- [Configura almeno un'aula](../classrooms/setting-up-classrooms.md) nel portale
+- [Pianifica una lezione](../classrooms/scheduling-lessons.md) per l'aula che vuoi personalizzare
+- Leggi la [panoramica sulla personalizzazione](./index.md) per capire cosa si può personalizzare
 
 </div>
 
-## Apertura della vista di personalizzazione
+## Aprire la vista di personalizzazione
 
 1. Accedi e vai al tuo **Portale**.
-2. Seleziona la **classe** che contiene la lezione che vuoi personalizzare.
-3. Clicca sulla **lezione programmata** per aprirla.
-4. Clicca su **Personalizza** per entrare nella vista di personalizzazione.
+2. Seleziona l'**aula** che contiene la lezione che vuoi personalizzare.
+3. Nel calendario dell'aula, trova la lezione e fai clic su **Personalizza** sotto il suo nome.
 
-Vedrai il contenuto completo della lezione suddiviso in sezioni, ruoli e azioni.
+La pagina **Personalizza lezione** elenca le sezioni della lezione, con i ruoli di ciascuna sezione e le azioni di ciascun ruolo sotto di essa. Ogni riga ha dei pulsanti sulla destra:
 
-## Rimozione di sezioni
+- **Freccia su** e **Freccia giù** -- Sposta l'elemento di una posizione verso l'alto o verso il basso rispetto ai suoi vicini
+- **Elimina** (icona del cestino) -- Rimuove l'elemento
 
-Se una sezione non si applica alla tua classe, puoi rimuoverla interamente. Questo è utile quando una lezione include contenuti per più fasce d'età e ne hai bisogno di una sola. Ad esempio, se una lezione ha sia una sezione "Attività Prescolare" che una "Attività Elementare", puoi rimuovere quella che non si adatta alla tua aula.
+:::info
+**Personalizza** compare solo per le lezioni di Lessons.church. Le lezioni pianificate da un fornitore esterno mostrano invece **Visualizza lezione** e non possono essere personalizzate.
+:::
+
+## Scegliere dove si applica una modifica
+
+Ogni volta che fai clic su una freccia o sull'icona del cestino, un menu chiede **Applica la personalizzazione selezionata a:**
+
+- **Questa aula** -- La modifica si applica solo all'aula corrente. Le altre aule non vengono toccate.
+- **Tutte le aule** -- La modifica si applica a ogni aula della tua chiesa.
+
+Scegline una e la modifica viene salvata subito. Non esiste un passaggio di salvataggio separato.
+
+## Rimuovere le sezioni
+
+Se una sezione non si adatta alla tua aula, puoi rimuoverla completamente. Questo è utile quando una lezione include contenuti per più fasce d'età e ti serve solo una di esse. Ad esempio, se una lezione contiene sia un'"Attività per la scuola materna" sia un'"Attività per la scuola elementare", puoi rimuovere quella che non si adatta alla tua aula.
 
 1. Trova la sezione che vuoi rimuovere.
-2. Clicca per **rimuovere** o **nascondere** la sezione.
-3. La sezione non apparirà più per i volontari che visualizzano questa lezione.
+2. Fai clic sul pulsante **Elimina** (icona del cestino).
+3. Scegli **Questa aula** o **Tutte le aule**.
 
-## Nascondere ruoli o azioni
+La sezione viene mostrata come rimossa, insieme a tutti i suoi ruoli e alle sue azioni, e i volontari non la vedranno più per questa lezione.
 
-All'interno di una sezione, puoi nascondere ruoli o azioni specifiche. Ad esempio, se una sezione include il ruolo "Leader del culto" ma la tua classe non ne ha uno, puoi nascondere solo quel ruolo senza rimuovere l'intera sezione.
+## Rimuovere ruoli o azioni
 
-1. Espandi la sezione per vedere i suoi ruoli e azioni.
-2. Clicca per **nascondere** qualsiasi ruolo o azione di cui non hai bisogno.
+All'interno di una sezione, puoi rimuovere ruoli o azioni specifici. Ad esempio, se una sezione include un ruolo "Guida del culto" ma la tua aula non ne ha uno, puoi rimuovere solo quel ruolo senza eliminare l'intera sezione.
 
-## Riordinamento dei contenuti
+1. Trova il ruolo o l'azione nell'elenco sotto la sua sezione.
+2. Fai clic sul pulsante **Elimina** (icona del cestino) e scegli dove si applica la modifica.
 
-Puoi riorganizzare sezioni e azioni per adattarle al flusso che preferisci:
+## Riordinare i contenuti
 
-1. Trascina sezioni o azioni per spostarle in alto o in basso nell'ordine.
-2. Il nuovo ordine è quello che i tuoi volontari vedranno quando visualizzeranno la lezione.
+Puoi riorganizzare sezioni, ruoli e azioni per seguire il flusso che preferisci:
 
-## Salvataggio della personalizzazione
+1. Fai clic sulla **Freccia su** o sulla **Freccia giù** dell'elemento che vuoi spostare.
+2. Scegli dove si applica la modifica. L'elemento scambia la posizione con il suo vicino.
 
-Quando hai finito di apportare modifiche, salva la personalizzazione. Ti verrà chiesto di scegliere come applicarla:
+Ripeti finché gli elementi non sono nell'ordine desiderato. Il nuovo ordine è quello che vedranno i tuoi volontari quando visualizzeranno la lezione.
 
-- **Solo questa classe** -- Le modifiche si applicano solo alla classe corrente. Le altre classi non sono interessate.
-- **Tutte le classi** -- Le modifiche si applicano a tutte le classi della tua chiesa.
-- **Rimuovi personalizzazione** -- Se hai personalizzato questa lezione in precedenza e vuoi tornare al contenuto originale, scegli questa opzione per cancellare le tue modifiche.
+## Annullare una rimozione
+
+Per ripristinare un elemento che hai rimosso, fai di nuovo clic sul suo pulsante **Elimina**. Il menu ora offre anche **Nessuno**. Scegli **Nessuno** per annullare la rimozione e mostrare di nuovo l'elemento, oppure scegli l'altra opzione per modificare dove si applica la rimozione.
 
 :::tip
-Inizia personalizzando una singola lezione per una classe. Una volta che ti senti a tuo agio con il processo, puoi applicare le personalizzazioni in modo più ampio a tutte le classi.
+Inizia personalizzando una sola lezione per una sola aula. Quando avrai preso confidenza con il processo, potrai applicare le personalizzazioni in modo più ampio a tutte le aule.
 :::
 
 ## Quando personalizzare
 
 La personalizzazione è più utile quando:
 
-- Una lezione ha contenuti per più fasce d'età e vuoi mostrare solo le parti rilevanti.
-- La tua classe non utilizza certi ruoli (come un leader del culto dedicato o un volontario tecnico).
-- Preferisci un ordine diverso per il flusso della lezione rispetto a quello fornito per impostazione predefinita.
+- Una lezione contiene contenuti per più fasce d'età e vuoi mostrare solo le parti pertinenti.
+- La tua aula non utilizza alcuni ruoli (come un guida del culto o un volontario tecnico dedicato).
+- Preferisci un ordine diverso per il flusso della lezione rispetto a quello predefinito.
 
 :::info
-Non hai bisogno di personalizzare ogni lezione. Se il contenuto funziona così com'è per la tua classe, puoi saltare completamente questo passaggio e andare direttamente alla [presentazione](../presenting/index.md).
+Non è necessario personalizzare ogni lezione. Se il contenuto va bene così com'è per la tua aula, puoi saltare completamente questo passaggio e passare direttamente alla [presentazione](../presenting/index.md).
 :::

@@ -1,60 +1,56 @@
 ---
-title: "Komma igång med B1.church medlemsportal"
-sidebar_label: "Kom igång"
+title: "Komma igång med B1.church-medlemsportalen"
+sidebar_label: "Komma igång"
 description: "Hitta din kyrkas B1.church-webbplats, skapa ditt medlemskonto och se vad portalen erbjuder, från grupper och gåvor till incheckning och planer."
 ---
 
-# Kom igång med B1.church
+# Komma igång med B1.church
 
 <div class="article-intro">
 
-B1.church är din kyrkas digitala hemvist. Här håller du kontakten med församlingen, läser uppdateringar, ger online, checkar in vid gudstjänster och mycket mer. Det här avsnittet guidar dig genom grunderna för hur du använder medlemsportalen.
+B1.church är din kyrkas digitala hemvist. Det är här du går för att hålla kontakten med din församling, se uppdateringar, ge gåvor online, checka in till gudstjänster och mycket mer. Det här avsnittet guidar dig genom grunderna för hur du kommer åt och använder medlemsportalen.
 
 </div>
 
-## Så når du din kyrkas webbplats
+## Åtkomst till din kyrkas webbplats
 
-Din kyrka har en egen B1.church-adress, vanligtvis i formatet `https://yourchurchname.b1.church`. Du kan öppna adressen i valfri webbläsare på dator, surfplatta eller telefon. Kyrkans ledning eller välkomstteam kan ge dig den exakta adressen.
+Din kyrka har en egen B1.church-adress, vanligtvis i formatet `https://dinkyrkasnamn.b1.church`. Du kan öppna den här adressen i valfri webbläsare på din dator, surfplatta eller telefon. Kyrkans ledning eller välkomstteam kan ge dig den exakta adressen.
 
-När du besöker webbplatsen första gången ser du kyrkans publika webbplats med sin egen grafiska profil, navigeringsmenyer och innehållssidor.
+När du besöker webbplatsen för första gången ser du din kyrkas offentliga webbplats med dess egen grafiska profil, navigeringsmenyer och innehållssidor.
 
 ## Skapa ett konto
 
 För att komma åt medlemsportalen och dess funktioner behöver du ett ChurchApps-konto.
 
 1. Besök din kyrkas B1.church-adress.
-2. Klicka på knappen **Logga in** uppe i högra hörnet av sidan.
+2. Klicka på knappen **Logga in** i det övre högra hörnet på sidan.
 3. På inloggningssidan väljer du alternativet att **Registrera** ett nytt konto.
-4. Ange ditt **förnamn**, **efternamn** och **e-postadress** och välj ett **lösenord**.
+4. Ange ditt **förnamn**, **efternamn**, **e-postadress** och välj ett **lösenord**.
 5. Slutför registreringsformuläret.
 
-När du har registrerat dig kan du logga in och använda medlemsportalen med alla dess verktyg.
+Efter registreringen kan du logga in och komma åt medlemsportalen med alla dess verktyg.
 
 :::tip
-Om din kyrka redan har lagt till dig i sitt system, använd samma e-postadress som de har registrerad. Då kopplas ditt konto till din befintliga kyrkoprofil.
+Om din kyrka redan har lagt till dig i sitt system, använd samma e-postadress som de har registrerad för dig. Då kopplas ditt konto till din befintliga kyrkprofil.
 :::
 
 ## Vad du kan göra
 
 När du är inloggad ger medlemsportalen dig tillgång till:
 
-- En **startsida** med förhandsvisningar av din tjänst, dina grupper och dina gåvor, samt en sida **Mig** med det som väntar på dig
-- **Grupper** du tillhör, inklusive samtal och evenemang
-- Online-**gåvor** för bidrag
-- **Planer** som visar ditt volontärschema och detaljer om gudstjänsterna
-- **Incheckning** för gudstjänster och evenemang
-- Katalogen **Gemenskap** för att hitta och komma i kontakt med andra medlemmar
+- En **Hem**-översikt med förhandsvisningar av ditt tjänande, dina grupper och dina gåvor, samt en **Jag**-sida med det som är på väg för dig
+- **Grupper** som du tillhör, inklusive konversationer och evenemang
+- Online-**gåvor** för donationer
+- **Planer** som visar ditt volontärschema och detaljer om gudstjänsten
+- **Incheckning** till gudstjänster och evenemang
+- **Gemenskapskatalogen** för att hitta och komma i kontakt med andra medlemmar
 
-## Använda på telefonen
+## Åtkomst från din telefon
 
-B1.church fungerar i alla mobilwebbläsare. För en mer appliknande upplevelse kan du installera kyrkans medlemsportal som en **progressiv webbapp (PWA)**. Besök `https://yourchurchname.b1.church/mobile/install` för steg-för-steg-anvisningar anpassade för din enhet, eller lägg till den på hemskärmen direkt från Safari eller Chrome. Ingen appbutik behövs. Se [Installera som app (PWA)](./installing-pwa.md) för instruktioner.
-
-:::info
-Den äldre inbyggda appen B1 Mobile har utfasats. PWA:n är det stödda sättet att använda B1.church i telefonen framöver. Se [referenssidan för B1 Mobile](/docs/b1-mobile/) för äldre dokumentation.
-:::
+B1.church fungerar i alla mobilwebbläsare. För en mer appliknande upplevelse kan du installera din kyrkas medlemsportal som en **progressiv webbapp (PWA)**. Besök `https://dinkyrkasnamn.b1.church/mobile/install` för steg-för-steg-anvisningar anpassade för din enhet, eller lägg till den direkt på hemskärmen från Safari eller Chrome. Ingen appbutik behövs. Se [Installera som app (PWA)](./installing-pwa.md) för instruktioner.
 
 ## Nästa steg
 
-- [Logga in](./logging-in.md) -- Lär dig logga in och hantera din session.
-- [Navigera i B1App](./navigating.md) -- Hitta runt i medlemsportalen.
-- [Installera som app (PWA)](./installing-pwa.md) -- Lägg till B1.church på telefonens hemskärm.
+- [Logga in](./logging-in.md) -- Lär dig hur du loggar in och hanterar din session.
+- [Navigera i B1App](./navigating.md) -- Hitta dig fram i medlemsportalen.
+- [Installera som app (PWA)](./installing-pwa.md) -- Lägg till B1.church på din telefons hemskärm.

@@ -1,58 +1,57 @@
 ---
 title: "Dostawcy zewnętrzni"
-description: "Dodaj zewnętrzny kanał programu nauczania do Lessons.church na stronie Third-Party w panelu, a następnie przeglądaj, aktualizuj lub usuwaj połączenia."
+description: "Dodaj kanał kurikulum w formacie Open Lesson Format na stronie Dostawcy zewnętrzni w Lessons.church, a następnie go edytuj lub usuń, aby Twój kościół mógł zaplanować jego lekcje."
 ---
 
 # Dostawcy zewnętrzni
 
 <div class="article-intro">
 
-Lessons.church obsługuje zewnętrznych dostawców materiałów programowych dzięki Open Lesson Format. Oznacza to, że możesz importować treści od innych organizacji i udostępniać je obok wbudowanej biblioteki. Dzięki temu kościoły mają dostęp do materiałów od wielu źródeł w jednym miejscu.
+Lessons.church obsługuje zewnętrznych dostawców kurikulum w formacie Open Lesson Format. Oznacza to, że Twój kościół może podłączyć kurikulum od innych organizacji i zaplanować je dla swoich klas obok wbudowanej biblioteki. Dzięki temu zespół ma materiały z wielu źródeł w jednym miejscu.
 
 </div>
 
 <div class="prereqs">
 <h4>Zanim zaczniesz</h4>
 
-- Mieć uprawnienia administratora w Lessons.church (zobacz [Przegląd administracji](./index.md))
-- Uzyskać adres URL kanału od zewnętrznego dostawcy, z którym chcesz się połączyć
+- Zaloguj się do Lessons.church na konto, które może zarządzać harmonogramami klas Twojego kościoła
+- Uzyskaj adres URL kanału od zewnętrznego dostawcy, którego chcesz podłączyć. Musi on zwracać lekcje w formacie [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Dodawanie dostawcy
 
-1. Przejdź do obszaru **Admin**.
-2. Otwórz stronę **Third-Party**.
-3. Kliknij **Add Provider** (lub odpowiedni przycisk służący do dodania nowego połączenia).
-4. Wpisz **adres URL kanału** dostawcy. To adres, pod którym dostawca publikuje swoje dane programowe w Open Lesson Format.
-5. Zapisz połączenie.
+1. Kliknij **External Providers** w nawigacji Lessons.church. Otworzy się strona **External Lesson Providers**.
+2. Kliknij **Add Provider**. Jeśli nie dodano jeszcze żadnego dostawcy, kliknij zamiast tego **Add First Provider**.
+3. Wpisz **Provider Name**. Jest to nazwa, którą zespół zobaczy podczas wyboru dostawcy.
+4. Wpisz **API URL**. Jest to adres, pod którym dostawca publikuje swoje kurikulum w formacie Open Lesson Format.
+5. Kliknij **Save**.
 
-Po zapisaniu Lessons.church zaimportuje treści dostawcy. Jego programy, studia i lekcje pojawią się w bibliotece materiałów obok Twoich własnych treści.
+Dostawca zostaje dodany wyłącznie dla Twojego kościoła. Następnie pojawia się jako opcja w polu **Provider** podczas [planowania lekcji](../classrooms/scheduling-lessons.md) dla klasy oraz w polu **Source** podczas tworzenia [planu rocznego](./managing-year-plans.md).
 
 ## Zarządzanie dostawcami
 
-Na stronie **Third-Party** zobaczysz wszystkich połączonych dostawców. Dla każdego z nich możesz:
+Strona **External Lesson Providers** zawiera listę wszystkich dostawców dodanych przez Twój kościół. Aby zmienić dostawcę:
 
-- **Wyświetlić** zaimportowane treści, aby sprawdzić, czy zostały poprawnie pobrane.
-- **Zaktualizować** adres URL kanału, jeśli dostawca zmieni swój punkt końcowy.
-- **Usunąć** dostawcę, jeśli nie chcesz już uwzględniać jego treści.
+- **Edytuj** -- Kliknij ikonę **Edit provider** (ołówek), zmień **Provider Name** lub **API URL** i kliknij **Save**.
+- **Usuń** -- Kliknij ikonę **Edit provider**, następnie kliknij ikonę usuwania (kosz) i potwierdź.
 
 ## Czym jest Open Lesson Format?
 
-Open Lesson Format to standardowy schemat opisujący treści programowe — programy, studia, lekcje, miejsca, sekcje i działania — w uporządkowany sposób. Każda organizacja, która publikuje swoje treści w tym formacie, może zostać dodana jako dostawca w Lessons.church.
+Open Lesson Format to standardowy schemat opisujący treści kurikulum -- programy, studia, lekcje, miejsca, sekcje i działania -- w uporządkowany sposób. Każda organizacja, która publikuje swoje treści w tym formacie, może zostać dodana jako dostawca w Lessons.church.
 
-Jeśli jesteś dostawcą treści i chcesz udostępnić swoje materiały programowe za pośrednictwem Lessons.church, pełną dokumentację schematu znajdziesz w przewodniku [Open Lesson Format](./open-lesson-format.md).
+Jeśli jesteś dostawcą treści i chcesz udostępnić swoje kurikulum przez Lessons.church, pełną dokumentację schematu znajdziesz w przewodniku [Open Lesson Format](./open-lesson-format.md).
 
 ## Dlaczego warto korzystać z zewnętrznych dostawców?
 
-- **Więcej możliwości dla kościołów** — kościoły mogą przeglądać szerszy wybór materiałów bez opuszczania platformy.
-- **Wszystko w jednym miejscu** — wolontariusze i koordynatorzy nie muszą odwiedzać wielu stron, aby znaleźć i zaplanować lekcje.
-- **Łatwa konfiguracja** — dodanie dostawcy wymaga tylko adresu URL kanału. Nie trzeba ręcznie wprowadzać danych ani przesyłać plików.
+- **Większy wybór dla kościołów** -- Kościoły mogą przeglądać szerszy zakres kurikulum bez opuszczania platformy.
+- **Wszystko w jednym miejscu** -- Wolontariusze i koordynatorzy nie muszą odwiedzać wielu stron, aby znaleźć i zaplanować lekcje.
+- **Łatwa konfiguracja** -- Dodanie dostawcy wymaga jedynie nazwy i adresu URL kanału. Nie trzeba ręcznie wprowadzać danych ani przesyłać plików.
 
 :::info
 Treściami pochodzącymi od zewnętrznych dostawców zarządza sam dostawca. Jeśli zauważysz brakujące lub nieaktualne treści, problem może wymagać rozwiązania po jego stronie.
 :::
 
 :::tip
-Informacje o konfiguracji zewnętrznych dostawców na poziomie kościoła (a nie administratora) znajdziesz na stronie [Zewnętrzni dostawcy](../browsing/external-providers.md) w sekcji Przeglądanie.
+Aby dowiedzieć się, jak wyglądają lekcje od zewnętrznego dostawcy po ich zaplanowaniu, zobacz [Dostawcy zewnętrzni](../browsing/external-providers.md) w sekcji Przeglądanie.
 :::

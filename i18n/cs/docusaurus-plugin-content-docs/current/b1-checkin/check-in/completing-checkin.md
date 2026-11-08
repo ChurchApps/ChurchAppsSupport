@@ -1,13 +1,13 @@
 ---
-title: "Dokončení odbavení"
-description: "Dokončete check-in rodiny na kiosku v B1 Checkin: limity místností, tisk štítků, bezpečnostní kódy pro vyzvednutí a co aplikace udělá dál."
+title: "Dokončení check-inu"
+description: "Dokončete check-in rodiny na kiosku v aplikaci B1 Checkin, včetně limitů místností, tisku štítků, bezpečnostních kódů pro vyzvednutí a toho, co aplikace udělá dál."
 ---
 
-# Dokončení odbavení
+# Dokončení check-inu
 
 <div class="article-intro">
 
-Jakmile zkontrolujete svou domácnost a případně přiřadíte skupiny, jste připraveni odbavení dokončit. Toto je poslední krok v pracovním postupu kiosku: aplikace odešle docházku, vytiskne štítky a připraví se pro další rodinu.
+Jakmile zkontrolujete svou domácnost a provedete potřebná přiřazení do skupin, můžete check-in dokončit. Toto je poslední krok při práci s kioskem – aplikace odešle docházku, vytiskne štítky a připraví se pro další rodinu.
 
 </div>
 
@@ -15,63 +15,65 @@ Jakmile zkontrolujete svou domácnost a případně přiřadíte skupiny, jste p
 <h4>Než začnete</h4>
 
 - [Zkontrolujte svou domácnost](./household-review.md) na obrazovce kontroly domácnosti
-- [Přiřaďte skupiny](./group-assignment.md) všem členům rodiny, kteří se mají odbavit do konkrétní třídy nebo programu
-- Volitelně [přidejte hosty](./adding-guests.md), kteří přicházejí s vaší rodinou
+- [Přiřaďte skupiny](./group-assignment.md) všem členům rodiny, kteří se mají přihlásit do konkrétní třídy nebo programu
+- Volitelně [přidejte hosty](./adding-guests.md), kteří navštěvují vaši rodinu
 
 </div>
 
-## Jak se odbavit
+## Jak provést check-in
 
 1. Na **obrazovce kontroly domácnosti** klepněte na tlačítko **Check-in** ve spodní části obrazovky.
-2. Aplikace odešle data o docházce na server a zobrazí **obrazovku úspěchu** se zeleným fajfkou a uvítací zprávou.
+2. Aplikace odešle údaje o docházce na server a zobrazí **obrazovku úspěchu** se zeleným zaškrtnutím a uvítací zprávou.
 
 To je vše. Docházka vaší rodiny byla zaznamenána.
 
+Pokud se některá z vybraných osob už dnes na tuto bohoslužbu přihlásila, nejprve se zobrazí okno **Už přihlášeno** a uvede jejich jména. Klepnutím na **Přihlásit znovu** uložíte jejich nové volby skupin, nebo na **Zrušit** se vrátíte na obrazovku domácnosti.
+
 ## Plné místnosti a poměry dobrovolníků
 
-Pokud váš sbor nastavil [bezpečnostní limity](../../b1-admin/attendance/checkin-safety.md) pro své místnosti, server je před uložením zkontroluje:
+Pokud vaše církev nastavila na svých místnostech [bezpečnostní limity](../../b1-admin/attendance/checkin-safety.md), server je před uložením zkontroluje:
 
-- Pokud je vybraná místnost **plná nebo uzavřená**, odbavení neproběhne a aplikace místnost pojmenuje, abyste mohli vybrat jinou.
-- Pokud má časový termín bohoslužby [harmonogram odbavení](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho okno pro odbavení právě není otevřené, odbavení do místností tohoto časového termínu je také odmítnuto. Obrazovka **Can't check in yet** uvádí místnost s důvodem „odbavení právě není otevřeno“. Klepnutím na **Change Rooms** vyberete jiný časový termín nebo skupinu. (Časové termíny, které jsou již uzavřeny, se na [obrazovce domácnosti](./household-review.md) zobrazují jako **Closed** a nelze je vybrat, takže tuto situaci uvidíte obvykle jen tehdy, pokud okno skončí během odbavování.)
-- Domácnost, která se odbavila na dřívější časový termín, se může vrátit později a přidat otevřený časový termín, i poté, co dřívější okno skončilo. Jejich stávající odbavení zůstanou zachována a nezpůsobí odmítnutí nového odbavení.
-- Pokud dětská místnost **nemá dostatek dobrovolníků** podle svého poměru, aplikace buď zobrazí upozornění, které může člen personálu potvrdit a pokračovat, nebo odbavení zcela zablokuje. Záleží na tom, jak váš sbor nastavil vynucování poměrů.
+- Pokud je vybraná místnost **plná nebo uzavřená**, check-in neproběhne a aplikace název místnosti zobrazí, abyste si mohli vybrat jinou.
+- Pokud má čas bohoslužby [harmonogram check-inu](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) a jeho okno pro check-in není právě otevřené, check-in do místností tohoto času bohoslužby je také odmítnut. Obrazovka **Zatím nelze přihlásit** uvede místnost s důvodem „check-in právě není otevřen“; klepněte na **Změnit místnosti** a vyberte jiný čas bohoslužby nebo skupinu. (Časy bohoslužeb, které už jsou uzavřeny, jsou na [obrazovce domácnosti](./household-review.md) označeny jako **Uzavřeno** a nelze je vybrat, takže tuto situaci uvidíte obvykle jen tehdy, když se okno zavře uprostřed check-inu.)
+- Domácnost, která se přihlásila na dřívější čas bohoslužby, se může vrátit později a přidat otevřený čas bohoslužby, a to i poté, co dřívější okno už bylo zavřeno. Jejich stávající přihlášení zůstanou zachována a nebrání tomu, aby byl nový check-in odmítnut.
+- Pokud je v dětské místnosti **nedostatek dobrovolníků** podle nastaveného poměru, aplikace buď zobrazí upozornění, které může potvrdit pracovník, aby pokračoval, nebo check-in zcela zablokuje – podle toho, jak vaše církev nastavila vynucování poměrů.
 
 ## Tisk štítků
 
-Pokud je nakonfigurována síťová tiskárna, aplikace po odbavení automaticky vytiskne štítky:
+Pokud je nakonfigurována síťová tiskárna, aplikace po check-inu automaticky vytiskne štítky:
 
-- **Jmenovky** se tisknou pro každou osobu, která je přiřazena do skupiny s povoleným nastavením **Print Nametag**. Jmenovky obsahují jméno osoby, její přiřazení ke skupině a informace o alergiích či poznámky, pokud jsou k dispozici.
-- **Lístky pro vyzvednutí rodiči** (Parent pickup slips) se tisknou, pokud je některá odbavená osoba ve skupině s povoleným nastavením **Parent Pickup**. Osoby odbavené jako **Volunteer** se přeskakují, takže pracovník dětské péče, který slouží v místnosti pro vyzvedávání rodiči, lístek nedostane. Lístek uvádí děti, jejich přiřazení ke skupinám a jedinečný **4znakový bezpečnostní kód**.
+- **Jmenovky** se tisknou pro každou osobu přiřazenou ke skupině, u které je zapnuto nastavení **Tisknout jmenovku**. Jmenovka obsahuje jméno osoby, přiřazenou skupinu a informace o alergiích či poznámky, pokud jsou k dispozici.
+- **Lístky pro vyzvednutí rodiči** se tisknou, pokud je některá přihlášená osoba ve skupině, u které je zapnuto nastavení **Vyzvednutí rodiči**. Osoby přihlášené jako **Dobrovolník** se přeskočí, takže pečovatel, který slouží v místnosti pro vyzvedávání rodiči, lístek nedostane. Lístek pro vyzvednutí uvádí děti, jejich skupiny a jedinečný **bezpečnostní kód o 4 znacích**.
 
 :::info
-Stejný bezpečnostní kód se objeví na jmenovce dítěte i na lístku pro vyzvednutí rodiče. Při vyzvedávání dobrovolníci kódy porovnají, aby ověřili, že dítě vyzvedává správný dospělý.
+Stejný bezpečnostní kód se objeví na jmenovce dítěte i na lístku pro vyzvednutí rodiče. Při vyzvedávání dobrovolníci kódy porovnají, aby ověřili, že každé dítě vyzvedává správný dospělý.
 :::
 
-Bezpečnostní kód se vygeneruje znovu pro každé odbavení a používá pouze souhlásky a číslice. Samohlásky jsou vynechány, aby nevznikala nevhodná slova.
+Bezpečnostní kód se vygeneruje znovu pro každý check-in a obsahuje pouze souhlásky a číslice (samohlásky jsou vynechány, aby nevznikala nevhodná slova).
 
 :::warning
-Pokud se štítky netisknou, otevřete nastavení správce klepnutím na **logo sboru** sedmkrát a poté klepněte na **Change Printer**, abyste ověřili připojení tiskárny. Postup při řešení problémů najdete v části [Nastavení tiskárny](../getting-started/printer-setup.md).
+Pokud se štítky netisknou, otevřete nastavení administrátora klepnutím sedmkrát na **logo církve**, poté klepněte na **Změnit tiskárnu** a ověřte připojení tiskárny. Kroky při řešení potíží najdete v článku [Nastavení tiskárny](../getting-started/printer-setup.md).
 :::
 
-## Co se stane po odbavení
+## Co se děje po check-inu
 
 - Pokud je tiskárna nakonfigurována, aplikace vytiskne všechny štítky a poté se automaticky vrátí na **obrazovku vyhledávání**, připravenou pro další rodinu.
 - Pokud tiskárna nakonfigurována není, aplikace se rovněž automaticky vrátí na **obrazovku vyhledávání**.
 
-V každém případě zůstane obrazovka úspěchu zobrazena alespoň 6 sekund od chvíle, kdy se objeví (8 sekund, pokud slaví něčí milník docházky), aby rodiny viděly, že odbavení proběhlo. Pokud tisk trvá déle, aplikace se vrátí přibližně o jeden a půl sekundy po dokončení tisku.
+V obou případech zůstane obrazovka úspěchu zobrazena alespoň 6 sekund od chvíle, kdy se objeví (8 sekund, pokud slaví něčí milník v účasti), aby rodiny viděly, že check-in proběhl. Pokud tisk trvá déle, aplikace se vrátí přibližně o jeden a půl sekundy po dokončení tisku.
 
-Nemusíte nic klepat, abyste se vrátili na obrazovku vyhledávání, aplikace přechod zvládne automaticky. Jakmile je obrazovka chvíli zobrazena, můžete na ni klepnout a vrátit se okamžitě. Klepnutí během prvních jedné a půl sekundy se ignoruje, takže rychlé dvojité klepnutí na **Check-in** obrazovku nepřeskočí.
+Abyste se vrátili na obrazovku vyhledávání, nemusíte nic klepat – aplikace přechod zvládne automaticky. Jakmile je obrazovka zobrazena chvíli, můžete na ni klepnout a vrátit se okamžitě; klepnutí v prvních jeden a půl sekundy se ignoruje, takže rychlé dvojité klepnutí na **Check-in** nepřeskočí tuto obrazovku.
 
 :::tip
-Aplikace se po každém odbavení kompletně resetuje, takže nehrozí, že by jedna rodina uviděla údaje jiné rodiny.
+Aplikace se po každém check-inu plně resetuje, takže neexistuje riziko, že by jedna rodina viděla údaje jiné rodiny.
 :::
 
 ## Co se zaznamenává
 
-Když klepnete na **Check-in**, aplikace odešle serveru pro každého člena domácnosti, který má přiřazenou skupinu, následující údaje:
+Když klepnete na **Check-in**, aplikace odešle na server následující údaje pro každého člena domácnosti, který má přiřazenou skupinu:
 
-- **osobu**, která se odbavuje
-- **službu**, kterou navštěvuje
-- **časový termín** a **skupinu**, do kterých je přiřazena
+- **osobu**, která se přihlašuje
+- **bohoslužbu**, které se účastní
+- **čas bohoslužby** a **skupinu**, ke které je přiřazena
 
-Tyto údaje se zobrazí v B1 Admin v sekci **Attendance**, kde správci vašeho sboru mohou prohlížet a spravovat záznamy docházky. Podrobnosti najdete v [průvodci správou odbavení](../../b1-admin/attendance/check-in.md).
+Tyto údaje se zobrazí v aplikaci B1 Admin v sekci Docházka, kde mohou správci vaší církve docházku prohlížet a spravovat. Podrobnosti najdete v [průvodci správou check-inu](../../b1-admin/attendance/check-in.md).

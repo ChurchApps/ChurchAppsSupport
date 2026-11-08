@@ -1,72 +1,72 @@
 ---
 title: "Configurarea inițială a bisericii în B1 Admin"
-sidebar_label: "Configurarea inițială"
-description: "Configurarea inițială a unei biserici noi în B1 Admin: date, branding, roluri și ordinea recomandată pentru persoane, grupuri, prezență și donații."
+sidebar_label: "Configurare inițială"
+description: "Parcurgeți configurarea de la prima utilizare a unei biserici noi în B1 Admin: informațiile bisericii, identitatea vizuală, rolurile și ordinea recomandată pentru configurarea persoanelor, grupurilor, prezenței și donațiilor."
 ---
 
-# Configurarea inițială
+# Configurare inițială
 
 <div class="article-intro">
 
-După crearea contului și a bisericii, există câțiva pași importanți de configurat înainte de a-ți invita echipa. Acest ghid te parcurge ordinea recomandată a pașilor, astfel încât biserica ta să fie pregătită de la prima zi.
+După crearea contului și a bisericii, există câțiva pași importanți de configurat înainte de a invita echipa. Acest ghid vă parcurge ordinea recomandată de configurare, astfel încât biserica dumneavoastră să fie pregătită de la prima zi.
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- [Creează-ți contul](./create-account.md) și înregistrează-ți biserica
-- Pregătește logo-ul bisericii și materialele de branding (opțional, dar recomandat)
+- [Creați-vă contul](./create-account.md) și înregistrați-vă biserica
+- Pregătiți logo-ul bisericii și materialele de identitate vizuală (opțional, dar recomandat)
 
 </div>
 
-## Pasul 1: Configurează informațiile despre biserică
+## Pasul 1: Configurați informațiile bisericii
 
-1. Deschide [meniul Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (bara de căutare din colțul din stânga sus al B1 Admin), extinde **Settings** și apasă pe **Settings**.
-2. În secțiunea **Church Information**, apasă pe **Edit**.
-3. Introdu **numele**, **subdomeniul** și **adresa** bisericii tale.
-4. Apasă pe **Save** pentru a aplica modificările.
+1. Deschideți [meniul de salt](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (bara de căutare din colțul din stânga sus al B1 Admin), extindeți **Setări** și faceți clic pe **Setări**.
+2. În secțiunea **Informații despre biserică**, faceți clic pe **Editare**.
+3. Introduceți **numele**, **subdomeniul** și **adresa** bisericii.
+4. Faceți clic pe **Salvare** pentru a aplica modificările.
 
-## Pasul 2: Configurează branding-ul
+## Pasul 2: Configurați identitatea vizuală
 
-1. În meniul Jump, alege **Website > Appearance**.
-2. Încarcă **logo-ul bisericii**.
-3. Configurează opțiunile suplimentare de branding, cum ar fi culorile și imaginile.
-4. Branding-ul tău va apărea pe site-ul tău B1.church și în aplicația B1 Mobile.
+1. În meniul de salt, alegeți **Site web > Aspect**.
+2. Încărcați **logo-ul bisericii**.
+3. Configurați orice alte opțiuni de identitate vizuală, cum ar fi culorile și imaginile.
+4. Identitatea vizuală va apărea pe site-ul dumneavoastră B1.church și în aplicația B1 App.
 
 :::tip
-Având logo-ul și branding-ul pregătite înainte de a invita membrii echipei, le oferi o primă impresie profesionistă atunci când se conectează.
+Având logo-ul și identitatea vizuală pregătite înainte de a invita membrii echipei, se face o impresie bună de la prima autentificare.
 :::
 
-## Pasul 3: Configurează rolurile și invită-ți echipa
+## Pasul 3: Configurați rolurile și invitați echipa
 
-1. În meniul Jump, alege **Settings > Roles**.
-2. Creează roluri pentru echipa ta (de exemplu, „Pastor", „Secretar", „Trezorier").
-3. Atribuie permisiunile potrivite fiecărui rol.
-4. Adaugă membrii echipei căutându-le conturile și atribuindu-le rolurilor.
+1. În meniul de salt, alegeți **Setări > Roluri**.
+2. Creați roluri pentru echipa dumneavoastră (de exemplu, „Pastor”, „Secretar”, „Trezorier”).
+3. Atribuiți permisiunile corespunzătoare fiecărui rol.
+4. Adăugați membrii echipei căutând conturile acestora și atribuindu-le rolurile.
 
-## Pasul 4: Configurează zonele principale
+## Pasul 4: Configurați zonele principale
 
-Odată ce echipa este pusă la punct, începe să construiești zonele de bază din B1 Admin:
+Odată ce echipa este pe loc, începeți să construiți zonele de bază ale B1 Admin:
 
-1. **People** -- Adaugă membri în agenda bisericii. Aceasta este baza pentru tot restul, așa că începe aici. Poți adăuga persoane manual sau poți folosi instrumentul **Import/Export** din **Settings**.
-2. **Groups** -- Creează grupuri pentru grupurile mici, echipele de slujire, clasele și alte adunări.
-3. **Attendance** -- Configurează campusurile, serviciile și orele serviciilor pentru urmărirea prezenței.
-4. **Donations** -- Configurează fondurile de donații și conectează-ți gateway-ul de plată (Stripe) pentru a accepta donații online.
-5. **Website** -- Construiește site-ul public al bisericii folosind generatorul de site-uri B1.church.
+1. **Persoane** -- Adăugați membri în registrul bisericii. Acesta este fundamentul pentru tot restul, așa că începeți de aici. Puteți adăuga persoane manual sau puteți folosi instrumentul **Import/Export** din **Setări**.
+2. **Grupuri** -- Creați grupuri pentru grupuri mici, echipe de slujire, clase și alte întâlniri.
+3. **Prezență** -- Configurați campusurile, serviciile și orele serviciilor pentru urmărirea prezenței.
+4. **Donații** -- Configurați fondurile de donații și conectați-vă procesatorul de plăți (Stripe) pentru a accepta donații online.
+5. **Site web** -- Construiți site-ul public al bisericii folosind constructorul de site-uri B1.church.
 
 :::info
-Nu este nevoie să configurezi toate zonele deodată. Multe biserici încep cu **People** și **Groups**, apoi adaugă **Attendance** și **Donations** pe măsură ce se familiarizează cu platforma.
+Nu trebuie să configurați toate zonele deodată. Multe biserici încep cu **Persoane** și **Grupuri**, apoi adaugă **Prezența** și **Donațiile** pe măsură ce se familiarizează cu platforma.
 :::
 
 ## Ordinea recomandată
 
-Pentru o configurare cât mai simplă, îți sugerăm această ordine:
+Pentru o configurare cât mai ușoară, vă sugerăm următoarea ordine:
 
-1. **People** -- Adaugă mai întâi membrii și participanții obișnuiți.
-2. **Groups** -- Organizează persoanele în grupuri relevante.
-3. **Attendance** -- Începe să urmărești cine vine în fiecare săptămână.
-4. **Donations** -- Configurează donațiile după ce persoanele tale sunt în sistem.
-5. **Website** -- Construiește site-ul public la final, după ce datele tale sunt la locul lor.
+1. **Persoane** -- Adăugați mai întâi membrii și participanții obișnuiți.
+2. **Grupuri** -- Organizați persoanele în grupuri relevante.
+3. **Prezență** -- Începeți să urmăriți cine vine în fiecare săptămână.
+4. **Donații** -- Configurați sistemul de donații după ce persoanele sunt înregistrate în sistem.
+5. **Site web** -- Construiți site-ul public la final, după ce datele sunt deja înregistrate.
 
-Odată ce ai parcurs acești pași, biserica ta este gata de utilizare. Explorează documentația [B1 Admin](/docs/b1-admin/) pentru ghiduri detaliate despre fiecare zonă.
+Odată ce ați parcurs acești pași, biserica dumneavoastră este gata de utilizare. Explorați documentația [B1 Admin](/docs/b1-admin/) pentru ghiduri detaliate despre fiecare zonă.

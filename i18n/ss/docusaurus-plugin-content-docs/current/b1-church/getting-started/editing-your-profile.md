@@ -1,84 +1,93 @@
 ---
-title: "Kuhlela Iphrofayili Yakho ku-Portal Yelilungu le-B1.church"
-sidebar_label: "Kuhlela Iprofayili Yakho"
-description: "Buyekeza imininingwane yakho yekuxhumana, emalungu emndeni, i-imeyili yekungena nemaphasiwedi, nemalungiselelo ekuvikela ku-portal yelilungu le-B1.church."
+title: "Ukuhlela Iphrofayili Yakho Ku-Member Portal ye-B1.church"
+sidebar_label: "Ukuhlela Iphrofayili Yakho"
+description: "Vuselela imininingwane yakho yokuxhumana, amalungu omndeni wakho, i-imeyili yokungena nephasiwedi, kanye nezilungiselelo zobumfihlo ku-member portal ye-B1.church."
 ---
 
-# Kuhlela Iprofayili Yakho
+# Ukuhlela Iphrofayili Yakho
 
 <div class="article-intro">
 
-Ikhasi leprofayili yakho esiphoweni setilungu likuvumela kutsintsa lolwatfo lwakho lwekuxhumana, kuphatsa umndeni wakho, kutsintsa i-imeyili nelitfusi lakho leakhawunti, futsi kulawula kutsi ngubani lobungakubona likheli lakho, nelucingo lwakho, ne-imeyili yakho.
+Ikhasi leprofayili yakho ku-member portal likuvumela ukuthi uvuselele imininingwane yakho yokuxhumana, uphathe umndeni wakho, ushintshe i-imeyili yakho ye-akhawunti kanye nephasiwedi, futhi ulawule ukuthi ngubani ongabona ikheli lakho, inombolo yefoni, kanye ne-imeyili yakho.
 
 </div>
 
-## Ividiyo Yekufundza
+## Ividiyo Yokuqeqesha
 
-<YouTube id="SKqr2A_jdRQ" title="Kuvuselela Iprofayili Yakho Nemalwatiso" next="Kujoyina Liqembu Nekuxoxa Nalo" nextUrl="/docs/b1-church/groups/browsing-groups" />
+<YouTube id="SKqr2A_jdRQ" title="Ukubuyekeza Iphrofayili Yakho Nezaziso" next="Ukujoyina Iqembu Nokuxoxa Nalo" nextUrl="/docs/b1-church/groups/browsing-groups" />
 
 <div class="prereqs">
 <h4>Ngaphambi Kokuqala</h4>
 
-- Udzingeka [ungene](./logging-in.md) — kuhlela iprofayili kudzinga i-akhawunti
+- Udinga ukuba [ungene ngemvume](./logging-in.md) -- ukuhlela iprofayili kudinga i-akhawunti
 
 </div>
 
-## Kuvula Iprofayili Yakho
+## Ukuvula Iprofayili Yakho
 
-Thepha sithombe sakho sembhulo esibhalweni lesingenhla, noma thepha **Edit Profile** phezulu kweliphepha le-**More** noma ekhasini lakho le-[Me page](./me-page.md), kuze uvule **Iprofayili yakho** ku-`/mobile/profileEdit`. Likhasi linemacala lembhalo lenemacembu -- **Sithombe nelibito**, **Kuxhumana**, **Umndeni**, **I-akhawunti**, na **Ubucayi** -- ngalinye livetsa lolwatfo lwakho lwamanje nelisixhumanisi se-**Edit** (noma **Engeta Lilungu Lemndeni** / **Shintja**) lelivula liphaneli lapho wenta khona tinguquko.
+Thepha isithombe sakho sephrofayili esigcini esiphezulu se-app, noma thepha **Hlela Iprofayili** phezulu kwekhasi le-**Okuningi** noma kukhasi lakho le-[Me](./me-page.md), ukuze uvule **Iprofayili yakho** ku-`/mobile/profileEdit`. Leli khasi liyishidi elinezigaba -- **Isithombe negama**, **Okokuxhumana**, **Umndeni**, **I-akhawunti**, kanye **Ubumfihlo** -- ngayinye ibonisa imininingwane yakho yamanje ngesixhumanisi se-**Hlela** (noma **Engeza Ilungu Lomndeni** / **Shintsha**) esivula ipheneli lapho wenza khona izinguquko.
 
-## Sithombe Nelibito Kanye Nekuxhumana
+## Isithombe Negama Nokuxhumana
 
-Lemacembu aphatsa lolwatfo lwelikhasi lakho lelibhalwe ebhukwini lebantfu lesontfo lakho:
+Lezi zigaba zibamba ulwazi ibandla lakho eliluboná kurekhodi lakho lomuntu:
 
-- **Sithombe nelibito** — thepha **Shintja Sithombe** kuze ulayishe sithombe lesisha, futsi uhlele Libito Lakho Lekucala, Lelisemkhatsini, nelo Lekugcina.
-- **Kuxhumana** — I-imeyili, Lucingo Lwemakhulumane, Lucingo Lwasekhaya, Lucingo Lwemsebenti, Lilanga Lekuzalwa, nelikheli lakho (sitaladi, idolobha, sifundazwe, nelikhodi yeposi). Uma uvula tinkumbulo temasigcawu ku-[Kuhlukanisa Tisetingi Tekwatisa](./notification-preferences.md), tona titawuya kulucingo lwakho lwemakhulumane.
+- **Isithombe negama** -- thepha **Shintsha Isithombe** ukuze ulayishe isithombe esisha, bese uhlela **Isihloko** sakho, Igama Lokuqala, Igama Lephakathi, kanye Nesibongo. Ngo-**Isihloko**, khetha esinye sezincomo (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, noma Pastor) noma ubhale eyakho, kuze kube izinhlamvu ezili-10.
+- **Okokuxhumana** -- i-Imeyili, Ifoni Yeselula, Ifoni Yekhaya, Ifoni Yomsebenzi, Usuku Lokuzalwa, kanye nekheli lakho (isitaladi, idolobha, isifunda, nekhodi lokuposta). Uma uvula izikhumbuzo zombhalo ku-[Izilungiselelo Zezaziso](./notification-preferences.md), zizoya kunombolo yakho yeselula.
 
-Yenta tinguquko lotifunako eliphaneli bese uthepha **Gcina Tinguquko**.
+Yenza izinguquko zakho kupheneli bese uthepha **Gcina Izinguquko**.
 
 :::info
-Uma libandla lakho ledinga kuvunyelwa kwetinguquko telikheli, ikhasi litsi "Tinguquko Tebuntfu Yakho tiya kubasebenzi belibandla kutsi batvume." futsi lichaza lithi **Ngenisa Kutvumelwa** -- tinguquko takho tingenisa njengesicelo kunekutsi tisebente ngesikhashana. Bona [Kuvuma Tinguquko Teprofayili](/docs/b1-admin/profile/approving-profile-changes) kutsi libandla lakho litinhlola kanjani lelitinguquko.
+Uma ibandla lakho ludinga ukuvunyelwa kwezinguquko zohla lwamagama, ikhasi lithi "Izinguquko kwiprofayili yakho ziya kubasebenzi besonto ukuze zivunyelwe." nenkinobho ithi **Thumela Ukuze Kuvunyelwe** -- izinguquko zakho zithunyelwa njengesicelo esikhundleni sokusebenza ngokushesha. Bheka [Ukuvuma Izinguquko Zeprofayili](/docs/b1-admin/profile/approving-profile-changes) ukuze uthole ukuthi ibandla lakho liyazibuyekeza kanjani lezi.
 :::
 
 ## Umndeni
 
-Lesigaba se-Umndeni sibonisa labanye bantfu labahlanganiswe nemndeni wakho, ngalinye nemsebenti walo wemndeni (Umnikati, Umshado, Umntfwana, njalo njalo). Thepha lilungu lemndeni kuze ubone tinkhukhulo talo.
+Isigaba Somndeni sibonisa abanye abantu abaxhunyiwe emndenini wakho, ngamunye enomsebenzi wakhe wasemndenini (Ikhanda, Umshadi, Umntwana, njll.). Thepha ilungu lomndeni ukuze ubone imininingwane yalo.
 
-Kuze ungeta lilungu lemndeni longakakabhalwa esistimini, thepha **Engeta Lilungu Lemndeni**, faka libito lalo lekucala, bese uthepha **Engeta**. Emalungu emndeni lamasha engetwa ohlwini lolulindzele futsi ahlanganiswe netinye tinguquko teprofayili yakho, kuze libandla lakho litibuke.
+Ukuze wengeze ilungu lomndeni elingakakhishwa kohlelo:
+
+1. Thepha **Engeza Ilungu Lomndeni**.
+2. Faka **Igama Lokuqala** lalo. **Isibongo** siqala sigcwele ngesibongo sakho; shintsha uma salo sihlukile.
+3. Uma uthanda, engeza **Isihloko** nenombolo yalo **Yeselula**.
+4. Khetha **Indima Yalo Emndenini**: **Ikhanda**, **Umshadi**, **Umntwana**, noma **Okunye** (okuzenzakalelayo).
+5. Thepha **Engeza**. Uzobona ngaphansi kwe-**Amalungu Omndeni Alindele** ngendima yawo; thepha **Susa** ukuze umsuse kuluhla. Phinda kwabanye.
+6. Thepha **Gcina Izinguquko** (noma **Thumela Ukuze Kuvunyelwe**).
+
+Uma ibandla lakho libuyekeza izinguquko zohla lwamagama, amalungu omndeni amasha athunyelwa kanye nezinye izinguquko zakho ukuze ibandla lakho livume. Uma kungenjalo, angeezwa emndenini wakho ngokushesha ngemuva kokugcina.
 
 ## I-akhawunti
 
-Lesigaba se-I-akhawunti silawula kungena kwakho ngaphandle kwekuphatsa iprofayili yelibandla. Thepha **Hlela** kuze uyivule:
+Isigaba se-akhawunti siphatha ukungena kwakho ngemvume hhayi iprofayili yakho yebandla. Thepha **Hlela** ukuze uyivule:
 
-- **Libito Lekukhombisa** — libito lekucala nelo lekugcina lelitfolakala ekungeneni kwakho (lihlukile kulibito lelisemprofayilini yelibandla).
-- **Shintja I-imeyili** — vuselela i-imeyili lolusebentisa kutsi ungene.
-- **Shintja Liphasiwedi** — faka liphasiwedi lakho lamanje, bese ufaka liphasiwedi lelisha kabili. Liphasiwedi lelisha kufanele libe nemalitha lo-8 kuya kwelingaphezulu.
+- **Igama Lokubonisa** -- igama lokuqala nesibongo esibonakala ekungeneni kwakho (esehlukile egameni elisemprofayilini yakho yebandla).
+- **Shintsha I-imeyili** -- buyekeza ikheli le-imeyili osebenzisa ukungena ngalo.
+- **Shintsha Iphasiwedi** -- faka iphasiwedi yakho yamanje, bese uyifaka kabili entsha. Iphasiwedi yakho entsha kumele ibe nezinhlamvu ezingu-8 noma ngaphezulu.
 
-Sitfusi ngasinye sinkinkhi sakso se-**Gcina**.
+Ingxenye ngayinye inenkinobho yayo **Gcina**.
 
-## Ubucayi
+## Ubumfihlo
 
-Lesigaba se-Ubucayi sibonisa kutsi ngubani longakubona lolwatfo lwakho lwekuxhumana kulo lonkhe ChurchApps. Thepha **Shintja** kuze uvule **Tikhetfo Tekubonakala**:
+Isigaba Sobumfihlo sibonisa ukuthi ngubani ongabona imininingwane yakho yokuxhumana kuyo yonke i-ChurchApps. Thepha **Shintsha** ukuze uvule **Izilungiselelo Zokubonakala**:
 
-- **Fihla mina ekhatalogini yelilungu** — sitfombe lesisusa khona ku-[khatalogi yelilungu](../community/member-directory.md) ngalokuphelele.
-- **Kubonakala Kwelikheli**, **Kubonakala Kwelucingo**, kanye **Kubonakala Kwe-imeyili** -- ngalinye linemenyu yalo yekukhetsa, kutsi ungabelana ngei-imeyili yakho nebandla lonkhe, kanti likheli lakho lilondvolote kakhulu, umzekelo. Tikhetfo tona ngetilandzelako:
+- **Ngifihle kuLuhla Lwamalungu** -- iswishi esikhipha kuthi ngokuphelele kuluhla [lwamalungu](../community/member-directory.md).
+- **Ukubonakala Kwekheli**, **Ukubonakala Kwefoni**, kanye **Ukubonakala Kwe-imeyili** -- ngalunye lunomenzi walo, ngakho ungabelana ne-imeyili yakho nebandla lonke kanti ikheli lakho ungaligcina libe yimfihlo kakhulu, isibonelo. Izinketho ziyi:
 
-| Lizinga | Ngubani lobungakubona |
+| Izinga | Ongakubona |
 |---|---|
-| **Wonkhe Umuntfu** | Kubonakala kunoma ngubani longabona likhatalogi. |
-| **Emalunga Kuphela** | Kubonakala kutiLilungu letibandla letingeniwe. |
-| **Emaqembu Ami Kuphela** | Kubonakala kuphela kubalulekeko beLiqembu lelitinhlanganyelo tawo. |
-| **Tiholi Temaqembu Ami Nabasebenti** | Kubonakala kuphela kubasebenti belibandla netiholi tamaqembu lotinhlanganyelo tawo. |
-| **Basebenti Kuphela** | Kubonakala kuphela kubasebenti belibandla (labanesimo sebulungu lesisebenti noma lemvume yekubuka Bantfu). |
+| **Wonke Umuntu** | Kubonakala kunoma ubani ongabona uluhla. |
+| **Amalungu Kuphela** | Kubonakala kwamanye amalungu ebandla angenile. |
+| **Amaqembu Ami Kuphela** | Kubonakala kumalungu amaqembu okuyiwo kuphela. |
+| **Abaholi Bamaqembu Ami Nabasebenzi** | Kubonakala kubasebenzi besonto nakubaholi bamaqembu okuyiwo kuphela. |
+| **Abasebenzi Kuphela** | Kubonakala kubasebenzi besonto kuphela (abantu abanesimo sobulungu "Umsebenzi" noma imvume yokubona abantu). |
 
-Thepha **Gcina** kuze usebentise tikhetfo takho. Libandla lakho libeka lokuzenzakalelako ngasinye kulamatsa lamatsatfu -- bona [Tisetingi Te-Mobile App](/docs/b1-admin/settings/mobile-app) -- kodvwa noma yini lokhetfa lapha iyasebenta esikhundleni salokuzenzakalelako ngerekhodi lakho.
+Thepha **Gcina** ukuze usebenzise izinqumo zakho. Ibandla lakho libeka okuzenzakalelayo kwezinkambu ezintathu -- bheka [Izilungiselelo Ze-App Yeselula](/docs/b1-admin/settings/mobile-app) -- kodwa noma yikuphi okukhethayo lapha kuyawushintsha lowo muthetho ngorekhodi lakho.
 
 :::tip
-Njalo uyakubona lolwatfo lwakho ngaphandle kwalaltisetingi, futsi tisebenti letinemvume yekubuka Bantfu nato tingakubona njalo.
+Njalo uyayibona imininingwane yakho ngaphandle kwalezi zilungiselelo, nabasebenzi abanemvume yokubona abantu bayayibona nabo njalo.
 :::
 
-## Ematfuba Lahlobene
+## Izihloko Ezihlobene
 
-- [Ikhasi Lami](./me-page.md) — Ideshibhodi yakho yemuntfu
-- [Khatalogi Yelilungu](../community/member-directory.md) — Kuphenya emanye emalungu
-- [Kuvuma Tinguquko Teprofayili](/docs/b1-admin/profile/approving-profile-changes) — Indlela libandla lakho lebuyekeza ngayo tinguquko letitfunyelwe
+- [Ikhasi Lami](./me-page.md) -- Ideshibhodi yakho yomuntu siqu
+- [Uluhla Lwamalungu](../community/member-directory.md) -- Ukubheka amanye amalungu
+- [Ukuvuma Izinguquko Zeprofayili](/docs/b1-admin/profile/approving-profile-changes) -- Indlela ibandla lakho elibuyekeza ngayo izinguquko ezithunyelwe

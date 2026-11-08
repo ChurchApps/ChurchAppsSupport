@@ -1,83 +1,93 @@
 ---
-title: "Nasazení mobilní aplikace"
-description: "Krok po kroku: budowanie wydań Android i iOS aplikacji B1 Mobile w Expo EAS, wysyłka do sklepów z aplikacjami i publikacja aktualizacji OTA."
+title: "Wdrażanie aplikacji mobilnych"
+description: "Przewodnik po budowaniu wersji Android i iOS aplikacji Expo, takich jak B1 Checkin, przesyłaniu ich do sklepów z aplikacjami oraz wysyłaniu aktualizacji OTA za pomocą EAS."
 ---
 
-# Nasazení mobilní aplikace
+# Wdrażanie aplikacji mobilnych
 
 <div class="article-intro">
 
-Mobilní aplikace ChurchApps se sestavují a nasazují pomocí **Expo EAS Build** a distribuují se přes obchody s aplikacemi. Tato stránka popisuje sestavení, odeslání a nasazení aktualizací OTA (over-the-air) pro Android i iOS.
+Aplikacje mobilne ChurchApps oparte na Expo, takie jak B1 Checkin, są budowane za pomocą **Expo EAS Build** lub lokalnego budowania Gradle i dystrybuowane przez sklepy z aplikacjami. Ta strona opisuje budowanie, przesyłanie i wysyłanie aktualizacji OTA (over-the-air) dla systemów Android i iOS na przykładzie B1 Checkin.
 
 </div>
 
 <div class="prereqs">
-<h4>Než začnete</h4>
+<h4>Zanim zaczniesz</h4>
 
-- Nastavte mobilní aplikaci lokálně – viz [B1 Mobile](../mobile/b1-mobile.md)
-- Nainstalujte a nakonfigurujte [EAS CLI](https://docs.expo.dev/eas/)
-- Mějte přístup ke Google Play Console (Android) a/nebo Apple App Store Connect (iOS)
+- Skonfiguruj aplikację lokalnie -- zobacz [Aplikacje mobilne](../mobile/index.md#local-setup)
+- Zainstaluj i skonfiguruj [EAS CLI](https://docs.expo.dev/eas/)
+- Upewnij się, że masz dostęp do Google Play Console (Android) i/lub Apple App Store Connect (iOS)
 
 </div>
 
-## Sestavení
+## Budowanie
 
 ### Android
 
+Wersje release dla Androida są budowane lokalnie i podpisywane kluczem release pobranym z EAS. Pobierz go raz za pomocą polecenia `npx eas-cli credentials -p android` (wybierz **credentials.json: Download credentials from EAS**), a następnie uruchom:
+
 ```bash
-npm run build:android
+yarn build:android
 ```
+
+Pakiet Google Play zostanie zapisany w `android/app/build/outputs/bundle/release/app-release.aab`. Aby zamiast tego zbudować aplikację w EAS, uruchom `yarn build:android:eas`.
 
 ### iOS
 
+Wersje iOS są zawsze budowane w EAS:
+
 ```bash
-eas build --platform ios --profile production
+yarn build:ios
 ```
 
-## Odeslání do obchodů s aplikacemi
+## Przesyłanie do sklepów z aplikacjami
 
-### Android – Google Play Store
+### Android -- Sklep Google Play
 
-Po úspěšném sestavení EAS se binární soubor pro Android (AAB) odešle do Google Play Store prostřednictvím Play Console.
+Prześlij plik AAB przez Play Console lub wyślij go za pomocą EAS:
 
-### iOS – Apple App Store
+```bash
+npx eas-cli submit -p android --path android/app/build/outputs/bundle/release/app-release.aab
+```
 
-Sestavení pro iOS odešlete přímo přes EAS:
+### iOS -- Apple App Store
+
+Prześlij wersję iOS bezpośrednio przez EAS:
 
 ```bash
 eas submit --platform ios
 ```
 
-## Aktualizace OTA
+## Aktualizacje OTA
 
-U změn pouze v JavaScriptu, které nevyžadují kontrolu v obchodě s aplikacemi, použijte aktualizace over-the-air (OTA):
+W przypadku zmian dotyczących wyłącznie JavaScriptu, które nie wymagają weryfikacji w sklepie z aplikacjami, skorzystaj z aktualizacji OTA (over-the-air):
 
 ```bash
-npm run update:production
+yarn update
 ```
 
-Tento postup používá EAS Update k odeslání změn přímo uživatelům bez úplného odeslání do obchodu.
+Polecenie to wykorzystuje EAS Update, aby wysłać zmiany bezpośrednio do użytkowników, bez pełnego przesyłania do sklepu.
 
 :::tip
-Aktualizace OTA jsou výrazně rychlejší než sestavení pro obchody – změny se mohou k uživatelům dostat během několika minut místo dnů. Používejte je pro opravy chyb, úpravy textů a drobné změny uživatelského rozhraní, které nezasahují do nativního kódu.
+Aktualizacje OTA są znacznie szybsze niż wersje sklepowe -- zmiany mogą dotrzeć do użytkowników w ciągu minut, a nie dni. Używaj ich do poprawek błędów, zmian tekstów i drobnych zmian w interfejsie, które nie obejmują kodu natywnego.
 :::
 
-## Čísla verzí
+## Numery wersji
 
-Před vytvořením sestavení pro obchod je nutné aktualizovat čísla verzí v několika souborech:
+Przed utworzeniem wersji sklepowej należy zaktualizować numery wersji w kilku plikach:
 
 - `package.json`
-- `app.config.js`
-- `android/app/build.gradle`
-- `ios/*/Info.plist`
-- `ios/*/project.pbxproj`
+- `app.json`
+- `android/app/build.gradle` (`versionName` i `versionCode`)
+
+Numer kompilacji iOS jest zwiększany automatycznie przez EAS.
 
 :::warning
-Pokud nezaktualizujete čísla verzí ve všech souborech, sestavení selže nebo aplikaci obchod zamítne. Před zahájením produkčního sestavení si každý výše uvedený soubor pečlivě zkontrolujte.
+Pominięcie aktualizacji numerów wersji we wszystkich plikach spowoduje błędy budowania lub odrzucenie aplikacji przez sklep. Przed rozpoczęciem produkcyjnego budowania dokładnie sprawdź każdy z wymienionych powyżej plików.
 :::
 
-## Související články
+## Powiązane artykuły
 
-- **[B1 Mobile](../mobile/b1-mobile.md)** – Průvodce lokálním nastavením a vývojem
-- **[Nasazení API](./apis.md)** – Nasazení backendových API
-- **[Nasazení webových aplikací](./web-apps.md)** – Nasazení frontendových webových aplikací
+- **[Aplikacje mobilne](../mobile/index.md)** -- Lokalna konfiguracja i przewodnik po programowaniu
+- **[Wdrażanie API](./apis.md)** -- Wdrażanie backendowych API
+- **[Wdrażanie aplikacji webowych](./web-apps.md)** -- Wdrażanie frontendowych aplikacji webowych

@@ -1,41 +1,41 @@
 ---
-title: "Prilagođavanje"
-description: "Сазнајте како да сакријете одељке, улоге или радње у Lessons.church лекцији и промените редослед садржаја, за једну учионицу или за све у вашој цркви."
+title: "Прилагођавање"
+description: "Сазнајте како да сакријете одељке, улоге или радње у лекцији на Lessons.church и преуредите садржај, било за један разред или за све разреде у вашој цркви."
 ---
 
-# Prilagođavanje
+# Прилагођавање
 
 <div class="article-intro">
 
-Lessons.church pruža biblioteku spremnog sadržaja za časove, ali je svaka crkva drugačija. Funkcije prilagođavanja omogućavaju vam da sadržaj časova prilagodite vašim konkretnim učionicama, načinu podučavanja i uzrasnim grupama, kako bi volonteri videli samo ono što je za njih relevantno.
+Lessons.church пружа библиотеку готовог садржаја за лекције, али је свака црква другачија. Функције прилагођавања омогућавају да садржај лекције прилагодите вашим конкретним разредима, стилу подучавања и узрасним групама, како би волонтери видели само оно што је за њих релевантно.
 
 </div>
 
-## Zašto prilagođavati?
+## Зашто прилагођавати?
 
-Sadržaj časova na Lessons.church osmišljen je da bude fleksibilan. Jedan čas može uključivati odeljke za više uzrasnih grupa, opcione aktivnosti ili uloge koje se ne odnose na svaku učionicu. Umesto da od volontera tražite da mentalno preskaču delove koji ih se ne tiču, možete prilagoditi čas tako da vide samo ono što im je relevantno.
+Садржај лекција на Lessons.church је осмишљен да буде флексибилан. Једна лекција може укључивати одељке за више узрасних група, изборне активности или улоге које се не односе на сваки разред. Уместо да од волонтера тражите да у себи прескачу делове који их не се тичу, можете прилагодити лекцију тако да виде само оно што је за њих релевантно.
 
-Na primer, čas može sadržati likovnu aktivnost koja je odlična za predškolce, ali nije pogodna za vašu učionicu petog razreda. Uz prilagođavanje, možete sakriti taj odeljak za stariju grupu, dok ga za mlađu grupu zadržavate.
+На пример, лекција може садржати активност израде која је одлична за предшколце, али није погодна за ваш петаци разред. Уз прилагођавање, можете сакрити тај одељак за старију групу, а задржати га за млађу.
 
-## Šta možete prilagoditi
+## Шта можете прилагодити
 
-- **Uklanjanje odeljaka** -- Sakrijte cele odeljke časa koji se ne odnose na određenu učionicu ili uzrasnu grupu.
-- **Sakrivanje uloga ili aktivnosti** -- Uklonite pojedinačne uloge ili aktivnosti unutar odeljka ako nisu potrebne.
-- **Promena redosleda sadržaja** -- Preuredite odeljke i aktivnosti tako da odgovaraju toku koji vam odgovara u učionici.
+- **Уклоните одељке** -- Уклоните читаве одељке лекције који се не односе на одређени разред или узрасну групу.
+- **Уклоните улоге или радње** -- Уклоните појединачне улоге или радње унутар одељка ако нису потребне.
+- **Преуредите садржај** -- Премјестите одељке и радње тако да одговарају току који желите за свој разред.
 
-## Specifično za učionicu ili globalno
+## Само за разред или глобално
 
-Kada sačuvate prilagođavanje, birate koliko široko se ono primenjuje:
+Сваки пут када направите измену, бирате колико широко ће се примењивати:
 
-- **Jedna učionica** -- Prilagođavanje utiče samo na trenutnu učionicu. Ostale učionice vide originalni sadržaj.
-- **Sve učionice** -- Prilagođavanje se primenjuje na svaku učionicu u vašoj crkvi.
+- **Овај разред** -- Измена утиче само на тренутни разред. Остали разреди виде оригинални садржај.
+- **Сви разреди** -- Измена се примењује на све разреде у вашој цркви.
 
-Ova fleksibilnost znači da možete postaviti različite prikaze istog časa za različite uzrasne grupe, ili napraviti izmenu koja se odmah primenjuje svuda.
+Ова флексибилност значи да можете подесити различите приказе исте лекције за различите узрасне групе или направити измену која се одмах примењује свуда.
 
 :::tip
-Ako ste novi u prilagođavanju, počnite sa jednom učionicom da biste videli kako to funkcioniše pre nego što primenite izmene na sve učionice.
+Ако тек почињете са прилагођавањем, почните с једним разредом да видите како функционише, пре него што примените измене на све разреде.
 :::
 
-## Sledeći koraci
+## Следећи кораци
 
-- [Prilagođavanje časova](./customizing-lessons.md) -- Pratite korak-po-korak vodič da prilagodite prvi čas
+- [Прилагођавање лекција](./customizing-lessons.md) -- Пратите водич корак по корак да прилагодите вашу прву лекцију

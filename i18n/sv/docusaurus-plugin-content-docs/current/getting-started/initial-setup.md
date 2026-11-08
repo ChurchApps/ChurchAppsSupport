@@ -1,14 +1,14 @@
 ---
 title: "Första kyrkinställningen i B1 Admin"
-sidebar_label: "Första installationen"
-description: "Gå igenom första konfigurationen av en ny kyrka i B1 Admin: kyrkoinfo, varumärke, roller och rekommenderad ordning för personer, grupper, närvaro och gåvor."
+sidebar_label: "Första inställningen"
+description: "Gå igenom den första konfigurationen av en ny kyrka i B1 Admin: kyrkinformation, varumärke, roller och den rekommenderade ordningen för att ställa in personer, grupper, närvaro och gåvor."
 ---
 
-# Första installationen
+# Första inställningen
 
 <div class="article-intro">
 
-När du har skapat ditt konto och din kyrka finns det några viktiga steg att konfigurera innan du bjuder in ditt team. Den här guiden går igenom den rekommenderade ordningen, så att din kyrka är redo att användas från första dagen.
+Efter att du har skapat ditt konto och din kyrka finns det några viktiga steg att konfigurera innan du bjuder in ditt team. Den här guiden går igenom den rekommenderade ordningen för inställningen, så att din kyrka är redo att användas från första dagen.
 
 </div>
 
@@ -16,55 +16,55 @@ När du har skapat ditt konto och din kyrka finns det några viktiga steg att ko
 <h4>Innan du börjar</h4>
 
 - [Skapa ditt konto](./create-account.md) och registrera din kyrka
-- Ha din kyrkas logotyp och varumärkesmaterial redo (valfritt men rekommenderat)
+- Ha kyrkans logotyp och varumärkesmaterial redo (valfritt men rekommenderat)
 
 </div>
 
-## Steg 1: Konfigurera din kyrkas information
+## Steg 1: Konfigurera kyrkans information
 
-1. Öppna [Hoppmenyn](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (sökfältet längst upp till vänster i B1 Admin), expandera **Inställningar** och klicka på **Inställningar**.
-2. Klicka på **Redigera** i avsnittet **Kyrkoinformation**.
-3. Ange din kyrkas **namn**, **underdomän** och **adress**.
+1. Öppna [Hoppmenyn](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (sökfältet överst till vänster i B1 Admin), expandera **Inställningar** och klicka på **Inställningar**.
+2. I avsnittet **Kyrkinformation** klickar du på **Redigera**.
+3. Ange kyrkans **namn**, **underdomän** och **adress**.
 4. Klicka på **Spara** för att tillämpa dina ändringar.
 
-## Steg 2: Ställ in din grafiska profil
+## Steg 2: Ställ in ditt varumärke
 
-1. Välj **Webbplats > Utseende** i Hoppmenyn.
-2. Ladda upp din **kyrkologotyp**.
-3. Konfigurera eventuella ytterligare alternativ för grafisk profil, till exempel färger och bilder.
-4. Din grafiska profil visas på din B1.church-webbplats och i B1 Mobile-appen.
+1. I Hoppmenyn väljer du **Webbplats > Utseende**.
+2. Ladda upp kyrkans **logotyp**.
+3. Konfigurera eventuella ytterligare varumärkesalternativ, till exempel färger och bilder.
+4. Ditt varumärke visas på din B1.church-webbplats och i B1 App.
 
 :::tip
-Att ha din logotyp och grafiska profil redo innan du bjuder in teammedlemmar ger ett professionellt första intryck när de loggar in.
+Att ha din logotyp och ditt varumärkesmaterial redo innan du bjuder in teammedlemmar ger ett genomarbetat första intryck när de loggar in.
 :::
 
 ## Steg 3: Konfigurera roller och bjud in ditt team
 
-1. Välj **Inställningar > Roller** i Hoppmenyn.
+1. I Hoppmenyn väljer du **Inställningar > Roller**.
 2. Skapa roller för ditt team (till exempel "Pastor", "Sekreterare" och "Kassör").
 3. Tilldela lämpliga behörigheter till varje roll.
 4. Lägg till teammedlemmar genom att söka efter deras konton och tilldela dem till roller.
 
 ## Steg 4: Ställ in dina huvudområden
 
-När ditt team är på plats kan du börja bygga upp de centrala delarna av B1 Admin:
+När ditt team är på plats börjar du bygga upp de centrala delarna av B1 Admin:
 
 1. **Personer** -- Lägg till medlemmar i din kyrkkatalog. Detta är grunden för allt annat, så börja här. Du kan lägga till personer manuellt eller använda verktyget **Import/Export** under **Inställningar**.
 2. **Grupper** -- Skapa grupper för smågrupper, tjänsteteam, klasser och andra sammankomster.
-3. **Närvaro** -- Konfigurera dina campusar, gudstjänster och gudstjänsttider för närvaroregistrering.
-4. **Gåvor** -- Ställ in gåvofonder och anslut din betalningsleverantör (Stripe) för att kunna ta emot onlinegåvor.
-5. **Webbplats** -- Bygg din publika kyrkwebbplats med B1.church webbplatsbyggare.
+3. **Närvaro** -- Konfigurera dina campus, gudstjänster och gudstjänsttider för att registrera närvaro.
+4. **Gåvor** -- Ställ in gåvofonder och anslut din betalningsleverantör (Stripe) för att ta emot onlinegåvor.
+5. **Webbplats** -- Bygg din publika kyrkwebbplats med webbplatsbyggaren i B1.church.
 
 :::info
-Du behöver inte ställa in alla områden på en gång. Många kyrkor börjar med **Personer** och **Grupper** och lägger sedan till **Närvaro** och **Gåvor** när de har blivit bekanta med plattformen.
+Du behöver inte ställa in alla områden på en gång. Många kyrkor börjar med **Personer** och **Grupper** och lägger sedan till **Närvaro** och **Gåvor** när de har blivit bekväma med plattformen.
 :::
 
 ## Rekommenderad ordning
 
-För en så smidig installation som möjligt föreslår vi följande ordning:
+För den smidigaste inställningen rekommenderar vi följande ordning:
 
 1. **Personer** -- Lägg först till dina medlemmar och regelbundna deltagare.
-2. **Grupper** -- Organisera personerna i meningsfulla grupper.
+2. **Grupper** -- Organisera personer i meningsfulla grupper.
 3. **Närvaro** -- Börja registrera vem som kommer varje vecka.
 4. **Gåvor** -- Ställ in givande när dina personer finns i systemet.
 5. **Webbplats** -- Bygg din publika webbplats sist, när dina uppgifter är på plats.

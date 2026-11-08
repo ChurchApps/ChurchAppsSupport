@@ -1,81 +1,80 @@
 ---
-title: "Project Overview"
-description: "Mapa ng bawat ChurchApps repository ayon sa kategorya: frameworks, dev ports, databases, at kung paano kumokonekta ang shared @churchapps packages."
+title: "Pangkalahatang-ideya ng Proyekto"
+description: "Ilista ang bawat repositoryo ng ChurchApps ayon sa kategorya, kasama ang mga framework, dev port, database, at kung paano nauugnay ang mga shared na @churchapps package, sa mga dokumento ng developer setup."
 ---
 
-# Project Overview
+# Pangkalahatang-ideya ng Proyekto
 
 <div class="article-intro">
 
-Ang ChurchApps ay binubuo ng takrang 20 na independent repositories, bawat isa ay nai-publish sa ilalim ng [ChurchApps GitHub organization](https://github.com/ChurchApps). Ang page na ito ay nagbibigay ng isang kumpletong inventory ng lahat ng projects na ino-organize ayon sa category, kasama ang kanilang frameworks, ports, at relationships.
+Ang ChurchApps ay binubuo ng humigit-kumulang 20 independiyenteng repositoryo, na bawat isa ay nakalathala sa ilalim ng [ChurchApps GitHub organization](https://github.com/ChurchApps). Ipinapakita ng pahinang ito ang kumpletong listahan ng lahat ng proyekto ayon sa kategorya, kasama ang kanilang mga framework, port, at ugnayan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-install ang [prerequisites](./prerequisites.md) para sa project category na nais mong magtrabaho
+- I-install ang [mga prerequisite](./prerequisites.md) para sa kategorya ng proyektong nais mong pagtrabahuhan
 
 </div>
 
-## Backend APIs
+## Mga Backend API
 
-Ang lahat ng APIs ay itinayo gamit ang Node.js, Express, at TypeScript, at na-deploy sa AWS Lambda sa pamamagitan ng Serverless Framework.
+Ang lahat ng API ay ginawa gamit ang Node.js, Express, at TypeScript, at dine-deploy sa AWS Lambda sa pamamagitan ng Serverless Framework.
 
-| Project | Purpose | Dev Port | Database |
+| Proyekto | Layunin | Dev Port | Database |
 |---------|---------|----------|----------|
-| **[Api](https://github.com/ChurchApps/Api)** | Core modular monolith na sumasaklaw sa membership, attendance, content, giving, messaging, at doing | 8084 | Hiwalay na MySQL database bawat module (6 total) |
-| **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Lessons.church backend | -- | Single `lessons` MySQL database |
-| **[AskApi](https://github.com/ChurchApps/AskApi)** | AI query tool na powered ng OpenAI | -- | -- |
+| **[Api](https://github.com/ChurchApps/Api)** | Pangunahing modular monolith na sumasaklaw sa membership, attendance, content, giving, messaging, at doing | 8084 | Hiwalay na MySQL database para sa bawat module (6 sa kabuuan) |
+| **[LessonsApi](https://github.com/ChurchApps/LessonsApi)** | Backend ng Lessons.church | -- | Iisang `lessons` MySQL database |
+| **[AskApi](https://github.com/ChurchApps/AskApi)** | Tool para sa AI query na pinapagana ng OpenAI | -- | -- |
 
 :::info
-Ang core **Api** project ay isang modular monolith. Bawat module (membership, attendance, content, giving, messaging, doing) ay may sarili nitong database at accessible sa isang subpath tulad ng `/membership` o `/giving`. Sa production, ang mga ito ay exposed bilang hiwalay na Lambda functions sa likod ng API Gateway.
+Ang pangunahing **Api** na proyekto ay isang modular monolith. Ang bawat module (membership, attendance, content, giving, messaging, doing) ay may sariling database at maa-access sa isang subpath gaya ng `/membership` o `/giving`. Sa production, ang mga ito ay inilalantad bilang hiwalay na Lambda function sa likod ng API Gateway.
 :::
 
-## Web Apps
+## Mga Web App
 
-| Project | Framework | Dev Port | Purpose |
-|---------|-----------|----------|---------|
-| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Church administration dashboard |
-| **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | Public-facing church member app |
-| **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Lessons.church frontend |
-| **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Data import/export utility |
-| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Static | -- | Static church brochure websites |
+| Proyekto | Framework | Dev Port | Layunin |
+|-----------|-----------|----------|---------|
+| **[B1Admin](https://github.com/ChurchApps/B1Admin)** | React 19 + Vite + MUI 7 | 3101 | Dashboard para sa administrasyon ng simbahan |
+| **[B1App](https://github.com/ChurchApps/B1App)** | Next.js 16 + React 19 + MUI 7 | 3301 | App para sa mga miyembro ng simbahan na nakaharap sa publiko |
+| **[LessonsApp](https://github.com/ChurchApps/LessonsApp)** | Next.js 16 | 3501 | Frontend ng Lessons.church |
+| **[B1Transfer](https://github.com/ChurchApps/B1Transfer)** | React + Vite | -- | Utility para sa pag-import at pag-export ng data |
+| **[BrochureSites](https://github.com/ChurchApps/BrochureSites)** | Static | -- | Mga static na brochure website ng simbahan |
 
-## Mobile Apps
+## Mga Mobile App
 
-Ang lahat ng mobile apps ay gumagamit ng React Native na may Expo.
+Ang lahat ng mobile app ay gumagamit ng React Native kasama ang Expo.
 
-| Project | Purpose | Key Versions |
+| Proyekto | Layunin | Mahahalagang Bersyon |
 |---------|---------|--------------|
-| **[B1Mobile](https://github.com/ChurchApps/B1Mobile)** | Church member app para sa iOS at Android | Expo 54, React Native 0.81 |
-| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | Check-in kiosk app | Expo |
-| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Android TV lesson display | Expo |
-| **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Content playback (kasama ang TV OS) | Expo |
+| **[B1Checkin](https://github.com/ChurchApps/B1Checkin)** | App ng check-in kiosk | Expo |
+| **[LessonsScreen](https://github.com/ChurchApps/LessonsScreen)** | Pagpapakita ng aralin sa Android TV | Expo |
+| **[FreePlay](https://github.com/ChurchApps/FreePlay)** | Pag-playback ng content (kasama ang TV OS) | Expo |
 | **[FreeShowRemote](https://github.com/ChurchApps/FreeShowRemote)** | Mobile remote control para sa FreeShow | Expo |
 
 ## Desktop
 
-| Project | Stack | Purpose |
+| Proyekto | Stack | Layunin |
 |---------|-------|---------|
-| **[FreeShow](https://github.com/ChurchApps/FreeShow)** | Electron 37 + Svelte 3 + Vite | Presentation at worship software |
+| **[FreeShow](https://github.com/ChurchApps/FreeShow)** | Electron 37 + Svelte 3 + Vite | Software para sa presentasyon at pagsamba |
 
-## Shared Libraries
+## Mga Shared Library
 
-Ang shared code ay nai-publish sa npm sa ilalim ng `@churchapps` scope at consumed bilang regular na npm dependencies ng mga projects sa itaas. Ang lahat ng shared packages ay nakatira sa isang repository -- [Packages](https://github.com/ChurchApps/Packages) -- pinamamahalaan bilang Yarn workspace at inilabas gamit ang changesets.
+Ang shared na code ay nilalathala sa npm sa ilalim ng `@churchapps` scope at ginagamit bilang karaniwang npm dependency ng mga proyektong nabanggit sa itaas. Ang lahat ng shared package ay nasa iisang repositoryo -- [Packages](https://github.com/ChurchApps/Packages) -- na pinamamahalaan bilang Yarn workspace at inilalabas gamit ang changesets.
 
-| Package | Purpose | Used By |
-|---------|---------|---------|
-| `@churchapps/helpers` | Base utilities at shared TypeScript interfaces (DateHelper, ApiHelper, CurrencyHelper, atbp.) | Lahat ng projects |
-| `@churchapps/apihelper` | Express server utilities (auth, base controllers, database access, AWS integrations) | Lahat ng APIs |
-| `@churchapps/apphelper` | React component library na may subpath modules para sa login, donations, forms, markdown, at website building | Lahat ng web apps |
-| `@churchapps/content-providers` | Third-party content provider abstraction (Lessons.church, Planning Center, Dropbox, at iba pa) | Api, B1Admin, B1App, FreePlay |
-| `@churchapps/integration-sdk` | B1.church integration toolkit: webhooks, REST client, OAuth | External integration developers |
-| `@churchapps/texting` | SMS provider abstraction | Api |
+| Package | Layunin | Ginagamit Ng |
+|---------|---------|----------|
+| `@churchapps/helpers` | Mga pangunahing utility at shared na TypeScript interface (DateHelper, ApiHelper, CurrencyHelper, atbp.) | Lahat ng proyekto |
+| `@churchapps/apihelper` | Mga utility para sa Express server (auth, base controller, database access, AWS integration) | Lahat ng API |
+| `@churchapps/apphelper` | React component library na may mga subpath module para sa login, donasyon, form, markdown, at pagbuo ng website | Lahat ng web app |
+| `@churchapps/content-providers` | Abstraksyon para sa mga third-party content provider (Lessons.church, Planning Center, Dropbox, at iba pa) | Api, B1Admin, B1App, FreePlay |
+| `@churchapps/integration-sdk` | Integration toolkit ng B1.church: webhook, REST client, OAuth | Mga external na developer ng integration |
+| `@churchapps/texting` | Abstraksyon para sa SMS provider | Api |
 
-Tingnan ang [Shared Libraries](../shared-libraries/index.md) para sa workspace setup at ang release workflow.
+Tingnan ang [Shared Libraries](../shared-libraries/index.md) para sa setup ng workspace at workflow ng paglalabas.
 
-## Project Relationships
+## Ugnayan ng Mga Proyekto
 
 ```
 Frontend Apps              Shared Libraries           Backend APIs
@@ -83,13 +82,13 @@ Frontend Apps              Shared Libraries           Backend APIs
 B1Admin      ──────┐
 B1App        ──────┤       @churchapps/helpers ◄───── Api
 LessonsApp   ──────┼──►    @churchapps/apphelper      LessonsApi
-B1Mobile     ──────┤                                   AskApi
-FreeShow     ──────┘       @churchapps/apihelper ◄────┘
+FreeShow     ──────┘                                   AskApi
+                           @churchapps/apihelper ◄────┘
 ```
 
-Ang lahat ng frontend apps ay nakadepende sa `@churchapps/helpers`. Ang web apps ay dagdag na nakadepende sa `@churchapps/apphelper` packages. Ang lahat ng backend APIs ay nakadepende sa pareho ng `@churchapps/helpers` at `@churchapps/apihelper`.
+Ang lahat ng frontend app ay umaasa sa `@churchapps/helpers`. Karagdagang umaasa ang mga web app sa mga package ng `@churchapps/apphelper`. Ang lahat ng backend API ay umaasa sa `@churchapps/helpers` at `@churchapps/apihelper`.
 
-## Next Steps
+## Mga Susunod na Hakbang
 
-- **[Environment Variables](./environment-variables.md)** -- I-configure ang iyong `.env` files upang kumonekta sa APIs
-- **[API Local Setup](../api/local-setup.md)** -- I-setup ang backend API nang lokal
+- **[Environment Variables](./environment-variables.md)** -- I-configure ang iyong mga `.env` file para kumonekta sa mga API
+- **[API Local Setup](../api/local-setup.md)** -- I-set up ang backend API nang lokal

@@ -1,135 +1,133 @@
 ---
-title: "Vadovas: tvarkykite sekmadienio savanorius"
-description: "Nustatykite savanorių komandas, savaitės planus, pamaldų tvarką ir sekmadienio užduotis B1 Admin, kad savanoriai matytų paskyrimus B1.church ir programėlėje."
+title: "Kılavuz: Pazar Gönüllülerini Yönetme"
+description: "B1 Admin'de gönüllü ekiplerini, haftalık hizmet planlarını, ibadet sıralamasını ve Pazar görevlerini ayarlayın; böylece gönüllüler atamalarını B1.church ve mobil uygulamada görüp yanıt verebilir."
 ---
 
-# Tvarkykite sekmadienio savanorius
+# Pazar Gönüllülerini Yönetme
 
 <div class="article-intro">
 
-Sudarykite savo savanorių komandas, kurkite savaitinius tarnystės planus, skirkite pareigas, sudarykite pamaldų tvarką su giesmėmis ir paskirkite sekmadienio užduotis. Kai viskas bus paruošta, jūsų savanoriai matys savo paskyrimus B1 svetainėje ir mobiliojoje programėlėje ir galės juos tiesiogiai priimti arba atsisakyti.
+Gönüllü ekiplerinizi ayarlayın, haftalık hizmet planları oluşturun, pozisyonlara atama yapın, ibadet şarkılarıyla birlikte ibadet sıralamasını hazırlayın ve Pazar görevlerini atayın. Bu adımların sonunda gönüllüleriniz atamalarını B1 web sitesinde ve mobil uygulamada görecek, doğrudan kabul edebilecek veya reddedebilecek.
 
 </div>
 
 <div class="prereqs">
-<h4>Prieš pradedant</h4>
+<h4>Başlamadan Önce</h4>
 
-- B1 Admin paskyra su administratoriaus teisėmis
-- Savanoriai, [pridėti į jūsų žmonių katalogą](../people/adding-people.md)
+- Yönetici erişimine sahip bir B1 Admin hesabı
+- Gönüllüler [kişi dizininize eklenmiş](../people/adding-people.md) olmalı
 
 </div>
 
-## 1 žingsnis: Sukurkite savanorių komandas
+## Adım 1: Gönüllü Ekipleri Oluşturun
 
-Suskirstykite savanorius į komandas, kad galėtumėte tvarkyti paskyrimus pagal tarnystės sritį.
+Gönüllülerinizi ekiplere ayırın, böylece atamaları hizmet alanına göre yönetebilirsiniz.
 
-Vadovaukitės [Grupių kūrimo](../groups/creating-groups.md) ir [Grupės narių](../groups/group-members.md) vadovais, kad:
+Şu işlemleri yapmak için [Grup Oluşturma](../groups/creating-groups.md) ve [Grup Üyeleri](../groups/group-members.md) kılavuzlarını izleyin:
 
-1. Sukurtumėte kategoriją (pvz., „Sekmadienio ryto komandos“)
-2. Sukurtumėte grupes, pavyzdžiui, „Garso komanda“, „Garso ir medijos“, „Sveikintojai“, „Vaikų ministerijos savanoriai“
-3. Pridėtumėte savanorius į kiekvieną grupę, ieškodami jų vardo ir spausdami **Pridėti**
-
-:::tip
-Komandų vadovus pažymėkite žvaigždutės piktograma (**Padaryti vadovu**) grupės narių sąraše (grupės puslapyje spustelėkite **Visi nariai**). Vadovai gali tvarkyti savo grupės kalendorių ir koordinuoti komandą.
-:::
-
-## 2 žingsnis: Sukurkite giesmių biblioteką
-
-Pridėkite pamaldų giesmes, kad kiekvieną savaitę galėtumėte jas įtraukti į tarnystės planus.
-
-Vadovaukitės [Giesmių](../serving/songs.md) vadovu, kad:
-
-1. Pridėtumėte pamaldų giesmes su pavadinimais, atlikėjais ir trukme
-2. Kiekvienai giesmei pridėtumėte aranžuotes su žodžiais ir tonacijos nurodymais
-3. Pridėtumėte išorines nuorodas į „YouTube“ įrašus, akordų schemas ar natas
-
-:::info
-Čia pridėtas giesmes vėliau galima įtraukti į bet kurį tarnystės planą. Biblioteką sukurkite vieną kartą ir kas savaitę naudokite iš naujo.
-:::
-
-## 3 žingsnis: Sukurkite tarnystės planą
-
-Planai yra savaitiniai paskyrimai, kurie nurodo savanoriams, kur jų reikia.
-
-Vadovaukitės [Planų](../serving/plans.md) vadovu, kad:
-
-1. Eitumėte į Tarnystę, pasirinktumėte savo ministerijos skirtuką ir atidarytumėte savo plano tipą
-2. Spustelėtumėte **Naujas planas** ir pasirinktumėte tarnystės datą. Norėdami iš karto nustatyti kelis sekmadienius, nukopijuokite iš ankstesnio plano ir įveskite skaičių lauke **Planų skaičius**
-3. Plano skyriuje **Tarnystės komandos paskyrimai** pridėtumėte pareigas ir priskirtumėte joms savanorius
-4. Savanoriai matys savo paskyrimo būseną (Prašoma, Patvirtinta, Laukiama)
-5. Įjunkite [savanorių priminimus](../serving/plans.md#volunteer-reminders) plano tipui, kad savanoriai prieš kiekvieną pamaldas gautų priminimą pranešimu, el. paštu ar SMS
-
-## 4 žingsnis: Sudarykite pamaldų tvarką
-
-Suplanuokite pamaldų eigą nuo pradžios iki pabaigos.
-
-Vadovaukitės [Pamaldų tvarkos](../serving/service-order.md) vadovu, kad:
-
-1. Atidarytumėte savo planą ir viršuje rastumėte skyrių **Pamaldų tvarka**
-2. Spustelėtumėte **Pridėti** ir įtrauktumėte elementus: pamaldų giesmes (iš jūsų bibliotekos), maldas, Šventojo Rašto skaitymus, pranešimus, pamokslą, aukas, užbaigimą
-3. Vilkite ir nuleiskite elementus, kad pakeistumėte pamaldų eigą
-
-:::info
-Pamaldų tvarka priklauso nuo konkretaus plano. Pakeitimai čia neturi įtakos kitiems planams ar pagrindinei giesmių bibliotekai.
-:::
-
-## 5 žingsnis: Paskirkite sekmadienio užduotis
-
-Sekite vienkartines sekmadienio užduotis, kad nieko nepraleistumėte.
-
-Vadovaukitės [Užduočių](../serving/tasks.md) vadovu, kad:
-
-1. Sukurtumėte užduotis, pavyzdžiui, „Paruošti komunijos elementus“, „Spausdinti biuletenius“ ar „Paruošti garso įrangą“
-2. Kiekvieną užduotį priskirtumėte atsakingam asmeniui ar grupei
-3. Užduotys rodomos skiltyje **Tarnystė > Mano darbai**, asmens valdymo skydelyje ir mobiliojoje programėlėje
-
-:::info
-B1 Admin nebekuria užduočių pagal pasikartojantį tvarkaraštį. Pasikartojantiems procesams, kuriuose žmonės praeina tam tikrus etapus, naudokite [Darbo eigas](../serving/workflows.md) su tvarkaraščio paleidikliu.
-:::
-
-## 6 žingsnis: Įjunkite savitarnos registraciją (neprivaloma)
-
-Leiskite savanoriams patiems registruotis į pareigas, o ne laukti administratoriaus paskyrimų.
-
-1. Kurdami ar redaguodami planą, nustatykite **Registracijos terminą** (valandomis iki pamaldų), kad kontroliuotumėte, kada savitarnos registracija baigiasi. Valandos skaičiuojamos atgal nuo pirmųjų plano pamaldų laiko. Palikite tuščią, jei termino nereikia. Nauji planai perima ankstesnio plano terminą.
-2. Pasirinktinai įjunkite **Rodyti savanorių vardus registracijos puslapyje**, kad savanoriai matytų, kas dar užsiregistravo.
-3. Kiekvienai pareigai pažymėkite langelį **Leisti savitarnos registraciją**, kad ji būtų prieinama savitarnai.
-4. Kiekvienai pareigai pridėkite **Aprašymą**, kad savanoriai žinotų, ką apima vaidmuo.
-
-Kai savitarnos pareigos sukurtos, jos automatiškai atsiranda savanorių registracijos puslapiuose [B1.church](../../b1-church/serving/volunteer-signup.md) ir [B1 mobiliojoje programėlėje](../../b1-mobile/serving/volunteer-signup.md). Nariai gali peržiūrėti laisvas pareigas, matyti, kiek vietų liko, ir užsiregistruoti vienu paspaudimu.
+1. Bir kategori oluşturun (ör. "Pazar Sabahı Ekipleri")
+2. "Ibadet Ekibi", "Ses ve Medya", "Karşılayıcılar", "Çocuk Hizmeti Gönüllüleri" gibi gruplar oluşturun
+3. Her gruba gönüllüleri, adlarını arayıp Ekle'ye tıklayarak ekleyin
 
 :::tip
-Tame pačiame plane derinkite administratoriaus priskirtas ir savitarnos pareigas. Pavyzdžiui, giesmių vadovą priskirkite tiesiogiai, o sveikintojams ir kavos padavėjams leiskite pasirinkti patiems.
+Ekip liderlerini, grubun üye listesinde (grup sayfasında **Tüm üyeler**'e tıklayarak) yıldız simgesi (**Lider Yap**) ile belirleyin. Liderler kendi grup takvimlerini yönetebilir ve ekiplerini koordine edebilir.
 :::
 
-## 7 žingsnis: Praneškite savanoriams
+## Adım 2: Şarkı Kitaplığınızı Oluşturun
 
-Priskirti savanoriai automatiškai mato savo planus ir gali atsakyti.
+Her hafta hizmet planlarına ekleyebilmek için ibadet şarkılarını ekleyin.
 
-1. Savanoriai savo planus mato svetainėje [B1.church](../../b1-church/plans/viewing-plans.md) ir [B1 mobiliojoje programėlėje](../../b1-mobile/serving/viewing-plans.md)
-2. Paskyrimus gali tiesiogiai priimti arba atsisakyti bet kurioje platformoje
-3. Jie gali nurodyti datas, kai nebus laisvi
-4. Planus galima atspausdinti repeticijoms arba iškabinti už scenos
-5. Savanoriai gali naršyti ir registruotis į laisvas pareigas per [savanorių registracijos puslapį](../../b1-church/serving/volunteer-signup.md)
+Şu işlemleri yapmak için [Şarkılar](../serving/songs.md) kılavuzunu izleyin:
+
+1. Başlıkları, sanatçıları ve süreleriyle ibadet şarkılarını ekleyin
+2. Her şarkı için sözleri ve tonlarını içeren düzenlemeler ekleyin
+3. YouTube performansları, akor çizelgeleri veya nota dosyaları için harici bağlantılar ekleyin
+
+:::info
+Buraya eklenen şarkılar daha sonra herhangi bir hizmet planına eklenebilir. Kitaplığınızı bir kez oluşturun, her hafta yeniden kullanın.
+:::
+
+## Adım 3: Bir Hizmet Planı Oluşturun
+
+Planlar, gönüllülere nerede ihtiyaç duyulduğunu bildiren haftalık atamalardır.
+
+Şu işlemleri yapmak için [Planlar](../serving/plans.md) kılavuzunu izleyin:
+
+1. Serving'e gidin, hizmet alanı sekmenizi seçin ve plan türünüzü açın
+2. **Yeni Plan**'a tıklayın ve hizmet tarihini seçin. Birden fazla Pazar'ı bir kerede ayarlamak için önceki planı kopyalayın ve **Plan sayısı** alanına kaç plan oluşturulacağını girin
+3. Planın **Hizmet Ekibi Atamaları** bölümünde pozisyonları ekleyin ve bunlara gönüllüler atayın
+4. Gönüllüler kendi atama durumlarını görecek (Talep Edildi, Onaylandı, Beklemede)
+5. Her hizmetten önce gönüllülerin push bildirimi, e-posta veya kısa mesajla hatırlatılması için plan türü için [gönüllü hatırlatmalarını](../serving/plans.md#volunteer-reminders) etkinleştirin
+
+## Adım 4: İbadet Sıralamasını Oluşturun
+
+Hizmetin başından sonuna kadar akışını düzenleyin.
+
+Şu işlemleri yapmak için [İbadet Sıralaması](../serving/service-order.md) kılavuzunu izleyin:
+
+1. Planınızı açın ve en üstteki **İbadet Sıralaması** bölümünü bulun
+2. Öğe eklemek için **Ekle**'ye tıklayın: ibadet şarkıları (kitaplığınızdan), dualar, Kutsal Kitap okumaları, duyurular, vaaz, sunu, kapanış
+3. Hizmet akışını yeniden düzenlemek için öğeleri sürükleyip bırakın
+
+:::info
+İbadet sıralamaları plana özgüdür. Buradaki değişiklikler diğer planları veya ana şarkı kitaplığını etkilemez.
+:::
+
+## Adım 5: Pazar Görevlerini Atayın
+
+Tek seferlik Pazar sorumluluklarını takip edin, böylece hiçbir şey gözden kaçmaz.
+
+Şu işlemleri yapmak için [Görevler](../serving/tasks.md) kılavuzunu izleyin:
+
+1. "Komünyon öğelerini hazırla", "Bülten yazdır" veya "Ses ekipmanını kur" gibi sorumluluklar için görevler oluşturun
+2. Her görevi sorumlu kişiye veya gruba atayın
+3. Görevler **Serving > İşlerim** altında, atanan kişinin panosunda ve mobil uygulamada görünür
+
+:::info
+B1 Admin artık görevleri tekrarlayan bir programa göre oluşturmaz. Kişileri adımlar boyunca ilerleten tekrarlayan süreçler için, zamanlama tetikleyicisi olan [İş Akışları](../serving/workflows.md) özelliğini kullanın.
+:::
+
+## Adım 6: Self-Servis Kaydını Etkinleştirin (İsteğe Bağlı)
+
+Gönüllülerin yönetici atamalarını beklemek yerine pozisyonlara kendilerinin kaydolmasına izin verin.
+
+1. Bir plan oluştururken veya düzenlerken, self-servis kaydının ne zaman kapanacağını kontrol etmek için bir **Kayıt Son Tarihi** (hizmetten kaç saat önce) belirleyin. Saatler, planın ilk hizmet saatinden geriye doğru sayılır. Son tarih olmaması için boş bırakın. Yeni planlar, önceki planın son tarihiyle başlar.
+2. İsteğe bağlı olarak, gönüllülerin kimlerin kayıtlı olduğunu görmesi için **Kayıt sayfasında gönüllü adlarını göster** seçeneğini açın.
+3. Her pozisyon için, self-servis için kullanılabilir olması amacıyla **Self-Servis Kaydına İzin Ver** kutusunu işaretleyin.
+4. Gönüllülerin rolün neleri içerdiğini bilmesi için her pozisyona bir **Açıklama** ekleyin.
+
+Self-servis pozisyonları oluşturulduğunda, otomatik olarak [B1.church ve B1 App üzerindeki](../../b1-church/serving/volunteer-signup.md) gönüllü kayıt sayfalarında görünür. Üyeler açık pozisyonlara göz atabilir, kalan yer sayısını görebilir ve tek tıklamayla kaydolabilir.
 
 :::tip
-Mobiliosios programėlės pranešimai įspėja savanorius, kai jie gauna naujų paskyrimų arba kai planai pasikeičia.
+Aynı planda yönetici tarafından atanan ve self-servis pozisyonlarını karıştırın. Örneğin, ibadet liderinizi doğrudan atayın, ancak karşılayıcıların ve kahve servisi yapanların kendi seçimlerini yapmasına izin verin.
 :::
 
-## Viskas paruošta!
+## Adım 7: Gönüllüleri Bilgilendirin
 
-Jūsų savanorių valdymo sistema nustatyta. Kiekvieną savaitę sukurkite naują planą, paskirstykite pareigas, o jūsų komanda viską matys savo telefone ar kompiuteryje.
+Atanan gönüllüler planlarını otomatik olarak görür ve yanıt verebilir.
 
-## Susiję straipsniai
+1. Gönüllüler planlarını [B1.church ve B1 App üzerinde](../../b1-church/plans/viewing-plans.md) görür
+2. Atamaları doğrudan telefonlarından veya bilgisayarlarından kabul edebilir veya reddedebilirler
+3. Müsait olmadıkları haftalar için engelleme tarihleri belirleyebilirler
+4. Planlar prova için yazdırılabilir veya sahne arkasına asılabilir
+5. Gönüllüler, [gönüllü kayıt sayfası](../../b1-church/serving/volunteer-signup.md) üzerinden açık pozisyonlara göz atabilir ve kaydolabilir
 
-- [Grupių kūrimas](../groups/creating-groups.md) — nustatykite komandas ir kategorijas
-- [Grupės nariai](../groups/group-members.md) — pridėkite ir tvarkykite komandos narius
-- [Planai](../serving/plans.md) — kurkite ir tvarkykite tarnystės planus
-- [Pamaldų tvarka](../serving/service-order.md) — sudarykite pamaldų eigą
-- [Giesmės](../serving/songs.md) — tvarkykite pamaldų giesmių biblioteką
-- [Užduotys](../serving/tasks.md) — priskirkite veiksmų elementus asmenims ar grupėms
-- [Darbo eigos](../serving/workflows.md) — vesk žmones per pasikartojančius procesus su paleidikliais ir automatizuotais žingsniais
-- [Planų peržiūra (internete)](../../b1-church/plans/viewing-plans.md) — kaip savanoriai mato planus internete
-- [Planų peržiūra (mobiliesiems)](../../b1-mobile/serving/viewing-plans.md) — kaip savanoriai mato planus mobiliuosiuose įrenginiuose
-- [Savanorių registracija (internete)](../../b1-church/serving/volunteer-signup.md) — kaip nariai patys pasirenka savanorių pareigas
-- [Savanorių registracija (mobiliesiems)](../../b1-mobile/serving/volunteer-signup.md) — savanorių savitarnos registracija mobiliuosiuose įrenginiuose
+:::tip
+B1 App'deki anlık bildirimler, gönüllüler yeni bir atama aldığında veya planlar değiştiğinde onları uyarır.
+:::
+
+## Tamamlandı!
+
+Gönüllü yönetim sisteminiz kuruldu. Her hafta yeni bir plan oluşturun, pozisyonlara atama yapın; ekibiniz her şeyi telefonunda veya bilgisayarında görür.
+
+## İlgili Makaleler
+
+- [Grup Oluşturma](../groups/creating-groups.md) — ekipleri ve kategorileri ayarlayın
+- [Grup Üyeleri](../groups/group-members.md) — ekip üyeleri ekleyin ve yönetin
+- [Planlar](../serving/plans.md) — hizmet planları oluşturun ve yönetin
+- [İbadet Sıralaması](../serving/service-order.md) — bir ibadetin akışını oluşturun
+- [Şarkılar](../serving/songs.md) — ibadet şarkı kitaplığınızı yönetin
+- [Görevler](../serving/tasks.md) — kişilere veya gruplara eylem maddeleri atayın
+- [İş Akışları](../serving/workflows.md) — tetikleyiciler ve otomatik adımlarla kişileri tekrarlayan süreçlerden geçirin
+- [Planları Görüntüleme](../../b1-church/plans/viewing-plans.md) — gönüllülerin planlarını nasıl gördüğü
+- [Gönüllü Kaydı](../../b1-church/serving/volunteer-signup.md) — üyelerin gönüllü pozisyonlarını nasıl seçtiği

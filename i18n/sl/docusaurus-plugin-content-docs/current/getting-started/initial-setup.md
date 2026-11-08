@@ -1,14 +1,14 @@
 ---
 title: "Začetna nastavitev cerkve v B1 Admin"
 sidebar_label: "Začetna nastavitev"
-description: "Vodič po prvi nastavitvi nove cerkve v B1 Admin: podatki, blagovna znamka, vloge in priporočen vrstni red za osebe, skupine, prisotnost in darovanja."
+description: "Vodnik po prvi konfiguraciji nove cerkve v B1 Admin: podatki o cerkvi, blagovna znamka, vloge ter priporočen vrstni red nastavitve oseb, skupin, evidence obiskov in darovanj."
 ---
 
 # Začetna nastavitev
 
 <div class="article-intro">
 
-Po ustvarjanju računa in cerkve je pred povabilom ekipe treba opraviti nekaj pomembnih nastavitev. Ta vodnik vas vodi skozi priporočeni vrstni red nastavitev, da bo vaša cerkev od prvega dne pripravljena za delo.
+Po ustvarjanju računa in cerkve je treba pred povabilom ekipe nastaviti nekaj pomembnih korakov. Ta vodnik vas vodi skozi priporočen vrstni red nastavitve, da bo vaša cerkev pripravljena za uporabo že od prvega dne.
 
 </div>
 
@@ -16,57 +16,57 @@ Po ustvarjanju računa in cerkve je pred povabilom ekipe treba opraviti nekaj po
 <h4>Preden začnete</h4>
 
 - [Ustvarite svoj račun](./create-account.md) in registrirajte svojo cerkev
-- Pripravite logotip cerkve in gradivo za blagovno znamko (neobvezno, a priporočeno)
+- Pripravite logotip cerkve in gradiva za blagovno znamko (neobvezno, a priporočeno)
 
 </div>
 
-## 1. korak: Nastavite podatke o cerkvi
+## Korak 1: Nastavite podatke o svoji cerkvi
 
-1. Odprite [meni Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (iskalno polje v zgornjem levem kotu aplikacije B1 Admin), razširite **Settings** (Nastavitve) in kliknite **Settings**.
-2. V razdelku **Church Information** (Podatki o cerkvi) kliknite **Edit** (Uredi).
-3. Vnesite **ime** cerkve, **poddomeno** in **naslov**.
-4. Kliknite **Save** (Shrani), da uveljavite spremembe.
+1. Odprite [hitri meni](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (iskalno polje v zgornjem levem kotu B1 Admin), razširite **Nastavitve** in kliknite **Nastavitve**.
+2. V razdelku **Podatki o cerkvi** kliknite **Uredi**.
+3. Vnesite **ime**, **poddomeno** in **naslov** svoje cerkve.
+4. Kliknite **Shrani**, da uveljavite spremembe.
 
-## 2. korak: Nastavite blagovno znamko
+## Korak 2: Nastavite blagovno znamko
 
-1. V meniju Jump izberite **Website > Appearance** (Spletna stran > Videz).
+1. V hitrem meniju izberite **Spletna stran > Videz**.
 2. Naložite **logotip cerkve**.
 3. Nastavite dodatne možnosti blagovne znamke, na primer barve in slike.
-4. Vaša blagovna znamka se bo prikazala na vaši spletni strani B1.church in v aplikaciji B1 Mobile.
+4. Vaša blagovna znamka se bo prikazala na vaši spletni strani B1.church in v aplikaciji B1 App.
 
 :::tip
-Če imate logotip in blagovno znamko pripravljena, preden povabite člane ekipe, bo ob prijavi vtis urejen in profesionalen.
+Če imate logotip in blagovno znamko pripravljena, preden povabite člane ekipe, bo prvi vtis ob prijavi bolj dodelan.
 :::
 
-## 3. korak: Nastavite vloge in povabite ekipo
+## Korak 3: Nastavite vloge in povabite svojo ekipo
 
-1. V meniju Jump izberite **Settings > Roles** (Nastavitve > Vloge).
+1. V hitrem meniju izberite **Nastavitve > Vloge**.
 2. Ustvarite vloge za svojo ekipo (na primer »Pastor«, »Tajnik«, »Blagajnik«).
 3. Vsaki vlogi dodelite ustrezna dovoljenja.
 4. Dodajte člane ekipe tako, da poiščete njihove račune in jih dodelite vlogam.
 
-## 4. korak: Nastavite ključna področja
+## Korak 4: Nastavite ključna področja
 
-Ko je ekipa na mestu, začnite graditi osrednja področja aplikacije B1 Admin:
+Ko je ekipa na mestu, začnite graditi osrednja področja B1 Admin:
 
-1. **People** (Osebe) -- Dodajte člane v imenik cerkve. Na tem temelji vse ostalo, zato začnite tukaj. Osebe lahko dodate ročno ali uporabite orodje **Import/Export** v razdelku **Settings** (Nastavitve).
-2. **Groups** (Skupine) -- Ustvarite skupine za male skupine, službene ekipe, razrede in druga srečanja.
-3. **Attendance** (Udeležba) -- Nastavite svoje podružnice, bogoslužja in čase bogoslužij za spremljanje udeležbe.
-4. **Donations** (Darovanja) -- Nastavite sklade za darovanja in povežite svoj plačilni prehod (Stripe), da boste lahko sprejemali spletna darovanja.
-5. **Website** (Spletna stran) -- Zgradite svojo javno spletno stran cerkve s pomočjo gradnika spletnih strani B1.church.
+1. **Ljudje** -- Dodajte člane v imenik cerkve. To je temelj za vse ostalo, zato začnite tukaj. Osebe lahko dodate ročno ali uporabite orodje **Uvoz/Izvoz** iz **Nastavitev**.
+2. **Skupine** -- Ustvarite skupine za male skupnosti, službe, tečaje in druga srečanja.
+3. **Obiski** -- Nastavite svoje podružnice, bogoslužja in čase bogoslužij za evidentiranje obiskov.
+4. **Darovanja** -- Nastavite sklade za darovanja in povežite svoj plačilni sistem (Stripe), da boste lahko sprejemali spletna darovanja.
+5. **Spletna stran** -- Zgradite svojo javno spletno stran cerkve z graditeljem spletnih strani B1.church.
 
 :::info
-Ni treba nastaviti vseh področij naenkrat. Mnoge cerkve najprej začnejo z **People** (Osebe) in **Groups** (Skupine), nato pa dodajo **Attendance** (Udeležba) in **Donations** (Darovanja), ko se navadijo na platformo.
+Ni treba nastaviti vseh področij naenkrat. Mnoge cerkve začnejo z **Ljudmi** in **Skupinami**, nato pa dodajo **Obiske** in **Darovanja**, ko se privadijo platforme.
 :::
 
 ## Priporočen vrstni red
 
-Za čim lažjo nastavitev priporočamo naslednji vrstni red:
+Za čim bolj gladko nastavitev priporočamo naslednji vrstni red:
 
-1. **People** (Osebe) -- Najprej dodajte svoje člane in redne obiskovalce.
-2. **Groups** (Skupine) -- Osebe razporedite v smiselne skupine.
-3. **Attendance** (Udeležba) -- Začnite beležiti, kdo se vsak teden udeleži.
-4. **Donations** (Darovanja) -- Nastavite darovanja, ko so vaši ljudje v sistemu.
-5. **Website** (Spletna stran) -- Javno spletno stran zgradite na koncu, ko so vsi podatki na mestu.
+1. **Ljudje** -- Najprej dodajte svoje člane in redne udeležence.
+2. **Skupine** -- Osebe razvrstite v smiselne skupine.
+3. **Obiski** -- Začnite beležiti, kdo se vsak teden udeleži.
+4. **Darovanja** -- Nastavite darovanja, ko so osebe v sistemu.
+5. **Spletna stran** -- Javno spletno stran gradite nazadnje, ko so podatki na mestu.
 
-Ko opravite te korake, je vaša cerkev pripravljena za delo. Podrobne vodnike za posamezna področja poiščite v dokumentaciji [B1 Admin](/docs/b1-admin/).
+Ko dokončate te korake, je vaša cerkev pripravljena za uporabo. Za podrobne vodnike o posameznih področjih si oglejte dokumentacijo [B1 Admin](/docs/b1-admin/).

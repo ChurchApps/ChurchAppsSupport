@@ -1,68 +1,68 @@
 ---
-title: "Napi vers a B1.church webhelyén és portálján"
-sidebar_label: "Napi vers"
-description: "A napi bibliaversek képeinek és korábbi verseinek böngészése; megosztás vagy letöltés bármilyen képernyőn a B1.church webhelyről vagy portálról."
+title: "Napi ige a B1.church weboldalon és a tagi portálon"
+sidebar_label: "Napi ige"
+description: "Tekintse meg minden nap bibliai igéjének képét és a korábbi igéket, majd ossza meg vagy töltse le őket a B1.church weboldalról vagy tagi portálról, bármilyen képernyőméreten."
 ---
 
-# Napi vers
+# Napi ige
 
 <div class="article-intro">
 
-A Napi vers oldal egy napi bibliai verset jelenít meg szépen formázott képként. Egyszerű módja annak, hogy Szentírással kezdd a napodat, vagy a hét folyamán bátorítást találj.
+A Napi ige oldal egy bibliai igét jelenít meg naponta, szépen formázott kép formájában. Ez egyszerű módja annak, hogy a napot Szentírással kezdje, vagy a hét folyamán bátorítást találjon.
 
 </div>
 
 <div class="prereqs">
-<h4>Mielőtt elkezded</h4>
+<h4>Mielőtt elkezdi</h4>
 
-- A napi vers megtekintéséhez nincs szükség bejelentkezésre. Az oldal nyilvánosan elérhető.
-- A gyülekezetednek hozzá kell adnia a Napi vers oldalt a webhelye navigációjához.
+- A Napi ige megtekintéséhez nincs szükség bejelentkezésre. Az oldal nyilvánosan elérhető.
+- Gyülekezetének hozzá kell adnia a Napi ige oldalt a webhelye navigációjához.
 
 </div>
 
-## A vers megtekintése
+## Az ige megtekintése
 
-1. Nyisd meg a **Napi vers** oldalt a gyülekezeted webhelyének navigációjából.
-2. Az oldal a mai verset képként jeleníti meg, mellette vagy alatta a versszöveggel, a hivatkozással és a mai dátummal.
-3. Minden nap automatikusan megjelenik egy új vers.
+1. Lépjen a **Napi ige** oldalra gyülekezete webhelyének navigációjából.
+2. Az oldal a mai igét képként jeleníti meg, mellette vagy alatta az ige szövegével, hivatkozásával és a mai dátummal.
+3. Minden nap automatikusan új ige jelenik meg.
 
-Nincs teendőd – csak látogasd meg az oldalt, és megjelenik az aznapi vers.
+Nincs teendője, csak látogassa meg az oldalt, és megjelenik az aktuális napi ige.
 
-## Korábbi versek
+## Korábbi igék
 
-A mai vers alatt a **Ezen a héten** rész az elmúlt napok verseit mutatja:
+A mai ige alatt a **Ez a hét** rész a korábbi napok igéit mutatja:
 
-- A gyülekezeted weboldalán az előző hat nap versei képkártyák sorában jelennek meg, amely lassan, magától görget (a görgetés szünetel, amíg az egérrel föléjük viszel, vagy megérinted).
-- A tagi portálon (`/mobile`) az előző három nap látható, minden versnél a hivatkozással, a dátummal és a szöveggel.
+- Gyülekezete weboldalán az előző hat nap igéi képkártyák sorában jelennek meg, amely magától lassan görget, és az utolsó kártya után újra az elsőre ugrik (amíg a kurzor fölötte van vagy érinti, megáll). Ha a kártyák nem férnek ki egyszerre, a sor alatt lévő pontok mutatják, melyik kártyánál tart; kattintson egy pontra, hogy ahhoz a kártyához ugorjon.
+- A tagi portálon (`/mobile`) az előző három nap látható, mindegyik igéhez tartozik a hivatkozás, a dátum és a szöveg.
 
-Bármelyik napra kattintva vagy koppintva megnyithatod az adott nap versét a képével, a teljes versszöveggel, valamint ugyanazokkal a megosztás- és letöltésgombokkal, mint a mai versnél.
+Kattintson vagy koppintson bármelyik napra, hogy megnyissa annak képét, teljes igéjét, valamint ugyanazokat a megosztás és letöltés gombokat, mint a mai ige esetén.
 
-Kattints a **Korábbi versek** gombra, hogy az év január 1-jétől tegnapig minden nap versét lásd, hónapok szerint csoportosítva, a legújabbal kezdve. A weboldalon a lista az **Ezen a héten** sor alatt nyílik meg (a lista elrejtéséhez kattints újra a **Korábbi versek** gombra); a tagi portálon saját képernyőn nyílik meg, visszalépő hivatkozással. Bármelyik dátumra kattintva megnyithatod az adott nap versét.
+Kattintson a **Korábbi igék** gombra, hogy megtekintse az év január 1-jétől tegnapig minden napi igét, hónapokra bontva, a legújabbal kezdve. A weboldalon a lista a **Ez a hét** sor alatt nyílik meg (a elrejtéséhez kattintson ismét a **Korábbi igék** gombra); a tagi portálon külön képernyőn nyílik meg, visszalépő hivatkozással. Bármelyik dátumra kattintva megnyithatja annak napi igéjét.
 
-## Megjelenítés különböző képernyőkön
+## Reszponzív megjelenítés
 
-A versképe automatikusan igazodik a képernyődhöz. Az eszközödtől és az ablak méretétől függően három formátum egyikét látod:
+Az igekép automatikusan a képernyőjéhez igazodik. Az eszköztől és az ablak méretétől függően három formátum egyikét látja:
 
-- **Szélesvásznú (16:9)** -- Asztali monitorokhoz és laptopokhoz a legjobb
-- **Négyzetes (1:1)** -- Tablet méretű képernyőkhöz ajánlott
-- **Álló (9:16)** -- Függőlegesen tartott telefonokhoz optimalizálva
+- **Szélesvásznú (16:9)** – Asztali monitorokhoz és laptopokhoz a legjobb
+- **Négyzetes (1:1)** – Tablet méretű képernyőkhöz alkalmas
+- **Álló (9:16)** – Függőlegesen tartott telefonokhoz optimalizálva
 
-Az oldal felismeri a képernyőd méreteit, és a legmegfelelőbb formátumot választja, így a vers mindig jól néz ki, függetlenül attól, hogyan nézed. Ha átméretezed a böngészőablakot, a kép az új méretekhez igazodik. A gyülekezeted weboldalán egy magas telefonképernyőn a négyzetes kép jelenik meg az álló helyett, így a vers nem szorul be keskeny sávba.
+Az oldal felismeri a képernyő méreteit, és a legmegfelelőbb formátumot választja, így az ige mindig jól néz ki, bárhogyan nézi. Ha átméretezi a böngészőablakot, a kép az új méretekhez igazodik. Gyülekezete weboldalán a magas telefonképernyő a négyzetes képet mutatja az álló helyett, így az ige nem préselődik keskeny sávba.
 
-## A vers megosztása
+## Az ige megosztása
 
-A mai versnek, és bármelyik korábbi napnak, amelyet megnyitsz, három gombja van:
+A mai ige és minden korábbi nap, amelyet megnyit, három gombbal rendelkezik:
 
-- **Megosztás** -- megosztja a versszöveget, a hivatkozást és a verskép linkjét. Ha az eszközödön nincs megosztási menü, a szöveg és a link a vágólapra másolódik.
-- **Kép megosztása** -- magát a versképet osztja meg, így közzétheted vagy üzenetben elküldheted. Olyan eszközökön, amelyek nem tudnak fájlokat megosztani (például a legtöbb asztali böngésző), a kép letöltődik.
-- **Letöltés** -- elmenti a versképet az eszközödre.
+- **Megosztás** – megosztja az ige szövegét, hivatkozását és az igekép linkjét. Ha eszközén nincs megosztási menü, a szöveg és a link a vágólapra kerül.
+- **Kép megosztása** – magát az igeképet osztja meg, így közzé teheti vagy üzenetben elküldheti. Olyan eszközökön, amelyek nem tudnak fájlokat megosztani (például a legtöbb asztali böngésző), a kép helyette letöltésre kerül.
+- **Letöltés** – az igekép mentése eszközére.
 
-A gyülekezeted weboldalán ezek mindig a szélesvásznú (16:9) képet használják. A tagi portálon a képernyődhöz illő formátumot használják.
+Gyülekezete weboldalán ezek mindig a szélesvásznú (16:9) képet használják. A tagi portálon a képernyőjéhez illő formátumot használják.
 
 :::tip
-Legyen napi szokásod, hogy megnézed a Napi verset, majd a [Bibliaolvasóban](./bible.md) tovább olvasol a szakaszból.
+Szokjon rá, hogy naponta megnézze a Napi igét, majd a [Bibliaolvasóban](./bible.md) tovább tanulmányozza a részt.
 :::
 
 ## Elérhetőség
 
-A Napi vers a B1.church beépített tartalmi funkciója. Ha nem látod a gyülekezeted navigációjában, lehet, hogy a gyülekezeti adminisztrátor nem adta hozzá a webhely menüjéhez. Kérd a gyülekezeti adminisztrátort, hogy adja hozzá.
+A Napi ige a B1.church beépített tartalmi funkciója. Ha nem látja a gyülekezete navigációjában, lehet, hogy a gyülekezeti adminisztrátor nem adta hozzá a webhely menüjéhez. Kérje a gyülekezeti adminisztrátortól, hogy adja hozzá.

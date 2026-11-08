@@ -1,21 +1,21 @@
 ---
-title: "Nastavitev samostojne prijave z B1 Checkin in B1 Admin"
-sidebar_label: "Prijava obiskovalcev"
-description: "Nastavite samostojno prijavo na bogoslužja z aplikacijo B1 Checkin v B1 Admin: naprave, računi za kiosk, urniki, videz in prijava gostov prek QR kode."
+title: "Nastavitev samoprijave z aplikacijama B1 Checkin in B1 Admin"
+sidebar_label: "Prijava"
+description: "Nastavite samoprijavo za bogoslužja z aplikacijo B1 Checkin v B1 Admin, vključno z napravami, računi za kiosk, urniki, blagovno podobo in prijavo gostov prek kode QR."
 ---
 
-# Prijava obiskovalcev
+# Prijava
 
 <div class="article-intro">
 
-B1 Admin omogoča samoprijavo na bogoslužja prek spremljajoče aplikacije **B1 Checkin**. Člani se ob prihodu lahko sami prijavijo, skupaj s svojimi družinami, na kioskih ali namenskih napravah. Tako je postopek hiter in razbremeni vaše prostovoljce. Vsaka prijava se samodejno zabeleži kot prisotnost.
+B1 Admin omogoča samoprijavo ob bogoslužjih prek spremljevalne aplikacije **B1 Checkin**. Člani se lahko ob prihodu sami prijavijo sebe in svojo družino na kioskih ali namenskih napravah, s čimer je postopek hitrejši in se zmanjša obremenitev vaših prostovoljcev. Vsaka prijava se samodejno zabeleži kot prisotnost.
 
 </div>
 
 <div class="prereqs">
 <h4>Preden začnete</h4>
 
-- Vaše podružnice, časi bogoslužij in skupine morajo biti nastavljeni v [Nastavitvah prisotnosti](setup.md).
+- Vaše kampuse, čase bogoslužij in skupine morate nastaviti v [Nastavitvah prisotnosti](setup.md).
 - Potrebujete [osebe v vaši bazi podatkov](../people/adding-people.md) z nastavljenimi [gospodinjstvi](../people/adding-people.md#managing-households), da se lahko družine prijavijo skupaj.
 - Potrebovali boste tablični računalnik in po želji tiskalnik nalepk Brother (glejte [priporočila o strojni opremi](#recommended-hardware) spodaj).
 
@@ -23,33 +23,33 @@ B1 Admin omogoča samoprijavo na bogoslužja prek spremljajoče aplikacije **B1 
 
 ## Kako deluje
 
-Aplikacija B1 Checkin se poveže z vašimi nastavitvami prisotnosti v B1 Admin. Ko se član prijavi, se njegova prisotnost samodejno zabeleži za pravilno podružnico, čas bogoslužja in skupino. Za osebe, ki uporabljajo sistem prijave, ročno vnašanje prisotnosti ni potrebno.
+Aplikacija B1 Checkin se poveže z vašo nastavitvijo prisotnosti v B1 Admin. Ko se član prijavi, se njegova prisotnost samodejno zabeleži za pravilni kampus, čas bogoslužja in skupino. Za osebe, ki uporabljajo sistem prijave, prisotnosti ni treba vnašati ročno.
 
 ## Nastavitev prijave
 
-1. **Najprej nastavite strukturo prisotnosti.** V B1 Admin pojdite na **Ljudje > Prisotnost** in kliknite **Nastavitve**, da se prepričate, da so vaše podružnice, časi bogoslužij in skupine nastavljeni. Aplikacija za prijavo se opira na to konfiguracijo. Po želji lahko vsakemu času bogoslužja nastavite [urnik prijave](setup.md#setting-a-check-in-schedule), da se prijava vsak teden samodejno odpre in zapre. Urniki uporabljajo časovni pas podružnice, h kateri bogoslužje spada, ali časovni pas vaše cerkve, če podružnica nima nastavljenega svojega. Kiosk prikaže časi bogoslužij, katerih okno je zaprto, kot **Zaprto**, in družinam pove, kdaj se prijava odpre. Podrobnosti najdete v [Nastavitvah prisotnosti](setup.md).
-2. **Namestite aplikacijo B1 Checkin** na naprave, ki jih nameravate uporabljati. Aplikacija je na voljo za naslednje platforme:
+1. **Najprej nastavite strukturo prisotnosti.** V B1 Admin pojdite na **Osebe > Prisotnost** in kliknite **Nastavitve**, da zagotovite, da so vaši kampusi, časi bogoslužij in skupine pripravljeni. Aplikacija za prijavo se opira na to konfiguracijo. Po želji lahko vsakemu času bogoslužja dodelite [urnik prijave](setup.md#setting-a-check-in-schedule), tako da se prijava vsak teden samodejno odpre in zapre. Urniki uporabljajo časovni pas kampusa bogoslužja oziroma časovni pas vaše cerkve, če kampus nima nastavljenega svojega. Kiosk čase bogoslužij, katerih časovno okno je zaprto, prikaže kot **Zaprto** in družinam sporoči, kdaj se prijava odpre. Podrobnosti najdete v [Nastavitvah prisotnosti](setup.md).
+2. **Namestite aplikacijo B1 Checkin** na naprave, ki jih nameravate uporabljati. Aplikacija je na voljo na naslednjih platformah:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
-   - **Android/tablični računalniki Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
-   - **Tablični računalniki Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Prijavite se v aplikacijo B1 Checkin** z računom, ki ima dovoljenje za prijavo na prisotnost (**Checkin**) ali **Urejanje prisotnosti**. Glejte [Računi kioskov za prijavo](../settings/roles-permissions.md#check-in-kiosk-accounts).
-4. **Izberite podružnico in čas bogoslužja** za trenutno srečanje.
-5. Člani zdaj lahko na napravi poiščejo svoje ime in se prijavijo.
+   - **Android/tablice Samsung:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+   - **tablice Amazon Fire:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
+3. **Prijavite se v aplikacijo B1 Checkin** z računom, ki ima dovoljenje za prijavo prisotnosti (**Checkin**) ali dovoljenje **Urejanje prisotnosti**. Glejte [Računi za kiosk za prijavo](../settings/roles-permissions.md#check-in-kiosk-accounts).
+4. **Izberite kampus in čas bogoslužja** za trenutno srečanje.
+5. Člani lahko zdaj na napravi poiščejo svoje ime in se prijavijo.
 
 :::tip
-Naprave za prijavo postavite na vidna in lahko dostopna mesta, na primer ob vhodih v preddverje ali na recepcijske pulte. Kratka napoved med bogoslužji pomaga članom vedeti, da ta možnost obstaja.
+Naprave za prijavo postavite na vidna in lahko dostopna mesta, na primer ob vhodih v preddverje ali na pult za dobrodošlico. Kratko napoved med bogoslužji članom pomaga vedeti, da ta možnost obstaja.
 :::
 
 :::tip
-Če ima vaša cerkev več podružnic, boste morali nastavitev ponoviti za vsako podružnico v [Nastavitvah prisotnosti](setup.md). Vsako napravo za prijavo lahko nastavite za drugo podružnico.
+Če ima vaša cerkev več kampusov, morate nastavitev ponoviti za vsak kampus v [Nastavitvah prisotnosti](setup.md). Vsako napravo za prijavo lahko nastavite za drug kampus.
 :::
 
 ## Priporočena strojna oprema
 
-**Tablični računalniki** — z aplikacijo dobro delujejo kateri koli od teh:
+**Tablični računalniki** — z aplikacijo dobro delujejo vsi ti:
 
-- **Kompakten:** Samsung Galaxy Tab A7 Lite 8,7"
-- **Velik zaslon:** Samsung Galaxy Tab A8 10,5"
+- **Kompaktni:** Samsung Galaxy Tab A7 Lite 8.7"
+- **Velik zaslon:** Samsung Galaxy Tab A8 10.5"
 - **Cenovno ugoden:** Amazon Fire HD 10
 
 **Tiskalniki** — prijave delujejo s tiskalniki nalepk Brother za tiskanje imenskih značk:
@@ -61,119 +61,121 @@ Naprave za prijavo postavite na vidna in lahko dostopna mesta, na primer ob vhod
 **Nalepke:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Z aplikacijo B1 Checkin so združljivi samo tiskalniki nalepk Brother. Tiskalniki drugih znamk za tiskanje imenskih značk ne bodo delovali.
+Z aplikacijo B1 Checkin so združljivi samo tiskalniki nalepk Brother. Tiskalniki drugih blagovnih znamk ne bodo delovali za tiskanje imenskih značk.
 :::
 
 :::info
-Sledite navodilom za nastavitev tiskalnika in ga povežite z istim omrežjem WiFi kot vaš tablični računalnik. Gonilnike in navodila za nastavitev tiskalnikov Brother najdete na [spletni strani za podporo Brother](https://support.brother.com).
+Sledite navodilom za nastavitev tiskalnika, da ga povežete z istim omrežjem WiFi kot vaš tablični računalnik. Gonilnike in navodila za nastavitev tiskalnikov Brother najdete na [spletnem mestu za podporo Brother](https://support.brother.com).
 :::
 
 ## Prilagajanje videza kioska
 
-Videz aplikacije B1 Checkin lahko prilagodite tako, da se ujema zблagovno podobo vaše cerkve. V B1 Admin pojdite na **Mobilne > B1 CheckIn** in uporabite kartico **Tema kioska**, da nastavite:
+Videz aplikacije B1 Checkin lahko prilagodite svoji cerkveni blagovni podobi. V B1 Admin pojdite na **Mobilno > B1 CheckIn** in v kartici **Tema kioska** nastavite:
 
 ### Barve
 
-Prilagodite osem barvnih nastavitev, da se ujemajo zблagovno podobo vaše cerkve:
+Prilagodite osem barvnih nastavitev, da se ujemajo z blagovno podobo vaše cerkve:
 
 - **Primarna** in **Primarna kontrastna** -- glavna barva blagovne znamke in njena barva besedila.
-- **Sekundarna** in **Sekundarna kontrastna** -- poudarna barva in njena barva besedila.
-- **Ozadje glave** in **Ozadje podglave** -- barve področij glave kioska.
-- **Ozadje gumba** in **Besedilo gumba** -- barve interaktivnih gumbov.
+- **Sekundarna** in **Sekundarna kontrastna** -- poudarjena barva in njena barva besedila.
+- **Ozadje glave** in **Ozadje podglave** -- barve za glavna območja kioska.
+- **Ozadje gumbov** in **Besedilo gumbov** -- barve za interaktivne gumbe.
 
 ### Slika ozadja
 
-Naložite lahko neobvezno sliko ozadja za pozdravni zaslon kioska in zaslon za iskanje. Priporočena velikost je 1920x1080 slikovnih pik.
+Za zaslone dobrodošlice in iskanja v kiosku lahko naložite izbirno sliko ozadja. Priporočena velikost je 1920x1080 slikovnih pik.
 
 ### Zaslon v mirovanju / ohranjevalnik zaslona
 
 Nastavite ohranjevalnik zaslona, ki se aktivira po obdobju nedejavnosti:
 
-1. Zaslon v mirovanju vklopite ali izklopite.
+1. Zaslon v mirovanju **vklopite** ali **izklopite**.
 2. Nastavite **časovno omejitev** (koliko sekund nedejavnosti pred začetkom ohranjevalnika zaslona, najmanj 10 sekund).
-3. Dodajte eno ali več **diapozitivov** -- vsak diapozitiv ima sliko in čas prikaza (najmanj 3 sekunde).
+3. Dodajte eno ali več **diapozitivov** -- vsak diapozitiv ima sliko in trajanje prikaza (najmanj 3 sekunde).
 
 :::tip
-Zaslon v mirovanju uporabite za prikaz napovedi, prihajajočih dogodkov ali pozdravnih sporočil, kadar kiosk ni v aktivni uporabi.
+Zaslon v mirovanju uporabite za prikaz napovedi, prihajajočih dogodkov ali pozdravnih sporočil, kadar kiosk ni aktivno v uporabi.
 :::
 
-## Registracija gostov prek QR kode
+## Prijava gostov prek kode QR
 
-Kiosk za prijavo lahko prikaže QR kodo, ki jo obiskovalci optično preberejo in se nato sami registrirajo s svojo družino na lastnem telefonu. To pospeši prijavo za goste, ki so prvič tukaj.
+Kiosk za prijavo lahko prikaže kodo QR, ki jo obiskovalci optično preberejo in se na svojem telefonu sami prijavijo sebe in svojo družino. To pospeši prijavo za goste, ki so prvič tukaj.
 
-Ko gost optično prebere QR kodo, ga stran odpre na [strani za registracijo gostov](../../b1-church/checkin/guest-registration.md), kjer vnese imena svoje družine in druge podatke, ki jih želite zbirati. Prostovoljec ga nato lahko poišče na kiosku in ga prijavi.
+Ko gost optično prebere kodo QR, ga odpre [stran za prijavo gostov](../../b1-church/checkin/guest-registration.md), kjer vpiše imena svoje družine in druge podatke, ki jih želite zbrati. Prostovoljec ga nato lahko poišče na kiosku in ga prijavi.
 
-### Omogočanje registracije gostov prek QR kode
+### Vklop prijave gostov prek kode QR
 
-Za vklop prikaza QR kode:
+Če želite vklopiti prikaz kode QR:
 
-1. V B1 Admin odprite [meni Jump](../introduction.md#getting-around-with-the-jump-menu) (iskalno polje na vrhu levo) in razširite **Mobilne**.
+1. V B1 Admin odprite [meni Jump](../introduction.md#getting-around-with-the-jump-menu) (iskalno polje v zgornjem levem kotu) in razširite **Mobilno**.
 2. Kliknite **B1 CheckIn**.
-3. Vklopite **Registracija gostov prek QR** in kliknite **Shrani**.
+3. Vklopite **Prijava gostov prek kode QR** in kliknite **Shrani**.
 
 :::note
-Ta nastavitev je pod **Mobilne > B1 CheckIn** (na isti strani kot kartica **Tema kioska**), ne pod Prisotnostjo. Dejanje **Kiosk** na strani Prisotnost ima povezavo na to stran.
+Ta nastavitev je pod **Mobilno > B1 CheckIn** (na isti strani kot kartica **Tema kioska**), ne pod Prisotnostjo. Ukaz **Kiosk** na strani Prisotnost ima povezavo na to stran.
 :::
 
-Ko je preklop vklopljen, se preostale možnosti spodaj prikažejo na isti kartici **Registracija gostov prek QR**. Po spremembi katere koli od njih kliknite **Shrani** na kartici.
+Ko je preklop vklopljen, se ostale možnosti spodaj prikažejo na isti kartici **Prijava gostov prek kode QR**. Po spremembi katere koli od njih kliknite **Shrani** na kartici.
 
 ### Izbira polj za prijavo
 
-Seznam **Polja za prijavo** določa, kaj obrazec za registracijo zahteva. **Ime** in **Priimek** sta vedno na obrazcu in sta vedno obvezna za vsakega družinskega člana. Pri vsakem drugem polju vklopite **Vključi**, da ga dodate v obrazec, nato vklopite **Obvezno**, če ga morajo gostje izpolniti. **Obvezno** lahko vklopite samo za vključeno polje, izklop **Vključi** pa ga počisti.
+Seznam **Polja za prijavo** določa, kaj obrazec za prijavo zahteva. **Ime** in **Priimek** sta vedno na obrazcu in vedno obvezna za vsakega člana družine. Pri vsakem drugem polju vklopite **Vključi**, da ga dodate na obrazec, nato vklopite **Obvezno**, če ga morajo gostje izpolniti. **Obvezno** lahko vklopite samo za vključeno polje, izklop **Vključi** pa ga počisti.
 
-| Polje | Zahtevano za | Privzeto vključeno |
-|-------|--------------|--------------------|
-| **E-pošta** | Samo glavnega kontakta | Da (neobvezno) |
-| **Telefon** | Samo glavnega kontakta | Da (neobvezno) |
-| **Domači naslov** | Enkrat za družino -- ulica, naslovna vrstica 2, mesto, regija in poštna številka. Če je obvezno, morajo biti izpolnjeni vsi deli razen naslovne vrstice 2. Naslov se shrani pri vsakem družinskem članu. | Ne |
-| **Datum rojstva** | Vsakega družinskega člana | Ne |
-| **Spol** | Vsakega družinskega člana | Ne |
-| **Zakonski stan** | Samo glavnega kontakta | Ne |
-| **Razred** | Vsakega družinskega člana (od predšolskega do 12. razreda ali Diplomiral) | Ne |
-| **Komentarji** | Enkrat, v polju pod družinskimi člani (do 1.000 znakov) | Ne |
+| Polje | Vpraša se | Privzeto vključeno |
+|-------|-----------|---------------------|
+| **Naziv** | Za vsakega člana družine, kot spustni seznam pred imenom (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | Ne |
+| **E-pošta** | Samo za glavnega stika | Da (neobvezno) |
+| **Telefon** | Za vsakega člana družine. Ko je obvezen, mora telefon vpisati samo glavni stik. | Da (neobvezno) |
+| **Vloga v gospodinjstvu** | Za vsakega člana družine po glavnem stiku -- zakonec, otrok ali drugo. Glavni stik je vodja novega gospodinjstva. Kdor nima vloge, se shrani kot Drugo. | Da (neobvezno) |
+| **Domači naslov** | Enkrat za družino -- ulica, naslovna vrstica 2, mesto, zvezna država in poštna številka. Ko je obvezen, mora biti izpolnjeno vse razen naslovne vrstice 2. Naslov se shrani pri vsakem članu družine. | Ne |
+| **Datum rojstva** | Za vsakega člana družine | Ne |
+| **Spol** | Za vsakega člana družine | Ne |
+| **Zakonski stan** | Samo za glavnega stika | Ne |
+| **Razred** | Za vsakega člana družine (od predšolskega do 12. razreda ali Diplomiral) | Ne |
+| **Komentarji** | Enkrat, v polju pod člani družine (do 1.000 znakov) | Ne |
 
-Polja, ki jih izklopite, se nikoli ne shranijo, tudi če jih nekdo na drug način pošlje v prijavo. Komentarji se shranijo kot opomba v zapisu glavnega kontakta (objavljena kot »Prijava gosta«), zato jih lahko preberete v razdelku **Opombe** njegovega profila.
+Polja, ki jih izklopite, se nikoli ne shranijo, tudi če jih nekdo kako drugače pošlje v prijavo. Komentarji se shranijo kot opomba v zapisu glavnega stika (objavljeno kot „Prijava gosta“), zato jih lahko preberete v razdelku **Opombe** na njegovem profilu.
 
 ### Dodajanje gostov v skupino
 
-Z možnostjo **Nove goste dodaj v skupino** samodejno uvrstite vse, ki se prijavijo, v eno od vaših skupin -- na primer skupino »Novinci« ali skupino za dogodek tega vikenda. Izberite **Brez** (privzeto), če tega ne želite. Gostje skupine nikoli ne vidijo in je ne morejo izbrati; nastavi se samo tukaj. Pred vsakim dogodkom jo spremenite, da lahko goste tega dogodka spremljate skupaj.
+Z možnostjo **Dodaj nove goste v skupino** samodejno uvrstite vse, ki se prijavijo, v eno od vaših skupin -- na primer skupino „Novinci“ ali skupino za dogodek tega vikenda. Izberite **Brez** (privzeto), če tega ne želite. Gostje skupine nikoli ne vidijo ali ne izberejo; nastavi se samo tukaj. Pred vsakim dogodkom jo spremenite, da lahko goste tega dogodka skupaj obiščete.
 
 ### Beleženje prisotnosti
 
-Ko izberete skupino, se prikaže stikalo **Prav tako zabeleži prisotnost**. Vklopite ga, da so gostje označeni kot prisotni takoj, ko se prijavijo, da jih vam ni treba prijaviti posebej.
+Ko je izbrana skupina, se prikaže stikalo **Tudi zabeleži prisotnost**. Vklopite ga, da gostje ob prijavi takoj označeni kot prisotni, tako da jih ni treba ločeno prijaviti.
 
-Prisotnost se zabeleži samo, če se prijava zgodi med enim od **načrtovanih** časov bogoslužij izbrane skupine:
+Prisotnost se zabeleži samo, če se prijava zgodi v enem od **načrtovanih** časov bogoslužij izbrane skupine:
 
-- Skupina mora biti povezana z enim ali več časi bogoslužij, ti časi pa morajo imeti [urnik prijave](setup.md#setting-a-check-in-schedule) (**Dan** in **Začetni čas**).
-- »Med« pomeni znotraj okna prijave tega časa bogoslužja -- od **Odpri prijavo** minut pred začetkom do **Zapri prijavo** minut po koncu (ali po začetku, če končni čas ni nastavljen; če nista nastavljena ne končni čas ne minute zapiranja, do konca tistega dne), v istem časovnem pasu, ki ga uporablja urnik prijave.
-- Vsak družinski član se označi kot prisoten v skupini za vsak njen čas bogoslužja, ki je v tistem trenutku odprt, za današnji datum.
-- Prijave ob katerem koli drugem času ali za skupino, katere časi bogoslužij nimajo urnika, se dodajo v skupino, vendar se ne štejejo kot prisotnost.
+- Skupina mora biti povezana z enim ali več časi bogoslužij, ti časi pa morajo imeti [urnik prijave](setup.md#setting-a-check-in-schedule) (**dan** in **začetni čas**).
+- „Med“ pomeni znotraj časovnega okna prijave tega časa bogoslužja -- od **Odpri prijavo** minut pred začetkom do **Zapri prijavo** minut po koncu (ali po začetku, če končni čas ni nastavljen; če nista nastavljena niti končni čas niti minute zaprtja, pa do konca tistega dne), v istem časovnem pasu, kot ga uporablja urnik prijave.
+- Vsak član družine je označen kot prisoten v skupini za vsak njen čas bogoslužja, ki je v tistem trenutku odprt, za današnji datum.
+- Prijave ob kateri koli drugi uri ali za skupino, katere časi bogoslužij nimajo urnika, se dodajo v skupino, vendar se ne štejejo kot prisotnost.
 
 ### Glava fotografije
 
-Pod **Fotografija glave** kliknite **Spremeni fotografijo**, da izberete ali naložite sliko (obrezano v obliko 16:9), ki se bo na vrhu strani za registracijo prikazala namesto privzete ikone. Kliknite **Odstrani**, da se vrnete na ikono.
+V razdelku **Glava fotografije** kliknite **Spremeni fotografijo**, da izberete ali naložite sliko (obrezano na razmerje 16:9), ki se prikaže na vrhu strani za prijavo namesto privzete ikone. Kliknite **Odstrani**, da se vrnete na ikono.
 
-### Deljenje povezave za registracijo
+### Deljenje povezave za prijavo
 
-Ko je registracija gostov prek QR kode omogočena, se na dnu kartice prikaže razdelek **Deli QR kodo za registracijo**. To vam omogoča dva načina, da goste pripeljete do obrazca za registracijo, poleg QR kode na kiosku:
+Ko je prijava gostov prek kode QR vklopljena, se na dnu kartice prikaže razdelek **Deli kodo QR za prijavo**. Ta ponuja dva načina, kako goste pripeljati do obrazca za prijavo, poleg kode QR na kiosku:
 
-- **Kopiraj povezavo** -- kopira URL za registracijo, da ga lahko prilepite na spletno stran cerkve, v e-pošto ali kamorkoli na spletu.
-- **Prenesi PNG** -- prenese QR kodo kot sliko, ki jo lahko natisnete na letake, biltene ali označevalne table.
+- **Kopiraj povezavo** -- kopira URL za prijavo, da ga lahko prilepite na spletno mesto vaše cerkve, v e-pošto ali kamor koli na spletu.
+- **Prenesi PNG** -- prenese kodo QR kot sliko, ki jo lahko natisnete na letake, biltene ali označevalne table.
 
 :::tip
-Povezavo za registracijo dodajte na spletno stran vaše cerkve na stran »Načrtujte obisk« ali »Sem nov« , da se gostje lahko registrirajo, še preden pridejo.
+Povezavo za prijavo dodajte na stran „Načrtujte obisk“ ali „Sem nov“ na spletnem mestu vaše cerkve, da se gostje lahko prijavijo, še preden pridejo.
 :::
 
-### Kaj se zgodi, ko se gost prijavi
+### Kaj se zgodi po prijavi gosta
 
-B1 najprej poišče ljudi, ki so že v **Ljudeh**. Družinski član se ujema z obstoječo osebo, če ima natanko ena oseba enako ime in enako e-pošto ali telefonsko številko. Otrok, vnesen brez e-pošte ali telefona, se ujema po imenu znotraj ujemajočega se gospodinjstva. Ujemajoče se osebe se ponovno uporabijo takšne, kot so -- prijava nikoli ne spremeni njihovih podatkov ali statusa članstva -- vsak nov človek pa se pridruži ujemajočemu se gospodinjstvu.
+B1 najprej poišče osebe, ki so že v **Osebah**. Član družine se ujema z obstoječo osebo, če ima natanko ena oseba enako ime in enak e-poštni naslov ali telefonsko številko. Otrok, vnesen brez e-pošte ali telefona, se ujema po imenu znotraj gospodinjstva, ki se je ujemalo. Ujemajoče se osebe se ponovno uporabijo takšne, kot so -- prijava nikoli ne spremeni njihovih podatkov ali statusa članstva -- nove osebe pa se pridružijo ujemajočemu se gospodinjstvu.
 
-Če se nihče ne ujema, prijava ustvari novo gospodinjstvo, poimenovano po priimku glavnega kontakta, z zapisom osebe za vsakega družinskega člana. Vsi novi se dodajo v **Ljudi** s članskim statusom **Obiskovalec**, glavni kontakt pa je nosilec gospodinjstva.
+Če se nihče ne ujema, prijava ustvari novo gospodinjstvo, poimenovano po priimku glavnega stika, z zapisom osebe za vsakega člana družine. Vsi novi se dodajo v **Osebe** s statusom članstva **Obiskovalec**, glavni stik pa je vodja gospodinjstva.
 
-Ujemajoči se in novi ljudje se dodajo v skupino, ki ste jo izbrali (če v njej še niso), in se jim prisotnost zabeleži, če je to vklopljeno. Komentarji se shranijo kot opomba pri glavnem kontaktu.
+Ujemajoče se in nove osebe se dodajo v skupino, ki ste jo izbrali (če še niso v njej), in če je to vklopljeno, se jim zabeleži prisotnost. Komentarji se shranijo kot opomba pri glavnem stiku.
 
-Za samodejno sledenje dodajte [sprožilec poteka dela](../serving/workflows.md#triggers), na primer **Oseba · Ustvarjena** s pogojem *Članski status je Obiskovalec*, ali **Skupina · Član se je pridružil** za zgoraj izbrano skupino.
+Za samodejno spremljanje dodajte [sprožilec poteka dela](../serving/workflows.md#triggers), na primer **Oseba · Ustvarjena** s pogojem *Status članstva je Obiskovalec*, ali **Skupina · Član se je pridružil** za skupino, ki ste jo izbrali zgoraj.
 
 ## Kaj se zabeleži
 
-Vsaka prijava ustvari zapis o prisotnosti v B1 Admin. Te zapise lahko pregledate na strani [Prisotnost](tracking-attendance.md) in v [sejah vsake skupine](../groups/group-members.md), tako kot ročno vnesene prisotnosti. Podatki so prikazani enako, obe metodi pa se stekata v ista poročila.
+Vsaka prijava ustvari zapis o prisotnosti v B1 Admin. Te zapise si lahko ogledate na strani [Prisotnost](tracking-attendance.md) in v [sejah vsake skupine](../groups/group-members.md), tako kot prisotnost, vneseno ročno. Način prikaza podatkov je enak -- obe metodi se stekata v ista poročila.

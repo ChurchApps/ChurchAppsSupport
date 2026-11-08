@@ -377,16 +377,10 @@
     "message": "Dashboard ng pamamahala ng simbahan para sa mga tao, grupo, attendance, donasyon, at higit pa."
   },
   "homepage.products.b1website.title": {
-    "message": "B1 Website"
+    "message": "B1 App"
   },
   "homepage.products.b1website.description": {
     "message": "Pampublikong website ng simbahan at portal para sa mga miyembro."
-  },
-  "homepage.products.b1mobile.title": {
-    "message": "B1 Mobile"
-  },
-  "homepage.products.b1mobile.description": {
-    "message": "Lumang member app para sa iOS at Android, na pinalitan na ng B1.church web app."
   },
   "homepage.products.b1checkin.title": {
     "message": "B1 Check-in"

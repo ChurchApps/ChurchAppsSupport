@@ -1,88 +1,88 @@
 ---
-title: "Ghid: Configurarea înregistrării la evenimente"
-description: "Configurați în B1 Admin un formular de înscriere la eveniment pentru date și plăți opționale, îl integrați pe site și urmăriți înscrierile."
+title: "Guía: Configurar el registro de eventos"
+description: "Configure un formulario de registro de eventos en B1 Admin para recopilar datos de los asistentes y pagos opcionales, insértelo en el sitio web de su iglesia y haga seguimiento de las inscripciones."
 ---
 
-# Configurarea înregistrării la evenimente
+# Configurar el registro de eventos
 
 <div class="article-intro">
 
-Creați un formular de înregistrare la eveniment, colectați informațiile participanților și plățile opționale, inserați formularul pe site-ul bisericii și gestionați înscrierile pe măsură ce sosesc. Până la final, veți avea o pagină de înregistrare care poate fi distribuită pentru orice eveniment al bisericii.
+Cree un formulario de registro de eventos, recopile la información de los asistentes y pagos opcionales, insértelo en el sitio web de su iglesia y gestione las inscripciones a medida que llegan. Al terminar, tendrá una página de registro que puede compartir para cualquier evento de la iglesia.
 
 </div>
 
 :::info
-**Două moduri de a gestiona înregistrarea la evenimente:** Acest ghid acoperă **înregistrarea prin formulare**, care vă oferă control complet asupra câmpurilor personalizate și a colectării plăților. Pentru evenimente mai simple, în care trebuie doar să urmăriți cine participă, folosiți **înregistrarea nativă la eveniment**, integrată în calendar -- consultați [Crearea calendarelor](../calendars/creating-calendars.md#enabling-event-registration) pentru instrucțiuni de configurare. Înregistrarea nativă permite membrilor să se înscrie direct de pe [site-ul B1](../../b1-church/events/registering.md) și din [aplicația mobilă](../../b1-mobile/events/registering.md), cu urmărirea capacității, intervale de date și confirmări prin e-mail.
+**Dos formas de gestionar el registro de eventos:** Esta guía cubre el **registro mediante formularios**, que le da control total sobre los campos personalizados y la recopilación de pagos. Para eventos más sencillos en los que solo necesita saber quién asistirá, use el **registro nativo de eventos** integrado en el calendario; consulte [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration) para las instrucciones de configuración. El registro nativo permite a los miembros inscribirse directamente desde [B1.church o la aplicación B1](../../b1-church/events/registering.md), con control de capacidad, periodos de fechas y confirmaciones por correo electrónico.
 :::
 
 <div class="prereqs">
-<h4>Înainte de a începe</h4>
+<h4>Antes de empezar</h4>
 
-- Cont B1 Admin cu acces de administrator
-- Pentru colectarea plăților: [Stripe trebuie configurat](../donations/online-giving-setup.md) mai întâi
+- Una cuenta de B1 Admin con acceso de administrador
+- Para recopilar pagos: [Stripe debe estar configurado](../donations/online-giving-setup.md) primero
 
 </div>
 
-## Pasul 1: Creați un formular independent
+## Paso 1: Crear un formulario independiente
 
-Formularele „Stand Alone” au propriul URL public, accesibil oricui -- ideale pentru înregistrarea la evenimente.
+Los formularios independientes tienen su propia URL pública a la que cualquiera puede acceder, lo que los hace ideales para el registro de eventos.
 
-Urmați ghidul [Crearea formularelor](../forms/creating-forms.md) pentru a:
+Siga la guía [Creating Forms](../forms/creating-forms.md) para:
 
-1. Accesa secțiunea Forms și a face clic pe Add Form
-2. Alege tipul „Stand Alone” -- acesta îi oferă formularului propriul URL public
-3. Denumiți formularul după eveniment (de exemplu, „Înregistrare la retragerea bărbaților”, „Înscriere VBS”)
+1. Ir a Forms y hacer clic en Add Form
+2. Elegir el tipo "Stand Alone": así su formulario tendrá su propia URL pública
+3. Ponerle el nombre del evento (por ejemplo, "Registro al retiro de hombres" o "Inscripción a la VBS")
 
-## Pasul 2: Adăugați întrebările
+## Paso 2: Añadir preguntas
 
-Construiți câmpurile de care aveți nevoie pentru a colecta informațiile de la participanți.
+Configure los campos que necesita recopilar de los inscritos.
 
-Urmați ghidul [Crearea formularelor](../forms/creating-forms.md#adding-questions) pentru a adăuga întrebările:
+Siga la guía [Creating Forms](../forms/creating-forms.md#adding-questions) para añadir sus preguntas:
 
-1. Mergeți la fila Questions și adăugați câmpuri pentru informațiile necesare: nume, e-mail, telefon, restricții alimentare, mărimea tricoului, persoană de contact în caz de urgență etc.
-2. Folosiți Multiple Choice pentru opțiuni precum preferințele pentru masă sau alegerea sesiunilor
+1. Vaya a la pestaña Questions y añada campos para la información que necesita: nombre, correo electrónico, teléfono, restricciones alimentarias, talla de camiseta, contacto de emergencia, etc.
+2. Use Multiple Choice para opciones como preferencias de comida o selección de sesiones
 
 :::warning
-Tipul de câmp Payment necesită configurarea Stripe. Dacă nu ați configurat încă donațiile online, consultați [Configurarea donațiilor online](../donations/online-giving-setup.md) înainte de a adăuga câmpuri de plată.
+El tipo de campo Payment requiere que Stripe esté configurado. Si todavía no ha configurado las donaciones en línea, consulte [Online Giving Setup](../donations/online-giving-setup.md) antes de añadir campos de pago.
 :::
 
-## Pasul 3: Configurați setările formularului
+## Paso 3: Configurar los ajustes del formulario
 
-Controlați când și cum este disponibil formularul de înregistrare.
+Controle cuándo y cómo está disponible su formulario de registro.
 
-1. Setați datele de disponibilitate dacă înregistrarea trebuie să fie deschisă doar pentru o perioadă limitată
-2. Copiați URL-ul public -- îl puteți distribui direct
-3. Adăugați membri ai formularului cu rolurile Admin sau View Only pentru a ajuta la gestionarea înscrierilor
+1. Establezca las fechas de disponibilidad si el registro solo debe estar abierto durante un periodo limitado
+2. Copie la URL pública: puede compartirla directamente
+3. Añada miembros del formulario con los roles Admin o View Only para ayudar a gestionar las inscripciones
 
-## Pasul 4: Inserați formularul pe site-ul dvs.
+## Paso 4: Insertar en su sitio web
 
-Faceți ca formularul de înregistrare să fie ușor de găsit adăugându-l pe site-ul bisericii.
+Haga que el formulario de registro sea fácil de encontrar añadiéndolo al sitio web de su iglesia.
 
-Urmați ghidul [Gestionarea paginilor](../website/managing-pages.md) pentru a:
+Siga la guía [Managing Pages](../website/managing-pages.md) para:
 
-1. În editorul site-ului B1, adăugați o secțiune nouă la o pagină și selectați elementul Form
-2. Alegeți formularul de înregistrare din listă
+1. En el editor de su sitio web de B1, añada una nueva sección a una página y seleccione el elemento Form
+2. Elija su formulario de registro de la lista
 
 :::tip
-Distribuiți și URL-ul independent prin e-mail, rețele sociale și buletinele bisericii -- cu cât apare în mai multe locuri, cu atât veți primi mai multe înscrieri.
+Comparta también la URL independiente por correo electrónico, redes sociales y boletines de la iglesia: cuanto más visible sea, más inscripciones recibirá.
 :::
 
-## Pasul 5: Gestionați înscrierile
+## Paso 5: Gestionar las inscripciones
 
-Urmăriți înregistrările pe măsură ce sosesc și exportați datele atunci când aveți nevoie.
+Haga seguimiento de los registros a medida que llegan y exporte los datos cuando lo necesite.
 
-Urmați ghidul [Gestionarea înscrierilor](../forms/managing-submissions.md) pentru a:
+Siga la guía [Managing Submissions](../forms/managing-submissions.md) para:
 
-1. Verifica răspunsurile pe măsură ce sosesc, în fila Submissions
-2. Exporta în format CSV pentru tabele, urmărirea numărului de participanți sau pentru a le trimite coordonatorilor evenimentului
+1. Revisar las respuestas a medida que llegan en la pestaña Submissions
+2. Exportar a CSV para hojas de cálculo, control del número de asistentes o para compartirlas con los coordinadores del evento
 
-## Gata!
+## ¡Listo!
 
-Înregistrarea dvs. la eveniment este activă. Distribuiți linkul, inserați-l pe site-ul bisericii și urmăriți înscrierile din B1 Admin. După încheierea evenimentului, exportați lista finală pentru evidențele dvs.
+Su registro de evento ya está activo. Comparta el enlace, insértelo en su sitio web y haga seguimiento de las inscripciones desde B1 Admin. Cuando termine el evento, exporte la lista final para sus archivos.
 
-## Articole conexe
+## Artículos relacionados
 
-- [Crearea formularelor](../forms/creating-forms.md) — construiți formulare cu diferite tipuri de câmpuri
-- [Gestionarea înscrierilor](../forms/managing-submissions.md) — verificați și exportați răspunsurile la formulare
-- [Gestionarea paginilor](../website/managing-pages.md) — inserați formulare pe site-ul dvs.
-- [Configurarea donațiilor online](../donations/online-giving-setup.md) — necesar pentru câmpurile de plată
+- [Creating Forms](../forms/creating-forms.md): cree formularios con distintos tipos de campos
+- [Managing Submissions](../forms/managing-submissions.md): revise y exporte las respuestas de los formularios
+- [Managing Pages](../website/managing-pages.md): inserte formularios en su sitio web
+- [Online Giving Setup](../donations/online-giving-setup.md): necesario para los campos de pago

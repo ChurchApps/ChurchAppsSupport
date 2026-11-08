@@ -1,19 +1,19 @@
 ---
 title: "Sakhiwo"
-description: "Emamephu wesistimu ekhombisa kutsi kunikela, kungena, tisaziso, nemawebhusayithi tisebenta kanjani ku-B1 Admin, B1.church, ne-Api."
+description: "Tinkhathi letinkhulu temasistimu letikhombisa kutsi kunikwa, kuhlola kutfola, tisaziso kanye nemawebhusayithi asebenta kanjani kulo lonkhe i-B1 Admin, i-B1.church, kanye ne-Api ngaphambi kutsi utishintse."
 ---
 
 # Sakhiwo
 
 <div class="article-intro">
 
-Lamakhasi ayimephu yeluhlelo lendlula ema-repository lamanyenti: achaza indlela luhlelo lolusemcoka lwe-ChurchApps lusebenta ngayo kusukela ekucaleni kuze kuyewufika ekugcineni — kuwo onkhe ema-app, ema-module e-API, kanye netincwadzi letabelwana ngato — kunekutsi achaze indlela lolunye luhlungu lulungiselelwa ngayo. Fundza lamakhasi ngembi kwekushintja kutiphatsa kweluhlelo; fundza [Kulungiselela](../setup/index.md) kute utfole luhlungu luchubeka nekusebenta kanye [nengxenye ye-API](../api/index.md) kutfola imininingwane leyengcile yema-endpoint.
+Lamakhasi ngemamephu etinkhathi letinkhulu temasistimu: achaza kutsi sistimu yeChurchApps lebalulekile isebenta kanjani kusukela kuleliphelile kuye kwelinye, kulo lonkhe ema-app, emamodyuli e-API, kanye netilabhulari letitsatselwako, kunekutsi achaze kutsi liphrojekthi lilinye lilungiswa kanjani. Lifundze ngaphambi kutsi ushintse indlela sistimu lesebenta ngayo; futsi lifundze [Setup](../setup/index.md) kuze uvule liphrojekthi, kanye nalo [Sigaba se-API](../api/index.md) kuze utfole tinhlobo temaendpoint.
 
 </div>
 
-## Luhlelo lonkhe ngekubuka kokukhulu
+## Lisistimu ngekubuka kwekucala
 
-ChurchApps yinhlanganisela yema-repository lacishe abe ngu-20 latiphetse (akusiwo i-monorepo). Ema-app etisebenti akhuluma nelicembu lelincane lwema-backend API ngeHTTPS ne-WebSocket, futsi abelane ngekhodi ngema-package e-npm laphumelela ngaphasi kwesikhala se-`@churchapps`.
+I-ChurchApps ine-~20 yema-repo lazimele (hhayi i-monorepo). Ema-client apps akhuluma nesetfu lesincane lama-API asekelwe ngaku-HTTPS ne-WebSocket, futsi abelane ikhodi ngetinhlelo te-npm letikhishwe ngaphansi kwe-scope `@churchapps`.
 
 ```
 ┌────────────────────────────────┐            ┌──────────────────────────────────────────────┐
@@ -23,7 +23,7 @@ ChurchApps yinhlanganisela yema-repository lacishe abe ngu-20 latiphetse (akusiw
 │  B1App      member portal +    │ ─────────▶ │   giving        messaging     doing          │
 │             church websites    │            │                                              │
 │  B1Checkin  check-in kiosk     │ ◀───WS───▶ │   one MySQL database per module (6 total)    │
-│  B1Mobile   (maintenance-only) │            └──────────────────────────────────────────────┘
+│                                │            └──────────────────────────────────────────────┘
 │  FreePlay   TV content player  │            ┌──────────────────────────────────────────────┐
 └───────────────┬────────────────┘            │  LessonsApi — Lessons.church backend         │
                 │                             └──────────────────────────────────────────────┘
@@ -32,27 +32,38 @@ ChurchApps yinhlanganisela yema-repository lacishe abe ngu-20 latiphetse (akusiw
    helpers (cross-app interfaces) · apphelper (React components) · apihelper (Express/server utilities)
 ```
 
-Imitsetfo lemibili yesakhiwo ibumba konkhe lokubhaliwe kulesigaba:
+Imitfetfo lemibili yakha konkhe lokubhalwe kuleligceke:
 
-1. **Ema-module ahlukene ngakodvwana.** Nguleyo naleyo module ye-Api inematimba wayo we-database kanye netindzawo tayo; letinye tema-module nema-app afinyelela kuloludzaba kuphela ngendlela yema-endpoint e-REST awo. Bona [Sakhiwo se-Module](../api/module-structure.md).
-2. **Ikhodi lebelwanako ihanjiswa njengema-package e-npm.** Ema-app akangeni ekhodini lawelinye; nome ngabe yini lesetjentiswa kabili idlula emkhawulweni wema-repository nga`@churchapps/helpers`, `@churchapps/apphelper`, nome `@churchapps/apihelper`. Bona [Tincwadzi Letabelwanako](../shared-libraries/index.md).
+1. **Emamodyuli ayahlukaniswa.** Imodyuli ngayinye ye-Api inedatabase yayo netitebulo tayo; emanye emamodyuli nema-app atfola kudatha yayo kuphela ngema-endpoint e-REST. Bheka [Module Structure](../api/module-structure.md).
+2. **Ikhodi yekwabelana itfunyelwa njengetinhlelo te-npm.** Ema-app awukaze angenise ikhodi yemunye. Lokuphindvwa kwelinye lichapha emakhasi e-repo ngetulu kwe-`@churchapps/helpers`, `@churchapps/apphelper`, noma `@churchapps/apihelper`. Bheka [Shared Libraries](../shared-libraries/index.md).
 
-## Timephu teluhlelo
+## Tinkhathi temasistimu
 
-| Likhasi | Loku lakumbombayo | Lokusakateka kuko |
+| Likhasi | Lokuhlanganisa | Lihlanganisa |
 |------|----------------|-------|
-| [Tatiso Netikhumbuto](./notifications.md) | Indlela nome ngabe yini letjela umuntfu ngalokutsite: iminyango lemibili yekutfumela, luketjani lwekwenyusa kumakenali, kanye nesento sesikhumbuto | Api (messaging), B1Admin, B1App |
-| [Sakhiwo Se-Realtime](../realtime.md) | Luhlelo lwekuhambisa lolusetjentiswa yi-WebSocket lolusemuva kwengxoxo, kubonakala kutsi umuntfu ukhona, kanye nekuhanjiswa kwelwati ngekhatsi kwe-app | Api (messaging), onkhe ema-web app |
-| [Ticelo Te-Push Kuwebhu](../web-push.md) | Umakenali we-push webhusayithi: emakhiya e-VAPID, kubekwa kwekubhalisela, kuhanjiswa | Api (messaging), onkhe ema-web app |
-| [Kuniketa](./giving.md) | Bahlinzeki bekukhokha nema-gateway, tinhlelo tekunikela, tinhlobo/emabhentji, ne-webhook tema-gateway | Api (giving), apphelper, B1App, B1Admin |
-| [Kubhalisa Kwemicimbi](./registrations.md) | Simo semabhizinisi wekubhalisa: tinhlobo tebantfu labatakuya, kukhetfwa, emakhodi ekwehlisa intengo, kukhokha ngendlela ye-gateway yekuniketa, kanye nelulu lwekulinda | Api (content + giving), B1App, B1Admin |
-| [Kungena/Kuphuma](./check-ins.md) | Kungena ngekutimela ne-kiosk, imodeli yelwati lekuya, kucondzisa emakamelo, luhlu lwekuvikela bantfwana, kucindzetela ema-label | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
-| [Sakhi Sewebhusayithi](./website-builder.md) | Sihlahla samakhasi/tigaba/tincenye, sivumelwano setinhlobo tencenye kanye netisebenti letitibonakalisako, ibhulogi, emakhasi lavikelekile, i-SEO, kanye nekwakha nge-AI | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
-| [Kucondzisa Kwewebhusayithi Ne-Multi-Site](./websites.md) | Indlela sicelo lesifika kubandla nesayithi lelitsite kucondziswa ngayo, imodeli yelwati ye-multi-site `siteId`, kanye ne-Caddy edge yendzawo letitsite | B1App, Api (membership + content), B1Admin |
-| [Kuhlanganiswa](./integrations.md) | Indzawo yekwenaba: OAuth, emakhiya e-API, ema-webhook, bahlinzeki belwati, ne-MCP | Api, tincwadzi letabelwanako, ema-app langaphandle |
-| [Luhlu Lwekuhlolwa Netibatje Letingasakateki](./audit-log.md) | Kuhlola lokusukela ekucaleni kwaso sonkhe sichinto lesishintjako endzaweni yekulawula kwe-controller, kanye nendzawo yesibatje leyenta ekungeniseni nemitsetfo leminyenti kubuye kwentiwe emuva | Api (onkhe ema-module), B1Admin, B1Transfer |
-| [MinistryStuff](./ministrystuff.md) | Insita lekhokhelwako yekugcina lwati ne-credit yema-message: buchwepheshe bekutivela nge-JWT lebelwanako, i-service-key S2S, tindzawo tekuhlinzekwa kwema-message nekugcina, kukhokha nge-Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), tincwadzi te-texting/apihelper, B1Admin |
+| [Tisaziso Netikhumbuzo](./notifications.md) | Kutsi kukhona lokutsatsa umuntfu umtjela kantsi: tindlela letimbili tekuphume lemilayeto, kanye nekuhamba kwemakhanali kuya ekhatsimu, kanye nenjini yetikhumbuzo | Api (messaging), B1Admin, B1App |
+| [Sakhiwo Sesikhatsi Sangempela](../realtime.md) | Luhlelo lwekuletfwa kwe-WebSocket lolusekela i-chat, kubonakala kwemuntfu lokhona, kanye nekulethwa kwesicelo ngaphakathi kwe-app | Api (messaging), tonkhe ema-web apps |
+| [Tisaziso Te-Web Push](../web-push.md) | Likhalo lesiphequluli lelithumela tisaziso: tikhiyi te-VAPID, kugcinwa kwemabhalisi, kulethwa | Api (messaging), tonkhe ema-web apps |
+| [Kupha](./giving.md) | Bahlinzeki bekukhokha kanye nemagatsi, tinkambo tekupha, emafundo/emaqoqo, kanye ne-webhooks yemagatsi | Api (giving), apphelper, B1App, B1Admin |
+| [Kubhalisa Emicimbi](./registrations.md) | Imodeli yekubhalisa lokukhokhelwako: tinhlobo tabahlanganyeli, tikhetho, makhodi wekuncishiswa, tikhokhelo ngemagatsi ekupheni, kanye nelucwecwe lolulindzele | Api (content + giving), B1App, B1Admin |
+| [Ukuchekwa](./check-ins.md) | Ikhiyosk nokuchekwa ngekwakho, imodeli yekutfola, kuhlelwa kwemakamelo, lisendvo lekuvikela bantfwana, kushicilelwa kwemalebula | B1Checkin, B1App, B1Admin, Api (attendance + membership) |
+| [Umakhi Wewebhusayithi](./website-builder.md) | Sihlahla sekhasi/sigaba/sakhiwo, sivumelwano sematiko ekuhlanganisa kanye nemarenderer, i-blog, emakhasi lafinyelelwa ngekuvunyelwa, SEO, kanye nekukhiqizwa nge-AI | Api (content), AskApi, helpers/apphelper, B1Admin, B1App |
+| [Kuhamba Kwewebhusayithi & Emasayithi Amanyenti](./websites.md) | Indlela kucelo lufika ngayo kubandla nakusayithi lelitsite, imodeli yedatha ye-`siteId` yemasayithi amanyenti, kanye ne-edge ye-Caddy yetidomeyini letikhethekile | B1App, Api (membership + content), B1Admin |
+| [Ukuhlanganiswa](./integrations.md) | Indzawo yekunwetsa: OAuth, timkhiyo te-API, ama-webhook, bahlinzeki bekuqukethwa, MCP | Api, tilabhulari letitsatselwako, ema-app langaphandle |
+| [Lilogi Yekuhlolwa & Emaqoqo Langahlehliswa](./audit-log.md) | Kuhlolwa lokuvulekile kwenguquko yonkhe esikhungweni se-controller, kanye nelucwecwe lemaqoqo lenta kutsi kungenisa nemisebenti lemikhulu ihlehliseke | Api (tonkhe emamodyuli), B1Admin, B1Transfer |
+| [I-MinistryStuff](./ministrystuff.md) | Inkhonzo lekhokhelwako yekugcina kanye nemakhredithi wemilayeto: kubonakala nge-JWT lelabelwanako, service-key ye-S2S, tindlela tebahlinzeki bemilayeto kanye nekugcinwa, kukhokhelwa nge-Stripe | MinistryStuffApi, MinistryStuffWeb, Api (content + messaging), tiphakheji te-texting/apihelper, B1Admin |
+| [Gcina Ngesitoreji Sakho](./byos-storage.md) | Emabandla axhuma i-Google Drive, Dropbox, OneDrive noma i-bucket leshaywa ye-S3 kuze alayishe lukhulu ngaphaya kwe-100MB lemahhala: kuxhuma nge-OAuth, tindlela tekulayisha ngamunye womhlinzeki, kanye nekuphendvulwa kwekulanda lokuvulekile | Api (content + membership), tiphakheji te-helpers/apphelper, B1Admin, B1App |
+| [Ikhomoni Yekuqukethwa](./commons.md) | Umphakamo wetimphahla kanye nemasiko ekuthumela lokusekelwe kuqukethwa lokukhiqizwa ngabasebenzisi emikhakheni leminyene, kanye nelucwecwe lolulodwa lekuhlola lolulawulwa ngabasebenti kuphela kuServer Admin ye-B1Admin | Api (commons module), B1Admin, WorshipCommons, Lessons.church, FreeShow |
 
 :::tip
-Nangabe kunenshintjo lokushintja indlela lolunye lwaletinhlelo lusebenta ngayo — hhayi nje likhasi elilodvwa ngekhatsi kwelinye i-app — imephu lefanako yeluhlelo lapha kufanele ibuyekezwe kulomsebenti lawufananako. Loko kugcina lesigaba sitsembekile njengesikhundla sekucala sebafaki mtimba labasha.
+Lapho kushintsha kuchamtsa indlela sistimu lenye yalesi isebenta ngayo, hhayi nje ikhasi lelilodvwa ngaphakathi kwe-app, imephu yalesistimu lefanelekile lapha kufanele ivuselelwe ngesikhatsi sinye nalelo tshintsho. Lokho kugcina lesigaba sithembeka njengendzawo yekucala yabantfu labasha labaphatsene nalokwakhiwa.
 :::
+
+## Tinhlongo
+
+Lamadokhumenti achaza umsebenti lohlongotelwe lokuhlolwa, hhayi umtsamo lesetfulo lesikhona.
+
+| Inhlongo | Lokuhlanganisa |
+|---|---|
+| [Twilio BYOK](./twilio-byok-proposal.md) | I-akhawunti lenikwe ibandla, emakhiye, inkhonzo kanye nenombolo yelucingo; kubanga kwemsebenti, kuvuma, kulethwa, kulinganisa, kanye nekuhlolwa kwekukhishwa |
+| [Umhlahlandlela wekungenisa ibandla le-Twilio](./twilio-byok-onboarding-draft.md) | Tisetelo letiphakanyisiwe tefomu lekubhalisa le-B1, tibonelo tetikhankaso letichaza ibandla, kanye nemashekhi wekuvuma nekusebenta |

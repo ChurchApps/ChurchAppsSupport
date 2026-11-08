@@ -1,58 +1,57 @@
 ---
 title: "Furnizori terți"
-description: "Adăugați un feed extern de curriculum în Lessons.church din pagina Third-Party și vizualizați, actualizați sau eliminați conexiunile furnizorilor."
+description: "Adăugați un flux de curriculum în formatul Open Lesson Format pe pagina Furnizori externi din Lessons.church, apoi editați-l sau ștergeți-l, pentru ca biserica dumneavoastră să își poată programa lecțiile."
 ---
 
 # Furnizori terți
 
 <div class="article-intro">
 
-Lessons.church acceptă furnizori externi de curriculum prin Open Lesson Format. Aceasta înseamnă că puteți importa conținut de la alte organizații și îl puteți pune la dispoziție alături de biblioteca integrată, oferind bisericilor acces la curriculum din mai multe surse, într-un singur loc.
+Lessons.church acceptă furnizori externi de curriculum prin formatul Open Lesson Format. Aceasta înseamnă că biserica dumneavoastră se poate conecta la curriculum-ul altor organizații și îl poate programa pentru sălile de clasă, chiar lângă biblioteca integrată, astfel încât echipa dumneavoastră să aibă curriculum din mai multe surse într-un singur loc.
 
 </div>
 
 <div class="prereqs">
 <h4>Înainte de a începe</h4>
 
-- Aveți permisiuni de administrator pentru Lessons.church (consultați [Prezentarea generală a administrării](./index.md))
-- Obțineți URL-ul feed-ului de la furnizorul extern pe care doriți să îl conectați
+- Conectați-vă la Lessons.church cu un cont care poate gestiona programele sălilor de clasă ale bisericii dumneavoastră
+- Obțineți adresa URL a fluxului de la furnizorul extern pe care doriți să îl conectați. Aceasta trebuie să returneze lecții în formatul [Open Lesson Format](./open-lesson-format.md)
 
 </div>
 
 ## Adăugarea unui furnizor
 
-1. Navigați la zona **Admin**.
-2. Deschideți pagina **Furnizori terți**.
-3. Faceți clic pe **Adaugă furnizor** (sau pe butonul echivalent pentru adăugarea unei conexiuni noi).
-4. Introduceți **URL-ul feed-ului** furnizorului. Acesta este URL-ul la care furnizorul publică datele curriculumului în Open Lesson Format.
-5. Salvați conexiunea.
+1. Faceți clic pe **External Providers** în meniul de navigare din Lessons.church. Se deschide pagina **External Lesson Providers**.
+2. Faceți clic pe **Add Provider**. Dacă nu ați adăugat încă niciun furnizor, faceți clic în schimb pe **Add First Provider**.
+3. Introduceți un **Provider Name**. Acesta este numele pe care îl va vedea echipa dumneavoastră la alegerea furnizorului.
+4. Introduceți **API URL**. Aceasta este adresa la care furnizorul își publică curriculum-ul în formatul Open Lesson Format.
+5. Faceți clic pe **Save**.
 
-După salvare, Lessons.church va importa conținutul furnizorului. Programele, studiile și lecțiile acestuia vor apărea în biblioteca de curriculum, alături de propriul dvs. conținut.
+Furnizorul este adăugat doar pentru biserica dumneavoastră. Apoi apare ca opțiune sub **Provider** atunci când [programați o lecție](../classrooms/scheduling-lessons.md) pentru o sală de clasă și sub **Source** atunci când creați un [plan anual](./managing-year-plans.md).
 
 ## Gestionarea furnizorilor
 
-De pe pagina **Furnizori terți**, puteți vedea toți furnizorii conectați. Pentru fiecare furnizor, puteți:
+Pagina **External Lesson Providers** listează fiecare furnizor adăugat de biserica dumneavoastră. Pentru a modifica un furnizor:
 
-- **Vizualiza** conținutul importat, pentru a confirma că a fost preluat corect.
-- **Actualiza** URL-ul feed-ului, dacă furnizorul își schimbă adresa.
-- **Elimina** un furnizor, dacă nu mai doriți să includeți conținutul acestuia.
+- **Editare** -- Faceți clic pe pictograma **Edit provider** (creion), modificați **Provider Name** sau **API URL**, apoi faceți clic pe **Save**.
+- **Ștergere** -- Faceți clic pe pictograma **Edit provider**, apoi faceți clic pe pictograma de ștergere (coș de gunoi) și confirmați.
 
-## Ce este Open Lesson Format?
+## Ce este formatul Open Lesson Format?
 
-Open Lesson Format este o schemă standardizată care descrie conținutul curriculumului -- programe, studii, lecții, locații, secțiuni și acțiuni -- într-un mod structurat. Orice organizație care publică un conținut în acest format poate fi adăugată ca furnizor în Lessons.church.
+Open Lesson Format este o schemă standardizată care descrie conținutul de curriculum -- programe, studii, lecții, locații, secțiuni și acțiuni -- într-un mod structurat. Orice organizație care își publică conținutul folosind acest format poate fi adăugată ca furnizor în Lessons.church.
 
-Dacă sunteți un furnizor de conținut interesat să vă puneți curriculumul la dispoziție prin Lessons.church, puteți găsi documentația completă a schemei în ghidul [Open Lesson Format](./open-lesson-format.md).
+Dacă sunteți un furnizor de conținut interesat să vă puneți curriculum-ul la dispoziție prin Lessons.church, puteți găsi documentația completă a schemei în ghidul [Open Lesson Format](./open-lesson-format.md).
 
 ## De ce să folosiți furnizori terți?
 
-- **Mai multe opțiuni pentru biserici** -- Bisericile pot consulta o varietate mai mare de curriculum, fără să părăsească platforma.
-- **Totul într-un singur loc** -- Voluntarii și coordonatorii nu trebuie să viziteze mai multe site-uri pentru a găsi și programa lecții.
-- **Configurare simplă** -- Adăugarea unui furnizor necesită doar un URL de feed. Nu este nevoie de introducere manuală a datelor sau de încărcare de fișiere.
+- **Mai multe opțiuni pentru biserici** -- Bisericile pot răsfoi o gamă mai largă de curriculum fără să părăsească platforma.
+- **Un singur loc pentru tot** -- Voluntarii și coordonatorii nu trebuie să viziteze mai multe site-uri pentru a găsi și programa lecții.
+- **Configurare simplă** -- Adăugarea unui furnizor necesită doar un nume și o adresă URL a fluxului. Nu există introducere manuală de date și nici încărcare de fișiere.
 
 :::info
-Conținutul terților este gestionat de furnizorul extern. Dacă observați conținut lipsă sau învechit de la un furnizor, problema poate necesita rezolvare din partea acestuia.
+Conținutul terț este gestionat de furnizorul extern. Dacă observați conținut lipsă sau învechit de la un furnizor, problema poate trebui rezolvată de partea lui.
 :::
 
 :::tip
-Pentru configurarea furnizorilor externi la nivel de biserică (nu la nivel de administrator), consultați pagina [Furnizori externi](../browsing/external-providers.md) din secțiunea Navigare.
+Pentru a afla cum arată lecțiile unui furnizor extern odată programate, consultați [Furnizori externi](../browsing/external-providers.md) din secțiunea Browsing.
 :::

@@ -1,41 +1,41 @@
 ---
-title: "Prilagođavanje"
-description: "Jak ukrywać sekcje, role lub akcje w lekcji Lessons.church i zmieniać kolejność treści, dla jednej sali lub wszystkich sal w kościele."
+title: "Dostosowywanie"
+description: "Dowiedz się, jak ukrywać sekcje, role lub działania w lekcji Lessons.church oraz zmieniać kolejność treści – dla jednej klasy lub dla wszystkich klas w Twoim kościele."
 ---
 
-# Prilagođavanje
+# Dostosowywanie
 
 <div class="article-intro">
 
-Lessons.church nudi biblioteku gotovog sadržaja za lekcije, ali svaka crkva je drugačija. Funkcije prilagođavanja omogućavaju da sadržaj lekcija prilagodite vašim konkretnim učionicama, načinu podučavanja i uzrasnim grupama, tako da vaši volonteri vide samo ono što je relevantno za njih.
+Lessons.church udostępnia bibliotekę gotowych materiałów lekcyjnych, ale każdy kościół jest inny. Funkcje dostosowywania pozwalają dopasować treść lekcji do konkretnych klas, stylu nauczania i grup wiekowych, dzięki czemu wolontariusze widzą tylko to, co jest dla nich istotne.
 
 </div>
 
-## Zašto prilagođavati?
+## Dlaczego warto dostosowywać?
 
-Sadržaj lekcija na Lessons.church je osmišljen da bude fleksibilan. Jedna lekcija može uključivati delove za više uzrasnih grupa, opcionalne aktivnosti ili uloge koje se ne odnose na svaku učionicu. Umesto da od volontera tražite da sami preskaču delove koji nisu za njih, lekciju možete prilagoditi tako da vide samo ono što im je potrebno.
+Treści lekcji w Lessons.church są projektowane z myślą o elastyczności. Pojedyncza lekcja może zawierać sekcje dla kilku grup wiekowych, opcjonalne aktywności lub role, które nie dotyczą każdej klasy. Zamiast prosić wolontariuszy, by sami pomijali fragmenty, które ich nie dotyczą, możesz dostosować lekcję tak, aby widzieli wyłącznie to, co jest dla nich istotne.
 
-Na primer, lekcija može sadržati aktivnost izrade koja odlično funkcioniše za predškolce, ali nije pogodna za vaš petak razred. Uz prilagođavanje, taj deo možete sakriti za stariju grupu, a zadržati ga za mlađu.
+Na przykład lekcja może zawierać zajęcia plastyczne, które świetnie sprawdzą się u przedszkolaków, ale nie będą odpowiednie dla klasy piątej. Dzięki dostosowywaniu możesz ukryć tę sekcję dla starszej grupy, pozostawiając ją dla młodszej.
 
-## Šta možete prilagoditi
+## Co możesz dostosować?
 
-- **Ukloniti delove** -- Sakrijte cele delove lekcije koji se ne odnose na određenu učionicu ili uzrasnu grupu.
-- **Sakriti uloge ili radnje** -- Uklonite pojedinačne uloge ili radnje unutar dela ako nisu potrebne.
-- **Preurediti sadržaj** -- Promenite redosled delova i radnji tako da odgovara toku koji želite u svojoj učionici.
+- **Usuwanie sekcji** -- Usuń całe sekcje lekcji, które nie dotyczą danej klasy lub grupy wiekowej.
+- **Usuwanie ról lub działań** -- Usuń pojedyncze role lub działania w obrębie sekcji, jeśli nie są potrzebne.
+- **Zmiana kolejności treści** -- Przestawiaj sekcje i działania tak, aby odpowiadały przebiegowi zajęć, który preferujesz w swojej klasie.
 
-## Za određenu učionicu ili za sve
+## Dla konkretnej klasy czy dla wszystkich?
 
-Kada sačuvate prilagođavanje, birate koliko široko se ono primenjuje:
+Za każdym razem, gdy wprowadzasz zmianę, wybierasz, jak szeroko ma ona obowiązywać:
 
-- **Jedna učionica** -- Prilagođavanje utiče samo na trenutnu učionicu. Ostale učionice vide originalni sadržaj.
-- **Sve učionice** -- Prilagođavanje se primenjuje na svaku učionicu u vašoj crkvi.
+- **Ta klasa** -- Zmiana dotyczy tylko bieżącej klasy. Pozostałe klasy widzą oryginalną treść.
+- **Wszystkie klasy** -- Zmiana obowiązuje we wszystkich klasach w Twoim kościele.
 
-Ova fleksibilnost znači da možete postaviti različite prikaze iste lekcije za različite uzrasne grupe ili napraviti izmenu koja se odmah primenjuje svuda.
+Ta elastyczność pozwala przygotować różne wersje tej samej lekcji dla różnych grup wiekowych lub wprowadzić zmianę, która obowiązuje od razu wszędzie.
 
 :::tip
-Ako prvi put koristite prilagođavanje, počnite s jednom učionicom da vidite kako funkcioniše, pre nego što primenite izmene na sve učionice.
+Jeśli dopiero zaczynasz korzystać z dostosowywania, zacznij od jednej klasy, aby zobaczyć, jak to działa, zanim zastosujesz zmiany we wszystkich klasach.
 :::
 
-## Sledeći koraci
+## Następne kroki
 
-- [Prilagođavanje lekcija](./customizing-lessons.md) -- Pratite vodič korak po korak da prilagodite prvu lekciju
+- [Dostosowywanie lekcji](./customizing-lessons.md) -- Przejdź przez instrukcję krok po kroku, aby dostosować swoją pierwszą lekcję

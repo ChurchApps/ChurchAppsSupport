@@ -1,58 +1,60 @@
 ---
 title: "Fournisseurs externes"
-description: "Découvrez comment les fournisseurs tiers ajoutent leur contenu à Lessons.church grâce à l'Open Lesson Format, et comment en connecter un depuis le portail."
+description: "Comment les fournisseurs de programmes pédagogiques tiers partagent leurs leçons grâce au format Open Lesson Format, et comment votre église en ajoute un dans Lessons.church et planifie ses leçons."
 ---
 
 # Fournisseurs externes
 
 <div class="article-intro">
 
-Lessons.church ne se limite pas à son propre programme d'enseignement. Des fournisseurs de programmes tiers peuvent publier leur contenu via l'**Open Lesson Format**, et ce contenu apparaît aux côtés des programmes intégrés de Lessons.church pour une expérience de navigation unifiée.
+Lessons.church ne se limite pas à son propre programme pédagogique. Des fournisseurs tiers de programmes pédagogiques peuvent publier leur contenu au format **Open Lesson Format**. Une fois que votre église a ajouté un fournisseur, vous pouvez planifier ses leçons pour vos classes, directement à côté de la bibliothèque de Lessons.church.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Comprenez comment le contenu est organisé en lisant [Programmes et études](./programs-and-studies.md)
-- Pour ajouter une connexion à un fournisseur, vous avez besoin d'un [compte Lessons.church](../getting-started/creating-account.md) avec accès au portail de votre église
+- Familiarisez-vous avec l'organisation des contenus en lisant [Programmes et études](./programs-and-studies.md)
+- Pour ajouter une connexion à un fournisseur, vous devez disposer d'un [compte Lessons.church](../getting-started/creating-account.md) ayant accès aux horaires des classes de votre église
 
 </div>
 
-## Que sont les fournisseurs externes ?
+## Qu'est-ce qu'un fournisseur externe ?
 
-Un fournisseur externe est toute organisation qui publie un programme d'enseignement pour les églises en utilisant l'Open Lesson Format -- une norme qui permet de partager du contenu de leçons entre différentes plateformes. Lorsqu'un fournisseur met son contenu à disposition dans ce format, Lessons.church peut l'importer et l'afficher comme ses propres programmes.
+Un fournisseur externe est toute organisation qui publie un programme pédagogique d'église au format Open Lesson Format, une norme qui permet de partager le contenu des leçons entre plateformes. Lorsqu'un fournisseur met son contenu à disposition dans ce format, Lessons.church peut le lire et afficher ses leçons avec la même mise en page que ses propres leçons.
 
-Cela signifie que vous avez accès à une sélection plus large de programmes d'enseignement sans avoir à visiter plusieurs sites web.
-
-## Parcourir le contenu externe
-
-Le contenu des fournisseurs externes fonctionne exactement de la même manière que le contenu intégré :
-
-1. Les programmes des fournisseurs externes apparaissent sur la page d'accueil de Lessons.church aux côtés des autres programmes.
-2. Cliquez sur un **programme** pour voir ses études.
-3. Cliquez sur une **étude** pour voir ses leçons.
-4. Consultez les leçons avec la même mise en page -- sections, rôles, actions, vidéos et documents téléchargeables.
-
-Il n'y a pas de processus spécial ni de section séparée pour le contenu externe. Tout est intégré dans une bibliothèque unique pour faciliter la navigation.
+Vous avez ainsi accès à un choix plus large de programmes, sans avoir à consulter plusieurs sites web.
 
 ## Ajouter des connexions à des fournisseurs
 
-Si votre église utilise un fournisseur de programme qui prend en charge l'Open Lesson Format et que vous souhaitez que son contenu soit disponible dans votre portail Lessons.church :
+Si votre église utilise un fournisseur de programmes pédagogiques compatible avec le format Open Lesson Format :
 
 1. Connectez-vous à votre compte Lessons.church.
-2. Accédez à la page **Fournisseurs externes** dans le portail.
-3. Ajoutez l'URL de connexion du fournisseur externe.
-4. Leurs programmes et études deviendront disponibles pour que votre église puisse les parcourir, les planifier et les utiliser dans les salles de classe.
+2. Cliquez sur **Fournisseurs externes** dans la navigation.
+3. Cliquez sur **Ajouter un fournisseur**, saisissez un **Nom du fournisseur** et l'**URL de l'API** du fournisseur, puis cliquez sur **Enregistrer**.
+
+Consultez [Fournisseurs tiers](../admin/third-party-providers.md) pour connaître la procédure complète.
 
 :::info
-L'ajout d'une connexion à un fournisseur externe se fait via le portail Lessons.church et nécessite un compte connecté. Parcourir le contenu qui a déjà été ajouté par la plateforme ne nécessite pas de compte.
+Un fournisseur externe n'est ajouté que pour votre église. Ses programmes n'apparaissent ni sur la page d'accueil publique de Lessons.church ni dans les résultats de recherche.
+:::
+
+## Utiliser le contenu externe
+
+Une fois un fournisseur ajouté, ses programmes, études et leçons sont disponibles lors de la planification :
+
+1. Lorsque vous [ajoutez une leçon à l'horaire d'une classe](../classrooms/scheduling-lessons.md), choisissez le fournisseur sous **Fournisseur**.
+2. Sélectionnez le **Programme**, l'**Étude**, la **Leçon** et le **Lieu** de la même manière que pour une leçon de Lessons.church.
+3. Dans l'horaire de la classe, cliquez sur **Voir la leçon** sous une leçon externe planifiée pour l'ouvrir. Elle utilise la même mise en page que les leçons intégrées : sections, rôles, actions, vidéos et documents téléchargeables.
+
+:::note
+Les leçons des fournisseurs externes ne peuvent pas être [personnalisées](../customization/customizing-lessons.md). Seules les leçons de Lessons.church affichent le lien **Personnaliser**.
 :::
 
 ## Pour les créateurs de contenu
 
-Si vous êtes un éditeur de programmes d'enseignement intéressé par la mise à disposition de votre contenu sur Lessons.church, l'Open Lesson Format fournit un moyen standardisé de partager vos programmes, études et leçons. Contactez l'équipe de Lessons.church ou consultez la documentation développeur pour les détails d'intégration.
+Si vous êtes éditeur de programmes pédagogiques et souhaitez mettre votre contenu à disposition sur Lessons.church, le format Open Lesson Format vous offre une manière normalisée de partager vos programmes, études et leçons. Contactez l'équipe de Lessons.church ou consultez la documentation pour les développeurs pour obtenir les détails de l'intégration.
 
 :::tip
-Si vous êtes un administrateur gérant les flux de fournisseurs tiers au niveau de la plateforme, consultez [Fournisseurs tiers](../admin/third-party-providers.md) dans la section Administration.
+Pour obtenir des instructions pas à pas sur l'ajout, la modification et la suppression d'un fournisseur, consultez [Fournisseurs tiers](../admin/third-party-providers.md).
 :::

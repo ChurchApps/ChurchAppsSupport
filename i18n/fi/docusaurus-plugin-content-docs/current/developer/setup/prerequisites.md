@@ -1,29 +1,29 @@
 ---
 title: "Edellytykset"
-description: "Asenna Node.js, npm, Git ja alustakohtaiset työkalut ennen ChurchAppsin projektien (B1 Admin, Lessons.church, FreePlay, API) paikallista käyttöä."
+description: "Asenna Node.js, npm, Git ja alustakohtaiset työkalut ennen ChurchApps-projektien, kuten B1 Adminin, Lessons.churchin, FreePlayn tai API:n, paikallista kehittämistä."
 ---
 
 # Edellytykset
 
 <div class="article-intro">
 
-Tarvittavat työkalut riippuvat siitä, mitä projekteja aiot työstää. Tämä sivu luettelee kaiken tarvittavan ohjelmiston kehitysalueittain, yleisistä vaatimuksista alustakohtaisiin työkaluketjuihin.
+Tarvittavat työkalut riippuvat siitä, mihin projekteihin aiot osallistua. Tämä sivu luettelee kaikki vaadittavat ohjelmistot kehitysalueittain, yleisistä vaatimuksista alustakohtaisiin työkaluketjuihin.
 
 </div>
 
 <div class="prereqs">
 <h4>Ennen aloittamista</h4>
 
-- Tutustu [projektien yleiskatsaukseen](./project-overview.md), jotta voit päättää, mitä projekteja haluat työstää
-- Sinulla on oltava ylläpitäjän oikeudet kehityskoneellasi ohjelmistojen asentamiseksi
+- Tutustu [Projektin yleiskatsaukseen](./project-overview.md), jotta tiedät, mihin projekteihin haluat osallistua
+- Sinulla on oltava järjestelmänvalvojan oikeudet kehityskoneellasi ohjelmistojen asentamista varten
 
 </div>
 
 ## Kaikki projektit
 
-Nämä vaaditaan riippumatta siitä, mitä projektia työstät:
+Nämä vaaditaan riippumatta siitä, mihin projektiin osallistut:
 
-| Työkalu | Versio | Huomautukset |
+| Työkalu | Versio | Huomautuksia |
 |------|---------|-------|
 | **Node.js** | 20+ | Versio 22+ vaaditaan B1App- ja LessonsApp-sovelluksille (Next.js 16); 24+ vaaditaan Api-palvelulle |
 | **npm** | Tulee Node.js:n mukana | Käytetään pakettienhallintana kaikissa projekteissa |
@@ -35,48 +35,48 @@ Käytä Node-versionhallintaa, kuten [nvm](https://github.com/nvm-sh/nvm) (macOS
 
 ## Taustapalvelun (API) kehitys
 
-Jos aiot ajaa API-palvelun paikallisesti (demo-API-rajapintojen sijaan):
+Jos aiot ajaa API:n paikallisesti (sen sijaan, että käyttäisit demo-rajapintoja):
 
-| Työkalu | Versio | Huomautukset |
+| Työkalu | Versio | Huomautuksia |
 |------|---------|-------|
-| **MySQL** | 8.0+ | Jokainen API-moduuli käyttää omaa tietokantaansa |
+| **MySQL** | 8.0+ | Jokaisella API-moduulilla on oma tietokantansa |
 
-Tarvitset ydin-API:lle kuusi tietokantaa: `membership`, `attendance`, `content`, `giving`, `messaging` ja `doing`. API sisältää skriptejä skeeman alustamiseen -- katso [API:n paikallisen asennuksen](../api/local-setup.md) opas.
+Tarvitset kuusi tietokantaa ydin-API:lle: `membership`, `attendance`, `content`, `giving`, `messaging` ja `doing`. API sisältää skriptit skeeman alustamiseen -- katso [API:n paikallinen asennus](../api/local-setup.md) -opas.
 
-## Mobiilisovellusten kehitys
+## Mobiilisovelluskehitys
 
-B1Mobile-, B1Checkin-, LessonsScreen- tai muita React Native / Expo -sovelluksia varten:
+B1Checkin-, LessonsScreen- tai muille React Native / Expo -sovelluksille:
 
-| Työkalu | Versio | Huomautukset |
+| Työkalu | Versio | Huomautuksia |
 |------|---------|-------|
 | **Expo CLI** | Uusin | Asenna globaalisti: `npm install -g expo-cli` |
 | **Android Studio** | Uusin | Vaaditaan Android-kehitykseen (sisältää Android SDK:n) |
 | **Xcode** | Uusin | Vaaditaan iOS-kehitykseen (vain macOS) |
 
 :::info
-Voit käyttää Expo Go -sovellusta fyysisellä laitteella nopeaan testaukseen ilman Android Studiota tai Xcodea. Tuotantoversioiden rakentaminen vaatii kuitenkin natiivityökaluketjut.
+Voit käyttää Expo Go -sovellusta fyysisellä laitteella nopeaan testaukseen ilman Android Studiota tai Xcodea. Tuotantoversioiden rakentaminen vaatii kuitenkin alustakohtaiset työkaluketjut.
 :::
 
 ## FreeShow (työpöytäsovellus) -kehitys
 
-FreeShow vaatii lisäksi natiivit käännösriippuvuudet, koska se kääntää natiiveja Node-moduuleja (kuten `canvas`):
+FreeShow vaatii lisäksi natiiveja rakennusriippuvuuksia, koska se kääntää natiiveja Node-moduuleja (kuten `canvas`):
 
 ### Kaikki alustat
 
-| Työkalu | Versio | Huomautukset |
+| Työkalu | Versio | Huomautuksia |
 |------|---------|-------|
-| **Python** | 3.12 | `node-gyp` vaatii natiivimoduulien kääntämiseen |
+| **Python** | 3.12 | Vaaditaan `node-gyp`:n natiivimoduulien kääntämiseen |
 | **setuptools** | Uusin | Asenna komennolla `pip install setuptools` |
 
 ### Windows
 
-| Työkalu | Huomautukset |
+| Työkalu | Huomautuksia |
 |------|-------|
 | **Visual Studio** | Community-versio riittää |
 | **"Desktop development with C++" -työkuorma** | Valitse Visual Studion asennuksen aikana |
 | **Windows 10 SDK** | Sisältyy C++-työkuormaan; varmista, että se on valittuna |
 
-Voit asentaa Visual Studion käännystyökalut komentoriviltä:
+Voit asentaa Visual Studion rakennustyökalut komentorivin kautta:
 
 ```bash
 npm install --global windows-build-tools
@@ -98,18 +98,18 @@ Xcoden komentorivityökalut riittävät yleensä:
 xcode-select --install
 ```
 
-## Tarkista asennus
+## Varmista asennus
 
 Suorita nämä komennot varmistaaksesi, että kaikki on asennettu:
 
 ```bash
-node --version    # Should print v20.x.x or higher
-npm --version     # Should print 10.x.x or higher
-git --version     # Should print git version 2.x.x
-mysql --version   # Only needed for local API development
+node --version    # Pitäisi tulostaa v20.x.x tai uudempi
+npm --version     # Pitäisi tulostaa 10.x.x tai uudempi
+git --version     # Pitäisi tulostaa git version 2.x.x
+mysql --version   # Tarvitaan vain paikalliseen API-kehitykseen
 ```
 
 ## Seuraavat vaiheet
 
-- **[Projektien yleiskatsaus](./project-overview.md)** -- Katso kaikki projektit ja niiden tehtävät
-- **[Ympäristömuuttujat](./environment-variables.md)** -- Määritä `.env`-tiedostot
+- **[Projektin yleiskatsaus](./project-overview.md)** -- Tutustu kaikkiin projekteihin ja niiden toimintaan
+- **[Ympäristömuuttujat](./environment-variables.md)** -- Määritä `.env`-tiedostosi

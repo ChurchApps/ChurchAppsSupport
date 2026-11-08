@@ -1,50 +1,50 @@
 ---
-title: "Meldingsendepunkter"
-description: "Referanse for ChurchApps meldings-API-endepunkter: samtaler, tilgangsregler for notater, tekstmeldinger, e-postmaler, varsler og enheter."
+title: "Endepunkter for meldinger"
+description: "Referanse for ChurchApps API-endepunkter for meldinger: samtaler, tilgangsregler for notater, tekstmeldinger, e-postmaler, varsler og enheter."
 ---
 
-# Meldingsendepunkter
+# Endepunkter for meldinger
 
 <div class="article-intro">
 
-Meldingsmodulen håndterer sanntidssamtaler, chatmeldinger, push-varsler, levering av SMS og e-post, WebSocket-tilkoblinger, private meldinger, registrering av enheter og leverandører for tekstmeldinger. Den gir kommunikasjonslaget som brukes i alle ChurchApps-applikasjoner, både for direktestrømmet chat og for asynkrone varsler.
+Meldingsmodulen håndterer sanntidssamtaler, chatmeldinger, push-varsler, levering av SMS og e-post, WebSocket-tilkoblinger, private meldinger, registrering av enheter og leverandører av tekstmeldinger. Den gir kommunikasjonslaget som brukes på tvers av alle ChurchApps-applikasjoner, både for direktestrøms-chat og asynkrone varsler.
 
 </div>
 
-**Basissti:** `/messaging`
+**Grunnsti:** `/messaging`
 
 ## Samtaler
 
-Basissti: `/messaging/conversations`
+Grunnsti: `/messaging/conversations`
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Last samtaler etter kommaseparerte ID-er med første og siste meldinger |
+| GET | `/timeline/ids?ids=` | JWT | — | Last samtaler etter kommaseparerte ID-er, med første og siste melding |
 | GET | `/messages/:contentType/:contentId` | JWT | — | Last samtaler for innhold med paginerte meldinger (`?page=&limit=`) |
-| GET | `/posts` | JWT | — | Hent innleggssamtaler for den nåværende brukerens grupper |
+| GET | `/posts` | JWT | — | Hent innleggssamtaler for den innloggede brukerens grupper |
 | GET | `/posts/group/:groupId` | JWT | — | Hent innleggssamtaler for en bestemt gruppe |
-| GET | `/notes/feed?section=&limit=&before=` | JWT | — | Nyeste notater på tvers av alle poster, for siden Notes i B1 Admin. `section` er `people`, `groups`, `events` eller `workflows` (ellers 400). `limit` er 25 som standard (maks 100). `before` er markøren fra forrige side. Hvert notat må fortsatt oppfylle regelen for sin egen type (People Edit / tillatelse for konfidensielle notater, ledere av gruppen, arrangementsseere, seere av arbeidsflytkort), slik at kallere kun ser notater de kunne åpnet. Notatteksten kuttes til 300 tegn |
+| GET | `/notes/feed?section=&limit=&before=` | JWT | — | Nyeste notater på tvers av alle poster for siden Notater i B1 Admin. `section` er `people`, `groups`, `events` eller `workflows` (400 ellers). `limit` er 25 som standard (maks 100). `before` er markøren fra forrige side. Hvert notat må fortsatt oppfylle regelen for sin egen type (tillatelse for personredigering eller konfidensielle notater, gruppeledere, arrangementsseere, seere av arbeidsflytkort), slik at kallere bare ser notater de ville kunne åpne. Notatteksten kuttes etter 300 tegn |
 | GET | `/current/:churchId/:contentType/:contentId` | Offentlig | — | Hent eller opprett gjeldende samtale for innhold (dekrypterer contentId automatisk) |
 | GET | `/:churchId/:contentType/:contentId` | Offentlig | — | Last samtaler etter innholdstype og ID |
-| GET | `/:churchId/:id` | Offentlig | — | Last en enkelt samtale etter ID |
+| GET | `/:churchId/:id` | Offentlig | — | Last én samtale etter ID |
 | POST | `/` | JWT | — | Opprett eller oppdater samtaler (batch) |
 | POST | `/start` | JWT | — | Start en ny samtale med en innledende kommentarmelding |
 | DELETE | `/:churchId/:id` | JWT | — | Slett en samtale |
 
 ### Tilgangskontroll for personnotater
 
-Samtaler med `contentType: "person"` (fanen Notes på en personpost) eller `contentType: "personConfidential"` (seksjonen Confidential Notes) er låst på alle lese- og skrivebaner, også de offentlige rutene over, som returnerer `401` for disse innholdstypene. `person` krever tillatelsen **People / Edit** i MembershipApi; `personConfidential` krever **People / View Confidential Notes**. For API-nøkler med begrenset omfang gir `people:write` begge handlingene (brukeren for nøkkelen må fortsatt ha den underliggende rolletillatelsen).
+Samtaler med `contentType: "person"` (fanen Notater på en person) eller `contentType: "personConfidential"` (delen Konfidensielle notater) er låst på alle lese- og skrivestier, inkludert de offentlige rutene over. Disse returnerer `401` for disse innholdstypene. `person` krever MembershipApi-tillatelsen **Personer / Rediger**. `personConfidential` krever **Personer / Vis konfidensielle notater**. For API-nøkler med begrenset omfang gir `people:write` begge handlingene. Brukeren som eier nøkkelen må fortsatt ha tillatelsen til den underliggende rollen.
 
 ### Tilgangskontroll for gruppe- og arrangementsnotater {#group-and-event-notes-access-control}
 
-To ytterligere innholdstyper for notater er låst på samme måte, på alle lese- og skrivebaner (også de offentlige rutene over), og er aldri åpne for anonym publisering:
+To andre notattyper er låst på samme måte, på alle lese- og skrivestier (inkludert de offentlige rutene over), og de er aldri åpne for anonyme innlegg:
 
-- **`groupNote`** (`contentId` = gruppe-ID) -- feeden **Leader notes** på en gruppe. Bare gruppens ledere (`leaderGroupIds` i JWT) kan lese eller publisere. Ingen personaltillatelse gir tilgang, inkludert `content.edit` og gruppemedlemstillatelsene.
-- **`eventNote`** (`contentId` = arrangements-ID) -- notatene på et kalenderarrangement. Personale med `content.edit` eller **Calendars / Admin** kan alltid lese og publisere. Ellers følger tilgangen arrangementets `notesViewRole` (lesing) og `notesPostRole` (publisering): `staff` (standard, brukes når feltet er `null`) gir ingen andre tilgang, `leaders` gir tilgang til ledere av arrangementets gruppe, og `members` gir tilgang til medlemmer og ledere av arrangementets gruppe. Et arrangement uten `groupId` er kun for personale.
+- **`groupNote`** (`contentId` = gruppe-ID) – feeden **Lederens notater** på en gruppe. Bare gruppens ledere (`leaderGroupIds` i JWT) kan lese eller skrive innlegg. Ingen stillingstillatelse gir tilgang, heller ikke `content.edit` eller tillatelsene for gruppemedlemskap.
+- **`eventNote`** (`contentId` = arrangement-ID) – notatene på en kalenderhendelse. Ansatte med `content.edit` eller **Kalendere / Admin** kan alltid lese og legge inn. Ellers følger tilgangen arrangementets `notesViewRole` (lesing) og `notesPostRole` (innlegg): `staff` (standard, brukes når feltet er `null`) gir ingen andre tilgang, `leaders` gir tilgang til ledere i arrangementets gruppe, og `members` gir tilgang til medlemmer og ledere i arrangementets gruppe. Et arrangement uten `groupId` er bare for ansatte.
 
 ### Tilgangskontroll for notater på arbeidsflytkort
 
-Samtaler med `contentType: "workflowCard"` (notatene på et arbeidsflytkort, der `contentId` er kortets oppgave-ID) kan bare leses og skrives av noen som kan åpne kortet: en bruker med tillatelsen **Tasks / View** i DoingApi, eller personen eller gruppen kortet er tildelt, opprettet av eller handler om. Alle andre får `401` på alle lesebaner, også de offentlige rutene over. En kortsamtale knyttes til kortet selv med `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`; den første samtalen som knyttes, gjelder), og det kan kortets redigerere og ansvarlige kalle.
+Samtaler med `contentType: "workflowCard"` (notatene på et arbeidsflytkort, der `contentId` er kortets oppgave-ID) kan bare leses og skrives av den som kan åpne kortet. Det er en bruker med DoingApi-tillatelsen **Oppgaver / Vis**, eller personen eller gruppen kortet er tildelt, opprettet av eller gjelder. Alle andre får `401` på alle leseveier, inkludert de offentlige rutene over. En kortsamtale knyttes til selve kortet med `POST /doing/tasks/:id/conversation` (body `{ "conversationId": "..." }`). Den første samtalen som knyttes, gjelder. Kortets redigerere og den tildelte kan kalle dette endepunktet.
 
 ### Eksempel: Start en samtale
 
@@ -77,29 +77,29 @@ Authorization: Bearer <token>
 
 ## Meldinger
 
-Basissti: `/messaging/messages`
+Grunnsti: `/messaging/messages`
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/conversation/:conversationId` | JWT | — | Last alle meldinger for en samtale |
-| GET | `/catchup/:churchId/:conversationId` | Offentlig | — | Last alle meldinger for en samtale (offentlig innhenting for direktechat) |
-| GET | `/:churchId/:id` | Offentlig | — | Last en enkelt melding etter ID |
-| POST | `/` | JWT | — | Lagre meldinger (batch). Sender sanntidsoppdateringer og utløser varsler. Å oppdatere en eksisterende melding krever at man er forfatteren eller har `content.edit`. Den lagrede forfatteren kan aldri endres |
+| GET | `/conversation/:conversationId` | JWT | — | Last alle meldinger i en samtale |
+| GET | `/catchup/:churchId/:conversationId` | Offentlig | — | Last alle meldinger i en samtale (offentlig innhenting for direktechat) |
+| GET | `/:churchId/:id` | Offentlig | — | Last én melding etter ID |
+| POST | `/` | JWT | — | Lagre meldinger (batch). Sender sanntidsoppdateringer og utløser varsler. Å oppdatere en eksisterende melding krever at du er forfatteren eller har `content.edit`. Den lagrede forfatteren kan aldri endres |
 | POST | `/send` | Offentlig | — | Send meldinger (batch, offentlig). Sender sanntidsoppdateringer via WebSocket og utløser varsler |
-| POST | `/setCallout` | JWT | — | (utdatert) Kringkast en fremhevet melding i sanntid. Ingen aktiv klient; direktestrømmet chat viser ikke lenger fremhevede meldinger |
+| POST | `/setCallout` | JWT | — | (eldre) Kringkast en fremhevet melding i sanntid. Ingen aktiv klient. Livestrøm-chat viser ikke lenger fremhevinger |
 | DELETE | `/:churchId/:id` | JWT | — | Slett en melding og kringkast slettingen i sanntid. Se [Moderering av meldinger](#message-moderation) |
 
-### Moderering av meldinger {#message-moderation}
+### Moderering av meldinger
 
 Du kan slette en melding hvis du er:
 
 - forfatteren av meldingen;
-- personale med `content.edit` (hvor som helst i kirken);
+- ansatt med `content.edit` (hvor som helst i menigheten);
 - **gruppeleder**, for samtaler med `contentType` `group` eller `groupAnnouncement` der `contentId` er en gruppe du leder (`leaderGroupIds` i JWT).
 
-Samtaler med personnotater (`person` / `personConfidential`) modereres aldri av ledere. De bruker i stedet tillatelsene for notater (`people.edit`, `people.viewConfidentialNotes`).
+Personnotat-samtaler (`person` / `personConfidential`) modereres aldri av ledere. De bruker i stedet notattillatelsene (`people.edit`, `people.viewConfidentialNotes`).
 
-Ledere kan bare slette, ikke redigere. Å skrive om en annen medlems melding er fortsatt begrenset til forfatteren og personale med `content.edit`.
+Ledere kan bare slette, ikke redigere. Å skrive om en annen medlems melding er fortsatt begrenset til forfatteren og ansatte med `content.edit`.
 
 ### Eksempel: Send en melding
 
@@ -135,29 +135,29 @@ POST /messaging/messages/send
 
 ## Private meldinger
 
-Basissti: `/messaging/privatemessages`
+Grunnsti: `/messaging/privatemessages`
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/` | JWT | — | Last alle private meldinger for den nåværende brukeren (inkluderer siste melding per samtale, og markerer alle som lest) |
+| GET | `/` | JWT | — | Last alle private meldinger for den innloggede brukeren (inkluderer siste melding per samtale og markerer alle som lest) |
 | GET | `/existing/:personId` | JWT | — | Finn en eksisterende privat samtale med en bestemt person |
-| GET | `/:id` | JWT | — | Last en privat melding etter ID (fjerner varselet hvis meldingen er adressert til den nåværende brukeren) |
+| GET | `/:id` | JWT | — | Last en privat melding etter ID (fjerner varselet hvis meldingen er adressert til innlogget bruker) |
 | POST | `/` | JWT | — | Send private meldinger (batch). Utløser push-varsel til mottakeren |
 
 ## Varsler
 
-Basissti: `/messaging/notifications`
+Grunnsti: `/messaging/notifications`
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/unreadCount` | JWT | — | Hent antall uleste varsler for den nåværende brukeren |
-| GET | `/my` | JWT | — | Last alle varsler for den nåværende brukeren (markerer alle som lest) |
-| GET | `/tmpEmail` | Offentlig | — | Utløs det daglige e-postsammendraget av varsler (feilsøkings- eller cron-endepunkt) |
+| GET | `/unreadCount` | JWT | — | Hent antall uleste varsler for den innloggede brukeren |
+| GET | `/my` | JWT | — | Last alle varsler for den innloggede brukeren (markerer alle som lest) |
+| GET | `/tmpEmail` | Offentlig | — | Utløs den daglige e-postoppsummeringen av varsler (feilsøkings- og cron-endepunkt) |
 | GET | `/:churchId/person/:personId` | JWT | — | Last varsler for en bestemt person |
 | GET | `/:churchId/:id` | JWT | — | Last et varsel etter ID |
 | POST | `/` | JWT | — | Opprett eller oppdater varsler (batch) |
 | POST | `/create` | JWT | — | Opprett varsler for flere personer. Body: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Marker alle varsler som lest for en person |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Merk alle varsler som lest for en person |
 | POST | `/sendTest` | JWT | — | Send et testvarsel via push. Body: `{ personId, title }` |
 | POST | `/ping` | Offentlig | — | Opprett et varsel fra en ekstern utløser. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
 | DELETE | `/:churchId/:id` | JWT | — | Slett et varsel |
@@ -179,42 +179,42 @@ Authorization: Bearer <token>
 
 ## Varselinnstillinger
 
-Basissti: `/messaging/notificationpreferences`
+Grunnsti: `/messaging/notificationpreferences`
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/categories` | JWT | — | Liste varselkategorier med standard- og tillatte kanaler |
-| GET | `/my` | JWT | — | Last varselinnstillinger for den nåværende brukeren (oppretter standardverdier automatisk hvis ingen finnes) |
-| POST | `/` | JWT | — | Lagre den nåværende brukerens innstillinger. Body: en eller flere av `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, pluss valgfri `overrides: [{ categoryKey, channel, optedIn }]` (channel kan være `push`, `email`, `in_app` eller `sms`; låste kategorier ignoreres). `allowSms` er medlemmets samtykke til tekstpåminnelser. En eldre body med en matrise av rader godtas fortsatt |
+| GET | `/categories` | JWT | — | List varselkategorier med standard og tillatte kanaler |
+| GET | `/my` | JWT | — | Last varselinnstillingene for den innloggede brukeren (oppretter standardverdier automatisk hvis ingen finnes) |
+| POST | `/` | JWT | — | Lagre den innloggede brukerens innstillinger. Body: en eller flere av `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay`, pluss valgfri `overrides: [{ categoryKey, channel, optedIn }]` (channel kan være `push`, `email`, `in_app` eller `sms`; låste kategorier ignoreres). `allowSms` er medlemmets samtykke til tekstpåminnelser. En eldre body med en liste av rader godtas fortsatt |
 
 ## Tilkoblinger
 
-Basissti: `/messaging/connections`
+Grunnsti: `/messaging/connections`
 
-Håndterer WebSocket-/sanntidstilkoblinger for chat, gruppesamtaler, private meldinger og direktestrømming. Se [Sanntidsarkitektur](../../realtime.md) for hele protokollen.
+Administrerer WebSocket- og sanntidstilkoblinger for chat, gruppesamtaler, private meldinger og livestrømming. Se [Sanntidsarkitektur](../../realtime.md) for hele protokollen.
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
 | GET | `/:churchId/:conversationId` | Offentlig | — | Last alle tilkoblinger for en samtale |
-| POST | `/` | Offentlig | — | Registrer tilkoblinger (batch). Utløser en kringkasting av oppmøte i samtalen. Elementer i body: `{ churchId, conversationId, socketId, displayName?, personId? }` |
+| POST | `/` | Offentlig | — | Registrer tilkoblinger (batch). Utløser en oppmøtekringkasting for samtalen. Elementer i body: `{ churchId, conversationId, socketId, displayName?, personId? }` |
 | POST | `/setName` | Offentlig | — | Oppdater visningsnavnet for en tilkobling etter socket-ID. Body: `{ socketId, name }` |
-| DELETE | `/:churchId/:conversationId/:socketId` | Offentlig | — | Fjern en tilkobling fra en samtale. Utløser en kringkasting av oppmøte |
-| POST | `/tmpSendAlert` | Offentlig | — | Send et varsel til tilkoblingene til en person. Body: `{ churchId, personId }` |
+| DELETE | `/:churchId/:conversationId/:socketId` | Offentlig | — | Fjern en tilkobling fra en samtale. Utløser en oppmøtekringkasting |
+| POST | `/tmpSendAlert` | Offentlig | — | Send et varsel til en persons tilkoblinger. Body: `{ churchId, personId }` |
 
 ## Enheter
 
-Basissti: `/messaging/devices`
+Grunnsti: `/messaging/devices`
 
-Håndterer registrering av enheter for push-varsler og innholdsparing (for eksempel Lessons-appen på TV-skjermer).
+Administrerer enhetsregistrering for push-varsler og innholdsparing (f.eks. Lessons-appen på TV-skjermer).
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| POST | `/enroll` | JWT | — | Registrer eller oppdater en enhet (registrering for mobil push). Matcher etter FCM-token eller enhets-ID |
+| POST | `/enroll` | JWT | — | Registrer eller oppdater en enhet (registrering av mobil push). Treffer på FCM-token eller enhets-ID |
 | POST | `/enrollAnon` | Offentlig | — | Registrer en anonym enhet og generer en paringskode på 4 tegn |
 | POST | `/` | Offentlig | — | Lagre enheter (batch) |
-| GET | `/pair/:pairingCode` | JWT | — | Par en enhet med paringskoden. Valgfritt `?contentType=&contentId=` for å tildele innhold |
-| GET | `/status/:deviceId` | Offentlig | — | Sjekk paringsstatusen til en enhet |
-| GET | `/:churchId` | JWT | — | Last alle enheter for en kirke |
+| GET | `/pair/:pairingCode` | JWT | — | Par en enhet med paringskoden. Valgfritt `?contentType=&contentId=` for å tilordne innhold |
+| GET | `/status/:deviceId` | Offentlig | — | Sjekk paringsstatus for en enhet |
+| GET | `/:churchId` | JWT | — | Last alle enheter for en menighet |
 | GET | `/:churchId/person/:personId` | JWT | — | Last alle enheter for en person |
 | GET | `/:churchId/:id` | JWT | — | Last en enhet etter ID |
 | DELETE | `/:churchId/:id` | JWT | — | Slett en enhet |
@@ -227,7 +227,7 @@ Authorization: Bearer <token>
 
 {
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "deviceInfo": "iOS 17, iPhone 15"
 }
@@ -238,18 +238,18 @@ Authorization: Bearer <token>
   "id": "device-001",
   "churchId": "church-789",
   "fcmToken": "firebase-token-abc123",
-  "appName": "B1Mobile",
+  "appName": "B1App",
   "label": "John's iPhone",
   "registrationDate": "2026-02-17T10:00:00.000Z",
   "lastActiveDate": "2026-02-17T10:00:00.000Z"
 }
 ```
 
-## Innhold på enheter
+## Enhetsinnhold
 
-Basissti: `/messaging/devicecontents`
+Grunnsti: `/messaging/devicecontents`
 
-Håndterer innholdstilordninger for parede enheter (for eksempel hvilken leksjon som vises på en TV).
+Administrerer innholdstilordninger for parede enheter (f.eks. hvilken leksjon som vises på en TV).
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
@@ -259,23 +259,23 @@ Håndterer innholdstilordninger for parede enheter (for eksempel hvilken leksjon
 
 ## Tekstmeldinger
 
-Basissti: `/messaging/texting`
+Grunnsti: `/messaging/texting`
 
-Håndterer leverandører av SMS, gruppetekstmeldinger og sporing av levering.
+Administrerer leverandører av SMS-tjenester, gruppetekstmeldinger og sporing av levering.
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/providers` | JWT | — | Last leverandører av tekstmeldinger for kirken (legitimasjon er maskert) |
-| GET | `/status` | JWT | — | `{ enabled }` — om kirken har en aktivert leverandør av tekstmeldinger. Gjelder enhver innlogget kirkebruker. Brukes til å vise alternativene **Text** bare når tekstmeldinger kan sendes |
-| GET | `/inboundUrl` | JWT | `texting.send` eller `settings.edit` | `{ url }` — kirkens webhook-URL for innkommende meldinger (STOP), som limes inn hos leverandøren |
-| POST | `/inbound/:churchId/:token` | Offentlig | — | Webhook for innkommende meldinger fra leverandør. `token` er en HMAC av kirke-ID-en. Et svar som er nøyaktig et stoppord (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) markerer hver matchende person som `optedOut` og slår av `allowSms` for dem. Returnerer `{ optedOut: <count> }`. Andre svar returnerer `{ optedOut: 0 }` |
-| GET | `/preview/:groupId` | JWT | — | Forhåndsvis mottakere av en gruppetekst (antall som kan motta, reservert, uten telefonnummer) |
-| GET | `/sent` | JWT | — | Last alle registrerte sendte tekstmeldinger for kirken |
-| GET | `/sent/:id/details` | JWT | — | Last en sendt tekstmelding med leveringslogg per mottaker |
-| POST | `/providers` | JWT | — | Lagre leverandører av tekstmeldinger (batch). Krypterer API-legitimasjon |
+| GET | `/providers` | JWT | — | Last tekstmeldingsleverandører for menigheten (legitimasjon er maskert) |
+| GET | `/status` | JWT | — | `{ enabled }` – om menigheten har en aktivert leverandør for tekstmeldinger. Gjelder alle innloggede medlemmer av menigheten. Brukes til å vise alternativene **Tekst** bare når tekstmeldinger kan sendes |
+| GET | `/inboundUrl` | JWT | `texting.send` eller `settings.edit` | `{ url }` – menighetens innkommende (STOP-) webhook-URL som limes inn hos leverandøren |
+| POST | `/inbound/:churchId/:token` | Offentlig | — | Webhook for innkommende meldinger fra leverandøren. `token` er en HMAC av menighets-ID-en. Et svar som er nøyaktig et stoppord (`STOP`, `STOPALL`, `UNSUBSCRIBE`, `CANCEL`, `END`, `QUIT`, `OPTOUT`, `REVOKE`) merker alle matchende personer som `optedOut` og slår av deres `allowSms`. Returnerer `{ optedOut: <count> }`. Andre svar gir `{ optedOut: 0 }` |
+| GET | `/preview/:groupId` | JWT | — | Forhåndsvis mottakere for en gruppetekst (antall kvalifiserte, reserverte og uten telefonnummer) |
+| GET | `/sent` | JWT | — | Last alle sendte tekstmeldingsposter for menigheten |
+| GET | `/sent/:id/details` | JWT | — | Last en sendt tekstmelding med leveringslogger per mottaker |
+| POST | `/providers` | JWT | — | Lagre tekstmeldingsleverandører (batch). Krypterer API-legitimasjon |
 | POST | `/send` | JWT | — | Send en SMS til alle kvalifiserte medlemmer i en gruppe. Body: `{ groupId, message }`. Flettefelt (`{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`) løses for hver mottaker |
-| POST | `/sendPerson` | JWT | — | Send en SMS til en enkelt person. Body: `{ personId, phoneNumber, message }`. Flettefelt løses, og den løste teksten er det som logges |
-| DELETE | `/providers/:id` | JWT | — | Slett en leverandør av tekstmeldinger |
+| POST | `/sendPerson` | JWT | — | Send en SMS til én person. Body: `{ personId, phoneNumber, message }`. Flettefelt løses, og den løste teksten er det som logges |
+| DELETE | `/providers/:id` | JWT | — | Slett en tekstmeldingsleverandør |
 
 ### Eksempel: Send gruppetekst
 
@@ -302,22 +302,22 @@ Authorization: Bearer <token>
 
 ## E-postmaler
 
-Basissti: `/messaging/emailTemplates`
+Grunnsti: `/messaging/emailTemplates`
 
-Håndterer gjenbrukbare e-postmaler og sending av malbaserte e-poster til grupper.
+Administrerer gjenbrukbare e-postmaler og sending av malbaserte e-poster til grupper.
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| GET | `/` | JWT | — | Last alle e-postmaler for kirken |
-| GET | `/:id` | JWT | — | Last en enkelt e-postmal etter ID |
-| GET | `/sendStatus` | JWT | `groupMembers.edit` eller `tasks.admin` | Kirkens status for gruppe-e-post: `{ approved, paused, remaining, requested }`. Dialogen Send Email i B1Admin og arbeidsflyt-handlingen **Send email** bruker den til å advare når e-post ikke kommer til å gå ut |
-| POST | `/requestApproval` | JWT | `groupMembers.edit` | Be støtte om å godkjenne kirken for gruppe-e-post (høyst én gang per kirke per uke) |
-| GET | `/preview/:groupId` | JWT | — | Forhåndsvis e-postlevering for en gruppe (antall mottakere som kan motta, medlemmer uten e-post) |
+| GET | `/` | JWT | — | Last alle e-postmaler for menigheten |
+| GET | `/:id` | JWT | — | Last en e-postmal etter ID |
+| GET | `/sendStatus` | JWT | `groupMembers.edit` eller `tasks.admin` | Menighetens status for gruppe-e-post: `{ approved, paused, remaining, requested }`. Dialogen Send e-post i B1Admin og arbeidsflyt-handlingen **Send e-post** bruker den til å varsle når e-post ikke vil bli sendt |
+| POST | `/requestApproval` | JWT | `groupMembers.edit` | Be support om å godkjenne menigheten for gruppe-e-post (høyst én gang per menighet per uke) |
+| GET | `/preview/:groupId` | JWT | — | Forhåndsvis e-postlevering for en gruppe (antall mottakere som kan få e-post, medlemmer uten e-postadresse) |
 | POST | `/` | JWT | — | Opprett eller oppdater e-postmaler (batch) |
 | POST | `/send` | JWT | — | Send en malbasert e-post til alle medlemmer i en gruppe. Body: `{ groupId, subject, htmlContent }` |
 | DELETE | `/:id` | JWT | — | Slett en e-postmal |
 
-### Eksempel: Send e-post til en gruppe
+### Eksempel: Send e-post til gruppe
 
 ```
 POST /messaging/emailTemplates/send
@@ -344,33 +344,33 @@ Authorization: Bearer <token>
 
 ## Blokkerte IP-adresser
 
-Basissti: `/messaging/blockedips`
+Grunnsti: `/messaging/blockedips`
 
-(utdatert) IP-blokkering for direktestrømmet chat. Klienten i B1App kaller ikke lenger `POST /` — IP-blokkering ble fjernet i migreringen til samlet levering. Ruten `/clear` kalles fortsatt server-til-server av `StreamingServiceController` når direktestrømmede gudstjenester lagres.
+(eldre) IP-blokkering for chat i livestrømming. B1App-klienten kaller ikke lenger `POST /`. IP-blokkering ble fjernet i migreringen til enhetlig levering. Ruten `/clear` kalles fortsatt server-til-server av `StreamingServiceController` når strømmetjenester lagres.
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
-| POST | `/` | JWT | — | (utdatert) Lagre blokkerte IP-adresser (batch). Ingen aktiv klient |
-| POST | `/clear` | JWT | — | Fjern alle blokkerte IP-adresser for bestemte gudstjenester. Body: `[{ serviceId, churchId }]` |
+| POST | `/` | JWT | — | (eldre) Lagre blokkerte IP-adresser (batch). Ingen aktiv klient |
+| POST | `/clear` | JWT | — | Fjern alle blokkerte IP-adresser for bestemte tjenester. Body: `[{ serviceId, churchId }]` |
 
 ## Leveringslogger
 
-Basissti: `/messaging/deliverylogs`
+Grunnsti: `/messaging/deliverylogs`
 
-Sporer leveringsstatus for sendte meldinger (SMS, push-varsler, e-post).
+Sporer leveringsstatus for sendte meldinger (SMS, push-varsler og e-post).
 
 | Metode | Sti | Autentisering | Tillatelse | Beskrivelse |
 |--------|-----|---------------|------------|-------------|
 | GET | `/content/:contentType/:contentId` | JWT | — | Last leveringslogger etter innholdstype og ID |
-| GET | `/person/:personId` | JWT | — | Last leveringslogger for en person. Valgfrie filtre `?startDate=&endDate=` |
-| GET | `/recent` | JWT | — | Last nylige leveringslogger for kirken. Valgfri `?limit=` (standard 100) |
+| GET | `/person/:personId` | JWT | — | Last leveringslogger for en person. Valgfrie `?startDate=&endDate=` filtrerer resultatet |
+| GET | `/recent` | JWT | — | Last nylige leveringslogger for menigheten. Valgfri `?limit=` (standard 100) |
 | GET | `/:id` | JWT | — | Last en leveringslogg etter ID |
 
 ## Relaterte sider
 
-- [Sanntidsarkitektur](../../realtime.md) -- WebSocket-protokoll, rombetaling og det samlede leveringsrammeverket
-- [Web-push-varsler](../../web-push.md) -- Registrering og levering av push i nettleser
-- [Medlemskapsendepunkter](./membership.md) -- Personer, grupper, roller og kjernens identitet
+- [Sanntidsarkitektur](../../realtime.md) -- WebSocket-protokoll, romabonnement og det enhetlige leveringsrammeverket
+- [Push-varsler i nettleser](../../web-push.md) -- Registrering og levering av push i nettleseren
+- [Endepunkter for medlemskap](./membership.md) -- Personer, grupper, roller og kjerneidentitet
 - [Endepunkter for oppmøte](./attendance.md) -- Sporing av gudstjenester og besøk
-- [Autentisering og tillatelser](./authentication.md) -- Innloggingsflyt, JWT, OAuth, tillatelsesmodell
+- [Autentisering og tillatelser](./authentication.md) -- Innloggingsflyt, JWT, OAuth og tillatelsesmodell
 - [Modulstruktur](../module-structure.md) -- Mønstre for kodeorganisering

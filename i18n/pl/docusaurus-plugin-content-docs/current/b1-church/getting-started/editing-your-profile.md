@@ -1,14 +1,14 @@
 ---
-title: "Edycja profilu w portalu członka B1.church"
-sidebar_label: "Edytowanie profilu"
-description: "Aktualizuj dane kontaktowe, członków gospodarstwa domowego, e-mail logowania, hasło i ustawienia prywatności w portalu członka B1.church."
+title: "Redagowanie profilu w portalu członka B1.church"
+sidebar_label: "Redagowanie profilu"
+description: "Zaktualizuj dane kontaktowe, członków gospodarstwa domowego, adres e-mail i hasło do logowania oraz ustawienia prywatności w portalu członka B1.church."
 ---
 
-# Edytowanie profilu
+# Redagowanie profilu
 
 <div class="article-intro">
 
-Strona profilu w portalu członka pozwala zaktualizować dane kontaktowe, zarządzać gospodarstwem domowym, zmienić adres e-mail i hasło do konta oraz decydować, kto może zobaczyć Twój adres, numer telefonu i adres e-mail.
+Strona profilu w portalu członka pozwala zaktualizować dane kontaktowe, zarządzać gospodarstwem domowym, zmienić adres e-mail i hasło do konta oraz kontrolować, kto może zobaczyć Twój adres, numer telefonu i adres e-mail.
 
 </div>
 
@@ -25,43 +25,52 @@ Strona profilu w portalu członka pozwala zaktualizować dane kontaktowe, zarzą
 
 ## Otwieranie profilu
 
-Dotknij zdjęcia profilowego na górnym pasku aplikacji lub dotknij **Edytuj profil** na górze strony **Więcej** albo na stronie [Ja](./me-page.md), aby otworzyć **Twój profil** pod adresem `/mobile/profileEdit`. Strona składa się z jednego zestawu sekcji — **Zdjęcie i imię**, **Kontakt**, **Gospodarstwo domowe**, **Konto** i **Prywatność** — każda pokazuje Twoje aktualne dane wraz z linkiem **Edytuj** (lub **Dodaj członka rodziny** / **Zmień**), który otwiera panel do wprowadzenia zmian.
+Dotknij zdjęcia profilowego na górnym pasku aplikacji albo dotknij **Edytuj profil** u góry strony **Więcej** lub na swojej [stronie Ja](./me-page.md), aby otworzyć **Twój profil** pod adresem `/mobile/profileEdit`. Strona składa się z jednego arkusza z sekcjami — **Zdjęcie i imię**, **Kontakt**, **Gospodarstwo domowe**, **Konto** i **Prywatność** — z których każda pokazuje Twoje aktualne dane wraz z odnośnikiem **Edytuj** (lub **Dodaj członka rodziny** / **Zmień**), który otwiera panel do wprowadzania zmian.
 
 ## Zdjęcie i imię oraz Kontakt
 
-Te sekcje zawierają dane, które Twój kościół widzi w Twoim rekordzie osoby:
+Te sekcje zawierają informacje, które Twój kościół widzi w Twoim rekordzie osoby:
 
-- **Zdjęcie i imię** — dotknij **Zmień zdjęcie**, aby przesłać nowe zdjęcie, i edytuj imię, drugie imię oraz nazwisko.
-- **Kontakt** — e-mail, telefon komórkowy, telefon domowy, telefon do pracy, data urodzenia oraz adres (ulica, miejscowość, województwo i kod pocztowy). Jeśli włączysz przypomnienia SMS w [Ustawieniach powiadomień](./notification-preferences.md), będą one wysyłane na Twój numer komórkowy.
+- **Zdjęcie i imię** — dotknij **Zmień zdjęcie**, aby przesłać nowe zdjęcie, i edytuj **Tytuł**, imię, drugie imię i nazwisko. W polu **Tytuł** wybierz jedną z sugestii (Mr, Mrs, Miss, Ms, Dr, Prof, Rev lub Pastor) albo wpisz własną, do 10 znaków.
+- **Kontakt** — e-mail, telefon komórkowy, telefon domowy, telefon służbowy, data urodzenia oraz adres (ulica, miejscowość, województwo i kod pocztowy). Jeśli włączysz powiadomienia tekstowe w [Ustawieniach powiadomień](./notification-preferences.md), będą one wysyłane na Twój numer komórkowy.
 
 Wprowadź zmiany w panelu i dotknij **Zapisz zmiany**.
 
 :::info
-Jeśli Twój kościół wymaga zatwierdzania zmian w katalogu, strona wyświetli komunikat „Zmiany w Twoim profilu trafiają do personelu kościoła w celu zatwierdzenia.”, a przycisk będzie brzmiał **Wyślij do zatwierdzenia** — Twoje zmiany zostaną przesłane jako prośba, zamiast być od razu zastosowane. Zobacz [Zatwierdzanie zmian w profilu](/docs/b1-admin/profile/approving-profile-changes), aby dowiedzieć się, jak kościół je sprawdza.
+Jeśli Twój kościół wymaga zatwierdzania zmian w katalogu, strona wyświetli komunikat „Zmiany w Twoim profilu trafiają do personelu kościoła w celu zatwierdzenia.”, a przycisk będzie miał napis **Prześlij do zatwierdzenia** — Twoje zmiany zostaną przesłane jako wniosek zamiast być zastosowane od razu. Zobacz [Zatwierdzanie zmian profilu](/docs/b1-admin/profile/approving-profile-changes), aby dowiedzieć się, jak kościół je przegląda.
 :::
 
 ## Gospodarstwo domowe
 
-Sekcja Gospodarstwo domowe pokazuje inne osoby połączone z Twoim gospodarstwem, każda wraz z rolą w gospodarstwie (Główny, Małżonek, Dziecko itd.). Dotknij członka gospodarstwa, aby zobaczyć jego szczegóły.
+Sekcja Gospodarstwo domowe pokazuje inne osoby powiązane z Twoim gospodarstwem domowym, każda z ich rolą w gospodarstwie (Głowa, Małżonek, Dziecko i inne). Dotknij członka gospodarstwa, aby zobaczyć jego szczegóły.
 
-Aby dodać członka rodziny, który nie znajduje się jeszcze w systemie, dotknij **Dodaj członka rodziny**, wpisz jego imię i dotknij **Dodaj**. Nowi członkowie rodziny trafiają na listę oczekujących i są przesyłani razem z pozostałymi zmianami w profilu, aby kościół mógł je sprawdzić.
+Aby dodać członka rodziny, który nie znajduje się jeszcze w systemie:
+
+1. Dotknij **Dodaj członka rodziny**.
+2. Wpisz jego **Imię**. Pole **Nazwisko** jest wstępnie wypełnione Twoim nazwiskiem; zmień je, jeśli jego nazwisko jest inne.
+3. Opcjonalnie dodaj jego **Tytuł** i **Telefon komórkowy**.
+4. Wybierz jego **Rolę w gospodarstwie**: **Głowa**, **Małżonek**, **Dziecko** lub **Inny** (domyślnie).
+5. Dotknij **Dodaj**. Osoba pojawi się w sekcji **Oczekujący członkowie rodziny** wraz ze swoją rolą; dotknij **Usuń**, aby usunąć kogoś z listy. Powtórz czynność dla pozostałych osób.
+6. Dotknij **Zapisz zmiany** (lub **Prześlij do zatwierdzenia**).
+
+Jeśli Twój kościół sprawdza zmiany w katalogu, nowi członkowie rodziny są przesyłani razem z pozostałymi zmianami do zatwierdzenia przez kościół. W przeciwnym razie zostaną dodani do Twojego gospodarstwa domowego natychmiast po zapisaniu.
 
 ## Konto
 
-Sekcja Konto zarządza Twoim logowaniem, a nie profilem w kościele. Dotknij **Edytuj**, aby ją otworzyć:
+Sekcja Konto zarządza Twoim loginem, a nie profilem kościelnym. Dotknij **Edytuj**, aby ją otworzyć:
 
-- **Nazwa wyświetlana** — imię i nazwisko widoczne przy logowaniu (osobne od imienia i nazwiska w profilu kościelnym).
+- **Nazwa wyświetlana** — imię i nazwisko widoczne przy Twoim loginie (osobne od nazwiska w profilu kościelnym).
 - **Zmień e-mail** — zaktualizuj adres e-mail, którego używasz do logowania.
 - **Zmień hasło** — wpisz obecne hasło, a następnie nowe hasło dwukrotnie. Nowe hasło musi mieć co najmniej 8 znaków.
 
-Każda część ma własny przycisk **Zapisz**.
+Każda z tych części ma własny przycisk **Zapisz**.
 
 ## Prywatność
 
-Sekcja Prywatność pokazuje, kto może zobaczyć Twoje dane kontaktowe w ramach ChurchApps. Dotknij **Zmień**, aby otworzyć **Preferencje widoczności**:
+Sekcja Prywatność pokazuje, kto może zobaczyć Twoje dane kontaktowe w całym ChurchApps. Dotknij **Zmień**, aby otworzyć **Preferencje widoczności**:
 
-- **Ukryj mnie w katalogu członków** — przełącznik, który całkowicie usuwa Cię z [katalogu członków](../community/member-directory.md).
-- **Widoczność adresu**, **Widoczność telefonu** i **Widoczność e-maila** — każda ma własną listę rozwijaną, dzięki czemu możesz na przykład udostępnić e-mail całemu kościołowi, a adres zachować w tajemnicy. Dostępne opcje to:
+- **Ukryj mnie w katalogu członków** — przełącznik, który usuwa Cię całkowicie z [katalogu członków](../community/member-directory.md).
+- **Widoczność adresu**, **Widoczność telefonu** i **Widoczność e-maila** — każda ma własną listę rozwijaną, dzięki czemu możesz na przykład udostępnić swój e-mail całemu kościołowi, a adres zachować w tajemnicy. Dostępne opcje to:
 
 | Poziom | Kto może to zobaczyć |
 |---|---|
@@ -71,14 +80,14 @@ Sekcja Prywatność pokazuje, kto może zobaczyć Twoje dane kontaktowe w ramach
 | **Moi liderzy grup i personel** | Widoczne wyłącznie dla personelu kościoła oraz liderów grup, do których należysz. |
 | **Tylko personel** | Widoczne wyłącznie dla personelu kościoła (osób ze statusem członkostwa Personel lub uprawnieniem do przeglądania osób). |
 
-Dotknij **Zapisz**, aby zastosować wybrane ustawienia. Twój kościół ustawia domyślną wartość dla każdego z tych trzech pól — zobacz [Ustawienia aplikacji mobilnej](/docs/b1-admin/settings/mobile-app) — ale to, co wybierzesz tutaj, zastępuje tę wartość dla Twojego własnego rekordu.
+Dotknij **Zapisz**, aby zastosować wybrane ustawienia. Kościół ustala domyślną wartość dla każdego z tych trzech pól — zobacz [Ustawienia aplikacji mobilnej](/docs/b1-admin/settings/mobile-app) — ale to, co wybierzesz tutaj, zastąpi tę wartość dla Twojego własnego rekordu.
 
 :::tip
-Zawsze widzisz swoje własne dane niezależnie od tych ustawień, a personel z uprawnieniem do przeglądania osób również zawsze je zobaczy.
+Zawsze widzisz swoje własne dane niezależnie od tych ustawień, a personel z uprawnieniem do przeglądania osób również zawsze je widzi.
 :::
 
 ## Powiązane artykuły
 
 - [Strona Ja](./me-page.md) — Twój osobisty pulpit
 - [Katalog członków](../community/member-directory.md) — Przeglądanie innych członków
-- [Zatwierdzanie zmian w profilu](/docs/b1-admin/profile/approving-profile-changes) — Jak kościół sprawdza przesłane zmiany
+- [Zatwierdzanie zmian profilu](/docs/b1-admin/profile/approving-profile-changes) — Jak kościół przegląda przesłane zmiany

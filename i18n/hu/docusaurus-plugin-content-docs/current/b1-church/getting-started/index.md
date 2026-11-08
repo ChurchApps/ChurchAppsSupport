@@ -1,60 +1,56 @@
 ---
 title: "Első lépések a B1.church tagi portállal"
 sidebar_label: "Első lépések"
-description: "Keresse meg egyháza B1.church webhelyét, hozzon létre tagi fiókot, és nézze meg, mit kínál a portál: csoportok, adakozás, bejelentkezés és tervek."
+description: "Keresse meg gyülekezete B1.church oldalát, hozzon létre tagi fiókot, és ismerje meg, mit kínál a portál: a csoportoktól és adakozástól a bejelentkezésig és a szolgálati beosztásokig."
 ---
 
 # Első lépések a B1.church használatával
 
 <div class="article-intro">
 
-A B1.church a gyülekezeted online otthona. Itt maradhatsz kapcsolatban a gyülekezeteddel, megtekintheted a híreket, online adakozhatsz, bejelentkezhetsz az istentiszteletekre, és még sok más mindent elvégezhetsz. Ez a rész végigvezet a tagi portál elérésének és használatának alapjain.
+A B1.church gyülekezete online otthona. Itt tarthatja a kapcsolatot közösségével, megtekintheti a híreket, adakozhat online, jelentkezhet be az istentiszteletekre, és még sok más is elérhető. Ez a szakasz végigvezeti Önt a tagi portál elérésének és használatának alapjain.
 
 </div>
 
-## A gyülekezeted oldalának elérése
+## A gyülekezet oldalának elérése
 
-A gyülekezetednek saját B1.church címe van, jellemzően a `https://yourchurchname.b1.church` formátumban. Ezt a címet bármilyen webböngészőben megnyithatod számítógépen, táblagépen vagy telefonon. A pontos címet a gyülekezeti vezetőség vagy a fogadócsoport tudja megadni.
+Gyülekezetének saját B1.church címe van, általában a `https://yourchurchname.b1.church` formátumban. Ezt a címet bármely webböngészőben megnyithatja számítógépén, táblagépén vagy telefonján. A pontos címet a gyülekezeti vezetés vagy a fogadócsapat tudja megadni.
 
-Az oldal első megnyitásakor a gyülekezeted nyilvános weboldalát látod, a saját arculatával, navigációs menüivel és tartalmi oldalaival.
+Az oldal első megnyitásakor a gyülekezet nyilvános weboldalát látja, egyedi arculatával, navigációs menüivel és tartalmi oldalaival.
 
 ## Fiók létrehozása
 
-A tagi portál és annak funkciói eléréséhez ChurchApps-fiókra van szükséged.
+A tagi portál és funkciói eléréséhez ChurchApps-fiókra van szüksége.
 
-1. Nyisd meg a gyülekezeted B1.church címét.
-2. Kattints a **Bejelentkezés** gombra az oldal jobb felső sarkában.
-3. A bejelentkezési képernyőn válaszd az új fiók **Regisztráció** lehetőségét.
-4. Add meg a **keresztnevedet**, a **vezetéknevedet**, az **e-mail-címedet**, és válassz egy **jelszót**.
-5. Töltsd ki a regisztrációs űrlapot.
+1. Nyissa meg gyülekezete B1.church címét.
+2. Kattintson az oldal jobb felső sarkában található **Bejelentkezés** gombra.
+3. A bejelentkezési képernyőn válassza az új fiók **Regisztráció** lehetőségét.
+4. Adja meg a **keresztnevét**, a **vezetéknevét**, az **e-mail-címét**, és válasszon **jelszót**.
+5. Töltse ki a regisztrációs űrlapot.
 
-A regisztráció után bejelentkezhetsz, és elérheted a tagi portált minden eszközével együtt.
+A regisztráció után bejelentkezhet, és elérheti a tagi portál minden eszközét.
 
 :::tip
-Ha a gyülekezeted már felvett a rendszerébe, használd azt az e-mail-címet, amelyet nála megadtál. Így a fiókod összekapcsolódik a meglévő gyülekezeti profiloddal.
+Ha gyülekezete már felvette Önt a rendszerébe, használja azt az e-mail-címet, amelyet náluk nyilvántartásba vettek. Így fiókja összekapcsolódik meglévő gyülekezeti profiljával.
 :::
 
-## Mit tehetsz?
+## Mit tehet?
 
-Miután bejelentkeztél, a tagi portálon a következőkhöz férhetsz hozzá:
+Miután bejelentkezett, a tagi portálon az alábbiakhoz fér hozzá:
 
-- A **Kezdőlap** irányítópult, amely a szolgálataid, csoportjaid és adakozásaid előnézetét mutatja, valamint a **Én** oldal, ahol látható, mi vár rád a közeljövőben
-- A **Csoportok**, amelyekhez tartozol, beleértve a beszélgetéseket és az eseményeket
-- Online **Adakozás** adományozáshoz
-- **Tervek**, amelyek bemutatják az önkéntes beosztásodat és a szolgálat részleteit
+- A **Főoldal** irányítópult, amely a szolgálatainak, csoportjainak és adakozásainak összefoglalóját mutatja, valamint a **Én** oldal, ahol az Önre váró események láthatók
+- Az Ön által tagja **Csoportok**, beleértve a beszélgetéseket és eseményeket
+- Online **Adakozás** adományokhoz
+- **Beosztások**, amelyek a szolgálati beosztását és az istentiszteleti részleteket mutatják
 - **Bejelentkezés** istentiszteletekre és eseményekre
-- A **Közösség** névjegyzéke, ahol más tagokat találhatsz meg és léphetsz velük kapcsolatba
+- A **Közösség** címtár, ahol más tagokat találhat meg és léphet velük kapcsolatba
 
-## Elérés a telefonodon
+## Elérés telefonon
 
-A B1.church bármely mobilböngészőben működik. Az alkalmazásszerűbb élményért telepítsd a gyülekezeted tagi portálját **progresszív webalkalmazásként (PWA)** — látogass el a `https://yourchurchname.b1.church/mobile/install` címre az eszközöd típusának megfelelő, lépésenkénti útmutatóért, vagy add hozzá közvetlenül a kezdőképernyődhöz a Safarin vagy a Chrome-on keresztül. Alkalmazásboltra nincs szükség. Az utasításokért lásd: [Telepítés alkalmazásként (PWA)](./installing-pwa.md).
-
-:::info
-A régi, natív B1 Mobile alkalmazás elavult. A PWA a jövőben a támogatott módja annak, hogy telefonon használd a B1.church-öt — a korábbi dokumentációért lásd a [B1 Mobile referenciaoldalt](/docs/b1-mobile/).
-:::
+A B1.church bármely mobilböngészőben működik. Az alkalmazás-szerűbb élményért telepítse gyülekezete tagi portálját **progresszív webalkalmazásként (PWA)** — keresse fel a `https://yourchurchname.b1.church/mobile/install` címet az eszközéhez igazított lépésekért, vagy adja hozzá közvetlenül a kezdőképernyőhöz a Safariból vagy a Chome-ból. Alkalmazásboltra nincs szükség. Az utasításokért lásd: [Telepítés alkalmazásként (PWA)](./installing-pwa.md).
 
 ## Következő lépések
 
-- [Bejelentkezés](./logging-in.md) -- Megtudhatod, hogyan jelentkezz be és kezeld a munkameneted.
-- [Navigáció a B1App-ban](./navigating.md) -- Eligazodás a tagi portálon.
-- [Telepítés alkalmazásként (PWA)](./installing-pwa.md) -- A B1.church hozzáadása a telefonod kezdőképernyőjéhez.
+- [Bejelentkezés](./logging-in.md) -- Megtudhatja, hogyan jelentkezhet be és kezelheti munkamenetét.
+- [Eligazodás a B1App-ban](./navigating.md) -- Tájékozódjon a tagi portálon.
+- [Telepítés alkalmazásként (PWA)](./installing-pwa.md) -- Adja hozzá a B1.church alkalmazást telefonja kezdőképernyőjéhez.

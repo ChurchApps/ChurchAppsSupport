@@ -1,105 +1,104 @@
 ---
-title: "Gids: Online geven instellen"
-description: "Stel online geven in B1 Admin in door donatiefondsen aan te maken, Stripe te koppelen en een Donate-pagina aan je B1.church-website toe te voegen."
+title: "Gids: Online Geven Instellen"
+description: "Stel online geven in B1 Admin in door donatiefondsen aan te maken, Stripe te koppelen en een Doneer-pagina aan je B1.church-website toe te voegen voor leden."
 ---
 
-# Online geven instellen
+# Online Geven Instellen
 
 <div class="article-intro">
 
-Loop door alles wat u nodig hebt om online donaties op uw kerk te accepteren -- van het maken van donatiefondsen tot het verbinden van Stripe voor betalingsverwerking tot het delen van de geefpagina met uw gemeente. Aan het einde kunnen leden online geven via uw website en mobiele app.
+Doorloop alles wat nodig is om online donaties in je kerk te ontvangen — van het aanmaken van donatiefondsen, tot het koppelen van Stripe voor betalingsverwerking, tot het delen van de gevenpagina met je gemeente. Aan het eind kunnen leden online geven via je website en mobiele app.
 
 </div>
 
 <div class="prereqs">
-<h4>Voordat u begint</h4>
+<h4>Voordat je begint</h4>
 
-- B1 Admin-account met beheerdersrechten -- zie [Rollen & Machtigingen](../people/roles-permissions.md)
-- Een Stripe-account (maak er een gratis aan op [stripe.com](https://stripe.com) indien nodig)
+- B1 Admin-account met beheerderstoegang — zie [Rollen & Rechten](../people/roles-permissions.md)
+- Een Stripe-account (maak gratis een account aan op [stripe.com](https://stripe.com) indien nodig)
 
 </div>
 
-## Stap 1: Maak donatiefondsen
+## Stap 1: Donatiefondsen Aanmaken
 
-Fondsen zijn de categorieën waaraan donoren kunnen geven. U hebt minstens één fonds nodig voordat u donaties kunt accepteren.
+Fondsen zijn de categorieën waarin donateurs kunnen geven. Je hebt minstens één fonds nodig voordat je donaties kunt ontvangen.
 
-Volg de gids [Fondsen](../donations/funds.md) om uw gievingscategorieën in te stellen:
+Volg de gids [Fondsen](../donations/funds.md) om je gevenscategorieën in te stellen:
 
-1. Maak uw meestvoorkomende fondsen (bijv. "Algemeen Fonds", "Bouwfonds", "Missies")
-2. Markeer aftrekbare fondsen op de juiste manier -- dit heeft invloed op jaar-eindgifteverklaringen
+1. Maak je meest voorkomende fondsen aan (bijv. "Algemeen Fonds", "Bouwfonds", "Zending")
+2. Markeer fondsen die fiscaal aftrekbaar zijn — dit heeft invloed op de jaaroverzichten van giften
 
 :::tip
-U kunt op elk moment meer fondsen toevoegen. Begin met uw meestvoorkomende geefcategorieën.
+Je kunt op elk moment extra fondsen toevoegen. Begin met je meest voorkomende gevenscategorieën.
 :::
 
-## Stap 2: Verbind Stripe
+## Stap 2: Stripe Koppelen
 
-Stripe verwerkt alle betalingsverwerking. U verbindt uw Stripe-account met B1 Admin zodat donaties in uw bankrekening vloeien.
+Stripe verwerkt alle betalingen. Je koppelt je Stripe-account aan B1 Admin, zodat donaties op je bankrekening terechtkomen.
 
-Volg de gids [Online Geven instellen](../donations/online-giving-setup.md) om Stripe te verbinden:
+Volg de gids [Online Geven Instellen](../donations/online-giving-setup.md) om Stripe te koppelen:
 
-1. Meld u aan bij uw Stripe-dashboard en haal uw Publishable Key en Secret Key op
-2. Ga in B1 Admin naar Instellingen en voer beide sleutels in
+1. Log in op je Stripe-dashboard en haal je Publishable Key en Secret Key op
+2. Ga in B1 Admin naar Instellingen en vul beide sleutels in
 
 :::warning
-Stripe toont uw Secret Key slechts eenmaal. Kopieer en sla het op voordat u het Stripe-dashboard verlaat. Als u het kwijtraakt, moet u een nieuw genereren.
+Stripe toont je Secret Key slechts één keer. Kopieer en bewaar deze voordat je het Stripe-dashboard verlaat. Als je hem kwijtraakt, moet je een nieuwe genereren.
 :::
 
-## Stap 3: Voeg een geefpagina toe aan uw website
+## Stap 3: Een Gevenpagina Toevoegen aan Je Website
 
-Maak geven toegankelijk door een donatiegepagina aan uw B1-website toe te voegen.
+Maak geven toegankelijk door een donatiepagina aan je B1-website toe te voegen.
 
-Volg de gidsen [Online Geven instellen](../donations/online-giving-setup.md) en [Pagina's beheren](../website/managing-pages.md) om:
+Volg de gidsen [Online Geven Instellen](../donations/online-giving-setup.md) en [Pagina's Beheren](../website/managing-pages.md) om:
 
-1. Voeg een tabblad "Donatie" toe aan uw B1.church-site
-2. Uw geef-URL zal zijn: `https://yoursubdomain.b1.church/donate`
-3. Leden kunnen geven zonder in te loggen (openbare pagina) of inloggen voor opgeslagen betaalmethoden en donatiehistorie
+1. Een tabblad "Doneer" aan je B1.church-site toe te voegen
+2. Je gever-URL wordt: `https://yoursubdomain.b1.church/donate`
+3. Leden kunnen geven zonder in te loggen (openbare pagina) of inloggen voor opgeslagen betaalmethoden en donatiegeschiedenis
 
-## Stap 4: Maak een testdonatie
+## Stap 4: Een Testdonatie Doen
 
-Voordat u aan uw gemeente aankondigt, verifieert u dat alles werkt.
+Controleer alles voordat je het aan je gemeente aankondigt.
 
-1. Maak een kleine testdonatie om te verifiëren dat de stroom van begin tot eind werkt
-2. Controleer of de donatie in B1 Admin onder Donaties verschijnt
+1. Doe een kleine testdonatie om te controleren of het hele proces goed werkt
+2. Controleer of de donatie in B1 Admin verschijnt onder Donaties
 
 :::tip
-Gebruik Stripe's testmodus eerst als u wilt verifiëren zonder werkelijke kosten, schakel vervolgens naar livemodus voordat u aan uw gemeente aankondigt.
+Gebruik eerst de testmodus van Stripe als je wilt controleren zonder echte betalingen, en schakel daarna over naar de live-modus voordat je het aan je gemeente aankondigt.
 :::
 
-## Stap 5: Maak aankondigingen aan uw gemeente
+## Stap 5: Je Gemeente Informeren
 
-Verspreid het woord zodat leden weten dat zij online kunnen geven.
+Laat je leden weten dat ze online kunnen geven.
 
-1. Deel de geef-URL via uw website, e-mailnieuwsbrieven, bulletins en social media
-2. Leden kunnen ook geven via de [B1 Mobiele app](../../b1-mobile/giving/index.md) -- de geeffunctie is ingebouwd
+1. Deel de gever-URL via je website, e-mailnieuwsbrieven, kerkbladen en sociale media
+2. Leden kunnen ook geven via de [B1 App](../../b1-church/giving/index.md) — de gevenfunctie is al ingebouwd
 
 :::info
-Leden die inloggen, kunnen betaalmethoden opslaan, terugkerende donaties instellen en hun gifthistorie bekijken. Anoniem geven werkt ook -- geen inloggegevens nodig.
+Leden die inloggen kunnen betaalmethoden opslaan, terugkerende donaties instellen en hun gevengeschiedenis bekijken. Anoniem geven werkt ook — er is geen inlog nodig.
 :::
 
-## Stap 6: Doorlopend beheer
+## Stap 6: Doorlopend Beheer
 
-Houd uw donatiegegevens actueel en genereer rapporten gedurende het jaar.
+Houd je donatieadministratie up-to-date en genereer het hele jaar door rapporten.
 
-1. [Importeer Stripe-transacties](../donations/stripe-import.md) regelmatig (wekelijks of maandelijks) om uw gegevens actueel te houden
-2. [Bekijk donatierapporten](../donations/donation-reports.md) om giftendtrends en totalen per fonds bij te houden
-3. [Genereer jaar-eindgiftverklaringen](../donations/giving-statements.md) voor de belastinggegevens van uw donoren
+1. [Stripe-transacties importeren](../donations/stripe-import.md) regelmatig (wekelijks of maandelijks) om je administratie actueel te houden
+2. [Donatierapporten bekijken](../donations/donation-reports.md) om gevenstrends en totalen per fonds bij te houden
+3. [Jaaroverzichten van giften genereren](../donations/giving-statements.md) voor de belastingadministratie van je donateurs
 
 :::tip
-Voer Stripe-import minstens maandelijks uit zodat uw gegevens actueel blijven. Zie de [Gids voor jaar-eindrapporten](./year-end-reports.md) voor het volledige jaar-eindproces.
+Voer Stripe-importen minstens maandelijks uit, zodat je administratie up-to-date blijft. Zie de [Gids Jaarrapportages](./year-end-reports.md) voor het volledige jaarproces.
 :::
 
-## U bent klaar!
+## Klaar!
 
-Uw kerk accepteert nu online donaties. Leden kunnen geven via uw website, de B1 Mobiele app of elk apparaat met een webbrowser. Alle donaties worden automatisch in B1 Admin bijgehouden.
+Je kerk accepteert nu online donaties. Leden kunnen geven via je website, de B1 App of elk apparaat met een webbrowser. Alle donaties worden automatisch bijgehouden in B1 Admin.
 
-## Gerelateerde artikelen
+## Gerelateerde Artikelen
 
-- [Fondsen](../donations/funds.md) -- donatiecategorieën maken en beheren
-- [Batches](../donations/batches.md) -- donaties in groepen organiseren
-- [Donaties registreren](../donations/recording-donations.md) -- handmatig contanten en cheque-donaties invoeren
-- [Stripe Import](../donations/stripe-import.md) -- online transacties in B1 Admin halen
-- [Donatie-rapporten](../donations/donation-reports.md) -- giftentrends en totalen bekijken
-- [Giftverklaringen](../donations/giving-statements.md) -- jaar-eindbelastingverklaringen genereren
-- [Donaties doen (web)](../../b1-church/giving/making-donations.md) -- de donatiegeving voor leden
-- [Donaties doen (mobiel)](../../b1-mobile/giving/making-donations.md) -- geven van de mobiele app
+- [Fondsen](../donations/funds.md) — donatiecategorieën aanmaken en beheren
+- [Batches](../donations/batches.md) — donaties in groepen indelen
+- [Donaties Registreren](../donations/recording-donations.md) — contant- en cheque-donaties handmatig invoeren
+- [Stripe-import](../donations/stripe-import.md) — online transacties in B1 Admin ophalen
+- [Donatierapporten](../donations/donation-reports.md) — gevenstrends en totalen bekijken
+- [Jaaroverzichten van Giften](../donations/giving-statements.md) — jaarlijkse belastingoverzichten genereren
+- [Donaties Doen](../../b1-church/giving/making-donations.md) — de gevenervaring voor leden op B1.church en in de B1 App

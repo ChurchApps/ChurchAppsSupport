@@ -1,13 +1,13 @@
 ---
-title: "Mobil alkalmazások"
-description: "A ChurchApps Expo és React Native mobilalkalmazásai: B1 Mobile, B1 Checkin, LessonsScreen, a közös eszközlánc beállítási útmutatójával."
+title: "Mobilalkalmazások"
+description: "Áttekintés a ChurchApps Expo és React Native mobilalkalmazásairól, a B1 Checkinről és a LessonsScreenről, valamint a közös Expo-eszköztáruk helyi beállításáról."
 ---
 
-# Mobil alkalmazások
+# Mobilalkalmazások
 
 <div class="article-intro">
 
-A ChurchApps mobil alkalmazásai **React Native** és **Expo** alapon készülnek, és natív élményt nyújtanak Androidon, iOS-en és Android TV-n. Minden mobil alkalmazás ugyanazt az Expo-alapú eszközláncot használja, így ha az egyiket el tudod készíteni, a többit is el tudod készíteni.
+A ChurchApps mobilalkalmazásai **React Native** és **Expo** segítségével készülnek, natív élményt nyújtva Androidon, iOS-en és Android TV-n. Minden mobilalkalmazás ugyanazt az Expo-alapú eszköztárat használja, így ha az egyiket el tudod készíteni, a többit is el tudod.
 
 </div>
 
@@ -15,22 +15,34 @@ A ChurchApps mobil alkalmazásai **React Native** és **Expo** alapon készülne
 
 | Alkalmazás | Cél | Platform |
 |-----|---------|----------|
-| [B1 Mobile](./b1-mobile.md) | Az elsődleges, egyházi tagoknak szánt alkalmazás | Android, iOS |
-| B1 Checkin | Bejelentkező állomásokon használt kioszk alkalmazás | Android, iOS |
-| LessonsScreen | Android TV alkalmazás, amellyel leckék jeleníthetők meg az osztálytermekben | Android TV |
+| B1 Checkin | Bejelentkező kioszk alkalmazás a bejelentkező állomásokhoz | Android, iOS |
+| LessonsScreen | Android TV-alkalmazás, amely a leckéket jeleníti meg az osztatermekben | Android TV |
 
-### B1 Mobile
-
-Az egyház fő tagalkalmazása. A tagok megtekinthetik a névjegyzéket, hozzáférhetnek az adakozáshoz, rögzíthetik a részvételt, értesítéseket kaphatnak, és kapcsolatba léphetnek egyházi közösségükkel. A részletekért lásd a [B1 Mobile beállítási útmutatót](./b1-mobile.md).
+:::info
+A tagok számára készült alkalmazás a B1 App -- a B1App `/mobile` része, amelyet a tagok progresszív webalkalmazásként (Progressive Web App, PWA) telepítenek. Ez egy webalkalmazás, nem Expo-projekt. Helyi futtatásához lásd: [Webalkalmazások](../web-apps/index.md).
+:::
 
 ### B1 Checkin
 
-Egyházi bejelentkező állomásokhoz készült, kifejezetten erre a célra tervezett kioszk alkalmazás. Egyszerű, érintésbarát felületet biztosít, amellyel a tagok gyermekeket jelentkeztethetnek be, és rögzíthetik a részvételt istentiszteleteken és eseményeken.
+Kifejezetten a gyülekezetek bejelentkező állomásaihoz tervezett kioszk alkalmazás. Egyszerű, érintésbarát felületet biztosít, amellyel a tagok gyermekeiket jelentkeztethetik be, és rögzíthetik a részvételt istentiszteleteken és eseményeken.
 
 ### LessonsScreen
 
-Android TV alkalmazás, amely lecketartalmakat jelenít meg az osztálytermekben. A tanárok diákat, videókat és feladatokat küldhetnek a TV-képernyőre, így a tananyag könnyen bemutatható az órákon.
+Android TV-alkalmazás, amely a leckeanyagokat jeleníti meg az osztatermekben. A tanárok leckediákat, videókat és feladatokat küldhetnek a TV-képernyőre, így a tananyag órán könnyen bemutatható.
 
-:::info
-Minden mobil alkalmazás ugyanazt az Expo-alapú eszközláncot használja, és hasonló beállítási lépéseket követ. A [B1 Mobile](./b1-mobile.md) útmutató referenciaként szolgál az összes mobilprojekt általános beállítási folyamatához.
-:::
+## Helyi telepítés
+
+Minden mobilalkalmazás ugyanazt az Expo-alapú eszköztárat használja, és hasonló telepítési lépéseket követ. A B1 Checkin példáján keresztül:
+
+1. Telepítsd a **Node.js**-t, az Android Studiót (az Android emulátorhoz) és az Xcode-ot (az iOS szimulátorhoz, csak macOS-en) -- lásd: [Előfeltételek](../setup/prerequisites.md).
+2. Klónozd a tárolót, és telepítsd a függőségeket (a B1 Checkin Yarnt használ):
+
+   ```bash
+   git clone https://github.com/ChurchApps/B1Checkin.git
+   cd B1Checkin && yarn install
+   ```
+
+3. Másold a `dotenv.sample.txt` fájlt `.env` névre, és állítsd be azt a környezetet, amelyhez az alkalmazásnak kapcsolódnia kell (`dev` helyi API esetén) -- lásd: [Környezeti változók](../setup/environment-variables.md#b1checkin-react-native--expo).
+4. Indítsd el az Expo fejlesztői szervert a `yarn start` paranccsal, majd futtasd a `yarn android` vagy `yarn ios` parancsot, hogy az alkalmazás emulátoron vagy eszközön elinduljon.
+
+A kiadási buildekről és a levegőn keresztüli (over-the-air) frissítésekről lásd: [Mobil telepítés](../deployment/mobile.md).

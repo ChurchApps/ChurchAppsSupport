@@ -1,14 +1,14 @@
 ---
 title: "Inloggen bij B1 Church Checkin"
-sidebar_label: "Aanmelden"
-description: "Log in op de B1 Church Checkin-kioskapp, kies je kerk en begrijp automatisch inloggen, beheerinstellingen en uitloggen op de incheck-tablet."
+sidebar_label: "Inloggen"
+description: "Meld u aan bij de B1 Church Checkin-kioskapp, kies uw kerk en lees over automatisch inloggen, beheerinstellingen en uitloggen op de incheck-tablet."
 ---
 
-# Aanmelden
+# Inloggen
 
 <div class="article-intro">
 
-Voordat de kiosk kan worden gebruikt voor aanmelding, moet u zich aanmelden met een ChurchApps-account dat toegang heeft tot uw kerk. Deze pagina behandelt het aanmeldingsproces de eerste keer, kerkselectie, auto-aanmeldingsgedrag en hoe u zich afmeldt.
+Voordat de kiosk voor inchecken kan worden gebruikt, moet u zich aanmelden met een ChurchApps-account dat toegang heeft tot uw kerk. Deze pagina behandelt het eerste inlogproces, de kerkselectie, het gedrag van automatisch inloggen en hoe u uitlogt.
 
 </div>
 
@@ -16,60 +16,67 @@ Voordat de kiosk kan worden gebruikt voor aanmelding, moet u zich aanmelden met 
 <h4>Voordat u begint</h4>
 
 - Installeer B1 Church Checkin op uw Android-tablet (zie [Aan de slag](./index.md))
-- Zorg ervoor dat u uw ChurchApps-account e-mailadres en wachtwoord paraat hebt
+- Zorg dat u uw e-mailadres en wachtwoord voor uw ChurchApps-account bij de hand hebt
+- Het account heeft het recht **Checkin** (of **Aanwezigheid bewerken**) nodig bij uw kerk. Een beheerder voegt dit toe in B1 Admin onder **Instellingen > Rollen**. Zie [Accounts voor incheckkiosken](../../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts)
 
 </div>
 
-## Eerste aanmelding
+## Eerste keer inloggen
 
-1. Open de B1 Church Checkin-app. Na het splash-scherm ziet u het aanmeldingsscherm met het B1 Church Checkin-logo.
+1. Open de app B1 Church Checkin. Na het startscherm ziet u het inlogscherm met het logo van B1 Church Checkin.
 2. Voer uw **e-mailadres** in het eerste veld in.
 3. Voer uw **wachtwoord** in het tweede veld in.
-4. Tik op de knop **Aanmelden**.
+4. Tik op de knop **Inloggen**.
 
-De app valideert uw referenties en meldt u aan. Als het e-mailadres of wachtwoord onjuist is, ziet u een foutbericht onderaan het scherm.
+De app controleert uw gegevens en meldt u aan. Als het e-mailadres of wachtwoord onjuist is, ziet u onderaan het scherm een foutmelding.
+
+Als voor het account [tweestapsverificatie](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) is ingeschakeld, vraagt de app daarna om een code. Voer de 6-cijferige code in uit de authenticator-app van de accounteigenaar, of een van de back-upcodes, en tik opnieuw op **Inloggen**. U hebt de code alleen nodig bij deze eerste keer inloggen. Daarna blijft de kiosk ingelogd.
 
 :::info
-Dit is dezelfde e-mail en hetzelfde wachtwoord dat u voor B1 Admin of enig ander ChurchApps-product gebruikt. U hebt geen afzonderlijk account nodig voor de aanmeldingskiosk.
+Dit zijn dezelfde e-mail en hetzelfde wachtwoord die u gebruikt voor B1 Admin of een ander ChurchApps-product. U hebt geen apart account nodig voor de incheckkiosk.
 :::
 
 ## Uw kerk selecteren
 
-Na een succesvolle aanmelding laadt de app een lijst met kerken die aan uw account zijn gekoppeld. Elke kerk wordt weergegeven als een kaart met de kerknaam en logo (indien geconfigureerd in B1 Admin).
+Na een geslaagde inlog laadt de app de kerken waar uw account het recht **Checkin** of **Aanwezigheid bewerken** heeft. Kerken waar u alleen andere rechten hebt, worden weggelaten. Als er geen over blijven, toont de app **Geen toegang tot inchecken** en vraagt de app u uw kerkbeheerder te laten het Checkin-recht toe te voegen aan een van uw rollen. Elke kerk wordt getoond als kaart met de naam en het logo van de kerk (als dat in B1 Admin is ingesteld).
 
-- Als uw account aan **slechts één kerk** is gekoppeld, ziet u nog steeds het selectiescherm. Tik op uw kerk om door te gaan.
-- Als uw account aan **meerdere kerken** is gekoppeld, tik op de kerk die deze kiosk moet bedienen.
+- Als uw account aan **slechts één kerk** is gekoppeld, ziet u toch het selectiescherm. Tik op uw kerk om door te gaan.
+- Als uw account aan **meerdere kerken** is gekoppeld, tik dan op de kerk die deze kiosk moet bedienen.
 
-Zodra u een kerk selecteert, laadt de app de branding en verschijnselsinstellingen van die kerk. Uw kerklogo verschijnt in de header op alle volgende schermen.
+Zodra u een kerk selecteert, laadt de app de huisstijl en weergave-instellingen van die kerk. Het logo van uw kerk verschijnt daarna in de koptekst op alle volgende schermen.
 
-## Auto-aanmelding bij retourbezoeken
+## Automatisch inloggen bij terugkerende bezoeken
 
-De app slaat uw e-mailadres, wachtwoord en geselecteerde kerk op na de eerste succesvolle aanmelding. Bij toekomstige starten:
+Na de eerste geslaagde inlog bewaart de app op de tablet een veilig inlogtoken en de door u geselecteerde kerk. Uw wachtwoord wordt niet opgeslagen. Bij de volgende keren dat de app wordt geopend:
 
-- De app meldt zich automatisch aan met uw opgeslagen referenties.
-- Als u eerder een kerk hebt geselecteerd, herstelt het die selectie en neemt u rechtstreeks naar het **dienstenscherm**.
-- Als de opgeslagen referenties niet meer geldig zijn, keert de app terug naar het aanmeldingsscherm zodat u zich opnieuw kunt aanmelden.
+- Meldt de app u automatisch opnieuw aan met het opgeslagen token.
+- Als u eerder een kerk had geselecteerd, herstelt de app die keuze en gaat direct naar het **scherm met diensten**.
+- Als de opgeslagen inlog niet meer geldig is, keert de app terug naar het inlogscherm zodat u opnieuw kunt inloggen.
 
 :::tip
-Omdat de kiosk auto-aanmeldt, hoeft u referenties slechts eenmaal in te voeren tijdens de eerste instelling. Daarna kan de tablet worden ingeschakeld en is deze klaar voor gebruik.
+Omdat de kiosk automatisch inlogt, hoeft u de inloggegevens alleen bij de eerste installatie in te voeren. Daarna kan de tablet worden ingeschakeld en is hij meteen klaar voor gebruik.
 :::
 
-## Beheerdersgegevens
+## Beheerinstellingen
 
-Beheerdersgegevens zijn opzettelijk verborgen zodat kerkleden die de kiosk gebruiken, niet per ongeluk de configuratie kunnen wijzigen. Om ze te openen:
+Beheerinstellingen zijn bewust verborgen, zodat kerkleden die de kiosk gebruiken de configuratie niet per ongeluk kunnen wijzigen. Om ze te openen:
 
-1. Tik in de header **zeven keer snel** (binnen twee seconden) op het **kerklogo**.
-2. Als er een kiosk-PIN is ingesteld, voert u de PIN in wanneer hierom wordt gevraagd.
-3. Het scherm **Beheerdersgegevens** wordt geopend met de volgende opties:
-   - **Dienst wijzigen** — wissel de geselecteerde diensttijd
-   - **Printer wijzigen** -- open [printerinstellingen](./printer-setup.md) om naar printers te scannen en er een te selecteren
-   - **PIN instellen/wijzigen** -- stel of werk de kiosk-PIN in die beheerderstoegang beveiligt
-   - **Afmelden** -- meld u af en keer terug naar het aanmeldingsscherm
+1. Tik zeven keer snel achter elkaar (binnen twee seconden) op het **kerklogo** in de koptekst.
+2. Als er een kiosk-pincode is ingesteld, voer dan de pincode in wanneer daarom wordt gevraagd.
+3. Het scherm **Beheerinstellingen** opent met de volgende opties:
+   - **Dienst wijzigen**: wissel de geselecteerde diensttijd
+   - **Printer wijzigen**: open de [printerinstellingen](./printer-setup.md) om naar een printer te zoeken en die te selecteren
+   - **Beheer-pincode instellen** (of **Beheer-pincode wijzigen** zodra die is ingesteld): stel de kiosk-pincode in of wijzig deze. Die pincode beschermt de beheertoegang.
+   - **Noodbroadcast**: stuur een sms naar de voogden van elk ingecheckt gezin (zie [Noodbroadcast](../check-in/checking-out.md#emergency-broadcast))
+   - **Modus bemande post**: een schakelaar die uitchecken, oproepen, opnieuw afdrukken en profielbewerking aan dit station toevoegt (zie [Uitchecken](../check-in/checking-out.md))
+   - **Uitloggen**: meld af en keer terug naar het inlogscherm
+
+   Tik op **Terug naar kiosk** om terug te keren naar inchecken.
 
 :::warning
-Afmelden wist alle opgeslagen referenties en kerkselectie. U moet uw e-mailadres en wachtwoord opnieuw invoeren om de kiosk te gebruiken. Meld u alleen af als u van accounts moet wisselen of de kiosk opnieuw moet configureren.
+Uitloggen wist alle opgeslagen inloggegevens en de kerkselectie. U moet uw e-mailadres en wachtwoord opnieuw invoeren om de kiosk weer te gebruiken. Log alleen uit wanneer u van account wilt wisselen of de kiosk opnieuw wilt configureren.
 :::
 
 ## Volgende stappen
 
-Eenmaal aangemeld, kunt u [een printer instellen](./printer-setup.md) of direct naar de [aanmeldingsworkflow](../check-in/index.md) gaan.
+Zodra u bent ingelogd, kunt u [een printer instellen](./printer-setup.md) of direct naar de [incheckworkflow](../check-in/index.md) gaan.

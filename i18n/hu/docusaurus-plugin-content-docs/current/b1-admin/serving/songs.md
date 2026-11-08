@@ -1,98 +1,100 @@
 ---
 title: "Dalok"
-description: "Dalkönyvtár kezelése a B1 Adminban: dalok keresése, hozzáadása, szerkesztése, ChordPro-szöveg és hangszerelés csatolása, próbafelvételek feltöltése."
+description: "A dalkönyv kezelése a B1 Adminban: dalok keresése és hozzáadása, adatok szerkesztése, ChordPro szöveg és hangszerelések csatolása, valamint próbahanganyag feltöltése."
 ---
 
 # Dalok
 
 <div class="article-intro">
 
-A Dalok oldalon kezelheted az istentiszteleti dalok gyűjteményét. Tartsd egy helyen a dalok részleteit, szövegeit és hangszerelési változatait, hogy a dicsőítő csapat könnyen felkészülhessen a közelgő alkalmakra, és egységes repertoárt tarthasson fenn.
+A Dalok oldal a dicsőítő dalok könyvtárát kezeli. Tartsa az összes dal adatait, szövegét és hangszerelését egy helyen, hogy a dicsőítő csapat könnyen felkészülhessen a közelgő istentiszteletekre, és egységes repertoárt tarthasson fenn.
 
 </div>
 
 <div class="prereqs">
-<h4>Mielőtt elkezdenéd</h4>
+<h4>Mielőtt elkezdi</h4>
 
-- A **B1 Admin** felületen a [Ugrómenüben](../introduction.md#getting-around-with-the-jump-menu) válaszd a **Szolgálat > Dalok** menüpontot a Dalok oldal megnyitásához
-- Opcionálisan állítsd be a [szolgálati terveidet](./plans.md), hogy a dalokat közvetlenül a [szolgálati sorrendbe](./service-order.md) köthesd be
+- A B1 Adminban, a [Ugrás menü](../introduction.md#getting-around-with-the-jump-menu) menüben válassza a **Szolgálat > Dalok** menüpontot a Dalok oldal megnyitásához
+- Opcionálisan állítsa be az [istentiszteleti terveket](./plans.md), hogy a dalokat közvetlenül be lehessen illeszteni a [szolgálati sorrendbe](./service-order.md)
 
 </div>
 
-## Dalgyűjteményed böngészése
+## A dalkönyv böngészése
 
-Amikor megnyitod a **Dalok** oldalt, a dalok táblázatban jelennek meg. Minden sor mutatja a dal bélyegképét, címét, előadóját és hosszát. A lista alatti oldalvezérlőkkel lapozhatsz egy nagyobb gyűjteményben, vagy kereshetsz a keresett dal megtalálásához.
+Amikor megnyitja a **Dalok** oldalt, a dalok táblázatban jelennek meg. Minden sor a dal bélyegképét, címét, előadóját és hosszát mutatja. A lista alatti oldalvezérlőkkel lapozhat egy nagy könyvtárban, vagy kereshet a keresett dal megtalálásához.
 
 ## Dalok keresése
 
-1. Kattints a Dalok oldal tetején lévő **Dalok keresése** mezőbe.
-2. Írd be a dal **címét** vagy az előadó **nevét**.
-3. A lista gépelés közben szűkül, és megmutatja a találatokat a gyűjteményedből, valamint a találatok számát. Kattints a **Törlés** gombra, hogy újra megjelenjen az összes dal.
+1. Kattintson a **Dalok keresése** mezőbe a Dalok oldal tetején.
+2. Írja be a dal **címét** vagy az előadó **nevét**.
+3. A lista gépelés közben szűrődik, megmutatva a találatokat a könyvtárából és a találatok számát. Kattintson a **Törlés** gombra, hogy újra megjelenjen minden dal.
 
 ## Dal hozzáadása
 
-1. Kattints a **Dal hozzáadása** gombra a Dalok oldal tetején.
-2. A **Dal keresése** mezőben keress a külső daladatbázisban a **Cím vagy előadó** szerint.
-3. Válaszd ki a hozzáadni kívánt dalt, vagy kattints a **Kézi létrehozás** gombra, ha nem találod meg.
-4. A dal az alapvető adataival előre kitöltve került be a gyűjteményedbe.
+1. Kattintson a **Dal hozzáadása** gombra a Dalok oldal tetején.
+2. A **Dal keresése** mezőben keressen a külső daladatbázisban **Cím vagy előadó** szerint.
+3. Válassza ki a hozzáadni kívánt dalt, vagy kattintson a **Kézi létrehozás** gombra, ha nem találja.
+4. A dal az alapadatokkal előre kitöltve kerül a könyvtárába.
 
 :::tip
-A dal hozzáadása után kattints rá, hogy átnézhesd és frissíthesd a részleteit, hangszerelési változatokat adhass hozzá, vagy külső linkeket csatolhass hozzá, például YouTube-videókat vagy akkordlapokat.
+A dal hozzáadása után kattintson rá, hogy áttekintse és frissítse az adatait, hangszereléseket adjon hozzá, vagy külső hivatkozásokat csatoljon, például YouTube-videókat vagy akkordlapokat.
 :::
 
-### Ingyenes dalok a WorshipCommonstól
+### Ingyenes dalok a WorshipCommons-tól
 
-A keresési találatok között a szokásos eredmények mellett megjelenhet a **WorshipCommons — ingyenes** szakasz is. Ezek a [WorshipCommons](https://worshipcommons.org) oldalról származó, vasárnapra kész dalok, amelyeket felülvizsgáltak, és dicsőítési használatra engedélyeztek. Minden találat licencjelvényt mutat — **Ingyenes dicsőítésre** vagy **Közkincs** —, így a hozzáadás előtt láthatod a feltételeket.
+A keresési találatok között a szokásos eredmények mellett megjelenhet a **WorshipCommons — ingyenes** szakasz is. Ezek a [WorshipCommons](https://worshipcommons.org) oldalról származó, vasárnapra kész dalok, amelyeket áttekintettek és istentiszteleti használatra engedélyeztek. Minden találat licencjelvényt mutat — **Ingyenes istentiszteleti használatra** vagy **Közkincs** —, így a hozzáadás előtt tudni fogja a feltételeket.
 
-- Kattints egy WorshipCommons-találatra, hogy hozzáadd a gyűjteményedhez, ugyanúgy, mint egy szokásos keresési találatot.
-- Kattints a **Megtekintés a WorshipCommonsban** gombra, hogy az eredeti bejegyzés új lapon nyíljon meg.
+- Kattintson egy WorshipCommons találatra, hogy hozzáadja a könyvtárához, ugyanúgy, mint a szokásos keresési találatot.
+- Kattintson a **Megtekintés a WorshipCommons-on** gombra, hogy az eredeti bejegyzést új lapon nyissa meg.
 
-Csak azok a dalok jelennek meg itt, amelyek átmentek a WorshipCommons felülvizsgálatán, ezért a választék kisebb lehet, mint a fő daladatbázisban.
+Csak azok a dalok jelennek meg itt, amelyek átmentek a WorshipCommons felülvizsgálati folyamatán, ezért a választék kisebb lehet, mint a fő daladatbázisban.
+
+A teljes WorshipCommons-könyvtár böngészéséhez, akkordlapok nyomtatásához vagy diák exportálásához lásd a [WorshipCommons dokumentációt](../../worship-commons/index.md).
 
 ## Dalok törlése
 
-Jelöld be egy vagy több dal melletti négyzetet (vagy a fejlécben lévő négyzetet, hogy kijelöld az összes megjelenített dalt), majd kattints a megjelenő sávban a **Kijelöltek törlése** gombra, és erősítsd meg. A kijelölés megszüntetéséhez kattints a **Törlés** gombra.
+Jelölje be a négyzetet egy vagy több dal mellett (vagy a fejlécben lévő négyzetet, hogy minden megjelenített dalt kijelöljön), majd kattintson a megjelenő sávban a **Kijelöltek törlése** gombra, és erősítse meg. A kijelölés törléséhez kattintson a **Törlés** gombra.
 
 ## Dal megtekintése és szerkesztése
 
-Kattints a dal címére a részletoldal megnyitásához. A dal címe, előadója és olyan részletei, mint az album, a hangnem, a hossz, a BPM és a lüktetés a bal oldalon jelennek meg, a hangszerelésekkel és külső linkekkel együtt. Innen a következőket teheted:
+Kattintson egy dal címére a részletes oldal megnyitásához. A dal címe, előadója, valamint az olyan részletek, mint az album, a hangnem, a hossz, a BPM és a lüktetés a bal oldalon jelennek meg, a hangszerelésekkel és a külső hivatkozásokkal együtt. Innen a következőket teheti:
 
-- **Dalrészletek szerkesztése** — Kattints a **Szerkesztés** gombra a cím, az előadó, a hossz és egyéb metaadatok frissítéséhez. Ha végeztél, kattints a **Kész** gombra. A dal gyűjteményedből való eltávolításához kattints a **Szerkesztés**, majd a **Dal törlése** gombra.
-- **Hangszerelések kezelése** — Minden dalnak több hangszerelése is lehet (például eltérő hangnemek vagy változatok). Kattints a **Hangszerelés hozzáadása** gombra új létrehozásához, a hangszerelés nevére a **Hangszerelések** alatt pedig a megnyitásához.
-- **Szöveg hozzáadása** — Add meg vagy frissítsd az egyes hangszerelések szövegét ChordPro jelöléssel (például `[G]Amazing grace`). A szerkesztő melletti élő előnézet gépelés közben megjeleníti a formázott akkordlapot, így pontosan láthatod, mit fog látni a csapatod.
-- **Hangnem beállítása** — Add meg a zenei hangnemet minden hangszereléshez a szöveg melletti hangnemválasztóval. A választó a hangnemeket a zenészek szokásos írásmódjában sorolja fel (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). A hangnem megváltoztatása azonnal transzponálja a megjelenített akkordokat, mind a hangszerelés oldalán, mind a szolgálati tervből megnyitott dalnál, így a csapatod mindig azt a hangnemet látja az akkordokban, amelyben valójában játszanak. Az akkordok a hangnemhez igazodva kerülnek kiírásra: a b-s hangnemek, például a Bb vagy az Eb, b-s akkordneveket mutatnak (Bb, Eb, Ab), a kereszteseket nem.
-- **Külső linkek hozzáadása** — Csatolj linkeket olyan forrásokhoz, mint a YouTube-videók, akkordlapok vagy máshol tárolt kottaanyagok.
+- **Dal adatainak szerkesztése** -- Kattintson a **Szerkesztés** gombra a cím, az előadó, a hossz és egyéb metaadatok frissítéséhez. Amikor végzett, kattintson a **Kész** gombra. A dal eltávolításához a könyvtárából kattintson a **Szerkesztés**, majd a **Dal törlése** gombra.
+- **Hangszerelések kezelése** -- Minden dalnak lehet több hangszerelése (például eltérő hangnemek vagy változatok). Kattintson a **Hangszerelés hozzáadása** gombra egy új létrehozásához, és kattintson a hangszerelés nevére a **Hangszerelések** alatt a megnyitásához.
+- **Szöveg hozzáadása** -- Adja meg vagy frissítse minden hangszerelés szövegét ChordPro jelölésmóddal (például `[G]Amazing grace`). A szerkesztő melletti élő előnézet gépelés közben megjeleníti a formázott akkordlapot, így pontosan láthatja, mit fog látni a csapata.
+- **Hangnem beállítása** -- Adja meg minden hangszerelés zenei hangnemét a szöveg melletti hangnemválasztóval. A választó a hangnemeket úgy sorolja fel, ahogy a zenészek általában írják (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). A hangnem megváltoztatása azonnal transzponálja a megjelenített akkordokat, mind a hangszerelés oldalán, mind akkor, amikor a dalt egy istentiszteleti tervből nyitja meg, így csapata mindig azt a hangnemet látja az akkordokhoz, amelyben valójában játszanak. Az akkordok a hangnemnek megfelelően íródnak: a b-s hangnemek, például a Bb vagy az Eb, b-s akkordneveket mutatnak (Bb, Eb, Ab), kereszt helyett.
+- **Külső hivatkozások hozzáadása** -- Csatoljon hivatkozásokat olyan forrásokhoz, mint a YouTube-videók, akkordlapok vagy máshol tárolt kottaanyagok.
 
 ## Hangszerelések
 
-A hangszerelés egy dal külön változatát jelenti — például egy gyorsabb, modern verziót szemben egy lassabb, akusztikus felvétellel, vagy ugyanazt a dalt egy másik hangnemben egy másik csapat számára. Egy dal minden hangszerelése megosztja a dal címét és előadóját, de saját, független beállításokkal rendelkezik:
+A hangszerelés a dal egy különálló változatát jelenti — például egy gyorsabb, modern verziót egy lassabb, akusztikus felvétellel szemben, vagy ugyanazt a dalt más hangnemben egy másik csapat számára. Ugyanazon dal minden hangszerelése megosztja a dal címét és előadóját, de saját, független beállításokkal rendelkezik:
 
-- **Hangnem** — a hangnem, amelyben a hangszerelést előadják
-- **BPM** — tempó ütésszámban percenként
+- **Hangnem** — a hangszerelés előadási hangneme
+- **BPM** — tempó ütés/perc egységben
 - **Hossz** — időtartam másodpercben
-- **Lüktetés** — ütemmutató (például 4/4, 3/4, 6/8)
-- **Sorrend** — az akkord- és szakaszszerkezet (például Bevezető → Versszak → Refrén → Híd)
+- **Lüktetés** — ütemmutató (pl. 4/4, 3/4, 6/8)
+- **Sorrend** — az akkord- és szakaszszerkezet (pl. Intró → Versszak → Refrén → Híd)
 - **Szöveg** — megjelenítéshez vagy vetítéshez
-- **Külső linkek** — akkordlapok, YouTube-felvételek, kottaanyagok vagy egyéb források
+- **Külső hivatkozások** — akkordlapok, YouTube-felvételek, kották vagy egyéb források
 
-Amikor hozzáadsz egy dalt a [szolgálati sorrendhez](./service-order.md), kiválaszthatod, melyik hangszerelést használod az adott istentiszteleten, így a csapatod mindig a megfelelő változatot gyakorolja és játssza.
+Amikor dalt ad egy [Szolgálati sorrendhez](./service-order.md), kiválaszthatja, melyik hangszerelést használja az adott istentiszteleten, így csapata mindig a megfelelő változatot gyakorolja és játssza.
 
-### Próbahangfelvétel
+### Próbahanganyag
 
-A dicsőítési adminisztrátorok próbahangsávot csatolhatnak egy hangszereléshez, hogy a csapat a próba előtt meghallgathassa:
+Az istentiszteleti adminisztrátorok hangszereléshez csatolhatnak próbahangsávot, hogy a csapat a próba előtt meghallgathassa:
 
-1. Nyisd meg a dalt, és válaszd ki a hangszerelést.
-2. Kattints a **Hang feltöltése** gombra.
-3. Válassz MP3, M4A vagy AAC fájlt (legfeljebb 25 MB — a WAV nem fogadható el, hogy a tárhelyhasználat kezelhető maradjon).
-4. Mentés. A hangsáv helyben lejátszható mindenhol, ahol a hangszerelés megjelenik — a hangszerelés oldalán a B1 Adminban, valamint a szolgálati tervben, amikor egy csapattag megnyitja a B1.church tagi portálon. A hangot tartalmazó tervtételek bélyegkép helyett egy zenei jegy ikont mutatnak.
+1. Nyissa meg a dalt, és válassza ki a hangszerelést.
+2. Kattintson a **Hang feltöltése** gombra.
+3. Válasszon MP3, M4A vagy AAC fájlt (legfeljebb 25 MB — a WAV-formátumot nem fogadjuk el, hogy a tárhelyhasználat kezelhető maradjon).
+4. Mentés. A hangsáv lejátszható beágyazva mindenhol, ahol az adott hangszerelés megjelenik — a hangszerelés oldalán a B1 Adminban, és az istentiszteleti tervben, amikor egy csapattag megnyitja a B1.church tagi portálon. A hanganyaggal rendelkező tervelemek zenei jegy ikont mutatnak bélyegkép helyett.
 
 A hangszerelés törlése a feltöltött hangfájlt is eltávolítja.
 
 :::info
-A gyűjteményedben lévő dalok közvetlenül hozzáadhatók egy terv [szolgálati sorrendjéhez](./service-order.md), így a dal részletei és a kiválasztott hangszerelés az adott istentisztelethez kapcsolódik.
+A könyvtárában lévő dalok közvetlenül hozzáadhatók egy terv [Szolgálati sorrendjéhez](./service-order.md), és összekapcsolják a dal adatait és a kiválasztott hangszerelést az adott istentisztelethez.
 :::
 
 ## Következő lépések
 
-- Add hozzá a dalokat a [szolgálati sorrendhez](./service-order.md), amikor egy [szolgálati tervet](./plans.md) állítasz össze
-- Koordináld a dicsőítő csapatot a [Feladatok](./tasks.md) segítségével a dalok előkészítéséhez és gyakorlásához
+- Adja hozzá a dalokat a [Szolgálati sorrendhez](./service-order.md), amikor egy [istentiszteleti terv](./plans.md) összeállításán dolgozik
+- Koordinálja a dicsőítő csapatot a [Feladatok](./tasks.md) segítségével a dalok előkészítéséhez és gyakorlásához

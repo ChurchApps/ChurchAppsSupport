@@ -1,49 +1,49 @@
 ---
-title: "Imibhalo Yebatfutfukisi"
-description: "Hamba ngalokufanele emakhasini wemaphepha wabentfi be-ChurchApps: kusetfwa lokwendzeni, tincwadzi zeAPI nama-app eweb, tilabhulari letikhona, tindlela tekwakha mobile, nekufakwa kwemaprojekthi."
+title: "Imibhalo Yabathuthukisi"
+description: "Thola indlela yakho ku-imibhalo yabathuthukisi ye-ChurchApps: kusetfwa kwendzawo yasekhaya, tihlahlandlela te-API netinhlelo tewebhu, emalabhulalela lokwabelwanako, kwakhiwa kwetinhlelo tafoni, nekulandvwa kwemaphrojekthi avulekile."
 ---
 
-# Imibhalo Yebatfutfukisi
+# Imibhalo Yabathuthukisi
 
 <div class="article-intro">
 
-ChurchApps liyicembu lemaphrojekthi langaba ema-20 la-open-source lahlanganyela kuniketa i-platform lephelele yekuphatsa libandla. Emaphrojekthi lawa afaka ema-backend API, ti-application te-web, ti-app teselula, i-application ye-desktop, kanye netincwadzi letabelwene -- konkhe kubhalwe nge-TypeScript. Lesigaba siniketa konkhe lokudzingekako kute usungule simo sakho sekutfutfukisa sasekhaya bese ucala kufaka sandla.
+ChurchApps ngeliqoqo lemaphrojekthi lacishe abe ngu-20 avulekile lahlanganisa sitfombe sekulawula libandla lesiphelele. Lamaphrojekthi ahlanganisa ema-API langemuva, tinhlelo tewebhu, tinhlelo tafoni, sicelo sedeskithophu, nemalabhulalelaalabelwanako -- konkhe kubhalwe nge-TypeScript. Lesigaba sinika konkhe lokudzingekako kutsi usete indzawo yasekhaya yekuthuthukisa futsi uqale kuniketa.
 
 </div>
 
-## Sakhiwo Ngekubuka Nje
+## Kubukwa Kwesakhiwo Ngekushesha
 
-Emaphrojekthi **ayimitfombo lehlukene** (akusiyo i-monorepo). Ikhodi lehlanganyelwako iyashicilelwa ku-npm ngaphansi kwesigaba se-`@churchapps/*` bese isetjentiswa njengetibopho letijwayelekile. Loku kusho kutsi ungasebenta kuphrojekthi linye ngaphandle kwekukopisha simo lonkhe sekusebenta.
+Emaphrojekthi ngema-repository lamancane ayo (hhayi i-monorepo). Likhodi lelabelwanako lishicilelwa ku-npm ngaphansi kwesikhala se-`@churchapps/*` futsi lisetfwa njengetincike letivamile. Lokusho kutsi ungasebenta kuphrojekthi yinye ngaphandle kwekutsi ukhiphe lonkhe lumndeni wemaphrojekthi.
 
-Timphawu letibalulekile:
+Timfanelo letibalulekile:
 
-- **Lulwimi:** TypeScript kuko konkhe
-- **Backend:** ema-API e-Node.js / Express lafakwa ku-AWS Lambda ngeSakhiwo se-Serverless
-- **Web:** React 19 (Vite ne-Next.js), Material-UI 7
-- **Selula:** React Native ne-Expo
-- **Lidatabase:** MySQL 8.0, lidatabase linye ngamunye we-module ye-API
+- **Lulwimi:** TypeScript kuyo yonkhe
+- **Lubhekene:** Node.js / Express APIs ilandvwa ku-AWS Lambda ngeServerless Framework
+- **Webhu:** React 19 (Vite ne-Next.js), Material-UI 7
+- **Tinhlelo letihamba:** React Native ne-Expo
+- **Sisekelo sedatha:** MySQL 8.0, sisekelo sedatha simbe nye ngemodyuli ngayinye ye-API
 
-## Loko Lokumbandzakanywa Sesi Sigaba
+## Lesigaba Lesihlanganisa
 
-- **[Kusungula](./setup/index.md)** -- Simo sekutfutfukisa sasekhaya, tidzingo tekucala, kanye nekuhlelwa
-  - [Tidzingo Tekucala](./setup/prerequisites.md) -- Emathulusi kanye ne-software lokudzingekako
-  - [Sibuko Semaphrojekthi](./setup/project-overview.md) -- Onkhe emaphrojekthi ngekubuka nje
-  - [Tintfo Letishintjashintjako Tesimo](./setup/environment-variables.md) -- Kuhlela emafayela e-`.env`
-- **[API](./api/index.md)** -- Kusungula kwesekhaya kwe-API lesisiseko, kucalisa lidatabase, kanye nesakhiwo se-module
-- **[Ti-App Te-Web](./web-apps/index.md)** -- Kusebentisa i-B1Admin, i-B1App, ne-LessonsApp ekhaya
-- **[Ti-App Teselula](./mobile/index.md)** -- Kwakha i-B1Mobile kanye naletinye ti-app te-Expo
-- **[Tincwadzi Letabelwene](./shared-libraries/index.md)** -- Kusebenta ne-Helpers, i-ApiHelper, kanye ne-AppHelper
-- **[Kufakwa](./deployment/index.md)** -- Kufaka ema-API, ti-app te-web, kanye neti-app teselula
-- **[Umniniyo Wekucuketfwe kwe-FreePlay](./freeplay-content-provider.md)** -- Kuhlanganisa incwadzi yakho yetifundvo ne-FreePlay
+- **[Kusetfwa](./setup/index.md)** -- Indzawo yasekhaya yekuthuthukisa, tintfo letidzingekako ngaphambili, nekumisa
+  - [Tintfo Letidzingekako Ngaphambili](./setup/prerequisites.md) -- Emathulusi nemasofthiwe adzingekako
+  - [Kubukwa Kweprojekthi](./setup/project-overview.md) -- Emaphrojekthi wonkhe ngekushesha
+  - [Tinguquko Temvelo](./setup/environment-variables.md) -- Kumisa emafayela e-`.env`
+- **[API](./api/index.md)** -- Kusetfwa kwe-API yasekhaya lenkhulu, kuqalisa sisekelo sedatha, nesakhiwo semodyuli
+- **[Tinhlelo Tewebhu](./web-apps/index.md)** -- Kusebenta i-B1Admin, i-B1App ne-LessonsApp endzaweni yasekhaya
+- **[Tinhlelo Tafoni](./mobile/index.md)** -- Kwakha i-B1Checkin netinye tinhlelo te-Expo
+- **[Emalabhulalela Alabelwanako](./shared-libraries/index.md)** -- Kusebenta ne-Helpers, ApiHelper, ne-AppHelper
+- **[Kufakwa Esevele](./deployment/index.md)** -- Kufaka ema-API, tinhlelo tewebhu, netinhlelo tafoni
+- **[Umhlinzeki Wemkhiqizo we-FreePlay](./freeplay-content-provider.md)** -- Kuhlanganisa leliqoqo lakho letifundvo ne-FreePlay
 
-## Umphakatsi Kanye Netinsita
+## Umphakatsi Nemitfombo
 
-| Insita | Sixibelo |
-|----------|------|
+| Umtfombo | Lixhumanisi |
+|----------|-------------|
 | Inhlangano ye-GitHub | [github.com/ChurchApps](https://github.com/ChurchApps) |
-| Silandzeli Setinkinga | [ChurchAppsSupport Issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
-| Umphakatsi we-Slack | [Ngena ku-Slack](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
+| Lilunga Lemacondzana | [ChurchAppsSupport Issues](https://github.com/ChurchApps/ChurchAppsSupport/issues) |
+| Umphakatsi we-Slack | [Joyina ku-Slack](https://join.slack.com/t/livechurchsolutions/shared_invite/zt-i88etpo5-ZZhYsQwQLVclW12DKtVflg) |
 
 :::tip
-Indlela lesheshako yekucala kufaka sandla wukukhetsa i-app ye-web (njenge-B1Admin), uyicondzise kuma-**staging API**, bese ucala kwenta shintjo ku-frontend. Akukho lidatabase nobe kusungulwa kwe-API lokudzingekako.
+Indlela lenhle kakhulu yekuqala kunikela kutsi ukhetse tinhlelo tewebhu (njenge-B1Admin), uyicondzise kuma-**API lakhombisa** lakwabelwanako, bese uqala kwenta tintfo letishintjako ngekuhlolwa kwesitfombe lesibonakalako. Akudzingeki sisekelo sedatha noma kusetfwa kwe-API.
 :::

@@ -63,9 +63,9 @@
     "message": "Hướng dẫn",
     "description": "The label for category 'Guides' in sidebar 'docsSidebar'"
   },
-  "sidebar.docsSidebar.category.B1 - Website": {
-    "message": "B1 - Trang web",
-    "description": "The label for category 'B1 - Website' in sidebar 'docsSidebar'"
+  "sidebar.docsSidebar.category.B1 - App": {
+    "message": "B1 - App",
+    "description": "The label for category 'B1 - App' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.church-getting-started": {
     "message": "Bắt đầu",
@@ -94,10 +94,6 @@
   "sidebar.docsSidebar.category.church-content": {
     "message": "Nội dung",
     "description": "The label for category 'Content' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile": {
-    "message": "B1 - Di động",
-    "description": "The label for category 'B1 - Mobile' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-getting-started": {
     "message": "Bắt đầu",
@@ -246,10 +242,6 @@
   "sidebar.docsSidebar.category.church-serving": {
     "message": "Phục vụ",
     "description": "The label for category 'Serving' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.B1 - Mobile (Deprecated)": {
-    "message": "B1 - Mobile (Không còn hỗ trợ)",
-    "description": "The label for category 'B1 - Mobile (Deprecated)' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.mobile-events": {
     "message": "Sự kiện",

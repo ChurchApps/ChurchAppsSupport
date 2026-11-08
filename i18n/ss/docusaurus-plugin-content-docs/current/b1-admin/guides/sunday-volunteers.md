@@ -1,134 +1,133 @@
 ---
-title: "Umhlahlandlela: Phatsa Emavolontiya EliSontfo"
-description: "Setfula emaqembu etitsandvo, tinhlelo temasonto, nemisebenti yeSonto ku-B1 Admin, kuze titsandvo tibone tabelwa tabo ewebhusayitini nakuyi-app."
+title: "Umhlahlandlela: Phatha Emavolontiya eSontfo"
+description: "Setha emaqembu emavolontiya, tindlela tesevisi yesonto, emaoda esevisi, nemisebenti yeSontfo kuB1 Admin, kuze emavolontiya abone futsi asabele kutimiselo kuB1.church nakuhlelo lwefoni."
 ---
 
-# Phatsa Emavolontiya EliSontfo
+# Phatha Emavolontiya eSontfo
 
 <div class="article-intro">
 
-Hlela emacembu akho emavolontiya, wakhe emahlelo enkonzo esonto ngalinye, wabele tikhundla, wakhe luhlelo lwenkonzo ngetingoma tekukhulekela, futsi u-automate imisebenti lephindaphindako. Nasekugcineni, emavolontiya akho atawubona lokwabelwe kubo kuwebhusayithi ne-app ye-B1, futsi angemukela nobe anke ngco.
+Setha emaqembu akho emavolontiya, dala tindlela tesevisi letinsuku letimbalwa, abele tindzima, akhe emaoda esevisi ngetingoma tetindvumo, futsi ubelele emisebenti yeSontfo. Ekugcineni, emavolontiya akho azobona emabelo abo kuwebhusayithi ye-B1 nakuhlelo lwefoni, futsi angemukela noma anqabe ngekuqondile.
 
 </div>
 
 <div class="prereqs">
-<h4>Ngembi Kwekucala</h4>
+<h4>Ngaphambi Kokuqala</h4>
 
-- I-akhawunti ye-B1 Admin lenekufinyelela kwemphatsi
-- Emavolontiya [lafakwe kuluhlu lwakho lwebantfu](../people/adding-people.md)
+- Iakhawunti ye-B1 Admin enelungelo lokungena njengomphatsi
+- Emavolontiya [engeziwe eligcini labantfu bakho](../people/adding-people.md)
 
 </div>
 
-## Sinyatselo 1: Yakha Emacembu Emavolontiya
+## Sinyatselo 1: Sakha Emaqembu Emavolontiya
 
-Hlela emavolontiya akho kumacembu kute ukwati kuphatsa kwabelwa ngendzawo yemsebenti.
+Hlela emavolontiya akho ababe emaqembu, ukuze ukwati kuphatha emabelo ngekhono lemsebenti.
 
-Landzela imihlahlandlela ye-[Kudala Emacembu](../groups/creating-groups.md) ne-[Emalunga Elicembu](../groups/group-members.md) kute:
+Landzela tincwadzi letithi [Kudala Emaqembu](../groups/creating-groups.md) ne[Emalungu Eliqembu](../groups/group-members.md) ukuze:
 
-1. Yakha sigaba (sib., "Emacembu ELiSontfo Ekuseni")
-2. Yakha emacembu lafana na "Licembu Lekukhulekela", "Umsindvo & Emamediya", "Bemukeli", "Emavolontiya Emsebenti Webantfwana"
-3. Faka emavolontiya kulicembu ngalinye ngekusesha libito labo bese uchofota Faka
+1. Dala sigaba (njengo "Emaqembu eSontfo Ekuseni")
+2. Dala emaqembu njengo "Liqembu Lekuhlabelela", "Sound & Media", "Labamukeli", "Emavolontiya eKids Ministry"
+3. Engeta emavolontiya kuliqembu ngalinye ngekufuna ligama labo bese ucindzetela Engeta
 
 :::tip
-Khomba baholi belicembu usebentisa luphawu lwesihluthulelo lolutfotfombe kuthebhu Yemalunga. Baholi bangaphatsa likhalenda labo lelicembu futsi bahlanganise licembu labo.
+Khetsa tiholi temaqembu ngalesiphambano sesitaladi (**Make Leader**) kuluhlu lwetilungu teliqembu (cindzetela **All members** ekhasini leliqembu). Tiholi tingaphatha ikhalenda yaliqembu labo futsi tihlele liqembu labo.
 :::
 
-## Sinyatselo 2: Yakha Luhla Lwakho Lwetingoma
+## Sinyatselo 2: Akha Umtfombo Wetingoma
 
-Faka tingoma tekukhulekela kute ukwati kutidvonsela emahlelweni enkonzo ngesonto ngalinye.
+Engeta tingoma tetindvumo ukuze utakwati kufaka etindleleni tesevisi yesonto ngalinye.
 
-Landzela umhlahlandlela we-[Tingoma](../serving/songs.md) kute:
+Landzela incwadzi i-[Tingoma](../serving/songs.md) ukuze:
 
-1. Faka tingoma tekukhulekela ngemabito, bahlabeli, kanye nesikhatsi
-2. Kuyo yonkhe ingoma, faka luhlelo lwayo ngemagama nekukhonjiswa kwesikhiya
-3. Faka emalinki langaphandle kuma-performance e-YouTube, ema-chord chart, nobe lisheki lengoma
+1. Engeta tingoma tetindvumo nemagama etisihloko, bahlabeleli, nesikhatsi sato
+2. Ku ngoma ngayinye, engeta tinguquko netinkhomba letimayelana netiphetfo
+3. Engeta tixhumanisi letingaphandle tetinhlelo ze-YouTube, tishwa temakhodi, noma tincwadzi temculo
 
 :::info
-Tingoma letifakwe lapha tingadvonselwa nakuluphi luhlelo lwenkonzo ngemuva kwaloko. Yakha luhla lwakho kanye, usebentise njalo.
+Tingoma letingetwa lapha tingafakwa kunoma iyiphi indlela yesevisi kamuva. Akha umtfombo wakho kanye, uwusebentise njalo ngesonto.
 :::
 
-## Sinyatselo 3: Yakha Luhlelo Lwenkonzo
+## Sinyatselo 3: Dala Indlela Yesevisi
 
-Emahlelo yiwo emabelo elisonto latjela emavolontiya kutsi adzingeka kuphi.
+Tindlela ngetindzawo temasonto letitsi tindzawo kuletinsita letimayelana nekutsi emavolontiya adzingeka kuphi.
 
-Landzela umhlahlandlela we-[Emahlelo](../serving/plans.md) kute:
+Landzela incwadzi i-[Tindlela](../serving/plans.md) ukuze:
 
-1. Yiya ku-Serving, khetsa ithebhu yemsebenti wakho
-2. Chofota "Faka Luhlelo" bese ukhetsa lusuku lwenkonzo
-3. Kuthebhu Yekwabela, andisa licembu ngalinye bese wabela emavolontiya etikhundlweni tabo
-4. Emavolontiya atawubona simo salokwabelwe kubo (Sicelwe, Kucinisekisiwe, Kusalindzile)
+1. Ya ku-Serving, khetsa litab lemsebenti wakho, bese uvula luhlobo lwendlela yakho
+2. Cindzetela **New Plan** bese ukhetsa lusuku lwesevisi. Kuze usete emaSonto lamaningi ngasikhatsi sinye, kopisha kusukela endleleni yangaphambilini bese ufaka kutsi yimingaki kuthi **Number of plans**
+3. Esigceni se**Serving Team Assignments** sendlela, engeta tindzima bese ubeka emavolontiya kuto
+4. Emavolontiya azobona simo semabelo abo (Requested, Confirmed, Pending)
+5. Vula [tessekisi temavolontiya](../serving/plans.md#volunteer-reminders) lohlobo lwendlela ukuze emavolontiya akhunyetwe ngekhodi lelicinile, nge-imeyili, noma ngemilayezo yeselula ngaphambi kwesevisi ngayinye
 
-## Sinyatselo 4: Yakha Luhlelo Lwenkonzo Ngendlela Lehlelekile
+## Sinyatselo 4: Akha Umyalo Wesevisi
 
-Beka luhlelo lwenkonzo yakho kusukela ekucaleni kuya ekugcineni.
+Hlela kahle kutsi kwentelwa kanjani kusukela ekuqaleni kuya ekugcineni kwesevisi yakho.
 
-Landzela umhlahlandlela we-[Luhlelo Lwenkonzo](../serving/service-order.md) kute:
+Landzela incwadzi i-[Umyalo Wesevisi](../serving/service-order.md) ukuze:
 
-1. Shintjela kuthebhu "Luhlelo Lwenkonzo" ku-plan yakho
-2. Chofota "Faka Intfo" kute ufake tintfo: tingoma tekukhulekela (kuvela kuluhla lwakho), imithandazo, kufundvwa kweMbhalo, tatiso, intshumayelo, umnikelo, kuvala
-3. Dvonsa uyise tintfo kute ushintje luhlelo lwenkonzo
+1. Vula indlela yakho bese ufuna sigaba **Order of Service** esiphezulu
+2. Cindzetela **Add** ukuze ungeze tintfo: tingoma tetindvumo (letisuka emtfonjeni wakho), tikhulekelo, tindzima temiBhalo, tesimemo, lukhuluma, umnikelo, nekuvala
+3. Hudula tintfo ukuze ulungise kabusha kulandzelelana lwesevisi
 
 :::info
-Emahlelo enkonzo ahambisana neluhlelo lonalunye. Kushintja lapha akutfinti lamanye emahlelo nobe luhla lwetingoma loluyinhloko.
+Imiyalo yesevisi icondzene nendlela ngayinye. Tishintsho letenteka lapha ngeke tiphatse letinye tindlela noma umtfombo wetingoma lomkhulu.
 :::
 
-## Sinyatselo 5: Setinga Imisebenti Lephindaphindako
+## Sinyatselo 5: Beka Emisebenti YeSontfo
 
-Yenta ngekutinelela imisebenti lephindaphindako yesonto kute akutsi lutfo lulahleke.
+Landzela tindzimela letisisebenti letingasikhatsi sinye ukuze kungakhohlwa lutfo.
 
-Landzela imihlahlandlela ye-[Imisebenti](../serving/tasks.md) ne-[Kuzenzakalisa](../serving/workflows.md) kute:
+Landzela incwadzi i-[Timsebenti](../serving/tasks.md) ukuze:
 
-1. Yakha kuzenzakalisa kwemisebenti lephindaphindako yesonto ngalinye (sib., "Lungisa tintfo temnikelo weSidlo Semhlangano", "Shicilela emabhulethini", "Setinga umshini wemsindvo")
-2. Nika kuzenzakalisa ngakunye kumuntfu nobe licembu lelibhekene naloko
-3. Imisebenti ibonakala ku-dashbhodi yabo ye-B1 ne-app yeselula ngekutinelela
+1. Dala emisebenti yetindzima njengo "Lungisa tintfo te-communion", "Shicilela tincwadzi tesevisi", noma "Setha umsindo wemidziya"
+2. Nika umsebenti ngamunye umuntfu lophetfwe kuwo noma liqembu
+3. Emisebenti itawubonakala ngaphansi kwe **Serving > My Work**, ku-dashboard yalowo lonikwe umsebenti, nakuhlelo lwefoni
+
+:::info
+B1 Admin ayisadali emisebenti ngesikhatsi lesiphindzekako. Kumasiko aphindzekako lafaka bantfu etinyatselweni, sebentisa [Workflows](../serving/workflows.md) nemtsetsi wesikhatsi.
+:::
+
+## Sinyatselo 6: Vumela Ukubhalisa Ngekwakho (Lokukhetfwako)
+
+Vumela emavolontiya abhalisele tindzima ngekwawo kunekutsi alindzele emabelo kumphatsi.
+
+1. Ngesikhatsi udala noma uhlela lendlela, setha **Signup Deadline** (emahora ngaphambi kwesevisi) kuze ulawule nasiphela kubhalisa ngekwakho. Emahora abalwa emuva kusukela esikhatsini sekucala kwendlela. Shiya kungenteka uma ungafuni sikhatsi sekugcina. Tindlela letintsha tacala nesikhatsi sekugcina sendlela yangaphambilini.
+2. Ngekukhetsa, tfuka **Show volunteer names on signup page** kuze emavolontiya abone labanye labatsatsekile.
+3. Ku sikhundla ngasinye, hlola bhokisi le-**Allow Self-Signup** kuze sitfolakale ekubhalisweni ngekwakho.
+4. Engeta **Description** ku sikhundla ngasinye kuze emavolontiya akwati kutsi indzima ifaka ini.
+
+Ngemuva kwekudalwa kwetikhundla tekubhalisa ngekwakho, tivela ngekuzenta ekhasini lekubhalisa emavolontiya ku-[B1.church nakuB1 App](../../b1-church/serving/volunteer-signup.md). Emalungu angabona tikhundla letivulekile, abone kutsi kusele tingaki tindzawo, futsi abhalise ngekucindzetela kanye.
 
 :::tip
-Setinga kuzenzakalisa kube Akusebenti ngesikhatsi seliholidi nobe seminyaka lekhetsekile, bese uwavusa nawusulungele. Akudzingeki kususa bese wakha kabusha.
+Hlanganisa tikhundla letabelwa ngumphatsi netelubhalisa ngekwakho endleleni efananako. Njengesibonelo, nika umhoyi wetinkhonzo sikhundla ngqo kodvwa vumela Labamukeli nalabathela ikhofi bakhetse bodvwa.
 :::
 
-## Sinyatselo 6: Vula Kubhalisela Ngekutimela (Kungakhetseka)
+## Sinyatselo 7: Tatisa Emavolontiya
 
-Vumela emavolontiya kutibhalisela tikhundla esikhundleni sekulindzela kwabelwa ngumphatsi.
+Emavolontiya labelwe atawubona tindlela tawo ngekuzenta futsi angaphendvula.
 
-1. Nawuhlela luhlelo, setinga **Sikhatsi Sekugcina Sekubhalisela** (emahora ngembi kwenkonzo) kulawula kutsi kubhalisela ngekutimela kuvala nini. Shiya kungenalutfo nangabe kute sikhatsi sekugcina.
-2. Ngekukhetsa, vula/vala **Bonisa emabito emavolontiya ekhasini lekubhalisela** kute uvumele emavolontiya abone kutsi ngubani lomunye lobhalisile.
-3. Kusikhundla ngasinye, hlolisa lebhokisi le-**Vumela Kubhalisela Ngekutimela** kute sitfolakale kubhalisela ngekutimela.
-4. Faka **Incazelo** kusikhundla ngasinye kute emavolontiya atati kutsi loluluhlobo lomsebenti luhlanganisani.
-
-Nasekwakhiwe tikhundla tekubhalisela ngekutimela, tivela ngekutinelela emakhasini ekubhalisela emavolontiya ku-[B1.church](../../b1-church/serving/volunteer-signup.md) na ku-[app ye-B1 Mobile](../../b1-mobile/serving/volunteer-signup.md). Emalunga angabhonga tikhundla letivulekile, abone kutsi kusale tindzawo letingaki, bese abhalisela ngesigcotjo sinye.
+1. Emavolontiya atawubona tindlela tawo ku-[B1.church nakuB1 App](../../b1-church/plans/viewing-plans.md)
+2. Angemukela noma anqabe emabelo ngekuqondile kulucingo lwabo noma kukhompyutha
+3. Angasetha emalanga lapho bangeke batfolakale khona
+4. Tindlela tingashicilelwa ekulungiseleleni kuphindvwa kwemculo noma kubekwe ngemuva kwesiteji
+5. Emavolontiya angabheka futsi abhalise tikhundla letivulekile ngekusebentisa [ikhasi lekubhalisa emavolontiya](../../b1-church/serving/volunteer-signup.md)
 
 :::tip
-Hlanganisa tikhundla lezabelwa ngumphatsi nalezekubhalisela ngekutimela kuluhlelo lunye. Sibonelo, wabele umholi wakho wekukhulekela ngco kepha uvumele bemukeli nebasebentisi bekhofi kutibhalisela.
+Tesatiso tekucindzetela kuB1 App tatisa emavolontiya lapho atfola emabelo emasha noma lapho tindlela tishintsha.
 :::
 
-## Sinyatselo 7: Yatisa Emavolontiya
+## Usuphelile!
 
-Emavolontiya labelwe abona ngekutinelela emahlelo abo bese bangaphendvula.
+Sisetfu sakho semavolontiya sesisetiwe. Ngalelinye lesonto, dala indlela lensha, abele tindzima, bese liqembu lakho libona konkhe kucingo labo noma kukhompyutha.
 
-1. Emavolontiya abona emahlelo abo ku-[B1.church](../../b1-church/plans/viewing-plans.md) na ku-[app ye-B1 Mobile](../../b1-mobile/serving/viewing-plans.md)
-2. Bangemukela nobe banke lokwabelwe kubo ngco kunome ngukuphi luhlelo lwalobubili
-3. Bangasetinga tikhatsi tekungatfolakali kwemasonto langeke bakhona
-4. Emahlelo angashicilelwa kwekuhlolisa nobe afakwe ngemuva kwendzawo
-5. Emavolontiya angabhonga futsi atibhalisele tikhundla letivulekile nge-[likhasi lekubhalisela emavolontiya](../../b1-church/serving/volunteer-signup.md)
+## Tindzatfo Letihlobene
 
-:::tip
-Tatiso letishesha ku-app yeselula tiyisile emavolontiya nabatfola lokwabelwe kwabo lokusha nobe nasekushintja emahlelo.
-:::
-
-## Usucedzile!
-
-Luhlelo lwakho lwekuphatsa emavolontiya selusetiwe. Sonto ngalinye, yakha luhlelo lolusha, wabele tikhundla, bese licembu lakho libona konkhe kulucingo lwabo nobe kucomputer. Imisebenti lephindaphindako iphatsa umsebenti wekulungiselela ngekutinelela.
-
-## Tihloko Letihlobene
-
-- [Kudala Emacembu](../groups/creating-groups.md) — hlela emacembu netigaba
-- [Emalunga Elicembu](../groups/group-members.md) — faka bese uphatsa emalunga elicembu
-- [Emahlelo](../serving/plans.md) — yakha bese uphatsa emahlelo enkonzo
-- [Luhlelo Lwenkonzo](../serving/service-order.md) — yakha luhlelo lwenkonzo
-- [Tingoma](../serving/songs.md) — phatsa luhla lwakho lwetingoma tekukhulekela
-- [Imisebenti](../serving/tasks.md) — wabele imisebenti kubantfu nobe emacembu
-- [Kuzenzakalisa](../serving/workflows.md) — zenzakalise imisebenti lephindaphindako
-- [Kubuka Emahlelo (Web)](../../b1-church/plans/viewing-plans.md) — indlela emavolontiya abona ngayo emahlelo nge-web
-- [Kubuka Emahlelo (Mobile)](../../b1-mobile/serving/viewing-plans.md) — indlela emavolontiya abona ngayo emahlelo nge-mobile
-- [Kubhalisela Emavolontiya (Web)](../../b1-church/serving/volunteer-signup.md) — indlela emalunga atikhetsela ngayo tikhundla temavolontiya
-- [Kubhalisela Emavolontiya (Mobile)](../../b1-mobile/serving/volunteer-signup.md) — kubhalisela emavolontiya nge-mobile
+- [Kudala Emaqembu](../groups/creating-groups.md) — setha emaqembu nemasigaba
+- [Emalungu Eliqembu](../groups/group-members.md) — engeta futsi uphatse emalungu eliqembu
+- [Tindlela](../serving/plans.md) — dala futsi uphatse tindlela tesevisi
+- [Umyalo Wesevisi](../serving/service-order.md) — akha kulandzelelana kwesevisi
+- [Tingoma](../serving/songs.md) — phatha umtfombo wakho wetingoma tetindvumo
+- [Timsebenti](../serving/tasks.md) — nika emasu emisebenti bantfu noma emaqembu
+- [Workflows](../serving/workflows.md) — hambisa bantfu etinyatselweni letiphindzekako ngetibambi netinyatselo letizenta ngekutinitela
+- [Kubona Tindlela](../../b1-church/plans/viewing-plans.md) — indlela emavolontiya abona ngayo tindlela tawo
+- [Ukubhalisa Emavolontiya](../../b1-church/serving/volunteer-signup.md) — indlela emalungu akhetsa ngayo tikhundla tevolontiya

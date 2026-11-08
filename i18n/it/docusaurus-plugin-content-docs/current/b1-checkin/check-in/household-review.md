@@ -1,67 +1,68 @@
 ---
-title: "Verificare il nucleo familiare"
-description: "Rivedi il tuo nucleo familiare in B1 Checkin dopo aver scelto una persona, assegna i gruppi per ogni orario e indica ospiti o volontari prima del check-in."
+title: "Revisión de su hogar"
+description: "Revise su hogar en B1 Checkin después de elegir una persona, luego asigne grupos para cada horario de servicio y marque a los invitados o voluntarios antes de registrar la entrada."
 ---
 
-# Verificare il nucleo familiare
+# Revisión de su hogar
 
 <div class="article-intro">
 
-Dopo aver selezionato una persona dai risultati di ricerca, l'app carica l'intero nucleo familiare e lo mostra nella schermata di verifica del nucleo familiare. È il centro del processo di check-in, dove puoi vedere tutti i membri della famiglia e gestire le loro assegnazioni ai gruppi prima di effettuare il check-in.
+Después de seleccionar una persona de los resultados de búsqueda, la aplicación carga todo su hogar y lo muestra en la pantalla de revisión del hogar. Este es el centro del proceso de registro de entrada, donde puede ver a todos los miembros de su familia y gestionar sus asignaciones de grupo antes de registrar la entrada.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di iniziare</h4>
+<h4>Antes de comenzar</h4>
 
-- [Seleziona un servizio](./selecting-service.md) dalla schermata dei servizi
-- [Cerca un membro](./looking-up-members.md) e selezionalo dai risultati di ricerca
+- [Seleccione un servicio](./selecting-service.md) en la pantalla de servicios
+- [Busque a un miembro](./looking-up-members.md) y selecciónelo de los resultados de búsqueda
 
 </div>
 
-## Visualizzare i membri del nucleo familiare
+## Ver los miembros del hogar
 
-Ogni membro del nucleo familiare compare come una scheda con:
+Cada miembro del hogar aparece como una tarjeta con:
 
-- La sua **foto** (oppure un'icona segnaposto se non è presente alcuna foto)
-- Il suo **nome visualizzato**
-- Un **riepilogo delle assegnazioni ai gruppi attuali** (mostrate come piccole etichette sotto il nome quando la scheda è chiusa)
-- Una **freccia di espansione/chiusura** sul lato destro
+- Su **foto** (o un icono de marcador de posición si no hay foto registrada)
+- Su **nombre para mostrar**
+- Un **resumen de sus asignaciones de grupo actuales** (se muestra como pequeñas etiquetas debajo del nombre cuando la tarjeta está contraída)
+- Una insignia **Ya registrado** si ya ha registrado la entrada para este servicio hoy
+- Una **flecha de expandir/contraer** en el lado derecho
 
-## Espandere un membro
+## Expandir a un miembro
 
-Tocca la scheda di un membro per espanderla. Quando è espansa, vedrai una riga per ogni **orario di culto** del servizio selezionato, dal primo al più tardi. Gli orari di culto sono ordinati in base al giorno e all'ora di inizio programmati, se impostati; in caso contrario, in base all'orario indicato nel nome (quindi "9:00" viene prima di "10:30"). Gli orari di culto senza un orario nel nome vengono per ultimi, in ordine alfabetico. Ogni riga mostra:
+Toque la tarjeta de un miembro para expandirla. Al expandirla, verá una fila para cada **horario de servicio** dentro del servicio seleccionado, del más temprano al más tardío. Los horarios de servicio se ordenan por su día y hora de inicio programados cuando hay uno establecido; de lo contrario, se ordenan por la hora que aparece en su nombre (así, "9:00 AM" aparece antes que "10:30 AM"). Los horarios de servicio sin hora en su nombre aparecen al final, en orden alfabético. Cada fila muestra:
 
-- Il **nome dell'orario di culto** (ad esempio "9:00" o "11:00")
-- I **gruppi offerti** in quell'orario di culto, elencati sotto il nome (ad esempio "Nido, Prescolare, Classe biblica per adulti"), così puoi vedere quali classi sono disponibili prima di scegliere
-- Un **pulsante** che mostra il gruppo attualmente assegnato, oppure "Seleziona gruppo" se non è ancora stato assegnato alcun gruppo
+- El **nombre del horario de servicio** (por ejemplo, "9:00 AM" o "11:00 AM")
+- Los **grupos ofrecidos** en ese horario de servicio, listados debajo del nombre (por ejemplo, "Guardería, Preescolar, Clase Bíblica para Adultos"), para que pueda ver qué clases están disponibles antes de elegir
+- Un **botón** que muestra el grupo asignado actualmente, o "Seleccionar grupo" si aún no se ha asignado ningún grupo
 
-Se un orario di culto ha una [pianificazione del check-in](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) e la sua finestra è chiusa in questo momento, la riga mostra **Chiuso** al posto del pulsante, insieme all'orario di apertura successivo quando disponibile, ad esempio **Chiuso · apre dom 9:30**. Se la persona è già registrata per quell'orario di culto, la riga mostra invece il suo gruppo con un segno di spunta (ad esempio **Sala bambini 1 · Registrato**), così puoi vedere dove si trova anche se la finestra è chiusa.
+Si un horario de servicio tiene un [calendario de registro de entrada](../../b1-admin/attendance/setup.md#setting-a-check-in-schedule) y su ventana está cerrada en este momento, la fila muestra **Cerrado** en lugar de un botón, junto con la próxima hora de apertura cuando hay una, como **Cerrado · abre dom 9:30 AM**. Si la persona ya está registrada en ese horario de servicio, la fila muestra su grupo con una marca de verificación (por ejemplo, **Sala Infantil 1 · Registrado**), para que pueda ver dónde se encuentra aunque la ventana ya esté cerrada.
 
-Tocca il pulsante del gruppo per andare alla [schermata di selezione del gruppo](./group-assignment.md), dove puoi scegliere o cambiare il gruppo per quella persona e quell'orario di culto.
+Toque el botón del grupo para ir a la [pantalla de selección de grupo](./group-assignment.md), donde puede elegir o cambiar el grupo de esa persona para ese horario de servicio.
 
-La scheda espansa mostra anche i chip **Membro**, **Ospite** e **Volontario**. Toccane uno per indicare in che modo questa persona si registra: Membro è l'impostazione predefinita. Il tipo è importante per le sale dei bambini: i volontari contano nel rapporto volontari-bambini della sala, e gli ospiti contano rispetto all'eventuale capienza per ospiti impostata dalla chiesa.
+La tarjeta expandida también muestra las etiquetas **Miembro**, **Invitado** y **Voluntario**. Toque una para indicar cómo se está registrando esta persona: Miembro es la opción predeterminada. El tipo es importante para las salas infantiles: los voluntarios cuentan para la proporción voluntario-niño de la sala, y los invitados cuentan para la capacidad de invitados que haya establecido su iglesia.
 
-Tocca di nuovo la scheda del membro per chiuderla.
+Vuelva a tocar la tarjeta del miembro para contraerla.
 
 :::tip
-Non è necessario assegnare ogni membro della famiglia a un gruppo. Gli adulti che partecipano al culto principale possono restare senza assegnazione a un gruppo. Assegna gruppi solo ai membri che devono registrarsi a una classe o a un programma specifico.
+No es necesario asignar a todos los miembros de la familia a un grupo. Los adultos que asisten al servicio principal de adoración pueden quedar sin asignación de grupo. Asigne grupos solo a los miembros que necesiten registrarse en una clase o programa específico.
 :::
 
-## Navigare da questa schermata
+## Navegar desde esta pantalla
 
-Dalla schermata di verifica del nucleo familiare hai tre opzioni:
+Desde la pantalla de revisión del hogar, tiene tres opciones:
 
-- **Espandi un membro** e tocca il pulsante di un orario di culto per [assegnare o cambiare un gruppo](./group-assignment.md).
-- **Tocca il pulsante Aggiungi ospite** sotto l'elenco dei membri per [aggiungere un ospite](./adding-guests.md) al tuo nucleo familiare.
-- **Tocca il pulsante Check-in** in fondo alla schermata per [completare il check-in](./completing-checkin.md) per tutti i membri del nucleo familiare.
+- **Expanda a un miembro** y toque el botón de un horario de servicio para [asignar o cambiar un grupo](./group-assignment.md).
+- **Toque el botón Agregar invitado** debajo de la lista de miembros para [agregar un invitado](./adding-guests.md) a su hogar.
+- **Toque el botón Registrar entrada** en la parte inferior de la pantalla para [completar el registro de entrada](./completing-checkin.md) de todos los miembros del hogar.
 
 :::info
-Le assegnazioni a gruppi di un check-in precedente per lo stesso servizio vengono caricate automaticamente. Se i tuoi figli frequentano sempre gli stessi gruppi ogni settimana, potresti non dover cambiare nulla: basta verificare e fare il check-in.
+Las asignaciones de grupo de un registro de entrada anterior para el mismo servicio se cargan automáticamente. Si sus hijos asisten a los mismos grupos cada semana, es posible que no necesite cambiar nada; solo revise y registre la entrada.
 :::
 
-## Passaggi successivi
+## Próximos pasos
 
-- [Assegna i gruppi](./group-assignment.md) ai membri della famiglia che devono registrarsi a una classe o a un programma specifico.
-- [Aggiungi un ospite](./adding-guests.md) se qualcuno è in visita con la tua famiglia.
-- [Completa il check-in](./completing-checkin.md) quando le assegnazioni di tutti risultano corrette.
+- [Asigne grupos](./group-assignment.md) a los miembros de la familia que necesiten registrarse en una clase o programa específico.
+- [Agregue un invitado](./adding-guests.md) si alguien visita con su familia.
+- [Complete el registro de entrada](./completing-checkin.md) cuando las asignaciones de todos parezcan correctas.

@@ -1,120 +1,181 @@
 ---
 title: "Selvbetjent check-in med B1 Checkin og B1 Admin"
-sidebar_label: "Ind- og udchecking"
-description: "Opsæt selvbetjent check-in til gudstjenester med B1 Checkin i B1 Admin: enheder, kioskkonti, tidsplaner, branding og QR-gæstetilmelding."
+sidebar_label: "Check-in"
+description: "Opsæt selvbetjent check-in til gudstjenester med appen B1 Checkin i B1 Admin, herunder enheder, kiosk-konti, tidsplaner, branding og QR-gæstetilmelding."
 ---
 
-# Ind- og udchecking
+# Check-in
 
 <div class="article-intro">
 
-B1 Admin understøtter selvcheck-in ved tjenester gennem medfølgende **B1 Ind- og udchecking**-app. Medlemmer kan tjekke sig selv og deres familier ind ved kioskker eller dedikerede enheder, når de ankommer, hvilket gør processen hurtig og reducerer arbejdsbyrden på dine frivillige. Hver check-in registreres automatisk som fremmøde.
+B1 Admin understøtter selvbetjent check-in til gudstjenester via den tilhørende app **B1 Checkin**. Medlemmer kan selv checke sig ind, og deres familie med, ved kiosker eller dedikerede enheder, når de ankommer. Det gør processen hurtig og reducerer arbejdsbyrden for dine frivillige. Hvert check-in registreres automatisk som fremmøde.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du går i gang</h4>
 
-- Dine campusser, servicetider og grupper skal være konfigureret i [Fremmøde-opsætning](setup.md).
-- Du skal have [personer i dine database](../people/adding-people.md) med [husstande](../people/adding-people.md#managing-households) sat op, så familier kan checke ind sammen.
-- Du har brug for en tablet og eventuelt en Brother-etiketter (se [hardwareanbefaling](#recommended-hardware) nedenfor).
+- Dine kampusser, gudstjenestetider og grupper skal være konfigureret i [Fremmødeopsætning](setup.md).
+- Du skal have [personer i din database](../people/adding-people.md) med [husstande](../people/adding-people.md#managing-households) opsat, så familier kan checke sig ind sammen.
+- Du skal bruge en tablet og eventuelt en Brother-labelprinter (se [anbefalinger til hardware](#recommended-hardware) nedenfor).
 
 </div>
 
-## Sådan virker det
+## Sådan fungerer det
 
-B1 Ind- og udchecking-appen forbinder til din B1 Admin fremmøde-opsætning. Når et medlem tjekker ind, registreres deres fremmøde automatisk mod den korrekte campus, servicetid og gruppe. Du behøver ikke manuelt at angive fremmøde for nogen, der bruger check-in-systemet.
+Appen B1 Checkin forbinder til din fremmødeopsætning i B1 Admin. Når et medlem checker ind, registreres fremmødet automatisk på det rigtige kampus, den rigtige gudstjenestetid og den rigtige gruppe. Du behøver ikke indtaste fremmøde manuelt for personer, der bruger check-in-systemet.
 
-## Opsætning af ind- og udchecking
+## Opsætning af check-in
 
-1. **Konfigurer først din fremmøde-struktur.** I B1 Admin skal du gå til **Fremmøde > Opsætning** og sørge for, at dine campusser, servicetider og grupper er på plads. Ind- og udchecking-appen er afhængig af denne konfiguration. Se [Fremmøde-opsætning](setup.md) for detaljer.
-2. **Installer B1 Ind- og udchecking-appen** på de enheder, du planlægger at bruge. Appen er tilgængelig på følgende platforme:
+1. **Konfigurer først din fremmødestruktur.** Gå til **Personer > Fremmøde** i B1 Admin, og klik på **Opsætning** for at sikre, at dine kampusser, gudstjenestetider og grupper er på plads. Check-in-appen er afhængig af denne konfiguration. Du kan eventuelt give hver gudstjenestetid en [check-in-plan](setup.md#setting-a-check-in-schedule), så check-in åbner og lukker automatisk hver uge. Planer bruger tidszonen for gudstjenestens kampus, eller din kirkes tidszone, hvis kampussen ikke har en angivet. Kiosken viser gudstjenestetider, hvor tidsvinduet er lukket, som **Lukket**, og fortæller familier, hvornår check-in åbner. Se [Fremmødeopsætning](setup.md) for detaljer.
+2. **Installer appen B1 Checkin** på de enheder, du planlægger at bruge. Appen er tilgængelig på følgende platforme:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Log ind i B1 Ind- og udchecking-appen** ved hjælp af din kirkes kontooplysninger.
-4. **Vælg campus og servicetid** for det aktuelle møde.
+3. **Log ind i appen B1 Checkin** med en konto, der har tilladelsen **Checkin** under fremmøde (eller **Rediger fremmøde**). Se [Kiosk-konti til check-in](../settings/roles-permissions.md#check-in-kiosk-accounts).
+4. **Vælg kampus og gudstjenestetid** for den aktuelle samling.
 5. Medlemmer kan nu søge efter deres navn på enheden og checke ind.
 
 :::tip
-Placer ind- og udchecking-enheder på synlige, nemme-at-nå steder, såsom lobbyindgange eller velkomstskranker. En kort meddelelse under tjenester hjælper medlemmerne med at vide, at muligheden er tilgængelig.
+Placer check-in-enheder på synlige og lettilgængelige steder, f.eks. ved indgangen i foyeren eller ved velkomstdisken. En kort meddelelse under gudstjenesten hjælper medlemmer med at vide, at muligheden findes.
 :::
 
 :::tip
-Hvis din kirke har flere campusser, skal du gentage opsætningen for hver campus i [Fremmøde-opsætning](setup.md). Hver ind- og udchecking-enhed kan konfigureres til en anden campus.
+Hvis din kirke har flere kampusser, skal du gentage opsætningen for hvert kampus i [Fremmødeopsætning](setup.md). Hver check-in-enhed kan konfigureres til et forskelligt kampus.
 :::
 
 ## Anbefalet hardware
 
-**Tablets** — alle disse virker godt med appen:
+**Tablets** — alle disse fungerer godt med appen:
 
-- **Kompakt:** Samsung Galaxy Tab A7 Lite 8.7"
-- **Stor skærm:** Samsung Galaxy Tab A8 10.5"
-- **Budget:** Amazon Fire HD 10
+- **Kompakt:** Samsung Galaxy Tab A7 Lite 8,7"
+- **Stor skærm:** Samsung Galaxy Tab A8 10,5"
+- **Budgetvenlig:** Amazon Fire HD 10
 
-**Printere** — ind- og udchecking virker med Brother-etiketteprintere til print af navneskilt:
+**Printere** — check-in fungerer med Brother-labelprintere til udskrivning af navneskilte:
 
 - **Bedst:** Brother QL-1110NWB (understøtter flere tablets via Bluetooth og WiFi)
 - **God:** Brother QL-810W (understøtter flere tablets via WiFi)
-- **Budget:** Brother QL-1100 (kun WiFi)
+- **Budgetvenlig:** Brother QL-1100 (kun WiFi)
 
 **Etiketter:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Kun Brother-etiketteprintere er kompatible med B1 Ind- og udchecking-appen. Andre printermærker virker ikke til print af navneskilt.
+Kun Brother-labelprintere er kompatible med appen B1 Checkin. Printere fra andre mærker virker ikke til udskrivning af navneskilte.
 :::
 
 :::info
-Følg din printers opsætningsvejledning for at forbinde den til samme WiFi-netværk som din tablet. Du kan finde Brother printerdriver og opsætningsvejledninger på [Brother support-siden](https://support.brother.com).
+Følg din printers opsætningsvejledning for at forbinde den til det samme WiFi-netværk som din tablet. Du kan finde Brother-printerdrivere og opsætningsguides på [Brothers supportside](https://support.brother.com).
 :::
 
-## Tilpasning af kioskk-udseende
+## Tilpasning af kioskens udseende
 
-Du kan tilpasse udseende og funktionsmåde af B1 Ind- og udchecking-appen for at passe din kirkes mærke. I B1 Admin skal du gå til **Fremmøde > Kioskk-tema** for at konfigurere:
+Du kan tilpasse udseendet på appen B1 Checkin, så det matcher din kirkes branding. Gå til **Mobil > B1 CheckIn** i B1 Admin, og brug kortet **Kiosktema** til at konfigurere:
 
 ### Farver
 
-Tilpas otte farveindstillinger for at passe din kirkes mærke:
+Tilpas otte farveindstillinger, så de matcher din kirkes branding:
 
-- **Primær** og **Primær kontrast** -- Hovedmærkefarve og dens tekstfarve.
+- **Primær** og **Primær kontrast** -- Hovedfarve for brandet og dens tekstfarve.
 - **Sekundær** og **Sekundær kontrast** -- Accentfarve og dens tekstfarve.
-- **Header-baggrund** og **Underheader-baggrund** -- Farver til kioskk-headerarealerne.
-- **Knap-baggrund** og **Knap-tekst** -- Farver til interaktive knapper.
+- **Baggrund for sidehoved** og **Baggrund for underoverskrift** -- Farver til kioskens sidehovedområder.
+- **Knapbaggrund** og **Knaptekst** -- Farver til interaktive knapper.
 
 ### Baggrundsbillede
 
-Upload et valgfrit baggrundsbillede til kioskk-velkomst- og opslags-skærme. Anbefalet størrelse er 1920x1080 pixels.
+Upload et valgfrit baggrundsbillede til kioskens velkomst- og opslagsskærme. Anbefalet størrelse er 1920x1080 pixels.
 
-### Inaktiv skærm / Screensaver
+### Inaktiv skærm / pauseskærm
 
-Konfigurer en screensaver, der aktiveres efter en periode med inaktivitet:
+Konfigurer en pauseskærm, der aktiveres efter en periode uden aktivitet:
 
-1. Skift den inaktive skærm **til** eller **fra**.
-2. Indstil **timeout** (hvor mange sekunder uden aktivitet før skærm-sparer starter, minimum 10 sekunder).
-3. Tilføj et eller flere **slides** -- hvert slide har et billede og en displayvarighed (minimum 3 sekunder).
+1. Slå den inaktive skærm **til** eller **fra**.
+2. Angiv **timeout** (hvor mange sekunder uden aktivitet, før pauseskærmen starter, minimum 10 sekunder).
+3. Tilføj et eller flere **slides** -- hvert slide har et billede og en visningstid (minimum 3 sekunder).
 
 :::tip
-Brug den inaktive skærm til at vise meddelelser, kommende begivenheder eller velkomstkort, når kioskken ikke aktivt bruges.
+Brug den inaktive skærm til at vise meddelelser, kommende begivenheder eller velkomstbeskeder, når kiosken ikke aktivt bruges.
 :::
 
-## Gæsteregistrering via QR-kode
+## Gæstetilmelding via QR-kode
 
-Ind- og udchecking-kioskken kan vise en QR-kode, som besøgende scanner for at registrere sig selv og deres familie på deres egen telefon. Dette fremskynder ind- og udchecking-processen for førstegangsgæster.
+Check-in-kiosken kan vise en QR-kode, som besøgende scanner for at tilmelde sig selv og deres familie på deres egen telefon. Det fremskynder check-in-processen for førstegangsgæster.
 
-Når en gæst scanner QR-koden, bliver de taget til en [gæsteregistreringsside](../../b1-church/checkin/guest-registration.md), hvor de angiver deres navn, email og familiemedlemmer. En frivillig kan derefter slå dem op på kioskken og checke dem ind.
+Når en gæst scanner QR-koden, føres de til en [side for gæstetilmelding](../../b1-church/checkin/guest-registration.md), hvor de indtaster deres families navne og eventuelle andre oplysninger, du vælger at spørge om. En frivillig kan derefter slå dem op på kiosken og checke dem ind.
 
-### Aktivering af QR-gæsteregistrering
+### Aktivering af QR-gæstetilmelding
 
-For at slå QR-kodeskærmen til:
+Sådan slår du visningen af QR-koden til:
 
-1. I B1 Admin skal du gå til **Mobil** i venstre sidebjælke (telefonikon).
-2. Vælg **Ind- og udchecking**-fanen.
-3. Skift **QR-gæsteregistrering** til.
+1. Åbn i B1 Admin [hurtigmenuen](../introduction.md#getting-around-with-the-jump-menu) (søgefeltet øverst til venstre) og udvid **Mobil**.
+2. Klik på **B1 CheckIn**.
+3. Slå **QR-gæstetilmelding** til, og klik på **Gem**.
 
 :::note
-Denne indstilling er under **Mobil**, ikke under Fremmøde > Kioskk-tema.
+Denne indstilling findes under **Mobil > B1 CheckIn** (samme side som kortet **Kiosktema**), ikke under Fremmøde. Handlingen **Kiosk** på siden Fremmøde har et link til denne side.
 :::
 
-## Hvad registreres
+Når kontakten er slået til, vises de øvrige muligheder nedenfor i samme kort, **QR-gæstetilmelding**. Klik på **Gem** på kortet, efter du har ændret en af dem.
 
-Hver check-in opretter en fremmøde-post i B1 Admin. Du kan se disse poster på fanerne [Fremmøde](tracking-attendance.md) og [Grupper](../groups/group-members.md) ligesom manuelt angivet fremmøde. Der er ingen forskel i, hvordan dataene vises - begge metoder fødes ind i de samme rapporter.
+### Valg af tilmeldingsfelter
+
+Tjeklisten **Tilmeldingsfelter** styrer, hvad tilmeldingsformularen spørger om. **Fornavn** og **Efternavn** er altid med i formularen og altid påkrævet for alle familiemedlemmer. For hvert andet felt skal du slå **Medtag** til for at tilføje det til formularen og derefter slå **Påkrævet** til, hvis gæster skal udfylde det. **Påkrævet** kan kun slås til for et medtaget felt, og når du slår **Medtag** fra, fjernes også **Påkrævet**.
+
+| Felt | Spørges efter | Medtaget som standard |
+|-------|-----------|---------------------|
+| **Titel** | For hvert familiemedlem, som en rullemenu foran navnet (Hr., Fru, Frk., Dr., Prof., Pastor) | Nej |
+| **E-mail** | Kun hovedkontakten | Ja (valgfri) |
+| **Telefon** | For hvert familiemedlem. Når feltet er påkrævet, skal kun hovedkontakten udfylde det. | Ja (valgfri) |
+| **Rolle i husstanden** | For hvert familiemedlem efter hovedkontakten -- Ægtefælle, Barn eller Andet. Hovedkontakten er leder af en ny husstand. Den, der ikke har en rolle, gemmes som Andet. | Ja (valgfri) |
+| **Hjemmeadresse** | Én gang for familien -- gade, adresselinje 2, by, region og postnummer. Når feltet er påkrævet, skal alt undtagen adresselinje 2 udfyldes. Adressen gemmes på alle familiemedlemmer. | Nej |
+| **Fødselsdato** | For hvert familiemedlem | Nej |
+| **Køn** | For hvert familiemedlem | Nej |
+| **Civilstand** | Kun hovedkontakten | Nej |
+| **Klassetrin** | For hvert familiemedlem (PreK til 12. klasse, eller Færdiguddannet) | Nej |
+| **Kommentarer** | Én gang, i en boks under familiemedlemmerne (op til 1.000 tegn) | Nej |
+
+Felter, du slår fra, gemmes aldrig, selv hvis nogen sender dem til tilmeldingen på anden vis. Kommentarer gemmes som en note på hovedkontaktens profil (angivet som "Gæstetilmelding"), så du kan læse dem i afsnittet **Noter** på deres profil.
+
+### Tilføjelse af gæster til en gruppe
+
+Brug **Tilføj nye gæster til gruppe** for automatisk at placere alle, der tilmelder sig, i en af dine grupper -- f.eks. en gruppe for "Nye" eller en gruppe for ugens begivenhed. Vælg **Ingen** (standard), hvis du vil springe dette over. Gæster ser aldrig og vælger aldrig gruppen; den angives kun her. Skift den før hver begivenhed, så du kan følge op på begivenhedens gæster samlet.
+
+### Registrering af fremmøde
+
+Når en gruppe er valgt, vises en kontakt **Registrer også fremmøde**. Slå den til for at markere gæster som til stede, i det øjeblik de tilmelder sig, så du ikke behøver at checke dem ind separat.
+
+Fremmøde registreres kun, hvis tilmeldingen sker under et af den valgte gruppes **planlagte** gudstjenestetider:
+
+- Gruppen skal være knyttet til en eller flere gudstjenestetider, og disse gudstjenestetider skal have en [check-in-plan](setup.md#setting-a-check-in-schedule) (en **Dag** og et **Starttidspunkt**).
+- "Under" betyder inden for gudstjenestetidens check-in-vindue -- fra **Åbn check-in**-minutterne før starten til **Luk check-in**-minutterne efter slutningen (eller efter starten, hvis der ikke er angivet et sluttidspunkt; hvis hverken sluttidspunkt eller lukkeminutter er angivet, til slutningen af den pågældende dag), i samme tidszone som check-in-planen bruger.
+- Hvert familiemedlem markeres som til stede i gruppen for hver af dens gudstjenestetider, der er åben på det pågældende tidspunkt, på dagens dato.
+- Tilmeldinger på andre tidspunkter, eller for en gruppe, hvis gudstjenestetider ikke har en plan, tilføjes til gruppen, men tælles ikke som fremmøde.
+
+### Forsidebillede
+
+Under **Forsidebillede** klikker du på **Skift billede** for at vælge eller uploade et billede (beskåret til 16:9), der vises øverst på tilmeldingssiden i stedet for standardikonet. Klik på **Fjern** for at gå tilbage til ikonet.
+
+### Deling af tilmeldingslinket
+
+Når QR-gæstetilmelding er aktiveret, vises et afsnit **Del QR-kode til tilmelding** nederst på kortet. Det giver dig to måder at få gæster hen til tilmeldingsformularen ud over QR-koden på kiosken:
+
+- **Kopier link** -- kopierer tilmeldings-URL'en, så du kan indsætte den på din kirkes hjemmeside, i e-mails eller hvor som helst online.
+- **Download PNG** -- downloader QR-koden som et billede, du kan udskrive på flyers, kirkeblade eller skilte.
+
+:::tip
+Tilføj tilmeldingslinket til din kirkes hjemmeside under siden "Planlæg dit besøg" eller "Jeg er ny", så gæster kan tilmelde sig, inden de overhovedet ankommer.
+:::
+
+### Hvad sker der, når en gæst har tilmeldt sig
+
+B1 leder først efter personer, der allerede findes under **Personer**. Et familiemedlem matches med en eksisterende person, når præcis én person har samme fornavn og samme e-mail eller telefonnummer. Et barn, der indtastes uden e-mail eller telefon, matches på fornavn inden for den husstand, der blev matchet. Matchede personer genbruges uændret -- tilmeldingen ændrer aldrig deres oplysninger eller medlemsstatus -- og alle nye personer tilføjes til den matchede husstand.
+
+Hvis ingen matcher, opretter tilmeldingen en ny husstand, navngivet efter hovedkontaktens efternavn, med en personpost for hvert familiemedlem. Alle nye føjes til **Personer** med medlemsstatus **Gæst**, og hovedkontakten er husstandens leder.
+
+Matchede og nye personer føjes begge til den gruppe, du valgte (hvis de ikke allerede er i den), og deres fremmøde registreres, når det er slået til. Kommentarer gemmes som en note på hovedkontakten.
+
+For at følge op automatisk kan du tilføje en [arbejdsgangsudløser](../serving/workflows.md#triggers), f.eks. **Person · Oprettet** med betingelsen *Medlemsstatus er Gæst*, eller **Gruppe · Medlem tilføjet** for den gruppe, du valgte ovenfor.
+
+## Hvad der registreres
+
+Hvert check-in opretter en fremmødepost i B1 Admin. Du kan se disse poster på siden [Fremmøde](tracking-attendance.md) og i hver [gruppes](../groups/group-members.md) samlinger, ligesom med manuelt indtastet fremmøde. Der er ingen forskel på, hvordan dataene vises -- begge metoder føder ind i de samme rapporter.

@@ -1,21 +1,21 @@
 ---
 title: "PWA olarak uygulama yükleme"
-description: "B1.church'ü üye portalından iPhone veya Android'e uygulama olarak yükleyin; Safari veya Chrome'da simgesini ana ekranınıza ekleyin."
+description: "B1.church'ü iPhone veya Android cihazınıza üye portalından yükleyin; simgesini Safari veya Chrome üzerinden ana ekranınıza ekleyin."
 ---
 
 # PWA olarak uygulama yükleme
 
 <div class="article-intro">
 
-B1.church, İlerleyici Web Uygulaması (PWA) olarak yüklenmeyi destekler. Bu sayede kilisenizin üye portalını, telefonunuzun ana ekranına tıpkı yerel bir uygulama gibi ekleyebilirsiniz. Böylece App Store veya Google Play'e gitmeden tam ekran, uygulama benzeri bir deneyim elde edersiniz.
+B1.church, İlerleyici Web Uygulaması (PWA) olarak yüklenmeyi destekler. Bu sayede kilisenizin üye portalını telefonunuzun ana ekranına, tıpkı yerel bir uygulama gibi ekleyebilirsiniz. App Store veya Google Play'e gitmeden, tam ekran ve uygulama benzeri bir deneyim elde edersiniz.
 
 </div>
 
 <div class="prereqs">
-<h4>Başlamadan önce</h4>
+<h4>Başlamadan Önce</h4>
 
 - Kilisenizin B1.church adresine ihtiyacınız var: `https://yourchurchname.b1.church`
-- Desteklenen bir tarayıcı kullanın: iOS'ta **Safari** veya Android'de **Chrome**
+- Desteklenen bir tarayıcı kullanın: iOS'ta **Safari**, Android'de **Chrome**
 
 </div>
 
@@ -24,11 +24,11 @@ B1.church, İlerleyici Web Uygulaması (PWA) olarak yüklenmeyi destekler. Bu sa
 İlerleyici Web Uygulaması (PWA), cihazınıza yüklenebilen ve yerel bir uygulama gibi davranan bir web sitesidir. B1.church'ü PWA olarak yüklediğinizde:
 
 - Tarayıcı gezinme çubukları olmadan tam ekran açılır
-- Kilisenizin simgesi ve adıyla ana ekranınızda görünür
+- Ana ekranınızda kilisenizin simgesi ve adıyla görünür
 - Kilisenizin markası ve tema renkleriyle sorunsuz çalışır
 
 :::tip
-PWA, App Store veya Google Play'den ayrı bir uygulama yüklemek istemiyorsanız harika bir seçenektir. Tarayıcıda aldığınız üye portalı deneyimini, daha kullanışlı bir biçimde sunar.
+Uygulamayı App Store veya Google Play'den ayrıca yüklemek istemiyorsanız PWA harika bir seçenektir. Tarayıcıdaki üye portalı deneyiminin aynısını, daha kullanışlı bir biçimde sunar.
 :::
 
 ## Yükleme sayfası
@@ -39,30 +39,30 @@ Yüklemenin en kolay yolu, kilisenizin özel yükleme sayfasıdır:
 https://yourchurchname.b1.church/mobile/install
 ```
 
-Sayfa cihazınızı algılar ve doğru talimatları otomatik olarak gösterir:
+Sayfa cihazınızı otomatik olarak algılar ve size uygun talimatları gösterir:
 
 - **iPhone** — Safari'de adım adım "Ana Ekrana Ekle" talimatları
 - **Android** — Chrome'da tek dokunuşla **Ana Ekrana Yükle** düğmesi
-- **Masaüstü** — Sayfayı telefonunuzla açmak için tarayabileceğiniz bir QR kodu
+- **Masaüstü** — Telefonunuzla tarayıp yükleme sayfasını orada açabileceğiniz bir QR kodu
 
-Yükleme sayfasına birkaç şekilde ulaşabilirsiniz:
+Yükleme sayfasına birkaç yoldan ulaşabilirsiniz:
 
-- Üye portalında **Diğer**'e dokunun ve **Hesap** altındaki **Uygulamayı Yükle**'ye dokunun (uygulama zaten yüklüyse bu öğe gizlenir)
-- Kilisenizin metin mesajı, e-posta veya Pazar ekranında paylaştığı bağlantıyı takip edin
+- Üye portalında **Daha Fazla**'ya dokunun, ardından **Hesap** altındaki **Uygulamayı Yükle**'ye dokunun (uygulama zaten yüklüyse bu öğe gizlenir)
+- Kilisenizin metin mesajı, e-posta veya Pazar ekranında paylaştığı bağlantıyı izleyin
 - Adresi doğrudan tarayıcınıza yazın
 
 :::tip Kilise personeli için
-Yükleme sayfası bağlantısını cemaatinizle paylaşın; bülteninize, haber bülteninize veya bir slayta ekleyebilirsiniz. Her üyeyi kendi cihazı için tam adımlardan geçirir. Ayrıca B1Admin panonuzdaki **Uygulamayı İndir** hızlı işleminden de bu sayfaya ulaşabilirsiniz.
+Yükleme sayfası bağlantısını cemaatinizle paylaşın; bülteninize, haber bültenize veya bir slayta ekleyebilirsiniz. Sayfa, her üyeye cihazına özgü adımları adım adım gösterir. B1Admin panonuzdaki **Uygulamayı İndirin** hızlı işleminden de bu sayfaya ulaşabilirsiniz.
 :::
 
-Yükleme sayfası, kılavuzlu bir yöntemdir; PWA'yı aşağıdaki tarayıcı adımlarını izleyerek kilisenizin B1.church sitesindeki **herhangi bir sayfadan** da manuel olarak yükleyebilirsiniz.
+Yükleme sayfası yalnızca yönlendirmeli bir yoldur; ayrıca kilisenizin B1.church sitesinde **herhangi bir sayfadan**, aşağıdaki tarayıcı adımlarını izleyerek PWA'yı manuel olarak da yükleyebilirsiniz.
 
-Yüklenen uygulamayı açtığınızda, doğrudan üye panonuza yönlendirilir ve giriş yapmaya hazır olursunuz.
+Yüklü uygulamayı açtığınızda, giriş yapmaya hazır şekilde doğrudan üye panonuzda açılır.
 
 ## iPhone'a yükleme (iOS — Safari)
 
-1. iPhone'unuzda **Safari**'yi açın ve `https://yourchurchname.b1.church/mobile/install` adresine gidin (`yourchurchname` yerine kilisenizin adres kısmını yazın).
-2. Ekranın altındaki **Paylaş** düğmesine dokunun (yukarı ok işaretli kutu).
+1. iPhone'unuzda **Safari**'yi açın ve `https://yourchurchname.b1.church/mobile/install` adresine gidin (`yourchurchname` yerine kilisenizin adres uzantısını yazın).
+2. Ekranın altındaki **Paylaş** düğmesine (yukarı ok işaretli kutu) dokunun.
 3. Paylaşım sayfasında aşağı kaydırın ve **Ana Ekrana Ekle**'ye dokunun.
 4. Ad, varsayılan olarak kilisenizin adı olarak gelir. Sağ üst köşedeki **Ekle**'ye dokunun.
 
@@ -75,7 +75,7 @@ iOS'ta PWA yüklemesi için Safari gereklidir. iPhone'unuzda Chrome veya başka 
 ## Android'e yükleme (Chrome)
 
 1. Android cihazınızda **Chrome**'u açın ve `https://yourchurchname.b1.church/mobile/install` adresine gidin.
-2. **Ana Ekrana Yükle** düğmesine dokunun. (Düğme görünmüyorsa, sağ üst köşedeki üç nokta menüsüne (⋮) dokunun ve **Ana ekrana ekle**'yi seçin.)
+2. **Ana Ekrana Yükle** düğmesine dokunun. (Düğme görünmüyorsa, sağ üst köşedeki üç nokta menüsüne (⋮) dokunup **Ana ekrana ekle**'yi seçin.)
 3. İstendiğinde **Ekle**'ye dokunun.
 
 Uygulama simgesi ana ekranınızda görünecektir. Üye portalını açmak için simgeye dokunun.
@@ -84,22 +84,16 @@ Uygulama simgesi ana ekranınızda görünecektir. Üye portalını açmak için
 
 Yüklendikten sonra PWA, özel bir tam ekran penceresinde doğrudan üye portalını açar. Şunları yapabilirsiniz:
 
-- Mevcut ChurchApps hesabınızla giriş yapmak
-- Kilisenizin etkinleştirdiği tüm üye özelliklerine erişmek — gruplar, bağışlar, yoklama, hizmet planları ve daha fazlası
-- Ana ekranınızdaki simgeye dokunarak istediğiniz zaman geri dönmek
+- Mevcut ChurchApps hesabınızla giriş yapın
+- Kilisenizin etkinleştirdiği tüm üye özelliklerine erişin — gruplar, bağışlar, check-in, hizmet planları ve daha fazlası
+- Ana ekranınızdaki simgeye dokunarak istediğiniz zaman geri dönün
 
-Okunmamış mesajlarınız olduğunda uygulama simgesinde bir **bildirim rozeti** (küçük bir sayı rozeti) görünür; böylece bekleyen yeni bir şey olup olmadığını bir bakışta görebilirsiniz.
+Okunmamış mesajınız olduğunda uygulama simgesinde **bildirim rozeti** (küçük bir sayı rozeti) görünür; böylece bekleyen yeni bir şey olup olmadığını bir bakışta görebilirsiniz.
 
 :::info
-PWA için internet bağlantısı gereklidir. Bazı yerel uygulamaların aksine, tüm içeriği çevrimdışı kullanım için önbelleğe almaz.
+PWA'nın çalışması için internet bağlantısı gerekir. Bazı yerel uygulamalardan farklı olarak, tüm içeriği çevrimdışı kullanım için önbelleğe almaz.
 :::
-
-## Eski B1 Mobile uygulaması hakkında
-
-iOS ve Android'deki yerel **B1 Mobile** uygulaması kullanımdan kaldırılmıştır ve artık güncellenmemektedir. Bundan sonra telefonunuzdan B1.church üye portalına erişmenin desteklenen yolu PWA'dır; yerel uygulamanın sunduğu tüm üyeye yönelik özellikleri kapsar. Daha önce yerel uygulamayı yüklediyseniz, uygun olduğunuz zaman PWA'ya geçebilirsiniz.
-
-Kullanımdan kaldırılan uygulama hakkında geçmişe yönelik belgeler için [B1 Mobile başvuru sayfasına](/docs/b1-mobile/) bakın.
 
 ## İlgili makaleler
 
-- [Giriş yapma](./logging-in.md) — B1.church hesabınıza nasıl giriş yapacağınız
+- [Giriş Yapma](./logging-in.md) — B1.church hesabınızda nasıl oturum açılır

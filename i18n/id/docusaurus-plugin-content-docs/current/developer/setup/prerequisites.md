@@ -7,7 +7,7 @@ description: "Siapkan Node.js, npm, Git, dan toolchain platform sebelum mengerja
 
 <div class="article-intro">
 
-Alat yang Anda perlukan bergantung pada proyek mana yang ingin Anda kerjakan. Halaman ini mencantumkan semua perangkat lunak yang diperlukan, dikelompokkan menurut area pengembangan, mulai dari persyaratan umum hingga toolchain khusus platform.
+Alat yang Anda butuhkan bergantung pada proyek mana yang ingin Anda kerjakan. Halaman ini mencantumkan semua perangkat lunak yang diperlukan, dikelompokkan berdasarkan area pengembangan, mulai dari kebutuhan umum hingga toolchain khusus platform.
 
 </div>
 
@@ -15,41 +15,41 @@ Alat yang Anda perlukan bergantung pada proyek mana yang ingin Anda kerjakan. Ha
 <h4>Sebelum Memulai</h4>
 
 - Tinjau [Ikhtisar Proyek](./project-overview.md) untuk menentukan proyek mana yang ingin Anda kerjakan
-- Pastikan Anda memiliki akses administrator di komputer pengembangan Anda untuk menginstal perangkat lunak
+- Pastikan Anda memiliki akses administrator di komputer pengembangan Anda untuk memasang perangkat lunak
 
 </div>
 
 ## Semua Proyek
 
-Ini diperlukan terlepas dari proyek mana yang Anda kerjakan:
+Ini wajib dimiliki terlepas dari proyek mana yang Anda kerjakan:
 
 | Alat | Versi | Catatan |
 |------|---------|-------|
 | **Node.js** | 20+ | Versi 22+ diperlukan untuk B1App dan LessonsApp (Next.js 16); 24+ diperlukan untuk Api |
-| **npm** | Tersedia bersama Node.js | Digunakan sebagai package manager di semua proyek |
+| **npm** | Tersedia bersama Node.js | Digunakan sebagai pengelola paket di semua proyek |
 | **Git** | Terbaru | Setiap proyek adalah repositori terpisah |
 
 :::tip
-Gunakan manajer versi Node seperti [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) atau [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) untuk beralih antarversi Node dengan mudah.
+Gunakan pengelola versi Node seperti [nvm](https://github.com/nvm-sh/nvm) (macOS/Linux) atau [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) untuk beralih antarversi Node dengan mudah.
 :::
 
 ## Pengembangan Backend API
 
-Jika Anda berencana menjalankan API secara lokal (alih-alih mengarahkan ke API demo):
+Jika Anda berencana menjalankan API secara lokal (alih-alih mengarah ke API demo):
 
 | Alat | Versi | Catatan |
 |------|---------|-------|
-| **MySQL** | 8.0+ | Setiap modul API menggunakan database-nya sendiri |
+| **MySQL** | 8.0+ | Setiap modul API menggunakan basis datanya sendiri |
 
-Anda memerlukan enam database untuk API inti: `membership`, `attendance`, `content`, `giving`, `messaging`, dan `doing`. API menyertakan skrip untuk menginisialisasi skema -- lihat panduan [pengaturan lokal API](../api/local-setup.md).
+Anda memerlukan enam basis data untuk API inti: `membership`, `attendance`, `content`, `giving`, `messaging`, dan `doing`. API menyertakan skrip untuk menginisialisasi skema -- lihat panduan [penyiapan lokal API](../api/local-setup.md).
 
 ## Pengembangan Aplikasi Seluler
 
-Untuk B1Mobile, B1Checkin, LessonsScreen, atau aplikasi React Native / Expo lainnya:
+Untuk B1Checkin, LessonsScreen, atau aplikasi React Native / Expo lainnya:
 
 | Alat | Versi | Catatan |
 |------|---------|-------|
-| **Expo CLI** | Terbaru | Instal secara global: `npm install -g expo-cli` |
+| **Expo CLI** | Terbaru | Pasang secara global: `npm install -g expo-cli` |
 | **Android Studio** | Terbaru | Diperlukan untuk pengembangan Android (termasuk Android SDK) |
 | **Xcode** | Terbaru | Diperlukan untuk pengembangan iOS (hanya macOS) |
 
@@ -66,7 +66,7 @@ FreeShow memiliki dependensi build native tambahan karena mengompilasi modul Nod
 | Alat | Versi | Catatan |
 |------|---------|-------|
 | **Python** | 3.12 | Diperlukan oleh `node-gyp` untuk kompilasi modul native |
-| **setuptools** | Terbaru | Instal melalui `pip install setuptools` |
+| **setuptools** | Terbaru | Pasang melalui `pip install setuptools` |
 
 ### Windows
 
@@ -76,13 +76,13 @@ FreeShow memiliki dependensi build native tambahan karena mengompilasi modul Nod
 | **Beban kerja "Desktop development with C++"** | Pilih saat instalasi Visual Studio |
 | **Windows 10 SDK** | Termasuk dalam beban kerja C++; pastikan opsi ini dicentang |
 
-Anda dapat menginstal alat build Visual Studio melalui baris perintah:
+Anda dapat memasang alat build Visual Studio melalui baris perintah:
 
 ```bash
 npm install --global windows-build-tools
 ```
 
-Atau instal Visual Studio Community dan pilih beban kerja "Desktop development with C++" saat instalasi.
+Atau pasang Visual Studio Community dan pilih beban kerja "Desktop development with C++" selama instalasi.
 
 ### Linux
 
@@ -100,7 +100,7 @@ xcode-select --install
 
 ## Verifikasi Instalasi Anda
 
-Jalankan perintah berikut untuk memastikan semuanya sudah terinstal:
+Jalankan perintah berikut untuk memastikan semuanya sudah terpasang:
 
 ```bash
 node --version    # Seharusnya menampilkan v20.x.x atau lebih tinggi

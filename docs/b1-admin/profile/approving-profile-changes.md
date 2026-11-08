@@ -7,7 +7,7 @@ description: "Review and approve member profile change requests in B1 Admin, and
 
 <div class="article-intro">
 
-When your church requires administrator approval for profile updates, members submit their changes through the B1 Mobile app and those requests appear as tasks in B1 Admin. This guide explains how to review and approve them.
+When your church requires administrator approval for profile updates, members submit their changes through the B1 App and those requests appear as tasks in B1 Admin. This guide explains how to review and approve them.
 
 </div>
 
@@ -63,4 +63,4 @@ Make sure your approvers are actually members of the configured group — only g
 
 - [Managing Your Profile](./managing-profile.md) — Edit your own account settings
 - [Reviewing Account Deletion Requests](./account-deletion.md) — The same approval-group review flow for account deletion
-- [B1 Mobile Settings](../../b1-mobile/profile/editing-profile.md) — What members see when they submit a profile change
+- [Editing Your Profile](../../b1-church/getting-started/editing-your-profile.md) — What members see when they submit a profile change
