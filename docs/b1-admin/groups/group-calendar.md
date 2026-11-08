@@ -66,6 +66,8 @@ The group's page in B1 Admin also has a **Calendar** section where staff can sch
 4. Review the preview of meeting dates and uncheck any to skip.
 5. Leave **Allow RSVPs** checked if you want members to be able to respond to these events (see below), then save.
 
+The B1 Admin event list has **Upcoming** and **Past** buttons above it. **Upcoming** shows events that haven't ended yet, plus recurring series that are still running, soonest first. **Past** keeps every earlier event the group has had, newest first.
+
 ## Event RSVPs
 
 Group events can collect RSVPs — a **Yes**, **No**, or **Maybe** for each occurrence of the event.
