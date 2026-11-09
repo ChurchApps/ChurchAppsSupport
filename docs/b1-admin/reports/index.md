@@ -13,7 +13,7 @@ B1 Admin gives you several ways to pull data about your congregation, attendance
 
 ## Training Video
 
-<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+<YouTube id="vn5SonVe94Q" title="Running Reports in B1" />
 
 ## Where to Find Reports
 

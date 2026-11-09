@@ -13,7 +13,7 @@ Build custom forms to collect information from your congregation. You can create
 
 ## Training Video
 
-<YouTube id="sr9wxEj9ghQ" title="Creating Forms and Managing Submissions in B1" next="Launching Your Church Website in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
+<YouTube id="UZ4dGCNIFw4" title="Creating Forms and Managing Submissions in B1" next="Launching Your Church Website in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
