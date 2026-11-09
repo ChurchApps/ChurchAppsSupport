@@ -41,6 +41,8 @@ Your Stripe Secret Key is only shown once. Copy it to a secure location before n
 
 After selecting Stripe as your provider, a **Currency** dropdown appears alongside your API keys. Pick the currency that matches your Stripe account's settlement currency so donations are charged correctly.
 
+If you haven't saved a currency yet, the dropdown starts on the currency of your church's country from sign-up instead of US dollars. Check it matches your Stripe account before saving.
+
 Supported currencies include USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, and BRL. You can confirm or change your account's default currency in your [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies).
 
 :::info

@@ -20,6 +20,8 @@ B1's multi-currency feature allows your church to accept and track donations in 
 
 </div>
 
+Your church's currency starts on the currency of the country entered when the church signed up (for example, Kenyan shillings for a church in Kenya), and it is used if no currency has been saved yet. You can change it any time under **Manage Church → Giving**. If your country isn't recognized, it starts on US dollars.
+
 ## Enabling Multi-Currency
 
 Multi-currency support is now enabled by default in B1. Once enabled:
