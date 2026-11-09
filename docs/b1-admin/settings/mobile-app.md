@@ -118,7 +118,11 @@ Signed-in members always see their own attendance history and submitted forms on
 - **Show My Attendance on Home** -- Adds a **My Attendance** section with how many times the member attended in the last 90 days, their two most recent visits, and a **History** link to their full attendance list.
 - **Show My Forms on Home** -- Adds a **My Forms** section with the member's two most recent form submissions and an **All forms** link.
 
-Both are off by default. A section only appears for members who are signed in and have at least one record to show. Click **Save** to apply.
+Both are off by default. A section only appears for members who are signed in and have at least one record to show.
+
+- **Show News on Home** -- Adds a **News** section right under the greeting that shows your five latest published [blog posts](../website/blog.md) as photo cards in a row that moves along on its own. Tapping a card opens the full post inside the app, and an **All news** link lists your recent posts. Once it is on, **Only this category** lets you pick one blog category (for example, *Announcements*) so only those posts appear; leave it on **All posts** to show everything. News shows for everyone who opens the app, signed in or not, because blog posts are public on your website. It is off by default and only appears when you have at least one published post.
+
+Click **Save** to apply.
 
 ## Where These Tabs Appear
 
