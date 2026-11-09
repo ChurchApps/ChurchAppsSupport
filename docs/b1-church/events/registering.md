@@ -81,7 +81,7 @@ If your church does not take payments online, the payment step says *"Online pay
 
 ## Step 6: Confirm
 
-A confirmation message appears with the event details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
+A confirmation message appears with the event details and a list of everyone you registered. If you chose **Register and Pay Later**, the message is titled **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
 
 If you chose **Register and Pay Later**, the member portal shows **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due (for example, "Balance due $25.00 of $25.00").
 

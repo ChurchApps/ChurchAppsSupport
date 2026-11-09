@@ -21,24 +21,26 @@ Kapag nangangailangan ang iyong simbahan ng pag-apruba ng administrator para sa 
 
 ## Saan Makikita ang mga Nakabinbing Kahilingan
 
-Kapag may isinumiteng pagbabago sa profile ang miyembro, lalabas ito bilang gawaing nakatalaga sa iyong approval group. Makikita mo ito sa dalawang lugar:
+Kapag nagsumite ang isang miyembro ng pagbabago sa profile, lalabas ito bilang gawaing nakatalaga sa iyong approval group. Makikita mo ito sa dalawang lugar:
 
 **Mula sa Dashboard (iyong home page):**
-1. Mag-log in sa B1 Admin. Awtomatikong magbubukas ang Dashboard.
-2. Sa seksiyong **My tasks**, i-click ang **All tasks**. (Ang My tasks ay naglilista lamang ng mga bukas na gawaing nakatalaga sa iyo nang personal.)
+1. Mag-log in sa B1 Admin. Awtomatikong bubukas ang Dashboard.
+2. Sa seksyong **My tasks**, i-click ang **All tasks**. (Ang My tasks ay naglilista lamang ng mga bukas na gawaing nakatalaga sa iyo nang personal.)
 3. I-click ang tab na **Assigned to My Groups**. Nakalista roon ang anumang nakabinbing kahilingan sa pagbabago ng profile.
 
 **Mula sa Serving &rarr; My Work:**
-1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at palawakin ang **Serving**.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at i-expand ang **Serving**.
 2. I-click ang **My Work**.
 3. I-click ang tab na **Assigned to My Groups** sa ilalim ng Tasks.
 
 ## Pagsusuri at Pag-apruba ng Kahilingan
 
 1. I-click ang gawaing **Profile Update** para buksan ito.
-2. Sa ilalim ng **Requested Changes**, makikita mo ang bawat field na gustong i-update ng miyembro, kasama ang bagong halagang isinumite nila.
+2. Sa ilalim ng **Requested Changes**, makikita mo ang bawat field na gustong baguhin ng miyembro, kasama ang bagong halagang isinumite nila.
 3. Suriin ang mga pagbabago.
 4. I-click ang **Apply** para aprubahan at i-save ang mga pagbabago sa kanilang profile.
+
+Ang kahilingang magdagdag ng miyembro ng pamilya ay nagpapakita ng title, pangalan, household role, at mobile phone ng bagong tao sa iisang linya (halimbawa, *Mr John Smith · Child · 555-0100*). Kapag inapply ito, malilikha ang taong iyon sa household ng miyembro na may mga detalyeng iyon.
 
 Awtomatikong magsasara ang gawain kapag na-apply na ang mga pagbabago.
 
@@ -46,7 +48,7 @@ Awtomatikong magsasara ang gawain kapag na-apply na ang mga pagbabago.
 
 Kung gusto ng iyong simbahan na nangangailangan ng pag-apruba ang mga pagbabago sa profile, kailangan munang i-configure ang Directory Approval Group.
 
-1. Buksan ang Jump menu at palawakin ang **Mobile**.
+1. Buksan ang Jump menu at i-expand ang **Mobile**.
 2. I-click ang **Member portal** (ang pahinang "Portal settings").
 3. Sa ilalim ng **Directory Approval Group**, piliin ang grupong dapat magsuri ng mga kahilingan sa pagbabago ng profile.
 4. I-click ang **Save**.
@@ -56,7 +58,7 @@ Makikita ng sinumang miyembro ng grupong iyon ang mga papasok na kahilingan sa p
 Sinusuri rin ng parehong Directory Approval Group ang **mga kahilingan sa pagbura ng account**. Tingnan ang [Pagsusuri ng mga Kahilingan sa Pagbura ng Account](./account-deletion.md).
 
 :::tip
-Siguraduhing tunay na miyembro ng naka-configure na grupo ang iyong mga approver. Tanging ang mga miyembro lamang ng grupo ang makakakita ng mga kahilingan.
+Siguraduhing tunay na miyembro ng naka-configure na grupo ang iyong mga approver. Tanging ang mga miyembro ng grupo ang makakakita ng mga kahilingan.
 :::
 
 ## Mga Kaugnay na Artikulo

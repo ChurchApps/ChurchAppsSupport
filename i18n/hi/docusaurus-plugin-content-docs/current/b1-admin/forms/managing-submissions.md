@@ -33,7 +33,7 @@ description: "B1 Admin में फ़ॉर्म सबमिशन की �
 
 किसी submission के बगल में **print icon** पर click करके उस व्यक्ति के भरे हुए उत्तर प्रिंट करें -- यह कागज़ी फ़ाइल या किसी signed release के लिए उपयोगी है जिसे आपको अपने पास रखना है। printout के ऊपर केंद्र में आपके church का logo ([Website > Appearance](../website/appearance.md) से **Light Background Logo**, अगर आपने अपलोड किया है) और उसके नीचे church का नाम दिखता है। printouts हमेशा सफ़ेद पेज पर गहरे रंग के text में होते हैं, भले ही आप B1 Admin को dark mode में उपयोग करें। यह [खाली फ़ॉर्म प्रिंट करने](./creating-forms.md#printing-a-blank-form) से अलग है; यह किसी एक व्यक्ति के पहले से submit किए गए उत्तर प्रिंट करता है, खाली कॉपी नहीं। यही print icon submission दिखने वाली हर जगह पर दिखता है, जिसमें [व्यक्ति की profile](../people/adding-people.md#working-with-forms) भी शामिल है।
 
-## Submission पर व्यक्ति बदलना
+## Submission पर व्यक्ति बदलना {#changing-the-person-on-a-submission}
 
 अगर कोई submission गलत व्यक्ति से जुड़ गया है -- उदाहरण के लिए, दो परिवार के सदस्य एक ही email पता साझा करते हैं -- तो आप उसे सही व्यक्ति के पास ले जा सकते हैं या उसका link हटा सकते हैं।
 

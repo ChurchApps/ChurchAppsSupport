@@ -28,14 +28,14 @@ Once you have created a group, the next step is adding members. From a group's d
 5. The person now appears in the group member list.
 
 :::tip
-Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click.
+Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click: the people you picked most recently in any person search (remembered in this browser), then the people added to B1 most recently.
 :::
 
 When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below). When forms are linked to the group, a **Linked forms** section appears too (see [Linked Forms](#linked-forms) below).
 
 ### Adding Someone Who Isn't in B1 Yet
 
-If your search finds no one, the search shows **No records found** with an **Add New Person** link. Click it, enter the person's first name, last name, and (optionally) email, and click **Add**. The new person is created in your People directory and added to the group in one step -- you don't need to search for them again.
+If your search finds no one, the search shows **No records found** with an **Add New Person** link. Click it, enter the person's first name and last name, optionally their title, email, and mobile phone, and click **Add**. The new person is created in your People directory and added to the group in one step -- you don't need to search for them again.
 
 ## Designating Group Leaders {#designating-group-leaders}
 
@@ -64,7 +64,7 @@ Group leaders can keep private notes about the group -- for example, follow-ups,
 The **Leader notes** section appears on the group page only for people who are leaders of that group. It shows the newest note, who wrote it and when, and how many notes there are.
 
 1. On the group page, click **All notes** in the **Leader notes** section.
-2. Type your note in the box and post it. Notes are listed with the author's name and photo and the date and time each was posted.
+2. Type your note in the box and post it. To format it, highlight text and pick **Bold**, **Italic**, **Bulleted list**, or **Numbered list** from the popup that appears (or press **Ctrl+B** / **Ctrl+I**). Notes are listed with the author's name and photo and the date and time each was posted.
 3. Click the **Back to** link with the group's name to return to the group page.
 
 :::info
@@ -99,7 +99,7 @@ Create reusable email templates for recurring communications like weekly updates
 
 ### Turning On Group Email for Your Church {#turning-on-group-email-for-your-church}
 
-All churches on B1 send email from the same address, so they share one sending reputation. To keep everyone's email out of spam folders, the ChurchApps team reviews each church once before it can send group email.
+All churches on B1 send email from the same address (your church's name shows as the sender name), so they share one sending reputation. To keep everyone's email out of spam folders, the ChurchApps team reviews each church once before it can send group email.
 
 If your church has not been reviewed yet, the Send Email dialog shows **Group email needs a quick review** instead of the message editor:
 
@@ -157,7 +157,10 @@ You can send a push notification directly to all group members who have the B1.c
    - **Open link or flyer URL** *(optional)* -- A relative app path (for example, `/mobile/groups`) or a full `https://` URL that the notification opens when tapped.
    - **Image URL** *(optional)* -- An `https://` URL to an image that appears alongside the notification on supported devices.
 4. A live preview shows how the notification will appear on the device.
-5. Click **Send Notification**.
+5. Under **When**, choose **Send now**, or **Schedule for later** and pick a future **Send at** date and time.
+6. Click **Send Notification** (or **Schedule Notification**).
+
+Scheduled notifications, and church-wide ones for everyone with the app, are managed on the [Push Notifications](../settings/push-notifications.md) page under **Mobile**, where you can edit, send, or cancel them before they go out.
 
 :::info
 Push notifications are delivered only to group members who have the B1.church PWA installed and have not disabled push notifications. Members without a registered push device or with push turned off are counted as skipped, and the send summary shows how many were reached versus skipped.

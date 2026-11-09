@@ -1,6 +1,6 @@
 ---
 title: "Opprette skjemaer"
-description: "Lag egne skjema i B1 Admin for arrangementspåmelding, undersøkelser og besøkskort, og del dem via lenke, QR-kode eller utskrift."
+description: "Lag egne skjemaer i B1 Admin for arrangementspåmeldinger, undersøkelser og besøkskort, og del dem via lenke, QR-kode eller utskrift."
 ---
 
 # Opprette skjemaer
@@ -13,7 +13,7 @@ Lag egendefinerte skjemaer for å samle inn opplysninger fra menigheten. Du kan 
 
 ## Opplæringsvideo
 
-<YouTube id="sr9wxEj9ghQ" title="Opprette skjemaer og håndtere innsendinger i B1" />
+<YouTube id="UZ4dGCNIFw4" title="Opprette skjemaer og håndtere innsendinger i B1" next="Launching Your Church Website in B1" nextUrl="/docs/b1-admin/guides/launch-website" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
@@ -41,7 +41,7 @@ Trenger du en papirkopi å dele ut -- for eksempel et besøkskort ved velkomstdi
 
 ## Dele et skjema med en QR-kode {#sharing-a-form-with-a-qr-code}
 
-Frittstående skjemaer har en lenke **QR-kode** ved siden av seg på hovedlisten over skjemaer (arkiverte skjemaer har ikke dette). Klikk på den for å åpne en QR-kode for skjemaets offentlige nettadresse, med lenken vist under. Klikk **Last ned PNG** for å lagre koden som et bilde du kan skrive ut på kirkebladet eller vise på lysbilder. Den som skanner den, åpner skjemaet på telefonen sin.
+Frittstående skjemaer har en lenke **QR-kode** ved siden av seg på hovedlisten over skjemaer (arkiverte skjemaer har ikke dette). Klikk på den for å åpne en QR-kode for skjemaets offentlige nettadresse, med lenken vist under. Klikk **Last ned PNG** for å lagre koden som et bilde du kan skrive ut på menighetsbladet eller vise på lysbilder. Den som skanner den, åpner skjemaet på telefonen sin.
 
 ## Legge til spørsmål {#adding-questions}
 
@@ -60,7 +60,7 @@ Frittstående skjemaer har en lenke **QR-kode** ved siden av seg på hovedlisten
 7. Gjenta for å legge til flere spørsmål.
 
 :::warning
-Feltypen **Betaling** krever at Stripe er konfigurert. Hvis du ikke har satt opp nettbasert giving ennå, se [Oppsett for nettbasert giving](../donations/online-giving-setup.md) før du legger til betalingsfelt. Personer som betaler på et skjema uten å logge inn, må krysse av for **Jeg er ikke en robot** før kortet blir godtatt.
+Feltypen **Betaling** krever at Stripe er konfigurert. Hvis du ikke har satt opp nettbasert giving ennå, se [Oppsett av nettbasert giving](../donations/online-giving-setup.md) før du legger til betalingsfelt. Personer som betaler på et skjema uten å logge inn, må krysse av for **Jeg er ikke en robot** før kortet blir godtatt.
 :::
 
 ## Administrere skjemamedlemmer {#managing-form-members}
@@ -81,7 +81,7 @@ Du kan koble et hvilket som helst frittstående skjema til en gruppe -- for ekse
 Når et skjema er koblet:
 
 - **Gruppemedlemmer** ser skjemaet i en seksjon for **Skjemaer** på gruppens side på B1.church mens skjemaet er åpent, med en knapp for **Fyll ut** som åpner det (se [Gruppedetaljer](../../b1-church/groups/group-details.md#linked-forms)).
-- **Gruppeledere** ser også stengte skjemaer, og kan lese svarene på alle innsendinger og skrive dem ut (én innsending eller **Skriv ut alle**). Ledere kan bare se svarene -- de kan ikke redigere skjemaet med mindre de også er [skjemamedlemmer](#managing-form-members).
+- **Gruppeledere** ser også stengte skjemaer, og kan lese og skrive ut svarene på alle innsendinger (én innsending, eller **Skriv ut alle**). Ledere kan bare se svarene -- de kan ikke redigere skjemaet med mindre de også er [skjemamedlemmer](#managing-form-members).
 - **I B1 Admin** viser gruppens side en seksjon for **Koblede skjemaer** som lister opp hvert koblet skjema som **Åpent** eller **Stengt**. Den vises for gruppens ledere og for personer som kan administrere skjemaer. Se [Gruppemedlemmer](../groups/group-members.md#linked-forms).
 
 Et skjema er stengt når det er utenfor tidsrommet det er tilgjengelig. Arkiverte skjemaer vises ikke på gruppesiden.
@@ -97,7 +97,7 @@ Hver gang noen sender inn skjemaet, legges den matchede eller nyopprettede perso
 Med **Opprett personpost fra innsendinger** slått på, kan du også sende e-post til hver person som sender inn skjemaet. Fyll ut **Emne for oppfølgings-e-post** og **Innhold i oppfølgings-e-post** i skjemaets detaljer. Du kan bruke merkene `{firstName}` og `{churchName}` i begge. E-posten sendes bare når begge feltene er fylt ut.
 
 :::info
-Oppfølgingse-poster sendes først når kirken din er godkjent til å sende gruppe-e-post, og de teller mot kirkens daglige e-postgrense. Se [Slå på gruppe-e-post for kirken din](../groups/group-members.md#turning-on-group-email-for-your-church).
+Oppfølgings-e-poster sendes først når menigheten din er godkjent til å sende gruppe-e-post, og de teller mot menighetens daglige e-postgrense. Se [Slå på gruppe-e-post for menigheten din](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
 
 ## Duplisere et skjema
@@ -119,7 +119,7 @@ Frittstående skjemaer kan vise et **overskriftsbilde** øverst på skjemaet. I 
 Bruk feltet **Takkemelding** til å bestemme hva folk ser etter at de har sendt inn skjemaet, inkludert på skjemaets offentlige nettadresseside. Hvis du lar det stå tomt, ser de «Takk for at du sendte inn skjemaet!»
 
 :::tip
-Frittstående skjemaer er gode for arrangementspåmeldinger. Del den offentlige nettadressen via e-post eller sosiale medier, eller legg skjemaet direkte inn på kirkens nettsted.
+Frittstående skjemaer er gode for arrangementspåmeldinger. Del den offentlige nettadressen via e-post eller sosiale medier, eller legg skjemaet direkte inn på menighetens nettsted.
 :::
 
 :::info

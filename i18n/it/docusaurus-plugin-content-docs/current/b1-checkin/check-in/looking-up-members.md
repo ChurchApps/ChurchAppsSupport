@@ -70,7 +70,7 @@ Se la tua chiesa ha attivato la registrazione degli ospiti con codice QR, un lin
 Il modulo aperto con **Registrati qui** rimane sulla pagina di registrazione degli ospiti -- i visitatori non possono sfogliare altre parti del sito web della chiesa dal chiosco. Se nessuno tocca o digita nel modulo per 2 minuti, il chiosco lo chiude e torna alla schermata di ricerca. Ogni volta che il modulo si chiude, tutto ciò che è stato digitato viene cancellato in modo che la famiglia successiva inizi con un modulo vuoto.
 :::
 
-## Stampa di Etichette per un Check-In Telefonico
+## Stampa di Etichette per un Check-In Telefonico {#printing-labels-for-a-phone-check-in}
 
 Le famiglie che hanno già fatto il check-in sul loro telefono tramite [l'auto-check-in di B1 Church](../../b1-church/checkin/self-checkin.md) possono stampare i loro cartellini con i nomi al chiosco senza cercarsi.
 

@@ -97,7 +97,7 @@ Configure um protetor de tela que seja ativado após um período de inatividade:
 Use a tela de espera para exibir anúncios, eventos próximos ou mensagens de boas-vindas quando o quiosque não estiver em uso.
 :::
 
-## Cadastro de visitantes por QR code
+## Cadastro de visitantes por QR code {#guest-registration-via-qr-code}
 
 O quiosque de check-in pode exibir um QR code que os visitantes escaneiam para se cadastrar, junto com sua família, no próprio celular. Isso agiliza o check-in de visitantes que vêm pela primeira vez.
 

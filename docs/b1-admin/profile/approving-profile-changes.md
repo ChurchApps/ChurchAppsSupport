@@ -40,6 +40,8 @@ When a member submits a profile change, it appears as a task assigned to your ap
 3. Review the changes.
 4. Click **Apply** to approve and save the changes to their profile.
 
+A request to add a family member shows the new person's title, name, household role, and mobile phone on one line (for example, *Mr John Smith · Child · 555-0100*). Applying it creates that person in the member's household with those details.
+
 The task will close automatically once the changes are applied.
 
 ## Setting Up the Approval Group

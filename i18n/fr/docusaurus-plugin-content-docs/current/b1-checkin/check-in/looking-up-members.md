@@ -70,7 +70,7 @@ Si votre église a l'enregistrement des invités par code QR activé, un lien **
 Le formulaire ouvert avec **S'inscrire ici** reste sur la page d'enregistrement des invités -- les visiteurs ne peuvent pas naviguer vers d'autres parties du site web de l'église depuis le kiosque. Si personne ne touche ou tape dans le formulaire pendant 2 minutes, le kiosque le ferme et revient à l'écran de recherche. Chaque fois que le formulaire se ferme, tout ce qui a été tapé dedans est effacé afin que la prochaine famille commence avec un formulaire vierge.
 :::
 
-## Impression d'étiquettes pour un enregistrement par téléphone
+## Impression d'étiquettes pour un enregistrement par téléphone {#printing-labels-for-a-phone-check-in}
 
 Les familles qui se sont déjà enregistrées sur leur téléphone via l'[auto-enregistrement B1 Church](../../b1-church/checkin/self-checkin.md) peuvent imprimer leurs badges au kiosque sans se rechercher.
 

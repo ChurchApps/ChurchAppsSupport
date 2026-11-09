@@ -1,59 +1,69 @@
 ---
-title: "Aprovações de Calendário"
-description: "Revise as solicitações pendentes de reserva de salas e recursos no B1 Admin, verifique conflitos e aprove ou recuse, publicando o evento se desejar."
+title: "Aprovações de calendário"
+description: "Analise as solicitações pendentes de reserva de salas e recursos no B1 Admin, verifique conflitos, aprove ou rejeite e consulte decisões anteriores em Histórico."
 ---
 
-# Aprovações de Calendário
+# Aprovações de calendário
 
 <div class="article-intro">
 
-A página Aprovações é onde administradores revisam e agem sobre solicitações de reserva de sala e recurso pendentes, bem como eventos de calendário que requerem aprovação antes de serem publicados.
+A página de Aprovações é onde os administradores analisam e tomam providências sobre as solicitações pendentes de reserva de salas e recursos, bem como sobre os eventos do calendário que precisam de aprovação antes de serem publicados.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Configure salas ou recursos com um **Grupo de Aprovação** em [Salas & Recursos](./rooms-resources.md)
-- Você precisa da permissão **Calendars Admin** ou da permissão **content.edit**
+- Configure salas ou recursos com um **Grupo de aprovação** em [Salas e recursos](./rooms-resources.md)
+- Você precisa da permissão **Administrador de calendários** ou da permissão **content.edit**
 
 </div>
 
-## Abrindo Aprovações
+## Abrindo as aprovações
 
-No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Calendários**, e clique em **Aprovações**. Solicitações de reserva pendentes e eventos aguardando revisão são listados aqui.
+No B1 Admin, abra o [menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Calendários** e clique em **Aprovações**. As solicitações de reserva pendentes e os eventos aguardando análise aparecem aqui. Use os botões **Pendentes** e **Histórico** no topo para alternar entre as solicitações que ainda precisam de uma decisão e as que já foram decididas.
 
-## Solicitações de Reserva
+## Solicitações de reserva
 
-Quando um grupo cria um evento e solicita uma sala ou recurso, a solicitação aparece na seção **Solicitações de Sala & Recurso**. Cada linha mostra:
+Quando um grupo cria um evento e solicita uma sala ou um recurso, a solicitação aparece na seção **Solicitações de salas e recursos**. Cada linha mostra:
 
-- O nome do evento e data/hora
-- A sala ou recurso solicitado (com a quantidade, para recursos de múltiplas unidades)
-- Um distintivo de status mostrando se a solicitação tem conflitos
+- O nome do evento e a data/hora
+- A sala ou o recurso solicitado (com a quantidade, no caso de recursos com várias unidades)
+- **Solicitado por**, a pessoa que fez o pedido, com link para o registro dela
+- Um selo de status indicando se a solicitação tem conflitos
 
-### Indicadores de Conflito
+### Indicadores de conflito
 
-Se uma solicitação se sobrepõe a outra reserva ou bloqueio para a mesma sala ou recurso, seu status mostra um distintivo **Conflitos**; passe o mouse sobre ele para ver os detalhes. Solicitações sem sobreposições mostram **Sem conflitos**. Revise solicitações conflitantes cuidadosamente antes de aprovar qualquer uma.
+Se uma solicitação se sobrepõe a outra reserva ou bloqueio para a mesma sala ou recurso, o status mostra um selo **Conflitos**; passe o mouse sobre ele para ver os detalhes. Solicitações sem sobreposição mostram **Sem conflitos**. Analise com cuidado as solicitações conflitantes antes de aprovar qualquer uma delas.
 
-### Aprovando ou Rejeitando
+### Aprovando ou rejeitando
 
-Clique em **Aprovar** ou **Rejeitar** em qualquer solicitação de reserva (rejeitar pede que você confirme primeiro). O grupo solicitante é notificado da decisão. Reservas aprovadas são bloqueadas naquela sala ou recurso para o evento; reservas rejeitadas liberam o slot para outros.
+Clique em **Aprovar** ou **Rejeitar** em qualquer solicitação de reserva (ao rejeitar, o sistema pede confirmação antes). O solicitante é notificado da decisão. As reservas aprovadas ficam bloqueadas para aquela sala ou recurso durante o evento; as reservas rejeitadas liberam o horário para outras pessoas.
 
-Quando você clica em **Aprovar**, um diálogo **Aprovar reserva** abre para que você possa também publicar o evento no mesmo passo:
+Ao clicar em **Aprovar**, abre-se a caixa de diálogo **Aprovar reserva**, para que você possa publicar o evento na mesma etapa:
 
-1. Marque **Publicar no calendário público** para tornar o evento público no calendário do seu grupo. Deixe desmarcado para aprovar a reserva sem mudar a visibilidade do evento.
-2. Uma vez que **Publicar no calendário público** está marcado, você pode opcionalmente escolher um calendário selecionado de **Também adicionar ao calendário** para adicionar o evento a um dos seus [calendários selecionados](./curated-calendar.md) também. Deixe definido para **Nenhum** para pular isso. (Esta opção apenas aparece se você tem a permissão **content.edit**.)
+1. Marque **Publicar no calendário público** para tornar o evento público no calendário do grupo. Deixe desmarcado para aprovar a reserva sem alterar a visibilidade do evento.
+2. Depois que **Publicar no calendário público** estiver marcado, você pode, opcionalmente, escolher um calendário personalizado em **Adicionar também ao calendário** para incluir o evento em um dos seus [calendários personalizados](./curated-calendar.md). Deixe em **Nenhum** para pular essa etapa. (Esta opção só aparece se você tiver a permissão **content.edit**.)
 3. Clique em **Aprovar**.
 
-## Eventos Pendentes
+## Eventos pendentes
 
-Se seu fluxo de trabalho de calendário requer aprovação de evento antes de eventos ficarem visíveis ao público, eventos pendentes aparecem na seção **Solicitações de Evento**. Clique em **Aprovar** para publicar um evento no calendário, ou em **Rejeitar** para notificar o solicitante de que mudanças são necessárias.
+Se o fluxo de calendário da sua igreja exige aprovação de eventos antes que eles fiquem visíveis ao público, os eventos pendentes aparecem na seção **Solicitações de eventos**. Clique em **Aprovar** para publicar um evento no calendário, ou em **Rejeitar** para avisar quem enviou que são necessárias alterações.
 
 :::tip
-Configure um Grupo de Aprovação em uma sala em [Salas & Recursos](./rooms-resources.md) para requerer aprovação para aquela sala. Grupos com acesso podem então solicitar a sala ao criar eventos, e essas solicitações fluem para esta página.
+Configure um Grupo de aprovação em uma sala, em [Salas e recursos](./rooms-resources.md), para exigir aprovação para essa sala. Os grupos com acesso poderão então solicitar a sala ao criar eventos, e essas solicitações chegarão a esta página.
 :::
 
-## Artigos Relacionados
+## Histórico
 
-- [Salas, Recursos & Agendamento](./rooms-resources.md) — configure salas e recursos reserváveis
-- [Criando Calendários](./creating-calendars.md) — gerencie calendários e eventos
+As solicitações aprovadas e rejeitadas permanecem na página. Clique em **Histórico** no topo de Aprovações para vê-las; clique em **Pendentes** para voltar às solicitações abertas.
+
+- **Solicitações de salas e recursos** lista cada reserva decidida, com o evento, a sala ou o recurso, **Solicitado por**, um selo **Aprovado** ou **Rejeitado** e **Decidido**, que mostra quem tomou a decisão e em que data. As solicitações decididas mais recentemente aparecem primeiro.
+- **Solicitações de eventos** lista cada evento decidido com sua descrição, **Solicitado por** e um selo **Aprovado** ou **Rejeitado**. Quem decidiu sobre uma solicitação de evento, e quando, não é registrado, por isso essa coluna não é exibida para eventos.
+
+Clique em um nome em **Solicitado por** para abrir o registro dessa pessoa.
+
+## Artigos relacionados
+
+- [Salas, recursos e agendamento](./rooms-resources.md) — configure salas e recursos reserváveis
+- [Criando calendários](./creating-calendars.md) — gerencie calendários e eventos

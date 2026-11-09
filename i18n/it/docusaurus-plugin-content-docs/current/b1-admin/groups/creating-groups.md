@@ -1,13 +1,13 @@
 ---
 title: "Creare gruppi"
-description: "Crea un nuovo gruppo in B1 Admin: scegli la categoria, assegna un nome e configura politica di adesione, etichette, messaggistica e presenze."
+description: "Crea un nuovo gruppo in B1 Admin, dalla scelta della categoria e del nome fino alla configurazione di politica di adesione, etichette, messaggistica e presenze."
 ---
 
 # Creare gruppi
 
 <div class="article-intro">
 
-Creare un gruppo in B1 Admin è semplice. Imposti una categoria, dai un nome al gruppo e poi configuri le sue impostazioni. I gruppi ti aiutano a organizzare la tua chiesa in unità significative come piccoli gruppi, comitati e classi.
+Creare un gruppo in B1 Admin è semplice. Imposti una categoria, dai un nome al gruppo e poi configuri le sue impostazioni. I gruppi aiutano a organizzare la chiesa in unità significative come piccoli gruppi, comitati e classi.
 
 </div>
 
@@ -25,31 +25,31 @@ Creare un gruppo in B1 Admin è semplice. Imposti una categoria, dai un nome al 
 
 ## Aggiungere un nuovo gruppo
 
-1. Apri il [menu di navigazione rapida](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e clicca su **Gruppi**.
-2. Clicca su **Aggiungi gruppo** nell'intestazione della pagina. Sotto l'elenco si apre un modulo **Nuovo gruppo**. Inserisci un **Nome categoria**. Le categorie ti aiutano a raggruppare i gruppi affini (ad esempio "Piccoli gruppi", "Ministeri" o "Comitati"). Se una categoria esiste già, puoi selezionarla dall'elenco.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Gruppi**.
+2. Fai clic su **Aggiungi gruppo** nell'intestazione della pagina. Sotto l'elenco si apre un modulo **Nuovo gruppo**. Inserisci un **Nome categoria**. Le categorie aiutano a raggruppare i gruppi affini (ad esempio "Piccoli gruppi", "Ministeri" o "Comitati"). Se una categoria esiste già, puoi selezionarla dall'elenco.
 3. Inserisci il **Nome** del gruppo.
-4. Clicca su **Aggiungi**. Il tuo nuovo gruppo comparirà nell'elenco, con la sua categoria mostrata sotto il nome.
+4. Fai clic su **Aggiungi**. Il nuovo gruppo comparirà nell'elenco, con la sua categoria mostrata sotto il nome.
 
 ## Configurare le impostazioni del gruppo
 
 Una volta creato il gruppo, puoi aggiungere altri dettagli:
 
-1. Clicca sul **nome del gruppo** nell'elenco per aprirlo.
-2. Clicca sul pulsante **Modifica** sul lato sinistro della pagina del gruppo, sotto i dettagli del gruppo.
+1. Fai clic sul **nome del gruppo** nell'elenco per aprirlo.
+2. Fai clic sul pulsante **Modifica** sul lato sinistro della pagina del gruppo, sotto i dettagli del gruppo.
 3. Configura le seguenti opzioni:
    - **Descrizione** -- Un breve riepilogo di cosa tratta il gruppo. È visibile ai membri.
    - **Orari degli incontri** -- Quando il gruppo di solito si incontra (ad esempio "Mercoledì alle 19:00").
-   - **Politica di adesione** -- Scegli chi può entrare in questo gruppo:
-     - **Aperto** -- Chiunque può entrare subito senza approvazione
+   - **Politica di adesione** -- Scegli chi può entrare nel gruppo:
+     - **Aperto** -- Chiunque può entrare subito, senza approvazione
      - **Su richiesta** -- Le persone devono inviare una richiesta di adesione che richiede approvazione (vedi [Richieste di adesione ai gruppi](./group-join-requests.md))
      - **Chiuso** -- I membri devono essere aggiunti manualmente da leader o amministratori
-   - **Etichette** -- Assegna al gruppo una o più etichette descrittive (ad esempio "In presenza", "Online", "Nuovi membri benvenuti"). Le etichette sono tag liberi che definisci tu; seleziona tutte quelle che si applicano. Le etichette possono essere usate per filtrare i gruppi nell'elemento Browser dei gruppi del sito web.
-   - **Gruppo riservato** -- Nasconde questo gruppo e il suo elenco dalle pagine pubbliche, dal ricercatore di gruppi e dai non membri. Usalo per gruppi sensibili come i ministeri di recupero o di consulenza; solo i membri del gruppo e il personale della chiesa possono vederlo.
+   - **Etichette** -- Assegna al gruppo una o più etichette descrittive (ad esempio "Di persona", "Online", "Nuovi membri benvenuti"). Le etichette sono tag liberi che definisci tu; seleziona tutte quelle che si applicano. Le etichette possono essere usate per filtrare i gruppi nell'elemento Browser dei gruppi del sito web, e un elemento Elenco gruppi mostra i gruppi che hanno una determinata etichetta.
+   - **Gruppo riservato** -- Nasconde questo gruppo e il suo elenco dalle pagine pubbliche, dal cercatore di gruppi e dai non membri. Usalo per gruppi sensibili come i ministeri di recupero o di consulenza; solo i membri del gruppo e lo staff della chiesa possono vederlo.
    - **Discussioni** -- Attiva o disattiva il feed di chat del gruppo, dove qualsiasi membro può pubblicare. Attivo per impostazione predefinita.
    - **Annunci** -- Attiva un secondo feed di chat riservato ai leader -- i membri possono leggere e reagire, ma solo i leader possono pubblicare. Attivo per impostazione predefinita.
-   - **Monitoraggio presenze** -- Attivalo se vuoi registrare le [presenze](../attendance/tracking-attendance.md) per questo gruppo.
-   - **Orari dei culti** -- Associa il gruppo a specifici orari dei culti della chiesa, se applicabile. Vedi [Configurazione presenze](../attendance/setup.md) per i dettagli sugli orari dei culti.
-4. Clicca su **Salva** per applicare le modifiche.
+   - **Monitoraggio delle presenze** -- Attivalo se vuoi registrare le [presenze](../attendance/tracking-attendance.md) per questo gruppo.
+   - **Orari dei culti** -- Associa il gruppo a specifici orari dei culti della chiesa, se applicabile. Vedi [Configurazione delle presenze](../attendance/setup.md) per i dettagli sugli orari dei culti.
+4. Fai clic su **Salva** per applicare le modifiche.
 
 :::tip
 Aggiungere una descrizione chiara e un orario di incontro aiuta i membri a sapere cosa aspettarsi quando entrano in un gruppo.
@@ -63,19 +63,19 @@ Disattivare sia Discussioni sia Annunci rimuove completamente la scheda Messaggi
 
 Stai avviando una nuova edizione di una classe o di un ministero ricorrente? Invece di reinserire tutte le impostazioni, duplica un gruppo esistente:
 
-1. Apri il gruppo e clicca su **Duplica** (sotto il pulsante **Modifica** sul lato sinistro della pagina del gruppo).
+1. Apri il gruppo e fai clic su **Duplica** (sotto il pulsante **Modifica** sul lato sinistro della pagina del gruppo).
 2. Conferma la duplicazione.
 
-La copia mantiene le impostazioni dell'originale -- categoria, descrizione, orario/luogo dell'incontro, politica di adesione, etichette e sede -- ma **non** i suoi membri. Il nuovo gruppo prende il nome dell'originale con " (Copia)" aggiunto; rinominalo dalle impostazioni del gruppo.
+La copia mantiene le impostazioni dell'originale -- categoria, descrizione, orario e luogo dell'incontro, politica di adesione, etichette e sede -- ma **non** i suoi membri. Il nuovo gruppo prende il nome dell'originale con " (Copia)" aggiunto; rinominalo dalle impostazioni del gruppo.
 
 ## Archiviare un gruppo
 
 Quando un gruppo non è più attivo ma vuoi conservarne la cronologia invece di eliminarlo:
 
-1. Apri il gruppo e clicca su **Modifica** per modificarne le impostazioni.
-2. Clicca su **Archivia** e conferma.
+1. Apri il gruppo e fai clic su **Modifica** per modificarne le impostazioni.
+2. Fai clic su **Archivia** e conferma.
 
-I gruppi archiviati non compaiono più nell'elenco principale dei Gruppi. Per ritrovarne uno, clicca sul pulsante **Mostra archiviati** accanto ai pulsanti delle categorie in cima alla pagina Gruppi, poi clicca su **Ripristina** accanto al gruppo per riportarlo attivo.
+I gruppi archiviati non compaiono più nell'elenco principale dei Gruppi. Per ritrovarne uno, fai clic sul pulsante **Mostra archiviati** accanto ai pulsanti delle categorie in cima alla pagina Gruppi, poi fai clic su **Ripristina** accanto al gruppo per riportarlo nell'elenco.
 
 :::info
 Archiviare un gruppo non elimina i suoi membri, la cronologia delle presenze o gli eventi del calendario -- nasconde solo il gruppo dall'elenco predefinito finché non lo ripristini.
@@ -88,8 +88,8 @@ Dopo aver creato e configurato il gruppo, puoi:
 - **Aggiungere membri** -- Cerca le persone e aggiungile al gruppo. Usa l'icona a stella (**Rendi leader**) per designare i leader del gruppo. Vedi [Membri del gruppo](./group-members.md).
 - **Configurare un calendario** -- Crea eventi e incontri ricorrenti per il gruppo. Vedi [Calendario del gruppo](./group-calendar.md).
 - **Comunicare** -- Invia messaggi a tutti i membri del gruppo direttamente dalla pagina del gruppo.
-- **Esportare i dati** -- Clicca su **Esporta** sopra l'elenco dei membri del gruppo per scaricarlo.
+- **Esportare i dati** -- Fai clic su **Esporta** sopra l'elenco dei membri del gruppo per scaricarlo.
 
 :::info
-Ogni gruppo appartiene a una categoria, e la pagina principale dei Gruppi ti permette di filtrare l'elenco per categoria. Puoi sempre riorganizzare o rinominare le categorie man mano che la tua chiesa cresce.
+Ogni gruppo appartiene a una categoria, e la pagina principale dei Gruppi ti permette di filtrare l'elenco per categoria. Puoi sempre riorganizzare o rinominare le categorie man mano che la chiesa cresce.
 :::

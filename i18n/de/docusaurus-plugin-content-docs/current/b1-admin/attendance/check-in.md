@@ -97,7 +97,7 @@ Konfigurieren Sie einen Bildschirmschoner, der nach einer Zeit der Inaktivität 
 Nutzen Sie den Ruhebildschirm, um Ankündigungen, bevorstehende Veranstaltungen oder Willkommensnachrichten anzuzeigen, wenn der Kiosk gerade nicht benutzt wird.
 :::
 
-## Gast-Anmeldung per QR-Code
+## Gast-Anmeldung per QR-Code {#guest-registration-via-qr-code}
 
 Der Check-in-Kiosk kann einen QR-Code anzeigen, den Besucher scannen, um sich und ihre Familie auf dem eigenen Smartphone anzumelden. Das beschleunigt den Check-in für Erstbesucher.
 

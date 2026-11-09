@@ -27,7 +27,7 @@ I-tap ang **More** sa tab bar, pagkatapos i-tap ang **Me** sa ilalim ng **Accoun
 
 Kung naka-sign out ka, makikita mo ang "Sign in to see your week" at ang button na **Sign In** sa halip.
 
-## Upcoming
+## Upcoming {#upcoming}
 
 Inililista ng seksyong **Upcoming** ang susunod mong tatlong item ayon sa petsa, na may type badge ang bawat isa. Kung may higit pa, i-tap ang **All upcoming** para makita ang buong listahan, at **Back to Me** para bumalik.
 

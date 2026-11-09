@@ -7,7 +7,7 @@ description: "Configurare le chiavi VAPID, il client WebPushHelper e la gestione
 
 <div class="article-intro">
 
-Le web app di ChurchApps consegnano le notifiche push tramite la Web Push API del W3C -- lo stesso meccanismo usato da Firebase Cloud Messaging lato server, ma consegnato tramite il `PushManager` nativo del browser invece che tramite FCM. Un'unica coppia di chiavi VAPID sull'API di messaggistica copre tutti i consumatori (B1Admin, B1App, future PWA).
+Le app web di ChurchApps consegnano le notifiche push tramite la Web Push API del W3C -- lo stesso meccanismo usato da Firebase Cloud Messaging lato server, ma consegnato tramite il `PushManager` nativo del browser invece che tramite FCM. Un'unica coppia di chiavi VAPID sull'API di messaggistica copre tutti i consumatori (B1Admin, B1App, future PWA).
 
 </div>
 
@@ -21,6 +21,7 @@ I percorsi più comuni che arrivano al push:
 2. **Messaggi privati** -- un messaggio diretto passa dalla stessa funzione di consegna e tenta sempre il push insieme alla consegna via socket.
 3. **Promemoria programmati** -- promemoria per eventi, attività e servizio espansi e inviati dal motore dei promemoria, che avvia le nuove occorrenze direttamente al livello push.
 4. **Push avviati dallo staff** -- `POST /messaging/notifications/create`, `/ping` e `/group/send` per trasmissioni singole o di gruppo.
+5. **Push programmati dallo staff** -- `POST /messaging/scheduledNotifications` salva un push per tutti quelli che hanno l'app (`audience: "church"`) oppure per un gruppo, e il timer da 1 minuto lo invia quando è il momento (vedi [Architettura delle notifiche](./architecture/notifications.md)). Un push per tutta la chiesa senza link apre `/mobile/notifications`; un push di gruppo senza link apre quel gruppo.
 
 ## Flusso lato server
 
@@ -28,13 +29,13 @@ I percorsi più comuni che arrivano al push:
 NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderEngine.scan(...)
   │
   └─ NotificationHelper.attemptDeliveryWithEscalation(...)
-       ├─ controllo delle preferenze in-app      ← i destinatari silenziati si fermano qui, nessun push
-       ├─ stesso passaggio, entrambi tentati (nessuno blocca l'altro):
-       │    ├─ consegna via socket tramite DeliveryHelper  ← saltata per promemoria/trasmissioni (partono dal push)
-       │    └─ controllo delle preferenze push
+       ├─ in-app preference gate                  ← muted recipients stop here, no push
+       ├─ same pass, both attempted (neither gates the other):
+       │    ├─ socket delivery via DeliveryHelper  ← skipped for reminders/broadcasts (they start at push)
+       │    └─ push preference gate
        │         └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
-       │              └─ libreria web-push → POST firmata VAPID → servizio push del browser
-       └─ controllo delle preferenze email → guidato dal timer, fa salire di livello le righe non lette separatamente
+       │              └─ web-push library → VAPID-signed POST → browser push service
+       └─ email preference gate → timer-driven, escalates unread rows separately
 ```
 
 ### Variabili d'ambiente richieste
@@ -85,13 +86,13 @@ Il `WebPushHelper` di `@churchapps/apphelper` è l'unico punto di ingresso lato 
 ```typescript
 import { WebPushHelper } from "@churchapps/apphelper";
 
-// Nel bootstrap dell'app (ad esempio _app.tsx, layout.tsx)
+// In your app's bootstrap (e.g., _app.tsx, layout.tsx)
 WebPushHelper.configure({
-  scope: "/",                // scope del service worker; corrisponde alla registrazione di sw.js
-  appName: "B1AppPwa"        // salvato nella riga del dispositivo, utile per filtrare per superficie
+  scope: "/",                // service worker scope; matches sw.js registration
+  appName: "B1AppPwa"        // stored on the device row, useful for filtering by surface
 });
 
-// Dopo l'accesso (e dopo ogni variazione di userChurch)
+// After login (and after every userChurch change)
 await WebPushHelper.subscribe();
 ```
 
@@ -105,20 +106,20 @@ Comportamenti che i consumatori ottengono automaticamente:
 
 ### Requisito del service worker {#service-worker-requirement}
 
-Il `PushManager` del browser risolve un'iscrizione solo quando nello scope configurato è registrato un service worker. Le PWA di ChurchApps usano [Serwist](https://serwist.dev/) (app Next.js) oppure workbox per generare il service worker. Poiché il server ora tenta sempre il push insieme alla consegna via socket (vedi [Quando parte il push](#when-push-fires)), il service worker è il punto di deduplicazione: il suo gestore `push` deve sopprimere `showNotification` quando un client in primo piano o visibile è già sulla destinazione di deep-link della notifica, ma deve sempre aggiornare il badge dell'app, indipendentemente dal fatto che il banner sia stato mostrato:
+Il `PushManager` del browser risolve un'iscrizione solo quando nello scope configurato è registrato un service worker. Le PWA di ChurchApps usano [Serwist](https://serwist.dev/) (app Next.js) oppure workbox per generare il service worker. Poiché il server ora tenta sempre il push insieme alla consegna via socket (vedi [Quando parte il push](#when-push-fires)), il service worker è il punto di deduplicazione: il suo gestore `push` deve sopprimere `showNotification` quando un client in primo piano o visibile si trova già sulla destinazione di deep-link della notifica, ma deve sempre aggiornare il badge dell'app, indipendentemente dal fatto che il banner sia stato mostrato:
 
 ```javascript
-// public/sw.js (o qualunque cosa emetta Serwist/workbox)
+// public/sw.js (or whatever Serwist/workbox emits)
 self.addEventListener("push", (event) => {
   const data = event.data?.json() ?? {};
   const title = data.title || "ChurchApps";
   const target = deepLinkFor(data.type, data.contentId, data);
 
   event.waitUntil((async () => {
-    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // viene sempre eseguito, anche se il banner è soppresso
+    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // always runs, even if the banner is suppressed
 
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-    // Stesso pathname; per i messaggi privati, anche stesso conversationId.
+    // Same pathname; for private messages, also same conversationId.
     const alreadyViewing = clients.some((client) => (client.focused || client.visibilityState === "visible") && clientMatchesTarget(client.url, target));
     if (alreadyViewing) return;
 
@@ -137,7 +138,7 @@ self.addEventListener("notificationclick", (event) => {
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
 
     const exact = clients.find((client) => clientMatchesTarget(client.url, target));
-    if (exact) return exact.focus(); // già sulla destinazione: metti a fuoco, non navigare
+    if (exact) return exact.focus(); // already on the target: focus, don't navigate
 
     const mobileClient = clients.find((client) => new URL(client.url).pathname.startsWith("/mobile"));
     if (mobileClient) {
@@ -161,7 +162,7 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Pagine correlate
 
-- [Architettura delle notifiche](./architecture/notifications.md) -- l'intero imbuto di escalation in-app/push/email e il motore dei promemoria
-- [Architettura in tempo reale](./realtime.md) -- consegna via WebSocket; il push ora parte dallo stesso imbuto in-app insieme alla consegna via socket nello stesso passaggio, non solo come ripiego quando una consegna via socket non va a buon fine
+- [Architettura delle notifiche](./architecture/notifications.md) -- l'intero flusso di escalation in-app/push/email e il motore dei promemoria
+- [Architettura in tempo reale](./realtime.md) -- consegna via WebSocket; il push ora parte dallo stesso flusso in-app insieme alla consegna via socket nello stesso passaggio, non solo come ripiego quando una consegna via socket non va a buon fine
 - [Endpoint Messaging](./api/endpoints/messaging.md) -- notifiche, dispositivi e il resto della superficie di messaggistica
 - [AppHelper](./shared-libraries/app-helper.md) -- il pacchetto npm che distribuisce `WebPushHelper`

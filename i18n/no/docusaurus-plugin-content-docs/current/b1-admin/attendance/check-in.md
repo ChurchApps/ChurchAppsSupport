@@ -97,7 +97,7 @@ Konfigurer en skjermsparer som aktiveres etter en periode uten aktivitet:
 Bruk hvilemodus til å vise kunngjøringer, kommende arrangementer eller velkomstmeldinger når kiosken ikke er i aktiv bruk.
 :::
 
-## Gjesteregistrering via QR-kode
+## Gjesteregistrering via QR-kode {#guest-registration-via-qr-code}
 
 Innsjekkingskiosken kan vise en QR-kode som besøkende skanner for å registrere seg selv og familien sin på egen telefon. Dette gjør innsjekkingen raskere for førstegangsgjester.
 

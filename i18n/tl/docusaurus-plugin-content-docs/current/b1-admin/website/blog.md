@@ -1,14 +1,14 @@
 ---
-title: "Pagsulat ng Blog Post para sa Website mo sa B1 Admin"
+title: "Pagsulat ng Blog Post para sa Website sa B1 Admin"
 sidebar_label: "Blog"
-description: "Gumawa, mag-iskedyul, at mag-publish ng blog post sa website ng simbahan sa B1 Admin, kasama ang excerpt, kategorya, tag, header na larawan, at comment embed."
+description: "Gumawa, mag-iskedyul, at mag-publish ng mga blog post sa website ng iyong simbahan sa B1 Admin, kasama ang mga excerpt, kategorya, tag, header na larawan, at comment embed."
 ---
 
 # Blog
 
 <div class="article-intro">
 
-Hinahayaan ka ng pahinang Blog na mag-publish ng mga balita, update, at debosyonal sa website ng iyong simbahan. Lumalabas ang mga post sa isang listahan ng card sa `/blog`, sa sarili nilang URL, at sa RSS feed na maaaring bantayan ng ibang tool (gaya ng Zapier) para sa mga bagong post.
+Hinahayaan ka ng pahinang Blog na mag-publish ng mga balita, update, at debosyonal sa website ng iyong simbahan. Lumilitaw ang mga post sa isang listahan ng card sa `/blog`, sa sarili nilang URL, at sa isang RSS feed na maaaring bantayan ng ibang tool (gaya ng Zapier) para sa mga bagong post.
 
 </div>
 
@@ -22,7 +22,7 @@ Hinahayaan ka ng pahinang Blog na mag-publish ng mga balita, update, at debosyon
 
 ## Pag-access sa Blog
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at palawakin ang **Website**.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at i-expand ang **Website**.
 2. I-click ang **Blog**.
 3. Inililista ng pahinang Blog ang bawat post kasama ang estado at petsa ng publikasyon nito.
 
@@ -33,7 +33,7 @@ Hinahayaan ka ng pahinang Blog na mag-publish ng mga balita, update, at debosyon
 3. Magdagdag ng **Excerpt** -- maikling buod na ipinapakita sa listahan ng post, meta description, at RSS feed. Kung iiwan itong blangko, awtomatikong gagawa ng isa mula sa simula ng nilalaman ng post.
 4. Isulat ang katawan ng post sa editor ng **Content** gamit ang Markdown. I-click ang **Preview** para makita kung paano lilitaw ang naka-format na post.
 5. Pumili ng **Category** (pumili ng umiiral na o mag-type ng bago) at opsyonal na **Tags** na pinaghihiwalay ng kuwit.
-6. I-click ang **Select Image** para pumili ng larawan mula sa iyong gallery ng [Files](./files.md), o mag-upload ng bago. Ang mga na-upload na larawan ay bumubukas sa built-in na crop tool na naka-lock sa 16:9 na ratio, para maayos mo ang anumang larawan para magkasya sa header ng post at sa mga card ng listahan.
+6. I-click ang **Select Image** para pumili ng larawan mula sa iyong gallery ng [Files](./files.md), o mag-upload ng bago. Bumubukas ang mga na-upload na larawan sa built-in na crop tool na naka-lock sa 16:9 na ratio, para maayos mo ang anumang larawan para magkasya sa header ng post at sa mga card ng listahan.
 7. Itakda ang **Author** -- ikaw ang default, pero maaari kang maghanap at pumili ng sinumang tao sa iyong database.
 8. I-on ang **Published** at itakda ang **Publish Date** kapag handa ka nang gawing publiko ang post. Iwanan itong naka-off para i-save ang post bilang draft.
 
@@ -49,21 +49,23 @@ Bawat post sa listahan ay nagpapakita ng isa sa tatlong estado:
 - **Scheduled** -- Naka-on ang Published, pero nasa hinaharap ang publish date.
 - **Published** -- Live sa iyong website at kasama sa RSS feed.
 
-## Pag-edit, Pag-preview, at Pagbura ng Post
+## Pag-e-edit, Pag-preview, at Pagbura ng mga Post
 
 - I-click ang **Edit** sa tabi ng post para gumawa ng mga pagbabago.
-- I-click ang **View on Site** (lumalabas sa mga naka-publish na post) para buksan ang live na post sa iyong website sa bagong tab.
+- I-click ang **View on Site** (lumilitaw sa mga naka-publish na post) para buksan ang live na post sa iyong website sa bagong tab.
 - I-click ang **Delete** para tuluyang alisin ang post.
 
-## Paano Nakikita ng Mga Bisita ang Iyong Blog
+## Paano Nakikita ng mga Bisita ang Iyong Blog
 
-Lumalabas ang mga naka-publish na post sa `{yoursite}/blog`, 10 bawat pahina, na may mga link na **Older**/**Newer** para mag-navigate sa iyong archive, kasama ang filter ng category at byline at larawan ng bawat post. Lumalabas din bilang mga chip na maaaring i-click ang mga tag, kaya maaaring salain ng mga bisita ang listahan ayon sa tag sa parehong paraan. Nasa `{yoursite}/blog/{slug}` ang bawat indibidwal na post at kasama nito ang mga kaugnay na post mula sa parehong category. Naglalathala rin ang pahina ng blog ng RSS feed, na awtomatikong natutuklasan ng mga feed reader at automation tool gaya ng Zapier.
+Lumalabas ang mga naka-publish na post sa `{yoursite}/blog`, 10 bawat pahina, na may mga link na **Older**/**Newer** para mag-navigate sa iyong archive, kasama ang filter ng kategorya at ang byline at larawan ng bawat post. Lumalabas din bilang mga chip na maaaring i-click ang mga tag, kaya maaaring salain ng mga bisita ang listahan ayon sa tag sa parehong paraan. Nasa `{yoursite}/blog/{slug}` ang bawat indibidwal na post at kasama nito ang mga kaugnay na post mula sa parehong kategorya. Naglalathala rin ang pahina ng blog ng RSS feed, na awtomatikong natutuklasan ng mga feed reader at automation tool gaya ng Zapier.
+
+Maaari ring lumitaw ang mga naka-publish na post sa seksyong **News** sa Home screen ng app ng iyong simbahan, kung ii-on mo ito -- tingnan ang [Home Screen Sections](../settings/mobile-app.md#home-screen-sections).
 
 :::info
 Hiwalay na uri ng nilalaman ang mga blog post mula sa regular na pahina ng website -- hindi sila ginagawa sa [page editor](./page-editor.md) at hindi lumalabas sa listahan ng Pages. Pinapanatili nitong mabilis at nakatuon sa pagsusulat ang paggawa ng blog.
 :::
 
-## Pagdaragdag ng Mga Komento Sa Ibaba ng Post
+## Pagdaragdag ng Komento sa Ibaba ng mga Post
 
 Hindi nagho-host ang B1 ng mga komento sa blog, pero maaari kang magdagdag ng serbisyo ng komento. Maaari ka ring maglagay ng anumang iba pa sa ibaba ng bawat post, gaya ng newsletter signup o giving button.
 
@@ -71,10 +73,10 @@ Hindi nagho-host ang B1 ng mga komento sa blog, pero maaari kang magdagdag ng se
 2. Sa pahinang Blog, mag-scroll sa **Below Every Post**.
 3. I-paste ang embed code at i-click ang **Save**.
 
-Lalabas ang code sa ilalim ng nilalaman ng bawat naka-publish na post. Ang serbisyo ng komento ang humahawak sa moderation at spam filtering, kaya regular itong suriin sa dashboard nito.
+Lumilitaw ang code sa ilalim ng nilalaman ng bawat naka-publish na post. Ang serbisyo ng komento ang humahawak sa moderation at spam filtering, kaya regular itong suriin sa dashboard nito.
 
 :::tip
-Burahin ang laman ng kahon at i-click ang **Save** para alisin ang code sa bawat post. Tanging mga taong maaaring mag-edit ng church settings ang nakakakita ng kahong ito.
+Burahin ang laman ng kahon at i-click ang **Save** para alisin ang code sa bawat post. Tanging ang mga taong maaaring mag-edit ng church settings ang nakakakita ng kahong ito.
 :::
 
 ## Mga Susunod na Hakbang

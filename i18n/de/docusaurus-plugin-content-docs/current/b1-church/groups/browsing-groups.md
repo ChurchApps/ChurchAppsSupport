@@ -1,50 +1,54 @@
 ---
-title: "Gruppen durchstöbern"
-description: "Durchsuchen Sie die öffentlichen Gruppen Ihrer Gemeinde auf B1.church nach Kategorie. Vergleichen Sie Termine, Orte und Beschreibungen auf den Karten."
+title: "Gruppen durchsuchen"
+description: "Die öffentlichen Gruppen Ihrer Gemeinde auf B1.church nach Kategorien durchsuchen und auf jeder Karte Treffzeiten, Orte und Beschreibungen prüfen, um die passende Gruppe zu finden."
 ---
 
-# Gruppen durchstöbern
+# Gruppen durchsuchen
 
 <div class="article-intro">
 
-Die öffentliche Gruppenseite Ihrer Gemeinde macht es einfach, Gruppen zu entdecken, die Sie interessieren. Gruppen sind nach Kategorien geordnet, sodass Sie verschiedene Gruppentypen schnell überfliegen und die passende finden können.
+Auf der Seite mit den öffentlichen Gruppen Ihrer Gemeinde entdecken Sie leicht Gruppen, die Sie interessieren. Die Gruppen sind nach Kategorien geordnet. So können Sie schnell verschiedene Gruppenarten durchsehen und die passende finden.
 
 </div>
+
+## Schulungsvideo
+
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" next="Responding to a Serving Request in B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Zum Durchstöbern von Gruppen ist keine Anmeldung erforderlich. Allerdings erhalten Sie durch [Anmelden](../getting-started/logging-in.md) Zugang zu zusätzlichen Funktionen auf jeder Gruppendetailseite.
+- Zum Durchsuchen der Gruppen ist keine Anmeldung nötig. [Anmelden](../getting-started/logging-in.md) bietet Ihnen jedoch zusätzliche Funktionen auf der Detailseite jeder Gruppe.
 
 </div>
 
-## Die Gruppenseite finden
+## Die Seite Gruppen finden
 
-Navigieren Sie zur **Gruppen**-Seite auf der B1.church-Seite Ihrer Gemeinde. Diese Seite ist öffentlich zugänglich, sodass Sie nicht angemeldet sein müssen, um zu stöbern.
+Rufen Sie auf der B1.church-Seite Ihrer Gemeinde die Seite **Gruppen** auf. Diese Seite ist öffentlich zugänglich, Sie müssen also nicht angemeldet sein, um zu stöbern.
 
-## Wie Gruppen organisiert sind
+## So sind die Gruppen geordnet
 
-Gruppen werden nach **Kategorie** (auch Label genannt) angezeigt. Kategorien werden von den Administratoren Ihrer Gemeinde eingerichtet und können Bezeichnungen wie „Kleingruppen", „Dienste", „Jugend" oder „Bibelkreise" enthalten. Jede Kategorie zeigt alle zugehörigen Gruppen an.
+Gruppen werden nach **Kategorie** (auch Label genannt) angezeigt. Die Kategorien legen die Administrator:innen Ihrer Gemeinde fest. Sie können Bezeichnungen wie „Hauskreise“, „Dienste“, „Jugend“ oder „Bibelkreise“ tragen. Jede Kategorie zeigt alle Gruppen, die dazugehören.
 
-## Gruppenkarten lesen
+## Die Gruppenkarten lesen
 
-Jede Gruppe wird als Karte mit folgenden Informationen angezeigt:
+Jede Gruppe wird als Karte mit folgenden Angaben dargestellt:
 
-- **Gruppenfoto** -- Ein Titelbild, das die Gruppe repräsentiert. Wenn kein Foto festgelegt wurde, wird ein Standardbild angezeigt.
-- **Gruppenname** -- Prominent über dem Foto dargestellt.
-- **Treffzeit** -- Wann sich die Gruppe üblicherweise trifft (zum Beispiel „Mittwochs um 19 Uhr"). Wenn keine Zeit festgelegt ist, wird ein Platzhalter angezeigt.
-- **Treffpunkt** -- Wo sich die Gruppe trifft. Wenn kein Ort festgelegt ist, wird ein Platzhalter angezeigt.
-- **Beschreibung** -- Eine kurze Vorschau dessen, worum es in der Gruppe geht, auf wenige Zeilen begrenzt. Klicken Sie auf die Gruppe, um die vollständige Beschreibung zu lesen.
+- **Gruppenfoto** -- Ein Titelbild, das die Gruppe repräsentiert. Ist kein Foto festgelegt, wird ein Standardbild gezeigt.
+- **Gruppenname** -- Gut sichtbar über dem Foto.
+- **Treffzeit** -- Wann sich die Gruppe in der Regel trifft (zum Beispiel „Mittwochs um 19 Uhr“). Ist keine Zeit festgelegt, erscheint ein Platzhalter.
+- **Treffort** -- Wo sich die Gruppe trifft. Ist kein Ort festgelegt, erscheint ein Platzhalter.
+- **Beschreibung** -- Eine kurze Vorschau, worum es in der Gruppe geht, auf wenige Zeilen begrenzt. Klicken Sie auf die Gruppe, um die vollständige Beschreibung zu lesen.
 
 ## Eine Gruppe ansehen
 
-Klicken Sie auf eine beliebige Gruppenkarte, um die vollständige Gruppendetailseite zu öffnen. Dort finden Sie die vollständige Beschreibung, Informationen über die Leiter der Gruppe, bevorstehende Kalendertermine und eine Möglichkeit, Kontakt aufzunehmen.
+Klicken Sie auf eine Gruppenkarte, um die vollständige Detailseite der Gruppe zu öffnen. Dort finden Sie die vollständige Beschreibung, Informationen zu den Leitenden der Gruppe, kommende Kalenderveranstaltungen und eine Möglichkeit, Kontakt aufzunehmen.
 
 :::tip
-Wenn Sie nach einem bestimmten Gruppentyp suchen, scannen Sie zuerst die Kategorieüberschriften. So gelangen Sie direkt zum Abschnitt, der Sie interessiert, anstatt durch alle Gruppen scrollen zu müssen.
+Suchen Sie nach einer bestimmten Art von Gruppe, sehen Sie sich zuerst die Kategorieüberschriften an. So springen Sie direkt zu dem Bereich, der Sie interessiert, statt alle Gruppen durchzublättern.
 :::
 
 ## Nächste Schritte
 
-- [Gruppendetails](./group-details.md) -- Erfahren Sie, was Sie auf der Gruppendetailseite finden
-- [Gruppenunterhaltungen](./conversations.md) -- Erfahren Sie, wie Sie nach dem Beitritt an Gruppendiskussionen teilnehmen
+- [Gruppendetails](./group-details.md) -- Was Sie auf der Detailseite einer Gruppe finden
+- [Gruppenunterhaltungen](./conversations.md) -- Wie Sie nach dem Beitritt an Gruppendiskussionen teilnehmen

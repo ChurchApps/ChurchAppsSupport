@@ -7,7 +7,7 @@ description: "Riferimento per gli endpoint API di messaggistica di ChurchApps: c
 
 <div class="article-intro">
 
-Il modulo Messaggistica gestisce conversazioni in tempo reale, messaggi di chat, notifiche push, invio di SMS ed email, connessioni WebSocket, messaggi privati, registrazione dei dispositivi e provider di messaggi di testo. Fornisce il livello di comunicazione utilizzato in tutte le applicazioni ChurchApps, sia per la chat delle dirette streaming sia per le notifiche asincrone.
+Il modulo Messaggistica gestisce conversazioni in tempo reale, messaggi di chat, notifiche push, invio di SMS ed email, connessioni WebSocket, messaggi privati, registrazione dei dispositivi e provider di messaggi di testo. Fornisce il livello di comunicazione usato in tutte le applicazioni ChurchApps, sia per la chat delle dirette streaming sia per le notifiche asincrone.
 
 </div>
 
@@ -19,12 +19,12 @@ Percorso base: `/messaging/conversations`
 
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|----------|----------------|----------|-------------|
-| GET | `/timeline/ids?ids=` | JWT | — | Carica le conversazioni tramite ID separati da virgola, con primo e ultimo messaggio |
-| GET | `/messages/:contentType/:contentId` | JWT | — | Carica le conversazioni per un contenuto con messaggi paginati (`?page=&limit=`) |
+| GET | `/timeline/ids?ids=` | JWT | — | Carica le conversazioni tramite ID separati da virgole, con il primo e l'ultimo messaggio |
+| GET | `/messages/:contentType/:contentId` | JWT | — | Carica le conversazioni di un contenuto con messaggi impaginati (`?page=&limit=`) |
 | GET | `/posts` | JWT | — | Ottiene le conversazioni di tipo post dei gruppi dell'utente corrente |
 | GET | `/posts/group/:groupId` | JWT | — | Ottiene le conversazioni di tipo post per un gruppo specifico |
 | GET | `/notes/feed?section=&limit=&before=` | JWT | — | Le note più recenti di tutti i record, per la pagina Note di B1 Admin. `section` può essere `people`, `groups`, `events` o `workflows` (altrimenti 400); `limit` vale 25 per impostazione predefinita (massimo 100); `before` è il cursore della pagina precedente. Ogni nota deve comunque superare la regola del proprio tipo (permesso Persone / Modifica o note riservate, leader del gruppo, visualizzatori dell'evento, visualizzatori della scheda del flusso di lavoro), quindi i chiamanti vedono solo le note che potrebbero aprire. Il testo delle note viene troncato a 300 caratteri |
-| GET | `/current/:churchId/:contentType/:contentId` | Pubblico | — | Ottiene o crea la conversazione corrente per un contenuto (decifra automaticamente contentId) |
+| GET | `/current/:churchId/:contentType/:contentId` | Pubblico | — | Ottiene o crea la conversazione corrente per un contenuto (decodifica automaticamente contentId) |
 | GET | `/:churchId/:contentType/:contentId` | Pubblico | — | Carica le conversazioni per tipo di contenuto e ID |
 | GET | `/:churchId/:id` | Pubblico | — | Carica una singola conversazione tramite ID |
 | POST | `/` | JWT | — | Crea o aggiorna conversazioni (in batch) |
@@ -42,7 +42,7 @@ Altri due tipi di contenuto delle note sono protetti allo stesso modo, in ogni p
 - **`groupNote`** (`contentId` = ID del gruppo) -- il feed **Note dei leader** di un gruppo. Possono leggere o pubblicare solo i leader di quel gruppo (`leaderGroupIds` nel JWT). Nessun permesso dello staff concede l'accesso, inclusi `content.edit` e i permessi di appartenenza al gruppo.
 - **`eventNote`** (`contentId` = ID dell'evento) -- le note di un evento del calendario. Lo staff con `content.edit` o **Calendari / Amministrazione** può sempre leggere e pubblicare. Altrimenti l'accesso segue `notesViewRole` (lettura) e `notesPostRole` (pubblicazione) dell'evento: `staff` (il valore predefinito, usato quando il campo è `null`) non concede l'accesso ad altri, `leaders` concede l'accesso ai leader del gruppo dell'evento e `members` concede l'accesso ai membri e ai leader del gruppo dell'evento. Un evento senza `groupId` è riservato allo staff.
 
-### Controllo degli accessi alle note delle schede del flusso di lavoro
+### Controllo degli accessi alle note delle schede dei flussi di lavoro
 
 Le conversazioni con `contentType: "workflowCard"` (le note su una scheda del flusso di lavoro, dove `contentId` è l'ID dell'attività della scheda) possono essere lette e scritte solo da chi può aprire quella scheda: un utente con il permesso **Attività / Visualizza** di DoingApi, oppure la persona o il gruppo a cui la scheda è assegnata, da cui è stata creata o a cui si riferisce. Tutti gli altri ricevono `401` in ogni percorso di lettura, inclusi gli endpoint pubblici sopra indicati. La conversazione di una scheda viene collegata alla scheda stessa tramite `POST /doing/tasks/:id/conversation` (corpo `{ "conversationId": "..." }`; vince la prima conversazione collegata), operazione che possono eseguire gli editor della scheda e il suo assegnatario.
 
@@ -89,7 +89,7 @@ Percorso base: `/messaging/messages`
 | POST | `/setCallout` | JWT | — | (legacy) Trasmette in tempo reale un messaggio di evidenza. Nessun client attivo; la chat delle dirette non mostra più gli evidenziati |
 | DELETE | `/:churchId/:id` | JWT | — | Elimina un messaggio e trasmette l'eliminazione in tempo reale. Vedi [Moderazione dei messaggi](#message-moderation) |
 
-### Moderazione dei messaggi
+### Moderazione dei messaggi {#message-moderation}
 
 È consentita l'eliminazione di un messaggio a:
 
@@ -151,16 +151,19 @@ Percorso base: `/messaging/notifications`
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|----------|----------------|----------|-------------|
 | GET | `/unreadCount` | JWT | — | Ottiene il numero di notifiche non lette per l'utente corrente |
-| GET | `/my` | JWT | — | Carica tutte le notifiche dell'utente corrente (le segna tutte come lette) |
+| GET | `/my` | JWT | — | Carica tutte le notifiche dell'utente corrente (le segna come lette) |
 | GET | `/tmpEmail` | Pubblico | — | Attiva il riepilogo giornaliero delle notifiche via email (endpoint di debug/cron) |
 | GET | `/:churchId/person/:personId` | JWT | — | Carica le notifiche di una persona specifica |
 | GET | `/:churchId/:id` | JWT | — | Carica una notifica tramite ID |
 | POST | `/` | JWT | — | Crea o aggiorna notifiche (in batch) |
 | POST | `/create` | JWT | — | Crea notifiche per più persone. Corpo: `{ peopleIds, contentType, contentId, message, link }` |
-| POST | `/markRead/:churchId/:personId` | JWT | — | Segna tutte le notifiche di una persona come lette |
+| POST | `/markRead/:churchId/:personId` | JWT | — | Segna come lette tutte le notifiche di una persona |
 | POST | `/sendTest` | JWT | — | Invia una notifica push di prova. Corpo: `{ personId, title }` |
 | POST | `/ping` | Pubblico | — | Crea una notifica da un trigger esterno. Corpo: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
 | DELETE | `/:churchId/:id` | JWT | — | Elimina una notifica |
+| GET | `/groupPreview/:groupId` | JWT | `groupMembers.edit` | Conta quanti membri di un gruppo raggiungerebbe un push |
+| GET | `/churchPreview` | JWT | `content.edit` | Conta quante persone raggiungerebbe un push a tutti quelli con l'app |
+| POST | `/group/send` | JWT | `groupMembers.edit` | Invia subito un push ai membri di un gruppo |
 
 ### Esempio: creare notifiche
 
@@ -176,6 +179,20 @@ Authorization: Bearer <token>
   "link": "/groups/group-789"
 }
 ```
+
+## Notifiche programmate
+
+Percorso base: `/messaging/scheduledNotifications`
+
+Push programmati in anticipo. `audience` è `church` (tutti quelli con l'app; richiede `content.edit`) oppure `group` (richiede `groupMembers.edit` e un `groupId`). Il titolo è limitato a 80 caratteri e il messaggio a 240. Un invio pendente viene inviato dal timer da 1 minuto quando arriva il momento.
+
+| Metodo | Percorso | Autenticazione | Permesso | Descrizione |
+|--------|----------|----------------|----------|-------------|
+| GET | `/` | JWT | `groupMembers.edit` o `content.edit` | Elenca le notifiche programmate e quelle recenti della chiesa |
+| POST | `/` | JWT | in base all'audience | Crea una notifica programmata, oppure ne aggiorna una se è impostato `id`. Corpo: `{ id?, audience, groupId?, title, message, link?, imageUrl?, sendAt }`. Aggiornarne una che non è più in attesa restituisce 409 |
+| POST | `/:id/sendNow` | JWT | in base all'audience | Invia subito una notifica in attesa. Restituisce 409 se era già stata inviata, annullata o è in corso di invio |
+| DELETE | `/:id` | JWT | in base all'audience | Annulla una notifica in attesa, oppure rimuove dall'elenco una notifica inviata, non riuscita o annullata. Restituisce 409 mentre è in corso di invio |
+| DELETE | `/` | JWT | `groupMembers.edit` o `content.edit` | Rimuove tutte le notifiche inviate, non riuscite e annullate per gli audience a cui l'utente può inviare. Restituisce `{ deleted }` |
 
 ## Preferenze di notifica
 
@@ -257,11 +274,11 @@ Gestisce le assegnazioni di contenuto per i dispositivi abbinati (ad esempio qua
 | POST | `/` | JWT | — | Salva le assegnazioni di contenuto dei dispositivi (in batch) |
 | DELETE | `/:id` | JWT | — | Elimina un'assegnazione di contenuto di un dispositivo |
 
-## Invio SMS
+## SMS
 
 Percorso base: `/messaging/texting`
 
-Gestisce i provider per l'invio di SMS, la messaggistica di gruppo via SMS e il monitoraggio delle consegne.
+Gestisce i provider di SMS, la messaggistica di gruppo via SMS e il monitoraggio delle consegne.
 
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|----------|----------------|----------|-------------|
@@ -310,7 +327,7 @@ Gestisce i modelli email riutilizzabili e l'invio di email basate su modelli ai 
 |--------|----------|----------------|----------|-------------|
 | GET | `/` | JWT | — | Carica tutti i modelli email della chiesa |
 | GET | `/:id` | JWT | — | Carica un singolo modello email tramite ID |
-| GET | `/sendStatus` | JWT | `groupMembers.edit` o `tasks.admin` | Lo stato delle email di gruppo della chiesa: `{ approved, paused, remaining, requested }`. La finestra di invio email di B1Admin e l'azione **Invia email** del flusso di lavoro lo usano per avvisare quando le email non verranno inviate |
+| GET | `/sendStatus` | JWT | `groupMembers.edit` o `tasks.admin` | Lo stato delle email di gruppo della chiesa: `{ approved, paused, remaining, requested }`. La finestra Invia email di B1Admin e l'azione **Invia email** del flusso di lavoro lo usano per avvisare quando le email non verranno inviate |
 | POST | `/requestApproval` | JWT | `groupMembers.edit` | Chiede al supporto di approvare la chiesa per le email di gruppo (al massimo una volta a settimana per chiesa) |
 | GET | `/preview/:groupId` | JWT | — | Anteprima della consegna email per un gruppo (numero di destinatari idonei, membri senza email) |
 | POST | `/` | JWT | — | Crea o aggiorna modelli email (in batch) |
@@ -357,7 +374,7 @@ Percorso base: `/messaging/blockedips`
 
 Percorso base: `/messaging/deliverylogs`
 
-Traccia lo stato di consegna dei messaggi inviati (SMS, notifiche push, email).
+Tiene traccia dello stato di consegna dei messaggi inviati (SMS, notifiche push, email).
 
 | Metodo | Percorso | Autenticazione | Permesso | Descrizione |
 |--------|----------|----------------|----------|-------------|

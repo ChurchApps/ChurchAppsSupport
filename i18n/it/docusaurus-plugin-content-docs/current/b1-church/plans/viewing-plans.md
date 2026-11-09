@@ -1,7 +1,7 @@
 ---
-title: "I tuoi piani di culto nel portale membri di B1.church"
+title: "I tuoi piani di servizio nel portale membri di B1.church"
 sidebar_label: "Consultare i piani"
-description: "Controlla i tuoi incarichi nei piani di culto su B1.church, accetta o rifiuta le richieste, imposta le date di indisponibilità e rivedi lo storico dei servizi."
+description: "Controlla i tuoi incarichi nei piani di servizio su B1.church, accetta o rifiuta le richieste, imposta le date di indisponibilità e rivedi lo storico dei servizi."
 ---
 
 # Consultare i piani
@@ -12,22 +12,28 @@ La pagina Piani ti offre una visione chiara di tutti i piani di servizio a cui s
 
 </div>
 
+## Video di formazione
+
+<YouTube id="gs_PWHQG5rU" title="Responding to a Serving Request in B1" next="Viewing Your Service Plan in B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
+
+<YouTube id="abM161B-QnA" title="Viewing Your Service Plan in B1" next="Registering for an Event in B1" nextUrl="/docs/b1-church/events/registering" />
+
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
 - Devi [aver effettuato l'accesso](../getting-started/logging-in.md) al tuo account B1.church.
-- Devi essere assegnato ad almeno un piano di servizio. Se non vedi alcun piano, contatta l'amministratore della tua chiesa o il responsabile del ministero.
+- Devi essere assegnato ad almeno un piano di servizio. Se non vedi alcun piano, contatta l'amministratore della chiesa o il responsabile del ministero.
 
 </div>
 
 ## Accedere ai tuoi piani
 
-1. Tocca **Piani** nella barra delle schede, nella [pagina Altro](../getting-started/navigating.md#the-more-page), oppure tocca **Tutti i piani** nella sezione **Stai servendo** nella Home.
+1. Tocca **Piani** nella barra delle schede, nella [pagina Altro](../getting-started/navigating.md#the-more-page), oppure tocca **Tutti i piani** nella sezione **Stai servendo** della Home.
 2. Vedrai i piani per cui sei in programma.
 
 ## La pagina Piani
 
-In cima alla pagina viene mostrato quanti dei tuoi incarichi in arrivo sono confermati e quanti richiedono ancora una risposta, insieme a un pulsante **Iscriviti come volontario** che apre la pagina di [iscrizione al servizio](../serving/volunteer-signup.md). Sotto, la pagina è organizzata in sezioni:
+In cima alla pagina viene mostrato quanti dei tuoi incarichi in arrivo sono confermati e quanti richiedono ancora una risposta, insieme a un pulsante **Iscriviti a servire** che apre la pagina di [iscrizione al servizio](../serving/volunteer-signup.md). Sotto, la pagina è organizzata in sezioni:
 
 - **Richiede la tua risposta** -- Incarichi a cui non hai ancora risposto, ciascuno con i pulsanti **Accetta** e **Rifiuta**, così puoi rispondere senza aprire il piano. Toccando **Rifiuta** ti viene chiesta una conferma. Compare solo quando qualcosa è in attesa della tua risposta.
 - **In arrivo** -- I tuoi prossimi tre incarichi. Tocca **Tutti gli incarichi in arrivo** per vedere gli altri.
@@ -37,7 +43,7 @@ In cima alla pagina viene mostrato quanti dei tuoi incarichi in arrivo sono conf
 Ogni incarico mostra la **data del servizio**, il **nome del piano**, la tua **posizione** e un badge di stato -- **Accettato**, **Confermato**, **Rifiutato**, **In attesa di risposta**, oppure **Richiede risposta** se non hai ancora risposto.
 
 :::info
-La tua chiesa potrebbe inviarti **promemoria** prima dei servizi per cui sei in programma, via email e come notifica nell'app. Se la tua chiesa invia SMS, puoi riceverli anche via SMS attivando i **Messaggi di testo** nelle tue [Preferenze di notifica](../getting-started/notification-preferences.md). Se non hai ancora risposto, puoi **Accettare** o **Rifiutare** direttamente dall'email di promemoria — non serve effettuare l'accesso.
+La chiesa potrebbe inviarti **promemoria** prima dei servizi per cui sei in programma, via email e come notifica nell'app. Se la chiesa invia SMS, puoi riceverli anche via SMS attivando i **Messaggi di testo** nelle tue [Preferenze di notifica](../getting-started/notification-preferences.md). Se non hai ancora risposto, puoi **Accettare** o **Rifiutare** direttamente dall'email di promemoria — non serve effettuare l'accesso.
 :::
 
 ## Visualizzare i dettagli del piano
@@ -52,7 +58,7 @@ Tocca un piano qualsiasi per aprirlo. La pagina del piano mostra il nome del pia
 
 Tocca **Torna a** *nome del piano* in cima all'ordine del servizio completo o all'elenco dei team per tornare al piano.
 
-## Rinunciare a un incarico accettato
+## Rinunciare a un incarico accettato {#declining-an-accepted-assignment}
 
 Se succede qualcosa dopo che hai accettato, puoi comunque ritirarti dalla pagina del piano:
 
@@ -75,7 +81,7 @@ Se non hai mai risposto a un incarico e il suo orario di servizio è già passat
 Se hai più incarichi in piani diversi, l'elenco è ordinato per data, così i tuoi impegni più vicini compaiono per primi. Ricontrolla regolarmente per tenere sotto controllo il tuo calendario.
 :::
 
-## Visualizzazione insegnante per le lezioni
+## Visualizzazione per insegnanti delle lezioni
 
 Se il tuo piano include un curriculum associato di un fornitore di contenuti (come Lessons.church), la sezione **Ordine del servizio** mostra le sezioni della lezione per una rapida revisione, e in cima alla pagina del piano compare un pulsante **Insegna**.
 

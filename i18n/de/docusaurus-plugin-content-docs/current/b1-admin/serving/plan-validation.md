@@ -40,7 +40,7 @@ Die Validierung prüft außerdem alle deine Pläne gleichzeitig. Wenn dieselbe P
 Du musst nichts tun, damit die Validierung läuft. Sie aktualisiert sich automatisch, sobald du eine Zuweisung hinzufügst oder änderst. Behalte das Feld einfach im Blick, während du den Plan erstellst.
 :::
 
-## Ehrenamtliche benachrichtigen
+## Ehrenamtliche benachrichtigen {#notifying-volunteers}
 
 Sobald dein Plan steht, kannst du alle zugewiesenen Ehrenamtlichen direkt aus dem Validierungsfeld gleichzeitig benachrichtigen.
 

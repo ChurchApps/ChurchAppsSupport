@@ -97,7 +97,7 @@ Configure un protector de pantalla que se active después de un período de inac
 Use la pantalla de inactividad para mostrar anuncios, próximos eventos o mensajes de bienvenida cuando el quiosco no se esté usando.
 :::
 
-## Registro de visitantes mediante código QR
+## Registro de visitantes mediante código QR {#guest-registration-via-qr-code}
 
 El quiosco de registro de entrada puede mostrar un código QR que los visitantes escanean para registrarse ellos mismos y a su familia desde su propio teléfono. Esto agiliza el proceso de registro de entrada para los visitantes que llegan por primera vez.
 

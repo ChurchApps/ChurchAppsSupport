@@ -1,50 +1,54 @@
 ---
 title: "Pag-browse ng mga Grupo"
-description: "Tingnan ang mga pampublikong grupo ng simbahan sa B1.church ayon sa kategorya, at suriin ang oras, lokasyon, at paglalarawan ng bawat card."
+description: "I-browse ang mga pampublikong grupo ng iyong simbahan sa B1.church ayon sa kategorya, at tingnan ang oras ng pagpupulong, lokasyon, at paglalarawan ng bawat card para mahanap ang angkop na grupo."
 ---
 
 # Pag-browse ng mga Grupo
 
 <div class="article-intro">
 
-Ang pampublikong groups page ng iyong simbahan ay nagpapadali ng paghahanap ng mga grupong interesado ka. Ang mga grupo ay naka-organisa ayon sa kategorya, para mabilis mong ma-scan ang iba't ibang uri ng mga grupo at mahanap ang tamang akma.
+Pinapadali ng pampublikong pahina ng mga grupo ng iyong simbahan ang pagtuklas ng mga grupong interesado ka. Naka-organisa ang mga grupo ayon sa kategorya, kaya mabilis mong mada-scan ang iba't ibang uri ng grupo at mahahanap ang angkop sa iyo.
 
 </div>
+
+## Training Video
+
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" next="Responding to a Serving Request in B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Hindi kinakailangang mag-log in para mag-browse ng mga grupo. Gayunpaman, ang [pag-log in](../getting-started/logging-in.md) ay nagbibigay sa iyo ng access sa karagdagang mga feature sa detail page ng bawat grupo.
+- Hindi kailangan ng login para mag-browse ng mga grupo. Gayunpaman, ang [pag-log in](../getting-started/logging-in.md) ay nagbibigay sa iyo ng access sa karagdagang feature sa detail page ng bawat grupo.
 
 </div>
 
-## Paghahanap ng Groups Page
+## Paghahanap sa Pahina ng Groups
 
-Mag-navigate sa **Mga Grupo** na pahina sa B1.church site ng iyong simbahan. Ang pahinang ito ay pampublikong accessible, kaya hindi mo kailangang naka-log in para mag-browse.
+Pumunta sa pahinang **Groups** sa B1.church site ng iyong simbahan. Pampubliko ang pahinang ito, kaya hindi mo kailangang naka-log in para mag-browse.
 
 ## Paano Naka-organisa ang mga Grupo
 
-Ang mga grupo ay ipinapakita ayon sa **kategorya** (tinatawag ding label). Ang mga kategorya ay naka-set up ng mga administrator ng iyong simbahan at maaaring magsama ng mga label tulad ng "Small Groups," "Mga Ministeryo," "Kabataan," o "Bible Studies." Ang bawat kategorya ay nagpapakita ng lahat ng grupo na kabilang dito.
+Ipinapakita ang mga grupo ayon sa **kategorya** (tinatawag ding label). Itinatakda ng mga administrator ng iyong simbahan ang mga kategorya, at maaaring kabilang dito ang mga label gaya ng "Small Groups," "Ministries," "Youth," o "Bible Studies." Ipinapakita ng bawat kategorya ang lahat ng grupong kabilang dito.
 
 ## Pagbasa ng mga Group Card
 
-Ang bawat grupo ay ipinapakita bilang isang card na may sumusunod na impormasyon:
+Ipinapakita ang bawat grupo bilang card na may sumusunod na impormasyon:
 
-- **Larawan ng grupo** -- Isang cover image na kumakatawan sa grupo. Kung walang naka-set na larawan, isang default na imahe ang ipinapakita.
+- **Larawan ng grupo** -- Isang cover image na kumakatawan sa grupo. Kung walang naka-set na larawan, ipinapakita ang isang default na imahe.
 - **Pangalan ng grupo** -- Prominenteng ipinapakita sa ibabaw ng larawan.
-- **Oras ng pagtitipon** -- Kailan karaniwang nagtitipon ang grupo (halimbawa, "Miyerkules ng 7 PM"). Kung walang naka-set na oras, isang placeholder ang ipinapakita.
-- **Lokasyon ng pagtitipon** -- Kung saan nagtitipon ang grupo. Kung walang naka-set na lokasyon, isang placeholder ang ipinapakita.
-- **Paglalarawan** -- Isang maikling preview ng tungkol sa grupo, limitado sa ilang linya. I-click ang grupo para basahin ang buong paglalarawan.
+- **Oras ng pagpupulong** -- Kailan karaniwang nagpupulong ang grupo (halimbawa, "Wednesdays at 7 PM"). Kung walang naka-set na oras, ipinapakita ang isang placeholder.
+- **Lokasyon ng pagpupulong** -- Saan nagpupulong ang grupo. Kung walang naka-set na lokasyon, ipinapakita ang isang placeholder.
+- **Paglalarawan** -- Maikling preview ng tungkol sa grupo, na limitado sa ilang linya. I-click ang grupo para basahin ang buong paglalarawan.
 
 ## Pagtingin sa isang Grupo
 
-I-click ang anumang group card para buksan ang buong group detail page. Doon mo makikita ang kumpletong paglalarawan, impormasyon tungkol sa mga lider ng grupo, mga paparating na kaganapan sa kalendaryo, at paraan para makipag-ugnayan.
+I-click ang alinmang group card para buksan ang buong group detail page. Doon mo makikita ang kumpletong paglalarawan, impormasyon tungkol sa mga leader ng grupo, mga paparating na event sa kalendaryo, at paraan para makipag-ugnayan.
 
 :::tip
 Kung naghahanap ka ng partikular na uri ng grupo, i-scan muna ang mga heading ng kategorya. Makakatulong ito para dumiretso ka sa seksyong interesado ka sa halip na mag-scroll sa bawat grupo.
 :::
 
-## Susunod na mga Hakbang
+## Mga Susunod na Hakbang
 
-- [Mga Detalye ng Grupo](./group-details.md) -- Alamin kung ano ang makikita mo sa group detail page
-- [Mga Pag-uusap sa Grupo](./conversations.md) -- Tingnan kung paano makibahagi sa mga group discussion pagkatapos sumali
+- [Group Details](./group-details.md) -- Alamin kung ano ang makikita mo sa detail page ng grupo
+- [Group Conversations](./conversations.md) -- Tingnan kung paano sumali sa mga talakayan ng grupo kapag nakasali ka na

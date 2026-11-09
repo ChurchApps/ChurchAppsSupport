@@ -40,7 +40,7 @@ A validação também verifica todos os seus planos ao mesmo tempo. Se o mesmo v
 Você não precisa fazer nada para executar a validação: ela é atualizada automaticamente sempre que você adiciona ou altera uma atribuição. Basta acompanhar o painel enquanto monta o plano.
 :::
 
-## Notificando Voluntários
+## Notificando Voluntários {#notifying-volunteers}
 
 Quando o plano estiver pronto, você pode notificar todos os voluntários atribuídos de uma só vez, diretamente pelo painel de validação.
 

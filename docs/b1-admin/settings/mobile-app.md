@@ -132,6 +132,14 @@ On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **M
 
 Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](../../b1-church/getting-started/navigating.md) for what members see.
 
+## App Theme
+
+Under **Mobile > App Theme**, set the colors of your church's app for both **Light** and **Dark** mode: **Background**, **Surface**, **Primary**, **Primary Contrast**, **Secondary**, and **Text Color**. Pick a color from the swatch, or type its value in the **Hex** box next to it (for example, `#1565C0`; the `#` is optional). A typed color applies once all six hex digits are entered.
+
+## Push Notifications
+
+To send or schedule push notifications to everyone with your app or to one group, use **Mobile > Push Notifications**. See [Push Notifications](./push-notifications.md).
+
 ## Next Steps
 
 - [Church Settings](./church-settings.md) -- Configure your church information and branding

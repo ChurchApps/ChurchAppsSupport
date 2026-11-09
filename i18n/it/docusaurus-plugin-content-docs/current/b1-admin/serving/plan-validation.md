@@ -40,7 +40,7 @@ La convalida controlla anche tutti i tuoi piani contemporaneamente. Se lo stesso
 Non devi fare nulla per avviare la convalida: si aggiorna automaticamente ogni volta che aggiungi o modifichi un'assegnazione. Basta tenere d'occhio il pannello mentre costruisci il piano.
 :::
 
-## Notificare i volontari
+## Notificare i volontari {#notifying-volunteers}
 
 Una volta definito il piano, puoi avvisare tutti i volontari assegnati in una sola volta direttamente dal pannello di convalida.
 

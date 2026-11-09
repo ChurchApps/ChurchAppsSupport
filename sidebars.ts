@@ -167,6 +167,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/settings/custom-fields',
             'b1-admin/settings/roles-permissions',
             'b1-admin/settings/mobile-app',
+            'b1-admin/settings/push-notifications',
             'b1-admin/settings/email-templates',
             'b1-admin/settings/data-security',
           ],

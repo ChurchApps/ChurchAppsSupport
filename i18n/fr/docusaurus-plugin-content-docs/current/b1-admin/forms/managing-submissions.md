@@ -33,7 +33,7 @@ Cliquez sur une réponse pour en afficher tous les détails. Vous verrez toutes 
 
 Cliquez sur l'**icône d'impression** à côté de la réponse pour imprimer les réponses remplies de cette personne, pratique pour un dossier papier ou une autorisation signée que vous devez conserver. L'impression affiche le logo de votre église (le **Light Background Logo** de [Website > Appearance](../website/appearance.md), si vous en avez téléversé un) centré en haut, avec le nom de votre église en dessous. Les impressions utilisent toujours un texte foncé sur fond blanc, même si vous utilisez B1 Admin en mode sombre. Cette fonction est distincte de [l'impression d'un formulaire vierge](./creating-forms.md#printing-a-blank-form) : elle imprime les réponses déjà envoyées par une personne, et non un exemplaire vide. L'icône d'impression apparaît partout où une réponse est affichée, y compris sur le [profil d'une personne](../people/adding-people.md#working-with-forms).
 
-## Changer la personne associée à une réponse
+## Changer la personne associée à une réponse {#changing-the-person-on-a-submission}
 
 Si une réponse est liée à la mauvaise personne, par exemple lorsque deux membres d'une même famille partagent une adresse courriel, vous pouvez la déplacer vers la bonne personne ou la dissocier.
 

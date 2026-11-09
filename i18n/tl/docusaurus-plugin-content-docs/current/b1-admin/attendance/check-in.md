@@ -97,7 +97,7 @@ I-configure ang screensaver na lalabas pagkatapos ng panahong walang aktibidad:
 Gamitin ang idle screen para ipakita ang mga anunsiyo, paparating na event, o mensahe ng pagbati kapag hindi aktibong ginagamit ang kiosk.
 :::
 
-## Guest Registration gamit ang QR Code
+## Guest Registration gamit ang QR Code {#guest-registration-via-qr-code}
 
 Maaaring magpakita ang check-in kiosk ng QR code na ii-scan ng mga bisita para mairehistro ang kanilang sarili at ang kanilang pamilya sa sarili nilang telepono. Pinabibilis nito ang check-in para sa mga first-time na bisita.
 

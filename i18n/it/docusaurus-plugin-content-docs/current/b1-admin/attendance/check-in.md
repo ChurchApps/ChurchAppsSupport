@@ -97,7 +97,7 @@ Configura un salvaschermo che si attiva dopo un periodo di inattività:
 Usa la schermata di inattività per mostrare annunci, eventi in programma o messaggi di benvenuto quando il kiosk non è in uso.
 :::
 
-## Registrazione degli ospiti tramite codice QR
+## Registrazione degli ospiti tramite codice QR {#guest-registration-via-qr-code}
 
 Il kiosk di check-in può mostrare un codice QR che i visitatori scansionano per registrare sé stessi e la propria famiglia direttamente sul proprio telefono. Questo accelera il processo di check-in per gli ospiti alla prima visita.
 

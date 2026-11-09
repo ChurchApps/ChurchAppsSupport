@@ -70,7 +70,7 @@ Si tu iglesia tiene el registro de invitados por código QR activado, un enlace 
 El formulario abierto con **Registrarse aquí** permanece en la página de registro de invitados -- los visitantes no pueden navegar a otras partes del sitio web de la iglesia desde el quiosco. Si nadie toca o escribe en el formulario durante 2 minutos, el quiosco lo cierra y regresa a la pantalla de búsqueda. Cada vez que se cierra el formulario, todo lo que se escribió en él se borra para que la siguiente familia comience con un formulario en blanco.
 :::
 
-## Impresión de Etiquetas para Registro desde Teléfono
+## Impresión de Etiquetas para Registro desde Teléfono {#printing-labels-for-a-phone-check-in}
 
 Las familias que ya se registraron en su teléfono a través de [B1 Church auto-registro](../../b1-church/checkin/self-checkin.md) pueden imprimir sus etiquetas de nombre en el quiosco sin buscarse a sí mismas.
 

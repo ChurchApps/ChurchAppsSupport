@@ -1,53 +1,54 @@
 ---
-title: "Settings"
-description: "Die Einstellungen von B1 Admin finden: Gemeindeinfos, Branding, Standorte, eigene Felder, Benutzerrollen und Navigation der B1.church-App."
+title: "Einstellungen"
+description: "Sich in den Einstellungen von B1 Admin zurechtfinden: Gemeindeinformationen, Erscheinungsbild, Standorte, individuelle Felder, Benutzerrollen und die Navigation der B1.church-App."
 ---
 
-# Settings
+# Einstellungen
 
 <div class="article-intro">
 
-Der Abschnitt Settings ist der Ort, an dem Sie die Kontoeinstellungen, das Branding und die administrativen Optionen Ihrer Kirche in B1 Admin konfigurieren. Von hier aus können Sie alles verwalten, vom Kirchennamen und der Subdomain bis zu Benutzerberechtigungen und der Konfiguration der mobilen App.
+Im Bereich Einstellungen konfigurieren Sie in B1 Admin das Konto, das Erscheinungsbild und die Verwaltungsoptionen Ihrer Gemeinde. Von hier aus verwalten Sie alles, vom Namen und der Unterdomain Ihrer Gemeinde bis zu Benutzerberechtigungen und der Konfiguration der mobilen App.
 
 </div>
 
-## Was Sie hier finden werden
+## Was Sie hier finden
 
-Der Settings-Bereich ist in die folgenden Unterabschnitte organisiert:
+Der Bereich Einstellungen ist in folgende Unterbereiche gegliedert:
 
-1. **Settings** -- Konfigurieren Sie die grundlegenden Informationen, das Branding, die Subdomain, die Region (Datums- und Telefonformat), den Texting-Anbieter und den Dateispeicher Ihrer Kirche. Siehe [Church Settings](./church-settings.md) für Details. Um Ihren eigenen Domain-Namen zu verwenden (z. B. yourchurch.org), lesen Sie [Custom Domain](./custom-domain.md).
-2. **Campuses** -- Hinzufügen und Verwalten von mehreren physischen Orten für Ihre Kirche. Nach der Erstellung werden Campuses auf Personenprofilen, im Attendance-Setup und im Demographics-Dashboard angezeigt. Wird auf der Haupteinstellungsseite als Abschnitt erreicht, nicht als separates Navigationselement. Siehe [Campuses](./campuses.md) für Details.
-3. **Custom Fields** -- Definieren Sie Ihre eigenen Felder, um auf Personen zu verfolgen (ein Datum, eine Zahl, eine Ja/Nein-Antwort oder eine Pick-List), füllen Sie sie dann auf Profilen ein und suchen Sie sie. Wird auch auf der Haupteinstellungsseite als Abschnitt erreicht. Siehe [Custom Fields](./custom-fields.md) für Details.
-4. **Email Templates** -- Speichern Sie wiederverwendbare E-Mail-Inhalte für den manuellen Versand oder von einem Workflow aus. Siehe [Email Templates](./email-templates.md) für Details.
-5. **Audit Log** und **Batches** -- Überprüfen Sie Änderungen in Ihrem gesamten Konto ([Audit Log](../reports/audit-log.md)) und überprüfen oder rückgängig machen Sie Massenimporte und Aktionen (**Batches**).
-6. **Server Admin** -- Zugriff auf erweiterte Verwaltungstools zur Verwaltung der Server-Level-Einstellungen Ihrer Kirche.
+1. **Einstellungen** -- Konfigurieren Sie die Grundinformationen Ihrer Gemeinde, das Erscheinungsbild, die Unterdomain, die Region (Format für Datum und Telefonnummer), den Anbieter für Textnachrichten und den Dateispeicher. Details finden Sie unter [Gemeindeeinstellungen](./church-settings.md). Um Ihre eigene Domain zu verwenden (z. B. ihregemeinde.de), lesen Sie [Eigene Domain](./custom-domain.md).
+2. **Standorte** -- Fügen Sie mehrere physische Standorte Ihrer Gemeinde hinzu und verwalten Sie sie. Einmal angelegt, erscheinen Standorte auf Personenprofilen, in der Einrichtung der Anwesenheit und im Demografie-Dashboard. Sie finden sie als Abschnitt auf der Hauptseite der Einstellungen und nicht als eigener Navigationspunkt. Details finden Sie unter [Standorte](./campuses.md).
+3. **Individuelle Felder** -- Definieren Sie eigene Felder für Personen (ein Datum, eine Zahl, eine Ja/Nein-Antwort oder eine Auswahlliste), tragen Sie die Werte auf den Profilen ein und suchen Sie danach. Auch dies ist ein Abschnitt auf der Hauptseite der Einstellungen. Details finden Sie unter [Individuelle Felder](./custom-fields.md).
+4. **E-Mail-Vorlagen** -- Speichern Sie wiederverwendbare E-Mail-Inhalte für den manuellen Versand oder für Workflows. Details finden Sie unter [E-Mail-Vorlagen](./email-templates.md).
+5. **Änderungsprotokoll** und **Stapel** -- Prüfen Sie Änderungen in Ihrem Konto ([Änderungsprotokoll](../reports/audit-log.md)) und prüfen oder rückgängig machen Sie Massenimporte und Massenaktionen (**Stapel**).
+6. **Serveradministration** -- Erweiterte Verwaltungswerkzeuge für die Einstellungen auf Serverebene Ihrer Gemeinde.
 
 :::info
-**Mobile Apps** Konfiguration und **Forms** haben jetzt ihre eigenen Top-Level-Navigationselemente – **Mobile** und **Forms** (unter **People** zu finden) – anstatt innerhalb von Settings zu leben. Siehe [Mobile App Settings](./mobile-app.md) und [Creating Forms](/docs/b1-admin/forms/creating-forms) für Details.
+**Konfiguration der mobilen Apps** und **Formulare** haben jetzt eigene Navigationspunkte auf oberster Ebene, nämlich **Mobile** und **Formulare** (zu finden unter **Personen**). Sie liegen nicht mehr innerhalb der Einstellungen. Details finden Sie unter [Einstellungen der mobilen App](./mobile-app.md) und [Formulare erstellen](/docs/b1-admin/forms/creating-forms).
 :::
 
-## Die Haupteinstellungsseite
+## Die Hauptseite der Einstellungen
 
-Wenn Sie die Einstellungsseite zum ersten Mal öffnen, zeigt das Feld auf der linken Seite Ihren **Kirchennamen**, Ihre **Subdomain** und Ihre Adresse sowie einen Link **Import/Export**, der das Import-/Export-Tool zum Übertragen von Daten zwischen Systemen öffnet.
+Wenn Sie die Seite Einstellungen zum ersten Mal öffnen, zeigt das Feld links den **Namen**, die **Unterdomain** und die Adresse Ihrer Gemeinde. Außerdem gibt es einen Link **Import/Export**, der das Werkzeug zum Übertragen von Daten zwischen Systemen öffnet.
 
-Darunter verlinkt eine Liste **Configuration** zu jedem Einstellungsabschnitt: **Church Information**, **General**, **Region**, **Giving**, **Texting**, **File Storage**, **Domains**, **Grade Promotion**, **Check-In**, **Campuses**, **Custom Fields** und **Developer**. Abschnitte, die noch eingerichtet werden müssen (z. B. Giving, Texting oder Domains), sind mit einem kleinen Punkt markiert. Alle Abschnitte befinden sich auf einer Seite – klicken Sie auf einen Namen in der Liste, um zu ihm zu scrollen, oder scrollen Sie einfach nach unten. Jeder Abschnitt zeigt seine aktuellen Einstellungen an; klicken Sie in einem Abschnitt auf **Edit**, um sie zu ändern.
+Darunter listet die Liste **Konfiguration** jeden Einstellungsbereich: **Gemeindeinformationen**, **Allgemein**, **Region**, **Spenden**, **Textnachrichten**, **Dateispeicher**, **Domains**, **Klassenstufen-Aufstieg**, **Check-in**, **Standorte**, **Individuelle Felder** und **Entwickler**. Bereiche, die noch eingerichtet werden müssen (etwa Spenden, Textnachrichten oder Domains), sind mit einem kleinen Punkt markiert. Alle Bereiche liegen auf einer einzigen Seite. Klicken Sie in der Liste auf einen Namen, um dorthin zu springen, oder scrollen Sie einfach nach unten. Jeder Bereich zeigt seine aktuellen Einstellungen. Zum Ändern klicken Sie im Bereich auf **Bearbeiten**.
 
-**Email Templates**, **Audit Log** und **Batches** sind separate Seiten – öffnen Sie sie über das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) unter **Settings**.
+**E-Mail-Vorlagen**, **Änderungsprotokoll** und **Stapel** sind eigene Seiten. Sie öffnen sie über das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) unter **Einstellungen**.
 
-Beginnen Sie mit dem Abschnitt **Church Information**, um den Namen, die Adresse und die Kontaktinformationen Ihrer Kirche zu bearbeiten – siehe [Church Settings](./church-settings.md). Um Benutzerrollen zu verwalten, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) und wählen Sie **Settings > Roles** – siehe [Rollen & Berechtigungen](./roles-permissions.md).
+Beginnen Sie mit dem Bereich **Gemeindeinformationen**, um den Namen, die Adresse und die Kontaktdaten Ihrer Gemeinde zu bearbeiten. Siehe [Gemeindeeinstellungen](./church-settings.md). Um Benutzerrollen zu verwalten, öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) und wählen Sie **Einstellungen > Rollen**. Siehe [Rollen & Berechtigungen](./roles-permissions.md).
 
 :::tip
-Beginnen Sie damit, Ihren Kirchennamen und das Branding unter **Church Information** zu konfigurieren, dann richten Sie [Roles](./roles-permissions.md) ein, um Ihre Teamkollegen mit der richtigen Zugriffsstufe einzuladen.
+Beginnen Sie damit, den Namen und das Erscheinungsbild Ihrer Gemeinde unter **Gemeindeinformationen** einzurichten. Richten Sie danach [Rollen](./roles-permissions.md) ein, um Ihr Team mit der passenden Zugriffsstufe einzuladen.
 :::
 
 :::info
-Informationen darüber, wie Ihre Daten geschützt werden, finden Sie unter [Data Security](./data-security.md).
+Informationen dazu, wie Ihre Daten geschützt sind, finden Sie unter [Datensicherheit](./data-security.md).
 :::
 
 ## Nächste Schritte
 
-- [Church Settings](./church-settings.md) -- Konfigurieren Sie Ihre Kircheninformationen und das Branding
-- [Campuses](./campuses.md) -- Hinzufügen von Orten für Multi-Site-Kirchen
-- [Rollen & Berechtigungen](./roles-permissions.md) -- Richten Sie Benutzerrollen und Zugriffskontrolle ein
-- [Mobile App Settings](./mobile-app.md) -- Passen Sie die Navigationsreiter an, die in der B1.church PWA angezeigt werden
-- [Data Security](./data-security.md) -- Erfahren Sie, wie Ihre Daten geschützt werden
+- [Gemeindeeinstellungen](./church-settings.md) -- Gemeindeinformationen und Erscheinungsbild konfigurieren
+- [Standorte](./campuses.md) -- Standorte für Gemeinden mit mehreren Standorten anlegen
+- [Rollen & Berechtigungen](./roles-permissions.md) -- Benutzerrollen und Zugriffskontrolle einrichten
+- [Einstellungen der mobilen App](./mobile-app.md) -- Navigationsreiter und Farbschema der B1.church-PWA anpassen
+- [Push-Benachrichtigungen](./push-notifications.md) -- Push-Benachrichtigungen an die Nutzenden Ihrer App senden oder planen
+- [Datensicherheit](./data-security.md) -- Erfahren Sie, wie Ihre Daten geschützt werden

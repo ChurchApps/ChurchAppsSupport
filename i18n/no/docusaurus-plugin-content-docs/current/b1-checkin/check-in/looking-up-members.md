@@ -70,7 +70,7 @@ Hvis menigheten din har slått på QR-registrering av gjester, vises en lenke **
 Skjemaet som åpnes med **Registrer her**, blir værende på registreringssiden for gjester -- besøkende kan ikke navigere til andre deler av menighetens nettsted fra kiosken. Hvis ingen trykker eller skriver i skjemaet på 2 minutter, lukker kiosken det og går tilbake til oppslagsskjermen. Hver gang skjemaet lukkes, tømmes alt som er skrevet inn, slik at neste familie får et tomt skjema.
 :::
 
-## Skrive ut etiketter for innsjekking på telefon
+## Skrive ut etiketter for innsjekking på telefon {#printing-labels-for-a-phone-check-in}
 
 Familier som allerede har sjekket inn på telefonen via [selvinnsjekking i B1 Church](../../b1-church/checkin/self-checkin.md), kan skrive ut navnelappene sine på kiosken uten å søke seg opp.
 

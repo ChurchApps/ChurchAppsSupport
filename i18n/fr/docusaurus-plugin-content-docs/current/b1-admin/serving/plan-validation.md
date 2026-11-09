@@ -40,7 +40,7 @@ La validation vérifie également l'ensemble de vos plans en une seule fois. Si 
 Vous n'avez rien à faire pour lancer la validation : elle se met à jour automatiquement à chaque ajout ou modification d'une affectation. Gardez simplement un œil sur le panneau pendant que vous construisez le plan.
 :::
 
-## Notifier les bénévoles
+## Notifier les bénévoles {#notifying-volunteers}
 
 Une fois votre plan finalisé, vous pouvez notifier d'un seul coup tous les bénévoles affectés directement depuis le panneau de validation.
 

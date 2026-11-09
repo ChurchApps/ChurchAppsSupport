@@ -70,7 +70,7 @@ Se sua igreja tem o registro de convidado por QR ativado, um link **Registrar co
 O formulário aberto com **Registrar aqui** fica na página de registro de convidado -- visitantes não podem navegar para outras partes do site da igreja a partir do quiosque. Se ninguém tocar ou digitar no formulário por 2 minutos, o quiosque o fecha e retorna à tela de busca. Cada vez que o formulário fecha, qualquer coisa digitada nele é apagada para que a próxima família comece com um formulário em branco.
 :::
 
-## Imprimindo Etiquetas para um Check-in por Telefone
+## Imprimindo Etiquetas para um Check-in por Telefone {#printing-labels-for-a-phone-check-in}
 
 Famílias que já fizeram check-in no telefone através do [autoatendimento B1 Church](../../b1-church/checkin/self-checkin.md) podem imprimir seus crachás no quiosque sem se procurarem.
 

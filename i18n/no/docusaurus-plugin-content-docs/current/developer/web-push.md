@@ -1,26 +1,27 @@
 ---
-title: "Push-varsler i nettleseren"
-description: "Sett opp VAPID-nøkler, WebPushHelper-klienten og service worker-håndtering slik at B1.church og B1 Admin kan levere push-varsler i nettleseren til medlemmer."
+title: "Web-pushvarsler"
+description: "Sett opp VAPID-nøkler, WebPushHelper-klienten og håndtering av service worker slik at B1.church og B1 Admin kan levere nettleserpushvarsler til medlemmene."
 ---
 
-# Push-varsler i nettleseren
+# Web-pushvarsler
 
 <div class="article-intro">
 
-ChurchApps-webapper leverer push-varsler gjennom W3C Web Push API — samme mekanisme som Firebase Cloud Messaging bruker på serversiden, men levert gjennom nettleserens innebygde `PushManager` i stedet for FCM. Ett enkelt VAPID-nøkkelpar på MessagingApi dekker alle forbrukere (B1Admin, B1App, fremtidige PWA-er).
+ChurchApps-webapper leverer pushvarsler via W3C Web Push API -- samme mekanisme som Firebase Cloud Messaging bruker på serversiden, men levert gjennom nettleserens innebygde `PushManager` i stedet for FCM. Ett VAPID-nøkkelpar på MessagingApi dekker alle klienter (B1Admin, B1App, fremtidige PWA-er).
 
 </div>
 
 ## Når push utløses {#when-push-fires}
 
-Push er ett nivå i en enkelt leveringsrunde inne i `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): først en forhåndsvalgsport i appen, deretter socket-levering og push forsøkt i samme runde (hver bak sin egen forhåndsvalgsport), deretter e-post. En mottaker som har dempet kategorien når aldri push. Vellykket socket-levering stopper ikke lenger push — alle varslingstyper oppfører seg nå slik private meldinger alltid har gjort, så en installert PWA som kjører i bakgrunnen fortsatt viser et varsel på operativsystemnivå selv når en socket-levering allerede har landet; dupliserte bannere undertrykkes i stedet på klientsiden av service-workeren (se [Krav til service worker](#service-worker-requirement)). Planlagte påminnelser og kringkastinger startet av personale begynner direkte på push-nivået og hopper over socket-steget helt. E-post er fortsatt tidsstyrt, og eskalerer uleste rader etter sin egen plan i stedet for som en del av denne runden.
+Push er ett nivå i en enkelt leveringsrunde inne i `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): først en preferansesjekk for appen, deretter socket-levering og push forsøkt i samme runde (hver bak sin egen preferansesjekk), og til slutt e-post. En mottaker som har dempet kategorien, når aldri push. Vellykket socket-levering stopper ikke lenger push -- alle varseltyper oppfører seg nå slik private meldinger alltid har gjort, slik at en installert PWA som kjører i bakgrunnen fortsatt viser et varsel på operativsystemnivå selv når en socket-levering allerede er gjennomført; dupliserte bannere undertrykkes i stedet av service worker på klientsiden (se [Krav til service worker](#service-worker-requirement)). Planlagte påminnelser og kringkastinger fra staben starter direkte på push-nivået og hopper over socket-steget. E-post styres fortsatt av en timer, og eskalerer uleste rader på sin egen plan i stedet for som en del av denne runden.
 
-De vanligste veiene som når push:
+De vanligste veiene som ender i push:
 
-1. **Innholdsvarsler** — et svar i en samtale personen følger, en omtale, eller en annen hendelse rutet gjennom `NotificationHelper.createNotifications()`.
-2. **Private meldinger** — en direktemelding går gjennom samme leveringsfunksjon og forsøker alltid push ved siden av socket-levering.
-3. **Planlagte påminnelser** — påminnelser om arrangementer, oppgaver og tjeneste, utvidet og sendt av påminnelsesmotoren, som starter nye forekomster direkte på push-nivået.
-4. **Push utløst av personale** — `POST /messaging/notifications/create`, `/ping` og `/group/send` for engangs- eller gruppekringkastinger.
+1. **Innholdsvarsler** -- et svar i en samtale personen følger, en omtale, eller en annen hendelse som sendes via `NotificationHelper.createNotifications()`.
+2. **Private meldinger** -- en direktemelding går gjennom samme leveringsfunksjon og forsøker alltid push i tillegg til socket-levering.
+3. **Planlagte påminnelser** -- påminnelser for arrangementer, oppgaver og tjeneste, som utvides og sendes av påminnelsesmotoren, som starter nye forekomster direkte på push-nivået.
+4. **Pushvarsler fra staben** -- `POST /messaging/notifications/create`, `/ping` og `/group/send` for engangs- eller gruppekringkastinger.
+5. **Planlagte pushvarsler fra staben** -- `POST /messaging/scheduledNotifications` lagrer et push for alle med appen (`audience: "church"`) eller én gruppe, og 1-minutters-timeren sender det når det forfaller (se [Arkitektur for varsler](./architecture/notifications.md)). Et kirkedekkende push uten lenke åpner `/mobile/notifications`; et gruppepush uten lenke åpner den gruppen.
 
 ## Serverflyt
 
@@ -28,26 +29,26 @@ De vanligste veiene som når push:
 NotificationHelper.createNotifications(...) / checkShouldNotify(...) / ReminderEngine.scan(...)
   │
   └─ NotificationHelper.attemptDeliveryWithEscalation(...)
-       ├─ forhåndsvalgsport i appen               ← dempede mottakere stopper her, ingen push
-       ├─ samme runde, begge forsøkt (ingen styrer den andre):
-       │    ├─ socket-levering via DeliveryHelper  ← hoppes over for påminnelser/kringkastinger (de starter ved push)
-       │    └─ forhåndsvalgsport for push
+       ├─ in-app preference gate                  ← muted recipients stop here, no push
+       ├─ same pass, both attempted (neither gates the other):
+       │    ├─ socket delivery via DeliveryHelper  ← skipped for reminders/broadcasts (they start at push)
+       │    └─ push preference gate
        │         └─ WebPushHelper.sendBulkTypedMessages(tokens, title, body, type, contentId)
-       │              └─ web-push-biblioteket → VAPID-signert POST → nettleserens push-tjeneste
-       └─ forhåndsvalgsport for e-post → tidsstyrt, eskalerer uleste rader separat
+       │              └─ web-push library → VAPID-signed POST → browser push service
+       └─ email preference gate → timer-driven, escalates unread rows separately
 ```
 
-### Nødvendige miljøvariabler
+### Påkrevde miljøvariabler
 
 VAPID-nøklene lagres i `Environment` og må være til stede for at push skal være aktivert:
 
 | Miljøvariabel | `Environment`-innstilling | Beskrivelse |
-|----------|----------|----------|
+|----------|----------|-------------|
 | `WEB_PUSH_PUBLIC_KEY` | `webPushPublicKey` | VAPID-offentlig nøkkel (base64url). Returneres til klienter via `GET /messaging/webpush/publicKey` |
-| `WEB_PUSH_PRIVATE_KEY` | `webPushPrivateKey` | VAPID-privat nøkkel. Brukes til å signere hver utgående push |
-| `WEB_PUSH_SUBJECT` | `webPushSubject` | `mailto:`-URI rapportert til push-tjenestene. Standard er `mailto:support@churchapps.org` |
+| `WEB_PUSH_PRIVATE_KEY` | `webPushPrivateKey` | VAPID-privat nøkkel. Brukes til å signere hvert utgående push |
+| `WEB_PUSH_SUBJECT` | `webPushSubject` | `mailto:`-URI som rapporteres til pushtjenestene. Standard er `mailto:support@churchapps.org` |
 
-`WebPushHelper.isEnabled()` returnerer `false` når en av nøklene mangler — messaging-modulen fortsetter å fungere, push-leveringer er ganske enkelt no-op. Den mobile B1App-siden forteller da medlemmene at push ikke er slått på, i stedet for å tilby oppsett.
+`WebPushHelper.isEnabled()` returnerer `false` når en av nøklene mangler -- meldingsmodulen fortsetter å fungere, men push-leveringer gjør ingenting. B1App-nettstedet for mobil forteller da medlemmene at push ikke er slått på, i stedet for å tilby oppsett.
 
 ### Generere et VAPID-nøkkelpar
 
@@ -55,70 +56,70 @@ VAPID-nøklene lagres i `Environment` og må være til stede for at push skal v�
 npx web-push generate-vapid-keys
 ```
 
-Legg resultatet til i `.env` (lokalt) eller AWS SSM Parameter Store (i distribuerte miljøer). Å rotere nøkler ugyldiggjør hvert eksisterende abonnement — klienter må registrere seg på nytt ved neste sidelasting.
+Legg resultatet i `.env` (lokalt) eller AWS SSM Parameter Store (i drift). Ved rotasjon av nøkler blir alle eksisterende abonnementer ugyldige -- klientene må registrere seg på nytt ved neste sidelasting.
 
 ## Lagringsmodell
 
-Web Push-abonnementer lagres i den eksisterende tabellen `devices`, sammen med FCM-enhetsregistreringene. De skilles fra hverandre med et prefiks `webpush:` på kolonnen `fcmToken`:
+Web Push-abonnementer lagres i den eksisterende `devices`-tabellen sammen med FCM-enhetsposter. De skilles ved et `webpush:`-prefiks på `fcmToken`-kolonnen:
 
 ```
 fcmToken = "webpush:" + JSON.stringify({ endpoint, keys: { p256dh, auth } })
 ```
 
-Dette gjør at ett kall til `loadByPersonId` returnerer hver enhet en bruker har registrert, uavhengig av plattform. `WebPushHelper.isWebPushToken(token)` og `decodeSubscription(token)` håndterer prefikslogikken.
+Dette gjør at ett `loadByPersonId`-kall returnerer alle enheter en bruker har registrert, uavhengig av plattform. `WebPushHelper.isWebPushToken(token)` og `decodeSubscription(token)` håndterer prefiks-logikken.
 
 ## Endepunkter
 
-Basisti: `/messaging/webpush`
+Basisbane: `/messaging/webpush`
 
-| Metode | Sti | Autentisering | Beskrivelse |
-|--------|------|------|----------|
+| Metode | Bane | Autentisering | Beskrivelse |
+|--------|------|------|-------------|
 | GET | `/publicKey` | Offentlig | Returnerer `{ publicKey, enabled }`. Klienter sender `publicKey` til `pushManager.subscribe({ applicationServerKey })` |
-| POST | `/subscribe` | JWT | Registrerer (eller oppdaterer) et abonnement for den autentiserte brukeren. Body: `{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
-| POST | `/unsubscribe` | Offentlig | Sletter enhver enhetsrad der `fcmToken` inneholder det gitte endepunktet. Body: `{ endpoint }` |
-| DELETE | `/subscription/:id` | JWT | Sletter en bestemt enhetsrad etter dens server-ID |
+| POST | `/subscribe` | JWT | Registrerer (eller oppdaterer) et abonnement for den innloggede brukeren. Body: `{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
+| POST | `/unsubscribe` | Offentlig | Sletter enhetsposter der `fcmToken` inneholder det oppgitte endepunktet. Body: `{ endpoint }` |
+| DELETE | `/subscription/:id` | JWT | Sletter en bestemt enhetspost etter dens server-ID |
 
 ## Klientprimitiv: `WebPushHelper`
 
-`WebPushHelper` i `@churchapps/apphelper` er det ene klientsiden inngangspunktet. Verter konfigurerer den én gang ved oppstart og kaller `subscribe()` etter innlogging.
+`@churchapps/apphelper`s `WebPushHelper` er det eneste inngangspunktet på klientsiden. Verter konfigurerer den én gang ved oppstart og kaller `subscribe()` etter innlogging.
 
 ```typescript
 import { WebPushHelper } from "@churchapps/apphelper";
 
-// I appens oppstart (f.eks. _app.tsx, layout.tsx)
+// In your app's bootstrap (e.g., _app.tsx, layout.tsx)
 WebPushHelper.configure({
-  scope: "/",                // service worker-omfang; samsvarer med sw.js-registreringen
-  appName: "B1AppPwa"        // lagres på enhetsraden, nyttig for filtrering etter flate
+  scope: "/",                // service worker scope; matches sw.js registration
+  appName: "B1AppPwa"        // stored on the device row, useful for filtering by surface
 });
 
-// Etter innlogging (og etter hver endring av userChurch)
+// After login (and after every userChurch change)
 await WebPushHelper.subscribe();
 ```
 
-Oppførsler forbrukerne får gratis:
+Atferd forbrukerne får gratis:
 
-- **Funksjonssjekk** — `isSupported()` returnerer `false` i nettlesere uten `serviceWorker` / `PushManager` / `Notification`.
-- **Nedkjøling** — `canPromptNow()` håndhever en nedkjølingsperiode på 7 dager mellom forespørsler via `localStorage`, slik at brukere som avviser operativsystemets forespørsel ikke spørres på nytt i hver økt.
-- **Avmelding** — `setOptedOut(true)` og `unsubscribe()` blokkerer ny forespørsel og fjerner enhetsraden på serversiden.
-- **Deteksjon av frittstående PWA** — `isStandalone()` lar verter sette iOS-push-forespørsler bak «brukeren har installert PWA-en på hjemskjermen» (iOS tillater push bare fra installerte PWA-er).
-- **Ny registrering ved kirkebytte** — `refreshEnrollment()` sender den eksisterende nettleserabonnementet på nytt mot den nye `userChurch` uten å spørre brukeren igjen. Kall den fra behandleren for endring av `userChurch`.
+- **Funksjonssjekk** -- `isSupported()` returnerer `false` i nettlesere uten `serviceWorker` / `PushManager` / `Notification`.
+- **Nedkjøling** -- `canPromptNow()` håndhever en nedkjøling på 7 dager mellom forespørsler via `localStorage`, slik at brukere som avviser systemforespørselen ikke spørres igjen ved hver økt.
+- **Avmelding** -- `setOptedOut(true)` og `unsubscribe()` hindrer ny forespørsel og fjerner enhetsposten på serveren.
+- **Deteksjon av frittstående PWA** -- `isStandalone()` lar verter låse iOS-pushforespørsler bak "brukeren har installert PWA-en på startskjermen" (iOS tillater bare push fra installerte PWA-er).
+- **Ny registrering ved bytte av menighet** -- `refreshEnrollment()` sender det eksisterende nettleserabonnementet på nytt mot den nye `userChurch` uten å spørre brukeren igjen. Kall det fra behandleren for endring av `userChurch`.
 
 ### Krav til service worker {#service-worker-requirement}
 
-`PushManager` i nettleseren løser bare et abonnement når en service worker er registrert på det konfigurerte omfanget. ChurchApps-PWA-er bruker [Serwist](https://serwist.dev/) (Next.js-apper) eller workbox for generering av service worker. Fordi serveren nå alltid forsøker push ved siden av socket-levering (se [Når push utløses](#when-push-fires)), er service workeren deduplikeringspunktet: dens `push`-behandler må undertrykke `showNotification` når en fokusert/synlig klient allerede er på varslets dyplenkemål, men skal alltid oppdatere app-merket uavhengig av om banneret ble vist:
+`PushManager` i nettleseren løser bare et abonnement når en service worker er registrert på den konfigurerte scopen. ChurchApps-PWA-er bruker [Serwist](https://serwist.dev/) (Next.js-apper) eller workbox for å generere service worker. Fordi serveren nå alltid forsøker push ved siden av socket-levering (se [Når push utløses](#when-push-fires)), er service worker det stedet duplikater fjernes: `push`-behandleren må undertrykke `showNotification` når et fokusert/synlig klientvindu allerede står på varselets dyplenkemål, men skal alltid oppdatere app-merket uansett om banneret vises:
 
 ```javascript
-// public/sw.js (eller det Serwist/workbox sender ut)
+// public/sw.js (or whatever Serwist/workbox emits)
 self.addEventListener("push", (event) => {
   const data = event.data?.json() ?? {};
   const title = data.title || "ChurchApps";
   const target = deepLinkFor(data.type, data.contentId, data);
 
   event.waitUntil((async () => {
-    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // kjører alltid, selv om banneret undertrykkes
+    if (typeof data.badgeCount === "number") await updateAppBadge(data.badgeCount); // always runs, even if the banner is suppressed
 
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-    // Samme pathname; for private meldinger, også samme conversationId.
+    // Same pathname; for private messages, also same conversationId.
     const alreadyViewing = clients.some((client) => (client.focused || client.visibilityState === "visible") && clientMatchesTarget(client.url, target));
     if (alreadyViewing) return;
 
@@ -137,7 +138,7 @@ self.addEventListener("notificationclick", (event) => {
     const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
 
     const exact = clients.find((client) => clientMatchesTarget(client.url, target));
-    if (exact) return exact.focus(); // allerede på målet: fokuser, ikke naviger
+    if (exact) return exact.focus(); // already on the target: focus, don't navigate
 
     const mobileClient = clients.find((client) => new URL(client.url).pathname.startsWith("/mobile"));
     if (mobileClient) {
@@ -150,18 +151,18 @@ self.addEventListener("notificationclick", (event) => {
 });
 ```
 
-`deepLinkFor` / `clientMatchesTarget` er spesifikke for hver forbruker — se `B1App/src/app/sw.ts` for referanseimplementasjonen. B1App ruter `privateMessage` til `/mobile/messages/:personId`, B1Admin ruter `notification` til sitt varselpanel, osv.
+`deepLinkFor` / `clientMatchesTarget` er spesifikke for hver forbruker -- se `B1App/src/app/sw.ts` for referanseimplementasjonen. B1App sender `privateMessage` til `/mobile/messages/:personId`, B1Admin sender `notification` til varselpanelet sitt, osv.
 
-## Driftsmerknader
+## Driftsnotater
 
-- **Resultater med `gone: true`** — `WebPushHelper.sendBulk` returnerer `{ token, success, gone, errorMessage }` per mottaker. Et resultat med `gone: true` (push-tjenesten svarte `404` eller `410`) betyr at abonnementet er permanent ugyldig; nedstrøms kode i `NotificationHelper` sletter disse enhetsradene slik at de ikke forsøkes igjen.
-- **TTL** — push-meldinger sendes med `TTL: 86400` (24 timer). Hvis brukerens nettleser ikke kobler til push-tjenesten innen 24 timer, forkastes pushen.
-- **Ingen nye forsøk** — en forbigående feil (timeout, 5xx) logges og prøves ikke på nytt. Push er best-effort; socket i siden og e-postnivået tar seg av holdbarheten.
-- **Deaktiverte miljøer** — utviklingsmiljøer kan la VAPID-nøklene stå tomme; `WebPushHelper.isEnabled()` returnerer da `false`, og push kortsluttes. Dette er den tiltenkte oppførselen for miljøer uten sin egen VAPID-identitet.
+- **`gone: true`-resultater** -- `WebPushHelper.sendBulk` returnerer `{ token, success, gone, errorMessage }` per mottaker. Et resultat med `gone: true` (pushtjenesten svarte `404` eller `410`) betyr at abonnementet er varig ugyldig; kode lenger ned i `NotificationHelper` sletter disse enhetsradene slik at de ikke forsøkes igjen.
+- **TTL** -- pushmeldinger sendes med `TTL: 86400` (24 timer). Hvis nettleserens bruker ikke kobler seg til pushtjenesten innen 24 timer, kastes pushet.
+- **Ingen forsøk på nytt** -- en forbigående feil (tidsavbrudd, 5xx) logges og forsøkes ikke igjen. Push er etter beste evne; sanntids-socket og e-postnivået står for holdbarheten.
+- **Deaktiverte miljøer** -- utviklingsmiljøer kan la VAPID-nøklene stå tomme; `WebPushHelper.isEnabled()` returnerer da `false`, og pushes avsluttes med en gang. Dette er den tiltenkte oppførselen for miljøer uten egen VAPID-identitet.
 
 ## Relaterte sider
 
-- [Arkitektur for varsler](./architecture/notifications.md) — hele trakten for varsling i appen/push/e-post og påminnelsesmotoren
-- [Sanntidsarkitektur](./realtime.md) — WebSocket-levering; push utløses nå fra den samme varseltrakten i appen ved siden av socket-levering i samme runde, ikke bare som en reserve når en socket-levering ikke landet
-- [Messaging-endepunkter](./api/endpoints/messaging.md) — varsler, enheter og resten av messaging-flaten
-- [AppHelper](./shared-libraries/app-helper.md) — npm-pakken som leverer `WebPushHelper`
+- [Arkitektur for varsler](./architecture/notifications.md) -- hele eskaleringen i appen/push/e-post og påminnelsesmotoren
+- [Sanntidsarkitektur](./realtime.md) -- WebSocket-levering; push utløses nå fra samme varselrunde i appen, ved siden av socket-levering i samme runde, ikke bare som reserve når en socket-levering ikke går gjennom
+- [Meldings-endepunkter](./api/endpoints/messaging.md) -- varsler, enheter og resten av meldingsflaten
+- [AppHelper](./shared-libraries/app-helper.md) -- npm-pakken som leverer `WebPushHelper`

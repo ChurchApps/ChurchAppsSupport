@@ -70,7 +70,7 @@ Kung naka-on ang QR guest registration ng inyong simbahan, lalabas ang link na *
 Nananatili sa pahina ng pagpaparehistro ng bisita ang form na binuksan gamit ang **Register here** -- hindi makakapunta ang mga bisita sa ibang bahagi ng website ng simbahan mula sa kiosk. Kung walang humipo o nag-type sa form sa loob ng 2 minuto, isasara ito ng kiosk at babalik sa lookup screen. Sa tuwing nagsasara ang form, buburahin ang anumang itinype rito para blangko ang form na makikita ng susunod na pamilya.
 :::
 
-## Pag-print ng mga Label para sa Check-In sa Telepono
+## Pag-print ng mga Label para sa Check-In sa Telepono {#printing-labels-for-a-phone-check-in}
 
 Ang mga pamilyang nag-check in na sa kanilang telepono sa pamamagitan ng [self check-in ng B1 Church](../../b1-church/checkin/self-checkin.md) ay maaaring i-print ang kanilang mga name tag sa kiosk nang hindi na kailangang hanapin ang sarili.
 

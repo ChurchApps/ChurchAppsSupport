@@ -1,79 +1,79 @@
 ---
 title: "Gruppenmitglieder"
-description: "Fügen Sie in B1 Admin Gruppenmitglieder hinzu, entfernen Sie sie und benennen Sie Leitungen. Anschließend können Sie die Mitgliederliste von der Gruppenseite aus per E-Mail, SMS, Ausdruck oder Export versenden."
+description: "Mitglieder zu einer Gruppe in B1 Admin hinzufügen und entfernen sowie Leitungen bestimmen. Anschließend die Mitgliederliste von der Gruppenseite aus per E-Mail, Textnachricht, Druck oder Export nutzen."
 ---
 
 # Gruppenmitglieder
 
 <div class="article-intro">
 
-Nachdem Sie eine Gruppe angelegt haben, ist der nächste Schritt das Hinzufügen von Mitgliedern. Auf der Detailseite einer Gruppe können Sie nach Personen suchen, sie der Gruppe hinzufügen, Leitende bestimmen, Nachrichten senden und die Mitgliederliste exportieren. Die Verwaltung der Gruppenmitgliedschaft ist unerlässlich, um Hauskreise, Ausschüsse und Klassen zu koordinieren.
+Sobald Sie eine Gruppe angelegt haben, ist der nächste Schritt das Hinzufügen von Mitgliedern. Auf der Detailseite einer Gruppe können Sie Personen suchen, sie der Gruppe hinzufügen, Leitungen festlegen, Nachrichten senden und die Mitgliederliste exportieren. Die Verwaltung der Gruppenmitgliedschaft ist unverzichtbar, um Hauskreise, Ausschüsse und Klassen zu koordinieren.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen mindestens eine in B1 Admin eingerichtete Gruppe. Siehe [Gruppen erstellen](creating-groups.md), falls Sie noch keine angelegt haben.
-- Die Personen, die Sie hinzufügen möchten, sollten bereits im Verzeichnis [Personen](../people/adding-people.md) stehen. Falls nicht, können Sie sie über die Mitgliedersuche anlegen (siehe unten).
+- Sie benötigen mindestens eine Gruppe in B1 Admin. Wenn Sie noch keine angelegt haben, lesen Sie [Gruppen erstellen](creating-groups.md).
+- Die Personen, die Sie hinzufügen möchten, sollten bereits in Ihrem Verzeichnis [Personen](../people/adding-people.md) stehen. Falls nicht, können Sie sie über die Personensuche anlegen (siehe unten).
 
 </div>
 
-## Mitglieder einer Gruppe hinzufügen
+## Mitglieder zu einer Gruppe hinzufügen
 
 1. Wählen Sie im [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) **Personen > Gruppen** und klicken Sie auf die Gruppe, die Sie verwalten möchten.
-2. Klicken Sie im Abschnitt **Mitglieder** der Gruppenseite auf **Alle Mitglieder**. (Teams und Dienste öffnen direkt ihre Mitgliederliste.)
-3. Geben Sie im Feld **Person hinzufügen** unter der Mitgliederliste den Namen der Person ein, die Sie hinzufügen möchten, und drücken Sie **Eingabe** oder klicken Sie auf das Suchsymbol.
-4. Klicken Sie in den Suchergebnissen auf den Namen der Person oder auf das Symbol Hinzufügen daneben.
+2. Klicken Sie im Bereich **Mitglieder** der Gruppenseite auf **Alle Mitglieder**. (Teams und Dienste öffnen sich direkt in ihrer Mitgliederliste.)
+3. Geben Sie im Feld **Person hinzufügen** unterhalb der Mitgliederliste den Namen der Person ein, die Sie hinzufügen möchten, und drücken Sie **Enter** oder klicken Sie auf das Suchsymbol.
+4. Klicken Sie in den Suchergebnissen auf den Namen der Person oder auf das Hinzufügen-Symbol daneben.
 5. Die Person erscheint nun in der Mitgliederliste der Gruppe.
 
 :::tip
-Bevor Sie etwas eingeben, zeigt das Feld **Person hinzufügen** eine kurze Liste **Zuletzt verwendeter Personen**, die Sie mit einem Klick hinzufügen können.
+Bevor Sie etwas eingeben, zeigt das Feld **Person hinzufügen** eine kurze Liste **Zuletzt verwendete Personen**, die Sie mit einem Klick hinzufügen können. Das sind die Personen, die Sie zuletzt bei einer Personensuche ausgewählt haben (in diesem Browser gespeichert), gefolgt von den Personen, die zuletzt in B1 hinzugefügt wurden.
 :::
 
-Wenn Sie fertig sind, klicken Sie auf den Link **Zurück zu** mit dem Namen der Gruppe, um zur Gruppenseite zurückzukehren. Die Gruppenseite zeigt eine Übersicht über **Mitglieder**, **Sitzungen**, **Kalender** und **Zustand** der Gruppe, jeweils mit einem Link zur vollständigen Ansicht. Sind Sie eine der Leitenden der Gruppe, zeigt sie außerdem **Leitungsnotizen** (siehe [Leitungsnotizen](#leader-notes) unten). Sind Formulare mit der Gruppe verknüpft, erscheint außerdem ein Abschnitt **Verknüpfte Formulare** (siehe [Verknüpfte Formulare](#linked-forms) unten).
+Wenn Sie fertig sind, klicken Sie auf den Link **Zurück zu** mit dem Namen der Gruppe, um zur Gruppenseite zurückzukehren. Die Gruppenseite zeigt eine Zusammenfassung der **Mitglieder**, **Sitzungen**, **Kalender** und des **Zustands** der Gruppe, jeweils mit einem Link zur vollständigen Ansicht. Wenn Sie eine der Leitungen der Gruppe sind, zeigt die Seite außerdem **Leitungsnotizen** (siehe unten unter [Leitungsnotizen](#leader-notes)). Sind Formulare mit der Gruppe verknüpft, erscheint außerdem ein Bereich **Verknüpfte Formulare** (siehe unten unter [Verknüpfte Formulare](#linked-forms)).
 
-### Eine Person hinzufügen, die noch nicht in B1 erfasst ist
+### Eine Person hinzufügen, die noch nicht in B1 ist
 
-Findet Ihre Suche niemanden, zeigt die Suche **Keine Einträge gefunden** mit einem Link **Neue Person hinzufügen**. Klicken Sie darauf, geben Sie Vorname, Nachname und optional die E-Mail-Adresse ein und klicken Sie auf **Hinzufügen**. Die neue Person wird in Ihrem Personenverzeichnis angelegt und in einem Schritt der Gruppe hinzugefügt – Sie müssen sie nicht erneut suchen.
+Findet Ihre Suche niemanden, zeigt die Suche **Keine Einträge gefunden** mit einem Link **Neue Person hinzufügen**. Klicken Sie darauf, geben Sie Vorname und Nachname der Person ein, optional Anrede, E-Mail-Adresse und Mobilnummer, und klicken Sie auf **Hinzufügen**. Die neue Person wird in Ihrem Personenverzeichnis angelegt und in einem Schritt der Gruppe hinzugefügt. Sie müssen sie nicht erneut suchen.
 
-## Gruppenleitende bestimmen {#designating-group-leaders}
+## Gruppenleitungen bestimmen {#designating-group-leaders}
 
-Gruppenleitende haben besondere Rechte – sie können den [Gruppenkalender](group-calendar.md) bearbeiten, Veranstaltungen verwalten und die Gruppe koordinieren.
+Gruppenleitungen haben besondere Rechte. Sie können den [Gruppenkalender](group-calendar.md) bearbeiten, Veranstaltungen verwalten und bei der Koordination der Gruppe helfen.
 
 1. Suchen Sie in der Mitgliederliste der Gruppe die Person, die Sie zur Leitung machen möchten.
-2. Klicken Sie neben deren Namen auf das **Sternsymbol** (**Zur Leitung machen**).
-3. Die Person ist nun als Gruppenleitung bestimmt und zeigt ein Abzeichen **Leitung**.
+2. Klicken Sie neben ihrem Namen auf das **Sternsymbol** (**Als Leitung festlegen**).
+3. Die Person ist nun als Gruppenleitung festgelegt und zeigt ein Abzeichen **Leitung**.
 
-Um den Leitungsstatus zu entfernen, klicken Sie erneut auf das Sternsymbol (**Leitungsrechte entfernen**).
+Um den Leitungsstatus zu entfernen, klicken Sie erneut auf das Sternsymbol (**Leitungszugang entfernen**).
 
 :::info
-Jedes Gruppenmitglied kann den Gruppenkalender und die Veranstaltungen einsehen, aber nur Leitende können Kalenderveranstaltungen hinzufügen oder bearbeiten.
+Jedes Gruppenmitglied kann den Gruppenkalender und die Veranstaltungen sehen. Nur Leitungen können Kalenderveranstaltungen hinzufügen oder bearbeiten.
 :::
 
 ## Verknüpfte Formulare {#linked-forms}
 
-Wenn ein eigenständiges Formular [mit der Gruppe verknüpft](../forms/creating-forms.md#linking-a-form-to-a-group) ist, zeigt die Gruppenseite einen Abschnitt **Verknüpfte Formulare** mit dem Namen jedes Formulars, ob es **Geöffnet** oder **Geschlossen** ist, und wie viele Formulare verknüpft sind. Der Abschnitt erscheint nur für die Leitenden der Gruppe und für Personen, die Formulare verwalten dürfen, und nur wenn mindestens ein Formular verknüpft ist. Formularverwaltende können auf den Namen eines Formulars klicken, um es zu öffnen, oder auf **Alle Formulare**, um zur Seite Formulare zu gelangen.
+Wenn ein eigenständiges Formular [mit der Gruppe verknüpft](../forms/creating-forms.md#linking-a-form-to-a-group) ist, zeigt die Gruppenseite einen Bereich **Verknüpfte Formulare** mit dem Namen jedes Formulars, dem Status **Offen** oder **Geschlossen** und der Anzahl der verknüpften Formulare. Der Bereich erscheint nur für die Leitungen der Gruppe und für Personen, die Formulare verwalten dürfen, und nur dann, wenn mindestens ein Formular verknüpft ist. Formularverwalter:innen können auf den Namen eines Formulars klicken, um es zu öffnen, oder auf **Alle Formulare**, um zur Seite Formulare zu gelangen.
 
-Gruppenleitende lesen und drucken die Antworten zu diesen Formularen über die Gruppenseite auf [B1.church](../../b1-church/groups/group-details.md#linked-forms).
+Gruppenleitungen lesen und drucken die Antworten auf diese Formulare auf der Gruppenseite auf [B1.church](../../b1-church/groups/group-details.md#linked-forms).
 
 ## Leitungsnotizen {#leader-notes}
 
-Gruppenleitende können private Notizen zur Gruppe führen – etwa zu Nachbereitungen, Gebetsanliegen oder seelsorgerlichen Anliegen –, die der Rest der Gruppe nie sieht.
+Gruppenleitungen können private Notizen über die Gruppe führen, zum Beispiel Nachverfolgungen, Gebetsanliegen oder seelsorgerliche Anliegen. Der Rest der Gruppe sieht sie nie.
 
-Der Abschnitt **Leitungsnotizen** erscheint auf der Gruppenseite nur für Personen, die Leitende dieser Gruppe sind. Er zeigt die neueste Notiz, wer sie wann geschrieben hat und wie viele Notizen es insgesamt gibt.
+Der Bereich **Leitungsnotizen** erscheint auf der Gruppenseite nur für Personen, die Leitung dieser Gruppe sind. Er zeigt die neueste Notiz, wer sie wann verfasst hat und wie viele Notizen es insgesamt gibt.
 
-1. Klicken Sie auf der Gruppenseite im Abschnitt **Leitungsnotizen** auf **Alle Notizen**.
-2. Schreiben Sie Ihre Notiz in das Feld und veröffentlichen Sie sie. Notizen werden mit dem Namen und Foto der verfassenden Person sowie Datum und Uhrzeit der Veröffentlichung aufgelistet.
+1. Klicken Sie auf der Gruppenseite im Bereich **Leitungsnotizen** auf **Alle Notizen**.
+2. Schreiben Sie Ihre Notiz in das Feld und veröffentlichen Sie sie. Zum Formatieren markieren Sie Text und wählen im erscheinenden Popup **Fett**, **Kursiv**, **Aufzählungsliste** oder **Nummerierte Liste** (oder drücken Sie **Strg+B** / **Strg+I**). Notizen werden mit dem Namen und Foto der Verfassenden sowie dem Datum und der Uhrzeit der Veröffentlichung aufgelistet.
 3. Klicken Sie auf den Link **Zurück zu** mit dem Namen der Gruppe, um zur Gruppenseite zurückzukehren.
 
 :::info
-Leitungsnotizen sind nur für die Leitenden der Gruppe sichtbar. Andere Mitglieder können sie nicht sehen, ebenso wenig Mitarbeitende oder Administratoren – selbst mit vollen Berechtigungen –, es sei denn, sie sind ebenfalls Leitende dieser Gruppe. Um einer anderen Person Zugriff zu geben, [machen Sie sie zur Leitung](#designating-group-leaders). Leitende sehen diese Notizen außerdem im Abschnitt **Leitungsnotizen** auf der Gruppenseite auf [B1.church](../../b1-church/groups/group-details.md#leader-notes) und auf der Registerkarte **Gruppen** der Seite [Notizen](../people/notes.md) in B1 Admin.
+Leitungsnotizen sind nur für die Leitungen der Gruppe sichtbar. Andere Mitglieder können sie nicht sehen, und auch Mitarbeitende oder Administrator:innen können sie nicht sehen, selbst mit vollen Berechtigungen, sofern sie nicht selbst Leitung dieser Gruppe sind. Um einer anderen Person Zugang zu geben, [machen Sie sie zur Leitung](#designating-group-leaders). Leitungen sehen diese Notizen außerdem im Bereich **Leitungsnotizen** auf der Gruppenseite in [B1.church](../../b1-church/groups/group-details.md#leader-notes) sowie auf dem Reiter **Gruppen** der Seite [Notizen](../people/notes.md) in B1 Admin.
 :::
 
 ## Nachrichten an Gruppenmitglieder senden
 
-Sie können direkt aus B1 Admin mit allen Mitgliedern einer Gruppe kommunizieren:
+Sie können alle Mitglieder einer Gruppe direkt aus B1 Admin erreichen:
 
 1. Klicken Sie in der Mitgliederliste der Gruppe oberhalb der Liste auf das Symbol **Nachricht an Mitglieder senden**.
 2. Schreiben Sie Ihre Nachricht in das Textfeld (oder wählen Sie eine aus **Vorlagen**).
@@ -85,45 +85,45 @@ Ihre Nachricht wird an alle Mitglieder der Gruppe zugestellt.
 
 Sie können formatierte E-Mails an alle Mitglieder einer Gruppe senden:
 
-1. Klicken Sie auf der Detailseite der Gruppe auf der linken Seite auf die Schaltfläche **E-Mail**.
-2. Der Dialog E-Mail senden öffnet sich und zeigt, wie viele Mitglieder die E-Mail erhalten und wie viele keine hinterlegte E-Mail-Adresse haben.
-3. Wählen Sie optional über das Dropdown-Menü eine **E-Mail-Vorlage** aus oder verfassen Sie eine Nachricht von Grund auf. Klicken Sie auf **Vorlagen verwalten**, um Vorlagen zu erstellen oder zu bearbeiten.
-4. Geben Sie eine **Betreffzeile** ein. Sie können Platzhalter einfügen, indem Sie auf die Feld-Chips klicken: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}` sowie **Gruppenname** (`{{groupName}}`), der durch den Namen der Gruppe ersetzt wird.
-5. Verfassen Sie den **E-Mail-Text** mit dem HTML-Editor. Dieselben Platzhalter stehen auch hier zur Verfügung.
+1. Klicken Sie auf der Detailseite der Gruppe links auf die Schaltfläche **E-Mail**.
+2. Der Dialog **E-Mail senden** öffnet sich. Er zeigt, wie viele Mitglieder die E-Mail erhalten und wie viele keine hinterlegte E-Mail-Adresse haben.
+3. Wählen Sie optional eine **E-Mail-Vorlage** im Dropdown-Menü oder verfassen Sie eine Nachricht von Grund auf. Mit **Vorlagen verwalten** erstellen oder bearbeiten Sie Vorlagen.
+4. Geben Sie eine **Betreffzeile** ein. Sie können Platzhalter einfügen, indem Sie auf die Feldchips klicken: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}` sowie **Gruppenname** (`{{groupName}}`), der durch den Namen der Gruppe ersetzt wird.
+5. Verfassen Sie den **E-Mail-Text** im HTML-Editor. Dieselben Platzhalter stehen auch hier zur Verfügung.
 6. Klicken Sie auf **Senden**.
-7. Eine Zusammenfassung zeigt, wie viele E-Mails erfolgreich versendet wurden und wie viele Mitglieder übersprungen wurden (keine E-Mail-Adresse hinterlegt).
+7. Eine Zusammenfassung zeigt, wie viele E-Mails erfolgreich versendet wurden und wie viele Mitglieder übersprungen wurden (keine hinterlegte E-Mail-Adresse).
 
 :::tip
-Erstellen Sie wiederverwendbare E-Mail-Vorlagen für regelmäßige Mitteilungen wie Wochen-Updates, Veranstaltungsankündigungen oder Gebetsanliegen. Vorlagen sparen Zeit und sorgen für einheitliche Botschaften.
+Erstellen Sie wiederverwendbare E-Mail-Vorlagen für regelmäßige Mitteilungen wie Wochenupdates, Veranstaltungshinweise oder Gebetsanliegen. Vorlagen sparen Zeit und sorgen für einheitliche Botschaften.
 :::
 
 ### Gruppen-E-Mails für Ihre Kirche aktivieren {#turning-on-group-email-for-your-church}
 
-Alle Kirchen auf B1 versenden E-Mails von derselben Adresse und teilen sich daher einen Versandruf. Damit die E-Mails aller im Spam-Ordner landen, prüft das ChurchApps-Team jede Kirche einmal, bevor sie Gruppen-E-Mails versenden kann.
+Alle Gemeinden auf B1 versenden E-Mails von derselben Adresse (der Name Ihrer Gemeinde erscheint als Absendername). Sie teilen sich deshalb einen gemeinsamen Ruf als Absender. Damit die E-Mails aller im Spam-Ordner landen, prüft das ChurchApps-Team jede Gemeinde einmalig, bevor sie Gruppen-E-Mails versenden kann.
 
-Wurde Ihre Kirche noch nicht geprüft, zeigt der Dialog E-Mail senden statt des Nachrichteneditors den Hinweis **Gruppen-E-Mail braucht eine kurze Prüfung**:
+Wenn Ihre Gemeinde noch nicht geprüft wurde, zeigt der Dialog **E-Mail senden** statt des Nachrichteneditors den Hinweis **Gruppen-E-Mail benötigt eine kurze Prüfung**:
 
-1. Klicken Sie auf **Prüfung anfordern**. Das ChurchApps-Support-Team wird benachrichtigt.
+1. Klicken Sie auf **Prüfung anfordern**. Das Support-Team von ChurchApps wird benachrichtigt.
 2. Der Dialog wechselt zu **Prüfung angefordert**. Sie können ihn schließen.
-3. Gruppen-E-Mail wird in der Regel innerhalb eines Werktags freigeschaltet. Öffnen Sie danach den Dialog E-Mail senden erneut, um Ihre Nachricht zu versenden.
+3. Gruppen-E-Mails werden in der Regel innerhalb eines Werktags freigeschaltet. Öffnen Sie danach den Dialog **E-Mail senden** erneut, um Ihre Nachricht zu versenden.
 
-Solange Ihre Kirche nicht freigegeben ist, versendet B1 auch keine [Folge-E-Mails von Formularen](../forms/creating-forms.md#sending-a-follow-up-email) und keinen Schritt **E-Mail senden** in [Workflows](../serving/workflows.md).
+Bis Ihre Gemeinde freigegeben ist, versendet B1 auch keine [Folge-E-Mails aus Formularen](../forms/creating-forms.md#sending-a-follow-up-email) und keinen Schritt **E-Mail senden** in [Workflows](../serving/workflows.md).
 
 :::info Versandlimits
-Nach der Freigabe kann eine Kirche bis zu 150 von der Kirche verfasste E-Mails pro Tag versenden. Das Limit steigt, sobald Ihre Kirche eine saubere Versandhistorie aufgebaut hat, bis auf maximal 2.000 pro Tag. Wurden kürzlich Nachrichten zurückgewiesen oder als Spam markiert, pausiert die Gruppen-E-Mail, und der Dialog bittet Sie, den Support zu kontaktieren. Würde ein Versand Ihr tägliches Limit überschreiten, sendet B1 ihn nicht und zeigt eine Fehlermeldung.
+Nach der Freigabe kann eine Gemeinde bis zu 150 selbst verfasste E-Mails pro Tag versenden. Das Limit steigt, sobald Ihre Gemeinde eine saubere Versandhistorie aufgebaut hat, bis auf maximal 2.000 pro Tag. Wenn kürzlich gesendete Nachrichten nicht zugestellt wurden oder als Spam markiert wurden, pausiert der Gruppen-E-Mail-Versand. Der Dialog bittet Sie dann, den Support zu kontaktieren. Würde ein Versand das tägliche Limit überschreiten, sendet B1 ihn nicht und zeigt eine Fehlermeldung.
 :::
 
 ## Gruppenmitglieder per Textnachricht erreichen {#texting-group-members}
 
-Sobald Ihre Kirche einen [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden hat, erscheint auf der Gruppenseite neben der Schaltfläche **E-Mail** eine Schaltfläche **Text** (**Diese Gruppe per Text erreichen**).
+Sobald Ihre Gemeinde einen [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden hat, erscheint neben der Schaltfläche **E-Mail** auf der Gruppenseite eine Schaltfläche **Text** (**Diese Gruppe per Textnachricht erreichen**).
 
 1. Klicken Sie auf der Detailseite der Gruppe auf **Text**.
-2. Der Dialog zeigt, wie viele Mitglieder die Nachricht erhalten. Mitglieder ohne hinterlegte Mobilnummer oder mit Abmeldung werden übersprungen.
-3. Wählen Sie optional unter **Vorlage laden (optional)** eine gespeicherte Textnachricht aus, um die Nachricht vorzubefüllen. Die Auswahl erscheint, sobald Ihre Kirche [Textvorlagen](../settings/email-templates.md#text-templates) hat; Personen, die Einstellungen bearbeiten dürfen, sehen zusätzlich einen Link **Vorlagen verwalten**.
-4. Schreiben oder bearbeiten Sie Ihre Nachricht. Um sie zu personalisieren, klicken Sie unterhalb des Nachrichtenfelds auf einen Platzhalter-Chip – **Vorname**, **Nachname**, **Anzeigename**, **Kirchenname** oder **Gruppenname** –, um ihn an der Cursorposition einzufügen. Jeder Platzhalter wird beim Versand mit den eigenen Angaben des Empfängers gefüllt; **Gruppenname** wird zum Namen der Gruppe.
+2. Der Dialog zeigt, wie viele Mitglieder die Textnachricht erhalten. Mitglieder ohne hinterlegte Mobilnummer oder mit abgemeldetem Empfang werden übersprungen.
+3. Wählen Sie optional unter **Vorlage laden (optional)** eine gespeicherte Textnachricht aus, um den Text vorzubefüllen. Die Auswahl erscheint, sobald Ihre Gemeinde [Textvorlagen](../settings/email-templates.md#text-templates) hat. Personen, die Einstellungen bearbeiten dürfen, sehen zusätzlich einen Link **Vorlagen verwalten**.
+4. Schreiben oder bearbeiten Sie Ihre Nachricht. Um sie zu personalisieren, klicken Sie unterhalb des Nachrichtenfelds auf einen Platzhalter-Chip, also **Vorname**, **Nachname**, **Anzeigename**, **Gemeindename** oder **Gruppenname**. Der Platzhalter wird an der Cursorposition eingefügt. Beim Versand wird jeder Platzhalter mit den eigenen Angaben der Empfängerin bzw. des Empfängers gefüllt. **Gruppenname** wird durch den Namen der Gruppe ersetzt.
 5. Klicken Sie auf **Senden**.
 
-Mehr dazu finden Sie unter [Textnachrichten mit Platzhaltern personalisieren](../settings/church-settings.md#personalizing-texts-with-merge-fields).
+Weitere Details finden Sie unter [Texte mit Platzhaltern personalisieren](../settings/church-settings.md#personalizing-texts-with-merge-fields).
 
 ## Gruppendaten exportieren
 
@@ -132,45 +132,48 @@ So laden Sie die Mitgliederliste der Gruppe als Datei herunter:
 1. Klicken Sie in der Mitgliederliste der Gruppe oberhalb der Liste auf **Exportieren**.
 2. Eine CSV-Datei mit den Angaben zu den Mitgliedern der Gruppe wird auf Ihren Computer heruntergeladen.
 
-Ein CSV-Export ist nützlich, um Daten in andere Werkzeuge zu importieren oder Offline-Aufzeichnungen zu führen. Weitere Exportoptionen finden Sie unter [Daten exportieren](../people/exporting-data.md).
+Ein CSV-Export eignet sich, um Daten in andere Werkzeuge zu importieren oder Offline-Unterlagen zu führen. Weitere Exportoptionen finden Sie unter [Daten exportieren](../people/exporting-data.md).
 
 ## Die Mitgliederliste drucken {#printing-the-member-list}
 
 Klicken Sie in der Mitgliederliste der Gruppe oberhalb der Liste auf das Symbol **Anwesenheitsliste drucken** (Drucker) und wählen Sie ein Layout. Die Seite öffnet sich in einem neuen Tab, und der Druckdialog Ihres Browsers erscheint automatisch.
 
-- **Anwesenheitsliste** – eine undatierte Klassenliste mit Kästchen **Anwesend** und **Abwesend**, die Lehrkräfte von Hand markieren können. Siehe [Eine Anwesenheitsliste drucken](../attendance/recording-attendance.md#printing-a-roll-sheet).
-- **Kontaktliste** – eine Kontaktliste für die Gruppe mit dem heutigen Datum, im Kopf mit dem Logo Ihrer Kirche (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben) und dem Kirchennamen darunter sowie dem Namen der Gruppe. Jedes Mitglied hat eine Zeile mit **Name**, **Telefon**, **E-Mail** und **Adresse**. Leitende stehen zuerst und sind mit **Leitung** markiert, danach folgen alle anderen nach Nachnamen sortiert. Die angegebene Telefonnummer ist die Mobilnummer des Mitglieds, andernfalls seine Privat- oder Geschäftsnummer. Kontaktdaten bleiben für alle leer, die sich abgemeldet haben.
+- **Anwesenheitsliste** -- Eine undatierte Klassenliste mit den Feldern **Anwesend** und **Abwesend**, die Lehrende von Hand ankreuzen. Siehe [Anwesenheitsliste drucken](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Kontaktliste** -- Eine Kontaktliste für die Gruppe mit heutigem Datum. Oben stehen das Logo Ihrer Gemeinde (das **Logo für helle Hintergründe** aus [Website > Erscheinungsbild](../website/appearance.md), falls Sie eines hochgeladen haben), der Name Ihrer Gemeinde darunter und der Name der Gruppe. Jedes Mitglied hat eine Zeile mit **Name**, **Telefon**, **E-Mail** und **Adresse**. Leitungen stehen zuerst und sind mit **Leitung** markiert. Danach folgen alle anderen nach Nachname. Die angezeigte Telefonnummer ist die Mobilnummer des Mitglieds. Gibt es keine Mobilnummer, wird die Festnetz- oder Geschäftsnummer angezeigt. Kontaktdaten bleiben leer für alle, die sich abgemeldet haben.
 
 :::warning
-Eine Kontaktliste enthält persönliche Kontaktdaten der Mitglieder. Geben Sie gedruckte Exemplare nur an die Leitenden der Gruppe und andere weiter, die sie benötigen.
+Eine Kontaktliste enthält persönliche Kontaktdaten der Mitglieder. Geben Sie gedruckte Exemplare nur an die Leitungen der Gruppe und an andere Personen weiter, die sie benötigen.
 :::
 
-## Push-Benachrichtigungen an Gruppenmitglieder senden
+## Push-Benachrichtigungen an Gruppenmitglieder senden {#sending-push-notifications-to-group-members}
 
-Sie können eine Push-Benachrichtigung direkt an alle Gruppenmitglieder senden, die die App B1.church auf ihrem Gerät installiert und Push-Benachrichtigungen aktiviert haben.
+Sie können eine Push-Benachrichtigung direkt an alle Gruppenmitglieder senden, die die B1.church-App auf ihrem Gerät installiert und Push-Benachrichtigungen aktiviert haben.
 
-1. Klicken Sie auf der Detailseite der Gruppe auf **Benachrichtigen** (unterhalb der Schaltflächen **E-Mail** und **Text** – die Schaltfläche **Text** erscheint, sobald ein [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden ist).
+1. Klicken Sie auf der Detailseite der Gruppe auf **Benachrichtigen** (unterhalb der Schaltflächen **E-Mail** und **Text**. Die Schaltfläche **Text** erscheint, sobald ein [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden ist).
 2. Ein Dialog öffnet sich und zeigt, wie viele Mitglieder Ihrer Gruppe Push-Benachrichtigungen aktiviert haben.
 3. Füllen Sie die Angaben zur Benachrichtigung aus:
-   - **Titel** *(erforderlich)* – Eine kurze Zusammenfassung, bis zu 80 Zeichen.
-   - **Nachricht** *(erforderlich)* – Der Text der Benachrichtigung, bis zu 240 Zeichen.
-   - **Link zum Öffnen oder URL eines Flyers** *(optional)* – Ein relativer App-Pfad (zum Beispiel `/mobile/groups`) oder eine vollständige `https://`-URL, die beim Antippen der Benachrichtigung geöffnet wird.
-   - **Bild-URL** *(optional)* – Eine `https://`-URL zu einem Bild, das auf unterstützten Geräten neben der Benachrichtigung erscheint.
+   - **Titel** *(Pflichtfeld)* -- Eine kurze Zusammenfassung mit höchstens 80 Zeichen.
+   - **Nachricht** *(Pflichtfeld)* -- Der Text der Benachrichtigung mit höchstens 240 Zeichen.
+   - **Link zum Öffnen oder Flyer-URL** *(optional)* -- Ein relativer App-Pfad (zum Beispiel `/mobile/groups`) oder eine vollständige `https://`-URL, die beim Antippen der Benachrichtigung geöffnet wird.
+   - **Bild-URL** *(optional)* -- Eine `https://`-URL zu einem Bild, das auf unterstützten Geräten neben der Benachrichtigung erscheint.
 4. Eine Live-Vorschau zeigt, wie die Benachrichtigung auf dem Gerät erscheint.
-5. Klicken Sie auf **Benachrichtigung senden**.
+5. Wählen Sie unter **Wann** entweder **Jetzt senden** oder **Später senden** und legen Sie ein künftiges Datum und eine Uhrzeit für **Senden am** fest.
+6. Klicken Sie auf **Benachrichtigung senden** (oder **Benachrichtigung planen**).
+
+Geplante Benachrichtigungen sowie gemeindeweite Benachrichtigungen für alle Personen mit der App verwalten Sie auf der Seite [Push-Benachrichtigungen](../settings/push-notifications.md) unter **Mobile**. Dort können Sie sie bearbeiten, senden oder abbrechen, bevor sie verschickt werden.
 
 :::info
-Push-Benachrichtigungen werden nur an Gruppenmitglieder zugestellt, die die B1.church-PWA installiert und Push-Benachrichtigungen nicht deaktiviert haben. Mitglieder ohne registriertes Push-Gerät oder mit ausgeschalteten Push-Benachrichtigungen gelten als übersprungen; die Versandzusammenfassung zeigt, wie viele erreicht und wie viele übersprungen wurden.
+Push-Benachrichtigungen werden nur an Gruppenmitglieder zugestellt, die die B1.church-PWA installiert und Push-Benachrichtigungen nicht deaktiviert haben. Mitglieder ohne registriertes Push-Gerät oder mit ausgeschaltetem Push gelten als übersprungen. Die Zusammenfassung des Versands zeigt, wie viele erreicht und wie viele übersprungen wurden.
 :::
 
 :::tip
-Nach dem Senden zeigt der Dialog, wie viele Benachrichtigungen erfolgreich in die Warteschlange gestellt wurden. Werden die meisten Mitglieder als übersprungen angezeigt, erinnern Sie sie daran, Ihre B1.church-Seite aufzurufen, sie als App auf dem Startbildschirm zu installieren und bei der Abfrage Benachrichtigungen zu erlauben.
+Nach dem Senden zeigt der Dialog, wie viele Benachrichtigungen erfolgreich in die Warteschlange gestellt wurden. Wenn die meisten Mitglieder als übersprungen angezeigt werden, erinnern Sie sie daran, Ihre B1.church-Seite zu besuchen, sie als App auf dem Startbildschirm zu installieren und bei der Abfrage Benachrichtigungen zu erlauben.
 :::
 
 ## Mitglieder entfernen
 
-Um eine Person aus einer Gruppe zu entfernen, suchen Sie ihren Namen in der Mitgliederliste und klicken Sie neben ihrem Eintrag auf die Schaltfläche **Entfernen**.
+Um jemanden aus einer Gruppe zu entfernen, suchen Sie den Namen in der Mitgliederliste und klicken Sie neben dem Eintrag auf die Schaltfläche **Entfernen**.
 
 :::info
-Wenn Sie eine Person aus einer Gruppe entfernen, wird sie nicht aus Ihrem Kirchenverzeichnis gelöscht. Sie bleibt im Bereich [Personen](../people/adding-people.md) erhalten und kann jederzeit erneut zur Gruppe hinzugefügt werden.
+Wenn Sie eine Person aus einer Gruppe entfernen, wird sie nicht aus Ihrem Gemeindeverzeichnis gelöscht. Sie bleibt im Bereich [Personen](../people/adding-people.md) erhalten und kann jederzeit wieder zur Gruppe hinzugefügt werden.
 :::

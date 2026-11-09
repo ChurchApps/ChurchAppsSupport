@@ -40,7 +40,7 @@ Valideringen sjekker også alle planene dine samtidig. Hvis samme frivillige er 
 Du trenger ikke gjøre noe for å kjøre validering. Den oppdateres automatisk hver gang du legger til eller endrer en tildeling. Hold bare øye med panelet mens du lager planen.
 :::
 
-## Varsle frivillige
+## Varsle frivillige {#notifying-volunteers}
 
 Når planen er klar, kan du varsle alle tildelte frivillige samtidig direkte fra valideringspanelet.
 

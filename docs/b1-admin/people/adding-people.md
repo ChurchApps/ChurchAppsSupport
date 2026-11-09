@@ -28,7 +28,7 @@ The People section is the foundation of B1 Admin — it's your church's member d
 1. Navigate to the B1.church Admin dashboard.
 2. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **People**.
 3. Click the **Add Person** button in the page header. The page scrolls down to the **Add New Person** form below the directory.
-4. Fill in the person's **First Name**, **Last Name**, and **Email**, then click **Add**.
+4. Fill in the person's **First Name** and **Last Name**, and optionally their **Title** (pick a suggestion such as Mr, Mrs, Dr, or Pastor, or type your own, up to 10 characters), **Email**, and **Mobile Phone**, then click **Add**.
 
 The person's profile page will open, ready for you to add more details.
 
@@ -58,8 +58,9 @@ The rest of the profile shows a summary section for each kind of related informa
 - **Attendance** — Shows which of the last several weeks the person attended and their most recent visits. Click **All years** for their full visit history, including the campus, service, service time, group, and a **Checked In** column with the kiosk check-in time (shown as a dash for visits recorded without a kiosk check-in), or **Print** to print it (the printout has your church logo and name centered at the top, above the person's name). For church-wide trends rather than one person's history, see [Tracking Attendance](../attendance/tracking-attendance.md)
 - **Donations** — Shows this year's gifts, including gifts to non-deductible funds. Click **All years** for their full [donation history](../donations/recording-donations.md), or **Log a gift** to record a new one. If your church turned on [Giving Privacy](../settings/church-settings.md#giving-privacy), amounts stay hidden until you click **Show giving**
 - **Groups** — Lists the person's [group memberships](../groups/group-members.md), with **Joined** and the date they joined each group when it's on file
-- **Notes** — Shows recent notes about the person (pastoral care, follow-ups, etc.). Click **All notes** to read and add notes. Each note shows who wrote it and the date and time it was posted. To see recent notes across everyone at once, use the [Notes](./notes.md) page
+- **Notes** — Shows recent notes about the person (pastoral care, follow-ups, etc.). Click **All notes** to read and add notes. Each note shows who wrote it and the date and time it was posted. To format a note, highlight text in the note box and pick **Bold**, **Italic**, **Bulleted list**, or **Numbered list** from the small popup (or press **Ctrl+B** / **Ctrl+I**, **Cmd** on a Mac); the note shows the formatting once posted. Deleting a note asks you to confirm first, because it can't be undone. To see recent notes across everyone at once, use the [Notes](./notes.md) page
 - **Forms** — Lists the person's forms and whether each one has been submitted (see [Working with Forms](#working-with-forms) below)
+- **Requests & registrations** — Lists the person's room and resource [event requests](../calendars/approvals.md) (with the rooms or resources asked for and **Pending**, **Approved**, or **Rejected**) and their [event registrations](../calendars/paid-registrations.md) (with how many people they registered and **Registered**, **Pending**, **Waitlisted**, or **Cancelled**), newest first. The five latest are shown; click **All requests** for the full list. You see event requests if you can use the [Approvals](../calendars/approvals.md) page, and registrations if you can view registrations; without either, the section is hidden
 
 When you open one of these full views, click the **Back to** link with the person's name at the top to return to the profile.
 
@@ -106,6 +107,8 @@ Households let you link family members together. This is especially useful for [
 1. On a person's profile, click **Edit** next to the **Household** heading on the left.
 2. The household editor will open. Select the **household role** for the current person (e.g., Head, Spouse, Child, Other).
 3. Click the **Add** icon to add another household member.
-4. Under **Add Household Member**, type the person's name in the search box and press **Enter** or click the search icon. (Before you type, a short list of **Recent people** is shown.)
+4. Under **Add Household Member**, type the person's name in the search box and press **Enter** or click the search icon. (Before you type, a short list of **Recent people** is shown -- the people you picked most recently in any person search, then the newest people in B1.)
 5. When the person appears in the results, click their name or the add icon next to it.
 6. Choose their household role and click **Save** to complete the household setup.
+
+If the person isn't in B1 yet, click **Add New Person** under the search instead. Along with name, title, email, and mobile phone, the dialog asks for their **Household Role** (Head, Spouse, Child, or Other). The new person is created and placed in this household with that role; click **Save** to finish.

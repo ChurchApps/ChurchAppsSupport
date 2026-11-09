@@ -1,6 +1,6 @@
 ---
 title: "Report"
-description: "Trova ed esegui i report integrati di B1 Admin su compleanni, andamento presenze, donazioni e registro di controllo, in base alla sezione in cui ti trovi."
+description: "Trova ed esegui i report integrati di B1 Admin su compleanni, andamento delle presenze, totali delle donazioni e registro di audit, in base alla sezione in cui ti trovi."
 ---
 
 # Report
@@ -13,7 +13,7 @@ B1 Admin ti offre diversi modi per estrarre dati sulla tua comunità, sulle pres
 
 ## Video di formazione
 
-<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+<YouTube id="vn5SonVe94Q" title="Running Reports in B1" />
 
 ## Dove trovare i report
 
@@ -27,7 +27,7 @@ B1 Admin ti offre diversi modi per estrarre dati sulla tua comunità, sulle pres
 - **[Riepilogo delle donazioni](./donation-summary.md)** -- I totali delle offerte e la suddivisione per fondo si trovano nella sezione **Donazioni**.
 
 ### Impostazioni
-- **[Registro di controllo](./audit-log.md)** -- Tieni traccia di tutte le modifiche e le azioni nel tuo sistema di gestione della chiesa (si trova in **Impostazioni → Registro di controllo**).
+- **[Registro di audit](./audit-log.md)** -- Tieni traccia di tutte le modifiche e le azioni nel tuo sistema di gestione della chiesa (si trova in **Impostazioni → Registro di audit**).
 
 :::info
 I dati dei report dipendono da un inserimento costante. Assicurati che il tuo team [registri le presenze](../attendance/tracking-attendance.md), [registri le donazioni](../donations/recording-donations.md) e mantenga [aggiornate le schede delle persone](../people/adding-people.md) per ottenere risultati più accurati.

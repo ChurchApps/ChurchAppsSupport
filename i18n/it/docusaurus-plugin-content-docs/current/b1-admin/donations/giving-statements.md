@@ -1,21 +1,21 @@
 ---
 title: "Ricevute di donazione"
-description: "Crea in B1 Admin gli attestati annuali di donazione per ogni donatore, poi scaricali in CSV o stampali per l'invio con gli importi deducibili."
+description: "Crea in B1 Admin le ricevute annuali di donazione per ogni donatore, poi scaricale in CSV o stampale per l'invio con i totali deducibili."
 ---
 
 # Ricevute di donazione
 
 <div class="article-intro">
 
-A fine anno, i tuoi donatori hanno bisogno di un riepilogo delle loro donazioni deducibili dalle tasse per i propri archivi. B1 Admin rende facile generare queste ricevute per tutti i donatori in una sola volta, facendoti risparmiare ore di lavoro manuale.
+A fine anno, i tuoi donatori hanno bisogno di un riepilogo delle loro donazioni deducibili per i propri archivi. B1 Admin rende facile generare queste ricevute per tutti i donatori in una volta sola, risparmiandoti ore di lavoro manuale.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Verifica che i tuoi [fondi](funds.md) siano correttamente contrassegnati come **Deducibili fiscalmente** -- sulle ricevute compaiono solo le donazioni ai fondi deducibili
-- Assicurati che tutte le donazioni siano state [registrate](recording-donations.md) e che eventuali transazioni online siano state [importate da Stripe](stripe-import.md)
+- Verifica che i tuoi [fondi](funds.md) siano correttamente contrassegnati come **Deducibile fiscalmente** -- sulle ricevute compaiono solo le donazioni ai fondi deducibili
+- Assicurati che tutte le donazioni siano state [registrate](recording-donations.md) e che le eventuali transazioni online siano state [importate da Stripe](stripe-import.md)
 
 </div>
 
@@ -27,7 +27,7 @@ A fine anno, i tuoi donatori hanno bisogno di un riepilogo delle loro donazioni 
 ## Generare le ricevute
 
 1. Nel pannello **Seleziona anno**, scegli l'**Anno** dal menu a tendina. Puoi scegliere l'anno in corso oppure uno dei cinque anni precedenti.
-2. La pagina carica solo le donazioni con data in quell'anno (dal 1° gennaio al 31 dicembre), quindi si apre rapidamente anche se la tua chiesa ha molti anni di storico delle donazioni. Quando scegli un altro anno, il riepilogo si aggiorna con le donazioni di quell'anno. Il pannello **Riepilogo** sotto l'anno mostra le statistiche per quell'anno, tra cui:
+2. La pagina carica solo le donazioni con data in quell'anno (dal 1° gennaio al 31 dicembre), quindi si apre rapidamente anche se la chiesa ha molti anni di storico delle donazioni. Quando scegli un altro anno, il riepilogo si aggiorna con le donazioni di quell'anno. Il pannello **Riepilogo** sotto l'anno mostra le statistiche per quell'anno, tra cui:
    - **Donatori totali** -- il numero di persone che hanno donato
    - **Donazioni totali** -- il numero di singoli record di donazione
    - **Importo totale** -- l'importo complessivo di tutte le donazioni
@@ -44,7 +44,7 @@ In **File CSV individuali**, fai clic su **Scarica ZIP** per scaricare un file Z
 
 In **Ricevute stampabili**, fai clic su **Stampa tutte** (il pulsante mostra il numero di ricevute) per aprire nel browser una vista stampabile di ogni ricevuta del donatore per l'anno selezionato. Da lì, usa la funzione di stampa del browser per inviarle alla stampante. Ogni ricevuta inizia su una nuova pagina così sono pronte da piegare e spedire, e sono ordinate per cognome del donatore, poi per nome.
 
-Se hai caricato un **Logo per sfondo chiaro** in [Sito web > Aspetto](../website/appearance.md), viene stampato centrato in cima a ogni ricevuta, sopra il titolo. Questo vale sia per **Stampa tutte** sia per la ricevuta di un singolo donatore stampata dalla sua scheda.
+Se hai caricato un **Logo per sfondo chiaro** in [Sito web > Aspetto](../website/appearance.md), viene stampato centrato in cima a ogni ricevuta, sopra il titolo. Questo vale per **Stampa tutte**, per la ricevuta di un singolo donatore stampata dalla sua scheda e per le ricevute che i membri stampano da sé dalla pagina **Donazioni** di B1.church.
 
 :::tip
 Genera le ricevute all'inizio di gennaio, quando i registri sono ancora freschi. Controlla due volte che i fondi siano correttamente contrassegnati come deducibili fiscalmente prima di generare le ricevute -- sono incluse solo le donazioni ai fondi deducibili.
@@ -60,7 +60,7 @@ Le chiese al di fuori degli Stati Uniti possono passare alla struttura ufficiale
 
 Le ricevute riportano poi la dicitura richiesta dalla tua autorità fiscale (per il Canada, "Ricevuta ufficiale ai fini dell'imposta sul reddito" con il riferimento CRA), un numero di ricevuta nel formato `ANNO-IDDONATORE`, l'importo ammissibile calcolato solo dai fondi deducibili fiscalmente e una riga separata per eventuali donazioni a fondi non deducibili. I donatori vedono lo stesso blocco di ricevuta quando stampano la propria ricevuta da B1.church.
 
-## Cosa vedono i membri su B1.church
+## Cosa vedono i membri su B1.church {#what-members-see-in-b1church}
 
 La stessa sezione **Donazioni** delle impostazioni controlla ciò che i membri vedono nella propria pagina delle donazioni su B1.church:
 
@@ -69,6 +69,6 @@ La stessa sezione **Donazioni** delle impostazioni controlla ciò che i membri v
 
 Queste impostazioni cambiano solo ciò che vedono i membri. Puoi comunque stampare qualsiasi anno da questa pagina.
 
-## Prossimi passi
+## Passi successivi
 
 Se hai bisogno di rivedere i dettagli delle donazioni prima di generare le ricevute, visita la pagina [Report sulle donazioni](donation-reports.md) oppure controlla i singoli [lotti](batches.md).

@@ -36,7 +36,9 @@ Creating a calendar in B1 Admin lets you build a curated view of events by conne
 After creating a calendar, click **Manage Events** on its row to open the detail page. This page has two main areas:
 
 - **Left column** -- The calendar's name with its actions (**New Event**, **Edit**, **Import .ics**, and **Print**), followed by the **Groups in Calendar** list showing which groups are included in this calendar. Click **Remove** next to a group to take it off the calendar.
-- **Main area** -- The **Calendar Events** view showing events pulled in from connected groups, with the **Subscribe** and **Add Group** buttons above it.
+- **Main area** -- The **Calendar Events** view showing events pulled in from connected groups, with the **Subscribe** and **Add Group** buttons above it. Each event is drawn in its group's color. Colors are picked automatically, and a group keeps the same color on every calendar.
+
+Click **Print** for a printable month. The printout starts with your church's light background logo (from [Appearance](../website/appearance.md), if you set one), the church name, and the calendar name. Event names wrap onto more lines instead of being cut off, and the group colors are kept.
 
 ## Connecting Groups
 

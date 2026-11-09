@@ -1,34 +1,34 @@
 ---
 title: "Rapporter"
-description: "Finn og kjør de innebygde rapportene i B1 Admin for bursdager, oppmøtetrender, gavesummer og revisjonsloggen, avhengig av hvilken del du er i."
+description: "Finn og kjør de innebygde rapportene i B1 Admin for bursdager, oppmøtetrender, donasjonssummer og revisjonsloggen, avhengig av hvilken seksjon du er i."
 ---
 
 # Rapporter
 
 <div class="article-intro">
 
-B1 Admin gir deg flere måter å hente data om menigheten din, oppmøte og gaver på. Rapportering er bygget inn i de relevante delene av appen i stedet for å være én enkelt Reports-side.
+B1 Admin gir deg flere måter å hente data om menigheten, oppmøtet og giving. Rapportering er innebygd i de relevante delene av appen i stedet for å være én samlet rapportside.
 
 </div>
 
 ## Opplæringsvideo
 
-<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+<YouTube id="vn5SonVe94Q" title="Running Reports in B1" />
 
 ## Hvor du finner rapporter
 
-### People
-- **[Lister over bursdager og jubileer](./birthday-report.md)** -- Filtrer på Birth Month eller Anniversary Month i **People → Advanced Search** for å få en liste over kommende bursdager eller jubileer.
+### Personer
+- **[Lister over bursdager og jubileer](./birthday-report.md)** -- Filtrer på fødselsmåned eller jubileumsmåned i **Personer → Avansert søk** for å få en liste over kommende bursdager eller jubileer.
 
-### Attendance
-- **[Oppmøterapporter](./attendance-reports.md)** -- Oppmøtetrender og gruppeoppmøtedata finner du i seksjonen **Attendance**.
+### Oppmøte
+- **[Oppmøterapporter](./attendance-reports.md)** -- Oppmøtetrender og oppmøtedata for grupper finner du i seksjonen **Oppmøte**.
 
-### Donations
-- **[Gavesammendrag](./donation-summary.md)** -- Gavetotaler og fordeling på fond finner du i seksjonen **Donations**.
+### Donasjoner
+- **[Donasjonsoppsummering](./donation-summary.md)** -- Summer for giving og fordeling per fond finner du i seksjonen **Donasjoner**.
 
-### Settings
-- **[Revisjonslogg](./audit-log.md)** -- Følg alle endringer og handlinger i menighetsadministrasjonssystemet ditt (finnes under **Settings → Audit Log**).
+### Innstillinger
+- **[Revisjonslogg](./audit-log.md)** -- Følg alle endringer og handlinger i menighetens administrasjonssystem (finnes under **Innstillinger → Revisjonslogg**).
 
 :::info
-Rapportdata er avhengig av konsekvent registrering. Sørg for at teamet ditt [registrerer oppmøte](../attendance/tracking-attendance.md), [registrerer gaver](../donations/recording-donations.md) og holder [personregistreringene](../people/adding-people.md) oppdatert for å få mest mulig nøyaktige resultater.
+Rapportdataene er bare så gode som registreringen. Sørg for at teamet ditt [følger oppmøte](../attendance/tracking-attendance.md), [registrerer donasjoner](../donations/recording-donations.md) og holder [personposter](../people/adding-people.md) oppdatert, for mest mulig nøyaktige resultater.
 :::

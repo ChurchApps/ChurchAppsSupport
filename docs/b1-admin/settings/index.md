@@ -49,5 +49,6 @@ For information about how your data is protected, see [Data Security](./data-sec
 - [Church Settings](./church-settings.md) -- Configure your church information and branding
 - [Campuses](./campuses.md) -- Add locations for multi-site churches
 - [Roles & Permissions](./roles-permissions.md) -- Set up user roles and access control
-- [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs shown in the B1.church PWA
+- [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs and app theme colors of the B1.church PWA
+- [Push Notifications](./push-notifications.md) -- Send or schedule push notifications to your app's users
 - [Data Security](./data-security.md) -- Learn how your data is protected

@@ -97,7 +97,7 @@ Configurez un économiseur d'écran qui s'active après une période d'inactivit
 Utilisez l'écran de veille pour afficher des annonces, des événements à venir ou des messages de bienvenue lorsque la borne n'est pas utilisée.
 :::
 
-## Inscription des visiteurs par code QR
+## Inscription des visiteurs par code QR {#guest-registration-via-qr-code}
 
 La borne d'enregistrement peut afficher un code QR que les visiteurs scannent pour s'inscrire eux-mêmes et leur famille sur leur téléphone. Cela accélère le processus d'enregistrement pour les visiteurs qui viennent pour la première fois.
 

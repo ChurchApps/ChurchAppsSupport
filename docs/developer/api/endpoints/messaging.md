@@ -161,6 +161,9 @@ Base path: `/messaging/notifications`
 | POST | `/sendTest` | JWT | — | Send a test push notification. Body: `{ personId, title }` |
 | POST | `/ping` | Public | — | Create a notification from an external trigger. Body: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
 | DELETE | `/:churchId/:id` | JWT | — | Delete a notification |
+| GET | `/groupPreview/:groupId` | JWT | `groupMembers.edit` | Count how many of a group's members a push would reach |
+| GET | `/churchPreview` | JWT | `content.edit` | Count how many people a push to everyone with the app would reach |
+| POST | `/group/send` | JWT | `groupMembers.edit` | Send a push to a group's members now |
 
 ### Example: Create Notifications
 
@@ -176,6 +179,20 @@ Authorization: Bearer <token>
   "link": "/groups/group-789"
 }
 ```
+
+## Scheduled Notifications
+
+Base path: `/messaging/scheduledNotifications`
+
+Pushes scheduled ahead of time. `audience` is `church` (everyone with the app; needs `content.edit`) or `group` (needs `groupMembers.edit` and a `groupId`). Title is limited to 80 characters and message to 240. A due row is sent by the 1-minute timer.
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | `groupMembers.edit` or `content.edit` | List scheduled and recent notifications for the church |
+| POST | `/` | JWT | per audience | Create a scheduled notification, or update one when `id` is set. Body: `{ id?, audience, groupId?, title, message, link?, imageUrl?, sendAt }`. Updating one that is no longer pending returns 409 |
+| POST | `/:id/sendNow` | JWT | per audience | Send a pending notification now. Returns 409 if it was already sent, cancelled, or is being sent |
+| DELETE | `/:id` | JWT | per audience | Cancel a pending notification, or remove a sent, failed, or cancelled one from the list. Returns 409 while it is being sent |
+| DELETE | `/` | JWT | `groupMembers.edit` or `content.edit` | Remove every sent, failed, and cancelled notification for the audiences the user can send to. Returns `{ deleted }` |
 
 ## Notification Preferences
 

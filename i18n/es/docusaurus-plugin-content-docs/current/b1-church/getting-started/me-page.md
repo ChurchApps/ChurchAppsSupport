@@ -27,7 +27,7 @@ Toca **Más** en la barra de pestañas y luego toca **Me** en **Cuenta**. La pá
 
 Si no has iniciado sesión, verás "Inicia sesión para ver tu semana" y un botón **Iniciar sesión** en su lugar.
 
-## Próximamente
+## Próximamente {#upcoming}
 
 La sección **Próximamente** muestra tus próximos tres elementos en orden de fecha, cada uno con una etiqueta de tipo. Si tienes más, toca **Todo lo próximo** para ver la lista completa, y **Volver a Me** para regresar.
 

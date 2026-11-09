@@ -1,19 +1,19 @@
 ---
 title: "Notificações push da web"
-description: "Configure chaves VAPID, o cliente WebPushHelper e o service worker para que B1.church e B1 Admin enviem notificações push do navegador aos membros."
+description: "Configure chaves VAPID, o cliente WebPushHelper e o tratamento de service worker para que B1.church e B1 Admin enviem notificações push do navegador aos membros."
 ---
 
 # Notificações push da web
 
 <div class="article-intro">
 
-Os aplicativos web do ChurchApps entregam notificações push pela API Web Push do W3C — o mesmo mecanismo usado pelo Firebase Cloud Messaging do lado do servidor, mas entregue pelo `PushManager` nativo do navegador, em vez do FCM. Um único par de chaves VAPID no MessagingApi atende todos os consumidores (B1Admin, B1App, PWAs futuras).
+Os aplicativos web do ChurchApps entregam notificações push pela API Web Push do W3C — o mesmo mecanismo usado pelo Firebase Cloud Messaging do lado do servidor, mas entregue pelo `PushManager` nativo do navegador, em vez do FCM. Um único par de chaves VAPID no MessagingApi atende todos os consumidores (B1Admin, B1App e futuros PWAs).
 
 </div>
 
 ## Quando o push é disparado {#when-push-fires}
 
-O push é um nível em uma única passagem de entrega dentro de `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): primeiro um portão de preferências no aplicativo, depois a entrega por socket e o push tentados na mesma passagem (cada um atrás do seu próprio portão de preferências) e, por fim, o e-mail. Um destinatário que silenciou a categoria nunca chega ao push. Uma entrega por socket bem-sucedida não interrompe mais o push — todo tipo de notificação agora se comporta como as mensagens privadas sempre se comportaram, de modo que um PWA instalado em segundo plano ainda exibe uma notificação no nível do sistema operacional mesmo quando uma entrega por socket já chegou; os banners duplicados são suprimidos no cliente pelo service worker (veja [Requisito de service worker](#service-worker-requirement)). Lembretes agendados e transmissões disparadas pela equipe começam diretamente no nível do push, ignorando a etapa do socket. O e-mail continua dirigido por timer, escalando as linhas não lidas em sua própria programação, e não como parte dessa passagem.
+O push é um nível em uma única passagem de entrega dentro de `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): primeiro um portão de preferências no aplicativo, depois a entrega por socket e o push tentados na mesma passagem (cada um atrás do seu próprio portão de preferências) e, por fim, o e-mail. Um destinatário que silenciou a categoria nunca chega ao push. Uma entrega por socket bem-sucedida não interrompe mais o push — todo tipo de notificação agora se comporta como as mensagens privadas sempre se comportaram, de modo que um PWA instalado em segundo plano ainda exibe uma notificação no nível do sistema operacional mesmo quando uma entrega por socket já chegou; os banners duplicados são suprimidos no cliente pelo service worker (veja [Requisito de service worker](#service-worker-requirement)). Lembretes agendados e transmissões disparadas pela equipe começam diretamente no nível do push, ignorando a etapa do socket. O e-mail continua dirigido por temporizador, escalonando as linhas não lidas em sua própria programação, e não como parte dessa passagem.
 
 Os caminhos mais comuns que chegam ao push:
 
@@ -21,6 +21,7 @@ Os caminhos mais comuns que chegam ao push:
 2. **Mensagens privadas** — uma mensagem direta passa pela mesma função de entrega e sempre tenta o push junto com a entrega por socket.
 3. **Lembretes agendados** — lembretes de eventos, tarefas e atendimento expandidos e despachados pelo motor de lembretes, que inicia novas ocorrências diretamente no nível do push.
 4. **Pushes disparados pela equipe** — `POST /messaging/notifications/create`, `/ping` e `/group/send` para transmissões pontuais ou para grupos.
+5. **Pushes agendados pela equipe** — `POST /messaging/scheduledNotifications` salva um push para todos com o aplicativo (`audience: "church"`) ou para um grupo, e o temporizador de 1 minuto o envia quando chega a hora (veja [Arquitetura de notificações](./architecture/notifications.md)). Um push para a igreja toda sem link abre `/mobile/notifications`; um push de grupo sem link abre esse grupo.
 
 ## Fluxo no servidor
 
@@ -76,7 +77,7 @@ Caminho base: `/messaging/webpush`
 | GET | `/publicKey` | Pública | Retorna `{ publicKey, enabled }`. Os clientes passam `publicKey` para `pushManager.subscribe({ applicationServerKey })` |
 | POST | `/subscribe` | JWT | Registra (ou insere/atualiza) uma assinatura para o usuário autenticado. Corpo: `{ subscription: { endpoint, keys: { p256dh, auth } }, appName?, deviceInfo?, label? }` |
 | POST | `/unsubscribe` | Pública | Exclui qualquer linha de dispositivo cujo `fcmToken` contenha o endpoint informado. Corpo: `{ endpoint }` |
-| DELETE | `/subscription/:id` | JWT | Exclui uma linha de dispositivo específica pelo seu id no servidor |
+| DELETE | `/subscription/:id` | JWT | Exclui uma linha de dispositivo específica pelo seu ID no servidor |
 
 ## Primitiva do cliente: `WebPushHelper`
 
@@ -101,7 +102,7 @@ Comportamentos que os consumidores recebem de graça:
 - **Intervalo de espera** — `canPromptNow()` impõe um intervalo de 7 dias entre os pedidos, via `localStorage`, para que usuários que recusam o pedido do sistema operacional não sejam perguntados de novo a cada sessão.
 - **Desativação** — `setOptedOut(true)` e `unsubscribe()` impedem que o pedido volte a aparecer e removem a linha de dispositivo no servidor.
 - **Detecção de PWA instalado** — `isStandalone()` permite que as aplicações hospedeiras condicionem os pedidos de push no iOS a "o usuário instalou o PWA na tela inicial" (no iOS, o push só é permitido para PWAs instalados).
-- **Recadastro ao trocar de igreja** — `refreshEnrollment()` reenvia a assinatura existente do navegador para o novo `userChurch` sem pedir de novo ao usuário. Chame-o no manipulador de mudança de `userChurch`.
+- **Recadastro ao trocar de igreja** — `refreshEnrollment()` reenvia a assinatura existente do navegador para o novo `userChurch`, sem pedir de novo ao usuário. Chame-o no manipulador de mudança de `userChurch`.
 
 ### Requisito de service worker {#service-worker-requirement}
 
@@ -150,7 +151,7 @@ self.addEventListener("notificationclick", (event) => {
 });
 ```
 
-`deepLinkFor` / `clientMatchesTarget` são específicos de cada consumidor — veja `B1App/src/app/sw.ts` para a implementação de referência. O B1App encaminha `privateMessage` para `/mobile/messages/:personId`, o B1Admin encaminha `notification` para o painel de alertas, e assim por diante.
+`deepLinkFor` / `clientMatchesTarget` são específicos de cada consumidor — veja `B1App/src/app/sw.ts` para a implementação de referência. O B1App encaminha `privateMessage` para `/mobile/messages/:personId`, e o B1Admin encaminha `notification` para o seu painel de alertas.
 
 ## Observações operacionais
 
@@ -163,5 +164,5 @@ self.addEventListener("notificationclick", (event) => {
 
 - [Arquitetura de notificações](./architecture/notifications.md) -- O funil completo de escalonamento no aplicativo/push/e-mail e o motor de lembretes
 - [Tempo real](./realtime.md) -- Entrega por WebSocket; o push agora é disparado a partir do mesmo funil no aplicativo, junto com a entrega por socket na mesma passagem, e não apenas como alternativa quando uma entrega por socket não chega
-- [Endpoints de Messaging](./api/endpoints/messaging.md) -- Notificações, dispositivos e o restante da superfície de mensagens
+- [Endpoints de mensagens](./api/endpoints/messaging.md) -- Notificações, dispositivos e o restante da superfície de mensagens
 - [AppHelper](./shared-libraries/app-helper.md) -- O pacote npm que traz o `WebPushHelper`

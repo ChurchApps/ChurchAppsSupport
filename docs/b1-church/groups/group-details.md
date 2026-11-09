@@ -28,7 +28,7 @@ If you are not logged in, you will see the following:
 - **Sign in to join** -- A button under the group's name. Sign in (or create an account) to join the group or request to join. After you sign in, you are brought back to the group and taken straight to the join step.
 - **About** -- The full description of the group explaining its purpose and what to expect.
 - **Leaders** -- The names of the group's leaders. You can tap a leader's name to view their profile.
-- **Upcoming Events** -- Up to three upcoming events for the group, each showing the date, time, and event title, with a **Register** link when the event takes registrations. If the group has no upcoming events, this section is hidden.
+- **Upcoming Events** -- Up to three upcoming events for the group, each showing the date, time, and event title, with a **Register** link when the event takes registrations. Once you have registered, the link is replaced by your status -- **Registered**, **Pending**, or **Waitlisted** -- which opens your Registrations. If the group has no upcoming events, this section is hidden.
 
 ## Member View (Logged In)
 

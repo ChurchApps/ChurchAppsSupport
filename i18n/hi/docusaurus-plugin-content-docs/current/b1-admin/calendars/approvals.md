@@ -1,59 +1,69 @@
 ---
 title: "कैलेंडर स्वीकृति"
-description: "B1 Admin में लंबित कमरे और संसाधन बुकिंग अनुरोधों की समीक्षा करें, टकराव जाँचें, फिर उन्हें स्वीकृत या अस्वीकृत करें, और चाहें तो इवेंट प्रकाशित करें।"
+description: "B1 Admin में लंबित कमरे और संसाधन बुकिंग अनुरोधों की समीक्षा करें, टकराव जाँचें, उन्हें स्वीकृत या अस्वीकृत करें, और History में पिछले निर्णय देखें।"
 ---
 
 # कैलेंडर स्वीकृति
 
 <div class="article-intro">
 
-Approvals page वह जगह है जहां administrators pending room और resource booking requests को review और act करते हैं, साथ ही calendar events जिन्हें published होने से पहले approval की आवश्यकता है।
+Approvals पेज वह जगह है जहाँ प्रशासक लंबित कमरे और संसाधन बुकिंग अनुरोधों की समीक्षा करते हैं और उन पर कार्रवाई करते हैं, साथ ही उन कैलेंडर इवेंट्स पर भी जो प्रकाशित होने से पहले स्वीकृति माँगते हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- Rooms या resources को एक **Approval Group** के साथ कॉन्फ़िगर करें [Rooms & Resources](./rooms-resources.md) में
-- आपको **Calendars Admin** अनुमति या **content.edit** अनुमति चाहिए
+- [Rooms & Resources](./rooms-resources.md) में कमरों या संसाधनों को **Approval Group** के साथ कॉन्फ़िगर करें
+- आपके पास **Calendars Admin** अनुमति या **content.edit** अनुमति होनी चाहिए
 
 </div>
 
 ## Approvals खोलना
 
-B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (शीर्ष-बाएं खोज बार) खोलें, **Calendars** विस्तृत करें, और **Approvals** पर क्लिक करें। Pending booking requests और review के लिए waiting events यहां list किए जाते हैं।
+B1 Admin में, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ऊपर-बाईं ओर का सर्च बार) खोलें, **Calendars** विस्तृत करें, और **Approvals** पर क्लिक करें। लंबित बुकिंग अनुरोध और समीक्षा की प्रतीक्षा कर रहे इवेंट यहाँ सूचीबद्ध होते हैं। ऊपर के **Pending** और **History** बटन से उन अनुरोधों के बीच स्विच करें जिन पर अभी निर्णय बाकी है और जिन पर निर्णय हो चुका है।
 
-## Booking Requests
+## बुकिंग अनुरोध
 
-जब एक group एक event बनाता है और एक room या resource का request करता है, तो request **Room & Resource Requests** section में दिखाई देता है। प्रत्येक row दिखाता है:
+जब कोई समूह इवेंट बनाता है और कमरा या संसाधन माँगता है, तो अनुरोध **Room & Resource Requests** सेक्शन में दिखता है। हर पंक्ति में दिखता है:
 
-- Event का नाम और date/time
-- Requested किया जा रहा room या resource (multi-unit resources के लिए quantity के साथ)
-- एक status badge जो दिखाता है कि request में conflicts हैं या नहीं
+- इवेंट का नाम और तारीख/समय
+- माँगा गया कमरा या संसाधन (बहु-इकाई संसाधनों के लिए मात्रा के साथ)
+- **Requested by**, जिसने अनुरोध किया, उसके रिकॉर्ड से जुड़ा हुआ
+- एक स्टेटस बैज जो बताता है कि अनुरोध में टकराव है या नहीं
 
-### Conflict Indicators
+### टकराव संकेतक
 
-यदि एक request उसी room या resource की किसी दूसरी booking या blockout के साथ overlap करती है, तो उसकी status पर **Conflicts** badge दिखाई देता है; विवरण देखने के लिए उस पर hover करें। जिन requests में कोई overlap नहीं है उन पर **No conflicts** दिखता है। किसी एक को approve करने से पहले conflicting requests को सावधानीपूर्वक review करें।
+अगर कोई अनुरोध उसी कमरे या संसाधन की किसी दूसरी बुकिंग या ब्लॉकआउट से overlap करता है, तो उसके स्टेटस पर **Conflicts** बैज दिखता है; विवरण देखने के लिए उस पर होवर करें। जिन अनुरोधों में overlap नहीं है, उन पर **No conflicts** दिखता है। किसी भी एक को स्वीकृत करने से पहले टकराव वाले अनुरोधों की ध्यान से समीक्षा करें।
 
-### Approving या Rejecting
+### स्वीकृत या अस्वीकृत करना
 
-किसी भी booking request पर **Approve** या **Reject** पर क्लिक करें (reject करने से पहले पुष्टि मांगी जाती है)। Requesting group को निर्णय की notification मिलती है। Approved bookings उस room या resource के लिए event के लिए locked होते हैं; rejected bookings दूसरों के लिए slot को free करते हैं।
+किसी भी बुकिंग अनुरोध पर **Approve** या **Reject** पर क्लिक करें (अस्वीकृत करने से पहले पुष्टि माँगी जाएगी)। अनुरोधकर्ता को निर्णय की सूचना मिलती है। स्वीकृत बुकिंग उस इवेंट के लिए उस कमरे या संसाधन पर बंद हो जाती है; अस्वीकृत बुकिंग से वह स्लॉट दूसरों के लिए खुल जाता है।
 
-जब आप **Approve** पर क्लिक करते हैं, एक **Approve booking** dialog खुल जाता है ताकि आप एक ही step में event को भी publish कर सकें:
+जब आप **Approve** पर क्लिक करते हैं, तो **Approve booking** डायलॉग खुलता है, ताकि आप उसी चरण में इवेंट को भी प्रकाशित कर सकें:
 
-1. **Publish to public calendar** को check करें ताकि event को अपने group के calendar पर public बनाया जा सके। Unchecked छोड़ें ताकि event की visibility को change किए बिना booking को approve किया जा सके।
-2. एक बार **Publish to public calendar** को check कर दिया जाए, तो आप optionally **Also add to calendar** से एक curated calendar चुन सकते हैं ताकि event को एक भी अपने [curated calendars](./curated-calendar.md) में जोड़ा जा सके। इसे **None** पर सेट करके छोड़ें ताकि यह skip किया जा सके। (यह option केवल तब दिखाई देता है यदि आपके पास **content.edit** अनुमति है।)
+1. इवेंट को उसके समूह के सार्वजनिक कैलेंडर पर सार्वजनिक करने के लिए **Publish to public calendar** चेक करें। बुकिंग स्वीकृत करते समय इवेंट की दृश्यता बदले बिना छोड़ने के लिए इसे अनचेक रहने दें।
+2. **Publish to public calendar** चेक होने के बाद, आप चाहें तो **Also add to calendar** से कोई [क्यूरेटेड कैलेंडर](./curated-calendar.md) चुन सकते हैं, ताकि इवेंट उसमें भी जुड़ जाए। इसे छोड़ने के लिए **None** पर रहने दें। (यह विकल्प केवल तभी दिखता है जब आपके पास **content.edit** अनुमति हो।)
 3. **Approve** पर क्लिक करें।
 
-## Pending Events
+## लंबित इवेंट
 
-यदि आपकी calendar workflow events को events को public के लिए visible होने से पहले approval की आवश्यकता है, तो pending events **Event Requests** section में दिखाई देते हैं। Calendar पर event publish करने के लिए **Approve** पर क्लिक करें, या submitter को notify करने के लिए **Reject** पर क्लिक करें कि changes की आवश्यकता है।
+अगर आपके कैलेंडर वर्कफ़्लो में इवेंट्स के सार्वजनिक होने से पहले स्वीकृति चाहिए, तो लंबित इवेंट **Event Requests** सेक्शन में दिखते हैं। इवेंट को कैलेंडर पर प्रकाशित करने के लिए **Approve** पर क्लिक करें, या सबमिट करने वाले को बदलाव की ज़रूरत बताने के लिए **Reject** पर क्लिक करें।
 
 :::tip
-एक room पर Approval Group को [Rooms & Resources](./rooms-resources.md) में setup करें ताकि उस room के लिए approval की requirement दी जा सके। Access वाले groups तब events बनाते समय room को request कर सकते हैं, और वह requests इस page में flow करते हैं।
+[Rooms & Resources](./rooms-resources.md) में किसी कमरे पर Approval Group सेट करें, ताकि उस कमरे के लिए स्वीकृति अनिवार्य हो जाए। जिन समूहों को पहुँच है, वे इवेंट बनाते समय उस कमरे का अनुरोध कर सकते हैं, और वे अनुरोध इसी पेज पर आते हैं।
 :::
 
-## संबंधित आलेख
+## History
 
-- [Rooms, Resources & Scheduling](./rooms-resources.md) — bookable rooms और resources को कॉन्फ़िगर करें
-- [Creating Calendars](./creating-calendars.md) — calendars और events को manage करें
+स्वीकृत और अस्वीकृत अनुरोध पेज पर बने रहते हैं। उन्हें देखने के लिए Approvals के ऊपर **History** पर क्लिक करें; खुले अनुरोधों पर लौटने के लिए **Pending** पर क्लिक करें।
+
+- **Room & Resource Requests** में हर निर्णय वाली बुकिंग दिखती है, जिसमें इवेंट, कमरा या संसाधन, **Requested by**, एक **Approved** या **Rejected** बैज, और **Decided** शामिल हैं। **Decided** दिखाता है कि निर्णय किसने और किस तारीख को लिया। सबसे हाल में निर्णय वाले अनुरोध सबसे ऊपर होते हैं।
+- **Event Requests** में हर निर्णय वाला इवेंट उसके विवरण, **Requested by**, और एक **Approved** या **Rejected** बैज के साथ दिखता है। इवेंट अनुरोधों पर किसने और कब निर्णय लिया, यह रिकॉर्ड नहीं होता, इसलिए इवेंट के लिए यह कॉलम नहीं दिखाया जाता।
+
+किसी व्यक्ति का रिकॉर्ड खोलने के लिए **Requested by** के अंतर्गत उसके नाम पर क्लिक करें।
+
+## संबंधित लेख
+
+- [कमरे, संसाधन और शेड्यूलिंग](./rooms-resources.md) — बुक करने योग्य कमरे और संसाधन कॉन्फ़िगर करें
+- [कैलेंडर बनाना](./creating-calendars.md) — कैलेंडर और इवेंट प्रबंधित करें

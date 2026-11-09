@@ -33,7 +33,7 @@ I-click ang alinmang submission para makita ang buong detalye. Makikita mo ang l
 
 I-click ang **print icon** sa tabi ng submission para i-print ang mga sagot na pinunan ng taong iyon -- kapaki-pakinabang para sa papel na file o para sa nilagdaang release na kailangan mong itago. Ang printout ay magpapakita ng logo ng iyong simbahan (ang **Light Background Logo** mula sa [Website > Appearance](../website/appearance.md), kung nag-upload ka na nito) na nasa gitna sa itaas, na may pangalan ng simbahan sa ilalim. Laging madilim na teksto sa puting pahina ang nasa mga printout, kahit gamitin mo ang B1 Admin sa dark mode. Hiwalay ito sa [pag-print ng blangkong form](./creating-forms.md#printing-a-blank-form); ang mga naka-print ay ang nasagot na ng isang tao, hindi isang walang lamang kopya. Lumalabas ang print icon kahit saan ipinapakita ang isang submission, kasama na sa [profile ng isang tao](../people/adding-people.md#working-with-forms).
 
-## Pagpapalit ng Tao sa Isang Submission
+## Pagpapalit ng Tao sa Isang Submission {#changing-the-person-on-a-submission}
 
 Kung naka-link ang isang submission sa maling tao -- halimbawa, dalawang miyembro ng pamilya ang nagbabahagi ng email address -- maaari mo itong ilipat sa tamang tao o i-unlink.
 

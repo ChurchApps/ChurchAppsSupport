@@ -1,50 +1,54 @@
 ---
-title: "Sfogliare i Gruppi"
-description: "Sfoglia i gruppi pubblici della tua chiesa su B1.church per categoria, poi controlla orari, luoghi e descrizioni su ogni scheda per trovare quello giusto."
+title: "Sfogliare i gruppi"
+description: "Sfoglia i gruppi pubblici della chiesa su B1.church per categoria, poi controlla orari, luoghi e descrizioni su ogni scheda per trovare quello più adatto."
 ---
 
-# Sfogliare i Gruppi
+# Sfogliare i gruppi
 
 <div class="article-intro">
 
-La pagina pubblica dei gruppi della tua chiesa rende facile scoprire gruppi che ti interessano. I gruppi sono organizzati per categoria, così puoi scorrere rapidamente i diversi tipi di gruppi e trovare quello giusto per te.
+La pagina pubblica dei gruppi della chiesa rende facile scoprire gruppi che ti interessano. I gruppi sono organizzati per categoria, così puoi scorrere rapidamente i diversi tipi di gruppi e trovare quello giusto per te.
 
 </div>
+
+## Video di formazione
+
+<YouTube id="2tDaqvzhrng" title="Joining a Group and Chatting With It" next="Responding to a Serving Request in B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Non è necessario effettuare l'accesso per sfogliare i gruppi. Tuttavia, [effettuare l'accesso](../getting-started/logging-in.md) ti dà accesso a funzionalità aggiuntive nella pagina di dettaglio di ogni gruppo.
+- Non serve effettuare l'accesso per sfogliare i gruppi. Tuttavia, [effettuare l'accesso](../getting-started/logging-in.md) ti dà accesso a funzionalità aggiuntive nella pagina di dettaglio di ogni gruppo.
 
 </div>
 
-## Trovare la Pagina dei Gruppi
+## Trovare la pagina dei gruppi
 
-Naviga alla pagina **Gruppi** sul sito B1.church della tua chiesa. Questa pagina è accessibile pubblicamente, quindi non è necessario effettuare l'accesso per sfogliare.
+Vai alla pagina **Gruppi** sul sito B1.church della chiesa. Questa pagina è accessibile pubblicamente, quindi non devi effettuare l'accesso per sfogliarla.
 
-## Come Sono Organizzati i Gruppi
+## Come sono organizzati i gruppi
 
-I gruppi sono visualizzati per **categoria** (chiamata anche etichetta). Le categorie sono configurate dagli amministratori della tua chiesa e possono includere etichette come "Piccoli Gruppi", "Ministeri", "Giovani" o "Studi Biblici". Ogni categoria mostra tutti i gruppi che le appartengono.
+I gruppi sono mostrati per **categoria** (chiamata anche etichetta). Le categorie sono configurate dagli amministratori della chiesa e possono includere etichette come "Piccoli gruppi", "Ministeri", "Giovani" o "Studi biblici". Ogni categoria mostra tutti i gruppi che le appartengono.
 
-## Leggere le Schede dei Gruppi
+## Leggere le schede dei gruppi
 
-Ogni gruppo è visualizzato come una scheda con le seguenti informazioni:
+Ogni gruppo è mostrato come una scheda con le seguenti informazioni:
 
-- **Foto del gruppo** -- Un'immagine di copertina che rappresenta il gruppo. Se nessuna foto è stata impostata, viene mostrata un'immagine predefinita.
-- **Nome del gruppo** -- Visualizzato in evidenza sopra la foto.
-- **Orario di incontro** -- Quando il gruppo si incontra tipicamente (ad esempio, "Mercoledì alle 19:00"). Se nessun orario è impostato, viene mostrato un segnaposto.
-- **Luogo di incontro** -- Dove si incontra il gruppo. Se nessun luogo è impostato, viene mostrato un segnaposto.
-- **Descrizione** -- Un'anteprima breve di cosa tratta il gruppo, limitata a poche righe. Clicca sul gruppo per leggere la descrizione completa.
+- **Foto del gruppo** -- Un'immagine di copertina che rappresenta il gruppo. Se non è stata impostata alcuna foto, viene mostrata un'immagine predefinita.
+- **Nome del gruppo** -- Mostrato in evidenza sopra la foto.
+- **Orario di incontro** -- Quando il gruppo di solito si incontra (ad esempio "Mercoledì alle 19:00"). Se non è impostato alcun orario, viene mostrato un segnaposto.
+- **Luogo di incontro** -- Dove si incontra il gruppo. Se non è impostato alcun luogo, viene mostrato un segnaposto.
+- **Descrizione** -- Un'anteprima breve di cosa tratta il gruppo, limitata a poche righe. Fai clic sul gruppo per leggere la descrizione completa.
 
-## Visualizzare un Gruppo
+## Visualizzare un gruppo
 
-Clicca su qualsiasi scheda di gruppo per aprire la pagina completa di dettaglio del gruppo. Lì troverai la descrizione completa, informazioni sui leader del gruppo, gli eventi in calendario e un modo per metterti in contatto.
+Fai clic su una scheda di gruppo qualsiasi per aprire la pagina completa di dettaglio. Lì trovi la descrizione completa, le informazioni sui leader del gruppo, gli eventi in calendario e un modo per metterti in contatto.
 
 :::tip
-Se stai cercando un tipo specifico di gruppo, scorri prima le intestazioni delle categorie. Questo ti aiuta ad andare direttamente alla sezione che ti interessa piuttosto che scorrere attraverso ogni gruppo.
+Se stai cercando un tipo specifico di gruppo, scorri prima le intestazioni delle categorie. Così puoi andare direttamente alla sezione che ti interessa invece di scorrere tutti i gruppi.
 :::
 
-## Prossimi Passi
+## Passi successivi
 
-- [Dettagli del Gruppo](./group-details.md) -- Scopri cosa troverai nella pagina di dettaglio del gruppo
-- [Conversazioni del Gruppo](./conversations.md) -- Scopri come partecipare alle discussioni di gruppo una volta che ti sei unito
+- [Dettagli del gruppo](./group-details.md) -- scopri cosa trovi nella pagina di dettaglio del gruppo
+- [Conversazioni di gruppo](./conversations.md) -- scopri come partecipare alle discussioni di gruppo una volta iscritto

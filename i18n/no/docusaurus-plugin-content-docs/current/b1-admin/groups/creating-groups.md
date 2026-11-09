@@ -1,13 +1,13 @@
 ---
 title: "Opprette grupper"
-description: "Opprett en ny gruppe i B1 Admin, fra valg av kategori og navn til påmeldingsregler, merkelapper, meldinger og innstillinger for oppmøte."
+description: "Sett opp en ny gruppe i B1 Admin, fra valg av kategori og navn til påmeldingsregler, merkelapper, meldinger og innstillinger for oppmøte."
 ---
 
 # Opprette grupper
 
 <div class="article-intro">
 
-Å opprette en gruppe i B1 Admin er enkelt. Du setter opp en kategori, gir gruppen et navn, og konfigurerer deretter innstillingene. Grupper hjelper deg å organisere kirken i meningsfulle enheter, som smågrupper, komiteer og klasser.
+Å opprette en gruppe i B1 Admin er enkelt. Du setter opp en kategori, gir gruppen et navn, og konfigurerer deretter innstillingene. Grupper hjelper deg å organisere menigheten i meningsfulle enheter, som smågrupper, komiteer og klasser.
 
 </div>
 
@@ -26,7 +26,7 @@ description: "Opprett en ny gruppe i B1 Admin, fra valg av kategori og navn til 
 ## Legge til en ny gruppe
 
 1. Åpne [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Personer** og klikk **Grupper**.
-2. Klikk **Legg til gruppe** i sidehodet. Et skjema for **ny gruppe** åpnes under listen. Skriv inn et **kategorinavn**. Kategorier hjelper deg å samle beslektede grupper (for eksempel «Smågrupper», «Tjenester» eller «Komiteer»). Hvis en kategori allerede finnes, kan du velge den fra listen.
+2. Klikk **Legg til gruppe** i sidehodet. Et skjema for **Ny gruppe** åpnes under listen. Skriv inn et **kategorinavn**. Kategorier hjelper deg å samle beslektede grupper (for eksempel «Smågrupper», «Tjenester» eller «Komiteer»). Hvis en kategori allerede finnes, kan du velge den fra listen.
 3. Skriv inn gruppens **navn**.
 4. Klikk **Legg til**. Den nye gruppen vises i listen, med kategorien vist under navnet.
 
@@ -43,16 +43,16 @@ Når gruppen er opprettet, kan du fylle inn flere detaljer:
      - **Åpen** -- Alle kan bli med med en gang uten godkjenning
      - **Forespørsel** -- Personer må sende en påmeldingsforespørsel som krever godkjenning (se [Forespørsler om å bli med i grupper](./group-join-requests.md))
      - **Lukket** -- Medlemmer må legges til manuelt av ledere eller administratorer
-   - **Merkelapper** -- Tilordne én eller flere beskrivende merkelapper til gruppen (for eksempel «Fysisk til stede», «Digitalt», «Nye medlemmer velkommen»). Merkelapper er frie etiketter du definerer; kryss av for alle som passer. Merkelapper kan brukes til å filtrere grupper i nettstedselementet Gruppeoversikt.
-   - **Konfidensiell gruppe** -- Skjul denne gruppen og dens medlemsliste fra offentlige sider, gruppesøket og personer som ikke er medlemmer. Bruk dette for sensitive grupper som rusomsorg eller veiledningstjeneste; bare gruppens medlemmer og kirkens ansatte kan se den.
+   - **Merkelapper** -- Tilordne én eller flere beskrivende merkelapper til gruppen (for eksempel «Fysisk til stede», «Digitalt», «Nye medlemmer velkommen»). Merkelapper er frie etiketter du definerer; kryss av for alle som passer. Merkelapper kan brukes til å filtrere grupper i nettstedselementet Gruppevisning, og et Gruppeliste-element på nettstedet viser gruppene som har én bestemt merkelapp.
+   - **Konfidensiell gruppe** -- Skjul denne gruppen og dens medlemsliste fra offentlige sider, gruppesøket og personer som ikke er medlemmer. Bruk dette for sensitive grupper som rusomsorg eller veiledningstjeneste; bare gruppens medlemmer og menighetens ansatte kan se den.
    - **Diskusjoner** -- Slår gruppens chatstrøm av eller på, der alle medlemmer kan skrive. Påslått som standard.
    - **Kunngjøringer** -- Slår på en andre chatstrøm som bare ledere kan skrive i -- medlemmene kan lese og reagere, men bare ledere kan legge ut innlegg. Påslått som standard.
-   - **Følg oppmøte** -- Slå dette på hvis du vil registrere [oppmøte](../attendance/tracking-attendance.md) for denne gruppen.
-   - **Gudstjenestetider** -- Knytt gruppen til bestemte gudstjenestetider i kirken, hvis det passer. Se [Oppsett for oppmøte](../attendance/setup.md) for detaljer om gudstjenestetider.
+   - **Oppmøteregistrering** -- Slå på dette hvis du vil registrere [oppmøte](../attendance/tracking-attendance.md) for denne gruppen.
+   - **Gudstjenestetider** -- Knytt gruppen til bestemte gudstjenestetider i menigheten, hvis det passer. Se [Oppsett for oppmøte](../attendance/setup.md) for detaljer om gudstjenestetider.
 4. Klikk **Lagre** for å bruke endringene.
 
 :::tip
-Et tydelig beskrivelse og en møtetid hjelper medlemmene å vite hva de kan forvente når de blir med i en gruppe.
+En tydelig beskrivelse og en møtetid hjelper medlemmene å vite hva de kan forvente når de blir med i en gruppe.
 :::
 
 :::info
@@ -91,5 +91,5 @@ Når du har opprettet og konfigurert gruppen din, er du klar til å:
 - **Eksportere data** -- Klikk **Eksporter** over gruppens medlemsliste for å laste den ned.
 
 :::info
-Hver gruppe tilhører en kategori, og hovedsiden for grupper lar deg filtrere listen etter kategori. Du kan når som helst omorganisere eller gi nytt navn til kategoriene etter hvert som kirken vokser.
+Hver gruppe tilhører en kategori, og hovedsiden for grupper lar deg filtrere listen etter kategori. Du kan når som helst omorganisere eller gi nytt navn til kategoriene etter hvert som menigheten vokser.
 :::

@@ -1,13 +1,13 @@
 ---
 title: "Calendario del gruppo"
-description: "Pianifica incontri ed eventi ricorrenti nel calendario di gruppo in B1 Admin e B1.church, con pianificazione in blocco, RSVP e iscrizioni ai calendari."
+description: "Pianifica riunioni ed eventi ricorrenti nel calendario del gruppo in B1 Admin e B1.church, con pianificazione in blocco, conferme di partecipazione e iscrizioni al calendario."
 ---
 
 # Calendario del gruppo
 
 <div class="article-intro">
 
-Ogni gruppo in B1 può avere il proprio calendario degli eventi. I leader del gruppo lo usano per pianificare riunioni, attività ed eventi ricorrenti, mentre tutti i membri possono visualizzare i prossimi eventi e partecipare alle conversazioni che li riguardano. Il calendario tiene il gruppo organizzato e assicura che tutti siano informati su ciò che sta per arrivare.
+Ogni gruppo in B1 può avere il proprio calendario degli eventi. I leader del gruppo lo usano per pianificare riunioni, attività ed eventi ricorrenti, mentre tutti i membri possono vedere i prossimi eventi e partecipare alle conversazioni che li riguardano. Il calendario tiene il gruppo organizzato e assicura che tutti siano informati su ciò che sta per arrivare.
 
 </div>
 
@@ -58,28 +58,30 @@ Per un gruppo che si riunisce ogni sabato, imposta la frequenza su "week" e sceg
 
 ## Creare eventi in blocco in B1 Admin
 
-La pagina del gruppo in B1 Admin ha anche una sezione **Calendar** in cui lo staff può programmare un'intera stagione di riunioni in una sola volta:
+La pagina del gruppo in B1 Admin ha anche una sezione **Calendar** in cui lo staff può pianificare un'intera stagione di riunioni in una volta sola:
 
 1. Apri il gruppo in B1 Admin e, nella sezione **Calendar**, fai clic su **All events**.
 2. Fai clic su **+ Add Events** per aprire la finestra **Add Recurring Events**.
-3. Scegli la pianificazione (settimanale, ogni 2 settimane, mensile o una sola volta), le date della **First Meeting** e dell'**Last Meeting**, e facoltativamente **Skip holidays**.
+3. Scegli la pianificazione (settimanale, ogni 2 settimane, mensile o una sola volta), le date della **First Meeting** e della **Last Meeting**, e facoltativamente **Skip holidays**.
 4. Controlla l'anteprima delle date delle riunioni e deseleziona quelle da saltare.
-5. Lascia selezionata **Allow RSVPs** se vuoi che i membri possano rispondere a questi eventi (vedi sotto), quindi salva.
+5. Lascia selezionata **Allow RSVPs** se vuoi che i membri possano rispondere a questi eventi (vedi sotto), poi salva.
 
-## Conferme di partecipazione (RSVP)
+L'elenco eventi di B1 Admin ha i pulsanti **Upcoming** e **Past** sopra di sé. **Upcoming** mostra gli eventi che non sono ancora finiti, più le serie ricorrenti ancora in corso, dal più vicino. **Past** conserva tutti gli eventi precedenti del gruppo, dal più recente.
+
+## Conferme di partecipazione (RSVP) {#event-rsvps}
 
 Gli eventi di gruppo possono raccogliere conferme di partecipazione -- un **Yes**, **No** o **Maybe** per ogni occorrenza dell'evento.
 
 - **Allow RSVPs** è attivo per impostazione predefinita per gli eventi creati tramite la finestra di inserimento in blocco; deselezionalo per disattivare le risposte per quegli eventi. Gli eventi con le conferme disattivate compaiono come **Disabled** nell'elenco eventi del gruppo.
-- Nell'elenco eventi del gruppo in B1 Admin, ogni evento mostra un riepilogo delle risposte (ad esempio "5 yes · 2 maybe · 1 no"). Fai clic per aprire l'elenco **RSVP Responses**, che mostra chi ha risposto sì, forse e no per quella occorrenza.
+- Nell'elenco eventi del gruppo in B1 Admin, ogni evento mostra un riepilogo delle risposte (ad esempio "5 yes · 2 maybe · 1 no"). Fai clic per aprire il **RSVP Responses**, che elenca chi ha risposto sì, forse o no per quella occorrenza.
 
 :::tip
-Le conferme di partecipazione danno ai leader un conteggio dei partecipanti senza la formalità di una vera iscrizione all'evento. Per eventi a pagamento o con posti limitati, usa invece la [registrazione agli eventi](../calendars/creating-calendars.md#enabling-event-registration).
+Le conferme di partecipazione danno ai leader un conteggio delle presenze senza la formalità di una vera iscrizione all'evento. Per eventi a pagamento o con capienza limitata, usa invece l'[iscrizione agli eventi](../calendars/creating-calendars.md#enabling-event-registration).
 :::
 
 ## Visualizzare il calendario
 
-Il calendario del gruppo offre diverse modalità di visualizzazione:
+Il calendario del gruppo offre più modalità di visualizzazione:
 
 - **Month** -- Vedi l'intero mese a colpo d'occhio.
 - **Week** -- Concentrati sulla settimana in corso.
@@ -90,13 +92,13 @@ Passa da una vista all'altra usando i pulsanti in cima al calendario.
 
 ## Dettagli degli eventi e conversazioni
 
-Fai clic su un evento qualsiasi per visualizzarne i dettagli. Dalla vista dei dettagli dell'evento:
+Fai clic su un evento per vederne i dettagli. Dalla vista dei dettagli dell'evento:
 
 - **I membri e i leader** possono avviare conversazioni e lasciare commenti sull'evento.
-- **I leader** possono modificare i dettagli dell'evento, cambiare gli orari o eliminare l'evento.
+- **I leader** possono modificare i dettagli dell'evento, cambiarne gli orari o eliminarlo.
 
 :::warning
-Eliminare un evento lo rimuove in modo permanente. Se devi annullare una singola occorrenza di un evento ricorrente, considera invece di modificarlo.
+Eliminare un evento lo rimuove in modo definitivo. Se devi annullare una singola occorrenza di un evento ricorrente, considera invece di modificarlo.
 :::
 
 ## Iscriversi al calendario

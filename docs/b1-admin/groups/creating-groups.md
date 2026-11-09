@@ -43,7 +43,7 @@ Once your group is created, you can fill in additional details:
      - **Open** -- Anyone can join immediately without approval
      - **Request** -- People must submit a join request that requires approval (see [Group Join Requests](./group-join-requests.md))
      - **Closed** -- Members must be added manually by leaders or administrators
-   - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply. Labels can be used to filter groups in the Groups Browser website element.
+   - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply. Labels can be used to filter groups in the Groups Browser website element, and a Group List website element shows the groups that carry one label.
    - **Confidential group** -- Hide this group and its roster from public pages, the group finder, and non-members. Use this for sensitive groups like recovery or counseling ministries; only the group's members and church staff can see it.
    - **Discussions** -- Turns the group's chat feed on or off, where any member can post. On by default.
    - **Announcements** -- Turns on a second, leader-only chat feed -- members can read and react, but only leaders can post. On by default.

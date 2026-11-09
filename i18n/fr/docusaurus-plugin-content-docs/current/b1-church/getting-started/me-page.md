@@ -27,7 +27,7 @@ Touchez **Plus** dans la barre d'onglets, puis touchez **Moi** sous **Compte**. 
 
 Si vous êtes déconnecté, vous verrez « Connectez-vous pour voir votre semaine » et un bouton **Se connecter** à la place.
 
-## À venir
+## À venir {#upcoming}
 
 La section **À venir** affiche vos trois prochains éléments par ordre de date, chacun accompagné d'un badge de type. Si vous en avez davantage, touchez **Tout ce qui est à venir** pour voir la liste complète, et **Retour à Moi** pour revenir.
 

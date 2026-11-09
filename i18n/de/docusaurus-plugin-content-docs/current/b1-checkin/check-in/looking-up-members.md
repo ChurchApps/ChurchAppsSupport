@@ -70,7 +70,7 @@ Wenn Ihre Kirche die QR-Gastregistrierung aktiviert hat, wird unter dem Suchfeld
 Das Formular, das mit **Hier registrieren** geöffnet wurde, bleibt auf der Gastregistrierungsseite – Besucher können nicht zu anderen Teilen der Kirchenwebseite vom Kiosk aus navigieren. Wenn 2 Minuten lang niemand das Formular berührt oder beschriftet, schließt der Kiosk es und kehrt zum Suchbildschirm zurück. Jedes Mal, wenn das Formular geschlossen wird, wird alles, was darin eingegeben wurde, gelöscht, damit die nächste Familie mit einem leeren Formular beginnt.
 :::
 
-## Name-Tags für eine Telefonanmeldung drucken
+## Name-Tags für eine Telefonanmeldung drucken {#printing-labels-for-a-phone-check-in}
 
 Familien, die sich bereits über [B1 Church Selbstanmeldung](../../b1-church/checkin/self-checkin.md) auf ihrem Telefon angemeldet haben, können ihre Name-Tags am Kiosk drucken, ohne sich selbst zu suchen.
 

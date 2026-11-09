@@ -33,7 +33,7 @@ Haz clic en cualquier envío para ver todos los detalles. Verás todas las respu
 
 Haz clic en el **ícono de impresión** junto al envío para imprimir las respuestas completadas de esa persona, útil para un archivo en papel o una autorización firmada que necesitas tener a mano. La impresión muestra el logotipo de tu iglesia (el **Logotipo para fondo claro** de [Sitio web > Apariencia](../website/appearance.md), si lo has subido) centrado en la parte superior, con el nombre de tu iglesia debajo. Las impresiones siempre usan texto oscuro sobre fondo blanco, incluso si usas B1 Admin en modo oscuro. Esto es diferente de [imprimir un formulario en blanco](./creating-forms.md#printing-a-blank-form): imprime las respuestas ya enviadas por una persona, no una copia vacía. El mismo ícono de impresión aparece en cualquier lugar donde se muestre un envío, incluido el [perfil de una persona](../people/adding-people.md#working-with-forms).
 
-## Cambiar la persona asociada a un envío
+## Cambiar la persona asociada a un envío {#changing-the-person-on-a-submission}
 
 Si un envío está vinculado a la persona equivocada, por ejemplo cuando dos miembros de una familia comparten una dirección de correo electrónico, puedes moverlo a la persona correcta o desvincularlo.
 

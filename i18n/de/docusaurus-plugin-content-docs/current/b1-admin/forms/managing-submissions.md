@@ -33,7 +33,7 @@ Klicken Sie auf eine beliebige Eingabe, um alle Details anzuzeigen. Sie sehen al
 
 Klicken Sie neben der Eingabe auf das **Druckersymbol**, um die ausgefüllten Antworten dieser Person zu drucken – nützlich für eine Papierablage oder eine unterschriebene Einverständniserklärung, die Sie aufbewahren müssen. Der Ausdruck zeigt oben mittig das Logo Ihrer Gemeinde (das **Light Background Logo** aus [Website > Appearance](../website/appearance.md), falls Sie eines hochgeladen haben) mit dem Namen Ihrer Gemeinde darunter. Ausdrucke erscheinen immer mit dunkler Schrift auf weißem Papier, auch wenn Sie B1 Admin im Dunkelmodus verwenden. Das ist unabhängig vom [Drucken eines leeren Formulars](./creating-forms.md#printing-a-blank-form); hier wird nur die bereits eingereichte Antwort einer Person gedruckt, nicht eine leere Kopie. Das Druckersymbol erscheint überall dort, wo eine Eingabe angezeigt wird, auch im [Profil einer Person](../people/adding-people.md#working-with-forms).
 
-## Die Person einer Eingabe ändern
+## Die Person einer Eingabe ändern {#changing-the-person-on-a-submission}
 
 Wenn eine Eingabe der falschen Person zugeordnet ist – etwa weil zwei Familienmitglieder dieselbe E-Mail-Adresse verwenden –, können Sie sie der richtigen Person zuordnen oder die Verknüpfung lösen.
 

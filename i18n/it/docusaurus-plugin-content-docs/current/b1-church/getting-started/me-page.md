@@ -27,7 +27,7 @@ Tocca **Altro** nella barra delle schede, poi tocca **Me** sotto **Account**. La
 
 Se non hai effettuato l'accesso, vedrai il messaggio "Accedi per vedere la tua settimana" e un pulsante **Accedi**.
 
-## In arrivo
+## In arrivo {#upcoming}
 
 La sezione **In arrivo** elenca i tuoi prossimi tre elementi in ordine di data, ognuno con un'etichetta del tipo. Se ne hai di più, tocca **Tutti gli elementi in arrivo** per vedere l'elenco completo, e **Torna a Me** per tornare indietro.
 

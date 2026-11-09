@@ -40,7 +40,7 @@ Sinusuri rin ng validation ang lahat ng plano mo nang sabay-sabay. Kung nakatala
 Hindi mo kailangang gawin ang anuman para patakbuhin ang validation. Awtomatiko itong nag-a-update tuwing magdaragdag o magbabago ka ng assignment. Bantayan lang ang panel habang binubuo mo ang plano.
 :::
 
-## Pag-abiso sa mga Boluntaryo
+## Pag-abiso sa mga Boluntaryo {#notifying-volunteers}
 
 Kapag handa na ang plano mo, maaari mong abisuhan ang lahat ng nakatalagang boluntaryo nang sabay-sabay mula mismo sa validation panel.
 

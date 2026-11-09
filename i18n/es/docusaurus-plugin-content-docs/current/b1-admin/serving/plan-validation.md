@@ -40,7 +40,7 @@ La validación también revisa todos sus planes a la vez. Si el mismo voluntario
 No necesita hacer nada para ejecutar la validación: se actualiza automáticamente cada vez que agrega o modifica una asignación. Solo tenga un ojo puesto en el panel mientras construye el plan.
 :::
 
-## Notificar a los voluntarios
+## Notificar a los voluntarios {#notifying-volunteers}
 
 Una vez que el plan está listo, puede notificar a todos los voluntarios asignados de una sola vez desde el panel de validación.
 

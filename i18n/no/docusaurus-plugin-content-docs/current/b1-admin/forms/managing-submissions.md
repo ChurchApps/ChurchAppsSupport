@@ -33,7 +33,7 @@ Klikk på en hvilken som helst innsending for å se alle detaljene. Du ser alle 
 
 Klikk på **utskriftsikonet** ved siden av innsendingen for å skrive ut personens utfylte svar -- nyttig for en papirmappe eller en signert frigivelse du må ha tilgjengelig. Utskriften viser menighetens logo (**Light Background Logo** fra [Website > Appearance](../website/appearance.md), hvis du har lastet opp en) midtstilt øverst, med menighetens navn under. Utskrifter bruker alltid mørk tekst på hvit bakgrunn, selv om du bruker B1 Admin i mørk modus. Dette er atskilt fra [utskrift av et tomt skjema](./creating-forms.md#printing-a-blank-form); det skriver ut svarene til én person som allerede er sendt inn, ikke en tom kopi. Det samme utskriftsikonet vises overalt der en innsending vises, også på [en persons profil](../people/adding-people.md#working-with-forms).
 
-## Endre personen på en innsending
+## Endre personen på en innsending {#changing-the-person-on-a-submission}
 
 Hvis en innsending er knyttet til feil person -- for eksempel hvis to familiemedlemmer deler en e-postadresse -- kan du flytte den til riktig person, eller koble den fra.
 

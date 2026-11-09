@@ -1,22 +1,26 @@
 ---
 title: "Pianificare le lezioni da Lessons.church in B1 Admin"
 sidebar_label: "Pianificare le lezioni"
-description: "Collega Lessons.church a B1 Admin, poi programma le lezioni, pianifica in blocco una serie o applica un piano annuale ai piani di culto di un ministero."
+description: "Collega Lessons.church a B1 Admin, poi pianifica le lezioni, programma in blocco una serie o applica un piano annuale ai piani di servizio di un ministero."
 ---
 
 # Pianificare le lezioni da Lessons.church
 
 <div class="article-intro">
 
-B1 Admin si integra direttamente con [Lessons.church](https://lessons.church) così puoi pianificare il curriculum per le tue aule direttamente all'interno dei tuoi piani di servizio. In questo modo tutto -- volontari, assegnazioni e contenuti delle lezioni -- resta in un unico posto.
+B1 Admin si integra direttamente con [Lessons.church](https://lessons.church), così puoi pianificare il curriculum per le tue aule direttamente all'interno dei piani di servizio. In questo modo tutto -- volontari, assegnazioni e contenuti delle lezioni -- resta in un unico posto.
 
 </div>
+
+## Video di formazione
+
+<YouTube id="29DVkNF4UsY" title="Reusing a Lesson Trim for Every Week in B1" next="Plan Templates, Tasks, and Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
 - Configura i tuoi ministeri nell'area Serving
-- Disponi di un account attivo su [Lessons.church](https://lessons.church) -- se la tua chiesa non ne ha ancora uno, registrati prima lì
+- Disponi di un account attivo su [Lessons.church](https://lessons.church) -- se la chiesa non ne ha ancora uno, registrati prima lì
 
 </div>
 
@@ -31,7 +35,7 @@ Questa operazione va fatta una sola volta per ogni ministero. Devi collegare il 
 1. Accedi a [B1 Admin](https://admin.b1.church/) e vai su **Serving**
 2. Apri il ministero che vuoi collegare (ad esempio Children's Ministry)
 3. Scorri fino alla sezione **Content Providers**
-4. Clicca su **Link New Provider**
+4. Fai clic su **Link New Provider**
 5. Seleziona **Lessons.church** dall'elenco
 6. Comparirà una schermata di autorizzazione del dispositivo con un codice
 7. Vai su [lessons.church](https://lessons.church), accedi e inserisci il codice per autorizzare la connessione
@@ -48,10 +52,10 @@ Lessons.church non è l'unica opzione. Lo stesso elenco **Link New Provider** of
 Una volta collegato, puoi pianificare le lezioni direttamente da Plans.
 
 1. In B1 Admin, vai su **Serving → Plans**
-2. Seleziona la scheda del tuo ministero e clicca su **Add Plan Type** (oppure **Create Plan Type** se il ministero non ne ha ancora) -- assegna al tipo di piano un nome come Children's Church o Sunday School
-3. Clicca sul tipo di piano appena creato e poi su **Schedule Lesson**. Da questo menu puoi pianificare una singola lezione, pianificare in blocco una serie oppure usare **Apply Year Plan** per inserire una sequenza annuale pubblicata da Lessons.church.
+2. Seleziona la scheda del tuo ministero e fai clic su **Add Plan Type** (oppure **Create Plan Type** se il ministero non ne ha ancora) -- assegna al tipo di piano un nome come Children's Church o Sunday School
+3. Fai clic sul tipo di piano appena creato e poi su **Schedule Lesson**. Da questo menu puoi pianificare una singola lezione, pianificare in blocco una serie oppure usare **Apply Year Plan** per inserire una sequenza annuale pubblicata da Lessons.church.
 4. Seleziona la **data** della lezione (predefinita alla prossima domenica)
-5. Clicca su **Select Lesson** -- si apre una finestra per sfogliare i contenuti
+5. Fai clic su **Select Lesson** -- si apre una finestra per sfogliare i contenuti
 6. La finestra si apre con **Lessons.church** selezionato come provider (oppure con il provider usato per le lezioni precedenti di questo tipo di piano). Se hai collegato altri provider, puoi passare dall'uno all'altro in cima alla finestra
 7. Sfoglia i contenuti:
    - Seleziona un **Program** (ad esempio "Bible Stories for Kids")
@@ -60,12 +64,12 @@ Una volta collegato, puoi pianificare le lezioni direttamente da Plans.
    - Seleziona il **Venue** -- ovvero la versione della lezione per la fascia d'età
 
    Gli altri provider organizzano i contenuti in modo diverso. Ad esempio, **Go Curriculum** parte da **Elementary** o **Preschool**, poi una serie, poi la lezione stessa -- non c'è un Venue da scegliere.
-8. Clicca su **Associate Lesson** per confermare
+8. Fai clic su **Associate Lesson** per confermare
 9. Scegli l'**opzione di copia** per i volontari:
    - **Nothing** -- piano nuovo, nessun volontario riportato
    - **Positions Only** -- copia i ruoli dei volontari dal piano precedente ma non chi è assegnato
    - **Positions and Assignments** -- copia sia i ruoli sia i volontari assegnati *(la più comune)*
-10. Clicca su **Save**
+10. Fai clic su **Save**
 
 Il piano viene creato e denominato automaticamente (ad esempio "Feb 23 - Elementary"). I volontari possono aprire il piano per vedere le proprie assegnazioni e rivedere i contenuti della lezione prima di domenica.
 
@@ -73,17 +77,33 @@ Il piano viene creato e denominato automaticamente (ad esempio "Feb 23 - Element
 Assicurati di selezionare il **Venue** corretto per la fascia d'età della tua aula. Scegliere il Venue sbagliato significa che i tuoi volontari vedranno contenuti pensati per un livello d'età diverso.
 :::
 
-## Pianificazione in blocco di una serie
+## Pianificare in blocco una serie
 
-Per pianificare più lezioni della stessa serie in una volta sola, clicca su **Schedule Lesson → Bulk Schedule**:
+Per pianificare più lezioni della stessa serie in una volta sola, fai clic su **Schedule Lesson → Bulk Schedule**:
 
-1. Sotto **Starting Lesson**, clicca su **Select Lesson** e scegli la prima lezione da pianificare
+1. Sotto **Starting Lesson**, fai clic su **Select Lesson** e scegli la prima lezione da pianificare
 2. Imposta la **Start Date** e scegli un **Interval** (**Weekly** oppure **Bi-Weekly**)
 3. Scegli cosa copiare dal piano precedente (**Nothing**, **Positions Only** oppure **Positions and Assignments**)
 4. Controlla l'elenco -- la lezione di partenza e il resto della sua serie, ciascuna con una data. Deseleziona quelle che vuoi saltare
-5. Clicca su **Save** per creare un piano per ogni lezione
+5. Fai clic su **Save** per creare un piano per ogni lezione
 
 Per Lessons.church, l'elenco mostra anche il **Venue** che ogni lezione userà, abbinato per nome al Venue scelto per la lezione di partenza (se una lezione non ha quel Venue, ne viene usato un altro e viene contrassegnata come **substituted**). I provider le cui lezioni non hanno un livello Venue, come Go Curriculum, pianificano le lezioni direttamente e la colonna Venue viene nascosta.
+
+## Mantenere solo una parte di ogni lezione
+
+Se la tua aula usa sempre le stesse parti di ogni lezione (ad esempio il video di apertura, il versetto da memorizzare e le domande sulla storia) e il resto lo svolge dal vivo, puoi salvare questa selezione una sola volta per tipo di piano, invece di modificare ogni piano:
+
+1. Apri il piano di una lezione pianificata e fai clic su **Customize**
+2. Elimina le sezioni che non usi, come sei abituato a fare. Per mantenere solo un passaggio di una sezione, come il video del versetto da memorizzare, espandi quella sezione nei suoi passaggi ed eliminane gli altri
+3. Sotto l'ordine del servizio, fai clic su **Use this for every lesson in Elementary** (il link riporta il nome del tuo tipo di piano)
+4. Controlla l'elenco delle parti da mantenere. Lascia selezionato **Also trim the upcoming lessons already scheduled** per applicare la selezione anche alle lezioni già pianificate in questo tipo di piano (questo sostituisce il loro ordine del servizio)
+5. Fai clic su **Save**
+
+Da quel momento, ogni lezione pianificata in quel tipo di piano con **Schedule Lesson**, **Bulk Schedule**, **Apply Year Plan** o **Link Lesson** viene creata già ridotta alle stesse parti, così FreePlay riproduce sulla TV dell'aula solo quelle. Le parti vengono abbinate per nome, quindi una sezione rinominata leggermente ("Bible Story Questions" invece di "Big Bible Story Questions") viene comunque trovata. Un passaggio all'interno di una sezione il cui nome cambia ogni settimana, come un video del versetto da memorizzare che prende il nome dal suo riferimento, viene mantenuto in base alla sua posizione nella sezione.
+
+Quando una lezione non rispetta lo schema (una parte manca, non ha un video o un'immagine quella settimana, oppure è stata mantenuta per posizione invece che per nome), il piano viene comunque ridotto a ciò che è stato abbinato e viene contrassegnato: compare un avviso sotto il piano nell'elenco dei piani e in cima alla pagina del piano, e i responsabili del ministero ricevono una notifica. Controlla l'ordine del servizio di quel piano prima di domenica. L'avviso scompare quando modifichi l'ordine del servizio o fai clic su **Dismiss**. Se nulla in una lezione corrisponde, la lezione viene lasciata intera e contrassegnata.
+
+I piani che hanno già un ordine del servizio non vengono modificati quando vengono pianificati. Per cambiare la selezione salvata, personalizza un altro piano e fai clic su **Replace the saved trim for Elementary** (anche qui con il nome del tuo tipo di piano). Per smettere di ridurre le lezioni, apri la finestra **Edit** del tipo di piano e fai clic su **Clear** accanto a **Lesson trim**.
 
 ## Guide per i leader di Go Curriculum
 
@@ -94,10 +114,10 @@ Ogni serie che ha materiale per piccoli gruppi inizia anche con una cartella **S
 
 Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, puoi caricare l'intera sequenza su questo tipo di piano in un solo passaggio:
 
-1. Clicca su **Schedule Lesson → Apply Year Plan**
+1. Fai clic su **Schedule Lesson → Apply Year Plan**
 2. Scegli il piano annuale pubblicato
-3. Se il piano è ancorato al calendario (ad esempio Ark Kids), scegli l'**anno di destinazione**. Gli studi di Pasqua e Natale cadono nelle date di quell'anno. Modifica la data della prima e dell'ultima lezione se stai pianificando solo una parte dell'anno
-4. Se il piano non è ancorato al calendario, imposta la data della prima lezione (la settimana 1 cade in quella data; le settimane successive sono distanziate di sette giorni) e quante settimane generare (12, 24, 44 o 52)
+3. Se il piano è ancorato al calendario (ad esempio Ark Kids), scegli l'**anno di destinazione**. Le lezioni di Pasqua e Natale cadono nelle date di quell'anno. Modifica la data della prima e dell'ultima lezione se stai pianificando solo una parte dell'anno
+4. Se il piano non è ancorato al calendario, imposta la data della prima lezione (la settimana 1 cade in quella data; le settimane successive distano sette giorni l'una dall'altra) e quante settimane generare (12, 24, 44 o 52)
 5. Facoltativamente, copia le posizioni dei volontari dal piano precedente
 6. Visualizza l'anteprima dell'elenco. Deseleziona le settimane che non vuoi -- le lezioni successive in quel periodo si spostano alla domenica libera successiva invece di lasciare un vuoto. Le date che hanno già un piano vengono saltate allo stesso modo per i piani ancorati al calendario
 7. Salva. Ogni settimana diventa un piano di servizio che puoi modificare come al solito -- cambiare la lezione, i volontari o la data -- e FreePlay riprodurrà ciò che si trova nel piano di quella settimana
@@ -108,15 +128,15 @@ Se un editore di curriculum ha pubblicato un piano annuale su Lessons.church, pu
 
 ## Personalizzare i contenuti della lezione
 
-Una volta pianificata una lezione, puoi adattarla alla tua aula specifica -- eliminare le sezioni che non servono, nascondere i ruoli che la tua aula non usa oppure riordinare i contenuti per adattarli al flusso che preferisci. Le personalizzazioni possono essere salvate per una sola aula oppure applicate a tutte le aule della tua chiesa.
+Una volta pianificata una lezione, puoi adattarla alla tua aula specifica -- eliminare le sezioni che non servono, nascondere i ruoli che la tua aula non usa oppure riordinare i contenuti per adattarli al flusso che preferisci. Le personalizzazioni possono essere salvate per una sola aula oppure applicate a tutte le aule della chiesa.
 
 Consulta la guida [Personalizzare le lezioni](/docs/lessons-church/customization/customizing-lessons) per le istruzioni passo passo.
 
-## Riprodurre le lezioni su una TV dell'aula con FreePlay
+## Riprodurre le lezioni sulla TV dell'aula con FreePlay
 
 Pianificare una lezione in B1 Admin si abbina perfettamente con **[FreePlay](/docs/freeplay/)** -- il lettore multimediale gratuito di ChurchApps per le TV delle aule e i Fire Stick. Quando il piano è configurato, FreePlay può prelevare i contenuti della lezione direttamente da Lessons.church e riprodurli a schermo intero in aula. L'insegnante controlla il ritmo con un telecomando della TV, passando da video e diapositive man mano che la lezione procede.
 
-Così i tuoi volontari vedono il piano sul telefono mentre i contenuti vengono riprodotti sulla TV dell'aula -- nessuna configurazione separata, nessuna chiavetta USB, nessun trambusto dell'ultimo minuto.
+Così i volontari vedono il piano sul telefono mentre i contenuti vengono riprodotti sulla TV dell'aula -- nessuna configurazione separata, nessuna chiavetta USB, nessun trambusto dell'ultimo minuto.
 
 [Scopri come collegare FreePlay a un provider di contenuti →](/docs/freeplay/content-providers/connecting-providers)
 
