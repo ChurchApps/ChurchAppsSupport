@@ -40,7 +40,7 @@ Tabs configured here appear in the B1 App, which members can [install as a Progr
    - **Name** -- The label that appears on the tab (for example, "Sermons" or "Give").
    - **Icon** -- Click the icon selector to choose an icon for your tab.
    - **Image** -- Click **Select Image** (or **Change Image**) to give the tab a photo. Tabs with a photo appear as photo tiles on the app's Home screen -- see [Home Screen Tiles](#home-screen-tiles).
-   - **Tab Type** -- Select from options like Bible, Live Stream, Donation, Website, and more.
+   - **Tab Type** -- Select from options like Bible, Live Stream, Donation, Registrations, Requests, Website, and more. **Registrations** opens the member's event registrations; **Requests** opens My Requests, where a member can request an event and see the status of past requests. Set Visibility to Logged-in Users or Members & Staff for these, since they need a signed-in member.
    - **URL** -- Enter the web address the tab should link to.
    - **Visibility** -- Control who can see this tab (everyone, members only, etc.). For a **Member Directory** tab, this only controls who sees the tab itself; who can open the directory is set by **Show in Directory** on the Member portal page (see [Member Directory & Messaging Settings](#member-directory--messaging-settings)).
 3. Click **Save Tab** to add it to your app.
