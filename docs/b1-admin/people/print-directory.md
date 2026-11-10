@@ -27,7 +27,7 @@ The Print Directory feature generates a formatted, printable member directory fo
 4. After about 1.5 seconds, your browser's print dialog will appear automatically.
 
 :::tip
-The directory opens in a separate tab so you can print it without leaving the People page. After the print dialog appears, the tab navigates back automatically.
+The directory opens in a separate tab so you can print it without leaving the People page. After the print dialog closes, that tab switches to the People page, so you can close it or keep working there.
 :::
 
 ## What Gets Included
@@ -51,11 +51,12 @@ The printed directory has two parts:
 ### Cover Page
 
 The first page includes:
+- Your church logo, if one is set
 - Your church name
 - The title "Member Directory"
 - The current year
-- Your church's location
-- A count of total households included
+- Your church's city and state
+- The date it was printed and a count of the households included
 
 ### Member Listings
 
@@ -64,9 +65,9 @@ The remaining pages list households alphabetically by last name. Each household 
 - **Photos** -- Circular thumbnails for each household member, with their name below
 - **Household display name** -- For example, "The Smith Family", "John & Jane Doe", or just the person's name for individuals
 - **Address** -- Street address, city, state, and zip
-- **Phone** -- Home or mobile number
+- **Phone** -- The home number, or a mobile number if no one in the household has a home number
 - **Email** -- Primary email address
-- **Birthdays** -- Formatted as individual dates for each household member
+- **Birthdays** -- Each member's first name and birthday (month and day)
 - **Anniversary** -- If recorded
 
 Households are organized into **alphabetical sections** (A, B, C, ...) with a decorative section header before each letter group. Two household cards appear side by side on each row.

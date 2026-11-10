@@ -23,7 +23,7 @@ Here is an overview of the key features available in the People section:
 
 4. **Add new people** -- Quickly add individuals to your directory and fill in their profile details, contact information, and household connections. See [Adding People](./adding-people.md) for step-by-step instructions.
 
-5. **Bulk edit people** -- Update multiple people at once by changing their membership status, marital status, gender, opt-out preferences, or group memberships. This saves time when making the same change to many individuals. See [Bulk Editing](./bulk-editing.md).
+5. **Bulk edit people** -- Update multiple people at once by changing their membership status, marital status, gender, directory opt-out, campus, or group memberships, or by adding them to a workflow. This saves time when making the same change to many individuals. See [Bulk Editing](./bulk-editing.md).
 
 6. **Print your directory** -- Generate a formatted, printable member directory grouped by household, complete with photos and contact information. See [Print Directory](./print-directory.md).
 
@@ -31,7 +31,9 @@ Here is an overview of the key features available in the People section:
 
 8. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md). The person's name, contact details, and household are on the left of the profile, with summaries of their attendance, giving, groups, notes, and forms beside them. Hover over an address or a home or work phone number to copy it with one click.
 
-9. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
+9. **Catch up on notes** -- Read the latest notes written on people, groups, events, and workflow cards in one list. See [Notes](./notes.md).
+
+10. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
 
 ## Getting Started
 

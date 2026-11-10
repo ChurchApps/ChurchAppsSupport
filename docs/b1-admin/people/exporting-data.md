@@ -26,7 +26,7 @@ The fastest way to export your directory is directly from the **People** page:
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **People**.
 2. Use the search bar or filters to narrow down the results you want to export (or leave it unfiltered to export everyone). See [Searching People](searching-people.md) for tips on filtering.
 3. Click the **Export** button in the People page header.
-4. A CSV file will download to your computer with the people currently in your results, including their name, contact information, address, and other standard fields.
+4. A CSV file named `people.csv` will download to your computer with the people currently in your results, including their name, contact information, address, and other standard fields. If you haven't searched, the export includes your whole directory, even when the page is only showing the first part of it.
 
 :::tip
 The export includes everyone in your current results. Run a search, load a [Saved List](./lists.md), or use **Advanced** search first to export just the people you need.

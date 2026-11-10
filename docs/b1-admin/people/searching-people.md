@@ -55,26 +55,24 @@ In the **Table** view, people are listed by last name, then first name. You can 
 1. Click a **column header** (for example, **Name** or **Email**) to sort by that column.
 2. Click the same header again to reverse the sort order.
 
-This makes it easy to find people alphabetically, by age, or by any other visible column.
+The first click sorts the column in ascending order (A to Z, youngest to oldest, earliest date first), and the arrow beside the header shows the direction. People with no value in that column are always listed last. This makes it easy to find people alphabetically, by age, or by any other visible column.
 
 ## Customizing Columns
 
 Not every piece of information needs to be visible at once. You can choose which columns appear in the table:
 
-1. Click the **Select columns** icon in the People page header. (Columns apply to the **Table** view.)
-2. Check or uncheck columns to show or hide them. Available columns include:
-   - **Photo**
-   - **Name**
-   - **Email**
-   - **Phone**
-   - **Address**
-   - **Birth Date**
-   - **Age**
-   - **Gender**
-   - **Membership Status**
-   - **Campus**
+1. Click the **Select columns** icon in the People page header. (Columns apply to the **Table** view, so checking a column also switches the page to the **Table** view.)
+2. Check or uncheck columns to show or hide them. The **Standard** tab offers:
+   - **Photo** and **Display Name** (shown by default)
+   - **Last Name**, **First Name**, and **Middle Name**
+   - **Address**, **City**, **State/Province**, and **Zip/Postal**
+   - **Primary Email** and **Primary Phone** (the mobile number, or the home or work number when there is no mobile)
+   - **Birth Date**, **Birthday (No Year)**, and **Age**
+   - **Gender**, **Membership Status**, **Campus**, **Marital Status**, and **Anniversary**
+   - **Name Tag Notes**
    - **Date Added** -- when the person's record was created
-3. The table updates immediately to reflect your selections. Click **Done** to close the **Select Columns** dialog.
+   - **Delete Option** -- adds a delete icon to each row (only offered if you can edit people)
+3. The table updates immediately to reflect your selections. Click **Done** (or **Close**) to close the **Select Columns** dialog. B1 remembers your columns on that device.
 
 ### Showing Custom Fields as Columns
 
@@ -97,12 +95,14 @@ For more advanced queries -- like finding everyone who hasn't attended in the la
 
 ## Advanced Search
 
-Advanced Search lets you build precise filters by combining conditions. Open it by clicking **Advanced** below the search box on the People page, then expand a category and check the fields you want to filter on (you can click the field's name or its checkbox), choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact**, **Membership**, **Activity** (donations and attendance), and **Custom Fields**.
+Advanced Search lets you build precise filters by combining conditions. Open it by clicking **Advanced** below the search box on the People page, then expand a category and check the fields you want to filter on (you can click the field's name or its checkbox), choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact Information**, **Membership & Groups** (membership status, campus, date added, and group membership), **Activity** (donations and attendance), and **Custom Fields**.
 
-To find new people, open **Membership** and check **Date Added**. It starts on **in the last N days** with 30 filled in, so you can find everyone added in the last month in one click; change the number of days, or switch to *equals / after / before* to pick a date. **Birth Date** and **Anniversary** also offer **in the last N days**. Date Added is only recorded for people created since late October 2026; people added earlier have no date, so this filter doesn't find them.
+There is no search button: the results update automatically about half a second after you change a filter, and people must match every filter you check. The filters you have turned on appear as chips above the categories -- click the **x** on a chip to remove that filter, or **Clear All** to remove them all. Click **Advanced** again to hide the panel.
+
+To find new people, open **Membership & Groups** and check **Date Added**. It starts on **in the last N days** with 30 filled in, so you can find everyone added in the last month in one click; change the number of days, or switch to *equals / after / before* to pick a date. **Birth Date** and **Anniversary** also offer **in the last N days**. Date Added is only recorded for people created since late October 2026; people added earlier have no date, so this filter doesn't find them.
 
 The **Custom Fields** category lists your church's [Custom Fields](../settings/custom-fields.md) — the fields you define in Settings to track your own information (such as a background-check expiration date). The operators offered match each field's type: text fields support *contains / equals / starts with / ends with*, number fields support the comparison operators, date fields support *equals / after / before*, and Yes/No and Multiple Choice fields let you pick a value. Any field you can filter on here can be saved as a live [List](./lists.md).
 
 ## Saving Searches as Lists
 
-After running a search, a **Save as List** button appears in the People page header. Click it to store your current query under a name and optional category, so you can reload it instantly in future sessions. See [Saved Lists](./lists.md) for full details.
+After running a search that returns at least one person, a **Save as List** button appears in the People page header (for staff who can edit people). Click it to store your current query under a name and optional category, so you can reload it instantly in future sessions. See [Saved Lists](./lists.md) for full details.

@@ -27,8 +27,10 @@ The People section is the foundation of B1 Admin — it's your church's member d
 
 1. Navigate to the B1.church Admin dashboard.
 2. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **People**.
-3. Click the **Add Person** button in the page header. The page scrolls down to the **Add New Person** form below the directory.
-4. Fill in the person's **First Name**, **Last Name**, and **Email**, then click **Add**.
+3. Click the **Add Person** button in the page header. The page scrolls down to the **Add a New Person** form below the directory.
+4. Fill in the person's **First Name** and **Last Name** (both required). Optionally add a **Title**, **Email**, and **Mobile Phone**, then click **Add** (or press **Enter**).
+
+B1 creates a new household for the person, named after their last name.
 
 The person's profile page will open, ready for you to add more details.
 
@@ -38,7 +40,7 @@ If you're migrating from another church management system, the [Import Data](imp
 
 ### Duplicate Warnings
 
-If the email address (or, when creating a person from the full Edit form, the phone number or matching first name + last name + birth date) matches someone already in your database, a **Possible Duplicate** dialog appears before the new record is saved. It lists each matching person along with their email, phone, and birth date so you can compare.
+When you enter an email address on the **Add a New Person** form, B1 checks for duplicates before saving. If the email address (or, when creating a person from the full Edit form, the phone number or matching first name + last name + birth date) matches someone already in your database, a **Possible Duplicate** dialog appears before the new record is saved. It lists each matching person along with their email, phone, and birth date so you can compare.
 
 - Click **Use Existing** next to a match to use that person's record instead of creating a new one.
 - Click **Create Anyway** to add the new person even though a possible match was found.
@@ -47,11 +49,13 @@ This only checks for duplicates when you're creating a brand-new person — edit
 
 ## Editing Details
 
-1. On the person's profile page, click the **Edit** button below their contact details on the left.
-2. In the **Personal Details** form, fill in additional information such as a **Title** (pick Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor from the list, or type your own, up to 10 characters), middle name, membership status (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive**, or **Deceased**), dates, address, phone numbers, and (for children and students) grade and school.
-3. Click **Save** to store the personal information.
+1. On the person's profile page, click the **Edit** button on the left, below the **Household** section.
+2. In the **Personal Details** form, fill in additional information such as a **Title** (pick Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor from the list, or type your own, up to 10 characters), middle name, nickname, **Name Tag Notes** (printed on check-in name tags and shown as a warning tag on the profile), **Donor Number**, membership status (**Visitor**, **Guest**, **Regular Attendee**, **Member**, **Staff**, **Inactive**, or **Deceased**), gender, marital status, birth date and anniversary, campus, address, phone numbers with extensions, and (for children and students) grade and school. Check **Hide me from the member directory** to leave the person out of the [printed directory](./print-directory.md) and the app's member directory. Any [custom fields](../settings/custom-fields.md) appear under **Custom Fields**.
+3. Click **Save** to store the personal information, or **Cancel** to close the form without saving.
 
-The left side of the profile shows the person's photo, name, membership status, contact details, any [custom field](../settings/custom-fields.md) values, and their household. Below the household, **Added** shows the date the record was created (only for people added since late October 2026). Click the photo to change it. Below the **Edit** button are a few more actions: **Workflow** (add the person to a [workflow](../serving/workflows.md)), **Merge**, **Export**, and **Export Data**.
+If you change the address of someone who shares a household with others, B1 asks whether to use the new address for the whole household. The form also has a **Delete** button (to delete the person) and a **Data Management** section for exporting or anonymizing the person's data (see [Data Security](../settings/data-security.md#using-the-data-management-tools)).
+
+The left side of the profile shows the person's photo, name, age, gender, marital status, campus, membership status, contact details, any [custom field](../settings/custom-fields.md) values, and their household. Tags under the name show when the person **Has login** (a B1 account), is **Hidden from directory**, or has name tag notes. Above the household, **Added** shows the date the record was created (only for people added since late October 2026). Click the photo to change it. Below the household are the **Edit**, **Email**, and **Text** buttons (see below) and a few more actions: **Workflow** (add the person to a [workflow](../serving/workflows.md)), **Merge**, **Export**, and **Export Data**. If the person belongs to a household, a **Pickup** section lists the people allowed to pick up children at [check-in](../attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 
 The rest of the profile shows a summary section for each kind of related information:
 
@@ -60,12 +64,13 @@ The rest of the profile shows a summary section for each kind of related informa
 - **Groups** — Lists the person's [group memberships](../groups/group-members.md), with **Joined** and the date they joined each group when it's on file
 - **Notes** — Shows recent notes about the person (pastoral care, follow-ups, etc.). Click **All notes** to read and add notes. Each note shows who wrote it and the date and time it was posted. To see recent notes across everyone at once, use the [Notes](./notes.md) page
 - **Forms** — Lists the person's forms and whether each one has been submitted (see [Working with Forms](#working-with-forms) below)
+- **Requests & registrations** — Shows the person's [event requests](../calendars/approvals.md) and [event registrations](../calendars/paid-registrations.md). Click **All requests** for the full list
 
 When you open one of these full views, click the **Back to** link with the person's name at the top to return to the profile.
 
 ## Emailing a Person
 
-If the person has an email address on file, an **Email** button appears below their contact details on the left of the profile.
+If the person has an email address on file, an **Email** button appears next to **Edit**, below the household on the left of the profile.
 
 1. On the person's profile, click **Email**.
 2. An **Email** dialog titled with the person's name opens, showing **Sending to** with the person's address.
@@ -78,6 +83,10 @@ To write the message in your own mail program instead, click **Open in my email 
 :::info
 Sending from B1 uses the same approval and daily limits as group email. If your church hasn't been approved yet, the dialog asks you to request a review — you can still click **Open in my email app** in the meantime. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church). Users without permission to edit group members go straight to their email app when they click **Email**.
 :::
+
+## Texting a Person
+
+If your church has a [texting provider](../settings/church-settings.md#texting) connected, you have permission to send texts, and the person has a mobile phone number, a **Text** button appears next to **Email**. Click it, type your **Message**, and click **Send**. The dialog shows the number the text goes to. See [Texting Group Members](../groups/group-members.md#texting-group-members) for how texting works.
 
 ## Working with Forms
 
