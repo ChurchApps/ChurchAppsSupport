@@ -1,13 +1,13 @@
 ---
 title: "The Me Page"
-description: "Shows what the Me page in the B1App member portal puts on one screen: upcoming serving, events, and registrations, plus household, groups, giving, forms, attendance, and inbox."
+description: "What the Me page in the B1App member portal shows: upcoming serving, events, and registrations, your tasks, household, groups, giving, forms, and inbox."
 ---
 
 # The Me Page
 
 <div class="article-intro">
 
-The **Me** page is your personal dashboard in the member portal — one page with everything coming up for you (serving assignments, event registrations, and your groups' upcoming events) along with your household, groups, giving, submitted forms, attendance history, registrations, and recent notifications.
+The **Me** page is your personal dashboard in the member portal — one page with everything coming up for you (serving assignments, event registrations, and your groups' upcoming events) along with any tasks assigned to you, your household, groups, giving, submitted forms, attendance history, registrations, and recent notifications.
 
 </div>
 
@@ -39,11 +39,22 @@ If an event or registration has a photo, a small thumbnail of it appears at the 
 
 If nothing is scheduled, you'll see "Nothing coming up" — your serving times, events, and registrations will appear here as they are scheduled.
 
+## My Cards and My Tasks
+
+If church staff have assigned you follow-up work, two more sections appear under **Upcoming**:
+
+- **My cards** -- workflow cards assigned to you (for example, following up with a new visitor). Each shows its due date, with an **Overdue** or **Snoozed** badge when that applies.
+- **My tasks** -- other tasks assigned to you, with the person each one is about.
+
+Each section shows your three newest items; tap **All cards** or **All tasks** to open the full **My tasks** list. Tap a card to see its step, due date, and who it is about, and to add **Notes**. Tap **Complete** (or the outcome button your church set up for that step) when you are done, or tap **1 day**, **3 days**, or **7 days** under **Snooze** to set it aside for a while. Tasks open read-only here, with any notes they already have -- close them in B1 Admin.
+
+The sections are hidden when nothing is assigned to you.
+
 ## Household, Groups, and Giving
 
 - **Household** -- The other people in your household. Tap a name to view their profile, or tap **Manage** to edit your household from your profile. Hidden if no one else is linked to your household.
-- **My Groups** -- The groups you belong to. Tap a group to open it, or tap **All groups** for the full list.
-- **Giving** -- How much you have given this year and how many gifts. Tap **History** to open the giving page. Hidden if your church does not accept online donations, or if your church has limited members' giving history to an earlier year or hidden it (see [Donation History](../giving/donation-history.md#if-your-church-limits-giving-history)).
+- **My Groups** -- The groups you belong to. Tap a group to open it, or tap **All groups** for the full list. If you aren't in any groups, you'll see "You're not in any groups yet."
+- **Giving** -- How much you have given this year and how many gifts ("No gifts yet in" the current year if there are none). Tap **History** to open the giving page. Hidden if your church has limited members' giving history to an earlier year or hidden it (see [Donation History](../giving/donation-history.md#if-your-church-limits-giving-history)).
 
 ## My Forms
 
