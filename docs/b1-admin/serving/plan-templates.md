@@ -26,28 +26,28 @@ Plan templates let you save a reusable snapshot of a plan's order of service or 
 ## Saving a Plan as a Template
 
 1. Open an existing plan from the **Serving** area.
-2. In the plan's **Order of Service** section, click **Save as Template**.
-3. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon").
-4. Save. The template captures the plan's current order of service, positions, and notes at that moment.
+2. Click **Edit order of service** to open the plan's order of service, then click **Save as Template** above it.
+3. Give the template a name (for example, "Standard Sunday" or "Worship + Sermon"). It starts with the plan's name.
+4. Click **Save**. The template captures the plan's current order of service, positions, and notes at that moment.
 
 ## Managing Templates
 
-Click **Templates** above the plan list on any plan type page to open **Plan Templates**. From there you can:
+Click **Templates** above the plan list on any plan type page to open **Plan Templates**. Each template has these icons:
 
-- **Rename** — change the template's display name
-- **Update from plan** — replace the template's content with a plan's current state (useful after you refine your standard structure)
-- **Apply** — stamp the template onto one or more upcoming plans
-- **Delete** — remove a template you no longer need
+- **Edit** (pencil) — rename the template
+- **Update from plan** (circular arrows) — replace the template's content with a plan's current state (useful after you refine your standard structure)
+- **Apply** (copy icon) — stamp the template onto one or more upcoming plans
+- **Delete** (trash can) — remove a template you no longer need
 
 ## Applying a Template to Plans
 
 1. Click **Templates** above the plan list on the plan type page.
 2. Click the **Apply** icon (copy icon) next to the template you want to use.
-3. Select which upcoming plans to apply it to by checking their boxes.
+3. Select which upcoming plans to apply it to by checking their boxes. Plans dated before today aren't listed.
 4. Choose what to copy:
    - **Order of Service** — replaces the selected plans' service order items with the template's items
    - **Positions** — replaces the selected plans' positions (and their assignments) with the template's positions
-5. Click **Apply**.
+5. Click **Apply**. **Order of Service** is checked by default; at least one of the two must be checked.
 
 If the template has notes, applying it also replaces the selected plans' notes with the template's notes.
 
@@ -65,7 +65,7 @@ Templates are shared across the plan types in a ministry. When you click **New P
 
 ## Keeping Templates Up to Date
 
-If your standard service structure changes, open the template manager and use **Update from plan** to sync the template from your latest plan rather than rebuilding it from scratch.
+If your standard service structure changes, open the template manager, click **Update from plan**, pick the plan to copy from, and click **Save** to sync the template from your latest plan rather than rebuilding it from scratch. The list offers every plan of this plan type, past and upcoming.
 
 ## Related Articles
 
