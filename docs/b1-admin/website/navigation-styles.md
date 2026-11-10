@@ -14,7 +14,7 @@ Customize your church website's navigation bar colors to match your branding. Yo
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need permission to manage your church website. See [Roles & Permissions](../people/roles-permissions.md) for details.
+- You need permission to edit website content. See [Roles & Permissions](../settings/roles-permissions.md) for details.
 - Have your brand colors ready, including hex color codes (e.g., #03A9F4).
 - Understand the difference between solid and transparent navigation styles on your website.
 
@@ -39,60 +39,53 @@ The **Navigation Styling** editor has two cards: **Header (solid)** and **Header
 
 ## Configuring Solid Navigation
 
-Solid navigation appears with a background color behind the navigation bar. These settings are in the **Header (solid)** card. You can customize:
+Solid navigation appears with a background color behind the navigation bar. These settings are in the **Header (solid)** card. Each color is optional: while its **Override** switch is off, the navigation keeps your site's normal colors. You can customize:
 
 ### Background Color
 
 1. Toggle the **Override** switch for **Background color**
 2. Click the color picker
-3. Choose your desired background color
-4. The default is white (#FFFFFF)
+3. Choose your desired background color (the picker starts at white, #FFFFFF)
 
 ### Link Color
 
 1. Toggle the **Override** switch for **Link color**
 2. Choose the color for navigation link text
-3. This affects links in their default state
-4. The default is dark gray (#555555)
+3. This affects links in their default state (the picker starts at dark gray, #555555)
 
 ### Link Hover Color
 
 1. Toggle the **Override** switch for **Link hover color**
 2. Choose the color links change to when users hover over them
-3. This provides visual feedback for clickable links
-4. The default is light blue (#03A9F4)
+3. This provides visual feedback for clickable links (the picker starts at light blue, #03A9F4)
 
 ### Active Color
 
 1. Toggle the **Override** switch for **Active link color**
 2. Choose the color for the currently active page link
-3. This helps users know which page they're on
-4. The default is light blue (#03A9F4)
+3. This helps users know which page they're on (the picker starts at light blue, #03A9F4)
 
 ## Configuring Transparent Navigation
 
-Transparent navigation overlays your page content with no background. These settings are in the **Header over hero (transparent)** card. You can customize:
+Transparent navigation overlays your page content with no background. These settings are in the **Header over hero (transparent)** card. While an **Override** switch is off, that color automatically matches the hero section's text color. You can customize:
 
 ### Link Color
 
 1. Toggle the **Override** switch for **Link color**
 2. Choose a color that contrasts well with your page background
 3. Often white or light colors work best over dark backgrounds
-4. The default is dark gray (#555555)
 
 ### Link Hover Color
 
 1. Toggle the **Override** switch for **Link hover color**
 2. Choose the hover state color
 3. Ensure it's visible against your page background
-4. The default is light blue (#03A9F4)
 
 ### Active Color
 
 1. Toggle the **Override** switch for **Active link color**
 2. Choose the active page indicator color
 3. Should stand out while still fitting your design
-4. The default is light blue (#03A9F4)
 
 :::info
 Transparent navigation does not have a background color setting since it overlays the page content directly.
@@ -110,7 +103,7 @@ If you want to go back to the default colors:
 
 1. Toggle off the **Override** switches for any custom colors
 2. Click **Save Navigation**
-3. The navigation returns to the default color scheme
+3. The navigation goes back to your site's normal colors (and, over a hero, to the hero's text color)
 
 Or click **Cancel** to discard all changes without saving.
 
