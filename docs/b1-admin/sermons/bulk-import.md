@@ -14,7 +14,7 @@ The Bulk Import page lets you quickly populate your sermon library by importing 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
+- You need the **Edit Services** permission in the **Content** section of your role. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
 - Create at least one [playlist](./playlists.md) to import your sermons into
 - Have your YouTube Channel ID or Vimeo account information ready
 
@@ -44,13 +44,14 @@ See [Playlists](./playlists.md) for detailed instructions on creating and managi
 
 ## Importing Videos
 
-1. After selecting YouTube or Vimeo, enter your **YouTube Channel ID** or **Vimeo account information** in the field provided.
-2. Click the **Fetch** button to retrieve all available videos from your channel or account.
-3. After fetching, you will see a list of all your videos with checkboxes.
-4. Check the boxes next to the videos you want to import. You can select all or pick specific ones.
-5. Optionally, enable **Auto Import New Videos** to automatically add future uploads to your library.
-6. Click the **Import Into Playlist** dropdown to choose which playlist these videos should be added to.
-7. Click the **Import** button to complete the bulk import.
+1. After selecting YouTube or Vimeo, enter your **YouTube Channel ID** or **Vimeo Channel ID** in the field provided.
+2. Click the **Fetch** button to retrieve the videos from your channel. If the videos can't be loaded or the channel has none, a message says so; check the ID and try again.
+3. After fetching, you will see a list of your videos, each with a checkbox under **Import**.
+4. Check the box next to each video you want to import.
+5. Click the **Import Into Playlist** dropdown to choose which playlist these videos should be added to.
+6. Click the **Import** button to complete the bulk import. You are returned to the source choice when it finishes.
+
+If you click **Import** without choosing a playlist or checking any videos, B1 asks you to do so first. Click **Cancel** to leave without importing.
 
 Your videos will be imported with all their details, including titles, descriptions, dates, and thumbnails. Special characters in YouTube titles and descriptions, such as `&`, apostrophes, and quotation marks, come through as written rather than as codes like `&amp;`.
 
