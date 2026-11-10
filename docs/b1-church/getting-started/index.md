@@ -23,12 +23,13 @@ When you first visit the site, you will see your church's public website with it
 To access the member portal and its features, you need a ChurchApps account.
 
 1. Visit your church's B1.church URL.
-2. Click the **Login** button in the top-right corner of the page.
-3. On the login screen, select the option to **Register** a new account.
-4. Enter your **first name**, **last name**, **email address**, and choose a **password**.
-5. Complete the registration form.
+2. Click the **Login** button in the top-right corner of the page (or go to `/login` if your church doesn't show the button). In the member portal, tap **Sign In** instead.
+3. On the login screen, select **Register** (**Create an account** in the member portal).
+4. Enter your **first name**, **last name**, and **email address**, and submit the form.
+5. Check your email for a **6-digit verification code** and enter it.
+6. Choose a **password** (at least 8 characters) and enter it again to confirm.
 
-After registering, you can log in and access the member portal with all of its tools.
+You are then signed in and can use the member portal with all of its tools.
 
 :::tip
 If your church has already added you to their system, use the same email address they have on file. This will link your account to your existing church profile.
