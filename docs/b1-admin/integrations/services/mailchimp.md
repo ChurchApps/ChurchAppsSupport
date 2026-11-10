@@ -44,7 +44,7 @@ The sync is **one-way** (B1 → Mailchimp) and only touches Mailchimp's standard
 4. The relevant events are pre-selected; uncheck any you don't want (e.g. leave person events on but skip group tags).
 5. Save. B1 verifies the key and audience against Mailchimp before accepting — a typo fails immediately with a reason.
 
-Use **Send Test** at any time to re-verify the connection. Every sync attempt is logged in the webhook's delivery history with Mailchimp's actual response, and failed deliveries retry automatically with backoff for about five days.
+Re-open the webhook and click **Send Test Event** at any time to re-verify the connection (for Mailchimp it checks your key and audience instead of sending a sample subscriber). Every sync attempt is logged in the webhook's delivery history with Mailchimp's actual response, and failed deliveries retry automatically with backoff for about five days.
 
 ## Initial Import
 
@@ -78,7 +78,7 @@ If you previously wired person/group sync through Zapier, switch those Zaps off 
 - **Save fails with "Mailchimp rejected the API key"** — the key was revoked or mistyped. Keys must end in a data-center suffix like `-us21`.
 - **Save fails with "audience not found"** — the Audience ID doesn't exist under that account. Copy it from **Audience → Settings → Audience name and defaults** (it's not the audience's name).
 - **A person never appeared in Mailchimp** — check the webhook's delivery history. "Skipped: person has no email address" means exactly that; a `4xx` from Mailchimp shows the reason in the response body.
-- **Deliveries stopped entirely** — after repeated exhausted deliveries the webhook auto-disables. Fix the cause (usually a revoked key), re-enable it, and use **Send Test** to confirm.
+- **Deliveries stopped entirely** — after repeated exhausted deliveries the webhook auto-disables. Fix the cause (usually a revoked key), re-enable it, and use **Send Test Event** to confirm.
 
 ## See Also
 
