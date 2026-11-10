@@ -23,14 +23,14 @@ New to B1 Admin? Start with the [Introduction](./introduction.md) for a video wa
 
 ## Your Dashboard
 
-The Dashboard is your B1 Admin home page (`/`). It is built around your church's weekly service:
+The [Dashboard](./dashboard.md) is your B1 Admin home page (`/`). It is built around your church's weekly service:
 
 - **This week's service** -- the current or upcoming plan's name and order of service, with a link into the full plan
 - **Live status** -- once people start checking in on Sunday, the page shows how many are in the room, who's serving this hour, first-time guests, and a room-by-room breakdown with capacity bars
-- **Needs Attention** -- pending approvals and group join requests that require action
+- **Needs attention** -- pending calendar approvals and group join requests that require action
 - **My tasks** and **My Groups** -- your open tasks (add one with **Add Task**, or click **All tasks** for the full list) and the groups you belong to
 
-What the Dashboard shows depends on your [role](./settings/roles-permissions.md). For example, the link into the full plan only appears if you can open that plan (you edit plans, belong to the plan's ministry, or are serving on it), and the **All groups** link only appears if you can manage groups, view group members, or view people.
+What the Dashboard shows depends on your [role](./settings/roles-permissions.md). See [Dashboard](./dashboard.md) for the details. Your notifications and private messages are in the user menu at the top-right -- see [Notifications & Messages](./notifications.md).
 
 :::tip
 Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Jump menu](./introduction.md#getting-around-with-the-jump-menu) at the top-left of B1 Admin. Click it or press **Ctrl+K** (or **Cmd+K**), then browse or start typing.
@@ -42,13 +42,15 @@ Every section, including Sermons, Calendars, Mobile, and Settings, is in the [Ju
 - **[Groups](./groups/index.md)** - Create and organize church groups with join requests, member management, group email, personalized group texts with reusable text templates and a Group Name placeholder, and printable contact rosters. Each group opens to one page with its actions on the left and member, session, calendar and health summaries beside them
 - **[Attendance](./attendance/index.md)** - Set up campuses, service times, track named attendance with printable class roll sheets, see which classes still need attendance entered, log simple headcounts with trend reports, give each service time a check-in schedule so self check-in opens and closes on its own, in each campus's time zone, and let first-time guests sign up from a [QR code](./attendance/check-in.md#guest-registration-via-qr-code) with the fields you choose
 - **[Donations](./donations/index.md)** - Record giving in multiple currencies, manage funds, log a single gift from a person's record, print batches (one at a time or every batch in a date range) on your church letterhead with fund subtotals, close batches once they are counted, import a batch from a CSV file, let counting teams enter gifts with the **Enter Donations** permission, and generate statements printed with your church logo
-- **[Serving](./serving/index.md)** - Coordinate volunteers, create service plans (or copy one forward weekly for up to 12 weeks), send reminders by push, email or text, text everyone scheduled with **Text Volunteers**, manage tasks, and move people through step-by-step workflows that can send emails and texts, notify a staff member, record attendance, and track whether volunteers confirmed their serving assignments. Scheduled workflow rules can find lapsed regular givers, and printed plans leave off empty columns
+- **[Serving](./serving/index.md)** - Coordinate volunteers, create service plans (or copy one forward to set up as many as 12 at once, repeating by day, week or month), send reminders by push, email or text, text everyone scheduled with **Text Volunteers**, manage tasks, and move people through step-by-step workflows that can send emails and texts, notify a staff member, record attendance, and track whether volunteers confirmed their serving assignments. Scheduled workflow rules can find lapsed regular givers, and printed plans leave off empty columns
 - **[Forms](./forms/index.md)** - Build custom forms for registrations and data collection, add a header photo, share stand-alone forms with a QR code, and link a form to a group so its leaders can read and print the answers
-- **[Reports](./reports/index.md)** - View birthday, attendance, and donation reports
+- **[Reports](./reports/index.md)** - View birthday, attendance, and donation reports, found inside the People, Attendance, and Donations sections, plus the Audit Log in Settings
 - **[Website](./website/index.md)** - Build and manage your church website with custom navigation styles, track visits to your site and your B1 app with your GA4 ID, or turn off the public site and keep only the member portal
 - **[Sermons](./sermons/index.md)** - Manage your sermon library, live streaming, and an automatic podcast feed
 - **[Calendars](./calendars/index.md)** - Create curated calendars, manage room/resource bookings, and view availability. Take [event registrations](./calendars/paid-registrations.md) with priced attendee types, add Attendees by hand without charging them, and let people register and pay later when your church has no online giving
+- **[Mobile](./settings/mobile-app.md)** - Set the navigation tabs, theme, and Home screen of your church's B1 app, set up the B1 Checkin app and its labels, and send push notifications
 - **[Settings](./settings/index.md)** - Configure everything from one scrolling page with a quick-jump list: church info, region, date and phone number format, texting (including your own Twilio account), roles with member counts, permissions, and custom person fields
+- **[Integrations](./integrations/index.md)** - Post events to Slack or Discord, sync a Mailchimp audience, connect Zapier, and ask Claude or ChatGPT about your church data, using the API keys and webhooks under **Settings > Developer**
 
 :::info
 Click the question mark icon in the top-right corner of any page for quick access to help and documentation. To change the color theme (**Default**, **Classic**, or **Custom**) or switch between light and dark mode, open your user menu and use **Theme Preferences**. To protect your account with a code from an authenticator app, turn on [Two-Factor Sign-In](./profile/managing-profile.md#two-factor-sign-in) on your profile.
