@@ -23,15 +23,15 @@ Once you have created a group, the next step is adding members. From a group's d
 
 1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Groups** and click on the group you want to manage.
 2. In the **Members** section of the group page, click **All members**. (Teams and ministries open straight to their member list.)
-3. In the **Add Person** box below the member list, type the name of the person you want to add and press **Enter** or click the search icon.
+3. In the **Add Person** box below the member list, type the name of the person you want to add and press **Enter** or click the search icon. People who are already in the group are left out of the results. To find people by other fields instead of their name, click **Advanced**.
 4. Click the person's name, or the add icon next to it, in the search results.
-5. The person now appears in the group member list.
+5. The person now appears in the group member list. If they have an email address on file, a **Send Invite Email?** dialog asks whether to email them an invitation; click **Send Invite** or **No Thanks**.
 
 :::tip
 Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click.
 :::
 
-When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members**, **Sessions**, **Calendar**, and **Health**, each with a link to its full view. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below). When forms are linked to the group, a **Linked forms** section appears too (see [Linked Forms](#linked-forms) below).
+When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members** (with **All members**), **Sessions** (**All sessions**), **Calendar** (**All events**), and **Health** (**See health**). Each link opens the full view; **See health** shows the group's member, join, departure, and churn counts with charts of membership changes, attendance, age, and gender. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below). When forms are linked to the group, a **Linked forms** section appears too (see [Linked Forms](#linked-forms) below).
 
 ### Adding Someone Who Isn't in B1 Yet
 
@@ -45,7 +45,7 @@ Group leaders have special privileges -- they can edit the [group calendar](grou
 2. Click the **star icon** (**Make Leader**) next to their name.
 3. The person is now designated as a group leader and shows a **Leader** badge.
 
-To remove leader status, click the star icon (**Remove Leader Access**) again.
+To remove leader status, click the star icon (**Remove Leader Access**) again. The top of the member list counts the group's members and leaders.
 
 :::info
 Any group member can view the group calendar and events, but only leaders can add or edit calendar events.
@@ -76,10 +76,10 @@ Leader notes are visible only to the group's leaders. Other members can't see th
 You can communicate with all members of a group directly from B1 Admin:
 
 1. In the group's member list, click the **Send a message to members** icon above the list.
-2. Type your message in the text box (or pick one from **Templates**).
-3. Click **Send**.
+2. Type your message in the text box, up to 140 characters. To start from a ready-made message, click **Show Templates** and pick one from **Templates**.
+3. Click **Send**. A **Message sent.** notice confirms it.
 
-Your message will be delivered to all members of the group.
+Your message is delivered as an app notification to every other member of the group, starting with "Message from" and your first name.
 
 ## Emailing Group Members
 
@@ -87,10 +87,10 @@ You can send formatted emails to all members of a group:
 
 1. From the group detail page, click the **Email** button on the left side of the page.
 2. The Send Email dialog opens, showing how many members will receive the email and how many have no email address on file.
-3. Optionally select an **email template** from the dropdown, or compose a message from scratch. Click **Manage Templates** to create or edit templates.
-4. Enter a **subject line**. You can insert merge fields by clicking the field chips: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`, and **Group Name** (`{{groupName}}`), which is filled in with the group's name.
-5. Compose the **email body** using the HTML editor. The same merge fields are available here.
-6. Click **Send**.
+3. Optionally pick a saved email from **Load Template (optional)**, or compose a message from scratch. Click **Manage Templates** to create or edit templates.
+4. Enter a **Subject**. You can insert merge fields by clicking the field chips: **First Name** (`{{firstName}}`), **Last Name** (`{{lastName}}`), **Display Name** (`{{displayName}}`), **Email** (`{{email}}`), **Church Name** (`{{churchName}}`), and **Group Name** (`{{groupName}}`), which is filled in with the group's name.
+5. Compose the **email body** using the formatting editor. The same merge fields are available here. Click the **Preview** tab to check the message before sending.
+6. Click **Send Email**.
 7. A summary shows how many emails were sent successfully and how many members were skipped (no email on file).
 
 :::tip
@@ -136,7 +136,7 @@ A CSV export is useful for importing data into other tools, or keeping offline r
 
 ## Printing the Member List
 
-In the group's member list, click the **Print Roll Sheet** (printer) icon above the list and choose a layout. The page opens in a new tab and your browser's print dialog appears automatically.
+In the group's member list, click the **Print Roll Sheet** (printer) icon above the list and choose a layout. The icon appears for people who can view group members and for the group's leaders. The page opens in a new tab and your browser's print dialog appears automatically.
 
 - **Attendance Sheet** -- an undated class list with **Present** and **Absent** boxes for teachers to mark by hand. See [Printing a Roll Sheet](../attendance/recording-attendance.md#printing-a-roll-sheet).
 - **Contact Roster** -- a contact list for the group, dated today and headed with your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, and the group name. Each member has a row with their **Name**, **Phone**, **Email**, and **Address**. Leaders are listed first and marked **Leader**, then everyone else by last name. The phone shown is the member's mobile number, or their home or work number if there is no mobile. Contact details are left blank for anyone who has opted out.
@@ -150,14 +150,15 @@ A contact roster contains members' personal contact information. Share printed c
 You can send a push notification directly to all group members who have the B1.church app installed on their device with push notifications enabled.
 
 1. From the group detail page, click **Notify** (below the **Email** and **Text** buttons -- the **Text** button appears once a [texting provider](../settings/church-settings.md#texting) is connected).
-2. A dialog opens showing how many of your group's members have push enabled.
-3. Fill in the notification details:
+2. A dialog opens showing how many of your group's members have push enabled. You aren't counted, since you are the sender.
+3. Under **When**, keep **Send now**, or choose **Schedule for later** and pick a **Send at** date and time. Scheduled notifications can be viewed, edited, or cancelled under **Mobile > Push Notifications**.
+4. Fill in the notification details:
    - **Title** *(required)* -- A short summary, up to 80 characters.
    - **Message** *(required)* -- The notification body, up to 240 characters.
    - **Open link or flyer URL** *(optional)* -- A relative app path (for example, `/mobile/groups`) or a full `https://` URL that the notification opens when tapped.
    - **Image URL** *(optional)* -- An `https://` URL to an image that appears alongside the notification on supported devices.
-4. A live preview shows how the notification will appear on the device.
-5. Click **Send Notification**.
+5. A live preview shows how the notification will appear on the device.
+6. Click **Send Notification** (or **Schedule Notification**).
 
 :::info
 Push notifications are delivered only to group members who have the B1.church PWA installed and have not disabled push notifications. Members without a registered push device or with push turned off are counted as skipped, and the send summary shows how many were reached versus skipped.
@@ -169,7 +170,7 @@ After sending, the dialog shows how many notifications were queued successfully.
 
 ## Removing Members
 
-To remove someone from a group, locate their name in the member list and click the **remove** button next to their entry.
+To remove someone from a group, locate their name in the member list, click the **Remove** icon next to their entry, and confirm.
 
 :::info
 Removing a person from a group does not delete them from your church directory. They will still appear in the [People](../people/adding-people.md) section and can be re-added to the group at any time.

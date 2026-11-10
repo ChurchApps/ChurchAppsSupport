@@ -15,7 +15,7 @@ Each group in B1 can have its own event calendar. Group leaders use it to schedu
 <h4>Before You Begin</h4>
 
 - You need a group created in B1 Admin with at least one member. See [Creating Groups](creating-groups.md) and [Group Members](group-members.md).
-- To add or edit calendar events, you must be designated as a group leader. See [Designating Group Leaders](group-members.md) for instructions.
+- To add or edit calendar events, you must be designated as a group leader. See [Designating Group Leaders](group-members.md#designating-group-leaders) for instructions.
 
 </div>
 
@@ -62,18 +62,21 @@ The group's page in B1 Admin also has a **Calendar** section where staff can sch
 
 1. Open the group in B1 Admin and, in the **Calendar** section, click **All events**.
 2. Click **+ Add Events** to open the **Add Recurring Events** dialog.
-3. Choose the schedule (weekly, every 2 weeks, monthly, or one time), the **First Meeting** and **Last Meeting** dates, and optionally **Skip holidays**.
-4. Review the preview of meeting dates and uncheck any to skip.
-5. Leave **Allow RSVPs** checked if you want members to be able to respond to these events (see below), then save.
+3. Check the **Title** (it starts as the group's name) and add an optional **Description**.
+4. Choose the **First Meeting** and **Last Meeting** dates, the **Start** and **End** times, and how often it **Repeats** -- **Weekly** or **Every 2 Weeks**, on the weekday of the first meeting. For a single meeting, use the same date for both.
+5. Choose the **Visibility** -- **Public** or **Private**.
+6. **Skip holidays** is checked by default, so meeting dates that fall on a holiday are left unchecked and labeled with the holiday's name.
+7. Review the list of meeting dates and uncheck any to skip.
+8. Leave **Allow RSVPs** checked if you want members to be able to respond to these events (see below), then click **Save**.
 
-The B1 Admin event list has **Upcoming** and **Past** buttons above it. **Upcoming** shows events that haven't ended yet, plus recurring series that are still running, soonest first. **Past** keeps every earlier event the group has had, newest first.
+The B1 Admin event list has **Upcoming** and **Past** buttons above it. **Upcoming** shows events that haven't ended yet, plus recurring series that are still running, soonest first. **Past** keeps every earlier event the group has had, newest first. Each row shows the event's title, start, how it repeats, how many dates were skipped, its visibility, and its RSVPs. Click **Delete** on a row and confirm to remove the event and all of its occurrences.
 
 ## Event RSVPs
 
 Group events can collect RSVPs — a **Yes**, **No**, or **Maybe** for each occurrence of the event.
 
 - **Allow RSVPs** is on by default for events created through the bulk-add dialog; uncheck it to turn responses off for those events. Events with RSVPs turned off show as **Disabled** in the group's event list.
-- In the B1 Admin group's event list, each event shows a response summary (for example, "5 yes · 2 maybe · 1 no"). Click through to open the **RSVP Responses** roster, which lists who answered yes, maybe, and no for that occurrence.
+- In the B1 Admin group's event list, each event shows a response summary (for example, "5 yes · 2 maybe · 1 no"). Click it to open the **RSVP Responses** roster, which lists, for each occurrence, who is **Going**, **Maybe**, or **Not Going**.
 
 :::tip
 RSVPs give leaders a head count without the formality of full event registration. For paid signups or capacity-managed events, use [event registration](../calendars/creating-calendars.md#enabling-event-registration) instead.
