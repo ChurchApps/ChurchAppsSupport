@@ -28,18 +28,21 @@ The Church Settings page is where you configure your church's basic information,
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Settings**, and click **Settings**.
 2. In the **Church Information** section (at the top of the page), click **Edit**.
 3. Update any of the following fields:
-   - **Church Name** -- The name displayed across all ChurchApps products.
-   - **Address** -- Your church's physical address.
-   - **Contact Information** -- Phone number, email, and other contact details.
+   - **Church Name** *(required)* -- The name displayed across all ChurchApps products.
+   - **Subdomain** *(required)* -- Your free B1 web address. See [Setting Up Your Subdomain](#setting-up-your-subdomain) below.
+   - **Address Line 1**, **Address Line 2**, **City**, **State**, **Zip**, and **Country** -- Your church's physical address.
+   - **First Day of Week** -- See [First Day of Week](#first-day-of-week) below.
    - **Time Zone** -- Your church's time zone. See [Time Zone](#time-zone) below.
-4. Click **Save** to apply your changes.
+4. Click **Save** to apply your changes, or **Cancel** to discard them.
+
+The church name, subdomain, and address also show in the panel at the top-left of the Settings page.
 
 ## Setting Up Your Subdomain
 
-Your church gets a free subdomain at **yourchurch.1.church**. This is the web address where members and visitors can access your church's online presence.
+Your church gets a free subdomain at **yourchurch.b1.church**. This is the web address where members and visitors can access your church's online presence.
 
 1. On the Settings page, click **Edit** in the **Church Information** section and locate the **Subdomain** field.
-2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.1.church).
+2. Enter your preferred subdomain (for example, "gracechurch" for gracechurch.b1.church).
 3. Save your changes.
 
 :::info
@@ -50,14 +53,11 @@ If you want visitors to reach your site at your own domain (for example, **`www.
 
 ## Configuring Branding
 
-Customize how your church appears across all ChurchApps tools:
+Your logo and colors aren't set on the Settings page. Upload your church logo and pick your colors under **Website > Appearance** -- see [Logo and Branding](../website/appearance.md#logo-and-branding). The colors used by the B1 app, member portal, and check-in kiosk are set under **Mobile > App Theme** -- see [App Theme](./mobile-app.md#app-theme).
 
-1. Upload your **church logo** by clicking the logo area and selecting an image file.
-2. Add any additional **church images** used on your website and [mobile app](./mobile-app.md).
+## General (Support Contact)
 
-:::tip
-For best results, use a logo with a transparent background in PNG format. This ensures it looks great on both light and dark backgrounds.
-:::
+The **General** section holds your **Support Contact**: the email address or contact-form link people use to reach your church. Click **Edit** in the **General** section, enter it in the **Link** field, and click **Save**. Until you set one, the section shows **Not set**.
 
 ## First Day of Week
 
@@ -141,13 +141,23 @@ Texts can also go out automatically from a [workflow](../serving/workflows.md#se
 By default, files you upload to your website (through [Files](../website/files.md)) and other content areas use B1's free hosted storage, up to 100MB. If you need more room, you can connect your own cloud storage instead -- new uploads then go straight to your account with no platform limit.
 
 1. On the Settings page, click **File Storage** in the left-hand list, then click **Edit** in the **File Storage** section.
-2. Choose a provider: **Google Drive**, **Dropbox**, **OneDrive**, or an **S3-compatible bucket** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
-3. For Google Drive, Dropbox, or OneDrive, click **Connect** and sign in to authorize access. For an S3-compatible bucket, enter your access key, secret, bucket name, and public URL base.
+2. Choose a **Provider**: **Google Drive**, **Dropbox**, or **S3-Compatible Bucket (S3, R2, B2)** (AWS S3, Cloudflare R2, Backblaze B2, etc.). **ChurchApps (Free)** is the built-in storage.
+3. For Google Drive or Dropbox, click **Connect Account** and sign in to authorize access. An **Account connected** badge appears once it worked; you must connect before you can save. For an S3-compatible bucket, enter the **Access Key Id**, **Secret Access Key**, **Bucket**, **Endpoint** (leave blank for AWS), **Region**, and **Public URL Base**. **Bucket** and **Public URL Base** are required, and the bucket must allow public reads and CORS uploads from B1.
 4. Click **Save**.
+
+To go back to the free storage, choose **ChurchApps (Free)** and save. Files already uploaded stay where they are.
 
 :::info
 This only affects new uploads to your website Files and similar content areas. Gallery images, thumbnails, logos, and person photos always stay on B1's default storage.
 :::
+
+## Giving
+
+The **Giving** section connects your payment provider and sets your church's currency for online giving and paid registrations. See [Online Giving Setup](../donations/online-giving-setup.md). It only appears for people who can edit giving settings.
+
+## Check-In
+
+The **Check-In** section sets **Volunteer Ratio Enforcement** -- whether check-in only warns (**Warn (allow with confirmation)**) or stops a check-in (**Block (prevent check-in)**) when a room is short of volunteers. See [Volunteer Ratios](../attendance/checkin-safety.md#volunteer-ratios). The **Check-in kiosk, QR, and labels** link under it opens the kiosk settings on the Mobile page.
 
 ## Grade Promotion
 
