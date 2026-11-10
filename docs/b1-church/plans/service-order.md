@@ -28,13 +28,15 @@ The service order is displayed as a list of items in the order they will occur d
 - **Item label and description** -- The name of the element (such as a song title, prayer, or announcement) along with any notes or descriptions.
 - **Duration** -- How long the item is expected to take.
 
-Items are organized under **headers** that group related elements together (for example, "Worship Set" or "Message"). This makes it easy to scan the overall structure of the service.
+Items are organized under **headers** that group related elements together (for example, "Worship Set" or "Message"). Each header shows the total time of its items. This makes it easy to scan the overall structure of the service.
+
+Songs show a music note and the key they will be played in (for example, "Key of G"). An item with a link attached shows its name as a link -- tap it to open the link (audio links play right in the page).
 
 Lesson and curriculum sections can also expand into a folder of individual actions nested beneath them -- click the section to expand or collapse its actions and see each step your team will walk through.
 
 ## Viewing Song Lyrics and Chords
 
-Click a song in the service order to open its lyrics and chords. Use the **Key Signature** dropdown at the top to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for.
+Click a song in the service order to open its details: the artist, the **Key Signature** buttons, the **Lyrics** (with chords when the song has them), song facts such as album, BPM, key, meter, and length, and **Links** to the song on services like Spotify, YouTube, or PraiseCharts. Tap a key under **Key Signature** to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for. Tap **Close** when you're done.
 
 ## Curriculum and Lesson Content
 
