@@ -11,6 +11,10 @@ description: "Connect B1 Admin to Google Sheets with the B1 Export add-on to pul
 
 </div>
 
+:::caution Not yet available
+The B1 Export add-on is not published on the Google Workspace Marketplace yet, so you can't install it today. Until it is, export people from B1Admin (see [Exporting Data](../people/exporting-data.md)) and import the CSV into Google Sheets. Everything below describes how the add-on will work once it is released.
+:::
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
@@ -98,14 +102,14 @@ The export runs in the background under your Google account. If the API key is r
 ## Troubleshooting
 
 - **"No API key set"** — open **Extensions → B1 Export → Connect…** and paste the key.
-- **"B1 rejected the API key (401)"** — the key was revoked or is wrong. Re-mint and re-paste it.
-- **"This API key lacks permission for /giving/donations (403)"** — the key doesn't have `donations:read`. Update the key's scopes in B1Admin.
+- **"B1 rejected the API key (401)"** — the key was deleted or is wrong. Create a new key and paste it in.
+- **"This API key lacks permission for /giving/donations (403)"** — the key doesn't have `donations:read`. Scopes can't be changed on an existing key, so create a new key with the right scopes in B1Admin.
 - **Sheet doesn't refresh** after running — make sure you're looking at the *correct* tab name (`B1 People` etc.). The export creates the tab if it didn't exist.
 - **"Quota exceeded"** — Apps Script imposes per-user daily quotas on `UrlFetchApp` (typically thousands of calls per day). A large church with many records may need to split exports across multiple days or use [Make](./make.md) / a custom integration for high-volume sync.
 
-## Customising the Add-On
+## Missing a Column?
 
-The add-on is open source — the Apps Script project lives in the `B1Integrations/GoogleSheetsAddon/` repo. If you want a column we don't export, an extra dataset, or a different output format, open an issue or PR there.
+If you want a column we don't export, an extra dataset, or a different output format, email [support@churchapps.org](mailto:support@churchapps.org).
 
 ## See Also
 
