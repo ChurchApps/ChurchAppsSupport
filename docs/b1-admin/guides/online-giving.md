@@ -25,8 +25,9 @@ Funds are the categories donors can give to. You need at least one fund before y
 
 Follow the [Funds](../donations/funds.md) guide to set up your giving categories:
 
-1. Create your most common funds (e.g., "General Fund", "Building Fund", "Missions")
-2. Mark tax-deductible funds appropriately — this affects year-end giving statements
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Donations > Funds** and click **Add Fund**
+2. Create your most common funds (e.g., "General Fund", "Building Fund", "Missions")
+3. Check **Tax Deductible** on funds whose gifts belong on year-end giving statements, and leave **Visible to Donors** checked on funds donors should be able to pick online
 
 :::tip
 You can add more funds at any time. Start with your most common giving categories.
@@ -38,8 +39,11 @@ Stripe handles all payment processing. You'll connect your Stripe account to B1 
 
 Follow the [Online Giving Setup](../donations/online-giving-setup.md) guide to connect Stripe:
 
-1. Log in to your Stripe dashboard and retrieve your Publishable Key and Secret Key
-2. In B1 Admin, go to Settings and enter both keys
+1. Log in to your Stripe dashboard and go to **Developers > API Keys** to find your Publishable Key and Secret Key
+2. In B1 Admin, go to **Settings**, click **Edit** in the **Giving** section, and set **Provider** to **Stripe**
+3. Paste the Publishable Key into **Public Key** and the Secret Key into **Secret Key**, check the **Currency**, and click **Save**
+
+B1 also supports **Kingdom Funding** and **Paystack** (for churches in Africa) as giving providers — see [Online Giving Setup](../donations/online-giving-setup.md).
 
 :::warning
 Stripe shows your Secret Key only once. Copy and save it before leaving the Stripe dashboard. If you lose it, you'll need to generate a new one.
@@ -51,19 +55,20 @@ Make giving accessible by adding a donation page to your B1 website.
 
 Follow the [Online Giving Setup](../donations/online-giving-setup.md) and [Managing Pages](../website/managing-pages.md) guides to:
 
-1. Add a "Donate" tab to your B1.church site
+1. Add a **Donation** tab to your B1.church site (or a **Donation** element to a page in the website builder)
 2. Your giving URL will be: `https://yoursubdomain.b1.church/donate`
 3. Members can give without logging in (public page) or log in for saved payment methods and donation history
+4. To send donors straight to one fund, click **Giving Link** on that fund under **Donations > Funds** to copy a link (or download a QR code) with the fund and amount preset
 
 ## Step 4: Make a Test Donation
 
 Before announcing to your congregation, verify everything works.
 
 1. Make a small test donation to verify the flow works end-to-end
-2. Check that the donation appears in B1 Admin under Donations
+2. Check that the donation appears in B1 Admin under **Donations > Batches**
 
 :::tip
-Use Stripe's test mode first if you want to verify without real charges, then switch to live mode before announcing to your congregation.
+To verify without real charges, you can save Stripe's test keys first, then replace them with your live keys in **Settings > Giving** before announcing to your congregation.
 :::
 
 ## Step 5: Announce to Your Congregation
@@ -81,12 +86,13 @@ Members who log in can save payment methods, set up recurring donations, and vie
 
 Keep your donation records current and generate reports throughout the year.
 
-1. [Import Stripe transactions](../donations/stripe-import.md) regularly (weekly or monthly) to keep your records current
-2. [View donation reports](../donations/donation-reports.md) to track giving trends and totals by fund
-3. [Generate year-end giving statements](../donations/giving-statements.md) for your donors' tax records
+1. Online gifts are recorded automatically. Use [Stripe Import](../donations/stripe-import.md) to catch any Stripe transactions that didn't sync — click **Preview** to see what's missing, then **Import Missing**
+2. [View donation reports](../donations/donation-reports.md) under **Donations > Summary** to track giving trends and totals by fund
+3. Check **Donations > Failed Gifts** for recurring gifts whose card was declined, and click **Retry** once the donor updates their payment method
+4. [Generate year-end giving statements](../donations/giving-statements.md) for your donors' tax records
 
 :::tip
-Run Stripe imports at least monthly so your records stay up to date. See the [Year-End Reports Guide](./year-end-reports.md) for the full year-end process.
+Run a Stripe Import preview before closing each month so your records match Stripe. See the [Year-End Reports Guide](./year-end-reports.md) for the full year-end process.
 :::
 
 ## You're Done!
