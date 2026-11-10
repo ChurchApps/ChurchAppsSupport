@@ -24,12 +24,12 @@ For further support, please email [support@churchapps.org](mailto:support@church
 ## Walkthrough
 
 1. Using Google Chrome, go to [admin.b1.church](https://admin.b1.church) and sign in with your username and password.
-2. This will take you to the **Dashboard**, the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with **My tasks** (your open tasks) and **My Groups**. Use the **Jump menu** (the search bar at the top-left, see below) to reach People, Donations, Website, and the rest of the app. Click the small church logo next to it to return to the Dashboard at any time.
+2. This will take you to the [Dashboard](./dashboard.md), the B1.church Admin home page. It shows this week's service and who's checked in and serving, along with **My tasks** (your open tasks) and **My Groups**. Use the **Jump menu** (the search bar at the top-left, see below) to reach People, Donations, Website, and the rest of the app. Click the small church logo next to it to return to the Dashboard at any time.
 3. Open the Jump menu and choose **Settings** to set up your church's information, administrative roles, and other details.
 4. Click **Edit** in the **Church Information** section to set up your church information.
-5. Back on Sunday, click the **question mark icon** in the top right corner for help and tutorials.
+5. Back on the Dashboard, click the **question mark icon** in the top right corner for help and tutorials.
 6. Click **View Documentation** to see a list of tutorials to help you get started with B1.church.
-7. Navigate back to the Dashboard and click the **arrow next to your profile picture** and choose **Switch App**.
+7. Navigate back to the Dashboard and click the **arrow next to your profile picture** and choose **Switch App**. The same menu holds your [Notifications & Messages](./notifications.md).
 8. Choose **Lessons.church** to manage your church's online lessons and curriculum.
 9. Switch back to B1.church by clicking the arrow next to your profile picture and choosing **Switch App** again.
 10. You can now enter B1.church through the **member portal** or the **admin portal**. The member portal allows you to see how B1.church looks to your members, view your groups, and manage your personal donations.
@@ -82,6 +82,7 @@ Searching is often the fastest way to reach a page -- type part of the page name
 
 After watching this introduction, explore these key features:
 
+- [Dashboard](./dashboard.md) -- What your home page shows each week
 - [Adding People](./people/adding-people.md) -- Learn how to add members to your database
 - [Groups](./groups/index.md) -- Set up and manage church groups
 - [Serving Plans](./serving/plans.md) -- Organize your serving ministry
