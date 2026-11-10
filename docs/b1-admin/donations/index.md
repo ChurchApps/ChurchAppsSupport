@@ -1,6 +1,6 @@
 ---
 title: "Donations"
-description: "Record, organize, and report on church giving in B1 Admin, from batches and funds to year-end statements and Stripe or PayPal online donations."
+description: "Record, organize, and report on church giving in B1 Admin, from batches, funds and campaigns to year-end statements and online gifts."
 ---
 
 # Donations
@@ -27,9 +27,17 @@ The **Summary** page gives you a visual overview of all giving activity. It disp
 
 **[Funds](funds.md)** categorize your donations by purpose. Common examples include General Fund, Building Fund, and Missions. You can mark each fund as tax-deductible or not.
 
-### Statements
+### Campaigns
 
-The **[Statements](giving-statements.md)** page generates year-end giving statements for your donors. You can download individual CSV files or print all statements at once.
+**[Campaigns](campaigns.md)** track a fundraising drive toward a goal, with member pledges alongside the actual gifts to the campaign's fund.
+
+### Giving Statements
+
+The **[Giving Statements](giving-statements.md)** page generates year-end giving statements for your donors. You can download individual CSV files or print all statements at once.
+
+### Failed Gifts
+
+**Failed Gifts** lists recurring online gifts the payment gateway could not collect, with the donor, amount, date and the gateway's message, and a **Retry** button. See [Failed Recurring Gifts](online-giving-setup.md#failed-recurring-gifts).
 
 ### Stripe Import
 
@@ -37,7 +45,7 @@ If you accept online donations through Stripe, the **[Stripe Import](stripe-impo
 
 ## Online Giving
 
-B1 Admin integrates with **Stripe** and **PayPal** for accepting online donations. Once configured, members can give through your B1.church site and those donations automatically appear in your records. See [Online Giving Setup](online-giving-setup.md) to get started.
+B1 Admin integrates with **Stripe**, **Kingdom Funding** and **Paystack** for accepting online donations. Once configured, members can give through your B1.church site and those donations automatically appear in your records. See [Online Giving Setup](online-giving-setup.md) to get started.
 
 :::tip
 If you are new to donations in B1 Admin, start by [setting up your funds](funds.md), then [create your first batch](batches.md) and [record donations](recording-donations.md) into it.
@@ -49,6 +57,6 @@ If you are new to donations in B1 Admin, start by [setting up your funds](funds.
 - [Donation Batches](batches.md) -- organize donations into groups
 - [Managing Funds](funds.md) -- set up and manage giving categories
 - [Giving Statements](giving-statements.md) -- generate tax statements for donors
-- [Online Giving Setup](online-giving-setup.md) -- connect Stripe or PayPal
+- [Online Giving Setup](online-giving-setup.md) -- connect Stripe, Kingdom Funding or Paystack
 - [Stripe Import](stripe-import.md) -- import online transactions
 - [Donation Reports](donation-reports.md) -- view and filter donation summaries
