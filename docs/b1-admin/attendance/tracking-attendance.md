@@ -7,7 +7,7 @@ description: "Review attendance trends, filter reports by campus, service, or gr
 
 <div class="article-intro">
 
-Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page opens on a summary of this week's attendance, and its **All years** reports provide two main views -- the **Attendance Trend** tab for church-wide trends and the **Group Attendance** tab for group-level detail. Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
+Once your campuses, service times, and groups are configured, B1 Admin makes it easy to review attendance data and spot trends. The Attendance page opens on a summary of this week's attendance, and its **All years** reports provide two main views -- the **Attendance Trend** tab for church-wide trends and the **Group Attendance** tab for group-level detail -- plus a **Headcount Trend** tab for [headcount totals](headcount-entry.md). Use these tools to understand growth patterns, identify declining engagement, and make data-driven decisions for your church.
 
 </div>
 
@@ -39,7 +39,7 @@ Use the filters in the **Filter Report** box to narrow the results, then click *
 - **Group** -- show attendance for a single group.
 - **Start Date** and **End Date** -- the date range to include. By default the report covers the past year, from one year ago through today, and the end date is included in full.
 
-The report shows a bar chart and a table of total visits per week. Each week is labeled with the date of that week's Sunday. The table also has a **Session Dates** column listing the actual dates in that week that had attendance (for example, "9/27, 9/30"), so you can see when a midweek gathering is counted in the same week as Sunday.
+The report shows a bar chart and a table of total visits per week. Use the print icon to print it, or **Download Options** to save the data. Each week is labeled with the date of that week's Sunday. The table also has a **Session Dates** column listing the actual dates in that week that had attendance (for example, "9/27, 9/30"), so you can see when a midweek gathering is counted in the same week as Sunday.
 
 :::info
 Reports auto-run each time you open the Attendance Trend tab, so you will always see up-to-date numbers without needing to click a refresh button.

@@ -34,7 +34,7 @@ Before you can track attendance, you need to tell B1 Admin about your church's p
 ## Setting Up Your Attendance Structure
 
 1. Open **B1 Admin**, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), and expand **People**.
-2. Click **Attendance**, then click **Setup** in the left column. The **Service structure** table opens, with counts of your campuses, service times, and scheduled and unscheduled groups across the top. The counts update as soon as you add, edit, or remove something in the table.
+2. Click **Attendance**, then click **Setup** in the left column. The **Service structure** table opens, with counts of your campuses, service times, scheduled and unscheduled groups, and total groups across the top. The counts update as soon as you add, edit, or remove something in the table. Each campus lists its services, their times, and the groups assigned to each time, grouped by category (a serving team shows under its ministry's name). Groups that track attendance but have no service time are listed at the bottom under **Unassigned**.
 3. Click **Manage Campuses** (top right of the **Service structure** panel). This takes you to **Settings → Campuses**. Click **Add Campus**, enter the name of your location (address and time zone are optional), and click **Save**.
 4. Return to **People → Attendance** and click **Setup**. Your campus now appears in the setup table.
 5. Click the **+ button in the Service column** under your campus. Enter a service name such as "Sunday Service" and click **Save**.
@@ -84,7 +84,13 @@ Set a generous open window (for example, 45 minutes before start) so early-arriv
 
 ## Editing Your Setup
 
-You can update your setup at any time. Select a campus, service time, or group and click **Edit** to change its details, or **Delete** to remove it.
+You can update your setup at any time:
+
+- **Services and service times** -- Click a service's or service time's name in the table to open its form. Change the details and click **Save**, or click **Delete** to remove it.
+- **Campuses** -- Click **Manage Campuses** to add, rename, or remove campuses under **Settings**.
+- **Groups** -- Click a group's name to open it, then click **Edit** to change its service times or turn **Track Attendance** on or off.
+
+The **Check-in kiosk, QR, and labels** button at the top of the table takes you to the [B1 CheckIn settings](check-in.md).
 
 :::info
 Removing a service time does not delete past attendance records. Your historical data is preserved even if you change your schedule.
