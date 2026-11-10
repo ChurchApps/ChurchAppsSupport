@@ -26,9 +26,9 @@ Make sure all online donations from the end of the year are in your system.
 
 Follow the [Stripe Import](../donations/stripe-import.md) guide to:
 
-1. Navigate to Donations > Stripe Import
-2. Select a date range covering the end of the year (e.g., December 1 - December 31)
-3. Click Preview first to review, then Import Missing to finalize
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Donations > Stripe Import** (it appears only when your giving provider is Stripe)
+2. Set the **Start Date** and **End Date** to cover the end of the year (e.g., December 1 - December 31)
+3. Click **Preview** first to review, then **Import Missing** to finalize
 
 :::warning
 Run this import before generating statements. Any transactions you haven't imported won't appear on donor statements.
@@ -40,9 +40,9 @@ Verify your records are accurate before generating statements.
 
 Follow the [Donation Reports](../donations/donation-reports.md) guide to:
 
-1. Check the donation summary page for the full year
-2. Review totals by fund and compare against your bank statements to catch any discrepancies
-3. Click into individual batches to verify donor-level details if needed
+1. In the Jump menu, choose **Donations > Summary**, set the **Start Date** and **End Date** in **Filter Report** to the full year, and click **Run Report**
+2. Review totals by fund and compare against your bank statements to catch any discrepancies. Click **Download Options** and choose **Summary** for a CSV
+3. Open individual batches under **Donations > Batches** to verify donor-level details if needed
 
 ## Step 3: Verify Fund Tax Status
 
@@ -50,7 +50,8 @@ Ensure each fund's tax-deductible setting is correct so statements are accurate.
 
 Follow the [Funds](../donations/funds.md) guide to:
 
-1. Open each fund and confirm the tax-deductible setting is correct
+1. In the Jump menu, choose **Donations > Funds** and check each fund's **Tax Status**
+2. Click **Edit** on a fund to change its **Tax Deductible** setting
 
 :::info
 Only donations to funds marked as tax-deductible will appear on giving statements. If a fund should be tax-deductible but isn't marked that way, update it before generating statements.
@@ -62,8 +63,8 @@ Create the official giving statements for your donors.
 
 Follow the [Giving Statements](../donations/giving-statements.md) guide to:
 
-1. Navigate to **Donations > Giving Statements**
-2. Select the year from the dropdown and review the summary statistics
+1. In the Jump menu, choose **Donations > Giving Statements**
+2. Select the **Year** and review the summary statistics. Churches in Canada, Australia, or New Zealand can click **Statement format** to switch to their country's official receipt layout
 3. Choose your download method:
    - **Download ZIP** — individual CSV files, one per donor
    - **Print All** — printable view with each statement on a new page, with your church logo at the top (if you've uploaded one)
