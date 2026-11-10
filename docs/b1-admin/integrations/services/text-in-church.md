@@ -39,7 +39,7 @@ Text In Church actions also include *Send Text Message*, *Send Voice Broadcast*,
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — required for B1-triggered Zaps
+- `settings:write` — required to connect the key to Zapier, and for B1-triggered Zaps
 - `people:read`, `people:write` — to find or create the person
 - `groups:write` — for group syncing
 - (Optional) `donations:write` if you wire gift confirmations to TIC
@@ -54,10 +54,9 @@ The most common direction. Connect cards fired from TIC become new B1 people aut
 
 1. **Trigger** — Text In Church: Connect Card Submitted.
 2. **Action** — B1.church: Find Person (by email).
-3. **Path** — branch on found / not found:
-   - Not found → B1.church: Create Person.
-   - Found → continue.
-4. **Action** — B1.church: Add Group Member to a "New Contact" group.
+3. **Action** — B1.church: Add Group Member to a "New Contact" group, using the person's id from step 2.
+
+B1's *Find Person* stops the Zap with a "No person found" error when nobody matches, so a Path can't branch on it. For new contacts, turn on Zapier's error handling for the Find Person step and run B1.church: Create Person, then Add Group Member, in its error path.
 
 Turn the Zap on. The next connect card submitted through TIC lands in **B1Admin → People** automatically.
 
