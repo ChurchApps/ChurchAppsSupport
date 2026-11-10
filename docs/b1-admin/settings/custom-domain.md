@@ -38,12 +38,16 @@ Once DNS is pointing to B1:
 2. Click **Domains** in the left-hand list, then click **Edit** in the **Domains** section.
 3. Type your domain in the field and click **Save**.
 
-You don't need to click the **+** button first -- a domain left typed in the field is added when you save. Use **+** (or press **Enter**) when you want to add several domains to the list before saving.
+You don't need to click the **+** button first -- a domain left typed in the field is added when you save. Use **+** (or press **Enter**) when you want to add several domains to the list before saving. Enter just the domain, such as `www.yourchurch.org` -- not `https://` or a page path.
+
+If your church has more than one website, each domain also gets a **Website** dropdown. Leave it on **Main Website**, or pick the site that domain should open.
+
+To remove a domain, click the delete icon on its row and click **Save**.
 
 B1 handles SSL automatically — no certificate purchase needed.
 
 :::warning
-If you add the domain in B1 before your DNS records are in place, it will not save. Always set up DNS first.
+B1 saves the domain even if your DNS records aren't in place yet, but the domain won't load your site, and B1 can't issue its SSL certificate, until DNS points to B1. Set up DNS first. A domain that another church already uses can't be added.
 :::
 
 ## Checking If It's Working
