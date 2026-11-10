@@ -15,7 +15,7 @@ The Availability Calendar gives you a bird's-eye view of all room and resource b
 <h4>Before You Begin</h4>
 
 - Set up at least one [room or resource](./rooms-resources.md) in the Rooms & Resources section
-- You need edit access to the Calendars section in B1 Admin
+- You need the **Edit Content** permission
 
 </div>
 
@@ -25,45 +25,46 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 
 ## Reading the Calendar
 
-The calendar displays the current month by default. You can navigate forward and back with the arrows at the top, or switch between month, week, and day views.
+The calendar displays the current month by default. Use **Today**, **Back**, and **Next** at the top to move around, and **Month**, **Week**, **Day**, or **Agenda** to change the view.
 
-Each event is color-coded by booking status:
+Each booking is color-coded by status:
 
 | Color | Meaning |
 |-------|---------|
 | Green | Approved |
 | Orange | Pending approval |
-| Grey | Blocked out (not available) |
+| Grey | Blocked out (not available), shown as *Blocked: reason* |
 
-Hovering over an event shows the event title and the room or resource it is attached to.
+Each booking reads as the event title followed by the rooms and resources it uses. Hover over a booking to see the full text. Click a booking to open its event and edit it.
 
 ## Filtering by Room or Resource
 
-Use the **Room / Resource** dropdown at the top left to narrow the calendar to a single room or resource. Select **All Rooms & Resources** to return to the full view.
+Use the **Room / Resource** dropdown at the top left to narrow the calendar to a single room or resource. Select **All rooms & resources** to return to the full view.
 
 ## Booking a Room or Resource
 
 1. Click the **Book** button at the top of the page.
-2. In the dialog that opens, fill in the event details:
-   - **Title** — the name of the event
-   - **Start** and **End** date/time
+2. The **New Event** dialog opens -- the same editor used on a calendar (see [Adding and Editing Events](./creating-calendars.md#adding-and-editing-events)). Fill in the event details:
+   - **Group** *(required)* — the group the event belongs to. If you have [templates](./rooms-resources.md#event-templates), you can also pick a **Template** to fill in the rest.
+   - **Title** *(required)*
+   - **Start** and **End** date/time *(required; End must be after Start)*
    - **Visibility** — Public or Private
    - **Rooms** — select one or more rooms to reserve
    - **Resources** — select one or more resources to reserve
-3. Optionally set **Setup** and **Teardown** times (in minutes). These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
-4. To repeat the booking, check **Repeats** and configure the recurrence:
-   - **Repeat every** -- set the interval (for example, every 2 weeks).
-   - **Frequency** -- Daily, Weekly, or Monthly. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
-   - **Ends** -- Never, on a specific date, or after a set number of occurrences.
-5. To specify a custom booking window (different from the event start/end), toggle **Custom Booking Window** and enter the window start and end times. Use this when a room needs to be accessible outside the event's listed hours.
+3. Once a room or resource is selected, you can set **Setup (min before)** and **Teardown (min after)**. These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
+4. To repeat the booking, set the **Start** first, then check **Repeats** and configure the recurrence:
+   - **Interval** -- how often it repeats (for example, 2 with Week for every 2 weeks).
+   - **Frequency** -- Day, Week, or Month. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
+   - **Ends** -- **Never**, **On** a specific **End Date**, or **After** a set number of occurrences.
+5. To specify a custom booking window (different from the event start/end), turn on **Custom reservation window** and enter **Reserve from** and **Reserve until**. This replaces the setup and teardown minutes. Use it when a room needs to be accessible outside the event's listed hours.
 6. Click **Save** to submit the booking.
 
 :::info
-If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until a leader of that group approves it. See [Calendar Approvals](./approvals.md) for the approval workflow.
+If the room or resource has an **Approval Group** configured, the booking will appear as **Pending** until it's approved on the Approvals page -- unless you're a member of that group, in which case it's approved right away. See [Calendar Approvals](./approvals.md) for the approval workflow.
 :::
 
 :::tip
-The calendar will highlight any conflicts before you save. If you see a conflict warning, adjust your times or choose a different room.
+The editor shows a warning before you save if a room or resource is already booked or blocked out at that time. If you see a conflict warning, adjust your times or choose a different room.
 :::
 
 ## Related Articles
