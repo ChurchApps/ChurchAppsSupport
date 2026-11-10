@@ -15,7 +15,7 @@ The fastest way to connect B1 to another church-tech tool is usually a Zapier or
 
 | Service | Category | Bridge | What you can wire |
 |---|---|---|---|
-| [Mailchimp](./mailchimp.md) | Email | Zapier or Make | Sync new B1 people / givers into a Mailchimp audience |
+| [Mailchimp](./mailchimp.md) | Email | Built into B1 (Webhooks tab) | Keep a Mailchimp audience in sync with B1 people, groups, and saved lists |
 | [Donorbox](./donorbox.md) | Donations | Zapier | Push Donorbox donations and donors back into B1 |
 | [Subsplash](./subsplash.md) | App / Donations | Zapier | Pull Subsplash giving and people into B1 |
 | [VOMO](./vomo.md) | Volunteering | Zapier | Sync volunteer signups between B1 groups and VOMO projects |
@@ -26,9 +26,9 @@ The fastest way to connect B1 to another church-tech tool is usually a Zapier or
 
 ## What All Of These Have In Common
 
-1. **B1 side of the wiring is identical** — create an API key with the right scopes in **B1Admin → Settings → Developer → API Keys**, then either let the bridge register a webhook for the trigger (Zapier / Make do this automatically, requires `settings:write`) or call B1's REST endpoints from a downstream action.
+1. **B1 side of the wiring is identical** — create an API key with the right scopes in **B1Admin → Settings → Developer → API Keys**, then either let the bridge register a webhook for the trigger (Zapier / Make do this automatically, requires `settings:write`) or call B1's REST endpoints from a downstream action. The B1.church Zapier app needs `settings:write` on every key, because it checks the key against B1's webhook list when you connect it. (Mailchimp is the exception: its sync is built into B1 and set up on the **Webhooks** tab, with no API key or bridge.)
 2. **The bridge bills you, not us.** ChurchApps is free; Zapier and Make both have free tiers that cover a handful of recipes.
-3. **You can test the wiring without going live.** Both bridges have a "Test step" button that fires the trigger once against B1 and shows you the data shape before you turn the recipe on.
+3. **You can test the wiring without going live.** Zapier has a "Test step" button that pulls sample data from B1 and shows you the data shape before you turn the recipe on.
 
 ## Picking a Bridge
 
