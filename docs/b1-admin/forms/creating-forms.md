@@ -31,7 +31,8 @@ Build custom forms to collect information from your congregation. You can create
 4. Choose the form type from the **Associate With** dropdown:
    - **People** — Associates submissions with [people records](../people/adding-people.md) in your database. People forms are filled in from a person's record, so they don't get a shareable link.
    - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations. Only Stand Alone forms offer a [header photo](#adding-a-header-photo), a [QR code](#sharing-a-form-with-a-qr-code), a [linked group](#linking-a-form-to-a-group), and **Create a person record from submissions**.
-5. Click **Save** to create the form.
+5. For a Stand Alone form, you can fill in the rest of its [properties](#configuring-form-properties) now or later.
+6. Click **Save** to create the form.
 
 Your new form will appear in the list. Click on it to start adding questions.
 
@@ -47,17 +48,27 @@ Stand Alone forms have a **QR Code** link next to them on the main Forms list (a
 
 1. Open your form and go to the **Questions** tab.
 2. Click **Add Question**.
-3. Select a **field type** from the Provider dropdown. Available types include:
+3. Select a **Field Type**:
    - **Textbox** — For short text answers
+   - **Whole Number** and **Decimal** — For numbers
    - **Date** — For date selections
+   - **Yes/No** — For a yes-or-no answer
    - **Email** — For email addresses
    - **Phone Number** — For phone input
-   - **Multiple Choice** — For selecting from predefined options
+   - **Text Area** — For longer answers
+   - **Multiple Choice** — For picking one of several options
+   - **Checkbox** — For checking any number of options
    - **Payment** — For collecting payments
 4. Enter a **Title** and optional **Description** for the question. The description appears under the question when people fill out the form, so use it for hints like "Include any allergies we should know about."
-5. Check **Require an answer** if the field is mandatory.
-6. Click **Save**.
-7. Repeat to add more questions.
+5. Fill in the extra fields for the type you chose:
+   - For text, number, date, email, and phone questions, an optional **Placeholder** shows sample text inside the empty box.
+   - For **Multiple Choice** and **Checkbox**, add each option under **Choices**: enter a **Value** (what is saved) and **Text** (what people see), then click the add button. Click the remove icon to take an option off.
+   - For **Payment**, choose the **Fund** the money goes to and the **Amount**.
+6. Check **Require an answer for this question** if the field is mandatory. (Payment questions don't have this option.)
+7. Click **Save**.
+8. Repeat to add more questions.
+
+The **Questions** tab lists each question with its type and whether it is required. Click a question's title to edit it, or click **Delete** in the question's form and confirm to remove it. Use the **Move up** and **Move down** arrows on a row to change the order the questions appear in.
 
 :::warning
 The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields. People who pay on a form without signing in must tick the **I'm not a robot** check before the card is accepted.
@@ -65,16 +76,22 @@ The **Payment** field type requires Stripe to be configured. If you haven't set 
 
 ## Managing Form Members {#managing-form-members}
 
+Stand Alone forms have a **Form Members** tab for giving people access to just that form.
+
 1. Open your form and go to the **Form Members** tab.
-2. Search for a person and add them with a role:
+2. In **Add Person**, search for a person and click the add icon next to their name. New members start as **View Only**.
+3. In the **Permission** column, click the role you want:
    - **Admin** — Can edit the form and view all submissions.
    - **View Only** — Can view submissions but cannot edit the form.
+4. Turn on **Email Notification** for anyone who should get an email each time the form is submitted.
+
+To take someone off the form, click **Remove** on their row and confirm.
 
 ## Linking a Form to a Group {#linking-a-form-to-a-group}
 
 You can link any Stand Alone form to a group -- for example, a prayer request form for a small group, or a medical release for a youth trip:
 
-1. Open your form's **Details**.
+1. Open the form and click **Edit Form** (or click **Edit** next to the form on the Forms list).
 2. Under **Linked group**, select the group, or leave it set to **None**.
 3. Click **Save**.
 
@@ -88,13 +105,13 @@ A form is closed when it is outside its availability timeframe. Archived forms a
 
 ### Automatically Adding Submitters to a Group {#automatically-adding-submitters-to-a-group}
 
-Linking a form to a group doesn't add anyone to it on its own. To add every submitter to the linked group's roster, also turn on **Create a person record from submissions** in the form's details and click **Save**.
+Linking a form to a group doesn't add anyone to it on its own. To add every submitter to the linked group's roster, also check **Create a person record from submissions** in the form's settings and click **Save**.
 
 Each time someone submits the form, the matched or newly created person is added to the group (existing group members are skipped). This is useful for things like a camp sign-up form that should automatically build the camp's roster group.
 
-### Sending a Follow-up Email
+### Sending a Follow-up Email {#sending-a-follow-up-email}
 
-With **Create a person record from submissions** turned on, you can also email each person who submits the form. Fill in **Follow-up Email Subject** and **Follow-up Email Body** in the form's details. You can use the `{firstName}` and `{churchName}` tokens in both. The email is only sent when both fields are filled in.
+With **Create a person record from submissions** checked, you can also email each person who submits the form. Fill in **Follow-up Email Subject** and **Follow-up Email Body** in the form's settings. You can use the `{firstName}` and `{churchName}` tokens in both. The email is only sent when both fields are filled in.
 
 :::info
 Follow-up emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
@@ -102,15 +119,28 @@ Follow-up emails only go out after your church has been approved to send group e
 
 ## Duplicating a Form
 
-To reuse a form as a starting point for a new one, click **Duplicate** next to the form in the Forms list and confirm. B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
+To reuse a form as a starting point for a new one, click **Duplicate** next to the form in the Forms list and confirm. A **Form duplicated** message appears, and B1 creates an exact copy of the form — including all questions — which you can then rename and edit independently.
 
 :::tip
 Duplication is handy for recurring events where the registration questions stay the same from year to year. Duplicate last year's form, update the name and dates, and you're ready to go.
 :::
 
-## Configuring Form Properties
+## Configuring Form Properties {#configuring-form-properties}
 
-You can update your form's name and settings at any time. For Stand Alone forms, you will also see a unique **public URL** that you can share with anyone, along with a **Description** field -- text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out.
+You can update your form's name and settings at any time: open the form and click **Edit Form** on the left side of the page, or click **Edit** next to the form on the Forms list. The left side of the form page shows the form's type (**People** or **Stand Alone**) and, for Stand Alone forms, whether it is **Public** or **Restricted** and its unique **public URL** that you can share with anyone.
+
+The **Edit Form** settings are:
+
+- **Form Name** -- The name shown in B1 Admin and at the top of the form.
+- **Description** *(Stand Alone)* -- Text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out.
+- **Header Photo** *(Stand Alone)* -- See [Adding a Header Photo](#adding-a-header-photo).
+- **Form Access** *(Stand Alone)* -- **Public** lets anyone with the link fill in the form; **Restricted** requires people to sign in to your church's site before they can open it.
+- **Set Form Availability Timeframe** *(Stand Alone)* -- Choose **Yes** and set an **Availability Start Date** and **Availability End Date** to accept submissions only between those dates. Outside them, the form is closed.
+- **Thank You Message** -- What people see after they submit (see below).
+- **Display Mode** -- **Standard** shows every question on one page; **Conversational (one question at a time)** steps through the questions one by one.
+- **Create a person record from submissions** *(Stand Alone)*, **Linked group**, and the follow-up email fields -- See [Linking a Form to a Group](#linking-a-form-to-a-group) and [Sending a Follow-up Email](#sending-a-follow-up-email).
+
+Click **Save** to keep your changes. To remove a form permanently, click **Delete** in the form's settings and confirm; to keep it but hide it from the list, [archive](./index.md#what-you-can-do) it instead.
 
 ### Adding a Header Photo {#adding-a-header-photo}
 
