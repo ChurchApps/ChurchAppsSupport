@@ -34,8 +34,8 @@ Above the list, year buttons let you show only the batches from one year, or **A
 ## Creating a New Batch
 
 1. Click **Add Batch** at the top of the page.
-2. Enter a descriptive name (e.g., "Sunday Offering - Feb 9").
-3. Select the date of the collection.
+2. Enter a descriptive name (e.g., "Sunday Offering - Feb 9"). The name is optional, but a clear name makes the batch easier to find later.
+3. Select the date of the collection. It starts on today's date.
 4. Click **Save**.
 
 Your new batch appears in the list, ready for you to add donations.
@@ -43,7 +43,7 @@ Your new batch appears in the list, ready for you to add donations.
 ## Working with Batches
 
 - **View donations** -- click a batch name to open it and see all the individual donations it contains. From there you can add, edit, or remove donations, or click **Import CSV** to add many donations at once from a spreadsheet (see [Importing Donations from a CSV File](recording-donations.md#importing-donations-from-a-csv-file)).
-- **Edit batch details** -- click the **Edit** button on a batch row to change its name or date. Only people with **Edit Donations** can delete a batch.
+- **Edit batch details** -- click the **Edit** button on a batch row (or **Edit Batch** at the top of an open batch) to change its name or date. Only people with **Edit Donations** see **Delete** there; deleting a batch removes the donations in it, and if you delete it from the batch's own page you return to the Batches list.
 - **Sort** -- use the column headers to sort batches by name or date.
 - **Export** -- click **Export** at the top of the page to download the batches shown as a spreadsheet (CSV).
 - **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches.
