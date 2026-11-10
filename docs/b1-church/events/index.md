@@ -27,12 +27,12 @@ Tap **All events** at the top of the page to go back. Above the upcoming-event t
 
 ## Registration Status
 
-Events may show different statuses depending on timing and capacity:
+When you open an event's registration page, what you see depends on timing and capacity:
 
-- **Open** -- Registration is available and you can sign up.
-- **Not Yet Open** -- The registration window has not started. Check back after the opening date.
-- **Closed** -- The registration deadline has passed.
-- **Full** -- All available spots have been taken.
+- **Open** -- The registration form appears, with a bar showing how many spots are filled (for example, "4 / 50 spots filled") when the event has a capacity limit.
+- **Registration Not Open** -- The registration window has not started yet. The page shows the opening date, for example "Registration opens Nov 16, 2026." Check back then.
+- **Closed** -- The page says "Registration Not Open" and "Registration for this event has closed." The registration deadline has passed.
+- **Event Full** -- All available spots have been taken: "This event has reached its capacity of 50."
 
 :::tip
 If an event is full, you may still be able to join the **waitlist** when your church has enabled it -- you'll be emailed automatically if a spot opens. Otherwise, check back later; spots may open up if someone cancels.
