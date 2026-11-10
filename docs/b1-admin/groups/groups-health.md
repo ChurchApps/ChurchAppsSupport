@@ -33,9 +33,15 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 | **Joined (90d)** | Members who joined in the last 90 days |
 | **Left (90d)** | Members who left in the last 90 days |
 | **Churn (90d)** | Net churn rate as a percentage over 90 days |
-| **Avg Attendance** | Average headcount per attendance session |
+| **Avg Attendance** | Average headcount per attendance session, or "-" if no attendance has been recorded |
+| **Avg Age** | Average age of members with a birth date on file |
+| **Female** / **Male** | How many members are female and male |
 
-Click any column header to sort the table by that column. Click again to reverse the sort direction.
+The table starts sorted by name. Click any column header to sort the table by that column. Click again to reverse the sort direction. Click **Groups** at the top of the page to go back to the Groups list.
+
+## One Group's Health
+
+Each group's own page has a **Health** section with a one-line summary (members, joined, and left in the last 90 days). Click **See health** to open the group's health view: its **Members**, **Joined (90d)**, **Left (90d)**, and **Churn (90d)** numbers, a **Membership Changes (12 months)** chart, an **Attendance Trend** chart for groups that track attendance, and **Age** and **Gender** charts of its members.
 
 ## Using Health Data
 
