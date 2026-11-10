@@ -25,9 +25,9 @@ Organize your groups into categories so members can easily find what they're loo
 
 Follow the [Creating Groups](../groups/creating-groups.md) guide to:
 
-1. Create categories to organize your groups (e.g., "Small Groups", "Bible Studies", "Ministry Teams", "Committees")
-2. Create groups within each category (e.g., "Tuesday Night Men's Group", "Women's Bible Study", "Youth Ministry")
-3. Add a description and meeting time for each group
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Groups** and click **Add Group**
+2. Enter a **Category Name** to organize your groups (e.g., "Small Groups", "Bible Studies", "Ministry Teams", "Committees") and the group's **Name** (e.g., "Tuesday Night Men's Group", "Women's Bible Study"), then click **Add**
+3. Open the group, click **Edit**, and fill in the **Meeting Time**, **Meeting Location**, and **Description**. Set **Enrollment** to choose whether people can join right away, must request to join, or are added only by leaders
 
 ## Step 2: Add Members & Leaders
 
@@ -35,7 +35,7 @@ Populate your groups with members and designate leaders who can manage their own
 
 Follow the [Group Members](../groups/group-members.md) guide to:
 
-1. Search for people and add them to the appropriate groups
+1. On the group page, click **All members** and search for people in the **Add Person** box to add them
 2. Designate group leaders using the star icon (**Make Leader**) — leaders get extra permissions
 
 :::tip
@@ -49,7 +49,8 @@ Give each group its own calendar for meetings and events.
 Follow the [Group Calendar](../groups/group-calendar.md) guide to:
 
 1. Add recurring meetings (e.g., "Every Tuesday at 7 PM") and one-time events (e.g., "Group Cookout - March 15")
-2. Group leaders can add and manage events for their own group
+2. Group leaders add and manage events for their own group on B1.church
+3. In B1 Admin, you can schedule a whole season of meetings at once: open the group, click **All events** in the **Calendar** section, and click **+ Add Events**
 
 ## Step 4: Create a Church-Wide Calendar
 
@@ -57,21 +58,22 @@ Aggregate events from all your groups into one unified calendar for the whole ch
 
 Follow the [Creating Calendars](../calendars/creating-calendars.md) and [Curated Calendar](../calendars/curated-calendar.md) guides to:
 
-1. Create a curated calendar that pulls events from multiple groups into one unified view
-2. Share the ICS subscription link so members can add events to their personal calendar apps (Google Calendar, Apple Calendar, Outlook)
+1. In the Jump menu, choose **Calendars > Calendars**, click **Add Calendar**, enter a **Calendar Name**, and click **Create**
+2. Open the calendar, click **Add Group**, pick a group, and choose **Add all the events of the group** (or only specific events). Repeat for each group
+3. Click **Subscribe** to share the ICS subscription link so members can add events to their personal calendar apps (Google Calendar, Apple Calendar, Outlook)
 
 :::info
-A curated calendar automatically aggregates events from the groups you connect. When a group leader adds an event, it shows up on the church calendar too.
+When you add all of a group's events, the curated calendar picks up new events automatically — when a group leader adds an event, it shows up on the church calendar too.
 :::
 
 ## Step 5: Publish to Your Website
 
 Make your groups and calendar visible to visitors and members on your B1 website.
 
-Follow the [Managing Pages](../website/managing-pages.md) guide to:
+Follow the [Page Editor](../website/page-editor.md) guide to:
 
-1. Add a Calendar section to your B1 website to display the curated calendar
-2. Add a Groups section so visitors can browse available groups and learn how to join
+1. Add a **Calendar** element to a page on your B1 website to display the curated calendar
+2. Add a **Groups Browser** (or **Group List**) element so visitors can browse available groups and learn how to join
 
 ## Step 6: Member Experience
 
