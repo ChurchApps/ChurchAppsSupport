@@ -19,7 +19,7 @@ The Live Stream Times page lets you configure your church's streaming schedule, 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need the **contentApi.streamingServices.edit** permission. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
+- You need the **Edit Services** permission in the **Content** section of your role. See [Roles & Permissions](../settings/roles-permissions.md) if you do not have access.
 - Have your YouTube Channel ID ready if you plan to use automated live streaming
 - Add at least one [sermon](./managing-sermons.md) or permanent live URL to use as your stream source
 
@@ -32,20 +32,22 @@ Live streaming is managed from two pages in the **Sermons** section of the Jump 
 ### Adding a Service
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Sermons**, and click **Live Stream Times**.
-2. Click the **Add Service** button at the top of the page to create a new scheduled service. Existing services are listed in a table showing each service's name, time, provider, and duration; click the edit icon on a row to change it.
-3. Enter a **Service Name** (for example, "Sunday Morning").
-4. Set the **Service Time** -- choose the day and time your service begins.
-5. Set **Recurs Weekly** to **Yes** for regular weekly services, or **No** for a one-time event.
+2. Click the **Add Service** button at the top of the page to create a new scheduled service. Existing services are listed in a table showing each service's name (with a **Weekly** badge for recurring services), time, provider, and duration; hover over a row and click the edit icon to change it.
+3. Enter a **Service Name** (for example, "Sunday Morning"). New services start as "Sunday Morning".
+4. Set the **Service Time** -- choose the date and time your service begins. New services start at 9:00 AM next Sunday.
+5. Set **Recurs Weekly** to **Yes** (**Weekly**) for regular weekly services, or **No** (**One-time**) for a one-time event.
 
 ### Configuring Chat and Video Settings
 
-6. Under **Chat Settings**, set how many minutes before and after the service the chat should be enabled. This lets visitors start chatting before service begins and continue afterward.
-7. Under **Video Settings**, set how early to start the video stream for countdown or pre-service content. Chat opens that many minutes *before* the early video starts, so the time shown next to the chat's minutes-before setting counts both numbers. For example, a 10:00 service with 15 minutes of chat before and a 5-minute early start opens chat at 9:40.
-8. Select which sermon to play from the dropdown:
-   - **Latest Sermon** -- Automatically plays your most recently added video.
-   - **Current Live Service** -- Plays your current live stream from YouTube using your Channel ID.
-   - You can also choose any specific sermon you have already saved.
-9. Click **Save** to schedule your service.
+6. Under **Chat Settings**, set **Enable Chat - Minutes Before** and **Enable Chat - Minutes After** -- how many minutes before and after the service the chat should be enabled (10 each for a new service). This lets visitors start chatting before service begins and continue afterward. The time next to each box shows when chat opens and closes.
+7. Under **Video Settings**, set **Start Video Early** -- how many minutes early to start the video stream for countdown or pre-service content. Chat opens that many minutes *before* the early video starts, so the time shown next to the chat's minutes-before setting counts both numbers. For example, a 10:00 service with 15 minutes of chat before and a 5-minute early start opens chat at 9:40.
+8. Select what to play from the **Sermon** dropdown:
+   - **Latest Sermon** (**Auto**) -- Automatically plays your most recently added video.
+   - Your [permanent live URLs](#setting-up-your-youtube-live-stream), listed next -- each plays your channel's current live stream from YouTube using your Channel ID. A new one is named **Current Live Service** unless you rename it.
+   - Below them, any specific sermon you have already saved.
+9. Click **Save** to schedule your service, or **Cancel** to close the form.
+
+To remove a service, edit it, click **Delete**, and confirm.
 
 :::info
 Your service will automatically update each week if set to recurring. It stays at the same local time when daylight saving time starts or ends. You can add as many services as you need. Visitors will see the next scheduled service time when they visit your streaming page.
@@ -53,15 +55,24 @@ Your service will automatically update each week if set to recurring. It stays a
 
 ## Streaming Page Settings
 
-To customize the tabs and links that appear alongside your live stream, open the Jump menu, expand **Sermons**, and click **Settings**. The **Stream Settings** page shows your **Content Tabs** list.
+To customize the tabs and links that appear alongside your live stream, open the Jump menu, expand **Sermons**, and click **Settings**. The **Stream Settings** page shows your **Content Tabs** list, in the order viewers see them. External link tabs open their link in a new browser tab when you click them.
 
 ### Adding Tabs
 
-1. Click the **Add** button to add a new tab to your live stream page.
-2. Choose a **Link Type**: **External URL** for a custom link, or one of the pre-designed **Chat** or **Prayer** tabs.
-3. For the Chat tab, just give it a name in the **Tab Text** box and the setup is complete.
-4. For a linked tab, enter the tab name, choose an icon by clicking the icon button, and enter the URL.
-5. Your configured tabs will appear on the live streaming page for viewers to access additional resources and interactive features.
+1. Click the **Add** button to add a new tab to your live stream page. The **Create New Tab** dialog opens.
+2. Enter the tab's name in the **Tab Text** box, and choose an **Icon** by clicking the icon button.
+3. Choose a **Link Type**: **External URL** for a custom link (the default), or one of the built-in **Chat** or **Prayer** tabs.
+4. For an External URL tab, enter the address in the **External URL** box. Chat and Prayer tabs need nothing more.
+5. Click **Save Tab**. New tabs are added at the end of the list.
+
+Your configured tabs will appear on the live streaming page for viewers to access additional resources and interactive features.
+
+### Editing, Reordering, and Deleting Tabs
+
+Hover over a tab and use its buttons:
+
+- **Move up** and **Move down** arrows -- Change the order of the tabs.
+- **Edit** (pencil) -- Change the tab's text, icon, type, or URL, then click **Save Tab**. To remove the tab, click **Delete** and confirm in the **Delete Tab** dialog.
 
 ### Previewing Your Stream
 
@@ -71,10 +82,10 @@ On the **Live Stream Times** page, click **View Your Stream** at the top of the 
 
 To connect your YouTube channel for automatic live streaming:
 
-1. Go to **Sermons** and click **Add Sermon**, then select **Add Permanent Live URL**.
-2. The video provider defaults to **Current YouTube Live Stream**. Enter your **YouTube Channel ID**.
-3. Add a title and description, then click **Save**.
-4. In **Live Stream Times**, create a service and select your permanent live URL from the sermon dropdown.
+1. Go to **Sermons** and click **Add Sermon**, then select **Add Permanent Live URL**. The **Edit Permanent Live Url** form opens.
+2. The **Video Provider** defaults to **Current YouTube Live Stream**. Enter your **YouTube Channel ID** (not your channel's URL; click **Get Your Channel Id** for help).
+3. The title starts as **Current Live Service**. Change it if you like, add a description, then click **Save**. Permanent live URLs don't have a playlist or publish date.
+4. In **Live Stream Times**, create a service and select your permanent live URL from the **Sermon** dropdown.
 
 :::tip
 To find your YouTube Channel ID, go to your YouTube channel's advanced settings and copy the Channel ID value.
@@ -95,9 +106,9 @@ To change these, go to **Website** then **Appearance** and update your [Color Pa
 To give team members access to the host-only chat alongside the public chat:
 
 1. In the Jump menu, choose **Settings > Roles**.
-2. Click the plus button and select **Add Custom Role**.
+2. Click **Add role** and select **Add Custom Role**.
 3. Name the role "Streaming Host" and click **Save**.
-4. Click the new role, then click **Add** in the Members section to add people.
+4. Click the new role, then search for people in its member list and add them (see [Adding Users to a Role](../settings/roles-permissions.md#adding-users-to-a-role)).
 5. Scroll down to **Edit Permissions**, expand the **Content** section, and check **Host Chat**.
 
 When hosts log into the live stream page, a private **Host Chat** tab appears alongside the public chat for staff-only conversation during the broadcast.
