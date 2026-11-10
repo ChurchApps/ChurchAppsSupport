@@ -19,7 +19,7 @@ When you open the **Serving** page, you will see your ministries displayed as ta
 Non-admin staff who are members of a ministry can also access the Serving page. They will see only the ministries they belong to and can create and edit plans, assignments, plan types, and the service order for their ministry without needing full admin permissions.
 
 :::tip
-If you are an admin, the tabs show the ministries you belong to (**Mine**). Choose **All** to see every ministry. This is helpful when you need to check assignments across multiple teams. If your church has many ministries, a **Find a ministry** box appears so you can filter the tabs by name.
+If you are an admin, the tabs show the ministries you belong to, plus any ministry that has no members yet (**Mine**). Choose **All** to see every ministry. This is helpful when you need to check assignments across multiple teams. If your church has many ministries, a **Find a ministry** box appears so you can filter the tabs by name.
 :::
 
 ## Sub-Sections
@@ -38,5 +38,5 @@ The Serving section includes these key areas:
 3. Click **Create Plan Type** (or **Add Plan Type**) or choose an existing plan type to start [creating service plans](./plans.md), or explore the [Songs](./songs.md) and [Tasks](./tasks.md) sub-sections.
 
 :::info
-Before you can create plans, you will need to create your Ministries in the Serving area and Teams within each Ministry . 
+Before you can create plans, you will need to create your Ministries in the Serving area and Teams within each Ministry. Select a ministry tab and click **Create Serving Team** (or **New Serving Team**) in the **Serving Teams** list to add one.
 :::
