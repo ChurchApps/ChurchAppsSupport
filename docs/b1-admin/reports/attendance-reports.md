@@ -31,6 +31,10 @@ The Attendance Trend report shows how attendance changes over time for your serv
 
 This report is useful for spotting patterns like seasonal dips, growth trends, or the impact of special events.
 
+:::tip
+The Attendance page's **All years** view also has a **Headcount Trend** tab between the other two, which charts the headcount totals you enter by hand (rather than individual check-ins) for each week. It has the same **Campus**, **Service**, **Service Time**, and **Group** filters.
+:::
+
 ## Group Attendance
 
 The Group Attendance report shows who attended each group session in a date range.

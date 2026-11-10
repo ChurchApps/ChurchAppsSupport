@@ -24,8 +24,8 @@ Need a list of everyone with a birthday or anniversary in a given month — for 
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **People**.
 2. Under the search box, click **Advanced**.
 3. Expand the **Demographics** section and check **Birth Month**, then choose the month.
-4. Run the search — everyone with a birthday that month appears in the results.
-5. To see the dates, switch **View as** to **Table**, then click the **Select columns** icon in the page header and enable the **Birthday** column. Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
+4. The results update as soon as the filter is checked — everyone with a birthday that month appears.
+5. To see the dates, switch **View as** to **Table**, then click the **Select columns** icon in the page header and enable the **Birth Date** column (or **Birthday (No Year)** to leave out the year). Use **Export** to download the list as a spreadsheet if you prefer to sort or print it there.
 
 ## Getting an Anniversary List
 
@@ -42,5 +42,5 @@ Both lists come from the birth date and anniversary fields on each person's prof
 :::
 
 :::info
-Earlier versions of B1 Admin had a separate Reports page for birthdays. That page has been retired — the People search filters above are the current way, and they cover anniversaries too.
+Earlier versions of B1 Admin linked a separate Birthdays report from the menu. That link has been removed — the People search filters above are the current way, and they cover anniversaries too.
 :::

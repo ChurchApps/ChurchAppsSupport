@@ -15,24 +15,27 @@ The Donation Summary report gives you a clear picture of your church's giving ac
 <h4>Before You Begin</h4>
 
 - Ensure donations are being [recorded consistently](../donations/recording-donations.md) in your system
-- You need the appropriate [permissions](../settings/roles-permissions.md) to access financial reports
+- You need the **View Donation Summaries** [permission](../settings/roles-permissions.md)
 
 </div>
 
 ## Running the Report
 
-1. Go directly to **admin.b1.church/reports/donationSummary** in your browser (reports have no entry in the navigation menu — bookmarking the address is the easiest way to get back to it).
-2. Set the **date range** to define the reporting period.
-3. Apply additional filters such as **fund** or other criteria to narrow the results.
-4. The report will display the giving summary for the selected period.
+1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **Donations**, and click **Summary**. The report runs right away for the past year.
+2. Choose **Weekly**, **Monthly**, or **Quarterly** to set how giving is grouped.
+3. In the **Filter Report** panel, set the **Start Date** and **End Date**, optionally pick a **Fund**, and click **Run Report**.
+4. Click **Download Options** and choose **Summary** to download the totals as a CSV, or click the print icon to print the report.
+
+See [Donation Reports](../donations/donation-reports.md#giving-dashboard) for more on this page.
 
 ## What the Report Shows
 
-The Donation Summary report includes:
+The Donation Summary includes:
 
-- **Total donations** -- The overall giving amount for the selected period.
-- **Donor count** -- The number of unique donors who contributed.
-- **Amounts by fund** -- A breakdown of giving across different funds, if applicable.
+- **Total Giving** -- The overall giving amount for the selected period.
+- **Average Gift** and **Total Donations** -- The typical gift size and the number of gifts.
+- **Unique Donors** -- The number of unique donors who contributed.
+- **Amounts by fund** -- A bar chart of giving per week, month, or quarter, broken out by fund.
 
 ## Practical Uses
 
