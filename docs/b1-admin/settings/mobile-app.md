@@ -30,30 +30,34 @@ Tabs configured here appear in the B1 App, which members can [install as a Progr
 ## Accessing Navigation Settings
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Mobile**.
-2. Click **Navigation** (`/mobile/navigation`).
-3. The Navigation page displays your current app tabs.
+2. Click **Navigation** (`/mobile/navigation`). You need the **Edit Content** permission to see it.
+3. The **App Tabs** list shows your current tabs in order, each with its visibility. Tabs inside a folder are indented under it.
+
+The Mobile menu also holds **App Theme**, **Member portal**, **B1 Check-In**, **Labels**, and **Push Notifications**. App Theme and Member portal are covered below; see [Push Notifications](#push-notifications) for scheduling notifications.
 
 ## Adding a New Tab
 
 1. Click the **Add Tab** button at the top of the page.
 2. Fill in the tab details:
-   - **Name** -- The label that appears on the tab (for example, "Sermons" or "Give").
+   - **Tab Name** -- The label that appears on the tab (for example, "Sermons" or "Give").
    - **Icon** -- Click the icon selector to choose an icon for your tab.
    - **Image** -- Click **Select Image** (or **Change Image**) to give the tab a photo. Tabs with a photo appear as photo tiles on the app's Home screen -- see [Home Screen Tiles](#home-screen-tiles).
-   - **Tab Type** -- Select from options like Bible, Live Stream, Donation, Registrations, Requests, Website, and more. **Registrations** opens the member's event registrations; **Requests** opens My Requests, where a member can request an event and see the status of past requests. Set Visibility to Logged-in Users or Members & Staff for these, since they need a signed-in member.
-   - **URL** -- Enter the web address the tab should link to.
-   - **Visibility** -- Control who can see this tab (everyone, members only, etc.). For a **Member Directory** tab, this only controls who sees the tab itself; who can open the directory is set by **Show in Directory** on the Member portal page (see [Member Directory & Messaging Settings](#member-directory--messaging-settings)).
+   - **Tab Type** -- **Bible**, **Live Stream**, **Verse of the Day**, **Sermons**, **Check-in**, **Donation**, **Member Directory**, **My Groups**, **Volunteer Opportunities**, **Serving Plans**, **Registrations**, **Requests**, **External URL**, **Internal Page**, or **Folder**. **Registrations** opens the member's event registrations; **Requests** opens My Requests, where a member can request an event and see the status of past requests. Set Visibility to Logged-in Users or Members & Staff for these, since they need a signed-in member.
+   - **URL** -- Shown for **External URL** tabs: the web address the tab opens.
+   - **Page** -- Shown for **Internal Page** tabs: pick one of your website's pages.
+   - **Parent tab** -- Put the tab inside a **Folder** tab, or leave it on **None (top level)**. See [Where These Tabs Appear](#where-these-tabs-appear).
+   - **Visibility** -- Who can see this tab: **Everyone (including anonymous)**, **Logged-in Users**, **Members & Staff**, **Staff Only**, **Serving Team Members**, or **Specific Groups...** (then check the groups). For a **Member Directory** tab, this only controls who sees the tab itself; who can open the directory is set by **Show in Directory** on the Member portal page (see [Member Directory & Messaging Settings](#member-directory--messaging-settings)).
 3. Click **Save Tab** to add it to your app.
 
 ## Editing an Existing Tab
 
-1. Click on any existing tab in the **App Tabs** list.
-2. Update the tab's name, icon, URL, type, or visibility settings.
-3. Click **Save Tab** to apply your changes.
+1. Click the edit (pencil) icon on a tab in the **App Tabs** list.
+2. Update the tab's name, icon, image, type, or visibility settings.
+3. Click **Save Tab** to apply your changes. To remove the tab, click **Delete Tab** instead. Deleting a folder moves its tabs back to the top level.
 
 ## Reordering Tabs
 
-You can change the order in which tabs appear in the mobile app. Drag and drop tabs in the list to rearrange them. The order shown on this page matches the order your members will see in the app.
+You can change the order in which tabs appear in the mobile app. Use the **Move Up** and **Move Down** arrows on each tab to rearrange them. Tabs inside a folder move within that folder. The order shown on this page matches the order your members will see in the app.
 
 :::info
 Some tabs may appear automatically when certain conditions are met -- for example, a Live Stream tab may show up when a stream is active. Manually added tabs give you full control over what your members see at all times.
@@ -63,13 +67,23 @@ Some tabs may appear automatically when certain conditions are met -- for exampl
 Keep your tab count manageable. Three to five tabs works well for most churches. Too many tabs can make navigation confusing for your members.
 :::
 
+## App Theme {#app-theme}
+
+**Mobile > App Theme** (`/mobile/theme`) sets the colors used by the B1 app, the member portal, and the check-in kiosk. You need the **Edit Church Settings** permission.
+
+1. Expand **Light Mode** or **Dark Mode**.
+2. For each color -- **Background**, **Surface**, **Primary**, **Primary Contrast** (text on primary-colored buttons and headers), **Secondary**, and **Text Color** -- click the swatch to pick a color, or type it in the **Hex** box. The **Preview** below shows a header, a card, and a button in your colors.
+3. Click **Save**.
+
+Click **Reset to Defaults** to go back to the standard colors. B1 Admin's own **Custom** theme also uses the light-mode **Primary** color -- see [Managing Your Profile](../profile/managing-profile.md).
+
 ## Member Directory & Messaging Settings
 
-The **Member portal** item in the same Mobile section holds the settings that govern the member directory and private messaging in the B1.church experience:
+The **Member portal** item in the same Mobile section (`/mobile/b1-mobile`, titled **Portal settings**) holds the settings that govern the member directory and private messaging in the B1.church experience. You need the **Edit Church Settings** permission. Change any of the settings below and click **Save** at the bottom of the page:
 
 - **Directory Approval Group** -- The group that reviews member directory updates, and [account deletion requests](../profile/account-deletion.md), before they take effect.
 - **Show in Directory** -- Who can open the member directory and who is listed in it: **Admins Only**, **Members and Above** (the default), **Regular Attendees and Above**, or **Visitors and Above**. People whose membership status is below the level you pick don't see the directory and aren't listed in it. **Admins Only** closes the directory to everyone except staff with the People &gt; View permission (a Staff membership status alone isn't enough), who can always open the directory and see everyone, whatever this is set to. Guests are never included, since anyone who self-registers online starts out as a guest.
-- **Visibility Preference** -- Sets the church-wide default for members who haven't chosen their own setting yet. **Address**, **Phone Number**, and **Email** each have their own dropdown, with the same five levels available everywhere visibility is configured:
+- **Visibility Preference** -- Sets the church-wide default for members who haven't chosen their own setting yet. **Address**, **Phone Number**, and **Email** each have their own dropdown (each starts at **Members**), with the same five levels available everywhere visibility is configured:
   - **Everyone** -- visible to anyone, including anonymous visitors
   - **Members** -- visible only to people with a Member or Staff record
   - **Groups Only** -- visible only to people who share a group with this person, plus staff
@@ -123,6 +137,18 @@ Both are off by default. A section only appears for members who are signed in an
 - **Show News on Home** -- Adds a **News** section right under the greeting that shows your five latest published [blog posts](../website/blog.md) as photo cards in a row that moves along on its own. Tapping a card opens the full post inside the app, and an **All news** link lists your recent posts. Once it is on, **Only this category** lets you pick one blog category (for example, *Announcements*) so only those posts appear; leave it on **All posts** to show everything. News shows for everyone who opens the app, signed in or not, because blog posts are public on your website. It is off by default and only appears when you have at least one published post.
 
 Click **Save** to apply.
+
+## Push Notifications {#push-notifications}
+
+**Mobile > Push Notifications** (`/mobile/notifications`) sends or schedules a push notification to people who have the B1 app installed with notifications turned on. You need **Edit Content** to send to everyone, or **Edit Group Members** to send to a group.
+
+1. Click **Send Notification**.
+2. Choose the **Audience**: **Everyone with the app**, or one of your groups.
+3. Enter a **Title** and **Message**, and optionally an **Open link or flyer URL** and an **Image URL** (the same fields as a [group notification](../groups/group-members.md#sending-push-notifications-to-group-members)).
+4. Under **When**, keep **Send now**, or choose **Schedule for later** and pick a **Send at** time in the future.
+5. Click **Send Notification** (or **Schedule Notification**).
+
+The page lists **Scheduled** notifications (with **Edit**, **Send now**, and **Cancel** on each) and **Recent** ones with their status, such as *Sent: 12 of 15*, *Cancelled*, or *Missed (the send time passed)*. Click **Remove** to take a finished notification off the list, or **Clear all** to remove every sent, failed, and cancelled one. Times are shown in your church's [time zone](./church-settings.md#time-zone), or your computer's if the church has none set. Who receives a scheduled notification is worked out again when it goes out.
 
 ## Where These Tabs Appear
 
