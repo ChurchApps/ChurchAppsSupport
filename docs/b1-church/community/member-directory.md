@@ -16,7 +16,7 @@ The member directory lets you browse and search for people in your church. Wheth
 <h4>Before You Begin</h4>
 
 - You must be [logged in](../getting-started/logging-in.md) to your B1.church account.
-- Who can open the directory follows your church's **Show in Directory** setting: **Admins Only**, **Members and Above** (the default), **Regular Attendees and Above**, or **Visitors and Above**. People below that level see a "Members Only" message instead. Staff with the People > View permission can always open it, and with **Admins Only** they are the only ones who can -- even people with a Staff membership status can't. People with a Guest or Inactive status never can. See [Member Directory & Messaging Settings](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
+- Who can open the directory follows your church's **Show in Directory** setting: **Admins Only**, **Members and Above** (the default), **Regular Attendees and Above**, or **Visitors and Above**. People below that level see a "Members Only" message instead, and signed-out visitors see "Sign in required" with a **Sign In** button. Staff with the People > View permission can always open it, and with **Admins Only** they are the only ones who can -- even people with a Staff membership status can't. People with a Guest or Inactive status never can. See [Member Directory & Messaging Settings](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
@@ -31,15 +31,15 @@ Type a name into the **Search Members** box at the top of the list. The list fil
 
 ## Browsing the Directory
 
-Members are grouped under letter headings (A, B, C, and so on) by the first letter of their first name, and sorted by last name within each letter. Each entry shows the member's photo, display name, and membership status, making it easy to scan through the list.
+Members are grouped under letter headings (A, B, C, and so on) by the first letter of their last name, and sorted by last name and then first name within each letter. Names that don't start with a letter are listed under **Other** at the end. Each entry shows the member's photo, display name, and membership status, making it easy to scan through the list. If nobody matches your search, you'll see "No members found".
 
 ## Viewing a Member Profile
 
-Tap any member in the list to open their profile. The profile shows the member's name, photo, and membership status, with buttons to **Message** them, **Call** them, or send a **Text** when that information is available. Below that, the **Contact Information** section shows the details your church and the member have chosen to share, such as email, phone, and address, and **Household Members** lists the other people in their household.
+Tap any member in the list to open their profile. The profile shows the member's name, photo, and membership status, with buttons to **Message** them, **Call** them (their mobile phone, or their home phone if there's no mobile number), or send a **Text** (mobile phone only) when that information is available. Below that, the **Contact Information** section shows the details your church and the member have chosen to share, such as email, phone, and address, and **Household Members** lists the other people in their household. Tap the email address to write them an email, or the address to open it in Google Maps. If they haven't shared any contact details with you, you'll see "Contact info not available".
 
-**Message** opens a private conversation with that person. You can make text bold or italic, or add a list, by highlighting it and using the toolbar that appears -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
+**Message** opens a private conversation with that person -- see [Messages and Notifications](./messages.md). You can make text bold or italic, or add a list, by highlighting it and using the toolbar that appears -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
 
-You can tap household members within a profile to navigate to their profiles as well. On your own profile, an **Edit profile** button takes you to [Editing Your Profile](../getting-started/editing-your-profile.md).
+You can tap household members within a profile to navigate to their profiles as well. On your own profile, an **Edit profile** button takes you to [Editing Your Profile](../getting-started/editing-your-profile.md) in place of the **Message**, **Call**, and **Text** buttons.
 
 :::info
 The information visible in each profile depends on your church's privacy and directory settings. Not all fields may be shown for every member.
