@@ -15,7 +15,7 @@ Campaigns let you run a fundraising drive toward a specific goal — a building 
 <h4>Before You Begin</h4>
 
 - Set up your [donation funds](./funds.md) — each campaign is tied to a fund
-- You need access to the Donations section of B1 Admin
+- You need the **View Donation Summaries** permission to see campaigns, and **Edit Donations** to add or change campaigns and pledges
 
 </div>
 
@@ -28,10 +28,13 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 1. Click **Add Campaign** at the top of the page.
 2. Fill in the campaign details:
    - **Name** *(required)* — the display name for this campaign (for example, "Building Fund 2026").
-   - **Fund** — the donation fund this campaign is associated with.
-   - **Start Date** / **End Date** — the fundraising window.
-   - **Goal** — the target dollar amount for the campaign.
-3. Click **Save**.
+   - **Fund** *(required)* — the donation fund this campaign is associated with.
+   - **Goal Amount** *(optional)* — the target amount for the campaign. Without a goal, the campaign shows no progress bar.
+   - **Start Date** *(required, starts on today)* and **End Date** *(optional)* — the fundraising window. With no end date, the campaign shows as **Ongoing**.
+   - **Description** — a short description of the campaign.
+   - **Show progress on giving page** — show the campaign's progress to donors on your giving page.
+   - **Allow donors to pledge** — let donors make their own pledges to the campaign.
+3. Click **Save**. If the name, fund, or start date is missing, the form says which one to fill in.
 
 ## Tracking Progress
 
@@ -50,12 +53,11 @@ Pledges are commitments from members to give toward a campaign. To record a pled
 
 1. Open a campaign.
 2. Click **Add Pledge** at the top of the page.
-3. Select the **person** making the pledge.
-4. Enter the pledge **amount**.
-5. Optionally set a **date** for the pledge commitment.
-6. Click **Save**.
+3. Search for the **person** making the pledge and add them.
+4. Enter the **Pledge Amount**. It must be greater than zero.
+5. Click **Save**.
 
-Pledges appear in the campaign detail and contribute to the **Pledged** total in the campaign list. To change a pledge, click **Edit** on its row.
+Pledges appear in the campaign detail and contribute to the **Pledged** total in the campaign list. To change a pledge amount, click **Edit** on its row; to remove the pledge, click **Edit** and then **Delete**.
 
 :::tip
 Pledges are separate from actual donations. A pledge tracks a commitment; a donation records the actual gift. Both are shown on the campaign so you can see how well pledges are being fulfilled.
@@ -63,7 +65,7 @@ Pledges are separate from actual donations. A pledge tracks a commitment; a dona
 
 ## Editing or Deleting a Campaign
 
-Click **Edit** on any campaign row (or **Edit Campaign** at the top of the campaign's detail view) to update its name, goal, dates, or fund. Click **Delete** to permanently remove the campaign and its pledges. Deleting a campaign does not delete any donations that were recorded to its fund.
+Click **Edit** on any campaign row (or **Edit Campaign** at the top of the campaign's detail view) to update any of its details. In the edit form, click **Delete** to permanently remove the campaign and its pledges; you return to the campaign list. Deleting a campaign does not delete any donations that were recorded to its fund.
 
 ## Related Articles
 
