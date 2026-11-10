@@ -27,15 +27,17 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 1. Click **Add Campus**.
 2. Fill in the campus details:
    - **Name** *(required)* — the display name shown throughout B1 Admin (for example, "Main Campus" or "North Campus").
-   - **Address** — the campus street address (used for informational display; not the same as your main church address in Church Settings).
+   - **Address** and **Address Line 2** — the campus street address (used for informational display; not the same as your main church address in Church Settings).
    - **City / State / Zip** — the campus location.
    - **Time Zone** — the IANA time zone for this campus (for example, *America/Chicago*). [Check-in schedules](../attendance/setup.md#setting-a-check-in-schedule) for services at this campus open and close in this time zone. If it's set to **None**, your church's [Time Zone](./church-settings.md#time-zone) is used instead. Useful when campuses are in different time zones.
    - **Website** — an optional URL for this campus's own web presence.
 3. Click **Save**.
 
+The list shows each campus's **Name**, **Location** (city and state), and **Time Zone**, and the **Campuses** item in the left-hand list shows how many locations you have.
+
 ## Editing a Campus
 
-Click any campus row in the list to open its editor in the panel to the right. Update the fields and click **Save**.
+Click any campus row in the list to open its editor in the panel to the right. Update the fields and click **Save**, or **Cancel** to close the editor without saving.
 
 ## Deleting a Campus
 

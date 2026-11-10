@@ -14,7 +14,7 @@ Email Templates let you save reusable email content -- a welcome message, an eve
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need access to the Settings area in B1 Admin.
+- You need the **Edit Church Settings** permission (the **Email Templates** menu item only shows with it). People with **Edit Group Members** can also open the page directly at **/settings/email-templates**.
 
 </div>
 
@@ -22,7 +22,7 @@ Email Templates let you save reusable email content -- a welcome message, an eve
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Settings**.
 2. Click **Email Templates**.
-3. You will see a list of existing templates with their subject, category, and last modified date.
+3. You will see a list of existing templates with their **Name**, **Subject**, **Category**, and **Modified** date.
 
 ## Creating a Template
 
@@ -70,7 +70,7 @@ Saved templates are available to select from when composing an email to people o
 
 ## Editing and Deleting
 
-Click the **Edit** icon next to a template to update it, or the **Delete** icon to remove it permanently.
+Click **Edit** on a template's row to update it, or **Delete** to remove it permanently. B1 asks you to confirm before deleting.
 
 ## Next Steps
 

@@ -18,7 +18,7 @@ description: "Define custom fields in B1 Admin to track extra person details, li
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need **People** edit permission to define fields and to fill in values, and access to the **Settings** area. Anyone with People view permission can see the values. See [Roles & Permissions](./roles-permissions.md).
+- You need the **Edit Church Settings** permission to open the Settings page (and to save the Titles list), plus **People** edit permission to define fields and fill in values. Anyone with People view permission can see the values. See [Roles & Permissions](./roles-permissions.md).
 - Decide what you want to track and which type fits best (text, a number, a date, a yes/no answer, or a pick-list) before you start.
 
 </div>
@@ -33,7 +33,7 @@ The **Titles** card at the top of the Custom Fields section lists the titles off
 
 1. Type a title in **New title** (up to 10 characters), such as *Deacon* or *Elder*, and click **Add Title**.
 2. To take a title off the list, click the **×** on its chip.
-3. Click **Save**.
+3. Click **Save**. A *Titles saved.* message confirms the change. Adding a title that's already in the list shows *That title is already in the list.*
 
 :::tip
 The Title box still accepts typing, so staff and members can enter a title that is not listed. Removing a title from the list does not change people who already have it.

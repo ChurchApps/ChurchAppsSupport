@@ -30,33 +30,48 @@ Roles let you control what different users can access within your ChurchApps acc
 2. Click **Roles**.
 3. The Roles page displays all currently defined roles for your church. The **Members** column shows how many users are in each role, and the **(Everyone)** row shows **All users**.
 
-## Understanding the Roles Page
+## Creating a Role
 
-The Roles page is divided into two panels:
+Click **Add role** at the top of the Roles page. The menu offers:
 
-- **Left side** -- Shows the list of members assigned to the selected role.
-- **Right side** -- Displays the permission settings you can configure for that role.
+- **Add Custom Role** -- Opens an **Edit Role** form above the list. Enter a **Role Name** and click **Save**. The new role starts with no permissions.
+- **Add "Accounting" Role**, **Add "Church Staff" Role**, **Add "Content Admin" Role**, and **Add "Lessons Admin" Role** -- Ready-made roles with a sensible set of permissions already checked. B1 asks you to confirm, then creates the role. You can change its permissions afterward like any other role.
 
-Click on any role name to view and manage its members and permissions.
+## Renaming or Deleting a Role
+
+Hover over a role's row and click **Edit**. In the **Edit Role** form, change the **Role Name** and click **Save**, or click **Delete** and confirm to remove the role. The **Domain Admins** role can't be deleted.
+
+## Understanding a Role's Page
+
+Click a role's name to open its page. It has two panels:
+
+- **Members** (left) -- The people in the role, with their name and email.
+- **Edit Permissions** (right) -- The permissions you can grant to the role.
+
+The **(Everyone)** row opens a page for permissions that apply to every user of your church; it has no member list.
 
 ## Adding Users to a Role
 
-1. Select the role you want to add members to.
-2. Use the **search field** on the left side to find the person you want to add.
-3. Select the person from the search results.
-4. They will be added to the role immediately.
+1. Open the role and click **Add** in the **Members** panel. An **Add To** form for that role opens.
+2. Type a name or email in the search box and click the search button.
+3. Click the add button next to the person. They're added to the role right away, and B1 offers to send them an invite email so they can sign in.
+4. If the person isn't in your church yet, click **Create New User** under the search results, enter their **First Name**, **Last Name**, and **Email**, and click **Save**.
+
+To change a member's name or email, click the edit icon on their row.
 
 ## Removing Users from a Role
 
-1. Select the role containing the user you want to remove.
-2. Find the person in the member list on the left side.
-3. Click the **remove button** next to their name.
+1. Open the role containing the user you want to remove.
+2. Find the person in the **Members** list.
+3. Click the delete icon on their row and confirm.
+
+Your church must always have at least one Domain Admin, so the last member of **Domain Admins** can't be removed.
 
 ## Configuring Permissions
 
 Each role can be granted access to specific areas of B1 Admin. In the **Edit Permissions** panel, permissions are grouped into sections you can expand, such as **Attendance**, **Content**, **Donations**, **Forms and Plans**, **Lessons**, **Messaging**, **People and Groups**, and **Tasks**. Type in the **Filter permissions** box to show only the permissions that match.
 
-Check or uncheck a permission to grant or remove it for the role. Each section heading shows how many of its permissions the role has, such as **2 of 5**, and the count updates as you check and uncheck boxes.
+Check or uncheck a permission to grant or remove it for the role. Each change saves right away; there is no Save button. Note that **Edit Church Settings**, which opens the Settings page, is in the **Content** section. Each section heading shows how many of its permissions the role has, such as **2 of 5**, and the count updates as you check and uncheck boxes.
 
 ### Donations Permissions
 

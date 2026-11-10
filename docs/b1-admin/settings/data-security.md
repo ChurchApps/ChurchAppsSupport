@@ -38,7 +38,7 @@ We use the industry standard best practices for security, including encrypting a
 
 ## Data Segregation
 
-Data is separated into different databases based on scope. Each of our APIs (Membership, Giving, Attendance, Messaging, Doing and Lessons) are independent silos of data with their own databases. If one of them is compromised, the usefulness of the data is limited without others also being compromised. For example, if the Giving API/database was to be compromised, a bad actor could potentially gain access to a list of donations and dates (but never card/bank data). However, they would not have access to which users made the donations or which churches they were for as that data is stored in the separate Membership database.
+Data is separated into different databases based on scope. Each of our modules (Membership, Giving, Attendance, Messaging, Doing and Content) is an independent silo of data with their own databases. If one of them is compromised, the usefulness of the data is limited without others also being compromised. For example, if the Giving API/database was to be compromised, a bad actor could potentially gain access to a list of donations and dates (but never card/bank data). However, they would not have access to which users made the donations or which churches they were for as that data is stored in the separate Membership database.
 
 :::info
 Data segregation means that compromising one system does not give access to all church data. Each API operates independently with its own database, limiting the impact of any potential breach.
@@ -60,7 +60,7 @@ ChurchApps supports GDPR compliance for churches with members in the UK or Europ
 
 ChurchApps provides tools to help churches respond to data subject requests:
 
-- **Right of Access (Article 15)** — Members can request a copy of their personal data by contacting their church. Administrators can export any person's data from the **Data Management** section on the person detail page in B1.church Admin.
+- **Right of Access (Article 15)** — Members can request a copy of their personal data by contacting their church. Administrators can export any person's data with **Export Data** on the person's record, or from the **Data Management** section of the person's edit form, in B1.church Admin.
 - **Right to Erasure (Article 17)** — Members can request account deletion themselves from their Profile page (see [Reviewing Account Deletion Requests](../profile/account-deletion.md)), or by contacting their church directly. Administrators can also anonymize a person's data across all modules from the **Data Management** section on the person detail page. Anonymization replaces personal information with generic values while preserving aggregate records (donation totals, attendance counts) needed for church financial reporting.
 - **Right to Restriction (Article 18)** — Members can request restriction of processing by contacting their church, including opting out of communications.
 - **Right to Data Portability (Article 20)** — Administrators can export personal data in a structured, machine-readable JSON format on behalf of members who request it.
@@ -72,7 +72,7 @@ To access GDPR data tools for an individual:
 1. Go to **People** in B1 Admin and open the person's record.
 2. Click **Edit** to enter edit mode.
 3. Scroll down to the **Data Management** section (collapsed by default) and click to expand it.
-4. Use **Export Data** to download a JSON file of all data stored for that person.
+4. Use **Export Data** to download a JSON file of all data stored for that person. (The same **Export Data** link is also among the actions under the person's name, without opening the edit form.)
 5. Use **Anonymize** to replace personal information with generic values. You will be asked to type `ANONYMIZE` to confirm — this action cannot be undone.
 
 :::warning
