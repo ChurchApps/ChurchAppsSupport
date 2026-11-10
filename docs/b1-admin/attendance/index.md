@@ -15,13 +15,13 @@ The Attendance section in B1 Admin gives you a complete view of who is showing u
 
 To open the page, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **People**, and click **Attendance**. The page opens on a summary of **this week** (Sunday through Saturday).
 
-The left column shows the week's dates and the total number of people **in the room** -- your headcount total if headcounts were entered this week, otherwise the number of people checked in. Below the total you'll see how many were checked in, counted, and guests, plus a split by service when you have more than one. If no one has checked in yet this week, it shows the last week that had attendance.
+The left column shows the week's dates and the total number of people **in the room** -- your headcount total if headcounts were entered this week, otherwise the number of people checked in. Below the total you'll see how many were checked in, counted, and guests, plus a split by service when you have more than one. If no one has checked in yet this week, it says so and shows the last date attendance was recorded (for example, "Last recorded Jan 25, 2026: 10").
 
 The main area of the page shows:
 
 - **Rooms** -- each group people checked in to this week, with the number checked in (and a capacity bar for groups with a check-in capacity). Click a group to open it.
 - **Guests** -- people who checked in as guests this week. Click a name to open their record.
-- **Last 13 weeks** -- a small bar chart of weekly check-ins, with how many of those weeks had check-ins.
+- **Last 13 weeks** -- a small bar chart of weekly check-ins, with how many of those weeks had check-ins. Its **All years** link opens the reports.
 - **Headcounts this week** -- headcounts entered for this week's services.
 
 ## Actions
@@ -30,7 +30,7 @@ The left column also holds the page's actions. Each one opens in the main area; 
 
 ### Setup
 
-Click **Setup** to configure the building blocks of attendance tracking. Here you define your campuses, add services and service times to each campus (including an optional check-in schedule for each service time), and see which [groups](../groups/creating-groups.md) are assigned to those service times. Counts of campuses, service times, scheduled and unscheduled groups, and total groups appear across the top. You only need to do this once, though you can update it whenever your schedule changes. See [Attendance Setup](setup.md) for a full walkthrough.
+Click **Setup** to configure the building blocks of attendance tracking (it appears only for people with the **Edit Services** attendance permission). Here you define your campuses, add services and service times to each campus (including an optional check-in schedule for each service time), and see which [groups](../groups/creating-groups.md) are assigned to those service times. Counts of campuses, service times, scheduled and unscheduled groups, and total groups appear across the top. You only need to do this once, though you can update it whenever your schedule changes. See [Attendance Setup](setup.md) for a full walkthrough.
 
 ### All years (Reports)
 
@@ -42,7 +42,7 @@ Click **Enter headcount** to record a simple total count for a service, service 
 
 ### Kiosk
 
-Click **Kiosk** to open the **Kiosk Theme** settings, where you set the check-in kiosk's background images and idle screen behavior. A **Check-in kiosk, QR, and labels** link takes you to the full [B1 CheckIn settings](check-in.md).
+Click **Kiosk** to open the **Kiosk Theme** settings, where you set the check-in kiosk's background image and idle screen. A **Check-in kiosk, QR, and labels** link takes you to the full [B1 CheckIn settings](check-in.md), which also cover QR guest sign-up and the [label designer](labels.md). The kiosk's colors come from **Mobile > App Theme**.
 
 ## Next Steps
 
@@ -52,6 +52,7 @@ Click **Kiosk** to open the **Kiosk Theme** settings, where you set the check-in
 - [Headcount Entry & Trend](headcount-entry.md) -- record and chart total counts without a named roster
 - [Check-In](check-in.md) -- set up self check-in for services
 - [Check-In Safety](checkin-safety.md) -- room capacities, volunteer ratios, pickup people, and paging
+- [Check-In Label Designer](labels.md) -- design the nametags and pickup slips printed at check-in
 
 :::tip
 If you are setting up attendance for the first time, start with the [Attendance Setup](setup.md) guide to define your campuses and service times. Once that is in place, you can begin [recording attendance](recording-attendance.md) manually or set up [self check-in](check-in.md).
