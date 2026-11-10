@@ -18,6 +18,8 @@ const sidebars: SidebarsConfig = {
       link: { type: 'doc', id: 'b1-admin/index' },
       items: [
         'b1-admin/introduction',
+        'b1-admin/dashboard',
+        'b1-admin/notifications',
         {
           type: 'category',
           label: 'People',
