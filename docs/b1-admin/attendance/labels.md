@@ -16,69 +16,70 @@ The Label Designer lets you create and customize the name tag and pickup slip te
 
 - Set up [Attendance](./setup.md) and configure at least one service time with check-in enabled
 - Set up [Check-In](./check-in.md) so labels are printing
-- You need administrative access to the Attendance section
+- You need the **Edit Attendance** permission
 
 </div>
 
 ## Opening the Label Designer
 
-In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Mobile**, and click **B1 CheckIn**. Then click the **Design Labels** button on the Check-in Labels card. You will see a list of your saved label templates, separated by type: **Nametag** and **Pickup Slip**.
+In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Mobile**, and click **Labels**. You can also click **B1 CheckIn** and then **Design Labels** on the **Check-in Labels** card.
+
+The **Check-in Labels** page lists your saved templates with their **Name**, **Type** (**Nametag** or **Pickup Slip**), and **Size**. If you haven't made any yet, it says **No label templates**, and B1 Checkin prints its built-in nametag and pickup slip.
 
 ## Label Types
 
 - **Nametag** — printed and attached to the child. Typically includes the child's name, their classroom/session, and a security code.
 - **Pickup Slip** — given to the parent or guardian. Typically includes the security code and a list of the children they checked in.
 
-B1 starts you with a default nametag and a default pickup slip template sized for standard 3.5 × 1.1 inch thermal labels.
+Both starting templates are sized for standard 3.5 × 1.1 inch thermal labels (Brother DK-1201).
 
 ## Creating a Label Template
 
-1. Click **Add** and choose a starting point from the menu: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"**, or **Blank**.
-2. A new template opens in the label editor.
+1. Click **Add label** and choose a starting point: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"**, or **Blank**.
+2. The template opens in the label editor, with a preview of the label filled in with sample data.
 
 ### Label Editor
 
-The editor shows a scaled preview of the label at the configured size. Along the left panel you can configure:
+Across the top of the editor you can set:
 
-- **Name** — the template name (for your reference only)
-- **Label Type** — Nametag or Pickup Slip
-- **Width / Height** — label size in inches
+- **Name** — the template name (for your reference only; required)
+- **Type** — Nametag or Pickup Slip
+- **Width (in)** / **Height (in)** — label size in inches
 
 ### Adding Blocks
 
-A label is built from blocks — individual pieces of content positioned on the label canvas. Click **Add Block** to insert a new block and choose its type:
+A label is built from blocks — individual pieces of content placed on the label. Click a button in the **Add Block** panel to add one:
 
-- **Field** — pulls a data value at print time:
-  - `person.displayName` — the person's full name
-  - `sessions` — the service/classroom they checked in to
-  - `securityCode` — the randomly generated pickup security code
-  - `children` — list of children (for pickup slips)
-  - `person.nametagNotes` — any special notes on the person's record
-  - `person.isBirthdayWeek` — true if the person's birthday (month and day) is within 3 days before or after the check-in date
-  - `campus` — the campus name
+- **Fields** — pull a value in at print time. Nametags offer **Display Name**, **First Name**, **Last Name**, **Nickname**, **Nametag Notes** (the notes on the person's record), **Birthday This Week** (true when the person's birthday falls within 3 days before or after the check-in date), **Sessions** (the service times and rooms they checked in to), **Security Code**, **Date**, and **Church Name**. Pickup slips offer **Children**, **Children & Allergies**, **Security Code**, **Date**, and **Church Name**.
 - **Text** — static text you type in (for headings, labels, or instructions)
-- **Barcode** — a barcode encoding the security code
+- **Barcode** — a Code 128 or Code 39 barcode of a field, such as the security code
+- **QR Code** — a QR code of a field
+- **Box** — a rectangle with an optional fill color and border
 
-### Positioning Blocks
+### Positioning and Styling Blocks
 
-Each block has **X**, **Y**, **Width**, and **Height** fields expressed as percentages of the label canvas (0–100). Adjust these to position content precisely. You can also set:
+Drag a block on the label to move it, or click it and use the **Properties** panel. **X**, **Y**, **W**, and **H** are percentages of the label (0–100). Depending on the block, you can also set:
 
-- **Font Size** — text size in points
-- **Bold** — toggle bold text
-- **Align** — left, center, or right text alignment
-- **Condition** — optionally hide the block if a field is empty (for example, only show nametagNotes if it has a value). This also works with `person.isBirthdayWeek` to show a birthday graphic or text only on nametags for kids whose birthday is within a few days of check-in.
+- **Font Size** — text size, relative to the label's height
+- **Bold** and **Italic**
+- **Align** — Left, Center, or Right
+- **Symbology** and **Value** — for barcodes and QR codes
+- **Fill** and **Border** — for boxes
+- **Condition** — **Always** shows the block. Pick a field to show the block only when that field **Is not blank**, **Is blank**, **Equals**, or **Does not equal** a value. For example, show nametag notes only when they are filled in, or show a birthday graphic only when **Birthday This Week** equals `true`.
+
+Click **Remove Block** to delete the selected block.
 
 ### Saving
 
-Click **Save** to save the template. The updated template will be used the next time labels are printed in B1 Checkin.
+Click **Save** to save the template, or **Cancel** to discard your changes. B1 Checkin uses the updated template the next time it loads its settings.
 
-## Reordering Templates
+## Choosing the Default Template
 
-If you have multiple nametag or pickup slip templates, B1 Checkin will use the first template in the list by default. Drag templates to reorder them.
+If you have more than one template of a type, click **Set Default** on the one B1 Checkin should print. It shows a **Default** badge, and any other template of that type stops being the default. If no template of a type is marked default, the kiosk uses the first one.
 
 ## Deleting a Template
 
-Click the delete icon on any template row and confirm. Deleting the last template of a type restores the default built-in template.
+Click **Delete** on the template's row and confirm. If you delete every template of a type, B1 Checkin goes back to its built-in label for that type.
 
 :::tip
 Make a test print after editing a template to confirm the layout looks right before your next service.
@@ -86,6 +87,6 @@ Make a test print after editing a template to confirm the layout looks right bef
 
 ## Related Articles
 
-- [Check-In Setup](./setup.md) — configure services and groups for check-in
-- [Completing Check-In](./check-in.md) — the check-in flow for families
+- [Attendance Setup](./setup.md) — configure services and groups for check-in
+- [Check-In](./check-in.md) — set up the B1 Checkin kiosk
 - [B1 Checkin Getting Started](../../b1-checkin/getting-started/index.md) — the Checkin kiosk app
