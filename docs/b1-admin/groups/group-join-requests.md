@@ -39,7 +39,7 @@ When a group uses the **Request** policy, all join attempts go through the appro
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) and choose **People > Groups**
 2. Click on the group name
-3. The **Members** section shows how many requests are pending. Click **All members** -- pending requests for this group appear at the top of the member list
+3. The **Members** section shows how many requests are pending (for example, "1 pending"). Click **All members** -- pending requests for this group appear under **Pending Requests** at the top of the member list
 
 ### For Administrators
 
@@ -47,26 +47,26 @@ Administrators with group management permissions can view pending requests acros
 
 1. In the Jump menu, choose **People > Groups**
 2. Click the **pending requests** button in the page header (for example, "3 pending requests"). It only appears when there are requests waiting.
-3. Review all pending requests church-wide
+3. The **Pending Join Requests** page lists every pending request church-wide, with the group each person asked to join next to their name. Click **Groups** at the top of the page to go back. When nothing is waiting, the page shows **No pending requests.**
 
 ## Reviewing a Join Request
 
 Each join request shows:
 
-- **Person's name and photo** -- The person requesting to join
+- **Person's name and photo** -- The person requesting to join (and, on the church-wide page, the group)
 - **Optional message** -- A personal message explaining why they want to join (if provided)
 - **Request date** -- When the request was submitted
 
 To review a request:
 
 1. Read the person's message if they provided one
-2. Click on the person's name to view their profile if needed
+2. Click on the person's name to open their profile if needed
 3. Decide whether to approve or decline
 
 ## Approving a Request
 
 1. Click **Approve** on the join request
-2. The person is immediately added to the group as a member
+2. The person is immediately added to the group as a member and the request disappears from the list
 3. The requester receives a notification that their request was approved
 4. The request is marked as approved in the system
 
@@ -77,8 +77,8 @@ When you approve a request, the person becomes a regular group member. You can l
 ## Declining a Request
 
 1. Click **Decline** on the join request
-2. Optionally provide a reason for declining (up to 500 characters)
-3. Click **Confirm**
+2. In the **Decline Request** dialog, optionally enter a **Reason (optional)** (up to 500 characters)
+3. Click **Decline**
 4. The requester receives a notification with your decline reason (if provided)
 5. The request is marked as declined
 
