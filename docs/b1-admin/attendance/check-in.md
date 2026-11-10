@@ -70,28 +70,23 @@ Follow your printer's setup instructions to connect it to the same WiFi network 
 
 ## Customizing the Kiosk Appearance
 
-You can customize the look and feel of the B1 Checkin app to match your church's branding. In B1 Admin, go to **Mobile > B1 CheckIn** and use the **Kiosk Theme** card to configure:
+You can customize the look and feel of the B1 Checkin app to match your church's branding. In B1 Admin, go to **Mobile > B1 CheckIn** (or click **Kiosk** on the Attendance page) and use the **Kiosk Theme** card. Click **Save** on the card after making changes.
 
 ### Colors
 
-Customize eight color settings to match your church branding:
-
-- **Primary** and **Primary Contrast** -- Main brand color and its text color.
-- **Secondary** and **Secondary Contrast** -- Accent color and its text color.
-- **Header Background** and **Subheader Background** -- Colors for the kiosk header areas.
-- **Button Background** and **Button Text** -- Colors for interactive buttons.
+The kiosk uses the same colors as your church's app. Set them under **Mobile > App Theme**; the Kiosk Theme card doesn't have its own color settings.
 
 ### Background Image
 
-Upload an optional background image for the kiosk welcome and lookup screens. Recommended size is 1920x1080 pixels.
+Under **Background Image**, click **Upload Image** to add an optional background for the kiosk welcome and lookup screens. Recommended size is 1920x1080 pixels. Use **Change Image** or **Remove** to replace or clear it.
 
 ### Idle Screen / Screensaver
 
 Configure a screensaver that activates after a period of inactivity:
 
-1. Toggle the idle screen **on** or **off**.
-2. Set the **timeout** (how many seconds of inactivity before the screensaver starts, minimum 10 seconds).
-3. Add one or more **slides** -- each slide has an image and a display duration (minimum 3 seconds).
+1. Open **Idle Screen / Screensaver** and turn on **Enable idle screen**.
+2. Set **Timeout (seconds)** -- how many seconds of inactivity before the screensaver starts (minimum 10).
+3. Click **Add Slide** for each slide, click **Upload** to choose its image, and set its **Duration (s)** (minimum 3 seconds).
 
 :::tip
 Use the idle screen to display announcements, upcoming events, or welcome messages when the kiosk is not actively being used.
