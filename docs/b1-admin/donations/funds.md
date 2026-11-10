@@ -36,7 +36,8 @@ The new fund immediately appears in your list and is available when entering don
 ## Editing and Deleting Funds
 
 - To edit a fund, click **Edit** on its row. You can change the name, toggle the tax-deductible setting, or toggle **Visible to Donors** to show or hide it from donation forms.
-- To delete a fund, open the edit form and click **Delete**.
+- To delete a fund, open the edit form, click **Delete**, and confirm.
+- To share a link that opens your giving page with this fund already selected, click **Giving Link** on its row (see [Links With a Preset Fund and Amount](online-giving-setup.md#links-with-a-preset-fund-and-amount)).
 
 :::warning
 Deleting a fund does not remove donations that were previously assigned to it. Those donation records remain in the system, but the fund will no longer be available for new donations.
@@ -50,7 +51,8 @@ Funds hidden from donors show a **Hidden** badge next to their name in this list
 
 Click on a **fund name** to open its detail page. This page shows:
 
-- **Summary** -- a line under the page title with the number of gifts, the number of donors, and the total dollar amount
+- **Summary** -- a line under the page title with the number of gifts, the number of donors, and the total amount for the period shown
+- **Year buttons** -- the page opens on the current year; click another year to show that calendar year
 - **Date range filter** -- set a **Start Date** and **End Date** and click **Filter** to narrow the results to a specific time period
 - **Donation history** -- a list of donations to this fund with the date, batch, donor, and amount. Click **Export** above the list to download it as a CSV.
 
