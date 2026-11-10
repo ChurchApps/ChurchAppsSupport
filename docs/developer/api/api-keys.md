@@ -44,12 +44,12 @@ The API auth layer routes any token starting with `cak_` to the API-key path, ha
 
 1. Sign in to B1Admin as a user with **Edit Settings**.
 2. Open **Settings → Developer → API Keys**.
-3. Click **New API Key**, give it a recognisable name (e.g. "Zapier — donations sync"), select the scopes the key should have, and **Save**.
+3. Click **New API Key**, give it a recognisable **Name** (e.g. "Zapier — donations sync"), select at least one of the **Scopes** the key should have, optionally pick an **Expires** date (leave it blank for a key that never expires), and **Save**.
 4. The full `cak_…` key is shown **once** in a dialog. Copy it into your integration's config before closing — there is no way to retrieve it later. You can always create a new key.
 
 ## Scopes
 
-A scope **narrows** what a key can do — it can never grant a permission the underlying person does not have. Empty / no scopes means the key carries the person's full permission set.
+A scope **narrows** what a key can do — it can never grant a permission the underlying person does not have. Empty / no scopes means the key carries the person's full permission set; B1Admin always asks for at least one scope, so a scope-less key can only be created through the API.
 
 | Scope | Allows |
 |---|---|
