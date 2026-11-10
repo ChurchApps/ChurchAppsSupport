@@ -29,10 +29,10 @@ Headcounts are a total-only alternative to [Recording Attendance](recording-atte
 2. Click **Enter headcount** in the left column.
 3. Fill in the form:
    - **Service** *(required)*
-   - **Service Time** -- leave blank to record a total across all service times
+   - **Service Time** -- leave it on **All service times** to record a total across all of the service's times
    - **Group** -- optional; only groups with Track Attendance enabled are listed. Leave blank for "No group (whole service)."
    - **Date**
-   - **Headcount** -- the total number of people present
+   - **Headcount** -- the total number of people present (a whole number, 0 or more)
 4. Click **Save**.
 
 The **Recent Headcounts** table beside the form lists your last several entries with their date, service, service time, group, and count. Click a row to load it back into the form if you need to correct or delete it.
@@ -40,7 +40,7 @@ The **Recent Headcounts** table beside the form lists your last several entries 
 ## Headcount Trend Report
 
 1. From the same **Attendance** page, click **All years** in the left column, then select the **Headcount Trend** tab.
-2. Use the **Campus**, **Service**, **Service Time**, and **Group** filters to narrow the report.
+2. The report runs when the tab opens. To narrow it, choose a **Campus**, **Service**, **Service Time**, or **Group** and click **Run Report**. There is no date filter -- the report covers every week that has a headcount.
 
 The report shows your recorded headcounts summed by week, as both a line chart and a table -- the same report style used by the [Attendance Trend and Group Attendance tabs](tracking-attendance.md). Headcounts entered for the current week also appear under **Headcounts this week** on the main Attendance page.
 
