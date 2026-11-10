@@ -31,8 +31,8 @@ Groups can have different join policies set by their administrators:
 1. Browse to the group you want to join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
 2. Open the group's detail page.
 3. Click **Request to Join**.
-4. A dialog appears where you can optionally write a message to the group leader explaining why you would like to join.
-5. Click **Submit** to send your request.
+4. A **Request to join** dialog appears where you can optionally write a **Message (optional)** to the group leader explaining why you would like to join.
+5. Click **Send Request** to send your request.
 
 The group's page now shows a **Request Pending** notice in place of the button. The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
 
@@ -42,11 +42,11 @@ Including a brief message — such as how you heard about the group or what you 
 
 ## Checking the Status of Your Requests
 
-After submitting a request, you can view its status from the **Groups** page:
+After submitting a request, you can view its status from the **Groups** screen in the member portal (the screen that lists your own groups, not the public **Find a Group** page):
 
-1. Navigate to the **Groups** page on your church's B1.church site.
-2. Scroll down to the **Pending Requests** section.
-3. Each pending request shows the group name and the date you submitted it.
+1. Open **Groups** in the member portal.
+2. Scroll down to the **Pending Requests** section. It only appears while you have a request waiting.
+3. Each pending request shows the group name and the date you submitted it (for example, "Requested 11/10/2026").
 
 If a request has been approved or declined, you will receive a notification — approved requests move you into the group as a member.
 
@@ -54,9 +54,9 @@ If a request has been approved or declined, you will receive a notification — 
 
 If you change your mind before a leader reviews your request:
 
-1. Go to the **Groups** page.
+1. Open **Groups** in the member portal.
 2. Find your request in the **Pending Requests** section.
-3. Click **Cancel** next to the request.
+3. Click **Cancel request** next to the request.
 
 The request is immediately withdrawn and the leader will no longer see it.
 
