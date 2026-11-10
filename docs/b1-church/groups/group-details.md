@@ -26,9 +26,9 @@ If you are not logged in, you will see the following:
 
 - **Header** -- The group's name with its meeting time and location. On a computer, the group's photo appears above it.
 - **Sign in to join** -- A button under the group's name. Sign in (or create an account) to join the group or request to join. After you sign in, you are brought back to the group and taken straight to the join step.
-- **About** -- The full description of the group explaining its purpose and what to expect.
+- **About** -- The full description of the group explaining its purpose and what to expect, or "No details yet." if the group has no description.
 - **Leaders** -- The names of the group's leaders. You can tap a leader's name to view their profile.
-- **Upcoming Events** -- Up to three upcoming events for the group, each showing the date, time, and event title, with a **Register** link when the event takes registrations. If the group has no upcoming events, this section is hidden.
+- **Upcoming Events** -- Up to three upcoming events for the group, each showing the event title, date, time, and description, with a **Register** link when the event takes registrations. If the group has no upcoming events, this section is hidden.
 
 ## Member View (Logged In)
 
@@ -38,9 +38,9 @@ When you are a member, the group's header shows its name, meeting day, time, and
 
 The page is one sheet of sections. Each shows a short preview, and a link in the section's header opens the full view; tap **Back to** *group name* to return. The available sections are:
 
-- **Next event** -- The group's next upcoming event, with **Going** / **Maybe** / **Can't go** buttons (see [Event RSVPs](./event-rsvps.md)). An event that takes registrations has a **Register** link; once you have registered, your status -- **Registered**, **Pending**, or **Waitlisted** -- shows in its place (on this card and in the full events list), and tapping it opens your [registrations](../events/my-registrations.md). Tap **All events** to open the group's calendar: use the arrows to move between months, and switch between **Calendar** (a month grid where you tap a day to see its events) and **List** (the month's events in date order, grouped by day). When you are looking at the current month, the list starts from today, so it only shows what's still coming up. If the group's events have tags, you can filter by tag.
+- **Next event** -- The group's next upcoming event, with **Going** / **Maybe** / **Can't go** buttons (see [Event RSVPs](./event-rsvps.md)). An event that takes registrations has a **Register** link; once you have registered, your status -- **Registered**, **Pending**, or **Waitlisted** -- shows in its place (on this card and in the full events list), and tapping it opens your [registrations](../events/my-registrations.md). Tap **All events** to open the group's calendar: use the arrows to move between months, and switch between **Calendar** (a month grid where you tap a day to see its events) and **List** (the month's events in date order, grouped by day). When you are looking at the current month, the list starts from today, so it only shows what's still coming up. If the group's events have tags, you can filter by tag. Tap **Subscribe** at the bottom to add the group's calendar to your own calendar app, so new events show up there automatically.
 - **This week's lesson** -- If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, it appears under **Next event** (members only).
-- **Meetings** -- The group's recent meetings, newest first. Each one shows the date, how many people were there (for example, "8 of 12 there") or **Upcoming** for a future date, and the leader's note for that meeting, with any bold text, lists, and links kept. Tap **All meetings** to see them all. A meeting only appears once it has a note or attendance. See [Meeting Notes and Attendance](#meeting-notes-and-attendance) below.
+- **Meetings** -- The group's recent meetings, newest first. Each one shows the date, how many people were there (for example, "8 of 12 there") or **Upcoming** for today or a future date with no attendance yet, and the leader's note for that meeting, with any bold text, lists, and links kept. Tap **All meetings** to see them all. A meeting only appears once it has a note or attendance. See [Meeting Notes and Attendance](#meeting-notes-and-attendance) below.
 - **Leader notes** -- Visible to the group's leaders only. Shows the two newest leader notes; tap **Open notes** to read them all and post a new one. See [Leader Notes](#leader-notes) below.
 - **Forms** -- Forms your church has linked to the group, up to three at a time. Members see the forms that are open, each with a **Fill out** button. Leaders also see closed forms (marked **Closed**), how many answers each has, and the registration forms of the group's events (marked **Event registration**). Tap **All forms** to see them all. Only shown when the group has linked forms. See [Linked Forms](#linked-forms) below.
 - **Messages** -- The latest messages from the group chat. Tap **Open chat** to read and post. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
@@ -49,7 +49,7 @@ The page is one sheet of sections. Each shows a short preview, and a link in the
 - **Plans** -- The group's next service plan. Tap **All plans** to see them all. Only shown if the group has plans.
 - **About** -- The group's full description, rendered with rich text formatting. Only shown if the group has a description.
 
-Members also see a **Leave Group** link at the bottom of the page.
+Members also see a **Leave Group** link at the bottom of the page. It asks "Leave this group?" first, since you lose access to the group's messages, events, and resources; tap **Leave Group** again to confirm.
 
 ## Leader Capabilities
 
