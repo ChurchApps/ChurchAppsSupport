@@ -27,13 +27,17 @@ Logging in to B1.church gives you access to the member portal where you can see 
 ## How to Log In
 
 1. Go to your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
-2. Click the **Login** button in the top-right corner of the header.
+2. Click the **Login** button in the top-right corner of the header. If your church hasn't turned on the **Login** button for its website, go to `https://yourchurchname.b1.church/login` instead.
 3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled.
 4. Click **Sign In**.
 
-If you have turned on [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), the next screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and click **Verify code**. The B1.church app asks for the code the same way.
+If you have turned on [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), the next screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and click **Verify Code**. The member portal asks for the code the same way.
 
 After signing in, you will be taken back to the page you were on before you clicked login. If you navigated directly to a member portal page while logged out, you will be returned to that page automatically after signing in.
+
+## Signing In From the Member Portal
+
+The member portal (`/mobile`) has its own sign-in screen. Tap **Sign In** on Home, the **More** page, or any screen that needs an account, enter your email and password, and tap **Sign In**. From there you can also tap **Forgot password?** to reset your password, or **Create an account** if you don't have one yet. Google and Microsoft sign-in are only offered on the website's login page.
 
 ## Staying Signed In
 
@@ -48,7 +52,7 @@ Once logged in, you can access the member portal by clicking on your **name** in
 After logging in, your name appears as a chip in the top-right corner. Click it to open a menu with the following options:
 
 - **Member Portal** -- Go to your personal member portal dashboard.
-- **Edit Profile** -- Update your account settings or edit your church profile.
+- **Edit Profile** -- Opens two more choices: **Edit Account** (your login email, password, and two-factor settings, in B1 Admin) and **Edit Church Profile** (your profile in the member portal's [directory](../community/member-directory.md)).
 - **Logout** -- Sign out of your account.
 
 ## Admin Access
@@ -59,11 +63,11 @@ If you are a church administrator with the appropriate permissions, you will als
 
 If you cannot remember your password:
 
-1. Click **Forgot Password** on the login page.
-2. Enter the email address tied to your ChurchApps account and submit.
+1. Click **Forgot Password** on the login page (in the member portal, tap **Forgot password?**).
+2. Enter the email address tied to your ChurchApps account and click **Reset** (**Send code** in the member portal).
 3. Check your email for a message containing a **6-digit verification code**. The code is valid for 15 minutes.
-4. Enter the code on the verification screen to sign in.
-5. Once you are signed in, visit your profile to choose a new password.
+4. Enter the code and click **Verify Code**. If it hasn't arrived, you can tap **Resend code** after 30 seconds.
+5. Choose a new password (at least 8 characters), enter it a second time to confirm, and click **Sign In** (**Save & sign in** in the member portal). You are signed in with your new password.
 
 :::tip
 If the code does not arrive within a couple of minutes, check your spam folder. After five incorrect attempts the code is locked — request a new one from the Forgot Password page if that happens.
