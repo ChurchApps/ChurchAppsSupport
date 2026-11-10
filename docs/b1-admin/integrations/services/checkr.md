@@ -11,6 +11,10 @@ description: "Connect B1 Admin volunteer sign-ups to Checkr background checks us
 
 </div>
 
+:::caution
+This recipe uses the B1.church Make app, which isn't released yet (see [Make](../make.md)). Until it is, the B1 side of these scenarios has to be built with Make's **HTTP** module calling B1's [REST API](/docs/developer/api).
+:::
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
@@ -69,7 +73,7 @@ Note: B1 doesn't have a built-in "background-check status" field today. The prag
 Pair the above with a Make schedule trigger:
 
 - **Trigger** — Make: Schedule (monthly)
-- **Action** — B1.church: List Group Members for "Cleared volunteers"
+- **Action** — HTTP — Make a request: GET B1's `/membership/groupmembers?groupId=…` for your "Cleared volunteers" group (the B1.church app has no list action)
 - **Action** — Filter by Make: cleared date older than 22 months
 - **Action** — Checkr: Create Background Check Invitation (same as the initial flow)
 
