@@ -16,7 +16,7 @@ Groups are a great way to get connected with others at your church. Whether you 
 
 Here is what you can do with groups in B1App:
 
-- **Browse public groups** -- View all available groups organized by category. Each group shows a photo, name, meeting time, location, and a brief description.
+- **Browse public groups** -- Search all available groups and filter them by category or campus. Each group shows a photo, name, meeting time, location, and a brief description.
 - **View group details** -- Click any group to see its full description, leaders, and upcoming calendar events.
 - **Join groups** -- Connect with a group to become a member. Open groups let you join immediately; groups with approval required let you submit a join request. See [Requesting to Join a Group](./join-requests.md).
 - **Participate in conversations** -- Once you are a member of a group, you can post messages and interact with other group members in the group chat -- tap **Open chat** on the group page.
