@@ -57,13 +57,14 @@ Check the box next to one or more songs (or the box in the header to select ever
 
 ## Viewing and Editing a Song
 
-Click a song's title to open its detail page. The song's title, artist, and details such as album, key, length, BPM, and meter appear on the left, along with its arrangements and external links. From here you can:
+Click a song's title to open its detail page. The song's title, artist, and details such as album, key, length, BPM, and meter appear on the left, along with its arrangements and external links. The selected arrangement, with its lyrics and keys, fills the rest of the page. From here you can:
 
 - **Edit song details** -- Click **Edit** to update the title, artist, duration, and other metadata. Click **Done** when you're finished. To remove the song from your library, click **Edit** and then **Delete song**.
 - **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one, and click an arrangement's name under **Arrangements** to open it.
-- **Add lyrics** -- Enter or update the lyrics for each arrangement using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
-- **Set the key** -- Specify the musical key for each arrangement using the key picker next to the lyrics. The picker lists keys the way musicians usually write them (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing. Chords are spelled to match the key: flat keys such as Bb or Eb show flat chord names (Bb, Eb, Ab) instead of sharps.
-- **Add external links** -- Attach links to resources like YouTube videos, chord charts, or sheet music hosted elsewhere.
+- **Add lyrics** -- Click **Edit** next to the arrangement's name to change its name, BPM, meter, length, sequence, and lyrics. Enter the lyrics using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
+- **Set the key** -- Specify the musical key for each arrangement using the **Key** picker above the lyrics. The picker lists keys the way musicians usually write them (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing. Chords are spelled to match the key: flat keys such as Bb or Eb show flat chord names (Bb, Eb, Ab) instead of sharps.
+- **Add external links** -- Click **Edit** next to **External Links** on the left to link the song on services such as YouTube, Spotify, Apple, CCLI, or Hymnary. Links to chord charts or sheet music hosted elsewhere go on a key (see **Manage keys**).
+- **Manage keys** -- Under **Keys**, click **Add key** to add a key the arrangement is played in (a **Key Signature** and an optional label, such as "John's Key"). Select a key and click **Add Files** to **Import from PraiseCharts**, **Add External Link** for that key (such as a chord chart in that key), or **Upload Audio**.
 
 ## Arrangements
 
@@ -84,9 +85,9 @@ When you add a song to a [Service Order](./service-order.md), you can choose whi
 Worship admins can attach a rehearsal audio track to an arrangement so the team can listen ahead of practice:
 
 1. Open the song and select the arrangement.
-2. Click **Upload Audio**.
+2. Under **Keys**, select a key (click **Add key** first if the arrangement has none), click **Add Files**, and choose **Upload Audio**.
 3. Choose an MP3, M4A, or AAC file (up to 25 MB -- WAV isn't accepted, to keep storage usage manageable).
-4. Save. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens it in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
+4. Click **Save**. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens it in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
 
 Deleting the arrangement also removes its uploaded audio file.
 

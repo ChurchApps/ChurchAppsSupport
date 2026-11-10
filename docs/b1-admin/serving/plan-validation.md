@@ -22,7 +22,9 @@ B1 Admin automatically checks your plans for problems before Sunday — unfilled
 
 ## The Validation Panel
 
-Every plan has a **Validation** panel that runs automatically as you build it. It checks three things:
+Every plan has a **Validation** panel that runs automatically as you build it. Open the plan and click **Manage serving team** to see it beside the positions. The plan page itself shows a one-line summary under **Serving team** (for example, "2 conflicts · 3 not notified") with a **Review** link to the full panel. Positions that still need people are listed on the plan page too, so the summary line counts only conflicts and volunteers who haven't been notified.
+
+The panel checks the following:
 
 ### Unfilled Positions
 If a position requires more people than are currently assigned, the validation panel lists exactly what is still needed — for example, *"Sound Tech: 1 more person needed."* You can see at a glance whether your plan is fully staffed before the week arrives.
@@ -36,6 +38,11 @@ Volunteers can set dates they are unavailable in the B1 App. If someone is assig
 ### Cross-Plan Conflicts
 The validation also checks across all your plans at once. If the same volunteer is assigned in two different plans that overlap in time — for example, a 9am service and a 10am service that both run until 10:30am — B1 Admin will flag that person as double-booked across plans.
 
+### Scheduling Preferences
+If a volunteer has [scheduling preferences](./plans.md#scheduling-preferences), the panel warns you when an assignment goes against them: when they are scheduled more times this month than their **Max times per month**, when none of the plan's times match their **Preferred service times**, or when they asked not to serve on the same day as their household and a household member is also scheduled.
+
+When everything checks out, the panel reads **Plan is valid.**
+
 :::tip
 You don't need to do anything to run validation — it updates automatically every time you add or change an assignment. Just keep an eye on the panel as you build the plan.
 :::
@@ -44,14 +51,23 @@ You don't need to do anything to run validation — it updates automatically eve
 
 Once your plan is set, you can notify all assigned volunteers at once directly from the validation panel.
 
-1. Open the plan and scroll to the **Validation** panel
-2. If there are unnotified volunteers, you will see a link showing how many need to be notified (e.g., *"Notify 8 volunteers"*)
+1. Open the plan and click **Manage serving team** (or **Review** in the plan's summary line) to see the **Validation** panel
+2. If there are unnotified volunteers, you will see a link showing how many need to be notified (e.g., *"Notify 8 volunteer(s)"*). Once everyone has been notified, the panel reads **All volunteers notified.**
 3. Click the link to send push notifications to everyone who hasn't been notified yet
 4. Volunteers receive a notification on their phone letting them know they have been scheduled and prompting them to confirm their assignment
 
 :::info
 Only volunteers who have not yet been notified will be included. If you add someone to the plan later, the link will reappear so you can notify the new addition without re-notifying the rest of the team.
 :::
+
+### Publishing a Penciled-In Plan
+
+If the plan is [penciled in](./plans.md#plan-settings), volunteers can't see their assignments yet, and the panel shows *"Penciled in — volunteers can't see these assignments yet."* with a button in place of the notify link:
+
+- **Publish Plan** makes the assignments visible.
+- **Publish & Notify** (shown when some volunteers haven't been notified, for example *"Publish & Notify 8 volunteer(s)"*) makes the assignments visible and notifies those volunteers right away.
+
+Confirm in the dialog to publish.
 
 ### Plans with a Confirmation Workflow
 

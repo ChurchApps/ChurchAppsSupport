@@ -46,15 +46,15 @@ Volunteer names are shown in a shortened format (first name and last initial, e.
 
 You do not need to open individual plans to fill empty slots. Click any cell in the grid to open an assignment panel for that position and date. From there you can:
 
-- Select a person from your team to assign to the position
-- Click **Remove** next to anyone already assigned to pull them off that slot
-- Save the change without leaving the overview
+- Click a team member's name to assign them to the position (or, for a position without a Volunteer Group, search for anyone in your church)
+- Click the **Remove** (X) icon next to anyone already assigned, and confirm, to pull them off that slot
+- Click **Done** to close the panel without leaving the overview
 
 This makes it possible to staff an entire schedule in one pass — work across weeks and positions without navigating in and out of individual plans.
 
 ## Auto-Scheduling from the Overview
 
-Click **Auto-schedule** to have B1 fill every open, unfilled slot in the current grid at once. For each plan in view, it pulls candidates from the group linked to each position and fills empty slots automatically, reporting how many of the visible plans it was able to fill. Plans are filled one at a time so the same volunteer isn't double-booked across two dates in the same pass.
+Click **Auto-schedule** and confirm to have B1 fill every open, unfilled slot in the current grid at once. For each plan in view, it pulls candidates from the group linked to each position and fills empty slots automatically, reporting how many of the visible plans it was able to fill (for example, "Auto-scheduled 3 of 4 plans"). Positions without a Volunteer Group are skipped. Plans are filled one at a time so the same volunteer isn't double-booked across two dates in the same pass.
 
 :::info
 Auto-schedule only fills slots that are already empty — it never replaces an existing assignment.
@@ -62,7 +62,7 @@ Auto-schedule only fills slots that are already empty — it never replaces an e
 
 ## Emailing Everyone Scheduled
 
-Click **Email Volunteers** to send a notification to every volunteer assigned anywhere in the currently filtered date range and ministry, in one action, rather than emailing plan-by-plan. B1 reports how many emails were sent and how many failed.
+Click **Email Volunteers** and confirm to send a notification to every volunteer assigned anywhere in the currently filtered date range and ministry, in one action, rather than emailing plan-by-plan. B1 reports how many emails were sent and how many failed.
 
 ## Texting Everyone Scheduled
 
