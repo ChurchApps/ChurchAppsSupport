@@ -29,7 +29,9 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Pages**.
 2. Find the page you want to edit in the Pages table and click **Edit Content**.
 
-The editor opens in full-screen mode. The left panel shows your page structure and available content elements; the center area shows a live preview of your page.
+The editor opens in full-screen mode with a live preview of your page. The toolbar across the top has **Exit**, the page's publish status, **Undo** and **Redo**, the save status, **Publish**, the desktop and mobile preview buttons, **Add Content**, the accessibility check, and a **More** (⋮) menu. Click **Add Content** to open the **Add Elements** panel on the left; click a section or element to open its settings on the right.
+
+The editor needs a screen at least about 880 pixels wide. On a phone you see a message asking you to open the page on a tablet or computer.
 
 :::info
 The editor always displays in light mode, regardless of your B1 Admin theme setting, and uses the heading and body fonts you chose in [Appearance](./appearance.md). This ensures the preview accurately matches how your page will look to website visitors.
@@ -44,27 +46,33 @@ Every page is built from two levels:
 
 ### Adding a Section
 
-1. Click **Add Section** (or the **+** button at the top of the left panel).
-2. Choose how to start:
-   - **From a template** — browse the section template gallery organized by category (Hero, About, Services, Giving, etc.) and click one to insert it as a fully styled, pre-filled section. You can customize everything after it is added.
-   - **Blank section** — choose a column layout (single, two columns, three columns, etc.) and build from scratch.
-3. The new section appears in the preview. Click it to select it and configure its background color, padding, and other style options.
+1. Click **Add Content** and drag **Section** onto the page. You can also hover between two sections and click the **+** (**Add section**) button that appears.
+2. In the **Choose a Section Layout** dialog, choose how to start:
+   - **From a template** — browse the section templates by category (Hero, About, Services, People, Media, Giving, and Call to Action) and click one to insert it as a fully styled, pre-filled section. You can customize everything after it is added.
+   - **Blank Section** — an empty section to build from scratch. To split it into columns, add a **Row** element inside it.
+3. The new section appears in the preview. Click it to select it and configure its background, colors, and other style options.
+
+Hovering over a section shows its toolbar: drag handle, **Section settings**, **Move section up**, **Move section down**, **Duplicate section**, **Try another layout**, and **Delete section**.
 
 ### Switching a Section's Layout
 
-Already built out a section but want a different structure? Use the layout switcher on that section to swap its column arrangement for a different one from the gallery while keeping your existing content and elements in place.
+Already built out a section but want a different structure? Click **Try another layout** on the section's toolbar to swap its arrangement for a different one from the gallery while keeping your existing content and elements in place.
 
 ### Adding Elements to a Section
 
-1. Click inside a section in the preview to select it.
-2. Click **Add Content** and choose an element type from the list:
+1. Click **Add Content** to open the **Add Elements** panel. Use **Search Elements** or the tabs (**All**, **Common**, **Media**, **Church**, **Advanced**, and **Blocks** once you have [reusable blocks](./blocks.md)) to find an element.
+2. Drag the element into a section in the preview, or select an element on the page and then click a card to add the new element right after it. The elements are:
+   - **Row** -- Splits a section into side-by-side columns
+   - **Box** -- Groups elements together in a styled container
+   - **Carousel** -- Rotates through a set of full-width slides
+   - **White Space** -- Adds empty vertical space
    - **Text** -- Headings, paragraphs, and rich text
    - **Image** -- Upload or link to a photo
-   - **Button** -- A clickable call-to-action link
+   - **Button Link** -- A clickable call-to-action button
    - **Card** -- An image with a title and description
    - **Form** -- Embed a [form](../forms/creating-forms.md) directly on the page. If the form has a [header photo](../forms/creating-forms.md#adding-a-header-photo), it shows above the questions
    - **Calendar** -- Display an event calendar
-   - **FAQ** -- Accordion-style question and answer blocks
+   - **Expandable** -- Accordion-style question and answer blocks
    - **Video** -- Embed a video by URL
    - **Groups Browser** -- A filterable directory of all church groups with optional search, category filter, and label filter. Its **Layout** can be **Grid** (the default) or **Scrolling (automatic)** -- see [Scrolling layouts](#scrolling-layouts)
    - **Group List** -- Tiles for your public groups, optionally only the groups with a given label. Its **Layout** can be **Grid** (the default; up to three tiles per row) or **Scrolling (automatic)** -- see [Scrolling layouts](#scrolling-layouts)
@@ -78,15 +86,16 @@ Already built out a section but want a different structure? Use the layout switc
    - **Staff Grid** -- Photo cards for the members of a group; the group must have its **public roster** option turned on
    - **Service Times** -- Your campuses' service schedule, pulled automatically from attendance setup
    - **Sermons** -- Your sermon library, as a full browser or a grid, list, or featured-latest layout
-   - **Map** -- An embedded map centered on your church's address
+   - **Location** -- An embedded map centered on your church's address
    - **Table** -- A simple grid of rows and columns for tabular content
    - **Text with Photo** -- Text and an image side by side
    - **Logo** -- Your church logo, pulled from [Appearance](./appearance.md)
-   - **Live Stream** -- Your live stream player, embedded directly on the page
+   - **Stream** -- Your live stream player, embedded directly on the page
    - **Podcast** -- A list of episodes pulled from an external podcast RSS feed URL you provide, with settings for how many episodes to show and whether to display dates and descriptions. Each episode on the live site has an audio player and a **Download** link that saves the episode's audio file under the episode title. This is for featuring any podcast feed on your site; to publish your own sermons as a podcast, see [Managing Sermons](../sermons/managing-sermons.md#your-podcast-feed) instead.
-   - **Donation** -- A giving button or embedded donation form
+   - **Donation** -- A full giving form embedded on the page
+   - **Donate Link** -- A button that opens your giving page
    - **HTML** -- Your own raw HTML, for advanced use cases such as embedding a third-party widget (see [Using the HTML element](#using-the-html-element))
-   - **iFrame** -- Embed external content by URL
+   - **Embedded Page** -- Embed another web page by URL in a frame
 3. Configure the element using the settings panel that appears.
 
 ### Using the HTML element
@@ -131,18 +140,21 @@ Drag sections or elements using the handle icon (six dots) on the left side of e
 
 Click any section to open its style panel. You can set:
 
-- **Background** -- Solid color, gradient, or image. When using an image background, a **Focal Point** picker lets you click to set which part of the image stays centered as the section scales, and an **Overlay** color option lets you add a semi-transparent tint over the image to improve text legibility.
-- **Padding** -- Top and bottom spacing inside the section
-- **Width** -- Full-width or centered/contained
-- **Dividers** -- Decorative shape dividers (wave, slant, curve, triangle, and more) on the top or bottom edge of the section, with color, height, and flip options
+- **Colors** -- On the **Suggested** tab, click one of the color combinations from your palette. On the **Custom** tab, set the **Background Type** (**Color**, **Image**, or **YouTube Video**) and the heading, text, and link colors. With an image background, click the image to set its focal point (the part kept in view when the image is cropped), and use **Overlay Color** and **Background Opacity** to tint the image so text stays readable.
+- **Visibility** -- **Hide on desktop** or **Hide on mobile**
+- **Styles** -- Add individual style settings, such as top and bottom padding, for all devices, desktop only, or mobile only
+- **Animations** -- An effect and speed for when the section scrolls into view
+- **Shape Dividers** -- Decorative shapes (wave, waves, slant, curve, peaks, and triangle) on the top or bottom edge of the section, with color, height, and flip options
+
+The section settings also have **Duplicate** and **Convert To Block**, which copies the section into a new [reusable block](./blocks.md).
 
 ### Element Styles
 
 Click any element to open its style panel. Common options include font size, color, alignment, margin, and padding. For images, you can set alt text and link targets.
 
-### Custom CSS
+### Styles for One Section or Element
 
-For advanced styling, each section and element has a **Custom CSS** field where you can write your own CSS rules. These are scoped to that element, so they will not unintentionally affect the rest of the page.
+For finer control, open the **Styles** panel in a section's or element's settings and click **Add a style** under **All**, **Desktop Only**, or **Mobile Only**. Each style applies only to that section or element, so it will not affect the rest of the page.
 
 :::tip
 If you need to apply styles across your entire site -- such as a custom font or global color -- use the [Appearance](./appearance.md) settings instead of custom CSS on individual pages.
@@ -161,7 +173,7 @@ To see the live page exactly as visitors will, go back to the Pages list and cli
 
 ## Checking Accessibility
 
-Click the **Accessibility** icon in the toolbar to run a quick check for common issues -- images missing alt text, low color contrast, or headings out of order. Each issue links directly to the element that needs attention so you can fix it in place.
+Click the **Check accessibility** icon in the toolbar (it shows a count when issues are found) to run a quick check for common issues -- images missing alt text, low color contrast, or headings out of order. Each issue links directly to the element that needs attention so you can fix it in place.
 
 ## Undoing Changes
 
@@ -170,10 +182,10 @@ The editor tracks your editing history automatically. Use the toolbar buttons or
 - **Undo** (Ctrl+Z / Cmd+Z) -- Revert your last action
 - **Redo** (Ctrl+Shift+Z or Ctrl+Y / Cmd+Shift+Z) -- Re-apply an undone action
 
-You can also restore the page to an earlier snapshot. Click **View history** in the toolbar to see a list of saved snapshots with descriptions, and click any entry to restore to that point.
+You can also jump to an earlier point. Open the **More** (⋮) menu in the toolbar and click **View history**. The **Edit History** dialog lists each change with its time, marking where you are now as **(current)**. Click an entry (or its **Restore to this point** button) to put the page back to how it was at that point.
 
-:::warning
-Restoring a snapshot replaces your current page content with the snapshot version. This cannot be undone with the standard undo button. Save a snapshot of your current state before restoring an old one if you want to keep the option to return.
+:::info
+Changes made after the point you restored stay in the history, so you can use **Redo** or pick a later entry to go forward again. Once you make a new edit, those later entries are replaced by it.
 :::
 
 ## Saving and Publishing
