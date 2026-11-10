@@ -37,7 +37,7 @@ Clearstream's Zapier actions: *Send Text to Number*, *Send Text to List*, *Creat
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — required for B1 to register the trigger webhook
+- `settings:write` — required to connect the key to Zapier and for B1 to register the trigger webhook
 - `people:read` — needed to look up the person from the event (`personId` → name/phone/email)
 - (Optional) `people:write` if Clearstream replies should create B1 contacts
 
@@ -53,8 +53,7 @@ Turn the Zap on. B1 registers the donation webhook on activation; you'll see `Za
 
 1. **Trigger** — Clearstream: New Incoming Text
 2. **Action** — Filter by Zapier on the keyword — e.g. only continue if the text body starts with `PRAY`
-3. **Action** — B1.church: Find Person (by phone)
-4. **Action** — Filter / Path — if not found, create them; either way, file the text body somewhere (Slack, Google Sheet, or a B1 form submission via Webhooks by Zapier).
+3. **Action** — file the text body somewhere your team will see it (Slack, a Google Sheet, or a B1 task). B1's *Find Person* looks people up by id, email, or name only, not by phone, so match the reply to a B1 person by hand (or add a Webhooks by Zapier GET to B1's `/membership/people/search/phone?number=…` endpoint).
 
 ## Common Recipes
 
@@ -65,13 +64,13 @@ Turn the Zap on. B1 registers the donation webhook on activation; you'll see `Za
 
 ### First-time visitor follow-up sequence
 
-- **Trigger** — B1.church: New Person, filtered on a B1 person tag of "First-time visitor"
+- **Trigger** — B1.church: New Person, filtered on the person's membership status (for example, *Visitor*)
 - **Action** — Clearstream: Add Subscriber to Automated Workflow. Map the workflow id to a pre-built 7-day text drip.
 
 ### Keyword-driven group join
 
 - **Trigger** — Clearstream: New Incoming Text (filter to keyword `MENS`)
-- **Action** — B1.church: Find Person (by phone); fork on not-found → Create Person
+- **Action** — B1.church: Create Person from the texter's name and phone (B1's *Find Person* can't look people up by phone, so check for duplicates later in **People**)
 - **Action** — B1.church: Add Group Member to the Men's Ministry group
 
 ## Limits & Notes
