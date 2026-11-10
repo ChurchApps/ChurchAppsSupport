@@ -42,7 +42,7 @@ The dashboard shows aggregate giving data. It does not include individual donor 
 
 ## Lapsed Givers
 
-Choose **Lapsed Givers** in the **View** toggle to list people who gave during one period but not since. By default it compares last calendar year with this year to date; change either date range to widen or narrow the search. Each row shows the person, the date of their last gift and their total for the earlier period, and **Download Options > Summary** downloads the list as a CSV for a follow-up mailing or call list.
+Choose **Lapsed Givers** in the **View** toggle to list people who gave during one period but not since. By default it compares last calendar year with this year to date; change the **Previous Period Start**, **Previous Period End**, **Current Period Start**, or **Current Period End** in the **Filter Report** panel and click **Run Report** to widen or narrow the search. This view needs the **View Donations** permission. Each row shows the person, the date of their last gift and their total for the earlier period, and **Download Options > Summary** downloads the list as a CSV for a follow-up mailing or call list.
 
 ## Viewing Donor-Level Details
 

@@ -32,9 +32,9 @@ Recording donations in B1 Admin is done through the Batches system. You create a
 ## Entering Individual Donations
 
 1. On the batch detail page, the donation entry panel appears beside the donations list. Under **Select Person or Anonymous**, type the donor's name in the search field to find them, or click **Anonymous**. (Clicking **Add Donation** at the top of the page jumps to this panel.)
-2. After selecting a person, the entry form shows fields for **Date**, **Method** (Check, Cash, Card, or In-Kind), **Fund**, **Notes**, **Amount**, and **Check #** (or **Last 4 digits** for card gifts, or **Item** to describe an in-kind gift). Click **Change** next to the donor's name to pick someone else.
-3. Fill in the details and click **Add Donation** (or press Enter).
-4. The donation is added to the donations list, and the form resets so you can enter the next one.
+2. After selecting a person, the entry form shows fields for **Date** (starting on the batch date), **Method** (Check, Cash, Card, or In-Kind), **Fund** (shown when your church has more than one fund), **Notes**, **Amount**, and **Check #** (or **Last 4 digits** for card gifts, or **Item** to describe an in-kind gift; cash gifts have no detail field). Click **Change** next to the donor's name to pick someone else.
+3. Fill in the details and click **Add Donation** (or press Enter). If the amount is empty or zero, the form asks you to enter an amount greater than zero instead of saving.
+4. The donation is added to the donations list, and the form resets so you can enter the next one. The date, method, fund, and notes stay as you set them, so a stack of similar checks only needs the donor, amount, and check number.
 
 :::info
 If the batch has been [closed](batches.md#closing-and-reopening-a-batch), the entry panel and **Edit** links are hidden for anyone without **Edit Donations**, and a notice at the top of the batch says it is closed. Ask someone with **Edit Donations** to reopen it.
@@ -81,9 +81,9 @@ The gift is saved to the batch for that date. If no batch exists for that date y
 
 Sometimes a single donor gives to more than one fund in one transaction. To handle this:
 
-1. Below the entry panel, click the **full donation editor** link (or click **Edit** on an existing donation row).
-2. In the full editor, add amounts to different funds. The total will automatically calculate from the individual fund amounts.
-3. Click **Save** to update the donation.
+1. Below the entry panel, click the **full donation editor** link (or click **Edit** on an existing donation row). A new gift starts on the batch date.
+2. In the full editor, enter an amount and fund, then click **Add More** to add another fund and amount. The total is calculated from the individual fund amounts.
+3. Click **Save**. A gift with no amount in any fund is not saved; the editor asks for an amount greater than zero.
 
 :::info
 Splitting donations across funds is common when a donor writes a single check designated for multiple purposes, such as General Fund and Missions.

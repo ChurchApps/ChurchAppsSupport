@@ -20,16 +20,16 @@ B1's multi-currency feature allows your church to accept and track donations in 
 
 </div>
 
-Your church's currency starts on the currency of the country entered when the church signed up (for example, Kenyan shillings for a church in Kenya), and it is used if no currency has been saved yet. You can change it any time under **Manage Church → Giving**. If your country isn't recognized, it starts on US dollars.
+Your church's currency starts on the currency of the country entered when the church signed up (for example, Kenyan shillings for a church in Kenya), and it is used if no currency has been saved yet. You can change it any time under **Settings → Giving** (the **Currency** dropdown). If your country isn't recognized, it starts on US dollars.
 
 ## Enabling Multi-Currency
 
-Multi-currency support is now enabled by default in B1. Once enabled:
+Multi-currency support is enabled by default in B1:
 
-- Members can give in their local currency when donating online
-- You can manually record donations in any currency
-- Donation reports show amounts in their original currency
-- Stripe handles currency conversion automatically for online giving
+- Online gifts are charged in the currency chosen in your **Giving** settings
+- Each donation keeps the currency it was recorded in, and individual donation lines show that currency
+- Combined totals are converted to your church currency (see [Converted Totals](#converted-totals))
+- Stripe handles currency conversion to your payout currency for online giving
 
 ## Supported Currencies
 
@@ -55,31 +55,22 @@ The available currencies for online giving depend on your Stripe account's suppo
 
 When a member gives online through Stripe:
 
-1. They select their preferred currency at checkout
+1. The gift is charged in the currency set under **Settings → Giving**; donors don't pick a currency at checkout
 2. Stripe processes the payment in that currency
-3. The donation is recorded in B1 with the original currency amount
-4. Stripe automatically handles any necessary currency conversion to your account's default currency
+3. The donation is recorded in B1 with that currency and amount
+4. Stripe automatically handles any necessary currency conversion to your account's payout currency
+
+If you change the **Currency** setting later, new gifts use the new currency while gifts already recorded keep theirs, so your records can hold more than one currency.
 
 ### Manual Entry
 
-To record a cash or check donation in a different currency:
-
-1. Navigate to **Donations > Batches** in B1 Admin and open the batch
-2. Click **Add Donation** at the top of the batch page
-3. Select the currency from the currency dropdown
-4. Enter the amount in that currency
-5. Complete the rest of the donation details
-6. Click **Save**
+Gifts you enter by hand -- in a batch, with **Import CSV**, or with **Log a gift** on a person's record -- are always recorded in your church currency, which is shown beside the **Amount** field. There is no currency dropdown for manual entry, so convert a gift made in another currency to your church currency before you enter it, and note the original amount in **Notes** if you need it.
 
 ## Viewing Multi-Currency Donations
 
 ### Donation Reports
 
-Donation reports display amounts in their original currency:
-
-- Individual donation records show the currency code (e.g., "$100.00 USD")
-- Totals are calculated per currency
-- You can filter by specific currencies
+Individual donation lines -- in a batch, on a fund's page, and on a person's giving history -- show each gift in the currency it was recorded in. Combined totals are converted, as described below.
 
 ### Converted Totals
 
@@ -87,11 +78,7 @@ Wherever B1 shows a single combined total -- the giving summary KPI cards, a don
 
 ### Giving Statements
 
-When generating giving statements:
-
-- Each donation appears with its original currency
-- Totals are broken down by currency
-- Members see exactly what they gave in each currency
+Giving statements list each gift's amount as it was recorded and add the amounts up without converting them, so a statement is only accurate when all of that donor's gifts for the year are in your church currency. If a donor gave in more than one currency, check their statement before you send it.
 
 ## Stripe Integration
 
@@ -119,12 +106,12 @@ When working with multiple currencies:
 
 - **Default currency** -- Set your primary church currency as the default for most transactions
 - **Clear communication** -- Tell donors what currency they're giving in during the checkout process
-- **Consistent reporting** -- Combined totals are always converted to your church currency automatically; use the per-donation currency filter when you need to see original amounts
+- **Consistent reporting** -- Combined totals are always converted to your church currency automatically; open a batch or fund to see each gift's original amount and currency
 - **Regular reconciliation** -- Reconcile Stripe payouts with your donation records, accounting for currency conversions
 
 ## Limitations
 
-- Currency conversion for payment processing is handled by Stripe for online giving only; manual donations are recorded as-entered with no automatic conversion
+- Currency conversion for payment processing is handled by Stripe for online giving only; manual donations are recorded in your church currency as entered
 - Historical reports and individual donation line items always show the original currency the gift was recorded in
 - Combined totals (KPI cards, batch totals, fund totals) are converted to your church currency using current exchange rates -- these rates may differ slightly from your bank's or Stripe's rates at the time funds settle
 

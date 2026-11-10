@@ -1,13 +1,13 @@
 ---
 title: "Online Giving Setup"
-description: "Connect Stripe, PayPal, Kingdom Funding, or Paystack to B1 Admin so members can give online through your B1.church site and gifts sync to your records."
+description: "Connect Stripe, Kingdom Funding, or Paystack to B1 Admin so members can give online through your B1.church site and gifts sync to your records."
 ---
 
 # Online Giving Setup
 
 <div class="article-intro">
 
-B1 Admin integrates with **Stripe**, **PayPal**, **Kingdom Funding**, and **Paystack** (for churches in Africa) so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
+B1 Admin integrates with **Stripe**, **Kingdom Funding**, and **Paystack** (for churches in Africa) so your members can give online through your B1.church site. Once configured, online donations automatically appear in your donation records alongside manually entered gifts, keeping everything in one system.
 
 </div>
 
@@ -43,7 +43,7 @@ After selecting Stripe as your provider, a **Currency** dropdown appears alongsi
 
 If you haven't saved a currency yet, the dropdown starts on the currency of your church's country from sign-up instead of US dollars. Check it matches your Stripe account before saving.
 
-Supported currencies include USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, and BRL. You can confirm or change your account's default currency in your [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies).
+Supported currencies include USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, BRL, and PHP. You can confirm or change your account's default currency in your [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies).
 
 :::info
 The currency you select here is used for one-time donations, recurring subscriptions, fee calculations, and donation reports. If you switch currencies later, only new donations and subscriptions will use the new currency — existing recurring gifts continue in the currency they were created with.
@@ -106,7 +106,7 @@ Stripe sends an email notification each time a donation is received. To change t
 
 ## Processing Fee Options
 
-You can configure your giving page to let donors optionally cover processing fees so your church receives the full donation amount. This setting is managed in your church settings within B1 Admin.
+You can let donors optionally cover processing fees so your church receives the full donation amount. In **Settings > Giving**, click edit and turn on the **Transaction Fee** switch next to your keys. The rates used to work out the fee are under **Fees & statements**: **Flat Rate** and **Transaction Fee** for cards, and for Stripe bank (ACH) gifts a percentage and a **Hard limit**. They start on your provider's standard rates; change them if your negotiated rates differ, then click **Save**.
 
 :::tip
 After setup, make a small test donation to confirm everything is working before announcing online giving to your congregation.
@@ -121,18 +121,18 @@ Kingdom Funding integration is currently in beta. Contact your B1 account repres
 :::
 
 1. Sign up or log in at [kingdomfundinginternational.com](https://kingdomfundinginternational.com/churches/apply).
-2. Obtain your **Security Key** (public) and **Private Key** from the Kingdom Funding merchant portal.
+2. Obtain your **Tokenization Key** and **Source Key** from the Kingdom Funding dashboard.
 3. In B1 Admin, go to **Settings**, open the **Giving** section and click edit.
 4. Set the **Provider** to **Kingdom Funding**.
-5. Paste your Security Key into the **Security Key** field and your Private Key into the **Private Key** field.
-6. Set the **Webhook Key** you received from Kingdom Funding, and copy the displayed webhook URL into your Kingdom Funding merchant settings so Kingdom Funding can notify B1 of completed transactions.
-7. Save.
+5. Paste the keys into the **Tokenization Key** and **Source Key** fields.
+6. Enter the **Webhook Key** (the webhook signing secret from the Kingdom Funding control panel), and copy the webhook URL shown under the provider into your Kingdom Funding settings so Kingdom Funding can notify B1 of completed transactions.
+7. Click **Save**.
 
 Once connected, members will see a card/bank toggle on the donation page and can give by credit card or ACH transfer.
 
 ## PayPal and Venmo Buttons
 
-Churches using **PayPal** as their provider get **PayPal** and **Venmo** buttons above the card fields on the giving page for one-time gifts. Donors who click one complete the payment in a PayPal window, and the gift is recorded like any other online donation. Venmo appears only for donors in the United States on devices PayPal considers eligible. Recurring gifts still use the card fields.
+PayPal is no longer offered in the **Provider** list for new setups. Churches already connected to **PayPal** get **PayPal** and **Venmo** buttons above the card fields on the giving page for one-time gifts. Donors who click one complete the payment in a PayPal window, and the gift is recorded like any other online donation. Venmo appears only for donors in the United States on devices PayPal considers eligible. Recurring gifts still use the card fields.
 
 ## Setting Up Paystack (Africa)
 
