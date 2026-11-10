@@ -38,8 +38,8 @@ Full admin access is not required to manage plans. Anyone who is a member of a m
 
 ## Creating a Plan
 
-1. From the plan type page, click **New Plan** at the top of the page.
-2. Give the plan a name or use the date as the name. Select the **date** for the service.
+1. From the plan type page, click **New Plan** at the top of the page. The **Add a Plan** form opens.
+2. Give the plan a name or use the date as the name. Select the **Service Date**. If your church has more than one campus, you can also pick the plan's **Campus**.
 3. If your ministry has [templates](./plan-templates.md), you can pick one under **Start from template** to fill in the order of service, positions, and notes in one step.
 4. Otherwise, if you would like to copy from a previous plan, use **Copy from Previous Plan** to choose **Positions Only** or **Positions and Assignments**. If you do not want to copy, choose **Nothing**. You can also check **Copy Order of Service**. When you copy from a previous plan, the new plan also keeps that plan's **Notes**, **Signup Deadline**, **Show volunteer names on signup page**, and automatic-replacement setting, so you don't have to re-enter them each week. You can change any of them in the new plan's settings.
 5. To set up several plans at once while copying, choose **Repeat every** and **Frequency** (Day, Week, or Month), then enter the **Number of plans** (up to 12). For Month, **On** lets you keep the same day of the month or the same weekday, such as the second Saturday. B1 lists the dates before you save and creates one plan for each date, each copied from the one before it. If the plan is named after its date, each new plan is named after its own date.
@@ -50,40 +50,68 @@ Full admin access is not required to manage plans. Anyone who is a member of a m
 The repeat settings are only available while you are copying something from the previous plan (positions, assignments, or the order of service).
 :::
 
-## The Plan Detail Page
+## The Plan Page
 
-When you open a plan, the plan's name, ministry, plan type, and service date appear at the top, with **Edit** and **Print** buttons. Below that, everything is on one page:
+When you open a plan, its ministry and plan type, name, and service date appear at the top, with **Print** and **Edit details** buttons. The page gives you an overview of the whole plan:
 
-- **[Order of Service](./service-order.md)** -- Build the order of service with elements like worship songs, prayers, announcements, and the sermon.
-- **Serving Team Assignments** -- Manage which team members are assigned to this plan. You can add people from your existing teams and see who has confirmed or is still pending. Links above the positions let you open the plan's **Notes** and **Times**.
+- **Run time**, **Serving team**, and **Responses** tiles show the length of the order of service, how many positions are filled (for example, "10 of 13 filled"), and how many volunteers have accepted, are pending, or declined.
+- **Order of Service** shows the first items of the [order of service](./service-order.md) with their lengths. Click **Edit order of service** to open the full order of service on its own page.
+- **Serving team** lists each position by category with the volunteers assigned and how many are still needed. If anything needs attention, a line such as "1 conflict · 3 not notified" appears with a **Review** link. Click **Manage serving team** to open the full serving team page.
+- **Times** lists the plan's service and rehearsal times. See [Service Times](#service-times).
+- **Notes** holds notes for the whole team. Click **Edit**, type your notes, and click **Save Notes**.
+
+The order of service and serving team pages each have a **Back to plan** link that returns you to the overview.
+
+## Service Times
+
+Times tell B1 when the service and any rehearsals happen. They are used for the signup deadline, [plan validation](./plan-validation.md), volunteer reminders, and the clock times in the order of service.
+
+1. On the plan page, click **Add time** next to **Times**.
+2. Choose the **Type**: **Service**, **Rehearsal**, or **Other**.
+3. Enter a **Display Name** (for example, "Sunday Service" or "Rehearsal").
+4. Set the **Start Time** and **End Time**.
+5. Under **Needed Serving Teams**, check the position categories (for example, Worship or Technical) that serve at this time.
+6. Click **Save**.
+
+Click a time's name to edit or delete it.
 
 ## Assigning Team Members
 
-1. Open a plan and scroll to **Serving Team Assignments**.
-2. Click **Add Position**. Fill out the information in the add a position form. For category name add whatever category you like. To let anyone in your church fill the position (not just members of one team), leave **Volunteer Group** set to **None**.
-3. Click on **People Needed** and choose volunteers to fill that position. If the position has a **Volunteer Group**, you choose from that group's members. If its Volunteer Group is set to **None**, you can search for anyone in your church instead.
-4. Add members from your team roster by clicking **Add**.
-5. Assigned members will appear under their team with their assignment status.
-6. Click notify volunteers to notify them within the B1 app or via email. If the plan uses a [confirmation workflow](#plan-settings), notifying also starts a workflow card that follows up on each request until the volunteer responds.
+1. Open a plan and click **Manage serving team**.
+2. Click **Add Position**. In the **Add a Position** dialog, choose or type a **Category Name** (for example, Worship or Hospitality), enter the position **Name** and the **Volunteer Count**, and pick a **Volunteer Group**. To let anyone in your church fill the position (not just members of one team), leave **Volunteer Group** set to **None**. Check **Allow Self-Signup** to let volunteers sign themselves up for open spots, and add an optional **Description** that volunteers see when they browse signup opportunities. Click **Save**.
+3. Click the **People Needed** link next to the position (for example, "2 People Needed").
+4. In the **Assign Position** dialog, click a team member's name to assign them. If the position's Volunteer Group is set to **None**, search for anyone in your church and click the add-person icon next to the person instead. Click **Done** when you're finished.
+5. Assigned volunteers appear next to the position. A green dot on their picture means they accepted, and a red dot means they declined.
+6. Notify the volunteers from the **Validation** panel (see [Notifying Volunteers](./plan-validation.md#notifying-volunteers)). If the plan uses a [confirmation workflow](#plan-settings), notifying also starts a workflow card that follows up on each request until the volunteer responds.
 
-Each position shows a count chip (for example, "2/3") so you can see how many spots are filled at a glance. Under the **Serving Team Assignments** heading, a summary ("X of Y positions filled") shows your overall staffing for the plan, along with how many are still needed, switching to **Fully staffed** once every position is covered.
+To change or remove an assignment, click the volunteer's name and click **Delete** in the **Edit Assignment** dialog. To change a position, click its name; **Delete** in the **Edit Position** dialog removes the position and unschedules anyone assigned to it.
+
+Each position shows a count chip (for example, "2/3", or "1/2 signup" for self-signup positions) so you can see how many spots are filled at a glance. At the top of the serving team page, a summary ("X of Y positions filled") shows your overall staffing for the plan, along with how many are still needed, switching to **Fully staffed** once every position is covered.
 
 :::tip
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
 :::
 
+### Auto Assign
+
+Click **Auto Assign** on the serving team page to fill every open spot from the position's Volunteer Group. Positions without a Volunteer Group are skipped. To take back the volunteers it just added, click **Undo Auto Assign**. You can also fill many plans at once from the [Plans Overview](./plans-overview.md#auto-scheduling-from-the-overview).
+
+### Scheduling Preferences
+
+In the **Assign Position** dialog, click the sliders icon next to a team member to set their **Scheduling Preferences**: **Max times per month**, **Preferred service times**, and **Household scheduling** (schedule the household together, or not on the same day). [Plan validation](./plan-validation.md) warns you when an assignment goes against these preferences.
+
 ### Copying Positions into an Empty Plan
 
-If a plan has no positions yet and there is an earlier plan of the same type, a **Copy from Previous Plan** link appears in **Serving Team Assignments**. Choose **Positions Only** or **Positions and Assignments** to fill the plan you have open with the previous plan's positions (and volunteers). The copy goes into the current plan; it does not create a second plan for the same date.
+If a plan has no positions yet and there is an earlier plan of the same type, a **Copy from Previous Plan** link appears on the serving team page. Choose **Positions Only** or **Positions and Assignments** to fill the plan you have open with the previous plan's positions (and volunteers). The copy goes into the current plan; it does not create a second plan for the same date.
 
 ## Plan Settings
 
-Each plan has additional settings you can configure by clicking **Edit** next to the plan in the plan type's list, or the **Edit** button at the top of the plan page. Click **Done** (or the plan's name) to return to the plan. These include:
+Each plan has additional settings you can configure by clicking **Edit** next to the plan in the plan type's list, or **Edit details** at the top of the plan page. Click **Done** (or the plan's name above the form) to return to the plan. The same form has a **Delete** button that deletes the plan, including its positions, assignments, and order of service. The settings include:
 
 - **Signup Deadline (hours before service)** — the number of hours before the service when volunteer signups close. The hours are counted back from the plan's first **Service** time (rehearsals and other times are skipped unless the plan has nothing else), so a 2-hour deadline on a 10:00 AM service closes signups at 8:00 AM that morning. If the plan has no times, the deadline is counted from 9:00 AM on the service date in your church's time zone. Once it passes, volunteers can neither sign up nor remove themselves. Enter a negative number to keep signups open past the service start time. Leave it blank, or clear it, for no deadline.
 - **Confirmation workflow** — choose a [Serving Assignment Confirmation workflow](./workflows.md#serving-assignment-confirmations) to follow up on this plan's serving requests by email and text until each volunteer accepts or declines. When you **Notify** volunteers on the published plan, each new request gets its own card on that workflow's board, and a note above the notify link says *"New requests use the confirmation workflow."* Leave it on **Use existing assignment notifications** to keep the usual notifications. Only active confirmation workflows appear in the list; create one under **Serving > Workflows** first.
-- **Show volunteer names on signup page** — when checked, signed-in volunteers can see who else is already signed up for each position on the B1.church signup page. Names are never shown to visitors who aren't signed in.
-- **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule.
+- **Show volunteer names on signup page** — when checked, signed-in volunteers can see who else is already signed up for each position on the B1.church signup page. Names are never shown to visitors who aren't signed in. It also controls whether the volunteers covering each order-of-service item are printed next to it (see [Printing Plans](#printing-plans)).
+- **Penciled in** — hides assignments from volunteers until you are ready to publish the schedule. While a plan is penciled in, the **Validation** panel on the serving team page shows a **Publish Plan** button (or **Publish & Notify** when volunteers haven't been notified yet) that makes the assignments visible.
 - **Automatically schedule a replacement when a volunteer declines** — when checked, if an assigned volunteer declines their position B1 will automatically contact the next available person on the team roster and ask if they can serve. This continues down the list until someone accepts, keeping your positions filled without manual follow-up.
 
 :::tip
@@ -139,6 +167,8 @@ If the plans are Lessons.church lessons, members of the associated group also se
 ## Printing Plans
 
 You can print a plan for distribution to your team. Open the plan and click **Print** at the top of the page to generate a printable version that includes assignments and the service order. The top of the printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, and the plan's name, so loose pages are easy to identify. This is useful for handing out at rehearsals or posting in a common area.
+
+When the plan has more than one service time, the printout has a time column for each service, headed with its start time. An item left out of a service (see [Including Items in Specific Service Times](./service-order.md#including-items-in-specific-service-times)) shows a dash in that service's column.
 
 The printout leaves off anything that would be empty. If no volunteers are assigned, there's no team box and the service order uses the full page width. If no items have a length, the **Length** column is left off, and if the plan has no service times and no lengths, so is the **Time** column. To drop the black **Service Order** heading bar with the service date, uncheck **Show Service Order heading** at the top of the print page; B1 Admin remembers your choice on that browser.
 
