@@ -1,13 +1,13 @@
 ---
 title: "Browsing Groups"
-description: "Browse your church's public groups on B1.church by category, then scan meeting times, locations, and descriptions on each card to find a good fit."
+description: "Search your church's public groups on B1.church, filter by category or campus, then scan meeting times, locations, and descriptions to find a good fit."
 ---
 
 # Browsing Groups
 
 <div class="article-intro">
 
-Your church's public groups page makes it easy to discover groups that interest you. Groups are organized by category, so you can quickly scan through different types of groups and find the right fit.
+Your church's public groups page makes it easy to discover groups that interest you. Search by name or filter by category and campus to find the right fit.
 
 </div>
 
@@ -24,28 +24,35 @@ Your church's public groups page makes it easy to discover groups that interest 
 
 ## Finding the Groups Page
 
-Navigate to the **Groups** page on your church's B1.church site. This page is publicly accessible, so you do not need to be logged in to browse.
+Navigate to the **Groups** page (`/groups`) on your church's B1.church site. This page is publicly accessible, so you do not need to be logged in to browse. It opens with the heading **Find a Group** and every public group as a card.
 
-## How Groups Are Organized
+## Searching and Filtering
 
-Groups are displayed by **category** (also called a label). Categories are set up by your church's administrators and might include labels such as "Small Groups," "Ministries," "Youth," or "Bible Studies." Each category shows all the groups that belong to it.
+Above the cards are tools to narrow the list:
+
+- **Search** -- type in the **Search groups by name or description** box to show only groups whose name, description, or category matches.
+- **Category** -- pick a category to see only its groups, or **All categories** to see them all. Categories are set up by your church's administrators and might include "Small Groups," "Ministries," or "Youth." This filter appears when your church has groups in more than one category.
+- **Campus** -- pick a campus to see only groups that meet there, or **All campuses**. This filter appears when your church has more than one campus.
+
+If nothing matches, the page says "No groups match your filters."
+
+Your church may also link to a page for a single label, such as `/groups/youth`, which lists only the groups with that label under a heading like "Youth Groups."
 
 ## Reading Group Cards
 
 Each group is displayed as a card with the following information:
 
 - **Group photo** -- A cover image representing the group. If no photo has been set, a default image is shown.
-- **Group name** -- Displayed prominently over the photo.
-- **Meeting time** -- When the group typically meets (for example, "Wednesdays at 7 PM"). If no time is set, a placeholder is shown.
-- **Meeting location** -- Where the group meets. If no location is set, a placeholder is shown.
-- **Description** -- A brief preview of what the group is about, limited to a few lines. Click the group to read the full description.
+- **Group name** -- Displayed over the photo.
+- **Meeting time** and **meeting location** -- When and where the group meets (for example, "Wednesdays at 7 PM"). If either isn't set, "--" is shown.
+- **Description** -- The first few lines of what the group is about, or "No Description Provided."
 
 ## Viewing a Group
 
-Click on any group card to open the full group detail page. There you will find the complete description, information about the group's leaders, upcoming calendar events, and a way to get in touch.
+Click on any group card to open the group's page in the member portal (`/mobile/groups/` followed by the group's name). There you will find the complete description, information about the group's leaders, upcoming calendar events, and a way to get in touch.
 
 :::tip
-If you are looking for a specific type of group, scan the category headings first. This helps you skip straight to the section that interests you rather than scrolling through every group.
+If you are looking for a specific type of group, pick its category first, then search within it.
 :::
 
 ## Next Steps

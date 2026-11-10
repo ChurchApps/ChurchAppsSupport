@@ -58,7 +58,7 @@ Each post in the list shows one of three states:
 
 ## How Visitors See Your Blog
 
-Published posts appear at `{yoursite}/blog`, 10 per page with **Older**/**Newer** links to page through your archive, along with a category filter and each post's byline and photo. Tags render as clickable chips too, letting visitors filter the list by tag the same way. Individual posts live at `{yoursite}/blog/{slug}` and include related posts from the same category. The blog page also publishes an RSS feed, auto-discoverable by feed readers and automation tools like Zapier.
+Published posts appear at `{yoursite}/blog`, 10 per page with **Older posts**/**Newer posts** links to page through your archive, along with category chips that filter the list and each post's byline and photo. Tags render as clickable chips at the bottom of each post, letting visitors filter the list by tag the same way. Individual posts live at `{yoursite}/blog/{slug}` and end with a **More in** *category* section listing up to three other posts from the same category. See [Blog](../../b1-church/content/blog.md) in the B1.church guide for what visitors see. The blog page also publishes an RSS feed, auto-discoverable by feed readers and automation tools like Zapier.
 
 Published posts can also appear in a **News** section on the Home screen of your church's app, if you turn it on -- see [Home Screen Sections](../settings/mobile-app.md#home-screen-sections).
 

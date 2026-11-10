@@ -22,9 +22,9 @@ Browse available volunteer positions and sign yourself up for upcoming services 
 
 ## Browsing Available Positions
 
-1. Navigate to the **Volunteer** page on your church's B1.church website.
-2. You will see a list of upcoming service plans that have open volunteer positions. Within each plan, positions are listed by category and then by name. If your church shows only the next week of each plan type, later weeks appear once the current one has passed.
-3. Each plan shows the **plan name**, **service date**, and **service times**. The service date is the plan's actual calendar date, no matter what time zone you are viewing from.
+1. Navigate to the **Volunteer** page (`/volunteer`) on your church's B1.church website, or **Volunteer** in the member portal.
+2. On the website, **Volunteer Opportunities** shows a card for each upcoming service plan with open volunteer positions: the **plan name**, **service date**, and **service times**, how many spots are open, a bar showing how many positions are filled, and a chip for each position with its open spots. Click **View & Sign Up** to open the plan. If your church shows only the next week of each plan type, later weeks appear once the current one has passed.
+3. The plan page lists its positions by category and then by name. The service date is the plan's actual calendar date, no matter what time zone you are viewing from.
 
 Positions are grouped by category (for example, "Band", "Hospitality", "Kids Ministry"). Each position shows:
 
@@ -41,7 +41,7 @@ Positions are grouped by category (for example, "Band", "Hospitality", "Kids Min
 4. The position now shows a green indicator confirming you are signed up.
 
 :::info
-You must be logged in to sign up. If you are not logged in, you will be prompted to log in first.
+You must be logged in to sign up. If you are not, the **Sign Up** buttons are turned off and a **Log in** link above the positions takes you to the login page and back to the plan.
 :::
 
 ## Removing a Signup

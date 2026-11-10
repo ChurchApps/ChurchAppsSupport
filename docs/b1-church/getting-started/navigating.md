@@ -109,7 +109,11 @@ The member portal is a Progressive Web App. Visit `/mobile/install` (or choose *
 
 ## Your Church's Public Website
 
-Outside the member portal, your church's public website has its own header navigation with links your administrators configured -- pages like [sermons](../content/sermons.md), the [Bible](../content/bible.md), [live streaming](../content/live-streaming.md), and a public group list. On a phone those links live behind the hamburger icon in the top-right of the header.
+Outside the member portal, your church's public website has its own header navigation with links your administrators configured -- pages like [sermons](../content/sermons.md), the [Bible](../content/bible.md), [live streaming](../content/live-streaming.md), the [blog](../content/blog.md), and the public [group list](../groups/browsing-groups.md). On a phone those links live behind the hamburger icon in the top-right of the header. Click your church's logo or name to return to the home page. If your church hasn't built a home page, its web address opens the member portal instead.
+
+When you are signed in, the header shows your name. Click it for **Member Portal** (opens `/mobile`), **Admin Portal** (only if you can edit the website), **Edit Profile** (with **Edit Account** and **Edit Church Profile**), and **Logout**. On a phone the same links are at the top of the hamburger menu. When you are signed out, the header shows a **Login** button if your church turned it on.
+
+Some pages are only for church members. If you open one while signed out, you'll see "This page is for church members" with a **Login** button; if you are signed in but the page isn't shared with you, you'll see "You don't have access to this page."
 
 :::info
 The tabs and tools you see vary by church. Administrators control which sections are visible to members through B1 Admin, so if you do not see a feature described here, your church may not have turned it on.
