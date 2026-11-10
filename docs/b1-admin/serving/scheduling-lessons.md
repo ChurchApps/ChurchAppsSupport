@@ -54,7 +54,7 @@ Once linked, you can schedule lessons directly from Plans.
 1. In B1 Admin, go to **Serving → Plans**
 2. Select your ministry tab and click **Add Plan Type** (or **Create Plan Type** if the ministry has none yet) — give the plan type a name such as Children's Church or Sunday School
 3. Click on the plan type you just made and click **Schedule Lesson**. From that menu you can schedule one lesson, bulk-schedule a series, or **Apply Year Plan** to drop in a published year sequence from Lessons.church.
-4. Select the **date** for the lesson (defaults to the upcoming Sunday)
+4. Select the **Scheduled Date** for the lesson (defaults to the upcoming Sunday)
 5. Click **Select Lesson** — a content browser dialog opens
 6. The dialog opens with **Lessons.church** selected as the provider (or the provider used for this plan type's earlier lessons). If you have linked other providers, you can switch between them at the top of the dialog
 7. Browse through the content:
@@ -93,13 +93,13 @@ For Lessons.church, the list also shows the **Venue** each lesson will use, matc
 
 If your classroom uses the same parts of every lesson (for example the opening video, the memory verse, and the story questions) and runs the rest live, you can save that trim once per plan type instead of editing every plan:
 
-1. Open one scheduled lesson's plan and click **Customize**
+1. Open one scheduled lesson's plan, click **Edit order of service**, and click **Customize**
 2. Delete the sections you don't use, as you normally would. To keep only one step of a section, such as the memory verse video, expand that section into its steps and delete the others
 3. Under the order of service, click **Use this for every lesson in Elementary** (the link names your plan type)
 4. Check the list of parts to keep. Leave **Also trim the upcoming lessons already scheduled** checked to trim the lessons you have already scheduled into this plan type (this replaces their order of service)
 5. Click **Save**
 
-From then on, every lesson scheduled into that plan type with **Schedule Lesson**, **Bulk Schedule**, **Apply Year Plan**, or **Link Lesson** comes out already trimmed to the same parts, so FreePlay plays only those parts on the classroom TV. Parts are matched by name, so a section that is renamed slightly ("Bible Story Questions" instead of "Big Bible Story Questions") is still found. A step inside a section whose name changes every week, like a memory verse video named after its reference, is kept by its place in the section.
+From then on, every lesson scheduled into that plan type with **Schedule Lesson**, **Bulk Schedule**, **Apply Year Plan**, or **Associate Lesson** (on a plan's order of service) comes out already trimmed to the same parts, so FreePlay plays only those parts on the classroom TV. Parts are matched by name, so a section that is renamed slightly ("Bible Story Questions" instead of "Big Bible Story Questions") is still found. A step inside a section whose name changes every week, like a memory verse video named after its reference, is kept by its place in the section.
 
 When a lesson doesn't fit the pattern (a part is missing, has no video or image that week, or was kept by its place instead of its name), that plan is still trimmed to what matched and is flagged: a warning appears under the plan in the plan list and at the top of the plan page, and the ministry's leaders get a notification. Check that plan's order of service before Sunday. The warning goes away when you edit the order of service or click **Dismiss**. If nothing in a lesson matches, the lesson is left whole and flagged.
 
