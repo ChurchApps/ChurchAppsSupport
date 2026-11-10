@@ -55,6 +55,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/attendance/index' },
           items: [
             'b1-admin/attendance/setup',
+            'b1-admin/attendance/recording-attendance',
             'b1-admin/attendance/tracking-attendance',
             'b1-admin/attendance/check-in',
             'b1-admin/attendance/checkin-safety',
