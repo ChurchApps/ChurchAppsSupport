@@ -28,7 +28,7 @@ The service order defines the sequence of elements in your worship service. Use 
 
 1. Go to **Serving** and select your ministry.
 2. Click on a **plan type**, then open a specific **plan**.
-3. The **Order of Service** section is at the top of the plan page, above **Serving Team Assignments**.
+3. The plan page shows a preview of the **Order of Service**. Click **Edit order of service** (or **View order of service** if you can't edit the plan) to open the full order of service on its own page. Click **Back to plan** to return.
 
 ## Building Your Service Order
 
@@ -44,7 +44,7 @@ The service order is a list of items arranged in the sequence they will occur du
 
 ## Adding Items to the Service Order
 
-1. In the **Order of Service** section, click **Add** and choose what to add: **Add Section** (a heading that groups items), **Item** (a custom item), **Song** (from your library), or **Add From Lesson**. You can also click **Add Section** directly.
+1. On the **Order of Service** page, click **Add** and choose what to add: **Add Section** (a heading that groups items), **Item** (a custom item), **Song** (from your library), or **Add From Lesson**. You can also click **Add Section** directly.
 2. To add something inside a section, use the add menu on that section's header and choose **Song**, **Item**, or **External Item**.
 3. Enter the details for the item, such as the title and any notes.
 4. Click **Save**.
@@ -64,6 +64,8 @@ This is the fastest way to pull a whole lesson's worth of sections and cues into
 :::
 
 ### Customizing a Linked Lesson
+
+To link a whole lesson to the plan, click **Associate Lesson** above the order of service and pick the lesson. The lesson's name then appears above the order of service with an **Unlink** link to remove it. (Plans created with [Schedule Lesson](./scheduling-lessons.md) are already linked.)
 
 When a plan has a lesson linked to it, the order of service first shows a **Lesson Preview** of that lesson. Click **Customize** (or add a section, item, or song) to copy the lesson's sections into the plan so you can edit them. For lessons that are just a list of files, such as GO! Curriculum lessons, the files are grouped under a section named after the lesson, so you still have a section bar to add your own items into.
 
@@ -89,15 +91,15 @@ Volunteers assigned to an item show up next to it in the service order, so anyon
 
 Each item and section shows how long it runs and when it starts:
 
-- If the plan has a single service time selected, the left rail shows the actual **clock time** each item starts (for example, 9:14 AM). Otherwise it shows elapsed time from the start of the service.
+- If the plan has service times, a **Viewing as** list appears above the order of service. With a service time selected (the first one is selected for you), the left rail shows the actual **clock time** each item starts in that service (for example, 9:14 AM). Choose **Run Times** to see the elapsed time from the start of the service instead, which is also what the rail shows when the plan has no service times.
 - Section headers total up the running time of everything inside them.
 - Songs and custom items count toward this schedule once you enter **Minutes**/**Seconds** on the item's edit screen.
 - Items you add from your media library (images or video clips) show a **thumbnail** and are timed automatically — a video's duration is measured from the file itself, while an image contributes a ~5:00 planning estimate (shown in italics) since it stays on screen until an operator advances it. You can still edit either one to a specific duration.
 
 ## Editing and Removing Items
 
-- Click on any item in the service order to **edit** its details.
-- Use the **delete** option to remove an item from the order.
+- Click the pencil icon on any item (or on a section header) to **edit** its details.
+- In the edit dialog, click **Delete** to remove the item from the order, or **Duplicate** to add a copy of it.
 
 :::info
 The service order is specific to each plan. Changes you make here only affect the selected plan and will not alter other plans or your song library.
@@ -120,16 +122,16 @@ Bulk select only applies to a section's direct children, not items nested inside
 
 If your plan has more than one service time (for example, an 8 a.m. and 10 a.m. service), you can choose which services each item should appear in. This is useful when an announcement is only relevant to one service, or when a song is sung in one service but not another.
 
-1. Open a plan that has two or more service times. Click **Times** in the **Serving Team Assignments** section to see or add them.
-2. In the **Order of Service** section, click an item to edit it.
+1. Open a plan that has two or more service times. The plan page lists them under **Times**, where you can also add more (see [Service Times](./plans.md#service-times)).
+2. On the **Order of Service** page, click an item's pencil icon to edit it.
 3. Under **Include in Services**, you will see a checkbox for each service time, labeled with the time.
 4. Uncheck any service where the item should be skipped.
 5. Click **Save**.
 
-By default, every item is included in every service. Excluded service times are hidden when you print the plan filtered to that service, so each service receives a clean run sheet with only the relevant items.
+By default, every item is included in every service. When you print the plan, each service gets its own time column, and an item left out of a service shows a dash in that column instead of a start time.
 
 :::tip
-The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, click **Times** in the plan's **Serving Team Assignments** section to add additional services first.
+The **Include in Services** section only appears when the plan has more than one service time. If you only see one service, click **Add time** under **Times** on the plan page to add additional services first.
 :::
 
 ### Showing a Different Position per Service
@@ -138,7 +140,7 @@ If an item has a **Position** set, each checked service time in **Include in Ser
 
 ## Sharing the Service Order
 
-Once your service order is complete, you can print the full plan (including the service order) with the **Print** button at the top of the plan page. This gives your team a complete rundown of the service, headed with your church's name and the plan's name. When **Show Volunteer Names** is on for the print, each section header also prints with the assigned volunteer's position next to it, so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows every distinct position name it resolves to across the services on that plan (for example, "Worship Team / Youth Team").
+Once your service order is complete, you can print the full plan (including the service order) with the **Print** button at the top of the plan page. This gives your team a complete rundown of the service, headed with your church's name and the plan's name. When the plan's **Show volunteer names on signup page** setting is on (see [Plan Settings](./plans.md#plan-settings)), each item and section header with a **Position** also prints with the names of the volunteers assigned to that position next to it (or the position's name, if nobody is assigned yet), so your team can see who's covering that section without opening the app. If a heading's position is overridden for specific services, the print shows each distinct result across the services on that plan (for example, "Worship Team / Youth Team").
 
 ## Next Steps
 
