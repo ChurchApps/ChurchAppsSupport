@@ -19,7 +19,7 @@ Get your sermon archive online and set up live streaming — from importing your
 <h4>Before You Begin</h4>
 
 - B1 Admin account with content management permission
-- YouTube or Vimeo channel with sermon videos (for importing your archive)
+- YouTube or Vimeo channel with sermon videos, and its channel ID (for importing your archive)
 - YouTube Channel ID (for live streaming — find it in your YouTube Studio settings)
 
 </div>
@@ -30,8 +30,9 @@ Playlists organize your sermons into series and collections for easy browsing.
 
 Follow the [Playlists](../sermons/playlists.md) guide to:
 
-1. Create series/collections like "2024 Sunday Messages", "Marriage Series", "Christmas Services"
-2. Add a name, description, publish date, and thumbnail for each playlist
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Sermons > Sermons** and find the **Playlists** panel
+2. Click **Add playlist** (or **Create First Playlist**) to create series/collections like "2024 Sunday Messages", "Marriage Series", "Christmas Services"
+3. Enter a **Playlist Title**, **Description**, and **Publish Date**, click **Add Thumbnail** to add an image, and click **Save**
 
 :::tip
 Create playlists before adding sermons. This makes it easier to organize sermons into the right series as you add them.
@@ -43,9 +44,9 @@ If you already have sermon videos on YouTube or Vimeo, you can pull them all in 
 
 Follow the [Bulk Import](../sermons/bulk-import.md) guide to:
 
-1. Enter your YouTube or Vimeo channel URL
-2. Preview the import to see which videos will be pulled in
-3. Click Import to add them all at once
+1. Click **Add Sermon** and choose **Bulk Import**, then choose YouTube or Vimeo
+2. Enter your **YouTube Channel ID** or **Vimeo Channel ID** and click **Fetch** to list the channel's videos
+3. Check the videos you want, choose a playlist in **Import Into Playlist**, and click **Import**
 
 ## Step 3: Add Individual Sermons
 
@@ -53,9 +54,9 @@ For one-off additions or sermons not part of a bulk import, add them individuall
 
 Follow the [Managing Sermons](../sermons/managing-sermons.md) guide to:
 
-1. Paste a video URL (YouTube, Vimeo, or Facebook)
-2. Title, description, thumbnail, and duration auto-fill from the video metadata
-3. Assign the sermon to a playlist
+1. Click **Add Sermon** and choose **Add Sermon**
+2. Pick a **Playlist** and the **Video Provider** (YouTube, Vimeo, Facebook, or Custom Embed Url), then paste the video link or ID
+3. For YouTube and Vimeo, click **Fetch** to fill in the title, description, thumbnail, duration, and publish date from the video, then click **Save**
 
 ## Step 4: Set Up Live Streaming
 
@@ -63,9 +64,9 @@ Connect your YouTube channel so your B1 site automatically picks up your live st
 
 Follow the [Live Streaming](../sermons/live-streaming.md) guide to:
 
-1. Enter your YouTube Channel ID in the streaming settings
-2. Configure your recurring service schedule (e.g., Sundays at 10:00 AM)
-3. Customize the streaming page tabs (Chat, Prayer requests, and custom links) on the **Sermons > Settings** page
+1. On the **Sermons** page, click **Add Sermon**, choose **Add Permanent Live URL**, enter your **YouTube Channel ID**, and click **Save**
+2. In the Jump menu, choose **Sermons > Live Stream Times**, click **Add Service**, set the **Service Time** (e.g., Sundays at 10:00 AM) with **Recurs Weekly** on, and pick your permanent live URL in the **Sermon** dropdown
+3. Customize the streaming page tabs (Chat, Prayer, and external links) on the **Sermons > Settings** page
 
 :::info
 When you go live on YouTube, the B1 streaming page automatically picks up the stream. No extra steps needed on Sunday morning.
@@ -75,10 +76,10 @@ When you go live on YouTube, the B1 streaming page automatically picks up the st
 
 Make your sermon library and live stream easily accessible to visitors.
 
-Follow the [Managing Pages](../website/managing-pages.md) guide to:
+Follow the [Page Editor](../website/page-editor.md) guide to:
 
-1. Add a Sermons section to your B1 website so visitors can browse your library
-2. Add a Live Stream section for the live viewing experience
+1. Add a **Sermons** element to a page on your B1 website so visitors can browse your library
+2. Add a **Stream** element for the live viewing experience
 
 ## Step 6: Mobile Access
 
@@ -93,7 +94,7 @@ The live chat feature lets your online congregation participate in real time, ju
 
 ## You're Done!
 
-Your sermon library is online and your live stream is configured. Members can catch up on past sermons anytime and join live services from anywhere. New sermon uploads can sync automatically.
+Your sermon library is online and your live stream is configured. Members can catch up on past sermons anytime and join live services from anywhere. Add each new sermon with **Add Sermon** (or another **Bulk Import**) after it's posted to YouTube or Vimeo.
 
 ## Related Articles
 
