@@ -52,7 +52,7 @@ Open **Page Settings** on any page to configure:
 - **Page Title** -- The page name.
 - **Layout** -- **Header & Footer** (your site's navigation bar and footer around the page, the default) or **Clean Centered Content** (just the page content, in a centered card on a light gray background, with no navigation bar or footer -- handy for a simple sign-up or landing page).
 - **URL Path** -- The page's address on your site. Click the pencil to change it, then click **Check** to make sure the path is valid and not already in use.
-- **Visibility** -- Choose who can see the page: **Everyone**, **Logged-in Users**, **Members & Staff**, **Staff Only**, **Team Members**, or **Specific Groups** (then tick the groups). This is a quick way to gate a private page (like a staff resource page) without a separate password.
+- **Visibility** -- Choose who can see the page: **Everyone**, **Logged-in Users**, **Members & Staff**, **Staff Only**, **Team Members**, or **Specific Groups** (then tick the groups). This is a quick way to gate a private page (like a staff resource page) without a separate password. Visitors who aren't signed in see "This page is for church members" with a **Login** button; signed-in people the page isn't shared with see "You don't have access to this page." Gated pages are left out of your sitemap.
 - **Meta Description** -- A short summary shown in search engine results and social media link previews. Aim for about 155 characters, or click **Generate with AI** to draft one from the page's content.
 
 The dialog also has a **Duplicate** button, which makes a copy of the page and all of its content, and a **Delete** button, which permanently deletes the page.
