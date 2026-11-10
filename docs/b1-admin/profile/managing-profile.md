@@ -19,15 +19,19 @@ The Profile page lets you edit your personal account settings. Your profile is s
 
 </div>
 
+## Opening Your Profile
+
+Click your profile picture in the top right corner of B1 Admin and choose **Edit Profile**. The Profile page has your name and email on the left and the **Linked Accounts**, **Two-Factor Sign-In**, and **Account Deletion** sections on the right.
+
 ## Profile Information
 
 The Profile page shows your name and email address on the left, with an **Edit** button below them. Click **Edit** to open the **Edit Account** form, which contains your basic account details:
 
 1. **Email** -- Your email address used for logging in and receiving notifications.
 2. **First Name** and **Last Name** -- Your display name across ChurchApps.
-3. **Password** -- Update your account password.
+3. **Current password**, **New password**, and **Verify password** -- Fill these in only to change your password; leave them blank to keep your current one.
 
-To update your information, edit the fields and click the **Save Changes** button. Click **Cancel** (or the **Back to** link with your name) to return to your profile without saving.
+To update your information, edit the fields and click the **Save Changes** button. A **Changes saved.** message confirms the update. Click **Cancel** (or the **Back to** link with your name) to return to your profile without saving. Click the eye icon in a password field to show or hide what you typed.
 
 ## Changing Your Password
 
@@ -43,7 +47,11 @@ Your password must be at least 8 characters long. Make sure both the password an
 
 ## Linked Accounts
 
-The **Linked Accounts** section shows any external services connected to your ChurchApps account. You can view which accounts are linked and manage those connections from this section.
+The **Linked Accounts** section shows the outside services you can connect to your ChurchApps account. Today that is **PraiseCharts**, used to find songs and download charts and sheet music for [songs](../serving/songs.md) in Serving. It shows **Linked** or **Not linked**:
+
+- Click **Link** and sign in to PraiseCharts in the window that opens to connect your account.
+- Click **Sign Up** to create a PraiseCharts account first.
+- Click **Unlink** to disconnect it.
 
 ## Two-Factor Sign-In
 
@@ -96,8 +104,8 @@ Your choices are remembered on that device and browser.
 
 In the **Account Deletion** section of the Profile page, you will find the option to delete your account.
 
-- If your church has **not** configured a Directory Approval Group, clicking **Delete my account** removes your account and associated data immediately, and this cannot be undone.
-- If your church **has** configured a Directory Approval Group, your request is sent to that group for review instead. The button is disabled while the request is pending, and you'll be notified once your church approves or declines it. See [Reviewing Account Deletion Requests](./account-deletion.md) for what happens next.
+- If your church has **not** configured a Directory Approval Group, the section warns *"Careful, these actions are permanent"*. Click **Delete my account** and confirm, and your account and associated data are removed immediately and you are signed out. This cannot be undone.
+- If your church **has** configured a Directory Approval Group, the section says your church reviews deletion requests. Click **Delete my account**, then **Send request**, and the request goes to that group for review instead. The button is disabled while the request is pending, and you'll be notified once your church approves or declines it. See [Reviewing Account Deletion Requests](./account-deletion.md) for what happens next.
 
 :::warning
 Account deletion — whether immediate or approved by your church — is permanent and cannot be reversed.
@@ -113,4 +121,4 @@ Profile editing is disabled in demo mode. If you are using a demo account, you w
 
 ## Next Steps
 
-- [Managing Devices](./devices.md) -- View and manage your connected ChurchAppsPlayer devices
+- [Managing Devices](./devices.md) -- View and manage your connected ChurchAppsPlayer and FreePlay screens
