@@ -28,13 +28,14 @@ When your church enables registration for an event, you can sign up through a si
 
 1. From the church calendar, open the event you want to register for and click **Register for this Event**.
 2. The registration page loads showing the event title, description, and date. An event that runs over several days shows both its start and end dates.
-3. If you are **logged in**, the form shows your name and confirms you are registering under your account.
+3. If you are **logged in**, the form shows **Registering as** with your name, so you are registering under your account.
 4. If you are a **guest** (not logged in), fill in:
    - **First Name** (required)
    - **Last Name** (required)
    - **Email** (required)
    - **Phone** (optional)
-5. If the event has attendee types (for example, Adult and Child at different prices), choose **your registration type**. Each type shows its price, and types that have run out show as **Sold out**.
+5. If the event has attendee types (for example, Adult and Child at different prices), choose **Your registration type**. Each type shows its price, and types that have run out show as **Sold out**.
+6. Click **Continue**.
 
 :::info
 If the event has a capacity limit, a progress bar shows how many spots remain. If the event is full and your church has enabled a waitlist, you can still complete the signup to join the waitlist — see [Joining a Waitlist](#joining-a-waitlist) below.
@@ -42,11 +43,11 @@ If the event has a capacity limit, a progress bar shows how many spots remain. I
 
 ## Step 2: Add Family Members
 
-1. If you want to register additional family members, enter their **First Name** and **Last Name** for each person.
-2. If the event has attendee types, pick a type for each person you add.
-3. Click **Add Member** to add more people (up to 10 total).
+1. If you are logged in, the **Additional Members** step lists your household under **Your Household**, with you already checked. Check each family member who is coming. If the event has attendee types, pick a type for each one.
+2. To add someone who isn't in your household, click **Add Member** and enter their **First Name** and **Last Name** (up to 10 people in total).
+3. If the event has attendee types, pick a type for each person you add.
 4. Click the remove button next to any member to take them off the registration.
-5. If you are only registering yourself, you can skip this step.
+5. Click **Continue** (the button says **Complete Registration** when the event has no options or payment). If you are only registering yourself, leave everyone else unchecked and continue.
 
 ## Step 3: Choose Options & Selections (If Offered)
 
@@ -81,7 +82,7 @@ If your church does not take payments online, the payment step says *"Online pay
 
 ## Step 6: Confirm
 
-A confirmation message appears with the event details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
+A **Registration Confirmed!** message appears with the event details and a list of everyone you registered. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
 
 If you chose **Register and Pay Later**, the member portal shows **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due (for example, "Balance due $25.00 of $25.00").
 
