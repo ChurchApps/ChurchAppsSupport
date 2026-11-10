@@ -14,8 +14,7 @@ The audit log tracks all significant actions and changes across your church mana
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- B1 Admin account with server admin access
-- Navigate to **Settings** to find the Audit Log
+- A role with the **Edit Church Settings** permission (in the **Content** section of a role's permissions; the same permission that opens **Settings**). See [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
@@ -25,16 +24,18 @@ The audit log tracks all significant actions and changes across your church mana
 2. Click **Audit Log**.
 3. The log displays recent entries in a table with the following columns:
    - **Date** -- When the action occurred.
-   - **Category** -- The type of action (color-coded for quick scanning).
-   - **Action** -- What was done (e.g., create, update, delete, login_success).
+   - **Module** -- The part of B1 the change was made in (for example, membership or giving).
+   - **Category** -- The type of record or action (color-coded for quick scanning).
+   - **Action** -- What was done (e.g., Donation Saved, Login Success, Note Updated).
    - **Entity** -- The type and ID of the record that was affected.
    - **IP Address** -- The IP address of the user who performed the action.
-   - **Details** -- A summary of the specific changes made.
+4. Click the arrow at the start of a row to see its details: a table of each changed field with its **Old Value** and **New Value**, or the **Deleted Record** for a delete.
 
 ## Filtering the Log
 
 Use the filters at the top of the page to narrow down the results:
 
+- **Module** -- Filter by area: **All Modules**, **People**, **Giving**, **Attendance**, **Messaging**, **Content**, **Serving**, or **Lessons**.
 - **Category** -- Filter by action type:
   - **All Categories** -- Show everything.
   - **Login** -- Login successes and failures.
@@ -51,15 +52,14 @@ Click **Search** after setting your filters to update the results.
 
 ## Understanding Categories
 
-Each category is color-coded for quick identification:
+Each entry's category is shown as a chip, color-coded for quick identification:
 
-- **Login** -- Blue chip. Tracks successful and failed login attempts.
-- **People** -- Purple chip. Tracks person record creates, updates, and deletes.
-- **Permissions** -- Red chip. Tracks when access rights are granted or revoked.
-- **Donations** -- Green chip. Tracks donation record changes.
-- **Groups** -- Gray chip. Tracks group management operations.
-- **Forms** -- Orange chip. Tracks form submission activity.
-- **Settings** -- Yellow chip. Tracks configuration changes.
+- **login** -- Blue chip. Tracks successful and failed login attempts.
+- **person** -- Blue chip. Tracks person record creates, updates, and deletes.
+- **permission** -- Red chip. Tracks when access rights are granted or revoked.
+- **donation** -- Green chip. Tracks donation record changes.
+- **form** -- Orange chip. Tracks form submission activity.
+- **group**, **settings**, and other categories (such as **userchurch**) -- Gray chip.
 
 ## Note History on People and Groups
 
@@ -74,11 +74,11 @@ Staff who cannot open the audit log see the notes list without these markers.
 
 ## Exporting the Log
 
-When log entries are displayed, a **CSV download** button appears. Click it to export the current filtered results to a spreadsheet for offline review or record-keeping.
+When log entries are displayed, an **Export CSV** button appears at the top of the page. Click it to export the current filtered results to a spreadsheet for offline review or record-keeping.
 
 ## Pagination
 
-Use the pagination controls at the bottom of the table to navigate through results. You can display 25, 50, or 100 entries per page.
+Use the pagination controls at the bottom of the table to navigate through results. You can display 25, 50 (the default), or 100 entries per page.
 
 :::info
 Audit log entries are automatically retained for one year. Entries older than 365 days are removed to keep the system performant.
