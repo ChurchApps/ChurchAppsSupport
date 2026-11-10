@@ -72,7 +72,7 @@ Turn the Zap on. Send a test gift in B1Admin to verify a text arrives.
 ### Event reminders the morning of
 
 - **Trigger** — Schedule by Zapier (daily, 7am)
-- **Action** — B1.church: Find Events for today (or use a Find step with a fixed date filter, or store today's event list in a Google Sheet)
+- **Action** — keep today's event list in a Google Sheet (or another app Zapier can read) and look up today's rows — B1's Zapier app has no action for finding events
 - **Action** — Webhooks by Zapier: POST to Mobile Message with the event list to a registered subscriber group
 
 ### Use the batch endpoint for a list broadcast
@@ -80,13 +80,13 @@ Turn the Zap on. Send a test gift in B1Admin to verify a text arrives.
 Mobile Message's `/v1/messages` endpoint accepts up to 10,000 messages per call. To broadcast to a B1 group:
 
 - **Trigger** — B1.church: New Form Submission (filter to a specific form)
-- **Action** — B1.church: List Group Members for a target group (via a *Webhooks by Zapier — GET* step on `/membership/groupmembers?groupId=…`)
+- **Action** — Webhooks by Zapier: GET `/membership/groupmembers?groupId=…` to list the target group's members (B1's Zapier app has no list action for this; send the API key as an `Authorization: Bearer cak_…` header)
 - **Action** — Formatter by Zapier → Utilities → Line-itemize the response into a `messages` array
 - **Action** — Webhooks by Zapier: POST the full array to `/v1/messages`
 
 ### Make alternative
 
-If you prefer Make, drop the **HTTP — Make a request** module after the B1 Watch Events trigger, configure it the same way (POST, Basic Auth, JSON body). See the [Make overview](../make.md) for the B1 side.
+If you prefer Make, drop the **HTTP — Make a request** module after the B1 Watch Events trigger, configure it the same way (POST, Basic Auth, JSON body). See the [Make overview](../make.md) for the B1 side — note that the B1.church Make app isn't released yet.
 
 ## Limits & Notes
 

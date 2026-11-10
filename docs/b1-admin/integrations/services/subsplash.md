@@ -43,7 +43,7 @@ In B1Admin: **Settings → Developer → API Keys → New API Key**. Scopes:
 - `people:read` — to look up the donor by email
 - `people:write` — to create them if they don't exist
 - `donations:write` — to record the gift
-- (No `settings:write` needed — Subsplash, not B1, owns the trigger here.)
+- `settings:write` — Zapier checks every B1 key against B1's webhook list when you connect it, so the connection fails without it (even though Subsplash, not B1, owns the trigger here)
 
 ### 2. Connect Subsplash to Zapier
 
@@ -53,9 +53,9 @@ Follow [Subsplash's Zapier integration guide](https://support.subsplash.com/en/a
 
 1. **Trigger** — Subsplash: New Donation
 2. **Action** — B1.church: Find Person (by email)
-3. **Filter / Path** — branch on "person found":
-   - **Found:** B1.church: Add Donation. Map amount, date, fund, method = "Online", notes = Subsplash transaction id.
-   - **Not found:** B1.church: Create Person → B1.church: Add Donation (using the newly created person's id).
+3. **Action** — B1.church: Add Donation, using the person's id from step 2. Map amount, date, fund, method = "Online", notes = Subsplash transaction id.
+
+B1's *Find Person* stops the Zap with a "No person found" error when nobody matches, so a Filter or Path step can't branch on it. To handle first-time donors, turn on Zapier's error handling for the Find Person step and, in its error path, run B1.church: Create Person → B1.church: Add Donation (using the newly created person's id).
 
 Turn the Zap on. Future Subsplash donations flow into **B1Admin → Donations** within seconds.
 
@@ -82,12 +82,12 @@ Turn the Zap on. Future Subsplash donations flow into **B1Admin → Donations** 
 
 - **Subsplash's Zapier app is triggers-only.** If you want B1-side changes (e.g. a new B1 person to land in Subsplash too), you'd need to build that bridge from B1's Zapier app triggers calling Subsplash's REST API via a custom *Webhooks by Zapier — POST* action. That's a custom integration, not a recipe.
 - **API access is plan-gated.** If Zapier connection fails with `403 Forbidden`, your Subsplash plan likely doesn't include API access — contact your Client Success Manager.
-- **Fund mapping is manual.** Subsplash passes a campaign or category name; B1 needs a numeric fund id. Either hard-code the fund in the Zap or maintain a Zapier *Lookup Table* mapping Subsplash campaigns to B1 funds.
+- **Fund mapping is manual.** Subsplash passes a campaign or category name; B1 needs one of its own funds. Either pick the fund from the Add Donation step's **Fund** dropdown or maintain a Zapier *Lookup Table* mapping Subsplash campaigns to B1 funds.
 
 ## Troubleshooting
 
 - **No trigger fires after a donation** — verify in Subsplash's Zapier dashboard that the connection still shows *Connected*. If the API token was rotated on the Subsplash side, the Zap silently stops; reconnect.
-- **B1 *Add Donation* fails with 422** — most often a missing or unrecognised `fundId`. List your funds via **B1Admin → Donations → Funds** and copy the exact id into the Zap step.
+- **B1 *Add Donation* records the gift without a fund** — the **Fund** field was empty or mapped to a value that isn't a B1 fund id. Pick the fund from the step's **Fund** dropdown (it lists the funds under **Donations > Funds** in B1Admin), or map a Lookup Table that outputs B1 fund ids.
 - **First gift triggers twice** — Subsplash occasionally re-delivers a trigger if Zapier missed its ack. Add a *Filter by Zapier* on the donation id (Subsplash sends one in the payload) to drop duplicates.
 
 ## See Also

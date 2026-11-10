@@ -156,13 +156,17 @@ Follow Step 1 of Set It Up above if you haven't already.
      /membership/people:
        get:
          operationId: listPeople
-         summary: List people in the church
+         summary: List everyone in the church
+         responses:
+           "200":
+             description: OK
+     /membership/people/search:
+       get:
+         operationId: searchPeople
+         summary: Find people by name, or by exact email
          parameters:
            - in: query
-             name: firstName
-             schema: { type: string }
-           - in: query
-             name: lastName
+             name: term
              schema: { type: string }
            - in: query
              name: email
@@ -192,7 +196,7 @@ Follow Step 1 of Set It Up above if you haven't already.
      /giving/donations:
        get:
          operationId: listDonations
-         summary: List donations
+         summary: List donations for one person, or between two dates (send both startDate and endDate as YYYY-MM-DD)
          parameters:
            - in: query
              name: personId
@@ -206,16 +210,27 @@ Follow Step 1 of Set It Up above if you haven't already.
          responses:
            "200":
              description: OK
-     /attendance/attendance:
+     /attendance/attendancerecords/search:
        get:
          operationId: listAttendance
-         summary: List attendance records
+         summary: List attendance records between two dates, optionally for one campus, service, service time, or group
          parameters:
+           - in: query
+             name: startDate
+             required: true
+             schema: { type: string, format: date }
+           - in: query
+             name: endDate
+             required: true
+             schema: { type: string, format: date }
+           - in: query
+             name: campusId
+             schema: { type: string }
            - in: query
              name: serviceTimeId
              schema: { type: string }
            - in: query
-             name: campusId
+             name: groupId
              schema: { type: string }
          responses:
            "200":

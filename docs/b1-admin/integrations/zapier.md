@@ -46,7 +46,7 @@ Combine these freely with any of Zapier's 7,000+ supported apps.
 
 1. In B1Admin go to **Settings → Developer → API Keys**.
 2. Click **New API Key**, give it a name like "Zapier", and select the scopes the Zap needs.
-3. **Important:** Zapier triggers register a webhook on your behalf when the Zap turns on, which requires the **`settings:write`** scope. Always include `settings:write` if any of your Zaps use a B1 trigger.
+3. **Important:** always include the **`settings:write`** scope. Zapier checks the key against B1's webhook list when you connect it, and B1 triggers register a webhook on your behalf when the Zap turns on — both need `settings:write`. A key without it fails the connection test, even if your Zaps only use B1 actions.
 4. Also grant the scopes the actions need — for example a "Add Donation" action needs `donations:write`, "Create Person" needs `people:write`.
 5. Save. The full `cak_…` key is shown **once** — copy it.
 
@@ -54,7 +54,7 @@ Combine these freely with any of Zapier's 7,000+ supported apps.
 
 1. In Zapier, build a new Zap.
 2. When you pick a B1 trigger or action for the first time, Zapier asks you to **Sign in to B1.church**.
-3. Paste the API key from step 1 and click **Yes, Continue**. Zapier validates it against your church.
+3. Paste the API key from step 1 into **API Key** (leave **API URL** blank) and click **Yes, Continue**. Zapier validates it against your church.
 
 The connection is saved in Zapier and reused by every Zap on your account.
 
@@ -76,8 +76,8 @@ Pick a trigger, then add one or more action steps. Examples below.
 
 ### Add new group members to a Google Group
 
-- **Trigger** — B1: New Group Member (filtered to a specific `groupId`)
-- **Action** — Filter by Zapier: only continue if the B1 group is the one you care about
+- **Trigger** — B1: New Group Member
+- **Action** — Filter by Zapier: only continue if the trigger's `groupId` is the B1 group you care about
 - **Action** — B1: Find Person (use the trigger's `personId` to fetch the email)
 - **Action** — Google Groups: Add Member
 
@@ -101,7 +101,7 @@ This means the trigger only fires for events that happen **after** the Zap is tu
 
 ## Troubleshooting
 
-- **"Authentication failed"** when connecting — the API key is wrong, revoked, or missing the scopes the Zap needs. Re-mint it in B1Admin with at least `settings:write` plus whatever resource scopes the Zap touches, then update the connection.
+- **"Authentication failed"** when connecting — the API key is wrong, deleted, or missing `settings:write`. Create a new key in B1Admin with `settings:write` plus whatever resource scopes the Zap touches (scopes can't be changed on an existing key), then update the connection.
 - **Trigger never fires** — confirm the webhook actually got registered: in B1Admin, **Settings → Developer → Webhooks** should now show a row named "Zapier — &lt;event&gt;". If it's not there, the API key probably lacked `settings:write` when you turned the Zap on. Fix the key, toggle the Zap off and back on.
 - **Trigger fires twice** — Zapier occasionally redelivers if its acknowledgement was lost. Use a "Filter by Zapier" step on a unique id (e.g. the person's `id`) if you need strict deduplication.
 

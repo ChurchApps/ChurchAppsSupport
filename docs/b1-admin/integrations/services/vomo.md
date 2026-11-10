@@ -39,6 +39,7 @@ The VOMO actions are limited to **drafting projects** and **finding** existing o
 
 **Settings → Developer → API Keys → New API Key**. Scopes:
 
+- `settings:write` — Zapier checks every B1 key against B1's webhook list when you connect it, so the connection fails without it
 - `people:read`, `people:write` — to look up and create volunteers as B1 people
 - `groups:write` — to add them to serving-team groups
 - (Optional) `attendance:write` if you treat kiosk check-ins as attendance
@@ -47,9 +48,9 @@ The VOMO actions are limited to **drafting projects** and **finding** existing o
 
 1. **Trigger** — VOMO: Membership (event = `created`).
 2. **Action** — B1.church: Find Person, matched on email.
-3. **Filter / Path** — fork on found vs. not found:
-   - Not found → B1.church: Create Person, then Add Group Member to the appropriate volunteer group.
-   - Found → B1.church: Add Group Member directly.
+3. **Action** — B1.church: Add Group Member, adding the person from step 2 to the appropriate volunteer group.
+
+   B1's *Find Person* stops the Zap with a "No person found" error when nobody matches. For volunteers who aren't in B1 yet, turn on Zapier's error handling for the Find Person step and run B1.church: Create Person, then Add Group Member, in its error path.
 4. Turn on. New VOMO volunteers now appear in B1 with the right group membership.
 
 ### 3. (Optional) Build the kiosk-check-in Zap
@@ -87,7 +88,7 @@ Run a daily Zapier *Schedule* trigger that calls Find Organizer in VOMO for a li
 ## Troubleshooting
 
 - **Trigger never fires** — VOMO's instant triggers require the API token to remain valid. Re-test the Zap; reconnect VOMO if the token was rotated.
-- **B1 *Add Group Member* fails with 422** — the group id in the action doesn't exist. Open **B1Admin → Groups**, click the group, and copy the URL's id segment into the Zap step.
+- **B1 *Add Group Member* fails** — the group in the action no longer exists. Pick the group again from the step's **Group** dropdown, or open the group in B1Admin (**People > Groups**) and copy the id from the end of its web address.
 - **Duplicate B1 people from a single VOMO volunteer** — they probably signed up under a different email than they already had in B1. Either standardise emails, or add a Zapier *Path* that also searches by phone before creating.
 
 ## See Also
