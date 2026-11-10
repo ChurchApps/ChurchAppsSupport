@@ -25,13 +25,18 @@ Once your form is live, submissions will start coming in. The **Form Submissions
 2. Click on the form you want to review.
 3. Go to the **Form Submissions** tab.
 
-You will see a list of all responses received for that form. Each submission shows the respondent's information and the date it was submitted, followed by one column for every question on the form. If your form has many questions, scroll the table sideways to see the rest of the columns.
+The tab has two cards:
+
+- **Form Submission Summary** -- For each Multiple Choice, Checkbox, and Yes/No question, a tally of how many people picked each answer.
+- **Form Submission Results** -- A table of every response, with a count of submissions. Each row shows who the submission is for (**Submitted For** on People forms, **Submitted By** on Stand Alone forms, or **Anonymous**) and the **Submission Date**, followed by one column for every question on the form, in the form's order. If your form has many questions, scroll the table sideways to see the rest of the columns. Click a person's name to open their record.
+
+Click **Export** on either card to download the responses as a CSV file, one row per submission. Click the **Print** (printer) icon to print the summary and the results table, headed with your church's name.
 
 ## Reviewing Individual Submissions
 
-Click on any submission to view the full details. You will see all the answers the person provided for each question on the form.
+To read or print one person's answers, open that person's record in [People](../people/adding-people.md#working-with-forms) and click the form in their **Forms** section. You will see all the answers they gave, one question per line.
 
-Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. The printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) centered at the top with your church's name beneath it. Printouts always use dark text on a white page, even if you use B1 Admin in dark mode. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy. The same print icon appears wherever a submission is shown, including on a [person's profile](../people/adding-people.md#working-with-forms).
+Click the **print icon** next to the submission to print that person's filled-in answers -- useful for a paper file or a signed release you need to keep on hand. The printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) centered at the top with your church's name beneath it. Printouts always use dark text on a white page, even if you use B1 Admin in dark mode. This is separate from [printing a blank form](./creating-forms.md#printing-a-blank-form); it prints one person's already-submitted answers, not an empty copy.
 
 ## Changing the Person on a Submission
 
@@ -53,7 +58,7 @@ Submissions can come in through several channels:
 
 - **Public URL** -- If your form has a public URL (Stand Alone forms), anyone with the link can submit a response. Share the URL via email, social media, or text messages.
 - **Embedded on your website** -- Forms embedded on your B1 website collect submissions automatically when visitors fill them out.
-- **Internal use** -- Staff and volunteers can also submit forms on behalf of others directly within B1 Admin.
+- **Internal use** -- Staff can fill in People forms for someone from that person's record in B1 Admin. See [Working with Forms](../people/adding-people.md#working-with-forms).
 
 :::tip
 Check the **Form Submissions** tab regularly for forms like visitor cards or prayer requests, so you can follow up promptly.
