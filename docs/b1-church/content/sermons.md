@@ -20,25 +20,32 @@ The Sermons page lets you browse and watch recorded sermons from your church. Yo
 
 </div>
 
-## Browsing Sermons
+## Browsing Sermons on the Website
 
 1. Navigate to the **Sermons** page from your church's site navigation.
-2. You will see a listing of available sermons, typically organized by playlist or series.
-3. Click on any sermon to watch or listen to it.
+2. The page opens on **Playlists**: a card for each of your church's sermon series, with its picture and title.
+3. Click a playlist to see the sermons in it, each with its picture and title.
+4. Click a sermon to play it on the page.
 
-Sermons may include video or audio content hosted on platforms like YouTube, Vimeo, or Facebook. When you click a sermon, the media plays directly on the page.
+The buttons above the list (**Playlists**, then the playlist's name, then the sermon's title) take you back a step. Sermons may be video hosted on platforms like YouTube, Vimeo, or Facebook.
 
-## What You Will See
+Each sermon also has its own page at `/sermons/` followed by the sermon's ID, which you can share or bookmark. It shows the video, the series name, the title, the date, and the description.
 
-Each sermon entry can display:
+:::info Podcast feed
+Your church's sermons are also published as a podcast (RSS) feed. Podcast apps and feed readers can find it from any sermon's page.
+:::
 
-- **Title** -- The name of the sermon
-- **Speaker** -- Who delivered the message
-- **Date** -- When the sermon was recorded or published
-- **Description** -- A summary of the sermon content
-- **Thumbnail** -- A preview image for the sermon
+## Sermons in the Member Portal
 
-Your church organizes sermons into playlists or series. This makes it easy to follow along with a multi-week series or find sermons on a particular topic.
+The **Sermons** screen in the member portal (`/mobile/sermons`) is laid out as one page of sections:
+
+- **Watch latest** at the top opens the newest sermon. While your church is live, it becomes **Watch Live** and opens the [live stream](./live-streaming.md).
+- **Latest** -- the newest sermon with its picture, series, date, and length.
+- **Live** -- shown when a stream is live or starts within the next 24 hours, with the next service time. Tap it to open the stream.
+- **Recent** -- the next three sermons. Tap **All sermons** to see every sermon, filter by year, or search titles and descriptions across all years.
+- **Series** -- your church's three newest series with how many sermons each has. Tap **All series** for the full list, or tap a series to see its sermons.
+
+Tap a sermon to open it. Tap the picture or **Watch Sermon** to play it, **Share** to send a link, or **Open Link** to open the video on its own site. Below are an **About** section with the description and an **In this series** list with an **All in series** link.
 
 :::tip
 If you are looking for a live broadcast rather than a recorded sermon, check the [Live Streaming](./live-streaming.md) page instead.
