@@ -27,10 +27,10 @@ At the end of each year, your donors need a summary of their tax-deductible givi
 ## Generating Statements
 
 1. In the **Select Year** panel, choose the **Year** from the dropdown. You can choose the current year or any of the five previous years.
-2. The page loads only the donations dated in that year (January 1 through December 31), so it opens quickly even if your church has many years of giving history. When you pick a different year, the summary refreshes with that year's donations. The **Summary** panel below the year shows statistics for that year, including:
+2. The page loads only the donations dated in that year (January 1 through December 31), so it opens quickly even if your church has many years of giving history. When you pick a different year, the summary refreshes with that year's donations. The **Summary** panel below the year shows statistics for that year, counting the same gifts the statements include (gifts made only to non-deductible funds are left out):
    - **Total Donors** -- the number of people who gave
    - **Total Donations** -- the number of individual donation records
-   - **Total Amount** -- the combined dollar amount of all giving
+   - **Total Amount** -- the combined amount of their giving
 
 ## Downloading Statements
 
@@ -38,7 +38,7 @@ The **Download Options** panel gives you two options for getting statements to y
 
 ### Download as CSV Files
 
-Under **Individual CSV Files**, click **Download ZIP** to download a ZIP file containing an individual CSV file for each donor. This is useful if you want to email statements individually or import them into another system.
+Under **Individual CSV Files**, click **Download ZIP** (the button shows the number of files) to download a ZIP file containing an individual CSV file for each donor. This is useful if you want to email statements individually or import them into another system.
 
 ### Print All Statements
 
@@ -56,7 +56,7 @@ Giving statements only include donations assigned to funds that have the **Tax D
 
 ## Receipt Formats for Canada, Australia and New Zealand
 
-Churches outside the United States can switch the statement to their country's official receipt layout. Click **Statement format** at the top of the Giving Statements page (or go to **Settings** and open the **Giving** section), and set **Statement Format** to **Canada**, **Australia** or **New Zealand**, then fill in the fields that appear: your registration number (CRA registration number, ABN, or NZ charity registration number), your organization's address, the name of the person authorized to sign receipts, and for Canada the city where receipts are issued.
+Churches outside the United States can switch the statement to their country's official receipt layout. Click **Statement format** at the top of the Giving Statements page (or go to **Settings** and open the **Giving** section), and set **Statement Format** (which starts on **Standard**) to **Canada - CRA official receipt**, **Australia** or **New Zealand**, then fill in the fields that appear: your registration number (**CRA Registration Number**, **ABN**, or **NZ Charity Registration Number**), **Organization Address**, **Authorized Signatory Name**, and for Canada the **City of Issue**. Click **Save**.
 
 Statements then carry the wording your tax authority expects (for Canada, "Official Receipt for Income Tax Purposes" with the CRA reference), a receipt number in the form `YEAR-DONORID`, the eligible amount counted from tax-deductible funds only, and a separate line for any gifts to non-deductible funds. Donors see the same receipt block when they print their own statement from B1.church.
 
