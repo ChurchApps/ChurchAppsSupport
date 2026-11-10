@@ -1,6 +1,6 @@
 ---
 title: "Using the Page Editor"
-description: "Set up a page editor in B1 Admin by adding sections and elements, styling them, previewing on mobile, and publishing drafts. Covers undo and version history too."
+description: "Build website pages in the B1 Admin page editor: add sections and elements, style them, preview on mobile, publish drafts, and use undo and edit history."
 ---
 
 # Using the Page Editor
