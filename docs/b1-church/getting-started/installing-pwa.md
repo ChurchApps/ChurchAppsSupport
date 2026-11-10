@@ -43,7 +43,7 @@ The page detects your device and shows the right instructions automatically:
 
 - **iPhone** — step-by-step Safari "Add to Home Screen" instructions
 - **Android** — a one-tap **Install on Home Screen** button in Chrome
-- **Desktop** — a QR code you can scan with your phone to open the install page there
+- **Desktop** — a QR code you can scan with your phone to open the install page there, plus an **Install on this computer** button if your browser supports installing web apps
 
 You can get to the install page in several ways:
 
@@ -75,20 +75,20 @@ PWA installation on iOS requires Safari. If you are using Chrome or another brow
 ## Installing on Android (Chrome)
 
 1. Open **Chrome** on your Android device and go to `https://yourchurchname.b1.church/mobile/install`.
-2. Tap the **Install on Home Screen** button. (If the button isn't available, tap the three-dot menu (⋮) in the top-right corner and select **Add to Home screen**.)
-3. Tap **Add** when prompted.
+2. Tap the **Install on Home Screen** button. (If Chrome hasn't offered an install prompt yet, the page tells you so -- tap the three-dot menu (⋮) in the top-right corner and select **Install app** instead.)
+3. Tap **Install** when prompted.
 
 The app icon will appear on your home screen. Tap it to open the member portal.
 
 ## After Installing
 
-Once installed, the PWA opens directly into the member portal in a dedicated full-screen window. You can:
+Once installed, the PWA opens directly into the member portal in a dedicated full-screen window. If you open the install page from the installed app, it shows "You're all set!" instead of the steps. You can:
 
 - Log in with your existing ChurchApps account
 - Access all the member features your church has enabled — groups, giving, check-in, serving plans, and more
 - Return to it at any time by tapping the icon on your home screen
 
-The app icon will show a **notification badge** (a small number badge) when you have unread messages, so you can see at a glance if there is something new waiting for you.
+The app icon will show a **notification badge** (a small number badge) when you have unread notifications or messages, so you can see at a glance if there is something new waiting for you.
 
 :::info
 The PWA requires an internet connection. Unlike some native apps, it does not cache all content for offline use.
