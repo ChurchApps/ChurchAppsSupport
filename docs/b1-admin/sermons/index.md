@@ -13,12 +13,12 @@ The Sermons section in B1 Admin lets you manage your church's sermon library and
 </div>
 
 :::info
-To access the Sermons section, you need the **contentApi.streamingServices.edit** permission. If you do not see Sermons in your menu, ask your church administrator to grant you the appropriate role. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing permissions.
+To access the Sermons section, you need the **Edit Services** permission in the **Content** section of your role. Without it, Sermons is missing from your menu and its pages show a permission message. If you do not see Sermons in your menu, ask your church administrator to grant you the appropriate role. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing permissions.
 :::
 
 ## What You Can Do
 
-The Sermons section is organized into four main areas:
+In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), **Sermons** has three pages: **Sermons** (your library, playlists, and podcast feed), **Live Stream Times**, and **Settings**. Bulk Import is reached from the **Add Sermon** button. The section covers these areas:
 
 ### Sermons
 
@@ -30,7 +30,11 @@ Organize your sermons into series or collections. Playlists make it easy for you
 
 ### Live Stream Times
 
-Configure your church's live streaming schedule. Set up recurring weekly services or one-time events, manage chat and video settings, and control when your stream goes live. Visitors will see the next scheduled service time on your streaming page. A separate **Settings** page under **Sermons** controls the tabs (chat, prayer, and custom links) shown beside your live stream. See [Live Streaming](./live-streaming.md) for setup instructions.
+Configure your church's live streaming schedule. Set up recurring weekly services or one-time events, manage chat and video settings, and control when your stream goes live. Visitors will see the next scheduled service time on your streaming page. See [Live Streaming](./live-streaming.md) for setup instructions.
+
+### Stream Settings
+
+The **Settings** page under **Sermons** (titled **Stream Settings**) controls the **Content Tabs** -- chat, prayer, and custom links -- shown beside your live stream. See [Streaming Page Settings](./live-streaming.md#streaming-page-settings).
 
 ### Bulk Import
 
