@@ -36,9 +36,9 @@ Enter your church's basic information and branding.
 
 Follow the [Church Settings](../settings/church-settings.md) guide to:
 
-1. Enter your church name, address, phone number, and email
-2. Set your subdomain (this becomes yourchurch.b1.church)
-3. Upload your church logo and images
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Settings > Settings** and click **Edit** in the **Church Information** section
+2. Enter your church name and address, and set your **Subdomain** (this becomes yourchurch.b1.church)
+3. Upload your church logo and pick your colors under **Website > Appearance** (see [Logo and Branding](../website/appearance.md#logo-and-branding)), and set the colors for the B1 app under **Mobile > App Theme**
 
 :::tip
 Your subdomain appears in your website URL and giving page URL, so choose something short and recognizable (e.g., "grace" for Grace Community Church).
@@ -50,9 +50,9 @@ Control who has access to what and bring your team on board.
 
 Follow the [Roles & Permissions](../settings/roles-permissions.md) guide to:
 
-1. Create roles for your team (e.g., "Pastor", "Office Admin", "Finance Team", "Worship Leader")
+1. In the Jump menu, choose **Settings > Roles** and create roles for your team (e.g., "Pastor", "Office Admin", "Finance Team", "Worship Leader")
 2. Assign specific permissions to each role so people only see what they need
-3. Invite team members by adding them and assigning roles
+3. Invite team members by clicking **Add** in a role's **Members** panel — B1 offers to send them an invite email (use **Create New User** for someone not yet in your church)
 
 :::info
 You don't have to do everything yourself. Invite your office staff, pastors, and ministry leaders early so they can help set up their areas.
@@ -62,13 +62,13 @@ You don't have to do everything yourself. Invite your office staff, pastors, and
 
 Bring your existing member directory into B1.
 
-Follow the [Importing Data](../people/importing-data.md) guide. You have two options:
+Follow the [Importing Data](../people/importing-data.md) guide. In **Settings**, click **Import/Export** to open the B1 Transfer tool, then choose your source:
 
-1. **CSV Upload** — export from your current system or spreadsheet, format as CSV, upload to B1
-2. **Breeze Migration** — one-click import that brings over people, photos, groups, donations, and attendance
+1. **Custom CSV / Excel** — export from your current system or spreadsheet, upload it, and map your columns to B1 fields
+2. **Migrating from another system** — upload an export from **Breeze**, **Planning Center**, **Tithe.ly**, or **CCB / Pushpay**
 
 :::tip
-Migrating from Breeze? The import tool brings everything over in one step — people, photos, groups, donations, and attendance history. It's the fastest way to get started.
+Migrating from Breeze? Export your **People**, **Tags**, and **Contributions** files, zip them together, and upload the zip as a **Breeze Import Zip** — your people, groups, and donation records come over in one step.
 :::
 
 ## Step 5: Configure the Mobile App
@@ -77,9 +77,9 @@ Customize the B1 App experience for your congregation.
 
 Follow the [Mobile App Settings](../settings/mobile-app.md) guide to:
 
-1. Customize which tabs appear in the B1 App for your members
-2. Set tab names, icons, and types (Bible, Live Stream, Donation, Website, etc.)
-3. Control which features are visible to your congregation
+1. In the Jump menu, choose **Mobile > Navigation** and click **Add Tab** to choose which tabs appear in the B1 App for your members
+2. Set each tab's name, icon, and **Tab Type** (Bible, Live Stream, Sermons, Donation, External URL, Internal Page, etc.)
+3. Use each tab's **Visibility** to control who sees it
 
 ## Step 6: Start Setting Up Features
 

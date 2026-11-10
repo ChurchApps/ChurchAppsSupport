@@ -48,7 +48,11 @@ Follow the [Creating Groups](../groups/creating-groups.md) guide to create group
 - **Preschool** (ages 3–5)
 - **Elementary** (ages 6–10)
 
-You can adjust the names and age ranges to match your ministry structure.
+You can adjust the names and age ranges to match your ministry structure. Then open each group's settings (click **Edit** on the group page) and:
+
+- Set **Track Attendance** to **Yes** so the group can be checked into
+- Turn on **Print Nametag** (and **Parent Pickup** if you print pickup tags)
+- Optionally set the **Age & Grade** limits so the kiosk suggests the right room — see [Check-In Safety](../attendance/checkin-safety.md)
 
 ## Step 3: Configure Campuses and Services
 
@@ -56,17 +60,18 @@ Check-in is tied to specific service times. You need at least one campus and one
 
 Follow the [Attendance Setup](../attendance/setup.md) guide to:
 
-1. Add your campus (e.g., "Main Campus")
-2. Add a service (e.g., "Sunday Morning")
-3. Set the service time (e.g., "9:00 AM") and, optionally, a [check-in schedule](../attendance/setup.md#setting-a-check-in-schedule) so check-in opens automatically before each service and closes after it
-4. Assign your children's groups to the service
+1. Go to **People > Attendance** and click **Setup**
+2. Add your campus (e.g., "Main Campus")
+3. Add a service (e.g., "Sunday Morning")
+4. Add the service time (e.g., "9:00 AM") and, optionally, a [check-in schedule](../attendance/setup.md#setting-a-check-in-schedule) so check-in opens automatically before each service and closes after it
+5. Link each children's group to the service time: open the group, click **Edit**, choose the time in **Add Service Time**, and click the plus button
 
 ## Step 4: Set Up the Check-In App
 
 Now connect everything by installing the check-in app on a tablet.
 
 1. Install the **B1 Checkin app** — see the [Check-In](../attendance/check-in.md) article for download links
-2. Sign in with your B1 Admin credentials
+2. Sign in with an account that has the **Checkin** attendance permission (or **Edit Attendance**) — see [Check-In Kiosk Accounts](../settings/roles-permissions.md#check-in-kiosk-accounts)
 3. Select your campus and service time
 
 See the full [Check-In](../attendance/check-in.md) article for detailed setup steps.
@@ -76,7 +81,7 @@ See the full [Check-In](../attendance/check-in.md) article for detailed setup st
 You need a tablet for the kiosk and optionally a Brother label printer for name tags.
 
 At minimum:
-- **One Android or Amazon Fire tablet** — see [recommended tablets](../attendance/check-in.md#recommended-hardware)
+- **One iPad, Android, or Amazon Fire tablet** — see [recommended tablets](../attendance/check-in.md#recommended-hardware)
 - **One Brother label printer** — the QL-1110NWB is recommended for its Bluetooth and WiFi support
 - **Brother DK-1201 labels** (1-1/7" x 3-1/2")
 
@@ -92,7 +97,7 @@ Before Sunday morning, do a test run:
 2. Select your campus and the correct service time
 3. Search for one of the families you added
 4. Check in a child and verify:
-   - The attendance shows up in B1 Admin under **Attendance**
+   - The attendance shows up in B1 Admin under **People > Attendance**
    - If using a printer, a name tag prints correctly
 
 :::tip

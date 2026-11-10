@@ -12,7 +12,7 @@ Create an event registration form, collect attendee information and optional pay
 </div>
 
 :::info
-**Two ways to handle event registration:** This guide covers **forms-based registration**, which gives you full control over custom fields and payment collection. For simpler events where you just need to track who is coming, use **native event registration** built into the calendar -- see [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration) for setup instructions. Native registration lets members sign up directly from [B1.church or the B1 App](../../b1-church/events/registering.md) with capacity tracking, date windows, and email confirmations.
+**Two ways to handle event registration:** This guide covers **forms-based registration** -- a Stand Alone form with its own public link, custom questions, and an optional payment field. For an event on your calendar, you can instead use **event registration** built into the calendar -- see [Creating Calendars](../calendars/creating-calendars.md#enabling-event-registration). It lets members sign up directly from [B1.church or the B1 App](../../b1-church/events/registering.md) with capacity, open and close dates, a waitlist, optional registration questions from a form, and priced attendee types (see [Paid Registrations](../calendars/paid-registrations.md)).
 :::
 
 <div class="prereqs">
@@ -29,9 +29,10 @@ Stand Alone forms have their own public URL that anyone can access — perfect f
 
 Follow the [Creating Forms](../forms/creating-forms.md) guide to:
 
-1. Navigate to Forms and click Add Form
-2. Choose "Stand Alone" type — this gives your form its own public URL
-3. Name it after the event (e.g., "Men's Retreat Registration", "VBS Sign-Up")
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Forms** and click **Add Form**
+2. Name it after the event (e.g., "Men's Retreat Registration", "VBS Sign-Up")
+3. In **Associate With**, choose **Stand Alone** — this gives your form its own public URL
+4. Click **Save**
 
 ## Step 2: Add Questions
 
@@ -39,8 +40,9 @@ Build out the fields you need to collect from registrants.
 
 Follow the [Creating Forms](../forms/creating-forms.md#adding-questions) guide to add your questions:
 
-1. Go to the Questions tab and add fields for the information you need: name, email, phone, dietary restrictions, T-shirt size, emergency contact, etc.
-2. Use Multiple Choice for options like meal preferences or session selections
+1. Open the form, go to the **Questions** tab, and click **Add Question** for each piece of information you need: name, email, phone, dietary restrictions, T-shirt size, emergency contact, etc.
+2. Use **Multiple Choice** for options like meal preferences or session selections
+3. To collect a fee, add a **Payment** question and choose its **Fund** and **Amount**
 
 :::warning
 The Payment field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields.
@@ -48,20 +50,20 @@ The Payment field type requires Stripe to be configured. If you haven't set up o
 
 ## Step 3: Configure Form Settings
 
-Control when and how your registration form is available.
+Control when and how your registration form is available. Follow the [Configuring Form Properties](../forms/creating-forms.md#configuring-form-properties) section to:
 
-1. Set availability dates if the registration should only be open for a limited time
-2. Copy the public URL — you can share this directly
-3. Add form members with Admin or View Only roles to help manage submissions
+1. Click **Edit Form** and, if registration should only be open for a limited time, set **Set Form Availability Timeframe** to **Yes** and pick the start and end dates
+2. Copy the **public URL** shown on the left side of the form page — you can share this directly. Click **QR Code** next to the form on the Forms list to download a QR code for flyers and slides
+3. On the **Form Members** tab, add people as **Admin** or **View Only** to help manage submissions, and turn on **Email Notification** for anyone who should be emailed about each new registration
 
 ## Step 4: Embed on Your Website
 
 Make the registration form easy to find by adding it to your church website.
 
-Follow the [Managing Pages](../website/managing-pages.md) guide to:
+Follow the [Page Editor](../website/page-editor.md) guide to:
 
-1. In your B1 website editor, add a new section to a page and select the Form element
-2. Choose your registration form from the list
+1. Open a page in your B1 website editor and click **Add Content**
+2. Drag the **Form** element into a section and choose your registration form
 
 :::tip
 Share the standalone URL via email, social media, and church bulletins too — the more places it's visible, the more signups you'll get.
@@ -73,8 +75,8 @@ Track registrations as they come in and export data when you need it.
 
 Follow the [Managing Submissions](../forms/managing-submissions.md) guide to:
 
-1. Review responses as they come in on the Submissions tab
-2. Export to CSV for spreadsheets, headcount tracking, or sharing with event coordinators
+1. Review responses as they come in on the **Form Submissions** tab
+2. Click **Export** to download a CSV for spreadsheets, headcount tracking, or sharing with event coordinators
 
 ## You're Done!
 
@@ -84,5 +86,5 @@ Your event registration is live. Share the link, embed it on your website, and t
 
 - [Creating Forms](../forms/creating-forms.md) — build forms with different field types
 - [Managing Submissions](../forms/managing-submissions.md) — review and export form responses
-- [Managing Pages](../website/managing-pages.md) — embed forms on your website
+- [Page Editor](../website/page-editor.md) — embed forms on your website
 - [Online Giving Setup](../donations/online-giving-setup.md) — required for payment fields

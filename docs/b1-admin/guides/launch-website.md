@@ -31,9 +31,13 @@ Start by creating your home page and basic site structure.
 
 Follow the [Website Initial Setup](../website/initial-setup.md) guide to:
 
-1. Navigate to **Website** in B1 Admin
-2. Create your home page with a hero section, welcome message, and key information
-3. Add your church name and tagline
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Website > Pages**
+2. Click **Add Page**, choose **Blank**, enter "Home" as the **Page Title**, and click **Save**. In **Page Settings**, set the **URL Path** to `/`
+3. Click **Edit Content**, add a **Section**, then add your hero, welcome message, church name and tagline, and other key information
+
+:::tip
+Starting from scratch? A [Site Template](../website/managing-pages.md#starting-from-a-site-template) creates a set of ready-made pages (home, about, connect, give, and others) with navigation links already wired up — replace the placeholder content with your own.
+:::
 
 ## Step 2: Configure Appearance
 
@@ -41,10 +45,10 @@ Set your site's visual identity — colors, fonts, logo, and footer.
 
 Follow the [Appearance](../website/appearance.md) guide to:
 
-1. Upload your church logo
-2. Set your primary and accent colors
-3. Configure the navigation bar and footer
-4. Preview your changes
+1. In the Jump menu, choose **Website > Appearance**
+2. Under **Logo**, upload a **Light Background Logo** and a **Dark Background Logo**
+3. Under **Color Palette**, set your brand colors and click **Save Palette**, then pick your **Fonts**
+4. Use **Navigation** to style the navigation bar and **Site Footer** to build the footer that appears on every page
 
 :::tip
 Keep your color palette simple — a primary color plus one accent color is usually enough. The website builder will handle the rest.
@@ -66,30 +70,33 @@ Follow the [Managing Pages](../website/managing-pages.md) guide to create pages 
 
 If you want to use your own domain name (like yourchurch.com) instead of the default B1 URL:
 
-1. Go to **Settings** in B1 Admin and open the **Domains** section
-2. Enter your custom domain
-3. Update your DNS records at your domain provider to point to B1
+Follow the [Custom Domain](../settings/custom-domain.md) guide to:
+
+1. At your domain provider, add a **CNAME** record for `www` pointing to `proxy.b1.church` (or an **A** record for your root domain pointing to `3.23.251.61`)
+2. In the Jump menu, choose **Settings > Settings**, click **Edit** in the **Domains** section, type your domain, and click **Save**
 
 :::info
-DNS changes can take up to 48 hours to propagate. Your site may not be accessible from your custom domain immediately. The default B1 URL will continue to work during this time.
+Set up DNS first: B1 saves the domain right away, but it won't load your site (or get its SSL certificate) until DNS points to B1. DNS changes can take a few minutes to a few hours. The default B1 URL keeps working the whole time.
 :::
 
 ## Step 5: Add Giving and Forms
 
 Enhance your site with interactive elements:
 
-- **Online Giving** — Add a giving section so members can donate directly from your website. See [Online Giving Setup](../donations/online-giving-setup.md) to configure Stripe first.
-- **Registration Forms** — Embed [Stand Alone forms](../forms/creating-forms.md) for event signups, visitor cards, or volunteer applications. See [Managing Pages](../website/managing-pages.md) for how to add a form element to any page.
+- **Online Giving** — Add a **Donation** element so members can donate directly from your website. See [Online Giving Setup](../donations/online-giving-setup.md) to configure Stripe first.
+- **Registration Forms** — Embed [Stand Alone forms](../forms/creating-forms.md) for event signups, visitor cards, or volunteer applications with the **Form** element. See the [Page Editor](../website/page-editor.md) for how to add elements to any page.
 
 ## You're Done!
 
-Your church website is live. Share the URL with your congregation and on social media. You can update content, add new pages, and adjust the appearance at any time from the B1 Admin dashboard.
+Your church website is live. Share the URL with your congregation and on social media. You can update content, add new pages, and adjust the appearance at any time from the **Website** section of B1 Admin.
 
 ## Related Articles
 
 - [Website Initial Setup](../website/initial-setup.md) — detailed setup walkthrough
 - [Managing Pages](../website/managing-pages.md) — add and edit pages
 - [Appearance](../website/appearance.md) — colors, logo, and layout
+- [Page Editor](../website/page-editor.md) — add sections, text, images, forms, and giving
+- [Custom Domain](../settings/custom-domain.md) — use your own web address
 - [Managing Files](../website/files.md) — upload images and documents
 - [Online Giving Setup](../donations/online-giving-setup.md) — configure Stripe
 - [Creating Forms](../forms/creating-forms.md) — build registration and survey forms

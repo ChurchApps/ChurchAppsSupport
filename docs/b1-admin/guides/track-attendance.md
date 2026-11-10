@@ -26,9 +26,9 @@ Define where and when your church meets.
 
 Follow the [Attendance Setup](../attendance/setup.md) guide to:
 
-1. Add your campus (e.g., "Main Campus")
-2. Add service times (e.g., "Sunday 9:00 AM", "Sunday 11:00 AM", "Wednesday 7:00 PM")
-3. Assign groups to each service time to define what classes/ministries meet during that service
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Attendance** and click **Setup**
+2. Add your campus (e.g., "Main Campus") and its services
+3. Add service times (e.g., "Sunday 9:00 AM", "Sunday 11:00 AM", "Wednesday 7:00 PM")
 
 ## Step 2: Enable Group Attendance Tracking
 
@@ -36,8 +36,8 @@ Turn on attendance tracking for the groups you want to monitor.
 
 Follow the [Creating Groups](../groups/creating-groups.md) guide to:
 
-1. Edit each group you want to track and turn on "Track Attendance"
-2. Associate groups with service times so attendance is recorded against the right service
+1. Open each group you want to track, click **Edit**, and set **Track Attendance** to **Yes**
+2. If the group meets during a service, pick the time in **Add Service Time** and click the plus button so attendance is recorded against the right service, then click **Save**
 
 :::info
 Not every group needs attendance tracking. Enable it for groups where you want to monitor participation — children's classes, small groups, Sunday school, etc.
@@ -49,8 +49,10 @@ Check off who attended each service and group.
 
 Follow the [Recording Attendance](../attendance/recording-attendance.md) guide to:
 
-1. Open a group, click **All sessions** in its **Sessions** section, and add a session for the date and service time. Check **Also add for the other groups** to create sessions for every class at that service time at once.
-2. Check off who attended each group
+1. Open a group, click **All sessions** in its **Sessions** section, click **New**, and choose the **Service Time** and **Session Date**. Check **Also add for the other _N_ groups in _service time_** to create sessions for every class at that service time at once.
+2. Check off who attended and click **Save Attendance**
+
+If you only need a total rather than names (for example, the main service), click **Enter headcount** on the **Attendance** page instead — see [Headcount Entry](../attendance/headcount-entry.md).
 
 :::tip
 Manual tracking works great for adult services, small groups, and any situation where a check-in kiosk isn't practical.
@@ -74,14 +76,16 @@ For a complete children's ministry setup including hardware and printer configur
 
 See the big picture of participation across your church.
 
-Follow the [Attendance Reports](../reports/attendance-reports.md) guide. Three report views are available:
+Follow the [Attendance Reports](../reports/attendance-reports.md) guide. On the **Attendance** page, click **All years** to find these reports as tabs:
 
 1. **Attendance Trend** — see attendance over time to spot growth or decline
-2. **Group Attendance** — see who attended each group session in a date range, with a CSV download
-3. **Daily Group Attendance** — day-by-day breakdown for detailed analysis
+2. **Headcount Trend** — chart the headcount totals you entered by hand
+3. **Group Attendance** — see who attended each group session in a date range, with a CSV download
+
+For a day-by-day count for one group, open the **Daily Group Attendance** report at **admin.b1.church/reports/dailyGroupAttendance**.
 
 :::info
-Reports combine both manually recorded and self-check-in attendance. There's no difference in how the data appears — both methods feed into the same reports.
+The attendance reports combine both manually recorded and self-check-in attendance. There's no difference in how the data appears — both methods feed into the same reports.
 :::
 
 ## You're Done!
@@ -91,6 +95,7 @@ Your attendance tracking is set up. Whether you record attendance manually, use 
 ## Related Articles
 
 - [Attendance Setup](../attendance/setup.md) — configure campuses and services
+- [Headcount Entry](../attendance/headcount-entry.md) — record totals without names
 - [Recording Attendance](../attendance/recording-attendance.md) — record attendance manually
 - [Tracking Attendance](../attendance/tracking-attendance.md) — review attendance trends
 - [Check-In](../attendance/check-in.md) — self-service check-in app
