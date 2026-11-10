@@ -17,12 +17,13 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 |---|---|---|---|
 | **[Slack](./slack-discord.md)** | Post readable notifications (new people, donations, sign-ups, …) to a Slack channel | B1 → Slack | 2 minutes |
 | **[Discord](./slack-discord.md)** | Same, in a Discord channel | B1 → Discord | 2 minutes |
-| **[Zapier](./zapier.md)** | Use B1 events as triggers and B1 actions in any of Zapier's 7,000+ apps | Both | 5–10 min per Zap |
-| **[Make](./make.md)** | Same idea as Zapier, in Make's visual scenario builder | Both | 5–10 min per scenario |
-| **[Google Sheets](./google-sheets.md)** | Export People / Donations / Groups / Attendance to a spreadsheet on demand | B1 → Sheet | 5 minutes |
+| **[Zapier](./zapier.md)** | Use B1 events as triggers and B1 actions in any of Zapier's 7,000+ apps (waiting on Zapier's approval) | Both | 5–10 min per Zap |
+| **[Make](./make.md)** | Same idea as Zapier, in Make's visual scenario builder (not released yet) | Both | 5–10 min per scenario |
+| **[Google Sheets](./google-sheets.md)** | Export People / Donations / Groups / Attendance to a spreadsheet on demand (not released yet) | B1 → Sheet | 5 minutes |
 | **[Claude](./claude.md)** | Ask Anthropic's Claude questions about your church data, scoped to your permissions — free to try, recommended | Both | Under 3 minutes |
 | **[ChatGPT](./chatgpt.md)** | Same idea with OpenAI's ChatGPT (needs a paid ChatGPT plan) | Both | 10 minutes |
-| **[Connected services](./services/index.md)** | Curated recipes for Mailchimp, Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
+| **[Mailchimp](./services/mailchimp.md)** | Keep a Mailchimp audience in sync with your people, groups, and saved lists — built into B1 | B1 → Mailchimp | 5 minutes |
+| **[Connected services](./services/index.md)** | Curated recipes for Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message, Checkr | Varies | 5–10 min each |
 
 ## How to Pick
 
@@ -34,11 +35,15 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 
 ## What They Have In Common
 
-Every integration authenticates with a **B1 API key**, created in B1Admin under **Settings → Developer → API Keys**. The key:
+Everything is set up in B1Admin under **Settings → Developer**, which has three tabs: **API Keys**, **Webhooks**, and **Connected Apps**.
 
-- Is bound to a specific person in your church and inherits that person's permissions
-- Can be narrowed with **scopes** — for example a Google Sheets export only needs `people:read`, not `settings:write`
-- Can be revoked at any time, instantly cutting the integration's access without affecting anything else
+- **Slack, Discord, and Mailchimp** are webhooks you create yourself on the **Webhooks** tab (pick the matching **Connector Type**). They don't need an API key.
+- **Claude** (signing in with your B1 account) shows up on the **Connected Apps** tab, where you can revoke it.
+- **Zapier, Make, Google Sheets, ChatGPT, and Claude with a key** authenticate with a **B1 API key**, created on the **API Keys** tab. The key:
+
+  - Is bound to the person who created it and inherits that person's permissions
+  - Can be narrowed with **scopes** — for example a Google Sheets export only needs `people:read`, not `settings:write`
+  - Can be deleted at any time, instantly cutting the integration's access without affecting anything else
 
 A few connectors (Zapier, Make) also register a [webhook](/docs/developer/api/webhooks) on your behalf when the Zap or scenario is turned on, and remove it when you turn the Zap off — you don't manage the webhook URL yourself.
 
