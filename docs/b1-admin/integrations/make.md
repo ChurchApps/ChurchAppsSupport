@@ -11,6 +11,10 @@ description: "Connect B1 Admin to Make to automate workflows: create an API key,
 
 </div>
 
+:::caution Not yet available
+The B1.church Make app is not published in Make's app directory yet, so you can't add the **B1.church** modules below to a scenario today. Until it is, use [Zapier](./zapier.md), or call B1's [REST API](/docs/developer/api) from Make's **HTTP — Make a request** module with an [API key](/docs/developer/api/api-keys). Everything below describes how the app will work once it is released.
+:::
+
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
@@ -95,7 +99,7 @@ The trigger only fires for events that happen **while the scenario is active**. 
 
 ## Limits & Notes
 
-- **One event per Watch Events module.** To listen for several events in one scenario, drop multiple trigger modules into separate scenarios (or use a single module with the unioned event list — see below).
+- **One event per Watch Events module.** To listen for several events, build one scenario per event.
 - **Signature verification is not exposed** — Make doesn't pass `X-B1-Signature` through to the scenario; the trust boundary is Make's unguessable per-scenario webhook URL. This is normal Make practice. If you need explicit signature checks, build a custom integration with the [SDK](/docs/developer/api/webhooks#sdk-support) instead.
 - **Operation count** — every API call from an action module counts against your Make operations quota, not against anything on B1's side.
 
@@ -105,9 +109,9 @@ The trigger only fires for events that happen **while the scenario is active**. 
 - **Trigger module doesn't activate** — check **Settings → Developer → Webhooks** in B1Admin. If you don't see a "Make — &lt;event&gt;" row after activating the scenario, the key is missing `settings:write`. Update the key and reactivate.
 - **Action returns `403 Forbidden`** — the API key lacks the scope for that endpoint. For example, Add Donation needs `donations:write`. Update the key in B1Admin and re-test.
 
-## Customising the App
+## Missing a Module?
 
-The B1.church Make app is open source — the JSON definitions live in the `B1Integrations/Make/` repo. If you need a module that doesn't exist (e.g. a new action for an endpoint we haven't covered), open an issue or PR there.
+If you need a module that doesn't exist (e.g. a new action for an endpoint we haven't covered), email [support@churchapps.org](mailto:support@churchapps.org). In the meantime, Make's **HTTP — Make a request** module can call any B1 endpoint with an `Authorization: Bearer cak_…` header.
 
 ## See Also
 
