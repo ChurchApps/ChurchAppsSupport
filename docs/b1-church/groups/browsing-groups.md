@@ -1,13 +1,13 @@
 ---
 title: "Browsing Groups"
-description: "Search your church's public groups on B1.church, filter by category or campus, then scan meeting times, locations, and descriptions to find a good fit."
+description: "Find a group on your church's B1.church site: search by name, filter by category or campus, and scan meeting times, locations, and descriptions."
 ---
 
 # Browsing Groups
 
 <div class="article-intro">
 
-Your church's public groups page makes it easy to discover groups that interest you. Search by name or filter by category and campus to find the right fit.
+Your church's public groups page makes it easy to discover groups that interest you. Search by name or narrow the list by category or campus to find the right fit.
 
 </div>
 
@@ -24,36 +24,49 @@ Your church's public groups page makes it easy to discover groups that interest 
 
 ## Finding the Groups Page
 
-Navigate to the **Groups** page (`/groups`) on your church's B1.church site. This page is publicly accessible, so you do not need to be logged in to browse. It opens with the heading **Find a Group** and every public group as a card.
+Navigate to the **Find a Group** page (`/groups`) on your church's B1.church site. This page is publicly accessible, so you do not need to be logged in to browse. In the member portal, the **Find a Group** button on the **Groups** screen opens the same page.
 
 ## Searching and Filtering
 
-Above the cards are tools to narrow the list:
+All of the church's public groups are shown together. Use the controls above the list to narrow it down:
 
-- **Search** -- type in the **Search groups by name or description** box to show only groups whose name, description, or category matches.
-- **Category** -- pick a category to see only its groups, or **All categories** to see them all. Categories are set up by your church's administrators and might include "Small Groups," "Ministries," or "Youth." This filter appears when your church has groups in more than one category.
-- **Campus** -- pick a campus to see only groups that meet there, or **All campuses**. This filter appears when your church has more than one campus.
+- **Search groups by name or description** -- Type a word to show only the groups whose name, description, or category contains it.
+- **Category** -- Pick a category, such as "Small Groups," "Youth," or "Music," to show only its groups. Choose **All categories** to see everything again. Categories are set up by your church's administrators, and this filter only appears when there is more than one.
+- **Campus** -- If your church has more than one campus, pick one to see only the groups assigned to it, or **All campuses** to see them all.
 
 If nothing matches, the page says "No groups match your filters."
 
-Your church may also link to a page for a single label, such as `/groups/youth`, which lists only the groups with that label under a heading like "Youth Groups."
+Your church can also link to a page for a single group label, such as `/groups/youth`, which lists only the groups with that label.
 
 ## Reading Group Cards
 
 Each group is displayed as a card with the following information:
 
 - **Group photo** -- A cover image representing the group. If no photo has been set, a default image is shown.
-- **Group name** -- Displayed over the photo.
-- **Meeting time** and **meeting location** -- When and where the group meets (for example, "Wednesdays at 7 PM"). If either isn't set, "--" is shown.
-- **Description** -- The first few lines of what the group is about, or "No Description Provided."
+- **Group name** -- Displayed prominently over the photo.
+- **Meeting time** -- When the group typically meets (for example, "Wednesdays at 7 PM"). If no time is set, "--" is shown.
+- **Meeting location** -- Where the group meets, on the right. If no location is set, "--" is shown.
+- **Description** -- A brief preview of what the group is about, limited to a few lines. If the group has no description, the card says "No Description Provided." Click the group to read the full description.
 
 ## Viewing a Group
 
-Click on any group card to open the group's page in the member portal (`/mobile/groups/` followed by the group's name). There you will find the complete description, information about the group's leaders, upcoming calendar events, and a way to get in touch.
+Click on any group card to open the full group detail page in the member portal. There you will find the complete description, the group's leaders, upcoming events, and a way to join.
 
 :::tip
-If you are looking for a specific type of group, pick its category first, then search within it.
+If you are looking for a specific type of group, pick it from the **Category** filter first. This saves scrolling through every group.
 :::
+
+## Your Groups in the Member Portal
+
+The **Groups** screen in the member portal lists the groups you belong to. The heading shows how many groups you are in (and how many join requests are pending).
+
+- **Search your groups** -- Filter your groups by name.
+- **Your groups** -- The groups you open most often, up to five, each with its meeting time and location. Tap one to open it.
+- **Other Groups** -- The rest of your groups.
+- **Pending Requests** -- Groups you have asked to join that are waiting for a leader. See [Requesting to Join a Group](./join-requests.md).
+- **Upcoming Events** -- Church events that take registrations, each with a **Register** link. See [Registering for Events](../events/registering.md).
+
+Tap **Find a Group** to browse all of the church's groups. If you aren't in any groups yet, the screen says "No groups yet" with a **Browse groups** button; if you aren't signed in, it asks you to sign in to see your groups.
 
 ## Next Steps
 
