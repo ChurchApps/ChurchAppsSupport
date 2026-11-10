@@ -35,7 +35,8 @@ The Blog page lets you publish news, updates, and devotionals to your church web
 5. Choose a **Category** (pick an existing one or type a new one) and optional comma-separated **Tags**.
 6. Click **Select Image** to choose a photo from your [Files](./files.md) gallery, or upload a new one. Uploaded photos open in a built-in crop tool locked to a 16:9 ratio, so you can frame any photo to fit the post header and listing cards.
 7. Set the **Author** -- it defaults to you, but you can search for and select any person in your database.
-8. Turn on **Published** and set a **Publish Date** when you are ready to make the post public. Leave it off to save the post as a draft.
+8. Turn on **Published** when you are ready to make the post public. A **Publish Date** field appears, set to today; change it if you want a different date. Leave the switch on **Draft** to save the post as a draft.
+9. Click **Save**. A post needs a title and a web address that no other post uses.
 
 :::tip
 Set a **Publish Date** in the future to schedule a post. It stays hidden from visitors and shows a **Scheduled** chip in the Blog list until that date arrives.

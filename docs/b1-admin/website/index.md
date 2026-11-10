@@ -19,7 +19,7 @@ The Website builder is organized into these main areas:
 
 Create and manage all the pages on your church website. The **Pages** table lists each page -- pages automatically created by the system carry a **Generated** badge, and the rest are custom pages you created. You can add new custom pages, edit existing ones, or convert auto-generated pages into custom pages for full control over their content.
 
-Your navigation links are displayed in a tree structure. You can reorder links using drag-and-drop to set the exact hierarchy and order you want visitors to see.
+Your navigation links are listed in the **Main Navigation** panel beside the Pages table. You can reorder and nest links using drag-and-drop to set the exact hierarchy and order you want visitors to see. See [Managing Pages](./managing-pages.md).
 
 ### Blog
 
@@ -27,7 +27,7 @@ Publish news, updates, and devotionals as blog posts at `/blog` on your site, wi
 
 ### Blocks
 
-Build reusable content components that you can place on multiple pages. Blocks save you time when you have content like a call-to-action, announcement banner, or contact section that appears in more than one place. Update a block once and the change applies everywhere it is used.
+Build reusable content components that you can place on multiple pages. Blocks save you time when you have content like a call-to-action, announcement banner, or contact section that appears in more than one place. Update a block once and the change applies everywhere it is used. See [Reusable Blocks](./blocks.md).
 
 ### Appearance
 
@@ -50,5 +50,7 @@ Start with [Initial Setup](./initial-setup.md) if you are configuring your websi
 - [Initial Setup](./initial-setup.md) -- Get your website up and running for the first time
 - [Managing Pages](./managing-pages.md) -- Learn how to create and organize your pages
 - [Using the Page Editor](./page-editor.md) -- Build and style your page content with the visual editor
+- [Reusable Blocks](./blocks.md) -- Build content once and reuse it on many pages
+- [Blog](./blog.md) -- Publish news and devotionals
 - [Appearance](./appearance.md) -- Customize your site's look and feel
 - [Files](./files.md) -- Upload and manage media files

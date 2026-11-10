@@ -41,9 +41,9 @@ If you do not see the Settings option, ask the person who set up your church acc
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Pages**.
 2. Click **Add Page** in the top right corner.
-3. Choose **Blank** as the page type and name it "Home."
-4. Click **Page Settings** and set the URL path to `/` (a forward slash with no text) for your home page. Other pages use `/page-name`.
-5. Click **Edit Content** to start building. Every page must begin with a **Section** -- this is the container for all other elements.
+3. Choose **Blank** as the page type, enter "Home" as the **Page Title**, and click **Save**.
+4. Click **Page Settings** on the new page's row and change the **URL Path** to `/` (a forward slash with no text) for your home page. Other pages use `/page-name`.
+5. Click **Edit Content** to start building. Every page must begin with a **Section** -- this is the container for all other elements. Click **Add Content** and drag **Section** onto the page, then pick a ready-made section layout or **Blank Section**.
 6. After adding a section, click **Add Content** again to insert text, images, videos, cards, forms, and more by dragging them into your section.
 
 :::info
@@ -53,10 +53,10 @@ For detailed instructions on working with pages and navigation, see [Managing Pa
 ## Configuring Site Appearance
 
 1. In the Jump menu, choose **Website > Appearance**.
-2. Use the **Color Palette** to set your brand colors for primary, secondary, and accent tones.
-3. Under **Fonts**, choose your heading and body fonts from the font browser.
-4. Upload your church logo under **Logo** in the Style Settings. Provide both a light background and dark background version.
-5. Configure your **Site Footer** with your church's contact information and links.
+2. Use the **Color Palette** to set your brand colors -- the base light, accent, and dark shades, plus primary and secondary button colors -- then click **Save Palette**.
+3. Under **Fonts**, choose your heading and body fonts from the font browser and click **Save Fonts**.
+4. Upload your church logo under **Logo** in the Style Settings. Provide both a light background and dark background version, then click **Save Changes**.
+5. Click **Site Footer** to open the footer in the block editor and add your church's contact information and links.
 
 :::info
 Changes you make in Appearance apply across your entire website. See the [Appearance](./appearance.md) page for detailed instructions on each setting.
@@ -66,7 +66,7 @@ Changes you make in Appearance apply across your entire website. See the [Appear
 
 Your navigation links appear in the Website Pages view. To organize them:
 
-1. Click **Add** to create a new navigation link and point it to one of your pages.
+1. In the **Main Navigation** panel, click **Add**, enter the **Link Text** and the page's path (for example, `/about`) as the **URL**, and click **Save**.
 2. Drag and drop links to reorder them or nest them under parent items.
 3. Preview your site to confirm the navigation looks correct.
 
