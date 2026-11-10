@@ -38,7 +38,7 @@ The top of the page shows how many of your upcoming assignments are confirmed an
 - **Needs your reply** -- Assignments you have not answered yet, each with **Accept** and **Decline** buttons so you can respond without opening the plan. Tapping **Decline** asks you to confirm first. Only shown when something is waiting on you.
 - **Upcoming** -- Your next three assignments. Tap **All upcoming** to see the rest.
 - **Blockout dates** -- Dates when you are unavailable for serving. Tap **Add dates**, choose a **Start date** and **End date**, and tap **Save**. Tap **Remove** next to a blockout to delete it. Your team leaders see these dates so they can schedule around you.
-- **Past** -- How many times you have served this year and when you last served. Tap **Past assignments** to see the full list, which you can filter by year.
+- **Past** -- How many times you have served this year and when you last served (or "No past assignments." if you haven't served yet). Tap **Past assignments** to see the full list, which you can filter by year.
 
 Each assignment shows the **service date**, the **plan name**, your **position**, and a status badge -- **Accepted**, **Confirmed**, **Declined**, **Pending Response**, or **Needs reply** if you have not responded yet.
 
@@ -52,7 +52,7 @@ Tap any plan to open it. The plan page shows the plan name and service date at t
 
 - **Your assignment** -- Each position you are assigned on this plan, with its team, your status, and the **Service Times** you are needed. If you have not yet responded, tap **Accept** or **Decline** right here. **Decline** asks you to confirm first.
 - **Service Order** -- The first few items of the service, with a count of how many there are. Tap **Full service order** to see everything. See [Service Order](./service-order.md) for more details.
-- **Serving Teams** -- Who is serving alongside you and in which positions, with a count of people and teams. Tap **All teams** to see every team and its members.
+- **Serving Teams** -- Who is serving alongside you and in which positions, with a count of people and teams (for example, "10 serving · 3 teams"). People who declined their position are left out. Tap **All teams** to see every team and its members.
 - **Plan Notes** -- Any notes the plan creator added for the team.
 - **Downloads** -- Files attached to the plan's lesson content, if any.
 
