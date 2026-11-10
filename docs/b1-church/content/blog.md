@@ -16,28 +16,33 @@ The Blog page shares news, updates, and devotionals from your church. Posts are 
 <h4>Before You Begin</h4>
 
 - No login is required to read blog posts. The Blog page is publicly accessible.
-- Your church must have published at least one post for the Blog page to appear.
+- Your church must have published at least one post. Until then, the Blog page shows "No posts yet".
 
 </div>
 
 ## Browsing Posts
 
 1. Navigate to the **Blog** page from your church's site navigation.
-2. Posts are listed newest first, 10 per page. Use the **Older**/**Newer** links at the bottom to page through the archive.
-3. Click a post to read it in full.
+2. Posts are listed newest first, 10 per page. Each shows its photo, category, title, author, date, and a short excerpt. Use the **Older posts** and **Newer posts** links at the bottom to page through the archive.
+3. Click a post's title or photo to read it in full.
 
 ## Filtering by Category or Tag
 
-Click a **category** or **tag** chip on any post, or in the blog list, to filter the listing down to posts that match. This makes it easy to catch up on a specific topic or series.
+To narrow the listing to one topic:
+
+- **Category** -- click a category chip above the post list, the category label on a post in the list, or the category above a post's title. Click the highlighted chip again to show every post.
+- **Tag** -- click a tag chip at the bottom of a post.
+
+The filtered listing is headed with the category or tag name. Click **All posts** under the heading to clear the filter.
 
 ## Related Posts
 
-At the end of each post, you will find a **Related Posts** section suggesting other posts from the same category.
+At the end of a post that has a category, a **More in** *category* section suggests up to three other posts from the same category.
 
 ## Subscribing via RSS
 
-Every church blog publishes an RSS feed that feed readers and automation tools can subscribe to, so you are notified automatically when a new post goes up rather than checking back manually.
+Every church blog publishes an RSS feed that feed readers and automation tools can subscribe to, so you are notified automatically when a new post goes up rather than checking back manually. To subscribe, paste your church's blog address (for example, `https://yourchurch.b1.church/blog`) into your feed reader; the page tells the reader where the feed is.
 
 ## Availability
 
-The Blog page is available when your church has published at least one post. If you do not see a **Blog** link in your church's navigation, your church may not have this set up yet. Contact your church administrator for more information.
+The Blog page is at `/blog` on your church's website. If you do not see a **Blog** link in your church's navigation, your church may not have this set up yet. Contact your church administrator for more information.

@@ -1,7 +1,7 @@
 ---
 title: "Content Features in the B1.church Member Portal"
 sidebar_label: "Content"
-description: "See which content your church enables in the B1.church member portal, then browse sermons, live streams, Bible reading, and lessons."
+description: "See which content your church enables on B1.church, then browse sermons, live streams, Bible reading, the daily verse, blog posts, and lessons."
 ---
 
 # Content
@@ -30,9 +30,13 @@ Read Scripture using the built-in Bible reader. You can navigate through books, 
 
 View a beautifully formatted Bible verse image that changes every day. The image automatically adjusts to fit your screen. You can also share or download any day's verse and browse the verses from earlier days.
 
+### Blog
+
+Read news, updates, and devotionals your church publishes, filter them by category or tag, and follow new posts by RSS.
+
 ### Lessons
 
-View scheduled lessons from your church's plans. If you are a teacher or leader, you can use the **Teacher View** to see lessons in a full-screen, easy-to-navigate format that's perfect for teaching or presenting.
+View lessons scheduled in your church's plans. If you are a teacher or leader, open the plan and use the **Teach** button to see the lesson in a full-screen, easy-to-navigate [Teacher View](./teacher-view.md) that's perfect for teaching or presenting.
 
 ### Lessons (Deprecated - Embedded Tab)
 
@@ -43,7 +47,7 @@ The embedded **Lessons** tab has been deprecated. Curriculum playback now lives 
 Content pages are available through your church's site navigation. Your church administrator decides which content features are enabled and how they appear in the menu. If you do not see a particular content feature listed above, it may not be configured for your church.
 
 :::info
-[Sermons](./sermons.md) and the [Bible](./bible.md) are available publicly. Other features may require you to be [logged in](../getting-started/logging-in.md).
+[Sermons](./sermons.md), [Live Streaming](./live-streaming.md), the [Bible](./bible.md), [Verse of the Day](./verse-of-the-day.md), and the [Blog](./blog.md) are available publicly. Lessons and Teacher View require you to be [logged in](../getting-started/logging-in.md).
 :::
 
 ## Next Steps
@@ -52,5 +56,6 @@ Content pages are available through your church's site navigation. Your church a
 - [Live Streaming](./live-streaming.md) -- Watch live broadcasts
 - [Bible](./bible.md) -- Read Scripture in the built-in reader
 - [Verse of the Day](./verse-of-the-day.md) -- See today's daily verse
+- [Blog](./blog.md) -- Read and follow your church's blog posts
 - [Teacher View](./teacher-view.md) -- Use the expanded teacher interface for lesson content
 - [FreePlay](/docs/freeplay/) -- Play lessons on classroom TVs (replaces the deprecated in-app Lessons tab)

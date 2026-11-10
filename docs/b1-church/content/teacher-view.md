@@ -26,6 +26,8 @@ To access the expanded teacher view for a lesson:
 
 The lesson will open in a full-screen interface optimized for teaching.
 
+The **Teach** button appears when the plan's service order comes straight from the scheduled lesson. If your church has customized the plan's service order, the button isn't shown, but the lesson's printable files still appear in the plan's **Downloads** section.
+
 :::tip
 Teacher View is especially useful when projecting lesson content on a screen or TV for the class to see, or when teaching from a tablet.
 :::
@@ -131,6 +133,7 @@ Teacher View works on tablets and mobile devices:
 ### Lesson doesn't open in Teacher View
 
 - Ensure the lesson has been properly scheduled in the plan
+- If the plan's service order was customized, the **Teach** button is hidden -- see [Opening Teacher View](#opening-teacher-view)
 - Check that you have permission to view the plan
 - Refresh the page and try again
 
