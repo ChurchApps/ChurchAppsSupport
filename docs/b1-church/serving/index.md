@@ -22,7 +22,7 @@ The Serving section on B1.church lets you browse volunteer opportunities and sig
 
 ## How It Works
 
-Your church administrator creates service plans and marks certain positions as available for self-signup. These positions appear on the volunteer signup page, organized by category (such as "Band", "Hospitality", or "Kids Ministry"). You can see how many spots are open for each position and sign up for the ones you are available for.
+Your church administrator creates service plans and marks certain positions as available for self-signup. These plans appear on the **Volunteer Opportunities** page of your church's website and on the **Volunteer** screen in the member portal (tap **Sign up to serve** on the Plans screen). Open a plan to see its positions, organized by category (such as "Band", "Hospitality", or "Kids Ministry"), with how many spots are open in each, and sign up for the ones you are available for.
 
 :::info
 Only positions that your church administrator has enabled for self-signup appear on the volunteer page. Some positions may only be filled through direct assignment.
