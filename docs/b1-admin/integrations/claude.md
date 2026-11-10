@@ -44,8 +44,8 @@ Works on the Claude website, the Claude desktop app, and the Claude phone app �
 ### Step 3 — Sign in to B1
 
 1. Click **Connect**. A B1 sign-in page opens.
-2. Log in with your B1 account. If you belong to more than one church, check that the right church is shown at the top.
-3. B1 lists what Claude is asking to do and confirms you'll be sent back to **claude.ai**. Click **Allow**.
+2. Log in with your B1 account. If you belong to more than one church, check that the page names the right church ("Would you like to access the following data from *your church*…").
+3. B1 lists what Claude is asking for (**Everything your B1 account can access**), notes that the app registered itself with B1, and confirms you'll be sent back to **claude.ai**. Click **Allow**.
 
 You're back in Claude, and B1 shows as connected.
 
@@ -75,7 +75,7 @@ The key is what lets Claude into *your* church's B1 — think of it like a passw
 1. Log in to [B1 Admin](https://admin.b1.church) and go to [Settings → Developer](https://admin.b1.church/settings/developer).
 2. On the **API Keys** tab, click **New API Key**.
 3. **Name:** type `Claude`.
-4. **Scopes:** check what Claude may do. Each area has a **read** box (look only) and a **write** box (make changes). Not sure? Check just the **read** boxes to start — you can make a new key with more later.
+4. **Scopes:** check what Claude may do. Most areas have a **read** box (look only) and a **write** box (make changes); forms only has **forms:write**. Not sure? Check just the **read** boxes to start — you can make a new key with more later.
 5. Click **Save**, then **Copy** the key. It's only shown once, so go straight to Step 3.
 
 ### Step 3 — Add B1 to Claude
@@ -95,7 +95,7 @@ There's nothing to do — FreePlay works through the same connection. The one ex
 ## Is It Safe?
 
 - Claude can only see **your church's** data.
-- **Signed in (Option 1):** Claude can never do more than your own B1 login can. The B1 sign-in page lists everything Claude may do before you click **Allow**.
+- **Signed in (Option 1):** Claude can never do more than your own B1 login can. The B1 sign-in page shows what Claude is asking for before you click **Allow**.
 - **With a key (Option 2):** Claude can only do what the key allows in B1 — a key with only **read** boxes checked can look but never change anything. FreePlay works the same way, under the same key.
 - **To turn it off:** in B1 Admin go to **Settings → Developer** and revoke the app under **Connected Apps** (Option 1) or delete the key under **API Keys** (Option 2). Access stops right away. You can also click **Disconnect** on the B1 connector in Claude.
 
@@ -109,7 +109,7 @@ The rest of this page is for technical users and AI assistants: scopes, other wa
 
 ### Scopes
 
-Claude talks to B1 through the **Model Context Protocol (MCP) server** built into the B1 API (`https://api.churchapps.org/mcp`). Every call runs through the same auth, permission, and church-scoping rules as a request from B1 Admin. Claude is limited to the **permissions and scopes** of the API key, and cannot reach webhooks, OAuth admin endpoints, or other operator-only paths.
+Claude talks to B1 through the **Model Context Protocol (MCP) server** built into the B1 API (`https://api.churchapps.org/mcp`). Every call runs through the same auth, permission, and church-scoping rules as a request from B1 Admin. Claude is limited to the **permissions and scopes** of the API key, and cannot reach payment-provider webhooks, OAuth client admin endpoints, or sign-in and password endpoints.
 
 Common starter scope sets:
 
@@ -180,7 +180,7 @@ This is the same `/membership/people`, `/giving/donations`, `/attendance/visits`
 - **Per-church isolation.** The API key resolves to one church. Claude has no way to see other churches' data.
 - **Permission-scoped.** If you remove a permission from the person who minted the key in B1Admin, Claude loses it on the next call — instantly.
 - **Revocable.** Delete the key in **Settings → Developer → API Keys** and Claude's access ends immediately.
-- **Blocklist.** Provider webhooks, OAuth client admin endpoints, and the operator-only `apiEmails` route are not callable via MCP.
+- **Blocklist.** Payment-provider webhook endpoints, OAuth client admin endpoints, and sign-in, registration, password and two-factor endpoints are not callable via MCP.
 - **Response size cap.** A single tool response is capped at 64 KB so long lists don't blow out Claude's context — Claude will narrow the query with filters when this happens.
 - **Audit trail.** Mutations go through the same audit log as B1Admin actions; you can review them under **Settings → Audit Log**.
 
