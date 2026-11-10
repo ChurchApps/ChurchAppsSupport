@@ -328,6 +328,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-church/community/index' },
           items: [
             'b1-church/community/member-directory',
+            'b1-church/community/messages',
             'b1-church/community/timeline',
           ],
         },
