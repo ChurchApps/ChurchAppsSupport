@@ -55,7 +55,7 @@ You can add bold text, italics, and lists to a message:
 
 On a computer you can also press **Ctrl+B** (or **Cmd+B** on a Mac) for bold and **Ctrl+I** (**Cmd+I**) for italic.
 
-The toolbar adds simple markdown to your text: `**bold**`, `_italic_`, a `- ` at the start of a line for a bulleted list, and `1. ` for a numbered list. You can type these yourself too. Everyone in the chat sees the formatted message, web links stay clickable, and line breaks are kept. The same formatting works in announcements, [leader notes](./group-details.md#leader-notes), and private messages.
+The toolbar adds simple markdown to your text: `**bold**`, `_italic_`, a `- ` at the start of a line for a bulleted list, and `1. ` for a numbered list. You can type these yourself too. Everyone in the chat sees the formatted message, web links stay clickable (they open in a new tab), a link to an image (.jpg, .png, .gif, and similar) shows the picture under the message, and line breaks are kept. The same formatting works in announcements, [leader notes](./group-details.md#leader-notes), and private messages.
 
 ## Editing or Deleting Your Messages
 

@@ -26,11 +26,11 @@ Group events can collect RSVPs so leaders know who is coming. On your group's pa
 3. Tap your answer. Your choice highlights, and each button shows a live count of how many people have given that response.
 4. Tap your highlighted answer again to clear it, or tap a different button to change your response.
 
-Your RSVP applies to that specific occurrence — for a weekly meeting, you answer each week's event separately.
+Your RSVP applies to that specific occurrence — for a weekly meeting, you answer each week's event separately. Once an event has ended, its buttons go away; your answer still shows as a badge next to the event.
 
 ## For Group Leaders
 
-- **Viewing responses** -- Leaders see a **View responses** link on each event in the group's calendar (**All events**). It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
+- **Viewing responses** -- Leaders see a **View responses** link on each event in the group's calendar (**All events**), including events that have already ended. It opens the **Responses** sheet listing everyone by answer — Going, Maybe, and Can't go. If nobody has answered yet, it shows "No responses yet."
 - **Turning RSVPs on or off** -- When creating or editing an event, use the **Allow RSVPs** switch. Events with RSVPs turned off show no response buttons. Staff creating events in bulk from B1 Admin have the same option — see [Group Calendar](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
