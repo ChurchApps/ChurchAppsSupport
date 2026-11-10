@@ -14,7 +14,7 @@ Rooms and Resources let you track your church's bookable spaces and equipment. W
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need administrative access to the Calendars section in B1 Admin
+- You need the **Edit Content** permission
 - Set up [groups](../groups/creating-groups.md) whose members will be submitting booking requests
 
 </div>
@@ -30,14 +30,16 @@ Rooms are physical spaces that can be reserved alongside calendar events — a s
 ### Adding a Room
 
 1. On the **Rooms** tab, click **Add Room** at the top of the page.
-2. Enter a **name** for the room.
-3. Optionally set a **capacity** (maximum number of people).
-4. Set an **Approval Group** — when a group requests this room, the chosen group's leaders are notified and must approve the booking. Leave blank if no approval is needed.
+2. Enter a **Room Name**.
+3. Optionally set a **Capacity** (maximum number of people) and a **Description**. Both show next to the room when people pick rooms for an event.
+4. Set an **Approval Group** if bookings need sign-off. Bookings made by members of that group are approved automatically; anyone else's booking waits as **Pending** until it's approved on the [Approvals](./approvals.md) page, and the group's members get an email about new requests. Leave it on **No approval needed** to approve every booking automatically.
 5. Click **Save**.
+
+The Rooms list shows each room's **Room Name**, **Capacity**, and **Approval Group**.
 
 ### Editing or Deleting a Room
 
-Click **Edit** next to any room, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
+Hover over a room and click **Edit**, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
 
 ## Resources
 
@@ -46,9 +48,12 @@ Resources are items that can be booked alongside an event — AV equipment, proj
 ### Adding a Resource
 
 1. Click the **Resources** tab, then **Add Resource**.
-2. Enter a **name** and optionally a **description**.
-3. Set an **Approval Group** if someone needs to sign off on resource loans.
-4. Click **Save**.
+2. Enter a **Resource Name** and optionally a **Description**.
+3. Set the **Quantity** you own (for example, 3 projectors). Each event books one, and B1 warns when more events at the same time book it than you have.
+4. Set an **Approval Group** if someone needs to sign off on resource loans. It works the same way as for rooms.
+5. Click **Save**.
+
+Edit or delete a resource the same way as a room.
 
 ## Blockouts
 
@@ -57,23 +62,26 @@ Blockouts prevent rooms or resources from being booked during certain times — 
 ### Adding a Blockout
 
 1. Click the **Blockouts** tab, then **Add Blockout**.
-2. Choose whether to block a **Room**, a **Resource**, or all rooms and resources.
-3. Set the **start** and **end** date/time for the blockout.
-4. Optionally add a **reason** note.
+2. In **Applies To**, choose a room, a resource, or **All rooms & resources**.
+3. Set the **Start** and **End** date/time for the blockout.
+4. Optionally add a **Reason**. It shows on the [Availability](./availability.md) calendar as *Blocked: reason*.
 5. Click **Save**.
+
+Events that book a blocked-out room or resource show a conflict warning in the event editor.
 
 ## Event Templates
 
-Templates let you save a reusable event configuration — title, description, and associated groups — so that recurring events can be created consistently.
+Templates let you save a reusable event setup — title, description, length, rooms, and resources — so that events you create often are set up the same way every time.
 
 ### Adding a Template
 
 1. Click the **Templates** tab, then **Add Template**.
-2. Enter a **name** for the template.
-3. Optionally link a **group** so the event is automatically connected to that group when created from the template.
-4. Click **Save**.
+2. Enter a **Template Name** (shown when picking a template).
+3. Fill in the **Event Title**, **Event Description**, and **Duration (minutes)** to use for new events.
+4. Optionally pick the **Rooms** and **Resources** to book.
+5. Click **Save**.
 
-When creating a new event, staff can choose an existing template to pre-fill the event details.
+When creating a new event, pick the template in the event editor's **Template** box to fill in the title, description, rooms, and resources, and to set the end time from the template's duration (set the **Start** first). You still choose the event's **Group**. The **Template** box only appears once at least one template exists.
 
 ## Related Articles
 

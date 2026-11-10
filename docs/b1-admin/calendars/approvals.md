@@ -15,7 +15,7 @@ The Approvals page is where administrators review and act on pending room and re
 <h4>Before You Begin</h4>
 
 - Configure rooms or resources with an **Approval Group** in [Rooms & Resources](./rooms-resources.md)
-- You need the **Calendars Admin** permission or the **content.edit** permission
+- You need the **Edit Content** permission, or **Resolve Calendar Conflicts & Approvals** (both in the **Content** section of [Roles & Permissions](../settings/roles-permissions.md)). Without **Edit Content**, the **Calendars** menu isn't shown -- open Approvals from the **Dashboard**'s pending-approvals link or the approval email instead.
 
 </div>
 
@@ -25,7 +25,7 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 
 ## Booking Requests
 
-When a group creates an event and requests a room or resource, the request appears in the **Room & Resource Requests** section. Each row shows:
+When someone books a room or resource that has an **Approval Group**, and they aren't a member of that group, the request appears in the **Room & Resource Requests** section. (Bookings by members of the Approval Group are approved automatically.) Members of the Approval Group also get an email listing new pending requests, with a link to this page. Each row shows:
 
 - The event name and date/time
 - The room or resource being requested (with the quantity for multi-unit resources)
@@ -38,7 +38,7 @@ If a request overlaps another booking or blockout for the same room or resource,
 
 ### Approving or Rejecting
 
-Click **Approve** or **Reject** on any booking request (rejecting asks you to confirm first). The requester is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
+Hover over a booking request and click **Approve** or **Reject** (rejecting asks you to confirm first). The requester is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
 
 When you click **Approve**, an **Approve booking** dialog opens so you can also publish the event in the same step:
 
@@ -48,7 +48,7 @@ When you click **Approve**, an **Approve booking** dialog opens so you can also 
 
 ## Pending Events
 
-If your calendar workflow requires event approval before events become visible to the public, pending events appear in the **Event Requests** section. Click **Approve** to publish an event to the calendar, or **Reject** to notify the submitter that changes are needed.
+Events that members request (for example, from **My Requests** in the B1 app) appear in the **Event Requests** section with their date, **Description**, and **Requested by**. Click **Approve** to publish an event to the calendar, or **Reject** to notify the submitter that changes are needed. Click **Edit** to fix the request's details before you decide, or **Delete** to remove it.
 
 :::tip
 Set up an Approval Group on a room in [Rooms & Resources](./rooms-resources.md) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
@@ -60,6 +60,8 @@ Approved and rejected requests stay on the page. Click **History** at the top of
 
 - **Room & Resource Requests** lists each decided booking with the event, the room or resource, **Requested by**, an **Approved** or **Rejected** badge, and **Decided**, which shows who made the decision and on what date. The most recently decided requests are listed first.
 - **Event Requests** lists each decided event with its description, **Requested by**, and an **Approved** or **Rejected** badge. Who decided an event request, and when, is not recorded, so that column is not shown for events.
+
+You can change your mind from History: an approved request has a **Reject** action and a rejected one has an **Approve** action. Event requests can also be edited or deleted here.
 
 Click a name under **Requested by** to open that person's record.
 

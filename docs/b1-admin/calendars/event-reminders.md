@@ -22,20 +22,22 @@ Event reminders automatically notify the right people before an event happens --
 
 ## Setting Up a Reminder
 
-You configure reminders in the **Reminders** section of the event.
+You configure reminders in the **Reminders** section of the event. Expand it to see the settings.
 
-- When you **create a new event**, expand the **Reminders** section in the event editor before saving.
-- For an **existing event**, open the event's **Registration Details** page (from the **Registrations** section) to add or change its reminder.
+- When you **create a new event**, expand the **Reminders** section at the bottom of the **New Event** editor; the reminder is saved when you save the event.
+- For an **existing event**, use the **Reminders** section in any of these places, and click the **Save** button inside the section: the dialog that opens when you click the event on a calendar, the **Edit Event** editor, or the event's registration page (**Calendars > Registrations**, then the event).
 
 1. Turn on **Enable reminders**.
-2. Choose **When** to send. Pick up to three timings: **7 days before**, **3 days before**, **1 day before**, and **Day of**.
+2. Choose **When (up to 3)** to send: **7 days before**, **3 days before**, **1 day before**, and **Day of**. Once three are picked, the others are disabled until you unpick one.
 3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's [time zone](../settings/church-settings.md#time-zone)).
 4. Choose **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
-5. Optionally add a **Message**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
-6. Choose the **Channels**: **Push** notification, **Email**, and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.
-7. Save the event.
+5. Optionally add a **Message (optional)**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
+6. Choose the **Channels**: **Push** notification and **Email** (both on by default), and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.
+7. Click **Save** (or save the new event).
 
-As you make changes, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times -- so you can confirm the reminder looks right before you save.
+To stop reminders for an event, turn off **Enable reminders** and save.
+
+On an event that's already saved, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times as you make changes -- so you can confirm the reminder looks right before you save. A brand-new event has no preview until it's been saved.
 
 ## Who Gets Reminded
 

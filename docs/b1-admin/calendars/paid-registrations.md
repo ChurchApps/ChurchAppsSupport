@@ -25,9 +25,9 @@ Event registration can go beyond a simple head count. You can define priced atte
 
 ## Opening Registration Settings
 
-1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Calendars > Registrations**, and open your event (or open the event from its calendar).
-2. The **Registration Settings** card shows the basics — **Enable Registration**, **Capacity**, **Registration Opens/Closes**, **Tags**, and **Registration Questions**.
-3. Below the basics are three accordions: **Attendee Types**, **Selections**, and **Discount Codes**.
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), choose **Calendars > Registrations**, and click your event (or click the event on its calendar and choose **Manage Registrations**).
+2. Click **Edit settings**. The **Registration Settings** card shows the basics — **Enable Registration**, **Capacity**, **Enable Waitlist**, **Registration Opens/Closes**, **Tags**, and **Registration Questions** — with a **Save Settings** button.
+3. Below the basics are three accordions: **Attendee Types**, **Selections**, and **Discount Codes**. Each has its own **Save** button, separate from **Save Settings**; B1 warns you if you try to leave with unsaved changes in them. Click **Back to Registrations** to return to the roster.
 
 ## Attendee Types
 
@@ -37,7 +37,10 @@ Attendee types let you charge different prices for different kinds of attendees 
 2. Enter a **Name** (e.g. "Adult", "Child", "Student").
 3. Set a **Price**. Use 0 for a free type.
 4. Optionally set a **Capacity** for just this type (e.g. only 20 Child spots). Leave blank for no per-type limit.
-5. Click **Save**.
+5. Optionally set **Sort** to control the order types are listed in.
+6. Click **Save**.
+
+To remove a saved type, click its delete icon and confirm; it's removed right away. Selections and discount codes are removed the same way.
 
 During registration, each attendee picks a type; sold-out types are shown as **Sold out** and cannot be selected. The roster shows each attendee's type and running per-type counts.
 
