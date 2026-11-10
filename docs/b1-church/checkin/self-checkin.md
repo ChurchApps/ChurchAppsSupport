@@ -40,7 +40,7 @@ After selecting a service, you will see your household members under **Who's her
 
 1. Tap a household member to expand their entry.
 2. You will see the available **service times** for the service you selected. If your church has set a check-in schedule for a service time, you can only pick it while check-in for it is open (for example, from 30 minutes before the service until shortly after it ends). Outside that window the service time is listed as **Closed**, with when it opens if known -- for example, **Closed · opens Sun 9:30 AM**.
-3. Tap **Select Group** next to a service time to choose which group the person should be checked into (such as "Main Worship," "Kids Room 1," or "Youth Group").
+3. Tap **Select Group** next to a service time to choose which group the person should be checked into (such as "Main Worship," "Kids Room 1," or "Youth Group"). Groups are listed under their category headings (**General Groups** for ones without a category). Tap **No Group** to clear the choice, or **Back** to return without changing it.
 4. Repeat for each household member who is attending.
 
 You do not need to check in every household member -- only expand and assign groups for the people who are actually present.
@@ -53,9 +53,9 @@ Once you have selected groups for everyone who is attending, tap the button at t
 
 If someone you selected already checked in for this service today, an **Already Checked In** window names them first. Tap **Check In Again** to update their groups, or **Cancel** to go back.
 
-You will see a confirmation that your check-in is complete and your attendance has been saved. After a moment the page returns to the service list, ready for the next check-in.
+You will see **Check-in Complete** with a **Where everyone is** list showing the group (and service time) each person was checked into. After a moment the page returns to the service list, ready for the next check-in.
 
-If your church prints name tags at a check-in station, you instead see **You're checked in!** with a QR code and a security code. Show the code at a check-in station to print your name tags, then tap **Done**. At a B1 Checkin kiosk, tap **Scan code** and hold the QR code up to the camera -- see [Printing Labels for a Phone Check-In](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
+If your church prints name tags at a check-in station, you instead see **You're checked in!** with a QR code, a security code, and the **Where everyone is** list. Show the code at a check-in station to print your name tags, then tap **Done**. At a B1 Checkin kiosk, tap **Scan code** and hold the QR code up to the camera -- see [Printing Labels for a Phone Check-In](../../b1-checkin/check-in/looking-up-members.md#printing-labels-for-a-phone-check-in).
 
 If your household is already checked in for the service you select, a **Show check-in code** link appears next to the **Who's here** heading. Tap it to bring the QR code and security code back up -- for example, if you closed the page before reaching a check-in station.
 

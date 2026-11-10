@@ -41,7 +41,7 @@ The page opens with the title **Guest Registration**. If the church has added a 
 6. If your church includes a **Comments** box below the family members, use it to share anything you'd like the church to know (up to 1,000 characters).
 7. Tap **Register** to submit.
 
-Fields marked with an asterisk (`*`) are required. If any are left blank, the form shows "Please fill in every required field." and nothing is submitted until you fill them in.
+Fields marked with an asterisk (`*`) are required. Every card needs a first and last name -- if one is missing, the form shows "First name and last name are required for each member." If any other required field is left blank, it shows "Please fill in every required field." Nothing is submitted until you fill them in.
 
 ## After Registering
 
