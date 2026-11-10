@@ -21,16 +21,16 @@ Set up your volunteer teams, create weekly service plans, assign positions, buil
 
 ## Step 1: Create Volunteer Teams
 
-Organize your volunteers into teams so you can manage assignments by ministry area.
+Organize your volunteers into teams so you can manage assignments by ministry area. Teams live inside a ministry in the Serving area.
 
-Follow the [Creating Groups](../groups/creating-groups.md) and [Group Members](../groups/group-members.md) guides to:
+Follow the [Serving](../serving/index.md) and [Group Members](../groups/group-members.md) guides to:
 
-1. Create a category (e.g., "Sunday Morning Teams")
-2. Create groups like "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers"
-3. Add volunteers to each group by searching for their name and clicking Add
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Serving > Plans** and click **Add Ministry** to create a ministry (e.g., "Sunday Morning")
+2. Select the ministry's tab and click **Create Serving Team** (or **New Serving Team**) to add teams like "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers"
+3. Open each team and add volunteers by searching for their name in the **Add Person** box
 
 :::tip
-Designate team leaders with the star icon (**Make Leader**) in the group's member list (click **All members** on the group page). Leaders can manage their own group calendar and coordinate their team.
+Designate team leaders with the star icon (**Make Leader**) in the team's member list. Leaders can manage their own group calendar and coordinate their team.
 :::
 
 ## Step 2: Build Your Song Library
@@ -39,9 +39,9 @@ Add worship songs so you can pull them into service plans each week.
 
 Follow the [Songs](../serving/songs.md) guide to:
 
-1. Add worship songs with titles, artists, and duration
-2. For each song, add arrangements with lyrics and key designations
-3. Add external links to YouTube performances, chord charts, or sheet music
+1. In the Jump menu, choose **Serving > Songs**, click **Add Song**, and search the song database by title or artist (or click **Create Manually**)
+2. For each song, add arrangements with lyrics and keys
+3. Add external links to YouTube performances, chord charts, or sheet music, and upload rehearsal audio if you have it
 
 :::info
 Songs added here can be pulled into any service plan later. Build your library once, reuse it every week.
@@ -53,10 +53,10 @@ Plans are the weekly assignments that tell volunteers where they're needed.
 
 Follow the [Plans](../serving/plans.md) guide to:
 
-1. Go to Serving, select your ministry tab, and open your plan type
-2. Click **New Plan** and pick the service date. To set up several Sundays at once, copy from the previous plan and enter how many in **Number of plans**
-3. In the plan's **Serving Team Assignments** section, add positions and assign volunteers to them
-4. Volunteers will see their assignment status (Requested, Confirmed, Pending)
+1. In the Jump menu, choose **Serving > Plans**, select your ministry tab, and open your plan type (click **Create Plan Type** if you don't have one yet)
+2. Click **New Plan** and pick the **Service Date**. To set up several Sundays at once, copy from a previous plan, choose **Repeat every** and **Frequency**, and enter how many in **Number of plans**
+3. On the plan page, click **Manage serving team**, click **Add Position** to add each position, then click its **People Needed** link to assign volunteers
+4. In the **Validation** panel, click the **Notify _N_ volunteer(s)** link so volunteers get their requests (see [Notifying Volunteers](../serving/plan-validation.md#notifying-volunteers)). A green dot on a volunteer's picture means they accepted and a red dot means they declined; the plan page's **Responses** tile counts accepted, pending, and declined
 5. Turn on [volunteer reminders](../serving/plans.md#volunteer-reminders) for the plan type so volunteers are reminded by push, email, or text before each service
 
 ## Step 4: Build the Service Order
@@ -65,8 +65,8 @@ Lay out the flow of your service from start to finish.
 
 Follow the [Service Order](../serving/service-order.md) guide to:
 
-1. Open your plan and find the **Order of Service** section at the top
-2. Click **Add** to add elements: worship songs (from your library), prayers, scripture readings, announcements, sermon, offering, closing
+1. Open your plan and click **Edit order of service** in the **Order of Service** section
+2. Click **Add** to add sections, songs (from your library), and items such as prayers, scripture readings, announcements, sermon, offering, and closing
 3. Drag and drop items to reorder the service flow
 
 :::info
@@ -91,9 +91,9 @@ B1 Admin no longer creates tasks on a repeating schedule. For repeating processe
 
 Let volunteers sign up for positions themselves instead of waiting for admin assignments.
 
-1. When creating or editing a plan, set a **Signup Deadline** (hours before service) to control when self-signup closes. The hours are counted back from the plan's first service time. Leave blank for no deadline. New plans start with the previous plan's deadline.
-2. Optionally toggle **Show volunteer names on signup page** to let volunteers see who else is signed up.
-3. For each position, check the **Allow Self-Signup** checkbox to make it available for self-service.
+1. When creating a plan, or under **Edit details** on the plan page, set a **Signup Deadline (hours before service)** to control when self-signup closes. The hours are counted back from the plan's first service time. Leave blank for no deadline. New plans start with the previous plan's deadline.
+2. Optionally check **Show volunteer names on signup page** (under **Edit details**) to let signed-in volunteers see who else is signed up.
+3. In each position's **Add a Position** dialog, check **Allow Self-Signup** to make it available for self-service.
 4. Add a **Description** to each position so volunteers know what the role involves.
 
 Once self-signup positions are created, they automatically appear on the volunteer signup pages on [B1.church and in the B1 App](../../b1-church/serving/volunteer-signup.md). Members can browse open positions, see how many spots remain, and sign up with one click.
@@ -122,7 +122,7 @@ Your volunteer management system is set up. Each week, create a new plan, assign
 
 ## Related Articles
 
-- [Creating Groups](../groups/creating-groups.md) — set up teams and categories
+- [Serving](../serving/index.md) — set up ministries and serving teams
 - [Group Members](../groups/group-members.md) — add and manage team members
 - [Plans](../serving/plans.md) — create and manage service plans
 - [Service Order](../serving/service-order.md) — build the flow of a service
