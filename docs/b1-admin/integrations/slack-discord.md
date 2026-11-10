@@ -53,7 +53,7 @@ Treat the Slack webhook URL as a secret. Anyone with it can post arbitrary messa
 
 ### 3. Test it
 
-Re-open the webhook from the list and click **Send Test Event**. Within a second or two a message like
+Re-open the webhook from the list and click **Send Test Event**. B1 sends a sample of the first event you ticked, so within a second or two a message like
 
 > 💝 New donation: $50.00
 
@@ -109,12 +109,12 @@ There's no limit on the number of webhooks per church. Each one is independent �
 
 The webhook editor's **Recent Deliveries** table shows the last 50 attempts. Click a row to see the exact payload that was sent and the response that came back. For a Slack connector the payload is `{"text":"💝 New donation: $50.00"}` — not the raw `{event,churchId,...}` envelope — because B1 reshapes it before delivery.
 
-If something failed (red `failed` or `exhausted` badge), the dialog shows the HTTP status and response body so you can see exactly what Slack or Discord didn't like — usually a copy/paste error in the URL.
+If something failed (an amber `failed` badge while B1 is still retrying, or a red `exhausted` badge once it has given up), the **Response** column shows the HTTP status and the row's dialog shows the response body, so you can see exactly what Slack or Discord didn't like — usually a copy/paste error in the URL. Click **Redeliver** to send that delivery again.
 
 ## Troubleshooting
 
 - **No message appears + delivery status `400`** — usually the Connector Type is set to **Standard** but the URL is a Slack/Discord one. Slack/Discord reject the raw envelope. Switch the dropdown to **Slack** or **Discord** and resend the test.
-- **Webhook auto-disabled** — after 3 consecutive failed deliveries B1 turns the webhook off. Fix the URL (or rotate it on Slack/Discord) and toggle **Active** back on.
+- **Webhook auto-disabled** — B1 retries each failed delivery for about five days. If three deliveries in a row run out of retries, B1 turns the webhook off (its status reads **Disabled**). Fix the URL (or rotate it on Slack/Discord), turn **Active** back on, and save.
 - **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier.md) or [Make](./make.md) to compose a fuller Slack message via their Slack actions.
 
 ## Switching Connector Types Later
