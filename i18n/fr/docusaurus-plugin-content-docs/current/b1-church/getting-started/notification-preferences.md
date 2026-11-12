@@ -1,66 +1,69 @@
 ---
 title: "Préférences de notification"
-description: "Réglez canaux, fréquence des e-mails, heures silencieuses et refus de SMS pour chaque type de notification, dans B1 Admin et l'app B1."
+description: "Définissez les canaux de notification, la fréquence des courriels, les heures de silence et les désabonnements aux textos pour chaque type de notification dans B1 Admin et l'application B1, depuis un seul écran."
 ---
 
 # Préférences de notification
 
 <div class="article-intro">
 
-Les préférences de notification vous permettent de choisir les notifications que vous recevez de votre église et la manière dont vous les recevez -- notifications push, e-mail, cloche dans l'application ou, si votre église envoie des SMS, messages texte. Vous pouvez affiner chaque type de notification, définir des heures calmes ou tout mettre en sourdine d'un seul coup, le tout depuis un même écran.
+Les préférences de notification vous permettent de décider quelles notifications vous recevez de votre église et comment vous les recevez : notifications push, courriel, cloche dans l'application ou, si votre église envoie des textos, messages texte. Vous pouvez affiner chaque type de notification, définir des heures de silence ou tout désactiver d'un seul coup, le tout depuis un seul écran.
 
 </div>
 
-## Ouvrir vos préférences
+## Ouvrir vos préférences {#opening-your-preferences}
 
-1. Accédez à la page **Moi** et touchez **Paramètres** sous votre nom.
+1. Accédez à la page **Moi** et appuyez sur **Paramètres** sous votre nom.
 
-Vous pouvez aussi toucher l'icône de la cloche, toucher **Voir tout** pour ouvrir votre boîte de réception, puis toucher **Préférences de notification** en haut de cette page.
+Vous pouvez aussi appuyer sur l'icône de cloche, appuyer sur **Voir tout** pour ouvrir votre boîte de réception, puis appuyer sur **Préférences de notification** en haut de cette page.
 
-## Commandes globales
+## Paramètres généraux {#global-controls}
 
-En haut de l'écran, vous trouverez des paramètres qui s'appliquent à tout :
+En haut de l'écran, vous trouverez les réglages qui s'appliquent à tout :
 
-- **Tout mettre en sourdine** -- Suspend temporairement toutes les notifications non essentielles.
-- **Notifications push** -- Active ou désactive les notifications push pour votre appareil.
-- **Messages texte** -- Affiché uniquement si votre église a configuré l'envoi de SMS. Activez cette option pour recevoir les rappels de service et d'événements par SMS, au numéro de téléphone mobile indiqué sur votre profil. Elle est désactivée tant que vous ne l'activez pas.
-- **Fréquence des e-mails** -- Choisissez la manière dont les notifications par e-mail vous parviennent :
-  - **Par notification** -- Envoie un e-mail au fur et à mesure des événements.
-  - **Récapitulatif quotidien** -- Regroupe les notifications dans un seul e-mail par jour.
-  - **Jamais** -- N'envoie aucun e-mail de notification.
-- **Heures calmes** -- Définissez une heure de début et de fin (ainsi que votre fuseau horaire) pendant lesquelles vous préférez ne pas être dérangé. Les notifications non urgentes attendent la fin des heures calmes.
+- **Envoi**
+  - **Notifications push** -- Active ou désactive les notifications push pour votre compte. Pour configurer les push sur l'appareil que vous utilisez, activez-les depuis votre boîte de réception -- voir [Notifications push sur cet appareil](#push-notifications-on-this-device).
+  - **Messages texte** -- Affiché uniquement si votre église a configuré l'envoi de textos. Activez cette option pour recevoir par texto les rappels de service et d'événements sur le numéro de mobile de votre profil. Elle est désactivée tant que vous ne l'activez pas.
+  - **Désactiver toutes les notifications** -- Met temporairement en sourdine tous les canaux jusqu'à ce que vous les réactiviez.
+- **Courriel** -- Choisissez une **Fréquence des courriels** :
+  - **Par notification** -- Envoyer un courriel au fur et à mesure des événements.
+  - **Résumé quotidien** -- Regrouper les notifications dans un seul courriel quotidien.
+  - **Jamais** -- Ne pas envoyer de courriels de notification.
+- **Heures de silence** -- Affiche **Désactivé** ou vos heures de silence actuelles. Appuyez sur **Modifier** pour saisir une heure de **Début** et de **Fin** au format 24 heures (par exemple, 22:00 et 07:00) et choisir votre **Fuseau horaire**, puis appuyez sur **Terminé**. Laissez les deux heures vides pour désactiver les heures de silence. Pendant les heures de silence, les notifications push et textos de la discussion de groupe, des annonces et de l'activité des groupes attendent la fin de cette période.
 
-## Choisir les notifications par type
+## Choisir les notifications par type {#choosing-notifications-by-type}
 
-Sous les commandes globales se trouve une grille des types de notifications. Pour chacun, vous pouvez activer ou désactiver les canaux souhaités :
+Sous les paramètres généraux se trouve une grille des types de notification. Pour chacun, vous pouvez activer ou désactiver les canaux souhaités :
 
 - **Push** -- Une notification sur votre appareil.
-- **E-mail** -- Un message dans votre boîte de réception.
+- **Courriel** -- Un message dans votre boîte de réception.
 - **Dans l'application** -- La cloche et le badge à l'intérieur de l'application.
-- **SMS** -- Un message texte sur votre téléphone mobile. Cette colonne n'apparaît que si votre église a configuré l'envoi de SMS, et seuls certains types (comme **Rappels d'événements**, **Service et planning** et **Tâches et suivis**) peuvent être envoyés par SMS. Les SMS ne vous parviennent que si **Messages texte** est également activé.
+- **Texto** -- Un message texte sur votre téléphone mobile. Cette option n'apparaît que si votre église a configuré l'envoi de textos, et seuls les **Rappels d'événements**, **Services et horaires**, **Tâches et suivis** et les **Annonces de l'église** peuvent être envoyés par texto. Les textos ne parviennent que si **Messages texte** est aussi activé.
 
-Parmi les types courants figurent **Rappels d'événements**, **Service et planning**, **Messages directs**, **Discussion de groupe**, **Demandes de prière** et **Annonces de l'église**. Par exemple, vous pouvez garder les notifications push activées pour les messages directs, mais les désactiver pour les annonces.
+Les types sont **Messages directs**, **Rappels d'événements**, **Services et horaires**, **Tâches et suivis**, **Discussion de groupe**, **Annonces de l'église** et **Activité des groupes** (par exemple, les demandes d'adhésion à un groupe que vous animez). Chaque canal s'affiche sous forme de pastille que vous touchez pour l'activer ou le désactiver. Par exemple, vous pouvez garder les notifications push activées pour les messages directs tout en les désactivant pour les annonces de l'église.
 
-:::info
-Quelques types de notifications sont **toujours activés** et ne peuvent pas être désactivés : **Compte et sécurité**, **Reçus et relevés de dons** et **Alertes de sécurité du pointage**. Ils sont nécessaires à votre sécurité et pour des raisons légales, c'est pourquoi ils sont signalés par une petite icône de cadenas. Tout le reste reste à votre choix.
-:::
+Chaque type démarre avec le push, le courriel et les notifications dans l'application activés. Les textos sont activés par défaut pour les rappels, les services et les tâches, et désactivés pour les annonces.
 
-Certains types sont **désactivés par défaut** (comme les messages promotionnels ou de collecte de fonds) et ne vous parviennent que si vous choisissez de vous y abonner.
+## Arrêter les messages texte {#stopping-text-messages}
 
-## Arrêter les messages texte
+Pour cesser de recevoir des textos, désactivez **Messages texte** et enregistrez. Vous pouvez aussi répondre **STOP** à n'importe quel texto de votre église pour retirer votre numéro de ses envois.
 
-Pour ne plus recevoir de SMS, désactivez **Messages texte** puis enregistrez. Vous pouvez aussi répondre **STOP** à n'importe quel SMS de votre église pour exclure votre numéro de ses envois.
+## Enregistrer vos modifications {#saving-your-changes}
 
-## Enregistrer vos modifications
-
-Après avoir ajusté vos préférences, touchez **Enregistrer les préférences**. Vos modifications prennent effet immédiatement et s'appliquent partout où vous utilisez B1.
+Après avoir ajusté vos préférences, appuyez sur **Enregistrer les préférences**. Vos modifications prennent effet immédiatement et s'appliquent partout où vous utilisez B1. Pour annuler des modifications non encore enregistrées, appuyez sur **Annuler**.
 
 :::tip
-Les notifications urgentes -- comme une alerte de sécurité ou un message de sécurité lié au pointage d'un enfant -- vous parviennent même pendant les heures calmes. Les mises à jour courantes attendent la fin des heures calmes.
+Les notifications urgentes -- messages directs, rappels d'événements et de service, et tâches -- vous parviennent toujours pendant les heures de silence. La discussion de groupe, les annonces et l'activité des groupes attendent la fin des heures de silence.
 :::
 
-## Liens connexes
+## Notifications push sur cet appareil {#push-notifications-on-this-device}
+
+Les notifications push parviennent à chaque téléphone ou ordinateur séparément. Lorsque vous êtes connecté et que cet appareil n'est pas encore configuré, l'accueil affiche une carte **Activer les notifications** -- appuyez sur **Activer les notifications** et choisissez **Autoriser** lorsque votre navigateur vous le demande. Vous pouvez aussi appuyer sur l'icône de cloche, appuyer sur **Voir tout** pour ouvrir votre boîte de réception, et appuyer sur **Activer** dans la section **Notifications push** en bas (appuyez sur **Désactiver** à cet endroit pour arrêter les push sur cet appareil).
+
+Sur iPhone, les notifications ne fonctionnent qu'une fois l'application [installée sur votre écran d'accueil](./installing-pwa.md) ; le bouton affiche donc **Installer l'application** jusque-là. Si vous avez bloqué les notifications auparavant, l'application vous explique comment les autoriser de nouveau dans les paramètres de votre navigateur ou de votre téléphone.
+
+## Articles connexes {#related}
 
 - [Inscription comme bénévole](../serving/volunteer-signup.md) -- Rappels de service et réponses aux demandes de planning
-- [Inscription aux événements](../events/registering.md) -- Inscrivez-vous aux événements qui envoient des rappels
-- [Installer l'application](./installing-pwa.md) -- Ajoutez B1 à votre appareil pour recevoir des notifications push
+- [S'inscrire à un événement](../events/registering.md) -- Inscription aux événements qui envoient des rappels
+- [Installer l'application](./installing-pwa.md) -- Ajouter B1 à votre appareil pour recevoir les notifications push

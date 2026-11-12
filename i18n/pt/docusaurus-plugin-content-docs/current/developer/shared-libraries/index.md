@@ -35,7 +35,7 @@ yarn build
 
 O repositório usa Yarn Berry (o campo `packageManager` da raiz é a referência) com um único lockfile. `yarn build` compila todos os pacotes na ordem de dependência; `yarn test` executa os testes de todos os pacotes.
 
-## Publicação com Changesets
+## Publicação com Changesets {#releasing-with-changesets}
 
 Toda mudança em um pacote é entregue com um changeset:
 
@@ -47,7 +47,7 @@ Toda mudança em um pacote é entregue com um changeset:
 Nunca execute um `npm publish` direto dentro de um pacote individual — ele pula a ordem de compilação e a contabilidade de versões que o script de release cuida. Publicar exige uma conta npm com permissão de publicação no escopo `@churchapps`.
 :::
 
-## Desenvolvimento local com um app consumidor
+## Desenvolvimento local com um app consumidor {#local-development-against-a-consuming-app}
 
 Dentro do workspace, os pacotes compilam diretamente contra os seus irmãos — sem necessidade de link. Para testar uma build de pacote não publicada dentro de um app consumidor (B1Admin, B1App, etc.), adicione um portal Yarn temporário no consumidor:
 

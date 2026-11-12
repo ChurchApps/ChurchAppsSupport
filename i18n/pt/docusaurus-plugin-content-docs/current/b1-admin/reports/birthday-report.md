@@ -1,46 +1,46 @@
 ---
-title: "Listas de Aniversários de Nascimento e Casamento"
-description: "Crie uma lista de pessoas com aniversário ou aniversário de casamento em um mês, usando filtros de busca de Pessoas no B1 Admin, e exporte as datas."
+title: "Listas de aniversários e de casamentos"
+description: "Monte uma lista de todas as pessoas com aniversário ou data de casamento em determinado mês usando os filtros de busca de Pessoas no B1 Admin, e depois visualize ou exporte as datas."
 ---
 
-# Listas de Aniversários de Nascimento e Casamento
+# Listas de aniversários e de casamentos
 
 <div class="article-intro">
 
-Precisa de uma lista de todos com aniversário de nascimento ou de casamento em um determinado mês -- para o boletim, comunicados ou cartões? A busca de Pessoas pode filtrar sua congregação por **Mês de Nascimento** e **Mês de Aniversário** e mostrar as datas diretamente nos resultados.
+Precisa de uma lista de todas as pessoas com aniversário ou data de casamento em determinado mês — para o boletim, os anúncios ou os cartões? A busca de Pessoas pode filtrar sua congregação por **Mês de nascimento** e **Mês de casamento** e mostrar as datas diretamente nos resultados.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Certifique-se de que as datas de nascimento (e aniversários) estão inseridas no perfil de cada pessoa. Consulte [Adicionando Pessoas](../people/adding-people.md).
-- Você precisa de permissão para visualizar Pessoas. Consulte [Funções e Permissões](../settings/roles-permissions.md).
+- Certifique-se de que as datas de nascimento (e de casamento) estão cadastradas no perfil de cada pessoa. Veja [Adicionando pessoas](../people/adding-people.md).
+- Você precisa de permissão para visualizar Pessoas. Veja [Funções e permissões](../settings/roles-permissions.md).
 
 </div>
 
-## Obtendo uma Lista de Aniversários de Nascimento para um Mês
+## Obtendo a lista de aniversários de um mês {#getting-a-birthday-list-for-a-month}
 
-1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Pessoas** e clique em **Pessoas**.
-2. Abaixo da caixa de pesquisa, clique em **Avançado**.
-3. Expanda a seção **Demografia** e marque **Mês de Nascimento**, em seguida escolha o mês.
-4. Execute a busca -- todos com um aniversário naquele mês aparecerão nos resultados.
-5. Para ver as datas, mude **Exibir como** para **Tabela**, depois clique no ícone **Selecionar colunas** no cabeçalho da página e habilite a coluna **Aniversário de Nascimento**. Use **Exportar** para baixar a lista como uma planilha se preferir classificá-la ou imprimi-la lá.
+1. Abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo do B1 Admin), expanda **Pessoas** e clique em **Pessoas**.
+2. Abaixo da caixa de busca, clique em **Avançada**.
+3. Expanda a seção **Demografia** e marque **Mês de nascimento**, depois escolha o mês.
+4. Os resultados são atualizados assim que o filtro é marcado — todas as pessoas que fazem aniversário naquele mês aparecem.
+5. Para ver as datas, mude **Visualizar como** para **Tabela**, depois clique no ícone **Selecionar colunas** no cabeçalho da página e ative a coluna **Data de nascimento** (ou **Aniversário (sem ano)** para omitir o ano). Use **Exportar** para baixar a lista como planilha, caso prefira ordená-la ou imprimi-la por lá.
 
-## Obtendo uma Lista de Aniversários de Casamento
+## Obtendo uma lista de casamentos {#getting-an-anniversary-list}
 
-Mesmos passos -- na seção **Demografia**, marque **Mês de Aniversário** (ou também), escolha o mês e habilite a coluna **Aniversário** nos resultados.
+Os mesmos passos — na seção **Demografia**, marque **Mês de casamento** no lugar (ou além) dessa opção, escolha o mês e ative a coluna **Casamento** nos resultados.
 
-## Usos Práticos
+## Usos práticos {#practical-uses}
 
 - **Boletins semanais** -- Execute a lista do mês atual e leia os nomes diretamente no boletim.
-- **Cartões de aniversário de nascimento e casamento** -- Exporte a lista do mês e entregue-a à sua equipe de redação de cartões.
-- **Marcos** -- Combine com o filtro **Idade** para encontrar aniversários de marcos.
+- **Cartões de aniversário e de casamento** -- Exporte a lista do mês e entregue-a à equipe que escreve os cartões.
+- **Marcos** -- Combine com o filtro **Idade** para encontrar aniversários de marcos importantes.
 
 :::tip
-Ambas as listas vêm dos campos de data de nascimento e aniversário no perfil de cada pessoa -- se alguém está faltando, seu perfil só precisa ter a data adicionada.
+As duas listas vêm dos campos de data de nascimento e de casamento do perfil de cada pessoa — se alguém não aparece, basta adicionar a data ao perfil dela.
 :::
 
 :::info
-Versões anteriores do B1 Admin tinham uma página de Relatórios separada para aniversários. Essa página foi descontinuada -- os filtros de busca de Pessoas acima são o caminho atual e cobrem aniversários também.
+Versões anteriores do B1 Admin tinham um link para um relatório separado de Aniversários no menu. Esse link foi removido — os filtros de busca de Pessoas descritos acima são a forma atual, e também cobrem os casamentos.
 :::

@@ -1,69 +1,71 @@
 ---
-title: "Le Mie Registrazioni"
-description: "Controlla lo stato delle iscrizioni, paga un saldo dovuto, modifica partecipanti o extra, o annulla un'iscrizione a un evento nel portale membri B1 Church."
+title: "Le mie iscrizioni"
+description: "Controlla lo stato delle iscrizioni, paga un saldo dovuto, modifica partecipanti o extra, o annulla un'iscrizione a un evento nel portale membri di B1 Church."
 ---
 
-# Le Mie Registrazioni
+# Le mie iscrizioni
 
 <div class="article-intro">
 
-La pagina **Registrations** nel portale dei membri è la tua base per ogni evento a cui ti sei iscritto. Da qui puoi controllare il tuo stato, pagare un saldo in sospeso, modificare chi viene e cosa hai ordinato, o annullare completamente una registrazione.
+La pagina **Iscrizioni** nel portale membri è il punto di riferimento per ogni evento a cui ti sei iscritto. Da qui puoi controllare lo stato, pagare un saldo in sospeso, modificare chi partecipa e cosa hai ordinato, oppure annullare del tutto un'iscrizione.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Devi essere [loggato](../getting-started/logging-in.md) — le registrazioni degli ospiti non appaiono qui
-- Hai bisogno di almeno una registrazione a un evento. Vedi [Registrazione agli Eventi](./registering.md).
+- Devi aver [effettuato l'accesso](../getting-started/logging-in.md) — le iscrizioni degli ospiti non compaiono qui
+- Ti serve almeno un'iscrizione a un evento. Vedi [Iscriversi agli eventi](./registering.md).
 
 </div>
 
-## Visualizzazione delle Tue Registrazioni
+## Visualizzare le tue iscrizioni {#viewing-your-registrations}
 
-Apri **Registrations** nel portale dei membri. Ogni registrazione appare come una scheda che mostra:
+Apri la pagina **Io** nel portale membri e tocca **Iscrizioni** nella sezione **Richieste e iscrizioni**. Le iscrizioni del tuo nucleo familiare sono divise in **Prossime** e **Passate** (vengono mostrate le tre passate più recenti; tocca **Tutte le passate** per vedere le altre). Ogni iscrizione mostra:
 
-- Il **titolo dell'evento e la data**
-- Una pillola **status** — **confirmed**, **pending**, **waitlisted** o **cancelled**
-- I **members** che hai registrato
-- La riga di pagamento — l'importo pagato totale o **Balance due** se denaro è ancora dovuto
+- Il **titolo e la data dell'evento**, seguiti dai **membri** che hai iscritto
+- Un'etichetta di **stato** — **Iscritto**, **In attesa**, **In lista d'attesa** o **Annullata**, oppure **Saldo dovuto** se risultano ancora soldi da pagare
+- La riga del pagamento — l'importo pagato sul totale (ad esempio, "Totale: 25,00 € / 25,00 €"), oppure "Saldo dovuto 25,00 € di 25,00 €" con un pulsante **Completa pagamento**
 
-Se non hai ancora registrato nulla, vedrai "No registrations yet."
+Se non ti sei ancora iscritto a nulla, vedrai "Non ti sei iscritto ad alcun evento. Ricontrolla presto per i prossimi eventi."
 
-## Completamento di un Pagamento
+## Completare un pagamento {#completing-a-payment}
 
-Un pulsante **Complete payment** appare su qualsiasi registrazione con un saldo in sospeso — più comunemente dopo che sei stato promosso da una lista d'attesa o quando una modifica dello staff ha modificato il tuo totale.
+Un pulsante **Completa pagamento** compare su ogni iscrizione con un saldo in sospeso — più spesso dopo essere stato promosso da una lista d'attesa, oppure quando una modifica dello staff ha cambiato il totale.
 
-1. Fai clic su **Complete payment**.
-2. Rivedi il riepilogo dell'ordine, scegli una carta salvata o immetti una nuova e paga.
-3. Una volta che il saldo è pagato, la registrazione diventa **confirmed**.
+1. Clicca su **Completa pagamento**.
+2. Controlla il riepilogo dell'ordine, scegli una carta salvata o inseriscine una nuova, e paga.
+3. Una volta saldato, l'iscrizione risulta **Iscritto**.
 
 :::tip
-Quando si apre un posto in lista d'attesa per te, l'email che la tua chiesa invia include un link diretto a questo passaggio di pagamento.
+Quando si libera un posto in lista d'attesa per te, l'email che la chiesa ti invia contiene un link diretto a questo passaggio di pagamento.
 :::
 
-## Modifica di una Registrazione
+## Modificare un'iscrizione {#editing-a-registration}
 
-I piani cambiano. Fai clic su **Edit** su una registrazione per aprire la finestra di dialogo **Edit Registration**, dove puoi:
+I piani cambiano. Clicca su **Modifica** su un'iscrizione per aprire la finestra **Modifica iscrizione**, dove puoi:
 
-- Aggiorna i tuoi **contact details**
-- Modifica il **name** e l' **attendee type** di ogni membro
-- Regola le **selection quantities** (componenti aggiuntivi come magliette o pasti)
+- Cambiare **Nome** e **Cognome** e il **tipo di partecipante** di ogni membro
+- Regolare le **quantità delle selezioni** (extra come magliette o pasti)
 
-La capacità si applica ancora quando modifichi — se un tipo di partecipante o un'opzione ha da allora esaurito lo stock, ti verrà chiesto di sceglierne un'altra. Il salvataggio ricalcola il tuo totale; se la modifica lascia un saldo dovuto, un pulsante **Complete payment** appare sulla scheda.
+Clicca su **Salva** per confermare le modifiche, oppure su **Indietro** per chiudere senza salvare. Per cambiare i tuoi recapiti, contatta la segreteria della chiesa.
+
+La capienza si applica anche in fase di modifica — se un tipo di partecipante o un'opzione nel frattempo è esaurito, ti verrà chiesto di sceglierne un altro. Il salvataggio ricalcola il totale; se la modifica lascia un saldo dovuto, sulla scheda compare un pulsante **Completa pagamento**.
 
 :::info
-La modifica non addebita mai la tua carta automaticamente. Se il tuo nuovo totale è più alto, paga la differenza con **Complete payment**; se è più basso, contatta la tua chiesa su un rimborso — i rimborsi vengono gestiti dallo staff della chiesa tramite il loro fornitore di pagamenti.
+La modifica non addebita mai automaticamente la tua carta. Se il nuovo totale è più alto, paga la differenza con **Completa pagamento**; se è più basso, contatta la chiesa per un eventuale rimborso — i rimborsi sono gestiti dallo staff della chiesa tramite il proprio fornitore di pagamenti.
 :::
 
-## Annullamento di una Registrazione
+## Annullare un'iscrizione {#canceling-a-registration}
 
-1. Fai clic su **Cancel Registration** sulla scheda.
-2. Conferma nella finestra di dialogo — l'annullamento non può essere annullato.
+1. Clicca su **Annulla iscrizione** sulla scheda.
+2. Nella finestra **Annullare l'iscrizione?**, clicca su **Annulla iscrizione** per confermare — l'annullamento non può essere annullato. Clicca su **Mantieni** per lasciarla com'è.
 
-Il tuo posto viene rilasciato immediatamente. Se l'evento ha una lista d'attesa, la prossima persona in linea viene promossa automaticamente. Qualsiasi pagamento effettuato non viene automaticamente rimborsato — contatta l'ufficio della tua chiesa sui rimborsi.
+L'iscrizione resta nel tuo elenco, contrassegnata come **Annullata**.
 
-## Articoli Correlati
+Il tuo posto viene liberato immediatamente. Se l'evento ha una lista d'attesa, la persona successiva in fila viene promossa automaticamente. Un eventuale pagamento già effettuato non viene rimborsato in automatico — per i rimborsi, contatta la segreteria della chiesa.
 
-- [Registrazione agli Eventi](./registering.md) -- Il processo di iscrizione, incluso pagamento e liste d'attesa
-- [Panoramica degli Eventi](./index.md) -- Naviga i prossimi eventi
+## Articoli correlati {#related-articles}
+
+- [Iscriversi agli eventi](./registering.md) -- Il processo di iscrizione, inclusi pagamento e liste d'attesa
+- [Panoramica degli eventi](./index.md) -- Sfoglia i prossimi eventi

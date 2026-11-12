@@ -202,6 +202,6 @@ Returnerer 201 med `client_id`, `client_id_issued_at`, `client_name`, `redirect_
 
 På samtykkesiden i B1Admin får en selvregistrert klient en melding om at den registrerte seg selv. Den kan aldri gjøre mer enn brukerens egen B1-konto, og den kan kobles fra under **Innstillinger → Utvikler → Tilkoblede apper**.
 
-## SDK-støtte
+## SDK-støtte {#sdk-support}
 
 Pakken `@churchapps/integration-sdk` pakker inn hver OAuth-flyt med typede hjelpefunksjoner: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()` og `.awaitDeviceToken()`. Se pakkens README og [Webhooks](./webhooks.md#sdk-support) for et eksempel fra ende til ende.

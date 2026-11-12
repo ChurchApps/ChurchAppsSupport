@@ -1,97 +1,98 @@
 ---
 title: "VOMO"
-description: "Zapier के साथ VOMO स्वयंसेवक साइन-अप और किओस्क चेक-इन को B1 Admin के लोगों और समूहों से जोड़ें, जिसमें API कुंजी स्कोप और सेटअप चरण शामिल हैं।"
+description: "Zapier के साथ VOMO volunteer signups और kiosk check-ins को B1 Admin के लोगों और groups से जोड़ें, API key scopes और सेटअप चरणों के साथ।"
 ---
 
 # VOMO
 
 <div class="article-intro">
 
-VOMO एक स्वयंसेवी जुड़ाव (volunteer engagement) प्लेटफ़ॉर्म है। लोग इस पर परियोजनाओं के लिए साइन अप करते हैं, किओस्क पर चेक-इन करते हैं, और अपने घंटे जमा करते हैं। यदि आप स्वयंसेवकों के शेड्यूल के लिए VOMO का उपयोग करते हैं, लेकिन लोगों के रिकॉर्ड के लिए B1 का, तो Zapier दोनों के बीच सदस्यता और चेक-इन का सिंक कर सकता है, ताकि दोनों तरफ का डेटा अलग न होने पाए।
+VOMO एक volunteer engagement platform है — लोग projects के लिए signup करते हैं, kiosk पर check in करते हैं, और घंटे जमा करते हैं। अगर आप volunteer scheduling के लिए VOMO और लोगों के रिकॉर्ड के लिए B1 इस्तेमाल करते हैं, तो Zapier दोनों के बीच सदस्यता और check-ins को सिंक कर सकता है ताकि कोई भी पक्ष दूसरे से अलग न हो।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- एक [VOMO](https://vomo.org) खाता, ऐसी योजना पर जो Zapier की सुविधा देती हो (निश्चित न हों तो VOMO सहायता से पूछें)
-- एक [Zapier](https://zapier.com) खाता
-- B1Admin उपयोगकर्ता जिसके पास **Edit Settings** की अनुमति हो
+- ऐसे plan पर [VOMO](https://vomo.org) account जो Zapier उपलब्ध कराता हो (अनिश्चित हों तो VOMO support से पूछें)
+- एक [Zapier](https://zapier.com) account
+- **Edit Settings** अनुमति वाला एक B1Admin user
 
 </div>
 
-## आप क्या जोड़ सकते हैं
+## आप क्या वायर कर सकते हैं {#what-you-can-wire-up}
 
-VOMO का Zapier ऐप चार इंस्टेंट ट्रिगर और चार एक्शन उपलब्ध कराता है। ज़्यादातर चर्च जिन रेसिपी को चाहते हैं, वे ये हैं:
+VOMO के Zapier ऐप में चार तत्काल triggers और चार actions हैं। ज़्यादातर चर्च जो रेसिपी चाहते हैं:
 
-| दिशा | ट्रिगर | एक्शन |
+| दिशा | Trigger | Action |
 |---|---|---|
-| VOMO → B1 | VOMO Membership (बनाया गया) | B1: Find Person → Create Person (यदि नया हो) |
-| VOMO → B1 | VOMO Kiosk चेक-इन | B1: किसी "Currently Serving" समूह में Add Group Member, या attendance के रूप में दर्ज करें |
-| B1 → VOMO | B1 `person.created` | VOMO: Find Organizer (ईमेल से); नहीं मिला तो कस्टम स्टेप |
-| कोई भी | VOMO Participation (साइनअप) | B1: परियोजना-विशिष्ट समूह में Add Group Member |
+| VOMO → B1 | VOMO Membership (बनाया गया) | B1: Find Person → Create Person (अगर नया है) |
+| VOMO → B1 | VOMO Kiosk check-in | B1: "Currently Serving" group में Add Group Member, या attendance के रूप में दर्ज करें |
+| B1 → VOMO | B1 `person.created` | VOMO: Find Organizer (email से); नहीं मिला तो कस्टम चरण |
+| कोई भी | VOMO Participation (signups) | B1: project-विशिष्ट group में Add Group Member |
 
-VOMO के एक्शन फ़िलहाल केवल **परियोजनाओं का ड्राफ़्ट बनाने** और मौजूदा organizers/परियोजनाओं को **खोजने** तक सीमित हैं। आज की तारीख में "किसी व्यक्ति को VOMO परियोजना में जोड़ें" वाला कोई एक्शन नहीं है। सबसे उपयोगी सेटअप ज़्यादातर VOMO → B1 दिशा में होता है।
+VOMO actions केवल **projects का मसौदा बनाने** और मौजूदा organizers/projects **खोजने** तक सीमित हैं — फ़िलहाल "इस व्यक्ति को VOMO project में जोड़ो" जैसा कोई action नहीं है। दिलचस्प वायरिंग ज़्यादातर VOMO → B1 है।
 
-## सेटअप
+## सेटअप {#setup}
 
-### 1. B1 API कुंजी बनाएँ
+### 1. B1 API key बनाएँ {#1-mint-a-b1-api-key}
 
-**Settings → Developer → API Keys → New API Key**। स्कोप:
+**Settings → Developer → API Keys → New API Key**। Scopes:
 
-- `people:read`, `people:write`: स्वयंसेवकों को B1 लोगों के रूप में खोजने और बनाने के लिए
-- `groups:write`: उन्हें सेवा टीम के समूहों में जोड़ने के लिए
-- (वैकल्पिक) `attendance:write`, यदि आप किओस्क चेक-इन को attendance मानते हैं
+- `settings:write` — जब आप key जोड़ते हैं तो Zapier हर B1 key को B1 की webhook सूची से मिलाता है, इसलिए इसके बिना connection विफल हो जाता है
+- `people:read`, `people:write` — volunteers को B1 लोगों के रूप में खोजने और बनाने के लिए
+- `groups:write` — उन्हें serving-team groups में जोड़ने के लिए
+- (वैकल्पिक) `attendance:write` अगर आप kiosk check-ins को attendance मानते हैं
 
-### 2. मेंबरशिप-सिंक Zap बनाएँ
+### 2. membership-सिंक Zap बनाएँ {#2-build-the-membership-sync-zap}
 
-1. **ट्रिगर**: VOMO: Membership (event = `created`)।
-2. **एक्शन**: B1.church: Find Person, ईमेल से मिलान करके।
-3. **Filter / Path**: मिला या नहीं मिला, इस आधार पर दो रास्तों में बाँटें:
-   - नहीं मिला → B1.church: Create Person, फिर उपयुक्त स्वयंसेवक समूह में Add Group Member।
-   - मिला → सीधे B1.church: Add Group Member।
-4. चालू करें। नए VOMO स्वयंसेवक अब सही समूह सदस्यता के साथ B1 में दिखेंगे।
+1. **Trigger** — VOMO: Membership (event = `created`)।
+2. **Action** — B1.church: Find Person, email पर मिलान करके।
+3. **Action** — B1.church: Add Group Member, चरण 2 के व्यक्ति को उपयुक्त volunteer group में जोड़ते हुए।
 
-### 3. (वैकल्पिक) किओस्क-चेक-इन Zap बनाएँ
+   जब कोई मेल नहीं खाता तो B1 का *Find Person* "No person found" त्रुटि के साथ Zap रोक देता है। जो volunteers अभी B1 में नहीं हैं, उनके लिए Find Person चरण के लिए Zapier की error handling चालू करें और उसके error path में B1.church: Create Person, फिर Add Group Member चलाएँ।
+4. चालू करें। नए VOMO volunteers अब सही group सदस्यता के साथ B1 में दिखते हैं।
 
-1. **ट्रिगर**: VOMO: Kiosk
-2. **एक्शन**: B1.church: Find Person (ईमेल से)
-3. **एक्शन**: अपनी पसंद चुनें:
-   - *यदि इसे attendance मानना है*: Webhooks by Zapier, B1 के `/attendance/visits` endpoint पर POST करता है। (B1 के Zapier ऐप में अभी पहली-श्रेणी का *Record Attendance* एक्शन नहीं है।) B1 [API कुंजी](/docs/developer/api/api-keys) `Authorization: Bearer cak_…` हेडर में जाती है।
-   - *यदि इसे समूह सदस्यता मानना है*: B1.church: Add Group Member, "Currently Serving (Today)" समूह के साथ। दिन के बाद एक दूसरा Zap, एक शेड्यूल्ड क्लीनअप के ज़रिए, उन्हें हटा देता है।
+### 3. (वैकल्पिक) kiosk-check-in Zap बनाएँ {#3-optional-build-the-kiosk-check-in-zap}
 
-## सामान्य रेसिपी
+1. **Trigger** — VOMO: Kiosk
+2. **Action** — B1.church: Find Person (email से)
+3. **Action** — आपकी पसंद:
+   - *अगर इसे attendance मानते हैं* — B1 के `/attendance/visits` endpoint पर Webhooks by Zapier POST (B1 के Zapier ऐप में अभी पहली-श्रेणी का *Record Attendance* action नहीं है)। B1 [API key](/docs/developer/api/api-keys) `Authorization: Bearer cak_…` header में जाती है।
+   - *अगर इसे group सदस्यता मानते हैं* — B1.church: "Currently Serving (Today)" group में Add Group Member, और दिन में बाद में एक दूसरा Zap, जो एक निर्धारित सफ़ाई के ज़रिए उन्हें हटाता है।
 
-### परियोजना-वार समूह सिंक
+## सामान्य रेसिपी {#common-recipes}
 
-- **ट्रिगर**: VOMO: Participation (बनाया गया)
-- **एक्शन**: Zapier द्वारा परियोजना id पर Filter, फिर
-- **एक्शन**: B1.church: Add Group Member, ऐसे B1 समूह में जिसका नाम VOMO परियोजना से मेल खाता हो।
+### प्रति-project group सिंक {#per-project-group-sync}
 
-जब VOMO परियोजना समाप्त हो जाए, तब B1 समूह को हाथ से खाली करें (या इसे *Participation deleted* ट्रिगर के साथ जोड़ें, जो उन्हें हटा दे)।
+- **Trigger** — VOMO: Participation (बनाया गया)
+- **Action** — Zapier द्वारा project id पर Filter, फिर
+- **Action** — B1.church: एक B1 group में Add Group Member, जिसका नाम VOMO project से मेल खाता हो।
 
-### SMS के ज़रिए "साइन अप करने के लिए धन्यवाद" संदेश भेजें
+जब VOMO project समाप्त हो, तो B1 group को मैन्युअल रूप से साफ़ करें (या इसे *Participation deleted* trigger के साथ जोड़ें जो उन्हें हटाता है)।
 
-उसी Zap में VOMO Participation → Clearstream Send Text या Text In Church Send Message जोड़ें। दोनों के पास पहली-श्रेणी के Zapier एक्शन हैं। देखें [Clearstream](./clearstream.md) और [Text In Church](./text-in-church.md)।
+### "साइन अप करने के लिए धन्यवाद" SMS भेजें {#send-a-thanks-for-signing-up-text-via-sms}
 
-### ड्रॉप-ऑफ़ का पता लगाएँ
+उसी Zap में VOMO Participation → Clearstream Send Text या Text In Church Send Message जोड़ें। दोनों के पास पहली-श्रेणी के Zapier actions हैं — देखें [Clearstream](./clearstream.md) और [Text In Church](./text-in-church.md)।
 
-एक दैनिक Zapier *Schedule* ट्रिगर चलाएँ, जो VOMO में Find Organizer को उन B1 लोगों की सूची के लिए कॉल करे जो इस महीने सेवा टीम में शामिल हुए हैं। यदि VOMO "not found" लौटाए, तो उन्होंने VOMO सक्रिय नहीं किया और उन्हें याद दिलाने की ज़रूरत है।
+### छूटे हुए लोगों का पता लगाएँ {#detect-drop-off}
 
-## सीमाएँ और टिप्पणियाँ
+हर दिन एक Zapier *Schedule* trigger चलाएँ जो VOMO में Find Organizer को उन B1 लोगों की सूची के लिए call करे जो इस महीने serving team में जुड़े — अगर VOMO "not found" लौटाता है, तो उन्होंने VOMO सक्रिय नहीं किया और उन्हें याद दिलाने की ज़रूरत है।
 
-- **ईमेल ही जोड़ने वाली कुंजी है।** VOMO के पेलोड में उपयोगकर्ता का ईमेल होता है, लेकिन B1 व्यक्ति का id नहीं। जो दानदाता दोनों सिस्टम में अलग-अलग ईमेल इस्तेमाल करते हैं, उनके डुप्लिकेट बन जाएँगे।
-- **VOMO के Zapier ऐप में आज "Add to Project" एक्शन नहीं है।** यदि आपको B1 → VOMO परियोजना में नामांकन चाहिए, तो *Webhooks by Zapier* स्टेप से VOMO के REST API पर POST करना होगा, जो एक कस्टम इंटीग्रेशन है।
-- **VOMO की मुफ़्त या निचली योजनाओं में Zapier शामिल नहीं हो सकता।** किसी तारीख का वादा करने से पहले VOMO सहायता से पुष्टि कर लें।
+## सीमाएँ और नोट्स {#limits--notes}
 
-## समस्या निवारण
+- **Email ही जोड़ने वाली कुंजी है।** VOMO के payloads उपयोगकर्ता का email देते हैं पर B1 person id नहीं। जो donors हर सिस्टम में अलग email इस्तेमाल करते हैं, वे डुप्लिकेट बनाएँगे।
+- **VOMO के Zapier ऐप में आज "Add to Project" action नहीं है।** अगर आपको B1 → VOMO project enrollment चाहिए, तो आपको *Webhooks by Zapier* चरण से VOMO के REST API पर POST करना होगा, जो एक कस्टम integration है।
+- **VOMO के मुफ़्त / निचले स्तर पर Zapier शामिल नहीं हो सकता।** किसी वायरिंग तिथि का वादा करने से पहले VOMO support से पुष्टि करें।
 
-- **ट्रिगर कभी नहीं चलता**: VOMO के इंस्टेंट ट्रिगर के लिए API टोकन का वैध बने रहना ज़रूरी है। Zap को फिर से टेस्ट करें; यदि टोकन बदल दिया गया हो तो VOMO को फिर से कनेक्ट करें।
-- **B1 *Add Group Member* 422 के साथ विफल**: एक्शन में दिया गया समूह id मौजूद नहीं है। **B1Admin → Groups** खोलें, समूह पर क्लिक करें, और URL के id वाले हिस्से को Zap स्टेप में कॉपी करें।
-- **एक ही VOMO स्वयंसेवक से B1 में डुप्लिकेट लोग**: संभव है कि उन्होंने VOMO में ऐसे ईमेल से साइन अप किया हो जो B1 में पहले से मौजूद ईमेल से अलग है। या तो ईमेल एक जैसे करें, या एक Zapier *Path* जोड़ें जो बनाने से पहले फ़ोन नंबर से भी खोजे।
+## समस्या निवारण {#troubleshooting}
 
-## इन्हें भी देखें
+- **Trigger कभी फ़ायर नहीं होता** — VOMO के तत्काल triggers के लिए API token का वैध रहना ज़रूरी है। Zap फिर से परीक्षण करें; अगर token बदला गया है तो VOMO को फिर से जोड़ें।
+- **B1 *Add Group Member* विफल** — action में दिया group अब मौजूद नहीं है। चरण के **Group** dropdown से group फिर से चुनें, या B1Admin (**People > Groups**) में group खोलें और उसके वेब पते के अंत से id कॉपी करें।
+- **एक VOMO volunteer से डुप्लिकेट B1 लोग** — शायद उन्होंने ऐसे email से signup किया जो B1 में पहले से अलग था। या तो emails को मानक बनाएँ, या बनाने से पहले फ़ोन से भी खोजने वाला Zapier *Path* जोड़ें।
 
-- [Zapier (ओवरव्यू)](../zapier.md): हर Zapier रेसिपी का B1 पक्ष
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): स्वयंसेवक साइनअप को SMS पुष्टि से जोड़ें
-- [Webhooks (डेवलपर संदर्भ)](/docs/developer/api/webhooks): वे इवेंट जिन पर VOMO ट्रिगर हो सकता है
+## यह भी देखें {#see-also}
+
+- [Zapier (overview)](../zapier.md) — हर Zapier रेसिपी का B1 हिस्सा
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — volunteer signups को SMS पुष्टियों के साथ जोड़ें
+- [Webhooks (developer reference)](/docs/developer/api/webhooks) — वे events जिन पर VOMO trigger हो सकता है

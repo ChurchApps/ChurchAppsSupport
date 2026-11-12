@@ -1,94 +1,93 @@
 ---
 title: "Clearstream"
-description: "Ikonekta ang Clearstream SMS sa B1 Admin gamit ang Zapier: magpadala ng text sa bagong handog o form, at ibalik sa B1 ang mga sagot bilang tao."
+description: "Ikonekta ang Clearstream SMS sa B1 Admin sa pamamagitan ng Zapier: magpadala ng text sa mga bagong regalo o form submission, at ibalik bilang mga tao ang mga papasok na sagot."
 ---
 
 # Clearstream
 
 <div class="article-intro">
 
-Mag-trigger ng isang [Clearstream](https://clearstream.io) text message mula sa kahit na anong B1 event — bagong tao, bagong gift, form submission, calendar update — at ibalik ang mga reply bilang B1 records. Ang Clearstream's Zapier app ay nag-expose ng parehong direksyon, kaya ang buong wiring ay isang recipe at hindi custom code.
+Mag-trigger ng text message ng [Clearstream](https://clearstream.io) mula sa alinmang event ng B1 — bagong tao, bagong regalo, form submission, pagbabago sa kalendaryo — at ibalik ang mga sagot bilang mga record ng B1. Sakop ng Zapier app ng Clearstream ang parehong direksyon, kaya ang buong pagkakabit ay recipe at hindi custom code.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Isang [Clearstream](https://clearstream.io) account na may hindi bababa sa isang list at isang SMS allowance
+- Isang [Clearstream](https://clearstream.io) account na may kahit isang list at SMS allowance
 - Isang [Zapier](https://zapier.com) account
-- Isang B1Admin user na may **Edit Settings** permission
+- Isang B1Admin user na may pahintulot na **Edit Settings**
 
 </div>
 
-## Ano ang Maaari Mong I-wire Up
+## Ano ang Puwede Mong Ikabit {#what-you-can-wire-up}
 
-| Direction | Trigger | Action |
+| Direksyon | Trigger | Aksyon |
 |---|---|---|
 | B1 → Clearstream | B1 `person.created` | Clearstream: Create/Update Subscriber + Send Text to Number |
-| B1 → Clearstream | B1 `donation.created` | Clearstream: Send Text to List (hal. notipikahan ang finance team) |
-| B1 → Clearstream | B1 `form.submission.created` | Clearstream: Send Text sa routing list (hal. prayer request team) |
-| Clearstream → B1 | New Incoming Text | B1: Create Person; tag gamit ang keyword na iyong tinext |
+| B1 → Clearstream | B1 `donation.created` | Clearstream: Send Text to List (hal. ipaalam sa finance team) |
+| B1 → Clearstream | B1 `form.submission.created` | Clearstream: Send Text to a routing list (hal. prayer request team) |
+| Clearstream → B1 | New Incoming Text | B1: Create Person; i-tag ng keyword na ipinadala nila sa text |
 
-Ang Clearstream's Zapier actions: *Send Text to Number*, *Send Text to List*, *Create/Update Subscriber*, *Add Subscriber to Automated Workflow*, *Add Tag to Subscriber*, *Remove Subscriber From List*.
+Mga aksyon ng Clearstream sa Zapier: *Send Text to Number*, *Send Text to List*, *Create/Update Subscriber*, *Add Subscriber to Automated Workflow*, *Add Tag to Subscriber*, *Remove Subscriber From List*.
 
-## Setup
+## Setup {#setup}
 
-### 1. Mag-mint ng isang B1 API key
+### 1. Gumawa ng B1 API key {#1-mint-a-b1-api-key}
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — kinakailangan para sa B1 upang mag-register ng trigger webhook
-- `people:read` — kailangan upang hanapin ang tao mula sa event (`personId` → name/phone/email)
-- (Optional) `people:write` kung ang Clearstream replies ay dapat lumikha ng B1 contacts
+- `settings:write` — kailangan para ikonekta ang key sa Zapier at para marehistro ng B1 ang webhook ng trigger
+- `people:read` — kailangan para hanapin ang tao mula sa event (`personId` → pangalan/telepono/email)
+- (Opsyonal) `people:write` kung dapat gumawa ng B1 contact ang mga sagot sa Clearstream
 
-### 2. Bumuo ng "text on new gift" Zap
+### 2. Buuin ang Zap na "mag-text sa bagong regalo" {#2-build-the-text-on-new-gift-zap}
 
 1. **Trigger** — B1.church: New Donation
-2. **Action** — B1.church: Find Person (ang donation's `personId`)
-3. **Action** — Clearstream: Send Text to Number. Gamitin ang phone ng tao mula sa hakbang 2 bilang ang recipient, sumulat ng mensahe (`"Thanks for your gift, {first}! …"`).
+2. **Aksyon** — B1.church: Find Person (ang `personId` ng donasyon)
+3. **Aksyon** — Clearstream: Send Text to Number. Gamitin ang telepono ng tao mula sa hakbang 2 bilang tatanggap, buuin ang mensahe (`"Thanks for your gift, {first}! …"`).
 
-I-on ang Zap. Ang B1 ay nag-register ng donation webhook sa activation; makikita mo ang `Zapier — donation.created` na lalabas sa **Settings → Developer → Webhooks**.
+I-on ang Zap. Nagrerehistro ang B1 ng webhook ng donasyon kapag na-activate; makikita mo ang `Zapier — donation.created` sa **Settings → Developer → Webhooks**.
 
-### 3. (Optional) Ibalik ang mga reply bilang B1 records
+### 3. (Opsyonal) Ibalik ang mga sagot bilang mga record ng B1 {#3-optional-pull-replies-back-as-b1-records}
 
 1. **Trigger** — Clearstream: New Incoming Text
-2. **Action** — Filter by Zapier sa keyword — hal. magpatuloy lamang kung ang text body ay nagsisimula sa `PRAY`
-3. **Action** — B1.church: Find Person (sa pamamagitan ng phone)
-4. **Action** — Filter / Path — kung hindi makita, lumikha ng mga ito; sa ibang paraan, ilagay ang text body sa isang lugar (Slack, Google Sheet, o isang B1 form submission sa pamamagitan ng Webhooks by Zapier).
+2. **Aksyon** — Filter sa Zapier ayon sa keyword — hal. magpatuloy lang kung ang laman ng text ay nagsisimula sa `PRAY`
+3. **Aksyon** — ilagay ang laman ng text sa lugar na makikita ng iyong team (Slack, Google Sheet, o task sa B1). Naghahanap ang *Find Person* ng B1 ng tao ayon sa id, email, o pangalan lang, hindi ayon sa telepono, kaya itugma nang manwal ang sagot sa isang tao sa B1 (o magdagdag ng Webhooks by Zapier GET sa endpoint ng B1 na `/membership/people/search/phone?number=…`).
 
-## Mga Karaniwang Recipes
+## Karaniwang Recipe {#common-recipes}
 
-### Volunteer team paging
+### Pag-page sa volunteer team {#volunteer-team-paging}
 
-- **Trigger** — B1.church: New Form Submission (filtered sa prayer-request form id)
-- **Action** — Clearstream: Send Text to List, kung saan ang list ay ang iyong on-call pastoral team. Sumulat ang katawan bilang `New prayer request: {data.questions.0.answer}`.
+- **Trigger** — B1.church: New Form Submission (sinala ayon sa id ng prayer-request form)
+- **Aksyon** — Clearstream: Send Text to List, kung saan ang list ay ang iyong on-call na pastoral team. Buuin ang laman bilang `New prayer request: {data.questions.0.answer}`.
 
-### First-time visitor follow-up sequence
+### Pagsunod sa unang beses na bisita {#first-time-visitor-follow-up-sequence}
 
-- **Trigger** — B1.church: New Person, filtered sa isang B1 person tag ng "First-time visitor"
-- **Action** — Clearstream: Add Subscriber to Automated Workflow. I-map ang workflow id sa isang pre-built 7-day text drip.
+- **Trigger** — B1.church: New Person, sinala ayon sa membership status ng tao (halimbawa, *Visitor*)
+- **Aksyon** — Clearstream: Add Subscriber to Automated Workflow. I-map ang workflow id sa isang nakahandang 7-araw na text drip.
 
-### Keyword-driven group join
+### Pagsali sa grupo sa pamamagitan ng keyword {#keyword-driven-group-join}
 
-- **Trigger** — Clearstream: New Incoming Text (filter sa keyword `MENS`)
-- **Action** — B1.church: Find Person (sa pamamagitan ng phone); fork sa not-found → Create Person
-- **Action** — B1.church: Add Group Member sa Men's Ministry group
+- **Trigger** — Clearstream: New Incoming Text (i-filter sa keyword na `MENS`)
+- **Aksyon** — B1.church: Create Person mula sa pangalan at telepono ng nag-text (hindi makakahanap ng tao ang *Find Person* ng B1 ayon sa telepono, kaya tingnan ang mga duplicate sa **People** pagkatapos)
+- **Aksyon** — B1.church: Add Group Member sa Men's Ministry group
 
-## Mga Limitasyon at Mga Tala
+## Mga Limitasyon at Paalala {#limits--notes}
 
-- **Ang Clearstream ay sinusukat ang SMS ayon sa mensahe.** Bawat Send Text action ay umuusbong ng isa o higit pang credits depende sa haba at bilang ng mga recipient — suriin ang allowance ng iyong plano.
-- **Ang phone ay dapat nasa E.164 format** (hal. `+15555550199`) para sa *Send Text to Number*. Ang B1's person record ay nag-store ng anumang naitala; gamitin ang *Formatter by Zapier — Numbers → Format Phone Number* step kung hindi mo maaaasahan ang format.
-- **Walang header ay kinakailangan mula sa B1's side** — ang Clearstream's auth ay nabubuhay nang buo sa loob ng iyong Zapier connection.
+- **Sinusukat ng Clearstream ang SMS kada mensahe.** Bawat Send Text action ay kumokonsumo ng isa o higit pang credit depende sa haba at bilang ng tatanggap — suriin ang allowance ng iyong plan.
+- **Dapat nasa E.164 format ang telepono** (hal. `+15555550199`) para sa *Send Text to Number*. Anuman ang inilagay ang iniimbak ng record ng tao sa B1; gamitin ang hakbang na *Formatter by Zapier — Numbers → Format Phone Number* kung hindi mo matitiyak ang format.
+- **Walang header na kailangan mula sa panig ng B1** — nasa loob ng Zapier connection ng Clearstream nang buo ang auth nito.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-- **Trigger ay hindi kailanman nag-fire** — `Settings → Developer → Webhooks` ay dapat magpakita ng `Zapier — <event>` row pagkatapos na ang Zap ay naka-on. Kung hindi, ang B1 API key ay nawawalan ng `settings:write`. Muling mag-mint at muling kumonekta.
-- **Clearstream ay nagbabalik ng "Invalid phone number"** — ang recipient field ay hindi sa E.164. Magdagdag ng Format Phone Number step.
-- **Send Text to List ay nabigo na may `403`** — ang Clearstream API user ay nawawalan ng permission para sa list na iyon, o ang list id ay mali. Ang list ids ay nakikita sa Clearstream list detail page.
+- **Hindi nag-fire ang trigger** — dapat magpakita ang `Settings → Developer → Webhooks` ng hilerang `Zapier — <event>` pagkatapos i-on ang Zap. Kung wala, kulang sa `settings:write` ang B1 API key. Gumawa muli ng key at muling ikonekta.
+- **Nagbabalik ang Clearstream ng "Invalid phone number"** — hindi nasa E.164 ang field ng tatanggap. Magdagdag ng hakbang na Format Phone Number.
+- **Pumapalya ang Send Text to List na may `403`** — walang pahintulot ang Clearstream API user sa list na iyon, o mali ang list id. Nakikita ang mga list id sa pahina ng detalye ng list sa Clearstream.
 
-## Makita Din
+## Tingnan Din {#see-also}
 
-- [Text In Church](./text-in-church.md) — alternatibong SMS platform, katulad na wiring shape
-- [Mobile Message](./mobile-message.md) — para sa mga churches sa labas ng US
-- [Zapier (overview)](../zapier.md) — B1 side ng bawat Zapier recipe
-- [Clearstream API docs](https://api-docs.clearstream.io/) — para sa custom integrations lampas sa Zapier app
+- [Text In Church](./text-in-church.md) — alternatibong SMS platform, katulad na pagkakabit
+- [Mobile Message](./mobile-message.md) — para sa mga simbahang nasa labas ng US
+- [Zapier (pangkalahatang-tanaw)](../zapier.md) — panig ng B1 ng bawat recipe sa Zapier
+- [Clearstream API docs](https://api-docs.clearstream.io/) — para sa custom integration na lampas sa Zapier app

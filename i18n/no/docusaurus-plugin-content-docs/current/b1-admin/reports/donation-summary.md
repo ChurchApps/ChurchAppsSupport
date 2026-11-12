@@ -1,51 +1,54 @@
 ---
 title: "Gavesammendrag"
-description: "Kjør rapporten Donation Summary i B1 Admin for å se samlede gaver, antall unike givere og beløp per fond for den datoperioden du velger."
+description: "Kjør rapporten Gavesammendrag i B1 Admin for å se samlet giving, antall unike givere og beløp per fond for et valgfritt datointervall."
 ---
 
 # Gavesammendrag
 
 <div class="article-intro">
 
-Gavesammendrag-rapporten gir deg et klart bilde av kirkens givaktivitet. Bruk den til å spore gavebeløp, overvåke givertrends og forberede økonomiske rapporter for lederlaget ditt.
+Rapporten Gavesammendrag gir deg et tydelig bilde av menighetens givingsaktivitet. Bruk den til å følge med på totale gaver, overvåke givertrender og forberede økonomirapporter for lederteamet ditt.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sørg for at gaver blir [registrert konsistent](../donations/recording-donations.md) i systemet ditt
-- Du trenger de riktige [tillatelsene](../settings/roles-permissions.md) for å få tilgang til økonomiske rapporter
+- Sørg for at gaver blir [registrert konsekvent](../donations/recording-donations.md) i systemet ditt
+- Du trenger tillatelsen **Se gavesammendrag** ([tillatelse](../settings/roles-permissions.md))
 
 </div>
 
-## Kjøre rapporten
+## Kjøre rapporten {#running-the-report}
 
-1. Gå direkte til **admin.b1.church/reports/donationSummary** i nettleseren din (rapporter har ingen oppføring i navigasjonsmenyen — bokmerking av adressen er den enkleste måten å komme tilbake på).
-2. Sett **datoområdet** for å definere rapporteringsperioden.
-3. Bruk tilleggsfiltre som **fond** eller andre kriterier for å snevre inn resultatene.
-4. Rapporten viser gave-sammendraget for den valgte perioden.
+1. Åpne [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Gaver** og klikk på **Sammendrag**. Rapporten kjøres med en gang for det siste året.
+2. Velg **Ukentlig**, **Månedlig** eller **Kvartalsvis** for å bestemme hvordan givingen grupperes.
+3. I panelet **Filtrer rapport** angir du **startdato** og **sluttdato**, velger eventuelt et **fond**, og klikker på **Kjør rapport**.
+4. Klikk på **Nedlastingsalternativer** og velg **Sammendrag** for å laste ned summene som CSV, eller klikk på utskriftsikonet for å skrive ut rapporten.
 
-## Hva rapporten viser
+Se [Gaverapporter](../donations/donation-reports.md#giving-dashboard) for mer om denne siden.
 
-Gavesammendrag-rapporten inkluderer:
+## Hva rapporten viser {#what-the-report-shows}
 
-- **Totale gaver** -- Det totale givebeløpet for den valgte perioden.
-- **Giverantal** -- Antall unike givere som bidro.
-- **Beløp etter fond** -- En sammendelinger av giver på tvers av ulike fond, hvis aktuelt.
+Gavesammendraget inneholder:
 
-## Praktiske bruksområder
+- **Total giving** -- Det samlede givingsbeløpet for valgt periode.
+- **Gjennomsnittlig gave** og **Totalt antall gaver** -- Den typiske gavestørrelsen og antall gaver.
+- **Unike givere** -- Antall unike givere som har bidratt.
+- **Beløp per fond** -- Et stolpediagram over giving per uke, måned eller kvartal, fordelt på fond.
 
-- **Økonomisk planlegging** -- Gjennomgå givertrends for å prognostisere fremtidig inntekt og planlegge budsjettet ditt.
-- **Styremøte-rapporter** -- Generer sammendelinger for regelmessige styre- eller ledelsesmøter med klare giverdata.
-- **År-slutt-oversikter** -- Kjør rapporten for hele året for å forberede årlige økonomiske sammendelinger.
-- **Kampanjesporing** -- Filter etter fond for å spore fremgang på spesielle giverkampanjer eller byggeprosjekter.
-- **Sesonganalyse** -- Sammenlign giver på tvers av ulike perioder for å forstå sesongmønster.
+## Praktisk bruk {#practical-uses}
+
+- **Økonomisk planlegging** -- Gå gjennom givertrender for å anslå fremtidige inntekter og planlegge budsjettet.
+- **Styrerapporter** -- Lag sammendrag til faste styre- eller lendermøter med tydelige givingsdata.
+- **Årsoppgjør** -- Kjør rapporten for hele året for å forberede årlige økonomiske sammendrag.
+- **Oppfølging av kampanjer** -- Filtrer etter fond for å følge fremdriften i spesielle giverkampanjer eller byggeprosjekter.
+- **Sesonganalyse** -- Sammenlign giving over ulike perioder for å forstå sesongmønstre.
 
 :::tip
-Kjør denne rapporten månedlig for å holde deg informert om kirkens økonomiske helse. Sammenligning av måned-over-måned-data hjelper deg å oppdage trender tidlig.
+Kjør denne rapporten månedlig for å holde deg oppdatert om menighetens økonomiske helse. Å sammenligne data fra måned til måned gjør det lettere å oppdage trender tidlig.
 :::
 
 :::warning
-Gavedata kommer fra registrerte bidrag i systemet ditt. Sørg for at gaver oppføres konsistent -- enten gjennom online-giver, sjekkbehandling eller manuell oppføring -- for de mest nøyaktige rapportene. Se [Registrer gaver](../donations/recording-donations.md) for detaljer.
+Gavedata kommer fra registrerte bidrag i systemet ditt. Sørg for at gaver blir registrert konsekvent -- enten via nettgiving, behandling av sjekker eller manuell registrering -- for de mest nøyaktige rapportene. Se [Registrere gaver](../donations/recording-donations.md) for detaljer.
 :::

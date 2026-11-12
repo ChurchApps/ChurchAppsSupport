@@ -20,7 +20,7 @@ Etter at du har opprettet kontoen og kirken din, er det noen viktige steg du bø
 
 </div>
 
-## Steg 1: Konfigurer kirkeinformasjonen din
+## Steg 1: Konfigurer kirkeinformasjonen din {#step-1-configure-your-church-information}
 
 1. Åpne [Hopp-menyen](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Innstillinger**, og klikk **Innstillinger**.
 2. I delen **Kirkeinformasjon** klikker du **Rediger**.

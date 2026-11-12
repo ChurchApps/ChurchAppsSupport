@@ -1,96 +1,96 @@
 ---
 title: "Gruppenunterhaltungen"
-description: "Erfahren Sie, wie Sie Nachrichten in einem B1.church-Gruppenchat veröffentlichen, bearbeiten, darauf reagieren und sie verwalten, einschließlich Ankündigungen und Moderationswerkzeugen für Leiter."
+description: "Erfahre, wie du Nachrichten in einem B1.church-Gruppenchat verfasst, bearbeitest, mit Reaktionen versiehst und verwaltest, einschließlich Ankündigungen und Moderationswerkzeugen für Leiter."
 ---
 
 # Gruppenunterhaltungen
 
 <div class="article-intro">
 
-Der Gruppenchat ist ein Bereich, in dem Gruppenmitglieder Nachrichten veröffentlichen und miteinander interagieren können. Nutzen Sie Unterhaltungen, um Themen zu besprechen, Neuigkeiten zu teilen und zwischen den Treffen in Verbindung zu bleiben.
+Der Gruppenchat ist ein Raum, in dem Gruppenmitglieder Nachrichten schreiben und miteinander interagieren können. Nutze Unterhaltungen, um Themen zu besprechen, Neuigkeiten zu teilen und zwischen den Treffen mit deiner Gruppe in Verbindung zu bleiben.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie müssen sich in Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) haben.
-- Sie müssen Mitglied der Gruppe sein, um auf den Gruppenchat zugreifen zu können. Unter [Gruppendetails](./group-details.md) erfahren Sie, wie Sie einer Gruppe beitreten.
+- Du musst in deinem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
+- Du musst Mitglied der Gruppe sein, um auf den Gruppenchat zuzugreifen. Wie du einer Gruppe beitrittst, erfährst du unter [Gruppendetails](./group-details.md).
 
 </div>
 
-## Zugriff auf Unterhaltungen
+## Auf Unterhaltungen zugreifen {#accessing-conversations}
 
-1. Öffnen Sie die Detailseite einer Gruppe, indem Sie auf der [Gruppenseite](./browsing-groups.md) auf eine Gruppe klicken.
-2. Stellen Sie sicher, dass Sie angemeldet sind.
-3. Tippen Sie auf **Chat öffnen** unter dem Namen der Gruppe oder im Abschnitt **Nachrichten**, der die neuesten Nachrichten anzeigt. Der Chat öffnet sich im Vollbildmodus; tippen Sie auf den Zurück-Pfeil, um zur Gruppe zurückzukehren.
+1. Öffne die Detailseite einer Gruppe, indem du auf der [Gruppenseite](./browsing-groups.md) auf eine Gruppe klickst.
+2. Stelle sicher, dass du angemeldet bist.
+3. Tippe unter dem Namen der Gruppe oder im Abschnitt **Nachrichten**, der die neuesten Nachrichten als Vorschau zeigt, auf **Chat öffnen**. Der Chat öffnet sich im Vollbild; tippe auf den Zurück-Pfeil, um zur Gruppe zurückzukehren.
 
-## Diskussionen und Ankündigungen
+## Diskussionen und Ankündigungen {#discussions-and-announcements}
 
-Der Gruppenchat kann zwei Bereiche haben, je nachdem, welche Ihre Gemeinde für diese Gruppe aktiviert hat. Die Beschriftung über dem Gruppennamen oben im Chat zeigt an, in welchem Bereich Sie sich befinden:
+Der Gruppenchat kann zwei Bereiche haben, je nachdem, welche deine Gemeinde für diese Gruppe aktiviert hat. Die Bezeichnung über dem Namen der Gruppe oben im Chat zeigt, in welchem du dich befindest:
 
-- **Chat** -- Diskussionen, in denen jedes Gruppenmitglied Nachrichten veröffentlichen und auf andere antworten kann.
-- **Ankündigungen** -- Nachrichten von Gruppenleitern, die für alle Mitglieder wichtig sind. Reguläre Mitglieder können Ankündigungen lesen und darauf reagieren, aber nur Leiter können sie veröffentlichen. Anstelle eines Nachrichtenfelds sehen reguläre Mitglieder den Hinweis „Nur Gruppenleiter können Ankündigungen veröffentlichen.“
+- **Chat** -- Diskussionen, in denen jedes Gruppenmitglied Nachrichten schreiben und auf andere antworten kann.
+- **Ankündigungen** -- Nachrichten von Gruppenleitern, die für alle Mitglieder wichtig sind. Normale Mitglieder können Ankündigungen lesen und darauf reagieren, aber nur Leiter können sie verfassen; anstelle eines Nachrichtenfeldes sehen normale Mitglieder "Nur Gruppenleiter können Ankündigungen verfassen."
 
-Wenn beide Bereiche aktiviert sind, zeigt ein **Ankündigung**-Streifen oben im Chat die neueste Ankündigung an. Tippen Sie auf **Alle Ankündigungen**, um den Ankündigungsbereich zu öffnen, und auf **Zurück zum Chat**, um zu den Diskussionen zurückzukehren. (Mitglieder sehen den Streifen nur, sobald die Gruppe mindestens eine Ankündigung hat.)
+Sind beide Bereiche aktiviert, zeigt ein Streifen **Ankündigung** oben im Chat die neueste Ankündigung. Tippe auf **Alle Ankündigungen**, um den Ankündigungsbereich zu öffnen, und auf **Zurück zum Chat**, um zu den Diskussionen zurückzukehren. (Mitglieder sehen den Streifen erst, wenn die Gruppe mindestens eine Ankündigung hat.)
 
-Wenn Ihre Gemeinde für diese Gruppe nur einen der beiden Bereiche aktiviert hat, öffnet der Chat direkt diesen Bereich. Sind beide deaktiviert, hat die Gruppe weder einen Chat noch einen Abschnitt **Nachrichten**.
+Hat deine Gemeinde nur einen der beiden Bereiche für diese Gruppe aktiviert, öffnet sich der Chat direkt in diesem Bereich. Sind beide ausgeschaltet, hat die Gruppe keinen Chat und keinen Abschnitt **Nachrichten**.
 
-## Eine Nachricht veröffentlichen
+## Eine Nachricht senden {#posting-a-message}
 
-1. Tippen Sie auf Ihrer Gruppenseite auf **Chat öffnen**.
-2. Stellen Sie sicher, dass Sie sich im Bereich **Chat** befinden (tippen Sie auf **Zurück zum Chat**, wenn Sie Ankündigungen lesen).
-3. Geben Sie Ihre Nachricht in das Feld **Nachricht senden…** ein.
-4. Tippen Sie auf die Senden-Schaltfläche, um sie mit der Gruppe zu teilen. Auf einem Smartphone oder Tablet beginnt die Eingabetaste eine neue Zeile; auf einem Computer sendet **Enter** die Nachricht und **Umschalt+Enter** beginnt eine neue Zeile.
+1. Tippe auf der Seite deiner Gruppe auf **Chat öffnen**.
+2. Stelle sicher, dass du im Bereich **Chat** bist (tippe auf **Zurück zum Chat**, wenn du Ankündigungen liest).
+3. Schreibe deine Nachricht in das Feld **Nachricht senden…**.
+4. Tippe auf die Sendeschaltfläche, um sie mit der Gruppe zu teilen. Auf einem Telefon oder Tablet beginnt die Eingabetaste eine neue Zeile; am Computer sendet **Eingabe** und **Umschalt+Eingabe** beginnt eine neue Zeile.
 
-Ihre Nachricht ist für alle Mitglieder der Gruppe sichtbar. Jede Nachricht zeigt an, wann sie gesendet wurde: die Uhrzeit für heutige Nachrichten, „gestern“ und die Uhrzeit oder das Datum und die Uhrzeit für ältere Nachrichten.
+Deine Nachricht ist für alle Mitglieder der Gruppe sichtbar. Jede Nachricht zeigt, wann sie gesendet wurde: die Uhrzeit bei den heutigen Nachrichten, "gestern" und die Uhrzeit oder bei älteren das Datum und die Uhrzeit.
 
-## Ihre Nachricht formatieren {#formatting-your-message}
+## Deine Nachricht formatieren {#formatting-your-message}
 
-Sie können einer Nachricht fettgedruckten Text, Kursivschrift und Listen hinzufügen:
+Du kannst einer Nachricht fettgedruckten Text, Kursivschrift und Listen hinzufügen:
 
-1. Geben Sie Ihre Nachricht ein und markieren Sie dann die Wörter oder Zeilen, die Sie formatieren möchten.
-2. Über dem Nachrichtenfeld erscheint eine kleine Werkzeugleiste mit den Schaltflächen **Fett**, **Kursiv**, **Aufzählungsliste** und **Nummerierte Liste**. Tippen Sie auf eine davon, um sie anzuwenden. Tippen Sie erneut auf dieselbe Schaltfläche, während der Text noch markiert ist, um die Formatierung zu entfernen.
-3. Senden Sie die Nachricht wie gewohnt.
+1. Tippe in das Nachrichtenfeld. Solange es ausgewählt ist, erscheint darunter eine Zeile mit den Schaltflächen **Fett**, **Kursiv**, **Aufzählungsliste** und **Nummerierte Liste**.
+2. Schreibe deine Nachricht, markiere die Wörter oder Zeilen, die du formatieren möchtest, und tippe auf eine Schaltfläche, um sie anzuwenden. Tippe bei weiterhin markiertem Text erneut auf dieselbe Schaltfläche, um die Formatierung zu entfernen. Ohne Markierung formatieren die Listen-Schaltflächen die Zeile, in der du dich gerade befindest.
+3. Sende die Nachricht wie gewohnt.
 
-Auf einem Computer können Sie für Fettschrift auch **Strg+B** (bzw. **Cmd+B** auf einem Mac) und für Kursivschrift **Strg+I** (**Cmd+I**) drücken.
+Am Computer kannst du außerdem **Strg+B** (oder **Cmd+B** auf dem Mac) für Fett und **Strg+I** (**Cmd+I**) für Kursiv drücken.
 
-Die Werkzeugleiste fügt Ihrem Text einfaches Markdown hinzu: `**fett**`, `_kursiv_`, ein `- ` am Zeilenanfang für eine Aufzählungsliste und `1. ` für eine nummerierte Liste. Sie können diese auch selbst eintippen. Alle im Chat sehen die formatierte Nachricht, Weblinks bleiben anklickbar und Zeilenumbrüche werden beibehalten. Dieselbe Formatierung funktioniert auch bei Ankündigungen, [Leiternotizen](./group-details.md#leader-notes) und privaten Nachrichten.
+Die Symbolleiste fügt deinem Text einfaches Markdown hinzu: `**bold**`, `_italic_`, ein `- ` am Zeilenanfang für eine Aufzählungsliste und `1. ` für eine nummerierte Liste. Du kannst diese auch selbst eintippen. Alle im Chat sehen die formatierte Nachricht, Weblinks bleiben anklickbar (sie öffnen sich in einem neuen Tab), ein Link auf ein Bild (.jpg, .png, .gif und ähnliche) zeigt das Bild unter der Nachricht, und Zeilenumbrüche bleiben erhalten. Dieselbe Formatierung funktioniert bei Ankündigungen, [Leiternotizen](./group-details.md#leader-notes) und privaten Nachrichten.
 
-## Ihre Nachrichten bearbeiten oder löschen
+## Deine Nachrichten bearbeiten oder löschen {#editing-or-deleting-your-messages}
 
-Sie können jede von Ihnen veröffentlichte Nachricht bearbeiten oder löschen:
+Du kannst jede Nachricht bearbeiten oder löschen, die du verfasst hast:
 
-1. Tippen Sie unter Ihrer Nachricht auf die Schaltfläche **Weitere Optionen** (⋮), um das Nachrichtenmenü zu öffnen.
-2. Wählen Sie **Bearbeiten**, um den Nachrichtentext zu ändern, oder **Löschen**, um sie zu entfernen.
-   - Beim Bearbeiten wird der Nachrichtentext wieder in das Eingabefeld geladen, darüber erscheint der Hinweis **Nachricht wird bearbeitet** (tippen Sie auf **Abbrechen**, um das Bearbeiten zu beenden). Nehmen Sie Ihre Änderungen vor und senden Sie die Nachricht, um sie zu speichern.
-   - Beim Löschen erscheint die Bestätigung **Nachricht löschen?**. Tippen Sie auf **Löschen**, um die Nachricht dauerhaft für alle in der Unterhaltung zu entfernen.
+1. Tippe unter deiner Nachricht auf die Schaltfläche **Weitere Optionen** (⋮), um das Nachrichtenmenü zu öffnen.
+2. Wähle **Bearbeiten**, um den Nachrichtentext zu ändern, oder **Löschen**, um sie zu entfernen.
+   - Beim Bearbeiten wird der Nachrichtentext zurück in das Eingabefeld geladen, darüber steht der Hinweis **Nachricht wird bearbeitet** (tippe auf **Abbrechen**, um das Bearbeiten zu beenden). Nimm deine Änderungen vor und sende sie, um sie zu speichern.
+   - Beim Löschen erscheint eine Bestätigung **Nachricht löschen?**. Tippe auf **Löschen**, um die Nachricht für alle in der Unterhaltung dauerhaft zu entfernen.
 
 :::info
-Sie können nur Ihre eigenen Nachrichten bearbeiten. Gruppenleiter können außerdem Nachrichten anderer Mitglieder löschen; reguläre Mitglieder sehen die Optionen nur bei ihren eigenen Nachrichten.
+Du kannst nur deine eigenen Nachrichten bearbeiten. Gruppenleiter können außerdem Nachrichten anderer Mitglieder löschen; normale Mitglieder sehen die Optionen nur bei ihren eigenen Nachrichten.
 :::
 
-## Auf Nachrichten reagieren
+## Auf Nachrichten reagieren {#reacting-to-messages}
 
-Im Gruppenchat können Sie auf jede Nachricht mit einem Emoji reagieren:
+Im Gruppenchat kannst du auf jede Nachricht mit einem Emoji reagieren:
 
-1. Tippen Sie unter einer Nachricht auf die Schaltfläche **Reaktion hinzufügen**.
-2. Wählen Sie eines der sechs Emojis: 👍 ❤️ 😂 🎉 🙏 😮.
+1. Tippe unter einer Nachricht auf die Schaltfläche **Reaktion hinzufügen**.
+2. Wähle eines der sechs Emojis: 👍 ❤️ 😂 🎉 🙏 😮.
 
-Reaktionen erscheinen als kleine Marken unter der Nachricht, mit einer Zahl, wie viele Personen das jeweilige Emoji verwendet haben. Ihre eigene Reaktion ist hervorgehoben – tippen Sie auf die Marke (oder wählen Sie dasselbe Emoji erneut), um sie zu entfernen, oder wählen Sie ein anderes Emoji, um eine weitere hinzuzufügen. Reaktionen werden für alle im Chat sofort angezeigt.
+Reaktionen erscheinen als kleine Chips unter der Nachricht mit der Anzahl der Personen, die das jeweilige Emoji verwendet haben. Deine eigene Reaktion ist hervorgehoben -- tippe auf den Chip (oder wähle dasselbe Emoji erneut), um sie zu entfernen, oder wähle ein anderes Emoji, um eine weitere hinzuzufügen. Reaktionen werden für alle im Chat live angezeigt.
 
 :::tip
-Gruppenunterhaltungen finden im Chat jeder Gruppe statt – der frühere, gemeinsame [Zeitstrahl](../community/timeline.md) wurde eingestellt. Aktivitäten, die Ihre Aufmerksamkeit erfordern, erscheinen als Benachrichtigung unter dem **Glockensymbol** in der App-Leiste.
+Gruppenunterhaltungen finden im Chat jeder Gruppe statt -- der frühere kombinierte [Timeline](../community/timeline.md)-Feed wurde eingestellt. Aktivitäten, die deine Aufmerksamkeit brauchen, erscheinen als Benachrichtigung unter dem Symbol **Glocke** in der App-Leiste.
 :::
 
-## Funktionen für Leiter
+## Funktionen für Leiter {#leader-features}
 
-Wenn Sie Gruppenleiter sind, haben Sie im Gruppenchat zusätzliche Möglichkeiten:
+Bist du Gruppenleiter, hast du im Gruppenchat zusätzliche Möglichkeiten:
 
-- **Ankündigungen veröffentlichen** -- Tippen Sie auf **Alle Ankündigungen** (oder öffnen Sie den Chat, wenn nur Ankündigungen aktiviert sind) und veröffentlichen Sie Nachrichten, die alle Gruppenmitglieder lesen können.
-- **Nachrichten entfernen** -- Löschen Sie die Nachricht eines beliebigen Mitglieds über das Nachrichtenmenü (⋮).
-- **Diskussionen beitragen** -- Sie können sich auch wie jedes andere Mitglied an regulären Diskussionen beteiligen.
+- **Ankündigungen verfassen** -- Tippe auf **Alle Ankündigungen** (oder öffne den Chat, wenn nur Ankündigungen aktiviert sind) und schreibe Nachrichten, die alle Gruppenmitglieder lesen können.
+- **Nachrichten entfernen** -- Lösche die Nachricht eines beliebigen Mitglieds über das Nachrichtenmenü (⋮).
+- **Diskussionen führen** -- Du kannst dich wie jedes andere Mitglied an den regulären Diskussionen beteiligen.
 
 :::info
-Unterhaltungen sind auf jede Gruppe beschränkt. Nachrichten, die Sie in einer Gruppe veröffentlichen, erscheinen nicht in den Unterhaltungen einer anderen Gruppe.
+Unterhaltungen gehören immer zu einer bestimmten Gruppe. Nachrichten, die du in einer Gruppe schreibst, erscheinen nicht in den Unterhaltungen einer anderen Gruppe.
 :::

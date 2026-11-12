@@ -7,63 +7,65 @@ description: "Consulta el estado de tus inscripciones, paga un saldo pendiente, 
 
 <div class="article-intro">
 
-La página **Registrations** en el portal de miembros es tu base central para cada evento al que te has inscrito. Desde aquí puedes verificar tu estado, pagar un saldo pendiente, editar quiénes vienen y qué pediste, o cancelar una inscripción por completo.
+La página **Inscripciones** del portal de miembros es tu centro para cada evento en el que te has inscrito. Desde aquí puedes consultar tu estado, pagar un saldo pendiente, editar quién asiste y qué pediste, o cancelar una inscripción por completo.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Debes haber [iniciado sesión](../getting-started/logging-in.md) — las inscripciones de invitados no aparecen aquí
-- Necesitas al menos una inscripción a un evento. Consulta [Inscribirse a eventos](./registering.md).
+- Debes [iniciar sesión](../getting-started/logging-in.md); las inscripciones de invitados no aparecen aquí
+- Necesitas al menos una inscripción a un evento. Consulta [Inscribirse en eventos](./registering.md).
 
 </div>
 
-## Ver tus inscripciones
+## Ver tus inscripciones {#viewing-your-registrations}
 
-Abre **Registrations** en el portal de miembros. Cada inscripción aparece como una tarjeta que muestra:
+Abre la página **Yo** del portal de miembros y toca **Inscripciones** en la sección **Solicitudes e inscripciones**. Las inscripciones de tu hogar se dividen en **Próximas** y **Pasadas** (se muestran las tres pasadas más recientes; toca **Todas las pasadas** para ver el resto). Cada inscripción muestra:
 
-- El **título y la fecha del evento**
-- Una insignia de **estado** — **confirmed**, **pending**, **waitlisted** o **cancelled**
-- Los **miembros** que inscribiste
-- La línea de pago — ya sea el total pagado, o **Balance due** si todavía se debe dinero
+- El **título y la fecha del evento**, seguidos de los **miembros** que inscribiste
+- Una etiqueta de **estado** -- **Inscrito**, **Pendiente**, **En lista de espera** o **Cancelado**, o **Saldo pendiente** si aún se debe dinero
+- La línea de pago -- el monto pagado del total (por ejemplo, "Total: $25.00 / $25.00"), o "Saldo pendiente $25.00 de $25.00" con un botón **Completar pago**
 
-Si aún no te has inscrito a nada, verás "No registrations yet."
+Si todavía no te has inscrito en nada, verás "No te has inscrito en ningún evento. Vuelve a revisar pronto para ver los próximos eventos."
 
-## Completar un pago
+## Completar un pago {#completing-a-payment}
 
-Aparece un botón **Complete payment** en cualquier inscripción con un saldo pendiente — más comúnmente después de que se te promueve desde una lista de espera, o cuando una edición del personal cambió tu total.
+Aparece un botón **Completar pago** en cualquier inscripción con saldo pendiente; lo más común es después de que pasas de una lista de espera o cuando una edición del personal cambió tu total.
 
-1. Haz clic en **Complete payment**.
+1. Haz clic en **Completar pago**.
 2. Revisa el resumen del pedido, elige una tarjeta guardada o ingresa una nueva, y paga.
-3. Una vez pagado el saldo, la inscripción pasa a estar **confirmed**.
+3. Una vez pagado el saldo, la inscripción muestra **Inscrito**.
 
 :::tip
-Cuando se abre un cupo de lista de espera para ti, el correo electrónico que envía tu iglesia incluye un enlace directo a este paso de pago.
+Cuando se libera un lugar de lista de espera para ti, el correo que envía tu iglesia incluye un enlace directo a este paso de pago.
 :::
 
-## Editar una inscripción
+## Editar una inscripción {#editing-a-registration}
 
-Los planes cambian. Haz clic en **Edit** en una inscripción para abrir el diálogo **Edit Registration**, donde puedes:
+Los planes cambian. Haz clic en **Editar** en una inscripción para abrir el cuadro de diálogo **Editar inscripción**, donde puedes:
 
-- Actualizar tus **datos de contacto**
-- Cambiar el **nombre** y el **tipo de asistente** de cada miembro
-- Ajustar las **cantidades de selección** (complementos como camisetas o comidas)
+- Cambiar el **Nombre**, el **Apellido** y el **tipo de asistente** de cada miembro
+- Ajustar las **cantidades de selecciones** (complementos como camisetas o comidas)
 
-La capacidad sigue aplicándose cuando editas — si un tipo de asistente u opción se ha agotado desde entonces, se te pedirá que elijas otro. Guardar recalcula tu total; si el cambio deja un saldo pendiente, aparece un botón **Complete payment** en la tarjeta.
+Haz clic en **Guardar** para conservar los cambios, o en **Atrás** para cerrar sin guardar. Para cambiar tus datos de contacto, comunícate con la oficina de tu iglesia.
+
+La capacidad sigue aplicando al editar: si un tipo de asistente o una opción se agotó desde que te inscribiste, se te pedirá que elijas otra. Al guardar se recalcula tu total; si el cambio deja un saldo pendiente, aparece un botón **Completar pago** en la tarjeta.
 
 :::info
-Editar nunca cobra automáticamente a tu tarjeta. Si tu nuevo total es más alto, paga la diferencia con **Complete payment**; si es más bajo, contacta a tu iglesia sobre un reembolso — los reembolsos son gestionados por el personal de la iglesia a través de su proveedor de pagos.
+Editar nunca cobra automáticamente a tu tarjeta. Si tu nuevo total es mayor, paga la diferencia con **Completar pago**; si es menor, comunícate con tu iglesia para solicitar un reembolso. Los reembolsos los gestiona el personal de la iglesia a través de su proveedor de pagos.
 :::
 
-## Cancelar una inscripción
+## Cancelar una inscripción {#canceling-a-registration}
 
-1. Haz clic en **Cancel Registration** en la tarjeta.
-2. Confirma en el diálogo — la cancelación no se puede deshacer.
+1. Haz clic en **Cancelar inscripción** en la tarjeta.
+2. En el cuadro de diálogo **¿Cancelar inscripción?**, haz clic en **Cancelar inscripción** para confirmar; la cancelación no se puede deshacer. Haz clic en **Conservar** para dejarla como está.
 
-Tu cupo se libera de inmediato. Si el evento tiene lista de espera, la siguiente persona en la fila se promueve automáticamente. Cualquier pago que hayas realizado no se reembolsa automáticamente — contacta a la oficina de tu iglesia sobre los reembolsos.
+La inscripción permanece en tu lista marcada como **Cancelado**.
 
-## Artículos relacionados
+Tu lugar se libera de inmediato. Si el evento tiene lista de espera, la siguiente persona en la fila pasa automáticamente a inscrita. Cualquier pago que hayas realizado no se reembolsa automáticamente; comunícate con la oficina de tu iglesia para solicitar un reembolso.
 
-- [Inscribirse a eventos](./registering.md) -- El proceso de inscripción, incluidos el pago y las listas de espera
-- [Descripción general de eventos](./index.md) -- Explora los próximos eventos
+## Artículos relacionados {#related-articles}
+
+- [Inscribirse en eventos](./registering.md) -- El proceso de inscripción, incluidos el pago y las listas de espera
+- [Resumen de eventos](./index.md) -- Explora los próximos eventos

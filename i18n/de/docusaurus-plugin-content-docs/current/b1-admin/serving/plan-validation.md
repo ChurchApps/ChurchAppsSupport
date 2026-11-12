@@ -1,72 +1,88 @@
 ---
-title: "Planvalidierung & Benachrichtigungen"
-description: "Prüfe Dienstpläne in B1 Admin auf unbesetzte Positionen, Terminkonflikte und gesperrte Ehrenamtliche und benachrichtige dann dein gesamtes Team mit einem Klick per Push-Nachricht."
+title: "Planprüfung und Benachrichtigungen"
+description: "Prüfen Sie Dienstpläne in B1 Admin auf unbesetzte Positionen, Terminkonflikte und gesperrte Freiwillige und benachrichtigen Sie dann Ihr gesamtes Team mit einem Klick per Push-Nachricht."
 ---
 
-# Planvalidierung & Benachrichtigung von Ehrenamtlichen
+# Planprüfung und Benachrichtigungen für Freiwillige
 
 <div class="article-intro">
 
-B1 Admin prüft deine Pläne vor dem Sonntag automatisch auf Probleme: unbesetzte Positionen, Terminkonflikte und Ehrenamtliche, die den Termin gesperrt haben. Wenn alles in Ordnung ist, kannst du dein gesamtes Team mit einem einzigen Klick benachrichtigen.
+B1 Admin prüft Ihre Pläne vor dem Sonntag automatisch auf Probleme – unbesetzte Positionen, Terminkonflikte und Freiwillige, die den Termin gesperrt haben. Wenn alles in Ordnung ist, können Sie Ihr gesamtes Team mit einem einzigen Klick benachrichtigen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Erstelle einen [Dienstplan](./plans.md) und weise den Positionen Ehrenamtliche zu
-- Füge dem Plan [Gottesdienstzeiten](./plans.md) hinzu, damit die Konflikterkennung Überschneidungen prüfen kann
-- Stelle sicher, dass Ehrenamtliche die [B1 App installiert haben](../../b1-church/getting-started/installing-pwa.md), um Push-Benachrichtigungen zu erhalten
+- Erstellen Sie einen [Dienstplan](./plans.md) und weisen Sie Freiwillige Positionen zu
+- Fügen Sie dem Plan [Gottesdienstzeiten](./plans.md) hinzu, damit die Konfliktprüfung Überschneidungen erkennen kann
+- Stellen Sie sicher, dass Freiwillige die [B1-App installiert](../../b1-church/getting-started/installing-pwa.md) haben, um Push-Nachrichten zu erhalten
 
 </div>
 
-## Das Validierungsfeld
+## Der Bereich Prüfung {#the-validation-panel}
 
-Jeder Plan verfügt über ein **Validierungsfeld**, das während der Planerstellung automatisch läuft. Es prüft drei Dinge:
+Jeder Plan hat einen Bereich **Prüfung**, der während der Erstellung automatisch läuft. Öffnen Sie den Plan und klicken Sie auf **Dienst-Team verwalten**, um ihn neben den Positionen zu sehen. Die Planseite selbst zeigt unter **Dienst-Team** eine einzeilige Zusammenfassung (zum Beispiel „2 Konflikte · 3 nicht benachrichtigt“) mit einem Link **Prüfen** zum vollständigen Bereich. Positionen, für die noch Personen fehlen, werden ebenfalls auf der Planseite aufgelistet, daher zählt die Zusammenfassungszeile nur Konflikte und Freiwillige, die noch nicht benachrichtigt wurden.
 
-### Unbesetzte Positionen
-Wenn eine Position mehr Personen benötigt, als aktuell zugewiesen sind, listet das Validierungsfeld genau auf, was noch fehlt, zum Beispiel *„Tontechnik: 1 weitere Person benötigt.“* So siehst du auf einen Blick, ob dein Plan vor der Woche vollständig besetzt ist.
+Der Bereich prüft Folgendes:
 
-### Terminkonflikte
-Wenn einem Ehrenamtlichen zwei Positionen zugewiesen sind, die sich innerhalb desselben Plans zeitlich überschneiden, markiert das Validierungsfeld den Konflikt, zum Beispiel *„Jane Smith: Zeitkonflikt zwischen Gottesdienstleitung und Kinder-Check-in während des Sonntagsgottesdienstes.“* So werden Doppelbuchungen erkannt, bevor sie zu einem Problem am Sonntagmorgen werden.
+### Unbesetzte Positionen {#unfilled-positions}
+Benötigt eine Position mehr Personen, als aktuell zugewiesen sind, listet der Prüfbereich genau auf, was noch fehlt – zum Beispiel *„Tontechnik: 1 weitere Person benötigt.“* So sehen Sie auf einen Blick, ob Ihr Plan vollständig besetzt ist, bevor die Woche beginnt.
 
-### Sperrtermine
-Ehrenamtliche können in der B1 App Termine festlegen, an denen sie nicht verfügbar sind. Wenn jemand einem Plan zugewiesen wird, der in einen seiner Sperrtermine fällt, zeigt das Validierungsfeld den Konflikt automatisch an, damit du einen Ersatz finden kannst.
+### Terminkonflikte {#scheduling-conflicts}
+Ist ein Freiwilliger zwei Positionen im selben Plan zugewiesen, die sich zeitlich überschneiden, markiert der Prüfbereich den Konflikt – zum Beispiel *„Jane Smith: Zeitkonflikt zwischen Anbetungsleitung und Kinder-Check-in beim Sonntagsgottesdienst.“* So fallen Doppelbuchungen auf, bevor sie zu einem Problem am Sonntagmorgen werden.
 
-### Planübergreifende Konflikte
-Die Validierung prüft außerdem alle deine Pläne gleichzeitig. Wenn dieselbe Person in zwei verschiedenen Plänen eingeteilt ist, die sich zeitlich überschneiden, zum Beispiel ein Gottesdienst um 9 Uhr und einer um 10 Uhr, die beide bis 10:30 Uhr laufen, markiert B1 Admin diese Person als planübergreifend doppelt gebucht.
+### Sperrtermine {#blockout-dates}
+Freiwillige können in der B1-App Termine festlegen, an denen sie nicht verfügbar sind. Ist jemand einem Plan zugewiesen, der in einen seiner Sperrtermine fällt, zeigt der Prüfbereich den Konflikt automatisch an, damit Sie einen Ersatz finden können.
+
+### Konflikte über mehrere Pläne hinweg {#cross-plan-conflicts}
+Die Prüfung betrachtet außerdem alle Ihre Pläne gleichzeitig. Ist derselbe Freiwillige in zwei verschiedenen Plänen eingeplant, die sich zeitlich überschneiden – etwa ein Gottesdienst um 9 Uhr und einer um 10 Uhr, die beide bis 10:30 Uhr laufen –, markiert B1 Admin diese Person als doppelt gebucht über mehrere Pläne hinweg.
+
+### Planungspräferenzen {#scheduling-preferences}
+Hat ein Freiwilliger [Planungspräferenzen](./plans.md#scheduling-preferences), warnt Sie der Bereich, wenn eine Zuweisung dagegen verstößt: wenn er in diesem Monat häufiger eingeplant ist als seine **Maximale Anzahl pro Monat**, wenn keine der Zeiten des Plans zu seinen **Bevorzugten Gottesdienstzeiten** passt oder wenn er gebeten hat, nicht am selben Tag wie sein Haushalt zu dienen, und ein Haushaltsmitglied ebenfalls eingeplant ist.
+
+Stimmt alles, lautet die Anzeige im Bereich **Plan ist gültig.**
 
 :::tip
-Du musst nichts tun, damit die Validierung läuft. Sie aktualisiert sich automatisch, sobald du eine Zuweisung hinzufügst oder änderst. Behalte das Feld einfach im Blick, während du den Plan erstellst.
+Sie müssen nichts tun, um die Prüfung auszuführen – sie aktualisiert sich automatisch, sobald Sie eine Zuweisung hinzufügen oder ändern. Behalten Sie den Bereich einfach im Blick, während Sie den Plan erstellen.
 :::
 
-## Ehrenamtliche benachrichtigen
+## Freiwillige benachrichtigen {#notifying-volunteers}
 
-Sobald dein Plan steht, kannst du alle zugewiesenen Ehrenamtlichen direkt aus dem Validierungsfeld gleichzeitig benachrichtigen.
+Sobald Ihr Plan steht, können Sie alle zugewiesenen Freiwilligen auf einmal direkt aus dem Prüfbereich benachrichtigen.
 
-1. Öffne den Plan und scrolle zum **Validierungsfeld**
-2. Wenn es noch nicht benachrichtigte Ehrenamtliche gibt, siehst du einen Link mit der Anzahl, die noch benachrichtigt werden müssen (z. B. *„8 Ehrenamtliche benachrichtigen“*)
-3. Klicke auf den Link, um Push-Nachrichten an alle zu senden, die noch keine Benachrichtigung erhalten haben
-4. Ehrenamtliche erhalten auf ihrem Smartphone eine Benachrichtigung, dass sie eingeplant wurden, und werden gebeten, ihre Zuweisung zu bestätigen
+1. Öffnen Sie den Plan und klicken Sie auf **Dienst-Team verwalten** (oder auf **Prüfen** in der Zusammenfassungszeile des Plans), um den Bereich **Prüfung** zu sehen.
+2. Gibt es Freiwillige, die noch nicht benachrichtigt wurden, sehen Sie einen Link mit der Anzahl, die benachrichtigt werden müssen (z. B. *„8 Freiwillige benachrichtigen“*). Sobald alle benachrichtigt wurden, lautet die Anzeige im Bereich **Alle Freiwilligen benachrichtigt.**
+3. Klicken Sie auf den Link, um Push-Nachrichten an alle zu senden, die noch nicht benachrichtigt wurden.
+4. Freiwillige erhalten eine Benachrichtigung auf ihrem Telefon, die ihnen mitteilt, dass sie eingeplant wurden, und sie auffordert, ihre Zuweisung zu bestätigen.
 
 :::info
-Es werden nur Ehrenamtliche berücksichtigt, die noch keine Benachrichtigung erhalten haben. Wenn du später jemanden zum Plan hinzufügst, erscheint der Link erneut, sodass du die neue Person benachrichtigen kannst, ohne das übrige Team erneut zu benachrichtigen.
+Es werden nur Freiwillige berücksichtigt, die noch nicht benachrichtigt wurden. Fügen Sie später jemanden zum Plan hinzu, erscheint der Link erneut, sodass Sie nur die neue Person benachrichtigen können, ohne das übrige Team erneut anzuschreiben.
 :::
 
-### Pläne mit einem Bestätigungsablauf
+### Einen vorläufig eingeplanten Plan veröffentlichen {#publishing-a-penciled-in-plan}
 
-Wenn in den Einstellungen des Plans ein [Bestätigungsablauf](./workflows.md#serving-assignment-confirmations) hinterlegt ist, zeigt das Feld den Hinweis *„Neue Anfragen verwenden den Bestätigungsablauf. App-Benachrichtigungen bleiben aktiviert. Nachfassaktionen enden, sobald jede Anfrage angenommen oder abgelehnt wurde.“* In diesem Fall gilt:
+Ist der Plan [vorläufig eingeplant](./plans.md#plan-settings), können Freiwillige ihre Zuweisungen noch nicht sehen. Der Bereich zeigt dann *„Vorläufig eingeplant – Freiwillige können diese Zuweisungen noch nicht sehen.“* und statt des Benachrichtigungslinks eine Schaltfläche:
 
-- Der Benachrichtigungslink zählt nur Ehrenamtliche, die noch nicht benachrichtigt wurden und noch nicht geantwortet haben.
-- Ein Klick darauf sendet die übliche In-App-Benachrichtigung und erstellt pro Anfrage eine Karte auf dem Board des Ablaufs. Der Ablauf versendet dann die E-Mail- und Textnachrichten zur Nachfassung und übergibt die Anfrage bei Bedarf an eine Person, die anrufen muss.
-- Der Plan muss veröffentlicht sein (nicht nur als Entwurf vorgemerkt), und der Ablauf muss aktiv sein. Andernfalls zeigt das Feld den Hinweis *„Anfragen konnten nicht versendet werden. Prüfe, ob der ausgewählte Ablauf aktiv und der Plan veröffentlicht ist, und versuche es dann erneut.“*
+- **Plan veröffentlichen** macht die Zuweisungen sichtbar.
+- **Veröffentlichen und benachrichtigen** (angezeigt, wenn einige Freiwillige noch nicht benachrichtigt wurden, z. B. *„8 Freiwillige veröffentlichen und benachrichtigen“*) macht die Zuweisungen sichtbar und benachrichtigt diese Freiwilligen sofort.
+
+Bestätigen Sie im Dialogfeld, um zu veröffentlichen.
+
+### Pläne mit Bestätigungs-Workflow {#plans-with-a-confirmation-workflow}
+
+Nennen die Einstellungen des Plans einen [Bestätigungs-Workflow](./workflows.md#serving-assignment-confirmations), zeigt der Bereich *„Neue Anfragen verwenden den Bestätigungs-Workflow. App-Benachrichtigungen bleiben aktiviert. Nachfassen endet, sobald jede Anfrage angenommen oder abgelehnt wird.“* In diesem Fall gilt:
+
+- Der Benachrichtigungslink zählt nur Freiwillige, die noch nicht benachrichtigt wurden und noch nicht geantwortet haben.
+- Ein Klick darauf sendet die übliche Benachrichtigung in der App und legt pro Anfrage eine Karte auf der Tafel des Workflows an. Der Workflow übernimmt dann das Nachfassen per E-Mail und SMS und übergibt die Anfrage bei Bedarf an jemanden, der anrufen soll.
+- Der Plan muss veröffentlicht sein (nicht vorläufig eingeplant), und der Workflow muss aktiv sein. Andernfalls zeigt der Bereich *„Anfragen konnten nicht versendet werden. Prüfen Sie, ob der gewählte Workflow aktiv und der Plan veröffentlicht ist, und versuchen Sie es dann erneut.“*
 
 :::warning
-Damit Ehrenamtliche Push-Benachrichtigungen erhalten, muss die B1 App auf ihrem Startbildschirm installiert sein und Benachrichtigungen müssen aktiviert sein. Anleitungen zur Einrichtung findest du unter [Installation als App (PWA)](../../b1-church/getting-started/installing-pwa.md).
+Damit Freiwillige Push-Nachrichten erhalten, muss die B1-App auf ihrem Startbildschirm installiert und die Benachrichtigungen aktiviert sein. Anleitungen zur Einrichtung finden Sie unter [Installation als App (PWA)](../../b1-church/getting-started/installing-pwa.md).
 :::
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
 - [Dienstpläne](./plans.md)
-- [Abläufe](./workflows.md)
-- [Installation der B1.church PWA](/docs/b1-church/getting-started/installing-pwa)
+- [Workflows](./workflows.md)
+- [Installieren der B1.church-PWA](/docs/b1-church/getting-started/installing-pwa)

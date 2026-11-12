@@ -1,44 +1,44 @@
 ---
-title: "Zusagen zu Veranstaltungen"
-description: "Antworten Sie auf Gruppentermine im Mitgliederportal mit Dabei, Vielleicht oder Nicht dabei und sehen Sie, wer sonst kommt. Leitende sehen alle Antworten."
+title: "Veranstaltungs-RSVPs"
+description: "Antworte im B1.church-Mitgliederportal mit Zusage, Vielleicht oder Absage auf Gruppenveranstaltungen und sieh, wie viele andere kommen. Leiter können die Antworten ebenfalls einsehen."
 ---
 
-# Zusagen zu Veranstaltungen
+# Veranstaltungs-RSVPs
 
 <div class="article-intro">
 
-Bei Gruppenveranstaltungen können Zusagen eingeholt werden, damit die Leitung weiß, wer kommt. Auf der Seite und im Kalender Ihrer Gruppe hat jede kommende Veranstaltung die Schaltflächen **Dabei**, **Vielleicht** und **Nicht dabei**. Antworten Sie mit einem Tipp, ändern Sie Ihre Meinung jederzeit und sehen Sie auf einen Blick, wie viele andere zusagen.
+Gruppenveranstaltungen können RSVPs sammeln, damit Leiter wissen, wer kommt. Auf der Seite und im Kalender deiner Gruppe hat jede kommende Veranstaltung die Schaltflächen **Dabei**, **Vielleicht** und **Nicht dabei** -- antworte mit einem Tippen, ändere deine Meinung jederzeit und sieh auf einen Blick, wie viele andere dabei sind.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie müssen [angemeldet](../getting-started/logging-in.md) und Mitglied der Gruppe sein
-- Für die Veranstaltung müssen Zusagen erlaubt sein (sie sind standardmäßig aktiviert; Leitungen können sie für jede Veranstaltung einzeln deaktivieren)
+- Du musst [angemeldet](../getting-started/logging-in.md) und Mitglied der Gruppe sein
+- Für die Veranstaltung müssen RSVPs erlaubt sein (sie sind standardmäßig aktiviert; Leiter können sie für jede Veranstaltung einzeln ausschalten)
 
 </div>
 
-## Auf eine Veranstaltung antworten
+## Auf eine Veranstaltung antworten {#responding-to-an-event}
 
-1. Öffnen Sie Ihre Gruppe im Mitgliederportal. Die nächste Veranstaltung der Gruppe erscheint im Abschnitt **Nächste Veranstaltung**. Für andere Veranstaltungen tippen Sie auf **Alle Veranstaltungen**: In der Ansicht **Kalender** tippen Sie auf einen Tag, um dessen Veranstaltungen zu sehen, oder wechseln Sie zur **Liste**, um alle kommenden Veranstaltungen dieses Monats auf einmal zu sehen.
+1. Öffne deine Gruppe im Mitgliederportal. Die nächste Veranstaltung der Gruppe erscheint im Abschnitt **Nächste Veranstaltung**. Für weitere Veranstaltungen tippe auf **Alle Veranstaltungen**: In der Ansicht **Kalender** tippst du auf einen Tag, um seine Veranstaltungen zu sehen, oder du wechselst zu **Liste**, um alle kommenden Veranstaltungen dieses Monats auf einmal zu sehen.
 2. Jede kommende Veranstaltung zeigt drei Schaltflächen: **Dabei**, **Vielleicht** und **Nicht dabei**.
-3. Tippen Sie auf Ihre Antwort. Ihre Wahl wird hervorgehoben, und jede Schaltfläche zeigt live an, wie viele Personen diese Antwort gegeben haben.
-4. Tippen Sie erneut auf Ihre markierte Antwort, um sie zurückzunehmen, oder auf eine andere Schaltfläche, um Ihre Antwort zu ändern.
+3. Tippe auf deine Antwort. Deine Wahl wird hervorgehoben, und jede Schaltfläche zeigt live, wie viele Personen diese Antwort gegeben haben.
+4. Tippe erneut auf deine hervorgehobene Antwort, um sie zu entfernen, oder tippe auf eine andere Schaltfläche, um deine Antwort zu ändern.
 
-Ihre Zusage gilt für genau diesen Termin. Bei einem wöchentlichen Treffen antworten Sie also für jede Woche separat.
+Deine RSVP gilt für diesen konkreten Termin -- bei einem wöchentlichen Treffen antwortest du für jede Woche separat. Sobald eine Veranstaltung vorbei ist, verschwinden ihre Schaltflächen; deine Antwort wird weiterhin als Abzeichen neben der Veranstaltung angezeigt.
 
-## Für Gruppenleitungen
+## Für Gruppenleiter {#for-group-leaders}
 
-- **Antworten einsehen** -- Leitungen sehen bei jeder Veranstaltung im Gruppenkalender (**Alle Veranstaltungen**) einen Link **Antworten anzeigen**. Er öffnet das Blatt **Antworten**, das alle nach ihrer Antwort auflistet: Dabei, Vielleicht und Nicht dabei. Hat noch niemand geantwortet, steht dort „Noch keine Antworten.“
-- **Zusagen ein- oder ausschalten** -- Beim Erstellen oder Bearbeiten einer Veranstaltung verwenden Sie den Schalter **Zusagen erlauben**. Veranstaltungen, bei denen Zusagen ausgeschaltet sind, zeigen keine Antwortschaltflächen. Mitarbeitende, die Veranstaltungen in B1 Admin in großer Zahl anlegen, haben dieselbe Option. Siehe [Gruppenkalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
+- **Antworten einsehen** -- Leiter sehen bei jeder Veranstaltung im Gruppenkalender (**Alle Veranstaltungen**) einen Link **Antworten anzeigen**, auch bei bereits beendeten Veranstaltungen. Er öffnet das Blatt **Antworten**, das alle nach Antwort auflistet -- Dabei, Vielleicht und Nicht dabei. Hat noch niemand geantwortet, steht dort "Noch keine Antworten."
+- **RSVPs ein- oder ausschalten** -- Verwende beim Erstellen oder Bearbeiten einer Veranstaltung den Schalter **RSVPs erlauben**. Veranstaltungen mit ausgeschalteten RSVPs zeigen keine Antwortschaltflächen. Mitarbeiter, die Veranstaltungen gesammelt im B1 Admin anlegen, haben dieselbe Option -- siehe [Gruppenkalender](../../b1-admin/groups/group-calendar.md#event-rsvps).
 
 :::tip
-Zusagen sind eine einfache Teilnehmerzählung. Wenn Ihre Veranstaltung Anmeldedaten, eine Begrenzung der Teilnehmerzahl oder Zahlungen benötigt, verwenden Sie stattdessen die [Veranstaltungsanmeldung](../events/registering.md).
+RSVPs sind eine einfache Teilnehmerzählung. Braucht deine Veranstaltung Anmeldedaten, Kapazitätsverwaltung oder Zahlung, nutze stattdessen die [Veranstaltungsanmeldung](../events/registering.md).
 :::
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
 - [Gruppendetails](./group-details.md) -- Alles auf der Detailseite einer Gruppe
-- [Gruppenkalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Wie Mitarbeitende und Leitungen Gruppenveranstaltungen und Zusagen verwalten
-- [Anmeldung zu Veranstaltungen](../events/registering.md) -- Vollständige Veranstaltungsanmeldung mit Teilnehmerbegrenzung und Zahlungen
+- [Gruppenkalender (B1 Admin)](../../b1-admin/groups/group-calendar.md) -- Wie Mitarbeiter und Leiter Gruppenveranstaltungen und RSVPs verwalten
+- [Für Veranstaltungen anmelden](../events/registering.md) -- Vollständige Veranstaltungsanmeldung mit Kapazität und Zahlungen

@@ -1,54 +1,60 @@
 ---
 title: "Saúde dos Grupos"
-description: "Verifique a saúde dos grupos no B1 Admin com uma tabela de 90 dias de membros, entradas, saídas, rotatividade e presença média."
+description: "Verifique a saúde dos grupos no B1 Admin com uma tabela de 90 dias de membros, entradas, saídas, desligamento e presença média, para identificar os grupos que precisam de acompanhamento."
 ---
 
 # Saúde dos Grupos
 
 <div class="article-intro">
 
-O painel Saúde dos Grupos oferece uma visão geral de como todos os seus grupos estão indo -- tendências de associação, médias de presença e crescimento ou redução nos últimos 90 dias -- tudo em uma única tabela classificável.
+O painel Saúde dos Grupos oferece uma visão geral de como todos os seus grupos estão -- tendências de participação, médias de presença e crescimento ou perda nos últimos 90 dias -- tudo em uma única tabela ordenável.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você precisa de pelo menos alguns grupos com membros para ver dados significativos. Consulte [Criando Grupos](./creating-groups.md).
-- Os dados de presença são retirados de sessões registradas. Consulte a seção [Presença](../attendance/index.md).
+- Você precisa de pelo menos alguns grupos com membros para ver dados relevantes. Veja [Criando Grupos](./creating-groups.md).
+- Os dados de presença vêm das sessões registradas. Veja a seção [Presença](../attendance/index.md).
 
 </div>
 
-## Abrindo Saúde dos Grupos
+## Abrindo a Saúde dos Grupos {#opening-groups-health}
 
-Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, clique em **Grupos** e então clique no botão **Saúde do Grupo** no cabeçalho da página. O painel carrega uma tabela com uma linha por grupo.
+No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Pessoas**, clique em **Grupos** e, em seguida, clique no botão **Saúde dos grupos** no cabeçalho da página. O painel carrega uma tabela com uma linha por grupo.
 
-## Colunas
+## Colunas {#columns}
 
 | Coluna | O que mostra |
 |--------|--------------|
-| **Nome** | O nome do grupo, vinculado à página de detalhes do grupo |
+| **Nome** | O nome do grupo, com link para a página de detalhes do grupo |
 | **Categoria** | A categoria do grupo |
-| **Membros** | Contagem de membros ativos atuais |
-| **Ingressou (90d)** | Membros que ingressaram nos últimos 90 dias |
-| **Saiu (90d)** | Membros que saíram nos últimos 90 dias |
-| **Taxa de Redução (90d)** | Taxa de redução líquida como percentual nos últimos 90 dias |
-| **Presença Média** | Contagem média de presença por sessão de presença |
+| **Membros** | Quantidade atual de membros ativos |
+| **Entradas (90d)** | Membros que entraram nos últimos 90 dias |
+| **Saídas (90d)** | Membros que saíram nos últimos 90 dias |
+| **Desligamento (90d)** | Taxa líquida de desligamento, em percentual, nos últimos 90 dias |
+| **Presença média** | Média de pessoas por sessão de presença, ou "-" se nenhuma presença tiver sido registrada |
+| **Idade média** | Idade média dos membros com data de nascimento cadastrada |
+| **Mulheres** / **Homens** | Quantos membros são mulheres e quantos são homens |
 
-Clique em qualquer cabeçalho de coluna para classificar a tabela por essa coluna. Clique novamente para inverter a direção da classificação.
+A tabela começa ordenada pelo nome. Clique em qualquer cabeçalho de coluna para ordenar a tabela por essa coluna. Clique novamente para inverter a ordem. Clique em **Grupos** no topo da página para voltar à lista de Grupos.
 
-## Usando Dados de Saúde
+## Saúde de Um Grupo {#one-groups-health}
 
-- **Alta redução + baixas inscrições** -- um grupo que está encolhendo e não está substituindo membros perdidos. Vale a pena uma conversa com o líder do grupo.
-- **Altos ingressos + baixa presença** -- as pessoas estão se inscrevendo mas não comparecendo. Considere acompanhamento de engajamento.
-- **Alta presença média** -- um grupo saudável e ativo. Potencial modelo para outros grupos.
+A página de cada grupo tem uma seção **Saúde** com um resumo de uma linha (membros, entradas e saídas nos últimos 90 dias). Clique em **Ver saúde** para abrir a visão de saúde do grupo: os números de **Membros**, **Entradas (90d)**, **Saídas (90d)** e **Desligamento (90d)**, um gráfico de **Mudanças na composição (12 meses)**, um gráfico de **Tendência de presença** para os grupos que controlam a presença, e gráficos de **Idade** e **Gênero** dos membros.
+
+## Usando os Dados de Saúde {#using-health-data}
+
+- **Desligamento alto + poucas entradas** — um grupo que está encolhendo e não está repondo os membros perdidos. Vale uma conversa com o líder do grupo.
+- **Muitas entradas + presença baixa** — as pessoas estão se inscrevendo, mas não comparecem. Considere um acompanhamento para aumentar o engajamento.
+- **Presença média alta** — um grupo saudável e ativo. Pode servir de modelo para outros grupos.
 
 :::tip
-Clicar em um nome de grupo leva você diretamente à página de detalhes do grupo onde você pode revisar membros individuais, registros de presença e eventos do calendário.
+Clicar no nome de um grupo leva você diretamente à página de detalhes do grupo, onde pode analisar os membros individuais, os registros de presença e os eventos do calendário.
 :::
 
-## Artigos Relacionados
+## Artigos Relacionados {#related-articles}
 
-- [Criando Grupos](./creating-groups.md) -- configurar grupos
-- [Membros do Grupo](./group-members.md) -- gerenciar associação do grupo
-- [Rastreando Presença](../attendance/tracking-attendance.md) -- registrar sessões de presença que alimentam este painel
+- [Criando Grupos](./creating-groups.md) — configure os grupos
+- [Membros do Grupo](./group-members.md) — gerencie a participação nos grupos
+- [Acompanhamento de Presença](../attendance/tracking-attendance.md) — registre as sessões de presença que alimentam este painel

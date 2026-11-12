@@ -20,7 +20,7 @@ Depois de criar sua conta e cadastrar sua igreja, há algumas etapas importantes
 
 </div>
 
-## Etapa 1: Configure as Informações da Sua Igreja
+## Etapa 1: Configure as Informações da Sua Igreja {#step-1-configure-your-church-information}
 
 1. Abra o [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin), expanda **Configurações** e clique em **Configurações**.
 2. Na seção **Informações da Igreja**, clique em **Editar**.

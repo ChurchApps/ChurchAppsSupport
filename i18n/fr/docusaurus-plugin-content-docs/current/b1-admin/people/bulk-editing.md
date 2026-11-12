@@ -1,202 +1,175 @@
-﻿---
-title: "Modification en masse des personnes"
+---
+title: "Modifier des personnes en masse"
+description: "Mettez à jour en une seule fois le statut d'appartenance, la situation matrimoniale, le genre, le retrait de l'annuaire, le campus, les champs personnalisés Oui/Non ou les groupes de nombreuses personnes dans B1 Admin."
 ---
 
-# Modification en masse des personnes
+# Modifier des personnes en masse
 
 <div class="article-intro">
-La modification en masse vous permet de mettre à jour plusieurs personnes à la fois, ce qui vous fait gagner du temps lorsque vous appliquez le même changement à de nombreuses personnes. Vous pouvez modifier le statut d'adhésion, le statut matrimonial, le genre, les préférences de désinscription et l'appartenance aux groupes en une seule opération.
+La modification en masse vous permet de mettre à jour plusieurs personnes à la fois, ce qui vous fait gagner du temps lorsque vous appliquez la même modification à de nombreuses personnes. Vous pouvez modifier en une seule opération le statut d'appartenance, la situation matrimoniale, le genre, le retrait de l'annuaire, le campus, les champs personnalisés Oui/Non, les appartenances aux groupes et les flux de travail, ou supprimer des personnes.
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin de la permission de gérer les données des personnes. Voir [Roles & Permissions](./roles-permissions.md) pour plus de détails.
-- Vous devez déjà avoir ajouté ou importé les personnes que vous voulez modifier. Voir [Adding People](./adding-people.md) si nécessaire.
+- Vous devez disposer de l'autorisation de gérer les données des personnes. Consultez [Rôles et autorisations](./roles-permissions.md) pour plus de détails.
+- Vous devez avoir déjà ajouté ou importé les personnes que vous souhaitez modifier. Consultez [Ajouter des personnes](./adding-people.md) si nécessaire.
 </div>
 
-## Sélectionner les personnes pour la modification en masse
+## Sélectionner les personnes à modifier en masse {#selecting-people-for-bulk-editing}
 
-1. Accédez à **People** dans B1 Admin
-2. Utilisez les outils de recherche ou de filtre pour trouver les personnes que vous voulez mettre à jour
-3. Cochez les cases pour sélectionner les personnes
-   - Dans la vue **Households**, cocher un ménage sélectionne toutes les personnes qui le composent
-   - Dans la vue **Table** (à basculer avec le sélecteur **View as**), vous pouvez sélectionner les personnes une par une
-   - Vous pouvez aussi utiliser la case au-dessus de la liste pour sélectionner toutes les personnes visibles
-4. Dès que vous avez sélectionné au moins une personne, la barre au-dessus de la liste indique combien de personnes sont sélectionnées, avec **Clear Selection** et un bouton **Actions**
+1. Accédez à **Personnes** dans B1 Admin
+2. Utilisez la recherche ou les outils de filtrage pour trouver les personnes à mettre à jour
+3. Cochez les cases pour sélectionner des personnes
+   - Dans la vue **Foyers**, cocher un foyer sélectionne toutes les personnes qui le composent
+   - Dans la vue **Tableau** (à changer avec le bouton **Afficher sous forme**), vous pouvez sélectionner les personnes une à une
+   - Ou utilisez la case au-dessus de la liste pour sélectionner toutes les personnes visibles
+4. Dès que vous avez sélectionné au moins une personne, la barre au-dessus de la liste indique le nombre de personnes sélectionnées, avec **Effacer la sélection** et un bouton **Actions**
 
 :::tip
-Si vous devez mettre à jour un grand groupe de personnes selon des critères précis, utilisez la fonctionnalité [AI Search](./ai-search.md) ou les filtres pour affiner d'abord votre liste, puis sélectionnez toutes les personnes correspondantes.
+Si vous devez mettre à jour un grand groupe de personnes selon des critères précis, utilisez la fonctionnalité [Recherche IA](./ai-search.md) ou des filtres pour réduire d'abord votre liste, puis sélectionnez toutes les personnes correspondantes.
 :::
 
-## Actions en masse disponibles
+## Actions de masse disponibles {#available-bulk-actions}
 
-Le menu **Actions** propose plusieurs options :
+Le menu **Actions** propose les options ci-dessous. Chacune ouvre une petite boîte de dialogue qui indique combien de personnes seront modifiées ; choisissez une valeur et cliquez sur **Appliquer**. La nouvelle valeur remplace celle que chaque personne sélectionnée avait auparavant. Une fois l'opération terminée, un message en bas de page confirme le nombre de personnes mises à jour.
 
-### Mettre à jour le statut d'adhésion
+### Définir le statut d'appartenance {#set-membership-status}
 
-Mettez à jour le statut d'adhésion de toutes les personnes sélectionnées :
+1. Cliquez sur **Actions** → **Définir le statut d'appartenance**
+2. Choisissez le nouveau **Statut d'appartenance** :
+   - **Visiteur** -- Personnes venues pour la première fois ou occasionnellement
+   - **Invité** -- Invités, comme les familles inscrites sur une borne de pointage
+   - **Participant régulier** -- Participants assidus qui ne sont pas membres
+   - **Membre** -- Membres officiels de l'église
+   - **Personnel** -- Membres du personnel de l'église
+   - **Inactif** -- Personnes qui ne fréquentent plus l'église
+   - **Décédé** -- Personnes décédées
+3. Cliquez sur **Appliquer**
 
-1. Cliquez sur **Actions** → **Set Membership Status**
-2. Choisissez le nouveau statut :
-   - **Visitor** -- Visiteurs occasionnels ou de première fois
-   - **Guest** -- Invités, comme les familles enregistrées sur une borne d'enregistrement
-   - **Regular Attendee** -- Participants réguliers qui ne sont pas membres
-   - **Member** -- Membres officiels de l'église
-   - **Staff** -- Membres du personnel de l'église
-   - **Inactive** -- Personnes qui ne fréquentent plus l'église
-   - **Deceased** -- Personnes décédées
-3. Choisissez le mode de mise à jour :
-   - **Overwrite all** -- Remplacer le statut actuel de toutes les personnes sélectionnées
-   - **Only update empty** -- Définir le statut uniquement pour les personnes qui n'en ont pas
-4. Cliquez sur **Update**
+### Définir la situation matrimoniale {#set-marital-status}
 
-### Mettre à jour le statut matrimonial
+1. Cliquez sur **Actions** → **Définir la situation matrimoniale**
+2. Choisissez **Inconnue**, **Célibataire**, **Marié(e)**, **Divorcé(e)** ou **Veuf/Veuve**
+3. Cliquez sur **Appliquer**
 
-Mettez à jour le statut matrimonial en masse :
+### Définir le genre {#set-gender}
 
-1. Cliquez sur **Actions** → **Set Marital Status**
-2. Sélectionnez le nouveau statut :
-   - **Unknown**
-   - **Single**
-   - **Married**
-   - **Divorced**
-   - **Widowed**
-3. Choisissez si vous voulez écraser les valeurs existantes ou ne mettre à jour que les champs vides
-4. Cliquez sur **Update**
+1. Cliquez sur **Actions** → **Définir le genre**
+2. Choisissez **Non précisé**, **Homme** ou **Femme**
+3. Cliquez sur **Appliquer**
 
-### Mettre à jour le genre
+### Définir le retrait de l'annuaire {#set-directory-opt-out}
 
-Mettez à jour les informations de genre pour plusieurs personnes :
+Le retrait de l'annuaire détermine si les personnes apparaissent dans l'annuaire des membres -- l'[annuaire imprimé](./print-directory.md) et l'annuaire des membres de l'application B1. Il s'agit du même paramètre que **Me masquer de l'annuaire des membres** sur la fiche d'une personne.
 
-1. Cliquez sur **Actions** → **Set Gender**
-2. Sélectionnez la valeur :
-   - **Unspecified**
-   - **Male**
-   - **Female**
-3. Choisissez le mode de mise à jour (tout remplacer ou seulement les champs vides)
-4. Cliquez sur **Update**
-
-### Mettre à jour le statut de désinscription
-
-Contrôlez si les personnes ont choisi de ne pas recevoir de communications :
-
-1. Cliquez sur **Actions** → **Set Directory Opt-Out**
-2. Choisissez :
-   - **No** -- Autoriser les communications (retirer la désinscription)
-   - **Yes** -- Bloquer les communications (définir la désinscription)
-3. Choisissez le mode de mise à jour
-4. Cliquez sur **Update**
+1. Cliquez sur **Actions** → **Définir le retrait de l'annuaire**
+2. Choisissez **Retiré Oui** pour masquer les personnes sélectionnées de l'annuaire, ou **Retiré Non** pour les afficher à nouveau
+3. Cliquez sur **Appliquer**
 
 :::warning
-Soyez prudent lorsque vous modifiez le statut de désinscription. Les personnes qui se sont explicitement désinscrites ne doivent pas recevoir de communications sans nouveau consentement de leur part.
+Les personnes qui ont choisi de se masquer de l'annuaire doivent rester masquées, sauf si elles demandent à y figurer à nouveau.
 :::
 
-### Définir un champ personnalisé
+### Définir le campus {#set-campus}
 
-Définissez une valeur Oui/Non pour un [champ personnalisé](../settings/custom-fields.md) pour toutes les personnes sélectionnées en une seule fois :
+Cette option n'apparaît que si votre église a configuré des [campus](../settings/campuses.md).
 
-1. Cliquez sur **Actions** → **Set Custom Field**.
-2. Choisissez le champ personnalisé Oui/Non que vous voulez définir.
-3. Choisissez la valeur (**Yes** ou **No**) à appliquer.
-4. Cliquez sur **Update**.
+1. Cliquez sur **Actions** → **Définir le campus**
+2. Choisissez le campus
+3. Cliquez sur **Appliquer**
+
+### Définir un champ personnalisé {#set-custom-field}
+
+Définissez en une fois la valeur Oui/Non d'un [champ personnalisé](../settings/custom-fields.md) pour toutes les personnes sélectionnées :
+
+1. Cliquez sur **Actions** → **Définir un champ personnalisé**.
+2. Choisissez le **Champ personnalisé** Oui/Non que vous souhaitez définir.
+3. Choisissez la **Valeur** (**Oui** ou **Non**) à appliquer.
+4. Cliquez sur **Appliquer**.
 
 :::info
-Seuls les champs personnalisés Oui/Non sont disponibles pour cette action en masse. Pour définir d'autres types de champs, modifiez chaque personne individuellement.
+Seuls les champs personnalisés Oui/Non sont disponibles pour cette action de masse. Pour définir d'autres types de champs, modifiez chaque personne individuellement. Si votre église ne dispose d'aucun champ personnalisé Oui/Non, la boîte de dialogue l'indique.
 :::
 
-### Ajouter à un groupe
+### Ajouter à un groupe {#add-to-group}
 
-Ajoutez toutes les personnes sélectionnées à un ou plusieurs groupes :
+1. Cliquez sur **Actions** → **Ajouter à un groupe**
+2. Choisissez le **Groupe** auquel ajouter les personnes. Pour les placer plutôt dans un tout nouveau groupe, cochez **Créer un nouveau groupe** et saisissez un **Nom du nouveau groupe**.
+3. Cliquez sur **Appliquer**
 
-1. Cliquez sur **Actions** → **Add to Group**
-2. Recherchez et sélectionnez le ou les groupes auxquels ajouter les personnes
-3. Vous pouvez sélectionner plusieurs groupes pour y ajouter les personnes en une fois
-4. Cliquez sur **Add to Groups**
+Chaque personne est ajoutée comme membre ordinaire du groupe. Vous pourrez ensuite promouvoir certaines personnes au rang de responsable de groupe depuis la page [Membres du groupe](../groups/group-members.md). Pour ajouter des personnes à plusieurs groupes, répétez l'opération pour chaque groupe.
 
-Chaque personne est ajoutée en tant que membre ordinaire du ou des groupes sélectionnés. Vous pourrez ensuite promouvoir certaines personnes en tant que leaders de groupe depuis la page [Group Members](../groups/group-members.md).
+### Retirer d'un groupe {#remove-from-group}
 
-### Retirer d'un groupe
-
-Retirez toutes les personnes sélectionnées d'un ou plusieurs groupes :
-
-1. Cliquez sur **Actions** → **Remove from Group**
-2. Recherchez et sélectionnez le ou les groupes dont retirer les personnes
-3. Vous pouvez sélectionner plusieurs groupes
-4. Cliquez sur **Remove from Groups**
+1. Cliquez sur **Actions** → **Retirer d'un groupe**
+2. Choisissez le **Groupe** duquel retirer les personnes
+3. Cliquez sur **Appliquer**
 
 :::info
-Cette action retire uniquement les personnes des groupes indiqués. Elle ne supprime pas leurs fiches de personne.
+Cette action se limite à retirer les personnes du groupe. Elle ne supprime pas leurs fiches de personnes.
 :::
 
-### Supprimer des personnes
+### Ajouter à un flux de travail {#add-to-workflow}
 
-Supprimez définitivement les personnes sélectionnées de la base de données de votre église :
+Ajoutez les personnes sélectionnées à un [flux de travail](../serving/workflows.md) sous forme de fiches :
 
-1. Cliquez sur **Actions** → **Delete**
-2. La boîte de dialogue **Delete Selected People** vous demande de confirmer le nombre de personnes qui seront supprimées
-3. Cliquez sur **Delete**
+1. Cliquez sur **Actions** → **Ajouter à un flux de travail**
+2. Choisissez le flux de travail
+3. Cliquez sur **Appliquer**
+
+### Supprimer des personnes {#delete-people}
+
+Supprimez les personnes sélectionnées de la base de données de votre église :
+
+1. Cliquez sur **Actions** → **Supprimer**
+2. La boîte de dialogue **Supprimer les personnes sélectionnées** vous demande de confirmer le nombre de personnes qui seront supprimées
+3. Cliquez sur **Supprimer**
 
 :::danger
-La suppression de personnes est définitive et ne peut pas être annulée. Toutes leurs données seront supprimées, notamment :
-- Les informations personnelles
-- Les appartenances aux groupes
-- Les enregistrements de présence
-- L'historique des dons
-- Les soumissions de formulaires
-
-N'utilisez cette action que si vous êtes absolument certain de vouloir retirer ces personnes de votre système.
+Les personnes supprimées disparaissent de votre annuaire, de vos groupes et de vos recherches. N'utilisez cette action que si vous êtes certain de vouloir retirer ces personnes de votre système.
 :::
 
-## Résultats de la modification en masse
+Vous ne pouvez pas vous sélectionner vous-même : vous ne pouvez donc pas supprimer ou modifier en masse votre propre fiche.
 
-Une fois une action en masse terminée, vous voyez un résumé indiquant :
 
-- **Total selected** -- Le nombre de personnes incluses dans l'opération
-- **Successfully updated** -- Le nombre d'enregistrements modifiés
-- **Failed** -- Les enregistrements qui n'ont pas pu être mis à jour (le cas échéant)
-- **Unchanged** -- Les enregistrements qui n'avaient pas besoin de modification (par exemple, en mode « only update empty »)
+## Bonnes pratiques {#best-practices}
 
-Si certaines mises à jour ont échoué, vous voyez le détail des erreurs et leur motif.
+- **Commencez petit** -- Testez les opérations de masse sur quelques fiches d'abord pour vous assurer que vous faites les bonnes modifications
+- **Utilisez les filtres** -- Réduisez votre liste avec des filtres ou la recherche IA avant de sélectionner les personnes, pour ne mettre à jour que les bonnes personnes
+- **Vérifiez vos sélections** -- Relisez les personnes sélectionnées avant d'appliquer des modifications de masse
+- **Documentez les changements importants** -- Conservez des notes sur les mises à jour de masse au cas où vous devriez vous y reporter plus tard
+- **Coordonnez-vous avec votre équipe** -- Prévenez les autres administrateurs lorsque vous effectuez de grandes modifications de masse
 
-## Bonnes pratiques
+## Cas d'utilisation courants {#common-use-cases}
 
-- **Commencez petit** -- Testez d'abord les opérations en masse sur quelques enregistrements pour vérifier que vous faites les bonnes modifications
-- **Utilisez les filtres** -- Affinez votre liste avec des filtres ou la recherche IA avant de sélectionner les personnes, pour ne mettre à jour que les bonnes personnes
-- **Vérifiez deux fois la sélection** -- Relisez les personnes sélectionnées avant d'appliquer des modifications en masse
-- **Utilisez le mode « only update empty »** -- Lorsque vous voulez compléter des données manquantes sans écraser les informations existantes
-- **Documentez les changements importants** -- Gardez des notes sur les mises à jour en masse au cas où vous en auriez besoin plus tard
-- **Coordonnez-vous avec votre équipe** -- Prévenez les autres administrateurs lorsque vous effectuez de grosses modifications en masse
+### Mettre à jour les nouveaux membres {#updating-new-members}
 
-## Cas d'utilisation courants
-
-### Mettre à jour les nouveaux membres
-
-Après un cours d'intégration, passez au statut Member tous les participants :
+Après un cours d'intégration des membres, passez tous les participants au statut Membre :
 
 1. Recherchez les personnes qui ont suivi le cours
 2. Sélectionnez-les toutes
-3. Utilisez **Actions** → **Set Membership Status** → **Member**
+3. Utilisez **Actions** → **Définir le statut d'appartenance** → **Membre**
 
-### Organiser les petits groupes
+### Organiser les petits groupes {#organizing-small-groups}
 
 Ajoutez plusieurs personnes à un nouveau petit groupe :
 
-1. Recherchez les personnes que vous voulez dans le groupe
+1. Recherchez les personnes que vous souhaitez dans le groupe
 2. Sélectionnez-les
-3. Utilisez **Actions** → **Add to Group** et sélectionnez le petit groupe
+3. Utilisez **Actions** → **Ajouter à un groupe** et sélectionnez le petit groupe
 
-### Nettoyer les données
+### Nettoyer les données {#cleaning-up-data}
 
-Complétez le statut matrimonial manquant pour les couples mariés :
+Marquez comme inactif un groupe d'anciens participants :
 
-1. Filtrez les personnes mariées (à l'aide des informations du ménage)
-2. Sélectionnez celles dont le statut matrimonial est vide
-3. Utilisez **Actions** → **Set Marital Status** → **Married** → **Only update empty**
+1. Ouvrez la recherche **Avancée** et filtrez les personnes à mettre à jour (par exemple, toutes celles qui n'ont pas fréquenté l'église récemment)
+2. Sélectionnez-les
+3. Utilisez **Actions** → **Définir le statut d'appartenance** → **Inactif**
 
-## Articles connexes
+## Articles connexes {#related-articles}
 
-- [Searching People](./searching-people.md) -- Trouver les personnes à modifier
-- [AI Search](./ai-search.md) -- Utiliser le langage naturel pour trouver des groupes précis de personnes
-- [Group Members](../groups/group-members.md) -- Gérer l'appartenance aux groupes
-- [Exporting Data](./exporting-data.md) -- Exporter les données des personnes avant les modifications en masse
+- [Rechercher des personnes](./searching-people.md) -- Trouver les personnes à modifier
+- [Recherche IA](./ai-search.md) -- Utiliser le langage naturel pour trouver des groupes de personnes précis
+- [Membres du groupe](../groups/group-members.md) -- Gérer l'appartenance aux groupes
+- [Exporter des données](./exporting-data.md) -- Exporter les données des personnes avant de procéder à des modifications de masse

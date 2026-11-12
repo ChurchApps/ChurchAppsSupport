@@ -1,91 +1,92 @@
 ---
-title: "Designer de Etiquetas de Check-In"
-description: "Personalize os modelos de crachá e comprovante de retirada do check-in no B1 Admin: campos, posicionamento e condições como aniversário ou observações."
+title: "Editor de Etiquetas do Check-In"
+description: "Personalize os modelos de crachá e de comprovante de retirada impressos no check-in do B1 Admin, incluindo campos, posicionamento e condições de aniversário ou observações."
 ---
 
-# Designer de Etiquetas de Check-In
+# Editor de Etiquetas do Check-In
 
 <div class="article-intro">
 
-O Designer de Etiquetas permite que você crie e personalize os modelos de crachá de nome e aviso de busca que imprimem quando as famílias fazem check-in de suas crianças. Você pode controlar exatamente quais informações aparecem em cada etiqueta, onde ela é posicionada e como fica.
+O Editor de Etiquetas permite criar e personalizar os modelos de crachá e de comprovante de retirada impressos quando as famílias fazem o check-in de seus filhos. Você pode controlar exatamente quais informações aparecem em cada etiqueta, onde elas ficam posicionadas e como são exibidas.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Configure [Presença](./setup.md) e configure pelo menos um horário de serviço com check-in habilitado
-- Configure [Check-In](./check-in.md) para que as etiquetas estejam imprimindo
-- Você precisa de acesso administrativo à seção Presença
+- Configure a [Presença](./setup.md) e defina pelo menos um horário de culto com check-in habilitado
+- Configure o [Check-In](./check-in.md) para que as etiquetas sejam impressas
+- Você precisa da permissão **Editar Presença**
 
 </div>
 
-## Abrindo o Designer de Etiquetas
+## Abrindo o Editor de Etiquetas {#opening-the-label-designer}
 
-No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Celular**, e clique em **B1 CheckIn**. Então clique no botão **Design Labels** no card Check-in Labels. Você verá uma lista de seus modelos de etiqueta salvos, separados por tipo: **Crachá** e **Aviso de Busca**.
+No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Mobile** e clique em **Etiquetas**. Você também pode clicar em **B1 CheckIn** e, em seguida, em **Criar Etiquetas** no cartão **Etiquetas do Check-In**.
 
-## Tipos de Etiqueta
+A página **Etiquetas do Check-In** lista seus modelos salvos com o **Nome**, o **Tipo** (**Crachá** ou **Comprovante de Retirada**) e o **Tamanho**. Se você ainda não criou nenhum, a página informa **Nenhum modelo de etiqueta**, e o B1 Checkin imprime seu crachá e comprovante de retirada padrão.
 
-- **Crachá** — impresso e anexado à criança. Normalmente inclui o nome da criança, sua sala de aula/sessão e um código de segurança.
-- **Aviso de Busca** — entregue ao pai, mãe ou responsável. Normalmente inclui o código de segurança e uma lista das crianças que eles fizeram check-in.
+## Tipos de Etiqueta {#label-types}
 
-O B1 começa com um modelo padrão de crachá e um modelo padrão de aviso de busca dimensionado para etiquetas térmicas padrão de 3,5 × 1,1 polegadas.
+- **Crachá** — impresso e preso à criança. Normalmente inclui o nome da criança, a turma ou sessão e um código de segurança.
+- **Comprovante de Retirada** — entregue ao pai, mãe ou responsável. Normalmente inclui o código de segurança e a lista das crianças que fizeram check-in.
 
-## Criando um Modelo de Etiqueta
+Ambos os modelos iniciais são dimensionados para etiquetas térmicas padrão de 3,5 × 1,1 polegadas (Brother DK-1201).
 
-1. Clique em **Adicionar** e escolha um ponto de partida do menu: **Crachá 3.5" x 1.1"**, **Aviso de Busca 3.5" x 1.1"**, ou **Em Branco**.
-2. Um novo modelo se abre no editor de etiquetas.
+## Criando um Modelo de Etiqueta {#creating-a-label-template}
 
-### Editor de Etiquetas
+1. Clique em **Adicionar etiqueta** e escolha um ponto de partida: **Crachá 3,5" x 1,1"**, **Comprovante de Retirada 3,5" x 1,1"** ou **Em branco**.
+2. O modelo abre no editor de etiquetas, com uma prévia da etiqueta preenchida com dados de exemplo.
 
-O editor mostra uma visualização em escala da etiqueta no tamanho configurado. Ao longo do painel esquerdo você pode configurar:
+### Editor de Etiquetas {#label-editor}
 
-- **Nome** — o nome do modelo (apenas para sua referência)
-- **Tipo de Etiqueta** — Crachá ou Aviso de Busca
-- **Largura / Altura** — tamanho da etiqueta em polegadas
+No topo do editor, você pode definir:
 
-### Adicionando Blocos
+- **Nome** — o nome do modelo (apenas para sua referência; obrigatório)
+- **Tipo** — Crachá ou Comprovante de Retirada
+- **Largura (pol.)** / **Altura (pol.)** — tamanho da etiqueta em polegadas
 
-Uma etiqueta é construída a partir de blocos — peças individuais de conteúdo posicionadas na tela da etiqueta. Clique em **Adicionar Bloco** para inserir um novo bloco e escolha seu tipo:
+### Adicionando Blocos {#adding-blocks}
 
-- **Campo** — extrai um valor de dados no momento da impressão:
-  - `person.displayName` — o nome completo da pessoa
-  - `sessions` — o serviço/sala de aula para o qual eles fizeram check-in
-  - `securityCode` — o código de segurança de busca gerado aleatoriamente
-  - `children` — lista de crianças (para avisos de busca)
-  - `person.nametagNotes` — quaisquer notas especiais no registro da pessoa
-  - `person.isBirthdayWeek` — verdadeiro se o aniversário da pessoa (mês e dia) está dentro de 3 dias antes ou depois da data de check-in
-  - `campus` — o nome do campus
-- **Texto** — texto estático que você digita (para cabeçalhos, rótulos ou instruções)
-- **Código de Barras** — um código de barras codificando o código de segurança
+Uma etiqueta é composta por blocos — peças individuais de conteúdo posicionadas na etiqueta. Clique em um botão no painel **Adicionar Bloco** para incluir um:
 
-### Posicionando Blocos
+- **Campos** — trazem um valor no momento da impressão. Os crachás oferecem **Nome de Exibição**, **Primeiro Nome**, **Sobrenome**, **Apelido**, **Observações do Crachá** (as observações do registro da pessoa), **Aniversário Nesta Semana** (verdadeiro quando o aniversário da pessoa cai até 3 dias antes ou depois da data do check-in), **Sessões** (os horários de culto e as salas em que ela fez check-in), **Código de Segurança**, **Data** e **Nome da Igreja**. Os comprovantes de retirada oferecem **Crianças**, **Crianças e Alergias**, **Código de Segurança**, **Data** e **Nome da Igreja**.
+- **Texto** — texto fixo que você digita (para títulos, rótulos ou instruções)
+- **Código de barras** — um código de barras Code 128 ou Code 39 de um campo, como o código de segurança
+- **QR Code** — um QR code de um campo
+- **Caixa** — um retângulo com cor de preenchimento e borda opcionais
 
-Cada bloco tem campos **X**, **Y**, **Largura** e **Altura** expressos como porcentagens da tela da etiqueta (0–100). Ajuste-os para posicionar conteúdo com precisão. Você também pode definir:
+### Posicionando e Estilizando os Blocos {#positioning-and-styling-blocks}
 
-- **Tamanho da Fonte** — tamanho do texto em pontos
-- **Negrito** — alterne texto em negrito
-- **Alinhar** — alinhamento de texto esquerdo, centro ou direito
-- **Condição** — opcionalmente oculte o bloco se um campo estiver vazio (por exemplo, apenas mostre nametagNotes se tiver um valor). Isso também funciona com `person.isBirthdayWeek` para mostrar um gráfico ou texto de aniversário apenas em crachás para crianças cujo aniversário está dentro de poucos dias do check-in.
+Arraste um bloco na etiqueta para movê-lo, ou clique nele e use o painel **Propriedades**. **X**, **Y**, **L** e **A** são percentuais da etiqueta (0–100). Dependendo do bloco, você também pode definir:
 
-### Salvando
+- **Tamanho da fonte** — tamanho do texto, em relação à altura da etiqueta
+- **Negrito** e **Itálico**
+- **Alinhamento** — À esquerda, Centralizado ou À direita
+- **Simbologia** e **Valor** — para códigos de barras e QR codes
+- **Preenchimento** e **Borda** — para caixas
+- **Condição** — **Sempre** exibe o bloco. Escolha um campo para exibir o bloco somente quando esse campo **Não está em branco**, **Está em branco**, **É igual a** ou **É diferente de** um valor. Por exemplo, exiba as observações do crachá somente quando estiverem preenchidas, ou exiba um elemento de aniversário somente quando **Aniversário Nesta Semana** for igual a `true`.
 
-Clique em **Salvar** para salvar o modelo. O modelo atualizado será usado na próxima vez que as etiquetas forem impressas em B1 Checkin.
+Clique em **Remover Bloco** para excluir o bloco selecionado.
 
-## Reordenando Modelos
+### Salvando {#saving}
 
-Se você tiver múltiplos modelos de crachá ou aviso de busca, B1 Checkin usará o primeiro modelo da lista por padrão. Arraste os modelos para reordená-los.
+Clique em **Salvar** para gravar o modelo, ou em **Cancelar** para descartar suas alterações. O B1 Checkin usa o modelo atualizado na próxima vez que carregar suas configurações.
 
-## Deletando um Modelo
+## Escolhendo o Modelo Padrão {#choosing-the-default-template}
 
-Clique no ícone de deletar em qualquer linha de modelo e confirme. Deletar o último modelo de um tipo restaura o modelo incorporado padrão.
+Se você tiver mais de um modelo de um mesmo tipo, clique em **Definir como padrão** no modelo que o B1 Checkin deve imprimir. Ele exibirá um selo **Padrão**, e qualquer outro modelo desse tipo deixará de ser o padrão. Se nenhum modelo de um tipo estiver marcado como padrão, o quiosque usa o primeiro deles.
+
+## Excluindo um Modelo {#deleting-a-template}
+
+Clique em **Excluir** na linha do modelo e confirme. Se você excluir todos os modelos de um tipo, o B1 Checkin volta a usar a etiqueta padrão desse tipo.
 
 :::tip
-Faça uma impressão de teste depois de editar um modelo para confirmar que o layout fica certo antes de seu próximo serviço.
+Faça uma impressão de teste depois de editar um modelo para confirmar que o layout está correto antes do seu próximo culto.
 :::
 
-## Artigos Relacionados
+## Artigos Relacionados {#related-articles}
 
-- [Configuração de Check-In](./setup.md) — configure serviços e grupos para check-in
-- [Completando Check-In](./check-in.md) — o fluxo de check-in para famílias
-- [B1 Checkin Introdução](../../b1-checkin/getting-started/index.md) — o aplicativo de quiosque Checkin
+- [Configuração de Presença](./setup.md) — configure os cultos e grupos para o check-in
+- [Check-In](./check-in.md) — configure o quiosque do B1 Checkin
+- [Primeiros Passos com o B1 Checkin](../../b1-checkin/getting-started/index.md) — o aplicativo de quiosque Checkin

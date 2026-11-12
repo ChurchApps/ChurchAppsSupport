@@ -167,7 +167,7 @@ Next.js에서 브라우저에 노출해야 하는 환경 변수에는 반드시 
 
 ## 모바일 앱 환경 변수
 
-### B1Checkin (React Native / Expo)
+### B1Checkin (React Native / Expo) {#b1checkin-react-native--expo}
 
 샘플 파일: `dotenv.sample.txt`
 

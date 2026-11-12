@@ -1,67 +1,67 @@
 ---
 title: "Paghiling na Sumali sa Grupo"
-description: "Humiling na sumali sa grupong may pag-apruba sa B1.church, magdagdag ng opsyonal na tala para sa lider, at subaybayan o kanselahin ang kahilingan."
+description: "Humiling na sumali sa grupong nangangailangan ng pag-apruba sa B1.church, magdagdag ng opsyonal na tala para sa lider, at subaybayan o kanselahin ang iyong nakabinbing kahilingan."
 ---
 
 # Paghiling na Sumali sa Grupo
 
 <div class="article-intro">
 
-Ang ilang grupo ay nangangailangan ng pag-apruba bago ka maging miyembro. Kapag ganito ang setting ng grupo, magsusumite ka ng kahilingang sumali -- na maaari mong samahan ng mensahe para sa lider ng grupo -- at maghihintay ka na aprubahan o tanggihan ito ng lider. Maaari mong tingnan ang katayuan ng iyong mga nakabinbing kahilingan at kanselahin ang mga ito anumang oras.
+May ilang grupong nangangailangan ng pag-apruba bago ka maging miyembro. Kapag ganito ang setting ng grupo, magsusumite ka ng kahilingang sumali -- opsyonal na may kasamang mensahe para sa lider ng grupo -- at maghihintay na aprubahan o tanggihan ito ng lider. Maaari mong tingnan ang status ng iyong mga nakabinbing kahilingan at kanselahin ang mga ito anumang oras.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan kang [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account para makahiling na sumali sa isang grupo.
+- Kailangan kang [naka-log in](../getting-started/logging-in.md) sa iyong B1.church account para humiling na sumali sa grupo.
 
 </div>
 
-## Pagsali vs. Paghiling na Sumali
+## Pagsali vs. Paghiling na Sumali {#joining-vs-requesting-to-join}
 
-Ang mga grupo ay maaaring may iba't ibang patakaran sa pagsali na itinakda ng kanilang mga administrator:
+Maaaring magkaiba ang patakaran sa pagsali ng mga grupo na itinakda ng kanilang mga administrator:
 
-- **Bukas** -- I-click ang **Sumali sa Grupo** sa pahina ng mga detalye ng grupo at agad kang idaragdag bilang miyembro.
-- **Kailangan ng kahilingan** -- I-click ang **Humiling na Sumali** para magsumite ng kahilingang kailangang aprubahan ng lider ng grupo bago ka maging miyembro.
-- **Sarado** -- Walang lalabas na button sa pagsali. Ang mga miyembro ay kailangang manu-manong idagdag ng mga lider.
+- **Open** -- I-click ang **Join Group** sa detail page ng grupo at agad kang idaragdag bilang miyembro.
+- **Request required** -- I-click ang **Request to Join** para magsumite ng kahilingang dapat aprubahan ng lider ng grupo bago ka maging miyembro.
+- **Closed** -- Walang lalabas na button para sumali. Kailangang idagdag nang manu-mano ng mga lider ang mga miyembro.
 
-## Paano Magsumite ng Kahilingang Sumali
+## Paano Magsumite ng Kahilingang Sumali {#how-to-submit-a-join-request}
 
-1. Pumunta sa grupong gusto mong salihan. Tingnan ang [Pag-browse ng mga Grupo](./browsing-groups.md) kung kailangan mo ng tulong sa paghahanap nito.
-2. Buksan ang pahina ng mga detalye ng grupo.
-3. I-click ang **Humiling na Sumali**.
-4. May lalabas na dialog kung saan maaari kang opsyonal na magsulat ng mensahe para sa lider ng grupo na nagpapaliwanag kung bakit gusto mong sumali.
-5. I-click ang **Isumite** para ipadala ang iyong kahilingan.
+1. Mag-browse sa grupong nais mong salihan. Tingnan ang [Pag-browse ng mga Grupo](./browsing-groups.md) kung kailangan mo ng tulong sa paghahanap nito.
+2. Buksan ang detail page ng grupo.
+3. I-click ang **Request to Join**.
+4. Lilitaw ang dialog na **Request to join** kung saan maaari mong opsyonal na isulat ang **Message (optional)** para sa lider ng grupo na nagpapaliwanag kung bakit mo gustong sumali.
+5. I-click ang **Send Request** para ipadala ang iyong kahilingan.
 
-Ipapakita na ngayon ng pahina ng grupo ang paunawang **Nakabinbin ang Kahilingan** kapalit ng button. Makakatanggap ng notification ang mga lider ng grupo tungkol sa iyong kahilingan. Kapag nasuri na nila ito, makakatanggap ka ng notification tungkol sa kinalabasan.
+Ipinapakita na ngayon ng pahina ng grupo ang abisong **Request Pending** sa halip na ang button. Makakatanggap ng abiso ang mga lider ng grupo tungkol sa iyong kahilingan. Kapag nasuri na nila ito, makakatanggap ka ng abiso tungkol sa resulta.
 
 :::tip
-Ang pagsama ng maikling mensahe -- tulad ng kung paano mo nalaman ang grupo o kung ano ang inaasahan mong makuha rito -- ay makakatulong sa lider na makapagpasya nang mas mabilis.
+Ang pagsasama ng maikling mensahe -- gaya ng kung paano mo nalaman ang grupo o kung ano ang inaasahan mong makuha rito -- ay makakatulong sa lider na makapagdesisyon nang mas mabilis.
 :::
 
-## Pagsuri sa Katayuan ng Iyong mga Kahilingan
+## Pagtingin sa Status ng Iyong Mga Kahilingan {#checking-the-status-of-your-requests}
 
-Pagkatapos magsumite ng kahilingan, makikita mo ang katayuan nito mula sa pahina ng **Mga Grupo**:
+Pagkatapos magsumite ng kahilingan, maaari mong tingnan ang status nito mula sa screen na **Groups** sa member portal (ang screen na naglilista ng sarili mong mga grupo, hindi ang pampublikong pahinang **Find a Group**):
 
-1. Pumunta sa pahina ng **Mga Grupo** sa B1.church site ng iyong simbahan.
-2. Mag-scroll pababa sa seksyong **Mga Nakabinbing Kahilingan**.
-3. Bawat nakabinbing kahilingan ay nagpapakita ng pangalan ng grupo at ng petsa kung kailan mo ito isinumite.
+1. Buksan ang **Groups** sa member portal.
+2. Mag-scroll pababa sa seksyong **Pending Requests**. Lumilitaw lamang ito habang may kahilingan kang naghihintay.
+3. Ipinapakita ng bawat nakabinbing kahilingan ang pangalan ng grupo at ang petsa ng pagsusumite (halimbawa, "Requested 11/10/2026").
 
-Kung naaprubahan o natanggihan ang isang kahilingan, makakatanggap ka ng notification -- ang mga naaprubahang kahilingan ay ilalagay ka sa grupo bilang miyembro.
+Kapag naaprubahan o tinanggihan ang kahilingan, makakatanggap ka ng abiso -- ang mga naaprubahang kahilingan ay magpapasok sa iyo sa grupo bilang miyembro.
 
-## Pagkansela ng Kahilingan
+## Pagkansela ng Kahilingan {#cancelling-a-request}
 
-Kung magbago ang isip mo bago pa masuri ng lider ang iyong kahilingan:
+Kung magbago ang isip mo bago suriin ng lider ang kahilingan mo:
 
-1. Pumunta sa pahina ng **Mga Grupo**.
-2. Hanapin ang iyong kahilingan sa seksyong **Mga Nakabinbing Kahilingan**.
-3. I-click ang **Kanselahin** sa tabi ng kahilingan.
+1. Buksan ang **Groups** sa member portal.
+2. Hanapin ang iyong kahilingan sa seksyong **Pending Requests**.
+3. I-click ang **Cancel request** sa tabi ng kahilingan.
 
-Agad na babawiin ang kahilingan at hindi na ito makikita ng lider.
+Agad na binabawi ang kahilingan at hindi na ito makikita ng lider.
 
-## Mga Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Pag-browse ng mga Grupo](./browsing-groups.md) -- Maghanap ng mga grupong sasalihan
-- [Mga Detalye ng Grupo](./group-details.md) -- Ang makikita at magagawa mo sa pahina ng isang grupo
-- [Mga Usapan sa Grupo](./conversations.md) -- Makilahok sa mga talakayan kapag miyembro ka na
+- [Pag-browse ng mga Grupo](./browsing-groups.md) -- Maghanap ng mga grupong salihan
+- [Mga Detalye ng Grupo](./group-details.md) -- Ano ang makikita at magagawa mo sa pahina ng isang grupo
+- [Mga Usapan ng Grupo](./conversations.md) -- Makilahok sa mga talakayan kapag miyembro ka na

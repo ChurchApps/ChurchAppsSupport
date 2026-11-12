@@ -1,83 +1,91 @@
 ---
-title: "Salas, Recursos y Programación"
-description: "Configura salas, equipos, bloqueos y plantillas de eventos en B1 Admin para que los grupos soliciten reservas y las apruebes sin dobles reservas."
+title: "Salas, recursos y programación"
+description: "Configure salas, equipos, bloqueos y plantillas de eventos en B1 Admin para que los grupos puedan solicitar reservas y usted pueda aprobarlas y evitar dobles reservas."
 ---
 
-# Salas, Recursos y Programación
+# Salas, recursos y programación
 
 <div class="article-intro">
 
-Las Salas y Recursos te permiten rastrear los espacios y equipos reservables de tu iglesia. Cuando un grupo o equipo desea usar una sala o pedir prestado un recurso para un evento, puede solicitarlo a través de B1 -- y tú puedes aprobar o denegar esas solicitudes para prevenir doble reserva.
+Las salas y los recursos le permiten llevar el control de los espacios y equipos reservables de su iglesia. Cuando un grupo o equipo quiere usar una sala o pedir prestado un recurso para un evento, puede solicitarlo a través de B1; usted puede aprobar o rechazar esas solicitudes para evitar dobles reservas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas acceso administrativo a la sección de Calendarios en B1 Admin
-- Configura [grupos](../groups/creating-groups.md) cuyos miembros enviarán solicitudes de reserva
+- Necesita el permiso **Editar contenido**
+- Configure los [grupos](../groups/creating-groups.md) cuyos miembros enviarán solicitudes de reserva
 
 </div>
 
-## Abriendo Salas y Recursos
+## Abrir Salas y recursos {#opening-rooms--resources}
 
-En B1 Admin, abre el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios**, y haz clic en **Salas y Recursos**. La página tiene cuatro pestañas: **Salas**, **Recursos**, **Bloqueos** y **Plantillas**. El botón de agregar en la parte superior de la página cambia según la pestaña seleccionada, y un cuadro **Find** te permite filtrar la lista actual.
+En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), despliegue **Calendarios** y haga clic en **Salas y recursos**. La página tiene cuatro pestañas: **Salas**, **Recursos**, **Bloqueos** y **Plantillas**. El botón de añadir en la parte superior de la página cambia según la pestaña seleccionada, y un cuadro **Buscar** le permite filtrar la lista actual.
 
-## Salas
+## Salas {#rooms}
 
-Las salas son espacios físicos que pueden ser reservados junto con eventos del calendario -- un santuario, un salón de confraternidad, un aula, etc.
+Las salas son espacios físicos que pueden reservarse junto con los eventos del calendario: un santuario, un salón de convivencia, un aula, etc.
 
-### Agregar una Sala
+### Añadir una sala {#adding-a-room}
 
-1. En la pestaña **Salas**, haz clic en **Agregar Sala** en la parte superior de la página.
-2. Ingresa un **nombre** para la sala.
-3. Opcionalmente establece una **capacidad** (número máximo de personas).
-4. Establece un **Grupo de Aprobación** -- cuando un grupo solicita esta sala, los líderes del grupo elegido son notificados y deben aprobar la reserva. Déjalo en blanco si no se necesita aprobación.
-5. Haz clic en **Guardar**.
+1. En la pestaña **Salas**, haga clic en **Añadir sala** en la parte superior de la página.
+2. Introduzca un **Nombre de la sala**.
+3. Opcionalmente, establezca una **Capacidad** (número máximo de personas) y una **Descripción**. Ambos se muestran junto a la sala cuando las personas eligen salas para un evento.
+4. Establezca un **Grupo de aprobación** si las reservas necesitan autorización. Las reservas hechas por miembros de ese grupo se aprueban automáticamente; las de cualquier otra persona quedan como **Pendientes** hasta que se aprueben en la página de [Aprobaciones](./approvals.md), y los miembros del grupo reciben un correo electrónico sobre las nuevas solicitudes. Déjelo en **No requiere aprobación** para aprobar automáticamente todas las reservas.
+5. Haga clic en **Guardar**.
 
-### Editar o Eliminar una Sala
+La lista de Salas muestra el **Nombre de la sala**, la **Capacidad** y el **Grupo de aprobación** de cada sala.
 
-Haz clic en **Edit** junto a cualquier sala, haz tus cambios y haz clic en **Guardar**. Usa **Eliminar** para eliminar una sala permanentemente.
+### Editar o eliminar una sala {#editing-or-deleting-a-room}
 
-## Recursos
+Pase el cursor sobre una sala y haga clic en **Editar**, realice sus cambios y haga clic en **Guardar**. Use **Eliminar** para borrar una sala de forma permanente.
 
-Los recursos son elementos que pueden ser reservados junto con un evento -- equipo AV, proyectores, sillas, una camioneta, etc.
+## Recursos {#resources}
 
-### Agregar un Recurso
+Los recursos son artículos que pueden reservarse junto con un evento: equipos de audio y video, proyectores, sillas, una camioneta, etc.
 
-1. Haz clic en la pestaña **Recursos**, luego en **Agregar Recurso**.
-2. Ingresa un **nombre** y opcionalmente una **descripción**.
-3. Establece un **Grupo de Aprobación** si alguien necesita aprobar préstamos de recursos.
-4. Haz clic en **Guardar**.
+### Añadir un recurso {#adding-a-resource}
 
-## Bloqueos
+1. Haga clic en la pestaña **Recursos** y luego en **Añadir recurso**.
+2. Introduzca un **Nombre del recurso** y, opcionalmente, una **Descripción**.
+3. Establezca la **Cantidad** que posee (por ejemplo, 3 proyectores). Cada evento reserva uno, y B1 le advierte cuando más eventos al mismo tiempo lo reservan de los que tiene.
+4. Establezca un **Grupo de aprobación** si alguien necesita autorizar los préstamos de recursos. Funciona igual que en el caso de las salas.
+5. Haga clic en **Guardar**.
 
-Los bloqueos previenen que las salas o recursos sean reservados durante ciertos tiempos -- para renovaciones, períodos reservados o mantenimiento.
+Edite o elimine un recurso de la misma forma que una sala.
 
-### Agregar un Bloqueo
+## Bloqueos {#blockouts}
 
-1. Haz clic en la pestaña **Bloqueos**, luego en **Agregar Bloqueo**.
-2. Elige si bloquear una **Sala**, un **Recurso** o todas las salas y recursos.
-3. Establece la **fecha y hora de inicio** y **fecha y hora de finalización** del bloqueo.
-4. Opcionalmente agrega una nota de **razón**.
-5. Haz clic en **Guardar**.
+Los bloqueos impiden que las salas o los recursos se reserven durante ciertos horarios, por ejemplo, por remodelaciones, periodos reservados o mantenimiento.
 
-## Plantillas de Eventos
+### Añadir un bloqueo {#adding-a-blockout}
 
-Las plantillas te permiten guardar una configuración de evento reutilizable -- título, descripción y grupos asociados -- para que los eventos recurrentes se creen consistentemente.
+1. Haga clic en la pestaña **Bloqueos** y luego en **Añadir bloqueo**.
+2. En **Aplica a**, elija una sala, un recurso o **Todas las salas y recursos**.
+3. Establezca la fecha y hora de **Inicio** y **Fin** del bloqueo.
+4. Opcionalmente, añada un **Motivo**. Se muestra en el calendario de [Disponibilidad](./availability.md) como *Bloqueada: motivo*.
+5. Haga clic en **Guardar**.
 
-### Agregar una Plantilla
+Los eventos que reservan una sala o recurso bloqueado muestran una advertencia de conflicto en el editor de eventos.
 
-1. Haz clic en la pestaña **Plantillas**, luego en **Agregar Plantilla**.
-2. Ingresa un **nombre** para la plantilla.
-3. Opcionalmente vincula un **grupo** para que el evento se conecte automáticamente a ese grupo cuando se cree a partir de la plantilla.
-4. Haz clic en **Guardar**.
+## Plantillas de eventos {#event-templates}
 
-Cuando se crea un nuevo evento, el personal puede elegir una plantilla existente para prellenar los detalles del evento.
+Las plantillas le permiten guardar una configuración de evento reutilizable (título, descripción, duración, salas y recursos), para que los eventos que crea con frecuencia se configuren siempre de la misma forma.
 
-## Artículos Relacionados
+### Añadir una plantilla {#adding-a-template}
 
-- [Calendario de Disponibilidad](./availability.md) -- ver todas las reservas de un vistazo y reservar salas o recursos directamente
-- [Aprobaciones de Calendario](./approvals.md) -- aprobar o rechazar solicitudes de reserva de salas y recursos
-- [Creación de Calendarios](./creating-calendars.md) -- configura calendarios de eventos
-- [Creación de Grupos](../groups/creating-groups.md) -- configura grupos que pueden reservar salas y recursos
+1. Haga clic en la pestaña **Plantillas** y luego en **Añadir plantilla**.
+2. Introduzca un **Nombre de la plantilla** (se muestra al elegir una plantilla).
+3. Complete el **Título del evento**, la **Descripción del evento** y la **Duración (minutos)** que se usarán en los eventos nuevos.
+4. Opcionalmente, elija las **Salas** y los **Recursos** a reservar.
+5. Haga clic en **Guardar**.
+
+Al crear un evento nuevo, elija la plantilla en el cuadro **Plantilla** del editor de eventos para completar el título, la descripción, las salas y los recursos, y para establecer la hora de fin según la duración de la plantilla (establezca primero el **Inicio**). Aún debe elegir el **Grupo** del evento. El cuadro **Plantilla** solo aparece cuando existe al menos una plantilla.
+
+## Artículos relacionados {#related-articles}
+
+- [Calendario de disponibilidad](./availability.md): vea todas las reservas de un vistazo y reserve salas o recursos directamente
+- [Aprobaciones del calendario](./approvals.md): apruebe o rechace solicitudes de reserva de salas y recursos
+- [Creación de calendarios](./creating-calendars.md): configure calendarios de eventos
+- [Creación de grupos](../groups/creating-groups.md): configure los grupos que pueden reservar salas y recursos

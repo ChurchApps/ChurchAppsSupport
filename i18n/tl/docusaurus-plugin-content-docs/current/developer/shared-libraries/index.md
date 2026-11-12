@@ -35,7 +35,7 @@ yarn build
 
 Gumagamit ang repo ng Yarn Berry (ang field na `packageManager` sa root ang may final na say) na may iisang lockfile. Binubuo ng `yarn build` ang bawat package ayon sa pagkakasunod-sunod ng dependency; pinapatakbo ng `yarn test` ang lahat ng test ng package.
 
-## Paglalabas gamit ang Changesets
+## Paglalabas gamit ang Changesets {#releasing-with-changesets}
 
 Bawat pagbabago sa isang package ay may kasamang changeset:
 
@@ -47,7 +47,7 @@ Bawat pagbabago sa isang package ay may kasamang changeset:
 Huwag kailanman magpatakbo ng raw na `npm publish` sa loob ng isang package — nilalaktawan nito ang build ordering at ang version bookkeeping na hinahawakan ng release script. Kailangan ng npm account na may publish rights sa scope na `@churchapps` para makapag-publish.
 :::
 
-## Lokal na Development Laban sa Consuming App
+## Lokal na Development Laban sa Consuming App {#local-development-against-a-consuming-app}
 
 Sa loob ng workspace, direktang bumubuo ang mga package laban sa mga kapatid nito — walang kailangang linking. Para subukan ang isang hindi pa nai-publish na build ng package sa loob ng consuming app (B1Admin, B1App, atbp.), magdagdag ng pansamantalang Yarn portal sa consumer:
 

@@ -1,58 +1,59 @@
 ---
-title: "Dumalo"
-description: "Suriin ang lingguhang attendance, kuwarto, at bisita sa B1 Admin; i-set up ang campus, oras ng serbisyo, headcount, at kiosk check-in sa Attendance page."
+title: "Attendance"
+description: "Suriin ang lingguhang attendance, mga kuwarto, at bisita sa B1 Admin, pagkatapos mag-set up ng mga campus, oras ng serbisyo, headcount, at kiosk check-in mula sa Attendance page."
 ---
 
-# Dumalo
+# Attendance
 
 <div class="article-intro">
 
-Ang Dumalo na seksyon sa B1 Admin ay nagbibigay sa iyo ng kumpletong paningin kung sino ang dumarating sa iyong simbahan at kung paano lumalaki ang iyong mga grupo sa paglipas ng panahon. Mula sa pag-setup ng mga campus at oras ng serbisyo hanggang sa pagsusuri ng mga uso at pag-setup ng self check-in, lahat ng kailangan mo upang subaybayan at maunawaan ang dumalo ay nililinig mula sa pahinang ito.
+Binibigyan ka ng Attendance section sa B1 Admin ng kumpletong pagtingin kung sino ang dumadalo sa iyong simbahan at kung paano lumalaki ang iyong mga grupo sa paglipas ng panahon. Mula sa pag-configure ng mga campus at oras ng serbisyo hanggang sa pagrepaso ng mga trend at pag-set up ng self check-in, lahat ng kailangan mo para subaybayan at unawain ang attendance ay pinamamahalaan mula sa pahinang ito.
 
 </div>
 
-## Pangkalahatang Pagsusuri ng Pahina
+## Pangkalahatang-tanaw ng Pahina {#page-overview}
 
-Upang buksan ang pahina, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**. Nagbubukas ang pahina sa buod ng **linggong ito** (Linggo hanggang Sabado).
+Para buksan ang pahina, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**. Nagbubukas ang pahina sa buod ng **ngayong linggo** (Linggo hanggang Sabado).
 
-Ipinapakita ng kaliwang column ang mga petsa ng linggo at ang kabuuang bilang ng mga taong **nasa loob ng silid** -- ang kabuuang headcount kung may naitalang headcount ngayong linggo, o kung wala, ang bilang ng mga nag-check in. Sa ilalim ng kabuuan, makikita ninyo kung ilan ang nag-check in, nabilang, at bisita, at hiwalay kada serbisyo kung higit sa isa ang serbisyo. Kung wala pang nag-check in ngayong linggo, ipinapakita nito ang huling linggong may dumalo.
+Ipinapakita ng kaliwang column ang mga petsa ng linggo at ang kabuuang bilang ng taong **nasa kuwarto** -- ang kabuuan ng iyong headcount kung may nailagay na headcount ngayong linggo, kung hindi ay ang bilang ng mga taong nag-check in. Sa ilalim ng kabuuan, makikita mo kung ilan ang nag-check in, nabilang, at bisita, pati na rin ang hati ayon sa serbisyo kapag higit sa isa ang iyong serbisyo. Kung wala pang nag-check in ngayong linggo, sinasabi nito iyon at ipinapakita ang huling petsa na naitala ang attendance (halimbawa, "Last recorded Jan 25, 2026: 10").
 
-Ipinapakita ng pangunahing bahagi ng pahina ang:
+Ang pangunahing bahagi ng pahina ay nagpapakita ng:
 
-- **Rooms** -- ang bawat grupo kung saan nag-check in ang mga tao ngayong linggo, kasama ang bilang ng mga nag-check in (at capacity bar para sa mga grupong may check-in capacity). I-click ang isang grupo para buksan ito.
+- **Rooms** -- bawat grupong pinagcheck-in-an ng mga tao ngayong linggo, kasama ang bilang ng nag-check in (at capacity bar para sa mga grupong may check-in capacity). I-click ang isang grupo para buksan ito.
 - **Guests** -- mga taong nag-check in bilang bisita ngayong linggo. I-click ang pangalan para buksan ang kanilang record.
-- **Last 13 weeks** -- maliit na bar chart ng lingguhang check-in, kasama kung ilang linggo ang may check-in.
-- **Headcounts this week** -- mga headcount na inilagay para sa mga serbisyo ngayong linggo.
+- **Last 13 weeks** -- maliit na bar chart ng lingguhang check-in, kasama kung ilan sa mga linggong iyon ang may check-in. Binubuksan ng link nitong **All years** ang mga report.
+- **Headcounts this week** -- mga headcount na nailagay para sa mga serbisyo ngayong linggo.
 
 ## Mga Aksyon {#actions}
 
-Nasa kaliwang column din ang mga aksyon ng pahina. Bawat isa ay bumubukas sa pangunahing bahagi; i-click ang back link na **Attendance** para bumalik sa buod ng linggo.
+Nasa kaliwang column din ang mga aksyon ng pahina. Bawat isa ay bumubukas sa pangunahing bahagi; i-click ang back link na **Attendance** para bumalik sa lingguhang buod.
 
-### Setup
+### Setup {#setup}
 
-I-click ang **Setup** para i-configure ang mga bloke ng pagsubaybay sa dumalo. Dito ninyo tinutukoy ang mga campus, idinaragdag ang mga serbisyo at oras ng serbisyo sa bawat campus (kasama ang opsyonal na check-in schedule para sa bawat oras ng serbisyo), at nakikita kung aling mga [grupo](../groups/creating-groups.md) ang nakatalaga sa mga oras ng serbisyo. Lumalabas sa itaas ang mga bilang ng mga campus, oras ng serbisyo, naka-iskedyul at walang iskedyul na grupo, at kabuuang grupo. Kailangan ninyo lamang itong gawin minsan, kahit na maaari ninyo itong i-update kapag nagbago ang iskedyul. Tingnan ang [Attendance Setup](setup.md) para sa buong gabay.
+I-click ang **Setup** para i-configure ang mga pundasyon ng pagsubaybay ng attendance (lumalabas lamang ito para sa mga taong may **Edit Services** attendance permission). Dito mo binibigyang-kahulugan ang iyong mga campus, nagdaragdag ng mga serbisyo at oras ng serbisyo sa bawat campus (kasama ang opsyonal na iskedyul ng check-in para sa bawat oras ng serbisyo), at nakikita kung aling [mga grupo](../groups/creating-groups.md) ang nakatalaga sa mga oras ng serbisyong iyon. Lumalabas sa itaas ang bilang ng mga campus, oras ng serbisyo, mga grupong may at walang iskedyul, at kabuuang grupo. Kailangan mo lamang itong gawin nang minsan, bagaman maaari mo itong i-update kapag nagbago ang iyong iskedyul. Tingnan ang [Attendance Setup](setup.md) para sa kumpletong gabay.
 
-### All years (Mga Ulat) {#all-years-reports}
+### All years (Reports) {#all-years-reports}
 
-I-click ang **All years** para buksan ang mga ulat ng attendance. Lumilipat ang mga tab sa itaas sa pagitan ng **Attendance Trend** (mga trend ng buong simbahan sa paglipas ng panahon), **Headcount Trend** (kabuuan ng headcount kada linggo), at **Group Attendance** (attendance ayon sa bawat grupo). Gamitin ang mga filter para paliitin ang resulta ayon sa saklaw ng petsa, campus, o oras ng serbisyo. Tingnan ang [Pagsusubaybay sa Dumalo](tracking-attendance.md) para sa mga detalye sa paggamit ng mga ulat at filter.
+I-click ang **All years** para buksan ang mga attendance report. Ang mga tab sa itaas ay nagpapalit sa pagitan ng **Attendance Trend** (mga trend ng buong simbahan sa paglipas ng panahon), **Headcount Trend** (kabuuan ng headcount kada linggo), at **Group Attendance** (attendance na hinati ayon sa bawat grupo). Gamitin ang mga filter para paliitin ang resulta ayon sa date range, campus, o oras ng serbisyo. Tingnan ang [Tracking Attendance](tracking-attendance.md) para sa mga detalye sa paggamit ng mga report at filter.
 
-### Maglagay ng headcount {#enter-headcount}
+### Enter headcount {#enter-headcount}
 
-I-click ang **Enter headcount** para magtala ng simpleng kabuuang bilang para sa isang serbisyo, oras ng serbisyo, o grupo sa halip na may pangalang listahan. Tingnan ang [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) para sa mga detalye.
+I-click ang **Enter headcount** para magtala ng simpleng kabuuang bilang para sa isang serbisyo, oras ng serbisyo, o grupo sa halip na pinangalanang roster. Tingnan ang [Headcount Entry & Trend](headcount-entry.md) para sa mga detalye.
 
 ### Kiosk {#kiosk}
 
-I-click ang **Kiosk** para buksan ang mga setting ng **Kiosk Theme**, kung saan itinatakda ang mga background image at idle screen behavior ng check-in kiosk. Dinadala ka ng link na **Check-in kiosk, QR, and labels** sa buong [mga setting ng B1 CheckIn](check-in.md).
+I-click ang **Kiosk** para buksan ang mga setting ng **Kiosk Theme**, kung saan mo itinatakda ang background image at idle screen ng check-in kiosk. Dinadala ka ng link na **Check-in kiosk, QR, and labels** sa kumpletong [B1 CheckIn settings](check-in.md), na sumasaklaw din sa QR guest sign-up at sa [label designer](labels.md). Ang mga kulay ng kiosk ay galing sa **Mobile > App Theme**.
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- [Attendance Setup](setup.md) -- i-configure ang mga campus, oras ng serbisyo, at mga grupo
-- [Pag-record ng Dumalo](recording-attendance.md) -- manu-manong ipasok ang dumalo para sa isang session ng grupo at magsagawa ng mga sheet ng class roll
-- [Pagsusubaybay sa Dumalo](tracking-attendance.md) -- tingnan ang mga uso at i-filter ang mga ulat
-- [Pagpasok ng Bilang ng Ulo at Uso](headcount-entry.md) -- magtatala at mag-chart ng kabuuang bilang nang walang nakarangal na listahan
-- [Check-In](check-in.md) -- mag-setup ng self check-in para sa mga serbisyo
-- [Kaligtasan ng Check-In](checkin-safety.md) -- kapasidad ng kwarto, ratio ng boluntaryo, mga taong pumupulot, at paging
+- [Attendance Setup](setup.md) -- i-configure ang mga campus, oras ng serbisyo, at grupo
+- [Recording Attendance](recording-attendance.md) -- manu-manong ilagay ang attendance para sa isang session ng grupo at i-print ang class roll sheet
+- [Tracking Attendance](tracking-attendance.md) -- tingnan ang mga trend at i-filter ang mga report
+- [Headcount Entry & Trend](headcount-entry.md) -- magtala at mag-chart ng kabuuang bilang nang walang pinangalanang roster
+- [Check-In](check-in.md) -- mag-set up ng self check-in para sa mga serbisyo
+- [Check-In Safety](checkin-safety.md) -- kapasidad ng kuwarto, ratio ng boluntaryo, mga taong susundo, at paging
+- [Check-In Label Designer](labels.md) -- idisenyo ang mga nametag at pickup slip na iniimprenta sa check-in
 
 :::tip
-Kung nag-setup ka ng dumalo sa unang pagkakataon, magsimula sa gabay [Attendance Setup](setup.md) upang tukuyin ang iyong mga campus at oras ng serbisyo. Kapag naipon na iyon, maaari kang magsimulang [mag-record ng dumalo](recording-attendance.md) nang manu-manong o mag-setup ng [self check-in](check-in.md).
+Kung ngayon mo lang sinisimulan ang attendance, magsimula sa gabay na [Attendance Setup](setup.md) para tukuyin ang iyong mga campus at oras ng serbisyo. Kapag naayos na iyon, maaari ka nang magsimulang [magtala ng attendance](recording-attendance.md) nang manu-mano o mag-set up ng [self check-in](check-in.md).
 :::

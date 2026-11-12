@@ -1,54 +1,56 @@
 ---
-title: "Website"
-description: "Visão geral do construtor de sites do B1 Admin: páginas, blog, blocos, aparência, arquivos e calendários, com links para guias de configuração e edição."
+title: "Site"
+description: "Conheça o criador de sites do B1 Admin: páginas, blog, blocos, aparência, arquivos e calendários, com links para os guias de configuração e edição."
 ---
 
-# Website
+# Site
 
 <div class="article-intro">
 
-A seção Website em B1 Admin oferece um construtor de website completo para sua igreja. Você pode criar páginas, personalizar a aparência e experiência de seu site, gerenciar arquivos de mídia e publicar calendários de eventos -- tudo sem escrever código.
+A seção Site no B1 Admin oferece um criador de sites completo para a sua igreja. Você pode criar páginas, personalizar o visual do seu site, gerenciar arquivos de mídia e publicar calendários de eventos -- tudo sem escrever nenhum código.
 
 </div>
 
-## O que Você Pode Fazer
+## O que você pode fazer {#what-you-can-do}
 
-O construtor de Website é organizado nestas áreas principais:
+O criador de sites é organizado nestas áreas principais:
 
-### Páginas
+### Páginas {#pages}
 
-Crie e gerencie todas as páginas de seu website de igreja. A tabela **Páginas** lista cada página -- páginas criadas automaticamente pelo sistema têm um selo **Gerada**, e as demais são páginas **Personalizadas** criadas por você. Você pode adicionar novas páginas personalizadas, editar páginas existentes ou converter páginas geradas automaticamente em páginas personalizadas para controle total sobre seu conteúdo.
+Crie e gerencie todas as páginas do site da sua igreja. A tabela **Páginas** lista cada página -- as páginas criadas automaticamente pelo sistema têm um selo **Gerada**, e as demais são páginas personalizadas que você criou. Você pode adicionar novas páginas personalizadas, editar as existentes ou converter páginas geradas automaticamente em páginas personalizadas, para ter controle total sobre o conteúdo.
 
-Seus links de navegação são exibidos em uma estrutura de árvore. Você pode reorganizar links usando arrastar e soltar para definir a hierarquia e ordem exatas que você deseja que os visitantes vejam.
+Os links de navegação aparecem no painel **Navegação principal**, ao lado da tabela de Páginas. Você pode reordenar e aninhar os links arrastando e soltando, para definir exatamente a hierarquia e a ordem que os visitantes verão. Veja [Gerenciando páginas](./managing-pages.md).
 
 ### Blog {#blog}
 
-Publique notícias, atualizações e devocionais como posts de blog em `/blog` no seu site, com um feed RSS. Consulte o guia [Blog](./blog.md).
+Publique notícias, atualizações e devocionais como postagens de blog em `/blog` no seu site, com um feed RSS. Veja o guia do [Blog](./blog.md).
 
-### Blocos
+### Blocos {#blocks}
 
-Crie componentes de conteúdo reutilizáveis que você pode colocar em várias páginas. Blocos economizam tempo quando você tem conteúdo como um apelo para ação, banner de anúncio ou seção de contato que aparece em mais de um lugar. Atualize um bloco uma vez e a mudança se aplica em todos os lugares onde é usado.
+Crie componentes de conteúdo reutilizáveis que podem ser colocados em várias páginas. Os blocos economizam tempo quando você tem conteúdos como um chamado para ação, um banner de anúncio ou uma seção de contato que aparecem em mais de um lugar. Atualize um bloco uma vez e a alteração se aplica em todos os lugares onde ele é usado. Veja [Blocos reutilizáveis](./blocks.md).
 
-### Aparência
+### Aparência {#appearance}
 
-Personalize o tema, cores, fontes, logotipo e espaçamento de seu website. Você pode aplicar temas de estilo pré-construídos para um início rápido ou ajustar cada detalhe com o editor de paleta de cores, configurações de tipografia e CSS personalizado. Consulte o guia [Aparência](./appearance.md) para detalhes completos.
+Personalize o tema, as cores, as fontes, o logo e o espaçamento do seu site. Você pode aplicar temas de estilo prontos para começar rapidamente, ou ajustar cada detalhe com o editor de paleta de cores, as configurações de tipografia e o CSS personalizado. Veja o guia [Aparência](./appearance.md) para todos os detalhes.
 
-### Arquivos
+### Arquivos {#files}
 
-Carregue e gerencie todos os seus ativos de mídia -- imagens, documentos e outros arquivos -- em um local central, e copie links de arquivos para uso em qualquer lugar do seu site. Consulte [Arquivos](./files.md) para mais informações.
+Envie e gerencie todos os seus recursos de mídia -- imagens, documentos e outros arquivos -- em um único local central, e copie os links dos arquivos para usar em qualquer parte do seu site. Veja [Arquivos](./files.md) para mais informações.
 
-### Calendários
+### Calendários {#calendars}
 
-Publique calendários de eventos em seu website para que os visitantes possam ver o que está acontecendo em sua igreja. Crie calendários curados que extraem eventos de vários grupos em uma única visualização. Os calendários têm seu próprio item **Calendars** no menu do B1 Admin, separado de **Website**.
+Publique calendários de eventos no seu site para que os visitantes vejam o que está acontecendo na sua igreja. Crie calendários selecionados que reúnem eventos de vários grupos em uma única visualização. Os calendários têm seu próprio item **Calendários** no menu do B1 Admin, separado de **Site**.
 
 :::tip
-Comece com [Configuração Inicial](./initial-setup.md) se você estiver configurando seu website pela primeira vez. Ele o orienta através da configuração do domínio, criação de sua primeira página e configuração da aparência de seu site.
+Comece pela [Configuração inicial](./initial-setup.md) se você estiver configurando o seu site pela primeira vez. Ela orienta você na configuração do domínio, na criação da sua primeira página e na configuração da aparência do site.
 :::
 
-## Próximas Etapas
+## Próximos passos {#next-steps}
 
-- [Configuração Inicial](./initial-setup.md) -- Coloque seu website em funcionamento pela primeira vez
-- [Gerenciando Páginas](./managing-pages.md) -- Aprenda como criar e organizar suas páginas
-- [Usando o Editor de Página](./page-editor.md) -- Construa e estilize o conteúdo de sua página com o editor visual
-- [Aparência](./appearance.md) -- Personalize a aparência e experiência de seu site
-- [Arquivos](./files.md) -- Carregue e gerencie arquivos de mídia
+- [Configuração inicial](./initial-setup.md) -- Coloque o seu site no ar pela primeira vez
+- [Gerenciando páginas](./managing-pages.md) -- Aprenda a criar e organizar as suas páginas
+- [Usando o editor de páginas](./page-editor.md) -- Monte e estilize o conteúdo das suas páginas com o editor visual
+- [Blocos reutilizáveis](./blocks.md) -- Crie o conteúdo uma vez e reutilize-o em muitas páginas
+- [Blog](./blog.md) -- Publique notícias e devocionais
+- [Aparência](./appearance.md) -- Personalize o visual do seu site
+- [Arquivos](./files.md) -- Envie e gerencie arquivos de mídia

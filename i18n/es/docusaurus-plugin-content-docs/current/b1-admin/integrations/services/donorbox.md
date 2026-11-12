@@ -1,91 +1,92 @@
 ---
 title: "Donorbox"
-description: "Conecta Donorbox con B1 Admin mediante Zapier para que las donaciones en línea creen registros y perfiles de donantes automáticamente, sin exportar nada."
+description: "Conecte Donorbox con B1 Admin mediante Zapier para que las donaciones en línea creen registros de donación y perfiles de donantes automáticamente, sin necesidad de exportar datos manualmente."
 ---
 
 # Donorbox
 
 <div class="article-intro">
 
-Si tu iglesia recibe donaciones a través de Donorbox pero rastrea personas e instrucciones en B1, puedes hacer que los disparadores instantáneos de Zapier de Donorbox creen registros de donación coincidentes dentro de B1 — y creen el donante como una persona de B1 si aún no existe. Sin reconciliación manual, sin exportación mensual.
+Si su iglesia recibe donaciones a través de Donorbox pero registra a las personas y los estados de cuenta en B1, puede hacer que los disparadores instantáneos de Zapier de Donorbox creen registros de donación correspondientes dentro de B1, y que creen al donante como persona de B1 si todavía no existe. Sin conciliación manual ni exportación mensual.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
 - Una cuenta de [Donorbox](https://donorbox.org) con al menos una campaña
 - Una cuenta de [Zapier](https://zapier.com)
-- Un usuario de B1Admin con permiso **Editar Configuración**
+- Un usuario de B1Admin con el permiso **Edit Settings**
 
 </div>
 
-## Qué Puedes Conectar
+## Lo que puede conectar {#what-you-can-wire-up}
 
 | Dirección | Disparador de Donorbox | Acción de B1 |
 |---|---|---|
-| Donorbox → B1 | Donación nueva o actualizada (instantáneo) | Buscar persona → Agregar donación |
-| Donorbox → B1 | Donante nuevo o actualizado | Crear persona |
-| Donorbox → B1 | Plan nuevo o actualizado (recurrente) | Buscar persona → Agregar donación (usar id del plan como nota) |
+| Donorbox → B1 | New or Updated Donation (instantáneo) | Find Person → Add Donation |
+| Donorbox → B1 | New or Updated Donor | Create Person |
+| Donorbox → B1 | New or Updated Plan (recurrente) | Find Person → Add Donation (use el id del plan como nota) |
 
-Donorbox publica sus disparadores como **instantáneos** — se activan dentro de segundos de una donación real. Sin demora de sondeo.
+Donorbox publica sus disparadores como **instantáneos**: se activan en cuestión de segundos después de una donación real. No hay retraso de sondeo.
 
-## Configuración
+## Configuración {#setup}
 
-### 1. Crear una clave de API B1
+### 1. Cree una clave de API de B1 {#1-mint-a-b1-api-key}
 
-En B1Admin: **Configuración → Desarrollador → Claves de API → Nueva Clave de API**. Alcances:
+En B1Admin: **Settings → Developer → API Keys → New API Key**. Scopes:
 
-- `people:read` — para buscar el donante por correo
-- `people:write` — para crear uno si es nuevo
-- `donations:write` — para registrar el regalo
+- `people:read`: para buscar al donante por correo electrónico
+- `people:write`: para crearlo si es nuevo
+- `donations:write`: para registrar el donativo
 
-Los disparadores en esta dirección son de Donorbox, no de B1, así que no necesitas `settings:write` aquí.
+- `settings:write`: Zapier verifica cada clave de B1 contra la lista de webhooks de B1 al conectarla, así que la conexión falla sin este permiso (aunque en este caso el disparador lo maneja Donorbox, no B1)
 
-### 2. Construir el Zap "registrar una donación"
+### 2. Cree el Zap "registrar una donación" {#2-build-the-record-a-donation-zap}
 
-1. **Disparador** — Donorbox: Nueva donación. Conecta con la clave de API de Donorbox (en Donorbox: *Cuenta → Perfil → Configuración de API*).
-2. **Acción** — B1.church: Buscar persona. Asigna el correo del donante del disparador al campo de búsqueda de *Correo*.
-3. **Acción** — Filtro por Zapier (opcional): continuar solo si el donante no fue encontrado, entonces…
-4. **Acción** — B1.church: Crear persona. Asigna nombre/apellido/correo para que el donante se registre como miembro, no solo como registro de regalo.
-5. **Acción** — B1.church: Agregar donación. Asigna:
-   - Cantidad → `data.amount`
-   - Fecha de donación → fecha de donación del disparador
-   - Fondo → elige el fondo de B1 que refleja la campaña de Donorbox (Zapier te permite cambiar fondos basado en un paso de filtro o formateador)
-   - Método → "En línea"
-   - Notas → id de transacción de Donorbox (útil cuando reconcilias)
+1. **Disparador**: Donorbox: New Donation. Conéctelo con la clave de API de Donorbox (en Donorbox: *Account → Profile → API Settings*).
+2. **Acción**: B1.church: Find Person. Asigne el correo electrónico del donante que viene del disparador al campo *Email*.
+3. **Acción**: B1.church: Add Donation. Asigne:
+   - Person → el id del paso 2
+   - Amount → el monto de la donación del disparador
+   - Donation Date → la fecha de la donación del disparador
+   - Fund → elija el fondo de B1 que refleje la campaña de Donorbox (Zapier le permite cambiar de fondo según un filtro o un paso de formato)
+   - Method → "Online"
+   - Notes → el id de la transacción de Donorbox (útil para conciliar)
 
-Activa el Zap. La siguiente donación en directo a través de Donorbox llega a **B1Admin → Donaciones** automáticamente.
+Active el Zap. La siguiente donación en vivo a través de Donorbox aparecerá automáticamente en **B1Admin → Donations**.
 
-## Recetas Comunes
+*Find Person* de B1 detiene el Zap con un error "No person found" cuando nadie tiene ese correo electrónico, así que un paso de Filter no puede bifurcarse según ese resultado. Para manejar a los donantes que dan por primera vez, active el manejo de errores de Zapier para el paso Find Person y, en su ruta de error, ejecute B1.church: Create Person (asigne nombre, apellido y correo electrónico) y luego Add Donation con el id de la persona nueva. También puede ejecutar el Zap *New Donor* → *Create Person* de la tabla anterior para que los donantes existan en B1 antes de que llegue su donativo.
 
-### Un Zap por fondo
+## Recetas comunes {#common-recipes}
 
-Si ejecutas múltiples campañas de Donorbox que se asignan a fondos de B1 separados, el diseño más limpio es un Zap por campaña con un filtro de *campaña* de Donorbox en la parte superior — de esa forma la asignación de fondo es codificado e inesperado el paso de búsqueda.
+### Un Zap por fondo {#one-zap-per-fund}
 
-### Tratar donaciones actualizadas como correcciones
+Si ejecuta varias campañas de Donorbox que corresponden a fondos separados de B1, la forma más limpia es un Zap por campaña, con un filtro de *campaign* de Donorbox al inicio; así la asignación de fondos queda fija y se evita el paso de búsqueda.
 
-El *Donación nueva o actualizada* de Donorbox se activa en ediciones también. Usa un paso de *ruta* de Zapier en `event_type` para bifurcar: "nuevo" → Agregar donación, "actualizado" → Buscar donación + Actualizar (nota: la aplicación de Zapier de B1 no tiene actualmente una acción de actualización de donación — por ahora, registra eventos "actualizados" en un canal de Slack para revisión manual).
+### Tratar las donaciones actualizadas como correcciones {#treat-updated-donations-as-corrections}
 
-### Sincronizar cambios de plan recurrente a un canal de Slack
+*New or Updated Donation* de Donorbox también se activa con las ediciones. Use un paso *Path* de Zapier sobre `event_type` para bifurcar: "new" → Add Donation, "updated" → Find Donation + Update (nota: la aplicación de Zapier de B1 todavía no tiene una acción Update Donation; por ahora, registre los eventos "updated" en un canal de Slack para revisión manual).
 
-- **Disparador** — Donorbox: Plan nuevo o actualizado
-- **Acción** — Slack: Enviar mensaje a `#donations` (p. ej. "Plan cambiado — el regalo mensual de Sarah es ahora $200")
+### Sincronizar los cambios de planes recurrentes con un canal de Slack {#sync-recurring-plan-changes-to-a-slack-channel}
 
-## Límites y Notas
+- **Disparador**: Donorbox: New or Updated Plan
+- **Acción**: Slack: Send Message a `#donations` (por ejemplo, "Cambió el plan: el donativo mensual de Sarah ahora es de $200")
 
-- **Coincide donantes por correo.** Donorbox no comparte la id de persona de B1; la única clave de unión duradera es el correo. Los donantes que dan bajo un correo diferente crearán una nueva persona de B1 — tu reconciliación mensual debería buscar estas.
-- **Los reembolsos no se exponen por separado** — Donorbox emite una actualización de estado en la misma donación. La aplicación de Zapier de B1 actualmente no tiene una acción de *actualización de donación*; el patrón seguro hoy es registrar eventos de reembolso fuera de banda y ajustar la donación manualmente.
-- **Prueba primero en el sandbox de Donorbox** para evitar crear regalos falsos en B1 de producción. Donorbox proporciona credenciales de modo de prueba separadas de en directo.
+## Límites y notas {#limits--notes}
 
-## Solución de Problemas
+- **Haga coincidir a los donantes por correo electrónico.** Donorbox no comparte el id de persona de B1; la única clave de unión duradera es el correo electrónico. Los donantes que den con un correo distinto crearán una nueva persona en B1: su conciliación mensual debe buscar estos casos.
+- **Los reembolsos no se exponen por separado**: Donorbox emite una actualización de estado sobre la misma donación. La aplicación de Zapier de B1 no tiene actualmente una acción *Update Donation*; el patrón seguro por ahora es registrar los eventos de reembolso fuera del sistema y ajustar la donación manualmente.
+- **Pruebe primero en el sandbox de Donorbox** para no crear donativos falsos en el B1 de producción. Donorbox proporciona credenciales de modo de prueba separadas de las de producción.
 
-- **Advertencia "Persona no encontrada" cada ejecución** — está bien si has ordenado los pasos para que una ejecución de *crear persona* en la rama no encontrada. Si el paso Crear persona nunca se ejecuta tampoco, verifica que la clave de API tenga `people:write`.
-- **La cantidad de donación se ve 100× demasiado grande o pequeña** — Donorbox envía centavos en algunas variantes de carga y dólares en otras. Usa un paso de *Formateador por Zapier — Números* para dividir por 100 si es necesario.
-- **Donaciones duplicadas de un único regalo** — Donorbox activa tanto *Donación nueva* como *Donación actualizada*. Filtra por `event_type = "donation.succeeded"` o construye dos Zaps con filtros que no se superpongan.
+## Solución de problemas {#troubleshooting}
 
-## Ver También
+- **Errores "No person found"**: el donante todavía no está en B1 (o donó con otro correo electrónico). Agregue la ruta de error descrita arriba y verifique que la clave de API tenga `people:write` para que *Create Person* pueda ejecutarse.
+- **El monto de la donación parece 100 veces mayor o menor**: Donorbox envía centavos en algunas variantes de carga y dólares en otras. Use un paso *Formatter by Zapier — Numbers* para dividir entre 100 si es necesario.
+- **Donaciones duplicadas de un solo donativo**: Donorbox activa tanto *New Donation* como *Updated Donation*. Filtre por `event_type = "donation.succeeded"` o cree dos Zaps con filtros que no se solapen.
 
-- [Zapier (descripción general)](../zapier.md) — el lado B1 de cada receta de Zapier
-- [Subsplash](./subsplash.md) — otra plataforma de donación con una aplicación de Zapier
-- [Mailchimp](./mailchimp.md) — encadena "nuevo regalo" en una etiqueta de correo
+## Vea también {#see-also}
+
+- [Zapier (descripción general)](../zapier.md): el lado de B1 de cada receta de Zapier
+- [Subsplash](./subsplash.md): otra plataforma de donaciones con aplicación de Zapier
+- [Mailchimp](./mailchimp.md): encadene "nuevo donativo" con una etiqueta de correo electrónico

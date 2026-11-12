@@ -46,7 +46,7 @@ npm run deploy-prod
 
 실제로는 GitHub Actions가 API를 배포합니다. **Deploy Demo**는 `main`에 푸시할 때마다 실행되고, **Deploy Prod**는 수동으로(워크플로 디스패치) 시작합니다. 더 이상 스테이징 환경은 없습니다.
 
-## 데이터베이스 마이그레이션
+## 데이터베이스 마이그레이션 {#database-migrations}
 
 **Deploy Prod**는 배포의 일부로 대기 중인 데이터베이스 마이그레이션을 적용합니다. 프로덕션 데이터베이스는 VPC 내부의 연결만 허용하므로, `serverless deploy` 직후 워크플로는 `migrate` Lambda(`api-Prod-migrate`)를 호출합니다. 이 Lambda는 모든 모듈의 대기 중인 마이그레이션을 실행하고 `{ ok, environment, modules }`를 반환합니다. 모듈이 실패하거나 거부되면(예를 들어 마이그레이션 기록이 없는 데이터베이스), 작업이 실패하므로 스키마가 코드보다 뒤처지는 상태로 남지 않습니다. **Rollback Prod**는 Lambda 코드만 되돌리며, 마이그레이션은 적용된 상태로 남으므로 마이그레이션은 추가만 하는 방식으로 유지하세요. 상태를 확인하거나 수동으로 마이그레이션을 실행하는 방법은 [서버 관리자 -- 데이터베이스 마이그레이션](../server-admin.md#database-migrations)을 참조하세요.
 

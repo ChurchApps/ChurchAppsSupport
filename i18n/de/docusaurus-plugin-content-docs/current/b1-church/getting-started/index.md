@@ -1,56 +1,57 @@
 ---
-title: "Erste Schritte mit dem B1.church-Mitgliederportal"
+title: "Erste Schritte mit dem B1.church Mitgliederportal"
 sidebar_label: "Erste Schritte"
-description: "Finden Sie die B1.church-Seite Ihrer Gemeinde, erstellen Sie Ihr Mitgliedskonto und entdecken Sie, was das Portal bietet, von Gruppen und Spenden bis hin zu Check-in und Dienstplänen."
+description: "Finde die B1.church-Website deiner Gemeinde, erstelle dein Mitgliedskonto und erfahre, was das Portal bietet -- von Gruppen und Spenden bis zu Check-in und Plänen."
 ---
 
 # Erste Schritte mit B1.church
 
 <div class="article-intro">
 
-B1.church ist die Online-Heimat Ihrer Gemeinde. Hier bleiben Sie mit Ihrer Gemeinde in Verbindung, sehen aktuelle Informationen, geben online Spenden, checken sich für Gottesdienste ein und vieles mehr. Dieser Abschnitt führt Sie durch die Grundlagen des Zugangs zum Mitgliederportal und seiner Nutzung.
+B1.church ist das Online-Zuhause deiner Gemeinde. Hier bleibst du mit deiner Gemeinde in Verbindung, siehst Neuigkeiten, spendest online, checkst für Gottesdienste ein und vieles mehr. Dieser Abschnitt führt dich durch die Grundlagen für den Zugang zum Mitgliederportal und seine Nutzung.
 
 </div>
 
-## Zugang zur Website Ihrer Gemeinde
+## Auf die Website deiner Gemeinde zugreifen {#accessing-your-churchs-site}
 
-Ihre Gemeinde hat eine eigene B1.church-Adresse, in der Regel im Format `https://yourchurchname.b1.church`. Sie können diese Adresse in jedem Webbrowser auf Ihrem Computer, Tablet oder Smartphone aufrufen. Die Gemeindeleitung oder das Willkommensteam kann Ihnen die genaue Adresse mitteilen.
+Deine Gemeinde hat eine eigene B1.church-Adresse, in der Regel im Format `https://yourchurchname.b1.church`. Du kannst diese Adresse in jedem Webbrowser auf deinem Computer, Tablet oder Telefon aufrufen. Die Gemeindeleitung oder das Willkommensteam kann dir die genaue Adresse nennen.
 
-Wenn Sie die Seite zum ersten Mal aufrufen, sehen Sie die öffentliche Website Ihrer Gemeinde mit deren individuellem Design, Navigationsmenüs und Inhaltsseiten.
+Wenn du die Website zum ersten Mal besuchst, siehst du die öffentliche Website deiner Gemeinde mit ihrem eigenen Branding, den Navigationsmenüs und Inhaltsseiten.
 
-## Ein Konto erstellen
+## Ein Konto erstellen {#creating-an-account}
 
-Um auf das Mitgliederportal und seine Funktionen zuzugreifen, benötigen Sie ein ChurchApps-Konto.
+Um auf das Mitgliederportal und seine Funktionen zugreifen zu können, benötigst du ein ChurchApps-Konto.
 
-1. Rufen Sie die B1.church-Adresse Ihrer Gemeinde auf.
-2. Klicken Sie oben rechts auf der Seite auf die Schaltfläche **Anmelden**.
-3. Wählen Sie auf der Anmeldeseite die Option, ein neues Konto zu **registrieren**.
-4. Geben Sie Ihren **Vornamen**, Ihren **Nachnamen**, Ihre **E-Mail-Adresse** ein und wählen Sie ein **Passwort**.
-5. Füllen Sie das Registrierungsformular vollständig aus.
+1. Rufe die B1.church-Adresse deiner Gemeinde auf.
+2. Klicke oben rechts auf der Seite auf die Schaltfläche **Anmelden** (oder gehe zu `/login`, falls deine Gemeinde die Schaltfläche nicht anzeigt). Im Mitgliederportal tippst du stattdessen auf **Anmelden**.
+3. Wähle auf dem Anmeldebildschirm **Registrieren** (im Mitgliederportal **Konto erstellen**).
+4. Gib deinen **Vornamen**, **Nachnamen** und deine **E-Mail-Adresse** ein und sende das Formular ab.
+5. Prüfe deine E-Mails auf einen **6-stelligen Bestätigungscode** und gib ihn ein.
+6. Wähle ein **Passwort** (mindestens 8 Zeichen) und gib es zur Bestätigung noch einmal ein.
 
-Nach der Registrierung können Sie sich anmelden und mit allen Werkzeugen auf das Mitgliederportal zugreifen.
+Danach bist du angemeldet und kannst das Mitgliederportal mit allen Werkzeugen nutzen.
 
 :::tip
-Wenn Ihre Gemeinde Sie bereits in ihrem System erfasst hat, verwenden Sie dieselbe E-Mail-Adresse, die dort hinterlegt ist. So wird Ihr Konto mit Ihrem bestehenden Gemeindeprofil verknüpft.
+Hat deine Gemeinde dich bereits in ihr System aufgenommen, verwende die E-Mail-Adresse, die dort hinterlegt ist. So wird dein Konto mit deinem bestehenden Gemeindeprofil verknüpft.
 :::
 
-## Was Sie tun können
+## Was du tun kannst {#what-you-can-do}
 
-Sobald Sie angemeldet sind, bietet Ihnen das Mitgliederportal Zugang zu:
+Sobald du angemeldet bist, gibt dir das Mitgliederportal Zugriff auf:
 
-- Einem **Startbereich** mit Vorschauen zu Ihrem Dienst, Ihren Gruppen und Spenden sowie einer Seite **Ich** mit den anstehenden Terminen für Sie
-- **Gruppen**, denen Sie angehören, einschließlich Unterhaltungen und Veranstaltungen
+- Ein **Startseite**-Dashboard mit Vorschauen zu deinem Dienst, deinen Gruppen und Spenden sowie eine **Ich**-Seite mit dem, was für dich ansteht
+- **Gruppen**, denen du angehörst, einschließlich Unterhaltungen und Veranstaltungen
 - Online-**Spenden**
-- **Plänen** mit Ihrem Dienstplan und Gottesdienstdetails
+- **Pläne**, die deinen Dienstplan und die Gottesdienstdetails zeigen
 - **Check-in** für Gottesdienste und Veranstaltungen
-- Dem **Gemeinschafts**-Verzeichnis, um andere Mitglieder zu finden und mit ihnen in Kontakt zu treten
+- Das **Community**-Verzeichnis, um andere Mitglieder zu finden und mit ihnen in Kontakt zu treten
 
-## Zugriff über das Smartphone
+## Auf deinem Telefon nutzen {#accessing-on-your-phone}
 
-B1.church funktioniert in jedem mobilen Browser. Für ein eher app-ähnliches Erlebnis können Sie das Mitgliederportal Ihrer Gemeinde als **Progressive Web App (PWA)** installieren. Rufen Sie dazu `https://yourchurchname.b1.church/mobile/install` auf, um eine Schritt-für-Schritt-Anleitung für Ihr Gerät zu erhalten, oder fügen Sie die Seite direkt über Safari oder Chrome zu Ihrem Startbildschirm hinzu. Ein App-Store ist nicht erforderlich. Eine Anleitung finden Sie unter [Installation als App (PWA)](./installing-pwa.md).
+B1.church funktioniert in jedem mobilen Browser. Für ein eher app-artiges Erlebnis installiere das Mitgliederportal deiner Gemeinde als **Progressive Web App (PWA)** -- rufe `https://yourchurchname.b1.church/mobile/install` auf, um geführte, gerätespezifische Schritte zu erhalten, oder füge es direkt über Safari oder Chrome zu deinem Startbildschirm hinzu. Kein App-Store nötig. Anleitungen findest du unter [Als App installieren (PWA)](./installing-pwa.md).
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- [Anmelden](./logging-in.md) – Erfahren Sie, wie Sie sich anmelden und Ihre Sitzung verwalten.
-- [Navigation in B1App](./navigating.md) – Finden Sie sich im Mitgliederportal zurecht.
-- [Installation als App (PWA)](./installing-pwa.md) – Fügen Sie B1.church zum Startbildschirm Ihres Smartphones hinzu.
+- [Anmelden](./logging-in.md) -- Erfahre, wie du dich anmeldest und deine Sitzung verwaltest.
+- [In B1App navigieren](./navigating.md) -- Finde dich im Mitgliederportal zurecht.
+- [Als App installieren (PWA)](./installing-pwa.md) -- Füge B1.church zum Startbildschirm deines Telefons hinzu.

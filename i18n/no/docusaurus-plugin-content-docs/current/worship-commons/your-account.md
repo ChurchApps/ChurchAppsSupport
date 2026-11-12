@@ -60,7 +60,7 @@ For en publisert sang klikker du på **Kopier lenke** for å dele sidens lenke, 
 Hvis WorshipCommons-teamet legger deg til som medutgiver av en sang – for eksempel en sang du har skrevet sammen med andre, og som noen andre har lastet opp – vises den i **Mine innsendinger** som **Publisert**, selv om du ikke sendte den inn selv. Som utgiver av sangen kan du gjøre endringer også når lisensen stenger for offentlige redigeringer.
 :::
 
-## Forfattersider
+## Forfattersider {#writer-pages}
 
 Hver forfatter i biblioteket har en forfattersside som viser sangene deres, med årstall, tonearter, temaer og lisens for hver sang. Menigheter kommer dit ved å klikke på en forfatters navn på en sangside. Når en sang har flere forfattere, går hvert navn til sin egen side.
 

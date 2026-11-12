@@ -1,163 +1,156 @@
 ---
-title: "Navigation Styles"
-description: "I-customize ang kulay ng solid at transparent na navigation bar ng website sa B1 Admin, kasama ang link, hover, at active state para sa site ng simbahan."
+title: "Mga Istilo ng Navigation"
+description: "I-customize ang mga kulay ng solid at transparent na navigation bar ng website sa B1 Admin, kabilang ang mga estado ng link, hover, at active para sa site ng iyong simbahan."
 ---
 
-# Navigation Styles
+# Mga Istilo ng Navigation
 
 <div class="article-intro">
 
-I-customize ang mga kulay ng navigation bar ng website ng inyong simbahan para tumugma sa inyong branding. Maaari mong i-configure ang mga kulay para sa parehong solid na background at transparent na overlay, kaya ikaw ang may ganap na kontrol sa itsura ng iyong navigation sa iba't ibang pahina.
+I-customize ang mga kulay ng navigation bar ng website ng iyong simbahan para tumugma sa iyong branding. Maaari mong i-configure ang mga kulay para sa parehong solid na background at transparent na overlay, para ganap mong makontrol kung paano lumilitaw ang iyong navigation sa iba't ibang pahina.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng pahintulot para pamahalaan ang website ng inyong simbahan. Tingnan ang [Mga Role at Pahintulot](../people/roles-permissions.md) para sa mga detalye.
-- Ihanda ang inyong mga brand color, kasama ang mga hex color code (hal., #03A9F4).
-- Unawain ang pagkakaiba ng solid at transparent na navigation style sa iyong website.
+- Kailangan mo ng permiso na mag-edit ng nilalaman ng website. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) para sa mga detalye.
+- Ihanda ang mga brand color mo, kasama ang hex color code (hal., #03A9F4).
+- Unawain ang pagkakaiba ng solid at transparent na istilo ng navigation sa iyong website.
 
 </div>
 
-## Pag-unawa sa mga Navigation Mode
+## Pag-unawa sa Mga Mode ng Navigation {#understanding-navigation-modes}
 
-Maaaring lumabas ang navigation ng iyong website sa dalawang magkaibang style depende sa pahina:
+Maaaring lumitaw ang navigation ng iyong website sa dalawang magkaibang istilo depende sa pahina:
 
-- **Solid navigation** -- Navigation bar na may background color, karaniwang ginagamit sa mga content page
-- **Transparent navigation** -- Navigation na nakapatong sa nilalaman ng pahina, karaniwang ginagamit sa mga pahinang may hero image o full-screen na background
+- **Solid navigation** -- Navigation bar na may kulay ng background, karaniwang ginagamit sa mga content page
+- **Transparent navigation** -- Navigation na nasa ibabaw ng nilalaman ng pahina, karaniwang ginagamit sa mga pahinang may hero image o full-screen na background
 
-Maaari mong i-customize nang hiwalay ang mga kulay para sa bawat mode.
+Maaari mong i-customize ang mga kulay para sa parehong mode nang hiwalay.
 
-## Pagpunta sa Navigation Styles
+## Pag-access sa Mga Istilo ng Navigation {#accessing-navigation-styles}
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas) at i-expand ang **Website**
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas-kaliwa) at palawakin ang **Website**
 2. I-click ang **Appearance**
-3. Sa listahan ng **Style Settings**, i-click ang **Navigation**
+3. Sa listahang **Style Settings**, i-click ang **Navigation**
 
-Ang **Navigation Styling** editor ay may dalawang card: **Header (solid)** at **Header over hero (transparent)**.
+May dalawang card ang editor na **Navigation Styling**: ang **Header (solid)** at ang **Header over hero (transparent)**.
 
-## Pag-configure ng Solid Navigation
+## Pag-configure ng Solid Navigation {#configuring-solid-navigation}
 
-Lumalabas ang solid navigation na may background color sa likod ng navigation bar. Ang mga setting na ito ay nasa **Header (solid)** card. Maaari mong i-customize ang:
+Lumilitaw ang solid navigation na may kulay ng background sa likod ng navigation bar. Nasa card na **Header (solid)** ang mga setting na ito. Opsyonal ang bawat kulay: habang naka-off ang switch na **Override** nito, pinananatili ng navigation ang normal na kulay ng iyong site. Maaari mong i-customize ang:
 
-### Background Color
+### Background Color {#background-color}
 
-1. I-toggle ang **Override** switch para sa **Background color**
+1. I-toggle ang switch na **Override** para sa **Background color**
 2. I-click ang color picker
-3. Piliin ang gusto mong background color
-4. Ang default ay puti (#FFFFFF)
+3. Piliin ang gusto mong background color (nagsisimula ang picker sa puti, #FFFFFF)
 
-### Link Color
+### Link Color {#link-color}
 
-1. I-toggle ang **Override** switch para sa **Link color**
-2. Piliin ang kulay para sa text ng mga navigation link
-3. Nakakaapekto ito sa mga link sa kanilang default na estado
-4. Ang default ay dark gray (#555555)
+1. I-toggle ang switch na **Override** para sa **Link color**
+2. Piliin ang kulay ng teksto ng navigation link
+3. Nakakaapekto ito sa mga link sa karaniwang estado nila (nagsisimula ang picker sa dark gray, #555555)
 
-### Link Hover Color
+### Link Hover Color {#link-hover-color}
 
-1. I-toggle ang **Override** switch para sa **Link hover color**
-2. Piliin ang kulay na lilipatan ng mga link kapag itinapat ng mga user ang cursor sa mga ito
-3. Nagbibigay ito ng visual na tugon para sa mga link na maaaring i-click
-4. Ang default ay light blue (#03A9F4)
+1. I-toggle ang switch na **Override** para sa **Link hover color**
+2. Piliin ang kulay na magiging link kapag itinapat ng mga user ang mouse dito
+3. Nagbibigay ito ng visual na feedback para sa mga clickable na link (nagsisimula ang picker sa light blue, #03A9F4)
 
-### Active Color
+### Active Color {#active-color}
 
-1. I-toggle ang **Override** switch para sa **Active link color**
-2. Piliin ang kulay para sa link ng kasalukuyang aktibong pahina
-3. Tinutulungan nito ang mga user na malaman kung nasaang pahina sila
-4. Ang default ay light blue (#03A9F4)
+1. I-toggle ang switch na **Override** para sa **Active link color**
+2. Piliin ang kulay para sa link ng kasalukuyang pahina
+3. Nakakatulong ito sa mga user na malaman kung nasaang pahina sila (nagsisimula ang picker sa light blue, #03A9F4)
 
-## Pag-configure ng Transparent Navigation
+## Pag-configure ng Transparent Navigation {#configuring-transparent-navigation}
 
-Nakapatong ang transparent navigation sa nilalaman ng iyong pahina nang walang background. Ang mga setting na ito ay nasa **Header over hero (transparent)** card. Maaari mong i-customize ang:
+Ang transparent na navigation ay nasa ibabaw ng nilalaman ng pahina nang walang background. Nasa card na **Header over hero (transparent)** ang mga setting na ito. Habang naka-off ang isang switch na **Override**, awtomatikong tumutugma ang kulay na iyon sa kulay ng teksto ng hero section. Maaari mong i-customize ang:
 
-### Link Color
+### Link Color {#link-color-1}
 
-1. I-toggle ang **Override** switch para sa **Link color**
-2. Pumili ng kulay na malinaw ang contrast sa background ng iyong pahina
-3. Kadalasan, puti o mapusyaw na mga kulay ang pinakamainam sa ibabaw ng madilim na background
-4. Ang default ay dark gray (#555555)
+1. I-toggle ang switch na **Override** para sa **Link color**
+2. Pumili ng kulay na mahusay na nagkakaiba sa background ng iyong pahina
+3. Kadalasang pinakamainam ang puti o mapuputing kulay sa ibabaw ng madidilim na background
 
-### Link Hover Color
+### Link Hover Color {#link-hover-color-1}
 
-1. I-toggle ang **Override** switch para sa **Link hover color**
-2. Piliin ang kulay para sa hover state
-3. Tiyaking nakikita ito laban sa background ng iyong pahina
-4. Ang default ay light blue (#03A9F4)
+1. I-toggle ang switch na **Override** para sa **Link hover color**
+2. Piliin ang kulay ng hover state
+3. Siguraduhing nakikita ito laban sa background ng iyong pahina
 
-### Active Color
+### Active Color {#active-color-1}
 
-1. I-toggle ang **Override** switch para sa **Active link color**
+1. I-toggle ang switch na **Override** para sa **Active link color**
 2. Piliin ang kulay ng indicator ng aktibong pahina
-3. Dapat itong angat pero bagay pa rin sa iyong disenyo
-4. Ang default ay light blue (#03A9F4)
+3. Dapat kitang-kita ito habang bagay pa rin sa disenyo mo
 
 :::info
-Walang setting ng background color ang transparent navigation dahil direkta itong nakapatong sa nilalaman ng pahina.
+Walang setting ng background color ang transparent na navigation dahil direktang nakapatong ito sa nilalaman ng pahina.
 :::
 
-## Pag-save ng Iyong mga Pagbabago
+## Pag-save ng Mga Pagbabago {#saving-your-changes}
 
-1. Pagkatapos i-configure ang iyong mga kulay, i-click ang **Save Navigation**
-2. Agad na umiiral ang iyong mga pagbabago sa iyong live na website
+1. Pagkatapos i-configure ang mga kulay mo, i-click ang **Save Navigation**
+2. Agad na nalalapat ang mga pagbabago sa live mong website
 3. Bisitahin ang iyong website para makita ang navigation sa parehong mode
 
-## Pag-reset sa mga Default
+## Pagbabalik sa Default {#resetting-to-defaults}
 
-Kung gusto mong bumalik sa mga default na kulay:
+Kung gusto mong bumalik sa mga karaniwang kulay:
 
-1. I-toggle off ang mga **Override** switch para sa anumang custom na kulay
+1. I-toggle na naka-off ang mga switch na **Override** para sa anumang custom na kulay
 2. I-click ang **Save Navigation**
-3. Babalik ang navigation sa default na color scheme
+3. Babalik ang navigation sa normal na kulay ng iyong site (at, sa ibabaw ng hero, sa kulay ng teksto ng hero)
 
-O i-click ang **Cancel** para itapon ang lahat ng pagbabago nang hindi sine-save.
+O i-click ang **Cancel** para itapon ang lahat ng pagbabago nang hindi nagse-save.
 
-## Mga Pinakamahusay na Gawi
+## Mga Pinakamahusay na Kasanayan {#best-practices}
 
-### Contrast ng Kulay
+### Contrast ng Kulay {#color-contrast}
 
-- **Readability** -- Tiyaking sapat ang contrast ng mga kulay ng link sa background
-- **WCAG compliance** -- Layuning magkaroon ng hindi bababa sa 4.5:1 na contrast ratio para sa accessibility
+- **Pagkabasa** -- Siguraduhing sapat ang contrast ng mga kulay ng link laban sa background
+- **Pagsunod sa WCAG** -- Layunin ang hindi bababa sa 4.5:1 na contrast ratio para sa accessibility
 - **Subukan ang parehong mode** -- I-preview ang iyong site gamit ang parehong solid at transparent na navigation
 
-### Pagkakapare-pareho ng Brand
+### Pagkakapare-pareho ng Brand {#brand-consistency}
 
-- **Gamitin ang inyong mga brand color** -- Itugma sa logo at tema ng inyong website
-- **Limitahan ang iyong palette** -- Manatili sa 2-3 kulay para sa magkakaugnay na itsura
-- **Isaalang-alang ang iyong mga larawan** -- Kung gumagamit ng transparent na navigation, subukan ito laban sa mga karaniwang background ng pahina
+- **Gamitin ang mga brand color mo** -- Itugma sa iyong logo at tema ng website
+- **Limitahan ang palette** -- Dumikit sa 2-3 kulay para sa magkakaugnay na itsura
+- **Isaalang-alang ang iyong mga larawan** -- Kung gagamit ng transparent na navigation, subukan ito laban sa karaniwang background ng pahina
 
-### Mga Hover at Active na Estado
+### Mga Hover at Active State {#hover-and-active-states}
 
-- **Malinaw na tugon** -- Gawing kapansin-pansing iba ang mga hover state sa mga default na link
-- **Ibukod ang mga aktibong pahina** -- Gumamit ng kakaibang kulay para malaman ng mga user kung nasaan sila
-- **Maayos na transition** -- Awtomatikong ina-animate ng sistema ang mga pagbabago ng kulay
+- **Malinaw na feedback** -- Gawing halatang iba ang mga hover state sa karaniwang link
+- **Pagkilala sa mga aktibong pahina** -- Gumamit ng natatanging kulay para malaman ng mga user kung nasaan sila
+- **Maayos na transition** -- Awtomatikong ina-animate ng sistema ang pagbabago ng kulay
 
-## Pag-troubleshoot
+## Troubleshooting {#troubleshooting}
 
-### Hindi Tama ang Itsura ng mga Kulay
+### Hindi Tama ang Itsura ng Mga Kulay {#colors-dont-look-right}
 
-- **I-clear ang iyong cache** -- Maaaring ipakita ng browser caching ang mga lumang kulay
-- **Suriin ang mga hex code** -- Siguraduhing tama ang mga hex color code na inilagay mo
-- **Subukan sa iba't ibang background** -- Maaaring magkaiba ang itsura ng mga kulay depende sa pahina
+- **I-clear ang iyong cache** -- Maaaring magpakita ng lumang kulay ang browser caching
+- **Suriin ang hex code** -- Siguraduhing tama ang mga hex color code na inilagay mo
+- **Subukan sa iba't ibang background** -- Maaaring magmukhang iba ang mga kulay depende sa pahina
 
-### Hindi Nakikita ang Navigation
+### Hindi Nakikita ang Navigation {#navigation-not-visible}
 
-- **Transparent mode** -- Kung gumagamit ng transparent na navigation sa ibabaw ng mapusyaw na mga larawan, maaaring mahirap makita ang madilim na text
-- **Solusyon** -- Ayusin ang mga kulay ng iyong link o gumamit ng mas madilim na background ng pahina
-- **Alternatibo** -- Magdagdag ng banayad na anino o background overlay sa bahagi ng navigation
+- **Transparent mode** -- Kung transparent na navigation sa ibabaw ng magagaan na larawan, maaaring mahirap makita ang maitim na teksto
+- **Solusyon** -- Ayusin ang mga kulay ng link o gumamit ng mas madilim na background ng pahina
+- **Alternatibo** -- Magdagdag ng banayad na shadow o background overlay sa bahagi ng navigation
 
-## Mga Teknikal na Detalye
+## Mga Teknikal na Detalye {#technical-details}
 
-Ang mga navigation style ay iniimbak bilang JSON at ina-apply gamit ang mga CSS variable:
+Naka-imbak bilang JSON ang mga istilo ng navigation at inilalapat gamit ang CSS variable:
 
-- Agad na nagkakabisa ang mga pagbabago nang hindi kailangang i-rebuild ang site
-- Kumakalat ang mga kulay sa lahat ng navigation element
-- Opsyonal ang mga override; ang mga kulay na hindi itinakda ay gumagamit ng mga default ng theme
+- Agad na nagkakabisa ang mga pagbabago nang hindi kinakailangang i-rebuild ang site
+- Lumalaganap ang mga kulay sa lahat ng elemento ng navigation
+- Opsyonal ang mga override; ang mga kulay na walang nakatakda ay gumagamit ng default ng theme
 
-## Mga Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Appearance](./appearance.md) -- I-customize ang kabuuang itsura at dating ng iyong website
-- [Pamamahala ng mga Pahina](./managing-pages.md) -- Gumawa at mag-organisa ng mga pahina ng iyong website
+- [Appearance](./appearance.md) -- I-customize ang kabuuang itsura at dating ng website mo
+- [Managing Pages](./managing-pages.md) -- Gumawa at mag-ayos ng mga pahina ng website mo
 - [Page Editor](./page-editor.md) -- Idisenyo ang mga layout at nilalaman ng pahina

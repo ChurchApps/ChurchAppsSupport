@@ -1,47 +1,55 @@
 ---
-title: "Pagbabasa ng Bibliya sa B1.church"
+title: "Pagbasa ng Bibliya sa B1.church"
 sidebar_label: "Bibliya"
-description: "Magbasa ng Kasulatan sa B1.church Bible reader, may kontrol sa aklat, kabanata, at salin, at Bible page para sa pang-araw-araw na pagbasa."
+description: "Basahin ang Kasulatan sa Bible reader ng B1.church, na may mga kontrol sa aklat, kabanata, at salin, at isang Bible page para sa araw-araw na pagbasa."
 ---
 
 # Bibliya
 
 <div class="article-intro">
 
-Ang B1.church ay may kasamang built-in na Bible reader para mabasa mo ang Kasulatan nang hindi umaalis sa site. Ang reader ay naka-embed nang direkta sa pahina, na nagbibigay sa iyo ng mabilis na access sa anumang talata kasabay ng iba mong mga tool ng simbahan.
+Kasama sa B1.church ang built-in na Bible reader para mabasa mo ang Kasulatan nang hindi umaalis sa site. Naka-embed ang reader nang direkta sa pahina, kaya mabilis mong maa-access ang anumang talata kasabay ng iba mo pang kagamitan sa simbahan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Hindi kailangan mag-log in para gamitin ang Bible reader. Ang Bible page ay pampublikong accessible.
-- Dapat ay nagdagdag ang iyong simbahan ng Bible page sa kanilang site navigation.
+- Hindi kailangang mag-log in para gamitin ang Bible reader. Bukas sa publiko ang Bible page.
+- Dapat nagdagdag ang iyong simbahan ng Bible page sa navigation ng kanilang site.
 
 </div>
 
-## Pagbasa ng Bibliya
+## Pagbasa ng Bibliya {#reading-the-bible}
 
-1. Mag-navigate sa **Bibliya** na pahina mula sa site navigation ng iyong simbahan.
-2. Ang reader ay nagbubukas sa Genesis 1:1 bilang default.
-3. Gamitin ang mga navigation control sa loob ng reader para lumipat sa ibang libro, kabanata, o talata.
+1. Pumunta sa pahinang **Bible** mula sa navigation ng site ng iyong simbahan.
+2. Bubukas ang reader sa Genesis 1 bilang default.
+3. Gamitin ang mga kontrol sa navigation sa loob ng reader para lumipat sa ibang aklat, kabanata, o talata.
 
-Ang Bible reader ay gumagamit ng NIRV (New International Reader's Version) na salin bilang default.
+Pinapagana ng **YouVersion** ang Bible reader at nagbibigay sa iyo ng access sa malawak na pagpipilian ng mga salin ng Bibliya sa maraming wika.
 
-## Pag-navigate sa mga Talata
+## Pag-navigate sa Mga Talata {#navigating-passages}
 
-Ang naka-embed na reader ay nagbibigay ng mga control para sa paglipat sa Kasulatan. Maaari mong:
+Nagbibigay ang naka-embed na reader ng mga kontrol para sa paglipat sa Kasulatan. Maaari kang:
 
-- Mag-browse sa isang tiyak na libro ng Bibliya
+- Mag-browse sa isang partikular na aklat ng Bibliya
 - Tumalon sa isang partikular na kabanata
 - Mag-scroll sa mga talata sa loob ng isang kabanata
+- Lumipat sa ibang salin ng Bibliya gamit ang version selector
+- Sa website ng iyong simbahan, gamitin ang mga button na **Previous Chapter** at **Next Chapter** sa itaas ng teksto para isa-isang tingnan ang mga kabanata ng isang aklat
 
-Ang reader ay pumupuno sa content area ng pahina, na nagbibigay sa iyo ng sapat na espasyo para komportableng magbasa.
+Pinupuno ng reader ang content area ng pahina, kaya maluwag kang makakabasa.
 
 :::tip
-Maaari mong i-bookmark ang Bible page sa iyong browser para mabilis na makabalik dito para sa iyong pang-araw-araw na pagbasa. Pagsamahin ito sa [Talata ng Araw](./verse-of-the-day.md) para sa pang-araw-araw na inspirasyon mula sa Kasulatan.
+Sa member portal (`/mobile/bible`), naaalala sa device na iyon ang napili mong aklat, kabanata, at salin, kaya magbubukas muli ang reader kung saan ka huminto. Palaging nagsisimula sa Genesis 1 ang website reader.
 :::
 
-## Availability
+Kung hindi ma-load ng reader, sasabihin ito ng pahina at mag-aalok ng button para magbasa sa Bible.com sa halip (nag-aalok din ang member portal ng Biblia.com).
 
-Ang Bible page ay isang built-in na feature ng nilalaman ng B1.church. Kung hindi mo makita ang **Bibliya** na link sa navigation ng iyong simbahan, maaaring hindi ito idinagdag ng administrator ng iyong simbahan sa site menu. Makipag-ugnayan sa administrator ng iyong simbahan para hilingin ito.
+:::tip
+Maaari mong i-bookmark ang Bible page sa iyong browser para mabilis itong mabalikan para sa araw-araw mong pagbasa. Ipares ito sa [Verse of the Day](./verse-of-the-day.md) para sa pang-araw-araw na inspirasyon mula sa Kasulatan.
+:::
+
+## Availability {#availability}
+
+Ang Bible page ay isang built-in na feature ng content ng B1.church. Kung wala kang makitang link na **Bible** sa navigation ng iyong simbahan, maaaring hindi ito idinagdag ng administrator ng simbahan sa menu ng site. Makipag-ugnayan sa administrator ng iyong simbahan para hilingin ito.

@@ -1,18 +1,19 @@
-﻿---
+---
 title: "ChatGPT"
+description: "Verbinden Sie ChatGPT mit den B1-Daten Ihrer Gemeinde über einen API-Schlüssel, damit Sie in B1 Admin Fragen zu Personen, Spenden und Anwesenheit in einfacher Sprache stellen können."
 ---
 
 # ChatGPT
 
 <div class="article-intro">
 
-Verbinden Sie ChatGPT mit den Daten Ihrer Gemeinde in B1 und stellen Sie Fragen in einfacher Sprache – es antwortet anhand Ihrer aktuellen Gemeindedaten. Sie können es auch bitten, bei Aufgaben zu helfen, die in B1 Admin mehrere Schritte erfordern würden.
+Verbinden Sie ChatGPT mit den B1-Daten Ihrer Gemeinde und stellen Sie Fragen in einfacher Sprache – die Antworten stammen aus Ihren aktuellen Gemeindedaten. Sie können ChatGPT auch bitten, bei Aufgaben zu helfen, die in B1 Admin mehrere Schritte erfordern würden.
 
-**Einige Beispiele für Fragen:**
+**Einige Beispielfragen:**
 - *„Zeig mir alle, die letzte Woche da waren, aber noch keiner Kleingruppe zugeordnet sind“*
 - *„Fasse die Spenden dieses Monats nach Fonds zusammen“*
 - *„Wer sind unsere neuesten Mitglieder, und haben wir uns bei ihnen gemeldet?“*
-- *„Ich komme in B1 bei X nicht weiter – kannst du mir Schritt für Schritt erklären, wie es geht?“*
+- *„Ich weiß nicht, wie ich in B1 X mache – kannst du mich durch den Ablauf führen?“*
 
 </div>
 
@@ -20,29 +21,29 @@ Verbinden Sie ChatGPT mit den Daten Ihrer Gemeinde in B1 und stellen Sie Fragen 
 <h4>Was Sie benötigen</h4>
 
 - **Die ChatGPT-Desktop-App** für Mac oder Windows
-- **Ein kostenpflichtiger ChatGPT-Tarif** (Plus oder höher). Kostenlose ChatGPT-Konten können sich nicht mit B1 verbinden.
-- **Ihr B1-Login** mit der Berechtigung, Gemeindeeinstellungen zu verwalten (nötig, um einen Schlüssel zu erstellen). Haben Sie diese nicht? Fragen Sie die B1-Administration Ihrer Gemeinde.
+- **Ein kostenpflichtiges ChatGPT-Abo** (Plus oder höher). Kostenlose ChatGPT-Konten können sich nicht mit B1 verbinden.
+- **Ihr B1-Login** mit der Berechtigung, Gemeindeeinstellungen zu verwalten (wird benötigt, um einen Schlüssel zu erstellen). Haben Sie diese nicht? Fragen Sie die B1-Administration Ihrer Gemeinde.
 
 </div>
 
-:::tip Empfohlen: Probieren Sie zuerst Claude – es ist kostenlos
-[Claude](./claude.md) verbindet sich im **kostenlosen Tarif** mit B1 und ist in weniger als 3 Minuten eingerichtet – fügen Sie B1 einfach als Connector hinzu und melden Sie sich mit Ihrem B1-Konto an. Es ist kein Schlüssel nötig. So kann Ihre Gemeinde KI mit B1 am einfachsten ausprobieren, bevor sie für etwas bezahlt.
+:::tip Empfehlung: Probieren Sie zuerst Claude aus – es ist kostenlos
+[Claude](./claude.md) verbindet sich im **kostenlosen Tarif** mit B1 und ist in weniger als 3 Minuten eingerichtet – fügen Sie einfach B1 als Connector hinzu und melden Sie sich mit Ihrem B1-Konto an. Kein Schlüssel nötig. Es ist der einfachste Weg für Ihre Gemeinde, KI mit B1 auszuprobieren, bevor Sie für etwas bezahlen.
 :::
 
-## Einrichtung
+## So richten Sie es ein {#set-it-up}
 
-Die Bildschirme in Ihrer Version von ChatGPT können etwas anders aussehen.
+Die Bildschirme können in Ihrer Version von ChatGPT etwas anders aussehen.
 
 ---
 
 **Schritt 1 — Erstellen Sie Ihren B1-Schlüssel**
 
-Der Schlüssel ist das, was ChatGPT Zugang zu *Ihrer* Gemeinde in B1 verschafft – stellen Sie ihn sich wie ein Passwort nur für ChatGPT vor.
+Der Schlüssel ist das, was ChatGPT Zugang zu *Ihrer* B1-Gemeinde verschafft – denken Sie an ein Passwort, das nur für ChatGPT gilt.
 
-1. Melden Sie sich bei [B1 Admin](https://admin.b1.church) an und gehen Sie zu [Settings → Developer](https://admin.b1.church/settings/developer).
-2. Klicken Sie auf dem Reiter **API Keys** auf **New API Key** und nennen Sie ihn `ChatGPT`.
-3. **Scopes:** Kreuzen Sie an, was ChatGPT tun darf. Jeder Bereich hat ein Kästchen **read** (nur ansehen) und ein Kästchen **write** (Änderungen vornehmen). Sie sind unsicher? Kreuzen Sie zum Einstieg nur die **read**-Kästchen an.
-4. Klicken Sie auf **Save** und dann auf **Copy**, um den Schlüssel zu kopieren (er beginnt mit `cak_`). Er wird nur einmal angezeigt.
+1. Melden Sie sich bei [B1 Admin](https://admin.b1.church) an und gehen Sie zu [Einstellungen → Entwickler](https://admin.b1.church/settings/developer).
+2. Klicken Sie auf dem Reiter **API-Schlüssel** auf **Neuer API-Schlüssel** und benennen Sie ihn `ChatGPT`.
+3. **Berechtigungen:** Markieren Sie, was ChatGPT tun darf. Jeder Bereich hat ein Feld **Lesen** (nur ansehen) und ein Feld **Schreiben** (Änderungen vornehmen). Sie sind unsicher? Markieren Sie zu Beginn nur die Felder **Lesen**.
+4. Klicken Sie auf **Speichern** und dann auf **Kopieren**, um den Schlüssel zu kopieren (er beginnt mit `cak_`). Er wird nur einmal angezeigt.
 
 ---
 
@@ -52,15 +53,15 @@ Der Schlüssel ist das, was ChatGPT Zugang zu *Ihrer* Gemeinde in B1 verschafft 
 
 ---
 
-**Schritt 3 — Klicken Sie auf Settings**
+**Schritt 3 — Klicken Sie auf Einstellungen**
 
-![Klicken Sie im Menü auf Settings](/img/guides/chatgpt-mcp/02.png)
+![Klicken Sie im Menü auf Einstellungen](/img/guides/chatgpt-mcp/02.png)
 
 ---
 
 **Schritt 4 — Klicken Sie in der linken Seitenleiste auf Plugins**
 
-![Klicken Sie unter Integrations auf Plugins](/img/guides/chatgpt-mcp/03.png)
+![Klicken Sie unter Integrationen auf Plugins](/img/guides/chatgpt-mcp/03.png)
 
 ---
 
@@ -72,63 +73,63 @@ Hier sehen Sie alle MCP-Server, die Sie bereits hinzugefügt haben.
 
 ---
 
-**Schritt 6 — Klicken Sie auf Add → Add MCP server**
+**Schritt 6 — Klicken Sie auf Hinzufügen → MCP-Server hinzufügen**
 
-![Klicken Sie auf Add und dann auf Add MCP server](/img/guides/chatgpt-mcp/06.png)
+![Klicken Sie auf Hinzufügen und dann auf MCP-Server hinzufügen](/img/guides/chatgpt-mcp/06.png)
 
 ---
 
-**Schritt 7 — Füllen Sie das Formular aus und klicken Sie auf Save**
+**Schritt 7 — Füllen Sie das Formular aus und klicken Sie auf Speichern**
 
-![Formular Mit einem benutzerdefinierten MCP verbinden](/img/guides/chatgpt-mcp/07.png)
+![Formular für die Verbindung mit einem benutzerdefinierten MCP](/img/guides/chatgpt-mcp/07.png)
 
 Klicken Sie auf **Streamable HTTP** und füllen Sie dann aus:
 
-| Feld | Was einzutragen ist |
+| Feld | Was einzugeben ist |
 |---|---|
 | **Name** | `B1 Church` (oder ein beliebiger Name) |
-| **Type** | Klicken Sie auf **Streamable HTTP** |
+| **Typ** | Klicken Sie auf **Streamable HTTP** |
 | **URL** | `https://api.churchapps.org/mcp` |
-| **Bearer token env var** | Leer lassen |
-| **Headers** | Klicken Sie auf **+ Add header** → Key: `Authorization` → Value: siehe unten |
+| **Umgebungsvariable für Bearer-Token** | Leer lassen |
+| **Header** | Klicken Sie auf **+ Header hinzufügen** → Schlüssel: `Authorization` → Wert: siehe unten |
 
-![Ausgefülltes Beispiel mit Authorization als Key und Bearer-Schlüssel als Value](/img/guides/chatgpt-mcp/08.png)
+![Ausgefülltes Beispiel mit Authorization als Schlüssel und Bearer-Schlüssel als Wert](/img/guides/chatgpt-mcp/08.png)
 
-- **Key:** `Authorization`
-- **Value:** `Bearer cak_ihrschluessel` — das Wort Bearer, ein Leerzeichen und dann Ihr Schlüssel
+- **Schlüssel:** `Authorization`
+- **Wert:** `Bearer cak_yourkey` – das Wort Bearer, ein Leerzeichen und dann Ihr Schlüssel
 
-Klicken Sie auf **Save**.
+Klicken Sie auf **Speichern**.
 
 Das war's! Gehen Sie zurück in einen Chat und fragen Sie etwas wie *„Wie viele Personen gehören zu unserer Gemeinde?“* – ChatGPT holt die Antwort direkt aus B1.
 
 ---
 
-## Ist das sicher?
+## Ist das sicher? {#is-it-safe}
 
 - ChatGPT kann nur **die Daten Ihrer Gemeinde** sehen.
-- Es kann nur das tun, was Ihr Schlüssel erlaubt – ein Schlüssel, bei dem nur **read**-Kästchen angekreuzt sind, kann ansehen, aber nie etwas ändern.
-- Um es abzuschalten, löschen Sie den Schlüssel in B1 Admin unter **Settings → Developer**. Der Zugriff endet sofort.
+- Es kann nur tun, was Ihr Schlüssel erlaubt – ein Schlüssel, bei dem nur die Felder **Lesen** markiert sind, kann Daten ansehen, aber nie etwas ändern.
+- Um es abzuschalten, löschen Sie den Schlüssel in B1 Admin unter **Einstellungen → Entwickler**. Der Zugriff endet sofort.
 
-## Was kostet das?
+## Was kostet es? {#what-does-it-cost}
 
-Die Verbindung zu B1 ist kostenlos – sie ist Teil von ChurchApps. Für die Verbindung mit ChatGPT benötigen Sie einen kostenpflichtigen Tarif (Plus oder höher); siehe die Preise von OpenAI.
+Die B1-Verbindung ist kostenlos – sie ist Teil von ChurchApps. Für die Verbindung benötigt ChatGPT ein kostenpflichtiges Abo (Plus oder höher); siehe die Preise von OpenAI.
 
-## Technische Details
+## Technische Details {#technical-details}
 
-Der Rest dieser Seite richtet sich an technisch versierte Nutzerinnen und Nutzer sowie KI-Assistenten. Der MCP-Server von B1 ist unter `https://api.churchapps.org/mcp` (Streamable HTTP) erreichbar und erwartet den API-Schlüssel als Header `Authorization: Bearer cak_…`. Siehe die [Entwicklerreferenz zum MCP-Server](/docs/developer/api/mcp).
+Der Rest dieser Seite richtet sich an technisch versierte Nutzer und KI-Assistenten. Der MCP-Server von B1 erreicht man unter `https://api.churchapps.org/mcp` (Streamable HTTP) und er nimmt den API-Schlüssel als Header `Authorization: Bearer cak_…` entgegen. Siehe die [Referenz zum MCP-Server für Entwickler](/docs/developer/api/mcp).
 
-### Custom GPT mit Actions
+### Benutzerdefiniertes GPT mit Aktionen {#custom-gpt-with-actions}
 
-Ein Custom GPT ermöglicht es Ihnen, einen eigenen Assistenten zu erstellen, den Ihr ganzes Team gemeinsam nutzen kann – alle öffnen einen Link und können ohne eigene Einrichtung Fragen stellen. Dafür benötigen Sie ein ChatGPT-Plus-, Team- oder Enterprise-Konto und etwa 10 Minuten.
+Ein benutzerdefiniertes GPT ermöglicht es Ihnen, einen eigenen Assistenten zu erstellen, den Ihr ganzes Team gemeinsam nutzen kann – sie öffnen einen Link und können ohne jede Einrichtung Fragen stellen. Es erfordert ein ChatGPT-Konto mit Plus, Team oder Enterprise und etwa 10 Minuten.
 
-#### 1. Einen API-Schlüssel erstellen
+#### 1. Einen API-Schlüssel erstellen {#1-create-an-api-key}
 
-Folgen Sie Schritt 1 unter „Einrichtung“ weiter oben, falls Sie das noch nicht getan haben.
+Folgen Sie Schritt 1 unter „So richten Sie es ein“ oben, falls Sie das noch nicht getan haben.
 
-#### 2. Den Custom GPT erstellen
+#### 2. Das benutzerdefinierte GPT erstellen {#2-build-the-custom-gpt}
 
-1. Klicken Sie in ChatGPT auf Ihr Profil → **My GPTs** → **Create a GPT**.
-2. Wechseln Sie zum Reiter **Configure**, geben Sie dem GPT einen Namen (z. B. „B1 Assistant“) und fügen Sie Anweisungen hinzu:
+1. Klicken Sie in ChatGPT auf Ihr Profil → **Meine GPTs** → **GPT erstellen**.
+2. Wechseln Sie zum Reiter **Konfigurieren**, geben Sie dem GPT einen Namen (z. B. „B1-Assistent“) und fügen Sie Anweisungen hinzu:
 
    ```
    You help church staff query their B1 records. Use the B1 API actions to
@@ -136,13 +137,13 @@ Folgen Sie Schritt 1 unter „Einrichtung“ weiter oben, falls Sie das noch nic
    answers to data the user has permission to see. Be concise.
    ```
 
-3. Scrollen Sie zu **Actions** → **Create new action** → **Authentication**.
-   - **Authentication type:** API Key
-   - **API Key:** Fügen Sie Ihren `cak_…`-Schlüssel ein
-   - **Auth Type:** Bearer
+3. Scrollen Sie zu **Aktionen** → **Neue Aktion erstellen** → **Authentifizierung**.
+   - **Authentifizierungstyp:** API-Schlüssel
+   - **API-Schlüssel:** fügen Sie Ihren `cak_…`-Schlüssel ein
+   - **Auth-Typ:** Bearer
    - Speichern.
 
-4. Fügen Sie im Feld **Schema** diese Start-Spezifikation im OpenAPI-Format ein:
+4. Fügen Sie in das Feld **Schema** diese Start-Spezifikation (OpenAPI) ein:
 
    ```yaml
    openapi: 3.1.0
@@ -155,13 +156,17 @@ Folgen Sie Schritt 1 unter „Einrichtung“ weiter oben, falls Sie das noch nic
      /membership/people:
        get:
          operationId: listPeople
-         summary: List people in the church
+         summary: List everyone in the church
+         responses:
+           "200":
+             description: OK
+     /membership/people/search:
+       get:
+         operationId: searchPeople
+         summary: Find people by name, or by exact email
          parameters:
            - in: query
-             name: firstName
-             schema: { type: string }
-           - in: query
-             name: lastName
+             name: term
              schema: { type: string }
            - in: query
              name: email
@@ -191,7 +196,7 @@ Folgen Sie Schritt 1 unter „Einrichtung“ weiter oben, falls Sie das noch nic
      /giving/donations:
        get:
          operationId: listDonations
-         summary: List donations
+         summary: List donations for one person, or between two dates (send both startDate and endDate as YYYY-MM-DD)
          parameters:
            - in: query
              name: personId
@@ -205,54 +210,65 @@ Folgen Sie Schritt 1 unter „Einrichtung“ weiter oben, falls Sie das noch nic
          responses:
            "200":
              description: OK
-     /attendance/attendance:
+     /attendance/attendancerecords/search:
        get:
          operationId: listAttendance
-         summary: List attendance records
+         summary: List attendance records between two dates, optionally for one campus, service, service time, or group
          parameters:
+           - in: query
+             name: startDate
+             required: true
+             schema: { type: string, format: date }
+           - in: query
+             name: endDate
+             required: true
+             schema: { type: string, format: date }
+           - in: query
+             name: campusId
+             schema: { type: string }
            - in: query
              name: serviceTimeId
              schema: { type: string }
            - in: query
-             name: campusId
+             name: groupId
              schema: { type: string }
          responses:
            "200":
              description: OK
    ```
 
-5. Speichern Sie die Action. Testen Sie sie mit: *„Wie viele Personen gehören zur Gemeinde?“* – ChatGPT ruft `listPeople` auf und beantwortet die Frage.
-6. **Veröffentlichen** Sie den GPT (Only me / Anyone with link / Organization) und teilen Sie den Link mit Ihrem Team.
+5. Speichern Sie die Aktion. Testen Sie sie mit: *„Wie viele Personen gehören zur Gemeinde?“* – ChatGPT ruft `listPeople` auf und antwortet.
+6. **Veröffentlichen** Sie das GPT (Nur ich / Jeder mit Link / Organisation) und teilen Sie den Link mit Ihrem Team.
 
-#### 3. Verwenden
+#### 3. Verwenden {#3-use-it}
 
-Jeder, der den Link hat, kann Fragen in natürlicher Sprache stellen. Die Scopes des Schlüssels gelten weiterhin – ein Schlüssel mit nur Leserechten lehnt Schreibvorgänge ab, unabhängig davon, was das Action-Schema vorsieht.
+Jeder, der den Link hat, kann Fragen in natürlicher Sprache stellen. Die Berechtigungen des Schlüssels gelten weiterhin – ein Schlüssel nur mit Leserechten lehnt Schreibvorgänge ab, unabhängig davon, was das Aktionsschema vorsieht.
 
 ---
 
-### Sicherheit und Grenzen
+### Sicherheit und Grenzen {#safety-and-limits}
 
 - **Trennung pro Gemeinde.** Der API-Schlüssel gehört zu genau einer Gemeinde. ChatGPT kann die Daten anderer Gemeinden nicht sehen.
-- **Auf Berechtigungen beschränkt.** Der Schlüssel enthält nur die Scopes, die Sie vergeben haben. Entfernen Sie einen Scope (indem Sie den Schlüssel löschen und neu erstellen), endet dieser Zugriff beim nächsten Aufruf.
-- **Sofort widerrufbar.** Löschen Sie den Schlüssel unter **Settings → Developer → API Keys**, und der Zugriff endet sofort.
-- **Das Teilen eines Custom GPT teilt auch die Daten.** Alle, die Zugriff auf den GPT haben, können alles sehen, was die Scopes des Schlüssels erlauben. Wählen Sie für weit geteilte GPTs lieber engere Scopes (z. B. ohne `donations:read`).
-- **Audit-Protokoll.** Änderungen, die über ChatGPT vorgenommen werden, durchlaufen dasselbe Audit-Protokoll wie Aktionen in B1 Admin – Sie finden sie unter **Settings → Audit Log**.
+- **Auf Berechtigungen beschränkt.** Der Schlüssel trägt nur die Berechtigungen, die Sie vergeben haben. Wenn Sie eine Berechtigung entfernen (indem Sie den Schlüssel löschen und neu erstellen), endet dieser Zugriff beim nächsten Aufruf.
+- **Sofort widerrufbar.** Löschen Sie den Schlüssel unter **Einstellungen → Entwickler → API-Schlüssel**, dann endet der Zugriff sofort.
+- **Das Teilen eines benutzerdefinierten GPT teilt auch die Daten.** Jeder mit Zugriff auf das GPT kann alles sehen, was die Berechtigungen des Schlüssels erlauben. Verwenden Sie für weit geteilte GPTs bevorzugt engere Berechtigungen (z. B. ohne `donations:read`).
+- **Prüfprotokoll.** Alle Änderungen, die über ChatGPT vorgenommen werden, laufen über dasselbe Prüfprotokoll wie die Aktionen in B1 Admin – Sie finden sie unter **Einstellungen → Prüfprotokoll**.
 
-### Fehlerbehebung
+### Fehlerbehebung {#troubleshooting}
 
 **Der MCP-Connector meldet „Unauthorized“ oder zeigt einen Fehler 401:** Ihr API-Schlüssel fehlt oder ist falsch. Öffnen Sie die Connector-Einstellungen und prüfen Sie den Header **Authorization**: Der Wert sollte das Wort `Bearer`, ein Leerzeichen und dann den vollständigen `cak_…`-Schlüssel ohne zusätzliche Leerzeichen enthalten.
 
-**ChatGPT sagt, es kann bestimmte Daten nicht finden:** Dem Schlüssel fehlen möglicherweise die passenden Scopes. Erstellen Sie unter **Settings → Developer → API Keys** einen neuen Schlüssel mit den zusätzlichen Scopes und aktualisieren Sie den Connector.
+**ChatGPT sagt, es kann bestimmte Daten nicht finden:** Dem Schlüssel fehlen möglicherweise die richtigen Berechtigungen. Erstellen Sie unter **Einstellungen → Entwickler → API-Schlüssel** einen neuen Schlüssel mit den zusätzlichen Berechtigungen und aktualisieren Sie den Connector.
 
-**Custom-GPT-Action liefert 401:** Prüfen Sie im Authentifizierungsbereich der Action, ob **Auth Type: Bearer** ausgewählt ist und der Schlüssel das Wort `Bearer` nicht selbst enthält (ChatGPT fügt es automatisch hinzu).
+**Aktion des benutzerdefinierten GPT liefert 401:** Prüfen Sie im Authentifizierungsbereich der Aktion, ob **Auth-Typ: Bearer** ausgewählt ist, und dass der Schlüssel nicht das Wort `Bearer` enthält (ChatGPT fügt es automatisch hinzu).
 
-**Custom-GPT-Action liefert 403:** Dem Schlüssel fehlt der Scope für diesen Endpunkt. Erstellen Sie einen neuen Schlüssel mit den passenden Scopes und aktualisieren Sie den GPT.
+**Aktion des benutzerdefinierten GPT liefert 403:** Der Schlüssel hat keine Berechtigung für diesen Endpunkt. Erstellen Sie einen neuen Schlüssel mit den richtigen Berechtigungen und aktualisieren Sie das GPT.
 
-**Das Action-Schema wird abgelehnt:** ChatGPT verlangt OpenAPI 3.1 mit mindestens einem Eintrag unter `paths` und einer `servers`-URL. Prüfen Sie das YAML auf [editor.swagger.io](https://editor.swagger.io), bevor Sie es einfügen.
+**Das Aktionsschema wird abgelehnt:** ChatGPT verlangt OpenAPI 3.1 mit mindestens einem Eintrag unter `paths` und einer `servers`-URL. Prüfen Sie das YAML auf [editor.swagger.io](https://editor.swagger.io), bevor Sie es einfügen.
 
-## Verwandt
+## Verwandt {#related}
 
-- [API-Schlüssel](/docs/developer/api/api-keys) — vollständige Übersicht der Scopes
-- [MCP-Server (Entwicklerreferenz)](/docs/developer/api/mcp) — Protokolldetails und Tool-Schemas
-- [Claude](./claude.md) — dasselbe Prinzip für die Modelle von Anthropic
-- [REST-API-Referenz](/docs/developer/api/endpoints) — alle Endpunkte, die eine Custom-GPT-Action aufrufen kann
+- [API-Schlüssel](/docs/developer/api/api-keys) – vollständige Referenz der Berechtigungen
+- [MCP-Server (Entwickler-Referenz)](/docs/developer/api/mcp) – Protokolldetails und Tool-Schemas
+- [Claude](./claude.md) – dasselbe Prinzip, für die Modelle von Anthropic
+- [REST-API-Referenz](/docs/developer/api/endpoints) – jeder Endpunkt, den eine Aktion eines benutzerdefinierten GPT aufrufen kann

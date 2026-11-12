@@ -37,7 +37,7 @@ You can also start a conversation from someone's profile in the [member director
 
 Type in the **Type a message…** box at the bottom of the conversation. Tap the smiley-face button to add an emoji. On a computer, **Enter** sends the message and **Shift+Enter** starts a new line; on a phone, **Enter** starts a new line and you tap the send button to send.
 
-To make text bold or italic, or to add a list, highlight it and use the toolbar that appears -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
+To make text bold or italic, or to add a list, highlight it and use the row of buttons under the message box -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
 
 New messages appear right away for both people while the conversation is open, and each message shows when it was sent. Tap the person's name at the top of the conversation to open their directory profile.
 

@@ -61,7 +61,7 @@ Bevar maskert legitimasjon bare når du redigerer den samme lagrede leverandøre
 
 Avgrens alle innlastinger og oppdateringer til den autentiserte B1-kirken. Knytt tilbakekall til en lagret integrasjon og forventet Twilio-konto/tjeneste/avsender, og avvis motstridende tilordninger på tvers av kirker. Rotasjon av legitimasjon og frakobling av leverandør må ugyldiggjøre klarhet og pause køede sendinger, uten å slette samtykke eller historiske leveringsdata.
 
-## Samtykke og undertrykking er påkrevd arbeid før utgivelse
+## Samtykke og undertrykking er påkrevd arbeid før utgivelse {#consent-and-suppression-are-required-release-work}
 
 Innfør abonnementsposter knyttet til telefonnummer for Twilio-programmet, pluss hendelser for samtykke og undertrykking som bare kan legges til. Foreslått minimum av bevis er: kirke-ID, program-ID, normalisert telefonnummer, eventuell verifisert kobling til en person, bekreftende handling, kilde-skjema-ID eller innsendings-ID eller gjennomgått ekstern dokumentasjon, tidsstempel fra serveren, tekst og versjon av opplysningen, kilde-URL, URL-er for retningslinjer, og hendelser for tilbaketrekking og ny start. Begrens tilgang og oppbevaringstid i henhold til kirkens eksisterende retningslinjer for datasikkerhet.
 

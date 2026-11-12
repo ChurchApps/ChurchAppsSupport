@@ -1,53 +1,56 @@
 ---
-title: "Solicitando Eventos e Salas"
-description: "Solicite reserva de sala ou equipamento para um evento no portal do B1.church, acompanhe em My Requests e cancele enquanto estiver pendente."
+title: "Solicitando eventos e salas"
+description: "Solicite a reserva de uma sala ou equipamento para um evento pelo portal de membros do B1.church, acompanhe o status em Minhas solicitações e cancele enquanto estiver pendente."
 ---
 
-# Solicitando Eventos e Salas
+# Solicitando eventos e salas
 
 <div class="article-intro">
 
-Se sua igreja controla salas e recursos reserváveis, você pode solicitar um evento -- com as salas e equipamentos necessários -- diretamente pelo portal de membros. Conflitos com reservas existentes são sinalizados enquanto você escolhe, sua solicitação vai para a igreja para aprovação, e você pode acompanhá-la ou cancelá-la em Minhas Solicitações.
+Se sua igreja controla salas e recursos reserváveis, você pode solicitar um evento -- com as salas e equipamentos de que ele precisa -- diretamente pelo portal de membros. Conflitos com reservas existentes são sinalizados enquanto você escolhe, sua solicitação vai para a igreja para aprovação, e você pode acompanhá-la ou cancelá-la em Minhas solicitações.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
 - Você precisa estar [conectado](../getting-started/logging-in.md) ao portal de membros
-- Sua igreja deve ter salas ou recursos configurados no B1 Admin -- os links de solicitação só aparecem nesse caso
+- Sua igreja precisa ter salas ou recursos configurados no B1 Admin -- os links de solicitação só aparecem quando isso acontece
 
 </div>
 
-## Enviando uma Solicitação
+## Enviando uma solicitação {#submitting-a-request}
 
-1. Abra a página **Eu** no portal de membros e toque em **Solicitar um Evento** na seção **Solicitações e inscrições**.
-2. Preencha os dados básicos do evento: **Título do evento**, uma **Descrição** opcional, os horários de **Início** e **Término** (ou **Dia inteiro**) e se ele se **Repete**.
-3. Escolha as **Salas** e os **Recursos** de que você precisa. Para recursos, você pode definir a **Qtd**.
-4. Fique atento aos avisos de conflito -- se o seu horário se sobrepuser a uma reserva existente de uma sala ou recurso, você verá *"Este horário conflita com uma reserva existente."* Você pode ajustar o horário ou escolher outra opção.
-5. Toque em **Enviar Solicitação**.
+1. Abra a página **Eu** no portal de membros e toque em **Solicitar um evento** na seção **Solicitações e inscrições**.
+2. Preencha os dados básicos do evento: **Título do evento**, uma **Descrição** opcional, e os horários de **Início** e **Término**. Ative **Dia inteiro** para escolher apenas datas.
+3. Escolha as **Salas** e os **Recursos** de que precisa (você pode escolher vários de cada). Depois de escolher um, você pode adicionar minutos de **Montagem (min antes)** e **Desmontagem (min depois)**, ou ativar **Janela de reserva personalizada** e definir você mesmo **Reservar a partir de** e **Reservar até**.
+4. Fique atento aos avisos de conflito -- se o seu horário se sobrepõe a uma reserva existente de uma sala ou recurso, você verá *"Algumas seleções podem já estar reservadas neste horário."* Você pode ajustar o horário ou escolher outra opção.
+5. Se o evento acontecer mais de uma vez, ative **Repete** e defina o padrão.
+6. Toque em **Enviar solicitação**. O botão fica cinza até que você informe um título para o evento. Toque em **Cancelar** para sair sem enviar.
 
-Depois de enviar, um resumo de **Solicitação enviada** mostra o status de cada sala e recurso solicitado:
+Depois do envio, um resumo de **Solicitação enviada** mostra o status de cada sala e recurso solicitado (toque em **Minhas solicitações** para ir à sua lista):
 
-- **Aprovado** -- Reservado imediatamente (a sala ou recurso não tem grupo de aprovação).
+- **Aprovada** -- Reservada imediatamente (a sala ou recurso não tem grupo de aprovação).
 - **Aguardando aprovação** -- Alguém da igreja precisa dar o aval primeiro.
 
-## Acompanhando Suas Solicitações
+## Acompanhando suas solicitações {#tracking-your-requests}
 
-Abra **Minhas Solicitações** na página Eu. Cada solicitação mostra o evento, quando foi solicitada e um selo de status:
+Abra **Minhas solicitações** na página Eu. As solicitações são divididas em **Próximas** e **Anteriores** conforme a data do evento (toque em **Todas as anteriores** para ver as mais antigas). Cada solicitação mostra o título do evento e quando começa, o status de cada sala e recurso solicitado, e um selo de status:
 
 - **Pendente** -- Aguardando uma decisão
 - **Aprovada** -- Sua reserva está confirmada
-- **Recusada** -- A solicitação foi recusada
+- **Recusada** -- A solicitação foi negada
 
-Enquanto a solicitação ainda estiver pendente, você pode retirá-la com **Cancelar solicitação** (será solicitada uma confirmação -- o cancelamento não pode ser desfeito).
+Enquanto a solicitação ainda estiver pendente, você pode retirá-la com **Cancelar solicitação**. Uma confirmação pergunta "Cancelar esta solicitação? Isso não pode ser desfeito." -- toque em **Cancelar solicitação** para confirmar ou em **Manter** para deixá-la.
+
+Você também pode iniciar uma nova solicitação com o botão **Solicitar um evento** no topo de Minhas solicitações.
 
 :::info
-As solicitações são analisadas pela equipe da igreja na [página de Aprovações](../../b1-admin/calendars/approvals.md) do B1 Admin. Quais salas e recursos precisam de aprovação fica a critério da sua igreja -- consulte [Salas e Recursos](../../b1-admin/calendars/rooms-resources.md).
+As solicitações são analisadas pela equipe da igreja na [página de Aprovações](../../b1-admin/calendars/approvals.md) do B1 Admin. Quais salas e recursos precisam de aprovação fica a critério da sua igreja -- veja [Salas e recursos](../../b1-admin/calendars/rooms-resources.md).
 :::
 
-## Artigos Relacionados
+## Artigos relacionados {#related-articles}
 
-- [A Página Eu](../getting-started/me-page.md) -- Onde estão os links de solicitação
-- [Aprovações de Calendário (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Como a equipe analisa as solicitações
-- [Salas e Recursos (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Como as igrejas configuram os espaços reserváveis
+- [A página Eu](../getting-started/me-page.md) -- Onde ficam os links de solicitação
+- [Aprovações de calendário (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Como a equipe analisa as solicitações
+- [Salas e recursos (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Como as igrejas configuram os espaços reserváveis

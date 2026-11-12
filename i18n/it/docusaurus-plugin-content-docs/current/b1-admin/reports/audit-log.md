@@ -1,84 +1,95 @@
 ---
-title: "Registro di Audit"
-description: "Consulta il registro di controllo in B1 Admin per vedere chi ha effettuato l'accesso, modificato le anagrafiche o cambiato i permessi, ed esportare in CSV."
+title: "Registro di controllo"
+description: "Consulta il registro di controllo in B1 Admin per vedere chi ha effettuato l'accesso, modificato le schede delle persone o cambiato le autorizzazioni, ed esporta le voci filtrate in CSV."
 ---
 
-# Registro di Audit
+# Registro di controllo
 
 <div class="article-intro">
 
-Il registro di audit traccia tutte le azioni e i cambiamenti significativi nel tuo sistema di gestione della chiesa. Usalo per rivedere l'attività di accesso, tracciare chi ha apportato modifiche ai record delle persone, monitorare gli aggiornamenti delle autorizzazioni e mantenere la responsabilità nel tuo team.
+Il registro di controllo tiene traccia di tutte le azioni e modifiche significative nel tuo sistema di gestione della chiesa. Usalo per verificare l'attività di accesso, capire chi ha apportato modifiche alle schede delle persone, monitorare gli aggiornamenti delle autorizzazioni e mantenere la responsabilità condivisa all'interno del tuo team.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Account B1 Admin con accesso amministratore del server
-- Vai a **Settings** per trovare il Registro di Audit
+- Un ruolo con l'autorizzazione **Modifica impostazioni chiesa** (nella sezione **Contenuti** delle autorizzazioni di un ruolo; la stessa autorizzazione che apre **Impostazioni**). Vedi [Ruoli e autorizzazioni](../settings/roles-permissions.md).
 
 </div>
 
-## Visualizzazione del Registro di Audit
+## Visualizzare il registro di controllo {#viewing-the-audit-log}
 
-1. Apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Settings**.
-2. Fai clic su **Audit Log**.
-3. Il registro visualizza le voci recenti in una tabella con le seguenti colonne:
-   - **Date** -- Quando è stata eseguita l'azione.
-   - **Category** -- Il tipo di azione (codificato a colori per una scansione rapida).
-   - **Action** -- Cosa è stato fatto (ad esempio, create, update, delete, login_success).
-   - **Entity** -- Il tipo e l'ID del record che è stato interessato.
-   - **IP Address** -- L'indirizzo IP dell'utente che ha eseguito l'azione.
-   - **Details** -- Un riepilogo dei cambiamenti specifici apportati.
+1. Apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Impostazioni**.
+2. Fai clic su **Registro di controllo**.
+3. Il registro mostra le voci recenti in una tabella con le seguenti colonne:
+   - **Data** -- Quando si è verificata l'azione.
+   - **Modulo** -- La parte di B1 in cui è stata apportata la modifica (ad esempio, anagrafica o donazioni).
+   - **Categoria** -- Il tipo di scheda o di azione (con colori per una lettura rapida).
+   - **Azione** -- Cosa è stato fatto (ad esempio, Donazione salvata, Accesso riuscito, Nota aggiornata).
+   - **Entità** -- Il tipo e l'ID della scheda interessata.
+   - **Indirizzo IP** -- L'indirizzo IP dell'utente che ha eseguito l'azione.
+4. Fai clic sulla freccia all'inizio di una riga per vedere i dettagli: una tabella di ciascun campo modificato con il **Valore precedente** e il **Nuovo valore**, oppure il **Record eliminato** in caso di eliminazione.
 
-## Filtraggio del Registro
+## Filtrare il registro {#filtering-the-log}
 
 Usa i filtri in cima alla pagina per restringere i risultati:
 
-- **Category** -- Filtra per tipo di azione:
-  - **All Categories** -- Mostra tutto.
-  - **Login** -- Successi e fallimenti di accesso.
-  - **People** -- Creazione, aggiornamento o eliminazione di record di persone.
-  - **Permissions** -- Concessioni e revoche di autorizzazioni.
-  - **Donations** -- Cambiamenti nei record di donazione.
-  - **Groups** -- Azioni di gestione del gruppo.
-  - **Forms** -- Attività di invio di moduli.
-  - **Settings** -- Cambiamenti di configurazione.
-- **Start Date** -- Mostra voci da questa data in poi.
-- **End Date** -- Mostra voci fino a questa data.
+- **Modulo** -- Filtra per area: **Tutti i moduli**, **Persone**, **Donazioni**, **Presenze**, **Messaggistica**, **Contenuti**, **Servizi** o **Lezioni**.
+- **Categoria** -- Filtra per tipo di azione:
+  - **Tutte le categorie** -- Mostra tutto.
+  - **Accesso** -- Accessi riusciti e falliti.
+  - **Persone** -- Creazione, aggiornamento o eliminazione di schede persona.
+  - **Autorizzazioni** -- Concessione e revoca di autorizzazioni.
+  - **Donazioni** -- Modifiche alle schede delle donazioni.
+  - **Gruppi** -- Azioni di gestione dei gruppi.
+  - **Moduli** -- Attività di invio dei moduli.
+  - **Impostazioni** -- Modifiche alla configurazione.
+- **Data di inizio** -- Mostra le voci da questa data in avanti.
+- **Data di fine** -- Mostra le voci fino a questa data.
 
-Fai clic su **Search** dopo aver impostato i tuoi filtri per aggiornare i risultati.
+Fai clic su **Cerca** dopo aver impostato i filtri per aggiornare i risultati.
 
-## Comprensione delle Categorie
+## Capire le categorie {#understanding-categories}
 
-Ogni categoria è codificata a colori per una rapida identificazione:
+La categoria di ogni voce è mostrata come etichetta colorata, per un'identificazione rapida:
 
-- **Login** -- Chip blu. Traccia i tentativi di accesso riusciti e non riusciti.
-- **People** -- Chip viola. Traccia la creazione, l'aggiornamento e l'eliminazione dei record delle persone.
-- **Permissions** -- Chip rosso. Traccia quando i diritti di accesso vengono concessi o revocati.
-- **Donations** -- Chip verde. Traccia i cambiamenti nei record di donazione.
-- **Groups** -- Chip grigio. Traccia le operazioni di gestione del gruppo.
-- **Forms** -- Chip arancione. Traccia l'attività di invio di moduli.
-- **Settings** -- Chip giallo. Traccia i cambiamenti di configurazione.
+- **login** -- Etichetta blu. Tiene traccia dei tentativi di accesso riusciti e falliti.
+- **person** -- Etichetta blu. Tiene traccia della creazione, dell'aggiornamento e dell'eliminazione delle schede persona.
+- **permission** -- Etichetta rossa. Tiene traccia di quando i diritti di accesso vengono concessi o revocati.
+- **donation** -- Etichetta verde. Tiene traccia delle modifiche alle schede delle donazioni.
+- **form** -- Etichetta arancione. Tiene traccia dell'attività di invio dei moduli.
+- **group**, **settings** e le altre categorie (come **userchurch**) -- Etichetta grigia.
 
-## Esportazione del Registro
+## Cronologia delle note su persone e gruppi {#note-history-on-people-and-groups}
 
-Quando le voci del registro vengono visualizzate, appare un pulsante **CSV download**. Fai clic su di esso per esportare i risultati filtrati correnti in un foglio di calcolo per la revisione offline o la tenuta dei registri.
+Se puoi aprire il registro di controllo, vedi anche una traccia delle note modificate direttamente dove si trovano le note, nella scheda **Note** di una persona o di un gruppo:
 
-## Paginazione
+1. Una nota modificata mostra **(modificata · visualizza cronologia)** accanto alla sua data. Fai clic per aprire il registro di controllo filtrato sulla cronologia delle note di quella persona o di quel gruppo.
+2. Una nota eliminata lascia al suo posto un contrassegno grigio **Nota eliminata**, che indica chi l'ha scritta, quando è stata pubblicata e quando è stata eliminata. Fai clic su **Visualizza cronologia** per aprire lo stesso registro filtrato.
+3. Nel registro filtrato, espandi una voce **Nota aggiornata** o **Nota eliminata** per vedere il testo precedente e l'account che ha effettuato la modifica. Fai clic su **Mostra tutto** per rimuovere il filtro.
+4. Nella colonna **Entità**, l'ID di una nota di persona o di gruppo rimanda alle note di quella persona o di quel gruppo.
 
-Usa i controlli di paginazione in fondo alla tabella per navigare tra i risultati. Puoi visualizzare 25, 50 o 100 voci per pagina.
+Il personale che non può aprire il registro di controllo vede l'elenco delle note senza questi contrassegni.
+
+## Esportare il registro {#exporting-the-log}
+
+Quando le voci del registro sono visualizzate, in cima alla pagina compare il pulsante **Esporta CSV**. Fai clic per esportare i risultati filtrati correnti in un foglio di calcolo per la revisione offline o per la conservazione dei documenti.
+
+## Paginazione {#pagination}
+
+Usa i controlli di paginazione in fondo alla tabella per spostarti tra i risultati. Puoi visualizzare 25, 50 (impostazione predefinita) o 100 voci per pagina.
 
 :::info
-Le voci del registro di audit vengono automaticamente conservate per un anno. Le voci più vecchie di 365 giorni vengono rimosse per mantenere il sistema efficiente.
+Le voci del registro di controllo vengono conservate automaticamente per un anno. Le voci più vecchie di 365 giorni vengono rimosse per mantenere il sistema performante.
 :::
 
 :::tip
-Rivedi il registro di audit regolarmente, soprattutto dopo l'onboarding di nuovi membri del team o dopo aver apportato cambiamenti significativi alla configurazione. Aiuta a identificare l'attività imprevista in anticipo.
+Consulta il registro di controllo regolarmente, soprattutto dopo aver inserito nuovi membri del team o apportato modifiche significative alla configurazione. Aiuta a individuare tempestivamente attività inattese.
 :::
 
-## Articoli Correlati
+## Articoli correlati {#related-articles}
 
-- [Ruoli e Autorizzazioni](../settings/roles-permissions.md) -- Gestisci chi ha accesso a cosa
-- [Sicurezza dei Dati](../settings/data-security.md) -- Capire come sono protetti i tuoi dati
-- [Panoramica dei Rapporti](./index.md) -- Vedi tutti i rapporti disponibili
+- [Ruoli e autorizzazioni](../settings/roles-permissions.md) -- Gestisci chi ha accesso a cosa
+- [Sicurezza dei dati](../settings/data-security.md) -- Scopri come vengono protetti i tuoi dati
+- [Panoramica dei report](./index.md) -- Vedi tutti i report disponibili

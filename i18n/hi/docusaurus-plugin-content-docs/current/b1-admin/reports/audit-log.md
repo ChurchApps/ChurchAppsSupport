@@ -1,84 +1,95 @@
 ---
-title: "Audit Log"
-description: "B1 Admin में ऑडिट लॉग देखें कि किसने लॉग इन किया, लोगों के रिकॉर्ड बदले, या अनुमतियाँ बदलीं, और फ़िल्टर की गई प्रविष्टियाँ CSV में निर्यात करें।"
+title: "ऑडिट लॉग"
+description: "B1 Admin में ऑडिट लॉग देखें ताकि पता चले कि किसने लॉग इन किया, लोगों के रिकॉर्ड बदले, या अनुमतियाँ बदलीं, और फ़िल्टर की गई प्रविष्टियों को CSV में निर्यात करें।"
 ---
 
-# Audit Log
+# ऑडिट लॉग
 
 <div class="article-intro">
 
-Audit log आपकी चर्च प्रबंधन प्रणाली के पार सभी significant actions और changes को track करता है। इसका उपयोग login activity को review करने, यह track करने के लिए करें कि किसने people records में changes किए, permission updates को monitor करें, और अपनी टीम के पार accountability बनाए रखें।
+ऑडिट लॉग आपके चर्च प्रबंधन सिस्टम में सभी महत्वपूर्ण कार्यों और बदलावों को दर्ज करता है। इसका उपयोग लॉग इन गतिविधि की समीक्षा करने, लोगों के रिकॉर्ड में बदलाव करने वाले को ट्रैक करने, अनुमति अपडेट पर नज़र रखने, और अपनी टीम में जवाबदेही बनाए रखने के लिए करें।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- B1 Admin account with server admin access
-- Audit Log को खोजने के लिए **Settings** पर navigate करें
+- एक भूमिका जिसके पास **Edit Church Settings** अनुमति हो (भूमिका की अनुमतियों के **Content** अनुभाग में; वही अनुमति जो **Settings** खोलती है)। देखें [Roles & Permissions](../settings/roles-permissions.md)।
 
 </div>
 
-## Audit Log को देखना
+## ऑडिट लॉग देखना {#viewing-the-audit-log}
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपरी-बाएं में खोज बार) और **Settings** को expand करें।
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपर-बाएँ कोने में खोज बार) और **Settings** का विस्तार करें।
 2. **Audit Log** पर क्लिक करें।
-3. Log एक table में recent entries display करता है जिसमें निम्नलिखित columns हैं:
-   - **Date** -- Action कब occurred था।
-   - **Category** -- Action का type (quick scanning के लिए color-coded)।
-   - **Action** -- क्या किया गया था (उदाहरण के लिए, create, update, delete, login_success)।
-   - **Entity** -- Record का type और ID जो affected था।
-   - **IP Address** -- उस user का IP address जिसने action perform किया।
-   - **Details** -- किए गए specific changes का एक summary।
+3. लॉग हाल की प्रविष्टियाँ एक तालिका में निम्नलिखित कॉलमों के साथ दिखाता है:
+   - **Date** -- जब कार्रवाई हुई।
+   - **Module** -- B1 का वह भाग जिसमें बदलाव किया गया (उदाहरण के लिए, membership या giving)।
+   - **Category** -- रिकॉर्ड या कार्रवाई का प्रकार (त्वरित पहचान के लिए रंग-कोडित)।
+   - **Action** -- क्या किया गया (जैसे, Donation Saved, Login Success, Note Updated)।
+   - **Entity** -- प्रभावित रिकॉर्ड का प्रकार और ID।
+   - **IP Address** -- जिस उपयोगकर्ता ने कार्रवाई की उसका IP पता।
+4. विवरण देखने के लिए किसी पंक्ति की शुरुआत में तीर पर क्लिक करें: हर बदले हुए फ़ील्ड की तालिका, जिसमें उसका **Old Value** और **New Value** होता है, या हटाने के मामले में **Deleted Record**।
 
-## Log को Filter करना
+## लॉग को फ़िल्टर करना {#filtering-the-log}
 
-Page के शीर्ष पर filters का उपयोग करके परिणामों को narrow down करें:
+परिणामों को सीमित करने के लिए पेज के ऊपर दिए फ़िल्टर का उपयोग करें:
 
-- **Category** -- Action type के अनुसार filter करें:
-  - **All Categories** -- सब कुछ दिखाएं।
-  - **Login** -- Login successes और failures।
-  - **People** -- Person records को create, update, या delete करना।
-  - **Permissions** -- Permission grants और revocations।
-  - **Donations** -- Donation record changes।
-  - **Groups** -- Group management actions।
-  - **Forms** -- Form submission activity।
-  - **Settings** -- Configuration changes।
-- **Start Date** -- इस date से forward entries दिखाएं।
-- **End Date** -- इस date तक entries दिखाएं।
+- **Module** -- क्षेत्र के अनुसार फ़िल्टर करें: **All Modules**, **People**, **Giving**, **Attendance**, **Messaging**, **Content**, **Serving**, या **Lessons**।
+- **Category** -- कार्रवाई के प्रकार के अनुसार फ़िल्टर करें:
+  - **All Categories** -- सब कुछ दिखाएँ।
+  - **Login** -- सफल और असफल लॉग इन प्रयास।
+  - **People** -- व्यक्ति रिकॉर्ड बनाना, अपडेट करना, या हटाना।
+  - **Permissions** -- अनुमति देना और वापस लेना।
+  - **Donations** -- दान रिकॉर्ड में बदलाव।
+  - **Groups** -- समूह प्रबंधन कार्रवाई।
+  - **Forms** -- फ़ॉर्म सबमिशन गतिविधि।
+  - **Settings** -- कॉन्फ़िगरेशन बदलाव।
+- **Start Date** -- इस तिथि से आगे की प्रविष्टियाँ दिखाएँ।
+- **End Date** -- इस तिथि तक की प्रविष्टियाँ दिखाएँ।
 
-अपनी filters को सेट करने के बाद **Search** पर क्लिक करें परिणामों को update करने के लिए।
+फ़िल्टर सेट करने के बाद परिणाम अपडेट करने के लिए **Search** पर क्लिक करें।
 
-## Categories को समझना
+## श्रेणियों को समझना {#understanding-categories}
 
-हर category quick identification के लिए color-coded है:
+हर प्रविष्टि की श्रेणी एक चिप के रूप में दिखाई जाती है, जो त्वरित पहचान के लिए रंग-कोडित है:
 
-- **Login** -- Blue chip। Successful और failed login attempts को track करता है।
-- **People** -- Purple chip। Person record creates, updates, और deletes को track करता है।
-- **Permissions** -- Red chip। यह track करता है जब access rights दिए जाते हैं या revoked होते हैं।
-- **Donations** -- Green chip। Donation record changes को track करता है।
-- **Groups** -- Gray chip। Group management operations को track करता है।
-- **Forms** -- Orange chip। Form submission activity को track करता है।
-- **Settings** -- Yellow chip। Configuration changes को track करता है।
+- **login** -- नीली चिप। सफल और असफल लॉग इन प्रयासों को ट्रैक करती है।
+- **person** -- नीली चिप। व्यक्ति रिकॉर्ड बनाने, अपडेट करने और हटाने को ट्रैक करती है।
+- **permission** -- लाल चिप। ट्रैक करती है कि पहुँच अधिकार कब दिए या वापस लिए गए।
+- **donation** -- हरी चिप। दान रिकॉर्ड में बदलाव को ट्रैक करती है।
+- **form** -- नारंगी चिप। फ़ॉर्म सबमिशन गतिविधि को ट्रैक करती है।
+- **group**, **settings**, और अन्य श्रेणियाँ (जैसे **userchurch**) -- धूसर चिप।
 
-## Log को Export करना
+## लोगों और समूहों पर नोट इतिहास {#note-history-on-people-and-groups}
 
-जब log entries display हैं, एक **CSV download** बटन दिखाई देता है। Offline review या record-keeping के लिए current filtered results को एक spreadsheet में export करने के लिए इस पर क्लिक करें।
+यदि आप ऑडिट लॉग खोल सकते हैं, तो आपको बदले गए नोट्स का इतिहास सीधे उसी जगह दिखता है जहाँ नोट्स रहते हैं, यानी किसी व्यक्ति या समूह के **Notes** टैब पर:
 
-## Pagination
+1. संपादित नोट अपनी तिथि के आगे **(edited · view history)** दिखाता है। उस पर क्लिक करें ताकि ऑडिट लॉग उस व्यक्ति या समूह के नोट इतिहास पर फ़िल्टर होकर खुले।
+2. हटाए गए नोट की जगह एक धूसर **Deleted note** चिह्न रहता है, जिसमें दिखता है कि नोट किसने लिखा था, कब पोस्ट हुआ था, और कब हटाया गया। उसी फ़िल्टर किए गए लॉग को खोलने के लिए **View history** पर क्लिक करें।
+3. फ़िल्टर किए गए लॉग में **Note Updated** या **Note Deleted** प्रविष्टि का विस्तार करें ताकि पुराना पाठ और बदलाव करने वाला खाता दिखे। फ़िल्टर हटाने के लिए **Show all** पर क्लिक करें।
+4. **Entity** कॉलम में, किसी व्यक्ति या समूह के नोट की ID उस व्यक्ति या समूह के नोट्स से वापस जुड़ती है।
 
-Results के माध्यम से navigate करने के लिए table के नीचे pagination controls का उपयोग करें। आप 25, 50, या 100 entries per page display कर सकते हैं।
+जो कर्मचारी ऑडिट लॉग नहीं खोल सकते, उन्हें इन चिह्नों के बिना नोट्स की सूची दिखती है।
+
+## लॉग निर्यात करना {#exporting-the-log}
+
+जब लॉग प्रविष्टियाँ दिखाई दे रही हों, तो पेज के ऊपर एक **Export CSV** बटन दिखता है। ऑफ़लाइन समीक्षा या रिकॉर्ड रखने के लिए वर्तमान फ़िल्टर किए गए परिणामों को स्प्रेडशीट में निर्यात करने के लिए इस पर क्लिक करें।
+
+## पेजिनेशन {#pagination}
+
+परिणामों में आगे-पीछे जाने के लिए तालिका के नीचे दिए पेजिनेशन नियंत्रणों का उपयोग करें। आप प्रति पेज 25, 50 (डिफ़ॉल्ट), या 100 प्रविष्टियाँ दिखा सकते हैं।
 
 :::info
-Audit log entries automatically एक year के लिए retained हैं। 365 days से पुरानी entries को remove किया जाता है system को performant रखने के लिए।
+ऑडिट लॉग प्रविष्टियाँ स्वचालित रूप से एक वर्ष तक रखी जाती हैं। 365 दिनों से पुरानी प्रविष्टियाँ सिस्टम को तेज़ रखने के लिए हटा दी जाती हैं।
 :::
 
 :::tip
-Audit log को regularly review करें, especially नए team members को onboard करने या significant configuration changes बनाने के बाद। यह unexpected activity को जल्दी identify करने में मदद करता है।
+ऑडिट लॉग की नियमित समीक्षा करें, विशेष रूप से नए टीम सदस्यों को जोड़ने के बाद या महत्वपूर्ण कॉन्फ़िगरेशन बदलावों के बाद। इससे अप्रत्याशित गतिविधि जल्दी पहचानने में मदद मिलती है।
 :::
 
-## संबंधित लेख
+## संबंधित लेख {#related-articles}
 
-- [Roles & Permissions](../settings/roles-permissions.md) -- किसे क्या access है यह manage करें
-- [Data Security](../settings/data-security.md) -- समझें कि आपका data कैसे protect है
-- [Reports Overview](./index.md) -- सभी उपलब्ध reports देखें
+- [Roles & Permissions](../settings/roles-permissions.md) -- तय करें कि किसकी पहुँच किस चीज़ तक है
+- [Data Security](../settings/data-security.md) -- समझें कि आपके डेटा की सुरक्षा कैसे होती है
+- [Reports Overview](./index.md) -- सभी उपलब्ध रिपोर्ट देखें

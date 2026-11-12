@@ -48,7 +48,7 @@ O seletor de transporte é a config `deliveryProvider`:
 
 O cliente nunca precisa saber qual está em uso -- ele fala o mesmo protocolo JSON de qualquer forma.
 
-## Protocolo de transmissão
+## Protocolo de transmissão {#wire-protocol}
 
 Cada quadro é JSON da forma `PayloadInterface`:
 

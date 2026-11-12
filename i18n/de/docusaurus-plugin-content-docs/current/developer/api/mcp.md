@@ -152,7 +152,7 @@ Jeder `api_call`-Antwort-Body ist auf **64 KB** erfasster Ausgabe begrenzt. Übe
 
 Für `/mcp` gibt es keine Ratenbegrenzung auf Anwendungsebene. In der Produktion erfolgt die Drosselung über die Parallelität von API Gateway bzw. Lambda, bei selbst gehosteten Bereitstellungen über den Reverse-Proxy.
 
-## OAuth-Erkennung
+## OAuth-Erkennung {#oauth-discovery}
 
 Der MCP-Server veröffentlicht OAuth-2.1-Metadaten, damit Clients, die nur mit per OAuth erkannten Servern verbinden – insbesondere die Oberfläche „Add custom connector“ von Claude.ai –, eine Benutzeranmeldung ohne eingefügten Schlüssel durchführen können. `/mcp` ist die geschützte Ressource, der bestehende [OAuth-Provider](./connected-apps.md) unter `/membership/oauth` ist der Autorisierungsserver, und die Seite `/oauth` in B1Admin ist der Zustimmungsbildschirm.
 

@@ -1,70 +1,78 @@
 ---
-title: "Logge inn i B1.church og medlemsportalen"
+title: "Logge inn på B1.church og medlemsportalen"
 sidebar_label: "Logge inn"
-description: "Logg inn i B1.church-medlemsportalen med tofaktorkoder eller single sign-on, tilbakestill et glemt passord og logg ut via kontomenyen."
+description: "Logg inn på B1.church-medlemsportalen, bruk tofaktorkoder eller single sign-on, tilbakestill et glemt passord, og logg ut fra kontomenyen din."
 ---
 
 # Logge inn
 
 <div class="article-intro">
 
-Å logge inn på B1.church gir deg tilgang til medlemsportalen der du kan se hva som kommer for deg, administrere grupper, gi på nett og bruke alle verktøyene kirken din har satt opp. Denne artikkelen dekker hvordan du logger inn, navigerer i brukermenyen din og logger ut.
+Når du logger inn på B1.church, får du tilgang til medlemsportalen der du kan se det som kommer for deg, administrere grupper, gi gaver på nett og bruke alle verktøyene menigheten har satt opp. Denne artikkelen forklarer hvordan du logger inn, navigerer i brukermenyen din og logger ut.
 
 </div>
+
+## Opplæringsvideo {#training-video}
+
+<YouTube id="Y5dVC9D6cLs" title="Logge inn og installere B1.church-appen" next="Oppdatere profilen og varslene dine" nextUrl="/docs/b1-church/getting-started/editing-your-profile" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger en ChurchApps-konto. Se [Komme i gang](./index.md) for å opprette en.
-- Du trenger kirkens B1.church-URL (for eksempel `https://dinkirkenavn.b1.church`).
+- Du trenger en ChurchApps-konto. Se [Kom i gang](./index.md) for å opprette en.
+- Du trenger menighetens B1.church-adresse (for eksempel `https://yourchurchname.b1.church`).
 
 </div>
 
-## Slik logger du inn
+## Slik logger du inn {#how-to-log-in}
 
-1. Gå til kirkens B1.church-URL (for eksempel `https://dinkirkenavn.b1.church`).
-2. Klikk knappen **Logg inn** øverst til høyre i toppteksten.
-3. Skriv inn e-postadressen og passordet ditt, eller klikk **Fortsett med Google** eller **Fortsett med Microsoft** hvis kirken din har aktivert single sign-on.
-4. Klikk **Logg inn**.
+1. Gå til menighetens B1.church-adresse (for eksempel `https://yourchurchname.b1.church`).
+2. Klikk på knappen **Logg inn** øverst til høyre i topptekstfeltet. Hvis menigheten din ikke har slått på knappen **Logg inn** for nettstedet sitt, går du i stedet til `https://yourchurchname.b1.church/login`.
+3. Skriv inn **e-postadressen** og **passordet** ditt, eller klikk på **Fortsett med Google** eller **Fortsett med Microsoft** hvis menigheten har slått på single sign-on.
+4. Klikk på **Logg inn**.
 
-Hvis du har slått på [tofaktorinnlogging](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), ber neste skjerm om en kode. Skriv inn den 6-sifrede koden fra autentiseringsappen din, eller en av reservekodene dine, og klikk **Bekreft kode**. B1.church-appen ber om koden på samme måte.
+Hvis du har slått på [tofaktorinnlogging](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), spør neste skjerm etter en kode. Skriv inn den 6-sifrede koden fra autentiseringsappen din, eller en av reservekodene dine, og klikk på **Bekreft kode**. Medlemsportalen ber om koden på samme måte.
 
-Etter innlogging sendes du tilbake til siden du var på før du klikket på logg inn. Hvis du gikk direkte til en side i medlemsportalen mens du var utlogget, blir du sendt tilbake til den siden automatisk etter innlogging.
+Etter innlogging sendes du tilbake til siden du var på før du klikket på innlogging. Hvis du gikk direkte til en side i medlemsportalen mens du var logget ut, sendes du automatisk tilbake til den siden etter innlogging.
 
-## Forbli innlogget
+## Logge inn fra medlemsportalen {#signing-in-from-the-member-portal}
 
-Du forblir innlogget i samme nettleser eller installerte app til du logger ut, selv om du ikke besøker den på en stund -- økten din holdes i opptil omtrent 30 dager uten aktivitet. Når du logger inn én gang, forblir du også innlogget når du flytter mellom kirkens nettsted og medlemsportalen (`/mobile`), slik at du ikke må logge inn igjen på hvert sted.
+Medlemsportalen (`/mobile`) har sin egen innloggingsskjerm. Trykk på **Logg inn** på Hjem, på siden **Mer**, eller på en skjerm som krever en konto. Skriv inn e-posten og passordet ditt, og trykk på **Logg inn**. Herfra kan du også trykke på **Glemt passord?** for å tilbakestille passordet, eller på **Opprett en konto** hvis du ikke har en ennå. Innlogging med Google og Microsoft tilbys bare på innloggingssiden til nettstedet.
 
-## Gå til medlemsportalen
+## Holde deg innlogget {#staying-signed-in}
 
-Når du er logget inn, kan du åpne medlemsportalen ved å klikke på **navnet** ditt øverst til høyre på siden og velge **Medlemsportal** fra menyen. Medlemsportalen er der alle dine personlige kirkeverktøy ligger, inkludert [hjemmeoversikten](./navigating.md), [Meg-siden](./me-page.md), [grupper](../groups/index.md), [gaver](../giving/index.md) og mer.
+Du forblir innlogget i samme nettleser eller installerte app til du logger ut, selv om du ikke har besøkt den på en stund. Økten din holdes i opptil cirka 30 dager uten aktivitet. Når du logger inn én gang, forblir du også innlogget når du går mellom menighetens nettsted og medlemsportalen (`/mobile`), så du trenger ikke å logge inn på nytt på hvert sted.
 
-## Brukermenyen din
+## Få tilgang til medlemsportalen {#accessing-the-member-portal}
 
-Etter innlogging vises navnet ditt som en brikke øverst til høyre. Klikk på den for å åpne en meny med følgende alternativer:
+Når du er logget inn, får du tilgang til medlemsportalen ved å klikke på **navnet** ditt øverst til høyre på siden og velge **Medlemsportal** i menyen. Medlemsportalen er der alle de personlige verktøyene dine i menigheten ligger, inkludert [Hjem-oversikten](./navigating.md), [Me-siden](./me-page.md), [grupper](../groups/index.md), [giving](../giving/index.md) og mer.
+
+## Brukermenyen din {#your-user-menu}
+
+Etter innlogging vises navnet ditt som en brikke øverst til høyre. Klikk på den for å åpne en meny med følgende valg:
 
 - **Medlemsportal** -- Gå til din personlige oversikt i medlemsportalen.
-- **Rediger profil** -- Oppdater kontoinnstillingene dine eller rediger kirkeprofilen din.
+- **Rediger profil** -- Åpner to valg til: **Rediger konto** (innloggings-e-posten, passordet og tofaktorinnstillingene dine, i B1 Admin) og **Rediger menighetsprofil** (profilen din i medlemsportalens [katalog](../community/member-directory.md)).
 - **Logg ut** -- Logg av kontoen din.
 
-## Administratortilgang
+## Administratortilgang {#admin-access}
 
-Hvis du er kirkeadministrator med riktige tillatelser, ser du også et alternativ **Adminportal** i brukermenyen. Når du klikker på det, går du til B1 Admin der du kan administrere kirkens innstillinger, personer, grupper og innhold.
+Hvis du er administrator i menigheten med de riktige tillatelsene, ser du også et valg for **Administrasjonsportal** i brukermenyen. Når du klikker på det, går du til B1 Admin, der du kan administrere menighetens innstillinger, personer, grupper og innhold.
 
-## Glemt passordet ditt
+## Glemt passordet ditt {#forgot-your-password}
 
 Hvis du ikke husker passordet ditt:
 
-1. Klikk **Glemt passord** på innloggingssiden.
-2. Skriv inn e-postadressen som er knyttet til ChurchApps-kontoen din, og send inn.
-3. Sjekk e-posten din for en melding som inneholder en **6-sifret bekreftelseskode**. Koden er gyldig i 15 minutter.
-4. Skriv inn koden på bekreftelsesskjermen for å logge inn.
-5. Når du er innlogget, gå til profilen din for å velge et nytt passord.
+1. Klikk på **Glemt passord** på innloggingssiden (i medlemsportalen trykker du på **Glemt passord?**).
+2. Skriv inn e-postadressen som er knyttet til ChurchApps-kontoen din, og klikk på **Tilbakestill** (**Send kode** i medlemsportalen).
+3. Sjekk e-posten din for en melding med en **6-sifret bekreftelseskode**. Koden er gyldig i 15 minutter.
+4. Skriv inn koden og klikk på **Bekreft kode**. Hvis den ikke har kommet, kan du trykke på **Send koden på nytt** etter 30 sekunder.
+5. Velg et nytt passord (minst 8 tegn), skriv det inn en gang til for å bekrefte, og klikk på **Logg inn** (**Lagre og logg inn** i medlemsportalen). Du er da logget inn med det nye passordet.
 
 :::tip
-Hvis koden ikke kommer innen et par minutter, sjekk spam-mappen din. Etter fem feil forsøk låses koden -- be om en ny fra siden Glemt passord hvis det skjer.
+Hvis koden ikke kommer innen et par minutter, sjekk spam-mappen din. Etter fem feil forsøk låses koden. Hvis det skjer, be om en ny kode fra siden Glemt passord.
 :::
 
-## Logge ut
+## Logge ut {#logging-out}
 
 For å logge ut klikker du på **navnet** ditt øverst til høyre og velger **Logg ut**. Du blir logget av og sendt tilbake til det offentlige nettstedet.

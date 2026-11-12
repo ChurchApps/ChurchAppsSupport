@@ -72,7 +72,7 @@ Authorization: Bearer <token>
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
 ```
 
-## उपयोगकर्ता
+## उपयोगकर्ता {#users}
 
 बेस पाथ: `/membership/users`
 

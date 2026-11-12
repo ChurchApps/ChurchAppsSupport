@@ -51,7 +51,7 @@ Certos provedores usam um fluxo de dispositivo, semelhante à forma como você e
 Um indicador pulsante **Aguardando confirmação** mostra que o FreePlay está verificando o seu login. A tela mostra quantos minutos restam antes que o código expire, então conclua o processo rapidamente. Selecione **Gerar novo código** se ele expirar.
 :::
 
-## Login pelo celular (somente QR code)
+## Login pelo celular (somente QR code) {#phone-sign-in-qr-code-only}
 
 **Dropbox**, **OneDrive** e **Go Curriculum** usam um login por QR code um pouco diferente, sem nenhum código para digitar:
 

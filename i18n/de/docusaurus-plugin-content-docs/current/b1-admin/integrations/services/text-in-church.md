@@ -1,98 +1,97 @@
 ---
 title: "Text In Church"
-description: "Verbinden Sie B1 Admin und Text In Church über Zapier: API-Schlüssel erstellen, einen Zap von der Kontaktkarte zu B1 bauen und Gruppenmitgliedschaften spiegeln."
+description: "Verbinden Sie B1 Admin und Text In Church über Zapier: API-Schlüssel erstellen, einen Zap von Connect Card zu B1 einrichten und Gruppenmitgliedschaften spiegeln."
 ---
 
 # Text In Church
 
 <div class="article-intro">
 
-[Text In Church](https://textinchurch.com) bündelt SMS plus Tropf-Workflows und Connect-Card-Automationen. Seine Zapier-App stellt beide Richtungen zur Verfügung – Leiten Sie B1-Ereignisse in einen Text In Church-Workflow ein und ziehen Sie Connect-Card- oder neue-Kontakt-Auslöser aus der anderen Seite zu B1 heraus.
+[Text In Church](https://textinchurch.com) bündelt SMS mit Drip-Workflows und Automatisierungen für Connect Cards. Die Zapier-App bietet beide Richtungen: Sie können B1-Ereignisse in einen Workflow von Text In Church einspeisen und umgekehrt Connect-Card- oder Neukontakt-Auslöser in B1 übernehmen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ein [Text In Church](https://textinchurch.com)-Konto auf einem Plan, der die Zapier-Integration enthält
+- Ein [Text In Church](https://textinchurch.com)-Konto mit einem Tarif, der die Zapier-Integration enthält
 - Ein [Zapier](https://zapier.com)-Konto
 - Ein B1Admin-Benutzer mit der Berechtigung **Einstellungen bearbeiten**
 
 </div>
 
-## Was Sie verkabeln können
+## Was Sie verbinden können {#what-you-can-wire-up}
 
 | Richtung | Auslöser | Aktion |
 |---|---|---|
-| B1 → Text In Church | B1 `person.created` | Person erstellen/aktualisieren + Zu Gruppe hinzufügen |
-| B1 → Text In Church | B1 `form.submission.created` | Textnachricht über das entsprechende Team senden |
+| B1 → Text In Church | B1 `person.created` | Person erstellen/aktualisieren + zu Gruppe hinzufügen |
+| B1 → Text In Church | B1 `form.submission.created` | Textnachricht über das zuständige Team senden |
 | B1 → Text In Church | B1 `group.member.added` | Zu Gruppe hinzufügen (Gruppenmitgliedschaft spiegeln) |
 | Text In Church → B1 | Connect Card eingereicht | B1: Person erstellen + Gruppenmitglied hinzufügen |
 | Text In Church → B1 | Person erstellt | B1: Person erstellen |
-| Text In Church → B1 | Person beigetreten Gruppe | B1: Gruppenmitglied hinzufügen |
+| Text In Church → B1 | Person ist einer Gruppe beigetreten | B1: Gruppenmitglied hinzufügen |
 
-Text In Church Aktionen umfassen auch *Textnachricht senden*, *Stimmübertragung senden*, *Aufgabe erstellen*, *Person/Gruppe suchen* und Gruppenmitgliedschaft hinzufügen/entfernen.
+Zu den Aktionen von Text In Church gehören außerdem *Textnachricht senden*, *Sprachrundspruch senden*, *Aufgabe erstellen*, *Person/Gruppe suchen* sowie das Hinzufügen und Entfernen von Gruppenmitgliedern.
 
-## Setup
+## Einrichtung {#setup}
 
-### 1. Prägen Sie einen B1 API-Schlüssel
+### 1. Einen B1-API-Schlüssel erstellen {#1-mint-a-b1-api-key}
 
 **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**:
 
-- `settings:write` – erforderlich für B1-ausgelöste Zaps
-- `people:read`, `people:write` – um die Person zu finden oder zu erstellen
-- `groups:write` – für Gruppensynchronisierung
-- (Optional) `donations:write` wenn Sie Geschenk-Bestätigungen zu TIC verkabeln
+- `settings:write` – erforderlich, um den Schlüssel mit Zapier zu verbinden und für Zaps, die von B1 ausgelöst werden
+- `people:read`, `people:write` – um die Person zu finden oder anzulegen
+- `groups:write` – für die Synchronisation von Gruppen
+- (Optional) `donations:write`, wenn Sie Spendenbestätigungen an TIC anbinden
 
-### 2. Verbinden Sie Text In Church mit Zapier
+### 2. Text In Church mit Zapier verbinden {#2-connect-text-in-church-to-zapier}
 
-Folgen Sie [Text In Churchs Zapier-Integrations-Handbuch](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration). Sie generieren einen API-Token aus dem TIC-Dashboard.
+Folgen Sie dem [Leitfaden zur Zapier-Integration von Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration). Dort erzeugen Sie ein API-Token im Dashboard von TIC.
 
-### 3. Erstellen Sie den Connect-Card-zu-B1-Zap
+### 3. Den Zap von Connect Card zu B1 erstellen {#3-build-the-connect-card-to-b1-zap}
 
-Die häufigste Richtung. Connect Cards, die von TIC abgefeuert werden, werden automatisch zu neuen B1-Personen.
+Dies ist die häufigste Richtung. Connect Cards, die in TIC eingehen, werden automatisch zu neuen Personen in B1.
 
 1. **Auslöser** – Text In Church: Connect Card eingereicht.
-2. **Aktion** – B1.church: Person suchen (nach E-Mail).
-3. **Path** – Zweig auf gefunden / nicht gefunden:
-   - Nicht gefunden → B1.church: Person erstellen.
-   - Gefunden → Fortfahren.
-4. **Aktion** – B1.church: Gruppenmitglied zu einer „New Contact"-Gruppe hinzufügen.
+2. **Aktion** – B1.church: Person suchen (anhand der E-Mail-Adresse).
+3. **Aktion** – B1.church: Gruppenmitglied zur Gruppe „Neuer Kontakt“ hinzufügen, mit der Personen-ID aus Schritt 2.
 
-Schalten Sie den Zap ein. Die nächste Connect Card, die über TIC eingereicht wird, landen in **B1Admin → People** automatisch.
+Die Funktion *Person suchen* von B1 bricht den Zap mit dem Fehler „No person found“ ab, wenn niemand passt; daher kann ein Pfad nicht darauf verzweigen. Richten Sie für neue Kontakte die Fehlerbehandlung von Zapier für den Schritt Person suchen ein und führen Sie im Fehlerpfad B1.church: Person erstellen und danach Gruppenmitglied hinzufügen aus.
 
-## Häufige Rezepte
+Schalten Sie den Zap ein. Die nächste über TIC eingereichte Connect Card landet automatisch unter **B1Admin → Personen**.
 
-### Triggern Sie einen Connect-Card-Style-Workflow von einem B1-Formular
+## Häufige Rezepte {#common-recipes}
 
-- **Auslöser** – B1.church: Neue Formular-Einsendung (Filter auf die „I'm new here"-Formular-ID)
-- **Aktion** – Text In Church: Person erstellen/aktualisieren, Zuordnung der Formular-E-Mail / Telefon / Name-Antworten
-- **Aktion** – Text In Church: Zu Gruppe hinzufügen, wo die Gruppe einen vorgefertigten Willkommens-Workflow angefügt hat
+### Einen Workflow im Stil einer Connect Card aus einem B1-Formular auslösen {#trigger-a-connect-card-style-workflow-from-a-b1-form}
 
-### Spiegeln Sie Gruppenmitgliedschaft
+- **Auslöser** – B1.church: Neue Formular-Einsendung (Filter auf die ID des Formulars „Ich bin neu hier“)
+- **Aktion** – Text In Church: Person erstellen/aktualisieren und dabei die Antworten des Formulars zu E-Mail, Telefon und Name zuordnen
+- **Aktion** – Text In Church: Zu Gruppe hinzufügen, wobei der Gruppe ein vorgefertigter Willkommens-Workflow zugeordnet ist
+
+### Gruppenmitgliedschaft spiegeln {#mirror-group-membership}
 
 - **Auslöser** – B1.church: Neues Gruppenmitglied, gefiltert auf eine bestimmte `groupId`
-- **Aktion** – Text In Church: Zu Gruppe hinzufügen (gleiche Person, Spiegel-Gruppe). Koppeln Sie mit einem `group.member.removed` Zap, wenn Sie vollständigen Sync möchten.
+- **Aktion** – Text In Church: Zu Gruppe hinzufügen (dieselbe Person, spiegelnde Gruppe). Kombinieren Sie dies mit einem Zap für `group.member.removed`, wenn Sie eine vollständige Synchronisation wünschen.
 
-### Pagen Sie einen Leader, wenn jemand beitritt
+### Eine Leitung benachrichtigen, wenn jemand beitritt {#page-a-leader-when-someone-joins}
 
 - **Auslöser** – B1.church: Neues Gruppenmitglied
-- **Aktion** – Text In Church: Textnachricht senden, Empfänger = Telefon des Group Leaders, Body = `"{first} {last} just joined {group}"`.
+- **Aktion** – Text In Church: Textnachricht senden, Empfänger = Telefonnummer der Gruppenleitung, Text = `"{first} {last} just joined {group}"`.
 
-## Limits & Notizen
+## Einschränkungen und Hinweise {#limits--notes}
 
-- **TICs Zapier-App Gates hinter Plan-Tier.** Wenn die Zapier-Integration im TIC-Dashboard ausgegraut ist, wenden Sie sich an TIC-Support, um sie auf Ihrem Plan zu aktivieren.
-- **Gruppen-IDs sind TICs, nicht B1s.** Bei der Spiegelung werden Sie eine Zuordnungstabelle irgendwo führen (eine Zapier *Lookup Table* oder hardcodiert pro Zap).
-- **Textnachricht-Kosten Credits senden.** Jeder Zap, der *Textnachricht senden* feiert, verbraucht aus Ihrem TIC SMS-Kontingent.
+- **Die Zapier-App von TIC hängt vom Tarif ab.** Ist die Zapier-Integration im Dashboard von TIC ausgegraut, wenden Sie sich an den Support von TIC, um sie für Ihren Tarif freizuschalten.
+- **Gruppen-IDs stammen von TIC, nicht von B1.** Beim Spiegeln müssen Sie irgendwo eine Zuordnungstabelle pflegen (eine Zapier-*Nachschlagetabelle* oder fest in jedem Zap hinterlegt).
+- **Das Senden von Textnachrichten kostet Credits.** Jeder Zap, der *Textnachricht senden* auslöst, verbraucht Ihr SMS-Kontingent bei TIC.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-- **Connect-Card-Auslöser wird nicht ausgelöst** – TIC benötigt den Zapier-Integrations-Schalter ein. Überprüfen Sie auch, dass das Formular, das Sie getestet haben, als „Connect Card" konfiguriert ist, nicht als generische Umfrage.
-- **Person in B1 erstellen fehlgeschlagen mit 401** – der API-Schlüssel ist falsch, widerrufen oder fehlend `people:write`. Prägen Sie erneut.
-- **Doppelte B1-Personen** – TIC sendet sowohl *Person erstellt* als auch *Connect Card eingereicht* für das gleiche Ereignis. Wählen Sie einen als Ihre Wahrheitsquelle und fügen Sie einen Zapier Filter auf den anderen hinzu.
+- **Der Auslöser für Connect Cards feuert nicht** – TIC benötigt die aktivierte Zapier-Integration. Prüfen Sie außerdem, ob das Formular, mit dem Sie getestet haben, als „Connect Card“ und nicht als allgemeine Umfrage eingerichtet ist.
+- **Person erstellen in B1 schlägt mit 401 fehl** – der API-Schlüssel ist falsch, widerrufen oder hat keine Berechtigung `people:write`. Erstellen Sie ihn neu.
+- **Doppelte Personen in B1** – TIC sendet für dasselbe Ereignis sowohl *Person erstellt* als auch *Connect Card eingereicht*. Wählen Sie eines als maßgebliche Quelle und fügen Sie beim anderen einen Zapier-Filter hinzu.
 
-## Siehe auch
+## Siehe auch {#see-also}
 
-- [Clearstream](./clearstream.md) – alternative SMS-Plattform mit ähnlichem Zapier-Form
-- [Zapier (Übersicht)](../zapier.md) – B1-Seite jedes Zapier-Rezepts
-- [Text In Church Zapier-Handbuch](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TICs Dokumente)
+- [Clearstream](./clearstream.md) – alternative SMS-Plattform mit ähnlichem Zapier-Aufbau
+- [Zapier (Überblick)](../zapier.md) – die B1-Seite jedes Zapier-Rezepts
+- [Zapier-Leitfaden von Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (Dokumentation von TIC)

@@ -20,7 +20,7 @@ B1 comprend un ensemble de contrôles de sécurité pour enfants lors du pointag
 
 </div>
 
-## Capacité de la Salle et Fermeture d'une Salle
+## Capacité de la Salle et Fermeture d'une Salle {#room-capacity-and-closing-a-room}
 
 Chaque salle de pointage (groupe) peut imposer ses propres limites. Ouvrez le groupe, cliquez sur **Modifier** pour modifier ses paramètres, et trouvez la section **Capacité de Pointage** :
 
@@ -28,7 +28,7 @@ Chaque salle de pointage (groupe) peut imposer ses propres limites. Ouvrez le gr
 - **Capacité des Invités** -- Un plafond facultatif séparé sur le nombre d'invités que la salle peut accueillir.
 - **Fermée pour le Pointage** -- Réglez sur **Oui** pour arrêter immédiatement tous les pointages dans cette salle (par exemple, lorsqu'un cours est annulé ou qu'une salle n'est pas disponible). Les départs continuent à fonctionner.
 
-## Ratios de Bénévoles
+## Ratios de Bénévoles {#volunteer-ratios}
 
 La même section **Capacité de Pointage** sur le groupe inclut les règles de personnel :
 
@@ -50,11 +50,11 @@ La façon dont les ratios sont appliqués est un paramètre au niveau de l'égli
 La capacité et la fermeture pour le pointage sont toujours des limites strictes — le choix avertir/bloquer s'applique uniquement aux ratios de bénévoles.
 :::
 
-## Types de Pointage
+## Types de Pointage {#check-in-types}
 
 Chaque pointage enregistre si la personne est un **Membre**, un **Invité**, ou un **Bénévole**. Le type est choisi avec des jetons sur l'écran du ménage de la borne (Membre est la valeur par défaut). Les types alimentent les règles de sécurité — les bénévoles fournissent une couverture de ratio, et les invités comptent pour la capacité des invités de la salle.
 
-## Conseils d'Âge et de Niveau pour les Salles
+## Conseils d'Âge et de Niveau pour les Salles {#age-and-grade-room-guidance}
 
 Vous pouvez donner à chaque salle des limites d'âge ou de niveau pour que la borne guide les familles vers les salles appropriées :
 
@@ -66,7 +66,7 @@ Les niveaux se déroulent à la **date de promotion de niveau** de votre église
 1. Dans B1 Admin, allez à **Paramètres** et ouvrez la section **Promotion de niveau**.
 2. Définissez le mois et le jour où votre église promeut les étudiants (par exemple, 1er août). Les âges et niveaux à la borne sont calculés à partir de la date de promotion la plus récente.
 
-## Personnes Autorisées et Non Autorisées à Récupérer
+## Personnes Autorisées et Non Autorisées à Récupérer {#trusted-and-not-authorized-pickup-people}
 
 Chaque ménage peut avoir une liste de personnes qui sont — ou ne sont pas — autorisées à récupérer ses enfants.
 

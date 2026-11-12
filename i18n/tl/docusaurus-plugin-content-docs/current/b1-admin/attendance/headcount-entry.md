@@ -1,51 +1,51 @@
 ---
-title: "Pagpasok ng Headcount at Trend"
-description: "Maglagay ng kabuuang bilang ng dumalo sa serbisyo o grupo sa B1 Admin nang walang pangalan, at subaybayan ang mga ito linggo-linggo sa Headcount Trend report."
+title: "Headcount Entry at Trend"
+description: "Maglagay ng kabuuang headcount para sa isang serbisyo o grupo sa B1 Admin nang walang pinangalanang roster, at subaybayan ang mga kabuuang iyon linggo-linggo sa Headcount Trend report."
 ---
 
-# Pagpasok ng Headcount at Trend
+# Headcount Entry at Trend
 
 <div class="article-intro">
 
-Hinahayaan kayo ng mga headcount na itala ang simpleng kabuuang bilang ng attendance -- para sa isang serbisyo, oras ng serbisyo, o grupo -- nang hindi nagche-check in ng may pangalang listahan. Gamitin ito kapag kailangan lang ninyong malaman kung "ilan ang dumalo," at samahan ito ng Headcount Trend report para masubaybayan ang bilang na iyon sa paglipas ng panahon.
+Hinahayaan ka ng mga headcount na itala ang simpleng kabuuang bilang ng attendance -- para sa isang serbisyo, isang oras ng serbisyo, o isang grupo -- nang hindi nagche-check in ng pinangalanang roster. Gamitin ito kapag ang kailangan mo lang malaman ay "ilan ang tao rito," at ipares ito sa Headcount Trend report para subaybayan ang bilang na iyon sa paglipas ng panahon.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Dapat naka-configure na ang inyong mga campus, serbisyo, at oras ng serbisyo. Tingnan ang [Attendance Setup](setup.md).
-- Ang pagpasok ng headcount ay nangangailangan ng pahintulot na **Attendance &gt; Edit**; ang pagtingin sa trend report ay nangangailangan ng **Attendance &gt; View**. Tingnan ang [Mga Role at Pahintulot](../settings/roles-permissions.md).
+- Dapat na naka-configure ang iyong mga campus, serbisyo, at oras ng serbisyo. Tingnan ang [Attendance Setup](setup.md).
+- Ang paglalagay ng headcount ay nangangailangan ng **Attendance &gt; Edit** na permission; ang pagtingin sa trend report ay nangangailangan ng **Attendance &gt; View**. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
 :::info
-Ang mga headcount ay alternatibong kabuuan lamang ng [Pagtatala ng Attendance](recording-attendance.md). Kung kailangan ninyong malaman kung **sino** ang dumalo -- halimbawa, para kumustahin ang mga hindi na bumabalik -- ipagpatuloy ang paggamit ng may pangalang session attendance sa Sessions ng isang grupo. Bilang lamang ang iniimbak ng mga headcount.
+Ang mga headcount ay alternatibo na kabuuan lamang ng [Recording Attendance](recording-attendance.md). Kung kailangan mong malaman **kung sino** ang dumalo -- halimbawa, para ma-follow up ang mga taong hindi na bumalik -- ipagpatuloy ang paggamit ng named session attendance sa Sessions ng grupo. Ang mga headcount ay nag-iimbak lamang ng numero.
 :::
 
-## Pagtatala ng Headcount
+## Pagtatala ng Headcount {#recording-a-headcount}
 
 1. Buksan ang **B1 Admin**, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **People**, at i-click ang **Attendance**.
 2. I-click ang **Enter headcount** sa kaliwang column.
 3. Punan ang form:
    - **Service** *(kinakailangan)*
-   - **Service Time** -- iwanang blangko para itala ang kabuuan sa lahat ng oras ng serbisyo
-   - **Group** -- opsyonal; mga grupo lamang na naka-enable ang Track Attendance ang nakalista. Iwanang blangko para sa "No group (whole service)."
+   - **Service Time** -- iwanan sa **All service times** para magtala ng kabuuan sa lahat ng oras ng serbisyo
+   - **Group** -- opsyonal; tanging mga grupong naka-enable ang Track Attendance ang nakalista. Iwanang blangko para sa "No group (whole service)."
    - **Date**
-   - **Headcount** -- ang kabuuang bilang ng mga taong dumalo
+   - **Headcount** -- ang kabuuang bilang ng taong present (buong numero, 0 o higit pa)
 4. I-click ang **Save**.
 
-Ang talahanayang **Recent Headcounts** sa tabi ng form ay naglilista ng huli ninyong mga entry kasama ang petsa, serbisyo, oras ng serbisyo, grupo, at bilang. I-click ang isang hilera para i-load itong muli sa form kung kailangan ninyo itong itama o tanggalin.
+Nakalista sa **Recent Headcounts** table sa tabi ng form ang iyong huling ilang entry, kasama ang petsa, serbisyo, oras ng serbisyo, grupo, at bilang. I-click ang isang row para ibalik ito sa form kung kailangan mong itama o burahin ito.
 
-## Headcount Trend Report
+## Headcount Trend Report {#headcount-trend-report}
 
-1. Mula sa parehong pahina ng **Attendance**, i-click ang **All years** sa kaliwang column, pagkatapos ay piliin ang tab na **Headcount Trend**.
-2. Gamitin ang mga filter na **Campus**, **Service**, **Service Time**, at **Group** para paliitin ang report.
+1. Mula sa parehong **Attendance** page, i-click ang **All years** sa kaliwang column, pagkatapos piliin ang **Headcount Trend** tab.
+2. Tumatakbo ang report kapag binuksan ang tab. Para paliitin ito, pumili ng **Campus**, **Service**, **Service Time**, o **Group** at i-click ang **Run Report**. Walang date filter -- sakop ng report ang bawat linggong may headcount.
 
-Ipinapakita ng report ang mga naitalang headcount na pinagsama kada linggo, bilang line chart at talahanayan -- ang parehong istilo ng report na ginagamit sa [mga tab na Attendance Trend at Group Attendance](tracking-attendance.md). Ang mga headcount na naitala para sa kasalukuyang linggo ay lumalabas din sa ilalim ng **Headcounts this week** sa pangunahing pahina ng Attendance.
+Ipinapakita ng report ang mga naitalang headcount mo na pinagsama kada linggo, bilang line chart at table -- kapareho ng istilo ng report na ginagamit sa [Attendance Trend at Group Attendance tabs](tracking-attendance.md). Lumalabas din ang mga headcount na nailagay para sa kasalukuyang linggo sa ilalim ng **Headcounts this week** sa pangunahing Attendance page.
 
-## Mga Kaugnay na Pahina
+## Mga Kaugnay na Pahina {#related-pages}
 
-- [Pagtatala ng Attendance](recording-attendance.md) -- may pangalan, session attendance kada tao
-- [Pagsubaybay sa Attendance](tracking-attendance.md) -- mga trend report ng attendance at grupo
+- [Recording Attendance](recording-attendance.md) -- pinangalanan, bawat-tao na session attendance
+- [Tracking Attendance](tracking-attendance.md) -- mga trend report ng attendance at grupo
 - [Attendance Setup](setup.md) -- i-configure ang mga campus, serbisyo, at oras ng serbisyo

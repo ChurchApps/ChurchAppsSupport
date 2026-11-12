@@ -1,99 +1,104 @@
 ---
-title: "Guide : Suivi de la présence à l'église"
-description: "Suivez la présence à l'église dans B1 Admin en configurant les campus et les horaires de services, en l'enregistrant manuellement ou par enregistrement autonome, puis consultez les rapports."
+title: "Guide : Suivre la fréquentation de l'église"
+description: "Suivez la fréquentation de l'église dans B1 Admin en configurant les campus et les horaires de culte, en l'enregistrant manuellement ou par pointage en libre-service, puis en consultant les rapports."
 ---
 
-# Suivi de la présence à l'église
+# Suivre la fréquentation de l'église
 
 <div class="article-intro">
 
-Configurez le suivi de la présence pour vos services et groupes — de la configuration des sites et des heures de service, à l'enregistrement de la présence manuellement ou via l'application d'enregistrement en libre-service, à la visualisation des tendances dans les rapports. À la fin, vous aurez une image complète de qui assiste et quand.
+Configurez le suivi de la fréquentation de vos cultes et de vos groupes : de la configuration des campus et des horaires de culte, à l'enregistrement manuel ou par la borne de pointage en libre-service, jusqu'à la consultation des tendances dans les rapports. Au terme de ce guide, vous aurez une vue complète de qui participe et à quel moment.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Compte B1 Admin avec accès administrateur
-- [Personnes ajoutées à votre répertoire](../people/adding-people.md)
+- Un compte B1 Admin avec un accès administrateur
+- [Personnes ajoutées à votre annuaire](../people/adding-people.md)
 - [Groupes créés](../groups/creating-groups.md) pour les ministères que vous souhaitez suivre
 
 </div>
 
-## Étape 1 : Configurer les sites et les services
+## Étape 1 : Configurer les campus et les cultes {#step-1-configure-campuses--services}
 
 Définissez où et quand votre église se réunit.
 
-Suivez le guide [Configuration de la présence](../attendance/setup.md) pour :
+Suivez le guide [Configuration de la fréquentation](../attendance/setup.md) pour :
 
-1. Ajouter votre site (p. ex., « Site principal »)
-2. Ajouter des heures de service (p. ex., « Dimanche 9h00 », « Dimanche 11h00 », « Mercredi 19h00 »)
-3. Assigner des groupes à chaque heure de service pour définir les classes/ministères qui se réunissent pendant ce service
+1. Dans le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu), choisir **Personnes > Fréquentation**, puis cliquer sur **Configuration**
+2. Ajouter votre campus (par exemple « Campus principal ») et ses cultes
+3. Ajouter les horaires des cultes (par exemple « Dimanche 9 h 00 », « Dimanche 11 h 00 », « Mercredi 19 h 00 »)
 
-## Étape 2 : Activer le suivi de la présence du groupe
+## Étape 2 : Activer le suivi de fréquentation des groupes {#step-2-enable-group-attendance-tracking}
 
-Activez le suivi de la présence pour les groupes que vous souhaitez surveiller.
+Activez le suivi de la fréquentation pour les groupes que vous souhaitez surveiller.
 
-Suivez le guide [Création de groupes](../groups/creating-groups.md) pour :
+Suivez le guide [Créer des groupes](../groups/creating-groups.md) pour :
 
-1. Modifiez chaque groupe que vous souhaitez suivre et activez « Suivi de la présence »
-2. Associez les groupes aux heures de service afin que la présence soit enregistrée contre le service approprié
+1. Ouvrir chaque groupe à suivre, cliquer sur **Modifier**, puis définir **Suivre la fréquentation** sur **Oui**
+2. Si le groupe se réunit pendant un culte, choisir l'heure dans **Ajouter un horaire de culte** et cliquer sur le bouton plus afin que la fréquentation soit enregistrée pour le bon culte, puis cliquer sur **Enregistrer**
 
 :::info
-Tous les groupes ne nécessitent pas de suivi de la présence. Activez-le pour les groupes où vous souhaitez surveiller la participation — classes d'enfants, petits groupes, école du dimanche, etc.
+Tous les groupes n'ont pas besoin d'un suivi de la fréquentation. Activez-le pour les groupes dont vous souhaitez suivre la participation : cours pour enfants, petits groupes, école du dimanche, etc.
 :::
 
-## Étape 3 : Enregistrer la présence manuellement
+## Étape 3 : Enregistrer la fréquentation manuellement {#step-3-record-attendance-manually}
 
-Cochez qui a assisté à chaque service et groupe.
+Cochez les personnes présentes à chaque culte et dans chaque groupe.
 
-Suivez le guide [Enregistrement de la présence](../attendance/recording-attendance.md) pour :
+Suivez le guide [Enregistrer la fréquentation](../attendance/recording-attendance.md) pour :
 
-1. Ouvrez un groupe, cliquez sur **All sessions** dans sa section **Sessions**, et ajoutez une session pour la date et l'heure du service. Cochez **Ajouter aussi pour les autres groupes** pour créer des sessions pour chaque classe à cette heure de service à la fois.
-2. Cochez qui a assisté à chaque groupe
+1. Ouvrir un groupe, cliquer sur **Toutes les séances** dans la section **Séances**, cliquer sur **Nouveau**, puis choisir l'**Horaire de culte** et la **Date de la séance**. Cochez **Ajouter aussi pour les autres _N_ groupes dans _horaire de culte_** pour créer en une seule fois les séances de tous les cours à cet horaire de culte.
+2. Cochez les personnes présentes, puis cliquez sur **Enregistrer la fréquentation**
+
+Si vous n'avez besoin que d'un total et non des noms (par exemple, pour le culte principal), cliquez plutôt sur **Saisir le nombre de présents** sur la page **Fréquentation** — voir [Saisie du nombre de présents](../attendance/headcount-entry.md).
 
 :::tip
-Le suivi manuel fonctionne très bien pour les services pour adultes, les petits groupes et toute situation où un kiosque d'enregistrement n'est pas pratique.
+Le suivi manuel convient parfaitement aux cultes pour adultes, aux petits groupes et à toute situation où une borne de pointage n'est pas pratique.
 :::
 
-## Étape 4 : Configurer l'enregistrement automatique (Optionnel)
+## Étape 4 : Configurer le pointage en libre-service (facultatif) {#step-4-set-up-self-check-in-optional}
 
-Laissez les membres s'enregistrer eux-mêmes à l'aide d'un kiosque sur tablette.
+Permettez aux membres de pointer eux-mêmes à l'aide d'une borne tactile.
 
-Suivez le guide [Check-In](../attendance/check-in.md) pour :
+Suivez le guide [Pointage](../attendance/check-in.md) pour :
 
-1. Installez l'application B1 Checkin sur une tablette pour l'enregistrement en libre-service
-2. Les membres recherchent leur nom et s'enregistrent eux-mêmes et leur famille
-3. Les enregistrements d'enregistrement apparaissent à côté des enregistrements saisis manuellement — aucune différence dans les données
+1. Installer l'application B1 Checkin sur une tablette pour le pointage en libre-service
+2. Les membres recherchent leur nom et se pointent eux-mêmes ainsi que leur famille
+3. Les présences enregistrées par pointage apparaissent avec celles saisies manuellement — les données sont identiques
 
 :::info
-Pour une configuration complète du ministère des enfants, y compris la configuration du matériel et de l'imprimante, consultez le [Guide d'enregistrement des enfants](./childrens-checkin.md).
+Pour une configuration complète du ministère des enfants, y compris le matériel et l'imprimante, consultez le [Guide du pointage des enfants](./childrens-checkin.md).
 :::
 
-## Étape 5 : Afficher les rapports de présence
+## Étape 5 : Consulter les rapports de fréquentation {#step-5-view-attendance-reports}
 
-Voyez le grand tableau de la participation dans toute votre église.
+Obtenez une vue d'ensemble de la participation dans votre église.
 
-Suivez le guide [Rapports de présence](../reports/attendance-reports.md). Trois vues de rapport sont disponibles :
+Suivez le guide [Rapports de fréquentation](../reports/attendance-reports.md). Sur la page **Fréquentation**, cliquez sur **Toutes les années** pour retrouver ces rapports sous forme d'onglets :
 
-1. **Tendance de présence** — voir la présence au fil du temps pour repérer la croissance ou le déclin
-2. **Présence du groupe** — voir qui a assisté à chaque session de groupe dans une plage de dates, avec un téléchargement CSV
-3. **Présence du groupe par jour** — ventilation jour après jour pour une analyse détaillée
+1. **Tendance de fréquentation** — suivez l'évolution de la fréquentation dans le temps pour repérer une croissance ou un recul
+2. **Tendance du nombre de présents** — représentez graphiquement les totaux de présents que vous avez saisis manuellement
+3. **Fréquentation des groupes** — consultez qui a participé à chaque séance de groupe sur une période donnée, avec un téléchargement CSV
+
+Pour un décompte jour par jour pour un groupe, ouvrez le rapport **Fréquentation quotidienne des groupes** à l'adresse **admin.b1.church/reports/dailyGroupAttendance**.
 
 :::info
-Les rapports combinent les enregistrements de présence enregistrés manuellement et en libre-service. Il n'y a aucune différence dans la façon dont les données apparaissent — les deux méthodes alimentent les mêmes rapports.
+Les rapports de fréquentation combinent les présences enregistrées manuellement et celles du pointage en libre-service. Les données s'affichent de la même façon : les deux méthodes alimentent les mêmes rapports.
 :::
 
-## C'est fait !
+## C'est terminé ! {#youre-done}
 
-Votre suivi de la présence est configuré. Que vous enregistriez la présence manuellement, utilisiez l'application d'enregistrement ou les deux — toutes les données s'écoulent dans les mêmes rapports afin que vous ayez une image claire de la participation dans votre église.
+Votre suivi de la fréquentation est configuré. Que vous enregistriez la présence manuellement, que vous utilisiez l'application de pointage ou les deux, toutes les données alimentent les mêmes rapports afin que vous ayez une vision claire de la participation dans votre église.
 
-## Articles connexes
+## Articles connexes {#related-articles}
 
-- [Configuration de la présence](../attendance/setup.md) — configurer les sites et les services
-- [Enregistrement de la présence](../attendance/recording-attendance.md) — enregistrer la présence manuellement
-- [Suivi de la présence](../attendance/tracking-attendance.md) — examiner les tendances de présence
-- [Check-In](../attendance/check-in.md) — application d'enregistrement en libre-service
-- [Création de groupes](../groups/creating-groups.md) — configurer des groupes avec suivi de la présence
-- [Rapports de présence](../reports/attendance-reports.md) — afficher les tendances de présence
-- [Guide d'enregistrement des enfants](./childrens-checkin.md) — configuration complète du ministère des enfants
+- [Configuration de la fréquentation](../attendance/setup.md) — configurer les campus et les cultes
+- [Saisie du nombre de présents](../attendance/headcount-entry.md) — enregistrer des totaux sans les noms
+- [Enregistrer la fréquentation](../attendance/recording-attendance.md) — enregistrer la présence manuellement
+- [Suivre la fréquentation](../attendance/tracking-attendance.md) — consulter les tendances de fréquentation
+- [Pointage](../attendance/check-in.md) — l'application de pointage en libre-service
+- [Créer des groupes](../groups/creating-groups.md) — créer des groupes avec suivi de la fréquentation
+- [Rapports de fréquentation](../reports/attendance-reports.md) — consulter les tendances de fréquentation
+- [Guide du pointage des enfants](./childrens-checkin.md) — configuration complète du pointage pour le ministère des enfants

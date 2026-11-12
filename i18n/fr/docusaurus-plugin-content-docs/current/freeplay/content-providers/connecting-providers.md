@@ -51,7 +51,7 @@ Certains fournisseurs utilisent un flux d'appareil, comparable à la façon dont
 Un indicateur pulsant **En attente de confirmation** montre que FreePlay vérifie votre connexion. L'écran indique le nombre de minutes restantes avant l'expiration du code ; terminez donc le processus rapidement. Sélectionnez **Générer un nouveau code** si le délai expire.
 :::
 
-## Connexion par téléphone (code QR uniquement)
+## Connexion par téléphone (code QR uniquement) {#phone-sign-in-qr-code-only}
 
 **Dropbox**, **OneDrive** et **Go Curriculum** utilisent une connexion par code QR légèrement différente, sans code à saisir :
 

@@ -30,7 +30,7 @@ Una aplicación de quiosco diseñada específicamente para las estaciones de reg
 
 Una aplicación para Android TV que muestra el contenido de las lecciones en las aulas. Los maestros pueden enviar diapositivas, videos y actividades de las lecciones a la pantalla del televisor, lo que facilita presentar el material curricular durante las clases.
 
-## Configuración local
+## Configuración local {#local-setup}
 
 Todas las aplicaciones móviles comparten el mismo conjunto de herramientas basado en Expo y siguen patrones de configuración similares. Usando B1 Checkin como ejemplo:
 

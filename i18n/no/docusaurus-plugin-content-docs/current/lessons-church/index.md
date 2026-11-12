@@ -11,7 +11,7 @@ Lessons.church er en helt gratis læreplanplattform for kirker. Det er ingen abo
 
 </div>
 
-## Hva du kan gjøre
+## Hva du kan gjøre {#what-you-can-do}
 
 Med Lessons.church kan kirken din:
 

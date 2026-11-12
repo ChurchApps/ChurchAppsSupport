@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Orari dei servizi
+## Orari dei servizi {#service-times}
 
 Percorso base: `/attendance/servicetimes`
 

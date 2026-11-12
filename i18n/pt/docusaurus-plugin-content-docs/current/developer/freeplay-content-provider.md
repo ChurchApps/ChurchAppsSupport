@@ -63,7 +63,7 @@ Cada item na playlist deve incluir:
 | `thumbnail` | Recomendado | Uma imagem miniatura para o item |
 | `duration` | Recomendado | Duração em segundos (para vídeos) |
 
-## Formatos de Mídia
+## Formatos de Mídia {#media-formats}
 
 FreePlay baixa arquivos diretamente, então cada item de mídia deve ter um **link direto** (sem players incorporados ou redirecionamentos de página).
 

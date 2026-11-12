@@ -1,81 +1,87 @@
 ---
 title: "Mailchimp"
-description: "以标签形式将 B1 Admin 中的人员及小组或已保存名单成员同步到 Mailchimp 受众名单，包括设置、初始导入和故障排除步骤。"
+description: "以标签的形式，将 B1 Admin 的人员及小组或已保存名单的成员资格同步到 Mailchimp 受众名单，并附有设置、初始导入与故障排除步骤。"
 ---
 
 # Mailchimp
 
 <div class="article-intro">
 
-将 Mailchimp 受众与 B1 自动同步：人员随他们的姓名、电子邮件和电话流入；小组和列表成员资格成为 Mailchimp 标签；已删除的人员被存档。同步内置于 B1 — 没有第三方服务、没有按任务计量，更改以近乎实时的方式到达，而不是在每晚计划上。
+让 Mailchimp 受众名单自动与 B1 保持同步：人员的姓名、电子邮件与电话会一并进入；小组与名单的成员资格会转为 Mailchimp 标签；已删除的人员则会被存档。此同步功能内置于 B1——无需第三方服务，也没有按任务计费，而且变更会近乎实时地送达，而非每晚才同步一次。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 一个 [Mailchimp](https://mailchimp.com) 帐户，带有您想要 B1 管理的受众
-- Mailchimp **API 密钥**（Mailchimp：资料图标 → **帐户和计费 > 额外功能 > API 密钥**）
-- 您的**受众 ID**（Mailchimp：**受众 > 设置 > 受众名称和默认值**）
-- 具有**编辑设置**权限的 B1Admin 用户
+- 一个 [Mailchimp](https://mailchimp.com) 账户，并拥有你希望由 B1 管理的受众名单
+- Mailchimp 的 **API key**（Mailchimp：个人资料图标 → **Account & billing → Extras → API keys**）
+- 你的 **Audience ID**（Mailchimp：**Audience → Settings → Audience name and defaults**）
+- 一位在 B1Admin 中具有 **Edit Settings** 权限的用户
 
 </div>
 
-## 什么同步
+## 同步的内容 {#what-syncs}
 
-| B1 更改 | Mailchimp 效果 |
+| B1 中的变更 | Mailchimp 中的效果 |
 |---|---|
-| 添加或更新人员 | 添加/更新订阅者（名字、姓氏、电话；新订阅者以`subscribed`形式到达） |
-| 删除人员（或 GDPR 删除） | 订阅者已存档 |
-| 人员加入小组 | 以小组名称添加标签 |
-| 人员离开小组 | 删除该标签 |
-| 人员进入保存列表 | 以列表名称添加标签 |
-| 人员离开保存列表 | 删除该标签 |
+| 新增或更新人员 | 新增或更新订阅者（名字、姓氏、电话；新订阅者以 `subscribed` 状态加入） |
+| 删除人员（或依 GDPR 删除） | 订阅者被存档 |
+| 人员加入小组 | 新增以该小组命名的标签 |
+| 人员离开小组 | 移除该标签 |
+| 人员加入已保存的名单 | 新增以该名单命名的标签 |
+| 人员离开已保存的名单 | 移除该标签 |
 
-**保存列表通常是更好的标签源。** B1 [保存列表](/docs/b1-admin/people/lists)是一个基于规则重新评估自己的受众 — "北校区的所有人"、"选择加入牧教电子邮件的成员"。将您的 Mailchimp 细分指向列表标签，同步保持它们；为事工团队邮件使用小组标签。
+**通常以已保存的名单作为标签来源会更理想**。B1 的[已保存名单](/docs/b1-admin/people/lists)是基于规则的受众，会自行重新计算成员——例如"北校区的所有人"或"同意接收牧养电子邮件的会员"。将你的 Mailchimp 分段指向名单标签，同步功能便会自动维护它们；小组标签则适用于事工团队的邮件发送。
 
-同步是**单向的**（B1 → Mailchimp）并且只触及 Mailchimp 的标准字段，因此它不能与您在 Mailchimp 中管理的合并字段或细分冲突。
+此同步为**单向**（B1 → Mailchimp），且只会更新 Mailchimp 的标准栏位，因此不会与你在 Mailchimp 中管理的合并栏位或分段产生冲突。
 
-## 设置
+## 设置 {#setup}
 
-1. 在 B1Admin 中转到**设置 > 开发人员 > Webhooks > 新建 Webhook**。
-2. 将**连接器类型**设置为 **Mailchimp**。
-3. 粘贴您的**Mailchimp API 密钥**和**受众 ID**。密钥存储为加密形式，永远不会再显示。
-4. 相关事件是预先选择的；取消勾选您不想要的（例如保持人员事件开启但跳过小组标签）。
-5. 保存。B1 在接受前对 Mailchimp 验证密钥和受众 — 打字错误立即失败并提供原因。
+1. 在 B1Admin 中前往 **Settings → Developer → Webhooks → New Webhook**。
+2. 将 **Connector Type** 设为 **Mailchimp**。
+3. 粘贴你的 **Mailchimp API Key** 与 **Audience ID**。该密钥会加密储存，之后不会再次显示。
+4. 相关事件已预先勾选；取消勾选你不需要的项目（例如保留人员事件，但略过小组标签）。
+5. 保存。B1 会在接受之前先向 Mailchimp 验证密钥与受众名单——若有输入错误，会立即失败并显示原因。
 
-随时使用**发送测试**重新验证连接。每个同步尝试都记录在 webhook 的交付历史中，包含 Mailchimp 的实际响应，失败的交付会自动重试，大约五天的退避。
+你可以随时重新打开该 webhook，并点击 **Send Test Event** 以重新验证连接（对于 Mailchimp，此操作会检查你的密钥与受众名单，而不会发送示例订阅者）。每次同步尝试都会记录在该 webhook 的传送历史中，并附上 Mailchimp 的实际回应；失败的传送会以递增的间隔自动重试，为期约五天。
 
-## 初始导入
+## 初始导入 {#initial-import}
 
-连接器从其打开的那一刻起同步*更改*；它不会回填您的现有目录。对于设置日：
+连接器只会同步启用之后发生的*变更*，不会回溯补入你现有的通讯录。在设置当天：
 
-1. 在 B1Admin 中转到**人员**，搜索您想要的人员（或运行保存列表），然后单击**导出**以下载 CSV。
-2. 在 Mailchimp 中使用**受众 > 导入联系人**加载 CSV，在导入期间应用任何标签。
+1. 在 B1Admin 中前往 **People**，搜索你想要的人员（或执行一个已保存的名单），然后点击 **Export** 下载 CSV 文件。
+2. 在 Mailchimp 中使用 **Audience → Import contacts** 导入 CSV 文件，并在导入时套用所需的标签。
 
-通过 Mailchimp 的导入器进行初始加载可让您控制同意问题 — 仅导入实际同意接收您的电子邮件的人员。批量导入整个目录作为订阅的联系人可能违反 Mailchimp 的条款和反垃圾邮件法（CAN-SPAM/GDPR）。
+通过 Mailchimp 的导入工具进行初始载入，可以让你掌握同意的问题——只导入确实同意接收你电子邮件的人员。将整个通讯录作为已订阅联络人批量导入，可能违反 Mailchimp 的条款以及反垃圾邮件法律（CAN-SPAM／GDPR）。
 
-## 限制和注意
+## 限制与注意事项 {#limits--notes}
 
-- **单向同步。** Mailchimp 中的退订、退回和编辑不会流回 B1。在 Mailchimp 中退订的人仍可以接收从 B1 直接发送的电子邮件 — 将 Mailchimp 视为大量邮件同意的真实来源。
-- **没有电子邮件地址的人员被跳过**（在交付历史中这样记录） — Mailchimp 订阅者由电子邮件键入。
-- **电子邮件地址更改会创建新订阅者。** Mailchimp 通过电子邮件识别人员，因此在 B1 中更改某人的电子邮件会在新地址下添加他们；旧订阅者保持不变，直到您在 Mailchimp 中存档它。
-- **仅标准字段同步** — 名字、姓氏、电话。成员资格状态、校区和自定义 B1 字段在此版本中不映射到 Mailchimp 合并字段；改用列表标签进行细分。
-- **标签名称是小组/列表名称。** 重命名小组或列表会以新名称开始标记；旧标签保留在现有订阅者上，直到在 Mailchimp 中删除。
-- **Mailchimp 的联系人限制仍然适用** — 将免费层受众推过其限制的同步将在交付历史中记录`成员限制已达`错误。
+- **单向同步**。在 Mailchimp 中的退订、退信与编辑不会回传到 B1。在 Mailchimp 中退订的人，仍可能收到从 B1 直接发出的电子邮件——请以 Mailchimp 作为大量邮件同意状态的依据。
+- **没有电子邮件地址的人员会被略过**（会记录在传送历史中）——Mailchimp 的订阅者是以电子邮件作为识别键的。
+- **更改电子邮件地址会建立新的订阅者**。Mailchimp 以电子邮件识别人员，因此在 B1 中更改某人的电子邮件，会以新地址将其加入；旧的订阅者会保留，直到你在 Mailchimp 中将其存档。
+- **只有标准栏位会同步**——名字、姓氏、电话。在此版本中，会员状态、校区以及 B1 的自定义栏位不会对应到 Mailchimp 的合并栏位；请改用名单标签进行分段。
+- **标签名称即为小组／名单名称**。重新命名小组或名单后，新的标签会以新名称开始使用；旧标签会保留在既有订阅者身上，直到你在 Mailchimp 中将其移除。
+- **Mailchimp 的联络人上限仍然适用**——如果同步导致免费方案的受众名单超过上限，传送历史中会记录 `Member limit reached` 错误。
 
-## 其他方法（Zapier / Make）
+## 其他范例（Zapier／Make） {#other-recipes-zapier--make}
 
-任何超出受众同步的内容 — 在`donation.created`上标记捐赠者、Mailchimp → B1 反向方向或完全同步到不同的电子邮件平台（Constant Contact、Brevo 等） — 仍然可通过 [Zapier](../zapier.md) 或 [Make](../make.md) 获得，它们触发相同的 webhook 事件：
+除了受众名单同步之外的其他用途——例如在 `donation.created` 时为奉献者加上标签、由 Mailchimp 反向同步到 B1，或同步到完全不同的电子邮件平台（Constant Contact、Brevo 等）——仍可通过 [Zapier](../zapier.md) 或 [Make](../make.md) 实现，它们会由相同的 webhook 事件触发：
 
-- **标记捐赠者：** B1 *新捐赠* → B1 *查找人员* → Mailchimp *添加订阅者到标签* (`Gave-2026`)
-- **双向：** Mailchimp *新订阅者* → B1 *创建人员*
+- **为奉献者加上标签**：B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag*（`Gave-2026`）
+- **双向同步**：Mailchimp *New Subscriber* → B1 *Create Person*
 
-如果您之前通过 Zapier 连接人员/小组同步，启用本机连接器后关闭这些 Zaps — 同时运行两个双进程每个事件并为空燃烧 Zapier 任务。
+如果你之前已透过 Zapier 设置了人员／小组同步，请在启用原生连接器后关闭那些 Zap——同时运行两者会导致每个事件被处理两次，并白白消耗 Zapier 的任务数。
 
-## 故障排查
+## 故障排除 {#troubleshooting}
 
-- **保存失败"Mailchimp 拒绝 API 密钥"** — 密钥被撤销或打字错误。密钥必须以数据中心后缀（如`-us21`）结尾。
-- **保存失败"受众未找到"** — 受众 ID 在该帐户下不存在。从**受众 > 设置 > 受众名称和默认值**复制它（它不是受众的名称）。
-- **人员从未出现在 Mailchimp 中** — 检查 webhook 的交付历史。"跳过：人员没有电子邮件地址"意味着正好那样；来自 Mailchimp 的`4xx`在响应体中显示原因。
-- **交付完全停止** — 在重复的耗尽交付后，webhook 自动禁用。修复原因（通常是已撤销的密钥），重新启用它，并使用**发送测试**确认。
+- **保存时显示"Mailchimp rejected the API key"**——密钥已被撤销或输入有误。密钥必须以数据中心后缀结尾，例如 `-us21`。
+- **保存时显示"audience not found"**——该 Audience ID 在此账户下不存在。请从 **Audience → Settings → Audience name and defaults** 复制（它不是受众名单的名称）。
+- **某人从未出现在 Mailchimp 中**——请查看该 webhook 的传送历史。"Skipped: person has no email address"即表示该人员没有电子邮件地址；Mailchimp 回传的 `4xx` 则会在回应内容中显示原因。
+- **传送完全停止**——在多次传送失败并耗尽重试后，该 webhook 会自动停用。请修正原因（通常是密钥已被撤销），重新启用，然后使用 **Send Test Event** 确认。
+
+## 另见 {#see-also}
+
+- [Webhook（开发者参考）](/docs/developer/api/webhooks)：底层引擎、事件目录，以及传送／重试的运作方式
+- [已保存的名单](/docs/b1-admin/people/lists)：基于规则的受众，与 Mailchimp 标签自然对应
+- [Zapier（概览）](../zapier.md)：受众名单同步以外的范例

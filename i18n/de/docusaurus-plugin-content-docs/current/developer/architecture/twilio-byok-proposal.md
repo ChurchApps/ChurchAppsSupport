@@ -61,7 +61,7 @@ Behalten Sie maskierte Zugangsdaten nur bei, wenn der gleiche gespeicherte Anbie
 
 Begrenzen Sie jedes Laden und Aktualisieren auf die authentifizierte B1-Kirche. Binden Sie Rückrufe an eine gespeicherte Integration und das erwartete Twilio-Konto, den Dienst bzw. den Absender, und weisen Sie widersprüchliche kirchenübergreifende Zuordnungen zurück. Eine Rotation der Zugangsdaten oder die Trennung des Anbieters muss die Einsatzbereitschaft ungültig machen und die eingereihten Versendungen anhalten, ohne Einwilligungen oder bisherige Zustellprotokolle zu löschen.
 
-## Einwilligung und Sperrung sind verpflichtende Freigabearbeiten
+## Einwilligung und Sperrung sind verpflichtende Freigabearbeiten {#consent-and-suppression-are-required-release-work}
 
 Führen Sie telefonnummerngebundene Abonnementdatensätze für das Twilio-Programm sowie anhängbare (nur ergänzbare) Ereignisse für Einwilligung und Sperrung ein. Als Mindestnachweis wird vorgeschlagen: Kirchen-ID, Programm-ID, normalisierte Telefonnummer, optionale verifizierte Zuordnung zu einer Person, bestätigende Handlung, Quell-Formular- bzw. Einreichungs-ID oder geprüfter externer Nachweis, serverseitiger Zeitstempel, Text bzw. Version des Hinweises, Quell-URL, Richtlinien-URLs sowie Ereignisse für Widerruf und Wiederaufnahme. Zugriff und Aufbewahrung sind im Rahmen der bestehenden Datenschutzrichtlinie der Kirche zu begrenzen.
 

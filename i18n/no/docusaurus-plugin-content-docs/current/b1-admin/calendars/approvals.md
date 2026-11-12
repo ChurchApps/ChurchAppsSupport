@@ -1,59 +1,71 @@
 ---
-title: "Godkjenninger i kalenderen"
-description: "Behandle ventende forespørsler om booking av rom og ressurser i B1 Admin: sjekk konflikter, godkjenn eller avslå, og publiser eventuelt arrangementet."
+title: "Kalendergodkjenninger"
+description: "Gjennomgå ventende bookingforespørsler for rom og ressurser i B1 Admin, sjekk for konflikter, godkjenn eller avslå dem, og se tilbake på tidligere beslutninger under Historikk."
 ---
 
-# Godkjenninger i kalenderen
+# Kalendergodkjenninger
 
 <div class="article-intro">
 
-På Godkjenninger-siden går administratorer gjennom og behandler ventende bookingforespørsler for rom og ressurser, samt kalenderarrangementer som må godkjennes før de publiseres.
+Siden Approvals er der administratorer gjennomgår og behandler ventende bookingforespørsler for rom og ressurser, samt kalenderhendelser som må godkjennes før de publiseres.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Konfigurer rom eller ressurser med en **Godkjenningsgruppe** i [Rom og ressurser](./rooms-resources.md)
-- Du trenger tillatelsen **Kalenderadministrator** eller tillatelsen **content.edit**
+- Konfigurer rom eller ressurser med en **Approval Group** i [Rom og ressurser](./rooms-resources.md)
+- Du trenger tillatelsen **Edit Content**, eller **Resolve Calendar Conflicts & Approvals** (begge finnes i seksjonen **Content** i [Roller og tillatelser](../settings/roles-permissions.md)). Uten **Edit Content** vises ikke menyen **Calendars** – åpne i stedet Approvals fra lenken for ventende godkjenninger på **Dashboard** eller fra godkjenningse-posten.
 
 </div>
 
-## Åpne Godkjenninger
+## Åpne Approvals {#opening-approvals}
 
-Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Kalendere** og klikk på **Godkjenninger**. Ventende bookingforespørsler og arrangementer som venter på gjennomgang, vises her.
+I B1 Admin åpner du [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Calendars** og klikker **Approvals**. Ventende bookingforespørsler og hendelser som venter på gjennomgang, vises her. Bruk knappene **Pending** og **History** øverst for å bytte mellom forespørsler som fortsatt må avgjøres, og de som allerede er avgjort.
 
-## Bookingforespørsler
+## Bookingforespørsler {#booking-requests}
 
-Når en gruppe oppretter et arrangement og ber om et rom eller en ressurs, vises forespørselen i delen **Forespørsler om rom og ressurser**. Hver rad viser:
+Når noen booker et rom eller en ressurs som har en **Approval Group**, og personen ikke er medlem av den gruppen, vises forespørselen i seksjonen **Room & Resource Requests**. (Bookinger fra medlemmer av Approval Group godkjennes automatisk.) Medlemmer av Approval Group får også en e-post med nye ventende forespørsler og en lenke til denne siden. Hver rad viser:
 
-- Arrangementets navn og dato/klokkeslett
-- Rommet eller ressursen det bes om (med antall for ressurser med flere enheter)
-- Et statusmerke som viser om forespørselen har konflikter
+- Navnet på hendelsen og dato/klokkeslett
+- Rommet eller ressursen som forespørres (med antall for ressurser med flere enheter)
+- **Requested by**, personen som ba om den, med lenke til posten deres
+- En statusmerkelapp som viser om forespørselen har konflikter
 
-### Konfliktvarsler
+### Konfliktindikatorer {#conflict-indicators}
 
-Hvis en forespørsel overlapper med en annen booking eller blokkering for samme rom eller ressurs, vises et merke **Konflikter** i statusen; hold musepekeren over det for å se detaljene. Forespørsler uten overlapp viser **Ingen konflikter**. Se nøye gjennom forespørslene som er i konflikt, før du godkjenner noen av dem.
+Hvis en forespørsel overlapper en annen booking eller sperring for samme rom eller ressurs, viser statusen et merke **Conflicts**; hold musepekeren over det for å se detaljene. Forespørsler uten overlapp viser **No conflicts**. Gjennomgå konfliktende forespørsler nøye før du godkjenner noen av dem.
 
-### Godkjenne eller avslå
+### Godkjenne eller avslå {#approving-or-rejecting}
 
-Klikk på **Godkjenn** eller **Avslå** på en bookingforespørsel (avslag må bekreftes først). Gruppen som ba om bookingen, får beskjed om avgjørelsen. Godkjente bookinger låses til rommet eller ressursen for arrangementet, mens avslåtte bookinger frigir tidsrommet for andre.
+Hold musepekeren over en bookingforespørsel og klikk **Approve** eller **Reject** (ved avslag må du bekrefte først). Den som ba om forespørselen, får beskjed om avgjørelsen. Godkjente bookinger låses til det rommet eller den ressursen for hendelsen; avslåtte bookinger frigjør tidspunktet for andre.
 
-Når du klikker på **Godkjenn**, åpnes en dialogboks **Godkjenn booking**, slik at du også kan publisere arrangementet i samme steg:
+Når du klikker **Approve**, åpnes en dialog **Approve booking**, slik at du også kan publisere hendelsen i samme steg:
 
-1. Kryss av for **Publiser i offentlig kalender** for å gjøre arrangementet offentlig i gruppens kalender. La den stå uten avkrysning for å godkjenne bookingen uten å endre arrangementets synlighet.
-2. Når **Publiser i offentlig kalender** er avkrysset, kan du eventuelt velge en kuratert kalender under **Legg også til i kalender** for å legge arrangementet til i en av dine [kurerte kalendere](./curated-calendar.md). La den stå på **Ingen** for å hoppe over dette. (Dette alternativet vises bare hvis du har tillatelsen **content.edit**.)
-3. Klikk på **Godkjenn**.
+1. Kryss av for **Publish to public calendar** for å gjøre hendelsen offentlig i kalenderen til gruppen. La det stå umerket for å godkjenne bookingen uten å endre synligheten til hendelsen.
+2. Når **Publish to public calendar** er avkrysset, kan du eventuelt velge en utvalgt kalender fra **Also add to calendar** for å legge hendelsen til i en av dine [utvalgte kalendere](./curated-calendar.md) også. La det stå på **None** for å hoppe over dette. (Dette alternativet vises bare hvis du har tillatelsen **content.edit**.)
+3. Klikk **Approve**.
 
-## Ventende arrangementer
+## Ventende hendelser {#pending-events}
 
-Hvis kalenderrutinen din krever godkjenning før arrangementer blir synlige for offentligheten, vises ventende arrangementer i delen **Arrangementsforespørsler**. Klikk på **Godkjenn** for å publisere et arrangement i kalenderen, eller **Avslå** for å gi innsenderen beskjed om at det må gjøres endringer.
+Hendelser som medlemmer ber om (for eksempel fra **My Requests** i B1-appen), vises i seksjonen **Event Requests** med dato, **Description** og **Requested by**. Klikk **Approve** for å publisere en hendelse i kalenderen, eller **Reject** for å varsle innsenderen om at endringer er nødvendig. Klikk **Edit** for å rette opp detaljene i forespørselen før du avgjør, eller **Delete** for å fjerne den.
 
 :::tip
-Sett opp en godkjenningsgruppe på et rom i [Rom og ressurser](./rooms-resources.md) for å kreve godkjenning for det rommet. Grupper med tilgang kan da be om rommet når de oppretter arrangementer, og forespørslene havner på denne siden.
+Sett opp en Approval Group på et rom i [Rom og ressurser](./rooms-resources.md) for å kreve godkjenning for det rommet. Grupper med tilgang kan da be om rommet når de oppretter hendelser, og disse forespørslene havner på denne siden.
 :::
 
-## Relaterte artikler
+## Historikk {#history}
 
-- [Rom, ressurser og planlegging](./rooms-resources.md) — sett opp rom og ressurser som kan bookes
-- [Opprette kalendere](./creating-calendars.md) — administrer kalendere og arrangementer
+Godkjente og avslåtte forespørsler blir værende på siden. Klikk **History** øverst i Approvals for å se dem; klikk **Pending** for å gå tilbake til de åpne forespørslene.
+
+- **Room & Resource Requests** lister hver avgjorte booking med hendelsen, rommet eller ressursen, **Requested by**, et merke **Approved** eller **Rejected**, og **Decided**, som viser hvem som tok avgjørelsen og på hvilken dato. De sist avgjorte forespørslene vises først.
+- **Event Requests** lister hver avgjort hendelse med beskrivelsen, **Requested by**, et merke **Approved** eller **Rejected**, og **Decided**, som viser hvem som tok avgjørelsen og på hvilken dato. Eldre hendelsesforespørsler, avgjort før B1 begynte å registrere dette, viser en strek i stedet.
+
+Du kan endre mening fra Historikk: en godkjent forespørsel har en handling **Reject**, og en avslått forespørsel har en handling **Approve**. Hvis du avslår en hendelsesforespørsel du tidligere har godkjent, fjernes den fra den offentlige kalenderen igjen. Hendelsesforespørsler kan også redigeres eller slettes her.
+
+Klikk på et navn under **Requested by** for å åpne personens post.
+
+## Relaterte artikler {#related-articles}
+
+- [Rom, ressurser og planlegging](./rooms-resources.md) — konfigurer rom og ressurser som kan bookes
+- [Opprette kalendere](./creating-calendars.md) — administrer kalendere og hendelser

@@ -1,66 +1,66 @@
 ---
 title: "Stripe-Import"
-description: "Importieren Sie Stripe-Spenden in B1 Admin mit einer vorschaubasierten Übernahme, die jede Zahlung als neu, bereits importiert oder übersprungen markiert, bevor Sie sie bestätigen."
+description: "Übernehmen Sie Stripe-Spenden mit einem vorschaubasierten Import in B1 Admin, der jede Belastung als neu, bereits importiert oder übersprungen markiert, bevor Sie sie bestätigen."
 ---
 
 # Stripe-Import
 
 <div class="article-intro">
 
-Wenn Sie Online-Spenden über Stripe annehmen, können Sie mit dem Werkzeug Stripe-Import diese Transaktionen in B1 Admin übernehmen, sodass alle Ihre Spendendaten an einem Ort liegen. Das ist besonders nützlich, um Transaktionen aufzuspüren, die nicht automatisch synchronisiert wurden.
+Wenn Sie Online-Spenden über Stripe annehmen, können Sie mit dem Werkzeug Stripe-Import diese Transaktionen in B1 Admin übernehmen, sodass alle Ihre Gebedaten an einem Ort liegen. Das ist besonders nützlich, um Transaktionen aufzuspüren, die nicht automatisch synchronisiert wurden.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie zuerst die [Einrichtung der Online-Spenden](online-giving-setup.md) ab, um Ihr Stripe-Konto mit B1 Admin zu verbinden. Der Menüpunkt **Stripe-Import** und die Schaltfläche auf der Seite Stapel erscheinen nur, wenn der Zahlungsdienst Ihrer Kirche Stripe ist, und nur für Personen, die Spenden bearbeiten dürfen
-- Prüfen Sie, ob in Ihrem Stripe-Dashboard Spenden für den Zeitraum vorhanden sind, den Sie importieren möchten
+- Schließen Sie die [Einrichtung der Online-Spenden](online-giving-setup.md) ab, um Ihr Stripe-Konto mit B1 Admin zu verbinden. Der Menüpunkt **Stripe-Import** und die Schaltfläche auf der Seite Stapel erscheinen nur, wenn das Zahlungsgateway Ihrer Kirche Stripe ist, und nur für Personen, die Spenden bearbeiten dürfen
+- Prüfen Sie, ob Ihr Stripe-Dashboard Spenden für den Zeitraum enthält, den Sie importieren möchten
 
 </div>
 
-## So funktioniert es
+## So funktioniert es {#how-it-works}
 
-Der Import läuft in zwei Schritten: Zuerst sehen Sie eine Vorschau, was importiert würde, danach bestätigen Sie den Import. Dieses Vorgehen mit einem Testlauf erlaubt es Ihnen, alles zu prüfen, bevor Daten angelegt werden.
+Der Import läuft in zwei Schritten ab: Zuerst sehen Sie eine Vorschau, was importiert würde, dann bestätigen Sie den Import. Dieses Vorgehen als Probelauf ermöglicht es Ihnen, alles zu prüfen, bevor Daten angelegt werden.
 
-## Transaktionen importieren
+## Transaktionen importieren {#importing-transactions}
 
-1. Gehen Sie in **B1 Admin** zu **Spenden > Stripe-Import**. (Alternativ klicken Sie oben auf der Seite **Stapel** auf **Fehlende Stripe-Transaktionen importieren**.)
-2. Die Seite **Stripe-Import** öffnet sich.
-3. Wählen Sie einen **Datumsbereich** für die Transaktionen, die Sie importieren möchten.
-4. Klicken Sie auf **Vorschau**, um einen Testlauf auszuführen.
+1. Navigieren Sie in **B1 Admin** zu **Spenden > Stripe-Import**. (Alternativ klicken Sie oben auf der Seite **Stapel** auf **Fehlende Stripe-Transaktionen importieren**.)
+2. Die Seite **Stripe-Transaktionen importieren** öffnet sich.
+3. Legen Sie unter **Zeitraum auswählen** das **Startdatum** und das **Enddatum** für die Transaktionen fest, die Sie importieren möchten. Der Zeitraum beginnt am 1. Januar dieses Jahres und endet heute.
+4. Klicken Sie auf **Vorschau**, um eine Probeprüfung auszuführen. **Fehlende importieren** bleibt deaktiviert, bis eine Vorschau neue Transaktionen findet. Wenn Sie eines der Daten ändern, wird die Vorschau gelöscht, sodass Sie zuerst den neuen Zeitraum in der Vorschau prüfen.
 
-## Die Vorschau prüfen
+## Die Vorschau prüfen {#reviewing-the-preview}
 
-Die Vorschau zeigt jede Transaktion aus Stripe mit einem Statusanzeiger:
+Die Vorschau listet jedes Stripe-Ereignis mit seiner **Ereignis-ID**, dem **Typ**, dem **Betrag**, dem **Datum** und einem **Status** auf:
 
-- **Neu** – Diese Transaktion wurde noch nicht importiert und wird übernommen, wenn Sie fortfahren.
-- **Bereits importiert** – Diese Transaktion existiert bereits in B1 Admin und wird übersprungen.
-- **Übersprungen** – Diese Transaktion wurde aus einem anderen Grund ausgeschlossen (z. B. eine Erstattung oder eine fehlgeschlagene Abbuchung).
+- **Neu** – diese Transaktion wurde noch nicht importiert und wird eingeschlossen, wenn Sie fortfahren.
+- **Bereits importiert** – diese Transaktion existiert bereits in B1 Admin und wird übersprungen.
+- **Übersprungen** – diese Transaktion wurde aus einem anderen Grund ausgeschlossen (z. B. eine Erstattung oder eine fehlgeschlagene Belastung).
 
-Ein Zusammenfassungsbereich oben zeigt die Gesamtzahl der Transaktionen in jeder Kategorie und die beteiligten Geldbeträge.
+Eine Zusammenfassung oben zeigt die **Gesamtzahl** der Ereignisse und wie viele davon **Neu**, **Bereits importiert** und **Übersprungen** sind. Konnte ein Ereignis nicht gelesen werden, erscheint eine Anzahl **Fehler**, und die Zeile des Ereignisses zeigt die Meldung in der Spalte **Notizen**.
 
 :::info
-Der Vorschau-Schritt erstellt keine Datensätze. Er ist eine reine Leseprüfung, damit Sie sehen können, was passieren wird, bevor Sie sich festlegen.
+Der Vorschau-Schritt legt keine Datensätze an. Er ist eine reine Leseprüfung, damit Sie vor der Übernahme sehen, was passieren wird.
 :::
 
-## Den Import abschließen
+## Den Import abschließen {#completing-the-import}
 
-1. Prüfen Sie die Ergebnisse der Vorschau und die Summen der Zusammenfassung.
+1. Prüfen Sie die Ergebnisse der Vorschau und die Summen in der Zusammenfassung.
 2. Klicken Sie auf **Fehlende importieren**, um alle als **Neu** markierten Transaktionen zu importieren.
-3. Nach Abschluss des Imports aktualisieren sich die Statusabzeichen neben jeder Transaktion und zeigen das Ergebnis.
+3. Nach Abschluss des Imports wird die Liste zu **Importergebnisse**: Jede hinzugefügte Transaktion zeigt **Importiert**, und die Zusammenfassung ergänzt eine Anzahl **Importiert**.
 
-## Tipps zum Stripe-Import
+## Tipps zum Stripe-Import {#tips-for-using-stripe-import}
 
-- Führen Sie den Import regelmäßig aus (wöchentlich oder monatlich), damit Ihre Aufzeichnungen aktuell bleiben.
-- Wenn eine Transaktion als **Bereits importiert** angezeigt wird, hat B1 Admin bereits einen passenden Datensatz – Sie müssen nichts tun.
+- Führen Sie den Import regelmäßig aus (wöchentlich oder monatlich), damit Ihre Unterlagen aktuell bleiben.
+- Wird eine Transaktion als **Bereits importiert** angezeigt, hat B1 Admin bereits einen passenden Datensatz – es ist keine Aktion nötig.
 - Nutzen Sie den Datumsfilter, um sich auf einen bestimmten Zeitraum zu konzentrieren, wenn Sie nach bestimmten Transaktionen suchen.
 
 :::tip
-Besuchen Sie nach dem Import die Seite [Stapel](batches.md), um zu prüfen, ob die importierten Spenden korrekt erscheinen und die Summen mit Ihrem Stripe-Dashboard übereinstimmen.
+Besuchen Sie nach dem Import die Seite [Stapel](batches.md), um zu prüfen, ob die importierten Spenden korrekt erscheinen und die Summen mit dem übereinstimmen, was Sie in Ihrem Stripe-Dashboard sehen.
 :::
 
-## Nächste Schritte
+## Wie es weitergeht {#next-steps}
 
-- Prüfen Sie die [Spendenberichte](donation-reports.md), um die importierten Transaktionen zusammen mit Ihren übrigen Spendendaten zu sehen
+- Prüfen Sie die [Spendenberichte](donation-reports.md), um die importierten Transaktionen zusammen mit Ihren übrigen Gebedaten zu sehen
 - Stellen Sie sicher, dass importierte Spenden den richtigen [Fonds](funds.md) zugeordnet sind, damit die [Spendenbescheinigungen](giving-statements.md) stimmen

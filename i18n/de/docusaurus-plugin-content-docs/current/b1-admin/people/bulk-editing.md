@@ -1,202 +1,175 @@
-﻿---
-title: "Massenbearbeitung von Personen"
+---
+title: "Personen gesammelt bearbeiten"
+description: "Aktualisieren Sie in B1 Admin für viele Personen gleichzeitig den Mitgliedschaftsstatus, den Familienstand, das Geschlecht, die Verzeichnis-Abmeldung, den Standort, Ja/Nein-Eigenfelder oder Gruppen."
 ---
 
-# Massenbearbeitung von Personen
+# Personen gesammelt bearbeiten
 
 <div class="article-intro">
-Mit der Massenbearbeitung können Sie mehrere Personen auf einmal aktualisieren. Das spart Zeit, wenn Sie dieselbe Änderung für viele Personen vornehmen möchten. Sie können Mitgliedschaftsstatus, Familienstand, Geschlecht, Abmeldepräferenzen und Gruppenmitgliedschaften in einem einzigen Vorgang aktualisieren.
+Mit der Massenbearbeitung aktualisieren Sie mehrere Personen gleichzeitig. Das spart Zeit, wenn Sie dieselbe Änderung bei vielen Personen vornehmen möchten. Sie können Mitgliedschaftsstatus, Familienstand, Geschlecht, Abmeldung aus dem Verzeichnis, Standort, Ja/Nein-Eigenfelder, Gruppenmitgliedschaften und Workflows in einem Arbeitsgang aktualisieren oder Personen löschen.
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
 - Sie benötigen die Berechtigung, Personendaten zu verwalten. Details finden Sie unter [Rollen & Berechtigungen](./roles-permissions.md).
-- Sie sollten die Personen, die Sie bearbeiten möchten, bereits hinzugefügt oder importiert haben. Falls nötig, lesen Sie [Hinzufügen von Personen](./adding-people.md).
+- Sie sollten die Personen, die Sie bearbeiten möchten, bereits hinzugefügt oder importiert haben. Siehe bei Bedarf [Personen hinzufügen](./adding-people.md).
 </div>
 
-## Personen für die Massenbearbeitung auswählen
+## Personen für die Massenbearbeitung auswählen {#selecting-people-for-bulk-editing}
 
 1. Öffnen Sie in B1 Admin den Bereich **Personen**.
-2. Verwenden Sie die Such- oder Filterfunktionen, um die Personen zu finden, die Sie aktualisieren möchten.
-3. Aktivieren Sie die Kontrollkästchen, um Personen auszuwählen.
-   - In der Ansicht **Haushalte** wählt das Aktivieren eines Haushalts alle Personen darin aus.
-   - In der Ansicht **Tabelle** (umschaltbar über den Schalter **Ansicht als**) können Sie Personen einzeln auswählen.
+2. Nutzen Sie die Such- oder Filterwerkzeuge, um die Personen zu finden, die Sie aktualisieren möchten.
+3. Setzen Sie die Häkchen, um Personen auszuwählen.
+   - In der Ansicht **Haushalte** wählt das Anhaken eines Haushalts alle darin enthaltenen Personen aus.
+   - In der Ansicht **Tabelle** (umschalten über den Schalter **Anzeigen als**) können Sie Personen einzeln auswählen.
    - Oder verwenden Sie das Kontrollkästchen über der Liste, um alle sichtbaren Personen auszuwählen.
-4. Sobald Sie mindestens eine Person ausgewählt haben, zeigt die Leiste über der Liste an, wie viele Personen ausgewählt sind, sowie die Schaltflächen **Auswahl aufheben** und **Aktionen**.
+4. Sobald Sie mindestens eine Person ausgewählt haben, zeigt die Leiste über der Liste, wie viele ausgewählt sind, zusammen mit **Auswahl aufheben** und einer Schaltfläche **Aktionen**.
 
 :::tip
-Wenn Sie eine große Gruppe von Personen anhand bestimmter Kriterien aktualisieren möchten, verwenden Sie zuerst die [KI-Suche](./ai-search.md) oder Filter, um Ihre Liste einzugrenzen, und wählen Sie dann alle passenden Personen aus.
+Wenn Sie eine große Gruppe von Personen anhand bestimmter Kriterien aktualisieren möchten, nutzen Sie die Funktion [KI-Suche](./ai-search.md) oder Filter, um Ihre Liste zuerst einzugrenzen, und wählen Sie dann alle passenden Personen aus.
 :::
 
-## Verfügbare Massenaktionen
+## Verfügbare Massenaktionen {#available-bulk-actions}
 
-Das Menü **Aktionen** bietet mehrere Optionen:
+Das Menü **Aktionen** bietet die folgenden Optionen. Jede öffnet einen kleinen Dialog, der Ihnen sagt, wie viele Personen geändert werden; wählen Sie einen Wert und klicken Sie auf **Anwenden**. Der neue Wert ersetzt den bisherigen Wert jeder ausgewählten Person. Ist der Vorgang abgeschlossen, bestätigt eine Meldung am Seitenende, wie viele Personen aktualisiert wurden.
 
-### Mitgliedschaftsstatus aktualisieren
-
-Aktualisieren Sie den Mitgliedschaftsstatus aller ausgewählten Personen:
+### Mitgliedschaftsstatus festlegen {#set-membership-status}
 
 1. Klicken Sie auf **Aktionen** → **Mitgliedschaftsstatus festlegen**.
-2. Wählen Sie den neuen Status:
-   - **Besucher** – Erstbesucher oder gelegentliche Gäste
-   - **Gast** – Gäste, etwa Familien, die an einem Check-in-Terminal registriert wurden
-   - **Regelmäßiger Teilnehmer** – Häufige Teilnehmer, die keine Mitglieder sind
-   - **Mitglied** – Offizielle Gemeindemitglieder
-   - **Mitarbeiter** – Hauptamtliche Mitarbeiter der Gemeinde
-   - **Inaktiv** – Personen, die nicht mehr teilnehmen
-   - **Verstorben** – Personen, die verstorben sind
-3. Wählen Sie den Aktualisierungsmodus:
-   - **Alle überschreiben** – Ersetzt den aktuellen Status bei allen ausgewählten Personen
-   - **Nur leere aktualisieren** – Setzt den Status nur bei Personen, die noch keinen haben
-4. Klicken Sie auf **Aktualisieren**.
+2. Wählen Sie den neuen **Mitgliedschaftsstatus**:
+   - **Besucher** -- Erstbesucher oder gelegentliche Teilnehmer
+   - **Gast** -- Gäste, etwa Familien, die an einem Check-in-Terminal registriert wurden
+   - **Regelmäßiger Teilnehmer** -- häufige Teilnehmer, die keine Mitglieder sind
+   - **Mitglied** -- offizielle Mitglieder der Gemeinde
+   - **Mitarbeitend** -- Mitarbeitende der Gemeinde
+   - **Inaktiv** -- Personen, die nicht mehr teilnehmen
+   - **Verstorben** -- Personen, die verstorben sind
+3. Klicken Sie auf **Anwenden**.
 
-### Familienstand aktualisieren
-
-Aktualisieren Sie den Familienstand in der Massenbearbeitung:
+### Familienstand festlegen {#set-marital-status}
 
 1. Klicken Sie auf **Aktionen** → **Familienstand festlegen**.
-2. Wählen Sie den neuen Status:
-   - **Unbekannt**
-   - **Ledig**
-   - **Verheiratet**
-   - **Geschieden**
-   - **Verwitwet**
-3. Wählen Sie, ob bestehende Werte überschrieben oder nur leere Felder aktualisiert werden sollen.
-4. Klicken Sie auf **Aktualisieren**.
+2. Wählen Sie **Unbekannt**, **Ledig**, **Verheiratet**, **Geschieden** oder **Verwitwet**.
+3. Klicken Sie auf **Anwenden**.
 
-### Geschlecht aktualisieren
-
-Aktualisieren Sie die Geschlechtsangabe für mehrere Personen:
+### Geschlecht festlegen {#set-gender}
 
 1. Klicken Sie auf **Aktionen** → **Geschlecht festlegen**.
-2. Wählen Sie den Wert:
-   - **Nicht angegeben**
-   - **Männlich**
-   - **Weiblich**
-3. Wählen Sie den Aktualisierungsmodus (alle überschreiben oder nur leere).
-4. Klicken Sie auf **Aktualisieren**.
+2. Wählen Sie **Nicht angegeben**, **Männlich** oder **Weiblich**.
+3. Klicken Sie auf **Anwenden**.
 
-### Abmeldestatus aktualisieren
+### Verzeichnis-Abmeldung festlegen {#set-directory-opt-out}
 
-Legen Sie fest, ob Personen sich von Mitteilungen abgemeldet haben:
+Die Verzeichnis-Abmeldung steuert, ob Personen im Mitgliederverzeichnis erscheinen -- im [gedruckten Verzeichnis](./print-directory.md) und im Mitgliederverzeichnis der B1-App. Es ist dieselbe Einstellung wie **Mich aus dem Mitgliederverzeichnis ausblenden** im Datensatz einer Person.
 
 1. Klicken Sie auf **Aktionen** → **Verzeichnis-Abmeldung festlegen**.
-2. Wählen Sie:
-   - **Nein** – Mitteilungen erlauben (Abmeldung aufheben)
-   - **Ja** – Mitteilungen sperren (Abmeldung setzen)
-3. Wählen Sie den Aktualisierungsmodus.
-4. Klicken Sie auf **Aktualisieren**.
+2. Wählen Sie **Abgemeldet: Ja**, um die ausgewählten Personen aus dem Verzeichnis auszublenden, oder **Abgemeldet: Nein**, um sie wieder anzuzeigen.
+3. Klicken Sie auf **Anwenden**.
 
 :::warning
-Seien Sie vorsichtig beim Ändern des Abmeldestatus. Personen, die sich ausdrücklich abgemeldet haben, sollten keine Mitteilungen erhalten, es sei denn, sie haben erneut zugestimmt.
+Personen, die sich selbst aus dem Verzeichnis ausgeblendet haben, sollten verborgen bleiben, sofern sie nicht ausdrücklich darum bitten, wieder aufgenommen zu werden.
 :::
 
-### Benutzerdefiniertes Feld setzen
+### Standort festlegen {#set-campus}
 
-Setzen Sie für alle ausgewählten Personen gleichzeitig den Wert eines [benutzerdefinierten Felds](../settings/custom-fields.md) mit Ja/Nein:
+Diese Option erscheint, wenn in Ihrer Gemeinde [Standorte](../settings/campuses.md) eingerichtet sind.
 
-1. Klicken Sie auf **Aktionen** → **Benutzerdefiniertes Feld setzen**.
-2. Wählen Sie das benutzerdefinierte Feld mit Ja/Nein aus, das Sie setzen möchten.
-3. Wählen Sie den anzuwendenden Wert (**Ja** oder **Nein**).
-4. Klicken Sie auf **Aktualisieren**.
+1. Klicken Sie auf **Aktionen** → **Standort festlegen**.
+2. Wählen Sie den Standort.
+3. Klicken Sie auf **Anwenden**.
+
+### Eigenfeld festlegen {#set-custom-field}
+
+Setzen Sie einen Ja/Nein-Wert eines [Eigenfelds](../settings/custom-fields.md) für alle ausgewählten Personen auf einmal:
+
+1. Klicken Sie auf **Aktionen** → **Eigenfeld festlegen**.
+2. Wählen Sie das Ja/Nein-**Eigenfeld**, das Sie setzen möchten.
+3. Wählen Sie den **Wert** (**Ja** oder **Nein**), der übernommen werden soll.
+4. Klicken Sie auf **Anwenden**.
 
 :::info
-Für diese Massenaktion stehen nur benutzerdefinierte Felder mit Ja/Nein zur Verfügung. Um andere Feldtypen festzulegen, bearbeiten Sie jede Person einzeln.
+Für diese Massenaktion stehen nur Ja/Nein-Eigenfelder zur Verfügung. Um andere Feldtypen zu setzen, bearbeiten Sie jede Person einzeln. Hat Ihre Gemeinde keine Ja/Nein-Eigenfelder, weist der Dialog darauf hin.
 :::
 
-### Zu Gruppe hinzufügen
+### Zur Gruppe hinzufügen {#add-to-group}
 
-Fügen Sie alle ausgewählten Personen einer oder mehreren Gruppen hinzu:
+1. Klicken Sie auf **Aktionen** → **Zur Gruppe hinzufügen**.
+2. Wählen Sie die **Gruppe**, zu der die Personen hinzugefügt werden sollen. Um sie stattdessen in eine brandneue Gruppe zu setzen, aktivieren Sie **Neue Gruppe erstellen** und geben Sie einen **Neuen Gruppennamen** ein.
+3. Klicken Sie auf **Anwenden**.
 
-1. Klicken Sie auf **Aktionen** → **Zu Gruppe hinzufügen**.
-2. Suchen Sie die gewünschte(n) Gruppe(n) und wählen Sie sie aus.
-3. Sie können mehrere Gruppen auswählen, um Personen allen diesen Gruppen hinzuzufügen.
-4. Klicken Sie auf **Zu Gruppen hinzufügen**.
+Jede Person wird als reguläres Mitglied der Gruppe hinzugefügt. Einzelne Personen können Sie später auf der Seite [Gruppenmitglieder](../groups/group-members.md) zu Gruppenleitenden befördern. Um Personen mehreren Gruppen hinzuzufügen, wiederholen Sie dies für jede Gruppe.
 
-Jede Person wird als regulärer Teilnehmer der ausgewählten Gruppe(n) hinzugefügt. Bei Bedarf können Sie einzelne Personen später auf der Seite [Gruppenmitglieder](../groups/group-members.md) zu Gruppenleitern befördern.
-
-### Aus Gruppe entfernen
-
-Entfernen Sie alle ausgewählten Personen aus einer oder mehreren Gruppen:
+### Aus Gruppe entfernen {#remove-from-group}
 
 1. Klicken Sie auf **Aktionen** → **Aus Gruppe entfernen**.
-2. Suchen Sie die gewünschte(n) Gruppe(n) und wählen Sie sie aus.
-3. Sie können mehrere Gruppen auswählen.
-4. Klicken Sie auf **Aus Gruppen entfernen**.
+2. Wählen Sie die **Gruppe**, aus der die Personen entfernt werden sollen.
+3. Klicken Sie auf **Anwenden**.
 
 :::info
-Bei dieser Aktion werden Personen nur aus den angegebenen Gruppen entfernt. Ihre Personendatensätze werden nicht gelöscht.
+Diese Aktion entfernt Personen nur aus der Gruppe. Ihre Personendatensätze werden dadurch nicht gelöscht.
 :::
 
-### Personen löschen
+### Zu Workflow hinzufügen {#add-to-workflow}
 
-Löschen Sie die ausgewählten Personen dauerhaft aus Ihrer Gemeindedatenbank:
+Fügen Sie die ausgewählten Personen als Karten einem [Workflow](../serving/workflows.md) hinzu:
+
+1. Klicken Sie auf **Aktionen** → **Zum Workflow hinzufügen**.
+2. Wählen Sie den Workflow.
+3. Klicken Sie auf **Anwenden**.
+
+### Personen löschen {#delete-people}
+
+Löschen Sie die ausgewählten Personen aus der Datenbank Ihrer Gemeinde:
 
 1. Klicken Sie auf **Aktionen** → **Löschen**.
-2. Im Dialog **Ausgewählte Personen löschen** wird bestätigt, wie viele Personen gelöscht werden.
+2. Der Dialog **Ausgewählte Personen löschen** fragt Sie, die Anzahl der zu löschenden Personen zu bestätigen.
 3. Klicken Sie auf **Löschen**.
 
 :::danger
-Das Löschen von Personen ist dauerhaft und kann nicht rückgängig gemacht werden. Dabei werden alle zugehörigen Daten entfernt, darunter:
-- Persönliche Informationen
-- Gruppenmitgliedschaften
-- Anwesenheitsaufzeichnungen
-- Spendenhistorie
-- Formulareinreichungen
-
-Verwenden Sie diese Aktion nur, wenn Sie vollkommen sicher sind, dass Sie diese Personen aus Ihrem System entfernen möchten.
+Gelöschte Personen verschwinden aus Ihrem Verzeichnis, aus Gruppen und aus Suchen. Verwenden Sie diese Aktion nur, wenn Sie sicher sind, dass Sie diese Personen aus Ihrem System entfernen möchten.
 :::
 
-## Ergebnisse der Massenbearbeitung
+Sie können sich selbst nicht auswählen, daher können Sie Ihren eigenen Datensatz nicht massenhaft löschen oder bearbeiten.
 
-Nach Abschluss einer Massenaktion sehen Sie eine Zusammenfassung mit:
 
-- **Insgesamt ausgewählt** – Wie viele Personen in den Vorgang einbezogen wurden
-- **Erfolgreich aktualisiert** – Wie viele Datensätze geändert wurden
-- **Fehlgeschlagen** – Datensätze, die nicht aktualisiert werden konnten (falls zutreffend)
-- **Unverändert** – Datensätze, die keine Änderung benötigten (z. B. im Modus „Nur leere aktualisieren“)
+## Bewährte Vorgehensweisen {#best-practices}
 
-Falls Aktualisierungen fehlgeschlagen sind, werden Fehlermeldungen mit Erläuterung angezeigt.
+- **Klein anfangen** -- Testen Sie Massenvorgänge zuerst an wenigen Datensätzen, um sicherzustellen, dass Sie die richtigen Änderungen vornehmen
+- **Filter verwenden** -- Grenzen Sie Ihre Liste mit Filtern oder KI-Suche ein, bevor Sie Personen auswählen, damit Sie nur die richtigen Personen aktualisieren
+- **Auswahl doppelt prüfen** -- Sehen Sie sich die ausgewählten Personen an, bevor Sie Massenänderungen übernehmen
+- **Größere Änderungen dokumentieren** -- Halten Sie Notizen zu Massenaktualisierungen fest, falls Sie später darauf zurückgreifen müssen
+- **Mit dem Team abstimmen** -- Informieren Sie andere Administrierende, wenn Sie größere Massenänderungen vornehmen
 
-## Bewährte Vorgehensweisen
+## Typische Anwendungsfälle {#common-use-cases}
 
-- **Klein anfangen** – Testen Sie Massenvorgänge zunächst an wenigen Datensätzen, um sicherzustellen, dass Sie die richtigen Änderungen vornehmen
-- **Filter verwenden** – Grenzen Sie Ihre Liste mit Filtern oder der KI-Suche ein, bevor Sie Personen auswählen, damit nur die richtigen Personen aktualisiert werden
-- **Auswahl doppelt prüfen** – Sehen Sie sich die ausgewählten Personen an, bevor Sie Massenänderungen anwenden
-- **Modus „Nur leere aktualisieren“ verwenden** – Wenn Sie fehlende Daten ergänzen möchten, ohne vorhandene Informationen zu überschreiben
-- **Wichtige Änderungen dokumentieren** – Halten Sie Notizen zu Massenaktualisierungen fest, falls Sie diese später nachvollziehen müssen
-- **Im Team abstimmen** – Informieren Sie andere Administratoren, wenn Sie größere Massenänderungen vornehmen
+### Neue Mitglieder aktualisieren {#updating-new-members}
 
-## Typische Anwendungsfälle
+Nach einem Mitgliedskurs setzen Sie alle Teilnehmenden auf den Status Mitglied:
 
-### Neue Mitglieder aufnehmen
+1. Suchen Sie die Personen, die den Kurs besucht haben
+2. Wählen Sie alle aus
+3. Verwenden Sie **Aktionen** → **Mitgliedschaftsstatus festlegen** → **Mitglied**
 
-Nach einem Mitgliedskurs setzen Sie alle Teilnehmer auf den Status Mitglied:
-
-1. Suchen Sie die Personen, die an dem Kurs teilgenommen haben.
-2. Wählen Sie alle aus.
-3. Verwenden Sie **Aktionen** → **Mitgliedschaftsstatus festlegen** → **Mitglied**.
-
-### Kleingruppen organisieren
+### Kleingruppen organisieren {#organizing-small-groups}
 
 Fügen Sie mehrere Personen einer neuen Kleingruppe hinzu:
 
-1. Suchen Sie die Personen, die in die Gruppe sollen.
-2. Wählen Sie sie aus.
-3. Verwenden Sie **Aktionen** → **Zu Gruppe hinzufügen** und wählen Sie die Kleingruppe aus.
+1. Suchen Sie die Personen, die in die Gruppe sollen
+2. Wählen Sie sie aus
+3. Verwenden Sie **Aktionen** → **Zur Gruppe hinzufügen** und wählen Sie die Kleingruppe
 
-### Daten bereinigen
+### Daten bereinigen {#cleaning-up-data}
 
-Ergänzen Sie fehlende Familienstände bei verheirateten Paaren:
+Markieren Sie eine Gruppe ehemaliger Teilnehmer als inaktiv:
 
-1. Filtern Sie nach verheirateten Personen (anhand der Haushaltsinformationen).
-2. Wählen Sie diejenigen aus, bei denen der Familienstand leer ist.
-3. Verwenden Sie **Aktionen** → **Familienstand festlegen** → **Verheiratet** → **Nur leere aktualisieren**.
+1. Öffnen Sie die **erweiterte** Suche und filtern Sie die Personen, die Sie aktualisieren möchten (zum Beispiel alle, die seit Längerem nicht mehr teilgenommen haben)
+2. Wählen Sie sie aus
+3. Verwenden Sie **Aktionen** → **Mitgliedschaftsstatus festlegen** → **Inaktiv**
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Personen durchsuchen](./searching-people.md) – Personen zum Bearbeiten finden
-- [KI-Suche](./ai-search.md) – Natürliche Sprache verwenden, um bestimmte Personengruppen zu finden
-- [Gruppenmitglieder](../groups/group-members.md) – Gruppenmitgliedschaft verwalten
-- [Daten exportieren](./exporting-data.md) – Personendaten vor Massenänderungen exportieren
+- [Personen suchen](./searching-people.md) -- Personen zum Bearbeiten finden
+- [KI-Suche](./ai-search.md) -- Mit natürlicher Sprache bestimmte Gruppen von Personen finden
+- [Gruppenmitglieder](../groups/group-members.md) -- Gruppenmitgliedschaften verwalten
+- [Daten exportieren](./exporting-data.md) -- Personendaten vor Massenänderungen exportieren

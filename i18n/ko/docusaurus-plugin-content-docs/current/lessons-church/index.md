@@ -11,7 +11,7 @@ Lessons.church는 교회를 위한 완전히 무료인 교과 과정 플랫폼�
 
 </div>
 
-## 할 수 있는 것
+## 할 수 있는 것 {#what-you-can-do}
 
 Lessons.church를 사용하여 교회는 다음을 수행할 수 있습니다:
 

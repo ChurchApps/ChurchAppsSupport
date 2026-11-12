@@ -1,193 +1,203 @@
 ---
-title: "Configurações da Igreja"
-description: "Defina o nome, o endereço, o subdomínio, o fuso horário, o formato regional, o provedor de SMS e o armazenamento de arquivos da sua igreja na página Configurações da Igreja do B1 Admin."
+title: "Configurações da igreja"
+description: "Defina o nome, o endereço, o subdomínio, o fuso horário, o formato regional, o provedor de SMS e o armazenamento de arquivos da sua igreja na página Configurações da igreja do B1 Admin."
 ---
 
-# Configurações da Igreja
+# Configurações da igreja
 
 <div class="article-intro">
 
-A página Configurações da Igreja é onde você configura as informações básicas da sua igreja, os dados de contato e a identidade visual. Essas informações são usadas em todas as ferramentas da ChurchApps, incluindo o seu site B1.church e o aplicativo B1 App.
+A página Configurações da igreja é onde você configura as informações básicas da sua igreja, os dados de contato e a identidade visual. Esses dados são usados em todas as ferramentas da ChurchApps, incluindo o seu site B1.church e o aplicativo B1.
 
 </div>
 
-## Vídeo de Treinamento
+## Vídeo de treinamento {#training-video}
 
-<YouTube id="634zSbzDkYA" title="Como Configurar as Informações e a Identidade Visual da Igreja no B1" next="Funções, Permissões e Como Convidar sua Equipe no B1" nextUrl="/docs/b1-admin/settings/roles-permissions" />
+<YouTube id="634zSbzDkYA" title="Configurando as informações da igreja e a identidade visual no B1" next="Funções, permissões e convidando sua equipe no B1" nextUrl="/docs/b1-admin/settings/roles-permissions" />
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Você precisa da permissão "Editar Configurações da Igreja". Consulte [Funções e Permissões](./roles-permissions.md) se você não tiver acesso.
-- Tenha em mãos o endereço, as informações de contato e o logotipo da sua igreja
+- Você precisa da permissão "Editar configurações da igreja". Veja [Funções e permissões](./roles-permissions.md) se você não tiver acesso.
+- Tenha em mãos o endereço, as informações de contato e o logo da sua igreja
 
 </div>
 
-## Editando as Informações da Sua Igreja
+## Editando as informações da igreja {#editing-your-church-information}
 
-1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Configurações** e clique em **Configurações**.
-2. Na seção **Informações da Igreja** (no topo da página), clique em **Editar**.
+1. No B1 Admin, abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Configurações** e clique em **Configurações**.
+2. Na seção **Informações da igreja** (no topo da página), clique em **Editar**.
 3. Atualize qualquer um dos campos a seguir:
-   - **Nome da Igreja** -- O nome exibido em todos os produtos da ChurchApps.
-   - **Endereço** -- O endereço físico da sua igreja.
-   - **Informações de Contato** -- Telefone, e-mail e outros dados de contato.
-   - **Fuso Horário** -- O fuso horário da sua igreja. Consulte [Fuso Horário](#time-zone) abaixo.
-4. Clique em **Salvar** para aplicar as alterações.
+   - **Nome da igreja** *(obrigatório)* -- O nome exibido em todos os produtos da ChurchApps.
+   - **Subdomínio** *(obrigatório)* -- Seu endereço web gratuito no B1. Veja [Configurando seu subdomínio](#setting-up-your-subdomain) abaixo.
+   - **Endereço linha 1**, **Endereço linha 2**, **Cidade**, **Estado**, **CEP** e **País** -- O endereço físico da sua igreja.
+   - **Primeiro dia da semana** -- Veja [Primeiro dia da semana](#first-day-of-week) abaixo.
+   - **Fuso horário** -- O fuso horário da sua igreja. Veja [Fuso horário](#time-zone) abaixo.
+4. Clique em **Salvar** para aplicar as alterações, ou em **Cancelar** para descartá-las.
 
-## Configurando o Seu Subdomínio
+O nome da igreja, o subdomínio e o endereço também aparecem no painel no canto superior esquerdo da página Configurações.
 
-Sua igreja recebe um subdomínio gratuito em **suaigreja.1.church**. É o endereço web em que membros e visitantes podem acessar a presença online da sua igreja.
+## Configurando seu subdomínio {#setting-up-your-subdomain}
 
-1. Na página Configurações, clique em **Editar** na seção **Informações da Igreja** e localize o campo **Subdomínio**.
-2. Digite o subdomínio desejado (por exemplo, "gracechurch" para gracechurch.1.church).
+Sua igreja recebe um subdomínio gratuito em **yourchurch.b1.church**. Este é o endereço web onde membros e visitantes podem acessar a presença online da sua igreja.
+
+1. Na página Configurações, clique em **Editar** na seção **Informações da igreja** e localize o campo **Subdomínio**.
+2. Digite o subdomínio desejado (por exemplo, "gracechurch" para gracechurch.b1.church).
 3. Salve as alterações.
 
 :::info
-Seu subdomínio precisa ser exclusivo entre todas as igrejas da ChurchApps. Se o nome desejado já estiver em uso, tente acrescentar sua cidade ou estado (por exemplo, "gracechurch-dallas").
+O seu subdomínio precisa ser único entre todas as igrejas da ChurchApps. Se o nome desejado já estiver em uso, tente acrescentar sua cidade ou estado (por exemplo, "gracechurch-dallas").
 :::
 
-Se você quiser que os visitantes acessem seu site pelo seu próprio domínio (por exemplo, **`www.gracechurch.org`**), consulte [Domínio Personalizado](./custom-domain.md).
+Se você quiser que os visitantes acessem seu site pelo seu próprio domínio (por exemplo, **`www.gracechurch.org`**), veja [Domínio personalizado](./custom-domain.md).
 
-## Configurando a Identidade Visual
+## Configurando a identidade visual {#configuring-branding}
 
-Personalize a aparência da sua igreja em todas as ferramentas da ChurchApps:
+O logo e as cores da sua igreja não são definidos na página Configurações. Envie o logo da igreja e escolha as cores em **Site > Aparência** -- veja [Logo e identidade visual](../website/appearance.md#logo-and-branding). As cores usadas pelo aplicativo B1, pelo portal de membros e pelo quiosque de check-in são definidas em **Mobile > Tema do aplicativo** -- veja [Tema do aplicativo](./mobile-app.md#app-theme).
 
-1. Envie o **logotipo da igreja** clicando na área do logotipo e selecionando um arquivo de imagem.
-2. Adicione outras **imagens da igreja** usadas no seu site e no [aplicativo móvel](./mobile-app.md).
+## Geral (contato de suporte) {#general-support-contact}
 
-:::tip
-Para melhores resultados, use um logotipo com fundo transparente, em formato PNG. Assim ele fica bem tanto em fundos claros quanto escuros.
-:::
+A seção **Geral** guarda o seu **Contato de suporte**: o e-mail ou o link do formulário de contato que as pessoas usam para falar com a sua igreja. Clique em **Editar** na seção **Geral**, digite-o no campo **Link** e clique em **Salvar**. Enquanto você não definir um, a seção mostra **Não definido**.
 
-## Primeiro Dia da Semana
+## Primeiro dia da semana {#first-day-of-week}
 
-Escolha o dia em que seus calendários começam. A lista suspensa **Primeiro Dia da Semana**, na seção Informações da Igreja, vem definida como **domingo**, mas pode ser alterada para qualquer dia. Depois da mudança, ela é respeitada em todas as grades de calendário do B1 Admin e do portal de membros do B1.church. Os calendários de grupos, os calendários personalizados e o editor de eventos passam a exibir as semanas começando no dia escolhido.
+Escolha em qual dia da semana começam os seus calendários. A lista suspensa **Primeiro dia da semana** na seção Informações da igreja vem definida como **Domingo**, mas pode ser ajustada para qualquer dia. Depois de alterada, a configuração é respeitada nas grades de calendário do B1 Admin e do portal de membros do B1.church -- os calendários de grupos, os calendários selecionados e o editor de eventos organizam as semanas a partir do dia que você escolher.
 
-## Fuso Horário
+## Fuso horário {#time-zone}
 
-A lista suspensa **Fuso Horário**, na seção **Informações da Igreja**, define o fuso horário da sua igreja (por exemplo, *America/Chicago*). Escolha **Nenhum** para deixar em branco. Depois de salvar, o fuso aparece no resumo das Informações da Igreja.
+A lista suspensa **Fuso horário**, na seção **Informações da igreja**, define o fuso horário da sua igreja (por exemplo, *America/Chicago*). Escolha **Nenhum** para deixá-lo em branco. Depois de salvo, o fuso aparece no resumo das Informações da igreja.
 
-O B1 usa esse fuso horário para os horários de toda a igreja, como lembretes de eventos e as programações exibidas nas TVs do [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md). Os [horários de check-in](../attendance/setup.md#setting-a-check-in-schedule) são medidos primeiro no fuso horário do [campus](./campuses.md) onde o culto acontece, e só usam o fuso da igreja quando o campus não tem um definido. Se todos os seus campi estiverem no mesmo fuso horário, defina-o tanto na igreja quanto em cada campus.
+O B1 usa esse fuso horário para os horários de toda a igreja, como os lembretes de eventos e as programações das TVs do [FreePlay](../../freeplay/scheduled-mode/scheduling-the-calendar.md). Os [horários de check-in](../attendance/setup.md#setting-a-check-in-schedule) são medidos primeiro no fuso horário do [campus](./campuses.md) do culto, e usam o fuso horário da igreja somente quando o campus não tem um. Se todos os seus campus estiverem em um mesmo fuso horário, defina-o tanto na igreja quanto em cada campus.
 
-## Região (Formato de Data e Telefone)
+## Região (formato de data e telefone) {#region-date-and-phone-format}
 
-A configuração **Região** controla como datas e horários são escritos em todo o B1. Por padrão, as datas usam o formato dos Estados Unidos (por exemplo, "Sep 28, 2026" e "9/28/2026"). Igrejas fora dos EUA podem mudar para o formato do próprio país. Por exemplo, ao escolher inglês (Reino Unido), as datas passam a aparecer como "28 de set. de 2026" e "28/09/2026".
+A configuração **Região** controla como datas e horários são escritos em todo o B1. Por padrão, as datas usam o formato dos Estados Unidos (por exemplo, "Sep 28, 2026" e "9/28/2026"). Igrejas fora dos EUA podem trocar para o formato local -- por exemplo, escolhendo Inglês (Reino Unido), as datas aparecem como "28 Sept 2026" e "28/09/2026".
 
 1. Na página Configurações, clique em **Região** na lista à esquerda e depois em **Editar** na seção **Região**.
 2. Escolha sua região na lista suspensa **Região**. Cada opção mostra uma data de exemplo, para que você veja exatamente como as datas ficarão.
 3. Clique em **Salvar**.
 
-A seção Região mostra então a região selecionada, um exemplo do **Formato de data** e o seu formato de **Números de telefone**.
+A seção Região então mostra a região selecionada, um exemplo do **Formato de data** e o formato dos seus **Números de telefone**.
 
-### Formato de Número de Telefone
+### Formato de número de telefone {#phone-number-format}
 
-A mesma seção Região tem a configuração **Números de telefone**, que controla como os números são inseridos no registro de uma pessoa:
+A mesma seção Região tem a configuração **Números de telefone**, que controla como os números de telefone são digitados no cadastro de uma pessoa:
 
-- **Internacional (com código do país)** -- o padrão. Os campos de telefone exibem um seletor de bandeira do país e salvam os números com o código do país (por exemplo, +1 918 555 1234).
-- **Local (como digitado)** -- os campos de telefone viram caixas de texto simples e salvam os números exatamente como você digita, sem adicionar o código do país (por exemplo, 0701 234 5678). Escolha esta opção se a sua igreja escreve os números em formato local e não quer que o B1 acrescente o código do país.
+- **Internacional (com código do país)** -- o padrão. Os campos de telefone mostram um seletor de bandeira do país e salvam os números com o código do país (por exemplo, +1 918 555 1234).
+- **Local (como digitado)** -- os campos de telefone viram caixas de texto simples e salvam os números exatamente como você os digita, sem acrescentar código de país (por exemplo, 0701 234 5678). Escolha esta opção se a sua igreja escreve os números em formato local e não quer que o B1 acrescente um código de país.
 
-Quando **Local** está selecionado, a seção Região também exibe "Números de telefone locais" ao lado da sua região.
+Quando **Local** está selecionado, a seção Região também mostra "Números de telefone locais" ao lado da sua região.
 
 :::tip
-O envio de SMS funciona melhor quando os números incluem o código do país. Se você envia mensagens pelo B1, mantenha o formato **Internacional** ou certifique-se de que os números digitados no modo Local incluam o código do país.
+O envio de SMS funciona melhor quando os números incluem o código do país. Se você envia SMS pelo B1, mantenha o formato **Internacional**, ou certifique-se de que os números digitados no modo Local incluam o código do país.
 :::
 
-Sua região se aplica às datas e aos horários em todo o B1 Admin e no seu site e portal de membros do B1.church, incluindo sermões, posts do blog, calendários de grupos e planos de escala. Assim, os membros veem as datas no mesmo formato que a equipe.
+A sua região se aplica às datas e aos horários em todo o B1 Admin e no seu site B1.church e portal de membros, incluindo sermões, postagens do blog, calendários de grupos e planos de culto, para que os membros vejam as datas no mesmo formato que a sua equipe.
 
-## Mensagens de Texto (SMS) {#texting}
+## SMS {#texting}
 
-Conecte um provedor de SMS para enviar mensagens de texto a uma pessoa ou a um grupo inteiro pelo B1 Admin. As mensagens são enviadas pela sua própria conta no provedor, portanto valem os preços e os limites dele.
+Conecte um provedor de SMS para enviar mensagens de texto a uma pessoa ou a um grupo inteiro pelo B1 Admin. Os SMS são enviados pela sua própria conta no provedor, então os preços e os limites dele se aplicam.
 
-1. Na página Configurações, clique em **Mensagens de Texto** na lista à esquerda e depois em **Editar** na seção **Mensagens de Texto**.
+1. Na página Configurações, clique em **SMS** na lista à esquerda e depois em **Editar** na seção **SMS**.
 2. Escolha um **Provedor**:
-   - **Clearstream** -- insira uma **Chave de API**. Crie uma em Configurações da Conta no Clearstream, na seção Chaves de API.
-   - **Text In Church** -- insira uma **Chave de API**. Primeiro peça acesso à API para desenvolvedores ao suporte da Text In Church e, depois, crie uma chave na seção Configurações da Conta > API para Desenvolvedores.
-   - **Nalo Solutions** (Gana) -- insira a chave de autenticação da sua conta na Nalo Solutions como **Chave de API**, e um **ID do Remetente** (até 11 caracteres) aprovado pela Nalo para a sua conta.
-   - **Twilio** -- use a conta Twilio da sua igreja; a cobrança é feita diretamente pela Twilio. Copie o **Account SID** e o **Auth Token** do [Twilio Console](https://console.twilio.com) e insira um **Número de Origem**, que é um número de telefone da Twilio registrado para A2P 10DLC, no formato `+15551234567`. Depois de salvar, cole a URL do webhook de entrada (veja abaixo) no campo **A message comes in** do número, na Twilio, para que as respostas STOP também sejam registradas no B1.
+   - **Clearstream** -- digite uma **Chave de API**. Crie uma em Configurações da sua conta Clearstream, na seção Chaves de API.
+   - **Text In Church** -- digite uma **Chave de API**. Peça antes ao suporte do Text In Church o acesso à API para desenvolvedores e depois crie uma chave em Configurações da conta > seção API para desenvolvedores.
+   - **Nalo Solutions** (Gana) -- digite a chave de autenticação da sua conta Nalo Solutions como **Chave de API**, e um **ID do remetente** (até 11 caracteres) aprovado pela Nalo para a sua conta.
+   - **Twilio** -- use a conta Twilio da sua igreja; a Twilio cobra diretamente de você. Copie o **Account SID** e o **Auth Token** do [Console da Twilio](https://console.twilio.com) e digite um **Número de origem** -- um número de telefone da Twilio registrado para A2P 10DLC, em um formato como `+15551234567`. Depois de salvar, cole a URL do webhook de mensagens recebidas (veja abaixo) no webhook **Quando uma mensagem chegar** do número na Twilio, para que as respostas STOP também sejam registradas no B1.
 3. Clique em **Salvar**.
 
-Para parar de enviar mensagens, defina o **Provedor** como **Nenhum** e salve. Isso remove o provedor salvo.
+Para parar de enviar SMS, defina o **Provedor** como **Nenhum** e salve. Isso remove o provedor salvo.
 
-### Cancelando o Envio para Quem Responde STOP
+### Cancelando o envio para quem responde STOP {#opting-out-people-who-reply-stop}
 
-Depois de salvar um provedor, reabra a seção Mensagens de Texto com **Editar**. Abaixo das configurações do provedor, um campo somente leitura, **URL do webhook de entrada (STOP)**, mostra um endereço web exclusivo da sua igreja. Clique no campo para selecionar o endereço, copie-o e cole-o na configuração de webhook de mensagens recebidas (respostas) do seu provedor. Isso funciona com qualquer um dos provedores acima que possa encaminhar respostas recebidas para um webhook.
+Depois que um provedor é salvo, reabra a seção SMS com **Editar**. Abaixo das configurações do provedor, um campo somente leitura **URL do webhook de mensagens recebidas (STOP)** mostra um endereço web exclusivo da sua igreja. Clique no campo para selecionar o endereço, copie-o e cole-o na configuração de webhook de mensagens recebidas (respostas) do seu provedor de SMS. Isso funciona com qualquer um dos provedores acima que possa encaminhar respostas recebidas para um webhook.
 
-A partir daí, quando alguém responder **STOP** (ou STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT ou REVOKE) a uma das suas mensagens, o B1 encontra todas as pessoas com aquele número de celular, marca-as como descadastradas e desativa seus lembretes por texto. Elas passam a ser ignoradas nas mensagens para grupos. Outras respostas são ignoradas.
+Depois disso, quando alguém responder **STOP** (ou STOPALL, UNSUBSCRIBE, CANCEL, END, QUIT, OPTOUT ou REVOKE) a um dos seus SMS, o B1 localiza todas as pessoas cujo número de celular corresponde, as marca como tendo optado por não receber e desativa os lembretes por SMS delas. Elas então são ignoradas nos SMS para grupos. As demais respostas são ignoradas.
 
 :::info
-Isso usa a mesma configuração de cancelamento de **Ocultar-me do diretório de membros**, então quem responde STOP também aparece como **Oculto do diretório** no próprio perfil. O campo só aparece enquanto o provedor salvo estiver selecionado. Se você trocar a lista para outro provedor, salve antes para voltar a ver a URL.
+Isto usa a mesma configuração de cancelamento de **Ocultar-me do diretório de membros**, então quem responde STOP também aparece como **Oculto do diretório** no perfil. O campo só aparece enquanto o provedor salvo estiver selecionado -- se você trocar a lista suspensa para outro provedor, salve primeiro para ver a URL novamente.
 :::
 
-Quando um provedor está conectado, a equipe com permissão para enviar mensagens vê um botão **Texto** na página de um grupo (**Enviar texto para este grupo**) e na página de uma pessoa com celular (**Enviar mensagem de texto**). Digite a mensagem e clique em **Enviar**. A janela conta os caracteres e os segmentos de SMS. No caso de um grupo, ela mostra quantos membros receberão a mensagem antes do envio:
+Depois que um provedor está conectado, a equipe com permissão para enviar SMS vê um botão **SMS** na página de um grupo (**Enviar SMS a este grupo**) e na página de uma pessoa com celular (**Enviar mensagem de texto**). Digite a sua mensagem e clique em **Enviar**. A caixa de diálogo conta os caracteres e os segmentos de SMS. Para um grupo, ela mostra quantos membros receberão o SMS antes do envio:
 
 - Membros sem celular cadastrado são ignorados.
-- Membros que escolheram **Ocultar-me do diretório de membros** são contados como descadastrados e ignorados.
-- Familiares que compartilham o mesmo número de celular recebem a mensagem apenas uma vez.
+- Membros que escolheram **Ocultar-me do diretório de membros** são contados como tendo optado por não receber e são ignorados.
+- Familiares que compartilham o mesmo número de celular recebem o SMS apenas uma vez.
 
-### Personalizando as Mensagens com Campos de Mesclagem {#personalizing-texts-with-merge-fields}
+### Personalizando SMS com campos de mesclagem {#personalizing-texts-with-merge-fields}
 
-Abaixo da caixa de mensagem, a janela de texto mostra os marcadores: **Nome**, **Sobrenome**, **Nome de Exibição** e **Nome da Igreja**. Clique em um marcador para inserir seu espaço reservado (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) na posição do cursor. Ao enviar, cada espaço reservado é substituído pelos dados do destinatário. Assim, uma mensagem para grupo como `Hi {{firstName}}, see you Sunday!` chega a cada membro com o próprio nome. Os espaços reservados funcionam tanto em mensagens para grupos quanto em mensagens para uma pessoa. Mensagens para grupos também oferecem o marcador **Nome do Grupo** (`{{groupName}}`), que é substituído pelo nome do grupo.
+Abaixo da caixa de mensagem, a janela de SMS mostra botões de marcadores: **Nome**, **Sobrenome**, **Nome de exibição** e **Nome da igreja**. Clique em um botão para inserir o marcador correspondente (`{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}`) na posição do cursor. Quando o SMS é enviado, cada marcador é substituído pelos dados do destinatário; assim, um SMS para o grupo como `Hi {{firstName}}, see you Sunday!` chega a cada membro com o nome dele. Os marcadores funcionam tanto em SMS para grupos quanto para uma pessoa. Os SMS para um grupo também oferecem o botão **Nome do grupo** (`{{groupName}}`), que é substituído pelo nome do grupo.
 
-Para reutilizar uma mensagem, salve-a como um [modelo de texto](./email-templates.md#text-templates) (um modelo de e-mail com a categoria **Texto**) e escolha-o em **Carregar Modelo (opcional)**, no topo da janela de texto.
+Para reutilizar uma mensagem, salve-a como um [modelo de SMS](./email-templates.md#text-templates) (um modelo de e-mail da categoria **SMS**) e escolha-o em **Carregar modelo (opcional)** no topo da janela de SMS.
 
 :::info
-O limite de 1.600 caracteres se aplica à mensagem conforme você digita. Depois que os espaços reservados são preenchidos, qualquer texto com mais de 1.600 caracteres é cortado nesse tamanho.
+O limite de 1.600 caracteres se aplica à mensagem conforme você a digita. Depois que os marcadores são preenchidos, qualquer texto com mais de 1.600 caracteres é cortado nesse tamanho.
 :::
 
-As mensagens também podem ser enviadas automaticamente por uma etapa de um [fluxo de trabalho](../serving/workflows.md#sending-a-text) com a ação **Enviar Texto**, que usa o mesmo provedor e os mesmos espaços reservados.
+Os SMS também podem ser enviados automaticamente por uma etapa de [fluxo de trabalho](../serving/workflows.md#sending-a-text) com a ação **Enviar SMS**, que usa o mesmo provedor e os mesmos marcadores.
 
-## Armazenamento de Arquivos
+## Armazenamento de arquivos {#file-storage}
 
-Por padrão, os arquivos que você envia para o seu site (pela seção [Arquivos](../website/files.md)) e para outras áreas de conteúdo usam o armazenamento hospedado e gratuito do B1, com limite de 100 MB. Se você precisar de mais espaço, pode conectar seu próprio armazenamento em nuvem. Os novos envios vão direto para a sua conta, sem limite da plataforma.
+Por padrão, os arquivos que você envia ao seu site (pelos [Arquivos](../website/files.md)) e a outras áreas de conteúdo usam o armazenamento hospedado gratuito do B1, de até 100 MB. Se precisar de mais espaço, você pode conectar o seu próprio armazenamento em nuvem -- os novos envios vão direto para a sua conta, sem limite da plataforma.
 
-1. Na página Configurações, clique em **Armazenamento de Arquivos** na lista à esquerda e depois em **Editar** na seção **Armazenamento de Arquivos**.
-2. Escolha um provedor: **Google Drive**, **Dropbox**, **OneDrive** ou um **bucket compatível com S3** (AWS S3, Cloudflare R2, Backblaze B2, etc.).
-3. Para Google Drive, Dropbox ou OneDrive, clique em **Conectar** e faça login para autorizar o acesso. Para um bucket compatível com S3, insira sua chave de acesso, a chave secreta, o nome do bucket e a URL base pública.
+1. Na página Configurações, clique em **Armazenamento de arquivos** na lista à esquerda e depois em **Editar** na seção **Armazenamento de arquivos**.
+2. Escolha um **Provedor**: **Google Drive**, **Dropbox** ou **Bucket compatível com S3 (S3, R2, B2)** (AWS S3, Cloudflare R2, Backblaze B2 etc.). **ChurchApps (gratuito)** é o armazenamento integrado.
+3. Para o Google Drive ou o Dropbox, clique em **Conectar conta** e faça login para autorizar o acesso. Um selo **Conta conectada** aparece quando funciona; é preciso conectar antes de poder salvar. Para um bucket compatível com S3, informe o **Access Key Id**, o **Secret Access Key**, o **Bucket**, o **Endpoint** (deixe em branco para a AWS), a **Região** e a **URL pública base**. **Bucket** e **URL pública base** são obrigatórios, e o bucket precisa permitir leituras públicas e envios por CORS a partir do B1.
 4. Clique em **Salvar**.
 
+Para voltar ao armazenamento gratuito, escolha **ChurchApps (gratuito)** e salve. Os arquivos já enviados permanecem onde estão.
+
 :::info
-Isso afeta apenas os novos envios para os Arquivos do seu site e para áreas de conteúdo semelhantes. Imagens de galeria, miniaturas, logotipos e fotos de pessoas continuam sempre no armazenamento padrão do B1.
+Isto afeta apenas os novos envios para os Arquivos do seu site e áreas de conteúdo semelhantes. Imagens de galeria, miniaturas, logos e fotos de pessoas sempre permanecem no armazenamento padrão do B1.
 :::
 
-## Promoção de Série
+## Doações {#giving}
 
-Se você registra a **Série** de crianças e alunos, o B1 pode avançar automaticamente todos para a série seguinte em uma data escolhida por você (por exemplo, 1º de agosto), sem que seja preciso editar cada perfil manualmente.
+A seção **Doações** conecta o seu provedor de pagamentos e define a moeda da sua igreja para as doações online e as inscrições pagas. Veja [Configuração de doações online](../donations/online-giving-setup.md). Ela só aparece para as pessoas que podem editar as configurações de doações.
 
-1. Na página Configurações, clique em **Promoção de Série** na lista à esquerda e depois em **Editar** na seção **Promoção de Série**.
-2. Ative a chave (ela mostra **Ativado**) e escolha o **Mês** e o **Dia** em que as séries serão promovidas a cada ano. Nessa data, todos com uma série avançam uma série, e os alunos do 12º ano passam para **Formado**.
+## Check-in {#check-in}
+
+A seção **Check-in** define a **Aplicação da proporção de voluntários** -- se o check-in apenas avisa (**Avisar (permitir com confirmação)**) ou bloqueia um check-in (**Bloquear (impedir o check-in)**) quando uma sala está com falta de voluntários. Veja [Proporção de voluntários](../attendance/checkin-safety.md#volunteer-ratios). O link **Quiosque de check-in, QR e etiquetas**, abaixo dele, abre as configurações do quiosque na página Mobile.
+
+## Promoção de séries {#grade-promotion}
+
+Se você registra a **Série** de crianças e alunos, o B1 pode avançar automaticamente todos para a série seguinte em uma data que você escolher (por exemplo, 1º de agosto), em vez de exigir que você edite cada perfil manualmente.
+
+1. Na página Configurações, clique em **Promoção de séries** na lista à esquerda e depois em **Editar** na seção **Promoção de séries**.
+2. Ative a chave (ela mostra **Ativada**) e escolha o **Mês** e o **Dia** em que as séries são promovidas a cada ano. Nessa data, todos que têm uma série avançam uma série, e os alunos da 12ª série passam a **Formados**.
 3. Salve as alterações.
 
-Para interromper a promoção automática, desative a chave, para que ela mostre **Desativado**, e salve. A data de promoção é removida e as séries deixam de mudar sozinhas.
+Para interromper a promoção automática, desligue a chave para que ela mostre **Desativada** e salve. A data de promoção é removida e as séries deixam de mudar sozinhas.
 
-## Inscrição de Voluntários {#volunteer-signup}
+## Inscrição de voluntários {#volunteer-signup}
 
-Por padrão, os membros que consultam as [inscrições de voluntários](../../b1-church/serving/volunteer-signup.md) veem todas as semanas futuras com vagas abertas. Se essa lista ficar longa, você pode mostrar apenas a próxima semana de cada tipo de plano.
+Por padrão, os membros que navegam pelas [inscrições de voluntários](../../b1-church/serving/volunteer-signup.md) veem todas as semanas futuras que têm vagas abertas. Se essa lista ficar longa, você pode mostrar apenas a próxima semana de cada tipo de plano.
 
-1. Na página Configurações, clique em **Inscrição de Voluntários** na lista à esquerda e depois em **Editar** na seção **Inscrição de Voluntários**.
-2. Ative a opção **Mostrar apenas a próxima semana de cada tipo de plano**.
+1. Na página Configurações, clique em **Inscrição de voluntários** na lista à esquerda e depois em **Editar** na seção **Inscrição de voluntários**.
+2. Ative **Mostrar apenas a próxima semana de cada tipo de plano**.
 3. Salve as alterações.
 
-Com essa opção ativada, cada tipo de plano mostra somente o seu próximo plano futuro. A semana seguinte aparece quando essa data passa. A linha **Semanas exibidas** da seção mostra **Somente a próxima semana de cada tipo de plano** ou **Todas as semanas futuras**.
+Com isso ativado, cada tipo de plano mostra apenas o seu próximo plano futuro. A semana seguinte aparece assim que essa data passa. A linha **Semanas exibidas** da seção mostra **Apenas a próxima semana de cada tipo de plano** ou **Todas as semanas futuras**.
 
-## Privacidade das Doações {#giving-privacy}
+## Privacidade de doações {#giving-privacy}
 
-Pessoas com acesso às doações normalmente veem os totais de doação de uma pessoa no [registro dela](../people/adding-people.md#editing-details). Se você preferir não mostrar os valores na tela sempre que um registro for aberto, pode ocultá-los até que alguém peça para vê-los.
+Pessoas com acesso a doações normalmente veem os totais de doações de uma pessoa no [cadastro dela](../people/adding-people.md#editing-details). Se preferir não mostrar os valores na tela sempre que um cadastro é aberto, você pode ocultá-los até que alguém peça para vê-los.
 
-1. Na página Configurações, clique em **Privacidade das doações** na lista à esquerda e depois em **Editar** na seção **Privacidade das doações**.
-2. Ative a opção **Ocultar doações nos registros de pessoas até que sejam clicadas**.
+1. Na página Configurações, clique em **Privacidade de doações** na lista à esquerda e depois em **Editar** na seção **Privacidade de doações**.
+2. Ative **Ocultar doações nos cadastros de pessoas até clicar**.
 3. Salve as alterações.
 
-Com essa opção ativada, o cartão de doações no registro de uma pessoa exibe "As doações estão ocultas nos registros de pessoas." Clique em **Mostrar doações** para carregar e exibir as doações daquela pessoa. Elas são ocultadas novamente quando você abre outro registro. Quem pode ver as doações não muda: apenas as pessoas com acesso às doações veem o cartão.
+Com isso ativado, o cartão de doações no cadastro de uma pessoa diz "As doações estão ocultas nos cadastros de pessoas." Clique em **Mostrar doações** para carregar e exibir as doações daquela pessoa. Elas voltam a ficar ocultas quando você abre outra pessoa. Quem pode ver as doações não muda: somente pessoas com acesso a doações veem o cartão.
 
-## Importação e Exportação
+## Importação e exportação {#import-and-export}
 
-O link **Importação/Exportação**, abaixo do nome da sua igreja na página Configurações, abre uma ferramenta dedicada em uma nova janela do navegador. Use-a para:
+O link **Importar/Exportar**, abaixo do nome da sua igreja na página Configurações, abre uma ferramenta dedicada em uma nova janela do navegador. Use-a para:
 
 - Importar dados de membros de outro sistema de gestão de igrejas.
 - Exportar seus dados da ChurchApps para backup ou migração.
 
-Isso é especialmente útil quando você está configurando a igreja pela primeira vez e precisa transferir registros existentes para a ChurchApps.
+Isso é especialmente útil quando você está configurando a sua igreja pela primeira vez e precisa transferir cadastros existentes para a ChurchApps.
 
 :::warning
-Ao importar dados, faça sempre um backup dos registros existentes antes. As operações de importação adicionam dados ao sistema e podem criar entradas duplicadas se forem executadas mais de uma vez.
+Ao importar dados, faça sempre um backup dos seus cadastros existentes antes. As operações de importação adicionam dados ao sistema e podem criar registros duplicados se forem executadas mais de uma vez.
 :::

@@ -8,45 +8,48 @@ description: "Leggi le Scritture nel lettore Bibbia di B1.church, con controlli 
 
 <div class="article-intro">
 
-B1.church include un lettore Bibbia integrato in modo che tu possa leggere le Scritture senza lasciare il sito. Il lettore è incorporato direttamente nella pagina, offrendoti un accesso rapido a qualsiasi passaggio insieme ai tuoi altri strumenti della chiesa.
+B1.church include un lettore Bibbia integrato, così puoi leggere le Scritture senza lasciare il sito. Il lettore è incorporato direttamente nella pagina e ti dà accesso rapido a qualsiasi brano, accanto agli altri strumenti della tua chiesa.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Non è richiesto il login per utilizzare il lettore Bibbia. La pagina della Bibbia è accessibile al pubblico.
-- La tua chiesa deve aver aggiunto una pagina Bibbia alla navigazione del suo sito.
+- Non serve effettuare l'accesso per usare il lettore Bibbia. La pagina della Bibbia è accessibile a tutti.
+- La tua chiesa deve aver aggiunto una pagina Bibbia alla navigazione del sito.
 
 </div>
 
-## Lettura della Bibbia
+## Leggere la Bibbia {#reading-the-bible}
 
-1. Navigare alla pagina **Bibbia** dalla navigazione del sito della tua chiesa.
-2. Il lettore si apre su Genesi 1:1 per impostazione predefinita.
-3. Usa i controlli di navigazione all'interno del lettore per spostarti in un diverso libro, capitolo o versetto.
+1. Vai alla pagina **Bibbia** dalla navigazione del sito della tua chiesa.
+2. Il lettore si apre, per impostazione predefinita, su Genesi 1.
+3. Usa i controlli di navigazione all'interno del lettore per passare a un altro libro, capitolo o versetto.
 
-Il lettore Bibbia è alimentato da **YouVersion** e ti dà accesso a un'ampia selezione di traduzioni bibliche in molte lingue.
+Il lettore Bibbia è basato su **YouVersion** e ti dà accesso a un'ampia selezione di traduzioni bibliche in molte lingue.
 
-## Navigazione dei Passi
+## Navigare nei brani {#navigating-passages}
 
-Il lettore incorporato fornisce controlli per muoversi attraverso le Scritture. Puoi:
+Il lettore incorporato offre controlli per spostarti nelle Scritture. Puoi:
 
 - Sfogliare un libro specifico della Bibbia
-- Saltare a un particolare capitolo
+- Saltare a un capitolo particolare
 - Scorrere i versetti all'interno di un capitolo
-- Passare a una diversa traduzione biblica usando il selettore di versione
+- Passare a un'altra traduzione biblica usando il selettore di versione
+- Sul sito della tua chiesa, usare i pulsanti **Capitolo precedente** e **Capitolo successivo** sopra il testo per scorrere un libro
 
-Il lettore riempie l'area del contenuto della pagina, offrendoti molto spazio per leggere comodamente.
-
-:::tip
-Il tuo libro, capitolo e traduzione selezionati vengono ricordati in modo che il lettore si riapra dove l'hai lasciato.
-:::
+Il lettore occupa l'area del contenuto della pagina, così hai spazio a sufficienza per leggere comodamente.
 
 :::tip
-Puoi contrassegnare la pagina della Bibbia nel tuo browser per tornare rapidamente alle tue letture quotidiane. Abbinala con il [Versetto del Giorno](./verse-of-the-day.md) per l'ispirazione quotidiana delle Scritture.
+Nel portale membri (`/mobile/bible`), il libro, il capitolo e la traduzione selezionati vengono ricordati su quel dispositivo, quindi il lettore si riapre dove l'avevi lasciato. Il lettore del sito parte sempre da Genesi 1.
 :::
 
-## Disponibilità
+Se il lettore non riesce a caricarsi, la pagina lo segnala e offre un pulsante per leggere su Bible.com (il portale membri offre anche Biblia.com).
 
-La pagina della Bibbia è una funzione di contenuto integrata di B1.church. Se non vedi un collegamento **Bibbia** nella navigazione della tua chiesa, l'amministratore della tua chiesa potrebbe non averlo aggiunto al menu del sito. Contatta l'amministratore della tua chiesa per richiedere.
+:::tip
+Puoi aggiungere ai segnalibri la pagina della Bibbia nel tuo browser per tornarci rapidamente per le letture quotidiane. Abbinala al [Versetto del giorno](./verse-of-the-day.md) per un'ispirazione quotidiana dalle Scritture.
+:::
+
+## Disponibilità {#availability}
+
+La pagina della Bibbia è una funzione di contenuto integrata di B1.church. Se non vedi un collegamento **Bibbia** nella navigazione della tua chiesa, l'amministratore della chiesa potrebbe non averlo aggiunto al menu del sito. Contatta l'amministratore della tua chiesa per chiederne l'aggiunta.

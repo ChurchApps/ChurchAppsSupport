@@ -8,27 +8,27 @@ description: "B1.church पर स्वयंसेवा के अवसर �
 
 <div class="article-intro">
 
-B1.church का Serving section आपको volunteer अवसर ब्राउज़ करने और अपने church में positions के लिए sign up करने देता है। अपनी सौंपी गई plans और service orders देखने के अलावा, अब आप उन positions को स्वयं चुन सकते हैं जिन्हें भरने की ज़रूरत है।
+B1.church का Serving अनुभाग आपको स्वयंसेवा के अवसर ब्राउज़ करने और अपने चर्च में पदों के लिए साइन अप करने देता है। अपनी सौंपी गई योजनाएँ और सेवा क्रम देखने के अलावा, अब आप उन पदों को स्वयं चुन सकते हैं जिन्हें भरने की ज़रूरत है।
 
 </div>
 
-## आप क्या कर सकते हैं
+## आप क्या कर सकते हैं {#what-you-can-do}
 
-- **Volunteer अवसर ब्राउज़ करें** -- खुली positions वाले आने वाले service plans देखें जिनमें volunteers चाहिए।
-- **Positions के लिए sign up करें** -- एक position चुनें और एक click में अपना नाम दर्ज करें।
-- **अपने plans देखें** -- अपनी आने वाली और पिछली [serving assignments](../plans/viewing-plans.md) देखें।
-- **Assignments का जवाब दें** -- Plans page से या Home पर **You're serving** section से उन positions को स्वीकार या अस्वीकार करें जिनके लिए आपको schedule किया गया है। यदि स्वीकार करने के बाद आपकी योजनाएं बदलती हैं, तो service समाप्त होने तक आप [स्वीकृत assignment से हट सकते हैं](../plans/viewing-plans.md#declining-an-accepted-assignment)।
-- **Signups हटाएं** -- यदि आपकी योजनाएं बदलती हैं तो अपना self-signup रद्द करें (deadline से पहले)।
+- **स्वयंसेवा के अवसर ब्राउज़ करें** -- खुले पदों वाली आने वाली सेवा योजनाएँ देखें जिनमें स्वयंसेवकों की ज़रूरत है।
+- **पदों के लिए साइन अप करें** -- एक पद चुनें और एक क्लिक में अपना नाम दर्ज करें।
+- **अपनी योजनाएँ देखें** -- अपनी आने वाली और पिछली [serving assignments](../plans/viewing-plans.md) देखें।
+- **Assignments का उत्तर दें** -- Plans पेज से या Home पर **You're serving** अनुभाग से उन पदों को स्वीकार या अस्वीकार करें जिनके लिए आपको शेड्यूल किया गया है। यदि स्वीकार करने के बाद आपकी योजनाएँ बदलती हैं, तो सेवा समाप्त होने तक आप [स्वीकृत assignment से हट सकते हैं](../plans/viewing-plans.md#declining-an-accepted-assignment)।
+- **Signups हटाएँ** -- यदि आपकी योजनाएँ बदलती हैं तो अपना self-signup रद्द करें (समय सीमा से पहले)।
 
-## यह कैसे काम करता है
+## यह कैसे काम करता है {#how-it-works}
 
-आपके church के administrator service plans बनाते हैं और कुछ positions को self-signup के लिए उपलब्ध चिह्नित करते हैं। ये positions volunteer signup page पर श्रेणी के अनुसार ("Band", "Hospitality", या "Kids Ministry" जैसी) व्यवस्थित होकर दिखती हैं। आप हर position पर कितने स्थान खुले हैं यह देख सकते हैं और जिनके लिए आप उपलब्ध हैं उनके लिए sign up कर सकते हैं।
+आपके चर्च के प्रशासक सेवा योजनाएँ बनाते हैं और कुछ पदों को self-signup के लिए उपलब्ध चिह्नित करते हैं। ये योजनाएँ आपके चर्च की वेबसाइट के **Volunteer Opportunities** पेज पर और मेंबर पोर्टल की **Volunteer** स्क्रीन पर दिखती हैं (Plans स्क्रीन पर **Sign up to serve** पर टैप करें)। किसी योजना को खोलें और उसके पद देखें, जो श्रेणी के अनुसार ("Band", "Hospitality", या "Kids Ministry" जैसी) व्यवस्थित होते हैं, हर एक में कितने स्थान खुले हैं यह दिखता है, और जिनके लिए आप उपलब्ध हैं उनके लिए साइन अप करें।
 
 :::info
-volunteer page पर केवल वही positions दिखती हैं जिन्हें आपके church के administrator ने self-signup के लिए सक्षम किया है। कुछ positions केवल सीधे assignment से भरी जा सकती हैं।
+volunteer पेज पर केवल वही पद दिखते हैं जिन्हें आपके चर्च के प्रशासक ने self-signup के लिए सक्षम किया है। कुछ पद केवल सीधे assignment से भरे जा सकते हैं।
 :::
 
-## और जानें
+## और जानें {#learn-more}
 
-- [Volunteer Signup](./volunteer-signup.md) -- volunteer positions ब्राउज़ करने और उनके लिए sign up करने की चरण-दर-चरण guide
-- [Viewing Plans](../plans/viewing-plans.md) -- अपनी सौंपी गई service plans और service orders देखें
+- [Volunteer Signup](./volunteer-signup.md) -- volunteer पद ब्राउज़ करने और उनके लिए साइन अप करने की चरण-दर-चरण गाइड
+- [Viewing Plans](../plans/viewing-plans.md) -- अपनी सौंपी गई सेवा योजनाएँ और सेवा क्रम देखें

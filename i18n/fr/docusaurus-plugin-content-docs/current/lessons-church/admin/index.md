@@ -15,7 +15,7 @@ La zone d'administration de Lessons.church est l'espace où les créateurs de co
 L'accès à l'administration nécessite les autorisations appropriées. Si vous ne voyez pas les options d'administration, contactez l'administrateur de votre église pour demander l'accès.
 :::
 
-## Ce que vous pouvez faire
+## Ce que vous pouvez faire {#what-you-can-do}
 
 La zone d'administration vous donne un contrôle total sur votre contenu :
 

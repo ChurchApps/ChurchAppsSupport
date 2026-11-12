@@ -1,53 +1,57 @@
 ---
 title: "Innstillinger"
-description: "Finn frem i innstillingene i B1 Admin: menighetsinfo, merkevare, campuser, egendefinerte felt, brukerroller og navigasjonen i B1.church-appen."
+description: "Finn frem i B1 Admins innstillinger: kirkeinfo, merkevare, menighetsenheter, egendefinerte felt, brukerroller og navigasjon i B1.church-appen."
 ---
 
 # Innstillinger
 
 <div class="article-intro">
 
-I Innstillinger konfigurerer du kirkens konto, profilering og administrative valg i B1 Admin. Herfra kan du administrere alt fra kirkens navn og underdomene til brukertillatelser og oppsett av mobilappen.
+Innstillingsseksjonen er der du konfigurerer menighetens konto, merkevare og administrative valg i B1 Admin. Herfra kan du administrere alt fra menighetens navn og subdomene til brukertillatelser og oppsett av mobilappen.
 
 </div>
 
-## Dette finner du her
+## Dette finner du her {#what-you-will-find-here}
 
-Innstillingsområdet er organisert i følgende underdeler:
+Innstillingsområdet er organisert i følgende underseksjoner:
 
-1. **Innstillinger** -- Konfigurer kirkens grunnleggende informasjon, profilering, underdomene, region (dato- og telefonformat), tekstmeldingsleverandør og fillagring. Se [Kirkeinnstillinger](./church-settings.md) for detaljer. Hvis du vil bruke ditt eget domenenavn (f.eks. dinkirke.no), se [Eget domene](./custom-domain.md).
-2. **Menighetssteder** -- Legg til og administrer flere fysiske steder for kirken din. Når de er opprettet, vises menighetsstedene på personprofiler, i oppsett av oppmøte og i demografidashbordet. Nås som en seksjon på hovedsiden for Innstillinger i stedet for som et eget navigasjonspunkt. Se [Menighetssteder](./campuses.md) for detaljer.
-3. **Egendefinerte felt** -- Definer dine egne felt for å registrere opplysninger om personer (en dato, et tall, et ja/nei-svar eller en nedtrekksliste), fyll dem deretter inn på profiler og søk på dem. Nås også som en seksjon på hovedsiden for Innstillinger. Se [Egendefinerte felt](./custom-fields.md) for detaljer.
-4. **E-postmaler** -- Lagre gjenbrukbart e-postinnhold for manuell sending eller fra en arbeidsflyt. Se [E-postmaler](./email-templates.md) for detaljer.
-5. **Revisjonslogg** og **Batcher** -- Gjennomgå endringer gjort på tvers av kontoen din ([Revisjonslogg](../reports/audit-log.md)), og gjennomgå eller angre masseimporter og handlinger (**Batcher**).
-6. **Serveradministrasjon** -- Få tilgang til avanserte administrasjonsverktøy for kirkens innstillinger på servernivå.
+1. **Innstillinger** -- Konfigurer menighetens grunnleggende informasjon, subdomene, region (dato- og telefonformat), giving, tekstmeldingsleverandør, fillagring med mer. Se [Kirkeinnstillinger](./church-settings.md) for detaljer. For å bruke ditt eget domenenavn (f.eks. yourchurch.org), se [Eget domene](./custom-domain.md).
+2. **Menighetsenheter** -- Legg til og administrer flere fysiske lokasjoner for menigheten din. Når de er opprettet, vises menighetsenheter på personprofiler, i oppsettet for oppmøte og i demografioversikten. Du finner dem som en seksjon på hovedsiden for Innstillinger, ikke som et eget navigasjonspunkt. Se [Menighetsenheter](./campuses.md) for detaljer.
+3. **Egendefinerte felt** -- Definer egne felt du vil følge med på for personer (en dato, et tall, et ja/nei-svar eller en nedtrekksliste), og fyll dem deretter inn på profiler og søk på dem. Også dette nås som en seksjon på hovedsiden for Innstillinger. Se [Egendefinerte felt](./custom-fields.md) for detaljer.
+4. **Roller** -- Styr hva hver medarbeider og frivillig kan se og endre. Se [Roller og tillatelser](./roles-permissions.md).
+5. **E-postmaler** -- Lagre gjenbrukbart e-postinnhold for manuell utsending eller utsending fra en arbeidsflyt. Se [E-postmaler](./email-templates.md) for detaljer.
+6. **Revisjonslogg** og **Batcher** -- Gå gjennom endringer som er gjort på tvers av kontoen din ([Revisjonslogg](../reports/audit-log.md)), og gå gjennom eller angre masseimporter og -handlinger (**Batcher**).
+7. **Serveradministrasjon** -- Avanserte administrasjonsverktøy, som bare vises for serveradministratorer i ChurchApps.
 
 :::info
-Oppsett av **Mobilapper** og **Skjemaer** har nå egne navigasjonspunkter på toppnivå -- **Mobil** og **Skjemaer** (under **Personer**) -- i stedet for å ligge inne i Innstillinger. Se [Innstillinger for mobilappen](./mobile-app.md) og [Opprette skjemaer](/docs/b1-admin/forms/creating-forms) for detaljer.
+**Mobilappinnstillinger** og **Skjemaer** har nå egne navigasjonspunkter på øverste nivå -- **Mobil** og **Skjemaer** (under **Personer**) -- i stedet for å ligge inne i Innstillinger. Se [Innstillinger for mobilappen](./mobile-app.md) og [Opprette skjemaer](/docs/b1-admin/forms/creating-forms) for detaljer.
 :::
 
-## Hovedsiden for Innstillinger
+## Hovedsiden for Innstillinger {#the-main-settings-page}
 
-Når du åpner siden Innstillinger, viser panelet til venstre **kirkens navn**, **underdomene** og adresse, sammen med en lenke **Import/eksport** som åpner verktøyet for å overføre data mellom systemer.
+Når du første gang åpner siden Innstillinger, viser panelet til venstre menighetens **navn**, **subdomene** og adresse, sammen med en lenke **Import/eksport** som åpner verktøyet for import og eksport for å overføre data mellom systemer.
 
-Under en liste **Konfigurasjon** lenker du til hver innstillingsseksjon: **Kirkeinformasjon**, **Generelt**, **Region**, **Gaver**, **Tekstmeldinger**, **Fillagring**, **Domener**, **Klassetrinnsopprykk**, **Innsjekking**, **Menighetssteder**, **Egendefinerte felt** og **Utvikler**. Seksjoner som ennå må settes opp (for eksempel Gaver, Tekstmeldinger eller Domener) er merket med en liten prikk. Alle seksjonene ligger på én side -- klikk på et navn i listen for å hoppe til det, eller bare scroll ned. Hver seksjon viser gjeldende innstillinger; klikk på **Rediger** i en seksjon for å endre dem.
+Under dette viser en liste **Konfigurasjon** lenker til hver innstillingsseksjon: **Kirkeinformasjon**, **Generelt**, **Region**, **Giving**, **Tekstmeldinger**, **Fillagring**, **Domener**, **Klassetrinnsopprykk**, **Innsjekking**, **Frivillig påmelding**, **Personvern for giving**, **Menighetsenheter**, **Egendefinerte felt** og **Utvikler**. Hvert punkt viser et kort sammendrag av gjeldende innstilling, og seksjoner som fortsatt må settes opp (for eksempel Giving, Tekstmeldinger eller Domener) er merket med en liten prikk. **Giving** vises bare for personer som kan redigere innstillinger for giving. På telefon er listen skjult; scroll siden for å komme til hver seksjon. Alle seksjonene ligger på én side -- klikk på et navn i listen for å scrolle til det, eller bare scroll ned. Hver seksjon viser de gjeldende innstillingene; klikk på **Rediger** i en seksjon for å endre dem.
 
-**E-postmaler**, **Revisjonslogg** og **Batcher** er egne sider -- åpne dem fra [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) under **Innstillinger**.
+Seksjonen **Utvikler** har tre faner: **API-nøkler**, **Webhooks** og **Tilkoblede apper**. Se [API-nøkler](../../developer/api/api-keys.md), [Webhooks](../../developer/api/webhooks.md) og [Tilkoblede apper](../../developer/api/connected-apps.md).
 
-Start med seksjonen **Kirkeinformasjon** for å redigere kirkens navn, adresse og kontaktinformasjon -- se [Kirkeinnstillinger](./church-settings.md). For å administrere brukerroller åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) og velger **Innstillinger > Roller** -- se [Roller og tillatelser](./roles-permissions.md).
+**E-postmaler**, **Revisjonslogg** og **Batcher** er egne sider -- åpne dem fra [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) under **Innstillinger**.
+
+Start med delen **Kirkeinformasjon** for å redigere menighetens navn, adresse og kontaktinformasjon -- se [Kirkeinnstillinger](./church-settings.md). For å administrere brukerroller åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) og velger **Innstillinger > Roller** -- se [Roller og tillatelser](./roles-permissions.md).
 
 :::tip
-Begynn med å konfigurere kirkens navn og profilering under **Kirkeinformasjon**, og sett deretter opp [roller](./roles-permissions.md) for å invitere teamet ditt med riktig tilgangsnivå.
+Begynn med å konfigurere menighetens navn og merkevare under **Kirkeinformasjon**, og sett deretter opp [Roller](./roles-permissions.md) for å invitere teammedlemmene dine med riktig tilgangsnivå.
 :::
 
 :::info
-Du finner informasjon om hvordan dataene dine beskyttes i [Datasikkerhet](./data-security.md).
+For informasjon om hvordan dataene dine er beskyttet, se [Datasikkerhet](./data-security.md).
 :::
 
-## Neste steg
+## Neste steg {#next-steps}
 
-- [Kirkeinnstillinger](./church-settings.md) -- Konfigurer kirkeinformasjon og profilering
-- [Menighetssteder](./campuses.md) -- Legg til steder for kirker med flere lokasjoner
+- [Kirkeinnstillinger](./church-settings.md) -- Konfigurer informasjon om menigheten og merkevare
+- [Menighetsenheter](./campuses.md) -- Legg til lokasjoner for menigheter med flere steder
 - [Roller og tillatelser](./roles-permissions.md) -- Sett opp brukerroller og tilgangskontroll
-- [Innstillinger for mobilappen](./mobile-app.md) -- Tilpass navigasjonsfanene som vises i B1.church PWA
-- [Datasikkerhet](./data-security.md) -- Les om hvordan dataene dine beskyttes
+- [Innstillinger for mobilappen](./mobile-app.md) -- Tilpass navigasjonsfanene og fargene på temaet for B1.church-PWA-en
+- [Push-varsler](./mobile-app.md#push-notifications) -- Send eller planlegg push-varsler til brukerne av appen din
+- [Datasikkerhet](./data-security.md) -- Lær hvordan dataene dine er beskyttet

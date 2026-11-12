@@ -15,6 +15,7 @@ Every message a church member sees outside the page they're looking at — a bad
 
 ```
 scheduled anything ──▶ ReminderEngine (definitions → occurrences → scan) ─┐
+scheduled staff push ─▶ scheduledNotifications (1-minute timer) ───────────┤
 chat / requests / workflow / bulk sends ──────────────────────────────────┼─▶ createNotifications()
                                                                           │    in_app gate → socket → push → email
      (reminder channels include sms) ──▶ ReminderEngine.sendSms() ──▶ sms gate → sendPersonText() via church provider
@@ -23,7 +24,7 @@ account/legal mail ──▶ TransactionalEmailHelper.sendTransactional()  [allo
 ```
 
 1. **Anything that tells a person something** goes through `NotificationHelper.createNotifications()` in the messaging module. It persists a `notifications` row and escalates socket → push → email, evaluating `PreferenceGateHelper` per channel — including `in_app` at level 0.
-2. **Anything scheduled** is a `reminderDefinition` (entity-level or scope-level) expanded into `reminderOccurrences` and dispatched by `ReminderEngine.scan()` on a recurring timer. One expander, one dispatcher, one send ledger (`reminderSentLog`).
+2. **Anything scheduled** is a `reminderDefinition` (entity-level or scope-level) expanded into `reminderOccurrences` and dispatched by `ReminderEngine.scan()` on a recurring timer. One expander, one dispatcher, one send ledger (`reminderSentLog`). The one exception is a staff push scheduled from B1Admin's **Mobile > Push Notifications** page or a group's **Notify** dialog: it is a `scheduledNotifications` row (audience `church` or `group`), sent by `ScheduledNotificationHelper.dispatchDue()` on the 1-minute timer. A row more than 30 minutes past its `sendAt` on its first attempt is marked failed with `missed send window` instead of sent late, and a failing send is retried up to 3 times. Recipients are resolved at send time by `PushAudienceHelper`, the same helper the immediate group send uses, and delivered through `createNotifications()` as `churchPushNotification` (preference category `announcements`) or `groupPushNotification`.
 3. **Direct email** exists only behind `TransactionalEmailHelper.sendTransactional()`. An ESLint rule enforces this at compile time — see below.
 
 :::tip The email door is lint-enforced, not just convention
@@ -165,6 +166,7 @@ Both the reminder engine and the notification digest ride existing scheduled tim
 | Timer | Schedule | Runs |
 |-------|----------|------|
 | 30-minute timer | every 30 minutes | Escalate unread notifications; send `individual`-frequency digest emails; dispatch due reminder occurrences (`ReminderEngine.scan`); approval digests; due automation executions |
+| 1-minute timer (`timerWebhooks`) | every minute | Send due scheduled push notifications (`ScheduledNotificationHelper.dispatchDue`, job `scheduledNotifications`) |
 | Nightly timer | 05:00 UTC | Group attendance reminders; advance recurring streaming services; refresh auto-refresh lists; expand reminder occurrences for the next horizon (`ReminderEngine.expandAll`); send `daily`-frequency digest emails |
 
 Locally, the same logic can be triggered on demand with `npm run timer:30min` and `npm run timer:midnight` from the `Api` project.

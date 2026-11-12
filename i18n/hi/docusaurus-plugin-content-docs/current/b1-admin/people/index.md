@@ -1,42 +1,44 @@
 ---
-title: "लोग"
-description: "B1 Admin के People सेक्शन में चर्च के सदस्य खोजें, जोड़ें और संपादित करें, जिसमें परिवार ट्रैकिंग, बल्क अपडेट और डायरेक्टरी प्रिंट व निर्यात शामिल हैं।"
+title: "People"
+description: "B1 Admin के People सेक्शन में लोगों को खोजें, जोड़ें, और संपादित करें, जिसमें household ट्रैकिंग, थोक अपडेट, और directory छापना व निर्यात करना शामिल है।"
 ---
 
-# लोग
+# People
 
 <div class="article-intro">
 
-**लोग** अनुभाग B1 Admin में आपकी चर्च प्रबंधन का दिल है। यह वह जगह है जहां आप अपनी चर्च निर्देशिका बनाए रखते हैं -- सदस्यों को खोजना, नए लोग जोड़ना, profiles को देखना और संपादित करना, और परिवारों को ट्रैक करना। चाहे आपकी congregation छोटी हो या बड़ी, अपने लोगों के रिकॉर्ड को organized रखना वह नींव है जो B1 में हर दूसरी विशेषता को power करती है।
+**People** सेक्शन B1 Admin में आपके चर्च प्रबंधन का केंद्र है। यहीं आप अपनी चर्च directory बनाए रखते हैं -- सदस्यों को खोजना, नए लोग जोड़ना, profiles देखना और संपादित करना, और households को ट्रैक करना। चाहे आपकी मंडली छोटी हो या बड़ी, अपने लोगों के रिकॉर्ड व्यवस्थित रखना उस नींव का काम करता है जिस पर B1 की हर दूसरी सुविधा चलती है।
 
 </div>
 
-## आप क्या कर सकते हैं
+## आप क्या कर सकते हैं {#what-you-can-do}
 
-यहाँ लोग अनुभाग में उपलब्ध मुख्य विशेषताओं की एक overview है:
+People सेक्शन में उपलब्ध मुख्य सुविधाओं का एक अवलोकन:
 
-1. **अपनी निर्देशिका खोजें** -- किसी को भी नाम से खोजने के लिए quick search bar का उपयोग करें, या advanced filters और AI-powered natural language search का लाभ उठाएं उस exact व्यक्ति को ढूंढने के लिए जिसकी आपको आवश्यकता है। विस्तार के लिए [लोगों को खोजना](./searching-people.md) और [AI Search](./ai-search.md) देखें।
+1. **अपनी directory खोजें** -- किसी को भी नाम से खोजने के लिए त्वरित सर्च बार उपयोग करें, या ठीक वही व्यक्ति खोजने के लिए उन्नत फ़िल्टर और AI-संचालित प्राकृतिक भाषा खोज का लाभ लें। विवरण के लिए [Searching People](./searching-people.md) और [AI Search](./ai-search.md) देखें।
 
-2. **search queries को Lists के रूप में save करें** -- कोई भी search या filter को एक named list के रूप में save करें ताकि आप इसे एक क्लिक के साथ reload कर सकें। [Saved Lists](./lists.md) देखें।
+2. **खोज क्वेरी को Lists के रूप में सहेजें** -- किसी भी खोज या फ़िल्टर को नाम वाली list के रूप में सहेजें ताकि आप उसे एक क्लिक में फिर से लोड कर सकें। देखें [Saved Lists](./lists.md)।
 
-3. **Demographics देखें** -- अपनी congregation की एक visual breakdown देखें उम्र, लिंग, marital status, membership status, और campus द्वारा -- और किसी भी chart segment को click करें उन लोगों में drill करने के लिए। [Demographics](./demographics.md) देखें।
+3. **Demographics देखें** -- आयु, लिंग, वैवाहिक स्थिति, सदस्यता स्थिति, और campus के अनुसार अपनी मंडली का दृश्य विभाजन देखें — और किसी भी चार्ट हिस्से पर क्लिक करके उन लोगों में गहराई से जाएँ। देखें [Demographics](./demographics.md)।
 
-4. **नए लोग जोड़ें** -- अपनी निर्देशिका में individuals को जल्दी जोड़ें और उनके profile details, contact information, और household connections को भरें। step-by-step instructions के लिए [लोग जोड़ना](./adding-people.md) देखें।
+4. **नए लोग जोड़ें** -- अपनी directory में व्यक्तियों को तेज़ी से जोड़ें और उनका profile विवरण, संपर्क जानकारी, और household संबंध भरें। चरण-दर-चरण निर्देशों के लिए [Adding People](./adding-people.md) देखें।
 
-5. **लोगों को bulk edit करें** -- एक साथ कई लोगों को update करें उनकी membership status, marital status, gender, opt-out preferences, या group memberships को बदलकर। यह तब समय बचाता है जब कई individuals को same change करना हो। [Bulk Editing](./bulk-editing.md) देखें।
+5. **लोगों को थोक में संपादित करें** -- कई लोगों को एक साथ अपडेट करें, उनकी membership status, वैवाहिक स्थिति, लिंग, directory opt-out, campus, या group सदस्यता बदलकर, या उन्हें किसी workflow में जोड़कर। कई व्यक्तियों पर एक ही बदलाव करते समय यह समय बचाता है। देखें [Bulk Editing](./bulk-editing.md)।
 
-6. **अपनी निर्देशिका print करें** -- एक formatted, printable member directory generate करें household द्वारा grouped, photos और contact information के साथ complete। [निर्देशिका print करें](./print-directory.md) देखें।
+6. **अपनी directory छापें** -- household के अनुसार समूहित, फ़ोटो और संपर्क जानकारी सहित एक व्यवस्थित, छपने योग्य member directory बनाएँ। देखें [Print Directory](./print-directory.md)।
 
-7. **डेटा import और export करें** -- एक CSV file से member data लाएं या Breeze जैसी दूसरी चर्च प्रबंधन system से migrate करें। आप अपनी निर्देशिका को भी किसी भी समय CSV में export कर सकते हैं। [डेटा आयात करना](./importing-data.md) और [डेटा निर्यात करना](./exporting-data.md) देखें।
+7. **डेटा इंपोर्ट और निर्यात करें** -- CSV फ़ाइल से सदस्य डेटा लाएँ, या Breeze जैसे किसी दूसरे चर्च प्रबंधन सिस्टम से माइग्रेट करें। आप अपनी directory को किसी भी समय CSV में भी निर्यात कर सकते हैं। देखें [Importing Data](./importing-data.md) और [Exporting Data](./exporting-data.md)।
 
-8. **Profiles को manage करें** -- प्रत्येक व्यक्ति के लिए detailed profiles को देखें और संपादित करें, जिसमें contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), और [custom forms](../forms/creating-forms.md) शामिल हैं। व्यक्ति का नाम, contact विवरण, और household profile के बाईं ओर हैं, और उनके बगल में उपस्थिति, दान, समूह, notes, और forms के सारांश हैं। एक address या home या work phone number पर hover करें ताकि एक क्लिक में उसे copy किया जा सके।
+8. **Profiles प्रबंधित करें** -- हर व्यक्ति का विस्तृत profile देखें और संपादित करें, जिसमें संपर्क जानकारी, household सदस्य, [group सदस्यताएँ](../groups/group-members.md), [attendance इतिहास](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), और [custom forms](../forms/creating-forms.md) शामिल हैं। व्यक्ति का नाम, संपर्क विवरण, और household profile के बाईं ओर होते हैं, और उनके बगल में attendance, giving, groups, notes, और forms के सारांश होते हैं। किसी पते या घर/कार्यालय के फ़ोन नंबर पर होवर करें ताकि एक क्लिक में उसे कॉपी कर सकें।
 
-9. **Roles और permissions assign करें** -- नियंत्रित करें कि आपकी टीम में कौन B1 Admin के विभिन्न हिस्सों तक पहुंच सकता है roles assign करके। [Assigning Roles](./roles-permissions.md) देखें।
+9. **Notes पर अपडेट रहें** -- लोगों, groups, events, और workflow cards पर लिखे गए नवीनतम notes एक ही सूची में पढ़ें। देखें [Notes](./notes.md)।
 
-## शुरुआत करें
+10. **भूमिकाएँ और अनुमतियाँ सौंपें** -- भूमिकाएँ सौंपकर नियंत्रित करें कि आपकी टीम में कौन B1 Admin के किन हिस्सों तक पहुँच सकता है। देखें [Assigning Roles](./roles-permissions.md)।
 
-लोग अनुभाग तक पहुंचने के लिए, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के शीर्ष-बाएं में खोज पट्टी), **People** को विस्तृत करें, और **People** पर क्लिक करें। आप अपनी चर्च निर्देशिका को households की सूची के रूप में देखेंगे, शीर्ष पर एक search bar के साथ। व्यक्तिगत लोगों की **Table** और **Households** सूची के बीच स्विच करने के लिए **View as** toggle का उपयोग करें।
+## शुरू करना {#getting-started}
+
+People सेक्शन तक पहुँचने के लिए, [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपर-बाईं ओर का सर्च बार), **People** खोलें, और **People** पर क्लिक करें। आपको अपनी चर्च directory household के अनुसार सूचीबद्ध दिखेगी, ऊपर एक सर्च बार के साथ। व्यक्तिगत लोगों की **Households** सूची और **Table** के बीच बदलने के लिए **View as** टॉगल का उपयोग करें।
 
 :::tip
-यदि आप B1 को पहली बार सेट अप कर रहे हैं, तो [अपने मौजूदा member data को आयात करना](./importing-data.md) से शुरू करें। फिर आवश्यकतानुसार profiles की समीक्षा करें और साफ करें।
+अगर आप पहली बार B1 सेट कर रहे हैं, तो [अपना मौजूदा सदस्य डेटा इंपोर्ट करके](./importing-data.md) शुरू करें। फिर ज़रूरत के अनुसार profiles की समीक्षा करें और उन्हें साफ़ करें।
 :::

@@ -1,83 +1,91 @@
 ---
-title: "Stanze, Risorse e Pianificazione"
-description: "Configura sale, attrezzature, blocchi ed eventi modello in B1 Admin: i gruppi chiedono prenotazioni e tu le approvi per evitare sovrapposizioni."
+title: "Sale, risorse e programmazione"
+description: "Configura in B1 Admin sale, attrezzature, blocchi e modelli di evento così i gruppi possono richiedere prenotazioni e tu puoi approvarle per evitare doppie prenotazioni."
 ---
 
-# Stanze, Risorse e Pianificazione
+# Sale, risorse e programmazione
 
 <div class="article-intro">
 
-Le Stanze e le Risorse ti permettono di tracciare gli spazi e le attrezzature prenotabili della tua chiesa. Quando un gruppo o un team vuole usare una stanza o prendere in prestito una risorsa per un evento, può richiederla tramite B1 -- e tu puoi approvare o rifiutare quelle richieste per prevenire doppie prenotazioni.
+Sale e risorse ti permettono di tenere traccia degli spazi e delle attrezzature prenotabili della tua chiesa. Quando un gruppo o un team vuole usare una sala o prendere in prestito una risorsa per un evento, può richiederla tramite B1 -- e tu puoi approvare o rifiutare queste richieste per evitare doppie prenotazioni.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Hai bisogno dell'accesso amministrativo alla sezione Calendari in B1 Admin
-- Configura i [gruppi](../groups/creating-groups.md) i cui membri presenteranno richieste di prenotazione
+- Ti serve il permesso **Modifica contenuti**
+- Configura i [gruppi](../groups/creating-groups.md) i cui membri invieranno richieste di prenotazione
 
 </div>
 
-## Apertura di Stanze e Risorse
+## Aprire Sale e risorse {#opening-rooms--resources}
 
-In B1 Admin, apri il [Menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Calendari**, e fai clic su **Stanze e Risorse**. La pagina ha quattro schede: **Stanze**, **Risorse**, **Blocchi**, e **Modelli**. Il pulsante di aggiunta in alto nella pagina cambia in base alla scheda selezionata, e una casella **Trova** ti permette di filtrare l'elenco corrente.
+In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Calendari** e fai clic su **Sale e risorse**. La pagina ha quattro schede: **Sale**, **Risorse**, **Blocchi** e **Modelli**. Il pulsante di aggiunta in cima alla pagina cambia in base alla scheda selezionata, e un campo **Trova** ti permette di filtrare l'elenco corrente.
 
-## Stanze
+## Sale {#rooms}
 
-Le stanze sono spazi fisici che possono essere prenotati insieme agli eventi del calendario -- un santuario, una sala di comunione, un'aula, ecc.
+Le sale sono spazi fisici che possono essere riservati insieme agli eventi del calendario -- un santuario, una sala di ritrovo, un'aula, ecc.
 
-### Aggiunta di una Stanza
+### Aggiungere una sala {#adding-a-room}
 
-1. Sulla scheda **Stanze**, fai clic su **Aggiungi Stanza** in alto nella pagina.
-2. Inserisci un **nome** per la stanza.
-3. Facoltativamente imposta una **capacità** (numero massimo di persone).
-4. Imposta un **Gruppo di Approvazione** -- quando un gruppo richiede questa stanza, i leader del gruppo scelto vengono notificati e devono approvare la prenotazione. Lascia vuoto se non è necessaria alcuna approvazione.
+1. Nella scheda **Sale**, fai clic su **Aggiungi sala** in cima alla pagina.
+2. Inserisci un **Nome sala**.
+3. Facoltativamente imposta una **Capienza** (numero massimo di persone) e una **Descrizione**. Entrambe compaiono accanto alla sala quando le persone scelgono le sale per un evento.
+4. Imposta un **Gruppo di approvazione** se le prenotazioni richiedono un via libera. Le prenotazioni fatte dai membri di quel gruppo vengono approvate automaticamente; quelle di chiunque altro restano **In attesa** finché non vengono approvate nella pagina [Approvazioni](./approvals.md), e i membri del gruppo ricevono un'email sulle nuove richieste. Lascia su **Nessuna approvazione necessaria** per approvare automaticamente ogni prenotazione.
 5. Fai clic su **Salva**.
 
-### Modifica o Eliminazione di una Stanza
+L'elenco delle sale mostra per ciascuna il **Nome sala**, la **Capienza** e il **Gruppo di approvazione**.
 
-Fai clic su **Modifica** accanto a qualsiasi stanza, apporta le tue modifiche, e fai clic su **Salva**. Usa **Elimina** per rimuovere una stanza permanentemente.
+### Modificare o eliminare una sala {#editing-or-deleting-a-room}
 
-## Risorse
+Passa con il mouse su una sala e fai clic su **Modifica**, apporta le modifiche e fai clic su **Salva**. Usa **Elimina** per rimuovere definitivamente una sala.
 
-Le risorse sono articoli che possono essere prenotati insieme a un evento -- attrezzature AV, proiettori, sedie, un furgone, ecc.
+## Risorse {#resources}
 
-### Aggiunta di una Risorsa
+Le risorse sono oggetti che possono essere prenotati insieme a un evento -- attrezzatura audio/video, proiettori, sedie, un furgone, ecc.
 
-1. Fai clic sulla scheda **Risorse**, quindi su **Aggiungi Risorsa**.
-2. Inserisci un **nome** e facoltativamente una **descrizione**.
-3. Imposta un **Gruppo di Approvazione** se qualcuno ha bisogno di approvare i prestiti di risorse.
-4. Fai clic su **Salva**.
+### Aggiungere una risorsa {#adding-a-resource}
 
-## Blocchi
-
-I blocchi impediscono che le stanze o le risorse vengano prenotate durante determinati momenti -- per ristrutturazioni, periodi riservati, o manutenzione.
-
-### Aggiunta di un Blocco
-
-1. Fai clic sulla scheda **Blocchi**, quindi su **Aggiungi Blocco**.
-2. Scegli se bloccare una **Stanza**, una **Risorsa**, o tutte le stanze e le risorse.
-3. Imposta la **data/ora di inizio** e **data/ora di fine** per il blocco.
-4. Facoltativamente aggiungi una nota di **motivo**.
+1. Fai clic sulla scheda **Risorse**, poi su **Aggiungi risorsa**.
+2. Inserisci un **Nome risorsa** e, facoltativamente, una **Descrizione**.
+3. Imposta la **Quantità** che possiedi (ad esempio 3 proiettori). Ogni evento ne prenota una, e B1 ti avvisa quando più eventi contemporanei la prenotano rispetto a quante ne hai.
+4. Imposta un **Gruppo di approvazione** se qualcuno deve approvare i prestiti delle risorse. Funziona come per le sale.
 5. Fai clic su **Salva**.
 
-## Modelli di Eventi
+Modifica o elimina una risorsa allo stesso modo di una sala.
 
-I modelli ti permettono di salvare una configurazione di evento riutilizzabile -- titolo, descrizione, e gruppi associati -- così gli eventi ricorrenti possono essere creati coerentemente.
+## Blocchi {#blockouts}
 
-### Aggiunta di un Modello
+I blocchi impediscono che sale o risorse vengano prenotate in determinati momenti -- per ristrutturazioni, periodi riservati o manutenzione.
 
-1. Fai clic sulla scheda **Modelli**, quindi su **Aggiungi Modello**.
-2. Inserisci un **nome** per il modello.
-3. Facoltativamente collega un **gruppo** così l'evento viene automaticamente connesso a quel gruppo quando creato dal modello.
-4. Fai clic su **Salva**.
+### Aggiungere un blocco {#adding-a-blockout}
 
-Quando si crea un nuovo evento, il personale può scegliere un modello esistente per pre-compilare i dettagli dell'evento.
+1. Fai clic sulla scheda **Blocchi**, poi su **Aggiungi blocco**.
+2. In **Si applica a**, scegli una sala, una risorsa oppure **Tutte le sale e risorse**.
+3. Imposta la data/ora di **Inizio** e **Fine** del blocco.
+4. Facoltativamente aggiungi un **Motivo**. Compare nel calendario [Disponibilità](./availability.md) come *Bloccato: motivo*.
+5. Fai clic su **Salva**.
 
-## Articoli Correlati
+Gli eventi che prenotano una sala o una risorsa bloccata mostrano un avviso di conflitto nell'editor dell'evento.
 
-- [Calendario di Disponibilità](./availability.md) — visualizza tutte le prenotazioni a colpo d'occhio e prenota stanze o risorse direttamente
-- [Approvazioni Calendario](./approvals.md) — approva o rifiuta le richieste di prenotazione di stanze e risorse
-- [Creazione di Calendari](./creating-calendars.md) — configura i calendari degli eventi
-- [Creazione di Gruppi](../groups/creating-groups.md) — configura i gruppi che possono prenotare stanze e risorse
+## Modelli di evento {#event-templates}
+
+I modelli ti permettono di salvare una configurazione di evento riutilizzabile -- titolo, descrizione, durata, sale e risorse -- così gli eventi che crei spesso vengono impostati sempre allo stesso modo.
+
+### Aggiungere un modello {#adding-a-template}
+
+1. Fai clic sulla scheda **Modelli**, poi su **Aggiungi modello**.
+2. Inserisci un **Nome modello** (mostrato quando si sceglie un modello).
+3. Compila il **Titolo evento**, la **Descrizione evento** e la **Durata (minuti)** da usare per i nuovi eventi.
+4. Facoltativamente scegli le **Sale** e le **Risorse** da prenotare.
+5. Fai clic su **Salva**.
+
+Quando crei un nuovo evento, scegli il modello nel campo **Modello** dell'editor dell'evento per compilare titolo, descrizione, sale e risorse, e per impostare l'orario di fine in base alla durata del modello (imposta prima l'**Inizio**). Devi ancora scegliere il **Gruppo** dell'evento. Il campo **Modello** compare solo quando esiste almeno un modello.
+
+## Articoli correlati {#related-articles}
+
+- [Calendario della disponibilità](./availability.md) — visualizza tutte le prenotazioni a colpo d'occhio e prenota sale o risorse direttamente
+- [Approvazioni del calendario](./approvals.md) — approva o rifiuta le richieste di prenotazione di sale e risorse
+- [Creare calendari](./creating-calendars.md) — configura i calendari degli eventi
+- [Creare gruppi](../groups/creating-groups.md) — configura i gruppi che possono prenotare sale e risorse

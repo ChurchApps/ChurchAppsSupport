@@ -1,154 +1,157 @@
 ---
 title: "Lehreransicht für Lektionen"
-description: "Lektion in der Vollbild-Lehreransicht aus einem Plan auf B1.church öffnen, zwischen Abschnitten springen, Medien abspielen und Material herunterladen."
+description: "Öffne eine Lektion in der Vollbild-Lehreransicht aus einem Plan auf B1.church, springe dann zwischen Abschnitten, spiele Medien ab und lade Unterrichtsmaterialien herunter."
 ---
 
 # Lehreransicht für Lektionen
 
 <div class="article-intro">
-Die Lehreransicht bietet eine erweiterte Vollbildoberfläche zur Anzeige von Lektionsinhalten mit strukturierten Abschnitten. So fällt es Lehrkräften und Leitenden leichter, während des Unterrichts durch die Lektionsmaterialien zu navigieren.
+Die Lehreransicht bietet eine erweiterte Vollbildoberfläche zum Anzeigen von Lektionsinhalten mit strukturierten Abschnitten. So fällt es Lehrern und Leitern leichter, sich während des Unterrichts durch das Lehrmaterial zu bewegen.
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- In Ihrer Kirche müssen Lektionen in einem Plan eingeplant sein. Einzelheiten finden Sie im B1-Admin-Leitfaden zu [Lektionen einplanen](../../b1-admin/serving/scheduling-lessons.md).
-- Sie müssen dem Plan zugewiesen sein oder Zugriff haben, um ihn auf Ihrer B1.church-Seite anzuzeigen.
+- Deine Gemeinde muss Lektionen in einem Plan eingeplant haben. Einzelheiten findest du in der B1-Admin-Anleitung zu [Lektionen einplanen](../../b1-admin/serving/scheduling-lessons.md).
+- Du musst dem Plan zugewiesen sein oder Zugriff haben, um ihn auf deiner B1.church-Website anzusehen.
 </div>
 
-## Lehreransicht öffnen
+## Die Lehreransicht öffnen {#opening-teacher-view}
 
-So öffnen Sie die erweiterte Lehreransicht für eine Lektion:
+So gelangst du zur erweiterten Lehreransicht einer Lektion:
 
-1. Öffnen Sie **Pläne** im Mitgliederportal von B1.church.
-2. Öffnen Sie den Plan, der die Lektion enthält, die Sie unterrichten möchten.
-3. Klicken Sie oben auf der Planseite auf die Schaltfläche **Unterrichten**.
+1. Öffne **Pläne** im B1.church-Mitgliederportal
+2. Öffne den Plan, der die Lektion enthält, die du unterrichten möchtest
+3. Klicke oben auf der Planseite auf die Schaltfläche **Lehren**
 
-Die Lektion wird in einer Vollbildoberfläche geöffnet, die für den Unterricht optimiert ist.
+Die Lektion öffnet sich in einer Vollbildoberfläche, die für den Unterricht optimiert ist.
+
+Die Schaltfläche **Lehren** erscheint, wenn die Gottesdienstreihenfolge des Plans direkt aus der geplanten Lektion stammt. Hat deine Gemeinde die Gottesdienstreihenfolge des Plans angepasst, wird die Schaltfläche nicht angezeigt, die druckbaren Dateien der Lektion erscheinen aber weiterhin im Bereich **Downloads** des Plans.
 
 :::tip
-Die Lehreransicht ist besonders nützlich, wenn Sie Lektionsinhalte auf einem Bildschirm oder Fernseher für die Klasse anzeigen oder wenn Sie von einem Tablet aus unterrichten.
+Die Lehreransicht ist besonders nützlich, wenn du Lektionsinhalte auf einem Bildschirm oder Fernseher für die Klasse projizierst oder vom Tablet aus unterrichtest.
 :::
 
-## Funktionen der Lehreransicht
+## Funktionen der Lehreransicht {#teacher-view-features}
 
-### Abschnittsnavigation
+### Abschnittsnavigation {#section-navigation}
 
 Die Lehreransicht gliedert die Lektionsinhalte in Abschnitte:
 
-- Jeder größere Abschnitt der Lektion erscheint als eigener Block mit Titel.
-- Klicken Sie oben auf **Abschnitte**, um die Liste der Abschnitte zu öffnen, und wählen Sie einen aus, um direkt dorthin zu springen.
-- Die Überschrift zeigt an, in welchem Abschnitt Sie sich befinden, zum Beispiel „Abschnitt 2 von 5“.
-- Die Abschnittsliste macht es leicht, zwischen verschiedenen Teilen der Lektion zu springen.
-- Wenn die Lektion mehr als einen Abschnitt hat, bleiben die Schaltflächen für Zurück und Weiter, die mit den Namen der benachbarten Abschnitte beschriftet sind, während des Scrollens am unteren Bildschirmrand fixiert.
+- Jeder größere Abschnitt der Lektion erscheint als eigener Block mit Überschrift
+- Klicke oben auf **Abschnitte**, um die Liste der Abschnitte zu öffnen, und wähle dann einen aus, um direkt dorthin zu springen
+- Die Überschrift zeigt an, in welchem Abschnitt du dich befindest, zum Beispiel "Abschnitt 2 von 5"
+- Die Abschnittsliste macht es einfach, zwischen verschiedenen Teilen der Lektion zu wechseln
+- Hat die Lektion mehr als einen Abschnitt, bleiben die Schaltflächen für zurück und weiter, die mit den Namen der benachbarten Abschnitte beschriftet sind, während du scrollst am unteren Bildschirmrand fixiert
 
-### Scrollbarer Inhalt
+### Scrollbarer Inhalt {#scrollable-content}
 
-Der Hauptinhaltsbereich zeigt die vollständigen Lektionsmaterialien:
+Der Hauptinhaltsbereich zeigt das vollständige Lektionsmaterial:
 
-- Scrollen Sie ganz natürlich durch die Lektion.
-- Während Sie scrollen, aktualisiert sich die Überschrift automatisch passend zu dem Abschnitt, den Sie gerade ansehen.
-- Alle formatierten Texte, Bilder und Anleitungen werden deutlich dargestellt.
+- Scrolle ganz natürlich durch die Lektion
+- Beim Scrollen aktualisiert sich die Überschrift automatisch auf den Abschnitt, den du gerade ansiehst
+- Alle formatierten Texte, Bilder und Anweisungen werden klar dargestellt
 
-### Medienwiedergabe
+### Medienwiedergabe {#media-playback}
 
 Wenn Lektionen Videos, Bilder oder andere Medien enthalten:
 
-- Klicken Sie auf ein beliebiges Medienelement, um es in einem Popup-Player zu öffnen.
-- Videos werden in einem eigenen Videoplayer mit den üblichen Steuerelementen abgespielt.
-- Bilder öffnen sich in einer Lightbox für die Anzeige im Vollbild.
-- Schließen Sie den Medienplayer, um zum Lektionsinhalt zurückzukehren.
+- Klicke auf ein beliebiges Medienelement, um es in einem Popup-Player zu öffnen
+- Videos werden in einem eigenen Videoplayer mit den üblichen Steuerelementen abgespielt
+- Bilder öffnen sich in einer Lightbox zur Anzeige im Vollbild
+- Schließe den Medienplayer, um zum Lektionsinhalt zurückzukehren
 
-### Herunterladbare Materialien
+### Herunterladbare Materialien {#downloadable-resources}
 
 Wenn die Lektion herunterladbare Dateien enthält (Arbeitsblätter, Malvorlagen usw.):
 
-- Nach dem letzten Abschnitt der Lektion erscheinen Download-Schaltflächen für jede Datei.
-- Klicken Sie, um Dateien direkt auf Ihr Gerät herunterzuladen.
-- Dateien können PDFs, Bilder oder andere Materialien sein, die vom Inhaltsersteller bereitgestellt werden.
+- Für jedes Material erscheinen Download-Schaltflächen nach dem letzten Abschnitt der Lektion
+- Klicke, um Dateien direkt auf dein Gerät herunterzuladen
+- Dateien können PDFs, Bilder oder andere Materialien sein, die vom Ersteller der Inhalte bereitgestellt wurden
 
-## Die Lehreransicht im Unterricht verwenden
+## Die Lehreransicht im Unterricht nutzen {#using-teacher-view-in-the-classroom}
 
-### Vor dem Unterricht
+### Vor dem Unterricht {#before-class}
 
-1. Öffnen Sie die Lektion vor Unterrichtsbeginn in der Lehreransicht.
-2. Sehen Sie sich alle Abschnitte an und machen Sie sich mit dem Inhalt vertraut.
-3. Laden Sie alle druckbaren Materialien herunter, die Sie benötigen.
-4. Testen Sie Videos und Medien, um sicherzustellen, dass sie korrekt abgespielt werden.
+1. Öffne die Lektion vor Unterrichtsbeginn in der Lehreransicht
+2. Sieh dir alle Abschnitte an und mach dich mit dem Inhalt vertraut
+3. Lade alle druckbaren Materialien herunter, die du brauchst
+4. Teste Videos und Medien, um sicherzustellen, dass sie richtig abgespielt werden
 
-### Während des Unterrichts
+### Während des Unterrichts {#during-class}
 
-1. Lassen Sie die Lehreransicht auf Ihrem Gerät geöffnet oder projizieren Sie sie auf einen Bildschirm.
-2. Verwenden Sie **Abschnitte**, um während des Fortschreitens in der Lektion zwischen den Abschnitten zu springen.
-3. Spielen Sie Videos ab oder zeigen Sie Bilder zum passenden Zeitpunkt.
-4. Scrollen Sie bei Bedarf durch die Anleitungen, ohne Ihre Position zu verlieren.
+1. Lass die Lehreransicht auf deinem Gerät geöffnet oder projiziere sie auf einen Bildschirm
+2. Nutze **Abschnitte**, um während des Fortschreitens durch die Lektion zwischen den Abschnitten zu springen
+3. Spiele Videos ab oder zeige Bilder zum passenden Zeitpunkt
+4. Scrolle bei Bedarf durch die Anweisungen, ohne deine Stelle zu verlieren
 
-### Auf einer projizierten Leinwand
+### Auf einem projizierten Bildschirm {#on-a-projected-screen}
 
-Wenn Sie für die Klasse projizieren:
+Beim Projizieren für die Klasse gilt:
 
-- Das Vollbildlayout lenkt nicht ab.
-- Große, gut lesbare Schrift macht den Inhalt auch von der anderen Seite des Raums aus sichtbar.
-- Klicken Sie auf Medienelemente, um Videos oder Bilder der gesamten Klasse zu zeigen.
-- Steuern Sie die Ansicht mit einer kabellosen Maus oder einem Trackpad.
+- Das Vollbildlayout lenkt nicht ab
+- Große, gut lesbare Schrift macht Inhalte von überall im Raum sichtbar
+- Klicke auf Medienelemente, um Videos oder Bilder der ganzen Klasse zu zeigen
+- Navigiere mit einer kabellosen Maus oder einem Trackpad
 
-## Lehreransicht schließen
+## Die Lehreransicht schließen {#closing-teacher-view}
 
-So verlassen Sie die Lehreransicht:
+So beendest du die Lehreransicht:
 
-- Klicken Sie auf die Schaltfläche **Schließen** (X) in der oberen Ecke.
-- Oder drücken Sie die Taste **Esc** auf Ihrer Tastatur.
-- Sie gelangen zurück zur Planansicht mit den Details.
+- Klicke auf die Schaltfläche **Schließen** (X) in der oberen Ecke
+- Oder drücke die Taste **Esc** auf deiner Tastatur
+- Du kehrst dann zur Ansicht der Plandetails zurück
 
-## Mobile Nutzung und Tablets
+## Nutzung auf Tablet und Mobilgerät {#mobile-and-tablet-use}
 
-Die Lehreransicht funktioniert auf Tablets und mobilen Geräten:
+Die Lehreransicht funktioniert auf Tablets und Mobilgeräten:
 
-- **Tablets** — Ideal für Lehrkräfte, die einen tragbaren Lektionsleitfaden möchten.
-- **Telefone** — Ebenfalls unterstützt, auch wenn der kleinere Bildschirm für den Unterricht weniger geeignet ist.
-- **Querformat** — Bietet auf mobilen Geräten die beste Ansicht.
+- **Tablets** -- Ideal für Lehrer, die einen mobilen Lektionsleitfaden möchten
+- **Telefone** -- Werden ebenfalls unterstützt, wobei der kleinere Bildschirm für den Unterricht weniger geeignet sein kann
+- **Querformat** -- Bietet das beste Anzeigeerlebnis auf Mobilgeräten
 
-## Unterschiede zur normalen Lektionsansicht
+## Unterschiede zur normalen Lektionsansicht {#differences-from-regular-lesson-view}
 
 | Funktion | Normale Ansicht | Lehreransicht |
 |---------|--------------|--------------|
 | **Layout** | Kompakt, eingebettet im Plan | Vollbild, eigene Ansicht |
-| **Navigation** | Nur scrollen | Abschnittsliste + Scrollen mit Überschrift für den aktuellen Abschnitt |
+| **Navigation** | Nur Scrollen | Abschnittsliste + Scrollen mit Überschrift des aktuellen Abschnitts |
 | **Medien** | Auf der Seite eingebettet | Popup-Player für konzentrierte Ansicht |
-| **Bildschirmfläche** | Zeigt andere Planpunkte | Maximiert für den Lektionsinhalt |
-| **Am besten geeignet für** | Durchsehen und Planen | Unterrichten und Präsentieren |
+| **Bildschirmfläche** | Zeigt andere Planpunkte | Maximiert für Lektionsinhalte |
+| **Ideal für** | Durchsehen und Planen | Unterrichten und Präsentieren |
 
-## Bewährte Vorgehensweisen
+## Bewährte Vorgehensweisen {#best-practices}
 
-- **Frühzeitig vorbereiten** — Sehen Sie sich Lektionen vor dem Unterricht in der Lehreransicht an, um sich mit dem Layout vertraut zu machen.
-- **Abschnitte als Lesezeichen merken** — Notieren Sie, in welchen Abschnitten die wichtigsten Aktivitäten oder Diskussionen stattfinden.
-- **Medien testen** — Stellen Sie sicher, dass Videos und Bilder vor Unterrichtsbeginn korrekt geladen werden.
-- **Materialien früh herunterladen** — Warten Sie nicht bis zum Unterricht, um druckbare Materialien herunterzuladen.
-- **Größeren Bildschirm verwenden** — Projizieren Sie den Inhalt oder nutzen Sie ein Tablet für das beste Unterrichtserlebnis.
+- **Frühzeitig vorbereiten** -- Sieh dir Lektionen vor dem Unterricht in der Lehreransicht an, um dich mit dem Layout vertraut zu machen
+- **Abschnitte merken** -- Notiere, welche Abschnitte wichtige Aktivitäten oder Diskussionen enthalten
+- **Medien testen** -- Stelle sicher, dass Videos und Bilder vor Unterrichtsbeginn richtig laden
+- **Materialien früh herunterladen** -- Warte nicht bis zum Unterricht, um druckbare Materialien herunterzuladen
+- **Einen größeren Bildschirm nutzen** -- Projiziere oder nutze ein Tablet für das beste Unterrichtserlebnis
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-### Lektion lässt sich nicht in der Lehreransicht öffnen
+### Lektion öffnet sich nicht in der Lehreransicht {#lesson-doesnt-open-in-teacher-view}
 
-- Stellen Sie sicher, dass die Lektion ordnungsgemäß im Plan eingeplant ist.
-- Prüfen Sie, ob Sie die Berechtigung haben, den Plan anzusehen.
-- Laden Sie die Seite neu und versuchen Sie es erneut.
+- Stelle sicher, dass die Lektion ordnungsgemäß im Plan eingeplant wurde
+- Wurde die Gottesdienstreihenfolge des Plans angepasst, ist die Schaltfläche **Lehren** ausgeblendet -- siehe [Die Lehreransicht öffnen](#opening-teacher-view)
+- Prüfe, ob du die Berechtigung hast, den Plan anzusehen
+- Lade die Seite neu und versuche es erneut
 
-### Videos lassen sich nicht abspielen
+### Videos werden nicht abgespielt {#videos-wont-play}
 
-- Prüfen Sie Ihre Internetverbindung.
-- Stellen Sie sicher, dass Ihr Gerät die Medienwiedergabe erlaubt.
-- Versuchen Sie, das Video in einem separaten Tab zu öffnen.
-- Einige Inhaltsanbieter können die Videowiedergabe einschränken.
+- Prüfe deine Internetverbindung
+- Stelle sicher, dass dein Gerät die Medienwiedergabe erlaubt
+- Versuche, das Video in einem separaten Tab zu öffnen
+- Einige Anbieter von Inhalten können die Videowiedergabe einschränken
 
-### Inhalt wird auf dem Handy abgeschnitten
+### Inhalt wird auf dem Mobilgerät abgeschnitten {#content-appears-cut-off-on-mobile}
 
-- Drehen Sie Ihr Gerät in den Querformat-Modus.
-- Verkleinern Sie die Ansicht bei Bedarf leicht.
-- Erwägen Sie die Nutzung eines Tablets oder eines größeren Geräts für eine bessere Sicht.
+- Drehe dein Gerät ins Querformat
+- Verkleinere die Ansicht bei Bedarf leicht
+- Erwäge ein Tablet oder ein größeres Gerät für bessere Sichtbarkeit
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Pläne ansehen](../plans/viewing-plans.md) — Auf Ihre zugewiesenen Pläne zugreifen
-- [Lektionen](./lessons.md) — Lektionsinhalte durchsuchen und ansehen
-- [Lektionen einplanen](../../b1-admin/serving/scheduling-lessons.md) — Administratorleitfaden zum Einplanen von Lektionen in Plänen
+- [Pläne anzeigen](../plans/viewing-plans.md) -- Greife auf deine zugewiesenen Pläne zu
+- [Lektionen](./lessons.md) -- Durchsuche und zeige Lektionsinhalte an
+- [Lektionen einplanen](../../b1-admin/serving/scheduling-lessons.md) -- Admin-Anleitung zum Einplanen von Lektionen in Plänen

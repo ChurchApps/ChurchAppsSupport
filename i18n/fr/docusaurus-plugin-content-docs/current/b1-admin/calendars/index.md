@@ -1,38 +1,42 @@
 ---
 title: "Calendriers"
-description: "Configurez les calendriers dans B1 Admin, gérez les événements qui y figurent et publiez-les sur votre site B1.church pour que votre communauté puisse voir les prochains événements de l'église."
+description: "Configurez des calendriers dans B1 Admin, gérez les événements qui y apparaissent et publiez-les sur votre site B1.church afin que votre communauté puisse voir les prochains événements de l'église."
 ---
 
 # Calendriers
 
 <div class="article-intro">
 
-La section Calendriers dans B1 Admin vous permet de créer des calendriers organisés pour votre église en rassemblant les événements de vos groupes. Les responsables de groupe gèrent les événements de leur propre groupe, et en tant qu'administrateur, vous pouvez créer des calendriers qui affichent ces événements sur votre site Web B1.church pour que votre congrégation les voit.
+La section Calendriers de B1 Admin vous permet de créer des calendriers organisés pour votre église en regroupant les événements de vos groupes. Les responsables de groupe gèrent les événements de leur propre groupe, et en tant qu'administrateur, vous pouvez créer des calendriers qui affichent ces événements sur votre site B1.church pour que votre communauté les voie.
 
 </div>
 
-## Afficher vos calendriers
+## Consulter vos calendriers {#viewing-your-calendars}
 
-1. Dans B1 Admin, ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers**, et cliquez sur **Calendriers**.
-2. La page Calendriers répertorie tous vos calendriers dans un tableau avec leur nom et leur statut. Utilisez la zone **Rechercher un calendrier** pour filtrer la liste.
-3. Chaque ligne comporte un lien **Gérer les événements** pour ouvrir le calendrier et un lien **Modifier** pour le renommer ou le supprimer.
+1. Dans B1 Admin, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Calendriers** et cliquez sur **Calendriers**.
+2. La page Calendriers liste tous vos calendriers dans un tableau avec leur nom et leur statut. Utilisez la zone **Rechercher un calendrier** pour filtrer la liste. Si des demandes de réservation ou d'événements sont en attente, un lien **approbations en attente** en haut ouvre [Approbations](./approvals.md).
+3. Passez la souris sur une ligne pour afficher son lien **Gérer les événements**, qui ouvre le calendrier, et son lien **Modifier**, qui vous permet de le renommer ou de le supprimer.
 
-## Ce que vous pouvez faire
+La section Calendriers, ainsi que chaque page qui la compose, nécessite l'autorisation **Modifier le contenu**. Le menu **Calendriers** regroupe **Calendriers**, **Disponibilité**, **Salles et ressources**, **Approbations** et **Inscriptions**.
 
-- **Ajouter un nouveau calendrier** – Cliquez sur **Ajouter un calendrier** en haut de la page pour créer un calendrier pour un ministère, un type d'événement ou un objectif spécifique. Voir [Créer des calendriers](./creating-calendars.md) pour des instructions étape par étape.
-- **Modifier un calendrier** – Cliquez sur **Gérer les événements** pour n'importe quel calendrier afin de l'ouvrir et gérer les groupes qui y sont inclus.
-- **Publier des calendriers** – Les calendriers peuvent être affichés sur votre site Web B1.church afin que les visiteurs puissent voir les événements à venir de votre église.
-- **Créer des calendriers organisés** – Regroupez les événements de plusieurs groupes en une seule vue de calendrier pour une vue d'ensemble complète de tout ce qui se passe dans votre église. Voir [Calendrier organisé](./curated-calendar.md) pour plus de détails.
-- **Gérer les salles et les ressources** – Suivi des espaces réservables et des équipements et gestion des demandes d'approbation. Voir [Salles et ressources](./rooms-resources.md) pour plus de détails.
-- **Afficher la disponibilité** – Voir toutes les réservations de salles et de ressources sur un seul calendrier et réserver des espaces pour les événements à venir. Voir [Calendrier de disponibilité](./availability.md) pour plus de détails.
+## Ce que vous pouvez faire {#what-you-can-do}
+
+- **Ajouter un nouveau calendrier** -- Cliquez sur **Ajouter un calendrier** en haut de la page pour créer un calendrier destiné à un ministère, un type d'événement ou un objectif précis. Voir [Création de calendriers](./creating-calendars.md) pour des instructions détaillées.
+- **Modifier un calendrier** -- Cliquez sur **Gérer les événements** sur n'importe quel calendrier pour l'ouvrir et gérer les groupes qui y sont inclus.
+- **Publier des calendriers** -- Les calendriers peuvent être affichés sur votre site B1.church afin que les visiteurs puissent voir les événements à venir de votre église.
+- **Créer des calendriers organisés** -- Regroupez les événements de plusieurs groupes dans une seule vue de calendrier pour une vue d'ensemble de tout ce qui se passe dans votre église. Voir [Calendrier organisé](./curated-calendar.md) pour plus de détails.
+- **Gérer les salles et les ressources** -- Suivez les espaces et l'équipement réservables et traitez les demandes d'approbation. Voir [Salles et ressources](./rooms-resources.md) pour plus de détails.
+- **Consulter les disponibilités** -- Affichez toutes les réservations de salles et de ressources sur un seul calendrier et réservez des espaces pour les prochains événements. Voir [Calendrier de disponibilité](./availability.md) pour plus de détails.
+- **Approuver les demandes** -- Approuvez ou refusez les demandes de salles, de ressources et d'événements. Voir [Approbations du calendrier](./approvals.md).
+- **Gérer les inscriptions** -- Activez l'inscription aux événements et consultez qui s'est inscrit. Voir [Activer l'inscription aux événements](./creating-calendars.md#enabling-event-registration) et [Inscriptions payantes](./paid-registrations.md).
 
 :::info
-Les calendriers fonctionnent étroitement avec les [Groupes](../groups/creating-groups.md). Lorsque les groupes ont des événements programmés, ces événements peuvent être intégrés à vos calendriers. Consultez la page [Créer des calendriers](./creating-calendars.md) pour apprendre à connecter les groupes aux calendriers.
+Les calendriers fonctionnent étroitement avec les [Groupes](../groups/creating-groups.md). Lorsque des groupes ont des événements planifiés, ces événements peuvent être intégrés à vos calendriers. Consultez la page [Création de calendriers](./creating-calendars.md) pour apprendre à relier des groupes à des calendriers.
 :::
 
-## Étapes suivantes
+## Étapes suivantes {#next-steps}
 
-- [Créer des calendriers](./creating-calendars.md) – Configurer un nouveau calendrier et connecter les groupes
-- [Calendrier organisé](./curated-calendar.md) – Regrouper les événements de plusieurs groupes en une seule vue
-- [Salles et ressources](./rooms-resources.md) – Gérer les espaces réservables et les équipements
-- [Calendrier de disponibilité](./availability.md) – Afficher et gérer les réservations de salles/ressources
+- [Création de calendriers](./creating-calendars.md) -- Créer un nouveau calendrier et relier des groupes
+- [Calendrier organisé](./curated-calendar.md) -- Regrouper les événements de plusieurs groupes dans une seule vue
+- [Salles et ressources](./rooms-resources.md) -- Gérer les espaces et l'équipement réservables
+- [Calendrier de disponibilité](./availability.md) -- Consulter et gérer les réservations de salles et de ressources

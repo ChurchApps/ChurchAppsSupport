@@ -8,36 +8,38 @@ description: "Oppdater navn, e-post, passord, tofaktorinnlogging, tema og tilkob
 
 <div class="article-intro">
 
-Profil-seksjonen lar deg administrere dine personlige kontoinnstillinger i ChurchApps. Profilen din deles på tvers av alle ChurchApps-verktøy, så endringer du gjør her gjelder overalt -- fra B1 Admin til B1 App.
+Seksjonen Profil lar deg administrere de personlige kontoinnstillingene dine i ChurchApps. Åpne den ved å klikke på profilbildet ditt øverst til høyre i B1 Admin, og velge **Rediger profil**. Profilen din deles på tvers av alle ChurchApps-verktøy, så endringene du gjør her, gjelder overalt, fra B1 Admin til B1-appen.
 
 </div>
 
-## Hva du kan gjøre
+## Hva du kan gjøre {#what-you-can-do}
 
-Fra profil-seksjonen kan du:
+Fra seksjonen Profil kan du:
 
-- **Oppdatere navn og e-post** -- Hold kontaktinformasjonen din oppdatert.
-- **Endre passord** -- Angi et nytt passord for kontoen din.
-- **Slå på tofaktorinnlogging** -- Krev en kode fra en autentiseringsapp når du logger inn. Se [Tofaktorinnlogging](./managing-profile.md#two-factor-sign-in).
-- **Bytt tema** -- Veksle mellom lys og mørk modus fra brukermenyen (klikk på profilbildet ditt øverst til høyre).
-- **Administrer tilkoblede enheter** -- Se og kontroller hvilke ChurchAppsPlayer-enheter som er koblet til kontoen din.
-- **Se koblede kontoer** -- Se og administrer eksterne tjenester som er koblet til ChurchApps-kontoen din.
-- **Godkjenn endringsforespørsler for profiler** -- Gå gjennom og bruk oppdateringer som medlemmer har sendt inn.
+- **Oppdatere navnet og e-posten din**: hold kontaktinformasjonen din oppdatert.
+- **Endre passordet ditt**: sett et nytt passord for kontoen din.
+- **Slå på tofaktorinnlogging**: krev en kode fra en autentiseringsapp når du logger inn. Se [Tofaktorinnlogging](./managing-profile.md#two-factor-sign-in).
+- **Bytte tema**: veksle mellom lys og mørk modus fra brukermenyen (klikk på profilbildet ditt øverst til høyre).
+- **Administrere tilkoblede enheter**: se, par, gi nytt navn til og fjern ChurchAppsPlayer- og FreePlay-skjermene som er koblet til kontoen din.
+- **Se koblede kontoer**: se og administrer eksterne tjenester som er koblet til ChurchApps-kontoen din.
+- **Godkjenne forespørsler om profilendringer**: gjennomgå og bruk oppdateringer som medlemmene har sendt inn.
+- **Gjennomgå forespørsler om sletting av konto**: godkjenn eller avslå medlemmenes forespørsler om å slette kontoene sine.
 
-## Profilundersider
+## Underseksjoner i profilen {#profile-sub-sections}
 
-Profil-området har følgende sider:
+Profilområdet har disse sidene:
 
-1. **[Administrere profilen din](./managing-profile.md)** -- Rediger personlig informasjon, endre passord, administrer koblede kontoer, slå på tofaktorinnlogging, juster temainnstillinger og håndter sletting av konto.
-2. **[Godkjenne profilendringer](./approving-profile-changes.md)** -- Gå gjennom og godkjenn profiloppdateringsforespørsler som medlemmer har sendt inn via B1 App.
-3. **[Administrere enheter](./devices.md)** -- Se, legg til og administrer ChurchAppsPlayer-enheter som er koblet til kontoen din.
+1. **[Administrere profilen din](./managing-profile.md)**: rediger dine personlige opplysninger, endre passordet ditt, administrer koblede kontoer, slå på tofaktorinnlogging, juster temainnstillinger og håndter sletting av konto.
+2. **[Godkjenne profilendringer](./approving-profile-changes.md)**: gjennomgå og godkjenn forespørsler om profiloppdatering som medlemmene har sendt inn gjennom B1-appen.
+3. **[Gjennomgå forespørsler om sletting av konto](./account-deletion.md)**: godkjenn eller avslå medlemmenes forespørsler om å slette kontoene sine.
+4. **[Administrere enheter](./devices.md)**: se, legg til, gi nytt navn til og fjern ChurchAppsPlayer- og FreePlay-skjermer som er paret med kontoen din.
 
 :::tip
-Hold e-postadressen din oppdatert. Den brukes til kontogjenoppretting og viktige varsler fra menigheten din.
+Hold e-postadressen din oppdatert. Den brukes til kontogjenoppretting og viktige varsler fra kirken din.
 :::
 
-## Neste steg
+## Neste steg {#next-steps}
 
-- [Administrere profilen din](./managing-profile.md) -- Rediger dine personlige innstillinger
-- [Godkjenne profilendringer](./approving-profile-changes.md) -- Gå gjennom forespørsler om endringer i medlemsprofiler
-- [Administrere enheter](./devices.md) -- Administrer tilkoblede enheter
+- [Administrere profilen din](./managing-profile.md): rediger dine personlige innstillinger
+- [Godkjenne profilendringer](./approving-profile-changes.md): gjennomgå endringsforespørsler fra medlemmer
+- [Administrere enheter](./devices.md): administrer tilkoblede enheter

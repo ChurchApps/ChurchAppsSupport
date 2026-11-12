@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## 예배 시간
+## 예배 시간 {#service-times}
 
 기본 경로: `/attendance/servicetimes`
 

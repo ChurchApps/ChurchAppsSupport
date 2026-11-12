@@ -51,7 +51,7 @@ Gumagamit ang ilang provider ng device flow, katulad ng kung paano ka nag-sign i
 Ang kumikislap na indicator na **Waiting for confirmation** ay nagpapakita na tinitingnan ng FreePlay ang iyong login. Ipinapakita ng screen kung ilang minuto na lang ang natitira bago mag-expire ang code, kaya kumpletuhin agad ang proseso. Piliin ang **Generate New Code** kung maubos ang oras.
 :::
 
-## Phone Sign-In (QR Code Lang)
+## Phone Sign-In (QR Code Lang) {#phone-sign-in-qr-code-only}
 
 Ang **Dropbox**, **OneDrive**, at **Go Curriculum** ay gumagamit ng bahagyang ibang QR-code sign-in, na walang code na kailangang i-type:
 

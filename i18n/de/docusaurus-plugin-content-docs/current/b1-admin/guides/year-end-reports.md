@@ -1,94 +1,95 @@
 ---
-title: "Anleitung: Jahresspendenberichte erstellen"
-description: "Schließen Sie in B1 Admin die Spendenaufzeichnungen des Jahres ab, überprüfen Sie die steuerlichen Einstellungen der Fonds und erstellen Sie steuerlich absetzbare Spendenbescheinigungen für alle Spender."
+title: "Anleitung: Jahresendberichte für Spenden erstellen"
+description: "Schließen Sie in B1 Admin die Spendenaufzeichnungen des Jahres ab, prüfen Sie die steuerlichen Einstellungen der Fonds und erstellen Sie steuerlich absetzbare Spendenbescheinigungen für jeden Spender."
 ---
 
-# Jahresspendenberichte erstellen
+# Jahresendberichte für Spenden erstellen
 
 <div class="article-intro">
 
-Dieser Leitfaden führt Sie durch den Jahresabschluss: die Fertigstellung Ihrer Spendenaufzeichnungen, die Überprüfung der Fondseinstellungen und die Erstellung steuerlich absetzbarer Spendenbescheinigungen für jeden Spender. Dieser Vorgang wird in der Regel Anfang Januar für das vorangegangene Kalenderjahr durchgeführt.
+Gehen Sie den Jahresabschluss Schritt für Schritt durch: Spendenaufzeichnungen finalisieren, Fondseinstellungen prüfen und steuerlich absetzbare Spendenbescheinigungen für jeden Spender erstellen. Dies geschieht in der Regel Anfang Januar für das vorangegangene Kalenderjahr.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- B1 Admin-Konto mit Zugriff auf die Finanzen
-- Während des Jahres erfasste Spenden (online über Stripe und/oder manuell eingetragen)
+- B1-Admin-Konto mit Finanzzugang
+- Im Laufe des Jahres erfasste Spenden (online über Stripe und/oder manuell eingetragen)
 - Zugang zu Ihrem Stripe-Konto, falls Sie Online-Spenden annehmen
 
 </div>
 
-## Schritt 1: Abschließende Stripe-Transaktionen importieren
+## Schritt 1: Finale Stripe-Transaktionen importieren {#step-1-import-final-stripe-transactions}
 
 Stellen Sie sicher, dass alle Online-Spenden vom Jahresende in Ihrem System vorhanden sind.
 
 Folgen Sie der Anleitung [Stripe-Import](../donations/stripe-import.md), um:
 
-1. zu Spenden > Stripe-Import zu navigieren
-2. einen Datumsbereich zu wählen, der das Jahresende abdeckt (z. B. 1. bis 31. Dezember)
-3. zunächst auf **Vorschau** zu klicken, um die Daten zu prüfen, und dann auf **Fehlende importieren**, um den Import abzuschließen
+1. im [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) **Spenden > Stripe-Import** zu wählen (der Menüpunkt erscheint nur, wenn Ihr Spendenanbieter Stripe ist)
+2. das **Startdatum** und das **Enddatum** so festzulegen, dass das Jahresende abgedeckt ist (z. B. 1. Dezember bis 31. Dezember)
+3. zuerst auf **Vorschau** zu klicken, um zu prüfen, und dann auf **Fehlende importieren**, um abzuschließen
 
 :::warning
-Führen Sie diesen Import vor der Erstellung der Bescheinigungen durch. Transaktionen, die Sie nicht importiert haben, erscheinen nicht auf den Spenderbescheinigungen.
+Führen Sie diesen Import aus, bevor Sie Bescheinigungen erstellen. Transaktionen, die Sie nicht importiert haben, erscheinen nicht auf den Spenderbescheinigungen.
 :::
 
-## Schritt 2: Spendenberichte prüfen
+## Schritt 2: Spendenberichte prüfen {#step-2-review-donation-reports}
 
-Überprüfen Sie Ihre Aufzeichnungen auf Richtigkeit, bevor Sie die Bescheinigungen erstellen.
+Überprüfen Sie, ob Ihre Aufzeichnungen korrekt sind, bevor Sie Bescheinigungen erstellen.
 
 Folgen Sie der Anleitung [Spendenberichte](../donations/donation-reports.md), um:
 
-1. die Spendenübersichtsseite für das gesamte Jahr zu prüfen
-2. die Summen je Fonds zu kontrollieren und mit Ihren Kontoauszügen abzugleichen, um etwaige Abweichungen aufzudecken
-3. bei Bedarf einzelne Chargen anzuklicken, um die Angaben zu den einzelnen Spendern zu überprüfen
+1. im Sprungmenü **Spenden > Übersicht** zu wählen, im Bereich **Bericht filtern** das **Startdatum** und das **Enddatum** auf das gesamte Jahr einzustellen und auf **Bericht ausführen** zu klicken
+2. die Summen nach Fonds zu prüfen und mit Ihren Kontoauszügen abzugleichen, um Abweichungen zu finden. Klicken Sie auf **Download-Optionen** und wählen Sie **Übersicht** für eine CSV-Datei
+3. bei Bedarf einzelne Chargen unter **Spenden > Chargen** öffnen, um die Details der einzelnen Spender zu prüfen
 
-## Schritt 3: Steuerstatus der Fonds überprüfen
+## Schritt 3: Steuerlichen Status der Fonds prüfen {#step-3-verify-fund-tax-status}
 
 Stellen Sie sicher, dass die Einstellung zur Steuerabsetzbarkeit jedes Fonds korrekt ist, damit die Bescheinigungen stimmen.
 
 Folgen Sie der Anleitung [Fonds](../donations/funds.md), um:
 
-1. jeden Fonds zu öffnen und zu bestätigen, dass die Einstellung zur Steuerabsetzbarkeit korrekt ist
+1. im Sprungmenü **Spenden > Fonds** zu wählen und den **Steuerstatus** jedes Fonds zu prüfen
+2. bei einem Fonds auf **Bearbeiten** zu klicken, um die Einstellung **Steuerlich absetzbar** zu ändern
 
 :::info
-Auf Spendenbescheinigungen erscheinen nur Spenden an Fonds, die als steuerlich absetzbar markiert sind. Sollte ein Fonds steuerlich absetzbar sein, ist aber nicht entsprechend markiert, aktualisieren Sie ihn, bevor Sie die Bescheinigungen erstellen.
+Nur Spenden an Fonds, die als steuerlich absetzbar markiert sind, erscheinen auf den Spendenbescheinigungen. Wenn ein Fonds steuerlich absetzbar sein sollte, aber nicht so markiert ist, aktualisieren Sie ihn, bevor Sie die Bescheinigungen erstellen.
 :::
 
-## Schritt 4: Spendenbescheinigungen erstellen
+## Schritt 4: Spendenbescheinigungen erstellen {#step-4-generate-giving-statements}
 
 Erstellen Sie die offiziellen Spendenbescheinigungen für Ihre Spender.
 
 Folgen Sie der Anleitung [Spendenbescheinigungen](../donations/giving-statements.md), um:
 
-1. zu **Spenden > Spendenbescheinigungen** zu navigieren
-2. das Jahr im Dropdown-Menü auszuwählen und die Übersichtsstatistiken zu prüfen
-3. Ihre Download-Methode zu wählen:
-   - **ZIP herunterladen** — einzelne CSV-Dateien, eine pro Spender
-   - **Alle drucken** — druckbare Ansicht mit jeder Bescheinigung auf einer neuen Seite, oben mit Ihrem Kirchenlogo (sofern Sie eines hochgeladen haben)
+1. im Sprungmenü **Spenden > Spendenbescheinigungen** zu wählen
+2. das **Jahr** auszuwählen und die Übersichtszahlen zu prüfen. Gemeinden in Kanada, Australien oder Neuseeland können auf **Bescheinigungsformat** klicken, um zum offiziellen Quittungsformat ihres Landes zu wechseln
+3. Ihre Download-Methode wählen:
+   - **ZIP herunterladen** – einzelne CSV-Dateien, eine pro Spender
+   - **Alle drucken** – druckbare Ansicht, bei der jede Bescheinigung auf einer neuen Seite steht und oben Ihr Gemeindelogo erscheint (sofern Sie eines hochgeladen haben)
 
 :::tip
-Erstellen Sie die Bescheinigungen Anfang Januar, solange die Aufzeichnungen noch frisch sind. So bleibt Ihnen Zeit, etwaige Probleme zu beheben, bevor die Bescheinigungen versandt werden.
+Erstellen Sie die Bescheinigungen Anfang Januar, solange die Aufzeichnungen noch aktuell sind. So haben Sie Zeit, Probleme zu beheben, bevor Sie sie versenden.
 :::
 
-## Schritt 5: An Spender verteilen
+## Schritt 5: An Spender verteilen {#step-5-distribute-to-donors}
 
 Bringen Sie die Bescheinigungen zu Ihren Spendern.
 
-1. Bescheinigungen drucken und per Post versenden oder einzelne CSV-Dateien per E-Mail an die Spender senden
-2. Mitglieder können ihre eigene Spendenhistorie außerdem einsehen und Bescheinigungen auf [B1.church oder in der B1 App](../../b1-church/giving/donation-history.md) ausdrucken
+1. Drucken Sie die Bescheinigungen aus und verschicken Sie sie per Post oder senden Sie einzelne CSV-Dateien per E-Mail an Spender
+2. Mitglieder können ihre eigene Spendenhistorie außerdem auf [B1.church oder in der B1-App](../../b1-church/giving/donation-history.md) einsehen und Bescheinigungen ausdrucken
 
-## Fertig!
+## Geschafft! {#youre-done}
 
-Ihre Jahresspendenberichte sind abgeschlossen. Die Spender haben ihre steuerlich absetzbaren Bescheinigungen erhalten, und Ihre Finanzunterlagen für das Jahr sind abgeschlossen.
+Ihre Jahresendberichte zu Spenden sind fertig. Die Spender haben ihre steuerlich absetzbaren Bescheinigungen, und Ihre Finanzaufzeichnungen für das Jahr sind abgeschlossen.
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
 - [Stripe-Import](../donations/stripe-import.md) — Online-Transaktionen importieren
-- [Spendenberichte](../donations/donation-reports.md) — Spendentrends und Summen einsehen
+- [Spendenberichte](../donations/donation-reports.md) — Spendentrends und Summen ansehen
 - [Fonds](../donations/funds.md) — Fonds und Einstellungen zur Steuerabsetzbarkeit verwalten
-- [Spendenbescheinigungen](../donations/giving-statements.md) — Jahresbescheinigungen erstellen
+- [Spendenbescheinigungen](../donations/giving-statements.md) — Bescheinigungen zum Jahresende erstellen
 - [Spenden erfassen](../donations/recording-donations.md) — Bar- und Scheckspenden manuell eintragen
-- [Spendenhistorie (Web)](../../b1-church/giving/donation-history.md) — Selbstbedienungsansicht für Mitglieder
-- [Anleitung zur Einrichtung von Online-Spenden](./online-giving.md) — ursprüngliche Stripe- und Spendeneinrichtung
+- [Spendenhistorie (Web)](../../b1-church/giving/donation-history.md) — Ansicht für Mitglieder im Selbstservice
+- [Anleitung: Online-Spenden einrichten](./online-giving.md) — erste Einrichtung von Stripe und Spenden

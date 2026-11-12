@@ -51,7 +51,7 @@ Vous avez besoin d'un parent pendant le service -- un changement de couche, un e
 
 Si une étiquette de nom ou une étiquette de retrait est perdue ou endommagée, le personnel d'une station avec personnel peut **réimprimer** les étiquettes de la famille à partir de l'écran de départ après avoir entré le code de sécurité. La réimpression utilise la même imprimante et les mêmes modèles d'étiquette que l'enregistrement d'origine.
 
-## Diffusion d'urgence
+## Diffusion d'urgence {#emergency-broadcast}
 
 En cas d'urgence, le personnel peut envoyer un message texte aux tuteurs de **chaque enfant enregistré** pour le service actuel en une seule fois :
 

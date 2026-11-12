@@ -1,94 +1,93 @@
 ---
 title: "Clearstream"
-description: "Zapier के माध्यम से Clearstream SMS को B1 Admin से जोड़ें: नए उपहार या फ़ॉर्म सबमिशन पर टेक्स्ट भेजें, और आने वाले उत्तर लोगों के रूप में वापस लाएँ।"
+description: "Zapier के माध्यम से Clearstream SMS को B1 Admin से जोड़ें: नए उपहारों या form submissions पर texts भेजें, और आने वाले जवाबों को लोगों के रूप में वापस लाएँ।"
 ---
 
 # Clearstream
 
 <div class="article-intro">
 
-किसी भी B1 इवेंट — नया व्यक्ति, नया उपहार, फ़ॉर्म सबमिशन, कैलेंडर अपडेट — से [Clearstream](https://clearstream.io) टेक्स्ट संदेश भेजें, और उत्तर B1 रिकॉर्ड के रूप में वापस लाएँ। Clearstream का Zapier ऐप दोनों दिशाओं को उपलब्ध कराता है, इसलिए पूरी व्यवस्था एक रेसिपी है, कोई कस्टम कोड नहीं।
+किसी भी B1 event से — नया व्यक्ति, नया उपहार, form submission, calendar अपडेट — [Clearstream](https://clearstream.io) text message शुरू करें, और जवाबों को B1 रिकॉर्ड के रूप में वापस लाएँ। Clearstream का Zapier ऐप दोनों दिशाएँ उजागर करता है, इसलिए पूरी वायरिंग एक रेसिपी है, कस्टम कोड नहीं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- कम से कम एक सूची और SMS सीमा वाला [Clearstream](https://clearstream.io) खाता
-- एक [Zapier](https://zapier.com) खाता
-- **Edit Settings** अनुमति वाला एक B1Admin उपयोगकर्ता
+- कम से कम एक list और SMS कोटा वाला [Clearstream](https://clearstream.io) account
+- एक [Zapier](https://zapier.com) account
+- **Edit Settings** अनुमति वाला एक B1Admin user
 
 </div>
 
-## आप क्या जोड़ सकते हैं
+## आप क्या जोड़ सकते हैं {#what-you-can-wire-up}
 
-| दिशा | ट्रिगर | क्रिया |
+| दिशा | Trigger | Action |
 |---|---|---|
-| B1 → Clearstream | B1 `person.created` | Clearstream: Create/Update Subscriber + Send Text to Number |
-| B1 → Clearstream | B1 `donation.created` | Clearstream: Send Text to List (जैसे वित्त टीम को सूचित करने के लिए) |
-| B1 → Clearstream | B1 `form.submission.created` | Clearstream: किसी रूटिंग सूची पर Send Text (जैसे प्रार्थना अनुरोध टीम) |
-| Clearstream → B1 | New Incoming Text | B1: Create Person; जिस कीवर्ड से उन्होंने टेक्स्ट किया, उसके साथ टैग करें |
+| B1 → Clearstream | B1 `person.created` | Clearstream: Subscriber बनाएँ/अपडेट करें + नंबर पर Text भेजें |
+| B1 → Clearstream | B1 `donation.created` | Clearstream: list पर Text भेजें (जैसे वित्त टीम को सूचित करना) |
+| B1 → Clearstream | B1 `form.submission.created` | Clearstream: routing list पर Text भेजें (जैसे प्रार्थना अनुरोध टीम) |
+| Clearstream → B1 | New Incoming Text | B1: व्यक्ति बनाएँ; जिस keyword से उन्होंने text किया उससे tag करें |
 
-Clearstream की Zapier क्रियाएँ: *Send Text to Number*, *Send Text to List*, *Create/Update Subscriber*, *Add Subscriber to Automated Workflow*, *Add Tag to Subscriber*, *Remove Subscriber From List*।
+Clearstream के Zapier actions: *Send Text to Number*, *Send Text to List*, *Create/Update Subscriber*, *Add Subscriber to Automated Workflow*, *Add Tag to Subscriber*, *Remove Subscriber From List*।
 
-## सेटअप
+## सेटअप {#setup}
 
-### 1. B1 API कुंजी बनाएँ
+### 1. B1 API key बनाएँ {#1-mint-a-b1-api-key}
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — B1 के लिए ट्रिगर वेबहुक पंजीकृत करने हेतु आवश्यक
-- `people:read` — इवेंट से व्यक्ति को खोजने के लिए आवश्यक (`personId` → नाम/फ़ोन/ईमेल)
-- (वैकल्पिक) `people:write` यदि Clearstream के उत्तरों से B1 संपर्क बनाने हों
+- `settings:write` — key को Zapier से जोड़ने और B1 द्वारा trigger webhook रजिस्टर करने के लिए ज़रूरी
+- `people:read` — event से व्यक्ति खोजने के लिए (`personId` → नाम/फ़ोन/email)
+- (वैकल्पिक) `people:write` अगर Clearstream के जवाब B1 contacts बनाएँ
 
-### 2. "नए उपहार पर टेक्स्ट" Zap बनाएँ
+### 2. "नए उपहार पर text" Zap बनाएँ {#2-build-the-text-on-new-gift-zap}
 
-1. **ट्रिगर** — B1.church: New Donation
-2. **क्रिया** — B1.church: Find Person (दान के `personId` से)
-3. **क्रिया** — Clearstream: Send Text to Number। प्राप्तकर्ता के रूप में चरण 2 के व्यक्ति का फ़ोन नंबर उपयोग करें, और संदेश लिखें (`"Thanks for your gift, {first}! …"`)।
+1. **Trigger** — B1.church: New Donation
+2. **Action** — B1.church: Find Person (donation का `personId`)
+3. **Action** — Clearstream: Send Text to Number। चरण 2 के व्यक्ति का फ़ोन प्राप्तकर्ता के रूप में उपयोग करें, संदेश लिखें (`"Thanks for your gift, {first}! …"`)।
 
-Zap चालू करें। सक्रिय होने पर B1 दान वेबहुक पंजीकृत करता है; आपको **Settings → Developer → Webhooks** में `Zapier — donation.created` दिखेगा।
+Zap चालू करें। B1 सक्रिय होने पर donation webhook रजिस्टर करता है; आप **Settings → Developer → Webhooks** में `Zapier — donation.created` दिखेगा।
 
-### 3. (वैकल्पिक) उत्तर B1 रिकॉर्ड के रूप में वापस लाएँ
+### 3. (वैकल्पिक) जवाब वापस B1 रिकॉर्ड के रूप में लाएँ {#3-optional-pull-replies-back-as-b1-records}
 
-1. **ट्रिगर** — Clearstream: New Incoming Text
-2. **क्रिया** — कीवर्ड पर Zapier द्वारा Filter — जैसे केवल तभी आगे बढ़ें जब टेक्स्ट संदेश `PRAY` से शुरू हो
-3. **क्रिया** — B1.church: Find Person (फ़ोन से)
-4. **क्रिया** — Filter / Path — यदि न मिले तो उन्हें बनाएँ; किसी भी स्थिति में टेक्स्ट संदेश को कहीं सुरक्षित करें (Slack, Google Sheet, या Zapier द्वारा Webhooks के माध्यम से B1 फ़ॉर्म सबमिशन)।
+1. **Trigger** — Clearstream: New Incoming Text
+2. **Action** — keyword पर Zapier द्वारा Filter — जैसे केवल तभी आगे बढ़ें जब text का मुख्य भाग `PRAY` से शुरू हो
+3. **Action** — text का मुख्य भाग ऐसी जगह दर्ज करें जहाँ आपकी टीम उसे देखे (Slack, Google Sheet, या B1 task)। B1 का *Find Person* लोगों को केवल id, email, या नाम से खोजता है, फ़ोन से नहीं, इसलिए जवाब को हाथ से B1 व्यक्ति से मिलाएँ (या B1 के `/membership/people/search/phone?number=…` endpoint पर Webhooks by Zapier GET जोड़ें)।
 
-## सामान्य रेसिपी
+## सामान्य रेसिपी {#common-recipes}
 
-### स्वयंसेवक टीम को पेज करना
+### स्वयंसेवक टीम को पेज करना {#volunteer-team-paging}
 
-- **ट्रिगर** — B1.church: New Form Submission (प्रार्थना-अनुरोध फ़ॉर्म की आईडी पर फ़िल्टर किया गया)
-- **क्रिया** — Clearstream: Send Text to List, जहाँ सूची आपकी ऑन-कॉल पास्टोरल टीम है। संदेश का मुख्य भाग इस प्रकार लिखें: `New prayer request: {data.questions.0.answer}`।
+- **Trigger** — B1.church: New Form Submission (प्रार्थना-अनुरोध form id पर filter किया हुआ)
+- **Action** — Clearstream: Send Text to List, जहाँ list आपकी on-call pastoral टीम है। संदेश इस तरह लिखें: `New prayer request: {data.questions.0.answer}`।
 
-### पहली बार आने वाले आगंतुक के लिए फ़ॉलो-अप क्रम
+### पहली बार आने वाले मेहमान का फ़ॉलो-अप क्रम {#first-time-visitor-follow-up-sequence}
 
-- **ट्रिगर** — B1.church: New Person, B1 व्यक्ति टैग "First-time visitor" पर फ़िल्टर किया गया
-- **क्रिया** — Clearstream: Add Subscriber to Automated Workflow। वर्कफ़्लो आईडी को पहले से बने 7-दिन के टेक्स्ट ड्रिप से मैप करें।
+- **Trigger** — B1.church: New Person, व्यक्ति की membership स्थिति पर filter किया हुआ (जैसे *Visitor*)
+- **Action** — Clearstream: Add Subscriber to Automated Workflow। workflow id को एक पहले से बने 7-दिन के text drip से map करें।
 
-### कीवर्ड-आधारित समूह में शामिल होना
+### keyword से group में जुड़ना {#keyword-driven-group-join}
 
-- **ट्रिगर** — Clearstream: New Incoming Text (कीवर्ड `MENS` पर फ़िल्टर करें)
-- **क्रिया** — B1.church: Find Person (फ़ोन से); न मिलने पर → Create Person पर शाखा बनाएँ
-- **क्रिया** — B1.church: Men's Ministry समूह में Add Group Member
+- **Trigger** — Clearstream: New Incoming Text (keyword `MENS` पर filter)
+- **Action** — B1.church: texter के नाम और फ़ोन से Create Person (B1 का *Find Person* फ़ोन से लोगों को नहीं खोज सकता, इसलिए बाद में **People** में duplicates जाँचें)
+- **Action** — B1.church: Men's Ministry group में Add Group Member
 
-## सीमाएँ और टिप्पणियाँ
+## सीमाएँ और नोट्स {#limits--notes}
 
-- **Clearstream SMS की गणना संदेश के हिसाब से करता है।** हर Send Text क्रिया संदेश की लंबाई और प्राप्तकर्ताओं की संख्या के आधार पर एक या अधिक क्रेडिट खर्च करती है — अपनी योजना की सीमा जाँच लें।
-- **Send Text to Number के लिए फ़ोन E.164 प्रारूप में होना चाहिए** (जैसे `+15555550199`)। B1 का व्यक्ति रिकॉर्ड जो भी दर्ज हुआ हो, उसी को संग्रहीत करता है; यदि आप प्रारूप की गारंटी नहीं दे सकते तो *Formatter by Zapier — Numbers → Format Phone Number* चरण का उपयोग करें।
-- **B1 की ओर से किसी हेडर की आवश्यकता नहीं है** — Clearstream का प्रमाणीकरण पूरी तरह उसके Zapier कनेक्शन के अंदर रहता है।
+- **Clearstream SMS को संदेश के हिसाब से मापता है।** हर Send Text action लंबाई और प्राप्तकर्ताओं की संख्या के अनुसार एक या अधिक credits खर्च करता है — अपने plan का कोटा जाँचें।
+- ***Send Text to Number* के लिए फ़ोन E.164 format में होना चाहिए** (जैसे `+15555550199`)। B1 का व्यक्ति record जो भी दर्ज हुआ वही संग्रहीत करता है; अगर format की गारंटी नहीं है तो *Formatter by Zapier — Numbers → Format Phone Number* चरण का उपयोग करें।
+- **B1 की ओर से कोई header आवश्यक नहीं** — Clearstream का auth पूरी तरह उसके Zapier connection के अंदर रहता है।
 
-## समस्या निवारण
+## समस्या निवारण {#troubleshooting}
 
-- **ट्रिगर कभी नहीं चलता** — Zap चालू करने के बाद `Settings → Developer → Webhooks` में `Zapier — <event>` पंक्ति दिखनी चाहिए। यदि नहीं, तो B1 API कुंजी में `settings:write` नहीं है। कुंजी फिर से बनाएँ और फिर से कनेक्ट करें।
+- **Trigger कभी फ़ायर नहीं होता** — Zap चालू करने के बाद `Settings → Developer → Webhooks` में `Zapier — <event>` पंक्ति दिखनी चाहिए। न दिखे तो B1 API key में `settings:write` नहीं है। फिर से बनाएँ और फिर से जोड़ें।
 - **Clearstream "Invalid phone number" लौटाता है** — प्राप्तकर्ता फ़ील्ड E.164 में नहीं है। Format Phone Number चरण जोड़ें।
-- **Send Text to List `403` के साथ विफल होता है** — Clearstream API उपयोगकर्ता के पास उस सूची की अनुमति नहीं है, या सूची आईडी गलत है। सूची आईडी Clearstream के सूची विवरण पृष्ठ पर दिखाई देती हैं।
+- **Send Text to List `403` के साथ विफल** — Clearstream API user के पास उस list की अनुमति नहीं है, या list id गलत है। list ids Clearstream list विवरण पेज पर दिखते हैं।
 
-## यह भी देखें
+## यह भी देखें {#see-also}
 
-- [Text In Church](./text-in-church.md) — वैकल्पिक SMS प्लेटफ़ॉर्म, लगभग समान व्यवस्था
+- [Text In Church](./text-in-church.md) — वैकल्पिक SMS platform, समान वायरिंग रूप
 - [Mobile Message](./mobile-message.md) — अमेरिका के बाहर के चर्चों के लिए
-- [Zapier (overview)](../zapier.md) — हर Zapier रेसिपी का B1 पक्ष
-- [Clearstream API docs](https://api-docs.clearstream.io/) — Zapier ऐप से परे कस्टम इंटीग्रेशन के लिए
+- [Zapier (overview)](../zapier.md) — हर Zapier रेसिपी का B1 हिस्सा
+- [Clearstream API docs](https://api-docs.clearstream.io/) — Zapier ऐप से आगे की कस्टम integrations के लिए

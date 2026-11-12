@@ -1,76 +1,76 @@
 ---
-title: "Suivi de la Présence"
-description: "Consultez les tendances de présence, filtrez les rapports par campus, service ou groupe, et exportez la présence des groupes depuis la page Présence dans B1 Admin."
+title: "Suivi des présences"
+description: "Consultez les tendances de présence, filtrez les rapports par campus, service ou groupe, et exportez les présences par groupe depuis la page Présences dans B1 Admin."
 ---
 
-# Suivi de la Présence
+# Suivi des présences
 
 <div class="article-intro">
 
-Une fois que vos campus, heures de service et groupes sont configurés, B1 Admin facilite l'examen des données de présence et l'identification des tendances. La page Présence s'ouvre sur un résumé de la présence de cette semaine, et ses rapports **Toutes les années** fournissent deux vues principales -- l'onglet **Tendance de Présence** pour les tendances à l'échelle de l'église et l'onglet **Présence du Groupe** pour les détails au niveau du groupe. Utilisez ces outils pour comprendre les modèles de croissance, identifier l'engagement en déclin et prendre des décisions fondées sur les données pour votre église.
+Une fois vos campus, horaires de service et groupes configurés, B1 Admin vous permet de consulter facilement les données de présence et de repérer les tendances. La page Présences s'ouvre sur un résumé des présences de la semaine, et ses rapports **Toutes les années** offrent deux vues principales — l'onglet **Tendance des présences** pour les tendances à l'échelle de l'église et l'onglet **Présences par groupe** pour le détail par groupe —, ainsi qu'un onglet **Tendance du nombre de participants** pour les [totaux de participants](headcount-entry.md). Utilisez ces outils pour comprendre les schémas de croissance, repérer un engagement en baisse et prendre des décisions fondées sur les données pour votre église.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Votre structure de présence doit être configurée avec au moins un campus et une heure de service. Voir [Configuration de la Présence](setup.md) si vous ne l'avez pas encore fait.
-- Les données de présence doivent être enregistrées avant que les rapports ne montrent les résultats. Les données peuvent provenir de l'[entrée manuelle](recording-attendance.md) ou de l'[enregistrement automatique](check-in.md).
+- Votre structure de présences doit être configurée avec au moins un campus et un horaire de service. Voir [Configuration des présences](setup.md) si vous ne l'avez pas encore fait.
+- Des données de présence doivent être enregistrées avant que les rapports n'affichent des résultats. Les données peuvent provenir d'une [saisie manuelle](recording-attendance.md) ou de l'[enregistrement en libre-service](check-in.md).
 
 </div>
 
-## Affichage des tendances de présence
+## Consulter les tendances de présence {#viewing-attendance-trends}
 
-1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Présence**.
-2. Cliquez sur **Toutes les années** dans la colonne de gauche. L'onglet **Tendance de Présence** est sélectionné par défaut.
-3. Le rapport s'exécute automatiquement à l'ouverture de l'onglet, montrant la présence totale pour chaque semaine.
+1. Ouvrez **B1 Admin**, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes** et cliquez sur **Présences**.
+2. Cliquez sur **Toutes les années** dans la colonne de gauche. L'onglet **Tendance des présences** est sélectionné par défaut.
+3. Le rapport s'exécute automatiquement à l'ouverture de l'onglet et affiche le total des présences pour chaque semaine.
 
 :::tip
-Pour un aperçu rapide de la semaine en cours, la page Présence principale indique combien de personnes sont dans la salle cette semaine, une répartition par salle (groupe), les invités éventuels et un graphique à barres des enregistrements sur 13 semaines -- sans rapport nécessaire.
+Pour un aperçu rapide de la semaine en cours, la page principale des Présences indique combien de personnes sont dans la salle cette semaine, une répartition par salle (groupe), les visiteurs éventuels et un graphique à barres de 13 semaines des enregistrements — aucun rapport nécessaire.
 :::
 
-## Filtrage de vos données
+## Filtrer vos données {#filtering-your-data}
 
-Utilisez les filtres dans la boîte **Filtrer le rapport** pour affiner les résultats, puis cliquez sur **Exécuter le rapport** :
+Utilisez les filtres de la zone **Filtrer le rapport** pour restreindre les résultats, puis cliquez sur **Exécuter le rapport** :
 
-- **Campus** -- sélectionnez un campus pour voir la présence pour cet emplacement uniquement.
-- **Service** -- limitez le rapport à un service.
-- **Heure de service** -- choisissez une heure de service pour approfondir un rassemblement particulier.
-- **Groupe** -- affichage la présence pour un seul groupe.
-- **Date de début** et **Date de fin** -- la plage de dates à inclure. Par défaut, le rapport couvre l'année passée, d'il y a un an jusqu'à aujourd'hui, et la date de fin est incluse en totalité.
+- **Campus** -- sélectionnez un campus pour ne voir que les présences de ce lieu.
+- **Service** -- limitez le rapport à un seul service.
+- **Horaire de service** -- choisissez un horaire de service pour examiner un rassemblement en particulier.
+- **Groupe** -- affichez les présences d'un seul groupe.
+- **Date de début** et **Date de fin** -- la période à inclure. Par défaut, le rapport couvre l'année écoulée, d'il y a un an jusqu'à aujourd'hui, et la date de fin est incluse en totalité.
 
-Le rapport affiche un graphique à barres et un tableau des visites totales par semaine. Chaque semaine est étiquetée avec la date du dimanche de cette semaine. Le tableau a également une colonne **Dates de session** listant les dates réelles de cette semaine qui avaient une présence (par exemple, « 27/9, 30/9 »), afin que vous puissiez voir quand un rassemblement entre-semaine est compté dans la même semaine que le dimanche.
+Le rapport affiche un graphique à barres et un tableau du total des visites par semaine. Utilisez l'icône d'impression pour l'imprimer, ou **Options de téléchargement** pour enregistrer les données. Chaque semaine est étiquetée avec la date du dimanche de cette semaine. Le tableau comprend aussi une colonne **Dates des séances** qui liste les dates réelles de cette semaine ayant des présences (par exemple « 27/9, 30/9 »), afin que vous puissiez voir quand un rassemblement de mi-semaine est compté dans la même semaine que le dimanche.
 
 :::info
-Les rapports s'exécutent automatiquement chaque fois que vous ouvrez l'onglet Tendance de Présence, afin que vous voyiez toujours les chiffres à jour sans avoir besoin de cliquer sur un bouton d'actualisation.
+Les rapports s'exécutent automatiquement chaque fois que vous ouvrez l'onglet Tendance des présences ; vous voyez donc toujours des chiffres à jour sans avoir à cliquer sur un bouton d'actualisation.
 :::
 
-## Présence du Groupe
+## Présences par groupe {#group-attendance}
 
-L'onglet **Présence du Groupe** affiche qui a assisté à chaque session de groupe. Ceci est utile lorsque vous souhaitez surveiller une classe spécifique, une équipe de ministère ou un petit groupe plutôt que de regarder les chiffres de service globaux.
+L'onglet **Présences par groupe** indique qui a participé à chaque séance de groupe. C'est utile lorsque vous voulez suivre une classe, une équipe de ministère ou un petit groupe précis, plutôt que de regarder les chiffres globaux des services.
 
-1. Dans les rapports **Toutes les années**, sélectionnez l'onglet **Présence du Groupe**.
-2. Optionnellement choisissez un **Campus** et un **Service**.
-3. Définissez la **Date de début** et la **Date de fin**. Par défaut, le rapport couvre le dimanche dernier jusqu'à aujourd'hui.
+1. Dans les rapports **Toutes les années**, sélectionnez l'onglet **Présences par groupe**.
+2. Choisissez éventuellement un **Campus** et un **Service**.
+3. Définissez la **Date de début** et la **Date de fin**. Par défaut, le rapport couvre du dimanche précédent jusqu'à aujourd'hui.
 4. Cliquez sur **Exécuter le rapport**.
 
-Les résultats sont groupés par date de session, puis par heure de service et groupe, avec les personnes qui ont assisté listées sous chaque groupe. Les heures de service, les groupes et les noms sont triés alphabétiquement afin que chaque titre n'apparaisse qu'une seule fois. La ligne de chaque personne affiche également une colonne **Enregistré** avec l'heure d'enregistrement de sa présence (vide si aucune heure n'est en dossier) et une colonne **Statut d'adhésion** (par exemple, Membre ou Visiteur), pour que vous puissiez repérer les visiteurs d'un coup d'œil.
+Les résultats sont regroupés par date de séance, puis par horaire de service et par groupe, avec les personnes ayant participé listées sous chaque groupe. Les horaires de service, les groupes et les noms sont triés par ordre alphabétique afin que chaque en-tête n'apparaisse qu'une fois. La ligne de chaque personne affiche aussi une colonne **Enregistré** avec l'heure à laquelle sa présence a été consignée (vide lorsqu'aucune heure n'est enregistrée) et une colonne **Statut de membre** (par exemple Membre ou Visiteur), afin que vous puissiez repérer les visiteurs d'un coup d'œil.
 
-Pour télécharger les données, cliquez sur **Options de téléchargement** et choisissez **Résumé**. Le fichier CSV a une ligne par membre du groupe, trié par groupe puis par nom, et une colonne pour chaque session datée dans la plage (par exemple, « Dimanche - 9h00 (27/09/2026) ») marquée **présent** ou **absent**.
+Pour télécharger les données, cliquez sur **Options de téléchargement** et choisissez **Résumé**. Le fichier CSV comporte une ligne par membre du groupe, triée par groupe puis par nom, et une colonne pour chaque séance datée de la période (par exemple « Dimanche - 9 h 00 (2026-09-27) ») marquée **présent** ou **absent**.
 
 :::tip
-La présence du groupe est particulièrement précieuse pour les responsables de [petits groupes](../groups/creating-groups.md) qui souhaitent suivre l'engagement au sein de leur groupe au fil du temps.
+Les présences par groupe sont particulièrement utiles pour les responsables de [petits groupes](../groups/creating-groups.md) qui veulent suivre l'engagement au sein de leur groupe dans le temps.
 :::
 
-## Conseils pour l'utilisation des données de présence
+## Conseils pour exploiter les données de présence {#tips-for-using-attendance-data}
 
-- Examinez les tendances mensuellement pour repérer les modèles saisonniers tôt.
-- Comparez les données au niveau des campus pour comprendre quels emplacements se développent.
-- Utilisez des rapports au niveau des groupes pour assurer le suivi des [groupes](../groups/group-members.md) qui montrent une présence en déclin.
-- Combinez les informations de présence avec l'outil [Recherche IA](../people/ai-search.md) pour trouver les personnes qui n'ont pas assisté récemment.
+- Consultez les tendances chaque mois pour repérer tôt les schémas saisonniers.
+- Comparez les données par campus pour comprendre quels lieux sont en croissance.
+- Utilisez les rapports par groupe pour faire un suivi auprès des [groupes](../groups/group-members.md) dont la présence diminue.
+- Combinez les analyses de présence avec l'outil [Recherche IA](../people/ai-search.md) pour trouver les personnes qui ne sont pas venues récemment.
 
-## Pages connexes
+## Pages connexes {#related-pages}
 
-- [Enregistrement de la Présence](recording-attendance.md) -- entrez manuellement la présence pour une session de groupe
-- [Entrée et Tendance des Comptages](headcount-entry.md) -- une alternative de comptage total plus simple, avec son propre graphique de tendance hebdomadaire
-- [Enregistrement](check-in.md) -- configurez l'enregistrement automatique pour que la présence soit enregistrée automatiquement
+- [Enregistrement des présences](recording-attendance.md) -- saisir manuellement les présences d'une séance de groupe
+- [Saisie du nombre de participants et tendance](headcount-entry.md) -- une alternative plus simple basée sur un total, avec son propre graphique de tendance hebdomadaire
+- [Enregistrement](check-in.md) -- configurer l'enregistrement en libre-service pour que les présences soient consignées automatiquement

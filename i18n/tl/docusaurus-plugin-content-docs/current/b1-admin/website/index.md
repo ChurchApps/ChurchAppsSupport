@@ -1,54 +1,56 @@
 ---
 title: "Website"
-description: "Pangkalahatang-tanaw ng B1 Admin Website builder: pages, blog, blocks, appearance, files, at calendars, kasama ang mga link sa setup at gabay sa pag-edit."
+description: "Alamin ang pangkalahatang-ideya ng B1 Admin Website builder: mga pahina, blog, block, appearance, files, at calendar, kasama ang mga link sa mga gabay sa setup at pag-edit."
 ---
 
 # Website
 
 <div class="article-intro">
 
-Ang seksyon ng Website sa B1 Admin ay nagbibigay sa iyo ng isang full-featured website builder para sa iyong simbahan. Maaari kang lumikha ng mga pahina, i-customize ang hitsura at pakiramdam ng iyong site, pamahalaan ang mga file ng media, at maglathala ng mga kalendaryo ng event -- lahat nang walang pagsusulat ng anumang code.
+Ang seksyong Website sa B1 Admin ay nagbibigay sa iyong simbahan ng full-featured na website builder. Makakagawa ka ng mga pahina, mapapasadya ang itsura at dating ng iyong site, mapamamahalaan ang mga media file, at makapag-publish ng mga event calendar -- nang hindi nagsusulat ng code.
 
 </div>
 
-## Ano ang Maaari Mong Gawin
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
 
-Ang Website builder ay inorganisa sa mga pangunahing lugar na ito:
+Nakaayos ang website builder sa mga sumusunod na pangunahing lugar:
 
-### Mga Pahina
+### Pages {#pages}
 
-Lumikha at pamahalaan ang lahat ng mga pahina sa iyong website ng simbahan. Ang **Mga Pahina** na talahanayan ay naglilista ng bawat pahina -- ang mga pahinang awtomatikong ginawa ng system ay may **Nabuo** na badge, at ang iba ay mga custom na pahinang ginawa mo. Maaari kang magdagdag ng mga bagong custom na pahina, mag-edit ng mga umiiral, o ikonberta ang auto-generated na mga pahina sa custom na mga pahina para sa buong kontrol sa kanilang nilalaman.
+Gumawa at mamahala ng lahat ng pahina sa website ng iyong simbahan. Nakalista sa talahanayang **Pages** ang bawat pahina -- ang mga pahinang awtomatikong nilikha ng sistema ay may badge na **Generated**, at ang iba ay mga custom na pahinang ginawa mo. Maaari kang magdagdag ng bagong custom na pahina, mag-edit ng umiiral, o gawing custom na pahina ang mga awtomatikong nalikhang pahina para ganap mong makontrol ang nilalaman nito.
 
-Ang iyong mga link sa navigation ay ipinapakita sa isang tree structure. Maaari mong baguhin ang mga link gamit ang drag-and-drop upang itakda ang eksaktong hierarchy at pagkakasunod-sunod na nais mong makita ng mga bisita.
+Nakalista ang iyong mga navigation link sa panel na **Main Navigation** sa tabi ng Pages table. Maaari mong ayusin muli at i-nest ang mga link gamit ang drag-and-drop para itakda ang eksaktong hierarchy at pagkakasunod-sunod na gusto mong makita ng mga bisita. Tingnan ang [Managing Pages](./managing-pages.md).
 
 ### Blog {#blog}
 
-Maglathala ng balita, update, at devotional bilang mga blog post sa `/blog` ng iyong site, kasama ang RSS feed. Tingnan ang [Blog](./blog.md) guide.
+Mag-publish ng balita, update, at devotional bilang mga blog post sa `/blog` ng iyong site, kasama ang RSS feed. Tingnan ang gabay na [Blog](./blog.md).
 
-### Mga Bloke
+### Blocks {#blocks}
 
-Bumuo ng mga mabagong component ng nilalaman na maaari mong ilagay sa maraming pahina. Ang mga bloke ay nakakatipid sa iyo ng oras kapag mayroon kang nilalaman tulad ng isang call-to-action, announcement banner, o contact section na lumalabas sa higit sa isang lugar. I-update ang isang bloke minsan at ang pagbabago ay naaply saanman ito ginagamit.
+Gumawa ng mga reusable na bahagi ng nilalaman na maaari mong ilagay sa maraming pahina. Nakakatipid ng oras ang mga block kapag may nilalamang gaya ng call-to-action, announcement banner, o contact section na lumilitaw sa higit sa isang lugar. I-update ang isang block nang isang beses at makikita ang pagbabago saanman ito ginagamit. Tingnan ang [Reusable Blocks](./blocks.md).
 
-### Hitsura
+### Appearance {#appearance}
 
-I-customize ang tema, kulay, font, logo, at spacing ng iyong website. Maaari kang maglapat ng pre-built na mga tema ng istilo para sa isang mabilis na pagsisimula o mahusay na ayusin ang bawat detalye gamit ang color palette editor, typography settings, at custom CSS. Tingnan ang [Hitsura](./appearance.md) guide para sa buong detalye.
+I-customize ang theme, mga kulay, font, logo, at spacing ng iyong website. Maaari kang mag-apply ng mga handang style theme para sa mabilisang simula, o pinuhin ang bawat detalye gamit ang color palette editor, mga typography setting, at custom CSS. Tingnan ang gabay na [Appearance](./appearance.md) para sa buong detalye.
 
-### Mga File
+### Files {#files}
 
-I-upload at pamahalaan ang lahat ng iyong mga asset ng media -- mga larawan, dokumento, at iba pang mga file -- sa isang sentral na lokasyon, at kopyahin ang mga link ng file para sa paggamit saanman sa iyong site. Tingnan ang [Mga File](./files.md) para sa higit pang impormasyon.
+I-upload at pamahalaan ang lahat ng media asset mo -- mga larawan, dokumento, at iba pang file -- sa iisang sentral na lugar, at kopyahin ang mga link ng file para magamit saanman sa iyong site. Tingnan ang [Files](./files.md) para sa higit pang impormasyon.
 
-### Mga Kalendaryo
+### Calendars {#calendars}
 
-Maglathala ng mga kalendaryo ng event sa iyong website upang ang mga bisita ay makita kung ano ang nangyayari sa iyong simbahan. Lumikha ng mga curated na kalendaryo na nagsasaad ng mga event mula sa maraming mga grupo sa isang solong view. Ang mga kalendaryo ay may sarili nilang **Calendars** item sa B1 Admin menu, hiwalay sa **Website**.
+Mag-publish ng mga event calendar sa iyong website para makita ng mga bisita kung ano ang nagaganap sa simbahan mo. Gumawa ng mga curated calendar na kumukuha ng mga event mula sa maraming grupo at inilalagay sa iisang view. May sariling item na **Calendars** ang mga calendar sa menu ng B1 Admin, hiwalay sa **Website**.
 
 :::tip
-Magsimula sa [Paunang Setup](./initial-setup.md) kung ikaw ay nag-configure ng iyong website sa unang pagkakataon. Ito ay gagabay sa iyo sa setup ng domain, paglikha ng iyong unang pahina, at pag-configure ng hitsura ng iyong site.
+Magsimula sa [Initial Setup](./initial-setup.md) kung unang beses mong ino-configure ang iyong website. Gagabayan ka nito sa pag-set up ng domain, paggawa ng iyong unang pahina, at pag-configure ng appearance ng iyong site.
 :::
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- [Paunang Setup](./initial-setup.md) -- Pagsisimula ng iyong website at pagpapatakbo sa unang pagkakataon
-- [Pag-manage ng Mga Pahina](./managing-pages.md) -- Matuto kung paano lumikha at ayusin ang iyong mga pahina
-- [Paggamit ng Page Editor](./page-editor.md) -- Bumuo at istilo ang iyong nilalaman ng pahina gamit ang visual editor
-- [Hitsura](./appearance.md) -- I-customize ang hitsura at pakiramdam ng iyong site
-- [Mga File](./files.md) -- I-upload at pamahalaan ang mga file ng media
+- [Initial Setup](./initial-setup.md) -- Paandarin ang website mo sa unang pagkakataon
+- [Managing Pages](./managing-pages.md) -- Alamin kung paano gumawa at mag-ayos ng iyong mga pahina
+- [Using the Page Editor](./page-editor.md) -- Buuin at istilohan ang nilalaman ng iyong pahina gamit ang visual editor
+- [Reusable Blocks](./blocks.md) -- Gumawa ng nilalaman nang isang beses at gamitin ito sa maraming pahina
+- [Blog](./blog.md) -- Mag-publish ng balita at devotional
+- [Appearance](./appearance.md) -- I-customize ang itsura at dating ng iyong site
+- [Files](./files.md) -- Mag-upload at mamahala ng mga media file

@@ -20,7 +20,7 @@ Nachdem Sie Ihr Konto und Ihre Gemeinde erstellt haben, gibt es einige wichtige 
 
 </div>
 
-## Schritt 1: Gemeindeinformationen konfigurieren
+## Schritt 1: Gemeindeinformationen konfigurieren {#step-1-configure-your-church-information}
 
 1. Öffnen Sie das [Sprungmenü](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Einstellungen** und klicken Sie auf **Einstellungen**.
 2. Klicken Sie im Abschnitt **Gemeindeinformationen** auf **Bearbeiten**.

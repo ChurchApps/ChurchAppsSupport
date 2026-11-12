@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Gottesdienstzeiten
+## Gottesdienstzeiten {#service-times}
 
 Basispfad: `/attendance/servicetimes`
 

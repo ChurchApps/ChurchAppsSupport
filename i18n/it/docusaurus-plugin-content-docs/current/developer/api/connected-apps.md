@@ -182,7 +182,7 @@ Gli URI di reindirizzamento registrati devono corrispondere esattamente al `redi
 | `POST /membership/oauth/clients` | Server.Admin | Crea o aggiorna un client |
 | `DELETE /membership/oauth/clients/:id` | Server.Admin | Elimina un client |
 
-### Registrazione dinamica del client
+### Registrazione dinamica del client {#dynamic-client-registration}
 
 `POST /membership/oauth/register` (pubblico, RFC 7591) permette a un client come il connettore MCP di claude.ai di registrarsi da solo. È pubblicizzato dal documento `/.well-known/oauth-authorization-server` dell'API — vedi [Server MCP → Scoperta OAuth](./mcp.md#oauth-discovery).
 
@@ -202,6 +202,6 @@ Restituisce 201 con `client_id`, `client_id_issued_at`, `client_name`, `redirect
 
 Nella pagina di consenso di B1Admin, un client registrato da sé riceve un avviso che indica che si è registrato da solo, che non può mai fare più di quanto possa fare l'account B1 dell'utente stesso, e che può essere disconnesso da **Impostazioni → Sviluppatore → App connesse**.
 
-## Supporto SDK
+## Supporto SDK {#sdk-support}
 
 Il pacchetto `@churchapps/integration-sdk` incapsula ogni flusso OAuth con funzioni di supporto tipizzate — `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Vedi il README del pacchetto e [Webhook](./webhooks.md#sdk-support) per un esempio completo.

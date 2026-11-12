@@ -1,87 +1,87 @@
 ---
 title: "Mailchimp"
-description: "Synkroniser personer og gruppe- eller lagrede listemedlemskap fra B1 Admin til et Mailchimp-publikum som tagger, med oppsett, første import og feilsøking."
+description: "Synkroniser personer i B1 Admin og medlemskap i grupper eller lagrede lister til en Mailchimp-målgruppe som merkelapper, med oppsett, første import og feilsøking."
 ---
 
 # Mailchimp
 
 <div class="article-intro">
 
-Holde en Mailchimp-publikum synkronisert med B1 automatisk: folk flyter inn med deres navn, e-post og telefon; gruppe- og listemedlemskap blir Mailchimp-tagger; slettede folk blir arkivert. Synkroniseringen er innebygd i B1 — ingen tredjepartstjeneste, ingen per-oppgave-måling, og endringer ankommer i nær sanntid i stedet for på en nightly tidsplan.
+Hold en Mailchimp-målgruppe automatisk synkronisert med B1. Personer kommer inn med navn, e-post og telefon. Medlemskap i grupper og lister blir Mailchimp-merkelapper, og slettede personer arkiveres. Synkroniseringen er innebygd i B1. Det er ingen tredjepartstjeneste og ingen måling per oppgave, og endringer kommer nesten i sanntid i stedet for på en nattlig plan.
 
 </div>
 
 <div class="prereqs">
-<h4>Før du starter</h4>
+<h4>Før du begynner</h4>
 
-- En [Mailchimp](https://mailchimp.com)-konto med publikummet du vil at B1 skal administrere
-- En Mailchimp **API-nøkkel** (Mailchimp: profilikon → **Konto & billing → Ekstras → API-nøkler**)
-- Din **publikum-ID** (Mailchimp: **Publikum → Innstillinger → Publikumnavn og standarder**)
-- En B1Admin-bruker med **Rediger innstillinger**-tilgang
+- En [Mailchimp](https://mailchimp.com)-konto med målgruppen du vil at B1 skal administrere
+- En Mailchimp **API-nøkkel** (Mailchimp: profilikon → **Konto og fakturering → Tillegg → API-nøkler**)
+- Din **målgruppe-ID** (Mailchimp: **Målgruppe → Innstillinger → Målgruppenavn og standarder**)
+- En B1 Admin-bruker med tillatelsen **Rediger innstillinger**
 
 </div>
 
-## Hva som synkroniseres
+## Hva som synkroniseres {#what-syncs}
 
-| B1-endring | Mailchimp-effekt |
+| Endring i B1 | Effekt i Mailchimp |
 |---|---|
-| Person lagt til eller oppdatert | Abonnent lagt til/oppdatert (fornavn, etternavn, telefon; nye abonnenter kommer som `abonnent`) |
-| Person slettet (eller GDPR-slettet) | Abonnent arkivert |
-| Personen blir medlem av en gruppe | Tag navngitt etter gruppen lagt til |
-| Person forlater en gruppe | Den tagen fjernet |
-| Person trer inn i en lagret liste | Tag navngitt etter listen lagt til |
-| Person forlater en lagret liste | Den tagen fjernet |
+| Person lagt til eller oppdatert | Abonnent lagt til eller oppdatert (fornavn, etternavn, telefon. Nye abonnenter kommer inn som `subscribed`) |
+| Person slettet (eller slettet etter GDPR) | Abonnent arkivert |
+| Person blir med i en gruppe | Merkelapp med gruppens navn legges til |
+| Person forlater en gruppe | Den merkelappen fjernes |
+| Person kommer inn i en lagret liste | Merkelapp med listens navn legges til |
+| Person forlater en lagret liste | Den merkelappen fjernes |
 
-**Lagrede lister er vanligvis den bedre tag-kilden.** En B1 [lagret liste](/docs/b1-admin/people/lists) er en regelbasert publikum som re-evaluerer seg selv — "alle ved Nord-campus," "medlemmer som valgte inn i pastoral e-poster." Pek Mailchimp-segmentene dine på list-tagger og synkroniseringen vedlikeholder dem; bruk gruppe-tagger for ministry-team-postinger.
+**Lagrede lister er vanligvis den beste kilden til merkelapper.** En [lagret liste](/docs/b1-admin/people/lists) i B1 er en regelbasert målgruppe som evaluerer seg selv på nytt, for eksempel «alle på Nordre kampus» eller «medlemmer som har takket ja til pastorale e-poster». Pek Mailchimp-segmentene dine på listemerkelappene, så vedlikeholder synkroniseringen dem. Bruk gruppemerkelapper til utsendelser til tjenesteteam.
 
-Synkroniseringen er **enveis** (B1 → Mailchimp) og berører bare Mailchimp-standard-felt, så det kan ikke være i konflikt med merge-felt eller segmenter du administrerer i Mailchimp.
+Synkroniseringen går **én vei** (B1 → Mailchimp) og rører bare Mailchimps standardfelt. Den kan derfor ikke komme i konflikt med flettefelt eller segmenter du administrerer i Mailchimp.
 
-## Oppsett
+## Oppsett {#setup}
 
-1. Gå til **Innstillinger → Utvikler → Webhooks → Ny Webhook** i B1Admin.
-2. Sett **Koblingtype** til **Mailchimp**.
-3. Lim inn din **Mailchimp API-nøkkel** og **publikum-ID**. Nøkkelen lagres kryptert og vises aldri igjen.
-4. De relevante hendelsene er forhåndsvalgte; avmerke eventuelle du ikke vil ha (f.eks. la person-hendelser være påslått men hopp over gruppe-tagger).
-5. Lagre. B1 verifiserer nøkkelen og publikummet mot Mailchimp før aksept — en stavefeil mislykkes umiddelbart med en grunn.
+1. I B1 Admin går du til **Innstillinger → Utvikler → Webhooks → Ny webhook**.
+2. Sett **Connector-type** til **Mailchimp**.
+3. Lim inn **Mailchimp API-nøkkel** og **Målgruppe-ID**. Nøkkelen lagres kryptert og vises aldri igjen.
+4. De relevante hendelsene er forhåndsvalgt. Fjern merket for dem du ikke vil ha (f.eks. la personhendelser være på, men hopp over gruppemerkelapper).
+5. Lagre. B1 verifiserer nøkkelen og målgruppen mot Mailchimp før den godtar dem. En skrivefeil mislykkes umiddelbart med en begrunnelse.
 
-Bruk **Send Test** når som helst for å re-verifisere forbindelsen. Hvert synkroniseringsforsøk er logget i webhook-leveringshistorikken med Mailchimp's faktiske svar, og mislykket leveringer prøver igjen automatisk med backoff i omtrent fem dager.
+Åpne webhooken på nytt og klikk på **Send testhendelse** når som helst for å bekrefte tilkoblingen på nytt. For Mailchimp sjekker den nøkkelen og målgruppen i stedet for å sende en prøveabonnent. Hvert synkroniseringsforsøk blir logget i webhookens leveranselogg, med Mailchimps faktiske svar. Mislykkede leveranser prøves automatisk på nytt med økende ventetid i omtrent fem dager.
 
-## Initial import
+## Første import {#initial-import}
 
-Koblingen synkroniserer *endringer* fra det øyeblikk den er på; den fyller ikke ut din eksisterende katalog på forhånd. For oppsettsdag:
+Koblingen synkroniserer *endringer* fra det øyeblikket den er slått på. Den fyller ikke ut eksisterende katalog bakover i tid. Slik gjør du på oppsettsdagen:
 
-1. Gå til **People** i B1Admin, søk etter folkene du vil ha (eller kjør en lagret liste), og klikk **Eksporter** for å laste ned en CSV.
-2. I Mailchimp bruk **Publikum → Importer kontakter** for å laste CSV, bruk eventuelle tagger under import.
+1. I B1 Admin går du til **Personer**, søker etter personene du vil ha (eller kjører en lagret liste), og klikker på **Eksporter** for å laste ned en CSV-fil.
+2. I Mailchimp bruker du **Målgruppe → Importer kontakter** for å laste inn CSV-filen, og legger til eventuelle merkelapper under importen.
 
-Å gjøre den initiale lasten gjennom Mailchimp's importer holder deg i kontroll over samtykkespørsmålet — bare importer folk som faktisk har gått med på å motta e-poster dine. Bulk-importering av hele katalog som abonnert-kontakter kan bryte med Mailchimp's vilkår og antispam-lov (CAN-SPAM/GDPR).
+Ved å gjøre den første innlastingen gjennom Mailchimps importverktøy beholder du kontrollen over samtykket. Importer bare personer som faktisk har godtatt å motta e-posten din. Masseimport av en hel katalog som abonnenter kan bryte Mailchimps vilkår og antispam-lovgivning (CAN-SPAM/GDPR).
 
-## Grenser & merknader
+## Begrensninger og merknader {#limits--notes}
 
-- **Enveis synkronisering.** Avmeldinger, bounces, og rediteringer gjort i Mailchimp flyter ikke tilbake til B1. Noen som avmelder seg i Mailchimp kan fortsatt motta e-post sendt direkte fra B1 — behandle Mailchimp som sannhetskilden for bulk-mail-samtykke.
-- **Folk uten e-postadresse hoppes over** (logget som sådan i leveringshistorikken) — Mailchimp-abonnenter er nøklede etter e-post.
-- **E-postadresseendringer oppretter en ny abonnent.** Mailchimp identifiserer mennesker etter e-post, så å endre noens e-post i B1 legger dem under den nye adressen; den gamle abonnenten blir igjen til du arkiverer den i Mailchimp.
-- **Bare standard-felt synkroniseres** -- fornavn, etternavn, telefon. Medlemskaps-status, campus, og tilpasset B1-felt mapper ikke til Mailchimp merge-felt i denne versjonen; bruk listetagg for å segmentere i stedet.
-- **Tagnavn er gruppe/listenavn.** Å omdøpe en gruppe eller liste starter tagging under det nye navnet; den gamle tagen forblir på eksisterende abonnenter til fjernet i Mailchimp.
-- **Mailchimp's kontaktgrenser gjelder fortsatt** -- en synkronisering som skyver et free-tier publikum forbi grensen vil logge `Member limit reached`-feil i leveringshistorikken.
+- **Synkroniseringen går én vei.** Avmeldinger, returnerte e-poster og endringer som gjøres i Mailchimp, flyttes ikke tilbake til B1. Noen som melder seg av i Mailchimp, kan fortsatt motta e-post sendt direkte fra B1. Behandle Mailchimp som den viktigste kilden for samtykke til masseutsendelser.
+- **Personer uten e-postadresse hoppes over** (logges slik i leveranseloggen). Mailchimp-abonnenter identifiseres med e-post.
+- **Endring av e-postadresse oppretter en ny abonnent.** Mailchimp identifiserer personer med e-post. Hvis du endrer noens e-post i B1, legges de til under den nye adressen, og den gamle abonnenten forblir til du arkiverer den i Mailchimp.
+- **Bare standardfelt synkroniseres**: fornavn, etternavn og telefon. Medlemsstatus, kampus og egendefinerte B1-felt kobles ikke til flettefelt i Mailchimp i denne versjonen. Bruk listemerkelapper til segmentering i stedet.
+- **Merkelappnavn er gruppe- eller listenavnene.** Hvis du endrer navnet på en gruppe eller liste, begynner merkelappingen under det nye navnet. Den gamle merkelappen blir værende på eksisterende abonnenter til den fjernes i Mailchimp.
+- **Mailchimps kontaktgrenser gjelder fortsatt.** En synkronisering som dytter en gratis målgruppe over taket, logger feilen `Member limit reached` i leveranseloggen.
 
-## Andre oppskrifter (Zapier / Make)
+## Andre oppskrifter (Zapier / Make) {#other-recipes-zapier--make}
 
-Alt utover publikum-synkronisering — tagging av givere på `donation.created`, en Mailchimp → B1 reversretning, eller synkronisering til en helt annen e-post-plattform (Constant Contact, Brevo, etc.) — er fortsatt tilgjengelig gjennom [Zapier](../zapier.md) eller [Make](../make.md), som utløser på de samme webhook-hendelsene:
+Alt utover synkronisering av målgruppe (merkelapp til givere ved `donation.created`, motsatt retning fra Mailchimp til B1, eller synkronisering til en helt annen e-postplattform, som Constant Contact, Brevo osv.) er fortsatt tilgjengelig gjennom [Zapier](../zapier.md) eller [Make](../make.md). De utløses av de samme webhook-hendelsene:
 
-- **Tagg givere:** B1 *Ny donasjon* → B1 *Finn person* → Mailchimp *Legg til abonnent til tag* (`Ga-2026`)
+- **Merk givere:** B1 *Ny gave* → B1 *Finn person* → Mailchimp *Legg abonnent til merkelapp* (`Gave-2026`)
 - **Toveis:** Mailchimp *Ny abonnent* → B1 *Opprett person*
 
-Hvis du tidligere kjørte person/gruppe-synkronisering gjennom Zapier, slå av disse Zaps etter å ha aktivert den innebygde koblingen — å kjøre begge doble-prosesser hver hendelse og brenner Zapier-oppgaver for ingenting.
+Hvis du tidligere koblet person- og gruppesynkronisering gjennom Zapier, slår du av disse Zapene etter at du har aktivert den innebygde koblingen. Å kjøre begge dobbeltbehandler hver hendelse og bruker Zapier-oppgaver uten grunn.
 
-## Problemløsing
+## Feilsøking {#troubleshooting}
 
-- **Lagre mislykkes med "Mailchimp avviste API-nøkkelen"** — nøkkelen ble tilbakekalt eller stavefeil. Nøkler må ende med et data-senter-suffiks som `-us21`.
-- **Lagre mislykkes med "publikum ikke funnet"** — publikum-ID-en eksisterer ikke under den kontoen. Kopier det fra **Publikum → Innstillinger → Publikumnavn og standarder** (det er ikke publikumets navn).
-- **En person vises aldri i Mailchimp** — sjekk webhook-leveringshistorikken. "Hoppet over: person har ingen e-postadresse" betyr nøyaktig det; en `4xx` fra Mailchimp viser årsaken i responsekroppen.
-- **Leveringer stoppet helt** — etter gjentatte utmattede leveringer deaktiveres webhook automatisk. Rett årsaken (vanligvis en tilbakekalt nøkkel), re-aktiver den, og bruk **Send Test** for å bekref te.
+- **Lagring mislykkes med «Mailchimp rejected the API key»**: nøkkelen er trukket tilbake eller har en skrivefeil. Nøkler må ende med et datasenter-suffiks som `-us21`.
+- **Lagring mislykkes med «audience not found»**: målgruppe-ID-en finnes ikke under den kontoen. Kopier den fra **Målgruppe → Innstillinger → Målgruppenavn og standarder** (det er ikke målgruppens navn).
+- **En person dukket aldri opp i Mailchimp**: sjekk webhookens leveranselogg. «Skipped: person has no email address» betyr akkurat det. En `4xx` fra Mailchimp viser årsaken i svarteksten.
+- **Leveranser har stoppet helt**: etter gjentatte mislykkede leveranser slår webhooken seg automatisk av. Løs årsaken (vanligvis en trukket nøkkel), aktiver den igjen, og bruk **Send testhendelse** for å bekrefte.
 
-## Se også
+## Se også {#see-also}
 
-- [Webhooks (utviklerreferanse)](/docs/developer/api/webhooks) — motoren under, hendelseskatalog, leveranse/forsøk-semantikk
-- [Lagrede lister](/docs/b1-admin/people/lists) — regelbasert publikum som mapper naturlig til Mailchimp-tagger
-- [Zapier (oversikt)](../zapier.md) — for oppskrifter utover publikum-synkronisering
+- [Webhooks (referanse for utviklere)](/docs/developer/api/webhooks): motoren under, hendelseskatalogen og semantikken for leveranse og nytt forsøk
+- [Lagrede lister](/docs/b1-admin/people/lists): regelbaserte målgrupper som passer naturlig til Mailchimp-merkelapper
+- [Zapier (oversikt)](../zapier.md): for oppskrifter utover synkronisering av målgruppe

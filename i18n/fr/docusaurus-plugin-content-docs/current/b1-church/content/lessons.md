@@ -36,7 +36,7 @@ L'onglet **Leçons** vous a donné accès au curriculum et aux matériels d'appr
 
 Votre connexion est reportée automatiquement lorsque vous ouvrez l'onglet Leçons. Vous n'avez pas besoin de vous connecter à nouveau séparément à Lessons.church.
 
-## Ce que vous pouvez faire
+## Ce que vous pouvez faire {#what-you-can-do}
 
 Une fois dans l'onglet Leçons, vous pouvez parcourir le curriculum que votre église a mis à disposition. Selon ce que votre église a configuré, vous pouvez trouver :
 

@@ -1,90 +1,91 @@
 ---
-title: "निर्देशिका प्रिंट करें"
-description: "B1 Admin से परिवार के अनुसार समूहित, प्रिंट योग्य सदस्य डायरेक्टरी बनाएँ, जिसमें फ़ोटो, संपर्क जानकारी और जन्मदिन हों, letter आकार के कागज़ के लिए।"
+title: "Directory छापें"
+description: "B1 Admin से फ़ोटो, संपर्क जानकारी, और जन्मदिन सहित household के अनुसार समूहित, छपने योग्य member directory बनाएँ, जो letter कागज़ के आकार में हो।"
 ---
 
-# निर्देशिका प्रिंट करें
+# Directory छापें
 
 <div class="article-intro">
 
-Print Directory विशेषता आपकी चर्च के लिए एक formatted, printable member directory generate करती है। यह सदस्यों को household द्वारा organize करता है, contact information और photos शामिल करता है, और standard letter-size paper पर printed होने पर professional दिखने के लिए डिज़ाइन किया गया है।
+Print Directory सुविधा आपके चर्च के लिए एक व्यवस्थित, छपने योग्य member directory बनाती है। यह सदस्यों को household के अनुसार व्यवस्थित करती है, संपर्क जानकारी और फ़ोटो शामिल करती है, और मानक letter आकार के कागज़ पर छपने पर पेशेवर दिखने के लिए डिज़ाइन की गई है।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको लोगों को view करने की अनुमति के साथ एक सक्रिय B1 Admin खाता चाहिए।
-- सर्वोत्तम परिणामों के लिए आपकी निर्देशिका में लोगों के पास photos और contact information भरी होनी चाहिए।
+- लोगों को देखने की अनुमति वाला एक सक्रिय B1 Admin account चाहिए।
+- सर्वोत्तम परिणामों के लिए directory के लोगों की फ़ोटो और संपर्क जानकारी भरी होनी चाहिए।
 
 </div>
 
-## Print Directory खोलना
+## Print Directory खोलना {#opening-the-print-directory}
 
-1. B1 Admin में **People** पर navigate करें।
-2. लोगों के पेज हेडर में **Print Directory** पर क्लिक करें।
-3. Print Directory एक नए browser tab में खुलता है और आपकी निर्देशिका data को load करना शुरू करता है।
-4. लगभग 1.5 सेकंड के बाद, आपकी browser की print dialog स्वचालित रूप से दिखाई देगी।
+1. B1 Admin में **People** पर जाएँ।
+2. People पेज हेडर में **Print Directory** पर क्लिक करें।
+3. Print Directory एक नए ब्राउज़र टैब में खुलती है और आपका directory डेटा लोड करना शुरू करती है।
+4. लगभग 1.5 सेकंड बाद, आपके ब्राउज़र का print dialog अपने-आप दिखेगा।
 
 :::tip
-निर्देशिका एक अलग tab में खुलती है ताकि आप इसे print कर सकें People पृष्ठ छोड़े बिना। print dialog दिखाई देने के बाद, tab स्वचालित रूप से वापस navigate करता है।
+directory एक अलग टैब में खुलती है ताकि आप People पेज छोड़े बिना उसे छाप सकें। print dialog बंद होने के बाद, वह टैब People पेज पर बदल जाता है, ताकि आप उसे बंद कर सकें या वहीं काम जारी रख सकें।
 :::
 
-## क्या शामिल होता है
+## इसमें क्या शामिल होता है {#what-gets-included}
 
-print directory में आपकी चर्च के सभी **active members** शामिल हैं। विशेष रूप से:
+Print directory में आपके चर्च के सभी **सक्रिय सदस्य** शामिल होते हैं। विशेष रूप से:
 
-- **Inactive**, **Visitor**, या **Deceased** membership status वाले लोग स्वचालित रूप से exclude किए जाते हैं।
-- जो लोग निर्देशिका से **opted out** हैं वे exclude किए जाते हैं।
-- बाकी सभी **household** द्वारा grouped हैं।
+- **Inactive**, **Visitor**, या **Deceased** membership status वाले लोग अपने-आप बाहर रखे जाते हैं।
+- जिन लोगों ने directory से **opt out** किया है, उन्हें बाहर रखा जाता है।
+- बाकी सभी लोग **household** के अनुसार समूहित होते हैं।
 
-### केवल अपने Search Results को Print करना
+### केवल अपने खोज परिणाम छापना {#printing-only-your-search-results}
 
-लोगों के पृष्ठ पर एक search चलाने के बाद -- एक quick search, एक [Advanced Search](./searching-people.md#advanced-search), एक [Saved List](./lists.md), या एक [AI Search](./ai-search.md) -- **Print Directory** बटन **Print Results** में बदल जाता है। इसे क्लिक करने से पूरी चर्च की बजाय केवल आपके results में लोगों की एक निर्देशिका print होती है, समान layout का उपयोग करते हुए।
+People पेज पर खोज चलाने के बाद -- त्वरित खोज, [Advanced Search](./searching-people.md#advanced-search), [Saved List](./lists.md), या [AI Search](./ai-search.md) -- **Print Directory** बटन **Print Results** में बदल जाता है। उस पर क्लिक करने से पूरे चर्च के बजाय केवल आपके परिणामों के लोगों की directory उसी लेआउट में छपती है।
 
-जब search results को print करते हैं, तो membership-status filter ऊपर लागू नहीं होता है: हर किसी को आपने जो खोजा है वह शामिल होता है, यहां तक कि Visitors या Inactive लोग भी। जो लोग निर्देशिका से opted out हैं वे अभी भी छोड़े जाते हैं। पूरी निर्देशिका को print करने पर वापस जाने के लिए, पहले अपनी search को clear करें।
+खोज परिणाम छापते समय, ऊपर का membership-status फ़िल्टर लागू नहीं होता: जिन लोगों की आपने खोज की, वे सभी शामिल होते हैं, यहाँ तक कि Visitors या Inactive लोग भी। जिन लोगों ने directory से opt out किया है, वे फिर भी बाहर रहते हैं। पूरी directory छापने पर वापस जाने के लिए, पहले अपनी खोज साफ़ करें।
 
-## निर्देशिका Layout
+## Directory का लेआउट {#directory-layout}
 
-printed directory के दो भाग हैं:
+छपी हुई directory के दो भाग होते हैं:
 
-### कवर पेज
+### कवर पेज {#cover-page}
 
-पहले पृष्ठ में शामिल है:
-- आपकी चर्च का नाम
+पहले पन्ने पर शामिल है:
+- आपका चर्च लोगो, यदि सेट है
+- आपके चर्च का नाम
 - शीर्षक "Member Directory"
 - वर्तमान वर्ष
-- आपकी चर्च का स्थान
-- कुल households की गणना जो शामिल हैं
+- आपके चर्च का शहर और राज्य
+- छपने की तारीख और शामिल households की गिनती
 
-### सदस्य सूचियां
+### सदस्य सूचियाँ {#member-listings}
 
-बाकी पृष्ठों में households को अंतिम नाम द्वारा alphabetically सूचीबद्ध करते हैं। प्रत्येक household card दिखाता है:
+शेष पन्ने households को अंतिम नाम के अनुसार वर्णानुक्रम में सूचीबद्ध करते हैं। हर household कार्ड दिखाता है:
 
-- **Photos** -- प्रत्येक household सदस्य के लिए Circular thumbnails, उनके नाम के साथ नीचे
-- **Household display name** -- उदाहरण के लिए, "The Smith Family", "John & Jane Doe", या individuals के लिए केवल व्यक्ति का नाम
-- **Address** -- Street address, city, state, और zip
-- **Phone** -- Home या mobile number
-- **Email** -- Primary email address
-- **Birthdays** -- प्रत्येक household सदस्य के लिए individual dates के रूप में formatted
-- **Anniversary** -- यदि recorded है
+- **फ़ोटो** -- हर household सदस्य के लिए गोल thumbnails, उनके नाम के साथ नीचे
+- **Household का प्रदर्शन नाम** -- जैसे "The Smith Family", "John & Jane Doe", या व्यक्तियों के लिए केवल उनका नाम
+- **पता** -- सड़क का पता, शहर, राज्य, और zip
+- **फ़ोन** -- घर का नंबर, या यदि household में किसी का घर का नंबर नहीं है तो मोबाइल नंबर
+- **Email** -- मुख्य email पता
+- **जन्मदिन** -- हर सदस्य का पहला नाम और जन्मदिन (महीना और दिन)
+- **वर्षगाँठ** -- यदि दर्ज हो
 
-Households को **alphabetical sections** (A, B, C, ...) में organize किया जाता है प्रत्येक letter group से पहले एक decorative section header के साथ। दो household cards प्रत्येक row पर side by side दिखाई देते हैं।
+Households **वर्णानुक्रम अनुभागों** (A, B, C, ...) में व्यवस्थित होते हैं, हर अक्षर समूह से पहले एक सजावटी अनुभाग शीर्षक के साथ। हर पंक्ति में दो household कार्ड एक-दूसरे के बगल में आते हैं।
 
-## Print Settings
+## Print सेटिंग्स {#print-settings}
 
-निर्देशिका **letter-size paper** (8.5" × 11") के लिए formatted है 0.5-inch margins के साथ। जब browser print dialog दिखाई देता है:
+directory **letter-size कागज़** (8.5" × 11") के लिए 0.5-इंच मार्जिन के साथ फ़ॉर्मेट की गई है। जब ब्राउज़र print dialog दिखे:
 
-- paper size को **Letter** पर सेट रहने दें
-- अपने browser की print settings में **Background graphics** (कभी-कभी "Print backgrounds" कहा जाता है) को enable करें यदि आप चाहते हैं कि section headers उनकी color styling के साथ print हों
-- Portrait orientation recommended है
+- कागज़ का आकार **Letter** पर रहने दें
+- यदि आप चाहते हैं कि अनुभाग शीर्षक अपनी रंग-शैली के साथ छपें, तो अपने ब्राउज़र की print सेटिंग्स में **Background graphics** (कभी-कभी "Print backgrounds" कहा जाता है) चालू करें
+- Portrait अभिविन्यास की सिफ़ारिश की जाती है
 
 :::info
-निर्देशिका page breaks को respect करती है -- household cards और section headers को pages में विभाजित नहीं किया जाएगा।
+directory पेज ब्रेक का सम्मान करती है — household कार्ड और अनुभाग शीर्षक पन्नों के बीच विभाजित नहीं होंगे।
 :::
 
-## संबंधित लेख
+## संबंधित लेख {#related-articles}
 
-- [लोगों को खोजना](./searching-people.md) -- print करने से पहले अपनी निर्देशिका को filter करें
-- [डेटा निर्यात करना](./exporting-data.md) -- निर्देशिका डेटा को spreadsheet के रूप में export करें
-- [लोग जोड़ना](./adding-people.md) -- सदस्य रिकॉर्ड को जोड़ें या update करें
+- [Searching People](./searching-people.md) -- छापने से पहले अपनी directory फ़िल्टर करें
+- [Exporting Data](./exporting-data.md) -- directory डेटा को इसके बजाय spreadsheet के रूप में निर्यात करें
+- [Adding People](./adding-people.md) -- सदस्य रिकॉर्ड जोड़ें या अपडेट करें

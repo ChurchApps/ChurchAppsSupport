@@ -1,52 +1,52 @@
 ---
 title: "Mobile Message"
-description: "Ikonekta ang event ng B1 Admin sa Mobile Message, isang Australian SMS API, gamit ang Zapier o Make webhook para sa welcome, donation, at reminder na text."
+description: "Ikonekta ang mga event ng B1 Admin sa Mobile Message, isang Australian SMS API, gamit ang mga webhook ng Zapier o Make para magpadala ng mga welcome, donation, at reminder na text."
 ---
 
 # Mobile Message
 
 <div class="article-intro">
 
-Ang [Mobile Message](https://mobilemessage.com.au) ay isang Australian SMS API — popular sa AU churches dahil nag-aalok ito ng lokal na mga numero at competitive AU pricing kung saan ang Clearstream at Text In Church ay US-centric. Ang Mobile Message ay walang first-class Zapier app ngayon, ngunit nag-publish ito ng isang public REST API, kaya maaari mong i-wire ang B1 events sa Mobile Message texts sa pamamagitan ng **Webhooks by Zapier** (o ang HTTP module ng Make) sa ilang minuto.
+[Mobile Message](https://mobilemessage.com.au) ay isang Australian SMS API — popular sa mga simbahan sa AU dahil nag-aalok ito ng lokal na numero at mapagkumpitensyang presyo sa AU kung saan nakasentro sa US ang Clearstream at Text In Church. Walang first-class na Zapier app ang Mobile Message sa ngayon, pero naglalathala ito ng pampublikong REST API, kaya maikakabit mo ang mga event ng B1 sa mga text ng Mobile Message sa pamamagitan ng **Webhooks by Zapier** (o HTTP module ng Make) sa loob ng ilang minuto.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Isang [Mobile Message](https://mobilemessage.com.au) account na may registered Sender ID at API credentials (API username + password sa ilalim ng *Account → API Settings*)
+- Isang [Mobile Message](https://mobilemessage.com.au) account na may nakarehistrong Sender ID at API credential (API username + password sa ilalim ng *Account → API Settings*)
 - Isang [Zapier](https://zapier.com) account (o [Make](https://www.make.com))
-- Isang B1Admin user na may **Edit Settings** permission
+- Isang B1Admin user na may pahintulot na **Edit Settings**
 
 </div>
 
-## Ano ang Maaari Mong I-wire Up
+## Ano ang Puwede Mong Ikabit {#what-you-can-wire-up}
 
-Ang API ng Mobile Message ay "send SMS"-shaped — walang triggers, lamang outbound text. Kaya ang mga recipe ay lahat B1 → SMS:
+Ang API ng Mobile Message ay hugis "magpadala ng SMS" — walang trigger, outbound na text lang. Kaya ang lahat ng recipe ay B1 → SMS:
 
-| Direction | B1 trigger | Outcome |
+| Direksyon | Trigger ng B1 | Resulta |
 |---|---|---|
 | B1 → Mobile Message | `person.created` | Welcome text sa bagong tao |
 | B1 → Mobile Message | `donation.created` | Thank-you text sa donor |
-| B1 → Mobile Message | `form.submission.created` | I-page ang on-call team |
-| B1 → Mobile Message | `event.created` | Reminder broadcast sa listahan |
+| B1 → Mobile Message | `form.submission.created` | Mag-page sa on-call team |
+| B1 → Mobile Message | `event.created` | Reminder broadcast sa isang listahan |
 
-## Setup
+## Setup {#setup}
 
-### 1. Mag-mint ng isang B1 API key
+### 1. Gumawa ng B1 API key {#1-mint-a-b1-api-key}
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — para sa trigger webhook upang mag-register
-- `people:read` — upang hanapin ang phone number ng recipient mula sa `personId`
+- `settings:write` — para marehistro ang webhook ng trigger
+- `people:read` — para mahanap ang telepono ng tatanggap mula sa `personId`
 
-### 2. Bumuo ng Zap gamit ang Webhooks by Zapier
+### 2. Buuin ang Zap gamit ang Webhooks by Zapier {#2-build-the-zap-with-webhooks-by-zapier}
 
 1. **Trigger** — B1.church: piliin ang event na gusto mo (hal. New Donation).
-2. **Action** — B1.church: Find Person (gamit ang `data.personId`) upang makuha ang phone number at pangalan.
-3. **Action** — Webhooks by Zapier: **POST**. I-configure tulad ng nasa ibaba.
+2. **Aksyon** — B1.church: Find Person (gamit ang `data.personId`) para makuha ang telepono at pangalan.
+3. **Aksyon** — Webhooks by Zapier: **POST**. I-configure gaya ng nasa ibaba.
 
-Ang POST step's settings:
+Ang mga setting ng POST step:
 
 - **URL** — `https://api.mobilemessage.com.au/v1/messages`
 - **Payload Type** — JSON
@@ -55,54 +55,54 @@ Ang POST step's settings:
   {
     "messages": [
       {
-        "to": "`{{step2_phone}}`",
-        "message": "Thanks for your gift, `{{step2_first_name}}`!",
+        "to": "{{step2_phone}}",
+        "message": "Thanks for your gift, {{step2_first_name}}!",
         "sender": "YourChurch"
       }
     ]
   }
   ```
-- **Headers** — `Content-Type: application/json` (Webhooks by Zapier ay nagdadagdag nito nang awtomatiko)
-- **Basic Auth** — itakda ang *Basic Auth* field sa `<api_username>|<api_password>` (Zapier ay nag-convert sa tamang `Authorization: Basic …` header)
+- **Headers** — `Content-Type: application/json` (awtomatikong idinadagdag ito ng Webhooks by Zapier)
+- **Basic Auth** — itakda ang field na *Basic Auth* sa `<api_username>|<api_password>` (kino-convert ito ng Zapier sa tamang header na `Authorization: Basic …`)
 
-I-on ang Zap. Magpadala ng test gift sa B1Admin upang i-verify ang text ay dumating.
+I-on ang Zap. Magpadala ng test na regalo sa B1Admin para kumpirmahing dumating ang text.
 
-## Mga Karaniwang Recipes
+## Karaniwang Recipe {#common-recipes}
 
-### Event reminders sa umaga
+### Mga reminder sa event tuwing umaga {#event-reminders-the-morning-of}
 
-- **Trigger** — Schedule by Zapier (daily, 7am)
-- **Action** — B1.church: Find Events para sa ngayon (o gamitin ang Find step na may fixed date filter, o mag-store ng today's event list sa isang Google Sheet)
-- **Action** — Webhooks by Zapier: POST sa Mobile Message na may event list sa registered subscriber group
+- **Trigger** — Schedule by Zapier (araw-araw, 7am)
+- **Aksyon** — itago ang listahan ng event ngayong araw sa isang Google Sheet (o ibang app na mababasa ng Zapier) at hanapin ang mga row ngayong araw — walang action ang Zapier app ng B1 para sa paghahanap ng mga event
+- **Aksyon** — Webhooks by Zapier: POST sa Mobile Message kasama ang listahan ng event sa isang nakarehistrong subscriber group
 
-### Gamitin ang batch endpoint para sa broadcast sa listahan
+### Gamitin ang batch endpoint para sa broadcast sa listahan {#use-the-batch-endpoint-for-a-list-broadcast}
 
-Ang `/v1/messages` endpoint ng Mobile Message ay tumatanggap ng hanggang 10,000 messages bawat tawag. Upang mag-broadcast sa B1 group:
+Tumatanggap ang endpoint na `/v1/messages` ng Mobile Message ng hanggang 10,000 mensahe bawat tawag. Para mag-broadcast sa isang grupo ng B1:
 
-- **Trigger** — B1.church: New Form Submission (filter sa specific form)
-- **Action** — B1.church: List Group Members para sa target group (sa pamamagitan ng *Webhooks by Zapier — GET* step sa `/membership/groupmembers?groupId=…`)
-- **Action** — Formatter by Zapier → Utilities → Line-itemize ang response sa isang `messages` array
-- **Action** — Webhooks by Zapier: POST ang buong array sa `/v1/messages`
+- **Trigger** — B1.church: New Form Submission (i-filter sa isang partikular na form)
+- **Aksyon** — Webhooks by Zapier: GET sa `/membership/groupmembers?groupId=…` para ilista ang mga miyembro ng target na grupo (walang list action ang Zapier app ng B1 para dito; ipadala ang API key bilang header na `Authorization: Bearer cak_…`)
+- **Aksyon** — Formatter by Zapier → Utilities → Line-itemize ang response sa isang array ng `messages`
+- **Aksyon** — Webhooks by Zapier: POST ang buong array sa `/v1/messages`
 
-### Make alternative
+### Alternatibo sa Make {#make-alternative}
 
-Kung mas gusto mo ang Make, ilagay ang **HTTP — Make a request** module pagkatapos ng B1 Watch Events trigger, i-configure ito sa parehong paraan (POST, Basic Auth, JSON body). Tingnan ang [Make overview](../make.md) para sa B1 side.
+Kung mas gusto mo ang Make, ilagay ang **HTTP — Make a request** module pagkatapos ng B1 Watch Events trigger, i-configure ito nang pareho (POST, Basic Auth, JSON body). Tingnan ang [Make overview](../make.md) para sa panig ng B1 — tandaan na hindi pa nailalabas ang B1.church Make app.
 
-## Mga Limitasyon at Mga Tala
+## Mga Limitasyon at Paalala {#limits--notes}
 
-- **Ang Basic Auth ay ang tanging authentication method** — Ang Mobile Message ay nag-issue ng username at password mula sa dashboard. I-treat ang pareho bilang secrets.
-- **`sender` ay dapat na isang registered Sender ID** sa iyong Mobile Message account, o ang send ay magbabalik ng `400 Invalid sender`. Ang AU regulations ay nangangailangan ng sender registration.
-- **Ang AU phone numbers** ay maaaring `0412345678` (lokal) o `+61412345678` (international). Ang API ay tumatanggap ng pareho, ngunit normalize sa `+61…` kung ikaw ay nagpapadala din sa ibang bansa.
-- **Hanggang 10,000 messages bawat request** — kapaki-pakinabang para sa mga broadcast, ngunit ang isang solong B1 webhook delivery ay malabong maglalabas ng listahan na ganyan kalaki; i-reserve ang batch endpoint para sa scheduled bulk Zaps.
+- **Basic Auth ang tanging paraan ng authentication** — naglalabas ang Mobile Message ng username at password mula sa dashboard. Ituring na sikreto ang pareho.
+- **Dapat na nakarehistrong Sender ID sa iyong Mobile Message account ang `sender`**, kung hindi ay magbabalik ang send ng `400 Invalid sender`. Nangangailangan ng pagpaparehistro ng sender ang mga regulasyon ng AU.
+- **Maaaring `0412345678` (lokal) o `+61412345678` (internasyonal) ang mga numero sa AU.** Tinatanggap ng API ang pareho, pero i-normalize sa `+61…` kung nagpapadala ka rin sa ibang bansa.
+- **Hanggang 10,000 mensahe bawat request** — kapaki-pakinabang para sa mga broadcast, pero bihirang maglabas ng ganoon kalaking listahan ang isang delivery ng webhook ng B1; itira ang batch endpoint para sa mga naka-iskedyul na bulk Zap.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-- **POST ay nagbabalik ng `401 Unauthorized`** — Ang Basic Auth credentials ay mali. Muling kopyahin mula sa Mobile Message dashboard *Account → API Settings*. Tandaan ang username ay ang iyong account email bilang default, hindi isang hiwalay na API key.
-- **POST ay nagbabalik ng `400 Invalid sender`** — ang `sender` value ay hindi isang registered Sender ID sa iyong account. I-register ito sa Mobile Message dashboard una.
-- **Text ay dumarating ngunit ay na-truncate** — Ang Mobile Message ay naghahati ng mga mensahe sa ~160 characters sa maraming bahagi; ikaw ay nag-bill per part. Suriin ang response body — ito ay nagsasabi sa iyo ng part count.
+- **Nagbabalik ang POST ng `401 Unauthorized`** — mali ang Basic Auth credentials. Kopyahin muli mula sa dashboard ng Mobile Message na *Account → API Settings*. Tandaan na ang username ay ang email ng account mo bilang default, hindi isang hiwalay na API key.
+- **Nagbabalik ang POST ng `400 Invalid sender`** — ang halaga ng `sender` ay hindi nakarehistrong Sender ID sa account mo. Irehistro muna ito sa dashboard ng Mobile Message.
+- **Dumarating ang text pero putol** — hinahati ng Mobile Message ang mga mensaheng lampas ~160 character sa maraming bahagi; sinisingil ka kada bahagi. Tingnan ang response body — sinasabi nito ang bilang ng bahagi.
 
-## Makita Din
+## Tingnan Din {#see-also}
 
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternatibong SMS providers na may native Zapier apps (walang Webhooks-by-Zapier step na kailangan)
-- [Zapier (overview)](../zapier.md) — B1 side ng bawat Zapier recipe
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — mga alternatibong SMS provider na may native na Zapier app (hindi kailangan ng Webhooks-by-Zapier step)
+- [Zapier (pangkalahatang-tanaw)](../zapier.md) — panig ng B1 ng bawat recipe sa Zapier
 - [Mobile Message API docs](https://mobilemessage.com.au/api-documentation)

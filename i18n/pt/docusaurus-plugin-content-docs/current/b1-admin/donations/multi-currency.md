@@ -1,134 +1,123 @@
 ---
-title: "Suporte Multi-Moeda"
-description: "Registre doações em diferentes moedas no B1 Admin, com lançamento manual, doações online pelo Stripe e a conversão dos totais combinados."
+title: "Suporte a Múltiplas Moedas"
+description: "Registre e gere relatórios de doações em diferentes moedas no B1 Admin, incluindo lançamento manual, doações online pelo Stripe e a forma como os totais combinados são convertidos."
 ---
 
-# Suporte Multi-Moeda
+# Suporte a Múltiplas Moedas
 
 <div class="article-intro">
 
-O recurso multi-moeda do B1 permite que sua igreja aceite e rastreie doações em diferentes moedas. Isso é particularmente útil para igrejas com membros internacionais, missionários ou múltiplas sedes em diferentes países.
+O recurso de múltiplas moedas do B1 permite que a sua igreja aceite e acompanhe doações em diferentes moedas. Isso é especialmente útil para igrejas com membros internacionais, missionários ou várias unidades em países diferentes.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Você precisa de permissão para gerenciar doações. Consulte [Funções e Permissões](../people/roles-permissions.md) para detalhes.
-- Configure sua [doação online](./online-giving-setup.md) com Stripe, que suporta transações multi-moeda.
-- Entenda as necessidades contábeis de sua igreja para lidar com múltiplas moedas.
+- Você precisa de permissão para gerenciar doações. Veja [Funções e Permissões](../people/roles-permissions.md) para detalhes.
+- Configure as suas [doações online](./online-giving-setup.md) com o Stripe, que oferece suporte a transações em várias moedas. Uma igreja sem doações online ainda pode escolher a moeda em que as doações lançadas manualmente são registradas.
+- Entenda as necessidades contábeis da sua igreja para lidar com várias moedas.
 
 </div>
 
-## Habilitando Multi-Moeda
+A moeda da sua igreja começa com a moeda do país informado no cadastro da igreja (por exemplo, xelins quenianos para uma igreja no Quênia), e é usada caso nenhuma moeda tenha sido salva ainda. Você pode alterá-la a qualquer momento em **Configurações → Doações** (o menu suspenso **Moeda**). Se o seu país não for reconhecido, o padrão será dólares americanos.
 
-O suporte multi-moeda agora está ativado por padrão no B1. Depois de ativado:
+## Ativando as Múltiplas Moedas {#enabling-multi-currency}
 
-- Os membros podem doar em sua moeda local ao fazer doações online
-- Você pode registrar manualmente doações em qualquer moeda
-- Os relatórios de doações mostram valores em sua moeda original
-- Stripe lida com conversão de moeda automaticamente para doações online
+O suporte a múltiplas moedas já vem ativado por padrão no B1:
 
-## Moedas Suportadas
+- As doações online são cobradas na moeda escolhida nas suas configurações de **Doações**
+- Cada doação mantém a moeda em que foi registrada, e as linhas individuais de doação mostram essa moeda
+- Os totais combinados são convertidos para a moeda da sua igreja (veja [Totais Convertidos](#converted-totals))
+- O Stripe cuida da conversão para a moeda de repasse da sua conta nas doações online
 
-O sistema suporta todas as principais moedas mundiais, incluindo:
+## Moedas Suportadas {#supported-currencies}
 
-- **USD** -- Dólar Americano
+O sistema oferece suporte a todas as principais moedas do mundo, incluindo:
+
+- **USD** -- Dólar americano
 - **EUR** -- Euro
-- **GBP** -- Libra Esterlina
-- **CAD** -- Dólar Canadense
-- **AUD** -- Dólar Australiano
-- **MXN** -- Peso Mexicano
-- **BRL** -- Real Brasileiro
-- **INR** -- Rupia Indiana
-- **CNY** -- Yuan Chinês
-- **JPY** -- Iene Japonês
-- E muitos mais...
+- **GBP** -- Libra esterlina
+- **CAD** -- Dólar canadense
+- **AUD** -- Dólar australiano
+- **MXN** -- Peso mexicano
+- **BRL** -- Real brasileiro
+- **INR** -- Rupia indiana
+- **CNY** -- Yuan chinês
+- **JPY** -- Iene japonês
+- E muitas outras...
 
-As moedas disponíveis para doação online dependem das moedas suportadas pela conta Stripe.
+As moedas disponíveis para doações online dependem das moedas suportadas pela sua conta do Stripe.
 
-## Registrando Doações em Diferentes Moedas
+## Registrando Doações em Diferentes Moedas {#recording-donations-in-different-currencies}
 
-### Doações Online
+### Doações Online {#online-donations}
 
-Quando um membro faz uma doação online através do Stripe:
+Quando um membro contribui online pelo Stripe:
 
-1. Ele seleciona sua moeda preferida no checkout
-2. Stripe processa o pagamento nessa moeda
-3. A doação é registrada no B1 com o valor original da moeda
-4. Stripe lida automaticamente com qualquer conversão de moeda necessária para a moeda padrão de sua conta
+1. A doação é cobrada na moeda definida em **Configurações → Doações**; os doadores não escolhem a moeda no checkout
+2. O Stripe processa o pagamento nessa moeda
+3. A doação é registrada no B1 com essa moeda e esse valor
+4. O Stripe faz automaticamente qualquer conversão necessária para a moeda de repasse da sua conta
 
-### Entrada Manual
+Se você alterar depois a configuração de **Moeda**, as novas doações usarão a nova moeda, enquanto as doações já registradas mantêm a moeda original. Por isso, os seus registros podem conter mais de uma moeda.
 
-Para registrar uma doação em dinheiro ou cheque em uma moeda diferente:
+### Lançamento Manual {#manual-entry}
 
-1. Navegue até **Doações > Lotes** no B1 Admin e abra o lote
-2. Clique em **Adicionar Doação** no topo da página do lote
-3. Selecione a moeda no menu suspenso de moeda
-4. Insira o valor nessa moeda
-5. Conclua os detalhes restantes da doação
-6. Clique em **Salvar**
+As doações lançadas à mão -- em um lote, com **Importar CSV** ou com **Registrar uma doação** no registro de uma pessoa -- são sempre registradas na moeda da sua igreja, que aparece ao lado do campo **Valor**. Não há menu de moedas para o lançamento manual; por isso, converta para a moeda da sua igreja uma doação feita em outra moeda antes de lançá-la, e registre o valor original em **Observações**, caso precise dele.
 
-## Visualizando Doações Multi-Moeda
+## Visualizando Doações em Múltiplas Moedas {#viewing-multi-currency-donations}
 
-### Relatórios de Doações
+### Relatórios de Doações {#donation-reports}
 
-Os relatórios de doações exibem valores em sua moeda original:
+As linhas individuais de doação -- em um lote, na página de um fundo e no histórico de doações de uma pessoa -- mostram cada contribuição na moeda em que foi registrada. Os totais combinados são convertidos, como descrito abaixo.
 
-- Os registros de doações individuais mostram o código de moeda (por exemplo, "$100,00 USD")
-- Os totais são calculados por moeda
-- Você pode filtrar por moedas específicas
+### Totais Convertidos {#converted-totals}
 
-### Totais Convertidos
+Sempre que o B1 exibir um único total combinado -- os cartões de indicadores do resumo de doações, o total de um lote de doações e o total de um fundo -- as doações registradas em uma moeda diferente da padrão da sua igreja são convertidas para a moeda da sua igreja, usando as taxas de câmbio atuais. Assim, o total é um número único e significativo, em vez de somar moedas diferentes. Uma nota **Convertido pelas taxas de câmbio atuais** aparece abaixo do total sempre que uma conversão tiver sido aplicada. Os itens individuais de doação continuam exibidos na moeda original.
 
-Sempre que o B1 mostra um total combinado único -- os cartões de KPI de resumo de doações, um total de lote de doação e o total de um fundo -- doações registradas em uma moeda diferente da sua padrão são convertidas para sua moeda da igreja usando taxas de câmbio atuais, para que o total seja um número significativo único em vez de somar moedas diferentes juntas. Uma nota de **Convertido para as taxas de câmbio atuais** aparece sob o total sempre que uma conversão foi aplicada. Os itens de linha de doações individuais ainda são exibidos em sua moeda original.
+### Recibos de Doação {#giving-statements}
 
-### Declarações de Doações
+Os recibos de doação listam o valor de cada contribuição como foi registrado e somam os valores sem conversão. Por isso, um recibo só é preciso quando todas as contribuições daquele doador no ano estão na moeda da sua igreja. Se um doador contribuiu em mais de uma moeda, confira o recibo antes de enviá-lo.
 
-Ao gerar declarações de doações:
+## Integração com o Stripe {#stripe-integration}
 
-- Cada doação aparece com sua moeda original
-- Os totais são divididos por moeda
-- Os membros veem exatamente o que doaram em cada moeda
+Nas doações online, o Stripe cuida das transações em múltiplas moedas:
 
-## Integração Stripe
-
-Para doação online, Stripe lida com transações multi-moeda:
-
-- **Conversão automática** -- Stripe converte moedas para a moeda padrão de sua conta
-- **Taxas de câmbio** -- Stripe usa taxas de câmbio de mercado atuais
-- **Taxas** -- A conversão de moeda pode incorrer em taxas adicionais de Stripe
-- **Moeda de pagamento** -- Os fundos são depositados na moeda padrão de sua conta
+- **Conversão automática** -- o Stripe converte as moedas para a moeda padrão da sua conta
+- **Taxas de câmbio** -- o Stripe usa as taxas de câmbio de mercado atuais
+- **Taxas** -- a conversão de moeda pode gerar taxas adicionais do Stripe
+- **Moeda de repasse** -- os valores são depositados na moeda padrão da sua conta
 
 :::info
-Verifique seu painel Stripe para ver as taxas de conversão atuais e quaisquer taxas associadas às transações multi-moeda.
+Confira o seu painel do Stripe para ver as taxas de conversão atuais e as taxas associadas às transações em múltiplas moedas.
 :::
 
-## Considerações Contábeis
+## Considerações Contábeis {#accounting-considerations}
 
 Ao trabalhar com várias moedas:
 
-- **Manutenção de registros** -- Mantenha o controle dos valores de doação originais e moedas para relatórios precisos
-- **Taxas de câmbio** -- Observe que as taxas de conversão do Stripe podem diferir das taxas de seu banco
-- **Recibos fiscais** -- Consulte seu contador sobre como relatar doações em diferentes moedas para fins fiscais
-- **Alocação de fundos** -- Você pode alocar doações a fundos específicos independentemente da moeda
+- **Registros** -- mantenha o controle dos valores e das moedas originais das doações para relatórios precisos
+- **Taxas de câmbio** -- lembre-se de que as taxas de conversão do Stripe podem ser diferentes das taxas do seu banco
+- **Recibos fiscais** -- consulte o seu contador sobre como informar doações em diferentes moedas para fins fiscais
+- **Alocação em fundos** -- você pode alocar doações a fundos específicos independentemente da moeda
 
-## Melhores Práticas
+## Boas Práticas {#best-practices}
 
-- **Moeda padrão** -- Defina sua moeda principal da igreja como a padrão para a maioria das transações
-- **Comunicação clara** -- Diga aos doadores em que moeda estão doando durante o processo de checkout
-- **Relatórios consistentes** -- Os totais combinados são sempre convertidos para sua moeda de igreja automaticamente; use o filtro de moeda por doação quando você precisar ver valores originais
-- **Reconciliação regular** -- Reconcilie os pagamentos do Stripe com seus registros de doações, considerando as conversões de moeda
+- **Moeda padrão** -- defina a moeda principal da sua igreja em **Configurações > Doações**, para que as doações lançadas à mão e os totais de doações usem essa moeda
+- **Comunicação clara** -- informe aos doadores em qual moeda estão contribuindo durante o checkout
+- **Relatórios consistentes** -- os totais combinados são sempre convertidos automaticamente para a moeda da sua igreja; abra um lote ou um fundo para ver o valor e a moeda originais de cada contribuição
+- **Conciliação regular** -- concilie os repasses do Stripe com os seus registros de doações, considerando as conversões de moeda
 
-## Limitações
+## Limitações {#limitations}
 
-- A conversão de moeda para processamento de pagamento é tratada pelo Stripe apenas para doações online; doações manuais são registradas conforme inseridas sem conversão automática
-- Relatórios históricos e itens de linha de doações individuais sempre mostram a moeda original em que a doação foi registrada
-- Os totais combinados (cartões de KPI, totais de lote, totais de fundo) são convertidos para sua moeda de igreja usando taxas de câmbio atuais -- essas taxas podem diferir ligeiramente das taxas de seu banco ou Stripe no momento em que os fundos são liquidados
+- A conversão de moeda no processamento de pagamentos é feita pelo Stripe, somente para doações online; as doações manuais são registradas na moeda da sua igreja conforme foram lançadas
+- Os relatórios históricos e os itens individuais de doação sempre mostram a moeda original em que a contribuição foi registrada
+- Os totais combinados (cartões de indicadores, totais de lotes e totais de fundos) são convertidos para a moeda da sua igreja usando as taxas de câmbio atuais -- essas taxas podem diferir um pouco das taxas do seu banco ou do Stripe no momento da liquidação dos valores
 
-## Artigos Relacionados
+## Artigos Relacionados {#related-articles}
 
-- [Configuração de Doação Online](./online-giving-setup.md) -- Configure Stripe para aceitar doações
-- [Registrando Doações](./recording-donations.md) -- Registre manualmente registros de doações
-- [Relatórios de Doações](./donation-reports.md) -- Gere e visualize resumos de doações
-- [Declarações de Doações](./giving-statements.md) -- Crie declarações de doações de final de ano
+- [Configuração de Doações Online](./online-giving-setup.md) -- configure o Stripe para receber doações
+- [Registrando Doações](./recording-donations.md) -- lance manualmente os registros de doações
+- [Relatórios de Doações](./donation-reports.md) -- gere e visualize os resumos de doações
+- [Recibos de Doação](./giving-statements.md) -- crie os recibos de doação de fim de ano

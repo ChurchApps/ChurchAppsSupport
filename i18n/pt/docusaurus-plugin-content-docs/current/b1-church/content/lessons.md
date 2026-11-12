@@ -36,7 +36,7 @@ A guia **Lições** lhe dava acesso ao currículo e materiais de aprendizagem da
 
 Seu login é transferido automaticamente quando você abre a guia Lições. Você não precisa fazer login novamente separadamente para Lessons.church.
 
-## O que Você Pode Fazer
+## O que Você Pode Fazer {#what-you-can-do}
 
 Uma vez dentro da guia Lições, você pode navegar pelo currículo que sua igreja disponibilizou. Dependendo do que sua igreja configurou, você pode encontrar:
 

@@ -61,7 +61,7 @@ Panatilihin lamang ang mga masked na credential kapag nag-e-edit ng parehong nak
 
 I-scope ang bawat load/update sa naka-authenticate na simbahan ng B1. Itali ang mga callback sa isang naka-save na integration at sa inaasahang Twilio account/service/sender, at tanggihan ang magkasalungat na cross-church na assignment. Ang pag-rotate ng credential at pagdiskonekta ng provider ay dapat magpawalang-bisa sa kahandaan at magpahinto sa mga naka-queue na pagpapadala nang hindi binubura ang pahintulot o ang mga naitalang kasaysayan ng paghahatid.
 
-## Ang pahintulot at suppression ay kinakailangang gawaing release
+## Ang pahintulot at suppression ay kinakailangang gawaing release {#consent-and-suppression-are-required-release-work}
 
 Magpakilala ng mga talaan ng subscription na nakatali sa telepono para sa programa ng Twilio, kasama ang append-only na mga event ng pahintulot/suppression. Ang iminumungkahing pinakamababang ebidensya ay: church ID, program ID, normalized na telepono, opsyonal na na-verify na ugnayan sa tao, tahasang aksyon ng pagpayag, source form/submission ID o nirepasong panlabas na patunay, server timestamp, teksto/bersyon ng disclosure, source URL, policy URL, at mga event ng pag-withdraw at pag-restart. Limitahan ang access at retention ayon sa umiiral na data-security policy ng simbahan.
 

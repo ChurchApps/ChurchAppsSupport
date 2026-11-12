@@ -1,101 +1,103 @@
 ---
-title: "गाइड: स्मॉल ग्रुप चलाएँ"
-description: "B1 Admin में स्मॉल ग्रुप, बाइबल स्टडी और मिनिस्ट्री टीम सेट करें, फिर अपनी B1 वेबसाइट पर चर्च-व्यापी कैलेंडर और ग्रुप सेक्शन प्रकाशित करें।"
+title: "गाइड: Small Groups चलाएँ"
+description: "B1 Admin में small groups, Bible studies, और ministry teams सेट करें, फिर अपनी B1 वेबसाइट पर चर्च-व्यापी calendar और groups सेक्शन प्रकाशित करें।"
 ---
 
-# स्मॉल ग्रुप चलाएँ
+# Small Groups चलाएँ
 
 <div class="article-intro">
 
-B1 Admin में सदस्य प्रबंधन, ग्रुप कैलेंडर और बातचीत के साथ स्मॉल ग्रुप, बाइबल स्टडी या मिनिस्ट्री टीम सेट करें। अपनी वेबसाइट पर चर्च का इवेंट कैलेंडर प्रकाशित करें ताकि आगंतुक देख सकें कि क्या हो रहा है, और सदस्य वेब पोर्टल तथा मोबाइल ऐप के ज़रिए जुड़े रह सकें।
+सदस्य प्रबंधन, group calendars, और conversations के साथ small groups, Bible studies, या ministry teams सेट करें। अपनी वेबसाइट पर चर्च-व्यापी event calendar प्रकाशित करें ताकि आगंतुक देख सकें कि क्या हो रहा है, और सदस्य web portal और mobile app के माध्यम से जुड़े रह सकें।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- एडमिन एक्सेस वाला B1 Admin अकाउंट
-- [अपनी डायरेक्टरी में लोग जोड़ें](../people/adding-people.md) (ग्रुप के सदस्य पहले से मौजूद होने चाहिए)
+- admin पहुँच वाला B1 Admin account
+- [डायरेक्टरी में जोड़े गए लोग](../people/adding-people.md) (group members पहले से मौजूद होने चाहिए)
 
 </div>
 
-## चरण 1: ग्रुप श्रेणियाँ और ग्रुप बनाएँ
+## चरण 1: Group Categories और Groups बनाएँ {#step-1-create-group-categories--groups}
 
-अपने ग्रुप को श्रेणियों में व्यवस्थित करें ताकि सदस्य आसानी से वह खोज सकें जो उन्हें चाहिए।
+अपने groups को categories में व्यवस्थित करें ताकि सदस्य आसानी से वह खोज सकें जो वे ढूँढ रहे हैं।
 
-[ग्रुप बनाना](../groups/creating-groups.md) गाइड का पालन करें:
+इन कामों के लिए [Creating Groups](../groups/creating-groups.md) गाइड का पालन करें:
 
-1. ग्रुप व्यवस्थित करने के लिए श्रेणियाँ बनाएँ (जैसे "स्मॉल ग्रुप", "बाइबल स्टडी", "मिनिस्ट्री टीम", "समितियाँ")
-2. हर श्रेणी के भीतर ग्रुप बनाएँ (जैसे "मंगलवार रात पुरुष ग्रुप", "महिला बाइबल स्टडी", "युवा मिनिस्ट्री")
-3. हर ग्रुप के लिए विवरण और मीटिंग का समय जोड़ें
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) में **People > Groups** चुनें और **Add Group** पर क्लिक करें
+2. अपने groups को व्यवस्थित करने के लिए **Category Name** ("Small Groups", "Bible Studies", "Ministry Teams", "Committees" जैसे) और group का **Name** ("Tuesday Night Men's Group", "Women's Bible Study" जैसे) दर्ज करें, फिर **Add** पर क्लिक करें
+3. group खोलें, **Edit** पर क्लिक करें, और **Meeting Time**, **Meeting Location**, और **Description** भरें। **Enrollment** सेट करें ताकि तय हो कि लोग तुरंत जुड़ सकें, join का अनुरोध करना ज़रूरी हो, या केवल leaders द्वारा जोड़े जाएँ
 
-## चरण 2: सदस्य और लीडर जोड़ें
+## चरण 2: Members और Leaders जोड़ें {#step-2-add-members--leaders}
 
-अपने ग्रुप में सदस्य जोड़ें और ऐसे लीडर नियुक्त करें जो अपनी टीमों का प्रबंधन कर सकें।
+अपने groups को members से भरें और ऐसे leaders नियुक्त करें जो अपनी टीम खुद प्रबंधित कर सकें।
 
-[ग्रुप सदस्य](../groups/group-members.md) गाइड का पालन करें:
+इन कामों के लिए [Group Members](../groups/group-members.md) गाइड का पालन करें:
 
-1. लोगों को खोजें और उन्हें उचित ग्रुप में जोड़ें
-2. स्टार आइकन (**Make Leader**) का उपयोग करके ग्रुप लीडर नियुक्त करें — लीडर को अतिरिक्त अनुमतियाँ मिलती हैं
+1. group पेज पर **All members** पर क्लिक करें और **Add Person** box में लोगों को खोजकर जोड़ें
+2. star आइकन (**Make Leader**) का उपयोग करके group leaders नियुक्त करें — leaders को अतिरिक्त अनुमतियाँ मिलती हैं
 
 :::tip
-ग्रुप लीडर पूर्ण एडमिन एक्सेस के बिना अपने ग्रुप का कैलेंडर प्रबंधित कर सकते हैं, बातचीत पोस्ट कर सकते हैं और इवेंट का समन्वय कर सकते हैं।
+Group leaders बिना पूरी admin पहुँच के अपना group calendar प्रबंधित कर सकते हैं, conversations पोस्ट कर सकते हैं, और events का समन्वय कर सकते हैं।
 :::
 
-## चरण 3: ग्रुप कैलेंडर सेट करें
+## चरण 3: Group Calendars सेट करें {#step-3-set-up-group-calendars}
 
-हर ग्रुप को मीटिंग और इवेंट के लिए अपना कैलेंडर दें।
+हर group को बैठकों और events के लिए अपना calendar दें।
 
-[ग्रुप कैलेंडर](../groups/group-calendar.md) गाइड का पालन करें:
+इन कामों के लिए [Group Calendar](../groups/group-calendar.md) गाइड का पालन करें:
 
-1. दोहराई जाने वाली मीटिंग (जैसे "हर मंगलवार शाम 7 बजे") और एक-बारगी इवेंट (जैसे "ग्रुप कुकआउट - 15 मार्च") जोड़ें
-2. ग्रुप लीडर अपने ग्रुप के लिए इवेंट जोड़ और प्रबंधित कर सकते हैं
+1. आवर्ती बैठकें ("Every Tuesday at 7 PM" जैसी) और एक-बार के events ("Group Cookout - March 15" जैसे) जोड़ें
+2. Group leaders B1.church पर अपने group के events जोड़ते और प्रबंधित करते हैं
+3. B1 Admin में, आप एक पूरे सीज़न की बैठकें एक साथ शेड्यूल कर सकते हैं: group खोलें, **Calendar** सेक्शन में **All events** पर क्लिक करें, और **+ Add Events** पर क्लिक करें
 
-## चरण 4: चर्च-व्यापी कैलेंडर बनाएँ
+## चरण 4: चर्च-व्यापी Calendar बनाएँ {#step-4-create-a-church-wide-calendar}
 
-सभी ग्रुप के इवेंट को पूरे चर्च के लिए एक एकीकृत कैलेंडर में इकट्ठा करें।
+सभी groups के events को पूरे चर्च के लिए एक एकीकृत calendar में इकट्ठा करें।
 
-[कैलेंडर बनाना](../calendars/creating-calendars.md) और [क्यूरेटेड कैलेंडर](../calendars/curated-calendar.md) गाइड का पालन करें:
+इन कामों के लिए [Creating Calendars](../calendars/creating-calendars.md) और [Curated Calendar](../calendars/curated-calendar.md) गाइड का पालन करें:
 
-1. एक क्यूरेटेड कैलेंडर बनाएँ जो कई ग्रुप से इवेंट को एक एकीकृत दृश्य में लाए
-2. ICS सब्सक्रिप्शन लिंक साझा करें ताकि सदस्य इवेंट अपने व्यक्तिगत कैलेंडर ऐप (Google Calendar, Apple Calendar, Outlook) में जोड़ सकें
+1. Jump menu में **Calendars > Calendars** चुनें, **Add Calendar** पर क्लिक करें, **Calendar Name** दर्ज करें, और **Create** पर क्लिक करें
+2. calendar खोलें, **Add Group** पर क्लिक करें, एक group चुनें, और **Add all the events of the group** (या केवल कुछ खास events) चुनें। हर group के लिए दोहराएँ
+3. ICS subscription link साझा करने के लिए **Subscribe** पर क्लिक करें ताकि सदस्य events को अपने निजी calendar ऐप (Google Calendar, Apple Calendar, Outlook) में जोड़ सकें
 
 :::info
-क्यूरेटेड कैलेंडर आपके जोड़े गए ग्रुप के इवेंट अपने-आप इकट्ठा करता है। जब कोई ग्रुप लीडर इवेंट जोड़ता है, तो वह चर्च कैलेंडर पर भी दिखाई देता है।
+जब आप किसी group के सभी events जोड़ते हैं, तो curated calendar नए events अपने-आप उठा लेता है — जब कोई group leader कोई event जोड़ता है, तो वह चर्च calendar पर भी दिखता है।
 :::
 
-## चरण 5: अपनी वेबसाइट पर प्रकाशित करें
+## चरण 5: अपनी वेबसाइट पर प्रकाशित करें {#step-5-publish-to-your-website}
 
-अपने B1 वेबसाइट पर आगंतुकों और सदस्यों के लिए अपने ग्रुप और कैलेंडर दृश्यमान बनाएँ।
+अपने groups और calendar को आपकी B1 वेबसाइट पर आगंतुकों और सदस्यों के लिए दिखाई देने योग्य बनाएँ।
 
-[पेज प्रबंधित करना](../website/managing-pages.md) गाइड का पालन करें:
+इन कामों के लिए [Page Editor](../website/page-editor.md) गाइड का पालन करें:
 
-1. क्यूरेटेड कैलेंडर दिखाने के लिए अपनी B1 वेबसाइट में कैलेंडर सेक्शन जोड़ें
-2. ग्रुप सेक्शन जोड़ें ताकि आगंतुक उपलब्ध ग्रुप देख सकें और जुड़ने का तरीका जान सकें
+1. curated calendar दिखाने के लिए अपनी B1 वेबसाइट के किसी पेज पर **Calendar** element जोड़ें
+2. **Groups Browser** (या **Group List**) element जोड़ें ताकि आगंतुक उपलब्ध groups ब्राउज़ कर सकें और जुड़ने का तरीका जान सकें
 
-## चरण 6: सदस्य अनुभव
+## चरण 6: सदस्यों का अनुभव {#step-6-member-experience}
 
-सदस्य अपने फ़ोन या कंप्यूटर से ग्रुप खोज, जुड़ और उनमें भाग ले सकते हैं।
+सदस्य अपने फ़ोन या कंप्यूटर से groups खोज सकते हैं, उनमें जुड़ सकते हैं, और उनमें भाग ले सकते हैं।
 
-1. सदस्य [B1.church](../../b1-church/groups/browsing-groups.md) पर ग्रुप देखते और उनमें जुड़ते हैं
-2. ग्रुप सदस्य विवरण और कैलेंडर देख सकते हैं, और [बातचीत](../../b1-church/groups/conversations.md) में पोस्ट कर सकते हैं
-3. सभी ग्रुप सुविधाएँ [B1 App](../../b1-church/groups/index.md) में भी उपलब्ध हैं
+1. सदस्य [B1.church](../../b1-church/groups/browsing-groups.md) पर groups ब्राउज़ करते हैं और उनमें जुड़ते हैं
+2. group members details और calendars देख सकते हैं, और [conversations](../../b1-church/groups/conversations.md) में पोस्ट कर सकते हैं
+3. सभी group सुविधाएँ [B1 App](../../b1-church/groups/index.md) में भी उपलब्ध हैं
 
 :::info
-सदस्य अपने ग्रुप, आने वाले इवेंट और ग्रुप की बातचीत वेब और मोबाइल दोनों पर देखते हैं — सब कुछ हमेशा सिंक में रहता है।
+सदस्य अपने groups, आने वाले events, और group conversations वेब और mobile दोनों पर देखते हैं — सब कुछ सिंक में रहता है।
 :::
 
-## आप हो गए!
+## हो गया! {#youre-done}
 
-आपके स्मॉल ग्रुप सेट और जुड़े हुए हैं। सदस्य ग्रुप खोज सकते हैं, इवेंट देख सकते हैं और बातचीत के ज़रिए जुड़े रह सकते हैं — यह सब आपकी वेबसाइट और मोबाइल ऐप पर। ग्रुप लीडर अपनी टीमों का स्वतंत्र रूप से प्रबंधन कर सकते हैं।
+आपके small groups सेट हो चुके हैं और जुड़ चुके हैं। सदस्य groups खोज सकते हैं, events देख सकते हैं, और conversations के माध्यम से जुड़े रह सकते हैं — यह सब आपकी वेबसाइट और mobile app पर। Group leaders अपनी टीम स्वतंत्र रूप से प्रबंधित कर सकते हैं।
 
-## संबंधित लेख
+## संबंधित लेख {#related-articles}
 
-- [ग्रुप बनाना](../groups/creating-groups.md) — श्रेणियाँ और ग्रुप सेट करें
-- [ग्रुप सदस्य](../groups/group-members.md) — सदस्य जोड़ें और लीडर नियुक्त करें
-- [ग्रुप कैलेंडर](../groups/group-calendar.md) — ग्रुप इवेंट प्रबंधित करें
-- [कैलेंडर बनाना](../calendars/creating-calendars.md) — मिनिस्ट्री कैलेंडर सेट करें
-- [क्यूरेटेड कैलेंडर](../calendars/curated-calendar.md) — एकीकृत चर्च कैलेंडर बनाएँ
-- [ग्रुप खोजना (वेब)](../../b1-church/groups/browsing-groups.md) — सदस्य ग्रुप कैसे खोजते हैं
-- [ग्रुप बातचीत (वेब)](../../b1-church/groups/conversations.md) — ग्रुप चर्चा
-- [ग्रुप](../../b1-church/groups/index.md) — B1 App में ग्रुप
+- [Creating Groups](../groups/creating-groups.md) — categories और groups सेट करें
+- [Group Members](../groups/group-members.md) — members जोड़ें और leaders नियुक्त करें
+- [Group Calendar](../groups/group-calendar.md) — group events प्रबंधित करें
+- [Creating Calendars](../calendars/creating-calendars.md) — ministry calendars सेट करें
+- [Curated Calendar](../calendars/curated-calendar.md) — एकीकृत चर्च calendar बनाएँ
+- [Browsing Groups (Web)](../../b1-church/groups/browsing-groups.md) — सदस्य groups कैसे खोजते हैं
+- [Group Conversations (Web)](../../b1-church/groups/conversations.md) — group चर्चाएँ
+- [Groups](../../b1-church/groups/index.md) — B1 App में groups

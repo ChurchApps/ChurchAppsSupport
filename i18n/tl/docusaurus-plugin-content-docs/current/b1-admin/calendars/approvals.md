@@ -1,59 +1,71 @@
 ---
-title: "Mga Pag-apruba sa Kalendaryo"
-description: "Suriin ang nakabinbing booking ng kuwarto at resource sa B1 Admin, tingnan ang banggaan, at aprubahan o tanggihan ito; puwedeng i-publish ang event."
+title: "Mga Approval sa Calendar"
+description: "Suriin ang mga nakabinbing kahilingan sa pag-book ng kuwarto at resource sa B1 Admin, tingnan ang mga conflict, i-approve o i-reject ang mga ito, at balikan ang mga nakaraang desisyon sa ilalim ng History."
 ---
 
-# Mga Pag-apruba sa Kalendaryo
+# Mga Approval sa Calendar
 
 <div class="article-intro">
 
-Ang pahinang Approvals ang lugar kung saan sinusuri at tinutugunan ng mga administrator ang mga nakabinbing kahilingan sa pag-book ng silid at resource, pati na ang mga event sa kalendaryo na nangangailangan ng pag-apruba bago mailathala.
+Ang Approvals page ang lugar kung saan sinusuri at inaaksyunan ng mga administrator ang mga nakabinbing kahilingan sa pag-book ng kuwarto at resource, pati na ang mga calendar event na kailangan ng approval bago mailathala.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Mag-configure ng mga silid o resource na may **Approval Group** sa [Rooms & Resources](./rooms-resources.md)
-- Kailangan ninyo ng pahintulot na **Calendars Admin** o ng pahintulot na **content.edit**
+- I-configure ang mga kuwarto o resource na may **Approval Group** sa [Rooms & Resources](./rooms-resources.md)
+- Kailangan mo ang **Edit Content** permission, o ang **Resolve Calendar Conflicts & Approvals** (parehong nasa **Content** section ng [Roles & Permissions](../settings/roles-permissions.md)). Kung walang **Edit Content**, hindi ipinapakita ang menu na **Calendars** -- buksan na lamang ang Approvals mula sa link ng mga nakabinbing approval sa **Dashboard** o sa approval email.
 
 </div>
 
-## Pagbubukas ng Approvals
+## Pagbubukas ng Approvals {#opening-approvals}
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Calendars**, at i-click ang **Approvals**. Nakalista rito ang mga nakabinbing kahilingan sa pag-book at mga event na naghihintay ng pagsusuri.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Calendars**, at i-click ang **Approvals**. Nakalista rito ang mga nakabinbing kahilingan sa pag-book at mga event na naghihintay ng pagrepaso. Gamitin ang mga button na **Pending** at **History** sa itaas para magpalipat-lipat sa pagitan ng mga kahilingang kailangan pa ng desisyon at ng mga nadesisyunan na.
 
-## Mga Kahilingan sa Pag-book
+## Mga Kahilingan sa Pag-book {#booking-requests}
 
-Kapag lumikha ang isang grupo ng event at humiling ng silid o resource, lalabas ang kahilingan sa seksyong **Room & Resource Requests**. Ipinapakita ng bawat hilera ang:
+Kapag may nag-book ng kuwarto o resource na may **Approval Group**, at hindi siya miyembro ng grupong iyon, lalabas ang kahilingan sa seksyong **Room & Resource Requests**. (Awtomatikong naaaprubahan ang mga booking ng mga miyembro ng Approval Group.) Nakakatanggap din ng email ang mga miyembro ng Approval Group na naglilista ng mga bagong nakabinbing kahilingan, kasama ang link sa pahinang ito. Ipinapakita ng bawat row ang:
 
-- Ang pangalan at petsa/oras ng event
-- Ang silid o resource na hinihiling (kasama ang dami para sa mga resource na maraming yunit)
-- Badge ng status na nagpapakita kung may conflict ang kahilingan
+- Ang pangalan ng event at petsa/oras
+- Ang kuwarto o resource na hinihiling (kasama ang dami para sa mga multi-unit na resource)
+- **Requested by**, ang taong humiling, naka-link sa kanyang record
+- Status badge na nagpapakita kung may conflict ang kahilingan
 
-### Mga Indikasyon ng Conflict
+### Mga Indicator ng Conflict {#conflict-indicators}
 
-Kung may sumasapaw na ibang booking o blockout para sa parehong silid o resource ang isang kahilingan, ipapakita ng status nito ang badge na **Conflicts**; i-hover ang mouse dito para makita ang mga detalye. Ang mga kahilingang walang sapaw ay nagpapakita ng **No conflicts**. Maingat na suriin ang mga nagbabanggaang kahilingan bago aprubahan ang alinman sa mga ito.
+Kung nagko-overlap ang isang kahilingan sa ibang booking o blockout para sa parehong kuwarto o resource, magpapakita ang status nito ng **Conflicts** badge; i-hover ito para makita ang mga detalye. Ang mga kahilingang walang overlap ay nagpapakita ng **No conflicts**. Maingat na suriin ang mga kahilingang may conflict bago i-approve ang alinman sa mga ito.
 
-### Pag-apruba o Pagtanggi
+### Pag-approve o Pag-reject {#approving-or-rejecting}
 
-I-click ang **Approve** o **Reject** sa anumang kahilingan sa pag-book (kailangan pang kumpirmahin ang pagtanggi). Aabisuhan ang humihiling na grupo tungkol sa desisyon. Ang mga aprubadong booking ay nakakandado sa silid o resource na iyon para sa event; ang mga tinanggihang booking ay nagbibigay-laya sa slot para sa iba.
+I-hover ang isang kahilingan sa booking at i-click ang **Approve** o **Reject** (kailangan munang kumpirmahin ang pag-reject). Aabisuhan ang humiling tungkol sa desisyon. Ang mga naaprubahang booking ay naka-lock sa kuwarto o resource na iyon para sa event; ang mga na-reject na booking ay nagpapalaya ng slot para sa iba.
 
-Kapag nag-click kayo ng **Approve**, magbubukas ang dialog na **Approve booking** para mailathala rin ninyo ang event sa parehong hakbang:
+Kapag na-click mo ang **Approve**, magbubukas ang dialog na **Approve booking** para maipublish mo rin ang event sa parehong hakbang:
 
-1. Lagyan ng check ang **Publish to public calendar** para gawing pampubliko ang event sa kalendaryo ng grupo nito. Iwanang walang check para aprubahan ang booking nang hindi binabago ang visibility ng event.
-2. Kapag may check na ang **Publish to public calendar**, maaari kayong opsyonal na pumili ng curated calendar mula sa **Also add to calendar** para idagdag din ang event sa isa sa inyong [mga curated calendar](./curated-calendar.md). Iwanang nakatakda sa **None** para laktawan ito. (Lumalabas lamang ang opsyong ito kung mayroon kayong pahintulot na **content.edit**.)
+1. Lagyan ng check ang **Publish to public calendar** para gawing pampubliko ang event sa calendar ng grupo nito. Iwanang walang check para i-approve ang booking nang hindi binabago ang visibility ng event.
+2. Kapag may check na ang **Publish to public calendar**, maaari kang opsyonal na pumili ng curated calendar mula sa **Also add to calendar** para idagdag din ang event sa isa sa iyong [curated calendars](./curated-calendar.md). Iwanan sa **None** para laktawan ito. (Lumalabas lamang ang opsyong ito kung mayroon kang **content.edit** permission.)
 3. I-click ang **Approve**.
 
-## Mga Nakabinbing Event
+## Mga Nakabinbing Event {#pending-events}
 
-Kung nangangailangan ang workflow ng inyong kalendaryo ng pag-apruba sa event bago ito makita ng publiko, lalabas ang mga nakabinbing event sa seksyong **Event Requests**. I-click ang **Approve** para mailathala ang event sa kalendaryo, o ang **Reject** para ipaalam sa nagsumite na may mga pagbabagong kailangan.
+Ang mga event na hinihiling ng mga miyembro (halimbawa, mula sa **My Requests** sa B1 app) ay lumalabas sa seksyong **Event Requests** kasama ang petsa, **Description**, at **Requested by**. I-click ang **Approve** para ipublish ang event sa calendar, o **Reject** para abisuhan ang nagsumite na kailangan ng mga pagbabago. I-click ang **Edit** para ayusin ang detalye ng kahilingan bago magdesisyon, o **Delete** para alisin ito.
 
 :::tip
-Mag-set up ng Approval Group sa isang silid sa [Rooms & Resources](./rooms-resources.md) para mangailangan ng pag-apruba para sa silid na iyon. Maaari nang humiling ng silid ang mga grupong may access kapag lumilikha ng mga event, at mapupunta sa pahinang ito ang mga kahilingang iyon.
+Mag-set up ng Approval Group sa isang kuwarto sa [Rooms & Resources](./rooms-resources.md) para mangailangan ng approval para sa kuwartong iyon. Maaaring humiling ng kuwarto ang mga grupong may access kapag gumagawa ng event, at dumadaloy ang mga kahilingang iyon sa pahinang ito.
 :::
 
-## Mga Kaugnay na Artikulo
+## History {#history}
 
-- [Mga Silid, Resource at Pag-iiskedyul](./rooms-resources.md) — i-configure ang mga silid at resource na maaaring i-book
-- [Paglikha ng mga Kalendaryo](./creating-calendars.md) — pamahalaan ang mga kalendaryo at event
+Nananatili sa pahina ang mga naaprubahan at na-reject na kahilingan. I-click ang **History** sa itaas ng Approvals para makita ang mga ito; i-click ang **Pending** para bumalik sa mga bukas na kahilingan.
+
+- Inililista ng **Room & Resource Requests** ang bawat nadesisyunang booking kasama ang event, kuwarto o resource, **Requested by**, badge na **Approved** o **Rejected**, at **Decided**, na nagpapakita kung sino ang nagdesisyon at kailan. Unang nakalista ang pinakabagong nadesisyunan.
+- Inililista ng **Event Requests** ang bawat nadesisyunang event kasama ang description nito, **Requested by**, badge na **Approved** o **Rejected**, at **Decided**, na nagpapakita kung sino ang nagdesisyon at kailan. Ang mas lumang event request, na nadesisyunan bago pa magsimulang itala ito ng B1, ay nagpapakita ng gitling sa halip.
+
+Maaari mong baguhin ang iyong desisyon mula sa History: ang naaprubahang kahilingan ay may aksyong **Reject**, at ang na-reject na kahilingan ay may aksyong **Approve**. Ang pag-reject sa event request na naaprubahan mo na ay aalisin ito sa pampublikong calendar. Maaari ring i-edit o burahin dito ang mga event request.
+
+I-click ang pangalan sa ilalim ng **Requested by** para buksan ang record ng taong iyon.
+
+## Mga Kaugnay na Artikulo {#related-articles}
+
+- [Rooms, Resources & Scheduling](./rooms-resources.md) — i-configure ang mga kuwarto at resource na maaaring i-book
+- [Creating Calendars](./creating-calendars.md) — pamahalaan ang mga calendar at event

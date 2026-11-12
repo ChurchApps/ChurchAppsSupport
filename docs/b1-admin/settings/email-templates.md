@@ -7,7 +7,7 @@ description: "Set up email and text message templates in B1 Admin, with merge fi
 
 <div class="article-intro">
 
-Email Templates let you save reusable email content -- a welcome message, an event reminder, a giving thank-you -- so you (or a [workflow](../serving/workflows.md)) can send it in one click instead of writing it from scratch every time. The same list also holds text message templates for the group and person Text windows.
+Email Templates let you save reusable email content -- a welcome message, an event reminder, a giving thank-you -- so you (or a [workflow](../serving/workflows.md)) can send it in one click instead of writing it from scratch every time. The same list also holds text message templates for the group and person Text windows and the workflow **Send Text** action.
 
 </div>
 
@@ -56,6 +56,7 @@ A template with the **Text** category is a plain-text message for texting rather
 - It has no subject. The rich text editor is replaced with a plain **Text Message** box that holds up to 1,600 characters.
 - The merge field chips above the box insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`, or the [gift merge fields](#gift-merge-fields) at your cursor. In a text, `{{receipt}}` becomes one line, such as *$50.00 to General Fund on Nov 8, 2026*.
 - Text templates show up in the **Load Template (optional)** picker of the Text window for a [group](../groups/group-members.md#texting-group-members) or a single person. Picking one fills in the message, and you can still edit it before you send.
+- They also show up in the **Start from a template** list of the workflow [Send Text](../serving/workflows.md#sending-a-text) action.
 - They are left out of the email template pickers, including the workflow **Send email** action.
 
 Texting requires a connected [texting provider](./church-settings.md#texting).

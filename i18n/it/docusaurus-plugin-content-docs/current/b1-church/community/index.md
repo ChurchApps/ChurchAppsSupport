@@ -1,32 +1,33 @@
 ---
-title: "Rubrica della comunità in B1.church"
+title: "Directory della comunità in B1.church"
 sidebar_label: "Comunità"
-description: "Cerca nella rubrica dei membri di B1.church per nome o gruppo, vedi i profili e scopri dove sono finiti gli aggiornamenti della Timeline dismessa."
+description: "Cerca per nome nella directory dei membri della tua chiesa in B1.church, invia messaggi privati, controlla le notifiche e scopri dove si trovano ora gli aggiornamenti della Timeline."
 ---
 
 # Comunità
 
 <div class="article-intro">
 
-La sezione **Comunità** in B1.church ti aiuta a rimanere connesso con la famiglia della tua chiesa. Riunisce una rubrica dei membri per trovare e conoscere i compagni di chiesa, e un feed della cronologia che ti tiene aggiornato su ciò che sta accadendo nei tuoi gruppi e nella tua chiesa.
+La sezione **Comunità** in B1.church ti aiuta a rimanere in contatto con la famiglia della tua chiesa. Offre la directory dei membri, per trovare e conoscere gli altri membri della chiesa.
 
 </div>
 
-## Cosa Troverai
+## Cosa Troverai {#what-you-will-find}
 
-- **[Rubrica dei Membri](./member-directory.md)** -- Sfoglia e cerca nella rubrica dei membri della tua chiesa. Cerca le persone per nome o filtra per gruppo per trovare chi stai cercando. Clicca su un membro per visualizzare i dettagli del suo profilo.
-- **[Cronologia](./timeline.md)** -- Il tuo feed di attività che mostra gli ultimi aggiornamenti dai tuoi gruppi e dalla chiesa. La cronologia è la pagina di destinazione predefinita quando visiti il portale membri.
+- **[Directory dei Membri](./member-directory.md)** -- Sfoglia e cerca nella directory dei membri della tua chiesa. Cerca le persone per nome per trovare chi stai cercando. Clicca su un membro per visualizzare i dettagli del suo profilo.
+- **[Messaggi e Notifiche](./messages.md)** -- Invia messaggi privati ad altri membri e leggi le tue notifiche nella posta in arrivo.
+- **[Timeline](./timeline.md)** -- Il vecchio feed di attività combinato, ormai dismesso. Questa pagina spiega dove si trova oggi ciascun tipo di aggiornamento.
 
-## Per Iniziare
+## Per Iniziare {#getting-started}
 
-Devi aver [effettuato l'accesso](../getting-started/logging-in.md) per accedere alle funzionalità della comunità. Se non hai effettuato l'accesso, ti verrà chiesto di accedere quando navighi alla scheda **Comunità** o alla **Cronologia**.
+Devi aver [effettuato l'accesso](../getting-started/logging-in.md) per accedere alle funzionalità della comunità. Se non hai effettuato l'accesso, la scheda **Comunità** mostra un invito ad accedere al posto della directory.
 
-La scheda **Cronologia** è sempre disponibile nella barra laterale e funge da pagina principale del tuo portale membri. La scheda **Comunità** fornisce accesso alla rubrica dei membri.
+Il portale dei membri si apre sulla [Home](../getting-started/navigating.md). La scheda **Comunità** dà accesso alla directory dei membri, e l'icona **campanella** nella barra dell'app apre i tuoi messaggi e le notifiche.
 
 :::info
-I membri e le informazioni visibili nella rubrica dipendono dalle impostazioni sulla privacy della tua chiesa. Potresti non essere in grado di vedere il profilo completo di ogni membro. Se hai domande su ciò che viene condiviso, contatta l'amministratore della tua chiesa.
+I membri e le informazioni visibili nella directory dipendono dalle impostazioni sulla privacy della tua chiesa. Potresti non essere in grado di vedere il profilo completo di ogni membro. Se hai domande su ciò che viene condiviso, contatta l'amministratore della tua chiesa.
 :::
 
 :::tip
-Usa le funzionalità della comunità insieme ai [Gruppi](../groups/index.md) per rimanere coinvolto con la tua chiesa durante tutta la settimana.
+Usa le funzionalità della comunità insieme ai [Gruppi](../groups/index.md) per restare coinvolto con la tua chiesa durante tutta la settimana.
 :::

@@ -1,163 +1,156 @@
 ---
 title: "Navigasjonsstiler"
-description: "Tilpass farger for faste og transparente navigasjonslinjer på nettstedet i B1 Admin, inkludert tilstander for lenker, hover og aktiv side."
+description: "Tilpass farger for solide og gjennomsiktige navigasjonslinjer på nettstedet i B1 Admin, inkludert lenke-, hover- og aktiv-tilstander for menighetens nettsted."
 ---
 
 # Navigasjonsstiler
 
 <div class="article-intro">
 
-Tilpass fargene på navigasjonslinjen på kirkens nettsted slik at de passer til profilen deres. Du kan angi farger både for solide bakgrunner og gjennomsiktige overlegg, og har dermed full kontroll over hvordan navigasjonen ser ut på ulike sider.
+Tilpass fargene på navigasjonslinjen på menighetens nettsted slik at de samsvarer med merkevaren din. Du kan konfigurere farger for både solid bakgrunn og gjennomsiktige overlegg, og har full kontroll over hvordan navigasjonen ser ut på ulike sider.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tillatelse til å administrere kirkens nettsted. Se [Roller og tillatelser](../people/roles-permissions.md) for mer informasjon.
-- Ha profilfargene klare, inkludert hex-fargekodene (for eksempel #03A9F4).
-- Forstå forskjellen mellom solid og gjennomsiktig navigasjonsstil på nettstedet.
+- Du trenger tillatelse til å redigere nettstedinnhold. Se [Roller og tillatelser](../settings/roles-permissions.md) for detaljer.
+- Ha merkevarefargene dine klare, inkludert heksadesimale fargekoder (f.eks. #03A9F4).
+- Forstå forskjellen mellom solid og gjennomsiktig navigasjon på nettstedet ditt.
 
 </div>
 
-## Forstå navigasjonsmodusene
+## Forstå navigasjonsmodusene {#understanding-navigation-modes}
 
-Navigasjonen på nettstedet kan vises i to ulike stiler, avhengig av siden:
+Navigasjonen på nettstedet ditt kan vises i to ulike stiler avhengig av siden:
 
-- **Solid navigasjon** -- Navigasjonslinje med bakgrunnsfarge, vanligvis brukt på innholdssider
-- **Gjennomsiktig navigasjon** -- Navigasjon som ligger over sideinnholdet, vanligvis brukt på sider med hovedbilde eller bakgrunn over hele skjermen
+- **Solid navigasjon** -- Navigasjonslinje med bakgrunnsfarge, typisk brukt på innholdssider
+- **Gjennomsiktig navigasjon** -- Navigasjon som ligger over sideinnholdet, typisk brukt på sider med hovedbilder eller bakgrunner i fullskjerm
 
-Du kan tilpasse fargene for de to modusene hver for seg.
+Du kan tilpasse farger for begge modusene uavhengig av hverandre.
 
-## Åpne navigasjonsstiler
+## Åpne navigasjonsstiler {#accessing-navigation-styles}
 
-1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre) og utvid **Nettsted**
+1. I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Nettside**
 2. Klikk på **Utseende**
 3. I listen **Stilinnstillinger** klikker du på **Navigasjon**
 
-Redigeringsverktøyet **Navigasjonsstiler** har to kort: **Topptekst (solid)** og **Topptekst over hero (gjennomsiktig)**.
+Redigeringsverktøyet **Navigasjonsstil** har to kort: **Topptekst (solid)** og **Topptekst over hovedbilde (gjennomsiktig)**.
 
-## Konfigurere solid navigasjon
+## Konfigurere solid navigasjon {#configuring-solid-navigation}
 
-Solid navigasjon vises med en bakgrunnsfarge bak navigasjonslinjen. Disse innstillingene finner du i kortet **Topptekst (solid)**. Du kan tilpasse:
+Solid navigasjon vises med en bakgrunnsfarge bak navigasjonslinjen. Disse innstillingene finnes i kortet **Topptekst (solid)**. Hver farge er valgfri: så lenge bryteren **Overstyr** er av, beholder navigasjonen nettstedets vanlige farger. Du kan tilpasse:
 
-### Bakgrunnsfarge
+### Bakgrunnsfarge {#background-color}
 
 1. Slå på bryteren **Overstyr** for **Bakgrunnsfarge**
 2. Klikk på fargevelgeren
-3. Velg ønsket bakgrunnsfarge
-4. Standard er hvit (#FFFFFF)
+3. Velg ønsket bakgrunnsfarge (velgeren starter på hvit, #FFFFFF)
 
-### Lenkefarge
+### Lenkefarge {#link-color}
 
 1. Slå på bryteren **Overstyr** for **Lenkefarge**
-2. Velg fargen på lenketeksten i navigasjonen
-3. Dette gjelder lenker i standardtilstand
-4. Standard er mørk grå (#555555)
+2. Velg fargen for teksten i navigasjonslenkene
+3. Dette påvirker lenker i standardtilstand (velgeren starter på mørk grå, #555555)
 
-### Lenkefarge ved hover
+### Lenke-hover-farge {#link-hover-color}
 
-1. Slå på bryteren **Overstyr** for **Lenkefarge ved hover**
+1. Slå på bryteren **Overstyr** for **Lenke-hover-farge**
 2. Velg fargen lenkene skifter til når brukere holder musepekeren over dem
-3. Dette gir visuell tilbakemelding på klikkbare lenker
-4. Standard er lyseblå (#03A9F4)
+3. Dette gir visuell tilbakemelding for klikkbare lenker (velgeren starter på lys blå, #03A9F4)
 
-### Aktiv farge
+### Aktiv farge {#active-color}
 
 1. Slå på bryteren **Overstyr** for **Aktiv lenkefarge**
-2. Velg fargen for lenken til siden som er aktiv
-3. Dette hjelper brukerne å se hvilken side de er på
-4. Standard er lyseblå (#03A9F4)
+2. Velg fargen for lenken til den siden som er aktiv nå
+3. Dette hjelper brukere å se hvilken side de er på (velgeren starter på lys blå, #03A9F4)
 
-## Konfigurere gjennomsiktig navigasjon
+## Konfigurere gjennomsiktig navigasjon {#configuring-transparent-navigation}
 
-Gjennomsiktig navigasjon ligger over sideinnholdet uten bakgrunn. Disse innstillingene finner du i kortet **Topptekst over hero (gjennomsiktig)**. Du kan tilpasse:
+Gjennomsiktig navigasjon legger seg over sideinnholdet uten bakgrunn. Disse innstillingene finnes i kortet **Topptekst over hovedbilde (gjennomsiktig)**. Så lenge en bryter for **Overstyr** er av, samsvarer den fargen automatisk med tekstfargen i hovedbildeseksjonen. Du kan tilpasse:
 
-### Lenkefarge
+### Lenkefarge {#link-color-1}
 
 1. Slå på bryteren **Overstyr** for **Lenkefarge**
-2. Velg en farge som kontrasterer godt mot sidebakgrunnen
-3. Hvit eller lyse farger fungerer ofte best over mørke bakgrunner
-4. Standard er mørk grå (#555555)
+2. Velg en farge som kontrasterer godt med sidens bakgrunn
+3. Hvite eller lyse farger fungerer ofte best over mørke bakgrunner
 
-### Lenkefarge ved hover
+### Lenke-hover-farge {#link-hover-color-1}
 
-1. Slå på bryteren **Overstyr** for **Lenkefarge ved hover**
+1. Slå på bryteren **Overstyr** for **Lenke-hover-farge**
 2. Velg fargen for hover-tilstanden
-3. Pass på at den er synlig mot sidebakgrunnen
-4. Standard er lyseblå (#03A9F4)
+3. Sørg for at den er synlig mot sidens bakgrunn
 
-### Aktiv farge
+### Aktiv farge {#active-color-1}
 
 1. Slå på bryteren **Overstyr** for **Aktiv lenkefarge**
-2. Velg fargen som markerer den aktive siden
-3. Den bør skille seg ut og samtidig passe til designet
-4. Standard er lyseblå (#03A9F4)
+2. Velg fargen for indikatoren for aktiv side
+3. Den bør skille seg ut samtidig som den passer til designet ditt
 
 :::info
-Gjennomsiktig navigasjon har ingen innstilling for bakgrunnsfarge, siden den ligger rett over sideinnholdet.
+Gjennomsiktig navigasjon har ingen innstilling for bakgrunnsfarge, siden den legger seg direkte over sideinnholdet.
 :::
 
-## Lagre endringene
+## Lagre endringene dine {#saving-your-changes}
 
-1. Når du har satt opp fargene, klikker du på **Lagre navigasjon**
-2. Endringene gjelder umiddelbart på det live nettstedet
-3. Besøk nettstedet for å se navigasjonen i begge modusene
+1. Når du har konfigurert fargene dine, klikker du på **Lagre navigasjon**
+2. Endringene gjelder med en gang på det live nettstedet ditt
+3. Besøk nettstedet ditt for å se navigasjonen i begge modusene
 
-## Tilbakestille til standard
+## Gå tilbake til standardverdier {#resetting-to-defaults}
 
 Hvis du vil gå tilbake til standardfargene:
 
 1. Slå av bryterne **Overstyr** for alle egendefinerte farger
 2. Klikk på **Lagre navigasjon**
-3. Navigasjonen går tilbake til standard fargevalg
+3. Navigasjonen går tilbake til nettstedets vanlige farger (og over et hovedbilde, til tekstfargen i hovedbildet)
 
-Du kan også klikke på **Avbryt** for å forkaste alle endringer uten å lagre.
+Eller klikk på **Avbryt** for å forkaste alle endringer uten å lagre.
 
-## Anbefalte fremgangsmåter
+## Beste praksis {#best-practices}
 
-### Fargekontrast
+### Fargekontrast {#color-contrast}
 
-- **Lesbarhet** -- Pass på at lenkefargene har nok kontrast mot bakgrunnen
-- **WCAG-krav** -- Sikt mot et kontrastforhold på minst 4,5:1 for universell utforming
-- **Test begge moduser** -- Forhåndsvis nettstedet med både solid og gjennomsiktig navigasjon
+- **Lesbarhet** -- Sørg for at lenkefargene har nok kontrast til bakgrunnen
+- **WCAG-samsvar** -- Sikt mot minst 4,5:1 kontrastforhold for tilgjengelighet
+- **Test begge modusene** -- Forhåndsvis nettstedet ditt med både solid og gjennomsiktig navigasjon
 
-### Konsekvent profil
+### Merkevarekonsistens {#brand-consistency}
 
-- **Bruk profilfargene deres** -- Tilpass til logoen og nettstedets tema
-- **Begrens paletten** -- Hold deg til 2-3 farger for et helhetlig uttrykk
-- **Tenk på bildene dine** -- Hvis du bruker gjennomsiktig navigasjon, bør du teste den mot typiske sidebakgrunner
+- **Bruk merkevarefargene dine** -- Samsvar med logoen og nettstedets tema
+- **Begrens paletten din** -- Hold deg til 2-3 farger for et sammenhengende utseende
+- **Vurder bildene dine** -- Hvis du bruker gjennomsiktig navigasjon, test den mot vanlige sidebakgrunner
 
-### Hover- og aktive tilstander
+### Hover- og aktive tilstander {#hover-and-active-states}
 
-- **Tydelig tilbakemelding** -- Gjør hover-tilstander tydelig forskjellige fra vanlige lenker
-- **Skill ut aktive sider** -- Bruk en egen farge, slik at brukerne ser hvor de er
-- **Myke overganger** -- Systemet animerer fargeendringer automatisk
+- **Tydelig tilbakemelding** -- Gjør hover-tilstander tydelig forskjellig fra standardlenker
+- **Skill aktive sider** -- Bruk en tydelig farge slik at brukere vet hvor de er
+- **Jevne overganger** -- Systemet animerer fargeendringer automatisk
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Fargene ser ikke riktige ut
+### Fargene ser ikke riktige ut {#colors-dont-look-right}
 
 - **Tøm hurtigbufferen** -- Nettleserens hurtigbuffer kan vise gamle farger
-- **Sjekk hex-kodene** -- Pass på at du har skrevet gyldige hex-fargekoder
+- **Sjekk heksadesimale koder** -- Kontroller at du har skrevet inn gyldige heksadesimale fargekoder
 - **Test på ulike bakgrunner** -- Fargene kan se annerledes ut avhengig av siden
 
-### Navigasjonen er ikke synlig
+### Navigasjonen er ikke synlig {#navigation-not-visible}
 
 - **Gjennomsiktig modus** -- Hvis du bruker gjennomsiktig navigasjon over lyse bilder, kan mørk tekst være vanskelig å se
-- **Løsning** -- Juster lenkefargene eller bruk mørkere sidebakgrunner
-- **Alternativ** -- Legg til en diskret skygge eller bakgrunnsoverlegg i navigasjonsområdet
+- **Løsning** -- Juster lenkefargene dine, eller bruk mørkere sidebakgrunner
+- **Alternativ** -- Legg til en subtil skygge eller et bakgrunnsoverlegg i navigasjonsområdet
 
-## Tekniske detaljer
+## Tekniske detaljer {#technical-details}
 
 Navigasjonsstiler lagres som JSON og brukes via CSS-variabler:
 
-- Endringer trer i kraft umiddelbart uten at nettstedet må bygges på nytt
-- Farger arves av alle navigasjonselementer
-- Overstyringer er valgfrie; farger som ikke er satt, bruker temaets standardverdier
+- Endringer trer i kraft med en gang, uten at nettstedet må bygges på nytt
+- Fargene arves til alle navigasjonselementer
+- Overstyringer er valgfrie; ikke satte farger bruker temaets standardverdier
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Utseende](./appearance.md) -- Tilpass nettstedets overordnede uttrykk
-- [Administrere sider](./managing-pages.md) -- Opprett og organiser nettsidene dine
-- [Sideredigering](./page-editor.md) -- Utform sideoppsett og innhold
+- [Utseende](./appearance.md) -- Tilpass nettstedets generelle utseende og følelse
+- [Administrere sider](./managing-pages.md) -- Lag og organiser nettstedets sider
+- [Sideeditor](./page-editor.md) -- Design sideoppsett og innhold

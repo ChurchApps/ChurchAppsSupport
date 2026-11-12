@@ -1,54 +1,56 @@
 ---
-title: "Nettsted"
-description: "Få en oversikt over nettstedbyggeren i B1 Admin: sider, blogg, blokker, utseende, filer og kalendere, med lenker til oppsett- og redigeringsveiledninger."
+title: "Nettside"
+description: "Få en oversikt over nettsidebyggeren i B1 Admin: sider, blogg, blokker, utseende, filer og kalendere, med lenker til oppsett- og redigeringsveiledninger."
 ---
 
-# Nettsted
+# Nettside
 
 <div class="article-intro">
 
-Nettsideavsnittet i B1 Admin gir deg en full-featured nettstedbygger for kirken din. Du kan lage sider, tilpasse utseendet og følelsen på nettstedet ditt, administrere mediefiler og publisere hendelseskalendere -- alt uten å skrive noen kode.
+Nettsidedelen i B1 Admin gir deg en fullverdig nettsidebygger for menigheten din. Du kan lage sider, tilpasse nettstedets utseende og følelse, administrere mediefiler og publisere arrangementskalendere -- uten å skrive kode.
 
 </div>
 
-## Hva du kan gjøre
+## Hva du kan gjøre {#what-you-can-do}
 
-Nettstedbyggeren er organisert i disse hovedområdene:
+Nettsidebyggeren er organisert i disse hovedområdene:
 
-### Sider
+### Sider {#pages}
 
-Opprett og administrer alle sidene på kirkens nettsted. **Sider**-tabellen lister hver side -- sider som systemet har opprettet automatisk har et **Generert**-merke, og resten er egendefinerte sider du har laget. Du kan legge til nye egendefinerte sider, redigere eksisterende eller konvertere autogenererte sider til egendefinerte sider for full kontroll over innholdet deres.
+Lag og administrer alle sidene på menighetens nettside. Tabellen **Sider** lister opp hver side -- sider som systemet lager automatisk har et merke **Generert**, og resten er egendefinerte sider du har laget. Du kan legge til nye egendefinerte sider, redigere eksisterende, eller gjøre automatisk genererte sider om til egendefinerte sider for full kontroll over innholdet.
 
-Navigasjonslenkene dine vises i en trestruktur. Du kan sortere lenker ved hjelp av dra-og-slipp for å angi det eksakte hierarkiet og rekkefølgen besøkende vil se.
+Navigasjonslenkene dine listes i panelet **Hovednavigasjon** ved siden av sidetabellen. Du kan ordne og nøste lenker med dra-og-slipp for å sette akkurat den hierarkiet og rekkefølgen du vil at besøkende skal se. Se [Administrere sider](./managing-pages.md).
 
 ### Blogg {#blog}
 
 Publiser nyheter, oppdateringer og andakter som blogginnlegg på `/blog` på nettstedet ditt, med en RSS-feed. Se veiledningen [Blogg](./blog.md).
 
-### Blokker
+### Blokker {#blocks}
 
-Bygg gjenbrukbare innholdskomponenter som du kan plassere på flere sider. Blokker sparer deg tid når du har innhold som en oppfordring til handling, kunngjøringsbanner eller kontaktseksjon som vises på flere steder. Oppdater en blokk én gang, og endringen brukes overalt der den brukes.
+Lag gjenbrukbare innholdskomponenter som du kan plassere på flere sider. Blokker sparer tid når du har innhold som en oppfordring til handling, et kunngjøringsbanner eller en kontaktseksjon som vises flere steder. Oppdater en blokk én gang, og endringen gjelder overalt der den brukes. Se [Gjenbrukbare blokker](./blocks.md).
 
-### Utseende
+### Utseende {#appearance}
 
-Tilpass nettsideens tema, farger, skrifter, logo og mellomrom. Du kan bruke forhåndsoppbygde stilmaler for en rask start eller finjustere alle detaljer med fargepalettediagrammet, typografiinnstillinger og egendefinert CSS. Se [Utseende](./appearance.md)-guiden for full detaljer.
+Tilpass nettstedets tema, farger, skrifter, logo og avstand. Du kan bruke ferdige stiltemaer for en rask start, eller finjustere alle detaljer med fargepalettredigeringen, typografiinnstillingene og egendefinert CSS. Se veiledningen [Utseende](./appearance.md) for alle detaljer.
 
-### Filer
+### Filer {#files}
 
-Last opp og administrer alle mediaobjektene dine -- bilder, dokumenter og andre filer -- på ett sentralt sted, og kopier fillenker for bruk hvor som helst på nettstedet ditt. Se [Filer](./files.md) for mer informasjon.
+Last opp og administrer alle mediefilene dine -- bilder, dokumenter og andre filer -- på ett sentralt sted, og kopier filkoblinger for bruk hvor som helst på nettstedet ditt. Se [Filer](./files.md) for mer informasjon.
 
-### Kalendre
+### Kalendere {#calendars}
 
-Publiser hendelseskalendere på nettstedet ditt slik at besøkende kan se hva som skjer i kirken din. Opprett kuraterte kalendere som trekker hendelser fra flere grupper inn i en enkelt visning. Kalendere har et eget **Kalendere**-punkt i B1 Admin-menyen, atskilt fra **Nettsted**.
+Publiser arrangementskalendere på nettstedet ditt, slik at besøkende kan se hva som skjer i menigheten din. Lag kuraterte kalendere som henter arrangementer fra flere grupper inn i ett samlet visning. Kalendere har sitt eget punkt **Kalendere** i B1 Admin-menyen, adskilt fra **Nettside**.
 
 :::tip
-Start med [Startoppsett](./initial-setup.md) hvis du konfigurerer nettstedet for første gang. Det gjennomgår domeneoppsett, oppretter din første side og konfigurerer nettsideens utseende.
+Start med [Førstegangsoppsett](./initial-setup.md) hvis du setter opp nettstedet ditt for første gang. Den går deg gjennom oppsett av domene, oppretting av den første siden og konfigurering av nettstedets utseende.
 :::
 
-## Neste trinn
+## Neste steg {#next-steps}
 
-- [Startoppsett](./initial-setup.md) -- Få nettstedet ditt opp og kjørende for første gang
-- [Administrer sider](./managing-pages.md) -- Lær hvordan du oppretter og organiserer sidene dine
-- [Bruk sideeditor](./page-editor.md) -- Bygg og still din sideinnhold med det visuelle editoren
-- [Utseende](./appearance.md) -- Tilpass utseendet på nettstedet ditt
+- [Førstegangsoppsett](./initial-setup.md) -- Få nettstedet ditt i gang for første gang
+- [Administrere sider](./managing-pages.md) -- Lær hvordan du lager og organiserer sidene dine
+- [Bruke sideeditoren](./page-editor.md) -- Bygg og stil sideinnholdet ditt med den visuelle editoren
+- [Gjenbrukbare blokker](./blocks.md) -- Lag innhold én gang og gjenbruk det på mange sider
+- [Blogg](./blog.md) -- Publiser nyheter og andakter
+- [Utseende](./appearance.md) -- Tilpass nettstedets utseende og følelse
 - [Filer](./files.md) -- Last opp og administrer mediefiler

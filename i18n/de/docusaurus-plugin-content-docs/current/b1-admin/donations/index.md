@@ -1,54 +1,62 @@
 ---
 title: "Spenden"
-description: "Erfassen, ordnen und berichten Sie in B1 Admin über Kirchenspenden, von Stapeln und Fonds bis zu Jahresbescheinigungen und Online-Spenden über Stripe oder PayPal."
+description: "Erfassen, organisieren und auswerten Sie die Gaben Ihrer Kirche in B1 Admin – von Stapeln, Fonds und Kampagnen bis zu Jahresbescheinigungen und Online-Gaben."
 ---
 
 # Spenden
 
 <div class="article-intro">
 
-Der Bereich Spenden in B1 Admin bietet alles, was Sie zur Verwaltung der Gaben Ihrer Kirche brauchen. Von der Erfassung der wöchentlichen Kollekte bis zu den jährlichen Steuerbescheinigungen sind alle Werkzeuge für Spenden an einer Stelle zusammengefasst, damit Sie die Finanzen Ihrer Kirche im Blick behalten.
+Der Bereich Spenden in B1 Admin bietet alles, was Sie für die Verwaltung der Gaben Ihrer Kirche brauchen. Vom Erfassen der wöchentlichen Kollekte bis zum Erstellen der Jahressteuerbescheinigungen sind alle Werkzeuge für Spenden an einem Ort organisiert, damit Sie die Finanzen Ihrer Kirche im Blick behalten.
 
 </div>
 
-## Unterbereiche
+## Unterbereiche {#sub-sections}
 
 Im Bereich Spenden finden Sie folgende Seiten:
 
-### Übersicht
+### Übersicht {#summary}
 
-Die Seite **Übersicht** bietet einen grafischen Überblick über alle Spendenaktivitäten. Sie zeigt Diagramme und gefilterte Berichte, sodass Sie Spendentrends in Ihrer Kirche schnell erkennen. Weitere Informationen zur Übersicht und zu den Berichten finden Sie unter [Spendenberichte](donation-reports.md).
+Die Seite **Übersicht** bietet Ihnen einen visuellen Überblick über alle Gabenaktivitäten. Sie zeigt Diagramme und gefilterte Berichte, damit Sie Spendentrends in Ihrer Kirche schnell erkennen. Weitere Details zur Übersicht und zu den Berichtswerkzeugen finden Sie unter [Spendenberichte](donation-reports.md).
 
-### Stapel
+### Stapel {#batches}
 
-Mit **[Stapeln](batches.md)** fassen Sie Spenden zusammen, zum Beispiel alle Schecks und Bargeldbeträge einer Sonntagskollekte. Jeder Stapel zeigt die Anzahl der Spenden und den Gesamtbetrag, was den Abgleich erleichtert. Sobald ein Stapel gezählt ist, kann eine Person mit der Berechtigung **Spenden bearbeiten** ihn abschließen, damit die zählenden Ehrenamtlichen ihn nicht mehr ändern können. Ehrenamtliche mit der Berechtigung **Spenden erfassen** können Gaben zu offenen Stapeln hinzufügen, ohne den übrigen Bereich Spenden zu sehen.
+**[Stapel](batches.md)** fassen Spenden zusammen – zum Beispiel alle Schecks und Bargeldbeträge einer Sonntagskollekte. Jeder Stapel erfasst seine Anzahl an Spenden und seine Gesamtsumme für eine einfache Abstimmung. Sobald ein Stapel gezählt ist, kann eine Person mit **Spenden bearbeiten** ihn schließen, sodass Zählhelfende ihn nicht mehr ändern können. Ehrenamtliche mit der Berechtigung **Spenden erfassen** können Gaben zu offenen Stapeln hinzufügen, ohne den übrigen Bereich Spenden zu sehen.
 
-### Fonds
+### Fonds {#funds}
 
-Mit **[Fonds](funds.md)** ordnen Sie Spenden nach ihrem Zweck. Übliche Beispiele sind Allgemeiner Fonds, Baufonds und Mission. Sie können jeden Fonds als steuerlich absetzbar oder nicht absetzbar kennzeichnen.
+**[Fonds](funds.md)** ordnen Ihre Spenden nach ihrem Zweck. Übliche Beispiele sind der Allgemeine Fonds, der Baufonds und Mission. Sie können jeden Fonds als steuerlich absetzbar oder nicht absetzbar markieren.
 
-### Bescheinigungen
+### Kampagnen {#campaigns}
 
-Auf der Seite **[Bescheinigungen](giving-statements.md)** erstellen Sie die jährlichen Spendenbescheinigungen für Ihre Spender. Sie können einzelne CSV-Dateien herunterladen oder alle Bescheinigungen auf einmal drucken.
+**[Kampagnen](campaigns.md)** verfolgen eine Spendenaktion auf ein Ziel hin, mit Zusagen der Mitglieder neben den tatsächlichen Gaben an den Fonds der Kampagne.
 
-### Stripe-Import
+### Spendenbescheinigungen {#giving-statements}
 
-Wenn Sie Online-Spenden über Stripe annehmen, können Sie mit dem Werkzeug **[Stripe-Import](stripe-import.md)** diese Transaktionen in B1 Admin übernehmen. So liegt alles in einem System.
+Die Seite **[Spendenbescheinigungen](giving-statements.md)** erstellt Jahresbescheinigungen für Ihre Spendenden. Sie können einzelne CSV-Dateien herunterladen oder alle Bescheinigungen auf einmal drucken.
 
-## Online-Spenden
+### Fehlgeschlagene Gaben {#failed-gifts}
 
-B1 Admin ist mit **Stripe** und **PayPal** verbunden, um Online-Spenden anzunehmen. Nach der Einrichtung können Mitglieder über Ihre B1.church-Website geben, und diese Spenden erscheinen automatisch in Ihren Aufzeichnungen. Eine Anleitung für den Einstieg finden Sie unter [Einrichtung von Online-Spenden](online-giving-setup.md).
+**Fehlgeschlagene Gaben** listet wiederkehrende Online-Gaben auf, die das Zahlungsgateway nicht einziehen konnte, mit dem Spendenden, dem Betrag, dem Datum und der Meldung des Gateways sowie einer Schaltfläche **Erneut versuchen**. Siehe [Fehlgeschlagene wiederkehrende Gaben](online-giving-setup.md#failed-recurring-gifts).
+
+### Stripe-Import {#stripe-import}
+
+Wenn Sie Online-Spenden über Stripe annehmen, können Sie mit dem Werkzeug **[Stripe-Import](stripe-import.md)** diese Transaktionen in B1 Admin übernehmen, sodass alles in einem System liegt.
+
+## Online-Gaben {#online-giving}
+
+B1 Admin ist für die Annahme von Online-Spenden mit **Stripe**, **Kingdom Funding** und **Paystack** verbunden. Nach der Einrichtung können Mitglieder über Ihre B1.church-Seite geben, und diese Spenden erscheinen automatisch in Ihren Unterlagen. Den Einstieg finden Sie unter [Einrichtung der Online-Spenden](online-giving-setup.md).
 
 :::tip
-Wenn Sie in B1 Admin neu bei Spenden sind, richten Sie zuerst Ihre [Fonds ein](funds.md). Legen Sie danach einen [ersten Stapel an](batches.md) und [erfassen Sie Spenden](recording-donations.md) darin.
+Wenn Sie in B1 Admin neu bei Spenden sind, beginnen Sie mit der [Einrichtung Ihrer Fonds](funds.md), legen Sie dann Ihren [ersten Stapel an](batches.md) und [erfassen Sie Spenden](recording-donations.md) darin.
 :::
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- [Spenden erfassen](recording-donations.md): Spenden in einen Stapel eintragen
-- [Spendenstapel](batches.md): Spenden zu Gruppen zusammenfassen
-- [Fonds verwalten](funds.md): Kategorien für Gaben einrichten und pflegen
-- [Spendenbescheinigungen](giving-statements.md): Steuerbescheinigungen für Spender erstellen
-- [Einrichtung von Online-Spenden](online-giving-setup.md): Stripe oder PayPal verbinden
-- [Stripe-Import](stripe-import.md): Online-Transaktionen importieren
-- [Spendenberichte](donation-reports.md): Spendenübersichten anzeigen und filtern
+- [Spenden erfassen](recording-donations.md) – Spenden in einen Stapel eintragen
+- [Spendenstapel](batches.md) – Spenden in Gruppen organisieren
+- [Fonds verwalten](funds.md) – Gebekategorien einrichten und verwalten
+- [Spendenbescheinigungen](giving-statements.md) – Steuerbescheinigungen für Spendende erstellen
+- [Einrichtung der Online-Spenden](online-giving-setup.md) – Stripe, Kingdom Funding oder Paystack verbinden
+- [Stripe-Import](stripe-import.md) – Online-Transaktionen importieren
+- [Spendenberichte](donation-reports.md) – Spendenübersichten ansehen und filtern

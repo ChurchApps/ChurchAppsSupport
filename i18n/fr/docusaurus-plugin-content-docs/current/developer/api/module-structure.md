@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## Communication entre modules
+## Communication entre modules {#cross-module-communication}
 
 Chaque module possède sa propre base de données (voir [Base de données](./database.md)), et un module ne requête jamais directement les tables d'un autre module. Quand un module a besoin de données possédées par un autre -- par exemple, le module doing résolvant les personnes de membership -- il passe par la **gateway** du module propriétaire dans `src/shared/modules/` :
 

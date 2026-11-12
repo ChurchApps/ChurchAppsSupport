@@ -1,60 +1,60 @@
 ---
 title: "Dati demografici"
-description: "Consulta in B1 Admin età, genere, stato di membro, stato civile e composizione per sede della comunità con grafici interattivi, e approfondisci ogni gruppo."
+description: "Scopri la composizione della tua comunità per età, genere, membership, stato civile e sede con i grafici interattivi di B1 Admin, e approfondisci qualsiasi gruppo."
 ---
 
 # Dati demografici
 
 <div class="article-intro">
 
-La dashboard **Dati demografici** ti offre un quadro visivo della tua comunità — chi sono le persone, quante sono e come è distribuito il tuo elenco di membri tra fasce d'età, sessi, stati civili e campus. Ogni grafico è interattivo: clicca su una qualsiasi porzione per passare direttamente a una ricerca filtrata tra le Persone che mostra esattamente quelle persone.
+La dashboard **Dati demografici** ti offre un'istantanea visiva della tua comunità: chi sono, quante sono e come si distribuisce la membership tra fasce d'età, generi, stati civili e sedi. Ogni grafico è interattivo: clicca su una qualsiasi porzione per passare direttamente a una ricerca filtrata nelle Persone che mostra esattamente quelle persone.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Nel tuo elenco devono esistere delle persone. Consulta [Aggiungere persone](./adding-people.md) oppure [Importare dati](./importing-data.md) per iniziare.
-- Per vedere il grafico dei Campus, devi prima configurare i campus in [Impostazioni → Campus](../settings/campuses.md).
+- Le persone devono esistere nella tua anagrafica. Per iniziare, vedi [Aggiungere persone](./adding-people.md) oppure [Importare dati](./importing-data.md).
+- Per suddividere il grafico delle Sedi per sede, devi prima configurare le sedi in [Impostazioni → Sedi](../settings/campuses.md).
 
 </div>
 
-## Aprire i dati demografici
+## Aprire i dati demografici {#opening-demographics}
 
-Dalla pagina **Persone**, clicca su **Dati demografici** nell'intestazione della pagina. La pagina mostra in alto il numero totale di persone, seguito dai grafici descritti di seguito.
+Dalla pagina **Persone**, clicca su **Dati demografici** nell'intestazione della pagina. La pagina mostra in alto il numero totale di persone (**Totale**), seguito dai grafici descritti sotto. Ogni grafico a ciambella mostra anche il proprio totale sotto il grafico. Clicca su **Persone** in alto a destra per tornare all'anagrafica.
 
-## Grafici
+## Grafici {#charts}
 
-### Distribuzione per età
+### Età {#age}
 
-Un grafico a barre raggruppate che mostra quante persone rientrano in ciascuna fascia d'età (ad esempio 0–9, 10–17, 18–24 e così via fino a 65+). Ogni barra è suddivisa in tre serie — **Femmine**, **Maschi** e **Non assegnato** — così puoi vedere a colpo d'occhio la ripartizione per sesso all'interno di ciascuna fascia d'età.
+Un grafico a barre impilate che mostra quante persone rientrano in ciascuna fascia d'età: 0–3, 4–11, 12–18, 19–25, 26–35, 36–50, 51–64 e 65+. Ogni barra è suddivisa per genere: **Femmina**, **Maschio** e, quando qualcuno di quella fascia non ha un genere registrato, **Non assegnato**, così puoi vedere a colpo d'occhio la ripartizione per genere all'interno di ogni fascia d'età. Le persone senza data di nascita non vengono conteggiate in questo grafico.
 
-### Stato di appartenenza
+### Tipi di membership {#membership-types}
 
-Un grafico ad anello che suddivide la tua comunità per stato di appartenenza (ad esempio Membro, Partecipante abituale, Visitatore e così via).
+Un grafico a ciambella che suddivide la tua comunità per stato di membership (ad esempio, Membro, Frequentatore abituale, Visitatore e così via). Le persone senza stato compaiono come **Non assegnato**.
 
-### Sesso
+### Genere {#gender}
 
-Un grafico ad anello che mostra la proporzione di registrazioni femminili, maschili e non assegnate nel tuo elenco.
+Un grafico a ciambella che mostra la proporzione di registrazioni femminili, maschili e non assegnate nella tua anagrafica.
 
-### Stato civile
+### Stato civile {#marital-status}
 
-Un grafico ad anello che mostra la ripartizione tra i valori di stato civile (ad esempio Sposato, Celibe/Nubile, Vedovo).
+Un grafico a ciambella che mostra la ripartizione tra i valori di stato civile (ad esempio, Sposato, Single, Vedovo).
 
-### Campus
+### Sede {#campus}
 
-Un grafico ad anello che mostra come sono distribuite le persone tra i campus della tua chiesa. Questo grafico appare solo se hai configurato dei campus e almeno una persona è assegnata a un campus. Le persone senza campus assegnato compaiono come **Non assegnato**.
+Un grafico a ciambella che mostra come le persone si distribuiscono tra le sedi della chiesa. Le persone senza una sede assegnata compaiono come **Non assegnato**, quindi una chiesa senza sedi vede una sola fetta **Non assegnato**.
 
-## Approfondire i dati
+## Approfondire i dati {#drilling-into-the-data}
 
-Clicca su una qualsiasi porzione di un grafico ad anello o su un segmento di barra nel grafico per età per passare alla pagina **Persone** già filtrata in modo da mostrare esattamente quelle persone. Il filtro resta attivo al termine del caricamento della pagina, e il conteggio sopra l'elenco indica quante famiglie e quante persone corrispondono. Usalo per creare rapidamente un elenco di contatti, eseguire un'azione in blocco o esportare un segmento — ad esempio, clicca sulla porzione **Visitatore** in Stato di appartenenza per vedere tutti i visitatori e poi inviarli a un flusso di lavoro.
+Clicca su una qualsiasi fetta di un grafico a ciambella (o sul suo nome nella legenda) oppure su un segmento di barra del grafico per età, per passare alla pagina **Persone** già filtrata e mostrare esattamente quelle persone. Il filtro resta applicato al termine del caricamento della pagina, e il conteggio sopra l'elenco indica quanti nuclei familiari e quante persone corrispondono. Puoi usarlo per creare rapidamente un elenco di contatti, eseguire un'azione in blocco o esportare un segmento: ad esempio, clicca sulla fetta **Visitatore** in Stato di membership per vedere tutti i visitatori e poi inviarli a un flusso di lavoro.
 
 :::tip
-Dopo aver approfondito un risultato filtrato, usa **Salva come elenco** nella ricerca Persone per salvare quel filtro per usi futuri. Vedi [Elenchi salvati](./lists.md).
+Dopo aver approfondito un risultato filtrato, usa **Salva come lista** nella ricerca Persone per salvare quel filtro per usi futuri. Vedi [Liste salvate](./lists.md).
 :::
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
-- [Ricerca persone](./searching-people.md) — la pagina Persone su cui atterri quando approfondisci un grafico
-- [Elenchi salvati](./lists.md) — salva un segmento demografico come elenco riutilizzabile
-- [Campus](../settings/campuses.md) — configura i campus affinché compaia il grafico dei Campus
+- [Cercare persone](./searching-people.md) — la pagina Persone su cui atterri quando approfondisci un grafico
+- [Liste salvate](./lists.md) — salva un segmento demografico come lista riutilizzabile
+- [Sedi](../settings/campuses.md) — configura le sedi perché compaia il grafico Sedi

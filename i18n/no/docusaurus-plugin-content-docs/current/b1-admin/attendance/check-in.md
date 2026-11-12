@@ -1,50 +1,50 @@
 ---
-title: "Oppsett av selvbetjent innsjekking med B1 Checkin og B1 Admin"
+title: "Selvinnsjekking med B1 Checkin og B1 Admin"
 sidebar_label: "Innsjekking"
-description: "Sett opp selvbetjent innsjekking under gudstjenester med B1 Checkin-appen i B1 Admin, inkludert enheter, kioskkontoer, tidsplaner, merkevarebygging og QR-registrering av gjester."
+description: "Sett opp selvinnsjekking til gudstjenester med appen B1 Checkin i B1 Admin, med enheter, kioskkontoer, tidsplaner, profilering og QR-registrering av gjester."
 ---
 
 # Innsjekking
 
 <div class="article-intro">
 
-B1 Admin støtter selvbetjent innsjekking under gudstjenester via den tilhørende appen **B1 Checkin**. Medlemmer kan sjekke seg selv og familien sin inn på kiosker eller dedikerte enheter når de ankommer. Det gjør prosessen raskere og reduserer arbeidsbyrden for frivillige. Hver innsjekking registreres automatisk som oppmøte.
+B1 Admin støtter selvinnsjekking til gudstjenester gjennom den tilhørende appen **B1 Checkin**. Medlemmer kan sjekke seg selv og familien sin inn ved kiosker eller dedikerte enheter når de kommer, noe som gjør prosessen raskere og reduserer arbeidsbyrden for frivillige. Hver innsjekking registreres automatisk som oppmøte.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Menighetens campus, gudstjenestetider og grupper må være satt opp i [Oppmøteoppsett](setup.md).
-- Du trenger [personer i databasen](../people/adding-people.md) med [husholdninger](../people/adding-people.md#managing-households) satt opp, slik at familier kan sjekke inn sammen.
+- Menighetene, gudstjenestetidspunktene og gruppene dine må være satt opp i [oppmøteoppsett](setup.md).
+- Du trenger [personer i databasen](../people/adding-people.md) med [husstander](../people/adding-people.md#managing-households) satt opp, slik at familier kan sjekke inn sammen.
 - Du trenger et nettbrett og eventuelt en Brother-etikettskriver (se [maskinvareanbefalinger](#recommended-hardware) nedenfor).
 
 </div>
 
-## Slik fungerer det
+## Slik fungerer det {#how-it-works}
 
-B1 Checkin-appen kobles til oppmøteoppsettet i B1 Admin. Når et medlem sjekker inn, registreres oppmøtet automatisk på riktig campus, gudstjenestetid og gruppe. Du trenger ikke registrere oppmøte manuelt for personer som bruker innsjekkingssystemet.
+Appen B1 Checkin kobles til oppsettet ditt for oppmøte i B1 Admin. Når et medlem sjekker inn, registreres oppmøtet automatisk på riktig menighet, gudstjenestetidspunkt og gruppe. Du trenger ikke å legge inn oppmøte manuelt for personer som bruker innsjekkingssystemet.
 
-## Sette opp innsjekking
+## Sette opp innsjekking {#setting-up-check-in}
 
-1. **Konfigurer oppmøtestrukturen først.** I B1 Admin går du til **People > Attendance** og klikker **Setup** for å sørge for at campus, gudstjenestetider og grupper er på plass. Innsjekkingsappen er avhengig av denne konfigurasjonen. Du kan eventuelt gi hver gudstjenestetid en [innsjekkingstidsplan](setup.md#setting-a-check-in-schedule), slik at innsjekkingen åpner og stenger automatisk hver uke. Tidsplaner bruker tidssonen til gudstjenestens campus, eller menighetens tidssone hvis campuset ikke har en tidssone satt. Kiosken viser gudstjenestetider som har stengt innsjekkingsvindu som **Closed**, og forteller familier når innsjekkingen åpner. Se [Oppmøteoppsett](setup.md) for detaljer.
-2. **Installer B1 Checkin-appen** på enhetene du planlegger å bruke. Appen er tilgjengelig på følgende plattformer:
+1. **Konfigurer oppmøtestrukturen først.** Gå til **People > Attendance** i B1 Admin og klikk **Setup** for å sørge for at menighetene, gudstjenestetidspunktene og gruppene dine er på plass. Innsjekkingsappen er avhengig av denne konfigurasjonen. Du kan eventuelt gi hvert gudstjenestetidspunkt en [innsjekkingstidsplan](setup.md#setting-a-check-in-schedule), slik at innsjekkingen åpnes og lukkes automatisk hver uke. Tidsplaner bruker tidssonen til gudstjenestens menighet, eller menighetens tidssone dersom menigheten ikke har en satt. Kiosken viser gudstjenestetidspunkter der tidsvinduet er stengt som **Closed**, og forteller familiene når innsjekkingen åpner. Se [oppmøteoppsett](setup.md) for detaljer.
+2. **Installer appen B1 Checkin** på enhetene du planlegger å bruke. Appen er tilgjengelig på følgende plattformer:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
    - **Android/Samsung-nettbrett:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon Fire-nettbrett:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Logg inn i B1 Checkin-appen** med en konto som har tillatelsen **Checkin** for oppmøte (eller **Edit Attendance**). Se [Kontoer for innsjekkingskiosk](../settings/roles-permissions.md#check-in-kiosk-accounts).
-4. **Velg campus og gudstjenestetid** for den aktuelle samlingen.
-5. Medlemmer kan nå søke etter navnet sitt på enheten og sjekke inn.
+3. **Logg inn i appen B1 Checkin** med en konto som har tillatelsen **Checkin** for oppmøte (eller **Edit Attendance**). Se [kioskkontoer for innsjekking](../settings/roles-permissions.md#check-in-kiosk-accounts).
+4. **Velg menighet og gudstjenestetidspunkt** for den aktuelle samlingen.
+5. Medlemmer kan nå søke etter navnet sitt på enheten og sjekke seg inn.
 
 :::tip
-Plasser innsjekkingsenheter på synlige og lett tilgjengelige steder, for eksempel ved inngangen i foajeen eller ved velkomstdisken. En kort kunngjøring under gudstjenestene hjelper medlemmene å vite at dette alternativet finnes.
+Plasser innsjekkingsenheter på synlige, lett tilgjengelige steder, for eksempel ved inngangen i foajeen eller ved velkomstdisken. En kort kunngjøring under gudstjenesten hjelper medlemmene å vite at dette finnes.
 :::
 
 :::tip
-Hvis menigheten din har flere campus, må du gjenta oppsettet for hvert campus i [Oppmøteoppsett](setup.md). Hver innsjekkingsenhet kan konfigureres for et annet campus.
+Hvis menigheten din har flere menigheter, må du gjenta oppsettet for hver menighet i [oppmøteoppsett](setup.md). Hver innsjekkingsenhet kan settes opp for en ulik menighet.
 :::
 
-## Anbefalt maskinvare
+## Anbefalt maskinvare {#recommended-hardware}
 
 **Nettbrett** — alle disse fungerer godt med appen:
 
@@ -61,121 +61,116 @@ Hvis menigheten din har flere campus, må du gjenta oppsettet for hvert campus i
 **Etiketter:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Bare Brother-etikettskrivere er kompatible med B1 Checkin-appen. Skrivere fra andre merker fungerer ikke for utskrift av navnelapper.
+Bare Brother-etikettskrivere er kompatible med appen B1 Checkin. Skrivere fra andre merker fungerer ikke for utskrift av navnelapper.
 :::
 
 :::info
-Følg skriverens oppsettsinstruksjoner for å koble den til samme WiFi-nettverk som nettbrettet. Du finner Brother-skriverdrivere og oppsettsveiledninger på [Brothers støttesider](https://support.brother.com).
+Følg skriverens oppsettsinstruksjoner for å koble den til samme WiFi-nettverk som nettbrettet. Du finner Brother-drivere og oppsettsveiledninger på [Brothers støttested](https://support.brother.com).
 :::
 
-## Tilpasse kioskens utseende
+## Tilpasse utseendet til kiosken {#customizing-the-kiosk-appearance}
 
-Du kan tilpasse utseendet til B1 Checkin-appen slik at det samsvarer med menighetens merkevare. I B1 Admin går du til **Mobile > B1 CheckIn** og bruker kortet **Kiosk Theme** for å konfigurere:
+Du kan tilpasse utseendet til appen B1 Checkin slik at det passer til menighetens profil. Gå til **Mobile > B1 CheckIn** i B1 Admin (eller klikk **Kiosk** på oppmøtesiden) og bruk kortet **Kiosk Theme**. Klikk **Save** på kortet etter at du har gjort endringer.
 
-### Farger
+### Farger {#colors}
 
-Tilpass åtte fargeinnstillinger slik at de samsvarer med menighetens merkevare:
+Kiosken bruker de samme fargene som menighetens app. Angi dem under **Mobile > App Theme**; kortet Kiosk Theme har ingen egne fargeinnstillinger.
 
-- **Primary** og **Primary Contrast** -- Hovedfarge for merkevaren og tekstfargen til den.
-- **Secondary** og **Secondary Contrast** -- Aksentfarge og tekstfargen til den.
-- **Header Background** og **Subheader Background** -- Farger for kioskens toppområder.
-- **Button Background** og **Button Text** -- Farger for interaktive knapper.
+### Bakgrunnsbilde {#background-image}
 
-### Bakgrunnsbilde
+Under **Background Image** klikker du **Upload Image** for å legge til et valgfritt bakgrunnsbilde for velkomst- og oppslagsskjermene på kiosken. Anbefalt størrelse er 1920x1080 piksler. Bruk **Change Image** eller **Remove** for å erstatte eller fjerne det.
 
-Last opp et valgfritt bakgrunnsbilde for kioskens velkomst- og oppslagsskjermer. Anbefalt størrelse er 1920x1080 piksler.
+### Hvilemodus / skjermsparer {#idle-screen--screensaver}
 
-### Hvilemodus / skjermsparer
+Sett opp en skjermsparer som aktiveres etter en periode uten aktivitet:
 
-Konfigurer en skjermsparer som aktiveres etter en periode uten aktivitet:
-
-1. Slå hvilemodus **på** eller **av**.
-2. Angi **timeout** (hvor mange sekunder uten aktivitet før skjermspareren starter, minimum 10 sekunder).
-3. Legg til ett eller flere **lysbilder** -- hvert lysbilde har et bilde og en visningstid (minimum 3 sekunder).
+1. Åpne **Idle Screen / Screensaver** og slå på **Enable idle screen**.
+2. Angi **Timeout (seconds)** – hvor mange sekunder uten aktivitet som må gå før skjermspareren starter (minimum 10).
+3. Klikk **Add Slide** for hvert lysbilde, klikk **Upload** for å velge bildet, og angi **Duration (s)** (minimum 3 sekunder).
 
 :::tip
-Bruk hvilemodus til å vise kunngjøringer, kommende arrangementer eller velkomstmeldinger når kiosken ikke er i aktiv bruk.
+Bruk hvilemodusen til å vise kunngjøringer, kommende arrangementer eller velkomsthilsener når kiosken ikke er i bruk.
 :::
 
-## Gjesteregistrering via QR-kode
+## Registrering av gjester via QR-kode {#guest-registration-via-qr-code}
 
 Innsjekkingskiosken kan vise en QR-kode som besøkende skanner for å registrere seg selv og familien sin på egen telefon. Dette gjør innsjekkingen raskere for førstegangsgjester.
 
-Når en gjest skanner QR-koden, sendes vedkommende til en [registreringsside for gjester](../../b1-church/checkin/guest-registration.md), der de fyller inn familiens navn og eventuelle andre opplysninger du velger å be om. En frivillig kan deretter slå dem opp på kiosken og sjekke dem inn.
+Når en gjest skanner QR-koden, kommer de til en [registreringsside for gjester](../../b1-church/checkin/guest-registration.md) der de fyller inn navnene i familien og andre opplysninger du har valgt å be om. En frivillig kan deretter slå dem opp på kiosken og sjekke dem inn.
 
-### Aktivere QR-gjesteregistrering
+### Slå på QR-registrering for gjester {#enabling-qr-guest-registration}
 
-For å slå på visningen av QR-koden:
+Slik slår du på visningen av QR-koden:
 
-1. I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Mobile**.
-2. Klikk på **B1 CheckIn**.
+1. I B1 Admin åpner du [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Mobile**.
+2. Klikk **B1 CheckIn**.
 3. Slå på **QR Guest Registration** og klikk **Save**.
 
 :::note
-Denne innstillingen ligger under **Mobile > B1 CheckIn** (samme side som kortet **Kiosk Theme**), ikke under Attendance. Handlingen **Kiosk** på Attendance-siden har en lenke til denne siden.
+Denne innstillingen ligger under **Mobile > B1 CheckIn** (på samme side som kortet **Kiosk Theme**), ikke under Attendance. Handlingen **Kiosk** på oppmøtesiden har en lenke til denne siden.
 :::
 
-Når bryteren er på, vises de øvrige alternativene nedenfor på samme kort, **QR Guest Registration**. Klikk **Save** på kortet etter at du har endret noen av dem.
+Når bryteren er på, vises de andre alternativene nedenfor i kortet **QR Guest Registration**. Klikk **Save** på kortet etter at du har endret noen av dem.
 
-### Velge registreringsfelt
+### Velge registreringsfelter {#choosing-sign-up-fields}
 
-Listen **Sign-up fields** styrer hva registreringsskjemaet spør etter. **First Name** og **Last Name** er alltid med på skjemaet og alltid påkrevd for hvert familiemedlem. For hvert annet felt slår du på **Include** for å legge det til i skjemaet, og deretter på **Required** hvis gjester må fylle det ut. **Required** kan bare slås på for et felt som er inkludert, og å slå av **Include** fjerner også **Required**.
+Sjekklisten **Sign-up fields** styrer hva registreringsskjemaet spør om. **First Name** og **Last Name** er alltid med på skjemaet og alltid påkrevd for hvert familiemedlem. For hvert av de andre feltene slår du på **Include** for å legge det til i skjemaet, og deretter på **Required** dersom gjestene må fylle det ut. **Required** kan bare slås på for et felt som er tatt med, og når du slår av **Include**, blir **Required** fjernet.
 
-| Felt | Spørres etter | Inkludert som standard |
+| Felt | Spørres etter | Med som standard |
 |-------|-----------|---------------------|
 | **Title** | Hvert familiemedlem, som en nedtrekksliste foran navnet (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | Nei |
 | **Email** | Kun hovedkontakten | Ja (valgfritt) |
 | **Phone** | Hvert familiemedlem. Når feltet er påkrevd, må bare hovedkontakten fylle det ut. | Ja (valgfritt) |
-| **Household role** | Hvert familiemedlem etter hovedkontakten -- Spouse (ektefelle), Child (barn) eller Other (annet). Hovedkontakten er overhode for en ny husholdning. Den som ikke har en rolle, lagres som Other. | Ja (valgfritt) |
-| **Home address** | Én gang for familien -- gate, adresselinje 2, by, delstat og postnummer. Når feltet er påkrevd, må alt unntatt adresselinje 2 fylles ut. Adressen lagres på hvert familiemedlem. | Nei |
+| **Household role** | Hvert familiemedlem etter hovedkontakten – Spouse, Child eller Other. Hovedkontakten er leder av en ny husstand. Den som ikke har en rolle, lagres som Other. | Ja (valgfritt) |
+| **Home address** | Én gang for familien – gate, adresselinje 2, by, delstat og postnummer. Når feltet er påkrevd, må alt unntatt adresselinje 2 fylles ut. Adressen lagres på alle familiemedlemmene. | Nei |
 | **Birth date** | Hvert familiemedlem | Nei |
 | **Gender** | Hvert familiemedlem | Nei |
 | **Marital status** | Kun hovedkontakten | Nei |
 | **Grade** | Hvert familiemedlem (PreK til 12, eller Graduated) | Nei |
 | **Comments** | Én gang, i en boks under familiemedlemmene (opptil 1 000 tegn) | Nei |
 
-Felter du slår av, lagres aldri, selv om noen sender dem til registreringen på en annen måte. Kommentarer lagres som et notat på hovedkontaktens post (registrert som "Guest sign-up"), slik at du kan lese dem i seksjonen **Notes** på profilen deres.
+Felter du slår av, lagres aldri, selv om noen sender dem til registreringen på en annen måte. Kommentarer lagres som et notat på hovedkontaktens post (registrert som "Guest sign-up"), slik at du kan lese dem i delen **Notes** på profilen deres.
 
-### Legge gjester til i en gruppe
+### Legge gjester til en gruppe {#adding-guests-to-a-group}
 
-Bruk **Add new guests to group** for automatisk å legge alle som registrerer seg til i en av gruppene dine -- for eksempel en gruppe for nykommere ("Newcomers") eller en gruppe for helgens arrangement. Velg **None** (standard) for å hoppe over dette. Gjester ser aldri gruppen og kan ikke velge den; den settes bare her. Endre den før hvert arrangement, slik at du kan følge opp arrangementets gjester samlet.
+Bruk **Add new guests to group** for å legge alle som registrerer seg, automatisk i en av gruppene dine – for eksempel en gruppe for «Nykommere» eller en gruppe for helgens arrangement. Velg **None** (standard) for å hoppe over dette. Gjester ser eller velger aldri gruppen; den settes bare her. Endre den før hvert arrangement, slik at du kan følge opp arrangementets gjester samlet.
 
-### Registrere oppmøte
+### Registrere oppmøte {#recording-attendance}
 
-Når en gruppe er valgt, vises en bryter, **Also record attendance**. Slå den på for å registrere gjester som til stede med én gang de registrerer seg, slik at du ikke må sjekke dem inn separat.
+Når en gruppe er valgt, vises en bryter for **Also record attendance**. Slå den på for å registrere gjestene som til stede med en gang de registrerer seg, slik at du ikke må sjekke dem inn separat.
 
-Oppmøte registreres bare når registreringen skjer i løpet av en av den valgte gruppens **planlagte** gudstjenestetider:
+Oppmøte registreres bare når registreringen skjer innenfor et av de **planlagte** gudstjenestetidspunktene for den valgte gruppen:
 
-- Gruppen må være koblet til én eller flere gudstjenestetider, og disse gudstjenestetidene må ha en [innsjekkingstidsplan](setup.md#setting-a-check-in-schedule) (en **Day** og en **Start Time**).
-- "I løpet av" betyr innenfor innsjekkingsvinduet for gudstjenestetiden, fra **Open check-in**-minuttene før starttidspunktet til **Close check-in**-minuttene etter sluttidspunktet (eller etter starttidspunktet hvis det ikke er satt noe sluttidspunkt). Uten både sluttidspunkt og lukkeminutter gjelder vinduet til slutten av den dagen. Tidssonen er den samme som innsjekkingstidsplanen bruker.
-- Hvert familiemedlem registreres som til stede i gruppen for hver av gruppens gudstjenestetider som er åpen på det tidspunktet, på dagens dato.
-- Registreringer på andre tidspunkter, eller for en gruppe hvis gudstjenestetider ikke har en tidsplan, legges til i gruppen, men telles ikke som oppmøte.
+- Gruppen må være knyttet til ett eller flere gudstjenestetidspunkter, og disse må ha en [innsjekkingstidsplan](setup.md#setting-a-check-in-schedule) (en **Day** og en **Start Time**).
+- «Innenfor» betyr innenfor innsjekkingsvinduet til gudstjenestetidspunktet – fra det antallet **Open check-in**-minutter før start til det antallet **Close check-in**-minutter etter slutt (eller etter start dersom det ikke er satt et sluttidspunkt; uten både sluttidspunkt og lukkeminutter, til slutten av dagen), i samme tidssone som innsjekkingstidsplanen bruker.
+- Hvert familiemedlem merkes som til stede i gruppen for hvert av gudstjenestetidspunktene som er åpne akkurat da, på dagens dato.
+- Registreringer på andre tidspunkter, eller for en gruppe der gudstjenestetidspunktene ikke har en tidsplan, legges til i gruppen, men telles ikke som oppmøte.
 
-### Overskriftsbilde
+### Bannerbilde {#header-photo}
 
-Under **Header photo** klikker du **Change photo** for å velge eller laste opp et bilde (beskjært til 16:9) som vises øverst på registreringssiden i stedet for standardikonet. Klikk **Remove** for å gå tilbake til ikonet.
+Under **Header photo** klikker du **Change photo** for å velge eller laste opp et bilde (beskjæres til 16:9-format) som vises øverst på registreringssiden i stedet for standardikonet. Klikk **Remove** for å gå tilbake til ikonet.
 
-### Dele registreringslenken
+### Dele registreringslenken {#sharing-the-registration-link}
 
-Når QR Guest Registration er aktivert, vises en seksjon, **Share registration QR code**, nederst på kortet. Den gir deg to måter å få gjester til registreringsskjemaet på, i tillegg til QR-koden på kiosken:
+Når QR-registrering for gjester er slått på, vises en seksjon for **Share registration QR code** nederst på kortet. Den gir deg to måter å få gjester til registreringsskjemaet på i tillegg til QR-koden på kiosken:
 
-- **Copy link** — kopierer registreringslenken, slik at du kan lime den inn på menighetens nettside, i e-poster eller hvor som helst på nettet.
-- **Download PNG** — laster ned QR-koden som et bilde du kan skrive ut på flygeblader, menighetsblader eller skilt.
+- **Copy link** – kopierer registreringsadressen slik at du kan lime den inn på menighetens nettside, i e-poster eller andre steder på nettet.
+- **Download PNG** – laster ned QR-koden som et bilde du kan skrive ut på løpesedler, menighetsbladet eller skilt.
 
 :::tip
-Legg registreringslenken til på menighetens nettside, for eksempel siden "Plan Your Visit" eller "I'm New", slik at gjester kan registrere seg før de i det hele tatt kommer.
+Legg registreringslenken til på menighetens nettside, for eksempel siden «Plan Your Visit» eller «I'm New», slik at gjester kan registrere seg før de i det hele tatt kommer.
 :::
 
-### Hva skjer etter at en gjest har registrert seg
+### Hva som skjer etter at en gjest har registrert seg {#what-happens-after-a-guest-signs-up}
 
-B1 leter først etter personer som allerede finnes i **People**. Et familiemedlem kobles til en eksisterende person når nøyaktig én person har samme fornavn og samme e-post eller telefonnummer. Et barn som er oppgitt uten e-post eller telefon, kobles til basert på fornavn innenfor husholdningen som ble koblet. Personer som blir koblet, brukes slik de er. Registreringen endrer aldri opplysningene deres eller medlemsstatusen. Alle nye personer blir med i den koblede husholdningen.
+B1 ser først etter personer som allerede finnes i **People**. Et familiemedlem blir koblet til en eksisterende person når nøyaktig én person har samme fornavn og samme e-postadresse eller telefonnummer. Et barn som er oppgitt uten e-post eller telefon, kobles etter fornavn innenfor den husstanden som ble funnet. Personer som finnes fra før, brukes uendret – registreringen endrer aldri detaljene eller medlemsstatusen deres – og alle nye personer blir med i den matchede husstanden.
 
-Når ingen samsvarer, oppretter registreringen en ny husholdning oppkalt etter hovedkontaktens etternavn, med en personpost for hvert familiemedlem. Alle nye legges til i **People** med medlemsstatusen **Visitor**, og hovedkontakten er overhode for husholdningen.
+Når ingen treff, oppretter registreringen en ny husstand som får navnet til hovedkontaktens etternavn, med en personpost for hvert familiemedlem. Alle nye blir lagt til i **People** med medlemsstatusen **Visitor**, og hovedkontakten er leder av husstanden.
 
-Både koblede og nye personer legges til i gruppen du valgte (hvis de ikke allerede er med), og oppmøtet deres registreres når dette er slått på. Kommentarer lagres som et notat på hovedkontakten.
+Både eksisterende og nye personer blir lagt til i gruppen du valgte (hvis de ikke allerede er med), og oppmøtet deres registreres når det er slått på. Kommentarer lagres som et notat på hovedkontakten.
 
-For å følge opp automatisk, legg til en [arbeidsflytutløser](../serving/workflows.md#triggers), for eksempel **Person · Created** med betingelsen *Membership Status is Visitor*, eller **Group · Member Joined** for gruppen du valgte ovenfor.
+For å følge opp automatisk kan du legge til en [arbeidsflytutløser](../serving/workflows.md#triggers), for eksempel **Person · Created** med betingelsen *Membership Status is Visitor*, eller **Group · Member Joined** for gruppen du valgte ovenfor.
 
-## Hva som registreres
+## Hva som registreres {#what-gets-recorded}
 
-Hver innsjekking oppretter en oppmøtepost i B1 Admin. Du kan se disse postene på siden [Oppmøte](tracking-attendance.md) og i hver [gruppes](../groups/group-members.md) økter, akkurat som manuelt registrert oppmøte. Det er ingen forskjell i hvordan dataene vises. Begge metodene gir data til de samme rapportene.
+Hver innsjekking oppretter en oppmøteregistrering i B1 Admin. Du kan se disse registreringene på siden [Attendance](tracking-attendance.md) og i hver [gruppes](../groups/group-members.md) møter, akkurat som oppmøte som er lagt inn manuelt. Det er ingen forskjell på hvordan dataene vises – begge metodene gir data til de samme rapportene.

@@ -1,114 +1,118 @@
 ---
-title: "Google शीट्स"
-description: "B1 Export ऐड-ऑन के साथ B1 Admin को Google Sheets से जोड़ें, ताकि People, Donations, Groups और Attendance डेटा माँग पर स्प्रेडशीट टैब में लाया जा सके।"
+title: "Google Sheets"
+description: "B1 Export add-on के साथ B1 Admin को Google Sheets से जोड़ें, ताकि People, Donations, Groups, और Attendance मांग पर spreadsheet tabs में आ जाएँ।"
 ---
 
-# Google शीट्स
+# Google Sheets
 
 <div class="article-intro">
 
-**B1 Export** B1.church के लिए आधिकारिक Google शीट्स ऐड-ऑन है। यह किसी भी स्प्रेडशीट में एक साइडबार जोड़ता है, जो आपके B1 चर्च से People, Donations, Groups, या Attendance डेटा को नामित टैब में एक क्लिक पर, माँग पर निर्यात करता है। यह ऐड-ऑन पूरी तरह उपयोगकर्ता के Google खाते के भीतर चलता है; हर निर्यात द्वारा किए गए केवल-पढ़ने वाले API कॉल के अलावा इसका ChurchApps के सर्वरों से कोई संबंध नहीं होता।
+**B1 Export** B1.church के लिए आधिकारिक Google Sheets add-on है। यह किसी भी spreadsheet में एक sidebar जोड़ता है, जो आपके B1 चर्च से People, Donations, Groups, या Attendance को नाम वाले tabs में निर्यात करता है — मांग पर, एक क्लिक में। यह add-on पूरी तरह उपयोगकर्ता के Google account के अंदर चलता है; हर निर्यात द्वारा की गई केवल-पढ़ने वाली API calls के अलावा इसका ChurchApps के सर्वरों से कोई संबंध नहीं है।
 
 </div>
+
+:::caution अभी उपलब्ध नहीं
+B1 Export add-on अभी Google Workspace Marketplace पर प्रकाशित नहीं हुआ है, इसलिए आप इसे आज इंस्टॉल नहीं कर सकते। तब तक B1Admin से लोगों का निर्यात करें (देखें [Exporting Data](../people/exporting-data.md)) और CSV को Google Sheets में इंपोर्ट करें। नीचे दिया गया सब कुछ बताता है कि add-on रिलीज़ होने के बाद कैसे काम करेगा।
+:::
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- एक Google खाता जिसके पास उस स्प्रेडशीट का संपादन-अधिकार हो जिसमें आप निर्यात करना चाहते हैं
-- एक चर्च एडमिन (या ऐसा व्यक्ति जिसके पास निर्यात किए जाने वाले डेटा का पढ़ने का अधिकार हो) जो B1 API कुंजी बना सके
-- Google Workspace Marketplace से इंस्टॉल किया गया B1 Export ऐड-ऑन
+- एक Google account जिसके पास उस spreadsheet पर edit पहुँच हो जिसमें आप निर्यात करना चाहते हैं
+- एक चर्च admin (या ऐसा कोई व्यक्ति जिसके पास उस डेटा की read पहुँच हो जिसे आप निर्यात करना चाहते हैं) जो B1 API key बना सके
+- Google Workspace Marketplace से इंस्टॉल किया गया B1 Export add-on
 
 </div>
 
-## यह क्या निर्यात करता है
+## यह क्या निर्यात करता है {#what-it-exports}
 
-| मेनू आइटम | शीट टैब | डेटा |
+| मेनू आइटम | Sheet tab | डेटा |
 |---|---|---|
 | Export People | `B1 People` | ID, Display Name, First, Last, Email, Membership Status |
 | Export Donations | `B1 Donations` | ID, Person ID, Date, Amount, Method, Batch ID |
 | Export Groups | `B1 Groups` | ID, Name, Category, Member Count |
 | Export Attendance | `B1 Attendance` | ID, Person ID, Visit Date, Service ID, Group ID |
 
-हर निर्यात **अपने नामित टैब की सामग्री को बदल देता है** — निर्यात को दोबारा चलाने पर पंक्तियाँ जुड़ती नहीं, बल्कि आपको ताज़ा स्नैपशॉट मिलता है। स्प्रेडशीट के अन्य टैब अप्रभावित रहते हैं।
+हर निर्यात अपने नाम वाले tab की सामग्री को **बदल देता** है — निर्यात दोबारा चलाने पर आपको नया snapshot मिलता है, जुड़ी हुई पंक्तियाँ नहीं। spreadsheet के बाकी tabs अछूते रहते हैं।
 
-## सेटअप
+## सेटअप {#setup}
 
-### 1. सही स्कोप के साथ B1 API कुंजी बनाएँ
+### 1. सही scopes के साथ B1 API key बनाएँ {#1-create-a-b1-api-key-with-the-right-scopes}
 
 1. B1Admin में **Settings → Developer → API Keys** पर जाएँ।
-2. **New API Key** पर क्लिक करें, उसका नाम "Sheets Export" रखें, और जिस चीज़ का निर्यात करना है उसके लिए **read** स्कोप दें:
+2. **New API Key** पर क्लिक करें, उसका नाम "Sheets Export" रखें, और जो भी निर्यात करना चाहते हैं उसके लिए **read** scopes दें:
    - People निर्यात के लिए `people:read`
    - Donations के लिए `donations:read`
    - Groups के लिए `groups:read`
    - Attendance के लिए `attendance:read`
-3. जो कुंजी केवल निर्यात के लिए है, उसे `settings:write` की **ज़रूरत नहीं** है — वह स्कोप केवल वेबहुक रजिस्टर करने वाले कनेक्टर (Zapier / Make) के लिए है। इस कुंजी को सीमित रखें।
-4. सहेजें और `cak_…` कुंजी कॉपी करें।
+3. जो key केवल निर्यात करती है उसे `settings:write` **की ज़रूरत नहीं** है — वह scope केवल उन connectors के लिए है जो webhooks रजिस्टर करते हैं (Zapier / Make)। इस key को सीमित रखें।
+4. सेव करें और `cak_…` key कॉपी करें।
 
-### 2. ऐड-ऑन इंस्टॉल करें
+### 2. Add-on इंस्टॉल करें {#2-install-the-add-on}
 
-1. वह स्प्रेडशीट खोलें जिसमें आप निर्यात करना चाहते हैं।
+1. वह spreadsheet खोलें जिसमें आप निर्यात करना चाहते हैं।
 2. **Extensions → Add-ons → Get add-ons**।
-3. **B1 Export** खोजें और इंस्टॉल करें। Google आपसे आपकी शीट्स और बाहरी HTTP तक पहुँच की अनुमति माँगेगा (ताकि ऐड-ऑन B1 API को कॉल कर सके)।
+3. **B1 Export** खोजें और इंस्टॉल करें। Google आपसे आपकी sheets और external HTTP (ताकि add-on B1 API call कर सके) तक पहुँच देने के लिए कहेगा।
 
-इंस्टॉल होने के बाद, इस Google खाते से खोली गई हर स्प्रेडशीट के **Extensions** मेनू में **B1 Export** विकल्प दिखाई देगा।
+इंस्टॉल के बाद, इस Google account से खोली गई हर spreadsheet के **Extensions** मेनू में **B1 Export** दिखाई देगा।
 
-### 3. कुंजी कनेक्ट करें
+### 3. Key जोड़ें {#3-connect-the-key}
 
-1. **Extensions → B1 Export → Connect…** (या पहली बार खुलने के बाद मेनू बार से **B1 Export → Connect…**)।
-2. API कुंजी साइडबार में चिपकाएँ, Base URL को `https://api.churchapps.org` ही रहने दें (जब तक आप स्टेजिंग पर परीक्षण न कर रहे हों), और **Save** पर क्लिक करें।
-3. **Test Connection** पर क्लिक करें — हरा "Connection OK" संदेश पुष्टि करता है कि कुंजी सही काम कर रही है।
+1. **Extensions → B1 Export → Connect…** चुनें (या पहली बार खोलने के बाद मेनू बार से **B1 Export → Connect…**)।
+2. sidebar में API key चिपकाएँ, Base URL को `https://api.churchapps.org` ही रहने दें (जब तक आप staging पर परीक्षण न कर रहे हों), और **Save** पर क्लिक करें।
+3. **Test Connection** पर क्लिक करें — हरा "Connection OK" पुष्टि करता है कि key काम कर रही है।
 
-कुंजी **प्रति-उपयोगकर्ता properties** (`PropertiesService.getUserProperties()`) में संग्रहीत होती है — यह आपके Google खाते से जुड़ी होती है, कभी शीट में नहीं लिखी जाती, और स्प्रेडशीट के अन्य संपादकों को कभी दिखाई नहीं देती।
+key **प्रति-उपयोगकर्ता properties** (`PropertiesService.getUserProperties()`) में संग्रहीत होती है — यह आपके Google account से जुड़ी रहती है, कभी sheet में नहीं लिखी जाती, और spreadsheet के दूसरे editors को कभी दिखाई नहीं देती।
 
-## निर्यात चलाना
+## निर्यात चलाना {#running-an-export}
 
-इनमें से कोई एक तरीका अपनाएँ:
+इनमें से कोई एक करें:
 
 - **मेनू से** — **Extensions → B1 Export → Export People** (या Donations / Groups / Attendance)
-- **साइडबार से** — साइडबार खोलें (Connect…) और उपयुक्त डेटासेट बटन पर क्लिक करें
+- **sidebar से** — sidebar खोलें (Connect…) और उपयुक्त dataset बटन पर क्लिक करें
 
-काम पूरा होने पर एक टोस्ट संदेश दिखाई देता है — "_N_ row(s) written to 'B1 People'."
+काम पूरा होने पर एक toast पुष्टि करता है — "_N_ row(s) written to 'B1 People'."
 
-## इसके ऊपर रिपोर्ट बनाना
+## उस पर रिपोर्ट बनाना {#building-reports-on-top}
 
-निर्यात किए गए टैब सामान्य Google शीट्स डेटा हैं। उन्हीं टैब का संदर्भ लेकर अपने विश्लेषण बनाएँ:
+निर्यात किए गए tabs सामान्य Google Sheets डेटा हैं। उनका संदर्भ लेकर अपना विश्लेषण बनाएँ:
 
-- कुल कार्ड दान जानने के लिए `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` वाला **सारांश टैब**
-- केवल सदस्यों का **फ़िल्टर्ड दृश्य** `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")` से
+- कार्ड से दिए गए उपहारों का योग करने के लिए `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` वाला **summary tab**
+- केवल सदस्यों का **फ़िल्टर किया हुआ दृश्य** `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")` से
 - `B1 Attendance` से डेटा लेने वाला उपस्थिति रुझानों का **चार्ट**
 
-निर्यात दोबारा चलाने पर मूल टैब ताज़ा हो जाता है; आपके फ़ॉर्मूले अपने-आप अपडेट हो जाते हैं।
+निर्यात दोबारा चलाने पर अंतर्निहित tab ताज़ा हो जाता है; आपके formulas अपने-आप अपडेट हो जाते हैं।
 
-## आवर्ती निर्यात शेड्यूल करना
+## दोहराए जाने वाले निर्यात शेड्यूल करना {#scheduling-recurring-exports}
 
-ऐड-ऑन डिफ़ॉल्ट रूप से माँग पर चलता है। साप्ताहिक या मासिक निर्यात के लिए Apps Script के अंतर्निहित टाइम-आधारित ट्रिगर का उपयोग करें:
+add-on डिफ़ॉल्ट रूप से मांग पर चलता है। साप्ताहिक या मासिक निर्यात के लिए, Apps Script के अंतर्निहित समय-आधारित triggers का उपयोग करें:
 
-1. स्प्रेडशीट में **Extensions → Apps Script** खोलें (इससे ऐड-ऑन की बाउंड स्क्रिप्ट खुलती है)।
-2. बाईं साइडबार में **⏰ Triggers** आइकन पर क्लिक करें।
-3. `exportPeople` (या कोई अन्य निर्यात फ़ंक्शन) के लिए **Add Trigger** करें — *Time-driven* चुनें, *Week timer*, उदाहरण के लिए *Every Monday 6am*।
+1. spreadsheet में **Extensions → Apps Script** (यह add-on की bound script खोलता है)।
+2. बाईं sidebar में **⏰ Triggers** आइकन पर क्लिक करें।
+3. `exportPeople` (या कोई भी निर्यात function) के लिए **Add Trigger** — *Time-driven*, *Week timer* चुनें, जैसे *Every Monday 6am*।
 
-निर्यात आपके Google खाते के तहत पृष्ठभूमि में चलता है। यदि API कुंजी बदली या रद्द की गई, तो अगली बार विफल होने पर ट्रिगर आपको ईमेल भेजेगा।
+निर्यात आपके Google account के अंतर्गत पृष्ठभूमि में चलता है। अगर API key बदली या रद्द की गई, तो trigger अगली बार विफल होने पर आपको ईमेल भेजेगा।
 
-## अनुमतियाँ और गोपनीयता
+## गोपनीयता और अनुमतियाँ {#permissions--privacy}
 
-- ऐड-ऑन केवल `spreadsheets.currentonly` (यह केवल उसी स्प्रेडशीट को छू सकता है जो खुली है) और `script.external_request` (ताकि `UrlFetchApp` B1 API को कॉल कर सके) माँगता है। यह आपका Drive, Gmail, या अन्य Google डेटा **नहीं** देखता।
-- B1 API कुंजी प्रति-उपयोगकर्ता संग्रहीत होती है — उसी स्प्रेडशीट के अन्य संपादक उसे नहीं देख सकते।
-- सभी B1 API कॉल `Authorization: Bearer cak_…` के साथ HTTPS पर किए जाते हैं।
+- add-on केवल `spreadsheets.currentonly` (वह केवल उसी spreadsheet को छू सकता है जो खुली है) और `script.external_request` (ताकि `UrlFetchApp` B1 API call कर सके) माँगता है। यह आपका Drive, Gmail, या अन्य Google डेटा **नहीं** देखता।
+- B1 API key प्रति-उपयोगकर्ता संग्रहीत होती है — उसी spreadsheet के दूसरे editors उसे नहीं देख सकते।
+- सभी B1 API calls HTTPS पर `Authorization: Bearer cak_…` के साथ होती हैं।
 
-## समस्या निवारण
+## समस्या निवारण {#troubleshooting}
 
-- **"No API key set"** — **Extensions → B1 Export → Connect…** खोलें और कुंजी चिपकाएँ।
-- **"B1 rejected the API key (401)"** — कुंजी रद्द हो गई है या गलत है। नई कुंजी बनाएँ और दोबारा चिपकाएँ।
-- **"This API key lacks permission for /giving/donations (403)"** — कुंजी के पास `donations:read` नहीं है। B1Admin में कुंजी के स्कोप अपडेट करें।
-- **चलाने के बाद शीट ताज़ा नहीं होती** — सुनिश्चित करें कि आप *सही* टैब नाम (`B1 People` आदि) देख रहे हैं। टैब यदि मौजूद नहीं था तो निर्यात उसे बना देता है।
-- **"Quota exceeded"** — Apps Script `UrlFetchApp` पर प्रति-उपयोगकर्ता दैनिक कोटा लगाता है (आमतौर पर हज़ारों कॉल प्रतिदिन)। बड़ी संख्या में रिकॉर्ड वाले चर्च को निर्यात कई दिनों में बाँटने पड़ सकते हैं, या उच्च-मात्रा सिंक के लिए [Make](./make.md) / कस्टम इंटीग्रेशन का उपयोग करना पड़ सकता है।
+- **"No API key set"** — **Extensions → B1 Export → Connect…** खोलें और key चिपकाएँ।
+- **"B1 rejected the API key (401)"** — key हटा दी गई है या गलत है। नई key बनाएँ और चिपकाएँ।
+- **"This API key lacks permission for /giving/donations (403)"** — key में `donations:read` नहीं है। मौजूदा key के scopes नहीं बदले जा सकते, इसलिए B1Admin में सही scopes के साथ नई key बनाएँ।
+- **चलाने के बाद sheet ताज़ा नहीं होती** — सुनिश्चित करें कि आप *सही* tab नाम देख रहे हैं (`B1 People` आदि)। अगर tab मौजूद नहीं था तो निर्यात उसे बनाता है।
+- **"Quota exceeded"** — Apps Script `UrlFetchApp` पर प्रति-उपयोगकर्ता दैनिक सीमाएँ लगाता है (आम तौर पर प्रतिदिन हज़ारों calls)। बहुत सारे रिकॉर्ड वाले बड़े चर्च को निर्यात कई दिनों में बाँटने पड़ें, या उच्च-मात्रा सिंक के लिए [Make](./make.md) / कस्टम integration का उपयोग करना पड़े।
 
-## ऐड-ऑन को अपनी ज़रूरत के अनुसार ढालना
+## कोई column गायब है? {#missing-a-column}
 
-यह ऐड-ऑन ओपन सोर्स है — Apps Script प्रोजेक्ट `B1Integrations/GoogleSheetsAddon/` रिपॉज़िटरी में है। यदि आपको कोई ऐसा कॉलम चाहिए जो निर्यात नहीं होता, कोई अतिरिक्त डेटासेट, या कोई भिन्न आउटपुट फ़ॉर्मेट, तो वहाँ एक इश्यू या PR खोलें।
+अगर आपको ऐसा column चाहिए जो हम निर्यात नहीं करते, एक अतिरिक्त dataset, या अलग output format, तो [support@churchapps.org](mailto:support@churchapps.org) पर ईमेल करें।
 
-## यह भी देखें
+## यह भी देखें {#see-also}
 
-- [Zapier](./zapier.md) — ऑन-डिमांड निर्यात के बजाय वास्तविक-समय सिंक के लिए
-- [Make](./make.md) — अधिक जटिल ट्रांसफ़ॉर्मेशन वाले सिंक के लिए
-- [API Keys (डेवलपर संदर्भ)](/docs/developer/api/api-keys)
+- [Zapier](./zapier.md) — मांग पर निर्यात के बजाय real-time सिंक के लिए
+- [Make](./make.md) — अधिक जटिल transformations वाले सिंक के लिए
+- [API Keys (developer reference)](/docs/developer/api/api-keys)

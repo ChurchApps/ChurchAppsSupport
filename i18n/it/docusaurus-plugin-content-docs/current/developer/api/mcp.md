@@ -152,7 +152,7 @@ Il corpo di ogni risposta `api_call` è limitato a **64 KB** di output catturato
 
 Non esiste un limite di frequenza a livello applicativo su `/mcp`. La limitazione è demandata ad API Gateway / alla concorrenza di Lambda in produzione, e al reverse proxy in caso di installazioni self-hosted.
 
-## Scoperta OAuth
+## Scoperta OAuth {#oauth-discovery}
 
 Il server MCP pubblica i metadati OAuth 2.1, così che i client che si connettono solo a server scoperti tramite OAuth -- in particolare l'interfaccia "Add custom connector" di claude.ai -- possano far accedere un utente senza una chiave incollata. `/mcp` è la risorsa protetta, il [provider OAuth](./connected-apps.md) sotto `/membership/oauth` è il suo server di autorizzazione, e la pagina `/oauth` di B1Admin è la schermata di consenso.
 

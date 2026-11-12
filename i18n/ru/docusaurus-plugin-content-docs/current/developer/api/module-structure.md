@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## Кросс-модульная коммуникация
+## Кросс-модульная коммуникация {#cross-module-communication}
 
 Каждый модуль владеет своей базой данных (см. [База данных](./database.md)), и модуль никогда не запрашивает таблицы другого модуля напрямую. Когда одному модулю нужны данные, принадлежащие другому — например, модуль doing разрешает людей из membership — он проходит через **gateway** владельца модуля в `src/shared/modules/`:
 

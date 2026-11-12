@@ -1,91 +1,92 @@
 ---
-title: "Editor delle etichette per il Check-In"
-description: "Personalizza i modelli di cartellini e ricevute di ritiro stampati al check-in in B1 Admin, inclusi campi, posizionamento e condizioni per compleanni o note."
+title: "Editor delle etichette di check-in"
+description: "Personalizza i modelli di cartellino con nome e tagliando di ritiro stampati al check-in in B1 Admin, inclusi campi, posizionamento e condizioni su compleanni o note."
 ---
 
-# Editor delle etichette per il Check-In
+# Editor delle etichette di check-in
 
 <div class="article-intro">
 
-L'editor delle etichette vi consente di creare e personalizzare i modelli di targhetta con il nome e il foglio di ritiro che stampano quando le famiglie fanno il check-in dei loro bambini. Potete controllare esattamente quali informazioni appaiono su ogni etichetta, dove è posizionata, e come appare.
+L'Editor delle etichette ti permette di creare e personalizzare i modelli del cartellino con il nome e del tagliando di ritiro che vengono stampati quando le famiglie registrano i propri figli. Puoi controllare esattamente quali informazioni compaiono su ogni etichetta, dove sono posizionate e come appaiono.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Configurate [Presenze](./setup.md) e configurate almeno un orario di servizio con check-in abilitato
-- Configurate [Check-In](./check-in.md) in modo che le etichette stampino
-- Avete bisogno di accesso amministrativo alla sezione Presenze
+- Configura le [Presenze](./setup.md) e imposta almeno un orario di culto con il check-in attivo
+- Configura il [Check-In](./check-in.md) così da poter stampare le etichette
+- Ti serve il permesso **Modifica presenze**
 
 </div>
 
-## Apertura dell'editor delle etichette
+## Aprire l'Editor delle etichette {#opening-the-label-designer}
 
-In B1 Admin, aprite il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandete **Mobile**, e fate clic su **B1 CheckIn**. Quindi fate clic sul pulsante **Progetta etichette** sulla scheda Etichette di check-in. Vedrete un elenco dei vostri modelli di etichette salvati, separati per tipo: **Targhetta con il nome** e **Foglio di ritiro**.
+In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Mobile** e fai clic su **Etichette**. Puoi anche fare clic su **B1 CheckIn** e poi su **Progetta etichette** nella scheda **Etichette di check-in**.
 
-## Tipi di etichette
+La pagina **Etichette di check-in** elenca i modelli salvati con il loro **Nome**, il **Tipo** (**Cartellino con nome** o **Tagliando di ritiro**) e le **Dimensioni**. Se non ne hai ancora creati, compare la scritta **Nessun modello di etichetta** e B1 Checkin stampa il proprio cartellino con nome e tagliando di ritiro predefiniti.
 
-- **Targhetta con il nome** — stampata e attaccata al bambino. In genere include il nome del bambino, la sua aula/sessione, e un codice di sicurezza.
-- **Foglio di ritiro** — dato al genitore o tutore. In genere include il codice di sicurezza e un elenco dei bambini di cui hanno fatto il check-in.
+## Tipi di etichetta {#label-types}
 
-B1 vi inizia con un modello di targhetta con il nome predefinito e un modello di foglio di ritiro predefinito dimensionato per etichette termiche standard di 3,5 x 1,1 pollici.
+- **Cartellino con nome** — stampato e applicato al bambino. Di solito include il nome del bambino, la sua classe o sessione e un codice di sicurezza.
+- **Tagliando di ritiro** — consegnato al genitore o tutore. Di solito include il codice di sicurezza e un elenco dei bambini registrati.
 
-## Creazione di un modello di etichetta
+Entrambi i modelli di partenza sono dimensionati per le comuni etichette termiche da 3,5 × 1,1 pollici (Brother DK-1201).
 
-1. Fate clic su **Aggiungi** e scegliete un punto di partenza dal menu: **Targhetta con il nome 3,5" x 1,1"**, **Foglio di ritiro 3,5" x 1,1"**, oppure **Vuoto**.
-2. Un nuovo modello si apre nell'editor di etichette.
+## Creare un modello di etichetta {#creating-a-label-template}
 
-### Editor di etichette
+1. Fai clic su **Aggiungi etichetta** e scegli un punto di partenza: **Cartellino con nome 3,5" x 1,1"**, **Tagliando di ritiro 3,5" x 1,1"** oppure **Vuoto**.
+2. Il modello si apre nell'editor delle etichette, con un'anteprima dell'etichetta compilata con dati di esempio.
 
-L'editor mostra un'anteprima in scala dell'etichetta nelle dimensioni configurate. Nel pannello sinistro potete configurare:
+### Editor delle etichette {#label-editor}
 
-- **Nome** — il nome del modello (solo per vostra riferimento)
-- **Tipo di etichetta** — Targhetta con il nome o Foglio di ritiro
-- **Larghezza / Altezza** — dimensione dell'etichetta in pollici
+In cima all'editor puoi impostare:
 
-### Aggiunta di blocchi
+- **Nome** — il nome del modello (solo per tua consultazione; obbligatorio)
+- **Tipo** — Cartellino con nome o Tagliando di ritiro
+- **Larghezza (in)** / **Altezza (in)** — dimensione dell'etichetta in pollici
 
-Un'etichetta è costruita da blocchi -- singoli pezzi di contenuto posizionati sul tela dell'etichetta. Fate clic su **Aggiungi blocco** per inserire un nuovo blocco e scegliete il suo tipo:
+### Aggiungere blocchi {#adding-blocks}
 
-- **Campo** — estrae un valore di dati al momento della stampa:
-  - `person.displayName` — il nome completo della persona
-  - `sessions` — il servizio/aula in cui hanno fatto il check-in
-  - `securityCode` — il codice di sicurezza di ritiro generato casualmente
-  - `children` — elenco dei bambini (per i fogli di ritiro)
-  - `person.nametagNotes` — note speciali sul record della persona
-  - `person.isBirthdayWeek` — vero se il compleanno della persona (mese e giorno) è entro 3 giorni prima o dopo la data di check-in
-  - `campus` — il nome del campus
-- **Testo** — testo statico che digitate (per intestazioni, etichette, o istruzioni)
-- **Codice a barre** — un codice a barre che codifica il codice di sicurezza
+Un'etichetta è composta da blocchi, cioè singoli elementi di contenuto posizionati sull'etichetta. Fai clic su un pulsante nel pannello **Aggiungi blocco** per aggiungerne uno:
 
-### Posizionamento dei blocchi
+- **Campi** — inseriscono un valore al momento della stampa. I cartellini con nome offrono **Nome visualizzato**, **Nome**, **Cognome**, **Soprannome**, **Note del cartellino** (le note nella scheda della persona), **Compleanno questa settimana** (vero quando il compleanno della persona cade entro 3 giorni prima o dopo la data del check-in), **Sessioni** (gli orari dei culti e le sale a cui si sono registrati), **Codice di sicurezza**, **Data** e **Nome della chiesa**. I tagliandi di ritiro offrono **Bambini**, **Bambini e allergie**, **Codice di sicurezza**, **Data** e **Nome della chiesa**.
+- **Testo** — testo statico che digiti (per titoli, etichette o istruzioni)
+- **Codice a barre** — un codice a barre Code 128 o Code 39 di un campo, come il codice di sicurezza
+- **Codice QR** — un codice QR di un campo
+- **Riquadro** — un rettangolo con colore di riempimento e bordo facoltativi
 
-Ogni blocco ha campi **X**, **Y**, **Larghezza**, e **Altezza** espressi come percentuali della tela dell'etichetta (0-100). Regolate questi per posizionare il contenuto con precisione. Potete anche impostare:
+### Posizionare e stilizzare i blocchi {#positioning-and-styling-blocks}
 
-- **Dimensione carattere** — dimensione del testo in punti
-- **Grassetto** — commuta il testo in grassetto
-- **Allineamento** — allineamento del testo a sinistra, al centro, o a destra
-- **Condizione** — opzionalmente nascondere il blocco se un campo è vuoto (ad esempio, mostra solo nametagNotes se ha un valore). Questo funziona anche con `person.isBirthdayWeek` per mostrare un grafico di compleanno o testo solo su targhette per i bambini il cui compleanno è entro pochi giorni dal check-in.
+Trascina un blocco sull'etichetta per spostarlo, oppure fai clic su di esso e usa il pannello **Proprietà**. **X**, **Y**, **L** e **A** sono percentuali dell'etichetta (0–100). A seconda del blocco, puoi anche impostare:
 
-### Salvataggio
+- **Dimensione carattere** — dimensione del testo, in proporzione all'altezza dell'etichetta
+- **Grassetto** e **Corsivo**
+- **Allineamento** — Sinistra, Centro o Destra
+- **Simbologia** e **Valore** — per codici a barre e codici QR
+- **Riempimento** e **Bordo** — per i riquadri
+- **Condizione** — **Sempre** mostra il blocco. Scegli un campo per mostrare il blocco solo quando quel campo **Non è vuoto**, **È vuoto**, **Uguale a** o **Diverso da** un valore. Ad esempio, mostra le note del cartellino solo se sono compilate, oppure mostra una grafica di compleanno solo quando **Compleanno questa settimana** è uguale a `true`.
 
-Fate clic su **Salva** per salvare il modello. Il modello aggiornato verrà utilizzato la prossima volta che le etichette vengono stampate in B1 Checkin.
+Fai clic su **Rimuovi blocco** per eliminare il blocco selezionato.
 
-## Riordinamento dei modelli
+### Salvare {#saving}
 
-Se avete più modelli di targhetta con il nome o foglio di ritiro, B1 Checkin utilizzerà il primo modello nell'elenco per impostazione predefinita. Trascinate i modelli per riordinarli.
+Fai clic su **Salva** per salvare il modello, oppure su **Annulla** per scartare le modifiche. B1 Checkin usa il modello aggiornato la volta successiva che carica le sue impostazioni.
 
-## Eliminazione di un modello
+## Scegliere il modello predefinito {#choosing-the-default-template}
 
-Fate clic sull'icona di eliminazione su qualsiasi riga di modello e confermate. L'eliminazione dell'ultimo modello di un tipo ripristina il modello incorporato predefinito.
+Se hai più di un modello dello stesso tipo, fai clic su **Imposta come predefinito** su quello che B1 Checkin deve stampare. Compare un badge **Predefinito**, e qualsiasi altro modello di quel tipo smette di essere predefinito. Se nessun modello di un tipo è contrassegnato come predefinito, il kiosk usa il primo.
+
+## Eliminare un modello {#deleting-a-template}
+
+Fai clic su **Elimina** nella riga del modello e conferma. Se elimini tutti i modelli di un tipo, B1 Checkin torna all'etichetta predefinita per quel tipo.
 
 :::tip
-Eseguite una stampa di prova dopo la modifica di un modello per confermare che il layout appare corretto prima del vostro prossimo servizio.
+Dopo aver modificato un modello, stampa una prova per verificare che il layout sia corretto prima del tuo prossimo culto.
 :::
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
-- [Configurazione del Check-In](./setup.md) — configurate servizi e gruppi per il check-in
-- [Completamento del Check-In](./check-in.md) — il flusso di check-in per le famiglie
-- [Guida introduttiva di B1 Checkin](../../b1-checkin/getting-started/index.md) — l'app chiosco Checkin
+- [Configurazione Presenze](./setup.md) — configura culti e gruppi per il check-in
+- [Check-In](./check-in.md) — configura il kiosk B1 Checkin
+- [Primi passi con B1 Checkin](../../b1-checkin/getting-started/index.md) — l'app kiosk Checkin

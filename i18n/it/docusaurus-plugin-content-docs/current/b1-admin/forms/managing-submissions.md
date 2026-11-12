@@ -1,13 +1,13 @@
 ---
 title: "Gestire le risposte"
-description: "Esamina, stampa e riassegna le risposte ai moduli in B1 Admin, inoltrandole alla persona giusta e seguendo schede visitatori e richieste di preghiera."
+description: "Esamina, stampa e riassegna le risposte ai moduli in B1 Admin, spostando ogni risposta alla persona giusta e seguendo le schede visitatori e le richieste di preghiera."
 ---
 
 # Gestire le risposte
 
 <div class="article-intro">
 
-Una volta che il tuo modulo è attivo, le risposte inizieranno ad arrivare. La scheda **Form Submissions** ti permette di esaminare ogni risposta, tenere traccia di chi ha inviato il modulo e usare i dati per ricontattare la tua comunità in modo tempestivo.
+Una volta che il tuo modulo è attivo, le risposte inizieranno ad arrivare. La scheda **Risposte al modulo** ti permette di esaminare ogni risposta, tenere traccia di chi ha inviato il modulo e usare i dati per dare seguito tempestivamente alla tua comunità.
 
 </div>
 
@@ -19,69 +19,74 @@ Una volta che il tuo modulo è attivo, le risposte inizieranno ad arrivare. La s
 
 </div>
 
-## Visualizzare le risposte
+## Visualizzare le risposte {#viewing-submissions}
 
-1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **People** e fai clic su **Forms**.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Moduli**.
 2. Fai clic sul modulo che vuoi esaminare.
-3. Vai alla scheda **Form Submissions**.
+3. Vai alla scheda **Risposte al modulo**.
 
-Vedrai un elenco di tutte le risposte ricevute per quel modulo. Ogni risposta mostra le informazioni del mittente e la data di invio, seguite da una colonna per ogni domanda del modulo. Se il tuo modulo ha molte domande, scorri la tabella in orizzontale per vedere le altre colonne.
+La scheda contiene due riquadri:
 
-## Esaminare le singole risposte
+- **Riepilogo delle risposte** -- Per ogni domanda a scelta multipla, a casella di controllo e sì/no, un conteggio di quante persone hanno scelto ciascuna risposta.
+- **Risultati delle risposte** -- Una tabella di ogni risposta, con il conteggio delle risposte. Ogni riga mostra per chi è la risposta (**Inviata per** nei moduli Persone, **Inviata da** nei moduli Autonomi, oppure **Anonimo**) e la **Data di invio**, seguite da una colonna per ogni domanda del modulo, nell'ordine del modulo. Se il tuo modulo ha molte domande, scorri la tabella lateralmente per vedere il resto delle colonne. Fai clic sul nome di una persona per aprire la sua scheda.
 
-Fai clic su una risposta qualsiasi per visualizzarne i dettagli completi. Vedrai tutte le risposte fornite dalla persona per ogni domanda del modulo.
+Fai clic su **Esporta** in uno dei due riquadri per scaricare le risposte come file CSV, una riga per ogni risposta. Fai clic sull'icona **Stampa** (stampante) per stampare il riepilogo e la tabella dei risultati, con l'intestazione del nome della tua chiesa.
 
-Fai clic sull'**icona di stampa** accanto alla risposta per stampare le risposte compilate da quella persona -- utile per un archivio cartaceo o per un'autorizzazione firmata che devi conservare. La stampa mostra il logo della tua chiesa (il **Light Background Logo** da [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) centrato in alto, con il nome della chiesa sotto. Le stampe usano sempre testo scuro su pagina bianca, anche se usi B1 Admin in modalità scura. Questa funzione è distinta da [stampare un modulo vuoto](./creating-forms.md#printing-a-blank-form): stampa le risposte già inviate da una persona, non una copia vuota. La stessa icona di stampa compare ovunque venga mostrata una risposta, incluso nel [profilo di una persona](../people/adding-people.md#working-with-forms).
+## Esaminare le singole risposte {#reviewing-individual-submissions}
 
-## Cambiare la persona associata a una risposta
+Per leggere o stampare le risposte di una persona, apri la sua scheda in [Persone](../people/adding-people.md#working-with-forms) e fai clic sul modulo nella sua sezione **Moduli**. Vedrai tutte le risposte che ha dato, una domanda per riga.
 
-Se una risposta è collegata alla persona sbagliata -- ad esempio, due familiari condividono lo stesso indirizzo email -- puoi spostarla alla persona corretta oppure scollegarla.
+Fai clic sull'**icona di stampa** accanto alla risposta per stampare le risposte compilate di quella persona -- utile per un archivio cartaceo o una liberatoria firmata che devi tenere a portata di mano. La stampa mostra il logo della tua chiesa (il **Logo per sfondo chiaro** da [Sito web > Aspetto](../website/appearance.md), se ne hai caricato uno) centrato in alto con il nome della chiesa sotto. Le stampe usano sempre testo scuro su pagina bianca, anche se usi B1 Admin in modalità scura. Questo è diverso da [stampare un modulo vuoto](./creating-forms.md#printing-a-blank-form): stampa le risposte già inviate di una persona, non una copia vuota.
 
-1. Nella scheda **Form Submissions**, fai clic sull'icona **Change person** (due frecce) accanto al nome della persona. La stessa icona compare accanto a una risposta nel [profilo di una persona](../people/adding-people.md#working-with-forms).
-2. Nella finestra **Change person**, cerca la persona corretta e fai clic su **Move to this person**.
-3. Oppure fai clic su **Unlink (Anonymous)** per scollegare la risposta da qualsiasi persona. Verrà quindi mostrata come **Anonymous**.
+## Cambiare la persona di una risposta {#changing-the-person-on-a-submission}
+
+Se una risposta è collegata alla persona sbagliata -- ad esempio, due membri della famiglia condividono lo stesso indirizzo email -- puoi spostarla alla persona giusta oppure scollegarla.
+
+1. Nella scheda **Risposte al modulo**, fai clic sull'icona **Cambia persona** (due frecce) accanto al nome della persona. La stessa icona compare accanto a una risposta nel [profilo di una persona](../people/adding-people.md#working-with-forms).
+2. Nella finestra **Cambia persona**, cerca la persona corretta e fai clic su **Sposta a questa persona**.
+3. Oppure fai clic su **Scollega (Anonimo)** per separare la risposta da qualsiasi persona. Verrà poi mostrata come **Anonimo**.
 
 Cambia solo il collegamento. Le risposte restano le stesse e non vengono inviate di nuovo le email di follow-up.
 
 :::info
-Nei moduli impostati per creare una scheda persona, quando qualcuno è connesso al sito della tua chiesa durante l'invio, la risposta viene collegata al suo profilo, anche se un'altra persona nel tuo database condivide il suo stesso indirizzo email. Quando [unisci due schede persona](../people/adding-people.md), le risposte al modulo della persona rimossa vengono trasferite alla persona che conservi.
+Nei moduli impostati per creare una scheda persona, quando qualcuno è connesso al sito della tua chiesa durante l'invio, la risposta viene collegata alla sua scheda, anche se un'altra persona nel tuo database condivide il suo indirizzo email. Quando [unisci due schede persona](../people/adding-people.md), i moduli inviati dalla persona eliminata passano alla persona che mantieni.
 :::
 
-## Come vengono raccolte le risposte
+## Come vengono raccolte le risposte {#how-submissions-are-collected}
 
-Le risposte possono arrivare attraverso diversi canali:
+Le risposte possono arrivare da diversi canali:
 
-- **URL pubblico** -- Se il tuo modulo ha un URL pubblico (moduli Stand Alone), chiunque abbia il link può inviare una risposta. Condividi l'URL via email, social media o messaggi di testo.
-- **Incorporato nel tuo sito web** -- I moduli incorporati nel tuo sito B1 raccolgono automaticamente le risposte quando i visitatori li compilano.
-- **Uso interno** -- Lo staff e i volontari possono anche inviare moduli per conto di altri direttamente all'interno di B1 Admin.
+- **URL pubblico** -- Se il tuo modulo ha un URL pubblico (moduli Autonomi), chiunque abbia il link può inviare una risposta. Condividi l'URL via email, sui social o tramite messaggi di testo.
+- **Incorporato nel tuo sito web** -- I moduli incorporati nel tuo sito B1 raccolgono le risposte automaticamente quando i visitatori li compilano.
+- **Uso interno** -- Lo staff può compilare i moduli Persone per una persona dalla sua scheda in B1 Admin. Vedi [Lavorare con i moduli](../people/adding-people.md#working-with-forms).
 
 :::tip
-Controlla regolarmente la scheda **Form Submissions** per moduli come le schede visitatori o le richieste di preghiera, così puoi fare un follow-up tempestivo.
+Controlla regolarmente la scheda **Risposte al modulo** per moduli come le schede visitatori o le richieste di preghiera, così puoi dare seguito tempestivamente.
 :::
 
-## Usare i dati delle risposte
+## Usare i dati delle risposte {#using-submission-data}
 
 I dati raccolti tramite i moduli possono aiutarti a:
 
 - Tenere traccia delle iscrizioni agli eventi e pianificare di conseguenza
-- Fare follow-up con visitatori o nuovi membri
+- Dare seguito a visitatori o nuovi membri
 - Raccogliere feedback dai sondaggi per la pianificazione dei ministeri
-- Elaborare pagamenti per eventi o programmi
+- Riscuotere pagamenti per eventi o programmi
 
 :::info
-I membri del modulo con ruolo **Admin** o **View Only** possono accedere alla scheda **Form Submissions**. Assicurati che le persone giuste del tuo team abbiano accesso ai moduli di cui hanno bisogno, gestendo i ruoli nella scheda **Form Members**.
+I membri del modulo con ruolo **Amministratore** o **Solo visualizzazione** possono accedere alla scheda **Risposte al modulo**. Assicurati che le persone giuste del tuo team abbiano accesso ai moduli di cui hanno bisogno, gestendo i ruoli nella scheda **Membri del modulo**.
 :::
 
 :::info
-Se un modulo Stand Alone è [collegato a un gruppo](./creating-forms.md#linking-a-form-to-a-group), i leader di quel gruppo possono leggere e stampare le sue risposte dalla pagina del gruppo su B1.church, senza essere membri del modulo. I leader possono anche leggere le risposte alle domande di iscrizione per gli eventi del loro gruppo. Vedi [Dettagli del gruppo](../../b1-church/groups/group-details.md#linked-forms).
+Se un modulo Autonomo è [collegato a un gruppo](./creating-forms.md#linking-a-form-to-a-group), i leader di quel gruppo possono leggere e stampare le sue risposte dalla pagina del gruppo su B1.church, senza essere membri del modulo. I leader possono anche leggere lì le risposte alle domande di iscrizione per gli eventi del gruppo. Vedi [Dettagli del gruppo](../../b1-church/groups/group-details.md#linked-forms).
 :::
 
 :::tip
-Se un modulo **Stand Alone** è impostato per creare una scheda persona, le risposte abbinate a una persona già esistente compaiono anche nella sezione **Forms** della pagina di quella persona in People -- non solo nei moduli di tipo People.
+Se un modulo **Autonomo** è impostato per creare una scheda persona, le risposte abbinate a una persona esistente compaiono anche nella sezione **Moduli** della pagina di quella persona in Persone -- non solo per i moduli di tipo Persone.
 :::
 
-## Passaggi successivi
+## Prossimi passi {#next-steps}
 
 - Scopri come costruire e personalizzare i moduli in [Creare moduli](./creating-forms.md)
-- Aggiungi le persone dalle risposte ai moduli alla tua [rubrica persone](../people/adding-people.md) per un follow-up continuo
-- [Collega un modulo a un gruppo](./creating-forms.md#linking-a-form-to-a-group) in modo che i suoi leader possano leggere le risposte, oppure [aggiungi automaticamente i partecipanti al gruppo](./creating-forms.md#automatically-adding-submitters-to-a-group) così un modulo di iscrizione autonomo crea il proprio elenco
+- Aggiungi alla tua [rubrica persone](../people/adding-people.md) le persone che hanno inviato risposte, per un follow-up continuo
+- [Collega un modulo a un gruppo](./creating-forms.md#linking-a-form-to-a-group) così i suoi leader possono leggere le risposte, oppure [aggiungi automaticamente chi invia il modulo al gruppo](./creating-forms.md#automatically-adding-submitters-to-a-group) così un modulo di iscrizione autonomo crea il proprio elenco

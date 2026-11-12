@@ -11,7 +11,7 @@ Lessons.church è una piattaforma di curriculum completamente gratuita per le ch
 
 </div>
 
-## Cosa puoi fare
+## Cosa puoi fare {#what-you-can-do}
 
 Con Lessons.church, la tua chiesa può:
 

@@ -1,77 +1,77 @@
 ---
-title: "Iniziare con il sito web di B1 Admin"
-sidebar_label: "Configurazione Iniziale"
-description: "Configura il sito in B1 Admin: collega un sottodominio o dominio personalizzato, crea la home, scegli colori e logo e costruisci la navigazione."
+title: "Primi passi con il sito web di B1 Admin"
+sidebar_label: "Configurazione iniziale"
+description: "Configura il sito web della tua chiesa in B1 Admin: collega un sottodominio o un dominio personalizzato, crea la home page, scegli i colori del brand e il logo, e costruisci la navigazione."
 ---
 
-# Configurazione Iniziale
+# Configurazione iniziale
 
 <div class="article-intro">
 
-Ogni account B1 viene fornito con un sito web pronto all'uso. Questa guida ti guida attraverso la configurazione del dominio della tua chiesa, la configurazione dell'aspetto del tuo sito, la creazione delle tue prime pagine e l'organizzazione della tua navigazione.
+Ogni account B1 include già un sito web pronto all'uso. Questa guida ti accompagna nella configurazione del dominio della chiesa, nella personalizzazione dell'aspetto del sito, nella creazione delle prime pagine e nell'organizzazione della navigazione.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Hai bisogno di un account B1.church con accesso amministrativo
-- Se stai utilizzando un dominio personalizzato, tieni pronte le credenziali di accesso del tuo provider DNS (ad es., GoDaddy, Cloudflare o AWS)
-- Prepara il logo della tua chiesa in formato PNG con sfondo trasparente per i migliori risultati
+- Ti serve un account B1.church con accesso amministrativo
+- Se usi un dominio personalizzato, tieni pronte le credenziali di accesso del tuo provider DNS (ad esempio GoDaddy, Cloudflare o AWS)
+- Prepara il logo della chiesa in formato PNG con sfondo trasparente, per i risultati migliori
 
 </div>
 
-## Configurazione del Dominio
+## Configurare il dominio {#setting-up-your-domain}
 
-La tua chiesa riceve automaticamente un sottodominio su B1.church (ad esempio, `tuachiesa.b1.church`). Puoi anche puntare il tuo dominio personalizzato al tuo sito B1.
+La tua chiesa riceve automaticamente un sottodominio su B1.church (ad esempio, `yourchurch.b1.church`). Puoi anche collegare il tuo dominio personalizzato al tuo sito B1.
 
-1. Vai a **B1.church Admin** visitando admin.b1.church o facendo clic sul tuo menu a discesa del profilo e scegliendo **Cambia App**.
-2. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Impostazioni** e fai clic su **Impostazioni**.
-3. Apri la sezione **Informazioni Chiesa** per visualizzare il tuo sottodominio. Impostalo su qualcosa di breve e riconoscibile senza spazi.
-4. Per utilizzare un dominio personalizzato, accedi al tuo provider DNS (come GoDaddy, Cloudflare o AWS) e aggiungi due record:
-   - Un **record A** per il tuo dominio root che punta a `3.23.251.61`
+1. Vai su **B1.church Admin** visitando admin.b1.church oppure facendo clic sul menu a tendina del tuo profilo e scegliendo **Cambia app**.
+2. Apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Impostazioni** e fai clic su **Impostazioni**.
+3. Apri la sezione **Informazioni sulla chiesa** per visualizzare il tuo sottodominio. Impostalo su qualcosa di breve e riconoscibile, senza spazi.
+4. Per usare un dominio personalizzato, accedi al tuo provider DNS (come GoDaddy, Cloudflare o AWS) e aggiungi due record:
+   - Un **record A** per il dominio principale che punta a `3.23.251.61`
    - Un **record CNAME** per `www` che punta a `proxy.b1.church`
-5. Torna a B1.church Admin, apri la sezione **Domini** nella stessa pagina Impostazioni, aggiungi il tuo dominio personalizzato all'elenco, e fai clic su **Aggiungi** quindi **Salva**. Il tuo sito sarà accessibile dal tuo dominio personalizzato entro pochi minuti.
+5. Torna in B1.church Admin, apri la sezione **Domini** nella stessa pagina Impostazioni, aggiungi il tuo dominio personalizzato all'elenco e fai clic su **Aggiungi**, poi su **Salva**. Il tuo sito sarà accessibile dal dominio personalizzato nel giro di pochi minuti.
 
 :::tip
-Se non vedi l'opzione Impostazioni, chiedi alla persona che ha configurato il tuo account chiesa di concederti il permesso "Modifica Impostazioni Chiesa". Vedi [Ruoli e Permessi](../settings/roles-permissions.md) per i dettagli.
+Se non vedi la voce Impostazioni, chiedi alla persona che ha configurato l'account della chiesa di concederti l'autorizzazione "Modifica impostazioni chiesa". Vedi [Ruoli e autorizzazioni](../settings/roles-permissions.md) per i dettagli.
 :::
 
-## Creazione della Tua Prima Pagina
+## Creare la prima pagina {#creating-your-first-page}
 
-1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Website** e fai clic su **Pages**.
-2. Fai clic su **Aggiungi Pagina** nell'angolo in alto a destra.
-3. Scegli **Vuoto** come tipo di pagina e denominalo "Home".
-4. Fai clic su **Impostazioni Pagina** e imposta il percorso URL su `/` (una barra in avanti senza testo) per la tua home page. Le altre pagine usano `/nome-pagina`.
-5. Fai clic su **Modifica Contenuto** per iniziare a costruire. Ogni pagina deve iniziare con una **Sezione** -- questo è il contenitore per tutti gli altri elementi.
-6. Dopo aver aggiunto una sezione, fai clic di nuovo su **Aggiungi Contenuto** per inserire testo, immagini, video, schede, moduli e altro trascinandoli nella tua sezione.
+1. In B1 Admin, apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sito web** e fai clic su **Pagine**.
+2. Fai clic su **Aggiungi pagina** in alto a destra.
+3. Scegli **Vuota** come tipo di pagina, inserisci "Home" come **Titolo della pagina** e fai clic su **Salva**.
+4. Fai clic su **Impostazioni pagina** nella riga della nuova pagina e cambia il **Percorso URL** in `/` (una barra senza altro testo) per la tua home page. Le altre pagine usano `/page-name`.
+5. Fai clic su **Modifica contenuto** per iniziare a costruire. Ogni pagina deve iniziare con una **Sezione** — è il contenitore per tutti gli altri elementi. Fai clic su **Aggiungi contenuto** e trascina **Sezione** nella pagina, poi scegli un layout di sezione già pronto oppure una **Sezione vuota**.
+6. Dopo aver aggiunto una sezione, fai di nuovo clic su **Aggiungi contenuto** per inserire testo, immagini, video, schede, moduli e altro, trascinandoli nella tua sezione.
 
 :::info
-Per istruzioni dettagliate su come lavorare con le pagine e la navigazione, vedi [Gestione Pagine](./managing-pages.md). Per una guida completa all'editor visuale, vedi [Utilizzo dell'Editor di Pagine](./page-editor.md).
+Per istruzioni dettagliate su pagine e navigazione, vedi [Gestire le pagine](./managing-pages.md). Per una guida completa all'editor visuale, vedi [Usare l'editor di pagina](./page-editor.md).
 :::
 
-## Configurazione Aspetto del Sito
+## Configurare l'aspetto del sito {#configuring-site-appearance}
 
-1. Nel menu Jump, scegli **Website > Aspetto**.
-2. Usa la **Tavolozza Colori** per impostare i colori del tuo marchio per i toni primario, secondario e di accento.
-3. Sotto **Caratteri**, scegli i tuoi caratteri di titolo e corpo dal browser dei caratteri.
-4. Carica il logo della tua chiesa sotto **Logo** nelle Impostazioni Stile. Fornisci sia una versione con sfondo chiaro che con sfondo scuro.
-5. Configura il tuo **Piè di Pagina Sito** con le informazioni di contatto e i link della tua chiesa.
+1. Nel menu di salto, scegli **Sito web > Aspetto**.
+2. Usa la **Tavolozza dei colori** per impostare i colori del brand — le tonalità chiara di base, d'accento e scura, oltre ai colori dei pulsanti primario e secondario — poi fai clic su **Salva tavolozza**.
+3. In **Caratteri**, scegli i caratteri per i titoli e per il testo dal selettore dei font e fai clic su **Salva caratteri**.
+4. Carica il logo della chiesa in **Logo** nelle Impostazioni di stile. Fornisci sia una versione per sfondo chiaro sia una per sfondo scuro, poi fai clic su **Salva modifiche**.
+5. Fai clic su **Piè di pagina del sito** per aprire il piè di pagina nell'editor dei blocchi e aggiungere i recapiti e i collegamenti della tua chiesa.
 
 :::info
-Le modifiche che apportate in Aspetto si applicano a tutto il tuo sito web. Vedi la pagina [Aspetto](./appearance.md) per istruzioni dettagliate su ogni impostazione.
+Le modifiche fatte in Aspetto si applicano a tutto il sito web. Vedi la pagina [Aspetto](./appearance.md) per istruzioni dettagliate su ogni impostazione.
 :::
 
-## Configurazione Navigazione
+## Configurare la navigazione {#setting-up-navigation}
 
-I tuoi link di navigazione appaiono nella visualizzazione Pagine Sito Web. Per organizzarli:
+I collegamenti di navigazione compaiono nella vista Pagine del sito. Per organizzarli:
 
-1. Fai clic su **Aggiungi** per creare un nuovo link di navigazione e puntarlo a una delle tue pagine.
-2. Trascina e rilascia i link per riordinarli o annidarli sotto elementi padre.
-3. Visualizza l'anteprima del tuo sito per confermare che la navigazione appaia corretta.
+1. Nel pannello **Navigazione principale**, fai clic su **Aggiungi**, inserisci il **Testo del collegamento** e il percorso della pagina (ad esempio, `/about`) come **URL**, poi fai clic su **Salva**.
+2. Trascina i collegamenti per riordinarli o per annidarli sotto le voci padre.
+3. Visualizza in anteprima il sito per verificare che la navigazione appaia corretta.
 
-## Prossimi Passaggi
+## Passaggi successivi {#next-steps}
 
-- [Gestione Pagine](./managing-pages.md) -- Scopri come lavorare con le pagine e la navigazione in dettaglio
-- [Aspetto](./appearance.md) -- Metti a punto i colori, i caratteri e il layout del tuo sito
-- [File](./files.md) -- Carica immagini e documenti per il tuo sito web
+- [Gestire le pagine](./managing-pages.md) -- Scopri come lavorare con pagine e navigazione nel dettaglio
+- [Aspetto](./appearance.md) -- Metti a punto colori, caratteri e layout del sito
+- [File](./files.md) -- Carica immagini e documenti per il tuo sito

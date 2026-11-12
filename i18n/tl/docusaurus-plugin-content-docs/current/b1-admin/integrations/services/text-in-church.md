@@ -1,98 +1,97 @@
 ---
 title: "Text In Church"
-description: "Pagsamahin ang B1 Admin at Text In Church gamit ang Zapier: gumawa ng API key, bumuo ng connect-card-to-B1 Zap, at i-mirror ang membership ng grupo."
+description: "Ikabit ang B1 Admin at Text In Church gamit ang Zapier: gumawa ng API key, bumuo ng Zap mula connect card papuntang B1, at i-mirror ang membership sa grupo."
 ---
 
 # Text In Church
 
 <div class="article-intro">
 
-Ang [Text In Church](https://textinchurch.com) ay nagbu-bundle ng SMS plus drip workflows at connect-card automations. Ang Zapier app ay nag-expose ng parehong direksyon — mag-pipe ng B1 events sa isang Text In Church workflow, at ibalik ang mga connect-card o bagong-contact triggers sa B1.
+Pinagsasama ng [Text In Church](https://textinchurch.com) ang SMS, mga drip workflow, at mga automation ng connect card. Sakop ng Zapier app nito ang parehong direksyon — ipasok ang mga event ng B1 sa isang workflow ng Text In Church, at hilahin ang mga trigger ng connect card o bagong contact mula sa kabilang dulo papuntang B1.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Isang [Text In Church](https://textinchurch.com) account sa isang plan na kasama ang Zapier integration
+- Isang [Text In Church](https://textinchurch.com) account sa plan na may kasamang Zapier integration
 - Isang [Zapier](https://zapier.com) account
-- Isang B1Admin user na may **Edit Settings** permission
+- Isang B1Admin user na may pahintulot na **Edit Settings**
 
 </div>
 
-## Ano ang Maaari Mong I-wire Up
+## Ano ang Puwede Mong Ikabit {#what-you-can-wire-up}
 
-| Direction | Trigger | Action |
+| Direksyon | Trigger | Aksyon |
 |---|---|---|
 | B1 → Text In Church | B1 `person.created` | Create/Update Person + Add to Group |
-| B1 → Text In Church | B1 `form.submission.created` | Send Text Message sa pamamagitan ng relevant team |
-| B1 → Text In Church | B1 `group.member.added` | Add to Group (mirror group membership) |
+| B1 → Text In Church | B1 `form.submission.created` | Send Text Message sa kaugnay na team |
+| B1 → Text In Church | B1 `group.member.added` | Add to Group (i-mirror ang membership sa grupo) |
 | Text In Church → B1 | Connect Card Submitted | B1: Create Person + Add Group Member |
 | Text In Church → B1 | Person Created | B1: Create Person |
 | Text In Church → B1 | Person Joined Group | B1: Add Group Member |
 
-Ang mga actions ng Text In Church ay nagsasama din ng *Send Text Message*, *Send Voice Broadcast*, *Create Task*, *Find Person/Group*, at group membership add/remove.
+Kasama rin sa mga aksyon ng Text In Church ang *Send Text Message*, *Send Voice Broadcast*, *Create Task*, *Find Person/Group*, at pagdaragdag/pag-alis ng membership sa grupo.
 
-## Setup
+## Setup {#setup}
 
-### 1. Mag-mint ng isang B1 API key
+### 1. Gumawa ng B1 API key {#1-mint-a-b1-api-key}
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — kinakailangan para sa B1-triggered Zaps
-- `people:read`, `people:write` — upang hanapin o lumikha ng tao
-- `groups:write` — para sa group syncing
-- (Optional) `donations:write` kung i-wire mo ang gift confirmations sa TIC
+- `settings:write` — kailangan para ikonekta ang key sa Zapier, at para sa mga Zap na tina-trigger ng B1
+- `people:read`, `people:write` — para hanapin o gawin ang tao
+- `groups:write` — para sa pag-sync ng grupo
+- (Opsyonal) `donations:write` kung ikakabit mo sa TIC ang mga kumpirmasyon ng regalo
 
-### 2. Konektahan ang Text In Church sa Zapier
+### 2. Ikonekta ang Text In Church sa Zapier {#2-connect-text-in-church-to-zapier}
 
-Sundin ang [Text In Church's Zapier integration guide](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration). Lumilikha sila ng isang API token mula sa loob ng TIC dashboard.
+Sundin ang [gabay sa Zapier integration ng Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration). Gumagawa sila ng API token mula sa loob ng dashboard ng TIC.
 
-### 3. Bumuo ng connect-card-to-B1 Zap
+### 3. Buuin ang Zap mula connect card papuntang B1 {#3-build-the-connect-card-to-b1-zap}
 
-Ang pinakakaraniwang direksyon. Ang mga connect card na pinagsama mula sa TIC ay nagiging automatic na bagong B1 people.
+Ito ang pinakakaraniwang direksyon. Ang mga connect card na ipinadala mula sa TIC ay awtomatikong nagiging mga bagong tao sa B1.
 
 1. **Trigger** — Text In Church: Connect Card Submitted.
-2. **Action** — B1.church: Find Person (ayon sa email).
-3. **Path** — i-branch sa found / not found:
-   - Not found → B1.church: Create Person.
-   - Found → magpatuloy.
-4. **Action** — B1.church: Add Group Member sa isang "New Contact" group.
+2. **Aksyon** — B1.church: Find Person (ayon sa email).
+3. **Aksyon** — B1.church: Add Group Member sa grupong "New Contact", gamit ang id ng tao mula sa hakbang 2.
 
-I-on ang Zap. Ang susunod na connect card na isinumite sa pamamagitan ng TIC ay lumalopad sa **B1Admin → People** nang awtomatiko.
+Hihinto ang *Find Person* ng B1 sa Zap na may error na "No person found" kapag walang tumutugma, kaya hindi makakapag-branch ang Path dito. Para sa mga bagong contact, i-on ang error handling ng Zapier para sa Find Person step at patakbuhin ang B1.church: Create Person, pagkatapos ay Add Group Member, sa error path nito.
 
-## Mga Karaniwang Recipes
+I-on ang Zap. Ang susunod na connect card na ipapadala sa pamamagitan ng TIC ay awtomatikong lalabas sa **B1Admin → People**.
 
-### Mag-trigger ng connect-card-style workflow mula sa B1 form
+## Karaniwang Recipe {#common-recipes}
 
-- **Trigger** — B1.church: New Form Submission (filter sa "I'm new here" form id)
-- **Action** — Text In Church: Create/Update Person, nag-map ng form's email / phone / name answers
-- **Action** — Text In Church: Add to Group, kung saan ang group ay may pre-built welcome workflow na naka-attach
+### Mag-trigger ng workflow na gaya ng connect card mula sa isang form ng B1 {#trigger-a-connect-card-style-workflow-from-a-b1-form}
 
-### Mirror group membership
+- **Trigger** — B1.church: New Form Submission (i-filter sa id ng form na "I'm new here")
+- **Aksyon** — Text In Church: Create/Update Person, imapa ang mga sagot ng form sa email / telepono / pangalan
+- **Aksyon** — Text In Church: Add to Group, kung saan may nakakabit na nakahandang welcome workflow ang grupo
 
-- **Trigger** — B1.church: New Group Member, filtered sa specific `groupId`
-- **Action** — Text In Church: Add to Group (parehong tao, mirror group). I-pair gamit ang `group.member.removed` Zap kung gusto mo ang full sync.
+### I-mirror ang membership sa grupo {#mirror-group-membership}
 
-### I-page ang leader kapag may sumali
+- **Trigger** — B1.church: New Group Member, i-filter sa partikular na `groupId`
+- **Aksyon** — Text In Church: Add to Group (parehong tao, mirror na grupo). Ipares sa Zap na `group.member.removed` kung gusto mo ng buong sync.
+
+### Mag-page ng leader kapag may sumali {#page-a-leader-when-someone-joins}
 
 - **Trigger** — B1.church: New Group Member
-- **Action** — Text In Church: Send Text Message, recipient = ang phone ng group leader, body = `"{first} {last} just joined {group}"`.
+- **Aksyon** — Text In Church: Send Text Message, recipient = telepono ng leader ng grupo, body = `"{first} {last} just joined {group}"`.
 
-## Mga Limitasyon at Mga Tala
+## Mga Limitasyon at Paalala {#limits--notes}
 
-- **Ang TIC's Zapier app ay nag-gate sa likod ng plan tier.** Kung ang Zapier integration ay nag-gray out sa TIC dashboard, makipag-ugnayan sa TIC support upang i-enable ito sa iyong plan.
-- **Ang group ids ay ng TIC, hindi B1's.** Kapag nag-mirror, mapapanatili mo ang mapping table sa isang lugar (isang Zapier *Lookup Table*, o hard-coded per-Zap).
-- **Ang Send Text Message ay gumagamit ng credits.** Bawat Zap na nag-fire ng *Send Text* ay umuubos mula sa iyong TIC SMS allotment.
+- **Naka-gate sa tier ng plan ang Zapier app ng TIC.** Kung naka-gray out ang Zapier integration sa dashboard ng TIC, makipag-ugnayan sa suporta ng TIC para i-enable ito sa iyong plan.
+- **Sa TIC ang mga group id, hindi sa B1.** Kapag nagmi-mirror, may panatilihin kang mapping table kahit saan (isang Zapier *Lookup Table*, o naka-hard-code kada Zap).
+- **May kapalit na credit ang Send Text Message.** Bawat Zap na nagpapaputok ng *Send Text* ay kumokonsumo mula sa iyong SMS allotment sa TIC.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-- **Connect-Card trigger ay hindi nag-fire** — kailangan ng TIC ang Zapier integration toggle sa. I-verify din na ang form na sinubukan mo ay naka-configure bilang "Connect Card", hindi isang generic survey.
-- **Create Person sa B1 ay nabigo na may 401** — ang API key ay mali, revoked, o nawawalan ng `people:write`. Muling mag-mint.
-- **Duplicate B1 people** — Ang TIC ay nagpapadala ng parehong *Person Created* at *Connect Card Submitted* para sa parehong event. Pumili ng isa bilang iyong source of truth at magdagdag ng Zapier Filter sa iba.
+- **Hindi nag-fire ang trigger ng connect card** — kailangan ng TIC na naka-on ang toggle ng Zapier integration. Tiyakin din na ang form na sinubukan mo ay naka-configure bilang "Connect Card", hindi generic na survey.
+- **Pumapalya ang Create Person sa B1 na may 401** — mali, nabawi, o kulang sa `people:write` ang API key. Gumawa muli.
+- **Mga duplicate na tao sa B1** — nagpapadala ang TIC ng *Person Created* at *Connect Card Submitted* para sa iisang event. Pumili ng isa bilang pinagmumulan ng katotohanan at magdagdag ng Zapier Filter sa isa pa.
 
-## Makita Din
+## Tingnan Din {#see-also}
 
-- [Clearstream](./clearstream.md) — alternatibong SMS platform na may katulad na Zapier shape
-- [Zapier (overview)](../zapier.md) — B1 side ng bawat Zapier recipe
-- [Text In Church Zapier guide](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TIC's docs)
+- [Clearstream](./clearstream.md) — alternatibong SMS platform na may katulad na hugis ng Zapier
+- [Zapier (pangkalahatang-tanaw)](../zapier.md) — panig ng B1 ng bawat recipe sa Zapier
+- [Gabay sa Zapier ng Text In Church](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (mga docs ng TIC)

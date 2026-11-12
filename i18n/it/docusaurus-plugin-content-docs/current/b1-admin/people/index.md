@@ -1,42 +1,44 @@
 ---
 title: "Persone"
-description: "Cerca, aggiungi e modifica i membri nella sezione Persone di B1 Admin: nuclei familiari, aggiornamenti in blocco, stampa ed esportazione della directory."
+description: "Cerca, aggiungi e modifica i membri della chiesa nella sezione Persone di B1 Admin, con il tracciamento dei nuclei familiari, gli aggiornamenti in blocco e la stampa e l'esportazione dell'anagrafe."
 ---
 
 # Persone
 
 <div class="article-intro">
 
-La sezione **Persone** è il cuore della gestione della tua chiesa in B1 Admin. È qui che mantieni la directory della tua chiesa -- cercando i membri, aggiungendo nuove persone, visualizzando e modificando i profili e tracciando i nuclei familiari. Che tu abbia una congregazione piccola o grande, mantenere i tuoi record di persone organizzati è il fondamento che alimenta ogni altra funzionalità in B1.
+La sezione **Persone** è il cuore della gestione della tua chiesa in B1 Admin. Qui mantieni l'anagrafe della chiesa: cerchi i membri, aggiungi nuove persone, visualizzi e modifichi le schede e tieni traccia dei nuclei familiari. Che la tua comunità sia piccola o grande, tenere ordinate le schede delle persone è la base che alimenta ogni altra funzione di B1.
 
 </div>
 
-## Cosa Puoi Fare
+## Cosa puoi fare {#what-you-can-do}
 
-Ecco una panoramica delle funzionalità chiave disponibili nella sezione Persone:
+Ecco una panoramica delle funzioni principali disponibili nella sezione Persone:
 
-1. **Cerca nella tua directory** -- Utilizza la barra di ricerca veloce per trovare chiunque per nome, o approfitta dei filtri avanzati e della ricerca in linguaggio naturale alimentata dall'IA per trovare esattamente chi ti serve. Vedi [Ricerca Persone](./searching-people.md) e [Ricerca IA](./ai-search.md) per i dettagli.
+1. **Cerca nell'anagrafe** -- Usa la barra di ricerca rapida per trovare chiunque per nome, oppure sfrutta i filtri avanzati e la ricerca in linguaggio naturale basata sull'AI per individuare esattamente chi ti serve. Vedi [Cercare persone](./searching-people.md) e [Ricerca AI](./ai-search.md) per i dettagli.
 
-2. **Salva le query di ricerca come Elenchi** -- Salva qualsiasi ricerca o filtro come elenco denominato in modo da poterlo ricaricare con un clic. Vedi [Elenchi Salvati](./lists.md).
+2. **Salva le ricerche come Liste** -- Salva qualsiasi ricerca o filtro come lista con nome, così puoi ricaricarlo con un solo clic. Vedi [Liste salvate](./lists.md).
 
-3. **Visualizza Dati Demografici** -- Vedi un'analisi visiva della tua congregazione per età, genere, stato coniugale, stato di iscrizione e campus — e fai clic su qualsiasi segmento del grafico per approfondire quelle persone. Vedi [Dati Demografici](./demographics.md).
+3. **Consulta i dati demografici** -- Vedi una suddivisione visiva della tua comunità per età, genere, stato civile, stato di membership e sede, e clicca su una porzione di qualsiasi grafico per approfondire quelle persone. Vedi [Dati demografici](./demographics.md).
 
-4. **Aggiungi nuove persone** -- Aggiungi rapidamente persone alla tua directory e compila i dettagli del loro profilo, le informazioni di contatto e le connessioni familiari. Vedi [Aggiunta di Persone](./adding-people.md) per istruzioni passo dopo passo.
+4. **Aggiungi nuove persone** -- Inserisci rapidamente nuove persone nell'anagrafe e compila i dettagli del profilo, i contatti e i collegamenti familiari. Vedi [Aggiungere persone](./adding-people.md) per le istruzioni passo passo.
 
-5. **Modifica in massa le persone** -- Aggiorna più persone contemporaneamente modificando il loro stato di iscrizione, stato coniugale, genere, preferenze di esclusione o appartenenze ai gruppi. Questo consente di risparmiare tempo quando si apporta la stessa modifica a molti individui. Vedi [Modifica in Massa](./bulk-editing.md).
+5. **Modifica in blocco le persone** -- Aggiorna più persone insieme cambiando stato di membership, stato civile, genere, esclusione dall'anagrafe, sede o appartenenze ai gruppi, oppure aggiungendole a un flusso di lavoro. Fa risparmiare tempo quando applichi la stessa modifica a molte persone. Vedi [Modifica in blocco](./bulk-editing.md).
 
-6. **Stampa la tua directory** -- Genera una directory dei membri formattata e stampabile, raggruppata per nucleo familiare, completa di foto e informazioni di contatto. Vedi [Stampa Directory](./print-directory.md).
+6. **Stampa la tua anagrafe** -- Genera un'anagrafe dei membri formattata e stampabile, raggruppata per nucleo familiare, con foto e dati di contatto. Vedi [Stampa dell'anagrafe](./print-directory.md).
 
-7. **Importa ed esporta dati** -- Porta i dati dei membri da un file CSV o migra da un altro sistema di gestione della chiesa come Breeze. Puoi anche esportare la tua directory su CSV in qualsiasi momento. Vedi [Importazione dei Dati](./importing-data.md) e [Esportazione dei Dati](./exporting-data.md).
+7. **Importa ed esporta dati** -- Importa i dati dei membri da un file CSV oppure migra da un altro sistema di gestione della chiesa come Breeze. Puoi anche esportare la tua anagrafe in CSV in qualsiasi momento. Vedi [Importare dati](./importing-data.md) ed [Esportare dati](./exporting-data.md).
 
-8. **Gestisci i profili** -- Visualizza e modifica i profili dettagliati per ogni persona, incluse le informazioni di contatto, i membri del nucleo familiare, le [appartenenze ai gruppi](../groups/group-members.md), la [cronologia della frequenza](../attendance/tracking-attendance.md), le [donazioni](../donations/recording-donations.md) e i [moduli personalizzati](../forms/creating-forms.md). Il nome, i dettagli di contatto e il nucleo familiare della persona sono a sinistra del profilo, con i riepiloghi di frequenza, donazioni, gruppi, note e moduli accanto. Passa il mouse sopra un indirizzo o un numero di telefono di casa o di lavoro per copiarlo con un clic.
+8. **Gestisci i profili** -- Visualizza e modifica i profili dettagliati di ogni persona, con dati di contatto, membri del nucleo familiare, [appartenenze ai gruppi](../groups/group-members.md), [cronologia delle presenze](../attendance/tracking-attendance.md), [donazioni](../donations/recording-donations.md) e [moduli personalizzati](../forms/creating-forms.md). Nome, dati di contatto e nucleo familiare della persona sono a sinistra della scheda, con accanto i riepiloghi di presenze, offerte, gruppi, note e moduli. Passa il mouse su un indirizzo o su un numero di telefono di casa o di lavoro per copiarlo con un solo clic.
 
-9. **Assegna ruoli e autorizzazioni** -- Controlla chi del tuo team può accedere a diverse parti di B1 Admin assegnando ruoli. Vedi [Assegnazione di Ruoli](./roles-permissions.md).
+9. **Tieni il passo con le note** -- Leggi in un unico elenco le note più recenti scritte su persone, gruppi, eventi e schede di flusso di lavoro. Vedi [Note](./notes.md).
 
-## Primi Passi
+10. **Assegna ruoli e permessi** -- Controlla quali membri del team possono accedere alle diverse parti di B1 Admin assegnando dei ruoli. Vedi [Assegnare ruoli](./roles-permissions.md).
 
-Per accedere alla sezione Persone, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Persone**. Vedrai la directory della tua chiesa elencata per nucleo familiare, con una barra di ricerca in alto. Usa l'interruttore **Visualizza come** per passare tra l'elenco **Nuclei familiari** e una **Tabella** di singole persone.
+## Come iniziare {#getting-started}
+
+Per accedere alla sezione Persone, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e clicca su **Persone**. Vedrai l'anagrafe della chiesa elencata per nucleo familiare, con una barra di ricerca in alto. Usa il pulsante **Visualizza come** per passare dall'elenco **Nuclei familiari** a una **Tabella** delle singole persone.
 
 :::tip
-Se stai configurando B1 per la prima volta, inizia [importando i dati dei tuoi membri esistenti](./importing-data.md). Quindi esamina e pulisci i profili secondo le esigenze.
+Se stai configurando B1 per la prima volta, inizia [importando i dati dei tuoi membri esistenti](./importing-data.md). Poi controlla e ripulisci i profili, se necessario.
 :::

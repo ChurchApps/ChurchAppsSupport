@@ -13,7 +13,7 @@ description: "ChurchApps मैसेजिंग API एंडपॉइंट �
 
 **मूल पथ:** `/messaging`
 
-## बातचीत
+## बातचीत {#conversations}
 
 मूल पथ: `/messaging/conversations`
 
@@ -31,7 +31,7 @@ description: "ChurchApps मैसेजिंग API एंडपॉइंट �
 | POST | `/start` | JWT | — | प्रारंभिक टिप्पणी संदेश के साथ नई बातचीत शुरू करें |
 | DELETE | `/:churchId/:id` | JWT | — | बातचीत हटाएँ |
 
-### व्यक्ति नोट का एक्सेस नियंत्रण
+### व्यक्ति नोट का एक्सेस नियंत्रण {#person-notes-access-control}
 
 `contentType: "person"` (व्यक्ति रिकॉर्ड पर Notes टैब) या `contentType: "personConfidential"` (Confidential Notes सेक्शन) वाली बातचीत हर पढ़ने और लिखने के मार्ग पर सीमित है, जिनमें ऊपर दिए सार्वजनिक रूट भी शामिल हैं। इन कंटेंट प्रकारों के लिए वे `401` लौटाते हैं। `person` के लिए MembershipApi **People / Edit** अनुमति चाहिए; `personConfidential` के लिए **People / View Confidential Notes** चाहिए। स्कोप्ड API कुंजियों के लिए `people:write` में दोनों क्रियाएँ शामिल होती हैं (कुंजी के उपयोगकर्ता के पास भी अंतर्निहित भूमिका की अनुमति होनी चाहिए)।
 
@@ -39,14 +39,14 @@ description: "ChurchApps मैसेजिंग API एंडपॉइंट �
 
 दो और नोट कंटेंट प्रकार उसी तरह सीमित हैं, हर पढ़ने और लिखने के मार्ग पर (ऊपर के सार्वजनिक रूट सहित), और इन पर गुमनाम पोस्टिंग कभी नहीं होती:
 
-- **`groupNote`** (`contentId` = समूह ID) -- किसी समूह पर **Leader notes** फ़ीड। केवल उस समूह के लीडर (JWT पर `leaderGroupIds`) पढ़ या पोस्ट कर सकते हैं। `content.edit` और समूह-सदस्यता अनुमतियों सहित कोई भी स्टाफ अनुमति एक्सेस नहीं देती।
-- **`eventNote`** (`contentId` = इवेंट ID) -- कैलेंडर इवेंट पर नोट। `content.edit` या **Calendars / Admin** वाले स्टाफ हमेशा पढ़ और पोस्ट कर सकते हैं। अन्यथा एक्सेस इवेंट के `notesViewRole` (पढ़ना) और `notesPostRole` (पोस्ट करना) का पालन करता है: `staff` (डिफ़ॉल्ट, जब फ़ील्ड `null` हो) किसी और को अनुमति नहीं देता, `leaders` इवेंट के समूह के लीडर को अनुमति देता है, और `members` इवेंट समूह के सदस्यों और लीडर्स को अनुमति देता है। जिस इवेंट में `groupId` नहीं है, वह केवल स्टाफ के लिए है।
+- **`groupNote`** (`contentId` = समूह ID) -- किसी समूह पर **Leader notes** फ़ीड। केवल उस समूह के लीडर (JWT पर `leaderGroupIds`) पढ़ या पोस्ट कर सकते हैं। `content.edit` और समूह-सदस्यता अनुमतियों सहित कोई भी स्टाफ़ अनुमति एक्सेस नहीं देती।
+- **`eventNote`** (`contentId` = इवेंट ID) -- कैलेंडर इवेंट पर नोट। `content.edit` या **Calendars / Admin** वाले स्टाफ़ हमेशा पढ़ और पोस्ट कर सकते हैं। अन्यथा एक्सेस इवेंट के `notesViewRole` (पढ़ना) और `notesPostRole` (पोस्ट करना) का पालन करता है: `staff` (डिफ़ॉल्ट, जब फ़ील्ड `null` हो) किसी और को अनुमति नहीं देता, `leaders` इवेंट के समूह के लीडर को अनुमति देता है, और `members` इवेंट समूह के सदस्यों और लीडर्स को अनुमति देता है। जिस इवेंट में `groupId` नहीं है, वह केवल स्टाफ़ के लिए है।
 
-### वर्कफ़्लो कार्ड नोट का एक्सेस नियंत्रण
+### वर्कफ़्लो कार्ड नोट का एक्सेस नियंत्रण {#workflow-card-notes-access-control}
 
 `contentType: "workflowCard"` वाली बातचीत (वर्कफ़्लो कार्ड पर नोट, जहाँ `contentId` कार्ड का टास्क ID है) केवल वही व्यक्ति पढ़ और लिख सकता है जो वह कार्ड खोल सकता है: DoingApi **Tasks / View** अनुमति वाला उपयोगकर्ता, या वह व्यक्ति या समूह जिसे कार्ड सौंपा गया है, जिसने उसे बनाया है, या जिससे वह संबंधित है। अन्य सभी को ऊपर के सार्वजनिक रूट सहित हर पढ़ने के मार्ग पर `401` मिलता है। कार्ड की बातचीत स्वयं कार्ड के माध्यम से `POST /doing/tasks/:id/conversation` (बॉडी `{ "conversationId": "..." }`) से जुड़ती है; पहली जुड़ी बातचीत ही मान्य रहती है। इसे कार्ड के संपादक और उसका असाइनी कॉल कर सकते हैं।
 
-### उदाहरण: बातचीत शुरू करना
+### उदाहरण: बातचीत शुरू करना {#example-start-a-conversation}
 
 ```
 POST /messaging/conversations/start
@@ -75,7 +75,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## संदेश
+## संदेश {#messages}
 
 मूल पथ: `/messaging/messages`
 
@@ -89,19 +89,19 @@ Authorization: Bearer <token>
 | POST | `/setCallout` | JWT | — | (पुराना) संदेश को रीयल-टाइम में callout के रूप में प्रसारित करें। कोई सक्रिय क्लाइंट नहीं; लाइव स्ट्रीम चैट अब callouts नहीं दिखाता |
 | DELETE | `/:churchId/:id` | JWT | — | संदेश हटाएँ और हटाने को रीयल-टाइम में प्रसारित करें। देखें [संदेश मॉडरेशन](#message-moderation) |
 
-### संदेश मॉडरेशन
+### संदेश मॉडरेशन {#message-moderation}
 
 संदेश हटाने की अनुमति इन्हें है:
 
 - संदेश का लेखक;
-- `content.edit` वाला स्टाफ (चर्च में कहीं भी);
+- `content.edit` वाला स्टाफ़ (चर्च में कहीं भी);
 - **समूह लीडर**, उन बातचीत के लिए जिनका `contentType` `group` या `groupAnnouncement` है और जिनका `contentId` ऐसा समूह है जिसका वे नेतृत्व करते हैं (JWT पर `leaderGroupIds`)।
 
 व्यक्ति-नोट बातचीत (`person` / `personConfidential`) का मॉडरेशन लीडर कभी नहीं करते; उनके लिए नोट की अनुमतियाँ (`people.edit`, `people.viewConfidentialNotes`) लागू होती हैं।
 
-लीडर केवल हटा सकते हैं, संपादित नहीं कर सकते: किसी और सदस्य का संदेश फिर से लिखना केवल लेखक और `content.edit` स्टाफ तक सीमित रहता है।
+लीडर केवल हटा सकते हैं, संपादित नहीं कर सकते: किसी और सदस्य का संदेश फिर से लिखना केवल लेखक और `content.edit` स्टाफ़ तक सीमित रहता है।
 
-### उदाहरण: संदेश भेजना
+### उदाहरण: संदेश भेजना {#example-send-a-message}
 
 ```
 POST /messaging/messages/send
@@ -133,7 +133,7 @@ POST /messaging/messages/send
 ]
 ```
 
-## निजी संदेश
+## निजी संदेश {#private-messages}
 
 मूल पथ: `/messaging/privatemessages`
 
@@ -144,7 +144,7 @@ POST /messaging/messages/send
 | GET | `/:id` | JWT | — | ID से निजी संदेश लोड करें (यदि वर्तमान उपयोगकर्ता को संबोधित है तो सूचना हटाता है) |
 | POST | `/` | JWT | — | निजी संदेश भेजें (बैच)। प्राप्तकर्ता को पुश सूचना भेजता है |
 
-## सूचनाएँ
+## सूचनाएँ {#notifications}
 
 मूल पथ: `/messaging/notifications`
 
@@ -161,8 +161,11 @@ POST /messaging/messages/send
 | POST | `/sendTest` | JWT | — | परीक्षण पुश सूचना भेजें। बॉडी: `{ personId, title }` |
 | POST | `/ping` | सार्वजनिक | — | बाहरी ट्रिगर से सूचना बनाएँ। बॉडी: `{ personId, churchId, contentType, contentId, message, triggeredByPersonId }` |
 | DELETE | `/:churchId/:id` | JWT | — | सूचना हटाएँ |
+| GET | `/groupPreview/:groupId` | JWT | `groupMembers.edit` | गिनें कि किसी समूह के कितने सदस्यों तक पुश पहुँचेगा |
+| GET | `/churchPreview` | JWT | `content.edit` | गिनें कि ऐप वाले सभी लोगों को पुश भेजने पर कितने लोगों तक पहुँचेगा |
+| POST | `/group/send` | JWT | `groupMembers.edit` | किसी समूह के सदस्यों को अभी पुश भेजें |
 
-### उदाहरण: सूचनाएँ बनाना
+### उदाहरण: सूचनाएँ बनाना {#example-create-notifications}
 
 ```
 POST /messaging/notifications/create
@@ -177,7 +180,21 @@ Authorization: Bearer <token>
 }
 ```
 
-## सूचना प्राथमिकताएँ
+## निर्धारित सूचनाएँ {#scheduled-notifications}
+
+मूल पथ: `/messaging/scheduledNotifications`
+
+पुश पहले से निर्धारित किए जाते हैं। `audience` `church` (ऐप वाले सभी लोग; `content.edit` चाहिए) या `group` (`groupMembers.edit` और `groupId` चाहिए) हो सकता है। शीर्षक 80 अक्षरों और संदेश 240 अक्षरों तक सीमित है। देय पंक्ति 1-मिनट के टाइमर से भेजी जाती है।
+
+| विधि | पथ | प्रमाणीकरण | अनुमति | विवरण |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | `groupMembers.edit` या `content.edit` | चर्च की निर्धारित और हाल की सूचनाएँ सूचीबद्ध करें |
+| POST | `/` | JWT | हर audience के अनुसार | निर्धारित सूचना बनाएँ, या `id` सेट होने पर उसे अपडेट करें। बॉडी: `{ id?, audience, groupId?, title, message, link?, imageUrl?, sendAt }`। जो सूचना अब लंबित नहीं है उसे अपडेट करने पर 409 लौटता है |
+| POST | `/:id/sendNow` | JWT | हर audience के अनुसार | लंबित सूचना अभी भेजें। यदि वह पहले ही भेजी जा चुकी है, रद्द है, या भेजी जा रही है, तो 409 लौटता है |
+| DELETE | `/:id` | JWT | हर audience के अनुसार | लंबित सूचना रद्द करें, या भेजी गई, विफल, या रद्द की गई सूचना सूची से हटाएँ। भेजे जाने के दौरान 409 लौटता है |
+| DELETE | `/` | JWT | `groupMembers.edit` या `content.edit` | उन audiences के लिए जिन तक उपयोगकर्ता भेज सकता है, हर भेजी गई, विफल, और रद्द की गई सूचना हटाएँ। `{ deleted }` लौटाता है |
+
+## सूचना प्राथमिकताएँ {#notification-preferences}
 
 मूल पथ: `/messaging/notificationpreferences`
 
@@ -187,7 +204,7 @@ Authorization: Bearer <token>
 | GET | `/my` | JWT | — | वर्तमान उपयोगकर्ता की सूचना प्राथमिकताएँ लोड करें (कोई न होने पर डिफ़ॉल्ट स्वतः बनाता है) |
 | POST | `/` | JWT | — | वर्तमान उपयोगकर्ता की प्राथमिकताएँ सहेजें। बॉडी: `allowPush`, `allowSms`, `emailFrequency`, `masterMute`, `quietHoursStart`, `quietHoursEnd`, `timeZone`, `maxPushPerDay` में से कोई भी, साथ में वैकल्पिक `overrides: [{ categoryKey, channel, optedIn }]` (channel `push`, `email`, `in_app`, या `sms` हो सकता है; लॉक की गई श्रेणियाँ अनदेखी होती हैं)। `allowSms` सदस्य की टेक्स्ट रिमाइंडर के लिए सहमति है। पंक्तियों की पुरानी सरणी वाली बॉडी अभी भी स्वीकार की जाती है |
 
-## कनेक्शन
+## कनेक्शन {#connections}
 
 मूल पथ: `/messaging/connections`
 
@@ -201,7 +218,7 @@ Authorization: Bearer <token>
 | DELETE | `/:churchId/:conversationId/:socketId` | सार्वजनिक | — | किसी बातचीत से कनेक्शन हटाएँ। उपस्थिति प्रसारण ट्रिगर करता है |
 | POST | `/tmpSendAlert` | सार्वजनिक | — | किसी व्यक्ति के कनेक्शन को सूचना अलर्ट भेजें। बॉडी: `{ churchId, personId }` |
 
-## डिवाइस
+## डिवाइस {#devices}
 
 मूल पथ: `/messaging/devices`
 
@@ -219,7 +236,7 @@ Authorization: Bearer <token>
 | GET | `/:churchId/:id` | JWT | — | ID से डिवाइस लोड करें |
 | DELETE | `/:churchId/:id` | JWT | — | डिवाइस हटाएँ |
 
-### उदाहरण: डिवाइस नामांकित करना
+### उदाहरण: डिवाइस नामांकित करना {#example-enroll-a-device}
 
 ```
 POST /messaging/devices/enroll
@@ -245,7 +262,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## डिवाइस कंटेंट
+## डिवाइस कंटेंट {#device-contents}
 
 मूल पथ: `/messaging/devicecontents`
 
@@ -257,7 +274,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | डिवाइस कंटेंट असाइनमेंट सहेजें (बैच) |
 | DELETE | `/:id` | JWT | — | डिवाइस कंटेंट असाइनमेंट हटाएँ |
 
-## टेक्स्टिंग
+## टेक्स्टिंग {#texting}
 
 मूल पथ: `/messaging/texting`
 
@@ -277,7 +294,7 @@ SMS टेक्स्टिंग प्रदाताओं, समूह ट
 | POST | `/sendPerson` | JWT | — | किसी एक व्यक्ति को SMS भेजें। बॉडी: `{ personId, phoneNumber, message }`। मर्ज फ़ील्ड हल किए जाते हैं, और हल किया हुआ टेक्स्ट ही लॉग होता है |
 | DELETE | `/providers/:id` | JWT | — | टेक्स्टिंग प्रदाता हटाएँ |
 
-### उदाहरण: समूह टेक्स्ट भेजना
+### उदाहरण: समूह टेक्स्ट भेजना {#example-send-group-text}
 
 ```
 POST /messaging/texting/send
@@ -300,7 +317,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## ईमेल टेम्पलेट
+## ईमेल टेम्पलेट {#email-templates}
 
 मूल पथ: `/messaging/emailTemplates`
 
@@ -317,7 +334,7 @@ Authorization: Bearer <token>
 | POST | `/send` | JWT | — | किसी समूह के सभी सदस्यों को टेम्पलेट-आधारित ईमेल भेजें। बॉडी: `{ groupId, subject, htmlContent }` |
 | DELETE | `/:id` | JWT | — | ईमेल टेम्पलेट हटाएँ |
 
-### उदाहरण: समूह को ईमेल भेजना
+### उदाहरण: समूह को ईमेल भेजना {#example-send-email-to-group}
 
 ```
 POST /messaging/emailTemplates/send
@@ -342,7 +359,7 @@ Authorization: Bearer <token>
 
 **समर्थित मर्ज फ़ील्ड:** `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`
 
-## ब्लॉक किए गए IP
+## ब्लॉक किए गए IP {#blocked-ips}
 
 मूल पथ: `/messaging/blockedips`
 
@@ -353,7 +370,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | (पुराना) ब्लॉक किए गए IP सहेजें (बैच)। कोई सक्रिय क्लाइंट नहीं |
 | POST | `/clear` | JWT | — | विशिष्ट सेवाओं के लिए सभी ब्लॉक किए गए IP साफ़ करें। बॉडी: `[{ serviceId, churchId }]` |
 
-## डिलीवरी लॉग
+## डिलीवरी लॉग {#delivery-logs}
 
 मूल पथ: `/messaging/deliverylogs`
 
@@ -366,7 +383,7 @@ Authorization: Bearer <token>
 | GET | `/recent` | JWT | — | चर्च के हालिया डिलीवरी लॉग लोड करें। वैकल्पिक `?limit=` (डिफ़ॉल्ट 100) |
 | GET | `/:id` | JWT | — | ID से डिलीवरी लॉग लोड करें |
 
-## संबंधित पृष्ठ
+## संबंधित पेज {#related-pages}
 
 - [रीयल-टाइम आर्किटेक्चर](../../realtime.md) -- WebSocket प्रोटोकॉल, रूम सब्सक्रिप्शन और unified delivery फ़्रेमवर्क
 - [वेब पुश सूचनाएँ](../../web-push.md) -- ब्राउज़र पुश नामांकन और डिलीवरी

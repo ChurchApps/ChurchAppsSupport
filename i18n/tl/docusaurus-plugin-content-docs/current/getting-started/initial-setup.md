@@ -20,7 +20,7 @@ Pagkatapos gumawa ng iyong account at simbahan, may ilang mahahalagang hakbang n
 
 </div>
 
-## Hakbang 1: I-configure ang Impormasyon ng Iyong Simbahan
+## Hakbang 1: I-configure ang Impormasyon ng Iyong Simbahan {#step-1-configure-your-church-information}
 
 1. Buksan ang [menu ng Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), i-expand ang **Settings**, at i-click ang **Settings**.
 2. Sa seksyong **Church Information**, i-click ang **Edit**.

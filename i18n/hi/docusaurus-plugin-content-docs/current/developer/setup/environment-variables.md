@@ -167,7 +167,7 @@ Next.js में, जो भी पर्यावरण चर ब्राउ
 
 ## मोबाइल ऐप पर्यावरण चर
 
-### B1Checkin (React Native / Expo)
+### B1Checkin (React Native / Expo) {#b1checkin-react-native--expo}
 
 नमूना फ़ाइल: `dotenv.sample.txt`
 

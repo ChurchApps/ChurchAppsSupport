@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## Modulübergreifende Kommunikation
+## Modulübergreifende Kommunikation {#cross-module-communication}
 
 Jedes Modul besitzt seine eigene Datenbank (siehe [Datenbank](./database.md)), und ein Modul fragt niemals direkt die Tabellen eines anderen Moduls ab. Wenn ein Modul Daten benötigt, die einem anderen gehören -- zum Beispiel wenn das Doing-Modul Personen aus Membership auflöst -- geschieht dies über das **Gateway** des besitzenden Moduls in `src/shared/modules/`:
 

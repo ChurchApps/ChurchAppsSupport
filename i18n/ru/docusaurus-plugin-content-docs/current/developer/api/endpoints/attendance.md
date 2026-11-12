@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Время богослужений
+## Время богослужений {#service-times}
 
 Базовый путь: `/attendance/servicetimes`
 

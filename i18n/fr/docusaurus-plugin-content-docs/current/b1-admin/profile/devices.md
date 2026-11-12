@@ -1,63 +1,74 @@
 ---
-title: "Gestion des appareils"
-description: "Associez, étiquetez et retirez les écrans ChurchAppsPlayer et FreePlay reliés à votre compte dans B1 Admin, afin que les affichages de l'église restent à jour et sécurisés."
+title: "Gérer les appareils"
+description: "Associez, nommez et retirez les écrans ChurchAppsPlayer et FreePlay connectés à votre compte dans B1 Admin, afin que les écrans de l'église restent à jour et sécurisés."
 ---
 
-# Gestion des appareils
+# Gérer les appareils
 
 <div class="article-intro">
 
-La page Appareils vous permet de gérer les appareils ChurchAppsPlayer et FreePlay connectés à votre compte. Ces appareils sont utilisés pour diffuser du contenu et afficher les médias de l'église sur des écrans à votre emplacement.
+La page Appareils vous permet de gérer les appareils ChurchAppsPlayer et FreePlay connectés à votre compte. Ces appareils servent à diffuser du contenu et à afficher les médias de votre église sur les écrans de vos locaux.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Ayez un appareil ChurchAppsPlayer allumé et connecté à internet
-- Notez le code d'appairage affiché sur l'écran de l'appareil
+- Ayez un appareil ChurchAppsPlayer ou FreePlay allumé et connecté à Internet
+- Notez le code d'association affiché à l'écran de l'appareil
 - Consultez vos [paramètres de profil](./managing-profile.md) si ce n'est pas déjà fait
 
 </div>
 
-## Consulter vos appareils
+## Ouvrir la page Appareils {#opening-the-devices-page}
 
-Lorsque vous ouvrez la page Appareils, vous voyez un tableau répertoriant tous les appareils enregistrés avec les informations suivantes :
+Ouvrez le [menu Accès rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), saisissez **Appareils** et sélectionnez-le. Lorsque vous êtes sur la page de votre profil, le menu Accès rapide affiche aussi **Profil** et **Appareils** côte à côte.
 
-- **Étiquette** -- Le nom que vous avez attribué à l'appareil.
-- **Date d'enregistrement** -- Quand l'appareil a été appairé pour la première fois avec votre compte.
-- **Dernière activité** -- La dernière fois que l'appareil s'est connecté à votre compte.
+## Consulter vos appareils {#viewing-your-devices}
 
-## Ajouter un nouvel appareil
+Lorsque vous ouvrez la page Appareils, vous voyez un tableau répertoriant les écrans ChurchAppsPlayer et FreePlay associés à votre compte, avec les informations suivantes :
 
-1. Cliquez sur le bouton **Add Screen** en haut de la page Appareils.
-2. Il vous sera demandé de saisir un **code d'appairage**.
-3. Trouvez le code d'appairage affiché sur l'appareil ChurchAppsPlayer ou FreePlay que vous voulez connecter.
-4. Saisissez le code. S'il s'agit d'une TV FreePlay, un menu déroulant **Afficher les plans pour** vous permet de choisir le type de plan que l'écran doit suivre — laissez-le sur **Aucun** pour utiliser l'appareil uniquement pour la navigation et les notifications.
-5. Confirmez. L'appareil apparaîtra dans votre tableau d'appareils une fois l'appairage réussi.
+- **Libellé** -- Le nom que vous avez attribué à l'appareil (**Appareil** tant que vous ne lui en avez pas donné un).
+- **Date d'enregistrement** -- Date à laquelle l'appareil a été associé pour la première fois à votre compte.
+- **Dernière activité** -- Dernière connexion de l'appareil à votre compte.
 
-:::tip
-Assurez-vous que l'appareil est allumé et connecté à internet avant de tenter de l'appairer. Le code d'appairage est affiché sur l'écran de l'appareil.
-:::
+## Ajouter un nouvel appareil {#adding-a-new-device}
 
-## Modifier l'étiquette d'un appareil
-
-1. Cliquez sur **Edit** à côté de l'appareil dans le tableau des appareils.
-2. Mettez à jour l'étiquette avec quelque chose de descriptif (par exemple, « Écran principal du sanctuaire » ou « Affichage du hall »).
-3. Enregistrez vos modifications.
+1. Cliquez sur le bouton **Ajouter un écran** en haut de la page Appareils.
+2. Repérez le code d'association affiché sur l'appareil ChurchAppsPlayer ou FreePlay que vous souhaitez connecter.
+3. Saisissez-le dans le champ **Code d'association**.
+4. Si votre église a configuré des [types de plan](../serving/plans.md), une liste déroulante **Afficher les plans pour** vous permet de choisir le type de plan qu'un écran FreePlay doit suivre. Laissez-la sur **Aucun (notifications uniquement)** pour utiliser l'appareil seulement pour la consultation et les notifications.
+5. Cliquez sur **Enregistrer**. L'appareil apparaît dans votre tableau des appareils une fois associé. Si le code est erroné ou a expiré, le message *« Code d'association invalide »* s'affiche.
 
 :::tip
-Utiliser des étiquettes claires et descriptives facilite l'identification de chaque appareil, surtout lorsque vous avez plusieurs écrans configurés dans votre église.
+Assurez-vous que l'appareil est allumé et connecté à Internet avant de tenter l'association. Le code d'association est affiché à l'écran de l'appareil.
 :::
 
-## Gérer l'accès aux appareils
+## Modifier le libellé d'un appareil {#editing-a-device-label}
 
-Utilisez la page Appareils pour suivre quels appareils ont accès à la diffusion et au contenu de votre église. Si un appareil n'est plus utilisé, vous pouvez le retirer de votre compte pour garder votre liste d'appareils propre et sécurisée.
+1. Cliquez sur **Modifier** à côté de l'appareil dans le tableau des appareils.
+2. Remplacez le **Libellé** par un nom descriptif (par exemple « Écran principal du sanctuaire » ou « Écran du hall »).
+3. Cliquez sur **Enregistrer**.
+
+Le formulaire **Modifier l'appareil** comporte aussi une liste **Contenu associé** répertoriant les salles de classe de votre église sur Lessons.church. Cochez une salle pour l'associer à l'écran ; chaque case est enregistrée dès que vous cliquez dessus.
+
+:::tip
+Des libellés clairs et descriptifs permettent de savoir facilement quel appareil est lequel, surtout si votre église dispose de plusieurs écrans.
+:::
+
+## Gérer l'accès des appareils {#managing-device-access}
+
+Utilisez la page Appareils pour savoir quels appareils ont accès au streaming et au contenu de votre église. Si un appareil n'est plus utilisé, retirez-le de votre compte :
+
+1. Cliquez sur **Modifier** à côté de l'appareil.
+2. Cliquez sur **Retirer**, puis de nouveau sur **Retirer** pour confirmer.
+
+L'écran devra recevoir un nouveau code d'association pour se reconnecter.
 
 :::warning
-Examinez régulièrement vos appareils connectés pour vous assurer que seuls des appareils actifs et autorisés sont liés à votre compte. Supprimez tout appareil qui n'est plus utilisé pour maintenir la sécurité.
+Vérifiez régulièrement vos appareils connectés pour vous assurer que seuls les appareils actifs et autorisés sont liés à votre compte. Retirez ceux qui ne sont plus utilisés afin de préserver la sécurité.
 :::
 
-## Étapes suivantes
+## Étapes suivantes {#next-steps}
 
 - [Gérer votre profil](./managing-profile.md) -- Modifier les paramètres de votre compte personnel

@@ -1,37 +1,39 @@
 ---
-title: "Suporta sa Multi-Currency"
-description: "Itala at iulat ang donasyon sa iba't ibang pera sa B1 Admin, kasama ang manual na entry, Stripe online giving, at conversion ng pinagsamang kabuuan."
+title: "Suporta sa Maraming Currency"
+description: "Magtala at mag-ulat ng mga donasyon sa iba't ibang currency sa B1 Admin, kabilang ang manu-manong pagpasok, Stripe online giving, at kung paano kino-convert ang pinagsamang kabuuan."
 ---
 
-# Suporta sa Multi-Currency
+# Suporta sa Maraming Currency
 
 <div class="article-intro">
 
-Ang multi-currency feature ng B1 ay nagpapahintulot sa iyong simbahan na tumanggap at subaybayan ang mga donasyon sa iba't ibang mga currency. Ito ay partikular na kapaki-pakinabang para sa mga simbahan na may mga internasyonal na miyembro, mga misyoner, o mga kampus sa iba't ibang bansa.
+Hinahayaan ng multi-currency feature ng B1 ang iyong simbahan na tumanggap at subaybayan ang mga donasyon sa iba't ibang currency. Lalo itong kapaki-pakinabang para sa mga simbahang may internasyonal na miyembro, misyonero, o maraming campus sa iba't ibang bansa.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago ka magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ng pahintulot upang pamahalaan ang mga donasyon. Makita ang [Roles & Permissions](../people/roles-permissions.md) para sa mga detalye.
-- I-setup ang iyong [online giving](./online-giving-setup.md) na may Stripe, na sumusuporta sa multi-currency transactions.
-- Maunawaan ang mga pangangailangan sa accounting ng iyong simbahan para sa pagharap sa maraming mga currency.
+- Kailangan mo ng permission para pamahalaan ang mga donasyon. Tingnan ang [Roles & Permissions](../people/roles-permissions.md) para sa mga detalye.
+- I-set up ang iyong [online giving](./online-giving-setup.md) gamit ang Stripe, na sumusuporta sa multi-currency na transaksyon. Ang simbahang walang online giving ay maaari pa ring pumili ng currency kung saan itatala ang mga handog na manu-manong inilagay.
+- Unawain ang pangangailangan ng iyong simbahan sa accounting para sa paghawak ng maraming currency.
 
 </div>
 
-## Pagpapagana ng Multi-Currency
+Nagsisimula ang currency ng iyong simbahan sa currency ng bansang inilagay noong nagparehistro ang simbahan (halimbawa, Kenyan shillings para sa simbahan sa Kenya), at ito ang ginagamit kung wala pang naka-save na currency. Maaari mo itong palitan anumang oras sa ilalim ng **Settings → Giving** (ang **Currency** dropdown). Kung hindi nakikilala ang iyong bansa, nagsisimula ito sa US dollars.
 
-Ang multi-currency support ay ngayon ay enabled na sa default sa B1. Kapag enabled na:
+## Pag-enable ng Multi-Currency {#enabling-multi-currency}
 
-- Ang mga miyembro ay maaaring magbigay sa kanilang lokal na currency kapag nag-donate online
-- Maaari mong manu-manong magtatala ng mga donasyon sa anumang currency
-- Ang mga ulat sa donasyon ay nagpapakita ng mga halaga sa kanilang orihinal na currency
-- Ang Stripe ay awtomatikong humahawak ng conversion ng currency para sa online giving
+Naka-enable bilang default sa B1 ang suporta sa multi-currency:
 
-## Mga Suportadong Currency
+- Sinisingil ang mga online na handog sa currency na pinili sa iyong **Giving** settings
+- Pinapanatili ng bawat donasyon ang currency kung saan ito naitala, at ipinapakita ng bawat linya ng donasyon ang currency na iyon
+- Kino-convert sa currency ng iyong simbahan ang mga pinagsamang kabuuan (tingnan ang [Converted Totals](#converted-totals))
+- Ang Stripe ang humahawak ng conversion ng currency tungo sa payout currency mo para sa online giving
 
-Ang sistema ay sumusuporta sa lahat ng pangunahing mga currency ng mundo, kabilang:
+## Mga Suportadong Currency {#supported-currencies}
+
+Sinusuportahan ng sistema ang lahat ng pangunahing currency sa mundo, kabilang ang:
 
 - **USD** -- United States Dollar
 - **EUR** -- Euro
@@ -45,90 +47,77 @@ Ang sistema ay sumusuporta sa lahat ng pangunahing mga currency ng mundo, kabila
 - **JPY** -- Japanese Yen
 - At marami pang iba...
 
-Ang mga available na currency para sa online giving ay nakasalalay sa mga suportadong currency ng iyong Stripe account.
+Nakadepende sa mga currency na sinusuportahan ng iyong Stripe account ang mga currency na available para sa online giving.
 
-## Pag-record ng Mga Donasyon sa Iba't ibang Mga Currency
+## Pagtatala ng Donasyon sa Iba't Ibang Currency {#recording-donations-in-different-currencies}
 
-### Online Donations
+### Mga Online na Donasyon {#online-donations}
 
-Kapag ang isang miyembro ay nag-donate online sa pamamagitan ng Stripe:
+Kapag nagbigay ang isang miyembro online sa pamamagitan ng Stripe:
 
-1. Pumili sila ng kanilang ginustong currency sa checkout
-2. Ang Stripe ay nagpoproseso ng pagbabayad sa currency na iyon
-3. Ang donasyon ay naitala sa B1 na may orihinal na halaga ng currency
-4. Ang Stripe ay awtomatikong humahawak ng anumang kinakailangang conversion ng currency sa default na currency ng iyong account
+1. Sinisingil ang handog sa currency na itinakda sa ilalim ng **Settings → Giving**; hindi pumipili ng currency ang mga donor sa checkout
+2. Pinoproseso ng Stripe ang bayad sa currency na iyon
+3. Naitatala ang donasyon sa B1 kasama ang currency at halagang iyon
+4. Awtomatikong hinaharap ng Stripe ang anumang kinakailangang conversion ng currency tungo sa payout currency ng iyong account
 
-### Manual Entry
+Kung palitan mo ang setting na **Currency** sa hinaharap, ang mga bagong handog ay gagamit ng bagong currency habang ang mga handog na naitala na ay mananatili sa kanilang currency, kaya maaaring maglaman ang iyong mga talaan ng higit sa isang currency.
 
-Upang magtatla ng cash o check donation sa isang iba't ibang currency:
+### Manu-manong Pagpasok {#manual-entry}
 
-1. Mag-navigate sa **Donations > Batches** sa B1 Admin at buksan ang batch
-2. I-click ang **Add Donation** sa itaas ng batch page
-3. Pumili ng currency mula sa currency dropdown
-4. Ipasok ang halaga sa currency na iyon
-5. Tapusin ang natitirang mga detalye ng donasyon
-6. I-click ang **Save**
+Ang mga handog na inilagay mo nang mano-mano -- sa isang batch, gamit ang **Import CSV**, o gamit ang **Log a gift** sa record ng isang tao -- ay laging naitatala sa currency ng iyong simbahan, na ipinapakita sa tabi ng **Amount** field. Walang currency dropdown para sa manu-manong pagpasok, kaya i-convert muna sa currency ng iyong simbahan ang handog na ginawa sa ibang currency bago mo ito ilagay, at isulat ang orihinal na halaga sa **Notes** kung kakailanganin mo ito.
 
-## Pagsusuri ng Multi-Currency Donations
+## Pagtingin sa Mga Donasyon sa Maraming Currency {#viewing-multi-currency-donations}
 
-### Mga Ulat sa Donasyon
+### Mga Donation Report {#donation-reports}
 
-Ang mga ulat sa donasyon ay nagpapakita ng mga halaga sa kanilang orihinal na currency:
+Ipinapakita ng mga indibidwal na linya ng donasyon -- sa isang batch, sa pahina ng fund, at sa giving history ng isang tao -- ang bawat handog sa currency kung saan ito naitala. Kino-convert ang mga pinagsamang kabuuan, gaya ng inilarawan sa ibaba.
 
-- Ang mga indibidwal na talaan ng donasyon ay nagpapakita ng currency code (hal., "$100.00 USD")
-- Ang mga kabuuan ay kinakalkula bawat currency
-- Maaari mong i-filter sa pamamagitan ng mga tiyak na currency
+### Converted Totals {#converted-totals}
 
-### Mga Converted na Kabuuan
+Saanman magpakita ang B1 ng iisang pinagsamang kabuuan -- ang mga KPI card ng giving summary, kabuuan ng donation batch, at kabuuan ng isang fund -- ang mga donasyong naitala sa currency na iba sa default ng iyong simbahan ay kino-convert sa currency ng iyong simbahan gamit ang kasalukuyang exchange rate, para ang kabuuan ay isang makabuluhang numero at hindi pagdaragdag ng magkakaibang currency. May lalabas na note na **Converted at current exchange rates** sa ilalim ng kabuuan sa tuwing may na-apply na conversion. Ipinapakita pa rin sa orihinal na currency ang mga indibidwal na linya ng donasyon.
 
-Saanman ang B1 ay nagpapakita ng isang pinagsama-samang kabuuan -- ang giving summary KPI cards, isang kabuuan ng batch ng donasyon, at isang kabuuan ng fund -- ang mga donasyon na naitala sa isang currency na iba sa default ng iyong simbahan ay kinukonberto sa iyong currency ng simbahan gamit ang kasalukuyang exchange rates, kaya ang kabuuan ay isang solong makabuluhang numero sa halip na magdagdag ng mga hindi katulad na currency. Isang notang **Converted at current exchange rates** ay lumalabas sa ilalim ng kabuuan kapag ang isang conversion ay ginagamit. Ang mga indibidwal na line item ng donasyon ay patuloy na nagpapakita sa kanilang orihinal na currency.
+### Mga Giving Statement {#giving-statements}
 
-### Mga Statement ng Pagbibigay
+Inililista ng mga giving statement ang halaga ng bawat handog gaya ng pagkakatala nito at dinadagdag ang mga halaga nang hindi kino-convert, kaya tumpak lamang ang statement kapag nasa currency ng iyong simbahan ang lahat ng handog ng donor sa taon. Kung nagbigay ang isang donor sa higit sa isang currency, suriin muna ang kanyang statement bago ito ipadala.
 
-Kapag lumilikha ng mga statement ng pagbibigay:
+## Integrasyon sa Stripe {#stripe-integration}
 
-- Bawat donasyon ay lumalabas na may kanyang orihinal na currency
-- Ang mga kabuuan ay sinisira ng currency
-- Ang mga miyembro ay nakakakita ng eksakto kung ano ang kanilang ibinigay sa bawat currency
+Para sa online giving, hinahawakan ng Stripe ang mga multi-currency na transaksyon:
 
-## Stripe Integration
-
-Para sa online giving, ang Stripe ay humahawak ng multi-currency transactions:
-
-- **Automatic conversion** -- Ang Stripe ay nag-convert ng mga currency sa default na currency ng iyong account
-- **Exchange rates** -- Ang Stripe ay gumagamit ng kasalukuyang market exchange rates
-- **Fees** -- Ang currency conversion ay maaaring may dagdag na Stripe fees
-- **Payout currency** -- Ang mga pondo ay idideposito sa default na currency ng iyong account
+- **Awtomatikong conversion** -- kino-convert ng Stripe ang mga currency tungo sa default na currency ng iyong account
+- **Exchange rate** -- gumagamit ang Stripe ng kasalukuyang market exchange rate
+- **Bayarin** -- maaaring magkaroon ng karagdagang bayarin sa Stripe ang conversion ng currency
+- **Payout currency** -- idinedeposito ang pondo sa default na currency ng iyong account
 
 :::info
-Suriin ang iyong Stripe dashboard upang makita ang kasalukuyang exchange rates at anumang mga bayad na nauugnay sa multi-currency transactions.
+Tingnan ang iyong Stripe dashboard para makita ang kasalukuyang conversion rate at anumang bayarin na kaugnay ng multi-currency na transaksyon.
 :::
 
-## Mga Pagsasaalang-alang sa Accounting
+## Mga Konsiderasyon sa Accounting {#accounting-considerations}
 
-Kapag nagtatrabaho sa maraming mga currency:
+Kapag nakikitungo sa maraming currency:
 
-- **Record-keeping** -- Panatilihin ang track ng mga orihinal na halaga ng donasyon at mga currency para sa tumpak na umuulat
-- **Exchange rates** -- Tandaan na ang mga exchange rate ng Stripe ay maaaring maging iba sa mga rate ng iyong bangko
-- **Tax receipts** -- Konsultahin ang iyong accountant kung paano mag-ulat ng mga donasyon sa iba't ibang mga currency para sa mga layunin ng buwis
-- **Fund allocation** -- Maaari mong ikatalagang ang mga donasyon sa mga tiyak na fund anuman ang currency
+- **Pagtatala** -- Itala ang orihinal na halaga at currency ng donasyon para sa tumpak na pag-uulat
+- **Exchange rate** -- Tandaang maaaring magkaiba ang conversion rate ng Stripe sa rate ng iyong bangko
+- **Mga resibo ng buwis** -- Kumonsulta sa iyong accountant kung paano iuulat ang mga donasyong nasa iba't ibang currency para sa layuning buwis
+- **Paglalaan ng fund** -- Maaari mong ilaan ang mga donasyon sa partikular na mga fund anuman ang currency
 
-## Mga Best Practice
+## Mga Pinakamahusay na Gawi {#best-practices}
 
-- **Default currency** -- Itakda ang iyong pangunahing currency ng simbahan bilang default para sa karamihan ng mga transaksyon
-- **Clear communication** -- Sabihin sa mga donor kung anong currency ang kanilang ibinibigay sa panahon ng checkout process
-- **Consistent reporting** -- Ang mga pinagsama-samang kabuuan ay laging kinukonberto sa iyong currency ng simbahan nang awtomatiko; gamitin ang per-donation currency filter kapag kailangan mong makita ang mga orihinal na halaga
-- **Regular reconciliation** -- Baguhin ang mga Stripe payouts sa iyong mga talaan ng donasyon, accounting para sa mga conversion ng currency
+- **Default na currency** -- Itakda ang pangunahing currency ng simbahan sa ilalim ng **Settings > Giving** para ang mga manu-manong inilagay na handog at kabuuan ng giving ay gumamit nito
+- **Malinaw na komunikasyon** -- Sabihin sa mga donor kung anong currency ang ibibigay nila habang nasa proseso ng checkout
+- **Pare-parehong pag-uulat** -- Awtomatikong kino-convert sa currency ng iyong simbahan ang mga pinagsamang kabuuan; magbukas ng batch o fund para makita ang orihinal na halaga at currency ng bawat handog
+- **Regular na reconciliation** -- I-reconcile ang mga Stripe payout sa iyong mga talaan ng donasyon, kasama ang mga conversion ng currency
 
-## Mga Limitasyon
+## Mga Limitasyon {#limitations}
 
-- Ang currency conversion para sa payment processing ay hinawakan lamang ng Stripe para sa online giving; ang mga manual na donasyon ay naitala gaya ng-entered na walang awtomatikong conversion
-- Ang mga ulat sa kasaysayan at mga indibidwal na line item ng donasyon ay laging nagpapakita ng orihinal na currency na kung saan naitala ang regalo
-- Ang mga pinagsama-samang kabuuan (KPI cards, batch totals, fund totals) ay kinukonberto sa iyong currency ng simbahan gamit ang kasalukuyang exchange rates -- ang mga rate na ito ay maaaring maging kaunting iba mula sa iyong bangko o mga rate ng Stripe sa oras ng pag-settle ng mga pondo
+- Ang conversion ng currency para sa pagproseso ng bayad ay hawak ng Stripe para sa online giving lamang; ang manu-manong donasyon ay naitatala sa currency ng simbahan gaya ng pagkakalagay
+- Palaging ipinapakita ng mga makasaysayang ulat at indibidwal na linya ng donasyon ang orihinal na currency kung saan naitala ang handog
+- Ang mga pinagsamang kabuuan (KPI card, kabuuan ng batch, kabuuan ng fund) ay kino-convert sa currency ng iyong simbahan gamit ang kasalukuyang exchange rate -- maaaring bahagyang magkaiba ang mga rate na ito sa rate ng iyong bangko o Stripe sa oras ng pag-settle ng pondo
 
-## Kaugnay na Mga Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Online Giving Setup](./online-giving-setup.md) -- I-configure ang Stripe para tumanggap ng mga donasyon
-- [Recording Donations](./recording-donations.md) -- Manu-manong ipasok ang mga talaan ng donasyon
-- [Donation Reports](./donation-reports.md) -- Lumikha at tingnan ang mga pagbubuod ng donasyon
-- [Giving Statements](./giving-statements.md) -- Lumikha ng mga statement ng pagbibigay sa pagtatapos ng taon
+- [Online Giving Setup](./online-giving-setup.md) -- I-configure ang Stripe para sa pagtanggap ng donasyon
+- [Recording Donations](./recording-donations.md) -- Manu-manong ilagay ang mga talaan ng donasyon
+- [Donation Reports](./donation-reports.md) -- Gumawa at tingnan ang mga buod ng donasyon
+- [Giving Statements](./giving-statements.md) -- Gumawa ng taunang giving statement

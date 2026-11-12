@@ -1,78 +1,77 @@
 ---
-title: "Primeiros Passos com o Seu Site no B1 Admin"
-sidebar_label: "Configuração Inicial"
-description: "Configure seu site da igreja no B1 Admin: aponte um subdomínio ou domínio próprio, crie a página inicial, escolha as cores e o logo e monte a navegação."
+title: "Primeiros passos com o seu site no B1 Admin"
+sidebar_label: "Configuração inicial"
+description: "Configure o site da sua igreja no B1 Admin: aponte um subdomínio ou domínio próprio, crie a sua página inicial, escolha as cores e o logo da marca e monte a navegação."
 ---
 
-# Configuração Inicial
+# Configuração inicial
 
 <div class="article-intro">
 
-Toda conta B1 vem com um site pronto para usar. Este guia o orienta através da configuração do seu domínio de igreja, configurando a aparência do seu site, criando suas primeiras páginas e organizando sua navegação.
+Cada conta B1 vem com um site pronto para uso. Este guia orienta você na configuração do domínio da sua igreja, na personalização da aparência do site, na criação das primeiras páginas e na organização da navegação.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Você precisa de uma conta B1.church com acesso administrativo
-- Se usar um domínio personalizado, tenha credenciais de login de seu provedor DNS prontas (por exemplo, GoDaddy, Cloudflare ou AWS)
-- Prepare sua logo da igreja em formato PNG com fundo transparente para melhores resultados
+- Você precisa de uma conta B1.church com acesso de administrador
+- Se for usar um domínio próprio, tenha em mãos as credenciais de login do seu provedor de DNS (por exemplo, GoDaddy, Cloudflare ou AWS)
+- Prepare o logo da sua igreja em formato PNG, com fundo transparente, para melhores resultados
 
 </div>
 
-## Configurando Seu Domínio
+## Configurando seu domínio {#setting-up-your-domain}
 
-Sua igreja recebe automaticamente um subdomínio em B1.church (por exemplo, `yourchurch.b1.church`). Você também pode apontar seu próprio domínio personalizado para seu site B1.
+Sua igreja recebe automaticamente um subdomínio no B1.church (por exemplo, `yourchurch.b1.church`). Você também pode apontar o seu próprio domínio para o seu site B1.
 
-1. Vá para **B1.church Admin** visitando admin.b1.church ou clicando em seu menu de perfil e escolhendo **Switch App**.
-2. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Settings**, e clique em **Settings**.
-3. Abra a seção **Church Information** para visualizar seu subdomínio. Defina como algo curto e reconhecível sem espaços.
-4. Para usar um domínio personalizado, faça login em seu provedor DNS (como GoDaddy, Cloudflare ou AWS) e adicione dois registros:
-   - Um **A record** para seu domínio raiz apontando para `3.23.251.61`
-   - Um **CNAME record** para `www` apontando para `proxy.b1.church`
-5. Retorne ao B1.church Admin, abra a seção **Domains** na mesma página de Settings, adicione seu domínio personalizado à lista e clique em **Add** depois **Save**. Seu site será acessível a partir de seu domínio personalizado em alguns minutos.
+1. Acesse o **B1.church Admin** visitando admin.b1.church ou clicando no menu do seu perfil e escolhendo **Trocar aplicativo**.
+2. Abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Configurações** e clique em **Configurações**.
+3. Abra a seção **Informações da igreja** para ver o seu subdomínio. Defina um nome curto e fácil de reconhecer, sem espaços.
+4. Para usar um domínio próprio, entre no seu provedor de DNS (como GoDaddy, Cloudflare ou AWS) e adicione dois registros:
+   - Um **registro A** para o seu domínio raiz apontando para `3.23.251.61`
+   - Um **registro CNAME** para `www` apontando para `proxy.b1.church`
+5. Volte ao B1.church Admin, abra a seção **Domínios** na mesma página de Configurações, adicione o seu domínio próprio à lista e clique em **Adicionar** e depois em **Salvar**. Seu site ficará acessível pelo seu domínio próprio em alguns minutos.
 
 :::tip
-Se você não vir a opção Settings, peça à pessoa que configurou sua conta de igreja para conceder a você a permissão "Edit Church Settings". Consulte [Roles & Permissions](../settings/roles-permissions.md) para detalhes.
+Se você não vir a opção Configurações, peça à pessoa que configurou a conta da sua igreja para conceder a você a permissão "Editar configurações da igreja". Veja [Funções e permissões](../settings/roles-permissions.md) para detalhes.
 :::
 
-## Criando Sua Primeira Página
+## Criando sua primeira página {#creating-your-first-page}
 
-1. No B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Website**, e clique em **Pages**.
-2. Clique em **Add Page** no canto superior direito.
-3. Escolha **Blank** como o tipo de página e nomeie como "Home".
-4. Clique em **Page Settings** e defina o caminho da URL como `/` (uma barra invertida sem texto) para sua página inicial. Outras páginas usam `/page-name`.
-5. Clique em **Edit Content** para começar a construir. Toda página deve começar com uma **Section** -- este é o contêiner para todos os outros elementos.
-6. Após adicionar uma seção, clique em **Add Content** novamente para inserir texto, imagens, vídeos, cartões, formulários e muito mais arrastando-os para sua seção.
+1. No B1 Admin, abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Site** e clique em **Páginas**.
+2. Clique em **Adicionar página** no canto superior direito.
+3. Escolha **Em branco** como tipo de página, digite "Início" como **Título da página** e clique em **Salvar**.
+4. Clique em **Configurações da página** na linha da nova página e altere o **Caminho da URL** para `/` (uma barra, sem texto) para a sua página inicial. As demais páginas usam `/page-name`.
+5. Clique em **Editar conteúdo** para começar a montar. Toda página deve começar com uma **Seção** -- ela é o contêiner de todos os outros elementos. Clique em **Adicionar conteúdo** e arraste **Seção** para a página, depois escolha um layout de seção pronto ou uma **Seção em branco**.
+6. Depois de adicionar uma seção, clique novamente em **Adicionar conteúdo** para inserir textos, imagens, vídeos, cards, formulários e muito mais, arrastando-os para dentro da seção.
 
 :::info
-Para instruções detalhadas sobre como trabalhar com páginas e navegação, consulte [Managing Pages](./managing-pages.md). Para um guia completo do editor visual, consulte [Using the Page Editor](./page-editor.md).
+Para instruções detalhadas sobre como trabalhar com páginas e navegação, veja [Gerenciando páginas](./managing-pages.md). Para um guia completo do editor visual, veja [Usando o editor de páginas](./page-editor.md).
 :::
 
-## Configurando Aparência do Site
+## Configurando a aparência do site {#configuring-site-appearance}
 
-1. No menu Jump, escolha **Website > Appearance**.
-2. Use a **Color Palette** para definir suas cores de marca para tons primário, secundário e destaque.
-3. Em **Fonts**, escolha suas fontes de título e corpo no navegador de fontes.
-
-4. Envie sua logo da igreja em **Logo** nas Configurações de Estilo. Forneça versões de fundo claro e fundo escuro.
-5. Configure seu **Site Footer** com informações de contato e links de sua igreja.
+1. No Menu de atalhos, escolha **Site > Aparência**.
+2. Use a **Paleta de cores** para definir as cores da sua marca -- os tons base claro, de destaque e escuro, além das cores dos botões primário e secundário -- e depois clique em **Salvar paleta**.
+3. Em **Fontes**, escolha as fontes de títulos e do corpo no seletor de fontes e clique em **Salvar fontes**.
+4. Envie o logo da sua igreja em **Logo**, no painel Configurações de estilo. Forneça as versões para fundo claro e para fundo escuro, depois clique em **Salvar alterações**.
+5. Clique em **Rodapé do site** para abrir o rodapé no editor de blocos e adicione as informações de contato e os links da sua igreja.
 
 :::info
-As mudanças que você faz em Aparência se aplicam em todo o seu site. Consulte a página [Appearance](./appearance.md) para instruções detalhadas em cada configuração.
+As alterações feitas em Aparência se aplicam a todo o seu site. Veja a página [Aparência](./appearance.md) para instruções detalhadas de cada configuração.
 :::
 
-## Configurando Navegação
+## Configurando a navegação {#setting-up-navigation}
 
-Seus links de navegação aparecem na visualização Website Pages. Para organizá-los:
+Os links de navegação aparecem na visualização de Páginas do site. Para organizá-los:
 
-1. Clique em **Add** para criar um novo link de navegação e apontá-lo para uma de suas páginas.
-2. Arraste e solte links para reordená-los ou aninhá-los sob itens pai.
-3. Visualize seu site para confirmar que a navegação está correta.
+1. No painel **Navegação principal**, clique em **Adicionar**, digite o **Texto do link** e o caminho da página (por exemplo, `/about`) como **URL**, e clique em **Salvar**.
+2. Arraste e solte os links para reordená-los ou aninhá-los sob itens principais.
+3. Visualize o seu site para confirmar que a navegação está correta.
 
-## Próximas Etapas
+## Próximos passos {#next-steps}
 
-- [Managing Pages](./managing-pages.md) -- Saiba como trabalhar com páginas e navegação em detalhes
-- [Appearance](./appearance.md) -- Refine as cores, fontes e layout do seu site
-- [Files](./files.md) -- Envie imagens e documentos para seu site
+- [Gerenciando páginas](./managing-pages.md) -- Aprenda a trabalhar com páginas e navegação em detalhes
+- [Aparência](./appearance.md) -- Ajuste as cores, as fontes e o layout do seu site
+- [Arquivos](./files.md) -- Envie imagens e documentos para o seu site

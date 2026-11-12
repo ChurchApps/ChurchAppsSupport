@@ -1,51 +1,51 @@
 ---
-title: "Entrée et tendance du décompte"
-description: "Saisissez un nombre total de participants pour un service ou un groupe dans B1 Admin sans liste nominative, puis suivez ces totaux semaine après semaine dans le rapport Tendance des effectifs."
+title: "Saisie du nombre de participants et tendance"
+description: "Saisissez un nombre total de participants pour un service ou un groupe dans B1 Admin sans liste nominative, puis suivez ces totaux semaine après semaine dans le rapport Tendance du nombre de participants."
 ---
 
-# Entrée et tendance du décompte
+# Saisie du nombre de participants et tendance
 
 <div class="article-intro">
 
-Les décomptes vous permettent d'enregistrer un nombre total simple d'assistance - pour un service, une heure de service ou un groupe - sans enregistrer un appel nominal. Utilisez ceci quand vous avez juste besoin de "combien de personnes étaient ici", et associez-le au rapport Tendance du décompte pour surveiller ce nombre au fil du temps.
+Le nombre de participants vous permet d'enregistrer un simple total de présences — pour un service, un horaire de service ou un groupe — sans vérifier une liste nominative. Utilisez-le lorsque vous avez seulement besoin de savoir « combien de personnes étaient là », et associez-le au rapport Tendance du nombre de participants pour suivre ce chiffre dans le temps.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vos campus, services et heures de service doivent être configurés. Consultez [Configuration de l'assistance](setup.md).
-- L'entrée d'un décompte nécessite la permission **Assistance &gt; Modifier** ; la consultation du rapport de tendance nécessite **Assistance &gt; Voir**. Consultez [Rôles et permissions](../settings/roles-permissions.md).
+- Vos campus, services et horaires de service doivent être configurés. Voir [Configuration des présences](setup.md).
+- La saisie d'un nombre de participants nécessite l'autorisation **Présences &gt; Modifier** ; la consultation du rapport de tendance nécessite **Présences &gt; Consulter**. Voir [Rôles et autorisations](../settings/roles-permissions.md).
 
 </div>
 
 :::info
-Les décomptes sont une alternative totale uniquement à [Enregistrer l'assistance](recording-attendance.md). Si vous avez besoin de savoir **qui** a assisté - par exemple, pour assurer le suivi des personnes qui ne sont pas revenues - continuez à utiliser l'assistance de session nommée dans les Sessions d'un groupe. Les décomptes stockent uniquement un nombre.
+Le nombre de participants est une alternative globale à [l'enregistrement des présences](recording-attendance.md). Si vous devez savoir **qui** a participé — par exemple pour faire un suivi auprès des personnes qui ne sont pas revenues —, continuez d'utiliser les présences nominatives par séance dans les Séances d'un groupe. Les nombres de participants ne stockent qu'un chiffre.
 :::
 
-## Enregistrement d'un décompte
+## Enregistrer un nombre de participants {#recording-a-headcount}
 
-1. Ouvrez **B1 Admin**, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes**, et cliquez sur **Assistance**.
-2. Cliquez sur **Entrer un décompte** dans la colonne de gauche.
+1. Ouvrez **B1 Admin**, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Personnes** et cliquez sur **Présences**.
+2. Cliquez sur **Saisir un nombre de participants** dans la colonne de gauche.
 3. Remplissez le formulaire :
-   - **Service** *(requis)*
-   - **Heure de service** -- laissez vide pour enregistrer un total sur toutes les heures de service
-   - **Groupe** -- optionnel ; seuls les groupes avec le suivi de l'assistance activé sont répertoriés. Laissez vide pour "Aucun groupe (service complet)".
+   - **Service** *(obligatoire)*
+   - **Horaire de service** — laissez sur **Tous les horaires de service** pour enregistrer un total pour l'ensemble des horaires du service
+   - **Groupe** — facultatif ; seuls les groupes dont le suivi des présences est activé sont listés. Laissez vide pour « Aucun groupe (service entier) ».
    - **Date**
-   - **Décompte** -- le nombre total de personnes présentes
+   - **Nombre de participants** — le nombre total de personnes présentes (un nombre entier, 0 ou plus)
 4. Cliquez sur **Enregistrer**.
 
-Le tableau **Décomptes récents** à côté du formulaire répertorie vos dernières entrées avec leur date, service, heure de service, groupe et décompte. Cliquez sur une ligne pour la recharger dans le formulaire si vous avez besoin de la corriger ou de la supprimer.
+Le tableau **Nombres de participants récents**, à côté du formulaire, liste vos dernières saisies avec leur date, leur service, leur horaire de service, leur groupe et leur total. Cliquez sur une ligne pour la recharger dans le formulaire si vous devez la corriger ou la supprimer.
 
-## Rapport de tendance du décompte
+## Rapport Tendance du nombre de participants {#headcount-trend-report}
 
-1. Depuis la même page **Assistance**, cliquez sur **Toutes les années** dans la colonne de gauche, puis sélectionnez l'onglet **Tendance du décompte**.
-2. Utilisez les filtres **Campus**, **Service**, **Heure de service** et **Groupe** pour affiner le rapport.
+1. Depuis la même page **Présences**, cliquez sur **Toutes les années** dans la colonne de gauche, puis sélectionnez l'onglet **Tendance du nombre de participants**.
+2. Le rapport s'exécute à l'ouverture de l'onglet. Pour le restreindre, choisissez un **Campus**, un **Service**, un **Horaire de service** ou un **Groupe**, puis cliquez sur **Exécuter le rapport**. Il n'y a pas de filtre de dates — le rapport couvre chaque semaine comportant un nombre de participants.
 
-Le rapport affiche vos décomptes enregistrés sommés par semaine, à la fois sous forme de graphique linéaire et de tableau - le même style de rapport utilisé par les [onglets Tendance de l'assistance et Assistance des groupes](tracking-attendance.md). Les décomptes saisis pour la semaine en cours apparaissent aussi sous **Décomptes cette semaine** sur la page principale Assistance.
+Le rapport affiche les nombres de participants que vous avez enregistrés, additionnés par semaine, sous forme de graphique linéaire et de tableau — dans le même style que les onglets [Tendance des présences et Présences par groupe](tracking-attendance.md). Les nombres de participants saisis pour la semaine en cours apparaissent aussi sous **Nombres de participants cette semaine** sur la page principale des Présences.
 
-## Pages connexes
+## Pages connexes {#related-pages}
 
-- [Enregistrer l'assistance](recording-attendance.md) -- assistance de session nommée, par personne
-- [Suivi de l'assistance](tracking-attendance.md) -- rapports de tendance de l'assistance et des groupes
-- [Configuration de l'assistance](setup.md) -- configurer les campus, services et heures de service
+- [Enregistrement des présences](recording-attendance.md) — présences nominatives par séance, personne par personne
+- [Suivi des présences](tracking-attendance.md) — rapports de présences et de tendance par groupe
+- [Configuration des présences](setup.md) — configurer les campus, les services et les horaires de service

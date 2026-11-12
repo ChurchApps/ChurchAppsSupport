@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## 服务时间
+## 服务时间 {#service-times}
 
 基础路径：`/attendance/servicetimes`
 

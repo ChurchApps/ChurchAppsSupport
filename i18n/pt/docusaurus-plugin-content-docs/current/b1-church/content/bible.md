@@ -1,52 +1,55 @@
 ---
 title: "Lendo a Bíblia no B1.church"
 sidebar_label: "Bíblia"
-description: "Leia as Escrituras no leitor de Bíblia do B1.church, com controles de livro, capítulo e tradução e uma página da Bíblia para leitura diária."
+description: "Leia as Escrituras no leitor de Bíblia do B1.church, com controles de livro, capítulo e tradução e uma página da Bíblia para a leitura diária."
 ---
 
 # Bíblia
 
 <div class="article-intro">
 
-B1.church inclui um leitor de Bíblia integrado para que você possa ler a Escritura sem sair do site. O leitor é incorporado diretamente na página, dando a você acesso rápido a qualquer passagem ao lado de suas outras ferramentas de igreja.
+O B1.church inclui um leitor de Bíblia integrado para que você possa ler as Escrituras sem sair do site. O leitor fica incorporado diretamente na página, dando acesso rápido a qualquer passagem ao lado das suas outras ferramentas da igreja.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Nenhum login é necessário para usar o leitor de Bíblia. A página Bíblia é acessível publicamente.
-- Sua igreja deve ter adicionado uma página de Bíblia à sua navegação do site.
+- Não é necessário login para usar o leitor de Bíblia. A página da Bíblia é de acesso público.
+- Sua igreja precisa ter adicionado uma página da Bíblia à navegação do site.
 
 </div>
 
-## Lendo a Bíblia
+## Lendo a Bíblia {#reading-the-bible}
 
-1. Navegue até a página **Bíblia** a partir da navegação do site de sua igreja.
-2. O leitor abre para Gênesis 1:1 por padrão.
-3. Use os controles de navegação no leitor para se mover para um livro, capítulo ou versículo diferente.
+1. Acesse a página **Bíblia** pela navegação do site da sua igreja.
+2. O leitor abre em Gênesis 1 por padrão.
+3. Use os controles de navegação dentro do leitor para ir a outro livro, capítulo ou versículo.
 
-O leitor de Bíblia é fornecido por **YouVersion** e lhe dá acesso a uma ampla seleção de traduções de Bíblia em muitos idiomas.
+O leitor de Bíblia é alimentado pelo **YouVersion** e oferece acesso a uma ampla seleção de traduções da Bíblia em muitos idiomas.
 
-## Navegando Passagens
+## Navegando pelas passagens {#navigating-passages}
 
-O leitor incorporado fornece controles para se mover através da Escritura. Você pode:
+O leitor incorporado oferece controles para percorrer as Escrituras. Você pode:
 
-- Navegar para um livro específico da Bíblia
-- Pular para um capítulo específico
-- Deslizar pela Escritura dentro de um capítulo
-- Mudar para uma tradução diferente da Bíblia usando o seletor de versão
+- Navegar até um livro específico da Bíblia
+- Ir direto a um capítulo específico
+- Rolar pelos versículos de um capítulo
+- Trocar para outra tradução da Bíblia usando o seletor de versão
+- No site da sua igreja, usar os botões **Capítulo Anterior** e **Próximo Capítulo** acima do texto para avançar pelo livro
 
-O leitor preenche a área de conteúdo da página, dando a você bastante espaço para ler confortavelmente.
-
-:::tip
-Seu livro, capítulo e tradução selecionados são lembrados para que o leitor reabra onde você parou.
-:::
+O leitor ocupa a área de conteúdo da página, oferecendo bastante espaço para uma leitura confortável.
 
 :::tip
-Você pode adicionar a página de Bíblia aos favoritos em seu navegador para retornar rapidamente para sua leitura diária. Combine com o [Versículo do Dia](./verse-of-the-day.md) para inspiração bíblica diária.
+No portal de membros (`/mobile/bible`), o livro, o capítulo e a tradução selecionados ficam salvos naquele dispositivo, então o leitor reabre de onde você parou. O leitor do site sempre começa em Gênesis 1.
 :::
 
-## Disponibilidade
+Se o leitor não conseguir carregar, a página informa isso e oferece um botão para ler no Bible.com (o portal de membros também oferece o Biblia.com).
 
-A página de Bíblia é um recurso de conteúdo integrado do B1.church. Se você não vir um link **Bíblia** na navegação de sua igreja, seu administrador da igreja pode não tê-lo adicionado ao menu do site. Entre em contato com seu administrador da igreja para solicitá-lo.
+:::tip
+Você pode adicionar a página da Bíblia aos favoritos do seu navegador para voltar a ela rapidamente na sua leitura diária. Combine-a com o [Versículo do Dia](./verse-of-the-day.md) para uma inspiração diária das Escrituras.
+:::
+
+## Disponibilidade {#availability}
+
+A página da Bíblia é um recurso de conteúdo integrado ao B1.church. Se você não vir um link **Bíblia** na navegação da sua igreja, o administrador da igreja pode não ter adicionado a página ao menu do site. Entre em contato com o administrador da sua igreja para solicitá-la.

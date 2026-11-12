@@ -1,97 +1,98 @@
 ---
 title: "VOMO"
-description: "Ikonekta ang VOMO volunteer signup at kiosk check-in sa mga tao at grupo ng B1 Admin gamit ang Zapier, kasama ang API key scope at mga hakbang sa setup."
+description: "Ikonekta ang mga sign-up ng volunteer at kiosk check-in ng VOMO sa mga tao at grupo ng B1 Admin gamit ang Zapier, kasama ang mga API key scope at mga hakbang sa setup."
 ---
 
 # VOMO
 
 <div class="article-intro">
 
-Ang VOMO ay isang volunteer engagement platform — ang mga tao ay nag-sign up para sa mga proyekto, nag-check in sa kiosk, at nagsasaipon ng mga oras. Kung gumagamit ka ng VOMO para sa volunteer scheduling ngunit B1 para sa mga people records, ang Zapier ay maaaring mag-sync ng membership at check-ins sa pagitan ng mga ito upang walang drift ang alinman.
+Ang VOMO ay isang platform sa pakikilahok ng volunteer — nagsa-sign up ang mga tao para sa mga proyekto, nagche-check in sa kiosk, at nagiipon ng oras. Kung gumagamit ka ng VOMO para sa iskedyul ng volunteer pero ang B1 ang para sa mga record ng tao, maaaring i-sync ng Zapier ang membership at check-in sa pagitan nila para hindi maglayo ang alinmang panig.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Isang [VOMO](https://vomo.org) account sa isang plan na nag-expose ng Zapier (makipag-ugnayan sa VOMO support kung hindi ka sigurado)
+- Isang [VOMO](https://vomo.org) account sa plan na nagbubukas ng Zapier (magtanong sa suporta ng VOMO kung hindi ka sigurado)
 - Isang [Zapier](https://zapier.com) account
-- Isang B1Admin user na may **Edit Settings** permission
+- Isang B1Admin user na may pahintulot na **Edit Settings**
 
 </div>
 
-## Ano ang Maaari Mong I-wire Up
+## Ano ang Puwede Mong Ikabit {#what-you-can-wire-up}
 
-Ang Zapier app ng VOMO ay nag-expose ng apat na instant triggers at apat na actions. Ang mga recipe na karamihan ng mga churches ay gusto:
+Naglalantad ang Zapier app ng VOMO ng apat na instant trigger at apat na aksyon. Ang mga recipe na gustong-gusto ng karamihan sa mga simbahan:
 
-| Direction | Trigger | Action |
+| Direksyon | Trigger | Aksyon |
 |---|---|---|
-| VOMO → B1 | VOMO Membership (created) | B1: Find Person → Create Person (kung bago) |
-| VOMO → B1 | VOMO Kiosk check-in | B1: Add Group Member sa "Currently Serving" group, o mag-record bilang attendance |
-| B1 → VOMO | B1 `person.created` | VOMO: Find Organizer (ayon sa email); kung hindi, custom step |
-| Either | VOMO Participation (signups) | B1: Add Group Member sa project-specific group |
+| VOMO → B1 | VOMO Membership (nalikha) | B1: Find Person → Create Person (kung bago) |
+| VOMO → B1 | VOMO Kiosk check-in | B1: Add Group Member sa grupong "Currently Serving", o itala bilang attendance |
+| B1 → VOMO | B1 `person.created` | VOMO: Find Organizer (ayon sa email); kung wala, custom na hakbang |
+| Alinman | VOMO Participation (mga sign-up) | B1: Add Group Member sa grupong partikular sa proyekto |
 
-Ang VOMO actions ay limitado sa **pagdadraft ng mga proyekto** at **paghahanap** ng existing organizers/projects — walang "add this person to a VOMO project" action ngayon. Ang interesting wiring ay karamihan VOMO → B1.
+Limitado ang mga aksyon ng VOMO sa **pag-draft ng mga proyekto** at **paghahanap** ng mga umiiral na organizer/proyekto — walang aksyong "idagdag ang taong ito sa isang proyekto ng VOMO" sa ngayon. Ang mas kawili-wiling pagkakabit ay karamihan mula VOMO → B1.
 
-## Setup
+## Setup {#setup}
 
-### 1. Mag-mint ng isang B1 API key
+### 1. Gumawa ng B1 API key {#1-mint-a-b1-api-key}
 
-**Settings → Developer → API Keys → New API Key**. Mga scopes:
+**Settings → Developer → API Keys → New API Key**. Mga scope:
 
-- `people:read`, `people:write` — upang hanapin at lumikha ng mga volunteers bilang B1 people
-- `groups:write` — upang magdagdag sa kanila sa serving-team groups
-- (Optional) `attendance:write` kung i-treat ang kiosk check-ins bilang attendance
+- `settings:write` — sinusuri ng Zapier ang bawat B1 key laban sa listahan ng webhook ng B1 kapag ikinonekta mo ito, kaya papalya ang koneksyon kung wala ito
+- `people:read`, `people:write` — para hanapin at gawin ang mga volunteer bilang mga tao sa B1
+- `groups:write` — para idagdag sila sa mga grupo ng serving team
+- (Opsyonal) `attendance:write` kung ituturing mong attendance ang mga check-in sa kiosk
 
-### 2. Bumuo ng membership-sync Zap
+### 2. Buuin ang Zap ng pag-sync ng membership {#2-build-the-membership-sync-zap}
 
 1. **Trigger** — VOMO: Membership (event = `created`).
-2. **Action** — B1.church: Find Person, matched sa email.
-3. **Filter / Path** — i-fork sa found vs. not found:
-   - Not found → B1.church: Create Person, pagkatapos Add Group Member sa appropriate volunteer group.
-   - Found → B1.church: Add Group Member direkta.
-4. I-on. Ang mga bagong VOMO volunteers ay lumalabas na sa B1 na may tamang group membership.
+2. **Aksyon** — B1.church: Find Person, itugma ayon sa email.
+3. **Aksyon** — B1.church: Add Group Member, idagdag ang tao mula sa hakbang 2 sa angkop na grupo ng volunteer.
 
-### 3. (Optional) Bumuo ng kiosk-check-in Zap
+   Hihinto ang *Find Person* ng B1 sa Zap na may error na "No person found" kapag walang tumutugma. Para sa mga volunteer na wala pa sa B1, i-on ang error handling ng Zapier para sa Find Person step at patakbuhin ang B1.church: Create Person, pagkatapos ay Add Group Member, sa error path nito.
+4. I-on. Ang mga bagong volunteer ng VOMO ay lalabas na ngayon sa B1 na may tamang membership sa grupo.
+
+### 3. (Opsyonal) Buuin ang Zap ng check-in sa kiosk {#3-optional-build-the-kiosk-check-in-zap}
 
 1. **Trigger** — VOMO: Kiosk
-2. **Action** — B1.church: Find Person (ayon sa email)
-3. **Action** — iyong pagpipilian:
-   - *Kung i-treat bilang attendance* — Webhooks by Zapier POST sa B1's `/attendance/visits` endpoint (ang B1's Zapier app ay wala pang first-class *Record Attendance* action). Ang B1 [API key](/docs/developer/api/api-keys) ay napupunta sa `Authorization: Bearer cak_…` header.
-   - *Kung i-treat bilang group membership* — B1.church: Add Group Member na may "Currently Serving (Today)" group, at isang pangalawang Zap mamaya sa araw ay nag-aalis sa kanila sa pamamagitan ng scheduled cleanup.
+2. **Aksyon** — B1.church: Find Person (ayon sa email)
+3. **Aksyon** — ang pipiliin mo:
+   - *Kung ituturing na attendance* — Webhooks by Zapier POST sa endpoint na `/attendance/visits` ng B1 (wala pang first-class na *Record Attendance* action ang Zapier app ng B1). Ang B1 [API key](/docs/developer/api/api-keys) ay nasa header na `Authorization: Bearer cak_…`.
+   - *Kung ituturing na membership sa grupo* — B1.church: Add Group Member sa grupong "Currently Serving (Today)", at ang ikalawang Zap na mamaya sa araw ay magtatanggal sa kanila sa pamamagitan ng nakaiskedyul na cleanup.
 
-## Mga Karaniwang Recipes
+## Karaniwang Recipe {#common-recipes}
 
-### Per-project group sync
+### Pag-sync ng grupo bawat proyekto {#per-project-group-sync}
 
-- **Trigger** — VOMO: Participation (created)
-- **Action** — Filter by Zapier sa project id, pagkatapos
-- **Action** — B1.church: Add Group Member sa B1 group na ang pangalan ay sumasalamin sa VOMO project.
+- **Trigger** — VOMO: Participation (nalikha)
+- **Aksyon** — Filter by Zapier sa project id, pagkatapos ay
+- **Aksyon** — B1.church: Add Group Member sa grupo ng B1 na ang pangalan ay tumutugma sa proyekto ng VOMO.
 
-Kapag ang VOMO project ay nagtapos, manu-manong burahin ang B1 group (o i-pair ito sa *Participation deleted* trigger na nag-aalis sa kanila).
+Kapag natapos ang proyekto ng VOMO, manwal na linisin ang grupo sa B1 (o ipares ito sa trigger na *Participation deleted* na nag-aalis sa kanila).
 
-### Magpadala ng "thanks for signing up" text sa SMS
+### Magpadala ng text na "salamat sa pag-sign up" sa pamamagitan ng SMS {#send-a-thanks-for-signing-up-text-via-sms}
 
-Chain VOMO Participation → Clearstream Send Text o Text In Church Send Message sa parehong Zap. Pareho ay may first-class Zapier actions — tingnan ang [Clearstream](./clearstream.md) at [Text In Church](./text-in-church.md).
+I-chain ang VOMO Participation → Clearstream Send Text o Text In Church Send Message sa iisang Zap. Parehong may first-class na aksyon sa Zapier — tingnan ang [Clearstream](./clearstream.md) at [Text In Church](./text-in-church.md).
 
-### Detect drop-off
+### Tuklasin ang pag-alis {#detect-drop-off}
 
-Magpatakbo ng daily Zapier *Schedule* trigger na tumatawag sa Find Organizer sa VOMO para sa listahan ng B1 people na sumali sa serving team ngayong buwan — kung ang VOMO ay nagbabalik ng "not found", sila ay hindi nag-activate ng VOMO at kailangan ng nudge.
+Magpatakbo ng araw-araw na *Schedule* trigger ng Zapier na tumatawag sa Find Organizer sa VOMO para sa listahan ng mga tao sa B1 na sumali sa serving team ngayong buwan — kung ibinalik ng VOMO ang "not found", hindi sila nag-activate ng VOMO at kailangang paalalahanan.
 
-## Mga Limitasyon at Mga Tala
+## Mga Limitasyon at Paalala {#limits--notes}
 
-- **Ang email ay ang join key.** Ang VOMO's payloads ay nag-expose ng user email ngunit walang B1 person id. Ang mga donor na gumagamit ng iba't ibang emails sa bawat sistema ay maglikha ng duplicates.
-- **Walang "Add to Project" action sa VOMO's Zapier app ngayon.** Kung kailangan mo ng B1 → VOMO project enrollment, POST mo sa VOMO's REST API mula sa *Webhooks by Zapier* step, na isa custom integration.
-- **Ang VOMO's free / lower tiers ay maaaring hindi kasama ang Zapier.** Kumpirmahin sa VOMO support bago magpromisa ng wiring date.
+- **Email ang susi ng pagdurugtong.** Ang mga payload ng VOMO ay naglalantad ng email ng user pero walang person id ng B1. Ang mga donor na gumagamit ng magkaibang email sa bawat sistema ay gagawa ng duplicate.
+- **Walang aksyong "Add to Project" sa Zapier app ng VOMO sa ngayon.** Kung kailangan mo ng pagpapatala ng B1 → proyekto ng VOMO, mag-POST ka sa REST API ng VOMO mula sa isang hakbang na *Webhooks by Zapier*, na custom integration.
+- **Maaaring walang Zapier ang libre o mas mababang tier ng VOMO.** Kumpirmahin sa suporta ng VOMO bago mangako ng petsa ng pagkakabit.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-- **Trigger ay hindi kailanman nag-fire** — Ang VOMO's instant triggers ay nangangailangan ng API token upang manatiling valid. Muling subukan ang Zap; muling kumonekta sa VOMO kung ang token ay ino-rotate.
-- **B1 *Add Group Member* ay nabigo na may 422** — ang group id sa action ay hindi umiiral. Buksan ang **B1Admin → Groups**, mag-click ng group, at kopyahin ang URL's id segment sa Zap step.
-- **Duplicate B1 people mula sa isang solong VOMO volunteer** — malamang na nag-sign up sila sa ilalim ng ibang email kaysa sa kanilang mayroon na sa B1. Alinman i-standardize ang mga email, o magdagdag ng Zapier *Path* na nagsasaliksik din ayon sa phone bago lumikha.
+- **Hindi nag-fire ang trigger** — kailangang manatiling valid ang API token ng trigger ng VOMO. Subukan muli ang Zap; ikonekta muli ang VOMO kung napalitan ang token.
+- **Pumapalya ang *Add Group Member* ng B1** — wala na ang grupo sa aksyon. Piliin muli ang grupo mula sa dropdown na **Group** ng step, o buksan ang grupo sa B1Admin (**People > Groups**) at kopyahin ang id mula sa dulo ng web address nito.
+- **Mga duplicate na tao sa B1 mula sa iisang volunteer ng VOMO** — malamang na nag-sign up sila gamit ang ibang email kaysa sa mayroon na sila sa B1. Alinman sa i-standardize ang mga email, o magdagdag ng Zapier *Path* na naghahanap din ayon sa telepono bago gumawa.
 
-## Makita Din
+## Tingnan Din {#see-also}
 
-- [Zapier (overview)](../zapier.md) — B1 side ng bawat Zapier recipe
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — i-pair ang volunteer signups na may SMS confirmations
-- [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang events na maaari nang mag-trigger ng VOMO
+- [Zapier (pangkalahatang-tanaw)](../zapier.md) — panig ng B1 ng bawat recipe sa Zapier
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — ipares ang mga sign-up ng volunteer sa mga kumpirmasyon ng SMS
+- [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang mga event na maaaring i-trigger ng VOMO

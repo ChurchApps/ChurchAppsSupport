@@ -1,43 +1,48 @@
 ---
-title: "Navegando no Blog do B1.church e nos Feeds RSS"
+title: "Navegando pelo Blog e pelos Feeds RSS do B1.church"
 sidebar_label: "Blog"
-description: "Navegue e filtre o blog da sua igreja no B1.church por categoria ou tag, veja posts antigos ou acompanhe novos pelos feeds RSS."
+description: "Navegue e filtre o blog do B1.church da sua igreja por categoria ou tag, percorra publicações antigas ou acompanhe as novas por meio de feeds RSS."
 ---
 
 # Blog
 
 <div class="article-intro">
 
-A página do Blog compartilha notícias, atualizações e devocionais da sua igreja. As publicações são organizadas por categoria e tag, para que você possa navegar pelos temas que mais lhe interessam.
+A página Blog compartilha notícias, atualizações e devocionais da sua igreja. As publicações são organizadas por categoria e tag, para que você possa navegar pelos temas que mais importam para você.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Não é necessário fazer login para ler as publicações do blog. A página do Blog é de acesso público.
-- Sua igreja precisa ter publicado pelo menos uma postagem para que a página do Blog apareça.
+- Não é necessário login para ler as publicações do blog. A página do Blog é de acesso público.
+- Sua igreja precisa ter publicado pelo menos uma publicação. Até lá, a página do Blog mostra "Nenhuma publicação ainda".
 
 </div>
 
-## Navegando pelas Publicações
+## Navegando pelas publicações {#browsing-posts}
 
-1. Acesse a página **Blog** pelo menu de navegação do site da sua igreja.
-2. As publicações são listadas da mais recente para a mais antiga, 10 por página. Use os links **Anteriores**/**Próximas** na parte inferior para percorrer o arquivo.
-3. Clique em uma publicação para lê-la por completo.
+1. Acesse a página **Blog** pela navegação do site da sua igreja.
+2. As publicações são listadas das mais recentes para as mais antigas, 10 por página. Cada uma mostra sua foto, categoria, título, autor, data e um breve resumo. Use os links **Publicações mais antigas** e **Publicações mais recentes** na parte inferior para percorrer o arquivo.
+3. Clique no título ou na foto de uma publicação para lê-la por completo.
 
-## Filtrando por Categoria ou Tag
+## Filtrando por categoria ou tag {#filtering-by-category-or-tag}
 
-Clique em um marcador de **categoria** ou **tag** em qualquer publicação, ou na lista do blog, para filtrar a listagem e exibir apenas as publicações correspondentes. Isso facilita acompanhar um tema ou série específica.
+Para restringir a listagem a um tema:
 
-## Publicações Relacionadas
+- **Categoria** -- clique em um chip de categoria acima da lista de publicações, no rótulo da categoria em uma publicação da lista ou na categoria acima do título de uma publicação. Clique novamente no chip destacado para mostrar todas as publicações.
+- **Tag** -- clique em um chip de tag na parte inferior de uma publicação.
 
-No final de cada publicação, você encontrará a seção **Publicações Relacionadas**, com outras postagens da mesma categoria.
+A listagem filtrada tem como cabeçalho o nome da categoria ou tag. Clique em **Todas as publicações** abaixo do cabeçalho para limpar o filtro.
 
-## Assinando pelo RSS
+## Publicações relacionadas {#related-posts}
 
-Todo blog da igreja publica um feed RSS que leitores de feeds e ferramentas de automação podem assinar. Assim, você é avisado automaticamente quando uma nova publicação é lançada, sem precisar verificar manualmente.
+No final de uma publicação que tem categoria, a seção **Mais em** *categoria* sugere até três outras publicações da mesma categoria.
 
-## Disponibilidade
+## Assinando por RSS {#subscribing-via-rss}
 
-A página do Blog fica disponível quando sua igreja publica pelo menos uma postagem. Se você não vir um link **Blog** no menu de navegação da sua igreja, talvez ela ainda não tenha configurado isso. Entre em contato com o administrador da sua igreja para mais informações.
+Todo blog de igreja publica um feed RSS que leitores de feed e ferramentas de automação podem assinar, para que você seja avisado automaticamente quando uma nova publicação for lançada, em vez de verificar manualmente. Para assinar, cole o endereço do blog da sua igreja (por exemplo, `https://yourchurch.b1.church/blog`) no seu leitor de feeds; a página informa ao leitor onde está o feed.
+
+## Disponibilidade {#availability}
+
+A página do Blog fica em `/blog` no site da sua igreja. Se você não vir um link **Blog** na navegação da sua igreja, ela pode ainda não ter isso configurado. Entre em contato com o administrador da sua igreja para mais informações.

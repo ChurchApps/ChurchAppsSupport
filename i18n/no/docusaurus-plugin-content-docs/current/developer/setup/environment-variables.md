@@ -167,7 +167,7 @@ Eksempelfil: `dotenv.sample.txt`
 
 ## Miljøvariabler for mobilapper
 
-### B1Checkin (React Native / Expo)
+### B1Checkin (React Native / Expo) {#b1checkin-react-native--expo}
 
 Eksempelfil: `dotenv.sample.txt`
 

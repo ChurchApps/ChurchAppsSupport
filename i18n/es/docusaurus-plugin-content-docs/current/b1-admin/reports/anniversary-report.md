@@ -1,46 +1,46 @@
 ---
-title: "Lista de Aniversarios"
-description: "Obtén una lista de todas las personas que cumplen aniversario de boda en un mes elegido en B1 Admin, con las fechas visibles en los resultados y exportable a una hoja de cálculo para boletines o tarjetas."
+title: "Lista de aniversarios"
+description: "Obtenga una lista de todas las personas con aniversario de boda en un mes elegido en B1 Admin, con las fechas en los resultados y exportable a una hoja de cálculo para boletines o tarjetas."
 ---
 
-# Lista de Aniversarios
+# Lista de aniversarios
 
 <div class="article-intro">
 
-¿Necesitas una lista de todos con aniversario de bodas en un mes determinado -- para el boletín, tarjetas o anuncios? La búsqueda People te permite filtrar por **Anniversary Month** y mostrar las fechas directamente en los resultados.
+¿Necesita una lista de todas las personas con aniversario de boda en un mes determinado, para el boletín, las tarjetas o los anuncios? La búsqueda de People le permite filtrar por **Anniversary Month** y mostrar las fechas directamente en los resultados.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Asegúrate de que las fechas de aniversario se ingresan en el perfil de cada persona. Consulta [Agregar Personas](../people/adding-people.md) para obtener detalles.
-- Necesitas permiso para ver People. Consulta [Roles y Permisos](../settings/roles-permissions.md).
+- Asegúrese de que las fechas de aniversario estén registradas en el perfil de cada persona. Consulte [Cómo agregar personas](../people/adding-people.md) para más detalles.
+- Necesita permiso para ver People. Consulte [Roles y permisos](../settings/roles-permissions.md).
 
 </div>
 
-## Obtener una Lista de Aniversarios para un Mes
+## Cómo obtener una lista de aniversarios de un mes {#getting-an-anniversary-list-for-a-month}
 
-1. Abre el [Menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda de B1 Admin), expande **People** y haz clic en **People**.
-2. Bajo la caja de búsqueda, haz clic en **Advanced**.
-3. Expande la sección **Demographics** y marca **Anniversary Month**, luego elige el mes.
-4. Ejecuta la búsqueda -- todos los que tengan un aniversario ese mes aparecerán en los resultados.
-5. Para ver las fechas, cambia **View as** a **Table**, luego haz clic en el icono **Select columns** en el encabezado de la página y activa la columna **Anniversary**. Usa **Export** para descargar la lista como una hoja de cálculo si prefieres ordenarla o imprimirla.
+1. Abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expanda **People** y haga clic en **People**.
+2. Debajo del cuadro de búsqueda, haga clic en **Advanced**.
+3. Expanda la sección **Demographics**, marque **Anniversary Month** y luego elija el mes.
+4. Los resultados se actualizan en cuanto marca el filtro: aparecen todas las personas con aniversario ese mes.
+5. Para ver las fechas, cambie **View as** a **Table**, luego haga clic en el icono **Select columns** del encabezado de la página y active la columna **Anniversary**. Use **Export** para descargar la lista como hoja de cálculo si prefiere ordenarla o imprimirla.
 
-## Usos Prácticos
+## Usos prácticos {#practical-uses}
 
-- **Boletines semanales** -- Ejecuta la lista del mes actual e incluye aniversarios en tu boletín o anuncios.
-- **Tarjetas de aniversario** -- Exporta la lista del mes y entrégala a tu equipo de escritura de tarjetas.
-- **Celebraciones de hitos** -- Combina con el filtro **Years Married** para encontrar aniversarios de hitos.
+- **Boletines semanales**: genere la lista del mes en curso e incluya los aniversarios en su boletín o anuncios.
+- **Tarjetas de aniversario**: exporte la lista del mes y entréguela a su equipo que escribe las tarjetas.
+- **Celebración de hitos**: combínela con el filtro **Years Married** para encontrar aniversarios especiales.
 
 :::tip
-Ejecuta esto a principios de cada mes para que tengas tiempo de preparar tarjetas o anuncios antes de que lleguen los aniversarios.
+Genere esta lista al inicio de cada mes para tener tiempo de preparar las tarjetas o los anuncios antes de que lleguen los aniversarios.
 :::
 
 :::info
-Los datos de aniversario provienen del campo de aniversario en el perfil de cada persona. Si falta alguien, su perfil solo necesita que se agregue la fecha. Consulta [Agregar Personas](../people/adding-people.md).
+Los datos de aniversario provienen del campo de aniversario del perfil de cada persona. Si falta alguien, solo hay que agregar la fecha en su perfil. Consulte [Cómo agregar personas](../people/adding-people.md).
 :::
 
-## Ver También
+## Vea también {#also-see}
 
-¿Buscas cumpleaños al mismo tiempo? Consulta [Birthday & Anniversary Lists](./birthday-report.md) para obtener ambos en una búsqueda.
+¿También busca cumpleaños al mismo tiempo? Consulte [Listas de cumpleaños y aniversarios](./birthday-report.md) para obtener ambas en una sola búsqueda.

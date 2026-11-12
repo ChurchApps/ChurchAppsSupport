@@ -1,97 +1,98 @@
 ---
 title: "VOMO"
-description: "通过 Zapier 将 VOMO 志愿者报名和自助终端签到连接到 B1 Admin 的人员和小组，包括 API 密钥权限范围和设置步骤。"
+description: "通过 Zapier 将 VOMO 的志愿者报名与自助报到连接到 B1 Admin 的人员与小组，包括 API 密钥权限范围与设置步骤。"
 ---
 
 # VOMO
 
 <div class="article-intro">
 
-VOMO 是一个志愿者参与平台 — 人员注册项目，在亭中办理登记，并累积小时。如果您为志愿者计划使用 VOMO 但 B1 用于人员记录，Zapier 可以在两者之间同步成员身份和办理登记，以便都不会漂移。
+VOMO 是一个志愿者参与平台——人们在这里报名项目、在报到机上签到，并累积服务时数。如果你使用 VOMO 安排志愿服务，而使用 B1 管理人员资料，Zapier 可以在两者之间同步成员资格与报到记录，让双方的数据不会产生差异。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 一个在公开 Zapier 的计划上的 [VOMO](https://vomo.org) 账户（如果不确定，与 VOMO 支持检查）
+- 一个方案支持 Zapier 的 [VOMO](https://vomo.org) 账户（如果不确定，请咨询 VOMO 支持）
 - 一个 [Zapier](https://zapier.com) 账户
-- 一个具有 **编辑设置** 权限的 B1Admin 用户
+- 一位在 B1Admin 中具有 **Edit Settings** 权限的用户
 
 </div>
 
-## 您可以连接什么
+## 你可以设置的内容 {#what-you-can-wire-up}
 
-VOMO 的 Zapier 应用公开四个即时触发器和四个操作。大多数教会想要的方案：
+VOMO 的 Zapier 应用程序提供四个即时触发器和四个操作。大多数教会想要的范例如下：
 
 | 方向 | 触发器 | 操作 |
 |---|---|---|
-| VOMO → B1 | VOMO 成员身份（创建） | B1：查找人员 → 创建人员（如果新） |
-| VOMO → B1 | VOMO 亭办理登记 | B1：向"当前服务"小组添加小组成员，或记录为出席 |
-| B1 → VOMO | B1 `person.created` | VOMO：查找组织者（按电子邮件）；否则自定义步骤 |
-| 要么 | VOMO 参与（注册） | B1：向特定项目小组添加小组成员 |
+| VOMO → B1 | VOMO Membership（已建立） | B1：Find Person → Create Person（若为新人员） |
+| VOMO → B1 | VOMO Kiosk check-in | B1：Add Group Member 加入"Currently Serving"小组，或记录为出席 |
+| B1 → VOMO | B1 `person.created` | VOMO：Find Organizer（依电子邮件）；否则使用自定义步骤 |
+| 两者皆可 | VOMO Participation（报名） | B1：Add Group Member 加入项目专属小组 |
 
-VOMO 操作仅限于 **起草项目** 和 **查找** 现有组织者/项目 — 今天没有"将此人员添加到 VOMO 项目"操作。有趣的连接主要是 VOMO → B1。
+VOMO 的操作目前仅限于**草拟项目**以及**查找**现有的组织者／项目——目前没有"将此人员加入 VOMO 项目"的操作。最有价值的设置主要是 VOMO → B1。
 
-## 设置
+## 设置 {#setup}
 
-### 1. 生成一个 B1 API 密钥
+### 1. 建立 B1 API 密钥 {#1-mint-a-b1-api-key}
 
-**设置 → 开发者 → API 密钥 → 新建 API 密钥**。Scopes：
+**Settings → Developer → API Keys → New API Key**。权限范围：
 
-- `people:read`、`people:write` — 查找和创建志愿者作为 B1 人员
-- `groups:write` — 将他们添加到服务团队小组
-- （可选）`attendance:write` 如果您将亭办理登记视为出席
+- `settings:write`——Zapier 在连接时会将每个 B1 密钥与 B1 的 webhook 清单进行核对，因此没有此权限连接会失败
+- `people:read`、`people:write`——用于将志愿者作为 B1 人员进行查找与建立
+- `groups:write`——用于将他们加入服事团队小组
+- （选填）`attendance:write`——如果你将报到机签到视为出席
 
-### 2. 构建成员身份同步 Zap
+### 2. 建立成员同步的 Zap {#2-build-the-membership-sync-zap}
 
-1. **触发器** — VOMO：成员身份（事件 = `created`）。
-2. **操作** — B1.church：查找人员，按电子邮件匹配。
-3. **过滤/路径** — 在找到与未找到上分岔：
-   - 未找到 → B1.church：创建人员，然后向适当的志愿者小组添加小组成员。
-   - 找到 → B1.church：直接添加小组成员。
-4. 打开。新 VOMO 志愿者现在以正确的小组成员身份出现在 B1 中。
+1. **触发器**——VOMO：Membership（event = `created`）。
+2. **操作**——B1.church：Find Person，依电子邮件匹配。
+3. **操作**——B1.church：Add Group Member，将第 2 步的人员加入适当的志愿者小组。
 
-### 3. （可选）构建亭办理登记 Zap
+   当没有人符合条件时，B1 的 *Find Person* 会以"No person found"错误停止 Zap。对于尚未存在于 B1 中的志愿者，请为 Find Person 步骤开启 Zapier 的错误处理，并在其错误路径中执行 B1.church：Create Person，然后执行 Add Group Member。
+4. 开启。新的 VOMO 志愿者现在会以正确的小组成员资格出现在 B1 中。
 
-1. **触发器** — VOMO：亭
-2. **操作** — B1.church：查找人员（按电子邮件）
-3. **操作** — 您的选择：
-   - *如果视为出席* — Webhooks by Zapier POST 到 B1 的 `/attendance/visits` 端点（B1 的 Zapier 应用还没有一流的 *记录出席* 操作）。B1 [API 密钥](/docs/developer/api/api-keys) 进入 `Authorization: Bearer cak_…` 标头。
-   - *如果视为小组成员身份* — B1.church：添加小组成员，带"当前服务（今天）"小组，以及稍后一天的第二个 Zap 进行清理删除。
+### 3.（选填）建立报到机签到的 Zap {#3-optional-build-the-kiosk-check-in-zap}
 
-## 常见方案
+1. **触发器**——VOMO：Kiosk
+2. **操作**——B1.church：Find Person（依电子邮件）
+3. **操作**——依你的选择：
+   - *若视为出席*——以 Webhooks by Zapier 对 B1 的 `/attendance/visits` 端点发送 POST（B1 的 Zapier 应用程序目前还没有一流的 *Record Attendance* 操作）。B1 [API 密钥](/docs/developer/api/api-keys)放在 `Authorization: Bearer cak_…` 标头中。
+   - *若视为小组成员资格*——B1.church：Add Group Member，加入"Currently Serving (Today)"小组，并在当天稍后以另一个 Zap 透过排定的清理作业将其移除。
 
-### 每项目小组同步
+## 常见范例 {#common-recipes}
 
-- **触发器** — VOMO：参与（创建）
-- **操作** — Zapier 对项目 id 过滤，然后
-- **操作** — B1.church：向小组添加小组成员，其名称镜像 VOMO 项目。
+### 依项目同步小组 {#per-project-group-sync}
 
-当 VOMO 项目结束时，手动清除 B1 小组（或将其与 *参与已删除* 触发器配对，将其删除）。
+- **触发器**——VOMO：Participation（已建立）
+- **操作**——依项目 ID 进行 Filter by Zapier，然后
+- **操作**——B1.church：Add Group Member，加入名称与 VOMO 项目相同的 B1 小组。
 
-### 通过短信发送"感谢注册"文本
+当 VOMO 项目结束时，请手动清空该 B1 小组（或搭配 *Participation deleted* 触发器，将其移除）。
 
-在同一 Zap 中链接 VOMO 参与 → Clearstream 发送文本或 Text In Church 发送消息。两者都有一流的 Zapier 操作 — 查看 [Clearstream](./clearstream.md) 和 [Text In Church](./text-in-church.md)。
+### 透过短信发送"感谢报名"讯息 {#send-a-thanks-for-signing-up-text-via-sms}
 
-### 检测掉队
+在同一个 Zap 中串接 VOMO Participation → Clearstream Send Text 或 Text In Church Send Message。两者都有一流的 Zapier 操作——请参阅 [Clearstream](./clearstream.md) 与 [Text In Church](./text-in-church.md)。
 
-运行每天 Zapier *时间表* 触发器，在 VOMO 中调用查找组织者用于本月加入服务团队的 B1 人员列表 — 如果 VOMO 返回"未找到"，他们没有激活 VOMO，需要推动。
+### 侦测流失情况 {#detect-drop-off}
 
-## 限制和注释
+每天执行一次 Zapier *Schedule* 触发器，针对本月加入服事团队的 B1 人员清单，在 VOMO 中调用 Find Organizer——如果 VOMO 返回"not found"，表示他们尚未启用 VOMO，需要提醒一下。
 
-- **电子邮件是连接键。** VOMO 的有效负载公开用户电子邮件，但没有 B1 人员 id。在每个系统中使用不同电子邮件的捐赠者将创建重复项。
-- **VOMO 的 Zapier 应用中今天没有"添加到项目"操作。** 如果您需要 B1 → VOMO 项目注册，您需要从 *Webhooks by Zapier* 步骤 POST 到 VOMO 的 REST API，这是自定义集成。
-- **VOMO 的免费/较低层可能不包括 Zapier。** 在承诺连接日期前与 VOMO 支持确认。
+## 限制与注意事项 {#limits--notes}
 
-## 故障排查
+- **电子邮件是配对的关键**。VOMO 的数据会提供用户的电子邮件，但没有 B1 人员 ID。在两个系统中使用不同电子邮件的人，会产生重复记录。
+- **VOMO 的 Zapier 应用程序目前没有"加入项目"操作**。如果你需要从 B1 将人员加入 VOMO 项目，需要透过 *Webhooks by Zapier* 步骤对 VOMO 的 REST API 发送 POST，这属于自定义整合。
+- **VOMO 的免费或较低等级方案可能不包含 Zapier**。在承诺设置日期之前，请先向 VOMO 支持确认。
 
-- **触发器从未触发** — VOMO 的即时触发器需要 API 令牌保持有效。重新测试 Zap；如果令牌被轮换，重新连接 VOMO。
-- **B1 *添加小组成员* 失败，显示 422** — 操作中的小组 id 不存在。打开 **B1Admin → 小组**，点击小组，并将 URL 的 id 段复制到 Zap 步骤。
-- **来自单个 VOMO 志愿者的重复 B1 人员** — 他们可能在与他们已有的 B1 中不同的电子邮件下注册。要么规范电子邮件，要么添加 Zapier *路径*，也按电话搜索，然后创建。
+## 故障排除 {#troubleshooting}
 
-## 另请参阅
+- **触发器从未启动**——VOMO 的即时触发器需要 API 令牌保持有效。请重新测试 Zap；如果令牌已被轮替，请重新连接 VOMO。
+- **B1 的 *Add Group Member* 失败**——该操作中的小组已不存在。请从该步骤的 **Group** 下拉菜单中重新选择小组，或在 B1Admin 中打开该小组（**People > Groups**），并从其网址末端复制 ID。
+- **同一位 VOMO 志愿者产生了重复的 B1 人员**——他们很可能是以不同于 B1 既有资料的电子邮件报名的。请统一电子邮件格式，或加入一个 Zapier *Path*，在建立前同时依电话号码搜索。
 
-- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
-- [Clearstream](./clearstream.md)、[Text In Church](./text-in-church.md) — 配对志愿者注册与短信确认
-- [Webhooks（开发者参考）](/docs/developer/api/webhooks) — VOMO 可以触发的事件
+## 另见 {#see-also}
+
+- [Zapier（概览）](../zapier.md)：每个 Zapier 范例的 B1 端设置
+- [Clearstream](./clearstream.md)、[Text In Church](./text-in-church.md)：将志愿者报名与短信确认搭配使用
+- [Webhook（开发者参考）](/docs/developer/api/webhooks)：VOMO 可触发的事件

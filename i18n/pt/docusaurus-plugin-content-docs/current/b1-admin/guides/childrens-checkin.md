@@ -1,112 +1,117 @@
 ---
-title: "Guia: Configurar o check-in do ministério infantil"
-description: "Configure o check-in infantil no B1 Admin: vincule famílias, crie grupos por idade, defina cultos e imprima crachás para o quiosque B1 Checkin."
+title: "Guia: Configurando o Check-In do Ministério Infantil"
+description: "Configure o check-in infantil no B1 Admin: vincule as famílias, crie grupos por faixa etária, configure os cultos e imprima crachás para o quiosque do B1 Checkin."
 ---
 
-# Configurar o check-in do ministério infantil
+# Configurando o Check-In do Ministério Infantil
 
 <div class="article-intro">
 
-Este guia orienta você em tudo o que é necessário para colocar um sistema de check-in infantil em funcionamento na sua igreja — desde cadastrar as famílias no banco de dados, até configurar grupos adequados a cada faixa etária e imprimir crachás no domingo de manhã. Ao final, os pais poderão fazer o check-in dos filhos em um tablet de quiosque e receber uma etiqueta de segurança correspondente.
+Este guia orienta você por tudo o que é necessário para colocar em funcionamento um sistema de check-in infantil na sua igreja -- desde o cadastro das famílias no banco de dados, passando pela configuração de grupos adequados a cada idade, até a impressão dos crachás no domingo de manhã. Ao final, os pais poderão fazer o check-in dos filhos em um tablet de quiosque e receber uma etiqueta de segurança correspondente.
 
 </div>
 
-## Vídeo de treinamento
+## Vídeo de Treinamento {#training-video}
 
-<YouTube id="Ep9CBUcJwPI" title="Configurando o check-in infantil no B1" next="Registrando e acompanhando a presença no B1" nextUrl="/docs/b1-admin/attendance/recording-attendance" />
+<YouTube id="Ep9CBUcJwPI" title="Configurando o Check-in Infantil no B1" next="Registrando e Acompanhando a Presença no B1" nextUrl="/docs/b1-admin/attendance/recording-attendance" />
 
 <div class="prereqs">
-<h4>Antes de começar</h4>
+<h4>Antes de Começar</h4>
 
 - Crie a conta da sua igreja em [admin.b1.church](https://admin.b1.church)
-- Certifique-se de ter acesso de administrador — veja [Funções e permissões](../people/roles-permissions.md) se necessário
+- Certifique-se de que você tem acesso de administrador -- veja [Funções e Permissões](../people/roles-permissions.md), se necessário
 - Opcional: prepare um arquivo CSV com as famílias, caso esteja migrando de outro sistema
 
 </div>
 
-## Etapa 1: Adicione as famílias ao seu banco de dados
+## Passo 1: Adicione as Famílias ao Seu Banco de Dados {#step-1-add-families-to-your-database}
 
 Antes que o check-in possa funcionar, o sistema precisa conhecer as suas famílias. Cada criança precisa estar vinculada a um dos pais por meio do recurso de domicílio.
 
-Siga o guia [Adicionando pessoas](../people/adding-people.md) para cadastrar pelo menos uma família. Certifique-se de:
+Siga o guia [Adicionando Pessoas](../people/adding-people.md) para cadastrar pelo menos uma família. Certifique-se de:
 
 - Cadastrar primeiro o(s) pai(s) ou mãe(s)
-- Cadastrar cada filho
+- Cadastrar cada criança
 - Vinculá-los ao mesmo domicílio usando o [editor de domicílios](../people/adding-people.md#managing-households)
 
 :::tip
-Se você tiver mais do que algumas famílias para cadastrar, use a ferramenta de [importação por CSV](../people/importing-data.md) em vez de adicioná-las uma a uma. Você pode importar todo o seu diretório em minutos.
+Se você tiver mais de algumas poucas famílias para cadastrar, use a ferramenta de [Importação por CSV](../people/importing-data.md) em vez de adicioná-las uma a uma. Você pode importar todo o seu cadastro em poucos minutos.
 :::
 
-## Etapa 2: Crie os grupos infantis
+## Passo 2: Crie os Grupos Infantis {#step-2-create-childrens-groups}
 
-Os grupos definem as turmas em que as crianças fazem check-in. Normalmente, você vai querer um grupo por faixa etária.
+Os grupos definem as turmas nas quais as crianças fazem o check-in. Normalmente, você vai querer um grupo para cada faixa etária.
 
-Siga o guia [Criando grupos](../groups/creating-groups.md) para criar grupos como:
+Siga o guia [Criando Grupos](../groups/creating-groups.md) para criar grupos como:
 
-- **Berçário** (0 a 2 anos)
-- **Pré-escola** (3 a 5 anos)
-- **Ensino fundamental** (6 a 10 anos)
+- **Berçário** (de 0 a 2 anos)
+- **Pré-escolar** (de 3 a 5 anos)
+- **Fundamental** (de 6 a 10 anos)
 
-Você pode ajustar os nomes e as faixas etárias para combinar com a estrutura do seu ministério.
+Você pode ajustar os nomes e as faixas etárias para combinar com a estrutura do seu ministério. Depois, abra as configurações de cada grupo (clique em **Editar** na página do grupo) e:
 
-## Etapa 3: Configure campi e cultos
+- Defina **Controlar presença** como **Sim**, para que o grupo possa receber check-ins
+- Ative **Imprimir crachá** (e **Retirada pelos pais**, se você imprimir etiquetas de retirada)
+- Opcionalmente, defina os limites de **Idade e série**, para que o quiosque sugira a sala certa -- veja [Segurança no Check-In](../attendance/checkin-safety.md)
 
-O check-in está vinculado a horários de culto específicos. Você precisa de pelo menos um campus e um culto configurados.
+## Passo 3: Configure as Unidades e os Cultos {#step-3-configure-campuses-and-services}
 
-Siga o guia [Configuração de presença](../attendance/setup.md) para:
+O check-in está vinculado a horários de culto específicos. Você precisa de pelo menos uma unidade e um culto configurados.
 
-1. Adicionar o seu campus (por exemplo, "Campus Principal")
-2. Adicionar um culto (por exemplo, "Domingo de manhã")
-3. Definir o horário do culto (por exemplo, "9:00") e, opcionalmente, um [cronograma de check-in](../attendance/setup.md#setting-a-check-in-schedule) para que o check-in abra automaticamente antes de cada culto e feche depois dele
-4. Vincular os grupos infantis ao culto
+Siga o guia [Configuração de Presença](../attendance/setup.md) para:
 
-## Etapa 4: Configure o aplicativo de check-in
+1. Acessar **Pessoas > Presença** e clicar em **Configuração**
+2. Adicionar a sua unidade (por exemplo, "Unidade Central")
+3. Adicionar um culto (por exemplo, "Culto da Manhã de Domingo")
+4. Adicionar o horário de culto (por exemplo, "9:00") e, opcionalmente, um [horário de check-in](../attendance/setup.md#setting-a-check-in-schedule), para que o check-in abra automaticamente antes de cada culto e feche depois dele
+5. Vincular cada grupo infantil ao horário de culto: abra o grupo, clique em **Editar**, escolha o horário em **Adicionar horário de culto** e clique no botão de mais
+
+## Passo 4: Configure o Aplicativo de Check-In {#step-4-set-up-the-check-in-app}
 
 Agora conecte tudo instalando o aplicativo de check-in em um tablet.
 
-1. Instale o **aplicativo B1 Checkin** — veja o artigo [Check-in](../attendance/check-in.md) para os links de download
-2. Entre com suas credenciais do B1 Admin
-3. Selecione o seu campus e o horário de culto
+1. Instale o **aplicativo B1 Checkin** -- veja o artigo [Check-In](../attendance/check-in.md) para os links de download
+2. Entre com uma conta que tenha a permissão de presença **Checkin** (ou **Editar Presença**) -- veja [Contas de Quiosque para Check-In](../settings/roles-permissions.md#check-in-kiosk-accounts)
+3. Selecione a sua unidade e o seu horário de culto
 
-Veja o artigo completo sobre [Check-in](../attendance/check-in.md) para os passos detalhados de configuração.
+Veja o artigo completo [Check-In](../attendance/check-in.md) para as etapas detalhadas de configuração.
 
-## Etapa 5: Providencie o hardware
+## Passo 5: Providencie o Seu Hardware {#step-5-get-your-hardware}
 
 Você precisa de um tablet para o quiosque e, opcionalmente, de uma impressora de etiquetas Brother para os crachás.
 
 No mínimo:
-- **Um tablet Android ou Amazon Fire** — veja os [tablets recomendados](../attendance/check-in.md#recommended-hardware)
-- **Uma impressora de etiquetas Brother** — a QL-1110NWB é recomendada pelo suporte a Bluetooth e Wi-Fi
+- **Um tablet iPad, Android ou Amazon Fire** -- veja os [tablets recomendados](../attendance/check-in.md#recommended-hardware)
+- **Uma impressora de etiquetas Brother** -- a QL-1110NWB é recomendada pelo suporte a Bluetooth e Wi-Fi
 - **Etiquetas Brother DK-1201** (1-1/7" x 3-1/2")
 
 :::warning
 Somente impressoras de etiquetas Brother são compatíveis com o aplicativo B1 Checkin. Outras marcas não funcionarão.
 :::
 
-## Etapa 6: Faça um check-in de teste
+## Passo 6: Faça um Check-In de Teste {#step-6-run-a-test-check-in}
 
 Antes do domingo de manhã, faça um teste:
 
 1. Abra o aplicativo B1 Checkin no seu tablet
-2. Selecione o seu campus e o horário de culto correto
+2. Selecione a sua unidade e o horário de culto correto
 3. Pesquise uma das famílias que você cadastrou
 4. Faça o check-in de uma criança e verifique:
-   - Se a presença aparece no B1 Admin, em **Presença**
-   - Se estiver usando impressora, se o crachá é impresso corretamente
+   - Se a presença aparece no B1 Admin, em **Pessoas > Presença**
+   - Se estiver usando uma impressora, se o crachá é impresso corretamente
 
 :::tip
 Treine os voluntários da equipe de recepção no processo de check-in antes do lançamento. Uma apresentação rápida de 5 minutos costuma ser suficiente.
 :::
 
-## Pronto!
+## Pronto! {#youre-done}
 
-O check-in do seu ministério infantil está pronto. Os pais podem pesquisar a família, selecionar os filhos e fazer o check-in no quiosque. A presença é registrada automaticamente no B1 Admin.
+O check-in do seu ministério infantil está pronto. Os pais podem pesquisar a sua família, selecionar os filhos e fazer o check-in no quiosque. A presença é registrada automaticamente no B1 Admin.
 
-## Artigos relacionados
+## Artigos Relacionados {#related-articles}
 
-- [Adicionando pessoas](../people/adding-people.md) — cadastre mais famílias conforme elas visitam a igreja
-- [Criando grupos](../groups/creating-groups.md) — gerencie os grupos infantis
-- [Configuração de presença](../attendance/setup.md) — configure campi e cultos
-- [Check-in](../attendance/check-in.md) — configuração detalhada do aplicativo de check-in e do hardware
-- [Acompanhando a presença](../attendance/tracking-attendance.md) — veja os relatórios de check-in
+- [Adicionando Pessoas](../people/adding-people.md) — adicione mais famílias conforme elas visitarem a igreja
+- [Criando Grupos](../groups/creating-groups.md) — gerencie os grupos infantis
+- [Configuração de Presença](../attendance/setup.md) — configure as unidades e os cultos
+- [Check-In](../attendance/check-in.md) — configuração detalhada do aplicativo de check-in e do hardware
+- [Acompanhamento de Presença](../attendance/tracking-attendance.md) — veja os relatórios de check-in

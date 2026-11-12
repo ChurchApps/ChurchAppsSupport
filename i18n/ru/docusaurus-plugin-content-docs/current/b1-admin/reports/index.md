@@ -11,22 +11,22 @@ B1 Admin предоставляет несколько способов полу
 
 </div>
 
-## Видеоурок
+## Видеоурок {#training-video}
 
-<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+<YouTube id="vn5SonVe94Q" title="Запуск отчётов в B1" />
 
-## Где найти отчёты
+## Где найти отчёты {#where-to-find-reports}
 
-### People
+### People {#people}
 - **[Списки дней рождения и годовщин](./birthday-report.md)** — отфильтруйте по месяцу рождения или месяцу годовщины в **People → Advanced Search**, чтобы получить список предстоящих дней рождения или годовщин.
 
-### Attendance
+### Attendance {#attendance}
 - **[Отчёты о посещаемости](./attendance-reports.md)** — тенденции посещаемости и данные по группам находятся в разделе **Attendance**.
 
-### Donations
+### Donations {#donations}
 - **[Сводка пожертвований](./donation-summary.md)** — итоги пожертвований и разбивка по фондам находятся в разделе **Donations**.
 
-### Settings
+### Settings {#settings}
 - **[Журнал аудита](./audit-log.md)** — отслеживание всех изменений и действий в системе управления церковью (находится в **Settings → Audit Log**).
 
 :::info

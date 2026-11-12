@@ -30,7 +30,7 @@ Une application de borne conçue spécifiquement pour les postes d'enregistremen
 
 Une application Android TV qui affiche le contenu des leçons dans les salles de classe. Les enseignants peuvent envoyer les diapositives, vidéos et activités de leçon sur un écran de télévision, ce qui facilite la présentation des supports pédagogiques pendant les cours.
 
-## Configuration locale
+## Configuration locale {#local-setup}
 
 Toutes les applications mobiles partagent la même chaîne d'outils basée sur Expo et suivent des étapes de configuration similaires. Prenons B1 Checkin comme exemple :
 

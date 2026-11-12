@@ -36,7 +36,7 @@ Die Registerkarte **Lektionen** gab Ihnen Zugriff auf Ihren Kirchenlehrplan und 
 
 Ihr Login wird automatisch übertragen, wenn Sie die Registerkarte Lektionen öffnen. Sie müssen sich nicht separat bei Lessons.church anmelden.
 
-## Was Sie Tun Können
+## Was Sie Tun Können {#what-you-can-do}
 
 Sobald Sie sich in der Registerkarte Lektionen befinden, können Sie den Lehrplan durchsuchen, den Ihre Kirche verfügbar gemacht hat. Abhängig von Ihrer Kircheneinrichtung können Sie Folgendes finden:
 

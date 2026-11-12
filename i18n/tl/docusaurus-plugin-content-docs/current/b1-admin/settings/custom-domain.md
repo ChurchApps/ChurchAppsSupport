@@ -1,49 +1,57 @@
 ---
 title: "Custom Domain"
-description: "Ituro ang sarili mong domain, gaya ng www.yourchurch.org, sa iyong B1 site sa B1 Admin sa pamamagitan ng DNS record at pagdagdag ng domain sa Settings."
+description: "Ituro ang sarili mong domain, gaya ng www.yourchurch.org, sa iyong B1 site sa B1 Admin sa pamamagitan ng pag-set up ng mga DNS record at pagdaragdag ng domain sa Settings."
 ---
 
 # Custom Domain
 
 <div class="article-intro">
 
-Maaari mong ituro ang sarili mong domain (halimbawa, **`www.yourchurch.org`**) sa iyong B1 site para maabot ito ng mga bisita sa tunay na web address ng iyong simbahan sa halip na sa default na address na yourchurch.b1.church.
+Maaari mong ituro ang sarili mong domain (halimbawa, **`www.yourchurch.org`**) sa iyong B1 site para maabot ito ng mga bisita sa totoong web address ng iyong simbahan, sa halip na sa default na yourchurch.b1.church address.
 
 </div>
 
-## Hakbang 1 -- Idagdag Muna ang DNS Record
+## Training Video {#training-video}
+
+<YouTube id="L5yaDusHts8" title="Pagkonekta ng Custom Domain sa B1" next="Pag-set Up ng Live Streaming sa B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
+
+## Hakbang 1 -- Idagdag Muna ang DNS Record {#step-1--add-the-dns-record-first}
 
 Bago idagdag ang iyong domain sa B1, kailangan mo itong ituro sa mga server ng B1 sa iyong domain registrar (GoDaddy, Namecheap, Cloudflare, atbp.).
 
-Idagdag ang isa sa mga record na ito -- mas gusto ang CNAME:
+Magdagdag ng isa sa mga record na ito -- mas gusto ang CNAME:
 
 | Type | Host | Value |
 |------|------|-------|
 | CNAME | `www` | `proxy.b1.church` |
 | A | `yourchurch.org` | `3.23.251.61` |
 
-Gamitin ang **CNAME** para sa iyong `www` address. Gamitin ang **A record** kung hindi sinusuportahan ng iyong registrar ang CNAME sa root/apex domain (walang www), o kung gusto mo ring gumana ang root domain.
+Gamitin ang **CNAME** para sa iyong `www` address. Gamitin ang **A record** kung hindi sinusuportahan ng iyong registrar ang CNAME sa root/apex domain (walang www), o kung gusto mong gumana rin ang root domain.
 
 Maaaring tumagal ng ilang minuto hanggang ilang oras bago magkabisa ang mga pagbabago sa DNS.
 
-## Hakbang 2 -- Idagdag ang Domain sa B1
+## Hakbang 2 -- Idagdag ang Domain sa B1 {#step-2--add-the-domain-in-b1}
 
-Kapag nakaturo na ang DNS sa B1:
+Kapag nakaturo na sa B1 ang DNS:
 
 1. Pumunta sa **Settings** sa B1 Admin.
 2. I-click ang **Domains** sa listahan sa kaliwa, pagkatapos i-click ang **Edit** sa seksyong **Domains**.
 3. I-type ang iyong domain sa field at i-click ang **Save**.
 
-Hindi mo kailangang i-click muna ang butones na **+** -- ang domain na naiwan sa field ay idinadagdag kapag nag-save ka. Gamitin ang **+** (o pindutin ang **Enter**) kapag gusto mong magdagdag ng ilang domain sa listahan bago mag-save.
+Hindi mo kailangang i-click muna ang **+** na button -- ang domain na naiwan sa field ay idadagdag kapag nag-save ka. Gamitin ang **+** (o pindutin ang **Enter**) kapag gusto mong magdagdag ng ilang domain sa listahan bago mag-save. Ilagay lamang ang domain, gaya ng `www.yourchurch.org` -- hindi `https://` o path ng pahina.
 
-Awtomatikong hinahawakan ng B1 ang SSL -- hindi na kailangang bumili ng certificate.
+Kung may higit sa isang website ang simbahan mo, bawat domain ay may dropdown na **Website**. Iwanan ito sa **Main Website**, o pumili ng site na dapat buksan ng domain na iyon.
+
+Para alisin ang isang domain, i-click ang delete icon sa row nito at i-click ang **Save**.
+
+Awtomatikong inaasikaso ng B1 ang SSL -- hindi na kailangang bumili ng certificate.
 
 :::warning
-Kung idaragdag mo ang domain sa B1 bago pa nakalagay ang iyong DNS record, hindi ito mase-save. Laging i-set up muna ang DNS.
+Sine-save ng B1 ang domain kahit wala pang DNS record, pero hindi maglo-load ang iyong site sa domain at hindi maisasyu ng B1 ang SSL certificate nito hanggang ituro ng DNS ang B1. Mag-set up muna ng DNS. Hindi maidadagdag ang domain na gamit na ng ibang simbahan.
 :::
 
-## Pagsuri Kung Gumagana
+## Pagsuri Kung Gumagana {#checking-if-its-working}
 
-Pagkatapos mag-save, bisitahin ang iyong domain sa browser. Kung nag-load ang iyong B1 site, tapos ka na. Kung may makitang error, maaaring nagpo-propagate pa ang DNS -- maghintay ng ilang minuto at subukan ulit.
+Pagkatapos mag-save, bisitahin ang iyong domain sa browser. Kung nag-load ang iyong B1 site, tapos ka na. Kung may makita kang error, maaaring nagpo-propagate pa ang DNS -- maghintay ng ilang minuto at subukan ulit.
 
 Maaari mo ring suriin ang DNS propagation sa [dnschecker.org](https://dnschecker.org) -- hanapin ang iyong domain at tingnan kung lumalabas ang iyong CNAME o A record.

@@ -30,7 +30,7 @@ Um aplicativo de quiosque desenvolvido especificamente para as estações de che
 
 Um aplicativo para Android TV que exibe conteúdo de lições em salas de aula. Os professores podem enviar slides de lições, vídeos e atividades para a tela da TV, facilitando a apresentação do material curricular durante as aulas.
 
-## Configuração Local
+## Configuração Local {#local-setup}
 
 Todos os aplicativos móveis compartilham o mesmo kit de ferramentas baseado em Expo e seguem padrões de configuração semelhantes. Usando o B1 Checkin como exemplo:
 

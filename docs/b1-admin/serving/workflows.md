@@ -117,7 +117,7 @@ Choose **Notify Person**, click **Pick person**, and optionally type a **Message
 
 ### Sending a text
 
-Choose **Send Text** and type the **Text message** (up to 1,600 characters). When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent. The **Amount**, **Gift Date**, **Fund**, and **Receipt** chips insert the gift fields, which fill in only when a **Donation · Created** trigger started the workflow. For example, `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
+Choose **Send Text** and type the **Text message** (up to 1,600 characters). If your church has saved [text templates](../settings/email-templates.md), a **Start from a template** list appears above the box. Picking one copies the template's text into the message, and you can still edit it. The step keeps its own copy, so later changes to the template do not change the step. When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent. The **Amount**, **Gift Date**, **Fund**, and **Receipt** chips insert the gift fields, which fill in only when a **Donation · Created** trigger started the workflow. For example, `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
 
 - If the person has no mobile phone on file, no text is sent and the card's history records **Text skipped: no mobile phone**.
 - If the person has opted out, no text is sent and the card's history records **Text skipped: opted out**.
@@ -151,7 +151,7 @@ Adding someone by hand, or with an **Add to workflow** step action, never gives 
 
 ## Working the Board
 
-Open a workflow to see its board. Each card shows the person's name, who it is assigned to, and a due-date or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow.
+Open a workflow to see its board. Each card shows the person's name, who it is assigned to, and a due-date or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow. Within each column, the card that entered the step most recently is at the top.
 
 - **Move a card** -- Drag a card from one column to the next as the person progresses.
 - **Open a card** -- Double-click a card (or click it) to open its detail drawer, where you can change the step, reassign it, add notes, and review what's already happened.

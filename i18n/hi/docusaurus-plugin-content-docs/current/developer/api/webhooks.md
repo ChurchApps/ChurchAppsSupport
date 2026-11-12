@@ -73,7 +73,7 @@ Content-Type: application/json
 | `GET /membership/webhooks/deliveries/:deliveryId` | एक डिलीवरी का पूरा पेलोड और रिस्पॉन्स |
 | `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | किसी डिलीवरी को फिर से कतार में डालें |
 
-## इवेंट सूची
+## इवेंट सूची {#event-catalog}
 
 इवेंट नाम `{entity}.{action}` पैटर्न का पालन करते हैं। मौजूदा सूची `GET /membership/webhooks/events` से प्राप्त करें।
 
@@ -189,7 +189,7 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 
 जिस अनुरोध का हस्ताक्षर मेल न खाए, उसे अस्वीकार करें। वैकल्पिक रूप से, रीप्ले विंडो सीमित करने के लिए उन अनुरोधों को भी अस्वीकार किया जा सकता है जिनका `X-B1-Timestamp` कुछ मिनटों से ज़्यादा पुराना हो।
 
-## SDK समर्थन
+## SDK समर्थन {#sdk-support}
 
 Node.js के लिए, `@churchapps/integration-sdk` एक टाइप्ड वेरिफ़ायर और एक Express मिडलवेयर देता है, जो raw-body कैप्चर, हस्ताक्षर जाँच और envelope पार्सिंग आपके लिए संभालता है:
 

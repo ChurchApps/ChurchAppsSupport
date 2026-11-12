@@ -1,52 +1,52 @@
 ---
 title: "Mobile Message"
-description: "Подключите события B1 Admin к Mobile Message, австралийскому SMS API, через вебхуки Zapier или Make для отправки приветственных SMS, сообщений о пожертвованиях и напоминаний."
+description: "Подключите события B1 Admin к Mobile Message, австралийскому SMS API, через веб-хуки Zapier или Make, чтобы отправлять приветственные SMS, благодарности за пожертвования и напоминания."
 ---
 
 # Mobile Message
 
 <div class="article-intro">
 
-[Mobile Message](https://mobilemessage.com.au) это австралийский SMS API — популярный у австралийских церквей, потому что он предлагает местные номера и конкурентное австралийское ценообразование, где Clearstream и Text In Church ориентированы на США. Mobile Message не имеет приложения Zapier первого класса сегодня, но публикует открытый REST API, поэтому вы можете подключить события B1 к текстам Mobile Message через **Webhooks by Zapier** (или модуль HTTP Make) за несколько минут.
+[Mobile Message](https://mobilemessage.com.au) — австралийский SMS API, популярный среди церквей в Австралии: он предлагает местные номера и выгодные австралийские тарифы, тогда как Clearstream и Text In Church ориентированы на США. Приложения Mobile Message для Zapier пока нет, но у сервиса есть публичный REST API, поэтому связать события B1 с SMS Mobile Message можно за несколько минут через **Webhooks by Zapier** (или модуль HTTP в Make).
 
 </div>
 
 <div class="prereqs">
-<h4>Перед началом</h4>
+<h4>Прежде чем начать</h4>
 
-- Аккаунт [Mobile Message](https://mobilemessage.com.au) с зарегистрированным Sender ID и учетными данными API (API username + password в *Account → API Settings*)
-- Аккаунт [Zapier](https://zapier.com) (или [Make](https://www.make.com))
-- Пользователь B1Admin с разрешением **Edit Settings**
+- Учётная запись [Mobile Message](https://mobilemessage.com.au) с зарегистрированным Sender ID и учётными данными API (имя пользователя и пароль API в разделе *Account → API Settings*)
+- Учётная запись [Zapier](https://zapier.com) (или [Make](https://www.make.com))
+- Пользователь B1Admin с правом **Edit Settings**
 
 </div>
 
-## Что вы можете подключить
+## Что можно связать {#what-you-can-wire-up}
 
-API Mobile Message имеет форму "send SMS" — нет триггеров, просто исходящий текст. Поэтому рецепты это все B1 → SMS:
+API Mobile Message устроен как «отправка SMS» — триггеров нет, есть только исходящие сообщения. Поэтому все рецепты идут в направлении B1 → SMS:
 
-| Направление | Триггер B1 | Исход |
+| Направление | Триггер B1 | Результат |
 |---|---|---|
-| B1 → Mobile Message | `person.created` | Приветственный текст новому человеку |
-| B1 → Mobile Message | `donation.created` | Текст благодарности дающему |
-| B1 → Mobile Message | `form.submission.created` | Вызовите дежурную команду |
-| B1 → Mobile Message | `event.created` | Напоминание трансляции списку |
+| B1 → Mobile Message | `person.created` | Приветственное SMS новому человеку |
+| B1 → Mobile Message | `donation.created` | Благодарственное SMS жертвователю |
+| B1 → Mobile Message | `form.submission.created` | Вызов дежурной команды |
+| B1 → Mobile Message | `event.created` | Напоминание, разосланное списку |
 
-## Настройка
+## Настройка {#setup}
 
-### 1. Создайте B1 API-ключ
+### 1. Создайте API-ключ B1 {#1-mint-a-b1-api-key}
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write` — для регистрации вебхука триггера
-- `people:read` — для поиска номера телефона получателя от `personId`
+- `settings:write` — чтобы зарегистрировался веб-хук триггера
+- `people:read` — чтобы по `personId` найти номер телефона получателя
 
-### 2. Создайте Zap с Webhooks by Zapier
+### 2. Создайте Zap с Webhooks by Zapier {#2-build-the-zap-with-webhooks-by-zapier}
 
-1. **Trigger** — B1.church: выберите событие, которое вы хотите (например New Donation).
-2. **Action** — B1.church: Find Person (используя `data.personId`) для получения номера телефона и имени.
-3. **Action** — Webhooks by Zapier: **POST**. Настройте как ниже.
+1. **Триггер** — B1.church: выберите нужное событие (например, New Donation).
+2. **Действие** — B1.church: Find Person (по `data.personId`), чтобы получить номер телефона и имя.
+3. **Действие** — Webhooks by Zapier: **POST**. Настройте, как показано ниже.
 
-Параметры шага POST:
+Настройки шага POST:
 
 - **URL** — `https://api.mobilemessage.com.au/v1/messages`
 - **Payload Type** — JSON
@@ -55,54 +55,54 @@ API Mobile Message имеет форму "send SMS" — нет триггеро�
   {
     "messages": [
       {
-        "to": "`{{step2_phone}}`",
-        "message": "Thanks for your gift, `{{step2_first_name}}`!",
+        "to": "{{step2_phone}}",
+        "message": "Thanks for your gift, {{step2_first_name}}!",
         "sender": "YourChurch"
       }
     ]
   }
   ```
 - **Headers** — `Content-Type: application/json` (Webhooks by Zapier добавляет это автоматически)
-- **Basic Auth** — установите поле *Basic Auth* на `<api_username>|<api_password>` (Zapier преобразует это в правильный заголовок `Authorization: Basic …`)
+- **Basic Auth** — в поле *Basic Auth* укажите `<api_username>|<api_password>` (Zapier преобразует это в нужный заголовок `Authorization: Basic …`)
 
-Включите Zap. Отправьте подарок тестирования в B1Admin для проверки приходит текст.
+Включите Zap. Чтобы проверить, что SMS приходит, отправьте тестовое пожертвование в B1Admin.
 
-## Обычные рецепты
+## Типичные рецепты {#common-recipes}
 
-### Напоминания о событиях в день
+### Напоминания о событиях утром в день события {#event-reminders-the-morning-of}
 
-- **Trigger** — Schedule by Zapier (ежедневно, 7am)
-- **Action** — B1.church: Find Events на сегодня (или используйте Find шаг с фиксированным фильтром даты, или сохраните список событий сегодня в Google Sheet)
-- **Action** — Webhooks by Zapier: POST на Mobile Message со списком событий зарегистрированной группе подписчиков
+- **Триггер** — Schedule by Zapier (ежедневно, в 7:00)
+- **Действие** — ведите список сегодняшних событий в Google Sheets (или другом приложении, которое может читать Zapier) и ищите сегодняшние строки — в приложении B1 для Zapier нет действия поиска событий
+- **Действие** — Webhooks by Zapier: POST в Mobile Message со списком событий для зарегистрированной группы подписчиков
 
-### Используйте конечную точку пакета для трансляции списка
+### Используйте пакетную конечную точку для рассылки списку {#use-the-batch-endpoint-for-a-list-broadcast}
 
-Конечная точка `/v1/messages` Mobile Message принимает до 10000 сообщений за вызов. Для трансляции группе B1:
+Конечная точка `/v1/messages` в Mobile Message принимает до 10 000 сообщений за вызов. Чтобы разослать сообщение группе B1:
 
-- **Trigger** — B1.church: New Form Submission (filter на конкретную форму)
-- **Action** — B1.church: List Group Members для целевой группы (через *Webhooks by Zapier — GET* шаг на `/membership/groupmembers?groupId=…`)
-- **Action** — Formatter by Zapier → Utilities → Line-itemize ответ в массив `messages`
-- **Action** — Webhooks by Zapier: POST полный массив на `/v1/messages`
+- **Триггер** — B1.church: New Form Submission (фильтр по конкретной форме)
+- **Действие** — Webhooks by Zapier: GET `/membership/groupmembers?groupId=…`, чтобы получить участников целевой группы (в приложении B1 для Zapier для этого нет действия списка; передайте API-ключ в заголовке `Authorization: Bearer cak_…`)
+- **Действие** — Formatter by Zapier → Utilities → Line-itemize: превратите ответ в массив `messages`
+- **Действие** — Webhooks by Zapier: POST всего массива в `/v1/messages`
 
-### Альтернатива Make
+### Вариант с Make {#make-alternative}
 
-Если вы предпочитаете Make, поместите модуль **HTTP — Make a request** после триггера B1 Watch Events, настройте его так же (POST, Basic Auth, JSON body). См. [обзор Make](../make.md) для стороны B1.
+Если вы предпочитаете Make, добавьте модуль **HTTP — Make a request** после триггера B1 Watch Events и настройте его так же (POST, Basic Auth, тело JSON). Сторону B1 см. в [обзоре Make](../make.md) — учтите, что приложение B1.church для Make пока не выпущено.
 
-## Ограничения и примечания
+## Ограничения и примечания {#limits--notes}
 
-- **Basic Auth это единственный метод аутентификации** — Mobile Message выдает имя пользователя и пароль из панели управления. Относитесь к обоим как к секретам.
-- **`sender` должен быть зарегистрированным Sender ID** на вашем аккаунте Mobile Message, или отправка вернет `400 Invalid sender`. Австралийские законы требуют регистрации отправителя.
-- **AU номера телефонов** могут быть `0412345678` (местный) или `+61412345678` (международный). API принимает оба, но нормализуйте на `+61…`, если вы также отправляете за границу.
-- **До 10000 сообщений за запрос** — полезно для трансляций, но одна доставка вебхука B1 редко испускает список, который такой большой; зарезервируйте конечную точку пакета для запланированных пакетных Zaps.
+- **Basic Auth — единственный способ аутентификации.** Mobile Message выдаёт имя пользователя и пароль из панели управления. Относитесь к обоим как к секретам.
+- **`sender` должен быть зарегистрированным Sender ID** в вашей учётной записи Mobile Message, иначе отправка вернёт `400 Invalid sender`. Правила Австралии требуют регистрации отправителя.
+- **Австралийские номера телефонов** могут быть в формате `0412345678` (местном) или `+61412345678` (международном). API принимает оба, но если вы отправляете и за границу, приводите номера к виду `+61…`.
+- **До 10 000 сообщений в запросе** — удобно для рассылок, но одна доставка веб-хука B1 редко содержит такой большой список; пакетную конечную точку оставляйте для плановых массовых Zap.
 
-## Устранение неполадок
+## Устранение неполадок {#troubleshooting}
 
-- **POST возвращает `401 Unauthorized`** — учетные данные Basic Auth неправильные. Пересоздайте из панели управления Mobile Message *Account → API Settings*. Обратите внимание, что имя пользователя это ваш адрес электронной почты аккаунта по умолчанию, не отдельный API-ключ.
-- **POST возвращает `400 Invalid sender`** — значение `sender` не является зарегистрированным Sender ID на вашем аккаунте. Зарегистрируйте его в панели управления Mobile Message сначала.
-- **Текст приходит, но усечен** — Mobile Message разбивает сообщения свыше ~160 символов на несколько частей; вам выставляют счета за часть. Проверьте тело ответа — оно говорит вам счет частей.
+- **POST возвращает `401 Unauthorized`** — учётные данные Basic Auth неверны. Скопируйте их заново из панели Mobile Message в разделе *Account → API Settings*. Учтите, что имя пользователя по умолчанию — адрес электронной почты вашей учётной записи, а не отдельный API-ключ.
+- **POST возвращает `400 Invalid sender`** — значение `sender` не является зарегистрированным Sender ID в вашей учётной записи. Сначала зарегистрируйте его в панели Mobile Message.
+- **SMS приходит обрезанным** — Mobile Message разбивает сообщения длиннее примерно 160 символов на несколько частей, и плата взимается за каждую часть. Проверьте тело ответа — там указано количество частей.
 
-## См. также
+## См. также {#see-also}
 
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — альтернативные SMS провайдеры с родными приложениями Zapier (не нужен шаг Webhooks-by-Zapier)
-- [Zapier (обзор)](../zapier.md) — B1 сторона каждого рецепта Zapier
-- [Mobile Message API документы](https://mobilemessage.com.au/api-documentation)
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — альтернативные провайдеры SMS с нативными приложениями Zapier (шаг Webhooks by Zapier не нужен)
+- [Zapier (обзор)](../zapier.md) — сторона B1 в каждом рецепте Zapier
+- [Документация API Mobile Message](https://mobilemessage.com.au/api-documentation)

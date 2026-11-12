@@ -1,88 +1,90 @@
 ---
 title: "Anleitung: Veranstaltungsanmeldung einrichten"
-description: "Richten Sie in B1 Admin ein Anmeldeformular für Veranstaltungen ein, um Teilnehmerdaten und optionale Zahlungen zu erfassen, es auf Ihrer Kirchenwebsite einzubetten und Anmeldungen nachzuverfolgen."
+description: "Richten Sie in B1 Admin ein Anmeldeformular für Veranstaltungen ein, um Angaben der Teilnehmenden und optionale Zahlungen zu erfassen, es auf Ihrer Kirchenwebsite einzubetten und die Anmeldungen nachzuverfolgen."
 ---
 
 # Veranstaltungsanmeldung einrichten
 
 <div class="article-intro">
 
-Erstellen Sie ein Anmeldeformular für Veranstaltungen, erfassen Sie Teilnehmerinformationen und optionale Zahlungen, betten Sie es auf Ihrer Kirchenwebsite ein und verwalten Sie die eingehenden Anmeldungen. Am Ende haben Sie eine teilbare Anmeldeseite für jede Gemeindeveranstaltung.
+Erstellen Sie ein Anmeldeformular für Veranstaltungen, erfassen Sie Angaben zu den Teilnehmenden und optionale Zahlungen, betten Sie es auf Ihrer Kirchenwebsite ein und verwalten Sie die Einsendungen, sobald sie eingehen. Am Ende haben Sie eine teilbare Anmeldeseite für jede Veranstaltung Ihrer Kirche.
 
 </div>
 
 :::info
-**Zwei Möglichkeiten für die Veranstaltungsanmeldung:** Diese Anleitung behandelt die **formularbasierte Anmeldung**, die Ihnen volle Kontrolle über benutzerdefinierte Felder und die Zahlungserfassung gibt. Für einfachere Veranstaltungen, bei denen Sie nur wissen müssen, wer teilnimmt, verwenden Sie die **native Veranstaltungsanmeldung** im Kalender -- Einrichtungsanweisungen finden Sie unter [Kalender erstellen](../calendars/creating-calendars.md#enabling-event-registration). Die native Anmeldung ermöglicht es Mitgliedern, sich direkt über [B1.church oder die B1 App](../../b1-church/events/registering.md) anzumelden, mit Kapazitätsverfolgung, Anmeldezeiträumen und E-Mail-Bestätigungen.
+**Zwei Wege für die Veranstaltungsanmeldung:** Diese Anleitung behandelt die **Anmeldung über ein Formular** – ein eigenständiges Formular mit eigenem öffentlichem Link, eigenen Fragen und einem optionalen Zahlungsfeld. Für eine Veranstaltung in Ihrem Kalender können Sie stattdessen die **Veranstaltungsanmeldung** nutzen, die im Kalender eingebaut ist – siehe [Kalender erstellen](../calendars/creating-calendars.md#enabling-event-registration). Damit können sich Mitglieder direkt über [B1.church oder die B1-App](../../b1-church/events/registering.md) anmelden, mit Kapazität, Öffnungs- und Schließdaten, einer Warteliste, optionalen Anmeldefragen aus einem Formular und kostenpflichtigen Teilnehmerarten (siehe [Kostenpflichtige Anmeldungen](../calendars/paid-registrations.md)).
 :::
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- B1 Admin-Konto mit Administratorzugriff
-- Zum Erfassen von Zahlungen: [Stripe muss zuerst konfiguriert](../donations/online-giving-setup.md) werden
+- B1-Admin-Konto mit Administratorzugriff
+- Zum Einziehen von Zahlungen: [Stripe muss zuerst eingerichtet sein](../donations/online-giving-setup.md)
 
 </div>
 
-## Schritt 1: Eigenständiges Formular erstellen
+## Schritt 1: Ein eigenständiges Formular anlegen {#step-1-create-a-stand-alone-form}
 
-Eigenständige Formulare haben eine eigene öffentliche URL, die für jeden zugänglich ist -- ideal für Veranstaltungsanmeldungen.
+Eigenständige Formulare haben eine eigene öffentliche URL, die jeder aufrufen kann – ideal für Veranstaltungsanmeldungen.
 
 Folgen Sie der Anleitung [Formulare erstellen](../forms/creating-forms.md), um:
 
-1. zu Formulare zu navigieren und auf „Formular hinzufügen“ zu klicken
-2. den Typ „Stand Alone“ zu wählen -- dadurch erhält Ihr Formular eine eigene öffentliche URL
-3. es nach der Veranstaltung zu benennen (z. B. „Männerfreizeit-Anmeldung“, „Anmeldung Kinderbibelwoche“)
+1. im [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) **Personen > Formulare** zu wählen und auf **Formular hinzufügen** zu klicken
+2. es nach der Veranstaltung zu benennen (z. B. „Anmeldung Männerfreizeit“, „Anmeldung VBS“)
+3. unter **Zuordnen zu** **Eigenständig** zu wählen – so erhält Ihr Formular eine eigene öffentliche URL
+4. auf **Speichern** zu klicken
 
-## Schritt 2: Fragen hinzufügen
+## Schritt 2: Fragen hinzufügen {#step-2-add-questions}
 
-Erstellen Sie die Felder, die Sie von den Teilnehmenden erfassen möchten.
+Erstellen Sie die Felder, die Sie von den Anmeldenden benötigen.
 
 Folgen Sie der Anleitung [Formulare erstellen](../forms/creating-forms.md#adding-questions), um Ihre Fragen hinzuzufügen:
 
-1. Wechseln Sie zum Reiter „Questions“ und fügen Sie Felder für die benötigten Informationen hinzu: Name, E-Mail, Telefon, Ernährungseinschränkungen, T-Shirt-Größe, Notfallkontakt usw.
-2. Verwenden Sie „Multiple Choice“ für Auswahlmöglichkeiten wie Essenswünsche oder Veranstaltungsteile
+1. Öffnen Sie das Formular, wechseln Sie zum Reiter **Fragen** und klicken Sie für jede benötigte Angabe auf **Frage hinzufügen**: Name, E-Mail, Telefon, Ernährungseinschränkungen, T-Shirt-Größe, Notfallkontakt usw.
+2. Verwenden Sie **Multiple Choice** für Optionen wie Essenswünsche oder Programmpunkte
+3. Um eine Gebühr zu erheben, fügen Sie eine Frage vom Typ **Zahlung** hinzu und wählen Sie deren **Fonds** und **Betrag**
 
 :::warning
-Der Feldtyp Zahlung erfordert, dass Stripe konfiguriert ist. Wenn Sie die Online-Spende noch nicht eingerichtet haben, lesen Sie [Online-Spenden einrichten](../donations/online-giving-setup.md), bevor Sie Zahlungsfelder hinzufügen.
+Der Feldtyp Zahlung setzt voraus, dass Stripe eingerichtet ist. Haben Sie Online-Spenden noch nicht eingerichtet, lesen Sie [Einrichtung der Online-Spenden](../donations/online-giving-setup.md), bevor Sie Zahlungsfelder hinzufügen.
 :::
 
-## Schritt 3: Formulareinstellungen konfigurieren
+## Schritt 3: Die Formulareinstellungen konfigurieren {#step-3-configure-form-settings}
 
-Legen Sie fest, wann und wie Ihr Anmeldeformular verfügbar ist.
+Steuern Sie, wann und wie Ihr Anmeldeformular verfügbar ist. Folgen Sie dem Abschnitt [Eigenschaften des Formulars konfigurieren](../forms/creating-forms.md#configuring-form-properties), um:
 
-1. Legen Sie Verfügbarkeitsdaten fest, falls die Anmeldung nur für einen begrenzten Zeitraum offen sein soll
-2. Kopieren Sie die öffentliche URL -- Sie können sie direkt weitergeben
-3. Fügen Sie Formularmitglieder mit den Rollen Admin oder Nur Ansicht hinzu, die bei der Verwaltung der Einsendungen helfen
+1. auf **Formular bearbeiten** zu klicken und, falls die Anmeldung nur für begrenzte Zeit offen sein soll, **Verfügbarkeitszeitraum des Formulars festlegen** auf **Ja** zu setzen und Start- und Enddatum auszuwählen
+2. die **öffentliche URL** zu kopieren, die auf der linken Seite der Formularseite angezeigt wird – diese können Sie direkt teilen. Klicken Sie auf der Liste der Formulare neben dem Formular auf **QR-Code**, um einen QR-Code für Flyer und Folien herunterzuladen
+3. im Reiter **Mitglieder des Formulars** Personen als **Administrator** oder **Nur Anzeigen** hinzuzufügen, die bei der Verwaltung der Einsendungen helfen, und **E-Mail-Benachrichtigung** für alle zu aktivieren, die bei jeder neuen Anmeldung eine E-Mail erhalten sollen
 
-## Schritt 4: Auf Ihrer Website einbetten
+## Schritt 4: Auf Ihrer Website einbetten {#step-4-embed-on-your-website}
 
-Machen Sie das Anmeldeformular leicht auffindbar, indem Sie es zu Ihrer Kirchenwebsite hinzufügen.
+Machen Sie das Anmeldeformular leicht auffindbar, indem Sie es auf Ihrer Kirchenwebsite hinzufügen.
 
-Folgen Sie der Anleitung [Seiten verwalten](../website/managing-pages.md), um:
+Folgen Sie der Anleitung [Seiteneditor](../website/page-editor.md), um:
 
-1. im B1-Website-Editor einen neuen Abschnitt zu einer Seite hinzuzufügen und das Element Formular auszuwählen
-2. Ihr Anmeldeformular aus der Liste zu wählen
+1. eine Seite in Ihrem B1-Website-Editor zu öffnen und auf **Inhalt hinzufügen** zu klicken
+2. das Element **Formular** in einen Abschnitt zu ziehen und Ihr Anmeldeformular auszuwählen
 
 :::tip
-Teilen Sie die eigenständige URL auch per E-Mail, in sozialen Medien und im Gemeindebrief -- je mehr Orte, an denen sie sichtbar ist, desto mehr Anmeldungen erhalten Sie.
+Teilen Sie die eigenständige URL auch per E-Mail, in sozialen Medien und in den Gemeindebriefen – je mehr Orte sie sichtbar machen, desto mehr Anmeldungen erhalten Sie.
 :::
 
-## Schritt 5: Einsendungen verwalten
+## Schritt 5: Einsendungen verwalten {#step-5-manage-submissions}
 
-Verfolgen Sie Anmeldungen, sobald sie eingehen, und exportieren Sie die Daten bei Bedarf.
+Verfolgen Sie die Anmeldungen, sobald sie eingehen, und exportieren Sie die Daten, wenn Sie sie brauchen.
 
 Folgen Sie der Anleitung [Einsendungen verwalten](../forms/managing-submissions.md), um:
 
-1. Antworten, sobald sie eingehen, auf dem Reiter „Submissions“ zu prüfen
-2. als CSV zu exportieren, für Tabellenkalkulationen, die Zählung der Teilnehmenden oder die Weitergabe an Veranstaltungskoordinatoren
+1. Antworten, sobald sie eingehen, auf dem Reiter **Einsendungen** zu prüfen
+2. auf **Exportieren** zu klicken, um eine CSV-Datei für Tabellenkalkulationen, zur Zählung der Teilnehmenden oder zur Weitergabe an Veranstaltungsverantwortliche herunterzuladen
 
-## Geschafft!
+## Fertig! {#youre-done}
 
-Ihre Veranstaltungsanmeldung ist live. Teilen Sie den Link, betten Sie ihn auf Ihrer Website ein und verfolgen Sie die Anmeldungen in B1 Admin. Wenn die Veranstaltung vorbei ist, exportieren Sie die endgültige Liste für Ihre Unterlagen.
+Ihre Veranstaltungsanmeldung ist live. Teilen Sie den Link, betten Sie ihn auf Ihrer Website ein und verfolgen Sie die Anmeldungen in B1 Admin. Nach der Veranstaltung exportieren Sie die endgültige Liste für Ihre Unterlagen.
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Formulare erstellen](../forms/creating-forms.md) — Formulare mit verschiedenen Feldtypen erstellen
-- [Einsendungen verwalten](../forms/managing-submissions.md) — Formularantworten prüfen und exportieren
-- [Seiten verwalten](../website/managing-pages.md) — Formulare auf Ihrer Website einbetten
-- [Online-Spenden einrichten](../donations/online-giving-setup.md) — erforderlich für Zahlungsfelder
+- [Formulare erstellen](../forms/creating-forms.md) – Formulare mit verschiedenen Feldtypen aufbauen
+- [Einsendungen verwalten](../forms/managing-submissions.md) – Formularantworten prüfen und exportieren
+- [Seiteneditor](../website/page-editor.md) – Formulare auf Ihrer Website einbetten
+- [Einrichtung der Online-Spenden](../donations/online-giving-setup.md) – erforderlich für Zahlungsfelder

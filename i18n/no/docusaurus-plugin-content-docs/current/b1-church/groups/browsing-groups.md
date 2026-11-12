@@ -1,50 +1,74 @@
 ---
-title: "Bla Gjennom Grupper"
-description: "Bla gjennom menighetens åpne grupper på B1.church etter kategori, og se møtetider, steder og beskrivelser på hvert kort for å finne riktig gruppe."
+title: "Bla i grupper"
+description: "Finn en gruppe på menighetens B1.church-nettsted: søk etter navn, filtrer etter kategori eller campus, og se møtetider, steder og beskrivelser."
 ---
 
-# Bla Gjennom Grupper
+# Bla i grupper
 
 <div class="article-intro">
 
-Kirkens offentlige gruppeside gjør det enkelt å oppdage grupper som interesserer deg. Grupper er organisert etter kategori, slik at du raskt kan skanne gjennom ulike typer grupper og finne den rette.
+Menighetens offentlige gruppeside gjør det enkelt å finne grupper som interesserer deg. Søk etter navn, eller snevre inn listen etter kategori eller campus for å finne det som passer best.
 
 </div>
+
+## Opplæringsvideo {#training-video}
+
+<YouTube id="2tDaqvzhrng" title="Bli med i en gruppe og chatte i den" next="Svare på en tjenesteforespørsel i B1" nextUrl="/docs/b1-church/plans/viewing-plans" />
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Ingen innlogging er nødvendig for å bla gjennom grupper. Men å [logge inn](../getting-started/logging-in.md) gir deg tilgang til tilleggsfunksjoner på hver gruppes detaljside.
+- Du trenger ikke å logge inn for å bla i grupper. Men [innlogging](../getting-started/logging-in.md) gir deg tilgang til flere funksjoner på detaljsiden for hver gruppe.
 
 </div>
 
-## Finne Gruppesiden
+## Finne gruppesiden {#finding-the-groups-page}
 
-Naviger til **Grupper**-siden på kirkens B1.church-nettsted. Denne siden er offentlig tilgjengelig, så du trenger ikke å være logget inn for å bla.
+Gå til siden **Finn en gruppe** (`/groups`) på menighetens B1.church-nettsted. Siden er offentlig tilgjengelig, så du trenger ikke å være innlogget for å bla. I medlemsportalen åpner knappen **Finn en gruppe** på skjermen **Grupper** den samme siden.
 
-## Hvordan Grupper Er Organisert
+## Søke og filtrere {#searching-and-filtering}
 
-Grupper vises etter **kategori** (også kalt etikett). Kategorier er satt opp av kirkens administratorer og kan inkludere etiketter som "Smågrupper", "Tjenester", "Ungdom" eller "Bibelstudier". Hver kategori viser alle gruppene som tilhører den.
+Alle menighetens offentlige grupper vises samlet. Bruk kontrollene over listen for å snevre den inn:
 
-## Lese Gruppekort
+- **Søk etter grupper med navn eller beskrivelse** -- Skriv et ord for å vise bare gruppene der navn, beskrivelse eller kategori inneholder det.
+- **Kategori** -- Velg en kategori, for eksempel «Smågrupper», «Ungdom» eller «Musikk», for å vise bare gruppene i den. Velg **Alle kategorier** for å se alt igjen. Kategoriene settes opp av menighetens administratorer, og dette filteret vises bare når det finnes mer enn én.
+- **Campus** -- Hvis menigheten din har flere campus, velger du ett for å se bare gruppene som hører til det, eller **Alle campus** for å se alle.
+
+Hvis ingenting samsvarer, står det «Ingen grupper samsvarer med filtrene dine.»
+
+Menigheten din kan også lenke til en side for en enkelt gruppemerkelapp, for eksempel `/groups/youth`, som bare lister gruppene med den merkelappen.
+
+## Lese gruppekortene {#reading-group-cards}
 
 Hver gruppe vises som et kort med følgende informasjon:
 
-- **Gruppebilde** -- Et forsidebilde som representerer gruppen. Hvis ingen bilde er satt, vises et standardbilde.
-- **Gruppenavn** -- Vist fremtredende over bildet.
-- **Møtetid** -- Når gruppen vanligvis møtes (for eksempel "Onsdager kl. 19:00"). Hvis ingen tid er satt, vises en plassholder.
-- **Møtested** -- Hvor gruppen møtes. Hvis ingen sted er satt, vises en plassholder.
-- **Beskrivelse** -- En kort forhåndsvisning av hva gruppen handler om, begrenset til noen få linjer. Klikk på gruppen for å lese fullstendig beskrivelse.
+- **Gruppebilde** -- Et omslagsbilde som representerer gruppen. Hvis det ikke er satt noe bilde, vises et standardbilde.
+- **Gruppenavn** -- Vises tydelig over bildet.
+- **Møtetid** -- Når gruppen vanligvis møtes (for eksempel «Onsdager kl. 19.00»). Hvis ingen tid er satt, vises «--».
+- **Møtested** -- Hvor gruppen møtes, til høyre. Hvis ingen plass er satt, vises «--».
+- **Beskrivelse** -- En kort forhåndsvisning av hva gruppen handler om, begrenset til noen få linjer. Hvis gruppen ikke har en beskrivelse, står det «Ingen beskrivelse oppgitt» på kortet. Klikk på gruppen for å lese hele beskrivelsen.
 
-## Se en Gruppe
+## Se en gruppe {#viewing-a-group}
 
-Klikk på et gruppekort for å åpne den fullstendige gruppedetaljsiden. Der finner du fullstendig beskrivelse, informasjon om gruppens ledere, kommende kalenderbegivenheter og en måte å komme i kontakt.
+Klikk på et hvilket som helst gruppekort for å åpne hele detaljsiden for gruppen i medlemsportalen. Der finner du den fullstendige beskrivelsen, gruppens ledere, kommende arrangementer og en måte å bli med på.
 
 :::tip
-Hvis du leter etter en spesifikk type gruppe, skann kategorihoverskriftene først. Dette hjelper deg å hoppe direkte til seksjonen som interesserer deg i stedet for å bla gjennom alle grupper.
+Hvis du leter etter en bestemt type gruppe, velg den fra filteret **Kategori** først. Da slipper du å scrolle gjennom alle gruppene.
 :::
 
-## Neste Steg
+## Dine grupper i medlemsportalen {#your-groups-in-the-member-portal}
 
-- [Gruppedetaljer](./group-details.md) -- Lær hva du finner på gruppedetaljsiden
-- [Gruppesamtaler](./conversations.md) -- Se hvordan du deltar i gruppediskusjoner etter at du har blitt med
+Skjermen **Grupper** i medlemsportalen lister gruppene du er med i. Overskriften viser hvor mange grupper du er med i (og hvor mange forespørsler om å bli med som venter).
+
+- **Søk i gruppene dine** -- Filtrer gruppene dine etter navn.
+- **Dine grupper** -- Gruppene du åpner oftest, opptil fem, hver med møtetid og sted. Trykk på en for å åpne den.
+- **Andre grupper** -- Resten av gruppene dine.
+- **Ventende forespørsler** -- Grupper du har bedt om å bli med i, som venter på en leder. Se [Be om å bli med i en gruppe](./join-requests.md).
+- **Kommende arrangementer** -- Menighetsarrangementer som tar påmeldinger, hver med en lenke til **Meld deg på**. Se [Påmelding til arrangementer](../events/registering.md).
+
+Trykk på **Finn en gruppe** for å bla i alle menighetens grupper. Hvis du ikke er med i noen grupper ennå, står det «Ingen grupper ennå» med en knapp for **Bla i grupper**. Hvis du ikke er innlogget, ber skjermen deg logge inn for å se gruppene dine.
+
+## Neste steg {#next-steps}
+
+- [Gruppedetaljer](./group-details.md) -- Lær hva du finner på detaljsiden for en gruppe
+- [Gruppesamtaler](./conversations.md) -- Se hvordan du deltar i gruppediskusjoner når du er med

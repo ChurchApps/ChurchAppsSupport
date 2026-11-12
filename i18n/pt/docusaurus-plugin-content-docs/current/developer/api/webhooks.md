@@ -73,7 +73,7 @@ A resposta de criação — e **somente** a resposta de criação — inclui o `
 | `GET /membership/webhooks/deliveries/:deliveryId` | Payload e resposta completos de uma entrega |
 | `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Coloca uma entrega novamente na fila |
 
-## Catálogo de eventos
+## Catálogo de eventos {#event-catalog}
 
 Os nomes dos eventos seguem o padrão `{entity}.{action}`. Obtenha a lista atualizada em `GET /membership/webhooks/events`.
 
@@ -189,7 +189,7 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 
 Rejeite qualquer requisição cuja assinatura não corresponda. Opcionalmente, rejeite também requisições cujo `X-B1-Timestamp` tenha mais de alguns minutos, para limitar a janela de reenvio malicioso (replay).
 
-## Suporte ao SDK
+## Suporte ao SDK {#sdk-support}
 
 Para Node.js, o `@churchapps/integration-sdk` inclui um verificador tipado e um middleware para Express que cuida, para você, da captura do corpo bruto, da verificação da assinatura e da análise do envelope:
 

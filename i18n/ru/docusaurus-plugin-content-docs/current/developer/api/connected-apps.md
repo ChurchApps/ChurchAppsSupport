@@ -202,6 +202,6 @@ Content-Type: application/json
 
 На странице согласия B1Admin самозарегистрированный клиент получает уведомление о том, что он зарегистрировал себя сам, что он никогда не может сделать больше, чем собственная учётная запись пользователя в B1, и что его можно отключить в **Settings → Developer → Connected Apps**.
 
-## Поддержка SDK
+## Поддержка SDK {#sdk-support}
 
 Пакет `@churchapps/integration-sdk` оборачивает каждый поток OAuth типизированными помощниками: `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. См. README пакета и [Вебхуки](./webhooks.md#sdk-support) для сквозного примера.

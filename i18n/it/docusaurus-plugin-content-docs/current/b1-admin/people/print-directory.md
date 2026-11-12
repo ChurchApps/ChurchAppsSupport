@@ -1,90 +1,91 @@
 ---
-title: "Stampa Directory"
-description: "Genera dalla directory di B1 Admin un elenco stampabile dei membri raggruppato per nucleo, con foto, contatti e compleanni, in formato Letter."
+title: "Stampa dell'anagrafe"
+description: "Genera dall'anagrafe di B1 Admin un elenco dei membri stampabile, raggruppato per nucleo familiare, con foto, dati di contatto e compleanni, dimensionato per la carta letter."
 ---
 
-# Stampa Directory
+# Stampa dell'anagrafe
 
 <div class="article-intro">
 
-La funzionalità Stampa Directory genera una directory dei membri formattata e stampabile per la tua chiesa. Organizza i membri per nucleo familiare, include le informazioni di contatto e le foto, ed è progettata per apparire in modo professionale quando stampata su carta di formato lettera standard.
+La funzione Stampa dell'anagrafe genera un'anagrafe dei membri formattata e stampabile per la tua chiesa. Raggruppa i membri per nucleo familiare, include dati di contatto e foto ed è pensata per avere un aspetto professionale quando viene stampata su carta di formato letter standard.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Hai bisogno di un account B1 Admin attivo con il permesso di visualizzare le persone.
-- Le persone nella tua directory dovrebbero avere foto e informazioni di contatto riempite per i migliori risultati.
+- Ti serve un account B1 Admin attivo con il permesso di visualizzare le persone.
+- Per risultati migliori, le persone nell'anagrafe dovrebbero avere foto e dati di contatto compilati.
 
 </div>
 
-## Apertura della Directory di Stampa
+## Aprire la stampa dell'anagrafe {#opening-the-print-directory}
 
-1. Vai a **Persone** in B1 Admin.
-2. Fai clic su **Stampa Directory** nell'intestazione della pagina Persone.
-3. La Directory di Stampa si apre in una nuova scheda del browser e inizia a caricare i dati della tua directory.
-4. Dopo circa 1,5 secondi, la finestra di dialogo di stampa del tuo browser apparirà automaticamente.
+1. Vai su **Persone** in B1 Admin.
+2. Clicca su **Stampa anagrafe** nell'intestazione della pagina Persone.
+3. La stampa dell'anagrafe si apre in una nuova scheda del browser e inizia a caricare i dati dell'anagrafe.
+4. Dopo circa 1,5 secondi, comparirà automaticamente la finestra di stampa del browser.
 
 :::tip
-La directory si apre in una scheda separata in modo da poterla stampare senza lasciare la pagina Persone. Dopo che la finestra di dialogo di stampa appare, la scheda ritorna automaticamente.
+L'anagrafe si apre in una scheda separata, così puoi stamparla senza lasciare la pagina Persone. Quando chiudi la finestra di stampa, quella scheda torna alla pagina Persone: puoi chiuderla oppure continuare a lavorare lì.
 :::
 
-## Cosa Viene Incluso
+## Cosa viene incluso {#what-gets-included}
 
-La directory stampata include tutti i **membri attivi** della tua chiesa. Specificamente:
+La stampa dell'anagrafe include tutti i **membri attivi** della tua chiesa. In particolare:
 
-- Le persone con uno stato di iscrizione **Inattivo**, **Visitatore** o **Deceduto** sono automaticamente escluse.
-- Le persone che hanno **rinunciato** alla directory sono escluse.
+- Le persone con stato di membership **Inattivo**, **Visitatore** o **Deceduto** vengono escluse automaticamente.
+- Le persone che hanno **scelto di non comparire** nell'anagrafe vengono escluse.
 - Tutti gli altri sono raggruppati per **nucleo familiare**.
 
-### Stampa Solo dei Tuoi Risultati di Ricerca
+### Stampare solo i risultati della ricerca {#printing-only-your-search-results}
 
-Dopo aver eseguito una ricerca sulla pagina Persone -- una ricerca veloce, una [Ricerca Avanzata](./searching-people.md#advanced-search), un [Elenco Salvato](./lists.md) o una [Ricerca IA](./ai-search.md) -- il pulsante **Stampa Directory** cambia in **Stampa Risultati**. Facendo clic su di esso stampa una directory solo delle persone nei tuoi risultati invece dell'intera chiesa, utilizzando lo stesso layout.
+Dopo aver eseguito una ricerca nella pagina Persone -- una ricerca rapida, una [Ricerca avanzata](./searching-people.md#advanced-search), una [Lista salvata](./lists.md) oppure una [Ricerca AI](./ai-search.md) -- il pulsante **Stampa anagrafe** diventa **Stampa risultati**. Cliccandolo si stampa un'anagrafe con solo le persone dei risultati anziché l'intera chiesa, usando lo stesso layout.
 
-Quando stampi i risultati della ricerca, il filtro dello stato di iscrizione sopra non si applica: tutti coloro che hai cercato sono inclusi, anche i Visitatori o le persone Inattive. Le persone che hanno rinunciato alla directory sono comunque escluse. Per tornare alla stampa della directory completa, cancella prima la tua ricerca.
+Quando stampi i risultati di una ricerca, il filtro sullo stato di membership qui sopra non si applica: sono incluse tutte le persone cercate, anche i Visitatori o gli Inattivi. Le persone che hanno scelto di non comparire nell'anagrafe restano comunque escluse. Per tornare alla stampa dell'anagrafe completa, cancella prima la ricerca.
 
-## Layout della Directory
+## Layout dell'anagrafe {#directory-layout}
 
-La directory stampata ha due parti:
+L'anagrafe stampata ha due parti:
 
-### Pagina di Copertina
+### Copertina {#cover-page}
 
 La prima pagina include:
+- Il logo della tua chiesa, se impostato
 - Il nome della tua chiesa
-- Il titolo "Directory dei Membri"
-- L'anno corrente
-- La posizione della tua chiesa
-- Un conteggio dei nuclei familiari totali inclusi
+- Il titolo "Anagrafe dei membri"
+- L'anno in corso
+- La città e la provincia della tua chiesa
+- La data di stampa e il numero di nuclei familiari inclusi
 
-### Elenchi dei Membri
+### Schede dei membri {#member-listings}
 
-Le pagine rimanenti elencano i nuclei familiari in ordine alfabetico per cognome. Ogni scheda del nucleo familiare mostra:
+Le pagine successive elencano i nuclei familiari in ordine alfabetico per cognome. Ogni scheda di nucleo mostra:
 
-- **Foto** -- Miniature circolari per ogni membro del nucleo familiare, con il loro nome sotto
-- **Nome di visualizzazione del nucleo familiare** -- Ad esempio, "La Famiglia Smith", "John & Jane Doe" o solo il nome della persona per gli individui
-- **Indirizzo** -- Indirizzo stradale, città, stato e CAP
-- **Telefono** -- Numero di casa o cellulare
+- **Foto** -- Miniature circolari per ogni membro del nucleo, con il nome sotto
+- **Nome visualizzato del nucleo** -- Ad esempio, "Famiglia Rossi", "Giovanni e Maria Bianchi", oppure solo il nome della persona per i singoli
+- **Indirizzo** -- Via, città, provincia e CAP
+- **Telefono** -- Il numero di casa, oppure un cellulare se nessuno del nucleo ha un numero di casa
 - **Email** -- Indirizzo email principale
-- **Compleanni** -- Formattati come date individuali per ogni membro del nucleo familiare
+- **Compleanni** -- Il nome di battesimo e il compleanno (giorno e mese) di ciascun membro
 - **Anniversario** -- Se registrato
 
-I nuclei familiari sono organizzati in **sezioni alfabetiche** (A, B, C, ...) con un'intestazione di sezione decorativa prima di ogni gruppo di lettere. Due schede del nucleo familiare appaiono una accanto all'altra su ogni riga.
+I nuclei familiari sono organizzati in **sezioni alfabetiche** (A, B, C, ...) con un'intestazione decorativa prima di ogni gruppo di lettere. Due schede di nucleo compaiono affiancate in ogni riga.
 
-## Impostazioni di Stampa
+## Impostazioni di stampa {#print-settings}
 
-La directory è formattata per **carta di formato lettera** (8,5" × 11") con margini di 0,5 pollici. Quando appare la finestra di dialogo di stampa del browser:
+L'anagrafe è formattata per la **carta di formato letter** (8,5" × 11") con margini di 0,5 pollici. Quando compare la finestra di stampa del browser:
 
-- Lascia il formato della carta impostato su **Letter**
-- Abilita **Grafica di sfondo** (a volte chiamata "Stampa sfondi") nelle impostazioni di stampa del tuo browser se vuoi che le intestazioni di sezione si stampino con lo styling del colore
-- L'orientamento verticale è consigliato
+- Lascia il formato carta impostato su **Letter**
+- Attiva **Grafica di sfondo** (a volte chiamata "Stampa sfondi") nelle impostazioni di stampa del browser, se vuoi che le intestazioni di sezione vengano stampate con il loro colore
+- Si consiglia l'orientamento verticale
 
 :::info
-La directory rispetta i salti di pagina — le schede del nucleo familiare e le intestazioni di sezione non saranno divise tra le pagine.
+L'anagrafe rispetta le interruzioni di pagina: le schede dei nuclei familiari e le intestazioni di sezione non vengono mai divise tra due pagine.
 :::
 
-## Articoli Correlati
+## Articoli correlati {#related-articles}
 
-- [Ricerca Persone](./searching-people.md) -- Filtra la tua directory prima di stampare
-- [Esportazione dei Dati](./exporting-data.md) -- Esporta i dati della directory come foglio di calcolo
-- [Aggiunta di Persone](./adding-people.md) -- Aggiungi o aggiorna i record dei membri
+- [Cercare persone](./searching-people.md) -- Filtra l'anagrafe prima di stampare
+- [Esportare dati](./exporting-data.md) -- Esporta i dati dell'anagrafe come foglio di calcolo
+- [Aggiungere persone](./adding-people.md) -- Aggiungi o aggiorna le schede dei membri

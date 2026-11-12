@@ -182,7 +182,7 @@ OAuth क्लाइंट (तृतीय-पक्ष ऐप स्वयं
 | `POST /membership/oauth/clients` | Server.Admin | क्लाइंट बनाएँ या अपडेट करें |
 | `DELETE /membership/oauth/clients/:id` | Server.Admin | क्लाइंट हटाएँ |
 
-### डायनेमिक क्लाइंट पंजीकरण
+### डायनेमिक क्लाइंट पंजीकरण {#dynamic-client-registration}
 
 `POST /membership/oauth/register` (सार्वजनिक, RFC 7591) claude.ai के MCP कनेक्टर जैसे क्लाइंट को स्वयं को पंजीकृत करने देता है। यह API के `/.well-known/oauth-authorization-server` दस्तावेज़ द्वारा विज्ञापित है -- देखें [MCP Server → OAuth Discovery](./mcp.md#oauth-discovery)।
 
@@ -202,6 +202,6 @@ Content-Type: application/json
 
 B1Admin सहमति पृष्ठ पर, स्वयं-पंजीकृत क्लाइंट को एक सूचना मिलती है कि उसने स्वयं को पंजीकृत किया है, वह उपयोगकर्ता के अपने B1 खाते से अधिक कभी नहीं कर सकता, और उसे **Settings → Developer → Connected Apps** के अंतर्गत डिस्कनेक्ट किया जा सकता है।
 
-## SDK समर्थन
+## SDK समर्थन {#sdk-support}
 
 `@churchapps/integration-sdk` पैकेज हर OAuth फ़्लो को टाइप्ड हेल्पर्स के साथ लपेटता है -- `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`। एंड-टू-एंड उदाहरण के लिए पैकेज README और [Webhooks](./webhooks.md#sdk-support) देखें।

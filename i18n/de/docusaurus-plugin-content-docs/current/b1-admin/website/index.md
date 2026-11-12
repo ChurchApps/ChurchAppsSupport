@@ -1,54 +1,56 @@
 ---
 title: "Website"
-description: "Überblick über den Website-Baukasten in B1 Admin: Seiten, Blog, Blöcke, Design, Dateien und Kalender, mit Links zu Anleitungen."
+description: "Verschaffen Sie sich einen Überblick über den Website-Baukasten von B1 Admin: Seiten, Blog, Blöcke, Erscheinungsbild, Dateien und Kalender, mit Links zu Einrichtungs- und Bearbeitungsanleitungen."
 ---
 
 # Website
 
 <div class="article-intro">
 
-Der Website-Bereich in B1 Admin gibt Ihnen einen vollständigen Website-Builder für Ihre Kirche. Sie können Seiten erstellen, das Erscheinungsbild Ihrer Website anpassen, Mediendateien verwalten und Veranstaltungskalender veröffentlichen -- alles ohne Code zu schreiben.
+Der Bereich Website in B1 Admin bietet Ihrer Gemeinde einen vollwertigen Website-Baukasten. Sie können Seiten erstellen, das Aussehen Ihrer Website anpassen, Mediendateien verwalten und Veranstaltungskalender veröffentlichen – alles ohne Programmierung.
 
 </div>
 
-## Was Sie tun können
+## Was Sie tun können {#what-you-can-do}
 
-Der Website-Builder ist in mehrere Hauptbereiche organisiert:
+Der Website-Baukasten gliedert sich in diese Hauptbereiche:
 
-### Seiten
+### Seiten {#pages}
 
-Erstellen und verwalten Sie alle Seiten auf Ihrer Kirchenwebsite. Die Tabelle **Seiten** listet jede Seite auf -- vom System automatisch erstellte Seiten tragen ein Badge **Generiert**, die übrigen sind benutzerdefinierte Seiten, die Sie erstellt haben. Sie können neue benutzerdefinierte Seiten hinzufügen, bestehende bearbeiten oder automatisch generierte Seiten in benutzerdefinierte Seiten für volle Kontrolle über ihren Inhalt konvertieren.
+Erstellen und verwalten Sie alle Seiten Ihrer Gemeindewebsite. In der Tabelle **Seiten** listet jede Seite auf – vom System automatisch erstellte Seiten tragen die Kennzeichnung **Generiert**, alle übrigen sind eigene Seiten, die Sie angelegt haben. Sie können neue eigene Seiten hinzufügen, bestehende bearbeiten oder automatisch erzeugte Seiten in eigene Seiten umwandeln, um ihren Inhalt vollständig zu kontrollieren.
 
-Ihre Navigationslinks werden in einer Baumstruktur angezeigt. Sie können Links mit Drag-and-Drop neu ordnen, um die genaue Hierarchie und Reihenfolge festzulegen, die Besucher sehen.
+Ihre Navigationslinks werden im Bereich **Hauptnavigation** neben der Seitentabelle aufgelistet. Sie können Links per Ziehen und Ablegen neu anordnen und verschachteln, um genau die Hierarchie und Reihenfolge festzulegen, die Besucher sehen sollen. Siehe [Seiten verwalten](./managing-pages.md).
 
-### Blog
+### Blog {#blog}
 
-Veröffentlichen Sie Neuigkeiten, Updates und Andachten als Blogbeiträge unter `/blog` auf Ihrer Website, mit einem RSS-Feed. Siehe den [Blog](./blog.md)-Leitfaden.
+Veröffentlichen Sie Neuigkeiten, Updates und Andachten als Blogbeiträge unter `/blog` auf Ihrer Website, mit RSS-Feed. Siehe die Anleitung [Blog](./blog.md).
 
-### Blöcke
+### Blöcke {#blocks}
 
-Erstellen Sie wiederverwendbare Inhaltskomponenten, die Sie auf mehreren Seiten platzieren können. Blöcke sparen Sie Zeit, wenn Sie Inhalte haben, wie ein Call-to-Action, ein Ankündigungsbanner oder ein Kontaktabschnitt, der an mehr als einem Ort angezeigt wird. Aktualisieren Sie einen Block einmal, und die Änderung gilt überall, wo er verwendet wird.
+Erstellen Sie wiederverwendbare Inhaltskomponenten, die Sie auf mehreren Seiten platzieren können. Blöcke sparen Zeit, wenn Inhalte wie ein Aufruf zum Handeln, ein Ankündigungsbanner oder ein Kontaktabschnitt an mehr als einer Stelle erscheinen. Aktualisieren Sie einen Block einmal, und die Änderung gilt überall, wo er verwendet wird. Siehe [Wiederverwendbare Blöcke](./blocks.md).
 
-### Erscheinungsbild
+### Erscheinungsbild {#appearance}
 
-Passen Sie das Thema, die Farben, Schriftarten, das Logo und den Abstand Ihrer Website an. Sie können vordefinierte Stil-Themen für einen schnellen Start anwenden oder jedes Detail mit dem Farbpaletten-Editor, Typographie-Einstellungen und benutzerdefinierten CSS feinabstimmen. Siehe den [Erscheinungsbild](./appearance.md)-Leitfaden für vollständige Details.
+Passen Sie Design, Farben, Schriften, Logo und Abstände Ihrer Website an. Sie können vorgefertigte Stilvorlagen für einen schnellen Start verwenden oder jedes Detail mit dem Farbpaletteneditor, den Typografie-Einstellungen und eigenem CSS feinabstimmen. Ausführliche Informationen finden Sie in der Anleitung [Erscheinungsbild](./appearance.md).
 
-### Dateien
+### Dateien {#files}
 
-Laden Sie alle Ihre Medien-Assets -- Bilder, Dokumente und andere Dateien -- an einem zentralen Ort hoch und verwalten Sie sie, und kopieren Sie Datei-Links zur Verwendung überall auf Ihrer Website. Siehe [Dateien](./files.md) für weitere Informationen.
+Laden Sie alle Ihre Mediendateien – Bilder, Dokumente und andere Dateien – an einem zentralen Ort hoch und verwalten Sie sie, und kopieren Sie Dateilinks, um sie überall auf Ihrer Website zu verwenden. Weitere Informationen finden Sie unter [Dateien](./files.md).
 
-### Kalender
+### Kalender {#calendars}
 
-Veröffentlichen Sie Veranstaltungskalender auf Ihrer Website, sodass Besucher sehen können, was in Ihrer Kirche passiert. Erstellen Sie kuratierte Kalender, die Veranstaltungen von mehreren Gruppen in einer einzelnen Ansicht ziehen. Kalender haben einen eigenen Menüpunkt **Calendars** im B1 Admin-Menü, getrennt von **Website**.
+Veröffentlichen Sie Veranstaltungskalender auf Ihrer Website, damit Besucher sehen, was in Ihrer Gemeinde geschieht. Erstellen Sie kuratierte Kalender, die Veranstaltungen mehrerer Gruppen in einer einzigen Ansicht zusammenführen. Kalender haben einen eigenen Eintrag **Kalender** im Menü von B1 Admin, getrennt von **Website**.
 
 :::tip
-Beginnen Sie mit [Anfangseinrichtung](./initial-setup.md), wenn Sie Ihre Website zum ersten Mal konfigurieren. Es führt Sie durch Domain-Setup, das Erstellen Ihrer ersten Seite und die Konfiguration des Erscheinungsbildes Ihrer Website.
+Beginnen Sie mit der [Ersteinrichtung](./initial-setup.md), wenn Sie Ihre Website zum ersten Mal konfigurieren. Sie führt Sie durch die Einrichtung der Domain, das Anlegen Ihrer ersten Seite und die Gestaltung des Erscheinungsbilds Ihrer Website.
 :::
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- [Anfangseinrichtung](./initial-setup.md) -- Richten Sie Ihre Website zum ersten Mal ein
-- [Seiten verwalten](./managing-pages.md) -- Erfahren Sie, wie Sie Seiten und Navigation bearbeiten
-- [Verwendung des Seiten-Editors](./page-editor.md) -- Erstellen und gestalten Sie Ihren Seiteninhalt mit dem visuellen Editor
-- [Erscheinungsbild](./appearance.md) -- Passen Sie das Erscheinungsbild und das Verhalten Ihrer Website an
-- [Dateien](./files.md) -- Laden Sie Mediendateien hoch und verwalten Sie sie
+- [Ersteinrichtung](./initial-setup.md) -- Ihre Website zum ersten Mal in Betrieb nehmen
+- [Seiten verwalten](./managing-pages.md) -- Erfahren Sie, wie Sie Ihre Seiten erstellen und ordnen
+- [Den Seiteneditor verwenden](./page-editor.md) -- Gestalten Sie Ihre Seiteninhalte mit dem visuellen Editor
+- [Wiederverwendbare Blöcke](./blocks.md) -- Inhalte einmal erstellen und auf vielen Seiten wiederverwenden
+- [Blog](./blog.md) -- Neuigkeiten und Andachten veröffentlichen
+- [Erscheinungsbild](./appearance.md) -- Das Aussehen Ihrer Website anpassen
+- [Dateien](./files.md) -- Mediendateien hochladen und verwalten

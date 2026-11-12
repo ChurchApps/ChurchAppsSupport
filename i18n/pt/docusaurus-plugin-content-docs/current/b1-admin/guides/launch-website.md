@@ -1,91 +1,102 @@
 ---
-title: "Guia: Lance Seu Site da Igreja"
-description: "Configure o site da igreja no B1 Admin: página inicial, cores e logo, páginas principais, domínio próprio e formulários de doação."
+title: "Guia: Lance o Site da Sua Igreja"
+description: "Configure um site de igreja no B1 Admin: monte a página inicial, combine as cores e o logotipo, adicione as páginas principais, conecte um domínio próprio e inclua formulários de doação."
 ---
 
-# Lance Seu Site da Igreja
+# Lance o Site da Sua Igreja
 
 <div class="article-intro">
 
-B1.church inclui um construtor de site completo sem custo extra. Este guia o conduz pela criação do site de sua igreja do zero -- configuração de sua página inicial, configuração de sua aparência, adição de páginas principais e opcionalmente conectando doações online e formulários de registro de eventos.
+O B1.church inclui um criador de sites completo, sem custo adicional. Este guia orienta você na criação do site da sua igreja do zero -- configurando a página inicial, definindo a aparência, adicionando as páginas principais e, opcionalmente, conectando formulários de doação online e de inscrição em eventos.
 
 </div>
+
+## Vídeo de Treinamento {#training-video}
+
+<YouTube id="aA4UahZpmXg" title="Lançando o Site da Sua Igreja no B1" next="Editando Páginas e Navegação no B1" nextUrl="/docs/b1-admin/website/page-editor" />
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Tenha seu logotipo da igreja pronto (PNG com fundo transparente funciona melhor)
-- Escolha 2 a 3 cores de marca para seu site
-- Se usar um domínio personalizado (por exemplo, suaigreia.com), tenha acesso ao seu provedor de DNS (GoDaddy, Cloudflare, etc.)
-- Se quiser doações online em seu site, conclua primeiro [Configuração de Doações Online](../donations/online-giving-setup.md) (Stripe)
+- Tenha o logotipo da sua igreja em mãos (PNG com fundo transparente funciona melhor)
+- Escolha de 2 a 3 cores da sua identidade visual para o site
+- Se for usar um domínio próprio (por exemplo, yourchurch.com), tenha acesso ao seu provedor de DNS (GoDaddy, Cloudflare etc.)
+- Se quiser doações online no seu site, conclua antes a [Configuração de Doações Online](../donations/online-giving-setup.md) (Stripe)
 
 </div>
 
-## Passo 1: Configuração Inicial do Site
+## Passo 1: Configuração Inicial do Site {#step-1-initial-website-setup}
 
-Comece criando sua página inicial e estrutura de site básica.
+Comece criando a sua página inicial e a estrutura básica do site.
 
 Siga o guia [Configuração Inicial do Site](../website/initial-setup.md) para:
 
-1. Navegue até **Site** em B1 Admin
-2. Crie sua página inicial com uma seção hero, mensagem de boas-vindas e informações principais
-3. Adicione o nome e slogan de sua igreja
+1. No [menu Jump](../introduction.md#getting-around-with-the-jump-menu), escolha **Site > Páginas**
+2. Clique em **Adicionar Página**, escolha **Em branco**, informe "Início" como **Título da Página** e clique em **Salvar**. Em **Configurações da página**, defina o **Caminho da URL** como `/`
+3. Clique em **Editar conteúdo**, adicione uma **Seção** e, em seguida, inclua o seu destaque principal, a mensagem de boas-vindas, o nome e o slogan da igreja e outras informações importantes
 
-## Passo 2: Configure a Aparência
+:::tip
+Começando do zero? Um [Modelo de site](../website/managing-pages.md#starting-from-a-site-template) cria um conjunto de páginas prontas (início, sobre, conecte-se, contribua e outras), com os links de navegação já configurados -- basta substituir o conteúdo de exemplo pelo seu.
+:::
+
+## Passo 2: Configure a Aparência {#step-2-configure-appearance}
 
 Defina a identidade visual do seu site -- cores, fontes, logotipo e rodapé.
 
 Siga o guia [Aparência](../website/appearance.md) para:
 
-1. Envie o logotipo de sua igreja
-2. Defina suas cores primária e de destaque
-3. Configure a barra de navegação e rodapé
-4. Visualize suas alterações
+1. No menu Jump, escolha **Site > Aparência**
+2. Em **Logotipo**, envie um **Logotipo para Fundo Claro** e um **Logotipo para Fundo Escuro**
+3. Em **Paleta de cores**, defina as cores da sua marca e clique em **Salvar paleta** e, em seguida, escolha as suas **Fontes**
+4. Use **Navegação** para estilizar a barra de navegação e **Rodapé do site** para montar o rodapé que aparece em todas as páginas
 
 :::tip
-Mantenha sua paleta de cores simples -- uma cor primária mais uma cor de destaque é geralmente suficiente. O construtor de site cuidará do resto.
+Mantenha a paleta de cores simples -- uma cor principal e uma cor de destaque costumam bastar. O criador de sites cuida do restante.
 :::
 
-## Passo 3: Adicione Páginas de Conteúdo
+## Passo 3: Adicione as Páginas de Conteúdo {#step-3-add-content-pages}
 
-Crie as páginas que seus visitantes mais precisam.
+Crie as páginas de que os seus visitantes mais precisam.
 
 Siga o guia [Gerenciando Páginas](../website/managing-pages.md) para criar páginas como:
 
-- **Sobre** -- A história, crenças e liderança da sua igreja
-- **Sermões** -- Link para sua [biblioteca de sermões](../sermons/managing-sermons.md)
-- **Eventos** -- Eventos futuros e registro
-- **Doar** -- Página de doações online (requer [configuração do Stripe](../donations/online-giving-setup.md))
-- **Contato** -- Localização, horários de serviço e informações de contato
+- **Sobre** — A história da sua igreja, as suas crenças e a liderança
+- **Pregações** — Um link para a sua [biblioteca de pregações](../sermons/managing-sermons.md)
+- **Eventos** — Próximos eventos e inscrições
+- **Contribua** — Página de doações online (requer a [configuração do Stripe](../donations/online-giving-setup.md))
+- **Contato** — Localização, horários de culto e informações de contato
 
-## Passo 4: Conecte Seu Domínio
+## Passo 4: Conecte o Seu Domínio {#step-4-connect-your-domain}
 
-Se você deseja usar seu próprio nome de domínio (como suaigreia.com) em vez da URL B1 padrão:
+Se você quiser usar o seu próprio nome de domínio (como yourchurch.com) em vez do endereço padrão do B1:
 
-1. Vá para **Configurações** em B1 Admin e abra a seção **Domínios**
-2. Digite seu domínio personalizado
-3. Atualize seus registros DNS no seu provedor de domínio para apontar para B1
+Siga o guia [Domínio Próprio](../settings/custom-domain.md) para:
+
+1. No seu provedor de domínio, adicione um registro **CNAME** para `www` apontando para `proxy.b1.church` (ou um registro **A** para o seu domínio principal apontando para `3.23.251.61`)
+2. No menu Jump, escolha **Configurações > Configurações**, clique em **Editar** na seção **Domínios**, digite o seu domínio e clique em **Salvar**
 
 :::info
-As alterações de DNS podem levar até 48 horas para se propagar. Seu site pode não estar acessível a partir de seu domínio personalizado imediatamente. A URL B1 padrão continuará funcionando durante este tempo.
+Configure o DNS primeiro: o B1 salva o domínio imediatamente, mas não carrega o seu site (nem obtém o certificado SSL) até que o DNS aponte para o B1. As alterações de DNS podem levar de alguns minutos a algumas horas. O endereço padrão do B1 continua funcionando o tempo todo.
 :::
 
-## Passo 5: Adicione Doações e Formulários
+## Passo 5: Adicione Doações e Formulários {#step-5-add-giving-and-forms}
 
-Aprimore seu site com elementos interativos:
+Enriqueça o seu site com elementos interativos:
 
-- **Doações Online** -- Adicione uma seção de doações para que os membros possam fazer doações diretamente do seu site. Consulte [Configuração de Doações Online](../donations/online-giving-setup.md) para configurar o Stripe primeiro.
-- **Formulários de Registro** -- Incorpore [formulários Independentes](../forms/creating-forms.md) para inscrições em eventos, cartões de visitante ou aplicações de voluntário. Consulte [Gerenciando Páginas](../website/managing-pages.md) para saber como adicionar um elemento de formulário a qualquer página.
+- **Doações online** — Adicione um elemento **Doação** para que os membros possam contribuir diretamente pelo seu site. Veja [Configuração de Doações Online](../donations/online-giving-setup.md) para configurar o Stripe primeiro.
+- **Formulários de inscrição** — Incorpore [formulários Independentes](../forms/creating-forms.md) para inscrições em eventos, cartões de visitante ou inscrições de voluntários com o elemento **Formulário**. Veja o [Editor de Páginas](../website/page-editor.md) para saber como adicionar elementos a qualquer página.
 
-## Pronto!
+## Pronto! {#youre-done}
 
-Seu site da igreja está ativo. Compartilhe a URL com sua congregação e em mídia social. Você pode atualizar conteúdo, adicionar novas páginas e ajustar a aparência a qualquer momento no painel B1 Admin.
+O site da sua igreja está no ar. Compartilhe o endereço com a sua congregação e nas redes sociais. Você pode atualizar o conteúdo, adicionar novas páginas e ajustar a aparência a qualquer momento pela seção **Site** do B1 Admin.
 
-## Artigos Relacionados
+## Artigos Relacionados {#related-articles}
 
-- [Configuração Inicial do Site](../website/initial-setup.md) -- passo a passo de configuração detalhado
-- [Gerenciando Páginas](../website/managing-pages.md) -- adicionar e editar páginas
-- [Aparência](../website/appearance.md) -- cores, logotipo e layout
-- [Gerenciando Arquivos](../website/files.md) -- fazer upload de imagens e documentos
-- [Configuração de Doações Online](../donations/online-giving-setup.md) -- configurar Stripe
-- [Criando Formulários](../forms/creating-forms.md) -- construir formulários de registro e pesquisa
+- [Configuração Inicial do Site](../website/initial-setup.md) — passo a passo detalhado da configuração
+- [Gerenciando Páginas](../website/managing-pages.md) — adicione e edite páginas
+- [Aparência](../website/appearance.md) — cores, logotipo e layout
+- [Editor de Páginas](../website/page-editor.md) — adicione seções, textos, imagens, formulários e doações
+- [Domínio Próprio](../settings/custom-domain.md) — use o seu próprio endereço na web
+- [Gerenciando Arquivos](../website/files.md) — envie imagens e documentos
+- [Configuração de Doações Online](../donations/online-giving-setup.md) — configure o Stripe
+- [Criando Formulários](../forms/creating-forms.md) — crie formulários de inscrição e pesquisa

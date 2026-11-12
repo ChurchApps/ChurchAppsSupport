@@ -1,128 +1,128 @@
 ---
 title: "Slack e Discord"
-description: "Pubblica in un canale Slack o Discord gli eventi di B1 Admin, come nuove persone, donazioni e moduli, con un webhook in ingresso, senza Zapier."
+description: "Pubblica in un canale Slack o Discord gli eventi di B1 Admin come nuove persone, donazioni e risposte ai moduli, con un webhook in ingresso e senza bisogno di Zapier."
 ---
 
 # Slack e Discord
 
 <div class="article-intro">
 
-Pubblica notifiche leggibili da B1 direttamente a un canale Slack o Discord — nuove persone, donazioni, iscrizioni a gruppi, invii di moduli, eventi del calendario e altro ancora. Nessun account di terze parti, nessuno Zap da mantenere: B1 riformatta gli eventi in messaggi di chat e li PUBBLICA all'URL del webhook del canale stesso.
+Pubblica notifiche leggibili da B1 direttamente in un canale Slack o Discord: nuove persone, donazioni, iscrizioni ai gruppi, risposte ai moduli, eventi del calendario e altro ancora. Nessun account di terze parti, nessuno Zap da mantenere: B1 riformatta gli eventi in messaggi di chat e li invia direttamente all'URL webhook del canale.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Hai bisogno dell'autorizzazione **Modifica impostazioni** in B1Admin
-- Un amministratore nel tuo workspace Slack o server Discord per creare il webhook in arrivo del canale
-- Decidi quale canale desideri le notifiche (puoi utilizzare lo stesso canale per diversi tipi di evento, o suddividerli tra i canali)
+- Ti serve il permesso **Modifica impostazioni** in B1Admin
+- Un amministratore del tuo workspace Slack o del tuo server Discord che crei il Webhook in ingresso del canale
+- Decidi in quale canale vuoi ricevere le notifiche (puoi usare lo stesso canale per più tipi di evento, oppure dividerli su canali diversi)
 
 </div>
 
-## Come funziona
+## Come funziona {#how-it-works}
 
-B1 ha un **Tipo di connettore** incorporato per le piattaforme di chat. Quando crei un webhook con tipo **Slack** o **Discord**, il motore del webhook fa comunque il suo solito lavoro di consegna + nuovo tentativo + firma di intestazione, ma il corpo che invia viene rimodellato dall'envelope `{event,churchId,data}` normale di B1 nel piccolo `{text}` (Slack) o `{content}` (Discord) messaggio che quei servizi si aspettano.
+B1 ha un **Tipo di connettore** integrato per le piattaforme di chat. Quando crei un webhook di tipo **Slack** o **Discord**, il motore dei webhook esegue la solita consegna + ripetizione + intestazioni firmate, ma il corpo inviato viene rimodellato dal normale involucro `{event,churchId,data}` di B1 nel piccolo messaggio `{text}` (Slack) o `{content}` (Discord) che questi servizi si aspettano.
 
-Nessun server B1 raggiunge Slack su base per chiesa diverso dal flusso webhook in uscita esistente — non c'è nulla di nuovo da ospitare, nulla di extra da pagare.
+Nessun server di B1 contatta Slack per una singola chiesa oltre al normale flusso dei webhook in uscita: non c'è nulla di nuovo da ospitare né da pagare.
 
-## Slack — Passo dopo passo
+## Slack — passo dopo passo {#slack--step-by-step}
 
-### 1. Ottieni un URL webhook in arrivo di Slack
+### 1. Ottieni un URL di Webhook in ingresso di Slack {#1-get-a-slack-incoming-webhook-url}
 
-1. Apri [api.slack.com/apps](https://api.slack.com/apps) nel workspace Slack in cui desideri le notifiche.
-2. Fai clic su **Crea nuova app → Da zero**, chiamala qualcosa come "Notifiche B1", e scegli il workspace.
-3. Nel nav sinistro scegli **Webhook in arrivo** e attiva **Attiva webhook in arrivo** su *Attivo*.
-4. Fai clic su **Aggiungi nuovo webhook al workspace**, scegli il canale (ad es. `#donazioni`), quindi **Consenti**.
-5. Slack ti riporta sulla pagina con un fresco **URL webhook** che assomiglia a `https://hooks.slack.com/services/T0XXXXXXX/B0YYYYYYY/zzz…`. Copialo — questo è l'unico pezzo di informazione di cui B1 ha bisogno.
+1. Apri [api.slack.com/apps](https://api.slack.com/apps) nel workspace Slack in cui vuoi ricevere le notifiche.
+2. Clicca su **Create New App → From scratch** (Crea nuova app → Da zero), chiamala qualcosa come "B1 Notifications" e scegli il workspace.
+3. Nel menu a sinistra scegli **Incoming Webhooks** e imposta **Activate Incoming Webhooks** su *On*.
+4. Clicca su **Add New Webhook to Workspace** (Aggiungi nuovo webhook al workspace), scegli il canale (ad esempio `#donations`), poi **Allow** (Consenti).
+5. Slack ti riporta alla pagina con un nuovo **Webhook URL** simile a `https://hooks.slack.com/services/T0XXXXXXX/B0YYYYYYY/zzz…`. Copialo: è l'unica informazione di cui B1 ha bisogno.
 
 :::caution
-Tratta l'URL del webhook di Slack come un segreto. Chiunque lo abbia può pubblicare messaggi arbitrari al canale. Se lo esponi accidentalmente, rigeneralo dalla pagina dell'app Slack (rigenerare solo ruota l'URL; aggiorna B1 per corrispondere).
+Tratta l'URL del webhook di Slack come un segreto. Chiunque lo possieda può pubblicare messaggi arbitrari nel canale. Se lo esponi per errore, rigeneralo dalla pagina dell'app Slack (la rigenerazione cambia solo l'URL: aggiorna B1 di conseguenza).
 :::
 
-### 2. Collegalo in B1Admin
+### 2. Collegalo in B1Admin {#2-connect-it-in-b1admin}
 
-1. In B1Admin vai a **Impostazioni → Sviluppatore → Webhook**.
-2. Fai clic su **Nuovo webhook**.
+1. In B1Admin vai su **Impostazioni → Sviluppatori → Webhook**.
+2. Clicca su **Nuovo webhook**.
 3. Compila:
-   - **Nome** — qualcosa di leggibile come "Donazioni → #donazioni". Solo il tuo team lo vede.
-   - **Tipo di connettore** — scegli **Slack**.
-   - **URL payload** — incolla l'URL Slack dal passaggio 1.
-   - **Eventi** — tick degli eventi che desideri come messaggi. Per un canale di donazioni, giusto `donation.created`. Per un canale #persone, prova `person.created` e `group.member.added`.
-4. Fai clic su **Salva**. Una finestra di dialogo "Segreto di firma" appare — puoi ignorarla per Slack (Slack non verifica le firme di B1) e chiuderla.
+   - **Nome**: un'etichetta leggibile come "Donazioni → #donations". La vede solo il tuo team.
+   - **Tipo di connettore**: scegli **Slack**.
+   - **URL del payload**: incolla l'URL di Slack del passaggio 1.
+   - **Eventi**: seleziona gli eventi che vuoi ricevere come messaggi. Per un canale delle donazioni, solo `donation.created`. Per un canale #people, prova `person.created` e `group.member.added`.
+4. Clicca su **Salva**. Compare una finestra "Segreto di firma": per Slack puoi ignorarla (Slack non verifica le firme di B1) e chiuderla.
 
-### 3. Testalo
+### 3. Verifica il funzionamento {#3-test-it}
 
-Ri-apri il webhook dall'elenco e fai clic su **Invia evento di prova**. Entro un secondo o due un messaggio come
+Riapri il webhook dall'elenco e clicca su **Invia evento di prova**. B1 invia un esempio del primo evento che hai selezionato: entro un secondo o due compare nel canale Slack un messaggio come
 
-> 💝 Nuova donazione: $50.00
+> 💝 Nuova donazione: 50,00 $
 
-appare nel tuo canale Slack, e una nuova riga appare nella tabella **Consegne recenti** sulla stessa schermata con stato `succeeded`. Hai finito.
+e nella tabella **Consegne recenti** della stessa schermata appare una nuova riga con stato `succeeded` (riuscita). Fatto.
 
-## Discord — Passo dopo passo
+## Discord — passo dopo passo {#discord--step-by-step}
 
-### 1. Ottieni un URL webhook di Discord
+### 1. Ottieni un URL di Webhook di Discord {#1-get-a-discord-webhook-url}
 
-1. Nel tuo server Discord, passa il mouse sul canale in cui desideri le notifiche e fai clic sulla **⚙ marcia** (Modifica canale).
+1. Nel tuo server Discord, passa il mouse sul canale in cui vuoi ricevere le notifiche e clicca sull'**ingranaggio ⚙** (Modifica canale).
 2. Apri **Integrazioni → Webhook → Nuovo webhook**.
-3. Dagli un nome e (facoltativamente) un avatar, quindi fai clic su **Copia URL webhook** — assomiglia a `https://discord.com/api/webhooks/123…/abc…`.
+3. Dagli un nome e, facoltativamente, un avatar, poi clicca su **Copia URL webhook**: avrai qualcosa come `https://discord.com/api/webhooks/123…/abc…`.
 
-### 2. Collegalo in B1Admin
+### 2. Collegalo in B1Admin {#2-connect-it-in-b1admin-1}
 
-Identico al flusso Slack di cui sopra, tranne impostare **Tipo di connettore** su **Discord**. Incolla l'URL di Discord in **URL payload** e salva.
+Identico al flusso di Slack descritto sopra, con la differenza che devi impostare **Tipo di connettore** su **Discord**. Incolla l'URL di Discord in **URL del payload** e salva.
 
 :::tip
-Tu **non** hai bisogno di aggiungere `/slack` alla fine dell'URL di Discord — B1 invia payload nativi Discord `{content}`, non compatibili con Slack. Basta incollare l'URL che Discord ti ha dato.
+**Non** devi aggiungere `/slack` alla fine dell'URL di Discord: B1 invia payload nativi di Discord `{content}`, non quelli compatibili con Slack. Incolla semplicemente l'URL fornito da Discord.
 :::
 
-### 3. Testalo
+### 3. Verifica il funzionamento {#3-test-it-1}
 
-Stesso pulsante **Invia evento di prova** — Discord mostra il messaggio nel canale scelto e il registro di consegna gira su `succeeded`.
+Stesso pulsante **Invia evento di prova**: Discord mostra il messaggio nel canale scelto e il registro delle consegne passa a `succeeded`.
 
-## Come appaiono i messaggi
+## Come appaiono i messaggi {#what-the-messages-look-like}
 
-| Evento | Messaggio di esempio |
+| Evento | Esempio di messaggio |
 |---|---|
 | `person.created` | 👤 Nuova persona aggiunta: Jordan Rivera |
 | `person.updated` | 👤 Persona aggiornata: Jordan Rivera |
 | `group.created` | 👥 Nuovo gruppo creato: Studio biblico del martedì |
 | `group.member.added` | ➕ Qualcuno è stato aggiunto a un gruppo |
-| `donation.created` | 💝 Nuova donazione: $50.00 |
-| `donation.updated` | 💝 Donazione aggiornata: $75.00 |
-| `attendance.recorded` | ✅ Presenze registrate |
-| `form.submission.created` | 📝 Nuovo invio di modulo ricevuto |
-| `event.created` | 📅 Nuovo evento: Servizio di Pasqua |
+| `donation.created` | 💝 Nuova donazione: 50,00 $ |
+| `donation.updated` | 💝 Donazione aggiornata: 75,00 $ |
+| `attendance.recorded` | ✅ Presenza registrata |
+| `form.submission.created` | 📝 Ricevuta una nuova risposta al modulo |
+| `event.created` | 📅 Nuovo evento: Culto di Pasqua |
 
-L'elenco completo vive nel [catalogo degli eventi webhook](/docs/developer/api/webhooks#event-catalog) — qualsiasi evento lì può essere instradato a Slack/Discord.
+L'elenco completo si trova nel [catalogo degli eventi dei webhook](/docs/developer/api/webhooks#event-catalog): qualsiasi evento presente lì può essere inviato a Slack/Discord.
 
-## Un canale per argomento
+## Un canale per argomento {#one-channel-per-topic}
 
-Non devi mettere ogni evento in un posto. La maggior parte delle chiese configura una manciata di webhook:
+Non devi mettere tutti gli eventi in un unico posto. La maggior parte delle chiese configura alcuni webhook:
 
-- Un canale **#donazioni** che ascolta solo `donation.created`
+- Un canale **#donations** che ascolta solo `donation.created`
 - Un canale **#new-people** per `person.created` e `group.member.added`
-- Un canale **#admin-alerts** per cose a basso volume come `form.submission.created`
+- Un canale **#admin-alerts** per eventi a basso volume come `form.submission.created`
 
-Non c'è limite al numero di webhook per chiesa. Ciascuno è indipendente — eliminare o disabilitare uno non influisce sugli altri.
+Non c'è un limite al numero di webhook per chiesa. Ognuno è indipendente: eliminare o disattivare uno non influisce sugli altri.
 
-## Ispezione dei trasporti
+## Controllare le consegne {#inspecting-deliveries}
 
-La tabella **Consegne recenti** dell'editor webhook mostra gli ultimi 50 tentativi. Fai clic su una riga per vedere il payload esatto inviato e la risposta restituita. Per un connettore Slack il payload è `{"text":"💝 Nuova donazione: $50.00"}` — non l'envelope `{event,churchId,...}` grezzo — perché B1 lo rimodella prima della consegna.
+La tabella **Consegne recenti** dell'editor dei webhook mostra gli ultimi 50 tentativi. Clicca su una riga per vedere il payload esatto inviato e la risposta ricevuta. Per un connettore Slack il payload è `{"text":"💝 New donation: $50.00"}` (non il normale involucro `{event,churchId,...}`), perché B1 lo rimodella prima dell'invio.
 
-Se qualcosa non è riuscito (badge rosso `failed` o `exhausted`), la finestra di dialogo mostra lo stato HTTP e il corpo della risposta in modo da poter vedere esattamente cosa Slack o Discord non ha fatto — di solito un errore di copia/incolla nell'URL.
+Se qualcosa non è andato a buon fine (un badge arancione `failed` mentre B1 sta ancora riprovando, oppure un badge rosso `exhausted` quando ha smesso), la colonna **Risposta** mostra lo stato HTTP e la finestra della riga mostra il corpo della risposta, così puoi vedere esattamente cosa non è piaciuto a Slack o Discord: di solito un errore di copia e incolla nell'URL. Clicca su **Rispedisci** per inviare di nuovo quella consegna.
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-- **Nessun messaggio appare + stato di consegna `400`** — di solito il tipo di connettore è impostato su **Standard** ma l'URL è uno di Slack/Discord. Slack/Discord rifiutano l'envelope grezzo. Cambia il dropdown su **Slack** o **Discord** e rimanda il test.
-- **Webhook disabilitato automaticamente** — dopo 3 consegne consecutive non riuscite B1 disattiva il webhook. Correggi l'URL (o ruotalo su Slack/Discord) e attiva **Attivo** di nuovo.
-- **Il messaggio è arrivato ma manca dettagli** — ogni piattaforma di chat limita la dimensione del messaggio. I messaggi di B1 sono one-liner per progettazione; per notifiche più ricche usa [Zapier](./zapier.md) o [Make](./make.md) per comporre un messaggio Slack più completo tramite le loro azioni Slack.
+- **Non compare alcun messaggio e lo stato della consegna è `400`**: di solito il Tipo di connettore è impostato su **Standard** ma l'URL è di Slack/Discord. Slack e Discord rifiutano l'involucro grezzo. Cambia il menu a tendina su **Slack** o **Discord** e reinvia il test.
+- **Webhook disattivato automaticamente**: B1 ripete ogni consegna fallita per circa cinque giorni. Se tre consegne di seguito esauriscono i tentativi, B1 disattiva il webhook (lo stato diventa **Disattivato**). Correggi l'URL (oppure rigeneralo su Slack/Discord), riattiva **Attivo** e salva.
+- **Il messaggio arriva ma mancano dettagli**: ogni piattaforma di chat limita la dimensione dei messaggi. I messaggi di B1 sono volutamente essenziali; per notifiche più ricche usa [Zapier](./zapier.md) o [Make](./make.md) per comporre un messaggio Slack più completo con le loro azioni Slack.
 
-## Cambio dei tipi di connettore in seguito
+## Cambiare tipo di connettore in seguito {#switching-connector-types-later}
 
-Puoi cambiare il tipo di connettore su un webhook esistente — ha effetto alla prossima consegna. Se passi da Slack a Standard, punti l'URL al tuo endpoint HTTPS e lo stesso segreto di firma (è stato emesso quando il webhook è stato creato) inizia a essere verificabile come l'envelope grezzo.
+Puoi cambiare il Tipo di connettore di un webhook esistente: ha effetto alla consegna successiva. Se passi da Slack a Standard, punta l'URL al tuo endpoint HTTPS; lo stesso segreto di firma (emesso alla creazione del webhook) inizierà a essere verificabile come involucro grezzo.
 
-## Vedi anche
+## Vedi anche {#see-also}
 
-- [Zapier](./zapier.md) — per flussi di lavoro multi-step attivati da eventi B1
-- [Make](./make.md) — builder di scenari visivi
-- [Webhook (riferimento per sviluppatori)](/docs/developer/api/webhooks) — il formato completo del payload + firma se mai punti un webhook al tuo server
+- [Zapier](./zapier.md): per flussi di lavoro in più passaggi attivati dagli eventi di B1
+- [Make](./make.md): generatore visuale di scenari
+- [Webhook (riferimento per sviluppatori)](/docs/developer/api/webhooks): il formato completo di payload e firma, se mai punterai un webhook al tuo server

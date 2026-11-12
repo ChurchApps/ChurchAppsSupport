@@ -1,38 +1,42 @@
 ---
-title: "Mga Kalendaryo"
-description: "I-set up ang calendar sa B1 Admin, pamahalaan ang mga event dito, at i-publish sa B1.church website para makita ng kongregasyon ang darating na event."
+title: "Mga Calendar"
+description: "I-set up ang mga calendar sa B1 Admin, pamahalaan kung aling mga event ang lumalabas sa mga ito, at i-publish ang mga ito sa iyong B1.church website para makita ng iyong kongregasyon ang mga paparating na event ng simbahan."
 ---
 
-# Mga Kalendaryo
+# Mga Calendar
 
 <div class="article-intro">
 
-Ang seksyong Calendars sa B1 Admin ay nagbibigay-daan sa iyong gumawa ng mga curated na kalendaryo para sa simbahan mo sa pamamagitan ng pagsasama-sama ng mga event mula sa iyong mga grupo. Ang mga lider ng grupo ang namamahala sa mga event ng kanilang grupo, at bilang admin, makakagawa ka ng mga kalendaryong nagpapakita ng mga event na iyon sa B1.church website mo para makita ng kongregasyon mo.
+Hinahayaan ka ng Calendars section sa B1 Admin na gumawa ng curated calendar para sa iyong simbahan sa pamamagitan ng pagsasama-sama ng mga event mula sa iyong mga grupo. Ang mga group leader ang namamahala sa sarili nilang mga event ng grupo, at bilang admin, maaari kang gumawa ng mga calendar na nagpapakita ng mga event na iyon sa iyong B1.church website para makita ng iyong kongregasyon.
 
 </div>
 
-## Pagtingin sa Iyong mga Kalendaryo
+## Pagtingin sa Iyong Mga Calendar {#viewing-your-calendars}
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Calendars**.
-2. Inililista ng pahina ng Calendars ang lahat ng kalendaryo mo sa isang talahanayan, kasama ang kanilang pangalan at katayuan. Gamitin ang kahon na **Find a calendar** para i-filter ang listahan.
-3. May link na **Manage Events** ang bawat hilera para buksan ang kalendaryo, at link na **Edit** para palitan ang pangalan o burahin ito.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Calendars**, at i-click ang **Calendars**.
+2. Nakalista sa Calendars page ang lahat ng iyong calendar sa isang table kasama ang kanilang pangalan at status. Gamitin ang kahon na **Find a calendar** para i-filter ang listahan. Kung may naghihintay na booking o event request, bubukas ang link na **pending approvals** sa itaas ang [Approvals](./approvals.md).
+3. I-hover ang isang row para lumabas ang link nitong **Manage Events**, na nagbubukas ng calendar, at ang link nitong **Edit**, na nagpapahintulot na palitan ang pangalan o burahin ito.
 
-## Ano ang Magagawa Mo
+Ang Calendars section, at ang bawat pahina rito, ay nangangailangan ng **Edit Content** permission. Nasa **Calendars** menu ang **Calendars**, **Availability**, **Rooms & Resources**, **Approvals**, at **Registrations**.
 
-- **Magdagdag ng bagong kalendaryo** -- I-click ang **Add Calendar** sa itaas ng pahina para gumawa ng kalendaryo para sa isang partikular na ministeryo, uri ng event, o layunin. Tingnan ang [Paggawa ng mga Kalendaryo](./creating-calendars.md) para sa hakbang-hakbang na tagubilin.
-- **Mag-edit ng kalendaryo** -- I-click ang **Manage Events** sa anumang kalendaryo para buksan ito at pamahalaan kung aling mga grupo ang kasama rito.
-- **Mag-publish ng mga kalendaryo** -- Maaaring ipakita ang mga kalendaryo sa B1.church website mo para makita ng mga bisita ang mga paparating na event sa simbahan mo.
-- **Gumawa ng mga curated na kalendaryo** -- Pagsama-samahin ang mga event mula sa maraming grupo sa iisang tanaw ng kalendaryo para sa kumpletong pagtingin sa lahat ng nangyayari sa simbahan mo. Tingnan ang [Curated Calendar](./curated-calendar.md) para sa mga detalye.
-- **Pamahalaan ang mga kuwarto at resources** -- Subaybayan ang mga espasyo at kagamitang maaaring i-book at asikasuhin ang mga kahilingan para sa pag-apruba. Tingnan ang [Rooms & Resources](./rooms-resources.md) para sa mga detalye.
-- **Tingnan ang availability** -- Makita ang lahat ng booking ng kuwarto at resource sa iisang kalendaryo at mag-book ng mga espasyo para sa mga paparating na event. Tingnan ang [Availability Calendar](./availability.md) para sa mga detalye.
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
+
+- **Magdagdag ng bagong calendar** -- I-click ang **Add Calendar** sa itaas ng pahina para gumawa ng calendar para sa isang partikular na ministry, uri ng event, o layunin. Tingnan ang [Creating Calendars](./creating-calendars.md) para sa hakbang-hakbang na gabay.
+- **I-edit ang calendar** -- I-click ang **Manage Events** sa anumang calendar para buksan ito at pamahalaan kung aling mga grupo ang kasama rito.
+- **I-publish ang mga calendar** -- Maaaring ipakita ang mga calendar sa iyong B1.church website para makita ng mga bisita ang mga paparating na event sa iyong simbahan.
+- **Gumawa ng curated calendar** -- Kunin ang mga event mula sa maraming grupo sa iisang calendar view para sa komprehensibong pagtingin sa lahat ng nangyayari sa iyong simbahan. Tingnan ang [Curated Calendar](./curated-calendar.md) para sa mga detalye.
+- **Pamahalaan ang mga kuwarto at resource** -- Subaybayan ang mga espasyo at kagamitang maaaring i-book at hawakan ang mga kahilingan sa approval. Tingnan ang [Rooms & Resources](./rooms-resources.md) para sa mga detalye.
+- **Tingnan ang availability** -- Tingnan ang lahat ng booking ng kuwarto at resource sa iisang calendar at mag-book ng espasyo para sa mga paparating na event. Tingnan ang [Availability Calendar](./availability.md) para sa mga detalye.
+- **Mag-approve ng mga kahilingan** -- I-approve o tanggihan ang mga kahilingan sa kuwarto, resource, at event. Tingnan ang [Calendar Approvals](./approvals.md).
+- **Pamahalaan ang mga registration** -- I-on ang event registration at tingnan kung sino ang nag-sign up. Tingnan ang [Enabling Event Registration](./creating-calendars.md#enabling-event-registration) at [Paid Registrations](./paid-registrations.md).
 
 :::info
-Malapit na nakaugnay ang mga kalendaryo sa [Mga Grupo](../groups/creating-groups.md). Kapag may mga naka-iskedyul na event ang mga grupo, maaaring mapunta ang mga event na iyon sa iyong mga kalendaryo. Tingnan ang pahina ng [Paggawa ng mga Kalendaryo](./creating-calendars.md) para malaman kung paano iugnay ang mga grupo sa mga kalendaryo.
+Malapit na nagtutulungan ang mga calendar at [Groups](../groups/creating-groups.md). Kapag may nakaiskedyul na event ang mga grupo, maaaring kunin ang mga event na iyon sa iyong mga calendar. Tingnan ang pahinang [Creating Calendars](./creating-calendars.md) para matutunan kung paano ikonekta ang mga grupo sa mga calendar.
 :::
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- [Creating Calendars](./creating-calendars.md) -- Mag-set up ng bagong kalendaryo at iugnay ang mga grupo
-- [Curated Calendar](./curated-calendar.md) -- Pagsama-samahin ang mga event mula sa maraming grupo sa iisang tanaw
+- [Creating Calendars](./creating-calendars.md) -- Mag-set up ng bagong calendar at ikonekta ang mga grupo
+- [Curated Calendar](./curated-calendar.md) -- Pagsamahin ang mga event mula sa maraming grupo sa iisang view
 - [Rooms & Resources](./rooms-resources.md) -- Pamahalaan ang mga espasyo at kagamitang maaaring i-book
 - [Availability Calendar](./availability.md) -- Tingnan at pamahalaan ang mga booking ng kuwarto/resource

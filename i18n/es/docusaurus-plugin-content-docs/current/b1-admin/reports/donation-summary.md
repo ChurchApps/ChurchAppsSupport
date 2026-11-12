@@ -1,51 +1,54 @@
 ---
-title: "Resumen de Donaciones"
-description: "Ejecuta el informe Resumen de donaciones en B1 Admin para ver el total de donativos, el número de donantes únicos y los importes por fondo en el rango de fechas que elijas."
+title: "Resumen de donaciones"
+description: "Ejecute el informe de Resumen de donaciones en B1 Admin para ver el total de donaciones, la cantidad de donantes únicos y los montos por fondo para cualquier intervalo de fechas."
 ---
 
-# Resumen de Donaciones
+# Resumen de donaciones
 
 <div class="article-intro">
 
-El reporte de Resumen de Donaciones te da una visión clara de la actividad de donaciones de tu iglesia. Úsalo para rastrear totales de donaciones, monitorear tendencias de donaciones y preparar reportes financieros para tu equipo de liderazgo.
+El informe de Resumen de donaciones le ofrece una visión clara de la actividad de donaciones de su iglesia. Úselo para dar seguimiento a los totales de donaciones, supervisar las tendencias de giving y preparar informes financieros para su equipo de liderazgo.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Asegúrate de que las donaciones estén siendo [registradas consistentemente](../donations/recording-donations.md) en tu sistema
-- Necesitas los [permisos](../settings/roles-permissions.md) apropiados para acceder a reportes financieros
+- Asegúrese de que las donaciones se [registran de forma constante](../donations/recording-donations.md) en su sistema
+- Necesita el [permiso](../settings/roles-permissions.md) **Ver resúmenes de donaciones**
 
 </div>
 
-## Ejecutar el Reporte
+## Ejecutar el informe {#running-the-report}
 
-1. Ve directamente a **admin.b1.church/reports/donationSummary** en tu navegador (los reportes no tienen entrada en el menú de navegación — marcar la dirección es la forma más fácil de volver a ella).
-2. Establece el **rango de fechas** para definir el período de reporte.
-3. Aplica filtros adicionales como **fondo** u otros criterios para reducir los resultados.
-4. El reporte mostrará el resumen de donaciones para el período seleccionado.
+1. Abra el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expanda **Donaciones** y haga clic en **Resumen**. El informe se ejecuta de inmediato para el último año.
+2. Elija **Semanal**, **Mensual** o **Trimestral** para definir cómo se agrupan las donaciones.
+3. En el panel **Filtrar informe**, establezca la **Fecha de inicio** y la **Fecha de fin**, opcionalmente elija un **Fondo** y haga clic en **Ejecutar informe**.
+4. Haga clic en **Opciones de descarga** y elija **Resumen** para descargar los totales como CSV, o haga clic en el icono de impresora para imprimir el informe.
 
-## Qué Muestra el Reporte
+Consulte [Informes de donaciones](../donations/donation-reports.md#giving-dashboard) para más información sobre esta página.
 
-El reporte de Resumen de Donaciones incluye:
+## Qué muestra el informe {#what-the-report-shows}
 
-- **Donaciones totales** -- La cantidad total de donaciones para el período seleccionado.
-- **Conteo de donantes** -- El número de donantes únicos que contribuyeron.
-- **Montos por fondo** -- Un desglose de las donaciones entre diferentes fondos, si aplica.
+El Resumen de donaciones incluye:
 
-## Usos Prácticos
+- **Total de donaciones** -- El monto total donado en el período seleccionado.
+- **Donación promedio** y **Total de donaciones** -- El tamaño típico de una donación y la cantidad de donaciones.
+- **Donantes únicos** -- La cantidad de donantes distintos que contribuyeron.
+- **Montos por fondo** -- Un gráfico de barras de las donaciones por semana, mes o trimestre, desglosado por fondo.
 
-- **Planificación financiera** -- Revisa tendencias de donaciones para pronosticar ingresos futuros y planificar tu presupuesto.
-- **Reportes de junta** -- Genera resúmenes para reuniones regulares de junta o liderazgo con datos claros de donaciones.
-- **Revisiones de fin de año** -- Ejecuta el reporte para el año completo para preparar resúmenes financieros anuales.
-- **Seguimiento de campañas** -- Filtra por fondo para rastrear el progreso en campañas de donaciones especiales o proyectos de construcción.
-- **Análisis estacional** -- Compara donaciones en diferentes períodos para entender patrones estacionales.
+## Usos prácticos {#practical-uses}
+
+- **Planificación financiera** -- Revise las tendencias de donaciones para pronosticar los ingresos futuros y planificar su presupuesto.
+- **Informes para la junta** -- Genere resúmenes para las reuniones periódicas de la junta o del liderazgo, con datos claros de donaciones.
+- **Revisiones de fin de año** -- Ejecute el informe para todo el año y prepare resúmenes financieros anuales.
+- **Seguimiento de campañas** -- Filtre por fondo para dar seguimiento al progreso de campañas especiales de donaciones o de proyectos de construcción.
+- **Análisis estacional** -- Compare las donaciones entre distintos períodos para entender los patrones estacionales.
 
 :::tip
-Ejecuta este reporte mensualmente para mantenerte informado sobre la salud financiera de tu iglesia. Comparar datos mes a mes te ayuda a detectar tendencias temprano.
+Ejecute este informe mensualmente para mantenerse informado sobre la salud financiera de su iglesia. Comparar los datos mes a mes ayuda a detectar tendencias a tiempo.
 :::
 
 :::warning
-Los datos de donaciones provienen de contribuciones registradas en tu sistema. Asegúrate de que las donaciones se ingresen consistentemente — ya sea a través de donaciones en línea, procesamiento de cheques o entrada manual — para los reportes más precisos. Ver [Registración de Donaciones](../donations/recording-donations.md) para detalles.
+Los datos de donaciones provienen de las contribuciones registradas en su sistema. Asegúrese de registrar las donaciones de forma constante, ya sea a través de donaciones en línea, procesamiento de cheques o ingreso manual, para obtener los informes más precisos. Consulte [Registro de donaciones](../donations/recording-donations.md) para más detalles.
 :::

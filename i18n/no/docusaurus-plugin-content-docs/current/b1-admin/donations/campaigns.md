@@ -1,72 +1,74 @@
 ---
 title: "Kampanjer og løfter"
-description: "Opprett innsamlingskampanjer i B1 Admin, registrer løfter fra medlemmer, og følg fremdriften mot et mål basert på faktiske gaver til hvert fond."
+description: "Opprett innsamlingskampanjer i B1 Admin, registrer løfter fra medlemmer, og følg fremdriften mot et mål sammenlignet med faktiske gaver til hvert fond."
 ---
 
 # Kampanjer og løfter
 
 <div class="article-intro">
 
-Kampanjer lar deg kjøre en innsamling mot et bestemt mål — et byggefond, en misjonsreise, et spesielt prosjekt — og følge løfter fra medlemmer sammen med faktiske gaver, slik at du kan se fremdriften din i sanntid.
+Kampanjer lar deg gjennomføre en innsamling mot et bestemt mål – et byggefond, en misjonsreise, et spesielt prosjekt – og følge løfter fra medlemmer sammen med faktiske gaver, slik at du ser fremdriften i sanntid.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp [givingsfond](./funds.md) — hver kampanje er knyttet til et fond
-- Du trenger tilgang til Gaver-delen i B1 Admin
+- Sett opp dine [gavefond](./funds.md) – hver kampanje er knyttet til et fond
+- Du trenger tillatelsen **View Donation Summaries** for å se kampanjer, og **Edit Donations** for å legge til eller endre kampanjer og løfter
 
 </div>
 
-## Åpne kampanjer
+## Åpne kampanjer {#opening-campaigns}
 
-I B1 Admin åpner du [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Gaver** og klikker **Kampanjer**. Du ser en tabell over alle kampanjer med fond, datoer, målbeløp, totalt lovet og totalt gitt så langt. En oppsummeringslinje over tabellen viser antall kampanjer og de samlede lovede og gitte beløpene.
+I B1 Admin åpner du [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Donations** og klikker **Campaigns**. Du ser en tabell over alle kampanjer med fond, datoer, målbeløp, totalt lovet og totalt gitt så langt. En oppsummeringslinje over tabellen viser antall kampanjer og de samlede lovede og gitte beløpene.
 
-## Opprette en kampanje
+## Opprette en kampanje {#creating-a-campaign}
 
-1. Klikk **Legg til kampanje** øverst på siden.
+1. Klikk **Add Campaign** øverst på siden.
 2. Fyll inn detaljene for kampanjen:
-   - **Navn** *(påkrevd)* — visningsnavnet for kampanjen (for eksempel «Byggefond 2026»).
-   - **Fond** — givingsfondet kampanjen er knyttet til.
-   - **Startdato** / **Sluttdato** — innsamlingsperioden.
-   - **Mål** — målbeløpet i kroner for kampanjen.
-3. Klikk **Lagre**.
+   - **Name** *(påkrevd)* – visningsnavnet for kampanjen (for eksempel «Byggefond 2026»).
+   - **Fund** *(påkrevd)* – gavefondet kampanjen er knyttet til.
+   - **Goal Amount** *(valgfritt)* – målbeløpet for kampanjen. Uten mål vises ingen fremdriftslinje for kampanjen.
+   - **Start Date** *(påkrevd, starter på dagens dato)* og **End Date** *(valgfritt)* – innsamlingsperioden. Uten sluttdato vises kampanjen som **Ongoing**.
+   - **Description** – en kort beskrivelse av kampanjen.
+   - **Show progress on giving page** – vis kampanjens fremdrift for givere på giving-siden din.
+   - **Allow donors to pledge** – la givere gi egne løfter til kampanjen.
+3. Klikk **Save**. Hvis navn, fond eller startdato mangler, sier skjemaet hvilket felt som må fylles ut.
 
-## Følge fremdriften
+## Følge fremdriften {#tracking-progress}
 
 Hver kampanjerad viser:
 
-- **Mål** — ditt målbeløp
-- **Lovet** — totalbeløpet medlemmer har lovet å gi
-- **Gitt** — totalbeløpet som faktisk er gitt til kampanjens fond i løpet av kampanjeperioden
-- **Fremdrift** — en stolpe og en prosentandel som viser hvor langt du har kommet mot målet
+- **Goal** – målbeløpet ditt
+- **Pledged** – det samlede beløpet medlemmer har lovet å gi
+- **Given** – det samlede beløpet som faktisk er gitt til kampanjens fond i kampanjeperioden
+- **Progress** – en linje og en prosentandel som viser hvor langt du har kommet mot målet
 
-Klikk på navnet på en kampanje for å åpne detaljvisningen. Den viser prosentandelen av målet som er nådd, og lister enkeltløfter med hver givers lovede og gitte beløp og en status (**Ikke startet**, **Pågår**, **Oppfylt**, **Over løftet**, eller **Ikke-lovet** for givere som ga uten å love). Givere listes etter etternavn, deretter fornavn; klikk på en kolonneoverskrift for å sortere etter den kolonnen i stedet. Klikk **Eksporter** øverst i detaljvisningen for å laste ned løftelisten som CSV.
+Klikk på navnet til en kampanje for å åpne detaljvisningen. Den viser prosentandelen av målet som er nådd, og lister opp hvert enkelt løfte med giverens lovede og gitte beløp og en status (**Not Started**, **In Progress**, **Fulfilled**, **Beyond Pledged** eller **Non-Pledged** for givere som ga uten å gi et løfte). Givere listes etter etternavn, deretter fornavn; klikk på en kolonneoverskrift for å sortere etter den kolonnen i stedet. Klikk **Export** øverst i detaljvisningen for å laste ned listen over løfter som CSV.
 
-## Legge til løfter
+## Legge til løfter {#adding-pledges}
 
-Løfter er forpliktelser fra medlemmer om å gi til en kampanje. For å registrere et løfte:
+Løfter er forpliktelser fra medlemmer om å gi til en kampanje. Slik registrerer du et løfte:
 
 1. Åpne en kampanje.
-2. Klikk **Legg til løfte** øverst på siden.
-3. Velg **personen** som gir løftet.
-4. Skriv inn løftets **beløp**.
-5. Angi eventuelt en **dato** for løftet.
-6. Klikk **Lagre**.
+2. Klikk **Add Pledge** øverst på siden.
+3. Søk etter **personen** som gir løftet, og legg vedkommende til.
+4. Skriv inn **Pledge Amount**. Beløpet må være større enn null.
+5. Klikk **Save**.
 
-Løfter vises i kampanjens detaljer og bidrar til totalen **Lovet** i kampanjelisten. For å endre et løfte klikker du **Rediger** på raden.
+Løfter vises i kampanjens detaljer og bidrar til totalbeløpet **Pledged** i kampanjelisten. For å endre et løftebeløp klikker du **Edit** på raden; for å fjerne et løfte klikker du **Edit** og deretter **Delete**.
 
 :::tip
-Løfter er atskilt fra faktiske gaver. Et løfte registrerer en forpliktelse; en gave registrerer den faktiske givingen. Begge vises på kampanjen, slik at du kan se hvor godt løftene blir oppfylt.
+Løfter er atskilt fra faktiske gaver. Et løfte registrerer en forpliktelse; en gave registrerer den faktiske givingen. Begge vises på kampanjen, slik at du ser hvor godt løftene blir innfridd.
 :::
 
-## Redigere eller slette en kampanje
+## Redigere eller slette en kampanje {#editing-or-deleting-a-campaign}
 
-Klikk **Rediger** på en kampanjerad (eller **Rediger kampanje** øverst i kampanjens detaljvisning) for å oppdatere navn, mål, datoer eller fond. Klikk **Slett** for å fjerne kampanjen og løftene permanent. Å slette en kampanje sletter ikke gaver som er registrert på fondet.
+Klikk **Edit** på en hvilken som helst kampanjerad (eller **Edit Campaign** øverst i kampanjens detaljvisning) for å oppdatere detaljene. I redigeringsskjemaet klikker du **Delete** for å fjerne kampanjen og løftene permanent; du kommer tilbake til kampanjelisten. Å slette en kampanje sletter ikke gaver som er registrert på fondet.
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Registrere gaver](./recording-donations.md) — registrer de faktiske gavene som oppfyller løftene
-- [Fond](./funds.md) — sett opp fondet som skal knyttes til en kampanje
-- [Gaverapporter](./donation-reports.md) — rapportering av gaver etter fond
+- [Registrere gaver](./recording-donations.md) – registrer de faktiske gavene som innfrir løftene
+- [Fond](./funds.md) – sett opp fondet som kampanjen skal knyttes til
+- [Gaverapporter](./donation-reports.md) – rapportering av gaver per fond

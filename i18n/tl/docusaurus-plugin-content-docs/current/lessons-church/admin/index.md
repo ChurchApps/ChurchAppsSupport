@@ -15,7 +15,7 @@ Ang admin area sa Lessons.church ay kung saan pinamamahalaan ng mga tagalikha ng
 Ang pag-access sa admin ay nangangailangan ng naaangkop na pahintulot. Kung hindi mo makita ang mga opsyon ng admin, makipag-ugnayan sa administrador ng iyong simbahan upang humiling ng access.
 :::
 
-## Ano ang Maaari Mong Gawin
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
 
 Ang admin area ay nagbibigay sa iyo ng buong kontrol sa iyong nilalaman:
 

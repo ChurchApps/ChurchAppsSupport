@@ -1,81 +1,81 @@
 ---
-title: "捐款报告"
-description: "在 B1 Admin 中通过“Donations Summary”仪表板、“Lapsed Givers”视图和 CSV 导出功能，查看奉献总额、捐款人流失情况及批次明细。"
+title: "奉献报表"
+description: "在 B1 Admin 中通过奉献概览仪表板、流失奉献者视图和 CSV 导出，查看奉献总额、奉献者流失情况以及批次层面的详细信息。"
 ---
 
-# 捐款报告
+# 奉献报表
 
 <div class="article-intro">
 
-B1 Admin 为你提供多种查看和分析教会奉献数据的方式。捐款**汇总**页面上的奉献仪表板以图表和筛选器提供可视化概览，而报告板块则提供更详细的捐款汇总报告。你可以利用这些工具跟踪奉献趋势、为董事会会议做准备，或核对你的记录。
+B1 Admin 提供多种方式来查看和分析教会的奉献数据。奉献**概览**页面上的奉献仪表板以图表和筛选器提供可视化的总览，而报表板块则提供更详细的奉献概要报表。你可以利用这些工具跟踪奉献趋势、为董事会会议做准备，或核对记录。
 
 </div>
 
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 确保捐款已[按批次录入](recording-donations.md)或[从 Stripe 导入](stripe-import.md)
-- 确认你的[基金](funds.md)设置正确，以便捐款能被正确分类
+- 确保奉献已[按批次登记](recording-donations.md)或[从 Stripe 导入](stripe-import.md)
+- 核实你的[基金](funds.md)设置正确，以确保奉献被正确分类
 
 </div>
 
-## 奉献仪表板
+## 奉献仪表板 {#giving-dashboard}
 
-奉献仪表板是 **Summary** 页面的 **Dashboard** 视图，也是你打开 **Donations** 板块时首先看到的页面。
+奉献仪表板即**概览**页面的**仪表板**视图，也就是你打开**奉献**板块时首先看到的页面。
 
-1. 打开[跳转菜单](../introduction.md#getting-around-with-the-jump-menu)（左上角的 B1 Admin 搜索栏），展开 **Donations**，然后点击 **Summary**。**Summary** 页面会打开 **Dashboard** 视图。右上角的 **View** 切换按钮可在 **Dashboard** 和 **Lapsed Givers**（流失奉献者）之间切换。
-2. 使用报告上方的 **Weekly**（每周）、**Monthly**（每月）和 **Quarterly**（每季度）切换按钮，选择奉献的分组方式。
-3. 在 **Filter Report** 面板中，设置 **Start Date** 和 **End Date**（默认为过去一年至昨天），还可以选择一个 **Fund**（基金），然后点击 **Run Report**。页面打开时，报告会使用默认设置自动运行。
+1. 打开[跳转菜单](../introduction.md#getting-around-with-the-jump-menu)（B1 Admin 左上角的搜索栏），展开 **Donations**，然后点击 **Summary**。**Summary** 页面会打开**仪表板**视图。右上角的 **View** 切换按钮可在 **Dashboard**（仪表板）和 **Lapsed Givers**（流失奉献者）之间切换。
+2. 使用报表上方的 **Weekly**（每周）、**Monthly**（每月）和 **Quarterly**（每季度）切换按钮，选择奉献的分组方式。
+3. 在 **Filter Report** 面板中设置 **Start Date** 和 **End Date**（默认为过去一年至昨天），也可以选择一个 **Fund**（基金），然后点击 **Run Report**。页面打开时，报表会自动以默认设置运行。
 4. 四张 **KPI 卡片**显示所选时间范围内的奉献指标：
-   - **Total Giving**（奉献总额）—— 捐款的总金额。
-   - **Average Gift**（平均礼金）—— 平均每笔捐款的金额。
-   - **Unique Donors**（独立捐款人数）—— 奉献的不同人数。
-   - **Total Donations**（捐款笔数）—— 单笔捐款的总数量。
+   - **Total Giving**（奉献总额）——捐赠的总金额。
+   - **Average Gift**（平均奉献）——平均每笔奉献的金额。
+   - **Unique Donors**（独立奉献者）——奉献的不同人数。
+   - **Total Donations**（奉献总笔数）——单笔奉献的总数。
 5. KPI 下方的柱状图按周、月或季度显示奉献金额，并按基金细分。
-6. 点击 **Download Options** 并选择 **Summary**，即可导出按时段和基金汇总的 CSV 文件；或点击打印图标打印报告。你的教会标志（如果你已上传过，则为 [Website > Appearance](../website/appearance.md) 中的**浅色背景标志**）和名称会居中显示在打印报告的顶部。即使你在深色模式下使用 B1 Admin，打印件也会使用深色文字和浅色图表。
+6. 点击 **Download Options**，选择 **Summary**，即可导出按时段和基金汇总的 CSV；或点击打印图标打印报表。打印的报表顶部中央会显示教会徽标（如果你已在[网站 > 外观](../website/appearance.md)中上传，则使用 **Light Background Logo**）和教会名称。即使你在 B1 Admin 中使用深色模式，打印件仍使用深色文字和浅色图表。
 
-如果该时间段内的捐款是以多种货币进行的，KPI 总额会被换算为教会的货币，并且卡片下方会出现**按当前汇率换算**的说明。详情参见[多币种支持](./multi-currency.md#converted-totals)。
+如果该时段内的奉献使用了多种货币，KPI 总额会按当前汇率换算为教会的货币，并在卡片下方显示 **Converted at current exchange rates**（按当前汇率换算）的说明。详情请参见[多币种支持](./multi-currency.md#converted-totals)。
 
 :::info
-仪表板显示的是汇总的奉献数据，不包括捐款人的个人姓名。如需查看个人捐款详情，请使用[批次](batches.md)页面。
+仪表板显示的是汇总的奉献数据，不包括个别捐赠人的姓名。如需查看捐赠人层面的详细信息，请使用[批次](batches.md)页面。
 :::
 
-## 流失奉献者
+## 流失奉献者 {#lapsed-givers}
 
-在 **View** 切换按钮中选择 **Lapsed Givers**，即可列出某一时期曾经奉献、但之后没有再奉献的人员。默认情况下，它会比较去年整年与今年至今的数据；你可以更改任一日期范围来扩大或缩小搜索范围。每一行显示人员、其最后一次礼金的日期，以及其在较早时期的捐款总额。点击 **Download Options > Summary** 可将该名单下载为 CSV 文件，用于后续邮寄或电话跟进。
+在 **View** 切换按钮中选择 **Lapsed Givers**，可列出在某一时段内曾奉献、但之后再未奉献的人员。默认比较上一个日历年与今年至今的数据；如需扩大或缩小搜索范围，可在 **Filter Report** 面板中更改 **Previous Period Start**（上一时段开始）、**Previous Period End**（上一时段结束）、**Current Period Start**（当前时段开始）或 **Current Period End**（当前时段结束），然后点击 **Run Report**。此视图需要 **View Donations** 权限。每一行显示人员、其最近一次奉献的日期以及其在较早时段的奉献总额；**Download Options > Summary** 可将列表下载为 CSV，用于后续邮寄或电话联络。
 
-## 查看捐款人明细
+## 查看捐赠人层面的详细信息 {#viewing-donor-level-details}
 
-要查看谁捐了多少、捐给了哪个基金的详细情况：
+如需查看谁奉献了多少、奉献到哪个基金，请按以下步骤操作：
 
 1. 进入 **Donations > Batches**。
 2. 点击某个**批次名称**将其打开。
-3. 批次详情页会列出每笔捐款的方式（以及支票号码或卡号后四位）、捐款人姓名、日期、备注和金额，底部显示合计。
-4. 在某笔捐款行上点击 **Edit**，即可打开该笔捐款的完整详情，包括其所属基金。
-5. 点击列表上方的 **Export**，即可下载包含该批次全部捐款人和捐款信息的 CSV 文件。
+3. 批次详情页面会列出每笔奉献，包括其方式（以及支票号码或卡号后几位）、捐赠人姓名、日期、备注和金额，底部显示合计。
+4. 点击某笔奉献所在行的 **Edit**，即可打开该笔奉献的完整详情，包括其所属基金。
+5. 点击列表上方的 **Export**，即可下载该批次所有捐赠人和奉献信息的 CSV。
 
-## 捐款汇总报告
+## 奉献概要报表 {#donation-summary-report}
 
-捐款报告已内置于 Donations 板块中——**Summary** 页面即为你的捐款汇总报告：
+奉献报表已内置于奉献板块中——**概览**页面即是你的奉献概要报表：
 
 1. 在跳转菜单中，选择 **Donations > Summary**。
-2. 在 **Dashboard** 视图中，于 **Filter Report** 面板设置 **Start Date** 和 **End Date**，然后点击 **Run Report**。
-3. 点击 **Download Options** 并选择 **Summary**，将报告导出为 CSV 文件。
+2. 在**仪表板**视图中，于 **Filter Report** 面板设置 **Start Date** 和 **End Date**，然后点击 **Run Report**。
+3. 点击 **Download Options**，选择 **Summary**，即可将报表导出为 CSV 文件。
 
-## 导出数据
+## 导出数据 {#exporting-data}
 
-你可以在多个位置导出捐款数据：
+你可以在多个位置导出奉献数据：
 
-- **Summary 页面** —— 下载按周、月或季度及基金汇总的奉献总额 CSV
-- **批次详情页面** —— 下载包含捐款人详细信息的单笔捐款 CSV
-- **基金详情页面** —— 下载特定基金的捐款历史
+- **概览页面**——下载按周、月或季度及基金汇总的奉献总额 CSV
+- **批次详情页面**——下载包含捐赠人详细信息的单笔奉献 CSV
+- **基金详情页面**——下载特定基金的奉献历史
 
 :::tip
-进行年终报告时，可将 Summary 页面的导出与[奉献报表](giving-statements.md)工具结合使用，既能获得汇总趋势，又能获得捐款人的个人报表。
+进行年终报表时，可将概览页面的导出与[奉献收据](giving-statements.md)工具结合使用，既获得汇总趋势，也获得每位捐赠人的个人收据。
 :::
 
-## 下一步
+## 后续步骤 {#next-steps}
 
-- 为年终的捐款人生成[奉献报表](giving-statements.md)
-- 查看各个[批次](batches.md)，核对捐款详情
-- 查看[基金](funds.md)详情页面，了解按类别划分的奉献明细
+- 年底为你的捐赠人生成[奉献收据](giving-statements.md)
+- 查看各个[批次](batches.md)，核实奉献详情
+- 查看[基金](funds.md)详情页面，了解按类别划分的奉献情况

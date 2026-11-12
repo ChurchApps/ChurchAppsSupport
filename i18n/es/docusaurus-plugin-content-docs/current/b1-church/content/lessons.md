@@ -36,7 +36,7 @@ La pestaña **Lecciones** te dio acceso a los planes de estudios y materiales de
 
 Tu inicio de sesión se transfiere automáticamente cuando abres la pestaña Lecciones. No necesitas iniciar sesión nuevamente en Lessons.church por separado.
 
-## Lo que Puedes Hacer
+## Lo que Puedes Hacer {#what-you-can-do}
 
 Una vez dentro de la pestaña Lecciones, puedes explorar el plan de estudios que tu iglesia ha puesto disponible. Dependiendo de lo que tu iglesia haya configurado, puedes encontrar:
 

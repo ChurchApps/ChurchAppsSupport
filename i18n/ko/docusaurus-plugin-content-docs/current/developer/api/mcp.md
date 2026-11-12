@@ -152,7 +152,7 @@ MCP 요청 자체는 `CustomAuthProvider.getUser()`를 거칩니다. 이는 인�
 
 `/mcp`에는 애플리케이션 수준의 요청 빈도 제한이 없습니다. 운영 환경에서는 API Gateway / Lambda 동시성으로 조절하며, 자체 호스팅 배포에서는 리버스 프록시가 적용하는 제한에 따릅니다.
 
-## OAuth 탐색
+## OAuth 탐색 {#oauth-discovery}
 
 MCP 서버는 OAuth 2.1 메타데이터를 공개하므로, OAuth로 발견된 서버에만 연결하는 클라이언트(특히 Claude.ai의 "Add custom connector" UI)가 키를 붙여 넣지 않고도 사용자를 로그인시킬 수 있습니다. `/mcp`는 보호된 리소스이고, `/membership/oauth` 아래의 [OAuth 제공자](./connected-apps.md)가 권한 서버이며, B1Admin의 `/oauth` 페이지가 동의 화면입니다.
 

@@ -72,7 +72,7 @@ Authorization: Bearer <token>
 [{ "firstName": "Jane", "lastName": "Doe", "contactInfo": { "email": "jane@example.com" } }]
 ```
 
-## Users
+## Users {#users}
 
 Batayang path: `/membership/users`
 

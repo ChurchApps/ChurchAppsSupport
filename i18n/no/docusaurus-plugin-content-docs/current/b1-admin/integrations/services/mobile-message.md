@@ -1,108 +1,108 @@
 ---
 title: "Mobile Message"
-description: "Koble B1 Admin-hendelser til Mobile Message, et australsk SMS-API, via Zapier- eller Make-webhooks for å sende velkomst-, gave- og påminnelsestekster."
+description: "Koble B1 Admin-hendelser til Mobile Message, en australsk SMS-API, med Zapier- eller Make-webhooks for å sende velkomst-, gave- og påminnelsestekstmeldinger."
 ---
 
 # Mobile Message
 
 <div class="article-intro">
 
-[Mobile Message](https://mobilemessage.com.au) er en australsk SMS API — populær blant AU-kirker fordi den tilbyr lokale tall og konkurransedyktig AU-priser der Clearstream og Text In Church er US-sentrert. Mobile Message har ikke en førsteklasses Zapier-app i dag, men den publiserer en offentlig REST API, så du kan lede B1-hendelser til Mobile Message-tekster gjennom **webhooks av Zapier** (eller Makes HTTP-modul) på et par minutter.
+[Mobile Message](https://mobilemessage.com.au) er en australsk SMS-API. Den er populær blant kirker i Australia fordi den tilbyr lokale numre og konkurransedyktige priser i Australia, der Clearstream og Text In Church er USA-orienterte. Mobile Message har ingen førsteklasses Zapier-app i dag, men den publiserer et offentlig REST-API. Du kan derfor koble B1-hendelser til Mobile Message-tekstmeldinger gjennom **Webhooks by Zapier** (eller Makes HTTP-modul) på noen få minutter.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En [Mobile Message](https://mobilemessage.com.au)-konto med en registrert avsender-ID og API-legitimasjon (API-brukernavn + passord under *konto → API-innstillinger*)
+- En [Mobile Message](https://mobilemessage.com.au)-konto med registrert avsender-ID og API-legitimasjon (API-brukernavn + passord under *Konto → API-innstillinger*)
 - En [Zapier](https://zapier.com)-konto (eller [Make](https://www.make.com))
-- En B1Admin-bruker med tillatelsen **Rediger innstillinger**
+- En B1 Admin-bruker med tillatelsen **Rediger innstillinger**
 
 </div>
 
-## Hva du kan lede opp
+## Hva du kan koble sammen {#what-you-can-wire-up}
 
-Mobile Messages API er "send SMS"-formet — ingen utløsere, bare utgående tekst. Så oppskriftene er alle B1 → SMS:
+Mobile Messages API er bygget rundt «send SMS». Det finnes ingen utløsere, bare utgående tekst. Oppskriftene går derfor alle i retningen B1 → SMS:
 
-| Retning | B1 utløser | Resultat |
+| Retning | B1-utløser | Resultat |
 |---|---|---|
-| B1 → Mobile Message | `person.created` | velkomst-tekst til den nye personen |
-| B1 → Mobile Message | `donation.created` | takk-tekst til donoren |
-| B1 → Mobile Message | `form.submission.created` | page on-call-teamet |
-| B1 → Mobile Message | `event.created` | påminnelse-broadcast til en liste |
+| B1 → Mobile Message | `person.created` | Velkomsttekst til den nye personen |
+| B1 → Mobile Message | `donation.created` | Takketekst til giveren |
+| B1 → Mobile Message | `form.submission.created` | Varsle vaktteamet |
+| B1 → Mobile Message | `event.created` | Påminnelseskringkasting til en liste |
 
-## Oppsett
+## Oppsett {#setup}
 
-### 1. Lag en B1 API-nøkkel
+### 1. Lag en B1 API-nøkkel {#1-mint-a-b1-api-key}
 
-**Innstillinger → Utviklernavn → API-nøkler → Ny API-nøkkel**:
+**Innstillinger → Utvikler → API-nøkler → Ny API-nøkkel**:
 
-- `settings:write` — for webhook-utløseren for å registrere
-- `people:read` — for å slå opp mottakerens telefonnummer fra en `personId`
+- `settings:write`: for at utløser-webhooken skal registreres
+- `people:read`: for å slå opp mottakerens telefonnummer fra en `personId`
 
-### 2. Bygg Zap-en med webhooks av Zapier
+### 2. Bygg Zapen med Webhooks by Zapier {#2-build-the-zap-with-webhooks-by-zapier}
 
-1. **Utløser** — B1.church: velg hendelsen du vil ha (f.eks. ny donasjon).
-2. **Handling** — B1.church: Finn person (ved bruk av `data.personId`) for å få telefonnummeret og navn.
-3. **Handling** — webhooks av Zapier: **POST**. Konfigurer som under.
+1. **Utløser**: B1.church: velg hendelsen du vil ha (f.eks. Ny gave).
+2. **Handling**: B1.church: Finn person (med `data.personId`) for å hente telefonnummer og navn.
+3. **Handling**: Webhooks by Zapier: **POST**. Konfigurer som vist nedenfor.
 
-POST-trinnets innstillinger:
+Innstillingene for POST-steget:
 
-- **URL** — `https://api.mobilemessage.com.au/v1/messages`
-- **nyttelast-type** — JSON
-- **data** —
+- **URL**: `https://api.mobilemessage.com.au/v1/messages`
+- **Nyttelasttype**: JSON
+- **Data**:
   ```json
   {
     "messages": [
       {
-        "to": "`{{step2_phone}}`",
-        "message": "Takk for gaven, `{{step2_first_name}}`!",
+        "to": "{{step2_phone}}",
+        "message": "Thanks for your gift, {{step2_first_name}}!",
         "sender": "YourChurch"
       }
     ]
   }
   ```
-- **overskrifter** — `Content-Type: application/json` (webhooks av Zapier legger dette til automatisk)
-- **grunnleggende auth** — sett *grunnleggende auth*-feltet til `<api_username>|<api_password>` (Zapier konverterer det til riktig `authorization: grunnleggende …` overskrift)
+- **Headere**: `Content-Type: application/json` (Webhooks by Zapier legger til dette automatisk)
+- **Basic Auth**: sett feltet *Basic Auth* til `<api_username>|<api_password>` (Zapier konverterer det til riktig `Authorization: Basic …`-header)
 
-Slå Zap-en på. Send en test-gave i B1Admin for å bekrefte at en tekst ankommer.
+Slå på Zapen. Send en testgave i B1 Admin for å kontrollere at en tekstmelding kommer frem.
 
-## Vanlige oppskrifter
+## Vanlige oppskrifter {#common-recipes}
 
-### Event påminnelser morgenen av
+### Påminnelser om arrangementer tidlig om morgenen {#event-reminders-the-morning-of}
 
-- **Utløser** — Tidsplan av Zapier (daglig, 0700)
-- **Handling** — B1.church: Finn hendelser for i dag (eller bruk et finn-trinn med et fast dato-filter, eller lagre dagens hendelsesliste i et Google Sheet)
-- **Handling** — webhooks av Zapier: POST til Mobile Message med hendelseslisten til en registrert abonnent-gruppe
+- **Utløser**: Schedule by Zapier (daglig, kl. 07)
+- **Handling**: behold dagens arrangementsliste i et Google-regneark (eller en annen app Zapier kan lese), og slå opp dagens rader. B1s Zapier-app har ingen handling for å finne arrangementer
+- **Handling**: Webhooks by Zapier: POST til Mobile Message med arrangementslisten til en registrert abonnentgruppe
 
-### Bruk batch-endepunktet for en liste-broadcast
+### Bruk batch-endepunktet for kringkasting til en liste {#use-the-batch-endpoint-for-a-list-broadcast}
 
-Mobile Messages `/v1/messages`-endepunkt tar opp til 10 000 meldinger per anrop. For å broadcast til en B1-gruppe:
+Mobile Messages endepunkt `/v1/messages` tar imot opptil 10 000 meldinger per kall. For å kringkaste til en B1-gruppe:
 
-- **Utløser** — B1.church: ny skjemainnsending (filter til et spesifikt skjema)
-- **Handling** — B1.church: list gruppemedalemmer for en målgruppe (via et *webhooks av Zapier — GET*-trinn på `/membership/groupmembers?groupId=…`)
-- **Handling** — formattrer av Zapier → verktøy → line-itemize svaret til en `messages`-matrise
-- **Handling** — webhooks av Zapier: POST hele matrisen til `/v1/messages`
+- **Utløser**: B1.church: Ny skjemainnsending (filtrer til et bestemt skjema)
+- **Handling**: Webhooks by Zapier: GET `/membership/groupmembers?groupId=…` for å liste medlemmene i målgruppen. B1s Zapier-app har ingen listehandling for dette. Send API-nøkkelen som en `Authorization: Bearer cak_…`-header.
+- **Handling**: Formatter by Zapier → Utilities → Line-itemize responsen til en `messages`-matrise
+- **Handling**: Webhooks by Zapier: POST hele matrisen til `/v1/messages`
 
-### Make alternativ
+### Make som alternativ {#make-alternative}
 
-Hvis du foretrekker Make, drar du **HTTP — gjør en forespørsel**-modulen etter B1 se hendelser-utløseren, konfigurerer det samme (POST, grunnleggende auth, JSON-kropp). Se [Make oversikt](../make.md) for B1-siden.
+Hvis du foretrekker Make, legg modulen **HTTP: Lag en forespørsel** etter utløseren Følg hendelser i B1, og konfigurer den på samme måte (POST, Basic Auth, JSON-innhold). Se [Make-oversikten](../make.md) for B1-delen. Merk at B1.church-appen for Make ikke er lansert ennå.
 
-## Grenser og merknader
+## Begrensninger og merknader {#limits--notes}
 
-- **grunnleggende auth er den eneste autentiseringsmetoden** — Mobile Message utsteder et brukernavn og passord fra dashbordet. Behandle begge som hemmeligheter.
-- **`avsender` må være en registrert avsender-ID** på Mobile Message-kontoen din, eller sendingen vil returnere `400 ugyldig avsender`. AU-forskrifter krever avsender-registrering.
-- **AU-telefonnumre** kan være `0412345678` (lokal) eller `+61412345678` (internasjonal). API-en godtar begge, men normalisere på `+61…` hvis du også sender utenlands.
-- **opptil 10 000 meldinger per forespørsel** — nyttig for broadcasts, men en enkelt B1-webhook-levering vil sjelden utsende en liste så stor; reserver batch-endepunktet for planlagte bulk-Zapier.
+- **Basic Auth er den eneste autentiseringsmetoden.** Mobile Message utsteder et brukernavn og passord fra dashbordet. Behandle begge som hemmeligheter.
+- **`sender` må være en registrert avsender-ID** på Mobile Message-kontoen din, ellers returnerer sendingen `400 Invalid sender`. Australske regler krever registrering av avsender.
+- **Australske telefonnumre** kan skrives som `0412345678` (lokalt) eller `+61412345678` (internasjonalt). API-et godtar begge, men normaliser til `+61…` hvis du også sender til utlandet.
+- **Opptil 10 000 meldinger per forespørsel.** Nyttig til kringkasting, men en enkelt B1-webhook-leveranse vil sjelden utløse en liste så stor. Bruk batch-endepunktet til planlagte masse-Zaper.
 
-## Problemløsing
+## Feilsøking {#troubleshooting}
 
-- **POST returnerer `401 ikke autorisert`** — grunnleggende auth-legitimasjon er feil. Re-kopier fra Mobile Message-dashbordet *konto → API-innstillinger*. Merk at brukernavn er kontoen din e-post som standard, ikke en egen API-nøkkel.
-- **POST returnerer `400 ugyldig avsender`** — `avsender`-verdien er ikke en registrert avsender-ID på kontoen din. Registrer det i Mobile Message-dashbordet først.
-- **Teksten ankommer men er avkortet** — Mobile Message deler meldinger over ~160 tegn i flere deler; du blir fakturert per del. Sjekk svarkroppen — den forteller deg delantallet.
+- **POST gir `401 Unauthorized`**: Basic Auth-legitimasjonen er feil. Kopier den på nytt fra Mobile Messages dashbord under *Konto → API-innstillinger*. Merk at brukernavnet som standard er kontoens e-postadresse, ikke en egen API-nøkkel.
+- **POST gir `400 Invalid sender`**: verdien i `sender` er ikke en registrert avsender-ID på kontoen din. Registrer den i Mobile Messages dashbord først.
+- **Tekstmeldingen kommer, men er avkortet**: Mobile Message deler meldinger som er lengre enn ca. 160 tegn i flere deler, og du faktureres per del. Sjekk responsen. Den viser antall deler.
 
-## Se også
+## Se også {#see-also}
 
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — alternative SMS-leverandører med egen Zapier-apper (ingen webhooks-av-Zapier-trinn nødvendig)
-- [Zapier (oversikt)](../zapier.md) — B1-siden av hver Zapier-oppskrift
+- [Clearstream](./clearstream.md) og [Text In Church](./text-in-church.md): alternative SMS-leverandører med innebygde Zapier-apper (trenger ikke Webhooks by Zapier-steget)
+- [Zapier (oversikt)](../zapier.md): B1-delen av hver Zapier-oppskrift
 - [Mobile Message API-dokumentasjon](https://mobilemessage.com.au/api-documentation)

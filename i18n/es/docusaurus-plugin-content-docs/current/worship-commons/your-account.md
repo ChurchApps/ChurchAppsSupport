@@ -60,7 +60,7 @@ Para una canción publicada, haz clic en **Copiar enlace** para compartir su pá
 Si el equipo de WorshipCommons te agrega como co-editor de una canción -- por ejemplo, una canción que escribiste en colaboración y que alguien más subió -- aparecerá en **Mis envíos** como **Publicada**, aunque tú no la hayas enviado. Como editor de la canción, puedes hacer cambios incluso cuando su licencia impida las ediciones públicas.
 :::
 
-## Páginas de autor
+## Páginas de autor {#writer-pages}
 
 Cada autor en la biblioteca tiene una página de autor que enumera sus canciones, con el año, la tonalidad, los temas y la licencia de cada una. Las iglesias llegan a ella haciendo clic en el nombre de un autor en una página de canción. Cuando una canción tiene varios autores, cada nombre enlaza a su propia página.
 

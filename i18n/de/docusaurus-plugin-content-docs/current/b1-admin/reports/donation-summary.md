@@ -1,51 +1,54 @@
 ---
 title: "Spendenübersicht"
-description: "Den Bericht Donation Summary in B1 Admin ausführen: Gesamtspenden, Anzahl einzelner Spender und Beträge je Fonds für beliebige Zeiträume."
+description: "Führen Sie den Bericht Spendenübersicht in B1 Admin aus, um für einen beliebigen Zeitraum die Gesamtspenden, die Anzahl einzelner Spender und die Beträge pro Fonds zu sehen."
 ---
 
 # Spendenübersicht
 
 <div class="article-intro">
 
-Der Bericht „Spendenübersicht" gibt Ihnen einen klaren Überblick über die Spendentätigkeit Ihrer Kirche. Verwenden Sie ihn, um Spendensummen nachzuverfolgen, Spendentrends zu überwachen und Finanzberichte für Ihr Leitungsteam vorzubereiten.
+Der Bericht Spendenübersicht gibt Ihnen ein klares Bild der Spendenaktivität Ihrer Gemeinde. Nutzen Sie ihn, um Spendensummen zu verfolgen, Spendentrends zu beobachten und Finanzberichte für Ihr Leitungsteam vorzubereiten.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass Spenden [konsistent aufgezeichnet](../donations/recording-donations.md) werden in Ihrem System
-- Sie benötigen die entsprechenden [Berechtigungen](../settings/roles-permissions.md), um auf Finanzberichte zuzugreifen
+- Stellen Sie sicher, dass Spenden in Ihrem System [durchgehend erfasst](../donations/recording-donations.md) werden
+- Sie benötigen die [Berechtigung](../settings/roles-permissions.md) **Spendenübersichten anzeigen**
 
 </div>
 
-## Bericht ausführen
+## Den Bericht ausführen {#running-the-report}
 
-1. Gehen Sie direkt zu **admin.b1.church/reports/donationSummary** in Ihrem Browser (Berichte haben keinen Eintrag im Navigationsmenü – ein Lesezeichen für die Adresse ist der einfachste Weg, um dorthin zurückzukehren).
-2. Setzen Sie den **Datumsbereich**, um den Berichtszeitraum zu definieren.
-3. Wenden Sie zusätzliche Filter wie **Fonds** oder andere Kriterien an, um die Ergebnisse einzugrenzen.
-4. Der Bericht zeigt die Spendenübersicht für den ausgewählten Zeitraum.
+1. Öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), klappen Sie **Spenden** auf und klicken Sie auf **Übersicht**. Der Bericht wird für das vergangene Jahr sofort ausgeführt.
+2. Wählen Sie **Wöchentlich**, **Monatlich** oder **Vierteljährlich**, um festzulegen, wie die Spenden gruppiert werden.
+3. Legen Sie im Bereich **Bericht filtern** das **Startdatum** und das **Enddatum** fest, wählen Sie optional einen **Fonds** aus und klicken Sie auf **Bericht ausführen**.
+4. Klicken Sie auf **Download-Optionen** und wählen Sie **Zusammenfassung**, um die Summen als CSV herunterzuladen, oder klicken Sie auf das Druck-Symbol, um den Bericht zu drucken.
 
-## Was der Bericht zeigt
+Weitere Informationen zu dieser Seite finden Sie unter [Spendenberichte](../donations/donation-reports.md#giving-dashboard).
 
-Der Bericht „Spendenübersicht" umfasst:
+## Was der Bericht zeigt {#what-the-report-shows}
 
-- **Gesamtspenden** – Der Gesamtspendenumfang für den ausgewählten Zeitraum.
-- **Anzahl der Spender** – Die Anzahl der eindeutigen Spender, die beitrugen.
-- **Beträge nach Fonds** – Eine Aufschlüsselung der Spenden nach verschiedenen Fonds, falls zutreffend.
+Die Spendenübersicht enthält:
 
-## Praktische Anwendungen
+- **Gesamtspenden** -- Der gesamte Spendenbetrag für den gewählten Zeitraum.
+- **Durchschnittliche Spende** und **Spenden insgesamt** -- Die übliche Höhe einer Spende und die Anzahl der Spenden.
+- **Einzelne Spender** -- Die Anzahl der verschiedenen Personen, die gespendet haben.
+- **Beträge nach Fonds** -- Ein Balkendiagramm der Spenden pro Woche, Monat oder Quartal, aufgeschlüsselt nach Fonds.
 
-- **Finanzplanung** – Überprüfen Sie Spendentrends, um zukünftige Einnahmen zu prognostizieren und Ihr Budget zu planen.
-- **Berichte an das Leitungsgremium** – Generieren Sie Zusammenfassungen für regelmäßige Treffen des Leitungsgremiums oder der Leitung mit klaren Spendendaten.
-- **Jahresendberichte** – Führen Sie den Bericht für das ganze Jahr aus, um jährliche Finanzzusammenfassungen vorzubereiten.
-- **Kampagnenverfolgung** – Filtern Sie nach Fonds, um die Fortschritte bei besonderen Spendenkampagnen oder Bauprojekten zu verfolgen.
-- **Saisonale Analyse** – Vergleichen Sie Spenden in verschiedenen Zeiträumen, um saisonale Muster zu verstehen.
+## Praktische Anwendungen {#practical-uses}
+
+- **Finanzplanung** -- Prüfen Sie Spendentrends, um künftige Einnahmen zu schätzen und Ihren Haushalt zu planen.
+- **Berichte an den Vorstand** -- Erstellen Sie Zusammenfassungen für regelmäßige Sitzungen des Vorstands oder der Leitung, mit klaren Spendendaten.
+- **Jahresrückblicke** -- Führen Sie den Bericht für das ganze Jahr aus, um Jahresabschlüsse vorzubereiten.
+- **Kampagnen verfolgen** -- Filtern Sie nach Fonds, um den Fortschritt besonderer Spendenaktionen oder Bauprojekte zu verfolgen.
+- **Saisonale Analyse** -- Vergleichen Sie die Spenden über verschiedene Zeiträume, um saisonale Muster zu erkennen.
 
 :::tip
-Führen Sie diesen Bericht monatlich aus, um über die finanzielle Gesundheit Ihrer Kirche informiert zu bleiben. Das Vergleichen von Monat-zu-Monat-Daten hilft Ihnen, Trends frühzeitig zu erkennen.
+Führen Sie diesen Bericht monatlich aus, um über die finanzielle Lage Ihrer Gemeinde auf dem Laufenden zu bleiben. Der Vergleich von Monat zu Monat hilft, Trends frühzeitig zu erkennen.
 :::
 
 :::warning
-Spendendaten stammen aus aufgezeichneten Beiträgen in Ihrem System. Stellen Sie sicher, dass Spenden konsistent eingegeben werden – ob durch Online-Spenden, Scheckverarbeitung oder manuelle Eingabe – für die genauesten Berichte. Siehe [Spenden aufzeichnen](../donations/recording-donations.md) für Details.
+Die Spendendaten stammen aus den in Ihrem System erfassten Zuwendungen. Achten Sie darauf, dass Spenden – ob über Online-Spenden, Scheckverarbeitung oder manuelle Eingabe – durchgehend erfasst werden, damit die Berichte möglichst genau sind. Details finden Sie unter [Spenden erfassen](../donations/recording-donations.md).
 :::

@@ -48,7 +48,7 @@ Transportvelgeren er `deliveryProvider`-konfigurasjonen:
 
 Klienten trenger aldri å vite hvilken som er i bruk — den snakker samme JSON-protokoll uansett.
 
-## Ledningsprotokoll
+## Ledningsprotokoll {#wire-protocol}
 
 Hver ramme er JSON av formen `PayloadInterface`:
 

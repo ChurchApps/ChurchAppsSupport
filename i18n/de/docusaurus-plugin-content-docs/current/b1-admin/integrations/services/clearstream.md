@@ -1,94 +1,93 @@
 ---
 title: "Clearstream"
-description: "Verbinden Sie Clearstream SMS über Zapier mit B1 Admin: Senden Sie SMS bei neuen Spenden oder Formulareinsendungen und übernehmen Sie eingehende Antworten als Personen."
+description: "Verbinden Sie Clearstream SMS über Zapier mit B1 Admin: Senden Sie Textnachrichten bei neuen Spenden oder Formular-Einsendungen und übernehmen Sie eingehende Antworten als Personen zurück in B1."
 ---
 
 # Clearstream
 
 <div class="article-intro">
 
-Triggern Sie eine [Clearstream](https://clearstream.io) Textnachricht von jedem B1-Ereignis aus – neue Person, neue Gabe, Formular-Einsendung, Kalenderaktualisierung – und ziehen Sie Antworten als B1-Datensätze zurück. Clearstreams Zapier-App stellt beide Richtungen zur Verfügung, so dass die ganze Verkabelung ein Rezept und kein benutzerdefinierter Code ist.
+Lösen Sie bei jedem B1-Ereignis – neue Person, neue Spende, Formular-Einsendung, Kalenderaktualisierung – eine [Clearstream](https://clearstream.io)-Textnachricht aus und übernehmen Sie Antworten als B1-Datensätze. Die Zapier-App von Clearstream unterstützt beide Richtungen, daher ist die gesamte Verbindung ein Rezept und kein eigener Code.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ein [Clearstream](https://clearstream.io)-Konto mit mindestens einer Liste und einer SMS-Zuordnung
+- Ein [Clearstream](https://clearstream.io)-Konto mit mindestens einer Liste und einem SMS-Kontingent
 - Ein [Zapier](https://zapier.com)-Konto
 - Ein B1Admin-Benutzer mit der Berechtigung **Einstellungen bearbeiten**
 
 </div>
 
-## Was Sie verkabeln können
+## Was Sie verbinden können {#what-you-can-wire-up}
 
 | Richtung | Auslöser | Aktion |
 |---|---|---|
-| B1 → Clearstream | B1 `person.created` | Clearstream: Subscriber erstellen/aktualisieren + Text zu Nummer senden |
-| B1 → Clearstream | B1 `donation.created` | Clearstream: Text zu Liste senden (z.B. Finanzeam benachrichtigen) |
-| B1 → Clearstream | B1 `form.submission.created` | Clearstream: Text zu Routing-Liste senden (z.B. Gebetsanforderungs-Team) |
-| Clearstream → B1 | Neue eingehende Text | B1: Person erstellen; Tag mit dem Schlüsselwort, das sie textet |
+| B1 → Clearstream | B1 `person.created` | Clearstream: Abonnent erstellen/aktualisieren + Textnachricht an Nummer senden |
+| B1 → Clearstream | B1 `donation.created` | Clearstream: Textnachricht an Liste senden (z. B. das Finanzteam benachrichtigen) |
+| B1 → Clearstream | B1 `form.submission.created` | Clearstream: Textnachricht an eine Weiterleitungsliste senden (z. B. das Gebetsteam) |
+| Clearstream → B1 | Neue eingehende Textnachricht | B1: Person erstellen; mit dem Stichwort markieren, das sie geschrieben haben |
 
-Clearstreams Zapier-Aktionen: *Text zu Nummer senden*, *Text zu Liste senden*, *Subscriber erstellen/aktualisieren*, *Subscriber zu automatisiertem Workflow hinzufügen*, *Tag zu Subscriber hinzufügen*, *Subscriber aus Liste entfernen*.
+Die Zapier-Aktionen von Clearstream: *Textnachricht an Nummer senden*, *Textnachricht an Liste senden*, *Abonnent erstellen/aktualisieren*, *Abonnent einem automatisierten Ablauf hinzufügen*, *Markierung zum Abonnenten hinzufügen*, *Abonnent von Liste entfernen*.
 
-## Setup
+## Einrichtung {#setup}
 
-### 1. Prägen Sie einen B1 API-Schlüssel
+### 1. Einen B1-API-Schlüssel erstellen {#1-mint-a-b1-api-key}
 
 **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**:
 
-- `settings:write` – erforderlich, damit B1 den Trigger-Webhook registriert
-- `people:read` – nötig, um die Person aus dem Ereignis zu suchen (`personId` → Name/Telefon/E-Mail)
-- (Optional) `people:write` wenn Clearstream-Antworten B1-Kontakte erstellen sollten
+- `settings:write` – erforderlich, um den Schlüssel mit Zapier zu verbinden und damit B1 den Auslöser-Webhook registrieren kann
+- `people:read` – nötig, um die Person aus dem Ereignis nachzuschlagen (`personId` → Name/Telefon/E-Mail)
+- (Optional) `people:write`, wenn Antworten über Clearstream B1-Kontakte anlegen sollen
 
-### 2. Erstellen Sie den „Text bei neuer Gabe" Zap
+### 2. Den Zap „Textnachricht bei neuer Spende“ erstellen {#2-build-the-text-on-new-gift-zap}
 
 1. **Auslöser** – B1.church: Neue Spende
-2. **Aktion** – B1.church: Person suchen (der Spende `personId`)
-3. **Aktion** – Clearstream: Text zu Nummer senden. Verwenden Sie das Telefon der Person aus Schritt 2 als Empfänger, verfassen Sie die Nachricht (`"Thanks for your gift, {first}! …"`).
+2. **Aktion** – B1.church: Person suchen (die `personId` der Spende)
+3. **Aktion** – Clearstream: Textnachricht an Nummer senden. Verwenden Sie die Telefonnummer der Person aus Schritt 2 als Empfänger und verfassen Sie die Nachricht (`"Thanks for your gift, {first}! …"`).
 
-Schalten Sie den Zap ein. B1 registriert den Spenden-Webhook bei der Aktivierung; Sie sehen `Zapier — donation.created` in **Einstellungen → Entwickler → Webhooks** erscheinen.
+Schalten Sie den Zap ein. B1 registriert den Spenden-Webhook beim Aktivieren; Sie sehen dann `Zapier — donation.created` unter **Einstellungen → Entwickler → Webhooks**.
 
-### 3. (Optional) Ziehen Sie Antworten als B1-Datensätze zurück
+### 3. (Optional) Antworten als B1-Datensätze übernehmen {#3-optional-pull-replies-back-as-b1-records}
 
-1. **Auslöser** – Clearstream: Neue eingehende Text
-2. **Aktion** – Filter nach Zapier zum Schlüsselwort – z.B. fahren Sie nur fort, wenn der Text-Body mit `PRAY` beginnt
-3. **Aktion** – B1.church: Person suchen (nach Telefon)
-4. **Aktion** – Filter / Path – wenn nicht gefunden, erstellen Sie sie; ordnen Sie in jedem Fall den Text-Body irgendwo ein (Slack, Google Sheet oder eine B1-Formular-Einsendung über Webhooks by Zapier).
+1. **Auslöser** – Clearstream: Neue eingehende Textnachricht
+2. **Aktion** – Filter von Zapier nach dem Stichwort – z. B. nur fortfahren, wenn der Text mit `PRAY` beginnt
+3. **Aktion** – Speichern Sie den Text der Nachricht dort, wo Ihr Team ihn sieht (Slack, eine Google Tabelle oder eine B1-Aufgabe). Die Funktion *Person suchen* von B1 sucht Personen nur über ID, E-Mail-Adresse oder Name, nicht über die Telefonnummer. Ordnen Sie die Antwort daher manuell einer B1-Person zu (oder fügen Sie einen Aufruf von Webhooks by Zapier per GET an den Endpunkt `/membership/people/search/phone?number=…` der B1-API hinzu).
 
-## Häufige Rezepte
+## Häufige Rezepte {#common-recipes}
 
-### Seelsorge-Team-Paging
+### Alarmierung des Ehrenamtsteams {#volunteer-team-paging}
 
-- **Auslöser** – B1.church: Neue Formular-Einsendung (gefiltert auf die Gebetsanforderungs-Formular-ID)
-- **Aktion** – Clearstream: Text zu Liste senden, wo die Liste Ihr On-Call-Seelsorgeteam ist. Verfassen Sie den Body als `New prayer request: {data.questions.0.answer}`.
+- **Auslöser** – B1.church: Neue Formular-Einsendung (gefiltert nach der ID des Gebetsanliegen-Formulars)
+- **Aktion** – Clearstream: Textnachricht an Liste senden, wobei die Liste Ihr diensthabendes Seelsorgeteam ist. Verfassen Sie den Text als `New prayer request: {data.questions.0.answer}`.
 
-### Erstkontakt-Verfolgungssequenz
+### Nachfassen bei Erstbesuchern {#first-time-visitor-follow-up-sequence}
 
-- **Auslöser** – B1.church: Neue Person, gefiltert auf einen B1-Personen-Tag „First-time visitor"
-- **Aktion** – Clearstream: Subscriber zu automatisiertem Workflow hinzufügen. Ordnen Sie die Workflow-ID einer vorgefertigten 7-Tage-Text-Tropffolge zu.
+- **Auslöser** – B1.church: Neue Person, gefiltert nach dem Mitgliedschaftsstatus der Person (zum Beispiel *Besucher*)
+- **Aktion** – Clearstream: Abonnent einem automatisierten Ablauf hinzufügen. Ordnen Sie die ID des Ablaufs einer vorgefertigten 7-tägigen Textnachricht-Reihe zu.
 
-### Schlüsselwort-gesteuerte Gruppenbeitritt
+### Gruppenbeitritt per Stichwort {#keyword-driven-group-join}
 
-- **Auslöser** – Clearstream: Neue eingehende Text (Filter zu Schlüsselwort `MENS`)
-- **Aktion** – B1.church: Person suchen (nach Telefon); Gabelung bei nicht gefunden → Person erstellen
-- **Aktion** – B1.church: Gruppenmitglied zur Herrenministerium-Gruppe hinzufügen
+- **Auslöser** – Clearstream: Neue eingehende Textnachricht (gefiltert auf das Stichwort `MENS`)
+- **Aktion** – B1.church: Person aus Name und Telefonnummer des Absenders erstellen (die Funktion *Person suchen* von B1 kann Personen nicht über die Telefonnummer finden, prüfen Sie daher später unter **Personen** auf Dubletten)
+- **Aktion** – B1.church: Gruppenmitglied zur Gruppe Männerarbeit hinzufügen
 
-## Limits & Notizen
+## Einschränkungen und Hinweise {#limits--notes}
 
-- **Clearstream misst SMS nach Nachricht.** Jede Send Text-Aktion verbraucht eine oder mehrere Credits abhängig von Länge und Anzahl der Empfänger – überprüfen Sie Ihr Plan-Kontingent.
-- **Telefon muss im E.164-Format sein** (z.B. `+15555550199`) für *Text zu Nummer senden*. B1s Personeneintrag speichert, was eingegeben wurde; verwenden Sie einen *Formatter by Zapier – Nummern → Telefonnummer formatieren* Schritt, wenn Sie das Format nicht garantieren können.
-- **Kein Header ist erforderlich von B1s Seite** – Clearstreams Auth lebt vollständig in seiner Zapier-Verbindung.
+- **Clearstream berechnet SMS nach Nachrichten.** Jede Aktion „Textnachricht senden“ verbraucht je nach Länge und Anzahl der Empfänger einen oder mehrere Credits – prüfen Sie das Kontingent Ihres Tarifs.
+- **Die Telefonnummer muss im Format E.164 vorliegen** (z. B. `+15555550199`) für *Textnachricht an Nummer senden*. Der Personendatensatz in B1 speichert, was eingegeben wurde; verwenden Sie einen Schritt *Formatter by Zapier — Numbers → Format Phone Number*, wenn Sie das Format nicht garantieren können.
+- **Auf Seiten von B1 ist kein Header nötig** – die Authentifizierung von Clearstream liegt vollständig in der Zapier-Verbindung.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-- **Auslöser wird niemals ausgelöst** – `Einstellungen → Entwickler → Webhooks` sollte eine `Zapier — <event>`-Reihe nach dem Einschalten des Zaps zeigen. Wenn nicht, fehlt dem B1 API-Schlüssel `settings:write`. Prägen Sie erneut und verbinden Sie erneut.
-- **Clearstream gibt „Invalid phone number" zurück** – das Empfänger-Feld ist nicht im E.164-Format. Fügen Sie einen Format-Telefonnummer-Schritt hinzu.
-- **Text zu Liste fehlgeschlagen mit `403`** – der Clearstream API-Benutzer hat keine Berechtigung für diese Liste, oder die Listen-ID ist falsch. Listen-IDs sind auf der Clearstream-Listen-Detail-Seite sichtbar.
+- **Der Auslöser startet nie** – unter `Settings → Developer → Webhooks` sollte nach dem Einschalten des Zaps eine Zeile `Zapier — <event>` erscheinen. Fehlt sie, fehlt dem B1-API-Schlüssel `settings:write`. Erstellen Sie den Schlüssel neu und verbinden Sie ihn erneut.
+- **Clearstream meldet „Invalid phone number“** – das Empfängerfeld ist nicht im Format E.164. Fügen Sie einen Schritt Format Phone Number hinzu.
+- **Textnachricht an Liste senden schlägt mit `403` fehl** – der Clearstream-API-Benutzer hat keine Berechtigung für diese Liste oder die Listen-ID ist falsch. Die Listen-IDs sehen Sie auf der Detailseite der Liste in Clearstream.
 
-## Siehe auch
+## Siehe auch {#see-also}
 
-- [Text In Church](./text-in-church.md) – alternative SMS-Plattform, ähnliches Verkabelungsmuster
+- [Text In Church](./text-in-church.md) – alternative SMS-Plattform mit ähnlichem Aufbau der Verbindung
 - [Mobile Message](./mobile-message.md) – für Gemeinden außerhalb der USA
-- [Zapier (Übersicht)](../zapier.md) – B1-Seite jedes Zapier-Rezepts
-- [Clearstream API-Dokumente](https://api-docs.clearstream.io/) – für benutzerdefinierte Integrationen über das Zapier-App hinaus
+- [Zapier (Überblick)](../zapier.md) – die B1-Seite jedes Zapier-Rezepts
+- [Clearstream-API-Dokumentation](https://api-docs.clearstream.io/) – für eigene Integrationen über die Zapier-App hinaus

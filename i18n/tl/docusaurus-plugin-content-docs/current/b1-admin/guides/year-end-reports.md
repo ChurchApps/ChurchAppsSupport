@@ -1,94 +1,95 @@
 ---
-title: "Panduan: Gumawa ng mga Taunang Ulat ng Donasyon"
-description: "Sa B1 Admin, tapusin ang mga rekord ng donasyon ng taon, suriin ang mga setting ng buwis ng pondo, at gumawa ng mga pahayag ng donasyong maaaring ibawas sa buwis para sa bawat donor."
+title: "Gabay: Gumawa ng Year-End Giving Report"
+description: "Sa B1 Admin, tapusin ang mga talaan ng donasyon ng taon, suriin ang mga tax setting ng pondo, at gumawa ng mga tax-deductible na giving statement para sa bawat donor."
 ---
 
-# Gumawa ng mga Taunang Ulat ng Donasyon
+# Gumawa ng Year-End Giving Report
 
 <div class="article-intro">
 
-Gabayan ka sa taunang proseso ng pagtatapos ng iyong mga rekord ng donasyon, pag-verify ng mga setting ng pondo, at pagbuo ng mga pahayag ng donasyong maaaring ibawas sa buwis para sa bawat donor. Karaniwan itong ginagawa sa unang bahagi ng Enero para sa nakaraang taon ng kalendaryo.
+Dumaan sa proseso ng year-end para tapusin ang iyong mga talaan ng donasyon, i-verify ang mga setting ng pondo, at gumawa ng mga tax-deductible na giving statement para sa bawat donor. Karaniwang ginagawa ito sa unang bahagi ng Enero para sa nakaraang taong kalendaryo.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Account sa B1 Admin na may access sa pananalapi
-- Mga donasyong naitala sa buong taon (online sa pamamagitan ng Stripe at/o manwal na inilagay)
+- B1 Admin account na may financial access
+- Mga donasyong naitala sa buong taon (online sa pamamagitan ng Stripe at/o manu-manong inilagay)
 - Access sa iyong Stripe account kung tumatanggap ka ng online na donasyon
 
 </div>
 
-## Hakbang 1: I-import ang Huling mga Transaksyon sa Stripe
+## Hakbang 1: I-import ang Huling mga Transaksyon sa Stripe {#step-1-import-final-stripe-transactions}
 
-Siguraduhing nasa iyong sistema ang lahat ng online na donasyon mula sa katapusan ng taon.
+Siguraduhing nasa iyong sistema na ang lahat ng online na donasyon mula sa katapusan ng taon.
 
-Sundin ang gabay na [Stripe Import](../donations/stripe-import.md) upang:
+Sundin ang gabay na [Stripe Import](../donations/stripe-import.md) para:
 
-1. Pumunta sa Donations > Stripe Import
-2. Pumili ng saklaw ng petsa na sumasaklaw sa katapusan ng taon (hal., Disyembre 1 - Disyembre 31)
-3. I-click ang Preview muna upang suriin, pagkatapos ay Import Missing upang tapusin
+1. Sa [Jump menu](../introduction.md#getting-around-with-the-jump-menu), piliin ang **Donations > Stripe Import** (lumalabas lang ito kapag Stripe ang iyong giving provider)
+2. Itakda ang **Start Date** at **End Date** para masakop ang katapusan ng taon (hal., Disyembre 1 - Disyembre 31)
+3. I-click muna ang **Preview** para suriin, pagkatapos ay i-click ang **Import Missing** para tapusin
 
 :::warning
-Patakbuhin ang import na ito bago gumawa ng mga pahayag. Ang anumang transaksyong hindi mo na-import ay hindi lilitaw sa mga pahayag ng donor.
+Patakbuhin muna ang import na ito bago gumawa ng mga statement. Ang anumang transaksyong hindi mo na-import ay hindi lalabas sa mga statement ng donor.
 :::
 
-## Hakbang 2: Suriin ang mga Ulat ng Donasyon
+## Hakbang 2: Suriin ang mga Donation Report {#step-2-review-donation-reports}
 
-I-verify na tama ang iyong mga rekord bago gumawa ng mga pahayag.
+I-verify na tama ang iyong mga talaan bago gumawa ng mga statement.
 
-Sundin ang gabay na [Donation Reports](../donations/donation-reports.md) upang:
+Sundin ang gabay na [Donation Reports](../donations/donation-reports.md) para:
 
-1. Suriin ang pahina ng buod ng donasyon para sa buong taon
-2. Suriin ang kabuuan ayon sa pondo at ihambing ang mga ito sa iyong mga pahayag sa bangko upang mahuli ang anumang pagkakaiba
-3. I-click ang mga indibidwal na batch upang i-verify ang mga detalye ng donor kung kinakailangan
+1. Sa Jump menu, piliin ang **Donations > Summary**, itakda ang **Start Date** at **End Date** sa **Filter Report** para sa buong taon, at i-click ang **Run Report**
+2. Suriin ang mga kabuuan kada pondo at ihambing sa iyong bank statement para mahuli ang anumang pagkakaiba. I-click ang **Download Options** at piliin ang **Summary** para sa CSV
+3. Buksan ang mga indibidwal na batch sa ilalim ng **Donations > Batches** para i-verify ang mga detalye kada donor kung kailangan
 
-## Hakbang 3: I-verify ang Katayuan ng Buwis ng Pondo
+## Hakbang 3: I-verify ang Tax Status ng Pondo {#step-3-verify-fund-tax-status}
 
-Tiyakin na tama ang setting ng bawat pondo na maaaring ibawas sa buwis upang maging tumpak ang mga pahayag.
+Siguraduhing tama ang tax-deductible setting ng bawat pondo para tumpak ang mga statement.
 
-Sundin ang gabay na [Funds](../donations/funds.md) upang:
+Sundin ang gabay na [Funds](../donations/funds.md) para:
 
-1. Buksan ang bawat pondo at kumpirmahin na tama ang setting na maaaring ibawas sa buwis
+1. Sa Jump menu, piliin ang **Donations > Funds** at suriin ang **Tax Status** ng bawat pondo
+2. I-click ang **Edit** sa isang pondo para baguhin ang setting nitong **Tax Deductible**
 
 :::info
-Tanging mga donasyon sa mga pondong may markang maaaring ibawas sa buwis ang lilitaw sa mga pahayag ng donasyon. Kung dapat maibawas sa buwis ang isang pondo ngunit hindi ito minarkahan nang ganoon, i-update ito bago gumawa ng mga pahayag.
+Tanging ang mga donasyon sa mga pondong minarkahang tax-deductible ang lalabas sa mga giving statement. Kung dapat tax-deductible ang isang pondo pero hindi ito minarkahan nang ganoon, i-update ito bago gumawa ng mga statement.
 :::
 
-## Hakbang 4: Gumawa ng mga Pahayag ng Donasyon
+## Hakbang 4: Gumawa ng mga Giving Statement {#step-4-generate-giving-statements}
 
-Gumawa ng opisyal na mga pahayag ng donasyon para sa iyong mga donor.
+Gumawa ng opisyal na mga giving statement para sa iyong mga donor.
 
-Sundin ang gabay na [Giving Statements](../donations/giving-statements.md) upang:
+Sundin ang gabay na [Giving Statements](../donations/giving-statements.md) para:
 
-1. Pumunta sa **Donations > Giving Statements**
-2. Piliin ang taon mula sa dropdown at suriin ang mga buod na estadistika
-3. Piliin ang iyong paraan ng pag-download:
-   - **Download ZIP** — hiwalay na mga CSV file, isa para sa bawat donor
-   - **Print All** — naka-print na view na may bawat pahayag sa bagong pahina, kasama ang logo ng iyong simbahan sa itaas (kung nag-upload ka na nito)
+1. Sa Jump menu, piliin ang **Donations > Giving Statements**
+2. Piliin ang **Year** at suriin ang mga summary statistic. Ang mga simbahan sa Canada, Australia, o New Zealand ay puwedeng i-click ang **Statement format** para lumipat sa opisyal na resibo layout ng kanilang bansa
+3. Piliin ang paraan ng pag-download:
+   - **Download ZIP** — mga indibidwal na CSV file, isa kada donor
+   - **Print All** — printable na view na may bawat statement sa bagong pahina, at logo ng iyong simbahan sa itaas (kung nag-upload ka na nito)
 
 :::tip
-Gumawa ng mga pahayag nang maaga sa Enero habang sariwa pa ang mga rekord. Bibigyan ka nito ng panahon upang mahuli ang anumang problema bago ipadala ang mga ito.
+Gumawa ng mga statement nang maaga sa Enero habang sariwa pa ang mga talaan. Magkakaroon ka ng panahong ayusin ang anumang problema bago ipadala.
 :::
 
-## Hakbang 5: Ipamahagi sa mga Donor
+## Hakbang 5: Ipamahagi sa mga Donor {#step-5-distribute-to-donors}
 
-Iabot ang mga pahayag sa mga kamay ng iyong mga donor.
+Ihatid ang mga statement sa mga kamay ng iyong mga donor.
 
-1. I-print at ipadala sa koreo ang mga pahayag, o i-email ang mga indibidwal na CSV sa mga donor
-2. Maaari ring tingnan ng mga miyembro ang sarili nilang kasaysayan ng donasyon at i-print ang mga pahayag sa [B1.church o sa B1 App](../../b1-church/giving/donation-history.md)
+1. I-print at i-mail ang mga statement, o i-email ang mga indibidwal na CSV sa mga donor
+2. Puwede ring tingnan ng mga miyembro ang sarili nilang kasaysayan ng pagbibigay at i-print ang mga statement sa [B1.church o sa B1 App](../../b1-church/giving/donation-history.md)
 
-## Tapos Ka Na!
+## Tapos Ka Na! {#youre-done}
 
-Kumpleto na ang iyong mga taunang ulat ng donasyon. Nakuha na ng mga donor ang kanilang mga pahayag na maaaring ibawas sa buwis, at tapos na ang iyong mga rekord pinansyal para sa taon.
+Kumpleto na ang iyong year-end giving report. Nakuha na ng mga donor ang kanilang tax-deductible na statement, at tapos na ang iyong mga talaang pinansyal para sa taon.
 
-## Mga Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Stripe Import](../donations/stripe-import.md) — mag-import ng mga online na transaksyon
-- [Donation Reports](../donations/donation-reports.md) — tingnan ang mga trend at kabuuan ng donasyon
-- [Funds](../donations/funds.md) — pamahalaan ang mga pondo at mga setting na maaaring ibawas sa buwis
-- [Giving Statements](../donations/giving-statements.md) — gumawa ng mga taunang pahayag
-- [Recording Donations](../donations/recording-donations.md) — manwal na ilagay ang mga donasyong cash/tseke
-- [Donation History (Web)](../../b1-church/giving/donation-history.md) — view ng miyembro para sa sariling pamamahala
-- [Set Up Online Giving Guide](./online-giving.md) — paunang setup ng Stripe at pagbibigay online
+- [Stripe Import](../donations/stripe-import.md) — i-import ang mga online na transaksyon
+- [Donation Reports](../donations/donation-reports.md) — tingnan ang mga trend at kabuuan ng pagbibigay
+- [Funds](../donations/funds.md) — pamahalaan ang mga pondo at tax-deductible setting
+- [Giving Statements](../donations/giving-statements.md) — gumawa ng year-end statement
+- [Recording Donations](../donations/recording-donations.md) — manu-manong ilagay ang cash/check na donasyon
+- [Donation History (Web)](../../b1-church/giving/donation-history.md) — self-service na view para sa mga miyembro
+- [Set Up Online Giving Guide](./online-giving.md) — paunang setup ng Stripe at giving

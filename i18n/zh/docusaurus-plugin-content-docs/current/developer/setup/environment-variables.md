@@ -167,7 +167,7 @@ Next.js 要求任何需要在浏览器中可用的环境变量都带有 `NEXT_PU
 
 ## 移动应用环境变量
 
-### B1Checkin（React Native / Expo）
+### B1Checkin（React Native / Expo） {#b1checkin-react-native--expo}
 
 示例文件：`dotenv.sample.txt`
 

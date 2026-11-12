@@ -20,7 +20,7 @@ Après avoir créé votre compte et votre église, quelques étapes importantes 
 
 </div>
 
-## Étape 1 : Configurer les informations de votre église
+## Étape 1 : Configurer les informations de votre église {#step-1-configure-your-church-information}
 
 1. Ouvrez le [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Paramètres**, puis cliquez sur **Paramètres**.
 2. Dans la section **Informations sur l'église**, cliquez sur **Modifier**.

@@ -1,91 +1,92 @@
 ---
 title: "Donorbox"
-description: "通过 Zapier 将 Donorbox 连接到 B1 Admin，使在线捐款自动生成奉献记录和捐款人档案，无需手动导出。"
+description: "通过 Zapier 将 Donorbox 连接到 B1 Admin，使线上奉献自动建立奉献记录与捐献者人员资料，无需手动汇出数据。"
 ---
 
 # Donorbox
 
 <div class="article-intro">
 
-如果您的教会通过 Donorbox 接收捐款但在 B1 中跟踪人员和声明，您可以让 Donorbox 的即时 Zapier 触发器在 B1 内创建匹配的捐款记录 — 并如果捐赠者不存在，则创建他们为 B1 人员。无需手动对账，无需每月导出。
+如果你的教会透过 Donorbox 接受奉献，但在 B1 中管理人员资料与奉献报表，你可以让 Donorbox 的即时 Zapier 触发器在 B1 中建立对应的奉献记录；如果捐献者尚未存在于 B1 中，也会自动将其建立为人员。无需手动对账，也无需每月汇出数据。
 
 </div>
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 一个具有至少一个活动的 [Donorbox](https://donorbox.org) 账户
+- 一个至少有一个募款活动的 [Donorbox](https://donorbox.org) 账户
 - 一个 [Zapier](https://zapier.com) 账户
-- 一个具有 **编辑设置** 权限的 B1Admin 用户
+- 一位在 B1Admin 中具有 **Edit Settings** 权限的用户
 
 </div>
 
-## 您可以连接什么
+## 你可以设置的内容 {#what-you-can-wire-up}
 
 | 方向 | Donorbox 触发器 | B1 操作 |
 |---|---|---|
-| Donorbox → B1 | 新或更新的捐款（即时） | 查找人员 → 添加捐款 |
-| Donorbox → B1 | 新或更新的捐赠者 | 创建人员 |
-| Donorbox → B1 | 新或更新的计划（重复） | 查找人员 → 添加捐款（使用计划 id 作为注释） |
+| Donorbox → B1 | New or Updated Donation（即时） | Find Person → Add Donation |
+| Donorbox → B1 | New or Updated Donor | Create Person |
+| Donorbox → B1 | New or Updated Plan（定期） | Find Person → Add Donation（以 Plan ID 作为备注） |
 
-Donorbox 将其触发器发布为 **即时** — 他们在真实捐款后几秒内触发。没有轮询延迟。
+Donorbox 的触发器为**即时**触发——真实奉献发生后数秒内即会触发，没有轮询延迟。
 
-## 设置
+## 设置 {#setup}
 
-### 1. 生成一个 B1 API 密钥
+### 1. 建立 B1 API 密钥 {#1-mint-a-b1-api-key}
 
-在 B1Admin 中：**设置 → 开发者 → API 密钥 → 新建 API 密钥**。Scopes：
+在 B1Admin 中：**Settings → Developer → API Keys → New API Key**。权限范围：
 
-- `people:read` — 按电子邮件查找捐赠者
-- `people:write` — 如果他们是新的，创建他们
-- `donations:write` — 记录礼物
+- `people:read`——依电子邮件查找捐献者
+- `people:write`——若捐献者是新的，则建立其记录
+- `donations:write`——记录该笔奉献
 
-此方向中的触发器是 Donorbox 的，而不是 B1 的，所以您不需要 `settings:write` 这里。
+- `settings:write`——Zapier 在连接时会将每个 B1 密钥与 B1 的 webhook 清单进行核对，因此没有此权限连接会失败（即使在这里拥有触发器的是 Donorbox，而不是 B1）
 
-### 2. 构建"记录捐款"Zap
+### 2. 建立"记录奉献"的 Zap {#2-build-the-record-a-donation-zap}
 
-1. **触发器** — Donorbox：新捐款。用 Donorbox 的 API 密钥连接（在 Donorbox 中：*账户 → 资料 → API 设置*）。
-2. **操作** — B1.church：查找人员。将触发器中的捐赠者电子邮件映射到 *电子邮件* 搜索字段。
-3. **操作** — Zapier 过滤器（可选）：仅当未找到捐赠者时继续…
-4. **操作** — B1.church：创建人员。映射名字/姓氏/电子邮件以便捐赠者作为成员登陆，而不仅仅是礼物记录。
-5. **操作** — B1.church：添加捐款。映射：
-   - 金额 → `data.amount`
-   - 捐款日期 → 触发器的捐款日期
-   - 基金 → 选择镜像 Donorbox 活动的 B1 基金（Zapier 让您基于过滤器或格式化程序步骤切换基金）
-   - 方式 → "在线"
-   - 注释 → Donorbox 交易 id（在对账时很方便）
+1. **触发器**——Donorbox：New Donation。使用 Donorbox 的 API 密钥连接（在 Donorbox 中：*Account → Profile → API Settings*）。
+2. **操作**——B1.church：Find Person。将触发器中的捐献者电子邮件映射到 *Email* 字段。
+3. **操作**——B1.church：Add Donation。映射：
+   - Person → 第 2 步的 ID
+   - Amount → 触发器中的奉献金额
+   - Donation Date → 触发器中的奉献日期
+   - Fund → 选择与 Donorbox 募款活动对应的 B1 基金（Zapier 可依筛选或格式化步骤切换基金）
+   - Method → "Online"
+   - Notes → Donorbox 交易 ID（对账时很有用）
 
-打开 Zap。通过 Donorbox 的下一个实时捐款自动登陆在 **B1Admin → 捐款** 中。
+开启 Zap。之后每一笔通过 Donorbox 完成的真实奉献都会自动出现在 **B1Admin → Donations** 中。
 
-## 常见方案
+当没有人使用该电子邮件时，B1 的 *Find Person* 会以"No person found"错误停止 Zap，因此筛选步骤无法据此分支。若要处理首次奉献的捐献者，请为 Find Person 步骤开启 Zapier 的错误处理，并在其错误路径中执行 B1.church：Create Person（映射名字、姓氏与电子邮件），然后以新人员的 ID 执行 Add Donation。或者，你也可以执行上方表格中的 *New Donor* → *Create Person* Zap，使捐献者在奉献送达前就已存在于 B1 中。
 
-### 每个基金一个 Zap
+## 常见范例 {#common-recipes}
 
-如果您运行映射到单独 B1 基金的多个 Donorbox 活动，最整洁的布局是每个活动一个 Zap，顶部有 Donorbox *活动* 过滤器 — 这样基金映射被硬编码，您跳过查找步骤。
+### 每个基金一个 Zap {#one-zap-per-fund}
 
-### 将更新的捐款视为更正
+如果你的 Donorbox 募款活动分别对应不同的 B1 基金，最简洁的做法是为每个募款活动建立一个 Zap，并在最前面加入 Donorbox *campaign* 筛选——这样基金对应关系便已固定，无需额外的查找步骤。
 
-Donorbox 的 *新或更新的捐款* 也会触发编辑。在 `event_type` 上使用 Zapier *路径* 步骤分岔："新" → 添加捐款，"已更新" → 查找捐款 + 更新（注意：B1 的 Zapier 应用目前没有更新捐款操作 — 现在，将"已更新"事件记录到 Slack 频道供手动审查）。
+### 将更新的奉献视为更正 {#treat-updated-donations-as-corrections}
 
-### 将重复计划更改同步到 Slack 频道
+Donorbox 的 *New or Updated Donation* 在编辑时也会触发。使用 Zapier 的 *Path* 步骤依据 `event_type` 分支："new" → Add Donation，"updated" → Find Donation + Update（注意：B1 的 Zapier 应用程序目前没有 Update Donation 操作——暂时请将 "updated" 事件记录到 Slack 频道，供人工审阅）。
 
-- **触发器** — Donorbox：新或更新的计划
-- **操作** — Slack：向 `#donations` 发送消息（例如"计划已更改 — Sarah 的每月礼物现在是 $200"）
+### 将定期计划的变更同步到 Slack 频道 {#sync-recurring-plan-changes-to-a-slack-channel}
 
-## 限制和注释
+- **触发器**——Donorbox：New or Updated Plan
+- **操作**——Slack：Send Message 到 `#donations`（例如"Plan changed — Sarah's monthly gift is now $200"）
 
-- **按电子邮件匹配捐赠者。** Donorbox 不共享 B1 的人员 id；唯一的耐用连接键是电子邮件。在不同电子邮件下捐款的捐赠者将创建新 B1 人员 — 您的每月对账应寻找这些。
-- **退款未单独暴露** — Donorbox 在同一捐款上发出状态更新。B1 的 Zapier 应用目前没有 *更新捐款* 操作；今天的安全模式是带外记录退款事件并手动调整捐款。
-- **首先在 Donorbox 沙箱中测试**，以避免在生产 B1 中创建虚假礼物。Donorbox 提供与实时分开的测试模式凭证。
+## 限制与注意事项 {#limits--notes}
 
-## 故障排查
+- **依电子邮件配对捐献者**。Donorbox 不会共享 B1 的人员 ID；唯一可持久使用的配对键是电子邮件。使用不同电子邮件奉献的捐献者会被建立为新的 B1 人员——你的每月对账应留意这些情况。
+- **退款不会单独显示**——Donorbox 会在同一笔奉献上发出状态更新。B1 的 Zapier 应用程序目前没有 *Update Donation* 操作；目前较安全的做法是将退款事件记录在外部，并手动调整奉献记录。
+- **请先在 Donorbox 的沙盒中测试**，以免在正式的 B1 中建立假的奉献记录。Donorbox 提供与正式环境分开的测试模式凭证。
 
-- **每次运行都显示"未找到人员"警告** — 如果您已排序步骤以便 *创建人员* 在未找到分支中运行，那就好了。如果创建人员步骤也从不运行，双检 API 密钥有 `people:write`。
-- **捐款金额看起来大 100 倍或小** — Donorbox 在某些有效负载变量中以美分发送，在其他中以美元发送。使用 *Formatter by Zapier — Numbers* 步骤按 100 除（如需要）。
-- **来自单个礼物的重复捐款** — Donorbox 触发 *新捐款* 和 *更新捐款* 两者。要么过滤为 `event_type = "donation.succeeded"`，要么构建两个具有不重叠过滤器的 Zaps。
+## 故障排除 {#troubleshooting}
 
-## 另请参阅
+- **"No person found" 错误**——该捐献者尚未存在于 B1 中（或是使用了不同的电子邮件奉献）。请加入上述的错误路径，并确认 API 密钥具有 `people:write`，以便 *Create Person* 能够执行。
+- **奉献金额看起来大了 100 倍或小了 100 倍**——Donorbox 在某些资料格式中以分为单位、在另一些格式中以元为单位。如有需要，请使用 *Formatter by Zapier — Numbers* 步骤除以 100。
+- **单笔奉献产生重复记录**——Donorbox 会同时触发 *New Donation* 和 *Updated Donation*。请筛选 `event_type = "donation.succeeded"`，或建立两个筛选条件互不重叠的 Zap。
 
-- [Zapier（概览）](../zapier.md) — 每个 Zapier 方案的 B1 侧
-- [Subsplash](./subsplash.md) — 另一个具有 Zapier 应用的捐款平台
-- [Mailchimp](./mailchimp.md) — 将"新礼物"链到电子邮件标记
+## 另见 {#see-also}
+
+- [Zapier（概览）](../zapier.md)：每个 Zapier 范例的 B1 端设置
+- [Subsplash](./subsplash.md)：另一个提供 Zapier 应用程序的奉献平台
+- [Mailchimp](./mailchimp.md)：将"新奉献"串接到电子邮件标签

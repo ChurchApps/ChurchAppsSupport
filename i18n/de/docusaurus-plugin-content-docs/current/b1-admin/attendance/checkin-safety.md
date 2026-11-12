@@ -20,7 +20,7 @@ B1 enthält eine Reihe von Kindsicherheitsmaßnahmen für die Anmeldung: Raumkap
 
 </div>
 
-## Raumkapazität und Schließung eines Raums
+## Raumkapazität und Schließung eines Raums {#room-capacity-and-closing-a-room}
 
 Jeder Anmeldungsraum (Gruppe) kann seine eigenen Limits durchsetzen. Öffnen Sie die Gruppe, klicken Sie auf **Bearbeiten**, um ihre Einstellungen zu bearbeiten, und finden Sie den Abschnitt **Anmeldungskapazität**:
 
@@ -28,7 +28,7 @@ Jeder Anmeldungsraum (Gruppe) kann seine eigenen Limits durchsetzen. Öffnen Sie
 - **Gastkapazität** – Eine optionale separate Obergrenze für die Anzahl der Gäste, die der Raum aufnehmen kann.
 - **Für Anmeldung geschlossen** – Setzen Sie auf **Ja**, um alle Anmeldungen in diesem Raum sofort zu stoppen (z.B. wenn eine Klasse abgesagt ist oder ein Raum nicht verfügbar ist). Abmeldungen funktionieren weiterhin.
 
-## Freiwilligenverhältnisse
+## Freiwilligenverhältnisse {#volunteer-ratios}
 
 Der gleiche Abschnitt **Anmeldungskapazität** in der Gruppe enthält auch Personalregeln:
 
@@ -50,11 +50,11 @@ Wie streng die Verhältnisse durchgesetzt werden, ist eine kirchenweite Einstell
 Kapazität und Für Anmeldung geschlossen sind immer harte Grenzen – die Wahl zwischen Warnung und Blockierung gilt nur für Freiwilligenverhältnisse.
 :::
 
-## Anmeldungstypen
+## Anmeldungstypen {#check-in-types}
 
 Jede Anmeldung erfasst, ob die Person ein **Mitglied**, ein **Gast** oder ein **Freiwilliger** ist. Der Typ wird am Kiosk über Chips auf dem Haushaltsbildschirm ausgewählt (Mitglied ist die Standardeinstellung). Typen werden in den Sicherheitsregeln verwendet – Freiwillige bieten Abdeckung der Verhältnisse, und Gäste zählen gegen die Gastkapazität des Raums.
 
-## Alter und Klassenstufe Raumanleitung
+## Alter und Klassenstufe Raumanleitung {#age-and-grade-room-guidance}
 
 Sie können für jeden Raum Alters- oder Klassenstufengrenzen festlegen, damit der Kiosk Familien zu passenden Räumen führt:
 
@@ -66,7 +66,7 @@ Klassenstufen werden am **Klassenstufenüberlegungs-Datum** Ihrer Kirche überar
 1. Gehen Sie in B1 Admin zu **Einstellungen** und öffnen Sie den Abschnitt **Klassenstufenüberleitung**.
 2. Stellen Sie den Monat und Tag ein, an dem Ihre Kirche Schüler befördert (z.B. 1. August). Alter und Klassenstufen am Kiosk werden bis zum letzten Klassenstufenüberlegungs-Datum berechnet.
 
-## Vertrauenswürdige und nicht autorisierte Abholpersonen
+## Vertrauenswürdige und nicht autorisierte Abholpersonen {#trusted-and-not-authorized-pickup-people}
 
 Jeder Haushalt kann eine Liste von Personen haben, denen es gestattet ist – oder nicht – seine Kinder abzuholen.
 

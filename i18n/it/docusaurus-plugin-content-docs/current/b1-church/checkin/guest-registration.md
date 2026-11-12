@@ -1,70 +1,70 @@
 ---
-title: "Registrazione Ospiti"
-description: "Registra te stesso e la tua famiglia come ospiti per la prima volta tramite il modulo QR in B1 Checkin, così i volontari possono farti il check-in al tuo arrivo."
+title: "Registrazione ospiti"
+description: "Registra te stesso e la tua famiglia come ospiti per la prima volta con il modulo QR di B1 Checkin, così i volontari possono fare il check-in al vostro arrivo."
 ---
 
-# Registrazione Ospiti
+# Registrazione ospiti
 
 <div class="article-intro">
 
-Se stai visitando una chiesa per la prima volta, puoi registrare te stesso e la tua famiglia come ospiti utilizzando la pagina di registrazione ospiti. Questo crea un record nel sistema della chiesa, così i volontari possono farti il check-in al tuo arrivo.
+Se visiti una chiesa per la prima volta, puoi registrare te stesso e la tua famiglia come ospiti usando la pagina di registrazione ospiti. Così viene creata una scheda nel sistema della chiesa, e i volontari possono fare il check-in al tuo arrivo.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- La tua chiesa deve avere attivata la registrazione ospiti tramite QR. In caso contrario, la pagina mostra "La registrazione ospiti non è attivata per questa chiesa."
-- Scansiona il codice QR visualizzato sul chiosco di check-in, tocca **Registrati qui** sul chiosco, oppure ricevi un link da un volontario della chiesa
+- La tua chiesa deve avere attiva la registrazione ospiti tramite codice QR. In caso contrario, la pagina mostra "La registrazione ospiti non è attiva per questa chiesa."
+- Scansiona il codice QR mostrato al chiosco di check-in, tocca **Registra qui** sul chiosco, oppure ricevi un collegamento da un volontario della chiesa
 
 </div>
 
-## Come funziona la registrazione ospiti
+## Come funziona la registrazione ospiti {#how-guest-registration-works}
 
-La registrazione ospiti è pensata per i visitatori che non hanno ancora un account. Sul chiosco di check-in della chiesa, tocca **Registrati come ospite** per mostrare un codice QR che rimanda alla pagina di registrazione. Puoi anche ricevere il link da un volontario o da un accoglienza, oppure trovarlo su un volantino o sul sito web della chiesa.
+La registrazione ospiti è pensata per i visitatori che non hanno ancora un account. Sul chiosco di check-in della chiesa, tocca **Registrati come ospite** per mostrare un codice QR che porta alla pagina di registrazione. Puoi anche ricevere il collegamento da un volontario o da un accoglienza, oppure trovarlo su un volantino o sul sito della chiesa.
 
-Non hai il telefono a portata di mano? Nella stessa finestra del codice QR sul chiosco, tocca **Registrati qui** per compilare il modulo direttamente sul chiosco. Consulta [Registrazione come ospite](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) per capire come funziona sul chiosco.
+Non hai il telefono a portata di mano? Nella stessa finestra del codice QR sul chiosco, tocca **Registra qui** per compilare il modulo direttamente sul chiosco. Vedi [Registrarsi come ospite](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) per capire come funziona sul chiosco.
 
-La pagina si apre con il titolo **Registrazione Ospiti**. Se la chiesa ha aggiunto una foto di intestazione, questa appare in cima alla pagina; altrimenti vedrai una piccola icona.
+La pagina si apre con il titolo **Registrazione ospiti**. Se la chiesa ha aggiunto una foto di intestazione, compare in cima alla pagina; altrimenti vedrai una piccola icona.
 
-## Registrare la tua famiglia
+## Registrare la tua famiglia {#registering-your-family}
 
-1. **Scansiona il codice QR** sul chiosco di check-in oppure apri il link di registrazione ospiti sul tuo telefono. (Se hai toccato **Registrati qui** sul chiosco, il modulo è già aperto.)
-2. Compila la scheda **Contatto principale**. **Nome** e **Cognome** sono sempre obbligatori. A seconda di ciò che richiede la tua chiesa, potresti vedere anche:
+1. **Scansiona il codice QR** al chiosco di check-in oppure apri sul telefono il collegamento alla registrazione ospiti. (Se hai toccato **Registra qui** sul chiosco, il modulo è già aperto.)
+2. Compila la scheda **Contatto principale**. **Nome** e **Cognome** sono sempre obbligatori. A seconda di ciò che chiede la tua chiesa, potresti vedere anche:
    - **Titolo** (come Sig., Sig.ra, Dott., o Pastore), davanti al nome
    - **Email** e **Telefono**
    - **Stato civile**
-   - **Indirizzo di residenza** -- **Via e numero civico**, **Indirizzo riga 2**, **Città**, **Provincia** e **CAP**. Questo è condiviso da tutta la famiglia.
-3. Il modulo si apre con una seconda scheda per **Membro della famiglia 2**. Inserisci il suo nome e cognome, oppure tocca la **X** nell'angolo della scheda per rimuoverla se stai registrando solo te stesso.
-4. Per aggiungere altre persone, tocca **Aggiungi membro della famiglia**. La nuova scheda compila automaticamente il cognome del contatto principale. Puoi registrare fino a 10 persone contemporaneamente.
-5. Se la tua chiesa lo richiede, la scheda di ciascuna persona può includere anche **Titolo**, **Telefono**, **Data di nascita**, **Sesso** e **Classe**. Ogni scheda successiva al contatto principale può chiedere anche un **Ruolo nel nucleo familiare** -- **Coniuge**, **Figlio** o **Altro** -- così la chiesa sa come ogni persona è legata al contatto principale.
-6. Se la tua chiesa include una casella **Commenti** sotto i membri della famiglia, usala per condividere tutto ciò che desideri far sapere alla chiesa (fino a 1.000 caratteri).
+   - **Indirizzo di casa** -- **Via e numero civico**, **Indirizzo riga 2**, **Città**, **Provincia** e **CAP**. È condiviso da tutta la famiglia.
+3. Il modulo si apre con una seconda scheda per il **Familiare 2**. Inserisci nome e cognome, oppure tocca la **X** nell'angolo della scheda per rimuoverla se ti stai registrando da solo.
+4. Per aggiungere altre persone, tocca **Aggiungi familiare**. La nuova scheda riporta automaticamente il cognome del contatto principale. Puoi registrare fino a 10 persone alla volta.
+5. Se la tua chiesa lo chiede, la scheda di ciascuna persona può includere anche **Titolo**, **Telefono**, **Data di nascita**, **Genere** e **Classe**. Ogni scheda successiva al contatto principale può chiedere anche un **Ruolo nel nucleo familiare** -- **Coniuge**, **Figlio** oppure **Altro** -- così la chiesa sa come ogni persona è legata al contatto principale.
+6. Se la tua chiesa include una casella **Commenti** sotto i familiari, usala per condividere ciò che vuoi far sapere alla chiesa (fino a 1.000 caratteri).
 7. Tocca **Registra** per inviare.
 
-I campi contrassegnati con un asterisco (`*`) sono obbligatori. Se qualcuno è lasciato vuoto, il modulo mostra "Compila tutti i campi obbligatori." e non viene inviato nulla finché non li compili.
+I campi contrassegnati con un asterisco (`*`) sono obbligatori. Ogni scheda richiede un nome e un cognome: se ne manca uno, il modulo mostra "Nome e cognome sono obbligatori per ogni membro." Se un altro campo obbligatorio è vuoto, mostra "Compila tutti i campi obbligatori." Non viene inviato nulla finché non li compili.
 
-## Dopo la registrazione
+## Dopo la registrazione {#after-registering}
 
-Una volta inviato il modulo, appare una schermata di conferma con il messaggio: "Registrazione completata -- Tutto pronto! Un membro dello staff ti farà il check-in a breve."
+Quando invii il modulo, compare una schermata di conferma con il messaggio: "Registrazione completata -- Tutto pronto! Un membro dello staff ti farà il check-in a breve."
 
-La tua registrazione crea dei record nel database della chiesa:
+La tua registrazione crea delle schede nel database della chiesa:
 
-- Viene creato un **nucleo familiare** utilizzando il cognome del contatto principale, con il contatto principale come capofamiglia.
-- Vengono creati **record di persona** per ciascun membro della famiglia con stato di appartenenza "Visitatore". Ogni membro della famiglia riceve il ruolo nel nucleo familiare che hai scelto, oppure **Altro** se non è stato richiesto.
-- Eventuali commenti inseriti vengono salvati come nota nel record del contatto principale, affinché il personale della chiesa possa leggerli.
-- Se la chiesa ha scelto un gruppo per i nuovi ospiti, la tua famiglia viene aggiunta a tale gruppo. La chiesa potrebbe anche registrare automaticamente la tua presenza se ti registri durante uno degli orari di culto programmati di quel gruppo.
+- Viene creato un **nucleo familiare** con il cognome del contatto principale, e il contatto principale ne è il capofamiglia.
+- Per ogni familiare vengono create **schede persona** con lo stato di appartenenza "Visitatore". Ogni familiare riceve il ruolo nel nucleo familiare che hai scelto, oppure **Altro** se non ne è stato richiesto nessuno.
+- Eventuali commenti inseriti vengono salvati come nota nella scheda del contatto principale, perché lo staff della chiesa possa leggerli.
+- Se la chiesa ha scelto un gruppo per i nuovi ospiti, la tua famiglia viene aggiunta a quel gruppo. La chiesa potrebbe anche registrare automaticamente la tua presenza se ti registri durante uno degli orari di servizio programmati per quel gruppo.
 - Un volontario o un amministratore della chiesa può poi fare il check-in della tua famiglia tramite il chiosco [B1 Checkin](../../b1-checkin/check-in/looking-up-members.md).
 
 :::info
-Se ti registri di nuovo con lo stesso nome e lo stesso indirizzo email o numero di telefono, i record della chiesa ti riconoscono e riutilizzano il tuo profilo esistente invece di crearne un duplicato. Chiunque altro viene aggiunto come nuovo. Se ti sei già registrato, puoi anche semplicemente cercare il tuo nome o numero di telefono sul chiosco.
+Se ti registri di nuovo con lo stesso nome e la stessa email o lo stesso numero di telefono, le schede della chiesa ti riconoscono e riutilizzano il tuo profilo esistente invece di crearne un duplicato. Chiunque altro viene aggiunto come nuovo. Se ti sei già registrato, puoi anche cercare semplicemente il tuo nome o il tuo numero di telefono sul chiosco.
 :::
 
 :::tip
-Se il modulo richiede il tuo indirizzo email, fornirlo aiuta la chiesa a fare un seguito con te dopo la tua visita.
+Se il modulo chiede il tuo indirizzo email, indicarlo aiuta la chiesa a fare un seguito dopo la tua visita.
 :::
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
 - [Self Check-In](./self-checkin.md) -- Fai il check-in da solo dopo la registrazione
-- [Aggiungere ospiti (Chiosco)](../../b1-checkin/check-in/adding-guests.md) -- Come i volontari aggiungono gli ospiti al chiosco
-- [Check-In](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Come gli amministratori della chiesa configurano la registrazione ospiti tramite QR
+- [Aggiungere ospiti (chiosco)](../../b1-checkin/check-in/adding-guests.md) -- Come i volontari aggiungono gli ospiti al chiosco
+- [Check-in](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Come gli amministratori della chiesa configurano la registrazione ospiti tramite codice QR

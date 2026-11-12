@@ -1,141 +1,149 @@
 ---
-title: "Paglikha ng mga Kalendaryo"
-description: "Gumawa ng kalendaryo sa B1 Admin, ikonekta ang mga grupo o mag-import ng .ics na file, at pamahalaan ang mga event, rehistro, at tala nito mula sa iisang lugar."
+title: "Paggawa ng Calendar"
+description: "Gumawa ng calendar sa B1 Admin, ikonekta ang mga grupo o mag-import ng .ics file, at pamahalaan ang mga event, registration, at notes nito mula sa iisang lugar."
 ---
 
-# Paglikha ng mga Kalendaryo
+# Paggawa ng Calendar
 
 <div class="article-intro">
 
-Ang paggawa ng kalendaryo sa B1 Admin ay nagbibigay-daan sa iyo na bumuo ng piniling pagtingin sa mga event sa pamamagitan ng pagkonekta ng isa o higit pang grupo. Ang mga event ay pinamamahalaan ng mga lider ng grupo sa loob ng kanilang mga grupo, at ipinapakita ng iyong kalendaryo ang mga event na iyon sa iisang lugar. Maaaring magdagdag o mag-edit ng mga event para sa anumang grupo ang mga admin na may access sa pag-edit. Ang mga lider ng grupo na hindi admin ay maaari lamang mamahala ng mga event para sa mga grupong pinamumunuan nila.
+Ang paggawa ng calendar sa B1 Admin ay nagbibigay-daan sa iyo na bumuo ng curated na pagtingin sa mga event sa pamamagitan ng pagkonekta ng isa o higit pang grupo. Pinamamahalaan ng mga group leader ang mga event sa loob ng kanilang mga grupo, at ipinapakita ng iyong calendar ang mga event na iyon sa iisang lugar. Maaaring magdagdag o mag-edit ng event para sa anumang grupo ang mga admin na may edit access. Ang mga group leader na hindi admin ay mga event lamang ng grupong pinamumunuan nila ang maaaring pamahalaan.
 
 </div>
 
-## Video ng Pagsasanay
+## Training Video {#training-video}
 
-<YouTube id="Ko3kgsCSLFs" title="Paglikha ng Kalendaryo, Event, at Pag-book ng Kuwarto sa B1" next="Rehistro sa Event at mga Bayad na Event sa B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
+<YouTube id="Ko3kgsCSLFs" title="Creating Calendars, Events, and Room Bookings in B1" next="Event Registration and Paid Events in B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-set up ang [mga grupo](../groups/creating-groups.md) na ang mga event ay nais mong isama sa iyong kalendaryo
-- Kailangan mo ng administrative access sa seksyong Calendars sa B1 Admin
+- I-set up ang [mga grupo](../groups/creating-groups.md) na ang mga event ay gusto mong isama sa iyong calendar
+- Kailangan mo ang **Edit Content** permission
 
 </div>
 
-## Paglikha ng Bagong Kalendaryo
+## Paggawa ng Bagong Calendar {#creating-a-new-calendar}
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **Calendars**, at i-click ang **Calendars**.
-2. I-click ang **Add Calendar** sa itaas ng pahina. Bumubukas ang bagong form ng kalendaryo sa ibaba ng listahan ng mga kalendaryo.
-3. Ilagay ang **name** ng iyong kalendaryo (halimbawa, "Youth Ministry Events" o "Main Church Calendar").
-4. Maglagay ng opsyonal na **description** para matulungan ang iyong team na maunawaan kung para saan ang kalendaryong ito.
-5. I-click ang **Create** para i-save ang iyong bagong kalendaryo.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Calendars**, at i-click ang **Calendars**.
+2. I-click ang **Add Calendar** sa itaas ng pahina. Bubukas ang bagong calendar form sa ibaba ng listahan ng calendar.
+3. Ilagay ang **Calendar Name** (halimbawa, "Youth Ministry Events" o "Main Church Calendar").
+4. I-click ang **Create** para i-save ang bagong calendar.
 
-## Ang Detail Page ng Kalendaryo
+Para palitan ang pangalan o burahin ang calendar sa susunod, i-hover ang row nito sa Calendars page at i-click ang **Edit** (o i-click ang **Edit** sa detail page ng calendar).
 
-Pagkatapos gumawa ng kalendaryo, i-click ang **Manage Events** sa row nito para buksan ang detail page. May dalawang pangunahing bahagi ang pahinang ito:
+## Ang Calendar Detail Page {#the-calendar-detail-page}
 
-- **Kaliwang column** -- Ang pangalan ng kalendaryo kasama ang mga aksyon nito (**New Event**, **Edit**, **Import .ics**, at **Print**), kasunod ang listahan ng **Groups in Calendar** na nagpapakita kung aling mga grupo ang kasama sa kalendaryong ito. I-click ang **Remove** sa tabi ng isang grupo para alisin ito sa kalendaryo.
-- **Pangunahing bahagi** -- Ang view ng **Calendar Events** na nagpapakita ng mga event mula sa mga konektadong grupo, na may mga button na **Subscribe** at **Add Group** sa itaas nito.
+Pagkatapos gumawa ng calendar, i-click ang pangalan nito (o i-hover ang row nito at i-click ang **Manage Events**) para buksan ang detail page. May dalawang pangunahing bahagi ang pahinang ito:
 
-## Pagkonekta ng mga Grupo
+- **Kaliwang column** -- Ang pangalan ng calendar kasama ang mga aksyon nito (**New Event**, **Edit**, **Import .ics**, at **Print**), isang link sa anumang nakabinbing approval, at ang listahan ng **Groups in Calendar** na nagpapakita kung aling mga grupo ang kasama sa calendar na ito. I-click ang **Remove** sa tabi ng grupo para alisin ito sa calendar.
+- **Pangunahing bahagi** -- Ang **Calendar Events** view na nagpapakita ng mga event mula sa mga konektadong grupo, kasama ang **Subscribe** at **Add Group** na buttons sa itaas nito. Gamitin ang **Today**, **Back**, **Next**, at ang mga view na **Month**, **Week**, **Day**, at **Agenda** para lumipat-lipat. Ginuguhit ang bawat event sa kulay ng grupo nito. Awtomatikong pinipili ang mga kulay, at pinananatili ng grupo ang parehong kulay sa bawat calendar.
 
-Ang mga grupong may event sa kalendaryo ay awtomatikong lumalabas sa listahan ng **Groups in Calendar** sa kaliwang bahagi ng detail page.
+I-click ang **Print** para sa printable na buwan. Nagsisimula ang printout sa light background logo ng iyong simbahan (mula sa [Appearance](../website/appearance.md), kung nagtakda ka nito), ang pangalan ng simbahan, at ang pangalan ng calendar. Bumababa sa mas maraming linya ang mga pangalan ng event sa halip na putulin, at pinananatili ang mga kulay ng grupo.
 
-1. I-click ang **Add Group** sa itaas ng kalendaryo para iugnay ang isang grupo sa iyong kalendaryo.
-2. Piliin ang grupo mula sa dropdown. Kasama sa listahan ang bawat grupo sa iyong simbahan, hindi lamang ang mga grupong kinabibilangan mo.
-3. Piliin kung isasama ang **all events** mula sa grupong iyon o **specific events** lamang.
+## Pagkonekta ng Mga Grupo {#connecting-groups}
+
+Ang mga grupong may event sa calendar ay awtomatikong lumalabas sa listahan ng **Groups in Calendar** sa kaliwang bahagi ng detail page.
+
+1. I-click ang **Add Group** sa itaas ng calendar para iugnay ang isang grupo sa iyong calendar.
+2. Piliin ang grupo sa **Select a Group**. Kasama sa listahan ang bawat grupo sa iyong simbahan, hindi lamang ang mga grupong kinabibilangan mo.
+3. Piliin ang **Add all the events of the group**, o ang **Add specific events** at i-click ang bawat event na gusto mo sa maliit na calendar na lumilitaw.
 4. I-click ang **Save**.
 
-Bawat event ay lumalabas sa kalendaryo nang isang beses lamang. Kapag nagdagdag ka ng buong grupo, ang alinmang event nito na dati mo nang naidagdag nang isa-isa ay isasama sa entry ng grupo, at ang pagpili ng mga partikular na event mula sa grupong nasa kalendaryo na ay walang idinadagdag na bago. Ang mga grupong idinagdag nang buo lamang ang nakalista sa ilalim ng **Groups in Calendar**.
+Isang beses lamang lumilitaw sa calendar ang bawat event. Kung idinagdag mo ang buong grupo, anumang event nito na naidagdag mo na nang isa-isa ay isasama sa entry ng grupo, at ang pagpili ng partikular na event mula sa grupong nasa calendar na ay walang idadagdag na bago. Tanging ang mga grupong idinagdag nang buo ang nakalista sa ilalim ng **Groups in Calendar**.
 
-### Pag-import ng .ics File
+### Pag-import ng .ics File {#importing-an-ics-file}
 
-I-click ang **Import .ics** para mag-import ng mga event mula sa ibang kalendaryo. Piliin ang **Group** kung saan dapat kabilang ang mga event, pagkatapos i-click ang **Choose .ics file** o i-paste ang nilalaman ng file, at i-click ang **Import**. Ang mga event ay gagawin sa grupong iyon, at idadagdag ang grupo sa kalendaryong pinanggalingan ng import, kaya agad silang lilitaw doon.
+I-click ang **Import .ics** para kumuha ng mga event mula sa ibang calendar. Piliin ang **Group** kung saan dapat kabilang ang mga event, pagkatapos i-click ang **Choose .ics file** o i-paste ang nilalaman ng file, at i-click ang **Import**. Gagawin ang mga event sa grupong iyon, at idadagdag ang grupo sa calendar kung saan ka nag-import, kaya agad na lilitaw doon ang mga event.
 
-### Pag-alis ng Event sa Kalendaryo
+### Pag-alis ng Event sa Calendar {#removing-an-event-from-the-calendar}
 
-I-click ang isang event sa kalendaryo, pagkatapos i-click ang **Remove from Calendar**. Inaalis lamang nito ang event sa kalendaryong ito -- nananatili ang event mismo sa grupo nito. Kung nasa kalendaryo ang event dahil naidagdag ang buong grupo nito, ang pag-alis dito ay mag-aalis ng lahat ng event ng grupong iyon sa kalendaryong ito (mananatili pa rin ang mga event sa grupo). Para tuluyang burahin ang isang event, burahin ito mula sa [kalendaryo ng grupo](../groups/group-calendar.md).
+I-click ang isang event sa calendar, pagkatapos i-click ang **Remove from Calendar**. Tanging aalisin nito ang event sa calendar na ito -- mananatili ang mismong event sa grupo nito. Kung nasa calendar ang event dahil idinagdag ang buong grupo, ang pag-alis nito ay mag-aalis ng lahat ng event ng grupong iyon sa calendar na ito (mananatili pa rin sa grupo ang mga event). Para permanenteng burahin ang event, burahin ito mula sa [calendar ng grupo](../groups/group-calendar.md).
 
 :::tip
-Ang pagkonekta ng mga grupo sa iyong kalendaryo ay mabisang paraan para awtomatikong pagsamahin ang mga event. Kapag nagdagdag ang isang group leader ng event sa kanilang [grupo](../groups/creating-groups.md), maaari itong dumaloy sa kalendaryo ng buong simbahan nang walang karagdagang gawain mula sa iyo.
+Malakas na paraan ang pagkonekta ng mga grupo sa iyong calendar para awtomatikong pagsamahin ang mga event. Kapag nagdagdag ang isang group leader ng event sa kanilang [grupo](../groups/creating-groups.md), maaari itong dumaloy sa calendar ng buong simbahan nang walang karagdagang gawain mula sa iyo.
 :::
 
 :::info
-Kung nais mong gumawa ng iisang kalendaryo na kumukuha ng mga event mula sa maraming grupo sa iyong simbahan, tingnan ang [Curated Calendar](./curated-calendar.md) para sa mas maayos na paraan.
+Kung gusto mong gumawa ng iisang calendar na kumukuha ng mga event mula sa maraming grupo sa buong simbahan, tingnan ang [Curated Calendar](./curated-calendar.md) para sa mas maayos na paraan.
 :::
 
-## Pagdaragdag at Pag-edit ng mga Event {#adding-and-editing-events}
+## Pagdaragdag at Pag-edit ng Mga Event {#adding-and-editing-events}
 
-I-click ang **New Event** sa detail page ng kalendaryo para magdagdag ng event, o i-click ang isang event sa kalendaryo at pagkatapos ay i-click ang **Edit** para baguhin ito. May mga sumusunod na field ang form na **New Event** / **Edit Event**:
+I-click ang **New Event** sa calendar detail page para magdagdag ng event, o i-click ang isang event sa calendar at pagkatapos i-click ang **Edit** para baguhin ito. May mga field na ito ang **New Event** / **Edit Event** form:
 
-- **Group** -- Ang grupong kinabibilangan ng event. Kung may mga event template ang iyong simbahan, maaari ka ring pumili ng **Template** para punan ang form.
+- **Group** -- Ang grupong kinabibilangan ng event. Kung may event templates ang iyong simbahan, maaari ka ring pumili ng **Template** para punan ang form.
 - **Title**
-- **Event photo** -- I-click ang **Add Photo** (o ang walang laman na kahon ng larawan) para pumili o mag-upload ng larawan, na i-crop sa malapad na hugis na 16:9. I-click ang **Change Photo** para palitan ito. Ipinapakita ang larawan sa itaas ng pahina ng event sa iyong website at bilang tile nito kapag ipinapakita ng elemento ng Calendar ang **Upcoming events** (tingnan ang [Pagpapakita ng mga Event sa Iyong Website](#showing-events-on-your-website)).
-- **Description** -- Ipinapakita sa pahina ng event sa iyong website. Suportado ang bold na teksto, listahan, at link.
+- **Event photo** -- I-click ang **Add Photo** (o ang walang laman na photo box) para pumili o mag-upload ng larawan, na ginupit sa malapad na hugis na 16:9. I-click ang **Change Photo** para palitan ito. Ipinapakita ang larawan sa itaas ng page ng event sa iyong website at bilang tile nito kapag ipinakita ng Calendar element ang **Upcoming events** (tingnan ang [Showing Events on Your Website](#showing-events-on-your-website)).
+- **Description** -- Ipinapakita sa page ng event sa iyong website. Sinusuportahan ang bold na teksto, listahan, at link.
 - **Start** at **End**, **Repeats**, at **Visibility** (**Public** o **Private**).
-- **Tags** -- Mga label na pinaghihiwalay ng kuwit, tulad ng `youth, students`. Maaaring itakda ang elemento ng Calendar sa iyong website na magpakita lamang ng mga event na may partikular na tag. Ito ang parehong field na **Tags** na makikita sa mga setting ng rehistro ng event.
-- **Who can view notes** at **Who can post notes** -- Sino ang maaaring magbasa at magdagdag sa mga tala ng event (tingnan ang [Mga Tala ng Event](#event-notes)). Piliin ang **Staff only** (ang default), **Group leaders** (mga lider ng grupo ng event), o **Group members** (lahat ng nasa grupo ng event, kasama ang mga lider nito).
-- **Rooms** at **Resources** -- Mag-reserba ng espasyo at kagamitan para sa event. Tingnan ang [Mga Kuwarto, Resources & Scheduling](./rooms-resources.md).
+- **Tags** -- Mga label na pinaghihiwalay ng kuwit, gaya ng `youth, students`. Maaaring itakda ang Calendar element sa iyong website na magpakita lamang ng mga event na may partikular na tag. Ito ang parehong **Tags** field na makikita sa registration settings ng event.
+- **Who can view notes** at **Who can post notes** -- Sino ang makakabasa at makakadagdag sa notes ng event (tingnan ang [Event Notes](#event-notes)). Piliin ang **Staff only** (default), **Group leaders** (mga lider ng grupo ng event), o **Group members** (lahat ng nasa grupo ng event, kasama ang mga lider nito).
+- **Rooms** at **Resources** -- Mag-reserve ng espasyo at kagamitan para sa event. Tingnan ang [Rooms, Resources & Scheduling](./rooms-resources.md). Kapag napili na ang isa, maaari ka ring magdagdag ng setup at teardown time o custom reservation window -- tingnan ang [Booking a Room or Resource](./availability.md#booking-a-room-or-resource).
+- **Reminders** -- I-expand ang seksyong ito para magpadala ng paalala bago ang event. Tingnan ang [Event Reminders](./event-reminders.md).
 
-I-click ang **Save**. Kung umuulit ang event, hihingi ng kumpirmasyon ang B1, dahil ang pag-save ay mag-a-update sa bawat occurrence sa serye.
+Kinakailangan ang **Group**, **Title**, **Start**, at **End**, at dapat mas huli ang end kaysa sa start. I-click ang **Save**. Kung umuulit ang event, magtatanong ang B1 para kumpirmahin, dahil ina-update ng pag-save ang bawat occurrence sa serye. Para burahin ang event, buksan ito sa editor at i-click ang **Delete**.
 
-### Mga Tala ng Event {#event-notes}
+### Event Notes {#event-notes}
 
-Bawat event ay may sariling thread ng tala para sa pagpaplano at follow-up. I-click ang event sa detail page ng kalendaryo; ipinapakita ng dialog ang mga detalye ng event, ang mga paalala nito, at ang **Notes** nito sa ibaba. I-type ang tala at i-post ito para idagdag sa thread.
+May sariling notes thread ang bawat event para sa pagpaplano at follow-up. I-click ang event sa calendar detail page; ipinapakita ng dialog ang mga detalye ng event, mga reminder nito, at ang **Notes** nito sa ibaba, kasama ang mga button na **Edit**, **Manage Registrations**, at **Remove from Calendar**. Mag-type ng note at i-post ito para idagdag sa thread.
 
-Ang mga staff na may pahintulot na mag-edit ng nilalaman o mag-administer ng mga kalendaryo ay palaging nakakabasa at nakakapag-post ng mga tala ng event. Ang mga setting na **Who can view notes** at **Who can post notes** sa event ang nagpapasya kung maaari rin itong gawin ng mga lider o miyembro ng grupo ng event.
+Palaging nababasa at nakakapag-post ng event notes ang staff na may permission na mag-edit ng content o mag-administer ng calendar. Tinutukoy ng mga setting na **Who can view notes** at **Who can post notes** sa event kung makakagawa rin ito ang mga lider o miyembro ng grupo ng event.
 
-### Pagpapakita ng mga Event sa Iyong Website {#showing-events-on-your-website}
+### Pagpapakita ng Mga Event sa Iyong Website {#showing-events-on-your-website}
 
-Para ilagay ang kalendaryo sa iyong website, magdagdag ng elemento ng **Calendar** sa isang pahina at piliin ang kalendaryong ito. Maaaring ipakita ng elemento ang buwanang kalendaryo o grid ng mga tile ng paparating na event, at maaaring limitahan sa mga event na may isang tag. Kapag nag-click ang mga bisita sa isang event, bubukas ang sarili nitong pahina ng event. Tingnan ang [Paggamit ng Calendar element](../website/page-editor.md#using-the-calendar-element).
+Para ilagay ang calendar sa iyong website, magdagdag ng **Calendar** element sa isang page at piliin ang calendar na ito. Maaaring magpakita ang element ng buwanang calendar o grid ng mga tile ng paparating na event, at maaaring limitahan sa mga event na may isang tag. Kapag nag-click ang mga bisita ng event, bubukas ang sarili nitong event page. Tingnan ang [Using the Calendar element](../website/page-editor.md#using-the-calendar-element).
 
-## Pagpapagana ng Rehistro sa Event {#enabling-event-registration}
+## Pagpapagana ng Event Registration {#enabling-event-registration}
 
-Maaari mong paganahin ang rehistro para sa anumang event sa kalendaryo para makapag-sign up ang mga miyembro sa pamamagitan ng B1 website o mobile app.
+Maaari mong paganahin ang registration para sa anumang event sa calendar para makapag-sign up ang mga miyembro sa pamamagitan ng B1 website o mobile app.
 
-1. I-click ang umiiral na event o gumawa ng bago.
-2. Sa event editor, i-toggle ang **Registration** para paganahin ito.
-3. I-configure ang mga setting ng rehistro:
-   - **Capacity** (opsyonal) -- Magtakda ng pinakamataas na bilang ng mga rehistro. Iwanang blangko para sa walang limitasyon.
-   - **Registration Opens** -- Ang petsa at oras kung kailan magiging available ang rehistro.
-   - **Registration Closes** -- Ang petsa at oras kung kailan magsasara ang rehistro.
-   - **Tags** -- Mga label na pinaghihiwalay ng kuwit (hal., "youth, retreat, vbs") para makatulong sa pag-uuri ng mga event na maaaring pagparehistruhan.
-   - **Registration Questions** -- Opsyonal na maglakip ng [form](../forms/creating-forms.md) para masagot ng mga magpaparehistro ang karagdagang tanong (mga paghihigpit sa pagkain, laki ng T-shirt, emergency contact, atbp.) habang nagsa-sign up. Piliin ang **None** para laktawan ang mga tanong.
-   - **Enable Waitlist** -- Kapag napuno ang event, pinapayagan ang mga karagdagang magpaparehistro na sumali sa waitlist sa halip na tanggihan. Tingnan ang [Mga Bayad na Rehistro](./paid-registrations.md#waitlist).
-4. I-save ang event.
+1. I-click ang umiiral na event sa calendar (gawin muna ito kung kailangan) at i-click ang **Manage Registrations**. Bubukas ang registration page ng event. (Dinadala ka ng button na **Turn on registration** sa pahina ng **Registrations** sa iyong mga calendar para pumili ng event.)
+2. I-click ang **Edit settings**, pagkatapos i-on ang **Enable Registration** sa **Registration Settings** card.
+3. I-configure ang mga setting ng registration:
+   - **Capacity** (opsyonal) -- Magtakda ng pinakamataas na bilang ng registration. Iwanang blangko para sa walang limitasyon.
+   - **Registration Opens** -- Ang petsa at oras kung kailan magiging available ang registration.
+   - **Registration Closes** -- Ang petsa at oras kung kailan magsasara ang registration.
+   - **Tags** -- Mga label na pinaghihiwalay ng kuwit (hal., "youth, retreat, vbs") para makatulong i-kategorya ang mga event na maaaring i-register.
+   - **Registration Questions** -- Opsyonal na maglakip ng [form](../forms/creating-forms.md) para sagutin ng mga nagpapatala ang dagdag na tanong (dietary restrictions, laki ng T-shirt, emergency contact, atbp.) bilang bahagi ng pag-sign up. Piliin ang **None** para laktawan ang mga tanong.
+   - **Enable Waitlist** -- Kapag napuno ang event, hahayaan ang mga karagdagang nagpapatala na sumali sa waitlist sa halip na tanggihan. Tingnan ang [Paid Registrations](./paid-registrations.md#waitlist).
+4. I-click ang **Save Settings**.
 
-Para sa mga bayad na event, pinapayagan ka ng parehong pahina ng settings na magtakda ng may-presyong **Attendee Types**, opsyonal na **Selections** (mga add-on), at **Discount Codes**, na may bayad na kinokolekta sa pamamagitan ng giving provider ng iyong simbahan. Tingnan ang [Mga Bayad na Rehistro](./paid-registrations.md) para sa buong gabay.
+Para sa mga bayad na event, pinapayagan ka ng parehong settings page na magtakda ng may presyong **Attendee Types**, opsyonal na **Selections** (mga add-on), at **Discount Codes**, na may bayad na kokolektahin sa pamamagitan ng giving provider ng iyong simbahan. Tingnan ang [Paid Registrations](./paid-registrations.md) para sa kumpletong gabay.
 
-Kapag naka-enable na ang rehistro, makikita ng mga miyembro ang button na **Register for this Event** kapag tiningnan nila ang event sa [B1.church o sa B1 App](../../b1-church/events/registering.md). Kung naglakip ka ng form, makikita ng mga magpaparehistro ang hakbang na **Questions** habang nagpaparehistro, at ang kanilang mga sagot ay sine-save kasama ng kanilang rehistro.
+Kapag naka-enable na ang registration, makikita ng mga miyembro ang button na **Register for this Event** kapag tiningnan nila ang event sa [B1.church o sa B1 App](../../b1-church/events/registering.md). Kung naglakip ka ng form, makakakita ang mga nagpapatala ng hakbang na **Questions** habang nagpapatala, at ise-save ang kanilang mga sagot kasama ng kanilang registration.
 
 :::info
-Ang Registration Questions ay gumagana lamang sa mga form na **hindi** minarkahang Restricted. Nilalaktawan nang awtomatiko ang restricted na form habang nagpaparehistro sa halip na ipakita, kaya gumamit ng unrestricted na form kapag naglalakip ng mga tanong sa event.
+Ang Registration Questions ay gumagana lamang sa mga form na **hindi** minarkahang Restricted. Awtomatikong nilalaktawan ang restricted na form habang nagpapatala sa halip na ipakita, kaya gumamit ng unrestricted na form kapag naglalakip ng mga tanong sa event.
 :::
 
-### Pamamahala ng mga Rehistro
+### Pamamahala ng Registrations {#managing-registrations}
 
-Para tingnan at pamahalaan ang mga rehistro para sa iyong mga event:
+Para tingnan at pamahalaan ang mga registration para sa iyong mga event:
 
 1. Sa Jump menu, piliin ang **Calendars > Registrations**.
-2. Makikita mo ang isang talahanayan ng lahat ng event na naka-enable ang rehistro, na nagpapakita ng pamagat ng event, petsa, kasalukuyang bilang ng rehistro kumpara sa capacity, at mga tag.
-3. I-click ang isang event para makita ang buong listahan ng mga rehistro, kabilang ang mga pangalan, bilang ng miyembro, attendee types, katayuan ng bayad, at petsa ng rehistro.
+2. Makikita mo ang table ng lahat ng event na may naka-enable na registration, na nagpapakita ng title ng event, petsa, kasalukuyang bilang ng registration kumpara sa capacity, at mga tag. Mag-type sa **Search events** para i-filter ito.
+3. I-click ang pangalan ng event para makita ang kumpletong listahan ng mga registration, kasama ang mga column na **Name**, **Members**, **Type**, **Paid / Total**, **Status**, at **Date**.
 4. Mula sa detail page, maaari mong:
    - **Add Attendee** -- Manu-manong irehistro ang isang taong nag-sign up offline o sa telepono.
-   - **Cancel** ng indibidwal na rehistro
-   - **Delete** ng mga rehistro nang tuluyan
-   - **Promote** ng mga rehistrong nasa waitlist kapag nagkaroon ng bakanteng puwesto
-   - **Export CSV** -- I-download ang lahat ng rehistro, kabilang ang attendee types, selections, halaga ng bayad, at mga sagot sa tanong
+   - **Cancel Registration** sa indibidwal na mga registration (hihingi ng kumpirmasyon)
+   - **Delete** ang mga registration nang permanente (hihingi ng kumpirmasyon)
+   - **Promote** ang mga nasa waitlist na registration kapag may nabakanteng puwesto
+   - **Export CSV** -- I-download ang lahat ng registration, kabilang ang attendee types, selections, halaga ng bayad, at mga sagot sa tanong
 
-Kung may nakalakip na Registration Questions ang event, nagpapakita rin ang detail page ng filter na **Unanswered questions only** para mabilis na mahanap ang mga magpaparehistrong hindi pa nagsusumite ng sagot, at button na **View Answers** sa bawat nasagutang rehistro para makita ang kanilang mga tugon. Nagdaragdag ang mga bayad na event ng column na **Type**, column na **Paid / Total**, mga bilang ayon sa uri, at dialog ng detalye ng bayad -- tingnan ang [Mga Bayad na Rehistro](./paid-registrations.md#the-registration-roster).
+   Ang mga row action na ito ay mga icon sa dulo ng bawat row; i-hover ang icon para makita ang pangalan nito.
+
+Kung may nakalakip na Registration Questions ang event, nagpapakita rin ang detail page ng filter na **Unanswered questions only** para mabilis na mahanap ang mga nagpapatalang hindi pa nagsusumite ng sagot, at button na **View Answers** sa bawat registration na may sagot para makita ang kanilang tugon. Nagpapakita rin ng bilang kada uri sa itaas ng table ang mga event na may attendee types, at may dialog na **Registration Details** ang bawat row na may mga bayad -- tingnan ang [Paid Registrations](./paid-registrations.md#the-registration-roster).
+
+Sa kaliwang bahagi ng detail page, makikita kung ilang tao ang nakarehistro (ang nagpapatala at ang lahat ng nasa kanilang registration), kasama ang capacity bar, bilang ng waitlist kung mayroon, mga tag ng event, at ang **Reminders** nito. Ang pamagat ng card na **Registrations** ay nagbibilang ng registration sa halip, na siyang nililimitahan ng capacity -- kaya ang isang pamilyang apat ang tao ay isang registration ngunit apat na tao.
 
 :::tip
-Gamitin ang progress bar ng capacity para subaybayan kung gaano kabilis napupuno ang mga event. Nagiging pula ang bar kapag ang event ay nasa o lumampas sa capacity.
+Gamitin ang capacity progress bar sa Registrations page para bantayan kung gaano kabilis napupuno ang mga event. Nagiging pula ang bar kapag nasa o higit pa sa capacity ang event.
 :::
 
-## Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- [Curated Calendar](./curated-calendar.md) -- Gumawa ng kalendaryong kumukuha mula sa maraming grupo
-- [Mga Bayad na Rehistro](./paid-registrations.md) -- Attendee types, add-on selections, discount codes, bayad, at waitlist
-- [Gabay sa Rehistro ng Event](../guides/event-registration.md) -- Hakbang-hakbang na gabay sa pag-set up ng rehistro ng event
-- [Pangkalahatang-tanaw ng Calendars](./index.md) -- Bumalik sa pangkalahatang-tanaw ng mga kalendaryo
+- [Curated Calendar](./curated-calendar.md) -- Gumawa ng calendar na kumukuha mula sa maraming grupo
+- [Paid Registrations](./paid-registrations.md) -- Attendee types, add-on selections, discount codes, bayad, at waitlist
+- [Event Registration Guide](../guides/event-registration.md) -- Gabay na hakbang-hakbang sa pag-set up ng event registration
+- [Calendars Overview](./index.md) -- Bumalik sa pangkalahatang-tanaw ng calendars

@@ -1,6 +1,6 @@
 ---
 title: "Tâches"
-description: "Créez, assignez et clôturez des tâches dans B1 Admin, retrouvez-les sous Service > Mon travail et définissez des rappels pour ne rien oublier."
+description: "Créez, assignez et clôturez des tâches dans B1 Admin, retrouvez-les sous Service > Mon travail, et définissez des rappels d'échéance pour que les suivis ne soient jamais oubliés."
 ---
 
 # Tâches
@@ -19,73 +19,73 @@ Les tâches vous permettent d'assigner des actions à des personnes ou à des gr
 
 </div>
 
-## Consulter les tâches
+## Consulter les tâches {#viewing-tasks}
 
-Dans le menu de navigation rapide, choisissez **Service > Mon travail** (ou recherchez « Mon travail »). La liste **Tâches** affiche le titre de chaque tâche, la personne ou le groupe concerné, la personne à qui elle est assignée, la date d'ouverture et son statut. Vos [cartes de flux de travail](./workflows.md) apparaissent à côté, sous **Mes cartes**.
+Dans le menu de navigation rapide, choisissez **Service > Mon travail** (ou recherchez « Mon travail »). La liste **Tâches** affiche le titre de chaque tâche, la personne ou le groupe concerné, la personne à qui elle est assignée, la date d'ouverture et son statut. Vos cartes du [flux de travail](./workflows.md) apparaissent à côté, sous **Mes cartes**. Les personnes assignées peuvent aussi voir et traiter leurs cartes et leurs tâches ouvertes depuis l'écran **Moi** de l'application B1.
 
-Utilisez les onglets au-dessus de la liste pour passer entre les tâches **Assignées à moi**, **Assignées à mes groupes** et **Demandées par moi**. Chaque onglet indique combien de tâches il contient.
+Utilisez les onglets au-dessus de la liste pour passer des tâches **Assignées à moi**, **Assignées à mes groupes** et **Demandées par moi**. Chaque onglet indique le nombre de tâches qu'il contient. Les tâches et **Mes cartes** sont listées de la plus récente à la plus ancienne, afin que ce qui vient d'arriver soit en haut.
 
 :::tip
-Par défaut, seules les tâches ouvertes sont affichées. Choisissez **Fermées** au-dessus de la liste pour voir plutôt les tâches terminées.
+Par défaut, seules les tâches ouvertes sont affichées. Choisissez **Clôturées** au-dessus de la liste pour voir plutôt les tâches terminées.
 :::
 
-## Créer une tâche
+## Créer une tâche {#creating-a-task}
 
 1. Sur la page **Mon travail**, cliquez sur **Ajouter une tâche**. Un formulaire **Nouvelle tâche** s'ouvre.
-2. Cliquez sur la case **Concerne** et choisissez la personne concernée par la tâche.
+2. Facultativement, cliquez sur la case **Concerne** et choisissez la personne ou le groupe concerné par la tâche. Laissez-la vide pour une simple chose à faire qui ne concerne personne, comme un rappel pour vous-même.
 3. Cliquez sur la case **Assigner à**. Dans la fenêtre **Sélectionner une personne ou un groupe**, recherchez sous l'onglet **Personne**, ou passez à l'onglet **Groupe** et recherchez un groupe, puis sélectionnez le résultat.
 4. Saisissez un **titre** pour la tâche.
 5. Choisissez facultativement une **date d'échéance**.
 6. Ajoutez des **notes** avec les détails ou les instructions pour la personne assignée.
 7. Cliquez sur **Enregistrer**.
 
-La tâche apparaîtra désormais dans la liste des tâches et sera visible par la personne assignée sur son tableau de bord et dans l'application mobile.
+La tâche apparaît maintenant dans la liste et est visible par la personne assignée sur son tableau de bord et dans l'application mobile.
 
-## Gérer une tâche
+## Gérer une tâche {#managing-a-task}
 
-Cliquez sur une tâche pour ouvrir sa page de détail. Depuis cette page, vous pouvez :
+Cliquez sur n'importe quelle tâche pour ouvrir sa page de détails. Vous pouvez alors :
 
-- **Fermer ou rouvrir la tâche** -- Cliquez sur **Fermer la tâche** lorsque le travail est terminé, ou sur **Rouvrir la tâche** pour la rouvrir.
+- **Clôturer ou rouvrir la tâche** -- Cliquez sur **Clôturer la tâche** lorsque le travail est terminé, ou sur **Rouvrir la tâche** pour la rouvrir.
 - **Réassigner la tâche** -- Cliquez sur **Assigner** pour choisir une autre personne ou un autre groupe.
-- **Changer la personne concernée** -- Cliquez sur **Concerne** pour choisir une autre personne.
-- **Modifier la date d'échéance** -- Choisissez une date dans le champ **Échéance** ; elle s'enregistre lorsque vous cliquez ailleurs. (Les tâches créées pour une [confirmation d'affectation de service](./workflows.md#serving-assignment-confirmations) affichent leur date d'échéance, mais elle ne peut pas être modifiée ici.)
+- **Changer la personne concernée** -- Cliquez sur **Concerne** pour choisir une autre personne ou un autre groupe, ou sélectionnez **Aucune personne ni aucun groupe** pour l'effacer.
+- **Changer la date d'échéance** -- Choisissez une date dans le champ **Échéance** ; elle est enregistrée dès que vous cliquez ailleurs. (Les tâches créées pour une [confirmation d'affectation de service](./workflows.md#serving-assignment-confirmations) affichent leur date d'échéance, mais elle ne peut pas être modifiée ici.)
 - **Ajouter des notes** -- Publiez des mises à jour ou des détails pour la personne assignée dans les notes de la tâche.
 - **Définir des rappels** -- Voir [Rappels de tâche](#task-reminders) ci-dessous.
 
 ## Rappels de tâche {#task-reminders}
 
-Une tâche qui a une date d'échéance peut rappeler à la personne assignée qu'elle arrive à échéance.
+Une tâche dotée d'une date d'échéance peut rappeler à la personne assignée qu'elle approche.
 
 1. Sur la page de la tâche, cliquez sur **Modifier** à côté de **Rappels**.
 2. Activez **Envoyer des rappels pour cette tâche**.
-3. Sous **Quand les rappels doivent-ils partir ?**, choisissez jusqu'à trois moments : **7 jours avant**, **3 jours avant**, **1 jour avant** ou **Le jour même**.
-4. Réglez l'**heure de la journée** et, facultativement, un **message**.
-5. Sous **Envoyer par**, choisissez **Notification push**, **Courriel** et, si votre église a un [fournisseur de messages texte](../settings/church-settings.md#texting) connecté, **Texto**.
+3. Sous **Quand envoyer les rappels ?**, choisissez jusqu'à trois moments : **7 jours avant**, **3 jours avant**, **1 jour avant** ou **Le jour même**.
+4. Définissez l'**heure** et, facultativement, un **message**.
+5. Sous **Envoyer par**, choisissez **Notification push**, **Courriel** et, si votre église a connecté un [fournisseur de messages texte](../settings/church-settings.md#texting), **Message texte**.
 6. Cliquez sur **Enregistrer les rappels**.
 
-Si la tâche n'a pas de date d'échéance, B1 vous avertit qu'aucun rappel ne sera envoyé tant qu'aucune date n'est définie dans le champ **Échéance**. Les rappels par texto n'atteignent que les personnes qui ont activé les **messages texte** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences.md), et chaque texto peut coûter à votre église.
+Si la tâche n'a pas de date d'échéance, B1 vous avertit qu'aucun rappel ne sera envoyé tant qu'elle n'en aura pas une dans le champ **Échéance**. Les rappels par message texte ne parviennent qu'aux personnes ayant activé les **messages texte** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences.md), et chaque message peut coûter à votre église.
 
-## Cycle de vie d'une tâche
+## Cycle de vie d'une tâche {#task-lifecycle}
 
 1. Une nouvelle tâche commence avec le statut **Ouverte**.
-2. La personne assignée reçoit une notification et peut consulter la tâche depuis son tableau de bord, **Service > Mon travail**, ou l'application mobile.
-3. Une fois le travail terminé, la personne assignée (ou un administrateur) clique sur **Fermer la tâche**.
-4. Les tâches fermées sont retirées de la vue par défaut, mais peuvent toujours être retrouvées en choisissant **Fermées** au-dessus de la liste des tâches.
+2. La personne assignée reçoit une notification et peut consulter la tâche depuis son tableau de bord, **Service > Mon travail** ou l'application mobile.
+3. Une fois le travail terminé, la personne assignée (ou un administrateur) clique sur **Clôturer la tâche**.
+4. Les tâches clôturées disparaissent de la vue par défaut, mais peuvent être retrouvées en choisissant **Clôturées** au-dessus de la liste.
 
 :::info
 B1 Admin ne crée plus de tâches récurrentes selon un calendrier. Pour un suivi répété auprès de personnes, utilisez un [flux de travail](./workflows.md) avec un [déclencheur de calendrier](./workflows.md#schedule-triggers).
 :::
 
 :::tip
-Lorsque vous devez faire passer de nombreuses personnes par les mêmes étapes -- comme le suivi des nouveaux visiteurs ou un processus d'adhésion -- utilisez les [Flux de travail](./workflows.md). Les flux de travail transforment les tâches en cartes sur un tableau glisser-déposer, avec des étapes, des échéances et un acheminement.
+Lorsque vous devez faire passer de nombreuses personnes par les mêmes étapes -- comme le suivi des nouveaux visiteurs ou un processus d'adhésion -- utilisez les [flux de travail](./workflows.md). Les flux de travail transforment les tâches en cartes sur un tableau glisser-déposer avec des étapes, des dates d'échéance et un acheminement.
 :::
 
 :::info
-Certaines tâches sont créées automatiquement par d'autres parties de B1 et s'ouvrent sur une carte d'examen spéciale plutôt que sur la vue standard de notes et de réassignation -- les [demandes d'adhésion aux groupes](../groups/group-join-requests.md#approving-from-the-tasks-page), les [demandes de modification de profil](../profile/approving-profile-changes.md) et les [demandes de suppression de compte](../profile/account-deletion.md) fonctionnent toutes de cette façon.
+Certaines tâches sont créées automatiquement par d'autres parties de B1 et s'ouvrent sur une carte de révision spéciale plutôt que sur la vue standard de note et de réassignation -- les [demandes d'adhésion à un groupe](../groups/group-join-requests.md#approving-from-the-tasks-page), les [demandes de modification de profil](../profile/approving-profile-changes.md) et les [demandes de suppression de compte](../profile/account-deletion.md) fonctionnent toutes de cette manière.
 :::
 
-## Et ensuite
+## Étapes suivantes {#next-steps}
 
-- Faites passer les personnes par un processus en plusieurs étapes avec les [Flux de travail](./workflows.md)
-- Utilisez les [Flux de travail](./workflows.md) pour faire progresser automatiquement les personnes à travers des processus répétables
-- Utilisez les tâches avec les [Plans de service](./plans.md) pour suivre les actions de préparation du service
+- Faites progresser des personnes dans un processus en plusieurs étapes avec les [flux de travail](./workflows.md)
+- Utilisez les [flux de travail](./workflows.md) pour faire progresser automatiquement des personnes dans des processus répétables
+- Utilisez les tâches avec les [plans de service](./plans.md) pour suivre les actions de préparation des services

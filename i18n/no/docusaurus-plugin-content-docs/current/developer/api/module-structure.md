@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## Kommunikasjon på tvers av moduler
+## Kommunikasjon på tvers av moduler {#cross-module-communication}
 
 Hver modul eier sin egen database (se [Database](./database.md)), og en modul spør aldri direkte mot en annen moduls tabeller. Når én modul trenger data eid av en annen -- for eksempel når doing-modulen slår opp personer fra membership -- går den gjennom den eiende modulens **gateway** i `src/shared/modules/`:
 

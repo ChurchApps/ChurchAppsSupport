@@ -1,43 +1,45 @@
 ---
 title: "Profileinstellungen und Geräte in B1 Admin"
 sidebar_label: "Profil"
-description: "Aktualisieren Sie Ihren Namen, Ihre E-Mail-Adresse, Ihr Passwort, die Zwei-Faktor-Anmeldung, das Design und verbundene Geräte in Ihrem B1-Admin-Profil und genehmigen Sie Profiländerungen von Mitgliedern."
+description: "Aktualisieren Sie in Ihrem B1-Admin-Profil Ihren Namen, Ihre E-Mail-Adresse, Ihr Passwort, die zweistufige Anmeldung, das Design und verbundene Geräte und genehmigen Sie Profiländerungen der Mitglieder."
 ---
 
 # Profil
 
 <div class="article-intro">
 
-Der Bereich Profil ermöglicht Ihnen, Ihre persönlichen Kontoeinstellungen in ChurchApps zu verwalten. Ihr Profil wird über alle ChurchApps-Tools hinweg geteilt, daher gelten Änderungen, die Sie hier vornehmen, überall -- von B1 Admin bis zur B1 App.
+Der Bereich Profil ermöglicht es Ihnen, Ihre persönlichen Kontoeinstellungen in ChurchApps zu verwalten. Öffnen Sie ihn, indem Sie oben rechts in B1 Admin auf Ihr Profilbild klicken und **Profil bearbeiten** wählen. Ihr Profil wird in allen ChurchApps-Werkzeugen geteilt, daher gelten Änderungen hier überall -- von B1 Admin bis zur B1-App.
 
 </div>
 
-## Was Sie tun können
+## Was Sie tun können {#what-you-can-do}
 
 Im Bereich Profil können Sie:
 
-- **Name und E-Mail-Adresse aktualisieren** -- Halten Sie Ihre Kontaktdaten auf dem neuesten Stand.
+- **Name und E-Mail-Adresse aktualisieren** -- Halten Sie Ihre Kontaktdaten aktuell.
 - **Passwort ändern** -- Legen Sie ein neues Passwort für Ihr Konto fest.
-- **Zwei-Faktor-Anmeldung aktivieren** -- Verlangen Sie beim Anmelden einen Code aus einer Authenticator-App. Siehe [Zwei-Faktor-Anmeldung](./managing-profile.md#two-factor-sign-in).
-- **Design wechseln** -- Schalten Sie im Benutzermenü (klicken Sie oben rechts auf Ihr Profilbild) zwischen hellem und dunklem Modus um.
-- **Verbundene Geräte verwalten** -- Sehen Sie ein, welche ChurchAppsPlayer-Geräte mit Ihrem Konto verknüpft sind, und steuern Sie diese.
-- **Verknüpfte Konten einsehen** -- Sehen Sie sich externe Dienste an, die mit Ihrem ChurchApps-Konto verbunden sind, und verwalten Sie diese.
-- **Profiländerungsanfragen genehmigen** -- Prüfen und übernehmen Sie Aktualisierungen, die von Mitgliedern eingereicht wurden.
+- **Zweistufige Anmeldung aktivieren** -- Verlangen Sie beim Anmelden einen Code aus einer Authenticator-App. Siehe [Zweistufige Anmeldung](./managing-profile.md#two-factor-sign-in).
+- **Designs wechseln** -- Wechseln Sie über das Benutzermenü (klicken Sie oben rechts auf Ihr Profilbild) zwischen hellem und dunklem Modus.
+- **Verbundene Geräte verwalten** -- Ansehen, koppeln, umbenennen und entfernen Sie die ChurchAppsPlayer- und FreePlay-Bildschirme, die mit Ihrem Konto verbunden sind.
+- **Verknüpfte Konten ansehen** -- Sehen Sie externe Dienste, die mit Ihrem ChurchApps-Konto verbunden sind, und verwalten Sie sie.
+- **Anfragen zu Profiländerungen genehmigen** -- Prüfen und übernehmen Sie Aktualisierungen, die Mitglieder eingereicht haben.
+- **Anfragen zur Kontolöschung prüfen** -- Genehmigen oder lehnen Sie Anfragen von Mitgliedern ab, ihr Konto zu löschen.
 
-## Profil-Unterbereiche
+## Unterbereiche des Profils {#profile-sub-sections}
 
-Der Bereich Profil enthält folgende Seiten:
+Der Bereich Profil umfasst folgende Seiten:
 
-1. **[Ihr Profil verwalten](./managing-profile.md)** -- Bearbeiten Sie Ihre persönlichen Daten, ändern Sie Ihr Passwort, verwalten Sie verknüpfte Konten, aktivieren Sie die Zwei-Faktor-Anmeldung, passen Sie Designeinstellungen an und kümmern Sie sich um die Kontolöschung.
-2. **[Profiländerungen genehmigen](./approving-profile-changes.md)** -- Prüfen und genehmigen Sie Profilaktualisierungsanfragen, die Mitglieder über die B1 App eingereicht haben.
-3. **[Geräte verwalten](./devices.md)** -- Sehen Sie sich ChurchAppsPlayer-Geräte, die mit Ihrem Konto gekoppelt sind, an, fügen Sie neue hinzu und verwalten Sie sie.
+1. **[Ihr Profil verwalten](./managing-profile.md)** -- Bearbeiten Sie Ihre persönlichen Angaben, ändern Sie Ihr Passwort, verwalten Sie verknüpfte Konten, aktivieren Sie die zweistufige Anmeldung, passen Sie die Designeinstellungen an und behandeln Sie die Kontolöschung.
+2. **[Profiländerungen genehmigen](./approving-profile-changes.md)** -- Prüfen und genehmigen Sie Aktualisierungen des Profils, die Mitglieder über die B1-App eingereicht haben.
+3. **[Anfragen zur Kontolöschung prüfen](./account-deletion.md)** -- Genehmigen oder lehnen Sie Anfragen von Mitgliedern ab, ihre Konten zu löschen.
+4. **[Geräte verwalten](./devices.md)** -- Ansehen, hinzufügen, umbenennen und entfernen Sie ChurchAppsPlayer- und FreePlay-Bildschirme, die mit Ihrem Konto gekoppelt sind.
 
 :::tip
-Halten Sie Ihre E-Mail-Adresse aktuell. Sie wird für die Kontowiederherstellung und für wichtige Benachrichtigungen Ihrer Kirche verwendet.
+Halten Sie Ihre E-Mail-Adresse aktuell. Sie wird für die Wiederherstellung des Kontos und für wichtige Benachrichtigungen Ihrer Gemeinde verwendet.
 :::
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 - [Ihr Profil verwalten](./managing-profile.md) -- Bearbeiten Sie Ihre persönlichen Einstellungen
-- [Profiländerungen genehmigen](./approving-profile-changes.md) -- Prüfen Sie Profiländerungsanfragen von Mitgliedern
-- [Geräte verwalten](./devices.md) -- Verwalten Sie verbundene Geräte
+- [Profiländerungen genehmigen](./approving-profile-changes.md) -- Prüfen Sie Änderungsanfragen von Mitgliedern
+- [Geräte verwalten](./devices.md) -- Verbundene Geräte verwalten

@@ -1,42 +1,44 @@
 ---
 title: "Personas"
-description: "Busca, añade y edita miembros en la sección Personas de B1 Admin, con hogares, actualizaciones masivas e impresión y exportación del directorio."
+description: "Busque, agregue y edite miembros de la iglesia en la sección People de B1 Admin, incluido el seguimiento de hogares, las actualizaciones masivas y la impresión y exportación del directorio."
 ---
 
 # Personas
 
 <div class="article-intro">
 
-La sección **Personas** es el corazón de tu gestión de iglesia en B1 Admin. Aquí es donde mantienes tu directorio de iglesia -- buscando miembros, agregando nuevas personas, viendo y editando perfiles, y rastreando hogares. Ya sea que tengas una congregación pequeña o grande, mantener tus registros de personas organizados es la base que potencia cada otra característica en B1.
+La sección **People** es el corazón de la administración de su iglesia en B1 Admin. Aquí mantiene el directorio de su iglesia: busca miembros, agrega personas nuevas, consulta y edita perfiles, y administra los hogares. Ya sea que tenga una congregación pequeña o grande, mantener organizados los registros de personas es la base que impulsa todas las demás funciones de B1.
 
 </div>
 
-## Lo que puedes hacer
+## Lo que puede hacer {#what-you-can-do}
 
-Aquí está una descripción general de las características clave disponibles en la sección de Personas:
+Esta es una descripción general de las funciones principales de la sección People:
 
-1. **Busca tu directorio** -- Usa la barra de búsqueda rápida para encontrar a alguien por nombre, o aprovecha los filtros avanzados y la búsqueda en lenguaje natural impulsada por IA para ubicar exactamente a quien necesitas. Ver [Buscar Personas](./searching-people.md) y [Búsqueda IA](./ai-search.md) para detalles.
+1. **Busque en su directorio**: use la barra de búsqueda rápida para encontrar a cualquier persona por su nombre, o aproveche los filtros avanzados y la búsqueda en lenguaje natural con IA para localizar exactamente a quien necesita. Consulte [Búsqueda de personas](./searching-people.md) y [Búsqueda con IA](./ai-search.md) para más detalles.
 
-2. **Guarda consultas de búsqueda como Listas** -- Guarda cualquier búsqueda o filtro como una lista nombrada para que puedas recargarla con un clic. Ver [Listas Guardadas](./lists.md).
+2. **Guarde las búsquedas como listas**: guarde cualquier búsqueda o filtro como una lista con nombre para volver a cargarla con un solo clic. Consulte [Listas guardadas](./lists.md).
 
-3. **Ver Datos Demográficos** -- Ve un desglose visual de tu congregación por edad, género, estado civil, estado de membresía, y sede — y haz clic en cualquier segmento del gráfico para profundizar en esas personas. Ver [Datos Demográficos](./demographics.md).
+3. **Vea la demografía**: consulte un desglose visual de su congregación por edad, género, estado civil, estado de membresía y campus, y haga clic en cualquier segmento del gráfico para profundizar en esas personas. Consulte [Demografía](./demographics.md).
 
-4. **Agregar nuevas personas** -- Rápidamente agrega individuos a tu directorio y completa detalles de perfil, información de contacto, y conexiones de hogar. Ver [Agregar Personas](./adding-people.md) para instrucciones paso a paso.
+4. **Agregue personas nuevas**: agregue rápidamente personas a su directorio y complete los datos de su perfil, su información de contacto y sus vínculos familiares. Consulte [Cómo agregar personas](./adding-people.md) para las instrucciones paso a paso.
 
-5. **Editar personas en masa** -- Actualiza múltiples personas a la vez cambiando su estado de membresía, estado civil, género, preferencias de no contacto, o membresías de grupo. Esto ahorra tiempo cuando haces el mismo cambio a muchos individuos. Ver [Edición en Masa](./bulk-editing.md).
+5. **Edite personas de forma masiva**: actualice a varias personas a la vez cambiando su estado de membresía, estado civil, género, exclusión del directorio, campus o membresías de grupo, o agregándolas a un flujo de trabajo. Esto ahorra tiempo cuando hace el mismo cambio a muchas personas. Consulte [Edición masiva](./bulk-editing.md).
 
-6. **Imprime tu directorio** -- Genera un directorio de miembros formateado e imprimible agrupado por hogar, completo con fotos e información de contacto. Ver [Imprimir Directorio](./print-directory.md).
+6. **Imprima su directorio**: genere un directorio de miembros con formato, listo para imprimir, agrupado por hogar, con fotos e información de contacto. Consulte [Imprimir directorio](./print-directory.md).
 
-7. **Importa y exporta datos** -- Trae datos de miembros desde un archivo CSV o migra desde otro sistema de gestión de iglesia como Breeze. También puedes exportar tu directorio a CSV en cualquier momento. Ver [Importar Datos](./importing-data.md) e [Exportar Datos](./exporting-data.md).
+7. **Importe y exporte datos**: traiga datos de miembros desde un archivo CSV o migre desde otro sistema de administración de iglesias, como Breeze. También puede exportar su directorio a CSV en cualquier momento. Consulte [Importar datos](./importing-data.md) y [Exportación de datos](./exporting-data.md).
 
-8. **Gestiona perfiles** -- Ve y edita perfiles detallados para cada persona, incluyendo información de contacto, miembros del hogar, [membresías de grupo](../groups/group-members.md), [historial de asistencia](../attendance/tracking-attendance.md), [donaciones](../donations/recording-donations.md), y [formularios personalizados](../forms/creating-forms.md). Los datos de contacto y el hogar de la persona están a la izquierda del perfil, con resúmenes de su asistencia, donaciones, grupos, notas y formularios a su lado. Pasa el ratón sobre una dirección o un número de teléfono de casa o trabajo para copiarlo con un clic.
+8. **Administre perfiles**: consulte y edite los perfiles detallados de cada persona, incluida su información de contacto, los miembros de su hogar, sus [membresías de grupo](../groups/group-members.md), su [historial de asistencia](../attendance/tracking-attendance.md), sus [donaciones](../donations/recording-donations.md) y sus [formularios personalizados](../forms/creating-forms.md). El nombre, los datos de contacto y el hogar de la persona están a la izquierda del perfil, con resúmenes de su asistencia, donaciones, grupos, notas y formularios a su lado. Pase el cursor sobre una dirección o un teléfono de casa o del trabajo para copiarlo con un solo clic.
 
-9. **Asigna roles y permisos** -- Controla quién en tu equipo puede acceder a diferentes partes de B1 Admin asignando roles. Ver [Asignar Roles](./roles-permissions.md).
+9. **Ponga al día sus notas**: lea en una sola lista las notas más recientes escritas sobre personas, grupos, eventos y tarjetas de flujo de trabajo. Consulte [Notas](./notes.md).
 
-## Comenzar
+10. **Asigne roles y permisos**: controle qué personas de su equipo pueden acceder a cada parte de B1 Admin asignándoles roles. Consulte [Asignación de roles](./roles-permissions.md).
 
-Para acceder a la sección de Personas, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **People**, y haz clic en **Personas**. Verás tu directorio de iglesia organizado por hogar, con una barra de búsqueda en la parte superior. Usa el selector **View as** para cambiar entre la lista de **Households** y una **Table** de personas individuales.
+## Primeros pasos {#getting-started}
+
+Para acceder a la sección People, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expanda **People** y haga clic en **People**. Verá el directorio de su iglesia organizado por hogar, con una barra de búsqueda en la parte superior. Use el botón **View as** para cambiar entre la lista de **Households** y una **Table** de personas individuales.
 
 :::tip
-Si estás configurando B1 por primera vez, comienza por [importar tus datos de miembros existentes](./importing-data.md). Luego revisa y limpia perfiles según sea necesario.
+Si está configurando B1 por primera vez, empiece por [importar los datos de sus miembros existentes](./importing-data.md). Luego revise y depure los perfiles según sea necesario.
 :::

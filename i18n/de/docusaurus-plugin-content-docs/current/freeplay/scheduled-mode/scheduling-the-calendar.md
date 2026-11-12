@@ -1,92 +1,93 @@
 ---
 title: "Den Kalender planen"
-description: "Zeitplan im Kalender von FreePlay Admin festlegen: Playlists, Gottesdienstpläne oder Anbieterordner für Bildschirmgruppen, Standardschleifen als Fallback."
+description: "Richte im Kalender der FreePlay-Verwaltung einen wöchentlichen oder einmaligen Zeitplan ein, um Playlists, Dienstpläne oder Anbieter-Ordner auf deinen Bildschirmgruppen abzuspielen, mit Standardschleifen als Ausweichlösung."
 ---
 
 # Den Kalender planen
 
 <div class="article-intro">
 
-Die Seite **Kalender** in FreePlay Admin legt fest, was jede Bildschirmgruppe wann abspielt. Fügen Sie einen Termin für eine Playlist, einen Gottesdienstplan oder einen Anbieterordner hinzu und legen Sie fest, ob er wöchentlich wiederholt oder einmalig abgespielt wird. Wenn nichts geplant ist, spielt die Standard-Schleife der Gruppe.
+Die Seite **Kalender** in der FreePlay-Verwaltung steuert, was jede Bildschirmgruppe wann abspielt. Füge einen Zeitplan für eine Playlist, einen Dienstplan oder einen Anbieter-Ordner hinzu und lege fest, ob er wöchentlich wiederholt oder einmal abgespielt wird. Ist nichts geplant, läuft die Standardschleife der Gruppe.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Legen Sie mindestens eine Bildschirmgruppe an. Siehe [Bildschirme und Gruppen verwalten](./managing-screens.md#screen-groups)
-- [Erstellen Sie eine Playlist](./building-playlists.md) oder richten Sie einen Plantyp in B1 Admin ein
+- Lege mindestens eine Bildschirmgruppe an. Siehe [Bildschirme und Gruppen verwalten](./managing-screens.md#screen-groups)
+- [Erstelle eine Playlist](./building-playlists.md) oder richte im B1 Admin einen Plantyp ein
 
 </div>
 
-## Den Kalender lesen
+## Den Kalender lesen {#reading-the-calendar}
 
-1. Öffnen Sie **Kalender**.
-2. Wählen Sie oben über die Reiter eine Bildschirmgruppe aus. Jeder Reiter zeigt, wie viele Termine die Gruppe hat.
-3. Die Wochenansicht läuft von Montag bis Sonntag, von 6 Uhr bis 22 Uhr. Eine rote Linie markiert die aktuelle Uhrzeit.
-4. Verwenden Sie die Pfeile, um zur vorherigen oder nächsten Woche zu wechseln, oder klicken Sie auf **Today**, um zu dieser Woche zurückzukehren.
+1. Öffne **Kalender**.
+2. Wähle oben über die Reiter eine Bildschirmgruppe aus. Jeder Reiter zeigt, wie viele Zeitpläne die Gruppe hat.
+3. Die Wochenansicht läuft von Montag bis Sonntag, 6 bis 22 Uhr. Eine rote Linie markiert die aktuelle Uhrzeit.
+4. Mit den Pfeilen wechselst du zur vorherigen oder nächsten Woche, oder du klickst auf **Heute**, um zu dieser Woche zurückzukehren.
 
-Der Untertitel der Seite zeigt die Zeitzone, die für den Kalender verwendet wird. Termine richten sich nach der Zeitzone Ihrer Gemeinde, die Sie in B1 Admin unter [Gemeindeinformationen](../../b1-admin/settings/church-settings.md#time-zone) festlegen. Hat Ihre Gemeinde keine Zeitzone eingestellt, verwendet FreePlay die Zeitzone Ihres Standorts. Der Kalender und Ihre TVs verwenden dieselbe Zeitzone, sodass ein um 9:00 Uhr im Kalender platzierter Block auch um 9:00 Uhr auf dem Bildschirm abgespielt wird – selbst dann, wenn Ihr Computer auf eine andere Zeitzone eingestellt ist.
+Der Untertitel der Seite zeigt die Zeitzone des Kalenders. Zeitpläne richten sich nach der Zeitzone deiner Gemeinde, die du im B1 Admin unter [Gemeindeinformationen](../../b1-admin/settings/church-settings.md#time-zone) festlegst. Hat deine Gemeinde keine Zeitzone eingestellt, verwendet FreePlay die Zeitzone deines Standorts. Kalender und deine Fernseher verwenden dieselbe Zeitzone, sodass ein Block, den du im Kalender auf 9:00 Uhr legst, auch auf dem Bildschirm um 9:00 Uhr abgespielt wird, selbst wenn dein Computer auf eine andere Zeitzone eingestellt ist.
 
-Termine sind nach Art farblich gekennzeichnet. Eine Legende erklärt die Farben:
+Zeitpläne sind nach Typ farblich markiert. Eine Legende erklärt die Farben:
 
-- **Default loop** – Schraffierter Hintergrund, der hinter allem angezeigt wird, wenn die Gruppe eine Standard-Schleife hat
+- **Standardschleife** - Schraffierter Hintergrund, liegt hinter allem, wenn die Gruppe eine Standardschleife hat
 - **Playlist**
-- **Service plan**
-- **Provider folder**
+- **Dienstplan**
+- **Anbieter-Ordner**
 
-Jeder Block zeigt seinen Namen. Höhere Blöcke zeigen außerdem die Uhrzeiten, ob sich der Termin wiederholt (**weekly** oder **once**) und was passiert, wenn er früher endet.
+Jeder Block zeigt seinen Namen; höhere Blöcke zeigen außerdem die Uhrzeiten, ob er sich wiederholt (**wöchentlich** oder **einmalig**) und was passiert, wenn er vorzeitig endet.
 
-## Die Standard-Schleife festlegen
+## Die Standardschleife festlegen {#setting-the-default-loop}
 
-Die Standard-Schleife läuft auf den Bildschirmen der Gruppe, wann immer nichts geplant ist.
+Die Standardschleife läuft auf den Bildschirmen der Gruppe, sobald nichts geplant ist.
 
-1. Klicken Sie auf der Seite **Kalender** im Kopfbereich auf **Default loop…**. Ist bereits eine Standard-Schleife festgelegt, zeigt die Schaltfläche **Default loop:** gefolgt vom Namen der Playlist.
-2. Wählen Sie eine **Playlist** aus oder wählen Sie **None — screen goes dark**.
-3. Klicken Sie auf **Save**.
+1. Klicke auf der Seite **Kalender** im Kopfbereich auf **Standardschleife…**. Ist bereits eine Standardschleife festgelegt, zeigt die Schaltfläche **Standardschleife:** gefolgt vom Namen der Playlist.
+2. Wähle eine **Playlist** oder wähle **Keine -- Bildschirm bleibt dunkel**.
+3. Klicke auf **Speichern**.
 
-## Einen Termin hinzufügen
+## Einen Zeitplan hinzufügen {#adding-a-schedule}
 
-Es gibt drei Möglichkeiten, einen neuen Termin anzulegen:
+Es gibt drei Wege, einen neuen Zeitplan zu beginnen:
 
-- Klicken Sie auf eine freie Stelle im Kalender. Das Formular öffnet sich mit diesem Tag und der halben Stunde bereits ausgefüllt.
-- Klicken Sie im Kopfbereich auf **Add schedule**.
-- Wählen Sie **Add schedule** aus der Befehlspalette (**Strg+K** oder **⌘K**).
+- Klicke auf eine freie Stelle im Kalender. Das Formular öffnet sich mit diesem Tag und der halben Stunde bereits ausgefüllt.
+- Klicke im Kopfbereich auf **Zeitplan hinzufügen**.
+- Wähle **Zeitplan hinzufügen** in der Befehlspalette (**Strg+K** oder **⌘K**).
 
-Füllen Sie dann das Formular aus:
+Fülle danach das Formular aus:
 
-1. **Play** – Wählen Sie aus, was abgespielt wird:
-   - **Playlists** – Jede Playlist, die Sie erstellt haben
-   - **Service plans** – Ein Plantyp aus B1 Admin, gekennzeichnet mit **(current plan)**. Der Bildschirm spielt jede Woche den aktuellen Plan dieses Plantyps ab, einschließlich Go-Curriculum-Lektionen (auch angepasster), die den Go-Login des Dienstbereichs des Plantyps verwenden
-   - **Provider folder…** – Öffnet **Choose a provider folder**. Navigieren Sie zu einem Ordner und klicken Sie auf **Use this folder**. Um später einen anderen Ordner zu wählen, klicken Sie auf **Change**
-2. **Repeats** – Wählen Sie die Wochentage aus, an denen dieser Termin läuft. Für ein einzelnes Datum schalten Sie stattdessen **One time** ein und wählen das **Date**.
-3. **Start** und **End** – Die Uhrzeiten, zu denen der Termin beginnt und endet.
-4. **If it finishes early** – Was geschieht, wenn der Inhalt vor der Endzeit ausgeht:
-   - **Loop until the end time** – Beginnt von vorn. Gut für Beschilderungs-Schleifen, Ansagen und Countdowns
-   - **Teacher paced** – Folien warten auf die Fernbedienung der Lehrkraft. Die Lektion bleibt über die Endzeit hinaus stehen, bis zur letzten Folie
-   - **Play once, then go back to the default loop**
-5. Bei sich wiederholenden Terminen setzen Sie **Starts** auf das erste Datum. Wählen Sie unter **Ends** entweder **Never** oder **On date** und geben Sie ein **End date** ein.
-6. Klicken Sie auf **Save**.
+1. **Abspielen** - Wähle, was abgespielt wird:
+   - **Playlists** - Jede Playlist, die du erstellt hast
+   - **Dienstpläne** - Ein Plantyp aus dem B1 Admin, mit der Markierung **(aktueller Plan)**. Der Bildschirm spielt jede Woche den jeweils aktuellen Plan dieses Plantyps ab, einschließlich Go-Curriculum-Lektionen (auch angepasste), die die Go-Anmeldung der Abteilung des Plantyps verwenden
+   - **Anbieter-Ordner…** - Öffnet **Anbieter-Ordner auswählen**. Navigiere zu einem Ordner und klicke auf **Diesen Ordner verwenden**. Um später einen anderen Ordner zu wählen, klicke auf **Ändern**
+2. **Wiederholung** - Wähle die Wochentage, an denen dieser Zeitplan läuft. Für ein einzelnes Datum stattdessen **Einmalig** aktivieren und das **Datum** wählen.
+3. **Beginn** und **Ende** - Die Uhrzeiten, zu denen der Zeitplan beginnt und endet.
+4. **Wenn er vorzeitig endet** - Was geschehen soll, wenn der Inhalt vor der Endzeit ausgeht:
+   - **Bis zur Endzeit schleifen** - Beginnt von vorn. Gut für Hinweisschleifen, Ankündigungen und Countdowns
+   - **Vom Lehrer getaktet** - Folien warten auf die Fernbedienung des Lehrers. Die Lektion bleibt über die Endzeit hinaus stehen, bis zur letzten Folie
+   - **Einmal abspielen, dann zur Standardschleife zurückkehren**
+5. Setze bei sich wiederholenden Zeitplänen **Beginnt am** auf das erste Datum. Wähle unter **Endet** entweder **Nie** oder **Am Datum** und trage ein **Enddatum** ein.
+6. Klicke auf **Speichern**.
 
 :::info
-**Teacher paced** ersetzt die ältere Option „hold the last slide“. Termine, die mit dieser Option gespeichert wurden, laufen nun als Teacher paced.
+**Vom Lehrer getaktet** hat die ältere Option "letzte Folie halten" ersetzt. Zeitpläne, die mit dieser Option gespeichert wurden, werden nun als vom Lehrer getaktet abgespielt.
 :::
 
-## Einen Termin bearbeiten oder löschen
+## Einen Zeitplan bearbeiten oder löschen {#editing-or-deleting-a-schedule}
 
-1. Klicken Sie im Kalender auf den Block des Termins.
-2. Ändern Sie ein beliebiges Feld und klicken Sie auf **Save**, oder klicken Sie auf **Delete**, um den Termin zu entfernen.
+1. Klicke im Kalender auf den Block des Zeitplans.
+2. Ändere ein beliebiges Feld und klicke auf **Speichern**, oder klicke auf **Löschen**, um den Zeitplan zu entfernen.
 
-## Überlappende Termine
+## Überlappende Zeitpläne {#overlapping-schedules}
 
-Wenn sich zwei Termine überschneiden, zeigt das Formular eine Warnung: **Overlaps another schedule. The one that starts later wins.** Während der später beginnende Termin läuft, spielen die Bildschirme ihn ab. Wenn er endet, kehren sie zum früheren Termin zurück, sofern dieser noch läuft.
+Überlappen sich zwei Zeitpläne, zeigt das Formular eine Warnung: **Überschneidet sich mit einem anderen Zeitplan. Der später beginnende gewinnt.** Während der spätere Zeitplan läuft, spielen die Bildschirme ihn ab. Endet er, kehren sie zum früheren Zeitplan zurück, sofern dieser noch läuft.
 
-## Wie Bildschirme Änderungen übernehmen
+## Wie Bildschirme Änderungen übernehmen {#how-screens-pick-up-changes}
 
-Gekoppelte Bildschirme laden alles herunter, was für die nächsten 7 Tage geplant ist, und prüfen selbstständig auf Änderungen. Nach einer Änderung am Kalender müssen Sie den TV nicht anfassen. Um zu sehen, wann ein Bildschirm alles Nötige hat, prüfen Sie **Ready through** auf der [Seite Bildschirme](./managing-screens.md).
+Gekoppelte Bildschirme laden alles herunter, was für die nächsten 7 Tage geplant ist, und prüfen selbstständig auf Änderungen. Du musst den Fernseher nach einer Änderung am Kalender nicht anfassen. Um zu sehen, ob ein Bildschirm alles hat, was er braucht, prüfe **Bereit bis** auf der [Seite Bildschirme](./managing-screens.md).
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- **[Playlists erstellen](./building-playlists.md)** – Erstellen Sie die Playlists, die Sie planen
-- **[Geplante Wiedergabe auf dem TV](./scheduled-playback.md)** – Wie Lektionen im Modus „Teacher paced“ und die Fernbedienung auf dem TV funktionieren
-- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** – Gruppen hinzufügen und die Downloads jedes Bildschirms prüfen
+- **[Playlists erstellen](./building-playlists.md)** - Erstelle die Playlists, die du planst
+- **[Geplante Wiedergabe auf dem Fernseher](./scheduled-playback.md)** - Wie vom Lehrer getaktete Lektionen und die Fernbedienung auf dem Fernseher funktionieren
+- **[Bildschirme und Gruppen verwalten](./managing-screens.md)** - Gruppen hinzufügen und die Downloads jedes Bildschirms prüfen
+- **[Nur einen Teil jeder Lektion behalten](/docs/b1-admin/serving/scheduling-lessons#keeping-only-part-of-every-lesson)** - Kürze jede geplante Lektion eines Plantyps auf die Teile, die dein Raum abspielt

@@ -35,7 +35,7 @@ yarn build
 
 Repoet bruker Yarn Berry (feltet `packageManager` i roten er avgjørende) med én lockfile. `yarn build` bygger alle pakker i avhengighetsrekkefølge; `yarn test` kjører alle pakketestene.
 
-## Utgivelse med Changesets
+## Utgivelse med Changesets {#releasing-with-changesets}
 
 Hver endring i en pakke sendes med en changeset:
 
@@ -47,7 +47,7 @@ Hver endring i en pakke sendes med en changeset:
 Kjør aldri en rå `npm publish` inne i en enkelt pakke – det hopper over byggerekkefølgen og versjonsbokføringen som utgivelsesskriptet håndterer. Publisering krever en npm-konto med publiseringsrettigheter til `@churchapps`-omfanget.
 :::
 
-## Lokal utvikling mot en forbrukende app
+## Lokal utvikling mot en forbrukende app {#local-development-against-a-consuming-app}
 
 Inne i arbeidsområdet bygges pakker direkte mot sine søsken – ingen kobling er nødvendig. For å teste en upublisert pakkebygging inne i en forbrukende app (B1Admin, B1App osv.), legg til en midlertidig Yarn-portal i forbrukeren:
 

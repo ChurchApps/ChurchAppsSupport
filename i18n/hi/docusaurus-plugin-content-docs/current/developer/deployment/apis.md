@@ -46,7 +46,7 @@ npm run deploy-prod
 
 व्यवहार में API GitHub Actions द्वारा deploy होता है: **Deploy Demo** हर `main` पर push होने पर चलता है, और **Deploy Prod** मैन्युअल रूप से (workflow dispatch से) शुरू किया जाता है। अब staging environment नहीं है।
 
-## Database Migrations
+## Database Migrations {#database-migrations}
 
 **Deploy Prod** deploy के हिस्से के रूप में लंबित database migrations लागू करता है। Production databases केवल VPC के भीतर से connections स्वीकार करते हैं, इसलिए `serverless deploy` के ठीक बाद workflow `migrate` Lambda (`api-Prod-migrate`) को invoke करता है, जो हर module की लंबित migrations चलाता है और `{ ok, environment, modules }` लौटाता है। यदि कोई module fail होता है या उसे अस्वीकार किया जाता है (जैसे migration history न होने वाला database), तो job fail हो जाता है, ताकि schema कभी code से पीछे न छूटे। **Rollback Prod** केवल Lambda code को वापस लाता है; migrations लागू रहती हैं, इसलिए उन्हें additive रखें। स्थिति जांचने या migrations को हाथ से चलाने के लिए [Server Admin -- Database Migrations](../server-admin.md#database-migrations) देखें।
 

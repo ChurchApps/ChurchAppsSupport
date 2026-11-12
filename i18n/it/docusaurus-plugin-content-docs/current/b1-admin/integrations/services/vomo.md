@@ -1,97 +1,98 @@
 ---
 title: "VOMO"
-description: "Collega le iscrizioni dei volontari VOMO e i check-in kiosk a persone e gruppi di B1 Admin con Zapier, inclusi ambiti della chiave API e passaggi di configurazione."
+description: "Collega le iscrizioni dei volontari e i check-in al chiosco di VOMO alle persone e ai gruppi di B1 Admin con Zapier, inclusi gli ambiti delle chiavi API e i passaggi di configurazione."
 ---
 
 # VOMO
 
 <div class="article-intro">
 
-VOMO è una piattaforma di coinvolgimento del volontariato — le persone si iscrivono ai progetti, fanno il check-in al chiosco e accumulano ore. Se usi VOMO per la programmazione dei volontari ma B1 per i record delle persone, Zapier può sincronizzare l'iscrizione e i check-in tra loro in modo che nessuno dei due lati vada alla deriva.
+VOMO è una piattaforma per il coinvolgimento dei volontari: le persone si iscrivono ai progetti, fanno il check-in al chiosco e accumulano ore. Se usi VOMO per la pianificazione dei volontari ma B1 per le anagrafiche, Zapier può sincronizzare appartenenze e check-in tra i due sistemi, così nessuno dei due si disallinea.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Un account [VOMO](https://vomo.org) su un piano che espone Zapier (contatta il supporto VOMO se non sei sicuro)
+- Un account [VOMO](https://vomo.org) con un piano che include Zapier (se non sei sicuro, chiedi al supporto VOMO)
 - Un account [Zapier](https://zapier.com)
-- Un utente B1Admin con autorizzazione **Modifica impostazioni**
+- Un utente B1Admin con il permesso **Modifica impostazioni**
 
 </div>
 
-## Cosa puoi collegare
+## Cosa puoi collegare {#what-you-can-wire-up}
 
-L'app Zapier di VOMO espone quattro trigger istantanei e quattro azioni. Le ricette che la maggior parte delle chiese vuole:
+L'app Zapier di VOMO espone quattro trigger istantanei e quattro azioni. Le ricette più richieste dalle chiese sono:
 
 | Direzione | Trigger | Azione |
 |---|---|---|
-| VOMO → B1 | Iscrizione VOMO (creata) | B1: Trova persona → Crea persona (se nuovo) |
-| VOMO → B1 | Check-in al chiosco VOMO | B1: Aggiungi membro del gruppo a un gruppo "Attualmente in servizio", o registra come presenze |
+| VOMO → B1 | Iscrizione VOMO (creata) | B1: Trova persona → Crea persona (se nuova) |
+| VOMO → B1 | Check-in al chiosco VOMO | B1: Aggiungi membro al gruppo "In servizio ora", oppure registra come presenza |
 | B1 → VOMO | B1 `person.created` | VOMO: Trova organizzatore (per email); altrimenti passaggio personalizzato |
-| Entrambi | Partecipazione VOMO (iscrizioni) | B1: Aggiungi membro del gruppo al gruppo specifico del progetto |
+| Entrambe | Partecipazione VOMO (iscrizioni) | B1: Aggiungi membro al gruppo del progetto specifico |
 
-Le azioni di VOMO sono limitate a **bozza di progetti** e **ricerca** di organizzatori/progetti esistenti — non c'è un'azione "aggiungi questa persona a un progetto VOMO" oggi. Il collegamento interessante è principalmente VOMO → B1.
+Le azioni di VOMO si limitano a **creare bozze di progetti** e a **cercare** organizzatori/progetti esistenti: oggi non esiste un'azione "aggiungi questa persona a un progetto VOMO". Il collegamento più interessante è soprattutto da VOMO a B1.
 
-## Configurazione
+## Configurazione {#setup}
 
-### 1. Crea una chiave API B1
+### 1. Crea una chiave API B1 {#1-mint-a-b1-api-key}
 
-**Impostazioni → Sviluppatore → Chiavi API → Nuova chiave API**. Ambiti:
+**Impostazioni → Sviluppatori → Chiavi API → Nuova chiave API**. Ambiti:
 
-- `people:read`, `people:write` — per cercare e creare volontari come persone B1
-- `groups:write` — per aggiungerli a gruppi di team di servizio
-- (Facoltativo) `attendance:write` se tratti i check-in al chiosco come presenze
+- `settings:write`: quando colleghi la chiave, Zapier verifica ogni chiave B1 con l'elenco dei webhook di B1, quindi la connessione fallisce senza questo ambito
+- `people:read`, `people:write`: per cercare e creare i volontari come persone di B1
+- `groups:write`: per aggiungerli ai gruppi dei team di servizio
+- (Facoltativo) `attendance:write` se consideri i check-in al chiosco come presenze
 
-### 2. Costruisci lo Zap di sincronizzazione dell'iscrizione
+### 2. Costruisci lo Zap di sincronizzazione delle appartenenze {#2-build-the-membership-sync-zap}
 
-1. **Trigger** — VOMO: Iscrizione (evento = `created`).
-2. **Azione** — B1.church: Trova persona, abbinata per email.
-3. **Filtro / Percorso** — biforca su trovato vs. non trovato:
-   - Non trovato → B1.church: Crea persona, quindi Aggiungi membro del gruppo al gruppo di volontari appropriato.
-   - Trovato → B1.church: Aggiungi membro del gruppo direttamente.
-4. Attiva. I nuovi volontari VOMO ora appaiono in B1 con l'iscrizione al gruppo corretta.
+1. **Trigger**: VOMO: Appartenenza (evento = `created`).
+2. **Azione**: B1.church: Trova persona, abbinata per email.
+3. **Azione**: B1.church: Aggiungi membro al gruppo, aggiungendo la persona del passaggio 2 al gruppo di volontari appropriato.
 
-### 3. (Facoltativo) Costruisci lo Zap di check-in al chiosco
+   Il passaggio *Trova persona* di B1 interrompe lo Zap con un errore "Nessuna persona trovata" quando nessuno corrisponde. Per i volontari che non sono ancora in B1, attiva la gestione degli errori di Zapier per il passaggio Trova persona ed esegui nel suo percorso di errore B1.church: Crea persona, poi Aggiungi membro al gruppo.
+4. Attiva lo Zap. I nuovi volontari VOMO ora compaiono in B1 con l'appartenenza al gruppo giusto.
 
-1. **Trigger** — VOMO: Chiosco
-2. **Azione** — B1.church: Trova persona (per email)
-3. **Azione** — tua scelta:
-   - *Se tratti come presenze* — Webhook per Zapier PUBBLICA sull'endpoint `/attendance/visits` di B1 (l'app Zapier di B1 non ha ancora un'azione di prima classe *Registra presenze*). La [chiave API](/docs/developer/api/api-keys) di B1 va nell'intestazione `Authorization: Bearer cak_…`.
-   - *Se tratti come iscrizione al gruppo* — B1.church: Aggiungi membro del gruppo con un gruppo "Attualmente in servizio (oggi)", e uno Zap successivo nel corso della giornata li rimuove tramite una pulizia programmata.
+### 3. (Facoltativo) Costruisci lo Zap per il check-in al chiosco {#3-optional-build-the-kiosk-check-in-zap}
 
-## Ricette comuni
+1. **Trigger**: VOMO: Chiosco
+2. **Azione**: B1.church: Trova persona (per email)
+3. **Azione**: a tua scelta:
+   - *Se lo tratti come presenza*: POST di Webhooks by Zapier all'endpoint `/attendance/visits` di B1 (l'app Zapier di B1 non ha ancora un'azione *Registra presenza* dedicata). La [chiave API](/docs/developer/api/api-keys) di B1 va nell'intestazione `Authorization: Bearer cak_…`.
+   - *Se lo tratti come appartenenza a un gruppo*: B1.church: Aggiungi membro al gruppo con il gruppo "In servizio oggi", e uno Zap separato più tardi nella giornata li rimuove tramite una pulizia pianificata.
 
-### Sincronizzazione dei gruppi per progetto
+## Ricette comuni {#common-recipes}
 
-- **Trigger** — VOMO: Partecipazione (creata)
-- **Azione** — Filtro per Zapier sull'id del progetto, quindi
-- **Azione** — B1.church: Aggiungi membro del gruppo a un gruppo B1 il cui nome rispecchia il progetto VOMO.
+### Sincronizzazione dei gruppi per progetto {#per-project-group-sync}
 
-Quando il progetto VOMO termina, cancella manualmente il gruppo B1 (o abbinalo a un trigger *Partecipazione eliminato* che li rimuove).
+- **Trigger**: VOMO: Partecipazione (creata)
+- **Azione**: Filtro di Zapier sull'ID del progetto, poi
+- **Azione**: B1.church: Aggiungi membro al gruppo, a un gruppo di B1 il cui nome rispecchia il progetto VOMO.
 
-### Invia un "grazie per la registrazione" via SMS
+Quando il progetto VOMO termina, svuota manualmente il gruppo di B1 (oppure abbina questa ricetta a un trigger *Partecipazione eliminata* che li rimuove).
 
-Catena VOMO Partecipazione → Clearstream Invia testo o Text In Church Invia messaggio nello stesso Zap. Entrambi hanno azioni Zapier di prima classe — vedi [Clearstream](./clearstream.md) e [Text In Church](./text-in-church.md).
+### Invia un SMS "grazie per esserti iscritto" {#send-a-thanks-for-signing-up-text-via-sms}
 
-### Rileva l'abbandono
+Collega in uno stesso Zap Partecipazione VOMO → Invia SMS di Clearstream oppure Invia messaggio di Text In Church. Entrambi hanno azioni Zapier dedicate: vedi [Clearstream](./clearstream.md) e [Text In Church](./text-in-church.md).
 
-Esegui un trigger Zapier *Schedule* giornaliero che chiama Find Organizer in VOMO per un elenco di persone B1 che si sono unite al team di servizio questo mese — se VOMO restituisce "non trovato", non hanno attivato VOMO e hanno bisogno di una spinta.
+### Individua chi abbandona {#detect-drop-off}
 
-## Limiti e note
+Esegui uno Zap *Pianificazione* giornaliero che chiama Trova organizzatore in VOMO per un elenco di persone di B1 entrate nel team di servizio questo mese: se VOMO risponde "non trovato", non hanno attivato VOMO e hanno bisogno di un promemoria.
 
-- **L'email è la chiave di unione.** I payload di VOMO espongono un'email utente ma nessun id della persona di B1. I donatori che usano email diverse in ogni sistema creeranno duplicati.
-- **Nessuna azione "Aggiungi a progetto" nell'app Zapier di VOMO oggi.** Se hai bisogno dell'iscrizione al progetto B1 → VOMO, pubblicherai sull'API REST di VOMO da un passaggio *Webhook per Zapier*, il che è un'integrazione personalizzata.
-- **I livelli VOMO gratuiti / inferiori potrebbero non includere Zapier.** Conferma con il supporto VOMO prima di promettere una data di collegamento.
+## Limiti e note {#limits--notes}
 
-## Risoluzione dei problemi
+- **L'email è la chiave di collegamento.** I dati inviati da VOMO includono l'email dell'utente ma non l'ID persona di B1. I donatori che usano email diverse nei due sistemi creeranno duplicati.
+- **Non esiste un'azione "Aggiungi a progetto" nell'app Zapier di VOMO.** Se ti serve l'iscrizione di persone da B1 a un progetto VOMO, dovresti inviare un POST alla REST API di VOMO da un passaggio *Webhooks by Zapier*: si tratta di un'integrazione personalizzata.
+- **I piani gratuiti o di livello inferiore di VOMO potrebbero non includere Zapier.** Verifica con il supporto VOMO prima di promettere una data di collegamento.
 
-- **Trigger non si attiva mai** — I trigger istantanei di VOMO richiedono che il token API rimanga valido. Ri-prova lo Zap; ri-collega VOMO se il token è stato ruotato.
-- **B1 *Aggiungi membro del gruppo* non riesce con 422** — l'id del gruppo nell'azione non esiste. Apri **B1Admin → Gruppi**, fai clic sul gruppo e copia il segmento id dall'URL nello Zap step.
-- **Persone B1 duplicate da un singolo volontario VOMO** — probabilmente si sono iscritti sotto un'email diversa da quella che avevano già in B1. Standardizza le email, o aggiungi un Zapier *Path* che cerca anche per telefono prima di creare.
+## Risoluzione dei problemi {#troubleshooting}
 
-## Vedi anche
+- **Il trigger non si attiva mai**: i trigger istantanei di VOMO richiedono che il token API resti valido. Ripeti il test dello Zap; ricollega VOMO se il token è stato ruotato.
+- **B1 *Aggiungi membro al gruppo* fallisce**: il gruppo indicato nell'azione non esiste più. Scegli di nuovo il gruppo dal menu a tendina **Gruppo** del passaggio, oppure apri il gruppo in B1Admin (**Persone > Gruppi**) e copia l'ID dalla fine del suo indirizzo web.
+- **Persone duplicate in B1 per un singolo volontario VOMO**: probabilmente si è iscritto con un'email diversa da quella che aveva già in B1. Uniforma le email oppure aggiungi un *Percorso* di Zapier che cerchi anche per telefono prima di creare.
 
-- [Zapier (panoramica)](../zapier.md) — lato B1 di ogni ricetta Zapier
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — abbina le iscrizioni ai volontari con le conferme SMS
-- [Webhook (riferimento per sviluppatori)](/docs/developer/api/webhooks) — gli eventi su cui VOMO può innescare
+## Vedi anche {#see-also}
+
+- [Zapier (panoramica)](../zapier.md): la parte B1 di ogni ricetta Zapier
+- [Clearstream](./clearstream.md) e [Text In Church](./text-in-church.md): abbina le iscrizioni dei volontari a conferme via SMS
+- [Webhook (riferimento per sviluppatori)](/docs/developer/api/webhooks): gli eventi che VOMO può attivare

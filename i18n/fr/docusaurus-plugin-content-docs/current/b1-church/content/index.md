@@ -1,56 +1,61 @@
 ---
-title: "Contenus dans le portail membre B1.church"
+title: "Fonctionnalités de contenu dans le portail des membres de B1.church"
 sidebar_label: "Contenu"
-description: "Voyez quels contenus votre église active dans le portail membre B1.church, puis parcourez prédications, diffusions en direct, lecture biblique et leçons."
+description: "Découvrez les contenus que votre église active sur B1.church, puis parcourez les sermons, les diffusions en direct, la lecture biblique, le verset du jour, les articles de blog et les leçons."
 ---
 
 # Contenu
 
 <div class="article-intro">
 
-B1.church offre à votre communauté un lieu central pour accéder aux contenus que votre église partage. Selon ce que votre église a configuré, vous pouvez avoir accès aux prédications, à la diffusion en direct, à la lecture de la Bible, à un verset du jour et aux supports de leçons, le tout depuis le portail membre.
+B1.church offre à votre communauté un espace central pour accéder au contenu que votre église partage. Selon la configuration de votre église, vous pouvez avoir accès aux sermons, à la diffusion en direct, à la lecture biblique, à un verset du jour et aux supports de leçons — le tout depuis le portail des membres.
 
 </div>
 
-## Fonctionnalités de contenu disponibles
+## Fonctionnalités de contenu disponibles {#available-content-features}
 
-### Prédications
+### Sermons {#sermons}
 
-Parcourez et regardez les prédications enregistrées de votre église. La bibliothèque de prédications de votre église est organisée en listes de lecture et en séries, ce qui facilite la recherche des messages passés.
+Parcourez et regardez les sermons enregistrés de votre église. La bibliothèque de sermons de votre église est organisée en listes de lecture et en séries, ce qui facilite la recherche des messages passés.
 
-### Diffusion en direct
+### Diffusion en direct {#live-streaming}
 
-Regardez la diffusion en direct de votre église directement dans B1.church. Lorsqu'un culte est en direct, vous pouvez rejoindre la diffusion et échanger avec les autres spectateurs via le chat.
+Regardez la diffusion en direct de votre église directement dans B1.church. Lorsqu'un culte est en direct, vous pouvez rejoindre la diffusion et échanger avec les autres spectateurs par le biais du chat.
 
-### Bible
+### Bible {#bible}
 
-Lisez les Écritures à l'aide du lecteur de Bible intégré. Vous pouvez naviguer entre les livres, les chapitres et les versets sans quitter le site.
+Lisez les Écritures grâce au lecteur biblique intégré. Vous pouvez naviguer entre les livres, les chapitres et les versets sans quitter le site.
 
-### Verset du jour
+### Verset du jour {#verse-of-the-day}
 
-Consultez une image de verset biblique joliment mise en forme, qui change chaque jour. L'image s'adapte automatiquement à la taille de votre écran. Vous pouvez aussi partager ou télécharger le verset de n'importe quel jour et parcourir les versets des jours précédents.
+Affichez une image de verset biblique à la mise en forme soignée, qui change chaque jour. L'image s'adapte automatiquement à la taille de votre écran. Vous pouvez également partager ou télécharger le verset de n'importe quel jour et parcourir les versets des jours précédents.
 
-### Leçons
+### Blog {#blog}
 
-Consultez les leçons planifiées dans les plans de votre église. Si vous êtes enseignant ou responsable, vous pouvez utiliser la **Vue enseignant** pour afficher les leçons en plein écran, dans un format facile à parcourir, idéal pour enseigner ou présenter.
+Lisez les nouvelles, les mises à jour et les méditations publiées par votre église, filtrez-les par catégorie ou par étiquette, et suivez les nouveaux articles par RSS.
 
-### Leçons (obsolète - onglet intégré)
+### Leçons {#lessons}
 
-L'onglet **Leçons** intégré a été rendu obsolète. La lecture des programmes se fait désormais dans **[FreePlay](/docs/freeplay/)**, l'application TV gratuite de ChurchApps pour les écrans de salle de classe. Pour consulter les programmes sur un téléphone, une tablette ou un ordinateur, connectez-vous directement à [Lessons.church](https://lessons.church). Voir la [page de référence des leçons](./lessons.md) pour plus de détails.
+Consultez les leçons planifiées dans les plans de votre église. Si vous êtes enseignant ou responsable, ouvrez le plan et utilisez le bouton **Enseigner** pour voir la leçon dans une [Vue enseignant](./teacher-view.md) plein écran, facile à parcourir, idéale pour enseigner ou présenter.
 
-## Trouver du contenu
+### Leçons (obsolète - onglet intégré) {#lessons-deprecated---embedded-tab}
 
-Les pages de contenu sont accessibles depuis la navigation du site de votre église. Votre administrateur d'église décide quelles fonctionnalités de contenu sont activées et comment elles apparaissent dans le menu. Si vous ne voyez pas une fonctionnalité de contenu mentionnée ci-dessus, elle n'est peut-être pas configurée pour votre église.
+L'onglet **Leçons** intégré a été rendu obsolète. La lecture des programmes se fait désormais dans **[FreePlay](/docs/freeplay/)**, l'application TV gratuite de ChurchApps pour les écrans de classe. Pour parcourir les programmes sur un téléphone, une tablette ou un ordinateur, connectez-vous directement à [Lessons.church](https://lessons.church). Consultez la [page de référence des leçons](./lessons.md) pour plus de détails.
+
+## Trouver le contenu {#finding-content}
+
+Les pages de contenu sont accessibles via la navigation du site de votre église. L'administrateur de votre église décide quelles fonctionnalités de contenu sont activées et comment elles apparaissent dans le menu. Si vous ne voyez pas une fonctionnalité de contenu particulière listée ci-dessus, elle n'est peut-être pas configurée pour votre église.
 
 :::info
-Les [prédications](./sermons.md) et la [Bible](./bible.md) sont accessibles publiquement. Pour les autres fonctionnalités, il peut être nécessaire d'être [connecté](../getting-started/logging-in.md).
+Les [sermons](./sermons.md), la [diffusion en direct](./live-streaming.md), la [Bible](./bible.md), le [verset du jour](./verse-of-the-day.md) et le [blog](./blog.md) sont accessibles à tous. Les leçons et la Vue enseignant nécessitent que vous soyez [connecté](../getting-started/logging-in.md).
 :::
 
-## Étapes suivantes
+## Étapes suivantes {#next-steps}
 
-- [Prédications](./sermons.md) : parcourir et regarder les prédications enregistrées
-- [Diffusion en direct](./live-streaming.md) : regarder les diffusions en direct
-- [Bible](./bible.md) : lire les Écritures dans le lecteur intégré
-- [Verset du jour](./verse-of-the-day.md) : voir le verset du jour
-- [Vue enseignant](./teacher-view.md) : utiliser l'interface enseignant élargie pour les contenus de leçons
-- [FreePlay](/docs/freeplay/) : diffuser les leçons sur les téléviseurs de classe (remplace l'onglet Leçons intégré, obsolète)
+- [Sermons](./sermons.md) -- Parcourir et regarder les sermons enregistrés
+- [Diffusion en direct](./live-streaming.md) -- Regarder les diffusions en direct
+- [Bible](./bible.md) -- Lire les Écritures dans le lecteur intégré
+- [Verset du jour](./verse-of-the-day.md) -- Voir le verset du jour
+- [Blog](./blog.md) -- Lire et suivre les articles du blog de votre église
+- [Vue enseignant](./teacher-view.md) -- Utiliser l'interface enseignant élargie pour le contenu des leçons
+- [FreePlay](/docs/freeplay/) -- Diffuser les leçons sur les téléviseurs de classe (remplace l'onglet Leçons intégré obsolète)

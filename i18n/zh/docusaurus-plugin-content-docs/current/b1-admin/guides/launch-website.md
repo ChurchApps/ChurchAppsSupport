@@ -1,91 +1,102 @@
 ---
-title: "指南：启动您的教会网站"
-description: "在 B1 Admin 中设置教会网站：搭建首页、匹配颜色和标志、添加重要页面、连接自定义域名，并添加奉献表单。"
+title: "指南：上线你的教会网站"
+description: "在 B1 Admin 中设置教会网站：搭建首页、匹配颜色和徽标、添加关键页面、连接自定义域名，并添加奉献和表单。"
 ---
 
-# 启动您的教会网站
+# 上线你的教会网站
 
 <div class="article-intro">
 
-B1.church包含一个完整的网站建设者，无需额外费用。本指南将引导您从零开始创建教会网站——设置主页、配置外观、添加关键页面，以及可选地连接在线捐赠和活动注册表单。
+B1.church 内置完整的网站构建工具，无需额外付费。本指南将引导你从零开始创建教会网站——设置首页、配置外观风格、添加关键页面，并可选择性地接入在线奉献和活动报名表。
 
 </div>
+
+## 培训视频 {#training-video}
+
+<YouTube id="aA4UahZpmXg" title="在 B1 中上线你的教会网站" next="在 B1 中编辑页面和导航" nextUrl="/docs/b1-admin/website/page-editor" />
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 准备好您的教会标志（带透明背景的PNG效果最佳）
-- 为您的网站选择2-3个品牌颜色
-- 如果使用自定义域（例如yourchurch.com），请访问您的DNS提供商（GoDaddy、Cloudflare等）
-- 如果您想在网站上进行在线捐赠，请首先完成[在线捐赠设置](../donations/online-giving-setup.md)（Stripe）
+- 准备好教会徽标（使用透明背景的 PNG 效果最佳）
+- 为网站选择 2–3 种品牌颜色
+- 如果使用自定义域名（例如 yourchurch.com），请确保你可以访问域名的 DNS 服务商（GoDaddy、Cloudflare 等）
+- 如果希望在网站上提供在线奉献，请先完成 [在线奉献设置](../donations/online-giving-setup.md)（Stripe）
 
 </div>
 
-## 第1步：初始网站设置
+## 第 1 步：网站初始设置 {#step-1-initial-website-setup}
 
-首先创建您的主页和基本网站结构。
+首先创建你的首页和网站的基本结构。
 
-按照[网站初始设置](../website/initial-setup.md)指南：
+请按照[网站初始设置](../website/initial-setup.md)指南操作：
 
-1. 在B1 Admin中导航到**网站**
-2. 使用hero部分、欢迎信息和关键信息创建您的主页
-3. 添加您的教会名称和标语
-
-## 第2步：配置外观
-
-设置网站的视觉标识——颜色、字体、标志和页脚。
-
-按照[外观](../website/appearance.md)指南：
-
-1. 上传您的教会标志
-2. 设置您的主要和强调颜色
-3. 配置导航栏和页脚
-4. 预览您的更改
+1. 在[跳转菜单](../introduction.md#getting-around-with-the-jump-menu)中，选择 **Website > Pages**（网站 > 页面）
+2. 点击 **Add Page**（添加页面），选择 **Blank**（空白），将 **Page Title**（页面标题）输入为"Home"（首页），然后点击 **Save**。在 **Page Settings**（页面设置）中，将 **URL Path**（网址路径）设为 `/`
+3. 点击 **Edit Content**（编辑内容），添加一个 **Section**（板块），然后加入你的主视觉、欢迎信息、教会名称和标语，以及其他关键信息
 
 :::tip
-保持色彩调色板简单——通常主颜色加一个强调颜色就足够了。网站建设者会处理其余的。
+从零开始？[网站模板](../website/managing-pages.md#starting-from-a-site-template)会创建一组现成的页面（首页、关于、连接、奉献等），并已设置好导航链接——只需将占位内容替换为你自己的内容即可。
 :::
 
-## 第3步：添加内容页面
+## 第 2 步：配置外观 {#step-2-configure-appearance}
 
-构建访问者最需要的页面。
+设置网站的视觉识别——颜色、字体、徽标和页脚。
 
-按照[管理页面](../website/managing-pages.md)指南创建页面，例如：
+请按照[外观](../website/appearance.md)指南操作：
 
-- **关于** ——您的教会的故事、信念和领导
-- **讲道** ——链接到您的[讲道库](../sermons/managing-sermons.md)
-- **活动** ——即将举行的活动和注册
-- **捐赠** ——在线捐赠页面（需要[Stripe设置](../donations/online-giving-setup.md)）
-- **联系** ——位置、服务时间和联系信息
+1. 在跳转菜单中，选择 **Website > Appearance**
+2. 在 **Logo**（徽标）下，上传 **Light Background Logo**（浅色背景徽标）和 **Dark Background Logo**（深色背景徽标）
+3. 在 **Color Palette**（调色板）下设置你的品牌颜色，点击 **Save Palette**（保存调色板），然后选择你的 **Fonts**（字体）
+4. 使用 **Navigation**（导航）设置导航栏的样式，并使用 **Site Footer**（网站页脚）构建每个页面都会显示的页脚
 
-## 第4步：连接您的域
+:::tip
+保持调色板简洁——通常一种主色加一种强调色就足够了。其余部分由网站构建工具处理。
+:::
 
-如果您想使用自己的域名（如yourchurch.com）而不是默认B1 URL：
+## 第 3 步：添加内容页面 {#step-3-add-content-pages}
 
-1. 转到B1 Admin中的**设置**并打开**域**部分
-2. 输入您的自定义域
-3. 在域提供商处更新您的DNS记录以指向B1
+建立访客最需要的页面。
+
+请按照[管理页面](../website/managing-pages.md)指南创建以下页面：
+
+- **About**（关于）——教会的故事、信仰和领导层
+- **Sermons**（讲道）——链接到你的[讲道资料库](../sermons/managing-sermons.md)
+- **Events**（活动）——即将举行的活动和报名
+- **Give**（奉献）——在线奉献页面（需要先[设置 Stripe](../donations/online-giving-setup.md)）
+- **Contact**（联系我们）——地点、聚会时间和联系信息
+
+## 第 4 步：连接你的域名 {#step-4-connect-your-domain}
+
+如果你希望使用自己的域名（例如 yourchurch.com），而不是默认的 B1 网址：
+
+请按照[自定义域名](../settings/custom-domain.md)指南操作：
+
+1. 在你的域名服务商处，为 `www` 添加一条 **CNAME** 记录，指向 `proxy.b1.church`（或为根域名添加一条 **A** 记录，指向 `3.23.251.61`）
+2. 在跳转菜单中，选择 **Settings > Settings**，点击 **Domains**（域名）板块中的 **Edit**，输入你的域名，然后点击 **Save**
 
 :::info
-DNS更改可能需要长达48小时才能传播。您的网站可能无法立即从您的自定义域访问。默认B1 URL将在此期间继续工作。
+请先设置 DNS：B1 会立即保存域名，但在 DNS 指向 B1 之前，网站不会加载（也不会获得 SSL 证书）。DNS 变更可能需要几分钟到几小时才能生效。在此期间，默认的 B1 网址仍可正常使用。
 :::
 
-## 第5步：添加捐赠和表单
+## 第 5 步：添加奉献和表单 {#step-5-add-giving-and-forms}
 
-用交互式元素增强您的网站：
+通过互动元素丰富你的网站：
 
-- **在线捐赠** ——添加捐赠部分，以便成员可以直接从您的网站捐赠。查看[在线捐赠设置](../donations/online-giving-setup.md)以首先配置Stripe。
-- **注册表单** ——为活动注册、访问者卡或志愿者申请嵌入[独立表单](../forms/creating-forms.md)。查看[管理页面](../website/managing-pages.md)以了解如何向任何页面添加表单元素。
+- **在线奉献**——添加一个 **Donation**（奉献）组件，使成员可以直接通过你的网站奉献。请先参阅[在线奉献设置](../donations/online-giving-setup.md)配置 Stripe。
+- **报名表单**——使用 **Form**（表单）组件嵌入[独立表单](../forms/creating-forms.md)，用于活动报名、访客卡或志愿者申请。有关如何在任意页面添加组件，请参阅[页面编辑器](../website/page-editor.md)。
 
-## 完成！
+## 完成！ {#youre-done}
 
-您的教会网站已上线。与您的会众和社交媒体分享该URL。您可以随时从B1 Admin仪表板更新内容、添加新页面和调整外观。
+你的教会网站已经上线。与会众及社交媒体分享网址。你可以随时从 B1 Admin 的 **Website**（网站）板块更新内容、添加新页面以及调整外观。
 
-## 相关文章
+## 相关文章 {#related-articles}
 
-- [网站初始设置](../website/initial-setup.md) ——详细设置演练
-- [管理页面](../website/managing-pages.md) ——添加和编辑页面
-- [外观](../website/appearance.md) ——颜色、标志和布局
-- [管理文件](../website/files.md) ——上传图像和文档
-- [在线捐赠设置](../donations/online-giving-setup.md) ——配置Stripe
-- [创建表单](../forms/creating-forms.md) ——构建注册和调查表单
+- [网站初始设置](../website/initial-setup.md)——详细的设置指南
+- [管理页面](../website/managing-pages.md)——添加和编辑页面
+- [外观](../website/appearance.md)——颜色、徽标和布局
+- [页面编辑器](../website/page-editor.md)——添加板块、文字、图片、表单和奉献
+- [自定义域名](../settings/custom-domain.md)——使用你自己的网址
+- [管理文件](../website/files.md)——上传图片和文档
+- [在线奉献设置](../donations/online-giving-setup.md)——配置 Stripe
+- [创建表单](../forms/creating-forms.md)——构建报名表和问卷

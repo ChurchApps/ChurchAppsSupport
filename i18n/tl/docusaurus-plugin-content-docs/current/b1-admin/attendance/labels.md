@@ -1,91 +1,92 @@
 ---
 title: "Check-In Label Designer"
-description: "I-customize ang nametag at pickup slip template na ipinaprint sa check-in sa B1 Admin, kasama ang mga field, posisyon, at kondisyon ng kaarawan o tala."
+description: "I-customize ang mga template ng nametag at pickup slip na iniimprenta sa check-in sa B1 Admin, kabilang ang mga field, posisyon, at kondisyon ng kaarawan o notes."
 ---
 
 # Check-In Label Designer
 
 <div class="article-intro">
 
-Hinahayaan kayo ng Label Designer na lumikha at mag-customize ng mga template ng name tag at pickup slip na napi-print kapag nag-check in ang mga pamilya ng kanilang mga anak. Makokontrol ninyo kung anong impormasyon ang lalabas sa bawat label, kung saan ito nakaposisyon, at kung ano ang itsura nito.
+Hinahayaan ka ng Label Designer na gumawa at mag-customize ng mga template ng name tag at pickup slip na iniimprenta kapag nag-check in ang mga pamilya ng kanilang mga anak. Makokontrol mo kung eksaktong anong impormasyon ang lilitaw sa bawat label, saan ito nakaposisyon, at kung ano ang itsura nito.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- I-set up ang [Attendance](./setup.md) at mag-configure ng kahit isang oras ng serbisyo na naka-enable ang check-in
-- I-set up ang [Check-In](./check-in.md) para mag-print ang mga label
-- Kailangan ninyo ng administratibong access sa seksyong Attendance
+- I-set up ang [Attendance](./setup.md) at i-configure ang kahit isang oras ng serbisyo na may naka-enable na check-in
+- I-set up ang [Check-In](./check-in.md) para umiimprenta ang mga label
+- Kailangan mo ang **Edit Attendance** na permission
 
 </div>
 
-## Pagbubukas ng Label Designer
+## Pagbubukas ng Label Designer {#opening-the-label-designer}
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Mobile**, at i-click ang **B1 CheckIn**. Pagkatapos, i-click ang button na **Design Labels** sa card na Check-in Labels. Makikita ninyo ang listahan ng inyong mga naka-save na template ng label, nakahiwalay ayon sa uri: **Nametag** at **Pickup Slip**.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Mobile**, at i-click ang **Labels**. Maaari mo ring i-click ang **B1 CheckIn** at pagkatapos ang **Design Labels** sa **Check-in Labels** card.
 
-## Mga Uri ng Label
+Nakalista sa **Check-in Labels** page ang iyong mga naka-save na template kasama ang kanilang **Name**, **Type** (**Nametag** o **Pickup Slip**), at **Size**. Kung wala ka pang nagawa, sinasabi nitong **No label templates**, at ang B1 Checkin ay magpi-print ng sarili nitong built-in na nametag at pickup slip.
 
-- **Nametag** — ini-print at idinidikit sa bata. Karaniwang kasama rito ang pangalan ng bata, ang kanyang classroom/session, at isang security code.
-- **Pickup Slip** — ibinibigay sa magulang o guardian. Karaniwang kasama rito ang security code at listahan ng mga batang kanyang na-check in.
+## Mga Uri ng Label {#label-types}
 
-Sisimulan kayo ng B1 sa isang default na nametag at default na template ng pickup slip na may sukat para sa karaniwang 3.5 × 1.1 pulgadang thermal label.
+- **Nametag** — iniimprenta at idinidikit sa bata. Karaniwang kasama ang pangalan ng bata, ang kanyang klase/session, at security code.
+- **Pickup Slip** — ibinibigay sa magulang o tagapag-alaga. Karaniwang kasama ang security code at listahan ng mga batang kanyang ni-check in.
 
-## Paglikha ng Template ng Label
+Parehong nakalaan ang dalawang panimulang template para sa karaniwang 3.5 × 1.1 inch na thermal label (Brother DK-1201).
 
-1. I-click ang **Add** at pumili ng panimulang punto mula sa menu: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"**, o **Blank**.
-2. Magbubukas ang bagong template sa label editor.
+## Paggawa ng Label Template {#creating-a-label-template}
 
-### Label Editor
+1. I-click ang **Add label** at pumili ng panimulang punto: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"**, o **Blank**.
+2. Bubukas ang template sa label editor, kasama ang preview ng label na puno ng sample data.
 
-Ipinapakita ng editor ang preview ng label na naka-scale sa naka-configure na sukat. Sa kaliwang panel, maaari ninyong i-configure ang:
+### Label Editor {#label-editor}
 
-- **Name** — ang pangalan ng template (para sa sarili ninyong sanggunian lamang)
-- **Label Type** — Nametag o Pickup Slip
-- **Width / Height** — ang sukat ng label sa pulgada
+Sa itaas ng editor, maaari mong itakda ang:
 
-### Pagdaragdag ng mga Block
+- **Name** — ang pangalan ng template (para sa iyong sanggunian lamang; kinakailangan)
+- **Type** — Nametag o Pickup Slip
+- **Width (in)** / **Height (in)** — laki ng label sa pulgada
 
-Binubuo ang label ng mga block — mga hiwalay na piraso ng nilalaman na nakaposisyon sa canvas ng label. I-click ang **Add Block** para magpasok ng bagong block at piliin ang uri nito:
+### Pagdagdag ng Blocks {#adding-blocks}
 
-- **Field** — kumukuha ng datos sa oras ng pag-print:
-  - `person.displayName` — ang buong pangalan ng tao
-  - `sessions` — ang serbisyo/classroom na kanyang pinag-check-inan
-  - `securityCode` — ang random na nabuong security code para sa pagsundo
-  - `children` — listahan ng mga bata (para sa mga pickup slip)
-  - `person.nametagNotes` — anumang espesyal na tala sa record ng tao
-  - `person.isBirthdayWeek` — totoo kung ang kaarawan ng tao (buwan at araw) ay nasa loob ng 3 araw bago o pagkatapos ng petsa ng check-in
-  - `campus` — ang pangalan ng campus
-- **Text** — nakapirming teksto na tina-type ninyo (para sa mga heading, label, o tagubilin)
-- **Barcode** — barcode na nagsasaad ng security code
+Binubuo ang label ng mga block — mga indibidwal na piraso ng nilalaman na inilalagay sa label. I-click ang isang button sa **Add Block** panel para magdagdag ng isa:
 
-### Pagpoposisyon ng mga Block
+- **Fields** — kumukuha ng value sa oras ng pag-print. Ang nametag ay may **Display Name**, **First Name**, **Last Name**, **Nickname**, **Nametag Notes** (ang notes sa record ng tao), **Birthday This Week** (true kapag ang kaarawan ng tao ay nasa loob ng 3 araw bago o pagkatapos ng petsa ng check-in), **Sessions** (ang mga oras ng serbisyo at kuwartong pinagcheck-in-an niya), **Security Code**, **Date**, at **Church Name**. Ang pickup slip ay may **Children**, **Children & Allergies**, **Security Code**, **Date**, at **Church Name**.
+- **Text** — static na teksto na tina-type mo (para sa mga heading, label, o tagubilin)
+- **Barcode** — Code 128 o Code 39 barcode ng isang field, gaya ng security code
+- **QR Code** — QR code ng isang field
+- **Box** — parihaba na may opsyonal na fill color at border
 
-May mga field na **X**, **Y**, **Width**, at **Height** ang bawat block na ipinapahayag bilang porsyento ng canvas ng label (0–100). Ayusin ang mga ito para eksaktong maiposisyon ang nilalaman. Maaari rin ninyong itakda ang:
+### Pagpoposisyon at Pag-istilo ng Blocks {#positioning-and-styling-blocks}
 
-- **Font Size** — laki ng teksto sa points
-- **Bold** — i-toggle ang bold na teksto
-- **Align** — kaliwa, gitna, o kanang pagkakahanay ng teksto
-- **Condition** — opsyonal na itago ang block kung walang laman ang isang field (halimbawa, ipakita lang ang nametagNotes kung may halaga ito). Gumagana rin ito sa `person.isBirthdayWeek` para magpakita ng birthday graphic o teksto sa mga nametag lamang ng mga batang malapit na ang kaarawan sa araw ng check-in.
+I-drag ang isang block sa label para ilipat ito, o i-click ito at gamitin ang **Properties** panel. Ang **X**, **Y**, **W**, at **H** ay porsyento ng label (0–100). Depende sa block, maaari mo ring itakda ang:
 
-### Pag-save
+- **Font Size** — laki ng teksto, kaugnay sa taas ng label
+- **Bold** at **Italic**
+- **Align** — Left, Center, o Right
+- **Symbology** at **Value** — para sa mga barcode at QR code
+- **Fill** at **Border** — para sa mga box
+- **Condition** — ang **Always** ay palaging ipinapakita ang block. Pumili ng field para ipakita lamang ang block kapag ang field na iyon ay **Is not blank**, **Is blank**, **Equals**, o **Does not equal** ng isang value. Halimbawa, ipakita lamang ang nametag notes kapag may laman ang mga ito, o ipakita lamang ang birthday graphic kapag ang **Birthday This Week** ay katumbas ng `true`.
 
-I-click ang **Save** para i-save ang template. Gagamitin ang na-update na template sa susunod na pag-print ng mga label sa B1 Checkin.
+I-click ang **Remove Block** para burahin ang napiling block.
 
-## Pag-aayos ng Pagkakasunod-sunod ng mga Template
+### Pag-save {#saving}
 
-Kung marami kayong template ng nametag o pickup slip, gagamitin ng B1 Checkin ang unang template sa listahan bilang default. I-drag ang mga template para baguhin ang pagkakasunod-sunod.
+I-click ang **Save** para i-save ang template, o **Cancel** para itapon ang mga pagbabago. Gagamitin ng B1 Checkin ang na-update na template sa susunod nitong pag-load ng mga setting.
 
-## Pagtanggal ng Template
+## Pagpili ng Default na Template {#choosing-the-default-template}
 
-I-click ang delete icon sa anumang hilera ng template at kumpirmahin. Kapag tinanggal ang huling template ng isang uri, ibabalik ang default na built-in na template.
+Kung higit sa isang template ang mayroon ka para sa isang uri, i-click ang **Set Default** sa template na dapat iprint ng B1 Checkin. Magpapakita ito ng **Default** badge, at ang anumang iba pang template ng parehong uri ay hihinto sa pagiging default. Kung walang template ng isang uri ang namarkahang default, gagamitin ng kiosk ang una.
+
+## Pagbura ng Template {#deleting-a-template}
+
+I-click ang **Delete** sa row ng template at kumpirmahin. Kapag binura mo ang lahat ng template ng isang uri, babalik ang B1 Checkin sa built-in na label nito para sa uring iyon.
 
 :::tip
-Mag-test print pagkatapos mag-edit ng template para matiyak na maayos ang layout bago ang susunod ninyong serbisyo.
+Mag-test print pagkatapos mag-edit ng template para makumpirmang tama ang layout bago ang susunod mong serbisyo.
 :::
 
-## Mga Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Check-In Setup](./setup.md) — i-configure ang mga serbisyo at grupo para sa check-in
-- [Pagkumpleto ng Check-In](./check-in.md) — ang proseso ng check-in para sa mga pamilya
-- [Pagsisimula sa B1 Checkin](../../b1-checkin/getting-started/index.md) — ang Checkin kiosk app
+- [Attendance Setup](./setup.md) — i-configure ang mga serbisyo at grupo para sa check-in
+- [Check-In](./check-in.md) — i-set up ang B1 Checkin kiosk
+- [B1 Checkin Getting Started](../../b1-checkin/getting-started/index.md) — ang Checkin kiosk app

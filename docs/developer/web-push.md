@@ -21,6 +21,7 @@ The most common paths that reach push:
 2. **Private messages** — a direct message goes through the same delivery function and always attempts push alongside socket delivery.
 3. **Scheduled reminders** — event, task, and serving reminders expanded and dispatched by the reminder engine, which starts new occurrences directly at the push tier.
 4. **Staff-triggered pushes** — `POST /messaging/notifications/create`, `/ping`, and `/group/send` for one-off or group broadcasts.
+5. **Scheduled staff pushes** — `POST /messaging/scheduledNotifications` saves a push for everyone with the app (`audience: "church"`) or one group, and the 1-minute timer sends it when due (see [Notifications architecture](./architecture/notifications.md)). A church-wide push without a link opens `/mobile/notifications`; a group push without a link opens that group.
 
 ## Server flow
 

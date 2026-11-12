@@ -46,7 +46,7 @@ npm run deploy-prod
 
 实际上，API 由 GitHub Actions 部署：**Deploy Demo** 会在每次推送到 `main` 分支时运行，**Deploy Prod** 则需手动启动（workflow dispatch）。目前已不再有预发布（staging）环境。
 
-## 数据库迁移
+## 数据库迁移 {#database-migrations}
 
 **Deploy Prod** 会在部署过程中应用待处理的数据库迁移。正式环境的数据库仅接受来自 VPC 内部的连接，因此在 `serverless deploy` 完成后，工作流会调用 `migrate` Lambda（`api-Prod-migrate`），由它运行所有模块的待处理迁移，并返回 `{ ok, environment, modules }`。如果任何模块失败或被拒绝（例如某个数据库没有迁移历史记录），该任务将失败，从而确保数据库结构永远不会落后于代码。**Rollback Prod** 只会回滚 Lambda 代码；迁移会保持已应用状态，因此请保持迁移为增量式（additive）。有关检查状态或手动运行迁移的方法，请参阅 [服务器管理 —— 数据库迁移](../server-admin.md#database-migrations)。
 

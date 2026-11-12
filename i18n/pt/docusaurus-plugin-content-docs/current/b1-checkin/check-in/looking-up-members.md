@@ -1,85 +1,85 @@
 ---
-title: "Procurando Membros"
-description: "Encontre sua família no quiosque do B1 Checkin pesquisando pelos dígitos do telefone ou pelo nome, e cadastre-se como visitante se for sua primeira vez."
+title: "Buscando membros"
+description: "Encontre a sua família no quiosque do B1 Checkin pesquisando os dígitos do telefone ou o nome, e cadastre-se como visitante se for a sua primeira vez."
 ---
 
-# Procurando Membros
+# Buscando membros
 
 <div class="article-intro">
 
-Após selecionar um serviço, você chega à tela de busca de membros. Este é o local onde você procura sua família para poder fazer check-in. O aplicativo suporta a busca por número de telefone ou por nome.
+Depois de selecionar um culto, você chega à tela de busca de membros. É aqui que você procura a sua família para fazer o check-in. O aplicativo permite pesquisar por número de telefone ou por nome.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- [Selecione um serviço](./selecting-service.md) na tela de serviços
-- Certifique-se de que sua família foi [adicionada ao sistema](../../b1-admin/people/adding-people.md) por um administrador da igreja
+- [Selecione um culto](./selecting-service.md) na tela de cultos
+- Certifique-se de que a sua família foi [adicionada ao sistema](../../b1-admin/people/adding-people.md) por um administrador da igreja
 
 </div>
 
-## Modos de Busca
+## Modos de busca {#search-modes}
 
-A tela de busca oferece dois modos de pesquisa. Você pode alternar entre eles tocando no botão no topo da tela:
+A tela de busca oferece dois modos. Você pode alternar entre eles tocando no seletor no topo da tela:
 
-- **Telefone** -- Pesquisar por número de telefone. Este é o modo padrão.
-- **Nome** -- Pesquisar por nome.
+- **Telefone** -- Pesquisa por número de telefone. Este é o modo padrão.
+- **Nome** -- Pesquisa por nome.
 
-## Pesquisando por Número de Telefone
+## Pesquisando por número de telefone {#searching-by-phone-number}
 
-1. Certifique-se de que **Telefone** é o modo de busca ativo (ele está destacado no topo).
-2. Toque no campo de busca e digite pelo menos **4 dígitos** do seu número de telefone usando o teclado na tela.
-3. Toque no botão **Pesquisar** ou pressione a tecla de busca do teclado.
+1. Certifique-se de que **Telefone** é o modo de busca ativo (ele fica destacado no topo).
+2. Toque no campo de busca e digite pelo menos **4 dígitos** do seu telefone usando o teclado na tela.
+3. Toque no botão **Pesquisar** ou pressione a tecla de pesquisa do teclado.
 
-O aplicativo pesquisa membros cujo número de telefone corresponde aos dígitos que você digitou. Se você digitar mais de 4 dígitos, ele usa o número completo. Se você digitar exatamente 4, ele corresponde aos últimos 4 dígitos dos números de telefone em arquivo.
+O aplicativo procura membros cujo número de telefone corresponda aos dígitos que você digitou. Se você digitar mais de 4 dígitos, ele usa o número completo. Se digitar exatamente 4, a busca compara com os últimos 4 dígitos dos telefones cadastrados.
 
-## Pesquisando por Nome
+## Pesquisando por nome {#searching-by-name}
 
-1. Toque no botão **Nome** no topo da tela para mudar para o modo de busca por nome.
+1. Toque no seletor **Nome** no topo da tela para mudar para o modo de busca por nome.
 2. Digite pelo menos **2 caracteres** do nome da pessoa no campo de busca.
 3. Toque no botão **Pesquisar**.
 
-O aplicativo pesquisa membros cujo nome corresponde ao que você digitou.
+O aplicativo procura membros cujo nome corresponda ao que você digitou.
 
-## Selecionando uma Pessoa
+## Selecionando uma pessoa {#selecting-a-person}
 
-Os resultados da busca aparecem como cartões abaixo do campo de busca. Cada cartão mostra o **nome** da pessoa e **foto** (se houver uma em arquivo).
+Os resultados da busca aparecem como cards abaixo do campo de pesquisa. Cada card mostra o **nome** e a **foto** da pessoa (se houver uma cadastrada).
 
-Toque no cartão de uma pessoa para selecioná-la. O aplicativo carrega todos os membros da família dessa pessoa e o leva para a [tela de revisão de família](./household-review.md).
+Toque no card de uma pessoa para selecioná-la. O aplicativo carrega todos os membros da família dessa pessoa e leva você à [tela de revisão da família](./household-review.md).
 
 :::tip
-Pesquisar pelos últimos 4 dígitos de um número de telefone é a forma mais rápida de procurar sua família. Incentive os membros a usar esse método para uma experiência de check-in mais rápida.
+Pesquisar pelos últimos 4 dígitos do telefone é a forma mais rápida de encontrar a sua família. Incentive os membros a usar esse método para um check-in mais rápido.
 :::
 
 :::warning
-Se nenhum resultado for encontrado, o aplicativo exibe uma mensagem informando. Verifique os dígitos ou nome que você digitou, ou tente o outro modo de busca. Se você é um visitante de primeira vez, peça ajuda a um voluntário para ser [adicionado ao sistema](../../b1-admin/people/adding-people.md).
+Se nenhum resultado for encontrado, o aplicativo exibe uma mensagem informando isso. Confira os dígitos ou o nome que você digitou, ou tente o outro modo de busca. Se for a sua primeira visita, peça ajuda a um voluntário para ser [adicionado ao sistema](../../b1-admin/people/adding-people.md).
 :::
 
-## Registrando-se como Convidado
+## Cadastrando-se como visitante {#registering-as-a-guest}
 
-Se sua igreja tem o registro de convidado por QR ativado, um link **Registrar como convidado** aparece abaixo da busca na tela de busca. Visitantes pela primeira vez podem usá-lo para adicionar sua família ao sistema da igreja antes do check-in.
+Se a sua igreja tiver o cadastro de visitantes por QR code ativado, um link **Cadastrar-se como visitante** aparece abaixo da busca na tela de pesquisa. Visitantes de primeira vez podem usá-lo para adicionar a sua família ao sistema da igreja antes de fazer o check-in.
 
-1. Toque em **Registrar como convidado**. Uma janela abre com um código QR e a mensagem "Escaneie para registrar como convidado."
-2. Escolha como preencher o [formulário de registro de convidado](../../b1-church/checkin/guest-registration.md):
-   - **No seu telefone** -- Escaneie o código QR, preencha o formulário no seu telefone e toque em **OK** para fechar a janela.
-   - **No quiosque** -- Toque em **Registrar aqui** para abrir o mesmo formulário direto no tablet. Preencha-o e toque em **Registrar**, depois toque em **Pronto** (ou a seta voltar) para retornar à tela de busca.
-3. Após registrado, procure sua família pelo nome ou número de telefone para fazer check-in.
+1. Toque em **Cadastrar-se como visitante**. Abre-se uma janela com um QR code e a mensagem "Escaneie para se cadastrar como visitante."
+2. Escolha como preencher o [formulário de cadastro de visitantes](../../b1-church/checkin/guest-registration.md):
+   - **No seu celular** -- Escaneie o QR code, preencha o formulário no seu celular e toque em **OK** para fechar a janela.
+   - **No quiosque** -- Toque em **Cadastrar aqui** para abrir o mesmo formulário diretamente no tablet. Preencha-o e toque em **Cadastrar**, depois toque em **Concluído** (ou na seta de voltar) para retornar à tela de busca.
+3. Depois de se cadastrar, pesquise a sua família pelo nome ou pelo número de telefone para fazer o check-in.
 
 :::info
-O formulário aberto com **Registrar aqui** fica na página de registro de convidado -- visitantes não podem navegar para outras partes do site da igreja a partir do quiosque. Se ninguém tocar ou digitar no formulário por 2 minutos, o quiosque o fecha e retorna à tela de busca. Cada vez que o formulário fecha, qualquer coisa digitada nele é apagada para que a próxima família comece com um formulário em branco.
+O formulário aberto com **Cadastrar aqui** permanece na página de cadastro de visitantes -- os visitantes não conseguem navegar para outras partes do site da igreja a partir do quiosque. Se ninguém tocar ou digitar no formulário por 2 minutos, o quiosque o fecha e retorna à tela de busca. Sempre que o formulário é fechado, tudo o que foi digitado nele é apagado, para que a próxima família comece com um formulário em branco.
 :::
 
-## Imprimindo Etiquetas para um Check-in por Telefone
+## Imprimindo etiquetas para um check-in pelo celular {#printing-labels-for-a-phone-check-in}
 
-Famílias que já fizeram check-in no telefone através do [autoatendimento B1 Church](../../b1-church/checkin/self-checkin.md) podem imprimir seus crachás no quiosque sem se procurarem.
+As famílias que já fizeram o check-in pelo celular, por meio do [autoatendimento de check-in do B1 Church](../../b1-church/checkin/self-checkin.md), podem imprimir as suas etiquetas de identificação no quiosque sem precisar se buscar.
 
-1. Na tela de busca, toque no botão **Escanear código** (o ícone de código QR).
-2. Aponte o código QR do seu telefone para a câmera. Se o aplicativo pedir acesso à câmera, toque em **Permitir Câmera**. A câmera frontal é usada por padrão; toque no botão de inverter para alternar.
-3. O quiosque encontra o check-in e imprime as etiquetas, depois retorna à tela de busca.
+1. Na tela de busca, toque no botão **Escanear código** (o ícone de QR code).
+2. Aproxime o QR code do seu celular da câmera. Se o aplicativo pedir acesso à câmera, toque em **Permitir câmera**. A câmera frontal é usada por padrão; toque no botão de inverter para trocar.
+3. O quiosque localiza o check-in e imprime as etiquetas, depois retorna à tela de busca.
 
-Escanear apenas imprime etiquetas -- a presença já foi registrada quando a família fez check-in no telefone. Se o código não corresponder a um check-in ativo, o quiosque mostra uma mensagem e retorna à tela de busca.
+Escanear apenas imprime as etiquetas -- a presença já foi registrada quando a família fez o check-in pelo celular. Se o código não corresponder a um check-in ativo, o quiosque exibe uma mensagem e retorna à tela de busca.
 
-## Próximo Passo
+## Próximo passo {#next-step}
 
-Após selecionar uma pessoa, você irá [revisar sua família](./household-review.md) e gerenciar atribuições de grupos.
+Depois de selecionar uma pessoa, você vai [revisar a sua família](./household-review.md) e gerenciar as atribuições de grupo.

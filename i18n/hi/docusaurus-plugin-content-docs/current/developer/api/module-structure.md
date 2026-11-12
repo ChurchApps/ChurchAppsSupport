@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## क्रॉस-मॉड्यूल संचार
+## क्रॉस-मॉड्यूल संचार {#cross-module-communication}
 
 हर मॉड्यूल अपने डेटाबेस का स्वामी है (देखें [Database](./database.md)), और कोई मॉड्यूल किसी दूसरे मॉड्यूल की tables को सीधे query नहीं करता। जब एक मॉड्यूल को किसी दूसरे के स्वामित्व वाला डेटा चाहिए -- उदाहरण के लिए, doing मॉड्यूल का membership से लोगों को resolve करना -- तो वह `src/shared/modules/` में स्थित स्वामी मॉड्यूल के **gateway** के माध्यम से जाता है:
 

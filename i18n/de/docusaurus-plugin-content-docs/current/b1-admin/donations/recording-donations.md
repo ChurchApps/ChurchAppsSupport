@@ -1,13 +1,13 @@
 ---
 title: "Spenden erfassen"
-description: "Erfassen Sie Kirchenspenden in B1 Admin, indem Sie einen Stapel anlegen, Gaben einzeln eingeben, eine CSV-Datei importieren oder eine Gabe aus einem Spenderprofil erfassen."
+description: "Erfassen Sie Kirchenspenden in B1 Admin, indem Sie einen Stapel anlegen, Gaben einzeln eingeben, eine CSV-Datei importieren oder eine Gabe aus dem Profil einer spendenden Person erfassen."
 ---
 
 # Spenden erfassen
 
 <div class="article-intro">
 
-Das Erfassen von Spenden in B1 Admin erfolgt über das Stapel-System (Batches). Sie erstellen einen Stapel für eine Kollekte (etwa das Sonntagsopfer) und fügen dann einzelne Spenden zu diesem Stapel hinzu. So bleiben Ihre Spendenunterlagen übersichtlich und lassen sich leicht abgleichen.
+Spenden erfassen Sie in B1 Admin über das System der Stapel. Sie legen einen Stapel für eine Kollekte an (etwa eine Sonntagskollekte) und fügen dann einzelne Spenden zu diesem Stapel hinzu. So bleiben Ihre Gebeunterlagen übersichtlich und lassen sich leicht abgleichen.
 
 </div>
 
@@ -15,107 +15,125 @@ Das Erfassen von Spenden in B1 Admin erfolgt über das Stapel-System (Batches). 
 <h4>Bevor Sie beginnen</h4>
 
 - Richten Sie Ihre [Fonds](funds.md) ein, damit Sie Spenden den richtigen Kategorien zuordnen können
-- Erstellen Sie einen [Stapel](batches.md), der die Spenden aufnimmt, die Sie als Nächstes eingeben
-- Stellen Sie sicher, dass die Spender in Ihrem [Personenverzeichnis](../people/adding-people.md) enthalten sind, damit Sie sie bei der Erfassung von Gaben suchen können
-- Sie benötigen **Spenden bearbeiten** oder **Spenden erfassen** zusammen mit **Spenden anzeigen**, um Gaben in einen Stapel einzutragen (siehe [Wer kann einen Stapel ändern](batches.md#who-can-change-a-batch))
+- Legen Sie einen [Stapel](batches.md) an, der die Spenden aufnimmt, die Sie gleich eingeben
+- Stellen Sie sicher, dass die Spendenden im [Personenverzeichnis](../people/adding-people.md) stehen, damit Sie sie beim Erfassen der Gaben finden können
+- Sie benötigen **Spenden bearbeiten** oder **Spenden erfassen** zusammen mit **Spenden anzeigen**, um Gaben in einen Stapel einzutragen (siehe [Wer einen Stapel ändern kann](batches.md#who-can-change-a-batch))
 
 </div>
 
-## Einen Stapel erstellen und Spenden hinzufügen
+## Einen Stapel anlegen und Spenden hinzufügen {#creating-a-batch-and-adding-donations}
 
-1. Öffnen Sie in **B1 Admin** das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links), klappen Sie **Donations** auf und klicken Sie auf **Batches**.
-2. Klicken Sie oben auf der Seite auf **Add Batch**.
-3. Geben Sie einen Namen für den Stapel ein (z. B. „Sunday Offering - Jan 5“) und wählen Sie das Datum aus. Klicken Sie auf **Save**.
-4. Ihr neuer Stapel erscheint in der Liste mit null Spenden und 0,00 $.
-5. Klicken Sie auf den **Namen des Stapels**, um ihn zu öffnen.
+1. Öffnen Sie in **B1 Admin** das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Spenden** auf und klicken Sie auf **Stapel**.
+2. Klicken Sie oben auf der Seite auf **Stapel hinzufügen**.
+3. Geben Sie einen Namen für den Stapel ein (z. B. „Sonntagskollekte – 5. Jan.“) und wählen Sie das Datum. Klicken Sie auf **Speichern**.
+4. Ihr neuer Stapel erscheint in der Liste mit null Spenden und $0.00.
+5. Klicken Sie auf den **Stapelnamen**, um ihn zu öffnen.
 
-## Einzelne Spenden erfassen
+## Einzelne Spenden eingeben {#entering-individual-donations}
 
-1. Auf der Detailseite des Stapels erscheint das Erfassungsfeld für Spenden neben der Spendenliste. Geben Sie unter **Select Person or Anonymous** den Namen des Spenders in das Suchfeld ein, um ihn zu finden, oder klicken Sie auf **Anonymous**. (Ein Klick auf **Add Donation** oben auf der Seite springt direkt zu diesem Feld.)
-2. Nachdem Sie eine Person ausgewählt haben, zeigt das Formular die Felder **Date**, **Method** (Check, Cash, Card oder In-Kind), **Fund**, **Notes**, **Amount** und **Check #** (bzw. **Last 4 digits** bei Kartenspenden oder **Item** zur Beschreibung einer Sachspende). Klicken Sie neben dem Namen des Spenders auf **Change**, um eine andere Person auszuwählen.
-3. Füllen Sie die Angaben aus und klicken Sie auf **Add Donation** (oder drücken Sie die Eingabetaste).
-4. Die Spende wird der Spendenliste hinzugefügt, und das Formular wird zurückgesetzt, damit Sie die nächste Spende erfassen können.
+1. Auf der Detailseite des Stapels erscheint das Eingabefeld für Spenden neben der Liste der Spenden. Geben Sie unter **Person oder anonym auswählen** den Namen des Spendenden in das Suchfeld ein, um ihn zu finden, oder klicken Sie auf **Anonym**. (Ein Klick auf **Spende hinzufügen** oben auf der Seite springt zu diesem Feld.)
+2. Nachdem Sie eine Person gewählt haben, zeigt das Formular die Felder **Datum** (beginnt mit dem Datum des Stapels), **Art** (Scheck, Bargeld, Karte oder Sachspende), **Fonds** (wird angezeigt, wenn Ihre Kirche mehr als einen Fonds hat), **Notizen**, **Betrag** sowie **Scheck-Nr.** (bzw. **Letzte 4 Ziffern** bei Kartengaben oder **Gegenstand** zur Beschreibung einer Sachspende; Bargeldgaben haben kein Detailfeld). Klicken Sie neben dem Namen des Spendenden auf **Ändern**, um eine andere Person zu wählen.
+3. Füllen Sie die Angaben aus und klicken Sie auf **Spende hinzufügen** (oder drücken Sie die Eingabetaste). Ist der Betrag leer oder null, fordert das Formular einen Betrag größer als null, statt zu speichern.
+4. Die Spende wird der Liste hinzugefügt, und das Formular wird zurückgesetzt, damit Sie die nächste eingeben können. Datum, Art, Fonds und Notizen bleiben so, wie Sie sie eingestellt haben. Bei einem Stapel ähnlicher Schecks müssen Sie nur noch Spendenden, Betrag und Schecknummer eingeben.
 
 :::info
-Wenn der Stapel [geschlossen](batches.md#closing-and-reopening-a-batch) wurde, sind das Erfassungsfeld und die Links **Edit** für Personen ohne **Spenden bearbeiten** ausgeblendet, und oben im Stapel erscheint ein Hinweis, dass er geschlossen ist. Bitten Sie jemanden mit **Spenden bearbeiten**, den Stapel wieder zu öffnen.
+Ist der Stapel [geschlossen](batches.md#closing-and-reopening-a-batch), sind das Eingabefeld und die Links **Bearbeiten** für alle ausgeblendet, die nicht **Spenden bearbeiten** haben, und ein Hinweis oben im Stapel zeigt, dass er geschlossen ist. Bitten Sie jemanden mit **Spenden bearbeiten**, ihn wieder zu öffnen.
 :::
 
 :::tip
-Sie können mehrere Spenden hintereinander erfassen, ohne die Stapelseite zu verlassen. Das Formular wird nach jeder Eingabe zurückgesetzt, sodass Sie einen Stapel Schecks oder Umschläge zügig durcharbeiten können.
+Sie können mehrere Spenden hintereinander erfassen, ohne die Stapelseite zu verlassen. Das Formular wird nach jeder Eingabe zurückgesetzt, sodass Sie einen Stapel Schecks oder Umschläge zügig durchgehen können.
 :::
 
 ## Spenden aus einer CSV-Datei importieren {#importing-donations-from-a-csv-file}
 
-Wenn Ihre Spenden bereits in einer Tabelle vorliegen – zum Beispiel als Export aus einem anderen Spendensystem oder als Zählliste eines Zählteams –, können Sie sie in einen Stapel importieren, statt jede einzeln einzutippen.
+Wenn Ihre Spenden bereits in einer Tabelle vorliegen – zum Beispiel als Export aus einem anderen System für Gaben oder als Zählliste eines Zählteams –, können Sie sie in einen Stapel importieren, statt jede einzeln einzutippen.
 
-1. Öffnen Sie den Stapel und klicken Sie oben auf der Seite auf **Import CSV**. (Die Schaltfläche erscheint, wenn Sie den Stapel ändern dürfen und Ihre Gemeinde mindestens einen [Fonds](funds.md) hat.)
-2. Klicken Sie auf **Choose CSV File** und wählen Sie Ihre Datei aus. Die Datei benötigt eine Kopfzeile, und die Spalten können in beliebiger Reihenfolge stehen:
-   - **Amount** (erforderlich; `Total` funktioniert ebenfalls) -- Währungssymbole und Kommas werden ignoriert, `1.250,00 €` ist also in Ordnung. Der Betrag muss größer als null sein.
-   - **Date** -- Verwenden Sie ein Format wie `2026-10-25` oder `10/25/2026`. Ist das Feld leer, wird das Datum des Stapels verwendet.
-   - **Fund** -- Der Name des Fonds, ohne Berücksichtigung von Groß- und Kleinschreibung abgeglichen. Ist das Feld leer, wird Ihr erster Fonds verwendet.
-   - **Method** -- **Check**, **Cash**, **Card** oder **In-Kind**. Ist das Feld leer, wird **Check** verwendet.
-   - **Check Number** -- Die Scheck-Nummer (oder eine andere Zahlungsangabe).
-   - **Notes**
-   - **Email**, **Name** oder **First Name** und **Last Name** -- Werden verwendet, um den Spender einer Person in Ihrer Datenbank zuzuordnen. Ein Name in der Form „Smith, John“ wird als „John Smith“ gelesen.
-3. Prüfen Sie die Vorschau. Jede Zeile zeigt ihre Zeilennummer, den Spender aus der Datei, die **Match**-Angabe, den Fonds und den Betrag:
-   - Ein Personenname bedeutet, dass der Spender zugeordnet wurde. B1 sucht zuerst nach der E-Mail-Adresse, dann nach dem exakten Namen, und nur wenn genau eine Person passt.
-   - **Not found — anonymous** bedeutet, dass keine eindeutige Zuordnung gefunden wurde. Die Gabe wird anonym importiert, und in den Notizen wird „Imported as:“ mit dem Namen des Spenders ergänzt, damit Sie sie später zuordnen können.
-   - Eine rote Meldung wie **Invalid amount**, **Unknown fund**, **Unknown method** oder **Invalid date** bedeutet, dass diese Zeile übersprungen wird. Korrigieren Sie die Datei und wählen Sie sie erneut aus, um die Zeile einzuschließen.
-4. Klicken Sie auf **Import** (die Schaltfläche zeigt an, wie viele Zeilen importiert werden). Die Spenden werden dem Stapel hinzugefügt.
+1. Öffnen Sie den Stapel und klicken Sie oben auf der Seite auf **CSV importieren**. (Die Schaltfläche erscheint, wenn Sie den Stapel ändern dürfen und Ihre Kirche mindestens einen [Fonds](funds.md) hat.)
+2. Klicken Sie auf **CSV-Datei auswählen** und wählen Sie Ihre Datei. Die Datei braucht eine Kopfzeile, und die Spalten können in beliebiger Reihenfolge stehen:
+   - **Betrag** (erforderlich; `Total` funktioniert ebenfalls) – Währungssymbole und Kommas werden ignoriert, daher ist `$1,250.00` in Ordnung. Der Betrag muss größer als null sein.
+   - **Datum** – Verwenden Sie ein Format wie `2026-10-25` oder `10/25/2026`. Ist das Feld leer, wird das Datum des Stapels verwendet.
+   - **Fonds** – Der Name des Fonds, ohne Berücksichtigung der Groß- und Kleinschreibung. Ist das Feld leer, wird Ihr erster Fonds verwendet.
+   - **Art** – **Scheck**, **Bargeld**, **Karte** oder **Sachspende**. Ist das Feld leer, wird **Scheck** verwendet.
+   - **Scheck-Nr.** – Die Schecknummer (oder ein anderes Zahlungsdetail).
+   - **Notizen**
+   - **E-Mail**, **Name** oder **Vorname** und **Nachname** – dienen dazu, den Spendenden einer Person in Ihrer Datenbank zuzuordnen. Ein Name in der Form „Smith, John“ wird als „John Smith“ gelesen.
+3. Prüfen Sie die Vorschau. Jede Zeile zeigt ihre Zeilennummer, den Spendenden aus der Datei, die **Zuordnung**, den Fonds und den Betrag:
+   - Der Name einer Person bedeutet, dass der Spendende zugeordnet wurde. B1 ordnet zuerst nach E-Mail-Adresse und dann nach dem genauen Namen zu, und nur wenn genau eine Person passt.
+   - **Nicht gefunden – anonym** bedeutet, dass keine eindeutige Zuordnung gefunden wurde. Die Gabe wird als anonym importiert, und „Importiert als:“ mit dem Namen des Spendenden wird ihren Notizen hinzugefügt, damit Sie sie später zuordnen können.
+   - Eine rote Meldung wie **Ungültiger Betrag**, **Unbekannter Fonds**, **Unbekannte Art** oder **Ungültiges Datum** bedeutet, dass diese Zeile übersprungen wird. Korrigieren Sie die Datei und wählen Sie sie erneut aus, um die Zeile einzuschließen.
+4. Klicken Sie auf **Importieren** (die Schaltfläche zeigt, wie viele Zeilen importiert werden). Die Spenden werden dem Stapel hinzugefügt.
 
 :::tip
-Verwenden Sie nach dem Import **Edit** bei einer anonymen Spende, um die richtige Person auszuwählen. Die Notiz „Imported as:“ zeigt Ihnen, von wem die Datei angibt, dass die Spende stammt.
+Verwenden Sie nach dem Import **Bearbeiten** bei einer anonymen Spende, um die richtige Person zu wählen. Die Notiz „Importiert als:“ zeigt Ihnen, von wem die Datei sie angegeben hat.
 :::
 
-## Eine Gabe aus dem Datensatz einer Person erfassen
+## Eine Gabe aus dem Datensatz einer Person erfassen {#logging-a-gift-from-a-persons-record}
 
-Um eine einzelne Gabe ohne Öffnen eines Stapels zu erfassen, öffnen Sie den Datensatz des Spenders unter **People** und klicken Sie auf **Log a gift** (in der Giving-Übersicht oder in der Spendenansicht der Person).
+Um eine einzelne Gabe zu erfassen, ohne einen Stapel zu öffnen, öffnen Sie den Datensatz des Spendenden unter **Personen** und klicken Sie auf **Gabe erfassen** (in der Übersicht der Gaben oder in der Gabenansicht der Person).
 
-1. Legen Sie das **Date** und den **Amount** fest.
-2. Wählen Sie den **Fund** und die **Method** (Check, Cash, Card oder In-Kind) und geben Sie bei Bedarf die **Check #**, die **Last 4 digits** oder das **Item** (bei Sachspenden) ein.
-3. Fügen Sie optional **Notes** hinzu und klicken Sie dann auf **Save**.
+1. Legen Sie **Datum** und **Betrag** fest.
+2. Wählen Sie **Fonds** und **Art** (Scheck, Bargeld, Karte oder Sachspende) und geben Sie bei Bedarf die **Scheck-Nr.**, die **Letzten 4 Ziffern** oder den **Gegenstand** (bei Sachspenden) ein.
+3. Fügen Sie optional **Notizen** hinzu und klicken Sie dann auf **Speichern**.
 
-Die Gabe wird dem Stapel für dieses Datum zugeordnet. Existiert für das Datum noch kein Stapel, wird automatisch einer angelegt, der nach dem Datum benannt ist.
+Die Gabe wird für dieses Datum im Stapel gespeichert. Gibt es für dieses Datum noch keinen Stapel, wird automatisch einer angelegt, der nach dem Datum benannt ist.
 
-## Eine Spende auf mehrere Fonds aufteilen
+## Eine Spende auf mehrere Fonds aufteilen {#splitting-a-donation-across-multiple-funds}
 
-Manchmal gibt ein Spender in einer Transaktion an mehr als einen Fonds. So gehen Sie dabei vor:
+Manchmal gibt ein Spendender in einer Transaktion an mehr als einen Fonds. So gehen Sie dabei vor:
 
-1. Klicken Sie unterhalb des Erfassungsfelds auf den Link **full donation editor** (oder klicken Sie bei einer vorhandenen Spende in der Zeile auf **Edit**).
-2. Tragen Sie im vollständigen Editor Beträge für verschiedene Fonds ein. Die Gesamtsumme wird automatisch aus den einzelnen Fondsbeträgen berechnet.
-3. Klicken Sie auf **Save**, um die Spende zu aktualisieren.
+1. Klicken Sie unterhalb des Eingabefelds auf den Link zum **vollständigen Spendeneditor** (oder auf **Bearbeiten** in einer bestehenden Spendenzeile). Eine neue Gabe beginnt mit dem Datum des Stapels.
+2. Geben Sie im vollständigen Editor einen Betrag und einen Fonds ein und klicken Sie dann auf **Weitere hinzufügen**, um einen weiteren Fonds und Betrag hinzuzufügen. Die Summe wird aus den einzelnen Fondsbeträgen berechnet.
+3. Klicken Sie auf **Speichern**. Eine Gabe ohne Betrag in einem Fonds wird nicht gespeichert; der Editor fordert dann einen Betrag größer als null.
 
 :::info
-Das Aufteilen von Spenden auf mehrere Fonds kommt häufig vor, wenn ein Spender einen einzigen Scheck für mehrere Zwecke ausstellt, etwa für den Allgemeinen Fonds und für Missionsarbeit.
+Das Aufteilen von Spenden auf mehrere Fonds ist üblich, wenn ein Spendender einen einzigen Scheck für mehrere Zwecke ausstellt, etwa Allgemeiner Fonds und Mission.
 :::
 
-## Spenden bearbeiten oder entfernen
+## Spenden bearbeiten oder entfernen {#editing-or-removing-donations}
 
-Um eine Spende zu bearbeiten, klicken Sie in der Zeile der Spende im Stapel auf die Schaltfläche **Edit**. Sie können das Datum, den Betrag, den Fonds, die Zahlungsart (Check, Cash, Card oder In-Kind) oder andere Angaben ändern. Bei einer Sachspende beschriftet der Editor das Detailfeld mit **Item**, damit Sie beschreiben können, was gegeben wurde. Klicken Sie auf **Save**, wenn Sie fertig sind.
+Um eine Spende zu bearbeiten, klicken Sie in ihrer Zeile im Stapel auf die Schaltfläche **Bearbeiten**. Sie können Datum, Betrag, Fonds, Zahlungsart (Scheck, Bargeld, Karte oder Sachspende) oder andere Angaben ändern. Bei einer Sachspende beschriftet der Editor das Detailfeld als **Gegenstand**, damit Sie beschreiben können, was gegeben wurde. Klicken Sie auf **Speichern**, wenn Sie fertig sind.
 
 :::tip
-Die Zeile unter dem Stapelnamen oben auf der Seite wird automatisch aktualisiert und zeigt das Stapeldatum, die Anzahl der Gaben und die Gesamtsumme in Dollar an, während Sie Einträge hinzufügen oder ändern. Nutzen Sie dies, um mit Ihrem Einzahlungsbeleg abzugleichen.
+Die Zeile unter dem Stapelnamen oben auf der Seite aktualisiert sich automatisch und zeigt das Datum des Stapels, die Anzahl der Gaben und den kombinierten Geldbetrag, während Sie Einträge hinzufügen oder ändern. Nutzen Sie sie, um mit Ihrem Einzahlungsbeleg abzugleichen.
 :::
 
-## Eine Spende zurückerstatten
+## Eine Spende erstatten {#refunding-a-donation}
 
-Wenn ein Spender versehentlich belastet wurde oder sein Geld zurückverlangt, können Sie eine abgeschlossene Spende direkt aus ihrem Bearbeitungsbildschirm erstatten – Sie müssen dafür nicht in das Dashboard Ihres Zahlungsdienstleisters wechseln.
+Wurde ein Spendender irrtümlich belastet oder bittet er um sein Geld zurück, können Sie eine abgeschlossene Spende direkt aus ihrem Bearbeitungsbildschirm erstatten – ohne zum Dashboard Ihres Zahlungsgateways zu wechseln.
 
-1. Öffnen Sie die Spende und klicken Sie auf **Edit**.
-2. Klicken Sie unten im Formular neben **Delete** auf die Schaltfläche **Refund**.
-3. Bestätigen Sie den Dialog: „Refund this donation in full through the payment gateway? This cannot be undone.“
+1. Öffnen Sie die Spende und klicken Sie auf **Bearbeiten**.
+2. Klicken Sie unten im Formular neben **Löschen** auf die Schaltfläche **Erstatten**.
+3. Bestätigen Sie den Dialog: „Diese Spende vollständig über das Zahlungsgateway erstatten? Dies kann nicht rückgängig gemacht werden.“
 
-Die Spende wird über den ursprünglichen Zahlungsdienstleister vollständig erstattet und in Ihren Spendenlisten als **Refunded** markiert.
+Die Spende wird vollständig über das ursprüngliche Zahlungsgateway erstattet und in Ihren Spendenlisten als **Erstattet** markiert.
 
 :::warning
-Erstattungen sind nur vollständige Erstattungen – aus B1 Admin ist keine Teilerstattung möglich. Eine Erstattung kann außerdem nach der Bestätigung nicht rückgängig gemacht werden.
+Es gibt nur vollständige Erstattungen – eine Teilerstattung ist in B1 Admin nicht möglich. Eine Erstattung kann nach der Bestätigung auch nicht rückgängig gemacht werden.
 :::
 
 :::info
-Die Schaltfläche **Refund** erscheint nur bei Spenden, die online bezahlt wurden (also eine Transaktion beim Zahlungsdienstleister haben) und sich noch im Status **Complete** befinden. Manuell erfasste Spenden (Bargeld, Scheck) haben keine Transaktion beim Zahlungsdienstleister, die erstattet werden könnte – bearbeiten oder löschen Sie diese stattdessen.
+Die Schaltfläche **Erstatten** erscheint nur bei Spenden, die online bezahlt wurden (sie haben eine Transaktion im Gateway) und sich noch im Status **Abgeschlossen** befinden. Manuell erfasste Spenden (Bargeld, Scheck) haben keine Gateway-Transaktion, die erstattet werden könnte – bearbeiten oder löschen Sie diese stattdessen.
 :::
 
-## Nächste Schritte
+## Eine Quittung für eine einzelne Gabe drucken {#printing-a-receipt-for-one-gift}
 
-- Prüfen Sie Ihre Einträge mit den [Spendenberichten](donation-reports.md), um ihre Richtigkeit zu bestätigen
-- Erstellen Sie zum Jahresende [Spendenbescheinigungen](giving-statements.md) für Ihre Spender
+Wenn jemand einen Scheck abgibt, für eine Veranstaltung oder ein T-Shirt bezahlt oder eine Gastorganisation eine Spende mitbringt, können Sie eine Quittung nur für diese Gabe drucken – statt für einen ganzen Stapel oder eine Jahresbescheinigung.
+
+1. Öffnen Sie den Stapel, der die Spende enthält.
+2. Klicken Sie in der Zeile der Spende neben **Bearbeiten** auf **Quittung**. Sie können auch unten im Formular „Spende bearbeiten“ auf **Quittung** klicken.
+3. Klicken Sie auf **Drucken** oder auf **Schließen**, um zurückzukehren.
+
+Die Quittung verwendet dasselbe Layout wie die Spendenbescheinigung: Ihre Kirche und den Spendenden (oder „Anonym“), Datum und Art der Gabe, jeden Fonds und Betrag, die Notiz, Ihren Gebehinweis und den offiziellen Belegblock, sofern Sie ein **Bescheinigungsformat** festgelegt haben (siehe [Spendenbescheinigungen](giving-statements.md)). Die Belegnummer in diesem Block ist die ID der Spende.
+
+:::info
+Der Hinweis „keine Waren oder Dienstleistungen“ wird nur gedruckt, wenn alle Fonds der Gabe als steuerlich absetzbar markiert sind. Ist ein Teil der Gabe an einen nicht absetzbaren Fonds gegangen, etwa für eine Veranstaltungsgebühr oder einen Kauf, lässt die Quittung diesen Hinweis weg, damit sie als Zahlung und nicht als Spende gelesen wird.
+:::
+
+:::tip
+Online-Gaben erhalten bereits automatisch eine Dankes-E-Mail; die Quittung ist vor allem für manuell eingetragene Gaben nützlich.
+:::
+
+## Wie es weitergeht {#next-steps}
+
+- Prüfen Sie Ihre Einträge mit den [Spendenberichten](donation-reports.md), um die Richtigkeit zu kontrollieren
+- Erstellen Sie zum Jahresende [Spendenbescheinigungen](giving-statements.md) für Ihre Spendenden
