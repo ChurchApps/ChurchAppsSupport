@@ -32,9 +32,13 @@ Recording donations in B1 Admin is done through the Batches system. You create a
 ## Entering Individual Donations
 
 1. On the batch detail page, the donation entry panel appears beside the donations list. Under **Select Person or Anonymous**, type the donor's name in the search field to find them, or click **Anonymous**. (Clicking **Add Donation** at the top of the page jumps to this panel.)
-2. After selecting a person, the entry form shows fields for **Date** (starting on the batch date), **Method** (Check, Cash, Card, or In-Kind), **Fund** (shown when your church has more than one fund), **Notes**, **Amount**, and **Check #** (or **Last 4 digits** for card gifts, or **Item** to describe an in-kind gift; cash gifts have no detail field). Click **Change** next to the donor's name to pick someone else.
+2. After selecting a person, the entry form shows fields for **Date** (starting on the batch date), **Method** (Check, Cash, Card, or In-Kind), **Fund** (shown when your church has more than one fund), **Memo (prints on statement)**, **Notes (internal)**, **Amount**, and **Check #** (or **Last 4 digits** for card gifts, or **Item** to describe an in-kind gift; cash gifts have no detail field). Click **Change** next to the donor's name to pick someone else.
 3. Fill in the details and click **Add Donation** (or press Enter). If the amount is empty or zero, the form asks you to enter an amount greater than zero instead of saving.
-4. The donation is added to the donations list, and the form resets so you can enter the next one. The date, method, fund, and notes stay as you set them, so a stack of similar checks only needs the donor, amount, and check number.
+4. The donation is added to the donations list, and the form resets so you can enter the next one. The date, method, fund, memo, and notes stay as you set them, so a stack of similar checks only needs the donor, amount, and check number.
+
+:::tip Memo or Notes?
+The **Memo** is printed on the donor's giving statement and receipt, beside the gift. Use it for what the donor should see, such as the purpose of an earmarked gift ("Youth trip"). **Notes** are for your staff only and are never printed. When someone gives online, whatever they type in the memo box on the giving form is saved as the gift's memo.
+:::
 
 :::info
 If the batch has been [closed](batches.md#closing-and-reopening-a-batch), the entry panel and **Edit** links are hidden for anyone without **Edit Donations**, and a notice at the top of the batch says it is closed. Ask someone with **Edit Donations** to reopen it.
@@ -91,7 +95,7 @@ Splitting donations across funds is common when a donor writes a single check de
 
 ## Editing or Removing Donations
 
-To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method (Check, Cash, Card, or In-Kind), or any other detail. For an in-kind gift, the editor labels the detail field **Item** so you can describe what was given. Click **Save** when you are done.
+To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method (Check, Cash, Card, or In-Kind), or any other detail, including the **Memo** and **Notes**. For an in-kind gift, the editor labels the detail field **Item** so you can describe what was given. Click **Save** when you are done.
 
 :::tip
 The line under the batch name at the top of the page updates automatically to show the batch date, the number of gifts, and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
@@ -123,7 +127,7 @@ When someone hands in a check, pays for an event or t-shirt, or a visiting organ
 2. Click **Receipt** beside **Edit** on the donation's row. You can also click **Receipt** at the bottom of the Edit Donation form.
 3. Click **Print**, or **Close** to go back.
 
-The receipt uses the same layout as the giving statement: your church and the donor (or "Anonymous"), the gift's date and method, each fund and amount, the note, your Giving Note, and the official receipt block if you have set a **Statement format** (see [Giving Statements](giving-statements.md)). The receipt number in that block is the donation's ID.
+The receipt uses the same layout as the giving statement: your church and the donor (or "Anonymous"), the gift's date and method, each fund and amount, the gift's memo (if it has one), your Giving Note, and the official receipt block if you have set a **Statement format** (see [Giving Statements](giving-statements.md)). The receipt number in that block is the donation's ID.
 
 :::info
 The "no goods or services" wording is only printed when every fund on the gift is marked tax-deductible. If any part of the gift went to a fund that is not tax-deductible, such as an event fee or a purchase, the receipt leaves that wording off so it reads as a payment rather than a charitable gift.

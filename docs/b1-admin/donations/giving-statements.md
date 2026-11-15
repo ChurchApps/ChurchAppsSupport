@@ -54,6 +54,12 @@ Run your statements early in January while your records are fresh. Double-check 
 Giving statements only include donations assigned to funds that have the **Tax Deductible** setting enabled. If a fund is not marked as tax-deductible, its donations will not appear on the statement. You can manage this setting on the [Funds](funds.md) page.
 :::
 
+## Gift Memos on Statements
+
+Each statement lists every gift with its date, method, fund, and amount. When at least one gift on a statement has a **Memo**, a **Memo** column is added after the fund so the donor can see what each gift was for. Statements with no memos keep the four-column layout. A gift's **Notes** are internal and never appear on a statement. The CSV files in the ZIP include the memo as their last column.
+
+To put a purpose on the statement, enter it as the gift's **Memo** when [recording the donation](recording-donations.md), or give it its own [fund](funds.md) if you want it totaled separately.
+
 ## Receipt Formats for Canada, Australia and New Zealand
 
 Churches outside the United States can switch the statement to their country's official receipt layout. Click **Statement format** at the top of the Giving Statements page (or go to **Settings** and open the **Giving** section), and set **Statement Format** (which starts on **Standard**) to **Canada - CRA official receipt**, **Australia** or **New Zealand**, then fill in the fields that appear: your registration number (**CRA Registration Number**, **ABN**, or **NZ Charity Registration Number**), **Organization Address**, **Authorized Signatory Name**, and for Canada the **City of Issue**. Click **Save**.
