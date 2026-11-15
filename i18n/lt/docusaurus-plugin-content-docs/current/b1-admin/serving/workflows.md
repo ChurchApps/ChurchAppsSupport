@@ -115,7 +115,7 @@ Pasirinkite **Įrašyti lankomumą** ir spustelėkite **Pasirinkti grupę**, kad
 
 Pasirinkite **Pranešti asmeniui**, spustelėkite **Pasirinkti asmenį** ir pasirinktinai įveskite **Žinutę**. Kai kortelė patenka į žingsnį, tas asmuo gauna el. laišką ir B1 pranešimą, kuriame nurodomas kortelėje esančio asmens vardas, darbo eigos ir žingsnio pavadinimai, jūsų žinutė ir nuoroda atidaryti kortelę. Tai naudinga, norint įspėti darbuotoją ar tarnystės vadovą -- pavyzdžiui, *„Pranešti pastoriui, kai kas nors pasiekia Narystės pokalbio žingsnį.“* Kortelės istorijoje įrašoma **Pranešta**, o po to -- asmens vardas.
 
-### SMS siuntimas
+### SMS siuntimas {#sending-a-text}
 
 Pasirinkite **Siųsti SMS** ir įveskite **SMS žinutę** (iki 1 600 simbolių). Kai kortelė patenka į žingsnį, asmuo gauna šią SMS žinutę savo mobiliajame telefone. Norėdami individualizuoti žinutę, spustelėkite žetoną po žinutės lauku -- **Vardas**, **Pavardė**, **Rodomas vardas** arba **Bažnyčios pavadinimas** -- ir žymeklio vietoje bus įterpta `{{firstName}}`, `{{lastName}}`, `{{displayName}}` arba `{{churchName}}`. Kiekvienas jų užpildomas asmens duomenimis, kai SMS išsiunčiama.
 
@@ -149,7 +149,7 @@ Yra keletas būdų įtraukti žmones į lentą:
 
 Pridėjus asmenį rankiniu būdu arba su žingsnio veiksmu **Pridėti į darbo eigą**, jis niekada negaus antros atviros kortelės toje pačioje darbo eigoje. Jei asmuo jau turi atvirą kortelę, jis praleidžiamas (masinio pridėjimo metu nauja kortelė sukuriama tik tiems, kurie jos neturi). Uždarius kortelę, asmenį galima pridėti iš naujo. Paleidikliai vadovaujasi savo nustatymu **Tik vieną kartą kiekvienam asmeniui**.
 
-## Darbas su lenta
+## Darbas su lenta {#working-the-board}
 
 Atidarykite darbo eigą, kad pamatytumėte jos lentą. Kiekviena kortelė rodo asmens vardą, kam ji priskirta, ir termino ar būsenos žymę (**Pradelsta** arba **Atidėta**). Žingsnio stulpelyje taip pat rodomi maži ženkleliai apie automatinius veiksmus, kuriuos jis vykdo, ir jo maršrutavimo pastabos, todėl galite greitai matyti, kaip kortelės juda.
 
@@ -174,7 +174,7 @@ Pastabos išsaugomos kartu su kortele. Kiekvienas, kas gali atidaryti kortelę -
 
 Pažymėkite kelių kortelių žymimuosius langelius, kad veiktumėte su jomis kartu. Norėdami pažymėti visas žingsnio korteles iš karto, pažymėkite langelį **Pažymėti visas** tame žingsnio stulpelio antraštėje; dar kartą pažymėjus, žymėjimas panaikinamas. Pasirodo įrankių juosta, leidžianti visoms pažymėtoms kortelėms iš karto **Užbaigti**, **Atidėti**, **Priskirti** (perskirti) arba **Perkelti į…** kitą žingsnį.
 
-## Maršrutavimas su rezultatais ir sąlygomis
+## Maršrutavimas su rezultatais ir sąlygomis {#routing-cards-with-outcomes-and-conditions}
 
 Maršrutavimas nustato, kur kortelė keliauja, kai palieka žingsnį. Atidarykite žingsnio redaktorių, kad sukonfigūruotumėte dviejų tipų maršrutavimą.
 
@@ -202,7 +202,7 @@ Jei maršruto sąlygų dėl kokios nors priežasties negalima patikrinti, tas ma
 Lentoje kiekvienas žingsnio stulpelis rodo trumpas maršrutavimo pastabas -- pavyzdžiui, rezultato žymą arba „jei atitinka“, po kurios rodoma rodyklė į paskirties žingsnį ar darbo eigą.
 :::
 
-## Visiškai automatiniai žingsniai
+## Visiškai automatiniai žingsniai {#fully-automated-steps}
 
 Galite padaryti, kad žingsnis veiktų visiškai savarankiškai, be nieko, kas jį tvarkytų. Suteikite žingsniui jo **automatinius veiksmus** ir pridėkite **automatinį maršrutą** (be sąlygų), nukreiptą į kitą žingsnį. Kai kortelė patenka į žingsnį, veiksmai įvykdomi, o tada maršrutas ją iš karto perkelia -- kortelė praeina tiesiai pro šalį.
 
@@ -210,7 +210,7 @@ Galite padaryti, kad žingsnis veiktų visiškai savarankiškai, be nieko, kas j
 Tai derinkite su **Laukti**: *Siųsti sveikinimo laišką → Laukti 3 dienas → automatiškai pereiti į žingsnį „Asmeninis skambutis“.* El. laiškas ir laikas tvarkomi už jus, o savanoris kortelę pamato tik tada, kai atėjo metas asmeniniam kontaktui.
 :::
 
-## Paleidikliai
+## Paleidikliai {#triggers}
 
 Paleidikliai automatiškai pridedia žmones į darbo eigą, kai įvyksta tam tikras įvykis, todėl niekada nereikia pridėti kortelių rankiniu būdu. Darbo eigos lentoje spustelėkite skirtuką **Paleidikliai**, tada **Pridėti paleidiklį**. Yra du tipai:
 
@@ -223,7 +223,7 @@ Suveikia tą akimirką, kai B1 pasikeičia įrašas. Pasirinkite įvykį, tada p
 - **Grupė · Narys prisijungė** / **Grupė · Sukurta**.
 - **Forma · Pateikta** -- pridėti bet ką, kas pateikia pasirinktą formą (puikiai tinka kortelei „Aš naujas“ ar „Prisijungti“).
 
-### Tvarkaraščio paleidikliai
+### Tvarkaraščio paleidikliai {#schedule-triggers}
 
 Veikia periodiškai -- kasdien, kas savaitę, kas mėnesį ar kasmet -- pagal nustatytų sąlygų rinkinį. Naudokite juos laiku pagrįstam sekimui, pavyzdžiui, *visiems, kurių gimtadienis šiandien* (Gimimo data · Mėnesio diena = **Šiandien**, o mėnuo atitinka **Einamąjį mėnesį**) arba *mėnesiniam* patikrinimui. Net jei **Tik vieną kartą kiekvienam asmeniui** neįjungta, tvarkaraščio paleidiklis to paties asmens nepridės dar kartą per vieną pakartojimo laikotarpį (dieną, savaitę, mėnesį ar metus, priklausomai nuo to, kaip dažnai jis vykdomas).
 
@@ -238,7 +238,7 @@ Bet kuriam paleidikliui taip pat galite nustatyti:
 Porą **Forma · Pateikta** paleidiklio su šablonu **Naujo lankytojo sekimas**, kad jūsų forma „Connect Card“ ar „Aš naujas“ taptų automatiniu sekimo procesu.
 :::
 
-## Tarnystės paskyrimų patvirtinimai
+## Tarnystės paskyrimų patvirtinimai {#serving-assignment-confirmations}
 
 Ypatinga darbo eigos rūšis gali sekti [tarnystės užklausas](./plans.md#assigning-team-members), kol kiekvienas savanoris priims ar atmes paskyrimą. Vietoj žmonių kiekviena šios lentos kortelė seka **vieną paskyrimą** -- vieną asmenį vienoje pareigoje viename plane. Du vaidmenys ar dvi tarnystės tam pačiam asmeniui turi atskiras korteles. Tai pasirinktinis veiksmas: nieko nekeičiama plane, kol jo nustatymuose nepasirenkama patvirtinimo darbo eiga.
 

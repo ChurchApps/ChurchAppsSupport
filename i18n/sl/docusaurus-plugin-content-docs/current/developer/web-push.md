@@ -11,7 +11,7 @@ ChurchApps spletne aplikacije pošiljajo potisna obvestila prek W3C Web Push API
 
 </div>
 
-## Kdaj se sproži potisno obvestilo
+## Kdaj se sproži potisno obvestilo {#when-push-fires}
 
 Potisno obvestilo je ena stopnja v enem prehodu dostave znotraj `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): najprej vrata nastavitev v aplikaciji, nato se v istem prehodu poskusita dostava prek socketa in potisno obvestilo (vsaka za svojimi vrati nastavitev), nazadnje e-pošta. Prejemnik, ki je kategorijo utišal, potisnega obvestila nikoli ne prejme. Uspešna dostava prek socketa potisnih obvestil ne ustavi več. Vsaka vrsta obvestila se zdaj obnaša tako kot zasebna sporočila vedno, zato nameščena PWA v ozadju še vedno prikaže obvestilo na ravni OS, tudi če je dostava prek socketa že uspela. Podvojene pasice na strani odjemalca odpravi service worker (glej [Zahteva za service worker](#service-worker-requirement)). Planirani opomniki in množična obvestila, ki jih sproži osebje, začnejo neposredno na stopnji potisnih obvestil in preskočijo korak socketa. E-pošta ostaja vezana na časovnik in eskalira neprebrane vrstice po lastnem urniku, ne kot del tega prehoda.
 
@@ -103,7 +103,7 @@ Vedenja, ki jih odjemalci dobijo brezplačno:
 - **Zaznavanje samostojne PWA**: `isStandalone()` gostiteljem omogoča, da pozive za potisna obvestila na iOS-u omejijo na primer »uporabnik je PWA namestil na začetni zaslon« (iOS dovoljuje potisna obvestila samo iz nameščenih PWA).
 - **Ponovna prijava ob zamenjavi cerkve**: `refreshEnrollment()` ponovno pošlje obstoječo brskalniško naročnino za novi `userChurch`, ne da bi uporabnika ponovno vprašal. Pokličite ga iz obdelovalnika spremembe `userChurch`.
 
-### Zahteva za service worker
+### Zahteva za service worker {#service-worker-requirement}
 
 `PushManager` brskalnika razreši naročnino samo, če je service worker registriran na konfiguriranem obsegu. ChurchApps PWA za generiranje service workerja uporabljajo [Serwist](https://serwist.dev/) (aplikacije Next.js) ali workbox. Ker strežnik zdaj vedno poskuša poslati potisno obvestilo poleg dostave prek socketa (glej [Kdaj se sproži potisno obvestilo](#when-push-fires)), je service worker točka za odpravo podvajanja. Njegov obdelovalnik `push` mora zatreti `showNotification`, kadar je odprt in viden odjemalec že na globinski povezavi obvestila. Značko aplikacije pa mora vedno posodobiti, ne glede na to, ali je pasica prikazana:
 

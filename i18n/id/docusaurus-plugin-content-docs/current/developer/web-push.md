@@ -11,7 +11,7 @@ Aplikasi web ChurchApps mengirimkan notifikasi push melalui W3C Web Push API. Me
 
 </div>
 
-## Kapan push dikirim
+## Kapan push dikirim {#when-push-fires}
 
 Push merupakan salah satu tahap dalam satu alur pengiriman di dalam `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Alurnya: gerbang preferensi dalam aplikasi, lalu pengiriman melalui socket dan push yang dicoba dalam satu alur yang sama (masing-masing memiliki gerbang preferensinya sendiri), lalu email. Penerima yang telah membisukan kategori tertentu tidak akan pernah menerima push. Keberhasilan pengiriman socket tidak lagi menghentikan push. Setiap jenis notifikasi kini berperilaku seperti pesan pribadi sejak awal, sehingga PWA yang terpasang dan berjalan di latar belakang tetap menampilkan notifikasi tingkat OS meskipun pengiriman socket sudah berhasil. Spanduk ganda ditangani di sisi klien oleh service worker (lihat [Persyaratan service worker](#service-worker-requirement)). Pengingat terjadwal dan siaran yang dipicu staf langsung dimulai dari tahap push dan melewati tahap socket sepenuhnya. Email tetap digerakkan oleh timer, yang meningkatkan baris belum dibaca sesuai jadwalnya sendiri dan tidak menjadi bagian dari alur ini.
 
@@ -103,7 +103,7 @@ Perilaku yang didapat konsumen secara otomatis:
 - **Deteksi PWA mandiri**: `isStandalone()` memungkinkan host membatasi permintaan push di iOS hanya untuk pengguna yang telah memasang PWA ke layar utama (iOS hanya mengizinkan push dari PWA yang terpasang).
 - **Daftar ulang saat berpindah gereja**: `refreshEnrollment()` mengirim ulang langganan browser yang ada ke `userChurch` yang baru tanpa meminta izin lagi. Panggil fungsi ini dari handler perubahan `userChurch`.
 
-### Persyaratan service worker
+### Persyaratan service worker {#service-worker-requirement}
 
 `PushManager` di browser hanya akan menghasilkan langganan jika service worker terdaftar pada cakupan yang dikonfigurasi. PWA ChurchApps menggunakan [Serwist](https://serwist.dev/) (aplikasi Next.js) atau workbox untuk membuat service worker. Karena server kini selalu mencoba push bersamaan dengan pengiriman socket (lihat [Kapan push dikirim](#when-push-fires)), service worker menjadi titik deduplikasi. Handler `push`-nya harus menekan `showNotification` ketika klien yang sedang fokus atau terlihat sudah berada di tujuan tautan dalam notifikasi, tetapi harus selalu memperbarui lencana aplikasi, baik spanduk ditampilkan maupun tidak:
 

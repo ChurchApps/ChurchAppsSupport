@@ -11,7 +11,7 @@ Aplicațiile web ChurchApps trimit notificări push prin API-ul Web Push al W3C,
 
 </div>
 
-## Când se trimit notificările push
+## Când se trimit notificările push {#when-push-fires}
 
 Push este un nivel într-o singură etapă de livrare din `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): mai întâi o verificare a preferințelor pentru aplicație, apoi livrarea prin socket și push, încercate în aceeași etapă (fiecare cu propria verificare a preferințelor), apoi e-mail. Un destinatar care a dezactivat categoria nu ajunge niciodată la push. Livrarea prin socket reușită nu mai oprește trimiterea push. Fiecare tip de notificare se comportă acum ca mesajele private, astfel încât o PWA instalată, aflată în fundal, afișează în continuare o notificare la nivelul sistemului de operare, chiar dacă livrarea prin socket a reușit deja. Bannerele duplicate sunt eliminate pe client de service worker (vezi [Cerința pentru service worker](#service-worker-requirement)). Reamintirile programate și transmiterile inițiate de personal pornesc direct de la nivelul push, fără pasul prin socket. E-mailul rămâne controlat de un temporizator, care escaladează rândurile necitite după propriul program, nu ca parte a acestei etape.
 
@@ -103,7 +103,7 @@ Comportamentele pe care consumatorii le primesc gratuit:
 - **Detectarea PWA în mod standalone**: `isStandalone()` permite aplicațiilor gazdă să condiționeze solicitările push de pe iOS de faptul că utilizatorul a instalat PWA-ul pe ecranul principal (pe iOS, push este permis doar din PWA-urile instalate).
 - **Reînscriere la schimbarea bisericii**: `refreshEnrollment()` retrimite abonamentul existent din browser către noul `userChurch`, fără a solicita din nou utilizatorul. Apelați-o din handlerul de schimbare a `userChurch`.
 
-### Cerința pentru service worker
+### Cerința pentru service worker {#service-worker-requirement}
 
 `PushManager` din browser rezolvă un abonament doar dacă există un service worker înregistrat la scope-ul configurat. PWA-urile ChurchApps folosesc [Serwist](https://serwist.dev/) (aplicații Next.js) sau workbox pentru generarea service worker-ului. Deoarece serverul încearcă acum întotdeauna push alături de livrarea prin socket (vezi [Când se trimit notificările push](#when-push-fires)), service worker-ul este punctul de deduplicare. Handlerul său `push` trebuie să suprime `showNotification` atunci când un client focalizat sau vizibil se află deja la ținta de deep link a notificării, dar trebuie să actualizeze întotdeauna insigna aplicației, indiferent dacă bannerul a fost afișat:
 

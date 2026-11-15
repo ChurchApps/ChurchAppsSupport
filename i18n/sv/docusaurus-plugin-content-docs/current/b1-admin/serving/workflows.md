@@ -115,7 +115,7 @@ Välj **Registrera närvaro** och klicka på **Välj grupp** för att välja den
 
 Välj **Meddela person**, klicka på **Välj person** och skriv eventuellt ett **Meddelande**. När ett kort kommer in i steget får den personen ett e-postmeddelande och ett B1-meddelande med namnet på personen på kortet, arbetsflödets och stegets namn, ditt meddelande och en länk för att öppna kortet. Använd det för att ge en medarbetare eller ledare för en tjänst en förvarning -- till exempel *"Meddela pastorn när någon når steget Medlemsintervju."* Kortets historik registrerar **Meddelad** följt av personens namn.
 
-### Skicka ett sms
+### Skicka ett sms {#sending-a-text}
 
 Välj **Skicka sms** och skriv **Sms-meddelandet** (upp till 1 600 tecken). När ett kort kommer in i steget får personen sms:et i sin mobiltelefon. För att personifiera meddelandet klickar du på en bricka under meddelanderutan -- **Förnamn**, **Efternamn**, **Visningsnamn** eller **Kyrkans namn** -- för att infoga `{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}` vid markören. Varje fält fylls i med personens uppgifter när sms:et skickas.
 
@@ -149,7 +149,7 @@ Det finns flera sätt att lägga till personer på en tavla:
 
 Att lägga till någon för hand, eller med en stegåtgärd **Lägg till i arbetsflöde**, ger aldrig en andra öppen kort på samma arbetsflöde. Om de redan har ett öppet kort hoppas de över (vid massvis tillägg får bara de personer utan kort nya kort). När deras kort har stängts kan du lägga till dem igen. Utlösare följer i stället sin egen inställning **Endast en gång per person**.
 
-## Arbeta med tavlan
+## Arbeta med tavlan {#working-the-board}
 
 Öppna ett arbetsflöde för att se dess tavla. Varje kort visar personens namn, vem det är tilldelat, och en förfallodatum- eller statusbricka (**Försenad** eller **Pausat**). En stegkolumn visar också små märken för eventuella automatiska åtgärder den kör och annotationer för dess routing, vilket ger dig en överblick över hur kort flödar.
 
@@ -174,7 +174,7 @@ Anteckningar sparas med kortet. Alla som kan öppna kortet -- inklusive personen
 
 Markera kryssrutorna på flera kort för att agera på dem tillsammans. För att välja alla kort i ett steg på en gång, markera rutan **Markera alla** i stegets kolumnrubrik; markera den igen för att avmarkera. En verktygsfält visas där du kan **Slutför**, **Pausa**, **Tilldela** (tilldela om) eller **Flytta till…** ett annat steg för alla valda kort samtidigt.
 
-## Routing av kort med utfall och villkor
+## Routing av kort med utfall och villkor {#routing-cards-with-outcomes-and-conditions}
 
 Routing styr vart ett kort går när det lämnar ett steg. Öppna ett stegs redigerare för att konfigurera två typer av routing.
 
@@ -202,7 +202,7 @@ Om ett routevillkor av någon anledning inte kan kontrolleras behandlas routen s
 På tavlan visar varje stegkolumn små annotationer som beskriver dess routing -- till exempel en utfallsetikett eller "om den matchar" följt av en pil till målsteget eller arbetsflödet.
 :::
 
-## Helt automatiserade steg
+## Helt automatiserade steg {#fully-automated-steps}
 
 Du kan låta ett steg köra helt av sig självt, utan att någon arbetar med det. Ge steget dess **automatiska åtgärder** och lägg till en **automatisk route** (utan villkor) som pekar på nästa steg. När ett kort kommer in körs åtgärderna, och sedan för routen det vidare omedelbart -- kortet går rakt igenom.
 
@@ -210,7 +210,7 @@ Du kan låta ett steg köra helt av sig självt, utan att någon arbetar med det
 Kombinera detta med **Vänta**: *Skicka välkomstmejl → Vänta 3 dagar → gå automatiskt vidare till steget "Personligt samtal".* E-posten och tidpunkten sköts åt dig, och en volontär ser kortet först när det är dags för den mänskliga kontakten.
 :::
 
-## Utlösare
+## Utlösare {#triggers}
 
 Utlösare lägger till personer i ett arbetsflöde automatiskt när något händer, så att du aldrig behöver lägga till kort för hand. På en arbetsflödestavla klickar du på fliken **Utlösare** och sedan på **Lägg till utlösare**. Det finns två typer:
 
@@ -223,7 +223,7 @@ Aktiveras så snart en post ändras i B1. Välj händelsen och lägg eventuellt 
 - **Grupp · Medlem gick med** / **Grupp · Skapad**.
 - **Formulär · Inskickat** -- lägg till alla som skickar in ett valt formulär (perfekt för ett kort "Jag är ny" eller "Kontakta oss").
 
-### Schemalagda utlösare
+### Schemalagda utlösare {#schedule-triggers}
 
 Körs återkommande -- dagligen, veckovis, månadsvis eller årligen -- mot en uppsättning villkor. Använd dem för tidsbaserad kontakt, till exempel *alla vars födelsedag är idag* (Födelsedatum · Dag i månaden = **Idag**, med månaden matchad mot **Innevarande månad**) eller en *månatlig* avstämning. Även utan **Endast en gång per person** lägger en schemalagd utlösare inte till samma person igen inom en upprepningsperiod (en dag, vecka, månad eller år, beroende på hur ofta den körs).
 
@@ -238,7 +238,7 @@ För alla utlösare kan du dessutom ställa in:
 Kombinera en utlösare **Formulär · Inskickat** med mallen **Uppföljning av nya besökare** för att göra ditt kort "Kontakta oss" eller "Jag är ny" till en automatisk uppföljningsprocess.
 :::
 
-## Bekräftelser av tjänsteuppdrag
+## Bekräftelser av tjänsteuppdrag {#serving-assignment-confirmations}
 
 En speciell typ av arbetsflöde kan följa upp [tjänsteförfrågningar](./plans.md#assigning-team-members) tills varje volontär accepterar eller avböjer. I stället för personer spårar varje kort på denna tavla **ett uppdrag** -- en person på en position i en plan. Två roller eller två gudstjänster för samma person får separata kort. Detta är frivilligt: ingenting ändras för en plan förrän du väljer ett bekräftelsearbetsflöde i dess inställningar.
 

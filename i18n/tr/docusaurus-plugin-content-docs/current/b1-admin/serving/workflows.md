@@ -115,7 +115,7 @@ E-posta gönderildiğinde kartın geçmişine **E-posta gönderildi** kaydedilir
 
 **Kişiye bildir**'i seçin, **Kişi seç**'e tıklayın ve isterseniz bir **Mesaj** yazın. Bir kart adıma girdiğinde, o kişi kartta yer alan kişinin adı, iş akışı ve adım adları, mesajınız ve kartı açmak için bir bağlantı ile birlikte bir e-posta ve bir B1 bildirimi alır. Bunu bir personele veya ekip liderine önceden haber vermek için kullanın. Örneğin: *"Biri Üyelik Görüşmesi adımına ulaştığında papaza haber ver."* Kartın geçmişine, kişinin adının önüne **Bildirildi** yazılarak kaydedilir.
 
-### Metin mesajı gönderme
+### Metin mesajı gönderme {#sending-a-text}
 
 **Metin gönder**'i seçin ve **Metin mesajını** yazın (en fazla 1.600 karakter). Bir kart adıma girdiğinde kişi bu metni cep telefonuna alır. Mesajı kişiselleştirmek için mesaj kutusunun altındaki bir çipe tıklayın: **Ad**, **Soyad**, **Görünen Ad** veya **Kilise Adı**. Çip, imlecinizin olduğu yere `{{firstName}}`, `{{lastName}}`, `{{displayName}}` veya `{{churchName}}` ekler. Metin gönderildiğinde her biri kişinin bilgileriyle doldurulur.
 
@@ -149,7 +149,7 @@ Panoya kişi eklemenin birkaç yolu vardır:
 
 Bir kişiyi elle veya bir **İş akışına ekle** adım işlemiyle eklemek, aynı iş akışında ikinci bir açık kart oluşturmaz. Kişinin zaten açık bir kartı varsa atlanır (toplu eklemede yalnızca kartı olmayan kişilere yeni kart verilir). Kartı kapatıldıktan sonra kişiyi yeniden ekleyebilirsiniz. Tetikleyiciler bunun yerine kendi **Kişi başına yalnızca bir kez** ayarını izler.
 
-## Panoda Çalışma
+## Panoda Çalışma {#working-the-board}
 
 Panosunu görmek için bir iş akışını açın. Her kart, kişinin adını, kime atandığını ve bir son tarih ya da durum çipini (**Gecikmiş** veya **Ertelendi**) gösterir. Bir adım sütunu, çalıştırdığı otomatik işlemler için küçük rozetleri ve yönlendirmesi için açıklamaları da gösterir. Böylece kartların nasıl aktığını bir bakışta görebilirsiniz.
 
@@ -174,7 +174,7 @@ Notlar karta kaydedilir. Kartı açabilen herkes (atandığı kişi veya grup da
 
 Birden fazla kartı birlikte işleme almak için onların onay kutularını seçin. Bir adımdaki tüm kartları aynı anda seçmek için o adımın sütun başlığındaki **Tümünü seç** kutusunu işaretleyin; seçimi temizlemek için tekrar işaretleyin. Seçili tüm kartlar için aynı anda **Tamamla**, **Ertele**, **Ata** (yeniden atama) veya başka bir adıma **Taşı…** işlemlerini yapabileceğiniz bir araç çubuğu görünür.
 
-## Sonuçlar ve Koşullarla Yönlendirme
+## Sonuçlar ve Koşullarla Yönlendirme {#routing-cards-with-outcomes-and-conditions}
 
 Yönlendirme, bir kartın bir adımdan çıkarken nereye gideceğini kontrol eder. İki tür yönlendirmeyi yapılandırmak için adım düzenleyicisini açın.
 
@@ -202,7 +202,7 @@ Bir yönlendirmenin koşulları herhangi bir nedenle kontrol edilemezse, o yönl
 Panoda her adım sütunu, yönlendirmesini açıklayan küçük notlar gösterir. Bunlar bir sonuç etiketi veya hedef adıma ya da iş akışına giden bir ok ile birlikte "eşleşirse" ifadesi olabilir.
 :::
 
-## Tamamen Otomatik Adımlar
+## Tamamen Otomatik Adımlar {#fully-automated-steps}
 
 Bir adımın kimse ilgilenmeden tamamen kendi başına çalışmasını sağlayabilirsiniz. Adıma **otomatik işlemlerini** verin ve bir sonraki adımı gösteren bir **otomatik yönlendirme** (koşulsuz) ekleyin. Bir kart girdiğinde işlemler çalışır, ardından yönlendirme kartı hemen ilerletir ve kart doğrudan geçer.
 
@@ -210,7 +210,7 @@ Bir adımın kimse ilgilenmeden tamamen kendi başına çalışmasını sağlaya
 Bunu **Bekle** ile birleştirin: *Hoş geldiniz e-postası gönder → 3 gün bekle → "Kişisel görüşme" adımına otomatik olarak ilerlet.* E-posta ve zamanlama sizin için yönetilir ve bir gönüllü kartı yalnızca insan temasının zamanı geldiğinde görür.
 :::
 
-## Tetikleyiciler
+## Tetikleyiciler {#triggers}
 
 Tetikleyiciler, bir şey olduğunda kişileri otomatik olarak bir iş akışına ekler; böylece kartları elle eklemeniz gerekmez. Bir iş akışı panosunda **Tetikleyiciler** sekmesine, ardından **Tetikleyici Ekle**'ye tıklayın. İki tür vardır:
 
@@ -223,7 +223,7 @@ B1'de bir kayıt değiştiği anda çalışır. Olayı seçin, ardından yalnız
 - **Grup · Üye Katıldı** / **Grup · Oluşturuldu**.
 - **Form · Gönderildi** -- seçilen bir formu gönderen herkesi ekleyin ("Yeniyim" veya "Bağlantı" kartı için harika).
 
-### Zamanlama tetikleyicileri
+### Zamanlama tetikleyicileri {#schedule-triggers}
 
 Bir koşul kümesine karşı günlük, haftalık, aylık veya yıllık olarak düzenli şekilde çalışır. Bunları zamana bağlı ulaşımlar için kullanın; örneğin *doğum günü bugün olan herkes* (Doğum Tarihi · Ayın Günü = **Bugün**, ayı da **Bu Ay** ile eşleşen) ya da *aylık* bir kontrol. **Kişi başına yalnızca bir kez** ayarı açık olmasa bile, bir zamanlama tetikleyicisi aynı kişiyi tek bir tekrar döneminde (çalışma sıklığına göre bir gün, hafta, ay veya yıl) yeniden eklemez.
 
@@ -238,7 +238,7 @@ Herhangi bir tetikleyici için ayrıca şunları da ayarlayabilirsiniz:
 Bir **Form · Gönderildi** tetikleyicisini **Yeni Ziyaretçi Takibi** şablonuyla eşleştirerek "Bağlantı Kartı" veya "Yeniyim" formunuzu otomatik bir takip sürecine dönüştürün.
 :::
 
-## Hizmet Görevi Onayları
+## Hizmet Görevi Onayları {#serving-assignment-confirmations}
 
 Özel bir iş akışı türü, her gönüllü kabul edene veya reddedene kadar [hizmet taleplerini](./plans.md#assigning-team-members) takip edebilir. Bu panodaki her kart kişiler yerine **tek bir görevi** izler: bir plandaki bir pozisyonda bir kişi. Aynı kişi için iki rol veya iki hizmet ayrı kartlar alır. Bu özellik isteğe bağlıdır: Bir planın ayarlarında bir onay iş akışı seçmediğiniz sürece o plan için hiçbir şey değişmez.
 

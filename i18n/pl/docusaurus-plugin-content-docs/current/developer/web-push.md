@@ -11,7 +11,7 @@ Aplikacje internetowe ChurchApps wysyłają powiadomienia push za pomocą W3C We
 
 </div>
 
-## Kiedy wysyłane są powiadomienia push
+## Kiedy wysyłane są powiadomienia push {#when-push-fires}
 
 Push to jeden z poziomów jednego przebiegu dostarczania w `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Najpierw sprawdzane są preferencje powiadomień w aplikacji, następnie w tym samym przebiegu podejmowana jest próba dostarczenia przez gniazdo oraz wysłania push (każde z nich ma własną bramkę preferencji), a na końcu wysyłany jest e-mail. Odbiorca, który wyciszył daną kategorię, nigdy nie otrzyma push. Udane dostarczenie przez gniazdo nie zatrzymuje już wysyłki push. Każdy typ powiadomienia działa teraz tak, jak zawsze działały wiadomości prywatne, dzięki czemu zainstalowana aplikacja PWA działająca w tle nadal wyświetla powiadomienie systemowe, nawet jeśli dostarczenie przez gniazdo się powiodło. Zduplikowane banery są tłumione po stronie klienta przez service worker (zob. [Wymóg service workera](#service-worker-requirement)). Zaplanowane przypomnienia i rozsyłki uruchamiane przez personel rozpoczynają się od razu na poziomie push, pomijając krok gniazda. E-mail nadal działa według zegara: eskaluje nieprzeczytane wiersze według własnego harmonogramu, a nie jako część tego przebiegu.
 
@@ -103,7 +103,7 @@ Zachowania, które konsumenci otrzymują bez dodatkowej pracy:
 - **Wykrywanie trybu samodzielnego PWA** — `isStandalone()` pozwala aplikacjom hostującym ukrywać pytania o push na iOS za warunkiem, że użytkownik zainstalował PWA na ekranie głównym (iOS zezwala na push tylko z zainstalowanych PWA).
 - **Ponowna rejestracja przy zmianie kościoła** — `refreshEnrollment()` ponownie wysyła istniejącą subskrypcję przeglądarki dla nowego `userChurch` bez ponownego pytania użytkownika. Wywołaj tę metodę w obsłudze zmiany `userChurch`.
 
-### Wymóg service workera
+### Wymóg service workera {#service-worker-requirement}
 
 `PushManager` przeglądarki zwraca subskrypcję tylko wtedy, gdy service worker jest zarejestrowany w skonfigurowanym zakresie. Aplikacje PWA ChurchApps używają [Serwist](https://serwist.dev/) (aplikacje Next.js) lub workbox do generowania service workera. Ponieważ serwer obecnie zawsze próbuje wysłać push równolegle z dostarczeniem przez gniazdo (zob. [Kiedy wysyłane są powiadomienia push](#when-push-fires)), to service worker jest punktem deduplikacji. Jego handler `push` musi pominąć `showNotification`, gdy aktywny lub widoczny klient jest już na docelowym linku głębokim powiadomienia, ale zawsze powinien zaktualizować odznakę aplikacji, niezależnie od tego, czy baner został pokazany:
 

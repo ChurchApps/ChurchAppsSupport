@@ -115,7 +115,7 @@ Chọn **Ghi nhận tham dự** và nhấp **Chọn nhóm** để chọn nhóm m
 
 Chọn **Thông báo cho người**, nhấp **Chọn người**, và tùy chọn nhập một **Tin nhắn**. Khi một thẻ đi vào bước, người được chọn sẽ nhận một email và một thông báo B1 có tên của người trên thẻ, tên quy trình và bước, tin nhắn của bạn, cùng một liên kết để mở thẻ. Hãy dùng tính năng này để thông báo trước cho nhân viên hoặc người lãnh đạo mục vụ -- ví dụ: *"Thông báo cho mục sư khi có người đến bước Phỏng vấn thành viên."* Lịch sử thẻ ghi **Đã thông báo** kèm theo tên của người đó.
 
-### Gửi tin nhắn
+### Gửi tin nhắn {#sending-a-text}
 
 Chọn **Gửi tin nhắn** và nhập **Nội dung tin nhắn** (tối đa 1.600 ký tự). Khi một thẻ đi vào bước, người đó sẽ nhận tin nhắn đó trên điện thoại di động. Để cá nhân hóa tin nhắn, nhấp vào một nút bên dưới ô tin nhắn -- **Tên**, **Họ**, **Tên hiển thị** hoặc **Tên nhà thờ** -- để chèn `{{firstName}}`, `{{lastName}}`, `{{displayName}}` hoặc `{{churchName}}` vào vị trí con trỏ. Mỗi trường sẽ được điền bằng thông tin của người đó khi tin nhắn được gửi.
 
@@ -149,7 +149,7 @@ Có nhiều cách để đưa người vào bảng:
 
 Việc thêm một người thủ công, hoặc bằng hành động **Thêm vào quy trình** của bước, sẽ không bao giờ cho họ thêm một thẻ mở thứ hai trên cùng một quy trình. Nếu họ đã có thẻ đang mở, họ sẽ bị bỏ qua (khi thêm hàng loạt, chỉ những người chưa có thẻ mới được tạo thẻ mới). Khi thẻ của họ đã đóng, bạn có thể thêm lại họ. Các trigger thay vào đó tuân theo cài đặt **Chỉ một lần cho mỗi người** riêng của chúng.
 
-## Làm việc trên bảng
+## Làm việc trên bảng {#working-the-board}
 
 Mở một quy trình để xem bảng của nó. Mỗi thẻ hiển thị tên người, người được giao, và một nhãn ngày đến hạn hoặc trạng thái (**Quá hạn** hoặc **Đang tạm ẩn**). Một cột bước cũng hiển thị các huy hiệu nhỏ cho bất kỳ hành động tự động nào nó chạy và chú thích cho định tuyến của nó, giúp bạn nắm bắt nhanh cách các thẻ di chuyển.
 
@@ -174,7 +174,7 @@ Ghi chú được lưu cùng với thẻ. Bất kỳ ai có thể mở thẻ -- 
 
 Chọn các ô đánh dấu trên nhiều thẻ để thao tác cùng lúc. Để chọn toàn bộ thẻ trong một bước, đánh dấu ô **Chọn tất cả** trong tiêu đề cột của bước đó; đánh dấu lại để bỏ chọn. Một thanh công cụ sẽ xuất hiện, cho phép bạn **Hoàn tất**, **Tạm ẩn**, **Giao** (giao lại) hoặc **Chuyển đến…** một bước khác cho tất cả các thẻ đã chọn cùng lúc.
 
-## Định tuyến thẻ bằng kết quả và điều kiện
+## Định tuyến thẻ bằng kết quả và điều kiện {#routing-cards-with-outcomes-and-conditions}
 
 Định tuyến kiểm soát nơi một thẻ sẽ đến khi rời khỏi một bước. Mở trình chỉnh sửa bước để cấu hình hai loại định tuyến.
 
@@ -202,7 +202,7 @@ Nếu các điều kiện của một tuyến không thể được kiểm tra v
 Trên bảng, mỗi cột bước hiển thị các chú thích nhỏ mô tả định tuyến của nó -- ví dụ, nhãn kết quả hoặc "nếu khớp" kèm mũi tên đến bước hoặc quy trình đích.
 :::
 
-## Bước hoàn toàn tự động
+## Bước hoàn toàn tự động {#fully-automated-steps}
 
 Bạn có thể làm cho một bước chạy hoàn toàn tự động, không cần ai xử lý. Đặt cho bước các **hành động tự động** và thêm một **tuyến tự động** (không có điều kiện) trỏ đến bước tiếp theo. Khi một thẻ đi vào, các hành động sẽ chạy, rồi tuyến đưa thẻ đi tiếp ngay lập tức -- thẻ đi thẳng qua.
 
@@ -210,7 +210,7 @@ Bạn có thể làm cho một bước chạy hoàn toàn tự động, không c
 Kết hợp điều này với **Chờ**: *Gửi email chào mừng → Chờ 3 ngày → tự động chuyển sang bước "Gọi cá nhân".* Email và thời gian được xử lý cho bạn, và tình nguyện viên chỉ thấy thẻ khi đến lúc cần một cuộc tiếp xúc trực tiếp.
 :::
 
-## Trigger
+## Trigger {#triggers}
 
 Trigger thêm người vào quy trình một cách tự động khi có sự kiện xảy ra, nên bạn không bao giờ phải thêm thẻ thủ công. Trên bảng quy trình, nhấp tab **Trigger**, rồi **Thêm trigger**. Có hai loại:
 
@@ -223,7 +223,7 @@ Kích hoạt ngay khi một bản ghi thay đổi trong B1. Chọn sự kiện, 
 - **Nhóm · Thành viên đã tham gia** / **Nhóm · Đã tạo**.
 - **Biểu mẫu · Đã gửi** -- thêm bất kỳ ai gửi một biểu mẫu đã chọn (rất phù hợp cho thẻ "Tôi là người mới" hoặc "Kết nối").
 
-### Trigger theo lịch
+### Trigger theo lịch {#schedule-triggers}
 
 Chạy định kỳ -- hằng ngày, hằng tuần, hằng tháng, hoặc hằng năm -- theo một tập hợp điều kiện. Dùng các trigger này cho việc tiếp cận theo thời gian, chẳng hạn *tất cả mọi người có sinh nhật hôm nay* (Ngày sinh · Ngày trong tháng = **Hôm nay**, với tháng khớp với **Tháng này**) hoặc một lần kiểm tra *hằng tháng*. Ngay cả khi không bật **Chỉ một lần cho mỗi người**, một trigger theo lịch cũng sẽ không thêm cùng một người lần nữa trong cùng một chu kỳ lặp lại (một ngày, tuần, tháng hoặc năm, tùy theo tần suất chạy).
 
@@ -238,7 +238,7 @@ Với bất kỳ trigger nào, bạn cũng có thể đặt:
 Kết hợp trigger **Biểu mẫu · Đã gửi** với mẫu **Theo dõi khách mới** để biến biểu mẫu "Thẻ kết nối" hoặc "Tôi là người mới" của bạn thành một quy trình theo dõi tự động.
 :::
 
-## Xác nhận phân công phục vụ
+## Xác nhận phân công phục vụ {#serving-assignment-confirmations}
 
 Một loại quy trình đặc biệt có thể theo dõi [yêu cầu phục vụ](./plans.md#assigning-team-members) cho đến khi mỗi tình nguyện viên chấp nhận hoặc từ chối. Thay vì người, mỗi thẻ trên bảng này theo dõi **một phân công** -- một người ở một vị trí trong một kế hoạch. Hai vai trò hoặc hai buổi phục vụ cho cùng một người sẽ có các thẻ riêng. Đây là tính năng tùy chọn: không có gì thay đổi đối với một kế hoạch cho đến khi bạn chọn một quy trình xác nhận trong cài đặt của kế hoạch đó.
 

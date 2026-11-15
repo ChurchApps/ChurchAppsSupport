@@ -11,7 +11,7 @@ ChurchApps webbappar skickar push-notiser via W3C:s Web Push API. Det är samma 
 
 </div>
 
-## När push skickas
+## När push skickas {#when-push-fires}
 
 Push är en nivå i en enda leveranskedja inne i `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Först kontrolleras inställningen för aviseringar i appen. Därefter görs socketleverans och push i samma omgång, där var och en har sin egen inställningskontroll, och sist skickas e-post. En mottagare som har tystat kategorin når aldrig push. Att socketleveransen lyckas stoppar inte längre push. Alla aviseringstyper beter sig nu som privata meddelanden alltid har gjort, så en installerad PWA i bakgrunden visar fortfarande en systemavisering även när socketleveransen redan har nått fram. Dubbla bannrar undertrycks i stället på klientsidan av service workern (se [Krav på service worker](#service-worker-requirement)). Schemalagda påminnelser och utskick från personal startar direkt på push-nivån och hoppar helt över socketsteget. E-post styrs fortfarande av en timer som eskalerar olästa rader enligt sitt eget schema, och ingår inte i denna omgång.
 
@@ -103,7 +103,7 @@ Dessa beteenden får konsumenterna utan extra arbete:
 - **Identifiering av installerad PWA**: `isStandalone()` låter värdappar villkora iOS-push-förfrågningar till att användaren har installerat PWA:n på hemskärmen. iOS tillåter bara push från installerade PWA:er.
 - **Ny registrering vid kyrkbyte**: `refreshEnrollment()` skickar om den befintliga webbläsarprenumerationen mot den nya `userChurch` utan att fråga användaren igen. Anropa den från hanteraren för ändring av `userChurch`.
 
-### Krav på service worker
+### Krav på service worker {#service-worker-requirement}
 
 `PushManager` i webbläsaren löser bara upp en prenumeration när en service worker är registrerad på den konfigurerade scopen. ChurchApps PWA:er använder [Serwist](https://serwist.dev/) (Next.js-appar) eller workbox för att generera service workern. Eftersom servern nu alltid försöker push tillsammans med socketleverans (se [När push skickas](#when-push-fires)) är service workern den punkt där dubbletter undviks. Dess `push`-hanterare måste undertrycka `showNotification` när en fokuserad eller synlig klient redan visar aviseringens djuplänksmål, men den ska alltid uppdatera appens märke oavsett om bannern visades:
 

@@ -11,7 +11,7 @@ Các ứng dụng web của ChurchApps gửi thông báo đẩy qua W3C Web Push
 
 </div>
 
-## Khi nào thông báo đẩy được gửi
+## Khi nào thông báo đẩy được gửi {#when-push-fires}
 
 Thông báo đẩy là một tầng trong một lượt gửi duy nhất bên trong `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): trước tiên là cổng kiểm tra tùy chọn trong ứng dụng, sau đó gửi qua socket và thông báo đẩy được thử trong cùng một lượt (mỗi loại có cổng kiểm tra tùy chọn riêng), cuối cùng là email. Người nhận đã tắt thông báo cho một danh mục sẽ không bao giờ nhận được thông báo đẩy. Việc gửi qua socket thành công không còn ngăn thông báo đẩy được gửi nữa. Mọi loại thông báo giờ đều hoạt động như tin nhắn riêng vẫn hoạt động từ trước, nên một PWA đã cài đặt và đang chạy nền vẫn hiển thị thông báo ở cấp hệ điều hành ngay cả khi thông báo qua socket đã đến nơi. Thay vào đó, service worker ở phía client sẽ ẩn các banner trùng lặp (xem [Yêu cầu về service worker](#service-worker-requirement)). Các nhắc nhở đã lên lịch và các thông báo hàng loạt do nhân viên kích hoạt bắt đầu trực tiếp ở tầng thông báo đẩy, bỏ qua bước socket. Email vẫn do bộ hẹn giờ điều khiển, leo thang các hàng chưa đọc theo lịch riêng thay vì là một phần của lượt gửi này.
 
@@ -103,7 +103,7 @@ Các hành vi mà ứng dụng sử dụng nhận được miễn phí:
 - **Phát hiện PWA độc lập**: `isStandalone()` cho phép ứng dụng host chỉ hiển thị lời nhắc thông báo đẩy trên iOS sau khi người dùng đã cài PWA vào màn hình chính (iOS chỉ cho phép thông báo đẩy từ PWA đã cài đặt).
 - **Đăng ký lại khi chuyển giáo hội**: `refreshEnrollment()` gửi lại đăng ký trình duyệt hiện có cho `userChurch` mới mà không hỏi lại người dùng. Hãy gọi hàm này từ trình xử lý thay đổi `userChurch`.
 
-### Yêu cầu về service worker
+### Yêu cầu về service worker {#service-worker-requirement}
 
 `PushManager` của trình duyệt chỉ trả về một đăng ký khi có service worker được đăng ký ở phạm vi đã cấu hình. Các PWA của ChurchApps dùng [Serwist](https://serwist.dev/) (ứng dụng Next.js) hoặc workbox để tạo service worker. Vì máy chủ giờ luôn thử gửi thông báo đẩy song song với socket (xem [Khi nào thông báo đẩy được gửi](#when-push-fires)), service worker là điểm loại trùng. Trình xử lý `push` của nó phải ẩn `showNotification` khi một client đang focus hoặc hiển thị đã ở đúng đích deep-link của thông báo, nhưng luôn phải cập nhật huy hiệu ứng dụng bất kể banner có được hiển thị hay không:
 

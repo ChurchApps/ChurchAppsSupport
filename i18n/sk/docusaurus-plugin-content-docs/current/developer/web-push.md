@@ -11,7 +11,7 @@ Webové aplikácie ChurchApps doručujú push notifikácie cez W3C Web Push API.
 
 </div>
 
-## Kedy sa push odošle
+## Kedy sa push odošle {#when-push-fires}
 
 Push je jedna úroveň v jedinom doručovacom prechode v rámci `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Najprv je brána predvolieb pre aplikáciu, potom sa v rovnakom prechode pokúsi o doručenie cez socket a push (každé s vlastnou bránou predvolieb), nakoniec e-mail. Príjemca, ktorý danú kategóriu stlmil, push nikdy nedostane. Úspešné doručenie cez socket už push nezastaví. Každý typ notifikácie sa teraz správa rovnako ako súkromné správy, takže nainštalovaná PWA bežiaca na pozadí zobrazí systémovú notifikáciu aj vtedy, keď už doručenie cez socket prebehlo. Duplicitné bannery potom potlačí service worker na strane klienta (pozri [Požiadavka na service worker](#service-worker-requirement)). Naplánované pripomienky a broadcasty spúšťané zamestnancami začínajú priamo na úrovni push a krok so socketom úplne preskakujú. E-mail zostáva riadený časovačom a eskaluje neprečítané záznamy podľa vlastného plánu, nie ako súčasť tohto prechodu.
 
@@ -103,7 +103,7 @@ Správanie, ktoré spotrebitelia dostanú zadarmo:
 - **Detekcia samostatnej PWA** — `isStandalone()` umožňuje hostiteľom obmedziť výzvy na push v iOS na situáciu, keď si používateľ PWA nainštaloval na plochu (iOS povoľuje push len z nainštalovaných PWA).
 - **Opätovná registrácia pri zmene kostola** — `refreshEnrollment()` znovu odošle existujúce predplatné prehliadača pre nový `userChurch` bez opätovnej výzvy používateľa. Volajte ho z obslužnej rutiny zmeny `userChurch`.
 
-### Požiadavka na service worker
+### Požiadavka na service worker {#service-worker-requirement}
 
 `PushManager` prehliadača vyrieši predplatné iba vtedy, ak je service worker zaregistrovaný v nakonfigurovanom rozsahu. PWA ChurchApps na generovanie service workera používajú [Serwist](https://serwist.dev/) (aplikácie Next.js) alebo workbox. Keďže server teraz vždy pokúša o push spolu s doručením cez socket (pozri [Kedy sa push odošle](#when-push-fires)), service worker je miestom deduplikácie. Jeho obsluha `push` musí potlačiť `showNotification`, ak je už otvorený a viditeľný klient na cieli hlbokého odkazu notifikácie. Vždy však musí aktualizovať odznak aplikácie bez ohľadu na to, či sa banner zobrazil:
 

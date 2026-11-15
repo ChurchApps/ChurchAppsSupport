@@ -115,7 +115,7 @@ Válassza a **Részvétel rögzítése** műveletet, majd kattintson a **Csoport
 
 Válassza a **Személy értesítése** műveletet, kattintson a **Személy kiválasztása** gombra, és ha szeretné, írjon egy **Üzenetet**. Amikor egy kártya belép a lépésbe, az adott személy e-mailt és B1-értesítést kap, amely tartalmazza a kártyán lévő személy nevét, a munkafolyamat és a lépés nevét, az Ön üzenetét, valamint egy hivatkozást a kártya megnyitásához. Használja arra, hogy előre tájékoztasson egy munkatársat vagy szolgálati vezetőt – például: *„Értesítsd a lelkészt, amikor valaki eléri a Tagsági interjú lépést.”* A kártya előzményei a **Értesítve** bejegyzést rögzítik, mellette a személy nevével.
 
-### SMS küldése
+### SMS küldése {#sending-a-text}
 
 Válassza a **SMS küldése** műveletet, és írja be a **Szöveges üzenetet** (legfeljebb 1600 karakter). Amikor egy kártya belép a lépésbe, a személy ezt az üzenetet kapja a mobiltelefonján. Az üzenet személyre szabásához kattintson az üzenetmező alatti egyik gombra – **Keresztnév**, **Vezetéknév**, **Megjelenített név** vagy **Egyház neve** –, hogy a kurzor helyére beillessze a `{{firstName}}`, `{{lastName}}`, `{{displayName}}` vagy `{{churchName}}` mezőt. Az SMS elküldésekor mindegyiket a személy adataival tölti ki a rendszer.
 
@@ -149,7 +149,7 @@ Többféleképpen helyezhet embereket a táblára:
 
 Ha valakit kézzel adja hozzá, vagy egy **Hozzáadás munkafolyamathoz** lépésművelettel, a személynek soha nem lesz második nyitott kártyája ugyanazon a munkafolyamaton. Ha már van nyitott kártyája, kimarad (tömeges hozzáadásnál csak azok kapnak új kártyát, akiknek még nincs). Miután a kártyájuk le lett zárva, újra hozzáadhatja őket. Az eseményindítók ehelyett a saját **Csak egyszer személyenként** beállításukat követik.
 
-## A tábla kezelése
+## A tábla kezelése {#working-the-board}
 
 Nyisson meg egy munkafolyamatot a tábla megtekintéséhez. Minden kártya megmutatja a személy nevét, azt, hogy kinek van kiosztva, valamint egy határidő- vagy állapotcímkét (**Lejárt** vagy **Elnapolva**). A lépésoszlopok apró jelvényekkel mutatják, milyen automatikus műveleteket futtatnak, és feliratokkal az útválasztásukat, így egy pillantással láthatja, hogyan haladnak a kártyák.
 
@@ -174,7 +174,7 @@ A jegyzetek a kártyához kerülnek mentésre. Bárki, aki meg tudja nyitni a k�
 
 Több kártya kijelöléséhez jelölje be a négyzeteket. Ha egy lépés összes kártyáját egyszerre szeretné kijelölni, jelölje be a **Összes kijelölése** négyzetet az adott lépés oszlopának fejlécében; újbóli bejelöléssel törölheti a kijelölést. Megjelenik egy eszköztár, amely lehetővé teszi, hogy a kijelölt összes kártyán egyszerre **Befejezze**, **Elnapolja**, **Kiossza** (újra hozzárendeli) vagy **Áthelyezze…** egy másik lépésre.
 
-## Kártyák útválasztása kimenetekkel és feltételekkel
+## Kártyák útválasztása kimenetekkel és feltételekkel {#routing-cards-with-outcomes-and-conditions}
 
 Az útválasztás határozza meg, hová megy a kártya, amikor elhagy egy lépést. A lépés szerkesztőjének megnyitásával kétfajta útválasztást állíthat be.
 
@@ -202,7 +202,7 @@ Ha egy útvonal feltételeit valamilyen okból nem lehet ellenőrizni, az útvon
 A táblán minden lépésoszlop apró feliratokkal mutatja az útválasztását – például egy kimenet nevét, vagy „ha illeszkedik” szöveget, amelyet egy nyíl követ a célként szolgáló lépés vagy munkafolyamat felé.
 :::
 
-## Teljesen automatizált lépések
+## Teljesen automatizált lépések {#fully-automated-steps}
 
 Úgy is beállíthat egy lépést, hogy teljesen magától fusson, senki sem dolgozik rajta. Adja meg a lépés **automatikus műveleteit**, és vegyen fel egy **automatikus útvonalat** (feltételek nélkül), amely a következő lépésre mutat. Amikor egy kártya belép, a műveletek lefutnak, majd az útvonal azonnal tovább viszi – a kártya egyenesen áthalad.
 
@@ -210,7 +210,7 @@ A táblán minden lépésoszlop apró feliratokkal mutatja az útválasztását 
 Kombinálja a **Várakozással**: *Üdvözlő e-mail küldése → Várakozás 3 napig → automatikus továbbítás a „Személyes hívás” lépésre.* Az e-mailt és az időzítést a rendszer intézi, a önkéntes pedig csak akkor látja a kártyát, amikor eljön az ideje az emberi kapcsolatfelvételnek.
 :::
 
-## Eseményindítók
+## Eseményindítók {#triggers}
 
 Az eseményindítók automatikusan adnak embereket egy munkafolyamathoz, amikor valami történik, így soha nem kell kézzel kártyákat hozzáadnia. Egy munkafolyamat táblán kattintson a **Eseményindítók** fülre, majd a **Eseményindító hozzáadása** gombra. Kétféle van:
 
@@ -223,7 +223,7 @@ Azonnal elsülnek, amint egy rekord megváltozik a B1-ben. Válassza ki az esem�
 - **Csoport · Tag csatlakozott** / **Csoport · Létrehozva**.
 - **Űrlap · Beküldve** – bárki hozzáadása, aki egy kiválasztott űrlapot beküld (remek egy „Új vagyok” vagy „Kapcsolat” kártyához).
 
-### Ütemezett eseményindítók
+### Ütemezett eseményindítók {#schedule-triggers}
 
 Ismétlődően futnak – naponta, hetente, havonta vagy évente – a megadott feltételek alapján. Ezeket időalapú megkeresésre használja, például *mindenkinek, akinek ma van a születésnapja* (Születési dátum · Hónap napja = **Ma**, a hónap pedig **Aktuális hónap**), vagy *havi* látogatás-ellenőrzésre. Még a **Csak egyszer személyenként** beállítás nélkül is igaz, hogy az ütemezett eseményindító nem ad hozzá újra ugyanazt a személyt egyetlen ismétlési időszakon belül (egy napon, héten, hónapon vagy éven belül, attól függően, milyen gyakran fut).
 
@@ -238,7 +238,7 @@ Bármelyik eseményindítónál a következőket is beállíthatja:
 Párosítsa a **Űrlap · Beküldve** eseményindítót az **Új látogató utánkövetése** sablonnal, hogy a „Kapcsolat kártya” vagy „Új vagyok” űrlapjából automatikus utánkövetési folyamat legyen.
 :::
 
-## Szolgálati feladatok megerősítése
+## Szolgálati feladatok megerősítése {#serving-assignment-confirmations}
 
 A munkafolyamatok egy különleges fajtája utánkövetheti a [szolgálati kéréseket](./plans.md#assigning-team-members), amíg minden önkéntes el nem fogadja vagy el nem utasítja őket. Személyek helyett a tábla minden kártyája **egy feladatot** követ nyomon – egy személyt egy pozícióban, egy tervben. Ugyanannak a személynek két szerepköre vagy két szolgálata külön kártyákat kap. Ez opcionális: semmi nem változik egy terv számára, amíg a beállításaiban ki nem választ egy megerősítő munkafolyamatot.
 
